@@ -1,0 +1,13 @@
+<root>
+ <property>
+   <action>DO IT</action>
+   <name>MICHAEL</name>
+   <value>50</value>
+ </property>
+
+ <property>
+   <action>WAIT</action>
+   <name>ALEX</name>
+   <value>20</value>
+ </property>
+</root>
