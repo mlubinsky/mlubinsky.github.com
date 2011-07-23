@@ -1,4 +1,8 @@
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="zoom.css" />
+</head>
+
 <body>
 <h3>Hello World!</h3>
 This page was created to keep the notes about my projects.
@@ -12,14 +16,20 @@ My main interests are:
 
 <div id="info"></div>
 <script type="text/javascript">
-txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
-txt+= "<p>Browser Name: " + navigator.appName + "</p>";
-txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
-txt+= "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
-txt+= "<p>Platform: " + navigator.platform + "</p>";
-txt+= "<p>User-agent header: " + navigator.userAgent + "</p>";
+txt= "Cookies Enabled: " + navigator.cookieEnabled + ".     ";
+txt+= "Platform: " + navigator.platform + "<br>";
+
 document.getElementById("info").innerHTML=txt;
 </script>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+<script src="https://www.google.com/jsapi?key=ABQIAAAAmyROU7zL-EZcCn64GYzTZRQHy4BAGfdDx2l3oEsAk5GCRGrT7hSpg_uLYjIjgQDZeFM-9Q_qISIk7g" type="text/javascript"></script>
+<script type="text/javascript" src="zoom.js"></script>
+<div id="zoom">
+    jQuery zooming test
+</div>
 
 <a href=github.html>GitHub tips</a> 
 </body>
