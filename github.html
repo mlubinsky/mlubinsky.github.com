@@ -13,10 +13,30 @@ git add index.html
 git commit -m "first commit"
 git remote add origin git@github.com:mlubinsky:mlubinsky.github.com.git
 git push -u origin master
+---------------------
+GIT TROUBLESHOOTING
 ----------------------------
 make sure your github repository host has the contents   of ~/.ssh/id_rsa.pub
 ssh -vT git@github.com  - this command is helpful for git debugging 
 ------------------------------
+Example of file ./git/config (pay attention to url = line) 
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+	hideDotFiles = dotGitOnly
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git@github.com:mlubinsky/mlubinsky.github.com.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+
+
+
 To learn about Git I recommend to visit 
 http://gitref.org/ 
 http://sixrevisions.com/resources/git-tutorials-beginners/
