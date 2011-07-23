@@ -1,5 +1,5 @@
 <pre>
-To create this page on GitHub from Windows PC I followed <a href=http://help.github.com/win-set-up-git/ >the official instructions</a>
+To create this page on GitHub from Windows PC I followed <a href=http://help.github.com/win-set-up-git/ >the official documentation</a>
 - Created account on GitHub
 - Installed Git Client for Windows
 - Set up SSH keys 
@@ -13,7 +13,10 @@ git add index.html
 git commit -m "first commit"
 git remote add origin git@github.com:mlubinsky:mlubinsky.github.com.git
 git push -u origin master
-
+----------------------------
+make sure your github repository host has the contents   of ~/.ssh/id_rsa.pub
+ssh -vT git@github.com  - this command is helpful for git debugging 
+------------------------------
 To learn about Git I recommend to visit 
 http://gitref.org/ 
 http://sixrevisions.com/resources/git-tutorials-beginners/
