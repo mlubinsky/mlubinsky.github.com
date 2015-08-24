@@ -1,9 +1,11 @@
 Java utils
+https://docs.oracle.com/javase/tutorial/essential/environment/properties.html
 
 mkdir class
 javac XMLDriver.java -d class
 javac XMLProperties.java -d class
 cd class
+
 java XMLProperties
 cat user.props
 
