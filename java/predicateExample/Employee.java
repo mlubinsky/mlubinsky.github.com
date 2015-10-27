@@ -16,6 +16,9 @@ public class Employee {
    private String firstName;
    private String lastName;
 
+   public String getGender(){ return gender;}
+   public int getAge(){ return age;}
+
    //Please generate Getter and Setters
    @Override
    public String toString() {

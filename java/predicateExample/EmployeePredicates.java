@@ -7,15 +7,15 @@ import java.util.stream.Collectors;
 public class EmployeePredicates
 {
     public static Predicate<Employee> isAdultMale() {
-        return  p.getAge() > 21 && p.getGender().equalsIgnoreCase("M");
+        return  p -> p.getAge() > 21 && p.getGender().equalsIgnoreCase("M");
     }
 
     public static Predicate<Employee> isAdultFemale() {
-        return p.getAge() > 18 && p.getGender().equalsIgnoreCase("F");
+        return p -> p.getAge() > 18 && p.getGender().equalsIgnoreCase("F");
     }
 
     public static Predicate<Employee> isAgeMoreThan(Integer age) {
-        return  p.getAge() > age;
+        return  p -> p.getAge() > age;
     }
 
     public static List<Employee> filterEmployees (List<Employee> employees, Predicate<Employee> predicate) {
