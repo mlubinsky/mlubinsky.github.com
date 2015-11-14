@@ -1,4 +1,6 @@
-// functional interface
+// http://www.programcreek.com/2013/11/arrays-sort-comparator/
+
+import java.util.List;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -27,6 +29,16 @@ public class Random {
 	    Arrays.sort(names, (a,b) -> a.length() - b.length());
         System.out.println("--  AFTER SORT BY LENGTH using Functional interface--");
         for (String s : names) { System.out.println(s);}	
+
+
+         Arrays.sort(names, String::compareToIgnoreCase);
+
+        // for each 
+        System.out.println("--  foreach --");
+        List<String> list = Arrays.asList(names);
+        list.forEach(x->System.out.println(x));	
+
+        //list.removeIf(Objects::isNull);
 
     }
 
