@@ -1,9 +1,21 @@
 // http://www.programcreek.com/2013/11/arrays-sort-comparator/
-
+import java.util.Objects;
 import java.util.List;
 import java.util.Arrays;
 import java.util.Comparator;
 
+//Object.clone() copy all instance variables; 
+// but if there non primitive or non-immutable  members then clone share mutable state
+//clonable interface - is required to make deep cloning
+// if x.equals(y) then hashCodes should be equal
+
+class Person  {
+	String first;
+	String second;
+	public int hashCode (){
+		return Objects.hash(first, second);
+	}
+}
 
 class LenComparator implements Comparator<String> {
 	public int compare (String a, String b){
@@ -38,7 +50,7 @@ public class Random {
         List<String> list = Arrays.asList(names);
         list.forEach(x->System.out.println(x));	
 
-        //list.removeIf(Objects::isNull);
+        list.removeIf(Objects::isNull);
 
     }
 
