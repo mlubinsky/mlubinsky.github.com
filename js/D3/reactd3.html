@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<style>
+  .bar {
+    fill: steelblue;
+  }
+
+  .bar:hover {
+    fill: brown;
+  }
+
+  .axis text {
+    font: 10px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .x.axis path {
+    display: none;
+  }
+</style>
+<script src="https://fb.me/react-0.14.0.js"></script>
+<script src="https://fb.me/react-dom-0.14.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+<script src="http://d3js.org/d3.v3.js"></script>
+</head>
+<body>
+<div id="graph_container"></div>
+<script type="text/babel">
+
+var LetterFrequencyChart = React.createClass({
+    getInitialState: function() {
+      return {
+        data: [],
+        svg: "",
+        scales: {},
+        axes: {},
+        display: { width: 960, height: 500, margin: {top: 20, right: 30, bottom: 30, left: 40 }}
+      };
+    },
+
+    componentDidMount: function() {
+      var state = this.state,
+          margin = state.display.margin,
+          width = state.display.width - margin.left - margin.right,
+          height = state.display.height - margin.top - margin.bottom;
+
+      var xScale = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .1);
+
+      var yScale = d3.scale.linear()
+        .range([height, 0]);
+
+      var xAxis = d3.svg.axis()
+        .scale(xScale)
+        .orient("bottom");
+
+      var yAxis = d3.svg.axis()
+        .scale(yScale)
+        .orient("left")
+        .ticks(10, "%");
+
+      var that = this;
+      d3.tsv("data.tsv", function(error, data) {
+        data = data.map(function(d) { return { letter: d.letter, value: +d.frequency }; });
+        xScale.domain(data.map(function(d) { return d.letter; }));
+        yScale.domain([0, d3.max(data, function(d){ return d.value; })]);
+
+        that.setState({
+          data: data,
+          svg: d3.select("#graph").append("svg")
+                 .attr("height", height + margin.top + margin.bottom)
+                 .attr("width", width + margin.left + margin.right)
+                 .attr("class", "chart"),
+          scales: { xScale: xScale, yScale: yScale },
+          axes: { xAxis: xAxis, yAxis: yAxis }
+        });
+      });
+    },
+
+    render: function() {
+      var state = this.state,
+          data = state.data,
+          svg = state.svg || false,
+          margin = state.display.margin,
+          width = state.display.width - margin.left - margin.right,
+          height = state.display.height - margin.top - margin.bottom,
+          xScale = state.scales.xScale,
+          yScale = state.scales.yScale,
+          xAxis = state.axes.xAxis,
+          yAxis = state.axes.yAxis;
+
+      if (svg) {
+        var chart = svg.append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        chart.selectAll(".bar")
+      		.data(data)
+      		.enter()
+      		.append("rect")
+    		  .attr("class", "bar")
+    		  .attr("x", function(d) { return xScale(d.letter); })
+     		  .attr("y", function(d) { return yScale(d.value); })
+     		  .attr("height", function(d) { return height - yScale(d.value); })
+     		  .attr("width", xScale.rangeBand());
+
+        chart.append("g")
+        	.attr("class", "x axis")
+        	.attr("transform", "translate(0," + height + ")")
+        	.call(xAxis);
+
+        chart.append("g")
+        	.attr("class", "y axis")
+        	.call(yAxis)
+        	.append("text")
+        	.attr("transform", "rotate(-90)")
+        	.attr("y", 6)
+        	.attr("dy", ".71em")
+        	.style("text-anchor", "end")
+        	.text("Frequency");
+      }
+
+      return (
+        <div id="graph"></div>
+      );
+    }
+  });
+
+  ReactDOM.render(
+    <LetterFrequencyChart />,
+    document.getElementById("graph_container")
+  );
+</script>
+
