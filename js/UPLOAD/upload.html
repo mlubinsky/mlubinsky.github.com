@@ -1,0 +1,41 @@
+<input type="file" id="fileinput" />
+
+
+<div id="dvImportSegments" class="fileupload ">
+    <fieldset>
+        <legend>Upload your CSV File</legend>
+            <input type="file" name="File Upload" id="txtFileUpload" accept=".csv" />
+   </fieldset>
+</div>
+
+
+
+<script type="text/javascript">
+  function readSingleFile(evt) {
+    //Retrieve the first (and only!) File from the FileList object
+    console.log("readSingleFile");
+    var f = evt.target.files[0];
+
+    if (f) {
+      var r = new FileReader();
+      r.onload = function(e) {
+	      var contents = e.target.result;
+        alert( "Got the file.\n"
+              +"name: " + f.name + "\n"
+              +"type: " + f.type + "\n"
+              +"size: " + f.size + " bytes\n"
+              + "starts with: " + contents.substr(0, contents.indexOf("\n"))
+        );
+      }
+      r.readAsText(f);
+      console.log("state="+r.readyState);
+      console.log(r);
+      console.log(r.result);
+    } else {
+      alert("Failed to load file");
+    }
+  }
+
+
+  document.getElementById('txtFileUpload').addEventListener('change', readSingleFile, false);
+</script>
