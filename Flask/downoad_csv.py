@@ -1,8 +1,9 @@
 #http://stackoverflow.com/questions/20646822/how-to-serve-static-files-in-flask
+#http://www.programcreek.com/python/example/58917/flask.send_file
 
 from flask import Flask, Response
 app = Flask(__name__)
-
+################################################
 @app.route("/")
 def hello():
     return '''
@@ -14,10 +15,12 @@ def hello():
         <a href="/getFile2">Download file <b> data/a.csv </b> using send_file()</a>
         <br>
         <a href="/static/b.txt">Download file <b>b.txt</b> from /static folder <b>ONLY</b> using send_static_file()</a>
-   
+        <br>
+        <a href="/zip">ZIP and Download a.111 into capsule.zip  using send_file()</a>
+
         </body></html>
         '''
-
+#################################################
 @app.route("/getFile1")
 def getFile1():
     # with open("outputs/Adjacency.csv") as fp:
@@ -39,7 +42,36 @@ def getFile2():
                      mimetype='text/csv',
                     # attachment_filename='a.csv',
                      as_attachment=True)
+
 ###############################################
+from io import BytesIO
+import gzip
+import zipfile
+import time
+import os
+
+@app.route('/zip') # this is a job for GET, not POST
+def getZip():
+
+# write bytes to zip file in memory
+#myio = BytesIO()
+#g = gzip.GzipFile(fileobj=myio, mode='wb')
+#g.write(b"does it work")
+#g.close()
+#myio.seek(0)
+# read bytes from zip file in memory
+#g = gzip.GzipFile(fileobj=myio, mode='rb')
+#result = g.read()
+#g.close()
+#print(result)
+  fileName="a.111"
+  memory_file = BytesIO()
+  with zipfile.ZipFile(memory_file, 'w') as zf:
+        zf.write(fileName, os.path.basename(fileName), zipfile.ZIP_DEFLATED)
+  
+  memory_file.seek(0)
+  return send_file(memory_file, attachment_filename='capsule.zip', as_attachment=True)
+####################################################################################
 @app.route('/static/<path:path>')
 def static_file(path):
     return app.send_static_file(path)
