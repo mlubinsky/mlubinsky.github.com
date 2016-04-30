@@ -1,3 +1,5 @@
+#http://stackoverflow.com/questions/20646822/how-to-serve-static-files-in-flask
+
 from flask import Flask, Response
 app = Flask(__name__)
 
@@ -7,9 +9,12 @@ def hello():
         <html><body>
         Examples of file download in Flask
         <br>
-        <a href="/getFile1">Download file by reading it and using Response().</a>
+        <a href="/getFile1">Download file by reading it and using Response()</a>
         <br>
-        <a href="/getFile2">Download file <b> data/a.csv </b> by using send_file()</a>
+        <a href="/getFile2">Download file <b> data/a.csv </b> using send_file()</a>
+        <br>
+        <a href="/static/b.txt">Download file <b>b.txt</b> from /static folder <b>ONLY</b> using send_static_file()</a>
+   
         </body></html>
         '''
 
@@ -24,7 +29,7 @@ def getFile1():
         mimetype="text/csv",
         headers={"Content-disposition":
                  "attachment; filename=myplot.csv"})
-
+###############################################
 # Another approach: use send_file
 from flask import send_file
 
@@ -34,5 +39,10 @@ def getFile2():
                      mimetype='text/csv',
                     # attachment_filename='a.csv',
                      as_attachment=True)
+###############################################
+@app.route('/static/<path:path>')
+def static_file(path):
+    return app.send_static_file(path)
 
+##############################################
 app.run(debug=False, port=5001)
