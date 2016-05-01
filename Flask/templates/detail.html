@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>First News App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='prettify.css') }}" />
+ 
+</head>
+<body>
+     
+
+    <h1>{{ object.full_name }}, a {{ object.age }} year old, {{ object.race|lower }} {{ object.gender|lower }} died on {{ object.date }}
+in a {{ object.type|lower }} at {{ object.address }} in {{ object.neighborhood }}.</h1>
+
+
+</body>
+</html>

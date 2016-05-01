@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>First News App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='prettify.css') }}" />
+ 
+</head>
+<body>
+   
+
+    <h1>Deaths during the L.A. riots</h1>
+
+    <table border=1 cellpadding=7>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Address</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Race</th>
+        </tr>
+    {% for obj in object_list %}
+        <tr>
+            <td><a href="{{ obj.id }}/">{{ obj.full_name }}</a></td>
+            <td>{{ obj.date }}</td>
+            <td>{{ obj.type }}</td>
+            <td>{{ obj.address }}</td>
+            <td>{{ obj.age }}</td>
+            <td>{{ obj.gender }}</td>
+            <td>{{ obj.race }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+
+</body>
+</html>
