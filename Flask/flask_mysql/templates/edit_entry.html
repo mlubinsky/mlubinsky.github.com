@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{% extends "layout.html" %}
+{% block body %}
+  <ul class=entries>
+  <table class="_table_div">
+   <tr><th>Title</th><th>Post</th></tr>
+
+
+  {% for entry in entries %}
+  <form action="{{ url_for('update_entry',id=entry.id) }}" method=post class=add-entry>
+    <tr>
+    <td><h5><input type="text" value="{{ entry.title }}" name="title"></h5></td>
+          <td><input type="text" value="{{ entry.post | safe }}" name="post"></td>
+          <td><input type=submit value=Update></td>
+  </form>
+  {% else %}
+
+    <p><em>Unbelievable. No entries here so far</em></p>
+    </tr>
+  {% endfor %}
+  </table>
+  </ul>
+{% endblock %}
+
+</body>
+</html>

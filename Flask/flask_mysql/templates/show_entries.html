@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+    <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
+      <dl>
+        <dt>Title:
+        <dd><input type=text size=30 name=title>
+        <dt>Text:
+        <dd><textarea name=text rows=5 cols=40></textarea>
+        <dd><input type=submit value=Share>
+      </dl>
+    </form>
+  {% endif %}
+  <ul class=entries>
+  <table class="_table_div">
+   <tr><th>Title</th><th>Post</th></tr>
+  {% for entry in entries %}
+    <tr>
+    <td><h5>{{ entry.title }}</h5></td>
+          <td>{{ entry.post|safe }} </td>
+          <td><a href="{{ url_for('show_entry', id = entry.id)}}">View Single Entry</a></td>
+          <td><a href="{{ url_for('delete_entry', id = entry.id) }}">Delete Entry</a></td>
+           <td><a href="{{ url_for('edit_entry', id = entry.id) }}">Edit Entry</a></td>
+  {% else %}
+    <p><em>Unbelievable. No entries here so far</em></p>
+    </tr>
+  {% endfor %}
+  </table>
+  </ul>
+{% endblock %}
+
+</body>
+</html>
