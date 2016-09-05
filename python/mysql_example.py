@@ -1,5 +1,3 @@
-#import mysql
-#dir(mysql)
 import mysql.connector
 
 cnx = mysql.connector.connect(user='root', password='root',
