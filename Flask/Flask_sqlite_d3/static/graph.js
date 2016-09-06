@@ -1,5 +1,6 @@
 // The base endpoint to receive data from. See update_url()
-var URL_BASE = "http://127.0.0.1:5000/static/graph.html";
+//var URL_BASE = "http://127.0.0.1:5000/static/graph.html";
+var URL_BASE = "http://127.0.0.1:5000/data";
 //var URL_BASE = "http://127.0.0.1:5000";
 
 // Update graph in response to inputs
