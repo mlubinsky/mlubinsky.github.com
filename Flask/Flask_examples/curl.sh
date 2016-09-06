@@ -1,0 +1,1 @@
+    curl  -H 'Content-Type: application/json'  -d '{"argv": ["ls", "/tmp"]}'  -u daffy:duck   http://localhost:8080
