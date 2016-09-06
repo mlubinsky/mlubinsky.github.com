@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <link rel="stylesheet" type="text/css" href="graph.css">
+</head>
+<body>
+<p>
+  <label for="station_select"
+          style="display: inline-block; width: 140px; text-align: right">
+    Station =
+  </label>
+  <select id="station_select" onchange="update_url()">
+    <option value="plza">El Cerrito Plaza</option>
+    <option value="mont">Montgomery</option>
+  </select>
+  <label for="day_select"
+          style="display: inline-block; width: 140px; text-align: right">
+    Weekday =
+  </label>
+  <select id="day_select" onchange="update_url()">
+    <option value="0">Weekday</option>
+    <option value="1">Saturday</option>
+    <option value="2">Sunday</option>
+  </select>
+  <label for="dest"
+         style="display: inline-block; width: 140px; text-align: right">
+         Destination =
+  </label>
+  <select id="dest" onchange="update_url()">
+    <option value="Fremont">Fremont</option>
+    <option value="Richmond">Richmond</option>
+    <option value="Millbrae">Millbrae</option>
+    <option value="Pittsburg/Bay Point">Pittsburg/Bay Point</option>
+    <option value="Dublin/Pleasanton">Dublin/Pleasanton</option>
+    <option value="SF Airport">SF Airport</option>
+    <option value="SFO/Millbrae">SFO/Millbrae</option>
+  </select>
+</p>
+<p>
+  <label for="time"
+         style="display: inline-block; align: left; width: 140px; text-align: right">
+         Time = <span id="prettyTime">...</span>
+       </label>
+  <input type="range" id="time" min="240" max="1440" style="width:600px" value="460">
+</p>
+<p>
+  Click slider and use arrow keys to adjust time. In Firefox move slider to cause update.
+</p>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="graph.js"></script>
