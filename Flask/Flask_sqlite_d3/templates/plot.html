@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <ul class=entries>
+  {% for entry in entries %}
+    <li><h2>{{ entry.dest }}</h2> 
+  {% else %}
+    <li><em>Unbelievable.  No entries here so far</em>
+  {% endfor %}
+  </ul>
+
+
+</body>
+</html>

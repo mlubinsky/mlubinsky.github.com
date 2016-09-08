@@ -4,6 +4,7 @@ import sqlite3
 import time
 
 from flask import Flask, request, g
+from flask import render_template
 
 #DATABASE = 'natlpark.db'
 DATABASE = 'bart.db'
@@ -37,9 +38,20 @@ def execute_query(query, args=()):
 def root():
      return """ 
          <p> <a href="http://127.0.0.1:5000/viewdb">viewdb</a>
-         <p> <a href="http://127.0.0.1:5000/state/California">state/California</a>
+         <p> <a href="http://127.0.0.1:5000/plot">plot</a>
+         <p> <a href="http://127.0.0.1:5000/dest/Fremont">dest/Fremont</a>
          <p> <a href="http://127.0.0.1:5000/static/graph.html">d3</a> 
      """
+
+
+@app.route('/plot')
+def show_entries():
+    #db = get_db()
+    #cur = db.execute('select dest, etd from etd')
+    #entries = cur.fetchall()
+    rows = execute_query("""SELECT * FROM etd""")
+    return render_template('plot.html', entries=rows)
+
 
 # You can point your browser at (my public DNS)/?dest=Fremont&time=12:17&station=plza&day=0 to get csv formatted data ready to pass into D3.js for graphing.
 @app.route("/data")
@@ -75,14 +87,17 @@ def print_data():
 
 @app.route("/viewdb")
 def viewdb():
-    rows = execute_query("""SELECT * FROM natlpark""")
+    rows = execute_query("""SELECT * FROM etd""")
     return '<br>'.join(str(row) for row in rows)
 
-@app.route("/state/<state>")
-def sortby(state):
-    rows = execute_query("""SELECT * FROM natlpark WHERE state = ?""",
-                         [state.title()])
+@app.route("/dest/<city>")
+def sortby(city):
+    print "city.title()=",
+    print city.title()
+    
+    rows = execute_query("""SELECT * FROM etd WHERE dest = ?""",
+                         [city.title()])
     return '<br>'.join(str(row) for row in rows)
 
 if __name__ == '__main__':
-  app.run()
+  app.run(debug=True)
