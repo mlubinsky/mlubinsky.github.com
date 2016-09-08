@@ -50,7 +50,12 @@ def show_entries():
     #cur = db.execute('select dest, etd from etd')
     #entries = cur.fetchall()
     rows = execute_query("""SELECT * FROM etd""")
-    return render_template('plot.html', entries=rows)
+    print rows[0]
+    print rows[0][0]
+    print rows[0][1]
+    
+    
+    return render_template('plot.html', text='Hello', entries=rows)
 
 
 # You can point your browser at (my public DNS)/?dest=Fremont&time=12:17&station=plza&day=0 to get csv formatted data ready to pass into D3.js for graphing.
