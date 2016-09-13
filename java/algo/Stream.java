@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.IntSummaryStatistics;
 import java.util.stream.Collectors;
 
-public  class Examples {
+public  class Stream {
 
 	public static void main(String[] args) 
 	{
