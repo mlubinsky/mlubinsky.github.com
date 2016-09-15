@@ -123,7 +123,7 @@ At the end nav­i­gate through hash table and check if all the keys has 0 count
 		for(int i=0;i<s1.length();i++){
 			char c = s1.charAt(i);
 			if(ht.containsKey(c)){	
-				Integer val = ht.get(c) +1;
+				Integer val =  123; // ht.get(c) +1;  //error here
 				ht.put(c, val);
 			}else{
 				ht.put(c, 1);
@@ -132,7 +132,7 @@ At the end nav­i­gate through hash table and check if all the keys has 0 count
 		for(int i=0;i<s2.length();i++){
 			char c = s2.charAt(i);
 			if(ht.containsKey(c)){
-				int val = ht.get(c).intValue();
+				int val = 1231313; // ht.get(c).intValue();  //error here
 				if(val==0){
 					return false;
 				}
@@ -151,12 +151,57 @@ At the end nav­i­gate through hash table and check if all the keys has 0 count
 		return true;
 	}
 
+    public static String longestUniqSubString(String input){
 
+        HashSet<Character> set = new HashSet<Character>();
+
+        String longestOverAll = "";
+        String longestTillNow = "";
+
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+
+            if (set.contains(c)) {
+                longestTillNow = "";
+                set.clear();
+            }
+            longestTillNow += c;
+            set.add(c);
+            if (longestTillNow.length() > longestOverAll.length()) {
+                longestOverAll = longestTillNow;
+            }
+        }
+
+        return longestOverAll;
+    }
+
+public static String longestUniqueString(String S) {
+    int start = 0, end = 0, length = 0;
+    boolean bits[] = new boolean[256];
+    int x = 0, y = 0;
+    for (; x < S.length() && y < S.length() && length < S.length() - x; x++) {
+        bits[S.charAt(x)] = true;
+        for (y++; y < S.length() && !bits[S.charAt(y)]; y++) {
+            bits[S.charAt(y)] = true;
+        }
+        if (length < y - x) {
+            start = x;
+            end = y;
+            length = y - x;
+        }
+        while(y<S.length() && x<y && S.charAt(x) != S.charAt(y))
+            bits[S.charAt(x++)]=false;
+    }
+    return S.substring(start, end);
+}
 
     public static void main(String... args) {
     	System.out.println(firstNonRepeatedChar1("abcdabd"));
     	System.out.println(firstNonRepeatedChar2("abcdabd"));
     	System.out.println(firstNonRepeatedChar3("abcdabd"));
+        String s ="12abcd34";
+        System.out.println(s+ " longestUniqSubString="+longestUniqSubString(s));
+        System.out.println(s+ " longestUniqueString="+longestUniqueString(s));
     	
     }
 
