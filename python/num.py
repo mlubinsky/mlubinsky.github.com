@@ -14,7 +14,6 @@ zero=np.zeros((2,4))
 print zero
 print zero.shape
 
-
 print "----- ONE -----"
 one= np.ones((4,2))
  
@@ -22,6 +21,8 @@ one= np.ones((4,2))
 one_int= np.ones((4,2), dtype=int)
 print one
 print one_int
+
+
 
 print "transpose"
 print one.transpose()
@@ -52,8 +53,17 @@ print row.size
 
 
 
-print " ----eigenvector -------"
 A = np.array([[1,2],[3,4]])
+print A
+print "sum=", A.sum(), A.sum(axis=0), A.sum(axis=1) 
+print "mean=", A.mean()
+print "min=", A.min()
+print "max=", A.max()
+print "std=", A.std()
+
+
+print " ----eigenvector -------"
+
 eig_val, eig_vec= eig(A)
 print eig_val
 print eig_vec
