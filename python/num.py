@@ -56,7 +56,7 @@ print row.size
 A = np.array([[1,2],[3,4]])
 print A
 print "sum=", A.sum(), A.sum(axis=0), A.sum(axis=1) 
-print "mean=", A.mean()
+print "mean=", A.mean(), A.mean(axis=0),  A.mean(axis=1) 
 print "min=", A.min()
 print "max=", A.max()
 print "std=", A.std()
