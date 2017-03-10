@@ -1,22 +1,22 @@
 <head>
  <link rel="stylesheet" href="style.css">
-</head>	
+</head>
 
 <body>
 <!--
 <pre>
 -->
 <h2>Spark</h2>
-<pre>
-How to run spark in Standalone client mode?
+<b>How to run Spark in Standalone client mode</b>
 
+<pre>
 spark-submit \
 -class org.apache.spark.examples.SparkPi \
 -deploy-mode client \
 -master spark//$SPARK_MASTER_IP:$SPARK_MASTER_PORT \
 $SPARK_HOME/examples/lib/spark-examples_version.jar 10
 
-How to run spark in Standalone cluster mode?
+<b>How to run Spark in Standalone cluster mode</b>
 
 spark-submit \
 -class org.apache.spark.examples.SparkPi \
@@ -24,7 +24,7 @@ spark-submit \
 -master spark//$SPARK_MASTER_IP:$SPARK_MASTER_PORT \
 $SPARK_HOME/examples/lib/spark-examples_version.jar 10
 
-How to run spark in YARN client mode?
+<b>How to run spark in YARN client mode</b>
 
 spark-submit \
 -class org.apache.spark.examples.SparkPi \
@@ -32,7 +32,7 @@ spark-submit \
 -master yarn \
 $SPARK_HOME/examples/lib/spark-examples_version.jar 10
 
-How to run spark in YARN cluster mode?
+<b>How to run Spark in YARN cluster mode</b>
 
 spark-submit \
 -class org.apache.spark.examples.SparkPi \
