@@ -1,4 +1,7 @@
 //https://bradcollins.com/tag/scala/
+//https://habrahabr.ru/post/323706/
+//https://twitter.github.io/effectivescala/
+
 // scala>   :load examples.scala
 val xs = Vector(1,2,3,4,5,6)
 val mid = xs.length / 2 // 3
@@ -137,3 +140,28 @@ val tuesday = List(
 )
 
 val tuesdayTop = findTopSalesman(tuesday)
+
+//generators
+var ref0: List[Int] =
+  for {
+  	 k <- List(0,1,2)
+  	 p <- List(3,4,5)
+  } yield k * p
+
+var ref1: List[Int] =
+  for {
+  	 k <- List(0,1,2) if k > 0;
+  	 p <- List(3,4,5)
+  } yield k * p
+
+ var ref3: List[Int] = List(0,1).withFilter(_ >0)
+
+ def fibonacci(term: Int) : Int = {
+  //@annotations.tailrec
+  def calculate(counter: Int, previous: Int, acc: Int) : Int =
+    if (counter == term) acc
+    else calculate(counter + 1, acc, acc + previous)
+
+  calculate(0, 1, 0)
+}
+
