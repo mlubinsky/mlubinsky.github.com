@@ -1,0 +1,53 @@
+<body>
+<b> SSH </b>
+http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/
+http://mah.everybody.org/docs/ssh
+
+https://likegeeks.com/linux-process-management/
+top -c
+free -m
+
+<b> grep </b>
+Use -v to show those that do not contain “match”: grep -v match file.txt
+Use -c to count how many matches: grep -c match file.txt
+Show list of files that match: grep -rl match *
+Number of lines to show before and after match: grep -B 2 -A 2 match file.txt
+
+
+alias alog="tail -f /var/log/apache2/error.log"
+alias please='sudo $(fc -ln -1)'
+
+sudo !!   - prev command with root priv
+<b>tr (also exists: expand and unexpand) </b>
+cat geeks.txt | tr ':[space]:' '\t' > out.txt  - replace spaces with tabso
+cat myfile | tr a-z A-Z > output.txt
+
+<b> xargs </b>
+find. -name "*.png" -type f -printi0 | xargsi -0 tar -cvzf images.tar.gz
+ls /etc/*.conf | xargs -i cp {} /home/likegeeks/Desktop/out
+
+<b>Table-oriented output :  column </b>
+mount | column -t
+cat /etc/passwd | column -t –s :
+
+Run command till it sucseed
+while  sleep 1
+do
+   ping -c 1 google.com > /dev/null 2>&1 && break
+done
+
+Sort processed by memory consumption
+ps aux | sort -nk 4
+Sort processed by CPU consumption
+ps aux | sort -nk 3
+
+watch df -h
+nohup
+
+<b> Yes/No automation</b>
+yes | command
+yes no | command
+
+<b> AWK </b>
+cat log.log | awk '{ print $1 }'
+</body>
