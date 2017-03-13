@@ -1,12 +1,15 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="zoom.css" />
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 </head>
 
 
 <body>
-<h3>Hello World!</h3>
-This page was created to keep my notes and code snippets.
+<h3>Michael Lubinsky</h3>
+My notes and code snippets.
 <pre>
  - <a href=java.html>Java</a>
  - <a href=scala.html>Scala</a>
@@ -16,6 +19,7 @@ This page was created to keep my notes and code snippets.
  - <a href=spark.html>Spark</a>
  - <a href=ml.html>Machine Learning</a>
  - <a href=github.html>Git Tips</a>
+ - <a href=shell.html>Linux</a>
 </pre>
 
 
@@ -32,51 +36,12 @@ document.getElementById("info").innerHTML=txt;
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
 <script src="https://www.google.com/jsapi?key=ABQIAAAAmyROU7zL-EZcCn64GYzTZRQHy4BAGfdDx2l3oEsAk5GCRGrT7hSpg_uLYjIjgQDZeFM-9Q_qISIk7g" type="text/javascript"></script>
 <script type="text/javascript" src="zoom.js"></script>
-
-
- <div id="container"></div>
-  <script src="./sigma.min.js"></script>
-  <script>
-    // Let's first initialize sigma:
-    var s = new sigma('container');
-
-    // Then, let's add some data to display:
-    s.graph.addNode({
-      // Main attributes:
-      id: 'n0',
-      label: 'Hello',
-      // Display attributes:
-      x: 0,
-      y: 0,
-      size: 1,
-      color: '#f00'
-    }).addNode({
-      // Main attributes:
-      id: 'n1',
-      label: 'World !',
-      // Display attributes:
-      x: 1,
-      y: 1,
-      size: 1,
-      color: '#00f'
-    }).addEdge({
-      id: 'e0',
-      // Reference extremities:
-      source: 'n0',
-      target: 'n1'
-    });
-
-    // Finally, let's ask our sigma instance to refresh:
-    s.refresh();
-  </script>
-
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <div id="zoom">
     jQuery zooming test
 </div>
 
-
 </body>
 </html>
-
 
