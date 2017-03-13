@@ -6,8 +6,8 @@ def IntToByte(x):
         x = int(x / 2)
     #print (n)
     return n
- 
+
 for x in xrange(0,10):
-     print x, IntToByte(x)
- 
-    
+     print x, " in bytes: ", IntToByte(x)
+
+
