@@ -12,6 +12,20 @@ object HelloWorld {
     if(a <=1) 1 else a * factorial(a-1)
   }
 
+  def compare(a: AnyRef, b: AnyRef): Int = {
+     if (a eq b) return 0
+     val d = System.identityHashCode(a) compare System.identityHashCode(b)
+     if (d != 0) return d
+     // slow path..
+  }
+
+  def suffix(i: Int) = i match {
+     case 1 => "st"
+     case 2 => "nd"
+     case 3 => "rd"
+     case _ => "th"
+  }
+
   def map_example() = {
      val x = List(10,20,30,40)
      val y = x.map( i => i* 3)

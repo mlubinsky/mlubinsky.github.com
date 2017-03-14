@@ -1,8 +1,109 @@
 //https://bradcollins.com/tag/scala/
+//https://pavelfatin.com/scala-collections-tips-and-tricks/
 //https://habrahabr.ru/post/323706/
 //https://twitter.github.io/effectivescala/
 
 // scala>   :load examples.scala
+// function as parameter
+def halfMaker(value: Int): Double = value.toDouble/2
+
+def processRange(start: Int, finish: Int, processor: Int => AnyVal): Unit = {
+ for (i <- start to finish)
+ println(processor(i))
+}
+
+processRange(1,3,halfMaker)
+
+// Anonymous func (lambda)
+def moneyTransfer(amount: Double, providerFee: Double => Double): Double = {
+ amount + 10 + providerFee(amount)
+}
+println(moneyTransfer(100, moneyTransfer(250, m => m / 10)))
+
+//Function as Return Value
+def getStrategy(enoughEnergy: Boolean) = {
+ if (enoughEnergy)
+ (energy: Double) => "We are going to attack with damage "+energy
+ else
+ (energy: Double) => "We are going to reflect damage "+energy/2
+}
+val returnedFunction = getStrategy(true)
+returnedFunction(15.0)
+//We are going to attack with damage 15.0
+
+//*******************
+// Scala collections
+//*******************
+ val numbers = Seq(11, 2, 5, 1, 6, 3, 9)
+ println(  numbers.max ) //11
+ println(  numbers.min ) //1
+
+case class Book(title: String, pages: Int)
+   val books = Seq( Book("Future of Scala developers", 85),
+                   Book("Parallel algorithms", 240),
+                   Book("Object Oriented Programming", 130),
+                   Book("Mobile Development", 495) )
+   //Book(Mobile Development,495)
+   books.maxBy(book => book.pages)
+   //Book(Future of Scala developers,85)
+   books.minBy(book => book.pages)
+
+//  Filtering
+val numbers = Seq(1,2,3,4,5,6,7,8,9,10)
+println (numbers.filter(n => n % 2 == 0))
+books.filter(book => book.pages >= 120)
+
+// Flatten
+
+   val abcd = Seq('a', 'b', 'c', 'd')
+   val efgj = Seq('e', 'f', 'g', 'h')
+   val ijkl = Seq('i', 'j', 'k', 'l')
+   val mnop = Seq('m', 'n', 'o', 'p')
+   val qrst = Seq('q', 'r', 's', 't')
+   val uvwx = Seq('u', 'v', 'w', 'x')
+   val yz = Seq('y', 'z')
+   val alphabet = Seq(abcd, efgj, ijkl, mnop, qrst, uvwx, yz)
+   //  alphabet: Seq[Seq[Char]] = List(List(a, b, c, d), List(e, f, g, h), List(i, j, k, l), List(m, n, o, p), List(q, r, s, t), List(u, v, w, x), List(y, z))
+
+   alphabet.flatten
+  // List(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z)
+
+// *****************************
+//  diff union intersect distinct
+// *****************************
+val num1 = Seq(1, 2, 3, 4, 5, 6)
+   val num2 = Seq(4, 5, 6, 7, 8, 9)
+   //List(1, 2, 3)
+   num1.diff(num2)
+   //List(4, 5, 6)
+   num1.intersect(num2)
+   //List(1, 2, 3, 4, 5, 6, 4, 5, 6, 7, 8, 9)
+   num1.union(num2)
+//
+//List(1, 2, 3, 4, 5, 6, 7, 8, 9)
+num1.union(num2).distinct
+
+// flatMap
+// flatMap[B](f: A => Container[B]): Container[B]
+
+// find all permutation of chars: solution #1
+val chars = 'a' to 'd'
+val perms = chars flatMap { a =>
+  chars flatMap { b =>
+    if (a != b) Seq("%c%c".format(a, b))
+    else Seq()
+  }
+}
+
+// find all permutation of chars: solution #2
+val perms = for {
+  a <- chars
+  b <- chars
+  if a != b
+} yield "%c%c".format(a, b)
+
+
+
 val xs = Vector(1,2,3,4,5,6)
 val mid = xs.length / 2 // 3
 val (left, right) = xs splitAt mid
@@ -154,7 +255,8 @@ var ref1: List[Int] =
   	 p <- List(3,4,5)
   } yield k * p
 
- var ref3: List[Int] = List(0,1).withFilter(_ >0)
+ var ref3: List[Int] = List(0,1).filter(_ > 0)
+ var ref4: List[Int] = List(0,1).withFilter(_ >0).map(x=>x)
 
  def fibonacci(term: Int) : Int = {
   //@annotations.tailrec
@@ -164,4 +266,23 @@ var ref1: List[Int] =
 
   calculate(0, 1, 0)
 }
+
+
+val votes = Seq(("scala", 1), ("java", 4), ("scala", 10), ("scala", 1), ("python", 10))
+val orderedVotes = votes
+  .groupBy(_._1)
+  .map { case (which, counts) =>
+    (which, counts.foldLeft(0)(_ + _._2))
+  }.toSeq
+  .sortBy(_._2)
+  .reverse
+
+val votesByLang = votes groupBy { case (lang, _) => lang }
+val sumByLang = votesByLang map { case (lang, counts) =>
+  val countsOnly = counts map { case (_, count) => count }
+  (lang, countsOnly.sum)
+}
+val orderedVotes = sumByLang.toSeq
+  .sortBy { case (_, count) => count }
+  .reverse
 
