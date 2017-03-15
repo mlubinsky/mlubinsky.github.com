@@ -18,7 +18,8 @@ processRange(1,3,halfMaker)
 def moneyTransfer(amount: Double, providerFee: Double => Double): Double = {
  amount + 10 + providerFee(amount)
 }
-println(moneyTransfer(100, moneyTransfer(250, m => m / 10)))
+val money=50.0
+println(moneyTransfer(val, val => val / 10.0)
 
 //Function as Return Value
 def getStrategy(enoughEnergy: Boolean) = {
