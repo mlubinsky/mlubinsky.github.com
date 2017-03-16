@@ -19,7 +19,7 @@ def moneyTransfer(amount: Double, providerFee: Double => Double): Double = {
  amount + 10 + providerFee(amount)
 }
 val money=50.0
-println(moneyTransfer(val, val => val / 10.0)
+println(moneyTransfer(money, money => money / 10.0))
 
 //Function as Return Value
 def getStrategy(enoughEnergy: Boolean) = {
@@ -53,6 +53,58 @@ case class Book(title: String, pages: Int)
 val numbers = Seq(1,2,3,4,5,6,7,8,9,10)
 println (numbers.filter(n => n % 2 == 0))
 books.filter(book => book.pages >= 120)
+
+// Sorting
+val xs = List(
+  "Our", "fathers", "trusted", "in", "You",
+  "They", "trusted", "and", "You",
+  "delivered", "them")
+val sorted = xs.sorted
+// sorted: List[String] =
+//   List(Our, They, You, You, and,
+//        delivered, fathers, in, them,
+//        trusted, trusted)
+
+
+val sortedCaseInsensitive = xs.sortBy(_.toLowerCase)
+val sortedByLength = xs.sortBy(_.length)
+case class Track(length : Double, name : String)
+val ts = List(
+  Track(7.35, "Watcher of the Skies"),
+  Track(4.783, "Time Table"),
+  Track(8.583, "Get 'Em Out by Friday"),
+  Track(5.75, "Can-Utility and the Coastliners"),
+  Track(1.65, "Horizons"),
+  Track(22.95, "Supper's Ready") )
+
+val sortedByTrackLength = ts.sortBy(_.length)
+val sortedByTrackName = ts.sortBy(_.name)
+
+val reversed = xs.sortWith(_ > _)
+case class Name(first: String, last: String)
+val names = List(
+  Name("Phil", "Collins"),
+  Name("Jackie", "Collins"),
+  Name("Joan", "Collins"),
+  Name("Tom", "Collins"),
+  Name("George", "Bush"),
+  Name("Jeb", "Bush"),
+  Name("Neil", "Bush"),
+  Name("Marvin", "Bush"))
+
+val lastThenFirst = names.sortWith { (a, b) =>
+  if (a.last == b.last) a.first < b.first
+  else a.last < b.last
+}
+// lastThenFirst: List[Name] = List(
+//   Name(George,Bush),
+//   Name(Jeb,Bush),
+//   Name(Marvin,Bush),
+//   Name(Neil,Bush),
+//   Name(Jackie,Collins),
+//   Name(Joan,Collins),
+//   Name(Phil,Collins),
+//   Name(Tom,Collins))
 
 // Flatten
 

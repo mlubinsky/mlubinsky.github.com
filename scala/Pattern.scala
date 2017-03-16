@@ -2,7 +2,18 @@
 Case classes are special because Scala automatically creates a companion object for them:
 a singleton object that contains not only an apply method for creating new instances of the case class,
 but also an unapply method – the method that needs to be implemented by an object in order for it to be an extractor.
+As with regular classes, we can add member functions and properties to the case class itself and also put some things in a companion object:
+Case classes provides  toString(), equals(o) and hashCode() implementation.
+The way case classes perform some of their magic is that Scala defines a companion object for each case class behind the scenes.
+why don’t you need the new keyword when instantiating case classes?
+Because the companion object has an apply() method that takes the parameters defined in the case class constructor:
 
+case class Person(first: String, last: String) {
+  def swap = Person(last, first)
+}
+object Person {
+  val anonymous = Person("", "")
+}
 http://danielwestheide.com/blog/2012/11/21/the-neophytes-guide-to-scala-part-1-extractors.html
 */
 val xs = 3 :: 6 :: 12 :: Nil
@@ -12,6 +23,49 @@ xs match {
   case _ => 0
 }
 
+case class Person(first: String, last: String)
+
+def greet(p : Person) = p match {
+  case Person("Brad", "Collins") => "It's me!"
+  case Person("Brad", _) => "Nice name"
+  case Person(_, "Collins") => "Greetings, kinfolk"
+  case _ => "Hello, stranger"
+}
+
+val me = Person("Brad", "Collins")
+val meGreeting = greet(me)
+//
+def execute2(command: String, id: Int, value: String = "") =
+  command match {
+    case "add" | "create" => s"Added ${id}: ${value}"
+    case "remove" | "delete" => s"Added ${id}"
+    case "update" | "change" => s"Added ${id}: ${value}"
+    case _ => s"Illegal command: ${command}"
+  }
+
+val created = execute2("create", 84, "baz")
+
+// matching on type/
+ef report(guests: Any) = guests match {
+  case guest: String =>
+    s"Our guest: ${guest}"
+  case all: Array[String] =>
+    s"Our guests: ${all.mkString(", ")}"
+  case count: Int =>
+    s"We have ${count} guests"
+  case _ => "Huh?"
+}
+//-------
+def execute2(command: String, id: Int, value: String = "") =
+  command match {
+    case "add" | "create" => s"Added ${id}: ${value}"
+    case "remove" | "delete" => s"Added ${id}"
+    case "update" | "change" => s"Added ${id}: ${value}"
+    case _ => s"Illegal command: ${command}"
+  }
+
+val created = execute2("create", 84, "baz")
+//--------------------
 case class Player(name: String, score: Int)
 
 def printMessage(player: Player) = player match {
