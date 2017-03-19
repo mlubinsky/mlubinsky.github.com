@@ -1,7 +1,44 @@
 <head>
-	Scala
-<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
 <pre>
-<a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/scala>Scala code snippets</a>
-<a href=https://scalafiddle.io/> Scala Fiddle</a>
-<pre>
+<h2>Call by value vs call by name</h2>
+   def f (arg: Int) = println (arg)
+Call by name is lazy but it is calculated every time
+   def f (arg: => Int) = println (arg)
+
+Keyword lazy: calculated once at the moment of 1st use
+
+<h2>Reduction operations</h2>
+<b>foldLeft vs fold</b>
+
+def foldLeft[B] (z: B) (f: (B,A) => B): B
+The applies a binary operator to a start value and all elements of this collection or iterator,
+going left to right
+
+The foldLeft is not parallelizable. Explanation is below:
+
+val l=List(1,2,3,4)
+val res= l.foldLeft("")(str: String, i: Int) => str+i)
+Result: "1234"
+
+val l1=List(1,2)
+val l1=List(3,4)
+l1.foldLeft(...) // "12"
+l2.foldLeft(...) // "34"
+
+Issue: not possible to combine results of 2 foldLeft() outputs using foldLeft
+because the signature of foldLeft func above uses Int, so Spark does not not support it.
+
+def fold(z: A) f: (A,A) => A): A   // this is parallelizable because the input and output types are the same
+
+<b>Aggregate vs reduce</b>
+aggregate[B] (z: => B) (seqop: (B,A) =>B, combop (B,B) => B): B  //parallelizable
+
+<h2>Links</h2>
+<a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/scala>My Scala code snippets</a>
+<a href=https://scalafiddle.io/>Scala Fiddle</a>
+<a href=https://scala.fluentcode.com//>Scala Code Explorer</a>
+</pre>

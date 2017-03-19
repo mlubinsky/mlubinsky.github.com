@@ -7,9 +7,24 @@
 <pre>
 -->
 <h2>Spark</h2>
-<b>How to run Spark in Standalone client mode</b>
 
 <pre>
+<b>How to configure RDD persistance</b>
+ - in memory as Java objects
+ - on disk as Java objects
+ - in memory as serialized Java objects
+ - on disk as serialized Java objects
+ - both in memory an on disk
+ cache()
+ persist
+ MEMORY_ONLY
+ MEMORY_ONLY_SER
+ MEMORY_AND_DISK
+ MEMORY_AND_DISK_SER
+ DISK_ONLY
+
+<b>How to run Spark in Standalone client mode</b>
+
 spark-submit \
 -class org.apache.spark.examples.SparkPi \
 -deploy-mode client \
@@ -24,7 +39,7 @@ spark-submit \
 -master spark//$SPARK_MASTER_IP:$SPARK_MASTER_PORT \
 $SPARK_HOME/examples/lib/spark-examples_version.jar 10
 
-<b>How to run spark in YARN client mode</b>
+<b>How to run Spark in YARN client mode</b>
 
 spark-submit \
 -class org.apache.spark.examples.SparkPi \

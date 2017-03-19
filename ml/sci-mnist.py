@@ -4,7 +4,7 @@ from sklearn import datasets
 digits = datasets.load_digits()
 #print(digits)
 import matplotlib
-#from sklearn.decomposition import RandomizedPCA
+from sklearn.decomposition import RandomizedPCA
 from sklearn.decomposition import PCA
 
 print "config dir=", matplotlib.get_configdir()
@@ -68,8 +68,8 @@ plt.show()
 print "AFTERE SHOW"
 
 # Create a Randomized PCA model that takes two components
-#randomized_pca = RandomizedPCA(n_components=2)
-randomized_pca = PCA(svd_solver='randomized', n_components=2)
+randomized_pca = RandomizedPCA(n_components=2)
+#randomized_pca = PCA(svd_solver='randomized', n_components=2)
 
 # Fit and transform the data to the model
 reduced_data_rpca = randomized_pca.fit_transform(digits.data)
@@ -318,8 +318,6 @@ print(metrics.classification_report(y_test, predicted))
 
 # Print the confusion matrix
 print(metrics.confusion_matrix(y_test, predicted))
-
-
 
 # Create an isomap and fit the `digits` data to it
 X_iso = Isomap(n_neighbors=10).fit_transform(X_train)
