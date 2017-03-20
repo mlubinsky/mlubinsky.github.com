@@ -1,4 +1,4 @@
-h2 {
+h2, h3 {
 /*	color: black;
 	background-color: lightblue;
 	font-style: italic;
@@ -6,5 +6,5 @@ h2 {
 	color: white;
 	background-color: #1A5276;
 	font-style: normal;
-	text-align: center;
+	text-align: left;
 }
