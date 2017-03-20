@@ -1,6 +1,10 @@
 h2 {
-	color: black;
+/*	color: black;
 	background-color: lightblue;
 	font-style: italic;
-	text-align: center; 
+*/
+	color: white;
+	background-color: #1A5276;
+	font-style: normal;
+	text-align: center;
 }
