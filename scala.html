@@ -4,12 +4,16 @@
 
 <body>
 <pre>
-<h2>Call by value vs call by name</h2>
-   def f (arg: Int) = println (arg)
-Call by name is lazy but it is calculated every time
-   def f (arg: => Int) = println (arg)
+<h2>Links</h2>
+<a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/scala>My Scala code snippets</a>
+<a href=https://scalafiddle.io/>Scala Fiddle</a>
+<a href=https://scala.fluentcode.com//>Scala Code Explorer</a>
 
-Keyword lazy: calculated once at the moment of 1st use
+<h2>Scala: call by value, call by name and lazy calculation</h2>
+   def f (arg: Int) = println (arg)     // call by value - arg is evaluated at the point of function call
+   def f (arg: => Int) = println (arg)  // call by name  - arg is evaluated at the moment of use (lazy, but it is calculated every time)
+
+   Scala keyword <b>lazy</b>: calculated once at the moment of 1st use
 
 <h2>Reduction operations</h2>
 <b>foldLeft vs fold</b>
@@ -29,16 +33,21 @@ val l1=List(3,4)
 l1.foldLeft(...) // "12"
 l2.foldLeft(...) // "34"
 
-Issue: not possible to combine results of 2 foldLeft() outputs using foldLeft
-because the signature of foldLeft func above uses Int, so Spark does not not support it.
+Issue: not possible to combine results of 2 foldLeft() outputs above using the same foldLeft()
+because the signature of foldLeft() 2nd arg  is a func(String,Int), not (String,String).
+The foldLeft is not parallelizable and Spark does not support foldLeft() and foldRight().
 
 def fold(z: A) f: (A,A) => A): A   // this is parallelizable because the input and output types are the same
 
-<b>Aggregate vs reduce</b>
-aggregate[B] (z: => B) (seqop: (B,A) =>B, combop (B,B) => B): B  //parallelizable
+<b>Aggregate</b>
+aggregate[B] (z: => B) (seqop: (B,A) =>B, combop (B,B) => B): B  //parallelizable and can change the return type - supported by Spark!
 
-<h2>Links</h2>
-<a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/scala>My Scala code snippets</a>
-<a href=https://scalafiddle.io/>Scala Fiddle</a>
-<a href=https://scala.fluentcode.com//>Scala Code Explorer</a>
+
+<b>Reduce and fold</b>
+val a = Array(12, 6, 15, 2, 20, 9)
+val sum = a.reduceLeft(_ + _)   // same as a.reduceLeft((x,y) => x + y)
+a.reduceLeft(_ * _)  // a.reduceLeft(_ min _)   //  a.reduceLeft(_ max _)
+
+The foldLeft method works just like reduceLeft, but it lets you set a seed value to be used for the first element.
+
 </pre>
