@@ -275,3 +275,12 @@ val gender = user.gender match {
   case None => "not specified"
 }
 println("Gender: " + gender)
+
+println("RECURSIVE PATTERN MATCHING")
+val revert: Any=>Any = {
+  case (x,(y,z) => revert((x,y), z)
+  case x=> x
+}
+val arg=(0,(1, (2, (3, (4,5)))))
+print(revert(arg))
+
