@@ -16,9 +16,24 @@
 
  var pairRDD = rdd.map(page => (title, page.text))
 
- case class Event(organizer: String, name: String, budget: Int)
+ case class Event(organizer: String, name: String, budget: Int)   //key:organizer
  var eventsRDD = sc.parallelize(...)
      .map(event => (event.orgazier, event.budget))
+
+ def groupByKey(): RDD[(K, Iterable[V])]
+
+ var groupedRdd= eventsRDD.groupByKey()
+ groupedRdd.collect().foreach(println)
+
+reduceByKey: conceptionally it is combination of groupByKey and reducing all vals per key
+def reduceByKey (func: (V,V) => V): RDD[(K,V)]
+val budgetsRDD=eventsRDD.reduceByKey(_+_)
+budgetsRdd.collect().foreach(println)
+
+ def mapValues[U] (f: V=>U): RDD[(K,U)]
+ rdd.map { case(x,y): (x,func(y))}  //applies func to only values in PairRDD
+
+ def countByKey(): Map[K,Long]) // counts # of elements per key
 
  In regular Scala collections there is groupBy:
  def groupBy[K](f: A=>K): Map[K, Traversable[A]]
