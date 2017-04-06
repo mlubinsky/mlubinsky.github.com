@@ -8,12 +8,27 @@
 <a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/scala>My Scala code snippets</a>
 <a href=https://scalafiddle.io/>Scala Fiddle</a>
 <a href=https://scala.fluentcode.com//>Scala Code Explorer</a>
+<a href=http://deeplearning.thoughtworks.school/doc/>Deep learning in Scala</a>
 
 <h2>Scala: call by value, call by name and lazy calculation</h2>
    def f (arg: Int) = println (arg)     // call by value - arg is evaluated at the point of function call
    def f (arg: => Int) = println (arg)  // call by name  - arg is evaluated at the moment of use (lazy, but it is calculated every time)
 
    Scala keyword <b>lazy</b>: calculated once at the moment of 1st use
+
+<h2>apply()</h2>
+A simple use of apply is to define it on an Object. This lets you call the Object as if the object itself was a function. Here’s an example:
+
+object Greet {
+ def apply(name: String): String = {
+   "Hello %s".format(name)
+ }
+}
+// I can call apply explicitly if I want:
+Greet.apply("bob")
+Case classes provide you with an automatically generated apply function on their companion object that you can use like a constructor.
+This is very confusing as it looks just like a constructor and quacks like a constructor, but it is not a constructor.
+
 
 <h2>Tuples</h2>
 up to Tuple22

@@ -35,6 +35,12 @@ budgetsRdd.collect().foreach(println)
 
  def countByKey(): Map[K,Long]) // counts # of elements per key
 
+ keys (def keys: RDD{K}) Return RDD with keys on eack tuple
+ Example: number of unique visitors
+ case class Visitor(ip: String, timestamp: String, duration: String)
+ val visits: RDD[Visitor]= sc.textFile(..).map(v=>(v.ip, v.duration))
+ val numUniqueVisits=visits.keys.distinct().count()
+
  In regular Scala collections there is groupBy:
  def groupBy[K](f: A=>K): Map[K, Traversable[A]]
  Usage example:
@@ -45,6 +51,8 @@ budgetsRdd.collect().foreach(println)
     else if (age <50) "adult"
     else "senior"
  )
+<h3>Joins on pair RDDs</h3>
+Inner/leftOuterJoin/rightOuterJoin
 
 <h3>How to configure RDD persistance</h3>
  - in memory as Java objects
