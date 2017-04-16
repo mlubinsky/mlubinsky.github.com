@@ -9,6 +9,149 @@
 <h2>Spark</h2>
 
 <pre>
+<h3>RDD </h3>
+
+ partitions - atomic pieces  of data set
+ dependencies  - relation between RDD and how it was derived from
+ function for computing datset based on parent RDD
+ metadata
+
+Narrow depencencies: each partition of parent RDD is used by at most one partition of child RDD
+fast, no shuffle, optimizations like pipelining possible
+    Parent partition(1)  -> Child partition(<=1)
+Examples: map, filter, flatMap, mapPartitions, mapValues, mapPartitionsWithIndex, union, join with co-partitioned inputs
+
+Wide depencencies: slow... shuffle over network
+    Parent partition(1)  -> Child partition(many)
+Examples:
+(group/reduce/combine)ByKey, join, cogroup groupWith, join (depends on partitioning scheme), (left/right)OuterJoin
+distinct, intersection, repartition, coalese
+
+dependencies method on RDDs returns the sequence of Dependencies objects
+The sorts of dependencies objects:
+Narrow dependencies objects:  OneToOneDependency PruneDependency, RangeDependency
+Wide dependency objects: ShuffleDependency
+
+val wordsRdd = sc.parallelize(largeList)
+val pairs = wordRdd.map(c=>(c,1))
+ .groupByKey()
+ .dependencies
+
+
+<h3> Choosing best excecution plan</h3>
+case class Demographic (
+ id: Int
+ codingBootcamp: Boolean,
+ country: String
+ gender: String
+ isMinority: Boolean,
+ servedInMilitary: Boolean
+ )
+//Pair RDD (id,demographic)
+ val demographic = sc.textfile(..)
+
+ case class Finances (id: Int
+                      hasDept: Boolean,
+                      hasDependents: Boolean,
+                      hasLoans: Boolean,
+                      income: Int
+ )
+//Pair RDD (id,finances)
+val finances = sc.textfile(..)
+<b>plan #1</b>
+Following join  is pairRDD (id:Int, (Demographic, Finances))
+demographic.join(finances)
+   .filter { p=>
+             p._2._1.country == "Swiss" &&
+             p._2._2..hasDependens &&
+             p._2._2.hasDept
+}.count
+
+steps for join above are:
+1) inner join
+2) filter to select Swiss people
+3) filter to select dept and dependence
+
+<b>plan #2 : fast filter before join </b>
+val filtered_finance=finances.filter(p=>p._2.hasDependends && p._2.hasDept)
+demographic.filter(p=>p._2.country == "Swiss")
+   .join(filtered_finance)
+   count
+steps for join above are:
+1) filter to select dept and dependence
+2) filter to select Swiss people
+3) join
+
+<b>plan #3 slowest</b>
+val cartesian=demographic.catresian(finances)
+cartesian.filter{
+   case (p1,p2) => p1._1 == p2._1
+}
+.filter{
+	case (p1,p2) => (p1._2.country == "Swiss") &&
+                    (p2._2.hasDependence) &&
+                    p2._2.hasDept
+}.count
+
+<h3>Spark Session </h3>
+val spark=SparkSession
+  .builder()
+  .appName("My App")
+  ,getOrCreate()
+
+<h3>Spark SQL </h3>
+It makes optimization of excecution plan as SQL RDBMS does
+DataFrames are untyped: scala compiler doesn not check types in its schema
+RDD[T]  but DataFrame has no type, it con
+ DataSets
+Catalyst - query optimizer
+Tungsten - off-heap serializer avoiding garbage collector - contains rows which can contain any schema
+DataFrame  conseptually are RDD full of records with known schema (like in SQL RDBMS table)
+Transformations  on DataFrames are known as untyped transformations
+DataFrame can be created from existing RDD
+  val tupleRDD =  ..//Assume RDD[(Int String, String, String)]
+  val tupleDF = tupleRDD.toDF("id","name","city","country")
+if you have RDD containing case class instances then spark can infere attributes from case class fields
+
+
+case class Person(id: Int, name: String, city: String)
+val peopleRDD = .. //Assume RDD[Person]
+reflection will be used to automatically generate names of fields
+
+
+1) Create RDD of Rows from original RDD
+2) Create schema represented by StructuredType
+3) Apply schema to RDD of Rows via createDataFrime method
+
+or by reading datasource from json/csv/Parquet/ JDBC file:
+val df=sparkread.json(my.json)
+
+peopleOF.createOrReplaceTempView("people")
+val adultsDF = spark.sql("SELECT * FROM people WHERE age>17")
+
+Complex Spark SQL Data Types
+Scala     ->  SQL
+Array[T]  -> ArrayType(elementType, containsNull)
+Map[K,V]  -> MapType(keyType, valueType, valueContainsNull)
+case class ->  StructType(List[StructFields])
+
+DataFrame show() show 20 first elements
+printSchema()
+
+
+df.filter($"age" >18)
+df.filter(df("age") >18)
+df.filter("age >18")
+val res=empDF.select("id","lname")
+              .where("city=='Sidney'")
+              .orderBy("id")
+
+
+myDF.groupBy($authorId, $subForum)
+  .agg(c, count($authorId))
+  .orderBy($subForum, count($authorId))
+  .desc
+
 <h3>Pair RDD </h3>
  def groupByKey(): RDD[(K,Iterable[V])]
  def reduceByKey(func: (V,V) => V): RDD[(K,V)]
@@ -25,7 +168,13 @@
  var groupedRdd= eventsRDD.groupByKey()
  groupedRdd.collect().foreach(println)
 
-reduceByKey: conceptionally it is combination of groupByKey and reducing all vals per key
+ groupByKey collects all of the values associated with the given key and stores them in that single collection. That means that data has moved around the network and doing this, moving the data on the network is called shuffling.  Can we somehow do it in a more efficient way?
+
+Perhaps we can reduce before doing the shuffle. This could potentially reduce the amount of data that we actually have to send over the network.
+
+To do that, we can use the reduceByKey operator, you can think of it as a combination of first doing groupByKey and then reducing overall the values that were grouped by that key in those collections.
+
+reduceByKey: conceptionally it is combination of groupByKey and reducing all values per key
 def reduceByKey (func: (V,V) => V): RDD[(K,V)]
 val budgetsRDD=eventsRDD.reduceByKey(_+_)
 budgetsRdd.collect().foreach(println)
@@ -67,6 +216,101 @@ Inner/leftOuterJoin/rightOuterJoin
  MEMORY_AND_DISK
  MEMORY_AND_DISK_SER
  DISK_ONLY
+
+<h3> Partitioning</h3>
+partition# = key.hashcode() % number_of_partitions
+can lead to skewed distribution between nodes
+
+Spark support hash partitioning and range partitioning
+all data in same partition are garanteed to be in the same node
+
+Pair RDD may contain keys that have order defined (e.g.: Int or String)
+For such RDD the range partitioning is more effective
+
+range partitioner : provide # of patitions
+provide a pair RDD with <b>ordered keys</b>
+this RDD is sampled to create a suitable set of sorted ranges
+
+val pairs = purchasedRdd.map(p=> (p.customerId, p.price))
+val tunedPartitioner = new RangePartitioner(8, pairs)   // spark will use sampling here against pairs to find best ranges
+val partitioned = pair.partitionBy(tunePartitioner).persist()  // persist to eliminate shuffling
+val purchasesPerCustomer=partitioned.map(p=> (p._1), (1.p._2)))
+val purchasesPerMonth = purchasesPerCustomer.reduceByKey((v1,v2)=> (v1._1+v2._1,v1._2+v2._2)
+
+Operations on Pair RDD that hold and propagate a partitioner:
+cogroup
+groupWith
+join
+leftOterJoin
+rightOuterJoin
+groupByKey - uses hash partitioner with default parametes
+reduceByKey
+foldByKey
+combineByKey
+partitionBy
+sort
+mapValues (if parent has a partitioner)
+flatMapValues (as above)
+filter (as above)
+
+But following transformation will loose partitioner because it is possible for map to change the key
+map  rdd.map((k: String, v:Int) => ("doh",v))
+flatMap
+
+
+userData (UserId, UserInfo) //big table
+events(UserId,LinkInfo)
+
+val sc=new SparkContent()
+val userData=sc.sequenceFile[UserId,UserInfo]("hdfs://..").persist()
+
+def processingNewLogs(logfilename: String){
+	val events = sc.sequenceFile[UserId,LinkInfo](logfilename)
+	val joined = userData.join(events) //RDD (UserId, (UserInfo,LinkInfo))
+	val offTopicVisits = join.filter {
+	   case (userId, (userInfo, linkInfo)) => //expand tuple
+	     ! userInfo.topics.contains(linkInfo.topic)
+	}.count()
+	println("Number of visits to not-subscribed topics: "+offTopicVisits)
+}
+
+The code above is slow because of shuffling; fix is - partition
+val userData=sc.sequenceFile[UserId,UserInfo]("hdfs://..")
+  .partitionBy(new HashPartitioner(100))
+  .persist()
+
+Then spark will shuffle only events RDD (which is smaller than userData RDD)
+
+Following requires all key-value pairs with the same key on the same machine
+Grouping is done using hash partitioner with default params
+val purchasesPerCustomer=
+  purchasesRdd.map( p => (p.customerId), p.price)) // Pair RDD
+      .groupByKey()
+
+How to know when shuffle may happened?
+using function toDebugString to see the excecution plan
+partitioned.reducedByKey((v1,v2) => (v1._1 + v2._1, v1._2 + v2._2))
+   .toDebugString
+
+Methods which might the cause the shuffle
+cogroup
+groupWith
+join
+leftOterJoin
+rightOuterJoin
+groupByKey - uses hash partitioner with default parametes
+reduceByKey
+combineByKey
+distinct
+intersection
+repartition
+coalesce
+
+But if we use pre-partitioning then running reduceByKey on pre-partitioned RDD will
+do reducing work locally; only final result will be send from worker to driver
+
+Join called on 2 RDDs that a prepartitioned with same partitioner and cached on same machine
+will work locally as well; nio shuffling
 
 <h3>How to run Spark in Standalone client mode</h3>
 spark-submit \
