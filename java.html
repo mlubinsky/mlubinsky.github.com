@@ -5,6 +5,7 @@
 <h2>Java</h2>
 <pre>
 <a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/java>My Java code snippets</a>
+<h2>Interfaces</h2>
 Interfaces can have default methods.
 @FunctionalInterface
 Functional interfaces: only one abstract method
@@ -29,8 +30,8 @@ public interface Function<T,R>{
   R apply(T t);
 }
 
-Example of creating the method map() to transform list  into list :
-
+Example of creating the method map() to transform list into list
+using Function interface:
 public static <T,R> List<R> map(List<T> list, Function<T,R> f){
   List<R> result = new ArrayList<>();
   for (T s: list){
@@ -48,4 +49,23 @@ To avoid boxin/unboxing for primitive types Java8 provides specialization interf
 public interface IntPredicate {
    boolean test (int t);
 }
+<h2>Comparators</h2>
+Comparator<Apple> c = Comparator.comparing((Apple a) -> a.getWeight());
+mylist.sort(comparing(Apple::getWeight));
+mylist.sort(comparing(Apple::getWeight).reversed());
+mylist.sort(comparing(Apple::getWeight).
+     reversed().
+     thenComparing(Apple:getCountry));
+<h2>Composing predicates</h2>
+Predicate<Apple> notRed = redApple.negate();
+Predicate<Apple> RedAndHeavy = redApple.and(a.getWeight() > 150);
+Predicate<Apple> RedAndHeavyOrGreen = redApple.and(a.getWeight() > 150).or(a->"green".equals(a.getColor()));
+
+<h2>Composing functions</h2>
+Function <Integer,Integer> f = x->x+1
+Function <Integer,Integer> g = x->x+2
+Function <Integer,Integer> h = f.andThen(g)
+int result = h.apply(1)
+
+Function <Integer,Integer> s = f.compose(g)
 </pre>
