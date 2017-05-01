@@ -5,4 +5,47 @@
 <h2>Java</h2>
 <pre>
 <a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/java>My Java code snippets</a>
+Interfaces can have default methods.
+@FunctionalInterface
+Functional interfaces: only one abstract method
+Examples:
+public interface Predicate<T> {
+   boolean test (T t);
+}
+public interface Comparator<T>{ //java.util.Comparator
+ int compare(T o1, T o2);
+}
+public  interface Runnable {  //java.lang.Runnable
+  void run();
+}
+public  interface Consumer<T> {  //java.util.function.Consumer<T>
+  void accept(T t);
+}
+public interface Callable<V>{   //java.util.concurrent.Callable
+    V call();
+}
+
+public interface Function<T,R>{
+  R apply(T t);
+}
+
+Example of creating the method map() to transform list  into list :
+
+public static <T,R> List<R> map(List<T> list, Function<T,R> f){
+  List<R> result = new ArrayList<>();
+  for (T s: list){
+       result.add(f.apply(s));
+  }
+  return result;
+}
+Usage:
+List<Integer> lst= map{
+           Arrays.asList("a","bb","ccc"), (String s) -> s.length()
+};
+
+To avoid boxin/unboxing for primitive types Java8 provides specialization interfaces, for example:
+
+public interface IntPredicate {
+   boolean test (int t);
+}
 </pre>
