@@ -68,4 +68,29 @@ Function <Integer,Integer> h = f.andThen(g)
 int result = h.apply(1)
 
 Function <Integer,Integer> s = f.compose(g)
+<h2>Streams</h2>
+Intermediate operations:
+ filter (Predicate<T>)
+ findAny findFirst   - returns Optional
+ map (Function<T,R>)
+ flatMap
+ allMatch anyMatch noneMatch
+ limit
+ reduce
+ sorted(Comparator<T>)
+ distinct
+Terminal operations:
+ count
+ collect(toList())
+ forEach
+<h2>Optional<T> </h2>
+This is container class to represent existance or absense of value
+isPresent()
+ifPresent(Consumer<T> block)
+T get()
+T orElse(T other)
+
+Primitive stream specialization: IntStream DoubleStream LongStream
+int[] numbers ={2,3,5,7}
+int sum = Arrays.stream(numbers).sum();
 </pre>
