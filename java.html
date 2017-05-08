@@ -5,6 +5,13 @@
 <h2>Java</h2>
 <pre>
 <a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/java>My Java code snippets</a>
+<a href=hhttp://tutorials.jenkov.com/java-concurrency/java-memory-model.html>Java memory model</a>
+
+Collection is an interface that is the parent of most of the collection interfaces defined in the collection framework.
+This interface implements Iterable, Set and List interfaces extends Collection interface.
+Collections, on the other hand, is a class with an exclusive collection of static methods and fields.
+Examples: sort(), binarySearch(), shuffle()
+
 <h2>Interfaces</h2>
 Interfaces can have default methods.
 @FunctionalInterface
@@ -40,12 +47,21 @@ public static <T,R> List<R> map(List<T> list, Function<T,R> f){
   return result;
 }
 Usage:
-List<Integer> lst= map{
-           Arrays.asList("a","bb","ccc"), (String s) -> s.length()
-};
+List<Integer> lst= map{Arrays.asList("a","bb","ccc"), (String s) -> s.length()};
+
+Another example:
+import java.util.function.Function;
+
+public class TestFrame {
+   public static void main(String[] args) {
+      Function<Double, Double> toDegree = (radian) -> {
+         return (radian*180)/Math.PI;
+      };
+      System.out.println(toDegree.apply(1.5707963267948966));
+   }
+}
 
 To avoid boxin/unboxing for primitive types Java8 provides specialization interfaces, for example:
-
 public interface IntPredicate {
    boolean test (int t);
 }
@@ -69,6 +85,12 @@ int result = h.apply(1)
 
 Function <Integer,Integer> s = f.compose(g)
 <h2>Streams</h2>
+ A stream is based on internal iteration; a collection is based on external iteration.
+ Streams can be directly obtained from the Arrays class as follows:
+
+DoubleStream ds = Arrays.stream(new   double[] {10.234, 25.26, 3792.8755});
+Stream<String> st = Arrays.stream(new String[] {"Spade", "Heart", "Diamond", "Club"});
+
 Intermediate operations:
  filter (Predicate<T>)
  findAny findFirst   - returns Optional
@@ -83,14 +105,109 @@ Terminal operations:
  count
  collect(toList())
  forEach
+
+ Primitive stream specialization: IntStream DoubleStream LongStream
+int[] numbers ={2,3,5,7}
+int sum = Arrays.stream(numbers).sum();
+
+<h2> Labmda expressions</h2>
+Old stile:
+for(Car c : cars) {
+  if(c.productionYear > 2007)
+System.out.println(c.name);
+}
+New style using lambda:
+cars.stream().filter((c) -> (c.productionYear > 2007))
+  .forEach((c) -> {System.out.println(c.name);});
+
+Java 8 allows add methods to interfaces and provide a default implementation
+and forEach method is:
+@FunctionalInterface
+public interface
+Iterable<T> {
+    Iterator<T> iterator();
+    default void forEach(Consumer<?super T> action) {
+       Objects.requireNonNull(action);
+       for (T t : this) {
+              action.accept(t);
+       }
+    }
+}
+
 <h2>Optional<T> </h2>
 This is container class to represent existance or absense of value
+The get method returns the value if present; otherwise, NoSuchElementException is thrown.
+
+
 isPresent()
 ifPresent(Consumer<T> block)
 T get()
 T orElse(T other)
+<h2>Processes </h2>
+These processes execute in an isolated, independent manner to which resources are allocated such as:
+ memory, file handles, and security credentials.
+ On occasion, one process communicates with another through a communication mechanism such as:
+  sockets, signals, shared memory, semaphores, and files.
+<h2>Threads </h2>
+Some classes that are designed keeping thread safety in mind are String, Hashtable, ConcurrentHashMap,
+Atomic operations are thread-safe; for example, a+1 is atomic but a++ is not, because a++ means a=a+1 and consists of two operations, + (addition) and = (assignment). But, there is a way to make the increment operation atomic with the help of AtomicInteger,  AtomicBoolean, AtomicLong, AtomicLongArray.
+AtomicInteger aInt=new AtomicInteger(5);
+aInt.incrementAndGet();.
+Local variables are thread safe because each segment has its own copy.
+Volatile keywords can be used to ensure that threads do not cache variables.
+Implement Runnable interface (void run()) or extend Thread class
+deadlock
+starvation
+livelock
+Priority: 1-10; default 5  Thread.setPriority(1)
+Thread states:
+   NEW  -  start() is not called yet
+   RUNNABLE  eligible to run, not running yet; scheduler moves from runnable to running state
+   RUNNING
+   BLOCKED/WAITING
+   TERMINATED/DEAD
 
-Primitive stream specialization: IntStream DoubleStream LongStream
-int[] numbers ={2,3,5,7}
-int sum = Arrays.stream(numbers).sum();
+syncronized method can be executed only by 1 thread
+synchronized(this) {code here}
+t1.start()
+t2.start()
+t3.join(time) - wait then t3 is completed
+yield() method change state from running to runnable
+sleep()
+suspend()
+wait() releases the lock; tells the calling thread to relinquish the monitor and go to sleep until some other thread calls, such as notify() or notifyAll().
+notify() wakes up the thread which called wait(). And, in a similar manner, notifyAll() wakes up all the threads.
+notifyAll()
+ThreadGroup.activeCount()
+ThreadLocal class
+daemon thread -low priority; garbage collector
+
+<h2>ForkJoinPools</h2>
+
+<h2>ExecutorService </h2>
+ ExecutorService s =Executors.newSingleThreadExecutor();
+ ExecutorService s =Executors.newFixedThreadsPool(10);
+ ExecutorService s =Executors.newSheduledThreadPool(10);
+ s.execute( new Runnable ()
+      public void run(){}
+ )
+ s.shoutdown()
+
+ Future f = s.submit(
+    new Runnable(){  public void run(...)}
+ )
+  f.get()    // returns null if complete
+ Callable returns result
+ Future f = s.submit(
+    new Callable(){
+        public String call() throws exception {
+           return "some_result";)
+        }
+ })
+
+ f.get()    // returns result if complete
+
+
+Java SE8, we can use the DoubleAccumulator and the DoubleAdder new classes that allow us to have multiple threads updating the same variable, but in fact, they update their own copy of that variable. The trick happens when you have to read the variable. When you have to do a read, the system will pause all threads, figure out what the value is, update a single instance that the read is associated with and the give the correct value.
+
 </pre>
