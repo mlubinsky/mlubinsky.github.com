@@ -29,6 +29,7 @@ hdfs dfs -rmr /folder/to/delete
 - delete file
 hdfs dfs -rm /file/to/delete
 - list all files in a directory
+<pre>
 hdfs dfs -ls /user/dir1
 - get access control list ACL of files and directories
 hdfs dfs -getfacl /file
@@ -75,3 +76,5 @@ hadoop jar $HADOOP_HOME/hadoop-streaming.jar \
     -file myPythonScript.py
 set sticky bit (preventing anyone except the superuser, owner from deleting or moving the files within the directory)
 sudo -u hdfs hadoop fs -chmod 1777 /tmp
+
+</pre>
