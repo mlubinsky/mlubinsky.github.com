@@ -1,0 +1,77 @@
+- rename / move file or directory
+hdfs dfs -mv /old/file /new/file
+- get admin report / cluster status
+hdfs dfsadmin -report
+- get rack awareness and number of under replicated blocks
+hadoop fsck / -locations -blocks -files | grep -i -C6 miss
+- print a compressed file uncompress a file
+hdfs dfs -text /path/to/compressed_file
+- merge all files in a folder to one file
+hdfs dfs -getmerge /path/to/folder /path/to/file
+- rm remove file
+hdfs dfs -rm /user/hive/warehouse/blah/blah
+- kill yarn job
+hadoop job -kill job_id
+- empty trash
+hdfs dfs -expunge
+- stream result of pipe stdin to a hadoop file
+cat somefile.tsv | hdfs dfs -put - /file/on/cluster.tsv
+- put copy file from local to cluster
+hdfs dfs -put localfile /user/hadoop/hadoopfile
+- create touch a file
+hdfs dfs -touchz /path/to/myfile.txt
+- tail a file
+hdfs dfs -tail /my_file
+- return stat information of the path (basic file info)
+hdfs dfs -stat /my_file
+- delete folder
+hdfs dfs -rmr /folder/to/delete
+- delete file
+hdfs dfs -rm /file/to/delete
+- list all files in a directory
+hdfs dfs -ls /user/dir1
+- get access control list ACL of files and directories
+hdfs dfs -getfacl /file
+- display size of files and directories
+hdfs dfs -du /user/hadoop/dir1
+- copy file within the cluster
+hdfs dfs -cp /source_file /dest_file
+- count number of directories, files and bytes
+hdfs dfs -count /hdfs/folder/file
+- copy from local machine to cluster with overwrite
+hdfs dfs -copyFromLocal -f /local/file.csv /hdfs/folder/
+- copy from remote cluster to local machine
+hdfs dfs -copyToLocal /hdfs/folder/file.csv /local/folder
+- copy from local machine to cluster
+hdfs dfs -copyFromLocal /local/file.csv /hdfs/folder/
+- stream append to a file using unix pipe stdin
+cat somefile | hdfs dfs -appendToFile - /hdfs/my_file.txt
+- append to a file
+hdfs dfs -appendToFile /local_file.txt /hdfs/my_file.txt
+- print a file
+hdfs dfs -cat /my_file
+-  change group of file
+hdfs dfs -chgrp group_name /my_file
+- change file permissions
+hdfs dfs -chmod 1755 /my_file
+- change owner of file/directory
+hdfs dfs -chown user:group /my_hdfs/file
+- set replication factor recursive
+hdfs dfs -setrep -R -w 1 /my_hdfs/folder
+- change replication factor of a file
+hdfs dfs -setrep -w 2 /my_hdfs/file
+- Copy Files from one cluster to other
+hadoop distcp -pb -overwrite hftp://hdfssource:50070/file/to/copy hdfs://hdfsdest:8020/user/test
+print sequence file
+hdfs dfs -text /path/to/file/hdfs
+create directory
+hdfs dfs -mkdir /path/to/directory
+hadoop streaming
+hadoop jar $HADOOP_HOME/hadoop-streaming.jar \
+    -input myInputDirs \
+    -output myOutputDir \
+    -mapper myPythonScript.py \
+    -reducer /bin/wc \
+    -file myPythonScript.py
+set sticky bit (preventing anyone except the superuser, owner from deleting or moving the files within the directory)
+sudo -u hdfs hadoop fs -chmod 1777 /tmp
