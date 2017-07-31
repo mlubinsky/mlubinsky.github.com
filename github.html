@@ -4,18 +4,19 @@
 
 <body>
 <pre>
-<h2> Git notes </h2>
-
+<h2> Git notes</h2>
 git config -l
 git branch -a
 git branch -r
+git gui
+giitk
+git tag -a thetagname
+git tag -l
 
 git rebase: merges another branch into the branch where you are currently working, and move all of the local commits that are ahead of the rebased branch to the top of the history on that branch.
 
-
-
 To get the changes from master into your work branch, do:
- git rebase <remote>/maste
+ git rebase remote/master
 
 To merge some_branch into master:
 
@@ -23,10 +24,8 @@ git checkout master
 git pull origin master //Get all latest commits of master branch
 git merge some_branch
 
-
 git push origin branchname
-<b>origin<b> is an alias on your system for a particular remote repository.
-
+origin  is an alias on your system for a particular remote repository.
 
 Git has the concept of "remotes", which are simply URLs to other copies of your repository. When you clone another repository, git automatically creates a remote named "origin" and points to it.
 
@@ -57,21 +56,20 @@ Due to it's "harmless" nature, you can rest assured: fetch will never manipulate
 git pull, in contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. This means that pull not only downloads new data; it also directly integrates it into your current working copy files.
 
 <h2> Git Links </h2>
-<a href=https://www.atlassian.com/git/tutorials/syncing>Sync </a>
-
-
-<a href=https://stackoverflow.com/questions/18930527/difference-between-git-pull-and-git-pull-rebase> Pull vs pull -rebase </a>
+<a href=https://www.atlassian.com/git/tutorials/syncing>Sync</a>
+<a href=https://stackoverflow.com/questions/18930527/difference-between-git-pull-and-git-pull-rebase>Pull vs pull -rebase</a>
 <a href=https://stackoverflow.com/questions/16666089/whats-the-difference-between-git-merge-and-git-rebase/16666418#16666418>Merge vs Rebase</a>
+<a href=https://www.derekgourlay.com/blog/git-when-to-merge-vs-when-to-rebase/>when-to-merge-vs-when-to-rebase</a>
 
 
-<a href=http://gitref.org/ >gitref.org</a>
+<a href=http://gitref.org/>gitref.org</a>
 <a href=https://nathanleclaire.com/blog/2014/09/14/dont-be-scared-of-git-rebase/>sixrevisions.com</a>
-<a href=http://sixrevisions.com/resources/git-tutorials-beginners/ >Git rebase</a>
-<a href=http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide >stackoverflow.com</a>
+<a href=http://sixrevisions.com/resources/git-tutorials-beginners/>Git rebase</a>
+<a href=http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide>stackoverflow.com</a>
 
 <h2>GitHub</h2>
-  <a href=https://help.github.com/articles/set-up-git/  >GitHub documentation</a>
-  <a href=https://git-for-windows.github.io/ >Git Bash For Windows</a>
+  <a href=https://help.github.com/articles/set-up-git/>GitHub documentation</a>
+  <a href=https://git-for-windows.github.io/>Git Bash For Windows</a>
 
 - Create account on GitHub
 - Install Git Client for Windows

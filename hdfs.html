@@ -1,5 +1,4 @@
 <pre>
-
 - rename / move file or directory
 hdfs dfs -mv /old/file /new/file
 - get admin report / cluster status
@@ -31,7 +30,6 @@ hdfs dfs -rmr /folder/to/delete
 - delete file
 hdfs dfs -rm /file/to/delete
 - list all files in a directory
-
 hdfs dfs -ls /user/dir1
 - get access control list ACL of files and directories
 hdfs dfs -getfacl /file
@@ -65,18 +63,20 @@ hdfs dfs -setrep -R -w 1 /my_hdfs/folder
 hdfs dfs -setrep -w 2 /my_hdfs/file
 - Copy Files from one cluster to other
 hadoop distcp -pb -overwrite hftp://hdfssource:50070/file/to/copy hdfs://hdfsdest:8020/user/test
-print sequence file
+- print sequence file
 hdfs dfs -text /path/to/file/hdfs
-create directory
+- create directory
 hdfs dfs -mkdir /path/to/directory
-hadoop streaming
+
+- hadoop streaming
 hadoop jar $HADOOP_HOME/hadoop-streaming.jar \
     -input myInputDirs \
     -output myOutputDir \
     -mapper myPythonScript.py \
     -reducer /bin/wc \
     -file myPythonScript.py
-set sticky bit (preventing anyone except the superuser, owner from deleting or moving the files within the directory)
+
+- set sticky bit (preventing anyone except the superuser, owner from deleting or moving the files within the directory)
 sudo -u hdfs hadoop fs -chmod 1777 /tmp
 
 </pre>
