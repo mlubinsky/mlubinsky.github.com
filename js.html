@@ -5,4 +5,56 @@
 <h2>JavaScript</h2>
 <pre>
 <a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/js>My JS code snippets</a>
+
+Array.map, Array.reduce, Array.filter, Array.sort, Object.keys, Object.values.
+https://zellwk.com/blog/callbacks/
+https://zellwk.com/blog/js-promises/
+https://zellwk.com/blog/es6/
+http://zabanaa.github.io/notes/functional-programming-and-javascript-arrays.html
+https://stackoverflow.com/questions/24900875/whats-the-meaning-of-an-arrow-formed-from-equals-greater-than-in-javas
+https://news.ycombinator.com/item?id=14916731   This in JS
+
+
+
+var myArray = [1, 2, 3, 4, 5, 6]
+var add = function (a, b) {  return a + b;};
+var getTotal = function (arr) { return arr.reduce(add, 0);};
+getTotal(myArray); // => 21
+
+const myArray = [1, 2, 3, 4, 5, 6]
+const add = (a, b) => a + b;
+const getTotal = (arr) => arr.reduce(add, 0);
+
+getTotal(myArray); // => 21
+
+ Grab unique
+    [1,1,2,3,4].filter( ( item, index, array ) => array.indexOf( item ) === index )
+    // => [1,2,3,4]
+
+ Flatten
+    [[1,2],[3,4]].reduce( ( result, item ) => result.concat(item), [] );
+    // => [1,2,3,4]
+
+Sort   -   Array.prototype.sort destructively modifies the array
+    [1,2,4,3].sort( ( a, b ) => a - b )
+
+<b>Arrow functions</b>
+var a = [
+  "We're up all night 'til the sun",
+  "We're up all night to get some",
+  "We're up all night for good fun",
+  "We're up all night to get lucky"
+];
+
+// These two assignments are equivalent:
+
+1) Old-school without arrow function:
+var a2 = a.map(function(s){ return s.length });
+
+2) ECMAscript 6 using arrow functions
+var a3 = a.map( s => s.length );
+
+Both a2 and a3 will be equal to [31, 30, 31, 31]
+
 </pre>
+
