@@ -95,7 +95,7 @@ Function <Integer,Integer> s = f.compose(g)
 DoubleStream ds = Arrays.stream(new   double[] {10.234, 25.26, 3792.8755});
 Stream<String> st = Arrays.stream(new String[] {"Spade", "Heart", "Diamond", "Club"});
 
-Intermediate operations:
+<b>Intermediate operations: </b>
  filter (Predicate<T>)
  findAny findFirst   - returns Optional
  map (Function<T,R>)
@@ -105,14 +105,16 @@ Intermediate operations:
  reduce
  sorted(Comparator<T>)
  distinct
-Terminal operations:
+
+<b>Terminal operations:</b>
  count
  collect(toList())
  forEach
 
- Primitive stream specialization: IntStream DoubleStream LongStream
-int[] numbers ={2,3,5,7}
-int sum = Arrays.stream(numbers).sum();
+ Primitive stream specialization: IntStream, DoubleStream, LongStream
+
+  int[] numbers ={2,3,5,7}
+  int sum = Arrays.stream(numbers).sum();
 
 <h2> Labmda expressions</h2>
 Old stile:
@@ -141,7 +143,6 @@ Iterable<T> {
 <h2>Optional<T> </h2>
 This is container class to represent existance or absense of value
 The get method returns the value if present; otherwise, NoSuchElementException is thrown.
-
 
 isPresent()
 ifPresent(Consumer<T> block)
@@ -189,7 +190,8 @@ daemon thread -low priority; garbage collector
 <h2>ForkJoinPools</h2>
 
 <h2>CompletableFuture</h2>
-https://habrahabr.ru/post/213319/
+<a href=https://habrahabr.ru/post/213319/>Ru</a>
+<a href=https://www.callicoder.com/java-8-completablefuture-tutorial/>Eng</a>
 
 <h2>ExecutorService </h2>
  ExecutorService s =Executors.newSingleThreadExecutor();
@@ -215,6 +217,8 @@ https://habrahabr.ru/post/213319/
  f.get()    // returns result if complete
 
 
-Java SE8, we can use the DoubleAccumulator and the DoubleAdder new classes that allow us to have multiple threads updating the same variable, but in fact, they update their own copy of that variable. The trick happens when you have to read the variable. When you have to do a read, the system will pause all threads, figure out what the value is, update a single instance that the read is associated with and the give the correct value.
+Java SE8, we can use the DoubleAccumulator and the DoubleAdder new classes that allow us to have multiple threads updating the same variable, but in fact, they update their own copy of that variable.
+The trick happens when you have to read the variable.
+When you have to do a read, the system will pause all threads, figure out what the value is, update a single instance that the read is associated with and the give the correct value.
 
 </pre>

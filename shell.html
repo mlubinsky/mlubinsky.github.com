@@ -1,21 +1,26 @@
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 <pre>
-<b> SSH </b>
-http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/
-http://mah.everybody.org/docs/ssh
-https://github.com/jlevy/the-art-of-command-line
-https://likegeeks.com/linux-process-management/
 
+<h2> Memory CPU</h2>
 top -c
 free -m
 
-<b> grep </b>
+Sort processed by memory consumption
+ps aux | sort -nk 4
+Sort processed by CPU consumption
+ps aux | sort -nk 3
+
+<h2> grep </h2>
 Use -v to show those that do not contain “match”: grep -v match file.txt
 Use -c to count how many matches: grep -c match file.txt
 Show list of files that match: grep -rl match *
 Number of lines to show before and after match: grep -B 2 -A 2 match file.txt
 
-
+<h2>bash</h2>
 alias alog="tail -f /var/log/apache2/error.log"
 alias please='sudo $(fc -ln -1)'
 
@@ -32,16 +37,12 @@ ls /etc/*.conf | xargs -i cp {} /home/likegeeks/Desktop/out
 mount | column -t
 cat /etc/passwd | column -t –s :
 
-Run command till it sucseed
+Run command till it succeed:
+
 while  sleep 1
 do
    ping -c 1 google.com > /dev/null 2>&1 && break
 done
-
-Sort processed by memory consumption
-ps aux | sort -nk 4
-Sort processed by CPU consumption
-ps aux | sort -nk 3
 
 watch df -h
 nohup
@@ -50,7 +51,18 @@ nohup
 yes | command
 yes no | command
 
-<b> AWK </b>
+<h2> AWK </h2>
 cat log.log | awk '{ print $1 }'
+
+<h2> SSH </h2>
+http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/
+https://habrahabr.ru/post/122445/
+https://habrahabr.ru/post/331348/
+https://habrahabr.ru/post/39116/
+http://mah.everybody.org/docs/ssh
+https://github.com/jlevy/the-art-of-command-line
+https://likegeeks.com/linux-process-management/
+
+
 </pre>
 </body>
