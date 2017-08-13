@@ -51,15 +51,55 @@ nohup
 yes | command
 yes no | command
 
+<b>  examples</b>
+Calulation in bash:
+    echo $((37 * 42))
+
+Example of bash function:
+    set -e
+
+    download_command () {
+        if type wget >/dev/null 2>&1; then
+            echo "wget -q -O-"
+        elif type curl >/dev/null 2>&1; then
+            echo "curl -sL"
+        else
+            echo "Error: curl or wget is required" >&2
+            exit 1
+        fi
+    }
+
+    download=$(download_command)
+    public_v4=$($download http://whatismyip.akamai.com/)
+    public_v6=$($download http://ipv6.whatismyip.akamai.com/)
+
+
 <h2> AWK </h2>
 cat log.log | awk '{ print $1 }'
 
 <h2> SSH </h2>
+ssh-keygen -t dsa
+default folder /home/user/data/.ssh/id_dsa
+~/.ssh/id_dsa  ~/.ssh/id_dsa.pub
+copy public key on server:
+ssh user@hostname "umask 077; cat >> .ssh/authorized_keys" < ~/.ssh/id_dsa.pub
+To avoid yping logins:
+in ~/.ssh/config, add:
+Host host
+User user
+Hostname hostname
+
 http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/
 https://habrahabr.ru/post/122445/
 https://habrahabr.ru/post/331348/
 https://habrahabr.ru/post/39116/
+https://habrahabr.ru/post/142717/
+https://habrahabr.ru/post/150047/ ssh+python
 http://mah.everybody.org/docs/ssh
+https://blog.jetbrains.com/pycharm/2017/08/ssh-agent-simplify-ssh-keys/ PuTTY
+
+<h2> Links </h2>
+
 https://github.com/jlevy/the-art-of-command-line
 https://likegeeks.com/linux-process-management/
 

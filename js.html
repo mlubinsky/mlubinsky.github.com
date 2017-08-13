@@ -10,9 +10,42 @@
 <a href=https://www.webcodegeeks.com/javascript/parsing-javascript-tools-libraries/>Parsing</a>
 <a href=https://halistechnology.com/2015/05/28/use-javascript-to-export-your-data-as-csv/>Export to CSV</a>
 
+<h2>Node</h2>
+nodejs.org/api/
+
+node --version
+node
+     >global      (like window in Chrome)
+     >process     (like document in Chrome)
+     >console.log(process.env);
+
+
+NVM (node version manager) to install any version you want and switch between them. You can use it to uninstall versions too.
+https://github.com/creationix/nvm
+nvm install 8.3.0
+nvm use x.x.x
+
+<h2>NPM</h2>
+npmjs.com
+npm --version
+npm init
+npm install lodash --save   //will a) put package in ./node_modules/ and b) add  it in package.json
+
+const _  = require ('lodash')
+
+npm install nodemon -g
+nodemon app.js   //will run node app.js every tyme when it updates
+
+./node_modules/.bin/webpack --watch
+
 npm install eslint -g
 eslint --init      // from project directory http://fullstackhumanoid.com/quick-eslint-set-up-with-google-airbnb-or-standard-rulesets/
 
+
+https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html
+https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html
+
+<h2>Arrays</h2>
 Array.map, Array.reduce, Array.filter, Array.sort, Object.keys, Object.values.
 https://zellwk.com/blog/callbacks/
 https://zellwk.com/blog/js-promises/
@@ -94,7 +127,7 @@ const adults = people.filter(person => person.age > 16);
 Sort   -   Array.prototype.sort destructively modifies the array
     [1,2,4,3].sort( ( a, b ) => a - b )
 
-<b>Arrow functions</b>
+<h2>Arrow functions</h2>
 var a = [
   "We're up all night 'til the sun",
   "We're up all night to get some",
