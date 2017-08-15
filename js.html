@@ -5,19 +5,32 @@
 <h2>JavaScript</h2>
 <pre>
 <a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/js>My JS code snippets</a>
+
+<a href=https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf>How JS works</a>
+
 <a href=https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints>JS breakpoints</a>
 <a href=http://willamesoares.com/d3/setting-up-d3js-with-babel-and-webpack.html>JS D3.js Babael Webpack</a>
 <a href=https://www.webcodegeeks.com/javascript/parsing-javascript-tools-libraries/>Parsing</a>
 <a href=https://halistechnology.com/2015/05/28/use-javascript-to-export-your-data-as-csv/>Export to CSV</a>
+http://jshint.com/
+https://blog.scottnonnenberg.com/eslint-part-1-exploration/
 
 <h2>Node</h2>
 nodejs.org/api/
+https://habrahabr.ru/company/ruvds/blog/322388/
 
 node --version
 node
      >global      (like window in Chrome)
      >process     (like document in Chrome)
      >console.log(process.env);
+
+
+
+var addNote=() => {title, body};
+var removeNote=() => {title};
+module.exports={ addNote : addNote, removeNote: removeNote};  - the same as next line
+module.exports={ addNote, removeNote};
 
 
 NVM (node version manager) to install any version you want and switch between them. You can use it to uninstall versions too.
@@ -29,8 +42,9 @@ nvm use x.x.x
 npmjs.com
 npm --version
 npm init
-npm install lodash --save   //will a) put package in ./node_modules/ and b) add  it in package.json
 
+npm install yargs@4.7.1   -- command line parser
+npm install lodash --save   //will a) put package in ./node_modules/ and b) add  it in package.json (this is because of --save)
 const _  = require ('lodash')
 
 npm install nodemon -g
@@ -41,9 +55,14 @@ nodemon app.js   //will run node app.js every tyme when it updates
 npm install eslint -g
 eslint --init      // from project directory http://fullstackhumanoid.com/quick-eslint-set-up-with-google-airbnb-or-standard-rulesets/
 
-
+https://habrahabr.ru/post/133363/
 https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html
 https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html
+
+<h2>Promisses, callbacks async.await</h2>
+
+https://blog.patricktriest.com/what-is-async-await-why-should-you-care/
+https://www.youtube.com/watch?v=14hS7f8gyiw&feature=youtu.be
 
 <h2>Arrays</h2>
 Array.map, Array.reduce, Array.filter, Array.sort, Object.keys, Object.values.

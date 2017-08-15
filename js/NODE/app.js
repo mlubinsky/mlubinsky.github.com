@@ -10,6 +10,7 @@ var res = notes.addNote();
 console.log(res);
 console.log(notes.add(2,3));
 console.log(process.argv);
+console.log(process.argv[2]);
 
 //var user=os.userInfo();
 //fs.appendFile("myfile.txt","HellowWorld #1" +user.username);
