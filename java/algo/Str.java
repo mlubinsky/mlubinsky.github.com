@@ -10,23 +10,23 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 public class Str {
-    
+
     /*
      * Using LinkedHashMap to find first non repeated character of String
      * Algorithm :
-     *            Step 1: get character array and loop through it to build a 
+     *            Step 1: get character array and loop through it to build a
      *                    hash table with char and their count.
-     *            Step 2: loop through LinkedHashMap to find an entry with 
+     *            Step 2: loop through LinkedHashMap to find an entry with
      *                    value 1, that's your first non-repeated character,
      *                    as LinkedHashMap maintains insertion order.
      */
     public static char firstNonRepeatedChar1(String str) {
         Map<Character,Integer> counts = new LinkedHashMap<>(str.length());
-        
+
         for (char c : str.toCharArray()) {
             counts.put(c, counts.containsKey(c) ? counts.get(c) + 1 : 1);
         }
-        
+
         for (Entry<Character,Integer> entry : counts.entrySet()) {
             if (entry.getValue() == 1) {
                 return entry.getKey();
@@ -122,7 +122,7 @@ At the end nav­i­gate through hash table and check if all the keys has 0 count
 		Hashtable ht = new Hashtable<Character, Integer>();
 		for(int i=0;i<s1.length();i++){
 			char c = s1.charAt(i);
-			if(ht.containsKey(c)){	
+			if(ht.containsKey(c)){
 				Integer val =  123; // ht.get(c) +1;  //error here
 				ht.put(c, val);
 			}else{
@@ -199,11 +199,11 @@ public static int lengthOfLongestSubstring(String s) {
     if(s==null)
             return 0;
     boolean[] flag = new boolean[256];
- 
+
     int result = 0;
     int start = 0;
     char[] arr = s.toCharArray();
- 
+
     for (int i = 0; i < arr.length; i++) {
         char current = arr[i];
         if (flag[current]) {
@@ -214,7 +214,7 @@ public static int lengthOfLongestSubstring(String s) {
             // it update start from 0 to 3, reset flag for a,b
             for (int k = start; k < i; k++) {
                 if (arr[k] == current) {
-                    start = k + 1; 
+                    start = k + 1;
                     break;
                 }
                 flag[arr[k]] = false;
@@ -223,11 +223,74 @@ public static int lengthOfLongestSubstring(String s) {
             flag[current] = true;
         }
     }
- 
+
     result = Math.max(arr.length - start, result);
- 
+
     return result;
 }
+
+/*
+use HashSet to store the characters in current window [i, j)    (j = i initially).
+Then we slide the index j to the right. If it is not in the HashSet, we slide j further.
+Doing so until s[j] is already in the HashSet.
+At this point, we found the maximum size of substrings without duplicate characters start with index i.
+If we do this for all i, we get our answer.
+*/
+    public int lengthOfLongestSubstring2(String s) {
+        int n = s.length();
+        Set<Character> set = new HashSet<>();
+        int ans = 0, i = 0, j = 0;
+        while (i < n && j < n) {
+            // try to extend the range [i, j]
+            if (!set.contains(s.charAt(j))){
+                set.add(s.charAt(j++));         ////increment the right border of sliding window
+                ans = Math.max(ans, j - i);
+            }
+            else {
+                set.remove(s.charAt(i++));  //increment the left border of sliding window
+            }
+        }
+        return ans;
+    }
+
+
+/*
+The above solution requires at most 2n steps. In fact, it could be optimized to require only n steps.
+Instead of using a set to tell if a character exists or not, we could define a mapping of the characters to its index.
+Then we can skip the characters immediately when we found a repeated character.
+The reason is that if s[j] have a duplicate in the range [i, j) with index j'
+​​we don't need to increase i little by little. We can skip all the elements in the range [i, j'] and let i to be j' + 1 directly.
+*/
+
+    public int lengthOfLongestSubstring3(String s) {
+        int n = s.length();
+        int ans = 0;
+        Map<Character, Integer> map = new HashMap<>(); // current index of character
+        // try to extend the range [i, j]
+        for (int j = 0, i = 0; j < n; j++) {
+            if (map.containsKey(s.charAt(j))) {
+                i = Math.max(map.get(s.charAt(j)), i);
+            }
+            ans = Math.max(ans, j - i + 1);
+            map.put(s.charAt(j), j + 1);
+        }
+        return ans;
+    }
+
+
+    public int lengthOfLongestSubstring4(String s) {
+        int n = s.length();
+        int ans = 0;
+        int[] index = new int[128]; // current index of character
+        // try to extend the range [i, j]
+        for (int j = 0, i = 0; j < n; j++) {
+            i = Math.max(index[s.charAt(j)], i);
+            ans = Math.max(ans, j - i + 1);
+            index[s.charAt(j)] = j + 1;
+        }
+        return ans;
+    }
+
 
     public static void main(String... args) {
     	System.out.println(firstNonRepeatedChar1("abcdabd"));
@@ -237,7 +300,7 @@ public static int lengthOfLongestSubstring(String s) {
         System.out.println(s+ " longestUniqSubString="+longestUniqSubString(s));
         System.out.println(s+ " longestUniqueString="+longestUniqueString(s));
         System.out.println(s+ " lengthOfLongestSubstring="+lengthOfLongestSubstring(s));
-    	
+
     }
 
 }

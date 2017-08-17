@@ -217,8 +217,57 @@ daemon thread -low priority; garbage collector
  f.get()    // returns result if complete
 
 
-Java SE8, we can use the DoubleAccumulator and the DoubleAdder new classes that allow us to have multiple threads updating the same variable, but in fact, they update their own copy of that variable.
+Java SE8, we can use the DoubleAccumulator and the DoubleAdder new classes that allow us to have multiple threads updating the same variable,
+but in fact, they update their own copy of that variable.
 The trick happens when you have to read the variable.
-When you have to do a read, the system will pause all threads, figure out what the value is, update a single instance that the read is associated with and the give the correct value.
+When you have to do a read, the system will pause all threads, figure out what the value is,
+update a single instance that the read is associated with and the give the correct value.
+
+
+<h2>Handling Exceptions</h2>
+Use checked exceptions for all exceptional events that you can anticipate and that a well-written application should be able to handle.
+A checked exception extends the Exception class. A method that throws a checked exception or that calls a method that specifies a checked exception needs to either specify or handle it.
+
+Unchecked exceptions extend the RuntimeException. Use them for internal errors that you can’t anticipate and that, most often, the application can’t recover from.
+Methods can but don’t need to handle or specify an unchecked exception. Typical examples that throw unchecked exceptions are:
+
+- the missing initialization of a variable which results in a NullPointerException or
+- the improper use of an API that causes an IllegalArgumentException
+
+<b>AutoCloseable interface</b>
+ Instantiate the object within the try clause
+
+File file = new File("./tmp.txt");
+try (FileInputStream inputStream = new FileInputStream(file);) {
+  // use the inputStream to read a file
+} catch (FileNotFoundException e) {
+  e.printStackTrace();
+} catch (IOException e) {
+  e.printStackTrace();
+}
+
+
+Whothout Closeable  the code looks like this:
+
+public void closeResourceInFinally() {
+  FileInputStream inputStream = null;
+  try {
+    File file = new File("./tmp.txt");
+    inputStream = new FileInputStream(file);
+
+    // use the inputStream to read a file
+
+  } catch (FileNotFoundException e) {
+    log.error(e);
+  } finally {
+    if (inputStream != null) {
+      try {
+        inputStream.close();
+      } catch (IOException e) {
+        log.error(e);
+      }
+    }
+  }
+}
 
 </pre>

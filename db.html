@@ -3,9 +3,27 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<h2>Links</h2>
 <pre>
+<h2>MVCC (MultiVersion Concurrency Control)</h2>
+https://en.wikipedia.org/wiki/Multiversion_concurrency_control
+http://elliot.land/post/sql-transaction-isolation-levels-explained
+
+If someone is reading from a database at the same time as someone else is writing to it, it is possible that the reader will see a half-written or inconsistent piece of data.
+There are several ways of solving this problem, known as concurrency control methods.
+The simplest way is to make all readers wait until the writer is done, which is known as a lock.
+This can be very slow, so MVCC takes a different approach: each user connected to the database sees a snapshot of the database at a particular instant in time.
+Any changes made by a writer will not be seen by other users of the database until the changes have been completed
+(or, in database terms: until the transaction has been committed.)
+
+<h2>Links</h2>
 https://www.citusdata.com/blog/2017/08/09/principles-of-sharding-for-relational-databases/
 http://www.olapcube.com/mdxhelp/
 http://knexjs.org/
+
+
+MySQL variables:
+set @n:=-1;
+select (select @n:= @n+1) n
+from MyTable limit 60
+
 </pre>

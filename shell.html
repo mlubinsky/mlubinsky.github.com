@@ -52,7 +52,7 @@ yes | command
 yes no | command
 
 <b>  examples</b>
-Calulation in bash:
+Calculation in bash:
     echo $((37 * 42))
 
 Example of bash function:
@@ -73,6 +73,11 @@ Example of bash function:
     public_v4=$($download http://whatismyip.akamai.com/)
     public_v6=$($download http://ipv6.whatismyip.akamai.com/)
 
+
+<h2>Find Union, Intersection and difference</h2>
+cat a b | sort | uniq > c   # c is a union b
+cat a b | sort | uniq -d > c   # c is a intersect b
+cat a b b | sort | uniq -u > c   # c is set difference a - b
 
 <h2> AWK </h2>
 cat log.log | awk '{ print $1 }'

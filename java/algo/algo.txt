@@ -1,0 +1,458 @@
+http://yucoding.blogspot.com/2017/01/leetcode-question-range-sum-query.html
+http://massivealgorithms.blogspot.com/
+http://ruslanledesma.com/
+
+https://stackoverflow.com/questions/7086464/maximum-single-sell-profit
+Task: Given stock price of n days,  make at most k transactions, new transaction can only start after previous transaction is complete, find out maximum profit.
+===========================================================================================
+http://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-k-times/
+http://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/
+http://keithschwarz.com/interesting/
+Task: largest sum of sequential numbers
+=======================================
+https://en.wikipedia.org/wiki/Maximum_subarray_problem
+$cur = $max = 0;
+foreach ($seq as $n)
+{
+  $cur += $n;
+  if ($cur < 0) $cur = 0;
+  if ($cur > $max) $max = $cur;
+}
+
+Task: The biggest profit for a given stock over a period of time in the past  (we are allowed to buy and sell multiple times)
+==============================================================================================
+https://www.youtube.com/watch?v=oDhu5uGq_ic
+
+Following is algorithm for this problem.
+1. Find the local minima and store it as starting index. If not exists, return.
+2. Find the local maxima. and store it as ending index. If we reach the end, set the end as ending index.
+3. Update the solution (Increment count of buy sell pairs)
+4. Repeat the above steps if end is not reached.
+
+
+import java.util.ArrayList;
+
+// Solution structure
+class Interval
+{
+    int buy, sell;
+}
+
+class StockBuySell
+{
+    // This function finds the buy sell schedule for maximum profit
+    void stockBuySell(int price[], int n)
+    {
+        // Prices must be given for at least two days
+        if (n == 1)
+            return;
+
+        int count = 0;
+
+        // solution array
+        ArrayList<Interval> sol = new ArrayList<Interval>();
+
+        // Traverse through given price array
+        int i = 0;
+        while (i < n - 1)
+        {
+            // Find Local Minima. Note that the limit is (n-2) as we are
+            // comparing present element to the next element.
+            while ((i < n - 1) && (price[i + 1] <= price[i]))
+                i++;
+
+            // If we reached the end, break as no further solution possible
+            if (i == n - 1)
+                break;
+
+            Interval e = new Interval();
+            e.buy = i++;
+            // Store the index of minima
+
+
+            // Find Local Maxima.  Note that the limit is (n-1) as we are
+            // comparing to previous element
+            while ((i < n) && (price[i] >= price[i - 1]))
+                i++;
+
+            // Store the index of maxima
+            e.sell = i-1;
+            sol.add(e);
+
+            // Increment number of buy/sell
+            count++;
+        }
+
+        // print solution
+        if (count == 0)
+            System.out.println("There is no day when buying the stock "
+                                                  + "will make profit");
+        else
+            for (int j = 0; j < count; j++)
+                System.out.println("Buy on day: " + sol.get(j).buy
+                        +"        " + "Sell on day : " + sol.get(j).sell);
+
+        return;
+    }
+
+    public static void main(String args[])
+    {
+        StockBuySell stock = new StockBuySell();
+
+        // stock prices on consecutive days
+        int price[] = {100, 180, 260, 310, 40, 535, 695};
+        int n = price.length;
+
+        // fucntion call
+        stock.stockBuySell(price, n);
+    }
+}
+
+
+
+Task:  the biggest profit for a given stock over a period of time in the past (1 buy + 1 sell)
+==============================================================================================
+http://www.geeksforgeeks.org/maximum-difference-between-two-elements/
+
+In formal terms, we need to find  max(prices[j] - prices[i])  for every i and j such that j > i
+
+
+take the difference with the minimum element found so far. So we need to keep track of 2 things:
+1) Maximum difference found so far (max_diff).
+2) Minimum number visited so far (min_element).
+
+
+
+public class Solution {
+    public int maxProfit(int prices[]) {
+        int minprice = Integer.MAX_VALUE;
+        int maxprofit = 0;
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i] < minprice)
+                minprice = prices[i];
+            else if (prices[i] - minprice > maxprofit)
+                maxprofit = prices[i] - minprice;
+        }
+        return maxprofit;
+    }
+}
+
+
+class MaximumDiffrence
+{
+    /* The function assumes that there are at least two
+       elements in array.
+       The function returns a negative value if the array is
+       sorted in decreasing order.
+       Returns 0 if elements are equal  */
+    int maxDiff(int arr[], int arr_size)
+    {
+        int max_diff = arr[1] - arr[0];
+        int min_element = arr[0];
+        int i;
+        for (i = 1; i < arr_size; i++)
+        {
+            if (arr[i] - min_element > max_diff)
+                max_diff = arr[i] - min_element;
+            if (arr[i] < min_element)
+                min_element = arr[i];
+        }
+        return max_diff;
+    }
+
+    /* Driver program to test above functions */
+    public static void main(String[] args)
+    {
+        MaximumDiffrence maxdif = new MaximumDiffrence();
+        int arr[] = {1, 2, 90, 10, 110};
+        int size = arr.length;
+        System.out.println("MaximumDifference is " +
+                                maxdif.maxDiff(arr, size));
+    }
+}
+
+
+ A = [1, 2, 1, 5, 2, 6, 0]. The solution for each prefix of A is the following.
+
+Prefix sequence    : Solution for prefix / Current candidate solution for A
+1                  : 0
+1, 2               : 1
+1, 2, 1            : 1
+1, 2, 1, 5         : 4
+1, 2, 1, 5, 2      : 4
+1, 2, 1, 5, 2, 6   : 5
+1, 2, 1, 5, 2, 6, 0: 5
+
+
+F(A, len)
+ 1: min := A[1] IF len > 0
+ 2: max := 0
+ 3: FOR i := 2 TO len
+ 4:   IF A[i] - min > max
+ 5:     max := A[i] - min
+ 6:   IF A[i] < min
+ 7:     min := A[i]
+ 8: RETURN max
+
+import java.util.Scanner;
+
+public class main {
+
+  private static int MAX_LEN = 1000000;
+
+  private static int algG(int[] A) {
+    int min = A.length > 0 ? A[0] : 0;
+    int max = 0;
+      for(int i = 0; i < A.length; i++)
+        if(A[i] < min)
+          min = A[i];
+        else if(A[i] - min > max)
+          max = A[i] - min;
+    return max;
+  }
+
+  public static void main(String[] args) {
+    int[] A = new int[MAX_LEN];
+    int len = 0;
+    int n;
+    Scanner in = new Scanner(System.in);
+    while(in.hasNextInt())
+      A[len++] = in.nextInt();
+    System.out.println(algG(A));
+  }
+}
+
+Task: Implement Queue using Stacks  http://www.geeksforgeeks.org/?p=5009
+========================================================================
+
+Stack: insertion and deletion are happend on the same end: LastIn First Out (LIFO)
+Queue: First In First Out (FIFO)
+
+
+Method 2 (By making deQueue operation costly)In this method, in en-queue operation, the new element is entered at the top of stack1.
+In de-queue operation, if stack2 is empty then all the elements are moved to stack2 and finally top of stack2 is returned.
+
+enQueue(q,  x)
+  1) Push x to stack1 (assuming size of stacks is unlimited).
+
+deQueue(q)
+  1) If both stacks are empty then error.
+  2) If stack2 is empty
+       While stack1 is not empty, push everything from stack1 to stack2.
+  3) Pop the element from stack2 and return it.
+
+import java.util.Stack;
+
+public class GFG
+{
+    /* class of queue having two stacks */
+    static class Queue
+    {
+        Stack<Integer> stack1 ;
+        Stack<Integer> stack2 ;
+    }
+
+    /* Function to push an item to stack*/
+    static void push(Stack<Integer> top_ref, int new_data)
+    {
+        //Push the data onto the stack
+        top_ref.push(new_data);
+    }
+
+    /* Function to pop an item from stack*/
+    static int pop(Stack<Integer> top_ref)
+    {
+        /*If stack is empty then error */
+        if(top_ref.isEmpty())
+        {
+            System.out.println("Stack Overflow");
+            System.exit(0);
+        }
+        //pop the data from the stack
+        return top_ref.pop();
+    }
+    //Function to enqueue an item to the queue
+    static void enQueue(Queue q, int x)
+    {
+        push(q.stack1, x);
+    }
+    /* Function to dequeue an item from queue */
+    static int deQueue(Queue q)
+    {
+        int x;
+        /* If both stacks are empty then error */
+        if(q.stack1.isEmpty() && q.stack2.isEmpty() )
+        {
+            System.out.println("Q is empty");
+            System.exit(0);
+        }
+
+        /* Move elements from stack1 to stack 2 only if
+        stack2 is empty */
+        if(q.stack2.isEmpty())
+        {
+            while(!q.stack1.isEmpty())
+            {
+            x = pop(q.stack1);
+            push(q.stack2, x);
+
+            }
+        }
+        x = pop(q.stack2);
+        return x;
+    }
+
+    /* Driver function to test above functions */
+    public static void main(String args[])
+    {
+        /* Create a queue with items 1 2 3*/
+        Queue q= new Queue();
+        q.stack1 = new Stack<>();
+        q.stack2 = new Stack<>();
+        enQueue(q, 1);
+        enQueue(q, 2);
+        enQueue(q, 3);
+
+        /* Dequeue items */
+        System.out.print(deQueue(q)+" ");
+        System.out.print(deQueue(q)+" ");
+        System.out.println(deQueue(q)+" ");
+    }
+}
+
+Task: Implement a Stack data structure using 2 Queues
+=========================================================
+Given a Queue data structure that supports standard operations like enqueue() and dequeue().
+
+Method 1 (By making push operation costly)
+----------
+This method makes sure that newly entered element is always at the front of ‘q1’,
+so that pop operation just dequeues from ‘q1’.
+‘q2’ is used to put every new element at front of ‘q1’.
+
+push(s, x) // x is the element to be pushed and s is stack
+  1) Enqueue x to q2
+  2) One by one dequeue everything from q1 and enqueue to q2.
+  3) Swap the names of q1 and q2
+// Swapping of names is done to avoid one more movement of all elements from q2 to q1.
+
+pop(s)
+  1) Dequeue an item from q1 and return it.
+
+
+  Method 2 (By making pop operation costly)
+  ----------
+In push operation, the new element is always enqueued to q1.
+In pop() operation, if q2 is empty then all the elements except the last, are moved to q2.
+Finally the last element is dequeued from q1 and returned.
+
+push(s,  x)
+  1) Enqueue x to q1 (assuming size of q1 is unlimited).
+
+pop(s)
+  1) One by one dequeue everything except the last element from q1 and enqueue to q2.
+  2) Dequeue the last item of q1, the dequeued item is result, store it.
+  3) Swap the names of q1 and q2
+  4) Return the item stored in step 2.
+// Swapping of names is done to avoid one more movement of all elements  from q2 to q1.
+
+
+
+Task: Implement a stack using a single queue   http://www.geeksforgeeks.org/implement-a-stack-using-single-queue/
+=============================================
+
+ This solution assumes that we can find size of queue at any point.
+ The idea is to keep newly inserted element always at front, keeping order of previous elements same. Below are complete steps.
+
+// x is the element to be pushed and s is stack
+push(s, x)
+  1) Let size of q be s.
+  1) Enqueue x to q
+  2) One by one Dequeue s items from queue and enqueue them.
+
+// Removes an item from stack
+pop(s)
+  1) Dequeue an item from q
+
+
+// Java program to implement stack using a
+// single queue
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class stack
+{
+    Queue<Integer> q = new LinkedList<Integer>();
+
+    // Push operation
+    void push(int val)
+    {
+        // get previous size of queue
+        int size = q.size();
+
+        // Add current element
+        q.add(val);
+
+        // Pop (or Dequeue) all previous
+        // elements and put them after current
+        // element
+        for (int i = 0; i < size; i++)
+        {
+            // this will add front element into
+            // rear of queue
+            int x = q.remove();
+            q.add(x);
+        }
+    }
+
+    // Removes the top element
+    int pop()
+    {
+        if (q.isEmpty())
+        {
+            System.out.println("No elements");
+            return -1;
+        }
+        int x = q.remove();
+        return x;
+    }
+
+    // Returns top of stack
+    int top()
+    {
+        if (q.isEmpty())
+            return -1;
+        return q.peek();
+    }
+
+    // Returns true if Stack is empty else false
+    boolean isEmpty()
+    {
+        return q.isEmpty();
+    }
+
+    // Driver program to test above methods
+    public static void main(String[] args)
+    {
+        stack s = new stack();
+        s.push(10);
+        s.push(20);
+        System.out.println("Top element :" + s.top());
+        s.pop();
+        s.push(30);
+        s.pop();
+        System.out.println("Top element :" + s.top());
+    }
+}
+
+Uses of In order Traversal
+In case of binary search trees (BST), Inorder traversal gives nodes in non-decreasing order.
+
+
+Preorder traversal is used to create a copy of the tree. Preorder traversal is also used to get prefix expression on of an expression tree.
+Please see http://en.wikipedia.org/wiki/Polish_notation to know why prefix expressions are useful.
+
+
+Uses of Postorder
+Postorder traversal is used to delete the tree. Please see the question for deletion of tree for details. Postorder traversal is also useful to get the postfix expression of an expression tree. Please see http://en.wikipedia.org/wiki/Reverse_Polish_notation to for the usage of postfix expression.
