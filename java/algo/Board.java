@@ -1,6 +1,7 @@
 public class Board {
-
-  public int count(int [][] arrA, int row, int col){
+  // find # of pathes on board from top left to bootom right
+  // solution #1
+  public int count(int [][] arrA, int row, int col){ // recursive solution
      //base case
      //check if last row OR column is reached since after that only one path
      //is possible to reach to the bottom right corner.
@@ -9,8 +10,8 @@ public class Board {
      }
      return count(arrA, row+1, col) + count(arrA, row, col+1);
   }
-
-  public int countDP(int [][] arrA){
+  // solution #2
+  public int countDP(int [][] arrA){ // DP solution, no recursion
       int result [][] = new int[arrA.length][arrA.length];
 
       //base case: if we have one cell then there is only one way
@@ -34,6 +35,11 @@ public class Board {
 
       return result[arrA.length-1][arrA.length-1];
   }
+
+
+//  Given a 2-d grid map of '1's (land) and '0's (water), count the number of islands.
+//  An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.
+//  You may assume all four edges of the grid are all surrounded by water.
 
   public static void main(String[] args) {
 			int arrA [][] = {{1,1,1},{1,1,1},{1,1,1}};

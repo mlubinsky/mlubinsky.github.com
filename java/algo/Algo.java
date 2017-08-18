@@ -15,8 +15,8 @@ class Node {
  Node right;
  Node(int value) {this.value = value;}
  Node(int value, Node left, Node right) {
-    this.value = value; 
-    this.left=left; 
+    this.value = value;
+    this.left=left;
     this.right=right;
  }
  void print(){
@@ -25,16 +25,16 @@ class Node {
   if (right != null) System.out.println("right="+right.value);
 
  }
- 
+
  static int size(Node root) {
     if (null == root) {return 0;}
     return 1 + size(root.left) + size(root.right);
  }
 
- static int size_iterative(Node root) {
+ static int size_iterative(Node root) {   //breadth first
    if (null == root) {return 0;}
    int count = 0;
-   Queue<Node> q = new LinkedList<Node>();  //bread first
+   Queue<Node> q = new LinkedList<Node>();
    q.add(root);
    while (!q.isEmpty()) {
      Node front = q.poll();
@@ -45,11 +45,10 @@ class Node {
    return count;
  }
 
- 
- static int depth(Node root) { 
+
+ static int depth(Node root) {
      if (null == root) {return 0;}
-     return 1 + Math.max(depth(root.left),
-     depth(root.right));
+     return 1 + Math.max(depth(root.left),   depth(root.right));
  }
 
  static int depth_iterative(Node root) {
@@ -130,7 +129,7 @@ class Node {
     if (target == null) {return true;}
     while (null != root && (path.isEmpty() || path.get(path.size() - 1) != target)) {
        path.add(root);
-       if (target.value < root.value) { 
+       if (target.value < root.value) {
   	     root = root.left;
        } else {
          root = root.right;
@@ -146,42 +145,42 @@ class Node {
   } //end of find path
 
   // there are 3 ways to traverse tree in depth-first order:
-  public static void preOrder( Node root) { 
-      
-     if (root == null) { return; }; 
-     System.out.println( root.value); 
-     preOrder( root.left); 
-     preOrder( root.right); 
+  public static void preOrder( Node root) {
+
+     if (root == null) { return; };
+     System.out.println( root.value);
+     preOrder( root.left);
+     preOrder( root.right);
   }
 
-  public static void inOrder( Node root) { 
-      
- 	   if (root == null) { return; }; 
- 	   inOrder( root.left); 
- 	   System.out.println( root.value); 
- 	   inOrder( root.right); 
+  public static void inOrder( Node root) {
+
+ 	   if (root == null) { return; };
+ 	   inOrder( root.left);
+ 	   System.out.println( root.value);
+ 	   inOrder( root.right);
   }
 
   public static void postOrder( Node root) {
-    //System.out.println("postOrder recursive void");  
- 	  if (root == null) { return; }; 
+    //System.out.println("postOrder recursive void");
+ 	  if (root == null) { return; };
 
- 	  postOrder( root.left); 
+ 	  postOrder( root.left);
  	  postOrder( root.right);
     System.out.println( root.value);
   }
 
 static List<Integer> inOrderStack(Node root) {
-    System.out.println("inorderStack - returns List<>");
+    System.out.println("inOrderStack - returns List<Integer>");
     List<Integer> result = new ArrayList<Integer>();
     if(root==null)
         return result;
 
-    Stack<Node> stack = new Stack<Node>();
+    Stack<Node> stack = new Stack<>();
     stack.push(root);
-  
+
     while(!stack.isEmpty()){
-        Node top = stack.peek();
+        Node top = stack.peek();  // visit the top (middle) node
         if(top.left!=null){
             stack.push(top.left);
             top.left=null;
@@ -194,21 +193,21 @@ static List<Integer> inOrderStack(Node root) {
              }
         }
     }
-     
+
     return result;
   }
 
   public static List<Integer> postOrderStack(Node root) {
     System.out.println("postorderStack - returns List<Integer>");
-    List<Integer> res = new ArrayList<Integer>();
- 
+    List<Integer> res = new ArrayList<>();
+
     if(root==null) {
         return res;
     }
- 
-    Stack<Node> stack = new Stack<Node>();
+
+    Stack<Node> stack = new Stack<>();
     stack.push(root);
- 
+
     while(!stack.isEmpty()) {
         Node temp = stack.peek();
         if(temp.left==null && temp.right==null) {
@@ -220,25 +219,25 @@ static List<Integer> inOrderStack(Node root) {
                 stack.push(temp.right);
                 temp.right = null;
             }
- 
+
             if(temp.left!=null) {
                 stack.push(temp.left);
                 temp.left = null;
             }
         }
     }
- 
+
     return res;
  } // end of postorder stack
-  
+
  static void postOrderStack2(Node root)   {
-        System.out.println("-----void postOrderStack2 stack ----"); 
+        System.out.println("-----void postOrderStack2 stack ----");
         if (root == null)
             return;
- 
-        final Stack<Node> stack = new Stack<Node>();
+
+        final Stack<Node> stack = new Stack<>();
         Node node = root;
- 
+
         while (!stack.isEmpty() || node != null)
         {
             while (node != null)
@@ -248,11 +247,10 @@ static List<Integer> inOrderStack(Node root) {
                 stack.add(node);
                 node = node.left;
             }
- 
+
             node = stack.pop();
- 
-            if (node.right != null && !stack.isEmpty()
-                    && node.right == stack.peek())
+
+            if (node.right != null && !stack.isEmpty()  && node.right == stack.peek())
             {
                 Node nodeRight = stack.pop();
                 stack.push(node);
@@ -268,25 +266,25 @@ static List<Integer> inOrderStack(Node root) {
 
  public static ArrayList<Integer> preOrderStack(Node root) {
         System.out.println("preorderStack");
-        ArrayList<Integer> returnList = new ArrayList<Integer>();
- 
+        ArrayList<Integer> returnList = new ArrayList>();
+
         if(root == null)
             return returnList;
- 
-        Stack<Node> stack = new Stack<Node>();
+
+        Stack<Node> stack = new Stack<>();
         stack.push(root);
- 
+
         while(!stack.empty()){
             Node n = stack.pop();
             returnList.add(n.value);
- 
-            if(n.right != null){
+
+            if(n.right != null){   //right child is pushed before left child to make left subtree be processed first
                 stack.push(n.right);
             }
             if(n.left != null){
                 stack.push(n.left);
             }
- 
+
         }
         return returnList;
     } //end of preoprderstack
@@ -299,13 +297,13 @@ class DllNode {
   DllNode prev;
   DllNode next;
   int data;
-  DllNode(int data) { this(null, null, data);}  
+  DllNode(int data) { this(null, null, data);}
   // Node(int value) {this.value = value;}
   DllNode( DllNode prev, DllNode next, int data) {
-    this.prev = prev; 
-    this.next=next; 
+    this.prev = prev;
+    this.next=next;
     this.data=data;
- }    
+ }
 
   DllNode insert(DllNode head, int data) {
     if (null == head) {   return new DllNode(data);}
@@ -374,13 +372,13 @@ class LNode {
        System.out.print(l.data+ " - ");
        l = l.next;
       } while (l != null) ;
-      System.out.println('\t'); 
+      System.out.println('\t');
    }
-   
+
    LNode insert(LNode head, int data) {
      return new LNode(head, data);
    }
- 
+
    LNode find(LNode head, int value) {
       while (null != head && head.data != value) {
         head = head.next;
@@ -448,12 +446,14 @@ Node kth_from_end(Node head, int k) {
 
   static boolean is_palindrome(LNode head) {  // ERROR
      LNode temp = head;
-     Stack<LNode> s = new Stack<LNode>();
+     Stack<LNode> s = new Stack<>();
+     //traverse once to populate stack
      while (null != temp) {
-        System.out.println("push to stack ="+temp.data); 
+        System.out.println("push to stack ="+temp.data);
         s.push(temp);
         temp = temp.next;
      }
+     //traverce 2nd time to compare stack and list
      while (!s.empty()) {
         System.out.println("head ="+head.data);
         System.out.println("s.peek ="+s.peek().data);
@@ -463,7 +463,7 @@ Node kth_from_end(Node head, int k) {
      }
      return true;
   }
-  
+
   static boolean is_loop(LNode head) {
     if (null == head) {return false;}
     LNode trailing = head;
@@ -480,7 +480,7 @@ Node kth_from_end(Node head, int k) {
 }  //end of class Node
 
 public class Algo{
- 
+
     public static void main(String args[]) throws IOException {
         System.out.println("***** Algorithms - linked list *****");
         LNode  l1_tail=new LNode(1);
@@ -497,27 +497,27 @@ public class Algo{
         Node n2=new Node(2);
         Node n3=new Node(3,n1,n2);
         n3.print();
-        System.out.println("Binary tree depth recursive=" +Node.depth(n3));  
-        System.out.println("Binary tree depth iterative=" +Node.depth_iterative(n3)); 
+        System.out.println("Binary tree depth recursive=" +Node.depth(n3));
+        System.out.println("Binary tree depth iterative=" +Node.depth_iterative(n3));
         System.out.println("Binary tree size recursive=" +Node.size(n3));
         System.out.println("Binary tree size iterative=" +Node.size_iterative(n3));
         System.out.println("Binary is_Balanced=" +Node.is_balanced(n3));
-        
-        System.out.println("Binary tree recursine inOrder");
-        Node.inOrder(n3);
-        System.out.println("Binary tree recursine inOrder");
-        Node.inOrder(n3);
-        
-        System.out.println("Binary tree recursive preOrder");
-        Node.preOrder(n3); 
-        System.out.println("Binary tree recursive preOrder");
-        Node.preOrder(n3); 
 
-  
+        System.out.println("Binary tree recursine inOrder");
+        Node.inOrder(n3);
+        System.out.println("Binary tree recursine inOrder");
+        Node.inOrder(n3);
+
+        System.out.println("Binary tree recursive preOrder");
+        Node.preOrder(n3);
+        System.out.println("Binary tree recursive preOrder");
+        Node.preOrder(n3);
+
+
         System.out.println("Binary tree recursive postOrder");
-        Node.postOrder(n3); 
+        Node.postOrder(n3);
         System.out.println("Binary tree recursive postOrder");
-        Node.postOrder(n3); 
+        Node.postOrder(n3);
 
         //System.out.println("Binary tree size recursive before stack=" +Node.size(n3));
         //n3.print();
@@ -527,19 +527,19 @@ public class Algo{
         //System.out.println("Binary tree size recursive after stack=" +Node.size(n3));
 
         //List<Integer> lst2 = Node.inOrderStack(n3);
-        //System.out.println(lst2);        
+        //System.out.println(lst2);
         //System.out.println("Binary tree size recursive=" +Node.size(n3));
-        
+
         //List<Integer> l_3 = Node.postOrderStack(n3);
         //System.out.println(l_3);
-        
+
         //List<Integer> l4 = Node.postOrderStack(n3);
         //System.out.println(l4);
-      
+
         //List<Integer> l5 = Node.preOrderStack(n3);  ERROR
         //System.out.println(l5);
-              
-        Node.postOrderStack2(n3); 
-         
+
+        Node.postOrderStack2(n3);
+
     }
-}    
+}

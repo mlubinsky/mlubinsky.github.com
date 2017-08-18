@@ -1,3 +1,5 @@
+// Manage parking place with many inputs
+
 import java.util.Map;
 import java.util.List;
 import java.util.Set;
@@ -20,7 +22,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class D {
 
    public static void main(String[] args)  throws InterruptedException {
-      Map<String,Integer> entry = new HashMap<String, Integer>();   //maps entry name to capacity
+      Map<String,Integer> entry = new HashMap<>();   //maps entry name to capacity
       entry.put("a",2);
       entry.put("b",1);
       entry.put("c",3);
