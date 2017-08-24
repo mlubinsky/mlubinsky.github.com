@@ -15,6 +15,12 @@ This can be very slow, so MVCC takes a different approach: each user connected t
 Any changes made by a writer will not be seen by other users of the database until the changes have been completed
 (or, in database terms: until the transaction has been committed.)
 
+
+The SQL standard tried to define four isolation levels (read uncommitted, read committed, repeatable read and serializable)
+- Read uncommitted permits dirty reads, non repeatable reads and phantom reads.
+- Read committed permits non repeatable reads and phantom reads.
+- Repeatable read permits only phantom reads.
+- Serializable does not permit any read errors.    Client perform transactions in serial.
 <h2>Links</h2>
 https://www.citusdata.com/blog/2017/08/09/principles-of-sharding-for-relational-databases/
 http://www.olapcube.com/mdxhelp/

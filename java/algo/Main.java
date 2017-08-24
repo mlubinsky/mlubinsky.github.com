@@ -165,12 +165,10 @@ public class Main {
  	  System.out.println("\n---list_set_example---!");
  	  Integer[] arr = { 5, 2, 17, 13, 12, 19, 7, 3, 9, 15 };
  	  List<Integer> list = Arrays.asList(arr);
-      Set<Integer> set = new HashSet<Integer>(list);
-      int item=3;
-      System.out.println("Is list  contains "+item+" ? "+list.contains(item));
-      System.out.println("Is set  contains "+item+" ? "+set.contains(item));
-
-
+    Set<Integer> set = new HashSet<>(list);
+    int item=3;
+    System.out.println("Is list  contains "+item+" ? "+list.contains(item));
+    System.out.println("Is set  contains "+item+" ? "+set.contains(item));
  }
 
   public static void treeset_example(){

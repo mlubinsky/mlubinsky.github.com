@@ -36,9 +36,12 @@ ls /etc/*.conf | xargs -i cp {} /home/likegeeks/Desktop/out
 <b>Table-oriented output :  column </b>
 mount | column -t
 cat /etc/passwd | column -t –s :
+column -t < /etc/passwd
 
 Run command till it succeed:
+while ! [command]; do sleep 1; done
 
+Run command till it succeed:
 while  sleep 1
 do
    ping -c 1 google.com > /dev/null 2>&1 && break
@@ -81,6 +84,9 @@ cat a b b | sort | uniq -u > c   # c is set difference a - b
 
 <h2> AWK </h2>
 cat log.log | awk '{ print $1 }'
+
+
+https://learnxinyminutes.com/docs/make/
 
 <h2> SSH </h2>
 ssh-keygen -t dsa

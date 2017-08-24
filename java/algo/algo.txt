@@ -1,6 +1,7 @@
 http://yucoding.blogspot.com/2017/01/leetcode-question-range-sum-query.html
 http://massivealgorithms.blogspot.com/
 http://ruslanledesma.com/
+http://algorithms.tutorialhorizon.com/
 
 Task: are linked lists intersected?
 ===================================
@@ -17,6 +18,97 @@ private static Node Tail(Node list) {
 
      return list;
 }
+
+https://en.wikipedia.org/wiki/Optimal_substructure
+
+
+Task: find path on board
+=========================
+http://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/
+http://www.geeksforgeeks.org/shortest-path-in-a-binary-maze/
+http://algorithms.tutorialhorizon.com/dynamic-programming-minimum-cost-path-problem/
+http://algorithms.tutorialhorizon.com/dynamic-programming-count-all-paths-in-2d-matrix-with-obstructions-in-it/
+http://algorithms.tutorialhorizon.com/dynamic-programming-count-all-paths-from-top-left-to-bottom-right-of-a-mxn-matrix/
+
+
+
+http://joaoff.com/2008/01/20/a-square-grid-path-problem/
+http://articles.leetcode.com/unique-paths/
+
+import java.util.Arrays;
+
+public class Backtrack {
+
+    public static void main(String... args) {
+        int[][] inputArray = {
+                { 1, 1, 1, 0, 0 },
+                { 0, 1, 1, 0, 0 },
+                { 0, 1, 0, 1, 0 },
+                { 0, 1, 1, 1, 1 } };
+        int[][] findPath = findPath(inputArray);
+        System.out.println(Arrays.deepToString(findPath));
+
+    }
+
+    public static int[][] findPath(int[][] maze) {
+        int[][] solution = new int[maze.length][];
+        for (int i = 0; i < maze.length; i++) {
+            solution[i] = new int[maze[i].length];
+        }
+        if (!findPath(maze, solution, 0, 0)) {
+            System.out.println("Didn't find a solution.");
+        }
+        return solution;
+    }
+
+    private static boolean findPath(int[][] maze, int[][] solution, int x, int y) {
+        if (0 <= y && y < maze.length && 0 <= x && x < maze[y].length) {
+            if (y == maze.length - 1 && x == maze[y].length - 1) {
+                solution[y][x] = 1;
+                return true;
+            } else if (solution[y][x] != 1 && maze[y][x] == 1) {
+                solution[y][x] = 1;
+                if (findPath(maze, solution, x, y + 1)
+                        || findPath(maze, solution, x + 1, y)
+                        || findPath(maze, solution, x - 1, y)
+                        || findPath(maze, solution, x, y - 1)) {
+                    return true;
+                }
+                solution[y][x] = 0;
+            }
+        }
+        return false;
+    }
+}
+
+
+
+Change-making problem
+====================
+https://en.wikipedia.org/wiki/Change-making_problem
+http://algorithms.tutorialhorizon.com/dynamic-programming-coin-change-problem/
+http://algorithms.tutorialhorizon.com/dynamic-programming-minimum-coin-change-problem/
+
+Finding the minimum number of coins (of certain denominations) that add up to a given amount of money. It is a knapsack type problem
+
+Write an algo­rithm to find out how many ways we can make the change of the amount using the coins given.
+Recursive solution (2^n)
+
+public static int total(int n, int[] v, int i) {
+        if (n < 0) {
+            return 0;
+        }
+        if (n == 0) {
+            return 1;
+        }
+        // means coins over and n>0 so no solution
+        if (i == v.length && n > 0) {
+            return 0;
+        }
+        return total(n - v[i], v, i) + total(n, v, i + 1);
+    }
+
+
 
 
 
