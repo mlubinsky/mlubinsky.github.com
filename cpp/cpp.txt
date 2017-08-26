@@ -1,0 +1,48 @@
+
+Q: What is assignment operator?
+A: Default assignment operator handles assigning one object to another of the same class.
+Member to member copy (shallow copy)
+All containers in the STL are parameterized with template arguments,
+usually the last argument is called A or Allocator and defaults to std::allocator<...>
+where ... represents the type of the value stored within the container.
+The Allocator is a class that is used to provide memory and build/destroy the elements in this memory area.
+It can allocate memory from a pool or directly from the heap, whichever you build the allocator from.
+By default the std::allocator<T> is a simple wrapper around ::operator new and will thus allocate memory on the heap as you inferred.
+The memory is allocated on demand, and is deallocated at the very least when the vector's destructor is called.
+C++11 introduces shrink_to_fit to release memory sooner too. Finally, when the vector outgrow its current capacity, a new (larger) allocation is made,
+the objects are moved to it, and the old allocation is released.
+As will all local variables, the destructor is called when executed reaches the end of the scope it has been declared into.
+So, before the function is exited, the vector destructor is called, and only afterward does the stack shrinks and control returns to the caller.
+=========================================================
+Base class object's pointer can invoke methods in derived class objects. You can also achieve polymorphism in C++
+by function overloading and operator overloading.
+
+
+===========================================================
+Q: How do you know that your class needs a virtual destructor?
+A: If your class has at least one virtual function, you should make a destructor for this class
+virtual. This will allow you to delete a dynamic object through a caller to a base class object. If
+the destructor is non-virtual, then wrong destructor will be invoked during deletion of the
+dynamic object.
+============
+A: Inherits:
+Every data member defined in the parent class (although such members may not always be accessible in the derived class!)
+Every ordinary member function of the parent class (although such members may not always be
+accessible in the derived class!)
+The same initial data layout as the base class.
+==================================================
+Doesn't Inherit :
+The base class's constructors and destructor.
+The base class's assignment operator.
+The base class's friends
+===================================================
+Q: What are VTABLE and VPTR?
+A: vtable is a table of function pointers. It is maintained per class.
+vptr is a pointer to vtable. It is maintained per object (See this for an example).
+Compiler adds additional code at two places to maintain and use vtable and vptr.
+1) Code in every constructor. This code sets vptr of the object being created. This code sets vptr to point to vtable of the class.
+2) Code with polymorphic function call (e.g. bp->show() in above code).
+Wherever a polymorphic call is made, compiler inserts code to first look for vptr using base class pointer or reference
+(In the above example, since pointed or referred object is of derived type, vptr of derived class is accessed).
+Once vptr is fetched, vtable of derived class can be accessed. Using vtable, address of derived derived class function show() is accessed and called.
+==========================
