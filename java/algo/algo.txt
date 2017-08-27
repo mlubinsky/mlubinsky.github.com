@@ -3,6 +3,16 @@ http://massivealgorithms.blogspot.com/
 http://ruslanledesma.com/
 http://algorithms.tutorialhorizon.com/
 
+
+
+Fast string matching
+====================
+https://github.com/phaistos-networks/Trinity   Inverted index in C++
+https://medium.com/towards-data-science/symspell-vs-bk-tree-100x-faster-fuzzy-string-search-spell-checking-c4f10d80a078
+http://blog.faroo.com/2015/03/24/fast-approximate-string-matching-with-large-edit-distances/
+https://medium.com/@Pinterest_Engineering/introducing-pixie-an-advanced-graph-based-recommendation-system-e7b4229b664b
+https://habrahabr.ru/company/mailru/blog/267469/   Поисковые подсказки изнутри
+
 Task: are linked lists intersected?
 ===================================
 private static boolean areListsIntersected(Node list1, Node list2){
