@@ -1,4 +1,160 @@
 
+https://habrahabr.ru/post/302936/  Graph
+
+// Правильно, передача по ссылке
+void func2(const Foo &foo) {
+}
+
+
+std::string s1, s2, s3;
+
+std::string s;
+
+s.reserve( s1.size() + s2.size() + s3.size() );
+s += s1;
+s += s2;
+s += s3;
+
+=========== MATRIX ==================
+void print( const vector< vector<float> >& m ) {
+   for( auto &row : m ) {
+      for( auto x : row )
+         cout << x << ' ';
+      cout << endl;
+   }
+}
+
+void trans( vector< vector<float> >& m ) {
+   for( unsigned i = 0; i < m.size(); i++ )
+      for( unsigned j = i + 1; j < m[ i ].size(); j++ ) {
+         float tmp = m[ i ][ j ];
+         m[ i ][ j ] = m[ j ][ i ];
+         m[ j ][ i ] = tmp;
+      }
+}
+
+int main( void ) {
+   vector< vector<float> > matrix = {
+      { 1, 2, 3 },
+      { 4, 5, 6 },
+      { 7, 8, 9 }
+   };
+   print( matrix );
+   cout << "---------" << endl;
+   trans( matrix );
+   print( matrix );
+}
+=============================
+
+для вектора предусмотрено 2 разных способа индексации: как операция [ i ] и как метод-функция at( i ). Они различаются: метод at() проверяет текущий размер вектора size(), и при индексации за его границу возбуждает исключение. Напротив, операция индексации не проверяет границу, что небезопасно, но зато это быстрее. Метод at() позволяет нам контролировать выход за границы вектора и либо квалифицировать это как логическую ошибку, либо корректировать текущий размер контейнера под потребность, как в вот таком фрагменте (здесь попыток доступа вдвое больше, чем реально выполненных операций):
+
+
+int main( void ) {
+   vector<int> nums;
+   for( int i = 0; i < 10; ) {
+      try {
+         nums.at( i ) = i;    // vector::at throws an out-of-range
+         i++;
+      }
+      catch( const out_of_range& ) {
+         cout << i << " ";
+         nums.resize( i + 1 );
+      }
+   }
+   cout << endl << nums.size() << endl;
+}
+
+FizzBuzz
+============================
+Напишите программу, которая выводит на экран числа от 1 до 100. При этом вместо чисел, кратных трем, программа должна выводить слово Fizz, а вместо чисел, кратных пяти — слово Buzz. Если число кратно пятнадцати, то программа должна выводить слово FizzBuzz. Задача может показаться очевидной, но нужно получить наиболее простое и красивое решение.
+
+#include <iostream>
+using namespace std;
+int main(){
+  for(int i=1;i<101;i++)
+  {
+      if(i%3==0) cout<<"Fizz";
+      if(i%5==0) cout<<"Buzz";
+      if(i%3!=0 && i%5!=0) cout<<i;
+      cout<<endl;
+  }
+}
+=======================
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+  for(int i=1;i<101;i++)
+  {
+      string str="";
+      if(i%3==0) str="Fizz";
+      if(i%5==0) str+="Buzz";
+      if(str=="") str=to_string(i);
+      cout<<str+'\n';
+  }
+}
+==========================
+
+SFINAE
+ «substitution failure is not an error»
+
+ for (const auto &item : vector) {
+     .....
+}
+the same as
+{
+    auto it  (std::begin(vector));
+    auto end (std::end(vector));
+
+    for (; it != end; ++it) {
+        const auto &item (*it);
+        /* тело цикла */
+    }
+}
+
+
+std::vector — буфер выделяется в куче, размер неизвестен на этапе компиляции.
+std::array — буфер выделяется на стеке, размер должен быть известен на этапе компиляции.
+
+ данные в std::array могут жить как на стеке, так и на куче (например, если std::array используется как поле в классе, экземпляр которого размещения в куче)
+
+https://habrahabr.ru/company/aligntechnology/blog/283352/
+
+std::shared_ptr
+std::unique_ptr
+
+auto_ptr --- deprecated.
+
+auto cookie = std::make_unique<Cookie>(dough, sugar, cinnamon);
+
+How to use following C func from C++?
+void DoWork(int* buffer, size_t bufSize);
+
+void Call(size_t n)
+{
+  std::vector<int> v(n);  // Лучше.
+  DoWork(v.data(), v.size());
+}
+
+
+https://habrahabr.ru/post/311038/
+
+Pimpl (pointer to implementation, указатель на имплементацию) — полезная идиома, распространенная в языке C++. У этой идиомы есть несколько положительных сторон, однако, в этой статье она рассматривается только как средство уменьшения зависимостей времени компиляции. Более подробно о самой идиоме можно посмотреть, например, здесь, здесь и здесь.
+
+
+char buffer[32] = { 0 };
+
+Тип кэша	Время доступа (тактов)	Размер кэша
+Регистры	0	десятки штук
+L1 кэш	4	32 KB
+L2 кэш	10	256 KB
+L3 кэш	50	8 MB
+Оперативная память	200	8 GB
+Буфер диска	100'000	64 MB
+Локальный диск	10'000'000	1000 GB
+Удалённые сервера	1'000'000'000	∞
+
+
 Q: What is assignment operator?
 A: Default assignment operator handles assigning one object to another of the same class.
 Member to member copy (shallow copy)
@@ -46,3 +202,19 @@ Wherever a polymorphic call is made, compiler inserts code to first look for vpt
 (In the above example, since pointed or referred object is of derived type, vptr of derived class is accessed).
 Once vptr is fetched, vtable of derived class can be accessed. Using vtable, address of derived derived class function show() is accessed and called.
 ==========================
+emplace_back
+emplace
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define HELLO_STRING "Hello, Habr!\n"
+
+void main() {
+  char *str = malloc(sizeof(char) * (strlen(HELLO_STRING) + 1));
+  strcpy(str, HELLO_STRING);
+  printf("->\t%s", str);
+  free(str);
+}

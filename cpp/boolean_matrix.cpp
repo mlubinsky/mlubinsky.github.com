@@ -1,14 +1,14 @@
 // Program to find the length of the largest region in boolean 2D-matrix
 // http://www.geeksforgeeks.org/find-length-largest-region-boolean-matrix/
-#include<bits/stdc++.h>
+
+#include <iostream>
 using namespace std;
 #define ROW 4
 #define COL 5
 
 // A function to check if a given cell (row, col)
 // can be included in DFS
-int isSafe(int M[][COL], int row, int col,
-           bool visited[][COL])
+int isSafe(int M[][COL], int row, int col,  bool visited[][COL])
 {
     // row number is in range, column number is in
     // range and value is 1 and not yet visited
@@ -17,11 +17,9 @@ int isSafe(int M[][COL], int row, int col,
            (M[row][col] && !visited[row][col]);
 }
 
-// A utility function to do DFS for a 2D boolean
-// matrix. It only considers the 8 neighbours as
-// adjacent vertices
-void DFS(int M[][COL], int row, int col,
-         bool visited[][COL], int &count)
+// A utility function to do DFS for a 2D boolean matrix.
+// It only considers the 8 neighbours as adjacent vertices
+void DFS(int M[][COL], int row, int col, bool visited[][COL], int &count)
 {
     // These arrays are used to get row and column
     // numbers of 8 neighbours of a given cell
@@ -32,22 +30,18 @@ void DFS(int M[][COL], int row, int col,
     visited[row][col] = true;
 
     // Recur for all connected neighbours
-    for (int k = 0; k < 8; ++k)
-    {
-        if (isSafe(M, row + rowNbr[k], col + colNbr[k],
-                                              visited))
-        {
+    for (int k = 0; k < 8; ++k){
+        if (isSafe(M, row + rowNbr[k], col + colNbr[k],  visited)){
             // increment region length by one
             count++;
-            DFS(M, row + rowNbr[k], col + colNbr[k],
-                                    visited, count);
+            DFS(M, row + rowNbr[k], col + colNbr[k], visited, count);
         }
     }
 }
 
 // The main function that returns largest  length region
 // of a given boolean 2D matrix
-int  largest(int M[][COL])
+int  largestRegion(int M[][COL])
 {
     // Make a bool array to mark visited cells.
     // Initially all cells are unvisited

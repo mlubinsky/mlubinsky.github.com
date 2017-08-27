@@ -1,4 +1,4 @@
-// g++ -std=c++11 reverse_words.cpp
+// g++ -std=c++11 examples.cpp
 
 #include <iostream>
 #include <string>
@@ -10,31 +10,27 @@ using namespace std;
 #include <stdio.h>
 #include <stdlib.h>
 
-bool isAnagram2(std::string str1, std::string str2)
-{
+bool isAnagram2(std::string str1, std::string str2){
     std::sort(str1.begin(), str1.end());
     std::sort(str2.begin(), str2.end());
     return str1==str2;
 }
 
-bool isAnagram(const std::string &str1, const std::string &str2)
-{
+bool isAnagram(const std::string &str1, const std::string &str2){
     int frequencies[256];
     memset(frequencies, 0, 256);
 
-    for (int i = 0; i < str1.length(); i++)
-    {
+    for (int i = 0; i < str1.length(); i++){
         int bucket = (unsigned char) str1[i];
         frequencies[bucket]++;
     }
-    for (int i = 0; i < str2.length(); i++)
-    {
+
+    for (int i = 0; i < str2.length(); i++){
         int bucket = (unsigned char) str2[i];
         frequencies[bucket]--;
     }
 
-    for (int i = 0; i < 256; i++)
-    {
+    for (int i = 0; i < 256; i++){
         if (frequencies[i] != 0)
             return false;
     }
@@ -43,7 +39,6 @@ bool isAnagram(const std::string &str1, const std::string &str2)
 
 
 void reverse_words(string &input) {
-
 	reverse(input.begin(), input.end());
 	size_t start=0;
 	size_t end;
@@ -54,7 +49,14 @@ void reverse_words(string &input) {
 	reverse(input.begin()+start, input.end());
 }
 
-
+int count_x(char *p, char x){
+    int count=0;
+    while(*p){
+        if (*p ==x) count++;
+        p++;
+    }
+    return count;
+}
 
 /*
  * Generic implementation to search if a given value exists in a map or not.
@@ -123,12 +125,14 @@ int main()
    for( ; i != v.end(); ++i ) {
     if( *i > x && *i < y ) break;
    }
-   cout << "The first element in v  between x and y is: " << *i  <<endl;;
+   cout << "The first element in v  between x and y is: " << *i  <<endl;
    // C++11: use std::find_if
    //  find() If no matches were found, the function returns string::npos.
     auto ii = find_if( begin(v), end(v), [=](int i) { return i > x && i < y; } );
     cout << "The first element in v  between x and y is: " << *ii  <<endl;
 
+
+    cout << "REVERSE WORD "  << endl;
     string s= "ABC DEF GH";
     cout << s  <<endl;
     reverse_words(s);
@@ -138,6 +142,7 @@ int main()
     cout << "IsAnagram? "<< isAnagram("ABD DD",  "DD DBC") << endl;
     cout << "IsAnagram? "<< isAnagram2("ABD DD", "DD DBC") << endl;
 
+   std::cout << "Find all keys in map for a given value" << '\n';
 
     map <int, std::string> mapOfPlanets;
     mapOfPlanets.insert(make_pair(1,"earth"));
@@ -147,5 +152,9 @@ int main()
     bool result = findByValue(keys, mapOfPlanets, std::string("earth"));
     for(auto& i : keys)
         std::cout << i << '\n';
-    //cout << keys;
+
+   std::cout << "Number of occurance in C - string " << '\n';
+   char c_str[]="abcdaaa";
+   std::cout << count_x(c_str, 'a') << '\n';
+
 }
