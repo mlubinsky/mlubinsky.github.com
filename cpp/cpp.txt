@@ -118,9 +118,94 @@ int main(){
       cout<<str+'\n';
   }
 }
-==========================
+===========TUPLE===============
 
-SFINAE
+A tuple is a variadic class template that stores an unlimited set of values of different types, defined when instantiating the tuple; for example:
+
+tuple<int, int> x;
+
+will store 2 integers.
+
+tuple<string, int, bool> y;
+
+will store one string, one integer and one boolean and so on.
+
+
+Tuples are useful for several things:
+
+They are light replacements for structures.
+They can be useful to return several values from a function
+They let you perform comparisons through all the value set
+You can instantiate tuples in these ways:
+
+tuple<int, int, bool> x; //instantiating but not initializing
+tuple<int, string> y { 2, "hello" }; //instantiating AND initializing
+auto z = make_tuple(2, 3, 4, "bye"s); //instantiating AND initializing throught the make_tuple helper function.
+
+#include <tuple>
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+   auto xx = make_tuple(3.14, "PI"s);
+   auto& first = get<0>(xx);
+   auto& second = get<1>(xx);
+   cout << "(" << first << "; " << second << ")" << endl;
+   return 0;
+}
+
+
+int main()
+{
+  vector<tuple<int, string>> vec;
+  vec.push_back(make_tuple(10, "ten"));
+  vec.emplace_back(20, "twenty");
+  vec.emplace_back(30, "thirty");
+
+  for (auto& i : vec)
+  {
+     cout << "(" << get<0>(i) << "; " << get<1>(i) << ")" << endl;
+  }
+}
+
+#include <iostream>
+#include <set>
+#include <string>
+#include <tuple>
+
+using namespace std;
+
+using car = tuple<string, string, int>;
+
+void print(const car& c)
+{
+    cout << get<0>(c) << ", " << get<1>(c) << "; " << get<2>(c) << endl;
+}
+
+int main()
+{
+  set<car> cars;
+  cars.emplace("Toyota", "Rav4", 2012);
+  cars.emplace("VW", "Jetta", 2015);
+  cars.emplace("Chevrolet", "Sonic", 2013);
+  cars.emplace("BMW", "X5", 2014);
+  cars.emplace("VW", "Jetta", 2014);
+
+  for (auto& i : cars)
+    print(i);
+
+  cout << "******" << endl;
+  auto it = cars.find(car { "Toyota", "Rav4", 2012 });
+  if (it == cars.end())
+    cerr << "CAR NOT FOUND" << endl;
+  else
+    print(*it);
+
+  return 0;
+}
+====== SFINAE ===============
  «substitution failure is not an error»
 
  for (const auto &item : vector) {
@@ -136,7 +221,60 @@ the same as
         /* тело цикла */
     }
 }
+======= Ref counter pointer =========
 
+struct refcntptrdata
+{
+  T* pointee;
+  int refcnt;
+};
+
+template <typename T>
+class refcntptr
+{
+  private:
+    refcntptrdata<T>* data;
+
+    void release()
+    {
+      data->refcnt--;
+      if (data->refcnt == 0)
+      {
+        delete data->pointee;
+        delete data;
+      }
+    }
+
+  public:
+    explicit refcntptr(T* pointee) : data(new refcntptrdata<T>())
+    {
+      data->pointee = pointee;
+      data->refcnt = 1;
+    }
+
+    refcntptr(const refcntptr<T>& source) : data(source.data)
+    {
+      data->refcnt++;
+    }
+
+    refcntptr<T>& operator=(const refcntptr<T>& source)
+    {
+      release();
+      data = source.data;
+      data->refcnt++;
+    }
+
+    ~refcntptr()
+    {
+      release();
+    }
+
+    T* operator->() { return data->pointee; }
+    const T* operator->() const { return data->pointee; }
+
+    T& operator*() { return *(data->pointee); }
+    const T& operator*() const { return *(data->pointee); }
+};
 
 std::vector — буфер выделяется в куче, размер неизвестен на этапе компиляции.
 std::array — буфер выделяется на стеке, размер должен быть известен на этапе компиляции.
@@ -144,6 +282,27 @@ std::array — буфер выделяется на стеке, размер д�
  данные в std::array могут жить как на стеке, так и на куче (например, если std::array используется как поле в классе, экземпляр которого размещения в куче)
 
 https://habrahabr.ru/company/aligntechnology/blog/283352/
+
+SMART POINTER
+template <typename T>
+class ptr
+{
+  private:
+    T* pointee;
+
+  public:
+    explicit ptr(T* pointee) : pointee(pointee) { }
+    ~ptr() { delete pointee; }
+
+    T* operator->() { return pointee; }
+    const T* operator->() const { return pointee; }
+
+    T& operator*() { return *pointee; }
+    const T& operator*() const { return *pointee; }
+};
+
+
+
 
 std::shared_ptr  std::make_shared https://habrahabr.ru/post/263751/
 std::unique_ptr  std::make_unique
@@ -166,12 +325,16 @@ SharedObject(sp) //share
 sp->use()
 SharedObject(std::move(sp))  //share and discard ownership
 
+https://oopscenities.net/2013/10/06/smart-pointers-part-4-shared_ptr/
+When shard pointer gets out of scope, the shared_ptr destructor is invoked automatically (because of RAII) and the reference counter is decremented again (this time to 0, because no shared_ptr is pointing anymore to the object).
+Since the reference counter is 0, the object   destructor is invoked.
 ========================
 auto_ptr --- deprecated.
 
 auto cookie = std::make_unique<Cookie>(dough, sugar, cinnamon);
 
 How to use following C func from C++?
+======================================
 void DoWork(int* buffer, size_t bufSize);
 
 void Call(size_t n)
@@ -248,7 +411,7 @@ Once vptr is fetched, vtable of derived class can be accessed. Using vtable, add
 ==========================
 emplace_back
 emplace
-
+=========================
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -261,4 +424,31 @@ void main() {
   strcpy(str, HELLO_STRING);
   printf("->\t%s", str);
   free(str);
+}
+
+
+===========   THREADS ==========
+#include <cstdio>
+#include <thread>
+
+using namespace std;
+
+void run()
+{
+    for (auto i = 0; i < 5; i++)
+    {
+        printf("%d\n", i);
+    }
+}
+
+int main()
+{
+    thread t1(run);
+    thread t2(run);
+    thread t3(run);
+
+    t1.join();
+    t2.join();
+    t3.join();
+    return 0;
 }
