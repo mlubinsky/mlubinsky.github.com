@@ -1,21 +1,51 @@
-
+https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/
+https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-2/
+https://www.topcoder.com/community/data-science/data-science-tutorials/
 https://habrahabr.ru/post/302936/  Graph
 
-// Правильно, передача по ссылке
 void func2(const Foo &foo) {
 }
 
 
 std::string s1, s2, s3;
-
 std::string s;
 
 s.reserve( s1.size() + s2.size() + s3.size() );
 s += s1;
 s += s2;
 s += s3;
+====  REVERSE ARRAY C-style====
+
+ void reverse_array_simple(int *A, int N) {
+      int first = 0, last = N-1; // First and last indices of elements to be swapped
+      While(first < last) { // Loop while there is something to swap
+           swap(A[first], A[last]); // swap(a,b) is the standard STL function
+           first++; // Move first index forward
+           last--; // Move last index back
+      }
+ }
+
+ void reverse_array(int *A, int N) {
+      int *first = A, *last = A+N-1;
+      while(first < last) {
+           Swap(*first, *last);
+           first++;
+           last--;
+      }
+ }
+
+std::reverse(T begin, T end)  looks
+
+====  PAIRS ================
+The great advantage of pairs is that they have built-in operations to compare themselves.
+Pairs are compared first-to-second element. If the first elements are not equal,
+the second elements will be compared only if the first ones are equal.
+The array (or vector) of pairs can easily be sorted by STL internal functions.
 
 =========== MATRIX ==================
+create a matrix of size N*M and fill it with -1.
+vector< vector<int> > Matrix(N, vector<int>(M, -1));
+
 void print( const vector< vector<float> >& m ) {
    for( auto &row : m ) {
       for( auto x : row )
@@ -63,15 +93,20 @@ $ ./siz1
 array size = 102
 
 
-Во всех таких случаях, после определения массива размер его фиксируется и мы не сможем никаким увеличить его размер (если, например, в ходе вычислений окажется, что нам не хватает этого размера)
+ после определения массива размер его фиксируется и мы не сможем никак увеличить его размер
+(если, например, в ходе вычислений окажется, что нам не хватает этого размера)
 
 ============================
 double *array = (double*)calloc( N, sizeof( double ) ); // это C
 double *array = new double[ N ];                        // а это C++
 
 
-=============================
-для вектора предусмотрено 2 разных способа индексации: как операция [ i ] и как метод-функция at( i ). Они различаются: метод at() проверяет текущий размер вектора size(), и при индексации за его границу возбуждает исключение. Напротив, операция индексации не проверяет границу, что небезопасно, но зато это быстрее. Метод at() позволяет нам контролировать выход за границы вектора и либо квалифицировать это как логическую ошибку, либо корректировать текущий размер контейнера под потребность, как в вот таком фрагменте (здесь попыток доступа вдвое больше, чем реально выполненных операций):
+=============================   VECTOR ===========================
+для вектора предусмотрено 2 разных способа индексации: как операция [ i ] и как метод-функция at( i ).
+Они различаются: метод at() проверяет текущий размер вектора size(), и при индексации за его границу возбуждает исключение.
+Напротив, операция индексации не проверяет границу, что небезопасно, но зато это быстрее.
+Метод at() позволяет нам контролировать выход за границы вектора и либо квалифицировать это как логическую ошибку, либо корректировать текущий размер контейнера под потребность,
+как в вот таком фрагменте (здесь попыток доступа вдвое больше, чем реально выполненных операций):
 
 
 int main( void ) {
@@ -91,7 +126,9 @@ int main( void ) {
 
 FizzBuzz
 ============================
-Напишите программу, которая выводит на экран числа от 1 до 100. При этом вместо чисел, кратных трем, программа должна выводить слово Fizz, а вместо чисел, кратных пяти — слово Buzz. Если число кратно пятнадцати, то программа должна выводить слово FizzBuzz. Задача может показаться очевидной, но нужно получить наиболее простое и красивое решение.
+Напишите программу, которая выводит на экран числа от 1 до 100.
+При этом вместо чисел, кратных трем, программа должна выводить слово Fizz, а вместо чисел, кратных пяти — слово Buzz.
+Если число кратно пятнадцати, то программа должна выводить слово FizzBuzz.
 
 #include <iostream>
 using namespace std;
@@ -122,17 +159,10 @@ int main(){
 
 A tuple is a variadic class template that stores an unlimited set of values of different types, defined when instantiating the tuple; for example:
 
-tuple<int, int> x;
-
-will store 2 integers.
-
-tuple<string, int, bool> y;
-
-will store one string, one integer and one boolean and so on.
-
+tuple<int, int> x; will store 2 integers.
+tuple<string, int, bool> y; will store one string, one integer and one boolean and so on.
 
 Tuples are useful for several things:
-
 They are light replacements for structures.
 They can be useful to return several values from a function
 They let you perform comparisons through all the value set
@@ -147,8 +177,7 @@ auto z = make_tuple(2, 3, 4, "bye"s); //instantiating AND initializing throught 
 #include <string>
 using namespace std;
 
-int main()
-{
+int main() {
    auto xx = make_tuple(3.14, "PI"s);
    auto& first = get<0>(xx);
    auto& second = get<1>(xx);
@@ -157,8 +186,7 @@ int main()
 }
 
 
-int main()
-{
+int main() {
   vector<tuple<int, string>> vec;
   vec.push_back(make_tuple(10, "ten"));
   vec.emplace_back(20, "twenty");
@@ -174,18 +202,14 @@ int main()
 #include <set>
 #include <string>
 #include <tuple>
-
 using namespace std;
-
 using car = tuple<string, string, int>;
 
-void print(const car& c)
-{
+void print(const car& c) {
     cout << get<0>(c) << ", " << get<1>(c) << "; " << get<2>(c) << endl;
 }
 
-int main()
-{
+int main() {
   set<car> cars;
   cars.emplace("Toyota", "Rav4", 2012);
   cars.emplace("VW", "Jetta", 2015);
@@ -300,9 +324,6 @@ class ptr
     T& operator*() { return *pointee; }
     const T& operator*() const { return *pointee; }
 };
-
-
-
 
 std::shared_ptr  std::make_shared https://habrahabr.ru/post/263751/
 std::unique_ptr  std::make_unique
@@ -430,19 +451,15 @@ void main() {
 ===========   THREADS ==========
 #include <cstdio>
 #include <thread>
-
 using namespace std;
-
-void run()
-{
+void run() {
     for (auto i = 0; i < 5; i++)
     {
         printf("%d\n", i);
     }
 }
 
-int main()
-{
+int main() {
     thread t1(run);
     thread t2(run);
     thread t3(run);
