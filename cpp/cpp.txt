@@ -2,11 +2,23 @@ https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-
 https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-2/
 https://www.topcoder.com/community/data-science/data-science-tutorials/
 https://habrahabr.ru/post/302936/  Graph
+http://blog.robertelder.org/terminal-diff-tool/
 
 void func2(const Foo &foo) {
 }
 
 
+====     Rvalues move()
+https://habrahabr.ru/post/322132/
+
+====CONSTRUCTORS
+
+T(const T&);  //copy-конструктор
+T(T&);        //коварный copy-конструктор
+T(const T&&); //как назвать этот?
+T(T&&);       //move-конструктор
+
+==============
 std::string s1, s2, s3;
 std::string s;
 
