@@ -1,15 +1,98 @@
+https://godbolt.org/
+
+ The Most Beautiful Program Ever Written
+
+https://www.youtube.com/watch?v=OyfBQmvr2Hc
+https://www.lvguowei.me/post/the-most-beautiful-program-ever-written/
+
+https://www.youtube.com/watch?v=iWvcoIKSaoc   Tour of modern C++  Dmitri Nesteruk
+https://www.youtube.com/watch?v=j9arNRRoPe8&t=374s Design patterns Dmitri Nesteruk
+https://www.youtube.com/watch?v=sJnoIF4_Ug8  Design patterns Dmitri Nesteruk
+https://www.youtube.com/watch?v=_-3syPxgwqs&list=PLQC2_0cDcSKAIWkuo8yft2DlelRUljFy4&index=4   Atomics in C++
+STL
+https://www.youtube.com/watch?v=BhBIHFnOw7Ahttps://www.youtube.com/watch?v=BhBIHFnOw7A  STL
+https://www.slideshare.net/yandex/1114-stl
+
+https://habrahabr.ru/post/113108/  Dynamic programming
+
+http://www.techiedelight.com/data-structures-and-algorithms-interview-questions-stl/
+https://github.com/AnthonyCalandra/modern-cpp-features
 https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/
 https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-2/
 https://www.topcoder.com/community/data-science/data-science-tutorials/
 https://habrahabr.ru/post/302936/  Graph
 http://blog.robertelder.org/terminal-diff-tool/
+https://www.youtube.com/playlist?list=PL5jc9xFGsL8E_BJAbOw_DH6nWDxKtzBPA   Advanced STL
+http://beej.us/guide/
 
 void func2(const Foo &foo) {
 }
 
+============== range based loop ======
 
-====     Rvalues move()
+int my_array[5] = {1, 2, 3, 4, 5};
+//  also using type inference for array elements
+for (auto& x : my_array) {
+    x *= 2;
+}
+
+When you iterate over a std::map, you're iterating over all of these std::pairs. When you dereference one of these iterators, you get a std::pair containing the key and its associated value.
+
+Now the type std::pair gives you access to its elements through two members: first and second. So if you have a std::pair<X, Y> called p, p.first is an X object and p.second is a Y object.
+std::pair<> has two members named first and second (see here), with quite an intuitive meaning. Thus, given an iterator i to a certain map, the expression:
+i->first
+Which is equivalent to: (*i).first
+
+map <string, int> h;
+for (const auto& kvp: h){
+  kvp._first ..
+  kvp._second ..
+}
+===================
+unordered_set,
+unordered_map,
+unordered_multiset,
+unordered_multimap
+
+=== ALGORITHMS ======
+
+#include <algorithm>
+
+//are all of the elements positive?
+all_of(first, first+n, ispositive()); //false
+//is there at least one positive element?
+any_of(first, first+n, ispositive());//true
+// are none of the elements positive?
+none_of(first, first+n, ispositive()); //false
+
+=== final ======
+
+C++11 also adds the ability to prevent inheriting from classes or simply preventing overriding methods in derived classes. This is done with the special identifier final. For example:
+struct Base1 final { };
+
+==== default ====
+
+defaulted function. The =default; part instructs the compiler to generate the default implementation for the function. Defaulted functions have two advantages: They are more efficient than manual implementations, and they rid the programmer from the chore of defining those functions manually.
+
+==== delete ====
+
+Deleted functions are useful for preventing object copying, among the rest. Recall that C++ automatically declares a copy constructor and an assignment operator for classes. To disable copying, declare these two special member functions =delete:
+
+struct NoCopy
+{
+ NoCopy & operator =( const NoCopy & ) = delete;
+ NoCopy ( const NoCopy & ) = delete;
+};
+NoCopy a;
+NoCopy b(a); //compilation error, copy ctor is deleted
+
+====     Rvalues move()   ===========
 https://habrahabr.ru/post/322132/
+
+class Movable{
+Movable (Movable&&); //move constructor
+Movable&& operator=(Movable&&); //move assignment operator
+};
 
 ====CONSTRUCTORS
 
@@ -19,6 +102,7 @@ T(const T&&); //как назвать этот?
 T(T&&);       //move-конструктор
 
 ==============
+const char *pc=str.c_str(); //data pointers
 std::string s1, s2, s3;
 std::string s;
 
@@ -461,6 +545,9 @@ void main() {
 
 
 ===========   THREADS ==========
+https://habrahabr.ru/post/182626/
+http://mariusbancila.ro/blog/2017/01/20/dining-philosophers-in-c11-chandy-misra-algorithm/
+
 #include <cstdio>
 #include <thread>
 using namespace std;
