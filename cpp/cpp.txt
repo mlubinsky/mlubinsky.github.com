@@ -48,12 +48,99 @@ for (const auto& kvp: h){
   kvp._first ..
   kvp._second ..
 }
+
+====   SET ============
+std::set is an associative container that contains a sorted set of unique objects of type Key. Sorting is done using the key comparison function Compare. Search, removal, and insertion operations have logarithmic complexity. Sets are usually implemented as red-black trees.
+#include <iostream>
+#include <set>
+
+int main()
+{
+    std::set<int> example = {1, 2, 3, 4};
+
+    auto search = example.find(2);   Logarithmic in the size of the container.
+    if(search != example.end()) {
+        std::cout << "Found " << (*search) << '\n';
+    }
+    else {
+        std::cout << "Not found\n";
+    }
+}
+=========   MAP =========
+Returns a reference to the value that is mapped to a key equivalent to key,
+performing an insertion if such key does not already exist.
+
+operator[] is non-const because it inserts the key if it doesn't exist.
+If this behavior is undesirable or if the container is const, at() may be used.
+
+// accessing mapped values
+#include <iostream>
+#include <map>
+#include <string>
+
+int main ()
+{
+  std::map<char,std::string> mymap;
+
+  mymap['a']="an element";
+  mymap['b']="another element";
+  mymap['c']=mymap['b'];
+
+  std::cout << "mymap['a'] is " << mymap['a'] << '\n';
+  std::cout << "mymap['b'] is " << mymap['b'] << '\n';
+  std::cout << "mymap['c'] is " << mymap['c'] << '\n';
+  std::cout << "mymap['d'] is " << mymap['d'] << '\n';
+
+  std::cout << "mymap now contains " << mymap.size() << " elements.\n";
+
+  return 0;
+}
+
+
+Notice how the last access (to element 'd') inserts a new element in the map with that key and initialized to its default value (an empty string) even though it is accessed only to retrieve its value. Member function map::find does not produce this effect.
+Output:
+mymap['a'] is an element
+mymap['b'] is another element
+mymap['c'] is another element
+mymap['d'] is
+mymap now contains 4 elements.
+
+
+
+// map::find
+#include <iostream>
+#include <map>
+
+int main ()
+{
+  std::map<char,int> mymap;
+  std::map<char,int>::iterator it;
+
+  mymap['a']=50;
+  mymap['b']=100;
+  mymap['c']=150;
+  mymap['d']=200;
+
+  it = mymap.find('b');
+  if (it != mymap.end())
+    mymap.erase (it);
+
+  // print content:
+  std::cout << "elements in mymap:" << '\n';
+  std::cout << "a => " << mymap.find('a')->second << '\n';
+  std::cout << "c => " << mymap.find('c')->second << '\n';
+  std::cout << "d => " << mymap.find('d')->second << '\n';
+
+  return 0;
+}
+
 ===================
 unordered_set,
 unordered_map,
 unordered_multiset,
 unordered_multimap
 
+Unordered set is an associative container that contains a set of unique objects of type Key. Search, insertion, and removal have average constant-time complexity.
 === ALGORITHMS ======
 
 #include <algorithm>
