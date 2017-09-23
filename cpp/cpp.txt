@@ -15,6 +15,9 @@ https://www.slideshare.net/yandex/1114-stl
 
 https://habrahabr.ru/post/113108/  Dynamic programming
 
+
+https://medium.freecodecamp.org/coding-interviews-for-dummies-5e048933b82b
+
 http://www.techiedelight.com/data-structures-and-algorithms-interview-questions-stl/
 https://github.com/AnthonyCalandra/modern-cpp-features
 https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/
@@ -24,6 +27,12 @@ https://habrahabr.ru/post/302936/  Graph
 http://blog.robertelder.org/terminal-diff-tool/
 https://www.youtube.com/playlist?list=PL5jc9xFGsL8E_BJAbOw_DH6nWDxKtzBPA   Advanced STL
 http://beej.us/guide/
+
+
+http://www.modernescpp.com/index.php/c-core-guidelines-constructors
+https://www.reddit.com/r/cpp/comments/6xyqbz/probably_the_best_cpp_tutorial_series_on_youtube/
+http://www.bfilipek.com/
+https://baptiste-wicht.com/posts/2017/09/cpp11-concurrency-tutorial-futures.html
 
 void func2(const Foo &foo) {
 }

@@ -4,6 +4,43 @@
 </head>
 
 <pre>
+
+<h2>SQL</h2>
+Differennce between ON and WHERE clause:
+CREATE TABLE A( i int, val int,  data varchar(16) );
+CREATE TABLE B( i int, val int,  data varchar(16) );
+
+INSERT INTO A values(1, 10, '2010-09-05');
+INSERT INTO A values(2, 20, '2010-10-05');
+INSERT INTO A values(3, 30, '2010-10-05');
+INSERT INTO A values(3, 40, '2010-10-05');
+
+INSERT INTO B values(2, 201, '2010-09-05');
+INSERT INTO B values(2, 202, '2020-10-05');
+INSERT INTO B values(3, 300, '2010-10-05');
+
+select A.i, A.data, B.i, B.data from A LEFT JOIN B
+ON A.i=B.i WHERE A.data='2010-10-05' and B.data='2010-10-05' ;
++------+------------+------+------------+
+| i    | data       | i    | data       |
++------+------------+------+------------+
+|    3 | 2010-10-05 |    3 | 2010-10-05 |
+|    3 | 2010-10-05 |    3 | 2010-10-05 |
++------+------------+------+------------+
+2 rows in set (0.00 sec)
+
+select A.i, A.data, B.i, B.data from A LEFT JOIN B
+ON ( A.i=B.i and A.data='2010-10-05' and B.data='2010-10-05') ;
++------+------------+------+------------+
+| i    | data       | i    | data       |
++------+------------+------+------------+
+|    3 | 2010-10-05 |    3 | 2010-10-05 |
+|    3 | 2010-10-05 |    3 | 2010-10-05 |
+|    1 | 2010-09-05 | NULL | NULL       |
+|    2 | 2010-10-05 | NULL | NULL       |
++------+------------+------+------------+
+4 rows in set (0.00 sec)
+
 <h2>MVCC (MultiVersion Concurrency Control)</h2>
 https://en.wikipedia.org/wiki/Multiversion_concurrency_control
 http://elliot.land/post/sql-transaction-isolation-levels-explained

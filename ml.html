@@ -35,7 +35,9 @@ Regression algo can be regularized to reduce complexity
 Decision tree can be pruned to reduce complexity
 
 Too complex model -> overfitting
-Too simple model underfitting
+Too simple model -> underfitting
+
+The Linear model does not fit the data very well and is therefore said to have a higher bias than the polynomial model.
 
 Overfitting:
 ---------------
@@ -56,7 +58,9 @@ Underfitting
 --------------
 occurs when a model is too simple – informed by too few features or regularized too much – which makes it inflexible in learning from the dataset.
 
-
+In both Machine Learning and Curve Fitting, you want to come up with a model that explains (fits) the data. However, the difference in the end goal is both subtle and profound.
+In Curve Fitting, we have all the data available to us at the time of fitting the curve. We want to fit the curve as best as we can.
+In Machine Learning, only a small set (the training set) of data is available at the time of training. We obviously want a model that fits the data well, but more importantly, we want the model to generalize to unseen data points
 
 
 
@@ -121,7 +125,12 @@ In Random Forests the bias of the full model is equivalent to the bias of a sing
 By creating many of these trees, in effect a "forest", and then averaging them the variance of the final model can be greatly reduced over that of a single tree. In practice the only limitation on the size of the forest is computing time as an infinite number of trees could be trained without ever increasing bias and with a continual (if asymptotically declining) decrease in the variance.
 
 
-- Separate training and test sets
+Separate training and test sets
+------------------------------------
+Split the data into three sets — training (60%), validation (a.k.a development) (20%) and test (20%).
+Use the training set to train different models, the validation set to select a model
+and finally report performance on the test set.
+
 - Trying appropriate algorithms (No Free Lunch)
 - Fitting model parameters
 - Tuning impactful hyperparameters
@@ -152,6 +161,7 @@ https://medium.com/@mngrwl/explained-simply-how-deepmind-taught-ai-to-play-video
 
 <a href=ml/QnA.html>Q & A</a>
 
+https://habrahabr.ru/post/311092/   standard distibution
 http://www.datatau.com/
 https://blog.statsbot.co/
 http://rpubs.com/JDAHAN/172473
