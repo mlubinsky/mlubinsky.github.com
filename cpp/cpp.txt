@@ -641,6 +641,8 @@ void main() {
 
 
 ===========   THREADS ==========
+https://baptiste-wicht.com/categories/concurrency.html   C++ and Java
+https://baptiste-wicht.com/categories/c%2B%2B11-concurrency-tutorial.html
 https://habrahabr.ru/post/182626/
 http://mariusbancila.ro/blog/2017/01/20/dining-philosophers-in-c11-chandy-misra-algorithm/
 
