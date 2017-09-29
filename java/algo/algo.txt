@@ -1,8 +1,46 @@
+http://cslibrary.stanford.edu/
+
 http://yucoding.blogspot.com/2017/01/leetcode-question-range-sum-query.html
 http://massivealgorithms.blogspot.com/
 http://ruslanledesma.com/
 http://algorithms.tutorialhorizon.com/
 
+============= is array contains duplicates ==== ?
+
+Solution 1:
+public boolean containsDuplicate(int[] nums) {
+    Arrays.sort(nums);
+    for (int i = 0; i < nums.length - 1; ++i) {
+        if (nums[i] == nums[i + 1]) return true;
+    }
+    return false;
+}
+
+Solution 2:
+public boolean containsDuplicate(int[] nums) {
+    Set<Integer> set = new HashSet<>(nums.length);
+    for (int x: nums) {
+        if (set.contains(x)) return true;
+        set.add(x);
+    }
+    return false;
+}
+
+
+
+==== 2 sum problem ==========================
+
+public int[] twoSum(int[] nums, int target) {
+    Map<Integer, Integer> map = new HashMap<>();
+    for (int i = 0; i < nums.length; i++) {
+        int complement = target - nums[i];
+        if (map.containsKey(complement)) {
+            return new int[] { map.get(complement), i };
+        }
+        map.put(nums[i], i);
+    }
+    throw new IllegalArgumentException("No two sum solution");
+}
 
 
 Fast string matching
@@ -232,6 +270,7 @@ class StockBuySell
 Task:  the biggest profit for a given stock over a period of time in the past (1 buy + 1 sell)
 ==============================================================================================
 http://www.geeksforgeeks.org/maximum-difference-between-two-elements/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 https://stackoverflow.com/questions/7086464/maximum-single-sell-profit
 In formal terms, we need to find  max(prices[j] - prices[i])  for every i and j such that j > i
 
