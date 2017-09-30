@@ -6,20 +6,17 @@
 
 using namespace std;
 
-//entry shall be  the pair(). not the Class below E
+
 class E {
 public:
-  int value;
-  // vector<int> tags;
-  // or set<int>  tags
+   int value;
    unordered_set<int> tags;   // O(1) if no collision ; O(n) in worst case
 };
 
-//template<class T>
 class Cache {
   public:
-      Cache() {  cout << "Constructor"<< endl; };   // constructor;
-     ~Cache() {  cout << "Destructor"<< endl;  };  // destructor;
+      Cache(size_t capacity) : _capacity(capacity) {  cout << "Constructor"<< endl; };
+     ~Cache() {  cout << "Destructor"<< endl;  };
 
       bool exist(int key);
       E  get(int key);   // by value of by reference?
@@ -33,14 +30,16 @@ class Cache {
       bool removeByKey(int key);
       int removeByTag(int tagId);   //return # of removed items??    shrink_to_fit method.
    private:
+      size_t _capacity;
       unordered_map<int, E> entries;   //syncronized   lock guard
 };
 
 
 bool Cache::add(int key, E e) {
-   typedef unordered_map<int, E>::iterator it;
-   pair< it , bool> result;
-   result = entries.insert({key,e});
+   if  (entries.size() == _capacity) //better policy - LRU cache
+     return false;
+
+   auto result = entries.insert({key,e});
    return result.second;
 }
 
@@ -54,7 +53,8 @@ void Cache::display_all() {
 
 int Cache::removeByTag(int tag) {
        cout << "======removeByTag() tag=" << tag << endl;
-       std::unordered_map<int, E>::iterator it = entries.begin();
+       auto it = entries.begin();
+
        while (it != entries.end()){
           if (  (it->second).tags.find(tag) != (it->second).tags.end() )
             entries.erase(it++);
@@ -66,18 +66,17 @@ int Cache::removeByTag(int tag) {
 
 void Cache::display(int key) {
 
-  cout << "----Display entry for key=" << key <<  endl;
-
-  std::unordered_map<int, E>::iterator it;
-  it = entries.find(key);
+  cout << "----Display entry:  key=" << key ;
+  auto it = entries.find(key);
 
   if (it != entries.end()) {
-      cout << "Key="<<key<<" Value="<< entries[key].value << endl;
+      cout <<  " Value="<< entries[key].value ;
 
-      cout << "TAGS" << endl;
+      cout << "  TAGS: " ;
       for ( auto item:  entries[key].tags) {
-          cout << item << endl;
+          cout << item << " ";
       }
+      cout << endl;
    } else {
       cout << "No entry for Key="<< key << endl;
    }
@@ -87,36 +86,23 @@ void Cache::display(int key) {
 
 int main ( int argc,  char** argv) {
      //Cache<Entry> c;
-     Cache c;   //capacity as argument? reserve size of cache
+     Cache c(5);   //capacity as argument? reserve size of cache
 
+     int key;
      E e;
+     bool result;
+     for (int i=1; i < 9; ++i) {
+        key=i;
+        e.value=i*10;
+        e.tags={i*2, i*3};
+        result = c.add(key, e);
+        cout << "Key=" << key << "  Insert result=" << result << endl;
+     }
 
-     e.value=22;
-     e.tags.insert(100);
-     e.tags.insert(200);
-
-     auto res = c.add(1,e);
-     cout << "Insert result=" << res << endl;
-
-
-     res = c.add(1,e);
-     cout << "Insert result=" << res << endl;
-
-
-     e.value=33;
-     e.tags.insert(133);
-     e.tags.insert(233);
-     res = c.add(2,e);
-
-     e.value=33;
-     e.tags.insert(500);
-     res = c.add(3,e);
-
-     //c.display(1);
      c.display_all();
-     cout << "N# of elements=" << c.size() << endl;
-     c.removeByTag(133);
-     cout << "N# of elements=" << c.size() << endl;
+     cout << " BEFORE REMOVE N# of elements=" << c.size() << endl;
+     c.removeByTag(6);
+     cout << " AFTER REMOVE N# of elements=" << c.size() << endl;
 
      return 0;
 }
