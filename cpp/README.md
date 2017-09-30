@@ -24,8 +24,36 @@ https://stackoverflow.com/questions/20487801/how-to-store-objects-without-copy-o
 
 https://stackoverflow.com/questions/19826376/insert-into-vector-having-objects-without-copy-constructor
 
+https://stackoverflow.com/questions/26446352/what-is-the-difference-between-unordered-map-emplace-and-unordered-map-ins
+
+https://crascit.com/2016/08/15/avoiding-copies-and-moves-with-auto/
 
 for certain functions, like vector<T>::push_back using move constructors/assignments of T instead of copy constructors/assignments can dramatically increase performance.
+
+### auto
+
+1. const auto&  - when the container items don’t need to be modified
+2. auto&  - if they do need to allow modification in-place.
+3. auto   -  use a bare auto if the loop body really needs a copy of the item so it can make local modifications without affecting the items being iterated over, or if the items are known to always be built in types like int, double, etc. which are trivially cheap to copy.
+
+### set
+http://thispointer.com/using-unordered_set-with-custom-hasher-and-comparision-function/
+
+### map
+
+http://thispointer.com/map-vs-unordered_map-when-to-choose-one-over-another/
+
+Here is the usual way of doing insert/overwrite in map:
+
+auto rv = map.insert(std::make_pair(key, value));
+if (!rv.second)
+    rv.first->second = value;
+
+ std::map is usually implemented as a balanced binary tree (red/black tree) so both insert() and find() take O(log(n)) steps.
+ Example: the container has a natural internal order and insertion must place the new items at their correct place. (that is why the keys must be in strict weak order).
+
+std::unordered_map uses hashing, so the lookup is O(1) for the default-constructed map (ie when there is a single item in every bucket). Once collisions are allowed (ie when you have k items in each bucket), each lookup would be take O(k) steps.
+
 
 class A {
 

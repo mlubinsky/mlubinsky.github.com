@@ -37,6 +37,48 @@ https://baptiste-wicht.com/posts/2017/09/cpp11-concurrency-tutorial-futures.html
 
 
 
+The prefix increment operator changes an object’s state, and returns itself in the changed form.
+No temporary objects required. Then the prefix increment operator may look like this:
+
+MyOwnClass& operator++()
+{
+  ++meOwnField;
+  return (*this);
+}
+A postfix operator also changes the object’s state but returns the previous state of the object.
+It does so by creating a temporary object, then the postfix increment operator overloading code will look like this:
+
+MyOwnClass operator++(int)
+{
+  MyOWnCLass tmp = *this;
+  ++(*this);
+  return tmp;
+}
+
+EMPLACE
+--------
+Foo x; Bar y; Zip z;
+
+v.push_back(T(x, y, z));  // make temporary, push it back
+v.emplace_back(x, y, z);  // no temporary, directly construct T(x, y, z) in place
+The key difference, however, is that emplace_back performs explicit conversions:
+
+std::vector<std::unique_ptr<Foo>> v;
+v.emplace_back(new Foo(1, 'x', true));  // constructor is explicit!
+This example will be mildly contrived in the future, when you should say v.push_back(std::make_unique<Foo>(1, 'x', true)). However, other constructions are very nice with emplace, too:
+
+std::vector<std::thread> threads;
+threads.emplace_back(do_work, 10, "foo");    // call do_work(10, "foo")
+threads.emplace_back(&Foo::g, x, 20, false);  // call x.g(20, false)
+
+
+
+emplace creates a new object whereas insert takes an existing object. The parameters are different as emplace takes the constructor arguments. If you don't have an instance already existing to insert, use emplace
+
+
+
+
+
 If you have 2 Vector and you want to add Vector b to end of Vector a:
 -----------------------------------------------------------------------
 vector< int > a;
@@ -94,6 +136,9 @@ int main()
     }
 }
 =========   MAP =========
+
+https://codereview.stackexchange.com/questions/27013/how-can-i-speed-up-access-to-an-unordered-map
+
 Returns a reference to the value that is mapped to a key equivalent to key,
 performing an insertion if such key does not already exist.
 
