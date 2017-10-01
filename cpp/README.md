@@ -56,6 +56,11 @@ if (!rv.second)
 std::unordered_map uses hashing, so the lookup is O(1) for the default-constructed map (ie when there is a single item in every bucket). Once collisions are allowed (ie when you have k items in each bucket), each lookup would be take O(k) steps.
 
 
+### Threads
+
+http://thispointer.com/c11-multithreading-tutorial-series/
+
+### noexept delete override ...
 class A {
 
   public:
