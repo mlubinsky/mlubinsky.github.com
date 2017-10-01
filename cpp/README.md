@@ -13,9 +13,20 @@ https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)
 
 https://msdn.microsoft.com/en-us/library/s16xw1a8.aspx
 
+ Disable Copy and Move :
+            HashMap(const HashMap&) = delete;
+
+            HashMap(HashMap&&) = delete;
+
+            HashMap& operator=(const HashMap&) = delete;
+
+            HashMap& operator=(HashMap&&) = delete;
 
 https://codeofconnor.wordpress.com/2017/09/12/pass-by-reference-vs-pass-by-value-in-cpp/
 
+### STL
+
+http://thispointer.com/stl-tutorials-and-interview-questions/
 
 
 ### STL container: How to avoid the temporary object creation
@@ -59,8 +70,11 @@ std::unordered_map uses hashing, so the lookup is O(1) for the default-construct
 ### Threads
 
 http://thispointer.com/c11-multithreading-tutorial-series/
+https://baptiste-wicht.com/categories/c%2B%2B11-concurrency-tutorial.html
 
-### noexept delete override ...
+### Keywords: noexept delete final default override ...
+
+
 class A {
 
   public:
