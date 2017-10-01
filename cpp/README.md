@@ -14,6 +14,7 @@ https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)
 https://msdn.microsoft.com/en-us/library/s16xw1a8.aspx
 
  Disable Copy and Move :
+
             HashMap(const HashMap&) = delete;
 
             HashMap(HashMap&&) = delete;
@@ -69,7 +70,14 @@ std::unordered_map uses hashing, so the lookup is O(1) for the default-construct
 
 ### Threads
 
+1. Semaphores
+2. Atomic references
+3. Monitors
+4. Condition codes
+5. Compare and swap
+
 http://thispointer.com/c11-multithreading-tutorial-series/
+
 https://baptiste-wicht.com/categories/c%2B%2B11-concurrency-tutorial.html
 
 ### Keywords: noexept delete final default override ...
