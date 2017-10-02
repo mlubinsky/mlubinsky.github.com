@@ -8,7 +8,6 @@
 
 using namespace std;
 
-
 template <typename Key, typename Val, typename Tag>
 class TCache {
   public:
@@ -77,24 +76,15 @@ class TCache {
      /*---------------------------------------------------*/
       bool removeByTag(Tag tag) {
           lock_guard<recursive_mutex> guard(mutex);
-          cout << "======removeByTag() tag=" << tag << endl;
+
           auto it = _tag2key.find(tag);
           vector<Key> keys;
+          if (it == _tag2key.end())
+            return false;
 
-          if (it != _tag2key.end()) {
-                //cout << " Found Keys with tag "  << endl;
-
-                for (auto key: it->second){
-                   //cout << " Key to be deleted " << key;
-                   //removeByKey(key);
+          for (auto key: it->second){
                    keys.push_back(key);
-                }
-
-          } else {
-               return false;
           }
-
-          //cout << endl;
 
           for (auto key : keys){
              removeByKey(key);
@@ -172,7 +162,6 @@ void func1(TCache<int,int, int> &cache)
         tags.insert(key*2);
         tags.insert(key*3);
         result = cache.add(key, 10*key, tags);
-        //cout << "Key=" << key << "  Insert result=" << result << endl;
      }
 
      this_thread::sleep_for(chrono::seconds(1));
@@ -210,8 +199,6 @@ void func2(TCache<int, int, int> &cache)
              cout << " found ";
         else
              cout << " not found ";
-
-
      }
 
      this_thread::sleep_for(chrono::seconds(1));
@@ -222,14 +209,13 @@ void func2(TCache<int, int, int> &cache)
         tags.insert(key*2);
         tags.insert(key*3);
         result = cache.add(key, 10*key, tags);
-        //cout << "Key=" << key << "  Insert result=" << result << endl;
      }
 }
 
 
 void test_single_thread () {
 
-    TCache<int,int, int> cache(5);   //create cache with capacity=5
+    TCache<int,int, int> cache(5);   //create cache with capacity=5;  using integer keys, values and tags
 
     unordered_set<int> tags1({2,3,4,5});
     cache.add(1,10, tags1);
@@ -255,8 +241,8 @@ void test_single_thread () {
 int main ( int argc,  char** argv) {
     test_single_thread();
 
-    // test several threads
-    TCache<int,int,int> cache(5);
+    // test several threads working with sane cache
+    TCache<int,int,int> cache(5);  //using integer keys, values and tags, cache capacity=5
     thread firstThread(func1, ref(cache));
     thread secondThread(func1, ref(cache));
     firstThread.join();
