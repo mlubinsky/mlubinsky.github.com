@@ -189,10 +189,7 @@ class TCache {
       unordered_map<Key, Val> _entries;
       unordered_map<Tag, unordered_set<Key> > _tag2key;
       unordered_map<Key, unordered_set<Tag> > _key2tag;
-      //recursive_mutex _mutex;
-
       shared_mutex _mutex;
-      //ThreadSafeCounter counter;
 };
 
 // Next function to be called from thread
@@ -203,7 +200,7 @@ void func1(TCache<int,int, int> &cache)
      bool result;
      unordered_set<int> tags;
 
-     //let have max key=9 to see how API handles the non-existing keys (I ddeclared cache size=5)
+     //let have max key=9 to see how API handles the non-existing keys (I declared cache size=5)
      for (int key=1; key < 9; ++key) {
         tags.clear();
         tags.insert(key*2);
@@ -266,7 +263,7 @@ void func2(TCache<int, int, int> &cache)
 
 void test_single_thread () {
 
-    TCache<int,int, string> cache(5);   //create cache with capacity=5;  using  here integer for (keys, values) and  string for tags
+    TCache<int,int, string> cache(5);   //create cache with capacity=5; keys and values are integers; tags - string
 
     unordered_set<string> tags1({"2","3","4","5"});
     cache.add(1,10, tags1);
