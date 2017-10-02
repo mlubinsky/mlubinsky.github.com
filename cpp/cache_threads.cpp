@@ -5,11 +5,11 @@
 #include <algorithm>
 #include <thread>
 #include <mutex>
-//#include <shared_mutex>
+
 using namespace std;
 
 
-template <typename Key, typename Val>
+template <typename Key, typename Val, typename Tag>
 class TCache {
   public:
 
@@ -22,53 +22,84 @@ class TCache {
       ~TCache() {  cout << "T Destructor"<< endl;  };
 
       /*---------------------------------------------------*/
-      std::pair<Val, bool> get(Key key) {
+      pair<Val, bool> get(Key key) {
         auto it = _entries.find(key);
         if (it != _entries.end()) {
-            return std::make_pair(it->second, true);
+            return make_pair(it->second, true);
         } else {
-            return std::make_pair(Val(), false);
+            return make_pair(Val(), false);
         }
       }
 
       /*---------------------------------------------------*/
-      bool add(Key key, Val val, unordered_set<int> tags) {
-          //Exclusive lock - single writer only
-          //std::unique_lock<std::shared_timed_mutex> lock(mutex_);
-           std::lock_guard<std::mutex> guard(mutex);
-           if  (_entries.size() == _capacity) //better policy - LRU cache
-             return false;
+      bool add(Key key, Val val, unordered_set<Tag> tags) {
+
+           lock_guard<recursive_mutex> guard(mutex);
+           if  (_entries.size() == _capacity)
+             return false;   // better policy would be LRU cache
+
            auto result = _entries.insert({key,val});
            if (result.second) {
                for (auto t : tags){
-                       auto it = _tags.find(t);
-                       if (it != _tags.end()) {  // tag exists
-                         //cout <<" Add tags - tag exists" << endl;
-                         _tags[t].insert(key);
+
+                       auto it = _tag2key.find(t);
+                       if (it != _tag2key.end()) {
+                         _tag2key[t].insert(key);
                        } else {  // new tag
-                          //cout <<" Add tags - new tag " << endl;
-                         _tags.insert({t,(unordered_set<int>){key}   });
+                         _tag2key.insert({t,(unordered_set<Key>){key}   });
                        }
+
+                       _key2tag[key].insert(tags.begin(), tags.end());
+
                }
            }
            return result.second;
       }
 
+    /*---------------------------------------------------*/
+     bool removeByKey(Key key) {
+        lock_guard<recursive_mutex> guard(mutex);
+
+        auto it = _key2tag.find(key);
+        if (it != _key2tag.end()) {
+
+             for (auto tag: it->second){
+                  _tag2key[tag].erase(key);
+             }
+        }
+
+        _key2tag.erase(key);
+        _entries.erase(key);
+
+        return true;
+     }
+
      /*---------------------------------------------------*/
-      bool removeByTag(int tag) {
-          std::lock_guard<std::mutex> guard(mutex);
+      bool removeByTag(Tag tag) {
+          lock_guard<recursive_mutex> guard(mutex);
           cout << "======removeByTag() tag=" << tag << endl;
-          auto it = _tags.find(tag);
-          if (it != _tags.end()) {
+          auto it = _tag2key.find(tag);
+          vector<Key> keys;
+
+          if (it != _tag2key.end()) {
+                //cout << " Found Keys with tag "  << endl;
 
                 for (auto key: it->second){
-                   cout << " Key to be deleted " << key;
-                   _entries.erase(key);
-                   _tags[tag].erase(key);
+                   //cout << " Key to be deleted " << key;
+                   //removeByKey(key);
+                   keys.push_back(key);
                 }
 
+          } else {
+               return false;
           }
-          cout << endl;
+
+          //cout << endl;
+
+          for (auto key : keys){
+             removeByKey(key);
+          }
+
           return true;
       }
 
@@ -81,11 +112,22 @@ class TCache {
            } else {
               cout << "No entry for Key="<< key << endl;
            }
+
+
+           auto it2 = _key2tag.find(key);
+           if (it2 != _key2tag.end()) {
+                for (auto tag: it2->second){
+                   cout << " " << tag;
+                }
+                cout  << endl;
+           }
+
       }
 
+      /*---------------------------------------------------*/
       void display_all() {
               cout << "======Display all  cache size="  << size() << endl;
-              for (std::pair<Key, Val> e: _entries){
+              for (pair<Key, Val> e: _entries){
                 display(e.first);
               }
       }
@@ -93,7 +135,7 @@ class TCache {
       /*---------------------------------------------------*/
       void display_tags() {
              cout << "======Display tags===" << endl;
-             for (auto t: _tags){
+             for (auto t: _tag2key){
                 cout <<"Tag=" << t.first << "  keys=" ;
                 for (auto key: t.second){
                    cout << " " << key;
@@ -109,21 +151,19 @@ class TCache {
       };
 
     /*---------------------------------------------------*/
-    bool removeByKey(Key);  // not implemented because no effective way to find and remove from _tags by value
 
    private:
       size_t _capacity;
       unordered_map<Key, Val> _entries;
-      unordered_map<int, unordered_set<int> > _tags;
-      std::mutex mutex;
-      //std::recursive_mutex mutex;
-      //mutable std::shared_timed_mutex mutex_;
+      unordered_map<Tag, unordered_set<Key> > _tag2key;
+      unordered_map<Key, unordered_set<Tag> > _key2tag;
+      recursive_mutex mutex;
 };
 
 // Next function to be called from thread
-void func1(TCache<int,int> &cache)
+void func1(TCache<int,int, int> &cache)
 {
-     std::cout << "Entering thread 1" << std::endl;
+     cout << "Entering thread 1" << endl;
 
      bool result;
      unordered_set<int> tags;
@@ -135,13 +175,17 @@ void func1(TCache<int,int> &cache)
         //cout << "Key=" << key << "  Insert result=" << result << endl;
      }
 
-     std::this_thread::sleep_for(std::chrono::seconds(1));
+     this_thread::sleep_for(chrono::seconds(1));
 
      for (int key=1; key < 9; ++key) {
-        std::pair<int,bool> v = cache.get(key);
+        pair<int,bool> v = cache.get(key);
+        if (v.second)
+             cout << " found ";
+        else
+             cout << " not found ";
      }
 
-     std::this_thread::sleep_for(std::chrono::seconds(1));
+     this_thread::sleep_for(chrono::seconds(1));
 
      for (int tag=1; tag < 9; ++tag) {
         cache.removeByTag(tag);
@@ -149,22 +193,28 @@ void func1(TCache<int,int> &cache)
 }
 
 // Next function to be called from thread
-void func2(TCache<int,int> &cache)
+void func2(TCache<int, int, int> &cache)
 {
-     std::cout << "Entering thread 2" << std::endl;
+     cout << "Entering thread 2" << endl;
      bool result;
 
      for (int tag=1; tag < 9; ++tag) {
         cache.removeByTag(tag);
      }
 
-     std::this_thread::sleep_for(std::chrono::seconds(1));
+     this_thread::sleep_for(chrono::seconds(1));
 
      for (int key=1; key < 9; ++key) {
-        std::pair<int,bool> v = cache.get(key);
+        pair<int,bool> v = cache.get(key);
+        if (v.second)
+             cout << " found ";
+        else
+             cout << " not found ";
+
+
      }
 
-     std::this_thread::sleep_for(std::chrono::seconds(1));
+     this_thread::sleep_for(chrono::seconds(1));
 
      unordered_set<int> tags;
      for (int key=1; key < 9; ++key) {
@@ -179,19 +229,19 @@ void func2(TCache<int,int> &cache)
 
 void test_single_thread () {
 
-    TCache<int,int> cache(5);   //create cache with capacity=5
+    TCache<int,int, int> cache(5);   //create cache with capacity=5
 
-    std::unordered_set<int> tags1({2,3,4,5});
+    unordered_set<int> tags1({2,3,4,5});
     cache.add(1,10, tags1);
 
-    std::unordered_set<int> tags2({4,5,6,7});
+    unordered_set<int> tags2({4,5,6,7});
     cache.add(2,20, tags2);
 
     cache.display_all();
     cache.display_tags();
 
     cache.removeByTag(7);
-    std::pair<int,bool> v = cache.get(1);
+    pair<int,bool> v = cache.get(1);
     if (v.second)
        cout << "Found entry for key = 1 value=" << v.first << endl;
      else
@@ -206,9 +256,9 @@ int main ( int argc,  char** argv) {
     test_single_thread();
 
     // test several threads
-    TCache<int,int> cache(5);
-    std::thread firstThread(func1, ref(cache));
-    std::thread secondThread(func1, ref(cache));
+    TCache<int,int,int> cache(5);
+    thread firstThread(func1, ref(cache));
+    thread secondThread(func1, ref(cache));
     firstThread.join();
     secondThread.join();
     return 0;
