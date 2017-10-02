@@ -56,6 +56,16 @@ http://thispointer.com/using-unordered_set-with-custom-hasher-and-comparision-fu
 
 http://thispointer.com/map-vs-unordered_map-when-to-choose-one-over-another/
 
+https://github.com/kshk123/hashMap/blob/master/inc/
+
+https://stackoverflow.com/questions/12033188/how-would-you-implement-your-own-reader-writer-lock-in-c11?rq=1
+
+https://stackoverflow.com/questions/19915152/c11-multiple-read-and-one-write-thread-mutex
+
+
+https://stackoverflow.com/questions/43309333/stdshared-mutex-with-stdshared-lock-is-reader-or-writer-preferring
+
+
 Here is the usual way of doing insert/overwrite in map:
 
 auto rv = map.insert(std::make_pair(key, value));
