@@ -33,7 +33,7 @@ class TCache {
       ~TCache() { };
 
       /*---------------------------------------------------*/
-      pair<Val, bool> get(Key key) {
+      pair<Val, bool> get(const Key& key) {
         lock_guard<recursive_mutex> guard(_mutex);
 
         auto it = _entries.find(key);
@@ -45,7 +45,7 @@ class TCache {
       }
 
       /*---------------------------------------------------*/
-      bool add(Key key, Val val, unordered_set<Tag>& tags) {
+      bool add(const Key& key, const Val& val, const unordered_set<Tag>& tags) {
            lock_guard<recursive_mutex> guard(_mutex);
 
            if  (_entries.size() == _capacity)
@@ -70,7 +70,7 @@ class TCache {
       }
 
     /*---------------------------------------------------*/
-     bool removeByKey(Key key) {
+     bool removeByKey(const Key& key) {
         lock_guard<recursive_mutex> guard(_mutex);
 
         auto it = _key2tag.find(key);
@@ -91,7 +91,7 @@ class TCache {
      }
 
      /*---------------------------------------------------*/
-      bool removeByTag(Tag tag) {
+      bool removeByTag(const Tag& tag) {
           lock_guard<recursive_mutex> guard(_mutex);
 
           auto it = _tag2key.find(tag);
@@ -112,7 +112,7 @@ class TCache {
       }
 
       /*---------------------------------------------------*/
-      void display(Key key) {
+      void display(const Key& key) {
           lock_guard<recursive_mutex> guard(_mutex);
 
           cout << " Display one entry:  key=" << key ;

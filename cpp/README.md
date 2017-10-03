@@ -1,5 +1,7 @@
 https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md
 
+http://www.modernescpp.com/   2 books here
+
 clang++ -Wall -std=c++11 boolean_matrix.cpp -o test
 
 g++ -std=c++11 boolean_matrix.cpp
@@ -29,6 +31,7 @@ https://codeofconnor.wordpress.com/2017/09/12/pass-by-reference-vs-pass-by-value
 
 http://thispointer.com/stl-tutorials-and-interview-questions/
 
+http://www.techiedelight.com/data-structures-and-algorithms-interview-questions-stl/
 
 ### STL container: How to avoid the temporary object creation
 
