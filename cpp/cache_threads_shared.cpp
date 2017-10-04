@@ -13,7 +13,7 @@
  removeByKey() -  O(1)
  removeByTag() -   proportional to number of elements  with given tag
 
- Requires C++17 compiler because of using std::shared_mutex, for example http://webcompiler.cloudapp.net/
+ Requires C++17 compiler because of using std::shared_mutex
 */
 
 #include <iostream>
@@ -45,7 +45,7 @@ class TCache {
       ~TCache() { };
 
       /*---------------------------------------------------*/
-      pair<Val, bool> get(Key key) {
+      pair<Val, bool> get(const Key& key) {
         READLOCK
 
         auto it = _entries.find(key);
@@ -57,7 +57,7 @@ class TCache {
       }
 
       /*---------------------------------------------------*/
-      bool add(Key key, Val val, unordered_set<Tag>& tags) {
+      bool add(const Key& key, const Val& val, const unordered_set<Tag>& tags) {
            WRITELOCK
 
            if  (_entries.size() == _capacity)
@@ -73,7 +73,6 @@ class TCache {
                        } else {  // new tag
                          unordered_set<Key> s {key};
                          _tag2key.insert({t,  s });
-                        // _tag2key.insert({t,  (unordered_set<Key>){key} });
                        }
 
                        _key2tag[key].insert(tags.begin(), tags.end());
@@ -84,7 +83,7 @@ class TCache {
       }
 
     /*---------------------------------------------------*/
-     bool removeByKey(Key key) {
+     bool removeByKey(const Key& key) {
         WRITELOCK
 
         auto it = _key2tag.find(key);
@@ -105,7 +104,7 @@ class TCache {
      }
 
      /*---------------------------------------------------*/
-      bool removeByTag(Tag tag) {
+      bool removeByTag(const Tag& tag) {
           WRITELOCK
 
           auto it = _tag2key.find(tag);
@@ -126,7 +125,7 @@ class TCache {
       }
 
       /*---------------------------------------------------*/
-      void display(Key key) {
+      void display(const Key& key) {
           READLOCK
 
           cout << " Display one entry:  key=" << key ;
@@ -238,7 +237,7 @@ void func2(TCache<int, int, int> &cache)
      }
 
      this_thread::sleep_for(chrono::seconds(1));
-
+      //let have max key=9 to see how API handles the non-existing keys (I declared cache size=5)
      for (int key=1; key < 9; ++key) {
         pair<int,bool> v = cache.get(key);
         /* Commendet in order do not print from the theead, I keep code here to show how to handle the get()
