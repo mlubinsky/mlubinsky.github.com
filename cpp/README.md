@@ -2,10 +2,13 @@ https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md
 
 http://www.modernescpp.com/   2 books here
 
+https://habrahabr.ru/post/182920/
+
 clang++ -Wall -std=c++11 boolean_matrix.cpp -o test
 
 g++ -std=c++11 boolean_matrix.cpp
 
+https://github.com/CppCon/CppCon2017
 
 ### Constructor
 
@@ -32,6 +35,7 @@ https://codeofconnor.wordpress.com/2017/09/12/pass-by-reference-vs-pass-by-value
 http://thispointer.com/stl-tutorials-and-interview-questions/
 
 http://www.techiedelight.com/data-structures-and-algorithms-interview-questions-stl/
+
 
 ### STL container: How to avoid the temporary object creation
 
@@ -81,6 +85,10 @@ std::unordered_map uses hashing, so the lookup is O(1) for the default-construct
 5. Compare and swap
 
 http://thispointer.com/c11-multithreading-tutorial-series/
+
+http://thispointer.com/c11-multithreading-part-7-condition-variables-explained/
+
+https://habrahabr.ru/post/182626/
 
 https://baptiste-wicht.com/categories/c%2B%2B11-concurrency-tutorial.html
 

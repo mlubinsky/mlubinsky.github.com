@@ -4,9 +4,19 @@
 
 <h2>Performance</h2>
 <pre>
+https://medium.com/netflix-techblog/linux-performance-analysis-in-60-000-milliseconds-accc10403c55
+https://www.tecmint.com/12-top-command-examples-in-linux/
+
 список запущенных процессов и отсортировать их по использованию памяти :
 
-$ ps -eo pmem,pcpu,rss,vsize,args | sort -k 1 -r | less
+ ps -eo pmem,pcpu,rss,vsize,args | sort -k 1 -r | less
+ pstree
+
+
+To list all the files opened by particular PID
+ lsof –p PID
+
+ldd stands for list dynamic dependencies to show shared libraries needed by the library.
 
 https://habrahabr.ru/post/305188/  Linux perf
 CPU load:
