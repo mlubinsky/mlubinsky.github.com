@@ -90,14 +90,18 @@ http://thispointer.com/c11-multithreading-part-7-condition-variables-explained/
 
 https://habrahabr.ru/post/182626/
 
+https://habrahabr.ru/post/328348/
+
 https://baptiste-wicht.com/categories/c%2B%2B11-concurrency-tutorial.html
 
+https://stackoverflow.com/questions/27860685/how-to-make-a-multiple-read-single-write-lock-from-more-basic-synchronization-pr
 
 https://github.com/kshk123/hashMap/blob/master/inc/
 
 https://stackoverflow.com/questions/12033188/how-would-you-implement-your-own-reader-writer-lock-in-c11?rq=1
 
 https://stackoverflow.com/questions/19915152/c11-multiple-read-and-one-write-thread-mutex
+
 
 https://stackoverflow.com/questions/43309333/stdshared-mutex-with-stdshared-lock-is-reader-or-writer-preferring
 
