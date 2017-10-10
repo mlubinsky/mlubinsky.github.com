@@ -4,19 +4,43 @@
 
 <h2>Performance</h2>
 <pre>
-
-<h2>Metodology</h2>
-https://github.com/mspnp/performance-optimization/blob/master/Assessing-System-Performance-Against-KPI.md
-https://habrahabr.ru/company/microsoft/blog/271547/
-https://habrahabr.ru/company/badoo/blog/338226/
-https://habrahabr.ru/post/171475/ How to test performance
-https://habrahabr.ru/post/171475/
-https://habrahabr.ru/company/airbnb/blog/239829/
-https://habrahabr.ru/post/106493/
 https://medium.com/netflix-techblog/linux-performance-analysis-in-60-000-milliseconds-accc10403c55
+https://speakerdeck.com/kaushik/tracing-and-profiling-java-and-native-applications-in-production
+https://habrahabr.ru/post/171475/ How to test performance
+https://habrahabr.ru/company/airbnb/blog/239829/
 
-https://habrahabr.ru/company/simbirsoft/blog/271485/ sysbench
-<h2>Command line </h2>
+http://www.brendangregg.com/usemethod.html
+http://www.brendangregg.com/blog/2016-10-21/linux-efficient-profiler.html
+http://www.brendangregg.com/flamegraphs.html
+https://medium.com/netflix-techblog/java-in-flames-e763b3d32166
+http://psy-lob-saw.blogspot.co.za/2017/02/flamegraphs-intro-fire-for-everyone.html
+ new option in the JVM: -XX:+PreserveFramePointer, a
+
+Linux: perf, eBPF, SystemTap, and ktap
+Solaris, illumos, FreeBSD: DTrace
+Mac OS X: DTrace and Instruments
+
+http://queue.acm.org/detail.cfm?id=2513149   NUMA
+
+uptime
+dmesg | tail     last 10 system messages, if there are any.
+vmstat 1
+mpstat -P ALL 1
+pidstat 1
+iostat -xz 1
+free -m
+sar -n DEV 1
+sar -n TCP,ETCP 1
+top
+http://cb.vu/unixtoolbox.xhtml
+
+CPUs: sockets, cores, hardware threads (virtual CPUs)
+Memory: capacity
+Network interfaces
+Storage devices: I/O, capacity
+Controllers: storage, network cards
+Interconnects: CPUs, memory, I/O
+
 
 https://www.tecmint.com/12-top-command-examples-in-linux/
 
@@ -32,48 +56,28 @@ To list all the files opened by particular PID
 ldd stands for list dynamic dependencies to show shared libraries needed by the library.
 
 https://habrahabr.ru/post/305188/  Linux perf
-
-<h2>CPU load </h2>
+CPU load:
 https://habrahabr.ru/company/infopulse/blog/329206/
 https://habrahabr.ru/post/309796/
 Memory: https://habrahabr.ru/post/312078/
 https://habrahabr.ru/company/yandex/blog/250753/
 
-https://habrahabr.ru/company/intel/blog/168473/  throuput
+
+
+
+
+<h2>GDB</h2>
+http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html
+
 
 <h2>C++</h2>
 https://habrahabr.ru/post/276607/
 https://habrahabr.ru/company/xakep/blog/258961/
 https://habrahabr.ru/company/intel/blog/279669/
 https://habrahabr.ru/company/intel/blog/277407/
-https://habrahabr.ru/post/210226/  Cppcheck
-https://habrahabr.ru/post/318142/ Profiler
-https://habrahabr.ru/post/270009/ memory allocation in details
-https://habrahabr.ru/post/276607/
-
-<h2>Disk I/O </h2>
-
-https://habrahabr.ru/post/154235/
-https://habrahabr.ru/post/168711/
-
 <h2>Networking</h2>
 https://habrahabr.ru/company/odnoklassniki/blog/266005/
-
-<h2>Load testing tools</h2>
-
-https://habrahabr.ru/company/jugru/blog/337928/
-https://habrahabr.ru/company/dataart/blog/273967/   JMeter
-https://habrahabr.ru/post/314408/  JMeter
-
-https://habrahabr.ru/post/314220/ console Benchmark tool (go)
-
 <h2>Java Performance</h2>
-https://habrahabr.ru/company/jugru/blog/320620/
-https://habrahabr.ru/post/329120/
-
-https://habrahabr.ru/company/getintent/blog/302910/  Tuning Java  Garbage Collector
-
-
 https://habrahabr.ru/post/270059/
 https://habrahabr.ru/company/jugru/blog/280420/
 https://habrahabr.ru/company/getintent/blog/302910/ Garbage collector
@@ -82,7 +86,7 @@ https://habrahabr.ru/company/wunderfund/blog/325634/ Google Benchmark Library
 https://habrahabr.ru/post/323010/  REST API for high performance
 
 https://habrahabr.ru/company/jugru/blog/320620/
-https://habrahabr.ru/company/jugru/blog/338928/  Гольдштейн
+https://habrahabr.ru/company/jugru/blog/338928/
 https://habrahabr.ru/company/jugru/blog/338732/
 https://habrahabr.ru/company/netologyru/blog/337842/
 https://habrahabr.ru/post/336104/

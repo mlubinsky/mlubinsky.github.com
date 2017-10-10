@@ -102,11 +102,18 @@ https://stackoverflow.com/questions/12033188/how-would-you-implement-your-own-re
 
 https://stackoverflow.com/questions/19915152/c11-multiple-read-and-one-write-thread-mutex
 
-
 https://stackoverflow.com/questions/43309333/stdshared-mutex-with-stdshared-lock-is-reader-or-writer-preferring
 
 https://www.codeproject.com/Articles/1183423/We-make-a-std-shared-mutex-times-faster
 
+
+### Serialization
+
+https://www.gamedev.net/articles/programming/general-and-gameplay-programming/pupping-a-method-for-serializing-data-r4485/
+
+https://eliasdaler.github.io/meta-stuff/
+
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.219.7269&rep=rep1&type=pdf   B-Tree
 
 ### Keywords: noexept delete final default override ...
 
