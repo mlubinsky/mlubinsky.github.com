@@ -36,6 +36,7 @@ http://thispointer.com/stl-tutorials-and-interview-questions/
 
 http://www.techiedelight.com/data-structures-and-algorithms-interview-questions-stl/
 
+https://qualapps.blogspot.com/2010/07/safely-using-erase-in-stl.html
 
 ### STL container: How to avoid the temporary object creation
 
@@ -76,6 +77,7 @@ if (!rv.second)
 std::unordered_map uses hashing, so the lookup is O(1) for the default-constructed map (ie when there is a single item in every bucket). Once collisions are allowed (ie when you have k items in each bucket), each lookup would be take O(k) steps.
 
 
+
 ### Threads
 
 1. Semaphores
@@ -91,6 +93,8 @@ http://thispointer.com/c11-multithreading-part-7-condition-variables-explained/
 https://habrahabr.ru/post/182626/
 
 https://habrahabr.ru/post/328348/
+
+http://www.bogotobogo.com/cplusplus/multithreaded4_cplusplus11B.php
 
 https://baptiste-wicht.com/categories/c%2B%2B11-concurrency-tutorial.html
 
@@ -113,7 +117,16 @@ https://www.gamedev.net/articles/programming/general-and-gameplay-programming/pu
 
 https://eliasdaler.github.io/meta-stuff/
 
+http://www.idryman.org/blog/2017/06/28/opic-a-memory-allocator-for-fast-serialization/
+
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.219.7269&rep=rep1&type=pdf   B-Tree
+
+
+### Hash
+http://www.idryman.org/blog/2017/05/03/writing-a-damn-fast-hash-table-with-tiny-memory-footprints/
+
+### Debug printing
+http://jovislab.com/blog/?p=33
 
 ### Keywords: noexept delete final default override ...
 

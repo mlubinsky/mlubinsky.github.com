@@ -38,6 +38,12 @@ Show list of files that match: grep -rl match *
 Number of lines to show before and after match: grep -B 2 -A 2 match file.txt
 
 <h2>bash</h2>
+mkdir blabla
+cd !$
+
+sudo !!
+
+
 http://caiustheory.com/bash-script-setup/
 alias alog="tail -f /var/log/apache2/error.log"
 alias please='sudo $(fc -ln -1)'
@@ -111,6 +117,7 @@ cat log.log | awk '{ print $1 }'
 https://learnxinyminutes.com/docs/make/
 
 <h2> SSH </h2>
+https://solitum.net/an-illustrated-guide-to-ssh-tunnels/
 ssh-keygen -t dsa
 default folder /home/user/data/.ssh/id_dsa
 ~/.ssh/id_dsa  ~/.ssh/id_dsa.pub
