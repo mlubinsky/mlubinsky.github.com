@@ -4,9 +4,10 @@
 
 <h2>Performance</h2>
 <pre>
+https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/pdf/Performance_Tuning_Guide/Red_Hat_Enterprise_Linux-7-Performance_Tuning_Guide-en-US.pdf
 http://natsys-lab.blogspot.com/2016/09/how-to-analyze-performance-of-your.html
 https://www.slideshare.net/profyclub_ru/natsys-lab-tempesta-technologies
-
+https://habrahabr.ru/company/oleg-bunin/blog/316898/
 https://github.com/mspnp/performance-optimization/blob/master/Assessing-System-Performance-Against-KPI.md
 System performance is primarily concerned with the following factors:
 
@@ -21,7 +22,7 @@ A CPU operates in two modes; user mode and privileged mode.
 In user mode, the CPU is executing instructions that constitute the business logic of an application.
 In privileged mode, the CPU is performing operating system kernel-level functions such as handling network or file I/O, allocating memory, paging, scheduling and managing threads, and context switching between processes.
 
-https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/pdf/Performance_Tuning_Guide/Red_Hat_Enterprise_Linux-7-Performance_Tuning_Guide-en-US.pdf
+
 
 https://medium.com/netflix-techblog/linux-performance-analysis-in-60-000-milliseconds-accc10403c55
 https://speakerdeck.com/kaushik/tracing-and-profiling-java-and-native-applications-in-production
@@ -86,13 +87,26 @@ https://habrahabr.ru/post/309796/
 Memory: https://habrahabr.ru/post/312078/
 https://habrahabr.ru/company/yandex/blog/250753/
 
+https://yakking.branchable.com/posts/daemons/
+
 <h2>Disk I/O</h2>
 
 http://www.scylladb.com/2017/10/05/io-access-methods-scylla/
 
+
+<h2>Anomaly detection</h2>
+https://en.wikipedia.org/wiki/Anomaly_detection
+https://blog.statsbot.co/time-series-anomaly-detection-algorithms-1cef5519aef2
+https://www.datascience.com/blog/python-anomaly-detection
+
+An anomaly detection algorithm should either label each time point with anomaly/not anomaly, or forecast a signal for some point and test if this point value varies from the forecasted enough to deem it as an anomaly.
+
 <h2>GDB</h2>
 http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html
 
+<h2>Python</h2>
+
+https://yakking.branchable.com/posts/fast-python/
 
 <h2>C++</h2>
 gcc  optimization flags -O1	With -O2	With -O3
@@ -104,6 +118,8 @@ https://habrahabr.ru/company/intel/blog/279669/
 https://habrahabr.ru/company/intel/blog/277407/
 
 <h2>Networking</h2>
+https://yakking.branchable.com/posts/basic-networking/
+https://yakking.branchable.com/tags/network/
 https://eli.thegreenplace.net/2017/concurrent-servers-part-1-introduction/
 
 TCP/IP is a two-part system, functioning as the Internet’s fundamental “control system”. IP stands for Internet Protocol; its job is to send and route packets to other computers using the IP headers (i.e. the IP addresses) on each packet. The second part, Transmission Control Protocol (TCP), is responsible for breaking the message or file into smaller packets, routing packets to the correct application on the destination computer using the TCP headers, resending the packets if they get lost on the way, and reassembling the packets in the correct order once they’ve reached the other end.
@@ -116,6 +132,7 @@ https://medium.com/@shijuvar/building-high-performance-apis-in-go-using-grpc-and
 Unlike JSON and XML, Protocol Buffers are not just message interchange format, it’s also used for describing the service interfaces (service endpoints). Thus Protocol Buffers are used for both the service interface and the structure of the payload messages. In gRPC, you define services and its methods along with payload messages. Like a typical communication between a client application and a RPC system, a gRPC client application can directly call methods on a remote server as if it was a local object in your client application.
 
 <h2>Web</h2>
+https://habrahabr.ru/company/oleg-bunin/blog/340114/
 https://www.igvita.com/2013/01/15/faster-websites-crash-course-on-web-performance/
 https://medium.freecodecamp.org/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c
 
