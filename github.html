@@ -9,6 +9,10 @@ git config -l
 git branch -a
 git branch -r
 
+
+Посмотреть, что я добавил в stage:
+git diff --cached
+
 Git UI:
 git gui
 gittk
@@ -21,6 +25,11 @@ git tag -a thetagname
 git tag -l
 Revert to previous commit:
 git-reset --hard HEAD^
+
+
+alias glod='git log --oneline --decorate'
+
+git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 
 git rebase: merges another branch into the branch where you are currently working,
 and move all of the local commits that are ahead of the rebased branch to the top of the history on that branch.
@@ -87,6 +96,7 @@ git pull, in contrast, is used with a different goal in mind: to update your cur
 
 <h2>GitHub</h2>
   <a href=https://help.github.com/articles/set-up-git/>GitHub documentation</a>
+  https://hackernoon.com/12-cool-things-you-can-do-with-github-f3e0424cf2f0
   <a href=https://git-for-windows.github.io/>Git Bash For Windows</a>
 
 - Create account on GitHub

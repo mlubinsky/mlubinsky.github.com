@@ -4,6 +4,12 @@
 
 <h2>Performance</h2>
 <pre>
+https://habrahabr.ru/company/mailru/blog/254843/ Проектирование высоконагруженных систем
+
+<h3>Concurrency</h3>
+https://github.com/heathermiller/dist-prog-book/blob/master/chapter/2/futures.md
+http://nikgrozev.com/2015/07/14/overview-of-modern-concurrency-and-parallelism-concepts/
+
 https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/pdf/Performance_Tuning_Guide/Red_Hat_Enterprise_Linux-7-Performance_Tuning_Guide-en-US.pdf
 http://natsys-lab.blogspot.com/2016/09/how-to-analyze-performance-of-your.html
 https://www.slideshare.net/profyclub_ru/natsys-lab-tempesta-technologies
@@ -68,8 +74,10 @@ https://www.tecmint.com/12-top-command-examples-in-linux/
 
 список запущенных процессов и отсортировать их по использованию памяти :
 
- ps -eo pmem,pcpu,rss,vsize,args | sort -k 1 -r | less
- pstree
+https://habrahabr.ru/post/140010/ atop
+
+ps -eo pmem,pcpu,rss,vsize,args | sort -k 1 -r | less
+pstree
 
 strace  - system and network calls
 The ltrace utility does for library calls what strace does for system calls
@@ -90,7 +98,8 @@ https://habrahabr.ru/company/yandex/blog/250753/
 https://yakking.branchable.com/posts/daemons/
 
 <h2>Disk I/O</h2>
-
+https://medium.com/@ifesdjeen/on-disk-io-part-1-flavours-of-io-8e1ace1de017
+https://medium.com/@ifesdjeen/on-disk-io-part-2-more-flavours-of-io-c945db3edb13?source=user_profile---------3----------------
 http://www.scylladb.com/2017/10/05/io-access-methods-scylla/
 
 
@@ -98,24 +107,35 @@ http://www.scylladb.com/2017/10/05/io-access-methods-scylla/
 https://en.wikipedia.org/wiki/Anomaly_detection
 https://blog.statsbot.co/time-series-anomaly-detection-algorithms-1cef5519aef2
 https://www.datascience.com/blog/python-anomaly-detection
+http://www.vldb.org/pvldb/vol10/p1358-rong.pdf
 
 An anomaly detection algorithm should either label each time point with anomaly/not anomaly, or forecast a signal for some point and test if this point value varies from the forecasted enough to deem it as an anomaly.
 
 <h2>GDB</h2>
 http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html
-
+http://rr-project.org/
 <h2>Python</h2>
 
 https://yakking.branchable.com/posts/fast-python/
 
 <h2>C++</h2>
 gcc  optimization flags -O1	With -O2	With -O3
+https://news.ycombinator.com/item?id=15400396
+https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis
+cppcheck
+http://oclint.org/
+https://www.reddit.com/r/cpp/comments/728xfs/orbit_cc_performance_profiler/
+https://github.com/namhyung/uftrace
+https://www.kdab.com/hotspot-v1-1-0-adds-timeline-recording-features/
+
 http://cs.yale.edu/homes/aspnes/classes/223/notes.html#performanceTuning
 http://agner.org/optimize/optimizing_cpp.pdf?10142017
 https://habrahabr.ru/post/276607/
 https://habrahabr.ru/company/xakep/blog/258961/
 https://habrahabr.ru/company/intel/blog/279669/
 https://habrahabr.ru/company/intel/blog/277407/
+
+http://apolukhin.github.io/Boost-Cookbook/
 
 <h2>Networking</h2>
 https://yakking.branchable.com/posts/basic-networking/
@@ -195,11 +215,13 @@ Example: for  KPI, you decide you will measure the time it takes until a user ca
 
 https://www.cubrid.org/blog/the-principles-of-java-application-performance-tuning
 http://www.javaperformancetuning.com/
-
+https://habrahabr.ru/company/jugru/blog/338732/
+http://javapapers.com/java/java-string-vs-stringbuilder-vs-stringbuffer-concatenation-performance-micro-benchmark/
 Do not  String concat with + is highly discouraged
 instead use Stringbuilder or StringBuffer
 
-
+https://habrahabr.ru/company/jugru/blog/338928/
+https://habrahabr.ru/company/jugru/blog/320620/
 http://www.idryman.org/blog/2013/09/28/java-fast-io-using-java-nio-api/
 
 https://en.wikipedia.org/wiki/Java_Virtual_Machine_Tools_Interface  - Java Virtual Machine Tool Interface (JVM TI)
@@ -207,10 +229,19 @@ https://en.wikipedia.org/wiki/Java_Virtual_Machine_Tools_Interface  - Java Virtu
 а debug-сборка включает более 1200 таких опций (чтобы получить полный список, вы можете использовать ключ -XX:+PrintFlagsFinal).
 
 https://habrahabr.ru/company/getintent/blog/302910/
-сборщики мусора:
-CMS (Concurrent Mark Sweep)
-G1 (Garbage First)
 
+
+сборщики мусора:
+Java Heap space is divided in to two regions Young and Old. The Young generation is meant to hold short-lived objects while the Old generation is intended for objects with longer lifetimes.
+
+The Young generation is further divided into three regions [Eden, Survivor1, Survivor2].
+
+A simplified description of the garbage collection procedure: When Eden is full, a minor GC is run on Eden and objects that are alive from Eden and Survivor1 are copied to Survivor2. The Survivor regions are swapped. If an object is old enough or Survivor2 is full, it is moved to Old. Finally when Old is close to full, a full GC is invoked.
+
+1. Serial Garbage Collector  -XX:+UseSerialGC
+2. Parallel Garbage Collector
+3. CMS Garbage Collector (Concurrent Mark Sweep)  XX:+USeParNewGC
+4. G1 Garbage Collector –XX:+UseG1GC   -XX:+UseStringDeduplication
 
 CMS позволяет значительно сокращать задержки, связанные со сборкой мусора. Однако при его использовании приходится неизбежно сталкиваться с двумя основными проблемами, которые и создают необходимость в дополнительной настройке:
 - Фрагментация памяти
@@ -232,6 +263,7 @@ G1
  JConsole,
  JITwatch
  Flight Recorder
+ http://javapapers.com/java/java-garbage-collection-monitoring-and-analysis/
 
 https://habrahabr.ru/post/270059/
 https://habrahabr.ru/company/jugru/blog/280420/
@@ -245,12 +277,16 @@ https://habrahabr.ru/company/jugru/blog/338928/
 https://habrahabr.ru/company/jugru/blog/338732/
 https://habrahabr.ru/company/netologyru/blog/337842/
 https://habrahabr.ru/post/336104/
+https://habrahabr.ru/post/185010/
 https://habrahabr.ru/company/jugru/blog/335852/
 https://habrahabr.ru/company/oleg-bunin/blog/335260/
 https://habrahabr.ru/company/mailru/blog/109916/s
 https://habrahabr.ru/company/jugru/blog/280420/
 https://habrahabr.ru/post/326242/
 https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/
+
+
+https://www.excelsiorjet.com/blog/articles/portable-profilers-and-where-to-find-them/
 
 <h2>Hadoop</h2>
 http://www.idryman.org/blog/2014/03/05/hadoop-performance-tuning-best-practices/

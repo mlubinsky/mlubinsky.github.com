@@ -1,4 +1,8 @@
 http://cslibrary.stanford.edu/
+https://medium.com/engineering-brainly/locality-sensitive-hashing-explained-304eb39291e4  Local sensitive hash
+https://sagi.io/2017/07/bloom-filters-for-the-perplexed/
+https://news.ycombinator.com/item?id=15346337
+
 
 http://yucoding.blogspot.com/2017/01/leetcode-question-range-sum-query.html
 http://massivealgorithms.blogspot.com/
