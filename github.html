@@ -5,6 +5,7 @@
 <body>
 <pre>
 <h2> Git notes</h2>
+http://www.integralist.co.uk/posts/git-tips/
 git config -l
 git branch -a
 git branch -r
@@ -20,7 +21,6 @@ tig
 
 Magit fugitive
 
-
 git tag -a thetagname
 git tag -l
 Revert to previous commit:
@@ -30,6 +30,10 @@ git-reset --hard HEAD^
 alias glod='git log --oneline --decorate'
 
 git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+
+
+<h2>Merge staregies</h2>
+http://www.integralist.co.uk/posts/git-merge-strategies/
 
 git rebase: merges another branch into the branch where you are currently working,
 and move all of the local commits that are ahead of the rebased branch to the top of the history on that branch.
@@ -46,7 +50,7 @@ To merge some_branch into master:
 Another option:
 git checkout master && git pull && git branch -b <newbranch> && git merge <СтараяВеткаГдеМногоКомитов> --squash
 
-
+<b>Origin HEAD remote ...</b>
 
 git push origin branchname
 origin  is an alias on your system for a particular remote repository.
@@ -84,6 +88,7 @@ git pull, in contrast, is used with a different goal in mind: to update your cur
 https://learngitbranching.js.org/
 <a href=https://sentheon.com/blog/git-cheat-sheet.html>Cheat Sheet 1</a>
 <a href=hhttps://pointheap.com/git-cheat-sheet/>Cheat Sheet 2</a>
+https://habrahabr.ru/company/mailru/blog/340558/  Rebase
 <a href=https://stackoverflow.com/questions/18930527/difference-between-git-pull-and-git-pull-rebase>Pull vs pull -rebase</a>
 <a href=https://stackoverflow.com/questions/16666089/whats-the-difference-between-git-merge-and-git-rebase/16666418#16666418>Merge vs Rebase</a>
 <a href=https://www.derekgourlay.com/blog/git-when-to-merge-vs-when-to-rebase/>when-to-merge-vs-when-to-rebase</a>
