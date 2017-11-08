@@ -5,6 +5,8 @@
 
 <pre>
 
+https://thomaswdinsmore.com/2017/02/01/year-in-sql-engines/
+
 <h2>SQL</h2>
 Differennce between ON and WHERE clause:
 CREATE TABLE A( i int, val int,  data varchar(16) );
@@ -63,16 +65,82 @@ https://www.citusdata.com/blog/2017/08/09/principles-of-sharding-for-relational-
 http://www.olapcube.com/mdxhelp/
 http://knexjs.org/
 
-
+<h2>MySQL</h2>
+https://news.ycombinator.com/item?id=15613856
 MySQL variables:
 set @n:=-1;
 select (select @n:= @n+1) n
 from MyTable limit 60
 
 
-https://thomaswdinsmore.com/2017/02/01/year-in-sql-engines/
+
+<h2>Window functions</h2>
+https://oracle-base.com/articles/misc/analytic-functions
+https://hashrocket.com/blog/posts/sql-window-functions
+https://blog.jooq.org/2014/04/29/nosql-no-sql-how-to-calculate-running-totals/
+https://blog.jooq.org/2013/11/03/probably-the-coolest-sql-feature-window-functions/
+
+SELECT
+  employee_name,
+  employee_id,
+  salary,
+  rank() OVER(PARTITION BY dept ORDER BY salary DESC),
+  100.0*salary/sum(salary) OVER (PARTITION BY dept)
+FROM employee;
+
+
+
+<h2>Cassandra</h2>
+
+http://abiasforaction.net/cassandra-query-language-cql-tutorial/
+
+https://www.instaclustr.com/apache-cassandra-scalability-allow-filtering-partition-keys/
+
+https://www.instaclustr.com/resource/cassandra-nosql-data-model-design/
+https://www.instaclustr.com/cassandra-nosql-data-model-design-2/
+https://www.instaclustr.com/apache-cassandra-3-x-and-materialized-views/
+
+https://tekslate.com/cassandra-interview-questions-and-answers
+
+https://opencredo.com/how-not-to-use-cassandra-like-an-rdbms-and-what-will-happen-if-you-do/
+https://opencredo.com/cassandra-data-modelling-patterns/
+https://opencredo.com/training/cassandra-fundamentals-data-modelling/
+
+https://vitobotta.com/2017/04/02/getting-started-apache-cassandra/
+
+http://cassandra.alteroot.org/
+http://thelastpickle.com/blog/2017/08/02/time-series-data-modeling-massive-scale.html
+http://lucasmanual.com/blog/quick-intro-to-cassandra-vs-mongodb-with-python/
+http://blogs.shephertz.com/2015/04/22/why-cassandra-excellent-choice-for-realtime-analytics-workload/
+https://opencredo.com/spark-testing/
+
+https://www.youtube.com/watch?v=Mvsy2DZhKSw
+https://www.youtube.com/watch?v=HuDJBTPdaOA
+https://www.reddit.com/r/cassandra/comments/6l01iu/wide_row_append_only_timeseries_data_no_ttl_what/
+TimeWindowCompaction
+SizeTieredCompaction
+LeveledCompaction
+
+
+
+
+https://www.instaclustr.com/resource/apache-spark-apache-cassandra-powering-intelligent-applications/
+https://www.instaclustr.com/resource/6-step-guide-to-apache-cassandra-data-modelling-white-paper/
+log-structured merge trees (LSMT)
+LSM trees  just dumping stuff at the end of an array. However this means you have to scan that array to do lookups (as opposed to something easier like binary search). Then as your array gets big, you merge and flush it down to a lower "layer" of the lsm tree which is slightly bigger and sorted. And when that one fills, you flush further. And these merge-flushes are nice big sequential writes so that's nice too.
 http://neovintage.org/2016/04/07/data-modeling-in-cassandra-from-a-postgres-perspective/
-https://habrahabr.ru/post/340460/  Postgres
+
+
+<h2>TimeSeries</h2>
+https://blog.outlyer.com/top10-open-source-time-series-databases
+https://news.ycombinator.com/item?id=15649405
+
+<h2>Postgres</h2>
+http://www.craigkerstiens.com/categories/postgresql/
+https://habrahabr.ru/post/340460/
+https://10clouds.com/blog/postgresql-10/
+https://news.ycombinator.com/item?id=15634953
+http://vvvvalvalval.github.io/posts/using-postgresql-temporary-views-for-expressing-business-logic.html
 
 <h2>Analytics</h2>
 https://www.analyticsvidhya.com/blog/2014/09/commonly-asked-puzzles-analytics-interviews/
