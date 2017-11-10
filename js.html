@@ -5,6 +5,71 @@
 <h2>JavaScript</h2>
 <pre>
 
+let arr = [2, 56, 3, 41, 0, 4, 100, 23];
+let sum = arr.reduce((previous, current) => current += previous);
+let sum2 = arr.reduce(function(accumulator, currentValue) { return accumulator + currentValue;});
+let sum3 = values.reduce(function(sum, value){ return sum + value;}, 0);
+let avg = sum / arr.length;
+
+
+var min = arr.reduce(function(a, b, i, arr) {return Math.min(a,b)});
+var max = arr.reduce(function(a, b, i, arr) {return Math.max(a,b)});
+
+Standard deviation: step 1
+var diffs = arr.map(function(value){
+  var diff = value - avg;
+  return diff;
+});
+
+
+var squareDiffs = values.map(function(value){
+  var diff = value - avg;
+  var sqr = diff * diff;
+  return sqr;
+});
+
+function average(data){
+  var sum = data.reduce(function(sum, value){
+    return sum + value;
+  }, 0);
+
+  var avg = sum / data.length;
+  return avg;
+}
+
+var avgSquareDiff = average(squareDiffs);
+var stdDev = Math.sqrt(avgSquareDiff);
+
+-------
+
+function standardDeviation(values){
+  var avg = average(values);
+
+  var squareDiffs = values.map(function(value){
+    var diff = value - avg;
+    var sqrDiff = diff * diff;
+    return sqrDiff;
+  });
+
+  var avgSquareDiff = average(squareDiffs);
+
+  var stdDev = Math.sqrt(avgSquareDiff);
+  return stdDev;
+}
+
+function average(data){
+  var sum = data.reduce(function(sum, value){
+    return sum + value;
+  }, 0);
+
+  var avg = sum / data.length;
+  return avg;
+}
+
+---------------
+
+
+
 
 <a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/js>My JS code snippets</a>
 
