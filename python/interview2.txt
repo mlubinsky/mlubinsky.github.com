@@ -1,0 +1,298 @@
+
+>>> myList = [0] * 6
+>>> myList
+[0, 0, 0, 0, 0, 0]
+http://interactivepython.org/runestone/static/pythonds/Introduction/GettingStartedwithData.html#built-in-collection-data-types
+
+List
+Method Name	Use	Explanation
+------ ----  ---- ----------
+append	alist.append(item)	Adds a new item to the end of a list
+insert	alist.insert(i,item)	Inserts an item at the ith position in a list
+pop	alist.pop()	Removes and returns the last item in a list
+pop	alist.pop(i)	Removes and returns the ith item in a list
+sort	alist.sort()	Modifies a list to be sorted
+reverse	alist.reverse()	Modifies a list to be in reverse order
+del	del alist[i]	Deletes the item in the ith position
+index	alist.index(item)	Returns the index of the first occurrence of item
+count	alist.count(item)	Returns the number of occurrences of item
+remove	alist.remove(item)	Removes the first occurrence of item
+
+
+String
+Method Name	Use	Explanation
+------- ----- ---- ----------
+center	astring.center(w)	Returns a string centered in a field of size w
+count	astring.count(item)	Returns the number of occurrences of item in the string
+ljust	astring.ljust(w)	Returns a string left-justified in a field of size w
+lower	astring.lower()	Returns a string in all lowercase
+rjust	astring.rjust(w)	Returns a string right-justified in a field of size w
+find	astring.find(item)	Returns the index of the first occurrence of item
+split	astring.split(schar)	Splits a string into substrings at schar
+
+Set
+-----
+mySet = {3,6,"cat",4.5,False}
+
+Method Name	Use	Explanation
+------ ----- ----- ----------
+union	aset.union(otherset)	Returns a new set with all elements from both sets
+intersection	aset.intersection(otherset)	Returns a new set with only those elements common to both sets
+difference	aset.difference(otherset)	Returns a new set with all items from first set not in second
+issubset	aset.issubset(otherset)	Asks whether all elements of one set are in the other
+add	aset.add(item)	Adds item to the set
+remove	aset.remove(item)	Removes item from the set
+pop	aset.pop()	Removes an arbitrary element from the set
+clear	aset.clear()	Removes all elements from the set
+
+Dictionary
+------------
+
+Method Name	Use	Explanation
+-----   ---- ----- ---------
+keys	adict.keys()	Returns the keys of the dictionary in a dict_keys object
+values	adict.values()	Returns the values of the dictionary in a dict_values object
+items	adict.items()	Returns the key-value pairs in a dict_items object
+get	adict.get(k)	Returns the value associated with k, None otherwise
+get	adict.get(k,alt)	Returns the value associated with k, alt otherwise
+
+
+class Queue:
+    def __init__(self):
+        self.items = []
+
+    def isEmpty(self):
+        return self.items == []
+
+    def enqueue(self, item):
+        self.items.insert(0,item)
+
+    def dequeue(self):
+        return self.items.pop()
+
+    def size(self):
+        return len(self.items)
+
+
+A deque, also known as a double-ended queue, is an ordered collection of items similar to the queue. It has two ends, a front and a rear, and the items remain positioned in the collection. What makes a deque different is the unrestrictive nature of adding and removing items. New items can be added at either the front or the rear. Likewise, existing items can be removed from either end. In a sense, this hybrid linear structure provides all the capabilities of stacks and queues in a single data structure.
+
+class Deque:
+    def __init__(self):
+        self.items = []
+
+    def isEmpty(self):
+        return self.items == []
+
+    def addFront(self, item):
+        self.items.append(item)
+
+    def addRear(self, item):
+        self.items.insert(0,item)
+
+    def removeFront(self):
+        return self.items.pop()
+
+    def removeRear(self):
+        return self.items.pop(0)
+
+    def size(self):
+        return len(self.items)
+
+
+
+
+class BinaryTree():
+
+    def __init__(self,rootid):
+      self.left = None
+      self.right = None
+      self.rootid = rootid
+
+    def getLeftChild(self):
+        return self.left
+    def getRightChild(self):
+        return self.right
+    def setNodeValue(self,value):
+        self.rootid = value
+    def getNodeValue(self):
+        return self.rootid
+
+Finding the top K items can be done in O(nlogk) time, which is much, much faster than O(nlogn), using a heap (wikipedia). Or, since I usually end up rewriting everything in C++ eventually, a priority queue.
+The strategy is to go through the list once, and as you go, keep a list of the top k elements that you found so far. To do this efficiently, you have to always know the smallest element in this top-k, so you can possibly replace it with one that is larger. The heap structure makes it easy to maintain this list without wasting any effort. It is like a lazy family member who always does the absolute minimum amount of work. It only does enough of the sort to find the smallest element, and that is why it is fast.
+
+Here's some code to demonstrate the difference between a linear search, and a heap search to find the top K elements in a large array. The heap search is 4 times faster, despite the test being biased in favour of the linear search. The linear search ends up executing in compiled C inside python itself, while the heap search is completely in interpreted python. If they were both in C, the difference in performance would be more pronounced.
+
+#!/usr/bin/python
+import heapq
+import random
+import time
+
+def createArray():
+    array = range( 10 * 1000 * 1000 )
+    random.shuffle( array )
+    return array
+
+def linearSearch( bigArray, k ):
+    return sorted(bigArray, reverse=True)[:k]
+
+def heapSearch( bigArray, k ):
+    heap = []
+    # Note: below is for illustration. It can be replaced by
+    # heapq.nlargest( bigArray, k )
+    for item in bigArray:
+        # If we have not yet found k items, or the current item is larger than
+        # the smallest item on the heap,
+        if len(heap) < k or item > heap[0]:
+            # If the heap is full, remove the smallest element on the heap.
+            if len(heap) == k: heapq.heappop( heap )
+            # add the current element as the new smallest.
+            heapq.heappush( heap, item )
+    return heap
+
+start = time.time()
+bigArray = createArray()
+print "Creating array took %g s" % (time.time() - start)
+
+start = time.time()
+print linearSearch( bigArray, 10 )
+print "Linear search took %g s" % (time.time() - start)
+
+start = time.time()
+print heapSearch( bigArray, 10 )
+
+
+
+down vote
+The simple, O(n log n) way is to sort the list then get the last k elements.
+
+The proper way is to use a selection algorithm, which runs in O(n + k log k) time.
+
+Also, heapq.nlargest takes O(n log k) time, which may or may not be good enough.
+
+
+https://www.safaribooksonline.com/library/view/python-cookbook-3rd/9781449357337/ch01s04.html
+from heapq import nlargest
+lst = [9,1,6,4,2,8,3,7,5]
+nlargest(3, lst) # Gives [9,8,7]
+
+You can also give a key to nlargest in case you wanna change your criteria:
+
+from heapq import nlargest
+tags = [ ("python", 30), ("ruby", 25), ("c++", 50), ("lisp", 20) ]
+nlargest(2, tags, key=lambda e:e[1]) # Gives [ ("c++", 50), ("python", 30) ]
+
+http://interactivepython.org/runestone/static/pythonds/Recursion/DynamicProgramming.html
+making change using the fewest coins
+-------------------------------------
+def recMC(coinValueList,change):
+   minCoins = change
+   if change in coinValueList:
+     return 1
+   else:
+      for i in [c for c in coinValueList if c <= change]:
+         numCoins = 1 + recMC(coinValueList,change-i)
+         if numCoins < minCoins:
+            minCoins = numCoins
+   return minCoins
+
+print(recMC([1,5,10,25],63))
+
+
+
+def dpMakeChange(coinValueList,change,minCoins):
+   for cents in range(change+1):
+      coinCount = cents
+      for j in [c for c in coinValueList if c <= cents]:
+            if minCoins[cents-j] + 1 < coinCount:
+               coinCount = minCoins[cents-j]+1
+      minCoins[cents] = coinCount
+   return minCoins[change]
+
+
+ parentesis checking
+ ---------------------
+
+ def parChecker(symbolString):
+    s = Stack()
+    balanced = True
+    index = 0
+    while index < len(symbolString) and balanced:
+        symbol = symbolString[index]
+        if symbol == "(":
+            s.push(symbol)
+        else:
+            if s.isEmpty():
+                balanced = False
+            else:
+                s.pop()
+
+        index = index + 1
+
+    if balanced and s.isEmpty():
+        return True
+    else:
+        return False
+
+print(parChecker('((()))'))
+print(parChecker('(()'))
+
+----- generic brachet checking
+from pythonds.basic.stack import Stack
+
+def parChecker(symbolString):
+    s = Stack()
+    balanced = True
+    index = 0
+    while index < len(symbolString) and balanced:
+        symbol = symbolString[index]
+        if symbol in "([{":
+            s.push(symbol)
+        else:
+            if s.isEmpty():
+                balanced = False
+            else:
+                top = s.pop()
+                if not matches(top,symbol):
+                       balanced = False
+        index = index + 1
+    if balanced and s.isEmpty():
+        return True
+    else:
+        return False
+
+def matches(open,close):
+    opens = "([{"
+    closers = ")]}"
+    return opens.index(open) == closers.index(close)
+
+
+print(parChecker('{{([][])}()}'))
+print(parChecker('[{()]'))
+
+----  anagram detection -----
+def anagramSolution4(s1,s2):
+    c1 = [0]*26
+    c2 = [0]*26
+
+    for i in range(len(s1)):
+        pos = ord(s1[i])-ord('a')
+        c1[pos] = c1[pos] + 1
+
+    for i in range(len(s2)):
+        pos = ord(s2[i])-ord('a')
+        c2[pos] = c2[pos] + 1
+
+    j = 0
+    stillOK = True
+    while j<26 and stillOK:
+        if c1[j]==c2[j]:
+            j = j + 1
+        else:
+            stillOK = False
+
+    return stillOK
+
+print(anagramSolution4('apple','pleap'))
+
+
+
