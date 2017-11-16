@@ -9,11 +9,15 @@
 <h2>Spark</h2>
 
 <pre>
+http://spark.apache.org/examples.html
+https://spark.apache.org/docs/2.2.0/
+
 https://blog.knoldus.com/2017/04/16/the-dominant-apis-of-spark-datasets-dataframes-and-rdds/
 http://parrotprediction.com/partitioning-in-apache-spark/
+https://blog.deepsense.ai/optimize-spark-with-distribute-by-and-cluster-by/
 https://opencredo.com/spark-testing/
 https://www.youtube.com/watch?v=ISO8V1cYmfY
-
+https://www.slideshare.net/hadooparchbook/top-5-mistakes-when-writing-spark-applications-66374492
 
 <h3>Start</h3>
 In Spark all work is expressed as either
@@ -23,6 +27,13 @@ In Spark all work is expressed as either
 
 DataSet: static typing -> compile-time error detection
 DataFrames are untyped: scala compiler doesn not check types in its schema
+DataFrames=DataSet[Rows]
+
+
+Spark supports two types of shared variables: broadcast variables, which can be used to cache a value in memory on all nodes, and accumulators,
+which are variables that are only “added” to, such as counters and sums.
+
+
 <h3>Spark Session </h3>
 val spark=SparkSession
   .builder()
@@ -32,7 +43,7 @@ val spark=SparkSession
 val conf = new SparkConf().setAppName("SparkJoins").setMaster("local")
 val sc = new SparkContext(conf)
 
-Broadcast variables allow the programmer to keep a read-only variable cached on each machine
+Broadcast variables allow the programmer to keep a read-only variable or lookup table cached on each machine
 SparkContext.broadcast(v)
 val broadcastVar = sc.broadcast(Array(1, 2, 3))
 
@@ -41,7 +52,8 @@ def processData (t: RDD[(Int, Int)], u: RDD[(Int, String)]) : Map[Int,Long] = {
   return jn.countByKey
 }
 
-Accumulators are variables that are only “added” to through an associative operation and can therefore, be efficiently supported in parallel. They can be used to implement counters (as in MapReduce) or sums. Spark natively supports accumulators of numeric types, and programmers can add support for new types
+Accumulators are variables that are only “added” to through an associative operation and can therefore, be efficiently supported in parallel. They can be used to implement counters (as in MapReduce) or sums.
+Spark natively supports accumulators of numeric types, and programmers can add support for new types
 
 val accum = sc.accumulator(0)
 sc.parallelize(Array(1, 2, 3, 4)).foreach(x => accum += x)
@@ -381,6 +393,72 @@ do reducing work locally; only final result will be send from worker to driver
 Join called on 2 RDDs that a prepartitioned with same partitioner and cached on same machine
 will work locally as well; nio shuffling
 
+myRDD.toDebugString
+repartition, join, cogroup and any of *By* or *ByKey transformaions can result in shuffle
+if you declare numPartitions parameter it will probably shuffle
+combineByKey groupByKey calls a shuffle
+s
+Skewed data solutions:
+- Salting ( modify  Key=Foo to Foo+rendom.nextInt(sultNumber)
+- Isolated Salting
+- Isolated Map Joins
+
+
+RDD is lazy, just DAG is bulding until the action is asked, like collect()
+.cache()
+.coalesce()  - ermove empty RDD?
+
+ReduceByKey vs GroupByKey
+TreeDeduce over Reduce
+Use complex/nested types
+
+Off-heap memory
+
+<h3>RDD types</h3>
+
+ hadoopRDD :  1 partition per HDFS block, dependencies->none,  compute(partition)=read corresponding block
+ converted into MappedRDD
+
+ filteredRDD: partitions: same as parent RDD; depndencies: one-to-one on parent; compute(partition)= compute parent and filter it
+ JoinedRDD: 1 partition per redue task; dependencies: shuffle on each parent; compute(partition) read and join shuffled data; partitioner=HashPartitioner(numTasks)
+ mappedRDD
+ PairRDD
+ ShuffleRDD
+ UnionRDD
+ PyrhonRDD
+ DoubleRDD
+ JdbcRDD
+ JsonRDD
+ SchemaRDD
+ VertedRDD
+ EdgeRDD
+ --------
+ CassandraRDD:
+    va cassandraRDD=sc.cassandraTable("mykeyspace","columnA")  - predicate pushdown
+ GeoRDD
+ ExSpark
+
+----
+spark.cores.max
+spark.executor.memory
+
+--------
+RSS.cache==RDD.persist(MEMORY_ONLY)  it is the same
+RDD.persist(MEMORY_AND_DISK)
+RDD.persist(DISK_ONLY)
+RDD.persist(MEMORY_AND_DISK_SER)
+Cryo serialiazation
+
+spark.storage,memoryFraction:  shuffle memory, cached RDDs user programs
+
+Hadoop means 3 Apache projects: HDFS, Map-Reduce, Yarn
+Job Traker, Named Node
+Spark is contender of Map-Reduce
+conf.registrKryoClass()  instead Java Serialization to speed
+High churn/Lost churn
+array of ints instead of linkedlist
+CuseConstMArkSweep
+
 <h3>How to run Spark in Standalone client mode</h3>
 spark-submit \
 -class org.apache.spark.examples.SparkPi \
@@ -396,6 +474,11 @@ spark-submit \
 $SPARK_HOME/examples/lib/spark-examples_version.jar 10
 
 <h3>How to run Spark in YARN client mode</h3>
+Yet Another Resoure Manager - YARN
+
+Resource Manager manages many NodeManagers
+Resource Manager  has Scheduler
+
 spark-submit \
 -class org.apache.spark.examples.SparkPi \
 -deploy-mode client \
