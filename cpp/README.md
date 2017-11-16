@@ -76,7 +76,9 @@ if (!rv.second)
 
 std::unordered_map uses hashing, so the lookup is O(1) for the default-constructed map (ie when there is a single item in every bucket). Once collisions are allowed (ie when you have k items in each bucket), each lookup would be take O(k) steps.
 
+### Memory managment:  shared_ptr  weak_ptr  unique_ptr
 
+https://genbattle.bitbucket.io/blog/2016/02/06/Modern-C-Memory-Management-With-unique-ptr/
 
 ### Threads
 
@@ -128,8 +130,9 @@ http://www.idryman.org/blog/2017/05/03/writing-a-damn-fast-hash-table-with-tiny-
 ### Debug printing
 http://jovislab.com/blog/?p=33
 
-### Keywords: noexept delete final default override ...
+### Keywords: noexept delete final default override mutable...
 
+http://www.geeksforgeeks.org/c-mutable-keyword/
 
 class A {
 
