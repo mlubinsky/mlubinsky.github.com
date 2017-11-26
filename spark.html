@@ -10,6 +10,7 @@
 
 <pre>
 http://spark.apache.org/examples.html
+http://www.janvsmachine.net/2017/09/sessionization-with-spark.html
 https://spark.apache.org/docs/2.2.0/
 https://spark.apache.org/docs/0.7.2/api/pyspark/pyspark.rdd.RDD-class.html
 
@@ -18,15 +19,12 @@ http://parrotprediction.com/partitioning-in-apache-spark/
 https://blog.deepsense.ai/optimize-spark-with-distribute-by-and-cluster-by/
 https://opencredo.com/spark-testing/
 https://www.youtube.com/watch?v=ISO8V1cYmfY
-https://www.slideshare.net/hadooparchbook/top-5-mistakes-when-writing-spark-applications-66374492
+https://www.slideshare.net/hadooparchbook/top-5-mistakes-when-writing-spark-applications-
 
-
-
-<h2>Hadoop</h2>
-
-https://www.amazon.com/dp/1946383481 Hadoop BIG DATA Interview Questions
-https://mapr.com/blog/database-comparison-an-in-depth-look-at-mapr-db/
-https://www.amazon.com/dp/1946383228 Java
+https://blog.deepsense.ai/optimize-spark-with-distribute-by-and-cluster-by/
+https://blog.deepsense.ai/improve-aggregate-performance-with-batching/66374492
+http://technology.finra.org/code/using-spark-transformations-for-mpreduce-jobs.html
+https://blog.deepsense.ai/fast-and-accurate-categorical-distribution-without-reshuffling-in-apache-spark/
 
 
 <h3>Start</h3>
@@ -43,6 +41,27 @@ DataFrames=DataSet[Rows]
 Spark supports two types of shared variables: broadcast variables, which can be used to cache a value in memory on all nodes, and accumulators,
 which are variables that are only “added” to, such as counters and sums.
 
+There are two types of transformations:
+ - those that specify narrow dependencies
+ - those that specify wide dependencies
+
+Transformations consisting of narrow dependencies are those where each input partition will contribute to only one output partition.
+Example: where clause specifies a
+narrow dependency, where only one partition contributes to at most one output partition.
+
+A wide dependency style transformation will have input partitions contributing to many output partitions. We call this a shu le where Spark will exchange partitions across the cluster. Spark will automatically perform an operation called pipelining on narrow dependencies, this means that if we specify multiple filters on DataFrames they’ll all be performed in memory. The same cannot be said for shuffles. When we perform a shuffle, Spark will write the results to disk.
+
+There are three kinds of actions:
+• actions to view data in the console;
+• actions to collect data to native objects in the respective language; • and actions to write to output data sources.
+
+
+Spark SQL allows you as a user to register any DataFrame as a table or view (a temporary table) and query it using pure SQL. There is no performance di erence between writing SQL queries or writing DataFrame code, they both “compile” to the same underlying plan that we specify in DataFrame code.
+
+
+
+Structured Streaming
+Structured Streaming became Production Ready in Spark 2.2. Structured streaming allows you to take the same operations that you perform in batch mode and perform them in a streaming fashion. This can reduce latency and allow for incremental processing. The best thing about Structured Streaming is that it allows you to rapidly and quickly get value out of streaming systems with simple switches, it also makes it easy to reason about because you can write your batch job as a way to prototype it and then you can convert it to streaming job. The way all of this works is by incrementally processing that data.
 
 <h3>Spark Session </h3>
 val spark=SparkSession
@@ -309,11 +328,25 @@ Inner/leftOuterJoin/rightOuterJoin
  DISK_ONLY
 
 <h3> Partitioning</h3>
+https://www.edureka.co/blog/demystifying-partitioning-in-spark
 partition# = key.hashcode() % number_of_partitions
 can lead to skewed distribution between nodes
 
 Spark support hash partitioning and range partitioning
 all data in same partition are garanteed to be in the same node
+
+
+Partitions are configurable provided the RDD is key-value based.
+Properties of Partition
+Tuples in the same partition are guaranteed to be in the same machine.
+Each node in a cluster can contain more than one partition.
+The total number of partitions are configurable, by default it is set to the total number of cores on all the executor nodes.
+Types of Partitioning in Spark
+Spark supports two types of partitioning,
+
+- Hash Partitioning: Uses Java’s Object.hashCodemethod to determine the partition as partition = key.hashCode() % numPartitions.
+- Range Partitioning: Uses a range to distribute to the respective partitions the keys that fall within a range. This method is suitable where there’s a natural ordering in the keys and the keys are non negative.
+
 
 Pair RDD may contain keys that have order defined (e.g.: Int or String)
 For such RDD the range partitioning is more effective
