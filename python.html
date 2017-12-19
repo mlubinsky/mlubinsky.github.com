@@ -9,6 +9,7 @@ External links
 <a href=http://interactivepython.org/runestone/static/pythonds/index.html>Algorithms in Python</a>
 <a href=https://www.pythonsheets.com/>Python cheatsheet</a>
 https://opensource.com/article/17/4/grok-gil
+https://www.youtube.com/watch?v=7lmCu8wz8ro
 
 https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1491957662  2nd edition
 https://www.amazon.com/Python-Tricks-Buffet-Awesome-Features/dp/1775093301
@@ -26,4 +27,22 @@ If there is no index.html, then the files in the directory will be listed.
 If you wish to change the port  from default (8000) then specify it explicitly:
 
  python -m SimpleHTTPServer 8080
+
+
+ asert hasattr(Base,'foo'), "no method foo in Base class"
+
+ class Polynom:
+     def __init__(self, *coefs):
+         self.coefs=coefs
+
+     def __call__(self):
+        ....
+
+     def __repr__(self):
+         return "Polynom (*{!r})".format(self.coefs)
+     def __add__(self, other):
+         return Polynom(* (x+y) for x,y in zip(self.coefs, other.coefs))
+
+
+
 </pre>
