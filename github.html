@@ -6,6 +6,11 @@
 <pre>
 <h2> Git notes</h2>
 http://www.integralist.co.uk/posts/git-tips/
+https://github.com/git-tips/tips
+https://github.com/1337/yesterday-i-learned/blob/master/git.md
+http://ohshitgit.com/
+https://stackoverflow.com/questions/4114095/how-to-revert-git-repository-to-a-previous-commit
+
 git config -l
 git branch -a
 git branch -r
@@ -15,6 +20,8 @@ git branch -r
 git diff --cached
 
 Git UI:
+http://gitup.co/
+
 git gui
 gittk
 tig
@@ -31,6 +38,20 @@ alias glod='git log --oneline --decorate'
 
 git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 
+
+<h2>HEAD</h2>
+
+HEAD is simply a reference to the current commit (latest) on the current branch.
+There can only be a single HEAD at any given time. (excluding git worktree)
+
+The content of HEAD is stored inside .git/HEAD and it contains the 40 bytes SHA-1 of the current commit.
+
+detached HEAD
+If you are not on the latest commit - meaning that HEAD is pointing to a prior commit in history its called detached HEAD.
+https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting
+	git reset --soft moves HEAD but doesn't change the staged snapshot or working directory,
+	git reset --mixed updates the staged snapshot to match the commit but doesn't touch the working directory
+	git reset --hard updates both staging and the working directory to the commit
 
 <h2>Merge staregies</h2>
 http://www.integralist.co.uk/posts/git-merge-strategies/
