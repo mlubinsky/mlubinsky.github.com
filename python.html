@@ -44,5 +44,18 @@ If you wish to change the port  from default (8000) then specify it explicitly:
          return Polynom(* (x+y) for x,y in zip(self.coefs, other.coefs))
 
 
+ a={'k1':'v1', 'k2':'v2'}
+ for key, val in a.iteritems():
+    print key, val
+
+
+def fib(num):
+  a,b=0,1
+  for i in xrange(0,num):
+      yield "{}: {}".format(i+1,a)
+      a,b = b, a+b
+
+for item in fib(10):
+   print item
 
 </pre>
