@@ -28,8 +28,28 @@ If you wish to change the port  from default (8000) then specify it explicitly:
 
  python -m SimpleHTTPServer 8080
 
+Random Notes
+https://www.dataquest.io/blog/python-counter-class/
 
- asert hasattr(Base,'foo'), "no method foo in Base class"
+from collections import Counter
+
+def is_anagram(word1, word2):
+    """Checks whether the words are anagrams.
+
+    word1: string
+    word2: string
+
+    returns: boolean
+    """
+    return Counter(word1) == Counter(word2)
+
+print(is_anagram('tachymetric', 'mccarthyite'))
+print(is_anagram('banana', 'peach'))
+
+
+ assert hasattr(Base,'foo'), "no method foo in Base class"
+
+
 
  class Polynom:
      def __init__(self, *coefs):
