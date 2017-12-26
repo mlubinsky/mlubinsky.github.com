@@ -13,6 +13,7 @@ https://en.wikipedia.org/wiki/Quantile
 https://www.analyticsvidhya.com/blog/2017/02/basic-probability-data-science-with-examples/
 https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/
 https://www.datascience.com/blog/introduction-to-bayesian-inference-learn-data-science-tutorials
+https://news.ycombinator.com/item?id=15986687  Markov chain Monte-Carlo
 
 In the case of normally distributed data,
 the three sigma rule means that roughly 1 in 22 observations will differ by twice the standard deviation or more from the mean,
@@ -37,6 +38,7 @@ https://www.amazon.com/Exploratory-Analysis-Chapman-Computer-Science/dp/14987760
 
 https://habrahabr.ru/company/itinvest/blog/262155/ TOP 10 ML algo
 http://ods.ai/   https://habrahabr.ru/company/ods/blog/344044/   Open Data Science
+https://habrahabr.ru/company/ods/blog/325422/  Feature extraction
 
 <h3>Time Series</h3>
 https://habrahabr.ru/post/180409/
@@ -72,12 +74,17 @@ https://github.com/mlubinsky/chart
 https://movio.co/en/blog/improving-with-sql-and-charts/
 https://github.com/MLWave/kepler-mapper
 
+<h3>Matplotlib</h3>
+http://blog.adnansiddiqi.me/tag/matplotlib/
+https://medium.com/100-free-udemy-coupons/udemy-making-graphs-in-python-using-matplotlib-for-beginners-free-be3df23bdabe
 https://github.com/matplotlib/AnatomyOfMatplotlib
 http://www.labri.fr/perso/nrougier/teaching/matplotlib/matplotlib.html
 https://www.numfocus.org/blog/matplotlib-lead-developer-explains-why-he-cant-fix-the-docs-but-you-can/
 
 https://web.stanford.edu/~boyd/vmls/  linear algebra
 http://www.seas.upenn.edu/~cis515/linalg.pdf
+
+https://eli.thegreenplace.net/tag/machine-learning
 
 http://course.fast.ai/s
 https://news.ycombinator.com/item?id=15923338 linear algebra and ML
@@ -92,10 +99,13 @@ https://www.youtube.com/watch?v=-_gIcc5_uHY
 https://habrahabr.ru/post/344762/ Anomaly detection
 https://habrahabr.ru/post/322034/ DBSCAN
 https://en.wikipedia.org/wiki/DBSCAN  DBSCAN
+https://mubaris.com/2017/10/01/kmeans-clustering-in-python/
 
 <h3>NumPy</h3>
 http://nbviewer.jupyter.org/github/vlad17/np-learn/blob/master/presentation.ipynb?flush_cache=true NumPy
 http://www.labri.fr/perso/nrougier/from-python-to-numpy/
+https://docs.scipy.org/doc/numpy-1.10.0/user/basics.broadcasting.html
+
 http://www.labri.fr/perso/nrougier/teaching/numpy.100/index.html
 https://www.datacamp.com/community/tutorials/python-numpy-tutorial
 https://www.dataquest.io/blog/numpy-tutorial-python/
@@ -117,9 +127,9 @@ https://www.dataquest.io/blog/pandas-big-data/
 https://www.dataquest.io/blog/machine-learning-python/
 
 
-<img src="ml_guide.svg" width="1200">
-<img src="ml1.png">
-<img src="ml2.png" width="1200" height="800">
+<img src="ml/ml_guide.svg" width="1200">
+<img src="ml/ml1.png">
+<img src="ml/ml2.png" width="1200" height="800">
 
 
  Bias is the difference between your model's expected predictions and the true values.
@@ -130,7 +140,7 @@ https://www.dataquest.io/blog/machine-learning-python/
  The results still might be highly inaccurate due to our large sources of bias, but the variance of predictions will be reduced
  Variance refers to your algorithm's sensitivity to specific sets of training data.
 
-<img src="biasvariance.png" width="1200" height="800">
+<img src="ml/biasvariance.png" width="1200" height="800">
 
 High bias, low variance: model are consistent but inaccurate on averag
 High variance, low bias: model are inconsistent but accurate on average
@@ -157,7 +167,7 @@ K-fold cross-validation: partition the the data into k subsets, called folds. Th
 When you’re training a learning algorithm iteratively, you can measure how well each iteration of the model performs.
 Up until a certain number of iterations, new iterations improve the model. After that point, however, the model’s ability to generalize can weaken as it begins to overfit the training data.
 Early stopping refers stopping the training process before the learner passes that point.
-<img src="early-stopping-graphic.jpg" width="600" height="400">
+<img src="ml/early-stopping-graphic.jpg" width="600" height="400">
 
 
 Underfitting

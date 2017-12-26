@@ -29,7 +29,21 @@ If you wish to change the port  from default (8000) then specify it explicitly:
  python -m SimpleHTTPServer 8080
 
 Random Notes
+http://arseny.info/2017/parallel-computation-with-two-lines-of-code.html   Joblib
 https://www.dataquest.io/blog/python-counter-class/
+
+multiply a vector by a scalar:
+def scale(A, x): return [ai*x for ai in A]
+
+add 2 vectors:
+def add(A, B): return [ai+bi for (ai, bi) in zip(A, B)]
+
+dot product:
+def dot(A, B): return sum([ai*bi for (ai, bi) in zip(A, B)])
+
+matrices by vector multiplication:
+def mul(A, X): return [dot(ai, X) for ai in A]
+
 
 from collections import Counter
 
