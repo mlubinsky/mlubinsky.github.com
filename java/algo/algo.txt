@@ -9,6 +9,23 @@ http://massivealgorithms.blogspot.com/
 http://ruslanledesma.com/
 http://algorithms.tutorialhorizon.com/
 
+==============================
+ Find Loops in a Linked-List
+============================
+boolean detect_loop(Node head) { 
+  if (null == head) {return false; }
+  Node trailing = head; 
+  Node leading = head; 
+  while (null != leading) {
+       leading = leading.next;   //1st time  
+       if (trailing == leading) {return true; }
+       trailing = trailing.next; //1st time
+       if (null != leading) {
+          leading = leading.next; //2nd time 
+       }
+}
+return false; }
+
 ============= is array contains duplicates ==== ?
 
 Solution 1:
@@ -57,6 +74,20 @@ https://habrahabr.ru/company/mailru/blog/267469/   Поисковые подск
 
 Task: are linked lists intersected?
 ===================================
+Approach#1
+-----------
+First while loop counts the number of nodes in the first list.
+Second while loop counts the number of nodes in the second list.
+After having the length of each list, we find the difference in number of nodes and 
+then move whichever pointer that points to the longer list ahead using that difference.
+Finally, the while loop is used to find the intersection. We just loop until either of the pointers reaches the end of its list. 
+During the loop, if the pointers meet, we return true immediately because it means that the lists intersect. 
+
+But at the end of the loop and nothing has happened, we simply return false because the lists don't intersect.
+
+Approach#2
+-----------
+Compare the last elements in lists:
 private static boolean areListsIntersected(Node list1, Node list2){
    return Tail(list1) == Tail(list2);
 }
@@ -68,7 +99,7 @@ private static Node Tail(Node list) {
           list = list.next;
      }
 
-     return list;
+     return list;  //this is the last item in list
 }
 
 https://en.wikipedia.org/wiki/Optimal_substructure
@@ -143,7 +174,7 @@ http://algorithms.tutorialhorizon.com/dynamic-programming-minimum-coin-change-pr
 
 Finding the minimum number of coins (of certain denominations) that add up to a given amount of money. It is a knapsack type problem
 
-Write an algo­rithm to find out how many ways we can make the change of the amount using the coins given.
+Write an algorithm to find out how many ways we can make the change of the amount using the coins given.
 Recursive solution (2^n)
 
 public static int total(int n, int[] v, int i) {
@@ -387,11 +418,12 @@ public class main {
 Task: Implement Queue using Stacks  http://www.geeksforgeeks.org/?p=5009
 ========================================================================
 
-Stack: insertion and deletion are happend on the same end: LastIn First Out (LIFO)
-Queue: First In First Out (FIFO)
+Stack: insertion and deletion are happend on the same end: Last-In First-Out (LIFO)
+Queue: First-In First-Out (FIFO)
 
 
-Method 2 (By making deQueue operation costly)In this method, in en-queue operation, the new element is entered at the top of stack1.
+Method 2 (By making deQueue operation costly)
+In this method, in en-queue operation, the new element is entered at the top of stack1.
 In de-queue operation, if stack2 is empty then all the elements are moved to stack2 and finally top of stack2 is returned.
 
 enQueue(q,  x)
@@ -608,13 +640,33 @@ public class stack
     }
 }
 
-Uses of In order Traversal
-In case of binary search trees (BST), Inorder traversal gives nodes in non-decreasing order.
+Pre-order: print root,  left, right
+----------
+Check if the current node is empty / null.
+Display the data part of the root (or current node).
+Traverse the left subtree by recursively calling the pre-order function.
+Traverse the right subtree by recursively calling the pre-order function.
 
-
-Preorder traversal is used to create a copy of the tree. Preorder traversal is also used to get prefix expression on of an expression tree.
+PreOrder traversal is used to create a copy of the tree. 
+Preorder traversal is also used to get prefix expression on of an expression tree.
 Please see http://en.wikipedia.org/wiki/Polish_notation to know why prefix expressions are useful.
 
 
-Uses of Postorder
-Postorder traversal is used to delete the tree. Please see the question for deletion of tree for details. Postorder traversal is also useful to get the postfix expression of an expression tree. Please see http://en.wikipedia.org/wiki/Reverse_Polish_notation to for the usage of postfix expression.
+In-order:   left, print root, right
+-----------
+Check if the current node is empty / null.
+Traverse the left subtree by recursively calling the in-order function.
+Display the data part of the root (or current node).
+Traverse the right subtree by recursively calling the in-order function.
+In a binary search tree, in-order traversal retrieves data in sorted order
+
+Post-order: left, right, print root
+-----------
+Check if the current node is empty / null.
+Traverse the left subtree by recursively calling the post-order function.
+Traverse the right subtree by recursively calling the post-order function.
+Display the data part of the root (or current node).
+
+Postorder traversal is used to delete the tree. Please see the question for deletion of tree for details. 
+Postorder traversal is also useful to get the postfix expression of an expression tree. 
+Please see http://en.wikipedia.org/wiki/Reverse_Polish_notation to for the usage of postfix expression.

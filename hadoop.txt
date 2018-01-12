@@ -1,0 +1,136 @@
+
+
+https://www.packtpub.com/big-data-and-business-intelligence/hadoop-mapreduce-cookbook
+
+In order to be used as a value data type of a MapReduce computation, 
+a data type must implement the org.apache.hadoop.io.Writable interface. 
+
+In order to be used as a key data type of a MapReduce computation, a data type must implement the org.apache.hadoop.io.WritableComparable<T> interface. 
+                                                                               
+The Writable interface consists of the two methods, readFields() and write().
+
+The WritableComparable interface introduces the comapreTo() method in addition to the readFields() and write() methods of the Writable interface. 
+
+OOzie job coordinator
+Hadoop ControlledJob and JobControl classes provide  
+
+JOIN: Reduce-Side join or Map-Side Join 
+=======================================
+https://www.edureka.co/blog/map-side-join-vs-join/
+https://www.edureka.co/blog/mapreduce-example-reduce-side-join/
+
+http://kickstarthadoop.blogspot.in/2011/05/hadoop-for-dependent-data-splits-using.html
+http://kickstarthadoop.blogspot.in/2011/09/joins-with-plain-map-reduce.html
+
+3 input files as follows
+1.       UserDetails.txt          Every record is of the format ‘mobile number , consumer name’
+2.       DeliveryDetails.txt      Every record is of the format ‘mobile number, delivery status code’
+3.       DeliveryStatusCodes.txt  Every record is of the format ‘delivery status code, status message’
+
+Expected Output
+Jim, Delivered
+Tom, Pending
+Harry, Failed
+Richa, Resend
+
+
+
+Partitioner
+===========
+The sorted set of keys and their values of a partition would be the input for a reduce task. 
+In Hadoop, the total number of partitions should be equal to the number of reduce tasks for the MapReduce computation. 
+Hadoop Partitioners should extend the org.apache.hadoop.mapreduce. Partitioner<KEY,VALUE> abstract class. 
+Hadoop uses org.apache.hadoop. mapreduce.lib.partition.HashPartitioner as the default Partitioner for the MapReduce computations. 
+HashPartitioner partitions the keys based on their hashcode(), using the formula key.hashcode() mod r, where r is the number of reduce tasks. 
+
+
+SequenceFileOutputFormat
+======
+The WordCount  count the number of word occurrences within a set of input documents. 
+Locate the sample code from src/chapter1/Wordcount.java. 
+The code has three parts—mapper, reducer, and the main program.
+
+Map
+===
+The mapper extends from the org.apache.hadoop.mapreduce.Mapper                                                                                 
+input to the mapper. 
+The map function breaks each line into substrings using whitespace characters such as the separator, and for each token (word) emits (word,1) as the output.
+
+       public void map(Object key, Text value, Context context
+                           ) throws IOException, InterruptedException
+       {
+             StringTokenizer itr = new StringTokenizer(value.toString());
+              while (itr.hasMoreTokens())
+              {
+                 word.set(itr.nextToken());
+                 context.write(word, new IntWritable(1));
+              }
+
+Reduce
+========
+The reduce function receives all the values that have the same key as the input, 
+and it outputs the key and the number of occurrences of the key as the output.
+
+   public void reduce(Text key, Iterable<IntWritable> values, Context context)
+ throws IOException, InterruptedException
+{
+         int sum = 0;
+         for (IntWritable val : values)
+         {
+            sum += val.get();
+         }
+         result.set(sum);
+         context.write(key, result);
+   }
+   
+The main                                                                      
+============
+   Configuration conf = new Configuration();
+   String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
+   if (otherArgs.length != 2) {
+      System.err.println("Usage: wordcount <in><out>");
+      System.exit(2);
+   }
+   Job job = new Job(conf, "word count");
+   job.setJarByClass(WordCount.class);
+   job.setMapperClass(TokenizerMapper.class);
+   //Uncomment this to
+   //job.setCombinerClass(IntSumReducer.class);
+   job.setReducerClass(IntSumReducer.class);
+   job.setOutputKeyClass(Text.class);
+   job.setOutputValueClass(IntWritable.class);
+   FileInputFormat.addInputPath(job, new Path(otherArgs[0]));
+   FileOutputFormat.setOutputPath(job, new Path(otherArgs[1]));
+   System.exit(job.waitForCompletion(true) ? 0 : 1);   
+   
+Combiner
+===========   
+ combiner only works with commutative and associative functions. 
+ For example, the same idea does not work when calculating mean. 
+ As mean is not communicative and associative, a combiner in that case will yield a wrong result.
+ 
+Hadoop supports speculative executions. 
+This means if most of the map tasks have completed and Hadoop is waiting for a few more map tasks, Hadoop JobTracker will start                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                                    
+Distributed cache
+========================
+                                                                                       copies                                               
+ 
+Hadoop configuration
+======================               
+  conf/core-site.xml:  
+  conf/hdfs-site.xml:                      
+  conf/mapred-site.xml:                            
+
+
+=============
+In its default In its default                                                                                                                                                                                                                                  
+execution. This recipe explains how to control this behavior.
+
+How to do it...
+1. Run the WordCount sample by passing the following option as an argument:
+       >bin/hadoop jar hadoop-examples-1.0.0.jar wordcount –Dmapred.job.reuse.jvm.num.tasks=-1 /data/input1 /data/output1
+2. Monitor the number of processes created by Hadoop (through ps –ef|grephadoop command in Unix or task manager in Windows). 
+Hadoop starts only a single JVM per task slot and then reuses it for an unlimited number of tasks in the job.
+However, passing arguments through the –D option only works if the job implements the org.apache.hadoop.util.Tools interface. 
+Otherwise, you should set the option through the JobConf.setNumTasksToExecutePerJvm(-1) method.       
