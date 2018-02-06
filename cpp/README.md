@@ -4,6 +4,7 @@ http://www.modernescpp.com/   2 books here
 https://www.amazon.com/Advanced-Interview-Questions-Youll-Likely/dp/1946383708 C++ book
 
 https://habrahabr.ru/post/182920/
+https://www.codeproject.com/Articles/1170503/The-Impossibly-Fast-Cplusplus-Delegates-Fixed
 
 clang++ -Wall -std=c++11 boolean_matrix.cpp -o test
 
@@ -77,6 +78,21 @@ if (!rv.second)
 
 std::unordered_map uses hashing, so the lookup is O(1) for the default-constructed map (ie when there is a single item in every bucket). Once collisions are allowed (ie when you have k items in each bucket), each lookup would be take O(k) steps.
 
+
+### Matrix
+vector <vector <int> > grid (3, vector(4,0))    //  grid size: 3x4 initialized by 0
+http://cpptruths.blogspot.com/2011/10/multi-dimensional-arrays-in-c11.html
+http://www.stroustrup.com/Programming/Matrix/Matrix.h
+https://www.techsoftpl.com/matrix/index.php
+https://github.com/lindahua/light-matrix
+http://matrix.drque.net/
+https://www.mrericsir.com/blog/technology/c-2d-generic-array-class/
+https://hackernoon.com/c-investigation-arrays-vs-vectors-e9ba864468b6
+https://www.youtube.com/watch?v=tJRGKR4_yAM
+https://www.codeproject.com/Articles/3613/A-generic-reusable-and-extendable-matrix-class
+https://stackoverflow.com/questions/10764961/c-matrix-class-template
+https://codereview.stackexchange.com/questions/142815/generic-matrix-type-in-c
+
 ### Memory managment:  shared_ptr  weak_ptr  unique_ptr
 
 https://genbattle.bitbucket.io/blog/2016/02/06/Modern-C-Memory-Management-With-unique-ptr/
@@ -90,6 +106,8 @@ https://genbattle.bitbucket.io/blog/2016/02/06/Modern-C-Memory-Management-With-u
 5. Compare and swap
 
 http://thispointer.com/c11-multithreading-tutorial-series/
+
+https://www.codeproject.com/Articles/1177478/Thread-Wrapper-CPP
 
 http://thispointer.com/c11-multithreading-part-7-condition-variables-explained/
 
