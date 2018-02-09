@@ -1,0 +1,895 @@
+https://www.geeksforgeeks.org/inorder-successor-in-binary-search-tree/
+
+==== vector ====
+
+
+https://www.geeksforgeeks.org/vector-in-cpp-stl/
+https://www.geeksforgeeks.org/modifiers-for-vector-in-cpp-stl/
+
+
+======   BINARY SEARCH ===============
+https://www.geeksforgeeks.org/binary-search-functions-in-c-stl-binary_search-lower_bound-and-upper_bound/&sa=U&ved=0ahUKEwjK2o7Bk5jZAhXKjFQKHVTcBZwQFggIMAI&client=internal-uds-cse&cx=009682134359037907028:tj6eafkv_be&usg=AOvVaw1fiTsdRhsyoCwrhSLwMBfH
+Binary Search in C++ Standard Template Library (STL)
+1.3
+Binary search is a widely used searching algorithm that requires the array to be sorted before search is applied.
+
+The prototype for binary search is :
+
+binary_search(startaddress, endaddress, valuetofind)
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+void show(int a[], int arraysize)
+{
+    for(int i = 0; i < arraysize; ++i)
+        cout << '\t' << a[i];
+}
+
+
+int main()
+{
+    int a[]= {1, 5, 8, 9, 6, 7, 3, 4, 2, 0};
+    int asize = sizeof(a) / sizeof(a[0]);
+    cout << "\n The array is : ";
+    show(a, asize);
+
+    cout << "\n\nLet's say we want to search for 2 in the array";
+    cout << "\n So, we first sort the array";
+    sort(a, a + 10);
+    cout << "\n\n The array after sorting is : ";
+    show(a, asize);
+    cout << "\n\nNow, we do the binary search";
+    if (binary_search(a, a + 10, 2))
+       cout << "\nElement found in the array";
+    else
+       cout << "\nElement not found in the array";
+
+    cout << "\n\nNow, say we want to search for 10";
+     if (binary_search(a, a + 10, 10))
+       cout << "\nElement found in the array";
+    else
+       cout << "\nElement not found in the array";
+
+    return 0;
+
+}
+
+==========  BINARY SEARCH 2  ======
+
+Binary Search functions in C++ STL (binary_search, lower_bound and upper_bound)
+2.2
+Binary search is an important component in competitive programming or any algorithmic competition, having knowledge of shorthand functions reduces the time to code them. This searching only works when container is sorted. Related functions are discussed below.
+
+1.binary_search(start_ptr, end_ptr, num) : This function returns boolean true if the element is present in the container, else returns false.
+
+// C++ code to demonstrate the working of binary_search()
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    // initializing vector of integers
+    vector<int> arr = {10, 15, 20, 25, 30, 35};
+
+    // using binary_search to check if 15 exists
+    if (binary_search(arr.begin(), arr.end(), 15))
+       cout << "15 exists in vector";
+    else
+       cout << "15 does not exist";
+
+    cout << endl;
+
+    // using binary_search to check if 23 exists
+    if (binary_search(arr.begin(), arr.end(), 23))
+         cout << "23 exists in vector";
+    else
+         cout << "23 does not exist";
+
+    cout << endl;
+}
+Run on IDE
+Output:
+
+15 exists in vector
+23 does not exist
+2. lower_bound(start_ptr, end_ptr, num) : Returns pointer to “position of num” if container contains 1 occurrence of num. Returns pointer to “first position of num” if container contains multiple occurrence of num. Returns pointer to “position of next higher number than num” if container does not contain occurrence of num. Subtracting the pointer to 1st position i.e “vect.begin()” returns the actual index.
+
+// C++ code to demonstrate the working of lower_bound()
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    // initializing vector of integers
+    // for single occurrence
+    vector<int> arr1 = {10, 15, 20, 25, 30, 35};
+
+    // initializing vector of integers
+    // for multiple occurrences
+    vector<int> arr2 = {10, 15, 20, 20, 25, 30, 35};
+
+    // initializing vector of integers
+    // for no occurrence
+    vector<int> arr3 = {10, 15, 25, 30, 35};
+
+    // using lower_bound() to check if 20 exists
+    // single occurrence
+    // prints 2
+    cout << "The position of 20 using lower_bound "
+            " (in single occurrence case) : ";
+    cout << lower_bound(arr1.begin(), arr1.end(), 20)
+            - arr1.begin();
+
+    cout << endl;
+
+    // using lower_bound() to check if 20 exists
+    // multiple occurrence
+    // prints 2
+    cout << "The position of 20 using lower_bound "
+             "(in multiple occurrence case) : ";
+    cout << lower_bound(arr2.begin(), arr2.end(), 20)
+            - arr2.begin();
+
+    cout << endl;
+
+    // using lower_bound() to check if 20 exists
+    // no occurrence
+    // prints 2 ( index of next higher)
+    cout << "The position of 20 using lower_bound "
+             "(in no occurrence case) : ";
+    cout << lower_bound(arr3.begin(), arr3.end(), 20)
+            - arr3.begin();
+
+    cout << endl;
+}
+Run on IDE
+Output:
+
+The position of 20 using lower_bound (in single occurrence case) : 2
+The position of 20 using lower_bound (in multiple occurrence case) : 2
+The position of 20 using lower_bound (in no occurrence case) : 2
+3. upper_bound(start_ptr, end_ptr, num) : Returns pointer to “position of next higher number than num” if container contains 1 occurrence of num. Returns pointer to “first position of next higher number than last occurrence of num” if container contains multiple occurrence of num. Returns pointer to “position of next higher number than num” if container does not contain occurrence of num. Subtracting the pointer to 1st position i.e “vect.begin()” returns the actual index.
+
+// C++ code to demonstrate the working of upper_bound()
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    // initializing vector of integers
+    // for single occurrence
+    vector<int> arr1 = {10, 15, 20, 25, 30, 35};
+
+    // initializing vector of integers
+    // for multiple occurrences
+    vector<int> arr2 = {10, 15, 20, 20, 25, 30, 35};
+
+    // initializing vector of integers
+    // for no occurrence
+    vector<int> arr3 = {10, 15, 25, 30, 35};
+
+
+    // using lower_bound() to check if 20 exists
+    // single occurrence
+    // prints 3
+    cout << "The position of 20 using upper_bound"
+           " (in single occurrence case) : ";
+    cout << upper_bound(arr1.begin(), arr1.end(), 20)
+            - arr1.begin();
+
+    cout << endl;
+
+    // using lower_bound() to check if 20 exists
+    // multiple occurrence
+    // prints 4
+    cout << "The position of 20 using upper_bound "
+             "(in multiple occurrence case) : ";
+    cout << upper_bound(arr2.begin(), arr2.end(), 20)
+            - arr2.begin();
+
+    cout << endl;
+
+    // using lower_bound() to check if 20 exists
+    // no occurrence
+    // prints 2 ( index of next higher)
+    cout << "The position of 20 using upper_bound"
+            " (in no occurrence case) : ";
+    cout << upper_bound(arr3.begin(), arr3.end(), 20)
+           - arr3.begin();
+
+    cout << endl;
+}
+Run on IDE
+Output:
+
+The position of 20 using upper_bound (in single occurrence case) : 3
+The position of 20 using upper_bound (in multiple occurrence case) : 4
+The position of 20 using upper_bound (in no occurrence case) : 2
+
+
+=====   SORT =====
+
+Sort in C++ Standard Template Library (STL)
+
+Sorting is one of the most basic functions applied on data.
+The prototype for sort is :
+
+sort(startaddress, endaddress)
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+void show(int a[])
+{
+    for(int i = 0; i < 10; ++i)
+        cout << '\t' << a[i];
+}
+
+int main()
+{
+    int a[10]= {1, 5, 8, 9, 6, 7, 3, 4, 2, 0};
+    cout << "\n The array before sorting is : ";
+    show(a);
+
+    sort(a, a+10);
+
+    cout << "\n\n The array after sorting is : ";
+    show(a);
+
+    return 0;
+
+}
+=========  SET =======================
+Set in C++ Standard Template Library (STL)
+============================================
+Sets are a type of associative containers in which each element has to be unique, because the value of the element identifies it. The value of the element cannot be modified once it is added to the set, though it is possible to remove and add the modified value of that element.
+
+Functions associated with Set:
+begin() – Returns an iterator to the first element in the set
+end() – Returns an iterator to the theoretical element that follows last element in the set
+size() – Returns the number of elements in the set
+max_size() – Returns the maximum number of elements that the set can hold
+empty() – Returns whether the set is empty
+pair <iterator, bool> insert(const g) – Adds a new element ‘g’ to the set
+iterator insert (iterator position, const g) – Adds a new element ‘g’ at the position pointed by iterator
+erase(iterator position) – Removes the element at the position pointed by the iterator
+erase(const g)- Removes the value ‘g’ from the set
+clear() – Removes all the elements from the set
+key_comp() / value_comp() – Returns the object that determines how the elements in the set are ordered (‘<‘ by default)
+find(const g) – Returns an iterator to the element ‘g’ in the set if found, else returns the iterator to end
+count(const g) – Returns 1 or 0 based on the element ‘g’ is present in the set or not.
+lower_bound(const g) – Returns an iterator to the first element that is equivalent to ‘g’ or definitely will not go before the element ‘g’ in the set
+upper_bound(const g) – Returns an iterator to the first element that is equivalent to ‘g’ or definitely will go after the element ‘g’ in the set
+
+#include <iostream>
+#include <set>
+#include <iterator>
+
+using namespace std;
+
+int main()
+{
+    // empty set container
+    set <int, greater <int> > gquiz1;
+
+    // insert elements in random order
+    gquiz1.insert(40);
+    gquiz1.insert(30);
+    gquiz1.insert(60);
+    gquiz1.insert(20);
+    gquiz1.insert(50);
+    gquiz1.insert(50); // only one 50 will be added to the set
+    gquiz1.insert(10);
+
+    // printing set gquiz1
+    set <int, greater <int> > :: iterator itr;
+    cout << "\nThe set gquiz1 is : ";
+    for (itr = gquiz1.begin(); itr != gquiz1.end(); ++itr)
+    {
+        cout << '\t' << *itr;
+    }
+    cout << endl;
+
+    // assigning the elements from gquiz1 to gquiz2
+    set <int> gquiz2(gquiz1.begin(), gquiz1.end());
+
+    // print all elements of the set gquiz2
+    cout << "\nThe set gquiz2 after assign from gquiz1 is : ";
+    for (itr = gquiz2.begin(); itr != gquiz2.end(); ++itr)
+    {
+        cout << '\t' << *itr;
+    }
+    cout << endl;
+
+    // remove all elements up to 30 in gquiz2
+    cout << "\ngquiz2 after removal of elements less than 30 : ";
+    gquiz2.erase(gquiz2.begin(), gquiz2.find(30));
+    for (itr = gquiz2.begin(); itr != gquiz2.end(); ++itr)
+    {
+        cout << '\t' << *itr;
+    }
+
+    // remove all elements with value 50 in gquiz2
+    int num;
+    num = gquiz2.erase (50);
+    cout << "\ngquiz2.erase(50) : ";
+    cout << num << " removed \t" ;
+    for (itr = gquiz2.begin(); itr != gquiz2.end(); ++itr)
+    {
+        cout << '\t' << *itr;
+    }
+
+    cout << endl;
+
+    //lower bound and upper bound for set gquiz1
+    cout << "gquiz1.lower_bound(40) : "
+         << *gquiz1.lower_bound(40) << endl;
+    cout << "gquiz1.upper_bound(40) : "
+         << *gquiz1.upper_bound(40) << endl;
+
+    //lower bound and upper bound for set gquiz2
+    cout << "gquiz2.lower_bound(40) : "
+         << *gquiz2.lower_bound(40) << endl;
+    cout << "gquiz2.upper_bound(40) : "
+         << *gquiz2.upper_bound(40) << endl;
+
+    return 0;
+
+}
+Run on IDE
+The output of the above program is :
+
+The set gquiz1 is :      60    50    40    30    20    10
+
+The set gquiz2 after assign from gquiz1 is : 10      20    30    40    50    60
+
+gquiz2 after removal of elements less than 30 : 30    40    50    60
+gquiz2.erase(50) : 1 removed     30    40    60
+gquiz1.lower_bound(40) : 40
+gquiz1.upper_bound(40) : 30
+gquiz2.lower_bound(40) : 40
+gquiz2.upper_bound(40) : 60
+
+
+Queue in Standard Template Library (STL)
+=========================================
+Queues are a type of container adaptors which operate in a first in first out (FIFO) type of arrangement. Elements are inserted at the back (end) and are deleted from the front.
+
+
+The functions supported by queue are :
+empty() – Returns whether the queue is empty
+size() – Returns the size of the queue
+front() – Returns a reference to the first element of the queue
+back() – Returns a reference to the last element of the queue
+push(g) – Adds the element ‘g’ at the end of the queue
+pop() – Deletes the first element of the queue
+
+#include <iostream>
+#include <queue>
+
+using namespace std;
+
+void showq(queue <int> gq)
+{
+    queue <int> g = gq;
+    while (!g.empty())
+    {
+        cout << '\t' << g.front();
+        g.pop();
+    }
+    cout << '\n';
+}
+
+int main()
+{
+    queue <int> gquiz;
+    gquiz.push(10);
+    gquiz.push(20);
+
+    cout << "The queue gquiz is : ";
+    showq(gquiz);
+
+    cout << "\ngquiz.size() : " << gquiz.size();
+    cout << "\ngquiz.front() : " << gquiz.front();
+    cout << "\ngquiz.back() : " << gquiz.back();
+
+    cout << "\ngquiz.pop() : ";
+    gquiz.pop();
+    showq(gquiz);
+
+    return 0;
+}
+Run on IDE
+The output of the above program is :
+
+The queue gquiz is :    10  20
+
+gquiz.size() : 2
+gquiz.front() : 10
+gquiz.back() : 20
+gquiz.pop() :   20
+
+
+
+==== Priority queue ============
+
+https://www.geeksforgeeks.org/implement-min-heap-using-stl/
+
+In C++ STL, there is priority_queue that can directly be used to implement Max Heap. See below example.
+
+// C++ program to show that priority_queue is by
+// default a Max Heap
+#include <bits/stdc++.h>
+using namespace std;
+
+// Driver code
+int main ()
+{
+    // Creates a max heap
+    priority_queue <int> pq;
+    pq.push(5);
+    pq.push(1);
+    pq.push(10);
+    pq.push(30);
+    pq.push(20);
+
+    // One by one extract items from max heap
+    while (pq.empty() == false)
+    {
+        cout << pq.top() << " ";
+        pq.pop();
+    }
+
+    return 0;
+}
+Run on IDE
+Output :
+
+30 20 10 5 1
+Since elements are printed in descending order, we have a max heap by default.
+
+
+
+How to implement Min Heap?
+priority_queue supports a constructor that requires two extra arguments to make it min heap.
+
+    priority_queue <Type, vector<Type>, ComparisonType > min_heap;
+`
+
+Below is an example for integers.
+
+// C++ program to us priority_queue to implement min heap
+#include <bits/stdc++.h>
+using namespace std;
+
+// Driver code
+int main ()
+{
+    // Creates a max heap
+    priority_queue <int, vector<int>, greater<int> > pq;
+    pq.push(5);
+    pq.push(1);
+    pq.push(10);
+    pq.push(30);
+    pq.push(20);
+
+    // One by one extract items from max heap
+    while (pq.empty() == false)
+    {
+        cout << pq.top() << " ";
+        pq.pop();
+    }
+
+    return 0;
+}
+Run on IDE
+Output :
+
+1 5 10 20 30
+
+
+How to make a min heap of user defined class?
+Let us consider below example where we build a min heap of 2 D points ordered by X axis.
+
+// C++ program to us priority_queue to implement Min Heap
+// for user defined class
+#include <bits/stdc++.h>
+using namespace std;
+
+// User defined class, Point
+class Point
+{
+   int x;
+   int y;
+public:
+   Point(int _x, int _y)
+   {
+      x = _x;
+      y = _y;
+   }
+   int getX() const { return x; }
+   int getY() const { return y; }
+};
+
+// To compare two points
+class myComparator
+{
+public:
+    int operator() (const Point& p1, const Point& p2)
+    {
+        return p1.getX() > p2.getX();
+    }
+};
+
+// Driver code
+int main ()
+{
+    // Creates a Min heap of points (order by x coordinate)
+    priority_queue <Point, vector<Point>, myComparator > pq;
+
+    // Insert points into the min heap
+    pq.push(Point(10, 2));
+    pq.push(Point(2, 1));
+    pq.push(Point(1, 5));
+
+    // One by one extract items from min heap
+    while (pq.empty() == false)
+    {
+        Point p = pq.top();
+        cout << "(" << p.getX() << ", " << p.getY() << ")";
+        cout << endl;
+        pq.pop();
+    }
+
+    return 0;
+}
+Run on IDE
+Output :
+
+(1, 5)
+(2, 1)
+(10, 2)
+
+==========   GRAPH  ======
+https://www.geeksforgeeks.org/prims-algorithm-using-priority_queue-stl/
+
+#include<bits/stdc++.h>
+using namespace std;
+# define INF 0x3f3f3f3f
+
+// iPair ==>  Integer Pair
+typedef pair<int, int> iPair;
+
+// This class represents a directed graph using
+// adjacency list representation
+class Graph
+{
+    int V;    // No. of vertices
+
+    // In a weighted graph, we need to store vertex
+    // and weight pair for every edge
+    list< pair<int, int> > *adj;
+
+public:
+    Graph(int V);  // Constructor
+
+    // function to add an edge to graph
+    void addEdge(int u, int v, int w);
+
+    // Print MST using Prim's algorithm
+    void primMST();
+};
+
+// Allocates memory for adjacency list
+Graph::Graph(int V)
+{
+    this->V = V;
+    adj = new list<iPair> [V];
+}
+
+void Graph::addEdge(int u, int v, int w)
+{
+    adj[u].push_back(make_pair(v, w));
+    adj[v].push_back(make_pair(u, w));
+}
+}
+
+
+int main()
+{
+    // create the graph given in above fugure
+    int V = 9;
+    Graph g(V);
+
+    //  making above shown graph
+    g.addEdge(0, 1, 4);
+    g.addEdge(0, 7, 8);
+    g.addEdge(1, 2, 8);
+    g.addEdge(1, 7, 11);
+    g.addEdge(2, 3, 7);
+    g.addEdge(2, 8, 2);
+    g.addEdge(2, 5, 4);
+    g.addEdge(3, 4, 9);
+    g.addEdge(3, 5, 14);
+    g.addEdge(4, 5, 10);
+    g.addEdge(5, 6, 2);
+    g.addEdge(6, 7, 1);
+    g.addEdge(6, 8, 6);
+    g.addEdge(7, 8, 7);
+
+    g.primMST();
+
+    return 0;
+}
+======== FUNCTORS ========
+
+Functors in C++
+3.6
+Please note that the title is Functors (Not Functions)!!
+
+Consider a function that takes only one argument. However, while calling this function we have a lot more information that we would like to pass to this function, but we cannot as it accepts only one parameter. What can be done?
+
+One obvious answer might be global variables. However, good coding practices do not advocate the use of global variables and say they must be used only when there is no other alternative.
+
+Functors are objects that can be treated as though they are a function or function pointer. Functors are most commonly used along with STLs in a scenario like following:
+
+Below program uses transform() in STL to add 1 to all elements of arr[].
+
+// A C++ program uses transform() in STL to add
+// 1 to all elements of arr[]
+#include <bits/stdc++.h>
+using namespace std;
+
+int increment(int x) {  return (x+1); }
+
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr)/sizeof(arr[0]);
+
+    // Apply increment to all elements of
+    // arr[] and store the modified elements
+    // back in arr[]
+    transform(arr, arr+n, arr, increment);
+
+    for (int i=0; i<n; i++)
+        cout << arr[i] << S" ";
+
+    return 0;
+}
+Run on IDE
+Output:
+
+2 3 4 5 6
+This code snippet adds only one value to the contents of the arr[]. Now suppose, that we want to add 5 to contents of arr[].
+
+See what’s happening? As transform requires a unary function(a function taking only one argument) for an array, we cannot pass a number to increment(). And this would, in effect, make us write several different functions to add each number. What a mess. This is where functors come into use.
+
+A functor (or function object) is a C++ class that acts like a function. Functors are called using the same old function call syntax. To create a functor, we create a object that overloads the operator().
+
+The line,
+MyFunctor(10);
+
+Is same as
+MyFunctor.operator()(10);
+Let’s delve deeper and understand how this can actually be used in conjunction with STLs.
+
+// C++ program to demonstrate working of
+// functors.
+#include <bits/stdc++.h>
+using namespace std;
+
+// A Functor
+class increment
+{
+private:
+    int num;
+public:
+    increment(int n) : num(n) {  }
+
+    // This operator overloading enables calling
+    // operator function () on objects of increment
+    int operator () (int arr_num) const {
+        return num + arr_num;
+    }
+};
+
+// Driver code
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    int to_add = 5;
+
+    transform(arr, arr+n, arr, increment(to_add));
+
+    for (int i=0; i<n; i++)
+        cout << arr[i] << " ";
+}
+Run on IDE
+Output:
+
+6 7 8 9 10
+Thus, here, Increment is a functor, a c++ class that acts as a function.
+
+
+The line,
+transform(arr, arr+n, arr, increment(to_add));
+
+is the same as writing below two lines,
+// Creating object of increment
+increment obj(to_add);
+
+// Calling () on object
+transform(arr, arr+n, arr, obj);
+Thus, an object a is created that overloads the operator(). Hence, functors can be used effectively in conjunction with C++ STLs.
+
+=====   MAP   =====
+
+Descending order in Map and Multimap of C++ STL
+2
+We have discussed map in C++ STL and multimap in C++ STL. The default behavior of these data structures is to store elements in ascending order. How to ensure reverse order or descending order when inserting elements in map and multimap.
+
+The idea is to greater function when an instance of map/multimap.
+
+Descending order in map:
+
+A map stores key value pairs. A self-balancing-BST (typically Red-Black tree) is used to implement it.
+Example:
+
+Input :  (10, "queen"), (20, "rose"),  (5," lion")
+Output : (20, "rose"),  (10, "queen"), (5," lion")
+// C++ program makes a map to store
+// elements in descending order.
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    // Here if greater<int> is used to make
+    // sure that elements are stored in
+    // ascending order of keys.
+    map<int, string, greater <int> > mymap;
+
+    // Inserting the elements one by one
+    mymap.insert(make_pair(10, "queen"));
+    mymap.insert(make_pair(20, "rose"));
+    mymap.insert(make_pair(5," lion"));
+
+    // begin() returns to the first value of map.
+    map<int,string> :: iterator it;
+    for (it=mymap.begin() ; it!=mymap.end() ; it++)
+        cout << "(" << (*it).first << ", "
+             << (*it).second << ")" << endl;
+
+    return 0;
+}
+Run on IDE
+Output:
+
+(20, rose)
+(10, queen)
+(5,  lion)
+Descending order in multimap:
+
+Multimap is similar to map with an addition that multiple elements can have same keys. Rather than each element being unique, the key value and mapped value pair has to be unique in this case.Example:
+Input :  (10, "queen"), (20, "rose"),  (5," lion"),
+         (20, "van"), (20, "watch"), (5, "joker")
+Output : (20, rose), (20, van), (20, watch),
+         (10, queen), (5,  lion), (5, joker)
+// C++ program makes a multimap to store
+// elements in descending order.
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    // Here if greater<int> is used to make
+    // sure that elements are stored in
+    // ascending order of keys.
+    multimap<int, string, greater <int> > mymap;
+
+    // Inserting the elements one by one
+    mymap.insert(make_pair(10, "queen"));
+    mymap.insert(make_pair(20, "rose"));
+    mymap.insert(make_pair(5," lion"));
+    mymap.insert(make_pair(20, "van")); // Duplicates allowed
+    mymap.insert(make_pair(20, "watch"));
+    mymap.insert(make_pair(5,"joker"));
+
+
+    // begin() returns to the first value of multimap.
+    multimap<int,string> :: iterator it;
+    for (it=mymap.begin() ; it!=mymap.end() ; it++)
+        cout << "(" << (*it).first << ", "
+             << (*it).second << ")" << endl;
+
+    return 0;
+}
+Run on IDE
+Output:
+
+(20, rose)
+(20, van)
+(20, watch)
+(10, queen)
+(5,  lion)
+(5, joker)
+=================   INSERT INTO BST ============
+
+// C program to demonstrate insert operation in binary search tree
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node
+{
+    int key;
+    struct node *left, *right;
+};
+
+// A utility function to create a new BST node
+struct node *newNode(int item)
+{
+    struct node *temp =  (struct node *)malloc(sizeof(struct node));
+    temp->key = item;
+    temp->left = temp->right = NULL;
+    return temp;
+}
+
+// A utility function to do inorder traversal of BST
+void inorder(struct node *root)
+{
+    if (root != NULL)
+    {
+        inorder(root->left);
+        printf("%d \n", root->key);
+        inorder(root->right);
+    }
+}
+
+/* A utility function to insert a new node with given key in BST */
+struct node* insert(struct node* node, int key)
+{
+    /* If the tree is empty, return a new node */
+    if (node == NULL) return newNode(key);
+
+    /* Otherwise, recur down the tree */
+    if (key < node->key)
+        node->left  = insert(node->left, key);
+    else if (key > node->key)
+        node->right = insert(node->right, key);
+
+    /* return the (unchanged) node pointer */
+    return node;
+}
+
+// Driver Program to test above functions
+int main()
+{
+    /* Let us create following BST
+              50
+           /     \
+          30      70
+         /  \    /  \
+       20   40  60   80 */
+    struct node *root = NULL;
+    root = insert(root, 50);
+    insert(root, 30);
+    insert(root, 20);
+    insert(root, 40);
+    insert(root, 70);
+    insert(root, 60);
+    insert(root, 80);
+
+    // print inoder traversal of the BST
+    inorder(root);
+
+    return 0;
+}
+
+
+
