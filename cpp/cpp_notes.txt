@@ -1,3 +1,81 @@
+
+http://ruder.io/optimizing-gradient-descent/
+https://medium.com/@amarbudhiraja/
+https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5
+
+http://www.techiedelight.com/find-pair-with-given-sum-array/
+http://www.techiedelight.com/top-30-data-structures-problems-technical-interview-preparation/
+http://www.techiedelight.com/counting-paths-on-grid-to-reach-destination-cell/
+https://gist.github.com/mycodeschool/
+
+http://yucoding.blogspot.com/
+
+http://yucoding.blogspot.com/2013/02/leetcode-question-121-valid-parentheses.html
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
+
+#include <stack>
+using namespace std;
+
+class Solution {
+public:
+    bool isValid(string s) {
+        stack<char> st;
+        for (int i = 0; i < s.length(); i ++) {
+            if ((s[i] == '(') || (s[i] == '[') || (s[i] == '{')) {
+                st.push(s[i]); // add to the stack
+            } else {
+                if (st.size() == 0) return false;
+                char top = st.top();
+                if (s[i] == ')') {
+                    if (top != '(') return false;
+                } else if (s[i] == ']') {
+                    if (top != '[') return false;
+                } else {
+                    if (top != '{') return false;
+                }
+                st.pop(); // remove a top element from the stack
+            }
+        }
+        return st.size() == 0;
+    }
+};
+
+
+Analysis:
+Idea is not complex.
+Use a stack to store the chars, scan from the 1st to the last char in string s.
+( [ { are free to push in the stack.
+When meets ) if stack top is (, then pop (.
+When meets ] if stack top is [, then pop [.
+When meets } if stack top is {, then pop {.
+Otherwise return false
+
+In the end, if the stack is empty, return true. (to handle "()(" case )
+
+
+A
+class Solution {
+public:
+    bool isValid(string s) {
+        // Start typing your C/C++ solution below
+        // DO NOT write int main() function
+        stack<char> st;
+        for (int i=0;i<s.size();i++){
+            if ((s[i]=='(') ||(s[i]=='[') ||(s[i]=='{')) {st.push(s[i]);}
+            else{
+                if (st.empty()){return false;}
+                if ((s[i]==')') && (st.top()!='(')) {return false;}
+                if ((s[i]=='{') && (st.top()!='}')) {return false;}
+                if ((s[i]=='[') && (st.top()!=']')) {return false;}
+                st.pop();
+            }
+
+        }
+        return st.empty();
+    }
+};
+
 https://www.geeksforgeeks.org/inorder-successor-in-binary-search-tree/
 
 ==== vector ====
