@@ -1001,9 +1001,35 @@ When meets } if stack top is {, then pop {.
 Otherwise return false
 
 In the end, if the stack is empty, return true. (to handle "()(" case )
+#include <iostream>
+#include <stack>
+using namespace std;
+int main(){
+    string s;
+    cin >> s;
+    int i,flag=1;
+    stack<char> mystack;
+    for(i=0;i<s.size();i++){
+        if( s[i]=='{' || s[i]=='[' || s[i]=='(' ){
+            mystack.push(s[i]);
+        }
+        else if(!mystack.empty() &&((mystack.top() == '{' && s[i] == '}') || (mystack.top() == '[' && s[i] == ']') || (mystack.top() == '(' && s[i] == ')')))
+                 mystack.pop();
+        else {
+            flag=0;
+            break;
+            }
+    }
 
+    if(flag == 0 || !mystack.empty())
+        cout<<"Un-Balanced"<<"\n";
+    else
+        cout<<"Balanced"<<"\n";
+    return 0;
+}
 
-A
+Another solution
+================
 class Solution {
 public:
     bool isValid(string s) {
