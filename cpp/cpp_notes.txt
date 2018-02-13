@@ -1,3 +1,959 @@
+std::shared_ptr<int> p1 = std::make_shared<int>();
+=========================
+#include <vector>
+int main()
+{
+	std::vector <std::vector<int> > vec2D(5, std::vector<int>(4, 1));
+
+	for(auto vec : vec2D)
+	{
+		for(auto x : vec)
+			std::cout<<x<<" , ";
+
+		std::cout << std::endl;
+	}
+
+	std::cout << std::endl;
+
+	for(int i = 0; i < 5; i++)
+		for(int j = 0; j < 5; j++)
+			vec2D[i][j] = i*j;
+
+	for(auto vec : vec2D)
+	{
+		for(auto x : vec)
+			std::cout<<x<<" , ";
+
+		std::cout << std::endl;
+	}
+
+
+	vec2D.push_back(std::vector<int>(4, 11));
+
+	std::cout << std::endl;
+
+	for(auto vec : vec2D)
+	{
+		for(auto x : vec)
+			std::cout<<x<<" , ";
+
+		std::cout << std::endl;
+	}
+	return 0;
+}
+
+===================
+#include <iostream>
+using namespace std;
+
+void reverse (char* str){
+   char* end=str;
+   char tmp;
+   while (*end) ++end;
+   --end;
+
+   while (str <end){
+   	 tmp=*str;
+   	 *str=*end;
+   	 str++;
+   	 *end=tmp;
+   	 end--;
+   }
+
+}
+
+int main() {
+	// your code goes here
+	char data[]="abcd";
+	cout << string(data) << endl;
+	reverse(data);
+	cout << string(data) << endl;
+	return 0;
+
+}
+============================
+
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+int main()
+{
+	std::vector<int> vecOfInts = {5,3,1,6,7,6,7,6,9,0,2,3,5};
+
+	// First Sort the given range to bring duplicate
+	// elements at consecutive positions
+	std::sort(vecOfInts.begin(), vecOfInts.end());
+
+
+	std::vector<int>::iterator newEnd;
+
+	// Override duplicate elements
+	newEnd = std::unique(vecOfInts.begin(), vecOfInts.end());
+
+	vecOfInts.erase(newEnd, vecOfInts.end());
+
+
+	std::for_each(vecOfInts.begin(), vecOfInts.end(),
+				[](int a) {
+					std::cout<<a<< " , ";
+				});
+
+	return 0;
+}
+=====================
+#include <unordered_map>
+#include <string>
+#include <iostream>
+
+int main() {
+	// Initialize an unordered_map through initializer_list
+	std::unordered_map<std::string, int> wordMap( { { "First", 1 }, { "Second",
+			2 }, { "Third", 3 }, { "Fourth", 4 }, { "Fifth", 5 } });
+
+	// Iterator pointing to first element in map
+	std::unordered_map<std::string, int>::iterator it = wordMap.begin();
+
+	// Erase all element whose key starts with letter 'F' in an iteration
+	while (it != wordMap.end()) {
+		// Check if key's first character is F
+		if (it->first[0] == 'F') {
+			// erase() function returns the iterator of the next
+			// to last deleted element.
+			it = wordMap.erase(it);
+		} else
+			it++;
+	}
+
+	for (auto element : wordMap)
+		std::cout << element.first << " :: " << element.second << std::endl;
+
+	return 1;
+}
+======================================
+#include <iostream>
+//using namespace std;
+
+void fibonacci(int n)
+{
+	int last = 0;
+	int secondLast = 0;
+	for(int i = 0; i < n ; i++)
+	{
+		int val = last + secondLast;
+		std::cout<<val<<",";
+		if(!val)
+			last = 1;
+		secondLast = last;
+		last = val;
+
+	}
+}
+int main()
+{
+	fibonacci(20);
+	std::cout<<std::endl;
+	return 0;
+}
+
+=====================
+#include <iostream>
+#include <iostream>
+#include <map>
+#include <string>
+#include <iterator>
+using namespace std;
+
+int main()
+{
+    map<string, int> mapOfWords;
+
+    mapOfWords.insert(make_pair("earth", 1));
+    mapOfWords.insert(make_pair("moon", 2));
+    mapOfWords["sun"] = 3;
+    // Will replace the value of already added key i.e. earth
+    mapOfWords["earth"] = 4;
+    // Iterate through all elements in std::map
+    //std::map<std::string, int>::iterator it = mapOfWords.begin();
+    auto it = mapOfWords.begin();
+    while(it != mapOfWords.end())
+    {
+        cout<<it->first<<" :: "<<it->second<< endl;
+        it++;
+    }
+    // Check if insertion is successful or not
+    if(mapOfWords.insert(make_pair("earth", 1)).second == false)
+    {
+        cout<<"Element with key 'earth' not inserted because already existed"<< endl;
+    }
+    // Searching element in std::map by key.
+    if(mapOfWords.find("sun") != mapOfWords.end())
+         cout<<"word 'sun' found"<< endl;
+    if(mapOfWords.find("mars") == mapOfWords.end())
+         cout<<"word 'mars' not found"<< endl;
+    return 0;
+}
+
+https://www.geeksforgeeks.org/c-plus-plus/
+https://github.com/haoel/leetcode
+https://helloacm.com/coding-exercise-cjava-leetcode-online-judge-two-sum-hashmap/
+https://helloacm.com/how-to-find-kth-largest-element-in-an-array-c-coding-exercise/
+https://helloacm.com/cc-coding-exercise-power-of-three-leetcode/
+http://www.learncpp.com/cpp-tutorial/74a-returning-values-by-value-reference-and-address/
+
+https://www.geeksforgeeks.org/c-plus-plus/
+
+Almost any existing operator in C++ can be overloaded. The exceptions are: conditional (?:), sizeof, scope (::), member selector (.), and member pointer selector (.*).
+
+Second, you can only overload the operators that exist. You can not create new operators or rename existing operators. For example, you could not create an operator ** to do exponents.
+
+Third, at least one of the operands in an overloaded operator must be a user-defined type. This means you can not overload the plus operator to work with one integer and one double. However, you could overload the plus operator to work with an integer and a Mystring.
+
+Fourth, it is not possible to change the number of operands an operator supports.
+
+Even though friend functions are not members of the class, they can still be defined inside the class if desired:
+
+ You can overload the + operator to concatenate your user-defined string class, or add two Fraction class objects together. You can overload the << operator to make it easy to print your class to the screen (or a file). You can overload the equality operator (==) to compare two class objects. This makes operator overloading one of the most useful features in C++ -- simply because it allows you to work with your classes in a more intuitive way.
+
+// note: this function is not a member function!
+Cents operator+(const Cents &c1, const Cents &c2)
+{
+	// use the Cents constructor and operator+(int, int)
+	// we can access m_cents directly because this is a friend function
+	return Cents(c1.m_cents + c2.m_cents);
+}
+
+#include <iostream>
+
+class Cents
+{
+private:
+	int m_cents;
+
+public:
+	Cents(int cents) { m_cents = cents; }
+
+	// add Cents + Cents using a friend function
+	friend Cents operator+(const Cents &c1, const Cents &c2);
+
+	int getCents() const { return m_cents; }
+};
+
+
+Using a friend function to overload an operator is convenient because it gives you direct access to the internal members of the classes you’re operating on. In the initial Cents example above, our friend function version of operator+ accessed member variable m_cents directly.
+
+#include <iostream>
+#include <vector>
+
+int main() {
+    try {
+        std::cout << "Throwing an integer exception...\n";
+        throw 42;
+    } catch (int i) {
+        std::cout << " the integer exception was caught, with value: " << i << '\n';
+    }
+
+    try {
+        std::cout << "Creating a vector of size 5... \n";
+        std::vector<int> v(5);
+        std::cout << "Accessing the 11th element of the vector...\n";
+        std::cout << v.at(10); // vector::at() throws std::out_of_range
+    } catch (const std::exception& e) { // caught by reference to base
+        std::cout << " a standard exception was caught, with message '"
+                  << e.what() << "'\n";
+    }
+
+}
+
+#include <iostream>
+#include <string>
+
+class Car
+{
+private:
+    std::string m_make;
+    std::string m_model;
+
+public:
+    Car(std::string make, std::string model)
+        : m_make(make), m_model(model)
+    {
+    }
+
+    friend bool operator== (const Car &c1, const Car &c2);
+    friend bool operator!= (const Car &c1, const Car &c2);
+};
+
+bool operator== (const Car &c1, const Car &c2)
+{
+    return (c1.m_make== c2.m_make &&
+            c1.m_model== c2.m_model);
+}
+
+bool operator!= (const Car &c1, const Car &c2)
+{
+    return !(c1== c2);
+}
+
+int main()
+{
+    Car corolla ("Toyota", "Corolla");
+    Car camry ("Toyota", "Camry");
+
+    if (corolla == camry)
+        std::cout << "a Corolla and Camry are the same.\n";
+
+    if (corolla != camry )
+        std::cout << "a Corolla and Camry are not the same.\n";
+
+    return 0;
+}
+
+
+STATIC
+=======
+ Unlike normal member variables, static member variables are shared by all objects of the class. Consider the following program, similar to the above:
+
+Because static member functions are not attached to a particular object, they can be called directly by using the class name and the scope resolution operator. Like static member variables, they can also be called through objects of the class type, though this is not recommended.
+
+Static member functions have no *this pointer
+
+Static member functions have two interesting quirks worth noting. First, because static member functions are not attached to an object, they have no this pointer! This makes sense when you think about it -- the this pointer always points to the object that the member function is working on. Static member functions do not work on an object, so the this pointer is not needed.
+
+Second, static member functions can directly access other static members (variables or functions), but not non-static members. This is because non-static members must belong to a class object, and static member functions have no class object to work with!
+
+
+Explicitly referencing *this
+
+Most of the time, you never need to explicitly reference the “this” pointer. However, there are a few occasions where doing so can be useful:
+
+First, if you have a constructor (or member function) that has a parameter with the same name as a member variable, you can disambiguate them by using “this”:
+
+
+class Something
+{
+private:
+    int data;
+
+public:
+    Something(int data)
+    {
+        this->data = data;
+    }
+};
+Note that our constructor is taking a parameter of the same name as a member variable. In this case, “data” refers to the parameter, and “this->data” refers to the member variable. Although this is acceptable coding practice, we find using the “m_” prefix on all member variable names provides a better solution by preventing duplicate names altogether!
+
+Chaining member functions
+
+Second, it can sometimes be useful to have a class member function return the object it was working with as a return value. The primary reason to do this is to allow a series of member functions to be “chained” together, so several member functions can be called on the same object! You’ve actually been doing this for a long time. Consider this common example where you’re outputting more than one bit of text using std::cout:
+
+1
+std::cout << "Hello, " << userName;
+In this case, std::cout is an object, and operator<< is a member function that operates on that object. The compiler evaluates the above snippet like this:
+
+1
+(std::cout << "Hello, ") << userName;
+First, operator<< uses std::cout and the string literal “Hello, ” to print “Hello, ” to the console. However, since this is part of an expression, operator<< also need to return a value (or void). If operator<< returned void, you’d end up with this:
+
+1
+(void) << userName;
+which clearly doesn’t make any sense (and the compiler would throw an error). However, instead, operator<< returns *this, which in this context is just std::cout. That way, after the first operator<< has been evaluated, we get:
+
+1
+(std::cout) << userName;
+which then prints the user’s name.
+
+In this way, we only need to specify the object (in this case, std::cout) once, and each function call passes it on to the next function to work with, allowing us to chain multiple commands together.
+
+We can implement this kind of behavior ourselves. Consider the following class:
+
+
+class Calc
+{
+private:
+    int m_value;
+
+public:
+    Calc() { m_value = 0; }
+
+    void add(int value) { m_value += value; }
+    void sub(int value) { m_value -= value; }
+    void mult(int value) { m_value *= value; }
+
+    int getValue() { return m_value; }
+};
+If you wanted to add 5, subtract 3, and multiply by 4, you’d have to do this:
+
+
+11
+#include <iostream>
+int main()
+{
+    Calc calc;
+    calc.add(5); // returns void
+    calc.sub(3); // returns void
+    calc.mult(4); // returns void
+
+    std::cout << calc.getValue() << '\n';
+    return 0;
+}
+However, if we make each function return *this, we can chain the calls together. Here is the new version of Calc with “chainable” functions:
+
+
+class Calc
+{
+private:
+    int m_value;
+
+public:
+    Calc() { m_value = 0; }
+
+    Calc& add(int value) { m_value += value; return *this; }
+    Calc& sub(int value) { m_value -= value; return *this; }
+    Calc& mult(int value) { m_value *= value; return *this; }
+
+    int getValue() { return m_value; }
+};
+Note that add(), sub() and mult() are now returning *this. Consequently, this allows us to do the following:
+
+
+#include <iostream>
+int main()
+{
+    Calc calc;
+    calc.add(5).sub(3).mult(4);
+
+    std::cout << calc.getValue() << '\n';
+    return 0;
+}
+
+RAII
+
+RAII (Resource Acquisition Is Initialization) is a programming technique whereby resource use is tied to the lifetime of objects with automatic duration (e.g. non-dynamically allocated objects). In C++, RAII is implemented via classes with constructors and destructors. A resource (such as memory, a file or database handle, etc…) is typically acquired in the object’s constructor (though it can be acquired after the object is created if that makes sense). That resource can then be used while the object is alive. The resource is released in the destructor, when the object is destroyed. The primary advantage of RAII is that it helps prevent resource leaks (e.g. memory not being deallocated) as all resource-holding objects are cleaned up automatically.
+
+Under the RAII paradigm, objects holding resources should not be dynamically allocated. This is because destructors are only called when an object is destroyed. For objects allocated on the stack, this happens automatically when the object goes out of scope, so there’s no need to worry about a resource eventually getting cleaned up. However, for dynamically allocated objects, the user is responsible for deletion -- if the user forgets to do that, then the destructor will not be called, and the memory for both the class object and the resource being managed will be leaked!
+
+The IntArray class at the top of this lesson is an example of a class that implements RAII -- allocation in the constructor, deallocation in the destructor. std::string and std::vector are examples of classes in the standard library that follow RAII -- dynamic memory is acquired on initialization, and cleaned up automatically on destruction.
+
+Rule: If your class dynamically allocates memory, use the RAII paradigm, and don’t allocate objects of your class dynamically
+
+
+
+
+Starting with C++11, it’s possible to give normal class member variables (those that don’t use the static keyword) a default initialization value directly
+
+#include <cassert>
+assert(found && "Car could not be found in database");
+
+ the exit() function and assert() function (if it triggers) terminate the program immediately, without a chance to do any further cleanup (e.g. close a file or database).
+
+ static_assert(sizeof(long) == 8, "long must be 8 bytes");
+
+
+ Although std::vector can be used as a dynamic array, it can also be used as a stack. To do this, we can use 3 functions that match our key stack operations:
+
+push_back() pushes an element on the stack.
+back() returns the value of the top element on the stack.
+pop_back() pops an element off the stack.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int *ptr = new int; // ptr is assigned 4 bytes in the heap
+    int *array = new int[10]; // array is assigned 40 bytes in the heap
+    cout << sizeof (ptr)  << endl;   // 8 8 bytes on 64 bit platform
+    cout <<  sizeof (*ptr) << endl;  // 4
+    return 0;
+}
+
+Assignment operator
+ MyClass& MyClass::operator=( const MyClass& other ) {
+      x = other.x;
+      c = other.c;
+      s = other.s;
+      return *this;
+  }
+
+// C++ code to demonstrate the working of binary_search()
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    // initializing vector of integers
+    vector<int> arr = {10, 15, 20, 25, 30, 35};
+
+    // using binary_search to check if 15 exists
+    if (binary_search(arr.begin(), arr.end(), 15))
+       cout << "15 exists in vector";
+    else
+       cout << "15 does not exist";
+
+    cout << endl;
+
+    // using binary_search to check if 23 exists
+    if (binary_search(arr.begin(), arr.end(), 23))
+         cout << "23 exists in vector";
+    else
+         cout << "23 does not exist";
+
+    cout << endl;
+}
+
+http://www.learncpp.com/cpp-tutorial/6-14-pointers-to-pointers/
+
+As you can see here, value is destroyed just after its address is returned to the caller. The end result is that the caller ends up with the address of non-allocated memory (a dangling pointer), which will cause problems if used. This is a common mistakes that new programmers make. Many newer compilers will give a warning (not an error) if the programmer tries to return a local variable by address -- however, there are quite a few ways to trick the compiler into letting you do something illegal without generating a warning, so the burden is on the programmer to ensure the address they are returning will be to a valid variable after the function returns.
+
+Return by address is often used to return dynamically allocated memory to the caller:
+
+
+int* allocateArray(int size)
+{
+    return new int[size];
+}
+
+int main()
+{
+    int *array = allocateArray(25);
+
+    // do stuff with array
+
+    delete[] array;
+    return 0;
+}
+This works because dynamically allocated memory does not go out of scope at the end of the block in which it is declared, so that memory will still exist when the address is returned back to the caller.
+
+When to use return by address:
+
+When returning dynamically allocated memory
+When returning function arguments that were passed by address
+When not to use return by address:
+
+When returning variables that were declared inside the function (use return by value)
+When returning a large struct or class that was passed by reference (use return by reference)
+=======================
+MAP
+=======================
+Use std::map when
+You need ordered data.
+You would have to print/access the data (in sorted order).
+
+// CPP program to demonstrate use of std::map
+#include <bits/stdc++.h>
+
+int main()
+{
+    // Ordered map
+    std::map<int, int> order;
+
+    // Mapping values to keys
+    order[5] = 10;
+    order[3] = 5;
+    order[20] = 100;
+    order[1] = 1;
+
+    // Iterating the map and printing ordered values
+    for (auto i = order.begin(); i != order.end(); i++) {
+        std::cout << i->first << " : " << i->second << '\n';
+    }
+}
+
+
+
+
+
+#include <iostream>
+
+int main()
+{
+    int fibonacci[] = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 };
+    for (auto number : fibonacci) // type is auto, so number has its type deduced from the fibonacci array
+       std::cout << number << ' ';
+
+    return 0;
+}
+For-each loops and references
+
+In the for-each examples above, our element declarations are declared by value:
+
+1
+2
+3
+    int array[5] = { 9, 7, 5, 3, 1 };
+    for (auto element: array) // element will be a copy of the current array element
+        std::cout << element << ' ';
+This means each array element iterated over will be copied into variable element. Copying array elements can be expensive, and most of the time we really just want to refer to the original element. Fortunately, we can use references for this:
+
+1
+2
+3
+    int array[5] = { 9, 7, 5, 3, 1 };
+    for (auto &element: array) // The ampersand makes element a reference to the actual array element, preventing a copy from being made
+        std::cout << element << ' ';
+In the above example, element will be a reference to the currently iterated array element, avoiding having to make a copy. Also any changes to element will affect the array being iterated over, something not possible if element is a normal variable.
+
+And, of course, it’s a good idea to make your element const if you’re intending to use it in a read-only fashion:
+
+1
+2
+3
+    int array[5] = { 9, 7, 5, 3, 1 };
+    for (const auto &element: array) // element is a const reference to the currently iterated array element
+        std::cout << element << ' ';
+==============
+
+
+// A Class to represent directed graph
+class Graph
+{
+    int V;    // No. of vertices
+
+    // adj[u][v] would be true if there is an edge
+    // from u to v, else false
+    bool **adj;
+
+public:
+    Graph(int V);   // Constructor
+
+    // function to add an edge to graph
+    void addEdge(int u, int v)  { adj[u][v] = true; }
+    void print();
+};
+
+Graph::Graph(int V)
+{
+    this->V = V;
+
+    // Create a dynamic array of pointers
+    adj = new bool* [V];
+
+    // Create a row for every pointer
+    for (int i=0; i<V; i++)
+    {
+       // Note : Rows may not be contiguous
+       adj[i] = new bool[V];
+
+       // Initialize all entries as false to indicate
+       // that there are no edges initially
+       memset(adj[i], false, V*sizeof(bool));
+    }
+}
+
+// Utility method to print adjacency matrix
+void Graph::print()
+{
+   for (int u=0; u<V; u++)
+   {
+      for (int v=0; v<V; v++)
+         cout << adj[u][v] << " ";
+      cout << endl;
+   }
+}
+
+// Driver method
+int main()
+{
+    // Create a graph given in the above diagram
+    Graph g(4);
+    g.addEdge(0, 1);
+    g.addEdge(0, 2);
+    g.addEdge(1, 2);
+    g.addEdge(2, 0);
+    g.addEdge(2, 3);
+    g.addEdge(3, 3);
+
+    g.print();
+
+    return 0;
+}
+Run on IDE
+Output :
+
+0 1 1 0
+0 0 1 0
+1 0 0 1
+0 0 0 1
+=================================
+
+The volatile keyword informs the compiler that a variable may change without the compiler knowing it. Variables that are declared as volatile will not be cached by the compiler, and will thus always be read from memory.
+
+The mutable keyword can be used for class member variables. Mutable variables are allowed to change from within const member functions of the class.
+
+
+A const member function is one which isn’t allowed to modify the members of the object for which it is called. A static member function is one which can’t be called for a specific object.
+
+Thus, the const modifier for a static member function is meaningless, because there is no object associated with the call.
+
+
+Storage class:
+=================
+A class that specifies the life and scope of its variables and functions is called a storage class.
+
+
+In C++ following the storage classes are supported: auto, static, register, extern, and mutable.
+
+Storage class are used to specify the visibility/scope and life time of symbols(functions and variables). That means, storage classes specify where all a variable or function can be accessed and till what time those variables will be available during the execution of program.
+
+mutable storage class can be used only on non static non const data a member of a class. Mutable data member of a class can be modified even is it's part of an object which is declared as const.
+class Test
+{
+    public:
+        Test(): x(1), y(1) {};
+        mutable int x;
+        int y;
+};
+
+int main()
+{
+    const Test object;
+    object.x = 123;
+    //object.y = 123;
+    /*
+     * The above line if uncommented, will create compilation error.
+     */
+    cout<< "X:"<< object.x << ", Y:" << object.y;
+    return 0;
+}
+
+Output:-
+X:123, Y:1
+In the above example, we are able to change the value of member variable x though it's part of an object which is declared as const. This is because the variable x is declared as mutable. But if you try to modify the value of member variable y, compiler will throw error.
+
+You can find the summary of c++ storage class specifiers below
+C++ Storage Specifier	Storage Location	Scope Of Variable	Life Time
+auto	Memory (RAM)	Local	With in function
+static	Memory (RAM)	Local	Life time is from when the flow reaches the first declaration to the termination of program.
+register	CPU register	Local	With in function
+extern	Memory (RAM)	Global	Till the end of main program
+
+
+Virtual destructors are used for the same purpose as virtual functions. When you remove an object of subclass, which is referenced by a parent class pointer, only destructor of base class will get executed. But if the destructor is defined using virtual keyword, both the destructors [ of parent and sub class ] will get invoked.
+
+
+Pointers	Reference Variables
+Pointers can be assigned to NULL	References cannot be assigned NULL. It should always be associated with actual memory, not NULL.
+Pointers can be (re)pointed to any object, at any time, any number of times during the execution.	Reference variables should be initialized with an object when they are created and they cannot be reinitialized to refer to another object
+Pointer has own memory address and location on stack	Reference variables has location on stack, but shares the same memory location with the object it refer to.
+
+
+A more detailed explanation of this reason comes from the C programming language. In C, there were no classes and member functions, so all functions were global. A member function call is translated to a global function call. Consider a member function like this:
+
+24. What is meant by reference variable in C++?
+
+In C++, reference variable allows you create an alias (second name) for an already existing variable. A reference variable can be used to access (read/write) the original data. That means, both the variable and reference variable are attached to same memory location. In effect, if you change the value of a variable using reference variable, both will get changed (because both are attached to same memory location).
+How to create a reference variable in C++
+Appending an ampersand (&) to the end of datatype makes a variable eligible to use as reference variable.
+
+int a = 20;
+int& b = a;
+
+Copy Costructor
+===============
+        class SampleClass{
+            public:
+                int* ptr;
+                SampleClass();
+                // Copy constructor declaration
+                SampleClass(SampleClass &obj);
+        };
+
+
+
+vector vec;
+/* ... .. ... */
+for (auto itr = vec.begin(); itr != vec.end(); ++itr) {
+	itr->print();
+}
+
+(*ptr).age  = 5;
+ptr->age = 5;
+
+void changeN(const int &ref){
+	ref = 6; // not allowed, ref is const
+}
+
+struct Employee
+{
+    short id;
+    int age;
+    double wage;
+};
+
+
+http://www.learncpp.com/
+
+enum Color
+{
+    COLOR_BLACK,
+    COLOR_RED,
+    COLOR_BLUE,
+    COLOR_MAGENTA, // see note about trailing comma on the last enumerator below
+}; // however the enum itself must end with a semicolon
+
+// Define a few variables of enumerated type Color
+Color paint = COLOR_WHITE;
+Color house(COLOR_BLUE);
+
+
+
+void foo(const int &x) // x is a const reference
+{
+    x = 6;  // compile error: a const reference cannot have its value changed!
+}
+
+#include <iostream>
+#include <unordered_set>
+
+using namespace std;
+void foo(int &value) {value +=1;}
+void pfoo(int *value) {*value +=1;}
+
+int main(){
+    int value = 5;
+    cout << "value = " << value << '\n';
+    foo(value);
+    cout << "value = " << value << '\n';
+    pfoo(&value);
+    cout << "value = " << value << '\n';
+    return 0;
+}
+
+
+    bool isPowerOfThree(int n) {
+        std::unordered_set<int> list = {1, 3, 9, 27, 81, 243, 729, 2187, 6561, 19683, 59049, 177147, 531441, 1594323, 4782969, 14348907, 43046721, 129140163, 387420489, 1162261467};
+        return list.find(n) != list.end();
+    }
+
+
+
+
+
+    int findKthLargest(vector<int>& nums, int k) {
+        sort(nums.begin(), nums.end());
+        return nums[nums.size() - k];
+    }
+
+
+
+#include <iostream>
+#include <string>
+
+#include <stack>
+using namespace std;
+
+bool isValid(string s) {
+        stack<char> st;
+        for (int i = 0; i < s.length(); i ++) {
+            if ((s[i] == '(') || (s[i] == '[') || (s[i] == '{')) {
+                st.push(s[i]); // add to the stack
+            } else {
+                if (st.size() == 0) return false;
+                char top = st.top();
+                if (s[i] == ')') {
+                    if (top != '(') return false;
+                } else if (s[i] == ']') {
+                    if (top != '[') return false;
+                } else {
+                    if (top != '{') return false;
+                }
+                st.pop(); // remove a top element from the stack
+            } // end if not open bracket
+        } // end for loop
+        return st.size() == 0;
+}
+
+int main () {
+  cout << isValid("XXX") << endl;
+  cout << isValid("[]") << endl;
+  cout << isValid("[{]") << endl;
+
+  return 0;
+}
+
+
+
+// unordered_map::find
+#include <iostream>
+#include <string>
+#include <unordered_map>
+
+int main ()
+{
+  std::unordered_map<std::string,double> mymap = {
+     {"mom",5.4},
+     {"dad",6.1},
+     {"bro",5.9} };
+
+  std::string input="mom";
+  auto got = mymap.find (input);
+
+  if ( got == mymap.end() )
+    std::cout << "not found";
+  else
+    std::cout << got->first << " is " << got->second;
+
+  std::cout << std::endl;
+
+  return 0;
+}
+FIND: Average case: constant.
+Worst case: linear in container size.
+=========================================
+
+Single element insertions:
+Average case: constant.
+Worst case: linear in container size.
+Multiple elements insertion:
+Average case: linear in the number of elements inserted.
+Worst case: N*(size+1): number of elements inserted times the container size plus one.
+May trigger a rehash (not included in the complexity above).
+
+// unordered_map::insert
+#include <iostream>
+#include <string>
+#include <unordered_map>
+
+int main ()
+{
+  std::unordered_map<std::string,double> myrecipe,
+              mypantry = {{"milk",2.0},{"flour",1.5}};
+
+  std::pair<std::string,double> myshopping ("baking powder",0.3);
+
+  myrecipe.insert (myshopping);                        // copy insertion
+  myrecipe.insert (std::make_pair<std::string,double>("eggs",6.0)); // move insertion
+  myrecipe.insert (mypantry.begin(), mypantry.end());  // range insertion
+  myrecipe.insert ( {{"sugar",0.8},{"salt",0.1}} );    // initializer list insertion
+
+  std::cout << "myrecipe contains:" << std::endl;
+  for (auto& x: myrecipe)
+    std::cout << x.first << ": " << x.second << std::endl;
+
+  std::cout << std::endl;
+  return 0;
+}
+=================
+map:insert   If a single element is inserted, logarithmic in size in general, but amortized constant if a hint is given and the position given is the optimal.
+Insert elements
+Extends the container by inserting new elements, effectively increasing the container size by the number of elements inserted.
+
+Because element keys in a map are unique, the insertion operation checks whether each inserted element has a key equivalent to the one of an element already in the container, and if so, the element is not inserted, returning an iterator to this existing element (if the function returns a value).
+
+For a similar container allowing for duplicate elements, see multimap.
+
+An alternative way to insert elements in a map is by using member function map::operator[].
+
+Internally, map containers keep all their elements sorted by their key following the criterion specified by its comparison object. The elements are always inserted in its respective position following this ordering.
+
+
+
+
+
+
 http://alumni.cs.ucr.edu/~lyan/c++interviewquestions.pdf
 https://www.programiz.com/cpp-programming/examples
 https://www.programiz.com/cpp-programming/examples/matrix-multiplication
@@ -952,7 +1908,23 @@ http://ruder.io/optimizing-gradient-descent/
 https://medium.com/@amarbudhiraja/
 https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5
 
+
+Find 2 elements  to get  sum problem
+====================================
 http://www.techiedelight.com/find-pair-with-given-sum-array/
+Brut force : O (n2)
+public int[] twoSum(int[] nums, int target) {
+    for (int i = 0; i < nums.length; i++) {
+        for (int j = i + 1; j < nums.length; j++) {
+            if (nums[j] == target - nums[i]) {
+                return new int[] { i, j };
+            }
+        }
+    }
+    throw new IllegalArgumentException("No two sum solution");
+}
+
+
 http://www.techiedelight.com/top-30-data-structures-problems-technical-interview-preparation/
 http://www.techiedelight.com/counting-paths-on-grid-to-reach-destination-cell/
 https://gist.github.com/mycodeschool/
