@@ -564,8 +564,8 @@ int main()
 
 
 
-
-
+LOOP
+==============
 #include <iostream>
 
 int main()
@@ -580,27 +580,21 @@ For-each loops and references
 
 In the for-each examples above, our element declarations are declared by value:
 
-1
-2
-3
     int array[5] = { 9, 7, 5, 3, 1 };
     for (auto element: array) // element will be a copy of the current array element
         std::cout << element << ' ';
 This means each array element iterated over will be copied into variable element. Copying array elements can be expensive, and most of the time we really just want to refer to the original element. Fortunately, we can use references for this:
 
-1
-2
-3
+
     int array[5] = { 9, 7, 5, 3, 1 };
     for (auto &element: array) // The ampersand makes element a reference to the actual array element, preventing a copy from being made
         std::cout << element << ' ';
+
 In the above example, element will be a reference to the currently iterated array element, avoiding having to make a copy. Also any changes to element will affect the array being iterated over, something not possible if element is a normal variable.
 
 And, of course, it’s a good idea to make your element const if you’re intending to use it in a read-only fashion:
 
-1
-2
-3
+
     int array[5] = { 9, 7, 5, 3, 1 };
     for (const auto &element: array) // element is a const reference to the currently iterated array element
         std::cout << element << ' ';
