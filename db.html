@@ -50,6 +50,126 @@ ON ( A.i=B.i and A.data='2010-10-05' and B.data='2010-10-05') ;
 +------+------------+------+------------+
 4 rows in set (0.00 sec)
 
+http://www.windowfunctions.com/
+
+CREATE TABLE cats(
+   name varchar(10),
+   breed varchar(10),
+   weight float,
+   color varchar(10),
+   age int
+);
+
+Q1 RUNNING TOTAL:
+The cats must by ordered by name and will enter an elevator one by one. We would like to know what the running total weight is.
+=================
+select name, sum(weight)
+over (order by name) as running_total_weight
+from cats order by name
+
+
+Q2: Partitioned Running Totals
+==================================
+The cats must by ordered first by breed and second by name. They are about to enter an elevator one by one. When all the cats of the same breed have entered they leave.
+
+We would like to know what the running total weight of the cats is.
+
+
+select name, breed, sum(weight)
+over (partition by breed order by name) as running_total_weight from cats
+
+
+Q3: Counting
+==========
+The cats form a line grouped by color. Inside each color group the cats order themselves by name. Every cat must have a unique number for its place in the line.
+
+We must assign each cat a unique number while maintaining their color & name ordering.
+
+select row_number() over (order by color,name) as unique_number, name, color from cats
+
+
+Q4: Ordering
+==================
+We would like to find the fattest cat. Order all our cats by weight.
+
+The two heaviest cats should both be 1st. The next heaviest should be 3rd.
+
+Return: ranking, weight, name
+Order by: ranking, name desc
+
+
+select rank() over (order by weight desc) as ranking, weight, name
+from cats order by ranking, name DESC
+
+
+Q5: Quartiles
+==============
+We are worried our cats are too fat and need to diet.
+We would like to group the cats into quartiles by their weight.
+Return: name, weight, weight_quartile
+Order by: weight
+
+select name, weight, ntile(4) over ( order by weight) as weight_quartile from cats order by weight_quartile, name
+
+
+Q6: Ranking
+=====================
+For cats age means seniority, we would like to rank the cats by age (oldest first).
+However we would like their ranking to be sequentially increasing.
+Return: ranking, name, age
+Order by: ranking, name
+select dense_rank() over (order by age DESC) as r, name,age from cats order by r, name
+
+Q7 Compare to Previous Row
+==============================
+Cats are fickle. Each cat would like to lose weight to be the equivalent weight of the cat weighing just less than it.
+
+Print a list of cats, their weights and the weight difference between them and the nearest lighter cat ordered by weight.
+
+Return: name, weight, weight_to_lose
+Order by: weight
+
+select name, weight, coalesce(weight - lag(weight, 1) over (order by weight), 0) as weight_to_lose FROM cats order by weight
+
+
+Q8: Compare to Previous Row Part 2
+=================================
+The cats now want to lose weight according to their breed. Each cat would like to lose weight to be the equivalent weight of the cat in the same breed weighing just less than it.
+
+Print a list of cats, their breeds, weights and the weight difference between them and the nearest lighter cat of the same breed.
+
+Return: name, breed, weight, weight_to_lose
+Order by: weight
+
+select name, breed, weight, coalesce(weight - lag(weight, 1) over (partition by breed order by weight), 0) as weight_to_lose from cats order by weight, name
+
+
+Q9: First of each Group
+==========================
+Cats are vain. Each cat would like to pretend it has the lowest weight for its color.
+
+Print cat name, color and the minimum weight of cats with that color.
+
+Return: name, color, lowest_weight_by_color
+Order by: color, name
+
+select name, color, first_value(weight) over (partition by color order by weight) as lowest_weight_by_color from cats order by color, name
+
+
+Q10: Using the Window clause
+===============================
+This SQL function can be made simpler by using the WINDOW statement. Please try and use the WINDOW clause.
+
+Each cat would like to see what half, third and quartile they are in for their weight.
+
+Return: name, weight, by_half, thirds, quartile
+Order by: weight
+
+select name, weight, ntile(2) over ntile_window as by_half, ntile(3) over ntile_window as thirds, ntile(4) over ntile_window as quart from cats window ntile_window AS ( ORDER BY weight)
+
+
+
+
 <h2>MVCC (MultiVersion Concurrency Control)</h2>
 https://en.wikipedia.org/wiki/Multiversion_concurrency_control
 http://elliot.land/post/sql-transaction-isolation-levels-explained
