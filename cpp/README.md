@@ -12,7 +12,7 @@ clang++ -Wall -std=c++11 boolean_matrix.cpp -o test
 
 g++ -std=c++11 boolean_matrix.cpp
 
-https://github.com/CppCon/CppCon2017
+<https://github.com/CppCon/CppCon2017>
 
 ### Constructor
 
@@ -32,7 +32,7 @@ A derived class constructor always calls a base class constructor.
 
             HashMap& operator=(HashMap&&) = delete;
 
-https://codeofconnor.wordpress.com/2017/09/12/pass-by-reference-vs-pass-by-value-in-cpp/
+<https://codeofconnor.wordpress.com/2017/09/12/pass-by-reference-vs-pass-by-value-in-cpp/>
 
 ### STL
 
@@ -52,7 +52,8 @@ https://stackoverflow.com/questions/26446352/what-is-the-difference-between-unor
 
 https://crascit.com/2016/08/15/avoiding-copies-and-moves-with-auto/
 
-for certain functions, like vector<T>::push_back using move constructors/assignments of T instead of copy constructors/assignments can dramatically increase performance.
+for certain functions, like vector<T>::push_back using move constructors/assignments of T instead of copy constructors/assignments
+can dramatically increase performance.
 
 ### auto
 
@@ -66,8 +67,9 @@ for certain functions, like vector<T>::push_back using move constructors/assignm
 
 ### map
 
-http://thispointer.com/map-vs-unordered_map-when-to-choose-one-over-another/
+<http://thispointer.com/map-vs-unordered_map-when-to-choose-one-over-another/>
 
+<http://thispointer.com/c11-unordered_map-erase-elements-while-iterating-in-a-loop/>
 
 Here is the usual way of doing insert/overwrite in map:
 
@@ -87,11 +89,11 @@ vector <vector <int> > grid (3, vector(4,0))    //  grid size: 3x4 initialized b
 
 <http://www.stroustrup.com/Programming/Matrix/Matrix.h>
 
-https://www.techsoftpl.com/matrix/index.php
+<https://www.techsoftpl.com/matrix/index.php>
 
 https://github.com/lindahua/light-matrix
 
-http://matrix.drque.net/
+<http://matrix.drque.net/>
 
 https://www.mrericsir.com/blog/technology/c-2d-generic-array-class/
 
@@ -101,9 +103,9 @@ https://www.youtube.com/watch?v=tJRGKR4_yAM
 
 https://www.codeproject.com/Articles/3613/A-generic-reusable-and-extendable-matrix-class
 
-https://stackoverflow.com/questions/10764961/c-matrix-class-template
+<https://stackoverflow.com/questions/10764961/c-matrix-class-template>
 
-https://codereview.stackexchange.com/questions/142815/generic-matrix-type-in-c
+<https://codereview.stackexchange.com/questions/142815/generic-matrix-type-in-c>
 
 ### Memory managment:  shared_ptr  weak_ptr  unique_ptr
 
@@ -117,7 +119,7 @@ https://genbattle.bitbucket.io/blog/2016/02/06/Modern-C-Memory-Management-With-u
 4. Condition codes
 5. Compare and swap
 
-http://thispointer.com/c11-multithreading-tutorial-series/
+<http://thispointer.com/c11-multithreading-tutorial-series/>
 
 https://www.codeproject.com/Articles/1177478/Thread-Wrapper-CPP
 
