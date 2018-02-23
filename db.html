@@ -50,6 +50,21 @@ ON ( A.i=B.i and A.data='2010-10-05' and B.data='2010-10-05') ;
 +------+------------+------+------------+
 4 rows in set (0.00 sec)
 
+
+<h2>Window functions</h2>
+https://oracle-base.com/articles/misc/analytic-functions
+https://hashrocket.com/blog/posts/sql-window-functions
+https://blog.jooq.org/2014/04/29/nosql-no-sql-how-to-calculate-running-totals/
+https://blog.jooq.org/2013/11/03/probably-the-coolest-sql-feature-window-functions/
+
+SELECT
+  employee_name,
+  employee_id,
+  salary,
+  rank() OVER(PARTITION BY dept ORDER BY salary DESC),
+  100.0*salary/sum(salary) OVER (PARTITION BY dept)
+FROM employee;
+
 http://www.windowfunctions.com/
 
 CREATE TABLE cats(
@@ -209,24 +224,12 @@ from MyTable limit 60
 
 
 
-<h2>Window functions</h2>
-https://oracle-base.com/articles/misc/analytic-functions
-https://hashrocket.com/blog/posts/sql-window-functions
-https://blog.jooq.org/2014/04/29/nosql-no-sql-how-to-calculate-running-totals/
-https://blog.jooq.org/2013/11/03/probably-the-coolest-sql-feature-window-functions/
-
-SELECT
-  employee_name,
-  employee_id,
-  salary,
-  rank() OVER(PARTITION BY dept ORDER BY salary DESC),
-  100.0*salary/sum(salary) OVER (PARTITION BY dept)
-FROM employee;
 
 
 
 <h2>Cassandra</h2>
 https://blog.emumba.com/apache-cassandra-part-1-introduction-and-key-features-18d02ba0b8cc
+https://medium.com/techlogs/using-apache-cassandra-a-few-things-before-you-start-ac599926e4b8
 append-only store
 compaction tumbstone (deleted marker)
 
