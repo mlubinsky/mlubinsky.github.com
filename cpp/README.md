@@ -1,10 +1,12 @@
-- https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md
+<https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md>
 
 <http://www.modernescpp.com/> 2 books here
+
 <https://www.amazon.com/Advanced-Interview-Questions-Youll-Likely/dp/1946383708> C++ book
 
 <https://habrahabr.ru/post/182920/>
-https://www.codeproject.com/Articles/1170503/The-Impossibly-Fast-Cplusplus-Delegates-Fixed
+
+<https://www.codeproject.com/Articles/1170503/The-Impossibly-Fast-Cplusplus-Delegates-Fixed>
 
 clang++ -Wall -std=c++11 boolean_matrix.cpp -o test
 
@@ -16,9 +18,9 @@ https://github.com/CppCon/CppCon2017
 
 A derived class constructor always calls a base class constructor.
 
-https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)
+<https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)>
 
-https://msdn.microsoft.com/en-us/library/s16xw1a8.aspx
+<https://msdn.microsoft.com/en-us/library/s16xw1a8.aspx>
 
  Disable Copy and Move :
 
@@ -34,11 +36,11 @@ https://codeofconnor.wordpress.com/2017/09/12/pass-by-reference-vs-pass-by-value
 
 ### STL
 
-http://thispointer.com/stl-tutorials-and-interview-questions/
+<http://thispointer.com/stl-tutorials-and-interview-questions/>
 
-http://www.techiedelight.com/data-structures-and-algorithms-interview-questions-stl/
+<http://www.techiedelight.com/data-structures-and-algorithms-interview-questions-stl/>
 
-https://qualapps.blogspot.com/2010/07/safely-using-erase-in-stl.html
+<https://qualapps.blogspot.com/2010/07/safely-using-erase-in-stl.html>
 
 ### STL container: How to avoid the temporary object creation
 
@@ -59,7 +61,7 @@ for certain functions, like vector<T>::push_back using move constructors/assignm
 3. auto   -  use a bare auto if the loop body really needs a copy of the item so it can make local modifications without affecting the items being iterated over, or if the items are known to always be built in types like int, double, etc. which are trivially cheap to copy.
 
 ### set
-http://thispointer.com/using-unordered_set-with-custom-hasher-and-comparision-function/
+<http://thispointer.com/using-unordered_set-with-custom-hasher-and-comparision-function/>
 
 
 ### map
@@ -81,16 +83,26 @@ std::unordered_map uses hashing, so the lookup is O(1) for the default-construct
 
 ### Matrix
 vector <vector <int> > grid (3, vector(4,0))    //  grid size: 3x4 initialized by 0
-http://cpptruths.blogspot.com/2011/10/multi-dimensional-arrays-in-c11.html
-http://www.stroustrup.com/Programming/Matrix/Matrix.h
+<http://cpptruths.blogspot.com/2011/10/multi-dimensional-arrays-in-c11.html>
+
+<http://www.stroustrup.com/Programming/Matrix/Matrix.h>
+
 https://www.techsoftpl.com/matrix/index.php
+
 https://github.com/lindahua/light-matrix
+
 http://matrix.drque.net/
+
 https://www.mrericsir.com/blog/technology/c-2d-generic-array-class/
+
 https://hackernoon.com/c-investigation-arrays-vs-vectors-e9ba864468b6
+
 https://www.youtube.com/watch?v=tJRGKR4_yAM
+
 https://www.codeproject.com/Articles/3613/A-generic-reusable-and-extendable-matrix-class
+
 https://stackoverflow.com/questions/10764961/c-matrix-class-template
+
 https://codereview.stackexchange.com/questions/142815/generic-matrix-type-in-c
 
 ### Memory managment:  shared_ptr  weak_ptr  unique_ptr
@@ -151,7 +163,7 @@ http://jovislab.com/blog/?p=33
 
 ### Keywords: noexept delete final default override mutable...
 
-http://www.geeksforgeeks.org/c-mutable-keyword/
+<http://www.geeksforgeeks.org/c-mutable-keyword/>
 
 class A {
 
