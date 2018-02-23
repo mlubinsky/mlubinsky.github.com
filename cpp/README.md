@@ -1,4 +1,4 @@
-https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md
+- https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md
 
 http://www.modernescpp.com/   2 books here
 https://www.amazon.com/Advanced-Interview-Questions-Youll-Likely/dp/1946383708 C++ book
