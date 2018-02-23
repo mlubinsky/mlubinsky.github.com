@@ -1,9 +1,9 @@
 - https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md
 
-http://www.modernescpp.com/   2 books here
-https://www.amazon.com/Advanced-Interview-Questions-Youll-Likely/dp/1946383708 C++ book
+ - http://www.modernescpp.com/   2 books here
+- https://www.amazon.com/Advanced-Interview-Questions-Youll-Likely/dp/1946383708 C++ book
 
-https://habrahabr.ru/post/182920/
+-https://habrahabr.ru/post/182920/
 https://www.codeproject.com/Articles/1170503/The-Impossibly-Fast-Cplusplus-Delegates-Fixed
 
 clang++ -Wall -std=c++11 boolean_matrix.cpp -o test
