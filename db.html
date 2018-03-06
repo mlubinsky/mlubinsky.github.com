@@ -14,6 +14,17 @@ http://neerc.ifmo.ru/wiki/index.php?title=%D0%91%D0%BE%D1%80
 https://thomaswdinsmore.com/2017/02/01/year-in-sql-engines/
 https://www.pilosa.com/docs/latest/introduction/  distributed bitmap index
 
+<h2>ORACLE </h2>
+https://livesql.oracle.com
+https://blogs.oracle.com/sql/how-to-convert-rows-to-columns-and-back-again-with-sql-aka-pivot-and-unpivot
+select TABLE_NAME from user_tables
+
+select * from sometable where rownum <= 10 order by name
+
+select * from
+( select * from emp   order by sal desc )
+where ROWNUM <= 5;
+
 <h2>SQL</h2>
 Differennce between ON and WHERE clause:
 CREATE TABLE A( i int, val int,  data varchar(16) );
@@ -50,6 +61,23 @@ ON ( A.i=B.i and A.data='2010-10-05' and B.data='2010-10-05') ;
 +------+------------+------+------------+
 4 rows in set (0.00 sec)
 
+
+http://www.mysqltutorial.org/mysql-row_number/
+
+<h2>Running total</h2>
+select
+    a.date,
+    sum(b.sales) as cumulative_sales
+from sales_table a
+join sales_table b on a.date >= b.date
+group by a.date
+order by a.date;
+
+Using window function:
+select
+    date,
+    sum(sales) over (order by date rows unbounded preceding) as cumulative_sales
+from sales_table;
 
 <h2>Window functions</h2>
 https://oracle-base.com/articles/misc/analytic-functions
