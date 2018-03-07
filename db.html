@@ -9,6 +9,8 @@ https://simonwillison.net/2018/Jan/17/datasette-publish/	datasette
 https://news.ycombinator.com/item?id=16170892               datasette
 https://habrahabr.ru/post/346884/ in memory
 
+https://habrahabr.ru/company/ruvds/blog/350310/  Caching
+
 https://habrahabr.ru/company/mailru/blog/267469/   type-ahead hints in dropdown
 http://neerc.ifmo.ru/wiki/index.php?title=%D0%91%D0%BE%D1%80
 https://thomaswdinsmore.com/2017/02/01/year-in-sql-engines/
@@ -341,6 +343,7 @@ log-structured merge trees (LSMT)
 LSM trees  just dumping stuff at the end of an array. However this means you have to scan that array to do lookups (as opposed to something easier like binary search). Then as your array gets big, you merge and flush it down to a lower "layer" of the lsm tree which is slightly bigger and sorted. And when that one fills, you flush further. And these merge-flushes are nice big sequential writes so that's nice too.
 http://neovintage.org/2016/04/07/data-modeling-in-cassandra-from-a-postgres-perspective/
 
+https://www.goetas.com/blog/how-i-approached-software-development-and-why-i-prefer-postgresql-to-mysql/
 
 <h2>TimeSeries</h2>
 https://blog.outlyer.com/top10-open-source-time-series-databases
