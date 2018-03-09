@@ -323,3 +323,106 @@ def anagramSolution4(s1,s2):
 
 print(anagramSolution4('apple','pleap'))
 
+==========================
+random element from stream
+==========================
+
+import random
+
+def pick(big_stream):
+    random_element = None
+
+    for i, e in enumerate(big_stream):
+        if i == 0:
+            random_element = e
+        elif random.randint(1, i + 1) == 1:
+            random_element = e
+    return random_element
+
+=============
+Fibbonacci
+=============
+def fibonacci(n):
+    if n <= 1:
+        return 1
+    return fibonacci(n - 1) + fibonacci(n - 2)
+Of course, this is really slow (O(2^N)) – we are doing a lot of repeated computations! We can do it a lot faster by just computing iteratively:
+
+def fibonacci(n):
+    a, b = 1, 2
+    for _ in range(n - 1):
+        a, b = b, a + b
+    return a
+
+===========================
+Stock cell/buy only once
+==========================
+http://p-nand-q.com/python/algorithms/searching/max-profit.html
+
+https://www.geeksforgeeks.org/maximum-difference-between-two-elements/
+ Given an array represents cost of a stock on each day. You are allowed to buy and sell the stock only once.
+ Write an algorithm to maximize the profit in single buy and sell.
+
+prices = [100, 113, 110, 85, 105, 102, 86, 63, 81, 101, 94, 106, 101, 79, 94, 90, 97]
+result = 0
+minSofar = prices[0]
+for i in range(1, len(prices)):
+    minSofar = min(minSofar, prices[i])
+    result = max (result, prices[i] - minSofar)
+
+print result
+
+--------
+prices = [100, 113, 110, 85, 105, 102, 86, 63, 81, 101, 94, 106, 101, 79, 94, 90, 97]
+prices = iter(prices)
+
+result = 0
+minSofar = next(prices)
+for price in prices:
+    minSofar = min(minSofar, price)
+    result = max (result, price - minSofar)
+
+print result
+
+-----------
+def profits(prices):
+    prices = iter(prices)
+    least = next(prices)
+    yield 0
+    for price in prices:
+        least = min(least, price)
+        yield price - least
+------------
+
+prices = [100, 113, 110, 85, 105, 102, 86, 63, 81, 101, 94, 106, 101, 79, 94, 90, 97]
+print max(profits(prices))
+
+--------------------------
+import accumulate from itertools
+profit = max(p - m for p, m in zip(prices, accumulate(prices, min)))
+
+-------------------
+def maxDiff(arr, arr_size):
+    max_diff = arr[1] - arr[0]
+    min_element = arr[0]
+
+    for i in range( 1, arr_size ):
+        if (arr[i] - min_element > max_diff):
+            max_diff = arr[i] - min_element
+
+        if (arr[i] < min_element):
+            min_element = arr[i]
+    return max_diff
+
+# Driver program to test above function
+arr = [1, 2, 6, 80, 100]
+size = len(arr)
+print ("Maximum difference is",
+        maxDiff(arr, size))
+
+
+===========================
+Stock cell/buy 2 times
+https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/
+https://stackoverflow.com/questions/44634395/maximum-profit-by-buying-and-selling-a-share-exactly-k-times
+==========================
