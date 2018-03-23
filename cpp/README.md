@@ -82,9 +82,12 @@ if (!rv.second)
 
 std::unordered_map uses hashing, so the lookup is O(1) for the default-constructed map (ie when there is a single item in every bucket). Once collisions are allowed (ie when you have k items in each bucket), each lookup would be take O(k) steps.
 
+### Heap and priority queue
+<https://www.fluentcpp.com/2018/03/20/heaps-and-priority-queues-in-c-part-3-queues-and-priority-queues/>
 
 ### Matrix
 vector <vector <int> > grid (3, vector(4,0))    //  grid size: 3x4 initialized by 0
+
 <http://cpptruths.blogspot.com/2011/10/multi-dimensional-arrays-in-c11.html>
 
 <http://www.stroustrup.com/Programming/Matrix/Matrix.h>
@@ -109,7 +112,15 @@ https://www.codeproject.com/Articles/3613/A-generic-reusable-and-extendable-matr
 
 ### Memory managment:  shared_ptr  weak_ptr  unique_ptr
 
-https://genbattle.bitbucket.io/blog/2016/02/06/Modern-C-Memory-Management-With-unique-ptr/
+<https://techtalk-test.intersec.com/2013/07/memory-part-1-memory-types/>
+
+<https://techtalk-test.intersec.com/2013/07/memory-part-2-understanding-process-memory/>
+
+<https://techtalk-test.intersec.com/2013/08/memory-part-3-managing-memory/>
+
+<https://techtalk-test.intersec.com/2013/10/memory-part-4-intersecs-custom-allocators/>
+
+<https://genbattle.bitbucket.io/blog/2016/02/06/Modern-C-Memory-Management-With-unique-ptr/>
 
 ### Threads
 
@@ -160,8 +171,10 @@ http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.219.7269&rep=rep1&type=
 ### Hash
 http://www.idryman.org/blog/2017/05/03/writing-a-damn-fast-hash-table-with-tiny-memory-footprints/
 
-### Debug printing
-http://jovislab.com/blog/?p=33
+### Debug  
+https://techtalk.intersec.com/2018/03/improved-debugging-with-rr/
+
+<http://jovislab.com/blog/?p=33>
 
 ### Keywords: noexept delete final default override mutable...
 
