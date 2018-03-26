@@ -12,3 +12,5 @@ If there is no index.html, then the files in the directory will be listed.
 If you wish to change the port  from default (8000) then specify it explicitly:
 
  python -m SimpleHTTPServer 8080
+
+https://itnext.io/javascript-real-time-visualization-of-high-frequency-streams-d6533c774794
