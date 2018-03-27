@@ -149,14 +149,26 @@ https://yakking.branchable.com/posts/basic-networking/
 https://yakking.branchable.com/tags/network/
 https://eli.thegreenplace.net/2017/concurrent-servers-part-1-introduction/
 
-TCP/IP is a two-part system, functioning as the Internet’s fundamental “control system”. IP stands for Internet Protocol; its job is to send and route packets to other computers using the IP headers (i.e. the IP addresses) on each packet. The second part, Transmission Control Protocol (TCP), is responsible for breaking the message or file into smaller packets, routing packets to the correct application on the destination computer using the TCP headers, resending the packets if they get lost on the way, and reassembling the packets in the correct order once they’ve reached the other end.
+TCP/IP is a two-part system, functioning as the Internet’s fundamental “control system”. 
+IP stands for Internet Protocol; its job is to send and route packets to other computers using the IP headers 
+(i.e. the IP addresses) on each packet. 
+The second part, 
+Transmission Control Protocol (TCP), is responsible for breaking the message or file into smaller packets, 
+routing packets to the correct application on the destination computer using the TCP headers, 
+resending the packets if they get lost on the way, and reassembling the packets in the correct order once they’ve reached the other end.
 https://habrahabr.ru/company/odnoklassniki/blog/266005/
 
 <h2>gRPC</h2>
 http://www.grpc.io/
 https://medium.com/@shijuvar/building-high-performance-apis-in-go-using-grpc-and-protocol-buffers-2eda5b80771b
 
-Unlike JSON and XML, Protocol Buffers are not just message interchange format, it’s also used for describing the service interfaces (service endpoints). Thus Protocol Buffers are used for both the service interface and the structure of the payload messages. In gRPC, you define services and its methods along with payload messages. Like a typical communication between a client application and a RPC system, a gRPC client application can directly call methods on a remote server as if it was a local object in your client application.
+Unlike JSON and XML, Protocol Buffers are not just message interchange format, 
+it’s also used for describing the service interfaces (service endpoints). 
+Thus Protocol Buffers are used for both the service interface and the structure of the payload messages. 
+
+In gRPC, you define services and its methods along with payload messages. 
+Like a typical communication between a client application and a RPC system, 
+a gRPC client application can directly call methods on a remote server as if it was a local object in your client application.
 
 <h2>Web</h2>
 https://habrahabr.ru/company/oleg-bunin/blog/340114/
@@ -178,7 +190,9 @@ http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/
 10. The browser sends further asynchronous (AJAX) requests
 
 
-Your browser has a rendering engine that’s responsible for displaying the content. The rendering engine receives the content of the resources in small chunks. Then there’s an HTML parsing algorithm that tells the browser how to parse the resources.
+Your browser has a rendering engine that’s responsible for displaying the content. 
+The rendering engine receives the content of the resources in small chunks. 
+Then there’s an HTML parsing algorithm that tells the browser how to parse the resources.
 
 https://medium.com/@christophelimpalair/developers-what-you-should-know-about-web-performance-550cef1040d8
 https://medium.com/gitconnected/debounce-in-javascript-improve-your-applications-performance-5b01855e086
@@ -202,12 +216,17 @@ Compress everything you can compress
 https://developers.google.com/web/tools/chrome-devtools/console/console-reference#timestamp
 
 ‘measuring performance’ can be separated into two things:
-1) A single measurable number that can be used to support a discussion about performance. It can be used to set priorities, and be tracked over time. It is an indicator of overall performance, and does not aim to capture all the nuance of a site’s performance. I will call this the “key performance indicator”.
+1) A single measurable number that can be used to support a discussion about performance. 
+It can be used to set priorities, and be tracked over time. 
+It is an indicator of overall performance, and does not aim to capture all the nuance of a site’s performance. 
+I will call this the “key performance indicator”.
 
 
 Example: for  KPI, you decide you will measure the time it takes until a user can begin reading the text on your page
 
-2) Something to help  the web developers, understand where time is being spent loading our site, in all different conditions, and to guide us when improving performance. It doesn’t need to be recorded or reported in any formal way. I will call this the “ad hoc assessment of factors impacting a site’s performance with the aim of improving said performance”.
+2) Something to help  the web developers, understand where time is being spent loading our site, in all different conditions, 
+and to guide us when improving performance. It doesn’t need to be recorded or reported in any formal way. 
+I will call this the “ad hoc assessment of factors impacting a site’s performance with the aim of improving said performance”.
 
 
 <h2>Java Performance</h2>
@@ -234,11 +253,15 @@ https://habrahabr.ru/company/getintent/blog/302910/
 
 
 сборщики мусора:
-Java Heap space is divided in to two regions Young and Old. The Young generation is meant to hold short-lived objects while the Old generation is intended for objects with longer lifetimes.
+Java Heap space is divided in to two regions Young and Old. 
+The Young generation is meant to hold short-lived objects while the Old generation is intended for objects with longer lifetimes.
 
 The Young generation is further divided into three regions [Eden, Survivor1, Survivor2].
 
-A simplified description of the garbage collection procedure: When Eden is full, a minor GC is run on Eden and objects that are alive from Eden and Survivor1 are copied to Survivor2. The Survivor regions are swapped. If an object is old enough or Survivor2 is full, it is moved to Old. Finally when Old is close to full, a full GC is invoked.
+A simplified description of the garbage collection procedure: 
+When Eden is full, a minor GC is run on Eden and objects that are alive from Eden and Survivor1 are copied to Survivor2. 
+The Survivor regions are swapped. If an object is old enough or Survivor2 is full, it is moved to Old. 
+Finally when Old is close to full, a full GC is invoked.
 
 1. Serial Garbage Collector  -XX:+UseSerialGC
 2. Parallel Garbage Collector
@@ -249,7 +272,8 @@ CMS позволяет значительно сокращать задержк�
 - Фрагментация памяти
 - Высокий allocation rate
 
-Положительно повлиять на первый параметр можно путем контролирования promotion rate показателя. Для этого необходимо определить, какой объем объектов попадает в Tenured, а какой «умирает молодым» в Eden области.
+Положительно повлиять на первый параметр можно путем контролирования promotion rate показателя. 
+Для этого необходимо определить, какой объем объектов попадает в Tenured, а какой «умирает молодым» в Eden области.
 
 Тестирование производилось со следующими параметрами:
 -XX:+UseConcMarkSweepGC
