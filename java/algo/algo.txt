@@ -1,4 +1,5 @@
 http://cslibrary.stanford.edu/
+http://www.idryman.org/blog/2017/07/04/learn-hash-table-the-hard-way/
 https://medium.com/engineering-brainly/locality-sensitive-hashing-explained-304eb39291e4  Local sensitive hash
 https://sagi.io/2017/07/bloom-filters-for-the-perplexed/
 https://news.ycombinator.com/item?id=15346337
