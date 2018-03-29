@@ -10,6 +10,56 @@ http://massivealgorithms.blogspot.com/
 http://ruslanledesma.com/
 http://algorithms.tutorialhorizon.com/
 
+Prints an alphabetized list of its command-line arguments with duplicates eliminated:
+--------------------------------------------------------------------------------------
+ 
+public class WordList { 
+  public static void main( String[] args) { 
+   Set < String > s = new TreeSet < >(); 
+   Collections.addAll( s, args); 
+   System.out.println( s); 
+  } 
+}
+
+public enum Apple { FUJI, PIPPIN, GRANNY_SMITH }
+public enum Orange { NAVEL, TEMPLE, BLOOD }
+
+
+public interface Comparable < T > { int compareTo( T t); }
+
+
+Before Java 8 - use anonymous class to sort list of strings in order of length  - obsolete
+------------------------------------------------
+Collections.sort( words, new Comparator < String >() { 
+     public int compare( String s1, String s2) { 
+           return Integer.compare( s1. length(), s2. length());
+     }
+  } 
+)
+
+  In Java 8, the language formalized the notion that interfaces with a single abstract method 
+are special and deserve special treatment. 
+These interfaces are now known as functional interfaces, and the language allows you to create
+instances of these interfaces using lambda expressions, or lambdas for short. 
+Lambdas are similar in function to anonymous classes, but far more concise. 
+Here’s how the code snippet above looks with the anonymous class replaced by a lambda. 
+
+Lambdas are limited to functional interfaces.
+-----------------------------------------------------
+  
+The boilerplate is gone, and the behavior is clearly evident:  
+Lambda expression as function object (replaces anonymous class) 
+
+Collections.sort( words, (s1, s2) -> Integer.compare( s1. length(), s2. length())); 
+Collections.sort( words, comparingInt( String:: length));
+words.sort( comparingInt( String:: length));
+
+  
+Note that the types of the lambda (Comparator < String >), of its parameters (s1 and s2, both String), 
+and of its return value (int) are not present in the code. 
+The compiler deduces these types from context, using a process known as type inference.
+
+
 ==============================
  Find Loops in a Linked-List
 ============================
