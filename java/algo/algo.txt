@@ -20,15 +20,16 @@ public class WordList {
    System.out.println( s); 
   } 
 }
-
+ENUMS
+--------------------
 public enum Apple { FUJI, PIPPIN, GRANNY_SMITH }
 public enum Orange { NAVEL, TEMPLE, BLOOD }
 
 
-public interface Comparable < T > { int compareTo( T t); }
 
 
-Before Java 8 - use anonymous class to sort list of strings in order of length  - obsolete
+Before Java 8 - use anonymous class to sort list of strings in order of length
+obsolete example:
 ------------------------------------------------
 Collections.sort( words, new Comparator < String >() { 
      public int compare( String s1, String s2) { 
@@ -39,6 +40,9 @@ Collections.sort( words, new Comparator < String >() {
 
   In Java 8, the language formalized the notion that interfaces with a single abstract method 
 are special and deserve special treatment. 
+
+public interface Comparable < T > { int compareTo( T t); }
+
 These interfaces are now known as functional interfaces, and the language allows you to create
 instances of these interfaces using lambda expressions, or lambdas for short. 
 Lambdas are similar in function to anonymous classes, but far more concise. 
@@ -83,14 +87,19 @@ return false;
 
 public interface Queue<E>
 extends Collection<E>
-A collection designed for holding elements prior to processing. Besides basic Collection operations, queues provide additional insertion, extraction, and inspection operations. Each of these methods exists in two forms: one throws an exception if the operation fails, the other returns a special value (either null or false, depending on the operation). The latter form of the insert operation is designed specifically for use with capacity-restricted Queue implementations; in most implementations, insert operations cannot fail.
-Throws exception	Returns special value
-Insert	add(e)	offer(e)
-Remove	remove()	poll()
-Examine	element()	peek()
-Queues typically, but do not necessarily, order elements in a FIFO (first-in-first-out) manner. Among the exceptions are priority queues, which order elements according to a supplied comparator, or the elements' natural ordering, and LIFO queues (or stacks) which order the elements LIFO (last-in-first-out). Whatever the ordering used, the head of the queue is that element which would be removed by a call to remove() or poll(). In a FIFO queue, all new elements are inserted at the tail of the queue. Other kinds of queues may use different placement rules. Every Queue implementation must specify its ordering properties.
+A collection designed for holding elements prior to processing. 
+Besides basic Collection operations, queues provide additional insertion, extraction, and inspection operations. 
+Each of these methods exists in two forms: one throws an exception if the operation fails, the other returns a special value (either null or false, depending on the operation). The latter form of the insert operation is designed specifically for use with capacity-restricted Queue implementations; in most implementations, insert operations cannot fail.
+Throws exception	 | Returns special value
+----------------------------------------
+Insert	add(e)	    |  offer(e)
+Remove	remove()	  |  poll()
+Examine	element()	|  peek()
 
-The offer method inserts an element if possible, otherwise returning false. This differs from the Collection.add method, which can fail to add an element only by throwing an unchecked exception. The offer method is designed for use when failure is a normal, rather than exceptional occurrence, for example, in fixed-capacity (or "bounded") queues.
+Queues typically, but do not necessarily, order elements in a FIFO (first-in-first-out) manner. Among the exceptions are priority queues, which order elements according to a supplied comparator, or the elements' natural ordering, and LIFO queues (or stacks) which order the elements LIFO (last-in-first-out). 
+Whatever the ordering used, the head of the queue is that element which would be removed by a call to remove() or poll(). In a FIFO queue, all new elements are inserted at the tail of the queue. Other kinds of queues may use different placement rules. Every Queue implementation must specify its ordering properties.
+
+The offer() method inserts an element if possible, otherwise returning false. This differs from the Collection.add() method, which can fail to add an element only by throwing an unchecked exception. The offer() method is designed for use when failure is a normal, rather than exceptional occurrence, for example, in fixed-capacity (or "bounded") queues.
 
 The remove() and poll() methods remove and return the head of the queue. Exactly which element is removed from the queue is a function of the queue's ordering policy, which differs from implementation to implementation. The remove() and poll() methods differ only in their behavior when the queue is empty: the remove() method throws an exception, while the poll() method returns null.
 
