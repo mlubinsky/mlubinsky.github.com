@@ -12,6 +12,18 @@
 <a href=https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997>Effective Java</a>
 <a href=https://www.itu.dk/~sestoft/javaprecisely/>Java Precisely</a>
 
+<h2>Concurrency</h2>
+A JVM runs in a single process and threads in a JVM share the heap belonging to that process. 
+That is why several threads may access the same object. Threads share the heap and have their own stack space. 
+This is how one thread’s invocation of a method and its local variables are kept thread safe from other threads. 
+But the heap is not thread-safe and must be synchronized for thread safety.
+There are following ways to create threads in Java
+1) Extending the java.lang.Thread class.
+2) Implementing the java.lang.Runnable interface.
+3) Implementing the java.util.concurrent.Callable interface with the java.util.concurrent.Executor framework to pool the threads. 
+  The java.util.concurrent package was added in Java 5. 
+4) Using the Fork/Join Pool 
+
 <a href=http://www.vogella.com/tutorials/JavaConcurrency/article.html>Concurrency (Vogella)</a>
 <a href=http://tutorials.jenkov.com/java-concurrency/index.html>Concurrency (Jenkov)</a>
 
@@ -46,7 +58,8 @@ interface Collection<E> extends Iterable<E>
    Iterator<E> iterator()
 }
 List Set Queue interfaces extends Collection
-List:
+
+<h2>List</h2>
   E set ( int index, E e)
   void add(int i, E e)
   get
@@ -61,7 +74,8 @@ List:
 ArraList implements List, RandomAccess
 Vector is as ArrayList but syncronised
 LinkList implements List, Queue (double linked list, good for implementing stack and queue)
-
+   
+<h2>Set </h2>
 interface SortedSet<E> extends Set<E> {
   SortedSet<E> subSet(E from, E to)
   SortedSet<E> headSet(E from, E to)
@@ -84,7 +98,7 @@ Hashtable - threadsafe, not allows null key
 LinkedHashMap - maintains the order of insertion
 TreeMap - sorted
 
-
+<h2>Queue</h2>
 interface Queue<E> extends Collection<E>{
   boolean add(E e) - throws exception if failure
   boolean offer(E e)  - return false if failue
