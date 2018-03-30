@@ -1,0 +1,78 @@
+
+http://codercareer.blogspot.com/p/amazon-questions.html
+http://puzzlefry.com/puzzles/great-strategy-can-only-save-life/
+http://puzzlefry.com/2015/08/top-25-tech-interview-puzzles-with-answers/
+https://apps.topcoder.com/wiki/display/tc/SRM+591#PyramidSequences
+
+Fenweek Tree
+https://en.wikipedia.org/wiki/Fenwick_tree
+https://www.topcoder.com/community/data-science/data-science-tutorials/binary-indexed-trees/
+
+
+1) -40 degreeC =-40 degree F ( I could recollect this interesting  fact)
+2) 37 degreeC =98.6 degree F (Body Temperature)
+--------------------------------------------------
+Sorting
+---------------------
+https://www.hackerearth.com/notes/sorting-code-monk/
+
+https://www.quora.com/What-is-the-fastest-sorting-algorithm-with-the-least-complexity/answer/Manohar-Reddy-Poreddy
+
+Radix Vs QuickSort
+Unlike radix sort, quicksort is universal, while radix sort is only useful for fix length integer keys.
+
+Counting sort gives you an O(n) for sorting integers assuming n is small say less than a billion.
+
+nloglogn
+------------
+This is pretty fast for sorting in which case can be considered the fastest sorting algorithm for integers.
+ There is a clear winner – the algorithm presented in the paper
+ “Sorting In Linear Time?” by A. Andersson, T. Hagerup, S. Nilsson, and R. Raman 
+ (Proceedings of the 27th Annual ACM Symposium on the Theory of Computing, 1995). 
+ It sorts n integers in time proportional to n log log n.
+ 
+Even though the n log log n time-sorting algorithm came about as a theoretical game, its real-life performance is good. 
+A C implementation like nloglogn.c with no particular optimizations runs faster on a typical 32-bit machine
+than many standard textbook sorting algorithms.
+http://www.csc.kth.se/~snilsson/software/nloglogn.c
+
+Unlike radix sort, quicksort is universal, while radix sort is only useful for fix length integer keys.
+
+Double pivot Quick Sort : this is the algorithm which java 1.7 uses for sorting .
+ The algorithm offers O(n log(n)) performance on many data sets that cause otherr quicksorts to degrade to quadratic performance, 
+ and is typically faster than traditional (one-pivot) Quicksort implementations
+
+there are three case for any algorithm.
+1)best case [get output in minimum time]
+2)average case [algorithm take average time]
+3)worst case [get output in maximum time]
+
+So if you sort an array by merge sort or quick sort both required same time to sort that array.(according to theory)
+Both have O(n*log n) complexity in best case and average case [ NOTE : here log is to the base 2 ] , 
+in worst case quick sort have O(2^n) complexity and merge sort have O(Nlon N).
+so in worst case merge sort gives better output.
+
+
+In merge sort we required one more array to merge and sort but in quick sort there are no need of another array.
+By space wise quick sort gives better result .
+
+
+For "real" data like people name lists or street addresses or experimental data, TimSort shines, 
+because it bakes this assumption in of "almost sorted" data and leverages it to do less work.
+
+For a random list of integers from 1-1,000,000, the fastest "algorithm" is to just generate the list of integers again, 
+rather than comparing them.
+
+For large N, and strictly numeric, I'm going to elect KD Neubert FlashSort as my favorite go-to algorithm. 
+It's a distribution sort, along the lines of BucketSort.
+It whips QuickSort on ALL numeric datasets for large enough N.
+It is impervious to potentially pathological behavior exhibited by QuickSort. But for strictly comparison-based algorithms, yes, 
+Yaroslavsky Dual-pivot QuickSort and MergeSort are wonderfully efficient and adaptable to all data types.
+
+Funnelsort, which is O(n log n), is at least fastest in some cases.
+I guess any new algorithm is made because it's fastest in some cases, and for Funnelsort, 
+it's when your array is much bigger than you cache. Even bigger than your RAM.
+There's also Lazy Funnelsort, and maybe more later variants.
+I also have my eye on Samplesort (and Smoothsort). It's an older idea, that wasn't better than some other,
+but with the memory wall getting more critical, it (and others) are now better relatively 
+(again for large arrays, but as often done you can switch to another algorithm, when your array is smaller or do a hybrid, 
