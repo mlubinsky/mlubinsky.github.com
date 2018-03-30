@@ -26,7 +26,7 @@ There are following ways to create threads in Java
 
 <a href=http://www.vogella.com/tutorials/JavaConcurrency/article.html>Concurrency (Vogella)</a>
 <a href=http://tutorials.jenkov.com/java-concurrency/index.html>Concurrency (Jenkov)</a>
-
+https://www.pixelstech.net/article/1521976430-Java-Concurrency-Basics:-CountDownLatch-and-CyclicBarrier
 
 <a href=https://www.pluralsight.com/guides/java-and-j2ee/programming-with-assertions-in-java>Assertion</a>
 
@@ -307,6 +307,7 @@ ThreadLocal class
 daemon thread -low priority; garbage collector
 
 <h2>ForkJoinPools</h2>
+https://www.java-success.com/10-%E2%99%A6-executorservice-vs-forkjoin-future-vs-completablefuture-interview-qa/
 
 <h2>CompletableFuture</h2>
 <a href=https://habrahabr.ru/post/213319/>Ru</a>
@@ -336,7 +337,47 @@ daemon thread -low priority; garbage collector
  f.get()    // returns result if complete
 
 
-Java SE8, we can use the DoubleAccumulator and the DoubleAdder new classes that allow us to have multiple threads updating the same variable,
+------
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.atomic.AtomicInteger;
+ 
+class Counter implements Callable<String> {
+ 
+    private static final int THREAD_POOL_SIZE = 2;
+    private AtomicInteger count = new AtomicInteger();
+ 
+    // method where the thread execution takes place
+    public String call() {
+        return Thread.currentThread().getName() + " executing ..." + count.incrementAndGet(); //Consumer
+    }
+ 
+    public static void main(String[] args) throws InterruptedException,
+            ExecutionException {
+        // create a pool of 2 threads
+        ExecutorService executor = Executors
+                .newFixedThreadPool(THREAD_POOL_SIZE);
+ 
+        Counter counter = new Counter();
+        
+        Future<String> future1 = executor.submit(counter);    //Producer
+        Future<String> future2 = executor.submit(counter);    //Producer
+ 
+        System.out.println(Thread.currentThread().getName() + " executing ...");
+ 
+        //asynchronously get from the worker threads
+        System.out.println(future1.get());
+        System.out.println(future2.get());
+ 
+    }
+}
+
+
+
+Java 8 has the DoubleAccumulator and the DoubleAdder new classes that allow us to have multiple threads updating the same variable,
 but in fact, they update their own copy of that variable.
 The trick happens when you have to read the variable.
 When you have to do a read, the system will pause all threads, figure out what the value is,
