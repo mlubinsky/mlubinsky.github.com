@@ -1,3 +1,6 @@
+
+
+
 http://cslibrary.stanford.edu/
 http://www.idryman.org/blog/2017/07/04/learn-hash-table-the-hard-way/
 https://medium.com/engineering-brainly/locality-sensitive-hashing-explained-304eb39291e4  Local sensitive hash
@@ -15,6 +18,619 @@ https://www.youtube.com/watch?v=eaYX0Ee0Kcg
 https://www.youtube.com/watch?v=zGv3hOORxh0
 http://quiz.geeksforgeeks.org/amazons-most-frequently-asked-interview-questions-set-2/
 https://www.geeksforgeeks.org/amazons-asked-interview-questions/
+ 
+https://www.youtube.com/watch?v=eaYX0Ee0Kcg
+https://www.udemy.com/11-essential-coding-interview-questions/?couponCode=AMAZON2
+import heapq
+import math
+points = [(-2, 4), (-5, -1), (10, 1), (-5, -2), (8, 1)]
+
+def find_smallest(pointArray, k):
+    points_with_d = {}
+    for point in pointArray:
+        points_with_d[point] = math.sqrt(point[0]**2 + point[1]**2)
+    smallest = heapq.nlargest(k, [(-value, key) for key, value in points_with_d.items()])
+    return [key for value, key in smallest]
+
+print(find_smallest(points, 3))
+
+
+You can do it in O(n), so create points with distance which takes O(n), 
+then a median of medians selection to find the kth smallest distance in O(n) time. 
+Finally you can loop through all the distances printing out everything smaller than or equal to the kth smallest distance, 
+which also takes O(n)!! Overall - O(n).? 
+
+
+
+https://www.geeksforgeeks.org/rotate-matrix-90-degree-without-using-extra-space-set-2/
+rotate matrix 90 degree
+
+
+
+
+//Java implementation of SpecialStack
+// Note : here we use Stack class for Stack implementation
+ 
+import java.util.Stack;
+ 
+/* A class that supports all the stack operations and one additional
+operation getMin() that returns the minimum element from stack at
+any time. This class inherits from the stack class and uses an
+auxiliarry stack that holds minimum elements */
+ 
+class SpecialStack extends Stack<Integer>
+{
+    Stack<Integer> min = new Stack<>();
+     
+    /* SpecialStack's member method to insert an element to it. This method
+    makes sure that the min stack is also updated with appropriate minimum
+    values */
+    void push(int x)
+    {
+        if(isEmpty() == true)
+        {
+            super.push(x);
+            min.push(x);
+        }
+        else
+        {
+            super.push(x);
+            int y = min.pop();
+            min.push(y);
+            if(x < y)
+                min.push(x);
+            else
+                min.push(y);
+        }
+    }
+ 
+    /* SpecialStack's member method to insert an element to it. This method
+    makes sure that the min stack is also updated with appropriate minimum
+    values */
+    public Integer pop()
+    {
+        int x = super.pop();
+        min.pop();
+        return x;
+    }
+ 
+    /* SpecialStack's member method to get minimum element from it. */
+    int getMin()
+    {
+        int x = min.pop();
+        min.push(x);
+        return x;
+    }
+ 
+    /* Driver program to test SpecialStack methods */
+    public static void main(String[] args) 
+    {
+        SpecialStack s = new SpecialStack();
+        s.push(10);
+        s.push(20);
+        s.push(30);
+        System.out.println(s.getMin());
+        s.push(5);
+        System.out.println(s.getMin());
+    }
+} 
+--------------------
+
+/ Recursive Java program for level order traversal of Binary Tree
+ 
+/* Class containing left and right child of current 
+   node and key value*/
+class Node
+{
+    int data;
+    Node left, right;
+    public Node(int item)
+    {
+        data = item;
+        left = right = null;
+    }
+}
+ 
+class BinaryTree
+{
+    // Root of the Binary Tree
+    Node root;
+ 
+    public BinaryTree()
+    {
+        root = null;
+    }
+ 
+    /* function to print level order traversal of tree*/
+    void printLevelOrder()
+    {
+        int h = height(root);
+        int i;
+        for (i=1; i<=h; i++)
+            printGivenLevel(root, i);
+    }
+ 
+    /* Compute the "height" of a tree -- the number of
+    nodes along the longest path from the root node
+    down to the farthest leaf node.*/
+    int height(Node root)
+    {
+        if (root == null)
+           return 0;
+        else
+        {
+            /* compute  height of each subtree */
+            int lheight = height(root.left);
+            int rheight = height(root.right);
+             
+            /* use the larger one */
+            if (lheight > rheight)
+                return(lheight+1);
+            else return(rheight+1); 
+        }
+    }
+ 
+    /* Print nodes at the given level */
+    void printGivenLevel (Node root ,int level)
+    {
+        if (root == null)
+            return;
+        if (level == 1)
+            System.out.print(root.data + " ");
+        else if (level > 1)
+        {
+            printGivenLevel(root.left, level-1);
+            printGivenLevel(root.right, level-1);
+        }
+    }
+     
+    /* Driver program to test above functions */
+    public static void main(String args[])
+    {
+       BinaryTree tree = new BinaryTree();
+       tree.root= new Node(1);
+       tree.root.left= new Node(2);
+       tree.root.right= new Node(3);
+       tree.root.left.left= new Node(4);
+       tree.root.left.right= new Node(5);
+        
+       System.out.println("Level order traversal of binary tree is ");
+       tree.printLevelOrder();
+    }
+}
+=========diameter of tree
+The diameter of a tree T is the largest of the following quantities:
+* the diameter of T’s left subtree
+* the diameter of T’s right subtree
+* the longest path between leaves that goes through the root of T (this can be computed from the heights of the subtrees of T) 
+Implementation: Java
+
+// Recursive optimized Java program to find the diameter of a
+// Binary Tree
+ 
+/* Class containing left and right child of current
+ node and key value*/
+class Node
+{
+    int data;
+    Node left, right;
+ 
+    public Node(int item)
+    {
+        data = item;
+        left = right = null;
+    }
+}
+ 
+/* Class to print the Diameter */
+class BinaryTree
+{
+    Node root;
+ 
+    /* Method to calculate the diameter and return it to main */
+    int diameter(Node root)
+    {
+        /* base case if tree is empty */
+        if (root == null)
+            return 0;
+ 
+        /* get the height of left and right sub trees */
+        int lheight = height(root.left);
+        int rheight = height(root.right);
+ 
+        /* get the diameter of left and right subtrees */
+        int ldiameter = diameter(root.left);
+        int rdiameter = diameter(root.right);
+ 
+        /* Return max of following three
+          1) Diameter of left subtree
+         2) Diameter of right subtree
+         3) Height of left subtree + height of right subtree + 1 */
+        return Math.max(lheight + rheight + 1,
+                        Math.max(ldiameter, rdiameter));
+ 
+    }
+ 
+    /* A wrapper over diameter(Node root) */
+    int diameter()
+    {
+        return diameter(root);
+    }
+ 
+    /*The function Compute the "height" of a tree. Height is the
+      number f nodes along the longest path from the root node
+      down to the farthest leaf node.*/
+    static int height(Node node)
+    {
+        /* base case tree is empty */
+        if (node == null)
+            return 0;
+ 
+        /* If tree is not empty then height = 1 + max of left
+           height and right heights */
+        return (1 + Math.max(height(node.left), height(node.right)));
+    }
+ 
+    public static void main(String args[])
+    {
+        /* creating a binary tree and entering the nodes */
+        BinaryTree tree = new BinaryTree();
+        tree.root = new Node(1);
+        tree.root.left = new Node(2);
+        tree.root.right = new Node(3);
+        tree.root.left.left = new Node(4);
+        tree.root.left.right = new Node(5);
+ 
+        System.out.println("The diameter of given binary tree is : "
+                           + tree.diameter());
+    }
+}
+------ python --------
+# Python program to find the diameter of binary tree
+ 
+# A binary tree node
+class Node:
+ 
+    # Constructor to create a new node
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+ 
+ 
+"""
+The function Compute the "height" of a tree. Height is the 
+number f nodes along the longest path from the root node 
+down to the farthest leaf node.
+"""
+def height(node):
+     
+    # Base Case : Tree is empty
+    if node is None:
+        return 0 ;
+     
+    # If tree is not empty then height = 1 + max of left 
+    # height and right heights 
+    return 1 + max(height(node.left) ,height(node.right))
+ 
+# Function to get the diamtere of a binary tree
+def diameter(root):
+     
+    # Base Case when tree is empty 
+    if root is None:
+        return 0;
+ 
+    # Get the height of left and right sub-trees
+    lheight = height(root.left)
+    rheight = height(root.right)
+ 
+    # Get the diameter of left and irgh sub-trees
+    ldiameter = diameter(root.left)
+    rdiameter = diameter(root.right)
+ 
+    # Return max of the following tree:
+    # 1) Diameter of left subtree
+    # 2) Diameter of right subtree
+    # 3) Height of left subtree + height of right subtree +1 
+    return max(lheight + rheight + 1, max(ldiameter, rdiameter))
+     
+ 
+# Driver program to test above functions 
+ 
+"""
+Constructed binary tree is 
+            1
+          /   \
+        2      3
+      /  \
+    4     5
+"""
+ 
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+root.left.right = Node(5)
+print "Diameter of given binary tree is %d" %(diameter(root))
+ 
+# This code is contributed by Nikhil Kumar Singh(nickzuck_007)
+Run on IDE
+
+
+Time Complexity: O(n^2)
+
+Output:
+Diameter of the given binary tree is 4
+
+
+Optimized implementation: The above implementation can be optimized by calculating the height in the same recursion rather than calling a height() separately. Thanks to Amar for suggesting this optimized version. This optimization reduces time complexity to O(n).
+C
+Java
+/*The second parameter is to store the height of tree.
+   Initially, we need to pass a pointer to a location with value
+   as 0. So, function should be used as follows:
+ 
+   int height = 0;
+   struct node *root = SomeFunctionToMakeTree();
+   int diameter = diameterOpt(root, &height); */
+int diameterOpt(struct node *root, int* height)
+{
+  /* lh --> Height of left subtree
+     rh --> Height of right subtree */
+  int lh = 0, rh = 0;
+  
+  /* ldiameter  --> diameter of left subtree
+     rdiameter  --> Diameter of right subtree */
+  int ldiameter = 0, rdiameter = 0;
+  
+  if(root == NULL)
+  {
+    *height = 0;
+     return 0; /* diameter is also 0 */
+  }
+  
+  /* Get the heights of left and right subtrees in lh and rh
+    And store the returned values in ldiameter and ldiameter */
+  ldiameter = diameterOpt(root->left, &lh);
+  rdiameter = diameterOpt(root->right, &rh);
+  
+  /* Height of current node is max of heights of left and
+     right subtrees plus 1*/
+  *height = max(lh, rh) + 1;
+  
+  return max(lh + rh + 1, max(ldiameter, rdiameter));
+}
+==================
+Find Minimum Depth of a Binary Tree
+https://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/
+Given a binary tree, find its minimum depth. The minimum depth is the number of nodes along the shortest path from root node down to the nearest leaf node. 
+For example, minimum height of below Binary Tree is 2.
+
+
+
+
+===========
+/* Java program for Dynamic Programming implementation
+   of Min Cost Path problem */
+import java.util.*;
+ 
+class MinimumCostPath
+{
+    /* A utility function that returns minimum of 3 integers */
+    private static int min(int x, int y, int z)
+    {
+        if (x < y)
+            return (x < z)? x : z;
+        else
+            return (y < z)? y : z;
+    }
+ 
+    private static int minCost(int cost[][], int m, int n)
+    {
+        int i, j;
+        int tc[][]=new int[m+1][n+1];
+ 
+        tc[0][0] = cost[0][0];
+ 
+        /* Initialize first column of total cost(tc) array */
+        for (i = 1; i <= m; i++)
+            tc[i][0] = tc[i-1][0] + cost[i][0];
+ 
+        /* Initialize first row of tc array */
+        for (j = 1; j <= n; j++)
+            tc[0][j] = tc[0][j-1] + cost[0][j];
+ 
+        /* Construct rest of the tc array */
+        for (i = 1; i <= m; i++)
+            for (j = 1; j <= n; j++)
+                tc[i][j] = min(tc[i-1][j-1], 
+                               tc[i-1][j],
+                               tc[i][j-1]) + cost[i][j];
+ 
+        return tc[m][n];
+    }
+ 
+    /* Driver program to test above functions */
+    public static void main(String args[])
+    {
+        int cost[][]= {{1, 2, 3},
+                       {4, 8, 2},
+                       {1, 5, 3}};
+        System.out.println("minimum cost to reach (2,2) = " +
+                                         minCost(cost,2,2));
+    }
+}
+=====  python ------
+Dynamic Programming Python implementation of Min Cost Path
+# problem
+R = 3
+C = 3
+ 
+def minCost(cost, m, n):
+ 
+    # Instead of following line, we can use int tc[m+1][n+1] or
+    # dynamically allocate memoery to save space. The following
+    # line is used to keep te program simple and make it working
+    # on all compilers.
+    tc = [[0 for x in range(C)] for x in range(R)]
+ 
+    tc[0][0] = cost[0][0]
+ 
+    # Initialize first column of total cost(tc) array
+    for i in range(1, m+1):
+        tc[i][0] = tc[i-1][0] + cost[i][0]
+ 
+    # Initialize first row of tc array
+    for j in range(1, n+1):
+        tc[0][j] = tc[0][j-1] + cost[0][j]
+ 
+    # Construct rest of the tc array
+    for i in range(1, m+1):
+        for j in range(1, n+1):
+            tc[i][j] = min(tc[i-1][j-1], tc[i-1][j], tc[i][j-1]) + cost[i][j]
+ 
+    return tc[m][n]
+ 
+# Driver program to test above functions
+cost = [[1, 2, 3],
+        [4, 8, 2],
+        [1, 5, 3]]
+print(minCost(cost, 2, 2))
+
+====================================
+ https://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
+ The trick is to write a utility helper function isBSTUtil(struct node* node, int min, int max) that traverses down the tree keeping track of the narrowing min and max allowed values as it goes, looking at each node only once. The initial values for min and max should be INT_MIN and INT_MAX — they narrow from there. 
+/* Returns true if the given tree is a binary search tree 
+ (efficient version). */ 
+int isBST(struct node* node) 
+{ 
+  return(isBSTUtil(node, INT_MIN, INT_MAX)); 
+} 
+
+/* Returns true if the given tree is a BST and its 
+ values are >= min and <= max. */ 
+int isBSTUtil(struct node* node, int min, int max) 
+Implementation:
+C
+Java
+Python
+//Java implementation to check if given Binary tree
+//is a BST or not
+ 
+/* Class containing left and right child of current
+ node and key value*/
+class Node
+{
+    int data;
+    Node left, right;
+ 
+    public Node(int item)
+    {
+        data = item;
+        left = right = null;
+    }
+}
+ 
+public class BinaryTree
+{
+    //Root of the Binary Tree
+    Node root;
+ 
+    /* can give min and max value according to your code or
+    can write a function to find min and max value of tree. */
+ 
+    /* returns true if given search tree is binary
+     search tree (efficient version) */
+    boolean isBST()  {
+        return isBSTUtil(root, Integer.MIN_VALUE,
+                               Integer.MAX_VALUE);
+    }
+ 
+    /* Returns true if the given tree is a BST and its
+      values are >= min and <= max. */
+    boolean isBSTUtil(Node node, int min, int max)
+    {
+        /* an empty tree is BST */
+        if (node == null)
+            return true;
+ 
+        /* false if this node violates the min/max constraints */
+        if (node.data < min || node.data > max)
+            return false;
+ 
+        /* otherwise check the subtrees recursively
+        tightening the min/max constraints */
+        // Allow only distinct values
+        return (isBSTUtil(node.left, min, node.data-1) &&
+                isBSTUtil(node.right, node.data+1, max));
+    }
+ 
+    /* Driver program to test above functions */
+    public static void main(String args[])
+    {
+        BinaryTree tree = new BinaryTree();
+        tree.root = new Node(4);
+        tree.root.left = new Node(2);
+        tree.root.right = new Node(5);
+        tree.root.left.left = new Node(1);
+        tree.root.left.right = new Node(3);
+ 
+        if (tree.isBST())
+            System.out.println("IS BST");
+        else
+            System.out.println("Not a BST");
+    }
+}
+
+===== python 
+# Python program to check if a binary tree is bst or not
+ 
+INT_MAX = 4294967296
+INT_MIN = -4294967296
+ 
+# A binary tree node
+class Node:
+ 
+    # Constructor to create a new node
+    def __init__(self, data):
+        self.data = data 
+        self.left = None
+        self.right = None
+ 
+ 
+# Returns true if the given tree is a binary search tree
+# (efficient version)
+def isBST(node):
+    return (isBSTUtil(node, INT_MIN, INT_MAX))
+ 
+# Retusn true if the given tree is a BST and its values
+# >= min and <= max
+def isBSTUtil(node, mini, maxi):
+     
+    # An empty tree is BST
+    if node is None:
+        return True
+ 
+    # False if this node violates min/max constraint
+    if node.data < mini or node.data > maxi:
+        return False
+ 
+    # Otherwise check the subtrees recursively
+    # tightening the min or max constraint
+    return (isBSTUtil(node.left, mini, node.data -1) and
+          isBSTUtil(node.right, node.data+1, maxi))
+ 
+# Driver program to test above function
+root = Node(4)
+root.left = Node(2)
+root.right = Node(5)
+root.left.left = Node(1)
+root.left.right = Node(3)
+ 
+if (isBST(root)):
+    print "Is BST"
+else:
+    print "Not a BST" 
  
 Given an array A[] of n numbers and another number x, determines whether or not there exist two elements in S whose sum is exactly x.
 ======================================================================================================================================
