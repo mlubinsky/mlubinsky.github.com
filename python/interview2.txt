@@ -1,4 +1,43 @@
+Given an Input file of IPv4 addresses, filter and write them into Valid and Invalid IPs. 
+=======================================================================================
+Input file = ["192.100.0.1, "10.0.0.1", "aa.bb.cc.dd", "10.0", "999.10.10.1"] 
+Valid = [] 
+Invalid = []
 
+def isValidIP(ip):
+    parts = ip.split('.')
+    if len(parts) != 4:
+        return False
+    if any(part.isalpha() for part in parts):
+        return False
+    return all(0 <= int(part) <= 255 for part in parts)
+
+
+
+valid, invalid = [], []
+ip_addresses = ["192.100.0.1", "10.0.0.1", "aa.bb.cc.dd", "10.0", "999.10.10.1"]
+for ip_addr in ip_addresses:
+     valid.append(ip_addr) if isValidIP(ip_addr) else invalid.append(ip_addr)
+
+print 'Valid IPs = ', valid
+print 'Invalid IPs = ', invalid
+'''
+OUTPUT:
+Valid IPs =  ['192.100.0.1', '10.0.0.1']
+Invalid IPs =  ['aa.bb.cc.dd', '10.0', '999.10.10.1']
+
+
+------------------
+generate hash which is the sane for palindrome strings
+
+import hashlib
+
+def reversable_hash(s):
+    tmp = []
+    for i in range(len(s)):
+        tmp += [chr((ord(s[i]) + ord(s[len(s) -i -1])) % 255)]
+    tmp = ''.join(tmp)
+    return hashlib.md5(tmp.encode('utf8')).hexdigest()
 
 https://en.wikipedia.org/wiki/Fair_coin#Fair_results_from_a_biased_coin
 ========================================================================
