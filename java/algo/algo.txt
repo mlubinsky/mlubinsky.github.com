@@ -9,6 +9,145 @@ http://yucoding.blogspot.com/2017/01/leetcode-question-range-sum-query.html
 http://massivealgorithms.blogspot.com/
 http://ruslanledesma.com/
 http://algorithms.tutorialhorizon.com/
+https://www.youtube.com/watch?v=il_t1WVLNxk
+https://www.youtube.com/watch?v=e5D3NepYvLE
+https://www.youtube.com/watch?v=eaYX0Ee0Kcg
+https://www.youtube.com/watch?v=zGv3hOORxh0
+http://quiz.geeksforgeeks.org/amazons-most-frequently-asked-interview-questions-set-2/
+https://www.geeksforgeeks.org/amazons-asked-interview-questions/
+ 
+Given an array A[] of n numbers and another number x, determines whether or not there exist two elements in S whose sum is exactly x.
+======================================================================================================================================
+
+hasArrayTwoCandidates (A[], ar_size, sum)
+1) Sort the array in non-decreasing order.
+2) Initialize two index variables to find the candidate 
+   elements in the sorted array.
+       (a) Initialize first to the leftmost index: l = 0
+       (b) Initialize second  the rightmost index:  r = ar_size-1
+3) Loop while l < r.
+       (a) If (A[l] + A[r] == sum)  then return 1
+       (b) Else if( A[l] + A[r] <  sum )  then l++
+       (c) Else r--    
+4) No candidates in whole array - return 0
+Time Complexity: Depends on what sorting algorithm we use. If we use Merge Sort or Heap Sort then (-)(nlogn) in worst case. If we use Quick Sort then O(n^2) in worst case.
+Auxiliary Space : Again, depends on sorting algorithm. For example auxiliary space is O(n) for merge sort and O(1) for Heap Sort.
+
+=========================
+
+Pythagorean Triplet in an array
+Given an array of integers, write a function that returns true if there is a triplet (a, b, c) that satisfies a2 + b2 = c2.
+
+Method 2 (Use Sorting)
+We can solve this in O(n2) time by sorting the array first.
+
+1) Do square of every element in input array. This step takes O(n) time.
+
+2) Sort the squared array in increasing order. This step takes O(nLogn) time.
+
+3) To find a triplet (a, b, c) such that a = b + c, do following.
+
+Fix ‘a’ as last element of sorted array.
+Now search for pair (b, c) in subarray between first element and ‘a’. A pair (b, c) with given sum can be found in O(n) time using meet in middle algorithm discussed in method 1 of this post.
+If no pair found for current ‘a’, then move ‘a’ one position back and repeat step 3.2.
+
+class PythagoreanTriplet 
+{    
+    // Returns true if there is a triplet with following property
+    // A[i]*A[i] = A[j]*A[j] + A[k]*[k]
+    // Note that this function modifies given array
+    static boolean isTriplet(int arr[], int n)
+    {
+        // Square array elements
+        for (int i=0; i<n; i++)
+            arr[i] = arr[i]*arr[i];
+  
+        // Sort array elements
+        Arrays.sort(arr);
+  
+        // Now fix one element one by one and find the other two
+        // elements
+        for (int i = n-1; i >= 2; i--)
+        {
+            // To find the other two elements, start two index
+            // variables from two corners of the array and move
+            // them toward each other
+            int l = 0; // index of the first element in arr[0..i-1]
+            int r = i-1; // index of the last element in arr[0..i-1]
+            while (l < r)
+            {
+                // A triplet found
+                if (arr[l] + arr[r] == arr[i])
+                    return true;
+  
+                // Else either move 'l' or 'r'
+                if (arr[l] + arr[r] < arr[i])
+                   l++;
+                else
+                   r--;
+            }
+        }
+  
+        // If we reach here, then no triplet found
+        return false;
+    }
+
+   // Driver program to test above function
+    public static void main(String[] args)
+    {
+        int arr[] = {3, 1, 4, 6, 5};
+        int arr_size = arr.length;
+        if (isTriplet(arr,arr_size)==true)
+           System.out.println("Yes");
+        else
+           System.out.println("No");        
+    }
+}
+
+===== Triplet finding in python
+
+# Python program that returns true if there is 
+# a Pythagorean Triplet in a given array.
+ 
+# Returns true if there is Pythagorean
+# triplet in ar[0..n-1]
+def isTriplet(ar, n):
+    # Square all the elemennts
+    for i in range(n):
+        ar[i] = ar[i] * ar[i]
+  
+    # sort array elements
+    ar.sort()
+  
+    # fix one element
+    # and find other two
+    # i goes from n - 1 to 2
+    for i in range(n-1, 1, -1):
+        # start two index variables from 
+        # two corners of the array and 
+        # move them toward each other
+        j = 0
+        k = i - 1
+        while (j < k):
+            # A triplet found
+            if (ar[j] + ar[k] == ar[i]):
+                return True
+            else:
+                if (ar[j] + ar[k] < ar[i]):
+                    j = j + 1
+                else:
+                    k = k - 1
+    # If we reach here, then no triplet found
+    return False
+   
+# Driver program to test above function */
+ar = [3, 1, 4, 6, 5]
+ar_size = len(ar)
+if(isTriplet(ar, ar_size)):
+  print("Yes")
+else:
+  print("No")
+
 
 Prints an alphabetized list of its command-line arguments with duplicates eliminated:
 --------------------------------------------------------------------------------------
