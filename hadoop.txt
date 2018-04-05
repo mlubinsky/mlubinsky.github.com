@@ -11,6 +11,8 @@ The Writable interface consists of the two methods, readFields() and write().
 
 The WritableComparable interface introduces the comapreTo() method in addition to the readFields() and write() methods of the Writable interface. 
 
+Map tasks write their output to the local disk, not to HDFS. Why is this? Map output is intermediate output: it’s processed by reduce tasks to produce the final output, and once the job is complete, the map output can be thrown away. So, storing it in HDFS with replication would be overkill.
+
 OOzie job coordinator
 Hadoop ControlledJob and JobControl classes provide  
 
