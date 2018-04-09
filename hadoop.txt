@@ -1,6 +1,43 @@
+HBASE
+-----
+https://www.stackchief.com/blog/Top%203%20Most%20Important%20Things%20to%20Know%20About%20HBase
+ HBase is schemaless. The data stored in HBase is not normalized, meaning there is no logical connection or relationship connecting different tables of data.
+The column-oriented table uses a row key to access different column families. These column families contain actual columns having different versions of data. This results in a four dimensional data model where accessing a single value requires knowing the row key, column family, column, and version.
 
+HBase relies on Zookeeper for the coordination of cluster nodes. Updates to the database are registered in a Write-Ahead-Log(WAL) and cached in a Memstore. Once the Memstore reaches its storage capacity, the recorded changes are written to H files and stored in HDFS.
+
+HBase achieves faster reads by first consulting the Memstore before checking H files. Additionally, the WAL register provides a backup to anything lost in the Memstore. When data is flushed to H files from the Memstore, the H files are replicated to other data nodes automatically.
+
+Advantages of HBase
+HBase provides a dual approach to data access. While it's row key based table scans provide consistent and real-time reads/writes, it also leverages Hadoop MapReduce for batch jobs. This makes it great for both real-time querying and batch analytics. Hbase also automatically manages sharding and failover support.
+
+
+Cassandra and HBase - Key differences
+-------------------------------------------
+ 
+
+Different Architecture
+With HBase, a master node is specified to handle administrative functions and assignments for regional servers. These regional servers manage data nodes that perform actual reads/writes on HDFS. HBase uses Zookeeper to coordinate server state and operations. HBase stores data in HDFS.
+
+Cassandra stores data outside of HDFS and the Hadoop cluster. Unlike HBase, all nodes in Cassandra share a similar role. There is no concept of masters/slaves but rather multiple seed nodes. With this decentralized architecture, any node can perform any operation. Cassandra uses Gossip instead of Zookeeper to manage internode communication.
+
+Which to use and why
+Use HBase if you are emphasizing consistency with large scale reads. Use Cassandra if high availability is desired. Cassandra requires minimal setup with little administration overhead, making it easier to get started.
+
+If you work a lot with MapReduce and batch processing, HBase is preferred for its direct relationship with HDFS.
+
+Cassandra is good for single row reads and is optimized for writes. Cassandra also offers more flexibility in the way of CAP theorem tradeoffs. For example, you can configure consistency levels with Cassandra whereas HBase lacks these explicit configurations.
+
+HIVE
+-----
+https://www.stackchief.com/blog/The%20Apache%20Hive%20Metastore
+ 
+The Hive metastore is simply a relational database. It stores metadata related to the tables/schemas you create to easily query big data stored in HDFS. When you create a new Hive table, the information related to the schema (column names, data types) is stored in the Hive metastore relational database. Other information like input/output formats, partitions, HDFS locations are all stored in the metastore.
+t the key point of Hive is to provide a SQL-like abstraction for running MapReduce jobs on Hadoop. This makes it good for analytical queries (OLAP).
 
 https://www.packtpub.com/big-data-and-business-intelligence/hadoop-mapreduce-cookbook
+
+
 
 In order to be used as a value data type of a MapReduce computation, 
 a data type must implement the org.apache.hadoop.io.Writable interface. 
@@ -111,12 +148,13 @@ Combiner
  For example, the same idea does not work when calculating mean. 
  As mean is not communicative and associative, a combiner in that case will yield a wrong result.
  
-Hadoop supports speculative executions. 
-This means if most of the map tasks have completed and Hadoop is waiting for a few more map tasks, Hadoop JobTracker will start                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                    
+Speculative executions. 
+This means if most of the map tasks have completed and Hadoop is waiting for a few more map tasks,
+Hadoop JobTracker will start a second copy of remaining task(s)
+
 Distributed cache
 ========================
-                                                                                       copies                                               
+                                              
  
 Hadoop configuration
 ======================               
