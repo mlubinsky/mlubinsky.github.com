@@ -244,7 +244,10 @@ The SQL standard tried to define four isolation levels (read uncommitted, read c
 https://www.citusdata.com/blog/2017/08/09/principles-of-sharding-for-relational-databases/
 http://www.olapcube.com/mdxhelp/
 http://knexjs.org/
+
+<b>Time Series Databases<b>
 http://db.cs.cmu.edu/seminar2017/   Time Series Databases
+http://thelastpickle.com/blog/2017/08/02/time-series-data-modeling-massive-scale.html
 
 <h2>SQLite</h2>
 http://tech.marksblogg.com/sqlite3-tutorial-and-guide.html
@@ -269,6 +272,34 @@ from MyTable limit 60
 <h2>Cassandra</h2>
 https://blog.emumba.com/apache-cassandra-part-1-introduction-and-key-features-18d02ba0b8cc
 https://medium.com/techlogs/using-apache-cassandra-a-few-things-before-you-start-ac599926e4b8
+http://thelastpickle.com/blog/2017/08/02/time-series-data-modeling-massive-scale.html
+
+Issue with following table - the partotion become very big very fast.
+CREATE TABLE raw_data (
+    sensor text,
+    ts timeuuid,
+    readint int,
+    primary key(sensor, ts)
+) WITH CLUSTERING ORDER BY (ts DESC) 
+  AND compaction = {'class': 'TimeWindowCompactionStrategy', 
+                    'compaction_window_size': 1, 
+                    'compaction_window_unit': 'DAYS'};
+            
+Let change primary key:
+one partition per sensor per day would be a good choice if we’re storing 50-75MB of data per day. 
+We could just as easily use week (starting from some epoch), or month and year as long as the partitions stay under 100MB.
+
+CREATE TABLE raw_data_by_day (
+sensor text,
+day text,
+ts timeuuid,
+reading int,
+primary key((sensor, day), ts)
+) WITH CLUSTERING ORDER BY (ts DESC) 
+       AND COMPACTION = {'class': 'TimeWindowCompactionStrategy', 
+                     'compaction_window_unit': 'DAYS', 
+                     'compaction_window_size': 1};
+            
 append-only store
 compaction tumbstone (deleted marker)
 
