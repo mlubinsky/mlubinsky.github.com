@@ -14,7 +14,10 @@
 
 https://www.slideshare.net/cloudera/top-5-mistakes-to-avoid-when-writing-apache-spark-applications
 
+<h2>Read</h2>
+
 val dataLakeDF = spark.read.parquet("s3a://some-bucket/foo")
+
 val extractDF = dataLakeDF
   .where(col("mood") === "happy")
   .repartition(10000)
@@ -23,12 +26,15 @@ spark.read.format(" csv")
 .option(" mode", "FAILFAST")   //dropMalformed    | permissive
 .option(" inferSchema", "true") 
 .option(" path", "path/ to/ file( s)") 
-.schema( someSchema) .load()
+.schema( someSchema) 
+.load()
 
-spark.read.format(" parquet") .load("/ data/ flight-data/ parquet/ 2010-summary.parquet"). show( 5) #
+spark.read.format(" parquet") 
+.load("/ data/ flight-data/ parquet/ 2010-summary.parquet")
+.show( 5) 
 
- 
- 
+<h2>Write</h2>
+
  DataFrameWriter
  .format(...)
  .option(...)
@@ -44,6 +50,7 @@ spark.read.format(" parquet") .load("/ data/ flight-data/ parquet/ 2010-summary.
  .option(" path", "path/ to/ file( s)") 
  .save()
 
+<h2>Query</h2>
 
 dbDataFrame.select(" DEST_COUNTRY_NAME"). distinct(). show( 5)
 dbDataFrame.select(" DEST_COUNTRY_NAME"). distinct(). explain
@@ -62,14 +69,18 @@ dbDataFrame.filter(" DEST_COUNTRY_NAME in (' Anguilla', 'Sweden')"). explain #
    PushedFilters: [* In( DEST_COUNTRY_NAME, [Anguilla, Sweden])],
 
 val pushdownQuery = """( SELECT DISTINCT( DEST_COUNTRY_NAME) FROM flight_info) AS flight_info"""
+
 val dbDataFrame = spark.read.format(" jdbc") 
 .option(" url", url)
 .option(" dbtable", pushdownQuery)
-.option(" driver", driver) .load()
+.option(" driver", driver) 
+.load()
  
  
 val joinExpr = person.col(" graduate_program") = = = graduateProgram.col(" id") 
-person.join( graduateProgram, joinExpr). explain()
+person
+ .join( graduateProgram, joinExpr)
+. explain()
   
  = = Physical Plan = = *BroadcastHashJoin [graduate_program# 40], 
  [id# 5.... 
@@ -78,7 +89,6 @@ person.join( graduateProgram, joinExpr). explain()
  +- LocalTableScan [id# 56, degree# 57, departmen.... 
  
   
- 
  With the DataFrame API, we can also explicitly give the optimizer a hint
  that we would like to use a broadcast join by using the correct function around the small DataFrame in question.
  In this example, these result in the same plan we just saw; however, this is not always the case: 
@@ -97,7 +107,11 @@ person.join( graduateProgram, joinExpr). explain()
  This doesn’t come for free either: if you try to broadcast something too large, you can crash your driver node
  (because that collect is expensive).
 
-  
+<h2>Monitoring</h2>
+  To change Spark’s log level, simply run the following command: 
+  spark.sparkContext.setLogLevel(" INFO")
+
+<h2>Links</h2>
   
 https://medium.com/@mrpowers/how-to-write-spark-etl-processes-df01b0c1bec9
 https://hackernoon.com/managing-spark-partitions-with-coalesce-and-repartition-4050c57ad5c4
@@ -135,8 +149,9 @@ DataFrames are untyped: scala compiler doesn not check types in its schema
 DataFrames=DataSet[Rows]
 
 
-Spark supports two types of shared variables: broadcast variables, which can be used to cache a value in memory on all nodes, and accumulators,
-which are variables that are only “added” to, such as counters and sums.
+Spark supports two types of shared variables:
+    1)  broadcast variables - can be used to cache a value in memory on all nodes, 
+    2) accumulators -  are only “added” to, such as counters and sums.
 
 There are two types of transformations:
  - those that specify narrow dependencies
@@ -146,19 +161,28 @@ Transformations consisting of narrow dependencies are those where each input par
 Example: where clause specifies a
 narrow dependency, where only one partition contributes to at most one output partition.
 
-A wide dependency style transformation will have input partitions contributing to many output partitions. We call this a shu le where Spark will exchange partitions across the cluster. Spark will automatically perform an operation called pipelining on narrow dependencies, this means that if we specify multiple filters on DataFrames they’ll all be performed in memory. The same cannot be said for shuffles. When we perform a shuffle, Spark will write the results to disk.
+A wide dependency style transformation will have input partitions contributing to many output partitions. 
+We call this a shuffle where Spark will exchange partitions across the cluster. 
+Spark will automatically perform an operation called pipelining on narrow dependencies, 
+this means that if we specify multiple filters on DataFrames they’ll all be performed in memory.
+The same cannot be said for shuffles. When we perform a shuffle, Spark will write the results to disk.
 
 There are three kinds of actions:
 • actions to view data in the console;
-• actions to collect data to native objects in the respective language; • and actions to write to output data sources.
+• actions to collect data to native objects in the respective language; 
+• and actions to write to output data sources.
 
 
-Spark SQL allows you as a user to register any DataFrame as a table or view (a temporary table) and query it using pure SQL. There is no performance di erence between writing SQL queries or writing DataFrame code, they both “compile” to the same underlying plan that we specify in DataFrame code.
+Spark SQL allows you as a user to register any DataFrame as a table or view (a temporary table) and query it using pure SQL. 
+There is no performance difference between writing SQL queries or writing DataFrame code, 
+they both “compile” to the same underlying plan that we specify in DataFrame code.
 
+<h2>Structured Streaming</h2>
+Structured Streaming became Production Ready in Spark 2.2. 
 
-
-Structured Streaming
-Structured Streaming became Production Ready in Spark 2.2. Structured streaming allows you to take the same operations that you perform in batch mode and perform them in a streaming fashion. This can reduce latency and allow for incremental processing. The best thing about Structured Streaming is that it allows you to rapidly and quickly get value out of streaming systems with simple switches, it also makes it easy to reason about because you can write your batch job as a way to prototype it and then you can convert it to streaming job. The way all of this works is by incrementally processing that data.
+Structured streaming allows you to take the same operations that you perform in batch mode and perform them in a streaming fashion. 
+This can reduce latency and allow for incremental processing. 
+The best thing about Structured Streaming is that it allows you to rapidly and quickly get value out of streaming systems with simple switches, it also makes it easy to reason about because you can write your batch job as a way to prototype it and then you can convert it to streaming job. The way all of this works is by incrementally processing that data.
 
 <h3>Spark Session </h3>
 val spark=SparkSession
