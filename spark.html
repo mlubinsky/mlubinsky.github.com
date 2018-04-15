@@ -12,6 +12,9 @@
  A dataframe in Spark is similar to a SQL table, an R dataframe, or a pandas dataframe. 
  In Spark, dataframe is actually a wrapper around RDDs, the basic data structure in Spark. 
 
+Parquet stores data in binary files with column-oriented storage, 
+and also tracks some statistics about each file that make it possible to quickly skip data not needed for a query.
+
 https://www.slideshare.net/cloudera/top-5-mistakes-to-avoid-when-writing-apache-spark-applications
 
 <h2>Read</h2>
@@ -107,9 +110,21 @@ person
  This doesn’t come for free either: if you try to broadcast something too large, you can crash your driver node
  (because that collect is expensive).
 
-<h2>Monitoring</h2>
+<h2>Performance and Monitoring</h2>
   To change Spark’s log level, simply run the following command: 
   spark.sparkContext.setLogLevel(" INFO")
+  
+Spark includes a cost-based query optimizer that plans queries based on the properties of the input data when using the structured APIs.
+To allow the cost-based optimizer to make these sorts of decisions, you need to collect (and maintain) statistics about your tables that it can use.
+There are two kinds of statistics: table-level and column-level statistics.
+Statistics collection is available only on named tables, not on arbitrary DataFrames or RDDs.
+
+The first step in garbage collection tuning is to gather statistics on how frequently garbage collection occurs 
+and the amount of time it takes.
+You can do this by adding -verbose:gc -XX: + PrintGCDetails -XX: + PrintGCTimeStamps to Spark’s JVM options 
+using the spark.executor.extraJavaOptions configuration parameter.
+The next time you run your Spark job, you will see messages printed in the worker’s logs each time a garbage collection occurs. 
+These logs will be on your cluster’s worker nodes (in the stdout files in their work directories), not in the
 
 <h2>Links</h2>
   
@@ -150,7 +165,7 @@ DataFrames=DataSet[Rows]
 
 
 Spark supports two types of shared variables:
-    1)  broadcast variables - can be used to cache a value in memory on all nodes, 
+    1) broadcast variables - can be used to cache a value in memory on all nodes, 
     2) accumulators -  are only “added” to, such as counters and sums.
 
 There are two types of transformations:
@@ -182,7 +197,10 @@ Structured Streaming became Production Ready in Spark 2.2.
 
 Structured streaming allows you to take the same operations that you perform in batch mode and perform them in a streaming fashion. 
 This can reduce latency and allow for incremental processing. 
-The best thing about Structured Streaming is that it allows you to rapidly and quickly get value out of streaming systems with simple switches, it also makes it easy to reason about because you can write your batch job as a way to prototype it and then you can convert it to streaming job. The way all of this works is by incrementally processing that data.
+The best thing about Structured Streaming is that it allows you to rapidly and quickly 
+get value out of streaming systems with simple switches, it also makes it easy to reason about 
+because you can write your batch job as a way to prototype it and then you can convert it to streaming job.
+The way all of this works is by incrementally processing that data.
 
 <h3>Spark Session </h3>
 val spark=SparkSession
@@ -202,7 +220,8 @@ def processData (t: RDD[(Int, Int)], u: RDD[(Int, String)]) : Map[Int,Long] = {
   return jn.countByKey
 }
 
-Accumulators are variables that are only “added” to through an associative operation and can therefore, be efficiently supported in parallel. They can be used to implement counters (as in MapReduce) or sums.
+Accumulators are variables that are only “added” to through an associative operation and can therefore, 
+be efficiently supported in parallel. They can be used to implement counters (as in MapReduce) or sums.
 Spark natively supports accumulators of numeric types, and programmers can add support for new types
 
 val accum = sc.accumulator(0)
@@ -232,7 +251,8 @@ Internally, each RDD is characterized by five main properties:
 2. A function for computing each split 
 3. A list of dependencies on other RDDs
 4. Optionally, a Partitioner for key-value RDDs (e.g., to say that the RDD is hash-partitioned) 
-5. Optionally, a list of preferred locations on which to compute each split (e.g., block locations for a Hadoop Distributed File System [HDFS] file) 
+5. Optionally, a list of preferred locations on which to compute each split 
+     (e.g., block locations for a Hadoop Distributed File System [HDFS] file) 
 
 
 The Partitioner is probably one of the core reasons why you might want to use RDDs in your code. 
@@ -421,11 +441,16 @@ myDF.groupBy($authorId, $subForum)
  var groupedRdd= eventsRDD.groupByKey()
  groupedRdd.collect().foreach(println)
 
- groupByKey collects all of the values associated with the given key and stores them in that single collection. That means that data has moved around the network and doing this, moving the data on the network is called shuffling.  Can we somehow do it in a more efficient way?
+ groupByKey collects all of the values associated with the given key and stores them in that single collection. 
+ That means that data has moved around the network and doing this, moving the data on the network is called shuffling. 
+ Can we somehow do it in a more efficient way?
 
-Perhaps we can reduce before doing the shuffle. This could potentially reduce the amount of data that we actually have to send over the network.
+Perhaps we can reduce before doing the shuffle. 
+This could potentially reduce the amount of data that we actually have to send over the network.
 
-To do that, we can use the reduceByKey operator, you can think of it as a combination of first doing groupByKey and then reducing overall the values that were grouped by that key in those collections.
+To do that, we can use the reduceByKey operator, 
+you can think of it as a combination of first doing groupByKey 
+and then reducing overall the values that were grouped by that key in those collections.
 
 reduceByKey: conceptionally it is combination of groupByKey and reducing all values per key
 def reduceByKey (func: (V,V) => V): RDD[(K,V)]
@@ -488,7 +513,8 @@ Types of Partitioning in Spark
 Spark supports two types of partitioning,
 
 - Hash Partitioning: Uses Java’s Object.hashCodemethod to determine the partition as partition = key.hashCode() % numPartitions.
-- Range Partitioning: Uses a range to distribute to the respective partitions the keys that fall within a range. This method is suitable where there’s a natural ordering in the keys and the keys are non negative.
+- Range Partitioning: Uses a range to distribute to the respective partitions the keys that fall within a range. 
+This method is suitable where there’s a natural ordering in the keys and the keys are non negative.
 
 
 Pair RDD may contain keys that have order defined (e.g.: Int or String)
@@ -606,7 +632,8 @@ Off-heap memory
  converted into MappedRDD
 
  filteredRDD: partitions: same as parent RDD; depndencies: one-to-one on parent; compute(partition)= compute parent and filter it
- JoinedRDD: 1 partition per redue task; dependencies: shuffle on each parent; compute(partition) read and join shuffled data; partitioner=HashPartitioner(numTasks)
+ JoinedRDD: 1 partition per redue task; dependencies: shuffle on each parent; compute(partition) read and join shuffled data; 
+              partitioner=HashPartitioner(numTasks)
  mappedRDD
  PairRDD
  ShuffleRDD
