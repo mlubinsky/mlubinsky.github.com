@@ -195,6 +195,28 @@ accum.value
  function for computing datset based on parent RDD
  metadata
 
+you will likely only be creating two types of RDDs: 
+the “generic” RDD type 
+or 
+a key-value RDD that provides additional functions, such as aggregating by key. 
+
+Both just represent a collection of objects, 
+but key-value RDDs have special operations as well as a concept of custom partitioning by key. 
+Let’s formally define RDDs. 
+Internally, each RDD is characterized by five main properties:
+1. A list of partitions 
+2. A function for computing each split 
+3. A list of dependencies on other RDDs
+4. Optionally, a Partitioner for key-value RDDs (e.g., to say that the RDD is hash-partitioned) 
+5. Optionally, a list of preferred locations on which to compute each split (e.g., block locations for a Hadoop Distributed File System [HDFS] file) 
+
+
+The Partitioner is probably one of the core reasons why you might want to use RDDs in your code. 
+Specifying your own custom Partitioner can give you significant performance and stability improvements if you use it correctly.
+
+You manipulate RDDs in much the same way that you manipulate DataFrames. 
+the core difference being that you manipulate raw Java or Scala objects instead of Spark types.
+
 Narrow depencencies: each partition of parent RDD is used by at most one partition of child RDD
 fast, no shuffle, optimizations like pipelining possible
     Parent partition(1)  -> Child partition(<=1)
