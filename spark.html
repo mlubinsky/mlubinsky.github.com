@@ -19,7 +19,86 @@ val extractDF = dataLakeDF
   .where(col("mood") === "happy")
   .repartition(10000)
 
+spark.read.format(" csv")
+.option(" mode", "FAILFAST")   //dropMalformed    | permissive
+.option(" inferSchema", "true") 
+.option(" path", "path/ to/ file( s)") 
+.schema( someSchema) .load()
 
+spark.read.format(" parquet") .load("/ data/ flight-data/ parquet/ 2010-summary.parquet"). show( 5) #
+
+ 
+ 
+ DataFrameWriter
+ .format(...)
+ .option(...)
+ .partitionBy(...)
+ .bucketBy(...)
+ .sortBy( ...)
+ .save()
+
+ 
+ dataframe.write.format(" csv") 
+ .option(" mode", "OVERWRITE") 
+ .option(" dateFormat", "yyyy-MM-dd") 
+ .option(" path", "path/ to/ file( s)") 
+ .save()
+
+
+dbDataFrame.select(" DEST_COUNTRY_NAME"). distinct(). show( 5)
+dbDataFrame.select(" DEST_COUNTRY_NAME"). distinct(). explain
+= = Physical Plan = =
+*HashAggregate( keys =[ DEST_COUNTRY_NAME# 8108], functions =[]) 
+ +- Exchange hashpartitioning( DEST_COUNTRY_NAME# 8108, 200) 
+  +- *HashAggregate( keys =[ DEST_COUNTRY_NAME# 8108], functions =[]) 
+    +- *Scan JDBCRelation( flight_info) [numPartitions = 1] ... 
+    
+Spark can actually do better than this on certain queries. 
+For example, if we specify a filter on our DataFrame, Spark will push that filter down into the database.
+We can see this in the explain plan under PushedFilters.  
+dbDataFrame.filter(" DEST_COUNTRY_NAME in (' Anguilla', 'Sweden')"). explain # 
+ = = Physical Plan = = 
+ *Scan JDBCRel... 
+   PushedFilters: [* In( DEST_COUNTRY_NAME, [Anguilla, Sweden])],
+
+val pushdownQuery = """( SELECT DISTINCT( DEST_COUNTRY_NAME) FROM flight_info) AS flight_info"""
+val dbDataFrame = spark.read.format(" jdbc") 
+.option(" url", url)
+.option(" dbtable", pushdownQuery)
+.option(" driver", driver) .load()
+ 
+ 
+val joinExpr = person.col(" graduate_program") = = = graduateProgram.col(" id") 
+person.join( graduateProgram, joinExpr). explain()
+  
+ = = Physical Plan = = *BroadcastHashJoin [graduate_program# 40], 
+ [id# 5.... 
+ :- LocalTableScan [id# 38, name# 39, graduate_progr... 
+ +- BroadcastExchange HashedRelationBroadcastMode(.... 
+ +- LocalTableScan [id# 56, degree# 57, departmen.... 
+ 
+  
+ 
+ With the DataFrame API, we can also explicitly give the optimizer a hint
+ that we would like to use a broadcast join by using the correct function around the small DataFrame in question.
+ In this example, these result in the same plan we just saw; however, this is not always the case: 
+ 
+ import org.apache.spark.sql.functions.broadcast 
+ val joinExpr = person.col(" graduate_program") = = = graduateProgram.col(" id") 
+ person.join( broadcast( graduateProgram), joinExpr). explain() 
+ 
+ The SQL interface also includes the ability to provide hints to perform joins. 
+ These are not enforced, however, so the optimizer might choose to ignore them. 
+ You can set one of these hints by using a special comment syntax. 
+ MAPJOIN, BROADCAST, and BROADCASTJOIN all do the same thing and are all supported: 
+ -- in SQL 
+ SELECT /* + MAPJOIN( graduateProgram) */ * FROM person JOIN graduateProgram ON person.graduate_program = graduateProgram.id
+ 
+ This doesn’t come for free either: if you try to broadcast something too large, you can crash your driver node
+ (because that collect is expensive).
+
+  
+  
 https://medium.com/@mrpowers/how-to-write-spark-etl-processes-df01b0c1bec9
 https://hackernoon.com/managing-spark-partitions-with-coalesce-and-repartition-4050c57ad5c4
 https://medium.com/@mrpowers/chaining-custom-dataframe-transformations-in-spark-a39e315f903c
