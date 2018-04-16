@@ -9,6 +9,19 @@
 <h2>Spark</h2>
 
 <pre>
+https://github.com/databricks/Spark-The-Definitive-Guide
+https://databricks.com/try-databricks
+
+.bin/pyspark
+.bin/spark-shell  - scala console
+.bin/spark-sql
+.bin/spark-submit  - run precompiled application
+spark - variable which keeps SparkSession
+
+create DataFrame:  val myRange = spark.range( 1000). toDF(" number")
+with dataframe you do not manipulate partitions manually (but with RDD you do ; RDD is low-level API) 
+driver : executes main(), accepts users params andscheduling work across executors
+
  A dataframe in Spark is similar to a SQL table, an R dataframe, or a pandas dataframe. 
  In Spark, dataframe is actually a wrapper around RDDs, the basic data structure in Spark. 
 
@@ -29,7 +42,7 @@ spark.read.format(" csv")
 .option(" mode", "FAILFAST")   //dropMalformed    | permissive
 .option(" inferSchema", "true") 
 .option(" path", "path/ to/ file( s)") 
-.schema( someSchema) 
+.schema( someSchema)    <--  to strictly specify schema 
 .load()
 
 spark.read.format(" parquet") 
@@ -55,8 +68,10 @@ spark.read.format(" parquet")
 
 <h2>Query</h2>
 
-dbDataFrame.select(" DEST_COUNTRY_NAME"). distinct(). show( 5)
+dbDataFrame.select(" DEST_COUNTRY_NAME"). distinct(). show(5)
 dbDataFrame.select(" DEST_COUNTRY_NAME"). distinct(). explain
+	
+Read the plan from bottom to top; bottom is the source of data	
 = = Physical Plan = =
 *HashAggregate( keys =[ DEST_COUNTRY_NAME# 8108], functions =[]) 
  +- Exchange hashpartitioning( DEST_COUNTRY_NAME# 8108, 200) 
@@ -66,7 +81,8 @@ dbDataFrame.select(" DEST_COUNTRY_NAME"). distinct(). explain
 Spark can actually do better than this on certain queries. 
 For example, if we specify a filter on our DataFrame, Spark will push that filter down into the database.
 We can see this in the explain plan under PushedFilters.  
-dbDataFrame.filter(" DEST_COUNTRY_NAME in (' Anguilla', 'Sweden')"). explain # 
+	
+dbDataFrame.filter(" DEST_COUNTRY_NAME in (' Anguilla', 'Sweden')"). explain  
  = = Physical Plan = = 
  *Scan JDBCRel... 
    PushedFilters: [* In( DEST_COUNTRY_NAME, [Anguilla, Sweden])],
@@ -100,7 +116,25 @@ person
  val joinExpr = person.col(" graduate_program") = = = graduateProgram.col(" id") 
  person.join( broadcast( graduateProgram), joinExpr). explain() 
  
- The SQL interface also includes the ability to provide hints to perform joins. 
+<h2>Spark SQL</h2>	
+With Spark SQL, you can register any DataFrame as a table or view (a temporary table) and query it using pure SQL. 
+There is no performance difference between writing SQL queries or writing DataFrame code, 
+they both “compile” to the same underlying plan that we specify in DataFrame code.
+You can make any DataFrame into a table or view with one simple method call
+ flightData2015. createOrReplaceTempView(" flight_data_2015") 
+Now we can query our data in SQL. To do so, we’ll use the spark.sql function (remember, spark is our SparkSession variable) 
+that conveniently returns a new DataFrame. 
+Although this might seem a bit circular in logic — that a SQL query against a DataFrame returns another DataFrame — 
+it’s actually quite powerful. This makes it possible for you to specify transformations in the manner
+most convenient to you at any given point in time and not sacrifice any efficiency to do so! 
+To understand that this is happening, let’s take a look at two explain plans:  
+	
+val sqlWay = spark.sql(""" SELECT DEST_COUNTRY_NAME, count(1) FROM flight_data_2015 GROUP BY DEST_COUNTRY_NAME """) 
+val dataFrameWay = flightData2015 .groupBy(' DEST_COUNTRY_NAME) .count() 
+sqlWay.explain 
+dataFrameWay.explain
+
+   The SQL interface also includes the ability to provide hints to perform joins. 
  These are not enforced, however, so the optimizer might choose to ignore them. 
  You can set one of these hints by using a special comment syntax. 
  MAPJOIN, BROADCAST, and BROADCASTJOIN all do the same thing and are all supported: 
@@ -169,8 +203,8 @@ Spark supports two types of shared variables:
     2) accumulators -  are only “added” to, such as counters and sums.
 
 There are two types of transformations:
- - those that specify narrow dependencies
- - those that specify wide dependencies
+ - those that specify narrow dependencies  input (partition: output partition ) 1:1
+ - those that specify wide dependencies (partition: output partition ) 1:M
 
 Transformations consisting of narrow dependencies are those where each input partition will contribute to only one output partition.
 Example: where clause specifies a
@@ -178,6 +212,7 @@ narrow dependency, where only one partition contributes to at most one output pa
 
 A wide dependency style transformation will have input partitions contributing to many output partitions. 
 We call this a shuffle where Spark will exchange partitions across the cluster. 
+
 Spark will automatically perform an operation called pipelining on narrow dependencies, 
 this means that if we specify multiple filters on DataFrames they’ll all be performed in memory.
 The same cannot be said for shuffles. When we perform a shuffle, Spark will write the results to disk.
