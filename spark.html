@@ -18,6 +18,25 @@ https://databricks.com/try-databricks
 .bin/spark-submit  - run precompiled application
 spark - variable which keeps SparkSession
 
+<h2>DataFrames, DataSets, RDD </h2>
+
+DataFrames have types, 
+but Spark maintains them completely and only checks whether those types line up to those specified in the schema at runtime.
+
+Datasets, on the other hand, check whether types conform to the specification at compile time. 
+Datasets are only available to Java Virtual Machine (JVM)– based languages (Scala and Java)
+and we specify types with case classes or Java beans.
+
+DataFrames are simply Datasets of Type Row.
+
+df.printSchema()
+df.col("somename")
+df.first()
+
+df.filter("somename < 2")
+.where(col("anothername) =!= "Russia") 
+.show(2)
+
 create DataFrame:  val myRange = spark.range( 1000). toDF(" number")
 with dataframe you do not manipulate partitions manually (but with RDD you do ; RDD is low-level API) 
 driver : executes main(), accepts users params andscheduling work across executors
