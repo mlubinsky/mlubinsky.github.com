@@ -16,7 +16,14 @@ https://github.com/jaceklaskowski  https://legacy.gitbook.com/@jaceklaskowski
 https://www.slideshare.net/cloudera/top-5-mistakes-to-avoid-when-writing-apache-spark-applications
 http://c2fo.io/c2fo/spark/aws/emr/2016/09/01/apache-spark-config-cheatsheet-part2/
 http://site.clairvoyantsoft.com/understanding-resource-allocation-configurations-spark-application/
+
+Use Avro for everything that makes sense to be stored in a row-major manner 
+and Parquet for everything that needs to be stored in a column-major manner.
+
+
 <h2>Shell</h2>
+./sbin/start-master.sh  
+
 .bin/pyspark
 .bin/spark-sql
 .bin/sparkR
@@ -32,6 +39,8 @@ http://site.clairvoyantsoft.com/understanding-resource-allocation-configurations
 
 spark - variable which keeps SparkSession
 
+<h2>Integration with Hive</h2>
+ hive> set hive.ececution.engine=spark
 <h2>DataFrames, DataSets, RDD </h2>
 
 DataFrames have types, 
