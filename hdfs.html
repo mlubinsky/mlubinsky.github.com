@@ -9,6 +9,14 @@
 -->
 <h2>Hadoop</h2>
 <pre> 
+  conf/core-site.xml:  
+  conf/hdfs-site.xml:                      
+  conf/mapred-site.xml:                            
+
+  
+ mapreduce.input.fileinputformat.split.maxsize
+ mapreduce.input.fileinputformat.split.minsize
+
  <a href=hadoop.txt>My Notes</a>
  
 <a href=http://www.idryman.org/blog/2014/03/05/hadoop-performance-tuning-best-practices>Performance tuning</a>
@@ -25,6 +33,7 @@ https://www.java-success.com/01-hadoop-bigdata-overview-interview-questions-answ
 <a href=https://www.amazon.com/dp/1946383481>Hadoop BIG DATA Interview Questions</a>
 <a href=https://www.amazon.com/dp/1946383228>Java notes</a>
 
+<h2>Avro </h2>
 Like Thrift, protobuf structures are defined via an IDL, which is used to generate stub code for multiple languages.
 Also like Thrift, Protocol Buffers do not support internal compression of records, are not splittable, 
 and have no native MapReduce support. But also like Thrift, the Elephant Bird project can be used to encode protobuf records, 
@@ -45,11 +54,12 @@ allowing Avro files to be splittable. Following the header, an Avro file contain
 These blocks can optionally be compressed, and within those blocks, types are stored in their native format, providing an additional
 boost to compression. At the time of writing, Avro supports Snappy and Deflate compression.
 
-<h2>Columnar file formats   for Hadoop </h2>
+<h2>Columnar file formats for Hadoop </h2>
 Columnar file formats supported on Hadoop include the RCFile format, which has been popular for some time as a Hive format,
 as well as newer formats such as the Optimized Row Columnar (ORC) and Parquet,
 
-The MapReduce framework and other ecosystem projects provide RecordReader implementations for many file formats: text delimited, SequenceFile, Avro, Parquet, and more. There
+The MapReduce framework and other ecosystem projects provide RecordReader implementations for many file formats:
+text delimited, SequenceFile, Avro, Parquet, and more. 
 
 
 <h2>HBASE</h2>
@@ -72,14 +82,40 @@ Hive metastore. To enable the usage of Hive metastore outside of Hive, a separat
   HCatalog is a part of Hive and serves the very important purpose of allowing other tools (like Pig and MapReduce)
   to integrate with the Hive metastore.
 
-Grover, Mark; Malaska, Ted; Seidman, Jonathan; Shapira, Gwen. Hadoop Application Architectures: Designing Real-World Big Data Applications (Kindle Locations 990-992). O'Reilly Media. Kindle Edition. 
-  
- mapreduce.input.fileinputformat.split.maxsize
- mapreduce.input.fileinputformat.split.minsize
+ Physically, a partition in Hive is nothing but just a sub-directory in the table directory.
+CREATE TABLE table_name (column1 data_type, column2 data_type) 
+PARTITIONED BY (partition1 data_type, partition2 data_type,….);
+ 
+Partitioning is works better when the cardinality of the partitioning field is not too high .
+
+https://stackoverflow.com/questions/19128940/what-is-the-difference-between-partitioning-and-bucketing-a-table-in-hive
+http://www.hadooptpoint.org/difference-between-partitioning-and-bucketing-in-hive/
+
+Clustering aka bucketing on the other hand, will result with a fixed number of files, 
+since you do specify the number of buckets. 
+What Hive will do is to take the field, calculate a hash and assign a record to that bucket.
+But what happens if you use let's say 256 buckets and the field you're bucketing on has a low cardinality 
+(for instance, it's a US state, so can be only 50 different values) ? 
+You'll have 50 buckets with data, and 206 buckets with no data.
+
+CREATE TABLE table_name PARTITIONED BY (partition1 data_type, partition2 data_type,….) 
+CLUSTERED BY (column_name1, column_name2, …) 
+SORTED BY (column_name [ASC|DESC], …)] 
+INTO num_buckets BUCKETS;
+
+ partitions can dramatically cut the amount of data you're querying.
+ if you want to query only from a certain date forward, the partitioning by year/month/day is going to dramatically cut the amount of IO.
+bucketing can speed up joins with other tables that have exactly the same bucketing, 
+ if you're joining two tables on the same employee_id, hive can do the join bucket by bucket
+ (even better if they're already sorted by employee_id since it's going to to a mergesort which works in linear time).
+
+So, bucketing works well when the field has high cardinality and data is evenly distributed among buckets. 
+Partitioning works best when the cardinality of the partitioning field is not too high.
+
+Also, you can partition on multiple fields, with an order (year/month/day is a good example),
+while you can bucket on only one field.
 
 <h2>HDFS</h2>
-
-
 - rename / move file or directory
 hdfs dfs -mv /old/file /new/file
 - get admin report / cluster status
