@@ -77,6 +77,24 @@ It’s usually best to choose row keys so the load on the cluster is fairly dist
  A table can have one or more column families.   
 Each column family has its own set of HFiles and gets compacted independently of other column families in the same table.
 
+a) Get is used to read information from the HBase table. 
+You can read a specific column from a column-family in a table. 
+b) Put writes the information to the HBase table. 
+You can write specifically to a column in a column-family in a table. 
+For an insert, you need to just specify the table name and column data to fill.
+For an update, you need to Scan the row first using the column and cell values and then update the new value along with the timestamp. 
+c) For Delete, mention the table name and version / column / column family to delete. 
+d) Scan is used access the entire table or a set of records. 
+e) Increment is used to automatically increment a cell value (row or column). 
+
+ How do you read and write data using HBase?
+ Answer: Data is Written into HBase using the following steps:
+ WAL stores the information to be written for log purposes. 
+ This data is copied into the MemStore which is a temporary memory like RAM.
+ The MemStore makes HBase faster. From the MemStore, the data is dumped into the HFile which is in the HDFS. 
+ If the MemStore cache is full, the data is directly written into the HFile.
+ Once data is written successfully into the HDFS, an acknowledgement is passed on to the client.
+
 <h2>Hive</h2>
 Hive metastore. To enable the usage of Hive metastore outside of Hive, a separate project called HCatalog was started. 
   HCatalog is a part of Hive and serves the very important purpose of allowing other tools (like Pig and MapReduce)
@@ -103,7 +121,7 @@ CLUSTERED BY (column_name1, column_name2, …)
 SORTED BY (column_name [ASC|DESC], …)] 
 INTO num_buckets BUCKETS;
 
- partitions can dramatically cut the amount of data you're querying.
+Partitions can dramatically cut the amount of data you're querying.
  if you want to query only from a certain date forward, the partitioning by year/month/day is going to dramatically cut the amount of IO.
 bucketing can speed up joins with other tables that have exactly the same bucketing, 
  if you're joining two tables on the same employee_id, hive can do the join bucket by bucket
