@@ -16,6 +16,7 @@ https://github.com/jaceklaskowski  https://legacy.gitbook.com/@jaceklaskowski
 https://www.slideshare.net/cloudera/top-5-mistakes-to-avoid-when-writing-apache-spark-applications
 http://c2fo.io/c2fo/spark/aws/emr/2016/09/01/apache-spark-config-cheatsheet-part2/
 http://site.clairvoyantsoft.com/understanding-resource-allocation-configurations-spark-application/
+https://henning.kropponline.de/2016/12/11/broadcast-join-with-spark/
 
 Use Avro for everything that makes sense to be stored in a row-major manner 
 and Parquet for everything that needs to be stored in a column-major manner.
@@ -190,6 +191,22 @@ dataFrameWay.explain
   To change Spark’s log level, simply run the following command: 
   spark.sparkContext.setLogLevel(" INFO")
   
+With a broadcast join one side of the join equation is being materialized and send to all mappers. It is therefore considered as a map-side join 
+which can bring significant performance improvement by omitting the required sort-and-shuffle phase during a reduce step.
+As the data set is getting materialized and send over the network it does only bring significant performance improvement, if it considerable small. Another constraint is that it also needs to fit completely into memory of each executor. 
+Not to forget it also needs to fit into the memory of the Driver!
+DataFrame API
+---------------------------
+val employeesDF = employeesRDD.toDF
+va departmentsDF = departmentsRDD.toDF
+
+// materializing the department data
+val tmpDepartments = broadcast(departmentsDF.as("departments"))
+
+employeesDF.join(broadcast(tmpDepartments), 
+   $"depId" === $"id",  // join by employees.depID == departments.id 
+   "inner").show()
+
 Spark includes a cost-based query optimizer that plans queries based on the properties of the input data when using the structured APIs.
 To allow the cost-based optimizer to make these sorts of decisions, you need to collect (and maintain) statistics about your tables that it can use.
 There are two kinds of statistics: table-level and column-level statistics.
