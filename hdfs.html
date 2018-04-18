@@ -25,8 +25,39 @@ https://www.java-success.com/01-hadoop-bigdata-overview-interview-questions-answ
 <a href=https://www.amazon.com/dp/1946383481>Hadoop BIG DATA Interview Questions</a>
 <a href=https://www.amazon.com/dp/1946383228>Java notes</a>
 
+Like Thrift, protobuf structures are defined via an IDL, which is used to generate stub code for multiple languages.
+Also like Thrift, Protocol Buffers do not support internal compression of records, are not splittable, 
+and have no native MapReduce support. But also like Thrift, the Elephant Bird project can be used to encode protobuf records, 
+providing support for MapReduce, compression, and splittability.
 
-mapreduce.input.fileinputformat.split.maxsize
+Avro is a language-neutral data serialization system designed to address the major downside of Hadoop Writables:
+lack of language portability. Like Thrift and Protocol Buffers, Avro data is described through a language-independent schema. 
+Unlike Thrift and Protocol Buffers, code generation is optional with Avro. Since Avro stores the schema in the header of each file,
+it’s self-describing and Avro files can easily be read later, even from a different language than the one used to write the file. 
+Avro also provides better native support for MapReduce since Avro data files are compressible and splittable. 
+Another important feature of Avro that makes it superior to SequenceFiles for Hadoop applications is support for schema evolution;
+that is, the schema used to read a file does not need to match the schema used to write the file.
+This makes it possible to add new fields to a schema as requirements change.
+Avro schemas are usually written in JSON, but may also be written in Avro IDL, which is a C-like language. As just noted,
+the schema is stored as part of the file metadata in the file header. In addition to metadata, 
+the file header contains a unique sync marker. Just as with SequenceFiles, this sync marker is used to separate blocks in the file,
+allowing Avro files to be splittable. Following the header, an Avro file contains a series of blocks containing serialized Avro objects.
+These blocks can optionally be compressed, and within those blocks, types are stored in their native format, providing an additional
+boost to compression. At the time of writing, Avro supports Snappy and Deflate compression.
+
+<h2>Columnar file formats   for Hadoop </h2>
+Columnar file formats supported on Hadoop include the RCFile format, which has been popular for some time as a Hive format,
+as well as newer formats such as the Optimized Row Columnar (ORC) and Parquet,
+
+<h2>HBASE</n2>
+HBase records can have an unlimited number of columns, but only a single row key. 
+This is different from relational databases, where the primary key can be a composite of multiple columns. 
+This means that in order to create a unique row key for records, you may need to combine multiple pieces of information in a single key.
+
+  In HBase, all the row keys are sorted, and each region stores a range of these sorted row keys. 
+  Each region is pinned to a region server (i.e., a node in the cluster). 
+  A well-known anti-pattern is to use a timestamp for row keys because it would make most of the put and get requests focused on a single region and hence a single region server, which somewhat defeats the purpose of having a distributed system. It’s usually best to choose row keys so the load on the cluster is fairly distributed. As we will see later in this chapter, one of the ways to resolve this problem is to salt the keys.
+ mapreduce.input.fileinputformat.split.maxsize
 mapreduce.input.fileinputformat.split.minsize
 
 <h2>HDFS</h2>
