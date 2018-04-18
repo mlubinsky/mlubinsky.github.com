@@ -49,7 +49,10 @@ boost to compression. At the time of writing, Avro supports Snappy and Deflate c
 Columnar file formats supported on Hadoop include the RCFile format, which has been popular for some time as a Hive format,
 as well as newer formats such as the Optimized Row Columnar (ORC) and Parquet,
 
-<h2>HBASE</n2>
+The MapReduce framework and other ecosystem projects provide RecordReader implementations for many file formats: text delimited, SequenceFile, Avro, Parquet, and more. There
+
+
+<h2>HBASE</h2>
 HBase records can have an unlimited number of columns, but only a single row key. 
 This is different from relational databases, where the primary key can be a composite of multiple columns. 
 This means that in order to create a unique row key for records, you may need to combine multiple pieces of information in a single key.
@@ -61,6 +64,15 @@ A well-known anti-pattern is to use a timestamp for row keys because it would ma
 It’s usually best to choose row keys so the load on the cluster is fairly distributed;
   one of the ways to resolve this problem is to salt the keys.
   
+ A table can have one or more column families.   
+Each column family has its own set of HFiles and gets compacted independently of other column families in the same table.
+
+<h2>Hive</h2>
+Hive metastore. To enable the usage of Hive metastore outside of Hive, a separate project called HCatalog was started. 
+  HCatalog is a part of Hive and serves the very important purpose of allowing other tools (like Pig and MapReduce)
+  to integrate with the Hive metastore.
+
+Grover, Mark; Malaska, Ted; Seidman, Jonathan; Shapira, Gwen. Hadoop Application Architectures: Designing Real-World Big Data Applications (Kindle Locations 990-992). O'Reilly Media. Kindle Edition. 
   
  mapreduce.input.fileinputformat.split.maxsize
  mapreduce.input.fileinputformat.split.minsize
