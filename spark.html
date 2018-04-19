@@ -135,8 +135,10 @@ dfA.join(dfB, dfB("date") === dfA("date") )
 https://blog.codecentric.de/en/2016/07/spark-2-0-datasets-case-classes/
 https://www.balabit.com/blog/spark-scala-dataset-tutorial
 
-Since Spark as a compiler understands your Dataset type JVM object, it maps your type-specific JVM object to Tungsten’s internal memory representation using Encoders. 
- As a result, Tungsten Encoders can efficiently serialize/deserialize JVM objects as well as generate compact bytecode that can execute at superior speeds.
+Since Spark as a compiler understands your Dataset type JVM object,
+it maps your type-specific JVM object to Tungsten’s internal memory representation using Encoders. 
+ As a result, Tungsten Encoders can efficiently serialize/deserialize JVM objects 
+ as well as generate compact bytecode that can execute at superior speeds.
 
 val lines = sqlContext.read.text("/wikipedia").as[String]
 
@@ -157,7 +159,9 @@ val dsAvgTmp = ds
 
 ds1.joinWith(ds2, ds1.toDF().col("key") === ds2.toDF().col("key"), "inner")
 
-To use joinWith you first have to create a DataSet, and most likely two of them. To create a DataSet, you need to create a case class that matches your schema and call DataFrame.as[T] where T is your case class. So:
+To use joinWith you first have to create a DataSet, and most likely two of them. 
+To create a DataSet, you need to create a case class that matches your schema and call DataFrame.as[T] where T is your case class.
+So:
 
 case class KeyValue(key: Int, value: String)
 val df = Seq((1,"asdf"),(2,"34234")).toDF("key", "value")
@@ -190,12 +194,12 @@ ds.joinWith(ds2, df.col("key") === df2.col("key")).show
 // | [1,asdf]|[1,7.7,101]|
 // |[2,34234]| [2,1.2,10]|
 // +---------+-----------+
-As you can see, joinWith leaves the objects intact as parts of a tuple, while join flattens out the columns into a single namespace. (Which will cause problems in the above case because the column name "key" is repeated.)
+As you can see, joinWith leaves the objects intact as parts of a tuple, while join flattens out the columns into a single namespace.
+(Which will cause problems in the above case because the column name "key" is repeated.)
 
-Curiously enough, I have to use df.col("key") and df2.col("key") to create the conditions for joining ds and ds2 -- if you use just col("key") on either side it does not work, and ds.col(...) doesn't exist. Using the original df.col("key") does the trick, however.
-
-share
-
+Curiously enough, I have to use df.col("key") and df2.col("key") to create the conditions for joining ds and ds2 -- 
+if you use just col("key") on either side it does not work,
+and ds.col(...) doesn't exist. Using the original df.col("key") does the trick, however.
 
 
 <h2>Accumulators and broadcast variables (a-la distributed Cache)</h2>
