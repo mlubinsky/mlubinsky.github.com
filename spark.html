@@ -339,8 +339,31 @@ dataFrameWay.explain
  This doesn’t come for free either: if you try to broadcast something too large, you can crash your driver node
  (because that collect is expensive).
 
+<h2>Partitions</h2>
+http://www.bigsynapse.com/spark-input-output
+http://www.bigsynapse.com/controlling-the-number-of-partitions-in-spark
+https://acadgild.com/blog/partitioning-in-spark/
+https://medium.com/parrot-prediction/partitioning-in-apache-spark-8134ad840b0
+Spark Partition  Types
+-------------------------
+Hash Partitioning  partition = key.hashCode () % numPartitions.
+Range Partitioning  - In some RDDs have keys that follow a particular ordering. 
+Range partitioning is an efficient partitioning technique, for such RDDs. 
+Custom partitioner
+https://medium.com/parrot-prediction/partitioning-in-apache-spark-8134ad840b0
+
+spark.default.parallelism - sets up the number of partitions to use for HashPartitioner (can be overridden when creating SparkContext object),
+spark.sql.shuffle.partitions - controls the number of partitions for operations on DataFrames (default is 200)
+
+ in HDFS one partition is created for each block of the file of size 64M
+Too few partitions - You will not utilize all of the cores available in the cluster.
+Too many partitions - There will be excessive overhead in managing many small tasks.
+Best way to decide a number of spark partitions in an RDD is to make the number of partitions equal to the number of cores over the cluster. 
+This results in all the partitions will process in parallel.
+
 <h2>Performance and Monitoring</h2>
-  To change Spark’s log level, simply run the following command: 
+
+To change Spark’s log level, simply run the following command: 
   spark.sparkContext.setLogLevel(" INFO")
   
 https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/best_practices/prefer_reducebykey_over_groupbykey.html
