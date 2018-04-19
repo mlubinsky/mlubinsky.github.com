@@ -80,8 +80,17 @@ driver : executes main(), accepts users params andscheduling work across executo
 
 
 DataSet: static typing -> compile-time error detection
-DataFrames are untyped: scala compiler doesn not check types in its schema
+DataFrames are untyped: scala compiler does  not check types in its schema
 DataFrames=DataSet[Rows]
+
+DataFrames are a newer abstration of data within Spark and are a structured abstration (akin to SQL tables). 
+Unlike RDDs they are stored in a column based fashion in memory which allows for various optimizations 
+(vectorization, columnar compression, off-heap storage, etc.). 
+Their schema is fairly robust allowing for arbitrary nested data structures
+(ie: a column can be a list of structs which are composed of other structs). 
+The fact that Spark is aware of the structure of the underlying data allows for non-JVM languages (Python, R) to leverage functions written in the faster native JVM implementation. One of the issues with DataFrames
+however is that they are only runtime and not compile time type safe which for a language like Scala introduces a severe drawback.
+
 
 Spark supports two types of shared variables:
     1) broadcast variables - can be used to cache a value in memory on all nodes, 
