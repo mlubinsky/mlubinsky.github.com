@@ -117,20 +117,93 @@ DataSet: static typing -> compile-time error detection
 DataFrames are untyped: scala compiler does  not check types in its schema
 DataFrames=DataSet[Rows]
 
-DataFrames are a newer abstration of data within Spark and are a structured abstration (akin to SQL tables). 
-Unlike RDDs they are stored in a column based fashion in memory which allows for various optimizations 
+DataFrames :  Unlike RDDs they are stored in a column based fashion in memory which allows for various optimizations 
 (vectorization, columnar compression, off-heap storage, etc.). 
 Their schema is fairly robust allowing for arbitrary nested data structures
 (ie: a column can be a list of structs which are composed of other structs). 
-The fact that Spark is aware of the structure of the underlying data allows for non-JVM languages (Python, R) to leverage functions written in the faster native JVM implementation. One of the issues with DataFrames
+The fact that Spark is aware of the structure of the underlying data allows for non-JVM languages (Python, R) 
+to leverage functions written in the faster native JVM implementation. One of the issues with DataFrames
 however is that they are only runtime and not compile time type safe which for a language like Scala introduces a severe drawback.
+<b>Join DF</b>
+val dfA : DataFrame
+val dfB : DataFrame
+
+dfA.join(dfB, dfB("date") === dfA("date") )
 
 
+<h2>DataSets</h2>
+https://blog.codecentric.de/en/2016/07/spark-2-0-datasets-case-classes/
+https://www.balabit.com/blog/spark-scala-dataset-tutorial
+
+Since Spark as a compiler understands your Dataset type JVM object, it maps your type-specific JVM object to Tungsten’s internal memory representation using Encoders. 
+ As a result, Tungsten Encoders can efficiently serialize/deserialize JVM objects as well as generate compact bytecode that can execute at superior speeds.
+
+val lines = sqlContext.read.text("/wikipedia").as[String]
+
+val words = lines
+  .flatMap(_.split(" "))
+  .filter(_ != "")
+  
+case class University(name: String, numStudents: Long, yearFounded: Long)
+val schools = sqlContext.read.json("/schools.json").as[University]
+schools.map(s => s"${s.name} is ${2015 – s.yearFounded} years old")
+
+
+val dsAvgTmp = ds
+.filter(d => {d.temp > 25})
+.map(d => (d.temp, d.humidity, d.cca3))
+.groupBy($"_3")
+.avg()
+
+ds1.joinWith(ds2, ds1.toDF().col("key") === ds2.toDF().col("key"), "inner")
+
+To use joinWith you first have to create a DataSet, and most likely two of them. To create a DataSet, you need to create a case class that matches your schema and call DataFrame.as[T] where T is your case class. So:
+
+case class KeyValue(key: Int, value: String)
+val df = Seq((1,"asdf"),(2,"34234")).toDF("key", "value")
+val ds = df.as[KeyValue]
+// org.apache.spark.sql.Dataset[KeyValue] = [key: int, value: string]
+You could also skip the case class and use a tuple:
+
+val tupDs = df.as[(Int,String)]
+// org.apache.spark.sql.Dataset[(Int, String)] = [_1: int, _2: string]
+Then if you had another case class / DF, like this say:
+
+case class Nums(key: Int, num1: Double, num2: Long)
+val df2 = Seq((1,7.7,101L),(2,1.2,10L)).toDF("key","num1","num2")
+val ds2 = df2.as[Nums]
+// org.apache.spark.sql.Dataset[Nums] = [key: int, num1: double, num2: bigint]
+Then, while the syntax of join and joinWith are similar, the results are different:
+
+df.join(df2, df.col("key") === df2.col("key")).show
+// +---+-----+---+----+----+
+// |key|value|key|num1|num2|
+// +---+-----+---+----+----+
+// |  1| asdf|  1| 7.7| 101|
+// |  2|34234|  2| 1.2|  10|
+// +---+-----+---+----+----+
+
+ds.joinWith(ds2, df.col("key") === df2.col("key")).show
+// +---------+-----------+
+// |       _1|         _2|
+// +---------+-----------+
+// | [1,asdf]|[1,7.7,101]|
+// |[2,34234]| [2,1.2,10]|
+// +---------+-----------+
+As you can see, joinWith leaves the objects intact as parts of a tuple, while join flattens out the columns into a single namespace. (Which will cause problems in the above case because the column name "key" is repeated.)
+
+Curiously enough, I have to use df.col("key") and df2.col("key") to create the conditions for joining ds and ds2 -- if you use just col("key") on either side it does not work, and ds.col(...) doesn't exist. Using the original df.col("key") does the trick, however.
+
+share
+
+
+
+<h2>Accumulators and broadcast variables (a-la distributed Cache)</h2>
 Spark supports two types of shared variables:
     1) broadcast variables - can be used to cache a value in memory on all nodes, 
     2) accumulators -  are only “added” to, such as counters and sums.
 
-<h2>Accumulators</h2>
+
 are variables that are only “added” to through an associative operation and can therefore, 
 be efficiently supported in parallel. They can be used to implement counters (as in MapReduce) or sums.
 Spark natively supports accumulators of numeric types, and programmers can add support for new types
