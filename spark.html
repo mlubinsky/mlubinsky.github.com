@@ -13,6 +13,9 @@
 https://github.com/databricks/Spark-The-Definitive-Guide
 https://databricks.com/try-databricks
 https://spark.apache.org/docs/latest/tuning.html
+https://legacy.gitbook.com/book/umbertogriffo/apache-spark-best-practices-and-tuning/details
+https://legacy.gitbook.com/book/databricks/databricks-spark-knowledge-base/details
+
 https://github.com/jaceklaskowski  https://legacy.gitbook.com/@jaceklaskowski
 https://www.slideshare.net/cloudera/top-5-mistakes-to-avoid-when-writing-apache-spark-applications
 http://c2fo.io/c2fo/spark/aws/emr/2016/09/01/apache-spark-config-cheatsheet-part2/
@@ -70,10 +73,27 @@ driver : executes main(), accepts users params andscheduling work across executo
  A dataframe in Spark is similar to a SQL table, an R dataframe, or a pandas dataframe. 
  In Spark, dataframe is actually a wrapper around RDDs, the basic data structure in Spark. 
 
+
+DataSet: static typing -> compile-time error detection
+DataFrames are untyped: scala compiler doesn not check types in its schema
+DataFrames=DataSet[Rows]
+
+Spark supports two types of shared variables:
+    1) broadcast variables - can be used to cache a value in memory on all nodes, 
+    2) accumulators -  are only “added” to, such as counters and sums.
+
+<h2>Accumulators</h2>
+are variables that are only “added” to through an associative operation and can therefore, 
+be efficiently supported in parallel. They can be used to implement counters (as in MapReduce) or sums.
+Spark natively supports accumulators of numeric types, and programmers can add support for new types
+
+val accum = sc.accumulator(0)
+sc.parallelize(Array(1, 2, 3, 4)).foreach(x => accum += x)
+accum.value
+
+
 Parquet stores data in binary files with column-oriented storage, 
 and also tracks some statistics about each file that make it possible to quickly skip data not needed for a query.
-
-
 
 <h2>Read</h2>
 
@@ -193,6 +213,28 @@ dataFrameWay.explain
   To change Spark’s log level, simply run the following command: 
   spark.sparkContext.setLogLevel(" INFO")
   
+https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/best_practices/prefer_reducebykey_over_groupbykey.html
+<b>Avoid GroupByKey</b>
+Let's look at two different ways to compute word counts, one using reduceByKey and the other using groupByKey:
+
+val words = Array("one", "two", "two", "three", "three", "three")
+val wordPairsRDD = sc.parallelize(words).map(word => (word, 1))
+
+val wordCountsWithReduce = wordPairsRDD
+  .reduceByKey(_ + _)
+  .collect()
+
+val wordCountsWithGroup = wordPairsRDD
+  .groupByKey()
+  .map(t => (t._1, t._2.sum))
+  .collect()
+While both of these functions will produce the correct answer, the reduceByKey example works much better on a large dataset. 
+That's because Spark knows it can combine output with a common key on each partition before shuffling the data.
+
+Look at the diagram below to understand what happens with reduceByKey. 
+Notice how pairs on the same machine with the same key are combined (by using the lamdba function passed into reduceByKey)
+before the data is shuffled. Then the lamdba function is called again to reduce all the values from each partition to produce one final result.
+
 With a broadcast join one side of the join equation is being materialized and send to all mappers. It is therefore considered as a map-side join 
 which can bring significant performance improvement by omitting the required sort-and-shuffle phase during a reduce step.
 As the data set is getting materialized and send over the network it does only bring significant performance improvement, if it considerable small. Another constraint is that it also needs to fit completely into memory of each executor. 
@@ -248,21 +290,13 @@ http://technology.finra.org/code/using-spark-transformations-for-mpreduce-jobs.h
 https://blog.deepsense.ai/fast-and-accurate-categorical-distribution-without-reshuffling-in-apache-spark/
 
 
-<h3>Start</h3>
+<h3>RDD activities</h3>
 In Spark all work is expressed as either
  - creating new RDDs
  - transforming existing RDDs
  - calling operations on RDDs to compute a result.
 
-DataSet: static typing -> compile-time error detection
-DataFrames are untyped: scala compiler doesn not check types in its schema
-DataFrames=DataSet[Rows]
-
-
-Spark supports two types of shared variables:
-    1) broadcast variables - can be used to cache a value in memory on all nodes, 
-    2) accumulators -  are only “added” to, such as counters and sums.
-
+<h2>Transformations</h2>
 There are two types of transformations:
  - those that specify narrow dependencies  input (partition: output partition ) 1:1
  - those that specify wide dependencies (partition: output partition ) 1:M
@@ -278,13 +312,15 @@ Spark will automatically perform an operation called pipelining on narrow depend
 this means that if we specify multiple filters on DataFrames they’ll all be performed in memory.
 The same cannot be said for shuffles. When we perform a shuffle, Spark will write the results to disk.
 
+<h2>Actions</h2>
 There are three kinds of actions:
 • actions to view data in the console;
 • actions to collect data to native objects in the respective language; 
 • and actions to write to output data sources.
 
 
-Spark SQL allows you as a user to register any DataFrame as a table or view (a temporary table) and query it using pure SQL. 
+<h2>Spark SQL</h2>  
+allows you as a user to register any DataFrame as a table or view (a temporary table) and query it using pure SQL. 
 There is no performance difference between writing SQL queries or writing DataFrame code, 
 they both “compile” to the same underlying plan that we specify in DataFrame code.
 
@@ -316,13 +352,6 @@ def processData (t: RDD[(Int, Int)], u: RDD[(Int, String)]) : Map[Int,Long] = {
   return jn.countByKey
 }
 
-Accumulators are variables that are only “added” to through an associative operation and can therefore, 
-be efficiently supported in parallel. They can be used to implement counters (as in MapReduce) or sums.
-Spark natively supports accumulators of numeric types, and programmers can add support for new types
-
-val accum = sc.accumulator(0)
-sc.parallelize(Array(1, 2, 3, 4)).foreach(x => accum += x)
-accum.value
 
 
  StatusCounter scounter = myRDD.status();
