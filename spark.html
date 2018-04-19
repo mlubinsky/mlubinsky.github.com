@@ -71,6 +71,40 @@ df.filter("somename < 2")
 .where(col("anothername) =!= "Russia") 
 .show(2)
 
+auctionDF
+.select("auctionid")
+.distinct
+.count
+
+auctionDF
+.groupBy("item", "auctionid")
+.count
+.agg(min("count"), avg("count"),max("count"))
+.show
+
+Show various implementations for the following query in Spark?
+Table name is employee and dataframe name is dF Query: 
+
+select name, AVG(salary) from employee where country = “USA” group by name, salary;
+
+Method 1: Using scala code in Spark: 
+dF.filter(“country = ‘USA’”)// Filter them 
+.groupBy(“name”, “salary”)// group them 
+.agg(dF(“name”), avg(“salary”)// Aggregate 
+.show()// display first 20 lines from the result
+
+Method 2: Using sqlContext – DataFrame/DataSet implementation 
+
+dF.createOrReplaceTempView("employee")// Register the table 
+val empQuery = “select name, AVG(salary) from employee where country = “USA” groupby name, salary;” 
+sqlContext.sql(empQuery)// execute the query using sqlContext 
+.show()// display first 20 lines from the result
+
+Method 3: Using hiveContext – if table exists in hive 
+dF.createOrReplaceTempView("employee")// Register the table 
+val empQuery = “select name, AVG(salary) from employee where country = “USA” groupby name, salary;” 
+hiveContext.sql(empQuery)// execute the query using hiveContext
+
 create DataFrame:  val myRange = spark.range( 1000). toDF(" number")
 with dataframe you do not manipulate partitions manually (but with RDD you do ; RDD is low-level API) 
 driver : executes main(), accepts users params andscheduling work across executors
