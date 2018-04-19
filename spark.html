@@ -25,8 +25,13 @@ http://kirillpavlov.com/blog/2016/04/23/beyond-traditional-join-with-apache-spar
 
 Use Avro for everything that makes sense to be stored in a row-major manner 
 and Parquet for everything that needs to be stored in a column-major manner.
+Parquet stores data in binary files with column-oriented storage, 
+and also tracks some statistics about each file that make it possible to quickly skip data not needed for a query.
 
-
+----
+spark.cores.max
+spark.executor.memory
+--------
 <h2>Shell</h2>
 ./sbin/start-master.sh  
 
@@ -92,8 +97,6 @@ sc.parallelize(Array(1, 2, 3, 4)).foreach(x => accum += x)
 accum.value
 
 
-Parquet stores data in binary files with column-oriented storage, 
-and also tracks some statistics about each file that make it possible to quickly skip data not needed for a query.
 
 <h2>Read</h2>
 
@@ -185,6 +188,13 @@ person
 With Spark SQL, you can register any DataFrame as a table or view (a temporary table) and query it using pure SQL. 
 There is no performance difference between writing SQL queries or writing DataFrame code, 
 they both “compile” to the same underlying plan that we specify in DataFrame code.
+
+Complex Spark SQL Data Types
+Scala     ->  SQL
+Array[T]  -> ArrayType(elementType, containsNull)
+Map[K,V]  -> MapType(keyType, valueType, valueContainsNull)
+case class ->  StructType(List[StructFields])
+
 You can make any DataFrame into a table or view with one simple method call
  flightData2015. createOrReplaceTempView(" flight_data_2015") 
 Now we can query our data in SQL. To do so, we’ll use the spark.sql function (remember, spark is our SparkSession variable) 
@@ -318,11 +328,6 @@ There are three kinds of actions:
 • actions to collect data to native objects in the respective language; 
 • and actions to write to output data sources.
 
-
-<h2>Spark SQL</h2>  
-allows you as a user to register any DataFrame as a table or view (a temporary table) and query it using pure SQL. 
-There is no performance difference between writing SQL queries or writing DataFrame code, 
-they both “compile” to the same underlying plan that we specify in DataFrame code.
 
 <h2>Structured Streaming</h2>
 Structured Streaming became Production Ready in Spark 2.2. 
@@ -497,11 +502,10 @@ cartesian.filter{
 
 
 
-<h3>Spark SQL </h3>
-It makes optimization of excecution plan as SQL RDBMS does
+<h3>Data Frames</h3>
+ 
 DataFrames are untyped: scala compiler doesn not check types in its schema
 RDD[T]  but DataFrame has no type, it con
- DataSets
 Catalyst - query optimizer
 Tungsten - off-heap serializer avoiding garbage collector - contains rows which can contain any schema
 DataFrame  conseptually are RDD full of records with known schema (like in SQL RDBMS table)
@@ -516,7 +520,7 @@ case class Person(id: Int, name: String, city: String)
 val peopleRDD = .. //Assume RDD[Person]
 reflection will be used to automatically generate names of fields
 
-
+How to create dataframe
 1) Create RDD of Rows from original RDD
 2) Create schema represented by StructuredType
 3) Apply schema to RDD of Rows via createDataFrime method
@@ -527,11 +531,7 @@ val df=sparkread.json(my.json)
 peopleOF.createOrReplaceTempView("people")
 val adultsDF = spark.sql("SELECT * FROM people WHERE age>17")
 
-Complex Spark SQL Data Types
-Scala     ->  SQL
-Array[T]  -> ArrayType(elementType, containsNull)
-Map[K,V]  -> MapType(keyType, valueType, valueContainsNull)
-case class ->  StructType(List[StructFields])
+
 
 DataFrame show() show 20 first elements
 printSchema()
@@ -727,7 +727,7 @@ coalesce
 But if we use pre-partitioning then running reduceByKey on pre-partitioned RDD will
 do reducing work locally; only final result will be send from worker to driver
 
-Join called on 2 RDDs that a prepartitioned with same partitioner and cached on same machine
+Join called on 2 RDDs that a pre-partitioned with same partitioner and cached on same machine
 will work locally as well; nio shuffling
 
 myRDD.toDebugString
@@ -743,7 +743,7 @@ Skewed data solutions:
 
 RDD is lazy, just DAG is bulding until the action is asked, like collect()
 .cache()
-.coalesce()  - ermove empty RDD?
+.coalesce()  - remove empty RDD
 
 ReduceByKey vs GroupByKey
 TreeDeduce over Reduce
@@ -776,9 +776,6 @@ Off-heap memory
  GeoRDD
  ExSpark
 
-----
-spark.cores.max
-spark.executor.memory
 
 --------
 RSS.cache==RDD.persist(MEMORY_ONLY)  it is the same
