@@ -15,6 +15,47 @@ https://medium.com/@ssola/building-microservices-with-python-part-i-5240a8dcc2fb
 https://medium.com/@ssola/building-microservices-with-python-part-2-9f951199094a
 https://medium.com/@ssola/building-microservices-with-python-part-3-a556a4c4bc00
 
+ there are a lot of downsides to going with a normal HTTP/REST model.
+
+Getting documentation working great is rough. At best, it usually involves some sort of Swagger middleware, 
+which feels like stepping into early-2000s Java programming. It works, but its not great.
+
+You still have to deal with things like pagination and limiting on your own,
+even though often everyone ends up implementing the same solution. There are libraries that can help with this.
+
+Once you get into complex querying, you inevitably start breaking out of REST paradigms. 
+That might mean moving to get requests w/ bodies to support JSON without going into the URL query params,
+or odata-like ugly query params, or duplicated endpoint logic just to mutate the data in a specific way the client needs. 
+Every app of decent complexity gets to a point like this.
+
+Many of those reasons are why RPC has become pretty popular recently.
+
+I can't recommend gRPC. Its reliance on HTTP2 makes it very difficult to use in environments like AWS. 
+I also dislike that it doesn't support querying with JSON, which means every client that tries to access it needs to support protobuf.
+This makes it very difficult to use in internet-exposed applications. 
+I've tried <b>Twirp</b> and I like it. I haven't tried Micro but it looks good.
+
+All that said: I adore GraphQL. I truly believe GraphQL is the apex of internet-exposed API design.
+
+You get documentation, schema enforcement, etc right out of the box.
+
+Clients get to request the exact data that they need from your graph.
+If I need a user, her name, email address, and the titles of every post she has liked,
+I can fetch that in a single query with absolutely zero extra data over the wire.
+A few other technologies have came out to support query patterns similar to this, but none are as clean as GraphQL. 
+If you tried to implement that with more basic HTTP/RPC, you'd end up having a specific endpoint just for that query, 
+ridiculously complex arguments, or sending too much data.
+
+Though GraphQL still has a lot of problems:
+
+Pagination is still an unsolved problem out of the box.
+
+DDOSing a GraphQL server is pretty easy if it isn't designed to be resilient to it. 
+Fortunately there's a lot of recent art out there you can reference for how to set it up to be resilient.
+
+GraphQL with Go... sucks. It sucks a lot. And its completely because of the type system. Compared to Apollo and Vesper in JS, 
+Absinthe in Elixir, and Juniper in Rust, Go is really far behind and shows no indication of catching up due to the limited type system
+
 <h2>gRPC</h2>
 https://grpc.io/docs/tutorials/basic/python.html
 https://www.slideshare.net/InfoQ/generating-unified-apis-with-protocol-buffers-and-grpc
