@@ -15,6 +15,7 @@ g++ -std=c++11 boolean_matrix.cpp
 <https://github.com/CppCon/CppCon2017>
 
 <https://manybutfinite.com/post/anatomy-of-a-program-in-memory/>
+<https://channel9.msdn.com/Events/Build/2013/4-329>  C++ performance
 <https://blog.nelhage.com/post/three-kinds-of-leaks/>
 
 ### Constructor
