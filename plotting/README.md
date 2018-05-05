@@ -55,6 +55,7 @@ http://www.labri.fr/perso/nrougier/teaching/matplotlib/matplotlib.html
 https://www.numfocus.org/blog/matplotlib-lead-developer-explains-why-he-cant-fix-the-docs-but-you-can/
 
 https://github.com/antonkorbalev/simplesysmon  Matplotlib +  Flask
+
 http://queirozf.com/entries/matplotlib-pylab-pyplot-etc-what-s-the-different-between-these
 
 http://hypertools.readthedocs.io/en/latest/index.html
