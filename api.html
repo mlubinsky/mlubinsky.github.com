@@ -78,6 +78,18 @@ GraphQL with Go... sucks. It sucks a lot. And its completely because of the type
 Absinthe in Elixir, and Juniper in Rust, Go is really far behind and shows no indication of catching up due to the limited type system
 
 <h2>gRPC</h2>
+ 
+http://www.grpc.io/
+https://medium.com/@shijuvar/building-high-performance-apis-in-go-using-grpc-and-protocol-buffers-2eda5b80771b
+
+Unlike JSON and XML, Protocol Buffers are not just message interchange format, 
+it’s also used for describing the service interfaces (service endpoints). 
+Thus Protocol Buffers are used for both the service interface and the structure of the payload messages. 
+
+In gRPC, you define services and its methods along with payload messages. 
+Like a typical communication between a client application and a RPC system, 
+a gRPC client application can directly call methods on a remote server as if it was a local object in your client application.
+
 https://habr.com/post/354706/  Twirp vs gRPC
 https://grpc.io/docs/tutorials/basic/python.html
 https://www.slideshare.net/InfoQ/generating-unified-apis-with-protocol-buffers-and-grpc
