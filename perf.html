@@ -159,17 +159,6 @@ routing packets to the correct application on the destination computer using the
 resending the packets if they get lost on the way, and reassembling the packets in the correct order once they’ve reached the other end.
 https://habrahabr.ru/company/odnoklassniki/blog/266005/
 
-<h2>gRPC</h2>
-http://www.grpc.io/
-https://medium.com/@shijuvar/building-high-performance-apis-in-go-using-grpc-and-protocol-buffers-2eda5b80771b
-
-Unlike JSON and XML, Protocol Buffers are not just message interchange format, 
-it’s also used for describing the service interfaces (service endpoints). 
-Thus Protocol Buffers are used for both the service interface and the structure of the payload messages. 
-
-In gRPC, you define services and its methods along with payload messages. 
-Like a typical communication between a client application and a RPC system, 
-a gRPC client application can directly call methods on a remote server as if it was a local object in your client application.
 
 <h2>Web</h2>
 https://habrahabr.ru/company/oleg-bunin/blog/340114/
@@ -315,8 +304,122 @@ https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/
 
 https://www.excelsiorjet.com/blog/articles/portable-profilers-and-where-to-find-them/
 
-<h2>Hadoop</h2>
-http://www.idryman.org/blog/2014/03/05/hadoop-performance-tuning-best-practices/
-https://blog.cloudera.com/blog/2009/12/7-tips-for-improving-mapreduce-performance/
+ 
 
+<h2>The Various Kinds of IO - Blocking, Non-blocking, Multiplexed and Async</h2>
+https://www.rubberducking.com/2018/05/the-various-kinds-of-io-blocking-non.html
+https://news.ycombinator.com/item?id=17009547
+<b> In Hardware</b>
+On modern operating systems, IO, for input/output, is a way for data to be exchanged with peripherals. 
+This includes reading or writing to disk, or SSD, sending or receiving data over the network, displaying data to the monitor, 
+receiving keyboard and mouse input, etc.
+
+The ways in which modern operating systems communicate with peripherals depends on the specific type of peripherals 
+and their firmware and hardware capabilities. In general, you can assume that the peripherals are quite advanced, 
+and they can handle multiple concurrent requests to write or read data. 
+That is, gone are the days of serial communication. 
+In that sense, all communications between the CPU and peripherals is therefore asynchronous at a hardware level.
+
+This asynchronous mechanism is called hardware interrupt. 
+Think of the simple case, where the CPU would ask the peripheral to read something, and it would then go in an infinite loop,
+where each time it would check with the peripheral if the data is now available for it to consume, 
+looping until the peripheral gives it the data. This method is known as polling, since the CPU needs to keep checking on the peripheral. 
+On modern hardware, what happens instead is that the CPU asks the peripheral to perform an action, and then forgets about it, 
+continuing to process other CPU instructions. Once the peripheral is done, it will signal the CPU through a circuit interrupt. 
+This happens in hardware, and makes it so the CPU never waits or checks on the peripheral, thus freeing it to perform other work,
+until the peripheral itself says it's done.
+
+<b>In Software</b>
+So now that we have an understanding of what happens in hardware, we can move on to the software side. 
+This is where the IO is exposed in various kinds, such as blocking, non-blocking, multiplexed and async. Lets go over them one by one.
+
+Blocking
+Remember how a user program runs inside a process, and code is executed within the context of a thread? 
+This is always the case, and thus say you are writing a program that needs to read from a file.
+With blocking IO, what you do is ask the operating system, from your thread, to put your thread to sleep, 
+and wake it up only once the data from the file is available to be consumed by your thread.
+
+That is, blocking IO is called blocking because the thread which uses it will block and sleep until the IO is done.
+
+Non-blocking
+The problem with blocking IO is that your thread is sleeping until the IO is done, and thus, 
+it can't do anything else while it's waiting for the IO. 
+Sometimes, there's nothing else your program could be doing, but if there was, it would be nice to be able to do that work concurrently,
+as it waits for the IO.
+
+One way to do that is with was is called non-blocking IO. The idea is that when you make the call to read the file, 
+instead of putting your thread to sleep, the OS simply returns to you either the file's content that it read, 
+or a pending status that tells you the IO is not done. 
+It will not block your thread, but it's still your job to check back at a later time to see if the IO is done. 
+This means you are free to branch on the pending status, and go perform some other work, and when you need the IO again, 
+you can call read for it once more, at which point if the IO is done, it will return the file's content, 
+otherwise it will once again return a pending status, and you can again choose to go perform some other work.
+
+Multiplexed
+The problem with non-blocking IO is that it gets strange if the other work that you want to be doing while waiting for the IO 
+is itself more IO.
+
+In a good scenario, you ask the OS to read content from file A, and then you go perform some heavy computation, 
+once you're done, you check if file A is done reading, if so, you do whatever you needed that file's content for, 
+otherwise, you go do some more heavy processing, rinse and repeat. 
+But in the bad scenario, you don't have heavy processing to do, in fact, you want to read file A, and you also want to read file B. 
+So while you wait for file A's IO, you make a non-blocking call to read file B's. Now what will you do while waiting for both? 
+There's nothing for you left to do, so your program has to go into an infinite polling loop, where you keep checking if A is done,
+and then if B is done, over and over. This will either consume the CPU simply to poll for the status of your non-blocking IO calls,
+or you'll have to manually add some arbitrary sleep time, meaning that you'll probably realize the IO is ready a little after it
+really was, slowing your program's throughput.
+
+To avoid this problem, you can use multiplexed IO instead. What this does is that you will once again block on the IO,
+but instead of blocking on a single IO operation to be done and then the other,
+you are able to queue up all the IO operations you need done, and then block on all of them.
+The OS will wake you up when any one of them is done. Some implementations of multiplexed IO allow even more control, 
+where you can specify that you want to be woken up only if some specified set of IO operations are done,
+like when file A and C or file B and D are done.
+
+So you would make a non-blocking call to read file A, and then a non-blocking call to read file B, 
+and finally you will tell the OS, put my thread to sleep, and wake it up when A and B's IO are both done, 
+or when anyone of them is done.
+
+Async
+The problem with multiplexed IO is that you're still sleeping until IO is ready for you to handle. Once again, 
+for many program that's fine, maybe you have nothing else to be doing while you wait for IO operations to be done. 
+Sometimes though, you do have other things you could be doing. Maybe you're computing the digits of PI, 
+while also summing up the values in a bunch of files. What you'd like to do is queue up all your file reads,
+and while you wait for them to be read, you would compute digits of PI. When a file is done reading,
+you'd sum up its values, and then go back to computing more digits of PI until another file is done reading.
+
+For this to work, you will need a way for your digits of PI computation to be interrupted by the IO as it completes, 
+and you'd need the IO to perform the interrupt when it completes.
+
+This is done through event callbacks. The call to perform a read takes a callback, and returns immediately. 
+On the IO completing, the OS will suspend your thread, and execute your callback. Once the callback is done executing, 
+it will resume your thread.
+
+Multi-threaded vs Single Threaded?
+You'd have noticed that all kinds of IO that I described only speak of one single thread, which is your main application thread. 
+The truth is, IO does not require a thread to be performed, because as I explained in the beginning, 
+the peripherals all perform the IO asynchronously within their own circuitry. 
+Thus it's possible to do blocking, non-blocking, multiplexed and async IO all within a single threaded model.
+Which is why concurrent IO can work without multi-threaded support.
+
+Now, the processing that is done on the result of the IO operations, or which is requesting the IO operations can obviously
+be multi-threaded if you need it to be. This allows you to have concurrent computation on top of concurrent IO. 
+So nothing prevents mixing multi-threaded and these IO mechanisms.
+
+In fact, there is a very popular fifth kind of IO which does depend on multi-threading.
+It is often confusingly referred to as non-blocking IO or async IO also, because it presents itself with a similar interface 
+as one or the other. In truth, it is faking true non-blocking or async IO. 
+The way it works is simple, it uses blocking IO, but each blocking call is made in its own thread.
+Now depending on the implementation, it either takes a callback, or uses a polling model, like returning a Future.
+
+
+
+Further Reading
+non-blocking IO vs async IO and implementation in Java
+Asynchronous and non-blocking IO
+Multiplexed I/O
+Reactor pattern
+Proactor pattern
+There is no thread
+Disclaimer
 </pre>
