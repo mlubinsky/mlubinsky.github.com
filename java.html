@@ -13,6 +13,13 @@
 <a href=https://www.itu.dk/~sestoft/javaprecisely/>Java Precisely</a>
 
 <h2>Concurrency</h2>
+
+Reads and writes are atomic for reference variables and for most primitive variables (all types except long and double).
+Reads and writes are atomic for all variables declared volatile (including long and double variables).
+
+https://docs.oracle.com/javase/tutorial/essential/concurrency/guardmeth.html
+https://docs.oracle.com/javase/tutorial/essential/concurrency/imstrat.html   - immutable object
+
 A JVM runs in a single process and threads in a JVM share the heap belonging to that process. 
 That is why several threads may access the same object. Threads share the heap and have their own stack space. 
 This is how one thread’s invocation of a method and its local variables are kept thread safe from other threads. 
