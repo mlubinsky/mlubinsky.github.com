@@ -89,6 +89,31 @@ Vector is as ArrayList but syncronised
 LinkList implements List, Queue (double linked list, good for implementing stack and queue)
    
 <h2>Set </h2>
+  HashSet is Implemented using a hash table. Elements are not ordered.
+  The add, remove, and contains methods have constant time complexity O(1).
+  
+TreeSet is implemented using a tree structure(red-black tree in algorithm book). 
+ The elements in a set are sorted, but the add, remove, and contains methods has time complexity of O(log (n)).
+  It offers several methods to deal with the ordered set like first(), last(), headSet(), tailSet(), etc. 
+  
+LinkedHashSet is between HashSet and TreeSet.
+  It is implemented as a hash table with a linked list running through it, so it provides the order of insertion.
+  The time complexity of basic methods is O(1). 
+ Example of usage  LinkedHashSet:
+    /* Function removes duplicate characters from the string This function work in-place */
+    void removeDuplicates(String str)
+    {
+        LinkedHashSet<Character> lhs = new LinkedHashSet<>();
+        for(int i=0;i<str.length();i++)
+            lhs.add(str.charAt(i));
+         
+        // print string after deleting duplicate elements
+        for(Character ch : lhs)
+            System.out.print(ch);
+    }  
+  
+  
+  
 interface SortedSet<E> extends Set<E> {
   SortedSet<E> subSet(E from, E to)
   SortedSet<E> headSet(E from, E to)
@@ -103,6 +128,13 @@ class HashSet
 class LinkedHashSet maintains the order of insertion
 class TreeSet implements Set, NavigableSet - keeps the sorted order
 
+ Build Set from Array example: 
+ public static boolean useSet(String[] arr, String targetValue) {
+	Set<String> set = new HashSet<String>(Arrays.asList(arr));
+	return set.contains(targetValue);
+} 
+
+  <h2>Map</h2>
 Map, SortedMap, NavigableMap
 get put Set<K> keySet
 Map interface implementation
@@ -142,7 +174,20 @@ This interface implements Iterable.
 The Set and List interfaces extends Collection interface.
 <b>Collections</b>, on the other hand, is a class with an exclusive collection of static methods and fields.
 Examples: sort(), binarySearch(), shuffle()
-
+  
+Using Arrays.binarySearch() example:
+binarySearch() can ONLY be used on sorted arrays.
+If the array is sorted, you can use the following code to search the target element:
+  
+public static boolean useArraysBinarySearch(String[] arr, String targetValue) {	
+	int a =  Arrays.binarySearch(arr, targetValue);
+	if(a > 0)
+		return true;
+	else
+		return false;
+}
+  
+  
 <h2>Interfaces</h2>
 Interfaces can have default methods.
 @FunctionalInterface
@@ -420,7 +465,7 @@ try (FileInputStream inputStream = new FileInputStream(file);) {
 }
 
 
-Whothout Closeable  the code looks like this:
+Without Closeable  the code looks like this:
 
 public void closeResourceInFinally() {
   FileInputStream inputStream = null;
@@ -441,6 +486,19 @@ public void closeResourceInFinally() {
       }
     }
   }
+}
+
+Counters performance:
+ https://www.programcreek.com/2013/10/efficient-counter-in-java/
+ https://www.programcreek.com/2014/01/java-8-counter/
+
+public class Java8Counter {
+	public static void main(String[] args) {
+		String[] arr = {"program", "creek", "program", "creek", "java", "web", "program"};
+		Stream<String> stream = Stream.of(arr).parallel();
+		Map<String, Long> counter = stream.collect(Collectors.groupingBy(String::toString, Collectors.counting()));
+		System.out.println(counter.get("creek"));
+	}
 }
 
 </pre>
