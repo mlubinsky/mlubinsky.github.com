@@ -15,8 +15,25 @@ https://oneraynyday.github.io/dev/2017/08/03/Docker/
 https://habr.com/post/310460/ 
 https://docs.docker.com/docker-for-mac/
 
-<h2>IoT</h2>
+<h2>IoT MQTT</h2>
 https://docs.devicehive.com/docs
+<a href="https://habr.com/company/intel/blog/304228/">MQTT</a>
+
+пропускная способность MQTT в 93 раза выше, чем протокола REST (Representational State Transfer), работающего поверх HTTP.
+
+MQTT реализует модель «издатель – подписчик», используя минимальное количество методов. 
+Они служат для указания действий, которые нужно выполнять. 
+Эти действия сводятся к взаимодействию с брокером и к работе с темами и сообщениями. 
+Агенты подключаются к брокеру, а затем либо публикуют темы и сообщения в них, 
+либо подписываются на темы и получают сообщения, в этих темах опубликованные. 
+Завершив работу, агент отключается от брокера. 
+Вот как выглядят методы MQTT:
+
+Connect – установить соединение с брокером.
+Disconnect – разорвать соединение с брокером.
+Publish – опубликовать тему на брокере.
+Subscribe – подписаться на тему на брокере.
+Unsubscribe – отписаться от темы на брокере.
 
 <h2>Big Data Architecture, Kafka</h2>
 http://highscalability.com/blog/2018/4/9/give-meaning-to-100-billion-events-a-day-the-analytics-pipel.html
