@@ -6,6 +6,8 @@ http://devblog.exmachina.fr/tutorial/2016/12/08/LPC1768-development-toolkit/
 
 <https://petewarden.com/2018/01/29/how-to-compile-for-arm-m-series-chips-from-the-command-line/>
 
+<https://medium.com/@zlt1213/develop-stm32f4-discovery-cortex-m4-with-eclipse-on-mac-os-part-2-d803f69592f4>
+
 <https://habr.com/company/efo/blog/277491/>  Overview of ARM devices
 
 <https://github.com/ARMmbed/mbed-cli>  
