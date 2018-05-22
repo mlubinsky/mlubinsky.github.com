@@ -99,7 +99,11 @@ mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 <https://os.mbed.com/teams/mqtt/code/HelloMQTT/>
 
-http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT
+<http://www.eclipse.org/paho/clients/c/embedded/>   Paho MQTT
+
+<https://www.youtube.com/watch?v=QAaXNt0oqSI>   Paho MQTT
+
+http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT Paho MQQT
 
 <https://www.hivemq.com/blog/mqtt-client-library-encyclopedia-paho-embedded>
 
