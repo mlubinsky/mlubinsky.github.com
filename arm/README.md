@@ -1,6 +1,6 @@
 <https://github.com/ARMmbed/mbed-cli>  
 
-
+<https://console.bluemix.net/docs/services/IoT/devices/libraries/mbedcpp.html#mbedcpp>
 
 <http://grbd.github.io/posts/2016/11/06/using-the-mbed-cli/>
 
@@ -18,4 +18,5 @@
 по пути $HOME/.platformio/packages. 
 
 <https://habr.com/post/189484/>
+
 <https://habr.com/post/191058/>
