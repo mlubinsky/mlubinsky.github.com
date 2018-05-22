@@ -8,6 +8,13 @@
 
 <https://www.blynk.cc/>
 
+Download GNU toolchain for ARM:
+<https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads>
+
+or
+
+<https://github.com/osx-cross/homebrew-arm>    GNU toolchain for ARM Cortex-M and Cortex-R
+
 ## MBED-CLI 
  There is a difference between the online and CLI tools.  
  The CLI tools automatically pull in the latest mbed libraries 
@@ -21,15 +28,22 @@ http://devblog.exmachina.fr/tutorial/2016/12/08/LPC1768-development-toolkit
 
 <https://github.com/ARMmbed/mbed-cli>  
 
-https://habr.com/post/307806/   how to install cli
+<https://habr.com/post/307806/>   how to install cli
 
 <http://grbd.github.io/posts/2016/11/06/using-the-mbed-cli/>
 
-https://habr.com/company/efo/blog/308440/  6 articles how to program for mbed
+<https://habr.com/company/efo/blog/308440/>  6 articles how to program for mbed
 
 <https://www.youtube.com/watch?v=cM0dFoTuU14>
 
+
+
 <https://stackoverflow.com/questions/44640547/mbed-cli-make-py-error-could-not-find-executable-for-arm>
+
+mbed config -G GCC_ARM_PATH "/Users/amod-mac/Desktop/gcc-arm-none-eabi-7-2017-q4-major/bin"
+
+mbed compile -m UBLOX_C027 -t ARM    <-- commercial compiler
+mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 
 ## MQTT
