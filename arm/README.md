@@ -9,7 +9,10 @@
 <https://www.blynk.cc/>
 
 ## MBED-CLI 
-
+ There is a difference between the online and CLI tools.  
+ The CLI tools automatically pull in the latest mbed libraries 
+ while the online tools will only pull newer libraries when you specifically update them.
+ 
 http://devblog.exmachina.fr/tutorial/2016/12/08/LPC1768-development-toolkit
 
 <https://petewarden.com/2018/01/29/how-to-compile-for-arm-m-series-chips-from-the-command-line/>
