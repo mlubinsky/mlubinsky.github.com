@@ -4,6 +4,8 @@
 
 <https://cloud.mbed.com/>
 
+<https://github.com/ARMmbed/easy-connect>
+
 <https://www.hackster.io/search?i=projects&q=mbed>
 
 <https://www.blynk.cc/>
@@ -12,9 +14,13 @@
 ## Compilers
 https://os.mbed.com/docs/latest/tools/index.html
 
-Online compiler:
+## Online compiler
 
 <https://os.mbed.com/compiler>
+
+<https://github.com/ARMmbed/Handbook/blob/new_engine/docs/tutorials/using_tools/oc_tut.md>
+
+<https://github.com/ARMmbed/Handbook/blob/new_engine/docs/tutorials/quickstart/quick-start-compiler.md>
 
 Download GNU toolchain for ARM:
 
@@ -28,8 +34,8 @@ or  <https://github.com/ARMmbed/homebrew-formulae>
  
 or  <https://github.com/osx-cross/homebrew-arm>    GNU toolchain for ARM Cortex-M and Cortex-R
 
-   brew tap osx-cross/arm
-   brew install arm-gcc-bin
+    brew tap osx-cross/arm
+    brew install arm-gcc-bin
 
 ## MBED-CLI 
  There is a difference between the online and CLI tools.  
@@ -55,7 +61,6 @@ pip install mbed-cli
 <https://www.youtube.com/watch?v=cM0dFoTuU14>
 
 
-
 <https://stackoverflow.com/questions/44640547/mbed-cli-make-py-error-could-not-find-executable-for-arm>
 
 mbed config -G GCC_ARM_PATH "/Users/amod-mac/Desktop/gcc-arm-none-eabi-7-2017-q4-major/bin"
@@ -65,6 +70,9 @@ mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 
 ## MQTT
+
+<https://os.mbed.com/blog/entry/Using-HTTP-HTTPS-MQTT-and-CoAP-from-mbed/>
+
 <https://os.mbed.com/search/?q=MQTT>
 
 <https://os.mbed.com/teams/mqtt/code/HelloMQTT/>
@@ -113,5 +121,13 @@ https://blog.jetbrains.com/clion/2017/12/clion-for-embedded-development-part-ii/
 <https://habr.com/post/194816/> ARM for kids 4
 
 <https://habr.com/company/microsoft/blog/323200/>   Microsoft Azure IoT
+
+Not all small IoT devices support IP but instead support protocols such as Bluetooth Low Energy (BLE) and LoRaWAN, which are cheap and energy-efficient but do not allow direct access to the internet.
+
+CoAP protocol <http://coap.technology/> - The Constrained Application Protocol (CoAP) is a lightweight web protocol for IoT devices. It's similar to HTTP, but with a much lower footprint and additional features like multicast. mbed Device Connector, our device management solution, uses it as its transport layer - we therefore ship a CoAP library as part of mbed OS 5. We can use this library - which includes both a CoAP serializer and parser - to connect to any CoAP server.
+
+https://os.mbed.com/blog/entry/Connecting-BLE-devices-to-the-cloud/ 
+
+<https://os.mbed.com/blog/entry/streaming-data-cows-dsa2017/>
 
 <https://medium.com/@teebr/iot-with-an-esp32-influxdb-and-grafana-54abc9575fb2>
