@@ -92,6 +92,8 @@ std::unordered_map uses hashing, so the lookup is O(1) for the default-construct
 ### Matrix
 vector <vector <int> > grid (3, vector(4,0))    //  grid size: 3x4 initialized by 0
 
+<https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0>
+
 <http://cpptruths.blogspot.com/2011/10/multi-dimensional-arrays-in-c11.html>
 
 <http://www.stroustrup.com/Programming/Matrix/Matrix.h>
