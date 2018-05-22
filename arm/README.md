@@ -1,8 +1,11 @@
 <https://www.youtube.com/watch?v=bY2QN-5BTCg>
 
+
 <http://infocenter.arm.com/help/index.jsp>
 
 <https://cloud.mbed.com/>
+
+<http://eprints.gla.ac.uk/157277/1/157277.pdf>
 
 <https://github.com/ARMmbed/easy-connect>
 
