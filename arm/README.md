@@ -35,6 +35,8 @@ https://habr.com/company/efo/blog/308440/  6 articles how to program for mbed
 ## MQTT
 <https://os.mbed.com/search/?q=MQTT>
 
+<https://os.mbed.com/teams/mqtt/code/HelloMQTT/>
+
 http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT
 
 <https://www.hivemq.com/blog/mqtt-client-library-encyclopedia-paho-embedded>
