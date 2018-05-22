@@ -8,12 +8,28 @@
 
 <https://www.blynk.cc/>
 
+
+## Compilers
+https://os.mbed.com/docs/latest/tools/index.html
+
+Online compiler:
+
+<https://os.mbed.com/compiler>
+
 Download GNU toolchain for ARM:
+
 <https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads>
 
-or
+or  <https://github.com/ARMmbed/homebrew-formulae> 
 
-<https://github.com/osx-cross/homebrew-arm>    GNU toolchain for ARM Cortex-M and Cortex-R
+    brew tap ArmMbed/homebrew-formulae
+    brew install arm-none-eabi-gcc
+
+ 
+or  <https://github.com/osx-cross/homebrew-arm>    GNU toolchain for ARM Cortex-M and Cortex-R
+
+   brew tap osx-cross/arm
+   brew install arm-gcc-bin
 
 ## MBED-CLI 
  There is a difference between the online and CLI tools.  
@@ -29,6 +45,8 @@ http://devblog.exmachina.fr/tutorial/2016/12/08/LPC1768-development-toolkit
 <https://github.com/ARMmbed/mbed-cli>  
 
 <https://habr.com/post/307806/>   how to install cli
+
+pip install mbed-cli
 
 <http://grbd.github.io/posts/2016/11/06/using-the-mbed-cli/>
 
@@ -65,7 +83,7 @@ https://aws.amazon.com/blogs/iot/how-to-bridge-mosquitto-mqtt-broker-to-aws-iot/
  
 <https://blog.mbed.com/post/arm-ibm-simplify-iot-data-analytics>   IBM Watson Iot integration
 
-https://www.reddit.com/r/ECE/comments/6v2a1o/i_made_a_video_on_how_to_get_started_with_mqtt_on/
+<https://www.reddit.com/r/ECE/comments/6v2a1o/i_made_a_video_on_how_to_get_started_with_mqtt_on/>
 
 ## Docker
 
