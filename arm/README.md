@@ -34,7 +34,13 @@ https://habr.com/company/efo/blog/308440/  6 articles how to program for mbed
 
 http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT
 
+<https://www.hivemq.com/blog/mqtt-client-library-encyclopedia-paho-embedded>
+
+<https://www.wolfssl.com/mqtt-with-wolfssl/>
+
 <https://console.bluemix.net/docs/services/IoT/devices/libraries/mbedcpp.html#mbedcpp>
+
+<https://blog.feabhas.com/2012/04/iot-mqtt-publish-and-subscriber-c-code/>
  
 https://aws.amazon.com/blogs/iot/how-to-bridge-mosquitto-mqtt-broker-to-aws-iot/   AWS Mosqitto IoT integration 
  
