@@ -2,7 +2,11 @@
 
 <https://developer.arm.com/open-source/gnu-toolchain>
 
-https://cloud.mbed.com/
+<https://cloud.mbed.com/>
+
+<https://www.hackster.io/search?i=projects&q=mbed>
+
+<https://www.blynk.cc/>
 
 ## MBED-CLI 
 
@@ -32,7 +36,11 @@ http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT
 
 <https://console.bluemix.net/docs/services/IoT/devices/libraries/mbedcpp.html#mbedcpp>
  
+https://aws.amazon.com/blogs/iot/how-to-bridge-mosquitto-mqtt-broker-to-aws-iot/   AWS Mosqitto IoT integration 
+ 
 <https://blog.mbed.com/post/arm-ibm-simplify-iot-data-analytics>   IBM Watson Iot integration
+
+https://www.reddit.com/r/ECE/comments/6v2a1o/i_made_a_video_on_how_to_get_started_with_mqtt_on/
 
 ## Docker
 
@@ -48,6 +56,8 @@ https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=m
 <https://medium.com/@zlt1213/develop-stm32f4-discovery-cortex-m4-with-eclipse-on-mac-os-part-2-d803f69592f4>  Eclipse
 
 <https://medium.com/jumperiot/nrf52-development-with-clion-2981e100a656>  CLion
+
+https://blog.jetbrains.com/clion/2017/12/clion-for-embedded-development-part-ii/   CLion
 
 <https://medium.com/jumperiot/debuggers-for-embedded-how-to-choose-the-right-debugger-a727b33b4061>  Debuggers
 
