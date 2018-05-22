@@ -2,7 +2,11 @@
 
 <https://developer.arm.com/open-source/gnu-toolchain>
 
-http://devblog.exmachina.fr/tutorial/2016/12/08/LPC1768-development-toolkit/
+https://cloud.mbed.com/
+
+## MBED-CLI 
+
+http://devblog.exmachina.fr/tutorial/2016/12/08/LPC1768-development-toolkit
 
 <https://petewarden.com/2018/01/29/how-to-compile-for-arm-m-series-chips-from-the-command-line/>
 
@@ -27,6 +31,8 @@ https://habr.com/company/efo/blog/308440/  6 articles how to program for mbed
 http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT
 
 <https://console.bluemix.net/docs/services/IoT/devices/libraries/mbedcpp.html#mbedcpp>
+ 
+<https://blog.mbed.com/post/arm-ibm-simplify-iot-data-analytics>   IBM Watson Iot integration
 
 ## Docker
 
