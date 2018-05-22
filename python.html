@@ -10,6 +10,27 @@
 <a href=http://devarea.com/python-working-with-virtual-environments>Python virtual environment</a>
  alex.dzyoba.com/blog/python-import/  import  
 
+    pip check
+    python -c "import os, sys; print(os.linesep.join(sys.path))"  
+
+How to see where module is located in file system:
+
+    import six
+    print six.__file__
+
+In order to let python search first the most updated version of certain package, 
+instead of removing the system version, what can be done is to set the system variable 
+PYTHONPATH in the ~/.bash_profile (or ~/.bashrc if linux) config file to the path where the new packages are installed:
+
+    export PYTHONPATH=/Library/Python/2.7/site-packages
+
+An alternative is to modify the python path inside your python script by adding the path at the beginning of the path list:
+
+    import sys
+    sys.path.insert(1,'/Library/Python/2.7/site-packages')
+
+This needs to be done for every script you need a certain package version. 
+You might want for some reason use an older version that you have installed. 
 
 <a href=http://interactivepython.org/runestone/static/pythonds/index.html>Algorithms in Python</a>
 <a href=https://www.pythonsheets.com/>Python cheatsheet</a>
