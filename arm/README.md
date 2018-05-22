@@ -6,10 +6,6 @@ http://devblog.exmachina.fr/tutorial/2016/12/08/LPC1768-development-toolkit/
 
 <https://petewarden.com/2018/01/29/how-to-compile-for-arm-m-series-chips-from-the-command-line/>
 
-<https://medium.com/@zlt1213/develop-stm32f4-discovery-cortex-m4-with-eclipse-on-mac-os-part-2-d803f69592f4>  Eclipse
-
-<https://medium.com/jumperiot/nrf52-development-with-clion-2981e100a656>  CLion
-
 <https://habr.com/company/efo/blog/277491/>  Overview of ARM devices
 
 <https://github.com/ARMmbed/mbed-cli>  
@@ -42,6 +38,14 @@ https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=m
 
 В процессе установки platformIO разворачивает локальный репозиторий arm mbed (и не только его) 
 по пути $HOME/.platformio/packages. 
+
+<https://medium.com/@zlt1213/develop-stm32f4-discovery-cortex-m4-with-eclipse-on-mac-os-part-2-d803f69592f4>  Eclipse
+
+<https://medium.com/jumperiot/nrf52-development-with-clion-2981e100a656>  CLion
+
+<https://medium.com/jumperiot/debuggers-for-embedded-how-to-choose-the-right-debugger-a727b33b4061>  Debuggers
+
+## Unsorted
 
 <https://habr.com/post/189484/>   ARM for kids 1
 
