@@ -73,6 +73,16 @@ mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 <https://os.mbed.com/blog/entry/Using-HTTP-HTTPS-MQTT-and-CoAP-from-mbed/>
 
+<https://github.com/ARMmbed/connector-bridge-container-mqtt-getstarted>
+
+<https://github.com/ARMmbed/connector-bridge-container-mqtt>
+
+<https://github.com/ARMmbed/connector-bridge-container-awsiot>
+
+<https://github.com/ARMmbed/connector-bridge-container-google>
+
+<https://github.com/ARMmbed?utf8=%E2%9C%93&q=connector&type=&language=>
+
 <https://os.mbed.com/search/?q=MQTT>
 
 <https://os.mbed.com/teams/mqtt/code/HelloMQTT/>
@@ -87,7 +97,11 @@ http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT
 
 <https://blog.feabhas.com/2012/04/iot-mqtt-publish-and-subscriber-c-code/>
  
-https://aws.amazon.com/blogs/iot/how-to-bridge-mosquitto-mqtt-broker-to-aws-iot/   AWS Mosqitto IoT integration 
+## AWS
+
+<https://docs.mbed.com/docs/mbed-device-connector-web-interfaces/en/latest/cloud_amazon/>
+ 
+<https://aws.amazon.com/blogs/iot/how-to-bridge-mosquitto-mqtt-broker-to-aws-iot/>   AWS Mosqitto IoT integration 
  
 <https://blog.mbed.com/post/arm-ibm-simplify-iot-data-analytics>   IBM Watson Iot integration
 
