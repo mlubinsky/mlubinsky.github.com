@@ -1,6 +1,6 @@
-<http://infocenter.arm.com/help/index.jsp>
+<https://www.youtube.com/watch?v=bY2QN-5BTCg>
 
-<https://developer.arm.com/open-source/gnu-toolchain>
+<http://infocenter.arm.com/help/index.jsp>
 
 <https://cloud.mbed.com/>
 
@@ -21,6 +21,10 @@ https://os.mbed.com/docs/latest/tools/index.html
 <https://github.com/ARMmbed/Handbook/blob/new_engine/docs/tutorials/using_tools/oc_tut.md>
 
 <https://github.com/ARMmbed/Handbook/blob/new_engine/docs/tutorials/quickstart/quick-start-compiler.md>
+
+## GNU toolchain for ARM
+
+<https://developer.arm.com/open-source/gnu-toolchain>
 
 Download GNU toolchain for ARM:
 
