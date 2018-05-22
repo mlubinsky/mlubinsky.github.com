@@ -33,3 +33,5 @@ http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT
 <https://habr.com/post/189484/>   ARM for kids 1
 
 <https://habr.com/post/191058/>  ARM for kids 3
+
+<https://habr.com/company/microsoft/blog/323200/>   Microsoft Azure IoT
