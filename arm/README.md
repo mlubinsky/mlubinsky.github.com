@@ -26,6 +26,8 @@ https://os.mbed.com/docs/latest/tools/index.html
 
 <https://github.com/ARMmbed/Handbook/blob/new_engine/docs/tutorials/quickstart/quick-start-compiler.md>
 
+<https://www.youtube.com/watch?v=fnMwvUL-8KQ>
+
 ## GNU toolchain for ARM
 
 <https://developer.arm.com/open-source/gnu-toolchain>
