@@ -1,5 +1,6 @@
 <https://www.youtube.com/watch?v=bY2QN-5BTCg>
 
+<https://www.youtube.com/watch?v=LQn5-2caSZY> .  mbed OS overview
 
 <http://infocenter.arm.com/help/index.jsp>
 
@@ -61,6 +62,8 @@ http://devblog.exmachina.fr/tutorial/2016/12/08/LPC1768-development-toolkit
 
 pip install mbed-cli
 
+<https://www.youtube.com/watch?v=PI1Kq9RSN_Y> . Quick start
+
 <http://grbd.github.io/posts/2016/11/06/using-the-mbed-cli/>
 
 <https://habr.com/company/efo/blog/308440/>  6 articles how to program for mbed
@@ -109,10 +112,16 @@ http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT
 <https://docs.mbed.com/docs/mbed-device-connector-web-interfaces/en/latest/cloud_amazon/>
  
 <https://aws.amazon.com/blogs/iot/how-to-bridge-mosquitto-mqtt-broker-to-aws-iot/>   AWS Mosqitto IoT integration 
+
+## IBM Watson Iot integration
+
+<https://www.youtube.com/watch?v=xa5U5dipdMY>
  
-<https://blog.mbed.com/post/arm-ibm-simplify-iot-data-analytics>   IBM Watson Iot integration
+<https://blog.mbed.com/post/arm-ibm-simplify-iot-data-analytics>   
 
 <https://www.reddit.com/r/ECE/comments/6v2a1o/i_made_a_video_on_how_to_get_started_with_mqtt_on/>
+
+<https://www.youtube.com/watch?v=lF4iuaMkSKQ>  ARM mbed IoT Starter Kit on IBM's Bluemix cloud platform 
 
 ## Docker
 
@@ -134,6 +143,10 @@ https://blog.jetbrains.com/clion/2017/12/clion-for-embedded-development-part-ii/
 <https://medium.com/jumperiot/debuggers-for-embedded-how-to-choose-the-right-debugger-a727b33b4061>  Debuggers
 
 ## Unsorted
+
+<https://www.youtube.com/watch?v=1RPntz5gfcA> . Securing IoT Applications with Mbed TLS (Part I)
+
+<https://www.youtube.com/watch?v=iH4v-aXQ2zQ>  Securing IoT Applications with Mbed TLS (Part II)
 
 <https://habr.com/post/189484/>   ARM for kids 1
 
