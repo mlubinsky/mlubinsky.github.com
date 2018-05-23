@@ -180,7 +180,12 @@ https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=m
 
 <https://habr.com/post/194816/> ARM for kids 4
 
+## Microsoft 
+
 <https://habr.com/company/microsoft/blog/323200/>   Microsoft Azure IoT
+
+<https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-mqtt-support>
+
 
 Not all small IoT devices support IP but instead support protocols such as Bluetooth Low Energy (BLE) and LoRaWAN, which are cheap and energy-efficient but do not allow direct access to the internet.
 
