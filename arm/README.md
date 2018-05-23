@@ -128,6 +128,8 @@ http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT Paho MQQT
 <https://console.bluemix.net/docs/services/IoT/devices/libraries/mbedcpp.html#mbedcpp>
 
 <https://blog.feabhas.com/2012/04/iot-mqtt-publish-and-subscriber-c-code/>
+
+<https://github.com/eclipse/paho.mqtt-spy>
  
 ## AWS
 
