@@ -162,7 +162,7 @@ https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=m
 
 <https://medium.com/jumperiot/nrf52-development-with-clion-2981e100a656>  CLion
 
-https://blog.jetbrains.com/clion/2017/12/clion-for-embedded-development-part-ii/   CLion
+<https://blog.jetbrains.com/clion/2017/12/clion-for-embedded-development-part-ii/>   CLion
 
 <https://medium.com/jumperiot/debuggers-for-embedded-how-to-choose-the-right-debugger-a727b33b4061>  Debuggers
 
