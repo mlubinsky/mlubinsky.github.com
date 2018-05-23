@@ -87,6 +87,10 @@ mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 ## MQTT
 
+<https://www.reddit.com/r/MQTT/>
+
+http://www.steves-internet-guide.com/category/mqtt/
+
 <https://os.mbed.com/blog/entry/Using-HTTP-HTTPS-MQTT-and-CoAP-from-mbed/>
 
 <https://github.com/ARMmbed/connector-bridge-container-mqtt-getstarted>
@@ -110,6 +114,8 @@ mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT Paho MQQT
 
 <https://www.hivemq.com/blog/mqtt-client-library-encyclopedia-paho-embedded>
+
+<http://www.steves-internet-guide.com/python-mqtt-publish-subscribe/>
 
 <https://www.wolfssl.com/mqtt-with-wolfssl/>
 
