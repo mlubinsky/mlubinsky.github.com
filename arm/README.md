@@ -166,6 +166,8 @@ https://blog.jetbrains.com/clion/2017/12/clion-for-embedded-development-part-ii/
 
 ## Unsorted
 
+<https://blog.benjamin-cabe.com/2017/12/08/cloud-native-iot-development-in-practice>
+
 <https://www.youtube.com/watch?v=1RPntz5gfcA> . Securing IoT Applications with Mbed TLS (Part I)
 
 <https://www.youtube.com/watch?v=iH4v-aXQ2zQ>  Securing IoT Applications with Mbed TLS (Part II)
