@@ -98,18 +98,28 @@ mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 <https://www.reddit.com/r/MQTT/>
 
+
+## Python
+
+
 <http://www.steves-internet-guide.com/category/mqtt/>
 
 <http://www.steves-internet-guide.com/python-mqtt-publish-subscribe/>
+
+<https://github.com/eclipse/paho.mqtt-spy>   Java 
+ 
+<http://test.mosquitto.org/>
+ 
+<https://medium.com/@erinus/mosquitto-paho-mqtt-python-29cadb6f8f5c>   Python
+
+<https://techtutorialsx.com/2017/04/23/python-subscribing-to-mqtt-topic/>
 
 
 ## MQTT Mbed
 <https://www.element14.com/community/blogs/JimFlynn/2018/04/24/an-updated-mqtt-client-solution-using-c-templates>
 
 
-
 <https://os.mbed.com/blog/entry/Using-HTTP-HTTPS-MQTT-and-CoAP-from-mbed/>
-
 
 
 <https://github.com/ARMmbed?utf8=%E2%9C%93&q=connector&type=&language=>
@@ -134,11 +144,7 @@ http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT Paho MQQT
 
 <https://blog.feabhas.com/2012/04/iot-mqtt-publish-and-subscriber-c-code/>
 
-<https://github.com/eclipse/paho.mqtt-spy>
- 
-<http://test.mosquitto.org/>
- 
-<https://medium.com/@erinus/mosquitto-paho-mqtt-python-29cadb6f8f5c>   Python
+
 
 ## Security: TTL SSL
 <https://medium.com/@yasithlokuge/mqtt-protocol-and-security-48cf2dcd2c4d> 
