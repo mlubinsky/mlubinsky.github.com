@@ -88,6 +88,7 @@ mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 
 ## MQTT
+<https://github.com/hobbyquaker/awesome-mqtt>
 
 <http://mqtt.org/documentation>
 
@@ -97,7 +98,7 @@ mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 <https://www.element14.com/community/blogs/JimFlynn/2018/04/24/an-updated-mqtt-client-solution-using-c-templates>
 
-http://www.steves-internet-guide.com/category/mqtt/
+<http://www.steves-internet-guide.com/category/mqtt/>
 
 <https://os.mbed.com/blog/entry/Using-HTTP-HTTPS-MQTT-and-CoAP-from-mbed/>
 
@@ -133,8 +134,20 @@ http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT Paho MQQT
 
 <https://github.com/eclipse/paho.mqtt-spy>
  
+<http://test.mosquitto.org/>
+ 
+<https://medium.com/@erinus/mosquitto-paho-mqtt-python-29cadb6f8f5c>   Python
+<https://medium.com/@yasithlokuge/mqtt-protocol-and-security-48cf2dcd2c4d> . Security
+
+https://www.hivemq.com/mqtt-toolbox
+
+https://tinker.yeoman.com.au/2015/05/11/simple-browser-based-graphical-display-of-mqtt-data/
+
+ 
 ## AWS
 
+https://iot.stackexchange.com/questions/2036/connect-webpage-to-aws-iot-to-publish-messages
+https://medium.com/@jparreira/receiving-aws-iot-messages-in-your-browser-using-websockets-9b87f28c2357
 <https://docs.mbed.com/docs/mbed-device-connector-web-interfaces/en/latest/cloud_amazon/>
  
 <https://aws.amazon.com/blogs/iot/how-to-bridge-mosquitto-mqtt-broker-to-aws-iot/>   AWS Mosqitto IoT integration 
