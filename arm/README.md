@@ -137,11 +137,14 @@ http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT Paho MQQT
 <http://test.mosquitto.org/>
  
 <https://medium.com/@erinus/mosquitto-paho-mqtt-python-29cadb6f8f5c>   Python
-<https://medium.com/@yasithlokuge/mqtt-protocol-and-security-48cf2dcd2c4d> . Security
 
-https://www.hivemq.com/mqtt-toolbox
+## Security: TTL SSL
+<https://medium.com/@yasithlokuge/mqtt-protocol-and-security-48cf2dcd2c4d> 
+<https://medium.com/@erinus/mosquitto-paho-mqtt-python-29cadb6f8f5c>
 
-https://tinker.yeoman.com.au/2015/05/11/simple-browser-based-graphical-display-of-mqtt-data/
+<https://www.hivemq.com/mqtt-toolbox>
+
+<https://tinker.yeoman.com.au/2015/05/11/simple-browser-based-graphical-display-of-mqtt-data/>
 
  
 ## AWS
