@@ -74,9 +74,7 @@ or  <https://github.com/osx-cross/homebrew-arm>    GNU toolchain for ARM Cortex-
 
 Image: ./BUILD/K64F/GCC_ARM/mbed-os-example-blinky.bin
  
- cp HelloMQTT_K64F.bin /Volumes/DAPLINK/
- 
- minicom -D /dev/tty.usbmodem14412
+
  
 http://devblog.exmachina.fr/tutorial/2016/12/08/LPC1768-development-toolkit
 
@@ -267,12 +265,26 @@ https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processor
 <https://stackoverflow.com/questions/42158817/mbed-ethernet-interface-not-working>
 
 
-
+ cp HelloMQTT_K64F.bin /Volumes/DAPLINK/
+ 
+ minicom -D /dev/tty.usbmodem14412
+ 
+TODO:  use NetworkInterface 
+ 
+-------      Code --------
 
 #include "mbed.h"
 #include "EthernetInterface.h"
 
+Serial pc(USBTX, USBRX);     // this is strnge line
+
+EthernetInterface eth;
+
 DigitalOut led1(LED1);
+
+
+// https://docs.mbed.com/docs/mbed-os-api-ref/en/latest/APIs/communication/ethernet/
+// https://github.com/ARMmbed/mbed-os-example-sockets/blob/master/main.cpp 
 
 // main() runs in its own thread in the OS
 int main() {
@@ -280,17 +292,30 @@ int main() {
     int err2=0;
     
     //setup ethernet interface
-    err1 = eth.init(); //Use DHCP
-    if (err1 == 0)
-       err2 = eth.connect();
+    //err1 = eth.init(); //Use DHCP -- is it required???
+    //NetworkInterface* network_interface = eth.connect(); // network_interface will be NULLPTR when connection fails
+    err2 = eth.connect();
     
+    //if (network_interface) {
+       //err2 = eth.connect();
+       const char *ip =   (err2 == 0) ? eth.get_ip_address()  : " ERROR1" ;
+       const char *mac = (err2 == 0) ? eth.get_mac_address() : " ERROR2" ;
+       //const char* ip = network_interface->get_ip_address();
+ 
     while (true) {
         led1 = !led1;
         wait(0.5);
-        if ( err1 ==0  && err2 == 0)
-           printf("IP Address is %s\n\r", eth.getIPAddress());
+        if ( err1==0 && err2 == 0){
+           pc.printf("SUCCESS  \n\r");
+           pc.printf("IP AGAIN address is: %s\n", ip ? ip : "No IP");
+           pc.printf("MAC address is: %s\n", mac ? mac : "No MAC");    
+           
+        }   
         else
-          printf("err1=%d  err2=%d  \n\r", err1,err2);
+          pc.printf("ERRR  \n\r");
+        
+    }
+}
         
     }
 }
