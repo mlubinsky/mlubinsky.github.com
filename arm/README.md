@@ -238,3 +238,12 @@ https://os.mbed.com/blog/entry/Connecting-BLE-devices-to-the-cloud/
 <https://medium.com/@teebr/iot-with-an-esp32-influxdb-and-grafana-54abc9575fb2>
 
 <https://imc.signify.net/mysignify/Default.asp> . VPN
+
+
+## Ethernet TCP/IP FRDM-K64F 
+
+curl ipecho.net/plain ; echo
+
+https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F
+
+<https://stackoverflow.com/questions/42158817/mbed-ethernet-interface-not-working>
