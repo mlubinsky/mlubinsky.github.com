@@ -64,34 +64,18 @@ or  <https://github.com/osx-cross/homebrew-arm>    GNU toolchain for ARM Cortex-
 
  mbed import https://github.com/ARMmbed/mbed-os-example-blinky
 
-  pwd
+ pwd
+  
   /Users/miclub01/NEW/mbed-os-example-blinky
 
  mbed config -G GCC_ARM_PATH "/Users/miclub01/gcc-arm-none-eabi-7-2017-q4-major/bin"
+ 
  mbed compile -t GCC_ARM -m K64F
- +------------------+-------+-------+------+
-| Module           | .text | .data | .bss |
-+------------------+-------+-------+------+
-| [fill]           |   112 |     4 | 2573 |
-| [lib]/c.a        | 22761 |  2472 |   89 |
-| [lib]/gcc.a      |  3112 |     0 |    0 |
-| [lib]/misc       |   204 |     4 |   28 |
-| [lib]/nosys.a    |    32 |     0 |    0 |
-| main.o           |    56 |     0 |    4 |
-| mbed-os/drivers  |    46 |     0 |    0 |
-| mbed-os/features |    42 |     0 |  184 |
-| mbed-os/hal      |  1575 |     4 |   68 |
-| mbed-os/platform |  1907 |   260 |   21 |
-| mbed-os/rtos     | 10039 |   168 | 6073 |
-| mbed-os/targets  |  8427 |    12 |  384 |
-| Subtotals        | 48313 |  2924 | 9424 |
-+------------------+-------+-------+------+
-Total Static RAM memory (data + bss): 12348 bytes
-Total Flash memory (text + data): 51237 bytes
 
 Image: ./BUILD/K64F/GCC_ARM/mbed-os-example-blinky.bin
  
  cp HelloMQTT_K64F.bin /Volumes/DAPLINK/
+ 
  minicom -D /dev/tty.usbmodem14412
  
 http://devblog.exmachina.fr/tutorial/2016/12/08/LPC1768-development-toolkit
