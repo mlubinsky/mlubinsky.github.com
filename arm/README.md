@@ -263,3 +263,32 @@ curl ipecho.net/plain ; echo
 https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F
 
 <https://stackoverflow.com/questions/42158817/mbed-ethernet-interface-not-working>
+
+
+
+
+#include "mbed.h"
+#include "EthernetInterface.h"
+
+DigitalOut led1(LED1);
+
+// main() runs in its own thread in the OS
+int main() {
+    int err1=0;
+    int err2=0;
+    
+    //setup ethernet interface
+    err1 = eth.init(); //Use DHCP
+    if (err1 == 0)
+       err2 = eth.connect();
+    
+    while (true) {
+        led1 = !led1;
+        wait(0.5);
+        if ( err1 ==0  && err2 == 0)
+           printf("IP Address is %s\n\r", eth.getIPAddress());
+        else
+          printf("err1=%d  err2=%d  \n\r", err1,err2);
+        
+    }
+}
