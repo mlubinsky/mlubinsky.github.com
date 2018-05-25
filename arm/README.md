@@ -120,6 +120,11 @@ mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 
 ## MQTT Mbed
+
+<https://os.mbed.com/teams/mqtt/code/HelloMQTT/>
+
+<https://mcuoneclipse.com/2017/04/09/mqtt-with-lwip-and-nxp-frdm-k64f-board/>
+
 <https://www.element14.com/community/blogs/JimFlynn/2018/04/24/an-updated-mqtt-client-solution-using-c-templates>
 
 
@@ -130,7 +135,7 @@ mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 <https://os.mbed.com/search/?q=MQTT>
 
-<https://os.mbed.com/teams/mqtt/code/HelloMQTT/>
+
 
 <http://www.eclipse.org/paho/clients/c/embedded/>   Paho MQTT
 
@@ -155,9 +160,13 @@ http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT Paho MQQT
 
 <https://medium.com/@erinus/mosquitto-paho-mqtt-python-29cadb6f8f5c>
 
+<https://mcuoneclipse.com/2017/04/14/introduction-to-security-and-tls-transport-security-layer/>
 
+<https://mcuoneclipse.com/2017/04/17/tutorial-secure-tls-communication-with-mqtt-using-mbedtls-on-top-of-lwip/>
 
-<https://tinker.yeoman.com.au/2015/05/11/simple-browser-based-graphical-display-of-mqtt-data/>
+<https://www.youtube.com/watch?v=1RPntz5gfcA> . Securing IoT Applications with Mbed TLS (Part I)
+
+<https://www.youtube.com/watch?v=iH4v-aXQ2zQ>  Securing IoT Applications with Mbed TLS (Part II)
 
  
 ## AWS
@@ -201,9 +210,9 @@ https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=m
 
 <https://blog.benjamin-cabe.com/2017/12/08/cloud-native-iot-development-in-practice>
 
-<https://www.youtube.com/watch?v=1RPntz5gfcA> . Securing IoT Applications with Mbed TLS (Part I)
 
-<https://www.youtube.com/watch?v=iH4v-aXQ2zQ>  Securing IoT Applications with Mbed TLS (Part II)
+
+<https://tinker.yeoman.com.au/2015/05/11/simple-browser-based-graphical-display-of-mqtt-data/>
 
 <https://habr.com/post/189484/>   ARM for kids 1
 
