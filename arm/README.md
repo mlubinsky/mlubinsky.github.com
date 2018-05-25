@@ -137,6 +137,8 @@ mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 ## MQTT Mbed
 
+<https://github.com/ARMmbed/easy-connect>
+
 <https://os.mbed.com/teams/mqtt/code/HelloMQTT/>
 
 <https://mcuoneclipse.com/2017/04/09/mqtt-with-lwip-and-nxp-frdm-k64f-board/>
