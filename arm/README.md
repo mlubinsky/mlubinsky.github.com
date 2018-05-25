@@ -24,6 +24,10 @@
 ## Compilers
 https://os.mbed.com/docs/latest/tools/index.html
 
+## Mbed Simulator
+
+<https://os.mbed.com/blog/entry/introducing-mbed-simulator/>
+
 ## Online compiler
 
 <https://os.mbed.com/compiler>
