@@ -38,9 +38,12 @@ https://os.mbed.com/docs/latest/tools/index.html
 
 <https://www.youtube.com/watch?v=fnMwvUL-8KQ>
 
+
 ## GNU toolchain for ARM
 
 <https://developer.arm.com/open-source/gnu-toolchain>
+
+<https://www.linaro.org/downloads/>
 
 Download GNU toolchain for ARM:
 
