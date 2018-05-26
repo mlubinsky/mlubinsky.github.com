@@ -28,6 +28,8 @@ https://os.mbed.com/docs/latest/tools/index.html
 
 <https://os.mbed.com/blog/entry/introducing-mbed-simulator/>
 
+<https://docs.mbed.com/docs/mbed-os-handbook/en/5.2/advanced/config_system/>
+
 ## Online compiler
 
 <https://os.mbed.com/compiler>
