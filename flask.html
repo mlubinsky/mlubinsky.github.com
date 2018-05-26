@@ -19,4 +19,20 @@ Calling remote (async) API from Falsk usually requiire Celery
 https://github.com/jpmens/mqttwarn MQT
 https://github.com/pika/pika  Python RabbitMQ client
 https://medium.freecodecamp.org/how-to-use-python-and-flask-to-build-a-web-app-an-in-depth-tutorial-437dbfe9f1c6
+
+
+How to make my flask server open to any device connected on my wifi?
+If you have the debugger disabled or trust the users on your network,
+you can make the server publicly available simply by adding --host=0.0.0.0 to the command line:
+
+    flask run --host=0.0.0.0 
+This tells your operating system to listen on all public IPs
+
+if __name__=='__main__':
+   app.run(debug=False, host='0.0.0.0')
+   
+   
+   
+   
+   
 </pre>
