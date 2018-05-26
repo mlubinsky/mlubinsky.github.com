@@ -66,6 +66,9 @@ or  <https://github.com/osx-cross/homebrew-arm>    GNU toolchain for ARM Cortex-
     brew install arm-gcc-bin
 
 ## MBED-CLI 
+
+<https://docs.mbed.com/docs/mbed-os-handbook/en/latest/dev_tools/cli/>
+
  There is a difference between the online and CLI tools.  
  The CLI tools automatically pull in the latest mbed libraries 
  while the online tools will only pull newer libraries when you specifically update them.
