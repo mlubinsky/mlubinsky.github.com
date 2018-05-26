@@ -234,13 +234,27 @@ https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=m
 
 <https://medium.com/jumperiot/debuggers-for-embedded-how-to-choose-the-right-debugger-a727b33b4061>  Debuggers
 
-## Unsorted
+## Plotting 
 
-<https://blog.benjamin-cabe.com/2017/12/08/cloud-native-iot-development-in-practice>
+<https://itnext.io/javascript-real-time-visualization-of-high-frequency-streams-d6533c774794>
 
+<https://github.com/matbor/mqtt2highcharts>
 
+<https://www.open-electronics.org/guest_projects/real-time-data-plotting-of-iot-sensor-using-python/>
+
+<https://hackaday.com/2017/10/31/review-iot-data-logging-services-with-mqtt/>
+
+<https://github.com/bboser/iot-plot>
 
 <https://tinker.yeoman.com.au/2015/05/11/simple-browser-based-graphical-display-of-mqtt-data/>
+
+<https://zoetrope.io/tech-blog/simple-mqtt-iot-logging/>
+
+<https://thingsboard.io/>
+
+## Unsorted
+
+<https://blog.benjamin-cabe.com/2017/12/08/cloud-native-iot-development-in-practice> 
 
 <https://habr.com/post/189484/>   ARM for kids 1
 
