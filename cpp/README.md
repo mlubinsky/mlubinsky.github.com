@@ -90,6 +90,8 @@ std::unordered_map uses hashing, so the lookup is O(1) for the default-construct
 <https://www.fluentcpp.com/2018/03/20/heaps-and-priority-queues-in-c-part-3-queues-and-priority-queues/>
 
 ### Matrix
+<https://news.ycombinator.com/item?id=17164737>
+
 vector <vector <int> > grid (3, vector(4,0))    //  grid size: 3x4 initialized by 0
 
 <https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0>
