@@ -154,6 +154,8 @@ mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 <https://os.mbed.com/teams/mqtt/code/HelloMQTT/>
 
+<https://os.mbed.com/search/repository?q=HelloMQTT>
+
 <https://mcuoneclipse.com/2017/04/09/mqtt-with-lwip-and-nxp-frdm-k64f-board/>
 
 <https://www.element14.com/community/blogs/JimFlynn/2018/04/24/an-updated-mqtt-client-solution-using-c-templates>
@@ -201,7 +203,7 @@ RSA (буквенная аббревиатура от фамилий Rivest-Sham
 Секретный же ключ хранится только у владельца, и используется для расшифровки любых данных, зашифрованных открытым ключом.
 Таким образом, мы можем передавать открытый ключ кому угодно, и получать зашифрованные этим ключом сообщения, расшифровать которые можем только мы (с использованием секретного ключа).
 
-
+<https://os.mbed.com/search/repository?q=HelloMQTT>
 
 
 security find-identity -v login.keychain
