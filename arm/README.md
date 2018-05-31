@@ -35,7 +35,9 @@
 <http://freeboard.io/>
 <https://beebotte.com/>
 <http://www.sitewhere.org/>
-
+<http://www.thingstud.io/>
+<https://opensensemap.org>
+<https://io.adafruit.com/>
 ## Compilers
 https://os.mbed.com/docs/latest/tools/index.html
 
