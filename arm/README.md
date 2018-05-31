@@ -20,11 +20,21 @@
 
 <https://www.hackster.io/search?i=projects&q=mbed>
 
-<https://www.blynk.cc/>
 
-<https://www.youtube.com/playlist?list=PLJEYfuHbcEIApuZR4L5tRiBCwTZCYeTNY> russian lectured
+
+<https://www.youtube.com/playlist?list=PLJEYfuHbcEIApuZR4L5tRiBCwTZCYeTNY> russian lectures
 
 <https://libraries.io/search?q=mbed>   Github projects
+
+## Integration platform
+<https://thingsboard.io/>
+<https://www.blynk.cc/>
+<https://www.cumulocity.com/>
+<https://www.losant.com/>
+<https://thingspeak.com/>
+<http://freeboard.io/>
+<https://beebotte.com/>
+<http://www.sitewhere.org/>
 
 ## Compilers
 https://os.mbed.com/docs/latest/tools/index.html
