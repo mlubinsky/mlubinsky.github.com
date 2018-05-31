@@ -22,6 +22,8 @@
 
 <https://www.blynk.cc/>
 
+<https://www.youtube.com/playlist?list=PLJEYfuHbcEIApuZR4L5tRiBCwTZCYeTNY> russian lectured
+
 <https://libraries.io/search?q=mbed>   Github projects
 
 ## Compilers
