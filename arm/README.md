@@ -191,6 +191,8 @@ http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT Paho MQQT
 ## Security: TTL SSL
 <https://os.mbed.com/docs/v5.8/reference/security.html>
 <https://tls.mbed.org>
+<https://tls.mbed.org/high-level-design>
+<https://tls.mbed.org/kb>
 
 <https://habr.com/post/346798/>   X509
 <https://habr.com/post/352722/> .  how to create SSL cert
@@ -205,11 +207,13 @@ RSA (буквенная аббревиатура от фамилий Rivest-Sham
 Секретный же ключ хранится только у владельца, и используется для расшифровки любых данных, зашифрованных открытым ключом.
 Таким образом, мы можем передавать открытый ключ кому угодно, и получать зашифрованные этим ключом сообщения, расшифровать которые можем только мы (с использованием секретного ключа).
 
-<https://os.mbed.com/search/repository?q=HelloMQTT>
+<https://os.mbed.com/search/repository?q=HelloMQTT> .  useful code
 
 
 security find-identity -v login.keychain
+
 openssl x509 -noout -startdate -in cert.pem // Feb 27 07:13:41 2016 GMT
+
 openssl x509 -noout -enddate -in cert.pem // Feb 26 07:13:41 2017 GMT
 
 <https://medium.com/@yasithlokuge/mqtt-protocol-and-security-48cf2dcd2c4d> 
