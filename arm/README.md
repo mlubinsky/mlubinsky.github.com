@@ -1,3 +1,16 @@
+## 2-ways auth
+<https://github.com/ARMmbed/mbedtls>
+
+<https://github.com/ARMmbed/mbedtls/blob/development/programs/ssl/ssl_client2.c>
+
+<https://cloud.mbed.com/docs/v1.2/quick-start/qs-compiling.html>
+
+<https://tls.mbed.org/high-level-design>
+
+<https://tls.mbed.org/dev-corner>
+
+## MBED 
+
 <https://phodal.github.io/awesome-iot/>
 
 <https://os.mbed.com/docs/v5.8>  mbed OS 5.8 documentation
@@ -28,16 +41,27 @@
 
 ## Integration platform
 <https://thingsboard.io/>
+
 <https://www.blynk.cc/>
+
 <https://www.cumulocity.com/>
+
 <https://www.losant.com/>
+
 <https://thingspeak.com/>
+
 <http://freeboard.io/>
+
 <https://beebotte.com/>
+
 <http://www.sitewhere.org/>
+
 <http://www.thingstud.io/>
+
 <https://opensensemap.org>
+
 <https://io.adafruit.com/>
+
 ## Compilers
 https://os.mbed.com/docs/latest/tools/index.html
 
@@ -204,12 +228,17 @@ http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT Paho MQQT
 
 ## Security: TTL SSL
 <https://os.mbed.com/docs/v5.8/reference/security.html>
+
 <https://tls.mbed.org>
+
 <https://tls.mbed.org/high-level-design>
+
 <https://tls.mbed.org/kb>
 
 <https://habr.com/post/346798/>   X509
+
 <https://habr.com/post/352722/> .  how to create SSL cert
+
 Первая и основная функция сертификатов X.509 — служить хранилищем открытого или публичного ключа PKI 
 (public key infrastructure). 
 
