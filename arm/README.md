@@ -347,6 +347,8 @@ https://bergie.iki.fi/blog/nasa-openmct-iot-dashboard/
 
 ## Unsorted
 
+<https://vox.arm.com/>
+
 <https://blog.benjamin-cabe.com/2017/12/08/cloud-native-iot-development-in-practice> 
 
 <https://habr.com/post/189484/>   ARM for kids 1
@@ -438,3 +440,9 @@ int main() {
         
     }
 }
+
+## DLMS
+
+https://www.dlms.com/documentation/index.html
+
+// https://docs.mbed.com/docs/mbed-os-api-ref/en/latest/APIs/communication/ethernet/
