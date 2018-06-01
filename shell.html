@@ -131,9 +131,11 @@ Example of bash function:
 
 
 <h2>Find Union, Intersection and difference</h2>
-cat a b | sort | uniq > c   # c is a union b
-cat a b | sort | uniq -d > c   # c is a intersect b
-cat a b b | sort | uniq -u > c   # c is set difference a - b
+http://blog.deadvax.net/2018/05/29/shell-magic-set-operations-with-uniq/
+https://news.ycombinator.com/item?id=17183092
+    cat a b | sort | uniq > c   # c is a union b
+    cat a b | sort | uniq -d > c   # c is a intersect b
+    cat a b b | sort | uniq -u > c   # c is set difference a - b
 
 <h2> AWK </h2>
 cat log.log | awk '{ print $1 }'
