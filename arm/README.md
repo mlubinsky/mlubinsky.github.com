@@ -110,6 +110,22 @@ or  <https://github.com/osx-cross/homebrew-arm>    GNU toolchain for ARM Cortex-
 
 <https://docs.mbed.com/docs/mbed-os-handbook/en/latest/dev_tools/cli/>
 
+Updating mbed OS
+
+If you still have the mbed library (not mbed-os) in the online compiler, right click on 'mbed', and click 'Remove'. Then click on 'Add library' > 'From URL' and enter https://github.com/armmbed/mbed-os.
+
+If you have mbed-os, right click on the library and select 'Upgrade'.
+
+From mbed CLI:
+
+$ mbed remove mbed
+$ mbed add mbed-os
+Or when you already have mbed-os:
+
+$ cd mbed-os
+$ git pull
+$ git checkout latest
+
  There is a difference between the online and CLI tools.  
  The CLI tools automatically pull in the latest mbed libraries 
  while the online tools will only pull newer libraries when you specifically update them.
