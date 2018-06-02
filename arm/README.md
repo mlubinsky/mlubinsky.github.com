@@ -1,6 +1,8 @@
 ## 2-ways auth
 <https://github.com/ARMmbed/mbedtls>
 
+<https://docs.mbed.com/docs/mbed-os-api-ref/en/latest/APIs/security/tls/>
+
 <https://github.com/ARMmbed/mbedtls/blob/development/programs/ssl/ssl_client2.c>
 
 <https://cloud.mbed.com/docs/v1.2/quick-start/qs-compiling.html>
