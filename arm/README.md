@@ -135,17 +135,17 @@ Or when you already have mbed-os:
 
  mbed import https://github.com/ARMmbed/mbed-os-example-blinky
 
- pwd
-  
-  /Users/miclub01/NEW/mbed-os-example-blinky
+ $ pwd      --> /Users/miclub01/NEW/mbed-os-example-blinky
 
-     mbed config -G GCC_ARM_PATH "/Users/miclub01/gcc-arm-none-eabi-7-2017-q4-major/bin"
+    mbed config -G GCC_ARM_PATH "/Users/miclub01/gcc-arm-none-eabi-7-2017-q4-major/bin"
 
-     mbed config --list
+    mbed config --list
 
     GCC_ARM_PATH=/Users/miclub01/gcc-arm-none-eabi-7-2017-q4-major/bin 
 
     mbed compile -t GCC_ARM -m K64F
+    
+    mbed ls .     <--  dependency
 
 Image: ./BUILD/K64F/GCC_ARM/mbed-os-example-blinky.bin
  
@@ -160,7 +160,7 @@ http://devblog.exmachina.fr/tutorial/2016/12/08/LPC1768-development-toolkit
 
 <https://habr.com/post/307806/>   how to install cli
 
-pip install mbed-cli
+    pip install mbed-cli
 
 <https://www.youtube.com/watch?v=PI1Kq9RSN_Y> . Quick start
 
@@ -173,10 +173,9 @@ pip install mbed-cli
 
 <https://stackoverflow.com/questions/44640547/mbed-cli-make-py-error-could-not-find-executable-for-arm>
 
-mbed config -G GCC_ARM_PATH "/Users/amod-mac/Desktop/gcc-arm-none-eabi-7-2017-q4-major/bin"
-
-mbed compile -m UBLOX_C027 -t ARM    <-- commercial compiler
-mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
+    mbed config -G GCC_ARM_PATH "/Users/amod-mac/Desktop/gcc-arm-none-eabi-7-2017-q4-major/bin"
+    mbed compile -m UBLOX_C027 -t ARM    <-- commercial compiler
+    mbed compile -m UBLOX_C027 -t GCC_ARM   <-- GCC compiler
 
 
 ## MQTT
@@ -275,11 +274,11 @@ RSA (буквенная аббревиатура от фамилий Rivest-Sham
 <https://os.mbed.com/search/repository?q=HelloMQTT> .  useful code
 
 
-security find-identity -v login.keychain
+    security find-identity -v login.keychain
 
-openssl x509 -noout -startdate -in cert.pem // Feb 27 07:13:41 2016 GMT
+    openssl x509 -noout -startdate -in cert.pem // Feb 27 07:13:41 2016 GMT
 
-openssl x509 -noout -enddate -in cert.pem // Feb 26 07:13:41 2017 GMT
+    openssl x509 -noout -enddate -in cert.pem // Feb 26 07:13:41 2017 GMT
 
 <https://medium.com/@yasithlokuge/mqtt-protocol-and-security-48cf2dcd2c4d> 
 
@@ -392,36 +391,31 @@ https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processor
 <https://stackoverflow.com/questions/42158817/mbed-ethernet-interface-not-working>
 
 
- cp HelloMQTT_K64F.bin /Volumes/DAPLINK/
+    cp HelloMQTT_K64F.bin /Volumes/DAPLINK/
  
- minicom -D /dev/tty.usbmodem14412
+    minicom -D /dev/tty.usbmodem14412
  
 TODO:  use NetworkInterface 
  
--------      Code --------
+##      Code 
 
-#include "mbed.h"
-#include "EthernetInterface.h"
+    #include "mbed.h"
+    #include "EthernetInterface.h"
+    Serial pc(USBTX, USBRX);      
+    EthernetInterface eth;
+    DigitalOut led1(LED1);
+    // https://docs.mbed.com/docs/mbed-os-api-ref/en/latest/APIs/communication/ethernet/
+    // https://github.com/ARMmbed/mbed-os-example-sockets/blob/master/main.cpp 
 
-Serial pc(USBTX, USBRX);     // this is strnge line
-
-EthernetInterface eth;
-
-DigitalOut led1(LED1);
-
-
-// https://docs.mbed.com/docs/mbed-os-api-ref/en/latest/APIs/communication/ethernet/
-// https://github.com/ARMmbed/mbed-os-example-sockets/blob/master/main.cpp 
-
-// main() runs in its own thread in the OS
-int main() {
-    int err1=0;
-    int err2=0;
+    // main() runs in its own thread in the OS
+    int main() {
+      int err1=0;
+      int err2=0;
     
-    //setup ethernet interface
-    //err1 = eth.init(); //Use DHCP -- is it required???
-    //NetworkInterface* network_interface = eth.connect(); // network_interface will be NULLPTR when connection fails
-    err2 = eth.connect();
+      //setup ethernet interface
+      //err1 = eth.init(); //Use DHCP -- is it required???
+      //NetworkInterface* network_interface = eth.connect(); // network_interface will be NULLPTR when connection fails
+      err2 = eth.connect();
     
     //if (network_interface) {
        //err2 = eth.connect();
@@ -442,13 +436,13 @@ int main() {
           pc.printf("ERRR  \n\r");
         
     }
-}
+    }
         
     }
-}
+    }
 
 ## DLMS
 
-https://www.dlms.com/documentation/index.html
+<https://www.dlms.com/documentation/index.html>
 
-// https://docs.mbed.com/docs/mbed-os-api-ref/en/latest/APIs/communication/ethernet/
+<https://docs.mbed.com/docs/mbed-os-api-ref/en/latest/APIs/communication/ethernet/>
