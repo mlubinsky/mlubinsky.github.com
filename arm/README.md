@@ -1,3 +1,6 @@
+## Rasberry
+<https://www.macworld.co.uk/how-to/mac/how-to-set-up-raspberry-pi-3-with-mac-3637490/>
+
 ## 2-ways auth
 <https://tls.mbed.org/discussions/generic/get-the-private-key>
 
