@@ -1,4 +1,13 @@
 ## 2-ways auth
+
+<https://en.wikipedia.org/wiki/Public_key_certificate>
+
+<https://en.wikipedia.org/wiki/Certificate_authority>
+
+<https://en.wikipedia.org/wiki/Public_key_infrastructure>
+
+<https://en.wikipedia.org/wiki/Transport_Layer_Security>
+
 <https://github.com/ARMmbed/mbedtls>
 
 <https://docs.mbed.com/docs/mbed-os-api-ref/en/latest/APIs/security/tls/>
@@ -10,6 +19,13 @@
 <https://tls.mbed.org/high-level-design>
 
 <https://tls.mbed.org/dev-corner>
+
+<https://os.mbed.com/docs/v5.8/reference/security.html>
+
+<https://tls.mbed.org>
+
+
+<https://tls.mbed.org/kb>
 
 ## MBED 
 
@@ -250,13 +266,7 @@ http://www.eclipse.org/paho/clients/c/embedded/    Paho MQTT Paho MQQT
 
 
 ## Security: TTL SSL
-<https://os.mbed.com/docs/v5.8/reference/security.html>
 
-<https://tls.mbed.org>
-
-<https://tls.mbed.org/high-level-design>
-
-<https://tls.mbed.org/kb>
 
 <https://habr.com/post/346798/>   X509
 
