@@ -1,12 +1,14 @@
 ## 2-ways auth
+<https://tls.mbed.org/discussions/generic/get-the-private-key>
 
-<https://en.wikipedia.org/wiki/Public_key_certificate>
+<https://tls.mbed.org/discussions/generic/ssl-handshake-failed-due-to-mbedtls_err_x509_cert_verify_failed>
 
-<https://en.wikipedia.org/wiki/Certificate_authority>
+<https://tls.mbed.org/discussions/crypto-and-ssl/reading-public-private-key-from-certificate>
 
-<https://en.wikipedia.org/wiki/Public_key_infrastructure>
+<https://tls.mbed.org/discussions/crypto-and-ssl/how-to-send-self-signed-ca-certificate-to-server-from-mbedtls-client>
 
-<https://en.wikipedia.org/wiki/Transport_Layer_Security>
+cat deviceCert.crt sampleCACertificate.pem > deviceCertAndCACert.crt
+And then set it as the device certificate using mbedtls_ssl_conf_own_cert()
 
 <https://github.com/ARMmbed/mbedtls>
 
@@ -24,8 +26,18 @@
 
 <https://tls.mbed.org>
 
-
 <https://tls.mbed.org/kb>
+
+
+## Wikipedia
+
+<https://en.wikipedia.org/wiki/Public_key_certificate>
+
+<https://en.wikipedia.org/wiki/Certificate_authority>
+
+<https://en.wikipedia.org/wiki/Public_key_infrastructure>
+
+<https://en.wikipedia.org/wiki/Transport_Layer_Security>
 
 ## MBED 
 
