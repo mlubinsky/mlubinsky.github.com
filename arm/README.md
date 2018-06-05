@@ -19,7 +19,9 @@ To have launchd start mosquitto now and restart at login:
   brew services start mosquitto
 
 Or, if you don't want/need a background service you can just run:
-  mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
+  mosquitto -v -c /usr/local/etc/mosquitto/mosquitto.conf   
+
+openssl s_client -connect localhost:8883  
 
 mosquitto_pub
 
