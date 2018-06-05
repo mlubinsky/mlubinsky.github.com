@@ -4,7 +4,9 @@
 ## Mosquitto
 
 <https://dzone.com/articles/mbedtls-ssl-certificate-verification-with-mosquitto-lwip-and-mqtt>
+
 <https://dzone.com/articles/secure-communication-with-tls-and-the-mosquitto-broker>
+
 <https://dzone.com/articles/mqtt-security-securing-a-mosquitto-server>
 
  brew install mosquitto
