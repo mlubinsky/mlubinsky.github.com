@@ -461,6 +461,16 @@ TODO:  use NetworkInterface
 ##      Code 
 
     #include "mbed.h"
+    #define PRINT pc.printf
+
+    Serial pc(USBTX, USBRX);
+    pc.baud(115200);
+    PRINT("Hello");
+
+
+
+
+    #include "mbed.h"
     #include "EthernetInterface.h"
     Serial pc(USBTX, USBRX);      
     EthernetInterface eth;
