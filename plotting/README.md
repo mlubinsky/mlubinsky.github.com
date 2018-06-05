@@ -5,7 +5,7 @@
 
 
 ### Visualization
-https://veusz.github.io/ 
+<https://veusz.github.io/>
 
 https://www.knime.com/
 
@@ -62,5 +62,6 @@ http://hypertools.readthedocs.io/en/latest/index.html
 	
 https://towardsdatascience.com/data-visualization-with-bokeh-in-python-part-one-getting-started-a11655a467d4
 
+<https://www.youtube.com/watch?v=z7ZINBk8EUk&list=PL998lXKj66MpNd0_XkEXwzTGPxY2jYM2d>
 
 [create an anchor](#anchors-in-markdown)
