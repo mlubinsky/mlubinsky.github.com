@@ -5,6 +5,8 @@
 
 <https://dzone.com/articles/secure-tls-communication-with-mqtt-mbedtls-and-lwip-part-1>
 
+<http://rockingdlabs.dunmire.org/exercises-experiments/ssl-client-certs-to-secure-mqtt>
+
 <https://dzone.com/articles/mbedtls-ssl-certificate-verification-with-mosquitto-lwip-and-mqtt>
 
 <https://dzone.com/articles/secure-communication-with-tls-and-the-mosquitto-broker>
