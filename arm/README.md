@@ -1,6 +1,32 @@
 ## Rasberry
 <https://www.macworld.co.uk/how-to/mac/how-to-set-up-raspberry-pi-3-with-mac-3637490/>
 
+## Mosquitto
+
+<https://dzone.com/articles/mbedtls-ssl-certificate-verification-with-mosquitto-lwip-and-mqtt>
+<https://dzone.com/articles/secure-communication-with-tls-and-the-mosquitto-broker>
+<https://dzone.com/articles/mqtt-security-securing-a-mosquitto-server>
+
+ brew install mosquitto
+ 
+ mosquitto has been installed with a default configuration file.
+ You can make changes to the configuration by editing:
+    /usr/local/etc/mosquitto/mosquitto.conf
+
+To have launchd start mosquitto now and restart at login:
+  brew services start mosquitto
+
+Or, if you don't want/need a background service you can just run:
+  mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
+
+mosquitto_pub
+
+## Stack Overflow
+
+openssl s_client -showcerts -connect iot.eclipse.org:8883
+
+<https://stackoverflow.com/questions/39435311/ca-certificate-to-connect-to-mqtt-server-over-tls-iot-eclipse-org>
+
 ## 2-ways auth
 <https://tls.mbed.org/discussions/generic/get-the-private-key>
 
