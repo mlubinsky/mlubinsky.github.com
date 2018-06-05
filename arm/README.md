@@ -3,6 +3,8 @@
 
 ## Mosquitto
 
+<https://mcuoneclipse.com/2017/04/14/enable-secure-communication-with-tls-and-the-mosquitto-broker/>
+
 <https://dzone.com/articles/secure-tls-communication-with-mqtt-mbedtls-and-lwip-part-1>
 
 <http://rockingdlabs.dunmire.org/exercises-experiments/ssl-client-certs-to-secure-mqtt>
