@@ -9,7 +9,6 @@
 
 <https://oneraynyday.github.io/dev/2017/08/03/Docker/>
 
-<https://habr.com/post/310460/>
 
 <https://docs.docker.com/docker-for-mac/>
 
