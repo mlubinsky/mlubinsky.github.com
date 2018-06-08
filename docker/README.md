@@ -1,3 +1,12 @@
+# Docker
+<https://hub.docker.com/>
+
+Download image explicitly: docker pull imageName
+or implicitly when starting container.
+Containers are the instances of images 
+
+    docker ps -l
+    
 
 <https://thoughts.theden.sh/post/docker-dev-env/>
 
