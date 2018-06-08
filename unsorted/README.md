@@ -19,6 +19,8 @@
 <https://curi0sity.de/en/2018/06/use-vim-as-a-simple-ide/>
 
 ## VisualStudio Code + Java
+<https://flaviocopes.com/vscode/>
+
 <https://code.visualstudio.com/docs/java/java-tutorial>
 
 
