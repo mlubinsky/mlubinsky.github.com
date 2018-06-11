@@ -1,6 +1,15 @@
 ## ARM
 <https://tedium.co/2018/06/07/acorn-arm-holdings-history/>  ARM history
 
+## Cortex-A76
+<https://www.anandtech.com/show/12785/arm-cortex-a76-cpu-unveiled-7nm-powerhouse>
+
+## Trilllium
+<https://www.extremetech.com/computing/270550-are-arm-cpu-cores-finally-ready-to-fight-intel-for-the-laptop-market> 
+
+##
+https://www.anandtech.com/show/12791/arm-details-project-trillium-mlp-architecture
+
 ## Rasberry
 <https://www.macworld.co.uk/how-to/mac/how-to-set-up-raspberry-pi-3-with-mac-3637490/>
 
