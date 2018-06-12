@@ -1,4 +1,4 @@
-## ARM
+## ARM Overview
 <https://tedium.co/2018/06/07/acorn-arm-holdings-history/>  ARM history
 
 ## Cortex-A76
@@ -14,6 +14,18 @@ https://www.anandtech.com/show/12791/arm-details-project-trillium-mlp-architectu
 
 ## Multithreading
 https://os.mbed.com/docs/v5.8/reference/thread.html
+
+
+## AWS
+The solution deploys an AWS IoT rule that sends device data to Amazon Kinesis Data Firehose, which archives the data in Amazon S3 and sends it to an Amazon Kinesis Data Analytics application that computes metrics in real-time. The solution uses Amazon DynamoDB to durably store the computed data. The solution also features a customizable dashboard that visualizes your device connectivity and activity metrics in real-time. 
+<https://aws.amazon.com/about-aws/whats-new/2018/05/introducing-real-time-iot-device-monitoring-with-kinesis-data-analytics/>
+
+<https://aws.amazon.com/about-aws/whats-new/2016/01/aws-iot-now-supports-websockets-custom-keepalive-intervals-and-enhanced-console/>
+
+<https://serverless.com/blog/realtime-updates-using-lambda-websockets-iot/>
+
+<https://hackernoon.com/serverless-websockets-with-aws-lambda-fanout-15384bd30354>
+
 
 
 ## Mosquitto
