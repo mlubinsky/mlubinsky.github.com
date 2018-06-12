@@ -26,7 +26,7 @@ The solution deploys an AWS IoT rule that sends device data to Amazon Kinesis Da
 
 <https://hackernoon.com/serverless-websockets-with-aws-lambda-fanout-15384bd30354>
 
-
+<https://medium.com/signiant-engineering/real-time-aggregation-with-dynamodb-streams-f93547cfb244>
 
 ## Mosquitto
 
