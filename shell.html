@@ -4,7 +4,13 @@
 
 <body>
 <pre>
-  <a href=bash_ru.pdf>bash</a>
+  <a href=bash_ru.pdf>bash manual</a>
+  
+  IP:
+  
+    dig +short myip.opendns.com @resolver1.opendns.com
+    ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'
+
 <h2> Memory CPU</h2>
 https://habrahabr.ru/company/badoo/blog/338226/
 https://blog.codecentric.de/en/2017/09/jvm-fire-using-flame-graphs-analyse-performance/
