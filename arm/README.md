@@ -6,6 +6,8 @@
  
 ## Cloud
 
+<https://cloud.mbed.com/docs/current/cloud-requirements/tool-requirements.html>
+
 Lightweight Machine to Machine Technical Specification (LwM2M)
 <http://openmobilealliance.org/release/LightweightM2M/V1_0-20170208-A/OMA-TS-LightweightM2M-V1_0-20170208-A.pdf>
 
