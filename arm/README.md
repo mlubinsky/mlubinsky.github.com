@@ -8,6 +8,8 @@
 
 <https://cloud.mbed.com/docs/current/cloud-requirements/tool-requirements.html>
 
+<https://cloud.mbed.com/docs/current/service-api-references/mbed-cloud-connect.html>
+
 <https://github.com/ARMmbed/mbed-cloud-client>
 
 Lightweight Machine to Machine Technical Specification (LwM2M)
