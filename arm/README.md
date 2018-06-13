@@ -7,10 +7,17 @@
 ## Cloud
 <https://cloud.mbed.com/docs/current/connecting/qs-credentials.html>  get mbed_cloud_dev_credentials.c
 
+<https://portal.mbedcloud.com/login>
+
 <https://cloud.mbed.com/docs/current/account-management/users.html>
 
 <https://cloud.mbed.com/docs/current/connecting/qs-compiling.html>
 
+mbed compile -t GCC_ARM -m K64F --app-config configs/eth_v4.json
+
+python tools/combine_bootloader_with_app.py -m K64F -a BUILD/K64F/GCC_ARM/mbed-cloud-client-example.bin -o combined.hex
+
+https://connector.mbed.com/
 
 <https://tedium.co/2018/06/07/acorn-arm-holdings-history/>  ARM history
 
