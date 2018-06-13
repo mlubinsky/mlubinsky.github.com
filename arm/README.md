@@ -5,6 +5,10 @@
 <https://os.mbed.com/users/coisme/code/HelloMQTT/> Osamu
  
 ## Cloud
+
+Lightweight Machine to Machine Technical Specification (LwM2M)
+<http://openmobilealliance.org/release/LightweightM2M/V1_0-20170208-A/OMA-TS-LightweightM2M-V1_0-20170208-A.pdf>
+
 <https://cloud.mbed.com/docs/current/connecting/qs-credentials.html>  get mbed_cloud_dev_credentials.c
 
 <https://portal.mbedcloud.com/login>
