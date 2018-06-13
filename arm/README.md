@@ -23,6 +23,8 @@ Lightweight Machine to Machine Technical Specification (LwM2M)
 
 <https://cloud.mbed.com/docs/current/connecting/qs-compiling.html>
 
+<https://cloud.mbed.com/docs/current/connecting/flashing-the-binary-to-the-device.html>
+
 mbed compile -t GCC_ARM -m K64F --app-config configs/eth_v4.json
 
 python tools/combine_bootloader_with_app.py -m K64F -a BUILD/K64F/GCC_ARM/mbed-cloud-client-example.bin -o combined.hex
