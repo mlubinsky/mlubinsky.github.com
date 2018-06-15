@@ -1,3 +1,5 @@
+<https://os.mbed.com/platforms/hexiwear/>
+
 ## TLS MQTT 
 
 <https://os.mbed.com/users/vpcola/code/HelloMQTT/>   Vergil Cola
