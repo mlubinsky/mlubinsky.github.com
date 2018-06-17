@@ -1,4 +1,6 @@
 
+<https://www.slideshare.net/AmazonWebServices/getting-started-on-aws-awsome-day-dallas-2018>
+
 <https://medium.freecodecamp.org/the-best-ways-to-test-your-serverless-applications-40b88d6ee31e>
 
  <https://habr.com/company/abdoc/blog/352856/>
