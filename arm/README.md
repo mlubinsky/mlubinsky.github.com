@@ -1,5 +1,7 @@
 <https://os.mbed.com/platforms/hexiwear/>
 
+<https://tls.mbed.org/kb/how-to/reduce-mbedtls-memory-and-storage-footprint>
+
 ## TLS MQTT 
 
 <https://github.com/ArmMbedCloud/data-cloud-client-mqtt>
