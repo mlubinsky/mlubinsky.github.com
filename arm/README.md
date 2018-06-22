@@ -1,6 +1,25 @@
+<https://mcu-things.com/blog/k64-adc-temp-sensor/>
+
+<https://www.element14.com/community/roadTestReviews/1984/l/freescale-freedom-frdm-k64f-development-platform-review>
+
+FXOS8700CQ – accelerometer and magnetometer
+
+<https://os.mbed.com/platforms/FRDM-K64F/>  there is  section "Sensors"
+<https://os.mbed.com/components/Grove-TempHumi-Sensor/>
+<https://os.mbed.com/teams/NXP/code/frdm_Grove_Temp-Humidity_Example/wiki/Homepage>
+<https://www.seeedstudio.com/Grove-Temperature-%26amp%3B-Humidity-Sensor-%EF%BC%88DHT11%EF%BC%89-p-745.html>
+
+Temperature and Humidity Sensor: DHT22 sensor
+Temp/Humidity sensor uses a shared single wire connection for TX/RX so it’s very simple to connect up, however you need to remember to add a pullup to the data line. My router isn’t close to my desk so I used a powerline adapter for the Ethernet, this worked flawlessly without any setup.
+
+<https://os.mbed.com/components/mbed-Application-Shield/>  expansion board
+
+<https://os.mbed.com/components/Avnet-ATT-WNC-14A2A-Cellular-IoT-Kit/>
+<http://cloudconnectkits.org/>
+ Shield that contains an ST221 Temperature and Humidty Sensor
+
 <https://os.mbed.com/platforms/hexiwear/>
 
-<https://tls.mbed.org/kb/how-to/reduce-mbedtls-memory-and-storage-footprint>
 
 ## TLS MQTT 
 
@@ -9,7 +28,9 @@
 <https://os.mbed.com/users/vpcola/code/HelloMQTT/>   Vergil Cola
 
 <https://os.mbed.com/users/coisme/code/HelloMQTT/> Osamu
- 
+
+<https://tls.mbed.org/kb/how-to/reduce-mbedtls-memory-and-storage-footprint>
+
 ## Cloud
 <https://os.mbed.com/search/?q=cloud>
 
