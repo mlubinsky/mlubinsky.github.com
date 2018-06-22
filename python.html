@@ -32,6 +32,10 @@ An alternative is to modify the python path inside your python script by adding 
 This needs to be done for every script you need a certain package version. 
 You might want for some reason use an older version that you have installed. 
 
+assert hasattr(Base,'foo'), "no method foo in Base class"
+
+
+
 <a href=http://interactivepython.org/runestone/static/pythonds/index.html>Algorithms in Python</a>
 <a href=https://www.pythonsheets.com/>Python cheatsheet</a>
 https://habrahabr.ru/post/349860/   regexp
@@ -45,6 +49,7 @@ https://www.amazon.com/Python-Tricks-Buffet-Awesome-Features/dp/1775093301
 https://www.amazon.com/Dynamic-Programming-Coding-Interviews-Bottom-Up/dp/1946556696
 https://www.hardikp.com/2017/12/30/python-cpp/
 
+<h2>HTTP Server</h2>
 How to start http server:
 
 python -m SimpleHTTPServer
@@ -58,7 +63,7 @@ If you wish to change the port  from default (8000) then specify it explicitly:
 
  python -m SimpleHTTPServer 8080
 
-Random Notes
+<h2> Random Notes </h2>
 http://arseny.info/2017/parallel-computation-with-two-lines-of-code.html   Joblib
 https://www.dataquest.io/blog/python-counter-class/
 https://github.com/ChrisKnott/Eel offline web based UI for python
@@ -80,25 +85,53 @@ def dot(A, B): return sum([ai*bi for (ai, bi) in zip(A, B)])
 matrices by vector multiplication:
 def mul(A, X): return [dot(ai, X) for ai in A]
 
+<h2> Counter usage </h2>
 
 from collections import Counter
 
 def is_anagram(word1, word2):
-    """Checks whether the words are anagrams.
-
-    word1: string
-    word2: string
-
-    returns: boolean
-    """
     return Counter(word1) == Counter(word2)
 
 print(is_anagram('tachymetric', 'mccarthyite'))
 print(is_anagram('banana', 'peach'))
 
+------------- print most frequent words in file --------------
+import re
+from collections import Counter
 
- assert hasattr(Base,'foo'), "no method foo in Base class"
+def extract_words(filename):
+    text = open(filename).read().lower()
+    return re.findall('\w+', text)
 
+def filter_words(words, ignore=None):
+    if not ignore:
+        ignore = set(['is','if','a','it','the','an','in','of','to','and','that','be',
+              'his','he','her','on','not','by','s','ch','are','this','as','for',
+              'was','with','which','or','for','from','i','you','at','when','have',
+              'but','may','they','their','be','who','your','says','said','all',
+              'him','1','2','3','4','5','6','7','8','9','t','o','-','_'])
+
+    return [word for word in words if word not in ignore]
+
+def count_words(words, limit=10, ignore=None):
+    filtered = filter_words(words, ignore)
+
+    top_words = Counter(filtered).most_common(limit)
+    return top_words
+
+def show_top_words(filename, limit=10):
+    words = extract_words(filename)
+    for word, frequency in count_words(words, limit):
+        print("%15s : %s" % (word,frequency))
+
+if __name__ == "__main__":
+    filename = sys.argv[1]
+    limit = int(sys.argv[2])
+    show_top_words(filename, limit)
+
+
+
+---   polinom ----------
 
 
  class Polynom:
@@ -113,11 +146,38 @@ print(is_anagram('banana', 'peach'))
      def __add__(self, other):
          return Polynom(* (x+y) for x,y in zip(self.coefs, other.coefs))
 
+--  dictionary -----
 
  a={'k1':'v1', 'k2':'v2'}
  for key, val in a.iteritems():
     print key, val
 
+
+ fruits = { 'apple':1,  'orange':2, 'banana':3   }
+  if 'apple' in fruits:
+        print(fruits['apple'])
+
+
+--- Exceptions ---
+def linux_interaction():
+    assert ('linux' in sys.platform), "Function can only run on Linux systems."
+    print('Doing something.')
+
+try:
+    linux_interaction()
+except AssertionError as error:
+    print(error)
+else:
+    try:
+        with open('file.log') as file:
+            read_data = file.read()
+    except FileNotFoundError as fnf_error:
+        print(fnf_error)
+finally:
+    print('Cleaning up, irrespective of any exceptions.')
+
+
+--  Fibonacci ---------
 
 def fib(num):
   a,b=0,1
