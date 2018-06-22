@@ -1,3 +1,5 @@
+<https://www.seeedstudio.com/Base-Shield-V2-p-1378.html>
+
 <https://mcu-things.com/blog/k64-adc-temp-sensor/>
 
 <https://www.element14.com/community/roadTestReviews/1984/l/freescale-freedom-frdm-k64f-development-platform-review>
