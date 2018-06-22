@@ -2,7 +2,9 @@
 
 <https://www.element14.com/community/roadTestReviews/1984/l/freescale-freedom-frdm-k64f-development-platform-review>
 
-FXOS8700CQ – accelerometer and magnetometer
+FXOS8700CQ – accelerometer and magnetometer <https://www.nxp.com/docs/en/data-sheet/FXOS8700CQ.pdf>
+<https://www.mathworks.com/help/supportpkg/freescalefrdmk64fboard/examples/read-temperature-from-an-i2c-based-sensor.html>
+
 
 <https://os.mbed.com/platforms/FRDM-K64F/>  there is  section "Sensors"
 <https://os.mbed.com/components/Grove-TempHumi-Sensor/>
