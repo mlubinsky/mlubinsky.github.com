@@ -4,6 +4,8 @@
 
 <https://www.amazon.com/Advanced-Interview-Questions-Youll-Likely/dp/1946383708> C++ book
 
+<https://ds9a.nl/articles/posts/cpp-2/>
+
 <https://habrahabr.ru/post/182920/>
 
 <https://www.codeproject.com/Articles/1170503/The-Impossibly-Fast-Cplusplus-Delegates-Fixed>
