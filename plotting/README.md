@@ -23,6 +23,8 @@ https://www.cloudmqtt.com/docs-websocket.html
 
 https://gist.github.com/matbor/9825309
 
+http://www.astracorp.com/blog/mqtt-over-websockets
+
 https://stackoverflow.com/questions/30624897/direct-mqtt-vs-mqtt-over-websocket
 
 http://www.steves-internet-guide.com/mqtt-websockets/
