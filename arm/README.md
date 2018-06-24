@@ -1,4 +1,8 @@
+<https://github.com/owntracks/tools/blob/master/TLS/generate-CA.sh>
+
 <https://docs.mbed.com/docs/mbed-os-handbook/en/latest/advanced/bootloader/>  Bootloader
+
+
 <https://cloud.mbed.com/docs/current/porting/building-r1-3-version-of-cloud-client-for-different-operating-systems.html>
 
 <https://www.seeedstudio.com/Base-Shield-V2-p-1378.html>
