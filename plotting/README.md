@@ -4,6 +4,32 @@
 <https://sadanand-singh.github.io/posts/interactivedatavis/>
 
 
+## MQTT Websocket real time plot
+https://stackoverflow.com/questions/30624897/direct-mqtt-vs-mqtt-over-websocket
+
+http://www.steves-internet-guide.com/mqtt-websockets/
+
+http://www.steves-internet-guide.com/using-javascript-mqtt-client-websockets/
+
+http://www.steves-internet-guide.com/wp-content/uploads/javascript-websockets.7z
+
+https://github.com/mqttjs/MQTT.js
+
+https://jpmens.net/2014/07/03/the-mosquitto-mqtt-broker-gets-websockets-support/
+
+## MQTT plotting
+https://tinker.yeoman.com.au/2015/05/11/simple-browser-based-graphical-display-of-mqtt-data/
+
+http://www.mqtt-dashboard.com/metrics.html
+
+## HighCharts
+
+https://medium.com/@chakrar27/mqtt-highcharts-a-powerful-combo-for-building-real-time-dashboards-2d97880ee01d
+
+https://github.com/matbor/mqtt2highcharts
+
+https://gist.github.com/vitormeriat/b6de7aa0a28af2b45f15c3d67721e051
+
 ### Visualization
 <https://veusz.github.io/>
 
@@ -43,6 +69,8 @@ https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-wi
 
 ## Matplotlib
 http://blog.adnansiddiqi.me/tag/matplotlib/
+
+https://medium.com/@kbrook10/day-4-data-visualization-how-to-use-seaborn-for-heatmaps-bf8070e3846e Heatmap
 
 https://github.com/fonnesbeck/Bios8366/blob/master/notebooks/Section0_2-Plotting-and-Visualization.ipynb
 
