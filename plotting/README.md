@@ -24,6 +24,10 @@ http://www.mqtt-dashboard.com/metrics.html
 
 ## HighCharts
 
+<https://www.npmjs.com/package/highcharts>
+
+https://tech.scargill.net/node-red-and-highcharts/
+
 https://medium.com/@chakrar27/mqtt-highcharts-a-powerful-combo-for-building-real-time-dashboards-2d97880ee01d
 
 https://github.com/matbor/mqtt2highcharts
@@ -32,6 +36,8 @@ https://gist.github.com/vitormeriat/b6de7aa0a28af2b45f15c3d67721e051
 
 ### Visualization
 <https://veusz.github.io/>
+
+<https://habr.com/company/pixonic/blog/414921/>  Apache Zeppelin
 
 https://www.knime.com/
 
