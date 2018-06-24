@@ -1,13 +1,17 @@
 
-## TensorFlow<
+## TensorFlow
  
 https://medium.com/@tensorflow
 https://habrahabr.ru/search/?q=tensorflow
 https://docs.devicehive.com/docs
 https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html
+
 Nilolenko DeepLearning book
 https://www.amazon.com/Deep-Learning-Applications-Using-Python/dp/1484235150/  BOOK
+
 https://medium.com/tensorflow/introducing-tensorflow-probability-dca4c304e245
+
+
 http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.66230&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false
  
 
