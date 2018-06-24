@@ -4,11 +4,22 @@
 <https://sadanand-singh.github.io/posts/interactivedatavis/>
 
 
+## Mosquitto  
+$ mosquitto -c /path/to/mosquitto.conf
+port 1883
+
+listener 1884
+protocol websockets
+
+client = new Paho.MQTT.Client("localhost", 1883, "myclientid_" + parseInt(Math.random() * 100, 10));
+
 ## MQTT Websocket  
 
 https://www.eclipse.org/paho/clients/js/
 
 https://www.cloudmqtt.com/docs-websocket.html
+
+<https://www.cumulocity.com/guides/mqtt/hello-mqtt-javascript/>
 
 https://gist.github.com/matbor/9825309
 
