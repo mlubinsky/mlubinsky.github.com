@@ -43,6 +43,12 @@ Temp/Humidity sensor uses a shared single wire connection for TX/RX so it’s ve
 <https://tls.mbed.org/kb/how-to/reduce-mbedtls-memory-and-storage-footprint>
 
 ## Cloud
+https://cloud.mbed.com/docs/current/mbed-cloud-sdk-references/index.html .  JavaScript SDK
+
+https://os.mbed.com/teams/mbed-os-examples/code/mbed-cloud-example/ .  
+
+https://confluence.arm.com/display/IoTBU/Platforms+for+Cloud+Client+5-minute+guide
+
 <https://os.mbed.com/search/?q=cloud>
 
 <https://cloud.mbed.com/docs/current/cloud-requirements/tool-requirements.html>
