@@ -3,6 +3,8 @@
 
 <https://medium.freecodecamp.org/the-best-ways-to-test-your-serverless-applications-40b88d6ee31e>
 
+<https://dev.to/frosnerd/deploying-and-benchmarking-an-aws-rds-mysql-instance-2faf>
+
 <https://dev.to/frosnerd/event-handling-in-aws-using-sns-sqs-and-lambda-2ng>
 
  <https://habr.com/company/abdoc/blog/352856/>
