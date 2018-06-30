@@ -7,6 +7,8 @@
 
 <https://dev.to/frosnerd/event-handling-in-aws-using-sns-sqs-and-lambda-2ng>
 
+<https://dev.to/adnanrahic/how-to-deploy-a-nodejs-application-to-aws-lambda-using-serverless-2nc7>
+
  <https://habr.com/company/abdoc/blog/352856/>
  
  TerraForm vs CloudFormation
