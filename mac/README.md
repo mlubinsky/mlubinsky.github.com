@@ -1,3 +1,5 @@
+<https://github.com/appalaszynski/mac-setup>
+
 <https://github.com/serhii-londar/open-source-mac-os-apps>    Open source Mac OS apps
 
 <https://github.com/RafalWilinski/s3-uploader>   Upload file to S3
