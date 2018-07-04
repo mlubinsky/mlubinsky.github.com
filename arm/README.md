@@ -1,4 +1,8 @@
+<https://habr.com/company/itsumma/blog/415933/>
+
+
 <https://github.com/owntracks/tools/blob/master/TLS/generate-CA.sh>
+
 
 <https://docs.mbed.com/docs/mbed-os-handbook/en/latest/advanced/bootloader/>  Bootloader
 
