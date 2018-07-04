@@ -1,5 +1,7 @@
 <https://www.youtube.com/watch?v=mUzsYt3Bj08> AWS Docker
 
+<https://read.acloud.guru/>
+
 <https://www.slideshare.net/AmazonWebServices/getting-started-on-aws-awsome-day-dallas-2018>
 
 <https://medium.freecodecamp.org/the-best-ways-to-test-your-serverless-applications-40b88d6ee31e>
