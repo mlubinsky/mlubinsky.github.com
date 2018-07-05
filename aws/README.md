@@ -1,3 +1,11 @@
+Kubernetes
+
+<http://okigiveup.net/a-tutorial-introduction-to-kubernetes/>
+
+<https://news.ycombinator.com/item?id=17462043>
+
+<https://gist.github.com/juliandunn/15ac4d5e1c96645ee133> .  Postgres on AWS
+
 <https://www.youtube.com/watch?v=mUzsYt3Bj08> AWS Docker
 
 <https://read.acloud.guru/>
