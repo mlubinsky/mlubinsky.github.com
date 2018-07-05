@@ -1,4 +1,5 @@
 Kubernetes
+<https://habr.com/company/flant/blog/415393/>
 
 <http://okigiveup.net/a-tutorial-introduction-to-kubernetes/>
 
@@ -8,15 +9,15 @@ Kubernetes
 
 <https://www.youtube.com/watch?v=mUzsYt3Bj08> AWS Docker
 
-<https://read.acloud.guru/>
+<https://read.acloud.guru/> Cloud guru 
 
 <https://www.slideshare.net/AmazonWebServices/getting-started-on-aws-awsome-day-dallas-2018>
 
 <https://medium.freecodecamp.org/the-best-ways-to-test-your-serverless-applications-40b88d6ee31e>
 
-<https://dev.to/frosnerd/deploying-and-benchmarking-an-aws-rds-mysql-instance-2faf>
+<https://dev.to/frosnerd/deploying-and-benchmarking-an-aws-rds-mysql-instance-2faf>  MySQL benchmarking
 
-<https://dev.to/frosnerd/event-handling-in-aws-using-sns-sqs-and-lambda-2ng>
+<https://dev.to/frosnerd/event-handling-in-aws-using-sns-sqs-and-lambda-2ng>    SNS
 
 <https://dev.to/adnanrahic/how-to-deploy-a-nodejs-application-to-aws-lambda-using-serverless-2nc7>
 
