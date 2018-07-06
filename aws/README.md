@@ -5,7 +5,12 @@ Kubernetes
 
 <https://news.ycombinator.com/item?id=17462043>
 
-<https://gist.github.com/juliandunn/15ac4d5e1c96645ee133> .  Postgres on AWS
+Postgres on AWS
+<https://gist.github.com/juliandunn/15ac4d5e1c96645ee133> 
+
+<https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/rds-metricscollected.html>
+
+
 
 <https://www.youtube.com/watch?v=mUzsYt3Bj08> AWS Docker
 
