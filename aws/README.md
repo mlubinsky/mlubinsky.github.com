@@ -14,8 +14,11 @@
 
 <https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/rds-metricscollected.html>
 
+<https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.html>
 
-<https://dev.to/frosnerd/deploying-and-benchmarking-an-aws-rds-mysql-instance-2faf>  MySQL benchmarking
+## MySQL benchmarking
+
+<https://dev.to/frosnerd/deploying-and-benchmarking-an-aws-rds-mysql-instance-2faf>  
 
 
 <https://www.youtube.com/watch?v=mUzsYt3Bj08> AWS Docker
