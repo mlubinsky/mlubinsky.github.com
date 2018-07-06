@@ -16,6 +16,8 @@
 
 <https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.html>
 
+<https://blog.dbi-services.com/postgresql-on-amazon-rds-configuring-the-beast/> Parameter Groups
+
 ## MySQL benchmarking
 
 <https://dev.to/frosnerd/deploying-and-benchmarking-an-aws-rds-mysql-instance-2faf>  
