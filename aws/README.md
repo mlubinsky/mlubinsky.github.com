@@ -1,15 +1,21 @@
-Kubernetes
+## Kubernetes
+
 <https://habr.com/company/flant/blog/415393/>
 
 <http://okigiveup.net/a-tutorial-introduction-to-kubernetes/>
 
 <https://news.ycombinator.com/item?id=17462043>
 
-Postgres on AWS
+## Postgres on AWS
+
+<https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html>
+
 <https://gist.github.com/juliandunn/15ac4d5e1c96645ee133> 
 
 <https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/rds-metricscollected.html>
 
+
+<https://dev.to/frosnerd/deploying-and-benchmarking-an-aws-rds-mysql-instance-2faf>  MySQL benchmarking
 
 
 <https://www.youtube.com/watch?v=mUzsYt3Bj08> AWS Docker
@@ -20,7 +26,6 @@ Postgres on AWS
 
 <https://medium.freecodecamp.org/the-best-ways-to-test-your-serverless-applications-40b88d6ee31e>
 
-<https://dev.to/frosnerd/deploying-and-benchmarking-an-aws-rds-mysql-instance-2faf>  MySQL benchmarking
 
 <https://dev.to/frosnerd/event-handling-in-aws-using-sns-sqs-and-lambda-2ng>    SNS
 
