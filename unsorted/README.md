@@ -17,6 +17,8 @@
 ## Vim
 
 <https://curi0sity.de/en/2018/06/use-vim-as-a-simple-ide/>
+ 
+<https://github.com/morhetz/gruvbox/wiki/Installation>   Color sheme gruvebox
 
 ## VisualStudio Code + Java
 <https://flaviocopes.com/vscode/>
