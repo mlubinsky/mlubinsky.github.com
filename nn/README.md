@@ -1,8 +1,10 @@
 
 ## TensorFlow
  
-https://medium.com/@tensorflow
-https://habrahabr.ru/search/?q=tensorflow
+<https://medium.com/@tensorflow>
+
+<https://habrahabr.ru/search/?q=tensorflow>
+
 https://docs.devicehive.com/docs
 https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html
 
@@ -18,17 +20,24 @@ http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&re
 https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RNN / LSTM use Attention Networks
 
 ## Image processing
-https://habr.com/company/intel/blog/415811/   NN for image processing
-https://habr.com/hub/image_processing/
-https://habr.com/company/dataart/blog/350120/
+<https://habr.com/company/intel/blog/415811/>   NN for image processing
+
+<https://habr.com/post/416777/>
+
+<https://habr.com/hub/image_processing/>
+<https://habr.com/company/dataart/blog/350120/>
+
 https://rowhanm.github.io/MiniCatsDogs/
+
 https://www.toptal.com/machine-learning/machine-learning-video-analysis
+
 https://hackernoon.com/a-comprehensive-design-guide-for-image-classification-cnns-46091260fb92
 
 
 https://sod.pixlab.io/
 
 https://habr.com/company/binarydistrict/blog/354524/
+
 https://heartbeat.fritz.ai/the-5-computer-vision-techniques-that-will-change-how-you-see-the-world-1ee19334354b
 https://towardsdatascience.com/real-time-object-detection-api-using-tensorflow-and-opencv-47b505d745c4
 https://towardsdatascience.com/is-google-tensorflow-object-detection-api-the-easiest-way-to-implement-image-recognition-a8bd1f500ea0
