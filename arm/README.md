@@ -1,4 +1,7 @@
+## IoT
 <https://habr.com/company/itsumma/blog/415933/>
+
+<https://habr.com/company/itsumma/blog/416291/>
 
 
 <https://github.com/owntracks/tools/blob/master/TLS/generate-CA.sh>
