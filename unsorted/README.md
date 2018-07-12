@@ -11,6 +11,12 @@
 
 <https://engineering.videoblocks.com/web-architecture-101-a3224e126947>
 
+<https://the-cloud-book.com/>
+
+<https://www.goodreads.com/book/show/25686275-the-art-of-scalability>
+
+<https://www.goodreads.com/book/show/18043011-clean-architecture>
+
 ## Jenkins
 
 <https://www.automationqc.com/jenkins-pipeline-for-beginners/>
