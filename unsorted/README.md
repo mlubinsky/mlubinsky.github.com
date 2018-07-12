@@ -7,6 +7,9 @@
 
 <https://www.youtube.com/watch?time_continue=1&v=wu3p7dxrhl8> Easter front animated 1941
 
+## Architecture
+
+<https://engineering.videoblocks.com/web-architecture-101-a3224e126947>
 
 ## Jenkins
 
