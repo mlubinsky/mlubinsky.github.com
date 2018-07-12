@@ -9,7 +9,7 @@ https://docs.devicehive.com/docs
 https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html
 
 Nilolenko DeepLearning book
-https://www.amazon.com/Deep-Learning-Applications-Using-Python/dp/1484235150/  BOOK
+<https://www.amazon.com/Deep-Learning-Applications-Using-Python/dp/1484235150/>  BOOK
 
 https://medium.com/tensorflow/introducing-tensorflow-probability-dca4c304e245
 
@@ -25,41 +25,54 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 <https://habr.com/post/416777/>
 
 <https://habr.com/hub/image_processing/>
+
 <https://habr.com/company/dataart/blog/350120/>
 
-https://rowhanm.github.io/MiniCatsDogs/
+<https://rowhanm.github.io/MiniCatsDogs/>
 
-https://www.toptal.com/machine-learning/machine-learning-video-analysis
+<https://www.toptal.com/machine-learning/machine-learning-video-analysis>
 
-https://hackernoon.com/a-comprehensive-design-guide-for-image-classification-cnns-46091260fb92
+<https://hackernoon.com/a-comprehensive-design-guide-for-image-classification-cnns-46091260fb92>
 
+<https://www.zerotosingularity.com/blog/fast-ai-part-1-course-1-annotated-notes/>
 
-https://sod.pixlab.io/
+<https://medium.com/@hiromi_suenaga/deep-learning-2-part-1-lesson-1-602f73869197>
 
-https://habr.com/company/binarydistrict/blog/354524/
+<https://sod.pixlab.io/>
+
+<https://habr.com/company/binarydistrict/blog/354524/>
 
 https://heartbeat.fritz.ai/the-5-computer-vision-techniques-that-will-change-how-you-see-the-world-1ee19334354b
 https://towardsdatascience.com/real-time-object-detection-api-using-tensorflow-and-opencv-47b505d745c4
 https://towardsdatascience.com/is-google-tensorflow-object-detection-api-the-easiest-way-to-implement-image-recognition-a8bd1f500ea0
-https://habrahabr.ru/post/354092/ Object recognition
+
+<https://habrahabr.ru/post/354092/> Object recognition
+
 https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detectors-faster-r-cnn-r-fcn-fpn-7e354377a7c9
-https://blog.paperspace.com
+
+<https://blog.paperspace.com>
+
 https://medium.com/paperspace/tutorial-on-implementing-yolo-v3-from-scratch-in-pytorch-part-1-a0054d38ec78
+
 https://medium.com/ml-everything/how-to-actually-easily-detect-objects-with-deep-learning-on-raspberry-pi-4fd40af84fee
+
 https://medium.com/ml-everything/offline-object-detection-and-tracking-on-a-raspberry-pi-fddb3bde130
+
 https://www.pyimagesearch.com/2017/09/18/real-time-object-detection-with-deep-learning-and-opencv/
 
-https://pjreddie.com/darknet/yolo/
+<https://pjreddie.com/darknet/yolo/>
 
 https://pythonprogramming.net/video-tensorflow-object-detection-api-tutorial/
 
 https://www.coursera.org/learn/convolutional-neural-networks/lecture/VgyWR/object-detection
 
 
-https://aws.amazon.com/rekognition/
-https://www.microsoft.com/developerblog/2017/04/10/end-end-object-detection-box/
+<https://aws.amazon.com/rekognition/>
+
+<https://www.microsoft.com/developerblog/2017/04/10/end-end-object-detection-box/>
 
 https://towardsdatascience.com/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774
+
 https://software.intel.com/en-us/articles/visualising-cnn-models-using-pytorch
 
 <https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606>
