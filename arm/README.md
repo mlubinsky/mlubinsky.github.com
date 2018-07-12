@@ -1,4 +1,7 @@
 ## IoT
+
+<https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/>
+
 <https://habr.com/company/itsumma/blog/415933/>
 
 <https://habr.com/company/itsumma/blog/416291/>
