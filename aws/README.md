@@ -22,6 +22,10 @@
 
 <https://dev.to/frosnerd/deploying-and-benchmarking-an-aws-rds-mysql-instance-2faf>  
 
+## AWS
+<https://tech.trivago.com/2018/07/13/aws-kinesis-with-lambdas-lessons-learned/>
+
+<https://news.ycombinator.com/item?id=17523480>
 
 <https://www.youtube.com/watch?v=mUzsYt3Bj08> AWS Docker
 
