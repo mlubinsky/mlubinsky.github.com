@@ -11,7 +11,7 @@ https://github.com/vsaravind007/nodeScratchpad   Run JS code snippets
 <https://github.com/wellsjo/JSON-Splora>  JSON manipulation
 
 
-## ~/.bash_profile
+### ~/.bash_profile
 
     #### Tell ls to be colourful
     export CLICOLOR=1
