@@ -11,6 +11,10 @@ https://github.com/vsaravind007/nodeScratchpad   Run JS code snippets
 <https://github.com/wellsjo/JSON-Splora>  JSON manipulation
 
 
+
+https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/
+ls -G
+
 ### ~/.bash_profile
 
     #### Tell ls to be colourful
