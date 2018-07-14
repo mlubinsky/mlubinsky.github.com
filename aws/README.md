@@ -33,10 +33,17 @@
 
 <https://www.slideshare.net/AmazonWebServices/getting-started-on-aws-awsome-day-dallas-2018>
 
+<https://epsagon.com/blog/lambda-internals-part-2-going-deeper>
+
+<https://epsagon.com/blog/how-to-make-lambda-faster-memory-performance-benchmark>
+
 <https://medium.freecodecamp.org/the-best-ways-to-test-your-serverless-applications-40b88d6ee31e>
 
+### SQS simple queue service (poll). SNS - pub/sub (push)
 
-<https://dev.to/frosnerd/event-handling-in-aws-using-sns-sqs-and-lambda-2ng>    SNS
+<https://epsagon.com/blog/how-to-setup-aws-lambda-with-sqs>
+
+<https://dev.to/frosnerd/event-handling-in-aws-using-sns-sqs-and-lambda-2ng>    SNS SQS
 
 <https://dev.to/adnanrahic/how-to-deploy-a-nodejs-application-to-aws-lambda-using-serverless-2nc7>
 
