@@ -34,6 +34,23 @@
 ./rpi-build/conf/local.conf:MACHINE = "mbed-cloud-client-rpi-machine"
 
 
+### cat ./meta-mbed-cloud-client/conf/machine/mbed-cloud-client-rpi-machine.conf
+
+    #@TYPE: Machine
+    #@NAME: mbed cloud client machine based on RPi 3
+    #@DESCRIPTION: Machine configuration for the mbed cloud client device
+
+    #Were building on RPi3, so for the convenience, set the machine variable and include its conf
+    MACHINE = "raspberrypi3"
+    include conf/machine/raspberrypi3.conf    ## see next file
+
+    #Use our custom scard_image -class to overwrite the raspberrypi basic image
+    IMAGE_CLASSES += " mbed_sdcard_image-rpi "
+    IMAGE_FSTYPES += " mbed-sdimg "
+
+    UBOOT_MACHINE = "rpi_3_32b_config"
+
+
 ### cat meta-raspberrypi/conf/machine/raspberrypi.conf
 
     #@TYPE: Machine
