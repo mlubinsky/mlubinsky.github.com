@@ -1,9 +1,50 @@
 <https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed>
 
-
 <http://www.cmsmagazine.ru/library/items/programming/80-problems-with-it-interviews/>
 
 <https://news.ycombinator.com/item?id=17202615> some youtube channels
+
+<https://habr.com/company/globalsign/blog/348988/> Mozilla IoT Things
+
+## Raspberry . pi/raspberry
+
+    sudo raspi-config
+    
+<https://habr.com/post/330160/>    
+
+<https://www.amazon.com/Coding-Bible-Manuscripts-Python-Raspberry/dp/1718943253>
+
+<https://habr.com/company/unet/blog/407867/> MQTT on Rasb
+
+<https://habr.com/company/unet/blog/373929/> Node Red
+
+<https://etcher.io/>  SD card Writer
+
+    bootcode.bin
+    config.txt  
+    start.elf
+
+aarch64-none-elf  croos-compiler
+
+Под Linux: https://habr.com/post/349248/
+
+Загрузим и распакуем aarch64-none-elf-linux-x64.tar.gz. После этого переместим arch64-none-elf в /usr/local/bin:
+wget https://web.stanford.edu/class/cs140e/files/aarch64-none-elf-linux-x64.tar.gz
+
+    tar -xzvf aarch64-none-elf-linux-x64.tar.gz
+    sudo mv aarch64-none-elf /usr/local/bin
+    
+Добавим /usr/local/bin/aarch64-none-elf/bin к переменной окружения PATH. Как именно — это зависит от вашего конкретного диструбутива Linux. В большинстве случаев следует добавить в ~/.profile следующее:
+
+    PATH="/usr/local/bin/aarch64-none-elf/bin:$PATH"
+Проверяем, всё ли нормально. В качетве вывода мы должны получить версию gcc и всё такое.
+
+    aarch64-none-elf-gcc --version
+
+Можно собрать самому из исходников, если такое желание возникнет. Подробнее вот тут.
+
+<https://habr.com/post/357968/>    Pi 3 Model B+
+
 
 <https://www.youtube.com/watch?time_continue=1&v=wu3p7dxrhl8> Easter front animated 1941
 
