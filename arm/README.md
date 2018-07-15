@@ -1,5 +1,7 @@
 ## Cross compilation for ARM
 
+<https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%BE%D1%81%D1%81-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D1%8F%D1%82%D0%BE%D1%80>
+
 <https://habr.com/post/319736/>
 
 В случае платформ типа raspberrypi с linux'ом на борту необходимо использовать
