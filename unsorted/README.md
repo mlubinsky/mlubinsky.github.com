@@ -22,8 +22,16 @@
 
 <https://himvis.com/bake-64-bit-raspberrypi3-images-with-yoctoopenembedded/>
 
+<https://github.com/cosmo0920/rpi3-yocto-conf>
 
-cat meta-raspberrypi/conf/machine/raspberrypi.conf
+
+find . -type f -print0 | xargs -0 grep mbed-cloud-client-rpi-machine
+
+./raspberrypi-conf/local.conf.sample:MACHINE = "mbed-cloud-client-rpi-machine"
+./rpi-build/conf/local.conf:MACHINE = "mbed-cloud-client-rpi-machine"
+
+
+## cat meta-raspberrypi/conf/machine/raspberrypi.conf
 
     #@TYPE: Machine
     #@NAME: RaspberryPi Development Board
