@@ -8,6 +8,8 @@
 
 ## Yocto
 
+<https://www.udemy.com/raspberry-pi-with-embedded-linux-made-by-yocto/>
+
 <https://www.packtpub.com/virtualization-and-cloud/embedded-linux-development-using-yocto-projects-second-edition>
 
 <https://hub.packtpub.com/building-our-first-poky-image-raspberry-pi/>
@@ -25,13 +27,14 @@
 <https://github.com/cosmo0920/rpi3-yocto-conf>
 
 
-find . -type f -print0 | xargs -0 grep mbed-cloud-client-rpi-machine
+### find . -type f -print0 | xargs -0 grep mbed-cloud-client-rpi-machine
 
 ./raspberrypi-conf/local.conf.sample:MACHINE = "mbed-cloud-client-rpi-machine"
+
 ./rpi-build/conf/local.conf:MACHINE = "mbed-cloud-client-rpi-machine"
 
 
-## cat meta-raspberrypi/conf/machine/raspberrypi.conf
+### cat meta-raspberrypi/conf/machine/raspberrypi.conf
 
     #@TYPE: Machine
     #@NAME: RaspberryPi Development Board
