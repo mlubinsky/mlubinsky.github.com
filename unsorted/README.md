@@ -10,6 +10,8 @@
 
 <https://zatoichi-engineer.github.io/2017/10/02/yocto-on-osx.html>
 
+<http://eastrivervillage.com/Raspberry-Pi-dishes-from-Yocto-cuisine/>
+
 <https://community.nxp.com/docs/DOC-94953> bitbake commands
 
 <https://www.udemy.com/raspberry-pi-with-embedded-linux-made-by-yocto/>
