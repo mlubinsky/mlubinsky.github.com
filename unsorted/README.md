@@ -10,6 +10,8 @@
 
 <https://zatoichi-engineer.github.io/2017/10/02/yocto-on-osx.html>
 
+<https://community.nxp.com/docs/DOC-94953> bitbake commands
+
 <https://www.udemy.com/raspberry-pi-with-embedded-linux-made-by-yocto/>
 
 <https://www.packtpub.com/virtualization-and-cloud/embedded-linux-development-using-yocto-projects-second-edition>
