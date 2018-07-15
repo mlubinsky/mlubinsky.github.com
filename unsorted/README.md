@@ -6,6 +6,38 @@
 
 <https://habr.com/company/globalsign/blog/348988/> Mozilla IoT Things
 
+## Yocto
+
+<https://www.packtpub.com/virtualization-and-cloud/embedded-linux-development-using-yocto-projects-second-edition>
+
+<https://hub.packtpub.com/building-our-first-poky-image-raspberry-pi/>
+
+<http://www.instructables.com/id/Building-GNULinux-Distribution-for-Raspberry-Pi-Us/>
+
+<https://medium.com/@shigmas/yocto-and-pi-ef8f1aa70231>
+
+<http://git.yoctoproject.org/cgit/cgit.cgi/meta-raspberrypi>
+
+<http://www.jumpnowtek.com/rpi/Raspberry-Pi-Systems-with-Yocto.html>
+
+<https://himvis.com/bake-64-bit-raspberrypi3-images-with-yoctoopenembedded/>
+
+local.conf . has variable MACHINE
+
+The MACHINE variable is used to determine the target architecture and various compiler tuning flags.
+
+See the conf files under meta-raspberrypi/conf/machine for details.
+
+The choices for MACHINE are
+
+raspberrypi (BCM2835)
+raspberrypi0 (BCM2835)
+raspberrypi0-wifi (BCM2835)
+raspberrypi2 (BCM2836 or BCM2837 v1.2+)
+raspberrypi3 (BCM2837)
+raspberrypi-cm (BCM2835)
+raspberrypi-cm3 (BCM2837)
+
 ## Raspberry . pi/raspberry
 
     sudo raspi-config
