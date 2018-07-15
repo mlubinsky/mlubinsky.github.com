@@ -22,8 +22,7 @@
 
 <https://himvis.com/bake-64-bit-raspberrypi3-images-with-yoctoopenembedded/>
 
-local.conf . has variable MACHINE
-
+local.conf . has variable MACHINE.
 The MACHINE variable is used to determine the target architecture and various compiler tuning flags.
 
 See the conf files under meta-raspberrypi/conf/machine for details.
@@ -37,6 +36,11 @@ The choices for MACHINE are
     raspberrypi3 (BCM2837)
     raspberrypi-cm (BCM2835)
     raspberrypi-cm3 (BCM2837)
+    
+    
+~/yocto/mbed-cloud-client-yocto-setup-restricted/rpi-build/conf/local.conf
+
+    MACHINE = "mbed-cloud-client-rpi-machine"
 
 ## Raspberry . pi/raspberry
 
