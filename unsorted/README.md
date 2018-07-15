@@ -30,13 +30,13 @@ See the conf files under meta-raspberrypi/conf/machine for details.
 
 The choices for MACHINE are
 
-raspberrypi (BCM2835)
-raspberrypi0 (BCM2835)
-raspberrypi0-wifi (BCM2835)
-raspberrypi2 (BCM2836 or BCM2837 v1.2+)
-raspberrypi3 (BCM2837)
-raspberrypi-cm (BCM2835)
-raspberrypi-cm3 (BCM2837)
+    raspberrypi (BCM2835)
+    raspberrypi0 (BCM2835)
+    raspberrypi0-wifi (BCM2835)
+    raspberrypi2 (BCM2836 or BCM2837 v1.2+)
+    raspberrypi3 (BCM2837)
+    raspberrypi-cm (BCM2835)
+    raspberrypi-cm3 (BCM2837)
 
 ## Raspberry . pi/raspberry
 
