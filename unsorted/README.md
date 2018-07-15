@@ -22,7 +22,29 @@
 
 <https://himvis.com/bake-64-bit-raspberrypi3-images-with-yoctoopenembedded/>
 
-local.conf . has variable MACHINE.
+
+cat meta-raspberrypi/conf/machine/raspberrypi.conf
+
+    #@TYPE: Machine
+    #@NAME: RaspberryPi Development Board
+    #@DESCRIPTION: Machine configuration for the RaspberryPi http://www.raspberrypi.org/ Board
+
+    DEFAULTTUNE ?= "arm1176jzfshf"
+
+    require conf/machine/include/tune-arm1176jzf-s.inc
+    include conf/machine/include/rpi-base.inc
+
+    SERIAL_CONSOLE ?= "115200 ttyAMA0"
+
+    UBOOT_MACHINE = "rpi_config"
+    VC4_CMA_SIZE_raspberrypi ?= "cma-64"
+
+
+
+
+
+.rpi-build/conf/local.conf  has variable MACHINE.
+
 The MACHINE variable is used to determine the target architecture and various compiler tuning flags.
 
 See the conf files under meta-raspberrypi/conf/machine for details.
