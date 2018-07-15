@@ -45,6 +45,7 @@ wget https://web.stanford.edu/class/cs140e/files/aarch64-none-elf-linux-x64.tar.
 
 <https://habr.com/post/357968/>    Pi 3 Model B+
 
+<https://habr.com/post/320450/>
 
 <https://www.youtube.com/watch?time_continue=1&v=wu3p7dxrhl8> Easter front animated 1941
 
