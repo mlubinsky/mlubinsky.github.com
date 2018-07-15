@@ -1,3 +1,24 @@
+## Cross compilation for ARM
+
+<https://habr.com/post/319736/>
+
+В случае платформ типа raspberrypi с linux'ом на борту необходимо использовать
+
+     aarch64-linux-gnueabi
+     arm-linux-gnueabi
+     arm-linux-gnueabihf 
+      
+в зависимости от того какое abi используется ОС, установленной на rpi.
+
+
+Toolchain'ы делятся на несколько типов или триплетов. Триплет обычно состоит из трёх частей: целевой процессор, vendor и OS, vendor зачастую опускается.
+
+    *-none-eabi — это toolchain для компиляции проекта работающего в bare metal.
+    *eabi — это toolchain для компиляции проекта работающего в какой-либо ОС. В моём случае, это Linux.
+    *eabihf — это почти то же самое, что и eabi, с разницей в реализации ABI вызова функций с плавающей точкой. hf — расшифровывается как hard float.
+    
+    dnf info gcc-c++-arm-linux-gnu
+
 ## IoT
 
 <https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/>
