@@ -25,6 +25,8 @@
 ## AWS
 <https://tech.trivago.com/2018/07/13/aws-kinesis-with-lambdas-lessons-learned/>
 
+<https://hackernoon.com/a-crash-course-on-serverless-apis-with-express-and-mongodb-77774f7730fe>
+
 <https://news.ycombinator.com/item?id=17523480>
 
 <https://www.youtube.com/watch?v=mUzsYt3Bj08> AWS Docker
