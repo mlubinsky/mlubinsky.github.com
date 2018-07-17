@@ -74,9 +74,6 @@
     VC4_CMA_SIZE_raspberrypi ?= "cma-64"
 
 
-
-
-
 .rpi-build/conf/local.conf  has variable MACHINE.
 
 The MACHINE variable is used to determine the target architecture and various compiler tuning flags.
@@ -101,7 +98,11 @@ The choices for MACHINE are
 ## Raspberry . pi/raspberry
 
     sudo raspi-config
+    sudo apt-get install -y raspberrypi-ui-mods  # add GUI to Raspbian Lite
     
+<https://medium.com/@rosbots/ready-to-use-image-raspbian-stretch-ros-opencv-324d6f8dcd96>
+
+
 <https://habr.com/post/330160/>    
 
 <https://www.amazon.com/Coding-Bible-Manuscripts-Python-Raspberry/dp/1718943253>
