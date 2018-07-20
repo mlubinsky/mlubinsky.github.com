@@ -51,7 +51,8 @@
 
  <https://habr.com/company/abdoc/blog/352856/>
  
- TerraForm vs CloudFormation
+ ## TerraForm vs CloudFormation
+ <https://medium.com/@bradford_hamilton/deploying-containers-on-amazons-ecs-using-fargate-and-terraform-part-2-2e6f6a3a957f>
  
  До недавнего времени разработка бессерверных приложений сильно осложнялась тем, что не было средств полноценного локального тестирования lambda-функций и API. 
 При создании приложений нужно было или работать все время онлайн, редактируя код в браузере, 
