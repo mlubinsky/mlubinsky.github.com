@@ -6,6 +6,8 @@
 
 <https://habr.com/company/globalsign/blog/348988/> Mozilla IoT Things
 
+<https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance>
+
 ## Yocto
 
 <https://zatoichi-engineer.github.io/2017/10/02/yocto-on-osx.html>
