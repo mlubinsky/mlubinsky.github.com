@@ -8,6 +8,10 @@
 
 <https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance>
 
+## Math
+
+<https://www.youtube.com/watch?v=cqNqZ2fZlvA> Savvateev
+
 ## Yocto
 
 <https://zatoichi-engineer.github.io/2017/10/02/yocto-on-osx.html>
