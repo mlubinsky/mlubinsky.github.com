@@ -8,6 +8,8 @@
 
 <https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance>
 
+<https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92>
+
 ## Math
 
 <https://www.youtube.com/watch?v=cqNqZ2fZlvA> Savvateev
