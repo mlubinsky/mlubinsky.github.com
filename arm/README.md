@@ -2,6 +2,16 @@
 
 <https://github.com/uTensor/uTensor>
 
+## DS-5
+
+<https://www.youtube.com/playlist?list=PL2F72C57B07FC982D>
+
+<https://confluence.arm.com/pages/viewpage.action?pageId=212209815>
+
+<https://developer.arm.com/products/software-development-tools/ds-5-development-studio>
+
+<https://community.arm.com/tools/b/blog>
+
 ## Cross compilation for ARM
 
 <https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%BE%D1%81%D1%81-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D1%8F%D1%82%D0%BE%D1%80>
@@ -68,6 +78,139 @@ Temp/Humidity sensor uses a shared single wire connection for TX/RX so it’s ve
 
 <https://os.mbed.com/platforms/hexiwear/>
 
+## Yocto
+
+<https://zatoichi-engineer.github.io/2017/10/02/yocto-on-osx.html>
+
+<http://eastrivervillage.com/Raspberry-Pi-dishes-from-Yocto-cuisine/>
+
+<https://community.nxp.com/docs/DOC-94953> bitbake commands
+
+<https://www.udemy.com/raspberry-pi-with-embedded-linux-made-by-yocto/>
+
+<https://www.packtpub.com/virtualization-and-cloud/embedded-linux-development-using-yocto-projects-second-edition>
+
+<https://hub.packtpub.com/building-our-first-poky-image-raspberry-pi/>
+
+<http://www.instructables.com/id/Building-GNULinux-Distribution-for-Raspberry-Pi-Us/>
+
+<https://medium.com/@shigmas/yocto-and-pi-ef8f1aa70231>
+
+<http://git.yoctoproject.org/cgit/cgit.cgi/meta-raspberrypi>
+
+<http://www.jumpnowtek.com/rpi/Raspberry-Pi-Systems-with-Yocto.html>
+
+<https://himvis.com/bake-64-bit-raspberrypi3-images-with-yoctoopenembedded/>
+
+<https://github.com/cosmo0920/rpi3-yocto-conf>
+
+
+### find . -type f -print0 | xargs -0 grep mbed-cloud-client-rpi-machine
+
+./raspberrypi-conf/local.conf.sample:MACHINE = "mbed-cloud-client-rpi-machine"
+
+./rpi-build/conf/local.conf:MACHINE = "mbed-cloud-client-rpi-machine"
+
+
+### cat ./meta-mbed-cloud-client/conf/machine/mbed-cloud-client-rpi-machine.conf
+
+    #@TYPE: Machine
+    #@NAME: mbed cloud client machine based on RPi 3
+    #@DESCRIPTION: Machine configuration for the mbed cloud client device
+
+    #Were building on RPi3, so for the convenience, set the machine variable and include its conf
+    MACHINE = "raspberrypi3"
+    include conf/machine/raspberrypi3.conf    ## see next file
+
+    #Use our custom scard_image -class to overwrite the raspberrypi basic image
+    IMAGE_CLASSES += " mbed_sdcard_image-rpi "
+    IMAGE_FSTYPES += " mbed-sdimg "
+
+    UBOOT_MACHINE = "rpi_3_32b_config"
+
+
+### cat meta-raspberrypi/conf/machine/raspberrypi.conf
+
+    #@TYPE: Machine
+    #@NAME: RaspberryPi Development Board
+    #@DESCRIPTION: Machine configuration for the RaspberryPi http://www.raspberrypi.org/ Board
+
+    DEFAULTTUNE ?= "arm1176jzfshf"
+
+    require conf/machine/include/tune-arm1176jzf-s.inc
+    include conf/machine/include/rpi-base.inc
+
+    SERIAL_CONSOLE ?= "115200 ttyAMA0"
+
+    UBOOT_MACHINE = "rpi_config"
+    VC4_CMA_SIZE_raspberrypi ?= "cma-64"
+
+
+.rpi-build/conf/local.conf  has variable MACHINE.
+
+The MACHINE variable is used to determine the target architecture and various compiler tuning flags.
+
+See the conf files under meta-raspberrypi/conf/machine for details.
+
+The choices for MACHINE are
+
+    raspberrypi (BCM2835)
+    raspberrypi0 (BCM2835)
+    raspberrypi0-wifi (BCM2835)
+    raspberrypi2 (BCM2836 or BCM2837 v1.2+)
+    raspberrypi3 (BCM2837)
+    raspberrypi-cm (BCM2835)
+    raspberrypi-cm3 (BCM2837)
+    
+    
+~/yocto/mbed-cloud-client-yocto-setup-restricted/rpi-build/conf/local.conf
+
+    MACHINE = "mbed-cloud-client-rpi-machine"
+
+## Raspberry user/password:  pi/raspberry
+
+    sudo raspi-config
+    sudo apt-get install -y raspberrypi-ui-mods  # add GUI to Raspbian Lite
+    
+<https://medium.com/@rosbots/ready-to-use-image-raspbian-stretch-ros-opencv-324d6f8dcd96>
+
+
+<https://habr.com/post/330160/>    
+
+<https://www.amazon.com/Coding-Bible-Manuscripts-Python-Raspberry/dp/1718943253>
+
+<https://habr.com/company/unet/blog/407867/> MQTT on Rasb
+
+<https://habr.com/company/unet/blog/373929/> Node Red
+
+<https://etcher.io/>  SD card Writer
+
+    bootcode.bin
+    config.txt  
+    start.elf
+
+aarch64-none-elf  croos-compiler
+
+Под Linux: https://habr.com/post/349248/
+
+Загрузим и распакуем aarch64-none-elf-linux-x64.tar.gz. После этого переместим arch64-none-elf в /usr/local/bin:
+wget https://web.stanford.edu/class/cs140e/files/aarch64-none-elf-linux-x64.tar.gz
+
+    tar -xzvf aarch64-none-elf-linux-x64.tar.gz
+    sudo mv aarch64-none-elf /usr/local/bin
+    
+Добавим /usr/local/bin/aarch64-none-elf/bin к переменной окружения PATH. Как именно — это зависит от вашего конкретного диструбутива Linux. В большинстве случаев следует добавить в ~/.profile следующее:
+
+    PATH="/usr/local/bin/aarch64-none-elf/bin:$PATH"
+Проверяем, всё ли нормально. В качетве вывода мы должны получить версию gcc и всё такое.
+
+    aarch64-none-elf-gcc --version
+
+Можно собрать самому из исходников, если такое желание возникнет. Подробнее вот тут.
+
+<https://habr.com/post/357968/>    Pi 3 Model B+
+
+<https://habr.com/post/320450/>
 
 ## TLS MQTT 
 
@@ -209,7 +352,7 @@ And then set it as the device certificate using mbedtls_ssl_conf_own_cert()
 <https://tls.mbed.org/kb>
 
 
-## Wikipedia
+## Wikipedia : private/public keys
 
 <https://en.wikipedia.org/wiki/Public_key_certificate>
 
@@ -249,7 +392,7 @@ And then set it as the device certificate using mbedtls_ssl_conf_own_cert()
 
 <https://libraries.io/search?q=mbed>   Github projects
 
-## Integration platform
+## IoT Integration platform
 <https://thingsboard.io/>
 
 <https://www.blynk.cc/>
@@ -284,7 +427,7 @@ https://os.mbed.com/docs/latest/tools/index.html
 
 <https://docs.mbed.com/docs/mbed-os-handbook/en/5.2/advanced/config_system/>
 
-## Online compiler
+## Mbed Online compiler
 
 <https://os.mbed.com/compiler>
 
@@ -319,8 +462,6 @@ or  <https://github.com/osx-cross/homebrew-arm>    GNU toolchain for ARM Cortex-
 ## MBED-CLI 
 
 <https://docs.mbed.com/docs/mbed-os-handbook/en/latest/dev_tools/cli/>
-
- 
 
 Updating mbed OS
 
@@ -519,7 +660,7 @@ https://medium.com/@jparreira/receiving-aws-iot-messages-in-your-browser-using-w
 
 https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=mbed-cli&starCount=0
 
-## IDE
+## Embedded programming IDE
 
 <https://habr.com/post/358682/>    platformIO
 
@@ -599,61 +740,7 @@ https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processor
  
     minicom -D /dev/tty.usbmodem14412
  
-TODO:  use NetworkInterface 
- 
-##      Code 
 
-    #include "mbed.h"
-    #define PRINT pc.printf
-
-    Serial pc(USBTX, USBRX);
-    pc.baud(115200);
-    PRINT("Hello");
-
-
-
-
-    #include "mbed.h"
-    #include "EthernetInterface.h"
-    Serial pc(USBTX, USBRX);      
-    EthernetInterface eth;
-    DigitalOut led1(LED1);
-    // https://docs.mbed.com/docs/mbed-os-api-ref/en/latest/APIs/communication/ethernet/
-    // https://github.com/ARMmbed/mbed-os-example-sockets/blob/master/main.cpp 
-
-    // main() runs in its own thread in the OS
-    int main() {
-      int err1=0;
-      int err2=0;
-    
-      //setup ethernet interface
-      //err1 = eth.init(); //Use DHCP -- is it required???
-      //NetworkInterface* network_interface = eth.connect(); // network_interface will be NULLPTR when connection fails
-      err2 = eth.connect();
-    
-    //if (network_interface) {
-       //err2 = eth.connect();
-       const char *ip =   (err2 == 0) ? eth.get_ip_address()  : " ERROR1" ;
-       const char *mac = (err2 == 0) ? eth.get_mac_address() : " ERROR2" ;
-       //const char* ip = network_interface->get_ip_address();
- 
-    while (true) {
-        led1 = !led1;
-        wait(0.5);
-        if ( err1==0 && err2 == 0){
-           pc.printf("SUCCESS  \n\r");
-           pc.printf("IP AGAIN address is: %s\n", ip ? ip : "No IP");
-           pc.printf("MAC address is: %s\n", mac ? mac : "No MAC");    
-           
-        }   
-        else
-          pc.printf("ERRR  \n\r");
-        
-    }
-    }
-        
-    }
-    }
 
 ## DLMS
 
