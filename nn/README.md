@@ -22,6 +22,8 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 ## Image processing
 <https://habr.com/company/intel/blog/415811/>   NN for image processing
 
+<https://habr.com/company/intel/blog/417809/>
+
 <https://habr.com/post/416777/>
 
 <https://habr.com/hub/image_processing/>
