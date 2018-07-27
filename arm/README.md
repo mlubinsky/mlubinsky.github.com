@@ -1,5 +1,7 @@
 ## Tensorflow on ARM
 
+<https://towardsdatascience.com/why-machine-learning-on-the-edge-92fac32105e6>
+
 <https://github.com/uTensor/uTensor>
 
 ## DS-5
