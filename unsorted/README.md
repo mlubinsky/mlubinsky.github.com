@@ -28,6 +28,8 @@
 
 <https://github.com/donnemartin/system-design-primer>
 
+<http://www.acodersjourney.com/2018/07/system-design-interview-load-balancing/>
+
 <https://engineering.videoblocks.com/web-architecture-101-a3224e126947>
 
 <https://news.ycombinator.com/item?id=17522362>
