@@ -23,6 +23,7 @@ g++ -std=c++11 boolean_matrix.cpp
 <https://blog.nelhage.com/post/three-kinds-of-leaks/>
 
 <https://habr.com/company/pvs-studio/blog/414467/>
+
 ### Constructor
 
 A derived class constructor always calls a base class constructor.
@@ -107,15 +108,15 @@ vector <vector <int> > grid (3, vector(4,0))    //  grid size: 3x4 initialized b
 
 <https://www.techsoftpl.com/matrix/index.php>
 
-https://github.com/lindahua/light-matrix
+<https://github.com/lindahua/light-matrix>
 
 <http://matrix.drque.net/>
 
-https://www.mrericsir.com/blog/technology/c-2d-generic-array-class/
+<https://www.mrericsir.com/blog/technology/c-2d-generic-array-class/>
 
-https://hackernoon.com/c-investigation-arrays-vs-vectors-e9ba864468b6
+<https://hackernoon.com/c-investigation-arrays-vs-vectors-e9ba864468b6>
 
-https://www.youtube.com/watch?v=tJRGKR4_yAM
+<https://www.youtube.com/watch?v=tJRGKR4_yAM>
 
 https://www.codeproject.com/Articles/3613/A-generic-reusable-and-extendable-matrix-class
 
@@ -145,7 +146,7 @@ https://www.codeproject.com/Articles/3613/A-generic-reusable-and-extendable-matr
 
 <http://thispointer.com/c11-multithreading-tutorial-series/>
 
-https://www.codeproject.com/Articles/1177478/Thread-Wrapper-CPP
+<https://www.codeproject.com/Articles/1177478/Thread-Wrapper-CPP>
 
 http://thispointer.com/c11-multithreading-part-7-condition-variables-explained/
 
@@ -169,6 +170,7 @@ https://stackoverflow.com/questions/43309333/stdshared-mutex-with-stdshared-lock
 
 https://www.codeproject.com/Articles/1183423/We-make-a-std-shared-mutex-times-faster
 
+<http://www.acodersjourney.com/2017/08/top-20-cplusplus-multithreading-mistakes/>
 
 ### Serialization
 
