@@ -6,6 +6,8 @@
 
 <https://news.ycombinator.com/item?id=17462043>
 
+<https://www.stavros.io/posts/kubernetes-101/>
+
 ## Postgres on AWS
 
 <https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html>
