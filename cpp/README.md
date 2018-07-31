@@ -8,6 +8,8 @@
 
 <https://habrahabr.ru/post/182920/>
 
+<https://habr.com/company/pvs-studio/blog/418645/> Conference
+
 <https://www.codeproject.com/Articles/1170503/The-Impossibly-Fast-Cplusplus-Delegates-Fixed>
 
 clang++ -Wall -std=c++11 boolean_matrix.cpp -o test
