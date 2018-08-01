@@ -364,6 +364,8 @@ And then set it as the device certificate using mbedtls_ssl_conf_own_cert()
 
 <https://en.wikipedia.org/wiki/Transport_Layer_Security>
 
+<https://habr.com/post/418857/> . check certs
+
 ## MBED 
 
 <https://phodal.github.io/awesome-iot/>
