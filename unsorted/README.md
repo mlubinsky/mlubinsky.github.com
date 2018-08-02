@@ -2,6 +2,8 @@
 
 <https://habr.com/post/418867/> Dinamic programming
 
+<https://hackernoon.com/dynamic-programming-for-brute-forcers-36f26c2466cf>
+
 <http://www.cmsmagazine.ru/library/items/programming/80-problems-with-it-interviews/>
 
 <https://news.ycombinator.com/item?id=17202615> some youtube channels
