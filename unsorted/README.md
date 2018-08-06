@@ -1,8 +1,15 @@
 <https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed>
 
+
+https://dev.to/s_awdesh  duplicates in array, dual pivot sort 
+
+## Dynamic programming
+
 <https://habr.com/post/418867/> Dinamic programming
 
 <https://hackernoon.com/dynamic-programming-for-brute-forcers-36f26c2466cf>
+
+
 
 <http://www.cmsmagazine.ru/library/items/programming/80-problems-with-it-interviews/>
 
