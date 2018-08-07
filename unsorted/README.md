@@ -9,6 +9,10 @@ https://dev.to/s_awdesh  duplicates in array, dual pivot sort
 
 <https://hackernoon.com/dynamic-programming-for-brute-forcers-36f26c2466cf>
 
+<https://medium.com/@codingfreak/top-50-dynamic-programming-practice-problems-4208fed71aa3>
+
+https://lukasmericle.github.io/dynprotut/
+
 
 
 <http://www.cmsmagazine.ru/library/items/programming/80-problems-with-it-interviews/>
