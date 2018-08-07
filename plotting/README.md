@@ -3,6 +3,7 @@
 
 <https://sadanand-singh.github.io/posts/interactivedatavis/>
 
+<http://holoviews.org/>
 
 ## Mosquitto  
 $ mosquitto -c /path/to/mosquitto.conf
