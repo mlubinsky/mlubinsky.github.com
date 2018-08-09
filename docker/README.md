@@ -3,6 +3,8 @@
 
 <https://aws.amazon.com/ecr/>
 
+<https://www.youtube.com/watch?v=8bytAYy22LM&feature=youtu.be>
+
 Download image explicitly: docker pull imageName
 or implicitly when starting container.
 Containers are the instances of images 
@@ -27,7 +29,8 @@ Child image : apply add-in to parent
 ## Create Dockerfile and make the image
 
 Команда docker build    принимает опциональный тег с флагом -t и путь до директории, в которой лежит Dockerfile.
-Username in "docker build" должен соответствовать тому, что использовался при регистрации на Docker hub.  
+Username in "docker build" должен соответствовать тому, что использовался при регистрации на Docker hub. 
+
     docker build -t mlubinsky/myimagenamehere .
     docker push mlubinsky/catnip
     
