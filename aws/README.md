@@ -20,6 +20,8 @@
 
 ## Postgres on AWS
 
+<https://www.percona.com/blog/2018/07/17/when-should-i-use-amazon-aurora-and-when-should-i-use-rds-mysql/>
+
 <https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html>
 
 <https://gist.github.com/juliandunn/15ac4d5e1c96645ee133> 
