@@ -1,3 +1,6 @@
+## Deep Learning
+
+<https://news.ycombinator.com/item?id=17750791>
 
 ## TensorFlow
  
@@ -9,13 +12,14 @@ https://docs.devicehive.com/docs
 https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html
 
 Nilolenko DeepLearning book
-<https://www.amazon.com/Deep-Learning-Applications-Using-Python/dp/1484235150/>  BOOK
+<https://www.amazon.com/Deep-Learning-Applications-Using-Python/dp/1484235150/>   
 
-https://medium.com/tensorflow/introducing-tensorflow-probability-dca4c304e245
+<https://medium.com/tensorflow/introducing-tensorflow-probability-dca4c304e245>
 
 
 http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.66230&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false
  
+## RNN LSTM
 
 https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RNN / LSTM use Attention Networks
 
