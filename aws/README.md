@@ -1,4 +1,14 @@
+<https://www.confluent.io/blog/decoupling-systems-with-apache-kafka-schema-registry-and-avro/>
+
 ## Kubernetes
+
+<https://www.confluent.io/blog/getting-started-apache-kafka-kubernetes/>
+
+<https://hackernoon.com/a-tale-of-cloud-containers-and-kubernetes-b6fb18edcfcd>
+
+<https://www.infoq.com/presentations/serverless-containers-cloud-apps> 
+
+<https://www.infoq.com/presentations/serverless-patterns-antipatterns>
 
 <https://habr.com/company/flant/blog/415393/>
 
