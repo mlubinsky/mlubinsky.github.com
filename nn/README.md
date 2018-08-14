@@ -24,6 +24,9 @@ http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&re
 https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RNN / LSTM use Attention Networks
 
 ## Image processing
+
+<http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html>
+
 <https://habr.com/company/intel/blog/415811/>   NN for image processing
 
 <https://habr.com/company/intel/blog/417809/>
