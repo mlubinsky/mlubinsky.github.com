@@ -20,9 +20,10 @@ PIP - python package manager   https://pypi.org/project/pip/
 
 a) globally sudo  -H 
 b) locally  pip install --user .   Install to the Python user install directory for your platform. Typically ~/.local/,
+If you use --user option then package gets installed in user's folder. This can be found using:
 
-
-python -m site --user-base
+python -m site --user-site .  /// Users/miclub01/Library/Python/2.7/lib/python/site-packages
+python -m site --user-base .  // /Users/miclub01/Library/Python/2.7
 
 python -c 'import sys; print(sys.path)'  |  tr ',' '\n'
 pip –version                 should point to same python
@@ -31,17 +32,23 @@ CONDA and MINICONDA
 ---------------------
 
 
-VIRTUAL ENVIRONMENT .   https://pypi.org/project/virtualenv/
---------------------
+SITE PACKAGES  
+-------------
 Most system packages are stored in a child directory of the path stored in sys.prefix
 import sys
 sys.prefix
 
-third party packages installed using pip are typically placed in one of the directories pointed to by site.getsitepackages:
+Third-party packages installed using pip are typically placed in one of the directories 
+pointed to by site.getsitepackages:
 
 import site
 site.getsitepackages()
 
+Unix(pure python): prefix/lib/pythonX.Y/site-packages
+Unix (non-pure, may be C++): exec-prefix/lib/pythonX.Y/site-packages
+
+VIRTUAL ENVIRONMENT .   https://pypi.org/project/virtualenv/
+--------------------
 
 pip install virtualenv
 virtualenv  v1
