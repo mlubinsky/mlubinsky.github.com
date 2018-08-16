@@ -31,9 +31,24 @@ CONDA and MINICONDA
 ---------------------
 
 
-VIRTUAL ENVIRONMENT
+VIRTUAL ENVIRONMENT .   https://pypi.org/project/virtualenv/
 --------------------
+Most system packages are stored in a child directory of the path stored in sys.prefix
+import sys
+sys.prefix
 
+third party packages installed using pip are typically placed in one of the directories pointed to by site.getsitepackages:
+
+import site
+site.getsitepackages()
+
+
+pip install virtualenv
+virtualenv  v1
+source v1/bin/activate
+echo $PATH
+...
+deactivate
 
 
 DIFFERENT PYTHON VERSIONS ON SAME MACHINE
