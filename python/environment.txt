@@ -32,6 +32,8 @@ CONDA and MINICONDA
 ---------------------
 
 
+python -c "import os, sys; print(os.linesep.join(sys.path))" 
+
 SITE PACKAGES  
 -------------
 Most system packages are stored in a child directory of the path stored in sys.prefix
