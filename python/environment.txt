@@ -22,8 +22,8 @@ a) globally sudo  -H
 b) locally  pip install --user .   Install to the Python user install directory for your platform. Typically ~/.local/,
 If you use --user option then package gets installed in user's folder. This can be found using:
 
-python -m site --user-site .  /// Users/miclub01/Library/Python/2.7/lib/python/site-packages
-python -m site --user-base .  // /Users/miclub01/Library/Python/2.7
+python -m site --user-site   # Users/miclub01/Library/Python/2.7/lib/python/site-packages
+python -m site --user-base   # /Users/miclub01/Library/Python/2.7
 
 python -c 'import sys; print(sys.path)'  |  tr ',' '\n'
 pip –version                 should point to same python
@@ -31,6 +31,23 @@ pip –version                 should point to same python
 CONDA and MINICONDA
 ---------------------
 
+
+How python finds its modules
+-----------------------------
+import mymodule
+When the interpreter executes the above import statement, 
+it searches for mymodule.py in a list of directories assembled from the following sources:
+
+1) The directory from which the input script was run or the current directory if the interpreter is being run interactively
+2) The list of directories contained in the PYTHONPATH environment variable, if it is set. (The format for PYTHONPATH is OS-dependent but should mimic the PATH environment variable.)
+3) An installation-dependent list of directories configured at the time Python is installed
+
+
+
+A module is a single python file, while a package is a folder containing python files, 
+accompanied by a (can be empty) file named __init__.py, to tell python it is a package to import modules from.
+
+By default, Python looks for its modules and packages in $PYTHONPATH:
 
 python -c "import os, sys; print(os.linesep.join(sys.path))" 
 
