@@ -6,6 +6,8 @@ Header
    and ...
 """
 
+
+
 ENVIRONMENT VARIABLES
 -----------------------
 https://docs.python.org/3/using/cmdline.html#environment-variables
@@ -32,7 +34,7 @@ CONDA and MINICONDA
 ---------------------
 
 
-How python finds its modules
+How python finds its modules . https://realpython.com/python-modules-packages/
 -----------------------------
 import mymodule
 When the interpreter executes the above import statement, 
@@ -50,6 +52,12 @@ accompanied by a (can be empty) file named __init__.py, to tell python it is a p
 By default, Python looks for its modules and packages in $PYTHONPATH:
 
 python -c "import os, sys; print(os.linesep.join(sys.path))" 
+
+MODULES and PACKAGES
+---------------------
+
+__init__.py
+python -m
 
 SITE PACKAGES  
 -------------
@@ -85,24 +93,67 @@ pip
 
 PEP8
 ------
+https://blog.sideci.com/about-style-guide-of-python-and-linter-tool-pep8-pyflakes-flake8-haking-pyling-7fdbe163079d
+https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2
+https://media.readthedocs.org/pdf/flake8/latest/flake8.pdf
 pyflake
 pip3 install flake8
 pylint
-
-
-MODULES and PACKAGES
----------------------
-
-__init__.py
-python -m
 
 TESTING
 --------
 
 
+http://pythonwise.blogspot.com/2015/01/python-m.html
+  `if __name__ == "__main__":` constructs but, of course, many files simply use that to expose tests rather than useful functionality 
+
+
+
+
+
 CentOS
 -------
 https://linuxize.com/post/how-to-install-python-3-on-centos-7/
+
+Editors settings
+----------------
+
+https://stackoverflow.com/questions/18948491/running-python-code-in-vim
+
+https://realpython.com/vim-and-python-a-match-made-in-heaven/
+http://liuchengxu.org/posts/use-vim-as-a-python-ide/
+https://www.fullstackpython.com/vim.html
+
+" enable syntax highlighting
+syntax enable
+
+" show line numbers
+set number
+
+" set tabs to have 4 spaces
+set ts=4
+
+" indent when moving to the next line while writing code
+set autoindent
+
+" expand tabs into spaces
+set expandtab
+
+" when using the >> or << commands, shift lines by 4 spaces
+set shiftwidth=4
+
+" show a visual line under the cursor's current line
+set cursorline
+
+" show the matching part of the pair for [] {} and ()
+set showmatch
+
+" enable all Python syntax highlighting features
+let python_highlight_all = 1
+
+
+https://realpython.com/setting-up-sublime-text-3-for-full-stack-python-development/
+
 
 
 
