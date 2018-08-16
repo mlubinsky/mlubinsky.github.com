@@ -124,6 +124,9 @@ https://realpython.com/vim-and-python-a-match-made-in-heaven/
 http://liuchengxu.org/posts/use-vim-as-a-python-ide/
 https://www.fullstackpython.com/vim.html
 
+https://gist.github.com/jordanorelli/1182910
+http://vim.wikia.com/wiki/Keep_your_vimrc_file_clean
+
 " enable syntax highlighting
 syntax enable
 
