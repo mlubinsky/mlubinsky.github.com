@@ -1,6 +1,10 @@
 Header
--- utf-8 
-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""Module documentation goes here
+   and here
+   and ...
+"""
 
 ENVIRONMENT VARIABLES
 -----------------------
@@ -11,16 +15,20 @@ PYTHONHOME
 PYTHON_BIN_PATH
 
 
-PIP - python package manager
+PIP - python package manager   https://pypi.org/project/pip/
 ----
 
 a) globally sudo  -H 
-b)locally --user
+b) locally  pip install --user .   Install to the Python user install directory for your platform. Typically ~/.local/,
 
 
+python -m site --user-base
 
 python -c 'import sys; print(sys.path)'  |  tr ',' '\n'
-pip –version                 dhould point to same python
+pip –version                 should point to same python
+
+CONDA and MINICONDA
+---------------------
 
 
 VIRTUAL ENVIRONMENT
