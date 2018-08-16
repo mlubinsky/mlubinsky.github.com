@@ -1,0 +1,59 @@
+Header
+-- utf-8 
+
+
+ENVIRONMENT VARIABLES
+-----------------------
+https://docs.python.org/3/using/cmdline.html#environment-variables
+
+PYTHONPATH
+PYTHONHOME
+PYTHON_BIN_PATH
+
+
+PIP - python package manager
+----
+
+a) globally sudo  -H 
+b)locally --user
+
+
+
+python -c 'import sys; print(sys.path)'  |  tr ',' '\n'
+pip –version                 dhould point to same python
+
+
+VIRTUAL ENVIRONMENT
+--------------------
+
+
+
+DIFFERENT PYTHON VERSIONS ON SAME MACHINE
+------------------------------------------
+pip3 
+pip
+
+
+PEP8
+------
+pyflake
+pip3 install flake8
+pylint
+
+
+MODULES and PACKAGES
+---------------------
+
+__init__.py
+python -m
+
+TESTING
+--------
+
+
+CentOS
+-------
+https://linuxize.com/post/how-to-install-python-3-on-centos-7/
+
+
+
