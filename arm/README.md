@@ -1,3 +1,5 @@
+<https://habr.com/post/420435/>
+
 ## Tensorflow on ARM
 
 <https://towardsdatascience.com/why-machine-learning-on-the-edge-92fac32105e6>
