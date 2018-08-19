@@ -3,6 +3,13 @@
 
 <https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed>
 
+
+## Consistent Hashing
+
+https://medium.com/@dgryski/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae8 Consistent hashing
+https://dzone.com/articles/simple-magic-consistent
+
+
 <https://dev.to/s_awdesh> duplicates in array, dual pivot sort
 
 ##  Dynamic programming
