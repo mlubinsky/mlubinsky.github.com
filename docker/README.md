@@ -3,6 +3,8 @@
 
 <https://aws.amazon.com/ecr/>
 
+<https://itnext.io/3-simple-tricks-for-smaller-docker-images-f0d2bda17d1e>
+
 <http://testdriven.io/> $40 Microservices with Docker Flask React
 
 <https://www.youtube.com/watch?v=8bytAYy22LM&feature=youtu.be>
