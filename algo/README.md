@@ -1,6 +1,8 @@
 
 <https://habr.com/post/419725/> Non-symmetric dime simulation
 
+<https://habr.com/post/420605/>
+
 <https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed>
 
 
