@@ -37,6 +37,9 @@
 <https://dev.to/frosnerd/deploying-and-benchmarking-an-aws-rds-mysql-instance-2faf>  
 
 ## AWS
+
+<https://habr.com/company/jugru/blog/417943/>
+
 <https://tech.trivago.com/2018/07/13/aws-kinesis-with-lambdas-lessons-learned/>
 
 <https://hackernoon.com/a-crash-course-on-serverless-apis-with-express-and-mongodb-77774f7730fe>
