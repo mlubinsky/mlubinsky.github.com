@@ -1,5 +1,7 @@
 ## Time series
 
+<https://towardsdatascience.com/forecasting-with-python-and-tableau-dd37a218a1e5>
+
 <https://www.analyticsvidhya.com/blog/2018/02/time-series-forecasting-methods/>
 
 <https://www.digitalocean.com/community/tutorial_series/time-series-visualization-and-forecasting>
