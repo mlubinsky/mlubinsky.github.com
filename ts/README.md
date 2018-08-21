@@ -1,8 +1,12 @@
 ## Time series
 
+<https://trainings.analyticsvidhya.com/dashboard>  Class: creating time Series Forecast with python
+
+ 
+
 <https://towardsdatascience.com/forecasting-with-python-and-tableau-dd37a218a1e5>
 
-<https://www.analyticsvidhya.com/blog/2018/02/time-series-forecasting-methods/>
+<https://www.analyticsvidhya.com/blog/2018/02/time-series-forecasting-methods/> (Python)
 
 <https://www.digitalocean.com/community/tutorial_series/time-series-visualization-and-forecasting>
 
