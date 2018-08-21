@@ -1,3 +1,4 @@
+<https://habr.com/post/419945/> Google interview
 
 <https://habr.com/post/419725/> Non-symmetric dime simulation
 
