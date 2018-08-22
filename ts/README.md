@@ -1,5 +1,11 @@
 ## Time series
 
+
+Time series problem is different from a regression problem in following ways:
+
+1) The main difference is that a time series is time dependent. So the basic assumption of a linear regression model that the observations are independent doesn’t hold in this case.
+2) Along with an increasing or decreasing trend, most Time Series have some form of seasonality trends,i.e. variations specific to a particular time frame.
+
 <https://trainings.analyticsvidhya.com/dashboard>  Class: creating time Series Forecast with python
 
  
