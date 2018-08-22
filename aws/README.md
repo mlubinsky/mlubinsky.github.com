@@ -47,6 +47,8 @@ The other machines in the cluster are designated as nodes
 
 ## AWS
 
+<https://www.imaginarycloud.com/blog/aws-gold-infrastructure/>
+
 <https://habr.com/company/jugru/blog/417943/>
 
 <https://tech.trivago.com/2018/07/13/aws-kinesis-with-lambdas-lessons-learned/>
@@ -78,6 +80,9 @@ The other machines in the cluster are designated as nodes
  <https://habr.com/company/abdoc/blog/352856/>
  
  ## TerraForm vs CloudFormation
+ 
+ <https://habr.com/company/jugru/blog/420661/> 
+ 
  <https://medium.com/@bradford_hamilton/deploying-containers-on-amazons-ecs-using-fargate-and-terraform-part-2-2e6f6a3a957f>
  
  До недавнего времени разработка бессерверных приложений сильно осложнялась тем, что не было средств полноценного локального тестирования lambda-функций и API. 
