@@ -1,5 +1,7 @@
 <https://www.confluent.io/blog/decoupling-systems-with-apache-kafka-schema-registry-and-avro/>
 
+<https://towardsdatascience.com/from-big-data-to-micro-services-how-to-serve-spark-trained-models-through-aws-lambdas-ebe129f4849c>
+
 ## Kubernetes
 
 <https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes>
