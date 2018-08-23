@@ -24,7 +24,7 @@ Containers are the instances of images
     docker rm $(docker ps -a -q -f status=exited)
     docker rmi   #remove 
     docker images   # local images
-    docker pull ubuntu:12.04 # download from docher hub specific version
+    docker pull ubuntu:12.04 # download from docker hub specific version
     docker search # find image
     docker stop    
     
@@ -61,3 +61,31 @@ Username in "docker build" должен соответствовать тому,
 ## Windows
 
 <https://learnk8s.io/blog/installing-docker-and-kubernetes-on-windows>
+
+
+## Kubernetes
+
+[KUB]$ kubectl get nodes
+NAME       STATUS    ROLES     AGE       VERSION
+minikube   Ready     master    1d        v1.10.0
+ 
+[KUB]$ kubectl cluster-info
+Kubernetes master is running at https://192.168.99.100:8443
+KubeDNS is running at https://192.168.99.100:8443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+
+[KUB]$ kubectl get cs
+NAME                 STATUS    MESSAGE              ERROR
+controller-manager   Healthy   ok
+scheduler            Healthy   ok
+etcd-0               Healthy   {"health": "true"}
+
+[KUB]$ kubectl get pods
+NAME                                READY     STATUS    RESTARTS   AGE
+first-deployment-59f6bb4956-hpgcs   1/1       Running   0          1d
+
+[KUB]$ kubectl get svc
+NAME               TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+first-deployment   NodePort    10.99.220.26   <none>        80:30158/TCP   1d
+kubernetes         ClusterIP   10.96.0.1      <none>        443/TCP        1d
