@@ -1,5 +1,6 @@
 # Docker
 Example from <https://github.com/bobbywlindsey/docker-data-science/blob/master/Dockerfile>
+<https://towardsdatascience.com/docker-for-data-scientists-5732501f0ba4>
 
 ```
 # reference: https://hub.docker.com/_/ubuntu/
