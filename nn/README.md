@@ -2,6 +2,8 @@
 
 <https://news.ycombinator.com/item?id=17750791>
 
+<https://github.com/fotisk07/Deep-Learning-Coursera>
+
 ## TensorFlow
  
 <https://medium.com/@tensorflow>
