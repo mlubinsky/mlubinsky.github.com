@@ -8,7 +8,7 @@ Time series problem is different from a regression problem in following ways:
 
 <https://trainings.analyticsvidhya.com/dashboard>  Class: creating time Series Forecast with python
 
- 
+<https://www.youtube.com/watch?v=pl6u8PC_1Ns> 
 
 <https://towardsdatascience.com/forecasting-with-python-and-tableau-dd37a218a1e5>
 
