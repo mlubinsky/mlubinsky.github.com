@@ -28,6 +28,10 @@
 
 <https://www.youtube.com/watch?v=tpspO9K28PM&t=155s>
 
+<https://github.com/gaia-pipeline/gaia>
+
+<https://github.com/Jeffail/benthos>
+
 <http://www.acodersjourney.com/2018/07/system-design-interview-load-balancing/>
 
 <https://engineering.videoblocks.com/web-architecture-101-a3224e126947>
