@@ -1,9 +1,21 @@
 
+## Jupiter
+
+<https://github.com/Yorko/mlcourse_open/tree/master/jupyter_russian>     Jupiter Russian notebooks
+
+https://sadanand-singh.github.io/posts/pyplotsmultivariables/
+
 ## Python plotting
 
-<https://sadanand-singh.github.io/posts/interactivedatavis/>
+<https://codeburst.io/overview-of-python-data-visualization-tools-e32e1f716d10>
+
+<https://sadanand-singh.github.io/posts/interactivedatavis/> . Bokeh
 
 <http://holoviews.org/>
+
+<https://python-graph-gallery.com/>
+
+## JS
 
 <https://www.codewall.co.uk/the-best-javascript-data-visualization-charting-libraries/>
 
@@ -72,13 +84,12 @@ https://orange.biolab.si/
 
 https://elki-project.github.io/
 	
-https://codeburst.io/overview-of-python-data-visualization-tools-e32e1f716d10
+
 
 https://www.kaggle.com/learn/data-visualisation
 
 http://hypertools.readthedocs.io/en/latest/index.html	
 
-https://python-graph-gallery.com/
 
 https://datavizcatalogue.com/
 
@@ -97,7 +108,10 @@ https://github.com/MLWave/kepler-mapper
 https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-with-code-a2284bae952f
 
 ## Matplotlib
-http://blog.adnansiddiqi.me/tag/matplotlib/
+
+<https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-with-code-a2284bae952f>
+
+<http://blog.adnansiddiqi.me/tag/matplotlib/>
 
 https://medium.com/@kbrook10/day-4-data-visualization-how-to-use-seaborn-for-heatmaps-bf8070e3846e Heatmap
 
@@ -111,7 +125,7 @@ http://www.labri.fr/perso/nrougier/teaching/matplotlib/matplotlib.html
 
 https://www.numfocus.org/blog/matplotlib-lead-developer-explains-why-he-cant-fix-the-docs-but-you-can/
 
-https://github.com/antonkorbalev/simplesysmon  Matplotlib +  Flask
+<https://github.com/antonkorbalev/simplesysmon>  Matplotlib +  Flask
 
 http://queirozf.com/entries/matplotlib-pylab-pyplot-etc-what-s-the-different-between-these
 
