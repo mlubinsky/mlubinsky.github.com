@@ -1,5 +1,7 @@
 # Docker
+Example from <https://github.com/bobbywlindsey/docker-data-science/blob/master/Dockerfile>
 
+```
 # reference: https://hub.docker.com/_/ubuntu/
 FROM ubuntu:16.04
 
@@ -68,7 +70,7 @@ RUN mkdir ~/GitProjects && \
 WORKDIR /root/GitProjects
 EXPOSE 8888
 CMD jupyter lab --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token='data-science'
-
+```
 
 <https://medium.freecodecamp.org/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882>
 
