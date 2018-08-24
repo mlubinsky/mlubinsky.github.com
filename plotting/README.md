@@ -5,6 +5,8 @@
 
 <http://holoviews.org/>
 
+<https://www.codewall.co.uk/the-best-javascript-data-visualization-charting-libraries/>
+
 ## Mosquitto  
 $ mosquitto -c /path/to/mosquitto.conf
 port 1883
