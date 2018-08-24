@@ -26,6 +26,8 @@
 
 <https://github.com/donnemartin/system-design-primer>
 
+<https://quickbooks-engineering.intuit.com/re-think-your-data-pipelines-in-the-decoupled-era-5b032bc8b779>
+
 <https://www.youtube.com/watch?v=tpspO9K28PM&t=155s>
 
 <https://github.com/gaia-pipeline/gaia>
