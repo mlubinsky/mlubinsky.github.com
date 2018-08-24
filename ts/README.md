@@ -12,6 +12,14 @@ Time series problem is different from a regression problem in following ways:
 
 <https://www.youtube.com/watch?v=9X_4i7zdSY8>
 
+<https://www.youtube.com/watch?v=9X_4i7zdSY8> Deep Learning
+
+<https://www.youtube.com/watch?v=9X_4i7zdSY8>  PyFlux
+
+<https://www.youtube.com/watch?v=VYpAodcdFfA> two Effective Algorithms for Time Series Forecasting
+
+<https://www.youtube.com/watch?v=Fm8zcOMJ-9E> tsfresh
+
 <https://towardsdatascience.com/forecasting-with-python-and-tableau-dd37a218a1e5>
 
 <https://www.analyticsvidhya.com/blog/2018/02/time-series-forecasting-methods/> (Python)
