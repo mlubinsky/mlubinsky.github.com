@@ -10,6 +10,8 @@ Time series problem is different from a regression problem in following ways:
 
 <https://www.youtube.com/watch?v=pl6u8PC_1Ns> 
 
+<https://www.youtube.com/watch?v=9X_4i7zdSY8>
+
 <https://towardsdatascience.com/forecasting-with-python-and-tableau-dd37a218a1e5>
 
 <https://www.analyticsvidhya.com/blog/2018/02/time-series-forecasting-methods/> (Python)
