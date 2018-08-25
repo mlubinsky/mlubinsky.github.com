@@ -4,6 +4,8 @@
 
 <https://habr.com/post/420605/>
 
+<https://discuss.codechef.com/questions/48877/data-structures-and-algorithms>
+
 <https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed>
 
 
