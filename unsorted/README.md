@@ -75,6 +75,8 @@
 
 <https://fitseven.ru/myschtsy/atlas-uprajneyniy/luchee-uprajnenie-na-press>
 
+<https://zen.yandex.ru/calisthenic>
+
 <https://www.youtube.com/watch?v=gWTvbXyg2HM>
 
 <https://www.youtube.com/watch?v=9zArtR4OhV8&list=PLbTEk_63h_nuEqmUugLqw0D_DHT813lgt&index=3>
