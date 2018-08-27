@@ -3,7 +3,7 @@
 
 <https://github.com/Yorko/mlcourse_open/tree/master/jupyter_russian>     Jupiter Russian notebooks
 
-https://sadanand-singh.github.io/posts/pyplotsmultivariables/
+<https://sadanand-singh.github.io/posts/pyplotsmultivariables/>
 
 ## Python plotting
 
@@ -15,9 +15,18 @@ https://sadanand-singh.github.io/posts/pyplotsmultivariables/
 
 <https://python-graph-gallery.com/>
 
+<https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-with-code-a2284bae952f>
+
+
 ## JS
 
 <https://www.codewall.co.uk/the-best-javascript-data-visualization-charting-libraries/>
+
+## Real-time plotting
+
+<https://pusher.com/tutorials/live-graph-d3>
+
+<https://itnext.io/javascript-real-time-visualization-of-high-frequency-streams-d6533c774794>
 
 ## Mosquitto  
 $ mosquitto -c /path/to/mosquitto.conf
@@ -53,9 +62,10 @@ https://github.com/mqttjs/MQTT.js
 https://jpmens.net/2014/07/03/the-mosquitto-mqtt-broker-gets-websockets-support/
 
 ## MQTT plotting
+
 https://tinker.yeoman.com.au/2015/05/11/simple-browser-based-graphical-display-of-mqtt-data/
 
-http://www.mqtt-dashboard.com/metrics.html
+<http://www.mqtt-dashboard.com/metrics.html>
 
 ## HighCharts
 
@@ -74,7 +84,7 @@ https://gist.github.com/vitormeriat/b6de7aa0a28af2b45f15c3d67721e051
 
 <https://habr.com/company/pixonic/blog/414921/>  Apache Zeppelin
 
-https://www.knime.com/
+<https://www.knime.com/>
 
 https://rapidminer.com/
 
@@ -104,8 +114,6 @@ https://github.com/mlubinsky/chart
 https://movio.co/en/blog/improving-with-sql-and-charts/
 
 https://github.com/MLWave/kepler-mapper
-
-https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-with-code-a2284bae952f
 
 ## Matplotlib
 
