@@ -18,8 +18,34 @@ ML BOOK with code:
  http://physics.bu.edu/~pankajm/ML-Notebooks/NotebooksforMLReview.zip - jupyter notebooks (zip) 
 
 
+## Scikit-learn
+
 https://www.interviewqs.com/blog/intro_to_scikit_learn
 
+import matplotlib.pyplot as plt
+from sklearn import linear_model
+import numpy as np
+from sklearn.metrics import mean_squared_error, r2_score
+# data:
+ar = np.array([[[1],[2],[3]], [[2],[4],[6]]]) # y=2*x
+x = ar[0,:]
+y = ar[1,:]
+
+reg = linear_model.LinearRegression()
+reg.fit(x,y)
+print('Coefficients: \n', reg.coef_)
+
+xTest = np.array([[4],[5],[6]])
+ytest =  np.array([[8],[10],[12]])
+preds = reg.predict(xTest)
+print("Mean squared error: %.2f" % mean_squared_error(ytest,preds))
+print("Variance score: %.2f" % r2_score(ytest,preds))
+plt.scatter(xTest,preds, color='black')
+plt.plot(xTest,preds,color='blue', linewidth=3)
+
+plt.show()
+
+## Links
 https://sandipanweb.wordpress.com/
 https://habr.com/company/intel/blog/417809/ . NN architectures for image recognition
 https://habr.com/company/nixsolutions/blog/417935/ памятки по искусственному интеллекту
