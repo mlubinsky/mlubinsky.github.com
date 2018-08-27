@@ -11,6 +11,8 @@ Time series problem is different from a regression problem in following ways:
  Mean Absolute Error (MAE) is the mean of the absolute values of the errors. 
  
 <http://mariofilho.com/create-simple-machine-learning-model-predict-time-series/> 
+
+<http://blog.ethanrosenthal.com/2018/03/22/time-series-for-scikit-learn-people-part2/>
   
 <http://mariofilho.com/how-to-predict-multiple-time-series-with-scikit-learn-with-sales-forecasting-example/>
 
