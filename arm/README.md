@@ -2,7 +2,23 @@
 
 <https://sysprogs.com/w/mbed-settings-extractor/>
 
+## AWS
+### S3
 <https://s3.console.aws.amazon.com/s3/buckets/mlubinsky/?region=us-east-2&tab=overview>
+### EC2
+<https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:search=i-0a35c9f8a92a39f8c;sort=dnsName>
+
+	
+InstanceID: i-0a35c9f8a92a39f8c
+Instance type: t2.small
+Zone: us-east-2c
+DNS:  ec2-18-223-44-124.us-east-2.compute.amazonaws.com
+IP4: 18.223.44.124
+
+chmod 400 aws_ec2_key_pair.pem
+ssh -i "aws_ec2_key_pair.pem" ubuntu@ec2-18-223-44-124.us-east-2.compute.amazonaws.com
+
+ 
 
 ## Tensorflow on ARM
 
