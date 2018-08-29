@@ -55,6 +55,8 @@ spec:
 
 <https://github.com/kubernetes/minikube>
 
+<https://habr.com/company/flant/blog/333470/>
+
 <https://mfarache.github.io/mfarache/Installing-Kubernetes-using-Minikube/>
 
 <https://github.com/scholzj/aws-minikube>
