@@ -35,6 +35,8 @@ first-deployment-59f6bb4956-hpgcs 1/1 Running 0 1d
 ## Pod
 <https://mfarache.github.io/mfarache/Understanding-Kubernetes-Pods/>
 
+<https://habr.com/company/flant/blog/415393/>
+
 YAML manifest file
 ```
 apiVersion: v1
@@ -75,7 +77,7 @@ spec:
 
 <https://www.infoq.com/presentations/serverless-patterns-antipatterns>
 
-<https://habr.com/company/flant/blog/415393/>
+
 
 <http://okigiveup.net/a-tutorial-introduction-to-kubernetes/>
 
