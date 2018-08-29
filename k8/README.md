@@ -36,7 +36,7 @@ first-deployment-59f6bb4956-hpgcs 1/1 Running 0 1d
 <https://mfarache.github.io/mfarache/Understanding-Kubernetes-Pods/>
 
 YAML manifest file
-
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -49,7 +49,8 @@ spec:
       - sleep
       - "3600"
     name: busybox
-    
+```
+
 ## Minikube
 
 <https://github.com/kubernetes/minikube>
