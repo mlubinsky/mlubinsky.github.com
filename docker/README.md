@@ -150,6 +150,8 @@ Username in "docker build" должен соответствовать тому,
 
 <https://www.youtube.com/watch?v=zeS6OyDoy78>
 
+<https://habr.com/company/flant/blog/420813/>
+
 [KUB]$ kubectl get nodes \
 NAME       STATUS    ROLES     AGE       VERSION \
 minikube   Ready     master    1d        v1.10.0  
@@ -166,7 +168,7 @@ controller-manager   Healthy   ok \
 scheduler            Healthy   ok \
 etcd-0               Healthy   {"health": "true"} 
 
-[KUB]$ kubectl get pods
+[KUB]$ kubectl get pods \
 NAME                                READY     STATUS    RESTARTS   AGE \
 first-deployment-59f6bb4956-hpgcs   1/1       Running   0          1d 
 
