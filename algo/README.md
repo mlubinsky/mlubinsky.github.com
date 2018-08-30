@@ -2,6 +2,8 @@
 
 <https://habr.com/post/419725/> Non-symmetric dime simulation
 
+<https://www.reddit.com/r/cpp/comments/9afpq7/whats_your_favorite_data_structure/>
+
 <https://habr.com/post/420605/>
 
 <https://discuss.codechef.com/questions/48877/data-structures-and-algorithms>
