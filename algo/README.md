@@ -12,10 +12,15 @@
 
 
 ## Consistent Hashing
+<https://www.toptal.com/big-data/consistent-hashing>
 
-https://medium.com/@dgryski/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae8 Consistent hashing
-https://dzone.com/articles/simple-magic-consistent
+<https://medium.com/@dgryski/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae8> Consistent hashing
 
+<https://dzone.com/articles/simple-magic-consistent>
+
+## Locality sensitive hashing
+
+<https://en.wikipedia.org/wiki/Locality-sensitive_hashing>
 
 <https://dev.to/s_awdesh> duplicates in array, dual pivot sort
 
