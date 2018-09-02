@@ -26,6 +26,10 @@
 
 <https://github.com/donnemartin/system-design-primer>
 
+<https://www.youtube.com/watch?v=x30DcBfCJRI>
+
+<https://www.youtube.com/watch?v=t2Ti-pZGy8I>
+
 <https://quickbooks-engineering.intuit.com/re-think-your-data-pipelines-in-the-decoupled-era-5b032bc8b779>
 
 <https://www.youtube.com/watch?v=tpspO9K28PM&t=155s>
