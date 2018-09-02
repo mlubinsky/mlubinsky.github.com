@@ -30,6 +30,8 @@
 
 ## Architecture
 
+<http://www.georgefairbanks.com/e-book/>
+
 <https://github.com/donnemartin/system-design-primer>
 
 <https://www.youtube.com/watch?v=x30DcBfCJRI>
