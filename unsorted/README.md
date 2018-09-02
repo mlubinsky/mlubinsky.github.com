@@ -11,6 +11,12 @@
 <https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92>
 
 
+## youtube programming
+
+<https://www.youtube.com/user/sentdex/videos>
+
+<https://www.youtube.com/user/schafer5/videos>
+
 ## Math
 
 <https://www.youtube.com/watch?v=cqNqZ2fZlvA> Savvateev
