@@ -10,6 +10,8 @@ Time series problem is different from a regression problem in following ways:
  Mean Absolute Percentage Error (MAPE)
  Mean Absolute Error (MAE) is the mean of the absolute values of the errors. 
  
+<https://www.altumintelligence.com/articles/a/Time-Series-Prediction-Using-LSTM-Deep-Neural-Networks>
+ 
 <http://mariofilho.com/create-simple-machine-learning-model-predict-time-series/> 
 
 <http://blog.ethanrosenthal.com/2018/03/22/time-series-for-scikit-learn-people-part2/>
