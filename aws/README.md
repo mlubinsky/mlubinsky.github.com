@@ -14,6 +14,8 @@
 
 <https://cloudacademy.com/learning-paths/cloud-academy-applying-machine-learning-and-ai-services-on-aws-181/>
 
+<https://aws.amazon.com/blogs/machine-learning/forecasting-time-series-with-dynamic-deep-learning-on-aws/>
+
 ## Kubernetes
 
 <https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes>
