@@ -14,6 +14,7 @@
 <https://aws.amazon.com/blogs/opensource/data-processing-pipeline-kinesis-kubeless/>
 
 ## ML on AWS
+<https://aws.amazon.com/iot-analytics/>
 
 <https://www.slideshare.net/AmazonWebServices/realtime-analytics-using-data-from-iot-devices-aws-online-tech-talks>
 
