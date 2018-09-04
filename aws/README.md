@@ -8,6 +8,9 @@
 
 <https://towardsdatascience.com/from-big-data-to-micro-services-how-to-serve-spark-trained-models-through-aws-lambdas-ebe129f4849c>
 
+
+<https://aws.amazon.com/blogs/opensource/data-processing-pipeline-kinesis-kubeless/>
+
 ## ML on AWS
 
 <https://cloudacademy.com/learning-paths/cloud-academy-introduction-to-machine-learning-on-aws-126/>
