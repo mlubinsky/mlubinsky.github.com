@@ -15,6 +15,8 @@
 
 ## ML on AWS
 
+<https://aws.amazon.com/quickstart/architecture/aws-industrial-time-series-data-connector/>
+
 <https://aws.amazon.com/blogs/iot/using-aws-iot-for-predictive-maintenance/>
 
 <https://cloudacademy.com/learning-paths/cloud-academy-introduction-to-machine-learning-on-aws-126/>
