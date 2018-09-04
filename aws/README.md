@@ -1,3 +1,5 @@
+
+
 <https://habr.com/post/421991/> free AWS
 
 <https://read.iopipe.com/lessons-from-building-a-serverless-data-pipeline-with-aws-kinesis-and-lambda-4d8cf0ebcbc9>
@@ -5,6 +7,12 @@
 <https://www.confluent.io/blog/decoupling-systems-with-apache-kafka-schema-registry-and-avro/>
 
 <https://towardsdatascience.com/from-big-data-to-micro-services-how-to-serve-spark-trained-models-through-aws-lambdas-ebe129f4849c>
+
+## ML on AWS
+
+<https://cloudacademy.com/learning-paths/cloud-academy-introduction-to-machine-learning-on-aws-126/>
+
+<https://cloudacademy.com/learning-paths/cloud-academy-applying-machine-learning-and-ai-services-on-aws-181/>
 
 ## Kubernetes
 
