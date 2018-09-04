@@ -13,6 +13,8 @@
 
 ## ML on AWS
 
+<https://aws.amazon.com/blogs/iot/using-aws-iot-for-predictive-maintenance/>
+
 <https://cloudacademy.com/learning-paths/cloud-academy-introduction-to-machine-learning-on-aws-126/>
 
 <https://cloudacademy.com/learning-paths/cloud-academy-applying-machine-learning-and-ai-services-on-aws-181/>
