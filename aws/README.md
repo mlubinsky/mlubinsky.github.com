@@ -2,6 +2,8 @@
 
 <https://habr.com/post/421991/> free AWS
 
+<https://habr.com/company/jugru/blog/417943/>
+
 <https://read.iopipe.com/lessons-from-building-a-serverless-data-pipeline-with-aws-kinesis-and-lambda-4d8cf0ebcbc9>
 
 <https://www.confluent.io/blog/decoupling-systems-with-apache-kafka-schema-registry-and-avro/>
