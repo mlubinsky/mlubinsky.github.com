@@ -20,6 +20,8 @@
 
 <https://aws.amazon.com/blogs/machine-learning/train-and-host-scikit-learn-models-in-amazon-sagemaker-by-building-a-scikit-docker-container/>
 
+<https://github.com/awslabs/amazon-sagemaker-examples/tree/master/advanced_functionality/scikit_bring_your_own/container>
+
 <https://medium.com/@julsimon/mastering-the-mystical-art-of-model-deployment-c0cafe011175>
 
 <https://towardsdatascience.com/how-to-deploy-a-machine-learning-model-on-aws-lambda-24c36dcaed20>
