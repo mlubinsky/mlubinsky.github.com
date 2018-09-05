@@ -16,6 +16,8 @@
 ## ML on AWS
 <https://aws.amazon.com/iot-analytics/>
 
+<http://sujitpal.blogspot.com/2018/04/aws-ml-week-and-adventures-with.html>
+
 <https://www.slideshare.net/AmazonWebServices/realtime-analytics-using-data-from-iot-devices-aws-online-tech-talks>
 
 <https://aws.amazon.com/quickstart/architecture/aws-industrial-time-series-data-connector/>
