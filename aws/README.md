@@ -19,6 +19,7 @@
 <http://sujitpal.blogspot.com/2018/04/aws-ml-week-and-adventures-with.html>
 
 <https://medium.com/@julsimon>
+<https://towardsdatascience.com/how-to-deploy-a-machine-learning-model-on-aws-lambda-24c36dcaed20>
 
 <https://aws.amazon.com/blogs/machine-learning/train-and-host-scikit-learn-models-in-amazon-sagemaker-by-building-a-scikit-docker-container/>
 
