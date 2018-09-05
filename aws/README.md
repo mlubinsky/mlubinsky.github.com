@@ -27,6 +27,8 @@
 
 <https://pypi.org/project/sagemaker/>
 
+<https://github.com/rtlee9/serveit/>
+
 <https://github.com/awslabs/amazon-sagemaker-examples/tree/master/advanced_functionality/scikit_bring_your_own/container>
 
 <https://medium.com/@julsimon/mastering-the-mystical-art-of-model-deployment-c0cafe011175>
