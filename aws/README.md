@@ -18,6 +18,8 @@
 <https://github.com/awslabs/amazon-sagemaker-examples>
 <http://sujitpal.blogspot.com/2018/04/aws-ml-week-and-adventures-with.html>
 
+<https://medium.com/@julsimon>
+
 <https://aws.amazon.com/blogs/machine-learning/train-and-host-scikit-learn-models-in-amazon-sagemaker-by-building-a-scikit-docker-container/>
 
 <https://github.com/awslabs/amazon-sagemaker-examples/tree/master/advanced_functionality/scikit_bring_your_own/container>
