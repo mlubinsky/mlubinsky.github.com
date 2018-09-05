@@ -22,6 +22,8 @@
 
 <https://medium.com/@julsimon/mastering-the-mystical-art-of-model-deployment-c0cafe011175>
 
+<https://towardsdatascience.com/how-to-deploy-a-machine-learning-model-on-aws-lambda-24c36dcaed20>
+
 <https://www.slideshare.net/AmazonWebServices/realtime-analytics-using-data-from-iot-devices-aws-online-tech-talks>
 
 <https://aws.amazon.com/quickstart/architecture/aws-industrial-time-series-data-connector/>
