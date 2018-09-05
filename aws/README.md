@@ -15,7 +15,7 @@
 
 ## ML on AWS
 <https://aws.amazon.com/iot-analytics/>
-
+<https://github.com/awslabs/amazon-sagemaker-examples>
 <http://sujitpal.blogspot.com/2018/04/aws-ml-week-and-adventures-with.html>
 
 <https://aws.amazon.com/blogs/machine-learning/train-and-host-scikit-learn-models-in-amazon-sagemaker-by-building-a-scikit-docker-container/>
