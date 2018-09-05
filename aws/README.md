@@ -18,6 +18,8 @@
 
 <http://sujitpal.blogspot.com/2018/04/aws-ml-week-and-adventures-with.html>
 
+<https://aws.amazon.com/blogs/machine-learning/train-and-host-scikit-learn-models-in-amazon-sagemaker-by-building-a-scikit-docker-container/>
+
 <https://www.slideshare.net/AmazonWebServices/realtime-analytics-using-data-from-iot-devices-aws-online-tech-talks>
 
 <https://aws.amazon.com/quickstart/architecture/aws-industrial-time-series-data-connector/>
