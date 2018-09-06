@@ -2,6 +2,8 @@
 
 <https://medium.com/containermind/a-beginners-guide-to-kubernetes-7e8ca56420b6>
 
+<https://habr.com/company/otus/blog/422179/>
+
 The machines in the Kubernetes cluster are each given a role within the Kubernetes ecosystem. One server (or a small group in highly available deployments) functions as the master server. This server acts as a gateway   for the cluster by exposing an API for users and clients, health checking other servers, deciding how best to split up and assign work (known as “scheduling”), and orchestrating communication between other components. The master server acts as the primary point of contact with the cluster and is responsible for most of the centralized logic Kubernetes provides. The other machines in the cluster are designated as nodes.
 
 <https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-interactive/>
