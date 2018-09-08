@@ -13,6 +13,7 @@ Lambda example
 
 <https://habr.com/company/jugru/blog/417943/>
 
+
 <https://read.iopipe.com/lessons-from-building-a-serverless-data-pipeline-with-aws-kinesis-and-lambda-4d8cf0ebcbc9>
 
 <https://www.confluent.io/blog/decoupling-systems-with-apache-kafka-schema-registry-and-avro/>
@@ -24,6 +25,9 @@ Lambda example
 
 ## ML on AWS
 <https://aws.amazon.com/iot-analytics/>
+
+
+<https://www.pluralsight.com/courses/tensorflow-aws-azure-gcp-deploying-models>
 
 <https://www.udemy.com/aws-machine-learning-a-complete-guide-with-python/>
 
