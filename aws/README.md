@@ -27,6 +27,10 @@ Lambda example
 
 <https://github.com/awslabs/amazon-sagemaker-examples>
 
+<https://github.com/Kenza-AI/sagify>
+
+<https://mc.ai/training-and-deploying-ml-dl-models-on-aws-sagemaker-made-simple/>
+
 <http://sujitpal.blogspot.com/2018/04/aws-ml-week-and-adventures-with.html>
 
 <https://medium.com/@julsimon>
