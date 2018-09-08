@@ -36,6 +36,8 @@
 
 <https://medium.com/@stephane.maarek/how-to-use-apache-kafka-to-transform-a-batch-pipeline-into-a-real-time-one-831b48a6ad85> Kafka
 
+<https://medium.com/hydrosphere-io/machine-learning-models-monitoring-architectures-part-0-ec58e338d87f>
+
 <http://www.georgefairbanks.com/e-book/>
 
 <https://github.com/donnemartin/system-design-primer>
