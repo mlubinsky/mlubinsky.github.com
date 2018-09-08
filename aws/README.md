@@ -25,6 +25,8 @@ Lambda example
 ## ML on AWS
 <https://aws.amazon.com/iot-analytics/>
 
+<https://www.udemy.com/aws-machine-learning-a-complete-guide-with-python/>
+
 <https://github.com/awslabs/amazon-sagemaker-examples>
 
 <https://github.com/Kenza-AI/sagify>
