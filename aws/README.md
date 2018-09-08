@@ -1,4 +1,12 @@
 
+Lambda example
+  import os,sys
+  import boto3
+  from my_submodule.models MyModels
+  
+  def handler(event, context):
+    ..
+
 
 <https://habr.com/post/421991/> free AWS
 
@@ -47,30 +55,7 @@
 
 <https://aws.amazon.com/blogs/machine-learning/forecasting-time-series-with-dynamic-deep-learning-on-aws/>
 
-## Kubernetes
 
-<https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes>
-
-<https://www.katacoda.com/courses/kubernetes>
-
-The machines in the Kubernetes cluster are each given a role within the Kubernetes ecosystem. One server (or a small group in highly available deployments) functions as the master server. This server acts as a gateway and brain for the cluster by exposing an API for users and clients, health checking other servers, deciding how best to split up and assign work (known as "scheduling"), and orchestrating communication between other components. The master server acts as the primary point of contact with the cluster and is responsible for most of the centralized logic Kubernetes provides.
-The other machines in the cluster are designated as nodes
-
-<https://www.confluent.io/blog/getting-started-apache-kafka-kubernetes/>
-
-<https://hackernoon.com/a-tale-of-cloud-containers-and-kubernetes-b6fb18edcfcd>
-
-<https://www.infoq.com/presentations/serverless-containers-cloud-apps> 
-
-<https://www.infoq.com/presentations/serverless-patterns-antipatterns>
-
-<https://habr.com/company/flant/blog/415393/>
-
-<http://okigiveup.net/a-tutorial-introduction-to-kubernetes/>
-
-<https://news.ycombinator.com/item?id=17462043>
-
-<https://www.stavros.io/posts/kubernetes-101/>
 
 ## Postgres on AWS
 
