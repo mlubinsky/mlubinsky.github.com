@@ -1,12 +1,13 @@
 
 Lambda example
+```
   import os,sys
   import boto3
   from my_submodule.models MyModels
   
   def handler(event, context):
     ..
-
+```
 
 <https://habr.com/post/421991/> free AWS
 
