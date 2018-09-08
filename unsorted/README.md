@@ -32,6 +32,8 @@
 
 ## Architecture
 
+<https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/>  Kafka
+
 <http://www.georgefairbanks.com/e-book/>
 
 <https://github.com/donnemartin/system-design-primer>
