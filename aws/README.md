@@ -13,6 +13,7 @@ Lambda example
 
 <https://habr.com/company/jugru/blog/417943/>
 
+<https://docs.aws.amazon.com/lambda/latest/dg/invoking-lambda-function.html>
 
 <https://read.iopipe.com/lessons-from-building-a-serverless-data-pipeline-with-aws-kinesis-and-lambda-4d8cf0ebcbc9>
 
