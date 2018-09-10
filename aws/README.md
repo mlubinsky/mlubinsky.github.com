@@ -31,6 +31,8 @@ Lambda example
 
 <https://www.studio.ml/zero-overhead-scalable-machine-learning-part-2/>
 
+<https://medium.com/akeneo-labs/machine-learning-workflow-with-sagemaker-b83b293337ff>
+
 <https://www.pluralsight.com/courses/tensorflow-aws-azure-gcp-deploying-models>
 
 <https://www.udemy.com/aws-machine-learning-a-complete-guide-with-python/>
