@@ -27,6 +27,7 @@ Lambda example
 ## ML on AWS
 <https://aws.amazon.com/iot-analytics/>
 
+<https://towardsdatascience.com/brewing-up-custom-ml-models-on-aws-sagemaker-e09b64627722>
 
 <https://www.pluralsight.com/courses/tensorflow-aws-azure-gcp-deploying-models>
 
