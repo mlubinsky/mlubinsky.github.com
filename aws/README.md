@@ -27,6 +27,8 @@ Lambda example
 ## ML on AWS
 <https://aws.amazon.com/iot-analytics/>
 
+<https://github.com/aws-samples/serverless-sagemaker-orchestration>
+
 <https://towardsdatascience.com/brewing-up-custom-ml-models-on-aws-sagemaker-e09b64627722>
 
 <https://www.studio.ml/zero-overhead-scalable-machine-learning-part-2/>
