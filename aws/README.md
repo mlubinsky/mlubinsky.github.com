@@ -29,6 +29,8 @@ Lambda example
 
 <https://towardsdatascience.com/brewing-up-custom-ml-models-on-aws-sagemaker-e09b64627722>
 
+<https://www.studio.ml/zero-overhead-scalable-machine-learning-part-2/>
+
 <https://www.pluralsight.com/courses/tensorflow-aws-azure-gcp-deploying-models>
 
 <https://www.udemy.com/aws-machine-learning-a-complete-guide-with-python/>
