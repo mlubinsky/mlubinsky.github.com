@@ -1,5 +1,6 @@
 ## Time series
 
+<https://otexts.org/fpp2/>   FORECASTING BOOK
 
 Time series problem is different from a regression problem in following ways:
 
