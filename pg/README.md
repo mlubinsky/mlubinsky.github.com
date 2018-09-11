@@ -3,3 +3,54 @@
 <https://pgdash.io/blog/postgres-configuration-cheatsheet.html>
 
 <https://wiki.postgresql.org/wiki/Things_to_find_out_about_when_moving_from_MySQL_to_PostgreSQL>
+
+
+https://brandur.org/postgres-default
+ 
+https://habr.com/post/419749/
+
+https://wiki.postgresql.org/wiki/PostgreSQL_vs_SQL_Standard
+
+https://pgdash.io/blog/postgres-features.html
+
+http://www.databasesoup.com/2018/04/new-annotated-config-files-for.html    configs
+
+https://severalnines.com/blog/postgresql-tuning-key-things-drive-performance
+
+https://blog.2ndquadrant.com/scaling-iot-time-series-data-postgres-bdr/ time based partitioning
+
+https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546
+
+https://www.youtube.com/watch?v=BgcJnurVFag Postgres at 20T and beyond
+
+https://news.ycombinator.com/item?id=17638169
+
+https://www.cybertec-postgresql.com/en/index-decreases-select-performance/#
+
+https://pgdash.io/blog/partition-postgres-11.html
+
+https://blog.timescale.com/scaling-partitioning-data-postgresql-10-explained-cd48a712a9a1
+
+https://www.justwatch.com/blog/post/debugging-postgresql-performance-the-hard-way/
+
+https://blog.algolia.com/building-real-time-analytics-apis/
+
+https://github.com/bytefish/PgBulkInsert
+
+https://severalnines.com/blog/my-favorite-postgresql-queries-and-why-they-matter
+
+https://pgdash.io/blog/postgres-features.html
+
+https://news.ycombinator.com/item?id=17356960
+
+https://www.citusdata.com/blog/2018/01/24/citus-and-pg-partman-creating-a-scalable-time-series-database-on-PostgreSQL/
+
+https://www.citusdata.com/blog/2016/09/09/pgcron-run-periodic-jobs-in-postgres/
+
+https://www.citusdata.com/blog/2018/06/14/scalable-incremental-data-aggregation/
+
+https://cldellow.com/2016/09/15/brin-indexes-in-postgres-9.5.html
+
+https://blog.getbotmetrics.com/150x-speedup-in-real-time-dashboards-with-postgres-9-5-2e987a5b906e
+
+https://www.citusdata.com/blog/2017/03/10/how-to-scale-postgresql-on-aws/
