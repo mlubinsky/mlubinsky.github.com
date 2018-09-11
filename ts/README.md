@@ -2,6 +2,8 @@
 
 <https://otexts.org/fpp2/>   FORECASTING BOOK
 
+<https://news.ycombinator.com/item?id=17950058>
+
 Time series problem is different from a regression problem in following ways:
 
 1) The main difference is that a time series is time dependent. So the basic assumption of a linear regression model that the observations are independent doesn’t hold in this case.
