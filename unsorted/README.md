@@ -32,6 +32,8 @@
 
 ## Architecture
 
+<https://thingsboard.io/docs/reference/architecture/>
+
 <https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/>  Kafka
 
 <https://medium.com/@stephane.maarek/how-to-use-apache-kafka-to-transform-a-batch-pipeline-into-a-real-time-one-831b48a6ad85> Kafka
