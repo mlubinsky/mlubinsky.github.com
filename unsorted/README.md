@@ -38,6 +38,8 @@
 
 <https://www.jowanza.com/blog/2018/9/8/real-time-station-tracking-ford-gobike-and-mapd>
 
+<https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/>
+
 <https://medium.com/hydrosphere-io/machine-learning-models-monitoring-architectures-part-0-ec58e338d87f>
 
 <http://www.georgefairbanks.com/e-book/>
