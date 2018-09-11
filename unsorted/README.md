@@ -34,6 +34,8 @@
 
 <https://thingsboard.io/docs/reference/architecture/>
 
+<http://highscalability.com/blog/2018/4/9/give-meaning-to-100-billion-events-a-day-the-analytics-pipel.html>
+
 <https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/>  Kafka
 
 <https://medium.com/@stephane.maarek/how-to-use-apache-kafka-to-transform-a-batch-pipeline-into-a-real-time-one-831b48a6ad85> Kafka
