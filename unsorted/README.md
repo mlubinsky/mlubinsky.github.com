@@ -52,6 +52,8 @@
 
 <https://www.youtube.com/watch?v=re6rDiYr1PQ>
 
+<https://www.youtube.com/watch?v=hO5zz-zeWkk>
+
 <https://fitseven.ru/myschtsy/atlas-uprajneyniy/luchee-uprajnenie-na-press>
 
 <https://zen.yandex.ru/calisthenic>
