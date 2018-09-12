@@ -1,4 +1,15 @@
 ## Big Data Architecture
+
+https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395 Release it (nigard)
+
+https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358
+sam newman's microservices (o reilly)
+
+https://www.amazon.com/Just-Enough-Software-Architecture-Risk-Driven/dp/0984618104
+Just enough software architecture (g. fairbanks)
+
+https://dataintensive.net/
+
 <https://medium.com/tag/streaming-analytics/archive>
 
 <https://habr.com/company/jugru/blog/421787/>
