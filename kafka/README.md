@@ -11,6 +11,54 @@
 
 <https://www.youtube.com/user/profyclub/videos>    HiLoad russian conf  
 
+
+https://thingsboard.io/docs/reference/architecture/ .   IoT
+
+
+https://www.jowanza.com/blog/2018/9/8/real-time-station-tracking-ford-gobike-and-mapd
+
+https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/
+
+https://medium.com/hydrosphere-io/machine-learning-models-monitoring-architectures-part-0-ec58e338d87f
+
+http://www.georgefairbanks.com/e-book/
+
+https://github.com/donnemartin/system-design-primer
+
+https://www.youtube.com/watch?v=x30DcBfCJRI
+
+https://www.youtube.com/watch?v=t2Ti-pZGy8I
+
+https://quickbooks-engineering.intuit.com/re-think-your-data-pipelines-in-the-decoupled-era-5b032bc8b779
+
+https://www.youtube.com/watch?v=tpspO9K28PM&t=155s
+
+https://github.com/gaia-pipeline/gaia
+
+https://github.com/Jeffail/benthos
+
+http://www.acodersjourney.com/2018/07/system-design-interview-load-balancing/
+
+https://engineering.videoblocks.com/web-architecture-101-a3224e126947
+
+https://news.ycombinator.com/item?id=17522362
+
+https://the-cloud-book.com/
+
+https://www.goodreads.com/book/show/25686275-the-art-of-scalability
+
+https://www.goodreads.com/book/show/18043011-clean-architecture
+
+## Jenkins
+https://www.automationqc.com/jenkins-pipeline-for-beginners/
+
+https://godaddy.github.io/2018/06/05/cicd-best-practices/
+
+## RabbitMQ
+https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6
+
+
+
 ## RabbitMQ vs Kafka
 
 https://www.reddit.com/r/programming/comments/8muszb/apache_kafka_vs_rabbitmq/
@@ -21,7 +69,10 @@ https://habr.com/company/itsumma/blog/418389/
                                                      
  
 ##  Kafka
-                                                    
+ 
+https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/  
+
+https://medium.com/@stephane.maarek/how-to-use-apache-kafka-to-transform-a-batch-pipeline-into-a-real-time-one-831b48a6ad85  
      
 https://www.confluent.io/blog/putting-power-apache-kafka-hands-data-scientists/
 https://www.infoq.com/articles/traffic-data-monitoring-iot-kafka-and-spark-streaming
@@ -45,11 +96,5 @@ https://www.datanami.com/2018/04/30/how-netflix-optimized-flink-for-massive-scal
  https://assets.ctfassets.net/oxjq45e8ilak/1y637HHnSQQMewS0m4usYS/95ffde03d09c3f49dcc7fe85fc976553/Gamov_Kafka_EOS.pdf
  https://habr.com/company/jugru/blog/354238/
  
-                                                     
- 
-                                                     
-
-
-
  
  http://tech.marksblogg.com/presto-connectors-kafka-mongodb-mysql-postgresql-redis.html Presto
