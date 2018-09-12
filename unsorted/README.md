@@ -30,58 +30,7 @@
 
 <https://www.youtube.com/watch?time_continue=1&v=wu3p7dxrhl8> Easter front animated 1941
 
-## Architecture
 
-<https://thingsboard.io/docs/reference/architecture/>
-
-<http://highscalability.com/blog/2018/4/9/give-meaning-to-100-billion-events-a-day-the-analytics-pipel.html>
-
-<https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/>  Kafka
-
-<https://medium.com/@stephane.maarek/how-to-use-apache-kafka-to-transform-a-batch-pipeline-into-a-real-time-one-831b48a6ad85> Kafka
-
-<https://www.jowanza.com/blog/2018/9/8/real-time-station-tracking-ford-gobike-and-mapd>
-
-<https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/>
-
-<https://medium.com/hydrosphere-io/machine-learning-models-monitoring-architectures-part-0-ec58e338d87f>
-
-<http://www.georgefairbanks.com/e-book/>
-
-<https://github.com/donnemartin/system-design-primer>
-
-<https://www.youtube.com/watch?v=x30DcBfCJRI>
-
-<https://www.youtube.com/watch?v=t2Ti-pZGy8I>
-
-<https://quickbooks-engineering.intuit.com/re-think-your-data-pipelines-in-the-decoupled-era-5b032bc8b779>
-
-<https://www.youtube.com/watch?v=tpspO9K28PM&t=155s>
-
-<https://github.com/gaia-pipeline/gaia>
-
-<https://github.com/Jeffail/benthos>
-
-<http://www.acodersjourney.com/2018/07/system-design-interview-load-balancing/>
-
-<https://engineering.videoblocks.com/web-architecture-101-a3224e126947>
-
-<https://news.ycombinator.com/item?id=17522362>
-
-<https://the-cloud-book.com/>
-
-<https://www.goodreads.com/book/show/25686275-the-art-of-scalability>
-
-<https://www.goodreads.com/book/show/18043011-clean-architecture>
-
-## Jenkins
-
-<https://www.automationqc.com/jenkins-pipeline-for-beginners/>
-
-<https://godaddy.github.io/2018/06/05/cicd-best-practices/>
-
-## RabbitMQ
-<https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6>
 
 ## Vim
 
