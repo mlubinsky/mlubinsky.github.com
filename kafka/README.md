@@ -1,6 +1,8 @@
 ## Big Data Architecture
 <https://medium.com/tag/streaming-analytics/archive>
 
+<https://habr.com/company/jugru/blog/421787/>
+
 <http://highscalability.com/blog/2018/4/9/give-meaning-to-100-billion-events-a-day-the-analytics-pipel.html>
 
 <https://www.confluent.io/blog/putting-power-apache-kafka-hands-data-scientists/>
