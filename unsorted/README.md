@@ -101,6 +101,8 @@
 
 ## Tennis
 
+<https://www.youtube.com/watch?v=re6rDiYr1PQ>
+
 <https://fitseven.ru/myschtsy/atlas-uprajneyniy/luchee-uprajnenie-na-press>
 
 <https://zen.yandex.ru/calisthenic>
