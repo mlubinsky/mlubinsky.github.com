@@ -10,7 +10,10 @@
 
 <https://habrahabr.ru/search/?q=tensorflow>
 
+<https://github.com/tensorflow/workshops>
+
 https://docs.devicehive.com/docs
+
 https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html
 
 Nilolenko DeepLearning book
