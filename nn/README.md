@@ -18,6 +18,9 @@ Nilolenko DeepLearning book
 
 <https://medium.com/tensorflow/introducing-tensorflow-probability-dca4c304e245>
 
+<https://colab.research.google.com/>
+
+<https://www.youtube.com/watch?v=tYYVSEHq-io>
 
 http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.66230&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false
  
