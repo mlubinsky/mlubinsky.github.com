@@ -15,7 +15,13 @@
 
 <https://codeburst.io/overview-of-python-data-visualization-tools-e32e1f716d10>
 
+<http://pbpython.com/python-vis-flowchart.html>
+
+<https://dsaber.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/>
+
 <https://sadanand-singh.github.io/posts/interactivedatavis/> . Bokeh
+
+<https://altair-viz.github.io/> .  
 
 <http://holoviews.org/>
 
@@ -122,6 +128,8 @@ https://movio.co/en/blog/improving-with-sql-and-charts/
 https://github.com/MLWave/kepler-mapper
 
 ## Matplotlib
+
+<https://realpython.com/python-matplotlib-guide/>
 
 <https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-with-code-a2284bae952f>
 
