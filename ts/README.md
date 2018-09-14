@@ -1,3 +1,26 @@
+## Kagle
+
+https://www.kaggle.com/c/demand-forecasting-kernels-only/data
+
+You are given 5 years of store-item sales data, and asked to predict 3 months of sales for 50 different items at 10 different stores.
+
+What's the best way to deal with seasonality? Should stores be modeled separately, or can you pool them together? Does deep learning work better than ARIMA? Can either beat xgboost?
+
+
+date - Date of the sale data. There are no holiday effects or store closures.
+store - Store ID
+item - Item ID
+sales - Number of items sold at a particular store on a particular date.
+
+<https://www.kaggle.com/praymond/eda-of-total-sales>
+
+<https://www.kaggle.com/princeashburton/plotting-time-series-data>
+
+<https://www.kaggle.com/darshanadiga/time-series-data-exploration>
+
+
+<https://www.kaggle.com/viridisquotient/arima>
+
 ## Time series
 
 <https://otexts.org/fpp2/>   FORECASTING BOOK
