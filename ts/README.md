@@ -63,15 +63,28 @@ decomp_multi.plot();
 <https://news.ycombinator.com/item?id=17950058>
 
 
+<https://www.kaggle.com/kanncaa1/time-series-prediction-tutorial-with-eda>
+
+<https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series>
+
+```
 Time series problem is different from a regression problem in following ways:
 
 1) The main difference is that a time series is time dependent. So the basic assumption of a linear regression model that the observations are independent doesn’t hold in this case.
 2) Along with an increasing or decreasing trend, most Time Series have some form of seasonality trends,i.e. variations specific to a particular time frame.
 
 
+Stationarity of a Time Series
+There are three basic criterion for a time series to understand whether it is stationary series or not.
+
+- constant mean
+- constant variance
+- autocovariance that does not depend on time. autocovariance is covariance between time series and lagged time series.
+
+
  Mean Absolute Percentage Error (MAPE)
  Mean Absolute Error (MAE) is the mean of the absolute values of the errors. 
-
+```
 ## LSTM
 <https://www.altumintelligence.com/articles/a/Time-Series-Prediction-Using-LSTM-Deep-Neural-Networks>
 
