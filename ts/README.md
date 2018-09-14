@@ -1,6 +1,8 @@
 ## Kagle
 
-https://www.kaggle.com/c/demand-forecasting-kernels-only/data
+<https://www.kaggle.com/c/demand-forecasting-kernels-only/>
+
+<https://www.kaggle.com/c/demand-forecasting-kernels-only/kernels>
 
 You are given 5 years of store-item sales data, and asked to predict 3 months of sales for 50 different items at 10 different stores.
 
@@ -12,21 +14,51 @@ store - Store ID
 item - Item ID
 sales - Number of items sold at a particular store on a particular date.
 
+```
+cat  train.csv | cut -d "," -f2 | sort | uniq -c
+91300 1
+91300 10
+91300 2
+91300 3
+91300 4
+91300 5
+91300 6
+91300 7
+91300 8
+91300 9
+```
+
 <https://www.kaggle.com/praymond/eda-of-total-sales>
 
 <https://www.kaggle.com/princeashburton/plotting-time-series-data>
 
 <https://www.kaggle.com/darshanadiga/time-series-data-exploration>
 
-
 <https://www.kaggle.com/viridisquotient/arima>
 
+<https://www.kaggle.com/adityaecdrid/my-first-time-series-comp-added-prophet>
+
+<https://www.kaggle.com/adityaecdrid/my-first-time-series-comp-added-prophet>
+```
+Seasonal decomp in statmodels:
+#from statsmodels.tsa.seasonal import seasonal_decompose
+#import statsmodels.api as sm
+
+decomp_year = sm.tsa.seasonal_decompose(sales_a, model = 'additive', freq = 365) . #Yearly
+decomp_year.trend.plot(color = c, ax = ax1)
+
+decomp_additive = sm.tsa.seasonal_decompose(y, model='additive')
+decomp_additive.plot()
+
+
+decomp_multi = sm.tsa.seasonal_decompose(y, model='multiplicative')
+decomp_multi.plot();
+```
 ## Time series
 
 <https://otexts.org/fpp2/>   FORECASTING BOOK
 
 <https://news.ycombinator.com/item?id=17950058>
-
 
 
 Time series problem is different from a regression problem in following ways:
