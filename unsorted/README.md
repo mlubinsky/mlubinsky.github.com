@@ -48,6 +48,7 @@
  code --diff file1.js file2.js.
 
 
+"Во всех странах есть своя мафия и только в России у мафии есть своя страна
 ## Tennis
 
 <https://www.youtube.com/watch?v=k_iLAQnOsRY>
