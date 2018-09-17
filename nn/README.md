@@ -1,5 +1,7 @@
 ## Deep Learning
 
+<http://www.deeplearningbook.org/> . BOOK
+
 <https://towardsdatascience.com/how-to-learn-deep-learning-in-6-months-e45e40ef7d48>
 
 <https://www.bepec.in/deeplearning>
