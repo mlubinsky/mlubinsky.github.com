@@ -2,6 +2,8 @@
 
 <http://www.deeplearningbook.org/> . BOOK
 
+<https://medium.com/inbrowserai/simple-diagrams-of-convoluted-neural-networks-39c097d2925b>
+
 <https://recurrentnull.wordpress.com/2017/12/14/practical-deep-learning-talk/>
 
 <https://recurrentnull.wordpress.com/2018/02/06/deep-learning-concepts-and-frameworks-find-your-way-through-the-jungle-talk/>
