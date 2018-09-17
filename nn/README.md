@@ -4,6 +4,8 @@
 
 <https://recurrentnull.wordpress.com/2017/12/14/practical-deep-learning-talk/>
 
+<https://recurrentnull.wordpress.com/2018/02/06/deep-learning-concepts-and-frameworks-find-your-way-through-the-jungle-talk/>
+
 <https://towardsdatascience.com/how-to-learn-deep-learning-in-6-months-e45e40ef7d48>
 
 <https://www.bepec.in/deeplearning>
