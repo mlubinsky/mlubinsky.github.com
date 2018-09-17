@@ -26,6 +26,12 @@
 
 ## TensorFlow
  
+<https://www.youtube.com/watch?v=tYYVSEHq-io&t=3664s>
+
+<https://www.youtube.com/watch?v=tjsHSIG8I08>
+
+<https://www.youtube.com/channel/UC0rqucBdTuFTjJiefW5t-IQ> 
+ 
 <https://medium.com/@tensorflow>
 
 <https://habrahabr.ru/search/?q=tensorflow>
