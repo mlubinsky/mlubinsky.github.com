@@ -2,6 +2,8 @@
 
 <https://www.youtube.com/watch?v=EQ-JE38e8XE> ru
 
+<https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi>
+
 <https://www.asozykin.ru/courses/nnpython> 
 <https://tproger.ru/translations/neural-network-zoo-2/>
 
