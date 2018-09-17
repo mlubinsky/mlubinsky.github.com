@@ -1,6 +1,9 @@
 <https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
 
 ## ARIMA vs LSTM 
+
+<https://www.quora.com/When-should-I-use-an-RNN-LSTM-and-when-to-use-ARIMA-for-a-time-series-forecasting-problem-What-is-the-relation-between-them>
+
 <https://www.kaggle.com/kapilstp84/time-series-forecasting-arima-v-s-lstm-rnn>  
 
 <https://springml.com/2018/01/26/time-series-forecasting-arima-vs-lstm/>
