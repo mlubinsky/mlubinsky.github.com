@@ -1,5 +1,7 @@
 ## Deep Learning
 
+<https://www.asozykin.ru/courses/nnpython>
+
 <https://news.ycombinator.com/item?id=17750791>
 
 <https://github.com/fotisk07/Deep-Learning-Coursera>
