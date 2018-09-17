@@ -2,6 +2,7 @@
 
 <https://www.kaggle.com/kapilstp84/time-series-forecasting-arima-v-s-lstm-rnn> ARIMA vs LSTM
 
+<https://springml.com/2018/01/26/time-series-forecasting-arima-vs-lstm/>
 ```
 Non-seasonal ARIMA has three input values to help control for smoothing, stationarity, and forecasting ARIMA(p,d,q), where:
 
