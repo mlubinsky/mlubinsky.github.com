@@ -13,6 +13,11 @@
 
 <https://machinelearningmastery.com/suitability-long-short-term-memory-networks-time-series-forecasting/>
 
+<https://www.youtube.com/watch?v=H8t8Y_OvB2I&list=PL51yKFtVfMeCI5OVzqToxFoDfIsYfCS-r&t=0s&index=15>
+
+<https://www.youtube.com/watch?v=h9QWefYBfJg>
+
+
 ```
 Non-seasonal ARIMA has three input values to help control for smoothing, stationarity, and forecasting ARIMA(p,d,q), where:
 
