@@ -1,4 +1,4 @@
-<http://neuralnetworksanddeeplearning.com/index.html>
+<http://neuralnetworksanddeeplearning.com/index.html> .  book
 
 ## LSTM
 ```
@@ -25,6 +25,8 @@ Each neuron in an RNN is almost like an entire layer in an ANN;
 ``` 
  
 <https://ayearofai.com/rohan-lenny-3-recurrent-neural-networks-10300100899b>
+
+<https://www.reddit.com/r/datascience/comments/79hjzn/how_good_is_lstm_for_time_series_forecasting/>
 
 <https://www.youtube.com/watch?v=EQ-JE38e8XE> ru
 
