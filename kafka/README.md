@@ -1,14 +1,18 @@
 ## Big Data Architecture
 
-https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395 Release it (nigard)
+<https://www.youtube.com/watch?v=z1xLDzx7hgw>
 
-https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358
+<https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395> Release it (nigard)
+
+<https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358>
 sam newman's microservices (o reilly)
 
-https://www.amazon.com/Just-Enough-Software-Architecture-Risk-Driven/dp/0984618104
+<https://www.amazon.com/Just-Enough-Software-Architecture-Risk-Driven/dp/0984618104>
 Just enough software architecture (g. fairbanks)
 
-https://dataintensive.net/
+<https://itnext.io/module-oriented-architecture-4b54c8976415>
+
+<https://dataintensive.net/>
 
 <https://medium.com/tag/streaming-analytics/archive>
 
@@ -25,12 +29,12 @@ https://dataintensive.net/
 <https://www.youtube.com/user/profyclub/videos>    HiLoad russian conf  
 
 
-https://thingsboard.io/docs/reference/architecture/ .   IoT
+<https://thingsboard.io/docs/reference/architecture/> .   IoT
 
 
-https://www.jowanza.com/blog/2018/9/8/real-time-station-tracking-ford-gobike-and-mapd
+<https://www.jowanza.com/blog/2018/9/8/real-time-station-tracking-ford-gobike-and-mapd>
 
-https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/
+<https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/>
 
 https://medium.com/hydrosphere-io/machine-learning-models-monitoring-architectures-part-0-ec58e338d87f
 
