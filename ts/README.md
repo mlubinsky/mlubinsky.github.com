@@ -1,3 +1,21 @@
+<https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
+
+```
+Non-seasonal ARIMA has three input values to help control for smoothing, stationarity, and forecasting ARIMA(p,d,q), where:
+
+p is the number of autoregressive terms,
+d is the number of nonseasonal differences needed for stationarity, and
+q is the number of lagged forecast errors in the prediction equation.
+
+By contrast seasonal ARIMA has six input values ARIMA(p,d,q,P,D,Q), where:
+
+P is the number of seasonal autoregressive terms,
+D is the number of seasonal differences, and
+Q is the number of seasonal moving-average terms.
+```
+
+<https://datascience.stackexchange.com/questions/12721/time-series-prediction-using-arima-vs-lstm>
+
 ## Kagle
 
 <https://www.kaggle.com/c/demand-forecasting-kernels-only/>
