@@ -32,11 +32,18 @@ The input gate contains two networks instead of one, giving an LSTM a total of 4
 ``` 
 <https://www.youtube.com/watch?v=WCUNPb-5EYI>
 
+<https://www.youtube.com/watch?v=6_MO12fPC-0&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6&index=12>
+
+
 <https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/> 
  
 <https://ayearofai.com/rohan-lenny-3-recurrent-neural-networks-10300100899b>
 
 <https://www.reddit.com/r/datascience/comments/79hjzn/how_good_is_lstm_for_time_series_forecasting/>
+
+<https://talwarabhimanyu.github.io/blog/2018/07/31/rnn-backprop>
+
+<https://talwarabhimanyu.github.io/blog/2018/08/12/lstm-backprop>
 
 <https://www.youtube.com/watch?v=EQ-JE38e8XE> ru
 
