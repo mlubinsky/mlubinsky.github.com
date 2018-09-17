@@ -9,6 +9,7 @@
 
 <http://rstudio-pubs-static.s3.amazonaws.com/316135_c44aa19b592a421d97330f03c7965558.html#/>
 
+<https://machinelearningmastery.com/start-here/#timeseries>
 
 <https://machinelearningmastery.com/suitability-long-short-term-memory-networks-time-series-forecasting/>
 
