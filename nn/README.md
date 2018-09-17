@@ -2,6 +2,10 @@
 
 <http://www.deeplearningbook.org/> . BOOK
 
+<https://www.youtube.com/watch?v=T0r-uCXvDzQ>
+
+<https://www.youtube.com/watch?v=aircAruvnKk>
+
 <https://medium.com/inbrowserai/simple-diagrams-of-convoluted-neural-networks-39c097d2925b>
 
 <https://recurrentnull.wordpress.com/2017/12/14/practical-deep-learning-talk/>
