@@ -1,7 +1,12 @@
+<http://neuralnetworksanddeeplearning.com/index.html>
+
 ## LSTM
 ```
- feed-forward network with a single hidden layer containing a finite number of neurons can approximate continuous functions on compact subsets of R^n.
-  ANNs are universal function approximators. RNNs take it a step further, though; they can compute/describe programs. In fact, some RNNs with proper weights and architecture qualify as Turing Complete.
+ The feed-forward network with a single hidden layer containing a finite number of neurons can approximate 
+ continuous functions on compact subsets of R^n.
+ANNs are universal function approximators. 
+RNNs take it a step further, though; they can compute/describe programs. 
+In fact, some RNNs with proper weights and architecture qualify as Turing Complete.
   
 Why do we need recurrent neural networks when we already have the beloved ANNs (and CNNs) in all their glory?
 It boils down to a few things:
@@ -12,7 +17,10 @@ ANNs have a fixed architecture
 
 
 RNNs are being used heavily in NLP; they retain context by having memory. ANNs have no memory.
-The constraint with ANNs is that they have a fixed number of computation/processing steps (because, once again, the number of hidden layers is a hyperparameter). With RNNs, we can have much more dynamic processing since we operate over vectors. Each neuron in an RNN is almost like an entire layer in an ANN; 
+The constraint with ANNs is that they have a fixed number of computation/processing steps (because, once again, 
+the number of hidden layers is a hyperparameter). 
+With RNNs, we can have much more dynamic processing since we operate over vectors. 
+Each neuron in an RNN is almost like an entire layer in an ANN; 
 
 ``` 
  
