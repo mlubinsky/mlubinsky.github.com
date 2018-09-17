@@ -2,6 +2,8 @@
 
 <http://www.deeplearningbook.org/> . BOOK
 
+<https://recurrentnull.wordpress.com/2017/12/14/practical-deep-learning-talk/>
+
 <https://towardsdatascience.com/how-to-learn-deep-learning-in-6-months-e45e40ef7d48>
 
 <https://www.bepec.in/deeplearning>
