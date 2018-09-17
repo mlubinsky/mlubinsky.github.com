@@ -1,5 +1,7 @@
 <https://habr.com/company/flant/blog/420813/>
 
+<https://habr.com/post/423481/>
+
 <https://medium.com/@elliot_f/my-notes-for-certified-kubernetes-application-developer-part-1-core-concepts-d1bab7bc2446>
 
 <https://medium.com/containermind/a-beginners-guide-to-kubernetes-7e8ca56420b6>
