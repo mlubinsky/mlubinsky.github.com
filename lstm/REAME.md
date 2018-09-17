@@ -24,6 +24,8 @@ Each neuron in an RNN is almost like an entire layer in an ANN;
 
 ``` 
  
+<https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/> 
+ 
 <https://ayearofai.com/rohan-lenny-3-recurrent-neural-networks-10300100899b>
 
 <https://www.reddit.com/r/datascience/comments/79hjzn/how_good_is_lstm_for_time_series_forecasting/>
