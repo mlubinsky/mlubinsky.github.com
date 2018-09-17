@@ -2,6 +2,8 @@
 
 <https://www.youtube.com/watch?v=EQ-JE38e8XE> ru
 
+<http://mechanoid.kiev.ua/>
+
 http://www.machinelearning.ru/wiki/images/7/78/2017_417_DrapakSN.pdf
 
 <https://en.wikipedia.org/wiki/Long_short-term_memory>
