@@ -4,6 +4,8 @@
 
 <https://tproger.ru/translations/neural-network-zoo-2/>
 
+<https://uzclip.net/video/1DNcYIN0aaA/%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D0%BD%D0%B8%D0%BA-deep-learning-%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BB%D1%8C%D1%86%D0%B0%D1%85.html>
+
 <http://mechanoid.kiev.ua/>
 
 http://www.machinelearning.ru/wiki/images/7/78/2017_417_DrapakSN.pdf
