@@ -1,8 +1,14 @@
 <https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
 
-<https://www.kaggle.com/kapilstp84/time-series-forecasting-arima-v-s-lstm-rnn> ARIMA vs LSTM
+## ARIMA vs LSTM 
+<https://www.kaggle.com/kapilstp84/time-series-forecasting-arima-v-s-lstm-rnn>  
 
 <https://springml.com/2018/01/26/time-series-forecasting-arima-vs-lstm/>
+
+https://www.linkedin.com/pulse/comparison-between-classical-statistical-model-arima-deep-virmani/
+
+http://rstudio-pubs-static.s3.amazonaws.com/316135_c44aa19b592a421d97330f03c7965558.html#/
+
 ```
 Non-seasonal ARIMA has three input values to help control for smoothing, stationarity, and forecasting ARIMA(p,d,q), where:
 
