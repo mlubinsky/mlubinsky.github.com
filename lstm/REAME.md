@@ -22,8 +22,16 @@ the number of hidden layers is a hyperparameter).
 With RNNs, we can have much more dynamic processing since we operate over vectors. 
 Each neuron in an RNN is almost like an entire layer in an ANN; 
 
-``` 
+LSTM Has 3 Gates:
+1) The Forget Gate: Chooses which information to remove from the state
+2) The Input Gate: Chooses which information to add to the state
+3) The Output Gate: Prepares what to output from this cell
+
+The input gate contains two networks instead of one, giving an LSTM a total of 4 sets of weights that have to be trained.
  
+``` 
+<https://www.youtube.com/watch?v=WCUNPb-5EYI>
+
 <https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/> 
  
 <https://ayearofai.com/rohan-lenny-3-recurrent-neural-networks-10300100899b>
