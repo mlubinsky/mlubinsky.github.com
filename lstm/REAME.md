@@ -36,6 +36,7 @@ The input gate contains two networks instead of one, giving an LSTM a total of 4
 <https://www.youtube.com/watch?v=QuELiw8tbx8&index=9&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6> Stanford
 <https://www.youtube.com/watch?v=6_MO12fPC-0&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6&index=12> Standord
 
+<https://www.altumintelligence.com/articles/a/Time-Series-Prediction-Using-LSTM-Deep-Neural-Networks>
 
 <https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/> 
  
