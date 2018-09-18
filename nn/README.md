@@ -4,6 +4,8 @@
 
 <http://neuralnetworksanddeeplearning.com/index.html> . book
 
+<https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/>
+
 <https://www.youtube.com/watch?v=T0r-uCXvDzQ>
 
 <https://www.youtube.com/watch?v=aircAruvnKk>
