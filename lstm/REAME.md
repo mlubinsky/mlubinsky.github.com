@@ -29,6 +29,8 @@ LSTM Has 3 Gates:
 
 The input gate contains two networks instead of one, giving an LSTM a total of 4 sets of weights that have to be trained.
  
+vanishing gradients: due to the backprop in time causing weights to grow (or decrease) exponentially (multiplication at each time step). LSTM and GRU nets get around this by having an internal memory which is clamped between 0-1 (or maybe -1 and 1). This avoids exploding/vanishing weight values when backpropping in time. 
+ 
 ``` 
 <https://www.youtube.com/watch?v=WCUNPb-5EYI>
 
