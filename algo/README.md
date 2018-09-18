@@ -14,6 +14,9 @@
 
 <https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed>
 
+## Egg drop
+<https://habr.com/post/423679/>
+
 <http://declanoller.com/2018/09/03/the-egg-drop-puzzle-brute-force-dynamic-programming-and-markov-decision-processes/>
 
 ## Consistent Hashing
