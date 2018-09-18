@@ -2,6 +2,8 @@
 
 <http://www.deeplearningbook.org/> . BOOK
 
+<http://neuralnetworksanddeeplearning.com/index.html> . book
+
 <https://www.youtube.com/watch?v=T0r-uCXvDzQ>
 
 <https://www.youtube.com/watch?v=aircAruvnKk>
