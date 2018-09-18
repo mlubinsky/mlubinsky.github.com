@@ -44,7 +44,7 @@ Just enough software architecture (g. fairbanks)
 
 https://medium.com/hydrosphere-io/machine-learning-models-monitoring-architectures-part-0-ec58e338d87f
 
-http://www.georgefairbanks.com/e-book/
+<http://www.georgefairbanks.com/e-book/>
 
 https://github.com/donnemartin/system-design-primer
 
@@ -100,7 +100,8 @@ https://medium.com/@stephane.maarek/how-to-use-apache-kafka-to-transform-a-batch
 https://www.confluent.io/blog/putting-power-apache-kafka-hands-data-scientists/
 https://www.infoq.com/articles/traffic-data-monitoring-iot-kafka-and-spark-streaming
        https://jobs.zalando.com/tech/blog/many-to-many-using-kafka/index.html
-
+       
+<https://www.confluent.io/blog/building-streaming-application-ksql/> . KSQL
 
 http://highscalability.com/blog/2018/4/9/give-meaning-to-100-billion-events-a-day-the-analytics-pipel.html
 
