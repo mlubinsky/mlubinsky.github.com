@@ -1,5 +1,11 @@
 ## Big Data Architecture
 
+<https://www.youtube.com/watch?v=3UfZN59Nsk8> Dataflow: A Unified Model for Batch and Streaming Data Processing
+
+<https://www.youtube.com/watch?v=kdmAiQeYGgE> Building a real-time analytics pipeline with BigQuery and Cloud Dataflow
+
+<https://www.youtube.com/watch?v=owTuuVt6Oro> Apache Beam
+
 <https://www.youtube.com/watch?v=z1xLDzx7hgw>
 
 <https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395> Release it (nigard)
