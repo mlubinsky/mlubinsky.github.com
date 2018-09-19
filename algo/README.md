@@ -14,6 +14,9 @@
 
 <https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed>
 
+
+<https://en.wikipedia.org/wiki/Ant_on_a_rubber_rope>
+
 ## Egg drop
 <https://habr.com/post/423679/>
 
