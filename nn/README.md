@@ -36,6 +36,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://recurrentnull.wordpress.com/2018/02/06/deep-learning-concepts-and-frameworks-find-your-way-through-the-jungle-talk/>
 
+<https://brohrer.github.io/blog.html>
+
 <https://mapr.com/blog/deep-learning-tensorflow/>
 
 <https://towardsdatascience.com/how-to-learn-deep-learning-in-6-months-e45e40ef7d48>
