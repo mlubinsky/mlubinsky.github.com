@@ -4,6 +4,26 @@
 
 <http://neuralnetworksanddeeplearning.com/index.html> . book
 
+Given probability p, the corresponding odds are calculated as p / (1 – p). 
+The logit function is simply the logarithm of the odds: logit(x) = log(x / (1 – x)).
+The value of the logit function heads towards infinity as p approaches 1 and towards negative infinity as it approaches 0.
+
+The logit function is useful in analytics because it maps probabilities (which are values in the range [0, 1]) to the full range of real numbers. In particular, if you are working with “yes-no” (binary) inputs it can be useful to transform them into real-valued quantities prior to modeling. This is essentially what happens in logistic regression.
+
+The inverse of the logit function is the sigmoid function. That is, if you have a probability p, sigmoid(logit(p)) = p. The sigmoid function maps arbitrary real values back to the range [0, 1]. The larger the value, the closer to 1 you’ll get.
+
+The formula for the sigmoid function is σ(x) = 1/(1 + exp(-x)).
+
+## Vanishing gradient problem
+<https://en.wikipedia.org/wiki/Vanishing_gradient_problem>
+<https://www.quora.com/What-is-the-vanishing-gradient-problem>
+
+Vanishing gradient problem depends on the choice of the activation function. Many common activation functions (e.g sigmoid or tanh) 'squash' their input into a very small output range in a very non-linear fashion. For example, sigmoid maps the real number line onto a "small" range of [0, 1]. As a result, there are large regions of the input space which are mapped to an extremely small range. In these regions of the input space, even a large change in the input will produce a small change in the output - hence the gradient is small.
+
+We can avoid this problem by using activation functions which don't have this property of 'squashing' the input space into a small region. A popular choice is Rectified Linear Unit which maps 𝑥 to 𝑚𝑎𝑥(0,𝑥).
+
+Rectified Linear activation function does not have this problem. The gradient is 0 for negative (and zero) inputs and 1 for positive inputs
+
 <https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/>
 
 <https://www.youtube.com/watch?v=T0r-uCXvDzQ>
