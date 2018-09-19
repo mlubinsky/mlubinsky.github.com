@@ -1,10 +1,20 @@
 <https://ubereng.wpengine.com/forecasting-introduction/>
+<http://www.uokufa.edu.iq/staff/ehsanali/Tan.pdf>  BOOK Introduction to DataMining
 
-<https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
+
+## LSTM
+<https://www.altumintelligence.com/articles/a/Time-Series-Prediction-Using-LSTM-Deep-Neural-Networks>
+
+<http://www.jakob-aungiers.com/articles/a/LSTM-Neural-Network-for-Time-Series-Prediction>
+
+<https://github.com/dafrie/lstm-load-forecasting>
+
 
 ## ARIMA vs LSTM 
 
 <https://www.quora.com/When-should-I-use-an-RNN-LSTM-and-when-to-use-ARIMA-for-a-time-series-forecasting-problem-What-is-the-relation-between-them>
+
+<https://arxiv.org/pdf/1803.06386.pdf>
 
 <https://forecasters.org/wp-content/uploads/gravity_forms/7-c6dd08fee7f0065037affb5b74fec20a/2017/07/Laptev_Nikolay_ISF2017.pdf>
 
@@ -73,6 +83,8 @@ cat  train.csv | cut -d "," -f2 | sort | uniq -c
 91300 9
 ```
 
+<https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
+
 <https://www.kaggle.com/praymond/eda-of-total-sales>
 
 <https://www.kaggle.com/princeashburton/plotting-time-series-data>
@@ -131,14 +143,7 @@ There are three basic criterion for a time series to understand whether it is st
  Mean Absolute Percentage Error (MAPE)
  Mean Absolute Error (MAE) is the mean of the absolute values of the errors. 
 ```
-## LSTM
-<https://www.altumintelligence.com/articles/a/Time-Series-Prediction-Using-LSTM-Deep-Neural-Networks>
 
-<http://www.jakob-aungiers.com/articles/a/LSTM-Neural-Network-for-Time-Series-Prediction>
-
-<https://github.com/dafrie/lstm-load-forecasting>
-
-<http://www.uokufa.edu.iq/staff/ehsanali/Tan.pdf>
  
 <http://mariofilho.com/create-simple-machine-learning-model-predict-time-series/> 
 
