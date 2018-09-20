@@ -29,6 +29,8 @@ Lambda example
 ## ML on AWS
 <https://aws.amazon.com/iot-analytics/>
 
+<https://aws.amazon.com/blogs/machine-learning/forecasting-time-series-with-dynamic-deep-learning-on-aws/>
+
 <https://github.com/aws-samples/serverless-sagemaker-orchestration>
 
 <https://towardsdatascience.com/brewing-up-custom-ml-models-on-aws-sagemaker-e09b64627722>
