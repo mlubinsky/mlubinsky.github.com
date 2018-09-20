@@ -17,6 +17,9 @@ Lambda example
 
 <https://docs.aws.amazon.com/lambda/latest/dg/invoking-lambda-function.html>
 
+
+<https://blog.sqreen.io/streaming-data-amazon-kinesis/>
+
 <https://read.iopipe.com/lessons-from-building-a-serverless-data-pipeline-with-aws-kinesis-and-lambda-4d8cf0ebcbc9>
 
 <https://www.confluent.io/blog/decoupling-systems-with-apache-kafka-schema-registry-and-avro/>
