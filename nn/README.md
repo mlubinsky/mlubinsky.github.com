@@ -1,3 +1,5 @@
+<https://habr.com/post/417209/>
+
 ## Deep Learning
 
 <http://www.deeplearningbook.org/> . BOOK
