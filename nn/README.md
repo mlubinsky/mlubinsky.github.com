@@ -4,6 +4,8 @@
 
 <http://neuralnetworksanddeeplearning.com/index.html> . book
 
+<http://course.fast.ai/>
+
 Given probability p, the corresponding odds are calculated as p / (1 – p). 
 The logit function is simply the logarithm of the odds: logit(x) = log(x / (1 – x)).
 The value of the logit function heads towards infinity as p approaches 1 and towards negative infinity as it approaches 0.
