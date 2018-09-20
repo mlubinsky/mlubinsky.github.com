@@ -56,6 +56,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 ## TensorFlow
  
+<https://colab.research.google.com/> 
+ 
 <https://www.youtube.com/watch?v=tYYVSEHq-io&t=3664s>
 
 <https://www.youtube.com/watch?v=tjsHSIG8I08>
