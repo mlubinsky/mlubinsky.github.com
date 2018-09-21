@@ -1,5 +1,7 @@
 <https://habr.com/post/417209/>
 
+![ActivationFunction](ActivationFunction.png)
+
 ## Deep Learning
 
 <http://www.deeplearningbook.org/> . BOOK
