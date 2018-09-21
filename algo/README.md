@@ -1,3 +1,5 @@
+<https://www.bitdegree.org/user/course/data-structures-and-algorithms>
+
 <https://habr.com/post/419945/> Google interview
 
 <https://interviewing.io/recordings>
