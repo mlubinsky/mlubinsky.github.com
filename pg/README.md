@@ -4,6 +4,8 @@
 
 <https://wiki.postgresql.org/wiki/Things_to_find_out_about_when_moving_from_MySQL_to_PostgreSQL>
 
+Declarative Partitioning in version 11:
+<https://www.postgresql.org/docs/11/static/ddl-partitioning.html#DDL-PARTITIONING-DECLARATIVE>
 
 https://brandur.org/postgres-default
  
