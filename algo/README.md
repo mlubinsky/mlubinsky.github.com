@@ -39,6 +39,8 @@
 
 <https://habr.com/post/418867/> 
 
+<https://habr.com/post/423939/>
+
 https://hackernoon.com/dynamic-programming-for-brute-forcers-36f26c2466cf
 
 https://medium.com/@codingfreak/top-50-dynamic-programming-practice-problems-4208fed71aa3
