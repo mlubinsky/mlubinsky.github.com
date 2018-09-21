@@ -1,15 +1,4 @@
 
-## Jupiter IPython
-
-<https://github.com/Yorko/mlcourse_open/tree/master/jupyter_russian>     Jupiter Russian notebooks
-
-<https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#statistics-machine-learning-and-data-science>
-
-<https://radimrehurek.com/data_science_python/>
-
-<https://github.com/hangtwenty/dive-into-machine-learning>
-
-<https://sadanand-singh.github.io/posts/pyplotsmultivariables/>
 
 ## Python plotting
 
