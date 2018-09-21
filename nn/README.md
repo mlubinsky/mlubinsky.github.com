@@ -6,6 +6,8 @@
 
 <http://neuralnetworksanddeeplearning.com/index.html> . book
 
+<https://github.com/rasbt/deep-learning-book> book
+
 <http://course.fast.ai/>
 
 Given probability p, the corresponding odds are calculated as p / (1 – p). 
