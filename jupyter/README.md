@@ -14,8 +14,11 @@ https://www.kaggle.com/learn/overview  Pandas, TensorFlow, etc
 
 
 ## Scikit-learn
-https://www.youtube.com/watch?v=L7R4HUQ-eQ0
-https://www.interviewqs.com/blog/intro_to_scikit_learn
+<https://www.youtube.com/watch?v=L7R4HUQ-eQ0>
+
+<http://scikit-learn.org/stable/tutorial/>
+
+<https://www.interviewqs.com/blog/intro_to_scikit_learn>
 ```
 import matplotlib.pyplot as plt
 from sklearn import linear_model
