@@ -51,32 +51,6 @@ RobustScaler аналогичен StandardScaler в том плане, что в
 Это позволяет RobustScaler игнорировать выбросы или ошибки измерений, которые могут стать проблемой для остальных методов 
 масштабирования.
 
-<h2>Scikit-learn</h2>
-https://www.youtube.com/watch?v=L7R4HUQ-eQ0
-https://www.interviewqs.com/blog/intro_to_scikit_learn
-
-import matplotlib.pyplot as plt
-from sklearn import linear_model
-import numpy as np
-from sklearn.metrics import mean_squared_error, r2_score
-# data:
-ar = np.array([[[1],[2],[3]], [[2],[4],[6]]]) # y=2*x
-x = ar[0,:]
-y = ar[1,:]
-
-reg = linear_model.LinearRegression()
-reg.fit(x,y)
-print('Coefficients: \n', reg.coef_)
-
-xTest = np.array([[4],[5],[6]])
-ytest =  np.array([[8],[10],[12]])
-preds = reg.predict(xTest)
-print("Mean squared error: %.2f" % mean_squared_error(ytest,preds))
-print("Variance score: %.2f" % r2_score(ytest,preds))
-plt.scatter(xTest,preds, color='black')
-plt.plot(xTest,preds,color='blue', linewidth=3)
-
-plt.show()
 
 <h2> Links</h2>
 https://sandipanweb.wordpress.com/
@@ -91,7 +65,7 @@ https://news.ycombinator.com/item?id=17664084   Math for ML
 
 http://tools.google.com/seedbank/
 https://developers.google.com/machine-learning/guides/
-http://www.dataschool.io/easier-data-analysis-with-pandas/
+
 <a href=https://spandan-madan.github.io/DeepLearningProject/>ML from start to end</a>
 <a href=https://github.com/Yorko/mlcourse_open>Open Machine Learning</a>
 
@@ -259,14 +233,14 @@ https://habr.com/post/358868/  Kalman filter
 https://developers.google.com/machine-learning/crash-course/
 https://avva.livejournal.com/3074895.html#comments
 https://robertheaton.com/2014/05/02/jaccard-similarity-and-minhash-for-winners/
-https://medium.com/@williamkoehrsen/random-forest-in-python-24d0893d51c0
+
 http://efavdb.com/
 https://talkery.io/conferences/507?pageNumber=1   PyData 2017 videos
 
 www.wildml.com/2017/12/ai-and-deep-learning-in-2017-a-year-in-review/
 https://habr.com/company/ods/blog/354944/
 	
-https://www.kaggle.com/learn/overview  Pandas, TensorFlow, etc
+
 
 https://habrahabr.ru/company/itinvest/blog/262155/ TOP 10 ML algo
 https://habrahabr.ru/company/cloud4y/blog/346968/
@@ -342,41 +316,7 @@ https://habrahabr.ru/post/322034/ DBSCAN
 https://en.wikipedia.org/wiki/DBSCAN  DBSCAN
 https://mubaris.com/2017/10/01/kmeans-clustering-in-python/
 
-<h3>NumPy</h3>
-http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users.html
-https://realpython.com/numpy-array-programming/	
-http://nbviewer.jupyter.org/github/vlad17/np-learn/blob/master/presentation.ipynb?flush_cache=true NumPy
-http://www.labri.fr/perso/nrougier/from-python-to-numpy/
-https://docs.scipy.org/doc/numpy-1.10.0/user/basics.broadcasting.html
-https://www.analyticsvidhya.com/blog/2017/02/top-28-cheat-sheets-for-machine-learning-data-science-probability-sql-big-data/
-http://www.labri.fr/perso/nrougier/teaching/numpy.100/index.html
-https://www.datacamp.com/community/tutorials/python-numpy-tutorial
-https://www.dataquest.io/blog/numpy-tutorial-python/
-https://www.python-course.eu/numpy.php
-https://github.com/Kyubyong/numpy_exercises
-http://heydenberk.com/blog/posts/demystifying-pandas-numpy-filtering/
-http://cs231n.github.io/python-numpy-tutorial/
-https://github.com/HIPS/autograd
-https://www.machinelearningplus.com/101-numpy-exercises-python/
 
-<h3>Pandas</h3>
-https://news.ycombinator.com/item?id=16473482
-http://nbviewer.jupyter.org/github/pybokeh/jupyter_notebooks/blob/master/pandas/PandasCheatSheet.ipynb
-https://jakevdp.github.io/PythonDataScienceHandbook/
-https://www.kaggle.com/learn/data-visualisation
-https://medium.com/dunder-data/selecting-subsets-of-data-in-pandas-6fcd0170be9c
-https://spapas.github.io/2016/09/21/pandas-pivot-table-primer/
-https://github.com/JosPolfliet/pandas-profiling
-https://www.dataquest.io/blog/pandas-concatenation-tutorial/
-https://towardsdatascience.com/how-to-learn-pandas-108905ab4955
-http://blog.enthought.com/python/pandas/cheat-sheets-pandas-the-python-data-analysis-library/#.WjSdBlQ-dp9
-https://habrahabr.ru/company/ods/blog/322626/
-https://www.dataquest.io/blog/pandas-big-data/
-https://www.dataquest.io/blog/machine-learning-python/
-https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python
-http://hypertools.readthedocs.io/en/latest/index.html
-	
-http://www.zavtech.com/morpheus/docs/  DataFrames in Java
 
 <img src="ml/ml_guide.svg" width="1200">
 <img src="ml/ml1.png">
@@ -529,7 +469,7 @@ https://towardsdatascience.com/battle-of-the-deep-learning-frameworks-part-i-cff
 http://pbpython.com/categorical-encoding.html
 https://github.com/onurakpolat/awesome-analytics
 <a href=https://startupsventurecapital.com/essential-cheat-sheets-for-machine-learning-and-deep-learning-researchers-efb6a8ebd2e5>ML cheetsheets</a>
-<a href=http://scikit-learn.org/stable/tutorial/>Scikit-learn</a>
+
 <a href=https://github.com/vahidk/EffectiveTensorflow>Tensor Flow</a>
 <a href=http://dlib.net/>ML DLIB C++</a>
 
@@ -555,7 +495,7 @@ https://habrahabr.ru/company/newprolab/blog/350584/ t-SNE and UMAP
 
 http://www.datatau.com/
 https://www.bonaccorso.eu/
-https://habrahabr.ru/company/oleg-bunin/blog/340184/ Archietrures of NN
+https://habrahabr.ru/company/oleg-bunin/blog/340184/ Architectures of NN
 https://morfizm.livejournal.com/1136917.html  BitFunnel
 https://blog.statsbot.co/
 http://rpubs.com/JDAHAN/172473
