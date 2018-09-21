@@ -63,6 +63,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 <https://www.youtube.com/watch?v=tjsHSIG8I08>
 
 <https://www.youtube.com/channel/UC0rqucBdTuFTjJiefW5t-IQ> 
+
+<https://becominghuman.ai/an-introduction-to-tensorflow-f4f31e3ea1c0>
  
 <https://medium.com/@tensorflow>
 
