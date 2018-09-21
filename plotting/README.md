@@ -34,6 +34,8 @@
 
 <https://www.codewall.co.uk/the-best-javascript-data-visualization-charting-libraries/>
 
+<https://habr.com/company/ruvds/blog/423983/>
+
 ## Real-time plotting
 
 <https://pusher.com/tutorials/live-graph-d3>
