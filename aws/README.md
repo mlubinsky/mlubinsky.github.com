@@ -11,6 +11,8 @@ Lambda example
 
 <https://habr.com/post/421991/> free AWS
 
+<https://news.ycombinator.com/item?id=18042382>  DB on AWS
+
 <https://habr.com/company/jugru/blog/417943/>
 
 <https://www.infoq.com/presentations/serverless-architecture-patterns>
