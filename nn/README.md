@@ -11,7 +11,10 @@
 <https://github.com/rasbt/deep-learning-book> book
 
 <https://blog.floydhub.com/guide-to-hyperparameters-search-for-deep-learning-models/>
+
 <http://course.fast.ai/>
+
+<https://www.youtube.com/watch?v=9X_4i7zdSY8&t=2s>
 
 Given probability p, the corresponding odds are calculated as p / (1 – p). 
 The logit function is simply the logarithm of the odds: logit(x) = log(x / (1 – x)).
