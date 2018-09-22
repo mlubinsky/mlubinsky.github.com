@@ -1,5 +1,7 @@
 <http://neuralnetworksanddeeplearning.com/index.html> .  book
 
+<https://medium.com/mlreview/understanding-lstm-and-its-diagrams-37e2f46f1714>
+
 ## LSTM
 ```
  The feed-forward network with a single hidden layer containing a finite number of neurons can approximate 
