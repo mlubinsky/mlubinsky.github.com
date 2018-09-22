@@ -10,6 +10,7 @@
 
 <https://github.com/rasbt/deep-learning-book> book
 
+<https://blog.floydhub.com/guide-to-hyperparameters-search-for-deep-learning-models/>
 <http://course.fast.ai/>
 
 Given probability p, the corresponding odds are calculated as p / (1 – p). 
