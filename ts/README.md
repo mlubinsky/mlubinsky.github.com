@@ -1,6 +1,8 @@
 <https://ubereng.wpengine.com/forecasting-introduction/>
+
 <http://www.uokufa.edu.iq/staff/ehsanali/Tan.pdf>  BOOK Introduction to DataMining
 
+<https://www.youtube.com/watch?v=JNfxr4BQrLk>
 
 ## LSTM
 <https://www.altumintelligence.com/articles/a/Time-Series-Prediction-Using-LSTM-Deep-Neural-Networks>
