@@ -12,6 +12,8 @@
 
 <https://blog.floydhub.com/guide-to-hyperparameters-search-for-deep-learning-models/>
 
+<https://medium.com/octavian-ai/which-optimizer-and-learning-rate-should-i-use-for-deep-learning-5acb418f9b2>
+
 <http://course.fast.ai/>
 
 <https://www.youtube.com/watch?v=9X_4i7zdSY8&t=2s>
