@@ -6,6 +6,8 @@
 
 <https://www.youtube.com/watch?v=owTuuVt6Oro> Apache Beam
 
+<https://news.ycombinator.com/item?id=18055002> 
+
 <https://www.youtube.com/watch?v=z1xLDzx7hgw>
 
 <https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395> Release it (nigard)
