@@ -2,6 +2,8 @@
 
 <http://www.uokufa.edu.iq/staff/ehsanali/Tan.pdf>  BOOK Introduction to DataMining
 
+<https://habr.com/company/ods/blog/327242/>
+
 <https://www.youtube.com/watch?v=JNfxr4BQrLk>
 
 ## LSTM
