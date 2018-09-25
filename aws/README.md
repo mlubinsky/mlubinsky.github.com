@@ -1,3 +1,4 @@
+<http://veekaybee.github.io/2018/09/24/the-case-of-the-broken-lambda/>
 
 Lambda example
 ```
