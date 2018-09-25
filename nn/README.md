@@ -1,5 +1,12 @@
 <https://habr.com/post/417209/>
 
+<https://habr.com/post/414165/>
+
+<https://habr.com/company/ods/blog/344044/>
+
+<https://mlcourse.ai/>
+
+
 ![ActivationFunction](ActivationFunction.png)
 
 ## Deep Learning
