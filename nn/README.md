@@ -6,6 +6,7 @@
 
 <https://mlcourse.ai/>
 
+<https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-deep-learning>
 
 ![ActivationFunction](ActivationFunction.png)
 
