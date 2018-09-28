@@ -6,6 +6,9 @@
 
 <https://mlcourse.ai/>
 
+<https://www.youtube.com/watch?v=Agv-SioIZac&list=PL-_cKNuVAYAUWTBKPpWbTGmo5zadoaeCk>
+
+
 <https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-deep-learning>
 
 ![ActivationFunction](ActivationFunction.png)
