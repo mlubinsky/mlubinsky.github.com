@@ -10,6 +10,8 @@
 
 <https://habr.com/company/pvs-studio/blog/418645/> Conference
 
+<https://www.youtube.com/channel/UCifgOu6ARWbZ_dV29gss8xw> CPP rus conference 
+
 <https://www.codeproject.com/Articles/1170503/The-Impossibly-Fast-Cplusplus-Delegates-Fixed>
 
 clang++ -Wall -std=c++11 boolean_matrix.cpp -o test
