@@ -8,6 +8,7 @@
 
 <https://www.youtube.com/watch?v=Agv-SioIZac&list=PL-_cKNuVAYAUWTBKPpWbTGmo5zadoaeCk>
 
+<https://deepnotes.io/>
 
 <https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-deep-learning>
 
