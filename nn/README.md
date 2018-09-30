@@ -28,9 +28,15 @@
 
 <http://course.fast.ai/>
 
+<https://www.zerotodeeplearning.com/>
+
 <https://github.com/ysh329/deep-learning-model-convertor>
 
 <https://www.youtube.com/watch?v=9X_4i7zdSY8&t=2s>
+
+<https://datascience.stackexchange.com/questions/12851/how-do-you-visualize-neural-network-architectures>
+
+<https://modelzoo.co/>
 
 Given probability p, the corresponding odds are calculated as p / (1 – p). 
 The logit function is simply the logarithm of the odds: logit(x) = log(x / (1 – x)).
