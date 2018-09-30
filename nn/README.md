@@ -28,6 +28,8 @@
 
 <http://course.fast.ai/>
 
+<https://github.com/ysh329/deep-learning-model-convertor>
+
 <https://www.youtube.com/watch?v=9X_4i7zdSY8&t=2s>
 
 Given probability p, the corresponding odds are calculated as p / (1 – p). 
