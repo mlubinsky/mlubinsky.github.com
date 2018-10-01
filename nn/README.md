@@ -88,6 +88,8 @@ Rectified Linear activation function does not have this problem. The gradient is
  
 <https://colab.research.google.com/> 
 
+<https://www.tensorflow.org/lite/>
+
 <https://medium.com/tensorflow/training-and-serving-ml-models-with-tf-keras-fd975cc0fa27>
  
 <https://www.youtube.com/watch?v=tYYVSEHq-io&t=3664s>
