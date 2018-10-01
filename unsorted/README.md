@@ -17,6 +17,8 @@
 
 ## youtube programming
 
+<https://techyaks.com/>
+
 <https://www.youtube.com/user/sentdex/videos>
 
 <https://www.youtube.com/user/schafer5/videos>
