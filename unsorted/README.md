@@ -2,6 +2,8 @@
 
 <http://libgen.io/> . Genesis
 
+<https://news.ycombinator.com/item?id=18099484> Proof Without Words: Gregory’s Theorem
+
 <https://waterprogramming.wordpress.com/2018/09/04/implementation-of-the-moving-average-filter-using-convolution/>
 
 <https://news.ycombinator.com/item?id=17202615> some youtube channels
