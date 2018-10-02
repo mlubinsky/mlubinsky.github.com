@@ -43,9 +43,12 @@
 <https://towardsdatascience.com/why-machine-learning-on-the-edge-92fac32105e6>
 
 ## ARM
+<https://www.dlology.com/blog/how-to-run-deep-learning-model-on-microcontroller-with-cmsis-nn/>
+<https://www.youtube.com/watch?v=jlYDrmYJxh4>
 <https://developer.arm.com/products/processors/machine-learning/>
-
-
+<https://community.arm.com/processors/b/blog/posts/new-neural-network-kernels-boost-efficiency-in-microcontrollers-by-5x>
+<https://github.com/ARM-software/CMSIS_5>
+<https://www.slideshare.net/linaroorg/hkg18312-cmsisnn>
 
 Given probability p, the corresponding odds are calculated as p / (1 – p). 
 The logit function is simply the logarithm of the odds: logit(x) = log(x / (1 – x)).
