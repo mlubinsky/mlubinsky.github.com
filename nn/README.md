@@ -42,6 +42,9 @@
 <https://towardsdatascience.com/deep-learning-on-the-edge-9181693f466c>
 <https://towardsdatascience.com/why-machine-learning-on-the-edge-92fac32105e6>
 
+## ARM
+<https://developer.arm.com/products/processors/machine-learning/>
+
 
 
 Given probability p, the corresponding odds are calculated as p / (1 – p). 
