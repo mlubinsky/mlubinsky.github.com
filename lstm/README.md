@@ -2,6 +2,8 @@
 
 <https://medium.com/mlreview/understanding-lstm-and-its-diagrams-37e2f46f1714>
 
+<https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21>
+
 ## LSTM
 ```
  The feed-forward network with a single hidden layer containing a finite number of neurons can approximate 
