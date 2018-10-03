@@ -7,6 +7,10 @@
  () Parentheses
 ```
 
+<https://www.youtube.com/watch?v=-5RCmu-HuTg&t=718s> . Jordan B. Peterson on 12 Rules for Life
+
+<https://www.youtube.com/user/JordanPetersonVideos>  Jordan B. Peterson
+
 <https://news.ycombinator.com/item?id=18099484> Proof Without Words: Gregory’s Theorem
 
 <https://waterprogramming.wordpress.com/2018/09/04/implementation-of-the-moving-average-filter-using-convolution/>
