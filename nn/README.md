@@ -14,6 +14,8 @@
 
 <https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-deep-learning>
 
+<https://stats.stackexchange.com/questions/154879/a-list-of-cost-functions-used-in-neural-networks-alongside-applications>
+
 ![ActivationFunction](ActivationFunction.png)
 
 ## Deep Learning
