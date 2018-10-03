@@ -22,6 +22,8 @@
 
 <https://en.wikipedia.org/wiki/Ant_on_a_rubber_rope>
 
+<https://www.youtube.com/playlist?list=PLBZBJbE_rGRVnpitdvpdY9952IsKMDuev>
+
 ## Egg drop
 <https://habr.com/post/423679/>
 
