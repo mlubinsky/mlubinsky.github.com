@@ -14,6 +14,8 @@ Lambda example
 
 <https://news.ycombinator.com/item?id=18042382>  DB on AWS
 
+<https://imrankhan17.github.io/pages/flask.html> Flask on AWS
+
 <https://habr.com/company/jugru/blog/417943/>
 
 <https://www.infoq.com/presentations/serverless-architecture-patterns>
