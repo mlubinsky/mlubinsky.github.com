@@ -10,6 +10,8 @@
 
 <https://deepnotes.io/>
 
+<http://iamtrask.github.io/>
+
 <https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-deep-learning>
 
 ![ActivationFunction](ActivationFunction.png)
