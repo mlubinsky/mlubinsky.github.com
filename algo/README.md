@@ -2,6 +2,8 @@
 
 <https://habr.com/post/419945/> Google interview
 
+<https://habr.com/company/google/blog/425279/> Google interiew
+
 <https://interviewing.io/recordings>
 
 <https://habr.com/post/419725/> Non-symmetric dime simulation
