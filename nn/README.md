@@ -48,7 +48,10 @@
 
 ## DL on Edge
 <https://towardsdatascience.com/deep-learning-on-the-edge-9181693f466c>
+
 <https://towardsdatascience.com/why-machine-learning-on-the-edge-92fac32105e6>
+
+<https://medium.com/@bryancostanich/the-future-is-tiny-44dea02e4517>
 
 ## ARM
 <https://www.dlology.com/blog/how-to-run-deep-learning-model-on-microcontroller-with-cmsis-nn/>
