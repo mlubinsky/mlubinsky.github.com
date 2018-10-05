@@ -6,6 +6,8 @@
 
 <https://mlcourse.ai/>
 
+<https://bair.berkeley.edu/blog/2018/08/06/recurrent/>
+
 <https://www.youtube.com/watch?v=Agv-SioIZac&list=PL-_cKNuVAYAUWTBKPpWbTGmo5zadoaeCk>
 
 <https://deepnotes.io/>
