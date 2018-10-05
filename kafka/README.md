@@ -2,6 +2,8 @@
 
 <https://www.youtube.com/watch?v=3UfZN59Nsk8> Dataflow: A Unified Model for Batch and Streaming Data Processing
 
+<https://www.cockroachlabs.com/blog/brief-history-high-availability/>
+
 <https://www.youtube.com/watch?v=kdmAiQeYGgE> Building a real-time analytics pipeline with BigQuery and Cloud Dataflow
 
 <https://www.youtube.com/watch?v=owTuuVt6Oro> Apache Beam
