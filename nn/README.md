@@ -103,6 +103,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 <https://github.com/fotisk07/Deep-Learning-Coursera>
 
 ## TensorFlow
+
+<https://tf.wiki/en/preface.html> . 
  
 <https://colab.research.google.com/> 
 
