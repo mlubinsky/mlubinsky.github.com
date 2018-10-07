@@ -4,6 +4,8 @@
 
 <https://habr.com/company/google/blog/425279/> Google interiew
 
+<https://www.youtube.com/watch?v=5o-kdjv7FD0>
+
 <https://interviewing.io/recordings>
 
 <https://habr.com/post/419725/> Non-symmetric dime simulation
