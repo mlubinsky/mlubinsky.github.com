@@ -6,6 +6,8 @@
 
 <https://mlcourse.ai/>
 
+<https://onnx.ai/> NN format
+
 <https://www.youtube.com/watch?v=o64FV-ez6Gw&feature=youtu.be>
 
 <https://bair.berkeley.edu/blog/2018/08/06/recurrent/>
