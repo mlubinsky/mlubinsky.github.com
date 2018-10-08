@@ -15,7 +15,7 @@ Big application usually contains many python files, the import statement allows 
 import mod
 When the interpreter executes the above import statement, it searches for mod.py in a list of directories assembled from the following sources:
 The directory from which the input script was run or the current directory if the interpreter is being run interactively
-The list of directories contained in the PYTHONPATH environment variable, if it is set (not recommended)
+The list of directories contained in the PYTHONPATH environment variable, if it is set (<b>not recommended</b>)
 An installation-dependent list of directories configured at the time Python is installed
 If a file named __init__.py is present in a package directory, it is invoked when the package or a module in the package is imported.
 The resulting search path is accessible in the Python variable sys.path which you can print:
@@ -40,7 +40,8 @@ Print statement:
                         print ('A')     # works for Python2 and Python3
 In Python 2, implicit str type is ASCII. But in Python 3.x implicit str type is Unicode.
 xrange() exists in Python2 only; under Python3  it is named range()
-Virtual Environments
+
+<h3>Virtual Environments</h3>
 Using virtual environments allows you to avoid installing Python packages globally which could break system tools or other projects.
 There are several tools to manage the virtual environments: https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe/41573588#41573588
 The virtualenv is the basic tool which works with Python2 and Python3: https://virtualenv.pypa.io/en/stable/
@@ -92,6 +93,7 @@ How to see where module is located in file system:
     import six
     print six.__file__
 
+<h3>PYTHONPATH</h3> 
 In order to let python search first the most updated version of certain package, 
 instead of removing the system version, what can be done is to set the system variable 
 PYTHONPATH in the ~/.bash_profile (or ~/.bashrc if linux) config file to the path where the new packages are installed:
@@ -105,6 +107,8 @@ An alternative is to modify the python path inside your python script by adding 
 
 This needs to be done for every script you need a certain package version. 
 You might want for some reason use an older version that you have installed. 
+
+<h3>Random notes</h3>
 
 assert hasattr(Base,'foo'), "no method foo in Base class"
 
