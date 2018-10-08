@@ -4,6 +4,59 @@
 
 <h2>Python</h2>
 <pre>
+
+Python is a dynamically-typed language.  The most common implementation is CPython. There are others, e.g. Jython, PyPy. 
+CPython compiles the python code into  the byte code (myfile.py → mifile.pyc). Then the python interpreter consumes the byte code and act on it.  
+For performance reasons Python doesn't recompile every time, so it caches the content of the compiled code. https://indianpythonista.wordpress.com/2018/01/05/demystifying-pyc-files/
+Python can be invoked from the command line with several flags; you can find the flags via
+python --help
+Modules and Packages
+Big application usually contains many python files, the import statement allows to glue the code.
+import mod
+When the interpreter executes the above import statement, it searches for mod.py in a list of directories assembled from the following sources:
+The directory from which the input script was run or the current directory if the interpreter is being run interactively
+The list of directories contained in the PYTHONPATH environment variable, if it is set (not recommended)
+An installation-dependent list of directories configured at the time Python is installed
+If a file named __init__.py is present in a package directory, it is invoked when the package or a module in the package is imported.
+The resulting search path is accessible in the Python variable sys.path which you can print:
+python -c "import os, sys; print(os.linesep.join(sys.path))"
+https://realpython.com/python-modules-packages/
+
+Package managers: pip and conda
+PIP package manager: https://pypi.org/project/pip/
+The 3rd-party libraries installed by pip are usually here:
+python -c "import os,  site; print(os.linesep.join(site.getsitepackages()))"
+pip commands:  
+pip -V # shows pip version and path (make sure it in sync with output of site.getsitepackages()) above)
+pip list                                    # all installed packages
+pip show <packagename>     # the package details
+pip install <packagename>
+conda is similar to pip - it goes with Anaconda Python distribution https://conda.io/docs/user-guide/overview.html
+Python 2 vs Python 3
+Integer division:
+                        7/5       # returns 1 for Python 2; returns 1.4 for Python3
+Print statement:
+                        print 'A'       # works for Python2 only
+                        print ('A')     # works for Python2 and Python3
+In Python 2, implicit str type is ASCII. But in Python 3.x implicit str type is Unicode.
+xrange() exists in Python2 only; under Python3  it is named range()
+Virtual Environments
+Using virtual environments allows you to avoid installing Python packages globally which could break system tools or other projects.
+There are several tools to manage the virtual environments: https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe/41573588#41573588
+The virtualenv is the basic tool which works with Python2 and Python3: https://virtualenv.pypa.io/en/stable/
+By default, Virtualenv creates virtual environment using the version of Python under which it is installed.  To specify another version of the Python use the -p option.
+On some occasions, you might want to create a virtual environment with the packages from the global Python installation. This can be accomplished using --system-site-packages option.
+virtualenv  v1      # create new virtual environment named v1; it will have the local folders: bin, include and lib
+source v1/bin/activate      # activate it; it changes the $PATH so that the bin/directory of the virtual environment will become first in the list
+echo $PATH                         # it is different now
+which python
+pip install ...                        # packages will be installed into v1/lib/pythonX.Y/site-packages 
+deactivate                           # deactivate 
+
+
+
+
+
 http://pycon.ru/
 <a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/python>My Python code snippets</a>
  
@@ -20,8 +73,9 @@ https://habr.com/post/421993/
 
 https://www.youtube.com/watch?time_continue=187&v=WiQqqB9MlkA . Nina Zakharenko - Elegant Solutions For Everyday Python Problems - PyCon 2018
 
-
+<b>
 https://stackoverflow.com/questions/45684618/having-default-mac-python-2-7-and-anaconda-python-3
+</b>
 
 <a href=https://realpython.com/python-virtual-environments-a-primer/>Python virtual env</a>
 <a href=http://devarea.com/python-working-with-virtual-environments>Python virtual environment</a>
