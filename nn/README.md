@@ -121,6 +121,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://github.com/tensorflow/models/tree/master/research/object_detection>
 
+<https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md>
+
 <https://twitter.com/hashtag/tensorflowjs>
 
 <https://tf.wiki/en/preface.html> . 
