@@ -158,6 +158,8 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 
 <https://towardsdatascience.com/building-an-image-classifier-running-on-raspberry-pi-a7a45153acc8>
 
+<https://towardsdatascience.com/the-4-convolutional-neural-network-models-that-can-classify-your-fashion-images-9fe7f3e5399d>
+
 the 28 × 28 image was considered a one-dimensional vector of size 282 = 796. This clearly throws away lots of the spatial information contained in the image. Not surprisingly, the neural networks com- munity realized these problems and designed a class of neural network architectures, convolutional neural net- works or CNNs, that take advantage of this additional structure (locality and translational invariance) 
 
 <http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html>
