@@ -20,7 +20,6 @@
 
 <https://discuss.codechef.com/questions/48877/data-structures-and-algorithms>
 
-<https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed>
 
 <https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0>
 
@@ -32,6 +31,14 @@
 <https://habr.com/post/423679/>
 
 <http://declanoller.com/2018/09/03/the-egg-drop-puzzle-brute-force-dynamic-programming-and-markov-decision-processes/>
+
+## Hash map
+
+<https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed>
+
+<https://rcoh.me/posts/hash-map-analysis/>
+
+<https://www.reddit.com/r/programming/comments/9lw5pu/advanced_techniques_to_implement_fast_hash_tables/>
 
 ## Consistent Hashing
 <https://www.toptal.com/big-data/consistent-hashing>
