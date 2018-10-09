@@ -186,9 +186,11 @@ the 28 × 28 image was considered a one-dimensional vector of size 282 = 796. Th
 
 <https://habr.com/company/binarydistrict/blog/354524/>
 
-https://heartbeat.fritz.ai/the-5-computer-vision-techniques-that-will-change-how-you-see-the-world-1ee19334354b
-https://towardsdatascience.com/real-time-object-detection-api-using-tensorflow-and-opencv-47b505d745c4
-https://towardsdatascience.com/is-google-tensorflow-object-detection-api-the-easiest-way-to-implement-image-recognition-a8bd1f500ea0
+<https://heartbeat.fritz.ai/the-5-computer-vision-techniques-that-will-change-how-you-see-the-world-1ee19334354b>
+
+<https://towardsdatascience.com/real-time-object-detection-api-using-tensorflow-and-opencv-47b505d745c4>
+
+<https://towardsdatascience.com/is-google-tensorflow-object-detection-api-the-easiest-way-to-implement-image-recognition-a8bd1f500ea0>
 
 <https://habrahabr.ru/post/354092/> Object recognition
 
@@ -206,17 +208,17 @@ https://www.pyimagesearch.com/2017/09/18/real-time-object-detection-with-deep-le
 
 <https://pjreddie.com/darknet/yolo/>
 
-https://pythonprogramming.net/video-tensorflow-object-detection-api-tutorial/
+<https://pythonprogramming.net/video-tensorflow-object-detection-api-tutorial/>
 
-https://www.coursera.org/learn/convolutional-neural-networks/lecture/VgyWR/object-detection
+<https://www.coursera.org/learn/convolutional-neural-networks/lecture/VgyWR/object-detection>
 
 
 <https://aws.amazon.com/rekognition/>
 
 <https://www.microsoft.com/developerblog/2017/04/10/end-end-object-detection-box/>
 
-https://towardsdatascience.com/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774
+<https://towardsdatascience.com/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774>
 
-https://software.intel.com/en-us/articles/visualising-cnn-models-using-pytorch
+<https://software.intel.com/en-us/articles/visualising-cnn-models-using-pytorch>
 
 <https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606>
