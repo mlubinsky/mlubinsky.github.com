@@ -1,8 +1,12 @@
 <https://www.bitdegree.org/user/course/data-structures-and-algorithms>
 
-<https://habr.com/post/419945/> Google interview
+##  Google interview
+<https://habr.com/post/419945/>
 
-<https://habr.com/company/google/blog/425279/> Google interiew
+<https://habr.com/company/google/blog/425279/> 
+
+https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knights-dialer-f780d516f029
+
 
 <https://www.youtube.com/watch?v=5o-kdjv7FD0>
 
