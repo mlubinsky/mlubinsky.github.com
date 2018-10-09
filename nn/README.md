@@ -8,6 +8,10 @@
 
 <https://onnx.ai/> NN format
 
+<https://twitter.com/petewarden>
+
+<https://twitter.com/lc0d3r>
+
 <https://www.youtube.com/watch?v=o64FV-ez6Gw&feature=youtu.be>
 
 <https://bair.berkeley.edu/blog/2018/08/06/recurrent/>
@@ -25,6 +29,10 @@
 ![ActivationFunction](ActivationFunction.png)
 
 ## Deep Learning
+
+<https://arxiv.org/abs/1810.01109> Deep Learning on Android
+
+<https://arxiv.org/abs/1809.02165v1> . Generic object detection
 
 <http://www.deeplearningbook.org/> . BOOK
 
@@ -110,6 +118,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 <https://github.com/fotisk07/Deep-Learning-Coursera>
 
 ## TensorFlow
+
+<https://twitter.com/hashtag/tensorflowjs>
 
 <https://tf.wiki/en/preface.html> . 
  
