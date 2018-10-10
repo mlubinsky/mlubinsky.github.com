@@ -130,6 +130,8 @@ https://www.codeproject.com/Articles/3613/A-generic-reusable-and-extendable-matr
 
 ### Memory managment:  shared_ptr  weak_ptr  unique_ptr
 
+<https://habr.com/post/425837/>
+
 <https://techtalk-test.intersec.com/2013/07/memory-part-1-memory-types/>
 
 <https://techtalk-test.intersec.com/2013/07/memory-part-2-understanding-process-memory/>
