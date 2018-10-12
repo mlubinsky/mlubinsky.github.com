@@ -36,6 +36,8 @@
 
 <http://www.deeplearningbook.org/> . BOOK
 
+<https://www.youtube.com/playlist?list=PLldrX-tcWesPRtPAJuQkBo3drEMyAlV2c> .  complimentary youtube channel
+
 <http://neuralnetworksanddeeplearning.com/index.html> . book
 
 <https://github.com/rasbt/deep-learning-book> book
