@@ -25,6 +25,7 @@
 
 <https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92>
 
+<https://tls.ulfheim.net/> TLS explained
 
 ## youtube programming
 
