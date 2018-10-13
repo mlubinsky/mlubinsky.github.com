@@ -28,6 +28,8 @@ g++ -std=c++11 boolean_matrix.cpp
 
 <https://habr.com/company/pvs-studio/blog/414467/>
 
+<https://github.com/simongog/sdsl-lite>
+
 ### Constructor
 
 A derived class constructor always calls a base class constructor.
