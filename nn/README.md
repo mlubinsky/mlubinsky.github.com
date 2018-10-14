@@ -120,6 +120,7 @@ Rectified Linear activation function does not have this problem. The gradient is
 <https://github.com/fotisk07/Deep-Learning-Coursera>
 
 ## TensorFlow
+<https://github.com/open-source-for-science/TensorFlow-Course>
 
 <https://github.com/tensorflow/models/tree/master/research/object_detection>
 
