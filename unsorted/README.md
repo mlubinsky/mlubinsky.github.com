@@ -31,6 +31,8 @@
 
 <https://techyaks.com/>
 
+<https://news.ycombinator.com/item?id=18217762>
+
 <https://www.youtube.com/user/sentdex/videos>
 
 <https://www.youtube.com/user/schafer5/videos>
