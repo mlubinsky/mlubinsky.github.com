@@ -1,5 +1,7 @@
 <https://ubereng.wpengine.com/forecasting-introduction/>
 
+<https://www.reddit.com/r/MachineLearning/comments/9ofd7x/d_machine_learning_on_time_series_data/>
+
 <http://www.uokufa.edu.iq/staff/ehsanali/Tan.pdf>  BOOK Introduction to DataMining
 
 <https://habr.com/company/ods/blog/327242/>
