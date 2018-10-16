@@ -8,6 +8,8 @@
 
 <https://onnx.ai/> NN format
 
+<http://rapids.ai/>
+
 <https://twitter.com/petewarden>
 
 <https://twitter.com/lc0d3r>
