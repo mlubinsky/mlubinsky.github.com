@@ -20,6 +20,8 @@
 
 <https://www.youtube.com/watch?v=Agv-SioIZac&list=PL-_cKNuVAYAUWTBKPpWbTGmo5zadoaeCk>
 
+<https://jalammar.github.io/feedforward-neural-networks-visual-interactive/>
+
 <https://deepnotes.io/>
 
 <http://iamtrask.github.io/>
