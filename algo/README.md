@@ -56,6 +56,8 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 <https://en.wikipedia.org/wiki/Locality-sensitive_hashing>
 
+<http://unboxresearch.com/articles/lsh_post1.html>
+
 <https://dev.to/s_awdesh> duplicates in array, dual pivot sort
 
 ##  Dynamic programming
