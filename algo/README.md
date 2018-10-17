@@ -79,4 +79,6 @@ http://www.cmsmagazine.ru/library/items/programming/80-problems-with-it-intervie
 
 <https://nikic.github.io/2012/06/15/The-true-power-of-regular-expressions.html>
 
+<https://rcoh.me/posts/no-magic-regular-expressions-part-3/>
+
 https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92
