@@ -27,6 +27,8 @@
 
 <https://tls.ulfheim.net/> TLS explained
 
+<https://github.com/darkleaf/app-from-scratch/blob/master/0-intro/2-what.md> Closure Rus
+
 ## youtube programming
 
 <https://techyaks.com/>
