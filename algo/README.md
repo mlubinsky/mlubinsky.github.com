@@ -1,5 +1,7 @@
 <https://www.bitdegree.org/user/course/data-structures-and-algorithms>
 
+<https://news.ycombinator.com/item?id=18236396> .  Favorite algos
+
 ##  Google interview
 <https://habr.com/post/419945/>
 
