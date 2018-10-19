@@ -6,6 +6,8 @@
 
 <https://ds9a.nl/articles/posts/cpp-2/>
 
+<https://tests4geeks.com/cpp-interview-questions/>
+
 <https://habrahabr.ru/post/182920/>
 
 <https://habr.com/company/pvs-studio/blog/418645/> Conference
