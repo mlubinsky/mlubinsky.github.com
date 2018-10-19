@@ -4,6 +4,8 @@
 
 <https://eng.uber.com/uber-big-data-platform/>
 
+<https://www.memsql.com/blog/real-time-analytics-at-uber-scale/>
+
 <https://www.cockroachlabs.com/blog/brief-history-high-availability/>
 
 <https://www.youtube.com/watch?v=kdmAiQeYGgE> Building a real-time analytics pipeline with BigQuery and Cloud Dataflow
