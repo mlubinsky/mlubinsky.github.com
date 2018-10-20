@@ -2,6 +2,8 @@
 
 <https://news.ycombinator.com/item?id=18236396> .  Favorite algos
 
+<https://aryaboudaie.com/interviews/python/technical/2017/11/06/python-for-interviews.html>
+
 ##  Google interview
 <https://habr.com/post/419945/>
 
