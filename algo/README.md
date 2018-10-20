@@ -40,6 +40,8 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 ## Hash map
 
+<https://en.wikipedia.org/wiki/Hash_function>
+
 <https://rcoh.me/posts/hash-map-analysis/>
 
 <https://attractivechaos.wordpress.com/2018/10/01/advanced-techniques-to-implement-fast-hash-tables/>
