@@ -71,6 +71,8 @@ https://www.machinelearningplus.com/101-numpy-exercises-python/
 ```
 ## Pandas
 ```
+https://stackoverflow.com/questions/29432629/correlation-matrix-using-pandas
+
 http://www.dataschool.io/easier-data-analysis-with-pandas/
 https://news.ycombinator.com/item?id=16473482
 http://nbviewer.jupyter.org/github/pybokeh/jupyter_notebooks/blob/master/pandas/PandasCheatSheet.ipynb
