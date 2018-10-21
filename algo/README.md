@@ -1,3 +1,5 @@
+<http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
+
 <https://www.bitdegree.org/user/course/data-structures-and-algorithms>
 
 <https://news.ycombinator.com/item?id=18236396> .  Favorite algos
