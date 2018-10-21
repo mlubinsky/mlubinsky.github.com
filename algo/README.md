@@ -4,6 +4,11 @@
 
 <https://aryaboudaie.com/interviews/python/technical/2017/11/06/python-for-interviews.html>
 
+<https://www.youtube.com/watch?v=vS4Zn1a9KUc>
+
+<https://www.youtube.com/watch?v=7Hlb8YX2-W8>
+
+
 ##  Google interview
 <https://habr.com/post/419945/>
 
