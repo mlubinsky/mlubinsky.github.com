@@ -10,6 +10,8 @@
 
 <https://habrahabr.ru/post/182920/>
 
+https://habr.com/users/dm_frox/posts/
+
 <https://habr.com/company/pvs-studio/blog/418645/> Conference
 
 <https://www.youtube.com/channel/UCifgOu6ARWbZ_dV29gss8xw> CPP rus conference 
