@@ -10,6 +10,10 @@
 
 <https://www.youtube.com/watch?v=7Hlb8YX2-W8>
 
+<http://csc.kth.se/~jsannemo/slask/main.pdf> Book
+
+<https://cses.fi/book.pdf> Book
+
 
 ##  Google interview
 <https://habr.com/post/419945/>
