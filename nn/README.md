@@ -1,3 +1,5 @@
+<https://arxiv.org/abs/1810.08533>   convolution and correlation using Fourier transform
+
 <https://habr.com/post/417209/>
 
 <https://habr.com/post/414165/>
