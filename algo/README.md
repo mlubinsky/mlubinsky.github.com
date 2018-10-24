@@ -14,6 +14,8 @@
 
 <https://cses.fi/book.pdf> Book
 
+<http://e-maxx.ru/index.php>
+
 
 ##  Google interview
 <https://habr.com/post/419945/>
