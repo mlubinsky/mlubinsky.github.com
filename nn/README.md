@@ -236,6 +236,8 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 
 ## Image processing
 
+<https://www.pyimagesearch.com/2018/10/22/object-tracking-with-dlib/>
+
 <https://arxiv.org/abs/1809.02165v1>
 
 <https://www.embedded-vision.com/industry-analysis/books>
