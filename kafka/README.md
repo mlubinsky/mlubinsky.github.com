@@ -1,4 +1,7 @@
 ## Big Data Architecture
+<https://habr.com/post/427739/>
+
+<https://herbertograca.com/2017/07/03/the-software-architecture-chronicles/>
 
 <https://www.youtube.com/watch?v=3UfZN59Nsk8> Dataflow: A Unified Model for Batch and Streaming Data Processing
 
