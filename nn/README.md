@@ -1,10 +1,10 @@
 <https://arxiv.org/abs/1810.08533>   convolution and correlation using Fourier transform
 
-<https://habr.com/post/417209/>
+<https://habr.com/post/417209/> . Обзор курсов и статей на русском языке
 
-<https://habr.com/post/414165/>
+<https://habr.com/post/414165/>  Курс о Deep Learning на пальцах
 
-<https://habr.com/company/ods/blog/344044/>
+<https://habr.com/company/ods/blog/344044/> . Материалы открытого курса OpenDataScience 
 
 <https://mlcourse.ai/>
 
@@ -16,11 +16,11 @@
 
 <https://twitter.com/lc0d3r>
 
-<https://www.youtube.com/watch?v=o64FV-ez6Gw&feature=youtu.be>
+<https://www.youtube.com/watch?v=o64FV-ez6Gw> Joel Grus - Livecoding Madness - Let's Build a Deep Learning Library
 
 <https://bair.berkeley.edu/blog/2018/08/06/recurrent/>
 
-<https://www.youtube.com/watch?v=Agv-SioIZac&list=PL-_cKNuVAYAUWTBKPpWbTGmo5zadoaeCk>
+<https://www.youtube.com/watch?v=Agv-SioIZac&list=PL-_cKNuVAYAUWTBKPpWbTGmo5zadoaeCk> russian
 
 <https://jalammar.github.io/feedforward-neural-networks-visual-interactive/>
 
