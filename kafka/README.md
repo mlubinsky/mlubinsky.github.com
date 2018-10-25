@@ -1,4 +1,7 @@
 ## Big Data Architecture
+
+<http://app-from-scratch.darkleaf.ru/>
+
 <https://habr.com/post/427739/>
 
 <https://herbertograca.com/2017/07/03/the-software-architecture-chronicles/>
