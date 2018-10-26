@@ -1,5 +1,7 @@
 <http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
 
+<https://hackernoon.com/10-data-structure-algorithms-and-programming-courses-to-crack-any-coding-interview-e1c50b30b927>
+
 <https://www.bitdegree.org/user/course/data-structures-and-algorithms>
 
 <https://news.ycombinator.com/item?id=18236396> .  Favorite algos
