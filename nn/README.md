@@ -238,6 +238,8 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 
 <https://www.learnopencv.com>
 
+<https://towardsdatascience.com/evolution-of-object-detection-and-localization-algorithms-e241021d8bad>
+
 <https://www.pyimagesearch.com/2018/10/22/object-tracking-with-dlib/>
 
 <https://arxiv.org/abs/1809.02165v1>
