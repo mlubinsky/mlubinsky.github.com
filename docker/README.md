@@ -4,6 +4,9 @@
 
 <https://www.youtube.com/watch?v=8hLS1lGk8Fc> make development env using Docker
 
+<https://youtu.be/0mil0KBK4Tw> . russian
+
+
 Example from <https://github.com/bobbywlindsey/docker-data-science/blob/master/Dockerfile>
 <https://towardsdatascience.com/docker-for-data-scientists-5732501f0ba4>
 
