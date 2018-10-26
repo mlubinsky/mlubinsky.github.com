@@ -265,6 +265,8 @@ The CNN take advantage of this additional structure (locality and translational 
 
 <https://habr.com/hub/image_processing/>
 
+<https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721>
+
 <https://habr.com/company/dataart/blog/350120/>
 
 <https://rowhanm.github.io/MiniCatsDogs/>
