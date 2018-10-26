@@ -4,6 +4,8 @@
 
 <https://codeburst.io/overview-of-python-data-visualization-tools-e32e1f716d10>
 
+<https://youtu.be/FytuB8nFHPQ>
+
 <http://pbpython.com/python-vis-flowchart.html>
 
 <https://dsaber.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/>
