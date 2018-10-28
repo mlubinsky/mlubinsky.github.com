@@ -72,6 +72,7 @@
 
 ## Health
 <https://zen.yandex.ru/media/zoh/statichnyi-kompleks-dlia-mujchin-posle-40-mujskaia-sila-5bbed62f091ba200aa3a94a9>
+<https://news.ycombinator.com/item?id=18316917> back pain
 
 ## Tennis
 
