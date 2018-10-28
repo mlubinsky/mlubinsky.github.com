@@ -84,8 +84,10 @@ https://github.com/matbor/mqtt2highcharts
 
 https://gist.github.com/vitormeriat/b6de7aa0a28af2b45f15c3d67721e051
 
-### Visualization
+### Visualization on desktop
 <https://veusz.github.io/>
+
+<http://www.wizardmac.com/>
 
 <https://habr.com/company/pixonic/blog/414921/>  Apache Zeppelin
 
