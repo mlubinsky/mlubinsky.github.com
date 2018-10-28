@@ -10,6 +10,8 @@ Lambda example
     ..
 ```
 
+https://www.expeditedssl.com/aws-in-plain-english
+
 <https://habr.com/post/421991/> free AWS
 
 <https://news.ycombinator.com/item?id=18042382>  DB on AWS
