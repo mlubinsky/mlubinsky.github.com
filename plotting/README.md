@@ -2,6 +2,8 @@
 
 ## Python plotting
 
+<https://github.com/mcastorina/graph-cli> .  plottting from CSV
+
 <https://codeburst.io/overview-of-python-data-visualization-tools-e32e1f716d10>
 
 <https://youtu.be/FytuB8nFHPQ>
