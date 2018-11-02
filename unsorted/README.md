@@ -18,6 +18,8 @@
 
 <https://youtu.be/TFhKK6bWcYE> . average distance between points on line, in square
 
+<https://habr.com/post/428610/> paradox of bus waiting time
+
 <https://waterprogramming.wordpress.com/2018/09/04/implementation-of-the-moving-average-filter-using-convolution/>
 
 <https://news.ycombinator.com/item?id=17202615> some youtube channels
