@@ -105,7 +105,20 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://www.youtube.com/watch?v=aircAruvnKk>
 
+ 
+## CNN 
+<https://towardsdatascience.com/the-4-convolutional-neural-network-models-that-can-classify-your-fashion-images-9fe7f3e5399d>
+
+<https://www.coursera.org/learn/convolutional-neural-networks/lecture/VgyWR/object-detection>
+
+<https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721>
+
+<https://www.youtube.com/watch?v=JB8T_zN7ZC0>  Brandon Rohrer How convolutional neural networks work, in depth
+
 <https://medium.com/inbrowserai/simple-diagrams-of-convoluted-neural-networks-39c097d2925b>
+
+
+
 
 <https://recurrentnull.wordpress.com/2017/12/14/practical-deep-learning-talk/>
 
@@ -248,7 +261,8 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 
 <https://towardsdatascience.com/building-an-image-classifier-running-on-raspberry-pi-a7a45153acc8>
 
-<https://towardsdatascience.com/the-4-convolutional-neural-network-models-that-can-classify-your-fashion-images-9fe7f3e5399d>
+
+
 
 <https://towardsdatascience.com/neural-network-embeddings-explained-4d028e6f0526>
 
@@ -265,7 +279,6 @@ The CNN take advantage of this additional structure (locality and translational 
 
 <https://habr.com/hub/image_processing/>
 
-<https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721>
 
 <https://habr.com/company/dataart/blog/350120/>
 
@@ -313,7 +326,6 @@ https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detec
 
 <https://pythonprogramming.net/video-tensorflow-object-detection-api-tutorial/>
 
-<https://www.coursera.org/learn/convolutional-neural-networks/lecture/VgyWR/object-detection>
 
 
 <https://aws.amazon.com/rekognition/>
