@@ -1,6 +1,8 @@
 ## Big Data Architecture
 
-<http://app-from-scratch.darkleaf.ru/>
+<http://app-from-scratch.darkleaf.ru/> . Clojure
+
+https://habr.com/company/yandex/blog/428700/ .  Model deployment
 
 <https://habr.com/post/427739/>
 
