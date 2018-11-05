@@ -24,6 +24,8 @@
 ##  Google interview
 <https://habr.com/post/419945/>
 
+<https://news.ycombinator.com/item?id=18374938>
+
 <https://habr.com/company/google/blog/425279/> 
 
 https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knights-dialer-f780d516f029
