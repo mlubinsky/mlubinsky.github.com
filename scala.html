@@ -31,12 +31,21 @@ http://www.lihaoyi.com/post/EasyParsingwithParserCombinators.html
 
 def nTimes(f: Int => Int, n: Int, x: Int): Int =
    if (n < 1) x
-   else nTimes(f, n-1, f(x)
+   else nTimes(f, n-1, f(x))
              
 Usage:             
  val plusOne =(x: Int) => x+1
  println(nTimes(plusOne, 10, 1)   
+
+ Let do it differently by returning lambda:
+def nTimesBetter(f: Int => Int, n: Int): (Int => Int) =
+   if (n < 1) (x:Int) => x
+   else (x: Int) => nTimesBetter(f, n-1) (f(x))
              
+Usage:             
+ val plus10 = nTimesBetter(plusOne, 10)
+ println( plus10(1))     
+    
 <h2>apply()</h2>
 A simple use of apply is to define it on an Object. This lets you call the Object as if the object itself was a function. Here’s an example:
 
