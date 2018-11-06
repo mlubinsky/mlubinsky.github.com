@@ -45,9 +45,25 @@ def nTimesBetter(f: Int => Int, n: Int): (Int => Int) =
 Usage:             
  val plus10 = nTimesBetter(plusOne, 10)
  println( plus10(1))     
+
+<h2>Carried Function</h2>
+val superAdder: Int => (Int=>Int) = (x: Int) => (y: Int) = x+y
+val add3 = superAdder(3) // y => 3+y
+println(add3(10))
+println(superAdder(3)(10)) 
+
+    Functions with muliple parameter lists:
+  def curriedFormatter(c: String) (x: Double): String=c.format(x)
+  val standardFormat: (Double=> String) = curriedFormatter("%4.2f")
+  val precisionFormat: (Double=> String) = curriedFormatter("%10.8f")
+    
+  println(standardFormat(Math.PI))
+  println(precisionFormat(Math.PI))
+    
     
 <h2>apply()</h2>
-A simple use of apply is to define it on an Object. This lets you call the Object as if the object itself was a function. Here’s an example:
+A simple use of apply is to define it on an Object. This lets you call the Object as if the object itself was a function. 
+Here’s an example:
 
 object Greet {
  def apply(name: String): String = {
