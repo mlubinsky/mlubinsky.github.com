@@ -25,6 +25,18 @@ http://www.lihaoyi.com/post/EasyParsingwithParserCombinators.html
 
    Scala keyword <b>lazy</b>: calculated once at the moment of 1st use
 
+<h2>High Order Function</h2>
+// Apply function  n times to a value x
+// nTimes (f, n, x)  = f(f(...f(x)) = nTimes(f, n-1, f(x))
+
+def nTimes(f: Int => Int, n: Int, x: Int): Int =
+   if (n < 1) x
+   else nTimes(f, n-1, f(x)
+             
+Usage:             
+ val plusOne =(x: Int) => x+1
+ println(nTimes(plusOne, 10, 1)   
+             
 <h2>apply()</h2>
 A simple use of apply is to define it on an Object. This lets you call the Object as if the object itself was a function. Here’s an example:
 
