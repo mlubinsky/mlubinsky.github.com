@@ -21,6 +21,9 @@
 <http://e-maxx.ru/index.php>
 
 
+<https://blog.datopia.io/2018/11/03/hitchhiker-tree/>
+
+
 ##  Google interview
 <https://habr.com/post/419945/>
 
