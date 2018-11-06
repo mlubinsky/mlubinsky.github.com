@@ -117,6 +117,7 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://medium.com/inbrowserai/simple-diagrams-of-convoluted-neural-networks-39c097d2925b>
 
+<https://github.com/vdumoulin/conv_arithmetic>
 
 
 
