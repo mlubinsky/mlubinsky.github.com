@@ -23,6 +23,9 @@
 
 <https://blog.datopia.io/2018/11/03/hitchhiker-tree/>
 
+<https://github.com/tayllan/awesome-algorithms>
+
+<https://github.com/karan/Projects>
 
 ##  Google interview
 <https://habr.com/post/419945/>
