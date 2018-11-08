@@ -12,6 +12,8 @@
 
 <http://rapids.ai/>
 
+<https://www.liip.ch/en/blog/numbers-recognition-mnist-on-an-iphone-with-coreml-from-a-to-z>
+
 <https://twitter.com/petewarden>
 
 <https://twitter.com/lc0d3r>
