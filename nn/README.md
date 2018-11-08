@@ -115,6 +115,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://www.liip.ch/en/blog/poke-zoo-or-making-deep-learning-tell-oryxes-apart-from-lamas-in-a-zoo-part-1-the-idea-and-concepts>
 
+<https://blog.sicara.com/about-convolutional-layer-convolution-kernel-9a7325d34f7d>
+
 <https://www.coursera.org/learn/convolutional-neural-networks/lecture/VgyWR/object-detection>
 
 <https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721>
@@ -125,7 +127,11 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://github.com/vdumoulin/conv_arithmetic>
 
+<https://arxiv.org/pdf/1707.07012.pdf> NasNet
 
+<https://www.cbronline.com/news/google-ai-creates-novel-neural-network-nasnet> NasNet
+
+<https://ai.googleblog.com/2017/11/automl-for-large-scale-image.html> .  AutoML
 
 <https://recurrentnull.wordpress.com/2017/12/14/practical-deep-learning-talk/>
 
