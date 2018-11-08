@@ -109,6 +109,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 ## CNN 
 <https://towardsdatascience.com/the-4-convolutional-neural-network-models-that-can-classify-your-fashion-images-9fe7f3e5399d>
 
+<https://towardsdatascience.com/types-of-convolutions-in-deep-learning-717013397f4d>
+
 <https://www.coursera.org/learn/convolutional-neural-networks/lecture/VgyWR/object-detection>
 
 <https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721>
