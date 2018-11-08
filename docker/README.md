@@ -2,6 +2,8 @@
 
 <https://github.com/floydhub/dl-docker> Docker image with ML
 
+<https://github.com/wagoodman/dive> . explore image
+
 <https://www.youtube.com/watch?v=8hLS1lGk8Fc> make development env using Docker
 
 <https://youtu.be/0mil0KBK4Tw> . russian
