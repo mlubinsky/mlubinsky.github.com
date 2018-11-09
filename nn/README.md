@@ -1,5 +1,7 @@
 <https://arxiv.org/abs/1810.08533>   convolution and correlation using Fourier transform
 
+<https://www.nvidia.ru/object/machine-learning-ai-nvidia-blog-ru.html>
+
 <https://habr.com/post/417209/> . Обзор курсов и статей на русском языке
 
 <https://habr.com/post/414165/>  Курс о Deep Learning на пальцах
