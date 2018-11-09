@@ -116,4 +116,14 @@ a.reduceLeft(_ * _)  // a.reduceLeft(_ min _)   //  a.reduceLeft(_ max _)
 
 The foldLeft method works just like reduceLeft, but it lets you set a seed value to be used for the first element.
 
+    <b>map and flatMap</b>
+    
+val numbers=List(1,2,3,4)
+val chars=List('a','b','c','d')
+val colors=List("black","white")
+
+val combinations=numbers.flatMap(n => chars.flatMap(c => colors.map(color => "" + c + n + "-" + color)))
+println (combinations)
+List(a1-black, a1-white, b1-black, b1-white, c1-black, c1-white, d1-black, d1-white, a2-black, a2-white, b2-black, b2-white, c2-black, c2-white, d2-black, d2-white, a3-black, a3-white, b3-black, b3-white, c3-black, c3-white, d3-black, d3-white, a4-black, a4-white, b4-black, b4-white, c4-black, c4-white, d4-black, d4-white)    
+    
 </pre>
