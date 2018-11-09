@@ -38,11 +38,14 @@ vanishing gradients: due to the backprop in time causing weights to grow (or dec
 ``` 
 <https://www.youtube.com/watch?v=WCUNPb-5EYI>
 
+https://heartbeat.fritz.ai/using-a-keras-long-shortterm-memory-lstm-model-to-predict-stock-prices-a08c9f69aa74
 
 <https://www.youtube.com/watch?v=QuELiw8tbx8&index=9&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6> Stanford
 <https://www.youtube.com/watch?v=6_MO12fPC-0&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6&index=12> Standord
 
 <https://www.altumintelligence.com/articles/a/Time-Series-Prediction-Using-LSTM-Deep-Neural-Networks>
+
+<https://github.com/jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction>
 
 <https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/> 
  
@@ -59,6 +62,7 @@ vanishing gradients: due to the backprop in time causing weights to grow (or dec
 <https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi>
 
 <https://www.asozykin.ru/courses/nnpython> 
+
 <https://tproger.ru/translations/neural-network-zoo-2/>
 
 <https://uzclip.net/video/1DNcYIN0aaA/%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D0%BD%D0%B8%D0%BA-deep-learning-%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BB%D1%8C%D1%86%D0%B0%D1%85.html>
