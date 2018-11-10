@@ -10,11 +10,13 @@
 
 <https://mlcourse.ai/>
 
-<https://onnx.ai/> NN format
+<https://onnx.ai/>  common NN format
 
 <http://rapids.ai/>
 
-<https://www.liip.ch/en/blog/numbers-recognition-mnist-on-an-iphone-with-coreml-from-a-to-z>
+<https://www.liip.ch/en/blog/numbers-recognition-mnist-on-an-iphone-with-coreml-from-a-to-z> .  CoreML
+
+<https://www.analyticsvidhya.com/blog/category/deep-learning/>
 
 <https://twitter.com/petewarden>
 
