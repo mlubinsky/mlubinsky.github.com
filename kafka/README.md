@@ -4,11 +4,15 @@
 
 https://habr.com/company/yandex/blog/428700/ .  Model deployment
 
+<https://habr.com/post/429472/> .  Consule SpringBoot Docker Compose
+
 <https://habr.com/post/427739/>
 
 <https://habr.com/post/428431/>
 
 <https://herbertograca.com/2017/07/03/the-software-architecture-chronicles/>
+
+<https://medium.com/@adhorn/patterns-for-resilient-architecture-part-2-9b51a7e2f10f>
 
 <https://www.youtube.com/watch?v=3UfZN59Nsk8> Dataflow: A Unified Model for Batch and Streaming Data Processing
 
