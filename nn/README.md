@@ -111,7 +111,17 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://www.youtube.com/watch?v=aircAruvnKk>
 
- 
+## Models
+
+MobeleNet
+MobeleNet DepthWise
+Res50
+GoogleNet
+SqueezeNet
+ShuffleNet
+Yolov3
+
+
 ## CNN 
 <http://cs231n.stanford.edu/>
 
