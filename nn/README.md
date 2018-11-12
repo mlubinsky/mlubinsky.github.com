@@ -113,6 +113,7 @@ Rectified Linear activation function does not have this problem. The gradient is
 
  
 ## CNN 
+<http://cs231n.stanford.edu/>
 
 <https://www.youtube.com/watch?v=SQ67NBCLV98>
 
