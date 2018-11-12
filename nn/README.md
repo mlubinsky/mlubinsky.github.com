@@ -141,7 +141,7 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://www.analyticsvidhya.com/blog/2018/11/implementation-faster-r-cnn-python-object-detection/>
 
-
+<https://habr.com/company/sap/blog/415657/> TensorFlow Object Detection API
 
 <https://ai.googleblog.com/2017/11/automl-for-large-scale-image.html> .  AutoML
 
