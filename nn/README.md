@@ -111,7 +111,9 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://www.youtube.com/watch?v=aircAruvnKk>
 
-## Models
+## Object Detection Models
+<https://en.wikipedia.org/wiki/Object_detection>
+
 ```
 MobileNet
 MobeleNet DepthWise
