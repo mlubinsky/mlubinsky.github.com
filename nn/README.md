@@ -112,7 +112,7 @@ Rectified Linear activation function does not have this problem. The gradient is
 <https://www.youtube.com/watch?v=aircAruvnKk>
 
 ## Models
-
+```
 MobeleNet
 MobeleNet DepthWise
 Res50
@@ -120,7 +120,9 @@ GoogleNet
 SqueezeNet
 ShuffleNet
 Yolov3
-
+```
+## DataSets
+  ImageNet
 
 ## CNN 
 <http://cs231n.stanford.edu/>
@@ -297,6 +299,11 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 
 <https://towardsdatascience.com/building-an-image-classifier-running-on-raspberry-pi-a7a45153acc8>
 
+<https://habr.com/post/429400/>
+
+<https://habr.com/post/428021/>
+
+<https://www.youtube.com/channel/UCp0a6npOi89ksgks3ej7FPw/videos> on Raspberry Pi 3
 
 
 
