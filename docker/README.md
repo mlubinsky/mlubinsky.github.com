@@ -2,6 +2,9 @@
 
 <https://github.com/floydhub/dl-docker> Docker image with ML
 
+
+<https://oneraynyday.github.io/dev/2017/08/03/Docker/>
+
 <https://github.com/wagoodman/dive> . explore image
 
 <https://www.youtube.com/watch?v=8hLS1lGk8Fc> make development env using Docker
