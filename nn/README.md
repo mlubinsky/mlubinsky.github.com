@@ -113,15 +113,23 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 ## Models
 ```
-MobeleNet
+MobileNet
 MobeleNet DepthWise
 Res50
 GoogleNet
 SqueezeNet
 ShuffleNet
-Yolov3
+YOLO v3
 ```
 ## DataSets
+
+<http://cocodataset.org/>
+
+<https://en.wikipedia.org/wiki/CIFAR-10> CIFAR 
+<https://en.wikipedia.org/wiki/List_of_datasets_for_machine_learning_research>
+
+<https://github.com/mpatacchiola/tensorbag>
+
   ImageNet
 
 ## CNN 
