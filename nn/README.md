@@ -135,6 +135,9 @@ YOLO v3
   ImageNet
 
 ## CNN 
+
+<https://en.wikipedia.org/wiki/Convolutional_neural_network>
+
 <http://cs231n.stanford.edu/>
 
 <https://www.youtube.com/watch?v=SQ67NBCLV98>
