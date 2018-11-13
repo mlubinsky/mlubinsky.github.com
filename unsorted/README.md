@@ -26,6 +26,8 @@
 
 <https://www.quickcode.co/engineer-blogs>  dev blogs of big companies
 
+<https://compsciclub.ru/courses/>   Comp science lectures
+
 <https://habr.com/company/globalsign/blog/348988/> Mozilla IoT Things
 
 <https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance>
