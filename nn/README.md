@@ -1,5 +1,7 @@
 <https://arxiv.org/abs/1810.08533>   convolution and correlation using Fourier transform
 
+<http://web.stanford.edu/class/cs294a/sparseAutoencoder.pdf>
+
 <https://www.nvidia.ru/object/machine-learning-ai-nvidia-blog-ru.html>
 
 <https://habr.com/post/417209/> . Обзор курсов и статей на русском языке
