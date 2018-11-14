@@ -8,8 +8,10 @@
 CPython compiles the python code into  the byte code (myfile.py → mifile.pyc). 
 Then the python interpreter consumes the byte code and act on it.  
 For performance reasons Python doesn't recompile every time, 
-so it caches the content of the compiled code. 
+so it caches the content of the compiled code.
+
 https://indianpythonista.wordpress.com/2018/01/05/demystifying-pyc-files/
+
 Python can be invoked from the command line with several flags; 
 you can find the flags via
 python --help
@@ -32,7 +34,9 @@ https://realpython.com/python-modules-packages/
 PIP package manager: https://pypi.org/project/pip/
 https://dev.to/elabftw/stop-using-sudo-pip-install-52mn
 The 3rd-party libraries installed by pip are usually here:
+
 python -c "import os,  site; print(os.linesep.join(site.getsitepackages()))"
+
 pip commands:  
 pip -V # shows pip version and path (make sure it in sync with output of site.getsitepackages()) above)
 pip list                                    # all installed packages
@@ -79,7 +83,8 @@ deactivate                           # deactivate
 
 http://pycon.ru/
 <a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/python>My Python code snippets</a>
- 
+
+https://python-patterns.guide/
 https://habr.com/company/it_people/blog/422363/ Videos from Russian Python Conf 
 https://github.com/faif/python-patterns
 http://book.pythontips.com/en/latest/__slots__magic.html
