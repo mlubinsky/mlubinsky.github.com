@@ -115,7 +115,7 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 ## Object Detection Architectures and Models
 <https://en.wikipedia.org/wiki/Object_detection>
-
+<https://medium.com/@fractaldle/brief-overview-on-object-detection-algorithms-ec516929be93>
 <https://medium.com/@14prakash/image-classification-architectures-review-d8b95075998f>
 
 ```
