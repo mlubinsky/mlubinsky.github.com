@@ -6,6 +6,8 @@ https://habr.com/company/yandex/blog/428700/ .  Model deployment
 
 <https://habr.com/post/429472/> .  Consule SpringBoot Docker Compose
 
+<https://github.com/kaiwaehner/ksql-udf-deep-learning-mqtt-iot>
+
 <https://habr.com/post/427739/>
 
 <https://habr.com/post/428431/>
