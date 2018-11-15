@@ -8,6 +8,8 @@ https://habr.com/company/yandex/blog/428700/ .  Model deployment
 
 <https://jeeconf.com/program/50-shades-of-data-how-when-and-why-big-relational-nosql-elastic-graph-event/>
 
+<https://github.com/kaiwaehner/kafka-connect-iot-mqtt-connector-example>
+
 <https://github.com/kaiwaehner/ksql-udf-deep-learning-mqtt-iot>
 
 <https://habr.com/post/427739/>
