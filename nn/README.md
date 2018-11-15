@@ -4,6 +4,8 @@
 
 <https://www.nvidia.ru/object/machine-learning-ai-nvidia-blog-ru.html>
 
+<https://habr.com/company/intel/blog/429818/> Intel Vision Accelerator with Deep Learning
+
 <https://habr.com/post/417209/> . Обзор курсов и статей на русском языке
 
 <https://habr.com/post/414165/>  Курс о Deep Learning на пальцах
