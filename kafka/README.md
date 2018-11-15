@@ -149,6 +149,12 @@ https://www.infoq.com/articles/traffic-data-monitoring-iot-kafka-and-spark-strea
 
 http://highscalability.com/blog/2018/4/9/give-meaning-to-100-billion-events-a-day-the-analytics-pipel.html
 
+https://jeeconf.com/program/the-journey-from-queues-to-data-pipeline-streams/
+
+https://jeeconf.com/program/building-event-sourced-systems-with-kafka-streams/
+
+https://jeeconf.com/program/reactive-stream-processing-with-akka-streams/
+
 https://hackernoon.com/thorough-introduction-to-apache-kafka-6fbf2989bbc1
 https://itnext.io/from-monoliths-to-microservices-b6b851ab43e3
 https://www.datanami.com/2018/04/30/how-netflix-optimized-flink-for-massive-scale-on-aws/ Flink
