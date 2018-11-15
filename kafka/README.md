@@ -116,7 +116,17 @@ https://habr.com/company/itsumma/blog/418389/
                                                      
  
 ##  Kafka
+ Producer:
+   - Async (no garantee)
+   - Commited to leader
+   - Commited to leader & Quorum
  
+ Consumer:
+   - At least once
+   - At most once
+   - Effectively once
+   - Exactly once
+   
 https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/  
 
 https://medium.com/@stephane.maarek/how-to-use-apache-kafka-to-transform-a-batch-pipeline-into-a-real-time-one-831b48a6ad85  
