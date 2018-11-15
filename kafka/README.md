@@ -116,16 +116,24 @@ https://habr.com/company/itsumma/blog/418389/
                                                      
  
 ##  Kafka
- Producer:
+ * Producer:
    - Async (no garantee)
    - Commited to leader
    - Commited to leader & Quorum
  
- Consumer:
+ * Consumer: can fetch offset for given partition and get record
    - At least once
    - At most once
    - Effectively once
    - Exactly once
+  
+  Features:
+ - Log compactions preserving disk space
+ - Disk Not heap
+ - Pagecache to Socket
+ - Balanced Partitions & Leaders
+ - Produce and Consumer Quotas (# of event per sec)
+ - Heroku Kafla
    
 https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/  
 
