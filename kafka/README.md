@@ -12,6 +12,8 @@ https://habr.com/company/yandex/blog/428700/ .  Model deployment
 
 <https://github.com/kaiwaehner/ksql-udf-deep-learning-mqtt-iot>
 
+<https://medium.com/@simon.aubury/machine-learning-kafka-ksql-stream-processing-bug-me-when-ive-left-the-heater-on-bd47540cd1e8>
+
 <https://habr.com/post/427739/>
 
 <https://habr.com/post/428431/>
@@ -74,13 +76,13 @@ https://medium.com/hydrosphere-io/machine-learning-models-monitoring-architectur
 
 <http://www.georgefairbanks.com/e-book/>
 
-https://github.com/donnemartin/system-design-primer
+<https://github.com/donnemartin/system-design-primer>
 
 https://www.youtube.com/watch?v=x30DcBfCJRI
 
 https://www.youtube.com/watch?v=t2Ti-pZGy8I
 
-https://quickbooks-engineering.intuit.com/re-think-your-data-pipelines-in-the-decoupled-era-5b032bc8b779
+<https://quickbooks-engineering.intuit.com/re-think-your-data-pipelines-in-the-decoupled-era-5b032bc8b779>
 
 https://www.youtube.com/watch?v=tpspO9K28PM&t=155s
 
@@ -88,7 +90,7 @@ https://github.com/gaia-pipeline/gaia
 
 https://github.com/Jeffail/benthos
 
-http://www.acodersjourney.com/2018/07/system-design-interview-load-balancing/
+<http://www.acodersjourney.com/2018/07/system-design-interview-load-balancing/>
 
 https://engineering.videoblocks.com/web-architecture-101-a3224e126947
 
@@ -106,7 +108,7 @@ https://www.automationqc.com/jenkins-pipeline-for-beginners/
 https://godaddy.github.io/2018/06/05/cicd-best-practices/
 
 ## RabbitMQ
-https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6
+<https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6>
 
 
 
@@ -139,7 +141,10 @@ https://habr.com/company/itsumma/blog/418389/
  - Produce and Consumer Quotas (# of event per sec)
  - Heroku Kafla
    
-https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/  
+<https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/>
+
+<https://medium.com/@itseranga>
+
 
 https://medium.com/@stephane.maarek/how-to-use-apache-kafka-to-transform-a-batch-pipeline-into-a-real-time-one-831b48a6ad85  
      
