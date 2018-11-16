@@ -140,14 +140,19 @@ https://habr.com/company/itsumma/blog/418389/
  - Balanced Partitions & Leaders
  - Produce and Consumer Quotas (# of event per sec)
  - Heroku Kafla
-   
+```   
  $ grep dataDir config/zookeeper.properties
 dataDir=/tmp/zookeeper
  $ grep clientPort config/zookeeper.properties
 clientPort=2181
  $ grep log.dirs config/server.properties
-log.dirs=/tmp/kafka-logs   
-   
+log.dirs=/tmp/kafka-logs  
+
+
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+kafka-server-start.sh config/server.properties
+```   
    
    <https://www.e4developer.com/2018/05/20/how-to-easily-run-kafka-with-docker-for-development/>
 docker run --network=kafka -d --name=zookeeper -e ZOOKEEPER_CLIENT_PORT=2181 confluentinc/cp-zookeeper
