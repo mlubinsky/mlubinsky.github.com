@@ -6,6 +6,7 @@
 
 <https://www.anaconda.com/blog/developer-blog/python-data-visualization-2018-why-so-many-libraries/>
 
+<https://kite.com/blog/python/data-analysis-visualization-python>
 
 <https://codeburst.io/overview-of-python-data-visualization-tools-e32e1f716d10>
 
