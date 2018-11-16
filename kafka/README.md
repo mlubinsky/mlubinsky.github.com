@@ -154,7 +154,14 @@ CONTAINER ID        IMAGE                       COMMAND                  CREATED
 8f922cdf9ef9        confluentinc/cp-kafka       "/etc/confluent/dock…"   6 minutes ago       Up 6 minutes        0.0.0.0:9092->9092/tcp         kafka
 a60205abccba        confluentinc/cp-zookeeper   "/etc/confluent/dock…"   13 minutes ago      Up 13 minutes       2181/tcp, 2888/tcp, 3888/tcp   zookeeper
 
-   
+ 
+docker exec -it 8f922cdf9ef9 bin/bash
+
+ls /etc/confluent/docker/
+configure	  kafka.properties.template  mesos-setup.sh
+docker-utils.jar  launch		     run
+ensure		  log4j.properties.template  tools-log4j.properties.template
+ 
 <https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/>
 
 <https://medium.com/@itseranga>
