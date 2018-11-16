@@ -141,6 +141,20 @@ https://habr.com/company/itsumma/blog/418389/
  - Produce and Consumer Quotas (# of event per sec)
  - Heroku Kafla
    
+   <https://www.e4developer.com/2018/05/20/how-to-easily-run-kafka-with-docker-for-development/>
+docker run --network=kafka -d --name=zookeeper -e ZOOKEEPER_CLIENT_PORT=2181 confluentinc/cp-zookeeper
+
+docker run --network=kafka -d -p 9092:9092 --name=kafka -e KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092 -e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 confluentinc/cp-kafka
+   
+cat /etc/hosts
+127.0.0.1	kafka
+  
+#docker ps
+CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS                          NAMES
+8f922cdf9ef9        confluentinc/cp-kafka       "/etc/confluent/dock…"   6 minutes ago       Up 6 minutes        0.0.0.0:9092->9092/tcp         kafka
+a60205abccba        confluentinc/cp-zookeeper   "/etc/confluent/dock…"   13 minutes ago      Up 13 minutes       2181/tcp, 2888/tcp, 3888/tcp   zookeeper
+
+   
 <https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/>
 
 <https://medium.com/@itseranga>
