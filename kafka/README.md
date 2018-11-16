@@ -153,7 +153,7 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 
 kafka-server-start.sh config/server.properties
 ```   
-   
+   <https://medium.com/@stephane.maarek/the-kafka-api-battle-producer-vs-consumer-vs-kafka-connect-vs-kafka-streams-vs-ksql-ef584274c1e>
    <https://www.e4developer.com/2018/05/20/how-to-easily-run-kafka-with-docker-for-development/>
 docker run --network=kafka -d --name=zookeeper -e ZOOKEEPER_CLIENT_PORT=2181 confluentinc/cp-zookeeper
 
