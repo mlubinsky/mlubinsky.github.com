@@ -4,6 +4,8 @@
 
 <https://www.quora.com/How-do-I-start-learning-or-strengthen-my-knowledge-of-data-structures-and-algorithms?redirected_qid=2804253>
 
+<https://medium.com/educative/3-month-coding-interview-bootcamp-904422926ce8>
+
 <https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf>
 
 <https://hackernoon.com/10-data-structure-algorithms-and-programming-courses-to-crack-any-coding-interview-e1c50b30b927>
