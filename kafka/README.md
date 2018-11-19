@@ -6,6 +6,8 @@ https://habr.com/company/yandex/blog/428700/ .  Model deployment
 
 <https://habr.com/post/429472/> .  Consule SpringBoot Docker Compose
 
+<https://medium.com/stream-processing/what-is-stream-processing-1eadfca11b97>
+
 <https://jeeconf.com/program/50-shades-of-data-how-when-and-why-big-relational-nosql-elastic-graph-event/>
 
 <https://github.com/kaiwaehner/kafka-connect-iot-mqtt-connector-example>
