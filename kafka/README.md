@@ -1,5 +1,11 @@
 ## Big Data Architecture
 
+<https://www.red-gate.com/simple-talk/cloud/cloud-data/current-state-newsqlnosql-cloud-arena/>
+
+<https://turbolent.com/data-processing-pipeline.html>
+
+<https://www.elastic.co/blog/the-birthday-paradox-and-concurrently-indexing-in-elasticsearch>
+
 <http://app-from-scratch.darkleaf.ru/> . Clojure
 
 https://habr.com/company/yandex/blog/428700/ .  Model deployment
