@@ -1,5 +1,7 @@
 <https://www.bitdegree.org/user/course/python-image-recognition/player/1021>  course
 
+<https://arxiv.org/abs/1806.08342> .  Quantizing deep convolutional networks for efficient inference: A whitepaper
+
 <https://arxiv.org/abs/1810.08533>   convolution and correlation using Fourier transform
 
 <http://web.stanford.edu/class/cs294a/sparseAutoencoder.pdf>
