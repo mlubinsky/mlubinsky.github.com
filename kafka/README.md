@@ -1,5 +1,7 @@
 ## Big Data Architecture
 
+<https://slikts.github.io/concurrency-glossary/>
+
 <https://www.red-gate.com/simple-talk/cloud/cloud-data/current-state-newsqlnosql-cloud-arena/>
 
 <https://turbolent.com/data-processing-pipeline.html>
