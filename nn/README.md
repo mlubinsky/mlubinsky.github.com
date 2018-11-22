@@ -2,6 +2,8 @@
 
 <https://habr.com/company/nixsolutions/blog/430524/> . Архитектуры нейросетей
 
+<https://habr.com/company/intel/blog/417809/> . NN architectures for image recognition 
+
 <https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba>
 
 <https://arxiv.org/abs/1806.08342> .  Quantizing deep convolutional networks for efficient inference: A whitepaper
