@@ -1,5 +1,7 @@
 <https://www.bitdegree.org/user/course/python-image-recognition/player/1021>  course
 
+<https://habr.com/company/nixsolutions/blog/430524/> . Архитектуры нейросетей
+
 <https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba>
 
 <https://arxiv.org/abs/1806.08342> .  Quantizing deep convolutional networks for efficient inference: A whitepaper
