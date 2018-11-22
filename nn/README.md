@@ -318,6 +318,8 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 
 ## Image processing
 
+<https://openmv.io/>
+
 <https://www.learnopencv.com>
 
 <https://towardsdatascience.com/evolution-of-object-detection-and-localization-algorithms-e241021d8bad>
