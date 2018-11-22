@@ -4,6 +4,8 @@
 
 <https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21>
 
+https://habr.com/company/otus/blog/430780/ . seq  to seq
+
 ## LSTM
 ```
  The feed-forward network with a single hidden layer containing a finite number of neurons can approximate 
