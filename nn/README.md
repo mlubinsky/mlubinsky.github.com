@@ -2,6 +2,8 @@
 
 <https://habr.com/company/nixsolutions/blog/430524/> . Архитектуры нейросетей
 
+<https://habr.com/company/oleg-bunin/blog/340184/> .   NN Zoo
+
 <https://habr.com/company/intel/blog/417809/> . NN architectures for image recognition 
 
 <https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba>
