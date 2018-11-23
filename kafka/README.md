@@ -2,6 +2,8 @@
 
 <https://slikts.github.io/concurrency-glossary/>
 
+<https://habr.com/post/430672/> concurrency
+
 <https://www.red-gate.com/simple-talk/cloud/cloud-data/current-state-newsqlnosql-cloud-arena/>
 
 <https://turbolent.com/data-processing-pipeline.html>
