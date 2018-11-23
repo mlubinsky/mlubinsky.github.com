@@ -1,5 +1,7 @@
 <https://www.bitdegree.org/user/course/python-image-recognition/player/1021>  course
 
+<https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs> . course
+
 <https://habr.com/company/nixsolutions/blog/430524/> . Архитектуры нейросетей
 
 <https://habr.com/company/oleg-bunin/blog/340184/> .   NN Zoo
