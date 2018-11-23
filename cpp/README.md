@@ -4,6 +4,8 @@
 
 <https://www.amazon.com/Advanced-Interview-Questions-Youll-Likely/dp/1946383708> C++ book
 
+<http://www.icce.rug.nl/documents/cplusplus/>
+
 <https://ds9a.nl/articles/posts/cpp-2/>
 
 <https://tests4geeks.com/cpp-interview-questions/>
