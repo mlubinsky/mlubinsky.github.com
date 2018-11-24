@@ -14,7 +14,21 @@
 
 <https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba>
 
+<https://en.wikipedia.org/wiki/Object_detection>
 
+<https://medium.com/@fractaldle/brief-overview-on-object-detection-algorithms-ec516929be93>
+
+<https://medium.com/@14prakash/image-classification-architectures-review-d8b95075998f>
+
+```
+MobileNet
+MobeleNet DepthWise
+Res50
+GoogleNet
+SqueezeNet
+ShuffleNet
+YOLO v3
+```
 
 
 <https://arxiv.org/abs/1806.08342> .  Quantizing deep convolutional networks for efficient inference: A whitepaper
@@ -122,6 +136,7 @@ The formula for the sigmoid function is σ(x) = 1/(1 + exp(-x)).
 
 ## Vanishing gradient problem
 <https://en.wikipedia.org/wiki/Vanishing_gradient_problem>
+
 <https://www.quora.com/What-is-the-vanishing-gradient-problem>
 
 Vanishing gradient problem depends on the choice of the activation function. Many common activation functions (e.g sigmoid or tanh) 'squash' their input into a very small output range in a very non-linear fashion. For example, sigmoid maps the real number line onto a "small" range of [0, 1]. As a result, there are large regions of the input space which are mapped to an extremely small range. In these regions of the input space, even a large change in the input will produce a small change in the output - hence the gradient is small.
@@ -136,25 +151,13 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://www.youtube.com/watch?v=aircAruvnKk>
 
-## Object Detection Architectures and Models
-<https://en.wikipedia.org/wiki/Object_detection>
-<https://medium.com/@fractaldle/brief-overview-on-object-detection-algorithms-ec516929be93>
-<https://medium.com/@14prakash/image-classification-architectures-review-d8b95075998f>
 
-```
-MobileNet
-MobeleNet DepthWise
-Res50
-GoogleNet
-SqueezeNet
-ShuffleNet
-YOLO v3
-```
 ## DataSets
 
 <http://cocodataset.org/>
 
 <https://en.wikipedia.org/wiki/CIFAR-10> CIFAR 
+
 <https://en.wikipedia.org/wiki/List_of_datasets_for_machine_learning_research>
 
 <https://github.com/mpatacchiola/tensorbag>
