@@ -1,5 +1,9 @@
 ## Big Data Architecture
 
+https://news.ycombinator.com/item?id=18508284
+
+## Concurrency
+
 <https://slikts.github.io/concurrency-glossary/>
 
 <https://habr.com/post/430672/> concurrency
