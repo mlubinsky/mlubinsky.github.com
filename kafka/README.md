@@ -1,6 +1,8 @@
 ## Big Data Architecture
 
-https://news.ycombinator.com/item?id=18508284
+<https://news.ycombinator.com/item?id=18508284>
+
+<https://dataissexy.wordpress.com/>
 
 ## Concurrency
 
