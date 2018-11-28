@@ -1,5 +1,7 @@
 # Docker
 
+<https://cameronlonsdale.com/2018/11/26/whats-in-a-docker-image/>
+
 <https://github.com/floydhub/dl-docker> Docker image with ML
 
 
