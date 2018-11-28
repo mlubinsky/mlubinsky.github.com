@@ -6,6 +6,8 @@
 
 <https://www.reddit.com/r/MachineLearning/comments/a0xfc2/p_illustrated_deep_learning_cheatsheets_covering/>
 
+<https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/>
+
 ## NN arhitecture
 
 <https://habr.com/company/nixsolutions/blog/430524/> . Архитектуры нейросетей
