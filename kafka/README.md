@@ -2,6 +2,8 @@
 
 <https://news.ycombinator.com/item?id=18508284>
 
+<http://www.smashcompany.com/technology/one-write-point-one-read-point-one-log>
+
 <https://dataissexy.wordpress.com/>
 
 ## Concurrency
