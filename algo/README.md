@@ -10,6 +10,8 @@
 
 <https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/>
 
+<https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/>
+
 <https://habr.com/post/430788/>
 
 <http://www.benfrederickson.com/distance-metrics/>
