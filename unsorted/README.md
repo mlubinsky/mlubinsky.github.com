@@ -14,6 +14,10 @@
 
 <https://www.youtube.com/user/JordanPetersonVideos>  Jordan B. Peterson
 
+## Math
+
+<https://www.mccme.ru/mmmf-lectures/books/>
+
 <https://news.ycombinator.com/item?id=18099484> Proof Without Words: Gregory’s Theorem
 
 <https://youtu.be/TFhKK6bWcYE> . average distance between points on line, in square
@@ -80,8 +84,6 @@
  
  code --diff file1.js file2.js.
 
-
-"Во всех странах есть своя мафия и только в России у мафии есть своя страна
 
 ## Health
 <https://zen.yandex.ru/media/zoh/statichnyi-kompleks-dlia-mujchin-posle-40-mujskaia-sila-5bbed62f091ba200aa3a94a9>
