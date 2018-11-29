@@ -8,6 +8,8 @@
 
 <https://dataissexy.wordpress.com/>
 
+<https://habr.com/company/wrike/blog/430374/>
+
 ## Concurrency
 
 <https://slikts.github.io/concurrency-glossary/>
