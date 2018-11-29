@@ -1,3 +1,6 @@
+## Intel RealSense D4**
+<https://habr.com/company/intel/blog/430720/>
+
 ## Classes
 
 <https://www.bitdegree.org/user/course/python-image-recognition/player/1021>  course
