@@ -13,6 +13,8 @@
 
 ## NN arhitecture
 
+<https://www.youtube.com/watch?v=XY5AczPW7V4> .  Russ
+
 <https://habr.com/company/nixsolutions/blog/430524/> . Архитектуры нейросетей
 
 <https://habr.com/company/oleg-bunin/blog/340184/> .   NN Zoo
