@@ -16,6 +16,8 @@
 
 ## Math
 
+<https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf>
+
 <https://www.mccme.ru/mmmf-lectures/books/>
 
 <https://news.ycombinator.com/item?id=18099484> Proof Without Words: Gregory’s Theorem
