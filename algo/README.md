@@ -2,6 +2,8 @@
 
 <https://stackabuse.com/programming-interview-questions/>
 
+<https://blog.finxter.com/python-interview-questions/>
+
 <https://stackabuse.com/graph-data-structure-interview-questions/>
 
 <https://www.quora.com/How-do-I-learn-algorithms-2>
