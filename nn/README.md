@@ -88,6 +88,8 @@ YOLO v3
 
 ## Deep Learning
 
+<https://www.youtube.com/watch?v=40mnpYTPpJg> .  Russian
+
 <https://arxiv.org/abs/1810.01109> Deep Learning on Android
 
 <https://arxiv.org/abs/1809.02165v1> . Generic object detection
@@ -229,6 +231,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 ## TensorFlow
 
 <https://learningtensorflow.com/index.html>
+
+<https://youtu.be/LSb8iaNAfdw> .  Russian
 
 Linear regression:
 <https://medium.com/@derekchia/a-line-by-line-laymans-guide-to-linear-regression-using-tensorflow-3c0392aa9e1f>
