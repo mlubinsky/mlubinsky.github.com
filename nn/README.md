@@ -11,6 +11,8 @@
 
 <https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/>
 
+
+<https://medium.com/atlas-ml/state-of-deep-learning-h2-2018-review-cc3e490f1679> State of ML in 2018
 ## NN arhitecture
 
 <https://www.youtube.com/watch?v=XY5AczPW7V4> .  Russ
