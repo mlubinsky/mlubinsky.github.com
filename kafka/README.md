@@ -18,6 +18,8 @@
 
 <https://habr.com/post/430672/> concurrency
 
+<https://medium.com/@NetflixTechBlog/performance-under-load-3e6fa9a60581> . Performance-concurrency
+
 <https://www.red-gate.com/simple-talk/cloud/cloud-data/current-state-newsqlnosql-cloud-arena/>
 
 <https://turbolent.com/data-processing-pipeline.html>
