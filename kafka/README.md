@@ -10,6 +10,8 @@
 
 <https://habr.com/company/wrike/blog/430374/>
 
+<https://github.com/rtb7syl/face-kafka> Kafka + Face recognition
+
 ## Concurrency
 
 <https://slikts.github.io/concurrency-glossary/>
