@@ -1,5 +1,7 @@
 <https://habr.com/post/420435/>
 
+<https://www.youtube.com/watch?v=IbisEjzoxTY>
+
 <https://sysprogs.com/w/mbed-settings-extractor/>
 
 ## AWS
