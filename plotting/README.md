@@ -4,6 +4,8 @@
 
 <https://github.com/mcastorina/graph-cli> .  plottting from CSV
 
+<https://habr.com/post/431754/> Dash
+
 <https://www.anaconda.com/blog/developer-blog/python-data-visualization-2018-why-so-many-libraries/>
 
 <https://kite.com/blog/python/data-analysis-visualization-python>
