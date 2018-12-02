@@ -1,3 +1,5 @@
+<https://www.kaggle.com/ctlente/time-series-forecasting-workflow>
+
 <https://ubereng.wpengine.com/forecasting-introduction/>
 
 <https://www.reddit.com/r/MachineLearning/comments/9ofd7x/d_machine_learning_on_time_series_data/>
