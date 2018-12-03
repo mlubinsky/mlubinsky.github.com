@@ -6,6 +6,8 @@
 
 <https://stackabuse.com/graph-data-structure-interview-questions/>
 
+<http://www.java67.com/2018/05/top-75-programming-interview-questions-answers.html>
+
 <https://www.quora.com/How-do-I-learn-algorithms-2>
 
 <https://skillupper.com/>
