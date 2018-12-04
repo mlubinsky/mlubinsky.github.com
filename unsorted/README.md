@@ -9,6 +9,9 @@
  {} Curly brackets  are often called braces 
  () Parentheses
 ```
+
+<https://news.ycombinator.com/item?id=18588727> mind hacks
+
 <https://fs.blog/best-articles/>
 
 <https://stackexchange.com/sites>
