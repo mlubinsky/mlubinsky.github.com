@@ -1,5 +1,7 @@
 ## Big Data Architecture
 
+<https://streamsets.com/blog/>
+
 <https://news.ycombinator.com/item?id=18508284>
 
 <https://blog.gruntwork.io/5-lessons-learned-from-writing-over-300-000-lines-of-infrastructure-code-36ba7fadeac1>
