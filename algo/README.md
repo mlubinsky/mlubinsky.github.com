@@ -12,6 +12,8 @@
 
 <https://github.com/anubhavshrimal/Data_Structures_Algorithms_In_Python>
 
+<https://github.com/bt3gl/Python-and-Algorithms-and-Data-Structures/>
+
 <https://blog.finxter.com/python-interview-questions/>
 
 <https://stackabuse.com/graph-data-structure-interview-questions/>
