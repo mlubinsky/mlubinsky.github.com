@@ -4,6 +4,8 @@
 
 <https://github.com/donnemartin/interactive-coding-challenges>
 
+<https://github.com/thundergolfer/interview-with-python/tree/master/solutions/python>
+
 <https://blog.finxter.com/python-interview-questions/>
 
 <https://stackabuse.com/graph-data-structure-interview-questions/>
