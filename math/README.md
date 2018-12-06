@@ -1,7 +1,5 @@
 ## Math
 
-## Math
-
 <https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf>
 
 <https://www.mccme.ru/mmmf-lectures/books/>
@@ -17,3 +15,6 @@
 <https://habr.com/post/428610/> paradox of bus waiting time
 
 <https://waterprogramming.wordpress.com/2018/09/04/implementation-of-the-moving-average-filter-using-convolution/>
+
+
+<https://www.youtube.com/watch?v=cqNqZ2fZlvA> Savvateev
