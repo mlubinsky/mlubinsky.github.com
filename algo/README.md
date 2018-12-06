@@ -6,6 +6,8 @@
 
 <https://github.com/alexhagiopol/cracking-the-coding-interview>
 
+<https://github.com/charulagrl/data-structures-and-algorithms>
+
 <https://github.com/thundergolfer/interview-with-python/tree/master/solutions/python>
 
 <https://github.com/anubhavshrimal/Data_Structures_Algorithms_In_Python>
