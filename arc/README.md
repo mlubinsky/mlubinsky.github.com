@@ -1,6 +1,9 @@
 ## Architecture
 
 <https://blog.keen.io/architecture-of-giants-data-stacks-at-facebook-netflix-airbnb-and-pinterest-9b7cd881af54>
+
+<https://www.youtube.com/watch?v=UzLMhqg3_Wc&list=PLrmLmBdmIlps7GJJWW9I7N0P0rB0C3eY2>
+
 <https://habr.com/company/rostelecom/blog/432166/> NiFi
 
 ### Spotify
