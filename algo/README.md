@@ -2,6 +2,8 @@
 
 <https://stackabuse.com/programming-interview-questions/>
 
+<http://www.interviewdruid.com/>
+
 <https://www.youtube.com/channel/UCcAWgbpROQrPok18E6UozWw/videos>
 
 <https://www.facebook.com/tusharroy25/>
