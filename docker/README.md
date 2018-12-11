@@ -4,6 +4,7 @@
 
 <https://github.com/floydhub/dl-docker> Docker image with ML
 
+<https://towardsdatascience.com/a-short-guide-to-using-docker-for-your-data-science-environment-912617b3603e>
 
 <https://oneraynyday.github.io/dev/2017/08/03/Docker/>
 
