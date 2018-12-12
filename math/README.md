@@ -2,6 +2,8 @@
 
 <https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf>
 
+<https://kubuszok.com/2018/algebras-we-love/>
+
 <https://www.mccme.ru/mmmf-lectures/books/>
 
 <https://news.ycombinator.com/item?id=18099484> Proof Without Words: Gregory’s Theorem
