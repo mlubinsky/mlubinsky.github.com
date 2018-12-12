@@ -6,6 +6,8 @@
 
 <https://habr.com/company/rostelecom/blog/432166/> NiFi
 
+<https://habr.com/company/yandex/blog/431650/>
+
 ### Spotify
 <https://labs.spotify.com/2017/10/16/big-data-processing-at-spotify-the-road-to-scio-part-1/>
 <https://labs.spotify.com/2017/10/23/big-data-processing-at-spotify-the-road-to-scio-part-2/>
