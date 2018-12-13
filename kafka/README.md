@@ -7,6 +7,22 @@
 
 ## RabbitMQ vs Kafka
 
+In addition to scalability and low latency, Kafka popularity comes from allowing more flexible and agile consumer patterns. Essentially, the consumer is in control. You don’t need to have subscribed to the queue (and be up and running) when the message is produced. You can subscribe to it later (days, weeks, months later) and still get old messages.
+
+Rabbit MQ and similar “old style” messaging services are more about the producer. They have things like “guaranteed delivery” and “guaranteed single execution”. They are still good for job execution, where the producer has a job to do, for example, to reset a password or change a customer account across multiple business systems. In other words, they are good for typical Enterprise Service Bus (ESB) type applications, something that has the “guaranteed (right now) single delivery” requirements.
+
+Kafka, however, shifts the control to the consumer(s), who can decide when and how (and if) it wants to consume the messages. Rather than a job to execute, Kafka is more about status messages, along the lines of: “Hey everyone, this thing just happened. Do with it what you wish.”
+
+Because it persists the messages, essentially forever, it allows for better separation between the producer and consumer. The producer puts a message on the queue and then forgets about it. The consumers are free to process and reprocess the messages as much as they want.
+
+It’s especially good for two situations: 1) Unreliable consumers who come and go, and 2) Multiple consumers - including future new consumers you may not have anticipated when you first created the system.
+
+Because it persists the messages for a long time, you can create new consumers at any time and replay old messages to “catch up”. Further, a consumer can go down for several days (or weeks, depending on how long you keep the persisted messages) and then it can get all caught up once it finally comes back up.
+
+Also it’s great way to mix production & development environments. Dev consumers can safely consume a production data stream. Since Kafka allows for any number of consumer groups, this is a great pattern to test your Development code. It also allows for easy Blue/Green deployments, where both systems (Blue and Green) can consume from the same producer feed and you can swap the environments at any time. Another good use-case is A/B Testing. Both your A & B systems can consume from the same production queue and stay up-to-date with the latest data, and then you can randomly distribute your customers between A & B at any time. Because Kafka can have any number of consumers and you can create new consumers at any time, you and launch new A/B tests at any time.
+
+This is in contrast to Rabbit-MQ implementations (and similar messaging contracts) which typically remove the message from the queue once it has been delivered and processed, i.e. once the delivery guarantee has been met. If there’s a problem, they move the message to a “dead letter” queue, which requires special processing and handling (read: more work, more complexity). Allowing multiple consumers to attach to a Rabbit-MQ-style queuing system is probably not recommended. ESB systems that I’ve been involved with require very heavy deployment cycles with lots of testing for new consumers.
+
 https://www.reddit.com/r/programming/comments/8muszb/apache_kafka_vs_rabbitmq/
  https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6  
  https://www.quora.com/Why-does-Kafka-scale-better-than-other-messaging-systems-like-RabbitMQ
