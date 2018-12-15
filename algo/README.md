@@ -4,6 +4,9 @@
 
 <http://www.interviewdruid.com/>
 
+<https://www.jeffcarp.com/posts/2018-how-to-solve-every-software-engineering-interview-question/> 
+Print the outlier nodes in binary tree
+
 <https://www.youtube.com/channel/UCcAWgbpROQrPok18E6UozWw/videos>
 
 <https://www.facebook.com/tusharroy25/>
