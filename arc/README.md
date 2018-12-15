@@ -4,6 +4,8 @@
 
 <https://medium.com/netflix-techblog/implementing-the-netflix-media-database-53b5a840b42a>
 
+<https://eng.uber.com/uber-big-data-platform/>
+
 <https://www.youtube.com/watch?v=UzLMhqg3_Wc&list=PLrmLmBdmIlps7GJJWW9I7N0P0rB0C3eY2>
 
 <https://habr.com/company/rostelecom/blog/432166/> NiFi
