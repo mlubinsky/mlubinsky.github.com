@@ -2,6 +2,8 @@
 
 <https://github.com/serhii-londar/open-source-mac-os-apps>    Open source Mac OS apps
 
+<https://www.mediaatelier.com/CheatSheet/>
+
 <https://github.com/RafalWilinski/s3-uploader>   Upload file to S3
 
 https://github.com/720kb/ndm  UI for npm
