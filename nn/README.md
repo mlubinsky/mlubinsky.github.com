@@ -238,6 +238,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://youtu.be/LSb8iaNAfdw> .  Russian
 
+<https://habr.com/post/428183/>
+
 Linear regression:
 <https://medium.com/@derekchia/a-line-by-line-laymans-guide-to-linear-regression-using-tensorflow-3c0392aa9e1f>
 ```
