@@ -73,6 +73,12 @@
  
  code --diff file1.js file2.js.
 
+## Kino
+https://cinema.d3.ru/
+https://soap.d3.ru/
+https://recommend.d3.ru/
+https://kinokakto.d3.ru/
+https://movies.d3.ru/
 
 ## Health
 <https://zen.yandex.ru/media/zoh/statichnyi-kompleks-dlia-mujchin-posle-40-mujskaia-sila-5bbed62f091ba200aa3a94a9>
