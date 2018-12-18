@@ -4,6 +4,8 @@
 
 <https://medium.com/netflix-techblog/implementing-the-netflix-media-database-53b5a840b42a>
 
+<https://azure.microsoft.com/en-us/blog/microsoft-open-sources-trill-to-deliver-insights-on-a-trillion-events-a-day/>
+
 <https://eng.uber.com/uber-big-data-platform/>
 
 <https://www.youtube.com/watch?v=UzLMhqg3_Wc&list=PLrmLmBdmIlps7GJJWW9I7N0P0rB0C3eY2>
