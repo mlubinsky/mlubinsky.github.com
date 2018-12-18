@@ -351,6 +351,8 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 
 <https://www.learnopencv.com>
 
+<https://www.youtube.com/watch?v=XVvfcj_F_uc>
+
 <https://habr.com/post/430906/>
 
 <https://github.com/OlafenwaMoses/ImageAI>
