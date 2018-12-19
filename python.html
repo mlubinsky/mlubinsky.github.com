@@ -186,11 +186,29 @@ If you wish to change the port  from default (8000) then specify it explicitly:
 http://arseny.info/2017/parallel-computation-with-two-lines-of-code.html   Joblib
 https://www.dataquest.io/blog/python-counter-class/
 https://github.com/ChrisKnott/Eel offline web based UI for python
+a='12345'
+a[::-1]  # reverse string 
+a[-1]    # 5  - last item in the array equivalent to slice(-1)
+a[-2:]   # 45 - last two items in the array equivalent to slice(-2)
+a[:-2]   # 123 - everything except the last two items equivalent to slice(None, -2)
+
+expect = {"(":")","[":"]","{":"}"}
+
+def wellformed(string):
+    stack = []
+    for char in string:
+        if char in expect.keys():
+            stack.append(char)
+        elif char in expect.values():
+            if not stack or expect[stack.pop()] != char:
+                return False
+    return not stack
+
+print(wellformed("([])[]({})")) # True
+print(wellformed("([)]")) # False
+print(wellformed("((()")) # False
 
 
-a[-1]    # last item in the array equivalent to slice(-1)
-a[-2:]   # last two items in the array equivalent to slice(-2)
-a[:-2]   # everything except the last two items equivalent to slice(None, -2)
 
 multiply a vector by a scalar:
 def scale(A, x): return [ai*x for ai in A]
