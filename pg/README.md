@@ -2,6 +2,14 @@
 
 <https://pgdash.io/blog/postgres-configuration-cheatsheet.html>
 
+<http://www.craigkerstiens.com/2018/01/31/postgres-hidden-gems/>
+
+<https://heapanalytics.com/blog/engineering/when-to-avoid-jsonb-in-a-postgresql-schema>
+
+<https://explain.depesz.com/> .  Explain plan explained
+
+<https://postgresweekly.com/issues/286> .  Postgres in 2018 summary
+
 <https://wiki.postgresql.org/wiki/Things_to_find_out_about_when_moving_from_MySQL_to_PostgreSQL>
 
 Declarative Partitioning in version 11:
