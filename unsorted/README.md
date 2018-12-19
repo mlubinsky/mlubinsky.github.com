@@ -76,6 +76,7 @@
 ## Kino
 https://cinema.d3.ru/
 https://soap.d3.ru/
+https://posmotrel.d3.ru/
 https://recommend.d3.ru/
 https://kinokakto.d3.ru/
 https://movies.d3.ru/
