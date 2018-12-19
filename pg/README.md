@@ -1,12 +1,22 @@
 ## Postgres
 
+<https://pgdash.io/blog/postgres-features.html>
+
 <https://pgdash.io/blog/postgres-configuration-cheatsheet.html>
 
 <http://www.craigkerstiens.com/2018/01/31/postgres-hidden-gems/>
 
+<https://www.citusdata.com/blog/2018/10/31/materialized-views-vs-rollup-tables/>
+
 <https://heapanalytics.com/blog/engineering/when-to-avoid-jsonb-in-a-postgresql-schema>
 
 <https://explain.depesz.com/> .  Explain plan explained
+
+<https://pgexercises.com/>
+
+<https://severalnines.com/blog/my-favorite-postgresql-queries-and-why-they-matter>
+
+<https://heapanalytics.com/blog/engineering/running-10-million-postgresql-indexes-in-production>
 
 <https://postgresweekly.com/issues/286> .  Postgres in 2018 summary
 
