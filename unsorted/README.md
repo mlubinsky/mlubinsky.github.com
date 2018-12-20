@@ -36,7 +36,12 @@
 
 <https://tls.ulfheim.net/> TLS explained
 
-<https://github.com/darkleaf/app-from-scratch/blob/master/0-intro/2-what.md> Closure Rus
+
+## Clojure
+
+http://blog.klipse.tech/clojure/2018/12/18/welcome-clojure-10.html
+
+<https://github.com/darkleaf/app-from-scratch/blob/master/0-intro/2-what.md> Clojure Rus
 
 ## youtube programming
 
