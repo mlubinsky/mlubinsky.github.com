@@ -4,6 +4,8 @@
 
 <https://medium.com/netflix-techblog/implementing-the-netflix-media-database-53b5a840b42a>
 
+<https://www.ebayinc.com/stories/blogs/tech/an-approach-for-metadata-store-on-large-volume-data-sets/>
+
 <https://www.tellius.com/building-a-seamless-search-driven-analytics-experience-across-multiple-data-sources-with-apache-spark/>
 
 <https://azure.microsoft.com/en-us/blog/microsoft-open-sources-trill-to-deliver-insights-on-a-trillion-events-a-day/>
