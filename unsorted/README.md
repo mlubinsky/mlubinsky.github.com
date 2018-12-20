@@ -39,9 +39,9 @@
 
 ## Clojure
 
-http://blog.klipse.tech/clojure/2018/12/18/welcome-clojure-10.html
+<http://blog.klipse.tech/clojure/2018/12/18/welcome-clojure-10.html>
 
-<https://github.com/darkleaf/app-from-scratch/blob/master/0-intro/2-what.md> Clojure Rus
+<https://github.com/darkleaf/app-from-scratch/> Clojure Rus
 
 ## youtube programming
 
