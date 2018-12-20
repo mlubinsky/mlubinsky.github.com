@@ -74,6 +74,7 @@
  code --diff file1.js file2.js.
 
 ## Kino
+https://kino.d3.ru/
 https://cinema.d3.ru/
 https://soap.d3.ru/
 https://posmotrel.d3.ru/
