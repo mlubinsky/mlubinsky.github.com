@@ -66,6 +66,7 @@ kafka-server-start.sh config/server.properties
    <https://www.e4developer.com/2018/05/20/how-to-easily-run-kafka-with-docker-for-development/>
    <http://www.kai-waehner.de/blog/>
    
+   <http://www.kai-waehner.de/blog/>
    
 docker run --network=kafka -d --name=zookeeper -e ZOOKEEPER_CLIENT_PORT=2181 confluentinc/cp-zookeeper
 
