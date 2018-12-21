@@ -8,6 +8,8 @@
 
 <https://www.tellius.com/building-a-seamless-search-driven-analytics-experience-across-multiple-data-sources-with-apache-spark/>
 
+<https://allegro.tech/2018/10/turnilo-lets-change-the-way-people-explore-big-data.html>
+
 <https://azure.microsoft.com/en-us/blog/microsoft-open-sources-trill-to-deliver-insights-on-a-trillion-events-a-day/>
 
 <https://eng.uber.com/uber-big-data-platform/>
