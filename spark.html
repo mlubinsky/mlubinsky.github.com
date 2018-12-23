@@ -19,6 +19,14 @@ https://habr.com/company/lanit/blog/413137/
 
 https://towardsdatascience.com/sql-at-scale-with-apache-spark-sql-and-dataframes-concepts-architecture-and-examples-c567853a702f
 
+https://www.mungingdata.com/
+https://www.mungingdata.com/aws/athena-spark-best-friends
+
+From csv to parquet:
+
+val df = spark.read.csv("/mnt/my-bucket/csv-lake/")
+spark.write.parquet("/mnt/my-bucket/parquet-lake/")
+
 <h2>Links</h2>
 https://www.mungingdata.com/episodes/4-building-spark-jar-files-with-sbt
 https://github.com/databricks/Spark-The-Definitive-Guide
@@ -543,6 +551,8 @@ There are three kinds of actions:
 
 <h2>Structured Streaming</h2>
 Structured Streaming became Production Ready in Spark 2.2. 
+
+https://databricks.com/blog/2017/01/19/real-time-streaming-etl-structured-streaming-apache-spark-2-1.html
 
 Structured streaming allows you to take the same operations that you perform in batch mode and perform them in a streaming fashion. 
 This can reduce latency and allow for incremental processing. 
