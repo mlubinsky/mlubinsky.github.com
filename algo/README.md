@@ -2,6 +2,9 @@
 
 <https://stackabuse.com/programming-interview-questions/>
 
+<https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX> . system design questions
+
+
 <http://www.interviewdruid.com/>
 
 <https://www.algoexpert.io/product>
