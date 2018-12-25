@@ -22,3 +22,11 @@
 
 
 <https://www.youtube.com/watch?v=cqNqZ2fZlvA> Savvateev
+
+
+Random processes:
+
+https://habr.com/post/343148/
+
+https://habr.com/post/343178/
+
