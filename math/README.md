@@ -1,5 +1,7 @@
 ## Math
 
+https://habr.com/post/265321/ . statistical disributions
+
 <https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf>
 
 https://github.com/Quanteeks/Statistics-lectures/blob/master/book.pdf
