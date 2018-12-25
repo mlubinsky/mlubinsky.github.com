@@ -2,6 +2,8 @@
 
 <https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf>
 
+https://github.com/Quanteeks/Statistics-lectures/blob/master/book.pdf
+
 <https://gwthomas.github.io/docs/math4ml.pdf>
 
 <https://kubuszok.com/2018/algebras-we-love/>
