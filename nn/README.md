@@ -19,6 +19,8 @@
 
 <https://habr.com/company/nixsolutions/blog/430524/> . Архитектуры нейросетей
 
+https://habr.com/post/433804/ . MNN
+
 <https://habr.com/company/oleg-bunin/blog/340184/> .   NN Zoo
 
 <https://habr.com/company/intel/blog/417809/> . NN architectures for image recognition 
