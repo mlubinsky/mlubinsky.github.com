@@ -1,5 +1,6 @@
 ## Intel RealSense D4(15/35)
 <https://habr.com/company/intel/blog/430720/>
+<https://habr.com/company/ivideon/blog/434308/> video monitoring
 
 ## Classes
 
