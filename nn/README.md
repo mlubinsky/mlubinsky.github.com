@@ -1,6 +1,9 @@
-## Intel RealSense D4(15/35)
+## Intel RealSense D4(15/35) and other cameras
 <https://habr.com/company/intel/blog/430720/>
+
 <https://habr.com/company/ivideon/blog/434308/> video monitoring
+
+<https://www.blog.google/perspectives/aparna-chennapragada/google-lens-one-year/>
 
 ## Classes
 
