@@ -2,6 +2,8 @@
 
 <https://stackabuse.com/programming-interview-questions/>
 
+<https://stackoverflow.com/questions/2936213/explain-how-finding-cycle-start-node-in-cycle-linked-list-work>
+
 <https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX> . system design questions
 
 <https://www.youtube.com/watch?v=bBPHpH8aKjw> look fo links here!
