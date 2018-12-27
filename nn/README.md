@@ -5,6 +5,10 @@
 
 <https://www.blog.google/perspectives/aparna-chennapragada/google-lens-one-year/>
 
+https://habr.com/company/intel/blog/434238/ Intel OpenVino on Raspberry Pi
+
+https://software.intel.com/en-us/openvino-toolkit
+
 ## Classes
 
 <https://www.bitdegree.org/user/course/python-image-recognition/player/1021>  course
