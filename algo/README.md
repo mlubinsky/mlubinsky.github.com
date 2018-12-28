@@ -8,6 +8,8 @@
 
 <https://www.youtube.com/watch?v=bBPHpH8aKjw> look fo links here!
 
+<https://stackoverflow.com/questions/11897088/diameter-of-binary-tree-better-design>
+
 <http://www.interviewdruid.com/>
 
 <https://www.algoexpert.io/product>
