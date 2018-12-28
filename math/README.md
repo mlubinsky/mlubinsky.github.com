@@ -1,6 +1,8 @@
 ## Math
 
-https://habr.com/post/265321/ . statistical disributions
+<https://habr.com/post/265321/> . statistical disributions
+
+<https://seeing-theory.brown.edu/index.html> . Visual probabilit yand stat
 
 <https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf>
 
