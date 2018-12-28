@@ -2,7 +2,7 @@
 
 <https://habr.com/post/265321/> . statistical disributions
 
-<https://seeing-theory.brown.edu/index.html> . Visual probabilit yand stat
+<https://seeing-theory.brown.edu/index.html> . Visual probability and stat
 
 <https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf>
 
@@ -13,6 +13,8 @@ https://github.com/Quanteeks/Statistics-lectures/blob/master/book.pdf
 <https://kubuszok.com/2018/algebras-we-love/>
 
 <https://www.mccme.ru/mmmf-lectures/books/>
+
+<https://habr.com/post/434734/> . Fourie transf
 
 <https://news.ycombinator.com/item?id=18099484> Proof Without Words: Gregory’s Theorem
 
