@@ -80,7 +80,50 @@ class Graph(object):
     def adj_mat(self):
         return self.__graph_dict
 
+<b>Usage:</b>
+g = { "a" : {"d":2},
+      "b" : {"c":2},
+      "c" : {"b":5,  "d":3, "e":5}
+    }
+graph = Graph(g)
+print("Vertices of graph:")
+print(graph.vertices())
+print("Edges of graph:")
+print(graph.edges())
+print("Add vertex:")
+graph.add_vertex("z")
+print("Vertices of graph:")
+print(graph.vertices()) 
+print("Add an edge:")
+graph.add_edge({"a","z"})    
+print("Vertices of graph:")
+print(graph.vertices())
+print("Edges of graph:")
+print(graph.edges())
+print('Adding an edge {"x","y"} with new vertices:')
+graph.add_edge({"x","y"})
+print("Vertices of graph:")
+print(graph.vertices())
+print("Edges of graph:")
+print(graph.edges())
 
+Vertices of graph:
+['a', 'c', 'b']
+Edges of graph:
+[['a', 'd', 2], ['c', 'b', 5], ['c', 'e', 5], ['c', 'd', 3], ['b', 'c', 2]]
+Add vertex:
+Vertices of graph:
+['a', 'c', 'b', 'z']
+Add an edge:
+Vertices of graph:
+['a', 'c', 'b', 'z']
+Edges of graph:
+[['a', 'z', 1], ['a', 'd', 2], ['c', 'b', 5], ['c', 'e', 5], ['c', 'd', 3], ['b', 'c', 2], ['z', 'a', 1]]
+Adding an edge {"x","y"} with new vertices:
+Vertices of graph:
+['a', 'c', 'b', 'y', 'x', 'z']
+Edges of graph:
+[['a', 'z', 1], ['a', 'd', 2], ['c', 'b', 5], ['c', 'e', 5], ['c', 'd', 3], ['b', 'c', 2], ['y', 'x', 1], ['x', 'y', 1], ['z', 'a', 1]]
 
 https://stats.stackexchange.com/questions/351231/knowledge-graph-how-to-get-into-it
 
