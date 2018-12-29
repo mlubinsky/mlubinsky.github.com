@@ -4,6 +4,8 @@
 
 <https://stackoverflow.com/questions/2936213/explain-how-finding-cycle-start-node-in-cycle-linked-list-work>
 
+<https://stackoverflow.com/questions/41515081/algorithm-find-all-permutations-of-string-a-in-string-b>
+
 <https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX> . system design questions
 
 <https://www.youtube.com/watch?v=bBPHpH8aKjw> look fo links here!
