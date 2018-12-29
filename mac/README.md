@@ -1,5 +1,7 @@
 <https://github.com/appalaszynski/mac-setup>
 
+<https://zenworkpro.com/2018/08/14/computer-ergonomics-useful-tips-for-working-in-macos>
+
 <https://github.com/serhii-londar/open-source-mac-os-apps>    Open source Mac OS apps
 
 <https://www.mediaatelier.com/CheatSheet/>
