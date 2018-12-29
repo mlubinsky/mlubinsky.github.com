@@ -1,5 +1,7 @@
 <http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
 
+<https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
+
 <https://stackabuse.com/programming-interview-questions/>
 
 <https://bradfieldcs.com/algos/>
