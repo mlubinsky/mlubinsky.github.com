@@ -16,6 +16,8 @@
 
 <https://stackexchange.com/sites>
 
+<https://openedu.ru/>
+
 <https://www.youtube.com/watch?v=-5RCmu-HuTg&t=718s> . Jordan B. Peterson on 12 Rules for Life
 
 <https://www.youtube.com/user/JordanPetersonVideos>  Jordan B. Peterson
