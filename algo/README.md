@@ -2,6 +2,8 @@
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
 
+<https://www.businessinsider.fr/us/microsoft-new-developer-interview-process-2018-12>
+
 <https://stackabuse.com/programming-interview-questions/>
 
 <https://bradfieldcs.com/algos/>
