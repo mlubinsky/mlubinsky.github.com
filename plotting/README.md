@@ -6,6 +6,8 @@
 
 <https://habr.com/post/431754/> Dash
 
+<https://medium.com/swlh/effective-visualization-of-multi-dimensional-data-a-hands-on-approach-b48f36a56ee8>
+
 <https://www.anaconda.com/blog/developer-blog/python-data-visualization-2018-why-so-many-libraries/>
 
 <https://kite.com/blog/python/data-analysis-visualization-python>
