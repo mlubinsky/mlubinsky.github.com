@@ -1,5 +1,9 @@
 <http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
 
+<http://algorithms.wtf/>
+
+<https://algs4.cs.princeton.edu/home/>
+
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
 
 <https://www.businessinsider.fr/us/microsoft-new-developer-interview-process-2018-12>
