@@ -69,6 +69,9 @@ Print the outlier nodes in binary tree
 
 <http://www.benfrederickson.com/distance-metrics/>
 
+<https://www.youtube.com/watch?v=1CxyVdA_654> Running mediam in stream
+
+<https://www.youtube.com/watch?v=IHsX70r-fIQ> Max sub-sequence in string
 
 <https://www.quora.com/How-do-I-start-learning-or-strengthen-my-knowledge-of-data-structures-and-algorithms?redirected_qid=2804253>
 
