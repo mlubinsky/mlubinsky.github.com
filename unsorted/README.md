@@ -61,6 +61,8 @@
 ## Russian
 <http://www.audiopedia.su/>
 
+<https://mp3biblion.d3.ru/> Audiobooks
+
 <http://staroeradio.ru/audio/8599>
 
 <https://www.youtube.com/watch?time_continue=1&v=wu3p7dxrhl8> Easter front animated 1941
