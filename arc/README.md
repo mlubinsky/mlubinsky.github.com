@@ -1,5 +1,7 @@
 ## Architecture
 
+<https://www.youtube.com/watch?v=_Hc0WkBUmcQ> Высокопроизводительная и отказоустойчивая архитектура
+
 <https://blog.keen.io/architecture-of-giants-data-stacks-at-facebook-netflix-airbnb-and-pinterest-9b7cd881af54>
 
 <https://www.braze.com/perspectives/article/building-braze-job-queues-resiliency>
