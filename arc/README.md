@@ -4,6 +4,8 @@
 
 <https://www.braze.com/perspectives/article/building-braze-job-queues-resiliency>
 
+<https://leanpub.com/clean-architectures-in-python>
+
 <https://www.youtube.com/watch?v=C6MlPaox5EI> Apache Beam
 
 <https://medium.com/netflix-techblog/implementing-the-netflix-media-database-53b5a840b42a>
