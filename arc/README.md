@@ -8,6 +8,8 @@
 
 <https://medium.com/netflix-techblog/implementing-the-netflix-media-database-53b5a840b42a>
 
+<https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513>
+
 <https://www.ebayinc.com/stories/blogs/tech/an-approach-for-metadata-store-on-large-volume-data-sets/>
 
 <https://www.tellius.com/building-a-seamless-search-driven-analytics-experience-across-multiple-data-sources-with-apache-spark/>
