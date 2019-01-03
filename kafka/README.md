@@ -68,6 +68,7 @@ kafka-server-start.sh config/server.properties
    <https://www.e4developer.com/2018/05/20/how-to-easily-run-kafka-with-docker-for-development/>
    <http://www.kai-waehner.de/blog/>
    
+   https://www.youtube.com/results?search_query=%D0%B3%D0%B0%D0%BC%D0%BE%D0%B2+kafka     гамов
    
    <https://www.youtube.com/watch?v=pPmsCztSFeE> Kafka льёт, а Spark разгребает
    
