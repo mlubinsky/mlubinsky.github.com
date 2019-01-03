@@ -1,5 +1,7 @@
 <http://veekaybee.github.io/2018/09/24/the-case-of-the-broken-lambda/>
 
+<https://stackabuse.com/automating-aws-ec2-management-with-python-and-boto3/>
+
 Lambda example
 ```
   import os,sys
