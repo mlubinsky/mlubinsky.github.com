@@ -179,6 +179,69 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 <https://habr.com/post/423939/>
 
+<https://www.geeksforgeeks.org/min-cost-path-dp-6/>
+# Dynamic Programming Python implementation of Min Cost Path on frid problem 
+R = 3
+C = 3
+  
+def minCost(cost, m, n): 
+  
+    # Instead of following line, we can use int tc[m+1][n+1] or 
+    # dynamically allocate memoery to save space. The following 
+    # line is used to keep te program simple and make it working 
+    # on all compilers. 
+    tc = [[0 for x in range(C)] for x in range(R)] 
+  
+    tc[0][0] = cost[0][0] 
+  
+    # Initialize first column of total cost(tc) array 
+    for i in range(1, m+1): 
+        tc[i][0] = tc[i-1][0] + cost[i][0] 
+  
+    # Initialize first row of tc array 
+    for j in range(1, n+1): 
+        tc[0][j] = tc[0][j-1] + cost[0][j] 
+  
+    # Construct rest of the tc array 
+    for i in range(1, m+1): 
+        for j in range(1, n+1): 
+            tc[i][j] = min(tc[i-1][j-1], tc[i-1][j], tc[i][j-1]) + cost[i][j] 
+  
+    return tc[m][n] 
+  
+# Driver program to test above functions 
+cost = [[1, 2, 3], 
+        [4, 8, 2], 
+        [1, 5, 3]] 
+print(minCost(cost, 2, 2)) 
+
+
+
+# Count number of ways to reach   mat[m-1][n-1] from mat[0][0]   in a matrix mat[][] 
+# Returns The number of way from top-left to mat[m-1][n-1] 
+def countPaths(m, n): 
+  
+    dp = [[0 for i in range(m + 1)]  
+             for j in range(n + 1)] 
+      
+    for i in range(1, m + 1): 
+        for j in range(1, n + 1): 
+            if (i == 1 or j == 1): 
+                dp[i][j] = 1
+            else: 
+                dp[i][j] = (dp[i - 1][j] + 
+                            dp[i][j - 1])              
+      
+    return dp[m][n] 
+  
+# Driver code 
+if __name__ =="__main__": 
+      
+    n = 5
+    m = 5
+    print(countPaths(n, m)) 
+   
+
 https://hackernoon.com/dynamic-programming-for-brute-forcers-36f26c2466cf
 
 https://medium.com/@codingfreak/top-50-dynamic-programming-practice-problems-4208fed71aa3
