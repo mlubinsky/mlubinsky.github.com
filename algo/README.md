@@ -209,7 +209,7 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 <https://habr.com/post/423939/>
 
 <https://www.geeksforgeeks.org/min-cost-path-dp-6/>
-# Dynamic Programming Python implementation of Min Cost Path on frid problem 
+### Dynamic Programming Python implementation of Min Cost Path on frid problem 
 R = 3
 C = 3
   
@@ -238,7 +238,7 @@ def minCost(cost, m, n):
   
     return tc[m][n] 
   
-# Driver program to test above functions 
+### Driver program to test above functions 
 cost = [[1, 2, 3], 
         [4, 8, 2], 
         [1, 5, 3]] 
@@ -246,8 +246,8 @@ print(minCost(cost, 2, 2))
 
 
 
-# Count number of ways to reach   mat[m-1][n-1] from mat[0][0]   in a matrix mat[][] 
-# Returns The number of way from top-left to mat[m-1][n-1] 
+### Count number of ways to reach   mat[m-1][n-1] from mat[0][0]   in a matrix mat[][] 
+### Returns The number of way from top-left to mat[m-1][n-1] 
 def countPaths(m, n): 
   
     dp = [[0 for i in range(m + 1)]  
@@ -263,7 +263,7 @@ def countPaths(m, n):
       
     return dp[m][n] 
   
-# Driver code 
+### Driver code 
 if __name__ =="__main__": 
       
     n = 5
