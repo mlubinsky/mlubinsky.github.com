@@ -177,7 +177,7 @@ class TreeSet implements Set, NavigableSet - keeps the sorted order
 	return set.contains(targetValue);
 } 
 
-  <h2>Map</h2>
+  <h2>Map Interface</h2>
 Map, SortedMap, NavigableMap
 get put Set<K> keySet
 Map interface implementation
@@ -186,13 +186,18 @@ Hashtable - threadsafe, not allows null key
 LinkedHashMap - maintains the order of insertion
 TreeMap - sorted
 
-<h2>Queue</h2>
+<h2>Queue Interface</h2>
 interface Queue<E> extends Collection<E>{
+	<b>Insert</b>	
   boolean add(E e) - throws exception if failure
   boolean offer(E e)  - return false if failue
-  E remove() - removes head, execption
-  E poll() - removes head, null if empt y
-  E peek() - read but not remove
+	<b>Remove</b>
+  E remove() - removes head, throws exception if empty
+  E poll() - removes head, null if empty
+     <b>Examine</b>
+  E element() - throws exception	
+  E peek() - read but not remove, null if empty
+	
 }
 interface Deque<E> extends Queue<E>{
   addFirst, addLast, offerfirst,offerLast, removeFirst,removeLast
@@ -204,10 +209,11 @@ interface BlockingQueue<E> extends Queue<E>{
  E poll(long timeout)
  E take() - waits untile element become available
 }
-Implementations of Queue interface:
-class
-PriorityQueue,
-ArrayDeque,
+	
+	<b>Implementations of Queue interface</b>
+ 
+PriorityQueue 
+ArrayDeque 
 ArrayBlockingQueue
 LinkedListBlockingQueue
 
@@ -215,6 +221,8 @@ LinkedListBlockingQueue
 <b>Collection</b> is an interface that is the parent of most of the collection interfaces defined in the collection framework.
 This interface implements Iterable.
 The Set and List interfaces extends Collection interface.
+	
+	
 <b>Collections</b>, on the other hand, is a class with an exclusive collection of static methods and fields.
 Examples: sort(), binarySearch(), shuffle()
   
