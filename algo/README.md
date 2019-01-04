@@ -2,6 +2,8 @@
 
 <http://algorithms.wtf/>
 
+<http://opendatastructures.org/>
+
 <https://algs4.cs.princeton.edu/home/>
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
