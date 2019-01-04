@@ -106,6 +106,29 @@ Print the outlier nodes in binary tree
 
 <https://github.com/karan/Projects>
 
+
+http://cslibrary.stanford.edu/
+http://www.idryman.org/blog/2017/07/04/learn-hash-table-the-hard-way/
+https://medium.com/engineering-brainly/locality-sensitive-hashing-explained-304eb39291e4  Local sensitive hash
+https://sagi.io/2017/07/bloom-filters-for-the-perplexed/
+https://news.ycombinator.com/item?id=15346337
+https://stackoverflow.com/questions/3260653/algorithm-to-find-top-10-search-terms/3260905#3260905
+
+http://yucoding.blogspot.com/2017/01/leetcode-question-range-sum-query.html
+http://massivealgorithms.blogspot.com/
+http://ruslanledesma.com/
+http://algorithms.tutorialhorizon.com/
+https://www.youtube.com/watch?v=il_t1WVLNxk
+https://www.youtube.com/watch?v=e5D3NepYvLE
+https://www.youtube.com/watch?v=eaYX0Ee0Kcg
+https://www.youtube.com/watch?v=zGv3hOORxh0
+http://quiz.geeksforgeeks.org/amazons-most-frequently-asked-interview-questions-set-2/
+https://www.geeksforgeeks.org/amazons-asked-interview-questions/
+ 
+https://www.youtube.com/watch?v=eaYX0Ee0Kcg
+https://www.udemy.com/11-essential-coding-interview-questions/?couponCode=AMAZON2
+
+
 ##  Google interview
 <https://habr.com/post/419945/>
 
