@@ -208,6 +208,8 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 <https://habr.com/post/423939/>
 
+<https://medium.freecodecamp.org/unmasking-bitmasked-dynamic-programming-25669312b77b>
+
 <https://www.geeksforgeeks.org/min-cost-path-dp-6/>
 ### Dynamic Programming Python implementation of Min Cost Path on frid problem 
 R = 3
