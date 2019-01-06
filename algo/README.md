@@ -1,6 +1,6 @@
 <http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
 
-<http://algorithms.wtf/>
+<http://algorithms.wtf/> 
 
 <http://opendatastructures.org/>
 
@@ -211,6 +211,7 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 <https://medium.freecodecamp.org/unmasking-bitmasked-dynamic-programming-25669312b77b>
 
 <https://www.geeksforgeeks.org/min-cost-path-dp-6/>
+
 ### Dynamic Programming Python implementation of Min Cost Path on frid problem 
 R = 3
 C = 3
@@ -273,7 +274,7 @@ if __name__ =="__main__":
     print(countPaths(n, m)) 
    
 
-https://hackernoon.com/dynamic-programming-for-brute-forcers-36f26c2466cf
+https://hackernoon.com/dynamic-programming-for-brute-forcers-36f26c2466cf>
 
 https://medium.com/@codingfreak/top-50-dynamic-programming-practice-problems-4208fed71aa3
 
@@ -290,4 +291,12 @@ http://www.cmsmagazine.ru/library/items/programming/80-problems-with-it-intervie
 
 <https://rcoh.me/posts/no-magic-regular-expressions-part-3/>
 
-https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92
+<https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92>
+
+
+## Inerpretators Compiles
+
+<https://bernsteinbear.com/blog/bytecode-interpreters/>
+
+<https://news.ycombinator.com/item?id=18821475>
+
