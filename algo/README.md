@@ -176,40 +176,40 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 ### Find 1st element in rotated sorted array
 
-cat find_beginning_in_rotared_sorted_array.py
-def bs(lst, start, end):
-   print ("start=",start, "end=", end)
-   if start == end:  return start
-   m = (start+end)//2
-   print ("middle=",m, lst[m])
+ 
+    def bs(lst, start, end):
+       print ("start=",start, "end=", end)
+       if start == end:  return start
+       m = (start+end)//2
+       print ("middle=",m, lst[m])
 
-   if m < end and lst[m+1] < lst[m]:
-       return m+1
-   if m > start and lst[m] < lst[m-1]:
-       return m
+       if m < end and lst[m+1] < lst[m]:
+          return m+1
+       if m > start and lst[m] < lst[m-1]:
+          return m
 
-   if lst[end] > lst[m]:
-       return bs(lst, start, m -1)
-   else:
-       return  bs(lst, m+1, end)
+       if lst[end] > lst[m]:
+          return bs(lst, start, m -1)
+       else:
+          return  bs(lst, m+1, end)
 
-def find(l):
-   start=0
-   end=len(l)-1
-   i= bs(l, start, end)
-   return i
+    def find(l):
+      start=0
+      end=len(l)-1
+      i= bs(l, start, end)
+      return i
 
-if __name__ =="__main__":
-   print ("main")
-   l1=[5,10,20, 1,2,3,4]
-   print(l1)
-   i=find(l1)
-   print ("index=",i)
+    if __name__ =="__main__":
+      print ("main")
+      l1=[5,10,20, 1,2,3,4]
+      print(l1)
+      i=find(l1)
+      print ("index=",i)
 
-   l2=[20, 1,2,3,4]
-   print(l2)
-   i=find(l2)
-   print ("index=",i)
+      l2=[20, 1,2,3,4]
+      print(l2)
+      i=find(l2)
+      print ("index=",i)
 
 ## Hash function and hashtable 
 
@@ -253,8 +253,7 @@ if __name__ =="__main__":
 <https://www.geeksforgeeks.org/min-cost-path-dp-6/>
 
 #### Dynamic Programming-  Python implementation of Min Cost Path on grid problem 
-R = 3
-C = 3
+
   
 def minCost(cost, m, n): 
   
@@ -262,6 +261,8 @@ def minCost(cost, m, n):
     # dynamically allocate memoery to save space. The following 
     # line is used to keep te program simple and make it working 
     # on all compilers. 
+    R = 3
+    C = 3
     tc = [[0 for x in range(C)] for x in range(R)] 
   
     tc[0][0] = cost[0][0] 
@@ -281,11 +282,11 @@ def minCost(cost, m, n):
   
     return tc[m][n] 
   
-### Driver program to test above functions 
-cost = [[1, 2, 3], 
-        [4, 8, 2], 
-        [1, 5, 3]] 
-print(minCost(cost, 2, 2)) 
+#### Driver program to test above functions 
+    cost = [[1, 2, 3], 
+            [4, 8, 2], 
+            [1, 5, 3]] 
+    print(minCost(cost, 2, 2)) 
 
 
 
