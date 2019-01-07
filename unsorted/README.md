@@ -10,6 +10,15 @@
  () Parentheses
 ```
 
+## Be Happy
+
+<https://www.theguardian.com/books/2019/jan/06/happiness-index-wellbeing-survey-uk-population-paul-dolan-happy-ever-after>
+
+<https://news.ycombinator.com/item?id=18845327>
+
+<https://news.ycombinator.com/item?id=18837334>
+
+
 <https://news.ycombinator.com/item?id=18588727> mind hacks
 
 <https://fs.blog/best-articles/>
@@ -57,6 +66,9 @@
 
 <https://www.youtube.com/user/schafer5/videos>
 
+
+## Talk
+<https://news.ycombinator.com/item?id=18831374>
 
 ## Russian
 <http://www.audiopedia.su/>
