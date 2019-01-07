@@ -70,6 +70,8 @@
 ## Talk
 <https://news.ycombinator.com/item?id=18831374>
 
+<https://overreacted.io/preparing-for-tech-talk-part-2-what-why-and-how/>
+
 ## Russian
 <http://www.audiopedia.su/>
 
