@@ -34,6 +34,7 @@
 <https://www.youtube.com/user/JordanPetersonVideos>  Jordan B. Peterson
 
 
+# Comp science
 
 <https://news.ycombinator.com/item?id=17202615> some youtube channels
 
@@ -45,7 +46,7 @@
 
 <https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance>
 
-<https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92>
+<https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92> . Parsing
 
 <https://tls.ulfheim.net/> TLS explained
 
