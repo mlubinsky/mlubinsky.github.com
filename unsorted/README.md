@@ -33,10 +33,9 @@
 
 <https://www.youtube.com/user/JordanPetersonVideos>  Jordan B. Peterson
 
+<https://news.ycombinator.com/item?id=17202615> some youtube channels
 
 # Comp science
-
-<https://news.ycombinator.com/item?id=17202615> some youtube channels
 
 <https://www.quickcode.co/engineer-blogs>  dev blogs of big companies
 
@@ -115,12 +114,12 @@
 <https://movies.d3.ru/>
 
 ## Chess
-https://www.chessply.com/
-https://github.com/jven/studyopenings
-https://www.chessable.com/
-http://www.chesspositiontrainer.com
-https://chesstempo.com/
-http://www.bookup.com/
+<https://www.chessply.com/>
+<https://github.com/jven/studyopenings>
+<https://www.chessable.com/>
+<http://www.chesspositiontrainer.com>
+<https://chesstempo.com/>
+<http://www.bookup.com/>
 
 ## Health
 <https://zen.yandex.ru/media/zoh/statichnyi-kompleks-dlia-mujchin-posle-40-mujskaia-sila-5bbed62f091ba200aa3a94a9>
