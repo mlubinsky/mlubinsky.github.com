@@ -58,6 +58,8 @@
 
 <https://github.com/rtb7syl/face-kafka> Kafka + Face recognition
 
+<https://www.confluent.io/wp-content/uploads/2016/08/Making_Sense_of_Stream_Processing_Confluent_1.pdf> .  Stream processing  
+
 ## Concurrency
 
 <https://slikts.github.io/concurrency-glossary/>
