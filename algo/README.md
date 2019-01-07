@@ -173,6 +173,44 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 <http://declanoller.com/2018/09/03/the-egg-drop-puzzle-brute-force-dynamic-programming-and-markov-decision-processes/>
 
+
+### Find 1st element in rotated sorted array
+
+cat find_beginning_in_rotared_sorted_array.py
+def bs(lst, start, end):
+   print ("start=",start, "end=", end)
+   if start == end:  return start
+   m = (start+end)//2
+   print ("middle=",m, lst[m])
+
+   if m < end and lst[m+1] < lst[m]:
+       return m+1
+   if m > start and lst[m] < lst[m-1]:
+       return m
+
+   if lst[end] > lst[m]:
+       return bs(lst, start, m -1)
+   else:
+       return  bs(lst, m+1, end)
+
+def find(l):
+   start=0
+   end=len(l)-1
+   i= bs(l, start, end)
+   return i
+
+if __name__ =="__main__":
+   print ("main")
+   l1=[5,10,20, 1,2,3,4]
+   print(l1)
+   i=find(l1)
+   print ("index=",i)
+
+   l2=[20, 1,2,3,4]
+   print(l2)
+   i=find(l2)
+   print ("index=",i)
+
 ## Hash function and hashtable 
 
 <https://honest.engineering/posts/hash-functions-survival-guide>
@@ -214,7 +252,7 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 <https://www.geeksforgeeks.org/min-cost-path-dp-6/>
 
-### Dynamic Programming Python implementation of Min Cost Path on frid problem 
+#### Dynamic Programming-  Python implementation of Min Cost Path on grid problem 
 R = 3
 C = 3
   
