@@ -27,6 +27,8 @@
 <https://stackoverflow.com/questions/11897088/diameter-of-binary-tree-better-design>
 
 <http://www.interviewdruid.com/>
+<https://github.com/parineeth/tbboci-3rd-edition-python>
+<https://www.amazon.com/dp/1983861189>
 
 <https://www.algoexpert.io/product>
 
