@@ -39,8 +39,9 @@
 
 
 ## LCA
-https://en.wikipedia.org/wiki/Lowest_common_ancestor
-
+<https://en.wikipedia.org/wiki/Lowest_common_ancestor>
+<https://sites.google.com/site/mytechnicalcollection/algorithms/trees/lca-of-binary-tree>
+<https://stackoverflow.com/questions/1484473/how-to-find-the-lowest-common-ancestor-of-two-nodes-in-any-binary-tree>
 
 
 <https://www.youtube.com/channel/UCcAWgbpROQrPok18E6UozWw/videos>
