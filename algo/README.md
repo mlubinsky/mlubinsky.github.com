@@ -34,8 +34,14 @@
 
 <https://www.interviewbit.com/>
 
+## Print the outlier nodes in binary tree
 <https://www.jeffcarp.com/posts/2018-how-to-solve-every-software-engineering-interview-question/> 
-Print the outlier nodes in binary tree
+
+
+## LCA
+https://en.wikipedia.org/wiki/Lowest_common_ancestor
+
+
 
 <https://www.youtube.com/channel/UCcAWgbpROQrPok18E6UozWw/videos>
 
