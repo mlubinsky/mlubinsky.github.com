@@ -1,3 +1,6 @@
+
+<https://habr.com/post/435180/> Бессерверный REST API 
+
 <http://veekaybee.github.io/2018/09/24/the-case-of-the-broken-lambda/>
 
 <https://stackabuse.com/automating-aws-ec2-management-with-python-and-boto3/>
