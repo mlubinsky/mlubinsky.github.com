@@ -4,20 +4,18 @@
 
 <body>
  <pre>
+ 
+ <https://blog.codecentric.de/en/2018/10/window-functions-in-stream-analytics/>
+ 
 <h2>Apache Ni-Fi</h2>
 https://medium.com/@abdelkrim.hadjidj/best-practices-for-using-apache-nifi-in-real-world-projects-3-takeaways-1fe6912101db
 https://dzone.com/articles/kylo-self-service-data-ingestion-cleansing-and-val  Apachi NiFi Kylo
-
- 
 
 <h2>IoT MQTT</h2>
 <a href=https://docs.devicehive.com/docs>Device Hive</a>
 <a href="https://habr.com/company/intel/blog/304228/">Intel MQTT</a>
 http://highscalability.com/blog/2018/4/9/give-meaning-to-100-billion-events-a-day-the-analytics-pipel.html
 
-
-
-<https://blog.codecentric.de/en/2018/10/window-functions-in-stream-analytics/>
 
 <h2> Apache Drill </h2>
 https://mapr.com/blog/how-guide-getting-started-apache-drill/
@@ -49,13 +47,16 @@ https://towardsdatascience.com/introduction-to-druid-4bf285b92b5a
 <a href=https://mapr.com/blog/database-comparison-an-in-depth-look-at-mapr-db>MapR</a>
 
 
-https://orc.apache.org/
 https://www.java-success.com/01-hadoop-bigdata-overview-interview-questions-answers/
 
 <a href=https://www.amazon.com/dp/1946383481>Hadoop BIG DATA Interview Questions</a>
 <a href=https://www.amazon.com/dp/1946383228>Java notes</a>
 
-<h2>Avro </h2>
+<h2>Avro - row major format </h2>
+
+Avro primary design goal was schema evolution.
+In the avro format, we store schema separately from data. Generally avro schema file (.avsc) is maintained.
+
 Like Thrift, protobuf structures are defined via an IDL, which is used to generate stub code for multiple languages.
 Also like Thrift, Protocol Buffers do not support internal compression of records, are not splittable, 
 and have no native MapReduce support. But also like Thrift, the Elephant Bird project can be used to encode protobuf records, 
@@ -77,8 +78,41 @@ These blocks can optionally be compressed, and within those blocks, types are st
 boost to compression. At the time of writing, Avro supports Snappy and Deflate compression.
 
 <h2>Columnar file formats for Hadoop </h2>
-Columnar file formats supported on Hadoop include the RCFile format, which has been popular for some time as a Hive format,
-as well as newer formats such as the Optimized Row Columnar (ORC) and Parquet,
+https://orc.apache.org/
+https://www.slideshare.net/HadoopSummit/file-format-benchmark-avro-json-orc-parquet
+https://www.youtube.com/watch?v=6I5Ia_u4c6E
+
+ 
+<b>RCFile</b>
+
+<b>ORC - Optimized Row Columnar   </b> : 
+           Schema is with the data,  as a part of footer
+           Data is stored as row groups and stripes.
+           Each stripe maintains indexes and stats about data it stores.
+
+<b>Parquet</b>: 
+    Similar to ORC. Based on Google Dremel
+    Schema stored in footer
+    Column oriented storage format
+    Has integrated compression and indexes
+
+Only ORC and Parquet have the following features
+
+Predicate pushdown where a condition is checked against the metadata to see if the rows need to be read.
+Column projection to only read the bytes for the necessary columns.
+ORC can use predicate pushdown based on either:
+
+ min and max for each column
+ optional bloom filter for looking for particular values
+ 
+ Parquet only has min/max. ORC can filter at the file level, stripe level, or 10k row level. Parquet can only filter at the file level or stripe level.
+
+The previous answer mentions some of Avro's properties that are shared by ORC and Parquet:
+
+They are both language neutral with C++, Java, and other language implementations.
+They are both self describing.
+They are both splittable when compressed.
+They both support schema evolution.
 
 The MapReduce framework and other ecosystem projects provide RecordReader implementations for many file formats:
 text delimited, SequenceFile, Avro, Parquet, and more. 
