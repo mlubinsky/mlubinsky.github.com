@@ -106,21 +106,36 @@
 <https://soap.d3.ru/kto-chto-peresmotrel-v-ukhodiashchem-godu-1713813/>
 
 <https://soap.d3.ru/ianvar-2019-1713588/?sorting=rating>
+
 <https://reviews.d3.ru/>
+
 <https://kino.d3.ru/>
+
 <https://cinema.d3.ru/>
+
 <https://soap.d3.ru/>
+
 <https://posmotrel.d3.ru/>
+
 <https://recommend.d3.ru/>
+
 <https://kinokakto.d3.ru/>
+
 <https://movies.d3.ru/>
 
 ## Chess
+<https://medium.freecodecamp.org/simple-chess-ai-step-by-step-1d55a9266977>
+
 <https://www.chessply.com/>
+
 <https://github.com/jven/studyopenings>
+
 <https://www.chessable.com/>
+
 <http://www.chesspositiontrainer.com>
+
 <https://chesstempo.com/>
+
 <http://www.bookup.com/>
 
 ## Health
