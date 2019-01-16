@@ -2,7 +2,7 @@
 
 <http://libgen.io/> . Genesis
 
-<http://b-ok.org/>
+<http://b-ok.org/>x
 
 ```
  [] Square brackets are often simply called brackets,
@@ -48,6 +48,8 @@
 <https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance>
 
 <https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92> . Parsing
+
+https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 <https://tls.ulfheim.net/> TLS explained
 
