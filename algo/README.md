@@ -24,6 +24,7 @@
 
 <https://www.youtube.com/watch?v=bBPHpH8aKjw> look fo links here!
 
+<https://blog.sqreen.io/demystifying-radix-trees/> . Radix tree
 <https://news.ycombinator.com/item?id=18921058> . Radix trees
 
 <https://stackoverflow.com/questions/11897088/diameter-of-binary-tree-better-design>
