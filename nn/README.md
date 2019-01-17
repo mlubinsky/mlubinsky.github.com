@@ -254,6 +254,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://github.com/astorfi/TensorFlow-World>
 
+<https://github.com/TensorImage/TensorImage>
+
 <https://habr.com/post/428183/>
 
 Linear regression:
@@ -366,6 +368,8 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 <https://openmv.io/>
 
 <https://www.learnopencv.com>
+
+<https://github.com/TensorImage/TensorImage>
 
 <https://www.youtube.com/watch?v=XVvfcj_F_uc>
 
