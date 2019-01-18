@@ -371,6 +371,8 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 
 <https://github.com/TensorImage/TensorImage>
 
+<https://mlwhiz.com/blog/2018/09/22/object_detection/>
+
 <https://github.com/symisc/sod> Embedded computer vision and ML library
 
 <https://www.youtube.com/watch?v=XVvfcj_F_uc>
