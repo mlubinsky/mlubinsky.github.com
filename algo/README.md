@@ -8,6 +8,8 @@
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
 
+<https://blog.usejournal.com/i-interviewed-at-six-top-companies-in-silicon-valley-in-six-days-and-stumbled-into-six-job-offers-fe9cc7bbc996>
+
 <https://www.businessinsider.fr/us/microsoft-new-developer-interview-process-2018-12>
 
 <https://stackabuse.com/programming-interview-questions/>
