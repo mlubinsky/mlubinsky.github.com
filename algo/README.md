@@ -4,6 +4,8 @@
 
 <http://opendatastructures.org/>
 
+<https://algoexpert.io/rachit>  Use "rachit" as coupon code to get 30% off
+
 <https://algs4.cs.princeton.edu/home/>
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
