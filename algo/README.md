@@ -8,6 +8,8 @@
 
 <https://algs4.cs.princeton.edu/home/>
 
+<https://medium.freecodecamp.org/unmasking-bitmasked-dynamic-programming-25669312b77b>
+
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
 
 <https://blog.usejournal.com/i-interviewed-at-six-top-companies-in-silicon-valley-in-six-days-and-stumbled-into-six-job-offers-fe9cc7bbc996>
