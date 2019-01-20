@@ -1,5 +1,7 @@
 <http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
 
+<https://habr.com/ru/post/112222/> heap
+
 <http://algorithms.wtf/> 
 
 <http://opendatastructures.org/>
