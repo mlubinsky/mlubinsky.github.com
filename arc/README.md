@@ -16,6 +16,8 @@
 
 <https://www.youtube.com/watch?v=C6MlPaox5EI> Apache Beam
 
+<https://habr.com/ru/company/cloud4y/blog/330462/> consensus in distributed systems (Paxos, etc
+
 <https://medium.com/netflix-techblog/implementing-the-netflix-media-database-53b5a840b42a>
 
 <https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513>
