@@ -195,6 +195,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://en.wikipedia.org/wiki/Convolutional_neural_network>
 
+<https://habr.com/ru/post/436838/>
+
 <http://cs231n.stanford.edu/>
 
 <https://www.youtube.com/watch?v=SQ67NBCLV98>
