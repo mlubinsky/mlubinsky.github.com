@@ -9,9 +9,12 @@
 
 <https://www.blog.google/perspectives/aparna-chennapragada/google-lens-one-year/>
 
-https://habr.com/company/intel/blog/434238/ Intel OpenVino on Raspberry Pi
+## Intel OpenVino on Raspberry Pi
+<https://habr.com/company/intel/blog/434238/>
 
-https://software.intel.com/en-us/openvino-toolkit
+<https://habr.com/ru/post/436744/>
+
+<https://software.intel.com/en-us/openvino-toolkit>
 
 ## Classes
 
