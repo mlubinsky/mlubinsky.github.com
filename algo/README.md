@@ -35,6 +35,9 @@ Find(X) — возвратить идентификатор множества, 
 
 Unite(X, Y) — объединить два множества, в которых лежат элементы X и Y, в одно новое.
 
+
+<http://iolivia.me/posts/4-bloom-filter-part-3/> Bloom filter
+
 <https://stackoverflow.com/questions/2936213/explain-how-finding-cycle-start-node-in-cycle-linked-list-work>
 
 <https://stackoverflow.com/questions/41515081/algorithm-find-all-permutations-of-string-a-in-string-b>
