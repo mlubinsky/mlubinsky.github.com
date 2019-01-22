@@ -2,6 +2,8 @@
 
 <http://www.interdb.jp/pg/index.html>
 
+<https://www.qwertee.io/blog/postgresql-b-tree-index-explained-part-1/>
+
 <https://pgdash.io/blog/postgres-features.html>
 
 <https://tech.codeyellow.nl/blog/pg-timezones/>
