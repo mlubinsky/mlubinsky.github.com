@@ -107,6 +107,8 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 ## Kino
 <https://d3.ru/tag/%D0%BA%D0%B8%D0%BD%D0%BE/>
 
+<https://soamo.livejournal.com/4862662.html#comments>
+
 <https://soap.d3.ru/kto-chto-peresmotrel-v-ukhodiashchem-godu-1713813/>
 
 <https://soap.d3.ru/ianvar-2019-1713588/?sorting=rating>
