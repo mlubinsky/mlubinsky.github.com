@@ -382,7 +382,9 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 
 <https://www.youtube.com/watch?v=XVvfcj_F_uc>
 
-<https://habr.com/post/430906/>
+<https://habr.com/post/430906/> . Compiling OpenCV for RusberryPi under Ubuntu cross-compilation to ARM
+
+<https://habr.com/ru/post/432444/> Распознавание номеров. Практическое пособие. Часть 1
 
 <https://github.com/OlafenwaMoses/ImageAI>
 
