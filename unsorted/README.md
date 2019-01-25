@@ -132,6 +132,8 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 ## Chess
 <https://medium.freecodecamp.org/simple-chess-ai-step-by-step-1d55a9266977>
 
+<https://habr.com/ru/company/skillbox/blog/437524/>
+
 <https://www.chessply.com/>
 
 <https://github.com/jven/studyopenings>
