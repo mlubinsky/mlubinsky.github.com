@@ -9,6 +9,8 @@
 
 <https://jack-vanlightly.com/blog/2018/9/2/rabbitmq-vs-kafka-part-6-fault-tolerance-and-high-availability-with-kafka>
 
+<https://habr.com/ru/company/itsumma/blog/437446/>
+
 In addition to scalability and low latency, Kafka popularity comes from allowing more flexible and agile consumer patterns. Essentially, the consumer is in control. You don’t need to have subscribed to the queue (and be up and running) when the message is produced. You can subscribe to it later (days, weeks, months later) and still get old messages.
 
 Rabbit MQ and similar “old style” messaging services are more about the producer. They have things like “guaranteed delivery” and “guaranteed single execution”. They are still good for job execution, where the producer has a job to do, for example, to reset a password or change a customer account across multiple business systems. In other words, they are good for typical Enterprise Service Bus (ESB) type applications, something that has the “guaranteed (right now) single delivery” requirements.
