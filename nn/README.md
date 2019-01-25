@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://www.fast.ai/2019/01/24/course-v3/>
+
 <https://news.ycombinator.com/item?id=18852974> .  Graph NN
 
 ## Intel RealSense D4(15/35) and other cameras
