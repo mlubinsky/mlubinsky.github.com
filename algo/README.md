@@ -1,5 +1,7 @@
 <http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
 
+<http://www.java67.com/2018/05/top-75-programming-interview-questions-answers.html>
+
 <https://habr.com/ru/post/112222/> heap
 
 <http://algorithms.wtf/> 
