@@ -4,6 +4,8 @@
 
 <https://seeing-theory.brown.edu/index.html> . Visual probability and stat
 
+<https://textbooks.opensuny.org/introduction-to-the-modeling-and-analysis-of-complex-systems/>
+
 <https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf>
 
 https://github.com/Quanteeks/Statistics-lectures/blob/master/book.pdf
