@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/post/112222/> heap
 
+<https://habr.com/ru/post/437702/> Разбор задачи с собеседования в Google: синонимичные запросы
+
 <http://algorithms.wtf/> 
 
 <http://opendatastructures.org/>
