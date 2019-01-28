@@ -2,6 +2,8 @@
 
 <https://www.youtube.com/channel/UCn1XnDWhsLS5URXTi5wtFTA>  system design
 
+<https://youtu.be/dE699lHDW7I>
+
 <https://queue.acm.org/pastissues.cfm> .  Magazine
 
 <https://www.youtube.com/watch?v=_Hc0WkBUmcQ> Высокопроизводительная и отказоустойчивая архитектура
