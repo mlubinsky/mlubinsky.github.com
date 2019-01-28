@@ -28,6 +28,8 @@
 
 <http://rachitiitr.blogspot.com/>
 
+<https://www.youtube.com/watch?v=4NIb9l3imAo>
+
 disjoint set union (DSU) или Union-Find.
 <https://habr.com/ru/post/104772/>
 создать быструю структуру, которая поддерживает следующие операции:
