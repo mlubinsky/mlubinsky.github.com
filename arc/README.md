@@ -14,6 +14,8 @@
 
 <https://news.ycombinator.com/item?id=18908843>
 
+<https://eng.uber.com/aresdb/>
+
 <https://blog.keen.io/architecture-of-giants-data-stacks-at-facebook-netflix-airbnb-and-pinterest-9b7cd881af54>
 
 <https://www.braze.com/perspectives/article/building-braze-job-queues-resiliency>
