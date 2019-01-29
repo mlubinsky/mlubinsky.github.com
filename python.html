@@ -217,14 +217,31 @@ map(lambda x: str(x), arr) # Output: ['1','2','3']
 # List as queue
 arr = [1,2,3]
 arr.append(x) # queue.push(x)
-arr.pop(0) #queue.pop()
+arr.pop(0) #queue.pop() .  removes the 1st element from array
 arr[0] #queue.peek()
+
+
 
 # List as stack
 arr = [1,2,3]
 arr.append(x) #stack.push(x)
-arr.pop() # stack.pop()
+y = arr.pop() # stack.pop() . removes the last element from list
 arr[-1] # stack.peek()
+
+
+<b> Dictionary </b>
+    for k, v in dict.items():
+	    print(k,v)
+
+<b> Default dictionary </b>
+
+from collections import defaultdict
+d = defaultdict(list)
+d['python'].append("awesome")
+d['something-else'].append("not relevant")
+d['python'].append("language")
+for i in d.items():
+    print i
 
 <b> Match brackets </b>
 
