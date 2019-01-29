@@ -1,12 +1,17 @@
 ## Math
 
 Linear algebra
+
+<https://www.amazon.com/Coding-Matrix-Algebra-Applications-Computer/dp/0615880991/>
+
 <http://codingthematrix.com/>
 
 <http://academictorrents.com/details/54cd86f3038dfd446b037891406ba4e0b1200d5a>
 
 <https://archive.org/details/LinearAlgebraAndMatrixTheory>
  
+https://news.ycombinator.com/item?id=19013189
+
 
 
 
