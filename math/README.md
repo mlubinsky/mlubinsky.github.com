@@ -1,5 +1,15 @@
 ## Math
 
+Linear algebra
+<http://codingthematrix.com/>
+
+<http://academictorrents.com/details/54cd86f3038dfd446b037891406ba4e0b1200d5a>
+
+<https://archive.org/details/LinearAlgebraAndMatrixTheory>
+ 
+
+
+
 <https://habr.com/post/265321/> . statistical disributions
 
 <https://seeing-theory.brown.edu/index.html> . Visual probability and stat
