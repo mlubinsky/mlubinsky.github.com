@@ -2,6 +2,8 @@
 
 <https://www.youtube.com/channel/UCn1XnDWhsLS5URXTi5wtFTA>  system design
 
+<https://habr.com/ru/company/odnoklassniki/blog/437858/>  Проектирование высоконагруженных систем
+
 <https://youtu.be/dE699lHDW7I>
 
 <https://www.youtube.com/watch?v=DSGsa0pu8-k>
