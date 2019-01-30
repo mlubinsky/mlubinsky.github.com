@@ -44,10 +44,6 @@ https://habr.com/post/433804/ . MNN
 
 <https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba>
 
-<https://en.wikipedia.org/wiki/Object_detection>
-
-<https://medium.com/@fractaldle/brief-overview-on-object-detection-algorithms-ec516929be93>
-
 <https://medium.com/@14prakash/image-classification-architectures-review-d8b95075998f>
 
 ```
@@ -59,6 +55,19 @@ SqueezeNet
 ShuffleNet
 YOLO v3
 ```
+
+## Object detection
+
+<https://en.wikipedia.org/wiki/Object_detection>
+
+<https://mlwhiz.com/blog/2018/09/22/object_detection/>
+
+<https://medium.com/@fractaldle/brief-overview-on-object-detection-algorithms-ec516929be93>
+
+<http://users.cecs.anu.edu.au/~trumpf/theses/Jack_Henderson.pdf> Object tracking
+
+
+<https://www.rsipvision.com/ComputerVisionNews-2019January/>
 
 
 <https://arxiv.org/abs/1806.08342> .  Quantizing deep convolutional networks for efficient inference: A whitepaper
