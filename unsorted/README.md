@@ -70,7 +70,7 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 <https://www.youtube.com/user/schafer5/videos>
 
-
+<https://habr.com/ru/company/englishdom/blog/438066/> .  different youtube links
 ## Talk
 <https://news.ycombinator.com/item?id=18831374>
 
