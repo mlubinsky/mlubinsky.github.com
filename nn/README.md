@@ -42,6 +42,8 @@ https://habr.com/post/433804/ . MNN
 
 <https://habr.com/company/intel/blog/417809/> . NN architectures for image recognition 
 
+<https://towardsdatascience.com/deep-convolutional-neural-networks-ccf96f830178>
+
 <https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba>
 
 <https://medium.com/@14prakash/image-classification-architectures-review-d8b95075998f>
