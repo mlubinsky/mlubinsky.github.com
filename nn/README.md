@@ -67,6 +67,9 @@ YOLO v3
 <http://users.cecs.anu.edu.au/~trumpf/theses/Jack_Henderson.pdf> Object tracking
 
 
+
+<https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/>
+
 <https://www.rsipvision.com/ComputerVisionNews-2019January/>
 
 
