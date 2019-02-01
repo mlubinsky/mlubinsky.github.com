@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://habr.com/ru/post/414165/>
+
 <https://www.fast.ai/2019/01/24/course-v3/>
 
 <https://news.ycombinator.com/item?id=18852974> .  Graph NN
