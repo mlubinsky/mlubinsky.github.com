@@ -2,6 +2,8 @@
 
 <https://habr.com/ru/post/414165/>
 
+<https://www.youtube.com/channel/UCQj_dwbIydi588xrfjWSL5g/videos> . ru
+
 <https://www.fast.ai/2019/01/24/course-v3/>
 
 <https://news.ycombinator.com/item?id=18852974> .  Graph NN
