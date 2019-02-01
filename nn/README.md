@@ -238,6 +238,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://github.com/vdumoulin/conv_arithmetic>
 
+<https://jameslittle.me/blog/2019/tensorflow-object-detection>
+
 <https://arxiv.org/pdf/1707.07012.pdf> NasNet
 
 
