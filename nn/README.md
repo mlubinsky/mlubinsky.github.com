@@ -216,6 +216,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://habr.com/ru/post/436838/>
 
+<https://youtu.be/whNAaM4NwKw> . Лекция 6 - Frameworks
+
 <http://cs231n.stanford.edu/>
 
 <https://www.youtube.com/watch?v=SQ67NBCLV98>
