@@ -12,6 +12,8 @@
 
 <https://www.youtube.com/watch?v=_Hc0WkBUmcQ> Высокопроизводительная и отказоустойчивая архитектура
 
+<https://textbooks.opensuny.org/introduction-to-the-modeling-and-analysis-of-complex-systems/>
+
 <https://news.ycombinator.com/item?id=18908843>
 
 <https://eng.uber.com/aresdb/>
