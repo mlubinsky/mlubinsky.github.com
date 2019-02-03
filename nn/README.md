@@ -6,6 +6,9 @@
 
 <https://www.fast.ai/2019/01/24/course-v3/>
 
+<https://heartbeat.fritz.ai/detecting-objects-in-videos-and-camera-feeds-using-keras-opencv-and-imageai-c869fe1ebcdb>
+
+
 <https://news.ycombinator.com/item?id=18852974> .  Graph NN
 
 ## Intel RealSense D4(15/35) and other cameras
@@ -231,6 +234,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 <https://towardsdatascience.com/types-of-convolutions-in-deep-learning-717013397f4d>
 
 <https://www.liip.ch/en/blog/poke-zoo-or-making-deep-learning-tell-oryxes-apart-from-lamas-in-a-zoo-part-1-the-idea-and-concepts>
+
+<https://towardsdatascience.com/deep-convolutional-neural-networks-ccf96f830178>
 
 <https://blog.sicara.com/about-convolutional-layer-convolution-kernel-9a7325d34f7d>
 
