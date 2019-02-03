@@ -1,4 +1,4 @@
-## Math
+## Math & Phys
 
 Linear algebra
 
@@ -12,7 +12,9 @@ Linear algebra
  
 https://news.ycombinator.com/item?id=19013189
 
-
+### Quantum mechanics
+<http://www.visualquantumphysics.org/>
+<https://news.ycombinator.com/item?id=19062319>
 
 
 <https://habr.com/post/265321/> . statistical disributions
