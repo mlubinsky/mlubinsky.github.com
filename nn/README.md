@@ -221,6 +221,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <https://en.wikipedia.org/wiki/Convolutional_neural_network>
 
+<https://habr.com/ru/company/mailru/blog/311706/> . Review of topologies
+
 <https://habr.com/ru/post/436838/>
 
 <https://youtu.be/whNAaM4NwKw> . Лекция 6 - Frameworks
