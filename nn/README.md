@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://github.com/kmario23/deep-learning-drizzle>
+
 <https://github.com/Mybridge/amazing-machine-learning-opensource-2019>
 
 https://github.com/bobquest33/dlib_obj_count
