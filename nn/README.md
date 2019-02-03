@@ -2,6 +2,8 @@
 
 <https://github.com/Mybridge/amazing-machine-learning-opensource-2019>
 
+https://github.com/bobquest33/dlib_obj_count
+
 <https://habr.com/ru/post/414165/>
 
 <https://www.youtube.com/channel/UCQj_dwbIydi588xrfjWSL5g/videos> . ru
