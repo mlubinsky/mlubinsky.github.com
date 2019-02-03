@@ -7,7 +7,7 @@
 <https://www.fast.ai/2019/01/24/course-v3/>
 
 <https://heartbeat.fritz.ai/detecting-objects-in-videos-and-camera-feeds-using-keras-opencv-and-imageai-c869fe1ebcdb>
-
+<https://towardsdatascience.com/wtf-is-image-classification-8e78a8235acb>
 
 <https://news.ycombinator.com/item?id=18852974> .  Graph NN
 
