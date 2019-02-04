@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://dlcourse.ai/> . russian class starts Feb 18
+
 <https://github.com/kmario23/deep-learning-drizzle>
 
 <https://github.com/Mybridge/amazing-machine-learning-opensource-2019>
