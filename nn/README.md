@@ -2,6 +2,10 @@
 
 <https://dlcourse.ai/> . russian class starts Feb 18
 
+<https://deeplearningcourses.com/>
+
+<https://github.com/vivekstorm/AI-Resource>
+
 <https://github.com/kmario23/deep-learning-drizzle>
 
 <https://github.com/Mybridge/amazing-machine-learning-opensource-2019>
