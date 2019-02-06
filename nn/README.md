@@ -2,6 +2,8 @@
 
 <https://dlcourse.ai/> . russian class starts Feb 18
 
+<https://github.com/Yorko/mlcourse.ai>
+
 <https://deeplearningcourses.com/>
 
 <https://github.com/vivekstorm/AI-Resource>
