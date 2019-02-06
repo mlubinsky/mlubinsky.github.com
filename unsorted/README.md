@@ -4,6 +4,8 @@
 
 <http://b-ok.org/>x
 
+<http://ebook-dl.com>
+
 ```
  [] Square brackets are often simply called brackets,
  {} Curly brackets  are often called braces 
