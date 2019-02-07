@@ -28,6 +28,12 @@ https://github.com/bobquest33/dlib_obj_count
 <https://news.ycombinator.com/item?id=18852974> .  Graph NN
 
 
+## Links
+<https://www.reddit.com/r/MachineLearning/comments/anrams/d_sharing_my_personal_resource_list_for_deep/>
+<https://gengo.ai/articles/best-20-ai-and-machine-learning-blogs-to-follow-religiously/>
+<https://gengo.ai/articles/20-best-youtube-channels-for-ai-and-machine-learning/>
+
+
 ## Code
 
 <https://github.com/kaszperro/slick-dnn> Deep NN in pure python
@@ -35,6 +41,8 @@ https://github.com/bobquest33/dlib_obj_count
 <https://github.com/Merwanedr/Vusion> image analysis using AI
 
 <https://github.com/Merwanedr/Popbot> . image transformation
+
+<https://github.com/Mybridge/amazing-machine-learning-opensource-2019>
 
 ## Intel RealSense D4(15/35) and other cameras
 <https://habr.com/company/intel/blog/430720/>
