@@ -49,7 +49,7 @@ https://github.com/bobquest33/dlib_obj_count
 <https://habr.com/ru/post/436744/>
 
 <https://software.intel.com/en-us/openvino-toolkit>
-
+ 
 ## Classes
 
 <https://www.bitdegree.org/user/course/python-image-recognition/player/1021>  course
