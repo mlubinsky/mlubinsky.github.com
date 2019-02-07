@@ -4,6 +4,8 @@
 
 <https://github.com/Yorko/mlcourse.ai>
 
+<https://habr.com/ru/post/439122/> geometric shapes
+
 <https://deeplearningcourses.com/>
 
 <https://github.com/vivekstorm/AI-Resource>
