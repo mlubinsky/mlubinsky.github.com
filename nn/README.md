@@ -27,6 +27,15 @@ https://github.com/bobquest33/dlib_obj_count
 
 <https://news.ycombinator.com/item?id=18852974> .  Graph NN
 
+
+## Code
+
+<https://github.com/kaszperro/slick-dnn> Deep NN in pure python
+
+<https://github.com/Merwanedr/Vusion> image analysis using AI
+
+<https://github.com/Merwanedr/Popbot> . image transformation
+
 ## Intel RealSense D4(15/35) and other cameras
 <https://habr.com/company/intel/blog/430720/>
 
@@ -222,6 +231,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 
 ## DataSets
+
+<https://gengo.ai/datasets/20-best-image-datasets-for-computer-vision/>
 
 <http://cocodataset.org/>
 
