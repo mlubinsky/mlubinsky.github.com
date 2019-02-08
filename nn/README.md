@@ -207,6 +207,8 @@ YOLO v3
 
 <https://modelzoo.co/>
 
+<http://cs231n.stanford.edu/slides/2018/>
+
 ## DL on Edge
 <https://towardsdatascience.com/deep-learning-on-the-edge-9181693f466c>
 
