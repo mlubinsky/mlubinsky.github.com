@@ -448,6 +448,8 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 
 <https://www.learnopencv.com>
 
+<https://www.analyticsvidhya.com/blog/2017/10/image-skilltest/>
+
 <https://github.com/TensorImage/TensorImage>
 
 <https://mlwhiz.com/blog/2018/09/22/object_detection/>
