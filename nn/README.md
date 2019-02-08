@@ -8,6 +8,8 @@
 
 <https://deeplearningcourses.com/>
 
+<https://www.analyticsvidhya.com/blog/category/deep-learning/>
+
 <https://www.analyticsvidhya.com/blog/2018/12/best-data-science-machine-learning-projects-github/>
 
 <https://deepnotes.io/>
