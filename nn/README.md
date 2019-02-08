@@ -44,6 +44,10 @@ https://github.com/bobquest33/dlib_obj_count
 
 <https://github.com/Mybridge/amazing-machine-learning-opensource-2019>
 
+<https://github.com/keras-team/keras/tree/master/examples> Keras
+
+<https://github.com/Yorko/mlcourse.ai/tree/master/jupyter_russian>
+
 ## Intel RealSense D4(15/35) and other cameras
 <https://habr.com/company/intel/blog/430720/>
 
