@@ -8,6 +8,10 @@
 
 <https://deeplearningcourses.com/>
 
+<https://deepnotes.io/>
+
+<https://jaedukseo.me/>
+
 <https://github.com/vivekstorm/AI-Resource>
 
 <https://github.com/kmario23/deep-learning-drizzle>
