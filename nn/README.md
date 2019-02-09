@@ -284,6 +284,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 
 <http://cs231n.stanford.edu/>
 
+<https://medium.com/@geek_kid/making-your-first-cnn-part-3-6edd2476aaf1>
+
 <https://www.pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/>
 
 <https://www.youtube.com/watch?v=SQ67NBCLV98>
