@@ -59,6 +59,8 @@ https://github.com/bobquest33/dlib_obj_count
 
 <https://github.com/Yorko/mlcourse.ai/tree/master/jupyter_russian>
 
+<https://heartbeat.fritz.ai/classification-with-tensorflow-and-dense-neural-networks-8299327a818a>
+
 ## Intel RealSense D4(15/35) and other cameras
 <https://habr.com/company/intel/blog/430720/>
 
