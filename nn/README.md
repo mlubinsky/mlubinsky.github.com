@@ -39,6 +39,7 @@ https://github.com/bobquest33/dlib_obj_count
 
 ## Links
 <https://github.com/kmario23/deep-learning-drizzle>
+<https://thegradient.pub/>
 <https://www.reddit.com/r/MachineLearning/comments/anrams/d_sharing_my_personal_resource_list_for_deep/>
 <https://gengo.ai/articles/best-20-ai-and-machine-learning-blogs-to-follow-religiously/>
 <https://gengo.ai/articles/20-best-youtube-channels-for-ai-and-machine-learning/>
