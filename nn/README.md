@@ -558,6 +558,8 @@ https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detec
 
 <https://www.pyimagesearch.com/2017/09/18/real-time-object-detection-with-deep-learning-and-opencv/>
 
+<https://www.pyimagesearch.com/2018/10/29/multi-object-tracking-with-dlib/>
+
 https://www.pyimagesearch.com/2018/08/06/tracking-multiple-objects-with-opencv/
 
 <https://heartbeat.fritz.ai/detecting-objects-in-videos-and-camera-feeds-using-keras-opencv-and-imageai-c869fe1ebcdb>
