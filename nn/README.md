@@ -35,6 +35,7 @@ https://github.com/bobquest33/dlib_obj_count
 
 <https://news.ycombinator.com/item?id=18852974> .  Graph NN
 
+<https://www.pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/>
 
 ## Links
 <https://www.reddit.com/r/MachineLearning/comments/anrams/d_sharing_my_personal_resource_list_for_deep/>
@@ -279,6 +280,8 @@ Rectified Linear activation function does not have this problem. The gradient is
 <https://youtu.be/whNAaM4NwKw> . Лекция 6 - Frameworks
 
 <http://cs231n.stanford.edu/>
+
+<https://www.pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/>
 
 <https://www.youtube.com/watch?v=SQ67NBCLV98>
 
