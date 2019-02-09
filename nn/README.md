@@ -453,7 +453,7 @@ Nilolenko DeepLearning book
 
 <https://www.youtube.com/watch?v=tYYVSEHq-io>
 
-http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.66230&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false
+<http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.66230&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false>
  
 ## RNN LSTM
 
@@ -558,9 +558,11 @@ https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detec
 
 <https://www.pyimagesearch.com/2017/09/18/real-time-object-detection-with-deep-learning-and-opencv/>
 
+<https://www.pyimagesearch.com/2018/07/30/opencv-object-tracking/>
+
 <https://www.pyimagesearch.com/2018/10/29/multi-object-tracking-with-dlib/>
 
-https://www.pyimagesearch.com/2018/08/06/tracking-multiple-objects-with-opencv/
+<https://www.pyimagesearch.com/2018/08/06/tracking-multiple-objects-with-opencv/>
 
 <https://heartbeat.fritz.ai/detecting-objects-in-videos-and-camera-feeds-using-keras-opencv-and-imageai-c869fe1ebcdb>
 
@@ -568,12 +570,19 @@ https://www.pyimagesearch.com/2018/08/06/tracking-multiple-objects-with-opencv/
 
 
 BOOSTING Tracker
+
 MIL Tracker
+
 KCF Tracker - Kernelized Correlation Filters
+
 TLD - Tracking, learning and detection
+
 MEDIANFLOW Tracker
+
 GOTURN tracker
+
 MOSSE tracker - Minimum Output Sum of Squared Error
+
 CSRT tracker - Discriminative Correlation Filter with Channel and Spatial Reliability (DCF-CSR)
 
 ## YOLO
