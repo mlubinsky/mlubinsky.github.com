@@ -83,6 +83,7 @@ https://github.com/bobquest33/dlib_obj_count
 
 
 <https://medium.com/atlas-ml/state-of-deep-learning-h2-2018-review-cc3e490f1679> State of ML in 2018
+
 ## NN arhitecture
 
 <https://www.youtube.com/watch?v=XY5AczPW7V4> .  Russ
@@ -121,7 +122,7 @@ YOLO v3
 
 <http://users.cecs.anu.edu.au/~trumpf/theses/Jack_Henderson.pdf> Object tracking
 
-
+<https://medium.com/zylapp/review-of-deep-learning-algorithms-for-object-detection-c1f3d437b852>
 
 <https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/>
 
