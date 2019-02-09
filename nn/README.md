@@ -562,6 +562,17 @@ https://www.pyimagesearch.com/2018/08/06/tracking-multiple-objects-with-opencv/
 
 <https://heartbeat.fritz.ai/detecting-objects-in-videos-and-camera-feeds-using-keras-opencv-and-imageai-c869fe1ebcdb>
 
+<https://www.learnopencv.com/object-tracking-using-opencv-cpp-python/>
+
+
+BOOSTING Tracker
+MIL Tracker
+KCF Tracker - Kernelized Correlation Filters
+TLD - Tracking, learning and detection
+MEDIANFLOW Tracker
+GOTURN tracker
+MOSSE tracker - Minimum Output Sum of Squared Error
+CSRT tracker - Discriminative Correlation Filter with Channel and Spatial Reliability (DCF-CSR)
 
 ## YOLO
 
