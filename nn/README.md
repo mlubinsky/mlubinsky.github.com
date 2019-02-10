@@ -44,6 +44,13 @@ https://github.com/bobquest33/dlib_obj_count
 <https://gengo.ai/articles/best-20-ai-and-machine-learning-blogs-to-follow-religiously/>
 <https://gengo.ai/articles/20-best-youtube-channels-for-ai-and-machine-learning/>
 
+## Digits recognition
+
+<https://towardsdatascience.com/scanned-digits-recognition-using-k-nearest-neighbor-k-nn-d1a1528f0dea>
+
+<http://www.emaraic.com/blog/multi-digit-segmentation-and-recognition>
+
+<https://wosaku.github.io/digits-recognition.html>
 
 ## Code
 
@@ -596,6 +603,8 @@ CSRT tracker - Discriminative Correlation Filter with Channel and Spatial Reliab
 <https://medium.com/paperspace/tutorial-on-implementing-yolo-v3-from-scratch-in-pytorch-part-1-a0054d38ec78>
 
 <https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088>
+
+<http://www.emaraic.com/blog/yolov3-custom-object-detector>
 
 <https://pjreddie.com/darknet/yolo/>
 
