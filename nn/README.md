@@ -47,6 +47,8 @@ https://github.com/bobquest33/dlib_obj_count
 ## Digits recognition
 <http://neuralnetworksanddeeplearning.com/chap1.html>
 
+<https://nextjournal.com/gkoehler/digit-recognition-with-keras>
+
 <https://www.digitalocean.com/community/tutorials/how-to-build-a-neural-network-to-recognize-handwritten-digits-with-tensorflow>
 
 <https://medium.com/stocard/recognizing-digits-of-loyalty-cards-using-cnn-and-tesseract-4-78c389dc6f03>
