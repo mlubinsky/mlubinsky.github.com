@@ -45,6 +45,7 @@ https://github.com/bobquest33/dlib_obj_count
 <https://gengo.ai/articles/20-best-youtube-channels-for-ai-and-machine-learning/>
 
 ## Digits recognition
+<http://neuralnetworksanddeeplearning.com/chap1.html>
 
 <https://www.digitalocean.com/community/tutorials/how-to-build-a-neural-network-to-recognize-handwritten-digits-with-tensorflow>
 
