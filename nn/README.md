@@ -44,8 +44,15 @@ https://github.com/bobquest33/dlib_obj_count
 <https://gengo.ai/articles/best-20-ai-and-machine-learning-blogs-to-follow-religiously/>
 <https://gengo.ai/articles/20-best-youtube-channels-for-ai-and-machine-learning/>
 
-## Digits recognition
+## OCR (digits/characters) recognition
+
+<https://en.wikipedia.org/wiki/Optical_character_recognition>
+
 <http://neuralnetworksanddeeplearning.com/chap1.html>
+
+<https://www.codingame.com/playgrounds/37409/handwritten-digit-recognition-using-scikit-learn>
+
+<https://dev.to/frosnerd/handwritten-digit-recognition-using-convolutional-neural-networks-11g0>
 
 <https://nextjournal.com/gkoehler/digit-recognition-with-keras>
 
@@ -58,6 +65,8 @@ https://github.com/bobquest33/dlib_obj_count
 <http://www.emaraic.com/blog/multi-digit-segmentation-and-recognition>
 
 <https://wosaku.github.io/digits-recognition.html>
+
+<https://docs.aws.amazon.com/rekognition/latest/dg/text-detection.html>
 
 ## Code
 
@@ -74,6 +83,10 @@ https://github.com/bobquest33/dlib_obj_count
 <https://github.com/Yorko/mlcourse.ai/tree/master/jupyter_russian>
 
 <https://heartbeat.fritz.ai/classification-with-tensorflow-and-dense-neural-networks-8299327a818a>
+
+
+<https://nextjournal.com/mpd/image-classification-with-keras>
+
 
 ## Intel RealSense D4(15/35) and other cameras
 <https://habr.com/company/intel/blog/430720/>
