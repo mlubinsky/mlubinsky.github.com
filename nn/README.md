@@ -48,6 +48,8 @@ https://github.com/bobquest33/dlib_obj_count
 
 <https://www.digitalocean.com/community/tutorials/how-to-build-a-neural-network-to-recognize-handwritten-digits-with-tensorflow>
 
+<https://medium.com/stocard/recognizing-digits-of-loyalty-cards-using-cnn-and-tesseract-4-78c389dc6f03>
+
 <https://towardsdatascience.com/scanned-digits-recognition-using-k-nearest-neighbor-k-nn-d1a1528f0dea>
 
 <http://www.emaraic.com/blog/multi-digit-segmentation-and-recognition>
