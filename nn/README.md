@@ -46,6 +46,8 @@ https://github.com/bobquest33/dlib_obj_count
 
 ## Digits recognition
 
+<https://www.digitalocean.com/community/tutorials/how-to-build-a-neural-network-to-recognize-handwritten-digits-with-tensorflow>
+
 <https://towardsdatascience.com/scanned-digits-recognition-using-k-nearest-neighbor-k-nn-d1a1528f0dea>
 
 <http://www.emaraic.com/blog/multi-digit-segmentation-and-recognition>
