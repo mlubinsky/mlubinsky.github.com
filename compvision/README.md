@@ -1,8 +1,12 @@
 <https://www.udacity.com/course/introduction-to-computer-vision--ud810> .  Free course
 
+<<https://arxiv.org/abs/1809.02165v1> . Generic object detection
+
+<https://github.com/bobquest33/dlib_obj_count> . The Shelf Detector System For Retail Stores Using Object Detection; Dlib is a modern C++ toolkit containing machine learning algorithms
 
 ## Image processing
 
+<<https://www.liip.ch/en/blog/numbers-recognition-mnist-on-an-iphone-with-coreml-from-a-to-z> .  CoreML
 <https://openmv.io/>
 
 <https://www.learnopencv.com>
