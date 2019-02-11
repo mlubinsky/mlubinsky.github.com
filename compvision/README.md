@@ -124,9 +124,9 @@ CSRT tracker - Discriminative Correlation Filter with Channel and Spatial Reliab
 
 <https://towardsdatascience.com/building-an-image-classifier-running-on-raspberry-pi-a7a45153acc8>
 
-<https://habr.com/post/429400/>
+<https://habr.com/post/429400/> . запускаем SqueezeNet v.1.1 на Raspberry Zero в realtime (part2)
 
-<https://habr.com/post/428021/>
+<https://habr.com/post/428021/> запускаем SqueezeNet v.1.1 на Raspberry Zero в realtime (part1)
 
 <https://www.pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/>
 
