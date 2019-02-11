@@ -30,6 +30,8 @@ ssh -i "aws_ec2_key_pair.pem" ubuntu@ec2-18-223-44-124.us-east-2.compute.amazona
 
 <https://towardsdatascience.com/why-machine-learning-on-the-edge-92fac32105e6>
 
+<https://blog.hackster.io/simple-neural-network-on-mcus-a7cbd3dc108c>
+
 <https://github.com/uTensor/uTensor>
 
 ## DS-5
