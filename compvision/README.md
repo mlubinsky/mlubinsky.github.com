@@ -6,6 +6,27 @@
 
 <https://github.com/bobquest33/dlib_obj_count> . The Shelf Detector System For Retail Stores Using Object Detection; Dlib is a modern C++ toolkit containing machine learning algorithms
 
+
+<<http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html>
+
+
+
+<https://www.toptal.com/machine-learning/machine-learning-video-analysis>
+
+<https://hackernoon.com/a-comprehensive-design-guide-for-image-classification-cnns-46091260fb92>
+
+<https://www.zerotosingularity.com/blog/fast-ai-part-1-course-1-annotated-notes/>
+
+<https://medium.com/@hiromi_suenaga/deep-learning-2-part-1-lesson-1-602f73869197>
+
+<https://sod.pixlab.io/>
+
+<https://habr.com/company/binarydistrict/blog/354524/>
+
+
+<https://blog.paperspace.com>
+
+
 ## Image processing
 
 <https://habr.com/hub/image_processing/>
@@ -42,6 +63,8 @@ https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detec
 
 ## Real-time object detection and tracking
 
+<https://habr.com/ru/company/dataart/blog/350120/>
+
 <https://www.pyimagesearch.com/2017/09/18/real-time-object-detection-with-deep-learning-and-opencv/>
 
 <https://www.pyimagesearch.com/2018/07/30/opencv-object-tracking/>
@@ -54,7 +77,8 @@ https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detec
 
 <https://www.learnopencv.com/object-tracking-using-opencv-cpp-python/>
 
-
+ OpenCV обзавелся поддержкой YOLO внутри себя.
+ 
 BOOSTING Tracker
 
 MIL Tracker
@@ -174,6 +198,8 @@ R-FCN: Object Detection via Region-based Fully Convolutional Networks. Ещё о
 <https://nextjournal.com/mpd/image-classification-with-keras>
 
 
+<https://rowhanm.github.io/MiniCatsDogs> Image classification with very few images:
+  Data augmentation and Pseudo-labeling. (a variant of semi-supervised learning)
 
 ## DataSets
 
