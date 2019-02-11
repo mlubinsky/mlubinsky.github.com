@@ -50,6 +50,8 @@ https://github.com/bobquest33/dlib_obj_count
 
 <http://neuralnetworksanddeeplearning.com/chap1.html>
 
+https://stackabuse.com/pytesseract-simple-python-optical-character-recognition/
+
 <https://www.codingame.com/playgrounds/37409/handwritten-digit-recognition-using-scikit-learn>
 
 <https://dev.to/frosnerd/handwritten-digit-recognition-using-convolutional-neural-networks-11g0>
