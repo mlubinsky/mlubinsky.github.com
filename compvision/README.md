@@ -197,9 +197,11 @@ R-FCN: Object Detection via Region-based Fully Convolutional Networks. Ещё о
 
 <https://www.analyticsvidhya.com/blog/2018/12/guide-convolutional-neural-network-cnn/>
 
+<https://habr.com/ru/company/binarydistrict/blog/354524/>
+
 <https://habr.com/ru/company/mailru/blog/311706/> . Review of topologies
 
-<https://habr.com/ru/post/436838/>
+<https://habr.com/ru/post/436838/> Понимание сверточных нейронных сетей через визуализации в PyTorch
 
 <https://youtu.be/whNAaM4NwKw> . Лекция 6 - Frameworks
 
