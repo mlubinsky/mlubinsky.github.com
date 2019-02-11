@@ -4,7 +4,6 @@
 
 <https://github.com/Yorko/mlcourse.ai>
 
-
 <https://deeplearningcourses.com/>
 
 <https://www.analyticsvidhya.com/blog/category/deep-learning/>
@@ -22,28 +21,22 @@
 <https://habr.com/ru/post/439688/>  Обзор AI & ML решений в 2018 году и прогнозы на 2019 год: Часть 1 
 <https://habr.com/ru/post/439724/> . Обзор AI & ML решений в 2018 году и прогнозы на 2019 год: Часть 2 
 
-
 <https://github.com/Mybridge/amazing-machine-learning-opensource-2019>
 
-https://github.com/bobquest33/dlib_obj_count
-
-<https://habr.com/ru/post/414165/>
+<https://habr.com/ru/post/414165/> . Курс о Deep Learning на пальцах
 
 <https://www.youtube.com/channel/UCQj_dwbIydi588xrfjWSL5g/videos> . ru
 
 <https://www.fast.ai/2019/01/24/course-v3/>
 
-
-
 <https://news.ycombinator.com/item?id=18852974> .  Graph NN
 
 
-
-## Links
-<https://github.com/kmario23/deep-learning-drizzle>
 <https://thegradient.pub/>
+
 <https://www.reddit.com/r/MachineLearning/comments/anrams/d_sharing_my_personal_resource_list_for_deep/>
 <https://gengo.ai/articles/best-20-ai-and-machine-learning-blogs-to-follow-religiously/>
+
 <https://gengo.ai/articles/20-best-youtube-channels-for-ai-and-machine-learning/>
 
 
@@ -115,7 +108,7 @@ https://habr.com/post/433804/ . MNN
 
 <http://rapids.ai/>
 
-<https://www.liip.ch/en/blog/numbers-recognition-mnist-on-an-iphone-with-coreml-from-a-to-z> .  CoreML
+
 
 <https://www.analyticsvidhya.com/blog/category/deep-learning/>
 
@@ -147,7 +140,6 @@ https://habr.com/post/433804/ . MNN
 
 <https://arxiv.org/abs/1810.01109> Deep Learning on Android
 
-<https://arxiv.org/abs/1809.02165v1> . Generic object detection
 
 <http://www.deeplearningbook.org/> . BOOK
 
