@@ -191,6 +191,8 @@ R-FCN: Object Detection via Region-based Fully Convolutional Networks. Ещё о
 
 <https://en.wikipedia.org/wiki/Convolutional_neural_network>
 
+<https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks>
+
 <https://www.analyticsvidhya.com/blog/2018/12/guide-convolutional-neural-network-cnn/>
 
 <https://habr.com/ru/company/mailru/blog/311706/> . Review of topologies
