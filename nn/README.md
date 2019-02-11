@@ -336,27 +336,6 @@ https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RN
 The 28 × 28 image was considered a one-dimensional vector of size 282 = 796. But this transformation throws away lots of the spatial information contained in the image.
 The CNN take advantage of this additional structure (locality and translational invariance) 
 
-<http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html>
 
-
-
-<https://habr.com/company/dataart/blog/350120/>
-
-<https://rowhanm.github.io/MiniCatsDogs/>
-
-<https://www.toptal.com/machine-learning/machine-learning-video-analysis>
-
-<https://hackernoon.com/a-comprehensive-design-guide-for-image-classification-cnns-46091260fb92>
-
-<https://www.zerotosingularity.com/blog/fast-ai-part-1-course-1-annotated-notes/>
-
-<https://medium.com/@hiromi_suenaga/deep-learning-2-part-1-lesson-1-602f73869197>
-
-<https://sod.pixlab.io/>
-
-<https://habr.com/company/binarydistrict/blog/354524/>
-
-
-<https://blog.paperspace.com>
 
 
