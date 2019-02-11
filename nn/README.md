@@ -20,6 +20,10 @@
 
 <https://github.com/kmario23/deep-learning-drizzle>
 
+<https://habr.com/ru/post/439688/>  Обзор AI & ML решений в 2018 году и прогнозы на 2019 год: Часть 1 
+<https://habr.com/ru/post/439724/> . Обзор AI & ML решений в 2018 году и прогнозы на 2019 год: Часть 2 
+
+
 <https://github.com/Mybridge/amazing-machine-learning-opensource-2019>
 
 https://github.com/bobquest33/dlib_obj_count
