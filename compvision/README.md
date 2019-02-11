@@ -1,12 +1,17 @@
 <https://www.udacity.com/course/introduction-to-computer-vision--ud810> .  Free course
 
+<https://course.fast.ai/>  Practical Deep Learning for Coders, v3
+
 <https://arxiv.org/abs/1809.02165v1> . Generic object detection: 2018 Survey
 
 <https://github.com/bobquest33/dlib_obj_count> . The Shelf Detector System For Retail Stores Using Object Detection; Dlib is a modern C++ toolkit containing machine learning algorithms
 
 ## Image processing
 
+<https://habr.com/hub/image_processing/>
+
 <<https://www.liip.ch/en/blog/numbers-recognition-mnist-on-an-iphone-with-coreml-from-a-to-z> .  CoreML
+
 <https://openmv.io/>
 
 <https://www.learnopencv.com>
@@ -17,9 +22,7 @@
 
 <https://habr.com/company/intel/blog/417809/>
 
-<https://habr.com/post/416777/>
-
-<https://habr.com/hub/image_processing/>
+<https://habr.com/post/416777/> . CNN explained
 
 <https://heartbeat.fritz.ai/the-5-computer-vision-techniques-that-will-change-how-you-see-the-world-1ee19334354b>
 
@@ -27,7 +30,7 @@
 
 <https://towardsdatascience.com/is-google-tensorflow-object-detection-api-the-easiest-way-to-implement-image-recognition-a8bd1f500ea0>
 
-<https://habrahabr.ru/post/354092/> Object recognition
+<https://habrahabr.ru/post/354092/> Object recognition - разработать прототип системы, в реальном времени обнаруживающей сотрудников без касок
 
 https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detectors-faster-r-cnn-r-fcn-fpn-7e354377a7c9
 
@@ -125,6 +128,8 @@ CSRT tracker - Discriminative Correlation Filter with Channel and Spatial Reliab
 
 <https://habr.com/post/428021/>
 
+<https://www.pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/>
+
 <https://www.youtube.com/channel/UCp0a6npOi89ksgks3ej7FPw/videos> on Raspberry Pi 3
 
 
@@ -138,9 +143,6 @@ CSRT tracker - Discriminative Correlation Filter with Channel and Spatial Reliab
 <https://towardsdatascience.com/wtf-is-image-classification-8e78a8235acb>
 
 <http://www.themtank.org/a-year-in-computer-vision> . covers year 2016
-
-<https://www.pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/>
-
 
 <https://habr.com/ru/post/346140/> russian translation of part 1
 
