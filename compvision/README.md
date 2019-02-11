@@ -1,3 +1,4 @@
+<https://www.udacity.com/course/introduction-to-computer-vision--ud810> .  Free course
 
 <http://www.themtank.org/a-year-in-computer-vision> . covers year 2016
 
