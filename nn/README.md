@@ -4,7 +4,6 @@
 
 <https://github.com/Yorko/mlcourse.ai>
 
-<https://habr.com/ru/post/439122/> geometric shapes
 
 <https://deeplearningcourses.com/>
 
@@ -34,12 +33,11 @@ https://github.com/bobquest33/dlib_obj_count
 
 <https://www.fast.ai/2019/01/24/course-v3/>
 
-<https://heartbeat.fritz.ai/detecting-objects-in-videos-and-camera-feeds-using-keras-opencv-and-imageai-c869fe1ebcdb>
-<https://towardsdatascience.com/wtf-is-image-classification-8e78a8235acb>
+
 
 <https://news.ycombinator.com/item?id=18852974> .  Graph NN
 
-<https://www.pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/>
+
 
 ## Links
 <https://github.com/kmario23/deep-learning-drizzle>
@@ -48,31 +46,6 @@ https://github.com/bobquest33/dlib_obj_count
 <https://gengo.ai/articles/best-20-ai-and-machine-learning-blogs-to-follow-religiously/>
 <https://gengo.ai/articles/20-best-youtube-channels-for-ai-and-machine-learning/>
 
-## OCR (digits/characters) recognition
-
-<https://en.wikipedia.org/wiki/Optical_character_recognition>
-
-<http://neuralnetworksanddeeplearning.com/chap1.html>
-
-https://stackabuse.com/pytesseract-simple-python-optical-character-recognition/
-
-<https://www.codingame.com/playgrounds/37409/handwritten-digit-recognition-using-scikit-learn>
-
-<https://dev.to/frosnerd/handwritten-digit-recognition-using-convolutional-neural-networks-11g0>
-
-<https://nextjournal.com/gkoehler/digit-recognition-with-keras>
-
-<https://www.digitalocean.com/community/tutorials/how-to-build-a-neural-network-to-recognize-handwritten-digits-with-tensorflow>
-
-<https://medium.com/stocard/recognizing-digits-of-loyalty-cards-using-cnn-and-tesseract-4-78c389dc6f03>
-
-<https://towardsdatascience.com/scanned-digits-recognition-using-k-nearest-neighbor-k-nn-d1a1528f0dea>
-
-<http://www.emaraic.com/blog/multi-digit-segmentation-and-recognition>
-
-<https://wosaku.github.io/digits-recognition.html>
-
-<https://docs.aws.amazon.com/rekognition/latest/dg/text-detection.html>
 
 ## Code
 
@@ -94,19 +67,6 @@ https://stackabuse.com/pytesseract-simple-python-optical-character-recognition/
 <https://nextjournal.com/mpd/image-classification-with-keras>
 
 
-## Intel RealSense D4(15/35) and other cameras
-<https://habr.com/company/intel/blog/430720/>
-
-<https://habr.com/company/ivideon/blog/434308/> video monitoring
-
-<https://www.blog.google/perspectives/aparna-chennapragada/google-lens-one-year/>
-
-## Intel OpenVino on Raspberry Pi
-<https://habr.com/company/intel/blog/434238/>
-
-<https://habr.com/ru/post/436744/>
-
-<https://software.intel.com/en-us/openvino-toolkit>
  
 ## Classes
 
@@ -131,39 +91,6 @@ https://habr.com/post/433804/ . MNN
 
 <https://habr.com/company/oleg-bunin/blog/340184/> .   NN Zoo
 
-<https://habr.com/company/intel/blog/417809/> . NN architectures for image recognition 
-
-<https://towardsdatascience.com/deep-convolutional-neural-networks-ccf96f830178>
-
-<https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba>
-
-<https://medium.com/@14prakash/image-classification-architectures-review-d8b95075998f>
-
-```
-MobileNet
-MobeleNet DepthWise
-Res50
-GoogleNet
-SqueezeNet
-ShuffleNet
-YOLO v3
-```
-
-## Object detection
-
-<https://en.wikipedia.org/wiki/Object_detection>
-
-<https://mlwhiz.com/blog/2018/09/22/object_detection/>
-
-<https://medium.com/@fractaldle/brief-overview-on-object-detection-algorithms-ec516929be93>
-
-<http://users.cecs.anu.edu.au/~trumpf/theses/Jack_Henderson.pdf> Object tracking
-
-<https://medium.com/zylapp/review-of-deep-learning-algorithms-for-object-detection-c1f3d437b852>
-
-<https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/>
-
-<https://www.rsipvision.com/ComputerVisionNews-2019January/>
 
 
 <https://arxiv.org/abs/1806.08342> .  Quantizing deep convolutional networks for efficient inference: A whitepaper
@@ -291,97 +218,6 @@ Rectified Linear activation function does not have this problem. The gradient is
 <https://www.youtube.com/watch?v=aircAruvnKk>
 
 
-## DataSets
-
-<https://gengo.ai/datasets/20-best-image-datasets-for-computer-vision/>
-
-<http://cocodataset.org/>
-
-<https://en.wikipedia.org/wiki/CIFAR-10> CIFAR 
-
-<https://en.wikipedia.org/wiki/List_of_datasets_for_machine_learning_research>
-
-<https://github.com/mpatacchiola/tensorbag>
-
-  ImageNet
-
-## CNN 
-
-<https://en.wikipedia.org/wiki/Convolutional_neural_network>
-
-<https://www.analyticsvidhya.com/blog/2018/12/guide-convolutional-neural-network-cnn/>
-
-<https://habr.com/ru/company/mailru/blog/311706/> . Review of topologies
-
-<https://habr.com/ru/post/436838/>
-
-<https://youtu.be/whNAaM4NwKw> . Лекция 6 - Frameworks
-
-<http://cs231n.stanford.edu/>
-
-<https://medium.com/@geek_kid/making-your-first-cnn-part-3-6edd2476aaf1>
-
-<https://www.pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/>
-
-<https://www.youtube.com/watch?v=SQ67NBCLV98>
-
-<https://towardsdatascience.com/the-4-convolutional-neural-network-models-that-can-classify-your-fashion-images-9fe7f3e5399d>
-
-<https://towardsdatascience.com/types-of-convolutions-in-deep-learning-717013397f4d>
-
-<https://www.liip.ch/en/blog/poke-zoo-or-making-deep-learning-tell-oryxes-apart-from-lamas-in-a-zoo-part-1-the-idea-and-concepts>
-
-<https://towardsdatascience.com/deep-convolutional-neural-networks-ccf96f830178>
-
-<https://blog.sicara.com/about-convolutional-layer-convolution-kernel-9a7325d34f7d>
-
-<https://www.coursera.org/learn/convolutional-neural-networks/lecture/VgyWR/object-detection>
-
-<https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721>
-
-<https://www.youtube.com/watch?v=JB8T_zN7ZC0>  Brandon Rohrer How convolutional neural networks work, in depth
-
-<https://medium.com/inbrowserai/simple-diagrams-of-convoluted-neural-networks-39c097d2925b>
-
-<https://github.com/vdumoulin/conv_arithmetic>
-
-<https://jameslittle.me/blog/2019/tensorflow-object-detection>
-
-<https://arxiv.org/pdf/1707.07012.pdf> NasNet
-
-
-<https://www.cbronline.com/news/google-ai-creates-novel-neural-network-nasnet> NasNet
-
-<https://www.analyticsvidhya.com/blog/2018/11/implementation-faster-r-cnn-python-object-detection/>
-
-<https://habr.com/company/sap/blog/415657/> TensorFlow Object Detection API
-
-<https://ai.googleblog.com/2017/11/automl-for-large-scale-image.html> .  AutoML
-
-<https://recurrentnull.wordpress.com/2017/12/14/practical-deep-learning-talk/>
-
-<https://recurrentnull.wordpress.com/2018/02/06/deep-learning-concepts-and-frameworks-find-your-way-through-the-jungle-talk/>
-
-<https://brohrer.github.io/blog.html>
-
-<https://mapr.com/blog/deep-learning-tensorflow/>
-
-<https://towardsdatascience.com/how-to-learn-deep-learning-in-6-months-e45e40ef7d48>
-
-<https://www.bepec.in/deeplearning>
-
-<https://www.asozykin.ru/courses/nnpython>
-
-<https://news.ycombinator.com/item?id=17750791>
-
-<https://github.com/fotisk07/Deep-Learning-Coursera>
-
-
-##   Mask R-CNN
-
-<https://www.pyimagesearch.com/2018/11/19/mask-r-cnn-with-opencv/>
-
-<https://medium.com/@ageitgey/snagging-parking-spaces-with-mask-r-cnn-and-python-955f2231c400>
 
 ## TensorFlow
 
@@ -453,7 +289,7 @@ if __name__ == "__main__":
 
 <https://github.com/open-source-for-science/TensorFlow-Course>
 
-<https://github.com/tensorflow/models/tree/master/research/object_detection>
+
 
 <https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md>
 
@@ -500,48 +336,6 @@ Nilolenko DeepLearning book
 
 https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0  The fall of RNN / LSTM use Attention Networks
 
-## Image processing
-
-<https://openmv.io/>
-
-<https://www.learnopencv.com>
-
-<https://www.analyticsvidhya.com/blog/2017/10/image-skilltest/>
-
-<https://github.com/TensorImage/TensorImage>
-
-<https://mlwhiz.com/blog/2018/09/22/object_detection/>
-
-<https://github.com/symisc/sod> Embedded computer vision and ML library
-
-<https://www.youtube.com/watch?v=XVvfcj_F_uc>
-
-<https://habr.com/post/430906/> . Compiling OpenCV for RusberryPi under Ubuntu cross-compilation to ARM
-
-<https://habr.com/ru/post/432444/> Распознавание номеров. Практическое пособие. Часть 1
-
-<https://github.com/OlafenwaMoses/ImageAI>
-
-<https://towardsdatascience.com/evolution-of-object-detection-and-localization-algorithms-e241021d8bad>
-
-<https://towardsdatascience.com/using-object-detection-for-complex-image-classification-scenarios-part-1-779c87d1eecb>
-
-<https://www.pyimagesearch.com/2018/10/22/object-tracking-with-dlib/>
-
-<https://arxiv.org/abs/1809.02165v1>
-
-
-<https://blog.nanonets.com/real-time-object-detection-for-drones/>
-
-<https://www.embedded-vision.com/industry-analysis/books>
-
-<https://towardsdatascience.com/building-an-image-classifier-running-on-raspberry-pi-a7a45153acc8>
-
-<https://habr.com/post/429400/>
-
-<https://habr.com/post/428021/>
-
-<https://www.youtube.com/channel/UCp0a6npOi89ksgks3ej7FPw/videos> on Raspberry Pi 3
 
 
 
@@ -552,13 +346,6 @@ The CNN take advantage of this additional structure (locality and translational 
 
 <http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html>
 
-<https://habr.com/company/intel/blog/415811/>   NN for image processing
-
-<https://habr.com/company/intel/blog/417809/>
-
-<https://habr.com/post/416777/>
-
-<https://habr.com/hub/image_processing/>
 
 
 <https://habr.com/company/dataart/blog/350120/>
@@ -577,75 +364,7 @@ The CNN take advantage of this additional structure (locality and translational 
 
 <https://habr.com/company/binarydistrict/blog/354524/>
 
-<https://heartbeat.fritz.ai/the-5-computer-vision-techniques-that-will-change-how-you-see-the-world-1ee19334354b>
-
-<https://towardsdatascience.com/real-time-object-detection-api-using-tensorflow-and-opencv-47b505d745c4>
-
-<https://towardsdatascience.com/is-google-tensorflow-object-detection-api-the-easiest-way-to-implement-image-recognition-a8bd1f500ea0>
-
-<https://habrahabr.ru/post/354092/> Object recognition
-
-https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detectors-faster-r-cnn-r-fcn-fpn-7e354377a7c9
 
 <https://blog.paperspace.com>
 
 
-
-<https://medium.com/ml-everything/how-to-actually-easily-detect-objects-with-deep-learning-on-raspberry-pi-4fd40af84fee>
-
-<https://medium.com/ml-everything/offline-object-detection-and-tracking-on-a-raspberry-pi-fddb3bde130>
-
-## Real-time object detection and tracking
-
-<https://www.pyimagesearch.com/2017/09/18/real-time-object-detection-with-deep-learning-and-opencv/>
-
-<https://www.pyimagesearch.com/2018/07/30/opencv-object-tracking/>
-
-<https://www.pyimagesearch.com/2018/10/29/multi-object-tracking-with-dlib/>
-
-<https://www.pyimagesearch.com/2018/08/06/tracking-multiple-objects-with-opencv/>
-
-<https://heartbeat.fritz.ai/detecting-objects-in-videos-and-camera-feeds-using-keras-opencv-and-imageai-c869fe1ebcdb>
-
-<https://www.learnopencv.com/object-tracking-using-opencv-cpp-python/>
-
-
-BOOSTING Tracker
-
-MIL Tracker
-
-KCF Tracker - Kernelized Correlation Filters
-
-TLD - Tracking, learning and detection
-
-MEDIANFLOW Tracker
-
-GOTURN tracker
-
-MOSSE tracker - Minimum Output Sum of Squared Error
-
-CSRT tracker - Discriminative Correlation Filter with Channel and Spatial Reliability (DCF-CSR)
-
-## YOLO
-
-<https://medium.com/paperspace/tutorial-on-implementing-yolo-v3-from-scratch-in-pytorch-part-1-a0054d38ec78>
-
-<https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088>
-
-<http://www.emaraic.com/blog/yolov3-custom-object-detector>
-
-<https://pjreddie.com/darknet/yolo/>
-
-<https://pythonprogramming.net/video-tensorflow-object-detection-api-tutorial/>
-
-
-
-<https://aws.amazon.com/rekognition/>
-
-<https://www.microsoft.com/developerblog/2017/04/10/end-end-object-detection-box/>
-
-<https://towardsdatascience.com/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774>
-
-<https://software.intel.com/en-us/articles/visualising-cnn-models-using-pytorch>
-
-<https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606>
