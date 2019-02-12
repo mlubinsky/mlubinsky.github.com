@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://github.com/reshamas/fastai_deeplearn_part1> .  FastAI
+
 <https://dlcourse.ai/> . russian class starts Feb 18
 
 <https://github.com/Yorko/mlcourse.ai>
