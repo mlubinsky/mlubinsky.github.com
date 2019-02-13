@@ -15,6 +15,8 @@
 
 <https://www.rsipvision.com/category/rsip-vision-learns/>
 
+<https://www.rsipvision.com/computer-vision-news/>
+
 <https://www.toptal.com/machine-learning/machine-learning-video-analysis>
 
 <https://hackernoon.com/a-comprehensive-design-guide-for-image-classification-cnns-46091260fb92>
