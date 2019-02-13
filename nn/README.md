@@ -52,6 +52,8 @@
 
 ## Code
 
+<https://habr.com/ru/post/440190/> . python
+
 <https://github.com/kaszperro/slick-dnn> Deep NN in pure python
 
 <https://github.com/Merwanedr/Vusion> image analysis using AI
