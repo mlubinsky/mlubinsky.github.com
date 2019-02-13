@@ -6,6 +6,8 @@
 
 <https://arxiv.org/abs/1809.02165v1> . Generic object detection: 2018 Survey
 
+<http://blog.qure.ai/notes/semantic-segmentation-deep-learning-review>
+
 <https://github.com/bobquest33/dlib_obj_count> . The Shelf Detector System For Retail Stores Using Object Detection; Dlib is a modern C++ toolkit containing machine learning algorithms
 
 
