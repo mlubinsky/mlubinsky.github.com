@@ -4,6 +4,8 @@
 
 <https://dlcourse.ai/> . russian class starts Feb 18
 
+<https://www.coursera.org/learn/supervised-learning/home/welcome>  Обучение на размеченных данных
+
 <https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-deep-learning>
 
 <https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks>
