@@ -13,7 +13,7 @@
 
 <<http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html>
 
-
+<https://www.rsipvision.com/category/rsip-vision-learns/>
 
 <https://www.toptal.com/machine-learning/machine-learning-video-analysis>
 
