@@ -2,6 +2,8 @@
 
 <https://course.fast.ai/>  Practical Deep Learning for Coders, v3
 
+<https://habr.com/ru/company/mailru/blog/439226/> . Scala MXNet Docker
+
 <https://arxiv.org/abs/1809.02165v1> . Generic object detection: 2018 Survey
 
 <https://github.com/bobquest33/dlib_obj_count> . The Shelf Detector System For Retail Stores Using Object Detection; Dlib is a modern C++ toolkit containing machine learning algorithms
