@@ -302,6 +302,9 @@ R-FCN: Object Detection via Region-based Fully Convolutional Networks. Ещё о
 
 
 ## Intel RealSense D4(15/35) and other cameras
+
+<https://habr.com/ru/company/ivideon/blog/439870/>
+
 <https://habr.com/company/intel/blog/430720/>
 
 <https://habr.com/company/ivideon/blog/434308/> video monitoring
