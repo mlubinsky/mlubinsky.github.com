@@ -10,11 +10,23 @@
 
 <https://habr.com/ru/company/mailru/blog/439226/> . Scala MXNet Docker
 
+
+How to Recognise multiple objects in the same image?
+ Detecting multiple objects in the same image boils is essentially a "segmentation problem". 
+Two popular algorithms are YOLO (You Only Look Once), and SSD(Single Shot Multibox Detector) 
+<https://arxiv.org/abs/1512.02325>
+<https://github.com/tensorflow/models/tree/master/object_detection%22Object%20Detection%20API%22>
+<https://becominghuman.ai/tensorflow-object-detection-api-tutorial-training-and-evaluating-custom-object-detector-ed2594afcf73>
+<https://github.com/thtrieu/darkflow>
+
 <https://arxiv.org/abs/1809.02165v1> . Generic object detection: 2018 Survey
 
 <http://blog.qure.ai/notes/semantic-segmentation-deep-learning-review>
 
+<https://towardsdatascience.com/evolution-of-object-detection-and-localization-algorithms-e241021d8bad>
 
+<https://medium.com/ilenze-com/object-detection-using-deep-learning-for-advanced-users-part-1-183bbbb08b19>
+Traditional methods of detection involved using a block-wise orientation histogram(SIFT or HOG) feature which could not achieve high accuracy in standard datasets such as PASCAL VOC.
 
 <https://github.com/bobquest33/dlib_obj_count> . The Shelf Detector System For Retail Stores Using Object Detection; Dlib is a modern C++ toolkit containing machine learning algorithms
 
