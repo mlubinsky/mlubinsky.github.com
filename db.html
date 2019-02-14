@@ -19,6 +19,24 @@ https://habr.com/company/psb/blog/434730/ . In memory DBs
 
 https://habr.com/ru/post/440306/ Проблемы масштабирования БД в высоконагруженных системах
 
+<h2>MVCC</h2>
+https://en.wikipedia.org/wiki/Multiversion_concurrency_control
+The simplest way is to make all readers wait until the writer is done, which is known as a read-write lock. 
+Locks are known to create contention especially between long read transactions and update transactions. 
+MVCC aims at solving the problem by keeping multiple copies of each data item. 
+In this way, each user connected to the database sees a snapshot of the database at a particular instant in time. 
+Any changes made by a writer will not be seen by other users of the database until the changes have been completed 
+(or, in database terms: until the transaction has been committed.)
+
+When an MVCC database needs to update a piece of data, it will not overwrite the original data item with new data, 
+but instead creates a newer version of the data item. Thus there are multiple versions stored. 
+The version that each transaction sees depends on the isolation level implemented. 
+The most common isolation level implemented with MVCC is snapshot isolation. 
+With snapshot isolation, a transaction observes a state of the data as when the transaction started. 
+MVCC introduces the challenge of how to remove versions that become obsolete and will never be read. In some cases, 
+a process to periodically sweep through and delete the obsolete versions is implemented. 
+This is often a stop-the-world process that traverses a whole table and rewrites it with the last version of each data item. 
+
 <h2>Sharding</h2>
 https://www.citusdata.com/blog/2017/08/09/principles-of-sharding-for-relational-databases/
 https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6
