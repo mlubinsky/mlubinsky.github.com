@@ -6,6 +6,8 @@
 
 <https://course.fast.ai/>  Practical Deep Learning for Coders, v3
 
+<https://www.youtube.com/channel/UCX7Y2qWriXpqocG97SFW2OQ>
+
 <https://habr.com/ru/company/mailru/blog/439226/> . Scala MXNet Docker
 
 <https://arxiv.org/abs/1809.02165v1> . Generic object detection: 2018 Survey
