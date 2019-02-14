@@ -323,6 +323,7 @@ R-FCN: Object Detection via Region-based Fully Convolutional Networks. Ещё о
 
 <https://medium.com/@ageitgey/snagging-parking-spaces-with-mask-r-cnn-and-python-955f2231c400>
 
+<https://habr.com/ru/company/yandex/blog/431108/>
 
 
 ## Intel RealSense D4(15/35) and other cameras
