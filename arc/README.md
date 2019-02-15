@@ -1,5 +1,7 @@
 ## Architecture
 
+<https://github.com/mlubinsky/mlubinsky.github.com/blob/master/arc/Designing_Distributed_Systems.pdf> . BOOK
+
 <https://www.youtube.com/channel/UCn1XnDWhsLS5URXTi5wtFTA>  system design
 
 <https://www.reddit.com/r/Python/comments/ap5vo7/the_clean_architecture_in_python_an_excellent/>
