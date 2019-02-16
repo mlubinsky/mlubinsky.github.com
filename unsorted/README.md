@@ -24,6 +24,7 @@
 
 <https://news.ycombinator.com/item?id=18837334>
 
+<https://tech.yandex.ru/tomita/doc/dg/concept/about-docpage/> . Tomita parser
 
 <https://news.ycombinator.com/item?id=18588727> mind hacks
 
