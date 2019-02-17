@@ -16,11 +16,13 @@
 
 <https://github.com/Yorko/mlcourse.ai>
 
- Dropout, 
+ Dropout
+ 
  Batchnorm  
- Randomly horizontal flipping the train images.
-
-I’m going to try Transfer Learning 
+ 
+ Randomly horizontal flipping the train images
+ 
+ Transfer Learning 
 
 <https://deeplearningcourses.com/>
 
@@ -76,6 +78,7 @@ I’m going to try Transfer Learning
 
 <https://heartbeat.fritz.ai/classification-with-tensorflow-and-dense-neural-networks-8299327a818a>
 
+<https://github.com/vietnguyen91/Deeplab-pytorch>
 
 <https://nextjournal.com/mpd/image-classification-with-keras>
 
