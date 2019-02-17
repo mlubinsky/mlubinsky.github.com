@@ -16,6 +16,12 @@
 
 <https://github.com/Yorko/mlcourse.ai>
 
+ Dropout, 
+ Batchnorm  
+ Randomly horizontal flipping the train images.
+
+I’m going to try Transfer Learning 
+
 <https://deeplearningcourses.com/>
 
 <https://www.analyticsvidhya.com/blog/category/deep-learning/>
