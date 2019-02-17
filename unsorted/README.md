@@ -16,6 +16,8 @@
 
 <https://news.ycombinator.com/item?id=19087418> important books
 
+<https://news.ycombinator.com/item?id=19164037> small businnes ideas
+
 <https://www.reddit.com/r/programming/comments/aeweqw/netflix_software_engineers_earn_a_salary_of_more/>
 
 <https://www.theguardian.com/books/2019/jan/06/happiness-index-wellbeing-survey-uk-population-paul-dolan-happy-ever-after>
