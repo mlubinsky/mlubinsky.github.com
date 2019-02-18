@@ -33,6 +33,8 @@ Traditional methods of detection involved using a block-wise orientation histogr
 <https://github.com/bobquest33/dlib_obj_count> . The Shelf Detector System For Retail Stores Using Object Detection; Dlib is a modern C++ toolkit containing machine learning algorithms
 
 
+<https://habr.com/ru/post/440608/> detect empty space on parking place OpenCV, TensorFlow, Keras
+
 <<http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html>
 
 <https://www.rsipvision.com/category/rsip-vision-learns/>
