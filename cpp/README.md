@@ -6,6 +6,8 @@
 
 <http://www.icce.rug.nl/documents/cplusplus/>
 
+<https://blog.jessfraz.com/post/ld_preload/> . LD_PRELOAD
+
 <https://ds9a.nl/articles/posts/cpp-2/>
 
 <https://tests4geeks.com/cpp-interview-questions/>
