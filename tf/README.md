@@ -8,6 +8,8 @@
 
 <https://medium.com/tensorflow>
 
+<https://arxiv.org/pdf/1610.01178.pdf>
+
 <https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/>
 
 <https://youtu.be/LSb8iaNAfdw> .  Russian
