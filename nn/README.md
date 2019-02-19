@@ -6,6 +6,8 @@
 
 <https://dlcourse.ai/> . russian class starts Feb 18
 
+<https://deeplearning.mit.edu/> .  <https://github.com/lexfridman/mit-deep-learning> .   MIT
+
 <https://www.coursera.org/learn/supervised-learning/home/welcome>  Обучение на размеченных данных
 
 <https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-deep-learning>
