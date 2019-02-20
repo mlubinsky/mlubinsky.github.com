@@ -12,6 +12,7 @@
 
 <https://habr.com/ru/company/mailru/blog/439226/> . Scala MXNet Docker
 
+<https://habr.com/ru/post/441006/> image processing  with skikit-image
 
 How to Recognise multiple objects in the same image?
  Detecting multiple objects in the same image boils is essentially a "segmentation problem". 
