@@ -2,6 +2,8 @@
 
 <https://cameronlonsdale.com/2018/11/26/whats-in-a-docker-image/>
 
+<https://habr.com/ru/company/ruvds/blog/440660/>
+
 <https://github.com/floydhub/dl-docker> Docker image with ML
 
 <https://habr.com/ru/company/ruvds/blog/439980/>
