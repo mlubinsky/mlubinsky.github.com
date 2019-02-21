@@ -152,10 +152,11 @@ TreeSet is implemented using a tree structure(red-black tree in algorithm book).
 LinkedHashSet is between HashSet and TreeSet.
   It is implemented as a hash table with a linked list running through it, so it provides the order of insertion.
   The time complexity of basic methods is O(1). 
+	
  Example of usage  LinkedHashSet:
     /* Function removes duplicate characters from the string This function work in-place */
     void removeDuplicates(String str)
-    {
+     {
         LinkedHashSet<Character> lhs = new LinkedHashSet<>();
         for(int i=0;i<str.length();i++)
             lhs.add(str.charAt(i));
@@ -165,7 +166,7 @@ LinkedHashSet is between HashSet and TreeSet.
             System.out.print(ch);
     }  
   
-  
+<br>  
   
 interface SortedSet<E> extends Set<E> {
   SortedSet<E> subSet(E from, E to)
