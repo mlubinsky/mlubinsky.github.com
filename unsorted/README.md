@@ -46,6 +46,8 @@
 
 # Comp science
 
+<http://raganwald.com/2019/02/14/i-love-programming-and-programmers.html>
+
 <https://www.quickcode.co/engineer-blogs>  dev blogs of big companies
 
 <https://compsciclub.ru/courses/>   Comp science lectures
