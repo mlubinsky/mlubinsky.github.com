@@ -52,7 +52,18 @@ https://www.java-success.com/01-hadoop-bigdata-overview-interview-questions-answ
 <a href=https://www.amazon.com/dp/1946383481>Hadoop BIG DATA Interview Questions</a>
 <a href=https://www.amazon.com/dp/1946383228>Java notes</a>
 
+
+<h2> CBOR (Concise Binary Object Representation) </h2>
+https://habr.com/ru/post/208690/
+ IETF RFC7049. JSON-like, базовые типы – int, float, UTF-8 string, byte string, array, map, примитивы из json. 
+На основе базовых типов расширяется стандартизированными типами, а так же просто по изъявительному принципу. 
+В стандартные расширенные типы входят несколько десятков, в том числе и нужные вам Decimal, UUID, дата-время в строковом формате rfc3339 и unix timestamp.
+Но без валидации и схем.
+https://habrahabr.ru/post/208690/
+
 <h2>Avro - row major format </h2>
+
+https://habr.com/ru/post/346698/
 
 Avro primary design goal was schema evolution.
 In the avro format, we store schema separately from data. Generally avro schema file (.avsc) is maintained.
@@ -91,6 +102,7 @@ https://www.youtube.com/watch?v=6I5Ia_u4c6E
            Each stripe maintains indexes and stats about data it stores.
 
 <b>Parquet</b>: 
+https://habr.com/ru/search/?q=parquet#h
     Similar to ORC. Based on Google Dremel
     Schema stored in footer
     Column oriented storage format
