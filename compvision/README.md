@@ -28,6 +28,7 @@ Two popular algorithms are YOLO (You Only Look Once), and SSD(Single Shot Multib
 
 <http://blog.qure.ai/notes/semantic-segmentation-deep-learning-review>
 
+<https://towardsdatascience.com/review-mobilenetv1-depthwise-separable-convolution-light-weight-model-a382df364b69>
 <https://towardsdatascience.com/evolution-of-object-detection-and-localization-algorithms-e241021d8bad>
 
 <https://medium.com/ilenze-com/object-detection-using-deep-learning-for-advanced-users-part-1-183bbbb08b19>
