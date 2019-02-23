@@ -44,6 +44,12 @@
 
 <https://news.ycombinator.com/item?id=17202615> some youtube channels
 
+# Fibonacci
+
+<http://www.oranlooney.com/post/fibonacci/>
+
+<https://news.ycombinator.com/item?id=19216356>
+
 # Comp science
 
 <http://raganwald.com/2019/02/14/i-love-programming-and-programmers.html>
