@@ -1,5 +1,7 @@
 <https://arxiv.org/abs/1603.07285> convolution arithmetics 
 
+<https://paperswithcode.com/sota> software with code
+
 <https://www.udacity.com/course/introduction-to-computer-vision--ud810> .  Free course
 
 <https://www.udemy.com/computer-vision-a-z/learn/v4/overview>
