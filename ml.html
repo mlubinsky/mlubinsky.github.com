@@ -11,6 +11,15 @@ In math terms, an operation F is linear if scaling inputs scales the output, and
 F(ax)  = a  * F(x)  
 F(x + y)  = F(x) + F(y)
 
+<h2>Linear Algebra</h2>
+
+https://web.stanford.edu/~boyd/vmls/  linear algebra
+http://www.seas.upenn.edu/~cis515/linalg.pdf
+https://news.ycombinator.com/item?id=15923338 linear algebra and ML
+
+https://machinelearningmastery.com/introduction-to-eigendecomposition-eigenvalues-and-eigenvectors/
+https://machinelearningmastery.com/resources-for-linear-algebra-in-machine-learning/
+https://machinelearningmastery.com/linear-algebra-cheat-sheet-for-machine-learning/
 https://news.ycombinator.com/item?id=18351312 .  Linear Algebra
 
 
@@ -18,6 +27,25 @@ https://news.ycombinator.com/item?id=18351312 .  Linear Algebra
 https://habrahabr.ru/company/ods/blog/323890/ Linear models
 https://medium.freecodecamp.org/learn-how-to-improve-your-linear-models-8294bfa8a731
 
+<pre>
+https://blog.finxter.com/python-linear-regression-1-liner/
+from sklearn.linear_model import LinearRegression
+import numpy as np
+
+## Data (Apple stock prices)
+apple = np.array([155, 156, 157])
+n = len(apple)
+## One-liner
+model = LinearRegression().fit(np.arange(n).reshape((n,1)), apple)
+
+print(model.predict([[3],[4]]))
+## Result
+print(model.coef_)
+# [1.]
+print(model.intercept_)
+# 155.0
+
+</pre>
 Linear regression can be applied to model non-linear relationship between input and response. 
 This can be done by replacing the input x with some nonlinear function φ(x). 
 Note that doing so preserves the linearity as a function of the parame- ters w, 
@@ -255,15 +283,7 @@ http://savvastjortjoglou.com/intrepretable-machine-learning-nfl-combine.html
 	 
 https://towardsdatascience.com/building-prediction-apis-in-python-part-4-decoupling-the-model-and-api-4b5eaf2ed125
 
-<h2>Linear Algebra</h2>
 
-https://web.stanford.edu/~boyd/vmls/  linear algebra
-http://www.seas.upenn.edu/~cis515/linalg.pdf
-https://news.ycombinator.com/item?id=15923338 linear algebra and ML
-
-https://machinelearningmastery.com/introduction-to-eigendecomposition-eigenvalues-and-eigenvectors/
-https://machinelearningmastery.com/resources-for-linear-algebra-in-machine-learning/
-https://machinelearningmastery.com/linear-algebra-cheat-sheet-for-machine-learning/
 
 
 <h2>Statistics</h2>
