@@ -1,5 +1,7 @@
 <https://arxiv.org/abs/1603.07285> convolution arithmetics 
 
+<https://www.youtube.com/watch?v=MpZxV6DVsmM> FastAI lesson 3  - image segmentation
+
 <https://paperswithcode.com/sota> software with code
 
 <https://www.udacity.com/course/introduction-to-computer-vision--ud810> .  Free course
