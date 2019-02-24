@@ -2,6 +2,8 @@
 
 <https://github.com/mlubinsky/mlubinsky.github.com/blob/master/arc/Designing_Distributed_Systems.pdf> . BOOK
 
+<http://www.tugberkugurlu.com/archive/software-architecture-and-system-design---getting-your-grip-and-some-related-resources>
+
 <https://engineering.videoblocks.com/web-architecture-101-a3224e126947>
 
 <https://www.youtube.com/channel/UCn1XnDWhsLS5URXTi5wtFTA>  system design
