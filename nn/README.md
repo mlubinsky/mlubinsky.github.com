@@ -68,6 +68,8 @@
 
 <https://habr.com/ru/post/440190/> . python
 
+<https://spandan-madan.github.io/DeepLearningProject/>
+
 <https://github.com/kaszperro/slick-dnn> Deep NN in pure python
 
 <https://github.com/Merwanedr/Vusion> image analysis using AI
