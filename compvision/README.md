@@ -4,6 +4,8 @@
 
 <https://paperswithcode.com/sota> software with code
 
+## Udacity and Udemy and FastAI
+
 <https://www.udacity.com/course/introduction-to-computer-vision--ud810> .  Free course
 
 <https://www.udemy.com/computer-vision-a-z/learn/v4/overview>
@@ -11,6 +13,7 @@
 <https://www.udemy.com/master-computer-vision-with-opencv-in-python/learn/v4/overview>
 
 <https://course.fast.ai/>  Practical Deep Learning for Coders, v3
+
 
 <https://www.youtube.com/channel/UCX7Y2qWriXpqocG97SFW2OQ>
 
