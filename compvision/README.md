@@ -12,6 +12,8 @@
 
 <https://www.udemy.com/master-computer-vision-with-opencv-in-python/learn/v4/overview>
 
+<https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/learn/v4/overview>
+
 <https://course.fast.ai/>  Practical Deep Learning for Coders, v3
 
 
