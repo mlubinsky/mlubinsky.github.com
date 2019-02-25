@@ -1,3 +1,5 @@
+<https://www.tutorialspoint.com/dip/index.htm>
+
 <https://arxiv.org/abs/1603.07285> convolution arithmetics 
 
 <https://www.youtube.com/watch?v=MpZxV6DVsmM> FastAI lesson 3  - image segmentation
