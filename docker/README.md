@@ -32,6 +32,7 @@ EXPOSE — указывает на необходимость открыть п�
 
 VOLUME — создаёт точку монтирования для работы с постоянным хранилищем.
 
+<https://www.manifold.co/blog/arguments-and-variables-in-docker-94746642f64b>
 
 <https://towardsdatascience.com/a-short-guide-to-using-docker-for-your-data-science-environment-912617b3603e>
 
