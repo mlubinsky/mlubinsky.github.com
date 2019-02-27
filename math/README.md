@@ -2,6 +2,10 @@
 
 Linear algebra
 
+<https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw> .  3Blue1Brown
+
+<http://immersivemath.com/ila/index.html>
+
 <https://www.amazon.com/Coding-Matrix-Algebra-Applications-Computer/dp/0615880991/>
 
 <http://codingthematrix.com/>
