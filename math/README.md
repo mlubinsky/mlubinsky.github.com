@@ -1,5 +1,8 @@
 ## Math & Phys
 
+### Kalman filter
+<https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/>
+
 ### Linear algebra
 
 <https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw> .  3Blue1Brown
