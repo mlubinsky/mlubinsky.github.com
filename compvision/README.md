@@ -356,6 +356,8 @@ https://towardsdatascience.com/building-a-custom-mask-rcnn-model-with-tensorflow
 
 <https://habr.com/ru/company/yandex/blog/431108/>
 
+<https://www.analyticsvidhya.com/blog/2018/07/building-mask-r-cnn-model-detecting-damage-cars-python/>
+
 
 ## Intel RealSense D4(15/35) and other cameras
 
