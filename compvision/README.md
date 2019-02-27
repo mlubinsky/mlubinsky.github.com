@@ -6,6 +6,7 @@
 
 <https://paperswithcode.com/sota> software with code
 
+<https://medium.com/@jonathan_hui/object-detection-series-24d03a12f904>
 
 <https://medium.com/@jonathan_hui/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo-5425656ae359>
 
