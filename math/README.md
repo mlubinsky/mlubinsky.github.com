@@ -2,7 +2,11 @@
 
 ### Kalman filter
 
-<https://habr.com/post/358868/>  Kalman filter 
+<https://habr.com/ru/post/166693/> 
+
+<https://habr.com/ru/post/120133/>
+
+<https://habr.com/ru/post/140274/>  Kalman filter 
 
 <https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/>
 
