@@ -1,6 +1,9 @@
 ## Math & Phys
 
 ### Kalman filter
+
+<https://habr.com/post/358868/>  Kalman filter 
+
 <https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/>
 
 ### Linear algebra
