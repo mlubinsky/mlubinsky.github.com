@@ -12,6 +12,8 @@
 
 ### Linear algebra
 
+<http://setosa.io/ev/eigenvectors-and-eigenvalues/>
+
 <https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw> .  3Blue1Brown
 
 <http://immersivemath.com/ila/index.html> .  Visual
