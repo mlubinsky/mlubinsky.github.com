@@ -1,10 +1,10 @@
 ## Math & Phys
 
-Linear algebra
+### Linear algebra
 
 <https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw> .  3Blue1Brown
 
-<http://immersivemath.com/ila/index.html>
+<http://immersivemath.com/ila/index.html> .  Visual
 
 <https://www.amazon.com/Coding-Matrix-Algebra-Applications-Computer/dp/0615880991/>
 
@@ -14,7 +14,21 @@ Linear algebra
 
 <https://archive.org/details/LinearAlgebraAndMatrixTheory>
  
-https://news.ycombinator.com/item?id=19013189
+<https://news.ycombinator.com/item?id=19013189>
+
+<https://web.stanford.edu/~boyd/vmls/>
+
+<http://www.seas.upenn.edu/~cis515/linalg.pdf>
+
+<https://news.ycombinator.com/item?id=15923338> linear algebra and ML
+
+<https://machinelearningmastery.com/introduction-to-eigendecomposition-eigenvalues-and-eigenvectors/>
+
+<https://machinelearningmastery.com/resources-for-linear-algebra-in-machine-learning/>
+
+<https://machinelearningmastery.com/linear-algebra-cheat-sheet-for-machine-learning/>
+
+<https://news.ycombinator.com/item?id=18351312> .  Linear Algebra
 
 ### Quantum mechanics
 <http://www.visualquantumphysics.org/>
