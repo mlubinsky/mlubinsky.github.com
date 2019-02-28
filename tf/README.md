@@ -12,6 +12,8 @@
 
 <https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/>
 
+<https://medium.com/devseed/technical-walkthrough-packaging-ml-models-for-inference-with-tf-serving-2a50f73ce6f8>
+
 <https://youtu.be/LSb8iaNAfdw> .  Russian
 
 <https://github.com/astorfi/TensorFlow-World>
