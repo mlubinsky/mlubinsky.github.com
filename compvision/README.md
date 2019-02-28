@@ -8,6 +8,15 @@ https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/l
 
 <https://makehardware.com/2016/05/19/blob-detection-with-python-and-opencv/>
 
+
+
+SIFT
+SURF
+FAST
+BREIF
+ORD
+HoG
+
 <https://arxiv.org/abs/1603.07285> convolution arithmetics 
 
 <https://www.youtube.com/watch?v=MpZxV6DVsmM> FastAI lesson 3  - image segmentation
