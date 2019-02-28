@@ -8,7 +8,7 @@ https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/l
 
 <https://makehardware.com/2016/05/19/blob-detection-with-python-and-opencv/>
 
-
+<https://sod.pixlab.io/articles/license-plate-detection.html>
 
 SIFT
 SURF
