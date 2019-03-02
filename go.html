@@ -75,5 +75,35 @@ https://hackernoon.com/10-things-i-learned-making-the-fastest-site-in-the-world-
 https://hackernoon.com/measuring-web-performance-its-really-quite-simple-adeda8f7f39e
 https://medium.freecodecamp.org/high-performance-apps-multiplexing-debouncing-system-fonts-and-other-tricks-37c6fd3d7b2d
 
+
+package main
+
+import (
+	"fmt"
+	"net/http"
+)
+
+func main() {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "This is a website server by a Go HTTP server.")
+	})
+
+	http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Hello World! I'm a HTTP server!")
+	})
+
+	fs := http.FileServer(http.Dir("static/"))
+	http.Handle("/static/", http.StripPrefix("/static/", fs))
+
+	http.ListenAndServe(":3001", nil)
+}
+
+localhost:3001
+localhost:3001/hello
+localhost:3001/static
+
+
+
+
 </pre>
 </body>
