@@ -379,6 +379,27 @@ https://towardsdatascience.com/building-a-custom-mask-rcnn-model-with-tensorflow
 <https://www.analyticsvidhya.com/blog/2018/07/building-mask-r-cnn-model-detecting-damage-cars-python/>
 
 
+## Software for IP cameras
+
+<https://www.onvif.org/>
+
+<https://securityrussia.com/blog/vms-vs-cms.html>
+
+Бесплатное программное обеспечение
+Herospeed. Herospeed VMS Клиент-серверное программное обеспечение, 256 каналов бесплатно. Скачать можно здесь. Поддерживаемые операционные системы — Windows и MacOS. Китай
+iSpy скачать можно здесь. Список поддерживаемых брендов камер. Поддерживаемая операционная система — Windows. Мобильные приложения для Android, iOS и Windows Phone. Подробная инструкция по настройке iSpy на нашем сайте.
+Kerberos. Программное обеспечение с открытым исходным кодом. Поддерживаемая операционная система — Linux. Бельгия
+motionEyes.  Программное обеспечение с открытым исходным кодом. Поддерживаемые устройства. Поддерживаемая операционная система — Linux.
+ZoneMinder. ZoneMinder скачать можно здесь. Поддерживаемые операционные системы — Linux,  Программное обеспечение с открытым исходным кодом.
+Veyesys. Rapidvms скачать можно здесь. Поддерживаемые операционные системы — Windows, Linux и MacOS. Китай
+Shinobi. Поддерживаемые операционные системы — Windows, Linux и MacOS. Список поддерживаемых брендов камер. Open Source
+OpenALPR, программное обеспечение с открытым исходным кодом, для распознавания автомобильных номеров. Поддерживаемые операционные системы — Debian, CentOS. Скачать здесь.
+Vargus. Программное обеспечение с открытым исходным кодом. Операционная система — Linux
+Valkka. Поддерживаемое оборудование. Поддерживаемая операционная система — Linux (Ubuntu). Open Source
+
+
+
+
 ## Intel RealSense D4(15/35) and other cameras
 
 <https://habr.com/ru/company/ivideon/blog/439870/>
