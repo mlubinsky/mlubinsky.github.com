@@ -1,5 +1,7 @@
 <http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
 
+<https://cses.fi/book/> . Competitive programming book
+
 <https://www.byte-by-byte.com>
 
 <https://habr.com/ru/post/442352/> Бинарные деревья поиска
