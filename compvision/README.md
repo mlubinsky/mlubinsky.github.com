@@ -385,6 +385,8 @@ https://towardsdatascience.com/building-a-custom-mask-rcnn-model-with-tensorflow
 
 <https://securityrussia.com/blog/vms-vs-cms.html>
 
+<https://habr.com/ru/company/intems/blog/322634/>
+
 Бесплатное программное обеспечение
 Herospeed. Herospeed VMS Клиент-серверное программное обеспечение, 256 каналов бесплатно. Скачать можно здесь. Поддерживаемые операционные системы — Windows и MacOS. Китай
 iSpy скачать можно здесь. Список поддерживаемых брендов камер. Поддерживаемая операционная система — Windows. Мобильные приложения для Android, iOS и Windows Phone. Подробная инструкция по настройке iSpy на нашем сайте.
