@@ -2,6 +2,10 @@
 
 <https://en.wikipedia.org/wiki/Hough_transform>
 
+<https://www.youtube.com/watch?v=DclyqYN99og&list=PLlb7e2G7aSpQc4CW-9BI9L_jZVyUbbSWX> Введение в анализ изображений
+
+https://www.youtube.com/watch?v=azkzDWi8X64> .  Анализ изображений и видео, часть 2
+
 <https://stackoverflow.com/questions/42203898/python-opencv-blob-detection-or-circle-detection>
 
 https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/learn/v4/t/lecture/12583888?start=0
