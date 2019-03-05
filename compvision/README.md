@@ -1,5 +1,7 @@
 <https://www.tutorialspoint.com/dip/index.htm>
 
+<https://open.compscicenter.ru/archive/images/> . Все что нужно знать программисту об изображениях
+
 <https://en.wikipedia.org/wiki/Hough_transform>
 
 <https://www.youtube.com/watch?v=DclyqYN99og&list=PLlb7e2G7aSpQc4CW-9BI9L_jZVyUbbSWX> Введение в анализ изображений
