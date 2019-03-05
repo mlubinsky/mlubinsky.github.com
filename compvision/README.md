@@ -4,7 +4,7 @@
 
 <https://www.youtube.com/watch?v=DclyqYN99og&list=PLlb7e2G7aSpQc4CW-9BI9L_jZVyUbbSWX> Введение в анализ изображений
 
-https://www.youtube.com/watch?v=azkzDWi8X64> .  Анализ изображений и видео, часть 2
+<https://www.youtube.com/watch?v=azkzDWi8X64&list=PLlb7e2G7aSpQ4C5ykr2Ce1mfxM01l6_HV>   Анализ изображений и видео, часть 2
 
 <https://stackoverflow.com/questions/42203898/python-opencv-blob-detection-or-circle-detection>
 
