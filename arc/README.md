@@ -4,6 +4,8 @@
 
 <https://github.com/aphyr/distsys-class>
 
+<https://news.ycombinator.com/item?id=19290069>
+
 <http://www.tugberkugurlu.com/archive/software-architecture-and-system-design---getting-your-grip-and-some-related-resources>
 
 <https://engineering.videoblocks.com/web-architecture-101-a3224e126947>
