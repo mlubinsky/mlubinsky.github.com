@@ -1,5 +1,8 @@
 <https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md>
 
+<https://open.compscicenter.ru/archive/modern-cpp-1/>
+<https://open.compscicenter.ru/archive/modern-cpp-2/>
+
 <http://www.modernescpp.com/> 2 books here
 
 <https://www.amazon.com/Advanced-Interview-Questions-Youll-Likely/dp/1946383708> C++ book
