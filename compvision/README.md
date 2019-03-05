@@ -8,6 +8,8 @@ https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/l
 
 <https://makehardware.com/2016/05/19/blob-detection-with-python-and-opencv/>
 
+<https://medium.freecodecamp.org/how-to-build-the-best-image-classifier-3c72010b3d55> . PyTorch
+
 ## Licence Plate Detection
 <https://sod.pixlab.io/articles/license-plate-detection.html>
 <https://news.ycombinator.com/item?id=19276977>
