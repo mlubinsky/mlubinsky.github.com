@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://www.youtube.com/watch?v=5l0e_Q0gpnc&list=PLlb7e2G7aSpT1ntsozWmWJ4kGUsUs141Y> . Нейронные сети. Теория (Анализ данных на Python в примерах и задачах. Ч2)
+
 <https://lfdl.io/blog/2018/12/10/introducing-the-interactive-deep-learning-landscape/>
 
 <https://github.com/reshamas/fastai_deeplearn_part1> .  FastAI
