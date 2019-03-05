@@ -28,9 +28,27 @@ https://www.expeditedssl.com/aws-in-plain-english
 
 <https://news.ycombinator.com/item?id=18042382>  DB on AWS
 
-<https://imrankhan17.github.io/pages/flask.html> Flask on AWS
 
-<https://habr.com/company/jugru/blog/417943/>
+## Flask on AWS
+
+<https://towardsdatascience.com/deploying-a-python-web-app-on-aws-57ed772b2319>
+
+<https://blog.apcelent.com/deploy-flask-aws-lambda.html>
+
+<https://www.codementor.io/dushyantbgs/deploying-a-flask-application-to-aws-gnva38cf0> 
+
+<https://imrankhan17.github.io/pages/flask.html> 
+
+<https://medium.com/@rodkey/deploying-a-flask-application-on-aws-a72daba6bb80>
+
+<https://www.datasciencebytes.com/bytes/2015/02/24/running-a-flask-app-on-aws-ec2/>
+
+<https://linuxacademy.com/blog/amazon-web-services-2/deploying-a-containerized-flask-application-with-aws-ecs-and-docker/>
+
+
+
+
+<https://habr.com/company/jugru/blog/417943/> . Serverless и React 
 
 <https://www.infoq.com/presentations/serverless-architecture-patterns>
 
