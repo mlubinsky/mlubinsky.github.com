@@ -8,6 +8,8 @@
 
 <https://www.youtube.com/watch?v=azkzDWi8X64&list=PLlb7e2G7aSpQ4C5ykr2Ce1mfxM01l6_HV>   Анализ изображений и видео, часть 2
 
+<https://www.datasciencecentral.com/profiles/blogs/off-the-beaten-path-using-deep-forests-to-outperform-cnns-and-rnn>
+
 <https://stackoverflow.com/questions/42203898/python-opencv-blob-detection-or-circle-detection>
 
 https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/learn/v4/t/lecture/12583888?start=0
