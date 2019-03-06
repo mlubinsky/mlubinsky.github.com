@@ -1,5 +1,30 @@
 ## Postgres
 
+$ psql -l
+```
+Connection options:
+  -h, --host=HOSTNAME      database server host or socket directory (default: "local socket")
+  -p, --port=PORT          database server port (default: "5432")
+  -U, --username=USERNAME  database user name (default: "miclub01")
+  -w, --no-password        never prompt for password
+  -W, --password           force password prompt (should happen automatically)
+
+For more information, type "\?" (for internal commands) or "\help" (for SQL
+commands) from within psql, 
+```
+$ psql -l
+```
+                                  List of databases
+   Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges
+-----------+----------+----------+-------------+-------------+-----------------------
+ postgres  | miclub01 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ template0 | miclub01 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/miclub01          +
+           |          |          |             |             | miclub01=CTc/miclub01
+ template1 | miclub01 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/miclub01          +
+           |          |          |             |             | miclub01=CTc/miclub01
+           
+```           
+
 <http://www.interdb.jp/pg/index.html>
 
 <https://www.qwertee.io/blog/postgresql-b-tree-index-explained-part-1/>
