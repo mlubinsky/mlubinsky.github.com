@@ -12,6 +12,9 @@
 
 <https://www.youtube.com/watch?v=JNfxr4BQrLk>
 
+## Javascript for Time Series
+https://www.quora.com/What-are-the-best-JavaScript-libraries-for-time-series-graphs
+
 ## LSTM
 <https://www.altumintelligence.com/articles/a/Time-Series-Prediction-Using-LSTM-Deep-Neural-Networks>
 
