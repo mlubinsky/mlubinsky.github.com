@@ -3,6 +3,12 @@
 $ sudo systemctl {status|stop|start} postgresql-11
 
 $ brew services start postgresql (MacOS)
+```
+ALTER USER michael PASSWORD 'myPassword';
+psql -d michael -U michael -p 5432 -h 18.221.216.253
+(for postgres: changeme)
+psql -h 18.188.19.105 -U postgres
+```
 
 ### PORT
 default port 5432 
@@ -67,7 +73,18 @@ $ psql -l
 # show config_file;
 ----------------------------------------
  /var/lib/pgsql/11/data/postgresql.conf
-``` 
+ 
+
+sudo grep host  /var/lib/pgsql/11/data/pg_hba.conf
+host    all             all             127.0.0.1/32         ident
+host    all             all             0.0.0.0/0            md5
+
+ident authentication uses the operating system’s identification server running at TCP port 113 to verify the user’s credentials.
+
+peer authentication on the other hand, is used for local connections and verifies that the logged in username of the operating system matches the username for the Postgres database.
+
+
+```
 
 ## Grafana
 
