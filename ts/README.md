@@ -1,3 +1,5 @@
+## Time Series
+
 <https://www.kaggle.com/ctlente/time-series-forecasting-workflow>
 
 <https://ubereng.wpengine.com/forecasting-introduction/>
@@ -22,6 +24,25 @@ https://www.quora.com/What-are-the-best-JavaScript-libraries-for-time-series-gra
 
 <https://github.com/dafrie/lstm-load-forecasting>
 
+## ARIMA 
+```
+Non-seasonal ARIMA has three input values to help control for smoothing, stationarity, and forecasting ARIMA(p,d,q), where:
+
+p is the number of autoregressive terms,
+d is the number of nonseasonal differences needed for stationarity, and
+q is the number of lagged forecast errors in the prediction equation.
+
+By contrast seasonal ARIMA has six input values ARIMA(p,d,q,P,D,Q), where:
+
+P is the number of seasonal autoregressive terms,
+D is the number of seasonal differences, and
+Q is the number of seasonal moving-average terms.
+```
+<https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/>
+
+<https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
+
+<https://www.kaggle.com/viridisquotient/arima>
 
 ## ARIMA vs LSTM 
 
@@ -48,19 +69,7 @@ https://www.quora.com/What-are-the-best-JavaScript-libraries-for-time-series-gra
 <https://www.youtube.com/watch?v=h9QWefYBfJg>
 
 
-```
-Non-seasonal ARIMA has three input values to help control for smoothing, stationarity, and forecasting ARIMA(p,d,q), where:
 
-p is the number of autoregressive terms,
-d is the number of nonseasonal differences needed for stationarity, and
-q is the number of lagged forecast errors in the prediction equation.
-
-By contrast seasonal ARIMA has six input values ARIMA(p,d,q,P,D,Q), where:
-
-P is the number of seasonal autoregressive terms,
-D is the number of seasonal differences, and
-Q is the number of seasonal moving-average terms.
-```
 
 <https://datascience.stackexchange.com/questions/12721/time-series-prediction-using-arima-vs-lstm>
 
@@ -96,7 +105,7 @@ cat  train.csv | cut -d "," -f2 | sort | uniq -c
 91300 9
 ```
 
-<https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
+
 
 <https://www.kaggle.com/praymond/eda-of-total-sales>
 
@@ -104,9 +113,6 @@ cat  train.csv | cut -d "," -f2 | sort | uniq -c
 
 <https://www.kaggle.com/darshanadiga/time-series-data-exploration>
 
-<https://www.kaggle.com/viridisquotient/arima>
-
-<https://www.kaggle.com/adityaecdrid/my-first-time-series-comp-added-prophet>
 
 <https://www.kaggle.com/adityaecdrid/my-first-time-series-comp-added-prophet>
 ```
