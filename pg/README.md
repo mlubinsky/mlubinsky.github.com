@@ -1,6 +1,23 @@
 ## Postgres
 
-$ psql -l
+$ sudo -u postgres -i
+
+```
+postgres=# \du
+                                   List of roles
+ Role name |                         Attributes                         | Member of
+-----------+------------------------------------------------------------+-----------
+ postgres  | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+
+```
+
+$ sudo -u postgres createuser -s new_user
+
+To create a superuser role and a database for your personal user account:
+$ sudo -u postgres createuser -s $(whoami) .  # -s means: super user
+$ createdb $(whoami)
+
+$ psql --help
 ```
 Connection options:
   -h, --host=HOSTNAME      database server host or socket directory (default: "local socket")
