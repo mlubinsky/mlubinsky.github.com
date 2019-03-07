@@ -1,8 +1,14 @@
 ## Time Series
 
+<https://habr.com/ru/post/180409/> Обзор моделей прогнозирования временных рядов:
+
+<https://habr.com/ru/company/ods/blog/327242/>  Анализ временных рядов с помощью Python
+
 <https://www.kaggle.com/ctlente/time-series-forecasting-workflow>
 
 <https://ubereng.wpengine.com/forecasting-introduction/>
+
+<https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/>
 
 <https://www.reddit.com/r/MachineLearning/comments/amj60h/d_what_are_some_modern_machine_learning/>
 
@@ -17,12 +23,13 @@
 ## Javascript for Time Series
 https://www.quora.com/What-are-the-best-JavaScript-libraries-for-time-series-graphs
 
-## LSTM
-<https://www.altumintelligence.com/articles/a/Time-Series-Prediction-Using-LSTM-Deep-Neural-Networks>
+## Time series in scikit-learn
+<https://www.ethanrosenthal.com/2018/01/28/time-series-for-scikit-learn-people-part1/>
+<https://www.ethanrosenthal.com/2018/03/22/time-series-for-scikit-learn-people-part2/>
+<https://www.ethanrosenthal.com/2019/02/18/time-series-for-scikit-learn-people-part3/>
 
-<http://www.jakob-aungiers.com/articles/a/LSTM-Neural-Network-for-Time-Series-Prediction>
+<http://mariofilho.com/how-to-predict-multiple-time-series-with-scikit-learn-with-sales-forecasting-example/>
 
-<https://github.com/dafrie/lstm-load-forecasting>
 
 ## ARIMA 
 ```
@@ -43,6 +50,15 @@ Q is the number of seasonal moving-average terms.
 <https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
 
 <https://www.kaggle.com/viridisquotient/arima>
+
+<https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3>
+
+## LSTM
+<https://www.altumintelligence.com/articles/a/Time-Series-Prediction-Using-LSTM-Deep-Neural-Networks>
+
+<http://www.jakob-aungiers.com/articles/a/LSTM-Neural-Network-for-Time-Series-Prediction>
+
+<https://github.com/dafrie/lstm-load-forecasting>
 
 ## ARIMA vs LSTM 
 
@@ -212,7 +228,6 @@ There are three basic criterion for a time series to understand whether it is st
 
 <https://waterprogramming.wordpress.com/2017/12/18/preparing-data-for-a-time-series-analysis/>
 
-<https://habrahabr.ru/company/ods/blog/327242/>  Time series with python
 
 <http://www.datasciencecentral.com/profiles/blogs/21-great-articles-and-tutorials-on-time-series>
 	 
