@@ -30,9 +30,10 @@ https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/l
 ## License Plate Detection
 <https://sod.pixlab.io/articles/license-plate-detection.html>
 <https://news.ycombinator.com/item?id=19276977>
-<https://habr.com/ru/post/439330/>
 
+<https://habr.com/ru/post/439330/> . - uses MASK R_CNN
 
+<http://www.robots.ox.ac.uk/~vgg/software/via/> .  Image Annotator
 
 <https://arxiv.org/abs/1603.07285> convolution arithmetics 
 
