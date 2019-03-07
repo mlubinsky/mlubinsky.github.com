@@ -7,6 +7,7 @@ $ brew services start postgresql (MacOS)
 ### PORT
 default port 5432 
 The default port of Postgres is commonly configured in file postgresql.conf
+
 SELECT * FROM pg_settings WHERE name = 'port';
  
 $ psql -h localhost -U postgres -p 5433  #  connect to non-standard port
@@ -78,6 +79,9 @@ $ psql -l
 
 <https://grafana.com/blog/2018/10/15/make-time-series-exploration-easier-with-the-postgresql/timescaledb-query-editor/>
 
+<https://stackoverflow.com/questions/48512014/using-postgres-with-grafana>
+
+## Links
 
 <http://www.interdb.jp/pg/index.html>
 
