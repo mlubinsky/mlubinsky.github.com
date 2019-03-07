@@ -90,6 +90,8 @@ peer authentication on the other hand, is used for local connections and verifie
 
 <http://localhost:3000/>
 
+<http://localhost:3000/datasources>
+
 <https://grafana.com/plugins/postgres>
 
 <http://docs.grafana.org/features/datasources/postgres/>
