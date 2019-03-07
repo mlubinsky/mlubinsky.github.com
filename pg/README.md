@@ -54,6 +54,12 @@ $ psql -l
  /var/lib/pgsql/11/data/postgresql.conf
 ``` 
 
+## Grafana
+
+http://localhost:3000/
+
+
+
 <http://www.interdb.jp/pg/index.html>
 
 <https://www.qwertee.io/blog/postgresql-b-tree-index-explained-part-1/>
