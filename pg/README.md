@@ -2,6 +2,8 @@
 
 $ sudo systemctl {status|stop|start} postgresql-11
  
+$ psql -h localhost -U postgres -p 5433  #  connect to non-standard port
+
 $ sudo -u postgres -i
 
 ```
