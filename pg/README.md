@@ -1,5 +1,7 @@
 ## Postgres
 
+$ sudo systemctl {status|stop|start} postgresql-11
+ 
 $ sudo -u postgres -i
 
 ```
@@ -41,6 +43,16 @@ $ psql -l
            |          |          |             |             | miclub01=CTc/miclub01
            
 ```           
+### Config files
+```
+# show hba_file;
+------------------------------------
+ /var/lib/pgsql/11/data/pg_hba.conf
+
+# show config_file;
+----------------------------------------
+ /var/lib/pgsql/11/data/postgresql.conf
+``` 
 
 <http://www.interdb.jp/pg/index.html>
 
