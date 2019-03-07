@@ -1,7 +1,14 @@
 <https://www.tutorialspoint.com/dip/index.htm>
 
 <https://open.compscicenter.ru/archive/images/> . Все что нужно знать программисту об изображениях
-
+```
+SIFT
+SURF
+FAST
+BREIF
+ORD
+HoG
+```
 <https://en.wikipedia.org/wiki/Hough_transform>
 
 <https://en.wikipedia.org/wiki/Scale-invariant_feature_transform>
@@ -20,16 +27,12 @@ https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/l
 
 <https://medium.freecodecamp.org/how-to-build-the-best-image-classifier-3c72010b3d55> . PyTorch
 
-## Licence Plate Detection
+## License Plate Detection
 <https://sod.pixlab.io/articles/license-plate-detection.html>
 <https://news.ycombinator.com/item?id=19276977>
+<https://habr.com/ru/post/439330/>
 
-SIFT
-SURF
-FAST
-BREIF
-ORD
-HoG
+
 
 <https://arxiv.org/abs/1603.07285> convolution arithmetics 
 
