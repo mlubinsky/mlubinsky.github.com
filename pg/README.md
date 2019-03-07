@@ -4,8 +4,10 @@ $ sudo systemctl {status|stop|start} postgresql-11
 
 $ brew services start postgresql (MacOS)
 
+### PORT
 default port 5432 
-The default port of Postgres is commonly configured in:postgresql.conf
+The default port of Postgres is commonly configured in file postgresql.conf
+SELECT * FROM pg_settings WHERE name = 'port';
  
 $ psql -h localhost -U postgres -p 5433  #  connect to non-standard port
 
