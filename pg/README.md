@@ -1,6 +1,11 @@
 ## Postgres
 
 $ sudo systemctl {status|stop|start} postgresql-11
+
+$ brew services start postgresql (MacOS)
+
+default port 5432 
+The default port of Postgres is commonly configured in:postgresql.conf
  
 $ psql -h localhost -U postgres -p 5433  #  connect to non-standard port
 
@@ -20,6 +25,11 @@ $ sudo -u postgres createuser -s new_user
 To create a superuser role and a database for your personal user account:
 $ sudo -u postgres createuser -s $(whoami) .  # -s means: super user
 $ createdb $(whoami)
+
+
+\dt . is the same as SELECT * FROM pg_catalog.pg_tables
+
+\l is the equivalent of show databases
 
 $ psql --help
 ```
@@ -58,8 +68,13 @@ $ psql -l
 
 ## Grafana
 
-http://localhost:3000/
+<http://localhost:3000/>
 
+<https://grafana.com/plugins/postgres>
+
+<http://docs.grafana.org/features/datasources/postgres/>
+
+<https://grafana.com/blog/2018/10/15/make-time-series-exploration-easier-with-the-postgresql/timescaledb-query-editor/>
 
 
 <http://www.interdb.jp/pg/index.html>
