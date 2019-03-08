@@ -2,6 +2,8 @@
 
 <https://dbngin.com/> . Free All-in-One Database Version Management Tool
 
+<https://stackoverflow.com/questions/45684618/having-default-mac-python-2-7-and-anaconda-python-3>
+
 <https://zenworkpro.com/2018/08/14/computer-ergonomics-useful-tips-for-working-in-macos>
 
 <https://github.com/serhii-londar/open-source-mac-os-apps>    Open source Mac OS apps
