@@ -35,6 +35,8 @@ https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/l
 
 <http://www.robots.ox.ac.uk/~vgg/software/via/> .  Image Annotator
 
+<https://github.com/albu/albumentations> . Augmentation
+
 <https://arxiv.org/abs/1603.07285> convolution arithmetics 
 
 <https://www.youtube.com/watch?v=MpZxV6DVsmM> FastAI lesson 3  - image segmentation
