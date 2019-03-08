@@ -2,7 +2,11 @@
 
 <https://www.edyoda.com/course/1429> Step by step guide to Tensorflow
 
+## Classes
 <https://www.coursera.org/learn/introduction-tensorflow/home/welcome>
+
+<https://classroom.udacity.com/courses/ud187>
+
 
 <https://github.com/taki0112/Tensorflow-Cookbook>
 
