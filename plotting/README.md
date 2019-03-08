@@ -2,6 +2,8 @@
 
 ## Python plotting
 
+<http://pyviz.org/>
+
 <https://github.com/mcastorina/graph-cli> .  plottting from CSV
 
 <https://habr.com/post/431754/> Dash
