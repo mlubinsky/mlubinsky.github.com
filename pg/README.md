@@ -100,6 +100,10 @@ peer authentication on the other hand, is used for local connections and verifie
 
 <https://stackoverflow.com/questions/48512014/using-postgres-with-grafana>
 
+<https://habr.com/ru/company/1cloud/blog/443006/>
+
+<https://www.youtube.com/watch?v=sKNZMtoSHN4&index=7&list=PLDGkOdUX1Ujo3wHw9-z5Vo12YLqXRjzg2>
+
 ## Links
 
 <http://www.interdb.jp/pg/index.html>
