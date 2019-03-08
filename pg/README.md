@@ -92,7 +92,7 @@ peer authentication on the other hand, is used for local connections and verifie
 
 <http://localhost:3000/datasources>
 
-http://ec2-18-221-216-253.us-east-2.compute.amazonaws.com:3000/login . admin/admin
+http://ec2-18-221-216-253.us-east-2.compute.amazonaws.com:3000/login . admin/admin1
 
 <https://grafana.com/plugins/postgres>
 
