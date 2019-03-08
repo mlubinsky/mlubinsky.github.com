@@ -1,17 +1,21 @@
 <https://www.tutorialspoint.com/dip/index.htm>
 
 <https://open.compscicenter.ru/archive/images/> . Все что нужно знать программисту об изображениях
+
+<https://medium.com/machine-learning-world/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774>
 ```
-SIFT
-SURF
+SIFT . <https://en.wikipedia.org/wiki/Scale-invariant_feature_transform>
+SURF . Speeded-Up Robust Features
 FAST
-BREIF
-ORD
+BRIEF . Binary Robust Independent Elementary Features
+ORB .  Oriented FAST and Rotated BRIEF
 HoG
 ```
 <https://en.wikipedia.org/wiki/Hough_transform>
 
 <https://en.wikipedia.org/wiki/Scale-invariant_feature_transform>
+
+<https://petewarden.com/>
 
 <https://www.youtube.com/watch?v=DclyqYN99og&list=PLlb7e2G7aSpQc4CW-9BI9L_jZVyUbbSWX> Введение в анализ изображений
 
@@ -119,6 +123,11 @@ Traditional methods of detection involved using a block-wise orientation histogr
 
 <https://blog.paperspace.com>
 
+## OpenCV
+
+<https://www.learnopencv.com>
+
+<https://opencv-python-tutroals.readthedocs.io/en/latest/index.html>
 
 ## Image processing
 
@@ -128,7 +137,7 @@ Traditional methods of detection involved using a block-wise orientation histogr
 
 <https://openmv.io/>
 
-<https://www.learnopencv.com>
+
 
 <https://www.analyticsvidhya.com/blog/2017/10/image-skilltest/>
 
