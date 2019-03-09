@@ -167,6 +167,11 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 <https://news.ycombinator.com/item?id=18923169> fasting
 
+## 
+https://en.wikipedia.org/wiki/Calisthenics
+
+http://www.idoportal.com/
+
 ## Tennis
 <https://www.youtube.com/results?search_query=returning+weak+serve>
 
