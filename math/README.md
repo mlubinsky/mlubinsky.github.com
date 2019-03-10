@@ -14,6 +14,8 @@
 
 <http://setosa.io/ev/eigenvectors-and-eigenvalues/>
 
+<https://dhruvp.netlify.com/2019/02/25/eigenvectors/>
+
 <https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw> .  3Blue1Brown
 
 <http://immersivemath.com/ila/index.html> .  Visual
