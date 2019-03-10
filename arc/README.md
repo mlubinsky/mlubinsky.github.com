@@ -6,6 +6,8 @@
 
 <https://news.ycombinator.com/item?id=19290069>
 
+<https://habr.com/ru/post/443058/> Clear Architecture
+
 <http://www.tugberkugurlu.com/archive/software-architecture-and-system-design---getting-your-grip-and-some-related-resources>
 
 <https://engineering.videoblocks.com/web-architecture-101-a3224e126947>
