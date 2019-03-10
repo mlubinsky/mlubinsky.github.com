@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/company/ods/blog/327242/>  Анализ временных рядов с помощью Python
 
+<https://github.com/Yorko/mlcourse.ai/blob/master/jupyter_russian/topic09_time_series/topic9_part2_arima_time_series_deaths.ipynb>
+
 <https://www.kaggle.com/ctlente/time-series-forecasting-workflow>
 
 <https://ubereng.wpengine.com/forecasting-introduction/>
