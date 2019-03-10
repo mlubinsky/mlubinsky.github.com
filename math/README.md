@@ -16,6 +16,8 @@
 
 <https://dhruvp.netlify.com/2019/02/25/eigenvectors/>
 
+<https://news.ycombinator.com/item?id=19349858>
+
 <https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw> .  3Blue1Brown
 
 <http://immersivemath.com/ila/index.html> .  Visual
