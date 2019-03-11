@@ -5,6 +5,8 @@ chmod 400 my-ec2-ssh-key.pem
 Храните ключ в надёжном месте или поместите его в свою папку ~/.ssh/.
 
  ssh -i ~/.ssh/my-ec2-key.pem ubuntu@my-ec2-public
+ 
+ scp -i myAmazonKey.pem phpMyAdmin-3.4.5-all-languages.tar.gz ec2-user@mec2-50-17-16-67.compute-1.amazonaws.com:~/.
 
 <https://habr.com/post/435180/> Бессерверный REST API 
 
