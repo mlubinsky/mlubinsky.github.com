@@ -36,6 +36,11 @@ create TABLE Apt99_2016_hourly AS select date_trunc('hour', time) as time, sum(v
         ?column?
 ------------------------
  2016-10-06 19:00:00+00
+ 
+ select count(*) from Apt99_2016_hourly WHERE time > '2016-10-06 19:00'::timestamp ;
+ count
+-------
+  1680
 ``` 
 
 <https://rob.conery.io/2018/08/13/transactional-data-operations-in-postgresql-using-common-table-expressions/>
