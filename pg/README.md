@@ -5,6 +5,19 @@
 <https://habr.com/ru/company/postgrespro/blog/442462/>
 
 <https://habr.com/ru/company/okko/blog/443276/>
+```
+CREATE TABLE Apt99_2016 (TIMESTAMP WITH TIME ZONE NOT NULL, value REAL);
+
+\copy Apt99_2016 (time, value) FROM '/home/michael/apartment/2016/Apt99_2016.csv' DELIMITER ',' CSV;
+
+COPY 503760
+
+select min(time), max(time) from Apt99_2016;
+          min           |          max
+------------------------+------------------------
+ 2016-01-01 00:00:00+00 | 2016-12-15 19:59:00+00
+ 
+``` 
 
 <https://rob.conery.io/2018/08/13/transactional-data-operations-in-postgresql-using-common-table-expressions/>
 
