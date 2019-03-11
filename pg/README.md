@@ -1,5 +1,7 @@
 ## Postgres
 
+<https://rob.conery.io/2018/08/13/transactional-data-operations-in-postgresql-using-common-table-expressions/>
+
 $ sudo systemctl {status|stop|start} postgresql-11
 
 $ brew services start postgresql (MacOS)
