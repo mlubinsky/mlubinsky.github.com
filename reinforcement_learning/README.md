@@ -6,11 +6,13 @@
 
 <http://incompleteideas.net/book/the-book.html> .   Sutton Barto book 
 
-https://github.com/dennybritz/reinforcement-learning
+<https://github.com/dennybritz/reinforcement-learning>
 
-http://www.argmin.net/2018/06/25/outsider-rl/
+<https://habr.com/ru/post/443240/> . Q-learning
 
-http://louiskirsch.com/maps/reinforcement-learning
+<http://www.argmin.net/2018/06/25/outsider-rl/>
+
+<http://louiskirsch.com/maps/reinforcement-learning>
 
 https://spinningup.openai.com/en/latest/spinningup/keypapers.html
 
