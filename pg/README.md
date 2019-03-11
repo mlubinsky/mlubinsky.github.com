@@ -6,7 +6,7 @@
 
 <https://habr.com/ru/company/okko/blog/443276/>
 ```
-CREATE TABLE Apt99_2016 (TIMESTAMP WITH TIME ZONE NOT NULL, value REAL);
+CREATE TABLE Apt99_2016 (time TIMESTAMP WITH TIME ZONE NOT NULL, value REAL);
 
 \copy Apt99_2016 (time, value) FROM '/home/michael/apartment/2016/Apt99_2016.csv' DELIMITER ',' CSV;
 
@@ -25,6 +25,17 @@ select date_trunc('hour', time) h_time , count(*) from Apt99_2016 group by  h_ti
 create TABLE Apt99_2016_hourly AS select date_trunc('hour', time) as time, sum(value) as value from Apt99_2016 group by  1;
 
 8395
+
+ select max(time) from Apt99_2016_hourly;
+          max
+------------------------
+ 2016-12-15 19:00:00+00
+
+
+ select max(time) - interval '1680 hours' from Apt99_2016_hourly;
+        ?column?
+------------------------
+ 2016-10-06 19:00:00+00
 ``` 
 
 <https://rob.conery.io/2018/08/13/transactional-data-operations-in-postgresql-using-common-table-expressions/>
