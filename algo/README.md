@@ -2,6 +2,8 @@
 
 <https://cses.fi/book/> . Competitive programming book
 
+<http://www.cs.sjtu.edu.cn/~jiangli/teaching/CS222/files/materials/Algorithm%20Design.pdf> Algo book
+
 <https://www.byte-by-byte.com>
 
 <https://habr.com/ru/post/442352/> Бинарные деревья поиска
