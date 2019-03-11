@@ -17,6 +17,11 @@ select min(time), max(time) from Apt99_2016;
 ------------------------+------------------------
  2016-01-01 00:00:00+00 | 2016-12-15 19:59:00+00
  
+ 
+select date_trunc('hour', time) h_time , count(*) from Apt99_2016 group by  1;
+
+select date_trunc('hour', time) h_time , count(*) from Apt99_2016 group by  h_time;
+
 ``` 
 
 <https://rob.conery.io/2018/08/13/transactional-data-operations-in-postgresql-using-common-table-expressions/>
