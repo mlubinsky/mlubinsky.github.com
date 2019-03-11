@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/company/postgrespro/blog/442462/>
 
+<https://habr.com/ru/company/okko/blog/443276/>
+
 <https://rob.conery.io/2018/08/13/transactional-data-operations-in-postgresql-using-common-table-expressions/>
 
 $ sudo systemctl {status|stop|start} postgresql-11
