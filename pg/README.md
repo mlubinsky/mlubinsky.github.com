@@ -22,6 +22,9 @@ select date_trunc('hour', time) h_time , count(*) from Apt99_2016 group by  1;
 
 select date_trunc('hour', time) h_time , count(*) from Apt99_2016 group by  h_time;
 
+create TABLE Apt99_2016_hourly AS select date_trunc('hour', time) as time, sum(value) as value from Apt99_2016 group by  1;
+
+8395
 ``` 
 
 <https://rob.conery.io/2018/08/13/transactional-data-operations-in-postgresql-using-common-table-expressions/>
