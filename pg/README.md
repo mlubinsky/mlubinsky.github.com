@@ -2,6 +2,8 @@
 
 <https://pynative.com/python-postgresql-tutorial/>
 
+<https://habr.com/ru/company/postgrespro/blog/442462/>
+
 <https://rob.conery.io/2018/08/13/transactional-data-operations-in-postgresql-using-common-table-expressions/>
 
 $ sudo systemctl {status|stop|start} postgresql-11
