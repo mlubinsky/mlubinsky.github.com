@@ -16,6 +16,8 @@
 
 <https://news.ycombinator.com/item?id=19087418> important books
 
+<https://www.youtube.com/user/lilmodtorah/videos> let my people know
+
 <https://news.ycombinator.com/item?id=19164037> small businnes ideas
 
 <https://www.reddit.com/r/programming/comments/aeweqw/netflix_software_engineers_earn_a_salary_of_more/>
