@@ -2,9 +2,13 @@
 
 <https://habr.com/ru/post/180409/> Обзор моделей прогнозирования временных рядов:
 
+## Article with code
 <https://habr.com/ru/company/ods/blog/327242/>  Анализ временных рядов с помощью Python
-
 <https://github.com/Yorko/mlcourse.ai/blob/master/jupyter_russian/topic09_time_series/topic9_part2_arima_time_series_deaths.ipynb>
+
+## Article with code
+<https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
+<https://github.com/aarshayj/Analytics_Vidhya/blob/master/Articles/Time_Series_Analysis/Time_Series_AirPassenger.ipynb>
 
 <https://www.kaggle.com/ctlente/time-series-forecasting-workflow>
 
