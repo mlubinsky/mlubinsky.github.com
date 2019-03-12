@@ -15,9 +15,13 @@ HoG
 
 <https://en.wikipedia.org/wiki/Scale-invariant_feature_transform>
 
+
+https://habr.com/ru/company/nixsolutions/blog/443236/ . Демистифицируем свёрточные нейросети
+
+
 <https://petewarden.com/>
 
-<https://www.youtube.com/watch?v=DclyqYN99og&list=PLlb7e2G7aSpQc4CW-9BI9L_jZVyUbbSWX> Введение в анализ изображений
+<https://www.youtube.com/watch?v=DclyqYN99og&list=PLlb7e2G7aSpQc4CW-9BI9L_jZVyUbbSWX> Введение в анализ изображений lectures
 
 <https://www.youtube.com/watch?v=azkzDWi8X64&list=PLlb7e2G7aSpQ4C5ykr2Ce1mfxM01l6_HV>   Анализ изображений и видео, часть 2
 
