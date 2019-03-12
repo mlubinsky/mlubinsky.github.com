@@ -169,9 +169,11 @@ https://www.codeproject.com/Articles/3613/A-generic-reusable-and-extendable-matr
 
 http://thispointer.com/c11-multithreading-part-7-condition-variables-explained/
 
-https://habrahabr.ru/post/182626/
+<https://habrahabr.ru/post/182626/>
 
-https://habrahabr.ru/post/328348/
+<https://habrahabr.ru/post/328348/>
+
+<https://habr.com/ru/post/443406/>
 
 http://www.bogotobogo.com/cplusplus/multithreaded4_cplusplus11B.php
 
