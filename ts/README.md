@@ -23,6 +23,10 @@ Q is the number of seasonal moving-average terms.
 
 <https://habr.com/ru/post/436294/>
 
+<machinelearningmastery.com/make-manual-predictions-arima-models-python/>
+
+<https://machinelearningmastery.com/make-sample-forecasts-arima-python/>
+
 ## 
 <https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3>
 <https://www.8host.com/blog/prognozirovanie-vremennyx-ryadov-s-pomoshhyu-arima-v-python-3/>
