@@ -1,6 +1,26 @@
 ## Time Series
 
-<https://habr.com/ru/post/180409/> Обзор моделей прогнозирования временных рядов:
+<https://habr.com/ru/post/352980/> . Alert system for metrics
+
+## ARIMA 
+```
+Non-seasonal ARIMA has three input values to help control for smoothing, stationarity, and forecasting ARIMA(p,d,q), where:
+
+p is the number of autoregressive terms,
+d is the number of nonseasonal differences needed for stationarity, and
+q is the number of lagged forecast errors in the prediction equation.
+
+By contrast seasonal ARIMA has six input values ARIMA(p,d,q,P,D,Q), where:
+
+P is the number of seasonal autoregressive terms,
+D is the number of seasonal differences, and
+Q is the number of seasonal moving-average terms.
+```
+<https://habr.com/ru/post/180409/> Обзор моделей прогнозирования временных рядов
+
+<https://habr.com/ru/post/207160/> . statmodels
+
+<https://habr.com/ru/post/436294/>
 
 ## Article with code
 <https://habr.com/ru/company/ods/blog/327242/>  Анализ временных рядов с помощью Python
@@ -14,6 +34,14 @@
 <https://medium.com/@josemarcialportilla/using-python-and-auto-arima-to-forecast-seasonal-time-series-90877adff03c>
 <https://github.com/Pierian-Data/AutoArima-Time-Series-Blog>
 
+
+<https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/>
+
+<https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
+
+<https://www.kaggle.com/viridisquotient/arima>
+
+<https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3>
 
 
 <https://www.kaggle.com/ctlente/time-series-forecasting-workflow>
@@ -41,29 +69,6 @@ https://www.quora.com/What-are-the-best-JavaScript-libraries-for-time-series-gra
 <https://www.ethanrosenthal.com/2019/02/18/time-series-for-scikit-learn-people-part3/>
 
 <http://mariofilho.com/how-to-predict-multiple-time-series-with-scikit-learn-with-sales-forecasting-example/>
-
-
-## ARIMA 
-```
-Non-seasonal ARIMA has three input values to help control for smoothing, stationarity, and forecasting ARIMA(p,d,q), where:
-
-p is the number of autoregressive terms,
-d is the number of nonseasonal differences needed for stationarity, and
-q is the number of lagged forecast errors in the prediction equation.
-
-By contrast seasonal ARIMA has six input values ARIMA(p,d,q,P,D,Q), where:
-
-P is the number of seasonal autoregressive terms,
-D is the number of seasonal differences, and
-Q is the number of seasonal moving-average terms.
-```
-<https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/>
-
-<https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
-
-<https://www.kaggle.com/viridisquotient/arima>
-
-<https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3>
 
 ## LSTM
 <https://www.altumintelligence.com/articles/a/Time-Series-Prediction-Using-LSTM-Deep-Neural-Networks>
