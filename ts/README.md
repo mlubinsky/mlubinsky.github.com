@@ -24,6 +24,7 @@ Q is the number of seasonal moving-average terms.
 <https://habr.com/ru/post/436294/>
 
 ## 
+<https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3>
 <https://www.8host.com/blog/prognozirovanie-vremennyx-ryadov-s-pomoshhyu-arima-v-python-3/>
 
 ## Article with code
@@ -45,7 +46,6 @@ Q is the number of seasonal moving-average terms.
 
 <https://www.kaggle.com/viridisquotient/arima>
 
-<https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3>
 
 
 <https://www.kaggle.com/ctlente/time-series-forecasting-workflow>
