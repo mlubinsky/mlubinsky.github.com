@@ -23,6 +23,9 @@ Q is the number of seasonal moving-average terms.
 
 <https://habr.com/ru/post/436294/>
 
+## 
+<https://www.8host.com/blog/prognozirovanie-vremennyx-ryadov-s-pomoshhyu-arima-v-python-3/>
+
 ## Article with code
 <https://habr.com/ru/company/ods/blog/327242/>  Анализ временных рядов с помощью Python
 <https://github.com/Yorko/mlcourse.ai/blob/master/jupyter_russian/topic09_time_series/topic9_part2_arima_time_series_deaths.ipynb>
