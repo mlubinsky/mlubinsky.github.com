@@ -2,6 +2,11 @@
 
 <https://habr.com/ru/post/352980/> . Alert system for metrics
 
+## Dataset
+<http://traces.cs.umass.edu/index.php/Smart/Smart> . UMass Trace Repository
+
+<http://iconcs.org/papers/Paper_95.pdf> .  Big Data Analytics for Load Forecasting in Smart Grids: A Survey
+
 ## ARIMA 
 <https://ru.wikipedia.org/wiki/ARIMA>
 
@@ -28,11 +33,13 @@ Q is the number of seasonal moving-average terms.
 
 <https://www.kaggle.com/adityaecdrid/my-first-time-series-comp-added-prophet>
 ```
-Step: split data in 3 sets:  train (biggest), test, and validation
-Step2: Seasonality Check - decompose our time series into three distinct components: trend, seasonality, and noise.
+Step 0: Visualization
 We can use   resampling by week or month or year available in pandas:
 sales_a.resample('W').sum().plot(color = c, ax = ax1)
-or use statmodels:
+
+Step1: split data in 3 sets:  train (biggest), test, and validation
+
+Step2: seasonality check - decompose time series into three components: trend, seasonality, and noise.
 
 import statsmodels.api as sm
 decomposition = sm.tsa.seasonal_decompose(y, model='additive')
