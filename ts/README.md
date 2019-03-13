@@ -3,6 +3,7 @@
 <https://habr.com/ru/post/352980/> . Alert system for metrics
 
 ## ARIMA 
+<https://ru.wikipedia.org/wiki/ARIMA>
 ```
 Non-seasonal ARIMA has three input values to help control for smoothing, stationarity, and forecasting ARIMA(p,d,q), where:
 
