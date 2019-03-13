@@ -4,9 +4,13 @@
 
 ## ARIMA 
 <https://ru.wikipedia.org/wiki/ARIMA>
+
 <http://people.duke.edu/~rnau/411arim.htm>
+
 <https://otexts.com/fpp2/arima.html>
+
 <https://www.sas.upenn.edu/~fdiebold/Textbooks.html>
+
 
 ```
 Non-seasonal ARIMA has three input values to help control for smoothing, stationarity, and forecasting ARIMA(p,d,q), where:
@@ -21,6 +25,23 @@ P is the number of seasonal autoregressive terms,
 D is the number of seasonal differences, and
 Q is the number of seasonal moving-average terms.
 ```
+
+<https://www.kaggle.com/adityaecdrid/my-first-time-series-comp-added-prophet>
+```
+Step: split data in 3 sets:  train (biggest), test, and validation
+Step2: Seasonality Check - decompose our time series into three distinct components: trend, seasonality, and noise.
+We can use   resampling by week or month or year available in pandas:
+sales_a.resample('W').sum().plot(color = c, ax = ax1)
+or use statmodels:
+
+import statsmodels.api as sm
+decomposition = sm.tsa.seasonal_decompose(y, model='additive')
+decomposition.plot();
+
+decomposition = sm.tsa.seasonal_decompose(y, model='multiplicative')
+
+```
+
 <https://habr.com/ru/post/180409/> Обзор моделей прогнозирования временных рядов
 
 <https://habr.com/ru/post/207160/> . statmodels
