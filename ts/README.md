@@ -4,6 +4,10 @@
 
 ## ARIMA 
 <https://ru.wikipedia.org/wiki/ARIMA>
+<http://people.duke.edu/~rnau/411arim.htm>
+<https://otexts.com/fpp2/arima.html>
+<https://www.sas.upenn.edu/~fdiebold/Textbooks.html>
+
 ```
 Non-seasonal ARIMA has three input values to help control for smoothing, stationarity, and forecasting ARIMA(p,d,q), where:
 
