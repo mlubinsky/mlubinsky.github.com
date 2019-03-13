@@ -10,6 +10,12 @@
 <https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
 <https://github.com/aarshayj/Analytics_Vidhya/blob/master/Articles/Time_Series_Analysis/Time_Series_AirPassenger.ipynb>
 
+## Article with code: Seasonal ARIMA
+<https://medium.com/@josemarcialportilla/using-python-and-auto-arima-to-forecast-seasonal-time-series-90877adff03c>
+<https://github.com/Pierian-Data/AutoArima-Time-Series-Blog>
+
+
+
 <https://www.kaggle.com/ctlente/time-series-forecasting-workflow>
 
 <https://ubereng.wpengine.com/forecasting-introduction/>
