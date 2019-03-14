@@ -63,6 +63,8 @@ decomposition = sm.tsa.seasonal_decompose(y, model='multiplicative')
 
 <https://machinelearningmastery.com/make-sample-forecasts-arima-python/>
 
+<https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/>
+
 ## 
 <https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3>
 <https://www.8host.com/blog/prognozirovanie-vremennyx-ryadov-s-pomoshhyu-arima-v-python-3/>
