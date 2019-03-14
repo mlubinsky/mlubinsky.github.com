@@ -46,6 +46,8 @@
 
 <https://pusher.com/tutorials/live-graph-d3>
 
+<https://github.com/hasura/graphql-engine/tree/master/community/tools/graphql2chartjs>
+
 <https://itnext.io/javascript-real-time-visualization-of-high-frequency-streams-d6533c774794>
 
 ## Mosquitto  
