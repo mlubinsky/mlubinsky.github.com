@@ -1,5 +1,7 @@
 <https://www.tutorialspoint.com/dip/index.htm>
 
+<https://www.rsipvision.com/ComputerVisionNews-2019March/>
+
 <https://open.compscicenter.ru/archive/images/> . Все что нужно знать программисту об изображениях
 
 <https://medium.com/machine-learning-world/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774>
