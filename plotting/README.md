@@ -50,6 +50,8 @@
 
 <https://itnext.io/javascript-real-time-visualization-of-high-frequency-streams-d6533c774794>
 
+<https://medium.com/@xaviergeerinck/building-a-real-time-streaming-dashboard-with-spark-grafana-chronograf-and-influxdb-e262b68087de>
+
 ## Mosquitto  
 $ mosquitto -c /path/to/mosquitto.conf
 port 1883
