@@ -308,6 +308,8 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 <https://medium.freecodecamp.org/unmasking-bitmasked-dynamic-programming-25669312b77b>
 
+<https://blogarithms.github.io/articles/2019-03/cracking-dp-part-one>
+
 <https://www.geeksforgeeks.org/min-cost-path-dp-6/>
 
 #### Dynamic Programming-  Python implementation of Min Cost Path on grid problem 
