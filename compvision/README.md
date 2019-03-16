@@ -4,6 +4,8 @@
 
 <https://open.compscicenter.ru/archive/images/> . Все что нужно знать программисту об изображениях
 
+<https://habr.com/ru/post/443734/> .  bag of words
+
 <https://medium.com/machine-learning-world/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774>
 ```
 SIFT . <https://en.wikipedia.org/wiki/Scale-invariant_feature_transform>
