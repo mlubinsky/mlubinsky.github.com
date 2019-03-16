@@ -2,10 +2,23 @@
 
 <https://habr.com/ru/post/352980/> . Alert system for metrics
 
+<http://iconcs.org/papers/Paper_95.pdf> .  Big Data Analytics for Load Forecasting in Smart Grids: A Survey
+
 ## Dataset
 <http://traces.cs.umass.edu/index.php/Smart/Smart> . UMass Trace Repository
 
-<http://iconcs.org/papers/Paper_95.pdf> .  Big Data Analytics for Load Forecasting in Smart Grids: A Survey
+<https://www.kaggle.com/robikscube/hourly-energy-consumption>
+
+<https://www.kaggle.com/robikscube/hourly-energy-consumption/kernels>
+
+## Prophet
+
+<https://www.kaggle.com/adityaecdrid/my-first-time-series-comp-added-prophet>
+
+<https://www.kaggle.com/robikscube/tutorial-time-series-forecasting-with-prophet>
+
+## XGBoost
+<https://www.kaggle.com/robikscube/tutorial-time-series-forecasting-with-xgboost>
 
 ## ARIMA 
 <https://ru.wikipedia.org/wiki/ARIMA>
@@ -31,7 +44,7 @@ D is the number of seasonal differences, and
 Q is the number of seasonal moving-average terms.
 ```
 
-<https://www.kaggle.com/adityaecdrid/my-first-time-series-comp-added-prophet>
+
 ```
 Step 0: Visualization
 We can use   resampling by week or month or year available in pandas:
