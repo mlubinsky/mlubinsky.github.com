@@ -8,6 +8,8 @@
 
 <https://habr.com/ru/post/444018/>
 
+<https://habr.com/ru/company/postgrespro/blog/443792/>
+
 ```
 CREATE TABLE Apt99_2016 (time TIMESTAMP WITH TIME ZONE NOT NULL, value REAL);
 
