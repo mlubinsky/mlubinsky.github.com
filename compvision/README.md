@@ -437,7 +437,8 @@ Vargus. Программное обеспечение с открытым исх
 Valkka. Поддерживаемое оборудование. Поддерживаемая операционная система — Linux (Ubuntu). Open Source
 
 
-
+## Face detection
+<https://habr.com/ru/company/ivideon/blog/443906/>
 
 ## Intel RealSense D4(15/35) and other cameras
 
