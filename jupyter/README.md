@@ -86,7 +86,9 @@ first_days = [
   
   
 from pandas.tseries.offsets import MonthEnd
-per_month=pd.DateFrame()
+from datetime import timedelta 
+
+per_month=pd.DataFrame()
 for first_day in first_days:
     last_day=first_day+MonthEnd(1)+timedelta(hours=23, minutes=59, seconds=59)
     m=first_day.strftime('%b') . # human-readable month
