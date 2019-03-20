@@ -7,6 +7,35 @@
 
 <https://jakevdp.github.io/PythonDataScienceHandbook/03.11-working-with-time-series.html>
 
+```
+from datetime import datetime
+# example of formatting
+date = datetime.strptime('01 Jan 2016', '%d %b %Y')
+print(date)
+date = datetime.strptime('2017-05-04',"%Y-%m-%d")
+print(date)
+
+# generate the date objects: 2 points per day  for entire year
+from datetime import timedelta  
+i=0
+times=[]
+v=[]
+date = datetime.strptime('01 Jan 2016', '%d %b %Y')
+
+while i < 365:
+  new_date= date+timedelta(hours=i*12) 
+  print (i, new_date, new_date.month)  # new point every 12 hours
+  times.append(new_date)
+  v.append ( new_date.month)
+  i+=1  
+  
+  
+df = pd.DataFrame({'keys':times,'vals':v})  
+# DatetimeIndex
+times = pd.DatetimeIndex(df["keys"])
+df_grouped=df.groupby([times.month, times.day]).sum()
+```
+
 ## Group By
 <http://cmdlinetips.com/2019/03/how-to-write-pandas-groupby-function-using-sparse-matrix/>
 
