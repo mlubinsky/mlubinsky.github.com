@@ -49,11 +49,24 @@ print (per_day.sum())
 print (type(per_day.sum()))   # DataFrame 
 
 per_day_sum=per_day.sum()
-X=per_day_sum.index
-Y=per_day_sum.values
 
 #   Plotting
-#  df.resample('D').sum().plot() --- consider this
+
+import matplotlib.pyplot as plt
+
+## Plot 1
+per_day_sum.plot()
+
+## Plot 2
+df.resample('D').sum().plot()  
+
+## Plot 3
+X=per_day_sum.index
+Y=per_day_sum.values
+plt.plot(X,Y)
+plt.show() . # issue - ticks and X labels
+
+
 
 
 ```
