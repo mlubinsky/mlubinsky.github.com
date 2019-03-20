@@ -66,9 +66,32 @@ Y=per_day_sum.values
 plt.plot(X,Y)
 plt.show() . # issue - ticks and X labels
 
-
-
-
+## Split data in separate dataframes per month
+first_days = [
+  datetime.date (2016, 1),
+  datetime.date (2016, 2),
+  datetime.date (2016, 3),
+  datetime.date (2016, 4),
+  datetime.date (2016, 5),
+  datetime.date (2016, 6),
+  datetime.date (2016, 7),
+  datetime.date (2016, 8),
+  datetime.date (2016, 9),
+  datetime.date (2016, 10),
+  datetime.date (2016, 11),
+  datetime.date (2016, 12)
+  ]
+  
+  
+from pandas.tseries.offsets import MonthEnd
+per_month=pd.DateFrame()
+for first_day in first_days:
+    last_day=first_day+MonthEnd(1)+timedelta(hours=23, minutes=59, seconds=59)
+    m=first_day.strftime('%b') . # human-readable month
+    per_month[m]=per_day_sum[first_day : last_day]
+    
+per_month.plot(subplots=True, legend=True)
+plt.show()
 ```
 
 ## Group By
