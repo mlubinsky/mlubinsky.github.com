@@ -1,5 +1,7 @@
 ## Time Series
 
+<https://github.com/mlubinsky/mlubinsky.github.com/blob/master/ts/time_series_forecasting_with_python_mini_course.pdf>
+
 <https://habr.com/ru/post/352980/> . Alert system for metrics
 
 <http://iconcs.org/papers/Paper_95.pdf> .  Big Data Analytics for Load Forecasting in Smart Grids: A Survey
