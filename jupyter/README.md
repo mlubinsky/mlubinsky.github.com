@@ -33,17 +33,19 @@ while i < 365:
 df = pd.DataFrame({'keys':times,'vals':v})  
 
 # Grouping
-#  df.resample('D').sum().plot() --- consider this
 
 # Group by Month
 df.index=df["keys"]
 per_month=df.groupby(pd.Grouper(freq='M'))
+
 print (type(per_month))
 print (per_month.sum())
 print (type(per_month.sum()))
 
 # Group by Day
 per_day=df.groupby(pd.Grouper(freq='D'))
+# per_day= df.resample('D').sum().plot() --- consider this instead line above, what is the difference ???
+
 print (type(per_day))         # DataFrameGroupBy
 print (per_day.sum())          
 print (type(per_day.sum()))   # DataFrame 
@@ -68,18 +70,18 @@ plt.show() . # issue - ticks and X labels
 
 ## Split data in separate dataframes per month
 first_days = [
-  datetime.date (2016, 1),
-  datetime.date (2016, 2),
-  datetime.date (2016, 3),
-  datetime.date (2016, 4),
-  datetime.date (2016, 5),
-  datetime.date (2016, 6),
-  datetime.date (2016, 7),
-  datetime.date (2016, 8),
-  datetime.date (2016, 9),
-  datetime.date (2016, 10),
-  datetime.date (2016, 11),
-  datetime.date (2016, 12)
+  datetime.date (2016, 1,1),
+  datetime.date (2016, 2,1),
+  datetime.date (2016, 3,1),
+  datetime.date (2016, 4,1),
+  datetime.date (2016, 5,1),
+  datetime.date (2016, 6,1),
+  datetime.date (2016, 7,1),
+  datetime.date (2016, 8,1),
+  datetime.date (2016, 9,1),
+  datetime.date (2016, 10,1),
+  datetime.date (2016, 11,1),
+  datetime.date (2016, 12,1)
   ]
   
   
