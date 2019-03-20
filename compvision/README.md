@@ -139,6 +139,8 @@ Traditional methods of detection involved using a block-wise orientation histogr
 
 <https://opencv-python-tutroals.readthedocs.io/en/latest/index.html>
 
+<https://www.pyimagesearch.com/2019/03/11/liveness-detection-with-opencv/>
+
 ## Image processing
 
 <https://habr.com/hub/image_processing/>
@@ -439,6 +441,8 @@ Valkka. Поддерживаемое оборудование. Поддержи�
 
 ## Face detection
 <https://habr.com/ru/company/ivideon/blog/443906/>
+
+<https://www.pyimagesearch.com/2019/03/11/liveness-detection-with-opencv/>
 
 ## Intel RealSense D4(15/35) and other cameras
 
