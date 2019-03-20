@@ -4,6 +4,8 @@
 
 <http://iconcs.org/papers/Paper_95.pdf> .  Big Data Analytics for Load Forecasting in Smart Grids: A Survey
 
+<https://en.wikipedia.org/wiki/Dickey%E2%80%93Fuller_test> . Dickey–Fuller test
+
 ## Dataset
 <http://traces.cs.umass.edu/index.php/Smart/Smart> . UMass Trace Repository
 
