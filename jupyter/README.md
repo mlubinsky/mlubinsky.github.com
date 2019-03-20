@@ -1,4 +1,15 @@
-# Jupyter Pandas NumPy Skikit
+# Jupyter Pandas NumPy Scikit
+
+ Jake Vanderplas . <https://jakevdp.github.io/PythonDataScienceHandbook/>
+ 
+## Plotting the time series
+<https://machinelearningmastery.com/time-series-data-visualization-with-python/>
+
+<https://jakevdp.github.io/PythonDataScienceHandbook/03.11-working-with-time-series.html>
+
+## Group By
+<http://cmdlinetips.com/2019/03/how-to-write-pandas-groupby-function-using-sparse-matrix/>
+
 
 https://www.kaggle.com/learn/overview  Pandas, TensorFlow, etc
 
@@ -23,6 +34,8 @@ https://www.kaggle.com/learn/overview  Pandas, TensorFlow, etc
 <https://www.interviewqs.com/blog/intro_to_scikit_learn>
 
 <https://stackoverflow.com/questions/40845304/runtimewarning-numpy-dtype-size-changed-may-indicate-binary-incompatibility>
+
+## Linear model
 ```
 import warnings
 warnings.filterwarnings("ignore", message="numpy.dtype size changed")
