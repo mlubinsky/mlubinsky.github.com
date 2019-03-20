@@ -32,6 +32,9 @@ while i < 365:
   
 df = pd.DataFrame({'keys':times,'vals':v})  
 
+# Grouping
+#  df.resample('D').sum().plot() --- consider this
+
 # Group by Month
 df.index=df["keys"]
 per_month=df.groupby(pd.Grouper(freq='M'))
@@ -44,6 +47,13 @@ per_day=df.groupby(pd.Grouper(freq='D'))
 print (type(per_day))         # DataFrameGroupBy
 print (per_day.sum())          
 print (type(per_day.sum()))   # DataFrame 
+
+per_day_sum=per_day.sum()
+X=per_day_sum.index
+Y=per_day_sum.values
+
+#   Plotting
+#  df.resample('D').sum().plot() --- consider this
 
 
 ```
