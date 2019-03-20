@@ -31,9 +31,21 @@ while i < 365:
   
   
 df = pd.DataFrame({'keys':times,'vals':v})  
-# DatetimeIndex
-times = pd.DatetimeIndex(df["keys"])
-df_grouped=df.groupby([times.month, times.day]).sum()
+
+# Group by Month
+df.index=df["keys"]
+per_month=df.groupby(pd.Grouper(freq='M'))
+print (type(per_month))
+print (per_month.sum())
+print (type(per_month.sum()))
+
+# Group by Day
+per_day=df.groupby(pd.Grouper(freq='D'))
+print (type(per_day))         # DataFrameGroupBy
+print (per_day.sum())          
+print (type(per_day.sum()))   # DataFrame 
+
+
 ```
 
 ## Group By
