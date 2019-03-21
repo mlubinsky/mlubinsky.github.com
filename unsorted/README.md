@@ -6,7 +6,10 @@
 
 <http://ebook-dl.com>
 
-<http://domatv.net/>
+Live calculation in browser
+<https://habr.com/ru/post/444596/> .  <iodide.io>
+
+<http://domatv.net/> .   TV 
 
 ```
  [] Square brackets are often simply called brackets,
