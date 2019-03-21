@@ -7,6 +7,10 @@
 
 <https://jakevdp.github.io/PythonDataScienceHandbook/03.11-working-with-time-series.html>
 
+<https://machinelearningmastery.com/resample-interpolate-time-series-data-python/>
+
+The Series Pandas object provides an interpolate() function to interpolate missing values
+
 ```
 from datetime import datetime
 # example of formatting
@@ -98,8 +102,23 @@ per_month.plot(subplots=True, legend=True)
 plt.show()
 ```
 
-## Group By
+## Group By and resample
+
+<https://pbpython.com/pandas-grouper-agg.html>
+<http://benalexkeen.com/resampling-time-series-data-with-pandas/>
+if you were interested in summarizing all of the sales by month, you could use the resample function. 
+
+The tricky part about using resample is that it only operates on an index.  In order to make it work, use set_index to make the date column an index and then resample:
+```
+df.set_index('date').resample('M')["ext price"].sum() .      monthly
+
+weekly_summary = pd.DataFrame()
+weekly_summary['speed'] = df["speed"].resample('W').mean() .  weekly mean
+weekly_summary['price'] = df["preice"].resample('W').mean() .  weekly mean
+```
 <http://cmdlinetips.com/2019/03/how-to-write-pandas-groupby-function-using-sparse-matrix/>
+
+GroupBy() is not based on dataframe  index. 
 
 
 https://www.kaggle.com/learn/overview  Pandas, TensorFlow, etc
