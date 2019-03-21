@@ -46,9 +46,12 @@ print (type(per_month))
 print (per_month.sum())
 print (type(per_month.sum()))
 
+# Group by day of week
+day_of_week= df.groupby(df.index.dayofweek).sum()
+
 # Group by Day
-per_day=df.groupby(pd.Grouper(freq='D'))
-# per_day= df.resample('D').sum().plot() --- consider this instead line above, what is the difference ???
+per_day=df.groupby(pd.Grouper(freq='D')) - does not require index, can use several columns in groupby
+# per_day= df.resample('D').sum() --- consider this instead line above, requires df.index = DateTimeIndex
 
 print (type(per_day))         # DataFrameGroupBy
 print (per_day.sum())          
@@ -73,6 +76,7 @@ plt.plot(X,Y)
 plt.show() . # issue - ticks and X labels
 
 ## Split data in separate dataframes per month
+
 first_days = [
   datetime.date (2016, 1,1),
   datetime.date (2016, 2,1),
@@ -91,6 +95,8 @@ first_days = [
   
 from pandas.tseries.offsets import MonthEnd
 from datetime import timedelta 
+
+per_dayofweek = df.groupby(df.index.dayofweek).sum()
 
 per_month=pd.DataFrame()
 for first_day in first_days:
