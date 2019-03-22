@@ -96,13 +96,22 @@ first_days = [
 from pandas.tseries.offsets import MonthEnd
 from datetime import timedelta 
 
-per_dayofweek = df.groupby(df.index.dayofweek).sum()
+ 
 
-per_month=pd.DataFrame()
+per_month={}
 for first_day in first_days:
     last_day=first_day+MonthEnd(1)+timedelta(hours=23, minutes=59, seconds=59)
     m=first_day.strftime('%b') . # human-readable month
     per_month[m]=per_day_sum[first_day : last_day]
+
+# I think it is better then code above
+daily_per_month={}
+Month=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep', 'Oct','Nov','Dec']
+for i in range(0,12):
+    print (i, Month[i])
+    m=Month[i]
+    daily_per_month[m] = df[df.index.month==i]
+
 
 # Plot every month on separate figure:
 per_month.plot(subplots=True, legend=True)
