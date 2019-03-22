@@ -51,13 +51,9 @@ day_of_week= df.groupby(df.index.dayofweek).sum()
 
 # Group by Day
 per_day=df.groupby(pd.Grouper(freq='D')) - does not require index, can use several columns in groupby
-# per_day= df.resample('D').sum() --- consider this instead line above, requires df.index = DateTimeIndex
-
-print (type(per_day))         # DataFrameGroupBy
-print (per_day.sum())          
-print (type(per_day.sum()))   # DataFrame 
-
 per_day_sum=per_day.sum()
+
+per_day_sum= df.resample('D').sum() --- consider this instead line above, requires df.index = DateTimeIndex
 
 #   Plotting
 
@@ -110,7 +106,7 @@ Month=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep', 'Oct','Nov','Dec']
 for i in range(0,12):
     print (i, Month[i])
     m=Month[i]
-    daily_per_month[m] = df[df.index.month==i+1]
+    daily_per_month[m] = per_day_sum[per_day_sum.index.month==i+1]
 
 
 # Plot every month on separate figure:
