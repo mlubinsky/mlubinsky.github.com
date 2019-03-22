@@ -110,7 +110,7 @@ Month=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep', 'Oct','Nov','Dec']
 for i in range(0,12):
     print (i, Month[i])
     m=Month[i]
-    daily_per_month[m] = df[df.index.month==i]
+    daily_per_month[m] = df[df.index.month==i+1]
 
 
 # Plot every month on separate figure:
