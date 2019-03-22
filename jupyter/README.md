@@ -103,9 +103,38 @@ for first_day in first_days:
     last_day=first_day+MonthEnd(1)+timedelta(hours=23, minutes=59, seconds=59)
     m=first_day.strftime('%b') . # human-readable month
     per_month[m]=per_day_sum[first_day : last_day]
-    
+
+# Plot every month on separate figure:
 per_month.plot(subplots=True, legend=True)
 plt.show()
+
+# Plot every month on the same figure:
+fig, ax = plt.subplots()
+
+for k, v in per_month.items():
+ x = v.index.day
+ y = v.y.values  
+ ax.plot(x, y, label=k)
+
+ax.legend(loc='upper left', frameon=False)
+
+
+# Group by day of week within the month
+# Make new df with index in [0-6] - (Monday-Sunday]
+v=per_month['Jan']
+v.rename(columns={'y': 'Jan'}, inplace=True)
+df_per_dayofweek=v.groupby(v.index.dayofweek).sum()
+
+for k, v in per_month.items():
+    if k != 'Jan':
+       d=v.groupby(v.index.dayofweek).sum()
+       d.rename(columns={'y': k}, inplace=True)
+
+       df_per_dayofweek = pd.merge(df_per_dayofweek, d, on='ds' )
+
+print (df_per_dayofweek)  
+
+df_per_dayofweek.plot.bar(rot=0)
 ```
 
 ## Group By and resample
