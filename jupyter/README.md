@@ -2,7 +2,11 @@
 
  Jake Vanderplas . <https://jakevdp.github.io/PythonDataScienceHandbook/>
  
+ df.info()    df.types()   df.index    df.dtypes df.shape  df.describe() df.columns() 
+ 
 ## Plotting the time series
+
+
 <https://machinelearningmastery.com/time-series-data-visualization-with-python/>
 
 <https://jakevdp.github.io/PythonDataScienceHandbook/03.11-working-with-time-series.html>
@@ -11,6 +15,9 @@
 
 The Series Pandas object provides an interpolate() function to interpolate missing values
 
+Between time:
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.between_time.html
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.between_time.html#pandas.DataFrame.between_time
 ```
 from datetime import datetime
 # example of formatting
