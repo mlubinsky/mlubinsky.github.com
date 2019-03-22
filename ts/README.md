@@ -1,5 +1,7 @@
 ## Time Series
 
+<https://machinelearningmastery.com/time-series-data-visualization-with-python/>
+
 <https://github.com/mlubinsky/mlubinsky.github.com/blob/master/ts/time_series_forecasting_with_python_mini_course.pdf>
 
 <https://habr.com/ru/post/352980/> . Alert system for metrics
