@@ -1,6 +1,30 @@
+## Keras
+<https://habr.com/ru/company/ods/blog/325432/>
+
+```
+cat ~/.keras/keras.json
+{
+    "epsilon": 1e-07,
+    "floatx": "float32",
+    "image_data_format": "channels_last",
+    "backend": "tensorflow"
+}
+```
+
+переведем номер класса в так называемый one-hot вектор, т.е. вектор, состоящий из нулей и одной единицы:
+``` 
+y_train = keras.utils.to_categorical(newsgroups_train["target"], num_classes)
+
+model.compile(loss='categorical_crossentropy',
+              optimizer='adam',
+              metrics=['accuracy'])
+```	      
+
 ## Tensorflow
 
 <https://www.edyoda.com/course/1429> Step by step guide to Tensorflow
+
+<https://habr.com/ru/company/ods/blog/324898/>
 
 ## Classes
 <https://www.coursera.org/learn/introduction-tensorflow/home/welcome>
