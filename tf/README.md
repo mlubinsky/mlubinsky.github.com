@@ -1,6 +1,8 @@
 ## Keras
 <https://habr.com/ru/company/ods/blog/325432/>
 
+<https://github.com/keras-team/keras/tree/master/examples>
+
 ```
 cat ~/.keras/keras.json
 {
