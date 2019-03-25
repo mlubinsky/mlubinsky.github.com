@@ -4,6 +4,8 @@
 
 <https://open.compscicenter.ru/archive/images/> . Все что нужно знать программисту об изображениях
 
+<https://images.guide/>
+
 <https://opensource.com/article/19/3/python-image-manipulation-tools>
 
 <https://habr.com/ru/post/443734/> .  bag of words
