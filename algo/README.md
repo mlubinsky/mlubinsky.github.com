@@ -390,6 +390,8 @@ http://www.cmsmagazine.ru/library/items/programming/80-problems-with-it-intervie
 
 ## Regular expression
 
+<https://deniskyashif.com/implementing-a-regular-expression-engine/>
+
 <https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/>
 
 <https://www.youtube.com/watch?v=l3hda49XcDE>
