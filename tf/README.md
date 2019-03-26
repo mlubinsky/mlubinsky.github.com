@@ -3,6 +3,8 @@
 
 <https://github.com/keras-team/keras/tree/master/examples>
 
+<https://habr.com/ru/post/331382/> Auto-encoders
+
 ```
 cat ~/.keras/keras.json
 {
