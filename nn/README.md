@@ -29,7 +29,11 @@ https://chrisalbon.com/#deep_learning
 
  Dropout
  
- Batchnorm  
+ Xavier initialization:
+ <https://prateekvjoshi.com/2016/03/29/understanding-xavier-initialization-in-deep-neural-networks/>
+ 
+ Batch normalization  <https://en.wikipedia.org/wiki/Batch_normalization>
+ <https://towardsdatascience.com/batch-normalization-in-neural-networks-1ac91516821c>
  
  Randomly horizontal flipping the train images
  
