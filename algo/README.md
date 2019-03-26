@@ -8,6 +8,8 @@
 
 <https://www.byte-by-byte.com>
 
+<https://www.youtube.com/watch?v=9clnwaqOU2E>
+
 <https://habr.com/ru/post/442352/> Бинарные деревья поиска
 
 <https://habr.com/ru/post/438512/> алгоритм Хаффмана
