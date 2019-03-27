@@ -58,7 +58,7 @@ https://news.ycombinator.com/item?id=18453133 SQL on CSV
 https://www.infoq.com/presentations/sql-streaming-apache-flink
 
 <h2>Prometheus - for system monitoring </h2>
-<pre>
+ https://habr.com/ru/company/itsumma/blog/350200/
 В состав Prometheus входят следующие компоненты:
 * сервер, который считывает метрики и сохраняет их в темпоральной (time series) базе данных;
 * клиентские библиотеки для различных языков программирования (Go, Java, Python, Ruby, ...)
@@ -77,8 +77,25 @@ https://www.infoq.com/presentations/sql-streaming-apache-flink
 который устанавливается отдельно). Это может понадобиться в ситуациях, 
 когда сбор метрики с помощью pull по тем или иным причинам невозможен: например, при наблюдении за сервисами, защищёнными фаерволлом. Также механизм push может оказаться полезным при наблюдении за сервисами, 
 подключающихся к сети периодически и на непродолжительное время.
-</pre>
+ 
+Prometheus использует pull модель сбора метрик: у него есть список экспортеров и он опрашивает их по HTTP, 
+собирая с них список метрик и кладя их к себе в хранилище.
+
+
+Экспортер — это агент, который занимается сбором метрик непосредственно с сущности 
+(сервера в целом, или конкретного приложения), которую надо мониторить. 
+У Prometheus богатые возможности для инструментации, поэтому экспортеры есть для большинства популярных приложений, 
+и написать свой в случае надобности не представляет особого труда.
+
+https://habr.com/ru/post/345370/
+postgres_exporter работает следующим образом: он подключается к PostgreSQL, выполняет запросы к служебным таблицам 
+и выставляет результаты в специальном формате с помощью внутреннего HTTP-сервера для забора их Prometheus'ом. 
+Важный момент: помимо большого набора дефолтных запросов, можно определить свои и собирать любые данные, 
+которые можно получить с помощью SQL, включая какие-нибудь бизнес-метрики. 
+ 
 https://habr.com/ru/company/selectel/blog/275803/
+https://habr.com/ru/company/otus/blog/358588/
+
 https://habr.com/ru/post/441136/ .  How to store metrics for a long time
 https://habr.com/ru/company/funcorp/blog/445370/
 
@@ -91,6 +108,9 @@ https://grafana.com/dashboards/7901
 
 http://micrometer.io/ . JVM Application Monitoring
 https://habr.com/ru/post/442080/
+
+https://habr.com/ru/post/420633/ . GeoIP plotting (WorldMap)
+https://habr.com/ru/post/412897/
 
 <h2>DB Mongo </h2>
 
