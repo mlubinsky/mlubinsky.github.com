@@ -9,7 +9,9 @@
 Live calculation in browser
 <https://habr.com/ru/post/444596/> .  <iodide.io>
 
-<http://domatv.net/> .   TV 
+<http://domatv.net/> .  russian TV
+
+<https://explorabl.es/> . explorable explanation
 
 ```
  [] Square brackets are often simply called brackets,
