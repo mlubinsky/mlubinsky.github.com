@@ -8,7 +8,9 @@
 
 <https://www.byte-by-byte.com>
 
-<https://www.youtube.com/watch?v=9clnwaqOU2E>
+<https://www.youtube.com/watch?v=9clnwaqOU2E> string algo
+
+<https://github.com/devAmoghS/Practice-Problems>
 
 <https://habr.com/ru/post/442352/> Бинарные деревья поиска
 
