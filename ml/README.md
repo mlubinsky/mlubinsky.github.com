@@ -1,3 +1,13 @@
+AutoML basic project: <https://github.com/minimaxir/automl-gs>
+given X predict Y
+
+Using gridsearch for hyperparamter optimization.
+Grid search is known to perform worse than random search in cases where not all hyperparameters are of similar importanc
+
+ Automatic Machine Learning: Methods, Systems, Challenges; Chapter Hyperparameter Optimization
+
+https://www.automl.org/wp-content/uploads/2018/11/hpo.pdf
+
 
 <https://habr.com/ru/company/mailru/blog/445530/>
 
