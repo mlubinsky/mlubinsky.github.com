@@ -359,6 +359,8 @@ R-FCN: Object Detection via Region-based Fully Convolutional Networks. Ещё о
 
 <http://cs231n.github.io/> . Stanford class
 
+
+
 <https://medium.com/@geek_kid/making-your-first-cnn-part-3-6edd2476aaf1>
 
 <https://www.pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/>
@@ -473,6 +475,8 @@ Valkka. Поддерживаемое оборудование. Поддержи�
 
 <https://software.intel.com/en-us/openvino-toolkit>
 
+## CNN architectures
+<https://www.jeremyjordan.me/convnet-architectures/>
 
 <https://habr.com/company/intel/blog/417809/> . NN architectures for image recognition 
 
