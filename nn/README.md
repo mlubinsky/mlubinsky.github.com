@@ -15,6 +15,16 @@ https://chrisalbon.com/#deep_learning
 
 <https://deeplearning.mit.edu/> .  <https://github.com/lexfridman/mit-deep-learning> .   MIT
 
+<https://blog.nanonets.com/hyperparameter-optimization/>
+
+Dropout is a regularization technique proposed by Geoff Hinton that randomly sets activations in a neural network to 0 with a probability of pp. This helps prevent neural nets from overfitting (memorizing) the data as opposed to learning it.
+
+pp is a hyperparameter.
+
+Cyclic learning rates or stochastic gradient descent with warm restarts, 
+
+https://towardsdatascience.com/https-medium-com-reina-wang-tw-stochastic-gradient-descent-with-restarts-5f511975163
+
 <https://www.coursera.org/learn/supervised-learning/home/welcome>  Обучение на размеченных данных
 
 <https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-deep-learning>
