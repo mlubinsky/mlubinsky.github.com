@@ -1,5 +1,7 @@
 <https://www.tutorialspoint.com/dip/index.htm>
 
+<https://machinelearningmastery.com/how-to-manually-scale-image-pixel-data-for-deep-learning/>
+
 <https://www.jeremyjordan.me/>
 
 
