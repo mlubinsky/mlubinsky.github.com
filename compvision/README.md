@@ -9,6 +9,8 @@
 
 <https://images.guide/>
 
+<https://arxiv.org/abs/1807.05511> . Object Detection with Deep Learning: A Review
+
 <https://opensource.com/article/19/3/python-image-manipulation-tools>
 
 <https://habr.com/ru/post/443734/> .  bag of words
