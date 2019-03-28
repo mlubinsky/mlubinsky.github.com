@@ -1,6 +1,8 @@
 ## Keras
 <https://habr.com/ru/company/ods/blog/325432/>
 
+<https://medium.com/intuitive-deep-learning/build-your-first-convolutional-neural-network-to-recognize-images-84b9c78fe0ce>
+
 <https://github.com/keras-team/keras/tree/master/examples>
 
 <https://habr.com/ru/post/331382/> Auto-encoders
