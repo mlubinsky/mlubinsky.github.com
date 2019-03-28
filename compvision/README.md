@@ -1,6 +1,7 @@
 <https://www.tutorialspoint.com/dip/index.htm>
 
-<http://cs231n.github.io/> . Stanford class
+<https://www.jeremyjordan.me/>
+
 
 <https://www.rsipvision.com/ComputerVisionNews-2019March/>
 
@@ -350,9 +351,13 @@ R-FCN: Object Detection via Region-based Fully Convolutional Networks. Ещё о
 
 <https://habr.com/ru/post/436838/> Понимание сверточных нейронных сетей через визуализации в PyTorch
 
-<https://youtu.be/whNAaM4NwKw> . Лекция 6 - Frameworks
+<https://youtu.be/whNAaM4NwKw> . Лекция 6 - Frameworks . sim0nsays
 
+
+### CS231n Stanford class
 <http://cs231n.stanford.edu/>
+
+<http://cs231n.github.io/> . Stanford class
 
 <https://medium.com/@geek_kid/making-your-first-cnn-part-3-6edd2476aaf1>
 
