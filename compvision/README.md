@@ -1,5 +1,7 @@
 <https://www.tutorialspoint.com/dip/index.htm>
 
+<http://cs231n.github.io/> . Stanford class
+
 <https://www.rsipvision.com/ComputerVisionNews-2019March/>
 
 <https://open.compscicenter.ru/archive/images/> . Все что нужно знать программисту об изображениях
