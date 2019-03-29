@@ -343,6 +343,9 @@ R-FCN: Object Detection via Region-based Fully Convolutional Networks. Ещё о
 
 ## CNN 
 
+<https://www.youtube.com/watch?v=tOgBz8lFz8Q> . Deep Learning на пальцах 6 - Convolutional Neural Networks . sim0nsays
+
+
 <https://en.wikipedia.org/wiki/Convolutional_neural_network>
 
 <https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks>
