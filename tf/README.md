@@ -32,6 +32,8 @@ model.compile(loss='categorical_crossentropy',
 
 <https://habr.com/ru/company/ods/blog/324898/>
 
+<https://hackernoon.com/tensorflow-is-dead-long-live-tensorflow-49d3e975cf04?sk=37e6842c552284444f12c71b871d3640>  TF 2.0 alpha
+
 ## Classes
 <https://www.coursera.org/learn/introduction-tensorflow/home/welcome>
 
