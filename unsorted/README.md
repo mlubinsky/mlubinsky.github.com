@@ -1,3 +1,5 @@
+<https://news.ycombinator.com/item?id=19521129> . How to learn new things
+
 <http://gen.lib.rus.ec/> Genesis
 
 <http://libgen.io/> . Genesis
