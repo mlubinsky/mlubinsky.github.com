@@ -69,6 +69,87 @@ Print statement:
 In Python 2, implicit str type is ASCII. But in Python 3.x implicit str type is Unicode.
 xrange() exists in Python2 only; under Python3  it is named range()
 
+
+Enforcing named parameters (Python3):
+-----------------------------------
+def fn(*, a = 100,b = 200):
+    return a+b*10
+
+
+Variadic Functions
+------------------
+def fn(a ,*all ):
+    sum=0;
+    for item in all:
+        sum+=item
+    return a+sum
+    
+print(fn(10,20)) # 30
+
+Keyword Parameters
+-------------------- 
+def fn(**kwargs ):
+    return kwargs['a'] + kwargs['b']
+
+print(fn(a=200,b=500))
+d1 = {'a':100 , 'b':200}
+print(fn(**d1)) # 300
+
+To change global variables
+---------------------------
+num = 9
+ 
+def f1():
+    global num
+    num = 20
+    
+    
+Closure    
+--------
+one can pass a function as a parameter to another function or return a function from another function. 
+def getmulby(m):
+    def op(n):
+        return m*n
+    return op
+ 
+f1=getmulby(10)
+f2=getmulby(5)
+ 
+print( f1(2) ) # 20
+print( f2(2) ) # 10   
+   
+Decorator
+----------
+Decorator is a good example of closure. Decorator is a function that takes another function and extends 
+the behavior of the latter function without explicitly modifying it  
+
+   def add_stars(some_function):
+    def wrapper():
+        print("********************")
+        some_function()
+        print("********************")
+    return wrapper
+ 
+@add_stars
+def my_function():
+    print("Hello!!!")
+ 
+my_function()
+ 
+# ********************
+# Hello!!!
+# ********************
+ 
+Lambda Expressions
+-------------------
+ls = [2,4,6]
+ 
+newlist = map(lambda item:item * 2, ls)
+ 
+for n in newlist:
+    print(n)  
+ 
+ 
 <h3>Virtual Environments</h3>
 
 
