@@ -4,6 +4,8 @@
  
  df.info()    df.types()   df.index    df.dtypes df.shape  df.describe() df.columns() 
  
+ <https://www.dataschool.io/cloud-services-for-jupyter-notebook/amp/> . Jupyter Notebook in the cloud
+ 
 ## Plotting the time series
 
 
