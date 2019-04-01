@@ -1,5 +1,7 @@
 <https://news.ycombinator.com/item?id=19521129> . How to learn new things
 
+<https://kroki.io/> convert plain text diagram to images Kroki provides a unified API with support for BlockDiag (BlockDiag, SeqDiag, ActDiag, NwDiag), C4 (with PlantUML), Ditaa, Erd, GraphViz, Mermaid, Nomnoml, PlantUML, SvgBob and UMLet... and more to come!
+
 <http://www.arxiv-sanity.com>
 
 <http://gen.lib.rus.ec/> Genesis
