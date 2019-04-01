@@ -34,6 +34,9 @@ model.compile(loss='categorical_crossentropy',
 
 <https://towardsdatascience.com/guide-to-coding-a-custom-convolutional-neural-network-in-tensorflow-bec694e36ad3>
 
+
+<https://medium.com/tensorflow/structural-time-series-modeling-in-tensorflow-probability-344edac24083>
+
 <https://hackernoon.com/tensorflow-is-dead-long-live-tensorflow-49d3e975cf04?sk=37e6842c552284444f12c71b871d3640>  TF 2.0 alpha
 
 ## Classes
