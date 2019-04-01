@@ -13,22 +13,31 @@
 
 <https://arxiv.org/abs/1807.05511> . Object Detection with Deep Learning: A Review
 
+
+
+
 <https://opensource.com/article/19/3/python-image-manipulation-tools>
 
 <https://habr.com/ru/post/443734/> .  bag of words
 
 <https://medium.com/machine-learning-world/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774>
-```
-SIFT . <https://en.wikipedia.org/wiki/Scale-invariant_feature_transform>
-SURF . Speeded-Up Robust Features
-FAST
-BRIEF . Binary Robust Independent Elementary Features
-ORB .  Oriented FAST and Rotated BRIEF
-HoG
-```
-<https://en.wikipedia.org/wiki/Hough_transform>
 
+Нахождение объектов на картинках: <https://habr.com/ru/company/joom/blog/445354/>
+
+* SIFT  
+<https://en.wikipedia.org/wiki/Scale-invariant_feature_transform>   
+<https://people.eecs.berkeley.edu/~malik/cs294/lowe-ijcv04.pdf>
 <https://en.wikipedia.org/wiki/Scale-invariant_feature_transform>
+
+* SURF . Speeded-Up Robust Features
+* FAST . <https://www.edwardrosten.com/work/rosten_2006_machine.pdf>
+* BRIEF . Binary Robust Independent Elementary Features
+<https://www.cs.ubc.ca/~lowe/525/papers/calonder_eccv10.pdf>
+
+* ORB .  Oriented FAST and Rotated BRIEF
+* HoG <https://en.wikipedia.org/wiki/Hough_transform>
+
+
 
 
 https://habr.com/ru/company/nixsolutions/blog/443236/ . Демистифицируем свёрточные нейросети
