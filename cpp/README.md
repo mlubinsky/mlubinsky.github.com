@@ -45,6 +45,8 @@ g++ -std=c++11 boolean_matrix.cpp
 
 A derived class constructor always calls a base class constructor.
 
+<https://habr.com/ru/post/445948/>
+
 <https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)>
 
 <https://msdn.microsoft.com/en-us/library/s16xw1a8.aspx>
