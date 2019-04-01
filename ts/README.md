@@ -101,6 +101,9 @@ decomposition = sm.tsa.seasonal_decompose(y, model='multiplicative')
 <https://github.com/Pierian-Data/AutoArima-Time-Series-Blog>
 
 
+<https://medium.com/tensorflow/structural-time-series-modeling-in-tensorflow-probability-344edac24083>
+
+
 <https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/>
 
 <https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
