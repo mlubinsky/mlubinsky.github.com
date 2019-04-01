@@ -58,7 +58,9 @@ https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/l
 
 <http://www.robots.ox.ac.uk/~vgg/software/via/> .  Image Annotator
 
-https://github.com/Slava/label-tool .  Image labelling
+<https://github.com/Slava/label-tool> .  Image labelling
+
+<https://factordaily.com/indian-data-labellers-powering-the-global-ai-race/> .    Image labelling
 
 
 <https://github.com/albu/albumentations> . Augmentation
