@@ -1,9 +1,15 @@
+# https://towardsdatascience.com/guide-to-coding-a-custom-convolutional-neural-network-in-tensorflow-bec694e36ad3
+
+import os
+
 import tensorflow as tf
 import numpy as np
 from tqdm import tqdm
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.utils import to_categorical
 import matplotlib.pyplot as plt
+
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 # MNIST Dataset
 (train_images, train_labels),(test_images, test_labels) = mnist.load_data()
