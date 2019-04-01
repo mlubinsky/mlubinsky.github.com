@@ -18,6 +18,8 @@
 
 <https://habr.com/ru/post/442352/> Бинарные деревья поиска
 
+<https://www.youtube.com/watch?v=lpO_arK69vg> LCA
+
 <https://habr.com/ru/post/438512/> алгоритм Хаффмана
 
 <https://djhworld.github.io/hyperloglog/>
