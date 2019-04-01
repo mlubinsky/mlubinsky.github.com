@@ -8,6 +8,9 @@ from tensorflow.keras.datasets import mnist
 from tensorflow.keras.utils import to_categorical
 import numpy as np
 
+import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
+
 # MNIST Dataset
 (train_images, train_labels),(test_images, test_labels) = mnist.load_data()
 train_images  = np.expand_dims(train_images.astype(np.float32) / 255.0, axis=3)
@@ -56,6 +59,9 @@ model.fit(train_images,
 # Show Sample Predictions
 predictions = model.predict(test_images[:25])
 predictions = np.argmax(predictions, axis=1)
+
+import matplotlib.pyplot as plt
+
 f, axarr = plt.subplots(5, 5, figsize=(25,25))
 for idx in range(25):
     axarr[int(idx/5), idx%5].imshow(np.squeeze(test_images[idx]), cmap='gray')
