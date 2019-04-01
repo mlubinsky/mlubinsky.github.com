@@ -1,6 +1,8 @@
 ## Keras
 <https://habr.com/ru/company/ods/blog/325432/>
 
+<https://www.youtube.com/watch?v=F0tlV4W62AU>  Лекция 4. Обучение нейронных сетей в Keras, ч. 2 (Анализ данных на Python в примерах и задачах. Ч2)
+
 <https://medium.com/intuitive-deep-learning/build-your-first-convolutional-neural-network-to-recognize-images-84b9c78fe0ce>
 
 <https://github.com/keras-team/keras/tree/master/examples>
