@@ -1,4 +1,6 @@
 
+<https://eli5.readthedocs.io/en/latest/index.html> .  ELI5 explaing and plot for different ML models
+
 <https://uber.github.io/ludwig/> . toolbox that allows to train and test deep learning models without the need to write code.
 
 AutoML basic project: <https://github.com/minimaxir/automl-gs>
