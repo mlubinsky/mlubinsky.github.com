@@ -7,6 +7,10 @@ import numpy as np
 from tqdm import tqdm
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.utils import to_categorical
+
+import matplotlib
+matplotlib.use("TkAgg")
+
 import matplotlib.pyplot as plt
 
 os.environ['KMP_DUPLICATE_LIB_OK']='True'

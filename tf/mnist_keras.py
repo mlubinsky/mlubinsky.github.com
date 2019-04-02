@@ -8,8 +8,13 @@ from tensorflow.keras.datasets import mnist
 from tensorflow.keras.utils import to_categorical
 import numpy as np
 
+import h5py
+
 import os
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
+
+import matplotlib
+matplotlib.use("TkAgg")
 
 # MNIST Dataset
 (train_images, train_labels),(test_images, test_labels) = mnist.load_data()
