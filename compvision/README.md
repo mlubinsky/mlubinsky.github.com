@@ -9,7 +9,7 @@
 
 <https://open.compscicenter.ru/archive/images/> . Все что нужно знать программисту об изображениях
 
-<https://images.guide/>
+<https://images.guide/> .  <https://imageoptim.com/>
 
 <https://arxiv.org/abs/1807.05511> . Object Detection with Deep Learning: A Review
 
