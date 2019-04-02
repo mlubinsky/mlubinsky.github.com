@@ -40,8 +40,9 @@
 
 
 
-https://habr.com/ru/company/nixsolutions/blog/443236/ . Демистифицируем свёрточные нейросети
+<https://habr.com/ru/company/nixsolutions/blog/443236/> . Демистифицируем свёрточные нейросети
 
+<https://www.youtube.com/watch?v=SEvUc46gUaQ> . Deep Learning for the Segmentation, Classification, and Quantification
 
 <https://petewarden.com/>
 
