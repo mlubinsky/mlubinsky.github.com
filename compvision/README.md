@@ -44,8 +44,16 @@
 
 
 ## Segmentation
-Segmentation = classify every pixel
-Segmentaition not required a lot of data because every pixel is used for back propagation.
+Segmentation = classify every pixel on picture.
+
+The Segmentaition does not require a lot of data because every pixel is used for back propagation.
+Number of classes on the picture is defined upfront (hyperparameter).
+
+Similarity coefficient metrics: Jaccard Coefficient, Dice Coefficient, Cosine Coefficient.
+Jaccard Coefficient = intersection  / union
+
+Fully Convolutional Network (FCN) - no dense (aka fully connected)layer.
+FNN has less parameters and can take images of any size.
 
 <https://www.youtube.com/watch?v=SEvUc46gUaQ> . Deep Learning for the Segmentation, Classification, and Quantification
 
