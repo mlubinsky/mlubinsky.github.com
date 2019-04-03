@@ -42,9 +42,16 @@
 
 <https://habr.com/ru/company/nixsolutions/blog/443236/> . Демистифицируем свёрточные нейросети
 
+
+## Segmentation
+Segmentation = classify every pixel
+
 <https://www.youtube.com/watch?v=SEvUc46gUaQ> . Deep Learning for the Segmentation, Classification, and Quantification
 
 <https://www.youtube.com/watch?v=r2KA99ThEH4>  Deep Learning на пальцах 7 - Segmentation и Object Detection (Владимир Игловиков)
+
+<https://www.youtube.com/watch?v=MpZxV6DVsmM> FastAI lesson 3  - image segmentation
+
 
 <https://petewarden.com/>
 
@@ -79,7 +86,7 @@ https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/l
 
 <https://arxiv.org/abs/1603.07285> convolution arithmetics 
 
-<https://www.youtube.com/watch?v=MpZxV6DVsmM> FastAI lesson 3  - image segmentation
+
 
 <https://paperswithcode.com/sota> software with code
 
