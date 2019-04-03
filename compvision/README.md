@@ -94,9 +94,14 @@ NMS - non maximum supression
 
 One-shot detectors (fast):    YOLO, SSD, RetinaNet, SquueezeNet, DetectNet
 
-Two-shot detectors (precize): R-FCN, Fast R-CNN, Faster R-CNN
+Two-shot detectors (precize): R-CCN, Fast R-CNN, Faster R-CNN
 
+R-CNN:
+* Shot 1) find the regions of interest (region proposals) (RoI)
+* Shot 2) for every  such region use CNN
 
+Fast R-CNN . https://www.youtube.com/watch?v=LFQPUYDUpvg
+ 
 <https://petewarden.com/> ML on embedded devices
 
 <https://www.youtube.com/watch?v=DclyqYN99og&list=PLlb7e2G7aSpQc4CW-9BI9L_jZVyUbbSWX> Введение в анализ изображений lectures
