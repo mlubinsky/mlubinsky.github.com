@@ -18,7 +18,7 @@
 
 <https://opensource.com/article/19/3/python-image-manipulation-tools>
 
-<https://habr.com/ru/post/443734/> .  bag of words
+<https://habr.com/ru/post/443734/> .  BagNet bag of words
 
 <https://medium.com/machine-learning-world/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774>
 
@@ -377,6 +377,7 @@ R-FCN: Object Detection via Region-based Fully Convolutional Networks. Ещё о
 
 <https://www.youtube.com/watch?v=tOgBz8lFz8Q> . Deep Learning на пальцах 6 - Convolutional Neural Networks . sim0nsays
 
+<https://habr.com/ru/post/443734/>
 
 <https://en.wikipedia.org/wiki/Convolutional_neural_network>
 
