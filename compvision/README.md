@@ -55,7 +55,7 @@ Jaccard Coefficient = intersection  / union
 
 Fully Convolutional Network (FCN) - no dense (aka fully connected)layer.
 FCN has less parameters and can take images of any size.
-Instead the dense layer FCN uses up-sampling.
+Instead the dense layer FCN uses up-sampling to the original input size.
 
 <https://www.youtube.com/watch?v=SEvUc46gUaQ> . Deep Learning for the Segmentation, Classification, and Quantification
 
