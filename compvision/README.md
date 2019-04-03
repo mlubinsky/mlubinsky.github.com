@@ -20,6 +20,8 @@
 
 <https://habr.com/ru/post/443734/> .  BagNet bag of words
 
+<https://blog.nanonets.com/hyperparameter-optimization/> .  Hyperparameter optimization
+
 <https://medium.com/machine-learning-world/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774>
 
 Нахождение объектов на картинках: <https://habr.com/ru/company/joom/blog/445354/>
