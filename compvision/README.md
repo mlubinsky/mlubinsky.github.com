@@ -45,6 +45,7 @@
 
 ## Segmentation
 Segmentation = classify every pixel
+Segmentaition not required a lot of data because every pixel is used for back propagation.
 
 <https://www.youtube.com/watch?v=SEvUc46gUaQ> . Deep Learning for the Segmentation, Classification, and Quantification
 
