@@ -69,6 +69,7 @@ Diffferent types of upsampling to make the image of bigger size:
 
 Added skip connection: ResNet (UNet, TernausNet )
 
+
 <https://www.youtube.com/watch?v=SEvUc46gUaQ> . Deep Learning for the Segmentation, Classification, and Quantification
 
 <https://www.youtube.com/watch?v=r2KA99ThEH4>  Deep Learning на пальцах 7 - Segmentation и Object Detection (Владимир Игловиков)
@@ -77,6 +78,20 @@ Added skip connection: ResNet (UNet, TernausNet )
 
 
 Feature Pyramid Networks (FPN)
+
+
+## Detection
+Predicts:
+- boxes around the object
+- class (cars, human)
+- attributes (optional): colors,
+
+Detection metric is sofisticated: named mAP
+
+confidence of class
+
+NMS - non maximum supression
+
 
 
 <https://petewarden.com/> ML on embedded devices
@@ -100,6 +115,10 @@ https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/l
 <https://news.ycombinator.com/item?id=19276977>
 
 <https://habr.com/ru/post/439330/> . - uses MASK R_CNN
+
+
+
+## Tools
 
 <http://www.robots.ox.ac.uk/~vgg/software/via/> .  Image Annotator
 
