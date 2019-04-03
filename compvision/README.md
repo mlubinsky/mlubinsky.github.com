@@ -57,6 +57,16 @@ Fully Convolutional Network (FCN) - no dense (aka fully connected)layer.
 FCN has less parameters and can take images of any size.
 Instead the dense layer FCN uses up-sampling to the original input size.
 
+Diffferent types of upsampling to make the image of bigger size:
+* nearest neibouhr upsampling
+* bilinear
+* cubic
+* unpulling
+* deconvolution
+* hierarhical (SegNet)
+
+Added skip connection: ResNet (UNet, TernausNet )
+
 <https://www.youtube.com/watch?v=SEvUc46gUaQ> . Deep Learning for the Segmentation, Classification, and Quantification
 
 <https://www.youtube.com/watch?v=r2KA99ThEH4>  Deep Learning на пальцах 7 - Segmentation и Object Detection (Владимир Игловиков)
@@ -64,7 +74,10 @@ Instead the dense layer FCN uses up-sampling to the original input size.
 <https://www.youtube.com/watch?v=MpZxV6DVsmM> FastAI lesson 3  - image segmentation
 
 
-<https://petewarden.com/>
+Feature Pyramid Networks (FPN)
+
+
+<https://petewarden.com/> ML on embedded devices
 
 <https://www.youtube.com/watch?v=DclyqYN99og&list=PLlb7e2G7aSpQc4CW-9BI9L_jZVyUbbSWX> Введение в анализ изображений lectures
 
