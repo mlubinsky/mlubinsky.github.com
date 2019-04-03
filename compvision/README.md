@@ -92,6 +92,9 @@ confidence of class
 
 NMS - non maximum supression
 
+One-shot detectors (fast):    YOLO, SSD, RetinaNet, SquueezeNet, DetectNet
+
+Two-shot detectors (precize): R-FCN, Fast R-CNN, Faster R-CNN
 
 
 <https://petewarden.com/> ML on embedded devices
