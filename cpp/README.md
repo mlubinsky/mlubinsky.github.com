@@ -161,6 +161,8 @@ https://www.codeproject.com/Articles/3613/A-generic-reusable-and-extendable-matr
 
 ### Threads
 
+<https://habr.com/ru/company/jugru/blog/446562/>
+
 1. Semaphores
 2. Atomic references
 3. Monitors
