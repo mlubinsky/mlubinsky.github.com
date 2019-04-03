@@ -44,6 +44,8 @@
 
 <https://www.youtube.com/watch?v=SEvUc46gUaQ> . Deep Learning for the Segmentation, Classification, and Quantification
 
+<https://www.youtube.com/watch?v=r2KA99ThEH4>  Deep Learning на пальцах 7 - Segmentation и Object Detection (Владимир Игловиков)
+
 <https://petewarden.com/>
 
 <https://www.youtube.com/watch?v=DclyqYN99og&list=PLlb7e2G7aSpQc4CW-9BI9L_jZVyUbbSWX> Введение в анализ изображений lectures
