@@ -13,7 +13,7 @@
 
 <https://arxiv.org/abs/1807.05511> . Object Detection with Deep Learning: A Review
 
-
+<https://habr.com/ru/post/444172/>
 
 
 <https://opensource.com/article/19/3/python-image-manipulation-tools>
