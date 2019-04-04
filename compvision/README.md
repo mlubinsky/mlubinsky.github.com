@@ -580,6 +580,8 @@ Valkka. Поддерживаемое оборудование. Поддержи�
 ## CNN architectures
 <https://www.jeremyjordan.me/convnet-architectures/>
 
+<https://neurohive.io/en/popular-networks/>
+
 <https://habr.com/company/intel/blog/417809/> . NN architectures for image recognition 
 
 <https://towardsdatascience.com/deep-convolutional-neural-networks-ccf96f830178>
