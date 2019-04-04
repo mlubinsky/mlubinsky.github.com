@@ -1,5 +1,7 @@
 <https://machinelearningmastery.com/deep-learning-for-computer-vision/> . Book
 
+<https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/learn/v4/>
+
 <https://neurohive.io/en/>
 
 <https://www.tutorialspoint.com/dip/index.htm>
