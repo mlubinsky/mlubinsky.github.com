@@ -101,9 +101,9 @@ One-shot detectors (fast):    YOLO, SSD, RetinaNet, SquueezeNet, DetectNet
 
 Two-shot detectors (precize): R-CCN, Fast R-CNN, Faster R-CNN
 
-R-CNN:
-* Shot 1) find the regions of interest (region proposals) (RoI)
-* Shot 2) for every  such region use CNN
+R(egion)-CNN:  <https://www.youtube.com/watch?v=LFQPUYDUpvg> -> Semen (ru)
+* Shot 1) find the regions of interest (region proposals: ~2K per picture) (RoI), wrappen region: scale all regions to the same size (wrapped region)
+* Shot 2) for every  such region use CNN (with transfer learning trained on ImageNet replacing the last layer)
 
 Fast R-CNN . https://www.youtube.com/watch?v=LFQPUYDUpvg
  
