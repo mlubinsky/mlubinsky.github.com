@@ -1,6 +1,8 @@
 ## Keras
 <https://habr.com/ru/company/ods/blog/325432/>
 
+<https://towardsdatascience.com/boost-your-cnn-image-classifier-performance-with-progressive-resizing-in-keras-a7d96da06e20>
+
 <https://autokeras.com/>
 
 <https://www.youtube.com/playlist?list=PLlb7e2G7aSpT1ntsozWmWJ4kGUsUs141Y>
