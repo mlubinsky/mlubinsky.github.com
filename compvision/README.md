@@ -105,6 +105,9 @@ R(egion)-CNN:  <https://www.youtube.com/watch?v=LFQPUYDUpvg> -> Semen (ru)
 * Shot 1) find the regions of interest (region proposals: ~2K per picture) (RoI), wrappen region: scale all regions to the same size (wrapped region)
 * Shot 2) for every  such region use CNN (with transfer learning trained on ImageNet replacing the last layer)
 
+R-CNN is slow because if ~2K regions then for every region we need to call CNN
+
+
 Fast R-CNN . https://www.youtube.com/watch?v=LFQPUYDUpvg
  
 <https://petewarden.com/> ML on embedded devices
