@@ -1,6 +1,8 @@
 ## Keras
 <https://habr.com/ru/company/ods/blog/325432/>
 
+<https://autokeras.com/>
+
 <https://www.youtube.com/playlist?list=PLlb7e2G7aSpT1ntsozWmWJ4kGUsUs141Y>
 
 <https://www.youtube.com/watch?v=RKKhzFBmEBg>  Лекция 2. Нейронные сети. Теория и первый пример (Анализ данных на Python в примерах и задачах. Ч2)
