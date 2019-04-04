@@ -142,6 +142,7 @@ https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/l
 
 ## Tools
 
+<https://github.com/opencv/cvat> Image and Video annotator
 <http://www.robots.ox.ac.uk/~vgg/software/via/> .  Image Annotator
 
 <https://github.com/Slava/label-tool> .  Image labelling
