@@ -137,6 +137,11 @@ https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/l
 
 <https://factordaily.com/indian-data-labellers-powering-the-global-ai-race/> .    Image labelling
 
+<https://idealo.github.io/imageatm/>
+
+
+
+
 
 <https://github.com/albu/albumentations> . Augmentation
 
