@@ -1,5 +1,8 @@
 # Jupyter Pandas NumPy Scikit
 
+<https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python> free course
+
+
  Jake Vanderplas . <https://jakevdp.github.io/PythonDataScienceHandbook/>
  
  df.info()    df.types()   df.index    df.dtypes df.shape  df.describe() df.columns() 
