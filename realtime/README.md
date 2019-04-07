@@ -1,3 +1,7 @@
+Websockets and SSE (Server Sent Events) are both capable of pushing data to browsers, however they are not competing technologies. Websockets connections can both send data to the browser and receive data from the browser. A good example of an application that could use websockets is a chat application.
+
+https://stackoverflow.com/questions/5195452/websockets-vs-server-sent-events-eventsource
+
 https://github.com/duyetdev/realtime-dashboard
 
 https://developer.ibm.com/tutorials/realtime-visitor-analysis-with-kafka/
