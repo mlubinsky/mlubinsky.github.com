@@ -11,6 +11,12 @@ https://chrisalbon.com/#deep_learning
 
 <https://github.com/reshamas/fastai_deeplearn_part1> .  FastAI
 
+<https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb> . Stanford CS230 2018
+
+<https://github.com/limberc/deeplearning.ai>
+
+<https://www.reddit.com/r/MachineLearning/comments/bacu42/d_n_top_machine_learning_apis_that_you_should/>
+
 <https://dlcourse.ai/> . russian class starts Feb 18
 
 <https://deeplearning.mit.edu/> .  <https://github.com/lexfridman/mit-deep-learning> .   MIT
