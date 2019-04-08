@@ -6,6 +6,8 @@
 
 <https://habr.com/ru/post/352980/> . Alert system for metrics
 
+<https://www.youtube.com/watch?v=AtS7Fo60JiY> . A Practical Guide to Monitoring and Alerting with Time Series at Scale - Google - SRECon2017
+
 <http://iconcs.org/papers/Paper_95.pdf> .  Big Data Analytics for Load Forecasting in Smart Grids: A Survey
 
 <https://en.wikipedia.org/wiki/Dickey%E2%80%93Fuller_test> . Dickey–Fuller test
