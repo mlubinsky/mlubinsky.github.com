@@ -2,6 +2,8 @@
 
 <https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python> free course
 
+<https://realpython.com/courses/idiomatic-pandas-tricks-features-you-may-not-know/>
+
 
  Jake Vanderplas . <https://jakevdp.github.io/PythonDataScienceHandbook/>
  
