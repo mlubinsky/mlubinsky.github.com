@@ -1,4 +1,4 @@
-## Real Time
+## JS and Real Time plotting
 
 Websockets and SSE (Server Sent Events) are both capable of pushing data to browsers, however they are not competing technologies. Websockets connections can both send data to the browser and receive data from the browser. A good example of an application that could use websockets is a chat application.
 
