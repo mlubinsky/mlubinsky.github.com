@@ -4,6 +4,8 @@
 
 <http://pyviz.org/>
 
+<http://vispy.org/>
+
 <https://github.com/mcastorina/graph-cli> .  plottting from CSV
 
 <https://habr.com/post/431754/> Dash
@@ -36,21 +38,6 @@
 
 <https://habr.com/ru/post/443528/>
 
-## JS
-
-<https://www.codewall.co.uk/the-best-javascript-data-visualization-charting-libraries/>
-
-<https://habr.com/company/ruvds/blog/423983/>
-
-## Real-time plotting
-
-<https://pusher.com/tutorials/live-graph-d3>
-
-<https://github.com/hasura/graphql-engine/tree/master/community/tools/graphql2chartjs>
-
-<https://itnext.io/javascript-real-time-visualization-of-high-frequency-streams-d6533c774794>
-
-<https://medium.com/@xaviergeerinck/building-a-real-time-streaming-dashboard-with-spark-grafana-chronograf-and-influxdb-e262b68087de>
 
 ## Mosquitto  
 $ mosquitto -c /path/to/mosquitto.conf
