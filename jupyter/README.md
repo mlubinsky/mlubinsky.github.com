@@ -4,6 +4,7 @@
 
 <https://realpython.com/courses/idiomatic-pandas-tricks-features-you-may-not-know/>
 
+<https://habr.com/ru/company/mailru/blog/445834/>
 
  Jake Vanderplas . <https://jakevdp.github.io/PythonDataScienceHandbook/>
  
