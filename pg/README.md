@@ -10,6 +10,8 @@
 
 <https://habr.com/ru/company/postgrespro/blog/443792/>
 
+<https://cube.dev/blog/postgresql-query-optimization/>
+
 ```
 CREATE TABLE Apt99_2016 (time TIMESTAMP WITH TIME ZONE NOT NULL, value REAL);
 
