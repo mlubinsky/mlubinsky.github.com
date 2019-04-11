@@ -4,6 +4,20 @@
 
 <body>
 <pre>
+
+$ brew install scala
+$ brew install sbt
+
+You can use $SBT_OPTS to pass additional JVM options to sbt.
+Project specific options should be placed in .sbtopts in the root of your project.
+Global settings should be placed in /usr/local/etc/sbtopts
+
+Update the /usr/local/etc/sbtopts by running the command below. This step is optional.
+
+$ echo '-J-XX:+CMSClassUnloadingEnabled' >> /usr/local/etc/sbtopts
+$ echo '-J-Xmx2G' >> /usr/local/etc/sbtopts
+
+
 <h2>Links</h2>
 <a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/scala>My Scala code snippets</a>
 
