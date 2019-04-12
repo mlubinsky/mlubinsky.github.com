@@ -69,7 +69,7 @@
 <https://habr.com/ru/post/444172/>
 
 
-
+<https://towardsdatascience.com/@sh.tsang>
 
 <https://habr.com/ru/post/443734/> .  BagNet bag of words
 
