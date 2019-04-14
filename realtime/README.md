@@ -17,6 +17,9 @@ Kafka doesn’t natively support this protocol, so we need to add an additional 
 
 <https://hackernoon.com/supercharging-kafka-enable-realtime-web-streaming-by-adding-pushpin-fd62a9809d94>
 
+## Kafka WebSocket
+<https://www.confluent.io/blog/consuming-messages-out-of-apache-kafka-in-a-browser>
+
 ## Mosquitto  
 $ mosquitto -c /path/to/mosquitto.conf
 port 1883
