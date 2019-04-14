@@ -2,6 +2,8 @@
 
 <https://machinelearningmastery.com/time-series-data-visualization-with-python/>
 
+<https://tslearn.readthedocs.io/en/latest/index.html> .  tslearn
+
 <https://github.com/mlubinsky/mlubinsky.github.com/blob/master/ts/time_series_forecasting_with_python_mini_course.pdf>
 
 <https://habr.com/ru/post/352980/> . Alert system for metrics
