@@ -1,5 +1,6 @@
 <https://d2l.ai/> Deep Learning book
-<https://youtu.be/53YvP6gdD7U> Deep Learning in 2019
+
+<https://youtu.be/53YvP6gdD7U> Deep Learning State of Art in 2019 (MIT)
 
 <https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438> . Book
 <https://www.amazon.com/Machine-Learning-Python-Cookbook-preprocessing/dp/1491989386/> . Book
