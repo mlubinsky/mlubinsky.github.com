@@ -140,6 +140,10 @@ peer authentication on the other hand, is used for local connections and verifie
 
 ## Grafana
 
+<https://youtu.be/FhNUrueWwOk?list=PLDGkOdUX1Ujo3wHw9-z5Vo12YLqXRjzg2> . Variables in Grafana
+
+The templating feature allows you to create variables that can be used in your metric queries, series names and panel titles. Use this feature to create generic dashboards that can quickly be changed to show graphs for different servers or metrics.
+
 <http://localhost:3000/>
 
 <http://localhost:3000/datasources>
