@@ -82,6 +82,9 @@
 
 
 ## Segmentation
+
+<https://www.analyticsvidhya.com/blog/2019/04/introduction-image-segmentation-techniques-python/>
+
 Segmentation = classify every pixel on picture.
 
 The Segmentaition does not require a lot of data because every pixel is used for back propagation.
