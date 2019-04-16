@@ -12,6 +12,8 @@
 
 Нахождение объектов на картинках: <https://habr.com/ru/company/joom/blog/445354/>
 
+<https://habr.com/ru/post/448316/> Keras, Google GPU, deploying on Android, Google Colab, transfer learning
+
 <https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/learn/v4/>
 
 * SIFT  
