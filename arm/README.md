@@ -2,6 +2,8 @@
 
 <https://habr.com/post/420435/>
 
+<https://habr.com/ru/post/448288/>
+
 <https://www.youtube.com/watch?v=IbisEjzoxTY>
 
 <https://sysprogs.com/w/mbed-settings-extractor/>
