@@ -144,6 +144,8 @@ peer authentication on the other hand, is used for local connections and verifie
 
 <https://grafana.com/docs/reference/templating/>
 
+<https://kb.groundworkopensource.com/display/DOC721/How+to+GroundWork+Grafana+dashboard+variables>
+
 The templating feature allows you to create variables that can be used in your metric queries, series names and panel titles. Use this feature to create generic dashboards that can quickly be changed to show graphs for different servers or metrics.
 
 <http://localhost:3000/>
