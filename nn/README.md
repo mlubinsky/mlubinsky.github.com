@@ -13,6 +13,8 @@ https://chrisalbon.com/#deep_learning
 
 <https://github.com/reshamas/fastai_deeplearn_part1> .  FastAI
 
+<https://fullstackdeeplearning.com/march2019> . online course
+
 <https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb> . Stanford CS230 2018
 
 <https://github.com/limberc/deeplearning.ai>
