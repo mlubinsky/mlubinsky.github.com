@@ -318,6 +318,8 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 <https://habr.com/post/423939/>
 
+<https://avikdas.com/2019/04/15/a-graphical-introduction-to-dynamic-programming.html>
+
 <https://medium.freecodecamp.org/unmasking-bitmasked-dynamic-programming-25669312b77b>
 
 <https://blogarithms.github.io/articles/2019-03/cracking-dp-part-one>
