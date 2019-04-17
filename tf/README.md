@@ -44,6 +44,7 @@ model.compile(loss='categorical_crossentropy',
 
 <https://towardsdatascience.com/guide-to-coding-a-custom-convolutional-neural-network-in-tensorflow-bec694e36ad3>
 
+<https://blog.exxactcorp.com/deep-learning-with-tensorflow-training-resnet-50-from-scratch-using-the-imagenet-dataset/>
 
 <https://medium.com/tensorflow/structural-time-series-modeling-in-tensorflow-probability-344edac24083>
 
