@@ -6,6 +6,8 @@
 AutoML basic project: <https://github.com/minimaxir/automl-gs>
 given X predict Y
 
+<https://github.com/mljar/mljar-supervised> .  AutoML
+
 Using gridsearch for hyperparamter optimization.
 Grid search is known to perform worse than random search in cases where not all hyperparameters are of similar importanc
 
