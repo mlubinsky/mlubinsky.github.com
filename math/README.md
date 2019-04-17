@@ -10,6 +10,8 @@
 
 <https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/>
 
+<https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python>
+
 ### Linear algebra
 
 <http://setosa.io/ev/eigenvectors-and-eigenvalues/>
