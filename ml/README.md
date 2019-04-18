@@ -1,6 +1,9 @@
 
 <https://github.com/fritzlabs/Awesome-Mobile-Machine-Learning> ML on mobile devices
 
+
+<https://www.reddit.com/r/learnmachinelearning/comments/be9e7j/post_all_machine_learning_courses_here/>
+
 <https://eli5.readthedocs.io/en/latest/index.html> .  ELI5 explaing and plot for different ML models
 
 <https://uber.github.io/ludwig/> . toolbox that allows to train and test deep learning models without the need to write code.
