@@ -122,6 +122,21 @@ Tuple2[Tuple5[Int,Int,Int,Int,Int], Tuple4[Int,Int,Tuple2[Int,Int],Int]]
 def foldLeft[B] (z: B) (f: (B,A) => B): B
 The applies a binary operator to a start value and all elements of this collection or iterator,
 going left to right
+    
+[B] means that the function has a type parameter named B
+
+op: (B, A) => B means that f must be a function that has two parameters of type B and A and returns a value of type B. 
+    Since foldLeft is a function that takes another function as an argument, we say that foldLeft is a higher order function.    
+    
+If we consider a coll collection, foldLeft works as follows:
+
+Step 1: It creates a var acc = z accumulator then calls the op function:
+acc = op(acc, coll(0)) 
+
+Step 2: It carries on calling op with each element of the collection:
+acc = op(acc, coll(i))
+
+Step 3: It returns acc once it has iterated through all elements of the collection    
 
 The foldLeft is not parallelizable. Explanation is below:
 
