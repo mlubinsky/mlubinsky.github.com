@@ -1,6 +1,12 @@
-## JS and Real Time plotting
+## React plotting
 
-Websockets and SSE (Server Sent Events) are both capable of pushing data to browsers, however they are not competing technologies. Websockets connections can both send data to the browser and receive data from the browser. A good example of an application that could use websockets is a chat application.
+<https://cube.dev/blog/react-visualization-libraries-in-2019/>
+
+## Web Socket
+
+Websockets and SSE (Server Sent Events) are both capable of pushing data to browsers, however they are not competing technologies. 
+
+Websockets connections can both send data to the browser and receive data from the browser. A good example of an application that could use websockets is a chat application.
 
 <https://redstapler.co/javascript-realtime-chart-plotly/>
 
