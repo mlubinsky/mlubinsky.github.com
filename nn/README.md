@@ -2,6 +2,8 @@
 
 <https://youtu.be/53YvP6gdD7U> Deep Learning State of Art in 2019 (MIT)
 
+<https://github.com/Mybridge/amazing-machine-learning-opensource-2019>
+
 <https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438> . Book
 <https://www.amazon.com/Machine-Learning-Python-Cookbook-preprocessing/dp/1491989386/> . Book
 
@@ -107,17 +109,26 @@ https://towardsdatascience.com/https-medium-com-reina-wang-tw-stochastic-gradien
 
 <https://github.com/Merwanedr/Popbot> . image transformation
 
-<https://github.com/Mybridge/amazing-machine-learning-opensource-2019>
+## PyTorch
 
-<https://github.com/keras-team/keras/tree/master/examples> Keras
+<https://github.com/Atcold/pytorch-Deep-Learning-Minicourse> . PyTorch
+
+<https://github.com/vietnguyen91/Deeplab-pytorch>
+
+
+
+
+
 
 <https://github.com/Yorko/mlcourse.ai/tree/master/jupyter_russian>
 
 <https://heartbeat.fritz.ai/classification-with-tensorflow-and-dense-neural-networks-8299327a818a>
 
-<https://github.com/vietnguyen91/Deeplab-pytorch>
+## Keras
 
-<https://nextjournal.com/mpd/image-classification-with-keras>
+<https://github.com/keras-team/keras/tree/master/examples> Keras
+
+<https://nextjournal.com/mpd/image-classification-with-keras> . Keras
 
 
  
