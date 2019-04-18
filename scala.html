@@ -259,6 +259,20 @@ scala> def present(p: Person): String = p match {
 }
 present: (p: Person)String
     
+<h2>Iterator</h2>
+    
+scala> val iterator = (1 to 3).iterator
+iterator: Iterator[Int] = non-empty iterator
+
+scala> iterator foreach println
+1
+2
+3
+
+scala> iterator foreach println
+
+scala> 
+    
 <h2>Reading .tsv file</h2>    
     
 getLines() returns Iterator[String]. 
@@ -281,5 +295,6 @@ def fromResource(resource: String): Vector[EquityData] =
                 annualDividend = fields(2).toDouble
           )
     }.toVector
+
     
 </pre>
