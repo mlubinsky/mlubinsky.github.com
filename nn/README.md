@@ -97,13 +97,23 @@ https://towardsdatascience.com/https-medium-com-reina-wang-tw-stochastic-gradien
 <https://gengo.ai/articles/20-best-youtube-channels-for-ai-and-machine-learning/>
 
 
+<https://github.com/Yorko/mlcourse.ai/tree/master/jupyter_russian>
+
+<https://heartbeat.fritz.ai/classification-with-tensorflow-and-dense-neural-networks-8299327a818a>
+
+
+
 ## Code
 
 <https://habr.com/ru/post/440190/> . python
 
+<https://github.com/cosmic-cortex/neural-networks-from-scratch>
+
 <https://spandan-madan.github.io/DeepLearningProject/>
 
 <https://github.com/kaszperro/slick-dnn> Deep NN in pure python
+
+## Image anaysis
 
 <https://github.com/Merwanedr/Vusion> image analysis using AI
 
@@ -115,14 +125,6 @@ https://towardsdatascience.com/https-medium-com-reina-wang-tw-stochastic-gradien
 
 <https://github.com/vietnguyen91/Deeplab-pytorch>
 
-
-
-
-
-
-<https://github.com/Yorko/mlcourse.ai/tree/master/jupyter_russian>
-
-<https://heartbeat.fritz.ai/classification-with-tensorflow-and-dense-neural-networks-8299327a818a>
 
 ## Keras
 
