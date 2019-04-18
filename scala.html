@@ -259,5 +259,16 @@ scala> def present(p: Person): String = p match {
 }
 present: (p: Person)String
     
+<h2>Reading .tsv file</h2>         
+import scala.io.Source    
+def fromResource(resource: String): Vector[EquityData] =
+    Source.fromResource(resource).getLines().drop(1).map { line =>
+          val fields = line.split("\t")
+          EquityData(
+                monthId = fields(0), 
+                value = fields(1).toDouble, 
+                annualDividend = fields(2).toDouble
+          )
+    }.toVector
     
 </pre>
