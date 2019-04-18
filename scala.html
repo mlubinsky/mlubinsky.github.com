@@ -231,4 +231,33 @@ val forCombinations = for {
 
 println (forCombinations)
    
+ <h2>Pattern matching</h2>      
+    
+scala> Vector(1, 2, 3, 4) match {
+  case head +: second +: tail => tail
+}
+res0: scala.collection.immutable.Vector[Int] = Vector(3, 4)
+
+scala> Vector(1, 2, 3, 4) match {
+  case head +: second +: tail => second
+}
+
+scala> ("0", 1, (2.0, 3.0)) match {
+  case ("0", int, (d0, d1)) => d0 + d1
+}
+res2: Double = 5.0
+
+scala> "hello" match {
+  case "hello" | "world" => 1
+  case "hello world" => 2
+}
+res3: Int = 1
+
+scala> def present(p: Person): String = p match {
+  case Person(name, age) if age < 18 => s"$name is a child"
+  case p => s"${p.name} is an adult" 
+}
+present: (p: Person)String
+    
+    
 </pre>
