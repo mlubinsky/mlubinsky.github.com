@@ -29,6 +29,11 @@
 * ORB .  Oriented FAST and Rotated BRIEF
 * HoG <https://en.wikipedia.org/wiki/Hough_transform>
 
+
+<https://github.com/Merwanedr/Vusion> image analysis using AI
+
+<https://github.com/Merwanedr/Popbot> . image transformation
+
 ## OpenCV
 
 <https://www.learnopencv.com>
