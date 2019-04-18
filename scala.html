@@ -259,7 +259,18 @@ scala> def present(p: Person): String = p match {
 }
 present: (p: Person)String
     
-<h2>Reading .tsv file</h2>         
+<h2>Reading .tsv file</h2>    
+    
+getLines() returns Iterator[String]. 
+ An iterator is a mutable data structure that allows you to iterate over a sequence of elements.  
+Next, we drop the first line , which contains the header, and transforms each line using an anonymous function passed to map.
+
+The anonymous function takes line of type string, transforms it into Array[String] using split, and instantiates a new EquityData object.
+
+Finally, we convert the resulting Iterator[EquityData] into Vector[EquityData] using .toVector. 
+This step is very important: we convert the mutable, unsafe, iterator into an immutable, safe Vector    
+    
+    
 import scala.io.Source    
 def fromResource(resource: String): Vector[EquityData] =
     Source.fromResource(resource).getLines().drop(1).map { line =>
