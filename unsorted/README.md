@@ -34,6 +34,8 @@ Live calculation in browser
 ## Business
 <http://aynuriev.com/how-to-register-company-usa/>
 
+<https://news.ycombinator.com/item?id=19698151>
+
 ## Be Happy
 
 <https://news.ycombinator.com/item?id=19087418> important books
