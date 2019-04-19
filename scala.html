@@ -273,7 +273,42 @@ scala> iterator foreach println
 
 scala> 
     
-<h2>Reading .tsv file</h2>    
+ <h2>Sliding</h2>  
+sliding(p) creates an Iterator which will produce collections of size p. 
+    Each collection will have a new iterated element plus all the previous p-1 elements. 
+    Notice that if the collection size n is lower than p, the produced collection will have a size of n.    
+    
+ scala> val it = Vector(1, 2, 3, 4).sliding(2)
+it: Iterator[scala.collection.immutable.Vector[Int]] = non-empty iterator
+
+scala> it.toVector
+res0: Vector[scala.collection.immutable.Vector[Int]] = 
+Vector(Vector(1, 2), Vector(2, 3), Vector(3, 4))
+
+scala> Vector(1).sliding(2).toVector
+res12: Vector[scala.collection.immutable.Vector[Int]] = Vector(Vector(1))
+    
+ <h2>Collect</h2>     
+ collect is similar to map: it allows you to transform the elements of a collection, but with the added capability of filtering them.
+    Basically, whenever you want to filter and map a collection, you can use collect instead. The filtering is performed using pattern matching. 
+    Anything that does not match any pattern is filtered out:
+
+
+scala> val v = Vector(1, 2, 3)
+v: scala.collection.immutable.Vector[Int] = Vector(1, 2, 3)
+
+scala> v.filter(i => i != 2).map(_ + 1)
+res15: scala.collection.immutable.Vector[Int] = Vector(2, 4)
+
+scala> v.collect { case i if i != 2 => i + 1 }
+res16: scala.collection.immutable.Vector[Int] = Vector(2, 4)
+Notice that, in the preceding code, we used map(_ + 1) instead of map(i => i + 1). 
+This is a shorthand notation for an anonymous function. 
+Whenever you use a parameter once in your anonymous function, you can replace it with _.
+
+    
+    
+    <h2>Reading .tsv file</h2>    
     
 getLines() returns Iterator[String]. 
  An iterator is a mutable data structure that allows you to iterate over a sequence of elements.  
