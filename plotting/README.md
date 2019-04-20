@@ -6,6 +6,8 @@
 
 <http://vispy.org/>
 
+<https://mlwhiz.com/blog/2019/04/19/awesome_seaborn_visuals/> .  seaborn
+
 <https://github.com/mcastorina/graph-cli> .  plottting from CSV
 
 <https://habr.com/post/431754/> Dash
