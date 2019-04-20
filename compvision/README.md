@@ -40,6 +40,8 @@
 
 <https://opencv-python-tutroals.readthedocs.io/en/latest/index.html>
 
+<https://heartbeat.fritz.ai/opencv-python-cheat-sheet-from-importing-images-to-face-detection-52919da36433>
+
 <https://medium.com/machine-learning-world/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774>
 
 <https://www.pyimagesearch.com/2019/03/11/liveness-detection-with-opencv/>
