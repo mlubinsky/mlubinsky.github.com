@@ -8,6 +8,8 @@
 
 <https://rjzaworski.com/2019/03/7-commandments-for-event-driven-architecture>
 
+<https://news.ycombinator.com/item?id=19705461>
+
 <https://habr.com/ru/post/443058/> Clear Architecture
 
 <http://www.tugberkugurlu.com/archive/software-architecture-and-system-design---getting-your-grip-and-some-related-resources>
