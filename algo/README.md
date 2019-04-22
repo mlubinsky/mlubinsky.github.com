@@ -285,6 +285,8 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 ## Hash function and hashtable 
 
+<https://habr.com/ru/company/otus/blog/448992/>
+
 <https://honest.engineering/posts/hash-functions-survival-guide>
 
 <https://en.wikipedia.org/wiki/Hash_function>
