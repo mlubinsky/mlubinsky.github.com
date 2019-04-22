@@ -1,5 +1,7 @@
 <http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
 
+<https://www.youtube.com/channel/UC_79TBgKFlEwFp345dYF7ag>
+
 <https://robertheaton.com/2014/05/02/jaccard-similarity-and-minhash-for-winners/>
 
 <https://cses.fi/book/> . Competitive programming book
