@@ -13,6 +13,8 @@ https://chrisalbon.com/#deep_learning
 
 <https://lfdl.io/blog/2018/12/10/introducing-the-interactive-deep-learning-landscape/>
 
+<http://tkipf.github.io/graph-convolutional-networks/>  GRAPH CONVOLUTIONAL NETWORKS
+
 <https://github.com/reshamas/fastai_deeplearn_part1> .  FastAI
 
 <https://fullstackdeeplearning.com/march2019> . online course
