@@ -1,4 +1,4 @@
-<https://teach-in.ru> . lectures (physics and math) from Moscow state University
+<https://teach-in.ru> . lectures (physics and math) from Moscow State University
 
 <https://news.ycombinator.com/item?id=19521129> . How to learn new things
 
@@ -6,7 +6,10 @@
 
 <https://news.ycombinator.com/item?id=19650044> Life Advices
 
-<https://github.com/repeats/Repeat> Repeat It
+<https://github.com/repeats/Repeat> Repeat It- like AutoKey
+
+<https://www3.nd.edu/~dthain/compilerbook/> .  Compiler Book
+
 
 <https://kroki.io/> convert plain text diagram to images Kroki provides a unified API with support for BlockDiag (BlockDiag, SeqDiag, ActDiag, NwDiag), C4 (with PlantUML), Ditaa, Erd, GraphViz, Mermaid, Nomnoml, PlantUML, SvgBob and UMLet... and more to come!
 
