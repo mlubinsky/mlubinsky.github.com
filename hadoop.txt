@@ -1,5 +1,7 @@
+https://mlwhiz.com/blog/2015/05/09/hadoop_mapreduce_streaming_tricks_and_technique/
 
- HBASE
+
+HBASE
 -----
 https://www.stackchief.com/blog/Top%203%20Most%20Important%20Things%20to%20Know%20About%20HBase
  HBase is schemaless. The data stored in HBase is not normalized, meaning there is no logical connection or relationship connecting different tables of data.
