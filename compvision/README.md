@@ -601,6 +601,8 @@ Valkka. Поддерживаемое оборудование. Поддержи�
 
 <https://www.pyimagesearch.com/2019/03/11/liveness-detection-with-opencv/>
 
+<https://habr.com/ru/company/mailru/blog/449120/>
+
 ## Intel RealSense D4(15/35) and other cameras
 
 <https://habr.com/ru/company/ivideon/blog/439870/>
