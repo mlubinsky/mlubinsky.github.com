@@ -4,6 +4,8 @@
 
 <https://www.tutorialspoint.com/dip/index.htm>
 
+<https://habr.com/ru/post/449198/> . FFMpeg
+
 <https://images.guide/> .  <https://imageoptim.com/> .   Image compression
 
 <https://opensource.com/article/19/3/python-image-manipulation-tools>
