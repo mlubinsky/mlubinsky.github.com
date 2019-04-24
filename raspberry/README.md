@@ -11,7 +11,7 @@ https://www.raspberrypi.org/forums/viewtopic.php?t=197575
 
 account: pi/raspberry
 
-##
+## SD Card
 
 diskutil list
 
@@ -40,9 +40,9 @@ If you have external hard drives, or more volumes, then there will be more drive
  
  sudo dd bs=1m if=~/Downloads/2016-03-18-raspbian-jessie.img of=/dev/rdisk[n]
  
-## SD card formatters
+## SD card formatters - Flash OS images to SD cards & USB drives 
 
-<https://www.balena.io/etcher/> .  Flash OS images to SD cards & USB drives, safely and easily.
+<https://www.balena.io/etcher/> . 
 
 <https://www.sdcard.org/downloads/formatter/>
 
