@@ -31,13 +31,19 @@ If you have external hard drives, or more volumes, then there will be more drive
 
 <https://www.sdcard.org/downloads/formatter/>
 
+## IP camera image
+<https://ronnyvdbr.github.io/RaspberryIPCamera> .  IP camera
 
+
+## Remote connection without monitor and keyboard
+
+https://www.dexterindustries.com/howto/connecting-raspberry-pi-without-monitor-beginners/
 
 <https://dev.to/wiaio/set-up-a-raspberry-pi-without-an-external-monitor-or-keyboard--c88>
 
 <https://www.macworld.co.uk/how-to/mac/how-to-set-up-raspberry-pi-3-with-mac-3637490/>
 
-<https://ronnyvdbr.github.io/RaspberryIPCamera> .  IP camera
+
 
 
 <https://www.youtube.com/watch?v=L2XaFmt9xsA> . Remote   Desktop to Raspberry Pi from Apple Mac
