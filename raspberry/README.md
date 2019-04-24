@@ -1,5 +1,8 @@
 diskutil list
 
+If you're using a Mac with just one hard drive, then two appear: /dev/disk0 and /dev/disk1. 
+
+If you have external hard drives, or more volumes, then there will be more drives.
 ```
  
 /dev/disk0 (internal):
