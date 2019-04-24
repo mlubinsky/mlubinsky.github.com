@@ -307,6 +307,8 @@ https://www.anandtech.com/show/12791/arm-details-project-trillium-mlp-architectu
 ## Rasberry
 <https://www.macworld.co.uk/how-to/mac/how-to-set-up-raspberry-pi-3-with-mac-3637490/>
 
+<https://dev.to/wiaio/set-up-a-raspberry-pi-without-an-external-monitor-or-keyboard--c88>
+
 ## Multithreading
 https://os.mbed.com/docs/v5.8/reference/thread.html
 
