@@ -8,6 +8,10 @@
 
 <https://www.amazon.com/dp/1793296634> Algo Book
 
+<https://www.byte-by-byte.com/google-interview/>
+
+<https://courses.csail.mit.edu/iap/interview/materials.php>
+
 <http://www.cs.sjtu.edu.cn/~jiangli/teaching/CS222/files/materials/Algorithm%20Design.pdf> Algo book
 
 <https://www.byte-by-byte.com>
