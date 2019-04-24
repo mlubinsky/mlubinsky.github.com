@@ -2,11 +2,16 @@ sudo raspi-config .  ## configuratuon
 
 cat /etc/os-release
 
+## Camera
 vcgencmd get_camera
 
 vcgencmd version
 
+https://www.raspberrypi.org/forums/viewtopic.php?t=197575
+
 account: pi/raspberry
+
+##
 
 diskutil list
 
