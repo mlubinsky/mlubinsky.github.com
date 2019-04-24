@@ -2,6 +2,8 @@ sudo raspi-config .  ## configuratuon
 
 cat /etc/os-release
 
+vcgencmd get_camera
+
 vcgencmd version
 
 account: pi/raspberry
