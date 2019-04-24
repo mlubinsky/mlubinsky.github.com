@@ -1,3 +1,9 @@
+sudo raspi-config
+
+vcgencmd version
+
+pi/raspberry
+
 diskutil list
 
 If you're using a Mac with just one hard drive, then two appear: /dev/disk0 and /dev/disk1. 
