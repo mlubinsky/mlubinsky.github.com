@@ -20,7 +20,11 @@ If you have external hard drives, or more volumes, then there will be more drive
    3:                APFS Volume Recovery                1.5 GB     disk1s3
    4:                APFS Volume VM                      9.7 GB     disk1s4
 ```   
-
+ 
+ sudo diskutil unmountDisk /dev/disk[n] 
+ 
+ sudo dd bs=1m if=~/Downloads/2016-03-18-raspbian-jessie.img of=/dev/rdisk[n]
+ 
 ## SD card formatters
 
 <https://www.balena.io/etcher/> .  Flash OS images to SD cards & USB drives, safely and easily.
