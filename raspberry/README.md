@@ -1,8 +1,10 @@
-sudo raspi-config
+sudo raspi-config .  ## configuratuon
+
+cat /etc/os-release
 
 vcgencmd version
 
-pi/raspberry
+account: pi/raspberry
 
 diskutil list
 
