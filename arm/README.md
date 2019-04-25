@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/post/448288/>
 
+<https://armh.sharepoint.com/sites/Iot-partner-enablement-o365/SitePages/ISG-Training---October-2018.aspx?web=1>
+
 <https://www.youtube.com/watch?v=IbisEjzoxTY>
 
 <https://sysprogs.com/w/mbed-settings-extractor/>
