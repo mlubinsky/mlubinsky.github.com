@@ -12,6 +12,9 @@
 
 <https://cube.dev/blog/postgresql-query-optimization/>
 
+
+<https://pgdash.io/blog/postgres-features.html>
+
 ```
 CREATE TABLE Apt99_2016 (time TIMESTAMP WITH TIME ZONE NOT NULL, value REAL);
 
