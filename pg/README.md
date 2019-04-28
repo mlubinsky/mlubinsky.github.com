@@ -12,6 +12,7 @@
 
 <https://cube.dev/blog/postgresql-query-optimization/>
 
+<https://news.ycombinator.com/item?id=19765761>
 
 <https://pgdash.io/blog/postgres-features.html>
 
