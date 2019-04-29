@@ -1,5 +1,7 @@
 <http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
 
+<http://web.stanford.edu/class/cs166/handouts/100%20Suggested%20Final%20Project%20Topics.pdf>
+
 <https://www.youtube.com/channel/UC_79TBgKFlEwFp345dYF7ag>
 
 <https://robertheaton.com/2014/05/02/jaccard-similarity-and-minhash-for-winners/>
