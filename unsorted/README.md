@@ -6,6 +6,8 @@
 
 <https://news.ycombinator.com/item?id=19650044> Life Advices
 
+<https://news.ycombinator.com/item?id=19770527> What is Love
+
 <https://github.com/repeats/Repeat> Repeat It- like AutoKey
 
 <https://www3.nd.edu/~dthain/compilerbook/> .  Compiler Book
