@@ -1,3 +1,5 @@
+<https://habr.com/ru/post/449616/> Fibonachi
+
 <http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
 
 <http://web.stanford.edu/class/cs166/handouts/100%20Suggested%20Final%20Project%20Topics.pdf>
