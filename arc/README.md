@@ -100,6 +100,11 @@
 <https://slikts.github.io/concurrency-glossary/>
 
 <https://habr.com/post/430672/> concurrency
+ 
+<https://github.com/heathermiller/dist-prog-book/blob/master/chapter/2/futures.md>
+
+<http://nikgrozev.com/2015/07/14/overview-of-modern-concurrency-and-parallelism-concepts/>
+
 
 <https://medium.com/@NetflixTechBlog/performance-under-load-3e6fa9a60581> . Performance-concurrency
 
