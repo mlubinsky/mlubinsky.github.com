@@ -8,6 +8,8 @@ Websockets and SSE (Server Sent Events) are both capable of pushing data to brow
 
 Websockets connections can both send data to the browser and receive data from the browser. A good example of an application that could use websockets is a chat application.
 
+<https://blog.easyaspy.org/post/10/2019-04-30-creating-real-time-charts-with-flask>
+
 <https://redstapler.co/javascript-realtime-chart-plotly/>
 
 <https://stackoverflow.com/questions/5195452/websockets-vs-server-sent-events-eventsource>
