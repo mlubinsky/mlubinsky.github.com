@@ -8,6 +8,8 @@
 
 <https://github.com/dennybritz/reinforcement-learning>
 
+<https://github.com/aikorea/awesome-rl>
+
 <https://habr.com/ru/post/443240/> . Q-learning
 
 <https://habr.com/ru/company/hsespb/blog/444428/>
