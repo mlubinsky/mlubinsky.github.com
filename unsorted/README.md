@@ -28,6 +28,8 @@
 Live calculation in browser
 <https://habr.com/ru/post/444596/> .  <iodide.io>
 
+<https://scorcher.ru/axiomatics/arts/579/Revonsuo_A__Psihologiya_Soznaniya_a4.pdf>
+
 <http://domatv.net/> .  russian TV
 
 <https://explorabl.es/> . explorable explanation
