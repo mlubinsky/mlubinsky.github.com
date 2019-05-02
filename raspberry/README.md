@@ -59,6 +59,7 @@ https://www.dexterindustries.com/howto/connecting-raspberry-pi-without-monitor-b
 <https://www.macworld.co.uk/how-to/mac/how-to-set-up-raspberry-pi-3-with-mac-3637490/>
 
 
+<https://www.instructables.com/id/Set-Up-Wifi-on-a-Raspberry-Pi-Zero-From-Your-Mac-a/>
 
 
 <https://www.youtube.com/watch?v=L2XaFmt9xsA> . Remote   Desktop to Raspberry Pi from Apple Mac
@@ -77,3 +78,6 @@ modules-load=dwc2,g_ether
 
 Put the Zero into Gadget Mode so it becomes a USB Slave:
 <https://blog.gbaman.info/?p=791> 
+
+
+cat /root/etc/network/interfaces
