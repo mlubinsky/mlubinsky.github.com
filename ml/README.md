@@ -8,7 +8,7 @@
 
 <https://uber.github.io/ludwig/> . toolbox that allows to train and test deep learning models without the need to write code.
 
-<https://github.com/genular/simon-frontend>
+<https://github.com/genular/simon-frontend> .   <https://genular.org/>
 
 AutoML basic project: <https://github.com/minimaxir/automl-gs>
 given X predict Y
