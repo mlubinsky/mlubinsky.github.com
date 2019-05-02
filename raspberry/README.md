@@ -62,3 +62,18 @@ https://www.dexterindustries.com/howto/connecting-raspberry-pi-without-monitor-b
 
 
 <https://www.youtube.com/watch?v=L2XaFmt9xsA> . Remote   Desktop to Raspberry Pi from Apple Mac
+
+ssh pi@raspberrypi.local
+
+<https://www.thepolyglotdeveloper.com/2016/06/connect-raspberry-pi-zero-usb-cable-ssh/>
+Our long term goal will be to use SSH over USB
+we have to configure Raspbian to treat the USB port like an ethernet port. 
+
+config.txt
+
+dtoverlay=dwc2
+
+modules-load=dwc2,g_ether
+
+Put the Zero into Gadget Mode so it becomes a USB Slave:
+<https://blog.gbaman.info/?p=791> 
