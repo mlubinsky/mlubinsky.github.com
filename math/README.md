@@ -16,6 +16,8 @@
 
 <http://setosa.io/ev/eigenvectors-and-eigenvalues/>
 
+<https://www.youtube.com/watch?v=mxkGMbrobY0&feature=youtu.be>
+
 <https://dhruvp.netlify.com/2019/02/25/eigenvectors/>
 
 <https://news.ycombinator.com/item?id=19349858>
