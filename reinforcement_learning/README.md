@@ -10,6 +10,8 @@
 
 <https://github.com/aikorea/awesome-rl>
 
+<https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On>
+
 <https://habr.com/ru/post/443240/> . Q-learning
 
 <https://habr.com/ru/company/hsespb/blog/444428/>
