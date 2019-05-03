@@ -14,6 +14,9 @@
 
 <https://news.ycombinator.com/item?id=19765761>
 
+
+<https://wiki.postgresql.org/wiki/Don%27t_Do_This>
+
 <https://pgdash.io/blog/postgres-features.html>
 
 ```
