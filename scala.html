@@ -54,6 +54,18 @@ http://www.lihaoyi.com/post/EasyParsingwithParserCombinators.html
 https://habr.com/company/arcadia/blog/432004/
 
 
+
+sealed trait Shape
+case class Circle(diameter: Double) extends Shape
+case class Rectangle(width: Double, height: Double) extends Shape
+
+An Algebraic Data Type (ADT) is a type that composes sum types and product types to define a data structure. 
+In the preceding code, we defined a Shape ADT, which composes a sum type (a Shape can be a Circle or a Rectangle), 
+with a product type Rectangle (a Rectangle holds a width and a height).
+
+The sealed keyword indicates that all subclasses of the trait must be declared in the same .scala file. 
+
+
 scala> Vector(1,2).zip(Vector("a", "b", "c"))
 res0: scala.collection.immutable.Vector[(Int, String)] = Vector((1,a), (2,b))
 
