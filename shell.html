@@ -8,7 +8,7 @@
   
   https://news.ycombinator.com/item?id=17874718
   
-  IP:
+  find IP:
   
     dig +short myip.opendns.com @resolver1.opendns.com
     ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'
@@ -16,8 +16,14 @@
 
 
 <h2> Script to automatically run file if timestamp changed</h2>
+
+https://stackoverflow.com/questions/18599339/python-watchdog-monitoring-file-for-changes
+
+https://www.michaelcho.me/article/using-pythons-watchdog-to-monitor-changes-to-a-directory
+
+https://facebook.github.io/watchman/
+
 #!/usr/bin/env bash
- 
 script="$1"; shift
 last_mod=0
  
@@ -40,7 +46,8 @@ done
  
 exit 0
 
-
+<h2> Process supervisor</h2> 
+http://supervisord.org/index.html
 
 <h2> Memory CPU</h2>
 https://habrahabr.ru/company/badoo/blog/338226/
