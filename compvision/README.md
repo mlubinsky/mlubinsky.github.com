@@ -134,6 +134,7 @@ Diffferent types of upsampling to make the image of bigger size:
 
 Added skip connection: ResNet (UNet, TernausNet )
 
+<https://neurohive.io/ru/vidy-nejrosetej/u-net-image-segmentation/> U-Net
 
 <https://www.youtube.com/watch?v=SEvUc46gUaQ> . Deep Learning for the Segmentation, Classification, and Quantification
 
