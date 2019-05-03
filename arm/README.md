@@ -76,6 +76,7 @@ Toolchain'ы делятся на несколько типов или трипл
     dnf info gcc-c++-arm-linux-gnu
 
 ## IoT
+<https://vas3k.ru/blog/homesillyhome/> . Smart Home
 
 <https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/>
 
