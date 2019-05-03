@@ -14,7 +14,7 @@ personDescription("Michael", db)
 
 ```
 
-The get(key) method in Map returns Option, containing the value associated with the key. If the key does not exist in Map, it returns None. When you start using Option, pattern matching is the most natural way of triggering different behaviors depending on the content ofOption.
+The get(key) method in Map returns Option, containing the value associated with the key. If the key does not exist in Map, it returns None. When you start using Option, pattern matching is the most natural way of triggering different behaviors depending on the content of Option.
 
 Another way is to use map and getOrElse, as shown in the following code:
 
