@@ -65,6 +65,22 @@ with a product type Rectangle (a Rectangle holds a width and a height).
 
 The sealed keyword indicates that all subclasses of the trait must be declared in the same .scala file. 
 
+<h2>Option</h2>
+
+The Scala Option type is an algebraic data type (ADT) that represents an optional value. 
+It can also be viewed as List that can contain either one or no elements.
+
+sealed trait Option[+A]
+case class Some[A](value: A) extends Option[A]
+case object None extends Option[Nothing]
+
+The + sign in front of the A type parameter in the Option[+A] declaration means that Option is covariant in A. 
+If B is a subtype of A, then Option[B] is a subtype of Option[A]. 
+Furthermore, you might notice that None actually extends Option[Nothing] and not Option[A]. 
+This is because a case object cannot accept a type parameter. 
+In Scala, Nothing is the bottom type, which means that it is a subtype of any other type.  
+This implies that None is a subtype of Option[A] for any A.
+
 
 scala> Vector(1,2).zip(Vector("a", "b", "c"))
 res0: scala.collection.immutable.Vector[(Int, String)] = Vector((1,a), (2,b))
