@@ -2,6 +2,8 @@
 
 <https://open.compscicenter.ru/archive/images/> . Все что нужно знать программисту об изображениях
 
+<https://tryolabs.com/resources/introductory-guide-computer-vision/>
+
 <https://www.tutorialspoint.com/dip/index.htm>
 
 <https://habr.com/ru/post/449198/> . FFMpeg
