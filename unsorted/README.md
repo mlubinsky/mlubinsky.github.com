@@ -4,6 +4,8 @@
 
 <http://sevakaplan.com/ru/home.htm> . Сева Каплан
 
+<https://juliagalef.com/>  
+
 <https://news.ycombinator.com/item?id=19650044> Life Advices
 
 <https://news.ycombinator.com/item?id=19770527> What is Love
