@@ -4,7 +4,9 @@
 
 <http://sevakaplan.com/ru/home.htm> . Сева Каплан
 
-<https://juliagalef.com/>  
+<https://juliagalef.com/>    Julia Galef
+
+<https://www.youtube.com/channel/UCbNOH-KWkyuXHQE0a-0MsZw> Vicktor Lega
 
 <https://news.ycombinator.com/item?id=19650044> Life Advices
 
