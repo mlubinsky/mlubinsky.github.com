@@ -14,8 +14,14 @@ If there is no index.html, then the files in the directory will be listed.
 
 <https://www.kirupa.com/tricks/billion_ways_display_svg.htm> . working with SVG
 
-Web server for Chrome
+## Web server for Chrome
 
 <https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en>
+
+## Web workers
+
+<https://www.twilio.com/blog/optimize-javascript-application-performance-web-workers>
+
+## Visualization
 
 https://itnext.io/javascript-real-time-visualization-of-high-frequency-streams-d6533c774794
