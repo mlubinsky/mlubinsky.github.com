@@ -2,6 +2,8 @@
 
 <https://habr.com/ru/post/450594/> Fibonachi
 
+<https://docs.google.com/spreadsheets/d/1GOO4s1NcxCR8a44F0XnsErz5rYDxNbHAHznu4pJMRkw/edit#gid=0>
+
 <http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
 
 <http://web.stanford.edu/class/cs166/handouts/100%20Suggested%20Final%20Project%20Topics.pdf>
