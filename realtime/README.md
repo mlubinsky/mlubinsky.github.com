@@ -90,6 +90,8 @@ https://gist.github.com/vitormeriat/b6de7aa0a28af2b45f15c3d67721e051
 
 ## Real-time plotting
 
+<https://itnext.io/javascript-real-time-visualization-of-high-frequency-streams-d6533c774794>
+
 <https://pusher.com/tutorials/live-graph-d3>
 
 <https://github.com/hasura/graphql-engine/tree/master/community/tools/graphql2chartjs>
