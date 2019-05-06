@@ -3,8 +3,6 @@
 </head>
 
 
-
-
 <pre>
 https://dbdiagram.io/home . DB schema diargrams
 http://www.redbook.io/
@@ -22,7 +20,8 @@ https://habr.com/company/psb/blog/434730/ . In memory DBs
 
 https://habr.com/ru/post/440306/ Проблемы масштабирования БД в высоконагруженных системах
 
-<h2>MVCC</h2>
+ 
+<h2>MVCC (MultiVersion Concurrency Control)</h2>
 https://en.wikipedia.org/wiki/Multiversion_concurrency_control
 The simplest way is to make all readers wait until the writer is done, which is known as a read-write lock. 
 Locks are known to create contention especially between long read transactions and update transactions. 
@@ -39,6 +38,24 @@ With snapshot isolation, a transaction observes a state of the data as when the 
 MVCC introduces the challenge of how to remove versions that become obsolete and will never be read. In some cases, 
 a process to periodically sweep through and delete the obsolete versions is implemented. 
 This is often a stop-the-world process that traverses a whole table and rewrites it with the last version of each data item. 
+
+
+https://en.wikipedia.org/wiki/Multiversion_concurrency_control
+http://elliot.land/post/sql-transaction-isolation-levels-explained
+
+If someone is reading from a database at the same time as someone else is writing to it, it is possible that the reader will see a half-written or inconsistent piece of data.
+There are several ways of solving this problem, known as concurrency control methods.
+The simplest way is to make all readers wait until the writer is done, which is known as a lock.
+This can be very slow, so MVCC takes a different approach: each user connected to the database sees a snapshot of the database at a particular instant in time.
+Any changes made by a writer will not be seen by other users of the database until the changes have been completed
+(or, in database terms: until the transaction has been committed.)
+
+
+The SQL standard tried to define four isolation levels (read uncommitted, read committed, repeatable read and serializable)
+- Read uncommitted permits dirty reads, non repeatable reads and phantom reads.
+- Read committed permits non repeatable reads and phantom reads.
+- Repeatable read permits only phantom reads.
+- Serializable does not permit any read errors.    Client perform transactions in serial.
 
 <h2>Sharding</h2>
 https://www.citusdata.com/blog/2017/08/09/principles-of-sharding-for-relational-databases/
@@ -372,23 +389,7 @@ select name, weight, ntile(2) over ntile_window as by_half, ntile(3) over ntile_
 
 
 
-<h2>MVCC (MultiVersion Concurrency Control)</h2>
-https://en.wikipedia.org/wiki/Multiversion_concurrency_control
-http://elliot.land/post/sql-transaction-isolation-levels-explained
 
-If someone is reading from a database at the same time as someone else is writing to it, it is possible that the reader will see a half-written or inconsistent piece of data.
-There are several ways of solving this problem, known as concurrency control methods.
-The simplest way is to make all readers wait until the writer is done, which is known as a lock.
-This can be very slow, so MVCC takes a different approach: each user connected to the database sees a snapshot of the database at a particular instant in time.
-Any changes made by a writer will not be seen by other users of the database until the changes have been completed
-(or, in database terms: until the transaction has been committed.)
-
-
-The SQL standard tried to define four isolation levels (read uncommitted, read committed, repeatable read and serializable)
-- Read uncommitted permits dirty reads, non repeatable reads and phantom reads.
-- Read committed permits non repeatable reads and phantom reads.
-- Repeatable read permits only phantom reads.
-- Serializable does not permit any read errors.    Client perform transactions in serial.
 
 
 <h2>Links</h2>
@@ -539,6 +540,9 @@ https://medium.com/netflix-techblog/scaling-time-series-data-storage-part-i-ec2b
 https://blog.outlyer.com/top10-open-source-time-series-databases
 https://db.cs.cmu.edu/seminar2017/
 https://oss.redislabs.com/redistimeseries/
+
+https://github.com/sirixdb/sirix . SirixDB
+
 http://devconnected.com/4-best-time-series-databases-to-watch-in-2019/
 https://news.ycombinator.com/item?id=19825566
 https://news.ycombinator.com/item?id=15649405
