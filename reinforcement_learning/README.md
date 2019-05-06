@@ -8,6 +8,8 @@
 
 <https://github.com/dennybritz/reinforcement-learning>
 
+<https://www.youtube.com/watch?v=gTNNXi9ApVU>
+
 <https://github.com/aikorea/awesome-rl>
 
 <https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On>
