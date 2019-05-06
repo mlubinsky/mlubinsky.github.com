@@ -6,6 +6,8 @@
 
 <http://vispy.org/>
 
+<https://www.reddit.com/r/Python/comments/bkyeyc/the_reason_i_am_using_altair_for_most_of_my/>  Altair
+
 <https://mlwhiz.com/blog/2019/04/19/awesome_seaborn_visuals/> .  seaborn
 
 <https://github.com/mcastorina/graph-cli> .  plottting from CSV
