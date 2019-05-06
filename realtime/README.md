@@ -1,6 +1,6 @@
-## React plotting
 
-<https://cube.dev/blog/react-visualization-libraries-in-2019/>
+<https://css-tricks.com/the-many-ways-of-getting-data-into-charts/>
+
 
 ## Web Socket
 
@@ -87,6 +87,10 @@ https://gist.github.com/vitormeriat/b6de7aa0a28af2b45f15c3d67721e051
 <https://blog.bitsrc.io/11-javascript-charts-and-data-visualization-libraries-for-2018-f01a283a5727>
 
 <https://habr.com/company/ruvds/blog/423983/>
+
+## React plotting
+
+<https://cube.dev/blog/react-visualization-libraries-in-2019/>
 
 ## Real-time plotting
 
