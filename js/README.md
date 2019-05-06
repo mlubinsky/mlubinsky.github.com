@@ -22,6 +22,8 @@ If there is no index.html, then the files in the directory will be listed.
 
 <https://www.twilio.com/blog/optimize-javascript-application-performance-web-workers>
 
+<https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API>
+
 ## Visualization
 
 https://itnext.io/javascript-real-time-visualization-of-high-frequency-streams-d6533c774794
