@@ -1,5 +1,13 @@
 ## Architecture
 
+System thinking
+<https://neilkakkar.com/understanding-systems.html>
+
+<https://news.ycombinator.com/item?id=19832048>
+
+<https://thesystemsthinker.com/>
+
+
 <https://github.com/mlubinsky/mlubinsky.github.com/blob/master/arc/Designing_Distributed_Systems.pdf> . BOOK
 
 <https://github.com/aphyr/distsys-class>
