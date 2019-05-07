@@ -5,6 +5,8 @@
 
 <http://www.modernescpp.com/> 2 books here
 
+<https://vk.com/for_programmer> russian cconferences Siberia 2019 C++
+
 <https://www.amazon.com/Advanced-Interview-Questions-Youll-Likely/dp/1946383708> C++ book
 
 <http://www.icce.rug.nl/documents/cplusplus/>
