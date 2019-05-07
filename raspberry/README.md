@@ -81,3 +81,7 @@ Put the Zero into Gadget Mode so it becomes a USB Slave:
 
 
 cat /root/etc/network/interfaces
+
+
+## . ML 
+https://medium.com/@Quantum_inc/object-detection-with-raspberry-pi-and-python-bc6b3a1d4972
