@@ -174,6 +174,10 @@ https://www.expeditedssl.com/aws-in-plain-english
 
  <https://habr.com/company/abdoc/blog/352856/>
  
+ 
+ ## TerraForm
+ <https://habr.com/ru/post/450410/>
+ 
  ## TerraForm vs CloudFormation
  
  <https://habr.com/company/jugru/blog/420661/> 
