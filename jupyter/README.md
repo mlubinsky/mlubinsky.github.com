@@ -10,7 +10,11 @@
  
  df.info()    df.types()   df.index    df.dtypes df.shape  df.describe() df.columns() 
  
+## Cloud Notebooks 
+ 
  <https://www.dataschool.io/cloud-services-for-jupyter-notebook/amp/> . Jupyter Notebook in the cloud
+ 
+ <https://medium.com/machine-learning-world/useful-snippets-for-google-colaboratory-free-gpu-included-d976d6b3e6de>
  
 ## Plotting the time series
 
