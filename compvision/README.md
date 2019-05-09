@@ -75,6 +75,8 @@ cv2.destroyAllWindows()
 
 ```
 
+<https://www.pyimagesearch.com/2018/08/13/opencv-people-counter/> . People Counter
+
 <https://www.learnopencv.com>
 
 <https://opencv-python-tutroals.readthedocs.io/en/latest/index.html>
