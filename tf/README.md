@@ -1,3 +1,7 @@
+## PyTorch
+
+<https://github.com/omerbsezer/Fast-Pytorch>
+
 ## Keras
 <https://habr.com/ru/company/ods/blog/325432/>
 
