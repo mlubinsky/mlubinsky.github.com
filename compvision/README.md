@@ -617,6 +617,10 @@ PASCAL VOC предоставляет стандартизированные н�
 
 <https://www.pyimagesearch.com/2018/11/19/mask-r-cnn-with-opencv/>
 
+<https://github.com/matterport/Mask_RCNN>
+
+<https://habr.com/ru/post/451164/>
+
 <https://medium.com/@ageitgey/snagging-parking-spaces-with-mask-r-cnn-and-python-955f2231c400>
 
 https://towardsdatascience.com/building-a-custom-mask-rcnn-model-with-tensorflow-object-detection-952f5b0c7ab4
