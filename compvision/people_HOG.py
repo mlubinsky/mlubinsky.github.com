@@ -15,7 +15,7 @@ import base64
 Usage:
 
 python peopleCounter.py -i PATH_TO_IMAGE  # Reads and detect people in a single local stored image
-python peopleCounter.py -c  # Attempts to detect people using webcam
+python peopleCounter.py -c true    # Attempts to detect people using webcam
 
 IMPORTANT: This example is given AS IT IS without any warranty
 
