@@ -371,6 +371,8 @@ https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detec
 
 ## Real-time object detection and tracking
 
+https://www.youtube.com/watch?v=MyAOtvwTkT0 . TensorFlow Object API
+
 <https://habr.com/ru/company/dataart/blog/350120/>
 
 <https://www.pyimagesearch.com/2017/09/18/real-time-object-detection-with-deep-learning-and-opencv/>
