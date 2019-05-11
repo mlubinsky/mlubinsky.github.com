@@ -24,7 +24,9 @@ FFmpeg – это библиотека для создания видеопри�
 
 <https://habr.com/ru/post/448316/> Keras, Google GPU, deploying on Android, Google Colab, transfer learning
 
-<https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/learn/v4/>
+<https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/learn/v4/> . UDEMY
+
+<https://www.matec-conferences.org/articles/matecconf/pdf/2018/14/matecconf_imet2018_01016.pdf> Extract objects from video
 
 * SIFT  
 <https://en.wikipedia.org/wiki/Scale-invariant_feature_transform>   
