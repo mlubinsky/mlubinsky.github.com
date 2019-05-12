@@ -2,7 +2,7 @@
 
 <https://dbngin.com/> . Free All-in-One Database Version Management Tool
 
-<https://stackoverflow.com/questions/45684618/having-default-mac-python-2-7-and-anaconda-python-3>
+
 
 <https://zenworkpro.com/2018/08/14/computer-ergonomics-useful-tips-for-working-in-macos>
 
@@ -18,11 +18,16 @@ https://github.com/vsaravind007/nodeScratchpad   Run JS code snippets
 
 <https://github.com/wellsjo/JSON-Splora>  JSON manipulation
 
-Anaconda on Mac:
+### Anaconda on Mac:
+
+<https://stackoverflow.com/questions/45684618/having-default-mac-python-2-7-and-anaconda-python-3>
 
 <https://towardsdatascience.com/how-to-successfully-install-anaconda-on-a-mac-and-actually-get-it-to-work-53ce18025f97>
 
-https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/
+
+### Color command line
+<https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/>
+
 ls -G
 
 ### ~/.bash_profile
