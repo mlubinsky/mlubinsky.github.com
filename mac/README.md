@@ -18,7 +18,9 @@ https://github.com/vsaravind007/nodeScratchpad   Run JS code snippets
 
 <https://github.com/wellsjo/JSON-Splora>  JSON manipulation
 
+Anaconda on Mac:
 
+<https://towardsdatascience.com/how-to-successfully-install-anaconda-on-a-mac-and-actually-get-it-to-work-53ce18025f97>
 
 https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/
 ls -G
