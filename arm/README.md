@@ -76,6 +76,9 @@ Toolchain'ы делятся на несколько типов или трипл
     dnf info gcc-c++-arm-linux-gnu
 
 ## IoT
+SVG + VUE + MQTT
+<https://www.smashingmagazine.com/2019/05/svg-web-page-components-iot-part1/> 
+
 <https://vas3k.ru/blog/homesillyhome/> . Smart Home
 
 <https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/>
