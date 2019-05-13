@@ -257,6 +257,10 @@ https://www.machinelearningplus.com/101-numpy-exercises-python/
 ```
 https://stackoverflow.com/questions/29432629/correlation-matrix-using-pandas
 
+https://habr.com/ru/company/ruvds/blog/451478/ 
+bиблиотекa pandas-profiling. Результаты её работы выражаются не в виде неких отдельных показателей, а в форме довольно подробного HTML-отчёта, содержащего большую часть тех сведений об анализируемых данных, которые может понадобиться знать перед тем, как приступать к более плотной работе с ними.
+
+
 http://www.dataschool.io/easier-data-analysis-with-pandas/
 https://news.ycombinator.com/item?id=16473482
 http://nbviewer.jupyter.org/github/pybokeh/jupyter_notebooks/blob/master/pandas/PandasCheatSheet.ipynb
