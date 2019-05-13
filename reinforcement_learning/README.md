@@ -16,6 +16,8 @@
 
 <https://habr.com/ru/post/443240/> . Q-learning
 
+<https://habr.com/ru/post/439674/> RL
+
 <https://habr.com/ru/company/hsespb/blog/444428/>
 
 <http://www.argmin.net/2018/06/25/outsider-rl/>
