@@ -45,6 +45,7 @@ model.compile(loss='categorical_crossentropy',
 ```	      
 
 ## Tensorflow
+<https://www.techrepublic.com/article/beginners-guide-for-tensorflow-the-basics-of-googles-machine-learning-library/?ftag=TREe09998f&bhid=35141061>
 
 <https://www.edyoda.com/course/1429> Step by step guide to Tensorflow
 
