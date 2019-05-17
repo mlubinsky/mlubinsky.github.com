@@ -14,6 +14,8 @@
 
 ### Linear algebra
 
+<https://news.ycombinator.com/item?id=19933274>
+
 <http://setosa.io/ev/eigenvectors-and-eigenvalues/>
 
 <https://www.youtube.com/watch?v=mxkGMbrobY0&feature=youtu.be>
