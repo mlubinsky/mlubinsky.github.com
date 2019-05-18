@@ -2,6 +2,8 @@
 
 <https://news.ycombinator.com/item?id=19521129> . How to learn new things
 
+<https://news.ycombinator.com/item?id=19939010>  DeepWork
+
 <http://sevakaplan.com/ru/home.htm> . Сева Каплан
 
 <https://juliagalef.com/>    Julia Galef
