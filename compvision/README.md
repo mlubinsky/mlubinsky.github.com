@@ -1,5 +1,7 @@
 ## Image processing without NN
 
+<https://realpython.com/storing-images-in-python/>
+
 <https://open.compscicenter.ru/archive/images/> . Все что нужно знать программисту об изображениях
 
 <https://rsipvision.com/ComputerVisionNews-2019May/>
