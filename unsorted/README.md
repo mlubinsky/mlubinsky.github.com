@@ -184,6 +184,9 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 <https://movies.d3.ru/>
 
 ## Chess
+
+<https://chess.stackexchange.com/questions/75/very-aggressive-openings> Agressive opening
+
 <https://medium.freecodecamp.org/simple-chess-ai-step-by-step-1d55a9266977>
 
 <https://habr.com/ru/company/skillbox/blog/437524/>
