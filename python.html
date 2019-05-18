@@ -89,6 +89,32 @@ Print statement:
 In Python 2, implicit str type is ASCII. But in Python 3.x implicit str type is Unicode.
 xrange() exists in Python2 only; under Python3  it is named range()
 
+	
+jteppinette 44 minutes ago [-]
+
+No compatibility layer. Its really not bad.
+there are a few modules that are simply at different locations but have the same API
+
+ 
+  PY3 = sys.version_info >= (3, 0)
+  PY2 = sys.version_info < (3, 0)
+  PY26 = sys.version_info >= (2, 6) and sys.version_info < (2, 7)
+  
+  if PY3:
+    from http import client as httplib
+  else:
+    import httplib
+
+is string:
+  isinstance(<maybe_string>, basestring if PY2 else str)
+  
+using different classes
+  # Python 2.6 doesn't properly UTF-8 encode syslog messages, so it needs
+  # to be performed in a custom formatter.
+  formatter_class = UnicodeLoggingFormatter if PY26 else logging.Formatter
+ 
+
+
 
 Enforcing named parameters (Python3):
 -----------------------------------
