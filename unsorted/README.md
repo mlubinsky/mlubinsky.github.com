@@ -217,6 +217,8 @@ https://en.wikipedia.org/wiki/Calisthenics
 http://www.idoportal.com/
 
 ## Tennis
+
+<https://www.youtube.com/watch?v=NS_scoYsF0k> 
 <https://www.youtube.com/results?search_query=returning+weak+serve>
 
 <https://www.youtube.com/watch?v=WB1Dx59xfrI> . Fore hand
