@@ -112,7 +112,7 @@ cv2.destroyAllWindows()
 
 <https://www.rsipvision.com/ComputerVisionNews-2019March/>
 
-
+https://habr.com/ru/company/mipt/blog/450732/ . Deep Learning for Computer Vision
 
 ## Reviews: Object Detection with Deep Learning: A Review
 <https://arxiv.org/abs/1809.02165v2> 
