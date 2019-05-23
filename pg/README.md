@@ -2,6 +2,9 @@
 
 <https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres12
 
+
+<http://postgrest.org> . PostgREST
+
 <https://pynative.com/python-postgresql-tutorial/>
 
 <https://habr.com/ru/company/postgrespro/blog/442462/>
