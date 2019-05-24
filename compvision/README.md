@@ -131,7 +131,10 @@ https://habr.com/ru/company/mipt/blog/450732/ . Deep Learning for Computer Visio
 
 <https://blog.nanonets.com/hyperparameter-optimization/> .  Hyperparameter optimization
 
+### Real time object detection with tensorflow
+<https://www.edureka.co/blog/tensorflow-object-detection-tutorial/>
 
+<https://medium.com/@madhawavidanapathirana/real-time-human-detection-in-computer-vision-part-2-c7eda27115c6>
 
 
 <https://habr.com/ru/company/nixsolutions/blog/443236/> . Демистифицируем свёрточные нейросети
