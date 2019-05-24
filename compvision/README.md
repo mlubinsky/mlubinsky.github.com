@@ -49,6 +49,8 @@ FFmpeg – это библиотека для создания видеопри�
 <https://github.com/Merwanedr/Popbot> . image transformation
 
 ## OpenCV
+<https://habr.com/ru/company/intel/blog/452790/>
+
 conda install opencv
 
 Basic camera test:
