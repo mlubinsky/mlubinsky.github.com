@@ -7,7 +7,9 @@
 <https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438> . Book
 <https://www.amazon.com/Machine-Learning-Python-Cookbook-preprocessing/dp/1491989386/> . Book
 
-https://chrisalbon.com/#deep_learning 
+<https://victorzhou.com/blog/intro-to-cnns-part-1/> . from scratch in Python
+
+<https://chrisalbon.com/#deep_learning>
 
 <https://www.youtube.com/watch?v=5l0e_Q0gpnc&list=PLlb7e2G7aSpT1ntsozWmWJ4kGUsUs141Y> . Нейронные сети. Теория (Анализ данных на Python в примерах и задачах. Ч2)
 
