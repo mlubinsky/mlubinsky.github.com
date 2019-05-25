@@ -15,6 +15,8 @@
 
 <https://habr.com/ru/company/postgrespro/blog/443792/>
 
+<https://habr.com/ru/company/mailru/blog/453046/> Indexes
+
 <https://cube.dev/blog/postgresql-query-optimization/>
 
 <https://news.ycombinator.com/item?id=19765761>
