@@ -2,6 +2,8 @@
 
 <https://machinelearningmastery.com/time-series-data-visualization-with-python/>
 
+<https://towardsdatascience.com/an-end-to-end-project-on-time-series-analysis-and-forecasting-with-python-4835e6bf050b>
+
 <http://www.timeseriesclassification.com/>
 
 <https://tslearn.readthedocs.io/en/latest/index.html> .  tslearn
