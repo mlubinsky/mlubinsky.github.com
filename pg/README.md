@@ -23,6 +23,8 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 
 <http://postgrest.org> . 
 
+PostgreSQL + PostgREST + react-admin == fantastic stack.
+
 <https://gist.github.com/michelp/efc882ce86bd60d50dcf5f11442a2aaf>
 
 <https://github.com/subzerocloud/postgrest-starter-kit>
