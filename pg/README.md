@@ -2,8 +2,12 @@
 
 <https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres12
 
+### PostgREST
 
-<http://postgrest.org> . PostgREST
+<http://postgrest.org> . 
+
+<https://gist.github.com/michelp/efc882ce86bd60d50dcf5f11442a2aaf>
+
 
 <https://pynative.com/python-postgresql-tutorial/>
 
