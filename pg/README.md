@@ -2,12 +2,30 @@
 
 <https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres12
 
+
+```
+cat docker-compose.yml
+docker-compose up -d --no-deps --build postgrest
+docker ps
+docker log 5da443890939
+
+PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_info"
+
+PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from device_info"
+./pipeline.sh restart
+curl -X POST -d 'json={"f":"1", "id": "016a0e2bf6bc000000000001001001d8", "d": [{"5000/0/5700": [{"t": 1555016324000, "v": {"current": 0.34444}}]}]}' http://localhost:8888/topic.test
+PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from device_info"
+PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_info"
+PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_values"
+  ```
+
 ### PostgREST
 
 <http://postgrest.org> . 
 
 <https://gist.github.com/michelp/efc882ce86bd60d50dcf5f11442a2aaf>
 
+REST call in postman: localhost:3000/sensor_info
 
 <https://pynative.com/python-postgresql-tutorial/>
 
