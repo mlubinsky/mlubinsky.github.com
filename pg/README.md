@@ -21,9 +21,11 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 
 ### PostgREST
 
-<http://postgrest.org> . 
+<http://postgrest.org> 
 
 <http://postgrest.org/en/v5.2/api.html#binary-output>
+
+<https://github.com/dbohdan/automatic-api/>
 
 PostgreSQL + PostgREST + react-admin == fantastic stack.
 
