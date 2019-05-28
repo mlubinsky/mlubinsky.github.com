@@ -5,6 +5,8 @@
 ## Keras
 <https://habr.com/ru/company/ods/blog/325432/>
 
+<https://habr.com/ru/post/453558/>
+
 <https://kite.com/blog/python/python-machine-learning-keras>
 
 <https://towardsdatascience.com/boost-your-cnn-image-classifier-performance-with-progressive-resizing-in-keras-a7d96da06e20>
@@ -47,6 +49,8 @@ model.compile(loss='categorical_crossentropy',
 ## Tensorflow
 
 <https://habr.com/ru/post/453482/> Введение в глубокое обучение с использованием TensorFlow
+
+<https://habr.com/ru/post/453558/>
 
 <https://www.techrepublic.com/article/beginners-guide-for-tensorflow-the-basics-of-googles-machine-learning-library/?ftag=TREe09998f&bhid=35141061>
 
