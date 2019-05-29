@@ -1,4 +1,6 @@
-<https://github.com/videoflow/videoflow>
+<https://github.com/videoflow/videoflow>]
+
+<https://www.dlology.com/blog/how-to-train-an-object-detection-model-easy-for-free/>
 
 ## Image processing without NN
 
