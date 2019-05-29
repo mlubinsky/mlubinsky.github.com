@@ -9,6 +9,8 @@
 
 <https://victorzhou.com/blog/intro-to-cnns-part-1/> . from scratch in Python
 
+<https://towardsdatascience.com/10-new-things-i-learnt-from-fast-ai-v3-4d79c1f07e33> . FastAI
+
 <https://chrisalbon.com/#deep_learning>
 
 <https://www.youtube.com/watch?v=5l0e_Q0gpnc&list=PLlb7e2G7aSpT1ntsozWmWJ4kGUsUs141Y> . Нейронные сети. Теория (Анализ данных на Python в примерах и задачах. Ч2)
