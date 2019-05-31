@@ -6,6 +6,8 @@
 
 <https://github.com/floydhub/dl-docker> Docker image with ML
 
+<https://www.infoq.com/presentations/ing-docker-hadoop> . Docker Data Science Pipeline
+
 Flask and Docker
 https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-18-04
 
