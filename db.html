@@ -192,8 +192,35 @@ where ROWNUM <= 5;
 <h2>SQL</h2>
  https://www.interviewbit.com/sql-interview-questions/
  
+<h2>Hierarhy</h2> 
  https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database
  https://news.ycombinator.com/item?id=20027586 Hierarchy and RECURSIVE SQL
+ https://github.com/bitnine-oss/agensgraph . Postgres extension  AgensGraph
+ http://patshaughnessy.net/2017/12/13/saving-a-tree-in-postgres-using-ltree
+ 
+ WITH RECURSIVE cte (id, message, author, path, parent_id, depth)  AS (
+  SELECT  id,
+          message,
+          author,
+          array[id] AS path,
+          parent_id,
+          1 AS depth
+  FROM    comments
+  WHERE   parent_id IS NULL
+
+  UNION ALL
+ 
+  SELECT  comments.id,
+          comments.message,
+          comments.author,
+          cte.path || comments.id,
+          comments.parent_id,
+          cte.depth + 1 AS depth
+  FROM    comments
+          JOIN cte ON comments.parent_id = cte.id
+  )
+  SELECT id, message, author, path, depth FROM cte
+  ORDER BY path;
  
 https://www.youtube.com/watch?v=swR33jIhW8Q
 https://habr.com/ru/post/448072/ . Joins
