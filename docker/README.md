@@ -6,6 +6,9 @@
 
 <https://github.com/floydhub/dl-docker> Docker image with ML
 
+Flask and Docker
+https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-18-04
+
 
 <https://habr.com/ru/company/ruvds/blog/441574/>
 Существуют два способа, позволяющих сделать срок жизни данных большим срока жизни контейнера. 
