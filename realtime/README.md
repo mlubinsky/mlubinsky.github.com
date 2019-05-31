@@ -19,11 +19,15 @@ Websockets connections can both send data to the browser and receive data from t
 <https://developer.ibm.com/tutorials/realtime-visitor-analysis-with-kafka/>
 
 ## SSE
+
+<https://en.wikipedia.org/wiki/Server-sent_events>
+
 <https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events>
 
 text/event-stream is the official media type for Server Sent Events (SSE); it will prefix data bits with a data: prefix and you can also choose your prefix to change the meaning of that piece of data for the client. This media type is for browsers, as they support that using the EventSource JavaScript API.
 
 application/stream+json is for server to server/http client (anything that's not a browser) communications. It won't prefix the data and will just use CRLF to split the pieces of data. 
+<https://hpbn.co/server-sent-events-sse/>
 
 <https://www.w3schools.com/html/html5_serversentevents.asp>
 
