@@ -2,6 +2,9 @@
 
 <https://habr.com/ru/post/450594/> Fibonachi
 
+<https://hackernoon.com/20-string-coding-interview-questions-for-programmers-6b6735b6d31c>
+
+
 <https://www.solutionfactory.in/posts/Floyd-Cycle-Detection-Algorithm-in-Java> Cycle detection
 
 <https://docs.google.com/spreadsheets/d/1GOO4s1NcxCR8a44F0XnsErz5rYDxNbHAHznu4pJMRkw/edit#gid=0>
