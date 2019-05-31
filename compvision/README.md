@@ -386,6 +386,8 @@ https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detec
 
 <https://habr.com/ru/post/454132/>
 
+https://zoneminder.com/
+
 https://www.youtube.com/watch?v=MyAOtvwTkT0 . TensorFlow Object API
 
 <https://habr.com/ru/company/dataart/blog/350120/>
