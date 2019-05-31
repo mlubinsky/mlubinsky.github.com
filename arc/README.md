@@ -1,5 +1,8 @@
 ## Architecture
 
+
+<https://boyter.org/2018/03/collection-favorite-optimization-posts-articles/>
+
 System thinking
 <https://neilkakkar.com/understanding-systems.html>
 
