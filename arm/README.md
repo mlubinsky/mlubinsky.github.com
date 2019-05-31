@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/post/448288/>
 
+<https://developer.arm.com/ip-products/processors/machine-learning/arm-ml-processor>
+
 <https://armh.sharepoint.com/sites/Iot-partner-enablement-o365/SitePages/ISG-Training---October-2018.aspx?web=1>
 
 <https://www.youtube.com/watch?v=IbisEjzoxTY>
