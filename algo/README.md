@@ -4,6 +4,7 @@
 
 <https://hackernoon.com/20-string-coding-interview-questions-for-programmers-6b6735b6d31c>
 
+<https://medium.com/@fahimulhaq/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed>
 
 <https://www.solutionfactory.in/posts/Floyd-Cycle-Detection-Algorithm-in-Java> Cycle detection
 
