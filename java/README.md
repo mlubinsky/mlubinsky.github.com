@@ -6,4 +6,4 @@
  
  Run with the parameter:
  
- java.exe -jar <name>.jar
+ java.exe -jar  name.jar
