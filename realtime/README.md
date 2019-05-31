@@ -1,7 +1,19 @@
 
 <https://css-tricks.com/the-many-ways-of-getting-data-into-charts/>
 
+<https://www.freecodecamp.org/news/5-ways-to-build-real-time-apps-with-javascript-5f4d8fe259f7/>
 
+1. Long-Polling: This is the net equivalent of kids asking “are we there yet?” every five minutes
+```
+(function poll(){   
+      setTimeout(function(){      
+                            $.ajax({ url: "server", success: function(data){        
+                               //Update your dashboard gauge        
+                               salesGauge.setValue(data.value);
+                               //Setup the next poll recursively        
+                               poll();      }, 
+                           dataType: "json"});  }, 30000);})();
+```
 ## Web Socket
 
 Websockets and SSE (Server Sent Events) are both capable of pushing data to browsers, however they are not competing technologies. 
@@ -18,7 +30,7 @@ Websockets connections can both send data to the browser and receive data from t
 
 <https://developer.ibm.com/tutorials/realtime-visitor-analysis-with-kafka/>
 
-## SSE
+## SSE is part of the browser EventSource API
 
 <https://en.wikipedia.org/wiki/Server-sent_events>
 
