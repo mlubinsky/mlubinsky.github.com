@@ -125,6 +125,8 @@ System thinking
 
 <https://turbolent.com/data-processing-pipeline.html>
 
+<https://habr.com/ru/company/otus/blog/454186/> Apache Beam и DataFlow для конвейеров реального времени
+
 <https://www.elastic.co/blog/the-birthday-paradox-and-concurrently-indexing-in-elasticsearch>
 
 <http://app-from-scratch.darkleaf.ru/> . Clojure
