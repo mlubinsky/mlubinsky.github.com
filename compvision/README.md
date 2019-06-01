@@ -384,6 +384,10 @@ https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detec
 
 ## Real-time object detection and tracking
 
+<https://github.com/RedisGears/EdgeRealtimeVideoAnalytics>  using Redis Streams, RedisGears, RedisAI and RedisTimeSeries for Realtime Video Analytics (i.e. counting people)
+
+<https://trackingjs.com/>
+
 <https://habr.com/ru/post/454132/>
 
 https://zoneminder.com/
