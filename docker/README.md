@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/company/ruvds/blog/440660/>
 
+<https://habr.com/ru/company/hh/blog/450954/> Java + Docker
+
 <https://github.com/floydhub/dl-docker> Docker image with ML
 
 <https://www.infoq.com/presentations/ing-docker-hadoop> . Docker Data Science Pipeline
