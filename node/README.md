@@ -11,6 +11,16 @@ ls node_modules/.bin/
 ./node_modules/.bin/http-server -a localhost -p 8000 -c-1
 ```
 
+```
+var http = require('http');
+
+//create a server object:
+http.createServer(function (req, res) {
+  res.write('Hello World!'); //write a response to the client
+  res.end(); //end the response
+}).listen(8080); //the server object listens on port 8080
+```
+
 ## Install  node: https://jscomplete.com/learn/1rd-reactful
 
 mkdir mydir; cd mydir
