@@ -1,4 +1,13 @@
+<https://nodejs.org/api/events.html#events_events>
 
+In terminal type: node
+The NodeJS RELP will appear
+Press tab twice to the list of all node modules
+
+<https://github.com/nvm-sh/nvm> .  node version manager
+
+
+<https://flaviocopes.com/> JS, Node, Express, React books
 
 <https://drive.google.com/file/d/1_CZCg0taMTNdWYznpxnTsPi5U9txZo3n/view> . Flavio Copes NodeJS handbook
 
