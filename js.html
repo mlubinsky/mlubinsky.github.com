@@ -106,7 +106,6 @@ https://blog.miguelgrinberg.com/post/writing-a-javascript-rest-client
 <h2>Fetch API</h2>
 
 ```
-
 <script>
 function json2table(json, classes){
   console.log("inside json2table");
@@ -137,8 +136,8 @@ function json2table(json, classes){
        '</tr></thead><tbody>' +
        bodyRows +
        '</tbody></table>';
-}
-
+};
+/********************/
 function myFunc() {
  alert("myFunc Started");
  url="http://localhost:5000/todo/api/v1.0/tasks"
@@ -159,7 +158,7 @@ function myFunc() {
               })
            */
     }
-  })
+  });
 
   .then(data => {
       console.log("data:")
@@ -169,8 +168,9 @@ function myFunc() {
   })
   .catch(error => {
     console.log("ERR code "+ error.status)
-  })
-  
+  });
+
+}  
 </script>  
   
 ```
