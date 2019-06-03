@@ -37,6 +37,30 @@ Press TAB and see all the functions and properties that can be used from the Arr
 <https://medium.com/@maison.moa/create-a-simple-weather-app-using-node-js-express-and-react-54105094647a>
 <https://www.smashingmagazine.com/2019/02/node-api-http-es6-javascript/>
 
+## HTTP GET  <https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html>
+```
+const https = require('https');
+
+https.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', (resp) => {
+  let data = '';
+
+  // A chunk of data has been recieved.
+  resp.on('data', (chunk) => {
+    data += chunk;
+  });
+
+  // The whole response has been received. Print out the result.
+  resp.on('end', () => {
+    console.log(data);
+    //console.log(JSON.parse(data).explanation);
+  });
+
+}).on("error", (err) => {
+  console.log("Error: " + err.message);
+});
+
+```
+
 ```
 var http = require('http');
 var URL="http://54.237.205.178:3010/api/v1/rooms/status"
