@@ -5,7 +5,7 @@
 <https://medium.com/@maison.moa/create-a-simple-weather-app-using-node-js-express-and-react-54105094647a>
 <https://www.smashingmagazine.com/2019/02/node-api-http-es6-javascript/>
 
-
+```
 var http = require('http');
 var URL="http://54.237.205.178:3010/api/v1/rooms/status"
 
@@ -26,10 +26,7 @@ reqGet.on('error', function(e) {
     console.error("\n ERROR" +e);
 });
 
-
-
-
-
+```
 
 <https://nodejs.org/api/events.html#events_events>
 
