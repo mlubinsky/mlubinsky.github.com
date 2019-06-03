@@ -188,6 +188,8 @@ Username in "docker build" должен соответствовать тому,
  
 <https://thoughts.theden.sh/post/docker-dev-env/>
 
+<https://habr.com/ru/post/454552/> 
+
 <https://habr.com/post/310460/>
 
 <https://www.toptal.com/devops/getting-started-with-docker-simplifying-devops>
