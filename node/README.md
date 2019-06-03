@@ -4,6 +4,13 @@
 <<https://flaviocopes.com/> JS, Node, Express, React books>
 
 
+## HTPP Server
+```
+ls node_modules/http-server/
+ls node_modules/.bin/
+./node_modules/.bin/http-server -a localhost -p 8000 -c-1
+```
+
 ## Install  node: https://jscomplete.com/learn/1rd-reactful
 
 mkdir mydir; cd mydir
