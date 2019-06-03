@@ -1,7 +1,33 @@
 ## Books
 <https://jscomplete.com/learn/node-beyond-basics>
+
 <<https://flaviocopes.com/> JS, Node, Express, React books>
 
+
+## Install  node: https://jscomplete.com/learn/1rd-reactful
+
+mkdir mydir; cd mydir
+
+npm init
+
+npm i express  - This command will download the express npm package and place it under a node_modules folder (which it will create because express is the first package to get installed). The command will also save this dependency to your package.json file.
+
+### Installing Development Dependencies
+
+The following are dependencies that are not needed in production. To track them separately, you can use the npm -D install flag to save them under a devDependencies section in package.json.
+
+When you run a Node server and then change the code of that server, you need to restart Node. This will be a frustrating thing in development. Luckily, there are some workarounds. The most popular one is Nodemon:
+
+npm i -D nodemon
+
+This package will make the nodemon command available in your project. Nodemon runs your Node server in a wrapper process that monitors the main process and automatically restarts it when files are saved to the disk. Simple and powerful!
+
+
+A single TAB in Node’s REPL can be used for autocompletion
+
+Double TAB (which is pressing the TAB key twice) can be used to see a list of possible things you can type from whatever partially-typed string you have.
+
+## Code
 <https://medium.com/@maison.moa/create-a-simple-weather-app-using-node-js-express-and-react-54105094647a>
 <https://www.smashingmagazine.com/2019/02/node-api-http-es6-javascript/>
 
