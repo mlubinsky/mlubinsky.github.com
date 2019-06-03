@@ -1,3 +1,36 @@
+## Books
+<https://jscomplete.com/learn/node-beyond-basics>
+<<https://flaviocopes.com/> JS, Node, Express, React books>
+
+<https://medium.com/@maison.moa/create-a-simple-weather-app-using-node-js-express-and-react-54105094647a>
+<https://www.smashingmagazine.com/2019/02/node-api-http-es6-javascript/>
+
+
+var http = require('http');
+var URL="http://54.237.205.178:3010/api/v1/rooms/status"
+
+var reqGet = http.get(URL, function(res) {
+    console.log("Hii");
+    console.log("\n statusCode: ", res.statusCode);
+
+    res.on('data', function(d) {
+        console.info('GET result:\n');
+        process.stdout.write(d);
+        console.info('\n\nCall completed');
+    });
+
+});
+
+reqGet.end();
+reqGet.on('error', function(e) {
+    console.error("\n ERROR" +e);
+});
+
+
+
+
+
+
 <https://nodejs.org/api/events.html#events_events>
 
 <http://expressjs.com/> ExpressJS
@@ -8,8 +41,6 @@ Press tab twice to the list of all node modules
 
 <https://github.com/nvm-sh/nvm> .  node version manager
 
-
-<https://flaviocopes.com/> JS, Node, Express, React books
 
 <https://drive.google.com/file/d/1_CZCg0taMTNdWYznpxnTsPi5U9txZo3n/view> . Flavio Copes NodeJS handbook
 
