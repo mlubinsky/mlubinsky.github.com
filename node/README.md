@@ -27,6 +27,12 @@ A single TAB in Node’s REPL can be used for autocompletion
 
 Double TAB (which is pressing the TAB key twice) can be used to see a list of possible things you can type from whatever partially-typed string you have.
 
+Try:
+
+Array.
+
+Press TAB and see all the functions and properties that can be used from the Array class.
+
 ## Code
 <https://medium.com/@maison.moa/create-a-simple-weather-app-using-node-js-express-and-react-54105094647a>
 <https://www.smashingmagazine.com/2019/02/node-api-http-es6-javascript/>
