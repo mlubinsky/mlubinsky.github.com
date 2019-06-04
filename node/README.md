@@ -21,6 +21,27 @@ http.createServer(function (req, res) {
 }).listen(8080); //the server object listens on port 8080
 ```
 
+## Express
+
+var express = require("express");
+
+// Set up the express app
+const app = express();
+// get all todos
+app.get('/api/v1/todos', (req, res) => {
+  res.status(200).send({
+    success: 'true',
+    message: 'todos retrieved successfully',
+  })
+});
+const PORT = 5002;
+
+app.listen(PORT, () => {
+  console.log(`server running on port ${PORT}`)
+});
+
+http://localhost:5002/api/v1/todos
+
 ## Install  node: https://jscomplete.com/learn/1rd-reactful
 
 mkdir mydir; cd mydir
