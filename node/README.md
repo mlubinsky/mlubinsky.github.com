@@ -22,7 +22,7 @@ http.createServer(function (req, res) {
 ```
 
 ## Express
-
+```
 var express = require("express");
 
 // Set up the express app
@@ -39,7 +39,7 @@ const PORT = 5002;
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`)
 });
-
+```
 http://localhost:5002/api/v1/todos
 
 ## Install  node: https://jscomplete.com/learn/1rd-reactful
