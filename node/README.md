@@ -26,8 +26,14 @@ http.createServer(function (req, res) {
 mkdir mydir; cd mydir
 
 npm init
-
-npm i express  - This command will download the express npm package and place it under a node_modules folder (which it will create because express is the first package to get installed). The command will also save this dependency to your package.json file.
+```
+npm i express  
+```
+This command will download the express npm package and place it under a node_modules folder (which it will create because express is the first package to get installed). The command will also save this dependency to your package.json file.
+```
+npm install express --save
+```
+The save flag is used to edit your package.json file and add express as a dependency. After the installation is complete, open up your package.json to see express listed as a dependency. With this, you could send just your code and package.json file to a friend and request them to use npm to install the dependencies on their computer saving you some amount of data. To install, your friend will have to open up cmd inside the app folder and use the command npm install.
 
 ### Installing Development Dependencies
 
