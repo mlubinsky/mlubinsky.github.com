@@ -7,7 +7,10 @@
   <a href=bash_ru.pdf>bash manual</a>
   
   https://news.ycombinator.com/item?id=17874718
-  
+
+  List of ports in use: 
+  sudo lsof -iTCP -sTCP:LISTEN -P | grep 5002
+
   find IP:
   
     dig +short myip.opendns.com @resolver1.opendns.com
