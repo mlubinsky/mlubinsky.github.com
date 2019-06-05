@@ -3,6 +3,9 @@
 
 <<https://flaviocopes.com/> JS, Node, Express, React books>
 
+## NodeJS in Docker
+
+<https://habr.com/ru/company/ruvds/blog/454522/>
 
 ## HTPP Server
 ```
