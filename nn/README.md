@@ -2,6 +2,8 @@
 
 <https://youtu.be/53YvP6gdD7U> Deep Learning State of Art in 2019 (MIT)
 
+https://stepik.org/lesson/210100/step/1?unit=183577 .   STEPIC class
+
 <https://github.com/Mybridge/amazing-machine-learning-opensource-2019>
 
 <https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438> . Book
