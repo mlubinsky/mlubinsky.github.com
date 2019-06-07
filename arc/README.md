@@ -129,9 +129,12 @@ System thinking
 ### Netflix
 <https://medium.com/netflix-techblog/evolution-of-the-netflix-data-pipeline-da246ca36905>
 
-## Big Data Architecture
+
+## System Design Tools
 
 <https://news.ycombinator.com/item?id=20096865> System Design Tools
+
+## Big Data Architecture
 
 <https://streamsets.com/blog/>
 
