@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://github.com/rasbt/deeplearning-models> 
+
 <https://youtu.be/53YvP6gdD7U> Deep Learning State of Art in 2019 (MIT)
 
 https://stepik.org/lesson/210100/step/1?unit=183577 .   STEPIC class
