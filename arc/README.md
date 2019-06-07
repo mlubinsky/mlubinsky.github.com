@@ -131,6 +131,8 @@ System thinking
 
 ## Big Data Architecture
 
+<https://news.ycombinator.com/item?id=20096865> System Design Tools
+
 <https://streamsets.com/blog/>
 
 <https://news.ycombinator.com/item?id=18508284>
