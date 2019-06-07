@@ -350,6 +350,8 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 <https://www.geeksforgeeks.org/min-cost-path-dp-6/>
 
+<https://macnovicetomaster.wordpress.com/2019/06/05/dynamic-programming-practice-problems/>
+
 #### Dynamic Programming-  Python implementation of Min Cost Path on grid problem 
 
   
