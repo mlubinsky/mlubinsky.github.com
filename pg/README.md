@@ -44,7 +44,7 @@ For a complete set of EPSG coordinate system definition identifiers, you can als
 
 psql -d [yourdatabase] -f spatial_ref_sys.sql
 
-
+SELECT postgis_full_version();
 
 ### PostgREST
 
