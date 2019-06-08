@@ -110,6 +110,16 @@ select addgeometryColumn('table_name', 'geom', 4326, 'POINT', 2);
 calculating area in EPSG 4326:
 alter table noise.hoods set area = (select ST_Area(geom::geography));
 
+
+SELECT ST_MakePoint(longitude,latitude) as geom FROM list_points
+
+In order to use your new geometries with other PostGIS functions, you need to specify the coordinate system (SRID) of your points with the ST_SetSRID function. The most widely used system is SRID=4326; that is, GPS coordinates). If you have no idea where your data comes from, it’s probably this one.
+
+So our request becomes:
+
+SELECT ST_SetSRID(ST_MakePoint(longitude,latitude),4326) as geom
+		 FROM list_points
+Sometimes you may want to convert your data to a specific coordinate system. It is possible with the ST_Transform function, which moves the coordinates of a geometry from its current system to another one.
 ```
 
 
