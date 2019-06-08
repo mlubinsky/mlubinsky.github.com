@@ -28,6 +28,17 @@ CREATE TABLE people
   name text,
   points geometry[]
  );
+ 
+
+
+insert into people (name, points) values (
+  'Lincoln', 
+   ARRAY [
+        ST_MakePoint(1,2),  
+        ST_MakePoint(3,3)
+   ]
+ );  
+ 
 ``` 
 ### PostGIS
 
