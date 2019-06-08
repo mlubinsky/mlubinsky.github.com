@@ -46,6 +46,14 @@ psql -d [yourdatabase] -f spatial_ref_sys.sql
 
 SELECT postgis_full_version();
 
+CREATE TABLE gtest (id serial primary key, name varchar(20), geom geometry(LINESTRING));
+
+
+https://postgis.net/docs/manual-2.5/using_postgis_dbmanagement.html#RefObject
+
+INSERT INTO geotable ( the_geom, the_name )
+  VALUES ( ST_GeomFromText('POINT(-126.4 45.32)', 312), 'A Place');
+  
 ### PostgREST
 
 <http://postgrest.org> 
