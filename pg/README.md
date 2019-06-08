@@ -7,7 +7,9 @@
 cat docker-compose.yml
 docker-compose up -d --no-deps --build postgrest
 docker ps
-docker log 5da443890939
+docker log 5da443890939 
+docker log 5da443890939 -f (like tail -f)
+
 
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_info"
 
