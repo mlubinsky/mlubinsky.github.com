@@ -20,10 +20,19 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_info"
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_values"
   ```
-
+### Arrays
+```
+CREATE TABLE people
+ (
+  id serial,
+  name text,
+  points geometry[]
+ );
+``` 
 ### PostGIS
 
 <https://postgis.net/docs/manual-2.5/postgis_installation.html#install_short_version>
+
 <https://medium.com/@Umesh_Kafle/postgresql-and-postgis-installation-in-mac-os-87fa98a6814d>
 
 <https://gist.github.com/clhenrick/ebc8dc779fb6f5ee6a88>
