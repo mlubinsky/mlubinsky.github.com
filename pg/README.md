@@ -46,7 +46,11 @@ insert into people (name, points) values (
 --------------------------------------------+---+---
  0101000000000000000000F03F0000000000000040 | 1 | 2
  
- select UNNEST(points) p  from people
+ select UNNEST(points) p  from people;
+ 
+ 
+ select ST_X(p) as x, ST_Y(p) as y FROM (select UNNEST(points) as p from people) AS U;
+ 
 ``` 
 ### PostGIS
 
