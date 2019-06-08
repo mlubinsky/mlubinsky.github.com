@@ -26,6 +26,81 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 <https://postgis.net/docs/manual-2.5/postgis_installation.html#install_short_version>
 <https://medium.com/@Umesh_Kafle/postgresql-and-postgis-installation-in-mac-os-87fa98a6814d>
 
+<https://gist.github.com/clhenrick/ebc8dc779fb6f5ee6a88>
+```
+Common Spatial Queries
+You may view more of these in my intro to Visualizing Geospatial Data with CartoDB.
+
+Find all polygons from dataset A that intersect points from dataset B:
+
+SELECT a.*
+FROM table_a_polygons a, table_b_points b
+WHERE ST_Intersects(a.the_geom, b.the_geom);
+Find all rows in a polygon dataset that intersect a given point:
+
+-- note: geometry for point must be in the order lon, lat (x, y)
+SELECT * FROM nyc_tenants_rights_service_areas
+where
+ST_Intersects(
+  ST_GeomFromText(
+   'Point(-73.982557 40.724435)', 4326
+  ),
+  nyc_tenants_rights_service_areas.the_geom    
+);
+Or using ST_Contains:
+
+SELECT * FROM nyc_tenants_rights_service_areas
+where
+st_contains(
+  nyc_tenants_rights_service_areas.the_geom,
+  ST_GeomFromText(
+   'Point(-73.917104 40.694827)', 4326
+  )      
+);
+Counting points inside a polygon:
+
+With ST_Containts():
+
+SELECT us_counties.the_geom_webmercator,us_counties.cartodb_id,
+count(quakes.the_geom)
+AS total
+FROM us_counties JOIN quakes
+ON st_contains(us_counties.the_geom,quakes.the_geom)
+GROUP BY us_counties.cartodb_id;
+To update a column from table A with the number of points from table B that intersect table A's polygons:
+
+update noise.hoods set num_complaints = (
+	select count(*)
+	from noise.locations
+	where
+	ST_Intersects(
+		noise.locations.geom,
+		noise.hoods.geom
+	)
+);
+Select data within a bounding box
+Using ST_MakeEnvelope
+
+HINT: You can use bboxfinder.com to easily grab coordinates of a bounding box for a given area.
+
+SELECT * FROM some_table
+where geom && ST_MakeEnvelope(-73.913891, 40.873781, -73.907229, 40.878251, 4326)
+Select points from table a that do not fall within any polygons in table b
+This method makes use of spatial indexes and the indexes on gid for better performance
+
+SELECT
+  a.gid,
+  a.st_address,
+  a.city,
+  a.st_num,
+  a.the_geom
+FROM
+  points AS a LEFT JOIN
+  polygons AS b ON
+  ST_Intersects(a.the_geom, b.the_geom)
+WHERE b.gid IS NULL;
+
+```
 <https://gis.stackexchange.com/questions/192022/saving-array-of-objects-in-postgis-field>
 ```
 {"type":"FeatureCollection","totalFeatures":1,"features":[
