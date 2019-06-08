@@ -1,6 +1,6 @@
 ## Postgres
 
-<https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres12
+<https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres 12
 
 
 ```
@@ -23,6 +23,7 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 
 ### PostGIS
 
+<https://postgis.net/docs/manual-2.5/postgis_installation.html#install_short_version>
 <https://medium.com/@Umesh_Kafle/postgresql-and-postgis-installation-in-mac-os-87fa98a6814d>
 
 psql -d [yourdatabase] -c "CREATE EXTENSION postgis;"
@@ -30,6 +31,20 @@ psql -d [yourdatabase] -c "CREATE EXTENSION postgis;"
 Topology is packaged as a separate extension and installable with command:
 
 psql -d [yourdatabase] -c "CREATE EXTENSION postgis_topology;"
+
+Many of the PostGIS functions are written in the PL/pgSQL procedural language. As such, the next step to create a PostGIS database is to enable the PL/pgSQL language in your new database. This is accomplish by the command below command. For PostgreSQL 8.4+, this is generally already installed
+
+createlang plpgsql [yourdatabase]
+
+Now load the PostGIS object and function definitions into your database by loading the postgis.sql definitions file (located in [prefix]/share/contrib as specified during the configuration step).
+
+psql -d [yourdatabase] -f postgis.sql
+
+For a complete set of EPSG coordinate system definition identifiers, you can also load the spatial_ref_sys.sql definitions file and populate the spatial_ref_sys table. This will permit you to perform ST_Transform() operations on geometries.
+
+psql -d [yourdatabase] -f spatial_ref_sys.sql
+
+
 
 ### PostgREST
 
