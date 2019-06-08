@@ -88,6 +88,32 @@ INSERT INTO geotable ( the_geom, the_name )
   
   UPDATE artwork SET where_is = ST_POINT(X, Y);
 
+
+```
+create a new table for data from a CSV that has lat and lon columns:
+
+create table noise.locations
+(                                     
+name varchar(100),
+complaint varchar(100), descript varchar(100),
+boro varchar(50),
+lat float8,
+lon float8,
+geom geometry(POINT, 4326)
+);
+inputing values for the geometry type after loading data from a CSV:
+update noise.locations set the_geom = ST_SetSRID(ST_MakePoint(lon, lat), 4326);
+
+adding a geometry column in a non-spatial table:
+select addgeometryColumn('table_name', 'geom', 4326, 'POINT', 2);
+
+calculating area in EPSG 4326:
+alter table noise.hoods set area = (select ST_Area(geom::geography));
+
+```
+
+
+
   
 ### PostgREST
 
