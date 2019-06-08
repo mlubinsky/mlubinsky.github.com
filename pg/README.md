@@ -119,7 +119,13 @@ So our request becomes:
 
 SELECT ST_SetSRID(ST_MakePoint(longitude,latitude),4326) as geom
 		 FROM list_points
-Sometimes you may want to convert your data to a specific coordinate system. It is possible with the ST_Transform function, which moves the coordinates of a geometry from its current system to another one.
+Sometimes you may want to convert your data to a specific coordinate system. 
+It is possible with the ST_Transform function, which moves the coordinates of a geometry from its current system to another one.
+
+
+SELECT ST_AsText(geom) as points FROM list_geom
+SELECT ST_X(geom) as longitude, ST_Y(geom) as latitude FROM list_geom
+
 ```
 
 
