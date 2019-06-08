@@ -45,6 +45,8 @@ insert into people (name, points) values (
                    points                   | x | y
 --------------------------------------------+---+---
  0101000000000000000000F03F0000000000000040 | 1 | 2
+ 
+ select UNNEST(points) p  from people
 ``` 
 ### PostGIS
 
