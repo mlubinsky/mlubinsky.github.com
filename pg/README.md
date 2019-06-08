@@ -39,6 +39,12 @@ insert into people (name, points) values (
    ]
  );  
  
+ Arrays in Postgres are 1-based!
+ 
+ SELECT points[1],  ST_X(points[1]) as X, ST_Y(points[1]) as Y from people;
+                   points                   | x | y
+--------------------------------------------+---+---
+ 0101000000000000000000F03F0000000000000040 | 1 | 2
 ``` 
 ### PostGIS
 
