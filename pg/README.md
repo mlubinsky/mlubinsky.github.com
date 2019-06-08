@@ -2,7 +2,7 @@
 
 <https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres 12
 
-
+SELECT version();
 ```
 cat docker-compose.yml
 docker-compose up -d --no-deps --build postgrest
