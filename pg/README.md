@@ -26,6 +26,32 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 <https://postgis.net/docs/manual-2.5/postgis_installation.html#install_short_version>
 <https://medium.com/@Umesh_Kafle/postgresql-and-postgis-installation-in-mac-os-87fa98a6814d>
 
+<https://gis.stackexchange.com/questions/192022/saving-array-of-objects-in-postgis-field>
+```
+{"type":"FeatureCollection","totalFeatures":1,"features":[
+      {"type":"Feature",
+       "id":1,"geometry":
+          {
+           "type":"LineString",
+           "coordinates":
+               [
+                 [-74.103465, 4.80778], 
+                 [-74.10410333333333, 4.8071633333333335], 
+                 [-74.10492833333333, 4.806211666666667], 
+                 [-74.10492833333333, 4.806211666666667]
+               ]
+          },
+          "geometry_name":"the_geom",
+          "properties":
+            {
+                "name":"test", "
+                timestamps":                
+                [358.0,1150.0,1705.0,1971.0,2385.0,3493.0,4506.0,4802]
+            }
+          },
+  ]
+}
+```
 psql -d [yourdatabase] -c "CREATE EXTENSION postgis;"
 
 Topology is packaged as a separate extension and installable with command:
