@@ -86,6 +86,9 @@ https://postgis.net/docs/manual-2.5/using_postgis_dbmanagement.html#RefObject
 INSERT INTO geotable ( the_geom, the_name )
   VALUES ( ST_GeomFromText('POINT(-126.4 45.32)', 312), 'A Place');
   
+  UPDATE artwork SET where_is = ST_POINT(X, Y);
+
+  
 ### PostgREST
 
 <http://postgrest.org> 
