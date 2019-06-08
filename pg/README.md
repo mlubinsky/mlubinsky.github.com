@@ -25,6 +25,12 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 
 <https://medium.com/@Umesh_Kafle/postgresql-and-postgis-installation-in-mac-os-87fa98a6814d>
 
+psql -d [yourdatabase] -c "CREATE EXTENSION postgis;"
+
+Topology is packaged as a separate extension and installable with command:
+
+psql -d [yourdatabase] -c "CREATE EXTENSION postgis_topology;"
+
 ### PostgREST
 
 <http://postgrest.org> 
