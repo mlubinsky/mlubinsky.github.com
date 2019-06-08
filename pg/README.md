@@ -51,6 +51,12 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
           },
   ]
 }
+
+CREATE TABLE spatial_table (
+    name VARCHAR(20),
+    timestamps timestamp[],
+    the_geom geometry
+)
 ```
 psql -d [yourdatabase] -c "CREATE EXTENSION postgis;"
 
