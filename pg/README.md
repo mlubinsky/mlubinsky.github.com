@@ -62,6 +62,8 @@ insert into people (name, points) values (
 
 <https://stackoverflow.com/search?q=+postgis+extension+docker> PostGIS Docker
 
+<https://hub.docker.com/r/mdillon/postgis/>
+
 ```
 Common Spatial Queries
 You may view more of these in my intro to Visualizing Geospatial Data with CartoDB.
