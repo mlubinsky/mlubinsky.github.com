@@ -2,6 +2,8 @@
 
 <https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres 12
 
+<https://habr.com/ru/company/oleg-bunin/blog/455248/>
+
 SELECT version();
 ```
 cat docker-compose.yml
