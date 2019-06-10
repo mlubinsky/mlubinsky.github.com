@@ -356,6 +356,8 @@ Traditional methods of detection involved using a block-wise orientation histogr
 
 <https://openmv.io/>
 
+## Hardware accelerators TCU, NPU, ... 
+<https://habr.com/ru/post/455353/>
 
 
 <https://www.analyticsvidhya.com/blog/2017/10/image-skilltest/>
