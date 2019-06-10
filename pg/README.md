@@ -59,6 +59,9 @@ insert into people (name, points) values (
 <https://medium.com/@Umesh_Kafle/postgresql-and-postgis-installation-in-mac-os-87fa98a6814d>
 
 <https://gist.github.com/clhenrick/ebc8dc779fb6f5ee6a88>
+
+<https://stackoverflow.com/search?q=+postgis+extension+docker> PostGIS Docker
+
 ```
 Common Spatial Queries
 You may view more of these in my intro to Visualizing Geospatial Data with CartoDB.
