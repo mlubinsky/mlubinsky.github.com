@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/company/oleg-bunin/blog/455248/>
 
+<https://stackoverflow.com/questions/56552852/how-to-store-arrays-of-points-x-y-color-inside-postgres-array>
+
 SELECT version();
 ```
 cat docker-compose.yml
