@@ -24,6 +24,18 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_info"
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_values"
   ```
+  
+##  DateTime
+SHOW datestyle;
+
+SET datestyle = "ISO, DMY";
+
+https://stackoverflow.com/questions/6123484/how-do-i-alter-the-date-format-in-postgres/6124387
+```
+Same outcome:
+select time from tracking where time < '2019-06-12 23:00';
+select time from tracking where time < '06-12-2019 23:00';
+```
 ### VIEW with parameters?
 
 set returning function:
