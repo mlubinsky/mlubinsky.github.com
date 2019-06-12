@@ -47,6 +47,11 @@ CREATE TABLE People2
   ]
 }
   select jsonb_array_elements_text(j->'points') from People2
+  select jsonb_array_elements_text((j->>'points')::jsonb) from People2;
+  Same outcome for 2 SQL's above:
+  
+  {"S": "standing", "X": 105, "Y": 118}
+  {"S": "standing", "X": 92, "Y": 139}
 ```  
   
 ### Arrays
