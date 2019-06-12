@@ -63,6 +63,8 @@ select * from widget_sb
 json_to_recordset 
 <https://www.reddit.com/r/PostgreSQL/comments/2u6ah3/how_to_use_json_to_recordset_on_json_stored_in_a/>
 
+CROSS JOIN LATERAL
+
 ```
 CREATE TABLE People2
 (
