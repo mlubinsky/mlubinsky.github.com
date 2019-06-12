@@ -26,6 +26,9 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
   ```
   
 ### JSON
+
+<https://www.w3resource.com/PostgreSQL/postgresql-json-functions-and-operators.php>
+
 ```
 CREATE TABLE People2
 (
