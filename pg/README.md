@@ -26,6 +26,15 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
   ```
   
 ### JSON
+```
+CREATE TABLE People2
+(
+  id serial,
+  room_id INTEGER, 
+  time  timestamp with time zone,
+  j JSONB
+);
+
 
 {
 "points" :
@@ -34,7 +43,8 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
      {"x":10, "y":20, "p":"Down"}
   ]
 }
-  
+  select jsonb_array_elements_text(j->'points') from People2
+```  
   
 ### Arrays
 ```
