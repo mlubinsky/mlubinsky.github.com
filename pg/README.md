@@ -24,10 +24,44 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_info"
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_values"
   ```
-  
+### VIEW with parameters?
+
+set returning function:
+```
+create or replace function label_params(parm1 text, parm2 text)
+  returns table (param_label text, param_graphics_label text)
+as
+$body$
+  select ...
+  WHERE region_label = $1 
+     AND model_id = (SELECT model_id FROM models WHERE model_label = $2)
+  ....
+$body$
+language sql;
+```
+Then you can do:
+
+select * . from label_params('foo', 'bar')
+
+
+In most cases the set-returning function is the way to go, but in the event that you want to both read and write to the set, a view may be more appropriate. And it is possible for a view to read a session parameter:
+
+CREATE VIEW widget_sb AS SELECT * FROM widget WHERE column = cast(current_setting('mydomain.myparam') as int)
+```
+SET mydomain.myparam = 0
+select * from widget_sb
+[results here]
+
+SET mydomain.myparam = 1
+select * from widget_sb
+[distinct results here]
+```
 ### JSON
 
 <https://www.w3resource.com/PostgreSQL/postgresql-json-functions-and-operators.php>
+
+json_to_recordset 
+<https://www.reddit.com/r/PostgreSQL/comments/2u6ah3/how_to_use_json_to_recordset_on_json_stored_in_a/>
 
 ```
 CREATE TABLE People2
