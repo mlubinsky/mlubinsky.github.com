@@ -24,6 +24,18 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_info"
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_values"
   ```
+  
+### JSON
+
+{
+"points" :
+  [ 
+     {"x":1, "y":2, "p":"Up"},
+     {"x":10, "y":20, "p":"Down"}
+  ]
+}
+  
+  
 ### Arrays
 ```
 CREATE TABLE people
