@@ -196,6 +196,8 @@ https://www.kaggle.com/learn/overview  Pandas, TensorFlow, etc
 ## Scikit-learn
 <https://medium.com/analytics-vidhya/scikit-learn-a-silver-bullet-for-basic-machine-learning-13c7d8b248ee>
 
+<https://habr.com/ru/post/456294/> One Hot Encoding
+
 <https://www.youtube.com/watch?v=L7R4HUQ-eQ0>
 
 <http://scikit-learn.org/stable/tutorial/>
