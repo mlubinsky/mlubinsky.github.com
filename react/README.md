@@ -1,8 +1,14 @@
 ## React
 
 <https://runjs.dev/>
+
 <https://github.com/facebook/create-react-app>
-<https://habr.com/ru/company/ruvds/blog/428077/>
+
+<https://habr.com/ru/post/441722/> React Hooks
+
+<https://habr.com/ru/company/ruvds/blog/428077/> 101
+
+<https://habr.com/ru/company/ruvds/blog/447134/> . 28 lectures translated 
 
 ```
 npx create-react-app my-app
