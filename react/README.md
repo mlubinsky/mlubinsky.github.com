@@ -1,11 +1,11 @@
 ## React
 
 <https://runjs.dev/>
-
+<https://github.com/facebook/create-react-app>
 <https://habr.com/ru/company/ruvds/blog/428077/>
 
 ```
-npm i -g create-react-app
+npx create-react-app
 create-react-app react-intro
 cd react-intro
 cat public/index.html
