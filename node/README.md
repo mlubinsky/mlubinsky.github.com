@@ -1,7 +1,7 @@
 ## Books
 <https://jscomplete.com/learn/node-beyond-basics>
-
-<<https://flaviocopes.com/> JS, Node, Express, React books>
+<https://habr.com/company/ruvds/blog/428576/> . PDF book
+<https://flaviocopes.com/> JS, Node, Express, React books>
 
 ## NodeJS in Docker
 
@@ -163,3 +163,49 @@ Similar to Next.js browser receives pre-rendered HTML code.
 
 ## How to prerender React App on Server
 <https://coffeencoding.com/prerender-react-app-for-seo-without-ssr-or-next-js/>
+
+
+
+
+https://nodehandbook.com/
+https://github.com/i0natan/nodebestpractices
+https://nodejs.org/en/docs/guides/
+nodejs.org/api/
+
+https://habr.com/post/430972/
+
+https://habr.com/company/ruvds/blog/425667/  several articles
+https://blog.bloomca.me/2018/06/21/nodejs-guide-for-frontend-developers.html
+https://metanit.com/web/nodejs/
+https://habrahabr.ru/company/ruvds/blog/322388/
+https://habrahabr.ru/company/jugru/blog/341070/
+https://habrahabr.ru/post/339870/
+https://habrahabr.ru/post/278017/
+https://habrahabr.ru/post/259987/
+https://blog.sessionstack.com/
+https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c
+
+https://medium.com/devschacht/node-hero-chapter-3-cae7333c7f3d
+```
+node --version
+node
+     >global      (like window in Chrome)
+     >process     (like document in Chrome)
+     >console.log(process.env);
+
+
+
+
+var addNote=() => {title, body};
+var removeNote=() => {title};
+module.exports={ addNote : addNote, removeNote: removeNote};  - the same as next line
+module.exports={ addNote, removeNote};
+
+
+NVM (node version manager) to install any version you want and switch between them. You can use it to uninstall versions too.
+https://github.com/creationix/nvm
+nvm install 8.3.0
+nvm use x.x.x
+
+```
+
