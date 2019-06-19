@@ -5,11 +5,21 @@
 <https://habr.com/ru/company/ruvds/blog/428077/>
 
 ```
-npx create-react-app
-create-react-app react-intro
-cd react-intro
+npx create-react-app my-app
+
+
+ls my-app/
+  README.md         
+  node_modules      
+  package-lock.json 
+  package.json      
+  public            
+  src
+
+cd my-app
 cat public/index.html
 
+unset HOST
 npm start
 
 At this moment go to URL: http://localhost:3000/
