@@ -31,6 +31,7 @@ Websockets connections can both send data to the browser and receive data from t
 <https://developer.ibm.com/tutorials/realtime-visitor-analysis-with-kafka/>
 
 ## SSE is part of the browser EventSource API
+<https://www.ably.io/concepts/server-sent-events>
 
 <https://en.wikipedia.org/wiki/Server-sent_events>
 
