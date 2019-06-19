@@ -5,6 +5,12 @@
 
 <https://flaviocopes.com/> JS, Node, Express, React books>
 
+## 101
+
+<https://habr.com/ru/post/435970/>
+
+<https://habr.com/ru/post/434962/> . You do not need Express for REST API
+
 ## NodeJS in Docker
 
 <https://habr.com/ru/company/ruvds/blog/454522/>
