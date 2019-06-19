@@ -11,6 +11,16 @@
 
 <https://habr.com/ru/company/ruvds/blog/440656/>
 
+
+## . NestJS
+Next.js предназначен, прежде всего, для серверного рендеринга, и привязан к React. 
+
+
+NestJS — для разработки бэкенда, с которым фронтенд общается через GraphQL или REST, 
+и ему все равно, как реализован фронтенд.
+
+<https://habr.com/ru/post/439434/>
+
 ## HTPP Server
 ```
 ls node_modules/http-server/
