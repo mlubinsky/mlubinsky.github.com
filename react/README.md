@@ -6,7 +6,9 @@
 
 <https://habr.com/ru/post/441722/> React Hooks
 
+## 101
 <https://habr.com/ru/company/ruvds/blog/428077/> 101
+<https://habr.com/ru/company/ruvds/blog/343022/> . 101
 
 <https://habr.com/ru/company/ruvds/blog/447134/> . 28 lectures translated 
 
