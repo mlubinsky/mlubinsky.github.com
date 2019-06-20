@@ -4,6 +4,16 @@
 
 <https://news.ycombinator.com/item?id=20007108> personal knowlaedge managers
 
+## English 
+
+<https://forvo.com/>
+
+<https://youglish.com/>
+
+
+## Best computer resources for startups 
+<https://news.ycombinator.com/item?id=20225118>
+
 <https://news.ycombinator.com/item?id=19939010>  DeepWork
 
 <http://sevakaplan.com/ru/home.htm> . Сева Каплан
