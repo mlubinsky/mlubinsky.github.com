@@ -125,7 +125,7 @@ Unite(X, Y) — объединить два множества, в которы�
 <https://www.jeffcarp.com/posts/2018-how-to-solve-every-software-engineering-interview-question/> 
 
 
-<https://habr.com/ru/post/457042/> . Tree traversal in parallel
+<https://habr.com/ru/post/457042/> . Tree traversal using 2 threads (Java)
 
 ## LCA
 <https://en.wikipedia.org/wiki/Lowest_common_ancestor>
