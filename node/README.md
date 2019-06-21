@@ -26,7 +26,7 @@
 <https://habr.com/ru/company/ruvds/blog/440656/>
 
 
-##  NestJS
+##  NestJS vs Next.js
 Next.js предназначен, прежде всего, для серверного рендеринга, и привязан к React. 
 
 
@@ -198,7 +198,12 @@ Similar to Next.js browser receives pre-rendered HTML code.
 <https://coffeencoding.com/prerender-react-app-for-seo-without-ssr-or-next-js/>
 
 
+## Links
 
+
+<https://habrahabr.ru/post/133363/>
+<https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html>
+<https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html>
 ```
 https://nodehandbook.com/
 https://github.com/i0natan/nodebestpractices
@@ -246,13 +251,14 @@ nvm use x.x.x
 
 ```
 
-<h2>NPM</h2>
+## NPM 
+```
 brew install node
 npm list -g
 ls -la /usr/local/lib/node_modules/npm
 
 ls /usr/local/lib/node_modules/npm/node_modules/
-```
+
 JSONStream			detect-newline			lazy-property			mkdirp				pacote				sorted-object
 abbrev				dezalgo				libcipm				move-concurrently		path-is-inside			sorted-union-stream
 ansi-regex			editor				libnpmhook			node-gyp			promise-inflight		ssri
@@ -274,7 +280,6 @@ config-chain			init-package-json		lru-cache			once				semver				wrappy
 debuglog			is-cidr				meant				opener				sha				write-file-atomic
 detect-indent			json-parse-better-errors	mississippi			osenv				slide
 
-```
 npmjs.com
 node -v
 npm --version
@@ -291,7 +296,4 @@ nodemon app.js   //will run node app.js every tyme when it updates
 
 npm install eslint -g
 eslint --init      // from project directory http://fullstackhumanoid.com/quick-eslint-set-up-with-google-airbnb-or-standard-rulesets/
-
-https://habrahabr.ru/post/133363/
-https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html
-https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html
+```
