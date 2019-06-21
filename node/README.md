@@ -26,7 +26,7 @@
 <https://habr.com/ru/company/ruvds/blog/440656/>
 
 
-## . NestJS
+##  NestJS
 Next.js предназначен, прежде всего, для серверного рендеринга, и привязан к React. 
 
 
@@ -199,7 +199,7 @@ Similar to Next.js browser receives pre-rendered HTML code.
 
 
 
-
+```
 https://nodehandbook.com/
 https://github.com/i0natan/nodebestpractices
 https://nodejs.org/en/docs/guides/
@@ -219,6 +219,10 @@ https://blog.sessionstack.com/
 https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c
 
 https://medium.com/devschacht/node-hero-chapter-3-cae7333c7f3d
+```
+
+
+
 ```
 node --version
 node
@@ -242,3 +246,52 @@ nvm use x.x.x
 
 ```
 
+<h2>NPM</h2>
+brew install node
+npm list -g
+ls -la /usr/local/lib/node_modules/npm
+
+ls /usr/local/lib/node_modules/npm/node_modules/
+```
+JSONStream			detect-newline			lazy-property			mkdirp				pacote				sorted-object
+abbrev				dezalgo				libcipm				move-concurrently		path-is-inside			sorted-union-stream
+ansi-regex			editor				libnpmhook			node-gyp			promise-inflight		ssri
+ansicolors			figgy-pudding			libnpx				nopt				qrcode-terminal			strip-ansi
+ansistyles			find-npm-prefix			lock-verify			normalize-package-data		query-string			tar
+aproba				fs-vacuum			lockfile			npm-audit-report		qw				text-table
+archy				fs-write-stream-atomic		lodash._baseindexof		npm-cache-filename		read				tiny-relative-date
+bin-links			gentle-fs			lodash._baseuniq		npm-install-checks		read-cmd-shim			uid-number
+bluebird			glob				lodash._bindcallback		npm-lifecycle			read-installed			umask
+byte-size			graceful-fs			lodash._cacheindexof		npm-package-arg			read-package-json		unique-filename
+cacache				has-unicode			lodash._createcache		npm-packlist			read-package-tree		unpipe
+call-limit			hosted-git-info			lodash._getnative		npm-pick-manifest		readable-stream			update-notifier
+chownr				iferr				lodash.clonedeep		npm-profile			readdir-scoped-modules		uuid
+cli-columns			imurmurhash			lodash.restparam		npm-registry-client		request				validate-npm-package-license
+cli-table2			inflight			lodash.union			npm-registry-fetch		retry				validate-npm-package-name
+cmd-shim			inherits			lodash.uniq			npm-user-validate		rimraf				which
+columnify			ini				lodash.without			npmlog				safe-buffer			worker-farm
+config-chain			init-package-json		lru-cache			once				semver				wrappy
+debuglog			is-cidr				meant				opener				sha				write-file-atomic
+detect-indent			json-parse-better-errors	mississippi			osenv				slide
+
+```
+npmjs.com
+node -v
+npm --version
+npm init
+
+npm install yargs@4.7.1   -- command line parser
+npm install lodash --save   //will a) put package in ./node_modules/ and b) add  it in package.json (this is because of --save)
+const _  = require ('lodash')
+
+npm install nodemon -g
+nodemon app.js   //will run node app.js every tyme when it updates
+
+./node_modules/.bin/webpack --watch
+
+npm install eslint -g
+eslint --init      // from project directory http://fullstackhumanoid.com/quick-eslint-set-up-with-google-airbnb-or-standard-rulesets/
+
+https://habrahabr.ru/post/133363/
+https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html
+https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html
