@@ -45,6 +45,8 @@
 ## ARIMA 
 <https://ru.wikipedia.org/wiki/ARIMA>
 
+<https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python>
+
 <http://people.duke.edu/~rnau/411arim.htm>
 
 <https://otexts.com/fpp2/arima.html>
