@@ -1,5 +1,7 @@
 ## React
 
+<https://www.youtube.com/watch?v=JyWBNefPvRk> . full course
+
 <https://runjs.dev/>
 
 <https://github.com/facebook/create-react-app>
