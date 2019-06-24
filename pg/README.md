@@ -24,7 +24,18 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_info"
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_values"
   ```
-  
+##
+```
+PostgreSQL NTILE Function
+PostgreSQL PERCENT_RANK Function
+PostgreSQL CUME_DIST Function
+PostgreSQL Sequences
+PostgreSQL LAG Function
+PostgreSQL LEAD Function
+PostgreSQL NTH_VALUE Function
+PostgreSQL LAST_VALUE Function
+PostgreSQL FIRST_VALUE Function
+```
 ##  DateTime
 
 <https://mode.com/blog/postgres-sql-date-functions>
