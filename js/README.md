@@ -14,6 +14,24 @@ If there is no index.html, then the files in the directory will be listed.
 
 <https://www.kirupa.com/tricks/billion_ways_display_svg.htm> . working with SVG
 
+
+## Async await
+any function called with await has to be a returning promise or created with async
+```
+const getData = async (url) => fetch(url);
+document
+  .querySelector('#submit')
+  .addEventListener('click', function() { 
+      // read data from DOM
+      const name = document.querySelector('#name').value;
+      // send to backend
+      const user = await fetch(`/users?name=${name}`);
+      const posts = await fetch(`/posts?userId=${user.id}`);
+      const comments = await fetch(`/comments?post=${posts[0].id}`);
+       
+  });
+```
+
 ## Web server for Chrome
 
 <https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en>
