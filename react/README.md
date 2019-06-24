@@ -1,6 +1,7 @@
 ## React
 
-<https://www.youtube.com/watch?v=JyWBNefPvRk> . full course
+<https://www.youtube.com/watch?v=JyWBNefPvRk> . full   
+<https://youtu.be/7vo5FBzJkKY>
 
 <https://runjs.dev/>
 
