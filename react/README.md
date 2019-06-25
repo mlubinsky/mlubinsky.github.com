@@ -1,6 +1,9 @@
 ## React
 
-<https://www.youtube.com/watch?v=JyWBNefPvRk> . full   
+<https://www.youtube.com/watch?v=JyWBNefPvRk> . 3 hour course from MS   
+
+<https://www.youtube.com/watch?v=-MlNBTSg_Ww>  hooks
+
 <https://youtu.be/7vo5FBzJkKY>
 
 <https://runjs.dev/>
