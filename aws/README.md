@@ -8,7 +8,13 @@ chmod 400 my-ec2-ssh-key.pem
  
  scp -i myAmazonKey.pem phpMyAdmin-3.4.5-all-languages.tar.gz ec2-user@mec2-50-17-16-67.compute-1.amazonaws.com:~/.
 
+
+## REST API
 <https://habr.com/post/435180/> Бессерверный REST API 
+
+## Lambda
+
+<https://habr.com/ru/post/457100/>
 
 <http://veekaybee.github.io/2018/09/24/the-case-of-the-broken-lambda/>
 
@@ -24,7 +30,7 @@ Lambda example
     ..
 ```
 
-https://www.expeditedssl.com/aws-in-plain-english
+<https://www.expeditedssl.com/aws-in-plain-english>
 
 <https://habr.com/post/421991/> free AWS
 
