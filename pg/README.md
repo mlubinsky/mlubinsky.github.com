@@ -152,10 +152,10 @@ insert into people (name, points) values (
 
 SELECT postgis_full_version();
 
-<http://postgis.refractions.net/docs/>
-<http://postgis.org/documentation/>
-<https://trac.osgeo.org/postgis/wiki/UsersWikiMain>
-<https://postgis.net/docs/>
+<http://postgis.refractions.net/docs/> \
+<http://postgis.org/documentation/> \
+<https://trac.osgeo.org/postgis/wiki/UsersWikiMain> \
+<https://postgis.net/docs/> \
 <http://postgis.net/workshops/postgis-intro/geometries.html#collections>
 
 ```
