@@ -150,6 +150,51 @@ insert into people (name, points) values (
 ``` 
 ### PostGIS
 
+SELECT postgis_full_version();
+
+<http://postgis.refractions.net/docs/>
+<http://postgis.org/documentation/>
+<https://trac.osgeo.org/postgis/wiki/UsersWikiMain>
+<https://postgis.net/docs/>
+<http://postgis.net/workshops/postgis-intro/geometries.html#collections>
+
+```
+4.1.3. SQL-MM Part 3
+The SQL Multimedia Applications Spatial specification extends the simple features for SQL spec by defining a number of circularly interpolated curves.
+
+The SQL-MM definitions include 3DM, 3DZ and 4D coordinates, but do not allow the embedding of SRID information.
+
+The Well-Known Text extensions are not yet fully supported. Examples of some simple curved geometries are shown below:
+
+CIRCULARSTRING(0 0, 1 1, 1 0)
+
+CIRCULARSTRING(0 0, 4 0, 4 4, 0 4, 0 0)
+
+The CIRCULARSTRING is the basic curve type, similar to a LINESTRING in the linear world. A single segment required three points, the start and end points (first and third) and any other point on the arc. The exception to this is for a closed circle, where the start and end points are the same. In this case the second point MUST be the center of the arc, ie the opposite side of the circle. To chain arcs together, the last point of the previous arc becomes the first point of the next arc, just like in LINESTRING. This means that a valid circular string must have an odd number of points greater than 1.
+
+COMPOUNDCURVE(CIRCULARSTRING(0 0, 1 1, 1 0),(1 0, 0 1))
+
+A compound curve is a single, continuous curve that has both curved (circular) segments and linear segments. That means that in addition to having well-formed components, the end point of every component (except the last) must be coincident with the start point of the following component.
+
+CURVEPOLYGON(CIRCULARSTRING(0 0, 4 0, 4 4, 0 4, 0 0),(1 1, 3 3, 3 1, 1 1))
+
+Example compound curve in a curve polygon: CURVEPOLYGON(COMPOUNDCURVE(CIRCULARSTRING(0 0,2 0, 2 1, 2 3, 4 3),(4 3, 4 5, 1 4, 0 0)), CIRCULARSTRING(1.7 1, 1.4 0.4, 1.6 0.4, 1.6 0.5, 1.7 1) )
+
+A CURVEPOLYGON is just like a polygon, with an outer ring and zero or more inner rings. The difference is that a ring can take the form of a circular string, linear string or compound string.
+
+As of PostGIS 1.4 PostGIS supports compound curves in a curve polygon.
+
+MULTICURVE((0 0, 5 5),CIRCULARSTRING(4 0, 4 4, 8 4))
+
+The MULTICURVE is a collection of curves, which can include linear strings, circular strings or compound strings.
+
+MULTISURFACE(CURVEPOLYGON(CIRCULARSTRING(0 0, 4 0, 4 4, 0 4, 0 0),(1 1, 3 3, 3 1, 1 1)),((10 10, 14 12, 11 10, 10 10),(11 11, 11.5 11, 11 11.5, 11 11)))
+
+This is a collection of surfaces, which can be (linear) polygons or curve polygons.
+```
+
+
+
 <https://postgis.net/docs/manual-2.5/postgis_installation.html#install_short_version>
 
 <https://medium.com/@Umesh_Kafle/postgresql-and-postgis-installation-in-mac-os-87fa98a6814d>
