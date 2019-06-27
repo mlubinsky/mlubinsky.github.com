@@ -160,17 +160,17 @@ SELECT postgis_full_version();
 
 ```
 4.1.3. SQL-MM Part 3
-The SQL Multimedia Applications Spatial specification extends the simple features for SQL spec by defining a number of circularly interpolated curves.
-
-The SQL-MM definitions include 3DM, 3DZ and 4D coordinates, but do not allow the embedding of SRID information.
-
-The Well-Known Text extensions are not yet fully supported. Examples of some simple curved geometries are shown below:
-
+The SQL Multimedia Applications Spatial specification extends the simple features for SQL spec by
+defining a number of circularly interpolated curves.
+The SQL-MM definitions include 3DM, 3DZ and 4D coordinates, 
+but do not allow the embedding of SRID information.
+The Well-Known Text extensions are not yet fully supported. 
+Examples of some simple curved geometries are shown below:
 CIRCULARSTRING(0 0, 1 1, 1 0)
-
 CIRCULARSTRING(0 0, 4 0, 4 4, 0 4, 0 0)
 
-The CIRCULARSTRING is the basic curve type, similar to a LINESTRING in the linear world. A single segment required three points, the start and end points (first and third) and any other point on the arc. The exception to this is for a closed circle, where the start and end points are the same. In this case the second point MUST be the center of the arc, ie the opposite side of the circle. To chain arcs together, the last point of the previous arc becomes the first point of the next arc, just like in LINESTRING. This means that a valid circular string must have an odd number of points greater than 1.
+The CIRCULARSTRING is the basic curve type, similar to a LINESTRING in the linear world. 
+A single segment required three points, the start and end points (first and third) and any other point on the arc. The exception to this is for a closed circle, where the start and end points are the same. In this case the second point MUST be the center of the arc, ie the opposite side of the circle. To chain arcs together, the last point of the previous arc becomes the first point of the next arc, just like in LINESTRING. This means that a valid circular string must have an odd number of points greater than 1.
 
 COMPOUNDCURVE(CIRCULARSTRING(0 0, 1 1, 1 0),(1 0, 0 1))
 
