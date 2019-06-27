@@ -348,6 +348,10 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 <https://ngoldbaum.github.io/posts/dynamic-programming/>
 
+<https://news.ycombinator.com/item?id=20285242>
+
+<https://avikdas.com/2019/06/24/dynamic-programming-for-machine-learning-hidden-markov-models.html>
+
 <https://avikdas.com/2019/04/15/a-graphical-introduction-to-dynamic-programming.html>
 
 <https://medium.freecodecamp.org/unmasking-bitmasked-dynamic-programming-25669312b77b>
