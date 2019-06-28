@@ -40,6 +40,9 @@ PostgreSQL FIRST_VALUE Function
 
 <https://mode.com/blog/postgres-sql-date-functions>
 
+<https://dba.stackexchange.com/questions/185192/join-2-tables-by-closest-time-postgresql-9-6>
+approximate time match
+
 SHOW datestyle;
 
 SET datestyle = "ISO, DMY";
@@ -49,6 +52,7 @@ https://stackoverflow.com/questions/6123484/how-do-i-alter-the-date-format-in-po
 Same outcome:
 select time from tracking where time < '2019-06-12 23:00';
 select time from tracking where time < '06-12-2019 23:00';
+
 ```
 ### VIEW with parameters?
 
