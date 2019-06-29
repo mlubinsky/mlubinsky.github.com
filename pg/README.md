@@ -394,6 +394,8 @@ SELECT ST_X(geom) as longitude, ST_Y(geom) as latitude FROM list_geom
 
 <http://postgrest.org/en/v5.2/api.html#binary-output>
 
+<https://gitter.im/begriffs/postgrest?source=all-rooms-list>
+
 <https://github.com/dbohdan/automatic-api/>
 
 PostgreSQL + PostgREST + react-admin == fantastic stack.
