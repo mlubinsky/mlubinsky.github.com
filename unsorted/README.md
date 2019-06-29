@@ -10,6 +10,8 @@
 
 <https://youglish.com/>
 
+<http://cartalana.org/067book-content.php>
+
 <https://medium.com/fantageek/improving-communication-english-pronunciation-108074236c80>
 
 ## Best computer resources for startups 
