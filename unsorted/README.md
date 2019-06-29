@@ -4,6 +4,10 @@
 
 <https://news.ycombinator.com/item?id=20007108> personal knowlaedge managers
 
+## San Francisco
+
+<https://andresol.livejournal.com/tag/sf>
+
 ## English 
 
 <https://forvo.com/>
