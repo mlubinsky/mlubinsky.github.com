@@ -16,6 +16,9 @@ If there is no index.html, then the files in the directory will be listed.
 
 
 ## Async await
+
+<https://tproger.ru/translations/understanding-async-await-in-javascript/>
+
 any function called with await has to be a returning promise or created with async
 ```
 const getData = async (url) => fetch(url);
