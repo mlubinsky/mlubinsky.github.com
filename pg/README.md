@@ -6,6 +6,8 @@
 
 <https://stackoverflow.com/questions/56552852/how-to-store-arrays-of-points-x-y-color-inside-postgres-array>
 
+<https://stackoverflow.com/questions/56863332/database-design-for-time-series>
+
 SELECT version();
 ```
 cat docker-compose.yml
