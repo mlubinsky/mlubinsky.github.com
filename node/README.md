@@ -27,6 +27,9 @@
 
 <https://habr.com/ru/company/ruvds/blog/440656/>
 
+## GraphQL
+
+<https://blog.bitsrc.io/migrating-existing-rest-apis-to-graphql-2c5de3db647d>
 
 ##  NestJS vs Next.js
 Next.js предназначен, прежде всего, для серверного рендеринга, и привязан к React. 
