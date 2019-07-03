@@ -23,6 +23,17 @@ git config -l
 git branch -a
 git branch -r
 
+git checkout -b <nameit>
+
+<h2> Keep forket in sync with upstream repo </h2>
+git remote -v
+git remote show origin
+git remote add upstream git@github.com:PelionProducts/space-optimizer.git
+git remote -v
+git fetch upstream
+git merge upstream/master
+
+
 
 Посмотреть, что я добавил в stage:
 git diff --cached
