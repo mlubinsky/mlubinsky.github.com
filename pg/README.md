@@ -2,6 +2,13 @@
 
 <https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres 12
 
+##  specify a password to psql non-interactively
+```
+PGPASSWORD=pass1234 psql -U MyUsername myDatabaseName
+
+docker run -e PGPASSWORD="$(pbpaste)" --rm postgres psql -h www.example.com dbname username -c 'SELECT * FROM table;'
+```
+
 <https://habr.com/ru/company/oleg-bunin/blog/455248/>
 
 <https://stackoverflow.com/questions/56552852/how-to-store-arrays-of-points-x-y-color-inside-postgres-array>
