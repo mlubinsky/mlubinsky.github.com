@@ -17,6 +17,8 @@ If there is no index.html, then the files in the directory will be listed.
 
 ## Async await
 
+<https://developers.google.com/web/fundamentals/primers/async-functions>
+
 <https://tproger.ru/translations/understanding-async-await-in-javascript/>
 
 <https://www.betamark.com/blog/mistakes-using-javascript-promises/>
