@@ -17,6 +17,13 @@ If there is no index.html, then the files in the directory will be listed.
 
 ## Async await
 
+ JavaScript  промисы.  озволяют заменить глубокую вложенность коллбэков словом .then.
+  async-функции работают «поверх» промисов. Эти функции не представляют собой качественно другие концепции. 
+
+<https://blog.bitsrc.io/understanding-javascript-async-and-await-with-examples-a010b03926ea>
+
+<https://habr.com/ru/company/skillbox/blog/458950/>
+
 <https://developers.google.com/web/fundamentals/primers/async-functions>
 
 <https://tproger.ru/translations/understanding-async-await-in-javascript/>
