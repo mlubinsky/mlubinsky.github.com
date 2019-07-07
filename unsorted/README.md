@@ -1,5 +1,13 @@
 <https://teach-in.ru> . lectures (physics and math) from Moscow State University
 
+<https://reut.livejournal.com/1291307.html> 
+
+• How To Be Charming Without Trying - на примере Эмилии Кларк
+• How To Turn Awkwardness Into Confidence - на примере Тома Холланда
+• 5 Common Habits That Make People Instantly Dislike You - на примере Бри Ларсон (и других "мстителей" в противовес)
+• How To Be The Coolest Guy In The Room - на примере Роберта Дауни и Криса Эванса
+
+
 <https://news.ycombinator.com/item?id=19521129> . How to learn new things
 
 <https://news.ycombinator.com/item?id=20007108> personal knowlaedge managers
