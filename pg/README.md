@@ -2,6 +2,10 @@
 
 <https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres 12
 
+## Time Series analysis with postgres
+
+<https://bytefish.de/blog/postgresql_interpolation/>
+
 ##  specify a password to psql non-interactively
 ```
 PGPASSWORD=pass1234 psql -U MyUsername myDatabaseName
