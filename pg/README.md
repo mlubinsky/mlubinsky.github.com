@@ -170,7 +170,7 @@ insert into people (name, points) values (
 SELECT postgis_full_version();
 
 <https://www.bostongis.com/PrinterFriendly.aspx?content_name=postgis_tut01>
-
+<https://www.youtube.com/watch?v=EBfjZgjyZmM>
 <http://postgis.refractions.net/docs/> \
 <http://postgis.org/documentation/> \
 <https://trac.osgeo.org/postgis/wiki/UsersWikiMain> \
