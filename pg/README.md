@@ -1,5 +1,10 @@
 ## Postgres
 
+## Explain plan
+
+<https://www.youtube.com/watch?v=IwahVdNboc8>
+
+
 <https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres 12
 
 ## Time Series analysis with postgres
