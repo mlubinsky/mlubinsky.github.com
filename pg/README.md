@@ -4,6 +4,7 @@
 
 <https://www.youtube.com/watch?v=IwahVdNboc8>
 
+<https://pganalyze.com/ebooks/optimizing-postgres-query-performance?utm_source=PostgresWeeklySecondary>
 
 <https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres 12
 
