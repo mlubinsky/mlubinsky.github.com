@@ -19,6 +19,20 @@
     ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'
 
 
+Run a long running script, but not if another copy of it is already running.
+
+FLOCK:
+https://linux.die.net/man/1/flock 
+
+flock(1) is not POSIX, though. mkdir(1) can be used if you absolutely want a POSIX way to manage locks. 
+For example:
+
+    if ! mkdir .lock; then
+        printf >&2 "Already running?\\n"
+        exit 1
+    fi
+Some network file system implementation do not guarantee atomic mkdir, so you still need an extra caution with this method.
+
 
 <h2> Script to automatically run file if timestamp changed</h2>
 
