@@ -659,6 +659,8 @@ https://towardsdatascience.com/building-a-custom-mask-rcnn-model-with-tensorflow
 
 <https://www.onvif.org/>
 
+<https://habr.com/ru/company/ivideon/blog/458954/>
+
 <https://securityrussia.com/blog/vms-vs-cms.html>
 
 <https://habr.com/ru/company/intems/blog/322634/>
