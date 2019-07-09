@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/company/ruvds/blog/440660/>
 
+<https://habr.com/ru/post/457870/>
+
 <https://awesome-docker.netlify.com/>
 
 <https://habr.com/ru/company/hh/blog/450954/> Java + Docker
