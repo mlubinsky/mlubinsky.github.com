@@ -125,6 +125,7 @@ https://habr.com/ru/company/mipt/blog/450732/ . Deep Learning for Computer Visio
 
 <https://arxiv.org/abs/1807.05511> . 
 
+<https://habr.com/ru/post/459088/> Point Clouds
 
 <https://habr.com/ru/post/444172/>
 
