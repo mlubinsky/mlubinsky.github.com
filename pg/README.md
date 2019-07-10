@@ -2,7 +2,7 @@
 Python
 <https://hakibenita.com/fast-load-data-python-postgresql>
 
-<https://news.ycombinator.com/item?id=20399294<
+<https://news.ycombinator.com/item?id=20399294>
 
 ## Explain plan
 
