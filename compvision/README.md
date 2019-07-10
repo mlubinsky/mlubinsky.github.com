@@ -1,6 +1,6 @@
 <https://github.com/videoflow/videoflow>
 
-<https://habr.com/ru/company/mipt/blog/458190/>
+<https://habr.com/ru/company/mipt/blog/458190/>  Вижу, значит существую: обзор Deep Learning в Computer Vision (часть 2)
 
 <https://www.dlology.com/blog/how-to-train-an-object-detection-model-easy-for-free/>
 
