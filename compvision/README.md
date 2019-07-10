@@ -1,4 +1,6 @@
-<https://github.com/videoflow/videoflow>]
+<https://github.com/videoflow/videoflow>
+
+<https://habr.com/ru/company/mipt/blog/458190/>
 
 <https://www.dlology.com/blog/how-to-train-an-object-detection-model-easy-for-free/>
 
