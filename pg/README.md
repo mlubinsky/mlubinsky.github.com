@@ -66,6 +66,8 @@ PostgreSQL FIRST_VALUE Function
 <https://dba.stackexchange.com/questions/185192/join-2-tables-by-closest-time-postgresql-9-6>
 approximate time match
 
+<https://habr.com/ru/company/postgrespro/blog/459236/> tsrange
+
 SHOW datestyle;
 
 SET datestyle = "ISO, DMY";
