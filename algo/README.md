@@ -4,6 +4,7 @@
 
 <https://habr.com/ru/post/450594/> Fibonachi
 
+<https://m.stopa.io/10-offers-100-days-the-journey-16a0407b8d95> interview
 <https://habr.com/ru/post/454264/> . Inteview
 
 <https://habr.com/ru/post/455260/> Merkel's tree
