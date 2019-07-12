@@ -1,5 +1,7 @@
 ## Python
 
+<https://gto76.github.io/python-cheatsheet/>
+
 How to start python http server:
 
 python -m SimpleHTTPServer <8000> (python2)
