@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://www.elementsofai.com/>
+
 <http://theprofessionalspoint.blogspot.com/2019/06/100-basic-deep-learning-interview.html>
 
 <https://github.com/rasbt/deeplearning-models> 
