@@ -63,6 +63,9 @@ server.listen(port, hostname, () => {
 ```
 
 ## Express
+
+<https://github.com/cdimascio/generator-express-no-stress>
+
 ```
 var express = require("express");
 
