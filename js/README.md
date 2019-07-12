@@ -19,6 +19,8 @@ If there is no index.html, then the files in the directory will be listed.
 
  JavaScript  промисы.  озволяют заменить глубокую вложенность коллбэков словом .then.
   async-функции работают «поверх» промисов. Эти функции не представляют собой качественно другие концепции. 
+  
+  <https://dev.to/ivanalejandro0/unraveling-callbacks-with-async-functions-5634>
 
 <https://blog.bitsrc.io/understanding-javascript-async-and-await-with-examples-a010b03926ea>
 
