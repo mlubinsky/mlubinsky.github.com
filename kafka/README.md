@@ -113,6 +113,8 @@ https://www.infoq.com/articles/traffic-data-monitoring-iot-kafka-and-spark-strea
        
 <https://www.confluent.io/blog/building-streaming-application-ksql/> . KSQL
 
+<https://talks.rmoff.net/9ih1WQ/building-stream-processing-applications-for-apache-kafka-using-ksql> KSQL
+
 http://highscalability.com/blog/2018/4/9/give-meaning-to-100-billion-events-a-day-the-analytics-pipel.html
 
 https://jeeconf.com/program/the-journey-from-queues-to-data-pipeline-streams/
