@@ -192,6 +192,8 @@ Username in "docker build" должен соответствовать тому,
 Это инструмент для простого определения и запуска многоконтейнерных Докер-приложений. 
 В нем есть файл docker-compose.yml, и с его помощью можно одной командой поднять приложение с набором сервисов.
  
+<https://habr.com/ru/post/459618/>
+
 <https://thoughts.theden.sh/post/docker-dev-env/>
 
 <https://habr.com/ru/post/454552/> 
