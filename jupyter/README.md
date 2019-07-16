@@ -2,6 +2,8 @@
 
 <https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python> free course
 
+<https://habr.com/ru/post/460321/> ML Notebooks
+
 <https://realpython.com/courses/idiomatic-pandas-tricks-features-you-may-not-know/>
 
 <https://habr.com/ru/company/mailru/blog/445834/>
