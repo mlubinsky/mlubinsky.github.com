@@ -159,6 +159,9 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 <https://overreacted.io/preparing-for-tech-talk-part-2-what-why-and-how/>
 
+## Audio books
+<https://news.ycombinator.com/item?id=20438302>
+
 ## Russian
 <http://www.audiopedia.su/>
 
