@@ -89,7 +89,9 @@ https://jpmens.net/2014/07/03/the-mosquitto-mqtt-broker-gets-websockets-support/
 
 ## MQTT plotting
 
-https://tinker.yeoman.com.au/2015/05/11/simple-browser-based-graphical-display-of-mqtt-data/
+<https://www.ably.io/concepts/mqtt>  MQTT overview
+
+<https://tinker.yeoman.com.au/2015/05/11/simple-browser-based-graphical-display-of-mqtt-data/>
 
 <http://www.mqtt-dashboard.com/metrics.html>
 
@@ -113,6 +115,10 @@ https://gist.github.com/vitormeriat/b6de7aa0a28af2b45f15c3d67721e051
 <https://blog.bitsrc.io/11-javascript-charts-and-data-visualization-libraries-for-2018-f01a283a5727>
 
 <https://habr.com/company/ruvds/blog/423983/>
+
+<https://frappe.io/charts>
+
+<https://medium.com/better-programming/modern-and-simple-charts-with-frappe-charts-c1b16244f8c>
 
 ## React plotting
 
