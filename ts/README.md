@@ -345,3 +345,5 @@ There are three basic criterion for a time series to understand whether it is st
 <http://www.johnwittenauer.net/machine-learning-exercises-in-python-part-8/>
 
 <https://en.wikipedia.org/wiki/Anomaly_detection>
+
+<https://lambda.grofers.com/anomaly-detection-using-isolation-forest-80b3a3d1a9d8> . Isolation Forest
