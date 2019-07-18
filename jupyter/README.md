@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/post/460321/> ML Notebooks
 
+<https://habr.com/ru/post/460445/> Signal Processing
+
 <https://realpython.com/courses/idiomatic-pandas-tricks-features-you-may-not-know/>
 
 <https://habr.com/ru/company/mailru/blog/445834/>
