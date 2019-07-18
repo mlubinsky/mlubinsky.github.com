@@ -2,6 +2,9 @@
 
 <https://habr.com/ru/company/mipt/blog/458190/>  Вижу, значит существую: обзор Deep Learning в Computer Vision (часть 2)
 
+<https://habr.com/ru/company/mailru/blog/460307/>
+
+
 <https://www.dlology.com/blog/how-to-train-an-object-detection-model-easy-for-free/>
 
 ## Image processing without NN
