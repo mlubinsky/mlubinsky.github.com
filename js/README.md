@@ -14,6 +14,7 @@ If there is no index.html, then the files in the directory will be listed.
 
 <https://www.kirupa.com/tricks/billion_ways_display_svg.htm> . working with SVG
 
+<https://habr.com/ru/post/460741/> ES6
 
 ## Async await
 
