@@ -2,6 +2,8 @@
 
 <https://gto76.github.io/python-cheatsheet/>
 
+<https://github.com/sharpden/python-infrastructure>
+
 How to start python http server:
 
 python -m SimpleHTTPServer <8000> (python2)
