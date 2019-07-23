@@ -2,6 +2,8 @@
 
 <https://medium.com/@vladimirkozhaev/antlr-an-informal-introduction-609f885a38f7> ANTLR
 
+<https://medium.com/@gvanrossum_83706/peg-parsers-7ed72462f97c> PEG
+
 <https://habr.com/ru/post/449616/> Fibonachi
 
 <https://habr.com/ru/post/450594/> Fibonachi
