@@ -1,4 +1,9 @@
 
+## BI tools: Poli, SuperSet, etc
+
+<https://github.com/shzlw/poli>
+
+<https://news.ycombinator.com/item?id=20507592> 
 
 ## Python plotting
 
