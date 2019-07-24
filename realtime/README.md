@@ -110,6 +110,8 @@ https://gist.github.com/vitormeriat/b6de7aa0a28af2b45f15c3d67721e051
 
 ## JS plotting libraries
 
+<https://selleo.com/blog/javascript-data-visualization-libraries-comparison-table>
+
 <https://www.codewall.co.uk/the-best-javascript-data-visualization-charting-libraries/>
 
 <https://blog.bitsrc.io/11-javascript-charts-and-data-visualization-libraries-for-2018-f01a283a5727>
