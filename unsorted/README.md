@@ -7,6 +7,7 @@
 • 5 Common Habits That Make People Instantly Dislike You - на примере Бри Ларсон (и других "мстителей" в противовес)
 • How To Be The Coolest Guy In The Room - на примере Роберта Дауни и Криса Эванса
 
+<https://www.julian.com/blog/mental-model-examples> Mental models
 
 <https://news.ycombinator.com/item?id=19521129> . How to learn new things
 
