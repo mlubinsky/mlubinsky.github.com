@@ -1,5 +1,10 @@
 <https://teach-in.ru> . lectures (physics and math) from Moscow State University
 
+## Browser extension for JSON: JsonDiscovery
+<https://habr.com/ru/post/461185/> 
+https://github.com/discoveryjs/browser-extension-json-discovery
+
+
 <https://reut.livejournal.com/1291307.html> 
 
 • How To Be Charming Without Trying - на примере Эмилии Кларк
