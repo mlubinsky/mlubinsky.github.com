@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/company/piter/blog/461283/> System Design
 
+<https://www.youtube.com/watch?v=ZgdS0EUmn70>
+
 <https://habr.com/ru/post/454668/>
 ```
 важно разделить бизнес-требования и функциональные требования
