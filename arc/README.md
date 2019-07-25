@@ -2,6 +2,8 @@
 
 <https://blog.pragmaticengineer.com/operating-a-high-scale-distributed-system/>
 
+<https://habr.com/ru/company/piter/blog/461283/> System Design
+
 <https://habr.com/ru/post/454668/>
 ```
 важно разделить бизнес-требования и функциональные требования
