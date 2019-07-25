@@ -10,6 +10,7 @@
 <https://nesslabs.com/mental-models>
 <https://news.ycombinator.com/item?id=20524616>
 <https://www.julian.com/blog/mental-model-examples> 
+<https://habr.com/ru/company/mipt/blog/461193/> . когнитивные искажения
 
 <https://news.ycombinator.com/item?id=19521129> . How to learn new things
 
