@@ -1,5 +1,7 @@
 <https://github.com/videoflow/videoflow>
 
+<https://habr.com/ru/post/461365/> compvision
+
 <https://habr.com/ru/company/mipt/blog/458190/>  Вижу, значит существую: обзор Deep Learning в Computer Vision (часть 2)
 
 <https://habr.com/ru/company/mailru/blog/460307/>
