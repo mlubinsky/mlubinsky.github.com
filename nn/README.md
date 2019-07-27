@@ -2,6 +2,8 @@
 
 <https://www.elementsofai.com/>
 
+<https://medium.com/tensorflow/mit-deep-learning-basics-introduction-and-overview-with-tensorflow-355bcd26baf0>
+
 <http://theprofessionalspoint.blogspot.com/2019/06/100-basic-deep-learning-interview.html>
 
 <https://github.com/rasbt/deeplearning-models> 
