@@ -2,7 +2,7 @@
 
 <https://dbngin.com/> . Free All-in-One Database Version Management Tool
 
-
+<https://chrome.google.com/webstore/detail/web-sniffer/ndfgffclcpdbgghfgkmooklaendohaef?hl=en> Web Sniffer Chrome extension
 
 <https://zenworkpro.com/2018/08/14/computer-ergonomics-useful-tips-for-working-in-macos>
 
