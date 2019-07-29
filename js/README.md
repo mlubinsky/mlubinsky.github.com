@@ -261,8 +261,9 @@ const adults = people.filter(person => person.age > 16);
 
 Sort   -   Array.prototype.sort destructively modifies the array
     [1,2,4,3].sort( ( a, b ) => a - b )
-
-<h2>Arrow functions</h2>
+```
+## Arrow functions
+```
 var a = [
   "We're up all night 'til the sun",
   "We're up all night to get some",
