@@ -57,8 +57,138 @@ var c = doMath(multiply, 6, 7);
 
 <https://dev.to/studnitz/grouping-an-array-of-objects-by-key-pnp>
 
+## Fetch API
+```
+<script>
+function json2table(json, classes){
+  console.log("inside json2table");
+  console.log(json)
+  name="tasks"
+  var cols = Object.keys(json[name][0]);   // keys from 1st object in array
+  var headerRow = '';
+  var bodyRows = '';
+  classes = classes || '';
+
+  cols.map(function(col) {
+       headerRow += '<th>' + col + '</th>';
+   });
+
+  json[name].map(function(row) {
+       bodyRows += '<tr>';
+       //  Loop over object properties and create cells
+       cols.map(function(colName) {
+            bodyRows += '<td>' + row[colName] + '<td>';
+       });
+      bodyRows += '</tr>';
+   });
+
+  return '<table class=' +
+       classes +
+       '><thead><tr>' +
+       headerRow +
+       '</tr></thead><tbody>' +
+       bodyRows +
+       '</tbody></table>';
+};
+/********************/
+function myFunc() {
+ alert("myFunc Started");
+ url="http://localhost:5000/todo/api/v1.0/tasks"
+ fetch(url)
+  .then(response => {
+    console.log(response.status)
+    if (response.ok) {
+      console.log("OK")
+      console.log(response)
+      return response.json()
+    } else {
+      console.log("ERR")
+           /* 
+             alert("myFunc ERROR");
+             return Promise.reject({
+                   status: response.status,
+                  statusText: response.statusText
+              })
+           */
+    }
+  });
+
+  .then(data => {
+      console.log("data:")
+      console.log(data);
+      table = json2table(data);
+      document.getElementById('tableHolder').innerHTML=table;
+  })
+  .catch(error => {
+    console.log("ERR code "+ error.status)
+  });
+
+}  
+</script>  
+```
+
 ## Code
 ```
+let arr = [2, 56, 3, 41, 0, 4, 100, 23];
+let sum = arr.reduce((previous, current) => current += previous);
+let sum2 = arr.reduce(function(accumulator, currentValue) { return accumulator + currentValue;});
+let sum3 = values.reduce(function(sum, value){ return sum + value;}, 0);
+let avg = sum / arr.length;
+
+
+var min = arr.reduce(function(a, b, i, arr) {return Math.min(a,b)});
+var max = arr.reduce(function(a, b, i, arr) {return Math.max(a,b)});
+
+Standard deviation: step 1
+var diffs = arr.map(function(value){
+  var diff = value - avg;
+  return diff;
+});
+
+
+var squareDiffs = values.map(function(value){
+  var diff = value - avg;
+  var sqr = diff * diff;
+  return sqr;
+});
+
+function average(data){
+  var sum = data.reduce(function(sum, value){
+    return sum + value;
+  }, 0);
+
+  var avg = sum / data.length;
+  return avg;
+}
+
+var avgSquareDiff = average(squareDiffs);
+var stdDev = Math.sqrt(avgSquareDiff);
+
+-------
+
+function standardDeviation(values){
+  var avg = average(values);
+
+  var squareDiffs = values.map(function(value){
+    var diff = value - avg;
+    var sqrDiff = diff * diff;
+    return sqrDiff;
+  });
+
+  var avgSquareDiff = average(squareDiffs);
+
+  var stdDev = Math.sqrt(avgSquareDiff);
+  return stdDev;
+}
+
+function average(data){
+  var sum = data.reduce(function(sum, value){
+    return sum + value;
+  }, 0);
+
+  var avg = sum / data.length;
+  return avg;
+}
 
 -- old style:
 var myArray = [1, 2, 3, 4, 5, 6]
