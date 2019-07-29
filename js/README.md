@@ -16,6 +16,45 @@ If there is no index.html, then the files in the directory will be listed.
 
 <https://habr.com/ru/post/460741/> ES6
 
+var status = flight.status || "unknown";
+
+## JS coding standarts
+
+<https://blog.back4app.com/2019/07/22/javascript-coding-standards/>
+
+## Array operations
+
+<https://devinduct.com/cheatsheet/8/array-operations>
+
+## Immutable object
+<https://ultimatecourses.com/blog/all-about-immutable-arrays-and-objects-in-javascript>
+
+## functional programming 
+<https://www.codeproject.com/Articles/5163009/Functional-Programming-In-JavaScript-By-Example>
+
+## bind call apply
+<https://medium.com/@abhikulshrestha22/difference-between-bind-call-and-apply-ffe768bbc307>
+
+## map reduce filter
+<https://medium.com/sanjagh/iterating-over-javascript-objects-declaratively-or-how-to-map-filter-and-reduce-on-objects-d179cd40d935>
+
+## Passing function as parameters
+<https://pietschsoft.com/post/2019/07/24/call-functions-in-javascript>
+```
+function multiply(a, b) {
+    return = a * b;
+}
+
+function doMath(operation, a, b) {
+    return operation(a, b);
+}
+var c = doMath(multiply, 6, 7);
+```
+
+## Group By
+
+<https://dev.to/studnitz/grouping-an-array-of-objects-by-key-pnp>
+
 ## Async await
 
  JavaScript  промисы.  озволяют заменить глубокую вложенность коллбэков словом .then.
