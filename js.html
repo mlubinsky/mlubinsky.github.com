@@ -89,6 +89,52 @@ https://github.com/getify/Functional-Light-JS .   BOOK
 
 https://nodered.org/ flow based programming for IoT
 
+
+Primitive types: 
+  Boolean, Null, Undefined, Number, BigInt, String, Symbol 
+Strings, booleans, numbers, null and undefined: all of those are immutable. 
+
+Object types: 
+Object, Array, Date, 
+many others: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Objects
+
+https://nick.scialli.me/object-assignment-for-beginners/
+
+IIFE (Immediately Invoked Function Expression)
+ It is immediately executed and never ever in the future it is accessed by the program again. Since it is not called again, 
+ it doesn’t need a name, so an anonymous function expression is preferred for IIFE.
+( function () {
+        let num = 4
+        return num
+    })
+//4
+
+<h2>Generator Function </h2>
+can be stopped midway through execution. When it is called back it continues from where it stopped.
+
+It is declared like a normal function but with the difference that generator function has an asterisk * after the function keyword and any number of spaces can be included between them.
+One more thing to note: in JavaScript a generator is a function which returns an object on which you can call next(). Every invocation of next() will return an object with a structure like this:
+
+function * generatorFunction()
+{ 
+  console.log('first to execute');
+  yield 'takes a pause';  
+  
+  console.log(' printed after the pause');  
+  yield 'end of the function';
+  
+}
+const gen = generatorFunction();
+
+console.log(gen.next().value);          // first to execute
+                                        // takes a pause
+
+console.log(gen.next().value);         //  printed after the pause
+                                       // end of the function
+
+console.log(gen.next().value);            
+                                      // undefined
+
 <h2>Design patterns</h2>
 https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns
 https://able.bio/drenther/javascript-design-patterns--89mv2af
