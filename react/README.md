@@ -2,7 +2,9 @@
 
 <https://www.youtube.com/watch?v=JyWBNefPvRk> . 3 hour course from MS   
 
-<https://www.youtube.com/watch?v=-MlNBTSg_Ww>  hooks
+<https://redwerk.com/blog/core-concepts-of-state-in-react-js-and-why-to-use-it>
+
+
 
 <https://youtu.be/7vo5FBzJkKY>
 
@@ -11,6 +13,10 @@
 <https://github.com/facebook/create-react-app>
 
 <https://habr.com/ru/post/441722/> React Hooks
+
+## Hooks
+<https://www.youtube.com/watch?v=-MlNBTSg_Ww>  hooks
+
 
 ## 101
 <https://habr.com/ru/company/ruvds/blog/428077/> 101
