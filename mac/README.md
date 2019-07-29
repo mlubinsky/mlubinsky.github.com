@@ -58,6 +58,34 @@ If you'd prefer that conda's base environment not be activated on startup,
 conda config --set auto_activate_base false
 
 Thank you for installing Anaconda3!
+
+
+
+conda create --name deepCognition
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /Users/miclub01/anaconda3/envs/deepCognition
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate deepCognition
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) [arm-space-analytics](master)$ conda activate deepCognition
+(deepCognition) [arm-space-analytics](master)$
+
 ```
 
 
