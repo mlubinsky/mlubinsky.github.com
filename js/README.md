@@ -57,6 +57,112 @@ var c = doMath(multiply, 6, 7);
 
 <https://dev.to/studnitz/grouping-an-array-of-objects-by-key-pnp>
 
+## Code
+```
+
+-- old style:
+var myArray = [1, 2, 3, 4, 5, 6]
+var add = function (a, b) {  return a + b;};
+var getTotal = function (arr) { return arr.reduce(add, 0);};
+getTotal(myArray); // => 21
+
+-- modern style :
+const myArray = [1, 2, 3, 4, 5, 6]
+const add = (a, b) => a + b;
+const getTotal = (arr) => arr.reduce(add, 0);
+getTotal(myArray); // => 21
+
+---  reduce
+const oldest = people.reduce((acc, person) =>  person.age > acc.age ? person : acc);
+
+const data = []
+for (let x = 1; x <= 100000; x++) {
+  data.push({ x: x, y: Math.floor(Math.random() * (1000000)) })
+}
+
+function getMinY() {
+  return data.reduce((min, p) => p.y < min ? p.y : min, data[0].y);
+}
+function getMaxY() {
+  return data.reduce((max, p) => p.y > max ? p.y : max, data[0].y);
+}
+
+function getYs(){
+  return data.map(d => d.y);
+}
+function getMinY(){
+  return Math.min(...getYs());
+}
+function getMaxY(){
+  return Math.max(...getYs());
+}
+--- another implementation
+function getMinY(){
+  return data.reduce((min, b) => Math.min(min, b.y), data[0].y);
+}
+function getMaxY(){
+  return data.reduce((max, b) => Math.max(max, b.y), data[0].y);
+}
+----  fast implementation
+function findMinMax(arr) {
+  let min = arr[0].y, max = arr[0].y;
+
+  for (let i = 1, len=arr.length; i < len; i++) {
+    let v = arr[i].y;
+    min = (v < min) ? v : min;
+    max = (v > max) ? v : max;
+  }
+
+  return [min, max];
+}
+
+
+------- Aray Filter ---------
+ Grab unique
+    [1,1,2,3,4].filter( ( item, index, array ) => array.indexOf( item ) === index )
+    // => [1,2,3,4]
+
+const adults = people.filter(person => person.age > 16);
+
+
+ Flatten
+    [[1,2],[3,4]].reduce( ( result, item ) => result.concat(item), [] );
+    // => [1,2,3,4]
+
+Sort   -   Array.prototype.sort destructively modifies the array
+    [1,2,4,3].sort( ( a, b ) => a - b )
+
+<h2>Arrow functions</h2>
+var a = [
+  "We're up all night 'til the sun",
+  "We're up all night to get some",
+  "We're up all night for good fun",
+  "We're up all night to get lucky"
+];
+
+// These two assignments are equivalent:
+
+1) Old-school without arrow function:
+var a2 = a.map(function(s){ return s.length });
+
+2) ECMAscript 6 using arrow functions:
+var a3 = a.map( s => s.length );
+
+Both a2 and a3 will be equal to [31, 30, 31, 31]
+
+var numbers = [1, 5, 10, 15];
+var doubles = numbers.map((x) => {  return x * 2;});
+var roots = numbers.map(Math.sqrt);
+var words = ["spray", "limit", "elite", "exuberant", "destruction", "present"];
+var longWords = words.filter(word => word.length > 6);
+var total = [0, 1, 2, 3].reduce((sum, value) => {  return sum + value;}, 0);
+// total is 6
+
+var flattened = [[0, 1], [2, 3], [4, 5]].reduce((a, b) => {return a.concat(b);}, []);
+// flattened is [0, 1, 2, 3, 4, 5]
+
+```
+
 ## Async await
 
  JavaScript  промисы.  озволяют заменить глубокую вложенность коллбэков словом .then.
