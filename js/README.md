@@ -24,6 +24,15 @@ var status = flight.status || "unknown";
 
 ## Array operations
 
+Array.map, Array.reduce, Array.filter, Array.sort, Object.keys, Object.values.
+https://habr.com/ru/company/plarium/blog/446902/
+https://zellwk.com/blog/callbacks/
+https://zellwk.com/blog/js-promises/
+https://zellwk.com/blog/es6/
+http://zabanaa.github.io/notes/functional-programming-and-javascript-arrays.html
+https://stackoverflow.com/questions/24900875/whats-the-meaning-of-an-arrow-formed-from-equals-greater-than-in-javas
+https://news.ycombinator.com/item?id=14916731   This in JS
+
 <https://devinduct.com/cheatsheet/8/array-operations>
 
 <https://medium.com/better-programming/3-different-ways-to-combine-arrays-in-javascript-b273c9225e0d>
@@ -58,6 +67,14 @@ var c = doMath(multiply, 6, 7);
 <https://dev.to/studnitz/grouping-an-array-of-objects-by-key-pnp>
 
 ## Fetch API
+
+<https://css-tricks.com/using-fetch/>
+<https://www.sitepoint.com/xmlhttprequest-vs-the-fetch-api-whats-best-for-ajax-in-2019/>
+<https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch>
+<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data>
+<https://stackoverflow.com/questions/35549547/what-is-the-difference-between-the-fetch-api-and-xmlhttprequest>
+<https://medium.com/@shahata/why-i-wont-be-using-fetch-api-in-my-apps-6900e6c6fe78>
+
 ```
 <script>
 function json2table(json, classes){
@@ -294,7 +311,12 @@ var flattened = [[0, 1], [2, 3], [4, 5]].reduce((a, b) => {return a.concat(b);},
 
 ```
 
-## Async await
+## Async await promises
+
+<https://www.tutespace.com/2019/06/javascript-difference-between-promises.html>
+<https://blog.patricktriest.com/what-is-async-await-why-should-you-care/>
+<https://www.youtube.com/watch?v=14hS7f8gyiw&feature=youtu.be>
+
 
  JavaScript  промисы.  озволяют заменить глубокую вложенность коллбэков словом .then.
   async-функции работают «поверх» промисов. Эти функции не представляют собой качественно другие концепции. 
