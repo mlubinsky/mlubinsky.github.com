@@ -61,19 +61,10 @@ Thank you for installing Anaconda3!
 
 
 
-conda create --name deepCognition
-Collecting package metadata (current_repodata.json): done
-Solving environment: done
 
-## Package Plan ##
+python -V .    Python 3.7.3
+conda create --name deepCognition python=3.7.3
 
-  environment location: /Users/miclub01/anaconda3/envs/deepCognition
-
-Proceed ([y]/n)? y
-
-Preparing transaction: done
-Verifying transaction: done
-Executing transaction: done
 #
 # To activate this environment, use
 #
@@ -85,6 +76,11 @@ Executing transaction: done
 
 (base) [arm-space-analytics](master)$ conda activate deepCognition
 (deepCognition) [arm-space-analytics](master)$
+
+
+conda activate deepCognition
+pip -V
+pip 19.1.1 from /Users/miclub01/anaconda3/envs/deepCognition/lib/python3.7/site-packages/pip (python 3.7)
 
 ```
 
