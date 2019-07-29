@@ -24,6 +24,42 @@ https://github.com/vsaravind007/nodeScratchpad   Run JS code snippets
 
 <https://towardsdatascience.com/how-to-successfully-install-anaconda-on-a-mac-and-actually-get-it-to-work-53ce18025f97>
 
+```
+bash ./Anaconda3-2019.07-MacOSX-x86_64.sh
+
+Preparing transaction: done
+Executing transaction: \ b''
+| WARNING conda.core.envs_manager:register_env(46): Unable to register environment. Path not writable or missing.
+  environment location: /Users/miclub01/anaconda3
+  registry file: /Users/miclub01/.conda/environments.txt
+done
+installation finished.
+Do you wish the installer to initialize Anaconda3
+by running conda init? [yes|no]
+[yes] >>> yes
+no change     /Users/miclub01/anaconda3/condabin/conda
+no change     /Users/miclub01/anaconda3/bin/conda
+no change     /Users/miclub01/anaconda3/bin/conda-env
+no change     /Users/miclub01/anaconda3/bin/activate
+no change     /Users/miclub01/anaconda3/bin/deactivate
+no change     /Users/miclub01/anaconda3/etc/profile.d/conda.sh
+no change     /Users/miclub01/anaconda3/etc/fish/conf.d/conda.fish
+no change     /Users/miclub01/anaconda3/shell/condabin/Conda.psm1
+no change     /Users/miclub01/anaconda3/shell/condabin/conda-hook.ps1
+no change     /Users/miclub01/anaconda3/lib/python3.7/site-packages/xontrib/conda.xsh
+no change     /Users/miclub01/anaconda3/etc/profile.d/conda.csh
+modified      /Users/miclub01/.bash_profile
+
+==> For changes to take effect, close and re-open your current shell. <==
+
+If you'd prefer that conda's base environment not be activated on startup,
+   set the auto_activate_base parameter to false:
+
+conda config --set auto_activate_base false
+
+Thank you for installing Anaconda3!
+```
+
 
 ### Color command line
 <https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/>
