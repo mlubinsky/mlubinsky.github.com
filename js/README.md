@@ -26,6 +26,8 @@ var status = flight.status || "unknown";
 
 <https://devinduct.com/cheatsheet/8/array-operations>
 
+<https://medium.com/better-programming/3-different-ways-to-combine-arrays-in-javascript-b273c9225e0d>
+
 ## Immutable object
 <https://ultimatecourses.com/blog/all-about-immutable-arrays-and-objects-in-javascript>
 
