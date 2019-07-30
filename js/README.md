@@ -25,13 +25,14 @@ var status = flight.status || "unknown";
 ## Array operations
 
 Array.map, Array.reduce, Array.filter, Array.sort, Object.keys, Object.values.
-https://habr.com/ru/company/plarium/blog/446902/
-https://zellwk.com/blog/callbacks/
-https://zellwk.com/blog/js-promises/
-https://zellwk.com/blog/es6/
-http://zabanaa.github.io/notes/functional-programming-and-javascript-arrays.html
-https://stackoverflow.com/questions/24900875/whats-the-meaning-of-an-arrow-formed-from-equals-greater-than-in-javas
-https://news.ycombinator.com/item?id=14916731   This in JS
+<https://habr.com/ru/company/plarium/blog/446902/> 
+<https://zellwk.com/blog/callbacks/> 
+<https://zellwk.com/blog/js-promises/> 
+<https://zellwk.com/blog/es6/> 
+<http://zabanaa.github.io/notes/functional-programming-and-javascript-arrays.html> 
+<https://stackoverflow.com/questions/24900875/whats-the-meaning-of-an-arrow-formed-from-equals-greater-than-in-javas>
+
+<https://news.ycombinator.com/item?id=14916731>  This in JS
 
 <https://devinduct.com/cheatsheet/8/array-operations>
 
@@ -313,13 +314,13 @@ var flattened = [[0, 1], [2, 3], [4, 5]].reduce((a, b) => {return a.concat(b);},
 
 ## Async await promises
 
-<https://www.tutespace.com/2019/06/javascript-difference-between-promises.html>
-<https://blog.patricktriest.com/what-is-async-await-why-should-you-care/>
-<https://www.youtube.com/watch?v=14hS7f8gyiw&feature=youtu.be>
+<https://www.tutespace.com/2019/06/javascript-difference-between-promises.html> 
+<https://blog.patricktriest.com/what-is-async-await-why-should-you-care/> 
+<https://www.youtube.com/watch?v=14hS7f8gyiw&feature=youtu.be> 
+<https://101node.io/blog/how-promises-actually-work-inside-out/> 
 
-
- JavaScript  промисы.  озволяют заменить глубокую вложенность коллбэков словом .then.
-  async-функции работают «поверх» промисов. Эти функции не представляют собой качественно другие концепции. 
+ JavaScript  промисы.  озволяют заменить глубокую вложенность коллбэков словом .then. 
+ async-функции работают «поверх» промисов. Эти функции не представляют собой качественно другие концепции. 
   
   <https://dev.to/ivanalejandro0/unraveling-callbacks-with-async-functions-5634>
 
