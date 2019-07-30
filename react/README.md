@@ -4,7 +4,7 @@
 
 <https://redwerk.com/blog/core-concepts-of-state-in-react-js-and-why-to-use-it>
 
-
+<https://scotch.io/starters/react/getting-started-with-react-2019-edition>
 
 <https://youtu.be/7vo5FBzJkKY>
 
