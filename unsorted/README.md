@@ -190,6 +190,10 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
  
 <https://github.com/morhetz/gruvbox/wiki/Installation>   Color sheme gruvebox
 
+## VisualStudio Code + JavaScript
+
+<https://habr.com/ru/company/tinkoff/blog/461737/>
+
 ## VisualStudio Code + Java
 <https://flaviocopes.com/vscode/>
 
