@@ -7,6 +7,7 @@ Python
 ## Scaling Postgres
 <https://medium.com/avitotech/standby-in-production-scaling-application-in-second-largest-classified-site-in-the-world-97a79a1929de
 >
+<https://habr.com/ru/post/461997/> performance
 ## Explain plan
 
 <https://www.youtube.com/watch?v=IwahVdNboc8>
