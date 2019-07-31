@@ -10,6 +10,10 @@ Python
 <https://eggerapps.at/postico/> Postico 
 <https://tableplus.io/> TablePlus
 
+## SQL
+
+<http://postgres-bits.herokuapp.com/#1>
+
 ## Scaling Postgres
 <https://medium.com/avitotech/standby-in-production-scaling-application-in-second-largest-classified-site-in-the-world-97a79a1929de
 >
