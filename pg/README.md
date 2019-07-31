@@ -1,8 +1,13 @@
 ## Postgres
 Python
+<https://www.pgcli.com/> pgcli instead psql
 <https://hakibenita.com/fast-load-data-python-postgresql>
 
 <https://news.ycombinator.com/item?id=20399294>
+
+## UI Client 
+Postico
+TableOne
 
 ## Scaling Postgres
 <https://medium.com/avitotech/standby-in-production-scaling-application-in-second-largest-classified-site-in-the-world-97a79a1929de
