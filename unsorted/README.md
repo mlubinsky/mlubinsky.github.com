@@ -1,16 +1,13 @@
 <https://teach-in.ru> . lectures (physics and math) from Moscow State University
 
+<https://openedu.ru/>
+
 ## Browser extension for JSON: JsonDiscovery
 <https://habr.com/ru/post/461185/> 
-https://github.com/discoveryjs/browser-extension-json-discovery
+
+<https://github.com/discoveryjs/browser-extension-json-discovery>
 
 
-<https://reut.livejournal.com/1291307.html> 
-
-• How To Be Charming Without Trying - на примере Эмилии Кларк
-• How To Turn Awkwardness Into Confidence - на примере Тома Холланда
-• 5 Common Habits That Make People Instantly Dislike You - на примере Бри Ларсон (и других "мстителей" в противовес)
-• How To Be The Coolest Guy In The Room - на примере Роберта Дауни и Криса Эванса
 ## Mental models
 <https://nesslabs.com/mental-models>
 <https://news.ycombinator.com/item?id=20524616>
@@ -47,15 +44,10 @@ https://github.com/discoveryjs/browser-extension-json-discovery
 <https://www.youtube.com/channel/UCbNOH-KWkyuXHQE0a-0MsZw> Vicktor Lega
 
 
-## Life 
-<https://news.ycombinator.com/item?id=19650044> Life Advices
 
-<https://news.ycombinator.com/item?id=19770527> What is Love
 
 ##  Tools
 <https://github.com/repeats/Repeat> Repeat It- like AutoKey
-
-<https://www3.nd.edu/~dthain/compilerbook/> .  Compiler Book
 
 
 <https://kroki.io/> convert plain text diagram to images Kroki provides a unified API with support for BlockDiag (BlockDiag, SeqDiag, ActDiag, NwDiag), C4 (with PlantUML), Ditaa, Erd, GraphViz, Mermaid, Nomnoml, PlantUML, SvgBob and UMLet... and more to come!
@@ -90,17 +82,30 @@ Live calculation in browser
 ## Business
 <http://aynuriev.com/how-to-register-company-usa/>
 
+<https://www.reddit.com/r/programming/comments/aeweqw/netflix_software_engineers_earn_a_salary_of_more/>
+
+<https://news.ycombinator.com/item?id=19164037> small businnes ideas
+
 <https://news.ycombinator.com/item?id=19698151>
 
 ## Be Happy
+ 
+<https://news.ycombinator.com/item?id=19650044> Life Advices
+
+<https://news.ycombinator.com/item?id=19770527> What is Love
 
 <https://news.ycombinator.com/item?id=19087418> important books
 
 <https://www.youtube.com/user/lilmodtorah/videos> let my people know
 
-<https://news.ycombinator.com/item?id=19164037> small businnes ideas
 
-<https://www.reddit.com/r/programming/comments/aeweqw/netflix_software_engineers_earn_a_salary_of_more/>
+<https://reut.livejournal.com/1291307.html> 
+
+• How To Be Charming Without Trying - на примере Эмилии Кларк
+• How To Turn Awkwardness Into Confidence - на примере Тома Холланда
+• 5 Common Habits That Make People Instantly Dislike You - на примере Бри Ларсон (и других "мстителей" в противовес)
+• How To Be The Coolest Guy In The Room - на примере Роберта Дауни и Криса Эванса
+
 
 <https://www.theguardian.com/books/2019/jan/06/happiness-index-wellbeing-survey-uk-population-paul-dolan-happy-ever-after>
 
@@ -108,7 +113,7 @@ Live calculation in browser
 
 <https://news.ycombinator.com/item?id=18837334>
 
-<https://tech.yandex.ru/tomita/doc/dg/concept/about-docpage/> . Tomita parser
+
 
 <https://news.ycombinator.com/item?id=18588727> mind hacks
 
@@ -116,7 +121,7 @@ Live calculation in browser
 
 <https://stackexchange.com/sites>
 
-<https://openedu.ru/>
+
 
 <https://nadoumnet.d3.ru/>
 
@@ -142,10 +147,13 @@ Live calculation in browser
 
 <https://habr.com/company/globalsign/blog/348988/> Mozilla IoT Things
 
-<https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance>
+<https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance> . Covariance/Contrvariance
 
 ## Parsers
 
+<https://www3.nd.edu/~dthain/compilerbook/> .  Compiler Book
+
+<<https://tech.yandex.ru/tomita/doc/dg/concept/about-docpage/> . Tomita parser
 
 <https://www.youtube.com/watch?v=1axJDmK_pnE> .  Parser Combinators
 
@@ -369,7 +377,7 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 <https://news.ycombinator.com/item?id=18923169> fasting
 
-## 
+##  Exersize
 https://en.wikipedia.org/wiki/Calisthenics
 
 http://www.idoportal.com/
