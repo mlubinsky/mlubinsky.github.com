@@ -2,6 +2,12 @@
 
 <https://blog.twitter.com/engineering/en_us/topics/infrastructure/2019/metricsdb.html>
 
+<https://habr.com/ru/company/itsumma/blog/462111/>
+
+<https://github.com/richardartoul/tsdb-layer>
+
+<https://github.com/m3db/m3>
+
 ## Time Series
 
 <https://christian.bock.ml/posts/significant_shapelets/> 
