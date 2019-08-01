@@ -139,10 +139,17 @@ Live calculation in browser
 
 <https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance>
 
+## Parsers
+
+
+<https://www.youtube.com/watch?v=1axJDmK_pnE> .  Parser Combinators
+
 <https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92> . Parsing
 
 https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
+
+## TLS
 <https://tls.ulfheim.net/> TLS explained
 
 
