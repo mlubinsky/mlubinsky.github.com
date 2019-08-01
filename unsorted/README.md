@@ -132,11 +132,6 @@ Live calculation in browser
 
 <https://news.ycombinator.com/item?id=17202615> some youtube channels
 
-# Fibonacci
-
-<http://www.oranlooney.com/post/fibonacci/>
-
-<https://news.ycombinator.com/item?id=19216356>
 
 # Comp science
 
