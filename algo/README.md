@@ -1,12 +1,16 @@
+
+
+## Fibonacci
+<https://habr.com/ru/post/449616/> 
+
+<https://habr.com/ru/post/450594/> 
+
+<http://www.oranlooney.com/post/fibonacci/>
+
+<https://news.ycombinator.com/item?id=19216356>
+
+## Algo
 <https://github.com/TheAlgorithms/Python>
-
-<https://medium.com/@vladimirkozhaev/antlr-an-informal-introduction-609f885a38f7> ANTLR
-
-<https://medium.com/@gvanrossum_83706/peg-parsers-7ed72462f97c> PEG
-
-<https://habr.com/ru/post/449616/> Fibonachi
-
-<https://habr.com/ru/post/450594/> Fibonachi
 
 <https://m.stopa.io/10-offers-100-days-the-journey-16a0407b8d95> interview
 <https://habr.com/ru/post/454264/> . Inteview
