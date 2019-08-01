@@ -9,6 +9,7 @@
 
 
 ## Mental models
+<https://fs.blog/best-articles/>
 <https://nesslabs.com/mental-models>
 <https://news.ycombinator.com/item?id=20524616>
 <https://www.julian.com/blog/mental-model-examples> 
