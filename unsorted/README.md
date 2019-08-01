@@ -81,6 +81,9 @@ Live calculation in browser
 ```
 
 ## Business
+
+<https://blog.pragmaticengineer.com/an-elegant-puzzle-book-review/> 
+
 <http://aynuriev.com/how-to-register-company-usa/>
 
 <https://www.reddit.com/r/programming/comments/aeweqw/netflix_software_engineers_earn_a_salary_of_more/>
