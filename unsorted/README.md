@@ -205,25 +205,6 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 
 
-## Vim
-
-<https://curi0sity.de/en/2018/06/use-vim-as-a-simple-ide/>
- 
-<https://github.com/morhetz/gruvbox/wiki/Installation>   Color sheme gruvebox
-
-## VisualStudio Code + JavaScript
-
-<https://habr.com/ru/company/tinkoff/blog/461737/>
-
-## VisualStudio Code + Java
-<https://flaviocopes.com/vscode/>
-
-<https://code.visualstudio.com/docs/java/java-tutorial>
-
- VS Code can quickly show the diff between two files, with
- 
- code --diff file1.js file2.js.
-
 ## Kino
 <https://d3.ru/tag/%D0%BA%D0%B8%D0%BD%D0%BE/>
 
