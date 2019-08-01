@@ -46,10 +46,13 @@ https://github.com/discoveryjs/browser-extension-json-discovery
 
 <https://www.youtube.com/channel/UCbNOH-KWkyuXHQE0a-0MsZw> Vicktor Lega
 
+
+## Life 
 <https://news.ycombinator.com/item?id=19650044> Life Advices
 
 <https://news.ycombinator.com/item?id=19770527> What is Love
 
+##  Tools
 <https://github.com/repeats/Repeat> Repeat It- like AutoKey
 
 <https://www3.nd.edu/~dthain/compilerbook/> .  Compiler Book
@@ -59,6 +62,8 @@ https://github.com/discoveryjs/browser-extension-json-discovery
 
 <http://www.arxiv-sanity.com>
 
+
+## BOOKS
 <http://gen.lib.rus.ec/> Genesis
 
 <http://libgen.io/> . Genesis
