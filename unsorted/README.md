@@ -36,6 +36,8 @@
 ## Best computer resources for startups 
 <https://news.ycombinator.com/item?id=20225118>
 
+<https://news.ycombinator.com/item?id=20558107> Make better software
+
 <https://news.ycombinator.com/item?id=19939010>  DeepWork
 
 <http://sevakaplan.com/ru/home.htm> . Сева Каплан
