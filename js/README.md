@@ -12,7 +12,12 @@ If the directory has a file named index.html, that file will be displayed.
 
 If there is no index.html, then the files in the directory will be listed.
 
+
+## SVG
 <https://www.kirupa.com/tricks/billion_ways_display_svg.htm> . working with SVG
+
+<https://habr.com/ru/company/yandex/blog/461571/>
+
 
 <https://habr.com/ru/post/460741/> ES6
 
@@ -69,12 +74,12 @@ var c = doMath(multiply, 6, 7);
 
 ## Fetch API
 
-<https://css-tricks.com/using-fetch/>
-<https://www.sitepoint.com/xmlhttprequest-vs-the-fetch-api-whats-best-for-ajax-in-2019/>
-<https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch>
-<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data>
-<https://stackoverflow.com/questions/35549547/what-is-the-difference-between-the-fetch-api-and-xmlhttprequest>
-<https://medium.com/@shahata/why-i-wont-be-using-fetch-api-in-my-apps-6900e6c6fe78>
+<https://css-tricks.com/using-fetch/> 
+<https://www.sitepoint.com/xmlhttprequest-vs-the-fetch-api-whats-best-for-ajax-in-2019/> 
+<https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch> 
+<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data> 
+<https://stackoverflow.com/questions/35549547/what-is-the-difference-between-the-fetch-api-and-xmlhttprequest> 
+<https://medium.com/@shahata/why-i-wont-be-using-fetch-api-in-my-apps-6900e6c6fe78> 
 
 ```
 <script>
