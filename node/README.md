@@ -26,6 +26,12 @@
 
 <https://habr.com/ru/company/funcorp/blog/461881/> logging in Node
 
+## Input Validation
+
+<https://hapijs.com/tutorials/validation>
+
+<https://habr.com/ru/post/462189/>
+
 ## NodeJS in Docker
 
 <https://habr.com/ru/company/ruvds/blog/454522/>
