@@ -39,6 +39,8 @@
 
 <https://habr.com/ru/company/ruvds/blog/447134/> . 28 lectures translated 
 
+<https://github.com/30-seconds/30-seconds-of-react>
+
 ```
 npx create-react-app my-app
 
