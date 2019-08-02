@@ -9,13 +9,13 @@
 
 
 ## Mental models
-<https://fs.blog/best-articles/>
-<https://nesslabs.com/mental-models>
-<https://news.ycombinator.com/item?id=20524616>
-<https://www.julian.com/blog/mental-model-examples> 
+<https://fs.blog/best-articles/> 
+<https://nesslabs.com/mental-models> 
+<https://news.ycombinator.com/item?id=20524616> 
+<https://www.julian.com/blog/mental-model-examples>  
 <https://habr.com/ru/company/mipt/blog/461193/> . когнитивные искажения
 
-<https://news.ycombinator.com/item?id=19521129> . How to learn new things
+<https://news.ycombinator.com/item?id=19521129> . How to learn new things 
 
 <https://news.ycombinator.com/item?id=20007108> personal knowlaedge managers
 
@@ -155,6 +155,8 @@ Live calculation in browser
 https://medium.com/@vladimirkozhaev/antlr-an-informal-introduction-609f885a38f7 ANTLR
 
 https://medium.com/@gvanrossum_83706/peg-parsers-7ed72462f97c PEG
+
+https://medium.com/@gvanrossum_83706/building-a-peg-parser-d4869b5958fb PEG part 2
 
 <https://www3.nd.edu/~dthain/compilerbook/> .  Compiler Book
 
