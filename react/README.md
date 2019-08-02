@@ -1,6 +1,10 @@
 ## React
 
-<https://www.youtube.com/watch?v=JyWBNefPvRk> . 3 hour course from MS   
+<https://www.youtube.com/watch?v=DLX62G4lc44> . Learn React.js - Full Course for Beginners - Tutorial 2019
+
+<https://www.youtube.com/watch?v=Ke90Tje7VS0> Learn React - React Crash Course [2019] - React Tutorial with Examples | Mosh
+
+<https://www.youtube.com/watch?v=sBws8MSXN7A> . React JS Crash Course - 2019
 
 <https://redwerk.com/blog/core-concepts-of-state-in-react-js-and-why-to-use-it>
 
