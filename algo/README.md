@@ -12,6 +12,8 @@
 ## Algo
 <https://github.com/TheAlgorithms/Python>
 
+<https://github.com/30-seconds/30-seconds-of-python-code>
+
 <https://m.stopa.io/10-offers-100-days-the-journey-16a0407b8d95> interview
 <https://habr.com/ru/post/454264/> . Inteview
 
