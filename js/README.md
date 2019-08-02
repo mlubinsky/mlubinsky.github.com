@@ -69,6 +69,53 @@ function doMath(operation, a, b) {
 var c = doMath(multiply, 6, 7);
 ```
 
+<https://medium.com/better-programming/js-reliable-fdea261012ee>
+```
+// ---------------------------------------------
+// lambda (fat arrow) anonymous functions
+// ---------------------------------------------
+
+const doStuff = (a, b, c) => {...}
+
+// same as:
+function doStuff(a, b, c) {
+  ...
+}
+
+  
+// ---------------------------------------------  
+// object destructuring
+// ---------------------------------------------
+  
+const doStuff({a, b, c}) = {
+  console.log(a);
+}
+  
+// same as:
+const doStuff(params) = {
+  const {a, b, c} = params;
+  
+  console.log(a);
+} 
+                              
+// same as:                             
+const doStuff(params) = {  
+  console.log(params.a);
+}
+
+                              
+// ---------------------------------------------                            
+// array destructuring
+// ---------------------------------------------
+
+const [a, b] = [1, 2];
+                              
+// same as:
+const array = [1, 2];
+const a = array[0];
+const b = array[1];
+```
+
 ## Group By
 
 <https://dev.to/studnitz/grouping-an-array-of-objects-by-key-pnp>
