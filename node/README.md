@@ -5,6 +5,8 @@
 
 <https://flaviocopes.com/> JS, Node, Express, React books 
 
+<https://blog.logrocket.com/a-complete-guide-to-the-node-js-event-loop/> 
+
 
 
 ## Official Doc
