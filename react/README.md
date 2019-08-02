@@ -4,6 +4,8 @@
 
 <https://scrimba.com/g/glearnreact>
 
+<https://habr.com/ru/company/ruvds/blog/447134/> Russian translation
+
 <https://www.youtube.com/watch?v=Ke90Tje7VS0> Learn React - React Crash Course [2019] - React Tutorial with Examples | Mosh
 
 <https://www.youtube.com/watch?v=sBws8MSXN7A> . React JS Crash Course - 2019
