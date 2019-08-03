@@ -344,6 +344,9 @@ There are three basic criterion for a time series to understand whether it is st
 
 
 ## Anomaly detection 
+
+<https://blog.floydhub.com/introduction-to-anomaly-detection-in-python/> 
+
 <https://habrahabr.ru/post/344762/>
 
 <https://blog.statsbot.co/time-series-anomaly-detection-algorithms-1cef5519aef2>
