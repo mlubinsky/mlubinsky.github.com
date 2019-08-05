@@ -1,5 +1,7 @@
 ## VIM
 
+<http://ismail.badawi.io/blog/2014/04/23/the-compositional-nature-of-vim/>
+
 <https://www.youtube.com/watch?v=5r6yzFEXajQ> tmux+vim 
 
 <https://www.youtube.com/watch?v=XA2WjJbmmoM> 
