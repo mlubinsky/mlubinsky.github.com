@@ -26,6 +26,9 @@ git branch -r
 git checkout -b <nameit>
 
 <h2> Keep forked in sync with upstream repo </h2>
+
+https://stackoverflow.com/questions/2432579/git-your-branch-is-ahead-by-x-commits/22383148
+
 git remote -v
 git remote show origin
 git remote add upstream git@github.com:PelionProducts/space-optimizer.git
@@ -34,6 +37,22 @@ git fetch upstream
 git checkout master
 git merge upstream/master
 
+git reset --hard origin/master
+
+If you remove the fetch line from your project's .git/config file you'll stop 
+seeng the "Your branch is ahead of 'origin/master' by N commits." annoyance from occurring.
+<project>/.git/config
+```
+[remote "origin"]
+    url = <url>
+    fetch = +refs/heads/*:refs/remotes/origin/*
+```    
+
+git rev-list origin..HEAD
+# to see if the local repository is ahead, push needed
+
+git rev-list HEAD..origin
+# to see if the local repository is behind, pull needed
 
 
 Посмотреть, что я добавил в stage:
