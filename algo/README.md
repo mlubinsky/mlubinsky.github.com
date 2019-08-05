@@ -9,6 +9,10 @@
 
 <https://news.ycombinator.com/item?id=19216356>
 
+## Monads
+
+<https://blog.kabir.sh/posts/inventing-monads.html>
+
 ## Algo
 <https://github.com/TheAlgorithms/Python>
 
