@@ -453,6 +453,8 @@ http://www.cmsmagazine.ru/library/items/programming/80-problems-with-it-intervie
 
 <https://regexr.com/>
 
+<https://news.ycombinator.com/item?id=20608032>
+
 <https://deniskyashif.com/implementing-a-regular-expression-engine/>
 
 <https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/>
