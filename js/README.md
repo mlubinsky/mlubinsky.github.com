@@ -367,13 +367,40 @@ var flattened = [[0, 1], [2, 3], [4, 5]].reduce((a, b) => {return a.concat(b);},
 
 ## Async await promises
 
+<https://itnext.io/javascript-promises-and-async-await-as-fast-as-possible-d7c8c8ff0abc>
+
+```
+var myPromise = new Promise( 
+    ( resolve, reject ) => 
+         {
+               resolve( 'successPayload' );
+              // reject( 'errorPayload' );
+         } 
+);
+
+myPromise
+.then( successCallback )
+.catch( errorCallback )
+.finally( finallyCallback );
+```
+
+When we put async keyword before a function declaration, it becomes a promise and 
+we can use await keyword inside it which blocks the code until promise it awaits resolves or rejects.
+```
+async function myFunction() {
+   var result = await new MyPromise();
+   console.log( result );
+}
+myFunction(); // returns a promise
+```
+
 <https://www.tutespace.com/2019/06/javascript-difference-between-promises.html> 
-<https://habr.com/ru/post/462355/>
+<https://habr.com/ru/post/462355/> 
 <https://blog.patricktriest.com/what-is-async-await-why-should-you-care/> 
 <https://www.youtube.com/watch?v=14hS7f8gyiw&feature=youtu.be> 
 <https://101node.io/blog/how-promises-actually-work-inside-out/> 
 
-<http://nikgrozev.com/2017/10/01/async-await/>
+<http://nikgrozev.com/2017/10/01/async-await/> 
 
 <https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5>
 
