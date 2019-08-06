@@ -1,4 +1,8 @@
 ## Postgres
+
+<https://gist.github.com/clhenrick/ebc8dc779fb6f5ee6a88>
+
+
 Python
 <https://www.pgcli.com/> pgcli instead psql
 <https://hakibenita.com/fast-load-data-python-postgresql>
@@ -198,6 +202,8 @@ insert into people (name, points) values (
 ### PostGIS
 
 SELECT postgis_full_version();
+
+<https://stackoverflow.com/questions/57367822/issue-with-st-contains-and-st-within-in-postgis>
 
 <https://www.bostongis.com/PrinterFriendly.aspx?content_name=postgis_tut01>
 <https://www.youtube.com/watch?v=EBfjZgjyZmM>
