@@ -30,6 +30,8 @@ Python
 
 ## Time Series analysis with postgres
 
+<https://stackoverflow.com/questions/56863332/database-design-for-time-series>
+
 <https://bytefish.de/blog/postgresql_interpolation/>
 
 ##  specify a password to psql non-interactively
