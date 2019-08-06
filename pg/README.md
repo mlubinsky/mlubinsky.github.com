@@ -204,6 +204,9 @@ insert into people (name, points) values (
 SELECT postgis_full_version();
 
 <https://stackoverflow.com/questions/57367822/issue-with-st-contains-and-st-within-in-postgis>
+<https://lists.osgeo.org/pipermail/postgis-users/2019-August/043463.html>
+<https://www.wyzant.com/resources/answers/704882/issue-with-postgis-st-within>
+
 
 <https://www.bostongis.com/PrinterFriendly.aspx?content_name=postgis_tut01>
 <https://www.youtube.com/watch?v=EBfjZgjyZmM>
