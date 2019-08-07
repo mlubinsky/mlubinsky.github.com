@@ -21,7 +21,9 @@ or forecast a signal for some point and test if this point value varies from the
 
 <http://www.johnwittenauer.net/machine-learning-exercises-in-python-part-8/>
 
+<https://qminer.github.io/anomalies/>
+
 ## Isolation Forest
 
-https://lambda.grofers.com/anomaly-detection-using-isolation-forest-80b3a3d1a9d8 
+<https://lambda.grofers.com/anomaly-detection-using-isolation-forest-80b3a3d1a9d8>
 
