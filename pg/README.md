@@ -203,13 +203,61 @@ insert into people (name, points) values (
 
 SELECT postgis_full_version();
 
+<https://gis.stackexchange.com/questions/58605/which-function-for-creating-a-point-in-postgis>
+
 <https://stackoverflow.com/questions/57367822/issue-with-st-contains-and-st-within-in-postgis>
 <https://lists.osgeo.org/pipermail/postgis-users/2019-August/043463.html>
 <https://www.wyzant.com/resources/answers/704882/issue-with-postgis-st-within>
 
+```
+CREATE TABLE m_polygon (id SERIAL PRIMARY KEY, bounds POLYGON);
+INSERT INTO m_polygon(bounds) VALUES( 
+  '(0.0, 0.0),  (0.0, 10.0), (10.0, 0.0), (10.0, 10.0), (0,0)' 
+);
+
+SELECT ST_WITHIN(m_polygon.bounds , m_polygon.bounds ) FROM m_polygon;
+
+ERROR:  function st_within(polygon, polygon) does not exist 
+HINT:  No function matches the given name and argument types. You might 
+need to add explicit type casts.
+
+The following works:
+
+SELECT ST_WITHIN(ST_MakePoint(1,1), ST_MakePoint(1,1) ) ;
+
+Answer:
+POLYGON is Postgres native type. Geometry is the type used in PostGIS. ST_... functions are Postgis functions.
+
+Note that you can restrict a PostGIS geometry to a specific subtype (geometry(POLYGON))
+If you don't want PostGIS, you would need to use native geometry operators.
+```
+<https://www.postgresql.org/docs/current/functions-geometry.html>
+```
+If you are to use spatial data, and since you already have PostGIS, it is much better to switch to true geometries:
+
+CREATE TABLE m_polygon (id SERIAL PRIMARY KEY, bounds geometry(POLYGON));
+INSERT INTO m_polygon(bounds) VALUES( 
+  st_geomFromText('POLYGON((0.0 0.0, 0.0 10.0, 10.0 0.0, 10.0 10.0, 0 0))') 
+);
+
+SELECT ST_WITHIN(m_polygon.bounds , m_polygon.bounds ) FROM m_polygon;
+```
+<https://stackoverflow.com/questions/42106271/geoalchemy2-st-within-type-mismatch-between-point-and-polygon>
+<https://coder1.com/articles/postgis-query-point-within-polygon>
+
+```
+Possible solution: cast the Geography as a Geometry in the query because ST_Within,  do not support geographies, they only support geometries).
+```
+<http://www.postgis.net/docs/ST_GeomFromText.html>
+<http://www.postgis.net/docs/ST_GeogFromText.html>
+<https://gis.stackexchange.com/questions/284991/how-do-i-construct-a-geometry-point-in-srid-4326-from-lat-and-long/284994>
+```
+ST_Within(CAST (Store.location, Geometry), 
+         ST_GeomFromEWKT('SRID=4326;POLYGON((150 -33, 152 -33, 152 -31, 150 -31, 150 -33))')
+```
 
 <https://www.bostongis.com/PrinterFriendly.aspx?content_name=postgis_tut01>
-<https://www.youtube.com/watch?v=EBfjZgjyZmM>
+<https://www.youtube.com/watch?v=EBfjZgjyZmM> \
 <http://postgis.refractions.net/docs/> \
 <http://postgis.org/documentation/> \
 <https://trac.osgeo.org/postgis/wiki/UsersWikiMain> \
