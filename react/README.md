@@ -29,6 +29,11 @@
 
 <https://www.youtube.com/watch?v=-MlNBTSg_Ww>  hooks
 
+## Book
+<https://leanpub.com/reintroducing-react>
+
+<https://github.com/ohansemmanuel/Reintroducing-react>
+
 
 ## 101
 <https://medium.com/codeiq/react-js-a-better-introduction-to-the-most-powerful-ui-library-ever-created-ecd96e8f4621>
