@@ -1,4 +1,4 @@
-
+<https://habr.com/ru/company/skillbox/blog/462979/>
 
 ## Fibonacci
 <https://habr.com/ru/post/449616/> 
