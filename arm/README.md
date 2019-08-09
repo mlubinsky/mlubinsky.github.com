@@ -81,6 +81,10 @@ Toolchain'ы делятся на несколько типов или трипл
     
     dnf info gcc-c++-arm-linux-gnu
 
+
+## ESP8266
+<https://habr.com/ru/post/463107/>
+
 ## IoT
 SVG + VUE + MQTT
 <https://www.smashingmagazine.com/2019/05/svg-web-page-components-iot-part1/> 
