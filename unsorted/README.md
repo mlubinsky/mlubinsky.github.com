@@ -7,6 +7,28 @@
 
 <https://github.com/discoveryjs/browser-extension-json-discovery>
 
+<https://news.ycombinator.com/item?id=20645843>
+
+<http://zaa.ch/jsonlint/>
+
+<https://jsoneditoronline.org/>
+
+<https://github.com/carlmjohnson/json-tidy>
+
+json_pp on MacOS
+
+pbpaste | jq
+
+pbpaste | jq . | pbcopy
+
+cat foo.json | python3 -m json.tool
+
+<https://www.jvt.me/posts/2017/06/05/pretty-printing-json-cli/>
+
+<https://prettier.io/playground/>
+
+jp is better jq <https://github.com/jmespath/jp>
+
 
 ## Mental models
 <https://fs.blog/best-articles/> 
