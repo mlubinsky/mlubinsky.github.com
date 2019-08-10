@@ -1,3 +1,5 @@
+<https://algodaily.com/challenges>
+
 <https://habr.com/ru/company/skillbox/blog/462979/>
 
 ## Fibonacci
