@@ -6,6 +6,8 @@
 
 <https://www.youtube.com/watch?v=KZRoMKFDj58> Пепел
 
+<https://www.youtube.com/watch?v=8e5DHqIrgrQ> ГУРЗУФ - Детектив
+
 Домашний арест (сериал)
  <https://www.kinopoisk.ru/film/1044487/>
 
