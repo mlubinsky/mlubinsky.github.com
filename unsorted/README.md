@@ -255,6 +255,9 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 
 ## Kino
+
+<https://www.youtube.com/watch?v=QJz1GsMs0Wk> . 
+
 <https://d3.ru/tag/%D0%BA%D0%B8%D0%BD%D0%BE/>
 
 <https://soamo.livejournal.com/4862662.html#comments>
