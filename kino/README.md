@@ -2,7 +2,21 @@
 
 ## Kino
 
-<https://www.youtube.com/watch?v=QJz1GsMs0Wk> . 
+<https://www.youtube.com/watch?v=QJz1GsMs0Wk> . Подкидыш
+
+Домашний арест (сериал)
+ <https://www.kinopoisk.ru/film/1044487/>
+
+Упражнения в прекрасном
+<https://www.youtube.com/watch?v=P-Y86m02n10>    
+
+Со мною вот что происходит
+<https://www.youtube.com/watch?v=OhS7pU_ZgvU>    or 
+<https://www.youtube.com/watch?v=-wAS8sp7Z4A>
+
+Год культуры (сериал)
+<https://www.kinopoisk.ru/film/1206901/>
+
 
 <https://d3.ru/tag/%D0%BA%D0%B8%D0%BD%D0%BE/>
 
