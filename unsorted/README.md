@@ -16,6 +16,8 @@
 
 <http://www.dudeiwantthat.com/gift-guides/gifts-for-geeks.asp>
 
+<https://www.uncommongoods.com/fun/by-interest/geek-gifts>
+
 
 ## Browser extension for JSON: JsonDiscovery
 <https://habr.com/ru/post/461185/> 
