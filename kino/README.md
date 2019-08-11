@@ -8,6 +8,9 @@
 
 <https://www.youtube.com/watch?v=8e5DHqIrgrQ> ГУРЗУФ - Детектив
 
+«Оттепель» Валерия Тодоровского 
+«Метод» Юрия Быкова (Habensky and Paulina Andreeva).
+
 Домашний арест (сериал)
  <https://www.kinopoisk.ru/film/1044487/>
 
