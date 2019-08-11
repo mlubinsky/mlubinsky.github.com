@@ -14,6 +14,8 @@
 
 <https://gomboc-shop.com/>
 
+<http://www.dudeiwantthat.com/gift-guides/gifts-for-geeks.asp>
+
 
 ## Browser extension for JSON: JsonDiscovery
 <https://habr.com/ru/post/461185/> 
