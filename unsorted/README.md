@@ -1,3 +1,5 @@
+<https://www.levels.fyi/> salary in high tech companies
+
 <https://teach-in.ru> . lectures (physics and math) from Moscow State University
 
 <https://openedu.ru/>
