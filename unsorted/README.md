@@ -2,6 +2,10 @@
 
 <https://openedu.ru/>
 
+## Gifts
+
+<https://www.icanvas.com/>
+
 ## Browser extension for JSON: JsonDiscovery
 <https://habr.com/ru/post/461185/> 
 
