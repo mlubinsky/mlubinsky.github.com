@@ -15,6 +15,10 @@
 
 <https://blog.kabir.sh/posts/inventing-monads.html>
 
+<https://samgrayson.me/2019-08-06-monads-as-a-programming-pattern/>
+
+<https://news.ycombinator.com/item?id=20673506>
+
 ## Algo
 <https://github.com/TheAlgorithms/Python>
 
