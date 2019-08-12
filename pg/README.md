@@ -90,6 +90,10 @@ approximate time match
 
 <https://habr.com/ru/company/postgrespro/blog/459236/> tsrange
 
+```
+select extract(dow from date '2016-12-18');      -- 0
+select extract(isodow from date '2016-12-18');   -- 7
+```
 SHOW datestyle;
 
 SET datestyle = "ISO, DMY";
