@@ -22,13 +22,16 @@
 
 <https://github.com/morhetz/gruvbox/wiki/Installation> Color sheme gruvebox
 
-## VisualStudio Code + JavaScript
+## Visual Studio Code
+<https://dev.to/lampewebdev/the-guide-to-visual-studio-code-shortcuts-higher-productivity-and-30-of-my-favourite-shortcuts-you-need-to-learn-mb3>
+
+## Visual Studio Code + JavaScript
 
 <https://habr.com/ru/company/tinkoff/blog/461737/>
 
 <https://medium.com/young-coder/setting-up-javascript-debugging-in-visual-studio-code-6c5005529987?_snoorandom=2ed7cabd>
 
-## VisualStudio Code + Java
+## Visual Studio Code + Java
 <https://flaviocopes.com/vscode/>
 
 <https://www.youtube.com/watch?v=sVDizUZesZk>
