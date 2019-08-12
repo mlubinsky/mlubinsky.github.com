@@ -31,6 +31,8 @@
 ## VisualStudio Code + Java
 <https://flaviocopes.com/vscode/>
 
+<https://www.youtube.com/watch?v=sVDizUZesZk>
+
 <https://code.visualstudio.com/docs/java/java-tutorial>
 
 show the diff between two files, with
