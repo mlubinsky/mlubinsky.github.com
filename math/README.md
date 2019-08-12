@@ -1,5 +1,7 @@
 ## Math & Phys
 
+<https://seeing-theory.brown.edu/index.html> stat
+
 ### Kalman filter
 
 <https://habr.com/ru/post/166693/> 
