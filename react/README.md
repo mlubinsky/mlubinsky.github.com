@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/company/ruvds/blog/463069/>
 
+<https://contextneutral.com/story/react-101-things-every-beginner-should-know>
+
 <https://www.youtube.com/watch?v=DLX62G4lc44> . Learn React.js - Full Course for Beginners - Tutorial 2019
 
 <https://scrimba.com/g/glearnreact>
