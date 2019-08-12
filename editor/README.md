@@ -23,7 +23,10 @@
 <https://github.com/morhetz/gruvbox/wiki/Installation> Color sheme gruvebox
 
 ## VisualStudio Code + JavaScript
+
 <https://habr.com/ru/company/tinkoff/blog/461737/>
+
+<https://medium.com/young-coder/setting-up-javascript-debugging-in-visual-studio-code-6c5005529987?_snoorandom=2ed7cabd>
 
 ## VisualStudio Code + Java
 <https://flaviocopes.com/vscode/>
