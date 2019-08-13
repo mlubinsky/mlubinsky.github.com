@@ -45,7 +45,14 @@ JSX is actually close  to JavaScript but there are a few key differences
 
 * className is used instead of class for adding CSS classes, as class is a reserved keyword in JavaScript.
 * Properties and methods in JSX are camelCase - onclick will become onClick.
-* Self-closing tags must end in a slash - e.g. <img />
+* Self-closing tags must end in a slash - e.g. ```<img />```
+
+
+JavaScript expressions can also be embedded inside JSX using curly braces, including variables, functions, and properties.
+```
+const name = 'Tania'
+const heading = <h1>Hello, {name}</h1>
+```
 
 ## Props
 https://medium.com/codeiq/react-js-a-better-introduction-to-the-most-powerful-ui-library-ever-created-ecd96e8f4621
