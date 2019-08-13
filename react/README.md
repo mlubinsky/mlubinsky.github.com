@@ -2,6 +2,8 @@
 
 ## React
 
+<https://www.udemy.com/react-2nd-edition/>
+
 <https://habr.com/ru/company/ruvds/blog/463069/>
 
 <https://contextneutral.com/story/react-101-things-every-beginner-should-know>
