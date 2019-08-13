@@ -33,6 +33,19 @@
 
 <https://github.com/facebook/create-react-app>
 
+## JSX
+
+const heading = <h1 className="site-heading">Hello, React</h1>
+
+Using JSX is not mandatory for writing React. Under the hood, it's running createElement, which takes the tag, object containing the properties, and children of the component and renders the same information. The below code will have the same output as the JSX above.
+
+const heading = React.createElement('h1', { className: 'site-heading' }, 'Hello, React!')
+
+JSX is actually close  to JavaScript but there are a few key differences 
+
+* className is used instead of class for adding CSS classes, as class is a reserved keyword in JavaScript.
+* Properties and methods in JSX are camelCase - onclick will become onClick.
+* Self-closing tags must end in a slash - e.g. <img />
 
 ## Props
 https://medium.com/codeiq/react-js-a-better-introduction-to-the-most-powerful-ui-library-ever-created-ecd96e8f4621
