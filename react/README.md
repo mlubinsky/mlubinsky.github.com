@@ -24,8 +24,48 @@
 
 
 
+
 <https://github.com/facebook/create-react-app>
 
+
+## Props
+https://medium.com/codeiq/react-js-a-better-introduction-to-the-most-powerful-ui-library-ever-created-ecd96e8f4621
+https://medium.com/codeiq/mastering-react-functional-components-with-recompose-d4dd6ac98834
+Props are  parameters passed down to a component.
+
+```
+const Greetings = (props) => <div>Hey you! {props.firstName} {props.lastName}!</div>;
+
+const App = () => (
+  <div>
+    <Greetings firstName="John" lastName="Smith" />
+  </div>
+);
+```
+We can further simplify the code by making use of the ES6 object destructuring syntax:
+
+```
+const Greetings = ({ firstName, lastName }) => <div>Hey you! {firstName} {lastName}!</div>;
+```
+
+```
+import React from "react";
+
+const Greetings = ({ firstName, lastName }) => (
+    <div>
+        Hey you! {firstName} {lastName}!
+    </div>
+);
+
+export default Greetings;
+```
+
+```
+import Greetings from "./Greetings";
+const App = () => (
+  ...
+);
+```
 ## Hooks
 
 <https://habr.com/ru/post/441722/> React Hooks
