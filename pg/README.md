@@ -15,7 +15,13 @@ Python
 <https://tableplus.io/> TablePlus
 
 ## SQL
-
+```
+select distinct on (s.device_id) s.time, d.group_name, s.value 
+from sensor_values s 
+JOIN device_info d ON s.device_id=d.device_id 
+ORDER BY s.device_id, time DESC;
+```
+ 
 <http://postgres-bits.herokuapp.com/#1>
 
 ## Scaling Postgres
