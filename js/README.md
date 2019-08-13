@@ -1,5 +1,7 @@
 <https://learn.javascript.ru/>
 
+<https://exploringjs.com/>
+
 
 ## How to start python http server:
 
