@@ -2,6 +2,8 @@
 
 ## React
 
+<https://reactjs.org/docs/getting-started.html>
+
 <https://www.udemy.com/react-2nd-edition/>
 
 <https://habr.com/ru/company/ruvds/blog/463069/>
@@ -25,7 +27,7 @@
 <https://youtu.be/7vo5FBzJkKY>
 
 
-
+## Create-react-app
 
 <https://github.com/facebook/create-react-app>
 
