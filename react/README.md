@@ -4,6 +4,8 @@
 
 <https://reactjs.org/docs/getting-started.html>
 
+<https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi>  React Devtools for Chrome
+
 <https://www.udemy.com/react-2nd-edition/>
 
 <https://habr.com/ru/company/ruvds/blog/463069/>
