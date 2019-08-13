@@ -4,6 +4,7 @@
 
 <https://openedu.ru/>
 
+<https://cvcompiler.com/blog/facelift-your-it-resume-to-get-more-interviews/> Resume
 ## Gifts
 
 <https://www.icanvas.com/> Paining
