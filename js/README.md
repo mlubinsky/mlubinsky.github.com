@@ -257,7 +257,7 @@ function findMinMax(arr) {
 }
 
 
-------- Aray Filter ---------
+------- Array Filter ---------
  Grab unique
     [1,1,2,3,4].filter( ( item, index, array ) => array.indexOf( item ) === index )
     // => [1,2,3,4]
@@ -280,17 +280,19 @@ var a = [
   "We're up all night for good fun",
   "We're up all night to get lucky"
 ];
+```
+ These two assignments are equivalent:
 
-// These two assignments are equivalent:
-
-1) Old-school without arrow function:
+1) Old-school ES5 without arrow function:
+```
 var a2 = a.map(function(s){ return s.length });
-
+```
 2) ECMAscript 6 using arrow functions:
+```
 var a3 = a.map( s => s.length );
-
+```
 Both a2 and a3 will be equal to [31, 30, 31, 31]
-
+```
 var numbers = [1, 5, 10, 15];
 var doubles = numbers.map((x) => {  return x * 2;});
 var roots = numbers.map(Math.sqrt);
