@@ -192,6 +192,8 @@ const App = () => (
 ```
 ## Hooks
 
+<https://usehooks.com/>
+
 <https://habr.com/ru/post/441722/> React Hooks
 
 <https://habr.com/ru/company/vk/blog/454348/>
