@@ -33,6 +33,35 @@
 
 <https://github.com/facebook/create-react-app>
 
+## Functional component
+```
+const App = (props) => {
+  return (
+    <div>
+      { props }
+    </div>
+  )
+}
+```
+## Class components
+States is only available to components that are called class components.
+The main reason why you will want to use class components over their counterpart, *functional components*, is that class components can have state.
+```
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { username: 'johndoe' }
+  }
+  render() {
+    const { username } = this.state
+    return(
+      <div>
+        { username }
+      </div>
+    )
+  }
+}
+```
 ## JSX
 
 const heading = <h1 className="site-heading">Hello, React</h1>
