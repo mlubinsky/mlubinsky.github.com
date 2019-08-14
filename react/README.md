@@ -18,15 +18,19 @@
 
 <https://habr.com/ru/company/ruvds/blog/447134/> Russian translation
 
+## Youtube
 <https://www.youtube.com/watch?v=Ke90Tje7VS0> Learn React - React Crash Course [2019] - React Tutorial with Examples | Mosh
 
 <https://www.youtube.com/watch?v=sBws8MSXN7A> . React JS Crash Course - 2019
+
+<https://youtu.be/7vo5FBzJkKY>
+
 
 <https://redwerk.com/blog/core-concepts-of-state-in-react-js-and-why-to-use-it>
 
 <https://scotch.io/starters/react/getting-started-with-react-2019-edition>
 
-<https://youtu.be/7vo5FBzJkKY>
+
 
 
 ## Create-react-app
@@ -40,7 +44,18 @@ const o = {chico: 1, harpo: 2, groucho: 3};
 const { chico, harpo, groucho } = o;  //ORDER does not matter!!
 console.log(chico, harpo, groucho);
 // 1 2 3
-``
+
+
+function shipmentES5Defaults(params) {
+  params = params || {};
+  var items =   params.items    ||   'bananas';
+  var number =  params.number   ||    5;
+  var pkg =     params.pkg      ||   'crates';
+  console.log("We have a shipment of " + items + " in " + number + " " + pkg + ".");
+}
+
+```
+
 
 ## Functional component
 ```
