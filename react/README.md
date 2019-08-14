@@ -26,7 +26,7 @@
 <https://youtu.be/7vo5FBzJkKY>
 
 
-<https://redwerk.com/blog/core-concepts-of-state-in-react-js-and-why-to-use-it>
+
 
 <https://scotch.io/starters/react/getting-started-with-react-2019-edition>
 
@@ -69,6 +69,7 @@ const App = (props) => {
 ```
 ## Class components and state
 <https://css-tricks.com/react-state-from-the-ground-up/>
+<<https://redwerk.com/blog/core-concepts-of-state-in-react-js-and-why-to-use-it>>
 States is only available to components that are called class components.
 The main reason why you will want to use class components over their counterpart, *functional components*, 
 is that class components can have state.
