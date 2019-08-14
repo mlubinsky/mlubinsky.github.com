@@ -1,16 +1,9 @@
-<https://www.taniarascia.com/how-to-use-the-javascript-fetch-api-to-get-json-data/>
-<https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/>
-<https://medium.freecodecamp.org/here-is-the-most-popular-ways-to-make-an-http-request-in-javascript-954ce8c95aaa>
-
-<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Third_party_APIs>
-
-
-<https://blog.miguelgrinberg.com/post/writing-a-javascript-rest-client>
-
-
-<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data>
-
-
+<https://www.taniarascia.com/how-to-use-the-javascript-fetch-api-to-get-json-data/> \
+<https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/> \
+<https://medium.freecodecamp.org/here-is-the-most-popular-ways-to-make-an-http-request-in-javascript-954ce8c95aaa> \
+<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Third_party_APIs> \
+<https://blog.miguelgrinberg.com/post/writing-a-javascript-rest-client> \
+<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data> \
 <https://css-tricks.com/using-fetch/> \
 <https://www.sitepoint.com/xmlhttprequest-vs-the-fetch-api-whats-best-for-ajax-in-2019/> \
 <https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch> \
