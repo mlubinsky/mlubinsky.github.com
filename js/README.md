@@ -4,8 +4,12 @@
 
 <https://hacks.mozilla.org/category/es6-in-depth/>
 
+<<https://habr.com/ru/post/460741/> ES6>
+
 <https://eloquentjavascript.net/>
 
+## Spread syntax
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax>
 
 ## How to start python http server:
 
@@ -27,8 +31,10 @@ If there is no index.html, then the files in the directory will be listed.
 
 <https://habr.com/ru/company/yandex/blog/461571/>
 
+<https://css-tricks.com/?s=SVG>
 
-<https://habr.com/ru/post/460741/> ES6
+
+
 
 var status = flight.status || "unknown";
 
