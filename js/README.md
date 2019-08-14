@@ -35,9 +35,9 @@ If there is no index.html, then the files in the directory will be listed.
 
 
 
-
+```
 var status = flight.status || "unknown";
-
+```
 ## JS coding standarts
 
 <https://blog.back4app.com/2019/07/22/javascript-coding-standards/>
@@ -135,83 +135,7 @@ const b = array[1];
 
 <https://dev.to/studnitz/grouping-an-array-of-objects-by-key-pnp>
 
-## Fetch API
 
-<https://css-tricks.com/using-fetch/> \
-<https://www.sitepoint.com/xmlhttprequest-vs-the-fetch-api-whats-best-for-ajax-in-2019/> \
-<https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch> \
-<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data> \
-<https://stackoverflow.com/questions/35549547/what-is-the-difference-between-the-fetch-api-and-xmlhttprequest> \
-<https://medium.com/@shahata/why-i-wont-be-using-fetch-api-in-my-apps-6900e6c6fe78> 
-
-```
-<script>
-function json2table(json, classes){
-  console.log("inside json2table");
-  console.log(json)
-  name="tasks"
-  var cols = Object.keys(json[name][0]);   // keys from 1st object in array
-  var headerRow = '';
-  var bodyRows = '';
-  classes = classes || '';
-
-  cols.map(function(col) {
-       headerRow += '<th>' + col + '</th>';
-   });
-
-  json[name].map(function(row) {
-       bodyRows += '<tr>';
-       //  Loop over object properties and create cells
-       cols.map(function(colName) {
-            bodyRows += '<td>' + row[colName] + '<td>';
-       });
-      bodyRows += '</tr>';
-   });
-
-  return '<table class=' +
-       classes +
-       '><thead><tr>' +
-       headerRow +
-       '</tr></thead><tbody>' +
-       bodyRows +
-       '</tbody></table>';
-};
-/********************/
-function myFunc() {
- alert("myFunc Started");
- url="http://localhost:5000/todo/api/v1.0/tasks"
- fetch(url)
-  .then(response => {
-    console.log(response.status)
-    if (response.ok) {
-      console.log("OK")
-      console.log(response)
-      return response.json()
-    } else {
-      console.log("ERR")
-           /* 
-             alert("myFunc ERROR");
-             return Promise.reject({
-                   status: response.status,
-                  statusText: response.statusText
-              })
-           */
-    }
-  });
-
-  .then(data => {
-      console.log("data:")
-      console.log(data);
-      table = json2table(data);
-      document.getElementById('tableHolder').innerHTML=table;
-  })
-  .catch(error => {
-    console.log("ERR code "+ error.status)
-  });
-
-}  
-</script>  
-```
 
 ## Code
 ```
@@ -409,39 +333,28 @@ async function myFunction() {
 myFunction(); // returns a promise
 ```
 
-<https://www.tutespace.com/2019/06/javascript-difference-between-promises.html> 
-<https://habr.com/ru/post/462355/> 
-<https://blog.patricktriest.com/what-is-async-await-why-should-you-care/> 
-<https://www.youtube.com/watch?v=14hS7f8gyiw&feature=youtu.be> 
-<https://101node.io/blog/how-promises-actually-work-inside-out/> 
-
-<http://nikgrozev.com/2017/10/01/async-await/> 
-
-<https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5>
-
- 
-<http://callbackhell.com/>
-<https://github.com/matt-jarrett/asynchronous-javascript-with-async-await/blob/master/README.md>
+<https://www.tutespace.com/2019/06/javascript-difference-between-promises.html> \
+<https://habr.com/ru/post/462355/> \
+<https://blog.patricktriest.com/what-is-async-await-why-should-you-care/> \
+<https://www.youtube.com/watch?v=14hS7f8gyiw&feature=youtu.be> \
+<https://101node.io/blog/how-promises-actually-work-inside-out/> \
+<http://nikgrozev.com/2017/10/01/async-await/> \
+<https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5> \
+<http://callbackhell.com/> \
+<https://github.com/matt-jarrett/asynchronous-javascript-with-async-await/blob/master/README.md> \
 <https://medium.com/@daspinola/javascript-from-callbacks-to-async-await-1cc090ddad99>
 
  JavaScript  промисы.  озволяют заменить глубокую вложенность коллбэков словом .then. 
  async-функции работают «поверх» промисов. Эти функции не представляют собой качественно другие концепции. 
   
-  <https://dev.to/ivanalejandro0/unraveling-callbacks-with-async-functions-5634>
-
-<https://blog.bitsrc.io/understanding-javascript-async-and-await-with-examples-a010b03926ea>
-
-<https://habr.com/ru/company/skillbox/blog/458950/>
-
-<https://developers.google.com/web/fundamentals/primers/async-functions>
-
-<https://tproger.ru/translations/understanding-async-await-in-javascript/>
-
-<https://www.betamark.com/blog/mistakes-using-javascript-promises/>
-
-<https://news.ycombinator.com/item?id=20358970>
-
-<https://blog.logrocket.com/handling-and-dispatching-events-with-node-js/>
+<https://dev.to/ivanalejandro0/unraveling-callbacks-with-async-functions-5634> \
+<https://blog.bitsrc.io/understanding-javascript-async-and-await-with-examples-a010b03926ea> \
+<https://habr.com/ru/company/skillbox/blog/458950/>  \
+<https://developers.google.com/web/fundamentals/primers/async-functions> \
+<https://tproger.ru/translations/understanding-async-await-in-javascript/> \
+<https://www.betamark.com/blog/mistakes-using-javascript-promises/> \
+<https://news.ycombinator.com/item?id=20358970> \
+<https://blog.logrocket.com/handling-and-dispatching-events-with-node-js/> \
 
 any function called with await has to be a returning promise or created with async
 ```
