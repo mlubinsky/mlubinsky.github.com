@@ -33,6 +33,15 @@
 
 <https://github.com/facebook/create-react-app>
 
+## Destructing objects in ES6
+<https://css-tricks.com/new-favorite-es6-toy-destructured-objects-parameters/>
+```
+const o = {chico: 1, harpo: 2, groucho: 3};
+const { chico, harpo, groucho } = o;  //ORDER does not matter!!
+console.log(chico, harpo, groucho);
+// 1 2 3
+``
+
 ## Functional component
 ```
 const App = (props) => {
@@ -43,9 +52,13 @@ const App = (props) => {
   )
 }
 ```
-## Class components
+## Class components and state
+<https://css-tricks.com/react-state-from-the-ground-up/>
 States is only available to components that are called class components.
-The main reason why you will want to use class components over their counterpart, *functional components*, is that class components can have state.
+The main reason why you will want to use class components over their counterpart, *functional components*, 
+is that class components can have state.
+The initial setup of state was done in the constructor, and should not be done again:
+never update your component state directly.
 ```
 class App extends React.Component {
   constructor(props) {
@@ -61,6 +74,7 @@ class App extends React.Component {
     )
   }
 }
+
 ```
 ## JSX
 
