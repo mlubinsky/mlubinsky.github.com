@@ -68,6 +68,8 @@ const App = (props) => {
 }
 ```
 ## Class components and state
+<https://reactjs.org/docs/react-component.html>
+
 <https://css-tricks.com/react-state-from-the-ground-up/> \
 <<https://redwerk.com/blog/core-concepts-of-state-in-react-js-and-why-to-use-it>> \
 <https://github.com/uberVU/react-guide/blob/master/props-vs-state.md>
