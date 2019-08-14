@@ -2,6 +2,8 @@
 
 <https://exploringjs.com/>
 
+<https://eloquentjavascript.net/>
+
 
 ## How to start python http server:
 
