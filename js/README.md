@@ -2,6 +2,8 @@
 
 <https://exploringjs.com/>
 
+<https://hacks.mozilla.org/category/es6-in-depth/>
+
 <https://eloquentjavascript.net/>
 
 
