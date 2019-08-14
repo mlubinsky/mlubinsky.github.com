@@ -28,7 +28,7 @@
 <https://youtu.be/7vo5FBzJkKY>
 
 
-
+<https://habr.com/ru/company/hh/blog/439138/> 
 
 <https://scotch.io/starters/react/getting-started-with-react-2019-edition>
 
@@ -279,5 +279,5 @@ https://metanit.com/web/react/
 http://css-live.ru/articles/na-osvoenie-react-mne-potrebovalas-vsego-nedelya-a-chem-vy-xuzhe.html
 http://codedzen.ru/react-urok-1-osnovi/
 http://websketches.ru/blog/5practiceskih-primerov-na-react
-https://habrahabr.ru/post/248799/
+
 ```
