@@ -45,11 +45,11 @@ var status = flight.status || "unknown";
 ## Array operations
 
 Array.map, Array.reduce, Array.filter, Array.sort, Object.keys, Object.values.
-<https://habr.com/ru/company/plarium/blog/446902/> 
-<https://zellwk.com/blog/callbacks/> 
-<https://zellwk.com/blog/js-promises/> 
-<https://zellwk.com/blog/es6/> 
-<http://zabanaa.github.io/notes/functional-programming-and-javascript-arrays.html> 
+<https://habr.com/ru/company/plarium/blog/446902/> \
+<https://zellwk.com/blog/callbacks/> \
+<https://zellwk.com/blog/js-promises/> \
+<https://zellwk.com/blog/es6/> \
+<http://zabanaa.github.io/notes/functional-programming-and-javascript-arrays.html> \
 <https://stackoverflow.com/questions/24900875/whats-the-meaning-of-an-arrow-formed-from-equals-greater-than-in-javas>
 
 <https://news.ycombinator.com/item?id=14916731>  This in JS
@@ -71,7 +71,7 @@ Array.map, Array.reduce, Array.filter, Array.sort, Object.keys, Object.values.
 <https://medium.com/sanjagh/iterating-over-javascript-objects-declaratively-or-how-to-map-filter-and-reduce-on-objects-d179cd40d935>
 
 ## Passing function as parameters
-<https://nick.scialli.me/first-class-functions-in-javascript/>
+<https://nick.scialli.me/first-class-functions-in-javascript/> \
 <https://pietschsoft.com/post/2019/07/24/call-functions-in-javascript>
 ```
 function multiply(a, b) {
@@ -137,11 +137,11 @@ const b = array[1];
 
 ## Fetch API
 
-<https://css-tricks.com/using-fetch/> 
-<https://www.sitepoint.com/xmlhttprequest-vs-the-fetch-api-whats-best-for-ajax-in-2019/> 
-<https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch> 
-<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data> 
-<https://stackoverflow.com/questions/35549547/what-is-the-difference-between-the-fetch-api-and-xmlhttprequest> 
+<https://css-tricks.com/using-fetch/> \
+<https://www.sitepoint.com/xmlhttprequest-vs-the-fetch-api-whats-best-for-ajax-in-2019/> \
+<https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch> \
+<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data> \
+<https://stackoverflow.com/questions/35549547/what-is-the-difference-between-the-fetch-api-and-xmlhttprequest> \
 <https://medium.com/@shahata/why-i-wont-be-using-fetch-api-in-my-apps-6900e6c6fe78> 
 
 ```
