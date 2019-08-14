@@ -92,6 +92,28 @@ class App extends React.Component {
 }
 
 ```
+Changing state:
+```
+handleInputChange(username) {
+  this.setState({username})
+}
+
+render() {
+  const { username } = this.state
+  return (
+    <div>
+      <div>
+        <input 
+          type="text"
+          value={this.state.username}
+          onChange={event => this.handleInputChange(event.target.value)}
+        />
+      </div>
+      <p>Your username is, {username}</p>
+    </div>
+  )
+}
+```
 ## JSX
 
 const heading = <h1 className="site-heading">Hello, React</h1>
