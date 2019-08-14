@@ -58,6 +58,8 @@ function shipmentES5Defaults(params) {
 
 
 ## Functional component
+До появления хуков у функциональных компонентов не было возможности задавать локальный стейт. \
+Ситуация изменилась с появлением useState().
 ```
 const App = (props) => {
   return (
@@ -192,6 +194,7 @@ const App = () => (
 
 <https://habr.com/ru/post/441722/> React Hooks
 
+<https://habr.com/ru/company/vk/blog/454348/>
 
 <https://www.youtube.com/watch?v=-MlNBTSg_Ww>  hooks
 
