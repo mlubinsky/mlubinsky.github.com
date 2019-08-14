@@ -68,8 +68,10 @@ const App = (props) => {
 }
 ```
 ## Class components and state
-<https://css-tricks.com/react-state-from-the-ground-up/>
-<<https://redwerk.com/blog/core-concepts-of-state-in-react-js-and-why-to-use-it>>
+<https://css-tricks.com/react-state-from-the-ground-up/> \
+<<https://redwerk.com/blog/core-concepts-of-state-in-react-js-and-why-to-use-it>> \
+<https://github.com/uberVU/react-guide/blob/master/props-vs-state.md>
+
 States is only available to components that are called class components.
 The main reason why you will want to use class components over their counterpart, *functional components*, 
 is that class components can have state.
@@ -141,8 +143,12 @@ const heading = <h1>Hello, {name}</h1>
 ```
 
 ## Props
-https://medium.com/codeiq/react-js-a-better-introduction-to-the-most-powerful-ui-library-ever-created-ecd96e8f4621
-https://medium.com/codeiq/mastering-react-functional-components-with-recompose-d4dd6ac98834
+Props (short for properties) are a Component's configuration. 
+They are received from above and immutable as far as the Component receiving them is concerned.
+
+A Component cannot change its props, 
+<https://medium.com/codeiq/react-js-a-better-introduction-to-the-most-powerful-ui-library-ever-created-ecd96e8f4621> \
+<https://medium.com/codeiq/mastering-react-functional-components-with-recompose-d4dd6ac98834>
 Props are  parameters passed down to a component.
 
 ```
