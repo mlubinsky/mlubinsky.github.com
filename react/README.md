@@ -204,11 +204,12 @@ const App = () => (
 
 <https://www.youtube.com/watch?v=-MlNBTSg_Ww>  hooks
 
-## Book
+## Books
 <https://leanpub.com/reintroducing-react>
 
 <https://github.com/ohansemmanuel/Reintroducing-react>
 
+<https://github.com/maxfarseer/react-course-ru-v2> Russian Book
 
 ## 101
 <https://medium.com/codeiq/react-js-a-better-introduction-to-the-most-powerful-ui-library-ever-created-ecd96e8f4621>
