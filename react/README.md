@@ -8,13 +8,17 @@
 
 <https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi>  React Devtools for Chrome
 
-<https://www.udemy.com/react-2nd-edition/>
+## Udemy
+<https://www.udemy.com/react-2nd-edition/> .  
 
+## Important
 <https://habr.com/ru/company/ruvds/blog/463069/>
+
+<https://habr.com/ru/company/plarium/blog/426197/>
 
 <https://contextneutral.com/story/react-101-things-every-beginner-should-know>
 
-<https://www.youtube.com/watch?v=DLX62G4lc44> . Learn React.js - Full Course for Beginners - Tutorial 2019
+
 
 <https://scrimba.com/g/glearnreact>
 
@@ -24,6 +28,8 @@
 <https://www.youtube.com/watch?v=Ke90Tje7VS0> Learn React - React Crash Course [2019] - React Tutorial with Examples | Mosh
 
 <https://www.youtube.com/watch?v=sBws8MSXN7A> . React JS Crash Course - 2019
+
+<https://www.youtube.com/watch?v=DLX62G4lc44> . Learn React.js - Full Course for Beginners - Tutorial 2019
 
 <https://youtu.be/7vo5FBzJkKY>
 
