@@ -198,6 +198,16 @@ where ROWNUM <= 5;
 <h2>SQL</h2>
  https://www.interviewbit.com/sql-interview-questions/
  https://habr.com/ru/post/461567/
+ https://www.programmerinterview.com/database-sql/advanced-sql-interview-questions-and-answers/
+ 
+ Suppose we have 2 tables:
+ Person(id, name, age, salary)
+ Orders(num,date, person_id, amount):
+ Task: retrieve the names of all people that have more than 1 order 
+ 
+ select name from person where id in (
+   select person_id from Orders group by preson_id having count(*) > 1
+ )
  
 <h2>Hierarhy</h2> 
  https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database
