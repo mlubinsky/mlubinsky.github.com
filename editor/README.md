@@ -25,6 +25,8 @@
 ## Visual Studio Code
 <https://dev.to/lampewebdev/the-guide-to-visual-studio-code-shortcuts-higher-productivity-and-30-of-my-favourite-shortcuts-you-need-to-learn-mb3>
 
+<https://www.jonrcorbin.com/the-best-vs-code-extension-list-for-full-stack-developers/>
+
 <https://code.visualstudio.com/docs/introvideos/debugging> . DEBUGGING
 
 ## Visual Studio Code + JavaScript
