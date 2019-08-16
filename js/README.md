@@ -308,6 +308,12 @@ var flattened = [[0, 1], [2, 3], [4, 5]].reduce((a, b) => {return a.concat(b);},
 
 ## Async await promises
 
+<https://learn.javascript.ru/async-await>
+
+<https://nikodunk.com/how-to-chain-functions-with-await-async/>
+
+<https://news.ycombinator.com/item?id=20682423>
+
 <https://itnext.io/javascript-promises-and-async-await-as-fast-as-possible-d7c8c8ff0abc>
 
 ```
