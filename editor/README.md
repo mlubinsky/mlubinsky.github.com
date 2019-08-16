@@ -27,6 +27,8 @@
 
 ## Visual Studio Code + JavaScript
 
+<https://www.freecodecamp.org/news/how-to-set-up-the-debugger-for-chrome-extension-in-visual-studio-code-c0b3e5937c01/>
+
 <https://habr.com/ru/company/tinkoff/blog/461737/>
 
 <https://medium.com/young-coder/setting-up-javascript-debugging-in-visual-studio-code-6c5005529987?_snoorandom=2ed7cabd>
