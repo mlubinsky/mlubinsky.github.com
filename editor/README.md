@@ -25,6 +25,8 @@
 ## Visual Studio Code
 <https://dev.to/lampewebdev/the-guide-to-visual-studio-code-shortcuts-higher-productivity-and-30-of-my-favourite-shortcuts-you-need-to-learn-mb3>
 
+<https://code.visualstudio.com/docs/introvideos/debugging> . DEBUGGING
+
 ## Visual Studio Code + JavaScript
 
 <https://www.freecodecamp.org/news/how-to-set-up-the-debugger-for-chrome-extension-in-visual-studio-code-c0b3e5937c01/>
@@ -33,7 +35,7 @@
 
 <https://medium.com/young-coder/setting-up-javascript-debugging-in-visual-studio-code-6c5005529987>
 
-<https://medium.com/young-coder/setting-up-javascript-debugging-in-visual-studio-code-6c5005529987?_snoorandom=2ed7cabd>
+
 
 ## Visual Studio Code + Java
 <https://flaviocopes.com/vscode/>
