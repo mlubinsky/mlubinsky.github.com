@@ -31,6 +31,8 @@
 
 <https://habr.com/ru/company/tinkoff/blog/461737/>
 
+<https://medium.com/young-coder/setting-up-javascript-debugging-in-visual-studio-code-6c5005529987>
+
 <https://medium.com/young-coder/setting-up-javascript-debugging-in-visual-studio-code-6c5005529987?_snoorandom=2ed7cabd>
 
 ## Visual Studio Code + Java
