@@ -9,9 +9,11 @@
 <https://cvcompiler.com/blog/facelift-your-it-resume-to-get-more-interviews/> Resume
 ## Gifts
 
-<https://www.icanvas.com/> Paining
+<https://www.icanvas.com/> Paining Eric Waugh, Gustav Klimt 
 
 <https://www.greatbigcanvas.com/> Painting
+
+<https://www.art.com/>
 
 <https://everydaycarry.com/>
 
