@@ -11,6 +11,8 @@
 
 <https://www.icanvas.com/> Paining
 
+<https://everydaycarry.com/>
+
 <https://www.etsy.com/listing/523027817/personalized-engraved-5-in-1-knife>  Engraved 5-in-1 Knife & MultiTool by Left Coast Original 
 
 <https://www.geekwrapped.com/unique-gifts-unusual-gift-ideas>
