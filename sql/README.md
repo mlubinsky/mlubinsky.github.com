@@ -31,16 +31,28 @@ FROM YourTable a
 LEFT OUTER JOIN YourTable b
     ON a.id = b.id AND a.rev < b.rev
 WHERE b.id IS NULL;
-
+```
 Approach #3:
 ```
 SELECT * FROM t1 WHERE (id,rev) IN 
 ( SELECT id, MAX(rev) FROM t1 GROUP BY id)
 
 ```
-
-
-
+Approach #4: correlated subquery
+```
+select yt.id, yt.rev, yt.contents
+    from YourTable yt
+    where rev = 
+        (select max(rev) from YourTable st where yt.id=st.id)
+```
+Approach #5: RANK() or ROW_NUMBER()
+```
+SELECT a.id, a.rev, a.contents
+  FROM (SELECT id, rev, contents,
+               ROW_NUMBER() OVER (PARTITION BY id ORDER BY rev DESC) rank
+          FROM YourTable) a
+ WHERE a.rank = 1 
+ ```
 
 ## Employee with max salary per each department
 ```
