@@ -1,8 +1,14 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://classicproblems.com/>
+
+<https://teachyourselfcs.com/>
+
 <https://web.stanford.edu/class/cs9/>
 
 <https://algodaily.com/challenges>
+
+<https://news.ycombinator.com/item?id=20729252>
 
 <https://habr.com/ru/company/skillbox/blog/462979/>
 
