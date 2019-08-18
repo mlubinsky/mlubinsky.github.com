@@ -1,5 +1,7 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://web.stanford.edu/class/cs9/>
+
 <https://algodaily.com/challenges>
 
 <https://habr.com/ru/company/skillbox/blog/462979/>
