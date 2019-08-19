@@ -71,7 +71,7 @@ order by emp.sal desc
  
  
  The following statement finds the employees who have the second highest salary in their departments:
- 
+``` 
  WITH payroll AS (
     SELECT 
         first_name, 
@@ -95,20 +95,21 @@ FROM
         ON d.department_id = p.department_id
 WHERE 
     salary_rank = 2;  
- 
- Suppose we have 2 tables:
- Person(id, name, age, salary)
- Orders(num,date, person_id, amount):
+```
+
+ Suppose we have 2 tables: \
+ Person(id, name, age, salary) \
+ Orders(num,date, person_id, amount): \
  Task: retrieve the names of all people that have more than 1 order 
  
- Answer 1:
+### Answer 1:
  
  SELECT name from person where id in (
    SELECT person_id from Orders group by preson_id having count(person_id) > 1
  )
  
  
- Answer 2:
+### Answer 2:
  
 SELECT Name FROM Orders, Person
 WHERE Orders.person_id = Person.id
