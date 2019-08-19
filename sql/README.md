@@ -1,3 +1,8 @@
+## SQL
+ https://www.interviewbit.com/sql-interview-questions/
+ https://habr.com/ru/post/461567/
+ https://www.programmerinterview.com/database-sql/advanced-sql-interview-questions-and-answers/
+ 
 <https://www.java67.com/2013/04/10-frequently-asked-sql-query-interview-questions-answers-database.html>
 
 <https://dankleiman.com/2018/02/06/3-ways-to-level-up-your-sql-as-a-software-engineer/>
@@ -104,23 +109,16 @@ FROM emp
 where rank2=1;
 ```
 
-
-
-### Find duplicate rows in a database? and then write SQL query to delete them?
+### Find duplicate rows in a database
 ```
 SELECT * FROM emp a WHERE rowid = (SELECT MAX(rowid) FROM EMP b WHERE a.empno=b.empno)
 ```
-### To Delete duolicates:
+### Delete duplicates
 ```
 DELETE FROM emp a WHERE rowid != (SELECT MAX(rowid) FROM emp b WHERE a.empno=b.empno);
 ```
-## SQL
- https://www.interviewbit.com/sql-interview-questions/
- https://habr.com/ru/post/461567/
- https://www.programmerinterview.com/database-sql/advanced-sql-interview-questions-and-answers/
- 
- 
- The following statement finds the employees who have the second highest salary in their departments:
+
+### Find the employees who have the second highest salary per department:
 ``` 
  WITH payroll AS (
     SELECT 
@@ -147,7 +145,7 @@ WHERE
     salary_rank = 2;  
 ```
 
-## Question
+## Retrieve the names of all people that have more than 1 order 
  Suppose we have 2 tables: \
  Person(id, name, age, salary) \
  Orders(num,date, person_id, amount): \
@@ -287,7 +285,7 @@ https://blog.jooq.org/2013/11/03/probably-the-coolest-sql-feature-window-functio
 
 http://www.windowfunctions.com/
 
-## Example
+## 10 question against 1 table:
 ```
 CREATE TABLE cats(
    name varchar(10),
