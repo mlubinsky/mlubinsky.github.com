@@ -10,6 +10,9 @@
 
 <https://habr.com/ru/post/464023/> Kiev KPI JS course
 
+
+<https://habr.com/ru/post/464163/> "this" in JS
+
 ## Spread syntax
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax>
 
