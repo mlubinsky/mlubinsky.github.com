@@ -1,18 +1,33 @@
 <https://dankleiman.com/2018/02/06/3-ways-to-level-up-your-sql-as-a-software-engineer/>
 You can use LAG() to reference previous rows
 
+## ISNULL() COALESCE()
+PostgreSQL does not have the ISNULL() function. However, you can use the COALESCE function which provides the similar functionality. Note that the COALESCE function returns the first non-null argument, so the following syntax has the similar effect as the ISNULL function above: COALESCE(expression,replacement)
+Also, in addition to COALESCE you can use CASE expression:
 
+```
+create table emp(id int , name text);
+insert into emp VALUES (1,'A');
+insert into emp VALUES (2,NULL);
+
+select id, COALESCE(name,'x') FROM emp;
+
+SELECT 
+    CASE WHEN expression IS NULL 
+            THEN replacement 
+            ELSE expression 
+    END AS column_alias
+FROM emp    
+```
 RANK gives you the ranking within your ordered partition. Ties are assigned the same rank, with the next ranking(s) skipped. 
 So, if you have 3 items at rank 2, the next rank listed would be ranked 5.
 
 DENSE_RANK again gives you the ranking within your ordered partition, but the ranks are consecutive. 
 No ranks are skipped if there are ranks with multiple items.
 
+## Find the whole data for the row with some max value in a column per some group identifier.
 
 GREATEST n PER GROUP question. <https://stackoverflow.com/questions/tagged/greatest-n-per-group>
-
-This is a very common question in SQL: 
-find the whole data for the row with some max value in a column per some group identifier.
 
 <https://stackoverflow.com/questions/7745609/sql-select-only-rows-with-max-value-on-a-column/7745635#7745635>
 
@@ -342,8 +357,8 @@ select name, weight, coalesce(weight - lag(weight, 1) over (order by weight), 0)
 FROM cats order by weight
 ```
 
-Q8: Compare to Previous Row Part 2
-=================================
+### Q8: Compare to Previous row using LAG()
+
 The cats now want to lose weight according to their breed. Each cat would like to lose weight to be the equivalent weight of the cat in the same breed weighing just less than it.
 
 Print a list of cats, their breeds, weights and the weight difference between them and the nearest lighter cat of the same breed.
@@ -351,13 +366,13 @@ Print a list of cats, their breeds, weights and the weight difference between th
 Return: name, breed, weight, weight_to_lose
 Order by: weight
 ```
-select name, breed, weight, coalesce(weight - lag(weight, 1) 
-over (partition by breed order by weight), 0) as weight_to_lose 
-from cats order by weight, name
+SELECT name, breed, weight, coalesce(weight - LAG(weight, 1) 
+OVER (partition by breed order by weight), 0) as weight_to_lose 
+FROM cats order by weight, name
 ```
 
-Q9: First of each Group
-==========================
+## Q9: First of each group
+
 Cats are vain. Each cat would like to pretend it has the lowest weight for its color.
 
 Print cat name, color and the minimum weight of cats with that color.
@@ -370,8 +385,8 @@ over (partition by color order by weight) as lowest_weight_by_color
 from cats order by color, name
 ```
 
-Q10: Using the Window clause
-===============================
+### Q10: Using the Window clause
+
 This SQL function can be made simpler by using the WINDOW statement. Please try and use the WINDOW clause.
 
 Each cat would like to see what half, third and quartile they are in for their weight.
