@@ -371,7 +371,7 @@ OVER (partition by breed order by weight), 0) as weight_to_lose
 FROM cats order by weight, name
 ```
 
-## Q9: First of each group
+### Q9: First of each group
 
 Cats are vain. Each cat would like to pretend it has the lowest weight for its color.
 
