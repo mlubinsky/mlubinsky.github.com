@@ -1,3 +1,5 @@
+<https://www.java67.com/2013/04/10-frequently-asked-sql-query-interview-questions-answers-database.html>
+
 <https://dankleiman.com/2018/02/06/3-ways-to-level-up-your-sql-as-a-software-engineer/>
 You can use LAG() to reference previous rows
 
@@ -81,6 +83,12 @@ inner join
 ON emp.deptno = ss.deptno and emp.sal = ss.sal
 order by emp.sal desc
 ```
+
+```
+SELECT dept.name, MAX(e.salary) FROM emp e 
+RIGHT JOIN dept d ON e.deptId = d.deptID GROUP BY dept.name;
+```
+
 ```
 create table emp(id int , name text, salary float, dept_id int);
 insert into empl values(1,'Mike1', 100, 10);
@@ -96,6 +104,16 @@ FROM emp
 where rank2=1;
 ```
 
+
+
+### Find duplicate rows in a database? and then write SQL query to delete them?
+```
+SELECT * FROM emp a WHERE rowid = (SELECT MAX(rowid) FROM EMP b WHERE a.empno=b.empno)
+```
+### To Delete duolicates:
+```
+DELETE FROM emp a WHERE rowid != (SELECT MAX(rowid) FROM emp b WHERE a.empno=b.empno);
+```
 ## SQL
  https://www.interviewbit.com/sql-interview-questions/
  https://habr.com/ru/post/461567/
