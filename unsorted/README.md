@@ -143,6 +143,8 @@ Live calculation in browser
 
 <https://news.ycombinator.com/item?id=19164037> small businnes ideas
 
+<https://www.amazon.com/gp/product/1491973897/ref=as_li_qf_asin_il_tl> Manager path
+
 <https://news.ycombinator.com/item?id=19698151>
 
 ## Be Happy
