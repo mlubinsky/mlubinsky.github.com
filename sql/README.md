@@ -117,12 +117,12 @@ HAVING COUNT(person_id) >1
 
 
 
-<h2>Hierarhy</h2> 
+## Hierarhy 
  https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database
  https://news.ycombinator.com/item?id=20027586 Hierarchy and RECURSIVE SQL
  https://github.com/bitnine-oss/agensgraph . Postgres extension  AgensGraph
  http://patshaughnessy.net/2017/12/13/saving-a-tree-in-postgres-using-ltree
- 
+``` 
  WITH RECURSIVE cte (id, message, author, path, parent_id, depth)  AS (
   SELECT  id,
           message,
@@ -146,17 +146,19 @@ HAVING COUNT(person_id) >1
   )
   SELECT id, message, author, path, depth FROM cte
   ORDER BY path;
- 
+``` 
+
+
 https://www.youtube.com/watch?v=swR33jIhW8Q
 https://habr.com/ru/post/448072/ . Joins
 https://dankleiman.com/2017/11/07/more-efficient-solutions-to-the-top-n-per-group-problem/
 https://habr.com/post/422461/ . examples of SQL with answers
 http://www.sql-workbench.eu/dbms_comparison.html
 
-Differennce between ON and WHERE clause:
+## Differennce between ON and WHERE clause:
 
 https://blog.jooq.org/2019/04/09/the-difference-between-sqls-join-on-clause-and-the-where-clause/
-
+```
 CREATE TABLE A( i int, val int,  data varchar(16) );
 CREATE TABLE B( i int, val int,  data varchar(16) );
 
@@ -190,7 +192,7 @@ ON ( A.i=B.i and A.data='2010-10-05' and B.data='2010-10-05') ;
 |    2 | 2010-10-05 | NULL | NULL       |
 +------+------------+------+------------+
 4 rows in set (0.00 sec)
-
+```
 
 https://cs.uwaterloo.ca/~plragde/flaneries/FDS/ functional data structures
 
@@ -202,7 +204,8 @@ https://news.ycombinator.com/item?id=13517490
 
 https://vadimtropashko.wordpress.com/%e2%80%9csql-design-patterns%e2%80%9d-book/about/
 
-<h2>Running total</h2>
+## Running total
+```
 select
     a.date,
     sum(b.sales) as cumulative_sales
@@ -210,20 +213,22 @@ from sales_table a
 join sales_table b on a.date >= b.date
 group by a.date
 order by a.date;
+```
 
 Using window function:
-select
-    date,
+```
+select date,
     sum(sales) over (order by date rows unbounded preceding) as cumulative_sales
 from sales_table;
+```
 
-<h2>Window functions</h2>
+## Window functions 
 https://oracle-base.com/articles/misc/analytic-functions
 https://hashrocket.com/blog/posts/sql-window-functions
 https://www.fromdual.com/mariadb-10-2-window-function-examples
 https://blog.jooq.org/2014/04/29/nosql-no-sql-how-to-calculate-running-totals/
 https://blog.jooq.org/2013/11/03/probably-the-coolest-sql-feature-window-functions/
-
+```
 SELECT
   employee_name,
   employee_id,
@@ -231,9 +236,10 @@ SELECT
   rank() OVER(PARTITION BY dept ORDER BY salary DESC),
   100.0*salary/sum(salary) OVER (PARTITION BY dept)
 FROM employee;
-
+```
 http://www.windowfunctions.com/
 
+```
 CREATE TABLE cats(
    name varchar(10),
    breed varchar(10),
@@ -241,14 +247,15 @@ CREATE TABLE cats(
    color varchar(10),
    age int
 );
-
+```
 Q1 RUNNING TOTAL:
 The cats must by ordered by name and will enter an elevator one by one. We would like to know what the running total weight is.
 =================
+```
 select name, sum(weight)
 over (order by name) as running_total_weight
 from cats order by name
-
+```
 
 Q2: Partitioned Running Totals
 ==================================
@@ -256,19 +263,20 @@ The cats must by ordered first by breed and second by name. They are about to en
 
 We would like to know what the running total weight of the cats is.
 
-
+```
 select name, breed, sum(weight)
 over (partition by breed order by name) as running_total_weight from cats
-
+```
 
 Q3: Counting
 ==========
-The cats form a line grouped by color. Inside each color group the cats order themselves by name. Every cat must have a unique number for its place in the line.
+The cats form a line grouped by color. Inside each color group the cats order themselves by name. \
+Every cat must have a unique number for its place in the line.
 
 We must assign each cat a unique number while maintaining their color & name ordering.
-
+```
 select row_number() over (order by color,name) as unique_number, name, color from cats
-
+```
 
 Q4: Ordering
 ==================
@@ -279,10 +287,10 @@ The two heaviest cats should both be 1st. The next heaviest should be 3rd.
 Return: ranking, weight, name
 Order by: ranking, name desc
 
-
+```
 select rank() over (order by weight desc) as ranking, weight, name
 from cats order by ranking, name DESC
-
+```
 
 Q5: Quartiles
 ==============
@@ -290,9 +298,9 @@ We are worried our cats are too fat and need to diet.
 We would like to group the cats into quartiles by their weight.
 Return: name, weight, weight_quartile
 Order by: weight
-
+```
 select name, weight, ntile(4) over ( order by weight) as weight_quartile from cats order by weight_quartile, name
-
+```
 
 Q6: Ranking
 =====================
@@ -300,7 +308,9 @@ For cats age means seniority, we would like to rank the cats by age (oldest firs
 However we would like their ranking to be sequentially increasing.
 Return: ranking, name, age
 Order by: ranking, name
+```
 select dense_rank() over (order by age DESC) as r, name,age from cats order by r, name
+```
 
 Q7 Compare to Previous Row
 ==============================
@@ -310,9 +320,9 @@ Print a list of cats, their weights and the weight difference between them and t
 
 Return: name, weight, weight_to_lose
 Order by: weight
-
+```
 select name, weight, coalesce(weight - lag(weight, 1) over (order by weight), 0) as weight_to_lose FROM cats order by weight
-
+```
 
 Q8: Compare to Previous Row Part 2
 =================================
@@ -322,9 +332,9 @@ Print a list of cats, their breeds, weights and the weight difference between th
 
 Return: name, breed, weight, weight_to_lose
 Order by: weight
-
+```
 select name, breed, weight, coalesce(weight - lag(weight, 1) over (partition by breed order by weight), 0) as weight_to_lose from cats order by weight, name
-
+```
 
 Q9: First of each Group
 ==========================
@@ -334,9 +344,9 @@ Print cat name, color and the minimum weight of cats with that color.
 
 Return: name, color, lowest_weight_by_color
 Order by: color, name
-
+```
 select name, color, first_value(weight) over (partition by color order by weight) as lowest_weight_by_color from cats order by color, name
-
+```
 
 Q10: Using the Window clause
 ===============================
@@ -346,6 +356,7 @@ Each cat would like to see what half, third and quartile they are in for their w
 
 Return: name, weight, by_half, thirds, quartile
 Order by: weight
-
+```
 select name, weight, ntile(2) over ntile_window as by_half, ntile(3) over ntile_window as thirds, ntile(4) over ntile_window as quart from cats window ntile_window AS ( ORDER BY weight)
+```
 
