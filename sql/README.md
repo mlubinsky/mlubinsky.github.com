@@ -1,3 +1,6 @@
+<https://dankleiman.com/2018/02/06/3-ways-to-level-up-your-sql-as-a-software-engineer/>
+You can use LAG() to reference previous rows
+
 
 RANK gives you the ranking within your ordered partition. Ties are assigned the same rank, with the next ranking(s) skipped. 
 So, if you have 3 items at rank 2, the next rank listed would be ranked 5.
@@ -97,25 +100,26 @@ WHERE
     salary_rank = 2;  
 ```
 
+## Question
  Suppose we have 2 tables: \
  Person(id, name, age, salary) \
  Orders(num,date, person_id, amount): \
  Task: retrieve the names of all people that have more than 1 order 
  
 ### Answer 1:
- 
+``` 
  SELECT name from person where id in (
    SELECT person_id from Orders group by preson_id having count(person_id) > 1
  )
- 
+``` 
  
 ### Answer 2:
- 
+``` 
 SELECT Name FROM Orders, Person
 WHERE Orders.person_id = Person.id
 GROUP BY Person_id, Name                  
 HAVING COUNT(person_id) >1
-
+```
 
 
 ## Hierarhy 
@@ -156,7 +160,7 @@ https://dankleiman.com/2017/11/07/more-efficient-solutions-to-the-top-n-per-grou
 https://habr.com/post/422461/ . examples of SQL with answers
 http://www.sql-workbench.eu/dbms_comparison.html
 
-## Differennce between ON and WHERE clause:
+## Difference between ON and WHERE clause:
 
 https://blog.jooq.org/2019/04/09/the-difference-between-sqls-join-on-clause-and-the-where-clause/
 ```
@@ -322,7 +326,8 @@ Print a list of cats, their weights and the weight difference between them and t
 Return: name, weight, weight_to_lose
 Order by: weight
 ```
-select name, weight, coalesce(weight - lag(weight, 1) over (order by weight), 0) as weight_to_lose FROM cats order by weight
+select name, weight, coalesce(weight - lag(weight, 1) over (order by weight), 0) as weight_to_lose 
+FROM cats order by weight
 ```
 
 Q8: Compare to Previous Row Part 2
@@ -334,7 +339,9 @@ Print a list of cats, their breeds, weights and the weight difference between th
 Return: name, breed, weight, weight_to_lose
 Order by: weight
 ```
-select name, breed, weight, coalesce(weight - lag(weight, 1) over (partition by breed order by weight), 0) as weight_to_lose from cats order by weight, name
+select name, breed, weight, coalesce(weight - lag(weight, 1) 
+over (partition by breed order by weight), 0) as weight_to_lose 
+from cats order by weight, name
 ```
 
 Q9: First of each Group
@@ -346,7 +353,9 @@ Print cat name, color and the minimum weight of cats with that color.
 Return: name, color, lowest_weight_by_color
 Order by: color, name
 ```
-select name, color, first_value(weight) over (partition by color order by weight) as lowest_weight_by_color from cats order by color, name
+select name, color, first_value(weight) 
+over (partition by color order by weight) as lowest_weight_by_color 
+from cats order by color, name
 ```
 
 Q10: Using the Window clause
@@ -358,6 +367,8 @@ Each cat would like to see what half, third and quartile they are in for their w
 Return: name, weight, by_half, thirds, quartile
 Order by: weight
 ```
-select name, weight, ntile(2) over ntile_window as by_half, ntile(3) over ntile_window as thirds, ntile(4) over ntile_window as quart from cats window ntile_window AS ( ORDER BY weight)
+select name, weight, ntile(2) over ntile_window as by_half, ntile(3) 
+over ntile_window as thirds, ntile(4) over ntile_window as quart 
+from cats window ntile_window AS ( ORDER BY weight)
 ```
 
