@@ -8,6 +8,8 @@
 
 <https://eloquentjavascript.net/>
 
+<https://habr.com/ru/post/464023/> Kiev KPI JS course
+
 ## Spread syntax
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax>
 
