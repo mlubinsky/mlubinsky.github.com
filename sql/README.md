@@ -63,3 +63,289 @@ inner join
 ON emp.deptno = ss.deptno and emp.sal = ss.sal
 order by emp.sal desc
 ```
+
+## SQL
+ https://www.interviewbit.com/sql-interview-questions/
+ https://habr.com/ru/post/461567/
+ https://www.programmerinterview.com/database-sql/advanced-sql-interview-questions-and-answers/
+ 
+ 
+ The following statement finds the employees who have the second highest salary in their departments:
+ 
+ WITH payroll AS (
+    SELECT 
+        first_name, 
+        last_name, 
+        department_id,
+        salary, 
+        RANK() OVER (
+            PARTITION BY department_id
+            ORDER BY salary) salary_rank
+    FROM 
+        employees
+)
+SELECT 
+    first_name, 
+    last_name,
+    department_name,
+    salary
+FROM 
+    payroll p
+    INNER JOIN departments d 
+        ON d.department_id = p.department_id
+WHERE 
+    salary_rank = 2;  
+ 
+ Suppose we have 2 tables:
+ Person(id, name, age, salary)
+ Orders(num,date, person_id, amount):
+ Task: retrieve the names of all people that have more than 1 order 
+ 
+ Answer 1:
+ 
+ SELECT name from person where id in (
+   SELECT person_id from Orders group by preson_id having count(person_id) > 1
+ )
+ 
+ 
+ Answer 2:
+ 
+SELECT Name FROM Orders, Person
+WHERE Orders.person_id = Person.id
+GROUP BY Person_id, Name                  
+HAVING COUNT(person_id) >1
+
+
+
+<h2>Hierarhy</h2> 
+ https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database
+ https://news.ycombinator.com/item?id=20027586 Hierarchy and RECURSIVE SQL
+ https://github.com/bitnine-oss/agensgraph . Postgres extension  AgensGraph
+ http://patshaughnessy.net/2017/12/13/saving-a-tree-in-postgres-using-ltree
+ 
+ WITH RECURSIVE cte (id, message, author, path, parent_id, depth)  AS (
+  SELECT  id,
+          message,
+          author,
+          array[id] AS path,
+          parent_id,
+          1 AS depth
+  FROM    comments
+  WHERE   parent_id IS NULL
+
+  UNION ALL
+ 
+  SELECT  comments.id,
+          comments.message,
+          comments.author,
+          cte.path || comments.id,
+          comments.parent_id,
+          cte.depth + 1 AS depth
+  FROM    comments
+          JOIN cte ON comments.parent_id = cte.id
+  )
+  SELECT id, message, author, path, depth FROM cte
+  ORDER BY path;
+ 
+https://www.youtube.com/watch?v=swR33jIhW8Q
+https://habr.com/ru/post/448072/ . Joins
+https://dankleiman.com/2017/11/07/more-efficient-solutions-to-the-top-n-per-group-problem/
+https://habr.com/post/422461/ . examples of SQL with answers
+http://www.sql-workbench.eu/dbms_comparison.html
+
+Differennce between ON and WHERE clause:
+
+https://blog.jooq.org/2019/04/09/the-difference-between-sqls-join-on-clause-and-the-where-clause/
+
+CREATE TABLE A( i int, val int,  data varchar(16) );
+CREATE TABLE B( i int, val int,  data varchar(16) );
+
+INSERT INTO A values(1, 10, '2010-09-05');
+INSERT INTO A values(2, 20, '2010-10-05');
+INSERT INTO A values(3, 30, '2010-10-05');
+INSERT INTO A values(3, 40, '2010-10-05');
+
+INSERT INTO B values(2, 201, '2010-09-05');
+INSERT INTO B values(2, 202, '2020-10-05');
+INSERT INTO B values(3, 300, '2010-10-05');
+
+select A.i, A.data, B.i, B.data from A LEFT JOIN B
+ON A.i=B.i WHERE A.data='2010-10-05' and B.data='2010-10-05' ;
++------+------------+------+------------+
+| i    | data       | i    | data       |
++------+------------+------+------------+
+|    3 | 2010-10-05 |    3 | 2010-10-05 |
+|    3 | 2010-10-05 |    3 | 2010-10-05 |
++------+------------+------+------------+
+2 rows in set (0.00 sec)
+
+select A.i, A.data, B.i, B.data from A LEFT JOIN B
+ON ( A.i=B.i and A.data='2010-10-05' and B.data='2010-10-05') ;
++------+------------+------+------------+
+| i    | data       | i    | data       |
++------+------------+------+------------+
+|    3 | 2010-10-05 |    3 | 2010-10-05 |
+|    3 | 2010-10-05 |    3 | 2010-10-05 |
+|    1 | 2010-09-05 | NULL | NULL       |
+|    2 | 2010-10-05 | NULL | NULL       |
++------+------------+------+------------+
+4 rows in set (0.00 sec)
+
+
+https://cs.uwaterloo.ca/~plragde/flaneries/FDS/ functional data structures
+
+
+
+http://www.mysqltutorial.org/mysql-row_number/
+
+https://news.ycombinator.com/item?id=13517490
+
+https://vadimtropashko.wordpress.com/%e2%80%9csql-design-patterns%e2%80%9d-book/about/
+
+<h2>Running total</h2>
+select
+    a.date,
+    sum(b.sales) as cumulative_sales
+from sales_table a
+join sales_table b on a.date >= b.date
+group by a.date
+order by a.date;
+
+Using window function:
+select
+    date,
+    sum(sales) over (order by date rows unbounded preceding) as cumulative_sales
+from sales_table;
+
+<h2>Window functions</h2>
+https://oracle-base.com/articles/misc/analytic-functions
+https://hashrocket.com/blog/posts/sql-window-functions
+https://www.fromdual.com/mariadb-10-2-window-function-examples
+https://blog.jooq.org/2014/04/29/nosql-no-sql-how-to-calculate-running-totals/
+https://blog.jooq.org/2013/11/03/probably-the-coolest-sql-feature-window-functions/
+
+SELECT
+  employee_name,
+  employee_id,
+  salary,
+  rank() OVER(PARTITION BY dept ORDER BY salary DESC),
+  100.0*salary/sum(salary) OVER (PARTITION BY dept)
+FROM employee;
+
+http://www.windowfunctions.com/
+
+CREATE TABLE cats(
+   name varchar(10),
+   breed varchar(10),
+   weight float,
+   color varchar(10),
+   age int
+);
+
+Q1 RUNNING TOTAL:
+The cats must by ordered by name and will enter an elevator one by one. We would like to know what the running total weight is.
+=================
+select name, sum(weight)
+over (order by name) as running_total_weight
+from cats order by name
+
+
+Q2: Partitioned Running Totals
+==================================
+The cats must by ordered first by breed and second by name. They are about to enter an elevator one by one. When all the cats of the same breed have entered they leave.
+
+We would like to know what the running total weight of the cats is.
+
+
+select name, breed, sum(weight)
+over (partition by breed order by name) as running_total_weight from cats
+
+
+Q3: Counting
+==========
+The cats form a line grouped by color. Inside each color group the cats order themselves by name. Every cat must have a unique number for its place in the line.
+
+We must assign each cat a unique number while maintaining their color & name ordering.
+
+select row_number() over (order by color,name) as unique_number, name, color from cats
+
+
+Q4: Ordering
+==================
+We would like to find the fattest cat. Order all our cats by weight.
+
+The two heaviest cats should both be 1st. The next heaviest should be 3rd.
+
+Return: ranking, weight, name
+Order by: ranking, name desc
+
+
+select rank() over (order by weight desc) as ranking, weight, name
+from cats order by ranking, name DESC
+
+
+Q5: Quartiles
+==============
+We are worried our cats are too fat and need to diet.
+We would like to group the cats into quartiles by their weight.
+Return: name, weight, weight_quartile
+Order by: weight
+
+select name, weight, ntile(4) over ( order by weight) as weight_quartile from cats order by weight_quartile, name
+
+
+Q6: Ranking
+=====================
+For cats age means seniority, we would like to rank the cats by age (oldest first).
+However we would like their ranking to be sequentially increasing.
+Return: ranking, name, age
+Order by: ranking, name
+select dense_rank() over (order by age DESC) as r, name,age from cats order by r, name
+
+Q7 Compare to Previous Row
+==============================
+Cats are fickle. Each cat would like to lose weight to be the equivalent weight of the cat weighing just less than it.
+
+Print a list of cats, their weights and the weight difference between them and the nearest lighter cat ordered by weight.
+
+Return: name, weight, weight_to_lose
+Order by: weight
+
+select name, weight, coalesce(weight - lag(weight, 1) over (order by weight), 0) as weight_to_lose FROM cats order by weight
+
+
+Q8: Compare to Previous Row Part 2
+=================================
+The cats now want to lose weight according to their breed. Each cat would like to lose weight to be the equivalent weight of the cat in the same breed weighing just less than it.
+
+Print a list of cats, their breeds, weights and the weight difference between them and the nearest lighter cat of the same breed.
+
+Return: name, breed, weight, weight_to_lose
+Order by: weight
+
+select name, breed, weight, coalesce(weight - lag(weight, 1) over (partition by breed order by weight), 0) as weight_to_lose from cats order by weight, name
+
+
+Q9: First of each Group
+==========================
+Cats are vain. Each cat would like to pretend it has the lowest weight for its color.
+
+Print cat name, color and the minimum weight of cats with that color.
+
+Return: name, color, lowest_weight_by_color
+Order by: color, name
+
+select name, color, first_value(weight) over (partition by color order by weight) as lowest_weight_by_color from cats order by color, name
+
+
+Q10: Using the Window clause
+===============================
+This SQL function can be made simpler by using the WINDOW statement. Please try and use the WINDOW clause.
+
+Each cat would like to see what half, third and quartile they are in for their weight.
+
+Return: name, weight, by_half, thirds, quartile
+Order by: weight
+
+select name, weight, ntile(2) over ntile_window as by_half, ntile(3) over ntile_window as thirds, ntile(4) over ntile_window as quart from cats window ntile_window AS ( ORDER BY weight)
+
