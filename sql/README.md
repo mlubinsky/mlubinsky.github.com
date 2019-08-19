@@ -62,9 +62,23 @@ SELECT a.id, a.rev, a.contents
 SELECT dept.dname, emp.empno, emp.ename, emp.sal FROM emp
 inner join dept on emp.deptno = dept.deptno
 inner join
-( select emp.deptno, max(emp.sal) sal FROM emp GROUP BY emp.deptno ) ss 
+( SELECT emp.deptno, max(emp.sal) sal FROM emp GROUP BY emp.deptno ) ss 
 ON emp.deptno = ss.deptno and emp.sal = ss.sal
 order by emp.sal desc
+```
+```
+create table emp(id int , name text, salary float, dept_id int);
+insert into empl values(1,'Mike1', 100, 10);
+insert into emp values(2,'Mike2', 200, 10);
+insert into emp values(3,'Mike3', 400, 20);
+
+select * from (
+SELECT name, id, salary,
+  rank() OVER(PARTITION BY dept_id ORDER BY salary DESC) as rank2,
+  100.0*salary/sum(salary)  OVER (PARTITION BY dept_id) as percent
+FROM emp
+) A
+where rank2=1;
 ```
 
 ## SQL
@@ -229,21 +243,18 @@ from sales_table;
 
 ## Window functions 
 https://oracle-base.com/articles/misc/analytic-functions
+
 https://hashrocket.com/blog/posts/sql-window-functions
+
 https://www.fromdual.com/mariadb-10-2-window-function-examples
+
 https://blog.jooq.org/2014/04/29/nosql-no-sql-how-to-calculate-running-totals/
+
 https://blog.jooq.org/2013/11/03/probably-the-coolest-sql-feature-window-functions/
-```
-SELECT
-  employee_name,
-  employee_id,
-  salary,
-  rank() OVER(PARTITION BY dept ORDER BY salary DESC),
-  100.0*salary/sum(salary) OVER (PARTITION BY dept)
-FROM employee;
-```
+
 http://www.windowfunctions.com/
 
+## Example
 ```
 CREATE TABLE cats(
    name varchar(10),
@@ -253,18 +264,19 @@ CREATE TABLE cats(
    age int
 );
 ```
-Q1 RUNNING TOTAL:
+### Q1 RUNNING TOTAL:
 The cats must by ordered by name and will enter an elevator one by one. We would like to know what the running total weight is.
-=================
+ 
 ```
 select name, sum(weight)
 over (order by name) as running_total_weight
 from cats order by name
 ```
 
-Q2: Partitioned Running Totals
-==================================
-The cats must by ordered first by breed and second by name. They are about to enter an elevator one by one. When all the cats of the same breed have entered they leave.
+### Q2: Partitioned Running Totals
+
+The cats must by ordered first by breed and second by name. They are about to enter an elevator one by one. 
+When all the cats of the same breed have entered they leave.
 
 We would like to know what the running total weight of the cats is.
 
@@ -273,8 +285,8 @@ select name, breed, sum(weight)
 over (partition by breed order by name) as running_total_weight from cats
 ```
 
-Q3: Counting
-==========
+### Q3: Counting
+
 The cats form a line grouped by color. Inside each color group the cats order themselves by name. \
 Every cat must have a unique number for its place in the line.
 
@@ -283,8 +295,8 @@ We must assign each cat a unique number while maintaining their color & name ord
 select row_number() over (order by color,name) as unique_number, name, color from cats
 ```
 
-Q4: Ordering
-==================
+### Q4: Ordering
+
 We would like to find the fattest cat. Order all our cats by weight.
 
 The two heaviest cats should both be 1st. The next heaviest should be 3rd.
@@ -297,8 +309,8 @@ select rank() over (order by weight desc) as ranking, weight, name
 from cats order by ranking, name DESC
 ```
 
-Q5: Quartiles
-==============
+### Q5: Quartiles
+
 We are worried our cats are too fat and need to diet.
 We would like to group the cats into quartiles by their weight.
 Return: name, weight, weight_quartile
@@ -307,8 +319,8 @@ Order by: weight
 select name, weight, ntile(4) over ( order by weight) as weight_quartile from cats order by weight_quartile, name
 ```
 
-Q6: Ranking
-=====================
+### Q6: Ranking
+
 For cats age means seniority, we would like to rank the cats by age (oldest first).
 However we would like their ranking to be sequentially increasing.
 Return: ranking, name, age
@@ -317,8 +329,8 @@ Order by: ranking, name
 select dense_rank() over (order by age DESC) as r, name,age from cats order by r, name
 ```
 
-Q7 Compare to Previous Row
-==============================
+### Q7: Compare to Previous Row
+
 Cats are fickle. Each cat would like to lose weight to be the equivalent weight of the cat weighing just less than it.
 
 Print a list of cats, their weights and the weight difference between them and the nearest lighter cat ordered by weight.
