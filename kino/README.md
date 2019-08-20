@@ -6,6 +6,8 @@
 
 <https://youtu.be/8DRRyAh9OnQ> Blues
 
+<https://www.youtube.com/watch?v=g5wlBqWSgxk> Vysotsky
+
 ## Kino
 
 <https://filmzonyoutube.d3.ru/> . youtube
