@@ -4,6 +4,8 @@
 
 <https://www.youtube.com/watch?v=_TeyBKMITqs> . Egorov
 
+<https://youtu.be/8DRRyAh9OnQ> Blues
+
 ## Kino
 
 <https://filmzonyoutube.d3.ru/> . youtube
