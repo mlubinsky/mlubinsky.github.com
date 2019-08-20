@@ -1,5 +1,9 @@
 поэтом можешь ты не быть, а композитором не можешь.
 
+## Music
+
+<https://www.youtube.com/watch?v=_TeyBKMITqs> . Egorov
+
 ## Kino
 
 <https://filmzonyoutube.d3.ru/> . youtube
