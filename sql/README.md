@@ -8,6 +8,32 @@
 <https://dankleiman.com/2018/02/06/3-ways-to-level-up-your-sql-as-a-software-engineer/>
 You can use LAG() to reference previous rows
 
+
+### COUNT() vs SUM()
+```
+create table events(event_type int, time timestamp);
+insert into events values(1, '2019-07-25 17:50:00');
+insert into events values(1, '2019-07-25 17:50:00');
+insert into events values(2, '2019-07-25 17:50:00');
+insert into events values(1, '2019-07-25 18:00:00');
+
+select event_type, time, count(*) as cnt from events group by time, event_type;
+
+ event_type |        time            | cnt  
+    2       |   2019-07-25 17:50:00  | 1
+    1       |   2019-07-25 17:50:00  | 2
+    1       |   2019-07-25 17:50:00  | 1
+    
+select event_type,  sum(cnt) as total,  count(*) from 
+( select event_type, time, count(*) as cnt from events group by time, event_type order by time) A
+group by event_type;
+
+event_type | total | count
+2	            1	       1
+1	            3	       2
+    
+```
+
 ## ISNULL() COALESCE()
 PostgreSQL does not have the ISNULL() function. However, you can use the COALESCE function which provides the similar functionality. Note that the COALESCE function returns the first non-null argument, so the following syntax has the similar effect as the ISNULL function above: COALESCE(expression,replacement)
 Also, in addition to COALESCE you can use CASE expression:
