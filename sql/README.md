@@ -32,6 +32,13 @@ event_type | total | count
 2	            1	       1
 1	            3	       2
     
+    We want to count the missing timestamps as real records with count=0 for calculating the real average:
+    
+select A.event_type,  sum(A.cnt) as total,  count(*) , 
+       avg(cnt), (sum(A.cnt) / B.number_of_distinct_timestamps) as real_average  from 
+( select event_type, time, count(*) as cnt from events group by time, event_type order by time) A,
+(select count (distinct time) as number_of_distinct_timestamps from events) B
+group by event_type, B.number_of_distinct_timestamps    
 ```
 
 ## ISNULL() COALESCE()
