@@ -56,6 +56,38 @@ select A.event_type,  sum(A.cnt) as total,  count(*) ,
 (select count (distinct time) as number_of_distinct_timestamps from events) B
 group by event_type, B.number_of_distinct_timestamps    
 ```
+## Example
+```
+CREATE TABLE D (dev_id int, name text);
+INSERT INTO D VALUES(1,'a'),(2,'b'), (3,'c') ;
+
+CREATE TABLE A (t timestamp, dev_id int, val int);
+INSERT INTO A VALUES
+('2015-01-20 17:00', 1, -10),
+('2015-01-20 17:00', 1, -11),
+('2015-01-20 17:00', 2, -7),
+('2015-01-20 18:00', 1, -5),
+('2015-01-20 18:00', 1, -6)
+;
+
+-- Calculate average load per device per timestamp
+
+SELECT A1.t, B.dev_id, COALESCE(C.cnt,0) as cnt FROM
+(SELECT  DISTINCT t FROM A) A1
+CROSS JOIN 
+( SELECT dev_id FROM D ) B
+LEFT JOIN 
+(select t, dev_id, count(*) as cnt from A group by t, dev_id) C
+ON C.dev_id = B.dev_id and C.t = A1.t
+
+     t	               dev_id	 cnt
+2015-01-20 17:00:00	   1	      2
+2015-01-20 17:00:00	   2	      1
+2015-01-20 17:00:00	   3	      0
+2015-01-20 18:00:00	   1	      2
+2015-01-20 18:00:00	   2      	0
+2015-01-20 18:00:00	   3	      0
+```
 
 ## ISNULL() COALESCE()
 PostgreSQL does not have the ISNULL() function. However, you can use the COALESCE function which provides the similar functionality. Note that the COALESCE function returns the first non-null argument, so the following syntax has the similar effect as the ISNULL function above: COALESCE(expression,replacement)
