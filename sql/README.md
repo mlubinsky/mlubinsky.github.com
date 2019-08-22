@@ -63,32 +63,43 @@ INSERT INTO D VALUES(1,'a'),(2,'b'), (3,'c') ;
 
 CREATE TABLE A (t timestamp, dev_id int, val int);
 INSERT INTO A VALUES
-('2015-01-20 17:00', 1, -10),
-('2015-01-20 17:00', 1, -11),
-('2015-01-20 17:00', 2, -7),
+('2015-01-20 17:45', 1, -10),
+('2015-01-20 17:45', 1, -11),
 
-('2015-01-20 18:00', 1, -5),
-('2015-01-20 18:00', 1, -6)
+('2015-01-20 17:55', 1, -7),
+('2015-01-20 17:55', 2, -7),
+
+('2015-01-20 18:10', 1, -5),
+('2015-01-20 18:10', 1, -6)
 ;
 
--- Calculate average load per device per timestamp
 
-SELECT A1.t, A1.n_points, B.dev_id, COALESCE(C.cnt,0) FROM
-(SELECT  t, count(*) as n_points FROM A GROUP BY t) A1
-CROSS JOIN 
-( SELECT dev_id FROM D ) B
-LEFT JOIN 
-( SELECT t, dev_id, count(*) as cnt FROM A GROUP BY t, dev_id) C
-ON C.dev_id = B.dev_id and C.t = A1.t
+-> get number of distinct timestamps per hourly interval
+select date_trunc('hour',t) span, count(distinct t) as span_points FROM A GROUP BY span
 
-t	                  n_points	dev_id	coalesce
-2015-01-20 18:00:00	2	       1	       2
-2015-01-20 18:00:00	2	       2	       0
-2015-01-20 18:00:00	2	       3	       0
-2015-01-20 17:00:00	3	       1	       2
-2015-01-20 17:00:00	3	       2	       1
-2015-01-20 17:00:00	3	       3	       0
- 
+-> get number of records  per hourly interval per device
+SELECT  date_trunc('hour',t) span , dev_id, count(*) as dev_points FROM A GROUP BY dev_id, span
+
+-> average load per device per timestamp = 
+number of records  per hourly span per device / number of distinct timestamps per hourly interval
+
+select X.span, X.dev_id, Y.dev_points, X.span_points, COALESCE(Y.dev_points/X.span_points::float,0) as load FROM
+( 
+  SELECT D.dev_id, B.span, B.span_points FROM (select date_trunc('hour',t) span, count(distinct t) as span_points FROM A GROUP BY span) B 
+  CROSS JOIN D
+) X
+LEFT JOIN
+(SELECT  date_trunc('hour',t) span , dev_id, count(*) as dev_points FROM A GROUP BY dev_id, span) Y
+ON (X.span=Y.span AND X.dev_id=Y.dev_id)
+
+span	dev_id	dev_points	span_points	load
+2015-01-20 17:00:00	1	3	   2	       1.5
+2015-01-20 17:00:00	2	1	   2	       0.5
+2015-01-20 17:00:00	3	NULL	2	       0
+2015-01-20 18:00:00	1	2	   1	       2
+2015-01-20 18:00:00	2	NULL	1       	0
+2015-01-20 18:00:00	3	NULL	1	       0
+
 ```
 
 ## ISNULL() COALESCE()
