@@ -92,13 +92,13 @@ LEFT JOIN
 (SELECT  date_trunc('hour',t) span , dev_id, count(*) as dev_points FROM A GROUP BY dev_id, span) Y
 ON (X.span=Y.span AND X.dev_id=Y.dev_id)
 
-span	dev_id	dev_points	span_points	load
-2015-01-20 17:00:00	1	3	   2	       1.5
-2015-01-20 17:00:00	2	1	   2	       0.5
-2015-01-20 17:00:00	3	NULL	2	       0
-2015-01-20 18:00:00	1	2	   1	       2
-2015-01-20 18:00:00	2	NULL	1       	0
-2015-01-20 18:00:00	3	NULL	1	       0
+span	           dev_id	 dev_points	span_points	load
+2015-01-20 17:00:00	1	        3	      2	       1.5
+2015-01-20 17:00:00	2	        1	      2	       0.5
+2015-01-20 17:00:00	3	        NULL	   2	       0
+2015-01-20 18:00:00	1	        2	      1	       2
+2015-01-20 18:00:00	2	        NULL	   1       	0
+2015-01-20 18:00:00	3	        NULL	   1	       0
 
 ```
 
