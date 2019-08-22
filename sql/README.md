@@ -8,7 +8,23 @@
 <https://dankleiman.com/2018/02/06/3-ways-to-level-up-your-sql-as-a-software-engineer/>
 You can use LAG() to reference previous rows
 
+## LEFT JOIN
+```
+create table T1 (x int);
+insert into T1 VALUES (1),(2),(3);
 
+create table T2 (y int);
+insert into T2 VALUES (1),(1),(2); 
+
+Number of rec in dest table > N of rec in left table 
+SELECT T1.*, T2.* FROM T1 LEFT JOIN T2 ON ( T1.x=T2.y )
+X Y
+1	1
+1	1
+2	2
+3	NULL
+
+```
 ### COUNT() vs SUM()
 ```
 create table events(event_type int, time timestamp);
