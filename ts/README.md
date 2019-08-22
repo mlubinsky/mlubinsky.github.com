@@ -1,5 +1,7 @@
 ## Time Series DB
 
+<https://news.ycombinator.com/item?id=20760324> 
+
 <https://blog.twitter.com/engineering/en_us/topics/infrastructure/2019/metricsdb.html>
 
 <https://habr.com/ru/company/itsumma/blog/462111/>
