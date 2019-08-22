@@ -66,27 +66,29 @@ INSERT INTO A VALUES
 ('2015-01-20 17:00', 1, -10),
 ('2015-01-20 17:00', 1, -11),
 ('2015-01-20 17:00', 2, -7),
+
 ('2015-01-20 18:00', 1, -5),
 ('2015-01-20 18:00', 1, -6)
 ;
 
 -- Calculate average load per device per timestamp
 
-SELECT A1.t, B.dev_id, COALESCE(C.cnt,0) as cnt FROM
-(SELECT  DISTINCT t FROM A) A1
+SELECT A1.t, A1.n_points, B.dev_id, COALESCE(C.cnt,0) FROM
+(SELECT  t, count(*) as n_points FROM A GROUP BY t) A1
 CROSS JOIN 
 ( SELECT dev_id FROM D ) B
 LEFT JOIN 
-(select t, dev_id, count(*) as cnt from A group by t, dev_id) C
+( SELECT t, dev_id, count(*) as cnt FROM A GROUP BY t, dev_id) C
 ON C.dev_id = B.dev_id and C.t = A1.t
 
-     t	               dev_id	 cnt
-2015-01-20 17:00:00	   1	      2
-2015-01-20 17:00:00	   2	      1
-2015-01-20 17:00:00	   3	      0
-2015-01-20 18:00:00	   1	      2
-2015-01-20 18:00:00	   2      	0
-2015-01-20 18:00:00	   3	      0
+t	                  n_points	dev_id	coalesce
+2015-01-20 18:00:00	2	       1	       2
+2015-01-20 18:00:00	2	       2	       0
+2015-01-20 18:00:00	2	       3	       0
+2015-01-20 17:00:00	3	       1	       2
+2015-01-20 17:00:00	3	       2	       1
+2015-01-20 17:00:00	3	       3	       0
+ 
 ```
 
 ## ISNULL() COALESCE()
