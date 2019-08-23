@@ -1,5 +1,7 @@
 <https://www.levels.fyi/> salary in high tech companies
 
+<https://habr.com/ru/post/464757/> how to optimize linked in profile
+
 <https://medium.mybridge.co/>
 
 <https://teach-in.ru> . lectures (physics and math) from Moscow State University
