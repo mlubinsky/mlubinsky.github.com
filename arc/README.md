@@ -2,6 +2,8 @@
 
 <https://blog.pragmaticengineer.com/operating-a-high-scale-distributed-system/>
 
+<https://martinfowler.com/architecture/>
+
 <https://news.ycombinator.com/item?id=20562733>
 
 <https://habr.com/ru/company/piter/blog/461283/> System Design
