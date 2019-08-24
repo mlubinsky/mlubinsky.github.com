@@ -4,6 +4,8 @@
 
 <https://github.com/sharpden/python-infrastructure>
 
+<https://seddonym.me/2019/08/03/ioc-techniques/> inversion of control
+
 How to start python http server:
 
 python -m SimpleHTTPServer <8000> (python2)
