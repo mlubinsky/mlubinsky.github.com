@@ -1,3 +1,5 @@
+https://www.reddit.com/r/javascript/comments/cti3xs/why_you_should_use_eslint_prettier_and/
+
 ## VIM
 
 <http://ismail.badawi.io/blog/2014/04/23/the-compositional-nature-of-vim/>
