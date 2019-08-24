@@ -1,5 +1,7 @@
 https://mlwhiz.com/blog/2015/05/09/hadoop_mapreduce_streaming_tricks_and_technique/
 
+https://www.tutorialandexample.com/hadoop-interview-questions
+
 https://engineering.linkedin.com/blog/2019/02/the-present-and-future-of-apache-hadoop--a-community-meetup-at-l
 
 HBASE
