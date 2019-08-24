@@ -4,7 +4,7 @@
 
 <https://hacks.mozilla.org/category/es6-in-depth/>
 
-<<https://habr.com/ru/post/460741/> ES6>
+<<https://habr.com/ru/post/460741/> ES6
 
 <https://eloquentjavascript.net/>
 
@@ -12,6 +12,8 @@
 
 
 <https://habr.com/ru/post/464163/> "this" in JS
+
+<https://www.reddit.com/r/algorithms/comments/cqf7dl/data_structures_and_algorithms_in_javascript/>
 
 ## Spread syntax
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax>
