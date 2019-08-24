@@ -14,6 +14,9 @@ Python
 <https://eggerapps.at/postico/> Postico 
 <https://tableplus.io/> TablePlus
 
+## Trigger
+<https://medium.com/@deb3007/trigger-function-in-postgresql-22e118bb082d>
+
 ## SQL
 ```
 select distinct on (s.device_id) s.time, d.group_name, s.value 
