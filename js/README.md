@@ -75,6 +75,8 @@ Array.map, Array.reduce, Array.filter, Array.sort, Object.keys, Object.values.
 ## map reduce filter
 <https://medium.com/sanjagh/iterating-over-javascript-objects-declaratively-or-how-to-map-filter-and-reduce-on-objects-d179cd40d935>
 
+<https://www.reddit.com/r/javascript/comments/ct6o5d/higherorder_functions_map_filter_and_reduce/>
+
 ## Passing function as parameters
 <https://nick.scialli.me/first-class-functions-in-javascript/> \
 <https://pietschsoft.com/post/2019/07/24/call-functions-in-javascript>
