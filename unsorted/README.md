@@ -31,6 +31,7 @@
 
 <https://www.uncommongoods.com/fun/by-interest/geek-gifts>
 
+<https://www.amazon.com/iOttie-Dashboard-Windshield-Samsung-Smartphone/dp/B076B27WP6> Phone Holder for Car
 
 ## Browser extension for JSON: JsonDiscovery
 <https://habr.com/ru/post/461185/> 
