@@ -10,6 +10,9 @@
 
 <https://www.youtube.com/watch?v=ZgdS0EUmn70>
 
+
+<https://github.com/dagster-io/dagster> Duster
+
 <https://habr.com/ru/post/454668/>
 ```
 важно разделить бизнес-требования и функциональные требования
