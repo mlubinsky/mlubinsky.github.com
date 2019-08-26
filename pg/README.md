@@ -3,6 +3,11 @@
 <https://gist.github.com/clhenrick/ebc8dc779fb6f5ee6a88>
 
 
+Combined index vs separate index 
+<https://www.cybertec-postgresql.com/en/combined-indexes-vs-separate-indexes-in-postgresql/>
+
+
+
 Python
 <https://www.pgcli.com/> pgcli instead psql
 <https://hakibenita.com/fast-load-data-python-postgresql>
