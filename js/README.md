@@ -4,6 +4,8 @@
 
 <https://hacks.mozilla.org/category/es6-in-depth/>
 
+<https://itnext.io/javascript-things-newbies-should-know-e04bab10449f>
+
 <<https://habr.com/ru/post/460741/> ES6
 
 <https://eloquentjavascript.net/>
