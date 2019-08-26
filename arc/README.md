@@ -2,6 +2,8 @@
 
 <https://blog.pragmaticengineer.com/operating-a-high-scale-distributed-system/>
 
+<http://blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html>
+
 <https://martinfowler.com/architecture/>
 
 <https://news.ycombinator.com/item?id=20562733>
