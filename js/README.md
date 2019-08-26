@@ -18,19 +18,10 @@
 ## Spread syntax
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax>
 
-## How to start python http server:
+## Debouncing and throtting:
 
-python -m SimpleHTTPServer <8000> (python2)
+<https://www.telerik.com/blogs/debouncing-and-throttling-in-javascript>
 
-python3 -m http.server <8000> (python3)
-
-http://192.168.1.2:8000
-
-http://127.0.0.1:8000
-
-If the directory has a file named index.html, that file will be displayed.
-
-If there is no index.html, then the files in the directory will be listed.
 
 
 ## SVG
