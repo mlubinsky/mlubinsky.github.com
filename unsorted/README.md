@@ -9,6 +9,8 @@
 <https://openedu.ru/>
 
 <https://cvcompiler.com/blog/facelift-your-it-resume-to-get-more-interviews/> Resume
+
+<https://news.ycombinator.com/item?id=20801847> not technical podcasts
 ## Gifts
 
 <https://www.icanvas.com/> Paining Eric Waugh, Gustav Klimt 
