@@ -100,6 +100,20 @@ PostgreSQL FIRST_VALUE Function
 ```
 ##  DateTime
 
+Don't use BETWEEN (especially with timestamps)
+Why not?
+BETWEEN uses a closed-interval comparison: the values of both ends of the specified range are included in the result.
+
+This is a particular problem with queries of the form
+```
+SELECT * FROM blah WHERE timestampcol BETWEEN '2018-06-01' AND '2018-06-08'
+```
+This will include results where the timestamp is exactly 2018-06-08 00:00:00.000000, but not timestamps later in that same day. So the query might seem to work, but as soon as you get an entry exactly on midnight, you'll end up double-counting it.
+
+Instead, do:
+```
+SELECT * FROM blah WHERE timestampcol >= '2018-06-01' AND timestampcol < '2018-06-08'
+```
 <https://mode.com/blog/postgres-sql-date-functions>
 
 <https://dba.stackexchange.com/questions/185192/join-2-tables-by-closest-time-postgresql-9-6>
