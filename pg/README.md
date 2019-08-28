@@ -1,5 +1,8 @@
 ## Postgres
 
+<https://wiki.postgresql.org/wiki/Don%27t_Do_This>
+
+
 <https://gist.github.com/clhenrick/ebc8dc779fb6f5ee6a88>
 
 
