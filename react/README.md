@@ -22,6 +22,8 @@
 <https://contextneutral.com/story/react-101-things-every-beginner-should-know>
 
 
+<https://habr.com/ru/post/465685/>
+
 <http://www.theweekofreact.com/>
 
 <https://scrimba.com/g/glearnreact>
