@@ -81,6 +81,8 @@ jp is better jq <https://github.com/jmespath/jp>
 ## English 
 <https://stepik.org/course/3124>
 
+<https://habr.com/ru/post/465731/>
+
 <https://forvo.com/>
 
 <https://youglish.com/>
