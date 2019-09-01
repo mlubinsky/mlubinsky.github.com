@@ -13,6 +13,8 @@ or forecast a signal for some point and test if this point value varies from the
 
 <http://www.vldb.org/pvldb/vol10/p1358-rong.pdf>
 
+<https://github.com/MateLabs/AutoOut> Outlier detection
+
 <https://habrahabr.ru/post/344762/>
 
 <https://www.youtube.com/watch?v=9EYmmOz1db0>
