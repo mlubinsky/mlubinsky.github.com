@@ -2,6 +2,8 @@
 
 <https://blog.pragmaticengineer.com/operating-a-high-scale-distributed-system/>
 
+<https://herbertograca.com/2019/08/12/documenting-software-architecture/>
+
 <http://blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html>
 
 <https://martinfowler.com/architecture/>
