@@ -242,6 +242,8 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 <https://github.com/darkleaf/app-from-scratch/> Clojure Rus
 
+<https://news.ycombinator.com/item?id=20857887>
+
 ## youtube programming
 
 <https://techyaks.com/>
