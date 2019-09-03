@@ -107,12 +107,19 @@ https://github.com/BurntSushi/xsv
 
 <h2> HTTP cURL httpie</h2>
 
-https://github.com/asciimoo/wuzz
 https://jvns.ca/blog/2019/08/27/curl-exercises/
 https://catonmat.net/cookbooks/curl
+
+
+https://github.com/asciimoo/wuzz
 httpie  https://github.com/jakubroztocil/httpie  - curl alternative
 insomnia
 postmam
+
+in my .bash_aliases
+This will output the HTTP status code for a given URL.
+
+     alias hstat="curl -o /dev/null --silent --head --write-out '%{http_code}\n'" $1  
 
 
 <h2> MS Excel </h2>
