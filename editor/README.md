@@ -1,4 +1,4 @@
-<https://www.reddit.com/r/javascript/comments/cti3xs/why_you_should_use_eslint_prettier_and/
+<https://www.reddit.com/r/javascript/comments/cti3xs/why_you_should_use_eslint_prettier_and/>
 
 <https://www.freecodecamp.org/news/the-guide-to-using-eslint-and-prettier-in-a-react-app/>
 
