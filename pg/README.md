@@ -17,6 +17,26 @@ Python
 
 <https://news.ycombinator.com/item?id=20399294>
 
+
+https://blog.timescale.com/scaling-partitioning-data-postgresql-10-explained-cd48a712a9a1
+
+http://www.craigkerstiens.com/categories/postgresql/
+
+https://severalnines.com/blog/understanding-and-reading-postgresql-system-catalog
+
+https://rob.conery.io/2018/08/01/simple-monthly-reports-in-postgresql-using-generate_series/   
+
+https://habrahabr.ru/post/340460/
+
+https://10clouds.com/blog/postgresql-10/
+
+https://news.ycombinator.com/item?id=15634953
+
+http://vvvvalvalval.github.io/posts/using-postgresql-temporary-views-for-expressing-business-logic.html
+
+https://severalnines.com/blog/using-kubernetes-deploy-postgresql
+
+
 ## UI Clients 
 <https://www.macpostgresclient.com/> . SQLPlus 
 <https://eggerapps.at/postico/> Postico 
