@@ -6,7 +6,7 @@
 
 <https://habr.com/ru/company/mailru/blog/460307/>
 
-
+<https://sahnimanas.github.io/post/anatomy-of-a-high-performance-convolution/> convolution 
 <https://www.dlology.com/blog/how-to-train-an-object-detection-model-easy-for-free/>
 
 ## Image processing without NN
