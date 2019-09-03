@@ -48,6 +48,8 @@ model.compile(loss='categorical_crossentropy',
 
 ## Tensorflow
 
+<https://habr.com/ru/post/465745/> 
+
 <https://habr.com/ru/post/453482/> Введение в глубокое обучение с использованием TensorFlow
 
 <https://habr.com/ru/post/453558/>
