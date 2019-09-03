@@ -1,5 +1,8 @@
 <https://runjs.dev/>
 
+<https://kentcdodds.com/blog/javascript-to-know-for-react>
+
+
 ## React
 
 <https://reactjs.org/docs/getting-started.html>
@@ -54,6 +57,7 @@
 ## Destructing objects in ES6
 
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment>  
+
 <https://css-tricks.com/new-favorite-es6-toy-destructured-objects-parameters/>
 ```
 const o = {chico: 1, harpo: 2, groucho: 3};
