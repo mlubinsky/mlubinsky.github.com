@@ -3,6 +3,8 @@
 ## RabbitMQ
 <https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6>
 
+<https://blog.theodo.com/2019/08/event-driven-architectures-rabbitmq/>
+
 <https://www.erlang-solutions.com/blog/rabbit-s-anatomy-understanding-topic-exchanges.html>
 
 ## RabbitMQ vs Kafka
