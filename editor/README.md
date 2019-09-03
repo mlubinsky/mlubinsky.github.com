@@ -24,6 +24,8 @@ https://www.reddit.com/r/javascript/comments/cti3xs/why_you_should_use_eslint_pr
 
 <https://github.com/morhetz/gruvbox/wiki/Installation> Color sheme gruvebox
 
+
+
 ## Visual Studio Code
 <https://dev.to/lampewebdev/the-guide-to-visual-studio-code-shortcuts-higher-productivity-and-30-of-my-favourite-shortcuts-you-need-to-learn-mb3>
 
