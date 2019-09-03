@@ -17,6 +17,9 @@
 
 <https://www.reddit.com/r/algorithms/comments/cqf7dl/data_structures_and_algorithms_in_javascript/>
 
+
+<https://kentcdodds.com/blog/javascript-to-know-for-react>
+
 ## Spread syntax
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax>
 
