@@ -77,19 +77,7 @@ jp is better jq <https://github.com/jmespath/jp>
 ## San Francisco
 
 <https://andresol.livejournal.com/tag/sf>
-
-## English 
-<https://stepik.org/course/3124>
-
-<https://habr.com/ru/post/465731/>
-
-<https://forvo.com/>
-
-<https://youglish.com/>
-
-<http://cartalana.org/067book-content.php>
-
-<https://medium.com/fantageek/improving-communication-english-pronunciation-108074236c80>
+ 
 
 ## Best computer resources for startups 
 <https://news.ycombinator.com/item?id=20225118>
