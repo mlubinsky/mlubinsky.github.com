@@ -101,6 +101,8 @@ configure	  kafka.properties.template  mesos-setup.sh
 docker-utils.jar  launch		     run
 ensure		  log4j.properties.template  tools-log4j.properties.template
  
+<https://habr.com/ru/company/avito/blog/465315/> 
+ 
 <https://multithreaded.stitchfix.com/blog/2018/09/05/datahighway/>
 
 <https://medium.com/@itseranga>
