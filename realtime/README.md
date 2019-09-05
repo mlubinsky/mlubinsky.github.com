@@ -3,6 +3,9 @@
 
 <https://www.freecodecamp.org/news/5-ways-to-build-real-time-apps-with-javascript-5f4d8fe259f7/>
 
+
+<https://news.ycombinator.com/item?id=20887708> d3.js
+
 1. Long-Polling: This is the net equivalent of kids asking “are we there yet?” every five minutes
 ```
 (function poll(){   
