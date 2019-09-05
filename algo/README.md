@@ -1,5 +1,7 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://medium.com/@alexgolec/google-interview-problems-ratio-finder-d7aa8bf201e3>
+
 <https://classicproblems.com/>
 
 <https://teachyourselfcs.com/>
