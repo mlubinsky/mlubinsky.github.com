@@ -1,5 +1,7 @@
 <https://github.com/ARM-software/ML-examples>
 
+<https://www.youtube.com/watch?v=_6sh097Dk5k>
+
 <https://developer.arm.com/ip-products/processors/machine-learning/arm-ml-processor>
 
 <https://habr.com/ru/post/445936/>
