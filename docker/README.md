@@ -16,7 +16,37 @@
 
 <https://www.infoq.com/presentations/ing-docker-hadoop> . Docker Data Science Pipeline
 
-Flask and Docker
+## Nodejs 
+<https://habr.com/ru/post/466493/>
+```
+docker pull node
+docker run -it -d --rm -v "$PWD":/app -w=/app -p 80:3000 node node index.js 
+```
+Но на одном CLI далеко не уедешь. Давайте создадим Dockerfile для нашего сервера.
+собрать из этого Dockerfile образ, который мы будем деплоить:
+
+Dockerfile 
+```
+FROM node
+ 
+WORKDIR /app
+RUN cp . /app
+ 
+CMD ["node", "index.js"]
+```
+собрать из этого Dockerfile образ, который мы будем деплоить:
+ ```
+ docker build -t username/helloworld-with-docker:0.1.0.
+```
+контейнер готов. Мы можем запускать его при помощи команды docker run. Таким образом, мы решаем vendor lock-in проблему. Запуск приложения уже не зависит от окружения. Код доставляется вместе с Docker образом. Эти два критерия позволяют нам деплоить приложение в любое место, где мы можем запустить Docker.
+
+сам процесс деплоя уже становится делом техники и вашего окружения разработки. Мы рассмотрим 2 варианта деплоя Docker:
+
+ручной деплой Docker образа;
+деплой при помощи Travis-CI.
+... 
+
+## Flask and Docker
 https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-18-04
 
 
