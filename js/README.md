@@ -6,7 +6,7 @@
 
 <https://itnext.io/javascript-things-newbies-should-know-e04bab10449f>
 
-<<https://habr.com/ru/post/460741/> ES6
+<https://habr.com/ru/post/460741/> ES6
 
 <https://eloquentjavascript.net/>
 
@@ -60,6 +60,34 @@ Array.map, Array.reduce, Array.filter, Array.sort, Object.keys, Object.values.
 <https://devinduct.com/cheatsheet/8/array-operations>
 
 <https://medium.com/better-programming/3-different-ways-to-combine-arrays-in-javascript-b273c9225e0d>
+
+
+## loop break issue
+This won't work anyway because break only works inside a loop, not a callback.
+```
+var listHasPilots = false;
+operatives.forEach(function (operative) {
+  if (operative.pilot) {
+    listHasPilots = true;
+    break;   
+  }
+});
+```
+ Instead:
+```
+var listHasPilots = false;
+for (const operative of operatives) {
+  if (operative.pilot) {
+    listHasPilots = true;
+    break;
+  }
+});
+```
+
+## some find every
+<https://medium.com/poka-techblog/simplify-your-javascript-use-some-and-find-f9fb9826ddfd>
+
+"has" already has a meaning of "key exists in object", such as in Map.prototype.has() and Set.prototype.has(), which are equivalent to Object.prototype.hasOwnProperty().
 
 ## Immutable object
 <https://ultimatecourses.com/blog/all-about-immutable-arrays-and-objects-in-javascript>
