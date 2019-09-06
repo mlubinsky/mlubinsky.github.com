@@ -1,5 +1,9 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://firstround.com/review/40-favorite-interview-questions-from-some-of-the-sharpest-folks-we-know/>
+
+<https://news.ycombinator.com/item?id=20897510>
+
 <https://medium.com/@alexgolec/google-interview-problems-ratio-finder-d7aa8bf201e3>
 
 <https://classicproblems.com/>
