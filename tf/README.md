@@ -3,6 +3,9 @@
 <https://github.com/omerbsezer/Fast-Pytorch>
 
 ## Keras
+
+<https://www.reddit.com/r/learnmachinelearning/comments/czkf78/learn_keras_in_one_video/>
+
 <https://habr.com/ru/company/ods/blog/325432/>
 
 <https://habr.com/ru/post/453558/>
