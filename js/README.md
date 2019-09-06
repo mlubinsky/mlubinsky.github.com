@@ -340,6 +340,13 @@ var flattened = [[0, 1], [2, 3], [4, 5]].reduce((a, b) => {return a.concat(b);},
 ```
 
 ## Async await promises
+```
+ (function a() { return 'a'; })();
+ // "a"
+
+ (async function a() { return 'a'; })();
+ // Promise {<resolved>: "a"}
+ ```
 
 <https://learn.javascript.ru/async-await>
 
