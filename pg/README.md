@@ -11,7 +11,7 @@ Combined index vs separate index
 
 
 
-Python
+## Python
 <https://www.pgcli.com/> pgcli instead psql
 <https://hakibenita.com/fast-load-data-python-postgresql>
 
@@ -24,6 +24,7 @@ http://www.craigkerstiens.com/categories/postgresql/
 
 https://severalnines.com/blog/understanding-and-reading-postgresql-system-catalog
 
+## Generate series
 https://rob.conery.io/2018/08/01/simple-monthly-reports-in-postgresql-using-generate_series/   
 
 https://habrahabr.ru/post/340460/
@@ -32,10 +33,13 @@ https://10clouds.com/blog/postgresql-10/
 
 https://news.ycombinator.com/item?id=15634953
 
+## Temporary view
 http://vvvvalvalval.github.io/posts/using-postgresql-temporary-views-for-expressing-business-logic.html
 
 https://severalnines.com/blog/using-kubernetes-deploy-postgresql
 
+##  STORED PROCEDURES
+<https://www.postgresql.org/docs/11/plpgsql-control-structures.html>
 
 ## UI Clients 
 <https://www.macpostgresclient.com/> . SQLPlus 
