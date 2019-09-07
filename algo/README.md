@@ -18,6 +18,8 @@
 
 <https://habr.com/ru/company/skillbox/blog/462979/>
 
+<https://blog.softwaremill.com/algebraic-data-types-in-four-languages-858788043d4e> Angebraic data types
+
 ## Fibonacci
 <https://habr.com/ru/post/449616/> 
 
