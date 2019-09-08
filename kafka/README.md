@@ -1,4 +1,5 @@
 
+<https://habr.com/ru/post/466385/>
 
 ## RabbitMQ
 <https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6>
