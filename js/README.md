@@ -1,3 +1,7 @@
+Don’t use console.log(obj), use 
+console.log(JSON.parse(JSON.stringify(obj))).
+
+
 <https://learn.javascript.ru/>
 
 <https://exploringjs.com/>
