@@ -351,6 +351,10 @@ var flattened = [[0, 1], [2, 3], [4, 5]].reduce((a, b) => {return a.concat(b);},
  (async function a() { return 'a'; })();
  // Promise {<resolved>: "a"}
  ```
+ How to wait for end of several promisses
+ ```
+ const arr = await Promise.all([ await1, await2 ]);
+ ```
 
 <https://learn.javascript.ru/async-await>
 
