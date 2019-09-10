@@ -123,11 +123,23 @@ PostgreSQL LAST_VALUE Function
 PostgreSQL FIRST_VALUE Function
 ```
 ##  DateTime
+<https://phili.pe/posts/timestamps-and-time-zones-in-postgresql/>
 
-Don't use BETWEEN (especially with timestamps)
-Why not?
+SET timezone TO 'Europe/Zurich';
+SELECT now();
+All timezone-aware dates and times are stored internally in UTC.
+```
+SELECT '2016-01-01 00:00+10'::timestamptz;
+      timestamptz
+------------------------
+ 2015-12-31 15:00:00+01
+``` 
+Timezone-aware dates and times are converted to local time in the zone specified by the TimeZone configuration parameter before being displayed to the client. 
+ 
+This timezone configuration has another effect. When parsing a timestamp that has no time zone designator (e.g. Z or ±hhmm), it will be assumed to be local to the currently set timezone: 
+
+Don't use BETWEEN (especially with timestamps)! Why not?
 BETWEEN uses a closed-interval comparison: the values of both ends of the specified range are included in the result.
-
 This is a particular problem with queries of the form
 ```
 SELECT * FROM blah WHERE timestampcol BETWEEN '2018-06-01' AND '2018-06-08'
@@ -791,7 +803,7 @@ http://www.databasesoup.com/2018/04/new-annotated-config-files-for.html    confi
 
 https://severalnines.com/blog/postgresql-tuning-key-things-drive-performance
 
-https://blog.2ndquadrant.com/scaling-iot-time-series-data-postgres-bdr/ time based partitioning
+https://blog.2ndquadrant.com/scaling-iot-time-series-data-postgres-bdr/ **time based partitioning**
 
 https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546
 
