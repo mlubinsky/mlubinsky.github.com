@@ -1,4 +1,5 @@
  
+ <https://www.youtube.com/watch?v=RtHA1YVLW5Y> JVM does this?
  
  An executable JAR is a just regular archive, with an included META-INF/manifest file 
  that says which "main" class should be the entry point. 
