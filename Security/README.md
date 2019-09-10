@@ -1,3 +1,9 @@
+## JWT
+
+<https://habr.com/ru/post/340146/>
+
+<https://habr.com/ru/post/466929/>
+
 ## TLS
 <https://mcuoneclipse.com/2017/04/14/introduction-to-security-and-tls-transport-security-layer/>
 
