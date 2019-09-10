@@ -2,6 +2,9 @@
 
 <https://kentcdodds.com/blog/javascript-to-know-for-react>
 
+## Docker
+
+<https://blog.quicklyreact.com/how-to-dockerize-reactjs/>
 
 ## React
 
