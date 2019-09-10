@@ -1,3 +1,15 @@
+Primitive types: это boolean, null, undefined, Number, String, Symbol, BigInt.
+```
+let x = 15;
+let y = "15";
+console.log(x+y);//здесь происходит "склеивание"
+console.log(x-y); // а здесь у нас происходит нормальное вычитание
+```
+<https://habr.com/ru/company/otus/blog/466873/>
+
+console.log(x instanceof Object.prototype.constructor);
+console.log(typeof(x));
+
 Don’t use console.log(obj), use 
 console.log(JSON.parse(JSON.stringify(obj))).
 
