@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/post/466929/>
 
+<https://blog.hasura.io/best-practices-of-using-jwt-with-graphql>
+
 ## TLS
 <https://mcuoneclipse.com/2017/04/14/introduction-to-security-and-tls-transport-security-layer/>
 
