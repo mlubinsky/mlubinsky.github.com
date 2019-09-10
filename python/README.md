@@ -1,3 +1,7 @@
+## Advanced topics
+
+<https://dev.libreneitor.com/expert-python-topics-you-should-know/>
+
 ## defaultdict
 
 Task: group words by their 1st letter.
