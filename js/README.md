@@ -356,6 +356,7 @@ var flattened = [[0, 1], [2, 3], [4, 5]].reduce((a, b) => {return a.concat(b);},
 ```
 
 ## Async await promises
+await must always be in an async function
 ```
  (function a() { return 'a'; })();
  // "a"
@@ -376,9 +377,16 @@ return db.query('SELECT * from products WHERE id = ?', id);
 }));
  ```
 
+
+The Promise.all() function takes an array of promises, and returns a promise that waits for every promise in the array to resolve and then resolves to an array that contains the value each promise in the original array resolved to. 
+
+Promise.all() is not the only way you can handle multiple async functions in parallel, there's also the Promise.race() function that executes multiple promises in parallel, waits for the first promise to resolve, and returns the value that promise resolved to.
+
 <https://learn.javascript.ru/async-await>
 
 <https://nikodunk.com/how-to-chain-functions-with-await-async/>
+
+<http://thecodebarbarian.com/common-async-await-design-patterns-in-node.js.html>
 
 <https://news.ycombinator.com/item?id=20682423>
 
