@@ -29,6 +29,8 @@
 
 <https://news.ycombinator.com/item?id=19216356>
 
+<https://www.reddit.com/r/programming/comments/d1tgmy/computing_fibonacci_numbers_in_olog_n_using/>  Computing Fibonacci Numbers In O(log n) using matrices and eigenvalues
+
 ## Monads
 
 <https://blog.kabir.sh/posts/inventing-monads.html>
