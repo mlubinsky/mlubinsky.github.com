@@ -224,6 +224,8 @@ const App = () => (
 
 <https://blog.logrocket.com/frustrations-with-react-hooks/>
 
+<https://news.ycombinator.com/item?id=20927031>
+
 ## Books
 <https://leanpub.com/reintroducing-react>
 
