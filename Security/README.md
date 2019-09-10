@@ -6,6 +6,8 @@
 
 <https://blog.hasura.io/best-practices-of-using-jwt-with-graphql>
 
+<https://www.reddit.com/r/reactjs/comments/ctnc88/whats_the_best_way_to_store_and_access_a_jwt_for/>
+
 ## TLS
 <https://mcuoneclipse.com/2017/04/14/introduction-to-security-and-tls-transport-security-layer/>
 
