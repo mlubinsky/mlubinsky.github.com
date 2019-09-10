@@ -654,6 +654,8 @@ PASCAL VOC предоставляет стандартизированные н�
 
 <https://habr.com/ru/post/451164/>
 
+<https://www.reddit.com/r/MachineLearning/comments/d1oyxf/research_rotated_mask_rcnn/>
+
 <https://medium.com/@ageitgey/snagging-parking-spaces-with-mask-r-cnn-and-python-955f2231c400>
 
 https://towardsdatascience.com/building-a-custom-mask-rcnn-model-with-tensorflow-object-detection-952f5b0c7ab4
