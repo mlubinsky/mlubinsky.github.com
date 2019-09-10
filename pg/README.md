@@ -125,6 +125,7 @@ PostgreSQL FIRST_VALUE Function
 ##  DateTime
 <https://phili.pe/posts/timestamps-and-time-zones-in-postgresql/>
 
+<https://stackoverflow.com/questions/48069425/converting-between-timezones-in-postgre>
 SET timezone TO 'Europe/Zurich';
 SELECT now();
 All timezone-aware dates and times are stored internally in UTC.
