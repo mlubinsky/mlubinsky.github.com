@@ -220,6 +220,8 @@ const App = () => (
 
 <https://www.youtube.com/watch?v=-MlNBTSg_Ww>  hooks
 
+<https://blog.logrocket.com/frustrations-with-react-hooks/>
+
 ## Books
 <https://leanpub.com/reintroducing-react>
 
