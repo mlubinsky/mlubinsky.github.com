@@ -286,6 +286,7 @@ serviceWorker.unregister();
 
 <https://nextjs.org/>
 ```
+https://www.youtube.com/playlist?list=PLUD4kD-wL_zaXhR4KU1CkUSIzh1TrvnzA#reactrally2019
 https://blog.logrocket.com/why-you-should-render-react-on-the-server-side-a50507163b79
 https://uber.github.io/react-vis/
 https://news.ycombinator.com/item?id=18562048 . Free react
