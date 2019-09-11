@@ -12,6 +12,7 @@
 
 <https://www.taniarascia.com/getting-started-with-react/> full project with source code
 
+
 ##  React Devtools for Chrome
 <https://reactjs.org/blog/2019/08/15/new-react-devtools.html>
 
@@ -31,6 +32,8 @@
 <https://habr.com/ru/post/465685/>
 
 <http://www.theweekofreact.com/>
+
+<https://overreacted.io/>
 
 <https://scrimba.com/g/glearnreact>
 
