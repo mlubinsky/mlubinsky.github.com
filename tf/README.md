@@ -1,3 +1,5 @@
+<https://www.reddit.com/r/Python/comments/cyslju/ai_cheatsheets_now_learn_tensorflow_keras_pytorch/>
+
 ## PyTorch
 
 <https://github.com/omerbsezer/Fast-Pytorch>
