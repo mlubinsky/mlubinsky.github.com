@@ -296,20 +296,23 @@ http://www.idoportal.com/
 
 ## Tennis
 <https://www.youtube.com/watch?v=3BHG9jCHALY> Forehand Tennis Lesson: Punish Short Balls
-<http://crunchtimecoaching.com/landing/youtubebackhand/> 
 
-<https://www.youtube.com/watch?v=NS_scoYsF0k> 
-<https://www.youtube.com/results?search_query=returning+weak+serve>
+<https://www.youtube.com/watch?v=-iojO8cI6Kg> Using the "Box" for Powerful and Stable Groundstrokes
 
-<https://www.youtube.com/watch?v=WB1Dx59xfrI> . Fore hand
+<http://crunchtimecoaching.com/landing/youtubebackhand/> Free Training Series Reveals How to add power and spin to your one handed backhand.. 
 
-<https://www.youtube.com/watch?v=o108fbM41ZA>
+<https://www.youtube.com/watch?v=NS_scoYsF0k> NO more EASY SHOTS for your opponent! Forehand Slice Mastery
+<https://www.youtube.com/results?search_query=returning+weak+serve> . returning weak serve
 
-<https://www.youtube.com/watch?v=k_iLAQnOsRY>
+<https://www.youtube.com/watch?v=WB1Dx59xfrI> . Forehand power
 
-<https://www.youtube.com/watch?v=re6rDiYr1PQ>
+<https://www.youtube.com/watch?v=o108fbM41ZA> How to Hit Cross Court and Down the Line in Tennis
 
-<https://www.youtube.com/watch?v=hO5zz-zeWkk>
+<https://www.youtube.com/watch?v=k_iLAQnOsRY> Tennis Forehand WRIST - Lag and Snap Explained
+
+<https://www.youtube.com/watch?v=re6rDiYr1PQ> 3 Drills To Improve Timing in Tennis
+
+<https://www.youtube.com/watch?v=hO5zz-zeWkk> Learn to hit your forehand harder
 
 <https://fitseven.ru/myschtsy/atlas-uprajneyniy/luchee-uprajnenie-na-press>
 
