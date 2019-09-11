@@ -43,7 +43,8 @@ console.log(JSON.parse(JSON.stringify(obj))).
 
 <https://www.telerik.com/blogs/debouncing-and-throttling-in-javascript>
 
-
+## closure
+<https://codesquery.com/javascript-closure/>
 
 ## SVG
 <https://www.kirupa.com/tricks/billion_ways_display_svg.htm> . working with SVG
