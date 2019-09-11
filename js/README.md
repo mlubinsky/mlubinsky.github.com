@@ -46,6 +46,10 @@ console.log(JSON.parse(JSON.stringify(obj))).
 ## closure
 <https://codesquery.com/javascript-closure/>
 
+## DOM manipulation
+
+<https://itnext.io/using-the-dom-like-a-pro-163a6c552eba>
+
 ## SVG
 <https://www.kirupa.com/tricks/billion_ways_display_svg.htm> . working with SVG
 
