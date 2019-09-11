@@ -220,9 +220,6 @@ Live calculation in browser
 https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 
-## TLS
-<https://tls.ulfheim.net/> TLS explained
-
 
 ## Clojure
 
@@ -243,6 +240,7 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 <https://www.youtube.com/user/schafer5/videos>
 
 <https://habr.com/ru/company/englishdom/blog/438066/> .  different youtube links
+
 ## Talk
 <https://news.ycombinator.com/item?id=18831374>
 
@@ -289,8 +287,12 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 <https://news.ycombinator.com/item?id=18923169> fasting
 
-##  Exersize
+##  Exercise
 https://en.wikipedia.org/wiki/Calisthenics
+
+<https://fitseven.ru/myschtsy/atlas-uprajneyniy/luchee-uprajnenie-na-press>
+
+<https://zen.yandex.ru/calisthenic>
 
 http://www.idoportal.com/
 
@@ -314,24 +316,22 @@ http://www.idoportal.com/
 
 <https://www.youtube.com/watch?v=hO5zz-zeWkk> Learn to hit your forehand harder
 
-<https://fitseven.ru/myschtsy/atlas-uprajneyniy/luchee-uprajnenie-na-press>
 
-<https://zen.yandex.ru/calisthenic>
 
-<https://www.youtube.com/watch?v=gWTvbXyg2HM>
+<https://www.youtube.com/watch?v=gWTvbXyg2HM> 5 Days To A Killer Tennis Forehand - Day 1: Swing Technique
 
 <https://www.youtube.com/watch?v=9zArtR4OhV8&list=PLbTEk_63h_nuEqmUugLqw0D_DHT813lgt&index=3>
 
 <https://www.youtube.com/watch?v=VqZyiqQrNG8&index=2&list=PLbTEk_63h_nuEqmUugLqw0D_DHT813lgt>
 
-<https://www.youtube.com/watch?v=0cAIwWcDfdg>
+<https://www.youtube.com/watch?v=0cAIwWcDfdg> Как играть с соперником, который держит мяч (тактические приемы в теннисе)
 
-<https://www.youtube.com/watch?v=H3K9y8ptQ0s>
+<https://www.youtube.com/watch?v=H3K9y8ptQ0s> Two Tennis Tips That Work Better Than "Swing Low To High"
 
-<https://www.youtube.com/watch?v=6TrKHZzetpc>
+<https://www.youtube.com/watch?v=6TrKHZzetpc> How To Play Tennis - Forehand - How To Hit Powerful Forehands
 
-<https://www.youtube.com/watch?v=mbwbpta1Bxw>
+<https://www.youtube.com/watch?v=mbwbpta1Bxw> How To Hit Tennis Strokes In The Ideal Strike Zone And Why
 
-<https://www.youtube.com/watch?v=zcd9fyRedgA>
+<https://www.youtube.com/watch?v=zcd9fyRedgA> How Ideal Contact Point Unlocks The Power Of Tennis Strokes
 
-<https://www.youtube.com/watch?v=0QC0lAHptR8>
+<https://www.youtube.com/watch?v=0QC0lAHptR8> How To Play Relaxed And Accurate Tennis Groundstrokes
