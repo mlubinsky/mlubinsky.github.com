@@ -321,8 +321,10 @@ http://www.idoportal.com/
 <https://www.youtube.com/watch?v=gWTvbXyg2HM> 5 Days To A Killer Tennis Forehand - Day 1: Swing Technique
 
 <https://www.youtube.com/watch?v=9zArtR4OhV8&list=PLbTEk_63h_nuEqmUugLqw0D_DHT813lgt&index=3>
+Совершенный форхенд. Часть 3: Секреты удара справа
 
 <https://www.youtube.com/watch?v=VqZyiqQrNG8&index=2&list=PLbTEk_63h_nuEqmUugLqw0D_DHT813lgt>
+Совершенный форхенд. Часть 2: Техника удара справа
 
 <https://www.youtube.com/watch?v=0cAIwWcDfdg> Как играть с соперником, который держит мяч (тактические приемы в теннисе)
 
