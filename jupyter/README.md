@@ -1,5 +1,7 @@
 # Jupyter Pandas NumPy Scikit
 
+<https://habr.com/ru/post/460557/>
+
 <https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python> free course
 
 https://www.reddit.com/r/Python/comments/cop2cr/new_data_visualization_with_python_course_up_on/>
