@@ -1,6 +1,7 @@
 
 <https://github.com/fritzlabs/Awesome-Mobile-Machine-Learning> ML on mobile devices
 
+<https://habr.com/ru/post/460557/>
 
 <https://www.reddit.com/r/learnmachinelearning/comments/be9e7j/post_all_machine_learning_courses_here/>
 
