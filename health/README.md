@@ -10,6 +10,9 @@
 
 https://youtu.be/F2X2o9WaZf8
 
+## kalistenika
+<https://www.championat.com/lifestyle/article-3813577-kalistenika-dlja-krasivogo-tela-kak-pravilno-kachatsja-bez-zala-i-rashodov.html>
+
 ## сердце
 
  По словам ученых, выполнять упражнения на развитие мощности мышц нужно стараться как можно быстрее. Специалисты советуют во время тренировок в зале заострить внимание не на количестве упражнений или силе их выполнения, а именно на скорости.
