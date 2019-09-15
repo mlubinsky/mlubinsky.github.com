@@ -10,6 +10,8 @@
 
 <https://reactjs.org/docs/getting-started.html>
 
+https://reactjs.org/community/examples.html
+
 <https://www.taniarascia.com/getting-started-with-react/> full project with source code
 
 React example
