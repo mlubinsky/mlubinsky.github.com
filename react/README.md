@@ -12,6 +12,8 @@
 
 <https://www.taniarascia.com/getting-started-with-react/> full project with source code
 
+React example
+<https://dev.to/drminnaar/11-react-examples-2e6d>
 
 ##  React Devtools for Chrome
 <https://reactjs.org/blog/2019/08/15/new-react-devtools.html>
