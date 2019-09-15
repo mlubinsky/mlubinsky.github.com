@@ -16,6 +16,8 @@
 
 <https://www.infoq.com/presentations/ing-docker-hadoop> . Docker Data Science Pipeline
 
+<https://blog.softwaremill.com/editing-files-in-a-docker-container-f36d76b9613c> Editing inside docker container
+
 ## Nodejs 
 <https://habr.com/ru/post/466493/>
 ```
