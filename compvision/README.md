@@ -1,3 +1,6 @@
+Image formats:
+<https://youtu.be/P1K0ZNGczsk>
+
 <https://github.com/videoflow/videoflow>
 
 <https://habr.com/ru/post/461365/> compvision
