@@ -6,6 +6,8 @@
 
 <https://medium.com/@alexgolec/google-interview-problems-ratio-finder-d7aa8bf201e3>
 
+<https://habr.com/ru/post/467371/> Разбор задачи с собеседования Google: поиск соотношения
+
 <https://classicproblems.com/>
 
 <https://teachyourselfcs.com/>
