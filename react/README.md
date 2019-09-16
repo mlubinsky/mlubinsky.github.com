@@ -236,6 +236,8 @@ const App = () => (
 
 <https://news.ycombinator.com/item?id=20927031>
 
+<https://blog.bitsrc.io/why-we-switched-to-react-hooks-48798c42c7f>
+
 ## Books
 <https://leanpub.com/reintroducing-react>
 
