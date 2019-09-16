@@ -20,6 +20,8 @@ React example
 ##  React Devtools for Chrome
 <https://reactjs.org/blog/2019/08/15/new-react-devtools.html>
 
+<https://medium.com/the-thinkmill/react-dev-tools-debug-like-a-ninja-c3a5d09895c6>
+
 <https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi> 
 
 ## Udemy
