@@ -382,6 +382,16 @@ return db.query('SELECT * from products WHERE id = ?', id);
 }));
  ```
 
+```
+ const getUser - async name =>
+   await fetch(`https://api.github.com/users/${name}`).then(r => r.json());
+   
+ try {
+   const uset - await getUser("abcd");
+ } catch (e) {
+   console.log(e);
+ }
+```
 
 The Promise.all() function takes an array of promises, and returns a promise that waits for every promise in the array to resolve and then resolves to an array that contains the value each promise in the original array resolved to. 
 
