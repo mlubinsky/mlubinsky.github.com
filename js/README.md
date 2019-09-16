@@ -105,6 +105,24 @@ for (const operative of operatives) {
 });
 ```
 
+## destructing assignment
+```
+const response = {
+   status: 200,
+   data: {}
+}
+
+// instead of response.data we get...
+const {data} = response //now data references the data object directly
+
+
+const objectList = [ { key: 'value' }, { key: 'value' }, { key: 'value' } ]
+
+// instead of objectList[0], objectList[1], etc we get...
+const [obj, obj1, obj2] = objectList // now each object can be referenced directly
+
+```
+
 ## some find every
 <https://medium.com/poka-techblog/simplify-your-javascript-use-some-and-find-f9fb9826ddfd>
 
