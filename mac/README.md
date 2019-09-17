@@ -87,9 +87,12 @@ pip 19.1.1 from /Users/miclub01/anaconda3/envs/deepCognition/lib/python3.7/site-
 
 ### Color command line
 <https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/>
+```
+alias ls='ls -G'
+alias ll='ls -lG'
 
 ls -G
-
+```
 ### ~/.bash_profile
 
     #### Tell ls to be colourful
