@@ -61,6 +61,8 @@ ORDER BY s.device_id, time DESC;
 
 <https://abelvm.github.io/sql/sql-tricks/>
 
+<https://blog.jooq.org/2016/04/25/10-sql-tricks-that-you-didnt-think-were-possible/>
+
 
 ## Time Series analysis with postgres
 
