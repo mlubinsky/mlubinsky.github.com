@@ -27,17 +27,19 @@ http://www.craigkerstiens.com/categories/postgresql/
 https://severalnines.com/blog/understanding-and-reading-postgresql-system-catalog
 
 ## Generate series
-https://rob.conery.io/2018/08/01/simple-monthly-reports-in-postgresql-using-generate_series/   
 
-https://habrahabr.ru/post/340460/
+<https://rob.conery.io/2018/08/01/simple-monthly-reports-in-postgresql-using-generate_series/>   
 
-https://10clouds.com/blog/postgresql-10/
+<https://habrahabr.ru/post/340460/>
 
-https://news.ycombinator.com/item?id=15634953
+<https://10clouds.com/blog/postgresql-10/>
+
+<https://news.ycombinator.com/item?id=15634953>
 
 ```
-SELECT RANDOM() AS tracking_id FROM
-generate_series(1, 5)
+select generate_series(1, 5);
+
+SELECT RANDOM() AS tracking_id FROM generate_series(1, 5)
 
 
 WITH full_dates as (
