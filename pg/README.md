@@ -41,6 +41,15 @@ WITH full_dates as (
   select generate_series(0,8) + date '2014-07-06' as fulldate
 )
 SELECT fulldate FROM full_dates;
+
+-- use it with LEFT OUTER JOIN to eliminate gaps in data
+
+WITH full_dates as (
+  select generate_series(0,8) + date '2014-07-06' as fulldate
+)
+SELECT fulldate, COALESCE(temperature,0) as value 
+FROM full_dates LEFT JOIN weather ON full_dates.fulldate=weather.date 
+ORDER BY fulldate;
 ```
 
 ## Temporary view
