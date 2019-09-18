@@ -5,6 +5,8 @@
 
 <https://gist.github.com/clhenrick/ebc8dc779fb6f5ee6a88>
 
+<https://www.programming-books.io/essential/postgresql/>
+
 
 Combined index vs separate index 
 <https://www.cybertec-postgresql.com/en/combined-indexes-vs-separate-indexes-in-postgresql/>
