@@ -36,6 +36,10 @@ https://10clouds.com/blog/postgresql-10/
 https://news.ycombinator.com/item?id=15634953
 
 ```
+SELECT RANDOM() AS tracking_id FROM
+generate_series(1, 5)
+
+
 WITH full_dates as (
   --Select every date in range
   select generate_series(0,8) + date '2014-07-06' as fulldate
