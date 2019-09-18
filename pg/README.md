@@ -97,6 +97,9 @@ ORDER BY s.device_id, time DESC;
 
 <https://blog.hagander.net/finding-gaps-in-partitioned-sequences-203/> find gaps in sequences
 
+<https://tapoueh.org/blog/2018/02/find-the-number-of-the-longest-continuously-rising-days-for-a-stock/>
+
+
 ##  specify a password to psql non-interactively
 ```
 PGPASSWORD=pass1234 psql -U MyUsername myDatabaseName
