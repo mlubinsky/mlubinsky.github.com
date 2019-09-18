@@ -59,6 +59,7 @@ ORDER BY s.device_id, time DESC;
  
 <http://postgres-bits.herokuapp.com/#1>
 
+<https://abelvm.github.io/sql/sql-tricks/>
 
 
 ## Time Series analysis with postgres
@@ -207,6 +208,7 @@ json_to_recordset
 <https://www.reddit.com/r/PostgreSQL/comments/2u6ah3/how_to_use_json_to_recordset_on_json_stored_in_a/>
 
 CROSS JOIN LATERAL
+<https://abelvm.github.io/sql/sql-tricks/>
 
 ```
 CREATE TABLE People2
