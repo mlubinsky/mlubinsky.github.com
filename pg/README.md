@@ -59,19 +59,7 @@ ORDER BY s.device_id, time DESC;
  
 <http://postgres-bits.herokuapp.com/#1>
 
-## Scaling Postgres
-<https://medium.com/avitotech/standby-in-production-scaling-application-in-second-largest-classified-site-in-the-world-97a79a1929de
->
-<https://habr.com/ru/post/461997/> performance
-<https://habr.com/ru/post/461071/>
 
-## Explain plan
-
-<https://www.youtube.com/watch?v=IwahVdNboc8>
-
-<https://pganalyze.com/ebooks/optimizing-postgres-query-performance?utm_source=PostgresWeeklySecondary>
-
-<https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres 12
 
 ## Time Series analysis with postgres
 
@@ -112,7 +100,7 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_info"
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_values"
   ```
-##
+## Functions
 ```
 PostgreSQL NTILE Function
 PostgreSQL PERCENT_RANK Function
@@ -126,6 +114,10 @@ PostgreSQL FIRST_VALUE Function
 ```
 ##  DateTime
 <https://phili.pe/posts/timestamps-and-time-zones-in-postgresql/>
+
+<https://momjian.us/main/blogs/pgblog/2019.html#February_11_2019>
+
+<https://tech.codeyellow.nl/blog/pg-timezones/>
 
 <https://stackoverflow.com/questions/48069425/converting-between-timezones-in-postgre>
 SET timezone TO 'Europe/Zurich';
@@ -769,7 +761,19 @@ http://ec2-18-221-216-253.us-east-2.compute.amazonaws.com:3000/login . admin/adm
 
 <https://pgdash.io/blog/postgres-features.html>
 
-<https://tech.codeyellow.nl/blog/pg-timezones/>
+## Scaling Postgres
+<https://medium.com/avitotech/standby-in-production-scaling-application-in-second-largest-classified-site-in-the-world-97a79a1929de
+>
+<https://habr.com/ru/post/461997/> performance
+<https://habr.com/ru/post/461071/>
+
+## Explain plan
+
+<https://www.youtube.com/watch?v=IwahVdNboc8>
+
+<https://pganalyze.com/ebooks/optimizing-postgres-query-performance?utm_source=PostgresWeeklySecondary>
+
+<https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres 12
 
 <https://pgdash.io/blog/postgres-configuration-cheatsheet.html>
 
