@@ -35,6 +35,14 @@ https://10clouds.com/blog/postgresql-10/
 
 https://news.ycombinator.com/item?id=15634953
 
+```
+WITH full_dates as (
+  --Select every date in range
+  select generate_series(0,8) + date '2014-07-06' as fulldate
+)
+SELECT fulldate FROM full_dates;
+```
+
 ## Temporary view
 http://vvvvalvalval.github.io/posts/using-postgresql-temporary-views-for-expressing-business-logic.html
 
@@ -117,6 +125,29 @@ PostgreSQL NTH_VALUE Function
 PostgreSQL LAST_VALUE Function
 PostgreSQL FIRST_VALUE Function
 ```
+
+## LAG LEAD
+```
+DROP TABLE IF EXISTS weather;
+
+CREATE TEMP TABLE weather(date date, temperature numeric);
+
+INSERT INTO weather VALUES 
+('2014-07-06', 86), ('2014-07-07', 88), 
+('2014-07-08', 91), ('2014-07-09', 88), 
+('2014-07-10', 86), ('2014-07-11', 84), 
+('2014-07-12', 86), ('2014-07-13', 86);
+
+SELECT date, temperature FROM weather ORDER BY date;
+
+SELECT date, temperature, 
+       LAG(temperature, 1) OVER(ORDER BY date) as day_before, 
+       LEAD(temperature, 1) OVER(ORDER BY date) as day_after,
+       (temperature - LAG(temperature, 1) OVER(ORDER BY date)) as difference_from_day_before
+FROM weather ORDER BY date;
+```
+
+
 ##  DateTime
 <https://phili.pe/posts/timestamps-and-time-zones-in-postgresql/>
 
