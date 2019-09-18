@@ -162,6 +162,22 @@ SELECT date, temperature,
 FROM weather ORDER BY date;
 ```
 
+```
+CREATE TABLE pay_history (
+    employee_id int,
+    fiscal_year INT,
+    salary DECIMAL(10 , 2 ),
+    PRIMARY KEY (employee_id, fiscal_year)
+);
+-- find both the current and previous year’s salary of all employees:
+SELECT 
+    employee_id, fiscal_year, salary,
+    LAG(salary) OVER (
+        PARTITION BY employee_id 
+        ORDER BY fiscal_year) previous_salary
+FROM
+    pay_history;
+```
 
 ##  DateTime
 <https://phili.pe/posts/timestamps-and-time-zones-in-postgresql/>
