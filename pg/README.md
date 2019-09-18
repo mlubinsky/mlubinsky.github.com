@@ -79,6 +79,8 @@ ORDER BY s.device_id, time DESC;
 
 <https://bytefish.de/blog/postgresql_interpolation/>
 
+<https://blog.hagander.net/finding-gaps-in-partitioned-sequences-203/> find gaps in sequences
+
 ##  specify a password to psql non-interactively
 ```
 PGPASSWORD=pass1234 psql -U MyUsername myDatabaseName
