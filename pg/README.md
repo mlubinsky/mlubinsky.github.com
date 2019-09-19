@@ -237,6 +237,29 @@ select time from tracking where time < '2019-06-12 23:00';
 select time from tracking where time < '06-12-2019 23:00';
 
 ```
+
+## Geometric data Types
+```
+CREATE TABLE GEO(
+  p POINT,
+  b BOX,
+  c CIRCLE
+);
+
+INSERT INTO GEO(p) VALUES( POINT(1,10));
+INSERT INTO GEO(b) VALUES( BOX( '(1,2), (10,20)' ));
+INSERT INTO GEO(c) VALUES( CIRCLE('(1,10),20)' ));
+```
+## Recursive SQL
+```
+WITH RECURSIVE t(n) AS (
+  VALUES (1)
+UNION ALL
+  SELECT n+1 FROM t WHERE n < 100
+)
+SELECT sum(n) FROM t;
+```
+
 ### VIEW with parameters?
 
 set returning function:
