@@ -1,17 +1,19 @@
 ## SQL
- https://www.interviewbit.com/sql-interview-questions/
+ <https://blog.jooq.org/2016/04/25/10-sql-tricks-that-you-didnt-think-were-possible/>
+
+ <https://www.interviewbit.com/sql-interview-questions/>
  
- https://habr.com/ru/post/461567/
+ <https://habr.com/ru/post/461567/>
  
- https://www.programmerinterview.com/database-sql/advanced-sql-interview-questions-and-answers/
+ <https://www.programmerinterview.com/database-sql/advanced-sql-interview-questions-and-answers/>
  
 <https://www.java67.com/2013/04/10-frequently-asked-sql-query-interview-questions-answers-database.html>
 
 <https://dankleiman.com/2018/02/06/3-ways-to-level-up-your-sql-as-a-software-engineer/>
 
-https://news.ycombinator.com/item?id=20855441
+<https://news.ycombinator.com/item?id=20855441>
 
-http://www.helenanderson.co.nz/sql-query-tweaks/
+<http://www.helenanderson.co.nz/sql-query-tweaks/>
 
 You can use LAG() to reference previous rows
 
