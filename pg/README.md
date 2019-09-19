@@ -107,6 +107,10 @@ ORDER BY s.device_id, time DESC;
 
 <https://blog.hagander.net/finding-gaps-in-partitioned-sequences-203/> find gaps in sequences
 
+<https://blog.jooq.org/2019/04/24/using-ignore-nulls-with-sql-window-functions-to-fill-gaps/>
+
+<https://content.pivotal.io/blog/time-series-analysis-part-3-resampling-and-interpolation>
+
 <https://tapoueh.org/blog/2018/02/find-the-number-of-the-longest-continuously-rising-days-for-a-stock/>
 
 
