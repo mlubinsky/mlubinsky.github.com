@@ -359,6 +359,21 @@ insert into people (name, points) values (
  select ST_X(p) as x, ST_Y(p) as y FROM (select UNNEST(points) as p from people) AS U;
  
 ``` 
+### array_agg()
+```
+drop table data;
+create table data (sensor_id INT, date date, value numeric, name TEXT );
+insert into data values(1, '2014-07-06', 86, 'A1');
+insert into data values(1, '2014-07-08', 99, 'A2');
+
+select array_to_string(array_agg (value), ',') as all
+from data ;
+
+select array_to_string(array_agg (name), ',') as all
+from data ;
+```
+
+
 ### PostGIS
 
 SELECT postgis_full_version();
