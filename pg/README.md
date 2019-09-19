@@ -294,6 +294,14 @@ select * from widget_sb
 ```
 ### JSON
 
+SELECT ROW_TO_JSON(table_name) FROM table_name
+
+select row_to_json(lap)
+from (
+  select id, number, position, time, flag_type from laps
+) lap;
+
+
 <https://www.w3resource.com/PostgreSQL/postgresql-json-functions-and-operators.php>
 
 json_to_recordset 
@@ -359,7 +367,7 @@ insert into people (name, points) values (
  select ST_X(p) as x, ST_Y(p) as y FROM (select UNNEST(points) as p from people) AS U;
  
 ``` 
-### array_agg()
+### array_agg() concatenates all the input values into a PostgreSQL array.
 ```
 drop table data;
 create table data (sensor_id INT, date date, value numeric, name TEXT );
@@ -371,6 +379,29 @@ from data ;
 
 select array_to_string(array_agg (name), ',') as all
 from data ;
+
+
+select array_agg(lap)
+from (
+  select id, number, position, time, flag_type from laps
+) lap;
+
+{"(1,1,4,\"628.744\",\"Green\")","(2,2,4,\"614.424\",\"Green\")", ... }
+
+
+To convert this PostgreSQL array into JSON, we can use the array_to_json
+
+select array_to_json(array_agg(lap))
+from (
+  select id, number, position, time, flag_type from laps
+) lap;
+
+[{"id":1,
+  "number":1,
+  "position":4,
+  "time":"628.744",
+  "flag_type":"Green"},
+  ...]
 ```
 
 
