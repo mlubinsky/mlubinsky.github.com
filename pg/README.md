@@ -423,6 +423,8 @@ SELECT postgis_full_version();
 <https://lists.osgeo.org/pipermail/postgis-users/2019-August/043463.html>
 <https://www.wyzant.com/resources/answers/704882/issue-with-postgis-st-within>
 
+<https://www.postgis.us/presentations/FOSS4G2017_PostGISSpatialTricks.pdf>
+
 ```
 CREATE TABLE m_polygon (id SERIAL PRIMARY KEY, bounds POLYGON);
 INSERT INTO m_polygon(bounds) VALUES( 
