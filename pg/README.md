@@ -7,6 +7,8 @@
 <https://wiki.postgresql.org/wiki/Don%27t_Do_This>
 
 
+<https://www.youtube.com/watch?v=vFq9Yg8a3CE>
+
 <https://gist.github.com/clhenrick/ebc8dc779fb6f5ee6a88>
 
 <https://www.programming-books.io/essential/postgresql/>
