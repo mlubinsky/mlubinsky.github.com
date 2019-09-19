@@ -104,6 +104,23 @@ ORDER BY s.device_id, time DESC;
 <https://stackoverflow.com/questions/56863332/database-design-for-time-series>
 
 <https://bytefish.de/blog/postgresql_interpolation/>
+```
+look for gaps in data greater than 1 hour.
+
+CREATE OR REPLACE FUNCTION sample.datediff_seconds(start_t TIMESTAMP, end_t TIMESTAMP)
+RETURNS DOUBLE PRECISION AS $$
+    SELECT EXTRACT(epoch FROM $2 - $1) 
+$$ LANGUAGE SQL;
+
+SELECT  *
+FROM (SELECT 
+        weather_data.wban as wban, 
+        weather_data.datetime as current_datetime,                 
+        LAG(weather_data.datetime, 1, NULL) OVER (PARTITION BY weather_data.wban ORDER BY weather_data.datetime) AS previous_datetime
+     FROM sample.weather_data) lag_select
+WHERE sample.datediff_seconds (previous_datetime, current_datetime) > 3600;
+
+```
 
 <https://blog.hagander.net/finding-gaps-in-partitioned-sequences-203/> find gaps in sequences
 
