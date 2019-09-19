@@ -2,7 +2,7 @@
 
 <http://www.craigkerstiens.com/2018/01/31/postgres-hidden-gems/>
 
-<<http://postgres-bits.herokuapp.com/#1>>
+<http://postgres-bits.herokuapp.com/#1>>
 
 <https://wiki.postgresql.org/wiki/Don%27t_Do_This>
 
