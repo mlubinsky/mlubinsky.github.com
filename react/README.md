@@ -14,6 +14,7 @@ https://reactjs.org/community/examples.html
 
 <https://www.taniarascia.com/getting-started-with-react/> full project with source code
 
+<https://www.quora.com/What-are-some-good-open-source-React-JS-projects>
 React example
 <https://dev.to/drminnaar/11-react-examples-2e6d>
 
