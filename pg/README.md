@@ -88,6 +88,10 @@ ORDER BY s.device_id, time DESC;
 
 <https://blog.jooq.org/2016/04/25/10-sql-tricks-that-you-didnt-think-were-possible/>
 
+### LATERAL JOIN
+ <https://heap.io/blog/engineering/postgresqls-powerful-new-join-type-lateral>
+ 
+<https://abelvm.github.io/sql/sql-tricks/>
 
 ## Time Series analysis with postgres
 
@@ -307,8 +311,7 @@ from (
 json_to_recordset 
 <https://www.reddit.com/r/PostgreSQL/comments/2u6ah3/how_to_use_json_to_recordset_on_json_stored_in_a/>
 
-CROSS JOIN LATERAL
-<https://abelvm.github.io/sql/sql-tricks/>
+
 
 ```
 CREATE TABLE People2
@@ -334,7 +337,8 @@ CREATE TABLE People2
   {"S": "standing", "X": 105, "Y": 118}
   {"S": "standing", "X": 92, "Y": 139}
 ```  
-  
+
+ 
 ### Arrays
 ```
 CREATE TABLE people
