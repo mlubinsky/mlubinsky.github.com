@@ -1,5 +1,9 @@
 ## Postgres
 
+<http://www.craigkerstiens.com/2018/01/31/postgres-hidden-gems/>
+
+<<http://postgres-bits.herokuapp.com/#1>>
+
 <https://wiki.postgresql.org/wiki/Don%27t_Do_This>
 
 
@@ -921,7 +925,7 @@ http://ec2-18-221-216-253.us-east-2.compute.amazonaws.com:3000/login . admin/adm
 
 <https://pgdash.io/blog/postgres-configuration-cheatsheet.html>
 
-<http://www.craigkerstiens.com/2018/01/31/postgres-hidden-gems/>
+
 
 <https://www.citusdata.com/blog/2018/10/31/materialized-views-vs-rollup-tables/>
 
