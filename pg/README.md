@@ -332,7 +332,24 @@ SELECT ROW_TO_JSON(table_name) FROM table_name
 
 <https://www.w3resource.com/PostgreSQL/postgresql-json-functions-and-operators.php>
 
-json_to_recordset 
+json_to_recordset()
+<https://dba.stackexchange.com/questions/98191/postgresql-json-data-type-used-as-nosql-but-view-as-relational-data-structure>
+```
+create table jsontable ( id integer, data json );
+INSERT INTO jsontable VALUES (1,
+  '[{"a": 1, "b": 2}, {"a": 3, "b":2}]');
+INSERT INTO jsontable VALUES (2,
+  '[{"a": 5, "b": 8}, {"a": 9, "b":0}]');
+
+select * from jsontable;
+
+select id, sum(a), sum(b)
+  from jsontable j
+    CROSS JOIN LATERAL
+    json_to_recordset(j.data) as x(a integer, b integer)
+group by id
+```
+
 <https://www.reddit.com/r/PostgreSQL/comments/2u6ah3/how_to_use_json_to_recordset_on_json_stored_in_a/>
 
 
