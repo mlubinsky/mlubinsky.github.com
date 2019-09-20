@@ -9,6 +9,8 @@ chmod 400 my-ec2-ssh-key.pem
  scp -i myAmazonKey.pem phpMyAdmin-3.4.5-all-languages.tar.gz ec2-user@mec2-50-17-16-67.compute-1.amazonaws.com:~/.
 
 
+<https://habr.com/ru/company/otus/blog/468185/> .  AWS EC2
+
 <https://habr.com/ru/company/otus/blog/466519/> . Детальный разбор AWS Lambda
 
 
