@@ -327,10 +327,7 @@ select * from widget_sb
 
 SELECT ROW_TO_JSON(table_name) FROM table_name
 
-select row_to_json(lap)
-from (
-  select id, number, position, time, flag_type from laps
-) lap;
+ 
 
 
 <https://www.w3resource.com/PostgreSQL/postgresql-json-functions-and-operators.php>
@@ -341,28 +338,28 @@ json_to_recordset
 
 
 ```
-CREATE TABLE People2
-(
-  id serial,
-  room_id INTEGER, 
-  time  timestamp with time zone,
+CREATE TABLE X(
+  id serial PRIMARY KEY,
   j JSONB
 );
 
 
+INSERT INTO X(j) VALUES(
+'
 {
 "points" :
   [ 
-     {"x":1, "y":2, "p":"Up"},
-     {"x":10, "y":20, "p":"Down"}
+     {"x":1, "y":2},
+     {"x":10, "y":20}
   ]
 }
-  select jsonb_array_elements_text(j->'points') from People2
-  select jsonb_array_elements_text((j->>'points')::jsonb) from People2;
-  Same outcome for 2 SQL's above:
+'
+);
+
+select jsonb_array_elements_text(j->'points') FROM X;
+select jsonb_array_elements_text((j->>'points')::jsonb) FROM X;
+Same outcome for 2 SQL's above 
   
-  {"S": "standing", "X": 105, "Y": 118}
-  {"S": "standing", "X": 92, "Y": 139}
 ```  
 
  
