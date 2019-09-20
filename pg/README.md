@@ -214,6 +214,9 @@ FROM
 ```
 
 ##  DateTime
+
+SHOW timezone;
+
 <https://phili.pe/posts/timestamps-and-time-zones-in-postgresql/>
 
 <https://momjian.us/main/blogs/pgblog/2019.html#February_11_2019>
