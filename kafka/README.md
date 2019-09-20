@@ -70,6 +70,12 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 
 kafka-server-start.sh config/server.properties
 ```   
+
+<https://assets.ctfassets.net/oxjq45e8ilak/5C3BJ4jXm0xaI5Cz8ZN2ra/e3cceba5659722f6d94859f0e96356dc/Grigoriy_Koshelev_Kogda_vs_poshlo_po_Kafke.pdf>
+<https://youtu.be/A_yUaPARv8U>
+
+
+
 <https://medium.com/@madhur25/considerations-for-high-throughput-kafka-producer-ed97c2c332c>
 
    <https://medium.com/@stephane.maarek/the-kafka-api-battle-producer-vs-consumer-vs-kafka-connect-vs-kafka-streams-vs-ksql-ef584274c1e>
