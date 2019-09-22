@@ -8,6 +8,8 @@
 
 <https://habr.com/ru/post/467371/> Разбор задачи с собеседования Google: поиск соотношения
 
+<https://programming.guide/hash-tables.html> Hash
+
 <https://classicproblems.com/>
 
 <https://teachyourselfcs.com/>
