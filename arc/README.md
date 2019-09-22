@@ -2,6 +2,8 @@
 
 <https://habr.com/ru/company/oleg-bunin/blog/466295/>
 
+<https://news.ycombinator.com/item?id=21032805>
+
 <https://hackernoon.com/best-practices-for-event-driven-microservice-architecture-e034p21lk>
 
 <https://8thlight.com/blog/ignacio-piantanida/2019/09/17/software-architecture.html>
