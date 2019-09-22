@@ -2,6 +2,8 @@
 
 <https://habr.com/ru/company/oleg-bunin/blog/466295/>
 
+<https://hackernoon.com/best-practices-for-event-driven-microservice-architecture-e034p21lk>
+
 <https://blog.pragmaticengineer.com/operating-a-high-scale-distributed-system/>
 
 <https://herbertograca.com/2019/08/12/documenting-software-architecture/>
