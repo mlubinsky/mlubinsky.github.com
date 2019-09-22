@@ -39,6 +39,9 @@ https://habr.com/company/itsumma/blog/418389/
                                                      
  
 ##  Kafka
+
+<https://youtu.be/JalUUBKdcA0>
+
  * Producer:
    - Async (no garantee)
    - Commited to leader
