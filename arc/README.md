@@ -4,6 +4,8 @@
 
 <https://hackernoon.com/best-practices-for-event-driven-microservice-architecture-e034p21lk>
 
+<https://8thlight.com/blog/ignacio-piantanida/2019/09/17/software-architecture.html>
+
 <https://blog.pragmaticengineer.com/operating-a-high-scale-distributed-system/>
 
 <https://herbertograca.com/2019/08/12/documenting-software-architecture/>
