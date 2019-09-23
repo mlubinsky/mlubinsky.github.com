@@ -42,6 +42,8 @@ https://habr.com/company/itsumma/blog/418389/
 
 <https://youtu.be/JalUUBKdcA0>
 
+<https://yokota.blog/>
+
  * Producer:
    - Async (no garantee)
    - Commited to leader
