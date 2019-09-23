@@ -2,6 +2,8 @@
 
 <https://habr.com/ru/company/oleg-bunin/blog/466295/>
 
+<https://www.vertabelo.com/blog/business-logic-in-the-database-yes-or-no-it-depends/>
+
 <https://news.ycombinator.com/item?id=21032805>
 
 <https://hackernoon.com/best-practices-for-event-driven-microservice-architecture-e034p21lk>
