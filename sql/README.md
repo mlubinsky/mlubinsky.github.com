@@ -17,6 +17,9 @@
 
 You can use LAG() to reference previous rows
 
+## DISTINCT
+ <https://blog.jooq.org/2019/09/09/using-distinct-on-in-non-postgresql-databases/>
+
 ## LEFT JOIN
 ```
 create table T1 (x int);
