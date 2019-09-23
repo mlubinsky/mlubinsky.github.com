@@ -18,6 +18,11 @@
 
 <https://sysprogs.com/w/mbed-settings-extractor/>
 
+
+
+## AI on embedded devices from Intel, NVidia, etc
+<https://habr.com/ru/company/recognitor/blog/468421/>
+
 ## AWS
 ### S3
 <https://s3.console.aws.amazon.com/s3/buckets/mlubinsky/?region=us-east-2&tab=overview>
