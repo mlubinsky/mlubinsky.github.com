@@ -14,6 +14,9 @@ chmod 400 my-ec2-ssh-key.pem
 <https://habr.com/ru/company/otus/blog/466519/> . Детальный разбор AWS Lambda
 
 
+## Athena
+<https://www.transposit.com/blog/2019.08.22-try-athena-easily-with-a-transposit-app/?c=lob>
+
 ## REST API
 <https://habr.com/post/435180/> Бессерверный REST API 
 
