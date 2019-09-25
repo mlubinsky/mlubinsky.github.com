@@ -379,6 +379,9 @@ var flattened = [[0, 1], [2, 3], [4, 5]].reduce((a, b) => {return a.concat(b);},
 ```
 
 ## Async await promises
+
+<https://careersjs.com/magazine/async-patterns/>
+
 await must always be in an async function
 ```
  (function a() { return 'a'; })();
