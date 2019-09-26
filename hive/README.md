@@ -88,6 +88,12 @@ Hive uses the columns in SORT BY to sort the rows before feeding the rows to a r
 Difference between Sort By and Order By
 Hive supports SORT BY which sorts the data per reducer. The difference between "order by" and "sort by" is that the former guarantees total order in the output while the latter only guarantees ordering of the rows within a reducer. If there are more than one reducer, "sort by" may give partially ordered final results.
 
+Cluster By and Distribute By are used mainly with the Transform/Map-Reduce Scripts. But, it is sometimes useful in SELECT statements if there is a need to partition and sort the output of a query for subsequent queries.
+
+Cluster By is a short-cut for both Distribute By and Sort By.
+
+Hive uses the columns in Distribute By to distribute the rows among reducers. All rows with the same Distribute By columns will go to the same reducer. However, Distribute By does not guarantee clustering or sorting properties on the distributed keys.
+
 ## Co-Groups
 
 ```
