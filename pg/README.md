@@ -21,6 +21,8 @@ Combined index vs separate index
 ## STORED PROCEDURES
 <https://stackoverflow.com/questions/7945932/how-to-return-result-of-a-select-inside-a-function-in-postgresql>
 
+<https://stackoverflow.com/questions/21662295/it-could-refer-to-either-a-pl-pgsql-variable-or-a-table-column>
+
 ## Python
 <https://www.pgcli.com/> pgcli instead psql
 <https://hakibenita.com/fast-load-data-python-postgresql>
