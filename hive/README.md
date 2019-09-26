@@ -62,6 +62,10 @@ CREATE TABLE array_table (int_array_column ARRAY<INT>);
 ```
 SELECT TRANSFORM(pv_users.userid, pv_users.date) USING 'map_script' AS dt, uid CLUSTER BY dt FROM pv_users;
 ```
+
+## Keywords MAP and REDUCE
+MAP and REDUCE are "syntactic sugar" for the more general select transform:
+
 ```
 FROM (
      FROM pv_users
@@ -75,3 +79,25 @@ FROM (
      USING 'reduce_script'
      AS date, count;
  ```    
+## Distribute by . Sort by
+
+
+## Co-Groups
+
+```
+FROM (
+     FROM (
+             FROM action_video av
+             SELECT av.uid AS uid, av.id AS id, av.date AS date
+ 
+            UNION ALL
+ 
+             FROM action_comment ac
+             SELECT ac.uid AS uid, ac.id AS id, ac.date AS date
+     ) union_actions
+     SELECT union_actions.uid, union_actions.id, union_actions.date
+     CLUSTER BY union_actions.uid) map
+ 
+ INSERT OVERWRITE TABLE actions_reduced
+     SE
+```
