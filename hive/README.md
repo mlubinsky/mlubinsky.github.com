@@ -82,6 +82,7 @@ FROM (
      AS date, count;
  ```    
 ## Distribute by . Sort by
+<https://cwiki.apache.org/confluence/display/Hive/LanguageManual+SortBy>
 
 Hive uses the columns in SORT BY to sort the rows before feeding the rows to a reducer.
 
