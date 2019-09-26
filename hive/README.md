@@ -53,15 +53,30 @@ beeline> FROM page_view_stg pvs
 This query will generate a MapReduce job rather than Map-only job. The SELECT-clause will be converted to a plan to the mappers and the output will be distributed to the reducers based on the value of (ds, country) pairs. The INSERT-clause will be converted to the plan in the reducer which writes to the dynamic partitions.
 
 
-## ARRAYS  LATERAL VIEW
+## ARRAYS , explode, inline, stack  LATERAL VIEW
+Built-in Table-Generating Functions (UDTF):
+* explode() takes in an array (or a map) as an input and outputs the elements of the array (map) as separate rows. \
+* posexplode() is similar to explode ; it returns the element as well as its position in the original array.
+
+* inline() explodes an array of structs to multiple rows. Returns a row-set with N columns (N = number of top level elements in the struct), one row per 
+
+* stack() Breaks up n values V1,...,Vn into r rows. Each row will have n/r columns. r must be constant.
+
+Lateral view is used in conjunction with user-defined table generating functions such as explode(). 
 ```
+SELECT pageid, adid
+FROM pageAds LATERAL VIEW explode(adid_list) adTable AS adid;
+
 CREATE TABLE array_table (int_array_column ARRAY<INT>);
 
 select explode(array('A','B','C'));
 select explode(array('A','B','C')) as col;
 select tf.* from (select 0) t lateral view explode(array('A','B','C')) tf;
 select tf.* from (select 0) t lateral view explode(array('A','B','C')) tf as col;
+select posexplode(array('A','B','C'));
 
+
+select inline(array(struct('A',10,date '2015-01-01'),struct('B',20,date '2016-02-02')));
 ```
 
 ## Custom Map/Reduce Scripts
