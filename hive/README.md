@@ -56,6 +56,12 @@ This query will generate a MapReduce job rather than Map-only job. The SELECT-cl
 ## ARRAYS  LATERAL VIEW
 ```
 CREATE TABLE array_table (int_array_column ARRAY<INT>);
+
+select explode(array('A','B','C'));
+select explode(array('A','B','C')) as col;
+select tf.* from (select 0) t lateral view explode(array('A','B','C')) tf;
+select tf.* from (select 0) t lateral view explode(array('A','B','C')) tf as col;
+
 ```
 
 ## Custom Map/Reduce Scripts
