@@ -54,6 +54,8 @@ This query will generate a MapReduce job rather than Map-only job. The SELECT-cl
 
 
 ## ARRAYS , explode, inline, stack  LATERAL VIEW
+
+<https://cwiki.apache.org/confluence/display/Hive/LanguageManual+LateralView>
 Built-in Table-Generating Functions (UDTF):
 * explode() takes in an array (or a map) as an input and outputs the elements of the array (map) as separate rows. \
 * posexplode() is similar to explode ; it returns the element as well as its position in the original array.
