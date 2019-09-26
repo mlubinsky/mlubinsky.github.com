@@ -193,8 +193,9 @@ https://www.youtube.com/watch?v=dwd9m1Zl04Q . Hive JOIN OPTIMIZATION
 https://community.hortonworks.com/articles/149894/llap-a-one-page-architecture-overview.html
 
 Shuffling is expensive
-Hint
-/* STREAMTABLE */
+Hints
+/* +STREAMTABLE */
+/* +MAPJOIN */
 
 Hive metastore. To enable the usage of Hive metastore outside of Hive, a separate project called HCatalog was started. 
   HCatalog is a part of Hive and serves the very important purpose of allowing other tools (like Pig and MapReduce)
