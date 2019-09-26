@@ -8,6 +8,8 @@ hive.merge.mapfiles=true
 
 hive.merge.mapredfiles=true
 
+hive> set mapred.reduce.tasks=32;
+
 ## LEFT SEMI JOIN
 In order check the existence of a key in another table, the user can use LEFT SEMI JOIN as illustrated by the following example.
 ```
@@ -81,6 +83,10 @@ FROM (
  ```    
 ## Distribute by . Sort by
 
+Hive uses the columns in SORT BY to sort the rows before feeding the rows to a reducer.
+
+Difference between Sort By and Order By
+Hive supports SORT BY which sorts the data per reducer. The difference between "order by" and "sort by" is that the former guarantees total order in the output while the latter only guarantees ordering of the rows within a reducer. If there are more than one reducer, "sort by" may give partially ordered final results.
 
 ## Co-Groups
 
