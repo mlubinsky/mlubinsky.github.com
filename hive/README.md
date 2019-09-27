@@ -19,23 +19,34 @@ Should the intermediate result be persisted or should it be recomputed on operat
 The degree of parallelism at any operator (specifically number of reducers to use).
 Semi Join selection
 
+## Vectorization
+
+Vectorization allows Hive to process a batch of rows together instead of processing one row at a time
+hive.vectorized.execution.enabled=true.
+
+## Bucketing
+(SET hive.enforce.bucketing=true;) every time before writing data to the bucketed table. To leverage the bucketing in the join operation we should SET hive.optimize.bucketmapjoin=true. This setting hints to Hive to do bucket level join during the map stage join. It also reduces the scan cycles to find a particular key because bucketing ensures that the key is present in a certain bucket.
 
 
-Join algorithms in Hive
+## Join algorithms in Hive
 Hive only supports equi-Join currently. Hive Join algorithm can be any of the following:
 
-Multi way Join
+### Multi way Join
 If multiple joins share the same driving side join key then all of those joins can be done in a single task.
 
 Example: (R1 PR1.x=R2.a  - R2) PR1.x=R3.b - R3) PR1.x=R4.c - R4
 
 All of the join can be done in the same reducer, since R1 will already be sorted based on join key x.
 
-Common Join
+### Common Join
 Use Mappers to do the parallel sort of the tables on the join keys, which are then passed on to reducers. All of the tuples with same key is given to same reducer. A reducer may get tuples for more than one key. Key for tuple will also include table id, thus sorted output from two different tables with same key can be recognized. Reducers will merge the sorted stream to get join output.
 
-Map Join
+### Map Join
+SELET /* +MAPJOIN(a,b) */
 Useful for star schema joins, this joining algorithm keeps all of the small tables (dimension tables) in memory in all of the mappers and big table (fact table) is streamed over it in the mapper. This avoids shuffling cost that is inherent in Common-Join. For each of the small table (dimension table) a hash table would be 
+
+Map joins are really efficient if a table on the other side of a join is small enough to fit in the memory.
+Hive supports a parameter, hive.auto.convert.join, which when it’s set to “true” suggests that Hive try to map join automatically.
 
 ## LLAP
 <https://cwiki.apache.org/confluence/display/Hive/LLAP>
@@ -65,6 +76,14 @@ hive.merge.mapfiles=true
 hive.merge.mapredfiles=true
 
 hive> set mapred.reduce.tasks=32;
+
+ensure the bucketing flag is set (SET hive.enforce.bucketing=true;) 
+every time before we write data to the bucketed table.
+
+SET hive.exce.parallel=true;
+complex Hive queries commonly are translated to a number of map reduce jobs that are executed by default sequentially. Often though some of a query’s map reduce stages are not interdependent and could be executed in parallel.
+
+They then can take advantage of spare capacity on a cluster and improve cluster utilization while at the same time reduce the overall query executions time. The configuration in Hive to change this behaviour is a merely switching a single flag SET hive.exce.parallel=true;.
 
 ## LEFT SEMI JOIN
 In order check the existence of a key in another table, the user can use LEFT SEMI JOIN as illustrated by the following example.
@@ -160,9 +179,11 @@ FROM (
      USING 'reduce_script'
      AS date, count;
  ```    
-## Distribute by . Sort by
+## Distribute by Clustered by Sort by
 <https://cwiki.apache.org/confluence/display/Hive/LanguageManual+SortBy>
 
+
+the corresponding tables we want to join on have to be set up in the same manner with the joining columns bucketed and the bucket sizes being multiples of each other to work. The second part is the optimized query for which we have to set a flag to hint to Hive that we want to take advantage of the bucketing in the join (SET hive.optimize.bucketmapjoin=true;).
 Hive uses the columns in SORT BY to sort the rows before feeding the rows to a reducer.
 
 Difference between Sort By and Order By
