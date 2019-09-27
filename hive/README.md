@@ -1,3 +1,59 @@
+## Hive 3 streaming
+
+Hive HCatalog Streaming API
+Traditionally adding new data into Hive requires gathering a large amount of data onto HDFS and then periodically adding a new partition. This is essentially a “batch insertion”. Insertion of new data into an existing partition is not permitted. Hive Streaming API allows data to be pumped continuously into Hive. The incoming data can be continuously committed in small batches of records into an existing Hive partition or table. Once data is committed it becomes immediately visible to all Hive queries initiated subsequently.
+
+hive-site.xml to enable ACID support for streaming:
+hive.txn.manager = org.apache.hadoop.hive.ql.lockmgr.DbTxnManager
+hive.compactor.initiator.on = true (See more important details here)
+hive.compactor.worker.threads > 0 
+
+## Cost based optimizer Calcite 
+https://cwiki.apache.org/confluence/display/Hive/Cost-based+optimization+in+Hive
+
+some of optimization decisions that can benefit from a CBO:
+
+How to order Join
+What algorithm to use for a given Join
+Should the intermediate result be persisted or should it be recomputed on operator failure.
+The degree of parallelism at any operator (specifically number of reducers to use).
+Semi Join selection
+
+
+
+Join algorithms in Hive
+Hive only supports equi-Join currently. Hive Join algorithm can be any of the following:
+
+Multi way Join
+If multiple joins share the same driving side join key then all of those joins can be done in a single task.
+
+Example: (R1 PR1.x=R2.a  - R2) PR1.x=R3.b - R3) PR1.x=R4.c - R4
+
+All of the join can be done in the same reducer, since R1 will already be sorted based on join key x.
+
+Common Join
+Use Mappers to do the parallel sort of the tables on the join keys, which are then passed on to reducers. All of the tuples with same key is given to same reducer. A reducer may get tuples for more than one key. Key for tuple will also include table id, thus sorted output from two different tables with same key can be recognized. Reducers will merge the sorted stream to get join output.
+
+Map Join
+Useful for star schema joins, this joining algorithm keeps all of the small tables (dimension tables) in memory in all of the mappers and big table (fact table) is streamed over it in the mapper. This avoids shuffling cost that is inherent in Common-Join. For each of the small table (dimension table) a hash table would be 
+
+## LLAP
+<https://cwiki.apache.org/confluence/display/Hive/LLAP>
+Also known as Live Long and Process, LLAP provides a hybrid execution model.  It consists of a long-lived daemon which replaces direct interactions with the HDFS DataNode, and a tightly integrated DAG-based framework.
+Functionality such as caching, pre-fetching, some query processing and access control are moved into the daemon.  Small/short queries are largely processed by this daemon directly, while any heavy lifting will be performed in standard YARN containers.
+
+## TEZ
+Apache Tez generalizes the MapReduce paradigm to execute a complex DAG (directed acyclic graph) of tasks. Refer to the following link for more info.
+
+http://hortonworks.com/blog/apache-tez-a-new-chapter-in-hadoop-data-processing/
+
+
+
+## configuration
+hive-site.xml
+hive.execution.engine = mr tez spark
+hive.execution.mode = container llap
+hive.exec.max.created.files
 hive.exec.max.dynamic.partitions.pernode (default value being 100) is the maximum dynamic partitions that can be created by each mapper or reducer.
 
 hive.exec.max.created.files 
