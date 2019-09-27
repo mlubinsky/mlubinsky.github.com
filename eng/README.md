@@ -6,6 +6,8 @@
 
 <https://habr.com/ru/post/465731/>
 
+<https://habr.com/ru/post/469101/>
+
 <https://forvo.com/>
 
 <https://youglish.com/>
