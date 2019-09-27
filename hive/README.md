@@ -1,3 +1,62 @@
+## Architecture
+Metastore (usually MySQL) stores the table definition
+/etc/hive/conf/
+hive-site.xml
+
+DROP DATABASE x
+DROP TABLE a -- before DROP DATABASE x
+<https://www.youtube.com/watch?v=vwac18EzGGs> . Hive Table dissected
+<https://www.youtube.com/playlist?list=PLOaKckrtCtNvLuuSkDdx71hAhPyNSqf66>
+<https://www.youtube.com/watch?v=dwd9m1Zl04Q> . Hive JOIN OPTIMIZATION
+
+Shuffling is expensive
+Hints
+/* +STREAMTABLE */
+/* +MAPJOIN */
+
+<https://community.hortonworks.com/articles/149894/llap-a-one-page-architecture-overview.html>
+
+
+SMB (sort merge backeted)  MAP JOIN
+
+Hive metastore. To enable the usage of Hive metastore outside of Hive, a separate project called HCatalog was started. 
+  HCatalog is a part of Hive and serves the very important purpose of allowing other tools (like Pig and MapReduce)
+  to integrate with the Hive metastore.
+
+ Physically, a partition in Hive is nothing but just a sub-directory in the table directory.
+CREATE TABLE table_name (column1 data_type, column2 data_type) 
+PARTITIONED BY (partition1 data_type, partition2 data_type,….);
+ 
+Partitioning is works better when the cardinality of the partitioning field is not too high .
+
+<https://stackoverflow.com/questions/19128940/what-is-the-difference-between-partitioning-and-bucketing-a-table-in-hive>
+<http://www.hadooptpoint.org/difference-between-partitioning-and-bucketing-in-hive/>
+
+Clustering aka bucketing on the other hand, will result with a fixed number of files, 
+since you do specify the number of buckets. 
+What Hive will do is to take the field, calculate a hash and assign a record to that bucket.
+But what happens if you use let's say 256 buckets and the field you're bucketing on has a low cardinality 
+(for instance, it's a US state, so can be only 50 different values) ? 
+You'll have 50 buckets with data, and 206 buckets with no data.
+
+CREATE TABLE table_name PARTITIONED BY (partition1 data_type, partition2 data_type,….) 
+CLUSTERED BY (column_name1, column_name2, …) 
+SORTED BY (column_name [ASC|DESC], …)] 
+INTO num_buckets BUCKETS;
+
+Partitions can dramatically cut the amount of data you're querying.
+ if you want to query only from a certain date forward, the partitioning by year/month/day is going to dramatically cut the amount of IO.
+bucketing can speed up joins with other tables that have exactly the same bucketing, 
+ if you're joining two tables on the same employee_id, hive can do the join bucket by bucket
+ (even better if they're already sorted by employee_id since it's going to to a mergesort which works in linear time).
+
+So, bucketing works well when the field has high cardinality and data is evenly distributed among buckets. 
+Partitioning works best when the cardinality of the partitioning field is not too high.
+
+Also, you can partition on multiple fields, with an order (year/month/day is a good example),
+while you can bucket on only one field.
+
+
 ## Hive 3 streaming
 
 Hive HCatalog Streaming API
@@ -9,7 +68,7 @@ hive.compactor.initiator.on = true (See more important details here)
 hive.compactor.worker.threads > 0 
 
 ## Cost based optimizer Calcite 
-https://cwiki.apache.org/confluence/display/Hive/Cost-based+optimization+in+Hive
+<https://cwiki.apache.org/confluence/display/Hive/Cost-based+optimization+in+Hive>
 
 some of optimization decisions that can benefit from a CBO:
 
