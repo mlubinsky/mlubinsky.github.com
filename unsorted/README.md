@@ -198,6 +198,8 @@ Live calculation in browser
 
 <https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance> . Covariance/Contrvariance
 
+<https://news.ycombinator.com/item?id=21092698> crafting interpreters
+
 ## Parsers
 
 <https://habr.com/ru/post/469213/> Parser combinator RUST
