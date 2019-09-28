@@ -200,6 +200,7 @@ Live calculation in browser
 
 ## Parsers
 
+<https://habr.com/ru/post/469213/> Parser combinator RUST
 <https://habr.com/ru/post/462781/>
 
 <https://medium.com/@vladimirkozhaev/antlr-an-informal-introduction-609f885a38f7> ANTLR
