@@ -4,6 +4,8 @@
 
 ## VIM
 
+<https://habr.com/ru/post/468265/>
+
 <http://ismail.badawi.io/blog/2014/04/23/the-compositional-nature-of-vim/>
 
 <https://www.youtube.com/watch?v=5r6yzFEXajQ> tmux+vim 
