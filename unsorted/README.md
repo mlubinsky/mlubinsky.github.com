@@ -230,6 +230,8 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 <https://news.ycombinator.com/item?id=20857887>
 
+<https://news.ycombinator.com/item?id=21090288>
+
 ## youtube programming
 
 <https://techyaks.com/>
