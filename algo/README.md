@@ -1,5 +1,9 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://data-flair.training/blogs/python-programming-interview-questions/>
+
+<https://data-flair.training/blogs/top-python-interview-questions-answer/>
+
 <https://firstround.com/review/40-favorite-interview-questions-from-some-of-the-sharpest-folks-we-know/>
 
 <https://news.ycombinator.com/item?id=20897510>
