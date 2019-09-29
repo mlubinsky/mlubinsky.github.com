@@ -17,6 +17,8 @@
 Combined index vs separate index 
 <https://www.cybertec-postgresql.com/en/combined-indexes-vs-separate-indexes-in-postgresql/>
 
+## Import JSON,XML files to postgree
+https://github.com/okbob/pgimportdoc
 
 ## STORED PROCEDURES
 <https://stackoverflow.com/questions/7945932/how-to-return-result-of-a-select-inside-a-function-in-postgresql>
