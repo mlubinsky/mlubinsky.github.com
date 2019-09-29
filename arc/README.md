@@ -1,5 +1,7 @@
 ## Architecture
 
+<https://www.youtube.com/watch?v=Y6Ev8GIlbxc> distributed systems
+
 <https://habr.com/ru/company/oleg-bunin/blog/466295/>
 
 <https://www.vertabelo.com/blog/business-logic-in-the-database-yes-or-no-it-depends/>
