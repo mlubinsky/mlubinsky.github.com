@@ -226,6 +226,7 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 ## Clojure
 
+<https://github.com/anan44/it-starts-with-clojure>
 <http://blog.klipse.tech/clojure/2018/12/18/welcome-clojure-10.html>
 
 <https://github.com/darkleaf/app-from-scratch/> Clojure Rus
