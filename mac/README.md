@@ -2,6 +2,8 @@
 
 <https://dbngin.com/> . Free All-in-One Database Version Management Tool
 
+<https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a> 
+
 <https://chrome.google.com/webstore/detail/web-sniffer/ndfgffclcpdbgghfgkmooklaendohaef?hl=en> Web Sniffer Chrome extension
 
 <https://zenworkpro.com/2018/08/14/computer-ergonomics-useful-tips-for-working-in-macos>
