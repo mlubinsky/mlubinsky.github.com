@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://aiprobook.com/deep-learning-for-programmers/>
+
 <https://www.elementsofai.com/>
 
 <https://habr.com/ru/post/467825/>
