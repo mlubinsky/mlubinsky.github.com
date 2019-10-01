@@ -45,7 +45,8 @@
 
 <https://medium.com/young-coder/setting-up-javascript-debugging-in-visual-studio-code-6c5005529987>
 
-
+## Visual Studio Code + Scala
+<https://habr.com/ru/post/469707/>
 
 ## Visual Studio Code + Java
 <https://flaviocopes.com/vscode/>
