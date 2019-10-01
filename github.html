@@ -33,9 +33,13 @@ git remote -v
 git remote show origin
 git remote add upstream git@github.com:PelionProducts/space-optimizer.git
 git remote -v
+
 git fetch upstream
 git checkout master
 git merge upstream/master
+- or -
+git rebase upstream/master
+
 
 git reset --hard origin/master
 
