@@ -11,6 +11,8 @@
 
 <http://vispy.org/>
 
+http://visidata.org/ .  can read parquet
+
 <https://kst-plot.kde.org/>  real-time large-dataset viewing and plotting
 
 <https://plotnine.readthedocs.io/en/stable/>
