@@ -390,17 +390,20 @@ from sales_table;
 ```
 
 ## Window functions 
-https://oracle-base.com/articles/misc/analytic-functions
 
-https://hashrocket.com/blog/posts/sql-window-functions
+<https://mjk.space/advances-sql-window-frames/>
 
-https://www.fromdual.com/mariadb-10-2-window-function-examples
+<https://oracle-base.com/articles/misc/analytic-functions>
 
-https://blog.jooq.org/2014/04/29/nosql-no-sql-how-to-calculate-running-totals/
+<https://hashrocket.com/blog/posts/sql-window-functions>
 
-https://blog.jooq.org/2013/11/03/probably-the-coolest-sql-feature-window-functions/
+<https://www.fromdual.com/mariadb-10-2-window-function-examples>
 
-http://www.windowfunctions.com/
+<https://blog.jooq.org/2014/04/29/nosql-no-sql-how-to-calculate-running-totals/>
+
+<https://blog.jooq.org/2013/11/03/probably-the-coolest-sql-feature-window-functions/>
+
+<http://www.windowfunctions.com/>
 
 ## 10 question against 1 table:
 ```
