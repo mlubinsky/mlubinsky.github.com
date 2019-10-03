@@ -204,7 +204,7 @@ Live calculation in browser
 <https://news.ycombinator.com/item?id=21092698> crafting interpreters
 
 ## Parsers
-
+<https://deniskyashif.com/translation-using-syntactic-rules/>
 <https://habr.com/ru/post/469213/> Parser combinator RUST
 <https://habr.com/ru/post/462781/>
 
