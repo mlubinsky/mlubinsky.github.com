@@ -2,6 +2,8 @@
 
 <https://www.adaltas.com/en/2019/07/25/hive-3-features-tips-tricks/>
 
+<https://www.adaltas.com/en/2019/06/17/druid-hive-integration/>
+
 
 Metastore (usually MySQL) stores the table definition
 /etc/hive/conf/
