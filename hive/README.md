@@ -1,4 +1,8 @@
 ## Architecture
+
+<https://www.adaltas.com/en/2019/07/25/hive-3-features-tips-tricks/>
+
+
 Metastore (usually MySQL) stores the table definition
 /etc/hive/conf/
 hive-site.xml
