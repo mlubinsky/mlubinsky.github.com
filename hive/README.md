@@ -1,6 +1,8 @@
 ## Architecture
 
-<http://gethue.com/>  SQL client
+<http://gethue.com/>  SQL Web client
+
+<https://github.com/dropbox/PyHive> Python client for Hive and Presto
 
 <https://www.adaltas.com/en/2019/07/25/hive-3-features-tips-tricks/>
 
