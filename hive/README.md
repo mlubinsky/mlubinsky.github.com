@@ -1,5 +1,7 @@
 ## Architecture
 
+<http://gethue.com/>  SQL client
+
 <https://www.adaltas.com/en/2019/07/25/hive-3-features-tips-tricks/>
 
 <https://www.adaltas.com/en/2019/06/17/druid-hive-integration/>
