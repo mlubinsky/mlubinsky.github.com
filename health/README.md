@@ -12,6 +12,8 @@
 
 <https://www.medicalnewstoday.com/articles/325798.php> BERBERINE
 
+<https://en.wikipedia.org/wiki/Gynostemma_pentaphyllum>
+
 ## Vision
 
 https://youtu.be/F2X2o9WaZf8
