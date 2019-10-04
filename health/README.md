@@ -10,6 +10,8 @@
 ## AMPK
 <https://en.wikipedia.org/wiki/AMP-activated_protein_kinase>
 
+<https://www.medicalnewstoday.com/articles/325798.php> BERBERINE
+
 ## Vision
 
 https://youtu.be/F2X2o9WaZf8
