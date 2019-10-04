@@ -14,6 +14,8 @@
 
 <https://en.wikipedia.org/wiki/Gynostemma_pentaphyllum>
 
+<https://lcrhealth.com/active-pk/> Active-PK
+
 ## Vision
 
 https://youtu.be/F2X2o9WaZf8
