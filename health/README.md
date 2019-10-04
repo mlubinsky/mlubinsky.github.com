@@ -6,6 +6,10 @@
 Энергичные и общительные чаще других добиваются успеха в жизни.
 Угрюмые и молчаливые чаще всего за них работают. 
 
+
+## AMPK
+<https://en.wikipedia.org/wiki/AMP-activated_protein_kinase>
+
 ## Vision
 
 https://youtu.be/F2X2o9WaZf8
