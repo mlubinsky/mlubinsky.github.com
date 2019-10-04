@@ -1,3 +1,7 @@
+## Data Modeling
+<https://en.wikipedia.org/wiki/ISO_15926>
+<https://dot15926.livejournal.com/27293.html>
+
 ## Architecture
 
 <https://www.youtube.com/watch?v=Y6Ev8GIlbxc> distributed systems
