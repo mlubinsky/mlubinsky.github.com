@@ -12,6 +12,8 @@
 
 ## Time Series
 
+<https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook/dp/B07Y5WSCV2/> Book
+
 <https://christian.bock.ml/posts/significant_shapelets/> 
 
 <https://machinelearningmastery.com/time-series-data-visualization-with-python/>
