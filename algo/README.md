@@ -14,6 +14,8 @@
 
 <https://habr.com/ru/post/467371/> Разбор задачи с собеседования Google: поиск соотношения
 
+<https://www.youtube.com/watch?v=xYBKMV92YrM>
+
 <https://programming.guide/hash-tables.html> Hash
 
 <https://classicproblems.com/>
