@@ -14,6 +14,9 @@ chmod 400 my-ec2-ssh-key.pem
 <https://habr.com/ru/company/otus/blog/466519/> . Детальный разбор AWS Lambda
 
 
+## A command line utility that allows you to stream data from multiple S3 objects directly into your terminal
+<https://www.npmjs.com/package/s3st>
+
 ## Athena
 <https://www.transposit.com/blog/2019.08.22-try-athena-easily-with-a-transposit-app/?c=lob>
 
