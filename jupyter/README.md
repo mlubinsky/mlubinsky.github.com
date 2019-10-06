@@ -1,5 +1,7 @@
 # Jupyter Pandas NumPy Scikit
 
+<https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
+
 <https://habr.com/ru/post/460557/>
 
 <https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python> free course
