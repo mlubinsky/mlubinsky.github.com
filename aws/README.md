@@ -15,6 +15,8 @@ chmod 400 my-ec2-ssh-key.pem
 
 
 ## A command line utility that allows you to stream data from multiple S3 objects directly into your terminal
+
+<https://news.ycombinator.com/item?id=21170652>
 <https://www.npmjs.com/package/s3st>
 
 ## Athena
