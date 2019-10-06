@@ -49,8 +49,10 @@ CMD ["node", "index.js"]
 ... 
 
 ## Flask and Docker
-https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-18-04
 
+<https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-18-04>
+
+<https://testdriven.io/courses/microservices-with-docker-flask-and-react/>
 
 <https://habr.com/ru/company/ruvds/blog/441574/>
 Существуют два способа, позволяющих сделать срок жизни данных большим срока жизни контейнера. 
