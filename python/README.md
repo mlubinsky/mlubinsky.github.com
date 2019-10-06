@@ -2,6 +2,12 @@
 
 <https://dev.libreneitor.com/expert-python-topics-you-should-know/>
 
+<https://pysnakeblog.blogspot.com/>
+
+## Import
+
+<https://www.pythonforthelab.com/blog/complete-guide-to-imports-in-python-absolute-relative-and-more/>
+
 ## defaultdict
 
 Task: group words by their 1st letter.
