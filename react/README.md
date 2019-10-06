@@ -231,6 +231,8 @@ const App = () => (
 
 <https://wattenberger.com/blog/react-hooks>
 
+<https://dev.to/craigmichaelmartin/react-hooks-are-a-more-accurate-implementation-of-the-react-mental-model-1k49>
+
 <https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/>
 
 <https://habr.com/ru/post/441722/> React Hooks
