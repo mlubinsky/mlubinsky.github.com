@@ -4,6 +4,12 @@
 
 <https://www.reddit.com/r/Python/comments/cyslju/ai_cheatsheets_now_learn_tensorflow_keras_pytorch/>
 
+<https://www.reddit.com/r/learnmachinelearning/comments/daw0vn/handson_machine_learning_with_scikitlearn_and/>
+
+<https://icenamor.github.io/files/books/Hands-on-Machine-Learning-with-Scikit-2E.pdf> BOOK
+
+<https://github.com/ageron/handson-ml2>
+
 ## PyTorch
 
 <https://github.com/omerbsezer/Fast-Pytorch>
