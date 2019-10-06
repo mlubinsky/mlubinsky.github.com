@@ -111,9 +111,33 @@ https://github.com/matbor/mqtt2highcharts
 https://gist.github.com/vitormeriat/b6de7aa0a28af2b45f15c3d67721e051
 
 
+
+## Canvas implementation over an SVG implementation
+
+SVG is way slower than canvas though
+Advantage SVG: if you want to do some advanced interactivity. That can sometimes be easier in SVG.
+
+## Chart.js
+
+<https://news.ycombinator.com/item?id=21170288>
+
+<https://github.com/chartjs/awesome>
+
+<https://github.com/nagix/chartjs-plugin-streaming> real time plugin
+
+
+
 ## JS plotting libraries
 
 <https://nivo.rocks/>
+
+<https://deck.gl/>
+
+<https://github.com/leeoniya/uPlot>
+
+<https://github.com/jwilber/roughViz>
+
+<https://github.com/apexcharts/apexcharts.js>
 
 <https://selleo.com/blog/javascript-data-visualization-libraries-comparison-table>
 
