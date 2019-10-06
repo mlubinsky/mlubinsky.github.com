@@ -1,3 +1,8 @@
+<https://news.ycombinator.com/item?id=21158487> 
+
+<https://streamlit.io/>
+
+<https://observablehq.com/>
 
 <https://github.com/fritzlabs/Awesome-Mobile-Machine-Learning> ML on mobile devices
 
