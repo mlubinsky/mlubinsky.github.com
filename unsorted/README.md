@@ -62,6 +62,11 @@ cat foo.json | python3 -m json.tool
 
 jp is better jq <https://github.com/jmespath/jp>
 
+## Geospatial Software Tools
+
+<https://medium.com/swlh/tools-i-recommend-for-building-geospatial-web-applications-274d6939536c>
+
+<https://news.ycombinator.com/item?id=21169851>
 
 ## Mental models
 <https://fs.blog/best-articles/> 
