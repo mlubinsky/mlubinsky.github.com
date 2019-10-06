@@ -121,6 +121,8 @@ Advantage SVG: if you want to do some advanced interactivity. That can sometimes
 
 <https://news.ycombinator.com/item?id=21170288>
 
+<https://www.stanleyulili.com/javascript/beginner-guide-to-chartjs/>
+
 <https://github.com/chartjs/awesome>
 
 <https://github.com/nagix/chartjs-plugin-streaming> real time plugin
