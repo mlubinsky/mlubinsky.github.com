@@ -23,6 +23,10 @@
 ## AI on embedded devices from Intel, NVidia, etc
 <https://habr.com/ru/company/recognitor/blog/468421/>
 
+<https://www.jameswhanlon.com/new-chips-for-machine-intelligence.html>
+
+<https://news.ycombinator.com/item?id=21178609>
+
 ## AWS
 ### S3
 <https://s3.console.aws.amazon.com/s3/buckets/mlubinsky/?region=us-east-2&tab=overview>
