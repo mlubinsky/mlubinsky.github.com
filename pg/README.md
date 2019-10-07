@@ -15,9 +15,24 @@
 
 <https://www.programming-books.io/essential/postgresql/>
 
+<https://habr.com/ru/company/postgrespro/blog/330544/>
 
+## Indexes
+<https://habr.com/ru/company/postgrespro/blog/330544/>
 Combined index vs separate index 
 <https://www.cybertec-postgresql.com/en/combined-indexes-vs-separate-indexes-in-postgresql/>
+
+<https://habr.com/ru/company/mailru/blog/453046/> Indexes
+
+<https://cube.dev/blog/postgresql-query-optimization/>
+
+<https://news.ycombinator.com/item?id=19765761>
+
+
+<https://wiki.postgresql.org/wiki/Don%27t_Do_This>
+
+<https://pgdash.io/blog/postgres-features.html>
+
 
 ## Import JSON,XML files to postgree
 https://github.com/okbob/pgimportdoc
@@ -791,16 +806,7 @@ REST call in postman: localhost:3000/sensor_info
 
 <https://habr.com/ru/company/postgrespro/blog/443792/>
 
-<https://habr.com/ru/company/mailru/blog/453046/> Indexes
 
-<https://cube.dev/blog/postgresql-query-optimization/>
-
-<https://news.ycombinator.com/item?id=19765761>
-
-
-<https://wiki.postgresql.org/wiki/Don%27t_Do_This>
-
-<https://pgdash.io/blog/postgres-features.html>
 
 ```
 CREATE TABLE Apt99_2016 (time TIMESTAMP WITH TIME ZONE NOT NULL, value REAL);
