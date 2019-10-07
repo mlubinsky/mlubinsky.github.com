@@ -103,6 +103,29 @@ https://severalnines.com/blog/using-kubernetes-deploy-postgresql
 
 ##  STORED PROCEDURES
 <https://www.postgresql.org/docs/11/plpgsql-control-structures.html>
+```
+select n.nspname as schema_name,
+       p.proname as specific_name,
+       case p.prokind 
+            when 'f' then 'FUNCTION'
+            when 'p' then 'PROCEDURE'
+            when 'a' then 'AGGREGATE'
+            when 'w' then 'WINDOW'
+            end as kind,
+       l.lanname as language,
+       case when l.lanname = 'internal' then p.prosrc
+            else pg_get_functiondef(p.oid)
+            end as definition,
+       pg_get_function_arguments(p.oid) as arguments,
+       t.typname as return_type
+from pg_proc p
+left join pg_namespace n on p.pronamespace = n.oid
+left join pg_language l on p.prolang = l.oid
+left join pg_type t on t.oid = p.prorettype 
+where n.nspname not in ('pg_catalog', 'information_schema')
+order by schema_name,
+         specific_name;
+```
 
 ## UI Clients 
 <https://www.macpostgresclient.com/> . SQLPlus 
