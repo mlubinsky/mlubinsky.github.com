@@ -10,6 +10,8 @@
 
 <https://github.com/m3db/m3>
 
+<http://rcardin.github.io/database/mongodb/time-series/2017/01/31/implementing-time-series-in-mongodb.html> 
+
 ## Time Series
 
 <https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook/dp/B07Y5WSCV2/> Book
