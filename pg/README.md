@@ -40,6 +40,15 @@ https://severalnines.com/blog/understanding-and-reading-postgresql-system-catalo
 
 ## Generate series
 
+```
+-- создаем миллион случайных чисел и строк
+CREATE TABLE items AS
+  SELECT
+    (random()*1000000)::integer AS n,
+    md5(random()::text) AS s
+  FROM
+    generate_series(1,1000000);
+ ```   
 <https://rob.conery.io/2018/08/01/simple-monthly-reports-in-postgresql-using-generate_series/>   
 
 <https://habrahabr.ru/post/340460/>
