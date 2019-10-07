@@ -18,6 +18,11 @@
 <https://habr.com/ru/company/postgrespro/blog/330544/>
 
 ## Indexes
+```
+select *
+from pg_indexes
+where tablename  = 'tracking';
+```
 <https://habr.com/ru/company/postgrespro/blog/330544/>
 Combined index vs separate index 
 <https://www.cybertec-postgresql.com/en/combined-indexes-vs-separate-indexes-in-postgresql/>
