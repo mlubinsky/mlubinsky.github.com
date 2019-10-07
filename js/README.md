@@ -140,6 +140,8 @@ const [obj, obj1, obj2] = objectList // now each object can be referenced direct
 ## map reduce filter
 <https://medium.com/sanjagh/iterating-over-javascript-objects-declaratively-or-how-to-map-filter-and-reduce-on-objects-d179cd40d935>
 
+<https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%BE-%D0%BF%D1%80%D0%BE-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-filter-%D0%B2-javascript-1fcb239a0d74>
+
 <https://www.reddit.com/r/javascript/comments/ct6o5d/higherorder_functions_map_filter_and_reduce/>
 
 ## Passing function as parameters
