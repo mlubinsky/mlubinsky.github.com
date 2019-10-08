@@ -2,6 +2,12 @@
 
 <https://news.ycombinator.com/item?id=21189256>
 
+```
+    git add/rm/commit/status/push
+    git branch/checkout/merge/rebase
+    git tag/push --tag
+```    
+
  I do everything from a GUI (Fork for macOS) and very rarely have to deal with any complicated issues that require a terminal.
 - Always pull w/ rebase for the current branch.
 
