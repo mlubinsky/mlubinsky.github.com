@@ -73,6 +73,14 @@ CREATE TABLE items AS
   FROM
     generate_series(1,1000000);
  ```   
+
+```
+  create table t(a integer, b text, c boolean);
+  insert into t(a,b,c)
+  select s.id, chr((32+random()*94)::integer), random() < 0.01
+  from generate_series(1,100000) as s(id)
+  order by random();
+```  
 <https://rob.conery.io/2018/08/01/simple-monthly-reports-in-postgresql-using-generate_series/>   
 
 <https://habrahabr.ru/post/340460/>
