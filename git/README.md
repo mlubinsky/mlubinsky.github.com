@@ -11,13 +11,16 @@
     git add -i
 ```    
 
+<https://www.kaleidoscopeapp.com/> Kaleidoscope is thefile comparison app. Compare different text files, images, and folders on your Mac and iPad. Review and merge changes in a matter of seconds (merging available only on the Mac).
+
 When I want to get back to a pristine state, I prefer
-$ git reset --hard origin/master
-
+```
+ git reset --hard origin/master
+```
 over the suggested
-
-$ git reset --hard HEAD
-
+```
+ git reset --hard HEAD
+```
 If you use git and don't know the difference, read this: 
 <https://stackoverflow.com/questions/8196544/what-are-the-git-concepts-of-head-master-origin>
 
