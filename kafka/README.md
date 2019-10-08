@@ -44,6 +44,8 @@ https://habr.com/company/itsumma/blog/418389/
 
 <https://yokota.blog/>
 
+<https://mux.com/blog/stateful-stream-processing-with-kafka-and-go/>
+
  * Producer:
    - Async (no garantee)
    - Commited to leader
