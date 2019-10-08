@@ -10,8 +10,14 @@
     git tag/push --tag
     git add -i
 ```    
+## Merge conflict relosution tools
 
-<https://www.kaleidoscopeapp.com/> Kaleidoscope is thefile comparison app. Compare different text files, images, and folders on your Mac and iPad. Review and merge changes in a matter of seconds (merging available only on the Mac).
+Set `merge.conflictstyle=diff3` 
+The default merge style is utterly useless, I have no idea why it is the default. diff3 gives you three pieces of information: the status before at the common ancestor; the status on the current branch; and the status on the to-be-merged branch. You can then understand what changes were made on each branch, and decide how to merge them intelligently. Without that common ancestor, it's way way harder to understand what you're looking at.
+<https://www.sublimemerge.com/>  Git Client, from the makers of Sublime Text
+<http://vimcasts.org/episodes/fugitive-vim-resolving-merge-conflicts-with-vimdiff/>
+
+<https://www.kaleidoscopeapp.com/> Kaleidoscope is the file comparison app. Compare different text files, images, and folders on your Mac and iPad. Review and merge changes in a matter of seconds (merging available only on the Mac).
 
 When I want to get back to a pristine state, I prefer
 ```
