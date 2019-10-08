@@ -8,6 +8,7 @@
     git add/rm/commit/status/push
     git branch/checkout/merge/rebase
     git tag/push --tag
+    git add -i
 ```    
 
 When I want to get back to a pristine state, I prefer
@@ -48,13 +49,17 @@ HEAD is an official notion in git. HEAD always has a well-defined meaning. maste
 - For complicated merge conflicts I switch to Visual Studio Code which also has a great GUI.
 
 I constantly use
+```
     git commit --fixup 6138D3A
     git rebase --autosquash --interactive origin/master
+```
 to keep a clean history of cohesive commits. Rarely do I change _everything_ required for an objective in one go, I still like to commit as I work, I just like the finished product to _seem_ like I did it in one go, for future maintainers' sake.
 And I rebase to catch up with upstream, I can't stand having intermediate merge commits in my history and rebasing lets you resolve conflicts as they're introduced, instead of an all-at-once at the end.
 
 
-When I merge my feature back to origin/master I do `git merge --squash myFeatureBranch` which automatically rebases everything and keeps a clean history.
+When I merge my feature back to origin/master I do
+`git merge --squash myFeatureBranch` 
+which automatically rebases everything and keeps a clean history.
 
  If I'm working on a feature that I haven't pushed up yet I might squash my commits together for a cleaner history (it also helps with rebasing). 
  
