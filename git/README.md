@@ -10,6 +10,17 @@
     git tag/push --tag
 ```    
 
+When I want to get back to a pristine state, I prefer
+$ git reset --hard origin/master
+
+over the suggested
+
+$ git reset --hard HEAD
+
+If you use git and don't know the difference, read this: 
+<https://stackoverflow.com/questions/8196544/what-are-the-git-concepts-of-head-master-origin>
+
+
  I do everything from a GUI (Fork for macOS) and very rarely have to deal with any complicated issues that require a terminal.
 - Always pull w/ rebase for the current branch.
 
