@@ -16,8 +16,11 @@
 
 <https://github.com/genular/simon-frontend> .   <https://genular.org/>
 
+## AutoML
 AutoML basic project: <https://github.com/minimaxir/automl-gs>
 given X predict Y
+
+<https://medium.com/georgian-impact-blog/choosing-the-best-automl-framework-4f2a90cb1826>
 
 <https://github.com/mljar/mljar-supervised> .  AutoML
 
