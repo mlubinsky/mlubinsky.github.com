@@ -4,6 +4,11 @@
 
 <https://pysnakeblog.blogspot.com/>
 
+## Python tools
+pyenv, poetry, black, flake8, isort, pre-commit, pytest, coverage, tox, Azure Pipelines, sphinx, and readthedocs:
+
+<https://medium.com/georgian-impact-blog/python-tooling-makes-a-project-tick-181d567eea44>
+
 ## Import
 
 <https://www.pythonforthelab.com/blog/complete-guide-to-imports-in-python-absolute-relative-and-more/>
