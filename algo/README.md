@@ -368,6 +368,8 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 ## Hash function and hashtable 
 
+<https://www.data-structures-in-practice.com/hash-tables/>
+
 <https://engineering.fb.com/developer-tools/f14/>
 
 <https://medium.com/@leventov/smoothiemap-2-the-lowest-memory-hash-table-ever-6bebd06780a3>
