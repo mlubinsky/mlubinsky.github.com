@@ -1,5 +1,7 @@
 
-<https://habr.com/ru/post/466385/>
+<https://habr.com/ru/post/466385/>  Изучение механики обмена сообщениями посредством ActiveMQ и Kafka. Глава 1
+
+<https://www.jesse-anderson.com/2019/10/why-i-recommend-my-clients-not-use-ksql-and-kafka-streams/> Do not use Kafka Stream and KSQL
 
 ## RabbitMQ
 <https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6>
