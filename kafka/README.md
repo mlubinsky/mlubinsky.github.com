@@ -42,6 +42,8 @@ https://habr.com/company/itsumma/blog/418389/
  
 ##  Kafka
 
+<https://habr.com/ru/post/466585/> book article
+
 <https://youtu.be/JalUUBKdcA0>
 
 <https://yokota.blog/>
