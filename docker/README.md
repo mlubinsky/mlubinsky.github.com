@@ -19,6 +19,8 @@
 <https://blog.softwaremill.com/editing-files-in-a-docker-container-f36d76b9613c> Editing inside docker container
 
 ## Nodejs 
+<https://jdlm.info/articles/2019/09/06/lessons-building-node-app-docker.html>
+
 <https://habr.com/ru/post/466493/>
 ```
 docker pull node
