@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/post/460557/>
 
+<https://habr.com/ru/post/470864/> Web UI for Jupiter 
+
 <https://habr.com/ru/post/469355/> NumPy
 
 <https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python> free course
