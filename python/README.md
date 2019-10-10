@@ -1,3 +1,7 @@
+## Books
+
+<https://www.amazon.com/Pro-Python-Features-Professional-Development-ebook/dp/B07PQBH4LL/>
+
 ## Advanced topics
 
 <https://dev.libreneitor.com/expert-python-topics-you-should-know/>
