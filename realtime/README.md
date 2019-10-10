@@ -99,6 +99,10 @@ https://jpmens.net/2014/07/03/the-mosquitto-mqtt-broker-gets-websockets-support/
 
 <http://www.mqtt-dashboard.com/metrics.html>
 
+
+## Time series charting library
+<https://github.com/leeoniya/uPlot>
+
 ## HighCharts
 
 <https://www.npmjs.com/package/highcharts>
