@@ -137,9 +137,9 @@ Advantage SVG: if you want to do some advanced interactivity. That can sometimes
 
 <https://echarts.apache.org> 
 
-<https://nivo.rocks/>
+<https://nivo.rocks/> .  React components on top of d3.
 
-<https://deck.gl/>
+<https://deck.gl/> WebGL-powered framework for visual exploratory data analysis of large datasets.
 
 <https://github.com/leeoniya/uPlot>  Time series charting library
 
