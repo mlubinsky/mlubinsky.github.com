@@ -1,5 +1,7 @@
 ## Postgres
 
+<http://www.postgresqltutorial.com/postgresql-cte/> CTE
+
 <http://www.craigkerstiens.com/2018/01/31/postgres-hidden-gems/>
 
 <https://habr.com/ru/company/postgrespro/blog/443792/> Типичные ошибки при работе с PostgreSQL. Часть 2
