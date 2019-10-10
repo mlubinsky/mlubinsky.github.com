@@ -2,6 +2,8 @@
 
 <https://humanreadablemag.com/issues/0/articles/the-wonders-of-the-suffix-tree-through-the-lens-of-ukkonen%E2%80%99s-algorithm/>
 
+<https://github.com/prabhupant/python-ds>
+
 <https://data-flair.training/blogs/python-programming-interview-questions/>
 
 <https://data-flair.training/blogs/top-python-interview-questions-answer/>
