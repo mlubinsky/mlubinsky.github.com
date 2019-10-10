@@ -1,3 +1,4 @@
+ <https://medium.com/@leventov/smoothiemap-2-the-lowest-memory-hash-table-ever-6bebd06780a3> .   Hash Tables comparisons
  
  <https://www.youtube.com/watch?v=RtHA1YVLW5Y> JVM does this?
  
