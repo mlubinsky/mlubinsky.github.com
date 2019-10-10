@@ -100,8 +100,7 @@ https://jpmens.net/2014/07/03/the-mosquitto-mqtt-broker-gets-websockets-support/
 <http://www.mqtt-dashboard.com/metrics.html>
 
 
-## Time series charting library
-<https://github.com/leeoniya/uPlot>
+
 
 ## HighCharts
 
@@ -136,11 +135,13 @@ Advantage SVG: if you want to do some advanced interactivity. That can sometimes
 
 ## JS plotting libraries
 
+<https://echarts.apache.org> 
+
 <https://nivo.rocks/>
 
 <https://deck.gl/>
 
-<https://github.com/leeoniya/uPlot>
+<https://github.com/leeoniya/uPlot>  Time series charting library
 
 <https://github.com/jwilber/roughViz>
 
