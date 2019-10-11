@@ -8,6 +8,10 @@
 
 ## React
 
+<https://github.com/wojtekmaj/react-lifecycle-methods-diagram>
+
+<https://youtu.be/2QbNCcbWDfI> Rus
+
 <https://reactjs.org/docs/getting-started.html>
 
 https://reactjs.org/community/examples.html
