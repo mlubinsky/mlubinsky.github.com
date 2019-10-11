@@ -10,6 +10,8 @@
 
 <https://github.com/wojtekmaj/react-lifecycle-methods-diagram>
 
+<https://blog.logrocket.com/the-new-react-lifecycle-methods-in-plain-approachable-language-61a2105859f3/>
+
 <https://youtu.be/2QbNCcbWDfI> Rus
 
 <https://reactjs.org/docs/getting-started.html>
