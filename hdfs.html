@@ -127,6 +127,14 @@ https://www.youtube.com/watch?v=6I5Ia_u4c6E
            Each stripe maintains indexes and stats about data it stores.
 
 <b>Parquet</b>
+
+https://www.mungingdata.com/aws/athena-spark-best-friends
+
+From csv to parquet:
+
+val df = spark.read.csv("/mnt/my-bucket/csv-lake/")
+spark.write.parquet("/mnt/my-bucket/parquet-lake/")
+
 https://eng.uber.com/presto/
 http://www.hydrogen18.com/blog/writing-parquet-records.html
 https://habr.com/ru/search/?q=parquet#h
