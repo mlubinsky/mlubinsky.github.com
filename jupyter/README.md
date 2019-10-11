@@ -4,6 +4,10 @@
 
 <https://jakevdp.github.io/PythonDataScienceHandbook/>
 
+<http://www.scikit-yb.org/en/latest/index.html> . Yellowbrick extends the Scikit-Learn API to make model selection and hyperparameter tuning easier. Under the hood, it’s using Matplotlib.
+
+<https://cloudblogs.microsoft.com/opensource/2019/10/10/microsoft-open-sources-sanddance-visual-data-exploration-tool/>       SandDance   visualization tool from Microsoft Research
+
 <https://kanoki.org/2019/10/09/working-with-pandas-datetime/> Working with timeseries in Pandas
 
 <https://habr.com/ru/post/460557/>
