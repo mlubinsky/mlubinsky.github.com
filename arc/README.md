@@ -6,6 +6,8 @@
 
 <https://www.youtube.com/watch?v=Y6Ev8GIlbxc> distributed systems
 
+<https://engineering.fb.com/data-infrastructure/scribe/> Scribe: Transporting petabytes per hour
+
 <https://habr.com/ru/company/oleg-bunin/blog/466295/>
 
 <https://www.vertabelo.com/blog/business-logic-in-the-database-yes-or-no-it-depends/>
