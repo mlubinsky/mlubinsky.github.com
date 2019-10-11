@@ -2,6 +2,8 @@
 
 <https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
 
+<https://jakevdp.github.io/PythonDataScienceHandbook/>
+
 <https://kanoki.org/2019/10/09/working-with-pandas-datetime/> Working with timeseries in Pandas
 
 <https://habr.com/ru/post/460557/>
