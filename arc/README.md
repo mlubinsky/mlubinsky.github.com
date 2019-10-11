@@ -6,7 +6,11 @@
 
 <https://www.youtube.com/watch?v=Y6Ev8GIlbxc> distributed systems
 
+
+<https://research.fb.com/publications/scuba-diving-into-data-at-facebook/> Scuba: Diving into Data at Facebook
 <https://engineering.fb.com/data-infrastructure/scribe/> Scribe: Transporting petabytes per hour
+
+<https://research.fb.com/publications/realtime-data-processing-at-facebook/> Realtime Data Processing at Facebook
 
 <https://habr.com/ru/company/oleg-bunin/blog/466295/>
 
