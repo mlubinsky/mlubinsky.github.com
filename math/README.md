@@ -16,6 +16,8 @@
 
 ### Linear algebra
 
+<https://news.ycombinator.com/item?id=21231228> linear algebra books
+
 <https://civilstat.com/2015/07/dont-invert-that-matrix-why-and-how/> Do not invert the matrix
 
 <https://kam.mff.cuni.cz/~matousek/stml-53-matousek-1.pdf>
