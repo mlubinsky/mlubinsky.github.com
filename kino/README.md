@@ -8,6 +8,19 @@
 
 <https://www.youtube.com/watch?v=g5wlBqWSgxk> Vysotsky
 
+## Soaps
+https://soap.d3.ru/kakie-otnositelno-sovremennye-serialy-mozhno-tak-ili-inache-schitat-kultovymi-1663894/
+[S04] Bosch | Босх (USA, 2014–...) https://www.imdb.com/title/tt3502248/
+Trial and Error | Методом проб и ошибок (USA, 2017–..., 2S) https://www.imdb.com/title/tt5511512/
+The Guest Book | Гостевая книга (USA, 2017–...) https://www.imdb.com/title/tt5990096/
+https://www.imdb.com/title/tt7366338/ Chernobyl
+https://www.imdb.com/title/tt8064302/ Dead to me
+True Detective (USA, 2014–2019)
+Here and Now | Здесь и сейчас (USA, 2018, 1S)
+https://www.imdb.com/title/tt7134194/ The Truth About the Harry Quebert Affair | Правда о деле Гарри Квеберта (USA, 2018)
+https://www.imdb.com/title/tt7587890/?ref_=nv_sr_1 Новичок / Rookie
+Bodyguard | Телохранитель (UK, 2018) https://www.imdb.com/title/tt7493974/
+
 ## Kino
 
 <https://filmzonyoutube.d3.ru/> . youtube
