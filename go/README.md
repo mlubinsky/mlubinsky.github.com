@@ -1,6 +1,8 @@
 
 <https://play.golang.org/p/Irqxm0okfkt> .  Go playgrounds
 
+<http://notes.eatonphil.com/interpreting-go.html> Go internals
+
 Go has block-level scoping. 
 
 = means "assign the existing identifier to this value". 
