@@ -14,3 +14,5 @@ Go has block-level scoping.
 <https://habr.com/ru/post/466459/> . Go and databases
 
 <https://www.imdb.com/title/tt7349950/> Go 1.13
+
+<https://github.com/uber-go/guide/blob/master/style.md> go style guide
