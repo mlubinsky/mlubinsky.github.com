@@ -10,6 +10,7 @@
 
 <https://awesome-docker.netlify.com/>
 
+<https://medium.com/learning-cloud-native-go/lets-get-it-started-dc4634ef03b> Go + Docker
 <https://habr.com/ru/company/hh/blog/450954/> Java + Docker
 
 <https://github.com/floydhub/dl-docker> Docker image with ML
