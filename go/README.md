@@ -1,3 +1,4 @@
+<https://news.ycombinator.com/item?id=21225401>
 
 <https://play.golang.org/p/Irqxm0okfkt> .  Go playgrounds
 
