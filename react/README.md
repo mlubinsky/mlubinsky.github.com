@@ -253,6 +253,8 @@ const App = () => (
 
 <https://blog.bitsrc.io/why-we-switched-to-react-hooks-48798c42c7f>
 
+<https://dev.to/craigmichaelmartin/react-hooks-are-a-more-accurate-implementation-of-the-react-mental-model-1k49>
+
 ## Books
 <https://leanpub.com/reintroducing-react>
 
