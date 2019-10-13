@@ -123,6 +123,8 @@ Advantage SVG: if you want to do some advanced interactivity. That can sometimes
 
 ## Chart.js
 
+<https://github.com/IridiumIO/pyChart.js>
+
 <https://news.ycombinator.com/item?id=21170288>
 
 <https://www.stanleyulili.com/javascript/beginner-guide-to-chartjs/>
