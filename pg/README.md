@@ -4,6 +4,8 @@
 
 <http://www.craigkerstiens.com/2018/01/31/postgres-hidden-gems/>
 
+<https://dev.to/heroku/postgres-is-underrated-it-handles-more-than-you-think-4ff3>
+
 <https://habr.com/ru/company/postgrespro/blog/443792/> Типичные ошибки при работе с PostgreSQL. Часть 2
 
 <http://postgres-bits.herokuapp.com/#1>>
