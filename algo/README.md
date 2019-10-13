@@ -1,5 +1,7 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://able.bio/daqo/landing-a-software-engineering-job-at-facebook--78k4a0s>
+
 <https://humanreadablemag.com/issues/0/articles/the-wonders-of-the-suffix-tree-through-the-lens-of-ukkonen%E2%80%99s-algorithm/>
 
 <https://github.com/prabhupant/python-ds>
