@@ -4,6 +4,7 @@
 
 ## Advanced topics
 
+<https://news.python.sc/> daily feed
 <https://dev.libreneitor.com/expert-python-topics-you-should-know/>
 
 <https://pysnakeblog.blogspot.com/>
