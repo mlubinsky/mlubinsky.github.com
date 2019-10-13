@@ -1,3 +1,5 @@
+<https://www.reddit.com/r/MachineLearning/comments/dgog2h/d_why_is_l2_preferred_over_l1_regularization/>
+
 <https://news.ycombinator.com/item?id=21158487> 
 
 <https://streamlit.io/>
