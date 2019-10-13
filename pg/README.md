@@ -2,9 +2,13 @@
 
 <http://www.postgresqltutorial.com/postgresql-cte/> CTE
 
+<https://thebuild.com/presentations/not-your-job-pgconf-us-2017.pdf>
+
 <http://www.craigkerstiens.com/2018/01/31/postgres-hidden-gems/>
 
 <https://dev.to/heroku/postgres-is-underrated-it-handles-more-than-you-think-4ff3>
+
+<https://lobste.rs/s/oqb6fu/postgres_is_underrated_it_handles_more>
 
 <https://habr.com/ru/company/postgrespro/blog/443792/> Типичные ошибки при работе с PostgreSQL. Часть 2
 
