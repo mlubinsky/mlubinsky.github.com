@@ -15,6 +15,9 @@
 <https://stackoverflow.com/questions/35549547/what-is-the-difference-between-the-fetch-api-and-xmlhttprequest> \
 <https://medium.com/@shahata/why-i-wont-be-using-fetch-api-in-my-apps-6900e6c6fe78> 
 
+
+<https://medium.com/to-err-is-aaron/detect-network-failures-when-using-fetch-40a53d56e36>
+
 ```
 <script>
 function json2table(json, classes){
