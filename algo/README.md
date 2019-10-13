@@ -34,7 +34,7 @@
 
 <https://habr.com/ru/company/skillbox/blog/462979/>
 
-<https://blog.softwaremill.com/algebraic-data-types-in-four-languages-858788043d4e> Angebraic data types
+<https://blog.softwaremill.com/algebraic-data-types-in-four-languages-858788043d4e> Algebraic data types
 
 ## Fibonacci
 <https://habr.com/ru/post/449616/> 
@@ -128,6 +128,9 @@
 <https://algs4.cs.princeton.edu/home/>
 
 <https://www.youtube.com/watch?v=TeZqKnC2gvA> Visitor design pattern
+
+## Dynamic programming
+<https://skerritt.blog/dynamic-programming>
 
 <https://medium.freecodecamp.org/unmasking-bitmasked-dynamic-programming-25669312b77b>
 
@@ -489,12 +492,14 @@ if __name__ =="__main__":
     m = 5
     print(countPaths(n, m)) 
    
+## Dynamic programming 
+<https://skerritt.blog/dynamic-programming/>
 
-https://hackernoon.com/dynamic-programming-for-brute-forcers-36f26c2466cf>
+<https://hackernoon.com/dynamic-programming-for-brute-forcers-36f26c2466cf>
 
-https://medium.com/@codingfreak/top-50-dynamic-programming-practice-problems-4208fed71aa3
+<https://medium.com/@codingfreak/top-50-dynamic-programming-practice-problems-4208fed71aa3>
 
-https://lukasmericle.github.io/dynprotut/
+<https://lukasmericle.github.io/dynprotut/
 
 ## Others
 
