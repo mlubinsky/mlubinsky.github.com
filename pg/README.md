@@ -25,6 +25,10 @@
 
 <https://habr.com/ru/company/postgrespro/blog/330544/>
 
+## TimescalDB
+
+<https://habr.com/ru/company/oleg-bunin/blog/470902/>
+
 ## Indexes
 ```
 select * from pg_indexes where tablename  = 'tracking';
