@@ -13,6 +13,7 @@ console.log(typeof(x));
 Don’t use console.log(obj), use 
 console.log(JSON.parse(JSON.stringify(obj))).
 
+<https://www.manning.com/books/functional-programming-in-javascript> THE BOOK
 
 <https://learn.javascript.ru/>
 
