@@ -1,5 +1,7 @@
 <https://github.com/appalaszynski/mac-setup>
 
+<https://magnet.crowdcafe.com/> Magnet - windows manager for Mac
+
 <https://dbngin.com/> . Free All-in-One Database Version Management Tool
 
 <https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a> 
