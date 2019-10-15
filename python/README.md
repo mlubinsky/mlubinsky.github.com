@@ -2,8 +2,11 @@
 
 <https://www.amazon.com/Pro-Python-Features-Professional-Development-ebook/dp/B07PQBH4LL/>
 
-Use Jinja templatw to generate dynamic SQL
+Use Jinja template to generate dynamic SQL
 <https://medium.com/analytics-and-data/jinja-the-sql-way-of-the-ninja-9a64fc815564>
+
+
+<https://tomassetti.me/parsing-in-python/> Parsing in Python
 
 ## Advanced topics
 
