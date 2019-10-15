@@ -3,6 +3,8 @@
 
 <https://www.jesse-anderson.com/2019/10/why-i-recommend-my-clients-not-use-ksql-and-kafka-streams/> Do not use Kafka Stream and KSQL
 
+<https://dzone.com/articles/life-beyond-kafka-with-apache-pulsar>   Apache Pulsar
+
 ## RabbitMQ
 <https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6>
 
