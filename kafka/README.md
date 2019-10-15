@@ -5,6 +5,8 @@
 
 <https://dzone.com/articles/life-beyond-kafka-with-apache-pulsar>   Apache Pulsar
 
+<https://dzone.com/articles/5-courses-to-learn-apache-kafka-in-2019> 5 Kafka classes /courses
+
 ## RabbitMQ
 <https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6>
 
