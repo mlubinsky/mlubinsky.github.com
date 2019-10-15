@@ -23,6 +23,8 @@
 ## AI on embedded devices from Intel, NVidia, etc
 <https://habr.com/ru/company/recognitor/blog/468421/>
 
+<https://habr.com/ru/post/471074/> Synet 
+
 <https://www.jameswhanlon.com/new-chips-for-machine-intelligence.html>
 
 <https://news.ycombinator.com/item?id=21178609>
