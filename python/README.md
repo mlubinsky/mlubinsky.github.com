@@ -2,6 +2,8 @@
 
 <https://www.amazon.com/Pro-Python-Features-Professional-Development-ebook/dp/B07PQBH4LL/>
 
+<https://habr.com/ru/company/piter/blog/471520/> Книга «Классические задачи Computer Science на языке Python»
+
 Use Jinja template to generate dynamic SQL
 <https://medium.com/analytics-and-data/jinja-the-sql-way-of-the-ninja-9a64fc815564>
 
