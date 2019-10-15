@@ -15,6 +15,7 @@ Use Jinja template to generate dynamic SQL
 
 <https://pysnakeblog.blogspot.com/>
 
+<https://habr.com/ru/post/471618/> C++ fropm python
 ## Python tools
 pyenv, poetry, black, flake8, isort, pre-commit, pytest, coverage, tox, Azure Pipelines, sphinx, and readthedocs:
 
