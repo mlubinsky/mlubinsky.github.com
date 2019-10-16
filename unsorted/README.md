@@ -142,6 +142,7 @@ Live calculation in browser
 
 ## Business
 
+
 <https://blog.pragmaticengineer.com/an-elegant-puzzle-book-review/> 
 
 <http://aynuriev.com/how-to-register-company-usa/>
@@ -155,7 +156,11 @@ Live calculation in browser
 <https://news.ycombinator.com/item?id=19698151>
 
 ## Be Happy
- 
+ Nonviolent Communication
+<https://www.clearerthinking.org/single-post/2019/03/06/Want-to-improve-your-relationships-Try-Nonviolent-Communication-1>
+
+<https://news.ycombinator.com/item?id=21263894>
+
 <https://news.ycombinator.com/item?id=19650044> Life Advices
 
 <https://news.ycombinator.com/item?id=19770527> What is Love
