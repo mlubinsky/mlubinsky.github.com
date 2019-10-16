@@ -14,6 +14,8 @@
 
 <https://medium.com/@D11Engg/building-scalable-real-time-analytics-alerting-and-anomaly-detection-architecture-at-dream11-e20edec91d33> 
 
+<https://www.infoq.com/presentations/stream-analysis-fp/>
+
 <https://habr.com/ru/company/oleg-bunin/blog/466295/>
 
 <https://www.vertabelo.com/blog/business-logic-in-the-database-yes-or-no-it-depends/>
