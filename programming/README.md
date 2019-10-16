@@ -4,6 +4,20 @@
  () Parentheses
 ```
 
+# Comp science
+
+<http://raganwald.com/2019/02/14/i-love-programming-and-programmers.html>
+
+<https://www.quickcode.co/engineer-blogs>  dev blogs of big companies
+
+<https://compsciclub.ru/courses/>   Comp science lectures
+
+<https://habr.com/company/globalsign/blog/348988/> Mozilla IoT Things
+
+<https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance> . Covariance/Contrvariance
+
+<https://news.ycombinator.com/item?id=21092698> crafting interpreters
+
 ## Parsers
 
 <https://siddhesh.in/posts/gcc-under-the-hood.html> gcc under the hood
@@ -39,6 +53,10 @@ https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 <https://news.ycombinator.com/item?id=20857887>
 
 <https://news.ycombinator.com/item?id=21090288>
+
+<http://app-from-scratch.darkleaf.ru/> . Clojure
+
+<http://blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html>
 
 ## youtube programming
 
