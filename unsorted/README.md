@@ -39,38 +39,6 @@
 ## . Worfram mathematica
 <https://habr.com/ru/company/wolfram/blog/469935/>
 
-## Browser extension for JSON: JsonDiscovery
-<https://habr.com/ru/post/461185/> 
-
-<https://github.com/discoveryjs/browser-extension-json-discovery>
-
-<https://news.ycombinator.com/item?id=20645843>
-
-<http://zaa.ch/jsonlint/>
-
-<https://jsoneditoronline.org/>
-
-<https://github.com/carlmjohnson/json-tidy>
-
-json_pp on MacOS
-
-pbpaste | jq
-
-pbpaste | jq . | pbcopy
-
-cat foo.json | python3 -m json.tool
-
-<https://www.jvt.me/posts/2017/06/05/pretty-printing-json-cli/>
-
-<https://prettier.io/playground/>
-
-jp is better jq <https://github.com/jmespath/jp>
-
-## Geospatial Software Tools
-
-<https://medium.com/swlh/tools-i-recommend-for-building-geospatial-web-applications-274d6939536c>
-
-<https://news.ycombinator.com/item?id=21169851>
 
 ## Mental models
 <https://fs.blog/best-articles/> 
@@ -107,12 +75,6 @@ jp is better jq <https://github.com/jmespath/jp>
 
 
 
-##  Tools
-<https://github.com/repeats/Repeat> Repeat It- like AutoKey
-
-
-<https://kroki.io/> convert plain text diagram to images Kroki provides a unified API with support for BlockDiag (BlockDiag, SeqDiag, ActDiag, NwDiag), C4 (with PlantUML), Ditaa, Erd, GraphViz, Mermaid, Nomnoml, PlantUML, SvgBob and UMLet... and more to come!
-
 <http://www.arxiv-sanity.com>
 
 
@@ -134,11 +96,7 @@ Live calculation in browser
 
 <https://explorabl.es/> . explorable explanation
 
-```
- [] Square brackets are often simply called brackets,
- {} Curly brackets  are often called braces 
- () Parentheses
-```
+
 
 ## Business
 
@@ -217,54 +175,10 @@ Live calculation in browser
 
 <https://news.ycombinator.com/item?id=21092698> crafting interpreters
 
-## Parsers
-
-<https://siddhesh.in/posts/gcc-under-the-hood.html> gcc under the hood
-<https://deniskyashif.com/translation-using-syntactic-rules/>
-<https://habr.com/ru/post/469213/> Parser combinator RUST
-<https://habr.com/ru/post/462781/>
-
-<https://medium.com/@vladimirkozhaev/antlr-an-informal-introduction-609f885a38f7> ANTLR
-
-<https://medium.com/@gvanrossum_83706/peg-parsers-7ed72462f97c> PEG from Guido
-
-<https://medium.com/@gvanrossum_83706/building-a-peg-parser-d4869b5958fb> PEG part 2
-
-<https://www3.nd.edu/~dthain/compilerbook/> .  Compiler Book
-
-<<https://tech.yandex.ru/tomita/doc/dg/concept/about-docpage/> . Tomita parser
-
-<https://www.youtube.com/watch?v=1axJDmK_pnE> .  Parser Combinators
-<https://youtu.be/1axJDmK_pnE>
-
-<https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92> . Parsing
-
-https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
 
 
 
-## Clojure
 
-<https://github.com/anan44/it-starts-with-clojure>
-<http://blog.klipse.tech/clojure/2018/12/18/welcome-clojure-10.html>
-
-<https://github.com/darkleaf/app-from-scratch/> Clojure Rus
-
-<https://news.ycombinator.com/item?id=20857887>
-
-<https://news.ycombinator.com/item?id=21090288>
-
-## youtube programming
-
-<https://techyaks.com/>
-
-<https://news.ycombinator.com/item?id=18217762>
-
-<https://www.youtube.com/user/sentdex/videos>
-
-<https://www.youtube.com/user/schafer5/videos>
-
-<https://habr.com/ru/company/englishdom/blog/438066/> .  different youtube links
 
 ## Talk
 <https://news.ycombinator.com/item?id=18831374>
