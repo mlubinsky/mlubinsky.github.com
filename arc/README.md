@@ -6,6 +6,8 @@
 
 <https://www.youtube.com/watch?v=Y6Ev8GIlbxc> distributed systems
 
+<https://github.com/rikace/Presentations/blob/master/ReactiveStreams/slides/StreamProcessing.pdf>
+
 <https://dzone.com/articles/how-to-build-a-google-search-autocomplete> How to Build a Google Search Autocomplete
 
 <https://research.fb.com/publications/scuba-diving-into-data-at-facebook/> Scuba: Diving into Data at Facebook
