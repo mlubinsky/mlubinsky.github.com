@@ -4,6 +4,8 @@
 
 <http://notes.eatonphil.com/interpreting-go.html> Go internals
 
+<https://ewanvalentine.io/> 
+
 Go has block-level scoping. 
 
 = means "assign the existing identifier to this value". 
