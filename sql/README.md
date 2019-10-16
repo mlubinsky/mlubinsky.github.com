@@ -20,6 +20,29 @@ You can use LAG() to reference previous rows
 ## DISTINCT
  <https://blog.jooq.org/2019/09/09/using-distinct-on-in-non-postgresql-databases/>
 
+##  MAX per day
+```
+CREATE VIEW max_daily_view AS
+SELECT
+  time,
+  date_trunc('day',   time) AS day,
+  date_trunc('month', time) AS month,
+  maximum
+FROM
+  (
+    SELECT time, cnt, MAX (cnt) OVER ( PARTITION BY day ) AS maximum
+    FROM
+      (
+        SELECT time, COUNT(*) AS cnt, DATE_TRUNC('day', time) AS day
+        FROM T
+        GROUP BY time
+      )
+      AS a
+  )
+  AS b
+WHERE cnt = maximum;
+```
+
 ## LEFT JOIN
 ```
 create table T1 (x int);
