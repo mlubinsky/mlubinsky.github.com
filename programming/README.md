@@ -40,8 +40,9 @@
 
 <https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92> . Parsing
 
-https://engineering.desmos.com/articles/pratt-parser/ . Pratt parser
+<https://engineering.desmos.com/articles/pratt-parser/> . Pratt parser
 
+<https://tomassetti.me/parsing-in-python/> Parsing in Python
 
 ## Clojure
 
