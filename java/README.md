@@ -1,5 +1,8 @@
  <https://medium.com/@leventov/smoothiemap-2-the-lowest-memory-hash-table-ever-6bebd06780a3> .   Hash Tables comparisons
  
+ 
+ <https://habr.com/ru/post/471772/> How Java works
+ 
  <https://www.youtube.com/watch?v=RtHA1YVLW5Y> JVM does this?
  
  An executable JAR is a just regular archive, with an included META-INF/manifest file 
@@ -32,7 +35,7 @@ They can be created from other sources like events
 They are functions, which could be subscribed later on
 ```
 
-FRom here: <https://habr.com/ru/company/piter/blog/466529/>
+From here: <https://habr.com/ru/company/piter/blog/466529/>
 Чтобы байт-код Java выполнял какую-либо конкретную работу, есть 3 возможности заставить его это сделать:
 
 * Непосредственно выполнить промежуточный код. Лучше и правильнее сказать, что его нужно «интерпретировать». В JVM есть интерпретатор языка Java. Как вы знаете, для работы JVM нужно запустить программу “java”.
