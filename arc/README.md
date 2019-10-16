@@ -15,7 +15,7 @@
 
 <https://medium.com/@D11Engg/building-scalable-real-time-analytics-alerting-and-anomaly-detection-architecture-at-dream11-e20edec91d33> 
 
-<https://www.infoq.com/presentations/stream-analysis-fp/>
+<https://www.infoq.com/presentations/stream-analysis-fp/> . Real-Time Stream Analysis in Functional Reactive Programming
 
 <https://habr.com/ru/company/oleg-bunin/blog/466295/>
 
