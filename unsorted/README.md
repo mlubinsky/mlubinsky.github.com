@@ -161,19 +161,6 @@ Live calculation in browser
 <https://news.ycombinator.com/item?id=17202615> some youtube channels
 
 
-# Comp science
-
-<http://raganwald.com/2019/02/14/i-love-programming-and-programmers.html>
-
-<https://www.quickcode.co/engineer-blogs>  dev blogs of big companies
-
-<https://compsciclub.ru/courses/>   Comp science lectures
-
-<https://habr.com/company/globalsign/blog/348988/> Mozilla IoT Things
-
-<https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance> . Covariance/Contrvariance
-
-<https://news.ycombinator.com/item?id=21092698> crafting interpreters
 
 
 
