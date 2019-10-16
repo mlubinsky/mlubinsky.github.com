@@ -13,7 +13,7 @@
 <https://news.ycombinator.com/item?id=20801847> not technical podcasts
 ## Gifts
 
-<https://www.icanvas.com/> Paining Eric Waugh, Gustav Klimt 
+<https://www.icanvas.com/> Painting: Eric Waugh, Gustav Klimt 
 
 <https://www.greatbigcanvas.com/> Painting
 
