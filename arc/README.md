@@ -12,6 +12,8 @@
 
 <https://research.fb.com/publications/realtime-data-processing-at-facebook/> Realtime Data Processing at Facebook
 
+<https://medium.com/@D11Engg/building-scalable-real-time-analytics-alerting-and-anomaly-detection-architecture-at-dream11-e20edec91d33> 
+
 <https://habr.com/ru/company/oleg-bunin/blog/466295/>
 
 <https://www.vertabelo.com/blog/business-logic-in-the-database-yes-or-no-it-depends/>
