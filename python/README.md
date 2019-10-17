@@ -12,6 +12,9 @@ Use Jinja template to generate dynamic SQL
 
 ## Advanced topics
 
+multiprocessing vs threading
+<https://sumit-ghosh.com/articles/multiprocessing-vs-threading-python-data-science/>
+
 <https://news.python.sc/> daily feed
 
 <https://dev.libreneitor.com/expert-python-topics-you-should-know/>
