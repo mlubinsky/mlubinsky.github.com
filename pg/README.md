@@ -8,6 +8,8 @@
 
 <https://www.cybertec-postgresql.com/en/tracking-view-dependencies-in-postgresql/>
 
+<http://www.postgresqltutorial.com/postgresql-schema/>
+
 <http://www.postgresqltutorial.com/postgresql-cte/> CTE
 
 <https://thebuild.com/presentations/not-your-job-pgconf-us-2017.pdf>
