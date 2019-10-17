@@ -3,6 +3,8 @@
 
 <https://www.jesse-anderson.com/2019/10/why-i-recommend-my-clients-not-use-ksql-and-kafka-streams/> Do not use Kafka Stream and KSQL
 
+<https://www.confluent.io/blog/build-streaming-etl-solutions-with-kafka-and-rail-data> 
+
 <https://dzone.com/articles/life-beyond-kafka-with-apache-pulsar>   Apache Pulsar
 
 <https://dzone.com/articles/5-courses-to-learn-apache-kafka-in-2019> 5 Kafka classes /courses
