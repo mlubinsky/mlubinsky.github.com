@@ -12,6 +12,8 @@ Use Jinja template to generate dynamic SQL
 
 ## Advanced topics
 
+<https://kanoki.org/2019/10/16/python-logging/> . logging
+
 multiprocessing vs threading
 <https://sumit-ghosh.com/articles/multiprocessing-vs-threading-python-data-science/>
 
