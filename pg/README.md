@@ -42,6 +42,8 @@ SET search_path TO myschema;
 
 <https://habr.com/ru/company/postgrespro/blog/443792/> Типичные ошибки при работе с PostgreSQL. Часть 2
 
+
+
 <http://postgres-bits.herokuapp.com/#1>>
 
 <https://wiki.postgresql.org/wiki/Don%27t_Do_This>
@@ -54,6 +56,11 @@ SET search_path TO myschema;
 <https://www.programming-books.io/essential/postgresql/>
 
 <https://habr.com/ru/company/postgrespro/blog/330544/>
+
+## Timeseries:
+<https://www.cybertec-postgresql.com/en/postgresql-trivial-timeseries-examples/>
+
+<https://www.cybertec-postgresql.com/en/timeseries-exclude-ties-current-row-and-group/>
 
 ## TimescalDB
 
