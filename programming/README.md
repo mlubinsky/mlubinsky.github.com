@@ -9,6 +9,8 @@
 
 <https://news.ycombinator.com/item?id=21280429>
 
+<https://github.com/rikace/Presentations/tree/master/FunctionalDSL>
+
 ## Comp science
 
 <http://raganwald.com/2019/02/14/i-love-programming-and-programmers.html>
