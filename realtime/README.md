@@ -140,6 +140,8 @@ Advantage SVG: if you want to do some advanced interactivity. That can sometimes
 
 ## JS plotting libraries
 
+<https://blog.bitsrc.io/11-javascript-charts-and-data-visualization-libraries-for-2018-f01a283a5727>
+
 <https://echarts.apache.org> 
 
 <https://nivo.rocks/> .  React components on top of d3.
