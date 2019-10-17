@@ -118,5 +118,44 @@ python3 -m http.server <8000> (python3)
 
 
 
+```
+from jinja2 import Template
+template = Template('Hello {{ name }}!')
+x=template.render(name='John Doe')
+print(x)
 
+template2 = Template(
+"""
+Static  begin
+<ul>
+{% for user in users %}
+ x= {{ user.x }}
+ y= {{ user.y }}
+{% endfor %}
+Static end
+"""
+)
+
+m_users=list()
+
+user1={
+ "x": 22,
+ "y": 10,
+  "pose": "sitting",
+}
+user2={
+ "x": 220,
+ "y": 100,
+  "pose": "sitting",
+}
+m_users.append(user1)
+m_users.append(user2)
+
+print (user1)
+print (user2)
+
+
+y=template2.render(users = m_users)
+print(y)
+```
 
