@@ -13,9 +13,12 @@ Use Jinja template to generate dynamic SQL
 ## Advanced topics
 
 <https://news.python.sc/> daily feed
+
 <https://dev.libreneitor.com/expert-python-topics-you-should-know/>
 
 <https://pysnakeblog.blogspot.com/>
+
+<https://blog.richard.do/2019/10/17/supercharge-your-python-testing-workflow/>
 
 <https://habr.com/ru/post/471618/> C++ fropm python
 ## Python tools
