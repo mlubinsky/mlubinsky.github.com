@@ -34,9 +34,14 @@
 
 <https://medium.com/@vladimirkozhaev/antlr-an-informal-introduction-609f885a38f7> ANTLR
 
+## PEG
+<https://habr.com/ru/post/471860/>
+
 <https://medium.com/@gvanrossum_83706/peg-parsers-7ed72462f97c> PEG from Guido
 
 <https://medium.com/@gvanrossum_83706/building-a-peg-parser-d4869b5958fb> PEG part 2
+
+
 
 <https://www3.nd.edu/~dthain/compilerbook/> .  Compiler Book
 
