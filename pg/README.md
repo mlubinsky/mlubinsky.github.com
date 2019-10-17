@@ -1,5 +1,7 @@
 <https://www.cybertec-postgresql.com/en/blog/>
 
+<https://www.cybertec-postgresql.com/en/joining-data-from-multiple-postgres-databases/>
+
 ## Web dev on Postgres
 
 <https://github.com/aquametalabs/aquameta>
