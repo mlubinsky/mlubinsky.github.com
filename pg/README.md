@@ -4,11 +4,27 @@
 
 <https://news.ycombinator.com/item?id=21281042>
 
-## Postgres
+## Postgres schema
 
 <https://www.cybertec-postgresql.com/en/tracking-view-dependencies-in-postgresql/>
 
 <http://www.postgresqltutorial.com/postgresql-schema/>
+
+<https://clarkdave.net/2015/06/aggregate-queries-across-postgresql-schemas/>
+
+<https://severalnines.com/blog/postgresql-schema-management-basics>
+
+<https://info.crunchydata.com/blog/demystifying-schemas-search_path-through-examples>
+
+<https://dba.stackexchange.com/questions/185782/how-to-allow-user-access-to-non-owned-objects-in-postgres>
+
+```
+SHOW search_path;
+SET search_path TO myschema;
+```
+<https://stackoverflow.com/questions/34098326/how-to-select-a-schema-in-postgres-when-using-psql>
+
+## Postgres 
 
 <http://www.postgresqltutorial.com/postgresql-cte/> CTE
 
