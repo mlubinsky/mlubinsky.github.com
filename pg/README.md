@@ -70,6 +70,7 @@ SET search_path TO myschema;
 ```
 select * from pg_indexes where tablename  = 'tracking';
 ```
+
 <https://dzone.com/articles/looking-inside-postgres-at-a-gist-index> Gist
 
 <https://habr.com/ru/company/postgrespro/blog/349224/>
