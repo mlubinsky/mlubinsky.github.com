@@ -3,6 +3,11 @@
  {} Curly brackets  are often called braces 
  () Parentheses
 ```
+# Func Programming
+
+<https://www.youtube.com/watch?v=QyJZzq0v7Z4>
+
+<https://news.ycombinator.com/item?id=21280429>
 
 # Comp science
 
