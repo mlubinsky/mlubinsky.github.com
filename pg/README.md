@@ -18,6 +18,8 @@
 
 <https://dba.stackexchange.com/questions/185782/how-to-allow-user-access-to-non-owned-objects-in-postgres>
 
+<https://knowledge.safe.com/articles/480/in-the-postgispostgres-reader-tables-from-a-differ.html>
+
 ```
 SHOW search_path;
 SET search_path TO myschema;
