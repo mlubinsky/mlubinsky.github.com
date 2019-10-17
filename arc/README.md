@@ -6,6 +6,9 @@
 
 <https://dot15926.livejournal.com/27293.html>
 
+##
+<https://www.learnstorybook.com/design-systems-for-developers/react/en/introduction/>
+
 ## Architecture
 
 <https://www.youtube.com/watch?v=Y6Ev8GIlbxc> distributed systems
