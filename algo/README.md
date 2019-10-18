@@ -131,6 +131,8 @@
 
 <https://www.youtube.com/watch?v=TeZqKnC2gvA> Visitor design pattern
 
+<https://habr.com/ru/company/otus/blog/472040/> red black tree
+
 ## Dynamic programming
 <https://skerritt.blog/dynamic-programming>
 
