@@ -13,6 +13,8 @@
 
 ## Architecture
 
+<https://www.lightbend.com/blog/use-kafka-streams-dynamically-controlled-streams>
+
 <https://medium.com/the-telegraph-engineering/pulse-the-telegraph-journey-towards-real-time-analytics-cd08c1078fa6> 
 
 <https://www.youtube.com/watch?v=Y6Ev8GIlbxc> distributed systems
