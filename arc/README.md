@@ -13,6 +13,8 @@
 
 ## Architecture
 
+<https://medium.com/the-telegraph-engineering/pulse-the-telegraph-journey-towards-real-time-analytics-cd08c1078fa6> 
+
 <https://www.youtube.com/watch?v=Y6Ev8GIlbxc> distributed systems
 
 <https://github.com/rikace/Presentations/blob/master/ReactiveStreams/slides/StreamProcessing.pdf>
