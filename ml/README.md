@@ -4,6 +4,10 @@
 
 <https://streamlit.io/>
 
+<mml-book.com>
+
+<https://news.ycombinator.com/item?id=21293132> math for machine learning
+
 <https://observablehq.com/>
 
 <https://github.com/fritzlabs/Awesome-Mobile-Machine-Learning> ML on mobile devices
