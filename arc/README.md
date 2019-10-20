@@ -7,9 +7,11 @@
 <https://dot15926.livejournal.com/27293.html>
 
 ## Stream vs batch
-<https://github.com/voorloopnul/pipeframe>    process data (stream or batch) taking advantage of python multiprocessing library.
+<https://github.com/voorloopnul/pipeframe>  Python  process data (stream or batch) taking advantage of python multiprocessing library.
 
 <https://www.learnstorybook.com/design-systems-for-developers/react/en/introduction/>
+
+<https://www.lightbend.com/blog>
 
 ## Architecture
 
