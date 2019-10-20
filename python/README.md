@@ -10,12 +10,18 @@ Use Jinja template to generate dynamic SQL
 
 <https://tomassetti.me/parsing-in-python/> Parsing in Python
 
-## Advanced topics
+## multiprocessing vs threading
 
-<https://kanoki.org/2019/10/16/python-logging/> . logging
+<http://pljung.de/posts/easy-concurrency-in-python/> . concurrency
 
 multiprocessing vs threading
 <https://sumit-ghosh.com/articles/multiprocessing-vs-threading-python-data-science/>
+
+
+## Other topics
+
+
+<https://kanoki.org/2019/10/16/python-logging/> . logging
 
 <https://news.python.sc/> daily feed
 
