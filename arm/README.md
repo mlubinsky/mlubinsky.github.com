@@ -21,6 +21,9 @@
 
 
 ## AI on embedded devices from Intel, NVidia, etc
+
+<https://habr.com/ru/company/1cloud/blog/472230/>
+
 <https://habr.com/ru/company/recognitor/blog/468421/>
 
 <https://habr.com/ru/post/471074/> Synet 
