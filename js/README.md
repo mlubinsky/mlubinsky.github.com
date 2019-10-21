@@ -501,6 +501,14 @@ document
        
   });
 ```
+<https://habr.com/ru/post/472420/>
+
+не обязательно дожидаться Promise в том же месте где вы его создали
+```
+const promise = fetch()
+// Любой код здесь будет выполнен сразу, синхронно, не ожидая завершения fetch()
+const response = await promise // ожидаем завершения promise
+```
 
 ## Web server for Chrome
 
