@@ -6,6 +6,8 @@
 
 <https://ewanvalentine.io/> 
 
+<https://github.com/x899/algorithms>
+
 Go has block-level scoping. 
 
 = means "assign the existing identifier to this value". 
