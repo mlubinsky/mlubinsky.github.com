@@ -40,6 +40,8 @@ console.log(JSON.parse(JSON.stringify(obj))).
 ## Spread syntax
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax>
 
+<https://webdevblog.ru/skazka-o-treh-tochkah-v-javascript/>
+
 ## Debouncing and throtting:
 
 <https://www.telerik.com/blogs/debouncing-and-throttling-in-javascript>
