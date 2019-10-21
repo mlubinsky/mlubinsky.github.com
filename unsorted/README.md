@@ -36,8 +36,10 @@
 <https://www.amazon.com/iOttie-Dashboard-Windshield-Samsung-Smartphone/dp/B076B27WP6> Phone Holder for Car
 
 
-## . Worfram mathematica
+##  Worfram mathematica
 <https://habr.com/ru/company/wolfram/blog/469935/>
+
+<https://habr.com/ru/company/wolfram/blog/471812/>
 
 
 ## Mental models
