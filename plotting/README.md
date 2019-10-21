@@ -53,6 +53,10 @@ http://blog.pyviz.org/
 
 <https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-with-code-a2284bae952f>
 
+
+<https://youtu.be/psvU4zwO3Ao> . Plotly
+
+
 ## ELK: Elastic Search, Logstash,  Kibana
 
 <https://habr.com/ru/post/443528/>
