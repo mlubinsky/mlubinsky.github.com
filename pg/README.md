@@ -2,6 +2,10 @@
 
 <https://www.cybertec-postgresql.com/en/joining-data-from-multiple-postgres-databases/>
 
+
+### Column store extension for PostgreSQL
+<https://habr.com/ru/post/472396/>
+
 ## Web dev on Postgres
 
 <https://github.com/aquametalabs/aquameta>
