@@ -6,6 +6,8 @@
 
 <https://free-for.dev/#/>
 
+<https://greenteapress.com/wp/>
+
 ## Func Programming
 
 <https://www.youtube.com/watch?v=QyJZzq0v7Z4>
