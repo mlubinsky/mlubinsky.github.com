@@ -7,6 +7,8 @@
 
 ## Python plotting
 
+<https://towardsdatascience.com/plotting-with-python-c2561b8c0f1f>
+
 <http://pyviz.org/>
 
 <http://vispy.org/>
