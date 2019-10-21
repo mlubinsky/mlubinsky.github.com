@@ -118,6 +118,11 @@ https://github.com/matbor/mqtt2highcharts
 https://gist.github.com/vitormeriat/b6de7aa0a28af2b45f15c3d67721e051
 
 
+### SVG
+
+<https://css-tricks.com/accessible-svgs/%3C/svg>
+
+<https://able.bio/dbmzzo/intro-to-svg-for-react-developers--56cmmcy>
 
 ## Canvas implementation over an SVG implementation
 
