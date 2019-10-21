@@ -40,7 +40,6 @@ git merge upstream/master
 - or -
 git rebase upstream/master
 
-
 git reset --hard origin/master
 
 If you remove the fetch line from your project's .git/config file you'll stop 
@@ -119,7 +118,14 @@ Merge — самый простой вариант. Например, есть �
 Например, если кто-то начал свою ветку из коммита, который был в feature, а вы этот коммит уничтожили и пересоздали. 
 Rebase подходит больше для локальных веток.
 
+https://goiabada.blog/git-tricks-avoiding-merge-when-dealing-with-remote-conflicts-52c175e526e6
 
+
+git push :  unexpected message appears: "! [rejected]". 
+The reason: "Updates were rejected because the tip of your current branch is behind its remote counterpart. 
+Integrate the remote changes (e.g. hint: ‘git pull …’) before pushing again.".
+
+git pull --rebase
 
 http://www.integralist.co.uk/posts/git-merge-strategies/
 
