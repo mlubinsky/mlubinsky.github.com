@@ -214,6 +214,8 @@ System thinking
 
 <https://www.confluent.io/wp-content/uploads/2016/08/Making_Sense_of_Stream_Processing_Confluent_1.pdf> .  Stream processing  
 
+<https://blog.yugabyte.com/how-yugabytedb-scales-to-more-than-1-million-inserts-per-sec/> 1 mln inserts per sec
+
 ## Concurrency
 
 <https://slikts.github.io/concurrency-glossary/>
@@ -234,6 +236,9 @@ System thinking
 <https://turbolent.com/data-processing-pipeline.html>
 
 <https://habr.com/ru/company/otus/blog/454186/> Apache Beam и DataFlow для конвейеров реального времени
+
+## Elastic Search
+https://datadome.co/store-50-million-event-per-second-in-elasticsearch/
 
 <https://www.elastic.co/blog/the-birthday-paradox-and-concurrently-indexing-in-elasticsearch>
 
