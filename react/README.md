@@ -8,6 +8,10 @@
 
 <https://blog.quicklyreact.com/how-to-dockerize-reactjs/>
 
+
+## DataViz with React
+https://reactfordataviz.com/
+
 ## React
 
 <https://github.com/wojtekmaj/react-lifecycle-methods-diagram>
