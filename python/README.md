@@ -1,5 +1,7 @@
 ## Books
 
+<https://effectivepython.com/2019/10/22/memoryview-bytearray-zero-copy-interactions>  Effective python
+
 <https://www.amazon.com/Pro-Python-Features-Professional-Development-ebook/dp/B07PQBH4LL/>
 
 <https://habr.com/ru/company/piter/blog/471520/> Книга «Классические задачи Computer Science на языке Python»
