@@ -29,7 +29,7 @@ multiprocessing vs threading
 
 <https://pysnakeblog.blogspot.com/>
 
-<https://blog.richard.do/2019/10/17/supercharge-your-python-testing-workflow/>
+<https://blog.richard.do/2019/10/17/supercharge-your-python-testing-workflow/> . Testing
 
 <https://habr.com/ru/post/471618/> C++ fropm python
 ## Python tools
@@ -122,6 +122,7 @@ python3 -m http.server <8000> (python3)
 
 <https://habr.com/ru/post/462179/> f-strings (Python > 3.6)
 
+<https://www.blog.duomly.com/20-essential-python-tips-and-tricks-you-should-know/>
 
 
 ```
