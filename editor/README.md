@@ -31,6 +31,8 @@
 
 
 ## Visual Studio Code
+
+<https://habr.com/ru/company/microsoft/blog/472228/> 
 <https://dev.to/lampewebdev/the-guide-to-visual-studio-code-shortcuts-higher-productivity-and-30-of-my-favourite-shortcuts-you-need-to-learn-mb3>
 
 https://habr.com/ru/company/microsoft/blog/471188/ . Python extension
