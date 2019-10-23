@@ -8,7 +8,9 @@
 
 ## Web dev on Postgres
 
-<https://node-postgres.com> NodeJS driver
+<https://node-postgres.com> NodeJS driver/client
+
+<https://www.npmjs.com/package/pg>
 
 <https://github.com/aquametalabs/aquameta>
 
