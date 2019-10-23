@@ -345,7 +345,10 @@ https://www.anandtech.com/show/12791/arm-details-project-trillium-mlp-architectu
 https://os.mbed.com/docs/v5.8/reference/thread.html
 
 
-## AWS
+## AWS IoT
+
+<https://habr.com/ru/post/472216/>
+
 The solution deploys an AWS IoT rule that sends device data to Amazon Kinesis Data Firehose, which archives the data in Amazon S3 and sends it to an Amazon Kinesis Data Analytics application that computes metrics in real-time. The solution uses Amazon DynamoDB to durably store the computed data. The solution also features a customizable dashboard that visualizes your device connectivity and activity metrics in real-time. 
 <https://aws.amazon.com/about-aws/whats-new/2018/05/introducing-real-time-iot-device-monitoring-with-kinesis-data-analytics/>
 
