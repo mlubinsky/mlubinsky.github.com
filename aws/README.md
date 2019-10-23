@@ -13,7 +13,12 @@ chmod 400 my-ec2-ssh-key.pem
 
 <https://habr.com/ru/company/otus/blog/466519/> . Детальный разбор AWS Lambda
 
+<https://habr.com/ru/company/oleg-bunin/blog/471686/>
+
 https://aws.amazon.com/about-aws/whats-new/2019/09/aws-transfer-for-sftp-now-supports-logical-directories-for-amazon-s3/
+
+
+
 ## A command line utility that allows you to stream data from multiple S3 objects directly into your terminal
 
 <https://news.ycombinator.com/item?id=21170652>
