@@ -6,7 +6,11 @@
 
 <https://blog.softwaremill.com/how-to-structure-your-scala-application-658168fbb827>
 
+## API 
+
 <https://blog.softwaremill.com/an-open-source-scala-library-for-describing-http-api-endpoints-2955dfc929ac>
+
+<https://www.youtube.com/watch?v=I3loMuHnYqw>
 
 
 ```
