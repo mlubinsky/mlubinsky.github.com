@@ -1,5 +1,7 @@
 <https://www.levels.fyi/> salary in high tech companies
 
+<https://habr.com/ru/company/smart_start/blog/472796/> interview
+
 <https://habr.com/ru/post/464757/> how to optimize linked in profile
 
 <https://medium.mybridge.co/>
