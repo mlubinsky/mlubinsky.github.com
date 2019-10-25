@@ -24,6 +24,7 @@ multiprocessing vs threading
 
 ## Other topics
 
+<https://pydantic-docs.helpmanual.io/> . data validation
 
 <https://kanoki.org/2019/10/16/python-logging/> . logging
 
