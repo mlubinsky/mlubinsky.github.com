@@ -1,5 +1,9 @@
 ## Math & Phys
 
+<https://mirtitles.org/>
+
+<https://news.ycombinator.com/item?id=21346272>
+
 <https://seeing-theory.brown.edu/index.html> stat
 
 ### Kalman filter
