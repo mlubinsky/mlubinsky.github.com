@@ -6,6 +6,9 @@
 
 <https://dot15926.livejournal.com/27293.html>
 
+
+<https://habr.com/ru/company/oleg-bunin/blog/468535/> Log analysis
+
 ## Stream vs batch
 <https://github.com/voorloopnul/pipeframe>  Python  process data (stream or batch) taking advantage of python multiprocessing library.
 
