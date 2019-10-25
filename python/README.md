@@ -29,6 +29,8 @@ multiprocessing vs threading
 
 <https://dev.libreneitor.com/expert-python-topics-you-should-know/>
 
+<https://www.blog.duomly.com/20-essential-python-tips-and-tricks-you-should-know/>
+
 <https://pysnakeblog.blogspot.com/>
 
 <https://blog.richard.do/2019/10/17/supercharge-your-python-testing-workflow/> . Testing
