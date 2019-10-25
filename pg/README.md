@@ -1039,6 +1039,8 @@ peer authentication on the other hand, is used for local connections and verifie
 
 <https://habr.com/ru/post/448676/>
 
+<https://news.ycombinator.com/item?id=21343521>
+
 <https://grafana.com/docs/reference/templating/#the-timefilter-or-timefilter-variable>
 WHERE $__timeFilter(
 <https://youtu.be/FhNUrueWwOk?list=PLDGkOdUX1Ujo3wHw9-z5Vo12YLqXRjzg2> . Variables in Grafana
