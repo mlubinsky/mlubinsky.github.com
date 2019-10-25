@@ -1,6 +1,8 @@
 ## Books
 
-<https://effectivepython.com/2019/10/22/memoryview-bytearray-zero-copy-interactions>  Effective python
+<https://knowledgeisle.com/wp-content/uploads/2019/10/Serious-Python_-2019.pdf> Serious Python
+
+<https://effectivepython.com/2019/10/22/memoryview-bytearray-zero-copy-interactions>  Effective Python 2nd ed
 
 <https://www.amazon.com/Pro-Python-Features-Professional-Development-ebook/dp/B07PQBH4LL/>
 
