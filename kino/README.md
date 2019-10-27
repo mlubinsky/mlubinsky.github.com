@@ -1,5 +1,7 @@
 поэтом можешь ты не быть, а композитором не можешь.
 
+<https://soap.d3.ru/post-vopros-kollektivnomu-razumu-gde-smotret-filmy-onlain-bez-registratsii-i-sms-1867574/>
+
 ## Music
 
 <https://www.youtube.com/watch?v=_TeyBKMITqs> . Egorov
