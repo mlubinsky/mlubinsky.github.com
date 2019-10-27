@@ -1,3 +1,5 @@
+<https://habr.com/ru/post/472816/> JS patterns
+
 Primitive types: это boolean, null, undefined, Number, String, Symbol, BigInt.
 ```
 let x = 15;
