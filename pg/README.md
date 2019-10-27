@@ -1,5 +1,11 @@
 <https://www.cybertec-postgresql.com/en/blog/>
 
+<https://github.com/sqitchers/sqitch> Database change management 
+
+<https://sivers.org/pg2> stored procedures
+
+<https://news.ycombinator.com/item?id=21362190>
+
 <https://www.cybertec-postgresql.com/en/joining-data-from-multiple-postgres-databases/>
 
 
