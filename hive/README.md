@@ -9,6 +9,21 @@
 <https://www.adaltas.com/en/2019/06/17/druid-hive-integration/>
 
 
+## Drill: 
+Apache Drill is a highly scalable open source application framework which includes a SQL query engine. It can fetch data from a variety of mainly non-relational data stores, such as NoSQL databases. It is based on a schema-less JSON document model for data, so it is more flexible but slower than engines based on schema-based columnar data formats.
+Impala: Apache Impala is a highly scalable, open source, distributed SQL query engine for big data, primarily oriented toward data on Hadoop clusters. It trades off fault tolerance for speed, keeping intermediate results in memory for high performance, and, by some metrics, is the fastest interactive query engine. It is optimized for the Parquet columnar data format, using files on the order of 256 MB. It can perform poorly with a large number of small files, for the same amount of data.
+
+## SparkSQL: 
+Apache SparkSQL is a highly scalable, open source, distributed SQL query engine for big data, with connectors to many data stores. It can deliver very high throughput for schema-based columnar data formats. For very large queries, running hours to days on many processors, it is a good choice, as it captures intermediate results in temporary files and can restart failed parts with low time penalty. On the other hand, the minimum time for a very small query is relatively high; also, the resource usage and service time for small to medium queries are increased by the cost of saving intermediate results if the query plan cannot keep them in memory.
+
+## Presto: 
+Presto is an open source, distributed query engine for big data with mature SQL support. Presto bypasses MapReduce and uses SQL-specific distributed operations in memory. The architecture is designed such that all stages are pipelined so there is no wait time, no need to write to disk in the intermediate, no need to fit all data into the memory, and no disk IO delays. Presto delegates some of the operations to the underlying data stores it queries, thus leveraging their inherent analytics capabilities. Further, Presto can perform cross-platform joins, thus providing centralized support for querying historical data across disparate data sources. Presto has advanced SQL support with capabilities including dynamic filtering, dynamically resolved-functions, SQL-defined functions (CREATE FUNCTION). Like Impala, Presto sacrifices fault tolerance for speed.
+## Druid: 
+Druid is unique among related technologies: it is both an OLAP database (can be compared with Vertica, RedShift and Snowflake), a distributed query processor, a time-series DB, has stream processing features, and has UI visualization that supports pivots. Druid brings its best abilities with numerical and time-series data, and its ability to continuously ingest real-time business event streams makes it better for real-time queries. Long-running BI queries that need to touch a lot of historical data will have to go through cold storage upload and will have longer processing times.
+## Kylin: 
+Apache Kylin is built to manage OLAP cubes in HBase to support fast SQL queries. OLAP cubes need to store many secondary indexes (one per dimension) and then use fast random access to retrieve the records. Data warehouse files are oriented toward full table scans (“for each item in haystack, add to result set if it looks like a needle”). Kylin is best suitable for smaller cardinality data, and can be a much higher cost option for very large datasets.
+
+
 Metastore (usually MySQL) stores the table definition
 /etc/hive/conf/
 hive-site.xml
