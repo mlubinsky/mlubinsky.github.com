@@ -136,9 +136,9 @@ A single TAB in Node’s REPL can be used for autocompletion
 Double TAB (which is pressing the TAB key twice) can be used to see a list of possible things you can type from whatever partially-typed string you have.
 
 Try:
-
+```
 Array.
-
+```
 Press TAB and see all the functions and properties that can be used from the Array class.
 
 ## Code
@@ -211,6 +211,10 @@ Press tab twice to the list of all node modules
 ### Create Reac App
 Create React App is plain simple and it generates HTML code needed to render on the client side. So when you look at the source code before rendering, you can see it’s basically few js files and an empty div. 
 These js files inject content into that div in the browser (Client-side rendering). All heavy lifting is done in the browser.
+
+### NodeJS + Oracle
+
+<https://habr.com/ru/post/473234/>
 
 ### Next.js 
 Next.js a somewhat similar to Create React App, but supports server-side rendering. What it essentially means is that necessary HTML code is generated from the server itself, based on the URL. 
