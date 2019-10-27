@@ -118,6 +118,9 @@ Live calculation in browser
 <https://news.ycombinator.com/item?id=19698151>
 
 ## Be Happy
+
+<https://sivers.org/ml> Meaning of life
+  
  Nonviolent Communication
 <https://www.clearerthinking.org/single-post/2019/03/06/Want-to-improve-your-relationships-Try-Nonviolent-Communication-1>
 
