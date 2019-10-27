@@ -75,7 +75,9 @@ React example
 <https://scotch.io/starters/react/getting-started-with-react-2019-edition>
 
 
+## useContext и useReducer в React
 
+<https://habr.com/ru/post/473070/>
 
 ## Create-react-app
 
