@@ -327,6 +327,7 @@ serviceWorker.unregister();
 
 
 ### Server side rendering
+<https://www.youtube.com/watch?v=eenX8EGkTZM>
 <https://habr.com/ru/post/473210/>
 <https://blog.logrocket.com/why-you-should-render-react-on-the-server-side-a50507163b79>
 
