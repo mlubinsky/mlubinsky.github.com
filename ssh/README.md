@@ -5,6 +5,12 @@
  и все изнутри VS Code.
  
  
+Pexpect is a pure Python module for spawning child applications; controlling them; and responding to expected patterns in their output. Pexpect works like Don Libes’ Expect. 
+Pexpect allows your script to spawn a child application and control it as if a human were typing commands. 
+<https://pexpect.readthedocs.io/en/stable/> pexpect
+
+<https://github.com/fgimian/paramiko-expect>
+
    
 https://habr.com/post/435546/  
   
