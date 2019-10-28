@@ -6,12 +6,14 @@
 
 <https://www.amazon.com/Pro-Python-Features-Professional-Development-ebook/dp/B07PQBH4LL/>
 
+<https://www.amazon.com/gp/product/1617295981>   Classic Computer Science Problems in Python
+
 <https://habr.com/ru/company/piter/blog/471520/> Книга «Классические задачи Computer Science на языке Python»
 
-Use Jinja template to generate dynamic SQL
+## Use Jinja template to generate dynamic SQL
 <https://medium.com/analytics-and-data/jinja-the-sql-way-of-the-ninja-9a64fc815564>
 
-
+## Parsing
 <https://tomassetti.me/parsing-in-python/> Parsing in Python
 
 ## multiprocessing vs threading
@@ -41,6 +43,7 @@ multiprocessing vs threading
 <https://blog.richard.do/2019/10/17/supercharge-your-python-testing-workflow/> . Testing
 
 <https://habr.com/ru/post/471618/> C++ fropm python
+
 ## Python tools
 pyenv, poetry, black, flake8, isort, pre-commit, pytest, coverage, tox, Azure Pipelines, sphinx, and readthedocs:
 
