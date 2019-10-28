@@ -1,3 +1,5 @@
+<https://habr.com/ru/post/473424/> . ARM - графические решения Mali-G57 Valhall и Mali-D37, нейропроцессоры Ethos-N57 и N37
+
 <https://github.com/ARM-software/ML-examples>
 
 <https://www.youtube.com/watch?v=_6sh097Dk5k>
@@ -21,6 +23,7 @@
 
 
 ## AI on embedded devices from Intel, NVidia, etc
+<https://habr.com/ru/post/473424/> . ARM - графические решения Mali-G57 Valhall и Mali-D37, нейропроцессоры Ethos-N57 и N37
 
 <https://habr.com/ru/company/1cloud/blog/472230/>
 
