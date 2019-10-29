@@ -2,6 +2,8 @@
 
 <https://youtu.be/ye4LVrQ0TuM> How to work with Git Flow feature branches in the terminal
 
+<https://www.youtube.com/watch?v=6LhTe8Mz6jM> Git flow
+
 <https://bitbucket.org/BitPusher16/dotfiles/raw/49a01d929dcaebcca68bbb1859b4ac1aea93b073/refs/git/git_examples.sh>
 
 <https://news.ycombinator.com/item?id=21189256>
