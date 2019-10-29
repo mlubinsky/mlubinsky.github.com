@@ -26,6 +26,8 @@ multiprocessing vs threading
 
 ## Other topics
 
+<http://blog.rtwilson.com/five-new-ish-python-things-part-1/> 
+
 <https://habr.com/ru/company/ruvds/blog/472858/> request
 
 <https://pydantic-docs.helpmanual.io/> . data validation
