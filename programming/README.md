@@ -39,6 +39,8 @@
 
 <https://medium.com/@vladimirkozhaev/antlr-an-informal-introduction-609f885a38f7> ANTLR
 
+<https://www.booleanworld.com/building-recursive-descent-parsers-definitive-guide/> Recursive decendt parsers
+
 ## PEG
 <https://habr.com/ru/post/471860/>
 
