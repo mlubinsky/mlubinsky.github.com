@@ -7,7 +7,7 @@
 <https://habr.com/ru/post/473196/> streamlit
 
 
-<mml-book.com>
+<https://mml-book.github.io/>
 
 <https://news.ycombinator.com/item?id=21293132> math for machine learning
 
