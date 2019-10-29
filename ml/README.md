@@ -2,7 +2,10 @@
 
 <https://news.ycombinator.com/item?id=21158487> 
 
-<https://streamlit.io/>
+<https://streamlit.io/> . streamlit
+
+<https://habr.com/ru/post/473196/> streamlit
+
 
 <mml-book.com>
 
