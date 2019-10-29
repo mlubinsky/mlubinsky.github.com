@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/company/ruvds/blog/471040/>
 
+<https://reactfordataviz.com/> . React and D3 for data visualization
+
 ## Docker
 
 <https://blog.quicklyreact.com/how-to-dockerize-reactjs/>
