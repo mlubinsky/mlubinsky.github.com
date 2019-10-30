@@ -11,6 +11,8 @@
 
 <https://dzone.com/articles/5-courses-to-learn-apache-kafka-in-2019> 5 Kafka classes /courses
 
+<https://dev.to/victorgil/using-apache-kafka-to-implement-event-driven-microservices-af2>
+
 ## RabbitMQ
 <https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6>
 
