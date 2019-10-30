@@ -5,6 +5,8 @@
 
 <https://www.confluent.io/blog/build-streaming-etl-solutions-with-kafka-and-rail-data> 
 
+<https://medium.com/@sathishjayaram/points-to-remember-while-processing-streaming-timeseries-data-in-order-using-kafka-and-spark-38cdf787a304>
+
 <https://dzone.com/articles/life-beyond-kafka-with-apache-pulsar>   Apache Pulsar
 
 <https://dzone.com/articles/5-courses-to-learn-apache-kafka-in-2019> 5 Kafka classes /courses
