@@ -1,5 +1,7 @@
 ## Math & Phys
 
+<https://www.youtube.com/channel/UC4VtfXvBu4d0us1RLf7z-2g>
+
 <https://mirtitles.org/>
 
 <https://news.ycombinator.com/item?id=21346272>
