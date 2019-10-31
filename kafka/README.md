@@ -13,6 +13,8 @@
 
 <https://dev.to/victorgil/using-apache-kafka-to-implement-event-driven-microservices-af2>
 
+<https://ordepdev.me/posts/tales-from-running-kafka-streams-in-production>
+
 ## RabbitMQ
 <https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6>
 
