@@ -95,6 +95,8 @@
 
 <http://www.cs.sjtu.edu.cn/~jiangli/teaching/CS222/files/materials/Algorithm%20Design.pdf> Algo book
 
+<https://medium.com/@adityakumar_98609/fenwick-tree-binary-index-tree-aca7824d9c2a> fenwick
+
 <https://www.byte-by-byte.com>
 
 <https://www.youtube.com/watch?v=9clnwaqOU2E> string algo
