@@ -4,7 +4,11 @@
 
 <https://news.ycombinator.com/item?id=21346272>
 
-<https://seeing-theory.brown.edu/index.html> stat
+## Stat
+
+<https://seeing-theory.brown.edu/index.html>  
+
+<http://www.jerrydallal.com/LHSP/LHSP.HTM>
 
 ### Kalman filter
 
