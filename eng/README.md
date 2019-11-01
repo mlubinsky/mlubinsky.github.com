@@ -1,5 +1,7 @@
 <https://medium.com/fantageek/improving-communication-english-pronunciation-108074236c80>
 
+<https://habr.com/ru/post/474232/>
+
 <https://habr.com/ru/post/471912/>
 
 <https://www.youtube.com/channel/UCKMGLK-Inu1lReNdbeYBgOA>
