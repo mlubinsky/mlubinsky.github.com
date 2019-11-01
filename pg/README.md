@@ -1,5 +1,7 @@
 <https://www.cybertec-postgresql.com/en/blog/>
 
+<https://techcommunity.microsoft.com/t5/Azure-Database-for-PostgreSQL/Architecting-petabyte-scale-analytics-by-scaling-out-Postgres-on/ba-p/969685>
+
 <https://github.com/sqitchers/sqitch> Database change management 
 
 <https://sivers.org/pg2> stored procedures
