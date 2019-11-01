@@ -51,6 +51,58 @@ application/stream+json is for server to server/http client (anything that's not
 
 <https://www.w3schools.com/html/html5_serversentevents.asp>
 
+<https://www.smashingmagazine.com/2018/02/sse-websockets-data-flow-http2/>
+
+Each EventSource object has the following members:
+```
+URL: set during construction.
+Request: initially is null.
+Reconnection time: value in ms (user-agent-defined value).
+Last event ID: initially an empty string.
+Ready state: state of the connection.
+    CONNECTING (0)
+    OPEN (1)
+    CLOSED (2)
+Apart from the URL, all are treated like private and cannot be accessed from outside.
+
+Build-in events:
+
+Open
+Message
+Error
+```
+
+```
+    // subscribe for messages
+    var source = new EventSource('URL');
+
+    // handle messages
+    source.onmessage = function(event) {
+        // Do something with the data:
+        event.data;
+    };
+```
+Note that below in server code you don’t see a send() or push() method call. 
+This is because the standard defines that 
+the message is going to be sent as soon as it receives two \n\n characters 
+as in the example: response.write("data: " + data + '\n\n');. 
+This will immediately push the message to the client. 
+Please note that the data must be an escaped string and doesn’t have new line characters at the end of it.
+```
+function handler(response)
+    {
+        // setup headers for the response in order to get the persistent HTTP connection
+        response.writeHead(200, {
+            'Content-Type': 'text/event-stream',
+            'Cache-Control': 'no-cache',
+            'Connection': 'keep-alive'
+        });
+
+        // compose the message
+        response.write('id: UniqueID\n');
+        response.write("data: " + data + '\n\n'); // whenever you send two new line characters the message is sent automatically
+    }
+```
 Server-sent events (SSE) is a technology where a browser receives automatic updates from a server via HTTP connection
 (standardized in HTML5 standards). 
 
