@@ -14,6 +14,8 @@
 
 <https://docs.prefect.io/core/welcome/what_is_prefect.html>
 
+<https://news.ycombinator.com/item?id=21405519>
+
 ## Log viewer
 
 <https://lnav.org/>
