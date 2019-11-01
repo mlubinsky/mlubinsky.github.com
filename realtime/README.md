@@ -52,6 +52,7 @@ application/stream+json is for server to server/http client (anything that's not
 <https://www.w3schools.com/html/html5_serversentevents.asp>
 
 <https://www.smashingmagazine.com/2018/02/sse-websockets-data-flow-http2/>
+<https://github.com/mchaov/simple-sse-nodejs-setup/blob/master/server.js>
 
 Each EventSource object has the following members:
 ```
