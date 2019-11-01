@@ -100,7 +100,8 @@ function handler(response)
 
         // compose the message
         response.write('id: UniqueID\n');
-        response.write("data: " + data + '\n\n'); // whenever you send two new line characters the message is sent automatically
+        response.write("data: " + data + '\n\n'); 
+        // whenever you send two new line characters the message is sent automatically
     }
 ```
 Server-sent events (SSE) is a technology where a browser receives automatic updates from a server via HTTP connection
