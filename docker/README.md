@@ -1,5 +1,7 @@
 # Docker
 
+<https://code.visualstudio.com/blogs/2019/10/31/inspecting-containers> Inspecting Containers with VS Code
+
 <https://cameronlonsdale.com/2018/11/26/whats-in-a-docker-image/>
 
 <https://blog.docker.com/2019/07/intro-guide-to-dockerfile-best-practices/>
