@@ -8,6 +8,17 @@
 
 <https://greenteapress.com/wp/>
 
+## ETL
+
+<https://news.ycombinator.com/item?id=21411893>
+
+## Log viewer
+
+<https://lnav.org/>
+
+<http://www.logtailapp.com/>
+
+
 ## Func Programming
 
 <https://www.youtube.com/watch?v=QyJZzq0v7Z4>
