@@ -2,6 +2,23 @@
 
 <https://www.freecodecamp.org/news/the-guide-to-using-eslint-and-prettier-in-a-react-app/>
 
+
+## Dark mode
+
+## Diff
+
+<https://github.com/so-fancy/diff-so-fancy>
+
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+
+alias diff="diff-so-fancy"
+
+## Command line tools
+
+<https://www.vimfromscratch.com/articles/awesome-command-line-tools/>
+
+<https://github.com/sharkdp/bat> . bat
+
 ## VIM
 
 <https://habr.com/ru/post/468265/>
