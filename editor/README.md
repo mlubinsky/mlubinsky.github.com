@@ -7,6 +7,8 @@
 
 ## Diff
 
+<https://yousseb.github.io/meld/>
+
 <https://github.com/ymattw/ydiff>
 
 <https://github.com/so-fancy/diff-so-fancy>
