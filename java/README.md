@@ -5,6 +5,8 @@
  
  <https://www.youtube.com/watch?v=RtHA1YVLW5Y> JVM does this?
  
+ <https://jokerconf.com/2019/talks/> . Java Conf
+ 
  An executable JAR is a just regular archive, with an included META-INF/manifest file 
  that says which "main" class should be the entry point. 
  The JRE knows to look for this manifest file.
