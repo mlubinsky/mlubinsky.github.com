@@ -109,6 +109,9 @@ function shipmentES5Defaults(params) {
 
 
 ## Functional component
+
+<https://www.freecodecamp.org/news/how-to-build-a-movie-search-app-using-react-hooks-24eb72ddfaf7/>
+
 До появления хуков у функциональных компонентов не было возможности задавать локальный стейт. \
 Ситуация изменилась с появлением useState().
 ```
@@ -248,6 +251,8 @@ const App = () => (
 <https://wattenberger.com/blog/react-hooks>
 
 <https://www.modulo.blog/jfuentes/relearning-react-with-react-hooks>
+
+<https://www.freecodecamp.org/news/how-to-build-a-movie-search-app-using-react-hooks-24eb72ddfaf7/>
 
 <https://dev.to/craigmichaelmartin/react-hooks-are-a-more-accurate-implementation-of-the-react-mental-model-1k49>
 
