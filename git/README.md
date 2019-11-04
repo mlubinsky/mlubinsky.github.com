@@ -44,7 +44,20 @@ git rebase origin/master
     git branch/checkout/merge/rebase
     git tag/push --tag
     git add -i
-```    
+``` 
+This wokrs as well and it is shorter:
+```
+git pull --rebase origin master
+```
+
+## Squoshing
+ squashing is the practice of combining multiple commits into a single commit, or at least fewer commits than you started with. It is accomplished with an interactive rebase onto your own or another branch, or via git commit --amend. It can be performed simultaneously with a rebase operation.
+you’re taking two or more commits and combining them into a single commit.
+
+git rebase --interactive HEAD~2
+
+ Instead of making all your various commits and then squashing later on via an interactive rebase, you can use the --amend option of git commit to edit the commit you’re currently on. So in the example above, after I made my commit to “Add build instructions to README”, I could amend that commit to include my typo fix by making the fix, staging it like I would if I was about to create a commit, and then running git commit --amend.
+ 
 ## Merge conflict relosution tools
 
 Set `merge.conflictstyle=diff3` 
