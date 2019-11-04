@@ -10,7 +10,34 @@
 
 <https://bitbucket.org/BitPusher16/dotfiles/raw/49a01d929dcaebcca68bbb1859b4ac1aea93b073/refs/git/git_examples.sh>
 
+Rebasing and Squashing
+<https://medium.com/@nbelakovski/level-up-git-rebasing-and-squashing-6bff432d796e>
+
+Another way to think about rebasing is that when you’ve rebased a branch, it’s as if you had just now created your branch off of this latest master and done all of your work on top of it
+
 <https://news.ycombinator.com/item?id=21189256>
+
+creating a branch a couple of commits behind master:
+```
+git checkout --branch mytestbranch master~2
+
+git log --oneline -2
+
+git rebase master
+```
+This work:
+```
+git checkout master
+git pull origin master
+git checkout branch_i_want_to_rebase
+git rebase master
+```
+But this work as well: it’s quicker and means I don’t have to switch branches 
+```
+git fetch origin master
+git rebase origin/master
+```
+
 
 ```
     git add/rm/commit/status/push
