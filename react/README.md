@@ -4,7 +4,11 @@
 
 <https://habr.com/ru/company/ruvds/blog/471040/>
 
-<https://reactfordataviz.com/> . React and D3 for data visualization
+## React and D3 
+
+<https://reactfordataviz.com/> 
+
+<https://wattenberger.com/blog/react-and-d3>
 
 ## Docker
 
