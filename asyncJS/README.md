@@ -3,6 +3,7 @@
 <https://evertpot.com/await-fluent-interfaces/>
 
 ## Async await promises
+<https://habr.com/ru/post/474726/>
 
 <https://careersjs.com/magazine/async-patterns/>
 
