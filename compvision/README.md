@@ -119,7 +119,7 @@ cv2.destroyAllWindows()
 
 <https://neurohive.io/en/>
 
-
+<https://habr.com/ru/post/448436/> SyNet convolution calculation
 
 <https://machinelearningmastery.com/how-to-manually-scale-image-pixel-data-for-deep-learning/>
 
