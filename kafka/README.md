@@ -56,6 +56,8 @@ https://habr.com/company/itsumma/blog/418389/
  
 ##  Kafka
 
+<https://github.com/obsidiandynamics/kafdrop> UI for Kafka
+
 <https://habr.com/ru/post/466585/> book article
 
 <https://youtu.be/JalUUBKdcA0>
