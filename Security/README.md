@@ -12,6 +12,8 @@
 <https://www.reddit.com/r/reactjs/comments/ctnc88/whats_the_best_way_to_store_and_access_a_jwt_for/>
 
 ## TLS
+
+<https://habr.com/ru/company/qrator/blog/474832/> Как работает криптография на основе эллиптических кривых 
 <https://mcuoneclipse.com/2017/04/14/introduction-to-security-and-tls-transport-security-layer/>
 
 <https://davidwong.fr/tls13/> Readable Specification of TLS 1.3
