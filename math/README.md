@@ -12,6 +12,8 @@
 
 <http://www.jerrydallal.com/LHSP/LHSP.HTM>
 
+<https://www.stat.berkeley.edu/~aditya/resources/AllLectures2018Fall201A.pdf>
+
 ### Kalman filter
 
 <https://habr.com/ru/post/166693/> 
