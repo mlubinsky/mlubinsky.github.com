@@ -26,6 +26,8 @@ multiprocessing vs threading
 
 ## Other topics
 
+<https://habr.com/ru/company/edison/blog/474622/> . Libs
+
 <http://blog.rtwilson.com/five-new-ish-python-things-part-1/> 
 
 <https://habr.com/ru/company/ruvds/blog/472858/> request
