@@ -7,6 +7,11 @@
 
 <https://draculatheme.com/>
 
+
+## IntelliJ +Scala
+
+<https://stackoverflow.com/questions/23545476/where-do-i-enter-the-homebrew-scala-path-usr-local-opt-scala-idea-in-intellij?rq=1>
+
 ## Diff
 
 <https://yousseb.github.io/meld/>
