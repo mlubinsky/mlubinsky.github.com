@@ -12,6 +12,9 @@
 ## Stream vs batch
 <https://github.com/voorloopnul/pipeframe>  Python  process data (stream or batch) taking advantage of python multiprocessing library.
 
+https://github.com/olirice/flupy . Fluent data pipelines for python and your shell
+
+
 <https://netflix.github.io/mantis/>
 
 <https://www.learnstorybook.com/design-systems-for-developers/react/en/introduction/>
