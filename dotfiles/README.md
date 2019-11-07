@@ -1,0 +1,2 @@
+.vimrc
+.bash_profile
