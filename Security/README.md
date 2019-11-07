@@ -11,6 +11,11 @@
 
 <https://www.reddit.com/r/reactjs/comments/ctnc88/whats_the_best_way_to_store_and_access_a_jwt_for/>
 
+
+## SSH
+
+<https://habr.com/ru/company/dcmiran/blog/474654/> Рукопожатие SSH простыми словами
+
 ## TLS
 
 <https://habr.com/ru/company/qrator/blog/474832/> Как работает криптография на основе эллиптических кривых 
