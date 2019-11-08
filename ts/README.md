@@ -18,6 +18,8 @@
 
 <https://christian.bock.ml/posts/significant_shapelets/> 
 
+<https://vorstella.com/deep-learning-time-series/>
+
 <https://www.reddit.com/r/datascience/comments/deiowd/are_there_any_python_libraries_that_help_with/>
 
 <https://machinelearningmastery.com/time-series-data-visualization-with-python/>
