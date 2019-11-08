@@ -16,6 +16,12 @@
 ## Parsing
 <https://tomassetti.me/parsing-in-python/> Parsing in Python
 
+## Creating Python Package
+
+<https://pypi-package-example.readthedocs.io/en/latest/>
+
+<https://github.com/pvcraven/pypi_package_example>
+
 ## multiprocessing vs threading
 
 <http://pljung.de/posts/easy-concurrency-in-python/> . concurrency
