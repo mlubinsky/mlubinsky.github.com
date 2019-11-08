@@ -8,6 +8,64 @@
 
 <https://www.adaltas.com/en/2019/06/17/druid-hive-integration/>
 
+## CASE IF COALSECE DECODE
+
+<http://dwgeek.com/hadoop-hive-conditional-functions-if-case-coalesce-nvl-decode.html/>
+
+IF(boolean testCondition, T valueTrue, T valueFalseOrNull);
+
+isnull( a )
+
+isnotnull ( a )
+
+ You can use OR, IN, REGEXP in the CASE expressions.
+ 
+CASE WHEN a THEN b [WHEN c THEN d]… [ELSE e] END
+```
+select case 
+  when dayname(now()) in ('Saturday','Sunday') then 'result undefined on weekends' 
+  when x > y then 'x greater than y' 
+  when x = y then 'x and y are equal' 
+  when x is null or y is null then 'one of the columns is null' 
+  else null 
+end 
+from t1;
+```
+
+
+CASE a WHEN b THEN c [WHEN d THEN e]… [ELSE f] END
+```
+select case x 
+  when 1 then 'one' 
+  when 2 then 'two' 
+  when 0 then 'zero' 
+  else 'out of range' 
+end 
+from t1;
+```
+
+NVL(arg1, arg2)
+
+coalesce(value1, value 2, …) .    Returns the first non-null value for list of values provided as arguments.
+
+
+decode(<expr>, <search1>,<result1>, …<search N>, <result N>, <default>)
+
+Decode compares an expression to one or more possible values, and returns a corresponding result when a match is found.
+```
+SELECT event, 
+ decode(  day_of_week, 
+         1, "Monday", 
+         2, "Tuesday", 
+         3, "Wednesday", 
+         4, "Thursday", 
+         5, "Friday", 
+         6, "Saturday", 
+         7, "Sunday", 
+         "Unknown day") 
+  FROM calendar;
+```
+
 
 ## Drill: 
 Apache Drill is a highly scalable open source application framework which includes a SQL query engine. It can fetch data from a variety of mainly non-relational data stores, such as NoSQL databases. It is based on a schema-less JSON document model for data, so it is more flexible but slower than engines based on schema-based columnar data formats.
