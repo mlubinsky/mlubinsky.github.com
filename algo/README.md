@@ -1,5 +1,7 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://rcoh.me/posts/linear-time-median-finding/>
+
 <https://able.bio/daqo/landing-a-software-engineering-job-at-facebook--78k4a0s>
 
 <https://habr.com/ru/company/digital-ecosystems/blog/473018/> Facebook
