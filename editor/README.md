@@ -7,7 +7,7 @@
 
 <https://draculatheme.com/>
 
-## Test to Diagram
+## Text to Diagram
 
 <https://www.draw.io/>
 
