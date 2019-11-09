@@ -2,6 +2,16 @@ https://airflow.apache.org/
 
 <https://github.com/apache/airflow>
 
+
+# print the list of active DAGs
+airflow list_dags
+
+# prints the list of tasks the "tutorial" dag_id
+airflow list_tasks tutorial
+
+# prints the hierarchy of tasks in the tutorial DAG
+airflow list_tasks tutorial --tree
+
 https://cwiki.apache.org/confluence/display/AIRFLOW/Airflow+Home
 
 <https://towardsdatascience.com/a-definitive-compilation-of-apache-airflow-resources-82bc4980c154>
