@@ -38,11 +38,23 @@ $ jps
 
 ```
 
+Bettr jps output
+```
+$ jps
+2702 DataNode
+3101 ResourceManager
+4879 Jps
+2948 SecondaryNameNode
+3306 NodeManager
+```
+
 <https://www.datageekinme.com/setup/setting-up-my-mac-hive/>
 
 <https://superuser.com/questions/1475872/brew-install-hive-failure>
 
 <https://gist.github.com/SureshChaganti/37413cb3c38911974472ffbbd805409e>
+
+
 
 ## CASE IF COALSECE DECODE
 
