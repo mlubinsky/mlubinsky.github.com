@@ -11,7 +11,10 @@
 <https://www.cybertec-postgresql.com/en/joining-data-from-multiple-postgres-databases/>
 
 ## Pub/Subscribe
-https://layerci.com/blog/postgres-is-the-answer/
+
+<https://layerci.com/blog/postgres-is-the-answer/>
+
+<https://news.ycombinator.com/item?id=21484215>
 
 ### Column store extension for PostgreSQL
 <https://habr.com/ru/post/472396/>
