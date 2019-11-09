@@ -23,6 +23,8 @@
 
 <https://analyticshut.com/big-data/hive/collect_set-and-collect_list-in-hive/> COLLECT_SET COLLECT_LIST
 
+<https://analyticshut.com/category/big-data/hive/> Pivot, Rollup, Cube
+
 ## Install Hive on Mac
 
 <https://formulae.brew.sh/formula/hive>
