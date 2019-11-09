@@ -19,6 +19,8 @@
 
 <https://cwiki.apache.org/confluence/display/Hive/Tutorial>
 
+<https://www.sqlservercentral.com/articles/sql-on-hadoop-hive-part-ii>
+
 ## Install Hive on Mac
 
 <https://formulae.brew.sh/formula/hive>
