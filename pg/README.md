@@ -16,6 +16,13 @@ https://layerci.com/blog/postgres-is-the-answer/
 ### Column store extension for PostgreSQL
 <https://habr.com/ru/post/472396/>
 
+
+## Merge Upsert
+
+<https://pgdash.io/blog/postgres-insert.html>
+
+<http://www.postgresqltutorial.com/postgresql-upsert/>
+
 ## Web dev on Postgres
 
 <https://node-postgres.com> NodeJS driver/client
