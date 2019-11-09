@@ -21,6 +21,8 @@
 
 <https://www.sqlservercentral.com/articles/sql-on-hadoop-hive-part-ii>
 
+<https://analyticshut.com/big-data/hive/collect_set-and-collect_list-in-hive/> COLLECT_SET COLLECT_LIST
+
 ## Install Hive on Mac
 
 <https://formulae.brew.sh/formula/hive>
