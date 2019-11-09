@@ -8,6 +8,11 @@
 
 <https://www.adaltas.com/en/2019/06/17/druid-hive-integration/>
 
+
+## Books
+ 
+<https://www.amazon.com/Ultimate-Guide-Programming-Apache-Hive-ebook/dp/B0113L7LCO>
+
 ## Install Hive on Mac
 
 <https://formulae.brew.sh/formula/hive>
