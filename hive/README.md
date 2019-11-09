@@ -29,6 +29,17 @@ $ hive
 Unable to determine Hadoop version information.
 'hadoop version' returned:
 
+bash -x hive
+++ /usr/libexec/java_home --version 1.7+
++ JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home
++ HIVE_HOME=/usr/local/Cellar/hive/3.1.2/libexec
++ exec /usr/local/Cellar/hive/3.1.2/libexec/bin/hive
+Unable to determine Hadoop version information.
+'hadoop version' returned:
+
+```
+
+```
 $ jps
 68144 NGServer
 95120 Jps
