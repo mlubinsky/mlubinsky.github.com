@@ -13,6 +13,9 @@ airflow list_tasks tutorial
 airflow list_tasks tutorial --tree
 ```
 
+The first time you run Airflow, it will create a file called airflow.cfg in your $AIRFLOW_HOME directory
+(~/airflow by default). This file contains Airflow’s configuration and you can edit it to change any of the settings.
+
 https://cwiki.apache.org/confluence/display/AIRFLOW/Airflow+Home
 
 <https://towardsdatascience.com/a-definitive-compilation-of-apache-airflow-resources-82bc4980c154>
