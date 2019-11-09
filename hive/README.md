@@ -12,7 +12,31 @@
 
 <https://formulae.brew.sh/formula/hive>
 
+```
 brew install hive
+
+$  export HADOOP_HOME=/usr/local/Cellar/hadoop/3.2.1
+$ hive
+WARNING: log4j.properties is not found. HADOOP_CONF_DIR may be incomplete.
+ERROR: Invalid HADOOP_COMMON_HOME
+Unable to determine Hadoop version information.
+'hadoop version' returned:
+WARNING: log4j.properties is not found. HADOOP_CONF_DIR may be incomplete.
+ERROR: Invalid HADOOP_COMMON_HOME
+
+$ export HADOOP_COMMON_HOME=/usr/local/Cellar/hadoop/3.2.1
+$ hive
+Unable to determine Hadoop version information.
+'hadoop version' returned:
+
+$ jps
+68144 NGServer
+95120 Jps
+68146 NGServer
+67958 NGServer
+68111 NGServer
+
+```
 
 <https://www.datageekinme.com/setup/setting-up-my-mac-hive/>
 
