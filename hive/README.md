@@ -10,6 +10,8 @@
 
 ## Install Hive on Mac
 
+<https://formulae.brew.sh/formula/hive>
+
 brew install hive
 
 <https://www.datageekinme.com/setup/setting-up-my-mac-hive/>
