@@ -16,6 +16,10 @@
 
 <https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook/dp/B07Y5WSCV2/> Book
 
+<https://www.liip.ch/en/blog/time-series-prediction-a-short-comparison-of-best-practices>
+
+<https://news.ycombinator.com/item?id=21492394>
+
 <https://christian.bock.ml/posts/significant_shapelets/> 
 
 <https://vorstella.com/deep-learning-time-series/>
