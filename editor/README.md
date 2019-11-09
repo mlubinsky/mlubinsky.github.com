@@ -7,9 +7,17 @@
 
 <https://draculatheme.com/>
 
-## MarkDown Editors
+## Test to Diagram
 
-https://news.ycombinator.com/item?id=21458977
+<https://www.draw.io/>
+
+<https://avdi.codes/tools-for-turning-descriptions-into-diagrams/>
+
+<https://news.ycombinator.com/item?id=21491715>
+
+## MarkDown Editors: Typora, etc
+
+<https://news.ycombinator.com/item?id=21458977>
 
 
 ## IntelliJ +Scala
