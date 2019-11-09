@@ -13,6 +13,12 @@
  
 <https://www.amazon.com/Ultimate-Guide-Programming-Apache-Hive-ebook/dp/B0113L7LCO>
 
+## HQL
+
+<https://cwiki.apache.org/confluence/display/Hive/LanguageManual>
+
+<https://cwiki.apache.org/confluence/display/Hive/Tutorial>
+
 ## Install Hive on Mac
 
 <https://formulae.brew.sh/formula/hive>
