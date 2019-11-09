@@ -8,6 +8,16 @@
 
 <https://www.adaltas.com/en/2019/06/17/druid-hive-integration/>
 
+## Install Hive on Mac
+
+brew install hive
+
+<https://www.datageekinme.com/setup/setting-up-my-mac-hive/>
+
+<https://superuser.com/questions/1475872/brew-install-hive-failure>
+
+<https://gist.github.com/SureshChaganti/37413cb3c38911974472ffbbd805409e>
+
 ## CASE IF COALSECE DECODE
 
 <http://dwgeek.com/hadoop-hive-conditional-functions-if-case-coalesce-nvl-decode.html/>
