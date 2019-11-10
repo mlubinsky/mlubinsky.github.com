@@ -11,6 +11,17 @@ airflow list_tasks tutorial
 
 # prints the hierarchy of tasks in the tutorial DAG
 airflow list_tasks tutorial --tree
+
+# initialize the database
+airflow initdb
+
+# start the web server, default port is 8080
+airflow webserver -p 8080
+
+# start the scheduler
+airflow scheduler
+
+# visit localhost:8080 in the browser and enable the example dag in the home page
 ```
 
 The first time you run Airflow, it will create a file called airflow.cfg in your $AIRFLOW_HOME directory
