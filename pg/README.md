@@ -483,7 +483,7 @@ select * from widget_sb
 
 SELECT ROW_TO_JSON(table_name) FROM table_name
 
- 
+ <https://habr.com/ru/post/475178/>
 
 
 <https://www.w3resource.com/PostgreSQL/postgresql-json-functions-and-operators.php>
