@@ -4,6 +4,13 @@ https://airflow.apache.org/
 
 <http://pydoc.net/apache-airflow>
 
+### issue
+
+```
+pip freeze | grep Flask
+Flask==1.1.1
+```
+<https://stackoverflow.com/questions/55253263/import-airflow-importerror-cannot-import-name-version-with-python-2-7>
 ```
 >>> from airflow.models import DAG
 Traceback (most recent call last):
@@ -11,6 +18,9 @@ Traceback (most recent call last):
   File "/Users/mlubinsky/ide_virtual_env/lib/python2.7/site-packages/airflow/__init__.py", line 30, in <module>
     from airflow import version
 ImportError: cannot import name version
+
+```
+
 ```
 # print the list of active DAGs
 airflow list_dags
