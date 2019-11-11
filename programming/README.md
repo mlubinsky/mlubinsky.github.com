@@ -8,6 +8,8 @@
 
 <https://greenteapress.com/wp/>
 
+<https://standuply.com/how-to-use-slack> . Slack
+
 ## ETL
 
 <https://dataschool.com/data-governance/> . Book
