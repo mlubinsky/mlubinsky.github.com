@@ -89,6 +89,10 @@ The 3rd-party libraries installed by pip are usually here:
 
 python -c "import os,  site; print(os.linesep.join(site.getsitepackages()))"
 
+Why you should use python -m pip .  , not just pip
+https://habr.com/ru/company/otus/blog/475392/
+ python3.8 -m pip
+ 
 pip commands:  
 pip -V # shows pip version and path (make sure it in sync with output of site.getsitepackages()) above)
 pip list                                    # all installed packages
