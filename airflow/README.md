@@ -2,6 +2,15 @@ https://airflow.apache.org/
 
 <https://github.com/apache/airflow>
 
+<http://pydoc.net/apache-airflow>
+
+```
+>>> from airflow.models import DAG
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/mlubinsky/ide_virtual_env/lib/python2.7/site-packages/airflow/__init__.py", line 30, in <module>
+    from airflow import version
+ImportError: cannot import name version
 ```
 # print the list of active DAGs
 airflow list_dags
