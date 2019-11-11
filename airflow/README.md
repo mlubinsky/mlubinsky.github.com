@@ -4,6 +4,15 @@ https://airflow.apache.org/
 
 <http://pydoc.net/apache-airflow>
 
+<http://airflow.apache.org/faq.html>
+
+
+pip install apache-airflow[celery]
+
+pip install -U apache-airflow
+
+DAGs are a high-level outline that define the dependent and exclusive tasks that can be ordered and scheduled.
+
 ### issue
 
 ```
@@ -32,7 +41,7 @@ airflow list_tasks tutorial
 airflow list_tasks tutorial --tree
 
 # initialize the database
-airflow initdb
+airflow initdb # This creates airflow directory in home path with cfg files and logs folder.
 
 # start the web server, default port is 8080
 airflow webserver -p 8080
@@ -46,7 +55,65 @@ airflow scheduler
 The first time you run Airflow, it will create a file called airflow.cfg in your $AIRFLOW_HOME directory
 (~/airflow by default). This file contains Airflow’s configuration and you can edit it to change any of the settings.
 
-https://cwiki.apache.org/confluence/display/AIRFLOW/Airflow+Home
+
+cp airflow_test.py ~/airflow/dags/
+
+<https://medium.com/@guillaume_payen/use-conditional-tasks-with-apache-airflow-98bab35f1846>
+
+
+### Tasks
+Tasks are user-defined activities ran by the operators. They can be functions in Python or external scripts that you can call. Tasks are expected to be idempotent — no matter how many times you run a task, it needs to result in the same outcome for the same input parameters.
+
+### Operators -  describes a single task
+Don’t confuse operators with tasks. Tasks are defined as “what to run?” and operators are “how to run”. For example, a Python function to read from S3 and push to a database is a task. The method that calls this Python function in Airflow is the operator. Airflow has built-in operators that you can use for common tasks. You can create custom operators by extending the BaseOperator class and implementing the execute() method.
+
+if two operators need to share information, like a filename or small amount of data, you should consider combining them into a single operator. If it absolutely can’t be avoided, Airflow does have a feature for operator cross-communication called XCom.
+```
+BashOperator - executes a bash command
+PythonOperator - calls an arbitrary Python function
+EmailOperator - sends an email
+HTTPOperator - sends an HTTP request
+MySqlOperator, SqliteOperator, PostgresOperator, MsSqlOperator, OracleOperator, JdbcOperator, etc. - executes a SQL command
+Sensor - waits for a certain time, file, database row, S3 key, etc…
+```
+<https://blog.usejournal.com/testing-in-airflow-part-1-dag-validation-tests-dag-definition-tests-and-unit-tests-2aa94970570c>
+
+There are five categories of tests in Airflow that you can write:
+*  DAG Validation Tests: To test the validity of the DAG, checking typos and cyclicity.
+* DAG/Pipeline Definition Tests: To test the total number of tasks in the DAG, upstream and downstream dependencies of each task etc.
+* Unit Tests: To test the logic of custom Operators, custom Sensor etc.
+* Integration Tests: To test the communication between tasks. For example, task1 pass some information to task 2 using Xcoms.
+* End to End Pipeline Tests: To test and verify the integration between each task. You can also assert the data on successful completion of the E2E pipeline.
+
+```
+from datetime import datetime
+from airflow import DAG
+from airflow.operators.dummy_operator import DummyOperator
+from airflow.operators.python_operator import PythonOperator
+from airflow.operators import MultiplyBy5Operator
+
+def print_hello():
+ return 'Hello Wolrd'
+
+dag = DAG('hello_world', description='Hello world example', schedule_interval='0 12 * * *', start_date=datetime(2017, 3, 20), catchup=False)
+
+dummy_operator = DummyOperator(task_id='dummy_task', retries = 3, dag=dag)
+
+hello_operator = PythonOperator(task_id='hello_task', python_callable=print_hello, dag=dag)
+
+multiplyby5_operator = MultiplyBy5Operator(my_operator_param='my_operator_param',
+                                task_id='multiplyby5_task', dag=dag)
+
+dummy_operator >> hello_operator
+
+dummy_operator >> multiplyby5_operator
+```
+
+<https://medium.com/datareply/airflow-lesser-known-tips-tricks-and-best-practises-cf4d4a90f8f>
+
+
+
+<https://cwiki.apache.org/confluence/display/AIRFLOW/Airflow+Home>
 
 <https://towardsdatascience.com/a-definitive-compilation-of-apache-airflow-resources-82bc4980c154>
 
