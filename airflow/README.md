@@ -6,12 +6,38 @@ https://airflow.apache.org/
 
 <http://airflow.apache.org/faq.html>
 
-
+```
 pip install apache-airflow[celery]
+
+pip install apache-airflow[postgres,s3]
 
 pip install -U apache-airflow
 
+```
+
 DAGs are a high-level outline that define the dependent and exclusive tasks that can be ordered and scheduled.
+
+### Executors
+Inside airflow.cfg the executor is defined:
+
+ Airflow proposes several executor out of the box, from the simplest to the most full-featured:
+ 
+* SequentialExecutor: a very basic, single task at a time, executor that is also the default one. You do NOT want to use this one for anything but unit testing
+* LocalExecutor: also very basic, it runs the tasks on the same host as the scheduler, and is quite simple to set-up. It’s the best candidate for small, non-distributed deployments, and development environments, but won’t scale horizontally
+* CeleryExecutor: here we are beginning to scale out over a distributed cluster of Celery workers to cope with a large sized task set. Still quite easy to set-up and use, it’s the recommended setup for production
+* MesosExecutor: if you’re one of the cool kids, and have an existing Mesosinfrastructure, surely your will want to leverage as a destination for your task executions
+* KubernetesExecutor
+
+## Best practices
+
+<https://medium.com/leboncoin-engineering-blog/data-traffic-control-with-apache-airflow-ab8fd3fc8638>
+
+Also look into attached PDF in this folder
+
+```
+airflow scheduler &
+airflow webserver & .   http://localhost:8080
+```
 
 ### issue
 
@@ -41,7 +67,7 @@ airflow list_tasks tutorial
 airflow list_tasks tutorial --tree
 
 # initialize the database
-airflow initdb # This creates airflow directory in home path with cfg files and logs folder.
+airflow initdb # This creates airflow directory in home path with airflow.cfg and logs folder.
 
 # start the web server, default port is 8080
 airflow webserver -p 8080
@@ -60,9 +86,13 @@ cp airflow_test.py ~/airflow/dags/
 
 <https://medium.com/@guillaume_payen/use-conditional-tasks-with-apache-airflow-98bab35f1846>
 
+<https://medium.com/@dustinstansbury/understanding-apache-airflows-key-concepts-a96efed52b1a>
 
 ### Tasks
 Tasks are user-defined activities ran by the operators. They can be functions in Python or external scripts that you can call. Tasks are expected to be idempotent — no matter how many times you run a task, it needs to result in the same outcome for the same input parameters.
+
+<https://medium.com/@dustinstansbury/understanding-apache-airflows-key-concepts-a96efed52b1a>
+ Tasks can have two flavors: they can either execute some explicit operation, in which case they are an Operator, or they can pause the execution of dependent tasks until some criterion has been met, in which case they are a Sensor. In principle, Operators can perform any function that can be executed in Python. Similarly, Sensors can check the state of any process or data structure.
 
 ### Operators -  describes a single task
 Don’t confuse operators with tasks. Tasks are defined as “what to run?” and operators are “how to run”. For example, a Python function to read from S3 and push to a database is a task. The method that calls this Python function in Airflow is the operator. Airflow has built-in operators that you can use for common tasks. You can create custom operators by extending the BaseOperator class and implementing the execute() method.
@@ -159,6 +189,8 @@ Testing
 ‘Data’s Inferno: 7 Circles of Data Testing Hell with Airflow’ by WB Advanced Analytics. Jan, 2018.
 ‘Testing in Airflow Part 1 — DAG Validation Tests, DAG Definition Tests and Unit Tests’ by Chandu Kavar on Medium ( ~1k +1's). Aug 2018.
 Additional Reading
+```
+<https://medium.com/bluecore-engineering/were-all-using-airflow-wrong-and-how-to-fix-it-a56f14cb0753>
 ‘We’re All Using Airflow Wrong and How to Fix It’ by Jessica Laughlin. Bluecore Engineering. Aug, 2018.
 
-```
+ 
