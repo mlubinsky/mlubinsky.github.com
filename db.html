@@ -48,7 +48,11 @@ https://habr.com/ru/post/440306/ Проблемы масштабирования
 https://habr.com/ru/company/otus/blog/451042/ . Postgres vs Cassandra vs Mongo 
  
 <h2>MVCC (MultiVersion Concurrency Control)</h2>
+
+https://habr.com/ru/post/469415/
+
 https://en.wikipedia.org/wiki/Multiversion_concurrency_control
+
 The simplest way is to make all readers wait until the writer is done, which is known as a read-write lock. 
 Locks are known to create contention especially between long read transactions and update transactions. 
 MVCC aims at solving the problem by keeping multiple copies of each data item. 
