@@ -5,7 +5,25 @@ hive.support.sql11.reserved.keywords to TRUE.
 describe extended tablenamehere 
 describe formatted tablenamehere 
 show partitions tablenamehere
+SHOW PARTITIONS employees PARTITION(country='US');
+set hive.mapred.mode=strict;  -- prohibits queries of partitioned tables without a WHERE clause that filters on partitions
 ```
+
+Partitioning tables changes how Hive structures the data storage.
+``` 
+CREATE TABLE employees (
+  name         STRING,
+  salary       FLOAT,
+  subordinates ARRAY<STRING>,
+  deductions   MAP<STRING, FLOAT>,
+  address      STRUCT<street:STRING, city:STRING, state:STRING, zip:INT>
+)
+PARTITIONED BY (country STRING, state STRING);
+
+Following directories will be created
+.../employees/country=CA/state=AB
+.../employees/country=CA/state=BC
+``` 
 ## Architecture
 
 <http://gethue.com/>  SQL Web client
