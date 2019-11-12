@@ -1,3 +1,5 @@
+hive.support.sql11.reserved.keywords to TRUE. 
+
 ## Architecture
 
 <http://gethue.com/>  SQL Web client
@@ -16,6 +18,8 @@
 ## HQL
 
 <https://cwiki.apache.org/confluence/display/Hive/LanguageManual>
+
+<https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF#LanguageManualUDF-ConditionalFunctions>
 
 <https://cwiki.apache.org/confluence/display/Hive/Tutorial>
 
