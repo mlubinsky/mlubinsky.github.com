@@ -1,4 +1,7 @@
 ## SQL
+
+ <https://stackoverflow.com/questions/58828417/how-to-avoid-calculating-the-same-expression-several-times-in-sql>
+
  <https://blog.jooq.org/2016/04/25/10-sql-tricks-that-you-didnt-think-were-possible/>
 
  <https://www.interviewbit.com/sql-interview-questions/>
