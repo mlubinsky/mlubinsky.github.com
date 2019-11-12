@@ -75,21 +75,22 @@ python -c "import os, sys; print(os.linesep.join(sys.path))"
 https://realpython.com/python-modules-packages/
 
 <h3>Package managers: pip and conda</h3>
-
+pip check . # test consistency of current setup
 https://snarky.ca/why-you-should-use-python-m-pip/
 https://news.ycombinator.com/item?id=21429250
 pipx
 
+https://jacobian.org/2019/nov/11/python-environment-2020
 
 https://towardsdatascience.com/how-to-setup-an-awesome-python-environment-for-data-science-or-anything-else-35d358cc95d5
 
 PIP package manager: https://pypi.org/project/pip/
 https://dev.to/elabftw/stop-using-sudo-pip-install-52mn
 The 3rd-party libraries installed by pip are usually here:
-
+<b>
 python -c "import os,  site; print(os.linesep.join(site.getsitepackages()))"
-
-Why you should use python -m pip .  , not just pip
+</b>
+Why you should use python -m pip   , not just pip
 https://habr.com/ru/company/otus/blog/475392/
  python3.8 -m pip
  
