@@ -249,8 +249,14 @@ for n in newlist:
  
  
 <h3>Virtual Environments</h3>
-
-
+https://github.com/pipxproject/pipx
+mksir ~/.venvs
+For Python2
+   To create: virtualenv ~/.venvs/myproject
+    To activate: ~/.venvs/myproject/bin/activate
+For Python3
+    To create: python3 -m venv ~/.venvs/myproject
+    To activate: . ~/.venvs/myproject/bin/activate
 
 <a href=https://realpython.com/python-virtual-environments-a-primer/>Python virtual env</a>
 <a href=http://devarea.com/python-working-with-virtual-environments>Python virtual environment</a>
@@ -259,9 +265,9 @@ When you create a virtual environment, all you are doing is creating a copy of t
 some core modules in the dist-packages folder, 
 and (usually) an empty site-packages folder. That it. 
 
-
+<b>
 python -c "import sys; print(sys.executable)"
-
+</b>
 Using virtual environments allows you to avoid installing Python packages globally which could break system tools or other projects.
 There are several tools to manage the virtual environments: https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe/41573588#41573588
 The virtualenv is the basic tool which works with Python2 and Python3: https://virtualenv.pypa.io/en/stable/
