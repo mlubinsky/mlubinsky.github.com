@@ -1,6 +1,8 @@
 hive.support.sql11.reserved.keywords to TRUE. 
 <https://cwiki.apache.org/confluence/display/Hive/LanguageManual+VariableSubstitution>
 
+show partitions tablenamehere
+
 ## Architecture
 
 <http://gethue.com/>  SQL Web client
