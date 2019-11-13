@@ -33,6 +33,39 @@ Following directories will be created
 .../employees/country=CA/state=AB
 .../employees/country=CA/state=BC
 ``` 
+
+## Performance Tuning
+
+<https://stackoverflow.com/questions/56743423/hive-performance-improvement/56761966#56761966>
+
+
+<https://stackoverflow.com/questions/28920328/how-to-improve-performance-of-loading-data-from-non-partition-table-into-orc-par>
+
+<https://stackoverflow.com/questions/40750439/hive-can-one-extract-common-options-for-reuse-in-other-scripts/40783621#40783621>
+
+Vectorized query execution improves performance of operations like scans, aggregations, filters and joins, by performing them in batches of 1024 rows at once instead of single row each time.
+
+<https://stackoverflow.com/questions/53409157/hive-query-optimization-settings-when-not-to-use>
+
+```
+set hive.vectorized.execution.enabled = true;
+set hive.vectorized.execution.reduce.enabled = true;
+```
+Cost based optimizer
+```
+set hive.cbo.enable=true;
+set hive.compute.query.using.stats=true;
+set hive.stats.fetch.column.stats=true;
+set hive.stats.fetch.partition.stats=true;
+analyze table tweets compute statistics for columns;
+```
+
+set hive.execution.engine=tez
+
+SET hive.exec.parallel=true;
+
+
+
 ## Architecture
 
 <http://gethue.com/>  SQL Web client
