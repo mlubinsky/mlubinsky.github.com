@@ -33,7 +33,14 @@ Following directories will be created
 .../employees/country=CA/state=AB
 .../employees/country=CA/state=BC
 ``` 
+### CLI
+<https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Cli>
 
+<http://dwgeek.com/hiveserver2-beeline-command-line-shell-options-examples.html/>
+
+   hive -f x.hql
+   hive -e 'select * from test';
+   
 ## Performance Tuning
 
 <https://cwiki.apache.org/confluence/display/Hive/Configuration+Properties>
