@@ -16,7 +16,7 @@ false
 hive> select 'Dudu Markovitz: @123' rlike '[^a-zA-Z\\d\\s:]';
 OK
 true
-``
+```
 
 Partitioning tables changes how Hive structures the data storage.
 ``` 
