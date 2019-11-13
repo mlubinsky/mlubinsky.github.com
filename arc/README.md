@@ -22,6 +22,7 @@ https://github.com/olirice/flupy . Fluent data pipelines for python and your she
 
 https://github.com/robinhood/faust . Python Stream Processing
 
+<https://github.com/gazette/core> Gazette is infrastructure for building streaming platforms: platforms composed of loosely coupled services, built and operated by distinct teams, managing and serving large amounts of state, but all communicating continuously through a common catalog of streamed data. It features a lightweight container & cloud-native architecture, high availability, and integrates elegantly with existing batch workflows.
 
 <https://netflix.github.io/mantis/>
 
