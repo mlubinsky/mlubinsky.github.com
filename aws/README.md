@@ -17,6 +17,16 @@ chmod 400 my-ec2-ssh-key.pem
 
 https://aws.amazon.com/about-aws/whats-new/2019/09/aws-transfer-for-sftp-now-supports-logical-directories-for-amazon-s3/
 
+## EMR
+
+Hive Version for emr-5.21.1 is: 2.3.4
+
+  
+<https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hive.html>
+
+<https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew-history.html>
+
+<https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-5x.html>
 
 
 ## A command line utility that allows you to stream data from multiple S3 objects directly into your terminal
