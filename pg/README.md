@@ -90,6 +90,14 @@ SET search_path TO myschema;
 <https://habr.com/ru/company/postgrespro/blog/330544/>
 
 ## Timeseries:
+
+<https://github.com/ciconia/pmts>
+PMTS is a collection of tools for working with time-series data in PostgreSQL written in SQL and PL/pgSQL, without needing to install extensions or work with outside tools. Its features include:
+
+Automatic partitioning (sharding) of time-series tables by time range.
+Automatic dropping of old partitions according to data retention settings.
+Aggregation and summarizing utilities (WIP).
+
 <https://www.cybertec-postgresql.com/en/postgresql-trivial-timeseries-examples/>
 
 <https://www.cybertec-postgresql.com/en/timeseries-exclude-ties-current-row-and-group/>
