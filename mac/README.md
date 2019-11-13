@@ -26,6 +26,11 @@ https://github.com/vsaravind007/nodeScratchpad   Run JS code snippets
 
 <https://github.com/wellsjo/JSON-Splora>  JSON manipulation
 
+
+### jEnv Java
+
+<https://medium.com/@danielnenkov/multiple-jdk-versions-on-mac-os-x-with-jenv-5ea5522ddc9b>
+
 ### Anaconda on Mac:
 
 <https://stackoverflow.com/questions/45684618/having-default-mac-python-2-7-and-anaconda-python-3>
