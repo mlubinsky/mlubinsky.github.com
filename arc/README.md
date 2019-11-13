@@ -14,6 +14,8 @@
 
 https://github.com/olirice/flupy . Fluent data pipelines for python and your shell
 
+https://github.com/robinhood/faust . Python Stream Processing
+
 
 <https://netflix.github.io/mantis/>
 
