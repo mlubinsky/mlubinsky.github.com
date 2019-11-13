@@ -12,6 +12,8 @@
 
 <https://awesome-docker.netlify.com/>
 
+<https://offby2.com/posts/001-docker-lesser-known-tips/>
+
 <https://medium.com/learning-cloud-native-go/lets-get-it-started-dc4634ef03b> Go + Docker
 <https://habr.com/ru/company/hh/blog/450954/> Java + Docker
 
