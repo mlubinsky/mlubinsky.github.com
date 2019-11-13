@@ -36,6 +36,8 @@ Following directories will be created
 
 ## Performance Tuning
 
+<https://cwiki.apache.org/confluence/display/Hive/Configuration+Properties>
+
 <https://stackoverflow.com/questions/56743423/hive-performance-improvement/56761966#56761966>
 
 
