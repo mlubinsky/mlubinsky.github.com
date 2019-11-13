@@ -9,6 +9,15 @@ SHOW PARTITIONS employees PARTITION(country='US');
 set hive.mapred.mode=strict;  -- prohibits queries of partitioned tables without a WHERE clause that filters on partitions
 ```
 
+```
+hive> select 'Dudu Markovitz: 123' rlike '[^a-zA-Z\\d\\s:]';
+OK
+false
+hive> select 'Dudu Markovitz: @123' rlike '[^a-zA-Z\\d\\s:]';
+OK
+true
+``
+
 Partitioning tables changes how Hive structures the data storage.
 ``` 
 CREATE TABLE employees (
