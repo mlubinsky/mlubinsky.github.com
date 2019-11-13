@@ -1,3 +1,7 @@
+## cloud service: common Architecture Do's
+
+<https://danielsada.tech/blog/cloud-services-dos/>
+
 <https://news.ycombinator.com/item?id=21515772>
 
 ## Data Modeling
