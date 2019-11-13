@@ -1,3 +1,5 @@
+<https://news.ycombinator.com/item?id=21515772>
+
 ## Data Modeling
 
 <https://github.com/linkedin/WhereHows/wiki>
