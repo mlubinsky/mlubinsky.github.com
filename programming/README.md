@@ -51,6 +51,8 @@
 
 ## Parsers
 
+<https://chelseatroy.com/2019/11/11/building-a-parser/>
+
 <https://siddhesh.in/posts/gcc-under-the-hood.html> gcc under the hood
 <https://deniskyashif.com/translation-using-syntactic-rules/>
 <https://habr.com/ru/post/469213/> Parser combinator RUST
