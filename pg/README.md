@@ -19,6 +19,7 @@
 ### Column store extension for PostgreSQL
 <https://habr.com/ru/post/472396/>
 
+<http://www.craigkerstiens.com/2019/11/13/postgres-interview-from-art-of-postgresql/>
 
 ## Merge Upsert
 
