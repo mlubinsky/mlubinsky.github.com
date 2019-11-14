@@ -6,6 +6,8 @@ https://airflow.apache.org/
 
 <http://airflow.apache.org/faq.html>
 
+<https://www.sicara.ai/blog/2019-01-28-automate-aws-tasks-thanks-to-airflow-hooks>  AirFlow Hooks
+
 ```
 pip install apache-airflow[celery]
 
