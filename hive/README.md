@@ -115,7 +115,9 @@ PARTITIONED BY (City Varchar(100))
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 STORED AS TEXTFILE;
-Enable Dynamic Hive Partition
+```
+### Enable Dynamic Hive Partition
+```
 SET hive.exec.dynamic.partition = true;
 SET hive.exec.dynamic.partition.mode = nonstrict;
 Import Data From Temporary Table To Partitioned Table
@@ -124,7 +126,8 @@ EmployeeName,Address,State,City,Zipcode from Emloyee_Temp;
 ```
 
 ### Use Bucketing
-The Hive table is divided into a number of partitions and is called Hive Partition. Hive Partition is further subdivided into clusters or buckets and is called bucketing or clustering.
+The Hive table is divided into a number of partitions and is called Hive Partition. 
+Hive Partition is further subdivided into clusters or buckets and is called bucketing or clustering.
 ```
 Create Table Employee_Part(EmloyeeID int, EmployeeName Varchar(100), 
                            Address Varchar(100),State Varchar(100),
