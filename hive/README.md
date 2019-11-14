@@ -69,12 +69,18 @@ set hive.execution.engine=tez;
 
 Vectorization improves the performance by fetching 1,024 rows in a single operation instead of fetching single row each time. It improves the performance for operations like filter, join, aggregation, etc.
 
-Vectorization can be enabled in the environment by executing below commands.
+Vectorized query execution improves performance of operations like scans, aggregations, filters and joins, by performing them in batches of 1024 rows at once instead of single row each time.
+
+<https://stackoverflow.com/questions/53409157/hive-query-optimization-settings-when-not-to-use>
+
+<https://cwiki.apache.org/confluence/display/Hive/Vectorized+Query+Execution>
+
 ```
-set hive.vectorized.execution.enabled=true;
-set hive.vectorized.execution.reduce.enabled=true;
+set hive.vectorized.execution.enabled = true;
+set hive.vectorized.execution.reduce.enabled = true;
 ```
-Use ORCFile
+
+### Use ORCFile
 Optimized Row Columnar format provides highly efficient ways of storing the hive data by reducing the data storage format by 75% of the original. The ORCFile format uses techniques like predicate push-down, compression, and more to improve the performance of the query.
 
 Consider two tables: employee and employee_details, tables that are stored in a text file. Let's say we will use join to fetch details from both tables.
@@ -161,16 +167,7 @@ set hive.stats.fetch.partition.stats=true;
 
 <https://stackoverflow.com/questions/40750439/hive-can-one-extract-common-options-for-reuse-in-other-scripts/40783621#40783621>
 
-Vectorized query execution improves performance of operations like scans, aggregations, filters and joins, by performing them in batches of 1024 rows at once instead of single row each time.
 
-<https://stackoverflow.com/questions/53409157/hive-query-optimization-settings-when-not-to-use>
-
-<https://cwiki.apache.org/confluence/display/Hive/Vectorized+Query+Execution>
-
-```
-set hive.vectorized.execution.enabled = true;
-set hive.vectorized.execution.reduce.enabled = true;
-```
 Cost based optimizer
 ```
 set hive.cbo.enable=true;
@@ -359,6 +356,7 @@ Hive metastore. To enable the usage of Hive metastore outside of Hive, a separat
   HCatalog is a part of Hive and serves the very important purpose of allowing other tools (like Pig and MapReduce)
   to integrate with the Hive metastore.
 
+### Partition
  Physically, a partition in Hive is nothing but just a sub-directory in the table directory.
 CREATE TABLE table_name (column1 data_type, column2 data_type) 
 PARTITIONED BY (partition1 data_type, partition2 data_type,….);
@@ -415,12 +413,6 @@ Should the intermediate result be persisted or should it be recomputed on operat
 The degree of parallelism at any operator (specifically number of reducers to use).
 Semi Join selection
 
-## Vectorization
-
-Vectorization allows Hive to process a batch of rows together instead of processing one row at a time
-```
-hive.vectorized.execution.enabled=true.
-```
 
 ## Bucketing
 ``SET hive.enforce.bucketing=true``
@@ -484,7 +476,7 @@ SET hive.exce.parallel=true;
 ```
 Complex Hive queries commonly are translated to a number of map reduce jobs that are executed by default sequentially. Often though some of a query’s map reduce stages are not interdependent and could be executed in parallel.
 
-They then can take advantage of spare capacity on a cluster and improve cluster utilization while at the same time reduce the overall query executions time. The configuration in Hive to change this behaviour is a merely switching a single flag SET hive.exce.parallel=true;.
+They then can take advantage of spare capacity on a cluster and improve cluster utilization while at the same time reduce the overall query executions time. The configuration in Hive to change this behaviour is a merely switching a single flag ```SET hive.exce.parallel=true```
 
 ## LEFT SEMI JOIN
 In order check the existence of a key in another table, the user can use LEFT SEMI JOIN as illustrated by the following example.
