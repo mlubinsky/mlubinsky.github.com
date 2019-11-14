@@ -356,7 +356,7 @@ Hive metastore. To enable the usage of Hive metastore outside of Hive, a separat
   HCatalog is a part of Hive and serves the very important purpose of allowing other tools (like Pig and MapReduce)
   to integrate with the Hive metastore.
 
-### Partition
+### Partitions and bucketing
  Physically, a partition in Hive is nothing but just a sub-directory in the table directory.
 CREATE TABLE table_name (column1 data_type, column2 data_type) 
 PARTITIONED BY (partition1 data_type, partition2 data_type,….);
@@ -391,6 +391,11 @@ Partitioning works best when the cardinality of the partitioning field is not to
 Also, you can partition on multiple fields, with an order (year/month/day is a good example),
 while you can bucket on only one field.
 
+``SET hive.enforce.bucketing=true``
+
+every time before writing data to the bucketed table. To leverage the bucketing in the join operation we should
+```SET hive.optimize.bucketmapjoin=true```
+This setting hints to Hive to do bucket level join during the map stage join. It also reduces the scan cycles to find a particular key because bucketing ensures that the key is present in a certain bucket.
 
 ## Hive 3 streaming
 
@@ -414,10 +419,6 @@ The degree of parallelism at any operator (specifically number of reducers to us
 Semi Join selection
 
 
-## Bucketing
-``SET hive.enforce.bucketing=true``
-
-every time before writing data to the bucketed table. To leverage the bucketing in the join operation we should SET hive.optimize.bucketmapjoin=true. This setting hints to Hive to do bucket level join during the map stage join. It also reduces the scan cycles to find a particular key because bucketing ensures that the key is present in a certain bucket.
 
 
 ## Join algorithms in Hive
