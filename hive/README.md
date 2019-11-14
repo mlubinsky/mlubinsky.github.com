@@ -67,6 +67,8 @@ Vectorized query execution improves performance of operations like scans, aggreg
 
 <https://stackoverflow.com/questions/53409157/hive-query-optimization-settings-when-not-to-use>
 
+<https://cwiki.apache.org/confluence/display/Hive/Vectorized+Query+Execution>
+
 ```
 set hive.vectorized.execution.enabled = true;
 set hive.vectorized.execution.reduce.enabled = true;
