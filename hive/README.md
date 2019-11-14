@@ -54,6 +54,99 @@ set mapred.reduce.tasks=32
    
 ## Performance Tuning
 
+<https://dzone.com/articles/how-to-improve-hive-query-performance-with-hadoop>
+
+### Use Tez Engine
+Apache Tez Engine is an extensible framework for building high-performance batch processing and interactive data processing. It is coordinated by YARN in Hadoop. Tez improved the MapReduce paradigm by increasing the processing speed and maintaining the MapReduce ability to scale to petabytes of data.
+
+Tez engine can be enabled in your environment by setting hive.execution.engine to tez:
+```
+set hive.execution.engine=tez;
+```
+
+### Use Vectorization
+Vectorization improves the performance by fetching 1,024 rows in a single operation instead of fetching single row each time. It improves the performance for operations like filter, join, aggregation, etc.
+
+Vectorization can be enabled in the environment by executing below commands.
+```
+set hive.vectorized.execution.enabled=true;
+set hive.vectorized.execution.reduce.enabled=true;
+```
+Use ORCFile
+Optimized Row Columnar format provides highly efficient ways of storing the hive data by reducing the data storage format by 75% of the original. The ORCFile format uses techniques like predicate push-down, compression, and more to improve the performance of the query.
+
+Consider two tables: employee and employee_details, tables that are stored in a text file. Let's say we will use join to fetch details from both tables.
+```
+Select a.EmployeeID, a.EmployeeName, b.Address,b.Designation from Employee a
+Join Employee_Details b
+On a.EmployeeID=b.EmployeeID;
+```
+Above query will take a long time, as the table is stored as text. Converting this table into ORCFile format will significantly reduce the query execution time.
+```
+Create Table Employee_ORC (EmployeeID int, EmployeeName varchar(100),Age int)
+STORED AS ORC tblproperties("compress.mode"="SNAPPY");
+Select * from Employee Insert into Employee_ORC;
+Create Table Employee_Details_ORC (EmployeeID int, Address varchar(100)
+                                  ,Designation Varchar(100),Salary int)
+STORED AS ORC tblproperties("compress.mode"="SNAPPY");
+Select * from Employee_Details Insert into Employee_Details_ORC;
+Select a.EmployeeID, a.EmployeeName, b.Address,b.Designation from Employee_ORC a
+Join Employee_Details_ORC b
+On a.EmployeeID=b.EmployeeID;
+ORC supports compressed (ZLIB and Snappy), as well as uncompressed storage.
+```
+### Use Partitioning
+With partitioning, data is stored in separate individual folders on HDFS. Instead of querying the whole dataset, it will query partitioned dataset.
+
+Create Temporary Table and Load Data Into Temporary Table
+```
+Create Table Employee_Temp(EmloyeeID int, EmployeeName Varchar(100), 
+                           Address Varchar(100),State Varchar(100),
+                           City Varchar(100),Zipcode Varchar(100))
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+LOAD DATA INPATH '/home/hadoop/hive' INTO TABLE Employee_Temp;
+Create Partitioned Table
+Create Table Employee_Part(EmloyeeID int, EmployeeName Varchar(100), 
+                           Address Varchar(100),State Varchar(100),
+                           Zipcode Varchar(100))
+PARTITIONED BY (City Varchar(100))
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+Enable Dynamic Hive Partition
+SET hive.exec.dynamic.partition = true;
+SET hive.exec.dynamic.partition.mode = nonstrict;
+Import Data From Temporary Table To Partitioned Table
+Insert Overwrite table Employee_Part Partition(City) Select EmployeeID,
+EmployeeName,Address,State,City,Zipcode from Emloyee_Temp;
+```
+
+### Use Bucketing
+The Hive table is divided into a number of partitions and is called Hive Partition. Hive Partition is further subdivided into clusters or buckets and is called bucketing or clustering.
+```
+Create Table Employee_Part(EmloyeeID int, EmployeeName Varchar(100), 
+                           Address Varchar(100),State Varchar(100),
+                           Zipcode Varchar(100))
+PARTITIONED BY (City Varchar(100))
+Clustered By (EmployeeID) into 20 Buckets
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+```
+### Cost-Based Query Optimization
+Hive optimizes each query's logical and physical execution plan before submitting for final execution. However, this is not based on the cost of the query during the initial version of Hive.
+
+During later versions of Hive, query has been optimized according to the cost of the query (like which types of join to be performed, how to order joins, the degree of parallelism, etc.).
+
+To use cost-based optimization, set the below parameters at the start of the query.
+```
+set hive.cbo.enable=true;
+set hive.compute.query.using.stats=true;
+set hive.stats.fetch.column.stats=true;
+set hive.stats.fetch.partition.stats=true;
+```
 <https://cwiki.apache.org/confluence/display/Hive/Configuration+Properties>
 
 <https://stackoverflow.com/questions/56743423/hive-performance-improvement/56761966#56761966>
