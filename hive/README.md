@@ -39,6 +39,12 @@ Following directories will be created
 .../employees/country=CA/state=BC
 ``` 
 ### CLI
+
+The hive when invoked without the -i option will attempt to load $HIVE_HOME/bin/.hiverc and $HOME/.hiverc as initialization files.
+
+set mapred.reduce.tasks=32
+
+
 <https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Cli>
 
 <http://dwgeek.com/hiveserver2-beeline-command-line-shell-options-examples.html/>
