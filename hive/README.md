@@ -386,11 +386,12 @@ But what happens if you use let's say 256 buckets and the field you're bucketing
 (for instance, it's a US state, so can be only 50 different values) ? 
 You'll have 50 buckets with data, and 206 buckets with no data.
 
+```
 CREATE TABLE table_name PARTITIONED BY (partition1 data_type, partition2 data_type,….) 
 CLUSTERED BY (column_name1, column_name2, …) 
 SORTED BY (column_name [ASC|DESC], …)] 
 INTO num_buckets BUCKETS;
-
+```
 Partitions can dramatically cut the amount of data you're querying.
  if you want to query only from a certain date forward, the partitioning by year/month/day is going to dramatically cut the amount of IO.
 bucketing can speed up joins with other tables that have exactly the same bucketing, 
@@ -408,12 +409,12 @@ while you can bucket on only one field.
 
 Hive HCatalog Streaming API
 Traditionally adding new data into Hive requires gathering a large amount of data onto HDFS and then periodically adding a new partition. This is essentially a “batch insertion”. Insertion of new data into an existing partition is not permitted. Hive Streaming API allows data to be pumped continuously into Hive. The incoming data can be continuously committed in small batches of records into an existing Hive partition or table. Once data is committed it becomes immediately visible to all Hive queries initiated subsequently.
-
+```
 hive-site.xml to enable ACID support for streaming:
 hive.txn.manager = org.apache.hadoop.hive.ql.lockmgr.DbTxnManager
 hive.compactor.initiator.on = true (See more important details here)
 hive.compactor.worker.threads > 0 
-
+```
 ## Cost based optimizer Calcite 
 <https://cwiki.apache.org/confluence/display/Hive/Cost-based+optimization+in+Hive>
 
@@ -431,7 +432,9 @@ Vectorization allows Hive to process a batch of rows together instead of process
 hive.vectorized.execution.enabled=true.
 
 ## Bucketing
-(SET hive.enforce.bucketing=true;) every time before writing data to the bucketed table. To leverage the bucketing in the join operation we should SET hive.optimize.bucketmapjoin=true. This setting hints to Hive to do bucket level join during the map stage join. It also reduces the scan cycles to find a particular key because bucketing ensures that the key is present in a certain bucket.
+``SET hive.enforce.bucketing=true``
+
+every time before writing data to the bucketed table. To leverage the bucketing in the join operation we should SET hive.optimize.bucketmapjoin=true. This setting hints to Hive to do bucket level join during the map stage join. It also reduces the scan cycles to find a particular key because bucketing ensures that the key is present in a certain bucket.
 
 
 ## Join algorithms in Hive
@@ -449,6 +452,7 @@ Use Mappers to do the parallel sort of the tables on the join keys, which are th
 
 ### Map Join
 SELET /* +MAPJOIN(a,b) */
+
 Useful for star schema joins, this joining algorithm keeps all of the small tables (dimension tables) in memory in all of the mappers and big table (fact table) is streamed over it in the mapper. This avoids shuffling cost that is inherent in Common-Join. For each of the small table (dimension table) a hash table would be 
 
 Map joins are really efficient if a table on the other side of a join is small enough to fit in the memory.
@@ -466,7 +470,8 @@ http://hortonworks.com/blog/apache-tez-a-new-chapter-in-hadoop-data-processing/
 
 
 
-## configuration
+## Configuration
+```
 hive-site.xml
 hive.execution.engine = mr tez spark
 hive.execution.mode = container llap
@@ -474,20 +479,19 @@ hive.exec.max.created.files
 hive.exec.max.dynamic.partitions.pernode (default value being 100) is the maximum dynamic partitions that can be created by each mapper or reducer.
 
 hive.exec.max.created.files 
-
 hive.exec.max.dynamic.partitions
-
 hive.merge.mapfiles=true 
-
 hive.merge.mapredfiles=true
 
-hive> set mapred.reduce.tasks=32;
-
-ensure the bucketing flag is set (SET hive.enforce.bucketing=true;) 
+hive.mapred.reduce.tasks=32;
+```
+Ensure the bucketing flag is set
+```SET hive.enforce.bucketing=true```
 every time before we write data to the bucketed table.
-
+```
 SET hive.exce.parallel=true;
-complex Hive queries commonly are translated to a number of map reduce jobs that are executed by default sequentially. Often though some of a query’s map reduce stages are not interdependent and could be executed in parallel.
+```
+Complex Hive queries commonly are translated to a number of map reduce jobs that are executed by default sequentially. Often though some of a query’s map reduce stages are not interdependent and could be executed in parallel.
 
 They then can take advantage of spare capacity on a cluster and improve cluster utilization while at the same time reduce the overall query executions time. The configuration in Hive to change this behaviour is a merely switching a single flag SET hive.exce.parallel=true;.
 
