@@ -1,3 +1,8 @@
+
+### AWS EMR
+<https://aws.amazon.com/premiumsupport/knowledge-center/logs-hive-queries-amazon-emr/>
+
+
 hive.support.sql11.reserved.keywords to TRUE. 
 <https://cwiki.apache.org/confluence/display/Hive/HiveCounters>
 <https://cwiki.apache.org/confluence/display/Hive/LanguageManual+VariableSubstitution>
