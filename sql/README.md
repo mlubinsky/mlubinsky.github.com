@@ -2,6 +2,8 @@
 
  <https://stackoverflow.com/questions/58828417/how-to-avoid-calculating-the-same-expression-several-times-in-sql>
  
+ <https://habr.com/ru/post/474458/> . Нарастающий (накопительный) итог 
+ 
  <https://towardsdatascience.com/anomaly-detection-with-sql-7700c7516d1d> Anomaly detection with SQL
 
  <https://blog.jooq.org/2016/04/25/10-sql-tricks-that-you-didnt-think-were-possible/>
