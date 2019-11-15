@@ -10,6 +10,9 @@
 
 <https://www.cybertec-postgresql.com/en/joining-data-from-multiple-postgres-databases/>
 
+## Postgres 12
+<https://rob.conery.io/2019/10/24/virtual-computed-columns-in-postgresql-12/>
+
 ## Pub/Subscribe
 
 <https://layerci.com/blog/postgres-is-the-answer/>
