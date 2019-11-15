@@ -179,7 +179,13 @@ analyze table tweets compute statistics for columns;
 
 set hive.execution.engine=tez
 
-SET hive.exec.parallel=true;
+
+### Parallel execution
+Hive queries are commonly translated into a number of stages that are executed by the default sequence. These stages are not always dependent on each other. Instead, they can run in parallel to reduce the overall job running time. We can enable this feature with the following settings and set the expected number of jobs running in parallel:
+
+SET hive.exec.parallel=true; -- default false
+SET hive.exec.parallel.thread.number=16; -- default 8
+
 
 
 
