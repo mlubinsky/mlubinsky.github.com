@@ -24,6 +24,8 @@
 
 ## multiprocessing vs threading
 
+<https://habr.com/ru/company/ruvds/blog/475246/>
+
 <http://pljung.de/posts/easy-concurrency-in-python/> . concurrency
 
 multiprocessing vs threading
