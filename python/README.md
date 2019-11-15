@@ -34,6 +34,8 @@ multiprocessing vs threading
 
 ## Other topics
 
+<https://opensource.com/article/19/11/awk-to-python>
+
 <https://habr.com/ru/company/edison/blog/474622/> . Libs
 
 <http://blog.rtwilson.com/five-new-ish-python-things-part-1/> 
