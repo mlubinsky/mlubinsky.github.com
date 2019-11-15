@@ -65,6 +65,9 @@ http://blog.pyviz.org/
 
 
 ### Visualization on desktop
+
+<https://wci.llnl.gov/simulation/computer-codes/visit>
+
 <https://veusz.github.io/>
 
 <http://www.wizardmac.com/>
