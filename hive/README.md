@@ -2,6 +2,9 @@
 ### AWS EMR
 <https://aws.amazon.com/premiumsupport/knowledge-center/logs-hive-queries-amazon-emr/>
 
+How to set variables in Hive script:
+<https://stackoverflow.com/questions/12464636/how-to-set-variables-in-hive-scripts>
+
 
 hive.support.sql11.reserved.keywords to TRUE. 
 <https://cwiki.apache.org/confluence/display/Hive/HiveCounters>
