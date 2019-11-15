@@ -63,6 +63,8 @@ pyenv, poetry, black, flake8, isort, pre-commit, pytest, coverage, tox, Azure Pi
 
 <https://www.pythonforthelab.com/blog/complete-guide-to-imports-in-python-absolute-relative-and-more/>
 
+<http://python-notes.curiousefficiency.org/en/latest/python_concepts/import_traps.html>
+
 ## defaultdict
 
 Task: group words by their 1st letter.
