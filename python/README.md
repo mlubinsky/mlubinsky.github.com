@@ -1,10 +1,14 @@
 ## Books
 
+<https://pythonbooks.org/>
+
 <https://knowledgeisle.com/wp-content/uploads/2019/10/Serious-Python_-2019.pdf> Serious Python
 
 <https://effectivepython.com/2019/10/22/memoryview-bytearray-zero-copy-interactions>  Effective Python 2nd ed
 
 <https://www.amazon.com/Pro-Python-Features-Professional-Development-ebook/dp/B07PQBH4LL/>
+
+<https://www.packtpub.com/programming/python-parallel-programming-cookbook> 
 
 <https://www.amazon.com/gp/product/1617295981>   Classic Computer Science Problems in Python
 
@@ -24,6 +28,8 @@
 
 ## multiprocessing vs threading
 
+<<https://www.packtpub.com/programming/python-parallel-programming-cookbook> >
+
 <https://habr.com/ru/company/ruvds/blog/475246/>
 
 <http://pljung.de/posts/easy-concurrency-in-python/> . concurrency
@@ -33,6 +39,8 @@ multiprocessing vs threading
 
 
 ## Other topics
+
+<https://github.com/benfred/py-spy>  py-spy: Sampling profiler for Python programs
 
 <https://opensource.com/article/19/11/awk-to-python>
 
