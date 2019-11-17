@@ -6,6 +6,8 @@
 
 <https://effectivepython.com/2019/10/22/memoryview-bytearray-zero-copy-interactions>  Effective Python 2nd ed
 
+<http://shop.oreilly.com/product/0636920268505.do> High Performance Python
+
 <https://www.amazon.com/Pro-Python-Features-Professional-Development-ebook/dp/B07PQBH4LL/>
 
 <https://www.packtpub.com/programming/python-parallel-programming-cookbook> 
