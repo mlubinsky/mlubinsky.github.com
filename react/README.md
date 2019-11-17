@@ -124,6 +124,12 @@ const App = (props) => {
   )
 }
 ```
+useState() hook:
+Adding state to a functional component requires 4 steps: enabling the state, initializing, reading and updating.
+
+<https://dmitripavlutin.com/react-usestate-hook-guide/>
+
+
 ## Class components and state
 <https://reactjs.org/docs/react-component.html>
 
