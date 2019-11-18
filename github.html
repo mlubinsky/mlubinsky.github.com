@@ -24,6 +24,11 @@ git rebase -i HEAD~[NUMBER OF COMMITS]
 
  You mark a commit as squashable by changing the work pick into squash next to it (or s )
 Save the file and close the editor. 
+
+pick b1339db Fixed issue #421
+squash cc4f2b5 Didn't work, trying something else
+squash 7729f48 Fixed typo
+squash b7c864c Seriously, #421 is fixed now
  
  If you've already pushed commits to GitHub, and then squash them locally, you will have to force the push to your branch:
 
