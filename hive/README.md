@@ -59,6 +59,11 @@ set mapred.reduce.tasks=32
    
 ## Performance Tuning
 
+it’s important to know which table is the largest and put it last in the
+JOIN clause, or use the directive
+```
+/* streamtable(table_name) */ 
+```
 <https://dzone.com/articles/how-to-improve-hive-query-performance-with-hadoop>
 
 ### Use Tez Engine
