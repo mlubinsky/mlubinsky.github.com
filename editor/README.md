@@ -11,7 +11,9 @@
 
 <https://www.draw.io/>
 
-https://news.ycombinator.com/item?id=21513337
+<https://news.ycombinator.com/item?id=21564990>
+
+<https://news.ycombinator.com/item?id=21513337>
 
 <https://avdi.codes/tools-for-turning-descriptions-into-diagrams/>
 
