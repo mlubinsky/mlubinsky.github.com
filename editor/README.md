@@ -3,6 +3,10 @@
 <https://www.freecodecamp.org/news/the-guide-to-using-eslint-and-prettier-in-a-react-app/>
 
 
+## Code explorer:
+
+<https://www.sourcetrail.com/>
+
 ## Dark mode
 
 <https://draculatheme.com/>
