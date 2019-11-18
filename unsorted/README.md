@@ -15,6 +15,8 @@
 <https://news.ycombinator.com/item?id=20801847> not technical podcasts
 ## Gifts
 
+<https://5econds.com/products/multipurpose-mobile-phone-bracket>  iPhone holder
+
 <https://www.icanvas.com/> Painting: Eric Waugh, Gustav Klimt 
 
 <https://www.greatbigcanvas.com/> Painting
