@@ -13,12 +13,15 @@ git commit --amend --no-edit
 
 <h2> squash</h2>
 To squash four commits into one:
+https://blog.carbonfive.com/2017/08/28/always-squash-and-rebase-your-git-commits/
 https://github.com/todotxt/todo.txt-android/wiki/squash-all-commits-related-to-a-single-issue-into-a-single-commit
 
 https://www.internalpointers.com/post/squash-commits-into-one-git
 
 git log --oneline
-git rebase -i HEAD~4 .  -it will invoke editor
+git rebase -i HEAD~4 .  - 4 commits it will invoke editor
+git rebase -i HEAD~[NUMBER OF COMMITS]
+
  You mark a commit as squashable by changing the work pick into squash next to it (or s )
 Save the file and close the editor. 
  
