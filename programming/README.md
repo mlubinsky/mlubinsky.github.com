@@ -29,6 +29,15 @@
 
 ## Func Programming
 
+Product types allow you to have more than one value in a single structure, at the same time. 
+We call them ``product types`` because we can calculate the number of possible values using multiplication. 
+Example: struct ( x boolean, y boolean }  has 4 possible combinations
+
+Sum types are types where your value must be one of a fixed set of options. You may have seen enum types in languages like C# or Java. Sum types are similar, but more flexible.
+But why are they called sum types? Well, if the value can only be one of a fixed set of options, then we count the possible values using addition. For example, booleans are a sum type. They cam be either true or false. Not both at the same time. And we count the values by addition 1 + 1 = 2.
+
+<http://fprog.ru/>
+
 <https://www.youtube.com/watch?v=gHiyzctYqZ0&t=4s&index=19&list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_>
 
 <https://www.edx.org/course/introduction-to-functional-programming>
