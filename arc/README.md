@@ -18,9 +18,11 @@
 ## Stream vs batch
 <https://github.com/voorloopnul/pipeframe>  Python  process data (stream or batch) taking advantage of python multiprocessing library.
 
+<https://petl.readthedocs.io/> . petl transformation pipelines make minimal use of system memory and can scale to millions of rows if speed is not a priority. However if you are working with very large datasets and/or performance-critical applications then other packages may be more suitable, e.g., see pandas, pytables, bcolz and blaze. 
+
 https://github.com/olirice/flupy . Fluent data pipelines for python and your shell
 
-https://github.com/robinhood/faust . Python Stream Processing
+<https://github.com/robinhood/faust> . Python Stream Processing
 
 <https://github.com/gazette/core> Gazette is infrastructure for building streaming platforms: platforms composed of loosely coupled services, built and operated by distinct teams, managing and serving large amounts of state, but all communicating continuously through a common catalog of streamed data. It features a lightweight container & cloud-native architecture, high availability, and integrates elegantly with existing batch workflows.
 
