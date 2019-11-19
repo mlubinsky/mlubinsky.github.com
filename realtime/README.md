@@ -178,7 +178,8 @@ https://gist.github.com/vitormeriat/b6de7aa0a28af2b45f15c3d67721e051
 
 <https://able.bio/dbmzzo/intro-to-svg-for-react-developers--56cmmcy>
 
-## Canvas implementation over an SVG implementation
+## Canvas vs SVG implementation
+<https://habr.com/ru/company/ruvds/blog/476292/>
 
 SVG is way slower than canvas though
 Advantage SVG: if you want to do some advanced interactivity. That can sometimes be easier in SVG.
