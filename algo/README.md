@@ -2,6 +2,7 @@
 
 <https://rcoh.me/posts/linear-time-median-finding/>
 
+<https://habr.com/ru/company/otus/blog/476510/> Шахматный Bitboard
 
 <https://mungingdata.com/apache-spark/hyperloglog-count-distinct/> HyperLogLog for approximate count distinct
 
