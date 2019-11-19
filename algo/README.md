@@ -43,6 +43,12 @@
 
 <https://habr.com/ru/company/skillbox/blog/462979/>
 
+## Algebraic data types
+
+<https://nrinaudo.github.io/scala-best-practices/definitions/adt.html>
+
+<https://jrsinclair.com/articles/2019/algebraic-data-types-what-i-wish-someone-had-explained-about-functional-programming/>
+
 <https://blog.softwaremill.com/algebraic-data-types-in-four-languages-858788043d4e> Algebraic data types
 
 ## Fibonacci
