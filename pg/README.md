@@ -10,6 +10,8 @@
 
 <https://www.cybertec-postgresql.com/en/joining-data-from-multiple-postgres-databases/>
 
+<https://hakibenita.com/fast-load-data-python-postgresql>
+
 ## Postgres 12
 <https://rob.conery.io/2019/10/24/virtual-computed-columns-in-postgresql-12/>
 
