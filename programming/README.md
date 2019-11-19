@@ -29,6 +29,8 @@
 
 ## Func Programming
 
+<https://www.edx.org/course/introduction-to-functional-programming>
+
 <https://www.youtube.com/watch?v=QyJZzq0v7Z4>
 
 <https://news.ycombinator.com/item?id=21280429>
