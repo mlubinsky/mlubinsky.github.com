@@ -90,6 +90,16 @@ cp airflow_test.py ~/airflow/dags/
 
 <https://medium.com/@dustinstansbury/understanding-apache-airflows-key-concepts-a96efed52b1a>
 
+
+<https://eng.lyft.com/running-apache-airflow-at-lyft-6e53bb8fccff>
+
+Airflow provides various configurables to tune the DAG performance. At Lyft, we suggest users tune the following variables:
+* Parallelism: This variable controls the number of task instances that the Airflow worker can run simultaneously. Users could increase the parallelism variable in the Airflow.cfg. We normally suggest users increase this value when doing backfill.
+* Concurrency: The Airflow scheduler will run no more than concurrency task instances for your DAG at any given time. Concurrency is defined in your Airflow DAG as a DAG input argument. If you do not set the concurrency on your DAG, the scheduler will use the default value from the dag_concurrency entry in your Airflow.cfg.
+* max_active_runs: Airflow will run no more than max_active_runs DagRuns of your DAG at a given time. If you do not set the max_active_runs on your DAG, Airflow will use the default value from the max_active_runs_per_dag entry in your Airflow.cfg. We suggest users not to set depends_on_past to true and increase this configuration during backfill.
+* Pool: Airflow pool is used to limit the execution parallelism. Users could increase the priority_weight for the task if it is a critical one.
+
+
 ### Tasks
 Tasks are user-defined activities ran by the operators. They can be functions in Python or external scripts that you can call. Tasks are expected to be idempotent — no matter how many times you run a task, it needs to result in the same outcome for the same input parameters.
 
