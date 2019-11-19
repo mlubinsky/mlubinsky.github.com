@@ -29,6 +29,8 @@
 
 ## Func Programming
 
+<https://www.youtube.com/watch?v=gHiyzctYqZ0&t=4s&index=19&list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_>
+
 <https://www.edx.org/course/introduction-to-functional-programming>
 
 <https://www.youtube.com/watch?v=QyJZzq0v7Z4>
