@@ -45,6 +45,8 @@
 
 ## Algebraic data types
 
+<https://hn.algolia.com/?q=algebraic>
+
 <https://nrinaudo.github.io/scala-best-practices/definitions/adt.html>
 
 <https://jrsinclair.com/articles/2019/algebraic-data-types-what-i-wish-someone-had-explained-about-functional-programming/>
