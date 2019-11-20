@@ -64,6 +64,9 @@ a utility that was introduced to allow tasks to exchange small pieces of metadat
 <https://medium.com/geoblinktech/bring-sanity-to-your-data-pipelines-with-apache-airflow-3c9906aac77c>
 
 ### Executors
+
+<https://www.sicara.ai/blog/2019-04-08-apache-airflow-celery-workers>
+
 Inside airflow.cfg the executor is defined:
 
  Airflow proposes several executor out of the box, from the simplest to the most full-featured:
