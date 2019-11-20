@@ -1,5 +1,6 @@
 ## cloud service: common Architecture Do's
 
+<https://engineering.grab.com/designing-resilient-systems-part-1> circuit breaker
 <https://danielsada.tech/blog/cloud-services-dos/>
 
 <https://news.ycombinator.com/item?id=21515772>
