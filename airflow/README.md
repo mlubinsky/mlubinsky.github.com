@@ -1,4 +1,6 @@
-https://airflow.apache.org/
+<https://airflow.apache.org/>
+
+<https://blog.godatadriven.com/early-access-of-apache-airflow-book>
 
 <https://github.com/apache/airflow>
 
