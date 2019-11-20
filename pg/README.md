@@ -12,6 +12,9 @@
 
 <https://hakibenita.com/fast-load-data-python-postgresql>
 
+
+<https://pgdash.io/blog/scaling-postgres.html> .  configuration
+
 ## Postgres 12
 <https://rob.conery.io/2019/10/24/virtual-computed-columns-in-postgresql-12/>
 
