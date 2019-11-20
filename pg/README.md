@@ -115,6 +115,8 @@ Aggregation and summarizing utilities (WIP).
 
 ## TimescalDB
 
+<https://blog.timescale.com/blog/achieving-optimal-query-performance-with-a-distributed-time-series-database-on-postgresql/>
+
 <https://habr.com/ru/company/oleg-bunin/blog/470902/>
 
 ## Indexes
