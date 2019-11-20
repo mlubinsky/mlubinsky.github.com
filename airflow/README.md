@@ -6,7 +6,9 @@
 
 <https://blog.godatadriven.com/open-source-airflow-local-development>
 
-<https://www.manning.com/books/data-pipelines-with-apache-airflow>
+<https://www.manning.com/books/data-pipelines-with-apache-airflow> .  BOOK
+
+<https://cwiki.apache.org/confluence/display/AIRFLOW/Airflow+Links> Links
 
 http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/
 
