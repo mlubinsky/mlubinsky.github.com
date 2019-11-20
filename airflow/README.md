@@ -45,6 +45,9 @@ This service is responsible for:
 * setting the final DAG states in the database
 
 ### execution_date 
+
+<https://stackoverflow.com/questions/33126159/airflow-not-scheduling-correctly-python>
+
 is not interpreted by Airflow as the start time of the DAG, but rather the end of an interval capped by the DAG’s start time. 
 Ad-hoc runs are now possible as long as they don’t share an execution_date with any other run.
 
