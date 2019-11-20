@@ -8,6 +8,10 @@
 
 <https://www.manning.com/books/data-pipelines-with-apache-airflow>
 
+http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/
+
+https://github.com/geosolutions-it/evo-odas/wiki/Airflow---about-subDAGs,-branching-and-xcom
+
 <https://github.com/apache/airflow>
 
 <http://pydoc.net/apache-airflow>
@@ -47,6 +51,12 @@ Ad-hoc runs are now possible as long as they don’t share an execution_date wit
 
 ### XCom
 a utility that was introduced to allow tasks to exchange small pieces of metadata. This is a useful feature if you want task A to tell task B that a large dataframe was written to a known location in cloud storage
+
+### Hooks
+
+<https://airflow.apache.org/concepts.html#hooks>
+
+<https://medium.com/geoblinktech/bring-sanity-to-your-data-pipelines-with-apache-airflow-3c9906aac77c>
 
 ### Executors
 Inside airflow.cfg the executor is defined:
