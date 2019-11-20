@@ -24,6 +24,18 @@ pip install -U apache-airflow
 
 DAGs are a high-level outline that define the dependent and exclusive tasks that can be ordered and scheduled.
 
+
+### Scheduler  
+This service is responsible for:
+* reparsing the DAG folder every few seconds
+* checking DAG schedules to determine if a DAG is ready to run
+* checking all Task dependencies to determine if any Tasks are ready to be run
+* setting the final DAG states in the database
+
+### execution_date 
+is not interpreted by Airflow as the start time of the DAG, but rather the end of an interval capped by the DAG’s start time. 
+Ad-hoc runs are now possible as long as they don’t share an execution_date with any other run.
+
 ### backfilling 
 - running workflows back in time. This is only possible of course if external dependencies such as the availability of data can be met. What makes backfilling especially useful is the ability to rerun partial workflows. If the fetching of data is not possible back in time or is a very lengthy process you’d like to avoid, you can rerun partial workflows with backfilling.
 
