@@ -21,6 +21,9 @@ pip install -U apache-airflow
 
 DAGs are a high-level outline that define the dependent and exclusive tasks that can be ordered and scheduled.
 
+### backfilling 
+- running workflows back in time. This is only possible of course if external dependencies such as the availability of data can be met. What makes backfilling especially useful is the ability to rerun partial workflows. If the fetching of data is not possible back in time or is a very lengthy process you’d like to avoid, you can rerun partial workflows with backfilling.
+
 ### Executors
 Inside airflow.cfg the executor is defined:
 
