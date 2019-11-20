@@ -1,3 +1,5 @@
+<https://codereview.stackexchange.com/questions/tagged/amazon-web-services>
+
 Для подключения к инстансу EC2 необходим закрытый ключ. Скачайте его (расширение .pem) из панели управления Amazon EC2 и измените разрешения 
 
 chmod 400 my-ec2-ssh-key.pem 
