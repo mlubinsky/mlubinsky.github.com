@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/company/ruvds/blog/471040/>
 
+<https://habr.com/ru/post/476696/> Как создать и развернуть Full-Stack React-приложение
+
 ## React and D3 
 
 <https://reactfordataviz.com/> 
