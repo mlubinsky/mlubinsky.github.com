@@ -17,17 +17,15 @@ chmod 400 my-ec2-ssh-key.pem
 
 https://aws.amazon.com/about-aws/whats-new/2019/09/aws-transfer-for-sftp-now-supports-logical-directories-for-amazon-s3/
 
-## EMR
+### EMR
 
 Hive Version for emr-5.21.1 is: 2.3.4
 
-  
 <https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hive.html>
 
 <https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew-history.html>
 
 <https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-5x.html>
-
 
 ### A command line utility that allows you to stream data from multiple S3 objects directly into your terminal
 
@@ -38,6 +36,25 @@ Hive Version for emr-5.21.1 is: 2.3.4
 <https://www.transposit.com/blog/2019.08.22-try-athena-easily-with-a-transposit-app/?c=lob>
 
 <https://www.mungingdata.com/aws/athena-spark-best-friends>
+
+<https://habr.com/ru/company/mailru/blog/456392/>
+
+ ## Redshift
+ 
+ <https://github.com/JefClaes/amazon-redshift-fundamentals> 
+ 
+ <https://tech.iheart.com/how-we-leveraged-redshift-spectrum-for-elt-in-our-land-of-etl-cf01edb485c0>
+ 
+ <https://blog.panoply.io/aws-redshift-tutorial>
+<https://www.intermix.io/blog/short-query-acceleration/>
+<https://medium.com/teads-engineering/give-meaning-to-100-billion-events-a-day-part-ii-how-we-use-and-abuse-redshift-to-serve-our-data-bc23d2ed3e07>
+<https://www.intermix.io/blog/14-data-pipelines-amazon-redshift/>
+<https://medium.com/@thejaravi/how-we-leveraged-redshift-spectrum-for-elt-in-our-land-of-etl-cf01edb485c0>
+
+ Redshift Spectrum is new add-on service for Redshift that Amazon introduced mid-2017. It allows you to leverage Redshift to query data directly on S3. Redshift Spectrum is a good option for those who already have/work with Redshift. For those who do not, take a look at Athena. Athena is much like Redshift Spectrum with the exception of the chosen execution engine (Athena uses Presto) whereas Spectrum uses Redshift. It should be noted that Spectrum also follows pay-per-query pricing model like Athena.
+Let’s look at how Redshift and Spectrum communicate with each other, how tables are created on top of stores such as S3 and just how much interoperability is provided.
+Spectrum needs an external meta store for the data catalog to maintain table definitions; we used a Hive meta store for this purpose. Our Hive/Spectrum meta store is simply a RDS instance running MariaDB. Once we setup Spectrum to talk with our Redshift cluster and use the newly created schema space in the Hive meta store, any external table created in this schema using Hive is visible and usable immediately from Redshift. You can query these tables directly from Redshift and Redshift/Spectrum will automatically move the required portion of data (based on the query) on to Redshift cluster and execute it there.
+ 
 
 ## REST API
 <https://habr.com/post/435180/> Бессерверный REST API 
@@ -277,22 +294,7 @@ Sam-local использует docker-контейнер для эмуляции
  
  <https://www.jefclaes.be/2017/12/passing-aws-certified-solutions.html>  AWS exam
  
- ## Redshift
- 
- <https://github.com/JefClaes/amazon-redshift-fundamentals> 
- 
- <https://tech.iheart.com/how-we-leveraged-redshift-spectrum-for-elt-in-our-land-of-etl-cf01edb485c0>
- 
- <https://blog.panoply.io/aws-redshift-tutorial>
-<https://www.intermix.io/blog/short-query-acceleration/>
-<https://medium.com/teads-engineering/give-meaning-to-100-billion-events-a-day-part-ii-how-we-use-and-abuse-redshift-to-serve-our-data-bc23d2ed3e07>
-<https://www.intermix.io/blog/14-data-pipelines-amazon-redshift/>
-<https://medium.com/@thejaravi/how-we-leveraged-redshift-spectrum-for-elt-in-our-land-of-etl-cf01edb485c0>
 
- Redshift Spectrum is new add-on service for Redshift that Amazon introduced mid-2017. It allows you to leverage Redshift to query data directly on S3. Redshift Spectrum is a good option for those who already have/work with Redshift. For those who do not, take a look at Athena. Athena is much like Redshift Spectrum with the exception of the chosen execution engine (Athena uses Presto) whereas Spectrum uses Redshift. It should be noted that Spectrum also follows pay-per-query pricing model like Athena.
-Let’s look at how Redshift and Spectrum communicate with each other, how tables are created on top of stores such as S3 and just how much interoperability is provided.
-Spectrum needs an external meta store for the data catalog to maintain table definitions; we used a Hive meta store for this purpose. Our Hive/Spectrum meta store is simply a RDS instance running MariaDB. Once we setup Spectrum to talk with our Redshift cluster and use the newly created schema space in the Hive meta store, any external table created in this schema using Hive is visible and usable immediately from Redshift. You can query these tables directly from Redshift and Redshift/Spectrum will automatically move the required portion of data (based on the query) on to Redshift cluster and execute it there.
- 
  
  <https://www.rainerhahnekamp.com/en/single-instance-ecs-setup/>
  
