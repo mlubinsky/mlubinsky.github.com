@@ -1,5 +1,9 @@
 <https://habr.com/ru/post/472816/> JS patterns
 
+<https://objectexplorer.netlify.com/>
+
+<https://arrayexplorer.netlify.com/>
+
 <https://habr.com/ru/post/475074/> Введение в ECMAScript 2017 (ES8)
 
 Primitive types: это boolean, null, undefined, Number, String, Symbol, BigInt.
