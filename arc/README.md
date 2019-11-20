@@ -4,6 +4,8 @@
 
 <https://news.ycombinator.com/item?id=21515772>
 
+<https://github.com/adilkhash/Data-Engineering-HowTo>
+
 ## Data Modeling
 
 <https://github.com/linkedin/WhereHows/wiki>
