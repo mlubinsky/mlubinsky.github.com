@@ -10,6 +10,9 @@
 
 <https://www.sicara.ai/blog/2019-01-28-automate-aws-tasks-thanks-to-airflow-hooks>  AirFlow Hooks
 
+
+<https://medium.com/the-prefect-blog/why-not-airflow-4cfa423299c4> Why Not Airflow?
+
 ```
 pip install apache-airflow[celery]
 
