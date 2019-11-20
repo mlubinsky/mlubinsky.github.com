@@ -1,6 +1,8 @@
 <https://airflow.apache.org/>
 
-<https://blog.godatadriven.com/early-access-of-apache-airflow-book>
+<https://blog.godatadriven.com/open-source-airflow-local-development>
+
+<https://www.manning.com/books/data-pipelines-with-apache-airflow>
 
 <https://github.com/apache/airflow>
 
