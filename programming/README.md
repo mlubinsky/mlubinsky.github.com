@@ -30,6 +30,8 @@
 
 ## Func Programming
 
+<https://harrylaou.com/slides/AlgebrasInProgramming.pdf>
+
 Product types allow you to have more than one value in a single structure, at the same time. 
 We call them ``product types`` because we can calculate the number of possible values using multiplication. 
 Example: struct ( x boolean, y boolean }  has 4 possible combinations
