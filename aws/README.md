@@ -29,13 +29,15 @@ Hive Version for emr-5.21.1 is: 2.3.4
 <https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-5x.html>
 
 
-## A command line utility that allows you to stream data from multiple S3 objects directly into your terminal
+### A command line utility that allows you to stream data from multiple S3 objects directly into your terminal
 
 <https://news.ycombinator.com/item?id=21170652>
 <https://www.npmjs.com/package/s3st>
 
 ## Athena
 <https://www.transposit.com/blog/2019.08.22-try-athena-easily-with-a-transposit-app/?c=lob>
+
+<https://www.mungingdata.com/aws/athena-spark-best-friends>
 
 ## REST API
 <https://habr.com/post/435180/> Бессерверный REST API 
