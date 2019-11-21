@@ -5,6 +5,8 @@
 ```
 <https://stackexchange.com/sites>
 
+<https://habr.com/ru/post/476790/>  code streaming!
+
 <https://free-for.dev/#/>
 
 <https://greenteapress.com/wp/>
