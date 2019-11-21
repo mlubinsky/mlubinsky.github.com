@@ -69,6 +69,8 @@ multiprocessing vs threading
 <https://habr.com/ru/post/471618/> C++ fropm python
 
 ## Python tools
+
+<https://virtualenv.pypa.io/en/latest/> 
 pyenv, poetry, black, flake8, isort, pre-commit, pytest, coverage, tox, Azure Pipelines, sphinx, and readthedocs:
 
 <https://medium.com/georgian-impact-blog/python-tooling-makes-a-project-tick-181d567eea44>
