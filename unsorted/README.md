@@ -124,6 +124,10 @@ Live calculation in browser
 
 ## Be Happy
 
+<https://www.improveyoursocialskills.com/basic-social-skills-guide> .  Basic  social skills
+
+<https://news.ycombinator.com/item?id=21585235 >
+
 <https://sivers.org/ml> Meaning of life
   
  Nonviolent Communication
