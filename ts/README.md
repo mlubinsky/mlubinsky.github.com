@@ -1,3 +1,5 @@
+<https://www.coursera.org/learn/practical-time-series-analysis/home/welcome>
+
 ## Time Series DB
 
 <https://news.ycombinator.com/item?id=20760324> 
