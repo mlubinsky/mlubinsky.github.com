@@ -39,6 +39,8 @@ Amazon S3 is a simple key-based object store. When you store data, you assign a 
 ## Athena
 <https://www.transposit.com/blog/2019.08.22-try-athena-easily-with-a-transposit-app/?c=lob>
 
+<https://medium.com/swlh/tutorial-build-your-data-lake-using-aws-s3-athena-150c1aaa44cf>
+
 <https://www.mungingdata.com/aws/athena-spark-best-friends>
 
 <https://habr.com/ru/company/mailru/blog/456392/>
