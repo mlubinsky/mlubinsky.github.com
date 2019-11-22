@@ -6,6 +6,9 @@
 
 <https://medium.mybridge.co/>
 
+
+<https://habr.com/ru/post/474658/> choose right mouse!
+
 <https://teach-in.ru> . lectures (physics and math) from Moscow State University
 
 <https://openedu.ru/>
