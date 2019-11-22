@@ -13,6 +13,8 @@
 
 <https://standuply.com/how-to-use-slack> . Slack
 
+<http://harelba.github.io/q/index.html>   direct execution of SQL-like queries on CSVs/TSVs
+
 ## ETL
 
 <https://dataschool.com/data-governance/> . Book
