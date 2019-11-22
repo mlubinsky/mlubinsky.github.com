@@ -53,6 +53,8 @@ Amazon S3 is a simple key-based object store. When you store data, you assign a 
 <https://www.intermix.io/blog/short-query-acceleration/>
 <https://medium.com/teads-engineering/give-meaning-to-100-billion-events-a-day-part-ii-how-we-use-and-abuse-redshift-to-serve-our-data-bc23d2ed3e07>
 <https://www.intermix.io/blog/14-data-pipelines-amazon-redshift/>
+
+<https://www.intermix.io/blog/modern-etl-tools-for-amazon-redshift/>
 <https://medium.com/@thejaravi/how-we-leveraged-redshift-spectrum-for-elt-in-our-land-of-etl-cf01edb485c0>
 
  Redshift Spectrum is new add-on service for Redshift that Amazon introduced mid-2017. It allows you to leverage Redshift to query data directly on S3. Redshift Spectrum is a good option for those who already have/work with Redshift. For those who do not, take a look at Athena. Athena is much like Redshift Spectrum with the exception of the chosen execution engine (Athena uses Presto) whereas Spectrum uses Redshift. It should be noted that Spectrum also follows pay-per-query pricing model like Athena.
