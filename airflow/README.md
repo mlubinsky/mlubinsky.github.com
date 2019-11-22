@@ -34,6 +34,8 @@ pip install -U apache-airflow
 
 ```
 
+<https://medium.com/slido-dev-blog/automate-executing-aws-athena-queries-and-moving-the-results-around-s3-with-airflow-dd3603dc611d> Automate executing AWS Athena queries and moving the results around S3 with Airflow: 
+
 DAGs are a high-level outline that define the dependent and exclusive tasks that can be ordered and scheduled.
 
 
