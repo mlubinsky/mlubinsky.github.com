@@ -15,6 +15,8 @@
 
 <http://harelba.github.io/q/index.html>   direct execution of SQL-like queries on CSVs/TSVs
 
+<https://medium.com/@copyconstruct/best-of-2018-in-tech-talks-2970eb3097af>
+
 ## ETL
 
 <https://dataschool.com/data-governance/> . Book
