@@ -44,6 +44,8 @@ Amazon S3 is a simple key-based object store. When you store data, you assign a 
 
 <https://www.mungingdata.com/aws/athena-spark-best-friends>
 
+<https://medium.com/traackr-devs/athena-vs-q-battle-of-the-data-parsers-7c5a7b522b3f>
+
 <https://habr.com/ru/company/mailru/blog/456392/>
 
  ## Redshift
