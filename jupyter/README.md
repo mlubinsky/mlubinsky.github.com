@@ -220,6 +220,8 @@ https://www.kaggle.com/learn/overview  Pandas, TensorFlow, etc
 
 <https://habr.com/ru/post/456294/> One Hot Encoding
 
+<https://www.youtube.com/watch?v=irHhDMbw3xo> categorical encoding
+
 <https://www.youtube.com/watch?v=L7R4HUQ-eQ0>
 
 <http://scikit-learn.org/stable/tutorial/>
