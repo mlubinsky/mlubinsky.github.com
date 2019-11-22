@@ -1,6 +1,10 @@
 <https://www.cybertec-postgresql.com/en/blog/>
 
+### postgres on docker
 <https://pythonspeed.com/articles/faster-db-tests/> . postgres on docker
+https://towardsdatascience.com/tricks-for-postgres-and-docker-that-will-make-your-life-easier-fc7bfcba5082
+
+
 
 <https://techcommunity.microsoft.com/t5/Azure-Database-for-PostgreSQL/Architecting-petabyte-scale-analytics-by-scaling-out-Postgres-on/ba-p/969685>
 
