@@ -4,6 +4,8 @@
 
 <https://medium.com/liveramp-engineering/joining-petabytes-of-data-per-day-how-liveramp-powers-its-matching-product-fe7c0f440824> Joining Petabytes of Data Per Day
 
+<https://medium.com/liveramp-engineering/seeking-map-side-join-c2007f31fa14>  Map Site Join
+
 <https://danielsada.tech/blog/cloud-services-dos/>
 
 <https://news.ycombinator.com/item?id=21515772>
