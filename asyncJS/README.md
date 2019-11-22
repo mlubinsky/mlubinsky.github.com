@@ -2,6 +2,10 @@
 
 <https://evertpot.com/await-fluent-interfaces/>
 
+<https://developers.google.com/web/fundamentals/primers/async-functions>
+
+<https://ponyfoo.com/articles/understanding-javascript-async-await>
+
 ## Async await promises
 
 <https://habr.com/ru/post/475260/>
@@ -88,28 +92,41 @@ async function myFunction() {
 myFunction(); // returns a promise
 ```
 
-<https://www.tutespace.com/2019/06/javascript-difference-between-promises.html> \
-<https://habr.com/ru/post/462355/> \
-<https://blog.patricktriest.com/what-is-async-await-why-should-you-care/> \
-<https://www.youtube.com/watch?v=14hS7f8gyiw&feature=youtu.be> \
-<https://101node.io/blog/how-promises-actually-work-inside-out/> \
-<http://nikgrozev.com/2017/10/01/async-await/> \
-<https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5> \
-<http://callbackhell.com/> \
-<https://github.com/matt-jarrett/asynchronous-javascript-with-async-await/blob/master/README.md> \
+<https://www.tutespace.com/2019/06/javascript-difference-between-promises.html> 
+
+<https://habr.com/ru/post/462355/> 
+<https://blog.patricktriest.com/what-is-async-await-why-should-you-care/> 
+
+<https://www.youtube.com/watch?v=14hS7f8gyiw&feature=youtu.be>  
+<https://101node.io/blog/how-promises-actually-work-inside-out/> 
+
+<http://nikgrozev.com/2017/10/01/async-await/> 
+<https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5> 
+
+<http://callbackhell.com/> 
+
+<https://github.com/matt-jarrett/asynchronous-javascript-with-async-await/blob/master/README.md> 
+
 <https://medium.com/@daspinola/javascript-from-callbacks-to-async-await-1cc090ddad99>
 
  JavaScript  промисы.  озволяют заменить глубокую вложенность коллбэков словом .then. 
  async-функции работают «поверх» промисов. Эти функции не представляют собой качественно другие концепции. 
   
-<https://dev.to/ivanalejandro0/unraveling-callbacks-with-async-functions-5634> \
-<https://blog.bitsrc.io/understanding-javascript-async-and-await-with-examples-a010b03926ea> \
-<https://habr.com/ru/company/skillbox/blog/458950/>  \
-<https://developers.google.com/web/fundamentals/primers/async-functions> \
-<https://tproger.ru/translations/understanding-async-await-in-javascript/> \
-<https://www.betamark.com/blog/mistakes-using-javascript-promises/> \
-<https://news.ycombinator.com/item?id=20358970> \
-<https://blog.logrocket.com/handling-and-dispatching-events-with-node-js/> \
+<https://dev.to/ivanalejandro0/unraveling-callbacks-with-async-functions-5634> 
+
+<https://blog.bitsrc.io/understanding-javascript-async-and-await-with-examples-a010b03926ea> 
+
+<https://habr.com/ru/company/skillbox/blog/458950/>  
+
+<https://developers.google.com/web/fundamentals/primers/async-functions> 
+
+<https://tproger.ru/translations/understanding-async-await-in-javascript/> 
+
+<https://www.betamark.com/blog/mistakes-using-javascript-promises/> 
+
+<https://news.ycombinator.com/item?id=20358970> 
+<https://blog.logrocket.com/handling-and-dispatching-events-with-node-js/> 
+
 
 any function called with await has to be a returning promise or created with async
 ```
