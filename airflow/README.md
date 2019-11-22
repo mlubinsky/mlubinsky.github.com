@@ -23,6 +23,8 @@ https://github.com/geosolutions-it/evo-odas/wiki/Airflow---about-subDAGs,-branch
 <https://www.sicara.ai/blog/2019-01-28-automate-aws-tasks-thanks-to-airflow-hooks>  AirFlow Hooks
 
 
+<https://medium.com/walmartlabs/auditing-airflow-batch-jobs-73b45100045> Auditing Airflow
+
 <https://medium.com/the-prefect-blog/why-not-airflow-4cfa423299c4> Why Not Airflow?
 
 ```
