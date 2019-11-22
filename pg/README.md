@@ -14,6 +14,7 @@
 
 <https://hakibenita.com/fast-load-data-python-postgresql>
 
+<https://hakibenita.com/the-many-faces-of-distinct-in-postgre-sql> . DISTINCT
 
 <https://pgdash.io/blog/scaling-postgres.html> .  configuration
 
