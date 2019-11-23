@@ -1,8 +1,11 @@
 <https://www.cybertec-postgresql.com/en/blog/>
 
 ### postgres on docker
-<https://pythonspeed.com/articles/faster-db-tests/> . postgres on docker
-https://towardsdatascience.com/tricks-for-postgres-and-docker-that-will-make-your-life-easier-fc7bfcba5082
+<https://pythonspeed.com/articles/faster-db-tests/>  
+
+<https://towardsdatascience.com/tricks-for-postgres-and-docker-that-will-make-your-life-easier-fc7bfcba5082>
+
+<https://github.com/karlkeefer/pngr>
 
 
 
