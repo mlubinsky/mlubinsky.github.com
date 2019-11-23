@@ -1,5 +1,7 @@
 <https://airflow.apache.org/>
 
+<https://airflow-tutorial.readthedocs.io/>
+
 <https://github.com/godatadriven/whirl> . local development and testing of Apache Airflow workflows.
 
 <https://blog.godatadriven.com/testing-and-debugging-apache-airflow>
