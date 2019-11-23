@@ -8,6 +8,8 @@
 
 <https://www.manning.com/books/data-pipelines-with-apache-airflow> .  BOOK
 
+<https://medium.com/@tomaszdudek/yet-another-scalable-apache-airflow-with-docker-example-setup-84775af5c451>
+
 <https://cwiki.apache.org/confluence/display/AIRFLOW/Airflow+Links> Links
 
 http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/
