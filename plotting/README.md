@@ -5,6 +5,9 @@
 
 <https://news.ycombinator.com/item?id=20507592> 
 
+
+<https://datashader.org/>
+
 ## Python plotting
 
 <https://towardsdatascience.com/plotting-with-python-c2561b8c0f1f>
