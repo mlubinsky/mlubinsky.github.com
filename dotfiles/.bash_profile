@@ -1,5 +1,6 @@
 echo "hello from bash_profile"
 
+export LSCOLORS=GxFxCxDxBxegedabagaced
 alias ls='ls -G'
 alias ll='ls -lG
 
