@@ -1,4 +1,5 @@
 echo "hello from bash_profile"
+set -o vi
 
 export LSCOLORS=GxFxCxDxBxegedabagaced
 alias ls='ls -G'
