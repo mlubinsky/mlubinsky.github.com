@@ -1,4 +1,6 @@
 
+<https://alexandrugris.github.io/distributed/systems/2017/06/11/kafka-patterns.html> Kafka in Docker
+
 <https://habr.com/ru/post/466385/>  Изучение механики обмена сообщениями посредством ActiveMQ и Kafka. Глава 1
 
 <https://www.jesse-anderson.com/2019/10/why-i-recommend-my-clients-not-use-ksql-and-kafka-streams/> Do not use Kafka Stream and KSQL
