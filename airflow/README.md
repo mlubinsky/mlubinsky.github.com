@@ -4,6 +4,8 @@
 
 <https://tech.marksblogg.com/install-and-configure-apache-airflow.html>
 
+<https://tech.marksblogg.com/airflow-postgres-redis-forex.html>
+
 <https://github.com/godatadriven/whirl> . local development and testing of Apache Airflow workflows.
 
 <https://blog.godatadriven.com/testing-and-debugging-apache-airflow>
