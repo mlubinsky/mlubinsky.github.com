@@ -6,6 +6,8 @@
 
 <https://youtu.be/e-_tsR0hVLQ> Flask
 
+<https://habr.com/ru/post/477126/> . Flask +ReactAmin
+
 
 ## Fast API 
 
