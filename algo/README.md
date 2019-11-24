@@ -1,5 +1,7 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://yurichev.com/blog/qsort/> quick sort
+
 <https://rcoh.me/posts/linear-time-median-finding/>
 
 <https://habr.com/ru/company/otus/blog/476510/> Шахматный Bitboard
