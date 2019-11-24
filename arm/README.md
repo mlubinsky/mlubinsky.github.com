@@ -1,5 +1,8 @@
 <https://habr.com/ru/post/473424/> . ARM - графические решения Mali-G57 Valhall и Mali-D37, нейропроцессоры Ethos-N57 и N37
 
+https://arxiv.org/abs/1911.05289 . 
+The Deep Learning Revolution and Its Implications for Computer Architecture and Chip Design
+
 <https://github.com/ARM-software/ML-examples>
 
 <https://www.youtube.com/watch?v=_6sh097Dk5k>
