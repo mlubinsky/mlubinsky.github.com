@@ -86,6 +86,8 @@ server.listen(port, hostname, () => {
 
 <https://github.com/cdimascio/generator-express-no-stress>
 
+<https://expressjs.com/en/guide/using-middleware.html>
+
 ```
 var express = require("express");
 
