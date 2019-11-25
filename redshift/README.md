@@ -1,10 +1,9 @@
 
-
 <https://github.com/JefClaes/amazon-redshift-fundamentals>
 
+<https://blog.panoply.io/aws-redshift-tutorial>
 
-
-<https://blog.panoply.io/aws-redshift-tutorial https://www.intermix.io/blog/short-query-acceleration/>
+<https://www.intermix.io/blog/short-query-acceleration/>
 
 <https://medium.com/teads-engineering/give-meaning-to-100-billion-events-a-day-part-ii-how-we-use-and-abuse-redshift-to-serve-our-data-bc23d2ed3e07>
 
