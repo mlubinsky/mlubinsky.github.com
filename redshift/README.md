@@ -4,9 +4,17 @@
 
 
 
-https://blog.panoply.io/aws-redshift-tutorial https://www.intermix.io/blog/short-query-acceleration/ 
+<https://blog.panoply.io/aws-redshift-tutorial https://www.intermix.io/blog/short-query-acceleration/>
 
-https://medium.com/teads-engineering/give-meaning-to-100-billion-events-a-day-part-ii-how-we-use-and-abuse-redshift-to-serve-our-data-bc23d2ed3e07 https://www.intermix.io/blog/14-data-pipelines-amazon-redshift/ https://epiphany.pub/post?refId=a362fd3bffdc7eecde1838916fb8f4c267f5672b3774bd86dd23dce9dac72bee hate log https://www.intermix.io/blog/modern-etl-tools-for-amazon-redshift/ https://medium.com/@thejaravi/how-we-leveraged-redshift-spectrum-for-elt-in-our-land-of-etl-cf01edb485c0
+<https://medium.com/teads-engineering/give-meaning-to-100-billion-events-a-day-part-ii-how-we-use-and-abuse-redshift-to-serve-our-data-bc23d2ed3e07>
+
+<https://www.intermix.io/blog/14-data-pipelines-amazon-redshift/>
+
+<https://epiphany.pub/post?refId=a362fd3bffdc7eecde1838916fb8f4c267f5672b3774bd86dd23dce9dac72bee> hate log
+
+<https://www.intermix.io/blog/modern-etl-tools-for-amazon-redshift/> 
+
+
 
 ### Litvinchik
 <https://tech.marksblogg.com/billion-nyc-taxi-rides-redshift-large-cluster.html>
@@ -20,6 +28,8 @@ https://medium.com/teads-engineering/give-meaning-to-100-billion-events-a-day-pa
 ### Spectrum 
 
 <https://tech.iheart.com/how-we-leveraged-redshift-spectrum-for-elt-in-our-land-of-etl-cf01edb485c0>
+
+<https://medium.com/@thejaravi/how-we-leveraged-redshift-spectrum-for-elt-in-our-land-of-etl-cf01edb485c0>
 
 Redshift Spectrum is new add-on service for Redshift that Amazon introduced mid-2017. 
 It allows you to leverage Redshift to query data directly on S3. 
