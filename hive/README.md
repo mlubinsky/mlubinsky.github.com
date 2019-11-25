@@ -2,6 +2,19 @@
 ### AWS EMR
 <https://aws.amazon.com/premiumsupport/knowledge-center/logs-hive-queries-amazon-emr/>
 
+
+### Books
+
+Architecting Modern Data Platforms: A Guide to Enterprise Hadoop at Scale: December 5, 2018
+<https://www.amazon.com/Architecting-Modern-Data-Platforms-Enterprise-ebook/dp/B07L9JDXM8/>
+
+Hadoop Application Architectures: Designing Real-World Big Data Applications (I have this Kindle book)
+<https://www.amazon.com/Hadoop-Application-Architectures-Real-World-Applications/dp/1491900083/>
+
+The Enterprise Big Data Lake: Delivering the Promise of Big Data and Data Science 
+<https://www.amazon.com/Enterprise-Big-Data-Lake-Delivering-ebook/dp/B07NY44RKR/>
+
+
 ### How to set variables in Hive script:
 
 <https://cwiki.apache.org/confluence/display/Hive/LanguageManual+VariableSubstitution>
