@@ -1,5 +1,7 @@
 <https://habr.com/ru/post/472816/> JS patterns
 
+<https://www.smashingmagazine.com/2019/11/express-es6-javascript-stack-mongodb-mongoose-servers/>
+
 <https://objectexplorer.netlify.com/>
 
 <https://arrayexplorer.netlify.com/>
@@ -49,6 +51,12 @@ console.log(JSON.parse(JSON.stringify(obj))).
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax>
 
 <https://webdevblog.ru/skazka-o-treh-tochkah-v-javascript/>
+
+<https://www.smashingmagazine.com/2019/11/express-es6-javascript-stack-mongodb-mongoose-servers/>
+```
+const myObjOne = { a: 'a', b: 'b' };
+const myObjTwo = { ...myObjOne }:
+```
 
 ## Debouncing and throtting:
 
@@ -116,7 +124,33 @@ for (const operative of operatives) {
 });
 ```
 
-## destructing assignment
+## Destructing assignment
+
+<https://www.smashingmagazine.com/2019/11/express-es6-javascript-stack-mongodb-mongoose-servers/>
+
+``const { a, b } = someObject ``  is specifically saying that we expect some property ``a`` and some property ``b`` to exist within someObject
+
+
+Arrays can be destructured too:
+```
+const myArr = [4, 3];
+const [valOne, valTwo] = myArr;
+```
+A practical reason for array destructuring occurs with React Hooks. 
+```
+import React, { useState } from "react";
+export default () => {
+  const [buttonText, setButtonText] = useState("Default");
+
+  return (
+    <button onClick={() => setButtonText("Toggled")}>
+      {buttonText}
+    </button>
+  );
+}
+```
+
+
 ```
 const response = {
    status: 200,
