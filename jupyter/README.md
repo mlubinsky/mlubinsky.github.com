@@ -2,6 +2,9 @@
 
 <https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
 
+
+<https://www.aicheatsheets.com/>
+
 <https://jakevdp.github.io/PythonDataScienceHandbook/>
 
 <http://www.scikit-yb.org/en/latest/index.html> . Yellowbrick extends the Scikit-Learn API to make model selection and hyperparameter tuning easier. Under the hood, it’s using Matplotlib.
