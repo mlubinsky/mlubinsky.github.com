@@ -1,4 +1,6 @@
 
+<https://docs.aws.amazon.com/redshift/latest/dg/c_redshift_system_overview.html>
+
 <https://github.com/JefClaes/amazon-redshift-fundamentals>
 
 <https://blog.panoply.io/aws-redshift-tutorial>
@@ -26,6 +28,9 @@
 
 ### Spectrum 
 
+Amazon Redshift Spectrum to query data directly from files on Amazon S3.
+<https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html>
+
 <https://tech.iheart.com/how-we-leveraged-redshift-spectrum-for-elt-in-our-land-of-etl-cf01edb485c0>
 
 <https://medium.com/@thejaravi/how-we-leveraged-redshift-spectrum-for-elt-in-our-land-of-etl-cf01edb485c0>
@@ -48,6 +53,5 @@ portion of data (based on the query) on to Redshift cluster and execute it there
 
 
 
-Amazon Redshift Spectrum to query data directly from files on Amazon S3.
-<https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html>
+
 
