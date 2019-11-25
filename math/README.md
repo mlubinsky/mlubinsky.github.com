@@ -27,6 +27,9 @@
 <https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python>
 
 ### Linear algebra
+<https://textbooks.math.gatech.edu/ila/>
+
+<https://news.ycombinator.com/item?id=21628449>
 
 <https://news.ycombinator.com/item?id=21231228> linear algebra books
 
