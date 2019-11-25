@@ -5,13 +5,16 @@
 ```
 <https://stackexchange.com/sites>
 
-<https://habr.com/ru/post/476790/>  code streaming!
+<https://habr.com/ru/post/476790/>  code streaming from cool programmers!
+
+<https://medium.com/sicara> Practical articles on AI and Big Data, by Sicara
+
 
 <https://free-for.dev/#/>
 
 <https://greenteapress.com/wp/>
 
-<https://standuply.com/how-to-use-slack> . Slack
+<https://standuply.com/how-to-use-slack> . how to use Slack
 
 <http://harelba.github.io/q/index.html>   direct execution of SQL-like queries on CSVs/TSVs
 
