@@ -8,6 +8,9 @@
 
 <https://github.com/godatadriven/whirl> . local development and testing of Apache Airflow workflows.
 
+How We Solved Our Airflow I/O Problem By Using A Custom Docker Operator
+<https://medium.com/enigma-engineering/how-we-solved-our-airflow-i-o-problem-by-using-a-custom-docker-operator-dcc7c8111be5>
+
 <https://blog.godatadriven.com/testing-and-debugging-apache-airflow>
 
 <https://blog.godatadriven.com/open-source-airflow-local-development>
