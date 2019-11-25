@@ -6,18 +6,26 @@
 
 <https://tech.marksblogg.com/airflow-postgres-redis-forex.html>
 
+### Whirl
 <https://github.com/godatadriven/whirl> . local development and testing of Apache Airflow workflows.
+<https://blog.godatadriven.com/open-source-airflow-local-development>
+
 
 How We Solved Our Airflow I/O Problem By Using A Custom Docker Operator
 <https://medium.com/enigma-engineering/how-we-solved-our-airflow-i-o-problem-by-using-a-custom-docker-operator-dcc7c8111be5>
 
+Containerizing Data Workflows
+<https://medium.com/enigma-engineering/containerizing-data-workflows-95df1d338048>
+
+Testing and debugging Apache Airflow
 <https://blog.godatadriven.com/testing-and-debugging-apache-airflow>
 
-<https://blog.godatadriven.com/open-source-airflow-local-development>
+<https://medium.com/@tomaszdudek/yet-another-scalable-apache-airflow-with-docker-example-setup-84775af5c451>
+
+
 
 <https://www.manning.com/books/data-pipelines-with-apache-airflow> .  BOOK
 
-<https://medium.com/@tomaszdudek/yet-another-scalable-apache-airflow-with-docker-example-setup-84775af5c451>
 
 <https://cwiki.apache.org/confluence/display/AIRFLOW/Airflow+Links> Links
 
