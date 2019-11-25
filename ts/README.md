@@ -1,5 +1,8 @@
 <https://www.coursera.org/learn/practical-time-series-analysis/home/welcome>
 
+
+<https://habr.com/ru/company/ods/blog/327242/> Открытый курс машинного обучения. Тема 9. Анализ временных рядов с помощью Python
+
 ## Time Series DB
 
 <https://news.ycombinator.com/item?id=20760324> 
