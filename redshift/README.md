@@ -9,9 +9,16 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 <https://www.altinity.com/blog/migrating-from-redshift-to-clickhouse>
 
+<https://weekly-geekly.github.io/articles/433346/index.html>
+
 ## RedShift
 <http://www.sqlhaven.com/>
 
+ Redshift has a built-in S3 importer, which is the recommended way to load data. Therefore, once every 10 minutes, a script is launched that connects to Redshift and asks it to load data using the
+ ```s3://events-bucket/main/year=2018/month=10/day=14/10_3*``` prefix 
+ 
+
+ 
 You can create primary key constraint while creating tables in Redshift database but 
 *it will not be enforced while loading Redshift tables*. 
 Redshift query planner uses these constraints to create better query execution plan. |
