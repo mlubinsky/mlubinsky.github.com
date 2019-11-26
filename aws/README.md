@@ -3,6 +3,9 @@
 
 <https://fuzzyblog.io/blog/category.html#aws>
 
+
+<https://fuzzyblog.io/blog/aws/2016/09/20/aws-tutorial-08-using-ssh-s-config-file-with-your-aws-boxes.html>
+
 Для подключения к инстансу EC2 необходим закрытый ключ. Скачайте его (расширение .pem) из панели управления Amazon EC2 и измените разрешения 
 
 chmod 400 my-ec2-ssh-key.pem 
