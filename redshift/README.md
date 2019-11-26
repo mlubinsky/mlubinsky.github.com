@@ -12,6 +12,9 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 <https://weekly-geekly.github.io/articles/433346/index.html>
 
 ## RedShift
+
+<https://www.intermix.io/blog/top-14-performance-tuning-techniques-for-amazon-redshift/>
+
 <http://www.sqlhaven.com/>
 
  Redshift has a built-in S3 importer, which is the recommended way to load data. Therefore, once every 10 minutes, a script is launched that connects to Redshift and asks it to load data using the
@@ -59,6 +62,8 @@ If Primary key is set at the column level, it must be on a single column
 
 Amazon Redshift Spectrum to query data directly from files on Amazon S3.
 <https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html>
+
+<https://www.intermix.io/blog/amazon-redshift-spectrum-diving-data-lake/>
 
 <https://tech.iheart.com/how-we-leveraged-redshift-spectrum-for-elt-in-our-land-of-etl-cf01edb485c0>
 
