@@ -39,6 +39,7 @@ Hive Version for emr-5.21.1 is: 2.3.4
 
 <https://www.upsolver.com/blog/7-guidelines-ingesting-big-data-lakes>
 
+<https://docs.aws.amazon.com/AmazonS3/latest/dev/optimizing-performance.html>
 
 <https://boto3.amazonaws.com/v1/documentation/api/latest/index.html> Boto is  AWS  SDK for Python. It enables Python developers to create, configure, and manage AWS services, such as EC2 and S3.
 
