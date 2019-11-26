@@ -58,6 +58,8 @@ https://habr.com/company/itsumma/blog/418389/
  
 ##  Kafka
 
+<https://medium.com/@andy.bryant/processing-guarantees-in-kafka-12dd2e30be0e>
+
 <https://github.com/obsidiandynamics/kafdrop> UI for Kafka
 
 <https://habr.com/ru/post/466585/> book article
