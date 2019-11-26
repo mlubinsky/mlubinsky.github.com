@@ -1,7 +1,13 @@
 
+### Presto vs Hive
+Presto  query execution rate that is three times faster than Hive.
 ### AWS EMR
 <https://aws.amazon.com/premiumsupport/knowledge-center/logs-hive-queries-amazon-emr/>
 
+### Size Path
+https://medium.com/@gomzvicky/finding-total-size-of-hive-databases-data-d2ce8fa96cbf
+
+https://medium.com/@gomzvicky/finding-hdfs-paths-of-hive-tables-a42dcab161d7
 
 ### Books
 
