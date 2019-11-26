@@ -1,3 +1,5 @@
+<http://www.sqlhaven.com/>
+
 You can create primary key constraint while creating tables in Redshift database but 
 *it will not be enforced while loading Redshift tables*. 
 Redshift query planner uses these constraints to create better query execution plan. |
