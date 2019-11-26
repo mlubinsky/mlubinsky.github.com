@@ -2,9 +2,11 @@
 An anomaly detection algorithm should either label each time point with anomaly/not anomaly, 
 or forecast a signal for some point and test if this point value varies from the forecasted enough to deem it as an anomaly.
 
-<https://towardsdatascience.com/anomaly-detection-with-sql-7700c7516d1d> Anomality detection with SQL:
+<https://towardsdatascience.com/anomaly-detection-with-sql-7700c7516d1d> Anomality detection with SQL
 
 <https://pyod.readthedocs.io/en/latest/> . outliers detection
+
+<https://habr.com/ru/post/477450/>
 
 <https://nickgavalas.com/anomaly-detection-on-data-streams-in-one-line-of-bash/>
 
