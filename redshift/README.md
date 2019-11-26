@@ -1,3 +1,11 @@
+You can create primary key constraint while creating tables in Redshift database but 
+*it will not be enforced while loading Redshift tables*. 
+Redshift query planner uses these constraints to create better query execution plan. |
+If Primary key is set at the column level, it must be on a single column
+
+<https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_examples.html>
+
+<https://docs.aws.amazon.com/redshift/latest/dg/t_Defining_constraints.html>
 
 <https://docs.aws.amazon.com/redshift/latest/dg/c_redshift_system_overview.html>
 
