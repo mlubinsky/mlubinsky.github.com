@@ -1,6 +1,9 @@
 
 Both Snowflake and Redshift Spectrum allow queries on ORC files as external files located in Amazon S3. However, Snowflake edged out Redshift Spectrum for its ability to also load and transform ORC data files directly into Snowflake.
 
+## ClickHouse
+
+<https://www.altinity.com/blog/migrating-from-redshift-to-clickhouse>
 
 ## RedShift
 <http://www.sqlhaven.com/>
