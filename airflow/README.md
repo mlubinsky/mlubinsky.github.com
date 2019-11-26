@@ -2,6 +2,8 @@
 
 <https://airflow-tutorial.readthedocs.io/>
 
+<https://towardsdatascience.com/how-to-use-airflow-without-headaches-4e6e37e6c2bc>
+
 <https://tech.marksblogg.com/install-and-configure-apache-airflow.html>
 
 <https://tech.marksblogg.com/airflow-postgres-redis-forex.html>
