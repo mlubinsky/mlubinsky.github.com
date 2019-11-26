@@ -1,3 +1,9 @@
+<https://www.reddit.com/r/bigdata/comments/dwae40/tutorial_on_how_to_use_airflow_without_pain/>
+Airflow doesn’t treat data as a first class citizen. You should query data, then pass it via XCOM. 
+Airflow’s usage pattern is to extract data, save it somewhere like S3, then pass the s3 bucket and key location to the next task via XCOM. There are many many many downsides to using heavy (really big) XCOMs, and your metadata database has to store that data to pass between tasks, and IIRC it doesn’t ever delete the data. 
+
+It’s a known downside of working with Airflow, but once you start designing your tasks with that usage in mind and really start treating Airflow strictly as a scheduler that makes sure task 2 won’t run before task 1, while abstracting your logic elsewhere, you’ll have a much better time.
+
 <https://airflow.apache.org/>
 
 <https://airflow-tutorial.readthedocs.io/>
