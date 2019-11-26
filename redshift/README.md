@@ -70,6 +70,8 @@ portion of data (based on the query) on to Redshift cluster and execute it there
 
 ## SnowFlake
 
+<https://docs.snowflake.net/manuals/user-guide/tables-micro-partitions.html>
+
 <https://medium.com/hashmapinc/snowflakes-cloud-data-warehouse-what-i-learned-and-why-i-m-rethinking-the-data-warehouse-75a5daad271c>
 
 <https://medium.com/@richiebachala/snowflake-redshift-bigquery-b84d2cb60168>
