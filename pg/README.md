@@ -1,5 +1,33 @@
 <https://www.cybertec-postgresql.com/en/blog/>
 
+<https://www.postgresql.org/docs/12/functions-aggregate.html>
+```
+select
+    generate_series(1, 10) x,
+    generate_series(4, 31, 3) y
+into
+    toy_example;
+    
+select
+    regr_slope(y, x) as m,
+    regr_intercept(y, x) as b
+from
+    toy_example;
+    
+    
+select
+    x, m * x + b as y
+from
+    generate_series(9, 14) as x,
+    (
+        select
+            regr_slope(y, x) as m,
+            regr_intercept(y, x) as b
+        from
+            toy_example
+    ) as mb;    
+```    
+
 ### postgres on docker
 <https://pythonspeed.com/articles/faster-db-tests/>  
 
