@@ -1162,6 +1162,8 @@ http://ec2-18-221-216-253.us-east-2.compute.amazonaws.com:3000/login . admin/adm
 
 ## Explain plan
 
+<https://habr.com/ru/post/477624/>
+
 <https://www.youtube.com/watch?v=IwahVdNboc8>
 
 <https://pganalyze.com/ebooks/optimizing-postgres-query-performance?utm_source=PostgresWeeklySecondary>
