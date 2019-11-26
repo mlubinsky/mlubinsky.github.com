@@ -1,3 +1,8 @@
+
+Both Snowflake and Redshift Spectrum allow queries on ORC files as external files located in Amazon S3. However, Snowflake edged out Redshift Spectrum for its ability to also load and transform ORC data files directly into Snowflake.
+
+
+## RedShift
 <http://www.sqlhaven.com/>
 
 You can create primary key constraint while creating tables in Redshift database but 
