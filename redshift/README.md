@@ -13,6 +13,8 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 ## Redshift
 
+<https://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables.html>
+
 <https://docs.aws.amazon.com/redshift/latest/dg/c-query-processing.html>
 
 <https://docs.aws.amazon.com/redshift/latest/dg/c-query-tuning.html>
