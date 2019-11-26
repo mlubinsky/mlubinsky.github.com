@@ -3,6 +3,8 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 ## ClickHouse
 
+<https://news.ycombinator.com/item?id=19019943>
+
 <https://www.altinity.com/blog/migrating-from-redshift-to-clickhouse>
 
 ## RedShift
