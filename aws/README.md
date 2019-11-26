@@ -1,6 +1,8 @@
 <https://codereview.stackexchange.com/questions/tagged/amazon-web-services>
 <https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513>
 
+<https://fuzzyblog.io/blog/category.html#aws>
+
 Для подключения к инстансу EC2 необходим закрытый ключ. Скачайте его (расширение .pem) из панели управления Amazon EC2 и измените разрешения 
 
 chmod 400 my-ec2-ssh-key.pem 
@@ -34,6 +36,9 @@ Hive Version for emr-5.21.1 is: 2.3.4
 
 <https://www.upsolver.com/blog/7-guidelines-ingesting-big-data-lakes>
 
+
+<https://boto3.amazonaws.com/v1/documentation/api/latest/index.html> Boto is  AWS  SDK for Python. It enables Python developers to create, configure, and manage AWS services, such as EC2 and S3.
+
 Amazon S3 is a simple key-based object store. When you store data, you assign a unique object key that can later be used to retrieve the data. Keys can be any string, and they can be constructed to mimic hierarchical attributes. Alternatively, you can use S3 Object Tagging to organize your data across all of your S3 buckets and/or prefixes.
 
 You should use a lexicographic date format (yyyy/mm/dd) when storing your data on S3. Since files are listed by S3 in lexicographic order, failing to store them in the correct format will cause problems down the line when retrieving the data.
@@ -46,6 +51,54 @@ Note that while Amazon previously recommended to randomizing prefix naming with 
 
 <https://www.upsolver.com/blog/small-file-problem-hdfs-s3>
 
+
+### Count the files in an S3 bucket - three ways.
+
+#### Method 1: aws s3 ls
+ ```
+ aws s3 ls s3://adl-ohi/ --recursive --summarize | grep "Total Objects:"
+ ```
+Total Objects: 444803
+
+### Method 2: aws s3api
+  S3  filesystem  has an API that you can call. Yep – a json api:
+```
+aws s3api list-objects --bucket adl-ohi --output json --query "[length(Contents[])]"
+[
+    448444
+]
+```
+
+### Method 3: A Python Example
+ 
+```
+#!/usr/local/bin/python
+
+import sys
+import boto3
+
+s3 = boto3.resource('s3')
+s3bucket = s3.Bucket(sys.argv[1])
+size = 0
+totalCount = 0
+
+for key in s3bucket.objects.all():
+    totalCount += 1
+    size += key.size
+
+print('total size:')
+print("%.3f GB" % (size*1.0/1024/1024/1024))
+print('total count:')
+print(totalCount)
+```
+which gives output like this:
+```
+python3 scratch/count_s3.py adl-ohi
+total size:
+0.298 GB
+total count:
+486468
+```
 
 <https://aws.amazon.com/s3/faqs/>
 <https://news.ycombinator.com/item?id=21170652> A command line utility that allows you to stream data from multiple S3 objects directly into your terminal
