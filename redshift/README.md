@@ -63,5 +63,6 @@ portion of data (based on the query) on to Redshift cluster and execute it there
 
 
 
-
+## SnowFlake
+<https://www.alooma.com/answers/why-did-you-choose-snowflake-over-amazon-redshift-for-your-cloud-data-warehouse>
 
