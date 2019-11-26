@@ -64,5 +64,16 @@ portion of data (based on the query) on to Redshift cluster and execute it there
 
 
 ## SnowFlake
+
+<https://medium.com/hashmapinc/snowflakes-cloud-data-warehouse-what-i-learned-and-why-i-m-rethinking-the-data-warehouse-75a5daad271c>
+
+<https://medium.com/@richiebachala/snowflake-redshift-bigquery-b84d2cb60168>
 <https://www.alooma.com/answers/why-did-you-choose-snowflake-over-amazon-redshift-for-your-cloud-data-warehouse>
+
+<https://www.alooma.com/blog/a-guide-to-selecting-the-right-cloud-data-warehouse>
+
+<https://www.periscopedata.com/blog/interactive-analytics-redshift-bigquery-snowflake>
+
+<https://hevodata.com/blog/snowflake-vs-redshift/>
+
 
