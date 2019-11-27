@@ -1,3 +1,7 @@
+## A/B testing
+
+<https://habr.com/ru/company/yandex/blog/476826/>
+
 ## Anomaly detection
 An anomaly detection algorithm should either label each time point with anomaly/not anomaly, 
 or forecast a signal for some point and test if this point value varies from the forecasted enough to deem it as an anomaly.
