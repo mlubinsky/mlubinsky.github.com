@@ -1,4 +1,12 @@
 
+Latency is “the time interval between a stimulus and its response”. 'I want to get downtown. How long until I arrive? Latency is measured in time units.
+
+Throughput is “the rate at which a system achieves its goal”. People want to get downtown. How many arrive each hour? Throughput is measured in deliveries per time.
+
+Sometimes latency and throughput interfere with each other. Buses might deliver more people per hour than individually hailed cars (higher throughput), but it takes me personally longer to get downtown because I have to walk to a bus stop and wait for the bus (higher latency).
+
+imagine that you have no task-switching penalties but have to perform two tasks A and B which are in theory 100 units of time each. If you perform them serially, you get the result for A at time 100 and the result for B at time 200; if you perform them in parallel switching between them, you get the benefit that at time 51 you can show both of the recipients that you are 25% complete, but you deliver A at time 199 and B at time 200. B gets the same result; A gets a strictly better result, by not multitasking. If you imagine that your reputation is proportional to the average of the inverses of your times-to-completion, your reputation is 50% better in the first case due to the 100% improvement on half of your deadlines; if you had done the same nonsense with three parallel tasks your reputation would be 83% better or so.
+
 ## circuit breaker pattern
 <https://engineering.grab.com/designing-resilient-systems-part-1> circuit breaker
 <https://github.com/danielfm/pybreaker>
