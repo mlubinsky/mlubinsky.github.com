@@ -1,5 +1,7 @@
 <https://www.reddit.com/r/bigdata/comments/e1g7jf/are_there_any_competitors_to_snowflake/>
 
+<https://fivetran.com/blog/warehouse-benchmark>
+
 
 Both Snowflake and Redshift Spectrum allow queries on ORC files as external files located in Amazon S3. However, Snowflake edged out Redshift Spectrum for its ability to also load and transform ORC data files directly into Snowflake.
 
