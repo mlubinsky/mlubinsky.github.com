@@ -54,6 +54,9 @@ from
 <https://pgdash.io/blog/scaling-postgres.html> .  configuration
 
 ## Postgres 12
+
+<https://www.cybertec-postgresql.com/en/discovering-less-known-postgresql-12-features/>
+
 <https://rob.conery.io/2019/10/24/virtual-computed-columns-in-postgresql-12/>
 
 ## Pub/Subscribe
