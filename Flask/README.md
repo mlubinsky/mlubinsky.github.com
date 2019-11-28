@@ -8,6 +8,7 @@
 
 <https://habr.com/ru/post/477126/> . Flask +ReactAmin
 
+<https://github.com/app-generator/flask-dashboard-adminlte>
 
 ## Fast API 
 
