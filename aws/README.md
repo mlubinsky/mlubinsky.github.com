@@ -1,4 +1,7 @@
+<https://expeditedsecurity.com/aws-in-plain-english/>
+
 <https://codereview.stackexchange.com/questions/tagged/amazon-web-services>
+
 <https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513>
 
 <https://fuzzyblog.io/blog/category.html#aws>
