@@ -52,6 +52,8 @@ alias diff="diff-so-fancy"
 
 ## VIM
 
+<https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim>
+
 <https://habr.com/ru/post/468265/>
 
 <http://ismail.badawi.io/blog/2014/04/23/the-compositional-nature-of-vim/>
