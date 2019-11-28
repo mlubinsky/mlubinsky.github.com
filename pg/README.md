@@ -4,6 +4,8 @@
 
 <https://begriffs.com/posts/2017-10-21-sql-domain-integrity.html> constraints
 
+<https://begriffs.com/posts/2017-08-27-deferrable-sql-constraints.html> deferrable constraints
+
 <https://www.postgresql.org/docs/12/functions-aggregate.html>
 ```
 select
