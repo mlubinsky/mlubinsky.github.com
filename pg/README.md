@@ -2,6 +2,8 @@
 
 <https://begriffs.com/posts/2018-01-01-sql-keys-in-depth.html> PK, constraints, etc
 
+<https://begriffs.com/posts/2017-10-21-sql-domain-integrity.html> constraints
+
 <https://www.postgresql.org/docs/12/functions-aggregate.html>
 ```
 select
