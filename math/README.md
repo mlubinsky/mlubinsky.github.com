@@ -1,3 +1,7 @@
+### Quantum mechanics
+<http://www.visualquantumphysics.org/>
+<https://news.ycombinator.com/item?id=19062319>
+
 ## Math & Phys
 
 <https://www.youtube.com/channel/UC4VtfXvBu4d0us1RLf7z-2g>
@@ -5,14 +9,6 @@
 <https://mirtitles.org/>
 
 <https://news.ycombinator.com/item?id=21346272>
-
-## Stat
-
-<https://seeing-theory.brown.edu/index.html>  
-
-<http://www.jerrydallal.com/LHSP/LHSP.HTM>
-
-<https://www.stat.berkeley.edu/~aditya/resources/AllLectures2018Fall201A.pdf>
 
 ### Kalman filter
 
@@ -25,6 +21,30 @@
 <https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/>
 
 <https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python>
+
+## Stat
+
+<https://seeing-theory.brown.edu/index.html>  
+
+<http://www.jerrydallal.com/LHSP/LHSP.HTM>
+
+<https://www.stat.berkeley.edu/~aditya/resources/AllLectures2018Fall201A.pdf>
+
+<https://habr.com/post/265321/> . statistical disributions
+
+<https://seeing-theory.brown.edu/index.html> . Visual probability and stat
+
+<https://textbooks.opensuny.org/introduction-to-the-modeling-and-analysis-of-complex-systems/>
+
+<https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf>
+
+<https://github.com/Quanteeks/Statistics-lectures/blob/master/book.pdf>
+
+## Random processes:
+
+<https://habr.com/post/343148/>
+
+<https://habr.com/post/343178/>
 
 ### Linear algebra
 <https://textbooks.math.gatech.edu/ila/>
@@ -75,20 +95,11 @@
 
 <https://news.ycombinator.com/item?id=18351312> .  Linear Algebra
 
-### Quantum mechanics
-<http://www.visualquantumphysics.org/>
-<https://news.ycombinator.com/item?id=19062319>
 
 
-<https://habr.com/post/265321/> . statistical disributions
 
-<https://seeing-theory.brown.edu/index.html> . Visual probability and stat
 
-<https://textbooks.opensuny.org/introduction-to-the-modeling-and-analysis-of-complex-systems/>
 
-<https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf>
-
-https://github.com/Quanteeks/Statistics-lectures/blob/master/book.pdf
 
 <https://gwthomas.github.io/docs/math4ml.pdf>
 
@@ -114,9 +125,5 @@ https://github.com/Quanteeks/Statistics-lectures/blob/master/book.pdf
 <https://www.youtube.com/watch?v=cqNqZ2fZlvA> Savvateev
 
 
-Random processes:
 
-https://habr.com/post/343148/
-
-https://habr.com/post/343178/
 
