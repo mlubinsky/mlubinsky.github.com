@@ -126,6 +126,8 @@
 
 <https://e-maxx.ru/algo/15_puzzle> 
 
+<https://www.coursera.org/lecture/matematika-dlya-vseh/rieshieniie-piatnashiek-ch-1-l7rXY>
+
 <https://habr.com/ru/post/477716/>
 
 <https://www.quantamagazine.org/mathematicians-calculate-how-randomness-creeps-in-20191112/>
