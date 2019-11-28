@@ -1,5 +1,6 @@
 ### Quantum mechanics
 <http://www.visualquantumphysics.org/>
+
 <https://news.ycombinator.com/item?id=19062319>
 
 ## Math & Phys
@@ -97,10 +98,6 @@
 
 
 
-
-
-
-
 <https://gwthomas.github.io/docs/math4ml.pdf>
 
 <https://kubuszok.com/2018/algebras-we-love/>
@@ -125,5 +122,14 @@
 <https://www.youtube.com/watch?v=cqNqZ2fZlvA> Savvateev
 
 
+### Игра в 15
+
+<https://e-maxx.ru/algo/15_puzzle> 
+
+<https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D1%80%D0%B0_%D0%B2_15>
+
+<https://habr.com/ru/company/taucraft/blog/146508/>
+
+<megacuber.com>
 
 
