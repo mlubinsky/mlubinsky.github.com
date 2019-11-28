@@ -126,6 +126,10 @@
 
 <https://e-maxx.ru/algo/15_puzzle> 
 
+<https://habr.com/ru/post/477716/>
+
+<https://www.quantamagazine.org/mathematicians-calculate-how-randomness-creeps-in-20191112/>
+
 <https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D1%80%D0%B0_%D0%B2_15>
 
 <https://habr.com/ru/company/taucraft/blog/146508/>
