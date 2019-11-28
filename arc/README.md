@@ -37,6 +37,8 @@ imagine that you have no task-switching penalties but have to perform two tasks 
 <https://habr.com/ru/company/oleg-bunin/blog/468535/> Log analysis
 
 ## Stream vs batch
+<https://habr.com/ru/company/otus/blog/477834/>
+
 <https://github.com/voorloopnul/pipeframe>  Python  process data (stream or batch) taking advantage of python multiprocessing library.
 
 <https://petl.readthedocs.io/> . petl transformation pipelines make minimal use of system memory and can scale to millions of rows if speed is not a priority. However if you are working with very large datasets and/or performance-critical applications then other packages may be more suitable, e.g., see pandas, pytables, bcolz and blaze. 
