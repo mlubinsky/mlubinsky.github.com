@@ -1,5 +1,7 @@
 <https://www.cybertec-postgresql.com/en/blog/>
 
+<https://begriffs.com/posts/2018-01-01-sql-keys-in-depth.html> PK, constraints, etc
+
 <https://www.postgresql.org/docs/12/functions-aggregate.html>
 ```
 select
