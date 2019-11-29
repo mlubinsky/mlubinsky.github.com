@@ -1,8 +1,7 @@
 <https://www.reddit.com/r/bigdata/comments/dwae40/tutorial_on_how_to_use_airflow_without_pain/>
 Airflow doesn’t treat data as a first class citizen. You should query data, then pass it via XCOM. 
-Airflow’s usage pattern is to extract data, save it somewhere like S3, then pass the s3 bucket and key location to the next task via XCOM. There are many many many downsides to using heavy (really big) XCOMs, and your metadata database has to store that data to pass between tasks, and IIRC it doesn’t ever delete the data. 
+Airflow’s usage pattern is to extract data, save it somewhere like S3, then pass the s3 bucket and key location to the next task via XCOM. There are many many downsides to using heavy (really big) XCOMs, and your metadata database has to store that data to pass between tasks, and IIRC it doesn’t ever delete the data. 
 
-It’s a known downside of working with Airflow, but once you start designing your tasks with that usage in mind and really start treating Airflow strictly as a scheduler that makes sure task 2 won’t run before task 1, while abstracting your logic elsewhere, you’ll have a much better time.
 
 <https://airflow.apache.org/>
 
@@ -23,14 +22,16 @@ The Airflow scheduler triggers the task soon after the start_date + schedule_int
 The default schedule_interval is one day (datetime.timedelta(1)). 
 You must specify a different schedule_interval directly to the DAG object you instantiate
 
-The task instances directly upstream from the task need to be in a success state. Also, if you have set depends_on_past=True, the previous task instance needs to have succeeded (except if it is the first run for that task). Also, if wait_for_downstream=True, make sure you understand what it means. You can view how these properties are set from the Task Instance Details page for your task.
+The task instances directly upstream from the task need to be in a success state. Also, if you have set 
+``depends_on_past=True``, 
+the previous task instance needs to have succeeded (except if it is the first run for that task). Also, if ``wait_for_downstream=True``, make sure you understand what it means. You can view how these properties are set from the Task Instance Details page for your task.
 
 That means one schedule_interval AFTER the start date. An hourly DAG, for example, will execute its 2pm run when the clock strikes 3pm. The reasoning here is that Airflow can't ensure that all data corresponding to the 2pm interval is present until the end of that hourly interval.
  
 
-For a DAG to be executed, the ``start_date`` must be a time in the past, otherwise Airflow will assume that it's not yet ready to execute. When Airflow evaluates your DAG file, it interprets datetime.now() as the current timestamp (i.e. NOT a time in the past) and decides that it's not ready to run. Since this will happen every time Airflow heartbeats (evaluates your DAG) every 5-10 seconds, *it'll never run*.
+For a DAG to be executed, the ``start_date`` must be a time in the past, otherwise Airflow will assume that it's not yet ready to execute. When Airflow evaluates your DAG file, it interprets ``datetime.now()`` as the current timestamp (i.e. NOT a time in the past) and decides that it's not ready to run. Since this will happen every time Airflow heartbeats (evaluates your DAG) every 5-10 seconds, *it'll never run*.
 
-To properly trigger your DAG to run, make sure to insert a fixed time in the past (e.g. datetime(2019,1,1)) and set catchup=False (unless you're looking to run a backfill).
+To properly trigger your DAG to run, make sure to insert a fixed time in the past (e.g. datetime(2019,1,1)) and set ``catchup=False`` (unless you're looking to run a backfill).
 
 Note: You can manually trigger a DAG run via Airflow's UI directly on your dashboard (it looks like a "Play" button). A manual trigger executes immediately and will not interrupt regular scheduling, though it will be limited by any concurrency configurations you have at the DAG, deployment level or task level. When you look at corresponding logs, the run_id will show manual__ instead of scheduled__.
 
@@ -193,7 +194,7 @@ cp airflow_test.py ~/airflow/dags/
 
 <https://eng.lyft.com/running-apache-airflow-at-lyft-6e53bb8fccff>
 
-Airflow provides various configurables to tune the DAG performance. At Lyft, we suggest users tune the following variables:
+Airflow provides various configurables to tune the DAG performance.  we suggest users tune the following variables:
 * Parallelism: This variable controls the number of task instances that the Airflow worker can run simultaneously. Users could increase the parallelism variable in the Airflow.cfg. We normally suggest users increase this value when doing backfill.
 * Concurrency: The Airflow scheduler will run no more than concurrency task instances for your DAG at any given time. Concurrency is defined in your Airflow DAG as a DAG input argument. If you do not set the concurrency on your DAG, the scheduler will use the default value from the dag_concurrency entry in your Airflow.cfg.
 * max_active_runs: Airflow will run no more than max_active_runs DagRuns of your DAG at a given time. If you do not set the max_active_runs on your DAG, Airflow will use the default value from the max_active_runs_per_dag entry in your Airflow.cfg. We suggest users not to set depends_on_past to true and increase this configuration during backfill.
