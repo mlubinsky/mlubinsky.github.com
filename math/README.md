@@ -1,3 +1,6 @@
+<brilliant.org>
+<https://betterexplained.com/articles/navigate-a-grid-using-combinations-and-permutations/>
+
 ### Quantum mechanics
 <http://www.visualquantumphysics.org/>
 
