@@ -11,6 +11,20 @@
 
 <https://news.ycombinator.com/item?id=21346272>
 
+<https://www.quantamagazine.org/tag/insights-puzzle/>
+
+<https://kubuszok.com/2018/algebras-we-love/>
+
+<https://www.mccme.ru/mmmf-lectures/books/>
+
+<https://habr.com/post/434734/> . Fourie transf
+
+<https://news.ycombinator.com/item?id=18099484> Proof Without Words: Gregory’s Theorem
+
+<https://forany.xyz/a-244> Math videos in Russian;  Задача о разборчивой невесте
+
+<https://en.wikipedia.org/wiki/Secretary_problem>
+
 ### Kalman filter
 
 <https://habr.com/ru/post/166693/> 
@@ -100,19 +114,11 @@
 
 <https://gwthomas.github.io/docs/math4ml.pdf>
 
-<https://kubuszok.com/2018/algebras-we-love/>
 
-<https://www.mccme.ru/mmmf-lectures/books/>
-
-<https://habr.com/post/434734/> . Fourie transf
-
-<https://news.ycombinator.com/item?id=18099484> Proof Without Words: Gregory’s Theorem
 
 <https://youtu.be/TFhKK6bWcYE> . average distance between points on line, in square
 
-<https://forany.xyz/a-244> Math videos in Russian;  Задача о разборчивой невесте
 
-<https://en.wikipedia.org/wiki/Secretary_problem>
 
 <https://habr.com/post/428610/> paradox of bus waiting time
 
