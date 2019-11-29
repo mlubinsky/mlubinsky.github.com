@@ -4,6 +4,8 @@
 
 <https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513>
 
+<https://aws.amazon.com/getting-started/projects/build-log-analytics-solution/> 
+
 <https://fuzzyblog.io/blog/category.html#aws>
 
 
