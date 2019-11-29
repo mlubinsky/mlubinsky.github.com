@@ -67,6 +67,8 @@
 ### Linear algebra
 <https://textbooks.math.gatech.edu/ila/>
 
+<https://explained.ai/matrix-calculus/index.html>
+
 <https://news.ycombinator.com/item?id=21628449>
 
 <https://news.ycombinator.com/item?id=21231228> linear algebra books
