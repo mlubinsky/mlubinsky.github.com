@@ -13,6 +13,14 @@ imagine that you have no task-switching penalties but have to perform two tasks 
 <https://github.com/arlyon/aiobreaker>
 <https://github.com/connor4312/cockatiel>
 
+## Apache Beam
+
+<<https://habr.com/ru/company/otus/blog/454186/> Apache Beam и DataFlow для конвейеров реального времени
+
+<<https://www.youtube.com/watch?v=C6MlPaox5EI> Apache Beam>
+
+<https://towardsdatascience.com/lets-build-a-streaming-data-pipeline-e873d671fc57>
+
 ## Join Petabates
 <https://medium.com/liveramp-engineering/joining-petabytes-of-data-per-day-how-liveramp-powers-its-matching-product-fe7c0f440824> Joining Petabytes of Data Per Day
 
@@ -200,7 +208,7 @@ System thinking
 
 <https://leanpub.com/clean-architectures-in-python>
 
-<https://www.youtube.com/watch?v=C6MlPaox5EI> Apache Beam
+
 
 <https://habr.com/ru/company/cloud4y/blog/330462/> consensus in distributed systems (Paxos, etc
 
@@ -277,7 +285,6 @@ System thinking
 
 <https://turbolent.com/data-processing-pipeline.html>
 
-<https://habr.com/ru/company/otus/blog/454186/> Apache Beam и DataFlow для конвейеров реального времени
 
 ## Elastic Search
 https://datadome.co/store-50-million-event-per-second-in-elasticsearch/
