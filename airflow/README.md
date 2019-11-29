@@ -15,11 +15,26 @@ It’s a known downside of working with Airflow, but once you start designing yo
 <https://tech.marksblogg.com/airflow-postgres-redis-forex.html>
 
 
-1. By design, an Airflow DAG will execute at the completion of its schedule_interval
+<https://airflow.apache.org/docs/stable/faq.html>
+ By design, an Airflow DAG will execute at the completion of its schedule_interval.
+
+The Airflow scheduler triggers the task soon after the start_date + schedule_interval is passed.
+
+The default schedule_interval is one day (datetime.timedelta(1)). 
+You must specify a different schedule_interval directly to the DAG object you instantiate
+
+The task instances directly upstream from the task need to be in a success state. Also, if you have set depends_on_past=True, the previous task instance needs to have succeeded (except if it is the first run for that task). Also, if wait_for_downstream=True, make sure you understand what it means. You can view how these properties are set from the Task Instance Details page for your task.
 
 That means one schedule_interval AFTER the start date. An hourly DAG, for example, will execute its 2pm run when the clock strikes 3pm. The reasoning here is that Airflow can't ensure that all data corresponding to the 2pm interval is present until the end of that hourly interval.
+ 
 
-This is a peculiar aspect to Airflow, but an important one to remember - especially if you're using default variables and macros.
+For a DAG to be executed, the ``start_date`` must be a time in the past, otherwise Airflow will assume that it's not yet ready to execute. When Airflow evaluates your DAG file, it interprets datetime.now() as the current timestamp (i.e. NOT a time in the past) and decides that it's not ready to run. Since this will happen every time Airflow heartbeats (evaluates your DAG) every 5-10 seconds, *it'll never run*.
+
+To properly trigger your DAG to run, make sure to insert a fixed time in the past (e.g. datetime(2019,1,1)) and set catchup=False (unless you're looking to run a backfill).
+
+Note: You can manually trigger a DAG run via Airflow's UI directly on your dashboard (it looks like a "Play" button). A manual trigger executes immediately and will not interrupt regular scheduling, though it will be limited by any concurrency configurations you have at the DAG, deployment level or task level. When you look at corresponding logs, the run_id will show manual__ instead of scheduled__.
+
+<https://www.astronomer.io/blog/7-common-errors-to-check-when-debugging-airflow-dag/>
 
 ### Whirl
 <https://github.com/godatadriven/whirl> . local development and testing of Apache Airflow workflows.
