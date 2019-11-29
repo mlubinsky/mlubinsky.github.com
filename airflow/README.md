@@ -1,3 +1,6 @@
+Roku
+<https://blog.usejournal.com/roku-is-locking-down-tvs-until-you-give-personal-data-397ceadfd458>
+
 <https://www.reddit.com/r/bigdata/comments/dwae40/tutorial_on_how_to_use_airflow_without_pain/>
 Airflow doesn’t treat data as a first class citizen. You should query data, then pass it via XCOM. 
 Airflow’s usage pattern is to extract data, save it somewhere like S3, then pass the s3 bucket and key location to the next task via XCOM. There are many many downsides to using heavy (really big) XCOMs, and your metadata database has to store that data to pass between tasks, and IIRC it doesn’t ever delete the data. 
@@ -221,6 +224,8 @@ Sensor - waits for a certain time, file, database row, S3 key, etc…
 ```
 <https://blog.usejournal.com/testing-in-airflow-part-1-dag-validation-tests-dag-definition-tests-and-unit-tests-2aa94970570c>
 
+<https://medium.com/@chandukavar/testing-in-airflow-part-2-integration-tests-and-end-to-end-pipeline-tests-af0555cd1a82>
+
 There are five categories of tests in Airflow that you can write:
 *  DAG Validation Tests: To test the validity of the DAG, checking typos and cyclicity.
 * DAG/Pipeline Definition Tests: To test the total number of tasks in the DAG, upstream and downstream dependencies of each task etc.
@@ -250,6 +255,139 @@ multiplyby5_operator = MultiplyBy5Operator(my_operator_param='my_operator_param'
 dummy_operator >> hello_operator
 
 dummy_operator >> multiplyby5_operator
+```
+Here is  multiplyby5_operator:
+```
+import logging
+
+from airflow.models import BaseOperator
+from airflow.plugins_manager import AirflowPlugin
+from airflow.utils.decorators import apply_defaults
+
+log = logging.getLogger(__name__)
+
+
+class MultiplyBy5Operator(BaseOperator):
+    @apply_defaults
+    def __init__(self, my_operator_param, *args, **kwargs):
+        self.operator_param = my_operator_param
+        super(MultiplyBy5Operator, self).__init__(*args, **kwargs)
+
+    def execute(self, context):
+        log.info('operator_param: %s', self.operator_param)
+        return (self.operator_param * 5)
+
+
+class MultiplyBy5Plugin(AirflowPlugin):
+    name = "multiplyby5_plugin"
+```    
+
+
+Validation Test
+```
+import unittest
+from airflow.models import DagBag
+
+class TestDagIntegrity(unittest.TestCase):
+
+    LOAD_SECOND_THRESHOLD = 2
+
+    def setUp(self):
+        self.dagbag = DagBag()
+
+    def test_import_dags(self):
+        self.assertFalse(
+            len(self.dagbag.import_errors),
+            'DAG import failures. Errors: {}'.format(
+                self.dagbag.import_errors
+            )
+        )
+
+    def test_alert_email_present(self):
+
+        for dag_id, dag in self.dagbag.dags.iteritems():
+            emails = dag.default_args.get('email', [])
+            msg = 'Alert email not set for DAG {id}'.format(id=dag_id)
+            self.assertIn('alert.email@gmail.com', emails, msg)
+
+
+suite = unittest.TestLoader().loadTestsFromTestCase(TestDagIntegrity)
+unittest.TextTestRunner(verbosity=2).run(suite)
+```
+
+Pipeline /definition test:
+```
+
+import unittest
+from airflow.models import DagBag
+
+class TestHelloWorldDAG(unittest.TestCase):
+    """Check HelloWorldDAG expectation"""
+
+    def setUp(self):
+        self.dagbag = DagBag()
+
+    def test_task_count(self):
+        """Check task count of hello_world dag"""
+        dag_id='hello_world'
+        dag = self.dagbag.get_dag(dag_id)
+        self.assertEqual(len(dag.tasks), 3)
+
+    def test_contain_tasks(self):
+        """Check task contains in hello_world dag"""
+        dag_id='hello_world'
+        dag = self.dagbag.get_dag(dag_id)
+        tasks = dag.tasks
+        task_ids = list(map(lambda task: task.task_id, tasks))
+        self.assertListEqual(task_ids, ['dummy_task', 'multiplyby5_task','hello_task'])
+
+    def test_dependencies_of_dummy_task(self):
+        """Check the task dependencies of dummy_task in hello_world dag"""
+        dag_id='hello_world'
+        dag = self.dagbag.get_dag(dag_id)
+        dummy_task = dag.get_task('dummy_task')
+
+        upstream_task_ids = list(map(lambda task: task.task_id, dummy_task.upstream_list))
+        self.assertListEqual(upstream_task_ids, [])
+        downstream_task_ids = list(map(lambda task: task.task_id, dummy_task.downstream_list))
+        self.assertListEqual(downstream_task_ids, ['hello_task', 'multiplyby5_task'])
+
+    def test_dependencies_of_hello_task(self):
+        """Check the task dependencies of hello_task in hello_world dag"""
+        dag_id='hello_world'
+        dag = self.dagbag.get_dag(dag_id)
+        hello_task = dag.get_task('hello_task')
+
+        upstream_task_ids = list(map(lambda task: task.task_id, hello_task.upstream_list))
+        self.assertListEqual(upstream_task_ids, ['dummy_task'])
+        downstream_task_ids = list(map(lambda task: task.task_id, hello_task.downstream_list))
+        self.assertListEqual(downstream_task_ids, [])
+
+suite = unittest.TestLoader().loadTestsFromTestCase(TestHelloWorldDAG)
+unittest.TextTestRunner(verbosity=2).run(suite)
+
+```
+TestMultiplyBy5Operator:
+```
+import unittest
+from datetime import datetime
+from airflow import DAG
+from airflow.models import TaskInstance
+from airflow.operators import MultiplyBy5Operator
+
+
+class TestMultiplyBy5Operator(unittest.TestCase):
+
+    def test_execute(self):
+        dag = DAG(dag_id='anydag', start_date=datetime.now())
+        task = MultiplyBy5Operator(my_operator_param=10, dag=dag, task_id='anytask')
+        ti = TaskInstance(task=task, execution_date=datetime.now())
+        result = task.execute(ti.get_template_context())
+        self.assertEqual(result, 50)
+
+
+suite = unittest.TestLoader().loadTestsFromTestCase(TestMultiplyBy5Operator)
+unittest.TextTestRunner(verbosity=2).run(suite)
 ```
 
 <https://medium.com/datareply/airflow-lesser-known-tips-tricks-and-best-practises-cf4d4a90f8f>
