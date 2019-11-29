@@ -1,3 +1,4 @@
+<https://habr.com/ru/company/ruvds/blog/477286/> .  fetch vs axios
 
 <https://medium.com/frontend-digest/axios-vs-fetch-which-to-use-in-2019-6678c083c5c>
 
