@@ -14,6 +14,13 @@ It’s a known downside of working with Airflow, but once you start designing yo
 
 <https://tech.marksblogg.com/airflow-postgres-redis-forex.html>
 
+
+1. By design, an Airflow DAG will execute at the completion of its schedule_interval
+
+That means one schedule_interval AFTER the start date. An hourly DAG, for example, will execute its 2pm run when the clock strikes 3pm. The reasoning here is that Airflow can't ensure that all data corresponding to the 2pm interval is present until the end of that hourly interval.
+
+This is a peculiar aspect to Airflow, but an important one to remember - especially if you're using default variables and macros.
+
 ### Whirl
 <https://github.com/godatadriven/whirl> . local development and testing of Apache Airflow workflows.
 <https://blog.godatadriven.com/open-source-airflow-local-development>
