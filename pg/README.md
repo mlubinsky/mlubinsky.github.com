@@ -35,6 +35,12 @@ from
 ```    
 
 ### postgres on docker
+
+<https://hub.docker.com/_/postgres>
+```
+docker pull postgres
+docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=password -e POSTGRES_DB=postgres -p 5432:5432 -d postgres
+```
 <https://pythonspeed.com/articles/faster-db-tests/>  
 
 <https://towardsdatascience.com/tricks-for-postgres-and-docker-that-will-make-your-life-easier-fc7bfcba5082>
