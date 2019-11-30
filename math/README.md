@@ -1,4 +1,5 @@
-<brilliant.org>
+<http://brilliant.org>
+
 <https://betterexplained.com/articles/navigate-a-grid-using-combinations-and-permutations/>
 
 ### Quantum mechanics
@@ -136,6 +137,8 @@
 ### Игра в 15
 
 <https://e-maxx.ru/algo/15_puzzle> 
+
+<http://www.cs.cmu.edu/afs/cs/academic/class/15859-f01/www/notes/15-puzzle.pdf>
 
 <https://www.coursera.org/lecture/matematika-dlya-vseh/rieshieniie-piatnashiek-ch-1-l7rXY>
 
