@@ -1,5 +1,7 @@
 <https://expeditedsecurity.com/aws-in-plain-english/>
 
+<https://dzone.com/articles/how-to-set-up-a-data-lake-architecture-with-aws>
+
 <https://codereview.stackexchange.com/questions/tagged/amazon-web-services>
 
 <https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513>
