@@ -1,5 +1,7 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://www.youtube.com/watch?v=tzsOc-hBPfw>
+
 <https://yurichev.com/blog/qsort/> quick sort
 
 <https://rcoh.me/posts/linear-time-median-finding/>
