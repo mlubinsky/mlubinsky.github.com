@@ -6,7 +6,15 @@
 
 <https://habr.com/ru/post/473196/> streamlit
 
-
+<https://ahmedbesbes.com/end-to-end-ml.html>
+```
+Collecting and scraping customer reviews data using Selenium and Scrapy
+Training a deep learning sentiment classifier on this data using PyTorch
+Building an interactive web app using Dash
+Setting a REST API and a Postgres database
+Dockerizing the app using Docker Compose
+Deploying to AWS
+```
 <https://mml-book.github.io/>
 
 <https://news.ycombinator.com/item?id=21293132> math for machine learning
