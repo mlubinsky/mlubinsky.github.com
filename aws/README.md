@@ -115,6 +115,9 @@ total count:
 <https://www.npmjs.com/package/s3st>
 
 ## Athena
+
+<https://www.reddit.com/r/aws/comments/e3iuix/any_success_stories_using_amazon_athena/>
+
 <https://www.transposit.com/blog/2019.08.22-try-athena-easily-with-a-transposit-app/?c=lob>
 
 <https://towardsdatascience.com/query-data-from-s3-files-using-aws-athena-686a5b28e943>
