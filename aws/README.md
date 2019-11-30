@@ -2,6 +2,8 @@
 
 <https://dzone.com/articles/how-to-set-up-a-data-lake-architecture-with-aws>
 
+<https://dzone.com/articles/aws-lake-formation-for-data-lakes>
+
 <https://codereview.stackexchange.com/questions/tagged/amazon-web-services>
 
 <https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513>
