@@ -5,6 +5,9 @@
 
 ## Time Series DB
 
+
+<https://www.youtube.com/watch?v=2SUBRE6wGiA&list=PLSE8ODhjZXjY0GMWN4X8FIkYNfiu8_Wl9>
+
 <https://github.com/questdb/questdb>
 
 <https://news.ycombinator.com/item?id=20760324> 
