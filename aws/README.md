@@ -49,6 +49,8 @@ Hive Version for emr-5.21.1 is: 2.3.4
 ###  S3 
 <https://expeditedsecurity.com/aws-in-plain-english/s3/>
 
+<https://aws.amazon.com/efs/when-to-choose-efs/> EFS vs S3
+
 <https://www.upsolver.com/blog/7-guidelines-ingesting-big-data-lakes>
 
 <https://docs.aws.amazon.com/AmazonS3/latest/dev/optimizing-performance.html>
