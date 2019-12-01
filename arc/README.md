@@ -1,3 +1,7 @@
+### A/B testing
+
+<https://zulily-tech.com/2019/10/11/the-power-of-a-b-testing/>
+
 
 Latency is “the time interval between a stimulus and its response”. 'I want to get downtown. How long until I arrive? Latency is measured in time units.
 
