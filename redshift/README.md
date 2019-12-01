@@ -58,7 +58,9 @@ If Primary key is set at the column level, it must be on a single column
 
 <https://www.intermix.io/blog/modern-etl-tools-for-amazon-redshift/> 
 
+### Stored procedures
 
+<https://docs.aws.amazon.com/redshift/latest/dg/stored-procedure-overview.html>
 
 ### Litvinchik
 <https://tech.marksblogg.com/billion-nyc-taxi-rides-redshift-large-cluster.html>
