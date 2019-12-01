@@ -15,9 +15,9 @@ imagine that you have no task-switching penalties but have to perform two tasks 
 
 ## Apache Beam
 
-<<https://habr.com/ru/company/otus/blog/454186/> Apache Beam и DataFlow для конвейеров реального времени
+<https://habr.com/ru/company/otus/blog/454186/> Apache Beam и DataFlow для конвейеров реального времени
 
-<<https://www.youtube.com/watch?v=C6MlPaox5EI> Apache Beam>
+<https://www.youtube.com/watch?v=C6MlPaox5EI> Apache Beam
 
 <https://towardsdatascience.com/lets-build-a-streaming-data-pipeline-e873d671fc57>
 
