@@ -2,7 +2,9 @@ Roku
 <https://blog.usejournal.com/roku-is-locking-down-tvs-until-you-give-personal-data-397ceadfd458>
 
 <https://www.reddit.com/r/bigdata/comments/dwae40/tutorial_on_how_to_use_airflow_without_pain/>
+
 Airflow doesn’t treat data as a first class citizen. You should query data, then pass it via XCOM. 
+
 Airflow’s usage pattern is to extract data, save it somewhere like S3, then pass the s3 bucket and key location to the next task via XCOM. There are many many downsides to using heavy (really big) XCOMs, and your metadata database has to store that data to pass between tasks, and IIRC it doesn’t ever delete the data. 
 
 
@@ -16,6 +18,7 @@ Airflow’s usage pattern is to extract data, save it somewhere like S3, then pa
 
 <https://tech.marksblogg.com/airflow-postgres-redis-forex.html>
 
+<https://zulily-tech.com/2019/11/19/evolution-of-zulilys-airflow-infrastructure/>
 
 <https://airflow.apache.org/docs/stable/faq.html>
  By design, an Airflow DAG will execute at the completion of its schedule_interval.
