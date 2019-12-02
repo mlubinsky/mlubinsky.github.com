@@ -16,7 +16,10 @@ set -euf
 
 sudo !!  runs the previous command as root
 
-!$ - repeats the last argument of the last command
+!$ - repeats the last argument of the last command, example:
+
+mkdir longDirectoryNameIDontWantToTypeAgain
+cd !$
 
 $?  - return code of last command
 ``
