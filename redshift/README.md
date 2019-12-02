@@ -34,6 +34,8 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 <https://www.intermix.io/blog/top-14-performance-tuning-techniques-for-amazon-redshift/>
 
+<https://aws.amazon.com/blogs/aws/new-concurrency-scaling-for-amazon-redshift-peak-performance-at-all-times/> concurrency scaling
+
 <http://www.sqlhaven.com/>
 
  Redshift has a built-in S3 importer, which is the recommended way to load data. Therefore, once every 10 minutes, a script is launched that connects to Redshift and asks it to load data using the
