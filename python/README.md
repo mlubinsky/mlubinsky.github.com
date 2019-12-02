@@ -30,11 +30,13 @@
 
 ## multiprocessing vs threading
 
-<<https://www.packtpub.com/programming/python-parallel-programming-cookbook> >
+<https://www.packtpub.com/programming/python-parallel-programming-cookbook> 
 
 <https://habr.com/ru/company/ruvds/blog/475246/>
 
 <http://pljung.de/posts/easy-concurrency-in-python/> . concurrency
+
+<https://trio.readthedocs.io/en/stable/> asyncio alternative
 
 multiprocessing vs threading
 <https://sumit-ghosh.com/articles/multiprocessing-vs-threading-python-data-science/>
