@@ -23,3 +23,8 @@ cd !$
 
 $?  - return code of last command
 ``
+
+Given: text file and you need to remove all of its duplicate lines.
+<https://opensource.com/article/19/10/remove-duplicate-lines-files-awk>
+
+awk '!visited[$0]++' your_file > deduplicated_file
