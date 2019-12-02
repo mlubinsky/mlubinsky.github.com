@@ -13,6 +13,9 @@ set -u . exit on any attempts to use uninitialised variables
 set -euf
 
 !! – repeat last command
+
+sudo !!  runs the previous command as root
+
 !$ - repeats the last argument of the last command
 
 $?  - return code of last command
