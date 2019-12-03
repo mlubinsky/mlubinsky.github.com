@@ -15,6 +15,8 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 ## Redshift
 
+<https://docs.aws.amazon.com/redshift/latest/dg/t_Distributing_data.html> Choosing data distribution style
+
 <https://aws.amazon.com/redshift/>
 
 <https://medium.com/udemy-engineering/improving-amazon-redshift-performance-our-data-warehouse-story-5ec1282c13d8>
