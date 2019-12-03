@@ -30,6 +30,8 @@ https://github.com/vsaravind007/nodeScratchpad   Run JS code snippets
 ### File compare
 <https://yousseb.github.io/meld/>
 
+<https://www.kaleidoscopeapp.com/>
+
 ### FTP SFTP S3
 <https://panic.com/transmit/> .  S3, FTP, etc
 
