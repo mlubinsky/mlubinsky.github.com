@@ -13,3 +13,5 @@
 ## Fast API 
 
 <https://fastapi.tiangolo.com/>
+
+<https://habr.com/ru/post/478620/>
