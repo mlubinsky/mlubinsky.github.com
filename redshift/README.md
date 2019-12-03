@@ -50,6 +50,11 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 <https://www.intermix.io/blog/amazon-redshift-concurrency-scaling/>
 
+
+Without using Workload Management (WLM), each query gets equal priority. The result is that some workloads may end up using excessive cluster resources and block business-critical processes.
+
+<https://www.intermix.io/blog/automatic-wlm/>
+
 <http://www.sqlhaven.com/>
 
  Redshift has a built-in S3 importer, which is the recommended way to load data. Therefore, once every 10 minutes, a script is launched that connects to Redshift and asks it to load data using the
