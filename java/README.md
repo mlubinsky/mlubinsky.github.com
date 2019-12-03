@@ -3,6 +3,8 @@
  
  <https://habr.com/ru/post/471772/> How Java works
  
+ <https://habr.com/ru/company/otus/blog/478584/> . JVM internals
+ 
  <https://www.youtube.com/watch?v=RtHA1YVLW5Y> JVM does this?
  
  <https://jokerconf.com/2019/talks/> . Java Conf
