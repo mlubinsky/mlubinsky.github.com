@@ -17,6 +17,10 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 <https://docs.aws.amazon.com/redshift/latest/dg/t_Distributing_data.html> Choosing data distribution style
 
+<https://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables-distribution.html>
+
+<https://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables.html>
+
 <https://aws.amazon.com/redshift/>
 
 <https://medium.com/udemy-engineering/improving-amazon-redshift-performance-our-data-warehouse-story-5ec1282c13d8>
@@ -29,7 +33,7 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 <https://aws.amazon.com/blogs/aws/using-spatial-data-with-amazon-redshift/> spatial data
 
-<https://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables.html>
+
 
 <https://docs.aws.amazon.com/redshift/latest/dg/c-query-processing.html>
 
