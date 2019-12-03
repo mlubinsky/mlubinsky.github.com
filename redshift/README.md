@@ -13,7 +13,46 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 <https://weekly-geekly.github.io/articles/433346/index.html>
 
-## Redshift
+## Redshift Performance
+
+<https://docs.aws.amazon.com/redshift/latest/dg/r_PG_TABLE_DEF.html>
+
+<https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_TABLE_INFO.html>
+```
+  SELECT tablename, "column" , "type", encoding, sortkey  
+  FROM  PG_TABLE_DEF 
+  WHERE schemaname='roku' and distkey = true ;
+
+  SELECT tablename, "column" , "type", encoding, sortkey,  distkey  
+  FROM  PG_TABLE_DEF 
+  WHERE schemaname='roku' and sortkey <> 0 ;
+```
+
+```
+SELECT * FROM information_schema.tables
+WHERE table_schema = 'myschema'; 
+
+SELECT * FROM information_schema.columns
+WHERE table_schema = 'myschema' AND table_name = 'mytable'; 
+```
+
+### Compression
+
+### Data distribution across nodes
+ get the most out of this feature, your data needs to be properly distributed. If your data is skewed, some nodes will have to work more than others - and your query is only as fast as the slowest node.  
+<https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-best-dist-key.html>
+* Distribute the fact table and one dimension table on their common columns.
+* Choose the largest dimension based on the size of the filtered dataset.
+* Choose a column with high cardinality in the filtered result set.
+* Change some dimension tables to use ALL distribution.
+
+
+### Sort keys 
+Redshift stores your data on disk in sorted order according to the sort key.
+<https://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables-distribution.html>
+
+define how the data is organized within each node. If your query only needs a subset of data that is defined by a column that is in sorted order, Amazon Redshift can hone in on just that block of data for your query instead of scanning the entire table .
+
 
 <https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html>
 
@@ -29,7 +68,7 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 <https://docs.aws.amazon.com/redshift/latest/dg/diagnostic-queries-for-query-tuning.html#identify-queries-that-are-top-candidates-for-tuning>
 
-
+## Redshift
 <https://aws.amazon.com/redshift/>
 
 <https://medium.com/udemy-engineering/improving-amazon-redshift-performance-our-data-warehouse-story-5ec1282c13d8>
