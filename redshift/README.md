@@ -49,6 +49,7 @@ WHERE table_schema = 'myschema' AND table_name = 'mytable';
 
 ### Sort keys 
 Redshift stores your data on disk in sorted order according to the sort key.
+<https://docs.aws.amazon.com/redshift/latest/dg/t_Sorting_data.html>
 <https://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables-distribution.html>
 
 define how the data is organized within each node. If your query only needs a subset of data that is defined by a column that is in sorted order, Amazon Redshift can hone in on just that block of data for your query instead of scanning the entire table .
