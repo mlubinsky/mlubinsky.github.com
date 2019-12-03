@@ -125,6 +125,8 @@ portion of data (based on the query) on to Redshift cluster and execute it there
 <https://tech.instacart.com/migration-from-redshift-to-snowflake-the-path-for-success-4caaac5e3728>
 
 <https://medium.com/@richiebachala/snowflake-redshift-bigquery-b84d2cb60168>
+
+
 <https://www.alooma.com/answers/why-did-you-choose-snowflake-over-amazon-redshift-for-your-cloud-data-warehouse>
 
 <https://www.alooma.com/blog/a-guide-to-selecting-the-right-cloud-data-warehouse>
@@ -133,4 +135,4 @@ portion of data (based on the query) on to Redshift cluster and execute it there
 
 <https://hevodata.com/blog/snowflake-vs-redshift/>
 
-
+<https://medium.com/@ubethke/comparing-snowflake-cloud-data-warehouse-to-aws-athena-query-service-4f0ea32ef6db>
