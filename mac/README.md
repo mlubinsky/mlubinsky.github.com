@@ -26,10 +26,14 @@ https://github.com/vsaravind007/nodeScratchpad   Run JS code snippets
 
 <https://github.com/wellsjo/JSON-Splora>  JSON manipulation
 
-### FTP SFTP S3
-https://panic.com/transmit/ .  S3, FTP, etc
 
-https://cyberduck.io/ .  free
+### File compare
+<https://yousseb.github.io/meld/>
+
+### FTP SFTP S3
+<https://panic.com/transmit/> .  S3, FTP, etc
+
+<https://cyberduck.io/> .  free
 
 ### jEnv Java
 
