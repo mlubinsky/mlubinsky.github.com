@@ -19,7 +19,23 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 <https://help.looker.com/hc/en-us/articles/360023627014--Analytic-Block-Redshift-Performance-Optimization>
 
-## Redshift Performance
+## Redshift
+<https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html>
+
+<https://aws.amazon.com/redshift/>
+
+<https://medium.com/udemy-engineering/improving-amazon-redshift-performance-our-data-warehouse-story-5ec1282c13d8>
+
+<https://docs.aws.amazon.com/redshift/latest/mgmt/configuring-connections.html>
+
+<https://aws.amazon.com/blogs/big-data/simplify-management-of-amazon-redshift-clusters-with-the-redshift-console/>
+
+<https://aws.amazon.com/blogs/big-data/query-your-amazon-redshift-cluster-with-the-new-query-editor/>
+
+<https://aws.amazon.com/blogs/aws/using-spatial-data-with-amazon-redshift/> spatial data
+
+
+### Redshift Performance
 
 <https://docs.aws.amazon.com/redshift/latest/dg/r_PG_TABLE_DEF.html>
 
@@ -42,11 +58,26 @@ SELECT * FROM information_schema.columns
 WHERE table_schema = 'myschema' AND table_name = 'mytable'; 
 ```
 
+<https://docs.aws.amazon.com/redshift/latest/dg/c-query-processing.html>
+
+<https://docs.aws.amazon.com/redshift/latest/dg/c-query-tuning.html>
+
+<https://docs.aws.amazon.com/redshift/latest/dg/c-query-performance.html>
+
+<https://www.intermix.io/blog/top-14-performance-tuning-techniques-for-amazon-redshift/>
+
 ### Compression
 
 ### Data distribution across nodes
  get the most out of this feature, your data needs to be properly distributed. If your data is skewed, some nodes will have to work more than others - and your query is only as fast as the slowest node.  
 <https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-best-dist-key.html>
+
+<https://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables-distribution.html>
+
+<https://docs.aws.amazon.com/redshift/latest/dg/t_Distributing_data.html> Choosing data distribution style
+
+<https://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables-distribution.html>
+
 * Distribute the fact table and one dimension table on their common columns.
 * Choose the largest dimension based on the size of the filtered dataset.
 * Choose a column with high cardinality in the filtered result set.
@@ -56,48 +87,24 @@ WHERE table_schema = 'myschema' AND table_name = 'mytable';
 ### Sort keys 
 Redshift stores your data on disk in sorted order according to the sort key.
 <https://docs.aws.amazon.com/redshift/latest/dg/t_Sorting_data.html>
-<https://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables-distribution.html>
+
 
 define how the data is organized within each node. If your query only needs a subset of data that is defined by a column that is in sorted order, Amazon Redshift can hone in on just that block of data for your query instead of scanning the entire table .
 
 
-<https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html>
+## Tables design
 
-<https://docs.aws.amazon.com/redshift/latest/dg/t_Distributing_data.html> Choosing data distribution style
+<https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_examples.html>
 
-<https://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables-distribution.html>
+<https://docs.aws.amazon.com/redshift/latest/dg/t_Defining_constraints.html>
 
 <https://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables.html>
 
-
 <https://docs.aws.amazon.com/redshift/latest/dg/c_analyzing-table-design.html>
-
 
 <https://docs.aws.amazon.com/redshift/latest/dg/diagnostic-queries-for-query-tuning.html#identify-queries-that-are-top-candidates-for-tuning>
 
-## Redshift
-<https://aws.amazon.com/redshift/>
 
-<https://medium.com/udemy-engineering/improving-amazon-redshift-performance-our-data-warehouse-story-5ec1282c13d8>
-
-<https://docs.aws.amazon.com/redshift/latest/mgmt/configuring-connections.html>
-
-<https://aws.amazon.com/blogs/big-data/simplify-management-of-amazon-redshift-clusters-with-the-redshift-console/>
-
-<https://aws.amazon.com/blogs/big-data/query-your-amazon-redshift-cluster-with-the-new-query-editor/>
-
-<https://aws.amazon.com/blogs/aws/using-spatial-data-with-amazon-redshift/> spatial data
-
-
-
-<https://docs.aws.amazon.com/redshift/latest/dg/c-query-processing.html>
-
-<https://docs.aws.amazon.com/redshift/latest/dg/c-query-tuning.html>
-
-<https://docs.aws.amazon.com/redshift/latest/dg/c-query-performance.html>
-
-
-<https://www.intermix.io/blog/top-14-performance-tuning-techniques-for-amazon-redshift/>
 
 <https://aws.amazon.com/blogs/aws/new-concurrency-scaling-for-amazon-redshift-peak-performance-at-all-times/> concurrency scaling
 
@@ -120,9 +127,8 @@ You can create primary key constraint while creating tables in Redshift database
 Redshift query planner uses these constraints to create better query execution plan. |
 If Primary key is set at the column level, it must be on a single column
 
-<https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_examples.html>
 
-<https://docs.aws.amazon.com/redshift/latest/dg/t_Defining_constraints.html>
+
 
 <https://docs.aws.amazon.com/redshift/latest/dg/c_redshift_system_overview.html>
 
