@@ -1,4 +1,6 @@
 
+<https://habr.com/ru/post/478750/> React and non-react plotting
+
 <https://css-tricks.com/the-many-ways-of-getting-data-into-charts/>
 
 <https://www.freecodecamp.org/news/5-ways-to-build-real-time-apps-with-javascript-5f4d8fe259f7/>
