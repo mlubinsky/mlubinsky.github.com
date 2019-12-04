@@ -39,6 +39,8 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
  specifying sort keys, distribution keys, and column encodings can significantly improve storage, I/O, and query performance.
 
+<https://docs.aws.amazon.com/redshift/latest/dg/r_EXPLAIN.html>
+
 <https://docs.aws.amazon.com/redshift/latest/dg/r_PG_TABLE_DEF.html>
 
 <https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_TABLE_INFO.html>
