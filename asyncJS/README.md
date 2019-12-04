@@ -6,6 +6,10 @@
 
 <https://ponyfoo.com/articles/understanding-javascript-async-await>
 
+<https://danlevy.net/visualizing-promises/>
+
+<https://danlevy.net/javascript-promises-quiz/?s=r>
+
 ## Async await promises
 
 <https://habr.com/ru/post/475260/>
