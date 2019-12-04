@@ -21,6 +21,11 @@ Redshift Optimization by AWS
 
 <https://help.looker.com/hc/en-us/articles/360023627014--Analytic-Block-Redshift-Performance-Optimization>
 
+
+<https://help.looker.com/hc/en-us/articles/360023513514-How-to-Optimize-SQL-with-EXPLAIN>
+
+<https://help.looker.com/hc/en-us/articles/360001847227>
+
 ## Redshift
 <https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html>
 
