@@ -13,6 +13,12 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 <https://weekly-geekly.github.io/articles/433346/index.html>
 
+## Looker
+
+<https://www.intermix.io/blog/fix-slow-looker-dashboards-redshift/>
+
+<https://help.looker.com/hc/en-us/articles/360023627014--Analytic-Block-Redshift-Performance-Optimization>
+
 ## Redshift Performance
 
 <https://docs.aws.amazon.com/redshift/latest/dg/r_PG_TABLE_DEF.html>
