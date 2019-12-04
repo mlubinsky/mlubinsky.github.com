@@ -4,6 +4,8 @@
 
 <https://yurichev.com/blog/qsort/> quick sort
 
+<https://habr.com/ru/company/spice/blog/478250/>
+
 <https://rcoh.me/posts/linear-time-median-finding/>
 
 <https://habr.com/ru/company/otus/blog/476510/> Шахматный Bitboard
