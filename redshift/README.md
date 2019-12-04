@@ -1,3 +1,5 @@
+<https://www.youtube.com/user/AmazonWebServices>
+
 <https://www.reddit.com/r/bigdata/comments/e1g7jf/are_there_any_competitors_to_snowflake/>
 
 <https://fivetran.com/blog/warehouse-benchmark>
