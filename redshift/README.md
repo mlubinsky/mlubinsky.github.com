@@ -33,7 +33,7 @@ Redshift Optimization by AWS
 
 <https://aws.amazon.com/redshift/>
 
-
+<https://aws.amazon.com/blogs/aws/amazon-redshift-update-next-generation-compute-instances-and-managed-analytics-optimized-storage/>
 
 <https://docs.aws.amazon.com/redshift/latest/mgmt/configuring-connections.html>
 
