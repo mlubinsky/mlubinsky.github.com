@@ -26,6 +26,8 @@ Redshift Optimization by AWS
 
 <https://help.looker.com/hc/en-us/articles/360001847227>
 
+<https://help.looker.com/hc/en-us/articles/360001288108-Dynamically-Select-Fields-Using-Parameters>
+
 ## Redshift
 <https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html>
 
