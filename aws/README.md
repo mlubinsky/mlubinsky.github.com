@@ -59,6 +59,8 @@ Hive Version for emr-5.21.1 is: 2.3.4
 
 <https://boto3.amazonaws.com/v1/documentation/api/latest/index.html> Boto is  AWS  SDK for Python. It enables Python developers to create, configure, and manage AWS services, such as EC2 and S3.
 
+<https://realpython.com/courses/python-boto3-aws-s3/> Boto
+
 Amazon S3 is a simple key-based object store. When you store data, you assign a unique object key that can later be used to retrieve the data. Keys can be any string, and they can be constructed to mimic hierarchical attributes. Alternatively, you can use S3 Object Tagging to organize your data across all of your S3 buckets and/or prefixes.
 
 You should use a lexicographic date format (yyyy/mm/dd) when storing your data on S3. Since files are listed by S3 in lexicographic order, failing to store them in the correct format will cause problems down the line when retrieving the data.
