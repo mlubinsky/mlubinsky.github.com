@@ -207,6 +207,8 @@ portion of data (based on the query) on to Redshift cluster and execute it there
 
 <https://docs.snowflake.net/manuals/user-guide/tables-micro-partitions.html>
 
+<http://cloudsqale.com/2019/12/02/snowflake-micro-partitions-and-clustering-depth/>
+
 <https://medium.com/hashmapinc/snowflakes-cloud-data-warehouse-what-i-learned-and-why-i-m-rethinking-the-data-warehouse-75a5daad271c>
 
 <https://tech.instacart.com/migration-from-redshift-to-snowflake-the-path-for-success-4caaac5e3728>
