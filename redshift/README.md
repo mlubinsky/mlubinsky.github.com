@@ -24,7 +24,7 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 <https://aws.amazon.com/redshift/>
 
-<https://medium.com/udemy-engineering/improving-amazon-redshift-performance-our-data-warehouse-story-5ec1282c13d8>
+
 
 <https://docs.aws.amazon.com/redshift/latest/mgmt/configuring-connections.html>
 
@@ -36,6 +36,8 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 
 ### Redshift Performance
+
+ specifying sort keys, distribution keys, and column encodings can significantly improve storage, I/O, and query performance.
 
 <https://docs.aws.amazon.com/redshift/latest/dg/r_PG_TABLE_DEF.html>
 
@@ -65,6 +67,8 @@ WHERE table_schema = 'myschema' AND table_name = 'mytable';
 <https://docs.aws.amazon.com/redshift/latest/dg/c-query-performance.html>
 
 <https://www.intermix.io/blog/top-14-performance-tuning-techniques-for-amazon-redshift/>
+
+<https://medium.com/udemy-engineering/improving-amazon-redshift-performance-our-data-warehouse-story-5ec1282c13d8>
 
 ### Compression
 
