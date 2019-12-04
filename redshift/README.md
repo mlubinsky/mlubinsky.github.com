@@ -213,6 +213,7 @@ portion of data (based on the query) on to Redshift cluster and execute it there
 
 
 ## SnowFlake
+<https://docs.snowflake.net/manuals/sql-reference-commands.html>
 
 <https://docs.snowflake.net/manuals/user-guide/tables-micro-partitions.html>
 
