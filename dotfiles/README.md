@@ -2,6 +2,9 @@
 
 .bash_profile
 
+
+<https://news.ycombinator.com/item?id=21711761> . command-line utils
+
 <https://www.shellcheck.net/>
 
 <https://blog.flowblok.id.au/2013-02/shell-startup-scripts.html>
