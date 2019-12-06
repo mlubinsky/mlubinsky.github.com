@@ -1,5 +1,7 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://www.geeksforgeeks.org/union-find/> union-find (disjoin set)
+
 <https://www.youtube.com/watch?v=tzsOc-hBPfw>
 
 <https://yurichev.com/blog/qsort/> quick sort
