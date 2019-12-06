@@ -1,5 +1,7 @@
 <https://www.smashingmagazine.com/2019/10/asynchronous-tasks-modern-javascript/>
 
+<https://habr.com/ru/post/478938/>
+
 <https://evertpot.com/await-fluent-interfaces/>
 
 <https://developers.google.com/web/fundamentals/primers/async-functions>
