@@ -4,6 +4,7 @@
 
 <https://zulily-tech.com/2018/04/06/practical-a-b-testing/>
 
+<http://book.mixu.net/distsys/single-page.html>
 
 Latency is “the time interval between a stimulus and its response”. 'I want to get downtown. How long until I arrive? Latency is measured in time units.
 
