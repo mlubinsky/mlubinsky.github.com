@@ -162,7 +162,10 @@ If Primary key is set at the column level, it must be on a single column
 
 <https://www.intermix.io/blog/short-query-acceleration/>
 
+## Use cases
 <https://medium.com/teads-engineering/give-meaning-to-100-billion-events-a-day-part-ii-how-we-use-and-abuse-redshift-to-serve-our-data-bc23d2ed3e07>
+
+https://medium.com/teads-engineering/give-meaning-to-100-billion-events-a-day-part-ii-how-we-use-and-abuse-redshift-to-serve-our-data-bc23d2ed3e07
 
 <https://www.intermix.io/blog/14-data-pipelines-amazon-redshift/>
 
