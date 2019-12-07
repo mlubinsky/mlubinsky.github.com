@@ -50,6 +50,13 @@ This wokrs as well and it is shorter:
 git pull --rebase origin master
 ```
 
+``
+git pull -r origin master
+or
+git pull --rebase=interactive
+``
+
+
 ## Squoshing
  squashing is the practice of combining multiple commits into a single commit, or at least fewer commits than you started with. It is accomplished with an interactive rebase onto your own or another branch, or via git commit --amend. It can be performed simultaneously with a rebase operation.
 you’re taking two or more commits and combining them into a single commit.
