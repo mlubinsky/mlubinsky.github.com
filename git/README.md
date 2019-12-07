@@ -17,6 +17,15 @@ Another way to think about rebasing is that when youâ€™ve rebased a branch, itâ€
 
 <https://news.ycombinator.com/item?id=21189256>
 
+<https://dev.to/alediaferia/git-tips-for-trunk-based-development-1i1g>
+
+<https://stackoverflow.com/questions/9725531/show-commits-since-branch-creation>
+```
+git log master...<your_branch_name>
+git log master...
+```
+show commits since branch creation
+
 creating a branch a couple of commits behind master:
 ```
 git checkout --branch mytestbranch master~2
