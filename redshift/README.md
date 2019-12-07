@@ -59,6 +59,9 @@ Redshift Optimization by AWS
 
 <https://www.youtube.com/watch?v=wCxwYb5voJc>
 
+<https://www.youtube.com/watch?v=6UEWFAtvmsY>
+
+
 <https://discourse.looker.com/t/troubleshooting-redshift-performance-extensive-guide/326>
 
  specifying sort keys, distribution keys, and column encodings can significantly improve storage, I/O, and query performance.
