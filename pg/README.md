@@ -6,6 +6,8 @@
 
 <https://begriffs.com/posts/2017-08-27-deferrable-sql-constraints.html> deferrable constraints
 
+<https://news.ycombinator.com/item?id=21721832> PG at low level
+
 <https://www.postgresql.org/docs/12/functions-aggregate.html>
 ```
 select
