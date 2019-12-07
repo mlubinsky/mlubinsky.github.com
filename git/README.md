@@ -1,5 +1,7 @@
 <https://git-fork.com/> Fork: UI for Git
 
+<https://www.sublimemerge.com/>  Git Client, from the makers of Sublime Text
+
 <https://youtu.be/ye4LVrQ0TuM> How to work with Git Flow feature branches in the terminal
 
 <https://habr.com/ru/post/472600/> 
@@ -66,7 +68,7 @@ git pull --rebase=interactive
 ``
 
 
-## Squoshing
+## Squashing
 
 <https://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git>
 
@@ -74,9 +76,9 @@ git pull --rebase=interactive
 
  squashing is the practice of combining multiple commits into a single commit, or at least fewer commits than you started with. It is accomplished with an interactive rebase onto your own or another branch, or via git commit --amend. It can be performed simultaneously with a rebase operation.
 you’re taking two or more commits and combining them into a single commit.
-
+```
 git rebase --interactive HEAD~2
-
+```
  Instead of making all your various commits and then squashing later on via an interactive rebase, you can use the
  ``--amend`` option of git commit to edit the commit you’re currently on. So in the example above, after I made my commit to “Add build instructions to README”, I could amend that commit to include my typo fix by making the fix, staging it like I would if I was about to create a commit, and then running ``git commit --amend``.
  
@@ -84,6 +86,8 @@ git rebase --interactive HEAD~2
 
 Set `merge.conflictstyle=diff3` 
 The default merge style is utterly useless, I have no idea why it is the default. diff3 gives you three pieces of information: the status before at the common ancestor; the status on the current branch; and the status on the to-be-merged branch. You can then understand what changes were made on each branch, and decide how to merge them intelligently. Without that common ancestor, it's way way harder to understand what you're looking at.
+
+
 <https://www.sublimemerge.com/>  Git Client, from the makers of Sublime Text
 <http://vimcasts.org/episodes/fugitive-vim-resolving-merge-conflicts-with-vimdiff/>
 
