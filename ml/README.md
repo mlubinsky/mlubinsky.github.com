@@ -8,6 +8,7 @@
 
 <https://ahmedbesbes.com/end-to-end-ml.html>
 
+<https://github.com/firmai/awesome-google-colab/blob/master/README.md> . Google's Colab
 
 <https://hn.algolia.com/?q=colab> Google's Colab
 
