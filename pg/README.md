@@ -6,6 +6,8 @@
 
 <https://begriffs.com/posts/2017-08-27-deferrable-sql-constraints.html> deferrable constraints
 
+<https://erthalion.info/2019/12/06/postgresql-stay-curious/> PG at low level
+
 <https://news.ycombinator.com/item?id=21721832> PG at low level
 
 <https://www.postgresql.org/docs/12/functions-aggregate.html>
