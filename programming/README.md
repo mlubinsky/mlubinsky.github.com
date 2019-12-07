@@ -42,6 +42,8 @@
 
 <https://harrylaou.com/slides/AlgebrasInProgramming.pdf>
 
+<https://bytes.yingw787.com/posts/2019/12/06/monads/>
+
 Product types allow you to have more than one value in a single structure, at the same time. 
 We call them ``product types`` because we can calculate the number of possible values using multiplication. 
 Example: struct ( x boolean, y boolean }  has 4 possible combinations
