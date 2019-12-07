@@ -67,6 +67,11 @@ git pull --rebase=interactive
 
 
 ## Squoshing
+
+<https://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git>
+
+<https://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git/5201642#5201642>
+
  squashing is the practice of combining multiple commits into a single commit, or at least fewer commits than you started with. It is accomplished with an interactive rebase onto your own or another branch, or via git commit --amend. It can be performed simultaneously with a rebase operation.
 you’re taking two or more commits and combining them into a single commit.
 
