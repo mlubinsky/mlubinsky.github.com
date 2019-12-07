@@ -25,6 +25,8 @@
 
 ## MarkDown Editors: Typora, etc
 
+<https://stackedit.io/>
+
 <https://news.ycombinator.com/item?id=21458977>
 
 
