@@ -7,6 +7,10 @@
 <https://habr.com/ru/post/473196/> streamlit
 
 <https://ahmedbesbes.com/end-to-end-ml.html>
+
+
+<https://hn.algolia.com/?q=colab> Google's Colab
+
 ```
 Collecting and scraping customer reviews data using Selenium and Scrapy
 Training a deep learning sentiment classifier on this data using PyTorch
