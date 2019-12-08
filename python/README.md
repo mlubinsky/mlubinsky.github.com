@@ -17,7 +17,7 @@
 <https://habr.com/ru/company/piter/blog/471520/> Книга «Классические задачи Computer Science на языке Python»
 
 ## Use Jinja template to generate dynamic SQL
-<https://medium.com/analytics-and-data/jinja-the-sql-way-of-the-ninja-9a64fc815564>
+<https://medium.com/analytics-and-data/jinja-the-sql-way-of-the-ninja-9a64fc815564> (see pdf file in this folder)
 
 ## Parsing
 <https://tomassetti.me/parsing-in-python/> Parsing in Python
@@ -48,6 +48,8 @@ multiprocessing vs threading
 
 
 ## Other topics
+
+<https://florimond.dev/blog/articles/2018/10/reconciling-dataclasses-and-properties-in-python/> DataClasses
 
 <https://github.com/benfred/py-spy>  py-spy: Sampling profiler for Python programs
 
