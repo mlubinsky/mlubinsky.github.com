@@ -14,6 +14,8 @@
 
 ## Async await promises
 
+<https://medium.com/better-programming/callbacks-vs-promises-in-javascript-1f074e93a3b5>
+
 <https://habr.com/ru/post/475260/>
 
 <https://habr.com/ru/post/474726/>
