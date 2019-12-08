@@ -34,6 +34,8 @@ Redshift Optimization by AWS
 
 <https://help.looker.com/hc/en-us/articles/360023627014--Analytic-Block-Redshift-Performance-Optimization>
 
+<https://github.com/llooker/blocks_redshift_admin>
+
 <https://www.youtube.com/watch?v=wCxwYb5voJc> . Fabio Beltramini JOIN 2017 Deep Dive - Redshift Optimization
 
 
