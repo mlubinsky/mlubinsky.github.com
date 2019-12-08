@@ -23,15 +23,25 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 <https://weekly-geekly.github.io/articles/433346/index.html>
 
 ## Looker
+
+<https://discourse.looker.com>
+
 Redshift Optimization by AWS
 <https://looker.com/platform/blocks/source/redshift-optimization-by-aws>
+
+#### Fabio Beltramini: Deep Dive_Redshift Optimization
+<https://www.slideshare.net/looker/join-2017deep-diveredshift-optimization>
+
+<https://help.looker.com/hc/en-us/articles/360023627014--Analytic-Block-Redshift-Performance-Optimization>
+
+<https://www.youtube.com/watch?v=wCxwYb5voJc> . Fabio Beltramini JOIN 2017 Deep Dive - Redshift Optimization
 
 
 <https://docs.looker.com/data-modeling/learning-lookml/how-looker-generates-sql>
 
 <https://www.intermix.io/blog/fix-slow-looker-dashboards-redshift/>
 
-<https://help.looker.com/hc/en-us/articles/360023627014--Analytic-Block-Redshift-Performance-Optimization>
+
 
 <http://rkulla.blogspot.com/2017/10/using-amazon-redshift-with-looker.html>
 
@@ -59,10 +69,11 @@ Redshift Optimization by AWS
 
 ### Redshift Performance
 
-<https://www.youtube.com/watch?v=wCxwYb5voJc>
+<https://www.youtube.com/watch?v=wCxwYb5voJc> . Fabio Beltramini JOIN 2017 Deep Dive - Redshift Optimization
 
 <https://www.youtube.com/watch?v=6UEWFAtvmsY>
 
+<https://www.youtube.com/watch?v=iuQgZDs-W7A>
 
 <https://discourse.looker.com/t/troubleshooting-redshift-performance-extensive-guide/326>
 
