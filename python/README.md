@@ -28,6 +28,11 @@
 
 <https://github.com/pvcraven/pypi_package_example>
 
+
+## ASGI 
+
+<https://florimond.dev/blog/articles/2019/08/introduction-to-asgi-async-python-web/>
+
 ## multiprocessing vs threading
 
 <https://www.packtpub.com/programming/python-parallel-programming-cookbook> 
