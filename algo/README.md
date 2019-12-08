@@ -2,6 +2,8 @@
 
 <https://www.geeksforgeeks.org/union-find/> union-find (disjoint-set)
 
+<https://www.youtube.com/watch?v=fowDzrMa-Mo&utm_source=reddit> design distributed cache
+
 <https://www.youtube.com/watch?v=tzsOc-hBPfw>
 
 <https://yurichev.com/blog/qsort/> quick sort
