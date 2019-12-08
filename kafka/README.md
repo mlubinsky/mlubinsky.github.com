@@ -1,7 +1,11 @@
 
 <https://alexandrugris.github.io/distributed/systems/2017/06/11/kafka-patterns.html> Kafka in Docker
 
-<https://florimond.dev/blog/articles/2018/09/building-a-streaming-fraud-detection-system-with-kafka-and-python/> in Docker!
+<https://florimond.dev/blog/articles/2018/09/building-a-streaming-fraud-detection-system-with-kafka-and-python/> - in Docker
+
+There ispdf version of this file:
+<https://medium.com/@stephane.maarek/how-to-use-apache-kafka-to-transform-a-batch-pipeline-into-a-real-time-one-831b48a6ad85>
+
 
 <https://habr.com/ru/post/466385/>  Изучение механики обмена сообщениями посредством ActiveMQ и Kafka. Глава 1
 
@@ -25,6 +29,8 @@
 <https://blog.theodo.com/2019/08/event-driven-architectures-rabbitmq/>
 
 <https://www.erlang-solutions.com/blog/rabbit-s-anatomy-understanding-topic-exchanges.html>
+
+<https://medium.com/@shivama205/rabbitmq-best-practices-67a27ef72a57>
 
 ## RabbitMQ vs Kafka
 
