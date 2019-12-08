@@ -24,6 +24,7 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 
 ## Looker
 
+<https://training.looker.com/looker-for-data-consumers> training 
 <https://discourse.looker.com>
 
 Redshift Optimization by AWS
