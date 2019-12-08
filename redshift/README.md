@@ -29,7 +29,7 @@ Both Snowflake and Redshift Spectrum allow queries on ORC files as external file
 Redshift Optimization by AWS
 <https://looker.com/platform/blocks/source/redshift-optimization-by-aws>
 
-#### Fabio Beltramini: Deep Dive_Redshift Optimization
+### Fabio Beltramini: Deep Dive_Redshift Optimization
 <https://www.slideshare.net/looker/join-2017deep-diveredshift-optimization>
 
 <https://help.looker.com/hc/en-us/articles/360023627014--Analytic-Block-Redshift-Performance-Optimization>
@@ -44,7 +44,6 @@ Redshift Optimization by AWS
 <https://www.intermix.io/blog/fix-slow-looker-dashboards-redshift/>
 
 
-
 <http://rkulla.blogspot.com/2017/10/using-amazon-redshift-with-looker.html>
 
 <https://help.looker.com/hc/en-us/articles/360023513514-How-to-Optimize-SQL-with-EXPLAIN>
@@ -54,6 +53,9 @@ Redshift Optimization by AWS
 <https://help.looker.com/hc/en-us/articles/360001288108-Dynamically-Select-Fields-Using-Parameters>
 
 ## Redshift
+
+<https://www.youtube.com/user/AWSwebinars/search?query=redshift> AWS Redshift Tech Talk
+
 <https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html>
 
 <https://aws.amazon.com/redshift/>
