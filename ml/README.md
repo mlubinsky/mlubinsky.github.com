@@ -1,3 +1,5 @@
+<https://habr.com/ru/post/479398/> Приводим уравнение линейной регрессии в матричный вид
+
 <https://practicalai.me/> A practical approach to machine learning.
 
 <https://news.ycombinator.com/item?id=21710863> TF vs PyTorch
