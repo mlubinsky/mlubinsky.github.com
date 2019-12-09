@@ -3,6 +3,9 @@
 
 <https://habr.com/ru/company/ods/blog/327242/> Открытый курс машинного обучения. Тема 9. Анализ временных рядов с помощью Python
 
+
+<https://arxiv.org/abs/1911.13288> TS with machine learning
+
 ## Time Series DB
 
 
