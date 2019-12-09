@@ -55,6 +55,8 @@ Redshift Optimization by AWS
 
 ## Redshift
 
+<https://aws.amazon.com/blogs/big-data/simplify-management-of-amazon-redshift-clusters-with-the-redshift-console/>
+
 <https://www.youtube.com/user/AWSwebinars/search?query=redshift> AWS Redshift Tech Talk
 
 <https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html>
