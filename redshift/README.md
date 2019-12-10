@@ -76,6 +76,8 @@ Redshift Optimization by AWS
 
 ### Redshift Performance
 
+<https://aws.amazon.com/about-aws/whats-new/2018/07/amazon-redshift-now-provides-customized-best-practice-recommendations-with-advisor/>
+
 <https://www.youtube.com/watch?v=wCxwYb5voJc> . Fabio Beltramini JOIN 2017 Deep Dive - Redshift Optimization
 
 <https://www.youtube.com/watch?v=6UEWFAtvmsY>
