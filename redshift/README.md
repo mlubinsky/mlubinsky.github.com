@@ -61,6 +61,11 @@ Redshift Optimization by AWS
 
 <https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html>
 
+ Dense Compute (DC2) nodes 
+ <https://aws.amazon.com/about-aws/whats-new/2017/10/amazon-redshift-announces-dense-compute-dc2-nodes-with-twice-the-performance-as-dc1-at-the-same-price/> 
+ to provide low latency and high throughput for demanding data warehousing workloads. DC2 nodes feature powerful Intel E5-2686 v4 (Broadwell) CPUs, fast DDR4 memory, and NVMe-based solid state disks (SSDs). We’ve tuned Amazon Redshift to take advantage of the better CPU, network, and disk on DC2 nodes, providing up to twice the performance of DC1 at the same price. 
+ <https://aws.amazon.com/redshift/pricing/>
+
 <https://aws.amazon.com/redshift/>
 
 <https://aws.amazon.com/blogs/aws/amazon-redshift-update-next-generation-compute-instances-and-managed-analytics-optimized-storage/>
