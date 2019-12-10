@@ -114,6 +114,19 @@ Redshift Optimization by AWS
 
  specifying sort keys, distribution keys, and column encodings can significantly improve storage, I/O, and query performance.
 
+#### system tables
+<https://aws.amazon.com/premiumsupport/knowledge-center/logs-redshift-database-cluster/>
+
+Executed queries are logged in STL_QUERY. DDL statements are logged in STL_DDLTEXT. 
+The text of non-SELECT SQL commands are logged in STL_UTILITYTEXT.
+
+SVL_STATEMENTTEXT: Provides a complete record of SQL commands that have been run on the system. 
+Combines all of the rows in the STL_DDLTEXT, STL_QUERYTEXT, and STL_UTILITYTEXT tables.
+
+STL_CONNECTION_LOG: Logs authentication attempts, connections, or disconnections.
+
+<https://docs.aws.amazon.com/redshift/latest/dg/c_intro_STL_tables.html>
+
 <https://docs.aws.amazon.com/redshift/latest/dg/r_EXPLAIN.html>
 
 <https://docs.aws.amazon.com/redshift/latest/dg/r_PG_TABLE_DEF.html>
