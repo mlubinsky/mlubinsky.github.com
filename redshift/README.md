@@ -83,7 +83,11 @@ Redshift Optimization by AWS
 
 <https://aws.amazon.com/about-aws/whats-new/2018/07/amazon-redshift-now-provides-customized-best-practice-recommendations-with-advisor/>
 
+<https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-techniques-for-amazon-redshift/>
+
 <https://aws.amazon.com/blogs/big-data/top-8-best-practices-for-high-performance-etl-processing-using-amazon-redshift/>
+
+<https://aws.amazon.com/blogs/big-data/amazon-redshift-engineerings-advanced-table-design-playbook-distribution-styles-and-distribution-keys/>
 
 <https://www.youtube.com/watch?v=wCxwYb5voJc> . Fabio Beltramini JOIN 2017 Deep Dive - Redshift Optimization
 
