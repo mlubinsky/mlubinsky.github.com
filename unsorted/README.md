@@ -217,10 +217,10 @@ B32 Sicilian Defense: Kalashnikov Variation
 5 Nb5  d6 
 6 N1c3 a6 
 7 Na3  b5
-8 Nd5 h6
+8 Nd5 h6 +1.5 Mistake: Best move was Nf6.  
 9 Bxb5 axb5
-10 Nxb5 Qa5+
-11 Bd2 Qd8 +12.5
+10 Nxb5 Qa5+   Best move was Be7.
+11 Bd2 Qd8 +12.5 . Blunder. Best move was Qa4.
 12 Nbc7+ Kd7
 13 Qg4+
 ```
