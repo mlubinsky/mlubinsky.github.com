@@ -3,9 +3,10 @@
 
 <https://florimond.dev/blog/articles/2018/09/building-a-streaming-fraud-detection-system-with-kafka-and-python/> - in Docker
 
-There ispdf version of this file:
+There is pdf version of this file:
 <https://medium.com/@stephane.maarek/how-to-use-apache-kafka-to-transform-a-batch-pipeline-into-a-real-time-one-831b48a6ad85>
 
+<https://medium.com/high-alpha/data-stream-processing-for-newbies-with-kafka-ksql-and-postgres-c30309cfaaf8>
 
 <https://habr.com/ru/post/466385/>  Изучение механики обмена сообщениями посредством ActiveMQ и Kafka. Глава 1
 
