@@ -132,6 +132,9 @@ STL_CONNECTION_LOG: Logs authentication attempts, connections, or disconnections
 <https://docs.aws.amazon.com/redshift/latest/dg/r_PG_TABLE_DEF.html>
 
 <https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_TABLE_INFO.html>
+
+<https://docs.aws.amazon.com/redshift/latest/dg/r_STL_QUERY_METRICS.html>
+
 ```
   SELECT tablename, "column" , "type", encoding, sortkey  
   FROM  PG_TABLE_DEF 
