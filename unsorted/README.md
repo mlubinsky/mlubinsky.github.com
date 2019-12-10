@@ -208,6 +208,22 @@ Live calculation in browser
 
 ## Chess
 
+B32 Sicilian Defense: Kalashnikov Variation
+```
+1 e4 c5 
+2 Nf3  Nc6 
+3 d4  cxd4 0
+4 Nxd4 e5
+5 Nb5  d6 
+6 N1c3 a6 
+7 Na3  b5
+8 Nd5 h6
+9 Bxb5 axb5
+10 Nxb5 Qa5+
+11 Bd2 Qd8 +12.5
+12 Nbc7+ Kd7
+13 Qg4+
+```
 <https://chess.stackexchange.com/questions/75/very-aggressive-openings> Agressive opening
 
 <https://medium.freecodecamp.org/simple-chess-ai-step-by-step-1d55a9266977>
