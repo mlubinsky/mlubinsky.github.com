@@ -35,6 +35,14 @@ To have launchd start kafka now and restart at login:
   brew services start kafka
 Or, if you don't want/need a background service you can just run:
   zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties & kafka-server-start /usr/local/etc/kafka/server.properties
+  
+  
+$  find /usr -type f | grep kafka-console | xargs ls -l
+ 
+-r-xr-xr-x  144  /usr/local/Cellar/kafka/2.3.1/bin/kafka-console-consumer
+-r-xr-xr-x  144 /usr/local/Cellar/kafka/2.3.1/bin/kafka-console-producer
+-rwxr-xr-x  945 /usr/local/Cellar/kafka/2.3.1/libexec/bin/kafka-console-consumer.sh
+-rwxr-xr-x  944 /usr/local/Cellar/kafka/2.3.1/libexec/bin/kafka-console-producer.sh
 ```
 
 <https://magnet.crowdcafe.com/> Magnet - windows manager for Mac
