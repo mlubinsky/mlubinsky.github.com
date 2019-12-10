@@ -91,6 +91,18 @@ Redshift Optimization by AWS
 
 <https://discourse.looker.com/t/troubleshooting-redshift-performance-extensive-guide/326>
 
+#### short query acceleration
+<https://aws.amazon.com/about-aws/whats-new/2017/11/amazon-redshift-uses-machine-learning-to-accelerate-dashboards-and-interactive-analysis/>
+
+#### caching
+<https://aws.amazon.com/about-aws/whats-new/2017/11/amazon-redshift-introduces-result-caching-for-sub-second-response-for-repeat-queries/>
+
+#### late materiazation
+<https://aws.amazon.com/about-aws/whats-new/2017/12/amazon-redshift-introduces-late-materialization-for-faster-query-processing/>
+
+#### query monitoring rules
+<https://docs.aws.amazon.com/redshift/latest/dg/cm-c-wlm-query-monitoring-rules.html>
+
  specifying sort keys, distribution keys, and column encodings can significantly improve storage, I/O, and query performance.
 
 <https://docs.aws.amazon.com/redshift/latest/dg/r_EXPLAIN.html>
