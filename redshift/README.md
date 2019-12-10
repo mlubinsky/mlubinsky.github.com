@@ -206,6 +206,8 @@ https://medium.com/teads-engineering/give-meaning-to-100-billion-events-a-day-pa
 
 <https://docs.aws.amazon.com/redshift/latest/dg/stored-procedure-overview.html>
 
+<https://aws.amazon.com/blogs/big-data/bringing-your-stored-procedures-to-amazon-redshift/>
+
 ### Litvinchik
 <https://tech.marksblogg.com/billion-nyc-taxi-rides-redshift-large-cluster.html>
 
