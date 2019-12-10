@@ -93,6 +93,9 @@ Redshift Optimization by AWS
 
 <https://discourse.looker.com/t/troubleshooting-redshift-performance-extensive-guide/326>
 
+#### analyze predicate
+<https://aws.amazon.com/blogs/big-data/collect-data-statistics-up-to-5x-faster-by-analyzing-only-predicate-columns-with-amazon-redshift/>
+
 #### short query acceleration
 <https://aws.amazon.com/about-aws/whats-new/2017/11/amazon-redshift-uses-machine-learning-to-accelerate-dashboards-and-interactive-analysis/>
 
