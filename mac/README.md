@@ -43,6 +43,13 @@ $  find /usr -type f | grep kafka-console | xargs ls -l
 -r-xr-xr-x  144 /usr/local/Cellar/kafka/2.3.1/bin/kafka-console-producer
 -rwxr-xr-x  945 /usr/local/Cellar/kafka/2.3.1/libexec/bin/kafka-console-consumer.sh
 -rwxr-xr-x  944 /usr/local/Cellar/kafka/2.3.1/libexec/bin/kafka-console-producer.sh
+
+
+$ cat /usr/local/Cellar/kafka/2.3.1/bin/kafka-console-consumer
+
+#!/bin/bash
+JAVA_HOME="$(/usr/libexec/java_home --version 1.8)" exec "/usr/local/Cellar/kafka/2.3.1/libexec/bin/kafka-console-consumer.sh" "$@"
+
 ```
 
 <https://magnet.crowdcafe.com/> Magnet - windows manager for Mac
