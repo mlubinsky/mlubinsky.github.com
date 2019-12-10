@@ -61,7 +61,7 @@ Redshift Optimization by AWS
 
 <https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html>
 
- Dense Compute (DC2) nodes 
+ #### Dense Compute (DC2) nodes 
  <https://aws.amazon.com/about-aws/whats-new/2017/10/amazon-redshift-announces-dense-compute-dc2-nodes-with-twice-the-performance-as-dc1-at-the-same-price/> 
  to provide low latency and high throughput for demanding data warehousing workloads. DC2 nodes feature powerful Intel E5-2686 v4 (Broadwell) CPUs, fast DDR4 memory, and NVMe-based solid state disks (SSDs). We’ve tuned Amazon Redshift to take advantage of the better CPU, network, and disk on DC2 nodes, providing up to twice the performance of DC1 at the same price. 
  <https://aws.amazon.com/redshift/pricing/>
@@ -82,6 +82,8 @@ Redshift Optimization by AWS
 ### Redshift Performance
 
 <https://aws.amazon.com/about-aws/whats-new/2018/07/amazon-redshift-now-provides-customized-best-practice-recommendations-with-advisor/>
+
+<https://aws.amazon.com/blogs/big-data/top-8-best-practices-for-high-performance-etl-processing-using-amazon-redshift/>
 
 <https://www.youtube.com/watch?v=wCxwYb5voJc> . Fabio Beltramini JOIN 2017 Deep Dive - Redshift Optimization
 
@@ -137,6 +139,16 @@ WHERE table_schema = 'myschema' AND table_name = 'mytable';
 <https://www.intermix.io/blog/top-14-performance-tuning-techniques-for-amazon-redshift/>
 
 <https://medium.com/udemy-engineering/improving-amazon-redshift-performance-our-data-warehouse-story-5ec1282c13d8>
+
+### code
+
+<https://github.com/awslabs/amazon-redshift-utils/blob/master/src/AdminScripts/top_queries.sql>
+
+<https://github.com/awslabs/amazon-redshift-utils/tree/master/src>
+
+<https://github.com/search?q=org%3Aawslabs+redshift>
+
+<https://github.com/search?q=org%3Aawslabs+redshift&type=Code>
 
 ### Compression
 
