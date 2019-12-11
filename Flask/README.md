@@ -4,6 +4,9 @@
 
 <https://testdriven.io/courses/tdd-flask/>  Developing a RESTful API with Python, Flask, Docker, and Pytest
 
+
+<https://www.agiratech.com/debugging-python-flask-app-in-docker-container/> Flask in Docker
+
 <https://youtu.be/e-_tsR0hVLQ> Flask
 
 <https://habr.com/ru/post/477126/> . Flask +ReactAmin
