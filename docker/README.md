@@ -60,6 +60,9 @@ CMD ["node", "index.js"]
 ... 
 
 ## Flask and Docker
+
+<https://www.agiratech.com/debugging-python-flask-app-in-docker-container/> 
+
 <https://testdriven.io/blog/dockerizing-flask-with-postgres-gunicorn-and-nginx/#.XbLvKyeAs7s.reddit>
 
 <https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-18-04>
