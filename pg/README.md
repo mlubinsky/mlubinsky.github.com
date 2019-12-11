@@ -14,6 +14,8 @@
 
 <https://news.ycombinator.com/item?id=21721832> PG at low level
 
+<https://habr.com/ru/post/479656/> ANALYZE TABLE statistics
+
 <https://www.postgresql.org/docs/12/functions-aggregate.html>
 ```
 select
