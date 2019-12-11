@@ -33,7 +33,10 @@ imagine that you have no task-switching penalties but have to perform two tasks 
 
 <https://medium.com/liveramp-engineering/seeking-map-side-join-c2007f31fa14>  Map Site Join
 
-## cloud service: common Architecture Do's
+##  Architecture 
+
+<http://highscalability.com/blog/2019/11/25/egnyte-architecture-lessons-learned-in-building-and-scaling.html>
+
 <https://danielsada.tech/blog/cloud-services-dos/>
 
 <https://news.ycombinator.com/item?id=21515772>
