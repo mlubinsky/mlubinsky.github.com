@@ -19,6 +19,10 @@
 ## Use Jinja template to generate dynamic SQL
 <https://medium.com/analytics-and-data/jinja-the-sql-way-of-the-ninja-9a64fc815564> (see pdf file in this folder)
 
+
+## Collections:NamedTuples (but better use Dataclasses in Python 3.7!) , Counter, DefaultDict, OrderedDict
+<https://habr.com/ru/post/478934/>
+
 ## Parsing
 <https://tomassetti.me/parsing-in-python/> Parsing in Python
 
