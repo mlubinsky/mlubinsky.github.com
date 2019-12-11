@@ -40,6 +40,8 @@ imagine that you have no task-switching penalties but have to perform two tasks 
 
 <https://github.com/adilkhash/Data-Engineering-HowTo>
 
+<https://habr.com/ru/company/otus/blog/479572/>  Gutenberg микросервисы Netflix Pub-Sub 
+
 ## Data Modeling
 
 <https://github.com/linkedin/WhereHows/wiki>
