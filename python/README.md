@@ -32,6 +32,7 @@
 
 <https://github.com/pvcraven/pypi_package_example>
 
+Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-entry-points/>
 
 ## ASGI 
 
