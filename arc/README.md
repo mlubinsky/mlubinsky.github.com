@@ -72,26 +72,40 @@ https://github.com/olirice/flupy . Fluent data pipelines for python and your she
 
 <https://www.lightbend.com/blog>
 
-## Architecture
+## Real time
 
 <https://www.lightbend.com/blog/use-kafka-streams-dynamically-controlled-streams>
 
 <https://medium.com/the-telegraph-engineering/pulse-the-telegraph-journey-towards-real-time-analytics-cd08c1078fa6> 
 
+<https://github.com/rikace/Presentations/blob/master/ReactiveStreams/slides/StreamProcessing.pdf>
+
+<https://research.fb.com/publications/realtime-data-processing-at-facebook/> Realtime Data Processing at Facebook
+
+
+<https://medium.com/@D11Engg/building-scalable-real-time-analytics-alerting-and-anomaly-detection-architecture-at-dream11-e20edec91d33> 
+
+<https://www.infoq.com/presentations/stream-analysis-fp/> . Real-Time Stream Analysis in Functional Reactive Programming
+
+<https://towardsdatascience.com/tracking-nyc-citi-bike-real-time-utilization-using-kafka-streams-1c0ea9e24e79>
+
+<https://www.memsql.com/blog/real-time-analytics-at-uber-scale/>
+
+<https://www.youtube.com/watch?v=kdmAiQeYGgE> Building a real-time analytics pipeline with BigQuery and Cloud Dataflow
+
+## distributed systems
 <https://www.youtube.com/watch?v=Y6Ev8GIlbxc> distributed systems
 
-<https://github.com/rikace/Presentations/blob/master/ReactiveStreams/slides/StreamProcessing.pdf>
+<http://book.mixu.net/distsys/single-page.html>
+
+
 
 <https://dzone.com/articles/how-to-build-a-google-search-autocomplete> How to Build a Google Search Autocomplete
 
 <https://research.fb.com/publications/scuba-diving-into-data-at-facebook/> Scuba: Diving into Data at Facebook
 <https://engineering.fb.com/data-infrastructure/scribe/> Scribe: Transporting petabytes per hour
 
-<https://research.fb.com/publications/realtime-data-processing-at-facebook/> Realtime Data Processing at Facebook
 
-<https://medium.com/@D11Engg/building-scalable-real-time-analytics-alerting-and-anomaly-detection-architecture-at-dream11-e20edec91d33> 
-
-<https://www.infoq.com/presentations/stream-analysis-fp/> . Real-Time Stream Analysis in Functional Reactive Programming
 
 <https://habr.com/ru/company/oleg-bunin/blog/466295/>
 
@@ -223,7 +237,7 @@ System thinking
 
 <https://medium.com/netflix-techblog/implementing-the-netflix-media-database-53b5a840b42a>
 
-<https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513>
+<https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513> AWS
 
 <https://www.ebayinc.com/stories/blogs/tech/an-approach-for-metadata-store-on-large-volume-data-sets/>
 
@@ -328,11 +342,11 @@ https://habr.com/company/yandex/blog/428700/ .  Model deployment
 
 <https://eng.uber.com/uber-big-data-platform/>
 
-<https://www.memsql.com/blog/real-time-analytics-at-uber-scale/>
+
 
 <https://www.cockroachlabs.com/blog/brief-history-high-availability/>
 
-<https://www.youtube.com/watch?v=kdmAiQeYGgE> Building a real-time analytics pipeline with BigQuery and Cloud Dataflow
+
 
 <https://www.youtube.com/watch?v=owTuuVt6Oro> Apache Beam
 
@@ -360,7 +374,7 @@ Just enough software architecture (g. fairbanks)
 
 <https://www.confluent.io/blog/putting-power-apache-kafka-hands-data-scientists/>
 
-<https://towardsdatascience.com/tracking-nyc-citi-bike-real-time-utilization-using-kafka-streams-1c0ea9e24e79>
+
 
 <https://habr.com/post/353734/> Distributed Architecture
 
