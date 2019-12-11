@@ -2,6 +2,8 @@
 
 <https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513>  
 
+<https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3> . 
+
 <https://dzone.com/articles/how-to-set-up-a-data-lake-architecture-with-aws>
 
 <https://dzone.com/articles/aws-lake-formation-for-data-lakes>
