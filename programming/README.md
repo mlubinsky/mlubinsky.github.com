@@ -83,6 +83,10 @@ But why are they called sum types? Well, if the value can only be one of a fixed
 
 ## Parsers
 
+### JavaScript
+<https://lihautan.com/json-parser-with-javascript/>
+<https://news.ycombinator.com/item?id=21772336>   JavaScript
+
 <https://chelseatroy.com/2019/11/11/building-a-parser/>
 
 <https://siddhesh.in/posts/gcc-under-the-hood.html> gcc under the hood
