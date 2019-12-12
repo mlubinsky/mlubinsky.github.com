@@ -6,7 +6,9 @@
 
 <https://begriffs.com/posts/2017-08-27-deferrable-sql-constraints.html> deferrable constraints
 
-<https://habr.com/ru/post/479508/> Python antipatterns: JOINS
+<https://habr.com/ru/post/479920/> WITH ORDINALITY
+
+<https://habr.com/ru/post/479508/> PG antipatterns: JOINS
 
 <https://habr.com/ru/post/479298/> PostgreSQL Antipatterns: CTE x CTE
 
