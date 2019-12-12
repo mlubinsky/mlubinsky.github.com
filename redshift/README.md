@@ -304,6 +304,7 @@ portion of data (based on the query) on to Redshift cluster and execute it there
 
 <https://blog.redpillanalytics.com/managing-snowflake-data-warehouse-compute-in-looker-e445543987b2>
 
+<https://medium.com/sevensenders-techblog/speaking-data-with-snowflake-and-looker-e4b219ed37aa> SNOWFLAKE + LOOKER
 <https://github.com/llooker/snowflake-usage-block> Looker + Snowflake
 
 <https://docs.snowflake.net/manuals/sql-reference-commands.html>
