@@ -2,6 +2,8 @@
 
  <https://stackoverflow.com/questions/58828417/how-to-avoid-calculating-the-same-expression-several-times-in-sql>
  
+ <https://habr.com/ru/company/otus/blog/479976/> SQL tricks
+ 
  <https://towardsdatascience.com/python-vs-sql-comparison-for-data-pipelines-8ca727b34032>
  
  <https://habr.com/ru/post/474458/> . Нарастающий (накопительный) итог 
