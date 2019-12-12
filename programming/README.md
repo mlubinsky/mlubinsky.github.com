@@ -21,6 +21,10 @@
 
 <https://medium.com/@copyconstruct/best-of-2018-in-tech-talks-2970eb3097af>
 
+## Zapier Higgin IFTT
+
+<https://news.ycombinator.com/item?id=21772610>
+
 ## ETL
 
 <https://dataschool.com/data-governance/> . Book
