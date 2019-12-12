@@ -6,6 +6,8 @@
 
 <https://www.youtube.com/watch?v=tzsOc-hBPfw>
 
+<https://www.youtube.com/watch?v=Eg2BjTmnLS8>
+
 <https://yurichev.com/blog/qsort/> quick sort
 
 <https://habr.com/ru/company/spice/blog/478250/>
