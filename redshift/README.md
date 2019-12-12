@@ -301,6 +301,9 @@ portion of data (based on the query) on to Redshift cluster and execute it there
 
 
 ## SnowFlake
+
+<https://blog.redpillanalytics.com/managing-snowflake-data-warehouse-compute-in-looker-e445543987b2>
+
 <https://docs.snowflake.net/manuals/sql-reference-commands.html>
 
 <https://docs.snowflake.net/manuals/user-guide/tables-micro-partitions.html>
