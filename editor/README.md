@@ -86,6 +86,8 @@ alias diff="diff-so-fancy"
 
 <https://habr.com/ru/company/microsoft/blog/472228/> 
 
+<https://habr.com/ru/company/edison/blog/479828/>
+
 <https://dev.to/lampewebdev/the-guide-to-visual-studio-code-shortcuts-higher-productivity-and-30-of-my-favourite-shortcuts-you-need-to-learn-mb3>
 
 <https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens> . GitLens
