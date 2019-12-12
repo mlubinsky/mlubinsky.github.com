@@ -2,6 +2,8 @@
 
 <https://t.me/ruairflow>
 
+<https://habr.com/ru/company/mailru/blog/479900/>
+
 Roku
 <https://blog.usejournal.com/roku-is-locking-down-tvs-until-you-give-personal-data-397ceadfd458>
 
