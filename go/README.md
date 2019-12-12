@@ -1,4 +1,4 @@
-<https://news.ycombinator.com/item?id=21225401>
+
 
 <https://play.golang.org/p/Irqxm0okfkt> .  Go playgrounds
 
@@ -19,25 +19,28 @@ Go has block-level scoping.
 
 <https://www.imdb.com/title/tt7349950/> Go 1.13
 
+## Style Guide
 <https://github.com/uber-go/guide/blob/master/style.md> go style guide
+
+<<https://news.ycombinator.com/item?id=21225401>>
 
 ## Go and databases
 <https://habr.com/ru/post/466459/> 
 
 <https://conroy.org/introducing-sqlc>
+<https://github.com/kyleconroy/sqlc>
+<https://habr.com/ru/company/oleg-bunin/blog/461935/> .  Postgres SQL
+<https://github.com/jmoiron/sqlx>
 
-https://habr.com/ru/company/oleg-bunin/blog/461935/ .  Postgres SQL
-https://github.com/jmoiron/sqlx
-https://github.com/kyleconroy/sqlc
 
 SQL parser :
-https://golang.works-hub.com/learn/lets-build-a-sql-parser-in-go-2cce1
+<https://golang.works-hub.com/learn/lets-build-a-sql-parser-in-go-2cce1>
  
  
  ## Go
  
-https://lets-go.alexedwards.net/
-https://github.com/Pungyeon/clean-go-article
+<https://lets-go.alexedwards.net/>
+<https://github.com/Pungyeon/clean-go-article>
 https://github.com/hoanhan101/ultimate-go
 https://github.com/quii/learn-go-with-tests
 https://github.com/ardanlabs/gotraining
