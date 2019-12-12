@@ -31,11 +31,14 @@ imagine that you have no task-switching penalties but have to perform two tasks 
 <https://towardsdatascience.com/lets-build-a-streaming-data-pipeline-e873d671fc57>
 
 ## Join Petabates
+
 <https://medium.com/liveramp-engineering/joining-petabytes-of-data-per-day-how-liveramp-powers-its-matching-product-fe7c0f440824> Joining Petabytes of Data Per Day
 
 <https://medium.com/liveramp-engineering/seeking-map-side-join-c2007f31fa14>  Map Site Join
 
 ##  Architecture 
+
+<https://habr.com/ru/company/avito/blog/479952/>
 
 <http://highscalability.com/blog/2019/11/25/egnyte-architecture-lessons-learned-in-building-and-scaling.html>
 
