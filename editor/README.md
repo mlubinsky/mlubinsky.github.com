@@ -42,6 +42,8 @@
 
 <https://github.com/so-fancy/diff-so-fancy>
 
+In order to make it your default Git pager, run this:
+
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 
 alias diff="diff-so-fancy"
@@ -51,6 +53,8 @@ alias diff="diff-so-fancy"
 <https://www.vimfromscratch.com/articles/awesome-command-line-tools/>
 
 <https://github.com/sharkdp/bat> . bat
+
+alias cat="bat"
 
 ## VIM
 <https://www.vimfromscratch.com/articles/vim-for-python/>
