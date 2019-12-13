@@ -1,6 +1,5 @@
 <https://www.youtube.com/user/AmazonWebServices>
 
-<https://www.reddit.com/r/bigdata/comments/e1g7jf/are_there_any_competitors_to_snowflake/>
 
 <https://fivetran.com/blog/warehouse-benchmark>
 
@@ -298,34 +297,3 @@ any external table created in this schema using Hive is visible and usable immed
 You can query these tables directly from Redshift and Redshift/Spectrum will automatically move the required
 portion of data (based on the query) on to Redshift cluster and execute it there.
 
-
-
-## SnowFlake
-
-<https://blog.redpillanalytics.com/managing-snowflake-data-warehouse-compute-in-looker-e445543987b2>
-
-<https://medium.com/sevensenders-techblog/speaking-data-with-snowflake-and-looker-e4b219ed37aa> SNOWFLAKE + LOOKER
-<https://github.com/llooker/snowflake-usage-block> Looker + Snowflake
-
-<https://docs.snowflake.net/manuals/sql-reference-commands.html>
-
-<https://docs.snowflake.net/manuals/user-guide/tables-micro-partitions.html>
-
-<http://cloudsqale.com/2019/12/02/snowflake-micro-partitions-and-clustering-depth/>
-
-<https://medium.com/hashmapinc/snowflakes-cloud-data-warehouse-what-i-learned-and-why-i-m-rethinking-the-data-warehouse-75a5daad271c>
-
-<https://tech.instacart.com/migration-from-redshift-to-snowflake-the-path-for-success-4caaac5e3728>
-
-<https://medium.com/@richiebachala/snowflake-redshift-bigquery-b84d2cb60168>
-
-
-<https://www.alooma.com/answers/why-did-you-choose-snowflake-over-amazon-redshift-for-your-cloud-data-warehouse>
-
-<https://www.alooma.com/blog/a-guide-to-selecting-the-right-cloud-data-warehouse>
-
-<https://www.periscopedata.com/blog/interactive-analytics-redshift-bigquery-snowflake>
-
-<https://hevodata.com/blog/snowflake-vs-redshift/>
-
-<https://medium.com/@ubethke/comparing-snowflake-cloud-data-warehouse-to-aws-athena-query-service-4f0ea32ef6db>
