@@ -1,14 +1,19 @@
 <https://queue.acm.org/pastissues.cfm>
 
-### Multi-armed bandit
 
-<https://en.wikipedia.org/wiki/Multi-armed_bandit>
 
 ### A/B testing
 
 <https://zulily-tech.com/2019/10/11/the-power-of-a-b-testing/>
 
 <https://zulily-tech.com/2018/04/06/practical-a-b-testing/>
+
+<https://en.wikipedia.org/wiki/Multi-armed_bandit>   Multi-armed bandit
+
+<https://www.optimizely.com/optimization-glossary/multi-armed-bandit/>
+
+<https://towardsdatascience.com/beyond-a-b-testing-multi-armed-bandit-experiments-1493f709f804>
+
 
 <http://book.mixu.net/distsys/single-page.html>
 
