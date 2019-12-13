@@ -1,5 +1,7 @@
 <https://riiswa.github.io/Scala-CheatSheet/>
 
+<https://www.youtube.com/watch?v=nD-p-cEKjHE> . SBT
+
 <https://blog.softwaremill.com/bootzooka-2019-functional-scala-and-react-3cf8c1a0f1c2>
 
 <https://github.com/ashwinbhaskar/functional-way>
