@@ -2,6 +2,8 @@
 
 <https://www.sigmacomputing.com/blog>
 
+<https://yellowbrick.com/>
+
 <https://docs.snowflake.net/manuals/user-guide/tables-micro-partitions.html>
 
 <http://cloudsqale.com/2019/12/02/snowflake-micro-partitions-and-clustering-depth/>
