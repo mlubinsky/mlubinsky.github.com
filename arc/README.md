@@ -1,5 +1,9 @@
 <https://queue.acm.org/pastissues.cfm>
 
+### Multi-armed bandit
+
+<https://en.wikipedia.org/wiki/Multi-armed_bandit>
+
 ### A/B testing
 
 <https://zulily-tech.com/2019/10/11/the-power-of-a-b-testing/>
