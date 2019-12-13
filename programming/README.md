@@ -5,6 +5,8 @@
 ```
 <https://stackexchange.com/sites>
 
+<https://leanpub.com/bookstore/book> 
+
 <https://habr.com/ru/post/476790/>  code streaming from cool programmers!
 
 <https://www.sicara.ai/blog/> ractical articles on AI and Big Data, by Sicara
