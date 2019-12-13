@@ -6,3 +6,5 @@
 
 ### Loker
 <https://blog.redpillanalytics.com/managing-snowflake-data-warehouse-compute-in-looker-e445543987b2>
+
+<https://github.com/llooker/snowflake-usage-block>
