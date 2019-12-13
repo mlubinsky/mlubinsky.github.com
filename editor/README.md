@@ -53,6 +53,7 @@ alias diff="diff-so-fancy"
 <https://github.com/sharkdp/bat> . bat
 
 ## VIM
+<https://www.vimfromscratch.com/articles/vim-for-python/>
 
 <https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim>
 
