@@ -85,6 +85,8 @@ But why are they called sum types? Well, if the value can only be one of a fixed
 
 ## Parsers
 
+<https://www.sanity.io/blog/why-we-wrote-yet-another-parser-compiler>
+
 ### JavaScript
 <https://lihautan.com/json-parser-with-javascript/>
 <https://news.ycombinator.com/item?id=21772336>   JavaScript
@@ -100,7 +102,7 @@ But why are they called sum types? Well, if the value can only be one of a fixed
 
 <https://www.booleanworld.com/building-recursive-descent-parsers-definitive-guide/> Recursive decendt parsers
 
-## PEG
+### PEG
 <https://habr.com/ru/post/471860/>
 
 <https://medium.com/@gvanrossum_83706/peg-parsers-7ed72462f97c> PEG from Guido
