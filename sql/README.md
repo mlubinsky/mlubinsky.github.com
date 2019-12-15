@@ -1,5 +1,7 @@
 ## SQL
 
+<https://www.db-fiddle.com/>
+
  <https://stackoverflow.com/questions/58828417/how-to-avoid-calculating-the-same-expression-several-times-in-sql>
  
  <https://habr.com/ru/company/otus/blog/479976/> SQL tricks
