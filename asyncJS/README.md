@@ -20,6 +20,8 @@
 
 <https://habr.com/ru/post/474726/>
 
+<https://habr.com/ru/post/480418/>
+
 <https://careersjs.com/magazine/async-patterns/>
 
 <https://medium.com/dailyjs/javascript-promises-zero-to-hero-plus-cheat-sheet-64d75051cffa>
