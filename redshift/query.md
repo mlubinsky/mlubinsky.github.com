@@ -112,24 +112,7 @@ order by salesid;
 
 <https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_examples.html>
 ```
-create table venue(
-venueid smallint not null,
-venuename varchar(100),
-venuecity varchar(30),
-venuestate char(2),
-venueseats integer,
-primary key(venueid))
-; 
 
-select venuestate, venuename, venueseats,
-nth_value(venueseats, 3)
-ignore nulls
-over(partition by venuestate order by venueseats desc
-rows between unbounded preceding and unbounded following)
-as third_most_seats
-from (select * from venue where venueseats > 0 and
-venuestate in('CA', 'FL', 'NY'))
-order by venuestate;
 
 select sellerid, qty, percent_rank() 
 over (partition by sellerid order by qty) 
@@ -191,8 +174,30 @@ sum(1) over (order by sellerid, salesid rows unbounded preceding) as rownum
 from winsales
 order by 2,1;
 ```
-### Sales
+### Venue table : ignore null example
 ``` 
+
+create table venue(
+venueid smallint not null,
+venuename varchar(100),
+venuecity varchar(30),
+venuestate char(2),
+venueseats integer,
+primary key(venueid))
+; 
+
+select venuestate, venuename, venueseats,
+nth_value(venueseats, 3)
+ignore nulls
+over(partition by venuestate order by venueseats desc
+rows between unbounded preceding and unbounded following)
+as third_most_seats
+from (select * from venue where venueseats > 0 and
+venuestate in('CA', 'FL', 'NY'))
+order by venuestate;
+```
+### Sales table
+```
 create table sales(
 salesid integer not null,
 listid integer not null,
@@ -226,7 +231,7 @@ from sales s, users u
 where s.sellerid = u.userid and state = 'WA' and sellerid < 1000
 group by sellerid, state;
 ```
-### cond expression
+### conditional expression
 ```
 select decode(NULL, null, 1234, '2345');
 select nvl2(NULL, '2345', 1234);
