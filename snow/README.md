@@ -1,3 +1,10 @@
+```
+Warehouses” and “databases” are not the same thing within Snowflake. A database in Snowflake really just represents a storage partition, while warehouses are compute resources.
+
+You can have multiple warehouses processing data in the same “database” concurrently. For example, you can have a “segment” warehouse writing to the “raw” database at the same time a “stitch” warehouse is writing to the “raw” database. I am not aware of any scaling considerations with “databases” within Snowflake. My understanding is that a database is just an organizational partition on top of the storage to help with stuff like permissions. Your scaling would be handled with warehouses.
+```
+
+
 <https://docs.snowflake.net/manuals/sql-reference-commands.html>
 
 <https://www.sigmacomputing.com/blog>
