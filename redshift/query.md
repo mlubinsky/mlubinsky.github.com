@@ -276,6 +276,9 @@ date_part
 select date_part(sec, micro) from seconds;
 ```
 ## Guide/Notes on moving from Postgres to Snowflake
+
+<https://discourse.getdbt.com/t/structure-snowflake-database-schema/211> .  Roles/Permissions
+
 <https://discourse.getdbt.com/t/guide-notes-on-moving-from-postgres-to-snowflake/510>
 ```
 
