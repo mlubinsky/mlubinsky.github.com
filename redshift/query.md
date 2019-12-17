@@ -275,3 +275,36 @@ date_part
 
 select date_part(sec, micro) from seconds;
 ```
+## Guide/Notes on moving from Postgres to Snowflake
+<https://discourse.getdbt.com/t/guide-notes-on-moving-from-postgres-to-snowflake/510>
+```
+
+nelsonauner
+Aug 13
+TL;DR - get ready for any SQL business logic to fail - in looker, DBT, etc. I highly recommend doing the migration over the weekend, give yourself a full day or two of work to fix up differences.
+
+I spent this past weekend migrating from postgres to Snowflake. Tristan has already written a post on on redshift to snowflake, but I thought I’d briefly jot down my notes if you are considering a postgres->snowflake move
+
+schema search path: I set the default schema in my DBT pre-run-hook, no can do in snowflake, so I used regex to append schemas to all mentioned tables (I know, I know, use sources).
+typecasting pain: I did a lot of SUM(has_discounts) as n_discounts , and am having difficulty casting booleans to a number
+datetime pain - I had variables like NOW() - MAX(table.created_at) AS time_since_update , and this magically showed up in Looker as “5 hours, 26 minutes…“. Snowflake, I need to DATEDIFF and have to choose to look at minutes or hours or days.
+casing - snowflake has different casing preferences, that work very poorly with looker, which by default quotes all your column names. I removed all of the quotes in my LookML to fix this.
+From Dan Hunt (DBT group)
+
+I’ve also just done a Postgres -> Snowflake migration. The main points not mentioned that come to mind are related to Snowflake regular expressions:
+
+Regex matching: the Postgres shorthand column ~ 'regex' becomes rlike(column, 'regex')
+Regex captures: extracting based on a regular expression capture changes from substring(column from 'regex') to regex_substring(column, 'regex', 1, 1, 'ie') to get the first match in a string (or similar, depending on case sensitivity, capture group, etc.)
+Regex escaping: in regex patterns, you need to double backslash to escape, so \. becomes \\. A few functions in Snowflake and not in Postgres have also been pretty helpful:
+ifnull(a, b) : I prefer this function for readability to the Postgres equivalent, coalesce(a, b)
+iif(condition, a, b) : perhaps not everyone agrees here, but I prefer this to a case statement with only one condition for cleaner code.
+I haven’t used try_cast yet, but this is also missing an equivalent from Postgres and potentially a big one for cleaning up conversions near the source layer
+From gitlab - https://gitlab.com/gitlab-data/analytics/issues/645 2
+
+now() was replaced with current_date
+UDFs had to be re-written
+date math is totally different; we can now leverage the native datediff and dateadd to see the difference between two dates or a date and some interval ( dateadd can also subtract by use of negative intervals)
+stringagg to listagg
+snowflake errors out on ~ , !~ , <> , etc
+current is a protected word
+```
