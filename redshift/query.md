@@ -9,6 +9,8 @@ https://docs.aws.amazon.com/redshift/latest/dg/r_Data_type_formatting.html
 
 
 ```
+select * from winsales limit (SELECT 5-2);
+
 select md5('Amazon Redshift');
 
 create table winsales(
