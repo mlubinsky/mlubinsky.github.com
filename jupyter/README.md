@@ -2,6 +2,9 @@
 
 <https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
 
+<https://realpython.com/python-statistics/>
+
+<https://pbpython.com/natural-breaks.html>
 
 <https://www.aicheatsheets.com/>
 
