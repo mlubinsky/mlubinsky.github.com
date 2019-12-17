@@ -1,3 +1,38 @@
+### aws cli via brew
+```
+brew install awscli
+==> Pouring awscli-1.16.300.mojave.bottle.tar.gz
+==> Caveats
+The "examples" directory has been installed to:
+  /usr/local/share/awscli/examples
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+ /usr/local/Cellar/awscli/1.16.300: 8,079 files, 58.8MB
+ 
+ which aws
+/usr/local/bin/aws
+
+aws --version
+aws-cli/1.16.300 Python/3.7.5 Darwin/18.7.0 botocore/1.13.36
+```
+### aws cli via pip install
+```
+cd my_virt_envs/
+virtualenv aws
+pip install awscli --upgrade
+
+/Users/mlubinsky/my_virt_envs/aws/bin/aws
+ 
+/Users/mlubinsky/my_virt_envs/aws/bin/aws --version
+aws-cli/1.16.304 Python/2.7.10 Darwin/18.7.0 botocore/1.13.40
+
+```
+
 <https://expeditedsecurity.com/aws-in-plain-english/>
 
 <https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513>  
