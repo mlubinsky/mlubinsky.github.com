@@ -12,7 +12,35 @@ https://docs.aws.amazon.com/redshift/latest/dg/r_Data_type_formatting.html
 select * from winsales limit (SELECT 5-2);
 
 select md5('Amazon Redshift');
+```
+### REGEXP
+```
+select regexp_count('abcadsadsaabcfasdf', '[abc]{3}'); 
+ regexp_count 
+-------------- 
+ 2 
+ 
+ select regexp_instr('This is the in string example','in string', 1); 
+ regexp_instr 
+-------------- 
+ 13 
 
+select regexp_replace( 'email_id@gmail.com', '@.*\\.(com)');
+regexp_replace
+--------------
+email_id
+(1 row)
+
+Select regexp_substr('fruit chocolate chip', 'ch(i|o)p', 1); 
+ regexp_substr 
+--------------- 
+ chip 
+(1 row)
+```
+### Winsales table
+<https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_examples.html>
+
+```
 create table winsales(
 salesid int,
 dateid date,
@@ -110,11 +138,6 @@ min(qty) over
 (order by salesid rows unbounded preceding)
 from winsales
 order by salesid;
-```
-
-<https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_examples.html>
-```
-
 
 select sellerid, qty, percent_rank() 
 over (partition by sellerid order by qty) 
@@ -281,6 +304,38 @@ date_part
 (1 row)
 
 select date_part(sec, micro) from seconds;
+
+http://dwgeek.com/commonly-used-redshift-date-functions-examples.html/
+
+ 
+select current_date;
+select current_timestamp; 
+--Sysdate is similar to Oracle
+select sysdate;
+select getdate();
+--Add months and convert date to integer in Redshift:
+select to_char(add_months(to_date(current_date, 'YYYY-MM-DD'), -1), 'YYYYMMDD');
+--Add months and convert date to integer:
+select to_number(to_char(add_months(current_date, -1),'YYYYMMDD'),'99999999');
+--Substract Month from date in Redshift
+select date(current_date - cast('1 month' as interval));
+---Extract year,day,month part from the current date in Redshift
+select extract (year from current_date); 
+--Use date_trunc function
+select date_trunc('year', current_date); 
+--Use Extract function
+select extract (day from current_date);
+select extract (month from current_date);
+Redshift get first and last day of previous month In Redshift:
+select last_day(current_date - cast('2 month' as interval)) + cast('1 day' as interval) as first_day;
+select last_day( current_date - cast('1 month' as interval)) as last_day;
+
+http://dwgeek.com/amazon-redshift-date-format-conversion-examples.html/
+
+select TO_CHAR(TO_DATE( '2016-10-22 22:30:58','YYYY-MM-DD HH24:MI:SS'),'YYYYMMDD'); 
+select date(to_char(20161022,'99999999'));
+select TIMEZONE ('GMT',now() ); 
+
 ```
 ## Guide/Notes on moving from Postgres to Snowflake
 
