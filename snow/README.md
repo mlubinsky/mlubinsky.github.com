@@ -1,3 +1,4 @@
+<https://discourse.getdbt.com/t/structure-snowflake-database-schema/211/9>
 ```
 Warehouses” and “databases” are not the same thing within Snowflake. A database in Snowflake really just represents a storage partition, while warehouses are compute resources.
 
