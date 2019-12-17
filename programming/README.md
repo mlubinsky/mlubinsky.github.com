@@ -12,6 +12,10 @@
 <https://www.sicara.ai/blog/> ractical articles on AI and Big Data, by Sicara
 <https://medium.com/sicara> Practical articles on AI and Big Data, by Sicara
 
+<http://concurnas.com/>
+
+Julia
+Nim
 
 <https://free-for.dev/#/>
 
