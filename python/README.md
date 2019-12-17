@@ -16,7 +16,7 @@
 
 <https://habr.com/ru/company/piter/blog/471520/> Книга «Классические задачи Computer Science на языке Python»
 
-## Use Jinja template to generate dynamic SQL
+### Use Jinja template to generate dynamic SQL
 <https://medium.com/analytics-and-data/jinja-the-sql-way-of-the-ninja-9a64fc815564> (see pdf file in this folder)
 
 
@@ -25,6 +25,8 @@
 
 ## Parsing
 <https://tomassetti.me/parsing-in-python/> Parsing in Python
+
+<https://github.com/thebjorn/pydeps> showdependency using graphviz
 
 ## Creating Python Package
 
