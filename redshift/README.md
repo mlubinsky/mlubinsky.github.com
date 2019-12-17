@@ -53,6 +53,11 @@ Redshift Optimization by AWS
 <https://help.looker.com/hc/en-us/articles/360001288108-Dynamically-Select-Fields-Using-Parameters>
 
 ## Redshift
+Functions - <https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html>
+https://docs.aws.amazon.com/redshift/latest/dg/r_STRTOL.html
+select strtol('0xf',16) answer: 15
+<https://docs.aws.amazon.com/redshift/latest/dg/r_Examples_of_avg_WF.html>
+
 
 <https://aws.amazon.com/blogs/big-data/simplify-management-of-amazon-redshift-clusters-with-the-redshift-console/>
 
