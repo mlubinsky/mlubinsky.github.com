@@ -2,6 +2,8 @@
 
 <https://discourse.getdbt.com/t/structure-snowflake-database-schema/211/9>
 
+<https://community.snowflake.com/s/article/Migrating-from-Redshift-to-Snowflake>
+
 <https://discourse.getdbt.com/t/the-difference-between-users-groups-and-roles-on-postgres-redshift-and-snowflake/429>
 ```
 Warehouses” and “databases” are not the same thing within Snowflake. A database in Snowflake really 
