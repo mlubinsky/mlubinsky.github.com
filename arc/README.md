@@ -1,5 +1,7 @@
 <https://queue.acm.org/pastissues.cfm>
 
+<https://atlas.apache.org/#/> Data Governance and Metadata framework for Hadoop
+
 <http://shop.oreilly.com/product/0636920073994.do>  Book Streaming System
 
 ### A/B testing
