@@ -274,11 +274,18 @@ The virtualenv is the basic tool which works with Python2 and Python3: https://v
 By default, Virtualenv creates virtual environment using the version of Python under which it is installed.  To specify another version of the Python use the -p option.
 On some occasions, you might want to create a virtual environment with the packages from the global Python installation. This can be accomplished using --system-site-packages option.
 virtualenv  v1      # create new virtual environment named v1; it will have the local folders: bin, include and lib
+
 source v1/bin/activate      # activate it; it changes the $PATH so that the bin/directory of the virtual environment will become first in the list
 echo $PATH                         # it is different now
 which python
 pip install ...                        # packages will be installed into v1/lib/pythonX.Y/site-packages 
 deactivate                           # deactivate 
+
+-- pyenv
+https://github.com/pyenv/pyenv
+https://axcoto.com/notes/manage-python-versions-on-macosx/
+https://www.marc-richter.info/using-pyenv-to-manage-your-python-interpreters/
+
 
 https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 conda-env list
