@@ -2,7 +2,13 @@
 
 <https://discourse.getdbt.com/t/structure-snowflake-database-schema/211/9>
 
+### Migration from Redshift
 <https://community.snowflake.com/s/article/Migrating-from-Redshift-to-Snowflake>
+
+<https://support.snowflake.net/s/article/How-To-Migrate-Data-from-Amazon-Redshift-into-Snowflake>
+
+https://community.snowflake.com/s/article/Migrating-from-Redshift-to-Snowflake-in-Python
+
 
 <https://discourse.getdbt.com/t/the-difference-between-users-groups-and-roles-on-postgres-redshift-and-snowflake/429>
 ```
