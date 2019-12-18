@@ -4,13 +4,15 @@
 
 <https://discourse.getdbt.com/t/the-difference-between-users-groups-and-roles-on-postgres-redshift-and-snowflake/429>
 ```
-Warehouses” and “databases” are not the same thing within Snowflake. A database in Snowflake really just represents a storage partition, while warehouses are compute resources.
+Warehouses” and “databases” are not the same thing within Snowflake. A database in Snowflake really 
+just represents a storage partition, while warehouses are compute resources.
 
 You can have multiple warehouses processing data in the same “database” concurrently. 
 For example, you can have a “segment” warehouse writing to the “raw” database 
 at the same time a “stitch” warehouse is writing to the “raw” database. 
 I am not aware of any scaling considerations with “databases” within Snowflake. 
-My understanding is that a database is just an organizational partition on top of the storage to help with stuff like permissions. Your scaling would be handled with warehouses.
+My understanding is that a database is just an organizational partition on top of the storage to help
+with stuff like permissions. Your scaling would be handled with warehouses.
 ```
 
 
@@ -51,7 +53,7 @@ My understanding is that a database is just an organizational partition on top o
 <https://www.reddit.com/r/bigdata/comments/e1g7jf/are_there_any_competitors_to_snowflake/>
 
 
-### Loker
+### Looker
 <https://blog.redpillanalytics.com/managing-snowflake-data-warehouse-compute-in-looker-e445543987b2>
 
 <https://github.com/llooker/snowflake-usage-block>
