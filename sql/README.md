@@ -2,6 +2,8 @@
 
 <https://www.db-fiddle.com/>
 
+<https://winand.at/newsletter/2019-12/partiql-microsoft-licenses-volcano-model>
+
  <https://stackoverflow.com/questions/58828417/how-to-avoid-calculating-the-same-expression-several-times-in-sql>
  
  <https://habr.com/ru/company/otus/blog/479976/> SQL tricks
