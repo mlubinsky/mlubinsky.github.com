@@ -10,6 +10,8 @@
 
 <https://zulily-tech.com/2018/04/06/practical-a-b-testing/>
 
+<https://www.periscopedata.com/blog/a-b-test-reporting-and-visualization-in-sql>
+
 <https://en.wikipedia.org/wiki/Multi-armed_bandit>   Multi-armed bandit
 
 <https://www.optimizely.com/optimization-glossary/multi-armed-bandit/>
