@@ -26,9 +26,12 @@ with stuff like permissions. Your scaling would be handled with warehouses.
 
 <https://docs.snowflake.net/manuals/sql-reference-commands.html>
 
-<https://www.sigmacomputing.com/blog>
+<https://www.sigmacomputing.com/blog> . SIGMACOMPUTING
 
-<https://yellowbrick.com/>
+<https://yellowbrick.com/> .   YELLOWBRICK
+
+
+https://towardsdatascience.com/machine-learning-in-snowflake-fdcff3bdc1a7
 
 <https://docs.snowflake.net/manuals/user-guide/tables-micro-partitions.html>
 
