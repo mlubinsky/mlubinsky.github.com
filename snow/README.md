@@ -11,6 +11,9 @@ https://community.snowflake.com/s/article/Migrating-from-Redshift-to-Snowflake-i
 
 
 <https://discourse.getdbt.com/t/the-difference-between-users-groups-and-roles-on-postgres-redshift-and-snowflake/429>
+
+<https://medium.com/@jthandy/how-compatible-are-redshift-and-snowflakes-sql-syntaxes-c2103a43ae84>
+
 ```
 Warehouses” and “databases” are not the same thing within Snowflake. A database in Snowflake really 
 just represents a storage partition, while warehouses are compute resources.
