@@ -91,6 +91,8 @@ docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=passwo
 
 <https://news.ycombinator.com/item?id=21484215>
 
+<https://threedots.tech/post/when-sql-database-makes-great-pub-sub/>
+
 ### Column store extension for PostgreSQL
 <https://habr.com/ru/post/472396/>
 
