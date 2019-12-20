@@ -2,6 +2,8 @@
 
 <https://pythonbooks.org/>
 
+<https://docs.quantifiedcode.com/python-anti-patterns/index.html> antiputterns
+
 <https://knowledgeisle.com/wp-content/uploads/2019/10/Serious-Python_-2019.pdf> Serious Python
 
 <https://effectivepython.com/2019/10/22/memoryview-bytearray-zero-copy-interactions>  Effective Python 2nd ed
