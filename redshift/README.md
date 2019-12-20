@@ -52,6 +52,14 @@ Redshift Optimization by AWS
 
 <https://help.looker.com/hc/en-us/articles/360001288108-Dynamically-Select-Fields-Using-Parameters>
 
+## GRANT Permission
+https://aodba.com/how-to-create-a-schema-and-grant-access-to-it-in-aws-redshift/
+```
+GRANT USAGE ON SCHEMA my_schema_name TO my_user_name;
+GRANT SELECT ON ALL TABLES IN SCHEMA my_schema_name TO my_user_name;
+ALTER DEFAULT PRIVILEGES IN SCHEMA my_schema_name GRANT SELECT ON TABLES TO my_user_name;
+```
+
 ## Redshift functions
 Functions - <https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html>
 <https://docs.aws.amazon.com/redshift/latest/dg/r_Window_function_examples.html>
