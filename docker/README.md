@@ -1,5 +1,8 @@
 # Docker
 
+Тома Docker (Docker Volumes) представляют - механизм постоянного хранения данных, потребляемых или производимых приложениями.
+<https://docs.docker.com/storage/volumes/> volumes
+
 <https://github.com/eon01/DockerCheatSheet>
 
 <https://habr.com/ru/company/ruvds/blog/441574/> 6 articles
