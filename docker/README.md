@@ -1,7 +1,27 @@
 # Docker
 
+###
 Тома Docker (Docker Volumes) представляют - механизм постоянного хранения данных, потребляемых или производимых приложениями.
 <https://docs.docker.com/storage/volumes/> volumes
+```
+ docker volume ls
+         DRIVER              VOLUME NAME
+         local               myVolume
+
+docker volume inspect myVolume
+
+[
+    {
+        "CreatedAt": "2019-12-22T04:03:11Z",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/myVolume/_data",
+        "Name": "myVolume",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+```
 
 <https://github.com/eon01/DockerCheatSheet>
 
