@@ -1,5 +1,9 @@
 ### Overview
 
+<https://juliandontcheff.wordpress.com/2019/01/14/few-interesting-facts-about-oracle-adb-redshift-and-snowflake/>
+
+<https://www.periscopedata.com/blog/interactive-analytics-redshift-bigquery-snowflake>
+
 <http://dwgeek.com/snowflake-architecture-cloud-data-warehouse.html/>
 
 <https://docs.snowflake.net/manuals/other-resources.html>
@@ -12,7 +16,13 @@
 
 <https://hevodata.com/blog/snowflake-data-warehouse-features/>
 
+<https://getaround.tech/snowflake-migration/>
+
+<https://www.stitchdata.com/blog/migration-from-redshift-to-snowflake/>
+
 <https://discourse.getdbt.com/t/structure-snowflake-database-schema/211/9>
+
+<https://visualbi.com/blogs/snowflake/snowflake-best-practices-performance-optimization/>
 
 <https://www.infoq.com/presentations/snowflake-automatic-clustering/>
 
