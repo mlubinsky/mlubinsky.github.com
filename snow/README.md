@@ -29,6 +29,9 @@
  By default, Snowflake cluster is based on the order in which we receive the records. Just imagine a stream of records coming into the system and we just chop when we are able to create the file size. The only partitioning logic that we use is, "Are we able to create the file size that we want?" We keep collecting, let's say, we have 10 records when we can create the file size that we want, we chop at every 10 records and create this file and flush to S3. As you can see, it's the values are grouped only by one dimension and that is the dimension in which data is being loaded into the system. It's not grouped by any other logical dimension within the data. We don't look into the data itself and try to group it based on a specific column by default.
 
 ### Migration from Redshift
+
+<http://erqt.mikeprange.de/redshift-to-snowflake-migration.html>
+
 <https://community.snowflake.com/s/article/Migrating-from-Redshift-to-Snowflake>
 
 <https://support.snowflake.net/s/article/How-To-Migrate-Data-from-Amazon-Redshift-into-Snowflake>
