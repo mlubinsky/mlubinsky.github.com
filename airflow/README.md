@@ -1,5 +1,7 @@
 <https://habr.com/ru/company/mailru/blog/344398/>
 
+<https://towardsdatascience.com/how-to-use-airflow-without-headaches-4e6e37e6c2bc>
+
 <https://t.me/ruairflow>
 
 <https://habr.com/ru/company/mailru/blog/479900/>
