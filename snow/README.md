@@ -1,4 +1,5 @@
 <https://blog.getdbt.com/how-we-configure-snowflake/>
+https://hevodata.com/blog/snowflake-data-warehouse-features/
 
 <https://discourse.getdbt.com/t/structure-snowflake-database-schema/211/9>
 
