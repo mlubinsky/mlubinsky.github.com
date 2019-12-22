@@ -1,9 +1,12 @@
 # Docker
 
-###
+### Volumes mount bind
 Тома Docker (Docker Volumes) представляют - механизм постоянного хранения данных, потребляемых или производимых приложениями.
 <https://docs.docker.com/storage/volumes/> volumes
+
+<https://habr.com/ru/company/ruvds/blog/441574/>
 ```
+ docker volume create —-name myVolume
  docker volume ls
          DRIVER              VOLUME NAME
          local               myVolume
@@ -21,6 +24,9 @@ docker volume inspect myVolume
         "Scope": "local"
     }
 ]
+
+docker volume rm myVolume  # remove volume
+docker volume prune .  remove all volumes
 ```
 <https://habr.com/ru/company/ruvds/blog/439980/>
 
