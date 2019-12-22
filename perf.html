@@ -27,6 +27,35 @@ https://hub.docker.com/r/justb4/jmeter/
 <b>
 https://www.blazemeter.com/blog/make-use-of-docker-with-jmeter-learn-how/
 </b>
+
+
+
+docker build -t jmeter .
+docker image ls
+docker volume create myVolume
+docker volume inspect myVolume
+
+
+```
+in Dockerfile:
+ARG JMETER_VERSION="5.2.1"
+
+[
+    {
+        "CreatedAt": "2019-12-22T04:03:11Z",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/myVolume/_data",
+        "Name": "myVolume",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+
+
+```
+
+
 https://stackoverflow.com/questions/35960164/jmeter-and-docker
 https://medium.com/@vepo/dockerized-jmeter-84228733e306
 
