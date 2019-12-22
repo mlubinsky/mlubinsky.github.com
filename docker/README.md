@@ -1,4 +1,5 @@
 # Docker
+<https://youtu.be/zJ6WbK9zFpI>
 
 ### Volumes mount bind
 Тома Docker (Docker Volumes) представляют - механизм постоянного хранения данных, потребляемых или производимых приложениями.
