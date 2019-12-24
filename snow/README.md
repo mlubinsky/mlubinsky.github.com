@@ -1,5 +1,7 @@
 ### Overview
 
+<https://www.dataengineeringpodcast.com/snowflakedb-cloud-data-warehouse-episode-110/>
+
 <https://juliandontcheff.wordpress.com/2019/01/14/few-interesting-facts-about-oracle-adb-redshift-and-snowflake/>
 
 <https://www.periscopedata.com/blog/interactive-analytics-redshift-bigquery-snowflake>
