@@ -374,6 +374,7 @@ Traditional methods of detection involved using a block-wise orientation histogr
 ## Hardware accelerators TCU, NPU, ... 
 <https://habr.com/ru/post/455353/>
 
+<https://habr.com/ru/company/advantech/blog/481862/> Jetson NVidia Maxwell GPU
 
 <https://www.analyticsvidhya.com/blog/2017/10/image-skilltest/>
 
