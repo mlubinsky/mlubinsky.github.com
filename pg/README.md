@@ -8,6 +8,8 @@
 
 <https://habr.com/ru/post/479920/> WITH ORDINALITY
 
+<https://habr.com/ru/company/barsgroup/blog/481694/> Partitioning
+
 https://habr.com/ru/post/481122/
 
 <https://habr.com/ru/post/479508/> PG antipatterns: JOINS
