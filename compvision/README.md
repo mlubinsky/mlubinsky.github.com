@@ -7,6 +7,8 @@ Image formats:
 
 <https://habr.com/ru/company/mipt/blog/458190/>  Вижу, значит существую: обзор Deep Learning в Computer Vision (часть 2)
 
+<https://habr.com/ru/post/481844/>
+
 <https://habr.com/ru/company/mailru/blog/460307/>
 
 <https://sahnimanas.github.io/post/anatomy-of-a-high-performance-convolution/> convolution 
