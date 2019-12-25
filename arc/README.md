@@ -12,12 +12,15 @@
 
 <https://www.periscopedata.com/blog/a-b-test-reporting-and-visualization-in-sql>
 
+<https://habr.com/ru/company/otus/blog/481936/>
+
 <https://en.wikipedia.org/wiki/Multi-armed_bandit>   Multi-armed bandit
 
 <https://www.optimizely.com/optimization-glossary/multi-armed-bandit/>
 
 <https://towardsdatascience.com/beyond-a-b-testing-multi-armed-bandit-experiments-1493f709f804>
 
+## Distributed systems
 
 <http://book.mixu.net/distsys/single-page.html>
 
