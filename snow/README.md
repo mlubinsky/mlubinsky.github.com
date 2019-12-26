@@ -1,5 +1,7 @@
 ### Overview
 
+<https://www.reddit.com/r/BusinessIntelligence/comments/d1x42g/is_anyone_here_using_snowflake_i_especially_want/> . Criticizm
+
 <https://www.dataengineeringpodcast.com/snowflakedb-cloud-data-warehouse-episode-110/>
 
 <https://juliandontcheff.wordpress.com/2019/01/14/few-interesting-facts-about-oracle-adb-redshift-and-snowflake/>
