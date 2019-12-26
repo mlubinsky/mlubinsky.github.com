@@ -15,6 +15,31 @@ Pexpect allows your script to spawn a child application and control it as if a h
 
 https://habr.com/post/435546/  
 
+
+### SSH from Python
+
+<https://janakiev.com/blog/python-shell-commands/>
+```
+import subprocess
+
+ssh = subprocess.Popen(["ssh", "-i .ssh/id_rsa", "user@host"],
+                        stdin =subprocess.PIPE,
+                        stdout=subprocess.PIPE,
+                        stderr=subprocess.PIPE,
+                        universal_newlines=True,
+                        bufsize=0)
+ 
+# Send ssh commands to stdin
+ssh.stdin.write("uname -a\n")
+ssh.stdin.write("uptime\n")
+ssh.stdin.close()
+
+# Fetch output
+for line in ssh.stdout:
+    print(line.strip())
+    
+```    
+
 ### TUNNELS
 https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-ssh-config/  
   
