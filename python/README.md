@@ -18,12 +18,11 @@
 
 <https://habr.com/ru/company/piter/blog/471520/> Книга «Классические задачи Computer Science на языке Python»
 
-### Use Jinja template to generate dynamic SQL
-<https://medium.com/analytics-and-data/jinja-the-sql-way-of-the-ninja-9a64fc815564> (see pdf file in this folder)
 
 
-## Collections:NamedTuples (but better use Dataclasses in Python 3.7!) , Counter, DefaultDict, OrderedDict
-<https://habr.com/ru/post/478934/>
+### Call Shell Commands with Python
+
+<https://janakiev.com/blog/python-shell-commands/>
 
 ## Parsing
 <https://tomassetti.me/parsing-in-python/> Parsing in Python
@@ -113,6 +112,9 @@ class Person:
 
 <http://python-notes.curiousefficiency.org/en/latest/python_concepts/import_traps.html>
 
+## Collections:NamedTuples (but better use Dataclasses in Python 3.7!) , Counter, DefaultDict, OrderedDict
+<https://habr.com/ru/post/478934/>
+
 ## defaultdict
 
 Task: group words by their 1st letter.
@@ -195,6 +197,10 @@ python3 -m http.server <8000> (python3)
 <https://habr.com/ru/post/462179/> f-strings (Python > 3.6)
 
 <https://www.blog.duomly.com/20-essential-python-tips-and-tricks-you-should-know/>
+
+
+### Use Jinja template to generate dynamic SQL
+<https://medium.com/analytics-and-data/jinja-the-sql-way-of-the-ninja-9a64fc815564> (see pdf file in this folder)
 
 
 ```
