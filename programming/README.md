@@ -133,6 +133,8 @@ But why are they called sum types? Well, if the value can only be one of a fixed
 <https://github.com/anan44/it-starts-with-clojure>
 <http://blog.klipse.tech/clojure/2018/12/18/welcome-clojure-10.html>
 
+<https://lambdaisland.com/>
+
 <https://github.com/darkleaf/app-from-scratch/> Clojure Rus
 
 <https://news.ycombinator.com/item?id=20857887>
