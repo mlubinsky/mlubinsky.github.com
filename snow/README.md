@@ -4,6 +4,11 @@
 
  Snowflake is case-sensitive. So you have to wrap any string queries in a lower() statement to get things to lower case. This requirement has resulted in some bad data from a few analysts (or longer query turnaround times) until we all got used to it.
 
+Cool staff in snowflake 10 articles:
+<https://sqlkover.com/?s=Cool+Stuff+in+Snowflake&submit=Search>
+
+ 
+
 <https://www.dataengineeringpodcast.com/snowflakedb-cloud-data-warehouse-episode-110/>
 
 <https://juliandontcheff.wordpress.com/2019/01/14/few-interesting-facts-about-oracle-adb-redshift-and-snowflake/>
