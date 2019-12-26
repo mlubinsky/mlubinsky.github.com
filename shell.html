@@ -24,8 +24,18 @@ cat foo.txt > output.txt 2>&1
 time echo foo 2>&1 > file.txt
 
 
+If you check the output file nohup.out during execution 
+you might notice that the outputs are not written into this file until the execution is finished. 
+This happens because of output buffering. If you add the -u flag you can avoid output buffering like this:
 
-Command - line tools 
+nohup python -u ./test.py &
+Or by specifying a log file:
+
+nohup python -u ./test.py > output.log &
+
+
+<h3>Command - line tools</h3> 
+
 https://github.com/learn-anything/command-line-tools#readme
 https://www.wezm.net/technical/2019/10/useful-command-line-tools/
 https://news.ycombinator.com/item?id=21363121
