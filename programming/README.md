@@ -50,6 +50,8 @@ Nim
 
 ## Func Programming
 
+<https://news.ycombinator.com/item?id=21879368>
+
 <https://harrylaou.com/slides/AlgebrasInProgramming.pdf>
 
 <https://bytes.yingw787.com/posts/2019/12/06/monads/>
