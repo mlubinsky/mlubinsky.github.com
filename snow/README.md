@@ -2,6 +2,8 @@
 
 <https://www.reddit.com/r/BusinessIntelligence/comments/d1x42g/is_anyone_here_using_snowflake_i_especially_want/> . Criticizm
 
+ Snowflake is case-sensitive. So you have to wrap any string queries in a lower() statement to get things to lower case. This requirement has resulted in some bad data from a few analysts (or longer query turnaround times) until we all got used to it.
+
 <https://www.dataengineeringpodcast.com/snowflakedb-cloud-data-warehouse-episode-110/>
 
 <https://juliandontcheff.wordpress.com/2019/01/14/few-interesting-facts-about-oracle-adb-redshift-and-snowflake/>
