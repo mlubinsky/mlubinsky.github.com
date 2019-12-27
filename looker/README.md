@@ -10,3 +10,6 @@
 <https://docs.looker.com/data-modeling/learning-lookml/caching> Caching Queries
 
 <https://looker.com/blog/data-science-with-looker-and-python-part-two> . Data Science with looker
+
+
+<https://looker.com/blog>
