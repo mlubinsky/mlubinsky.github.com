@@ -138,3 +138,5 @@ https://docs.snowflake.net/manuals/user-guide/data-load-snowpipe-intro.html
 <https://github.com/llooker/snowflake-usage-block>
 
 <https://medium.com/sevensenders-techblog/speaking-data-with-snowflake-and-looker-e4b219ed37aa>
+
+<https://looker.com/blog/using-snowflake-mvs-in-looker>
