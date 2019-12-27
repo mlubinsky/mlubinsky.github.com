@@ -41,6 +41,8 @@ Cool staff in snowflake 10 articles:
 
 ### Migration from Redshift
 
+<https://redpillanalytics.com/so-you-want-to-migrate-to-snowflake-part-2/>
+
 <http://erqt.mikeprange.de/redshift-to-snowflake-migration.html>
 
 <https://community.snowflake.com/s/article/Migrating-from-Redshift-to-Snowflake>
