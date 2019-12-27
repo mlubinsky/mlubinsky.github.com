@@ -1,3 +1,5 @@
+<https://training.looker.com/> mlubinsky@ho / LeVe>
+
 <https://docs.looker.com/data-modeling/learning-lookml/lookml-terms-and-concepts>
 
 <https://docs.looker.com/data-modeling/learning-lookml/lookml-terms-and-concepts#derived-table> Derived table
@@ -24,8 +26,13 @@ dimension_group
 measure -  is a field that uses a SQL aggregate function, such as COUNT, SUM, AVG, MIN, or MAX. Any field computed based on the values of other measure values is also a measure. Measures can be used to filter grouped values. For example, measures for a Sales view might include total items sold (a count), total sale price (a sum), and average sale price (an average).
 
 set
+
+Parameters in Looker increase interactivity for users and provide flexibility from the front end perspective without having to write custom code for each and every field the user asks for.
 ```
-<https://training.looker.com/> mlubinsky@ho / LeVe
+### Liquid variables
+<https://docs.looker.com/reference/liquid-variables>
+<https://blog.redpillanalytics.com/how-to-create-a-basic-parameter-in-looker-using-a-liquid-variable-e97d2b9b4669>
+
 
 <https://looker.com/guide>
 
@@ -38,9 +45,7 @@ SQL block
 
 <https://www.youtube.com/user/LookerData>
 
-### Programmatic LookML Generation
-<https://www.youtube.com/watch?v=cdyn-KLwyfc> .   
-<https://github.com/llooker/lookmlscript>
+
 
 
 <https://docs.looker.com/data-modeling/learning-lookml/caching> Caching Queries
@@ -55,5 +60,13 @@ SQL block
 <https://discourse.looker.com/t/lookml-tools-better-looker-code-user-experience-and-data-governance/12877>
 <https://ww-tech.github.io/lookml-tools/> 
 
-Extension framework
+### Programmatic LookML Generation
+<https://www.youtube.com/watch?v=cdyn-KLwyfc> .   
+<https://github.com/llooker/lookmlscript>
+
+## Extension framework
 <https://looker.com/blog/empowering-developers-to-create-powerful-custom-data-experiences>
+
+## Snowflake
+
+<https://blog.redpillanalytics.com/managing-snowflake-data-warehouse-compute-in-looker-e445543987b2>
