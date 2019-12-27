@@ -3,6 +3,8 @@
 
 <https://looker.com/guide>
 
+<https://discourse.looker.com/>
+
 <https://docs.looker.com/video-library/data-modeling>
 
 <https://www.youtube.com/user/LookerData>
