@@ -16,6 +16,8 @@ measure
 <https://www.youtube.com/user/LookerData>
 
 <https://www.youtube.com/watch?v=cdyn-KLwyfc> .   Programmatic LookML Generation
+<https://github.com/llooker/lookmlscript>
+
 
 <https://docs.looker.com/data-modeling/learning-lookml/caching> Caching Queries
 
