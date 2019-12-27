@@ -33,6 +33,12 @@ Parameters in Looker increase interactivity for users and provide flexibility fr
 <https://docs.looker.com/reference/liquid-variables>
 <https://blog.redpillanalytics.com/how-to-create-a-basic-parameter-in-looker-using-a-liquid-variable-e97d2b9b4669>
 
+### Filters
+<https://docs.looker.com/reference/filter-expressions>
+<https://redpillanalytics.com/combining-advanced-and-custom-filters-in-looker/>
+<https://blog.redpillanalytics.com/combining-advanced-and-custom-filters-in-looker-2c45590d1129>
+
+
 
 <https://looker.com/guide>
 
