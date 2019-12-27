@@ -1,5 +1,9 @@
 <https://docs.looker.com/data-modeling/learning-lookml/lookml-terms-and-concepts>
 
+<https://docs.looker.com/data-modeling/learning-lookml/lookml-terms-and-concepts#derived-table> Derived table
+
+<https://docs.looker.com/reference/field-reference/dimension-type-reference>
+
 In Looker, queries are grouped by the model to which they belong. Your users see models listed under the Explore menu:
 
 ```
