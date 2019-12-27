@@ -1,8 +1,45 @@
 ### Overview
 
+<https://www.analytics.today/blog/tuning-snowflake>
+
+<https://www.analytics.today/blog/database-administration-snowflake>
+
+<https://www.analytics.today/blog/high-performance-real-time-processing-with-snowflake>
+
+<https://snowflakecommunity.force.com/s/question/0D50Z00009F8nPTSAZ/how-to-choose-the-right-virtual-warehouse-size-in-snowflake-for-your-workload>
+
+```
+1. How does snowflake determine that sufficient resources are not available for a particular query? To put it in a different way, how does snowflake determine the amount resources required by a query?
+
+Snowflake has real time data on CPU, memory and SSD usage on the cluster, and estimates of the cost of executing queries to determine if there are resources available. For example, a query estimated to scan terabytes of data may need to run on every node on the cluster in parallel, would need sufficient free resources to be executed, and may be suspended until resources are available. The objective is to provide a consistent query elapsed time for a given warehouse size.
+
+This means, once a query has started, it will be given resources to complete, and the machine will not be over-loaded with additional queries. (Unlike nearly every other on-premise data warehouse I've used).
+
+2. Can we create multi-cluster warehouse with different sizes for each cluster?
+
+
+No. The multi-cluster feature aims to simply provide the same as existing query performance for additional users. You'll see why in the next question. 
+
+3. "Multi-cluster warehouses are best utilized for scaling resources to improve concurrency for users/queries. They are not as beneficial for improving the performance of slow-running queries or data loading. For these types of operations, resizing the warehouse provides more benefits."
+Is it better to use a warehouse of size Large or use a multi-cluster warehouse with two clusters of size Medium each?
+The statement implies that a huge resource hungry might run better on single big warehouse rather than on multi-cluster warehouse with small clusters. Why?
+
+The way I explain this to customers is (a) Scale up for data volumes (b) Scale out for additional users.
+
+Effectively, if you have query workloads processing gigabytes of data, the elapsed time will half each time you scale up the resources. This is because each increase includes more hardware. eg. A medium VWH has 4 nodes available but a large has 8 nodes. When a query is executed on a cluster, it will use (if available) as many as the nodes in parallel to execute the query. Hence a LARGE VWH will complete the same task twice as fast.
+
+Note: A very small query might only use one thread on a single node, and for this reason, increasing the warehouse size for very short running queries may not be the most efficient use of resources.
+
+However, if you configure your VWH to scale out (for example MEDIUM with a maximum of two clusters), it will ONLY scale out if the number of concurrent processes (or users) overload the machine. Any single query will only ever execute on a single MEDIUM sized cluster. The other queries will be free to use the second cluster.
+
+
+That's why if you have a single LARGE cluster it will always complete a large workload twice as fast as a MEDIUM - even if multi-cluster (scale out) is switched on.
+
+Note: My tests (to be written up in an article) demonstrate performance does indeed double at each step in warehouse size - PROVIDED YOU'RE PROCESSING AT LEAST A GIGABYTE OF DATA. For very small queries (under 1Gb scanned), the performance gets no benefit over about an XLARGE.
 <https://www.reddit.com/r/BusinessIntelligence/comments/d1x42g/is_anyone_here_using_snowflake_i_especially_want/> . Criticizm
 
  Snowflake is case-sensitive. So you have to wrap any string queries in a lower() statement to get things to lower case. This requirement has resulted in some bad data from a few analysts (or longer query turnaround times) until we all got used to it.
+```
 
 Cool staff in snowflake 10 articles:
 <https://sqlkover.com/?s=Cool+Stuff+in+Snowflake&submit=Search>
