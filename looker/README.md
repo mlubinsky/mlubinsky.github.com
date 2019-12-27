@@ -11,6 +11,9 @@ measure
 
 <https://discourse.looker.com/>
 
+SQL block
+<https://docs.looker.com/data-modeling/learning-lookml/sql-and-referring-to-lookml#sql_block> 
+
 <https://docs.looker.com/video-library/data-modeling>
 
 <https://www.youtube.com/user/LookerData>
