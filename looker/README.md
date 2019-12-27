@@ -1,9 +1,25 @@
 <https://docs.looker.com/data-modeling/learning-lookml/lookml-terms-and-concepts>
+
+In Looker, queries are grouped by the model to which they belong. Your users see models listed under the Explore menu:
+
 ```
-model
-dimension 
+model: (.model.lkml)  which tables to use and how they should be joined together and Explores
+
+explore:  defined within a model file, but if you’re working with native derived tables you might make it its own file.
+ Each Explore declaration includes join logic to join any view that Looker can determine is related to the Explore.
+An Explore is a view that users can query.
+ 
+view: (.view.lkml) define the view, its dimensions and measures, and its field sets.
+
+join: lets you combine data from multiple views
+
+dimension - is a groupable field (inside view)  and can be used to filter query results.
+
 dimension_group
-measure
+
+measure -  is a field that uses a SQL aggregate function, such as COUNT, SUM, AVG, MIN, or MAX. Any field computed based on the values of other measure values is also a measure. Measures can be used to filter grouped values. For example, measures for a Sales view might include total items sold (a count), total sale price (a sum), and average sale price (an average).
+
+set
 ```
 <https://training.looker.com/> mlubinsky@ho / LeVe
 
@@ -18,7 +34,8 @@ SQL block
 
 <https://www.youtube.com/user/LookerData>
 
-<https://www.youtube.com/watch?v=cdyn-KLwyfc> .   Programmatic LookML Generation
+### Programmatic LookML Generation
+<https://www.youtube.com/watch?v=cdyn-KLwyfc> .   
 <https://github.com/llooker/lookmlscript>
 
 
@@ -29,6 +46,9 @@ SQL block
 
 <https://looker.com/blog>
 
+
+### Lookml-tools
+<https://discourse.looker.com/t/lookml-tools-better-looker-code-user-experience-and-data-governance/12877>
 <https://ww-tech.github.io/lookml-tools/> 
 
 Extension framework
