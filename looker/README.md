@@ -76,3 +76,6 @@ SQL block
 ## Snowflake
 
 <https://blog.redpillanalytics.com/managing-snowflake-data-warehouse-compute-in-looker-e445543987b2>
+
+<https://looker.com/blog/using-snowflake-mvs-in-looker>
+
