@@ -1,4 +1,10 @@
-
+<https://docs.looker.com/data-modeling/learning-lookml/lookml-terms-and-concepts>
+```
+model
+dimension 
+dimension_group
+measure
+```
 <https://training.looker.com/> mlubinsky@ho / LeVe
 
 <https://looker.com/guide>
