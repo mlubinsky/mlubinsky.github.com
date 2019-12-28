@@ -44,6 +44,9 @@ Parameters in Looker increase interactivity for users and provide flexibility fr
 
 <https://discourse.looker.com/>
 
+https://www.youtube.com/watch?v=OEbttXD17lA A/B testing with looker
+
+
 SQL block
 <https://docs.looker.com/data-modeling/learning-lookml/sql-and-referring-to-lookml#sql_block> 
 
