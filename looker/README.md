@@ -10,6 +10,8 @@
 
 <https://github.com/looker-open-source>
 
+<https://github.com/alison985/awesome-looker>
+
 <https://docs.looker.com/reference/field-reference/dimension-type-reference>
 
 In Looker, queries are grouped by the model to which they belong. Your users see models listed under the Explore menu:
