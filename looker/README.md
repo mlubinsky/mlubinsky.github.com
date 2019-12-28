@@ -21,7 +21,7 @@ join: lets you combine data from multiple views
 
 dimension - is a groupable field (inside view)  and can be used to filter query results.
 
-dimension_group
+dimension_group:   example -  duration dimension,  dimension group specify diffrent units of measure
 
 measure -  is a field that uses a SQL aggregate function, such as COUNT, SUM, AVG, MIN, or MAX. Any field computed based on the values of other measure values is also a measure. Measures can be used to filter grouped values. For example, measures for a Sales view might include total items sold (a count), total sale price (a sum), and average sale price (an average).
 
