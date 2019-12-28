@@ -25,7 +25,7 @@ dimension_group:   example -  duration dimension,  dimension group specify diffr
 
 measure -  is a field that uses a SQL aggregate function, such as COUNT, SUM, AVG, MIN, or MAX. Any field computed based on the values of other measure values is also a measure. Measures can be used to filter grouped values. For example, measures for a Sales view might include total items sold (a count), total sale price (a sum), and average sale price (an average).
 
-set
+set . ???
 
 Parameters in Looker increase interactivity for users and provide flexibility from the front end perspective without having to write custom code for each and every field the user asks for.
 ```
@@ -51,6 +51,8 @@ SQL block
 <https://docs.looker.com/data-modeling/learning-lookml/sql-and-referring-to-lookml#sql_block> 
 
 <https://docs.looker.com/video-library/data-modeling>
+
+<https://docs.looker.com/data-modeling/learning-lookml/extends>  Looker has the option to extend Explores, views, and LookML dashboards so that you can reuse the code
 
 <https://www.youtube.com/user/LookerData>
 
