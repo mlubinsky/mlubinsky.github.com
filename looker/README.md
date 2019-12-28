@@ -4,6 +4,10 @@
 
 <https://docs.looker.com/data-modeling/learning-lookml/lookml-terms-and-concepts#derived-table> Derived table
 
+<https://looker.com/guide>
+
+<https://discourse.looker.com/>
+
 <https://docs.looker.com/reference/field-reference/dimension-type-reference>
 
 In Looker, queries are grouped by the model to which they belong. Your users see models listed under the Explore menu:
@@ -39,10 +43,11 @@ Parameters in Looker increase interactivity for users and provide flexibility fr
 <https://blog.redpillanalytics.com/combining-advanced-and-custom-filters-in-looker-2c45590d1129>
 
 
+### Looker API
 
-<https://looker.com/guide>
+https://docs.looker.com/reference/api-and-integration/api-getting-started
 
-<https://discourse.looker.com/>
+
 
 https://www.youtube.com/watch?v=OEbttXD17lA A/B testing with looker
 
