@@ -6,6 +6,8 @@
 
 <https://medium.mybridge.co/>
 
+<https://meaningness.com/metablog/how-to-think> how to think
+
 <https://avva.livejournal.com/3246639.html#comments> .  Kvant and other journals
 
 <https://habr.com/ru/post/474658/> choose right mouse!
