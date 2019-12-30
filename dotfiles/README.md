@@ -2,6 +2,7 @@
 
 .bash_profile
 
+<https://www.bottomupcs.com/index.xhtml> how linux works
 
 <https://news.ycombinator.com/item?id=21711761> . command-line utils
 
