@@ -6,6 +6,8 @@
 
 <https://news.ycombinator.com/item?id=21900498> best books
 
+<https://www.econtalk.org/david-epstein-on-mastery-specialization-and-range/>
+
 <https://tripinsurancestore.com/4/on-the-shortness-of-life.pdf> On The Shortness of Life - Lucius Seneca
 
 <https://inside.bwater.com/publications/principles_excerpt> Principles of life
