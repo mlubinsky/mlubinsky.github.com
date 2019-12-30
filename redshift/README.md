@@ -194,6 +194,20 @@ WHERE table_schema = 'myschema' AND table_name = 'mytable';
  get the most out of this feature, your data needs to be properly distributed. If your data is skewed, some nodes will have to work more than others - and your query is only as fast as the slowest node.  
 <https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-best-dist-key.html>
 
+## Amazon Redshift Advisor 
+https://aws.amazon.com/about-aws/whats-new/2019/08/amazon-redshift-now-recommends-distribution-keys-for-improved-query-performance/
+Amazon Redshift now recommends distribution keys for improved query performance
+Posted On: Aug 20, 2019
+
+Amazon Redshift Advisor now recommends the most appropriate distribution key for frequently queried tables to improve query performance. The Advisor generates tailored recommendations by analyzing the cluster's performance and query patterns. You can then use the ALTER TABLE ALTER DISTKEY command to add or modify the distribution key of a table, without impacting concurrent read or write queries. 
+
+When you specify the appropriate distribution key for a table, Amazon Redshift places a similar number of rows on each node when loading data into that table. A query that joins multiple tables will run much faster, if those tables can be joined on their distribution key columns.
+
+With this Advisor update, Amazon Redshift can now determine the appropriate distribution key, by constructing a graph representation of the SQL join history, and optimizing for data transferred across nodes when joins occur. For more information, see Choosing a Data Distribution Style.
+
+Advisor is accessible in the left-hand navigation menu on the Amazon Redshift console. Note that Advisor will only show distribution key recommendations if they would have a significant, positive impact on your workload. For more information, see Working with Recommendations from Amazon Redshift Advisor.
+
+
 <https://docs.aws.amazon.com/redshift/latest/dg/tutorial-tuning-tables-distribution.html>
 
 <https://docs.aws.amazon.com/redshift/latest/dg/t_Distributing_data.html> Choosing data distribution style
