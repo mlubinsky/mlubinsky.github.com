@@ -4,6 +4,8 @@
 
 <https://www.geeksforgeeks.org/union-find/> union-find (disjoint-set)
 
+<https://habr.com/ru/company/edison/blog/481304/>
+
 <https://www.youtube.com/watch?v=fowDzrMa-Mo&utm_source=reddit> design distributed cache
 
 <https://www.youtube.com/watch?v=tzsOc-hBPfw>
