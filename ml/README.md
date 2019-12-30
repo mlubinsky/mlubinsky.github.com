@@ -2,6 +2,8 @@
 
 <https://practicalai.me/> A practical approach to machine learning.
 
+<https://jameskle.com/writes/rec-sys-part-3> recommendation systems
+
 <https://news.ycombinator.com/item?id=21710863> TF vs PyTorch
 
 <https://www.reddit.com/r/MachineLearning/comments/dgog2h/d_why_is_l2_preferred_over_l1_regularization/>
