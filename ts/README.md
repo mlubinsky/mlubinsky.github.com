@@ -1,5 +1,6 @@
 <https://www.coursera.org/learn/practical-time-series-analysis/home/welcome>
 
+<https://www.dataengineeringpodcast.com/datadog-timeseries-data-episode-113/>
 
 <https://habr.com/ru/company/ods/blog/327242/> Открытый курс машинного обучения. Тема 9. Анализ временных рядов с помощью Python
 
