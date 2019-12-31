@@ -47,9 +47,26 @@ https://news.ycombinator.com/item?id=21281025
 
 https://kvz.io/tobuntu.html . configuring ubuntu
 
-
+<h3>CSV SQL</h3>
+https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/
+https://news.ycombinator.com/item?id=21923911 	Doing a database join with CSV files
 https://news.ycombinator.com/item?id=20848581 . TSV CSV JSON command line tools
 https://github.com/jolmg/cq . CQ - SQL for CSV
+https://github.com/johnkerl/miller .  Miller
+  sqlite> .mode csv
+  sqlite> .header on
+  sqlite> .import weight.csv weight
+  sqlite> .import person.csv person
+  sqlite> select * from person, weight where person.ID = weight.ID;
+  ID,sex,ID,weight
+  123,M,123,200
+  789,F,789,155
+  
+https://github.com/BurntSushi/xsv
+There is very little overlap between what xsv does and what standard Unix tools like `join` do. 
+Chances are, if you're using xsv for something like this, 
+then you probably can't correctly use `join` to do it because `join` does not understand the CSV format.
+
 
 https://github.com/antonmedv/fx JSON viewer
 
