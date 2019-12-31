@@ -26,6 +26,8 @@
 
 <http://book.mixu.net/distsys/single-page.html>
 
+<https://medium.com/@yagi5/lets-study-distributed-systems-4-leader-election-78a083981321>
+
 Latency is “the time interval between a stimulus and its response”. 'I want to get downtown. How long until I arrive? Latency is measured in time units.
 
 Throughput is “the rate at which a system achieves its goal”. People want to get downtown. How many arrive each hour? Throughput is measured in deliveries per time.
