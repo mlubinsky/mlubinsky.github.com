@@ -8,6 +8,8 @@
 
 <https://www.youtube.com/watch?v=fowDzrMa-Mo&utm_source=reddit> design distributed cache
 
+<https://www.youtube.com/watch?v=1_HIpTBUHAs&utm_source=reddit> design twitter
+
 <https://www.youtube.com/watch?v=tzsOc-hBPfw>
 
 <https://www.youtube.com/watch?v=Eg2BjTmnLS8>
