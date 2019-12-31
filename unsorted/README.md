@@ -17,7 +17,7 @@
 <https://meaningness.com/metablog/how-to-think> how to think
 
 
-LastPass KeyPass - password managers 
+LastPass KeePass - password managers 
 
 <https://avva.livejournal.com/3246639.html#comments> .  Kvant and other journals
 
