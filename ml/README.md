@@ -1,5 +1,7 @@
 <https://habr.com/ru/post/479398/> Приводим уравнение линейной регрессии в матричный вид
 
+<https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/about> 
+
 <https://practicalai.me/> A practical approach to machine learning.
 
 <https://jameskle.com/writes/rec-sys-part-3> recommendation systems
