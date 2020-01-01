@@ -29,6 +29,8 @@ LastPass KeePass, PasswordSafe, minykeypass - password managers
 
 <https://cvcompiler.com/blog/facelift-your-it-resume-to-get-more-interviews/> Resume
 
+<https://www.youtube.com/results?search_query=%D1%85%D0%B0%D1%80%D0%B0%D1%80%D0%B8> Владимир Федорин - krym
+
 <https://news.ycombinator.com/item?id=20801847> not technical podcasts
 ## Gifts
 
