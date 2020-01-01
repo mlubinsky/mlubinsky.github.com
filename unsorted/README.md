@@ -12,6 +12,8 @@
 
 <https://inside.bwater.com/publications/principles_excerpt> Principles of life
 
+<https://inside.bwater.com/publications/principles_excerpt>  Principles by Ray Dalio
+
 <https://medium.mybridge.co/>
 
 <https://meaningness.com/metablog/how-to-think> how to think
