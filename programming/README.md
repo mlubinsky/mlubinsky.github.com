@@ -9,8 +9,10 @@
 
 <https://habr.com/ru/post/476790/>  code streaming from cool programmers!
 
-<https://www.sicara.ai/blog/> ractical articles on AI and Big Data, by Sicara
-<https://medium.com/sicara> Practical articles on AI and Big Data, by Sicara
+<https://news.ycombinator.com/item?id=21928170> programmers blogs
+
+<https://www.sicara.ai/blog/>  articles on AI and Big Data, by Sicara
+<https://medium.com/sicara>  articles on AI and Big Data, by Sicara
 
 <http://concurnas.com/>
 
