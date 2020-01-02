@@ -1,3 +1,5 @@
+<https://medium.com/aws-tutor>
+
 ### aws cli via brew
 ```
 brew install awscli
