@@ -20,6 +20,8 @@
 
 
 
+
+
 ### Call Shell Commands with Python
 
 <https://janakiev.com/blog/python-shell-commands/>
@@ -50,6 +52,8 @@ Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-e
 <http://pljung.de/posts/easy-concurrency-in-python/> . concurrency
 
 <https://trio.readthedocs.io/en/stable/> asyncio alternative
+
+<https://lucumr.pocoo.org/2020/1/1/async-pressure/>
 
 multiprocessing vs threading
 <https://sumit-ghosh.com/articles/multiprocessing-vs-threading-python-data-science/>
@@ -86,6 +90,7 @@ multiprocessing vs threading
 <https://habr.com/ru/post/471618/> C++ fropm python
 
 ## Python tools
+<https://cjolowicz.github.io/posts/hypermodern-python-01-setup/>
 
 <https://virtualenv.pypa.io/en/latest/> 
 pyenv, poetry, black, flake8, isort, pre-commit, pytest, coverage, tox, Azure Pipelines, sphinx, and readthedocs:
