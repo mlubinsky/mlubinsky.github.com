@@ -1,5 +1,7 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://github.com/mochow13/competitive-programming-library> 
+
 <https://news.ycombinator.com/item?id=21738802>
 
 <https://www.geeksforgeeks.org/union-find/> union-find (disjoint-set)
