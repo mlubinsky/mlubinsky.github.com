@@ -1,6 +1,8 @@
 # Docker
 <https://youtu.be/zJ6WbK9zFpI>
 
+<https://www.manning.com/books/docker-in-action-second-edition>
+
 <https://www.udemy.com/home/my-courses/search/?q=docker> my courses
 
 ### Volumes mount bind
