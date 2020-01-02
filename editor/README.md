@@ -30,7 +30,7 @@
 <https://news.ycombinator.com/item?id=21458977>
 
 
-## IntelliJ +Scala
+## IntelliJ + Scala
 
 <https://stackoverflow.com/questions/23545476/where-do-i-enter-the-homebrew-scala-path-usr-local-opt-scala-idea-in-intellij?rq=1>
 
@@ -57,7 +57,9 @@ alias diff="diff-so-fancy"
 alias cat="bat"
 
 ## VIM
-<https://www.vimfromscratch.com/articles/vim-for-python/>
+<https://www.vimfromscratch.com/articles/vim-for-python/> Python
+
+<http://liuchengxu.org/posts/use-vim-as-a-python-ide/>  Python
 
 <https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim>
 
