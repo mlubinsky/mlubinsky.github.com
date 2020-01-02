@@ -11,17 +11,27 @@
 <https://www.youtube.com/watch?v=g5wlBqWSgxk> Vysotsky
 
 ## Soaps
-https://soap.d3.ru/kakie-otnositelno-sovremennye-serialy-mozhno-tak-ili-inache-schitat-kultovymi-1663894/
-[S04] Bosch | Босх (USA, 2014–...) https://www.imdb.com/title/tt3502248/
-Trial and Error | Методом проб и ошибок (USA, 2017–..., 2S) https://www.imdb.com/title/tt5511512/
-The Guest Book | Гостевая книга (USA, 2017–...) https://www.imdb.com/title/tt5990096/
-https://www.imdb.com/title/tt7366338/ Chernobyl
-https://www.imdb.com/title/tt8064302/ Dead to me
+<https://soap.d3.ru/kakie-otnositelno-sovremennye-serialy-mozhno-tak-ili-inache-schitat-kultovymi-1663894/>
+
+  Bosch | Босх (USA, 2014–...) <https://www.imdb.com/title/tt3502248/>
+
+Trial and Error | Методом проб и ошибок (USA, 2017–..., 2S) <https://www.imdb.com/title/tt5511512/>
+
+The Guest Book | Гостевая книга (USA, 2017–...) <https://www.imdb.com/title/tt5990096/>
+
+<https://www.imdb.com/title/tt7366338/> Chernobyl
+
+<https://www.imdb.com/title/tt8064302/> Dead to me
+
 True Detective (USA, 2014–2019)
+
 Here and Now | Здесь и сейчас (USA, 2018, 1S)
-https://www.imdb.com/title/tt7134194/ The Truth About the Harry Quebert Affair | Правда о деле Гарри Квеберта (USA, 2018)
-https://www.imdb.com/title/tt7587890/?ref_=nv_sr_1 Новичок / Rookie
-Bodyguard | Телохранитель (UK, 2018) https://www.imdb.com/title/tt7493974/
+
+<https://www.imdb.com/title/tt7134194/> The Truth About the Harry Quebert Affair | Правда о деле Гарри Квеберта (USA, 2018)
+
+<https://www.imdb.com/title/tt7587890> Новичок / Rookie
+
+Bodyguard | Телохранитель (UK, 2018) <https://www.imdb.com/title/tt7493974/>
 
 ## Kino
 
@@ -43,8 +53,7 @@ https://www.youtube.com/channel/UC608azSGWiQYi5ImYgOZgdg Epic Media
 «Оттепель» Валерия Тодоровского 
 «Метод» Юрия Быкова (Habensky and Paulina Andreeva).
 
-Домашний арест (сериал)
- <https://www.kinopoisk.ru/film/1044487/>
+Домашний арест (сериал) <https://www.kinopoisk.ru/film/1044487/>
 
 Упражнения в прекрасном
 <https://www.youtube.com/watch?v=P-Y86m02n10>    
@@ -53,8 +62,7 @@ https://www.youtube.com/channel/UC608azSGWiQYi5ImYgOZgdg Epic Media
 <https://www.youtube.com/watch?v=OhS7pU_ZgvU>    or 
 <https://www.youtube.com/watch?v=-wAS8sp7Z4A>
 
-Год культуры (сериал)
-<https://www.kinopoisk.ru/film/1206901/>
+Год культуры (сериал) <https://www.kinopoisk.ru/film/1206901/>
 
 
 <https://d3.ru/tag/%D0%BA%D0%B8%D0%BD%D0%BE/>
