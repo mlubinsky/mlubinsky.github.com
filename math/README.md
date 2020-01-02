@@ -13,6 +13,8 @@
 
 <https://mirtitles.org/>
 
+<https://www.youtube.com/watch?v=g7L_r6zw4-c>  Abstract algebra
+
 <https://news.ycombinator.com/item?id=21346272>
 
 <https://www.quantamagazine.org/tag/insights-puzzle/>
