@@ -37,6 +37,8 @@ aws-cli/1.16.304 Python/2.7.10 Darwin/18.7.0 botocore/1.13.40
 
 <https://bash-my-aws.org/> .  set of CLI commands for managing resources on Amazon Web Services
 
+<https://news.ycombinator.com/item?id=21921293>
+
 <https://expeditedsecurity.com/aws-in-plain-english/>
 
 <https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513>  
