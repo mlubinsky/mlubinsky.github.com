@@ -1,9 +1,9 @@
 # Docker
-<https://youtu.be/zJ6WbK9zFpI>
+<https://youtu.be/zJ6WbK9zFpI> . Docker for Beginners: Full Course
 
-<https://www.manning.com/books/docker-in-action-second-edition>
+<https://www.manning.com/books/docker-in-action-second-edition> Book
 
-<https://www.udemy.com/home/my-courses/search/?q=docker> my courses
+<https://www.udemy.com/home/my-courses/search/?q=docker> my udemy courses
 
 ### Volumes mount bind
 Тома Docker (Docker Volumes) представляют - механизм постоянного хранения данных, потребляемых или производимых приложениями.
