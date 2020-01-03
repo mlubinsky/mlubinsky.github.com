@@ -1,4 +1,6 @@
 
+<https://lobste.rs/s/xylmdn/i_m_not_feeling_async_pressure>
+
 <https://alexandrugris.github.io/distributed/systems/2017/06/11/kafka-patterns.html> Kafka in Docker
 
 <https://florimond.dev/blog/articles/2018/09/building-a-streaming-fraud-detection-system-with-kafka-and-python/> - in Docker
