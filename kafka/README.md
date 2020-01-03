@@ -26,6 +26,9 @@ There is pdf version of this file:
 
 <https://ordepdev.me/posts/tales-from-running-kafka-streams-in-production>
 
+## RQ Celery etc
+<https://news.ycombinator.com/item?id=21940598>
+
 ## RabbitMQ
 <https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6>
 
