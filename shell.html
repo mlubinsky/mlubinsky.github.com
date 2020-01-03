@@ -116,13 +116,18 @@ For example:
 Some network file system implementation do not guarantee atomic mkdir, so you still need an extra caution with this method.
 
 
-<h2> Script to automatically run file if timestamp changed</h2>
+<h2> Script to automatically run program if file timestamp changed</h2>
 
 https://stackoverflow.com/questions/18599339/python-watchdog-monitoring-file-for-changes
 
 https://www.michaelcho.me/article/using-pythons-watchdog-to-monitor-changes-to-a-directory
 
 https://facebook.github.io/watchman/
+
+https://gist.github.com/davidmoreno/c049e922e41aaa94e18955b9fac5549c
+
+http://z3bra.org/wendy/
+http://blog.z3bra.org/2015/03/under-wendys-dress.html
 
 #!/usr/bin/env bash
 script="$1"; shift
