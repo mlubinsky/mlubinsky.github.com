@@ -1,4 +1,6 @@
-<https://queue.acm.org/pastissues.cfm>
+<https://queue.acm.org/pastissues.cfm> ACM transactions
+
+<https://www.infoq.com/news/2019/12/ebay-architecture-knowledgegraph> Knowladge Graph
 
 <https://atlas.apache.org/#/> Data Governance and Metadata framework for Hadoop
 
