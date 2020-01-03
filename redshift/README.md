@@ -230,6 +230,8 @@ define how the data is organized within each node. If your query only needs a su
 
 ## Tables design
 
+<https://aws.amazon.com/blogs/big-data/amazon-redshift-engineerings-advanced-table-design-playbook-distribution-styles-and-distribution-keys/> 
+
 <https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_examples.html>
 
 <https://docs.aws.amazon.com/redshift/latest/dg/t_Defining_constraints.html>
