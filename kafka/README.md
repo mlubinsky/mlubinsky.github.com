@@ -27,6 +27,9 @@ There is pdf version of this file:
 <https://ordepdev.me/posts/tales-from-running-kafka-streams-in-production>
 
 ## RQ Celery etc
+
+<https://testdriven.io/blog/asynchronous-tasks-with-flask-and-redis-queue/>
+
 <https://news.ycombinator.com/item?id=21940598>
 
 ## RabbitMQ
