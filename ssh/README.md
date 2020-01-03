@@ -1,3 +1,55 @@
+# cURL and SSH
+
+### CURL
+
+<https://nordicapis.com/understanding-the-hidden-powers-of-curl/>
+
+### HTTP cURL httpie
+
+<https://jvns.ca/blog/2019/08/27/curl-exercises/>
+<https://catonmat.net/cookbooks/curl>
+<https://nordicapis.com/understanding-the-hidden-powers-of-curl/>
+<https://curl.haxx.se/book.html> Curl book
+
+Curl to python request:
+<https://curl.trillworks.com/>
+<https://ryan.govost.es/http-translator/>
+<https://github.com/spulec/uncurl>
+
+<https://github.com/asciimoo/wuzz>
+
+### curl alternatives
+
+httpie  https://github.com/jakubroztocil/httpie  
+insomnia
+postmam
+
+
+in my .bash_aliases
+This will output the HTTP status code for a given URL.
+
+     alias hstat="curl -o /dev/null --silent --head --write-out '%{http_code}\n'" $1 
+     
+### Example
+```
+Example of bash function:
+    set -e
+
+    download_command () {
+        if type wget >/dev/null 2>&1; then
+            echo "wget -q -O-"
+        elif type curl >/dev/null 2>&1; then
+            echo "curl -sL"
+        else
+            echo "Error: curl or wget is required" >&2
+            exit 1
+        fi
+    }
+
+    download=$(download_command)
+    public_v4=$($download http://whatismyip.akamai.com/)
+    public_v6=$($download http://ipv6.whatismyip.akamai.com/)
+```
 
 ## Расширение Visual Studio Code: Remote — SSH 
 <https://habr.com/ru/company/microsoft/blog/472274/>
