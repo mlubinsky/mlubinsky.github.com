@@ -86,6 +86,11 @@ https://github.com/antonmedv/fx JSON viewer
   
   https://news.ycombinator.com/item?id=20818106 - Logging
 
+  kills a process given its port number (4567):
+  
+  kill -9 $(lsof -ti tcp:4567)
+
+
   List of ports in use: 
   sudo lsof -iTCP -sTCP:LISTEN -P | grep 5002
        lsof -i -P -n | grep 8000
