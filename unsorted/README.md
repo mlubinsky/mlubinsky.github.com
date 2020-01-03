@@ -6,13 +6,7 @@
 
 <https://news.ycombinator.com/item?id=21900498> best books
 
-<https://www.econtalk.org/david-epstein-on-mastery-specialization-and-range/>
 
-<https://tripinsurancestore.com/4/on-the-shortness-of-life.pdf> On The Shortness of Life - Lucius Seneca
-
-<https://inside.bwater.com/publications/principles_excerpt> Principles of life
-
-<https://inside.bwater.com/publications/principles_excerpt>  Principles by Ray Dalio
 
 <https://medium.mybridge.co/>
 
@@ -133,6 +127,15 @@ Live calculation in browser
 
 ## Business
 
+<https://www.davidepstein.com/the-range/> 
+
+<https://www.econtalk.org/david-epstein-on-mastery-specialization-and-range/>
+
+<https://tripinsurancestore.com/4/on-the-shortness-of-life.pdf> On The Shortness of Life - Lucius Seneca
+
+<https://www.calnewport.com/books/deep-work/>
+
+<https://inside.bwater.com/publications/principles_excerpt>  Principles by Ray Dalio
 
 <https://blog.pragmaticengineer.com/an-elegant-puzzle-book-review/> 
 
