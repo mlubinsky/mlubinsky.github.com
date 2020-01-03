@@ -7,13 +7,20 @@
 ### HTTP cURL httpie
 
 <https://jvns.ca/blog/2019/08/27/curl-exercises/>
+
 <https://catonmat.net/cookbooks/curl>
+
+<https://linuxize.com/post/curl-command-examples/>
+
 <https://nordicapis.com/understanding-the-hidden-powers-of-curl/>
+
 <https://curl.haxx.se/book.html> Curl book
 
 Curl to python request:
 <https://curl.trillworks.com/>
+
 <https://ryan.govost.es/http-translator/>
+
 <https://github.com/spulec/uncurl>
 
 <https://github.com/asciimoo/wuzz>
@@ -32,7 +39,7 @@ This will output the HTTP status code for a given URL.
      
 ### Example
 ```
-Example of bash function:
+#!/bin/bash
     set -e
 
     download_command () {
