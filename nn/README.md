@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://habr.com/ru/post/482794/>
+
 <http://introtodeeplearning.com/>
 
 <https://habr.com/ru/company/oleg-bunin/blog/470904/>
