@@ -127,6 +127,10 @@ Live calculation in browser
 
 ## Business
 
+<https://news.ycombinator.com/item?id=21950126>
+
+<https://blog.davidtate.org/clear-and-present-leadership/>
+
 <https://www.davidepstein.com/the-range/> 
 
 <https://www.econtalk.org/david-epstein-on-mastery-specialization-and-range/>
