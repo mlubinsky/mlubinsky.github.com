@@ -1,3 +1,10 @@
+Book Data Science in Production
+
+<https://levelup.gitconnected.com/book-launch-data-science-in-production-54b325c03818>
+
+<https://github.com/bgweber/DS_Production>
+
+
 <https://habr.com/ru/post/479398/> Приводим уравнение линейной регрессии в матричный вид
 
 <https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/about> 
