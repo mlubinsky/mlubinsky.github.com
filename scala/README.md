@@ -1,5 +1,7 @@
 <https://riiswa.github.io/Scala-CheatSheet/>
 
+<https://geirsson.com/2019.html> Scala tooling in 2019
+
 <https://ammonite.io/> .   REPL ammonite
 
 <https://www.youtube.com/watch?v=nD-p-cEKjHE> . SBT
