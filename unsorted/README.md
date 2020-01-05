@@ -269,23 +269,6 @@ B32 Sicilian Defense: Kalashnikov Variation
 <https://chesstempo.com/>
 
 <http://www.bookup.com/>
-
-## Health
-
-<https://youtu.be/iQzLo4Mmp9g>
-
-<https://zen.yandex.ru/media/zoh/statichnyi-kompleks-dlia-mujchin-posle-40-mujskaia-sila-5bbed62f091ba200aa3a94a9>
-<https://news.ycombinator.com/item?id=18316917> back pain
-
-<https://news.ycombinator.com/item?id=18923169> fasting
-
-##  Calisthenics
-https://en.wikipedia.org/wiki/Calisthenics
-
-<https://fitseven.ru/myschtsy/atlas-uprajneyniy/luchee-uprajnenie-na-press>
-
-<https://zen.yandex.ru/calisthenic>
-
-http://www.idoportal.com/
+ 
 
 
