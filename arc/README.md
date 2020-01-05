@@ -299,7 +299,13 @@ System thinking
 
 ## System Design Tools
 
+drive.io
+
 <https://news.ycombinator.com/item?id=20096865> System Design Tools
+
+<https://terrastruct.com/>
+
+<https://news.ycombinator.com/item?id=21958986>
 
 ## Big Data Architecture
 
