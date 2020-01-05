@@ -1,19 +1,24 @@
 
 ## Health
-https://youtu.be/iQzLo4Mmp9g
+<https://youtu.be/iQzLo4Mmp9g>
 
-https://zen.yandex.ru/media/zoh/statichnyi-kompleks-dlia-mujchin-posle-40-mujskaia-sila-5bbed62f091ba200aa3a94a9 https://news.ycombinator.com/item?id=18316917 back pain
+<https://zen.yandex.ru/media/zoh/statichnyi-kompleks-dlia-mujchin-posle-40-mujskaia-sila-5bbed62f091ba200aa3a94a9 https://news.ycombinator.com/item?id=18316917> back pain
 
-https://news.ycombinator.com/item?id=18923169 fasting
+<https://news.ycombinator.com/item?id=18923169> fasting
 
 ## Calisthenics
-https://en.wikipedia.org/wiki/Calisthenics
 
-https://fitseven.ru/myschtsy/atlas-uprajneyniy/luchee-uprajnenie-na-press
+<https://en.wikipedia.org/wiki/Calisthenics>
 
-https://zen.yandex.ru/calisthenic
+<https://fitseven.ru/myschtsy/atlas-uprajneyniy/luchee-uprajnenie-na-press>
 
-http://www.idoportal.com/
+<https://zen.yandex.ru/calisthenic>
+
+
+<https://www.championat.com/lifestyle/article-3813577-kalistenika-dlja-krasivogo-tela-kak-pravilno-kachatsja-bez-zala-i-rashodov.html>
+
+
+<http://www.idoportal.com/>
  
  Утро лучше всего начинать со стакана воды
  
@@ -38,13 +43,11 @@ http://www.idoportal.com/
 
 ## Vision
 
-https://youtu.be/F2X2o9WaZf8
+<https://piechowski.io/post/how-to-protect-developer-eyes/>
 
-## kalistenika
+<https://youtu.be/F2X2o9WaZf8>
 
-<https://en.wikipedia.org/wiki/Calisthenics>
 
-<https://www.championat.com/lifestyle/article-3813577-kalistenika-dlja-krasivogo-tela-kak-pravilno-kachatsja-bez-zala-i-rashodov.html>
 
 ## сердце
 
