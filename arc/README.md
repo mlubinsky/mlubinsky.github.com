@@ -1,6 +1,6 @@
 <https://queue.acm.org/pastissues.cfm> ACM transactions
 
-<infoq.com>
+<https://infoq.com>
 
 <https://www.infoq.com/news/2019/12/ebay-architecture-knowledgegraph> Knowladge Graph
 
@@ -30,6 +30,11 @@
 
 <http://book.mixu.net/distsys/single-page.html>
 
+<https://www.youtube.com/watch?v=Y6Ev8GIlbxc> distributed systems
+
+<http://book.mixu.net/distsys/single-page.html>
+
+<https://github.com/heathermiller/dist-prog-book/>
 <https://medium.com/@yagi5/lets-study-distributed-systems-4-leader-election-78a083981321>
 
 Latency is “the time interval between a stimulus and its response”. 'I want to get downtown. How long until I arrive? Latency is measured in time units.
@@ -125,19 +130,14 @@ https://github.com/olirice/flupy . Fluent data pipelines for python and your she
 
 <https://www.youtube.com/watch?v=kdmAiQeYGgE> Building a real-time analytics pipeline with BigQuery and Cloud Dataflow
 
-## distributed systems
-<https://www.youtube.com/watch?v=Y6Ev8GIlbxc> distributed systems
-
-<http://book.mixu.net/distsys/single-page.html>
-
+## systems
 
 
 <https://dzone.com/articles/how-to-build-a-google-search-autocomplete> How to Build a Google Search Autocomplete
 
 <https://research.fb.com/publications/scuba-diving-into-data-at-facebook/> Scuba: Diving into Data at Facebook
+
 <https://engineering.fb.com/data-infrastructure/scribe/> Scribe: Transporting petabytes per hour
-
-
 
 <https://habr.com/ru/company/oleg-bunin/blog/466295/>
 
@@ -322,6 +322,10 @@ System thinking
 <https://blog.yugabyte.com/how-yugabytedb-scales-to-more-than-1-million-inserts-per-sec/> 1 mln inserts per sec
 
 ## Concurrency
+
+<https://github.com/heathermiller/dist-prog-book/blob/master/chapter/2/futures.md>
+
+<http://nikgrozev.com/2015/07/14/overview-of-modern-concurrency-and-parallelism-concepts/>
 
 <https://slikts.github.io/concurrency-glossary/>
 
