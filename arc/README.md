@@ -33,6 +33,8 @@
 
 <https://towardsdatascience.com/beyond-a-b-testing-multi-armed-bandit-experiments-1493f709f804>
 
+<https://engineering.linkedin.com/blog/2020/making-the-linkedin-experimentation-engine-20x-faster>  linked in
+
 ## Distributed systems
 
 <http://book.mixu.net/distsys/single-page.html>
