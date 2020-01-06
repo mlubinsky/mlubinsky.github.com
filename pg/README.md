@@ -89,7 +89,9 @@ docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=passwo
 
 <https://rob.conery.io/2019/10/24/virtual-computed-columns-in-postgresql-12/>
 
-## Pub/Subscribe
+## Pub/Subscribe, queue
+
+<https://habr.com/ru/post/483014/>
 
 <https://habr.com/ru/post/481556/>
 
