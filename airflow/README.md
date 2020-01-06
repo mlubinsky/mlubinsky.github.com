@@ -1,5 +1,7 @@
 <https://github.com/quantumblacklabs/kedro> . Kedro: best-practice for data and ML pipelines.
 
+
+
 <https://habr.com/ru/company/mailru/blog/344398/>
 
 <https://towardsdatascience.com/how-to-use-airflow-without-headaches-4e6e37e6c2bc>
@@ -23,6 +25,8 @@ Airflow’s usage pattern is to extract data, save it somewhere like S3, then pa
 <https://airflow.apache.org/>
 
 <https://airflow-tutorial.readthedocs.io/>
+
+<https://towardsdatascience.com/apache-airflow-tips-and-best-practices-ff64ce92ef8>
 
 <https://towardsdatascience.com/how-to-use-airflow-without-headaches-4e6e37e6c2bc>
 
