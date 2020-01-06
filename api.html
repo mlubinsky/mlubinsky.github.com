@@ -61,10 +61,28 @@ https://blog.apisyouwonthate.com/
 https://philsturgeon.uk/api/2018/03/01/api-specification-workflow-matures/
 <a href=https://sites.google.com/a/athaydes.com/renato-athaydes/posts/thereturnofrpc-orhowrestisnolongertheonlyrespectablesolutionforapis>API evolution</a>
 https://philsturgeon.uk/api/2018/05/02/api-evolution-for-rest-http-apis/
+
+<h3> Swagger</h2>
+
 https://swagger.io/
 https://www.youtube.com/watch?v=JeaF0qnWqQY . Swagger (ru)
 https://buildazure.com/2017/10/20/swagger-is-now-the-openapi-specification/
 https://strongloop.com/strongblog/upgrade-from-swagger-to-openapi-3/
+
+https://github.com/swagger-api/swagger-editor
+https://blog.ippon.tech/using-swagger-to-build-effective-apis-pt1/
+
+ docker search swagger
+ docker pull swaggerapi/swagger-editor
+ docker run --rm -d -p 8083:8080 --name my-swagger-editor swaggerapi/swagger-editor &
+ http://localhost:8083
+ 
+In the docker command -v means to mount a volume and -e means to add environment variables, 
+so what you want is probbably this:
+docker run -p 8081:8080 -e SWAGGER_JSON=/mnt/lp.json -v /Users/abc/Desktop:/mnt swaggerapi/swagger-ui
+
+
+
 https://www.asyncapi.com/
 https://stdlib.com/
 https://developers.redhat.com/blog/2018/04/11/api-journey-idea-deployment-agile-part1/
