@@ -12,6 +12,8 @@
 
 <https://medium.mybridge.co/>
 
+
+
 <https://meaningness.com/metablog/how-to-think> how to think
 
 
@@ -21,9 +23,19 @@ LastPass KeePass, PasswordSafe, minykeypass - password managers
 
 <https://habr.com/ru/post/474658/> choose right mouse!
 
+
+
+## Online edu
+
 <https://teach-in.ru> . lectures (physics and math) from Moscow State University
 
 <https://openedu.ru/>
+
+<https://lifter.com.ua/190-universitetov-besplatno-vylozhili-sotni-svoih-kursov.-vot-ssylki-6496>
+
+<https://memo.d3.ru/190-universitetov-besplatno-vylozhili-sotni-svoikh-kursov-vot-ssylki-1906034/?sorting=rating>
+
+
 
 <https://cvcompiler.com/blog/facelift-your-it-resume-to-get-more-interviews/> Resume
 
@@ -63,7 +75,7 @@ Sapiens. Краткая история человечества- Юваль Но
 <https://www.amazon.com/iOttie-Dashboard-Windshield-Samsung-Smartphone/dp/B076B27WP6> Phone Holder for Car
 
 
-##  Worfram mathematica
+##  Worfram Mathematica
 <https://habr.com/ru/company/wolfram/blog/469935/>
 
 <https://habr.com/ru/company/wolfram/blog/471812/>
