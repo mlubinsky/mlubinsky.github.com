@@ -10,7 +10,12 @@
 
 <https://www.dataengineeringpodcast.com/datadog-timeseries-data-episode-113/> 
 
-<https://habr.com/ru/company/ruvds/blog/482462/> Netflix Metaflow
+##  Netflix Metaflow
+
+<https://habr.com/ru/company/ruvds/blog/482462/>
+
+<https://docs.metaflow.org/introduction/what-is-metaflow>
+
 
 ### A/B testing
 
