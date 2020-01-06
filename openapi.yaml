@@ -1,0 +1,186 @@
+openapi: 3.0.0
+
+info:
+  description: Data ingestion API for PSA cloud
+  version: 1.0.0
+  title: Space Analytics
+tags:
+  - name: Facility
+paths:
+  /feeds:
+    post:
+      tags:
+        - Facility
+      summary: Upload Facility information to PSA cloud
+      description: ""
+      operationId: feeds
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Feed"
+        description: Space information to be ingested to PSA
+        required: true
+      responses:
+        200:
+          description: OK
+        400:
+          description: Access denied. No token provided.
+        401:
+          description: Not authenticated
+        403:
+          description: Access token does not have the required scope
+        405:
+          description: Invalid input
+      security:
+        - bearerAuth: []
+externalDocs:
+  description: Dogpatch Project
+  url: https://confluence.arm.com/display/PPG/Space+Optimizer+-+Dogpatch+Labs
+servers:
+  - url: https://teamc-api.peliondev.com:3010/api/v1
+components:
+  securitySchemes:
+    bearerAuth: # arbitrary name for the security scheme
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    Feed:
+      type: object
+      properties:
+        facility_name:
+          type: string
+          example: Dogpatch Urban garden
+          description: Name of Facility for which data is ingested
+        facility_dimensions:
+          type: object
+          properties:
+            x_max:
+              type: integer
+              format: int32
+              minimum: 0
+              example: 62
+            y_max:
+              type: integer
+              format: int32
+              minimum: 0
+              example: 12
+          description: Dimensions of facility
+        timestamp:
+          type: string
+          format: date-time
+          example: "2019-01-17T07:00:00+01:00"
+          description: time stamp at which camera captured frames for inference
+        units:
+          type: string
+          enum:
+            - meter
+            - cm
+          description: unit of measurement in this payload
+        data_type:
+          type: string
+          enum:
+            - people
+            - desks
+          example: people
+          description: set data_type to desks when ingesting desks payload
+        people:
+          type: array
+          items:
+            $ref: "#/components/schemas/People"
+        COD:
+          type: array
+          items:
+            $ref: "#/components/schemas/COD"
+    Desk:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          description: unique ID associated with desk function of bounds
+          example: 1009004
+        occupancy:
+          type: integer
+          format: int32
+          minimum: 0
+          description: people associated with desk
+          example: 4
+        shape:
+          type: string
+          enum:
+            - circular
+            - rectangular
+          description: Type of desk can be either circular or rectangular
+          example: rectangular
+        bounds:
+          $ref: "#/components/schemas/Bound"
+    People:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 1023050
+        desk_id:
+          type: integer
+          format: int32
+          nullable: true
+          example: 1023012
+        pose:
+          type: string
+          example: sitting
+          enum:
+            - sitting
+            - standing
+          description: Position of person sitting/standing
+        bounds:
+          $ref: "#/components/schemas/Bound"
+    COD:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 1023000
+        desk_id:
+          type: integer
+          format: int32
+          example: 1023012
+        bounds:
+          $ref: "#/components/schemas/Bound"
+          example:
+            - x: 11.700000000000001
+              y: 2.5
+            - x: 11.700000000000001
+              y: 2.7
+            - x: 11.9
+              y: 2.7
+            - x: 11.9
+              y: 2.5
+    Bound:
+      type: array
+      description: points of polygon representing bounding rectangular box around desk
+      items:
+        $ref: "#/components/schemas/Point"
+      minimum: 4
+      example:
+        - x: 10.8
+          y: 7.8
+        - x: 10.8
+          y: 8.2
+        - x: 11.2
+          y: 8.2
+        - x: 11.2
+          y: 7.8
+    Point:
+      type: object
+      description: absolute x,y co-ordinate in meters
+      properties:
+        x:
+          type: number
+          example: 30
+        y:
+          type: number
+          example: 20
