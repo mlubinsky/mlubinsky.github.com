@@ -658,6 +658,8 @@ PASCAL VOC предоставляет стандартизированные н�
 
 ##   Mask R-CNN
 
+<https://habr.com/ru/post/483018/> Mask-R CNN от новичка до профессионала
+
 <https://www.pyimagesearch.com/2018/11/19/mask-r-cnn-with-opencv/>
 
 <https://github.com/matterport/Mask_RCNN>
