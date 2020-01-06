@@ -2,6 +2,8 @@
 
 <https://medium.com/jbennetcodes/how-to-use-pandas-to-access-databases-e4e74e6a329e> . Access Databases from Panda
 
+<https://towardsdatascience.com/integrate-jupyter-into-your-data-pipeline-9a02fab3cee5>
+
 <https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
 
 <https://realpython.com/python-statistics/>
