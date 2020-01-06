@@ -2,13 +2,15 @@
 
 <https://infoq.com>
 
-<https://www.infoq.com/news/2019/12/ebay-architecture-knowledgegraph> Knowladge Graph
+<https://www.infoq.com/news/2019/12/ebay-architecture-knowledgegraph> Knowledge Graph
 
 <https://atlas.apache.org/#/> Data Governance and Metadata framework for Hadoop
 
-<http://shop.oreilly.com/product/0636920073994.do>  Book Streaming System
+<http://shop.oreilly.com/product/0636920073994.do>  Book: Streaming System
 
-<https://www.dataengineeringpodcast.com/datadog-timeseries-data-episode-113/> .  
+<https://www.dataengineeringpodcast.com/datadog-timeseries-data-episode-113/> 
+
+<https://habr.com/ru/company/ruvds/blog/482462/> Netflix Metaflow
 
 ### A/B testing
 
