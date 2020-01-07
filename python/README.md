@@ -94,6 +94,9 @@ multiprocessing vs threading
 ## Python tools
 <https://cjolowicz.github.io/posts/hypermodern-python-01-setup/>
 
+pyenv
+<https://dev.to/writingcode/the-python-virtual-environment-with-pyenv-pipenv-3mlo>
+
 <https://virtualenv.pypa.io/en/latest/> 
 pyenv, poetry, black, flake8, isort, pre-commit, pytest, coverage, tox, Azure Pipelines, sphinx, and readthedocs:
 
