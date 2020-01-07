@@ -60,6 +60,11 @@ Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-e
 multiprocessing vs threading
 <https://sumit-ghosh.com/articles/multiprocessing-vs-threading-python-data-science/>
 
+## Stats
+
+<https://realpython.com/pandas-python-explore-dataset/>
+
+<https://realpython.com/python-statistics/>
 
 ## Other topics
 
