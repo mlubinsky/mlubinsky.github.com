@@ -1,5 +1,7 @@
 
-<https://www.udacity.com/course/ab-testing--ud257> free cource
+<https://www.udacity.com/course/ab-testing--ud257> free course
+
+<https://towardsdatascience.com/a-summary-of-udacity-a-b-testing-course-9ecc32dedbb1>
 
 <https://en.wikipedia.org/wiki/A/B_testing>
 
