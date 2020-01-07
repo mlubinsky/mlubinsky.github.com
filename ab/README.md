@@ -1,8 +1,16 @@
 
 <https://www.udacity.com/course/ab-testing--ud257> free cource
 
+<https://en.wikipedia.org/wiki/A/B_testing>
 
 <https://towardsdatascience.com/a-collection-of-a-b-testing-learning-resources-newbie-to-master-6bab1e0d7845>
+
+* What are we trying to test and what metrics to use?
+* How to estimate the sample size and pick confidence & power level prior to the test (FYI here is the link to Adobe Target’s sample size calculator)?
+* How to split the test audience?
+* What statistical test to use to calculate the significance level (assuming a traditional t-test is what’s considered here)?
+* How long to run the tests for?
+* How to interpret the results and make decisions accordingly?
 
 <https://vwo.com/ab-testing/>
 
