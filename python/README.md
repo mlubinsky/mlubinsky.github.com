@@ -2,6 +2,8 @@
 
 <https://pythonbooks.org/>
 
+<https://github.com/pamoroso/free-python-books>
+
 <https://docs.quantifiedcode.com/python-anti-patterns/index.html> antiputterns
 
 <https://knowledgeisle.com/wp-content/uploads/2019/10/Serious-Python_-2019.pdf> Serious Python
