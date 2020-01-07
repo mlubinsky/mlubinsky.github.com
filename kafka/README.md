@@ -45,6 +45,8 @@ There is pdf version of this file:
 
 ## RabbitMQ vs Kafka
 
+<https://www.infoq.com/presentations/rabbitmq-kafka/> 
+
 <https://habr.com/ru/company/itsumma/blog/471858/> 
 
 <https://jack-vanlightly.com/blog/2018/9/2/rabbitmq-vs-kafka-part-6-fault-tolerance-and-high-availability-with-kafka>
