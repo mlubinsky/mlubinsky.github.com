@@ -1,6 +1,36 @@
 
+<https://www.udacity.com/course/ab-testing--ud257> free cource
+
+
+<https://towardsdatascience.com/a-collection-of-a-b-testing-learning-resources-newbie-to-master-6bab1e0d7845>
+
+<https://vwo.com/ab-testing/>
+
 <https://tactics.convertize.com/> . 250 Best A/B Testing Ideas Based On Neuromarketing
 
+<https://www.hbs.edu/faculty/Publication%20Files/20-018_e5cf26cb-b370-43b2-81c4-96a83066bf13.pdf>
+
+
+
+##  A/B testing
+
+<https://zulily-tech.com/2019/10/11/the-power-of-a-b-testing/>
+
+<https://zulily-tech.com/2018/04/06/practical-a-b-testing/>
+
+<https://www.periscopedata.com/blog/a-b-test-reporting-and-visualization-in-sql>
+
+<https://habr.com/ru/company/otus/blog/481936/>
+
+<https://en.wikipedia.org/wiki/Multi-armed_bandit>   Multi-armed bandit
+
+<https://www.optimizely.com/optimization-glossary/multi-armed-bandit/>
+
+<https://towardsdatascience.com/beyond-a-b-testing-multi-armed-bandit-experiments-1493f709f804>
+
+<https://engineering.linkedin.com/blog/2020/making-the-linkedin-experimentation-engine-20x-faster>  LinkedIn framework
+
+<https://discourse.looker.com/t/simplified-a-b-test-analysis-redshift-python-udf-and-p-value-measure/2635>
 
 ## Netflix
 
