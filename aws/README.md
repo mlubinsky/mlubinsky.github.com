@@ -175,6 +175,8 @@ total count:
 
 ## Athena
 
+<https://www.bryteflow.com/how-to-get-your-amazon-athena-queries-to-run-5x-faster/>
+
 <https://www.reddit.com/r/aws/comments/e3iuix/any_success_stories_using_amazon_athena/>
 
 <https://www.transposit.com/blog/2019.08.22-try-athena-easily-with-a-transposit-app/?c=lob>
