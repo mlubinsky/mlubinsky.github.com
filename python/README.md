@@ -47,6 +47,8 @@ Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-e
 
 ## multiprocessing vs threading
 
+<http://www.blog.pythonlibrary.org/2016/08/02/python-201-a-multiprocessing-tutorial/>
+
 <https://www.packtpub.com/programming/python-parallel-programming-cookbook> 
 
 <https://habr.com/ru/company/ruvds/blog/475246/>
