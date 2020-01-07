@@ -66,6 +66,8 @@ multiprocessing vs threading
 
 <https://realpython.com/python-statistics/>
 
+<https://pbpython.com/natural-breaks.html>
+
 ## Other topics
 
 <https://florimond.dev/blog/articles/2018/10/reconciling-dataclasses-and-properties-in-python/> DataClasses
