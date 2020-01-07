@@ -34,6 +34,8 @@
 
 ## Netflix
 
+<https://engineering.linkedin.com/blog/topic/ab-testing>
+
 <https://medium.com/netflix-techblog/its-all-a-bout-testing-the-netflix-experimentation-platform-4e1ca458c15>
 
 <https://betatesting.com/blog/2018/02/23/how-netflix-does-ab-testing/>
