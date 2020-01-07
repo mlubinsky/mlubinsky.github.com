@@ -8,6 +8,8 @@
 
 <https://realpython.com/python-statistics/>
 
+<https://realpython.com/pandas-python-explore-dataset/>
+
 <https://pbpython.com/natural-breaks.html>
 
 <https://www.aicheatsheets.com/>
