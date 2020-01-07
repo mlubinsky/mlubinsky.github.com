@@ -15,6 +15,8 @@
 * How to interpret the results and make decisions accordingly?
 
 
+The metrics we choose for sanity check are called as invariant metrics. They are not supposed to be affected by the experiment. They should not change across control and treatment groups. Otherwise, the experiment setup is incorrect.
+
 <https://www.discoverdev.io/tags/ab-testing>
 
 <https://vwo.com/ab-testing/>
