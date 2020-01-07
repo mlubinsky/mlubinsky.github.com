@@ -14,6 +14,9 @@
 * How long to run the tests for?
 * How to interpret the results and make decisions accordingly?
 
+
+<https://www.discoverdev.io/tags/ab-testing>
+
 <https://vwo.com/ab-testing/>
 
 <https://tactics.convertize.com/> . 250 Best A/B Testing Ideas Based On Neuromarketing
