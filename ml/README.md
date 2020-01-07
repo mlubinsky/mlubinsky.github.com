@@ -1,3 +1,5 @@
+<https://blog.insightdatascience.com/bias-variance-tradeoff-explained-fa2bc28174c4> bias-variance explained
+
 Book Data Science in Production
 
 <https://levelup.gitconnected.com/book-launch-data-science-in-production-54b325c03818>
