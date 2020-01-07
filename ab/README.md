@@ -19,6 +19,15 @@ The metrics we choose for sanity check are called as invariant metrics. They are
 
 <https://www.discoverdev.io/tags/ab-testing>
 
+
+
+## A/A testing
+
+Test Auditing (e.g. A/A Tests)
+After setting up a new launch surface or new testing software for the first time, it’s important to validate the testing pipeline (data collection, user assignment, behavior tracking); otherwise, invalid results are not only a waste of time but also prone to wrong business decisions, if not investigated thoroughly. Section 8 in the “Seven Pitfalls to Avoid when Running Controlled Experiments on the Web” paper gives a comprehensive list of methods for validating the testing pipeline, including online/offline A/A tests, instrumentation, etc.).
+
+http://ai.stanford.edu/people/ronnyk/2009-ExPpitfalls.pdf
+
 <https://vwo.com/ab-testing/>
 
 <https://tactics.convertize.com/> . 250 Best A/B Testing Ideas Based On Neuromarketing
