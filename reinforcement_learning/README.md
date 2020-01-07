@@ -8,6 +8,8 @@
 
 <https://github.com/dennybritz/reinforcement-learning>
 
+<https://habr.com/ru/post/483078/>
+
 <https://arxiv.org/abs/1911.08265> . Algo for Go, Chess, etc wich beats AlphaZero
 
 <https://www.youtube.com/watch?v=gTNNXi9ApVU>
