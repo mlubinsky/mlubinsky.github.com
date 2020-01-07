@@ -33,7 +33,9 @@
 
 <https://towardsdatascience.com/beyond-a-b-testing-multi-armed-bandit-experiments-1493f709f804>
 
-<https://engineering.linkedin.com/blog/2020/making-the-linkedin-experimentation-engine-20x-faster>  linked in
+<https://engineering.linkedin.com/blog/2020/making-the-linkedin-experimentation-engine-20x-faster>  LinkedIn framework
+
+<https://discourse.looker.com/t/simplified-a-b-test-analysis-redshift-python-udf-and-p-value-measure/2635>
 
 ## Distributed systems
 
