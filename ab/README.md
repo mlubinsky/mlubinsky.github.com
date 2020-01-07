@@ -56,9 +56,11 @@ http://ai.stanford.edu/people/ronnyk/2009-ExPpitfalls.pdf
 
 <https://discourse.looker.com/t/simplified-a-b-test-analysis-redshift-python-udf-and-p-value-measure/2635>
 
-## Netflix
+## Netflix, Linkedin, etc
 
 <https://engineering.linkedin.com/blog/topic/ab-testing>
+
+<https://medium.com/netflix-techblog/reimagining-experimentation-analysis-at-netflix-71356393af21>
 
 <https://medium.com/netflix-techblog/its-all-a-bout-testing-the-netflix-experimentation-platform-4e1ca458c15>
 
