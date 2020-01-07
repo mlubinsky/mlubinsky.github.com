@@ -84,7 +84,13 @@ multiprocessing vs threading
 
 <https://pydantic-docs.helpmanual.io/> . data validation
 
-<https://kanoki.org/2019/10/16/python-logging/> . logging
+## Logging
+
+<https://kanoki.org/2019/10/16/python-logging/> 
+
+https://julien.danjou.info/how-to-log-properly-in-python/
+
+## Unclassified
 
 <https://news.python.sc/> daily feed
 
