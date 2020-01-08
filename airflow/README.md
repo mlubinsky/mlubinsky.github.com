@@ -59,10 +59,12 @@ Note: You can manually trigger a DAG run via Airflow's UI directly on your dashb
 
 <https://www.astronomer.io/blog/7-common-errors-to-check-when-debugging-airflow-dag/>
 
-### Whirl
-<https://github.com/godatadriven/whirl> . local development and testing of Apache Airflow workflows.
-<https://blog.godatadriven.com/open-source-airflow-local-development>
 
+## Docker
+### Whirl - local development and testing of Apache Airflow using Docker
+<https://github.com/godatadriven/whirl> . 
+<https://blog.godatadriven.com/open-source-airflow-local-development>
+<https://blog.godatadriven.com/testing-and-debugging-apache-airflow> Testing and debugging Apache Airflow
 
 How We Solved Our Airflow I/O Problem By Using A Custom Docker Operator
 <https://medium.com/enigma-engineering/how-we-solved-our-airflow-i-o-problem-by-using-a-custom-docker-operator-dcc7c8111be5>
@@ -70,13 +72,12 @@ How We Solved Our Airflow I/O Problem By Using A Custom Docker Operator
 Containerizing Data Workflows
 <https://medium.com/enigma-engineering/containerizing-data-workflows-95df1d338048>
 
-Testing and debugging Apache Airflow
-<https://blog.godatadriven.com/testing-and-debugging-apache-airflow>
 
 <https://medium.com/@tomaszdudek/yet-another-scalable-apache-airflow-with-docker-example-setup-84775af5c451>
 
+https://github.com/puckel/docker-airflow
 
-
+## Book
 <https://www.manning.com/books/data-pipelines-with-apache-airflow> .  BOOK
 
 
