@@ -1,5 +1,7 @@
 <https://www.cybertec-postgresql.com/en/blog/>
 
+<https://www.cybertec-postgresql.com/en/setting-postgresql-configuration-parameters/> configuration
+
 <https://habr.com/ru/company/postgrespro/blog/479618/>
 
 <https://begriffs.com/posts/2018-01-01-sql-keys-in-depth.html> PK, constraints, etc
