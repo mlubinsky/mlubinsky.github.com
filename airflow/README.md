@@ -2,6 +2,20 @@
 
 The scheduler runs a DAG soon after (start_date + schedule_interval) is passed
 ```
+airflow list_dags
+airflow initdb
+airflow webserver
+airflow scheduler
+airflow connections
+airflow connections -h
+airflow list_tasks <DAG_id>
+airflow list_dag_runs <DAG_id>
+airflow trigger_dag
+
+```
+
+
+```
 with DAG (...) as dag:
     t1= SomeOperator()  # no need to pass dag to operator !!!
     t2= Another Operator
@@ -84,7 +98,11 @@ Containerizing Data Workflows
 
 <https://github.com/puckel/docker-airflow> used by Udemy class
 
-```doker exec -it <container_id> bash```
+```
+docker exec -it <container_id> bash
+docker exec -it <container_id> sh -c "/entrypoint.sh" /bin/bash"
+
+```
 
 ## Book
 <https://www.manning.com/books/data-pipelines-with-apache-airflow> .  BOOK
