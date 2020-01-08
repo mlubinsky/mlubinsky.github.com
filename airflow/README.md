@@ -1,6 +1,6 @@
 <https://github.com/quantumblacklabs/kedro> . Kedro: best-practice for data and ML pipelines.
 
-
+The scheduler runs a DAG soo after (start_date + schedule_interval) is passed
 
 <https://habr.com/ru/company/mailru/blog/344398/>
 
