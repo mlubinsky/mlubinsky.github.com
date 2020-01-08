@@ -82,7 +82,9 @@ Containerizing Data Workflows
 
 <https://medium.com/@tomaszdudek/yet-another-scalable-apache-airflow-with-docker-example-setup-84775af5c451>
 
-https://github.com/puckel/docker-airflow
+<https://github.com/puckel/docker-airflow> used by Udemy class
+
+```doker exec -it <container_id> bash```
 
 ## Book
 <https://www.manning.com/books/data-pipelines-with-apache-airflow> .  BOOK
