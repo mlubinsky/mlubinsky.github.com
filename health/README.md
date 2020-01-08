@@ -2,9 +2,15 @@
 ## Health
 <https://youtu.be/iQzLo4Mmp9g>
 
-<https://zen.yandex.ru/media/zoh/statichnyi-kompleks-dlia-mujchin-posle-40-mujskaia-sila-5bbed62f091ba200aa3a94a9 https://news.ycombinator.com/item?id=18316917> back pain
 
-<https://news.ycombinator.com/item?id=18923169> fasting
+## back pain
+
+<https://www.youtube.com/watch?v=w3pspI7PAJw>
+
+<https://zen.yandex.ru/media/zoh/statichnyi-kompleks-dlia-mujchin-posle-40-mujskaia-sila-5bbed62f091ba200aa3a94a9 https://news.ycombinator.com/item?id=18316917> 
+
+## Fasting
+<https://news.ycombinator.com/item?id=18923169>  
 
 ## Calisthenics
 
