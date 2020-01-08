@@ -240,10 +240,12 @@ if two operators need to share information, like a filename or small amount of d
 ```
 BashOperator - executes a bash command
 PythonOperator - calls an arbitrary Python function
+HiveOperator
 EmailOperator - sends an email
 HTTPOperator - sends an HTTP request
 MySqlOperator, SqliteOperator, PostgresOperator, MsSqlOperator, OracleOperator, JdbcOperator, etc. - executes a SQL command
-Sensor - waits for a certain time, file, database row, S3 key, etc…
+Sensor - waits for a certain time, file, database row, S3 key, event etc…
+TranferOperator - moves data from one system to another: e.g. S3ToRedshiftTranfer, etc
 ```
 <https://blog.usejournal.com/testing-in-airflow-part-1-dag-validation-tests-dag-definition-tests-and-unit-tests-2aa94970570c>
 
