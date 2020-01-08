@@ -11,6 +11,7 @@ airflow connections -h
 airflow list_tasks <DAG_id>
 airflow list_dag_runs <DAG_id>
 airflow trigger_dag <DAG_id>
+airflow test
 ```
 
 
