@@ -98,6 +98,9 @@ https://github.com/geosolutions-it/evo-odas/wiki/Airflow---about-subDAGs,-branch
 
 <https://medium.com/walmartlabs/auditing-airflow-batch-jobs-73b45100045> Auditing Airflow
 
+
+<https://eng.lyft.com/running-apache-airflow-at-lyft-6e53bb8fccff> Lyft uses Airflow
+
 <https://medium.com/the-prefect-blog/why-not-airflow-4cfa423299c4> Why Not Airflow?
 
 ```
