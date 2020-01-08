@@ -1,6 +1,13 @@
 <https://github.com/quantumblacklabs/kedro> . Kedro: best-practice for data and ML pipelines.
 
 The scheduler runs a DAG soon after (start_date + schedule_interval) is passed
+```
+with DAG (...) as dag:
+    t1= SomeOperator()  # no need to pass dag to operator !!!
+    t2= Another Operator
+    
+    t1 >> t2 >> [t3, t4] >> t8
+```    
 
 <https://habr.com/ru/company/mailru/blog/344398/>
 
