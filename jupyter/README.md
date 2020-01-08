@@ -1,3 +1,14 @@
+## Jupyter Enterprise Gateway 
+
+<https://blog.jupyter.org/introducing-jupyter-enterprise-gateway-db4859f86762>
+
+<https://jupyter-enterprise-gateway.readthedocs.io/en/latest/getting-started.html>
+
+<https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html>
+
+<https://github.com/jupyterhub/jupyterhub-deploy-docker>
+
+
 # Jupyter Pandas NumPy Scikit
 
 <https://medium.com/jbennetcodes/how-to-use-pandas-to-access-databases-e4e74e6a329e> . Access Databases from Panda
