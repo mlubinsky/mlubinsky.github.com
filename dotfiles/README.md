@@ -10,9 +10,16 @@
 
 <https://blog.flowblok.id.au/2013-02/shell-startup-scripts.html>
 
-``
-set -e . # exit on any non zero return code .  set -o errexit
-set -x . # echo any command . set -o xtrace
+<https://www.pixelstech.net/article/1326641280-Useful-Bash-Scripts>
+
+<https://www.pixelstech.net/article/1377917732-Server-monitoring-shell-scripts>
+
+```
+set -e . # exit on any non zero return code ( set -o errexit )
+Unfortunately it means you can't check $? as bash will never get to the checking code if it isn't zero. 
+
+
+set -x . # echo any command ( set -o xtrace )
 set -u . exit on any attempts to use uninitialised variables
 set -euf
 
@@ -26,7 +33,7 @@ mkdir longDirectoryNameIDontWantToTypeAgain
 cd !$
 
 $?  - return code of last command
-``
+```
 
 Given: text file and you need to remove all of its duplicate lines.
 <https://opensource.com/article/19/10/remove-duplicate-lines-files-awk>
