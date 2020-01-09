@@ -6,6 +6,8 @@
 
 <http://incompleteideas.net/book/the-book.html> .   Sutton Barto book 
 
+<https://www.newworldai.com/reinforcement-learning-course-deepmind/> . Cource by Deep Mind
+
 <https://github.com/dennybritz/reinforcement-learning>
 
 <https://habr.com/ru/post/483078/>
