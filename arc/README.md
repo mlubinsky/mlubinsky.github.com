@@ -59,6 +59,8 @@ imagine that you have no task-switching penalties but have to perform two tasks 
 
 ##  Architecture 
 
+<https://www.confluent.io/blog/cloud-analytics-for-on-premises-data-streams-with-kafka/>
+
 <https://habr.com/ru/company/avito/blog/479952/>
 
 <http://highscalability.com/blog/2019/11/25/egnyte-architecture-lessons-learned-in-building-and-scaling.html>
