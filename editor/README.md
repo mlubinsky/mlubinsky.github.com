@@ -99,9 +99,6 @@ alias cat="bat"
 
 <https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens> . GitLens
 
-<https://habr.com/ru/company/microsoft/blog/471188/> . Python extension
-
-<https://devblogs.microsoft.com/python/python-in-visual-studio-code-january-2020-release/> Python extension
 
 <https://code.visualstudio.com/blogs/2019/10/03/remote-ssh-tips-and-tricks> SSH
 
@@ -109,7 +106,13 @@ alias cat="bat"
 
 <https://code.visualstudio.com/docs/introvideos/debugging> . DEBUGGING
 
-## Visual Studio Code + JavaScript
+### VS python
+<https://habr.com/ru/company/microsoft/blog/471188/> . Python extension
+
+<https://devblogs.microsoft.com/python/python-in-visual-studio-code-january-2020-release/> Python extension
+
+
+### Visual Studio Code + JavaScript
 
 <https://www.freecodecamp.org/news/how-to-set-up-the-debugger-for-chrome-extension-in-visual-studio-code-c0b3e5937c01/>
 
@@ -117,10 +120,10 @@ alias cat="bat"
 
 <https://medium.com/young-coder/setting-up-javascript-debugging-in-visual-studio-code-6c5005529987>
 
-## Visual Studio Code + Scala
+### Visual Studio Code + Scala
 <https://habr.com/ru/post/469707/>
 
-## Visual Studio Code + Java
+### Visual Studio Code + Java
 <https://flaviocopes.com/vscode/>
 
 <https://www.youtube.com/watch?v=sVDizUZesZk>
