@@ -16,6 +16,10 @@ airflow next_execution   <DAG_id> .  # next execution time
 airflow delete_dag <DAG_id>
 ```
 
+in airflow.cfg there are 2 parameters related to concurrency:
+
+parallelism
+dag_concurrency
 
 ```
 with DAG (...) as dag:
@@ -176,7 +180,7 @@ a utility that was introduced to allow tasks to exchange small pieces of metadat
 
 <https://www.sicara.ai/blog/2019-04-08-apache-airflow-celery-workers>
 
-Inside airflow.cfg the executor is defined:
+The executor is defined in airflow.cfg
 
  Airflow proposes several executor out of the box, from the simplest to the most full-featured:
  
