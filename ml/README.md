@@ -6,6 +6,8 @@ Book Data Science in Production
 
 <https://github.com/bgweber/DS_Production>
 
+<https://www.ahmedbesbes.com/blog/end-to-end-machine-learning>
+
 
 <https://habr.com/ru/post/479398/> Приводим уравнение линейной регрессии в матричный вид
 
