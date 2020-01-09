@@ -101,6 +101,8 @@ alias cat="bat"
 
 <https://habr.com/ru/company/microsoft/blog/471188/> . Python extension
 
+<https://devblogs.microsoft.com/python/python-in-visual-studio-code-january-2020-release/> Python extension
+
 <https://code.visualstudio.com/blogs/2019/10/03/remote-ssh-tips-and-tricks> SSH
 
 <https://www.jonrcorbin.com/the-best-vs-code-extension-list-for-full-stack-developers/>
