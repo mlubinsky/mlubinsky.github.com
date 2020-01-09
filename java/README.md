@@ -21,6 +21,10 @@
  
  java.exe -jar  name.jar
  
+ ## JDBC etc
+ 
+ https://www.marcobehler.com/guides/java-databases-jdbc-hibernate-spring-data
+ 
  ## Promises vs Observables
  Both Promises and Observables will help us work with the asynchronous functionalities in JavaScript.
 
