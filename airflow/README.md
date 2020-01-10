@@ -284,6 +284,7 @@ if two operators need to share information, like a filename or small amount of d
 DummyOperator
 BashOperator - executes a bash command
 PythonOperator - calls an arbitrary Python function
+BranchPythonOperator (python_callable) returns task_id or list of task to which control to be given
 HiveOperator
 EmailOperator - sends an email
 HTTPOperator - sends an HTTP request
