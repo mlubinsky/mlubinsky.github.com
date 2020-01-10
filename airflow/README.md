@@ -272,6 +272,7 @@ Don’t confuse operators with tasks. Tasks are defined as “what to run?” an
 
 if two operators need to share information, like a filename or small amount of data, you should consider combining them into a single operator. If it absolutely can’t be avoided, Airflow does have a feature for operator cross-communication called XCom.
 ```
+DummyOperator
 BashOperator - executes a bash command
 PythonOperator - calls an arbitrary Python function
 HiveOperator
@@ -280,7 +281,18 @@ HTTPOperator - sends an HTTP request
 MySqlOperator, SqliteOperator, PostgresOperator, MsSqlOperator, OracleOperator, JdbcOperator, etc. - executes a SQL command
 Sensor - waits for a certain time, file, database row, S3 key, event etc…
 TranferOperator - moves data from one system to another: e.g. S3ToRedshiftTranfer, etc
+
 ```
+### DummyOperator
+
+* can be used for mock testing insterad the read operator
+* shell be used in this case:
+    (t1,t2,t3) may be executed in any order; (t4,t5,t6) may be started only after all (t1,t2,t3) are finished
+
+
+
+### Testing DAGs
+
 <https://blog.usejournal.com/testing-in-airflow-part-1-dag-validation-tests-dag-definition-tests-and-unit-tests-2aa94970570c>
 
 <https://medium.com/@chandukavar/testing-in-airflow-part-2-integration-tests-and-end-to-end-pipeline-tests-af0555cd1a82>
