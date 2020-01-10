@@ -86,6 +86,25 @@ Note: You can manually trigger a DAG run via Airflow's UI directly on your dashb
 
 <https://www.astronomer.io/blog/7-common-errors-to-check-when-debugging-airflow-dag/>
 
+## Metadata tables
+```
+psql -U airflow
+\dt
+alembic_version
+chart
+connection
+dag
+dag_pickle
+dag_run
+import_error
+job
+..
+log
+..
+users
+variable
+xcom
+```
 
 ## Docker
 ### Whirl - local development and testing of Apache Airflow using Docker
