@@ -101,6 +101,8 @@ job
 ..
 log
 ..
+task_instance
+..
 users
 variable
 xcom
