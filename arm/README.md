@@ -3,7 +3,7 @@
 
 <https://arduino.github.io/ArduinoAI/BLESense-test-dashboard/>
 
-Gyroscope and acceleration data
+Gyroscope (3 features) and acceleration data (3 features)
 
 NaNo 33 does not support Wifi ?
 
