@@ -285,4 +285,6 @@ B32 Sicilian Defense: Kalashnikov Variation
 <http://www.bookup.com/>
  
 
+### Chess programming
+<https://youtu.be/mVdh5z0jtAo>
 
