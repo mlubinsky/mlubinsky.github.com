@@ -1,9 +1,11 @@
-### Adruino
+### Adruino - 
 <https://medium.com/tensorflow/how-to-get-started-with-machine-learning-on-arduino-7daf95b4157>
 
 <https://arduino.github.io/ArduinoAI/BLESense-test-dashboard/>
 
-Gyroscope and acceleration
+Gyroscope and acceleration data
+
+NaNo 33 does not support Wifi ?
 
 
 
