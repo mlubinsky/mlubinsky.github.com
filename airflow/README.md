@@ -126,7 +126,20 @@ https://github.com/geosolutions-it/evo-odas/wiki/Airflow---about-subDAGs,-branch
 
 <http://airflow.apache.org/faq.html>
 
+
+
+### Hooks
+
+<https://airflow.apache.org/concepts.html#hooks>
+
 <https://www.sicara.ai/blog/2019-01-28-automate-aws-tasks-thanks-to-airflow-hooks>  AirFlow Hooks
+ 
+
+Hoots uses aifflow.model.connection.Connection to get hostnames and auth info
+
+
+
+<https://medium.com/geoblinktech/bring-sanity-to-your-data-pipelines-with-apache-airflow-3c9906aac77c>
 
 
 <https://medium.com/walmartlabs/auditing-airflow-batch-jobs-73b45100045> Auditing Airflow
@@ -170,11 +183,7 @@ Ad-hoc runs are now possible as long as they don’t share an execution_date wit
 ### XCom
 a utility that was introduced to allow tasks to exchange small pieces of metadata. This is a useful feature if you want task A to tell task B that a large dataframe was written to a known location in cloud storage
 
-### Hooks
 
-<https://airflow.apache.org/concepts.html#hooks>
-
-<https://medium.com/geoblinktech/bring-sanity-to-your-data-pipelines-with-apache-airflow-3c9906aac77c>
 
 ### Executors
 
