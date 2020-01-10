@@ -31,6 +31,11 @@ hive.support.sql11.reserved.keywords to TRUE.
 <https://cwiki.apache.org/confluence/display/Hive/HiveCounters> .  Counters
  
 ```
+
+hive > show columns in table_name:
+
+hive> set hive.cli.print.header=true;
+
 describe extended tablenamehere 
 describe formatted tablenamehere 
 show partitions tablenamehere
