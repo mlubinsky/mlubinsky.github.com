@@ -1,3 +1,12 @@
+### Adruino
+<https://medium.com/tensorflow/how-to-get-started-with-machine-learning-on-arduino-7daf95b4157>
+
+<https://arduino.github.io/ArduinoAI/BLESense-test-dashboard/>
+
+Gyroscope and acceleration
+
+
+
 <https://habr.com/ru/post/473424/> . ARM - графические решения Mali-G57 Valhall и Mali-D37, нейропроцессоры Ethos-N57 и N37
 
 https://arxiv.org/abs/1911.05289 . 
