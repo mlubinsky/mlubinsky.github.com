@@ -6,6 +6,8 @@ Book Data Science in Production
 
 <https://github.com/bgweber/DS_Production>
 
+<https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview> 
+
 <https://www.ahmedbesbes.com/blog/end-to-end-machine-learning>
 
 
