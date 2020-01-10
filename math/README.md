@@ -9,6 +9,8 @@
 
 ## Math & Phys
 
+<https://en.wikipedia.org/wiki/Inverse_transform_sampling>
+
 <https://www.youtube.com/channel/UC4VtfXvBu4d0us1RLf7z-2g>
 
 <https://mirtitles.org/>
