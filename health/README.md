@@ -1,7 +1,10 @@
 
 ## Health
-<https://youtu.be/iQzLo4Mmp9g>
+<https://youtu.be/iQzLo4Mmp9g>   Доктор Утин
 
+<https://www.youtube.com/watch?v=aK8LeJ0ikno> курс Бубновского
+
+<https://www.youtube.com/watch?v=oRC7Y-DYL_0> Костоправ г. Ульяновск
 
 ## back pain
 
