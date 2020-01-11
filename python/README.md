@@ -45,6 +45,9 @@ Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-e
 
 <https://florimond.dev/blog/articles/2019/08/introduction-to-asgi-async-python-web/>
 
+ 
+
+
 ## multiprocessing vs threading
 
 <http://www.blog.pythonlibrary.org/2016/08/02/python-201-a-multiprocessing-tutorial/>
@@ -55,12 +58,16 @@ Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-e
 
 <http://pljung.de/posts/easy-concurrency-in-python/> . concurrency
 
+<https://www.integralist.co.uk/posts/python-asyncio/>
+
 <https://trio.readthedocs.io/en/stable/> asyncio alternative
 
 <https://lucumr.pocoo.org/2020/1/1/async-pressure/>
 
 multiprocessing vs threading
 <https://sumit-ghosh.com/articles/multiprocessing-vs-threading-python-data-science/>
+
+
 
 ## Stats
 
