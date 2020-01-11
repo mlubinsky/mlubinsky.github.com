@@ -22,8 +22,6 @@
 
 
 
-
-
 ### Call Shell Commands with Python
 
 <https://janakiev.com/blog/python-shell-commands/>
@@ -38,6 +36,8 @@
 <https://pypi-package-example.readthedocs.io/en/latest/>
 
 <https://github.com/pvcraven/pypi_package_example>
+
+<https://habr.com/ru/post/483512/>
 
 Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-entry-points/>
 
@@ -69,7 +69,7 @@ multiprocessing vs threading
 
 
 
-## Stats
+## Stats / Numpy
 
 <https://realpython.com/pandas-python-explore-dataset/>
 
@@ -116,10 +116,14 @@ https://julien.danjou.info/how-to-log-properly-in-python/
 ## Python tools
 <https://cjolowicz.github.io/posts/hypermodern-python-01-setup/>
 
+<https://pip.pypa.io/en/stable/user_guide/>
+
 <https://spiegelmock.com/2020/01/04/python-2020-modern-best-practices/>
 
-pyenv
+### pyenv
 <https://dev.to/writingcode/the-python-virtual-environment-with-pyenv-pipenv-3mlo>
+
+<https://khashtamov.com/ru/pyenv-python/>
 
 <https://virtualenv.pypa.io/en/latest/> 
 pyenv, poetry, black, flake8, isort, pre-commit, pytest, coverage, tox, Azure Pipelines, sphinx, and readthedocs:
