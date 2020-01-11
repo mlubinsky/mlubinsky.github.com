@@ -1,5 +1,7 @@
 <https://queue.acm.org/pastissues.cfm> ACM transactions
 
+<https://news.ycombinator.com/item?id=22011743>
+
 <https://infoq.com>
 
 <https://www.infoq.com/news/2019/12/ebay-architecture-knowledgegraph> Knowledge Graph
