@@ -15,6 +15,16 @@ model to Adruino
 https://arxiv.org/abs/1911.05289 . 
 The Deep Learning Revolution and Its Implications for Computer Architecture and Chip Design
 
+https://www.arm.com/products/silicon-ip-cpu/machine-learning/arm-nn
+
+### hotchips
+https://www.youtube.com/user/hotchipsvideos/videos
+
+https://youtu.be/gPFTkud6lr0 
+
+https://youtu.be/uNUHQKJvAgE
+
+
 <https://github.com/ARM-software/ML-examples>
 
 <https://www.youtube.com/watch?v=_6sh097Dk5k>
