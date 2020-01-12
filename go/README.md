@@ -26,7 +26,7 @@ Go has block-level scoping.
 
 ## Go and databases
 <https://habr.com/ru/post/466459/> 
-
+<https://github.com/houqp/sqlvet>
 <https://conroy.org/introducing-sqlc>
 <https://github.com/kyleconroy/sqlc>
 <https://habr.com/ru/company/oleg-bunin/blog/461935/> .  Postgres SQL
@@ -114,7 +114,7 @@ https://news.ycombinator.com/item?id=16512954
 https://news.ycombinator.com/item?id=16500998
 
 
-### >Data Science< 
+### Data Science
 https://blog.chewxy.com/2017/11/02/go-for-data-science/
 
 ### Error Handling
