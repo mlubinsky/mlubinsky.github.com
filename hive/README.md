@@ -1,6 +1,9 @@
 
 ### Presto vs Hive
 Presto  query execution rate that is three times faster than Hive.
+
+<https://support.treasuredata.com/hc/en-us/articles/360001450928-Presto-Known-Limitations>
+
 ### AWS EMR
 <https://aws.amazon.com/premiumsupport/knowledge-center/logs-hive-queries-amazon-emr/>
 
