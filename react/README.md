@@ -261,6 +261,8 @@ const App = () => (
 
 <https://wattenberger.com/blog/react-hooks>
 
+<https://github.com/beautifulinteractions/beautiful-react-hooks>
+
 <https://www.modulo.blog/jfuentes/relearning-react-with-react-hooks>
 
 <https://www.freecodecamp.org/news/how-to-build-a-movie-search-app-using-react-hooks-24eb72ddfaf7/>
