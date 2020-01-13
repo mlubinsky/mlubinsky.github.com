@@ -293,4 +293,8 @@ B32 Sicilian Defense: Kalashnikov Variation
 
 <https://www.multitul.ru/sposoby_otkryvaniya_skladnyh_nojey.html>
 
+<https://www.air-gun.ru/social/readtopic/nog_-_otkrit_odnoy_rukoy_chast_3>
+
 <https://rezat.ru/articles/>
+
+штифты   thumb-stud
