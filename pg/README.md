@@ -26,6 +26,9 @@ https://habr.com/ru/post/481122/
 
 <https://habr.com/ru/post/479656/> ANALYZE TABLE statistics
 
+
+<https://habr.com/ru/post/483460/> . Windows functions
+
 <https://www.postgresql.org/docs/12/functions-aggregate.html>
 ```
 select
