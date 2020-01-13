@@ -163,6 +163,22 @@ https://github.com/olirice/flupy . Fluent data pipelines for python and your she
 <https://github.com/dagster-io/dagster> Duster
 
 <https://habr.com/ru/post/454668/>
+
+
+<https://news.ycombinator.com/item?id=22034101> Tools  for “Data Munging / Data Merging”
+
+<https://dagster.readthedocs.io/> Dagster is a system for building modern data applications. 
+
+<https://www.getdbt.com/>
+
+<http://visidata.org/>
+
+<https://github.com/simonw/csvs-to-sqlite> CSV to SQLite
+
+QuestDB is a fast NewSQL database for Hybrid Transactional, Analytical and Time Series processing workloads. Users can interact via HTTP endpoints, our web console, wire protocols (PostgreSQL and Influx) and programmatic APIs. The entire database fits in a dependency-free 3.5mb package and is Open Source under Apache 2.0.
+<https://www.questdb.io/>
+
+
 ```
 важно разделить бизнес-требования и функциональные требования
 Бизнес требования звучат следующим образом:
