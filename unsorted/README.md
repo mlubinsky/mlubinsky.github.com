@@ -288,3 +288,8 @@ B32 Sicilian Defense: Kalashnikov Variation
 ### Chess programming
 <https://youtu.be/mVdh5z0jtAo>
 
+
+### Knives
+
+<https://www.multitul.ru/sposoby_otkryvaniya_skladnyh_nojey.html>
+
