@@ -293,3 +293,4 @@ B32 Sicilian Defense: Kalashnikov Variation
 
 <https://www.multitul.ru/sposoby_otkryvaniya_skladnyh_nojey.html>
 
+<https://rezat.ru/articles/>
