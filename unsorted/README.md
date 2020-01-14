@@ -297,4 +297,6 @@ B32 Sicilian Defense: Kalashnikov Variation
 
 <https://rezat.ru/articles/>
 
+<https://masterok.livejournal.com/834121.html>
+
 штифты   thumb-stud
