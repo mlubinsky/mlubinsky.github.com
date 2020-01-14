@@ -1,3 +1,8 @@
+```
+jupyter notebook
+http://localhost:8888/tree
+```
+
 ## Jupyter Enterprise Gateway 
 
 <https://blog.jupyter.org/introducing-jupyter-enterprise-gateway-db4859f86762>
