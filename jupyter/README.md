@@ -9,7 +9,10 @@
 <https://github.com/jupyterhub/jupyterhub-deploy-docker>
 
 
+
 # Jupyter Pandas NumPy Scikit
+
+<https://towardsdatascience.com/pandas-tips-that-will-save-you-hours-of-head-scratching-31d8572218c9>
 
 <https://medium.com/jbennetcodes/how-to-use-pandas-to-access-databases-e4e74e6a329e> . Access Databases from Panda
 
