@@ -141,6 +141,8 @@ Live calculation in browser
 
 ## Business
 
+<https://news.ycombinator.com/item?id=22018946>
+
 <https://news.ycombinator.com/item?id=21950126>
 
 <https://blog.davidtate.org/clear-and-present-leadership/>
