@@ -578,6 +578,8 @@ Built-in Table-Generating Functions (UDTF):
 
 Lateral view is used in conjunction with user-defined table generating functions such as explode(). 
 ```
+select inline(array(struct('A',10,date '2015-01-01'),struct('B',20,date '2016-02-02')));
+
 SELECT pageid, adid
 FROM pageAds LATERAL VIEW explode(adid_list) adTable AS adid;
 
@@ -596,7 +598,18 @@ a . b . exp . bucket
 1   2   e1    b1
 1   2   e2    b2
 
-select inline(array(struct('A',10,date '2015-01-01'),struct('B',20,date '2016-02-02')));
+
+select a, b, exp, bucket  from
+(select 1 as a, 2 as b, "e1:b1&e2:b2" as c
+ UNION 
+ select 10 as a, 20 as b, NULL as c
+) T
+lateral view OUTER explode(str_to_map(c,  "&", ":")) tabeAlias AS exp, bucket
+
+a . b . exp . bucket
+1   2   e1    b1
+1   2   e2    b2
+10  20  NULL  NULL
 ```
 
 ## Custom Map/Reduce Scripts
