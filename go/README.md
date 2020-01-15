@@ -1,4 +1,4 @@
-
+<https://go101.org/article/101.html> 
 
 <https://play.golang.org/p/Irqxm0okfkt> .  Go playgrounds
 
