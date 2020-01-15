@@ -589,6 +589,12 @@ select tf.* from (select 0) t lateral view explode(array('A','B','C')) tf;
 select tf.* from (select 0) t lateral view explode(array('A','B','C')) tf as col;
 select posexplode(array('A','B','C'));
 
+select a, b, exp, bucket  from   (select 1 as a, 2 as b, "e1:b1&e2:b2" as c) T
+lateral view OUTER explode(str_to_map(c,  "&", ":")) tabeAlias AS exp, bucket
+
+a . b . exp . bucket
+1   2   e1    b1
+1   2   e2    b2
 
 select inline(array(struct('A',10,date '2015-01-01'),struct('B',20,date '2016-02-02')));
 ```
