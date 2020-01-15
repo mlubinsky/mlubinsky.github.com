@@ -2,8 +2,21 @@
 jupyter notebook
 http://localhost:8888/tree
 
+https://realpython.com/python-statistics/
+https://realpython.com/pandas-python-explore-dataset/
+
 zoo = pd.read_csv('zoo.csv', delimiter = ',')
 zoo.describe() .   count, mean, max
+
+to do:
+there are 100 cvs files without headers6 columns;   group them by 1st digits in 10 groups
+make report with columns:
+file_name 
+# of records
+col1 min/max/avg
+col2 min/max/avg
+..
+col6 min/max/avg
 
 ```
 
