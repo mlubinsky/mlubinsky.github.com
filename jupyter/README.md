@@ -11,13 +11,38 @@ zoo.describe() .   count, mean, max
 to do:
 there are 100 cvs files without headers6 columns;   group them by 1st digits in 10 groups
 make report with columns:
-file_name 
-# of records
-col1 min/max/avg
-col2 min/max/avg
-..
-col6 min/max/avg
+    file_name 
+    # of records
+    col1 min/max/avg
+    col2 min/max/avg
+    ..
+    col6 min/max/avg
 
+import glob
+files= glob.glob('./*.csv')
+files.sort() 
+print(files)
+
+col_names =  ['file', 'records', 'aX-avg','aY-avg','aZ-avg','gX-avg','gY-avg','gZ-avg' ]
+ https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it
+summary_frame = pd.DataFrame(columns=col_names)
+frames={}
+for f in files:
+   print (f)
+   ## 
+   df = pd.read_csv('1_1.csv', delimiter = ',', header=None, names=['aX','aY','aZ','gX','gY','gZ'])
+   frames[f] = df
+   n_records=len(frames[f])
+   summary_frame.loc[len(summary_frame)]=[
+            f, 
+	    n_records, 
+            df["aX"].mean(), 
+            df["aY"].mean(), 
+            df["aZ"].mean(),
+            df["gX"].mean(), 
+            df["gY"].mean(), 
+            df["gZ"].mean()  
+	    ]
 ```
 
 ## Jupyter Enterprise Gateway 
