@@ -1,6 +1,10 @@
 ```
 jupyter notebook
 http://localhost:8888/tree
+
+zoo = pd.read_csv('zoo.csv', delimiter = ',')
+zoo.describe() .   count, mean, max
+
 ```
 
 ## Jupyter Enterprise Gateway 
