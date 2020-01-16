@@ -64,6 +64,9 @@ Deploying to AWS
 <https://github.com/genular/simon-frontend> .   <https://genular.org/>
 
 ## AutoML
+
+<https://www.ahmedbesbes.com/blog/introduction-to-mlbox>
+
 AutoML basic project: <https://github.com/minimaxir/automl-gs>
 given X predict Y
 
