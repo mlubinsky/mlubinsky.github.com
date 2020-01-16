@@ -5,8 +5,12 @@ http://localhost:8888/tree
 https://realpython.com/python-statistics/
 https://realpython.com/pandas-python-explore-dataset/
 
-zoo = pd.read_csv('zoo.csv', delimiter = ',')
-zoo.describe() .   count, mean, max
+import math
+import statistics
+import numpy as np
+import scipy.stats
+import pandas as pd
+
 
 to do:
 there are 100 cvs files without headers6 columns;   group them by 1st digits in 10 groups
@@ -24,7 +28,7 @@ files.sort()
 print(files)
 
 col_names =  ['file', 'records', 'aX-avg','aY-avg','aZ-avg','gX-avg','gY-avg','gZ-avg' ]
- https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it
+# https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it
 summary_frame = pd.DataFrame(columns=col_names)
 frames={}
 for f in files:
@@ -43,6 +47,22 @@ for f in files:
             df["gY"].mean(), 
             df["gZ"].mean()  
 	    ]
+	    
+import glob
+files= glob.glob('./*.csv')
+files.sort() 
+print(files)	    
+
+print("file, n_records, aX_mean, aX_min, aX_max,  aY_mean, aY_min, aY_max, aZ_mean, aZ_min, aZ_max, gX_mean, gX_min, gX_max,  gY_mean, gY_min, gY_max, gZ_mean, gZ_min, gZ_max")
+for f in files:
+   df = pd.read_csv(f, delimiter = ',', header=None, names=['aX','aY','aZ','gX','gY','gZ'])
+   print( f, s, len(df), s,
+            df["aX"].mean(), s,  df["aX"].min(), s, df["aX"].max(), s,
+            df["aY"].mean(), s,  df["aY"].min(), s, df["aY"].max(), s,
+            df["aZ"].mean(), s,  df["aZ"].min(), s, df["aZ"].max(), s,
+            df["gX"].mean(), s,  df["gX"].min(), s, df["gX"].max(), s,
+            df["gY"].mean(), s,  df["gY"].min(), s, df["gY"].max(), s,
+            df["gZ"].mean(), s,  df["gZ"].min(), s, df["gZ"].max() 
 ```
 
 ## Jupyter Enterprise Gateway 
