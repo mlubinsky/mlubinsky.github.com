@@ -29,11 +29,11 @@ print(files)
 
 col_names =  ['file', 'records', 'aX-avg','aY-avg','aZ-avg','gX-avg','gY-avg','gZ-avg' ]
 # https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it
+
 summary_frame = pd.DataFrame(columns=col_names)
 frames={}
 for f in files:
    print (f)
-   ## 
    df = pd.read_csv('1_1.csv', delimiter = ',', header=None, names=['aX','aY','aZ','gX','gY','gZ'])
    frames[f] = df
    n_records=len(frames[f])
