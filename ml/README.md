@@ -11,6 +11,8 @@ Book Data Science in Production
 <https://www.ahmedbesbes.com/blog/end-to-end-machine-learning>
 
 
+https://www.sicara.ai/blog/
+
 <https://habr.com/ru/post/479398/> Приводим уравнение линейной регрессии в матричный вид
 
 <https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/about> 
