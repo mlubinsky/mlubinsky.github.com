@@ -225,6 +225,7 @@ Live calculation in browser
 
 
 
+<https://habr.com/ru/post/484114/> . Подборка 143 переводов эссе Пола Грэма (из 184)
 
 
 
