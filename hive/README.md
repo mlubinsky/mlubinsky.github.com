@@ -25,11 +25,11 @@ The Enterprise Big Data Lake: Delivering the Promise of Big Data and Data Scienc
 
 ### collect_set and concat_ws
 <https://dwgeek.com/apache-hive-group_concat-alternative-example.html/>
-
+```
 collect_set(col)  Returns a set of objects with duplicate elements eliminated.
 collect_list(col)  Returns a list of objects with duplicates.
 concat_ws(string SEP, array<string>);
-``` 
+ 
   create table t1 (x int, s string);
   insert into t1 values 
   (1, "one"), 
