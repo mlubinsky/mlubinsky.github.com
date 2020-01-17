@@ -18,6 +18,8 @@
 
 <https://yurichev.com/blog/qsort/> quick sort
 
+<https://habr.com/ru/post/484224/> Radix sort
+
 <https://habr.com/ru/company/spice/blog/478250/>
 
 <https://habr.com/ru/company/spice/blog/479320/>
