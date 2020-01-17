@@ -23,6 +23,35 @@ Hadoop Application Architectures: Designing Real-World Big Data Applications (I 
 The Enterprise Big Data Lake: Delivering the Promise of Big Data and Data Science 
 <https://www.amazon.com/Enterprise-Big-Data-Lake-Delivering-ebook/dp/B07NY44RKR/>
 
+### collect_set and concat_ws
+<https://dwgeek.com/apache-hive-group_concat-alternative-example.html/>
+
+collect_set(col)  Returns a set of objects with duplicate elements eliminated.
+collect_list(col)  Returns a list of objects with duplicates.
+concat_ws(string SEP, array<string>);
+``` 
+  create table t1 (x int, s string);
+  insert into t1 values 
+  (1, "one"), 
+  (3, "three"), 
+  (2, "two"), 
+  (1, "one"),
+  (1, "four"), 
+  (3, "five"), 
+  (2, "six"), 
+  (7, "seven");
+
+ SELECT x,
+        count(*) as num_of_rows, 
+        concat_ws(',' , collect_set(s)) as group_con 
+ FROM t1 group by x;
+ 
+x num_of_rows group_con
+1    3                 one,four
+2    2                 two,six
+3    2                 three,five
+7    1                 seven
+```
 
 ### How to set variables in Hive script:
 
