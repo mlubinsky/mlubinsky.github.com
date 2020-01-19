@@ -10,6 +10,8 @@
 
 <http://shop.oreilly.com/product/0636920073994.do>  Book: Streaming System
 
+<https://engineering.grab.com/plumbing-at-scale>
+
 ## Hexagonal Architecture
 <https://medium.com/@animeshgaitonde/hexagonal-architecture-principles-practical-example-in-java-364bb2e50075> 
 
