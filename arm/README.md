@@ -5,10 +5,14 @@
 
 Gyroscope (3 features) and acceleration data (3 features)
 
-NaNo 33 does not support Wifi ?
+NaNo 33 BLE does not support Wifi.
 
 Deploy tensorflow lite for micro (for embedded devs)
 <https://www.tensorflow.org/lite/microcontrollers>
+
+<https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/README.md>
+
+
 
 <https://habr.com/ru/post/473424/> . ARM - графические решения Mali-G57 Valhall и Mali-D37, нейропроцессоры Ethos-N57 и N37
 
