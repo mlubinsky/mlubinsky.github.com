@@ -1,5 +1,30 @@
-# cURL and SSH
+# cURL and SSH , detach from terminal
 
+### Ctrl-Z bg fg jobs disown 
+
+<https://superuser.com/questions/178587/how-do-i-detach-a-process-from-terminal-entirely>
+If a process is already in execution, such as the logg running  tar,  
+simply press ``Ctrl+Z`` to stop it then enter the command ``bg`` to continue with its execution in the background as a job.
+``jobs` show all your background jobs. 
+However, its stdin, stdout, stderr are still joined to the terminal.
+
+also you may use &:
+```
+ tar -czf  my.tar.gz . &
+ jobs
+```
+
+``disown`  is used after the a process has been launched and put in the background, it’s work is to remove a shell job from the shell’s active list jobs,
+ when you close the controlling terminal, the job will not hang or send a SIGHUP to any child jobs.
+ 
+ ```disown -h %1```
+ You cannot apply ``nohup`` to running process.
+  Unlike nohup, disown is used after the process has been launched and backgrounded.
+```
+my_command &
+disown
+```
+ 
 ### CURL
 
 <https://nordicapis.com/understanding-the-hidden-powers-of-curl/>
