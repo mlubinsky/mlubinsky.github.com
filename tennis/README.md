@@ -1,5 +1,7 @@
+## Forehand
 <https://www.youtube.com/watch?v=UlgLRhGefm0> - Swing A Tennis Racket Like A Weight 
 
+<https://www.youtube.com/watch?v=ht-QX2ZN_Ao> Forehand
 
 Tennis Forehand: Hit Amazing Forehands In 5 Steps:
 <https://www.youtube.com/watch?v=_ZC7aHLxdiM&list=PLhsiSjq9Z0405XJK8rbzFFa_FGdZflmq1&index=2>
@@ -8,7 +10,6 @@ Tennis Forehand: Hit Amazing Forehands In 5 Steps:
 
 <https://www.youtube.com/watch?v=-iojO8cI6Kg> Using the "Box" for Powerful and Stable Groundstrokes
 
-<http://crunchtimecoaching.com/landing/youtubebackhand/> Free Training Series Reveals How to add power and spin to your one handed backhand.. 
 
 <https://www.youtube.com/watch?v=NS_scoYsF0k> NO more EASY SHOTS for your opponent! Forehand Slice Mastery
 <https://www.youtube.com/results?search_query=returning+weak+serve> . returning weak serve
@@ -33,9 +34,8 @@ Tennis Forehand: Hit Amazing Forehands In 5 Steps:
 <https://www.youtube.com/watch?v=VqZyiqQrNG8&index=2&list=PLbTEk_63h_nuEqmUugLqw0D_DHT813lgt>
 Совершенный форхенд. Часть 2: Техника удара справа
 
-<https://www.youtube.com/watch?v=0cAIwWcDfdg> Как играть с соперником, который держит мяч (тактические приемы в теннисе)
 
-<https://www.youtube.com/watch?v=H3K9y8ptQ0s> Two Tennis Tips That Work Better Than "Swing Low To High"
+
 
 <https://www.youtube.com/watch?v=6TrKHZzetpc> How To Play Tennis - Forehand - How To Hit Powerful Forehands
 
@@ -44,3 +44,15 @@ Tennis Forehand: Hit Amazing Forehands In 5 Steps:
 <https://www.youtube.com/watch?v=zcd9fyRedgA> How Ideal Contact Point Unlocks The Power Of Tennis Strokes
 
 <https://www.youtube.com/watch?v=0QC0lAHptR8> How To Play Relaxed And Accurate Tennis Groundstrokes
+
+## Backhand
+
+<http://crunchtimecoaching.com/landing/youtubebackhand/> Free Training Series Reveals How to add power and spin to your one handed backhand.. 
+
+## Tactics
+
+<https://www.youtube.com/watch?v=H3K9y8ptQ0s> Two Tennis Tips That Work Better Than "Swing Low To High"
+
+<https://www.youtube.com/watch?v=0cAIwWcDfdg> Как играть с соперником, который держит мяч (тактические приемы в теннисе)
+
+
