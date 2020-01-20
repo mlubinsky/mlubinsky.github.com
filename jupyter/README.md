@@ -67,6 +67,33 @@ for f in files:
             df["gZ"].mean(), s,  df["gZ"].min(), s, df["gZ"].max() 
 ```
 
+
+To convert the data to parquet we are going to use pandas to read the csv and store it in one large parquet file:
+```
+import glob
+import pandas as pd
+
+files = glob.glob("input/yellow_tripdata_2018-*.csv")
+
+def read_csv(filename):
+    return pd.read_csv(
+        filename,
+        dtype={"store_and_fwd_flag": "bool"},
+        parse_dates=["tpep_pickup_datetime", "tpep_dropoff_datetime"],
+        index_col=False,
+        infer_datetime_format=True,
+        true_values=["Y"],
+        false_values=["N"],
+    )
+dfs = list(map(read_csv, files))
+df = pd.concat(dfs)
+df.to_parquet("yellow_tripdata_2018.parquet")
+
+The resulting parquet file has a size of 2.2GiB, while the sum of the original CSV files was 11GiB. Pandas supports two parquet implementations, fastparquet and pyarrow. They both have strengths and weakness
+
+
+```
+
 ## Jupyter Enterprise Gateway 
 
 <https://blog.jupyter.org/introducing-jupyter-enterprise-gateway-db4859f86762>
