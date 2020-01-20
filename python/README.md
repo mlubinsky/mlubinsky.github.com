@@ -45,7 +45,9 @@ Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-e
 
 <https://florimond.dev/blog/articles/2019/08/introduction-to-asgi-async-python-web/>
 
- 
+
+
+<https://reachtim.com/articles/reading-binary-data-with-python.html> . reading binary data with  python
 
 
 ## multiprocessing vs threading
