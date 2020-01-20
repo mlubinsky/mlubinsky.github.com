@@ -29,6 +29,9 @@ console.log(JSON.parse(JSON.stringify(obj))).
 
 <https://www.manning.com/books/functional-programming-in-javascript> THE BOOK
 
+
+<https://medium.com/@viacheslavlushchinskiy/javascript-objects-and-arrays-manipulation-for-rest-api-b3b59a73b618>
+
 <https://learn.javascript.ru/>
 
 <https://exploringjs.com/>
