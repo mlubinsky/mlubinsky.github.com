@@ -16,6 +16,8 @@
 
 https://habr.com/ru/post/481122/
 
+<https://habr.com/ru/post/484670/> .  Query 
+
 <https://habr.com/ru/post/479508/> PG antipatterns: JOINS
 
 <https://habr.com/ru/post/479298/> PostgreSQL Antipatterns: CTE x CTE
