@@ -89,10 +89,11 @@ dfs = list(map(read_csv, files))
 df = pd.concat(dfs)
 df.to_parquet("yellow_tripdata_2018.parquet")
 
-The resulting parquet file has a size of 2.2GiB, while the sum of the original CSV files was 11GiB. Pandas supports two parquet implementations, fastparquet and pyarrow. They both have strengths and weakness
-
-
+The resulting parquet file has a size of 2.2GiB, while the sum of the original CSV files was 11GiB. 
+Pandas supports two parquet implementations, fastparquet and pyarrow. They both have strengths and weaknessess
 ```
+<http://peter-hoffmann.com/2020/understand-predicate-pushdown-on-rowgroup-level-in-parquet-with-pyarrow-and-python.html>
+ 
 
 ## Jupyter Enterprise Gateway 
 
