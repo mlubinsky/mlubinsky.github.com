@@ -12,6 +12,8 @@ performance.
 
 The nRF52840 contains 1 MB of flash and 256 kB of RAM that can be used for code and data storage.
 
+<https://content.arduino.cc/assets/Nano_BLE_MCU-nRF52840_PS_v1.1.pdf>
+
 Deploy tensorflow lite for micro (for embedded devs)
 <https://www.tensorflow.org/lite/microcontrollers>
 
