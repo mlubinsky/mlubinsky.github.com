@@ -10,6 +10,8 @@ The ARM® Cortex-M4 processor with floating-point unit (FPU) has a 32-bit instru
 (Thumb®-2 technology) that implements a superset of 16- and 32-bit instructions to maximize code density and
 performance.
 
+The nRF52840 contains 1 MB of flash and 256 kB of RAM that can be used for code and data storage.
+
 Deploy tensorflow lite for micro (for embedded devs)
 <https://www.tensorflow.org/lite/microcontrollers>
 
