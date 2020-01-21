@@ -13,6 +13,8 @@ Deploy tensorflow lite for micro (for embedded devs)
 <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/README.md>
 
 
+## ARM CPUs
+https://habr.com/ru/news/t/453954/
 
 <https://habr.com/ru/post/473424/> . ARM - графические решения Mali-G57 Valhall и Mali-D37, нейропроцессоры Ethos-N57 и N37
 
