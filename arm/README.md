@@ -1,11 +1,14 @@
-### Ardruino 
+### Arduino Nono BTE
 <https://medium.com/tensorflow/how-to-get-started-with-machine-learning-on-arduino-7daf95b4157>
 
 <https://arduino.github.io/ArduinoAI/BLESense-test-dashboard/>
 
 Gyroscope (3 features) and acceleration data (3 features)
 
-NaNo 33 BLE does not support Wifi.
+NaNo 33 BLE does not support Wi-Fi
+The ARM® Cortex-M4 processor with floating-point unit (FPU) has a 32-bit instruction set 
+(Thumb®-2 technology) that implements a superset of 16- and 32-bit instructions to maximize code density and
+performance.
 
 Deploy tensorflow lite for micro (for embedded devs)
 <https://www.tensorflow.org/lite/microcontrollers>
