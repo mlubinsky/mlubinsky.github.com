@@ -2,6 +2,12 @@
 
 <https://www.freecodecamp.org/news/the-guide-to-using-eslint-and-prettier-in-a-react-app/>
 
+## Find non-ASCII chars in file
+<https://stackoverflow.com/questions/3001177/how-do-i-grep-for-all-non-ascii-characters>
+ grep on OSX 10.8 no longer supports PCRE ("Perl-compatible regular expressions") as Darwin now uses BSD grep instead of GNU grep.
+```
+grep --color='auto' -P -n "[\x80-\xFF]" file.xml
+```
 
 ## Code explorer:
 
