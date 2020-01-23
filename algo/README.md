@@ -2,6 +2,8 @@
 
 <https://github.com/mochow13/competitive-programming-library> 
 
+<https://habr.com/ru/company/mailru/blog/479822/> Succinct data structures
+
 <https://news.ycombinator.com/item?id=21738802>
 
 <https://www.geeksforgeeks.org/union-find/> union-find (disjoint-set)
