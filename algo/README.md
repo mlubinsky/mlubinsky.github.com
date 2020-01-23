@@ -2,9 +2,11 @@
 
 <https://github.com/mochow13/competitive-programming-library> 
 
+<https://habr.com/ru/company/otus/blog/485194/> Дерево отрезков 
+
 <https://habr.com/ru/company/mailru/blog/479822/> Succinct data structures
 
-<https://habr.com/ru/post/484756/> Visual info theory
+<https://habr.com/ru/post/484756/> Visual information theory
 
 <https://news.ycombinator.com/item?id=21738802>
 
