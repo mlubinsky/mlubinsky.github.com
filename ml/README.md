@@ -67,6 +67,8 @@ Deploying to AWS
 
 ## AutoML
 
+<https://habr.com/ru/company/jetinfosystems/blog/485232/>
+
 <https://www.ahmedbesbes.com/blog/introduction-to-mlbox>
 
 AutoML basic project: <https://github.com/minimaxir/automl-gs>
