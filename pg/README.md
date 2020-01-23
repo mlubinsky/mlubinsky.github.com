@@ -100,6 +100,8 @@ docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=passwo
 
 <https://habr.com/ru/post/483014/>
 
+<https://habr.com/ru/post/484978/>
+
 <https://habr.com/ru/post/481556/>
 
 <https://layerci.com/blog/postgres-is-the-answer/>
