@@ -69,7 +69,7 @@ Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-e
 multiprocessing vs threading
 <https://sumit-ghosh.com/articles/multiprocessing-vs-threading-python-data-science/>
 
-
+<https://habr.com/ru/post/485236/> . Конфигурационные файлы в Python
 
 ## Stats / Numpy
 
