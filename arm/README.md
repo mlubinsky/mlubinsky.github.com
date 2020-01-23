@@ -14,6 +14,7 @@ The nRF52840 contains 1 MB of flash and 256 kB of RAM that can be used for code 
 
 <https://content.arduino.cc/assets/Nano_BLE_MCU-nRF52840_PS_v1.1.pdf>
 
+<https://blog.arduino.cc/2019/07/31/why-we-chose-to-build-the-arduino-nano-33-ble-core-on-mbed-os/>
 
 <https://www.hackster.io/news/new-arduino-nano-boards-run-arm-s-mbed-os-3777ccb89017>
 
