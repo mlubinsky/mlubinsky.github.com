@@ -2,6 +2,9 @@ CSS <https://every-layout.dev/>
 
 <https://habr.com/ru/post/472816/> JS patterns
 
+
+<https://habr.com/ru/post/485294/> .  NodeJS in 2020 free russian cource
+
 <https://www.wix.engineering/post/breaking-chains-with-pipelines-in-modern-javascript>
 
 <https://www.smashingmagazine.com/2019/11/express-es6-javascript-stack-mongodb-mongoose-servers/>
