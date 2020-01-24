@@ -113,6 +113,8 @@ Pandas supports two parquet implementations, fastparquet and pyarrow. They both 
 
 <https://medium.com/jbennetcodes/how-to-use-pandas-to-access-databases-e4e74e6a329e> . Access Databases from Panda
 
+<https://kanoki.org/2020/01/21/pandas-dataframe-filter-with-multiple-conditions/> filter dataframes
+
 <https://towardsdatascience.com/integrate-jupyter-into-your-data-pipeline-9a02fab3cee5>
 
 <https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
