@@ -18,6 +18,10 @@ The nRF52840 contains 1 MB of flash and 256 kB of RAM that can be used for code 
 
 <https://www.hackster.io/news/new-arduino-nano-boards-run-arm-s-mbed-os-3777ccb89017>
 
+## IoT  workshop
+
+<https://github.com/BlackstoneEngineering/aiot-workshop>
+
 ## tensorflow lite
 <https://www.tensorflow.org/lite/microcontrollers>
 
