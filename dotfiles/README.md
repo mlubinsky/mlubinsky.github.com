@@ -14,6 +14,26 @@
 
 <https://www.pixelstech.net/article/1377917732-Server-monitoring-shell-scripts>
 
+<https://mywiki.wooledge.org/BashGuide>
+
+<https://news.ycombinator.com/item?id=22027809> $@ . 
+https://mywiki.wooledge.org/BashGuide
+```
+ A shebang is basically just a line (always the first line) in a file which tells the operating system what program to invoke to execute the script. There are different shells beyond just bash, so shellcheck wants to know which flavor the shell is written for and uses the shebang to figure it out.
+ 
+
+Pick the user's bash from PATH environment:
+    #!/usr/bin/env bash
+Or specify a specific bash:
+    #!/bin/bash
+Or use whatever plain-shell is installed:
+    #!/bin/sh
+Or maybe it's a Python script:
+    #!/usr/bin/env python3
+Or it's a text file:
+    #!/usr/bin/env vi
+```
+
 ```
 set -e . # exit on any non zero return code ( set -o errexit )
 Unfortunately it means you can't check $? as bash will never get to the checking code if it isn't zero. 
