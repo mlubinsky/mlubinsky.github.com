@@ -34,13 +34,18 @@ configure mbed
 
 CMSIS-NN code: <https://github.com/ARM-software/ML-KWS-for-MCU/blob/master/Deployment/Source/NN/DNN/dnn.cpp>
 
-## tensorflow lite
+## TF-lite - tensorflow lite
 <https://www.tensorflow.org/lite/microcontrollers>
 
 <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/README.md>
 
+<https://tinymlsummit.org/2019/>
 
-https://colab.research.google.com/github/arduino/ArduinoTensorFlowLiteTutorials/blob/master/GestureToEmoji/arduino_tinyml_workshop.ipynb#scrollTo=kGNFa-lX24Qo
+<https://tinymlsummit.org/>
+
+<https://colab.research.google.com/github/arduino/ArduinoTensorFlowLiteTutorials/blob/master/GestureToEmoji/arduino_tinyml_workshop.ipynb#scrollTo=kGNFa-lX24Qo>
+
+<https://www.eetimes.com/tinyml-sees-big-hopes-for-small-ai/>
 
 ## ARM CPUs
 https://habr.com/ru/news/t/453954/
