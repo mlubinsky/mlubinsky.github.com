@@ -79,17 +79,17 @@ https://habr.com/ru/news/t/453954/
 
 <https://habr.com/ru/post/473424/> . ARM - графические решения Mali-G57 Valhall и Mali-D37, нейропроцессоры Ethos-N57 и N37
 
-https://arxiv.org/abs/1911.05289 . 
+<https://arxiv.org/abs/1911.05289> . 
 The Deep Learning Revolution and Its Implications for Computer Architecture and Chip Design
 
-https://www.arm.com/products/silicon-ip-cpu/machine-learning/arm-nn
+<https://www.arm.com/products/silicon-ip-cpu/machine-learning/arm-nn>
 
 ### hotchips
-https://www.youtube.com/user/hotchipsvideos/videos
+<https://www.youtube.com/user/hotchipsvideos/videos>
 
-https://youtu.be/gPFTkud6lr0 
+<https://youtu.be/gPFTkud6lr0>
 
-https://youtu.be/uNUHQKJvAgE
+<https://youtu.be/uNUHQKJvAgE>
 
 
 <https://github.com/ARM-software/ML-examples>
