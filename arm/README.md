@@ -56,6 +56,9 @@ configure mbed
 
 <https://github.com/moon412/mbed-dsc-e2e> Yue Zhao
 
+## CMSIS-NN 
+<https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/deploying-convolutional-neural-network-on-cortex-m-with-cmsis-nn>
+
 CMSIS-NN code: <https://github.com/ARM-software/ML-KWS-for-MCU/blob/master/Deployment/Source/NN/DNN/dnn.cpp>
 
 ## TF-lite - tensorflow lite
