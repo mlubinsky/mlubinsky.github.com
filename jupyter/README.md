@@ -1,5 +1,7 @@
 <https://www.dataschool.io/cloud-services-for-jupyter-notebook/>
 
+<https://habr.com/ru/post/485318/> Добавляем в Jupyter Notebooks красоту и интерактивность
+
 ```
 jupyter notebook
 http://localhost:8888/tree
