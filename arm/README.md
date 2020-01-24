@@ -30,6 +30,10 @@ configure mbed
 
 <https://github.com/BlackstoneEngineering/aiot-workshop>
 
+<https://github.com/moon412/mbed-dsc-e2e> Yue Zhao
+
+CMSIS-NN code: <https://github.com/ARM-software/ML-KWS-for-MCU/blob/master/Deployment/Source/NN/DNN/dnn.cpp>
+
 ## tensorflow lite
 <https://www.tensorflow.org/lite/microcontrollers>
 
