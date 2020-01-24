@@ -25,6 +25,8 @@ The nRF52840 contains 1 MB of flash and 256 kB of RAM that can be used for code 
 
 <https://blog.feabhas.com/2017/11/introduction-docker-embedded-developers-part-3-cross-compiling-cortex-m/>
 
+<https://blog.feabhas.com/2017/12/introduction-docker-embedded-developers-part-4-reducing-docker-image-size/>
+
 <https://github.com/ARMmbed/mbed-cli/issues/599>
 
 <https://github.com/productize/docker-mbed-cli>
