@@ -18,7 +18,15 @@ The nRF52840 contains 1 MB of flash and 256 kB of RAM that can be used for code 
 
 <https://www.hackster.io/news/new-arduino-nano-boards-run-arm-s-mbed-os-3777ccb89017>
 
-## IoT  workshop
+##  Blackstone Engineering IoT Workshop and Peleon Device Management
+<https://www.pelion.com/docs/device-management> Peleon device management
+
+<https://www.pelion.com/docs/device-management/current/service-api-references/account-management.html>
+
+<https://www.pelion.com/docs/device-management/current/user-account/api-keys.html>
+
+configure mbed
+<https://os.mbed.com/docs/mbed-os/v5.15/tools/manual-installation.html>
 
 <https://github.com/BlackstoneEngineering/aiot-workshop>
 
