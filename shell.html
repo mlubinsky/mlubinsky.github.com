@@ -11,18 +11,31 @@ https://habr.com/ru/company/badoo/blog/468061/ .  CRON
 
 <h2> bash </h2>
 https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort
-
-
-https://direnv.net/
-
+https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md
+http://caiustheory.com/bash-script-setup/
+https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/
+mkdir blabla
+cd !$ .  <- previous command argument
+sudo !! - prev command with root priv
+https://habr.com/company/ruvds/blog/413725/    -- arrays is bash
 what is sh -c ?
 https://askubuntu.com/questions/831847/what-is-the-sh-c-command
 https://stackoverflow.com/questions/82256/how-do-i-use-sudo-to-redirect-output-to-a-location-i-dont-have-permission-to-wr
 
-https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md
+<h2>alias</h2>
 
-https://stackoverflow.com/questions/82256/how-do-i-use-sudo-to-redirect-output-to-a-location-i-dont-have-permission-to-wr
+alias alog="tail -f /var/log/apache2/error.log"
+alias please='sudo $(fc -ln -1)'
 
+
+alias tw='open -a /Applications/TextWrangler.app'
+tw /path/I/want/opened/
+
+
+https://direnv.net/
+
+
+ 
 1 for stdout and 2 for stderr.
 cat foo.txt > output.txt 2>&1
 time echo foo 2>&1 > file.txt
@@ -195,25 +208,7 @@ Use -c to count how many matches: grep -c match file.txt
 Show list of files that match: grep -rl match *
 Number of lines to show before and after match: grep -B 2 -A 2 match file.txt
 
-<h2>bash</h2>
-mkdir blabla
-cd !$ .  <- previous command argument
 
-sudo !!
-
-https://habr.com/company/ruvds/blog/413725/    -- arrays is bash
-
-http://caiustheory.com/bash-script-setup/
-https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/
-
-alias alog="tail -f /var/log/apache2/error.log"
-alias please='sudo $(fc -ln -1)'
-
-
-alias tw='open -a /Applications/TextWrangler.app'
-tw /path/I/want/opened/
-
-sudo !!   - prev command with root priv
 <b>tr (also exists: expand and unexpand) </b>
 cat geeks.txt | tr ':[space]:' '\t' > out.txt  - replace spaces with tabso
 cat myfile | tr a-z A-Z > output.txt
