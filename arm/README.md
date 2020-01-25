@@ -26,6 +26,10 @@ cd psweb/
 docker image build -t test:latest .
 docker container run -d --name webl3 --publish 8084:8080 test:latest
 In browser: http://localhost:8084/
+
+docker container run -it ubuntu:latest /bin/bash    # you inside the container shell now!
+
+
 ```
 <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm>
 
