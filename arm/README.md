@@ -20,7 +20,13 @@ The nRF52840 contains 1 MB of flash and 256 kB of RAM that can be used for code 
 
 
 ## Mbed-cli Docker
-
+```
+git clone  https://github.com/nigelpoulton/psweb.git
+cd psweb/
+docker image build -t test:latest .
+docker container run -d --name webl3 --publish 8084:8080 test:latest
+In browser: http://localhost:8084/
+```
 <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm>
 
 <https://blog.feabhas.com/2017/10/introduction-docker-embedded-developers-part-2-building-images/>
