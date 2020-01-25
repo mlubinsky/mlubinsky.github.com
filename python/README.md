@@ -60,6 +60,8 @@ Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-e
 
 <http://pljung.de/posts/easy-concurrency-in-python/> . concurrency
 
+<https://zacs.site/blog/linear-python.html>
+
 <https://www.integralist.co.uk/posts/python-asyncio/>
 
 <https://trio.readthedocs.io/en/stable/> asyncio alternative
