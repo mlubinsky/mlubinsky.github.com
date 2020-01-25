@@ -23,6 +23,8 @@ The nRF52840 contains 1 MB of flash and 256 kB of RAM that can be used for code 
 michael.lybins@a 
 Vanti..7!
 
+<https://os.mbed.com/pelion-free-tier/> Peleon Device Management
+
 ## Mbed-cli Docker
 ```
 git clone  https://github.com/nigelpoulton/psweb.git
