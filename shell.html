@@ -18,10 +18,21 @@ mkdir blabla
 cd !$ .  <- previous command argument
 sudo !! - prev command with root priv
 https://habr.com/company/ruvds/blog/413725/    -- arrays is bash
-what is sh -c ?
+
+<h3> what is sh -c </h3>
 https://askubuntu.com/questions/831847/what-is-the-sh-c-command
 https://stackoverflow.com/questions/82256/how-do-i-use-sudo-to-redirect-output-to-a-location-i-dont-have-permission-to-wr
 
+how-to-get-the-source-directory-of-a-bash-script-from-within-the-script-itself?
+https://stackoverflow.com/questions/59895/how-to-get-the-source-directory-of-a-bash-script-from-within-the-script-itself/  
+
+  
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+echo $DIR
+echo "The script basename `basename "$0"`"
+  
 !#/bin/bash
 
 function test1() { command -v "$1" >/dev/null 2>&1; }
