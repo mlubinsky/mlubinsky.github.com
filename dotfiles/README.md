@@ -33,7 +33,7 @@ Or maybe it's a Python script:
 Or it's a text file:
     #!/usr/bin/env vi
 ```
-
+<https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin>
 ```
 set -e . # exit on any non zero return code ( set -o errexit )
 Unfortunately it means you can't check $? as bash will never get to the checking code if it isn't zero. 
