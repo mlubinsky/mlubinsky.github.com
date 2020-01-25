@@ -18,6 +18,10 @@ The nRF52840 contains 1 MB of flash and 256 kB of RAM that can be used for code 
 
 <https://www.hackster.io/news/new-arduino-nano-boards-run-arm-s-mbed-os-3777ccb89017>
 
+## Mbed Studio
+<https://os.mbed.com/studio/>
+michael.lybins@a 
+Vanti..7!
 
 ## Mbed-cli Docker
 ```
