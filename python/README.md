@@ -29,7 +29,7 @@
 ## Parsing
 <https://tomassetti.me/parsing-in-python/> Parsing in Python
 
-<https://github.com/thebjorn/pydeps> showdependency using graphviz
+<https://github.com/thebjorn/pydeps> show dependency using graphviz
 
 ## Creating Python Package
 
@@ -49,8 +49,12 @@ Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-e
 ## Binary data
 <https://reachtim.com/articles/reading-binary-data-with-python.html> . reading binary data with  python
 
+ live value plotter using Matplotlib:
+<https://github.com/wahtak/develocorder>
 
-##  zipapp (Python 3.5 )module generates a zip file that can bundle your entire python project (including a virtual environment) and run it as an executable
+<https://github.com/facebookresearch/visdom> .  Plotting from Facebook research
+
+##  zipapp (Python 3.5) module generates a zip file that can bundle your entire python project (including a virtual environment) and run it as an executable
 <http://voorloopnul.com/blog/writing-self-contained-etl-pipeline-with-python/>
 
 ## multiprocessing vs threading
