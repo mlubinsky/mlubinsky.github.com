@@ -43,8 +43,9 @@ docker container run -it ubuntu:latest /bin/bash    # you inside the container s
 ```
 <https://os.mbed.com/docs/mbed-os/v5.15/tools/manual-installation.html> 
 
-
+<https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads>
 <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm>
+<https://gist.github.com/joegoggins/7763637>
 
 <https://developer.arm.com/docs/100748/latest/getting-started/installing-arm-compiler>
 
