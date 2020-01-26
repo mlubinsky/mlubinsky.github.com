@@ -46,9 +46,12 @@ Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-e
 <https://florimond.dev/blog/articles/2019/08/introduction-to-asgi-async-python-web/>
 
 
-
+## Binary data
 <https://reachtim.com/articles/reading-binary-data-with-python.html> . reading binary data with  python
 
+
+##  zipapp (Python 3.5 )module generates a zip file that can bundle your entire python project (including a virtual environment) and run it as an executable
+<http://voorloopnul.com/blog/writing-self-contained-etl-pipeline-with-python/>
 
 ## multiprocessing vs threading
 
