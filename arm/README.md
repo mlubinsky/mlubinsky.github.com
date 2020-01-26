@@ -98,6 +98,8 @@ CMSIS-NN code: <https://github.com/ARM-software/ML-KWS-for-MCU/blob/master/Deplo
 ## TF-lite - tensorflow lite
 <https://www.tensorflow.org/lite/microcontrollers>
 
+<https://developer.arm.com/solutions/machine-learning-on-arm/developer-material/how-to-guides/build-arm-cortex-m-voice-assistant-with-google-tensorflow-lite/single-page>
+
 <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/README.md>
 
 <https://tinymlsummit.org/2019/>
