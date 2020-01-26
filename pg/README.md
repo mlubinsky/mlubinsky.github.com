@@ -1,6 +1,14 @@
 <https://www.cybertec-postgresql.com/en/blog/>
 
-<https://www.cybertec-postgresql.com/en/setting-postgresql-configuration-parameters/> configuration
+### configuration
+
+<https://www.cybertec-postgresql.com/en/setting-postgresql-configuration-parameters/> 
+
+https://www.ongres.com/blog/postgresqlconf-configuration-for-humans/
+
+
+
+<http://www.interdb.jp/pg/index.html> PG internals
 
 <https://habr.com/ru/company/postgrespro/blog/479618/>
 
