@@ -1,10 +1,5 @@
 <https://www.cybertec-postgresql.com/en/blog/>
 
-### configuration
-
-<https://www.cybertec-postgresql.com/en/setting-postgresql-configuration-parameters/> 
-
-https://www.ongres.com/blog/postgresqlconf-configuration-for-humans/
 
 
 
@@ -96,7 +91,7 @@ docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=passwo
 
 <https://hakibenita.com/the-many-faces-of-distinct-in-postgre-sql> . DISTINCT
 
-<https://pgdash.io/blog/scaling-postgres.html> .  configuration
+
 
 ## Postgres 12
 
@@ -1147,7 +1142,17 @@ $ psql -l
  template1 | miclub01 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/miclub01          +
            |          |          |             |             | miclub01=CTc/miclub01
            
-```           
+```  
+### Configuration
+
+<https://www.cybertec-postgresql.com/en/setting-postgresql-configuration-parameters/> 
+
+https://www.ongres.com/blog/postgresqlconf-configuration-for-humans/
+
+<https://pgdash.io/blog/scaling-postgres.html> .  configuration
+
+<https://pgdash.io/blog/postgres-configuration-cheatsheet.html>
+
 ### Config files
 ```
 # show hba_file;
@@ -1166,7 +1171,6 @@ host    all             all             0.0.0.0/0            md5
 ident authentication uses the operating system’s identification server running at TCP port 113 to verify the user’s credentials.
 
 peer authentication on the other hand, is used for local connections and verifies that the logged in username of the operating system matches the username for the Postgres database.
-
 
 ```
 
@@ -1228,7 +1232,7 @@ http://ec2-18-221-216-253.us-east-2.compute.amazonaws.com:3000/login . admin/adm
 
 <https://www.youtube.com/watch?v=uhvqly8MtoI> Postgres 12
 
-<https://pgdash.io/blog/postgres-configuration-cheatsheet.html>
+
 
 
 
