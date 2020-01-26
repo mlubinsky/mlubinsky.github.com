@@ -78,7 +78,25 @@ docker container run -it ubuntu:latest /bin/bash    # you inside the container s
 <https://blog.3mdeb.com/2018/2018-09-27-optimize-performance-in-docker/>
 
 <https://www.thingforward.io/fileadmin/user_upload/knowledge_center/09_GettingStartedWithPlatformIOandArmMbedOs.pdf>
+```
+What I am about to describe will be a massive pain to set up but would be a solution to your problem long term.
 
+On the dev machines:
+VS-Code + VS-Code Remote docker extension
+
+The build server:
+boot2docker or other docker “server” OS
+
+Installed In a docker image:
+arm-gnu-emdedded toolchain
+mbed-cli
+whatever other dependencies are needed to do an mbed-os build
+
+A vs-code remote development config file can be created such that vs-code will automatically connect to the docker server, start a container, and then attach vs-code to the container. The remote docker extension will allow the dev machines to build, compile, debug, etc. just like if the toolchain and sources were located on the dev machine.
+
+Im very much simplifying this description but It is something my team and I have done successfully.
+
+```
 
 ##  Blackstone Engineering IoT Workshop and Peleon Device Management
 <https://www.pelion.com/docs/device-management> Peleon device management
