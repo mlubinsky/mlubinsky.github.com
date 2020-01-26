@@ -75,6 +75,8 @@ docker container run -it ubuntu:latest /bin/bash    # you inside the container s
 
 <https://blog.3mdeb.com/2018/2018-09-27-optimize-performance-in-docker/>
 
+<https://www.thingforward.io/fileadmin/user_upload/knowledge_center/09_GettingStartedWithPlatformIOandArmMbedOs.pdf>
+
 
 ##  Blackstone Engineering IoT Workshop and Peleon Device Management
 <https://www.pelion.com/docs/device-management> Peleon device management
