@@ -1,4 +1,7 @@
+### Bpook
 <https://github.com/ageron> 
+
+<https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646/> BOOK
 
 <http://www.aicheatsheets.com/>
 
