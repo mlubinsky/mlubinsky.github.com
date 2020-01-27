@@ -174,6 +174,10 @@ Warden, Pete,Situnayake, Daniel. TinyML (Kindle Locations 1221-1222). O'Reilly M
 ## TinyML
 
 <https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/micro> code from book?
+
+IPython sinus example
+<https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/create_sine_model.ipynb>
+
 <https://tinymlsummit.org/2019/>
 
 <https://tinymlsummit.org/>
