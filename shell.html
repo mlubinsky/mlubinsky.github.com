@@ -75,7 +75,12 @@ https://direnv.net/
 cat foo.txt > output.txt 2>&1
 time echo foo 2>&1 > file.txt
 
+  <h3> nohup</h3>
+  
+ nohup my_cmd > run.log 2>&1 & tail -f run.log
 
+ nohup my_cmd 1>&2  | tee nohup.out &
+  
 If you check the output file nohup.out during execution 
 you might notice that the outputs are not written into this file until the execution is finished. 
 This happens because of output buffering. If you add the -u flag you can avoid output buffering like this:
