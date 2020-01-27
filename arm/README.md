@@ -181,6 +181,14 @@ IPython sinus example
 Hello word example
 <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/hello_world_test.cc>
 
+
+To check the version of Make installed, enter make version at the command line. You need a version greater than 3.82. 
+```
+ brew install make:
+ installed gmake
+ gmake --version 4.3 
+ make --version  3.81
+```
 <https://tinymlsummit.org/2019/>
 
 <https://tinymlsummit.org/>
