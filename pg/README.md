@@ -23,6 +23,8 @@ https://habr.com/ru/post/481122/
 
 <https://habr.com/ru/post/479508/> PG antipatterns: JOINS
 
+<https://habr.com/ru/post/485398/> hstore sv JSON
+
 <https://habr.com/ru/post/479298/> PostgreSQL Antipatterns: CTE x CTE
 
 <https://erthalion.info/2019/12/06/postgresql-stay-curious/> PG at low level
