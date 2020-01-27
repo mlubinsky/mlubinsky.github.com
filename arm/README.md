@@ -124,6 +124,10 @@ CMSIS-NN code: <https://github.com/ARM-software/ML-KWS-for-MCU/blob/master/Deplo
 
 <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/README.md>
 
+the TensorFlow Lite Converter’s Python API to do this. It takes our Keras model and writes it to disk in the form of a FlatBuffer , which is a special file format designed to be space-efficient. 
+
+Warden, Pete,Situnayake, Daniel. TinyML (Kindle Locations 1221-1222). O'Reilly Media. Kindle Edition. 
+## TinyML
 <https://tinymlsummit.org/2019/>
 
 <https://tinymlsummit.org/>
