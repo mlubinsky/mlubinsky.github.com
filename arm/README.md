@@ -97,44 +97,48 @@ A vs-code remote development config file can be created such that vs-code will a
 Im very much simplifying this description but It is something my team and I have done successfully.
 
 ```
-```
+
  CoolTerm
   
 Mbed requires source files to be structured in a certain way. The TensorFlow Lite for Microcontrollers Makefile knows how to do this for us and can generate a directory suitable for Mbed. To do so, run the following command:
-
+```
 make f tensorflow/lite/micro/tools/make/Makefile \ TARGET = mbed TAGS = "cmsis-nn disco_f746ng" generate_micro_speech_mbed_project 
-
+```
 This results in the creation of a new directory: 
-
+```
 tensorflow/lite/micro/tools/make/gen/mbed_cortex-m4/prj/ 
-
+```
 To inform Mbed that the current directory is the root of an Mbed project: 
- 
+``` 
  mbed config root . 
- 
+``` 
 Next, instruct Mbed to download the dependencies and prepare to build: 
- 
+``` 
  mbed deploy 
- 
+``` 
  By default, Mbed builds the project using C++98. However, TensorFlow Lite requires C++11.
  Run the following Python snippet to modify the Mbed configuration files so that it uses C++11. 
  
- 
+``` 
  python c 'import fileinput, glob; for filename in glob . glob ( "mbed-os/tools/profiles/*.json" ): for line in fileinput . input ( filename , inplace = True ): print ( line . replace ( " \" std=gnu++98 \" " , " \" std=c++11 \" , \" fpermissive \" " )) ' 
- 
+``` 
  Finally, run the following command to compile: 
- 
+``` 
  mbed compile m DISCO_F746NG -t GCC_ARM
- 
+``` 
 This should result in a binary at the following path: ./BUILD/DISCO_F746NG/GCC_ARM/mbed.bin 
 Deploy to  STM32F746G board - copy the file to it. 
 On macOS, you can do this by using the following command: 
-
+```
 cp ./BUILD/DISCO_F746NG/GCC_ARM/mbed.bin /Volumes/DIS_F746NG/ 
- 
- ls /dev/tty* It will look something like the following: /dev/tty.usbmodem1454203 
 
-
+ls /dev/tty* It will look something like the following: /dev/tty.usbmodem1454203 
+```
+A TensorFlow model consists of two main things: The weights and biases resulting from training
+A graph of operations that combine the model’s input with these weights and biases to produce the model’s output
+At this juncture, our model’s operations are defined in the Python scripts, and its trained weights and biases are in the most recent checkpoint file. We need to unite the two into a single model file with a specific format, which we can use to run inference. The process of creating this model file is called freezing we’re creating a static representation of the graph with the weights frozen into it. To freeze our model, we run a script:
+```
+!python tensorflow/tensorflow/examples/speech_commands/freeze.py \ model_architecture = tiny_conv window_stride = 20 preprocess = micro \ wanted_words = ${ WANTED_WORDS } quantize = 1 \ output_file = /content/tiny_conv.pb \ start_checkpoint = /content/speech_commands_train/tiny_conv. \ ckpt-${ TOTAL_STEPS } 
 ```
 ##  Blackstone Engineering IoT Workshop and Peleon Device Management
 <https://www.pelion.com/docs/device-management> Peleon device management
