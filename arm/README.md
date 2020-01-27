@@ -178,6 +178,9 @@ Warden, Pete,Situnayake, Daniel. TinyML (Kindle Locations 1221-1222). O'Reilly M
 IPython sinus example
 <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/create_sine_model.ipynb>
 
+Hello word example
+<https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/hello_world_test.cc>
+
 <https://tinymlsummit.org/2019/>
 
 <https://tinymlsummit.org/>
