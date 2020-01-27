@@ -148,7 +148,7 @@ configure mbed
 
 <https://github.com/BlackstoneEngineering/aiot-workshop>
 
-<https://github.com/moon412/mbed-dsc-e2e> Yue Zhao
+<https://github.com/moon412/mbed-dsc-e2e> Yue Zhao code
 
 ## CMSIS-NN 
 <https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/deploying-convolutional-neural-network-on-cortex-m-with-cmsis-nn>
@@ -159,6 +159,8 @@ CMSIS-NN code: <https://github.com/ARM-software/ML-KWS-for-MCU/blob/master/Deplo
 <https://www.tensorflow.org/lite/microcontrollers>
 
 <https://developer.arm.com/solutions/machine-learning-on-arm/developer-material/how-to-guides/build-arm-cortex-m-voice-assistant-with-google-tensorflow-lite/single-page>
+
+<https://github.com/uTensor/tf_microspeech> . source code for the article above
 
 <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/README.md>
 
