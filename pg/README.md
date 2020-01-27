@@ -1,3 +1,7 @@
+## Redis
+<https://habr.com/ru/post/485672/>
+
+
 <https://www.cybertec-postgresql.com/en/blog/>
 
 
