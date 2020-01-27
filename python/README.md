@@ -49,7 +49,9 @@ Python Entry Points Explained: <https://amir.rachum.com/blog/2017/07/28/python-e
 ## Binary data
 <https://reachtim.com/articles/reading-binary-data-with-python.html> . reading binary data with  python
 
- live value plotter using Matplotlib:
+https://habr.com/ru/company/ruvds/blog/485646/ . Python Tips
+
+## live value plotter using Matplotlib:
 <https://github.com/wahtak/develocorder>
 
 <https://github.com/facebookresearch/visdom> .  Plotting from Facebook research
