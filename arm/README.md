@@ -172,6 +172,8 @@ the TensorFlow Lite Converter’s Python API to do this. It takes our Keras mode
 
 Warden, Pete,Situnayake, Daniel. TinyML (Kindle Locations 1221-1222). O'Reilly Media. Kindle Edition. 
 ## TinyML
+
+<https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/micro> code from book?
 <https://tinymlsummit.org/2019/>
 
 <https://tinymlsummit.org/>
