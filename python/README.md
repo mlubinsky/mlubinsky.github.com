@@ -54,6 +54,8 @@ https://habr.com/ru/company/ruvds/blog/485646/ . Python Tips
 ## live value plotter using Matplotlib:
 <https://github.com/wahtak/develocorder>
 
+<https://www.reddit.com/r/Python/comments/euf53h/dash_django_create_a_powerful_interactive/>
+
 <https://github.com/facebookresearch/visdom> .  Plotting from Facebook research
 
 ##  zipapp (Python 3.5) module generates a zip file that can bundle your entire python project (including a virtual environment) and run it as an executable
