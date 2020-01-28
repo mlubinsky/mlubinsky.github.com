@@ -1,6 +1,9 @@
 <https://runjs.dev/>
 
+## JS concepts for React
 <https://kentcdodds.com/blog/javascript-to-know-for-react>
+
+<https://codeartistry.io/10-javascript-concepts-you-need-to-master-react/>
 
 <https://habr.com/ru/company/ruvds/blog/471040/>
 
