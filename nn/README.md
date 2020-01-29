@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://thinc.ai/>
+
 <https://github.com/lutzroeder/netron> viewer for many NN formats
 
 <https://habr.com/ru/post/482794/>
