@@ -21,6 +21,22 @@ Another way to think about rebasing is that when youâ€™ve rebased a branch, itâ€
 
 <https://dev.to/alediaferia/git-tips-for-trunk-based-development-1i1g>
 
+<https://stackoverflow.com/questions/20808892/git-diff-between-current-branch-and-master-but-not-including-unmerged-master-com/20809283>
+
+```
+git diff master...branch
+
+git diff origin/master...
+This shows only the changes between my currently selected local branch and the remote master branch, and ignores all changes in my local branch that came from merge commits.
+
+
+git diff master...
+This uses your local copy of master.
+
+To compare a specific file use:
+
+git diff master... filepath
+```
 <https://stackoverflow.com/questions/9725531/show-commits-since-branch-creation>
 ```
 git log master...<your_branch_name>
