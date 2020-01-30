@@ -122,8 +122,12 @@ JOIN clause, or use the directive
 ```
 <https://dzone.com/articles/how-to-improve-hive-query-performance-with-hadoop>
 
-### Use Tez Engine
+###   Tez Engine
 Apache Tez Engine is an extensible framework for building high-performance batch processing and interactive data processing. It is coordinated by YARN in Hadoop. Tez improved the MapReduce paradigm by increasing the processing speed and maintaining the MapReduce ability to scale to petabytes of data.
+Apache Tez generalizes the MapReduce paradigm to execute a complex DAG (directed acyclic graph) of tasks. Refer to the following link for more info.
+
+<http://hortonworks.com/blog/apache-tez-a-new-chapter-in-hadoop-data-processing/>
+
 
 Tez engine can be enabled in your environment by setting hive.execution.engine to tez:
 ```
@@ -419,7 +423,7 @@ Hints
 /* +STREAMTABLE */
 /* +MAPJOIN */
 
-<https://community.hortonworks.com/articles/149894/llap-a-one-page-architecture-overview.html>
+
 
 
 SMB (sort merge backeted)  MAP JOIN
@@ -516,13 +520,14 @@ Hive supports a parameter, hive.auto.convert.join, which when it’s set to “t
 
 ## LLAP
 <https://cwiki.apache.org/confluence/display/Hive/LLAP>
+
+<<https://community.hortonworks.com/articles/149894/llap-a-one-page-architecture-overview.html>>
+
+<https://habr.com/ru/post/486124/>
+
 Also known as Live Long and Process, LLAP provides a hybrid execution model.  It consists of a long-lived daemon which replaces direct interactions with the HDFS DataNode, and a tightly integrated DAG-based framework.
 Functionality such as caching, pre-fetching, some query processing and access control are moved into the daemon.  Small/short queries are largely processed by this daemon directly, while any heavy lifting will be performed in standard YARN containers.
 
-## TEZ
-Apache Tez generalizes the MapReduce paradigm to execute a complex DAG (directed acyclic graph) of tasks. Refer to the following link for more info.
-
-http://hortonworks.com/blog/apache-tez-a-new-chapter-in-hadoop-data-processing/
 
 
 
