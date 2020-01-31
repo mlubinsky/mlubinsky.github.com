@@ -64,6 +64,9 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA my_schema_name GRANT SELECT ON TABLES TO my_u
 
 
 ###
+
+<https://www.holistics.io/blog/splitting-array-string-into-rows-in-amazon-redshift-or-mysql/>
+
 ```
 create table books (tags varchar(1000));
 
@@ -90,9 +93,12 @@ select
   TRIM(SPLIT_PART(B.tags, ',', NS.n)) AS tag
 from NS  
 inner join books B ON NS.n <= REGEXP_COUNT(B.tags, ',') + 1
+```
 
+###  JSON
+<https://sonra.io/2019/04/24/working-with-json-in-redshift-options-limitations-and-alternatives/>
+```
 
----  JSON
 create table books (tags varchar(1000));
 
 insert into books values
