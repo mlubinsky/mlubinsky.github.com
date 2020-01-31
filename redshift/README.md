@@ -95,6 +95,57 @@ from NS
 inner join books B ON NS.n <= REGEXP_COUNT(B.tags, ',') + 1
 ```
 
+
+```
+CREATE TABLE dev.test_active_exp_map(id integer, active_exp_map VARCHAR(1000)); 
+ 
+ insert into dev.test_active_exp_map (id, active_exp_map)
+ values(1, 'e1:b1&e2:b2')
+
+ insert into dev.test_active_exp_map (id, active_exp_map)
+ values(2, 'e3:b3')
+ 
+ select id, split_part(active_exp_map,'&',1)  from dev.test_active_exp_map . -- 1st element
+ 
+  select id, split_part(active_exp_map,'&',2) from dev.test_active_exp_map .  -- 2nd element
+ 
+ --- next query put the chuncks between & as separate rows
+ with NS AS (
+  select 1 as n union all
+  select 2 union all
+  select 3 union all
+  select 4 union all
+  select 5 union all
+  select 6 union all
+  select 7 union all
+  select 8 union all
+  select 9 union all
+  select 10
+)
+select TRIM(SPLIT_PART(A.active_exp_map, '&', NS.n))   from NS
+inner join dev.test_active_exp_map A  ON NS.n <= REGEXP_COUNT(A.active_exp_map, '&') + 1
+
+--- next query put chuncks between & as rows and between : in separate columns
+ 
+  with NS AS (
+  select 1 as n union all
+  select 2 union all
+  select 3 union all
+  select 4 union all
+  select 5 union all
+  select 6 union all
+  select 7 union all
+  select 8 union all
+  select 9 union all
+  select 10
+)
+select
+  split_part(TRIM(SPLIT_PART(A.active_exp_map, '&', NS.n)), ':',1) as test,  split_part(TRIM(SPLIT_PART(A.active_exp_map, '&', NS.n)), ':',2) as bucket
+from NS
+inner join dev.test_active_exp_map A  ON NS.n <= REGEXP_COUNT(A.active_exp_map, '&') + 1
+ 
+```
+
 ###  JSON
 <https://sonra.io/2019/04/24/working-with-json-in-redshift-options-limitations-and-alternatives/>
 ```
