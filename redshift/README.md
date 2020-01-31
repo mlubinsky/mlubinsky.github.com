@@ -62,6 +62,66 @@ GRANT SELECT ON ALL TABLES IN SCHEMA my_schema_name TO my_user_name;
 ALTER DEFAULT PRIVILEGES IN SCHEMA my_schema_name GRANT SELECT ON TABLES TO my_user_name;
 ```
 
+
+###
+```
+create table books (tags varchar(1000));
+
+insert into books values
+	('A, B, C, D'),
+	('D, E'),
+	('F'),
+	('G, G, H')
+;
+
+with NS AS (  
+  select 1 as n union all
+  select 2 union all
+  select 3 union all
+  select 4 union all
+  select 5 union all
+  select 6 union all
+  select 7 union all
+  select 8 union all
+  select 9 union all
+  select 10
+)
+select  
+  TRIM(SPLIT_PART(B.tags, ',', NS.n)) AS tag
+from NS  
+inner join books B ON NS.n <= REGEXP_COUNT(B.tags, ',') + 1
+
+
+---  JSON
+create table books (tags varchar(1000));
+
+insert into books values
+	('["A", "B", "C", "D"]'),
+	('["D", "E"]'),
+	('["F"]'),
+	('["G", "G", "H"]')
+;
+
+
+with NS AS (
+	select 1 as n union all
+    select 2 union all
+    select 3 union all
+    select 4 union all
+    select 5 union all
+    select 6 union all
+    select 7 union all
+    select 8 union all
+    select 9 union all
+    select 10
+)
+select
+  TRIM(JSON_EXTRACT_ARRAY_ELEMENT_TEXT(B.tags, NS.n - 1)) AS val
+from NS
+inner join books B ON NS.n <= JSON_ARRAY_LENGTH(B.tags)
+
+```
+
 ## Redshift functions
 Functions - <https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html>
 <https://docs.aws.amazon.com/redshift/latest/dg/r_Window_function_examples.html>
