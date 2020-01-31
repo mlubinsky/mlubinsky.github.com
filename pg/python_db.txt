@@ -1,0 +1,99 @@
+#!/usr/bin/python
+import psycopg2
+from config import config
+from psycopg2 import extras
+
+con=None
+
+def bulk_insert(SQL, records):
+#---------------------------
+  print(SQL)
+  with con.cursor() as cur:
+     extras.execute_values(cur, SQL, records)
+     con.commit()
+     count = cur.rowcount
+     print (count, "Bulk Record inserted successfully into mobile table")
+
+def insert(SQL, record):
+#---------------------------
+  print(SQL)
+  with con.cursor() as cur:
+     cur.execute(SQL, record)
+     con.commit()
+     count = cur.rowcount
+     print (count, "Record inserted successfully into mobile table")
+
+
+def connect(reconnect=False):
+#---------------------------
+    global con
+    try:
+        if con:
+             if  not reconnect:
+                 return
+             else:
+                 con.close()
+
+        params = config()
+
+        print('Connecting to the PostgreSQL database...')
+        con = psycopg2.connect(**params)
+        print('Connected !')
+        print (con.get_dsn_parameters(),"\n")
+        print(con.get_transaction_status())
+
+    except (Exception, psycopg2.DatabaseError) as error:
+        print("Connection error 1")
+        print(error)
+    except (Exception, psycopg2.Error) as error :
+        print("Connection error 2")
+        print(error)
+    finally:
+        print ("connect finally")
+
+def get_postgres_info():
+#---------------------------
+  with con.cursor() as cur:
+        print('PostgreSQL database version:')
+        cur.execute('SELECT version()')
+        db_version = cur.fetchone()
+        print(db_version)
+
+
+def select(SQL):
+#----------------
+  print(SQL)
+  with con.cursor() as cur:
+        cur.execute(SQL)
+        rows=cur.fetchall()
+  return rows
+
+def print_rows(rows):
+#--------------------
+    FORMAT="%Y-%m-%d %H:%M:%S"
+    for row in rows:
+           dt=row[0]
+           print(dt.strftime(FORMAT), row[1])
+
+if __name__ == '__main__':
+#-------------------------
+    connect()
+    get_postgres_info()
+
+    #SQL='SELECT time, location, temperature, device FROM tempersensor'
+    SQL='SELECT time, value FROM Apt99_2016_hourly LIMIT 5'
+    data=select(SQL)
+    print_rows(data)
+
+
+    SQL = """ INSERT INTO mobile (ID, MODEL, PRICE) VALUES (%s,%s,%s)"""
+    record = (5, 'One Plus 6', 950)
+    insert(SQL, record)
+
+    SQL = """ INSERT INTO mobile (ID, MODEL, PRICE) VALUES %s"""
+    records = [
+         [51, 'One Plus 61', 950],
+         [52, 'One Plus 62', 950],
+         [53, 'One Plus 63', 950]
+        ]
+    bulk_insert(SQL, records)
