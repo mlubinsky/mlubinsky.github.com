@@ -49,6 +49,10 @@ Hadoop Application Architectures: Designing Real-World Big Data Applications (I 
 The Enterprise Big Data Lake: Delivering the Promise of Big Data and Data Science 
 <https://www.amazon.com/Enterprise-Big-Data-Lake-Delivering-ebook/dp/B07NY44RKR/>
 
+### Map explode
+
+SELECT explode(str_to_map('e1:t1&e2:t2&e3:t3','&',':'))
+
 ### collect_set and concat_ws
 <https://dwgeek.com/apache-hive-group_concat-alternative-example.html/>
 ```
