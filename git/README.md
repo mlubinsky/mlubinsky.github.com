@@ -25,6 +25,8 @@
 ## Rebasing and Squashing
 <https://www.atlassian.com/git/tutorials/merging-vs-rebasing>
 
+<https://www.daolf.com/posts/git-series-part-3/>
+
 <https://medium.com/@nbelakovski/level-up-git-rebasing-and-squashing-6bff432d796e>
 
 Another way to think about rebasing is that when you’ve rebased a branch, it’s as if you had just now created your branch off of this latest master and done all of your work on top of it
