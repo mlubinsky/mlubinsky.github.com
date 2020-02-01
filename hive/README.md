@@ -6,6 +6,8 @@ Presto  query execution rate that is three times faster than Hive.
 
 <https://imply.io/post/performance-benchmark-druid-presto-hive>
 
+<https://imply.io/post/compare-apache-druid-to-vertica>
+
 Druid is fasters!!!
 
 ### Impala SQL Engine
