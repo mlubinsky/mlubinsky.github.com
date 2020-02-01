@@ -58,15 +58,18 @@ cat ~/.keras/keras.json
 ```
 
 переведем номер класса в так называемый one-hot вектор, т.е. вектор, состоящий из нулей и одной единицы:
-``` 
+```
 y_train = keras.utils.to_categorical(newsgroups_train["target"], num_classes)
 
 model.compile(loss='categorical_crossentropy',
               optimizer='adam',
               metrics=['accuracy'])
-```	      
+	      
+```
 
 ## Tensorflow
+
+<https://www.youtube.com/watch?v=JdXxaZcQer8&list=PL-wATfeyAMNrtbkCNsLcpoAyBBRJZVlnf&index=9>
 
 <https://habr.com/ru/post/465745/> 
 
