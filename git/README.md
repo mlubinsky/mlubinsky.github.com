@@ -1,10 +1,16 @@
+## GUI
+
 <https://git-fork.com/> Fork: UI for Git
+<https://www.sublimemerge.com/>  Git Client, from the makers of Sublime Text
+
+
+<https://rogerdudler.github.io/git-guide/>
 
 <https://learngitbranching.js.org/>
 
 <https://serokell.io/blog/comparison-of-github-and-gitlab> github vs gitlab
 
-<https://www.sublimemerge.com/>  Git Client, from the makers of Sublime Text
+
 
 <https://youtu.be/ye4LVrQ0TuM> How to work with Git Flow feature branches in the terminal
 
@@ -16,10 +22,16 @@
 
 <https://bitbucket.org/BitPusher16/dotfiles/raw/49a01d929dcaebcca68bbb1859b4ac1aea93b073/refs/git/git_examples.sh>
 
-Rebasing and Squashing
+## Rebasing and Squashing
+<https://www.atlassian.com/git/tutorials/merging-vs-rebasing>
+
 <https://medium.com/@nbelakovski/level-up-git-rebasing-and-squashing-6bff432d796e>
 
 Another way to think about rebasing is that when you’ve rebased a branch, it’s as if you had just now created your branch off of this latest master and done all of your work on top of it
+
+to squash all the garbage away before making a PR:
+
+``git rebase -i ${commit_before_i_started_doing_questionable_stuff}``
 
 <https://news.ycombinator.com/item?id=21189256>
 
