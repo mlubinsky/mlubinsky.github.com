@@ -1,5 +1,5 @@
 
-### Presto  
+### Presto  Druid
 Presto  query execution rate that is three times faster than Hive.
 
 <https://support.treasuredata.com/hc/en-us/articles/360001450928-Presto-Known-Limitations>
@@ -8,7 +8,9 @@ Presto  query execution rate that is three times faster than Hive.
 
 <https://imply.io/post/compare-apache-druid-to-vertica>
 
-Druid is fasters!!!
+Druid is fast
+
+<https://medium.com/@leventov/comparison-of-the-open-source-olap-systems-for-big-data-clickhouse-druid-and-pinot-8e042a5ed1c7>
 
 ### Impala SQL Engine
 
