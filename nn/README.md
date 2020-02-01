@@ -4,6 +4,8 @@
 
 <https://github.com/lutzroeder/netron> viewer for many NN formats
 
+https://math.mit.edu/ennui/ . Elegant NN UI
+
 <https://habr.com/ru/post/482794/>
 
 <http://introtodeeplearning.com/>
