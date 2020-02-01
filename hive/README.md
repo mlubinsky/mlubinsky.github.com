@@ -4,7 +4,9 @@ Presto  query execution rate that is three times faster than Hive.
 
 <https://support.treasuredata.com/hc/en-us/articles/360001450928-Presto-Known-Limitations>
 
+<https://imply.io/post/performance-benchmark-druid-presto-hive>
 
+Druid is fasters!!!
 
 ### Impala SQL Engine
 
