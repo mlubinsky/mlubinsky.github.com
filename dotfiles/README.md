@@ -33,6 +33,7 @@ Or maybe it's a Python script:
 Or it's a text file:
     #!/usr/bin/env vi
 ```
+<https://news.ycombinator.com/item?id=22212338> how to wrote shell
 <https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin>
 ```
 set -e . # exit on any non zero return code ( set -o errexit )
