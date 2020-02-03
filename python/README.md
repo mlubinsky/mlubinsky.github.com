@@ -1,3 +1,27 @@
+```
+import sys
+print(sys.prefix) # '/System/Library/Frameworks/Python.framework/Versions/3.5'
+import site
+data = site.getsitepackages()
+print(data)
+
+pip install virtualenv
+mkdir python-virtual-environments 
+cd python-virtual-environments
+
+# Python 2:
+$ virtualenv env
+ 
+# Python 3
+$ python3 -m venv env
+echo $PATH
+source env/bin/activate
+echo $PATH
+
+pip install ...
+...
+deactivate
+```
 ## Books
 
 <https://pythonbooks.org/>
