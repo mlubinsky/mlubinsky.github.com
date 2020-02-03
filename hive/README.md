@@ -1,5 +1,5 @@
 
-### Presto  Druid
+### Presto  Druid Pinot
 Presto  query execution rate that is three times faster than Hive.
 
 <https://support.treasuredata.com/hc/en-us/articles/360001450928-Presto-Known-Limitations>
@@ -11,6 +11,11 @@ Presto  query execution rate that is three times faster than Hive.
 Druid is fast
 
 <https://medium.com/@leventov/comparison-of-the-open-source-olap-systems-for-big-data-clickhouse-druid-and-pinot-8e042a5ed1c7>
+
+But Pinot is faster?
+<https://pinot.apache.org/>
+
+<https://eng.uber.com/engineering-sql-support-on-apache-pinot/>
 
 ### Impala SQL Engine
 
