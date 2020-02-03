@@ -11,6 +11,10 @@
 
 <https://habr.com/ru/post/478750/>  plotting
 
+## SVG in React
+
+<https://blog.logrocket.com/how-to-use-svgs-in-react/>
+
 ## React and D3 
 
 <https://reactfordataviz.com/> 
