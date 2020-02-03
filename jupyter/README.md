@@ -96,6 +96,8 @@ Pandas supports two parquet implementations, fastparquet and pyarrow. They both 
 ```
 <http://peter-hoffmann.com/2020/understand-predicate-pushdown-on-rowgroup-level-in-parquet-with-pyarrow-and-python.html>
  
+ 
+ <https://habr.com/ru/post/486756/> .  pandas example : reads CSVs,JSOns combines, filter them
 
 ## Jupyter Enterprise Gateway 
 
