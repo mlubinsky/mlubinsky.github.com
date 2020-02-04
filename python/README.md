@@ -57,6 +57,8 @@ deactivate
 
 ## Creating Python Package
 
+<https://realpython.com/courses/python-modules-packages/>
+
 <https://pypi-package-example.readthedocs.io/en/latest/>
 
 <https://github.com/pvcraven/pypi_package_example>
