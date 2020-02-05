@@ -7,6 +7,12 @@
 
 <https://www.udemy.com/home/my-courses/search/?q=docker> my udemy courses
 
+
+## Docker Pyhon Image for Datascience
+
+<https://faizanbashir.me/building-python-data-science-container-using-docker-c8e346295669>
+
+
 ### Volumes mount bind
 Тома Docker (Docker Volumes) представляют - механизм постоянного хранения данных, потребляемых или производимых приложениями.
 <https://docs.docker.com/storage/volumes/> volumes
