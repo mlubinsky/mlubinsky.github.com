@@ -5,8 +5,9 @@
 
 <https://www.manning.com/books/docker-in-action-second-edition> Book
 
-<https://www.udemy.com/home/my-courses/search/?q=docker> my udemy courses
+<https://www.udemy.com/home/my-courses/search/?q=docker> my Udemy Docker courses
 
+<https://habr.com/ru/post/486200/> clean Docker images from local machine
 
 ## Docker Pyhon Image for Datascience
 
