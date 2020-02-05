@@ -96,6 +96,10 @@ imagine that you have no task-switching penalties but have to perform two tasks 
 
 <https://github.com/voorloopnul/pipeframe>  Python  process data (stream or batch) taking advantage of python multiprocessing library.
 
+<https://github.com/omegaml/minibatch> Instead of directly connection producers and consumers, a producer sends messages to a stream. Think of a stream as an endless buffer, or a pipeline, that takes input from many producers on one end, and outputs messages to a consumer on the other end. This transfer of messages happens asynchronously, that is the producer can send messages to the stream independent of whether the consumer is ready to receive, and the consumer can take messages from the stream independent of whether the producer is ready to send.
+
+Unlike usual asynchronous messaging, however, we want the consumer to receive messages in small batches to optimize throughput. That is, we want the pipeline to emit messages only subject to some criteria of grouping messages, where each group is called a mini-batch. 
+
 <https://petl.readthedocs.io/> . petl transformation pipelines make minimal use of system memory and can scale to millions of rows if speed is not a priority. However if you are working with very large datasets and/or performance-critical applications then other packages may be more suitable, e.g., see pandas, pytables, bcolz and blaze. 
 
 https://github.com/olirice/flupy . Fluent data pipelines for python and your shell
