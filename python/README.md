@@ -44,7 +44,7 @@ deactivate
 
 <https://habr.com/ru/company/piter/blog/471520/> Книга «Классические задачи Computer Science на языке Python»
 
-
+<https://github.com/zedr/clean-code-python/blob/master/README.md> Clean code
 
 ### Call Shell Commands with Python
 
