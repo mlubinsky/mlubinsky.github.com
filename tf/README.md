@@ -21,6 +21,8 @@
 
 ## Keras
 
+<https://habr.com/ru/post/482126/>
+
 <https://www.reddit.com/r/learnmachinelearning/comments/czkf78/learn_keras_in_one_video/>
 
 <https://habr.com/ru/company/ods/blog/325432/>
