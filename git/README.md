@@ -22,6 +22,11 @@
 
 <https://bitbucket.org/BitPusher16/dotfiles/raw/49a01d929dcaebcca68bbb1859b4ac1aea93b073/refs/git/git_examples.sh>
 
+
+Overwrite single file in my current branch with the same file in the master branch?
+
+``git checkout master file_to_replace``
+
 ## Rebasing and Squashing
 <https://www.atlassian.com/git/tutorials/merging-vs-rebasing>
 
