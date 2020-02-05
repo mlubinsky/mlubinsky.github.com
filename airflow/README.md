@@ -1,5 +1,7 @@
 <https://github.com/quantumblacklabs/kedro> . Kedro: best-practice for data and ML pipelines.
 
+<https://pyvideo.org/pycon-hk-2018/industrial-machine-learning-pipelines-with-python-airflow.html> 
+
 The scheduler runs a DAG soon after (start_date + schedule_interval) is passed
 ```
 airflow list_dags
