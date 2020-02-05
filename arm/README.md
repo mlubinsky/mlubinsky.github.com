@@ -26,6 +26,9 @@ Vanti..7!
 <https://os.mbed.com/pelion-free-tier/> Peleon Device Management
 
 ## Mbed-cli Docker
+
+<https://hub.docker.com/r/mbedos/mbed-os-env> official docker from ARM
+
 <https://os.mbed.com/questions/>
 
 <https://github.com/ARMmbed/mbed-cli/>
@@ -161,6 +164,8 @@ CMSIS-NN code: <https://github.com/ARM-software/ML-KWS-for-MCU/blob/master/Deplo
 
 ## TF-lite - tensorflow lite
 <https://www.tensorflow.org/lite/microcontrollers>
+
+<https://fosdem.org/2020/schedule/event/iottensorflow/>
 
 <https://developer.arm.com/solutions/machine-learning-on-arm/developer-material/how-to-guides/build-arm-cortex-m-voice-assistant-with-google-tensorflow-lite/single-page>
 
