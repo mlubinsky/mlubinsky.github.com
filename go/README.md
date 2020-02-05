@@ -19,6 +19,8 @@ Go has block-level scoping.
 
 <https://www.imdb.com/title/tt7349950/> Go 1.13
 
+<https://ftp.osuosl.org/pub/fosdem/2020/UB2.252A/stateofgo.mp4> Go 1.14
+
 ## Style Guide
 <https://github.com/uber-go/guide/blob/master/style.md> go style guide
 
