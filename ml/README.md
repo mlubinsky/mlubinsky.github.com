@@ -1,5 +1,9 @@
 <https://blog.insightdatascience.com/bias-variance-tradeoff-explained-fa2bc28174c4> bias-variance explained
 
+<https://mlcourse.ai/> Russian
+
+<https://dlcourse.ai/> Russsian
+
 <https://prodi.gy/> . Prodigy is a scriptable annotation tool so efficient that data scientists can do the annotation themselves, enabling a new level of rapid iteration.
 
 Book: Data Science in Production
