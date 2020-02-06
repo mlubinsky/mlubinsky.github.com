@@ -29,6 +29,8 @@
 
 <https://habr.com/ru/post/453558/>
 
+<https://habr.com/ru/company/ruvds/blog/486686/>
+
 <https://kite.com/blog/python/python-machine-learning-keras>
 
 <https://towardsdatascience.com/boost-your-cnn-image-classifier-performance-with-progressive-resizing-in-keras-a7d96da06e20>
