@@ -1,3 +1,5 @@
+<https://fosdem.org/2020/schedule/event/iotastarte/> . Astarte
+
 ### Arduino Nono BTE
 <https://medium.com/tensorflow/how-to-get-started-with-machine-learning-on-arduino-7daf95b4157>
 
