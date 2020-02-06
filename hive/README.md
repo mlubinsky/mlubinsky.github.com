@@ -88,7 +88,17 @@ END
 ;
 
 ```
+### Reusable HQL
+<https://stackoverflow.com/questions/40750439/hive-can-one-extract-common-options-for-reuse-in-other-scripts/40783621#40783621>
 
+``hive -i config.hql -f script_A.hql``
+
+```
+hive -f a.hql
+wait $! 
+hive -f b.hql
+wait $! 
+```
 ### Map explode
 
 SELECT explode(str_to_map('e1:t1&e2:t2&e3:t3','&',':'))
