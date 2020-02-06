@@ -157,6 +157,7 @@ https://github.com/geosolutions-it/evo-odas/wiki/Airflow---about-subDAGs,-branch
 * all_failed
 * one_failed
 * none_failed (sucseeded or skipped)
+* none_skipped
 
 ### Hooks
 
