@@ -60,6 +60,35 @@ Hadoop Application Architectures: Designing Real-World Big Data Applications (I 
 The Enterprise Big Data Lake: Delivering the Promise of Big Data and Data Science 
 <https://www.amazon.com/Enterprise-Big-Data-Lake-Delivering-ebook/dp/B07NY44RKR/>
 
+
+### Hive Macro
+
+<https://dwgeek.com/working-with-hive-macros-syntax-and-examples.html/>
+
+```
+DROP TEMPORARY MACRO IF EXISTS isNumber;
+
+CREATE TEMPORARY MACRO isNumber (input INT)
+CASE
+WHEN CAST(input AS INT) IS NULL THEN 'NO' else 'YES'
+END
+;
+
+SELECT isNumber(100), isNumber("123"), isNumber("12sd");
+
+DROP TEMPORARY MACRO IF EXISTS current_time_preferred_format;
+
+CREATE TEMPORARY MACRO current_time_preferred_format(input string) 
+CASE 
+    WHEN UPPER(input) = "DEFAULT"
+    THEN FROM_UNIXTIME( unix_timestamp(), "yyyy-MM-dd'T'HH:mm:ss.sss")
+ELSE
+    FROM_UNIXTIME( unix_timestamp(), input)
+END
+;
+
+```
+
 ### Map explode
 
 SELECT explode(str_to_map('e1:t1&e2:t2&e3:t3','&',':'))
