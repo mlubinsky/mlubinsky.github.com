@@ -9,6 +9,8 @@
 
 <https://habr.com/ru/post/486200/> clean Docker images from local machine
 
+<https://habr.com/ru/company/ruvds/blog/486682/> . make for Docker
+
 ## Docker Pyhon Image for Datascience
 
 <https://faizanbashir.me/building-python-data-science-container-using-docker-c8e346295669>
