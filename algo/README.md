@@ -2,6 +2,8 @@
 
 <https://github.com/mochow13/competitive-programming-library> 
 
+<https://en.wikipedia.org/wiki/MinHash> minhash
+
 <https://habr.com/ru/company/otus/blog/485194/> Дерево отрезков 
 
 <https://habr.com/ru/company/mailru/blog/479822/> Succinct data structures
