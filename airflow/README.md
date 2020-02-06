@@ -149,7 +149,14 @@ https://github.com/geosolutions-it/evo-odas/wiki/Airflow---about-subDAGs,-branch
 
 <http://airflow.apache.org/faq.html>
 
+### Trigger Rules
 
+* one_success (at least) 
+* all_success
+* all_done
+* all_failed
+* one_failed
+* none_failed (sucseeded or skipped)
 
 ### Hooks
 
