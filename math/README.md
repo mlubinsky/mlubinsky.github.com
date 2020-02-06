@@ -2,6 +2,8 @@
 
 <https://betterexplained.com/articles/navigate-a-grid-using-combinations-and-permutations/>
 
+<https://www.youtube.com/watch?v=hqTB9PTKvXU&list=PLlx2izuC9gjgZsBALx2ZF7IMGoNl07A9l>  Геометрия и группы. Алексей Савватеев
+
 ### Quantum mechanics
 <http://www.visualquantumphysics.org/>
 
