@@ -18,7 +18,9 @@ They will install into the site-package directory
 ```    
   <https://docs.brew.sh/Homebrew-and-Python>
 
+### mysqlclient python macOS
 
+<https://www.peterbe.com/plog/ld-library-not-found-for-lssl-mysqlclient-python-macos>
 
 ### Kafka
 
