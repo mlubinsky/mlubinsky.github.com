@@ -221,6 +221,8 @@ Aggregation and summarizing utilities (WIP).
 <https://habr.com/ru/company/oleg-bunin/blog/470902/>
 
 ## Indexes
+
+<https://fosdem.org/2020/schedule/event/postgresql_a_deep_dive_into_postgresql_indexing/>
 ```
 select * from pg_indexes where tablename  = 'tracking';
 ```
