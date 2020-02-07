@@ -223,6 +223,9 @@ Aggregation and summarizing utilities (WIP).
 ## Indexes
 
 <https://fosdem.org/2020/schedule/event/postgresql_a_deep_dive_into_postgresql_indexing/>
+
+<https://fosdem.org/2020/schedule/event/postgresql_find_your_slow_queries_and_fix_them/>
+
 ```
 select * from pg_indexes where tablename  = 'tracking';
 ```
