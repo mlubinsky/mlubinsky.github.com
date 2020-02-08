@@ -2,7 +2,11 @@
 
 <https://github.com/mochow13/competitive-programming-library> 
 
+### minhash
 <https://en.wikipedia.org/wiki/MinHash> minhash
+
+https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/?274619
+
 
 <https://habr.com/ru/company/otus/blog/485194/> Дерево отрезков 
 
