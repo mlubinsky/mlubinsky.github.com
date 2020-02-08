@@ -63,7 +63,24 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA my_schema_name GRANT SELECT ON TABLES TO my_u
 ```
 
 
-###
+### splitting string
+
+Use regexp_count to determine how many instances of our delimiter (", ") are found 
+
+ We will assume that a table of numbers already exists in the database, though this can be created using this pattern:
+ <https://discourse.looker.com/t/generating-a-numbers-table-in-mysql-and-redshift/482>
+ 
+ The split_part function, which takes a string, splits it on some delimiter, and returns the first, second, ... , nth value specified from the split string.
+
+<https://help.looker.com/hc/en-us/articles/360024266693-Splitting-Strings-into-Rows-in-the-Absence-of-Table-Generating-Functions>
+```
+SELECT row_number() OVER(order by 1) AS product_tag_id
+  , products.id as product_id
+  , split_part(products.tags, ', ', numbers.num) AS tag_name
+FROM products
+JOIN numbers
+ON numbers.num <= regexp_count(products.tags, ',\\s') + 1
+```
 
 <https://www.holistics.io/blog/splitting-array-string-into-rows-in-amazon-redshift-or-mysql/>
 
