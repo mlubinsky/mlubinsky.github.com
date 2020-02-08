@@ -1,6 +1,5 @@
 <https://www.youtube.com/user/AmazonWebServices>
 
-
 <https://fivetran.com/blog/warehouse-benchmark>
 
 <https://fivetran.com/blog/obt-star-schema>
@@ -65,6 +64,28 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA my_schema_name GRANT SELECT ON TABLES TO my_u
 
 ### splitting string
 
+<https://docs.aws.amazon.com/redshift/latest/dg/r_POSITION.html>
+
+<https://docs.aws.amazon.com/redshift/latest/dg/r_STRPOS.html> . (one-based, not zero-based). 0 if not found
+
+POSITION(), STRPOS()
+
+Find the beginning of bucket:
+``` bucket_start_pos= SELECT STRPOS(active_exp_map, exp_name || ':') 
+    if pos = 0:
+       return ''
+    else:      
+       bucket_start_pos = bucket_start_pos + LEN(exp_name || ':')
+```
+Find the next & (or the end of string) after pos:
+SUBSTRING(string, start_position, number_characters )
+```
+  bucket_end_pos = select STRPOS(SUBSTRING(active_exp_map, pos, LEN(active_exp_map), '&') -- may be 0
+  if bucket_end_pos = 0:
+     experiment= SUBSTRING(active_exp_map,bucket_start_pos, LEN(exp_name  )
+  else:
+      experiment= SUBSTRING(SUBSTRING(active_exp_map, pos, LEN(active_exp_map)), 1, ucket_end_pos)
+```
 Use regexp_count to determine how many instances of our delimiter (", ") are found 
 
  We will assume that a table of numbers already exists in the database, though this can be created using this pattern:
