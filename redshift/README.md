@@ -61,6 +61,8 @@ GRANT SELECT ON ALL TABLES IN SCHEMA my_schema_name TO my_user_name;
 ALTER DEFAULT PRIVILEGES IN SCHEMA my_schema_name GRANT SELECT ON TABLES TO my_user_name;
 ```
 
+### UDF
+<https://docs.aws.amazon.com/redshift/latest/dg/udf-creating-a-scalar-sql-udf.html>
 
 ### splitting string
 
