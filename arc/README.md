@@ -1,5 +1,7 @@
 <https://queue.acm.org/pastissues.cfm> ACM transactions
 
+<https://habr.com/ru/company/ua-hosting/blog/487540/> . Meadata management
+
 <https://news.ycombinator.com/item?id=22011743>
 
 <https://infoq.com>
