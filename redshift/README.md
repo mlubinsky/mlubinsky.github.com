@@ -71,7 +71,8 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA my_schema_name GRANT SELECT ON TABLES TO my_u
 POSITION(), STRPOS()
 
 Find the beginning of bucket:
-``` bucket_start_pos= SELECT STRPOS(active_exp_map, exp_name || ':') 
+``` 
+    bucket_start_pos= SELECT STRPOS(active_exp_map, exp_name || ':') 
     if pos = 0:
        return ''
     else:      
@@ -82,9 +83,9 @@ SUBSTRING(string, start_position, number_characters )
 ```
   bucket_end_pos = select STRPOS(SUBSTRING(active_exp_map, pos, LEN(active_exp_map), '&') -- may be 0
   if bucket_end_pos = 0:
-     experiment= SUBSTRING(active_exp_map,bucket_start_pos, LEN(exp_name  )
+     experiment= SUBSTRING(active_exp_map, bucket_start_pos, LEN(exp_name)  )
   else:
-      experiment= SUBSTRING(SUBSTRING(active_exp_map, pos, LEN(active_exp_map)), 1, ucket_end_pos)
+      experiment= SUBSTRING(SUBSTRING(active_exp_map, pos, LEN(active_exp_map)), 1, bucket_end_pos)
 ```
 Use regexp_count to determine how many instances of our delimiter (", ") are found 
 
