@@ -113,11 +113,16 @@ create function get_bucket (string, string)
 stable
 as $$
 
+SELECT 
+    CASE 
+        WHEN 0 =  STRPOS($1, $2 || ':') THEN ''
+        ELSE SUBSTRING($1, bucket_start_pos, LEN($)  )
+    
 SELECT STRPOS(active_exp_map, exp_name || ':')
 
   select case when $1 > $2 then $1
     else $2
-  end
+    END 
 $$ language sql; 
 ```
 
