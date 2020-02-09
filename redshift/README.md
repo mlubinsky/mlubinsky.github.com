@@ -121,13 +121,32 @@ SELECT
                WHEN 0 = STRPOS(SUBSTRING($1, STRPOS($1, $2 || ':') + LEN(exp_name || ':'), LEN($1), '&')  -- last entry
 	       THEN SUBSTRING($1, STRPOS($1, $2 || ':'), LEN($2) 
 	       ELSE
-	           SUBSTRING($1, STRPOS($1, $2 || ':')++ LEN($2 || ':') ,  LEN($1)  )
+	           SUBSTRING($1, STRPOS($1, $2 || ':') + LEN($2 || ':') ,  LEN($1)  )
            END 
     END 	   
 $$ language sql; 
 ```
 
+Assuming what : is added to arg2 during the call
+```
+create function get_bucket (string, string)
+  returns string
+stable
+as $$
 
+SELECT 
+    CASE 
+        WHEN 0 =  STRPOS($1, $2 ) THEN ''
+        ELSE 
+	    CASE 
+               WHEN 0 = STRPOS(SUBSTRING($1, STRPOS($1, $2) + LEN(exp_name), LEN($1), '&')  -- last entry
+	       THEN SUBSTRING($1, STRPOS($1, $2), LEN($2) 
+	       ELSE
+	           SUBSTRING($1, STRPOS($1, $2) + LEN($2) ,  LEN($1)  )
+           END 
+    END 	   
+$$ language sql; 
+```
 
 
 
