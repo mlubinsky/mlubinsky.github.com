@@ -91,7 +91,7 @@ POSITION(), STRPOS()
 Find the beginning of bucket:
 ``` 
     bucket_start_pos= SELECT STRPOS(active_exp_map, exp_name || ':') 
-    if pos = 0:
+    if bucket_start_pos = 0:
        return ''
     else:      
        bucket_start_pos = bucket_start_pos + LEN(exp_name || ':')
@@ -116,13 +116,14 @@ as $$
 SELECT 
     CASE 
         WHEN 0 =  STRPOS($1, $2 || ':') THEN ''
-        ELSE SUBSTRING($1, bucket_start_pos, LEN($)  )
-    
-SELECT STRPOS(active_exp_map, exp_name || ':')
-
-  select case when $1 > $2 then $1
-    else $2
-    END 
+        ELSE 
+	    CASE 
+               WHEN 0 = STRPOS(SUBSTRING($1, STRPOS($1, $2 || ':') + LEN(exp_name || ':'), LEN($1), '&')  -- last entry
+	       THEN SUBSTRING($1, STRPOS($1, $2 || ':'), LEN($2) 
+	       ELSE
+	           SUBSTRING($1, STRPOS($1, $2 || ':')++ LEN($2 || ':') ,  LEN($1)  )
+           END 
+    END 	   
 $$ language sql; 
 ```
 
