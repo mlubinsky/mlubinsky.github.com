@@ -128,7 +128,14 @@ $$ language sql;
 ```
 
 Assuming what : is added to arg2 during the call
+
+
 ```
+select   STRPOS('a:b&c:d', 'a:') + LEN('a:')  -- 3
+select   SUBSTRING('a:b&c:d', STRPOS('a:b&c:d', 'a:') + LEN('a:'), LEN('a:b&c:d'))  -- b&c:d
+select STRPOS(SUBSTRING('a:b&c:d', STRPOS('a:b&c:d', 'a:') + LEN('a:'), LEN('a:b&c:d')), '&')   -- 2 (position of &)
+select SUBSTRING('a:b&c:d', STRPOS('a:b&c:d', 'a:') + LEN('a:') , STRPOS('a:b&c:d', '&') - STRPOS('a:b&c:d', 'a:') - LEN('a:')  ) -- b 
+
 create function f_bucket (varchar, varchar)
   returns varchar
 stable
@@ -140,7 +147,7 @@ SELECT
         ELSE 
 	    CASE 
                WHEN 0 = STRPOS(SUBSTRING($1, STRPOS($1, $2) + LEN($2), LEN($1)), '&')  
-	           THEN SUBSTRING($1, STRPOS($1, $2), LEN($2) )
+	           THEN SUBSTRING($1, STRPOS($1, $2)+ LEN($2), LEN($1) )
 	       ELSE
 	           SUBSTRING($1, STRPOS($1, $2) + LEN($2) ,  LEN($1)  )
            END 
