@@ -63,6 +63,19 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA my_schema_name GRANT SELECT ON TABLES TO my_u
 
 ### UDF
 <https://docs.aws.amazon.com/redshift/latest/dg/udf-creating-a-scalar-sql-udf.html>
+```
+create function f_sql_greater (float, float)
+  returns float
+stable
+as $$
+  select case when $1 > $2 then $1
+    else $2
+  end
+$$ language sql; 
+```
+
+
+
 
 ### stored procedures
 <https://docs.aws.amazon.com/redshift/latest/dg/stored-procedure-overview.html>
@@ -92,6 +105,26 @@ SUBSTRING(string, start_position, number_characters )
   else:
       experiment= SUBSTRING(SUBSTRING(active_exp_map, pos, LEN(active_exp_map)), 1, bucket_end_pos)
 ```
+scalar UDF
+
+```
+create function get_bucket (string, string)
+  returns string
+stable
+as $$
+
+SELECT STRPOS(active_exp_map, exp_name || ':')
+
+  select case when $1 > $2 then $1
+    else $2
+  end
+$$ language sql; 
+```
+
+
+
+
+
 Use regexp_count to determine how many instances of our delimiter (", ") are found 
 
  We will assume that a table of numbers already exists in the database, though this can be created using this pattern:
