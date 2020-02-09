@@ -64,6 +64,9 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA my_schema_name GRANT SELECT ON TABLES TO my_u
 ### UDF
 <https://docs.aws.amazon.com/redshift/latest/dg/udf-creating-a-scalar-sql-udf.html>
 
+### stored procedures
+<https://docs.aws.amazon.com/redshift/latest/dg/stored-procedure-overview.html>
+
 ### splitting string
 
 <https://docs.aws.amazon.com/redshift/latest/dg/r_POSITION.html>
