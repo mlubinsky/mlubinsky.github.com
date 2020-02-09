@@ -125,15 +125,16 @@ SELECT
                WHEN 0 = STRPOS(SUBSTRING($1, STRPOS($1, $2) + LEN($2), LEN($1)), '&')  
 	           THEN SUBSTRING($1, STRPOS($1, $2)+ LEN($2), LEN($1) )
 	       ELSE
-	                SUBSTRING($1, STRPOS($1, $2) + LEN($2) ,  STRPOS($1, '&') - STRPOS($1, $2) - LEN($1)   )
+	               -- there is an issue in next line
+	                SUBSTRING($1, STRPOS($1, $2) + LEN($2) ,  STRPOS($1, '&') - STRPOS($1, $2) - LEN($2)   )
            END 
     END 	   
 $$ language sql;  
 
 select f_bucket('abcxx:de','abcxx:');  -- OK
 select f_bucket('abcxx:de&f:gkk','f:');  -- OK
-select f_bucket('abcxx:de&f:gkk','abcxx:');  -- ERR
-select f_bucket('a:b&c:d','a:');   -- ERR
+select f_bucket('abcxx:de&f:gkk','abcxx:');  -- ok
+select f_bucket('a:b&c:d','a:');   -- ok
 
 select   STRPOS('a:b&c:d', 'a:') + LEN('a:')  -- 3
 select   SUBSTRING('a:b&c:d', STRPOS('a:b&c:d', 'a:') + LEN('a:'), LEN('a:b&c:d'))  -- b&c:d
