@@ -107,35 +107,11 @@ SUBSTRING(string, start_position, number_characters )
 ```
 scalar UDF
 
-```
-create function get_bucket (string, string)
-  returns string
-stable
-as $$
 
-SELECT 
-    CASE 
-        WHEN 0 =  STRPOS($1, $2 || ':') THEN ''
-        ELSE 
-	    CASE 
-               WHEN 0 = STRPOS(SUBSTRING($1, STRPOS($1, $2 || ':') + LEN($2 || ':'), LEN($1), '&')  -- last entry
-	       THEN SUBSTRING($1, STRPOS($1, $2 || ':'), LEN($2) )
-	       ELSE
-	           SUBSTRING($1, STRPOS($1, $2 || ':') + LEN($2 || ':') ,  LEN($1)  )
-           END 
-    END 	   
-$$ language sql; 
-```
 
 Assuming what : is added to arg2 during the call
 
-
 ```
-select   STRPOS('a:b&c:d', 'a:') + LEN('a:')  -- 3
-select   SUBSTRING('a:b&c:d', STRPOS('a:b&c:d', 'a:') + LEN('a:'), LEN('a:b&c:d'))  -- b&c:d
-select STRPOS(SUBSTRING('a:b&c:d', STRPOS('a:b&c:d', 'a:') + LEN('a:'), LEN('a:b&c:d')), '&')   -- 2 (position of &)
-select SUBSTRING('a:b&c:d', STRPOS('a:b&c:d', 'a:') + LEN('a:') , STRPOS('a:b&c:d', '&') - STRPOS('a:b&c:d', 'a:') - LEN('a:')  ) -- b 
-
 create function f_bucket (varchar, varchar)
   returns varchar
 stable
@@ -149,10 +125,20 @@ SELECT
                WHEN 0 = STRPOS(SUBSTRING($1, STRPOS($1, $2) + LEN($2), LEN($1)), '&')  
 	           THEN SUBSTRING($1, STRPOS($1, $2)+ LEN($2), LEN($1) )
 	       ELSE
-	           SUBSTRING($1, STRPOS($1, $2) + LEN($2) ,  LEN($1)  )
+	                SUBSTRING($1, STRPOS($1, $2) + LEN($2) ,  STRPOS($1, '&') - STRPOS($1, $2) - LEN($1)   )
            END 
     END 	   
 $$ language sql;  
+
+select f_bucket('abcxx:de','abcxx:');  -- OK
+select f_bucket('abcxx:de&f:gkk','f:');  -- OK
+select f_bucket('abcxx:de&f:gkk','abcxx:');  -- ERR
+select f_bucket('a:b&c:d','a:');   -- ERR
+
+select   STRPOS('a:b&c:d', 'a:') + LEN('a:')  -- 3
+select   SUBSTRING('a:b&c:d', STRPOS('a:b&c:d', 'a:') + LEN('a:'), LEN('a:b&c:d'))  -- b&c:d
+select STRPOS(SUBSTRING('a:b&c:d', STRPOS('a:b&c:d', 'a:') + LEN('a:'), LEN('a:b&c:d')), '&')   -- 2 (position of &)
+select SUBSTRING('a:b&c:d', STRPOS('a:b&c:d', 'a:') + LEN('a:') , STRPOS('a:b&c:d', '&') - STRPOS('a:b&c:d', 'a:') - LEN('a:')  ) -- b 
 ```
 
 
