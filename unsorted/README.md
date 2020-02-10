@@ -251,6 +251,9 @@ Live calculation in browser
 <https://www.youtube.com/watch?time_continue=1&v=wu3p7dxrhl8> Easter front animated 1941
 
 
+
+<http://psylib.org.ua/books/danch01/101/txt01.htm>
+
 ## Chess
 
 B32 Sicilian Defense: Kalashnikov Variation
@@ -286,6 +289,8 @@ B32 Sicilian Defense: Kalashnikov Variation
 <https://chesstempo.com/>
 
 <http://www.bookup.com/>
+
+
  
 
 ### Chess programming
