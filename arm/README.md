@@ -1,5 +1,31 @@
-<https://fosdem.org/2020/schedule/event/iotastarte/> . Astarte
+ 
 
+### MBed OS   send data to TreasureData
+
+<http://austinblackstoneengineering.com/how-to-send-data-from-mbed-os-to-treasure-data-pelion-data/>
+
+<https://github.com/takuti/mbed-os-example-treasure-data>
+
+HTTPS library - Send data directly to the Treasure Data REST API.
+
+Fluentd using fluent logger library - Send data to a hosted Fluentd instance that aggregates and forwards the data on to your treasure data account.
+
+<https://os.mbed.com/docs/mbed-os/v5.15/mbed-os-pelion/send-data-securely-to-arm-treasure-data.html>
+
+### MBed OS   send data to server
+
+<https://os.mbed.com/blog/entry/Using-HTTP-HTTPS-MQTT-and-CoAP-from-mbed/>
+
+<https://os.mbed.com/teams/sandbox/code/http-example/>
+
+<https://os.mbed.com/teams/sandbox/code/mbed-http/docs/tip/classHttpRequest.html>
+
+If WiFi is supported
+
+If Ethernet is supported 
+
+If Bluetooth is supported
+ 
 ### Arduino Nono BTE
 <https://medium.com/tensorflow/how-to-get-started-with-machine-learning-on-arduino-7daf95b4157>
 
