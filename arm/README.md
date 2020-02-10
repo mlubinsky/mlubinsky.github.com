@@ -4,7 +4,11 @@
 
 <http://austinblackstoneengineering.com/how-to-send-data-from-mbed-os-to-treasure-data-pelion-data/>
 
+Takuya Kitazawa (a.k.a. takuti) is an engineer working on machine learning, data science, and product development at Arm Treasure Data. 
+
 <https://github.com/takuti/mbed-os-example-treasure-data>
+
+<https://takuti.me/note/mbed-simulator-td/>
 
 <https://support.treasuredata.com/hc/en-us/articles/360012567313-Data-Ingestion-from-Mbed-OS-HTTP-over-Wi-Fi->
 
