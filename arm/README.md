@@ -6,6 +6,8 @@
 
 <https://github.com/takuti/mbed-os-example-treasure-data>
 
+<https://support.treasuredata.com/hc/en-us/articles/360012567313-Data-Ingestion-from-Mbed-OS-HTTP-over-Wi-Fi->
+
 HTTPS library - Send data directly to the Treasure Data REST API.
 
 Fluentd using fluent logger library - Send data to a hosted Fluentd instance that aggregates and forwards the data on to your treasure data account.
@@ -20,11 +22,11 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 
 <https://os.mbed.com/teams/sandbox/code/mbed-http/docs/tip/classHttpRequest.html>
 
-If WiFi is supported
+*   WiFi  
 
-If Ethernet is supported 
+*   Ethernet  
 
-If Bluetooth is supported
+*  Bluetooth  
  
 ### Arduino Nono BTE
 <https://medium.com/tensorflow/how-to-get-started-with-machine-learning-on-arduino-7daf95b4157>
