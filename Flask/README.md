@@ -8,9 +8,11 @@
 
 <https://www.agiratech.com/debugging-python-flask-app-in-docker-container/> Flask in Docker
 
+https://www.codementor.io/@mattthommes/trigger-local-python-app-remotely-117wunbuah . ngrok
+
 <https://youtu.be/e-_tsR0hVLQ> Flask
 
-<https://habr.com/ru/post/477126/> . Flask +ReactAmin
+<https://habr.com/ru/post/477126/>  Flask + ReactAmin
 
 <https://github.com/app-generator/flask-dashboard-adminlte>
 
