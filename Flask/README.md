@@ -4,6 +4,7 @@
 
 <https://testdriven.io/courses/tdd-flask/>  Developing a RESTful API with Python, Flask, Docker, and Pytest
 
+<https://www.codementor.io/@jqn/deploy-a-flask-app-on-aws-ec2-13hp1ilqy2> Flask + AWS EC2
 
 <https://www.agiratech.com/debugging-python-flask-app-in-docker-container/> Flask in Docker
 
