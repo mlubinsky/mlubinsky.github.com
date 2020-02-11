@@ -1,3 +1,9 @@
+### Udacity free TF 2 course
+
+<https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187>
+
+<https://habr.com/ru/post/453482/>
+
 ### Book
 <https://github.com/ageron> 
 
