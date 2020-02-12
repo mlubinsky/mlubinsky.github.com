@@ -10,7 +10,7 @@
 
 <https://www.cybertec-postgresql.com/en/blog/>
 
-
+<https://vladmihalcea.com/postgresql-triggers-isolation-levels/>
 
 
 <http://www.interdb.jp/pg/index.html> PG internals
