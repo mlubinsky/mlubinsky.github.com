@@ -31,6 +31,14 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 *   Ethernet  
 
 *  Bluetooth  
+
+## Pelion Device management
+
+### Client
+<https://www.pelion.com/docs/device-management/current/release-notes/device-management-client.html>
+ 
+ <https://www.pelion.com/docs/device-management/current/release-notes/device-management-client-lite.html>
+ 
  
 ### Arduino Nono BTE
 <https://medium.com/tensorflow/how-to-get-started-with-machine-learning-on-arduino-7daf95b4157>
