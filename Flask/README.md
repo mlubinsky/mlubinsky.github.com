@@ -1,4 +1,10 @@
-<https://justpy.io/#/>
+<https://justpy.io/#/>  high-level Python Web Framework that requires no front-end programming. With a few lines of only Python code, you can create interactive websites without any JavaScript programming.
+
+<https://docs.streamlit.io/> . Streamlit is an open-source Python library that makes it easy to build beautiful apps for machine learning.
+
+<https://github.com/man-group/dtale> . Flask/React client for visualizing pandas data structures 
+
+## Flask
 
 <https://blog.easyaspy.org/post/1/2018-12-28-how-i-created-easyaspy-from-scratch-using-flask>
 
@@ -18,7 +24,7 @@ https://www.codementor.io/@mattthommes/trigger-local-python-app-remotely-117wunb
 
 <https://github.com/app-generator/flask-dashboard-adminlte>
 
-<https://github.com/man-group/dtale>
+
 
 ## Fast API 
 
