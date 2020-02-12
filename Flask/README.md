@@ -1,3 +1,5 @@
+<https://justpy.io/#/>
+
 <https://blog.easyaspy.org/post/1/2018-12-28-how-i-created-easyaspy-from-scratch-using-flask>
 
 <https://github.com/apryor6/flask_api_example>
@@ -15,6 +17,8 @@ https://www.codementor.io/@mattthommes/trigger-local-python-app-remotely-117wunb
 <https://habr.com/ru/post/477126/>  Flask + ReactAmin
 
 <https://github.com/app-generator/flask-dashboard-adminlte>
+
+<https://github.com/man-group/dtale>
 
 ## Fast API 
 
