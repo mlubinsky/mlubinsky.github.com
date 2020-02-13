@@ -37,6 +37,8 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 #### ST-Discovery-F413H
 <https://os.mbed.com/platforms/ST-Discovery-F413H/>
 
+<https://ide.mbed.com/compiler/#nav:/mbed-os-example-wifi-DISCO/main.cpp;>
+
 <https://os.mbed.com/guides/connect-device-to-pelion/1/?board=ST-Discovery-F413H>
 
 ### Client
@@ -273,7 +275,13 @@ Im very much simplifying this description but It is something my team and I have
 
 ```
 
- ## CoolTerm minicom
+ ## CoolTerm 
+ 
+ <http://freeware.the-meiers.org/>
+ 
+ <https://learn.sparkfun.com/tutorials/terminal-basics/coolterm-windows-mac-linux>
+ 
+ ### minicom
  ```   
   brew install minicom
   ls /dev/tty.usb*.       # find the tty name
