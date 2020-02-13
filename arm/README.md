@@ -101,7 +101,19 @@ Vanti..7!
 ## Mbed-cli Docker
 
 <https://hub.docker.com/r/mbedos/mbed-os-env> official docker from ARM
+```
+docker pull mbedos/mbed-os-env
+docker run -i -t mbedos/mbed-os-env /bin/bash
+---docker exec -it mbedos/mbed-os-en /bin/bash
+which python3
+/usr/bin/python3
 
+which mbed
+/usr/local/bin/mbed
+
+which mbed-cli
+/usr/local/bin/mbed-cli
+```
 <https://os.mbed.com/questions/>
 
 <https://github.com/ARMmbed/mbed-cli/>
