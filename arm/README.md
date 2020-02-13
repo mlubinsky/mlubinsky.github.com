@@ -107,7 +107,14 @@ Vanti..7!
 ```
 docker run -v /Users/mlubinsky/LEG/psweb/ARM/MYPROG:/mnt/myprog -i -t mbedos/mbed-os-env
 root@c762b32ba377:~# ls /mnt
+
+cd   /mnt/myprog/
+  mbed new mbed-os-program
+  Working path "/mnt/myprog" (directory)
+  Creating new program "mbed-os-program" (git)
+  Adding library "mbed-os" from "https://github.com/ARMmbed/mbed-os" at branch/tag "latest"
 ```
+
 
 ```
 mbed --help
