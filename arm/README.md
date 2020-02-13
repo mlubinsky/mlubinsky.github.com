@@ -102,6 +102,13 @@ Vanti..7!
 
 <https://hub.docker.com/r/mbedos/mbed-os-env> official docker from ARM
 
+<https://os.mbed.com/docs/mbed-os/v5.15/tools/working-with-mbed-cli.html>
+
+```
+docker run -v /Users/mlubinsky/LEG/psweb/ARM/MYPROG:/mnt/myprog -i -t mbedos/mbed-os-env
+root@c762b32ba377:~# ls /mnt
+```
+
 ```
 mbed --help
 usage: mbed [-h] [--version]             ...
