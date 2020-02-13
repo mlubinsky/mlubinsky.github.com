@@ -36,6 +36,32 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 
 ### Client
 
+<https://www.pelion.com/docs/device-management/current/connecting/mbed-os.html>
+ 
+To work with the Device Management Client example application, you need:
+
+* A supported board with a network connection and an SD card attached.
+* Serial connection to your device with open terminal connection (baud rate 115200, 8N1).
+* Arm Mbed CLI installed. See installation instructions.
+* Make sure that all the Python components are in par with the pip package requirements.txt list from Mbed OS.
+* An API key (with Administrators group privilages) for your Device Management account.
+* Updated DAPLink software (version 250 or later), if your board uses DAPLink.
+
+#### Clone the embedded application's GitHub repository to your local computer and navigate to the new folder:
+mbed import https://github.com/ARMmbed/mbed-cloud-client-example
+cd mbed-cloud-client-example
+
+#### Configure Mbed CLI to use your Device Management account and board:
+
+mbed config -G CLOUD_SDK_API_KEY <API_KEY>
+mbed target <MCU>
+mbed toolchain GCC_ARM
+
+#### Use Mbed CLI to download a developer certificate and to create an update-related configuration for your device
+mbed device-management init -d arm.com --model-name example-app --force -q
+
+#### Compile
+
 <https://www.pelion.com/docs/device-management/current/connecting/tutorial-pelion-mbedos.html>
 
 <https://www.pelion.com/docs/device-management/current/connecting/device-management-client-tutorials.html>
