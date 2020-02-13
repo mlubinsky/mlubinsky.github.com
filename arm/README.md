@@ -101,6 +101,53 @@ Vanti..7!
 ## Mbed-cli Docker
 
 <https://hub.docker.com/r/mbedos/mbed-os-env> official docker from ARM
+
+```
+mbed --help
+usage: mbed [-h] [--version]             ...
+
+Command-line code management tool for ARM mbed OS - http://www.mbed.com
+version 1.10.2
+
+Use "mbed <command> -h|--help" for detailed help.
+Online manual and guide available at https://github.com/ARMmbed/mbed-cli
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --version          print version number and exit
+
+Commands:
+
+    new              Create new mbed program or library
+    import           Import program from URL
+    add              Add library from URL
+    remove           Remove library
+    deploy           Find and add missing libraries
+    publish          Publish program or library
+    update           Update to branch, tag, revision or latest
+    sync             Synchronize library references
+
+    ls               View dependency tree
+    releases         Show release tags
+    status           Show version control status
+
+    compile          Compile code using the mbed build tools
+    test             Find, build and run tests
+    device-management
+                     device management subcommand
+    export           Generate an IDE project
+    detect           Detect connected Mbed targets/boards
+
+    sterm            Open serial terminal to connected target.
+
+    config           Tool configuration
+    target           Set or get default target
+    toolchain        Set or get default toolchain
+    cache            Repository cache management
+```
+
+
+
 ```
 docker pull mbedos/mbed-os-env
 docker run -i -t mbedos/mbed-os-env /bin/bash
@@ -111,8 +158,22 @@ which python3
 which mbed
 /usr/local/bin/mbed
 
-which mbed-cli
+which mbed-cli .   <---  the same as mbed !!!
 /usr/local/bin/mbed-cli
+
+/usr/local/bin# cat mbed
+#!/usr/bin/python3
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from mbed.mbed import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
+    
 ```
 <https://os.mbed.com/questions/>
 
