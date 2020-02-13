@@ -35,6 +35,8 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 ## Pelion Device management
 
 #### ST-Discovery-F413H
+<https://os.mbed.com/platforms/ST-Discovery-F413H/>
+
 <https://os.mbed.com/guides/connect-device-to-pelion/1/?board=ST-Discovery-F413H>
 
 ### Client
