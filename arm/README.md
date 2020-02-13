@@ -35,6 +35,9 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 ## Pelion Device management
 
 ### Client
+
+<https://www.pelion.com/docs/device-management/current/connecting/tutorial-pelion-mbedos.html>
+
 <https://www.pelion.com/docs/device-management/current/release-notes/device-management-client.html>
  
  <https://www.pelion.com/docs/device-management/current/release-notes/device-management-client-lite.html>
