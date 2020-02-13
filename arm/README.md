@@ -115,6 +115,13 @@ cd   /mnt/myprog/
   Adding library "mbed-os" from "https://github.com/ARMmbed/mbed-os" at branch/tag "latest"
 ```
 
+<https://os.mbed.com/docs/mbed-os/v5.15/quick-start/compiling-the-code.html>
+
+```
+ mbed import https://github.com/ARMmbed/mbed-os-example-blinky
+$ cd mbed-os-example-blinky
+mbed compile --target K64F --toolchain ARM --flash
+```
 
 ```
 mbed --help
