@@ -273,7 +273,12 @@ Im very much simplifying this description but It is something my team and I have
 
 ```
 
- CoolTerm
+ ## CoolTerm minicom
+ ```   
+  brew install minicom
+  ls /dev/tty.usb*.       # find the tty name
+  minicom -D /dev/tty.usbmodem14412
+ ```  
   
 Mbed requires source files to be structured in a certain way. The TensorFlow Lite for Microcontrollers Makefile knows how to do this for us and can generate a directory suitable for Mbed. To do so, run the following command:
 ```
