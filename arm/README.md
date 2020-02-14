@@ -41,6 +41,19 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 
 <https://os.mbed.com/guides/connect-device-to-pelion/1/?board=ST-Discovery-F413H>
 
+### STM32F4 Cortex-M4 programming
+
+<https://www.udemy.com/course/stm32f4-programming-course-for-beginners/>
+
+<https://electronics.stackexchange.com/questions/179345/how-to-begin-programming-with-stm32-discovery>
+
+<http://stm32f4-discovery.net/2014/09/stm32f4-tutorials-one-place/>
+
+<https://www.fmf.uni-lj.si/~ponikvar/STM32F407%20project/Ch3%20-%20Programming.pdf>
+
+<https://www.st.com/content/ccc/resource/technical/document/programming_manual/6c/3a/cb/e7/e4/ea/44/9b/DM00046982.pdf/files/DM00046982.pdf/jcr:content/translations/en.DM00046982.pdf>
+
+
 ### Client
 
 <https://www.pelion.com/docs/device-management/current/connecting/mbed-os.html>
