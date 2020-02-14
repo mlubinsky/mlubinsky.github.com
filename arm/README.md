@@ -41,7 +41,13 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 
 <https://os.mbed.com/guides/connect-device-to-pelion/1/?board=ST-Discovery-F413H>
 
+### Arduino programming 
+
+<https://www.udemy.com/course/arduino-sbs-17gs/learn/lecture/6080362?start=0#overview>
+
 ### STM32F4 Cortex-M4 programming
+
+<https://www.udemy.com/course/stm32f4-programming-course-for-beginners/learn/lecture/4910872#overview>
 
 <https://www.udemy.com/course/stm32f4-programming-course-for-beginners/>
 
