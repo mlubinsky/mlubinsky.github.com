@@ -45,6 +45,8 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 
 <https://www.udemy.com/course/arduino-sbs-17gs/learn/lecture/6080362?start=0#overview>
 
+>https://www.udemy.com/course/arduino-sbs-getting-serious/learn/lecture/6843784#overview>
+
 ### STM32F4 Cortex-M4 programming
 
 <https://www.udemy.com/course/stm32f4-programming-course-for-beginners/learn/lecture/4910872#overview>
