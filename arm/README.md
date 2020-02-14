@@ -274,14 +274,18 @@ A vs-code remote development config file can be created such that vs-code will a
 Im very much simplifying this description but It is something my team and I have done successfully.
 
 ```
-
- ## CoolTerm 
+ ### screen
+ ``` 
+  ls /dev/tt*
+  screen /dev/tty.board_name 115200
+  ```
+ ### CoolTerm 
  
  <http://freeware.the-meiers.org/>
  
  <https://learn.sparkfun.com/tutorials/terminal-basics/coolterm-windows-mac-linux>
  
- ## Cornflake
+ ### Cornflake
  <http://tomgerhardt.com/Cornflake/>
  
  ### minicom
