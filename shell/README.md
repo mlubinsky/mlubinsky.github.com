@@ -1,6 +1,8 @@
  
 
 https://neilkakkar.com/unix.html How linux works
+https://likegeeks.com/linux-process-management/
+
 
 ### CRON
 https://habr.com/ru/company/badoo/blog/465021/  cron etc processes PATH
@@ -17,9 +19,13 @@ https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-
 https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md
 http://caiustheory.com/bash-script-setup/
 https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/
+
+```
 mkdir blabla
 cd !$ .  <- previous command argument
 sudo !! - prev command with root priv
+```
+
 https://habr.com/company/ruvds/blog/413725/    -- arrays is bash
 
 ### what is sh -c  
@@ -61,40 +67,48 @@ done
 (base) [BASH_FUNC]$ command -v curl
 /Users/miclub01/anaconda3/bin/curl
   
+```  
   
 ### alias 
 
+```
 alias alog="tail -f /var/log/apache2/error.log"
 alias please='sudo $(fc -ln -1)'
 
 
 alias tw='open -a /Applications/TextWrangler.app'
 tw /path/I/want/opened/
-
+```
 
 https://direnv.net/
 
 
  
 1 for stdout and 2 for stderr.
+
+```
 cat foo.txt > output.txt 2>&1
 time echo foo 2>&1 > file.txt
+```
 
 ###  nohup 
   
+```  
  nohup my_cmd > run.log 2>&1 & tail -f run.log
 
  nohup my_cmd 1>&2  | tee nohup.out &
-  
+```
+
 If you check the output file nohup.out during execution 
 you might notice that the outputs are not written into this file until the execution is finished. 
 This happens because of output buffering. If you add the -u flag you can avoid output buffering like this:
-
+```
 nohup python -u ./test.py &
-Or by specifying a log file:
-
+```
+or by specifying a log file:
+```
 nohup python -u ./test.py > output.log &
-
+```
 
 ###  Command - line tools  
 
@@ -109,12 +123,13 @@ https://news.ycombinator.com/item?id=21281025
 
 https://kvz.io/tobuntu.html . configuring ubuntu
 
-### CSV SQL 
+### CSV SQL  JSON tools
 https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/
 https://news.ycombinator.com/item?id=21923911 	Doing a database join with CSV files
 https://news.ycombinator.com/item?id=20848581 . TSV CSV JSON command line tools
 https://github.com/jolmg/cq . CQ - SQL for CSV
 https://github.com/johnkerl/miller .  Miller
+```
   sqlite> .mode csv
   sqlite> .header on
   sqlite> .import weight.csv weight
@@ -123,7 +138,7 @@ https://github.com/johnkerl/miller .  Miller
   ID,sex,ID,weight
   123,M,123,200
   789,F,789,155
-  
+```  
  
 rq fills a similar niche as tools like awk or sed, but works with structured (Avro, JSON, ProtoBuff) data instead of text.
 https://github.com/dflemstr/rq
@@ -140,6 +155,7 @@ then you probably can't correctly use `join` to do it because `join` does not un
 https://github.com/antonmedv/fx JSON viewer
 
   <a href=bash_ru.pdf>bash manual</a>
+  
   https://habr.com/ru/post/462045/ .  /bin /sbin /usr/local/bin /home/user/bin
   https://habr.com/ru/company/first/blog/461251/   Julia Evans slides
   https://news.ycombinator.com/item?id=20308865 .  AWK by example
@@ -148,22 +164,23 @@ https://github.com/antonmedv/fx JSON viewer
   
   https://news.ycombinator.com/item?id=20818106 - Logging
 
-  kills a process given its port number (4567):
-  
+###  kills a process given its port number (4567):
+```  
   kill -9 $(lsof -ti tcp:4567)
-
+```
 
   List of ports in use: 
+```  
   sudo lsof -iTCP -sTCP:LISTEN -P | grep 5002
        lsof -i -P -n | grep 8000
-
+```
   find IP:
   
     dig +short myip.opendns.com @resolver1.opendns.com
     ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'
 
 
-Run a long running script, but not if another copy of it is already running.
+### Run a long running script, but not if another copy of it is already running.
 
 FLOCK:
 https://linux.die.net/man/1/flock 
@@ -171,14 +188,16 @@ https://linux.die.net/man/1/flock
 flock(1) is not POSIX, though. mkdir(1) can be used if you absolutely want a POSIX way to manage locks. 
 For example:
 
+```
     if ! mkdir .lock; then
         printf >&2 "Already running?\\n"
         exit 1
     fi
+```    
 Some network file system implementation do not guarantee atomic mkdir, so you still need an extra caution with this method.
 
 
-<h2> Script to automatically run program if file timestamp changed</h2>
+### Script to automatically run program if file timestamp changed 
 
 https://stackoverflow.com/questions/18599339/python-watchdog-monitoring-file-for-changes
 
@@ -232,9 +251,9 @@ free -m
 
 https://habrahabr.ru/post/353322/    lsof
 Sort processed by memory consumption
-ps aux | sort -nk 4
+```ps aux | sort -nk 4```
 Sort processed by CPU consumption
-ps aux | sort -nk 3
+```ps aux | sort -nk 3```
 
 
 https://nicolargo.github.io/glances/ computer performance in python
@@ -260,11 +279,11 @@ Number of lines to show before and after match: grep -B 2 -A 2 match file.txt
 cat geeks.txt | tr ':[space]:' '\t' > out.txt  - replace spaces with tabso
 cat myfile | tr a-z A-Z > output.txt
 
-<b> xargs </b>
+### xargs  
 find. -name "*.png" -type f -printi0 | xargsi -0 tar -cvzf images.tar.gz
 ls /etc/*.conf | xargs -i cp {} /home/likegeeks/Desktop/out
 
-<b>Table-oriented output :  column </b>
+### Table-oriented output :  column </b>
 mount | column -t
 cat /etc/passwd | column -t –s :
 column -t < /etc/passwd
@@ -281,17 +300,17 @@ done
 watch df -h
 nohup
 
-<b> Yes/No automation</b>
+###  Yes/No automation 
 yes | command
 yes no | command
 
-<b>  examples</b>
+### bash examples 
 Calculation in bash:
     echo $((37 * 42))
 
 Example of bash function:
     set -e
-
+```
     download_command () {
         if type wget >/dev/null 2>&1; then
             echo "wget -q -O-"
@@ -306,15 +325,17 @@ Example of bash function:
     download=$(download_command)
     public_v4=$($download http://whatismyip.akamai.com/)
     public_v6=$($download http://ipv6.whatismyip.akamai.com/)
-
+```
 
 ### Find Union, Intersection and difference</h2>
 http://blog.deadvax.net/2018/05/29/shell-magic-set-operations-with-uniq/
 https://news.ycombinator.com/item?id=17183092
+
+```
     cat a b | sort | uniq > c   # c is a union b
     cat a b | sort | uniq -d > c   # c is a intersect b
     cat a b b | sort | uniq -u > c   # c is set difference a - b
-
+```
 ###  AWK  
 cat log.log | awk '{ print $1 }'
 https://github.com/thewhitetulip/awk-anti-textbook
@@ -324,6 +345,6 @@ https://github.com/noyesno/awka compiles awk to C for speed
   
 https://learnxinyminutes.com/docs/make/
 https://github.com/jlevy/the-art-of-command-line
-https://likegeeks.com/linux-process-management/
+
 
  
