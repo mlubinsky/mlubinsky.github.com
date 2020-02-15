@@ -1,3 +1,5 @@
+<https://webargs.readthedocs.io/en/latest/>
+
 <https://justpy.io/#/>  high-level Python Web Framework that requires no front-end programming. With a few lines of only Python code, you can create interactive websites without any JavaScript programming.
 
 <https://docs.streamlit.io/> . Streamlit is an open-source Python library that makes it easy to build beautiful apps for machine learning.
@@ -12,11 +14,6 @@
 
 <https://testdriven.io/courses/tdd-flask/>  Developing a RESTful API with Python, Flask, Docker, and Pytest
 
-<https://www.codementor.io/@jqn/deploy-a-flask-app-on-aws-ec2-13hp1ilqy2> Flask + AWS EC2
-
-<https://www.agiratech.com/debugging-python-flask-app-in-docker-container/> Flask in Docker
-
-https://www.codementor.io/@mattthommes/trigger-local-python-app-remotely-117wunbuah . ngrok
 
 <https://youtu.be/e-_tsR0hVLQ> Flask
 
@@ -31,3 +28,152 @@ https://www.codementor.io/@mattthommes/trigger-local-python-app-remotely-117wunb
 <https://fastapi.tiangolo.com/>
 
 <https://habr.com/ru/post/478620/>
+
+<http://www.uvicorn.org/>
+
+
+
+
+### Django
+https://habr.com/ru/post/456146/ .  +Vue
+
+ 
+
+
+### Responder
+
+https://training.talkpython.fm/courses/details/responder-web-framework-mini-course
+
+### Flask
+
+ 
+https://blog.appseed.us/flask-dashboard-open-source-and-free/ 
+https://www.youtube.com/watch?v=zdgYw-3tzfI
+https://towardsdatascience.com/create-a-complete-machine-learning-web-application-using-react-and-flask-859340bddb33
+https://habr.com/ru/post/448360/
+https://www.reddit.com/r/flask/comments/2321oc/easiest_and_fastest_way_to_host_flask_python/
+
+https://www.reddit.com/r/flask/comments/b4uoao/af_recommended_flask_video_tutorials_for_2019/
+
+https://github.com/flask-admin/flask-admin .  
+
+https://potion.readthedocs.io/en/latest/    Flask-Potion
+https://habr.com/ru/post/472018/    Flask-Potion
+
+
+
+https://www.roytuts.com/python-flask-file-upload-example/
+
+ https://github.com/mlubinsky/mlubinsky.github.com/tree/master/Flask   My Flask code snippets</a>
+
+
+### Shopping card  
+https://www.google.com/search?q=shopping+card+REST+API++flask&oq=shopping+card+REST+API+flask
+https://github.com/Durgaprasad-Nagarkatte/Simple-Flask-Shopping-Cart
+http://blog.subair.net/simple-web-shop-cart-rest-api-python-3-and-flask/
+https://github.com/lucassimon/flask-api-shopping-cart
+https://github.com/HarshShah1997/Shopping-Cart
+https://github.com/kkschick/ubermelon-shopping-app
+
+### Async update Web page  
+http://stackoverflow.com/questions/10377384/why-use-ajax-when-websockets-is-available
+
+#### Option #1:
+
+https://www.shanelynn.ie/asynchronous-updates-to-a-webpage-with-flask-and-socket-io/
+https://secdevops.ai/weekend-project-part-2-turning-flask-into-a-real-time-websocket-server-using-flask-socketio-ab6b45f1d896
+Server-side events:
+https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events
+http://datamining.city/2015/09/30/server-client-streaming/
+http://flask.pocoo.org/snippets/116/
+
+#### Option #2:
+
+Flask + Ajax {via Polling}:   write a callback that will get called upon time out. 
+
+This can be done, for instance, using JQuery's setInterval().
+
+https://laracasts.com/discuss/channels/laravel/listen-to-new-event-and-refresh-page
+https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xiv-ajax
+
+### Udemy  
+https://www.udemy.com/restful-api-flask-course/learn/v4/
+https://www.udemy.com/rest-api-flask-and-python/learn/v4/content
+https://www.udemy.com/es6-javascript-shopping-cart/learn/v4/overview
+
+
+### Not Free 
+ 
+https://testdriven.io/ - Microservices with Docker, Flask, and React
+https://buildasaasappwithflask.com/
+ 
+
+https://www.youtube.com/watch?v=EfgxnmOWLUE
+
+## REST API 
+ 
+https://blog.miguelgrinberg.com/category/Flask
+https://habr.com/post/358152/  - Russian translation Flask REST API
+
+
+ 
+https://www.reddit.com/r/flask/comments/9h5n17/what_are_the_best_resources_to_learn_flask/
+https://www.reddit.com/r/flask/comments/8segyj/best_open_source_flask_repos_for_learning_design/
+ 
+https://vsupalov.com/flask-megatutorial-review/
+ 
+
+https://medium.com/search?q=flask
+https://github.com/mjhea0/flaskr-tdd
+
+
+https://praciano.com.br/blog/building-your-first-rest-application-with-python-and-flask-part-i/
+https://realpython.com/flask-connexion-rest-api-part-2/
+
+ 
+https://github.com/christabor/flask_jsondash
+https://github.com/mjhea0/flaskr-tdd
+https://lepture.com/en/2018/structure-of-a-flask-project
+
+https://exploreflask.com/en/latest/index.html
+https://github.com/realpython/discover-flask
+
+Calling remote (async) API from Falsk usually requiire Celery
+
+https://github.com/jpmens/mqttwarn MQT
+https://github.com/pika/pika  Python RabbitMQ client
+https://medium.freecodecamp.org/how-to-use-python-and-flask-to-build-a-web-app-an-in-depth-tutorial-437dbfe9f1c6
+
+
+####  Deploying to Heroku and Pythonanyware 
+
+https://pythonhow.com/deploying-your-web-application-to-the-cloud/ . Heroku
+
+https://pythonhow.com/deploy-flask-web-app-pythonanywhere/
+
+###  Deploying: AWS and Docker 
+https://www.codementor.io/dushyantbgs/deploying-a-flask-application-to-aws-gnva38cf0
+
+https://linuxacademy.com/blog/amazon-web-services-2/deploying-a-containerized-flask-application-with-aws-ecs-and-docker/
+
+## Deployment: AWS Docker
+<https://www.codementor.io/@jqn/deploy-a-flask-app-on-aws-ec2-13hp1ilqy2> Flask + AWS EC2
+
+<https://www.agiratech.com/debugging-python-flask-app-in-docker-container/> Flask in Docker
+
+https://www.codementor.io/@mattthommes/trigger-local-python-app-remotely-117wunbuah . ngrok
+
+https://www.reddit.com/r/flask/comments/ar4dsi/flaskuwsgi_app_and_docker/
+
+https://medium.com/@jchaykow/productionalize-analytics-flask-app-with-docker-aws-and-google-api-bda5445949f6
+
+How to make my flask server open to any device connected on my wifi?
+If you have the debugger disabled or trust the users on your network,
+you can make the server publicly available simply by adding --host=0.0.0.0 to the command line:
+
+    flask run --host=0.0.0.0 
+This tells your operating system to listen on all public IPs
+
+if __name__=='__main__':
+   app.run(debug=False, host='0.0.0.0', port=5000)
+   
