@@ -1,15 +1,12 @@
-<head>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-<pre>
+ 
 
 https://neilkakkar.com/unix.html How linux works
+
+### CRON
 https://habr.com/ru/company/badoo/blog/465021/  cron etc processes PATH
 https://habr.com/ru/company/badoo/blog/468061/ .  CRON
 
-<h2> bash </h2>
+###  bash  
 
 https://shellmagic.xyz/
 http://hyperpolyglot.org/
@@ -25,14 +22,14 @@ cd !$ .  <- previous command argument
 sudo !! - prev command with root priv
 https://habr.com/company/ruvds/blog/413725/    -- arrays is bash
 
-<h3> what is sh -c </h3>
+### what is sh -c  
 https://askubuntu.com/questions/831847/what-is-the-sh-c-command
 https://stackoverflow.com/questions/82256/how-do-i-use-sudo-to-redirect-output-to-a-location-i-dont-have-permission-to-wr
 
 how-to-get-the-source-directory-of-a-bash-script-from-within-the-script-itself?
 https://stackoverflow.com/questions/59895/how-to-get-the-source-directory-of-a-bash-script-from-within-the-script-itself/  
 
-  
+```  
 #!/bin/bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
@@ -57,11 +54,15 @@ for dep in "${deps[@]}"; do
   echo $dep
   test1 "${dep}" || die "Missing '${dep}'"
 done
+  
+  
 (base) [BASH_FUNC]$ type -p curl
 /Users/miclub01/anaconda3/bin/curl
 (base) [BASH_FUNC]$ command -v curl
 /Users/miclub01/anaconda3/bin/curl
-<h2>alias</h2>
+  
+  
+### alias 
 
 alias alog="tail -f /var/log/apache2/error.log"
 alias please='sudo $(fc -ln -1)'
@@ -79,7 +80,7 @@ https://direnv.net/
 cat foo.txt > output.txt 2>&1
 time echo foo 2>&1 > file.txt
 
-  <h3> nohup</h3>
+###  nohup 
   
  nohup my_cmd > run.log 2>&1 & tail -f run.log
 
@@ -95,7 +96,7 @@ Or by specifying a log file:
 nohup python -u ./test.py > output.log &
 
 
-<h3>Command - line tools</h3> 
+###  Command - line tools  
 
 https://github.com/learn-anything/command-line-tools#readme
 https://www.wezm.net/technical/2019/10/useful-command-line-tools/
@@ -108,7 +109,7 @@ https://news.ycombinator.com/item?id=21281025
 
 https://kvz.io/tobuntu.html . configuring ubuntu
 
-<h3>CSV SQL</h3>
+### CSV SQL 
 https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/
 https://news.ycombinator.com/item?id=21923911 	Doing a database join with CSV files
 https://news.ycombinator.com/item?id=20848581 . TSV CSV JSON command line tools
@@ -190,6 +191,7 @@ https://gist.github.com/davidmoreno/c049e922e41aaa94e18955b9fac5549c
 http://z3bra.org/wendy/
 http://blog.z3bra.org/2015/03/under-wendys-dress.html
 
+```
 #!/usr/bin/env bash
 script="$1"; shift
 last_mod=0
@@ -212,11 +214,12 @@ while true; do
 done
  
 exit 0
-
-<h2> Process supervisor</h2> 
+```
+  
+###  Process supervisor 
 http://supervisord.org/index.html
 
-<h2> Memory CPU</h2>
+### Memory CPU</h2>
 https://habrahabr.ru/company/badoo/blog/338226/
 https://blog.codecentric.de/en/2017/09/jvm-fire-using-flame-graphs-analyse-performance/
 https://waterprogramming.wordpress.com/2017/06/08/profiling-c-code-with-callgrind/
@@ -243,10 +246,10 @@ www.entrproject.org/ run alternative command when file changed
  
 
 
-<h2> MS Excel </h2>
+### MS Excel  
 http://supercoolpics.com/10-bystryh-fishek-v-rabote-s-microsoft-excel/
 
-<h2> grep </h2>
+###  grep  
 Use -v to show those that do not contain “match”: grep -v match file.txt
 Use -c to count how many matches: grep -c match file.txt
 Show list of files that match: grep -rl match *
@@ -305,14 +308,14 @@ Example of bash function:
     public_v6=$($download http://ipv6.whatismyip.akamai.com/)
 
 
-<h2>Find Union, Intersection and difference</h2>
+### Find Union, Intersection and difference</h2>
 http://blog.deadvax.net/2018/05/29/shell-magic-set-operations-with-uniq/
 https://news.ycombinator.com/item?id=17183092
     cat a b | sort | uniq > c   # c is a union b
     cat a b | sort | uniq -d > c   # c is a intersect b
     cat a b b | sort | uniq -u > c   # c is set difference a - b
 
-<h2> AWK </h2>
+###  AWK  
 cat log.log | awk '{ print $1 }'
 https://github.com/thewhitetulip/awk-anti-textbook
 https://github.com/noyesno/awka compiles awk to C for speed
@@ -323,6 +326,4 @@ https://learnxinyminutes.com/docs/make/
 https://github.com/jlevy/the-art-of-command-line
 https://likegeeks.com/linux-process-management/
 
-
-</pre>
-</body>
+ 
