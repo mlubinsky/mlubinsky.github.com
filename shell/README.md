@@ -42,6 +42,9 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 echo $DIR
 echo "The script basename `basename "$0"`"
   
+```
+### bash func
+```
 !#/bin/bash
 
 function test1() { command -v "$1" >/dev/null 2>&1; }
@@ -154,11 +157,11 @@ then you probably can't correctly use `join` to do it because `join` does not un
 
 https://github.com/antonmedv/fx JSON viewer
 
-  <a href=bash_ru.pdf>bash manual</a>
+   bash_ru.pdf bash manual 
   
   https://habr.com/ru/post/462045/ .  /bin /sbin /usr/local/bin /home/user/bin
   https://habr.com/ru/company/first/blog/461251/   Julia Evans slides
-  https://news.ycombinator.com/item?id=20308865 .  AWK by example
+
   https://news.ycombinator.com/item?id=17874718
   
   
@@ -208,7 +211,10 @@ https://facebook.github.io/watchman/
 https://gist.github.com/davidmoreno/c049e922e41aaa94e18955b9fac5549c
 
 http://z3bra.org/wendy/
+
 http://blog.z3bra.org/2015/03/under-wendys-dress.html
+
+www.entrproject.org/ run alternative command when file changed
 
 ```
 #!/usr/bin/env bash
@@ -245,11 +251,15 @@ https://waterprogramming.wordpress.com/2017/06/08/profiling-c-code-with-callgrin
 https://medium.com/flawless-app-stories/debugging-swift-code-with-lldb-b30c5cf2fd49   LLDB
 https://jvns.ca/blog/2017/07/05/linux-tracing-systems/
 http://www.brendangregg.com/sysperfbook.html
-
+```
 top -c
 free -m
+```
 
+### lsof 
 https://habrahabr.ru/post/353322/    lsof
+
+
 Sort processed by memory consumption
 ```ps aux | sort -nk 4```
 Sort processed by CPU consumption
@@ -257,10 +267,12 @@ Sort processed by CPU consumption
 
 
 https://nicolargo.github.io/glances/ computer performance in python
+
 https://tech.marksblogg.com/top-htop-glances.html
+
 https://github.com/iipeace/guider
 
-www.entrproject.org/ run alternative command when file changed
+
 
  
 
@@ -275,27 +287,36 @@ Show list of files that match: grep -rl match *
 Number of lines to show before and after match: grep -B 2 -A 2 match file.txt
 
 
-<b>tr (also exists: expand and unexpand) </b>
+## tr (also exists: expand and unexpand)  
+```
 cat geeks.txt | tr ':[space]:' '\t' > out.txt  - replace spaces with tabso
 cat myfile | tr a-z A-Z > output.txt
+```
 
 ### xargs  
+```
 find. -name "*.png" -type f -printi0 | xargsi -0 tar -cvzf images.tar.gz
 ls /etc/*.conf | xargs -i cp {} /home/likegeeks/Desktop/out
-
-### Table-oriented output :  column </b>
+```
+### Table-oriented output:  column  
+```
 mount | column -t
 cat /etc/passwd | column -t –s :
 column -t < /etc/passwd
+```
 
-Run command till it succeed:
+### Run command till it succeed (v1):
+
 while ! [command]; do sleep 1; done
 
-Run command till it succeed:
+### Run command till it succeed (v2):
+```
 while  sleep 1
 do
    ping -c 1 google.com > /dev/null 2>&1 && break
 done
+```
+
 
 watch df -h
 nohup
@@ -337,7 +358,10 @@ https://news.ycombinator.com/item?id=17183092
     cat a b b | sort | uniq -u > c   # c is set difference a - b
 ```
 ###  AWK  
-cat log.log | awk '{ print $1 }'
+```cat log.log | awk '{ print $1 }'```
+
+https://news.ycombinator.com/item?id=20308865 .  AWK by example
+  
 https://github.com/thewhitetulip/awk-anti-textbook
 https://github.com/noyesno/awka compiles awk to C for speed
   
