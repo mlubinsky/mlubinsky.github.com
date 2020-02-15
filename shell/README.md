@@ -1,6 +1,7 @@
  
+### How linux works
 
-https://neilkakkar.com/unix.html How linux works
+https://neilkakkar.com/unix.html 
 https://likegeeks.com/linux-process-management/
 
 
@@ -13,12 +14,16 @@ https://habr.com/ru/company/badoo/blog/468061/ .  CRON
 https://shellmagic.xyz/
 http://hyperpolyglot.org/
 
+https://github.com/jlevy/the-art-of-command-line
+
 https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin
 https://unix.stackexchange.com/questions/41571/what-is-the-difference-between-and/41595#41595 . $@ vs $*
 https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort
 https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md
 http://caiustheory.com/bash-script-setup/
 https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/
+
+   bash_ru.pdf bash manual 
 
 ```
 mkdir blabla
@@ -113,7 +118,7 @@ or by specifying a log file:
 nohup python -u ./test.py > output.log &
 ```
 
-###  Command - line tools  
+###  Command-line tools  
 
 https://github.com/learn-anything/command-line-tools#readme
 https://www.wezm.net/technical/2019/10/useful-command-line-tools/
@@ -157,15 +162,15 @@ then you probably can't correctly use `join` to do it because `join` does not un
 
 https://github.com/antonmedv/fx JSON viewer
 
-   bash_ru.pdf bash manual 
+
   
   https://habr.com/ru/post/462045/ .  /bin /sbin /usr/local/bin /home/user/bin
   https://habr.com/ru/company/first/blog/461251/   Julia Evans slides
 
   https://news.ycombinator.com/item?id=17874718
   
-  
-  https://news.ycombinator.com/item?id=20818106 - Logging
+###   Logging
+  https://news.ycombinator.com/item?id=20818106 
 
 ###  kills a process given its port number (4567):
 ```  
@@ -348,7 +353,7 @@ Example of bash function:
     public_v6=$($download http://ipv6.whatismyip.akamai.com/)
 ```
 
-### Find Union, Intersection and difference</h2>
+### Find union, intersection and difference 
 http://blog.deadvax.net/2018/05/29/shell-magic-set-operations-with-uniq/
 https://news.ycombinator.com/item?id=17183092
 
@@ -366,9 +371,9 @@ https://github.com/thewhitetulip/awk-anti-textbook
 https://github.com/noyesno/awka compiles awk to C for speed
   
   
-  
+### make  
 https://learnxinyminutes.com/docs/make/
-https://github.com/jlevy/the-art-of-command-line
+
 
 
  
