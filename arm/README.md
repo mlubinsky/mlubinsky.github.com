@@ -49,6 +49,8 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 
 ### STM32F4 Cortex-M4 programming
 
+<https://www.udemy.com/course/deep-learning-from-ground-uptm-on-arm-processors/learn/lecture/17392440#overview>
+
 <https://www.udemy.com/course/stm32f4-programming-course-for-beginners/learn/lecture/4910872#overview>
 
 <https://www.udemy.com/course/stm32f4-programming-course-for-beginners/>
