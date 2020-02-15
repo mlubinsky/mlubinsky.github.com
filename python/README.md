@@ -1,3 +1,5 @@
+<http://michal.karzynski.pl/blog/2019/07/15/top-20-talks-from-europython-2019/>
+
 ```
 import sys
 print(sys.prefix) # '/System/Library/Frameworks/Python.framework/Versions/3.5'
