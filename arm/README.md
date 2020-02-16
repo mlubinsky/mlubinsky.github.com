@@ -1,5 +1,7 @@
 <https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter> UART 
 
+<https://habr.com/ru/post/109395/> UART
+
 <https://habr.com/ru/hub/controllers/>
 
 <http://easyelectronics.ru/category/arm-uchebnyj-kurs>
