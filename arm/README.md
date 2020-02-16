@@ -1,3 +1,5 @@
+<https://www.embeddedrelated.com/showarticle/1324.php> .  So you want to be an embedded developer
+
 <https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter> UART 
 
 <https://habr.com/ru/post/109395/> UART
