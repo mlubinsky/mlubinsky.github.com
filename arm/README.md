@@ -9,6 +9,9 @@
 <https://habr.com/ru/company/skyeng/blog/449624/> Читаем даташиты 1
 
 <https://habr.com/ru/post/453262/>
+
+<https://electronics.stackexchange.com/>
+
 ```
 Электричество
 Vcc, Vdd – «плюс», питание
