@@ -2,6 +2,10 @@
 
 <https://habr.com/ru/post/109395/> UART
 
+<https://www.reddit.com/r/embedded/>
+
+<https://www.reddit.com/r/microcontrollers/>
+
 <https://habr.com/ru/hub/controllers/>
 
 <http://easyelectronics.ru/category/arm-uchebnyj-kurs>
