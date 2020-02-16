@@ -6,6 +6,8 @@
 
 <https://ods.ai/> Russian
 
+<https://theaisummer.com/Graph_Neural_Networks/> Graph NN
+
 <https://prodi.gy/> . Prodigy is a scriptable annotation tool so efficient that data scientists can do the annotation themselves, enabling a new level of rapid iteration.
 
 Book: Data Science in Production
