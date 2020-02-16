@@ -10,6 +10,8 @@
 
 <http://easyelectronics.ru/category/arm-uchebnyj-kurs>
 
+<https://platformio.org/>
+
 <https://habr.com/ru/company/skyeng/blog/456094/> Читаем даташиты 2
 
 <https://habr.com/ru/company/skyeng/blog/449624/> Читаем даташиты 1
