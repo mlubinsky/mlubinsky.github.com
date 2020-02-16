@@ -12,6 +12,9 @@
 
 <https://habr.com/ru/post/109395/> UART
 
+<https://habr.com/ru/post/488574/> UART
+
+
 <https://www.reddit.com/r/embedded/>
 
 <https://www.reddit.com/r/microcontrollers/>
