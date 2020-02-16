@@ -6,6 +6,8 @@
 
 <https://www.artekit.eu/doc/guides/all-about-gpios/> GPIO
 
+<https://www.reddit.com/r/embedded/comments/f1b8f0/is_there_a_good_comprehensive_guide_checklist/>
+
 <https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter> UART 
 
 <https://habr.com/ru/post/109395/> UART
