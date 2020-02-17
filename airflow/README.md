@@ -166,7 +166,7 @@ https://github.com/geosolutions-it/evo-odas/wiki/Airflow---about-subDAGs,-branch
 <https://www.sicara.ai/blog/2019-01-28-automate-aws-tasks-thanks-to-airflow-hooks>  AirFlow Hooks
  
 
-Hoots uses aifflow.model.connection.Connection to get hostnames and auth info
+Hooks uses aifflow.model.connection.Connection to get hostnames and auth info
 
 
 
