@@ -10,6 +10,11 @@
 
 <https://prodi.gy/> . Prodigy is a scriptable annotation tool so efficient that data scientists can do the annotation themselves, enabling a new level of rapid iteration.
 
+
+Book: Foundation of Data Science
+
+<http://www.cs.cornell.edu/jeh/book%20no%20so;utions%20March%202019.pdf>
+
 Book: Data Science in Production
 
 <https://levelup.gitconnected.com/book-launch-data-science-in-production-54b325c03818>
