@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/company/ods/blog/327242/> Открытый курс машинного обучения. Тема 9. Анализ временных рядов с помощью Python
 
+<https://www.vaishalilambe.com/blog/learning-time-series-analysis-forecasting-phase-1>
+
 <https://github.com/firmai/atspy> Automated Time Series Models in Python (AtsPy)
 ```
 ARIMA - Automated ARIMA Modelling
