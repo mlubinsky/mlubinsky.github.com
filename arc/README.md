@@ -29,6 +29,8 @@
 
 ## Distributed systems
 
+<https://medium.com/analytics-vidhya/data-streams-and-online-machine-learning-in-python-a382e9e8d06a>
+
 <http://book.mixu.net/distsys/single-page.html>
 
 <https://www.youtube.com/watch?v=Y6Ev8GIlbxc> distributed systems
