@@ -4,6 +4,9 @@
 <https://github.com/wagoodman/dive> see docker layers
 
 ## Docker
+
+<https://habr.com/ru/company/ruvds/blog/488668/> 
+
 <https://youtu.be/zJ6WbK9zFpI> . Docker for Beginners: Full Course
 
 <https://www.manning.com/books/docker-in-action-second-edition> Book
