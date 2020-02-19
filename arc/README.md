@@ -99,6 +99,9 @@ imagine that you have no task-switching penalties but have to perform two tasks 
 
 <https://github.com/zendesk/pakkr>
 
+
+<https://cgarciae.github.io/pypeln/> 
+
 <https://habr.com/ru/company/otus/blog/477834/>
 
 <https://github.com/voorloopnul/pipeframe>  Python  process data (stream or batch) taking advantage of python multiprocessing library.
