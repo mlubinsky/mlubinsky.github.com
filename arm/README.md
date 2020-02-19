@@ -6,6 +6,8 @@
 
 <https://www.artekit.eu/doc/guides/all-about-gpios/> GPIO
 
+<https://interrupt.memfault.com/blog/i2c-in-a-nutshell>. I2C
+
 <https://www.reddit.com/r/embedded/comments/f1b8f0/is_there_a_good_comprehensive_guide_checklist/>
 
 <https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter> UART 
