@@ -1,5 +1,7 @@
 <http://michal.karzynski.pl/blog/2019/07/15/top-20-talks-from-europython-2019/>
 
+<https://towardsdatascience.com/tour-of-python-itertools-2af84db18a5e> itertools
+
 ```
 import sys
 print(sys.prefix) # '/System/Library/Frameworks/Python.framework/Versions/3.5'
