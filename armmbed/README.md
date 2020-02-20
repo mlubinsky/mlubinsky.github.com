@@ -10,6 +10,7 @@
 
 <https://github.com/ARMmbed/mbed-cloud-client>
 
+<https://github.com/ARMmbed/mbed-cloud-client-example>
 
 <https://www.pelion.com/docs/device-management/current/connecting/mbed-os.html>
  
@@ -30,6 +31,9 @@ To work with the Device Management Client example application, you need:
 <https://docs.mbed.com/docs/mbed-os-handbook/en/latest/advanced/bootloader/> Bootloader
 
 #### Clone the embedded application's GitHub repository to your local computer and navigate to the new folder:
+
+<https://github.com/ARMmbed/mbed-cloud-client-example>
+
 ```
 mbed import https://github.com/ARMmbed/mbed-cloud-client-example
 cd mbed-cloud-client-example
