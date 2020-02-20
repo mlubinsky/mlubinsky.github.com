@@ -6,6 +6,8 @@
 
 <https://www.pelion.com/docs/device-management/current/connecting/mbed-os.html>
 
+<https://portal.mbedcloud.com/devices/list>
+
 <https://os.mbed.com/teams/mbed-os-examples/code/mbed-os-example-pelion/> . (Feb 5 2020)
 
 <https://www.pelion.com/docs/device-management/current/connecting/device-management-client-tutorials.html>
