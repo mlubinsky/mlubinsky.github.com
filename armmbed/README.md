@@ -57,7 +57,7 @@ mbed device-management init -d arm.com --model-name example-app --force -q
 
 <https://os.mbed.com/blog/entry/Using-HTTP-HTTPS-MQTT-and-CoAP-from-mbed/>
 
-<https://os.mbed.com/teams/sandbox/code/http-example/>
+<https://os.mbed.com/teams/sandbox/code/http-example/> . (15 Feb 2017)
 
 <https://os.mbed.com/teams/sandbox/code/mbed-http/docs/tip/classHttpRequest.html>
 
