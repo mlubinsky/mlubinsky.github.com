@@ -1,35 +1,33 @@
-<head>
-<link rel="stylesheet" href="style.css">
-</head>
+ 
 
-<h2>Performance</h2>
-<pre>
+### Performance 
+ 
 https://www.infoq.com/articles/lessons-learned-performance-testing/
 
 https://habrahabr.ru/company/mailru/blog/254843/ Проектирование высоконагруженных систем
 
-<h3>Syslog</h3>
+### Syslog< 
 https://devconnected.com/syslog-the-complete-system-administrator-guide/
 https://news.ycombinator.com/item?id=20612791
 
-<h3>Concurrency</h3>
+### Concurrency 
 https://github.com/heathermiller/dist-prog-book/blob/master/chapter/2/futures.md
 http://nikgrozev.com/2015/07/14/overview-of-modern-concurrency-and-parallelism-concepts/
 
 https://facebook.github.io/watchman/ . watch the file and directory change
 
-<h3>JMeter</h3>
+### JMeter 
 In docker:
 http://dockerlabs.collabnix.com/play-with-docker/jmeter-docker/
 https://softwaretester.info/apache-jmeter-and-docker/
 https://hub.docker.com/r/justb4/jmeter/
 
-<b>
+ 
 https://www.blazemeter.com/blog/make-use-of-docker-with-jmeter-learn-how/
-</b>
+ 
 
 
-
+```
 docker build -t jmeter .
 docker image ls
 docker volume create myVolume
@@ -38,6 +36,8 @@ docker volume inspect myVolume
 
 ```
 in Dockerfile:
+                                                                                   ```
+                                                                                   
 ARG JMETER_VERSION="5.2.1"
 
 [
@@ -80,7 +80,7 @@ Check : https://jmeter.apache.org/usermanual/best-practices.html
  
  https://habr.com/ru/post/140310/
  
-<h3>Design</h3>
+### Design 
 https://habrahabr.ru/company/carprice/blog/340946/   distributed tracing
 https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/pdf/Performance_Tuning_Guide/Red_Hat_Enterprise_Linux-7-Performance_Tuning_Guide-en-US.pdf
 http://natsys-lab.blogspot.com/2016/09/how-to-analyze-performance-of-your.html
@@ -177,20 +177,20 @@ https://habrahabr.ru/company/yandex/blog/250753/
 
 https://yakking.branchable.com/posts/daemons/
 
-<h2>Disk I/O</h2>
+###  Disk I/O 
 https://medium.com/@ifesdjeen/on-disk-io-part-1-flavours-of-io-8e1ace1de017
 https://medium.com/@ifesdjeen/on-disk-io-part-2-more-flavours-of-io-c945db3edb13?source=user_profile---------3----------------
 http://www.scylladb.com/2017/10/05/io-access-methods-scylla/
 
 
-<h2>GDB</h2>
+### GDB  
 http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html
 http://rr-project.org/
-<h2>Python</h2>
+###Python 
 
 https://yakking.branchable.com/posts/fast-python/
 
-<h2>C++</h2>
+### C++< 
 https://habrahabr.ru/company/oleg-bunin/blog/340394/   Profiling C++
 https://habrahabr.ru/post/313686/ Logging in C++
 http://www.baical.net/
@@ -213,7 +213,7 @@ https://habrahabr.ru/company/intel/blog/277407/
 
 http://apolukhin.github.io/Boost-Cookbook/
 
-<h2>Networking</h2>
+###  Networking 
 https://yakking.branchable.com/posts/basic-networking/
 https://yakking.branchable.com/tags/network/
 https://eli.thegreenplace.net/2017/concurrent-servers-part-1-introduction/
@@ -228,7 +228,7 @@ resending the packets if they get lost on the way, and reassembling the packets 
 https://habrahabr.ru/company/odnoklassniki/blog/266005/
 
 
-<h2>Web</h2>
+### Web 
 https://habrahabr.ru/company/oleg-bunin/blog/340114/
 https://www.igvita.com/2013/01/15/faster-websites-crash-course-on-web-performance/
 https://medium.freecodecamp.org/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c
@@ -374,7 +374,7 @@ https://www.excelsiorjet.com/blog/articles/portable-profilers-and-where-to-find-
 
  
 
-<h2>The Various Kinds of IO - Blocking, Non-blocking, Multiplexed and Async</h2>
+### The Various Kinds of IO - Blocking, Non-blocking, Multiplexed and Async</h2>
 https://www.rubberducking.com/2018/05/the-various-kinds-of-io-blocking-non.html
 https://news.ycombinator.com/item?id=17009547
 <b> In Hardware</b>
