@@ -1,5 +1,7 @@
 ### Overview
 
+<https://www.infoq.com/presentations/snowflake-architecture/>
+
 <https://www.analytics.today/blog/tuning-snowflake>
 
 <https://www.analytics.today/blog/database-administration-snowflake>
