@@ -78,6 +78,9 @@ mbed device-management init -d arm.com --model-name example-app --force -q
 ## Austin Blackstone 
 <http://austinblackstoneengineering.com/how-to-send-data-from-mbed-os-to-treasure-data-pelion-data/>
 
+
+<https://os.mbed.com/platforms/ST-Nucleo-H743ZI2/> Pelion Device Ready  
+
 Takuya Kitazawa (a.k.a. takuti) is an engineer working on machine learning, data science, and product development at Arm Treasure Data. 
 
 <https://github.com/takuti/mbed-os-example-treasure-data>
