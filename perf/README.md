@@ -6,7 +6,7 @@ https://www.infoq.com/articles/lessons-learned-performance-testing/
 
 https://habrahabr.ru/company/mailru/blog/254843/ Проектирование высоконагруженных систем
 
-### Syslog< 
+### Syslog  
 https://devconnected.com/syslog-the-complete-system-administrator-guide/
 https://news.ycombinator.com/item?id=20612791
 
@@ -37,7 +37,7 @@ docker volume inspect myVolume
 ```
 in Dockerfile:
                                                                                    ```
-                                                                                   
+```                                                                                  
 ARG JMETER_VERSION="5.2.1"
 
 [
@@ -65,19 +65,20 @@ https://habr.com/ru/post/339014/
  JMeter -v
  brew upgrade jmeter
  
- jmeter
-================================================================================
-Don't use GUI mode for load testing !, only for Test creation and Test debugging.
+  
+ 
+Don't use GUI mode for load testing , only for Test creation and Test debugging.
 For load testing, use CLI Mode (was NON GUI):
-   jmeter -n -t [jmx file] -l [results file] -e -o [Path to web report folder]
-& increase Java Heap to meet your test requirements:
+  ``` jmeter -n -t [jmx file] -l [results file] -e -o [Path to web report folder]```
+
+increase Java Heap to meet your test requirements:
    Modify current env variable HEAP="-Xms1g -Xmx1g -XX:MaxMetaspaceSize=256m" in the jmeter batch file
 Check : https://jmeter.apache.org/usermanual/best-practices.html
-
+```
  jmeter -n :run in command line mode
  jmeter -t testPlax.jmx
  jmeter -l log.txt
- 
+``` 
  https://habr.com/ru/post/140310/
  
 ### Design 
@@ -155,7 +156,7 @@ https://habrahabr.ru/post/140010/ atop
 ps -eo pmem,pcpu,rss,vsize,args | sort -k 1 -r | less
 pstree
 
-<h2>strace lsof</h2>
+### strace lsof 
 strace  - system and network calls
 https://habr.com/ru/company/first/blog/467093/
 https://habr.com/ru/company/southbridge/blog/478626/
@@ -172,6 +173,7 @@ https://habrahabr.ru/post/305188/  Linux perf
 CPU load:
 https://habrahabr.ru/company/infopulse/blog/329206/
 https://habrahabr.ru/post/309796/
+
 Memory: https://habrahabr.ru/post/312078/
 https://habrahabr.ru/company/yandex/blog/250753/
 
@@ -179,18 +181,19 @@ https://yakking.branchable.com/posts/daemons/
 
 ###  Disk I/O 
 https://medium.com/@ifesdjeen/on-disk-io-part-1-flavours-of-io-8e1ace1de017
-https://medium.com/@ifesdjeen/on-disk-io-part-2-more-flavours-of-io-c945db3edb13?source=user_profile---------3----------------
+https://medium.com/@ifesdjeen/on-disk-io-part-2-more-flavours-of-io-c945db3edb13 
 http://www.scylladb.com/2017/10/05/io-access-methods-scylla/
 
 
 ### GDB  
 http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html
 http://rr-project.org/
-###Python 
+
+### Python 
 
 https://yakking.branchable.com/posts/fast-python/
 
-### C++< 
+### C++  
 https://habrahabr.ru/company/oleg-bunin/blog/340394/   Profiling C++
 https://habrahabr.ru/post/313686/ Logging in C++
 http://www.baical.net/
@@ -374,10 +377,11 @@ https://www.excelsiorjet.com/blog/articles/portable-profilers-and-where-to-find-
 
  
 
-### The Various Kinds of IO - Blocking, Non-blocking, Multiplexed and Async</h2>
+### The Various Kinds of IO - Blocking, Non-blocking, Multiplexed and Async 
 https://www.rubberducking.com/2018/05/the-various-kinds-of-io-blocking-non.html
 https://news.ycombinator.com/item?id=17009547
-<b> In Hardware</b>
+
+#### In Hardware 
 On modern operating systems, IO, for input/output, is a way for data to be exchanged with peripherals. 
 This includes reading or writing to disk, or SSD, sending or receiving data over the network, displaying data to the monitor, 
 receiving keyboard and mouse input, etc.
@@ -397,11 +401,11 @@ continuing to process other CPU instructions. Once the peripheral is done, it wi
 This happens in hardware, and makes it so the CPU never waits or checks on the peripheral, thus freeing it to perform other work,
 until the peripheral itself says it's done.
 
-<b>In Software</b>
+#### In Software 
 So now that we have an understanding of what happens in hardware, we can move on to the software side. 
 This is where the IO is exposed in various kinds, such as blocking, non-blocking, multiplexed and async. Lets go over them one by one.
 
-Blocking
+#### Blocking
 Remember how a user program runs inside a process, and code is executed within the context of a thread? 
 This is always the case, and thus say you are writing a program that needs to read from a file.
 With blocking IO, what you do is ask the operating system, from your thread, to put your thread to sleep, 
@@ -409,7 +413,7 @@ and wake it up only once the data from the file is available to be consumed by y
 
 That is, blocking IO is called blocking because the thread which uses it will block and sleep until the IO is done.
 
-Non-blocking
+#### Non-blocking
 The problem with blocking IO is that your thread is sleeping until the IO is done, and thus, 
 it can't do anything else while it's waiting for the IO. 
 Sometimes, there's nothing else your program could be doing, but if there was, it would be nice to be able to do that work concurrently,
@@ -423,7 +427,7 @@ This means you are free to branch on the pending status, and go perform some oth
 you can call read for it once more, at which point if the IO is done, it will return the file's content, 
 otherwise it will once again return a pending status, and you can again choose to go perform some other work.
 
-Multiplexed
+#### Multiplexed
 The problem with non-blocking IO is that it gets strange if the other work that you want to be doing while waiting for the IO 
 is itself more IO.
 
@@ -448,7 +452,7 @@ So you would make a non-blocking call to read file A, and then a non-blocking ca
 and finally you will tell the OS, put my thread to sleep, and wake it up when A and B's IO are both done, 
 or when anyone of them is done.
 
-Async
+#### Async
 The problem with multiplexed IO is that you're still sleeping until IO is ready for you to handle. Once again, 
 for many program that's fine, maybe you have nothing else to be doing while you wait for IO operations to be done. 
 Sometimes though, you do have other things you could be doing. Maybe you're computing the digits of PI, 
@@ -490,4 +494,4 @@ Reactor pattern
 Proactor pattern
 There is no thread
 Disclaimer
-</pre>
+ 
