@@ -217,7 +217,8 @@ The nRF52840 contains 1 MB of flash and 256 kB of RAM that can be used for code 
 michael.lybins@a 
 Vanti..7!
 
-<https://os.mbed.com/pelion-free-tier/> Peleon Device Management
+## Pelion Device Management
+<https://os.mbed.com/pelion-free-tier/> 
 
 ## Mbed-cli Docker
 
@@ -449,12 +450,18 @@ At this juncture, our model’s operations are defined in the Python scripts, an
 ```
 !python tensorflow/tensorflow/examples/speech_commands/freeze.py \ model_architecture = tiny_conv window_stride = 20 preprocess = micro \ wanted_words = ${ WANTED_WORDS } quantize = 1 \ output_file = /content/tiny_conv.pb \ start_checkpoint = /content/speech_commands_train/tiny_conv. \ ckpt-${ TOTAL_STEPS } 
 ```
-##  Blackstone Engineering IoT Workshop and Peleon Device Management
-<https://www.pelion.com/docs/device-management> Peleon device management
+##  Blackstone Engineering IoT Workshop and Pelion Device Management
+<https://www.pelion.com/docs/device-management> Pelion device management
 
 <https://www.pelion.com/docs/device-management/current/service-api-references/account-management.html>
 
 <https://www.pelion.com/docs/device-management/current/user-account/api-keys.html>
+
+<https://docs.mbed.com/docs/mbed-os-handbook/en/latest/advanced/bootloader/>  Bootloader
+
+
+<https://cloud.mbed.com/docs/current/porting/building-r1-3-version-of-cloud-client-for-different-operating-systems.html>
+
 
 configure mbed
 <https://os.mbed.com/docs/mbed-os/v5.15/tools/manual-installation.html>
@@ -646,10 +653,7 @@ SVG + VUE + MQTT
 <https://github.com/owntracks/tools/blob/master/TLS/generate-CA.sh>
 
 
-<https://docs.mbed.com/docs/mbed-os-handbook/en/latest/advanced/bootloader/>  Bootloader
 
-
-<https://cloud.mbed.com/docs/current/porting/building-r1-3-version-of-cloud-client-for-different-operating-systems.html>
 
 <https://www.seeedstudio.com/Base-Shield-V2-p-1378.html>
 
