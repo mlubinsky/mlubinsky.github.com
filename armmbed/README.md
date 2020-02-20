@@ -8,6 +8,8 @@
 
 <https://os.mbed.com/teams/mbed-os-examples/code/mbed-os-example-pelion/> . (Feb 5 2020)
 
+<https://www.pelion.com/docs/device-management/current/connecting/device-management-client-tutorials.html>
+
 <https://github.com/ARMmbed/mbed-cloud-client>
 
 <https://github.com/ARMmbed/mbed-cloud-client-example>
