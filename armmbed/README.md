@@ -1,7 +1,14 @@
 ## Pelion Device Management
 
+<https://www.pelion.com/docs/device-management/current/connecting/tutorial-pelion-mbedos.html>
+
+<https://www.pelion.com/docs/device-management/current/welcome/index.html>
+
+<https://www.pelion.com/docs/device-management/current/connecting/mbed-os.html>
+
 <https://os.mbed.com/teams/mbed-os-examples/code/mbed-os-example-pelion/>
 
+<https://github.com/ARMmbed/mbed-cloud-client>
 
 
 <https://www.pelion.com/docs/device-management/current/connecting/mbed-os.html>
