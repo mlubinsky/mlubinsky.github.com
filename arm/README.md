@@ -74,6 +74,13 @@ to clear/reset a bit – сбросить бит в 0 (reset – фишка да
 to toggle a bit – поменять значение бита на противоположное (см. пример в начале статьи)
 ```
 
+### Sound
+
+<https://arxiv.org/pdf/1711.07128.pdf>
+
+ 
+
+
 ### MBed OS   send data to TreasureData
 
 <http://austinblackstoneengineering.com/how-to-send-data-from-mbed-os-to-treasure-data-pelion-data/>
