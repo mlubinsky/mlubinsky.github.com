@@ -2,7 +2,6 @@
 
 <https://os.mbed.com/teams/mbed-os-examples/code/mbed-os-example-pelion/>
 
-<https://github.com/ARMmbed/mbed-bootloader/>
 
 
 <https://www.pelion.com/docs/device-management/current/connecting/mbed-os.html>
@@ -16,16 +15,24 @@ To work with the Device Management Client example application, you need:
 * An API key (with Administrators group privilages) for your Device Management account.
 * Updated DAPLink software (version 250 or later), if your board uses DAPLink.
 
+<https://os.mbed.com/pelion-free-tier/>
+
+### Bootloader
+<https://github.com/ARMmbed/mbed-bootloader/>
+
+<https://docs.mbed.com/docs/mbed-os-handbook/en/latest/advanced/bootloader/> Bootloader
+
 #### Clone the embedded application's GitHub repository to your local computer and navigate to the new folder:
+```
 mbed import https://github.com/ARMmbed/mbed-cloud-client-example
 cd mbed-cloud-client-example
-
+```
 #### Configure Mbed CLI to use your Device Management account and board:
-
+```
 mbed config -G CLOUD_SDK_API_KEY <API_KEY>
 mbed target <MCU>
 mbed toolchain GCC_ARM
-
+```
 #### Use Mbed CLI to download a developer certificate and to create an update-related configuration for your device
 mbed device-management init -d arm.com --model-name example-app --force -q
 
@@ -79,3 +86,41 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 <https://os.mbed.com/guides/connect-device-to-pelion/1/?board=ST-Discovery-F413H> .     Pelion
 
 
+## Mbed Studio IDE
+
+<https://os.mbed.com/studio/> michael.lybins@a Vanti..7!
+
+## Mbed CLI
+
+<https://os.mbed.com/docs/mbed-os/v5.15/tools/manual-installation.html>
+
+<https://os.mbed.com/docs/mbed-os/v5.15/tools/working-with-mbed-cli.html>
+
+
+## Mbed in Docker
+
+<https://hub.docker.com/r/mbedos/mbed-os-env> official docker from ARM
+
+
+### COM port apps
+
+#### screen
+```
+ ls /dev/tt*
+ screen /dev/tty.board_name 115200
+``` 
+#### CoolTerm
+
+http://freeware.the-meiers.org/
+
+https://learn.sparkfun.com/tutorials/terminal-basics/coolterm-windows-mac-linux
+
+#### Cornflake
+http://tomgerhardt.com/Cornflake/
+
+#### minicom
+```
+ brew install minicom
+ ls /dev/tty.usb*      # find the tty name
+ minicom -D /dev/tty.usbmodem14412
+``` 
