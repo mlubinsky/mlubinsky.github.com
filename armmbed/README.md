@@ -126,7 +126,7 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 
 #### screen
 ```
- ls /dev/tt*
+ ls /dev/tty.usb* 
  screen /dev/tty.board_name 115200
 ``` 
 #### CoolTerm
