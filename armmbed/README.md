@@ -95,7 +95,9 @@ HTTPS library - Send data directly to the Treasure Data REST API.
 Fluentd using fluent logger library - Send data to a hosted Fluentd instance that aggregates and forwards the data on to your treasure data account.
 
 #### ST-Discovery-F413H
-<https://os.mbed.com/platforms/ST-Discovery-F413H/>
+
+ 
+<https://os.mbed.com/platforms/ST-Discovery-F413H/>. Pelion Device Ready
 
 <https://ide.mbed.com/compiler/#nav:/mbed-os-example-wifi-DISCO/main.cpp;>
 
