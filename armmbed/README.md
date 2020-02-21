@@ -177,12 +177,17 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 
 <https://github.com/ARMmbed/mbed-cli-osx-installer/>
 ```
-mbed new .  // will create file .med , mbed-os.lib mbed_app.json mbed_settings.py and folder mbed-os
-mbed add https://github.com/ARMmbed/mbed-cloud-client
+$ mbed new .  // will create file .med , mbed-os.lib mbed_app.json mbed_settings.py and folder mbed-os
+$ mbed add https://github.com/ARMmbed/mbed-cloud-client
 
-mbed compile
+$ mbed compile
 The Mbed OS tools in this program require the following Python modules: pyusb
        You can install all missing modules by running "pip install -r requirements.txt" in "/mnt/sensor2cloud/mbed-os"
+       
+$ mbed deploy
+[mbed] Updating library "mbed-cloud-client" to rev #7b583acf30ca (tag: 4.3.0)
+[mbed] Updating library "mbed-os" to rev #e642a7d8b360 (tags: latest, mbed-os-5.15.1)
+[mbed] Auto-installing missing Python modules (pyusb)...
 ```
 ## Mbed in Docker
 
