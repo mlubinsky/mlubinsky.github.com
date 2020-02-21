@@ -82,6 +82,8 @@ mbed device-management init -d arm.com --model-name example-app --force -q
 
 <https://os.mbed.com/docs/mbed-os/v5.15/mbed-os-pelion/send-data-securely-to-arm-treasure-data.html>
 
+https://github.com/ARMmbed/mbed-cli-osx-installer/
+
 ## Austin Blackstone 
 <http://austinblackstoneengineering.com/how-to-send-data-from-mbed-os-to-treasure-data-pelion-data/>
 
@@ -96,6 +98,8 @@ Takuya Kitazawa (a.k.a. takuti) is an engineer working on machine learning, data
 <https://takuti.me/note/mbed-simulator-td/>
 
 <https://support.treasuredata.com/hc/en-us/articles/360012567313-Data-Ingestion-from-Mbed-OS-HTTP-over-Wi-Fi->
+
+<https://support.treasuredata.com/hc/en-us/articles/360034799633-Data-Ingestion-Using-the-Treasure-Data-MQTT-Broker-Experimental>
 
 HTTPS library - Send data directly to the Treasure Data REST API.
 
@@ -121,6 +125,7 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 
 <https://os.mbed.com/docs/mbed-os/v5.15/tools/working-with-mbed-cli.html>
 
+<https://github.com/ARMmbed/mbed-cli-osx-installer/>
 
 ## Mbed in Docker
 
