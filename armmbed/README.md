@@ -176,7 +176,10 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 <https://os.mbed.com/docs/mbed-os/v5.15/tools/working-with-mbed-cli.html>
 
 <https://github.com/ARMmbed/mbed-cli-osx-installer/>
-
+``
+mbed new .  // will create file .med  and folder mbed-os
+mbed add https://github.com/ARMmbed/mbed-cloud-client
+```
 ## Mbed in Docker
 
 <https://hub.docker.com/r/mbedos/mbed-os-env> official docker from ARM
