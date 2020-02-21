@@ -96,10 +96,11 @@ https://github.com/ARMmbed/mbed-cli-osx-installer/
 
 <https://os.mbed.com/platforms/ST-Nucleo-H743ZI2/> Pelion Device Ready  
 
-mbed_app.json:
+<https://github.com/BlackstoneEngineering/aiot-workshop/blob/master/mbed_app.json>.  has this
 ```
 "NUCLEO_H743ZI2": {
             "target.network-default-interface-type"     : "ETHERNET",
+            "target.bootloader_img"                     : "tools/mbed-bootloader-nucleo_h743-internal-no-rot.bin",
 ```
 Takuya Kitazawa (a.k.a. takuti) is an engineer working on machine learning, data science, and product development at Arm Treasure Data. 
 
@@ -125,6 +126,14 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 
 <https://os.mbed.com/guides/connect-device-to-pelion/1/?board=ST-Discovery-F413H> .     Pelion
 
+<https://ide.mbed.com/compiler/#nav:/pelion-example-common/mbed_app.json;>
+
+```
+"DISCO_F413ZH": {
+      "target.network-default-interface-type"     : "WIFI", 
+      "target.bootloader_img"                     : "bootloader/mbed-bootloader-DISCO_F413ZH.bin",
+
+```
 
 ## Mbed Studio IDE
 
