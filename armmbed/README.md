@@ -34,6 +34,11 @@ To work with the Device Management Client example application, you need:
 
 <https://docs.mbed.com/docs/mbed-os-handbook/en/latest/advanced/bootloader/> Bootloader
 
+
+### Pelion Certificates
+
+<https://www.pelion.com/docs/device-management/current/provisioning-process/certificates-and-certificate-authorities.html>
+
 #### Clone the embedded application's GitHub repository to your local computer and navigate to the new folder:
 
 <https://github.com/ARMmbed/mbed-cloud-client-example>
