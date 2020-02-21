@@ -1,3 +1,10 @@
+$ sw_vers
+```
+ProductName:	Mac OS X
+ProductVersion:	10.14.6
+BuildVersion:	18G95
+```
+
 <https://github.com/appalaszynski/mac-setup>
 ```
 ==> python
