@@ -3,6 +3,8 @@
 
 <https://github.com/mlubinsky-arm/sensor2cloud>
 
+<https://github.com/ARMmbed/mbed-cli/issues/894>
+
 ## Forum
 <https://forums.mbed.com/>
 
