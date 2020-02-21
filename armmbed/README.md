@@ -5,6 +5,8 @@
 
 ## Pelion Device Management
 
+<https://www.pelion.com/docs/device-management/current/provisioning-process/provisioning-development-devices.html>
+
 <https://www.pelion.com/docs/device-management/current/connecting/tutorial-pelion-mbedos.html>
 
 <https://www.pelion.com/docs/device-management/current/welcome/index.html>
