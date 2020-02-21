@@ -1,3 +1,6 @@
+## Forum
+<https://forums.mbed.com/>
+
 ## Pelion Device Management
 
 <https://www.pelion.com/docs/device-management/current/connecting/tutorial-pelion-mbedos.html>
