@@ -92,9 +92,15 @@ https://github.com/ARMmbed/mbed-cli-osx-installer/
 ## Austin Blackstone 
 <http://austinblackstoneengineering.com/how-to-send-data-from-mbed-os-to-treasure-data-pelion-data/>
 
+<https://github.com/BlackstoneEngineering/aiot-workshop>
 
 <https://os.mbed.com/platforms/ST-Nucleo-H743ZI2/> Pelion Device Ready  
 
+mbed_app.json:
+```
+"NUCLEO_H743ZI2": {
+            "target.network-default-interface-type"     : "ETHERNET",
+```
 Takuya Kitazawa (a.k.a. takuti) is an engineer working on machine learning, data science, and product development at Arm Treasure Data. 
 
 <https://github.com/takuti/mbed-os-example-treasure-data>
