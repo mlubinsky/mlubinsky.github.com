@@ -104,6 +104,34 @@ https://github.com/ARMmbed/mbed-cli-osx-installer/
             "target.network-default-interface-type"     : "ETHERNET",
             "target.bootloader_img"                     : "tools/mbed-bootloader-nucleo_h743-internal-no-rot.bin",
 ```
+
+```
+Mbed Bootloader
+No Update image
+[DBG ] Active firmware up-to-date
+booting...
+Hello ...
+Start Device Management Client
+Using hardcoded Root of Trust, not suitable for production use.
+Starting developer flow
+Developer credentials already exist, continuing..
+Application ready. Build at: Feb 21 2020 10:38:16
+Mbed OS version 99.99.99
+mcc_platform_interface_connect()
+Connecting with interface: Ethernet
+NSAPI_STATUS_CONNECTING
+NSAPI_STATUS_GLOBAL_UP
+IP: 192.168.1.5
+Network initialized, registering...
+Client registered
+Endpoint Name: 01706912e912000000000001001b776d
+Device Id: 01706912e912000000000001001b776d
+temp:0.0000,humidity:0.0000,pressure:0.0000
+temp:0.0000,humidity:480000000.0000,pressure:2.0000
+temp:0.0000,humidity:480000000.0000,pressure:2.0000
+temp:0.0000,humidity:480000000.0000,pressure:2.0000
+```
+
 Takuya Kitazawa (a.k.a. takuti) is an engineer working on machine learning, data science, and product development at Arm Treasure Data. 
 
 <https://github.com/takuti/mbed-os-example-treasure-data>
