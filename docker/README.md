@@ -5,6 +5,8 @@
 
 ## Docker
 
+<https://pythonspeed.com/docker/>
+
 <https://habr.com/ru/company/ruvds/blog/488668/> 
 
 <https://youtu.be/zJ6WbK9zFpI> . Docker for Beginners: Full Course
