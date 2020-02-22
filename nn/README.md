@@ -8,6 +8,8 @@
 
 https://math.mit.edu/ennui/ . Elegant NN UI
 
+<https://www.youtube.com/watch?v=WsFasV46KgQ&feature=youtu.be> . Why sigmoid?
+
 <https://habr.com/ru/post/482794/>
 
 <http://introtodeeplearning.com/>
