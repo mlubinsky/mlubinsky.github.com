@@ -16,6 +16,8 @@
 
 <https://meaningness.com/metablog/how-to-think> how to think
 
+<http://modernlib.net/books/lem_stanislav/osmotr_na_meste/read/> Lem Stanislaw
+
 
 LastPass KeePass, PasswordSafe, minykeypass - password managers 
 
