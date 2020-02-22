@@ -8,3 +8,6 @@
 
 
 <https://github.com/mljar/mljar-studio> MLJAR Studio is an Interactive Computing Platform for Humans.
+
+
+<https://github.com/forbesmyester/esqlate>  Build minimum viable admin panels quickly with just SQL
