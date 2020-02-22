@@ -12,6 +12,9 @@
 
 <https://habr.com/ru/post/483078/>
 
+<https://rlpyt.readthedocs.io/en/latest/>
+
+
 <https://arxiv.org/abs/1911.08265> . Algo for Go, Chess, etc wich beats AlphaZero
 
 <https://www.youtube.com/watch?v=gTNNXi9ApVU>
