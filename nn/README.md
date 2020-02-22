@@ -53,6 +53,9 @@ https://stepik.org/lesson/210100/step/1?unit=183577 .   STEPIC class
 
 <http://tkipf.github.io/graph-convolutional-networks/>  GRAPH CONVOLUTIONAL NETWORKS
 
+
+<http://ncollins.github.io/blog/2014/02/10/a-handwavey-explanation-of-the-metropolis-hastings-algorithm/>
+
 <https://github.com/reshamas/fastai_deeplearn_part1> .  FastAI
 
 <https://fullstackdeeplearning.com/march2019> . online course
