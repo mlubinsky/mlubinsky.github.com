@@ -10,6 +10,8 @@
 
 <https://os.mbed.com/docs/mbed-os/v5.15/tools/index.html>
 
+<https://www.rlocman.ru/review/article.html?di=600377> Kalman filter
+
 ## Pelion Device Management
 
 <https://www.pelion.com/docs/device-management/current/provisioning-process/provisioning-development-devices.html>
