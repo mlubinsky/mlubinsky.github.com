@@ -7,6 +7,8 @@
 
 <https://leanpub.com/bookstore/book> 
 
+<https://leiradel.github.io/2011/10/24/Auto-Vectorization-5.html>
+
 <https://www.onlinegdb.com/> . это браузерный компилятор, интерпретатор и отладчик. Он поддерживает 20 языков программирования, включая C, C++, Python, Ruby, C#, Swift и JavaScript.
 
 <https://habr.com/ru/post/476790/>  code streaming from cool programmers!
