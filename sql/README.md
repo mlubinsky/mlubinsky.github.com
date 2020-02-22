@@ -2,6 +2,8 @@
 
 <https://www.db-fiddle.com/>
 
+<https://research.neustar.biz/2014/05/19/writing-analytics-sql-with-common-table-expressions/> CTE for analytics
+
 <https://habr.com/ru/company/ruvds/blog/487878/> 
 
 <https://winand.at/newsletter/2019-12/partiql-microsoft-licenses-volcano-model>
