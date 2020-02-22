@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://www.deeplearningbook.org/> 
+
 <https://www.newworldai.com/advanced-deep-learning-course-deepmind/> . Youtube lectures
 
 <https://thinc.ai/>
