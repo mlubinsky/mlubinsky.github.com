@@ -1,12 +1,14 @@
 ## GUI
 
 <https://git-fork.com/> Fork: UI for Git
-<https://www.sublimemerge.com/>  Git Client, from the makers of Sublime Text
+<https://www.sublimemerge.com/>  Git UI Client, from the makers of Sublime Text
 
 
 <https://rogerdudler.github.io/git-guide/>
 
 <https://learngitbranching.js.org/>
+
+<http://sethrobertson.github.io/GitPostProduction/gpp.html>
 
 <https://serokell.io/blog/comparison-of-github-and-gitlab> github vs gitlab
 
