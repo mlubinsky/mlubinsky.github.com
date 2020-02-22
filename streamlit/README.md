@@ -16,3 +16,5 @@
 <https://www.youtube.com/watch?v=0RihZNdQc7k&feature=youtu.be> . D-tail
 
 <https://www.udemy.com/course/plotly-dash/>
+
+<https://www.youtube.com/channel/UC-pBvv8mzLpj0k-RIbc2Nog>
