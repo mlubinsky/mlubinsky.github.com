@@ -2,6 +2,8 @@
 
 <https://towardsdatascience.com/tour-of-python-itertools-2af84db18a5e> itertools
 
+<https://medium.com/analytics-vidhya/6-exceptionally-common-pitfalls-of-python-exception-handling-44871d6afbc7> Error handling
+
 ```
 import sys
 print(sys.prefix) # '/System/Library/Frameworks/Python.framework/Versions/3.5'
