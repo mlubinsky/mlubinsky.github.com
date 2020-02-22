@@ -13,7 +13,7 @@
 <https://github.com/forbesmyester/esqlate>  Build minimum viable admin panels quickly with just SQL
 
 
-<https://www.youtube.com/watch?v=0RihZNdQc7k&feature=youtu.be> . D-tail
+<https://www.youtube.com/watch?v=0RihZNdQc7k> D-tail
 
 <https://www.udemy.com/course/plotly-dash/>
 
