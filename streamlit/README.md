@@ -4,6 +4,8 @@ pip install streamlit
 streamlit run [filename]
 
 streamlit hello
+
+streamlit run your_script.py [-- script args]
 ```
 
 <https://docs.streamlit.io/>
