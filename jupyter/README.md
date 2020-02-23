@@ -2,6 +2,17 @@
 
 <https://habr.com/ru/post/485318/> Добавляем в Jupyter Notebooks красоту и интерактивность
 
+# Jupyter Pandas NumPy Scikit
+
+<https://towardsdatascience.com/pandas-tips-that-will-save-you-hours-of-head-scratching-31d8572218c9>
+
+<https://medium.com/jbennetcodes/how-to-use-pandas-to-access-databases-e4e74e6a329e> . Access Databases from Panda
+
+<https://kanoki.org/2020/01/21/pandas-dataframe-filter-with-multiple-conditions/> filter dataframes
+
+<https://towardsdatascience.com/integrate-jupyter-into-your-data-pipeline-9a02fab3cee5>
+
+<https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
 ```
 jupyter notebook
 http://localhost:8888/tree
@@ -111,25 +122,9 @@ Pandas supports two parquet implementations, fastparquet and pyarrow. They both 
 
 
 
-# Jupyter Pandas NumPy Scikit
 
-<https://towardsdatascience.com/pandas-tips-that-will-save-you-hours-of-head-scratching-31d8572218c9>
 
-<https://medium.com/jbennetcodes/how-to-use-pandas-to-access-databases-e4e74e6a329e> . Access Databases from Panda
 
-<https://kanoki.org/2020/01/21/pandas-dataframe-filter-with-multiple-conditions/> filter dataframes
-
-<https://towardsdatascience.com/integrate-jupyter-into-your-data-pipeline-9a02fab3cee5>
-
-<https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
-
-### Time series
-
-<https://www.dataquest.io/blog/tutorial-time-series-analysis-with-pandas/> . Time Series
-
-<https://chrisalbon.com/python/data_wrangling/pandas_time_series_basics/>
-
-<https://machinelearningmastery.com/time-series-data-visualization-with-python/>
 
 
 <https://realpython.com/python-statistics/>
@@ -179,6 +174,10 @@ https://www.reddit.com/r/Python/comments/cop2cr/new_data_visualization_with_pyth
 ## Plotting the time series
 
 
+<https://www.dataquest.io/blog/tutorial-time-series-analysis-with-pandas/> . Time Series
+
+<https://chrisalbon.com/python/data_wrangling/pandas_time_series_basics/>
+
 <https://machinelearningmastery.com/time-series-data-visualization-with-python/>
 
 <https://jakevdp.github.io/PythonDataScienceHandbook/03.11-working-with-time-series.html>
@@ -188,7 +187,8 @@ https://www.reddit.com/r/Python/comments/cop2cr/new_data_visualization_with_pyth
 The Series Pandas object provides an interpolate() function to interpolate missing values
 
 Between time:
-https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.between_time.html
+<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.between_time.html>
+
 https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.between_time.html#pandas.DataFrame.between_time
 ```
 from datetime import datetime
