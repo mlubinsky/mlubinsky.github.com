@@ -1,3 +1,9 @@
+```
+pip install streamlit
+
+streamlit run [filename]
+```
+
 <https://docs.streamlit.io/>
 
 <https://www.streamlit.io/>
