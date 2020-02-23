@@ -123,7 +123,11 @@ Pandas supports two parquet implementations, fastparquet and pyarrow. They both 
 
 <https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
 
+### Time series
+
 <https://www.dataquest.io/blog/tutorial-time-series-analysis-with-pandas/> . Time Series
+
+<https://chrisalbon.com/python/data_wrangling/pandas_time_series_basics/>
 
 <https://realpython.com/python-statistics/>
 
