@@ -129,6 +129,9 @@ Pandas supports two parquet implementations, fastparquet and pyarrow. They both 
 
 <https://chrisalbon.com/python/data_wrangling/pandas_time_series_basics/>
 
+<https://machinelearningmastery.com/time-series-data-visualization-with-python/>
+
+
 <https://realpython.com/python-statistics/>
 
 <https://realpython.com/pandas-python-explore-dataset/>
