@@ -5,6 +5,11 @@ ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
 
+## Windows managers for Mac
+<https://magnet.crowdcafe.com/> Magnet 
+
+<https://setapp.com/apps/mosaic> Mosaic
+
 <https://github.com/appalaszynski/mac-setup>
 ```
 ==> python
@@ -61,7 +66,7 @@ JAVA_HOME="$(/usr/libexec/java_home --version 1.8)" exec "/usr/local/Cellar/kafk
 
 ```
 
-<https://magnet.crowdcafe.com/> Magnet - windows manager for Mac
+
 
 <https://news.ycombinator.com/item?id=21253850>
 
