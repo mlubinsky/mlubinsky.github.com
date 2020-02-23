@@ -27,6 +27,9 @@ streamlit run your_script.py [-- script args]
 ## DeepLearning Book
 <https://www.deeplearningbook.org/>
 
+<https://fluxml.ai/> .  Julia Flux
+
+
 ## D-Tale
 <https://www.youtube.com/watch?v=0RihZNdQc7k> D-tail
 
