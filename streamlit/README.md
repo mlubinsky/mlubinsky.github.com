@@ -1,6 +1,8 @@
 ```
 pip install streamlit
 
+streamlit config show
+
 streamlit run [filename]
 
 streamlit hello
