@@ -2,6 +2,8 @@
 pip install streamlit
 
 streamlit run [filename]
+
+streamlit hello
 ```
 
 <https://docs.streamlit.io/>
