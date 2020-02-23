@@ -1,6 +1,6 @@
-<https://www.streamlit.io/>
+<https://docs.streamlit.io/>
 
-<https://www.deeplearningbook.org/>
+<https://www.streamlit.io/>
 
 <https://habr.com/ru/post/473196/>
 
@@ -11,6 +11,9 @@
 
 
 <https://github.com/forbesmyester/esqlate>  Build minimum viable admin panels quickly with just SQL
+
+## DeepLearning Book
+<https://www.deeplearningbook.org/>
 
 ## D-Tale
 <https://www.youtube.com/watch?v=0RihZNdQc7k> D-tail
