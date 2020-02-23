@@ -1,5 +1,7 @@
 <https://go101.org/article/101.html> 
 
+<https://tour.golang.org/welcome/1> Go playground
+
 <https://play.golang.org/p/Irqxm0okfkt> .  Go playgrounds
 
 <http://notes.eatonphil.com/interpreting-go.html> Go internals
