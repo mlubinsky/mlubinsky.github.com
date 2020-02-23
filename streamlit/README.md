@@ -12,8 +12,16 @@
 
 <https://github.com/forbesmyester/esqlate>  Build minimum viable admin panels quickly with just SQL
 
-
+## D-Tale
 <https://www.youtube.com/watch?v=0RihZNdQc7k> D-tail
+
+<https://github.com/man-group/dtale>
+
+coingecko python wrapper: <https://github.com/man-c/pycoingecko>
+
+coingecko api search: <https://www.coingecko.com/en/api>
+
+## Plotly
 
 <https://www.udemy.com/course/plotly-dash/>
 
