@@ -1,6 +1,6 @@
 <https://queue.acm.org/pastissues.cfm> ACM transactions
 
-<https://habr.com/ru/company/ua-hosting/blog/487540/> . Meadata management
+<https://habr.com/ru/company/ua-hosting/blog/487540/> . Metadata management
 
 <https://news.ycombinator.com/item?id=22011743>
 
@@ -13,6 +13,8 @@
 <http://shop.oreilly.com/product/0636920073994.do>  Book: Streaming System
 
 <https://engineering.grab.com/plumbing-at-scale>
+
+<https://debezium.io/blog/2020/02/10/event-sourcing-vs-cdc/>
 
 ## Hexagonal Architecture
 <https://medium.com/@animeshgaitonde/hexagonal-architecture-principles-practical-example-in-java-364bb2e50075> 
