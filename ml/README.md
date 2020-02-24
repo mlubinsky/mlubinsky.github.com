@@ -2,6 +2,8 @@
 
 <https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/>
 
+<https://jacobgil.github.io/deeplearning/activelearning>
+
 <https://mlcourse.ai/> Russian
 
 <https://dlcourse.ai/> Russsian
