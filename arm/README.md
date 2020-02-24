@@ -4,6 +4,8 @@
 
 Digi-key or Mouser- you can search MCUs by Architecture, peripherals, memory and so on
 
+<https://www.rlocman.ru/review/article.html?di=600377> Kalman filter
+
 <http://mymcu.ru/>
 
 <https://www.reddit.com/r/embedded/comments/f2psv9/how_to_start_with_stm32/>
