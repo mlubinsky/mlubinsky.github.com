@@ -11,7 +11,9 @@ BuildVersion:	18G95
 
 <https://support.apple.com/guide/mac-help/work-in-multiple-spaces-mh14112/mac>
 
-https://appleinsider.com/articles/18/10/12/how-to-use-spaces-apples-mostly-ignored-macos-mojave-productivity-feature
+<https://support.apple.com/guide/mac-help/open-windows-spaces-mission-control-mh35798/10.15/mac/10.15>
+
+<https://appleinsider.com/articles/18/10/12/how-to-use-spaces-apples-mostly-ignored-macos-mojave-productivity-feature>
 
 f you have a trackpad, swipe upwards with four fingers. This gets you the Mac's Expose feature where windows from every open application are shown to you in thumbnails. However, at the very top of the screen lies the Spaces feature. 
 
