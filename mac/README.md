@@ -5,6 +5,21 @@ ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
 
+## Spaces - Virtual desktops
+
+<https://www.howtogeek.com/180677/mission-control-101-how-to-use-multiple-desktops-on-a-mac/>
+
+<https://support.apple.com/guide/mac-help/work-in-multiple-spaces-mh14112/mac>
+
+https://appleinsider.com/articles/18/10/12/how-to-use-spaces-apples-mostly-ignored-macos-mojave-productivity-feature
+
+f you have a trackpad, swipe upwards with four fingers. This gets you the Mac's Expose feature where windows from every open application are shown to you in thumbnails. However, at the very top of the screen lies the Spaces feature. 
+
+You can also get to this by holding the Control key and tapping the up arrow
+
+ you can also switch between spaces with a keystroke: Control and 1 takes you to Desktop 1, Control and 2 to Desktop 2 and so on. You can move to any of your first 10 spaces this way: to get to 10 you press Control-0. If this isn't working for you, check System Preferences, Keyboard, Shortcuts. Select Mission Control and you will see that some or all Spaces shortcuts have been unchecked.
+
+
 ## Windows managers for Mac
 <https://magnet.crowdcafe.com/> Magnet 
 
