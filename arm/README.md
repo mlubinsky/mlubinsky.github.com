@@ -2,6 +2,8 @@
 
 <https://www.embeddedrelated.com/showarticle/1324.php> .  So you want to be an embedded developer
 
+Digi-key or Mouser- you can search MCUs by Architecture, peripherals, memory and so on
+
 <http://mymcu.ru/>
 
 <https://www.reddit.com/r/embedded/comments/f2psv9/how_to_start_with_stm32/>
