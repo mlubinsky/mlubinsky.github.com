@@ -12,6 +12,8 @@ https://math.mit.edu/ennui/ . Elegant NN UI
 
 <https://www.youtube.com/watch?v=WsFasV46KgQ&feature=youtu.be> . Why sigmoid?
 
+<https://www.quora.com/Whats-the-coolest-thing-youve-done-with-Python/answer/Neeramitra-Reddy?ch=99&share=14458bef&srid=NH5O>
+
 <https://habr.com/ru/post/482794/>
 
 <http://introtodeeplearning.com/>
