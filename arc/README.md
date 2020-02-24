@@ -16,6 +16,8 @@
 
 <https://debezium.io/blog/2020/02/10/event-sourcing-vs-cdc/>
 
+<https://tech.wayfair.com/data-science/2020/02/how-to-enable-data-scientists-to-stop-managing-etl-pipelines-and-get-back-to-doing-data-science-part-i/>
+
 ## Hexagonal Architecture
 <https://medium.com/@animeshgaitonde/hexagonal-architecture-principles-practical-example-in-java-364bb2e50075> 
 
