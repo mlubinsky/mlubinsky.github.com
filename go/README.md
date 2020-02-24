@@ -134,6 +134,8 @@ https://www.reddit.com/r/golang/comments/7bpvua/go_error_handling_is_really_conf
 https://habr.com/ru/company/mailru/blog/463063/ .  Interface
 
 ### Go Web 
+<https://habr.com/ru/post/489740/> .  HTTP
+
 https://news.ycombinator.com/item?id=20704993
 https://github.com/thewhitetulip/web-dev-golang-anti-textbook
 https://ryanmccue.ca/how-to-create-restful-api-golang-standard-library/
