@@ -403,6 +403,8 @@ CMSIS-NN code: <https://github.com/ARM-software/ML-KWS-for-MCU/blob/master/Deplo
 
 <https://fosdem.org/2020/schedule/event/iottensorflow/>
 
+<https://gilberttanner.com/blog/convert-your-tensorflow-object-detection-model-to-tensorflow-lite>
+
 <https://developer.arm.com/solutions/machine-learning-on-arm/developer-material/how-to-guides/build-arm-cortex-m-voice-assistant-with-google-tensorflow-lite/single-page>
 
 <https://github.com/uTensor/tf_microspeech> . source code for the article above
