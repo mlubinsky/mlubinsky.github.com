@@ -104,9 +104,25 @@ Hive Version for emr-5.21.1 is: 2.3.4
 
 <https://docs.aws.amazon.com/AmazonS3/latest/dev/optimizing-performance.html>
 
+
+## Boto3
+<https://stackoverflow.com/questions/36205481/read-file-content-from-s3-bucket-with-boto3>
+
 <https://boto3.amazonaws.com/v1/documentation/api/latest/index.html> Boto is  AWS  SDK for Python. It enables Python developers to create, configure, and manage AWS services, such as EC2 and S3.
 
 <https://realpython.com/courses/python-boto3-aws-s3/> Boto
+
+<https://stackabuse.com/automating-aws-ec2-management-with-python-and-boto3/>
+
+Lambda example
+```
+  import os,sys
+  import boto3
+  from my_submodule.models MyModels
+  
+  def handler(event, context):
+    ..
+```
 
 Amazon S3 is a simple key-based object store. When you store data, you assign a unique object key that can later be used to retrieve the data. Keys can be any string, and they can be constructed to mimic hierarchical attributes. Alternatively, you can use S3 Object Tagging to organize your data across all of your S3 buckets and/or prefixes.
 
@@ -138,7 +154,7 @@ aws s3api list-objects --bucket adl-ohi --output json --query "[length(Contents[
 ]
 ```
 
-### Method 3: A Python Example
+### Method 3: A Python Example: boto3
  
 ```
 #!/usr/local/bin/python
@@ -201,17 +217,7 @@ total count:
 
 <http://veekaybee.github.io/2018/09/24/the-case-of-the-broken-lambda/>
 
-<https://stackabuse.com/automating-aws-ec2-management-with-python-and-boto3/>
 
-Lambda example
-```
-  import os,sys
-  import boto3
-  from my_submodule.models MyModels
-  
-  def handler(event, context):
-    ..
-```
 
 <https://www.expeditedssl.com/aws-in-plain-english>
 
