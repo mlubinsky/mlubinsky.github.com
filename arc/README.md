@@ -348,6 +348,8 @@ drive.io
 
 ## Big Data Architecture
 
+<https://github.com/common-workflow-language/common-workflow-language/wiki/Existing-Workflow-systems>
+
 <https://streamsets.com/blog/>
 
 <https://news.ycombinator.com/item?id=18508284>
