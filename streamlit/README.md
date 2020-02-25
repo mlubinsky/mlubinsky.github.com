@@ -1,12 +1,8 @@
 ```
 pip install streamlit
-
 streamlit config show
-
 streamlit run [filename]
-
 streamlit hello
-
 streamlit run your_script.py [-- script args]
 ```
 
