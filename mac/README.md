@@ -21,6 +21,9 @@ You can also get to this by holding the Control key and tapping the up arrow
 
  you can also switch between spaces with a keystroke: Control and 1 takes you to Desktop 1, Control and 2 to Desktop 2 and so on. You can move to any of your first 10 spaces this way: to get to 10 you press Control-0. If this isn't working for you, check System Preferences, Keyboard, Shortcuts. Select Mission Control and you will see that some or all Spaces shortcuts have been unchecked.
 
+## Japan
+
+<https://support.apple.com/guide/mac-help/international-fonts-display-correctly-mac-mchl14cc6599/mac>
 
 ## Windows managers for Mac
 <https://magnet.crowdcafe.com/> Magnet 
