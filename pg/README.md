@@ -50,6 +50,8 @@ https://habr.com/ru/post/481122/
 
 <https://habr.com/ru/post/479656/> ANALYZE TABLE statistics
 
+<https://habr.com/ru/post/488968/> Простое обнаружение проблем производительности в PostgreSQL
+<https://habr.com/ru/company/tensor/blog/488104/>
 
 <https://habr.com/ru/post/483460/> . Windows functions
 
