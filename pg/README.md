@@ -8,6 +8,8 @@ Materialize is a streaming data warehouse. Materialize accepts input data from a
 
 <https://materialize.io/docs/>
 
+<https://materialize.io/blog-olvm/>
+
 ## KeyDB
 
 <https://habr.com/ru/company/flant/blog/478404/>
