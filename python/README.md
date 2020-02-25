@@ -69,6 +69,9 @@ header.txt: SHIFT_JIS with confidence 0.99
 
 <https://pypi.org/project/chardet/>
 
+
+iconv -f SHIFT-JIS -t UTF-8 header.txt > header-UTF-8.txt
+
 ## Creating Python Package
 
 <https://realpython.com/courses/python-modules-packages/>
