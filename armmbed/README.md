@@ -1,5 +1,7 @@
 <https://codeplea.com/embedding-files-in-c-programs>
 
+<https://habr.com/ru/post/155203/> . WiFi 
+
 ### Online compiler
 <https://ide.mbed.com/compiler>
 
