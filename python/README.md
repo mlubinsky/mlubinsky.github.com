@@ -61,6 +61,14 @@ deactivate
 
 <https://github.com/thebjorn/pydeps> show dependency using graphviz
 
+
+## chardetect
+
+chardetect header.txt
+header.txt: SHIFT_JIS with confidence 0.99
+
+<https://pypi.org/project/chardet/>
+
 ## Creating Python Package
 
 <https://realpython.com/courses/python-modules-packages/>
