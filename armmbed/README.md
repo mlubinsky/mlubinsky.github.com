@@ -1,3 +1,5 @@
+<https://codeplea.com/embedding-files-in-c-programs>
+
 ### Online compiler
 <https://ide.mbed.com/compiler>
 
