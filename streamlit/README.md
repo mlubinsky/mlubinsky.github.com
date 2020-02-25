@@ -41,6 +41,8 @@ coingecko api search: <https://www.coingecko.com/en/api>
 
 ## Plotly
 
+<https://towardsdatascience.com/its-2019-make-your-data-visualizations-interactive-with-plotly-b361e7d45dc6>
+
 <https://www.udemy.com/course/plotly-dash/>
 
 <https://www.youtube.com/channel/UC-pBvv8mzLpj0k-RIbc2Nog>
