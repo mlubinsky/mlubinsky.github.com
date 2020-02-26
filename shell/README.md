@@ -1,14 +1,14 @@
  
 ### How linux works
 
-https://neilkakkar.com/unix.html 
+<https://neilkakkar.com/unix.html>
 
-https://likegeeks.com/linux-process-management/
+<https://likegeeks.com/linux-process-management/>
 
 
 ### CRON
-https://habr.com/ru/company/badoo/blog/465021/  cron etc processes PATH
-https://habr.com/ru/company/badoo/blog/468061/ .  CRON
+<https://habr.com/ru/company/badoo/blog/465021/>  cron etc processes PATH
+<https://habr.com/ru/company/badoo/blog/468061/> .  CRON
 
 ###  bash  
 
@@ -250,7 +250,7 @@ exit 0
 ###  Process supervisor 
 http://supervisord.org/index.html
 
-### Memory CPU</h2>
+### Memory CPU
 https://habrahabr.ru/company/badoo/blog/338226/
 https://blog.codecentric.de/en/2017/09/jvm-fire-using-flame-graphs-analyse-performance/
 https://waterprogramming.wordpress.com/2017/06/08/profiling-c-code-with-callgrind/
