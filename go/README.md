@@ -33,6 +33,9 @@ Go has block-level scoping.
 ## Go and databases
 <https://habr.com/ru/post/466459/> 
 <https://github.com/houqp/sqlvet>
+
+<https://johnpili.com/golang-sqlite-simple-example/>. SQLite
+
 <https://conroy.org/introducing-sqlc>
 <https://github.com/kyleconroy/sqlc>
 <https://habr.com/ru/company/oleg-bunin/blog/461935/> .  Postgres SQL
