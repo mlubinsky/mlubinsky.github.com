@@ -15,6 +15,8 @@
 
 <https://github.com/c1728p9/CameraOV528>
 
+<https://github.com/sarahmarshy/mbed-timelapse>
+
 <https://os.mbed.com/users/edodm85/notebook/ov7670-camera-module/>
 
 
