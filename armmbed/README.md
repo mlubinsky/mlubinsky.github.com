@@ -19,6 +19,7 @@
 
 <https://os.mbed.com/users/edodm85/notebook/ov7670-camera-module/>
 
+<https://developer.arm.com/solutions/machine-learning-on-arm/developer-material/how-to-guides/image-recognition-on-arm-cortex-m-with-cmsis-nn>  real-time image recognition  Arm Cortex-M7 processor, using Arm’s CMSIS-NN 
 
 ## Forum
 <https://forums.mbed.com/>
