@@ -8,9 +8,8 @@ Digi-key or Mouser- you can search MCUs by Architecture, peripherals, memory and
 
 <http://mymcu.ru/>
 
-<https://www.reddit.com/r/embedded/comments/f2psv9/how_to_start_with_stm32/>
 
-<https://www.youtube.com/channel/UCjnmZw3h4XnpK3e5D2jvIGA> STM32
+
 
 <https://www.artekit.eu/doc/guides/all-about-gpios/> GPIO
 
@@ -94,7 +93,14 @@ to toggle a bit – поменять значение бита на против
 
 <https://www.udemy.com/course/arduino-sbs-17gs/learn/lecture/6080362?start=0#overview>
 
->https://www.udemy.com/course/arduino-sbs-getting-serious/learn/lecture/6843784#overview>
+<https://www.udemy.com/course/arduino-sbs-getting-serious/learn/lecture/6843784#overview>
+
+## STM32
+<https://stm32-base.org/>
+
+<https://www.reddit.com/r/embedded/comments/f2psv9/how_to_start_with_stm32/>
+
+<https://www.youtube.com/channel/UCjnmZw3h4XnpK3e5D2jvIGA> STM32
 
 ### STM32F4 Cortex-M4 programming
 
