@@ -1,6 +1,6 @@
 <https://codeplea.com/embedding-files-in-c-programs>
 
-<https://habr.com/ru/post/155203/> . WiFi 
+<https://habr.com/ru/post/155203/> . WiFi extension
 
 ### Online compiler
 <https://ide.mbed.com/compiler>
@@ -8,6 +8,15 @@
 <https://github.com/mlubinsky-arm/sensor2cloud>
 
 <https://github.com/ARMmbed/mbed-cli/issues/894>
+
+## Camera
+
+<http://wiki.seeedstudio.com/Grove-Serial_Camera_Kit/>
+
+<https://github.com/c1728p9/CameraOV528>
+
+<https://os.mbed.com/users/edodm85/notebook/ov7670-camera-module/>
+
 
 ## Forum
 <https://forums.mbed.com/>
