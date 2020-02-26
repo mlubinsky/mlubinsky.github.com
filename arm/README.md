@@ -95,6 +95,16 @@ to toggle a bit – поменять значение бита на против
 
 <https://www.udemy.com/course/arduino-sbs-getting-serious/learn/lecture/6843784#overview>
 
+## ESP8266
+
+<https://habr.com/ru/company/coolrf/blog/235881/>
+
+<https://habr.com/ru/post/362623/>
+
+<https://esp8266.ru/>
+
+<https://www.esp8266.com/>
+
 ## STM32
 <https://stm32-base.org/>
 
