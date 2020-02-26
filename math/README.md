@@ -1,5 +1,7 @@
 <http://brilliant.org>
 
+<https://www.youtube.com/user/OpenLektorium/videos>
+
 <https://www.coursera.org/learn/statistical-mechanics/home/welcome>
 
 <https://betterexplained.com/articles/navigate-a-grid-using-combinations-and-permutations/>
