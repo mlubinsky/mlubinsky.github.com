@@ -2,6 +2,9 @@
 
 <https://pyvideo.org/pycon-hk-2018/industrial-machine-learning-pipelines-with-python-airflow.html> 
 
+DynamoDB
+<https://medium.com/searce/serverless-approval-mechanism-for-ml-pipeline-using-airflow-on-aws-ecosystem-5f91a8121749>
+
 The scheduler runs a DAG soon after (start_date + schedule_interval) is passed
 ```
 airflow list_dags
