@@ -30,6 +30,9 @@ Go has block-level scoping.
 
 <<https://news.ycombinator.com/item?id=21225401>>
 
+## Go channel
+<https://habr.com/ru/post/490336/>
+
 ## Go and databases
 <https://habr.com/ru/post/466459/> 
 <https://github.com/houqp/sqlvet>
