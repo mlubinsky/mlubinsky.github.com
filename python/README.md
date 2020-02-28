@@ -141,7 +141,15 @@ multiprocessing vs threading
 
 <https://habr.com/ru/company/otus/blog/490244/> .  ctypes
 
+### Requests lib
+
 <https://findwork.dev/blog/advanced-usage-python-requests-timeouts-retries-hooks/> . requests lib
+
+<https://requests.readthedocs.io/en/master/user/advanced/>
+
+<https://toolbelt.readthedocs.io/en/latest/>
+
+
 
 <https://florimond.dev/blog/articles/2018/10/reconciling-dataclasses-and-properties-in-python/> DataClasses
 
