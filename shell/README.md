@@ -5,6 +5,8 @@
 
 <https://likegeeks.com/linux-process-management/>
 
+## Linux tools
+>https://news.ycombinator.com/item?id=22438730>
 
 ### CRON
 <https://habr.com/ru/company/badoo/blog/465021/>  cron etc processes PATH
