@@ -499,6 +499,9 @@ The Deep Learning Revolution and Its Implications for Computer Architecture and 
 
 
 ## AI on embedded devices from Intel, NVidia, etc
+
+<https://www.informationweek.com/big-data/ai-machine-learning/engineering-tiny-machine-learning-for-the-edge/a/d-id/1336972>
+
 <https://habr.com/ru/post/473424/> . ARM - графические решения Mali-G57 Valhall и Mali-D37, нейропроцессоры Ethos-N57 и N37
 
 <https://habr.com/ru/company/1cloud/blog/472230/>
