@@ -64,6 +64,9 @@ To work with the Device Management Client example application, you need:
 <https://os.mbed.com/pelion-free-tier/>
 
 ### Bootloader
+
+<http://www.programmersought.com/article/605830579/>
+
 <https://github.com/ARMmbed/mbed-bootloader/>
 
 <https://docs.mbed.com/docs/mbed-os-handbook/en/latest/advanced/bootloader/> Bootloader
