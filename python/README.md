@@ -139,6 +139,8 @@ multiprocessing vs threading
 
 ```python -m json.tool my_json.json```
 
+<https://habr.com/ru/company/otus/blog/490244/> .  ctypes
+
 <https://florimond.dev/blog/articles/2018/10/reconciling-dataclasses-and-properties-in-python/> DataClasses
 
 <https://github.com/benfred/py-spy>  py-spy: Sampling profiler for Python programs
