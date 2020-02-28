@@ -243,6 +243,37 @@ inner join dev.test_active_exp_map A  ON NS.n <= REGEXP_COUNT(A.active_exp_map, 
 ```
 
 ###  JSON
+
+<https://blog.getdbt.com/how-to-unnest-arrays-in-redshift/>
+
+```
+create table dbt_jthandy.flatten_test (
+    order_id int, 
+    json_text varchar(1000)
+    )
+;
+
+insert into dbt_jthandy.flatten_test
+  (order_id, json_text) 
+values
+  (1, '{  
+     "items":[  
+        {  
+           "id":"fa4b6cd3-4719-4b97-848b-7f2025f5e693",
+           "quantity":1,
+           "sku":"M900353-SWB-RYL-2",
+           "list_price":60.0
+        },
+        {  
+           "id":"c39f9474-a278-4162-9cfa-aa068f4e1665",
+           "quantity":1,
+           "sku":"F033199-SWB-FWL-1",
+           "list_price":20.0
+        }
+     ]}')
+;
+```
+
 <https://sonra.io/2019/04/24/working-with-json-in-redshift-options-limitations-and-alternatives/>
 ```
 
