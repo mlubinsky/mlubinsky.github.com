@@ -243,6 +243,9 @@ inner join dev.test_active_exp_map A  ON NS.n <= REGEXP_COUNT(A.active_exp_map, 
 ```
 
 ###  JSON
+<https://docs.aws.amazon.com/redshift/latest/dg/json-functions.html>
+
+<https://popsql.com/learn-sql/redshift/how-to-query-a-json-column-in-redshift/>
 
 <https://blog.getdbt.com/how-to-unnest-arrays-in-redshift/>
 
