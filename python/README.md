@@ -141,6 +141,8 @@ multiprocessing vs threading
 
 <https://habr.com/ru/company/otus/blog/490244/> .  ctypes
 
+<https://findwork.dev/blog/advanced-usage-python-requests-timeouts-retries-hooks/> . requests lib
+
 <https://florimond.dev/blog/articles/2018/10/reconciling-dataclasses-and-properties-in-python/> DataClasses
 
 <https://github.com/benfred/py-spy>  py-spy: Sampling profiler for Python programs
