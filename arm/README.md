@@ -1133,6 +1133,9 @@ http://devblog.exmachina.fr/tutorial/2016/12/08/LPC1768-development-toolkit
 
 
 ## MQTT
+
+<https://habr.com/ru/company/advantech/blog/490346/>
+
 <https://github.com/hobbyquaker/awesome-mqtt>
 
 <http://mqtt.org/documentation>
