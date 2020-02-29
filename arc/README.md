@@ -10,6 +10,9 @@
 
 <https://atlas.apache.org/#/> Data Governance and Metadata framework for Hadoop
 
+<https://www.intermix.io/blog/14-data-pipelines-amazon-redshift/>
+
+
 <http://shop.oreilly.com/product/0636920073994.do>  Book: Streaming System
 
 <https://engineering.grab.com/plumbing-at-scale>
