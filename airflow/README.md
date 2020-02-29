@@ -7,6 +7,14 @@
 DynamoDB
 <https://medium.com/searce/serverless-approval-mechanism-for-ml-pipeline-using-airflow-on-aws-ecosystem-5f91a8121749>
 
+
+## Transfer
+
+<https://airflow.apache.org/docs/stable/_modules/airflow/operators/s3_file_transform_operator.html> S3 file transform
+
+<https://airflow.apache.org/docs/stable/_modules/airflow/operators/s3_to_redshift_operator.html> S3 -> Redshift
+
+
 The scheduler runs a DAG soon after (start_date + schedule_interval) is passed
 ```
 airflow list_dags
