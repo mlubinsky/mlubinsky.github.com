@@ -1,3 +1,8 @@
+<https://www.intermix.io/blog/14-data-pipelines-amazon-redshift/>
+
+<https://sonra.io/2018/01/01/using-apache-airflow-to-build-a-data-pipeline-on-aws/>
+
+
 <https://www.youtube.com/user/AmazonWebServices>
 
 <https://fivetran.com/blog/warehouse-benchmark>
