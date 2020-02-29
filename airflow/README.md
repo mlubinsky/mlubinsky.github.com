@@ -14,6 +14,8 @@ DynamoDB
 
 <https://airflow.apache.org/docs/stable/_modules/airflow/operators/s3_to_redshift_operator.html> S3 -> Redshift
 
+<https://sonra.io/2018/01/01/using-apache-airflow-to-build-a-data-pipeline-on-aws/>
+
 
 The scheduler runs a DAG soon after (start_date + schedule_interval) is passed
 ```
