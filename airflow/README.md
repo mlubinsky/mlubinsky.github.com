@@ -8,6 +8,8 @@ DynamoDB
 <https://medium.com/searce/serverless-approval-mechanism-for-ml-pipeline-using-airflow-on-aws-ecosystem-5f91a8121749>
 
 
+<https://www.astronomer.io/guides/templating/> template and macro
+
 ## Transfer
 
 <https://airflow.apache.org/docs/stable/_modules/airflow/operators/s3_file_transform_operator.html> S3 file transform
