@@ -43,6 +43,8 @@
 
 ### Kalman filter
 
+<https://towardsdatascience.com/the-curious-case-of-kalman-filters-f29c3d17b121>
+
 <https://habr.com/ru/post/166693/> 
 
 <https://habr.com/ru/post/120133/>
