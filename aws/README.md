@@ -112,7 +112,7 @@ Hive Version for emr-5.21.1 is: 2.3.4
 
 https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-uploading-files.html
 
-
+<https://realpython.com/python-boto3-aws-s3/>
 <https://realpython.com/courses/python-boto3-aws-s3/> Boto
 
 <https://stackabuse.com/automating-aws-ec2-management-with-python-and-boto3/>
