@@ -12,6 +12,7 @@
 
 <https://www.intermix.io/blog/14-data-pipelines-amazon-redshift/>
 
+<https://github.com/san089/goodreads_etl_pipeline>
 
 <http://shop.oreilly.com/product/0636920073994.do>  Book: Streaming System
 
