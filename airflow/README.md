@@ -10,6 +10,8 @@ DynamoDB
 <https://www.astronomer.io/guides/templating/> template and macro
 
 
+<https://www.udemy.com/course/the-ultimate-hands-on-course-to-master-apache-airflow/> . Udemy
+
 ## Bash operator
 
 <https://marclamberti.com/blog/airflow-bashoperator/>
