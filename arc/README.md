@@ -23,6 +23,13 @@
 
 <https://tech.wayfair.com/data-science/2020/02/how-to-enable-data-scientists-to-stop-managing-etl-pipelines-and-get-back-to-doing-data-science-part-i/>
 
+
+<https://imply.io/post/analytics-reference-architecture-for-iot>  Analytics refernce architecture for iot
+
+
+<https://tech.wayfair.com/data-science/2020/02/how-to-enable-data-scientists-to-stop-managing-etl-pipelines-and-get-back-to-doing-data-science-part-i/>
+
+
 ## Hexagonal Architecture
 <https://medium.com/@animeshgaitonde/hexagonal-architecture-principles-practical-example-in-java-364bb2e50075> 
 
