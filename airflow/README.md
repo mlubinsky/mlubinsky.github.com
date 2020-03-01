@@ -2,7 +2,6 @@
 
 <https://pyvideo.org/pycon-hk-2018/industrial-machine-learning-pipelines-with-python-airflow.html> 
 
-<https://sonra.io/2018/01/01/using-apache-airflow-to-build-a-data-pipeline-on-aws/> . from S3 to Redshift
 
 DynamoDB
 <https://medium.com/searce/serverless-approval-mechanism-for-ml-pipeline-using-airflow-on-aws-ecosystem-5f91a8121749>
@@ -10,13 +9,18 @@ DynamoDB
 
 <https://www.astronomer.io/guides/templating/> template and macro
 
+
+## Bash operator
+
+<https://marclamberti.com/blog/airflow-bashoperator/>
+
 ## Transfer
 
 <https://airflow.apache.org/docs/stable/_modules/airflow/operators/s3_file_transform_operator.html> S3 file transform
 
 <https://airflow.apache.org/docs/stable/_modules/airflow/operators/s3_to_redshift_operator.html> S3 -> Redshift
 
-<https://sonra.io/2018/01/01/using-apache-airflow-to-build-a-data-pipeline-on-aws/>
+<https://sonra.io/2018/01/01/using-apache-airflow-to-build-a-data-pipeline-on-aws/> .  S3 to Redshift
 
 
 The scheduler runs a DAG soon after (start_date + schedule_interval) is passed
