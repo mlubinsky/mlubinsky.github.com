@@ -106,6 +106,9 @@ to toggle a bit – поменять значение бита на против
 <https://www.esp8266.com/>
 
 ## STM32
+
+<https://habr.com/ru/post/490474/>
+
 <https://stm32-base.org/>
 
 <https://www.reddit.com/r/embedded/comments/f2psv9/how_to_start_with_stm32/>
