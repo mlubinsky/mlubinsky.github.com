@@ -43,6 +43,7 @@
 <https://docs.metaflow.org/introduction/what-is-metaflow>
 
 
+<https://itnext.io/1-year-of-event-sourcing-and-cqrs-fb9033ccd1c6>.  CQRS and Event Sourcing
 
 ## Distributed systems
 
