@@ -21,9 +21,21 @@ DynamoDB
 
 <https://airflow.apache.org/docs/stable/_modules/airflow/operators/s3_file_transform_operator.html> S3 file transform
 
+## S3 -> Redshift
 <https://airflow.apache.org/docs/stable/_modules/airflow/operators/s3_to_redshift_operator.html> S3 -> Redshift
 
 <https://sonra.io/2018/01/01/using-apache-airflow-to-build-a-data-pipeline-on-aws/> .  S3 to Redshift
+```
+copy product_tgt1
+from 's3://productdata/product_tgt/product_details.csv
+iam_role 'arn:aws:iam::<aws-account-id>:role/<role-name>'
+region 'us-east-2';
+
+ copy AAA.T_FACT
+from 's3://AAA-data-warehouse/facts_orc/AAA_device/date_key=2019-10-20/000000_0'
+ credentials 'aws_iam_role=arn:aws:iam::182333787270:role/RedShiftDevDataProcessingDevPrivileges'
+format as ORC
+```
 
 
 The scheduler runs a DAG soon after (start_date + schedule_interval) is passed
