@@ -1,4 +1,4 @@
-<https://stackoverflow.com/questions/36205481/read-file-content-from-s3-bucket-with-boto3>
+
 <https://www.slsmk.com/use-boto3-to-open-an-aws-s3-file-directly/>
 <https://www.slsmk.com/amazon-aws-tech-notes-and-articles/>
 
@@ -14,6 +14,12 @@ objs = boto3.client.list_objects(Bucket='my_bucket')
 ```
 
 ###  How to get the actual content of the AWS file
+
+/Users/mlubinsky/CODE/GIT/data-processing/src/main/python/utils/S3Utils.py
+```def read_contents_from_s3(bucket_name, bucket_key):```
+
+<https://stackoverflow.com/questions/36205481/read-file-content-from-s3-bucket-with-boto3>
+
  similarly to a open(filename).readlines():
  
  ```
@@ -60,8 +66,12 @@ def s3_read(source, profile_name=None):
     body = s3_object['Body']
     return body.read()
  ```
+### Write to S3 
  
- Delete file:
+ /Users/mlubinsky/CODE/GIT/data-processing/src/main/python/utils/S3Utils.py
+```def s3_copy_data(bucket_name, bucket_key, data):```
+
+###  Delete file:
  ```
  s3_resource.Object(second_bucket_name, first_file_name).delete()
  ```
