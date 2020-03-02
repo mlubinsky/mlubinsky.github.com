@@ -69,8 +69,13 @@ header.txt: SHIFT_JIS with confidence 0.99
 
 <https://pypi.org/project/chardet/>
 
-
 iconv -f SHIFT-JIS -t UTF-8 header.txt > header-UTF-8.txt
+
+<https://gist.github.com/clarkb7/3e7e43ab85717e81925656f70f5bae8d>
+
+## Binding
+
+<https://iscinumpy.gitlab.io/post/tools-to-bind-to-python/>
 
 ## Creating Python Package
 
