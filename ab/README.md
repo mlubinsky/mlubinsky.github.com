@@ -3,6 +3,8 @@
 
 <https://towardsdatascience.com/a-summary-of-udacity-a-b-testing-course-9ecc32dedbb1>
 
+<https://tech.showmax.com/2020/02/ab-testing-part1/> 
+
 <https://en.wikipedia.org/wiki/A/B_testing>
 
 <https://towardsdatascience.com/a-collection-of-a-b-testing-learning-resources-newbie-to-master-6bab1e0d7845>
