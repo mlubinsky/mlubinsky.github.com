@@ -2,6 +2,8 @@
 <https://www.slsmk.com/use-boto3-to-open-an-aws-s3-file-directly/>
 <https://www.slsmk.com/amazon-aws-tech-notes-and-articles/>
 
+<https://medium.com/swlh/using-s3-just-like-a-local-file-system-in-python-497737783f11>
+
 ### How to read AWS file names
 ```
 objs = boto3.client.list_objects(Bucket='my_bucket')
