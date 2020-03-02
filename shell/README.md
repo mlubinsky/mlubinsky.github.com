@@ -6,7 +6,7 @@
 <https://likegeeks.com/linux-process-management/>
 
 ## Linux tools
->https://news.ycombinator.com/item?id=22438730>
+<https://news.ycombinator.com/item?id=22438730>
 
 ### CRON
 <https://habr.com/ru/company/badoo/blog/465021/>  cron etc processes PATH
@@ -210,19 +210,29 @@ Some network file system implementation do not guarantee atomic mkdir, so you st
 
 ### Script to automatically run program if file timestamp changed 
 
-https://stackoverflow.com/questions/18599339/python-watchdog-monitoring-file-for-changes
+<https://stackoverflow.com/questions/18599339/python-watchdog-monitoring-file-for-changes>
 
-https://www.michaelcho.me/article/using-pythons-watchdog-to-monitor-changes-to-a-directory
+<https://www.michaelcho.me/article/using-pythons-watchdog-to-monitor-changes-to-a-directory>
 
-https://facebook.github.io/watchman/
+<https://facebook.github.io/watchman/>
 
-https://gist.github.com/davidmoreno/c049e922e41aaa94e18955b9fac5549c
+<https://gist.github.com/davidmoreno/c049e922e41aaa94e18955b9fac5549c>
 
-http://z3bra.org/wendy/
+<http://z3bra.org/wendy/>
 
-http://blog.z3bra.org/2015/03/under-wendys-dress.html
+<http://blog.z3bra.org/2015/03/under-wendys-dress.html>
 
-www.entrproject.org/ run alternative command when file changed
+<https://linux.die.net/man/1/watch>
+
+<https://linux.die.net/man/1/inotifywait>
+
+<https://github.com/fsnotify/fsnotify> (written in Go — golang)
+
+<https://github.com/emcrisostomo/fswatch> (written in C++)
+
+<https://github.com/watchexec/watchexec> (written in Rust)
+
+<http://eradman.com/entrproject/>     www.entrproject.org/ run alternative command when file changed
 
 ```
 #!/usr/bin/env bash
