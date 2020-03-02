@@ -31,6 +31,9 @@ Nim
 
 <https://greenteapress.com/wp/>
 
+<https://gist.github.com/clarkb7/3e7e43ab85717e81925656f70f5bae8d> character encoding
+
+
 <https://standuply.com/how-to-use-slack> . how to use Slack
 
 <http://harelba.github.io/q/index.html>   direct execution of SQL-like queries on CSVs/TSVs
