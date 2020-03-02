@@ -9,6 +9,7 @@ DynamoDB
 
 <https://www.astronomer.io/guides/templating/> template and macro
 
+<https://gtoonstra.github.io/etl-with-airflow/index.html>
 
 <https://www.udemy.com/course/the-ultimate-hands-on-course-to-master-apache-airflow/> . Udemy
 
