@@ -60,6 +60,8 @@ Nim
 
 ## Func Programming
 
+<https://habr.com/ru/post/490112/> monads
+
 <https://news.ycombinator.com/item?id=21879368>
 
 <https://harrylaou.com/slides/AlgebrasInProgramming.pdf>
