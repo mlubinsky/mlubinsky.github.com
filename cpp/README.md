@@ -9,15 +9,20 @@
 
 <https://vk.com/for_programmer> russian cconferences Siberia 2019 C++
 
+
+<https://lordsof.tech/tech/serialisation-of-c-classes-with-very-little-code/>. serialization
+
 ### LD_PRELOAD
-https://github.com/gaul/awesome-ld-preload
+<https://github.com/gaul/awesome-ld-preload>
+
+<https://blog.jessfraz.com/post/ld_preload/> . LD_PRELOAD
 
 
 <https://www.amazon.com/Advanced-Interview-Questions-Youll-Likely/dp/1946383708> C++ book
 
 <http://www.icce.rug.nl/documents/cplusplus/>
 
-<https://blog.jessfraz.com/post/ld_preload/> . LD_PRELOAD
+
 
 <https://ds9a.nl/articles/posts/cpp-2/>
 
