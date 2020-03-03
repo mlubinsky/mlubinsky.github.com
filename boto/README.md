@@ -1,5 +1,7 @@
+<https://boto3.amazonaws.com/v1/documentation/api/1.9.42/reference/services/s3.html>
 
 <https://www.slsmk.com/use-boto3-to-open-an-aws-s3-file-directly/>
+
 <https://www.slsmk.com/amazon-aws-tech-notes-and-articles/>
 
 <https://medium.com/swlh/using-s3-just-like-a-local-file-system-in-python-497737783f11>
