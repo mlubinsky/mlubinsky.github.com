@@ -1,5 +1,11 @@
 <https://boto3.amazonaws.com/v1/documentation/api/1.9.42/reference/services/s3.html>
 
+```
+ import boto3
+ boto3.__version__
+ 1.9.124
+```
+
 <https://www.slsmk.com/use-boto3-to-open-an-aws-s3-file-directly/>
 
 <https://www.slsmk.com/amazon-aws-tech-notes-and-articles/>
