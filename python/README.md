@@ -73,6 +73,10 @@ iconv -f SHIFT-JIS -t UTF-8 header.txt > header-UTF-8.txt
 
 <https://gist.github.com/clarkb7/3e7e43ab85717e81925656f70f5bae8d>
 
+```
+print ( ''.join([x.encode('utf-8') for x in map(unichr, range(0x0107, 0x0187))]) )
+```
+
 ## Binding
 
 <https://iscinumpy.gitlab.io/post/tools-to-bind-to-python/>
