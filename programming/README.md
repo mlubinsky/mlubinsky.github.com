@@ -63,6 +63,10 @@ Nim
 
 ## Func Programming
 
+<https://jrsinclair.com/articles/2019/what-i-wish-someone-had-explained-about-functional-programming/>
+
+<http://www.tomharding.me/fantasy-land/>
+
 <https://habr.com/ru/post/490112/> monads
 
 <https://www.freecodecamp.org/news/functional-programming-patterns-cookbook-3a0dfe2d7e0a/>
