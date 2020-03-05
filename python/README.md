@@ -68,6 +68,8 @@ deactivate
 
 <https://docs.python.org/2/howto/unicode.html>
 
+<https://stackoverflow.com/questions/18034272/python-str-vs-unicode-types/18034409>
+
 chardetect header.txt
 header.txt: SHIFT_JIS with confidence 0.99
 
