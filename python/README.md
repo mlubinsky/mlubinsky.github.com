@@ -62,7 +62,11 @@ deactivate
 <https://github.com/thebjorn/pydeps> show dependency using graphviz
 
 
-## chardetect
+## Unicode, chardetect
+
+<https://blog.emacsos.com/unicode-in-python.html>
+
+<https://docs.python.org/2/howto/unicode.html>
 
 chardetect header.txt
 header.txt: SHIFT_JIS with confidence 0.99
