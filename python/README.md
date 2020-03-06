@@ -70,6 +70,8 @@ deactivate
 
 <https://stackoverflow.com/questions/18034272/python-str-vs-unicode-types/18034409>
 
+<https://medium.com/better-programming/strings-unicode-and-bytes-in-python-3-everything-you-always-wanted-to-know-27dc02ff2686>
+
 chardetect header.txt
 header.txt: SHIFT_JIS with confidence 0.99
 
