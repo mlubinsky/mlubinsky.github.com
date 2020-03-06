@@ -8,6 +8,8 @@
 
 ## Flask
 
+<https://www.youtube.com/watch?v=gJ7CnUX_7YQ> Async Flask
+
 <https://blog.easyaspy.org/post/1/2018-12-28-how-i-created-easyaspy-from-scratch-using-flask>
 
 <https://github.com/apryor6/flask_api_example>
