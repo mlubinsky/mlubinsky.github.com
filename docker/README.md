@@ -3,6 +3,44 @@
 
 <https://github.com/wagoodman/dive> see docker layers
 
+```
+FROM python:3.8-slim-buster
+RUN pip install docker
+COPY my.py my.py
+CMD python  my.py
+```
+my.py
+```
+import sys
+import docker
+print ("Hello from my.py")
+try:
+    print("STEP 1")
+    client = docker.from_env()
+    print("STEP2")
+    args={"all" : True}
+    all_containers = client.containers.list(args)
+    print("STEP3")
+    for c in all_containers:
+       print(c)
+    print("end of list")
+except Exception as e:
+   print("ERROR")
+   print(str(e))
+```   
+
+```
+docker build -t helloapp:v1 .
+docker run helloapp:v1
+```
+
+```
+Hello from my.py
+STEP 1
+STEP2
+ERROR
+('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))
+```
 ## Docker
 
 <https://pythonspeed.com/docker/>
