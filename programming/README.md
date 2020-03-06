@@ -114,6 +114,8 @@ But why are they called sum types? Well, if the value can only be one of a fixed
 
 ## Parsers
 
+<https://tomassetti.me/why-you-should-not-use-flex-yacc-and-bison/>
+
 <https://www.sanity.io/blog/why-we-wrote-yet-another-parser-compiler>
 
 <https://habr.com/ru/post/489534/>
