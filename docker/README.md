@@ -3,6 +3,9 @@
 
 <https://github.com/wagoodman/dive> see docker layers
 
+
+
+Dockerfile
 ```
 FROM python:3.8-slim-buster
 RUN pip install docker
@@ -31,6 +34,7 @@ except Exception as e:
 
 ```
 docker build -t helloapp:v1 .
+docker run -v "/var/run/docker.sock:/var/run/docker.sock:rw" helloapp:v1
 docker run helloapp:v1
 ```
 
@@ -38,8 +42,11 @@ docker run helloapp:v1
 Hello from my.py
 STEP 1
 STEP2
-ERROR
-('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))
+STEP3
+<Container: 7386702288>
+<Container: 40adbdb08f>
+end of list
+END
 ```
 ## Docker
 
