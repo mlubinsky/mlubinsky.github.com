@@ -4,6 +4,24 @@
 <https://github.com/wagoodman/dive> see docker layers
 
 
+
+<https://stackoverflow.com/questions/39468841/is-it-possible-to-start-a-stopped-container-from-another-container>
+
+It comes down to installing the Docker CLI (or any other tool that can talk to the Docker APIs) in our container and adding a very simple option to our docker invocation:
+```
+-v /var/run/docker.sock:/var/run/docker.sock
+```
+or declare a volume likewise for the parent’s service if you are orchestrating a composition of containers with Docker Compose:
+volumes:      
+ ``` 
+   - /var/run/docker.sock:/var/run/docker.sock
+ ```
+The Docker socket inside the container is shadowed by the socket on the host, thus wiring up the encapsulated environment of the container with the outer world.
+It is possible to grant a container access to docker so that it can spawn other containers on your host. You do this by exposing the docker socket inside the container, e.g:
+```
+docker run -v /var/run/docker.sock:/var/run/docker.sock --name containerB myimage ...
+```
+
 <https://docker-py.readthedocs.io/en/stable/>
 
 Dockerfile
