@@ -2,6 +2,10 @@
 
 <https://towardsdatascience.com/tour-of-python-itertools-2af84db18a5e> itertools
 
+Check file syntax
+```
+ python -m py_compile my.py
+```
 <https://medium.com/analytics-vidhya/6-exceptionally-common-pitfalls-of-python-exception-handling-44871d6afbc7> Error handling
 
 ```
