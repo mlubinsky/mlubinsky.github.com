@@ -25,8 +25,10 @@ LastPass KeePass, PasswordSafe, minykeypass - password managers
 
 <https://habr.com/ru/post/474658/> choose right mouse!
 
+## Shoes
+<https://youtu.be/IijQyX_YCKA>
 
-<https://youtu.be/IijQyX_YCKA>. Shoes
+<https://youtu.be/aybbGi2nQZw>
 
 ## Online edu
 
