@@ -9,6 +9,10 @@
 
 <https://github.com/ARMmbed/mbed-cli/issues/894>
 
+## Code for the Grove-3-Axis-Digital-Accelerometer-MMA7660FC
+
+<https://github.com/mrcoulter45/Grove-3-Axis-Digital-Accelerometer-MMA7660FC>
+
 ## Camera
 
 <http://wiki.seeedstudio.com/Grove-Serial_Camera_Kit/>
@@ -31,6 +35,8 @@
 <https://www.rlocman.ru/review/article.html?di=600377> Kalman filter
 
 ## Pelion Device Management
+
+<https://github.com/maclobdell/fota-runner/blob/master/fota-runner.py>
 
 <https://www.pelion.com/docs/device-management/current/provisioning-process/provisioning-development-devices.html>
 
