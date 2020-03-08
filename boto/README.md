@@ -10,6 +10,8 @@
 
 <https://www.slsmk.com/amazon-aws-tech-notes-and-articles/>
 
+https://hackersandslackers.com/s3-boto3-python-sdk/
+
 <https://medium.com/swlh/using-s3-just-like-a-local-file-system-in-python-497737783f11>
 
 ### How to read AWS file names
