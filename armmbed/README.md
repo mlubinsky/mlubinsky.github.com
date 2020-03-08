@@ -38,6 +38,8 @@
 
 <https://github.com/maclobdell/fota-runner/blob/master/fota-runner.py>
 
+<https://armh.sharepoint.com/sites/Iot-partner-enablement-o365/SitePages/ISG-Training---October-2018.aspx?web=1>
+
 <https://www.pelion.com/docs/device-management/current/provisioning-process/provisioning-development-devices.html>
 
 <https://www.pelion.com/docs/device-management/current/connecting/tutorial-pelion-mbedos.html>
