@@ -67,6 +67,10 @@ STEP3
 end of list
 END
 ```
+Docker run example:
+```
+docker run   python:3.8-slim-buster  python3 -V
+```
 ## Docker
 
 <https://pythonspeed.com/docker/>
