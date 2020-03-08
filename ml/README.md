@@ -1,3 +1,5 @@
+<https://habr.com/ru/post/491010/>
+
 <https://blog.insightdatascience.com/bias-variance-tradeoff-explained-fa2bc28174c4> bias-variance explained
 
 <https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/>
