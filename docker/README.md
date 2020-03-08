@@ -69,7 +69,11 @@ END
 ```
 Docker run example:
 ```
-docker run   python:3.8-slim-buster  python3 -V
+docker run   python:3.8-slim-buster  python3 -V;  pwd; bash --version
+Python 3.8.2
+/Users/michael/D
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)
+Copyright (C) 2007 Free Software Foundation, Inc.
 ```
 ## Docker
 
