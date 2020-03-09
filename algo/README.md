@@ -2,6 +2,8 @@
 
 <https://github.com/mochow13/competitive-programming-library> 
 
+<https://malisper.me/an-algorithm-for-passing-programming-interviews/>
+
 ### minhash
 <https://en.wikipedia.org/wiki/MinHash> minhash
 
