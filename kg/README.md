@@ -1,5 +1,7 @@
 <https://arxiv.org/abs/2003.02320>
 
+<https://queue.acm.org/issuedetail.cfm?issue=3329781>
+
 <https://news.ycombinator.com/item?id=22504133>
 
 <https://www.infoq.com/news/2019/12/ebay-architecture-knowledgegraph> Knowledge Graph
