@@ -69,6 +69,9 @@ END
 ```
 Docker run example:
 ```
+
+docker run -v "/var/run/docker.sock:/var/run/docker.sock:rw" pelion-model-deploy /workspace/deploy-model.sh
+
 docker run   python:3.8-slim-buster  python3 -V;  pwd; bash --version
 Python 3.8.2
 /Users/michael/D
