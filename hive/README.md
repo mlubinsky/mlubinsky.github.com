@@ -88,6 +88,11 @@ END
 ;
 
 ```
+
+### CREATE TABLE ...
+
+create table Temperature(date string,city string,MyTemp array<double>) row format delimited fields terminated by ‘\t’ collection items terminated by ‘,’;
+
 ### Reusable HQL
 <https://stackoverflow.com/questions/40750439/hive-can-one-extract-common-options-for-reuse-in-other-scripts/40783621#40783621>
 
