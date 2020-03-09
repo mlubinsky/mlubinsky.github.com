@@ -89,7 +89,9 @@ END
 
 ```
 
-### CREATE TABLE ...
+### CREATE TABLE ... COMPLEX DATA TYPE
+
+https://acadgild.com/blog/hive-complex-data-types-with-examples
 
 create table Temperature(date string,city string,MyTemp array<double>) row format delimited fields terminated by ‘\t’ collection items terminated by ‘,’;
 
