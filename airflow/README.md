@@ -350,6 +350,13 @@ Tasks are user-defined activities ran by the operators. They can be functions in
 Don’t confuse operators with tasks. Tasks are defined as “what to run?” and operators are “how to run”. For example, a Python function to read from S3 and push to a database is a task. The method that calls this Python function in Airflow is the operator. Airflow has built-in operators that you can use for common tasks. You can create custom operators by extending the BaseOperator class and implementing the execute() method.
 
 if two operators need to share information, like a filename or small amount of data, you should consider combining them into a single operator. If it absolutely can’t be avoided, Airflow does have a feature for operator cross-communication called XCom.
+
+### PythonOperator
+ 
+ if you provide  ``provide_context=True``, you need to have ``**kwargs`` in your function
+ if you're passing everything through templates_dict  
+ your param will be available in ``kwargs['templates_dict']['file_in']``
+  
 ```
 DummyOperator
 BashOperator - executes a bash command
