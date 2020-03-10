@@ -69,6 +69,8 @@ Nim
 
 <https://habr.com/ru/post/490112/> monads
 
+<https://medium.com/@lettier/your-easy-guide-to-monads-applicatives-functors-862048d61610>
+
 <https://www.freecodecamp.org/news/functional-programming-patterns-cookbook-3a0dfe2d7e0a/>
 
 <https://medium.com/@cscalfani/why-is-learning-functional-programming-so-damned-hard-bfd00202a7d1>
