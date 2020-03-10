@@ -89,6 +89,8 @@ to toggle a bit – поменять значение бита на против
 
 ### Arduino programming 
 
+<https://youtu.be/ztGQrlx4AKs>
+
 <https://habr.com/ru/post/489722/>
 
 <https://www.udemy.com/course/arduino-sbs-17gs/learn/lecture/6080362?start=0#overview>
