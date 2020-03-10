@@ -205,9 +205,39 @@ Fluentd using fluent logger library - Send data to a hosted Fluentd instance tha
 
 ## Mbed Studio IDE
 
-<https://os.mbed.com/studio/> michael.lybins@a Vanti..7!
+<https://os.mbed.com/studio/> michael.lybins..@a Vanti..7!
 
 ## Mbed CLI
+```
+
+$ cd /Users/miclub01/python2_virtual_env
+$ source  mbed//bin/activate
+
+$ pip install mbed-cli
+
+Download GCC_ARM for MAc
+https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
+mbed config -G GCC_ARM_PATH "C:\Program Files (x86)\GNU Tools ARM Embedded\7 2018-q2-update\bin
+
+$ mbed config -G CLOUD_SDK_API_KEY ak_1MDE3MDNhZDMwZDJkOGFlZGE2MWYxMzRjMDAwMDAwMDA017040793c538aeda61f134c00000000IQBgqsHL7r63RXOEXAEiz2YxB5kIgujJ
+
+$ mbed config --list
+
+[mbed] WARNING: Python 3 is not yet fully supported: Python errors may occur when compiling, testing and exporting
+[mbed] Global config:
+ARM_PATH=/Users/miclub01/Downloads/gcc-arm-none-eabi-9-2019-q4-major/bin/
+GCC_ARM_PATH=/Users/miclub01/Downloads/gcc-arm-none-eabi-9-2019-q4-major/bin/
+CLOUD_SDK_API_KEY=ak_1MDE3MDNhZDMwZDJkOGFlZGE2MWYxMzRjMDAwMDAwMDA017040793c538aeda61f134c00000000IQBgqsHL7r63RXOEXAEiz2YxB5kIgujJ
+
+
+
+$ mbed dm init -d "company.com" --model-name "product-model" -q --force 
+
+$ mbed compile -m NUCLEO_H743ZI2 -t GCC_ARM -DRESET_STORAGE
+
+$ mbed dm update device -D 0170a6e08345000000000001001a30be -m NUCLEO_H743ZI2 --no-cleanup -v
+ 
+```
 
 <https://os.mbed.com/docs/mbed-os/v5.15/tools/manual-installation.html>
 
