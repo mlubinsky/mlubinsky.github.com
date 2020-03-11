@@ -232,6 +232,43 @@ CLOUD_SDK_API_KEY=ak_1MDE3MDNhZDMwZDJkOGFlZGE2MWYxMzRjMDAwMDAwMDA017040793c538ae
 
 
 $ mbed dm init -d "company.com" --model-name "product-model" -q --force 
+ 
+[mbed] Working path "/mnt/GIT/NUCLEO_H743ZI2" (program)
+[mbed] Auto-installing missing Python modules (pyusb)...
+[INFO] 2020-03-11 04:05:07 - __main__ - Found developer certificate named dev_cert_2020_02_13_12_35
+[INFO] 2020-03-11 04:05:07 - __main__ - Writing developer certificate dev_cert_2020_02_13_12_35 into c file mbed_cloud_dev_credentials.c
+[WARNING]: Certificates generated with this tool are self-signed and for testing only
+[WARNING]: This certificate is valid for 90 days. For production,use certificates with at least 10 years validity.
+[INFO] 2020-03-11 04:05:07 - manifesttool.init - Certificate written to .update-certificates/default.der
+[INFO] 2020-03-11 04:05:07 - manifesttool.init - Private key written to .update-certificates/default.key.pem
+[INFO] 2020-03-11 04:05:07 - manifesttool.init - Default settings written to .manifest_tool.json
+[INFO] 2020-03-11 04:05:07 - manifesttool.init - Wrote default resource values to update_default_resources.c
+
+$ git status
+
+	modified:   mbed_cloud_dev_credentials.c
+	modified:   update_default_resources.c
+
+Untracked files:
+
+	.manifest_tool.json
+	.update-certificates/
+
+cat .manifest_tool.json
+{
+    "classId": "d55bc4d2-da99-5898-b4e7-2fe11c5cf885",
+    "default-certificates": [
+        {
+            "file": ".update-certificates/default.der"
+        }
+    ],
+    "deviceURNs": [],
+    "modelName": "mbed",
+    "private-key": ".update-certificates/default.key.pem",
+    "vendorDomain": "arm.com",
+    "vendorId": "fa6b4a53-d5ad-5fdf-be9d-e663e4d41ffe"
+}
+
 
 $ mbed compile -m NUCLEO_H743ZI2 -t GCC_ARM -DRESET_STORAGE
 
