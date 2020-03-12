@@ -101,6 +101,8 @@ alias cat="bat"
 
 ## Visual Studio Code
 
+<https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces>
+
 <https://habr.com/ru/company/microsoft/blog/472228/> 
 
 <https://habr.com/ru/company/edison/blog/479828/>
