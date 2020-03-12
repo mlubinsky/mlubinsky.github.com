@@ -5,6 +5,18 @@ ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
 
+### SSH
+<https://stackoverflow.com/questions/24392657/adding-an-rsa-key-without-overwriting>
+
+```
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa_private_server
+  IdentityFile ~/.ssh/id_rsa_github
+  IdentityFile ~/.ssh/id_rsa_work_server
+```
+
 ## Spaces - Virtual desktops
 
 <https://www.howtogeek.com/180677/mission-control-101-how-to-use-multiple-desktops-on-a-mac/>
