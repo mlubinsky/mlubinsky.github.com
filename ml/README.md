@@ -1,3 +1,5 @@
+<https://dmm.dreamwidth.org/23855.html>
+
 <https://habr.com/ru/post/491010/>
 
 <https://habr.com/ru/post/491326/> Data classification
