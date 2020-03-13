@@ -35,6 +35,9 @@
 
 
 <http://www.idoportal.com/>
+
+<https://kaplya.site/upotreblenie-imbirya-pri-gipertonii/>  Употребление имбиря при гипертонии
+
  
  Утро лучше всего начинать со стакана воды
  
