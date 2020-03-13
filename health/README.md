@@ -88,6 +88,8 @@ Kрасный болгарский перец.  обладает сладким 
 
 ## давление
 
+<https://kaplya.site/upotreblenie-imbirya-pri-gipertonii/> Употребление имбиря при гипертонии
+
 <https://www.youtube.com/watch?v=iFyJ_aNpRLo>
 
 <https://youtu.be/Z5fq-LS0XsU>
