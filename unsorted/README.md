@@ -30,6 +30,11 @@ LastPass KeePass, PasswordSafe, minykeypass - password managers
 
 <https://youtu.be/aybbGi2nQZw>
 
+
+## Мирослав Попович
+
+<https://www.youtube.com/results?search_query=%D0%9C%D0%B8%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2+%D0%9F%D0%BE%D0%BF%D0%BE%D0%B2%D0%B8%D1%87>
+
 ## Online edu
 
 <https://teach-in.ru> . lectures (physics and math) from Moscow State University
