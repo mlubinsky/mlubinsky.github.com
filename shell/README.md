@@ -13,6 +13,9 @@
 <https://habr.com/ru/company/badoo/blog/468061/> .  CRON
 
 ###  bash  
+shellcheck
+
+<http://wiki.bash-hackers.org/>
 ```
 command 2>&1 | tee -a logfile
 here -a means :  Append the output to the files rather than overwriting them.
