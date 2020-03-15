@@ -13,18 +13,21 @@
 <https://habr.com/ru/company/badoo/blog/468061/> .  CRON
 
 ###  bash  
+```
+command 2>&1 | tee -a logfile
+here -a means :  Append the output to the files rather than overwriting them.
+```
+<https://shellmagic.xyz/>
+<http://hyperpolyglot.org/>
 
-https://shellmagic.xyz/
-http://hyperpolyglot.org/
+<https://github.com/jlevy/the-art-of-command-line>
 
-https://github.com/jlevy/the-art-of-command-line
-
-https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin
-https://unix.stackexchange.com/questions/41571/what-is-the-difference-between-and/41595#41595 . $@ vs $*
-https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort
-https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md
-http://caiustheory.com/bash-script-setup/
-https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/
+<https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin>
+<https://unix.stackexchange.com/questions/41571/what-is-the-difference-between-and/41595#41595> . $@ vs $*
+<https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort>
+<https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md>
+<http://caiustheory.com/bash-script-setup/>
+<http://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/>
 
    bash_ru.pdf bash manual 
 
