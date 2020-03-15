@@ -11,6 +11,22 @@
 ## Linux tools
 <https://news.ycombinator.com/item?id=22438730>
 
+## bash job control
+
+<https://www.linuxjournal.com/content/job-control-bash-feature-you-only-think-you-dont-need>
+
+Job control is what allows you to suspend jobs, move jobs from the background to the foreground, and vice versa, from the foreground to the background. Running a script with script & creates a background job. Running a script with just script creates a foreground job.
+
+Job control consists of the following commands:
+
+* The fg command moves a background job into the foreground.
+* The bg command moves a suspended foreground job into the background.
+* The jobs command shows the current list of jobs.
+* The kill command can kill jobs or send signals to them.
+* The disown command removes a job from the list of jobs (without killing it).
+* A foreground job can be suspended by typing ^Z (Control-Z). A suspended job is temporarily stopped.
+
+
 ### CRON
 <https://habr.com/ru/company/badoo/blog/465021/>  cron etc processes PATH
 <https://habr.com/ru/company/badoo/blog/468061/> .  CRON
