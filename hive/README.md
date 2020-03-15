@@ -110,6 +110,12 @@ wait $!
 
 SELECT explode(str_to_map('e1:t1&e2:t2&e3:t3','&',':'))
 
+
+### FIND_IN_SET( string search_string, string source_string_list )
+
+The FIND_IN_SET function searches for the search string in the source_string_list and returns the position of the first occurrence in the source string list. Here the source string list should be comma delimited one. It returns 0 if the first argument contains comma.
+Example: FIND_IN_SET('ha','hao,mn,hc,ha,hef') returns 4
+
 ### collect_set and concat_ws
 <https://dwgeek.com/apache-hive-group_concat-alternative-example.html/>
 ```
