@@ -16,3 +16,9 @@
 <https://medium.com/cantors-paradise/when-feynman-met-dirac-fe9cca0006df>
 
 <https://arxiv.org/abs/hep-th/9702027>
+
+## QM
+
+<https://arxiv.org/abs/quant-ph/0702225>
+
+<https://arxiv.org/pdf/quant-ph/0702225.pdf>
