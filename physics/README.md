@@ -7,6 +7,9 @@
 
 <https://arxiv.org/abs/2001.04797> Solid state physics
 
+
+<http://www.damtp.cam.ac.uk/user/tong/kintheory/one.pdf> .  Kinetic Theory
+
 ## Chaos
 <https://youtu.be/ovJcsL7vyrk>
 
