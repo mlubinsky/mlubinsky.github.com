@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/post/485318/> Добавляем в Jupyter Notebooks красоту и интерактивность
 
+<https://habr.com/ru/company/ruvds/blog/492220/>. Pandas
+
 # Jupyter Pandas NumPy Scikit
 
 <https://www.youtube.com/playlist?list=PL5-da3qGB5IBITZj_dYSFqnd_15JgqwA6>
