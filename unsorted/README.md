@@ -249,6 +249,8 @@ Live calculation in browser
 ## Audio books
 <https://news.ycombinator.com/item?id=20438302>
 
+<https://www.youtube.com/watch?v=I1xNLgeU6ok> Сергей Довлатов (аудиокнига)
+
 ## Russian
 <http://www.audiopedia.su/>
 
