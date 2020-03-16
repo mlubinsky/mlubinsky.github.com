@@ -23,6 +23,8 @@
 
 <https://mirtitles.org/>
 
+<https://landgreen.github.io/physics/index.html>
+
 <https://www.youtube.com/watch?v=g7L_r6zw4-c>  Abstract algebra
 
 <https://news.ycombinator.com/item?id=21346272>
