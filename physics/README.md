@@ -10,6 +10,7 @@
 ## Chaos
 <https://youtu.be/ovJcsL7vyrk>
 
+<https://gereshes.com/2020/01/13/attracted-to-attractors/>
 
 ## QED
 
