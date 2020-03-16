@@ -1,10 +1,15 @@
+<https://github.com/gto76/python-cheatsheet>
+
 <http://michal.karzynski.pl/blog/2019/07/15/top-20-talks-from-europython-2019/>
 
 <https://towardsdatascience.com/tour-of-python-itertools-2af84db18a5e> itertools
 
-Check file syntax
+
 ```
- python -m py_compile my.py
+ python -m py_compile my.py   # Check file syntax
+ 
+ python -m json.tool my_json.json   # json buetifier
+ 
 ```
 <https://medium.com/analytics-vidhya/6-exceptionally-common-pitfalls-of-python-exception-handling-44871d6afbc7> Error handling
 
