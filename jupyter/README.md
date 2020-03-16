@@ -6,6 +6,8 @@
 
 <https://habr.com/ru/company/ruvds/blog/492220/>. Pandas
 
+<https://habr.com/ru/post/475210/>. Pandas
+
 # Jupyter Pandas NumPy Scikit
 
 <https://www.youtube.com/playlist?list=PL5-da3qGB5IBITZj_dYSFqnd_15JgqwA6>
