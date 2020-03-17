@@ -1,5 +1,9 @@
 <https://www.youtube.com/watch?v=ucW2MMkPkKY> Быстрый болевой
 
+<https://www.youtube.com/watch?v=ALCzMXqPvws>
+
+<https://www.youtube.com/watch?v=8TpqYMZQvcQ>
+
 <https://zen.yandex.ru/media/promma/nokautiruem-gromilu-luchshimi-i-proverennymi-priemami-samooborony-5e3c81cfc550bd73abcef557>
 
 <https://zen.yandex.ru/media/id/5dcee194525c952780f99f0c/kak-ne-propustit-pervyi-udar-5df924d1433ecc96f4b8118c>
