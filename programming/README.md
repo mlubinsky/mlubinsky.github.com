@@ -19,6 +19,8 @@
 
 <https://news.ycombinator.com/item?id=21928170> programmers blogs
 
+<https://www.codetriage.com/> contribute to open source
+
 <https://www.sicara.ai/blog/>  articles on AI and Big Data, by Sicara
 <https://medium.com/sicara>  articles on AI and Big Data, by Sicara
 
