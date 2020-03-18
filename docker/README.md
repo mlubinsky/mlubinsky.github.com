@@ -3,7 +3,7 @@
 
 <https://github.com/wagoodman/dive> see docker layers
 
-
+<https://medium.com/better-programming/the-ultimate-docker-command-list-d98ef300fe6d> 
 
 <https://stackoverflow.com/questions/39468841/is-it-possible-to-start-a-stopped-container-from-another-container>
 
