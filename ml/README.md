@@ -10,6 +10,8 @@
 
 <https://jacobgil.github.io/deeplearning/activelearning>
 
+<https://artint.info/2e/index.html> BOOK
+
 <https://mlcourse.ai/> Russian
 
 <https://dlcourse.ai/> Russsian
