@@ -132,6 +132,29 @@ https://habr.com/ru/company/ruvds/blog/485646/ . Python Tips
 
 ## multiprocessing vs threading
 
+```
+    import random
+    import time
+    from concurrent.futures import ProcessPoolExecutor, as_completed
+
+    def hello():
+        seconds = random.randint(0, 5)
+        print(f"Start blocking for {seconds}s")
+        time.sleep(seconds)
+        print(f"Stopped blocking after {seconds}s")
+        return seconds
+
+    if __name__ == "__main__":
+
+        with ProcessPoolExecutor(max_workers=2) as exec:
+
+            a = exec.submit(hello)
+            b = exec.submit(hello)
+
+            for future in as_completed((a, b)):
+                print(future.result())
+		
+```
 <http://www.blog.pythonlibrary.org/2016/08/02/python-201-a-multiprocessing-tutorial/>
 
 <https://www.packtpub.com/programming/python-parallel-programming-cookbook> 
