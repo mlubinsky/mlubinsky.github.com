@@ -3,6 +3,15 @@
 
 <https://github.com/wagoodman/dive> see docker layers
 
+## No space left on device
+<https://stackoverflow.com/questions/30604846/docker-error-no-space-left-on-device>
+ 
+ ```
+  docker volume rm $(docker volume ls -qf dangling=true)
+  
+  docker system prune
+ ```
+
 <https://medium.com/better-programming/the-ultimate-docker-command-list-d98ef300fe6d> 
 
 <https://stackoverflow.com/questions/39468841/is-it-possible-to-start-a-stopped-container-from-another-container>
