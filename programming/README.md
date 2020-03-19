@@ -64,6 +64,7 @@ Nim
 
 
 ## Func Programming
+<https://habr.com/ru/post/492460/>
 
 <https://jrsinclair.com/articles/2019/what-i-wish-someone-had-explained-about-functional-programming/>
 
