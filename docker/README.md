@@ -3,6 +3,22 @@
 
 <https://github.com/wagoodman/dive> see docker layers
 
+## Volumes
+```
+The -v flag is very flexible. It can bindmount or name a volume with just a slight adjustment in syntax. 
+If the first argument begins with a / or ~/, you’re creating a bindmount. Remove that, and you’re naming the volume.
+
+-v /path:/path/in/container mounts the host directory, /path at the /path/in/container
+-v path:/path/in/container creates a volume named path with no relationship to the host.
+
+Example
+docker run --name=nginx -d -v ~/nginxlogs:/var/log/nginx -p 5000:80 nginx
+```
+<https://medium.com/bb-tutorials-and-thoughts/understanding-docker-volumes-with-an-example-d898cb5e40d7>
+
+Sharing data between containers:
+<https://www.digitalocean.com/community/tutorials/how-to-share-data-between-docker-containers>
+
 ## No space left on device
 <https://stackoverflow.com/questions/30604846/docker-error-no-space-left-on-device>
  
