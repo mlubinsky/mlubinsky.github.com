@@ -112,6 +112,8 @@ Copyright (C) 2007 Free Software Foundation, Inc.
 Тома Docker (Docker Volumes) представляют - механизм постоянного хранения данных, потребляемых или производимых приложениями.
 <https://docs.docker.com/storage/volumes/> volumes
 
+<https://docs.docker.com/storage/bind-mounts/>
+
 <https://habr.com/ru/company/ruvds/blog/441574/>
 ```
  docker volume create —-name myVolume
