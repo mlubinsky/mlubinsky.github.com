@@ -35,6 +35,22 @@ Job control consists of the following commands:
 shellcheck
 
 <http://wiki.bash-hackers.org/>
+
+
+To redirect the error message to NUL:
+```
+   dir file.xxx 2> nul
+```   
+Redirect the output to one place, and the errors to another:
+```
+   dir file.xxx > output.msg 2> output.err
+```   
+Combine errors and standard output to a single file: 
+Redirect the output for STDERR to STDOUT and then sending the output from STDOUT to a file:
+```
+   dir file.xxx 1> output.msg 2>&1
+```
+
 ```
 command 2>&1 | tee -a logfile
 here -a means :  Append the output to the files rather than overwriting them.
