@@ -49,6 +49,8 @@ Combine errors and standard output to a single file:
 Redirect the output for STDERR to STDOUT and then sending the output from STDOUT to a file:
 ```
    dir file.xxx 1> output.msg 2>&1
+   
+   cmd >>file.txt 2>&1
 ```
 
 ```
