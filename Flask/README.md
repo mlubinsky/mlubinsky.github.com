@@ -8,7 +8,20 @@
 
 ## Flask
 
+<https://unix.stackexchange.com/questions/182537/write-python-stdout-to-file-immediately>
+
+<https://stackoverflow.com/questions/38630421/how-to-execute-shell-command-and-stream-output-with-python-and-flask-upon-http-r>
+
+<https://stackoverflow.com/questions/35540885/display-the-contents-of-a-log-file-as-it-is-updated>
+
+<https://stackoverflow.com/questions/4417546/constantly-print-subprocess-output-while-process-is-running/28319191#28319191>
+
+<https://stackoverflow.com/questions/4417546/constantly-print-subprocess-output-while-process-is-running>
+
 <https://www.youtube.com/watch?v=gJ7CnUX_7YQ> Async Flask
+
+
+
 
 <https://blog.easyaspy.org/post/1/2018-12-28-how-i-created-easyaspy-from-scratch-using-flask>
 
