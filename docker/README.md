@@ -115,6 +115,24 @@ Copyright (C) 2007 Free Software Foundation, Inc.
 <https://docs.docker.com/storage/bind-mounts/>
 
 <https://habr.com/ru/company/ruvds/blog/441574/>
+
+Mounting several volumes:
+```
+docker run -t -i \
+  -v '/on/my/host/test1:/on/the/container/test1' \
+  -v '/on/my/host/test2:/on/the/container/test2' \
+  ubuntu /bin/bash
+```
+
+```
+docker run -d \
+  -it \
+  --name devtest \
+  --mount type=bind,source="$(pwd)"/target,target=/app \
+  --mount type=bind,source="$(pwd)"/target,target=/app2,readonly,bind-propagation=rslave \
+  nginx:latest
+```  
+
 ```
  docker volume create —-name myVolume
  docker volume ls
