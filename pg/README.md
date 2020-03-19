@@ -16,6 +16,8 @@ Materialize is a streaming data warehouse. Materialize accepts input data from a
 
 ## Postgres
 
+<https://habr.com/ru/company/tensor/blog/492464/> 
+
 <https://towardsdatascience.com/recursive-sql-queries-with-postgresql-87e2a453f1b> Recursive SQL
 
 <https://www.cybertec-postgresql.com/en/blog/>
