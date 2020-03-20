@@ -8,6 +8,8 @@
 
 <https://www.youtube.com/watch?v=hqTB9PTKvXU&list=PLlx2izuC9gjgZsBALx2ZF7IMGoNl07A9l>  Геометрия и группы. Алексей Савватеев
 
+<http://stedolan.net/research/semirings.pdf> Semirings
+
 <https://www.youtube.com/channel/UCWk8OxsylgmZ_VgY7jC9pjQ/playlists> Алексей Савватеев
 
 ### Quantum mechanics
