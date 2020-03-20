@@ -14,6 +14,54 @@
 
 <https://stackoverflow.com/questions/35540885/display-the-contents-of-a-log-file-as-it-is-updated>
 
+app.py
+```
+@app.route('/stream')
+def stream():
+    def generate():
+        fname="/Users/miclub01/tmp/job.log"
+        with open(fname) as f:
+            while True:
+                yield f.read()
+                sleep(1)
+    print("generate=", generate());
+    return app.response_class(generate(), mimetype='text/plain')
+
+app.run()
+```
+
+cat  templates/index.html
+```
+
+<pre id="output"></pre>
+<script>
+    var output = document.getElementById('output');
+    console.log("step 1")
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '{{ url_for('stream') }}');
+    xhr.send();
+    console.log("step 5")
+
+    setInterval(function() {
+        output.textContent = xhr.responseText;
+        // console.log( "**" + output.textContent );
+    }, 1000);
+</script>
+```
+
+python write2log.py >> ~/tmp/job.log
+
+cat write2log.py
+```
+import time
+
+i=0
+while True:
+  i += 1
+  time.sleep( 2 )
+  print(str(i) , flush=True)  # Python3 only flag
+```  
+
 <https://stackoverflow.com/questions/4417546/constantly-print-subprocess-output-while-process-is-running/28319191#28319191>
 
 <https://stackoverflow.com/questions/4417546/constantly-print-subprocess-output-while-process-is-running>
