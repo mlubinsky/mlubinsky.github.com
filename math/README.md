@@ -19,6 +19,8 @@
 
 <https://nrich.maths.org/1422>
 
+<https://plus.maths.org/content/abel-prize-2020>
+
 
 ### Quantum mechanics
 <http://www.visualquantumphysics.org/>
