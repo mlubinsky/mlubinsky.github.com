@@ -12,6 +12,14 @@
 
 <https://www.youtube.com/channel/UCWk8OxsylgmZ_VgY7jC9pjQ/playlists> Алексей Савватеев
 
+
+## Galoua
+
+<https://plus.maths.org/content/stubborn-equations>
+
+<https://nrich.maths.org/1422>
+
+
 ### Quantum mechanics
 <http://www.visualquantumphysics.org/>
 
