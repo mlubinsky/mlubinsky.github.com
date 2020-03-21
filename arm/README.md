@@ -1,3 +1,5 @@
+<https://opensource.googleblog.com/2020/03/pigweed-collection-of-embedded-libraries.html>
+
 <https://gilberttanner.com/blog/convert-your-tensorflow-object-detection-model-to-tensorflow-lite> TF Lite
 
 <https://www.embeddedrelated.com/showarticle/1324.php> .  So you want to be an embedded developer
