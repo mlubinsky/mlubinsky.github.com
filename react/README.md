@@ -89,6 +89,10 @@ React example
 <https://scotch.io/starters/react/getting-started-with-react-2019-edition>
 
 
+## Modal Dialog
+
+<https://github.com/shibe97/react-hooks-use-modal>
+
 ## useContext и useReducer в React
 
 <https://habr.com/ru/post/473070/>
