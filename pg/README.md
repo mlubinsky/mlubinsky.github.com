@@ -115,8 +115,12 @@ docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=passwo
 
 <https://hakibenita.com/fast-load-data-python-postgresql>
 
-<https://hakibenita.com/the-many-faces-of-distinct-in-postgre-sql> . DISTINCT
+### DISTINCT
+<https://hakibenita.com/the-many-faces-of-distinct-in-postgre-sql> 
 
+<https://www.yogeshchauhan.com/167/postgres/the-confusing-unique-and-useful-feature-in-postgres-distinct-on>
+
+<https://news.ycombinator.com/item?id=22625642>
 
 
 ## Postgres 12
