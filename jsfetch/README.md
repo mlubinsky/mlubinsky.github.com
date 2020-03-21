@@ -1,5 +1,7 @@
 <https://medium.com/javascript-in-plain-english/comparing-different-ways-to-make-http-requests-in-javascript-39ab0f090788>
 
+<https://habr.com/ru/post/493206/> translation the link above in russion
+
 <https://habr.com/ru/company/ruvds/blog/477286/> .  fetch vs axios
 
 <https://github.com/marcellomontemagno/react-ufo>
