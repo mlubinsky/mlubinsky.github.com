@@ -38,6 +38,8 @@
 ## Hexagonal Architecture
 <https://medium.com/@animeshgaitonde/hexagonal-architecture-principles-practical-example-in-java-364bb2e50075> 
 
+<https://habr.com/ru/post/493426/>
+
 <https://www.dataengineeringpodcast.com/datadog-timeseries-data-episode-113/> 
 
 ##  Netflix Metaflow
