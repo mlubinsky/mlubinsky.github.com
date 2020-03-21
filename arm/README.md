@@ -88,6 +88,7 @@ to toggle a bit – поменять значение бита на против
 
 <https://arxiv.org/pdf/1711.07128.pdf>
 
+<https://www.edgeimpulse.com/blog/train-a-tiny-ml-model>
 
 ### Arduino programming 
 
@@ -438,12 +439,15 @@ CMSIS-NN code: <https://github.com/ARM-software/ML-KWS-for-MCU/blob/master/Deplo
 
 the TensorFlow Lite Converter’s Python API to do this. It takes our Keras model and writes it to disk in the form of a FlatBuffer , which is a special file format designed to be space-efficient. 
 
+
+
+
 Warden, Pete,Situnayake, Daniel. TinyML (Kindle Locations 1221-1222). O'Reilly Media. Kindle Edition. 
-## TinyML
 
-<https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/micro> code from book?
+<https://www.edgeimpulse.com/blog/train-a-tiny-ml-model> Sound recognition 
+<https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/micro> code from book
 
-IPython sinus example
+ sinus example
 <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/create_sine_model.ipynb>
 
 Hello word example
