@@ -91,6 +91,8 @@ React example
 
 ## Modal Dialog
 
+<https://stackoverflow.com/questions/48886701/how-to-add-scroll-into-react-bootstrap-modal-body>
+
 <https://github.com/shibe97/react-hooks-use-modal>
 
 ## useContext и useReducer в React
