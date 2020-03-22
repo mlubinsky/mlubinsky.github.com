@@ -1,5 +1,7 @@
 <https://runjs.dev/>
 
+<https://stackoverflow.com/questions/60795932/react-for-displaying-the-the-log-file-in-real-time-flask-backend>
+
 ## JS concepts for React
 <https://kentcdodds.com/blog/javascript-to-know-for-react>
 
