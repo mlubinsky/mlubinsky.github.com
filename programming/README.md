@@ -70,6 +70,8 @@ Nim
 
 <https://mostly-adequate.gitbooks.io/mostly-adequate-guide/>
 
+<https://egghead.io/courses/professor-frisby-introduces-composable-functional-javascript>
+
 <http://www.tomharding.me/fantasy-land/>
 
 <https://habr.com/ru/post/490112/> monads
