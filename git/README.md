@@ -1,6 +1,7 @@
 ## GUI
 
 <https://git-fork.com/> Fork: UI for Git
+
 <https://www.sublimemerge.com/>  Git UI Client, from the makers of Sublime Text
 
 
@@ -12,7 +13,35 @@
 
 <https://serokell.io/blog/comparison-of-github-and-gitlab> github vs gitlab
 
+github from python
+```
+#! /usr/bin/python3
+import sys
+import os
+import time
+from github import Github
 
+project_name = sys.argv[1]
+
+path = '/Users/<your_github_nama>/GIT/'+project_name
+print(path)
+try:
+    os.mkdir(path)
+    print("Created Path")
+except FileExistsError:
+    print("Path Exists")
+
+fileloc = path+'/README.md'
+file = open(fileloc, 'w+')
+file.write('Project: '+project_name+'\n')
+file.close()
+
+# You can get your GitHub access token from Github settings https://github.com/settings/tokens 
+# and replace it in the script where there is XXX
+g = Github("XXX")
+user = g.get_user()
+repo = user.create_repo(project_name)
+```
 
 <https://youtu.be/ye4LVrQ0TuM> How to work with Git Flow feature branches in the terminal
 
