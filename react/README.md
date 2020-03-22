@@ -30,6 +30,8 @@
 
 ## React
 
+<https://habr.com/ru/post/461541/> 
+
 <https://github.com/wojtekmaj/react-lifecycle-methods-diagram>
 
 <https://blog.logrocket.com/the-new-react-lifecycle-methods-in-plain-approachable-language-61a2105859f3/>
