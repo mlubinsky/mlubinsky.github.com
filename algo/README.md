@@ -1,5 +1,7 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://www.youtube.com/channel/UCaYQbIciTyBFMTRE2Zp81tw>
+
 <https://github.com/mochow13/competitive-programming-library> 
 
 <https://malisper.me/an-algorithm-for-passing-programming-interviews/>
