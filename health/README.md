@@ -11,7 +11,10 @@
 
 <https://zen.yandex.ru/media/zoh/vecherniaia-trenirovka-s-sobstvennym-vesom-dlia-uluchsheniia-krovoobrasceniia-tazovoi-oblasti-mujchin-5e58dbe960db23433940e64c>
 
-## back pain
+## Heart
+<https://news.ycombinator.com/item?id=22643333>
+
+## Back pain
 
 <https://www.youtube.com/watch?v=w3pspI7PAJw>
 
