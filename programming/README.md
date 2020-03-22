@@ -68,6 +68,8 @@ Nim
 
 <https://jrsinclair.com/articles/2019/what-i-wish-someone-had-explained-about-functional-programming/>
 
+<https://mostly-adequate.gitbooks.io/mostly-adequate-guide/>
+
 <http://www.tomharding.me/fantasy-land/>
 
 <https://habr.com/ru/post/490112/> monads
