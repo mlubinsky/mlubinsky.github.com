@@ -30,6 +30,8 @@
 
 ## React
 
+<https://www.pluralsight.com/guides/working-with-bootstraps-modals-react>
+
 <https://habr.com/ru/post/461541/> 
 
 <https://github.com/wojtekmaj/react-lifecycle-methods-diagram>
