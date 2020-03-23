@@ -97,6 +97,14 @@ React example
 
 ## Modal Dialog
 
+For Bootstrap 3 use React-Bootstrap <https://react-bootstrap.github.io/components/modal>
+
+```
+var Modal = ReactBootstrap.Modal;
+can then be used as a react component as <Modal/>.
+```
+For Bootstrap 4, there is react-strap <https://reactstrap.github.io>
+ 
 <https://react-bootstrap.github.io/components/modal/>
 
 <https://stackoverflow.com/questions/48886701/how-to-add-scroll-into-react-bootstrap-modal-body>
