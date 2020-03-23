@@ -19,6 +19,17 @@ docker run --name=nginx -d -v ~/nginxlogs:/var/log/nginx -p 5000:80 nginx
 Sharing data between containers:
 <https://www.digitalocean.com/community/tutorials/how-to-share-data-between-docker-containers>
 
+```
+ find . -type f -not -path '*/\.*' | xargs grep "docker run"
+
+./PelionML_Model/optimize/Makefile:	docker run --rm -t pelion-model-optimize
+./PelionML_Model/deploy/Makefile:	docker run --rm -t pelion-model-deploy
+
+
+./PelionML_Model/README.md:docker run -v "/var/run/docker.sock:/var/run/docker.sock:rw" pelion-model-deploy /workspace/deploy-model.sh
+
+./run.sh:docker run -v "/var/run/docker.sock:/var/run/docker.sock:rw" -v "/Users/miclub01/tmp:/mnt/tmp" pelion-model-deploy /workspace/deploy-model.sh
+```
 ## No space left on device
 <https://stackoverflow.com/questions/30604846/docker-error-no-space-left-on-device>
  
