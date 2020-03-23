@@ -95,6 +95,8 @@ React example
 
 ## Modal Dialog
 
+<https://react-bootstrap.github.io/components/modal/>
+
 <https://stackoverflow.com/questions/48886701/how-to-add-scroll-into-react-bootstrap-modal-body>
 
 <https://github.com/shibe97/react-hooks-use-modal>
