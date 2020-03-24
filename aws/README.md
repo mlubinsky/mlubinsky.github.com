@@ -1,5 +1,7 @@
 <https://medium.com/aws-tutor>
 
+<https://github.com/cdk-patterns/serverless>
+
 <https://medium.com/aws-tutor/a-complete-guide-to-the-machine-learning-tools-on-aws-8a012cb4de76>
 
 ### aws cli via brew
