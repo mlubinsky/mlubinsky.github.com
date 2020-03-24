@@ -12,6 +12,11 @@
 
 <https://lordsof.tech/tech/serialisation-of-c-classes-with-very-little-code/>. serialization
 
+
+### Concurrent
+
+<https://begriffs.com/posts/2020-03-23-concurrent-programming.html>
+
 ### LD_PRELOAD
 <https://github.com/gaul/awesome-ld-preload>
 
