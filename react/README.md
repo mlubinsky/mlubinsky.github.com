@@ -94,6 +94,58 @@ React example
 
 <https://scotch.io/starters/react/getting-started-with-react-2019-edition>
 
+## UseEffect Hook
+
+<https://www.robinwieruch.de/react-hooks-fetch-data>
+
+<https://daveceddia.com/useeffect-hook-examples/>
+
+File: Photos.js
+```
+import React from "react";
+import { useFetch } from "./hooks";
+function Photos() {
+  const [data, loading] = useFetch(
+    "https://jsonplaceholder.typicode.com/photos?albumId=1"
+  );
+  return (
+    <>
+      <h1>Photos</h1>
+      {loading ? (
+        "Loading..."
+      ) : (
+        <ul>
+          {data.map(({ id, title, url }) => (
+            <li key={`photo-${id}`}>
+              <img alt={title} src={url} />
+            </li>
+          ))}
+        </ul>
+      )}
+    </>
+  );
+}
+export default Photos;
+```
+File: hooks.js
+```
+import { useState, useEffect } from "react";
+function useFetch(url) {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  async function fetchUrl() {
+    const response = await fetch(url);
+    const json = await response.json();
+    setData(json);
+    setLoading(false);
+  }
+  useEffect(() => {
+    fetchUrl();
+  }, []);
+  return [data, loading];
+}
+export { useFetch };
+```
 
 ## Modal Dialog
 
@@ -108,6 +160,8 @@ For Bootstrap 4, there is react-strap <https://reactstrap.github.io>
 <https://react-bootstrap.github.io/components/modal/>
 
 <https://stackoverflow.com/questions/48886701/how-to-add-scroll-into-react-bootstrap-modal-body>
+
+<https://www.pluralsight.com/guides/working-with-bootstraps-modals-react>
 
 <https://github.com/shibe97/react-hooks-use-modal>
 
