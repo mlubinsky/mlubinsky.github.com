@@ -32,8 +32,14 @@ Job control consists of the following commands:
 <https://habr.com/ru/company/badoo/blog/468061/> .  CRON
 
 ###  bash  
-shellcheck
 
+
+shellcheck  <https://www.shellcheck.net/>
+
+Bypass finding in hidden folders:
+```
+find . -type f -not -path '*/\.*' | xargs grep "docker run"
+```
 <http://wiki.bash-hackers.org/>
 
 
