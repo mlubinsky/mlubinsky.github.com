@@ -96,6 +96,8 @@ React example
 
 ## UseEffect Hook
 
+<https://overreacted.io/a-complete-guide-to-useeffect/>
+
 <https://www.robinwieruch.de/react-hooks-fetch-data>
 
 <https://daveceddia.com/useeffect-hook-examples/>
