@@ -3,6 +3,40 @@
 
 <https://github.com/wagoodman/dive> see docker layers
 
+### Env
+ 
+ set environment variables for your containers at runtime via the
+ ```
+ docker run --env
+ ```
+ and
+ ```
+ docker run --env-file commands. 
+```
+```
+--build-arg		Set build-time variables
+```
+Set build-time variables (--build-arg)
+You can use ENV instructions in a Dockerfile to define variable values. These values persist in the built image. However, often persistence is not what you want. Users want to specify variables differently depending on which host they build an image on.
+
+A good example is http_proxy or source versions for pulling intermediate files. The ARG instruction lets Dockerfile authors define values that users can set at build-time using the --build-arg flag:
+```
+$ docker build --build-arg HTTP_PROXY=http://10.20.30.2:1234 --build-arg FTP_PROXY=http://40.50.60.5:4567 .
+```
+This flag allows you to pass the build-time variables that are accessed like regular environment variables in the RUN instruction of the Dockerfile. Also, these values don’t persist in the intermediate or final images like ENV values do. You must add --build-arg for each build argument.
+
+Using this flag will not alter the output you see when the ARG lines from the Dockerfile are echoed during the build process.
+
+For detailed information on using ARG and ENV instructions, see the Dockerfile reference.
+
+You may also use the --build-arg flag without a value, in which case the value from the local environment will be propagated into the Docker container being built:
+```
+$ export HTTP_PROXY=http://10.20.30.2:1234
+$ docker build --build-arg HTTP_PROXY .
+This is similar to how docker run -e works. Refer to the docker run documentation for more information.
+```
+
+
 ## Volumes
 ```
 The -v flag is very flexible. It can bindmount or name a volume with just a slight adjustment in syntax. 
