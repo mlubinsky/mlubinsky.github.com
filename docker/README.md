@@ -4,6 +4,17 @@
 <https://github.com/wagoodman/dive> see docker layers
 
 ### Env
+Dockerfile
+```
+FROM busybox
+ENV SHARED_FOLDER
+CMD echo $SHARED_FOLDER
+```
+
+$ docker build -t my_app .
+$ docker run -e SHARED_FOLDER=/xxx 
+
+
  
  set environment variables for your containers at runtime via the
  ```
