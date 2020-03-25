@@ -1,5 +1,6 @@
  <https://medium.com/@leventov/smoothiemap-2-the-lowest-memory-hash-table-ever-6bebd06780a3> .   Hash Tables comparisons
  
+ <https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-14/>
  
  <https://habr.com/ru/post/471772/> How Java works
  
