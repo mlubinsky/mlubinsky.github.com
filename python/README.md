@@ -4,6 +4,8 @@
 
 <https://towardsdatascience.com/tour-of-python-itertools-2af84db18a5e> itertools
 
+<https://github.com/kellyjonbrazil/jello>  JSON util
+
 
 ```
  python -m py_compile my.py   # Check file syntax
