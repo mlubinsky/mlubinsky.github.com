@@ -2,6 +2,8 @@
 
 <https://www.youtube.com/channel/UCaYQbIciTyBFMTRE2Zp81tw>
 
+<https://www.youtube.com/watch?v=ap5Z1Q3y3Pw>
+
 <https://github.com/mochow13/competitive-programming-library> 
 
 <https://malisper.me/an-algorithm-for-passing-programming-interviews/>
