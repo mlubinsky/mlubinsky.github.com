@@ -9,6 +9,8 @@
 
 <https://towardsdatascience.com/a-collection-of-a-b-testing-learning-resources-newbie-to-master-6bab1e0d7845>
 
+<https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html>
+
 UDF for Hive (Java)
 <https://github.com/rexrliu/hiveudf/blob/master/src/main/java/com/hive/udf/TTest.java>
 
