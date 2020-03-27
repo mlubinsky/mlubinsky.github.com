@@ -1211,39 +1211,6 @@ peer authentication on the other hand, is used for local connections and verifie
 
 ```
 
-## Grafana
-
-<https://habr.com/ru/post/448676/>
-
-<https://news.ycombinator.com/item?id=21343521>
-
-<https://grafana.com/docs/reference/templating/#the-timefilter-or-timefilter-variable>
-WHERE $__timeFilter(
-<https://youtu.be/FhNUrueWwOk?list=PLDGkOdUX1Ujo3wHw9-z5Vo12YLqXRjzg2> . Variables in Grafana
-
-<https://grafana.com/docs/reference/templating/>
-
-<https://kb.groundworkopensource.com/display/DOC721/How+to+GroundWork+Grafana+dashboard+variables>
-
-The templating feature allows you to create variables that can be used in your metric queries, series names and panel titles. Use this feature to create generic dashboards that can quickly be changed to show graphs for different servers or metrics.
-
-<http://localhost:3000/>
-
-<http://localhost:3000/datasources>
-
-http://ec2-18-221-216-253.us-east-2.compute.amazonaws.com:3000/login . admin/admin1
-
-<https://grafana.com/plugins/postgres>
-
-<http://docs.grafana.org/features/datasources/postgres/>
-
-<https://grafana.com/blog/2018/10/15/make-time-series-exploration-easier-with-the-postgresql/timescaledb-query-editor/>
-
-<https://stackoverflow.com/questions/48512014/using-postgres-with-grafana>
-
-<https://habr.com/ru/company/1cloud/blog/443006/>
-
-<https://www.youtube.com/watch?v=sKNZMtoSHN4&index=7&list=PLDGkOdUX1Ujo3wHw9-z5Vo12YLqXRjzg2>
 
 ## Links
 
