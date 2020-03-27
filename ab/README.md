@@ -9,6 +9,9 @@
 
 <https://towardsdatascience.com/a-collection-of-a-b-testing-learning-resources-newbie-to-master-6bab1e0d7845>
 
+UDF for Hive (Java)
+<https://github.com/rexrliu/hiveudf/blob/master/src/main/java/com/hive/udf/TTest.java>
+
 * What are we trying to test and what metrics to use?
 * How to estimate the sample size and pick confidence & power level prior to the test (FYI here is the link to Adobe Target’s sample size calculator)?
 * How to split the test audience?
