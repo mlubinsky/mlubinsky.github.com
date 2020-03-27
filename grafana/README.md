@@ -2,7 +2,7 @@ VictoriaMetrics
 
 <https://habr.com/ru/post/494034/>
 
-<<https://medium.com/@teebr/iot-with-an-esp32-influxdb-and-grafana-54abc9575fb2>>
+<https://medium.com/@teebr/iot-with-an-esp32-influxdb-and-grafana-54abc9575fb2>>
 
 
 <https://habr.com/ru/post/448676/>
@@ -21,17 +21,17 @@ https://utcc.utoronto.ca/~cks/space/blog/sysadmin/PrometheusGrafanaSetup-2019
 
 https://habr.com/ru/post/482272/
 
------
+ 
 
-https://habr.com/ru/post/448676/
+<https://grafana.com/docs/reference/templating/#the-timefilter-or-timefilter-variable>
 
-https://news.ycombinator.com/item?id=21343521
+WHERE $__timeFilter  
 
-https://grafana.com/docs/reference/templating/#the-timefilter-or-timefilter-variable WHERE $__timeFilter( https://youtu.be/FhNUrueWwOk?list=PLDGkOdUX1Ujo3wHw9-z5Vo12YLqXRjzg2 . Variables in Grafana
+<https://youtu.be/FhNUrueWwOk?list=PLDGkOdUX1Ujo3wHw9-z5Vo12YLqXRjzg2> . Variables in Grafana
 
-https://grafana.com/docs/reference/templating/
+<https://grafana.com/docs/reference/templating/>
 
-https://kb.groundworkopensource.com/display/DOC721/How+to+GroundWork+Grafana+dashboard+variables
+<https://kb.groundworkopensource.com/display/DOC721/How+to+GroundWork+Grafana+dashboard+variables>
 
 The templating feature allows you to create variables that can be used in your metric queries, series names and panel titles. Use this feature to create generic dashboards that can quickly be changed to show graphs for different servers or metrics.
 
@@ -41,7 +41,7 @@ http://localhost:3000/datasources
 
 http://ec2-18-221-216-253.us-east-2.compute.amazonaws.com:3000/login . admin/admin1
 
-https://grafana.com/plugins/postgres
+<https://grafana.com/plugins/postgres>
 
 http://docs.grafana.org/features/datasources/postgres/
 
@@ -59,15 +59,19 @@ https://www.youtube.com/watch?v=sKNZMtoSHN4&index=7&list=PLDGkOdUX1Ujo3wHw9-z5Vo
 https://www.youtube.com/watch?v=sKNZMtoSHN4&index=7&list=PLDGkOdUX1Ujo3wHw9-z5Vo12YLqXRjzg2
 
 
-Prometheus - for system monitoring 
+## Prometheus - for system monitoring 
 
 
 https://utcc.utoronto.ca/~cks/space/blog/sysadmin/PrometheusGrafanaSetup-2019
+
 https://habr.com/ru/post/482272/
 
 https://github.com/danielfm/prometheus-for-developers
+
 https://habr.com/ru/company/southbridge/blog/455290/
+
  https://habr.com/ru/company/itsumma/blog/350200/
+ 
 В состав Prometheus входят следующие компоненты:
 * сервер, который считывает метрики и сохраняет их в темпоральной (time series) базе данных;
 * клиентские библиотеки для различных языков программирования (Go, Java, Python, Ruby, ...)
