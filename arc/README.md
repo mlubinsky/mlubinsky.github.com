@@ -123,6 +123,7 @@ imagine that you have no task-switching penalties but have to perform two tasks 
 
 <https://github.com/zendesk/pakkr>
 
+<https://streamz.readthedocs.io/en/latest/index.html>
 
 <https://cgarciae.github.io/pypeln/> 
 
