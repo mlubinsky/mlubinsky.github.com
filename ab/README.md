@@ -1,6 +1,8 @@
 
 <https://www.udacity.com/course/ab-testing--ud257> free course
 
+<https://www.evanmiller.org/ab-testing/>
+
 <https://towardsdatascience.com/a-summary-of-udacity-a-b-testing-course-9ecc32dedbb1>
 
 
