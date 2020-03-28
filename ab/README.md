@@ -3,6 +3,12 @@
 
 <https://towardsdatascience.com/a-summary-of-udacity-a-b-testing-course-9ecc32dedbb1>
 
+
+<https://en.wikipedia.org/wiki/Click-through_rate>
+
+the percentage of people visiting a web page who access a hypertext link to a particular advertisement.
+
+
 <https://tech.showmax.com/2020/02/ab-testing-part1/> 
 
 <https://en.wikipedia.org/wiki/A/B_testing>
