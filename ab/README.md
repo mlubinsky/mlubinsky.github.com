@@ -8,6 +8,12 @@
 
 the percentage of people visiting a web page who access a hypertext link to a particular advertisement.
 
+The Click-through-probability (CTP) is the probability a given user clicks to get to the next step.
+
+
+
+
+
 
 <https://tech.showmax.com/2020/02/ab-testing-part1/> 
 
