@@ -16,6 +16,8 @@ Materialize is a streaming data warehouse. Materialize accepts input data from a
 
 ## Postgres
 
+<https://www.graphile.org/postgraphile/postgresql-schema-design/>
+
 <https://habr.com/ru/company/tensor/blog/492464/> 
 
 <https://habr.com/ru/company/tensor/blog/492694/>
