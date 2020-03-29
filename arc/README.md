@@ -1,5 +1,8 @@
 <https://queue.acm.org/pastissues.cfm> ACM transactions
 
+
+<https://github.com/heathermiller/dist-prog-book> . Dist prog
+
 <https://blog.eyas.sh/2020/03/data-oriented-architecture/>
 
 <https://news.ycombinator.com/item?id=22519974>
