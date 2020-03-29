@@ -1,3 +1,5 @@
+<https://news.ycombinator.com/item?id=22718466> what is schema vs database in Postgres?
+
 ## Redis
 <https://habr.com/ru/post/485672/>
 
