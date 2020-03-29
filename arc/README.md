@@ -3,6 +3,8 @@
 
 <https://github.com/heathermiller/dist-prog-book> . Dist prog
 
+<https://news.ycombinator.com/item?id=22702293>
+
 <https://blog.eyas.sh/2020/03/data-oriented-architecture/>
 
 <https://news.ycombinator.com/item?id=22519974>
