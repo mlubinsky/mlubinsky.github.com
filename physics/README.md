@@ -15,6 +15,19 @@
 
 <https://gereshes.com/2020/01/13/attracted-to-attractors/>
 
+## youtube
+
+https://www.youtube.com/watch?v=ovJcsL7vyrk
+
+https://www.youtube.com/user/EugeneKhutoryansky
+
+https://www.youtube.com/watch?v=WVSWzRdpIHs
+
+https://www.youtube.com/results?search_query=best+physics+channel
+
+https://www.youtube.com/user/MIT
+
+
 ## QED
 
 <https://medium.com/cantors-paradise/when-feynman-met-dirac-fe9cca0006df>
