@@ -13,8 +13,14 @@ the percentage of people visiting a web page who access a hypertext link to a pa
 The Click-through-probability (CTP) is the probability a given user clicks to get to the next step.
 
 
+Конверсия вычисляется как доля от общего числа посетителей, совершивших какое-либо действие. Действием может быть заполнение формы на посадочной странице, совершение покупки в интернет-магазине, регистрация, подписка на новости, клик на ссылку или блок.
+
+Т-критерий Стюдента требует нормальное распределение. Вы предлагаете биномиальное (конверсия). Нормальная аппроксимация справедлива когда pn>5 и n(1-p)>5. en.wikipedia.org/wiki/Binomial_proportion_confidence_interval
+
+Т.е. если на сайте 1% конверсии, то выборка должна быть на 500 кликов минимум. Если мы изучаем клики по банеру c CTR 0.1%, то показов должно быть 5к минимум. Так что не совсем верно: «Этот тест хорошо зарекомендовал себя для небольших объемов данных».
 
 
+<https://habr.com/ru/search/?q=%5Bab%20testing%5D&target_type=posts>
 
 
 <https://tech.showmax.com/2020/02/ab-testing-part1/> 
