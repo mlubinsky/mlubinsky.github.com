@@ -10,6 +10,8 @@
 
 ## Code (python)
 
+<https://stats.stackexchange.com/questions/329465/assessing-a-b-test-results-using-python>
+
 <https://towardsdatascience.com/the-math-behind-a-b-testing-with-example-code-part-1-of-2-7be752e1d06f>
 
 <https://www.mikulskibartosz.name/how-to-perform-an-ab-test-correctly-in-python/>
