@@ -1,5 +1,5 @@
 
-<https://www.udacity.com/course/ab-testing--ud257> free course
+
 
 
 ## Online calcs
@@ -12,21 +12,25 @@
 
 <https://towardsdatascience.com/the-math-behind-a-b-testing-with-example-code-part-1-of-2-7be752e1d06f>
 
+<https://www.mikulskibartosz.name/how-to-perform-an-ab-test-correctly-in-python/>
 
 <https://towardsdatascience.com/a-b-testing-design-execution-6cf9e27c6559>
 
-
 <https://medium.com/@sasidhar.konda/ab-testing-in-python-1b5608207d86>
-
 
 <https://medium.com/@henryfeng/handy-functions-for-a-b-testing-in-python-f6fdff892a90>
 
 
+## Online Classes
 
+<https://www.udacity.com/course/ab-testing--ud257> free course
+
+<https://www.datacamp.com/courses/customer-analytics-ab-testing-in-python> . free course
 
 <https://towardsdatascience.com/a-summary-of-udacity-a-b-testing-course-9ecc32dedbb1>
 
 
+## CTR
 <https://en.wikipedia.org/wiki/Click-through_rate>
 
 the percentage of people visiting a web page who access a hypertext link to a particular advertisement.
