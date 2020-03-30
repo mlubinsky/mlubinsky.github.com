@@ -26,6 +26,14 @@ The Click-through-probability (CTP) is the probability a given user clicks to ge
 Т.е. если на сайте 1% конверсии, то выборка должна быть на 500 кликов минимум. Если мы изучаем клики по банеру c CTR 0.1%, то показов должно быть 5к минимум. Так что не совсем верно: «Этот тест хорошо зарекомендовал себя для небольших объемов данных».
 
 
+
+### Hive from python
+
+<https://stackoverflow.com/questions/21370431/how-to-access-hive-via-python>
+
+
+
+
 <https://habr.com/ru/search/?q=%5Bab%20testing%5D&target_type=posts>
 
 
