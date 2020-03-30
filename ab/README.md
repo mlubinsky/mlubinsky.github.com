@@ -2,11 +2,26 @@
 <https://www.udacity.com/course/ab-testing--ud257> free course
 
 
-Online calcs
+## Online calcs
 
 <https://www.evanmiller.org/ab-testing/>
 
 <https://vwo.com/tools/ab-test-siginficance-calculator/>
+
+## Code (python)
+
+<https://towardsdatascience.com/the-math-behind-a-b-testing-with-example-code-part-1-of-2-7be752e1d06f>
+
+
+<https://towardsdatascience.com/a-b-testing-design-execution-6cf9e27c6559>
+
+
+<https://medium.com/@sasidhar.konda/ab-testing-in-python-1b5608207d86>
+
+
+<https://medium.com/@henryfeng/handy-functions-for-a-b-testing-in-python-f6fdff892a90>
+
+
 
 
 <https://towardsdatascience.com/a-summary-of-udacity-a-b-testing-course-9ecc32dedbb1>
