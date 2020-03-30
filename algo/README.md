@@ -8,6 +8,11 @@
 
 <https://malisper.me/an-algorithm-for-passing-programming-interviews/>
 
+
+## Hash
+
+<https://www.partow.net/programming/hashfunctions/idx.html>
+
 ### minhash
 <https://en.wikipedia.org/wiki/MinHash> minhash
 
