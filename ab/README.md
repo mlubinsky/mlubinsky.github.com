@@ -27,10 +27,11 @@ The Click-through-probability (CTP) is the probability a given user clicks to ge
 
 
 
-### Hive from python
+### Hive from Python
 
 <https://stackoverflow.com/questions/21370431/how-to-access-hive-via-python>
 
+<https://towardsdatascience.com/working-with-hive-using-aws-s3-and-python-4c7471533f98>
 
 
 
