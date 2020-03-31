@@ -32,7 +32,7 @@
 <https://towardsdatascience.com/a-summary-of-udacity-a-b-testing-course-9ecc32dedbb1>
 
 
-## CTR
+## CTR, Page View
 <https://en.wikipedia.org/wiki/Click-through_rate>
 
 the percentage of people visiting a web page who access a hypertext link to a particular advertisement.
@@ -42,6 +42,8 @@ The Click-through-probability (CTP) is the probability a given user clicks to ge
 <https://www.digitalpacific.com.au/blog/what-is-the-difference-between-hits-visits-unique-visitors-page-impressions/>
 
 Конверсия вычисляется как доля от общего числа посетителей, совершивших какое-либо действие. Действием может быть заполнение формы на посадочной странице, совершение покупки в интернет-магазине, регистрация, подписка на новости, клик на ссылку или блок.
+
+A pageview or page view, abbreviated in business to PV and occasionally called page impression, is a request to load a single HTML file (web page) of an Internet site.[1] 
 
 Т-критерий Стюдента требует нормальное распределение. Вы предлагаете биномиальное (конверсия). Нормальная аппроксимация справедлива когда pn>5 и n(1-p)>5. en.wikipedia.org/wiki/Binomial_proportion_confidence_interval
 
