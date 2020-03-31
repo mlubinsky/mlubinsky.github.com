@@ -2,6 +2,8 @@
 
 <https://www.youtube.com/watch?v=xqTNceHxkIo> Postgres performance
 
+<https://habr.com/ru/company/tensor/blog/494776/> SQL tricks
+
 ## Redis
 <https://habr.com/ru/post/485672/>
 
