@@ -39,6 +39,7 @@ the percentage of people visiting a web page who access a hypertext link to a pa
 
 The Click-through-probability (CTP) is the probability a given user clicks to get to the next step.
 
+<https://www.digitalpacific.com.au/blog/what-is-the-difference-between-hits-visits-unique-visitors-page-impressions/>
 
 Конверсия вычисляется как доля от общего числа посетителей, совершивших какое-либо действие. Действием может быть заполнение формы на посадочной странице, совершение покупки в интернет-магазине, регистрация, подписка на новости, клик на ссылку или блок.
 
