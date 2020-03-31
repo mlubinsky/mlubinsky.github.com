@@ -8,6 +8,50 @@
 
 <https://vwo.com/tools/ab-test-siginficance-calculator/>
 
+```
+        | Converted | Total visits | Conversion Rate
+--------|-------------------------------------------
+Control | Cn        | Ct           |  Cn / Ct
+Variant | Vn        | Vt           |  Vn / Vt
+```
+Null hypotesis: Conversion rates are the same
+## Code (SQL)
+### z-score = (x - μ / σ)
+<http://www.silota.com/docs/recipes/sql-z-score.html>
+
+z-score for a set of values by subtracting the average
+ from the value and dividing the result by the standard deviation.
+```
+select  (a - avg(a)) / stddev(a) as z-score
+```
+```
+ select  col_a - avg(a) over()) / stdev(a) over() 
+```    
+
+Postgres window function:
+```
+SELECT v, (v - (AVG(v) OVER ()) / (stddev(v) OVER ())) AS z_v
+FROM  (
+VALUES (1),(2),(3)
+) vals (v);
+```
+
+```
+with sales_stats as
+    (select avg(sales) as mean,
+            stddev(sales) as sd
+    from zscore),
+    visitor_stats as
+    (select avg(visitors) as mean,
+            stddev(visitors) as sd
+    from zscore)
+select dt,
+    abs(sales - sales_stats.mean) / sales_stats.sd as z_score_sales,
+    abs(visitors - visitor_stats.mean) / visitor_stats.sd as z_score_visitors
+from sales_stats,
+    visitor_stats,
+    zscore;
+```    
 ## Code (python)
 
 <https://stats.stackexchange.com/questions/329465/assessing-a-b-test-results-using-python>
