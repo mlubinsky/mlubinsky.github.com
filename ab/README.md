@@ -1,5 +1,15 @@
+### t-statistic: 
+represents the difference between averages of test and control group in units of standard error. Higher t-statistic value means bigger difference and supports our hypothesis.
+
+### p-value: 
+measures the probability of the null hypothesis to be true.
+
+### significance level (a)
+
+### statistical power (1-b)
 
 
+<https://towardsdatascience.com/the-ultimate-guide-to-a-b-testing-part-3-parametric-tests-2c629e8d98f8>
 
 
 ## Online calcs
@@ -8,6 +18,7 @@
 
 <https://vwo.com/tools/ab-test-siginficance-calculator/>
 
+A typical 95% confidence level for an A/B test corresponds to a significance level of 0.05.
 ```
         | Converted | Total visits | Conversion Rate
 --------|-------------------------------------------
