@@ -54,6 +54,8 @@ from sales_stats,
 ```    
 
 ## Redshift + python
+<http://michaelerasm.us/post/a-redshift-udf-to-find-ab-test-significance/>
+
 <https://engineering.ezcater.com/measuring-ab-tests-sql-for-pvalue-graphs-in-redshift>
 
 <https://www.sisense.com/blog/ab-testing-in-redshift/>
