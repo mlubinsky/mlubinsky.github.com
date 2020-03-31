@@ -14,8 +14,14 @@
 Control | Cn        | Ct           |  Cn / Ct
 Variant | Vn        | Vt           |  Vn / Vt
 ```
+
+Lift = diff between Conversion rates
+ We can assume that the distribution for our control group is binomial because the data is a series of Bernoulli trials, where each trial only has two possible outcomes (similar to a coin flip).
+ Intuitively, we would feel more confident in our results as our sample sizes grow larger.  
+ 
 Null hypotesis: Conversion rates are the same
 ## Code (SQL)
+
 ### z-score = (x - μ / σ)
 <http://www.silota.com/docs/recipes/sql-z-score.html>
 
