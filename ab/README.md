@@ -52,6 +52,11 @@ from sales_stats,
     visitor_stats,
     zscore;
 ```    
+
+## Redshift + python
+
+<https://www.sisense.com/blog/ab-testing-in-redshift/>
+
 ## Code (python)
 
 <https://stats.stackexchange.com/questions/329465/assessing-a-b-test-results-using-python>
