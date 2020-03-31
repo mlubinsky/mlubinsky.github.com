@@ -15,6 +15,12 @@ DynamoDB
 <https://www.udemy.com/course/the-ultimate-hands-on-course-to-master-apache-airflow/> . Udemy
 
  
+## Setup
+
+<https://medium.com/@achilleus/robust-apache-airflow-deployment-dd02a6c75c78>
+
+<https://medium.com/@achilleus/easy-way-to-manage-your-airflow-setup-b7c030dd1cb8>
+
 
 ## Bash operator
 
