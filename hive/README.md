@@ -12,6 +12,9 @@ Druid is fast
 
 <https://medium.com/@leventov/comparison-of-the-open-source-olap-systems-for-big-data-clickhouse-druid-and-pinot-8e042a5ed1c7>
 
+
+<https://blog.cloudera.com/benchmarking-time-series-workloads-on-apache-kudu-using-tsbs/> . Kudu
+
 But Pinot is faster?
 <https://pinot.apache.org/>
 
