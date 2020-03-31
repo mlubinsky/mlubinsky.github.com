@@ -54,6 +54,7 @@ from sales_stats,
 ```    
 
 ## Redshift + python
+<https://engineering.ezcater.com/measuring-ab-tests-sql-for-pvalue-graphs-in-redshift>
 
 <https://www.sisense.com/blog/ab-testing-in-redshift/>
 
