@@ -1,5 +1,6 @@
 <https://queue.acm.org/pastissues.cfm> ACM transactions
 
+<https://itnext.io/mlops-not-as-boring-as-it-sounds-eaebe73e3533> . ML Ops
 
 <https://github.com/heathermiller/dist-prog-book> . Dist prog
 
