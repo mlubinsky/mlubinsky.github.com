@@ -11,6 +11,16 @@ measures the probability of the null hypothesis to be true.
 
 <https://towardsdatascience.com/the-ultimate-guide-to-a-b-testing-part-3-parametric-tests-2c629e8d98f8>
 
+<https://towardsdatascience.com/the-ultimate-guide-to-a-b-testing-part-4-non-parametric-tests-4db7b4b6a974>
+
+## Student’s T-distribution
+
+T-distribution is a cousin of the Normal distribution - a bit shorter and fatter .
+The T-distribution is used instead of the normal distribution when you have small samples (usually in practice less than 30). The larger the size of your sample, the more the t-distribution looks like the normal one.  
+
+# Chi-Square distribution
+  This one is widely used for statistical testing of categorical data.
+Chi-square distribution is a special case of gamma-distribution (just like T-distribution), and has only one parameter: degrees of freedom (ν), which is as simple as number of possible categories minus one. The distribution only has positive values, and it is right-screwed. Its shape varies depending on ν: from very asymmetric with low ν, to almost normally-shaped with very high ν (with ν approaches infinity, chi-square distribution becomes normal distribution)
 
 ## Online calcs
 
