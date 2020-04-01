@@ -1,5 +1,8 @@
 <https://codeplea.com/embedding-files-in-c-programs>
 
+
+<https://awesomecpp.com/>
+
 <https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md>
 
 <https://open.compscicenter.ru/archive/modern-cpp-1/>
