@@ -10,6 +10,7 @@
 
 <https://malisper.me/an-algorithm-for-passing-programming-interviews/>
 
+<https://habr.com/ru/company/JetBrains-education/blog/495014/>
 
 ## Hash
 
