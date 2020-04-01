@@ -1,8 +1,16 @@
+<https://en.wikipedia.org/wiki/Test_statistic>
+
 ### t-statistic: 
 represents the difference between averages of test and control group in units of standard error. Higher t-statistic value means bigger difference and supports our hypothesis.
 
+<https://en.wikipedia.org/wiki/T-statistic>
+
 ### p-value: 
 measures the probability of the null hypothesis to be true.
+
+<https://www.wikihow.com/Calculate-P-Value>
+
+<https://en.wikipedia.org/wiki/P-value>
 
 ### significance level (a)
 
