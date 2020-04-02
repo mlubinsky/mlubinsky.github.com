@@ -148,6 +148,26 @@ x num_of_rows group_con
 3    2                 three,five
 7    1                 seven
 ```
+Following does not work - why?
+```
+select id, SUBSTR(
+ collect_set(
+  split(
+   concat_ws('&', collect_set(IF(active_exp_map LIKE '%:%',  active_exp_map, NULL),
+   '&'),
+  '&')
+   )
+),1,1000)
+from 
+( select 1 as id,  'a:1&b:2&c:3' as active_exp_map
+  union
+  select 1 as id,  'b:2&c:3&a:1' as active_exp_map
+  union
+  select 1 as id,  'c:3&a:1&b:2&c:3' as active_exp_map
+)  A
+group by id
+```
+
 
 ### How to set variables in Hive script:
 
