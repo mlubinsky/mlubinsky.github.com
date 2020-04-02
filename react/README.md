@@ -18,7 +18,12 @@
 <https://blog.logrocket.com/how-to-use-svgs-in-react/>
 
 ## React + Chart.js + Bootstrap table
+
 <https://github.com/trekhleb/covid-19>
+
+<https://github.com/bgarcevic/outbreak-monitor>
+
+<https://outbreak-monitor.herokuapp.com/>
 
 ## React and D3 
 
