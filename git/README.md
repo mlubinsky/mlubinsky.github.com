@@ -2,6 +2,8 @@
 
 <https://gitexplorer.com/>
 
+
+
 <https://git-fork.com/> Fork: UI for Git
 
 <https://www.sublimemerge.com/>  Git UI Client, from the makers of Sublime Text
@@ -61,6 +63,9 @@ Overwrite single file in my current branch with the same file in the master bran
 ``git checkout master file_to_replace``
 
 ## Rebasing and Squashing
+
+<https://www.youtube.com/watch?v=UWwazJ_46s0> git rebase
+
 <https://www.atlassian.com/git/tutorials/merging-vs-rebasing>
 
 <https://www.daolf.com/posts/git-series-part-3/>
