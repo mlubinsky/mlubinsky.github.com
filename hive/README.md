@@ -148,6 +148,14 @@ x num_of_rows group_con
 3    2                 three,five
 7    1                 seven
 ```
+
+<https://stackoverflow.com/questions/48178027/hive-aggregate-function-for-merging-arrays>
+```
+select key, collect_set(explodedvalue) from (
+  select key, explodedvalue from table_above lateral view explode(value) e as explodedvalue
+) t group by key;
+```
+<https://github.com/brndnmtthws/facebook-hive-udfs/blob/master/src/main/java/com/facebook/hive/udf/UDFArrayConcat.java>
 Following does not work - why?
 ```
 select id, SUBSTR(
