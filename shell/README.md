@@ -26,6 +26,12 @@ Job control consists of the following commands:
 * The disown command removes a job from the list of jobs (without killing it).
 * A foreground job can be suspended by typing ^Z (Control-Z). A suspended job is temporarily stopped.
 
+## Disable buffering
+Многие консольные утилиты буферизируют stdout. Из-за этого последовательный pipe ломается. 
+
+Некоторые утилиты поддерживают настройку буферизации: sed -u, grep --line-buffered. 
+
+В другом случае можно использовать универсальный способ stdbuf -oL и unbuffer.
 
 ### CRON
 <https://habr.com/ru/company/badoo/blog/465021/>  cron etc processes PATH
