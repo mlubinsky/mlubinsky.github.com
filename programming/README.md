@@ -3,6 +3,9 @@
  {} Curly brackets  are often called braces 
  () Parentheses
 ```
+
+<https://academy.lightbend.com/courses>  mostly scala and reactive programming
+
 <https://stackexchange.com/sites>
 
 <https://leanpub.com/bookstore/book> 
