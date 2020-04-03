@@ -1,3 +1,5 @@
+<https://physicstravelguide.com/>
+
 <https://nautil.us/issue/83/intelligence/how-to-make-sense-of-quantum-physics>
 
 <https://www.quantamagazine.org/mathematicians-prove-batchelors-law-of-turbulence-20200204/> Turbulence
