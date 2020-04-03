@@ -10,6 +10,8 @@
 
 ## Python plotting
 
+<https://soliddata.io/index.php/2020/03/31/how-to-do-data-visualization-with-python/> seaborn
+
 <https://towardsdatascience.com/plotting-with-python-c2561b8c0f1f>
 
 <http://pyviz.org/>
