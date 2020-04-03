@@ -1,5 +1,9 @@
 <https://realnotcomplex.com/>
 
+<http://www.randomservices.org/random/>
+
+<http://immersivemath.com/ila/index.html>
+
 <http://brilliant.org>
 
 <https://www.youtube.com/user/OpenLektorium/videos>
