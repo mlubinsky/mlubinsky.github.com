@@ -2,6 +2,10 @@
 
 <https://habr.com/ru/post/155203/> . WiFi extension
 
+## External Board in Mac
+
+ls /Volumes/NOD_H743ZI2/
+
 ### Online compiler
 <https://ide.mbed.com/compiler>
 
