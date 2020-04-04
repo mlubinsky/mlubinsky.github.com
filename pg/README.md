@@ -1,5 +1,9 @@
 <https://news.ycombinator.com/item?id=22718466> what is schema vs database in Postgres?
 
+<https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791> What is wrong with Postgres?
+
+<https://news.ycombinator.com/item?id=22775330>   What is wrong with Postgres?
+
 <https://www.youtube.com/watch?v=xqTNceHxkIo> Postgres performance
 
 <https://habr.com/ru/company/tensor/blog/494776/> SQL tricks
