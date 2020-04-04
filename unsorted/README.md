@@ -25,6 +25,10 @@ LastPass KeePass, PasswordSafe, minykeypass - password managers
 
 <https://habr.com/ru/post/474658/> choose right mouse!
 
+## Molecular biology
+
+<https://news.ycombinator.com/item?id=22763100>
+
 ## Shoes
 <https://youtu.be/IijQyX_YCKA>
 
