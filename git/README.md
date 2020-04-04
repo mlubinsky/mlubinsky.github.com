@@ -9,6 +9,8 @@
 <https://www.sublimemerge.com/>  Git UI Client, from the makers of Sublime Text
 
 
+<https://codersbible.com/5-git-commands-to-know-just-after-you-get-the-basics/>
+
 <https://rogerdudler.github.io/git-guide/>
 
 <https://learngitbranching.js.org/>
