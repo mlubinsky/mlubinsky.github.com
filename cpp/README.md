@@ -16,7 +16,7 @@
 <https://lordsof.tech/tech/serialisation-of-c-classes-with-very-little-code/>. serialization
 
 
-### Concurrent
+### Concurrent pthreads
 
 <https://begriffs.com/posts/2020-03-23-concurrent-programming.html>
 
@@ -30,7 +30,29 @@
 
 <http://www.icce.rug.nl/documents/cplusplus/>
 
+```
+#include <stdio.h>
 
+float get_model_result(float* temp_value){
+ printf ("--- inside the get_model_result ---\n");
+ for (int i=0; i<10; i++){
+    printf("%f\n",temp_value[i]);
+ }
+ return 0.1f;
+}
+
+int main(){
+ printf("Hello\r\n");
+ float temp_value[10];
+ for (int i=0; i<10; i++){
+    temp_value[i]=i+0.01;
+    printf("%f\n",temp_value[i]);
+ }
+ float res=get_model_result(temp_value);
+
+ return 0;
+}
+```
 
 <https://ds9a.nl/articles/posts/cpp-2/>
 
