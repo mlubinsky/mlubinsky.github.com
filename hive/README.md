@@ -121,7 +121,12 @@ Example: FIND_IN_SET('ha','hao,mn,hc,ha,hef') returns 4
 
 ### collect_set and concat_ws
 <https://stackoverflow.com/questions/61038050/hive-how-to-eliminate-the-duplicated-substrings>
-
+```
+select t.i, concat_ws('&',collect_set(e.val)) as grouped_s
+  from T t 
+       lateral view outer explode(split(t.s,'&')) e as val
+ group by t.i; 
+``` 
 <https://dwgeek.com/apache-hive-group_concat-alternative-example.html/>
 ```
 collect_set(col)  Returns a set of objects with duplicate elements eliminated.
