@@ -220,6 +220,8 @@ function shipmentES5Defaults(params) {
 
 <https://www.freecodecamp.org/news/how-to-build-a-movie-search-app-using-react-hooks-24eb72ddfaf7/>
 
+<https://blog.bitsrc.io/11-useful-custom-react-hooks-for-your-next-app-c66307cf0f0c>
+
 До появления хуков у функциональных компонентов не было возможности задавать локальный стейт. \
 Ситуация изменилась с появлением useState().
 ```
