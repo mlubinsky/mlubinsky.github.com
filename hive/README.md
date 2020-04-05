@@ -158,22 +158,27 @@ select key, collect_set(explodedvalue) from (
 <https://github.com/brndnmtthws/facebook-hive-udfs/blob/master/src/main/java/com/facebook/hive/udf/UDFArrayConcat.java>
 Following does not work - why?
 ```
-select id, SUBSTR(
+  create table sbschema.roku_t1 (x int, s string);
+  insert into sbschema.roku_t1 values
+  (1, "a:1&b:2"),
+  (1, "b:2&c:3"),
+  (2, "c:1&d:2"),
+  (2, "c:1");
+ 
+SELECT x,
+        count(*) as num_of_rows,
+concat_ws('&',
  collect_set(
   split(
-   concat_ws('&', collect_set(IF(active_exp_map LIKE '%:%',  active_exp_map, NULL),
-   '&'),
-  '&')
-   )
-),1,1000)
-from 
-( select 1 as id,  'a:1&b:2&c:3' as active_exp_map
-  union
-  select 1 as id,  'b:2&c:3&a:1' as active_exp_map
-  union
-  select 1 as id,  'c:3&a:1&b:2&c:3' as active_exp_map
-)  A
-group by id
+        concat_ws('&' , collect_set(s))
+      , "&"
+  )
+ )
+)
+as group_con
+FROM sbschema.roku_t1 group by x;
+
+FAILED: SemanticException [Error 10128]: Line 6:24 Not yet supported place for UDAF 'collect_set'
 ```
 
 
