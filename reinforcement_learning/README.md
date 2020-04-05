@@ -10,6 +10,8 @@
 
 <https://github.com/dennybritz/reinforcement-learning>
 
+<https://github.com/marload/deep-rl-tf2>
+
 <https://habr.com/ru/post/483078/>
 
 <https://rlpyt.readthedocs.io/en/latest/>
