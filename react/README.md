@@ -1,3 +1,8 @@
+## classes
+<https://jscomplete.com/learn/react-beyond-basics>
+
+<https://app.pluralsight.com/course-player?clipId=b7748658-8609-49e9-95cf-a9b11c60a115>
+
 <https://runjs.dev/>
 
 <https://stackoverflow.com/questions/60795932/react-for-displaying-the-the-log-file-in-real-time-flask-backend>
