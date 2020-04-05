@@ -2,6 +2,7 @@ CSS <https://every-layout.dev/>
 
 <https://habr.com/ru/post/472816/> JS patterns
 
+<https://fullstackopen.com/en/> 
 
 <https://habr.com/ru/post/485294/> .  NodeJS in 2020 free russian cource
 
