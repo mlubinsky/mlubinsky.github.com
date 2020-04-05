@@ -1,5 +1,8 @@
 <https://en.wikipedia.org/wiki/Test_statistic>
 
+###  degrees of freedom
+Degrees of freedom are a measure the amount of variability involved in the research, which is determined by the number of categories you are examining. The equation for degrees of freedom is Degrees of freedom = n-1, where "n" is the number of categories or variables being analyzed in your experiment.
+
 ### t-statistic: 
 represents the difference between averages of test and control group in units of standard error. Higher t-statistic value means bigger difference and supports our hypothesis.
 
