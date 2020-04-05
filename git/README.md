@@ -19,6 +19,8 @@
 
 <https://serokell.io/blog/comparison-of-github-and-gitlab> github vs gitlab
 
+<https://www.infoq.com/presentations/history-comments-git/>
+
 github from python
 ```
 #! /usr/bin/python3
