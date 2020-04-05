@@ -1,5 +1,9 @@
 <https://en.wikipedia.org/wiki/Test_statistic>
 
+### Looker
+
+<https://kickstarter.engineering/a-b-test-reporting-in-looker-bf4869f6b52>
+
 ###  degrees of freedom
 Degrees of freedom are a measure the amount of variability involved in the research, which is determined by the number of categories you are examining. The equation for degrees of freedom is Degrees of freedom = n-1, where "n" is the number of categories or variables being analyzed in your experiment.
 
