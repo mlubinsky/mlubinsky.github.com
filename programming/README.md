@@ -6,6 +6,8 @@
 
 <https://academy.lightbend.com/courses>  mostly scala and reactive programming
 
+<https://habr.com/ru/company/JetBrains-education/blog/495014/> 
+
 <https://stackexchange.com/sites>
 
 <https://leanpub.com/bookstore/book> 
