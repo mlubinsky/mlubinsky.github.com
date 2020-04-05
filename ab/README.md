@@ -36,6 +36,9 @@ The T-distribution is used instead of the normal distribution when you have smal
 # Chi-Square distribution
 
 <https://www.udemy.com/tutorial/statistics-by-example/feel-the-chi-square-statistic/>
+
+<https://study.com/academy/lesson/the-chi-square-test.html>
+
   This one is widely used for statistical testing of categorical data.
 Chi-square distribution is a special case of gamma-distribution (just like T-distribution), and has only one parameter: degrees of freedom (ν), which is as simple as number of possible categories minus one. The distribution only has positive values, and it is right-screwed. Its shape varies depending on ν: from very asymmetric with low ν, to almost normally-shaped with very high ν (with ν approaches infinity, chi-square distribution becomes normal distribution)
 
