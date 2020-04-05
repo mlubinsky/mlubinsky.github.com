@@ -2,6 +2,7 @@
 
 <https://arxiv.org/abs/2003.01384> Self-Supervised Object-Level Deep Reinforcement Learning
 
+<https://jaydaigle.net/blog/overview-of-bayesian-inference/>
 
 <https://dmm.dreamwidth.org/23855.html>
 
