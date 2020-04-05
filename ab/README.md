@@ -34,6 +34,8 @@ T-distribution is a cousin of the Normal distribution - a bit shorter and fatter
 The T-distribution is used instead of the normal distribution when you have small samples (usually in practice less than 30). The larger the size of your sample, the more the t-distribution looks like the normal one.  
 
 # Chi-Square distribution
+
+<https://www.udemy.com/tutorial/statistics-by-example/feel-the-chi-square-statistic/>
   This one is widely used for statistical testing of categorical data.
 Chi-square distribution is a special case of gamma-distribution (just like T-distribution), and has only one parameter: degrees of freedom (ν), which is as simple as number of possible categories minus one. The distribution only has positive values, and it is right-screwed. Its shape varies depending on ν: from very asymmetric with low ν, to almost normally-shaped with very high ν (with ν approaches infinity, chi-square distribution becomes normal distribution)
 
