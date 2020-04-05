@@ -120,6 +120,8 @@ The FIND_IN_SET function searches for the search string in the source_string_lis
 Example: FIND_IN_SET('ha','hao,mn,hc,ha,hef') returns 4
 
 ### collect_set and concat_ws
+<https://stackoverflow.com/questions/61038050/hive-how-to-eliminate-the-duplicated-substrings>
+
 <https://dwgeek.com/apache-hive-group_concat-alternative-example.html/>
 ```
 collect_set(col)  Returns a set of objects with duplicate elements eliminated.
