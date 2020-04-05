@@ -1,3 +1,8 @@
+<https://arxiv.org/abs/1911.01547> On the Measure of Intelligence François Chollet
+
+<https://arxiv.org/abs/2003.01384> Self-Supervised Object-Level Deep Reinforcement Learning
+
+
 <https://dmm.dreamwidth.org/23855.html>
 
 <https://www.edgeimpulse.com/blog/dsp-key-embedded-ml> DSP for ML
