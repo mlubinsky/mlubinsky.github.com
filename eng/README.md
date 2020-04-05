@@ -1,6 +1,8 @@
 <https://www.youtube.com/watch?v=lacxb-UQn44> 
 Английский язык с Мариной Озеровой
 
+<https://habr.com/ru/company/englishdom/blog/494934/>
+
 <https://medium.com/fantageek/improving-communication-english-pronunciation-108074236c80>
 
 <https://habr.com/ru/post/474232/>
