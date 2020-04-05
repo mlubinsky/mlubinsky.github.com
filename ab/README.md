@@ -111,6 +111,8 @@ from sales_stats,
 
 ## Code (python)
 
+<https://www.quora.com/How-can-I-do-an-A-B-test-in-Python>
+
 <https://stats.stackexchange.com/questions/329465/assessing-a-b-test-results-using-python>
 
 <https://towardsdatascience.com/the-math-behind-a-b-testing-with-example-code-part-1-of-2-7be752e1d06f>
