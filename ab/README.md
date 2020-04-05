@@ -4,6 +4,9 @@
 
 <https://kickstarter.engineering/a-b-test-reporting-in-looker-bf4869f6b52>
 
+<https://discourse.looker.com/t/simplified-a-b-test-analysis-redshift-python-udf-and-p-value-measure/2635>
+
+
 ###  degrees of freedom
 Degrees of freedom are a measure the amount of variability involved in the research, which is determined by the number of categories you are examining. The equation for degrees of freedom is Degrees of freedom = n-1, where "n" is the number of categories or variables being analyzed in your experiment.
 
@@ -223,7 +226,6 @@ http://ai.stanford.edu/people/ronnyk/2009-ExPpitfalls.pdf
 
 <https://engineering.linkedin.com/blog/2020/making-the-linkedin-experimentation-engine-20x-faster>  LinkedIn framework
 
-<https://discourse.looker.com/t/simplified-a-b-test-analysis-redshift-python-udf-and-p-value-measure/2635>
 
 ## Netflix, Linkedin, etc
 
