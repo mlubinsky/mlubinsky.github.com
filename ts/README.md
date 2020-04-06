@@ -1,5 +1,7 @@
 <https://www.coursera.org/learn/practical-time-series-analysis/home/welcome>
 
+<https://habr.com/ru/post/495884/> NN for time series
+
 <https://www.m3db.io/> Uber's TS database
 
 <https://www.dataengineeringpodcast.com/datadog-timeseries-data-episode-113/>
