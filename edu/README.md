@@ -10,6 +10,8 @@
 
 
 ## Math
+Introduction to Linear Dynamical Systems (EE263)
+<https://www.youtube.com/playlist?list=PL06960BA52D0DB32B>
 
 Lecture 6: Singular Value Decomposition (SVD)
 <https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/video-lectures/lecture-6-singular-value-decomposition-svd/>
