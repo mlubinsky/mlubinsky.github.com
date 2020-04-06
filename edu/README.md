@@ -17,7 +17,12 @@ Harward
 Classic of computer science
 <http://matterhorn.dce.harvard.edu/engage/ui/index.html#/2020/02/25717>
 
+
+
 ## Math
+Linear Algebra Done Right
+<https://link.springer.com/book/10.1007/978-3-319-11080-6>
+
 Introduction to Linear Dynamical Systems (EE263)
 <https://www.youtube.com/playlist?list=PL06960BA52D0DB32B>
 
