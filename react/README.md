@@ -169,6 +169,8 @@ export { useFetch };
 
 ## Modal Dialog
 
+<https://habr.com/ru/post/495518/>
+
 For Bootstrap 3 use React-Bootstrap <https://react-bootstrap.github.io/components/modal>
 
 ```
@@ -216,7 +218,8 @@ function shipmentES5Defaults(params) {
 ```
 
 
-## Functional component
+## Hooks andFunctional component
+<https://scotch.io/tutorials/how-to-move-from-consuming-higher-order-components-to-react-hooks>
 
 <https://www.freecodecamp.org/news/how-to-build-a-movie-search-app-using-react-hooks-24eb72ddfaf7/>
 
