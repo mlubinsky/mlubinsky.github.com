@@ -6,6 +6,8 @@
 
 <https://thinc.ai/>
 
+<https://distill.pub/2020/grand-tour/>
+
 <https://github.com/lutzroeder/netron> viewer for many NN formats
 
 https://math.mit.edu/ennui/ . Elegant NN UI
