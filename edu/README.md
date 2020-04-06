@@ -8,6 +8,8 @@
 
 <https://app.pluralsight.com/library/courses/using-react-hooks/table-of-contents>
 
+Classic of computer science
+<http://matterhorn.dce.harvard.edu/engage/ui/index.html#/2020/02/25717>
 
 ## Math
 Introduction to Linear Dynamical Systems (EE263)
@@ -21,3 +23,8 @@ Geometric Algebra
 
 Leonard Susskind - Why does mathematics work?
 <https://www.youtube.com/watch?v=2bgZmBAnhdg>
+
+Abstract Algebra
+<http://matterhorn.dce.harvard.edu/engage/ui/index.html#/1999/01/82345>
+
+
