@@ -1,5 +1,7 @@
 <https://en.wikipedia.org/wiki/Test_statistic>
 
+<https://www.khanacademy.org/math/ap-statistics/tests-significance-ap/one-sample-t-test-mean/v/calculating-p-value-from-t-statistic>
+
 ### Looker
 
 <https://kickstarter.engineering/a-b-test-reporting-in-looker-bf4869f6b52>
