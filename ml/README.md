@@ -10,6 +10,8 @@
 
 <https://www.edgeimpulse.com/blog/dsp-key-embedded-ml> DSP for ML
 
+<https://amitness.com/2020/03/fixmatch-semi-supervised/>
+
 <https://habr.com/ru/post/491010/>
 
 <https://habr.com/ru/post/491326/> Data classification
