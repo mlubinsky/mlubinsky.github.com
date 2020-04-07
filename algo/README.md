@@ -4,6 +4,8 @@
 
 <https://www.youtube.com/watch?v=jM2dhDPYMQM>. Sliding window
 
+<https://www.youtube.com/watch?v=AAMLzNaDkjk&utm_source=reddit> System design
+
 <https://www.youtube.com/watch?v=ap5Z1Q3y3Pw>
 
 <https://github.com/mochow13/competitive-programming-library> 
