@@ -8,6 +8,9 @@
 
 <https://habr.com/ru/post/475210/>. Pandas
 
+## Virtual env in Jupyter Notebook
+https://janakiev.com/blog/jupyter-virtual-envs/
+
 # Jupyter Pandas NumPy Scikit
 
 <https://www.youtube.com/playlist?list=PL5-da3qGB5IBITZj_dYSFqnd_15JgqwA6>
