@@ -66,6 +66,11 @@ Overwrite single file in my current branch with the same file in the master bran
 
 ``git checkout master file_to_replace``
 
+
+## Remote repo
+
+<https://gist.github.com/Chaser324/ce0505fbed06b947d962>
+
 ## Rebasing and Squashing
 
 <https://www.youtube.com/watch?v=UWwazJ_46s0> git rebase
@@ -185,13 +190,13 @@ over the suggested
 If you use git and don't know the difference, read this: 
 <https://stackoverflow.com/questions/8196544/what-are-the-git-concepts-of-head-master-origin>
 
-*HEAD: the current commit your repo is on. Most of the time HEAD points to the latest commit in your current branch, but that doesn't have to be the case. HEAD really just means "what is my repo currently pointing at".
+* HEAD: the current commit your repo is on. Most of the time HEAD points to the latest commit in your current branch, but that doesn't have to be the case. HEAD really just means "what is my repo currently pointing at".
 
 In the event that the commit HEAD refers to is not the tip of any branch, this is called a "detached head".
 
-*master: the name of the default branch that git creates for you when first creating a repo. In most cases, "master" means "the main branch". Most shops have everyone pushing to master, and master is considered the definitive view of the repo. But it's also common for release branches to be made off of master for releasing. Your local repo has its own master branch, that almost always follows the master of a remote repo.
+* master: the name of the default branch that git creates for you when first creating a repo. In most cases, "master" means "the main branch". Most shops have everyone pushing to master, and master is considered the definitive view of the repo. But it's also common for release branches to be made off of master for releasing. Your local repo has its own master branch, that almost always follows the master of a remote repo.
 
-*origin: the default name that git gives to your main remote repo. Your box has its own repo, and you most likely push out to some remote repo that you and all your coworkers push to. That remote repo is almost always called origin, but it doesn't have to be.
+* origin: the default name that git gives to your main remote repo. Your box has its own repo, and you most likely push out to some remote repo that you and all your coworkers push to. That remote repo is almost always called origin, but it doesn't have to be.
 
 HEAD is an official notion in git. HEAD always has a well-defined meaning. master and origin are common names usually used in git, but they don't have to be.
 
