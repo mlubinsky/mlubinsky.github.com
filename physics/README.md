@@ -18,6 +18,8 @@
 
 <https://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf>
 
+<https://news.ycombinator.com/item?id=22810867>
+
 ## Chaos
 <https://youtu.be/ovJcsL7vyrk>
 
