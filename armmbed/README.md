@@ -17,9 +17,24 @@ on this branch: add-cy8cproto-062-4343w
 
 ```
 git clone git@github.com:maclobdell/mbed-os-example-pelion.git
+git branch -a
 git checkout add-cy8cproto-062-4343w
+
 git checkout remotes/origin/add-cy8cproto-062-4343w   <-- not this
 ```
+
+```
+   mkdir maclain
+   cd maclain/
+   mbed import https://github.com/maclobdell/mbed-os-example-pelion.git
+ 
+   cd mbed-os-example-pelion/
+   git checkout add-cy8cproto-062-4343w
+   mbed status
+   mbed toolchain GCC_ARM
+   mbed device-management init -d arm.com --model-name example-app --force -q
+   mbed deploy ???
+   mbed compile -m CY8CPROTO_062_4343W -t GCC_ARM
 
 ```
 [mbed-os-example-pelion](add-cy8cproto-062-4343w)$ mbed compile -m CY8CPROTO_062_4343W -t GCC_ARM
