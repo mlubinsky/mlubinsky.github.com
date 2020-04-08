@@ -10,8 +10,11 @@ ls /Volumes/NOD_H743ZI2/
 
 You can base the PSoC62 project off of this repo:
 https://github.com/maclobdell/mbed-os-example-pelion
-on this branch: add-cy8cproto-062-4343w
 
+on this branch: add-cy8cproto-062-4343w
+```
+git checkout remotes/origin/add-cy8cproto-062-4343w
+```
 ```
 #include "mbed.h"
 
