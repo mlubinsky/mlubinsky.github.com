@@ -16,6 +16,11 @@ on this branch: add-cy8cproto-062-4343w
 <https://github.com/maclobdell/mbed-os-example-pelion/tree/add-cy8cproto-062-4343w>
 
 ```
+git checkout add-cy8cproto-062-4343w
+git checkout remotes/origin/add-cy8cproto-062-4343w   <-- not this
+```
+
+```
 [mbed-os-example-pelion](add-cy8cproto-062-4343w)$ mbed compile -m CY8CPROTO_062_4343W -t GCC_ARM
 [mbed] WARNING: Python 3 is not yet fully supported: Python errors may occur when compiling, testing and exporting
 ---
@@ -40,14 +45,14 @@ Compile [  0.2%]: CertificateRenewalData.cpp
 
 ```
 
-
-
-
-
 ```
-git checkout add-cy8cproto-062-4343w
-git checkout remotes/origin/add-cy8cproto-062-4343w   <-- not this
+grep mbedOS_SST.h ./BUILD/CY8CPROTO_062_4343W/GCC_ARM/mbed_config.h
+#define PAL_PLATFORM_DEFINED_CONFIGURATION                                    "mbedOS_SST.h"                                                                                   // defined by application
+#define PAL_USER_DEFINED_CONFIGURATION                                        "mbedOS_SST.h"                                                                                   // defined by application
 ```
+
+
+
 ```
 #include "mbed.h"
 
