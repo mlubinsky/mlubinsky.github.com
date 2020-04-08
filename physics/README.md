@@ -14,6 +14,10 @@
 
 <http://www.damtp.cam.ac.uk/user/tong/kintheory/one.pdf> .  Kinetic Theory
 
+## Maxwell
+
+<https://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf>
+
 ## Chaos
 <https://youtu.be/ovJcsL7vyrk>
 
