@@ -13,7 +13,8 @@ https://github.com/maclobdell/mbed-os-example-pelion
 
 on this branch: add-cy8cproto-062-4343w
 ```
-git checkout remotes/origin/add-cy8cproto-062-4343w
+git checkout add-cy8cproto-062-4343w
+git checkout remotes/origin/add-cy8cproto-062-4343w   <-- not this
 ```
 ```
 #include "mbed.h"
