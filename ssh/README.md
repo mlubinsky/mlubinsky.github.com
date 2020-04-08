@@ -98,6 +98,8 @@ Pexpect allows your script to spawn a child application and control it as if a h
 ## SSH 
 <https://gravitational.com/blog/how-to-ssh-properly/>
 
+<https://www.wagner.pp.ru/fossil/advice/doc/trunk/ssh.md>
+
 <https://www.booleanworld.com/set-ssh-keys-linux-unix-server/>
 
 <https://habr.com/post/435546/>
