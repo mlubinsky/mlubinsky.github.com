@@ -16,6 +16,7 @@ on this branch: add-cy8cproto-062-4343w
 <https://github.com/maclobdell/mbed-os-example-pelion/tree/add-cy8cproto-062-4343w>
 
 ```
+git clone git@github.com:maclobdell/mbed-os-example-pelion.git
 git checkout add-cy8cproto-062-4343w
 git checkout remotes/origin/add-cy8cproto-062-4343w   <-- not this
 ```
