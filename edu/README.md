@@ -1,6 +1,7 @@
 A library for development of single-page full-stack web applications in clj/cljs
 <https://fulcro.fulcrologic.com/>
 
+<https://academy.lightbend.com/courses>
 
 <https://www.mooc.fi/en>
 
