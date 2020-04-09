@@ -107,12 +107,15 @@ React example
 
 <https://scotch.io/starters/react/getting-started-with-react-2019-edition>
 
-## UseEffect Hook
-https://lukaszmakuch.pl/post/react-hooks-oops-part-1-introduction
+## UseEffect and other Hooks
 
-https://lukaszmakuch.pl/post/react-hooks-oops-part-2-effect-runs-multiple-times-with-the-same-dependencies
+<https://medium.com/better-programming/8-awesome-react-hooks-2cb31aed4f3d>
 
-https://lukaszmakuch.pl/post/react-hooks-oops-part-3-an-effect-does-not-run-again-when-its-dependencies-change
+<https://lukaszmakuch.pl/post/react-hooks-oops-part-1-introduction>
+
+<https://lukaszmakuch.pl/post/react-hooks-oops-part-2-effect-runs-multiple-times-with-the-same-dependencies>
+
+<https://lukaszmakuch.pl/post/react-hooks-oops-part-3-an-effect-does-not-run-again-when-its-dependencies-change>
 
 <https://overreacted.io/a-complete-guide-to-useeffect/>
 
