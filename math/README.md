@@ -1,5 +1,8 @@
 <https://realnotcomplex.com/>
 
+
+<http://www.stat.columbia.edu/~gelman/book/> .  Bayes book 3rd ed
+
 <http://www.randomservices.org/random/>
 
 <http://immersivemath.com/ila/index.html>
