@@ -6,6 +6,8 @@
 
 <https://github.com/heathermiller/dist-prog-book> . Dist prog
 
+<https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/>
+
 <https://news.ycombinator.com/item?id=22702293>
 
 <https://blog.eyas.sh/2020/03/data-oriented-architecture/>
