@@ -4,6 +4,8 @@ A library for development of single-page full-stack web applications in clj/cljs
 
 <https://github.com/lazyprogrammer/machine_learning_examples>
 
+<https://jscomplete.com/playground>
+
 
 <https://academy.lightbend.com/courses>
 
