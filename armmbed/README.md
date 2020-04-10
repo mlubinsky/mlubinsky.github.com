@@ -8,66 +8,25 @@ ls /Volumes/NOD_H743ZI2/
 
 ## Cypress
 
+<https://www.cypress.com/documentation/development-kitsboards/psoc-6-wifi-bt-pioneer-kit-cy8ckit-062-wifi-bt>
+
 You can base the PSoC62 project off of this repo:
 https://github.com/maclobdell/mbed-os-example-pelion
 
-on this branch: add-cy8cproto-062-4343w
-
-<https://github.com/maclobdell/mbed-os-example-pelion/tree/add-cy8cproto-062-4343w>
-
 ```
-git clone git@github.com:maclobdell/mbed-os-example-pelion.git
-git branch -a
-git checkout add-cy8cproto-062-4343w
-
-git checkout remotes/origin/add-cy8cproto-062-4343w   <-- not this
-```
-
-```
-   mkdir maclain
-   cd maclain/
-   mbed import https://github.com/maclobdell/mbed-os-example-pelion.git
- 
-   cd mbed-os-example-pelion/
-   git checkout add-cy8cproto-062-4343w
-   mbed status
-   mbed toolchain GCC_ARM
-   mbed device-management init -d arm.com --model-name example-app --force -q
-   mbed deploy ???
-   mbed compile -m CY8CPROTO_062_4343W -t GCC_ARM
-
-```
-[mbed-os-example-pelion](add-cy8cproto-062-4343w)$ mbed compile -m CY8CPROTO_062_4343W -t GCC_ARM
-[mbed] WARNING: Python 3 is not yet fully supported: Python errors may occur when compiling, testing and exporting
----
-[mbed] Working path "/Users/miclub01/GIT/mbed-os-example-pelion" (program)
-[Warning] @,: Compiler version mismatch: Have 9.2.1; expected version >= 6.0.0 and < 7.0.0
-Building project mbed-os-example-pelion (CY8CPROTO_062_4343W, GCC_ARM)
-Scan: mbed-os-example-pelion
-Using ROM regions bootloader1, bootloader2, header, application in this build.
-  Region bootloader1: size 0x1400, offset 0x10000000
-  Region bootloader2: size 0xa400, offset 0x10002000
-  Region header: size 0x70, offset 0x1000c000
-  Region application: size 0x1f3c00, offset 0x1000c400
-Compile [  0.1%]: CertificateEnrollmentClient.cpp
-Compile [  0.2%]: CertificateRenewalData.cpp
-[Fatal Error] mbed_config.h@328,79: mbedOS_SST.h: No such file or directory
-[ERROR] '_queue.SimpleQueue' object has no attribute 'queue'
-[mbed] ERROR: "/Users/miclub01/python2_virtual_env/mbed/bin/python" returned error.
-       Code: 1
-       Path: "/Users/miclub01/GIT/mbed-os-example-pelion"
-       Command: "/Users/miclub01/python2_virtual_env/mbed/bin/python -u /Users/miclub01/GIT/mbed-os-example-pelion/mbed-os/tools/make.py -t GCC_ARM -m CY8CPROTO_062_4343W --source . --build ./BUILD/CY8CPROTO_062_4343W/GCC_ARM"
-       Tip: You could retry the last command with "-v" flag for verbose output
+rm -rf mbed-os-example-pelion
+mbed import https://github.com/maclobdell/mbed-os-example-pelion.git
+cd mbed-os-example-pelion/
+git checkout -B "add-cy8cproto-062-4343w-5.13.4" "origin/add-cy8cproto-062-4343w-5.13.4"
+mbed status
+mbed deploy
+mbed device-management init -d arm.com --model-name example-app --force -q
+mbed compile -m CY8CPROTO_062_4343W -t GCC_ARM
 
 ```
 
-```
-grep mbedOS_SST.h ./BUILD/CY8CPROTO_062_4343W/GCC_ARM/mbed_config.h
-#define PAL_PLATFORM_DEFINED_CONFIGURATION                                    "mbedOS_SST.h"                                                                                   // defined by application
-#define PAL_USER_DEFINED_CONFIGURATION                                        "mbedOS_SST.h"                                                                                   // defined by application
-```
 
-
+Where is this code from?
 
 ```
 #include "mbed.h"
