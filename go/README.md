@@ -81,7 +81,9 @@ https://about.sourcegraph.com/go/gophercon-2018-allocator-wrestling/
 
 
 
+## Go Chess
 
+https://zserge.com/posts/carnatus/
 
 
 ### Docker 
