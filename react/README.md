@@ -30,6 +30,11 @@
 
 <https://outbreak-monitor.herokuapp.com/>
 
+### Dash Plotly
+Github: https://github.com/cryptopotluck/Covid-19-Dash-Map
+
+View the Application Here: https://covid-dash-udemy.herokuapp.com/
+
 ## React and D3 
 
 <https://reactfordataviz.com/> 
