@@ -128,6 +128,8 @@ But why are they called sum types? Well, if the value can only be one of a fixed
 
 ## Parsers
 
+<https://zserge.com/posts/cucu-part1/> small compiler
+
 <https://tomassetti.me/why-you-should-not-use-flex-yacc-and-bison/>
 
 <https://news.ycombinator.com/item?id=22491536>
