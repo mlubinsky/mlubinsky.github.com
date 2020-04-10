@@ -201,6 +201,9 @@ https://github.com/ARMmbed/mbed-cli-osx-installer/
 
 <https://os.mbed.com/platforms/ST-Nucleo-H743ZI2/> Pelion Device Ready  
 
+Extension: Accelerometer, Gyroscope, Humidity, Magnetometer, Pressure, Temperature Sensor
+<https://www.digikey.com/product-detail/en/stmicro/X-NUCLEO-IKS01A3/497-18505-ND/9950636>
+
 <https://github.com/BlackstoneEngineering/aiot-workshop/blob/master/mbed_app.json>.  has this
 ```
 "NUCLEO_H743ZI2": {
