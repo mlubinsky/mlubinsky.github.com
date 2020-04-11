@@ -8,6 +8,12 @@ ls /Volumes/NOD_H743ZI2/
 
 ## Cypress
 
+<https://www.cypress.com/documentation/development-kitsboards/psoc-6-wi-fi-bt-prototyping-kit-cy8cproto-062-4343w>
+
+<https://www.cypress.com/file/457891/download>
+
+
+Not this:
 <https://www.cypress.com/documentation/development-kitsboards/psoc-6-wifi-bt-pioneer-kit-cy8ckit-062-wifi-bt>
 
 You can base the PSoC62 project off of this repo:
