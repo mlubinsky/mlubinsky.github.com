@@ -49,6 +49,8 @@ Chi-square distribution is a special case of gamma-distribution (just like T-dis
 
 ## Online calcs
 
+<https://www.danielsoper.com/statcalc/default.aspx#c14>
+
 <https://www.evanmiller.org/ab-testing/>
 
 <https://vwo.com/tools/ab-test-siginficance-calculator/>
