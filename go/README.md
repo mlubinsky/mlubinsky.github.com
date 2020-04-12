@@ -6,6 +6,8 @@
 
 <http://notes.eatonphil.com/interpreting-go.html> Go internals
 
+<https://habr.com/ru/post/496846/> memory
+
 <https://ewanvalentine.io/> 
 
 <https://github.com/x899/algorithms>
