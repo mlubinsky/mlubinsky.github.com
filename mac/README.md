@@ -4,6 +4,11 @@ ProductName:	Mac OS X
 ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
+
+### Split screen verically
+
+<https://youtu.be/cYGrlEtqaVw>
+
 ### Apps 
 <https://github.com/ytdl-org/youtube-dl/> youtube downloader
 
