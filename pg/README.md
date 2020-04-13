@@ -8,6 +8,10 @@
 
 <https://habr.com/ru/company/tensor/blog/494776/> SQL tricks
 
+<https://habr.com/ru/company/tensor/blog/497008/>
+
+<https://habr.com/ru/company/tensor/blog/492694/>
+
 ## Redis
 <https://habr.com/ru/post/485672/>
 
