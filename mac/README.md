@@ -7,6 +7,8 @@ BuildVersion:	18G95
 ### Apps 
 <https://github.com/ytdl-org/youtube-dl/> youtube downloader
 
+<https://news.ycombinator.com/item?id=22849208>
+
 <https://lukemil.es/blog/software-i-like>
 
 ### SSH
