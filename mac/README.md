@@ -7,6 +7,8 @@ BuildVersion:	18G95
 
 ### Split screen verically
 
+<https://support.apple.com/en-us/HT204948>
+
 <https://youtu.be/cYGrlEtqaVw>
 
 ### Apps 
