@@ -4,6 +4,10 @@ ProductName:	Mac OS X
 ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
+### Apps 
+<https://github.com/ytdl-org/youtube-dl/> youtube downloader
+
+<https://lukemil.es/blog/software-i-like>
 
 ### SSH
 <https://stackoverflow.com/questions/24392657/adding-an-rsa-key-without-overwriting>
@@ -39,9 +43,13 @@ You can also get to this by holding the Control key and tapping the up arrow
 
 ## Windows managers for Mac
 
+<https://rectangleapp.com/> 
+
 <https://github.com/koekeishiya/yabai>
 
 <https://magnet.crowdcafe.com/> Magnet 
+
+<https://ianyh.com/amethyst/> Amethyst
 
 <https://setapp.com/apps/mosaic> Mosaic
 
