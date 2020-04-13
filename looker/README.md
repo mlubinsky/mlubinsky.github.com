@@ -1,5 +1,6 @@
 <https://training.looker.com/> mlubinsky@ho / LeVe>
 
+![look](Looker_terms.png)
 <https://docs.looker.com/exploring-data/creating-looker-expressions/looker-functions-and-operators>
 
 <https://docs.looker.com/data-modeling/learning-lookml/lookml-terms-and-concepts>
