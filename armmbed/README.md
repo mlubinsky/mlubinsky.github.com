@@ -1,3 +1,16 @@
+
+## Mbed in Docker
+
+<https://hub.docker.com/r/mbedos/mbed-os-env> official docker from ARM
+```
+docker run -it  -v /Users/miclub01/GIT/FORK/pelion-ml-demo:/mnt/host mbedos/mbed-os-env /bin/bash
+```
+
+## Manifest tool
+
+<https://github.com/ARMmbed/manifest-tool>
+
+## Stuff
 <https://codeplea.com/embedding-files-in-c-programs>
 
 <https://habr.com/ru/post/155203/> . WiFi extension
@@ -368,9 +381,7 @@ $ mbed deploy
 [mbed] Updating library "mbed-os" to rev #e642a7d8b360 (tags: latest, mbed-os-5.15.1)
 [mbed] Auto-installing missing Python modules (pyusb)...
 ```
-## Mbed in Docker
 
-<https://hub.docker.com/r/mbedos/mbed-os-env> official docker from ARM
 
 
 ### COM port apps
