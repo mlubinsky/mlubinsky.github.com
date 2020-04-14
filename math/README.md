@@ -1,5 +1,6 @@
 <https://realnotcomplex.com/>
 
+<https://jwkennington.com/blog/algebra-ladder/> 
 
 <http://www.stat.columbia.edu/~gelman/book/> .  Bayes book 3rd ed
 
