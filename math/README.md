@@ -1,6 +1,12 @@
 <https://realnotcomplex.com/>
 
+### Abstract Algebra
+<https://github.com/mavam/abstract-algebra-cheatsheet>
+
 <https://jwkennington.com/blog/algebra-ladder/> 
+
+<https://news.ycombinator.com/item?id=22861731>
+
 
 <http://www.stat.columbia.edu/~gelman/book/> .  Bayes book 3rd ed
 
