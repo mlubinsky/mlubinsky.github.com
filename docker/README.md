@@ -2,6 +2,8 @@
 docker run -it  -v /Users/miclub01/GIT/FORK/pelion-ml-demo:/mnt/host mbedos/mbed-os-env /bin/bash
 ```
 
+<https://stackoverflow.com/questions/27273412/cannot-install-packages-inside-docker-ubuntu-image>
+
 <https://multipass.run/>
 
 
