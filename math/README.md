@@ -1,5 +1,7 @@
 <https://realnotcomplex.com/>
 
+<http://www.mathnet.ru/php/archive.phtml?wshow=paper&jrnid=ufn&paperid=2258&option_lang=rus>
+
 ### Abstract Algebra
 <https://github.com/mavam/abstract-algebra-cheatsheet>
 
