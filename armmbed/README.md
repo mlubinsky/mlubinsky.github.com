@@ -10,12 +10,17 @@ docker run -it  -v /Users/miclub01/GIT/FORK/pelion-ml-demo:/mnt/host mbedos/mbed
 
 <https://github.com/ARMmbed/manifest-tool>
 
-## Stuff
+## Embedding binary in C
 <https://codeplea.com/embedding-files-in-c-programs>
 
-<https://habr.com/ru/post/155203/> . WiFi extension
+<https://flak.tedunangst.com/post/embedding-binary-objects-in-c>
 
-## External Board in Mac
+<https://news.ycombinator.com/item?id=22888318>
+
+## WiFi extension
+<https://habr.com/ru/post/155203/> 
+
+## External Board in Mac is under /Volumes
 
 ls /Volumes/NOD_H743ZI2/
 
