@@ -2,9 +2,14 @@
 
 <https://queue.acm.org/pastissues.cfm> ACM transactions
 
+## ML infrastructure
 <https://itnext.io/mlops-not-as-boring-as-it-sounds-eaebe73e3533> . ML Ops
 
-<https://github.com/heathermiller/dist-prog-book> . Dist prog
+<https://streamsql.io/blog/microservices-with-machine-learning-feature-store>
+
+
+
+<https://github.com/heathermiller/dist-prog-book> . Distributed prog
 
 <https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/>
 
