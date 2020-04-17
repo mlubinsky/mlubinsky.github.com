@@ -1,5 +1,9 @@
 ## SQL
 
+https://github.com/plotly/falcon
+
+https://news.ycombinator.com/item?id=22883429
+
 <https://www.db-fiddle.com/>
 
 <https://research.neustar.biz/2014/05/19/writing-analytics-sql-with-common-table-expressions/> CTE for analytics
