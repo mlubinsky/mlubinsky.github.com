@@ -2,6 +2,11 @@
 
 <http://muz4in.net/news/chempion_po_zapominaniju_delajte_ehti_3_veshhi_kazhdyj_den_esli_khotite_uluchshit_svoju_pamjat/2020-04-16-51572>.   Memory
 
+User script:
+
+<https://news.ycombinator.com/item?id=22895787>
+
+
 <https://news.ycombinator.com/item?id=21966465>
 
 <https://habr.com/ru/company/smart_start/blog/472796/> interview
