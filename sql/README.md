@@ -1,8 +1,15 @@
-## SQL
+## Falcon
 
-https://github.com/plotly/falcon
+https://github.com/plotly/falcon UI
 
 https://news.ycombinator.com/item?id=22883429
+
+## SQL vs GraphQL
+
+<https://news.ycombinator.com/item?id=22892946>
+
+
+## SQL
 
 <https://www.db-fiddle.com/>
 
