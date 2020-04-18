@@ -1,8 +1,12 @@
-## Falcon
+## Falcon UI
 
 https://github.com/plotly/falcon UI
 
 https://news.ycombinator.com/item?id=22883429
+
+## Datasette
+
+<https://datasette.readthedocs.io/en/stable/>
 
 ## SQL vs GraphQL
 
