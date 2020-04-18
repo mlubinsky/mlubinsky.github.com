@@ -1,5 +1,7 @@
 <https://postnauka.ru/video/154976> blood pressure
 
+<https://news.ycombinator.com/item?id=22892205> posture
+
 ## Health
 
 <https://lenta.ru/news/2020/01/20/health/>   грецкие орехи способствуют развитию полезных для кишечника бактерий, которые могут быть полезны для сердца.
