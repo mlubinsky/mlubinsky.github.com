@@ -1,6 +1,9 @@
 <https://en.wikipedia.org/wiki/Test_statistic>
 
+
 <https://habr.com/ru/post/496750/> stratification
+
+<https://habr.com/ru/company/yandex/blog/497804/>  stratification
 
 <https://www.khanacademy.org/math/ap-statistics/tests-significance-ap/one-sample-t-test-mean/v/calculating-p-value-from-t-statistic>
 
