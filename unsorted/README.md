@@ -7,11 +7,11 @@ User script:
 <https://news.ycombinator.com/item?id=22895787>
 
 
-<https://news.ycombinator.com/item?id=21966465>
+<https://news.ycombinator.com/item?id=21966465>  Top Paying Tech Companies by SWE Level (
 
 <https://habr.com/ru/company/smart_start/blog/472796/> interview
 
-<https://habr.com/ru/post/464757/> how to optimize linked in profile
+<https://habr.com/ru/post/464757/> how to optimize LinkedIn profile
 
 <https://news.ycombinator.com/item?id=21900498> best books
 
