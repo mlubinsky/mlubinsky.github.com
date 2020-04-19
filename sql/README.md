@@ -1,8 +1,12 @@
 ## Falcon UI
 
-https://github.com/plotly/falcon UI
+<https://github.com/plotly/falcon> UI
 
-https://news.ycombinator.com/item?id=22883429
+<https://news.ycombinator.com/item?id=22883429>
+
+# TablePlus DBeawer
+
+<https://news.ycombinator.com/item?id=22908224>
 
 ## Datasette
 
