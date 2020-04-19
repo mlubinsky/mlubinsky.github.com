@@ -17,6 +17,29 @@ docker run -it  -v /Users/miclub01/GIT/FORK/pelion-ml-demo:/mnt/host mbedos/mbed
 
 <https://news.ycombinator.com/item?id=22888318>
 
+
+## CMSIS-NN
+
+Because CMSIS-NN targets embedded devices, it focuses on fixed-point arithmetic. This means that a neural network cannot simply be reused. Instead, it needs to be converted to a fixed-point format that will run on a Cortex-M device.
+
+<https://github.com/ARM-software/CMSIS_5/tree/develop/CMSIS/NN>
+
+<https://developer.arm.com/solutions/machine-learning-on-arm/developer-material/how-to-guides/converting-a-neural-network-for-arm-cortex-m-with-cmsis-nn>
+
+## TF micro on Mbed
+
+<https://petewarden.com/>
+
+<https://github.com/tensorflow/tensorflow/issues?q=mbed>
+ 
+<https://github.com/tensorflow/tensorflow/issues/34896>
+
+<https://github.com/tensorflow/tensorflow/pull/38481>
+
+```
+mbed compile -m DISCO_F746NG -t GCC_ARM -D TF_LITE_STATIC_MEMORY
+```
+
 ## WiFi extension
 <https://habr.com/ru/post/155203/> 
 
