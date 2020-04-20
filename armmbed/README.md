@@ -30,6 +30,9 @@ Because CMSIS-NN targets embedded devices, it focuses on fixed-point arithmetic.
 
 <https://stackoverflow.com/questions/60764852/deploying-tflite-on-microcontrollers>
 
+<https://github.com/ARMmbed/mbed-os/tree/master/targets>
+
+
 <https://gitter.im/tensorflow/sig-micro>
 
 <https://github.com/tensorflow/tensorflow/issues?q=mbed>
@@ -59,6 +62,7 @@ ls /Volumes/NOD_H743ZI2/
 
 <https://www.cypress.com/file/457891/download>
 
+<https://github.com/ARMmbed/mbed-os/tree/master/targets/TARGET_Cypress/TARGET_PSOC6/TARGET_CY8CPROTO_062_4343W>
 
 Not this:
 <https://www.cypress.com/documentation/development-kitsboards/psoc-6-wifi-bt-pioneer-kit-cy8ckit-062-wifi-bt>
