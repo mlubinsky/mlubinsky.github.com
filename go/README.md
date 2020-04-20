@@ -1,5 +1,8 @@
 <https://go101.org/article/101.html> 
 
+<https://news.ycombinator.com/item?id=22892639>  Go to write production-grade back end services
+
+
 <https://tour.golang.org/welcome/1> Go playground
 
 <https://play.golang.org/p/Irqxm0okfkt> .  Go playgrounds
