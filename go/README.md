@@ -2,6 +2,8 @@
 
 <https://news.ycombinator.com/item?id=22892639>  Go to write production-grade back end services
 
+<https://habr.com/ru/company/lamoda/blog/495344/>
+
 
 <https://tour.golang.org/welcome/1> Go playground
 
