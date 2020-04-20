@@ -8,6 +8,8 @@
 
 <https://github.com/jbranchaud/til/blob/master/README.md> tips
 
+<https://news.ycombinator.com/item?id=22908044> tips
+
 
 <https://academy.lightbend.com/courses>  mostly scala and reactive programming
 
