@@ -28,6 +28,8 @@ Because CMSIS-NN targets embedded devices, it focuses on fixed-point arithmetic.
 
 ## TF micro on Mbed
 
+<https://stackoverflow.com/questions/60764852/deploying-tflite-on-microcontrollers>
+
 <https://gitter.im/tensorflow/sig-micro>
 
 <https://github.com/tensorflow/tensorflow/issues?q=mbed>
