@@ -11,6 +11,10 @@
 ## Linux tools
 <https://news.ycombinator.com/item?id=22438730>
 
+
+## Terminal shortcats
+<https://ramantehlan.github.io/blog/post/terminalshortcuts/>
+
 ## bash job control
 
 <https://www.linuxjournal.com/content/job-control-bash-feature-you-only-think-you-dont-need>
