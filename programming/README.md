@@ -13,7 +13,9 @@
 
 <https://academy.lightbend.com/courses>  mostly scala and reactive programming
 
-<https://habr.com/ru/company/JetBrains-education/blog/495014/> 
+<https://habr.com/ru/post/497402/> make your own language in Python
+
+<https://habr.com/ru/company/JetBrains-education/blog/495014/>  educational links
 
 <https://stackexchange.com/sites>
 
