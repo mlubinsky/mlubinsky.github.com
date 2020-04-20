@@ -6,6 +6,8 @@
 
 <https://luminousmen.com/post/asynchronous-programming-await-the-future>
 
+<https://github.com/jbranchaud/til/blob/master/README.md> tips
+
 
 <https://academy.lightbend.com/courses>  mostly scala and reactive programming
 
