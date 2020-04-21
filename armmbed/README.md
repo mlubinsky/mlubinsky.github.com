@@ -1,3 +1,16 @@
+## MBed Version
+```
+pwd
+[mbed-os-example-pelion](add-cy8cproto-capsense-slider)  
+grep "define MBED_MINOR_VERSION"  mbed-os/platform/mbed_version.h
+#define MBED_MINOR_VERSION 14
+
+grep "define MBED_PATCH_VERSION" mbed-os/platform/mbed_version.h
+#define MBED_PATCH_VERSION 1
+ 
+grep "define MBED_MAJOR_VERSION"  mbed-os/platform/mbed_version.h
+#define MBED_MAJOR_VERSION 5
+```
 
 ## Mbed in Docker
 
