@@ -1,6 +1,9 @@
 <https://postnauka.ru/video/154976> blood pressure
 
+## Posture
 <https://news.ycombinator.com/item?id=22892205> posture
+
+<https://habr.com/ru/company/habr/blog/498634/>
 
 ## Health
 
