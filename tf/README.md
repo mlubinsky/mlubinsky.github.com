@@ -67,6 +67,13 @@ This is a one-liner: TfLiteStatus invoke_status = interpreter . Invoke ();
  TfLiteTensor * output = interpreter . output ( 0 ); 
  
  The output is, like the input, a floating-point scalar value nestled inside a 2D tensor. 
+ 
+ we grab the output value and inspect it to make sure that it meets our high standards. First we assign it to a float variable: // Obtain the output value from the tensor float 
+ 
+ value = output > data . f [ 0 ]; 
+ 
+ Each time inference is run, the output tensor will be overwritten with new values. This means that if you want to keep an output value around in your program while continuing to run inference, you’ll need to copy it from the output tensor, 
+
 ```
 
 
