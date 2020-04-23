@@ -1,5 +1,6 @@
 <https://en.wikipedia.org/wiki/Test_statistic>
 
+<https://habr.com/ru/company/boodet_online/blog/498688/>  
 
 <https://habr.com/ru/post/496750/> stratification
 
