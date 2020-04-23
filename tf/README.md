@@ -10,7 +10,23 @@ With TensorFlow Lite, we need to do the following:
  - Invoke the model.
  - Read the output from the output tensor.
 ```
-### main_functions.cc .
+### main_functions.cc 
+
+<https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/main_functions.cc>
+
+```
+kXrange -  specifies the maximum possible x value as 2π, 
+kInferencesPerCycle  - defines the number of inferences that we want to perform as we step from 0 to 2π. 
+```
+
+The next few lines of code calculate the x value: // Calculate an x value to feed into the model. We compare the current // inference_count to the number of inferences per cycle to determine // our position within the range of possible x values the model was // trained on, and use this to calculate a value. 
+
+```
+float position = static_cast < float > ( inference_count ) / static_cast < float > ( kInferencesPerCycle ); 
+float x_val = position * kXrange ; 
+```
+The first two lines of code just divide inference_count (which is the number of inferences we’ve done so far) by kInferencesPerCycle to obtain our current “position” within the range. The next line multiplies that value by kXrange , which represents the maximum value in the range (2π). 
+ . 
   last thing we do in our loop() function is increment our inference_count counter. If it has reached the maximum number of inferences per cycle defined in kInferencesPerCycle , we reset it to 0: 
   ```
   // Increment the inference_counter, and reset it if we have reached 
@@ -18,9 +34,6 @@ With TensorFlow Lite, we need to do the following:
   inference_count += 1 ; if ( inference_count >= kInferencesPerCycle ) inference_count = 0 ; 
   ```
   The next time our loop iterates, 
-
-Warden, Pete,Situnayake, Daniel. TinyML (Kindle Locations 1968-1976). O'Reilly Media. Kindle Edition. 
-
 
 
 The following cell runs xxd on our quantized model, writes the output to a file called sine_model_quantized.cc , and prints it to the screen: # Install xxd if it is not available ```apt-get qq install xxd```
