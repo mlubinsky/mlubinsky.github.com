@@ -5,6 +5,7 @@ Image formats:
 
 <https://habr.com/ru/post/461365/> compvision
 
+https://habr.com/ru/company/jetinfosystems/blog/498652/ Mask R-CNN etc
 <https://habr.com/ru/company/mipt/blog/458190/>  Вижу, значит существую: обзор Deep Learning в Computer Vision (часть 2)
 
 <https://habr.com/ru/post/481844/>
