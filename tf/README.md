@@ -62,6 +62,11 @@ input > data . f [ 2 ] = 3. ;
 After we’ve set up the input tensor, it’s time to run inference. 
 This is a one-liner: TfLiteStatus invoke_status = interpreter . Invoke (); 
  
+ Reading the Output Like the input, our model’s output is accessed through a TfLiteTensor , and getting a pointer to it is just as simple: 
+ 
+ TfLiteTensor * output = interpreter . output ( 0 ); 
+ 
+ The output is, like the input, a floating-point scalar value nestled inside a 2D tensor. 
 ```
 
 
