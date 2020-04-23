@@ -1,3 +1,36 @@
+## TF Micro
+
+To make predictions with our Keras model, we could just call the predict() method, passing an array of inputs. 
+
+With TensorFlow Lite, we need to do the following: 
+```
+ - Instantiate an Interpreter object.
+ - Call some methods that allocate memory for the model.
+ - Write the input to the input tensor.
+ - Invoke the model.
+ - Read the output from the output tensor.
+```
+
+The following cell runs xxd on our quantized model, writes the output to a file called sine_model_quantized.cc , and prints it to the screen: # Install xxd if it is not available ```apt-get qq install xxd```
+
+  Save the file as a C source file
+ ```
+  xxd i sine_model_quantized.tflite > sine_model_quantized.cc
+ ``` 
+  Print the source file 
+  ```cat sine_model_quantized.cc```
+  
+  The output is very long, so we won’t reproduce it all here, but here’s a snippet that includes just the beginning and end: 
+  
+ ``` 
+  unsigned char sine_model_quantized_tflite [] = { 0x1c , 0x00 , 0x00 , 0x00 , 0x54 , 0x46 , 0x4c , 0x33 , 0x00 , 0x00 , 0x12 , 0x00 , 0x1c , 0x00 , 0x04 , 0x00 
+  
+  0x00 , 0x09 , 0x04 , 0x00 , 0x00 , 0x00 }; 
+  unsigned int sine_model_quantized_tflite_len = 2512 ; 
+
+```
+
+
 ### Udacity free TF 2 course
 
 <https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187>
