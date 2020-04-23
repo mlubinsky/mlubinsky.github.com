@@ -23,12 +23,31 @@ The following cell runs xxd on our quantized model, writes the output to a file 
   The output is very long, so we won’t reproduce it all here, but here’s a snippet that includes just the beginning and end: 
   
  ``` 
-  unsigned char sine_model_quantized_tflite [] = { 0x1c , 0x00 , 0x00 , 0x00 , 0x54 , 0x46 , 0x4c , 0x33 , 0x00 , 0x00 , 0x12 , 0x00 , 0x1c , 0x00 , 0x04 , 0x00 
-  
+  unsigned char sine_model_quantized_tflite [] = {
+  0x1c , 0x00 , 0x00 , 0x00 , 0x54 , 0x46 , 0x4c , 0x33 , 0x00 , 0x00 , 0x12 , 0x00 , 0x1c , 0x00 , 0x04 , 0x00 
+  ...
   0x00 , 0x09 , 0x04 , 0x00 , 0x00 , 0x00 }; 
   unsigned int sine_model_quantized_tflite_len = 2512 ; 
 
 ```
+
+<https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/sine_model_data.h>
+
+// Create an area of memory to use for input, output, and intermediate arrays. 
+// Finding the minimum value for your model may require some trial and error. 
+```
+const int tensor_arena_size = 2 × 1024 ; uint8_t tensor_arena [ tensor_arena_size ]; 
+
+
+write our input data to the model’s input tensor: 
+// Obtain a pointer to the model's input tensor 
+
+TfLiteTensor * input = interpreter . input ( 0 ); 
+
+
+```
+
+
 
 
 ### Udacity free TF 2 course
