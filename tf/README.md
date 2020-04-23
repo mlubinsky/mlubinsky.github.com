@@ -58,6 +58,10 @@ input > data . f [ 0 ] = 1. ;
 input > data . f [ 1 ] = 2. ; 
 input > data . f [ 2 ] = 3. ;  
 
+
+After we’ve set up the input tensor, it’s time to run inference. 
+This is a one-liner: TfLiteStatus invoke_status = interpreter . Invoke (); 
+ 
 ```
 
 
