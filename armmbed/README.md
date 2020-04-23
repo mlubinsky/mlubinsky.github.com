@@ -96,47 +96,6 @@ mbed compile -m CY8CPROTO_062_4343W -t GCC_ARM
 ```
 
 
-Where is this code from?
-
-```
-#include "mbed.h"
-
-DigitalOut thermVDD(P10_3,1);
-DigitalOut thermGND(P10_0,0);
-AnalogIn thermOut(P10_1);
-DigitalOut led(LED1);
-
-float readTemp();
-
-int main()
-{
-    while (true) {
-        led = !led; //blink an led for fun
-        float tempF = readTemp();  //read the temperature
-        printf("Current temp (F): %f\r\n", tempF);
-        ThisThread::sleep_for(5000); //wait 5 sec - don't block, let other threads run
-    }
-}
-
-float readTemp()
-{
-    float refVoltage = thermOut.read() * 2.4; // Range of ADC 0->2*Vref
-    float refCurrent = refVoltage  / 10000.0; // 10k Reference Resistor
-    float thermVoltage = 3.3 - refVoltage;    // Assume supply voltage is 3.3v
-    float thermResistance = thermVoltage / refCurrent;
-    float logrT = (float32_t)log((float64_t)thermResistance);
-
-    /* Calculate temperature from the resistance of thermistor using Steinhart-Hart Equation */
-    float stEqn = (float32_t)((0.0009032679) + ((0.000248772) * logrT) +
-                             ((2.041094E-07) * pow((float64)logrT, (float32)3)));
-
-    float temperatureC = (float32_t)(((1.0 / stEqn) - 273.15)  + 0.5);
-    float temperatureF = (temperatureC * 9.0/5.0) + 32;
-
-    return temperatureF;
-}
-```
-
 ### Online compiler
 <https://ide.mbed.com/compiler>
 
@@ -170,6 +129,7 @@ float readTemp()
 <https://www.rlocman.ru/review/article.html?di=600377> Kalman filter
 
 ## Pelion Device Management
+<https://blog.pelion.com/en>. Pelion Blog
 
 <https://www.pelion.com/docs/device-management/current/updating-firmware/integrating-the-client-in-your-application.html>
 
