@@ -171,6 +171,8 @@ float readTemp()
 
 ## Pelion Device Management
 
+<https://www.pelion.com/docs/device-management/current/updating-firmware/setting-up.html> Device Update
+
 <https://github.com/maclobdell/fota-runner/blob/master/fota-runner.py>
 
 <https://armh.sharepoint.com/sites/Iot-partner-enablement-o365/SitePages/ISG-Training---October-2018.aspx?web=1>
