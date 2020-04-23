@@ -171,6 +171,8 @@ float readTemp()
 
 ## Pelion Device Management
 
+<https://www.pelion.com/docs/device-management/current/updating-firmware/integrating-the-client-in-your-application.html>
+
 <https://www.pelion.com/docs/device-management/current/updating-firmware/setting-up.html> Device Update
 
 <https://github.com/maclobdell/fota-runner/blob/master/fota-runner.py>
