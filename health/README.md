@@ -5,6 +5,10 @@
 
 <https://habr.com/ru/company/habr/blog/498634/>
 
+## Vision
+
+<https://habr.com/ru/company/plarium/blog/498724/>
+
 ## Health
 
 <https://lenta.ru/news/2020/01/20/health/>   грецкие орехи способствуют развитию полезных для кишечника бактерий, которые могут быть полезны для сердца.
