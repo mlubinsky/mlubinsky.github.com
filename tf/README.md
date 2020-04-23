@@ -10,6 +10,18 @@ With TensorFlow Lite, we need to do the following:
  - Invoke the model.
  - Read the output from the output tensor.
 ```
+### main_functions.cc .
+  last thing we do in our loop() function is increment our inference_count counter. If it has reached the maximum number of inferences per cycle defined in kInferencesPerCycle , we reset it to 0: 
+  ```
+  // Increment the inference_counter, and reset it if we have reached 
+  // the total number per cycle 
+  inference_count += 1 ; if ( inference_count >= kInferencesPerCycle ) inference_count = 0 ; 
+  ```
+  The next time our loop iterates, 
+
+Warden, Pete,Situnayake, Daniel. TinyML (Kindle Locations 1968-1976). O'Reilly Media. Kindle Edition. 
+
+
 
 The following cell runs xxd on our quantized model, writes the output to a file called sine_model_quantized.cc , and prints it to the screen: # Install xxd if it is not available ```apt-get qq install xxd```
 
