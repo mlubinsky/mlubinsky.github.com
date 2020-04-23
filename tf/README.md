@@ -74,6 +74,13 @@ This is a one-liner: TfLiteStatus invoke_status = interpreter . Invoke ();
  
  Each time inference is run, the output tensor will be overwritten with new values. This means that if you want to keep an output value around in your program while continuing to run inference, you’ll need to copy it from the output tensor, 
 
+
+main_functions.h, main_functions.cc 
+A pair of files that define a setup() function, which performs all the initialization required by our program, and a loop() function, which contains the program’s core logic and is designed to be called repeatedly in a loop. These functions are called by main.cc when the program starts. 
+
+output_handler.h, output_handler.cc 
+A pair of files that define a function we can use to display an output each time inference is run. The default implementation, in output_handler.cc , prints the result to the screen. We can override this implementation so that it does different things on different devices. 
+
 ```
 
 
