@@ -1,3 +1,5 @@
+<https://habr.com/ru/post/497724/>
+
 <https://webargs.readthedocs.io/en/latest/>. WebArgs
 
 <https://justpy.io/#/>  high-level Python Web Framework that requires no front-end programming. With a few lines of only Python code, you can create interactive websites without any JavaScript programming.
