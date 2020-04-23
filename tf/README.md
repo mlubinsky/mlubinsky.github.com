@@ -44,9 +44,21 @@ write our input data to the model’s input tensor:
 
 TfLiteTensor * input = interpreter . input ( 0 ); 
 
-
 ```
 
+```
+In the example we’re walking through, our model accepts a scalar input, so we have to assign only one value
+( input->data.f[0] = 0. ). 
+If our model’s input was a vector consisting of several values, we would add them to subsequent memory locations. 
+Here’s an example of a vector containing the numbers 1, 2, and 3: [1 2 3] 
+And here’s how we might set these values in a TfLiteTensor : 
+
+// Vector with 6 elements 
+input > data . f [ 0 ] = 1. ; 
+input > data . f [ 1 ] = 2. ; 
+input > data . f [ 2 ] = 3. ;  
+
+```
 
 
 
