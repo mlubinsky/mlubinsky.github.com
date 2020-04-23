@@ -84,7 +84,14 @@ A pair of files that define a function we can use to display an output each time
 sine_model_data.h, sine_model_data.cc 
 A pair of files that define an array of data representing our model, as exported using xxd in the first part of this chapter. 
 
+The file output_handler.cc defines our HandleOutput() function. Its implementation is very simple:
 
+void HandleOutput ( tflite :: ErrorReporter * error_reporter , float x_value , float y_value ) { 
+// Log the current X and Y values 
+error_reporter > Report ( "x_value: %f, y_value: %f \n " , x_value , y_value ); 
+} 
+
+ 
 ```
 
 
