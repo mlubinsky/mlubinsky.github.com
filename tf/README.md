@@ -81,6 +81,10 @@ A pair of files that define a setup() function, which performs all the initializ
 output_handler.h, output_handler.cc 
 A pair of files that define a function we can use to display an output each time inference is run. The default implementation, in output_handler.cc , prints the result to the screen. We can override this implementation so that it does different things on different devices. 
 
+sine_model_data.h, sine_model_data.cc 
+A pair of files that define an array of data representing our model, as exported using xxd in the first part of this chapter. 
+
+
 ```
 
 
