@@ -1,5 +1,7 @@
 <https://www.smashingmagazine.com/2019/10/asynchronous-tasks-modern-javascript/>
 
+<https://blog.soshace.com/react-and-ajax-the-art-of-fetching-data-in-react/> React + Ajax
+
 <https://github.com/marcellomontemagno/react-ufo>
 
 <https://habr.com/ru/post/484466/>
