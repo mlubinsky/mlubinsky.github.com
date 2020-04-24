@@ -73,7 +73,9 @@ ls /Volumes/NOD_H743ZI2/
 
 <https://www.cypress.com/documentation/development-kitsboards/psoc-6-wi-fi-bt-prototyping-kit-cy8cproto-062-4343w>
 
-Temperature code:
+<https://os.mbed.com/platforms/CY8CPROTO-062-4343W/>
+
+### Temperature code:
 <https://iotexpert.com/2019/12/09/mouser-psoc-6-wifi-bt-mbed-l4-temperature-thread/>
 
 <https://www.cypress.com/file/457891/download>
