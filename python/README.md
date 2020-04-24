@@ -1,5 +1,7 @@
 <https://snarky.ca/why-you-should-use-python-m-pip/>
 
+<https://news.ycombinator.com/item?id=22964910>. How to config th Python app
+
 <https://github.com/gto76/python-cheatsheet>
 
 <http://michal.karzynski.pl/blog/2019/07/15/top-20-talks-from-europython-2019/>
