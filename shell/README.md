@@ -5,6 +5,10 @@
 
 <https://likegeeks.com/linux-process-management/>
 
+### Screen
+
+<https://www.wagner.pp.ru/fossil/advice/doc/trunk/screen.md>
+
 ## Networking
 <https://habr.com/ru/post/491540/>
 
