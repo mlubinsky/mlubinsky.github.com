@@ -69,17 +69,29 @@ mbed compile -m DISCO_F746NG -t GCC_ARM -D TF_LITE_STATIC_MEMORY
 
 ls /Volumes/NOD_H743ZI2/
 
+
+### PDM-PCM microphone
+
+2x PDM-PCM microphone
+
 ## Cypress
 
 <https://www.cypress.com/documentation/development-kitsboards/psoc-6-wi-fi-bt-prototyping-kit-cy8cproto-062-4343w>
 
 <https://os.mbed.com/platforms/CY8CPROTO-062-4343W/>
 
+<https://www.embedded-computing.com/guest-blogs/for-the-professional-maker-get-started-with-psoc-6-using-the-cy8cproto-062-4343w-kit>
+
 ### Temperature code:
 <https://iotexpert.com/2019/12/09/mouser-psoc-6-wifi-bt-mbed-l4-temperature-thread/>
 
 <https://www.cypress.com/file/457891/download>
 
+<https://www.cypress.com/file/421606/download>
+
+<https://www.cypress.com/file/451811/download>
+
+### MbedOS code
 <https://github.com/ARMmbed/mbed-os/tree/master/targets/TARGET_Cypress/TARGET_PSOC6/TARGET_CY8CPROTO_062_4343W>
 
 
