@@ -45,6 +45,9 @@ View the Application Here: https://covid-dash-udemy.herokuapp.com/
 
 <https://blog.quicklyreact.com/how-to-dockerize-reactjs/>
 
+## Ajax React 
+
+<https://blog.soshace.com/react-and-ajax-the-art-of-fetching-data-in-react/>
 
 ## React
 
