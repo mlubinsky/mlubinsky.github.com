@@ -1,6 +1,8 @@
 <https://snarky.ca/why-you-should-use-python-m-pip/>
 
-<https://news.ycombinator.com/item?id=22964910>. How to config th Python app
+<https://news.ycombinator.com/item?id=22964910>. How to config the Python app
+
+<https://habr.com/ru/company/yandex/blog/498856/> lectures
 
 <https://github.com/gto76/python-cheatsheet>
 
