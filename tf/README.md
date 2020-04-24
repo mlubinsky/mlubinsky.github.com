@@ -10,6 +10,16 @@ With TensorFlow Lite, we need to do the following:
  - Invoke the model.
  - Read the output from the output tensor.
 ```
+
+
+### Testing
+
+ Macros are defined in the file micro_test.h . 
+ TF_LITE_MICRO_TESTS_BEGIN 
+ TF_LITE_MICRO_TEST  
+
+
+  
 ### main_functions.cc 
 
 <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/hello_world/main_functions.cc>
@@ -33,17 +43,15 @@ The first two lines of code just divide inference_count (which is the number of 
   // the total number per cycle 
   inference_count += 1 ; if ( inference_count >= kInferencesPerCycle ) inference_count = 0 ; 
   ```
-  The next time our loop iterates, 
 
-
-The following cell runs xxd on our quantized model, writes the output to a file called sine_model_quantized.cc , and prints it to the screen: # Install xxd if it is not available ```apt-get qq install xxd```
+The following cell runs xxd on our quantized model, writes the output to a file called sine_model_quantized.cc , and prints it to the screen 
+Install xxd if it is not available ```apt-get qq install xxd```
 
   Save the file as a C source file
  ```
-  xxd i sine_model_quantized.tflite > sine_model_quantized.cc
+  xxd -i sine_model_quantized.tflite > sine_model_quantized.cc
  ``` 
-  Print the source file 
-  ```cat sine_model_quantized.cc```
+  cat sine_model_quantized.cc 
   
   The output is very long, so we won’t reproduce it all here, but here’s a snippet that includes just the beginning and end: 
   
