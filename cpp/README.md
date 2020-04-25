@@ -2,7 +2,10 @@
 
 <https://wordsandbuttons.online/SYTYKC.pdf> C
 
-<https://janet-lang.org/>
+### Janet lang
+<https://janet-lang.org/> 
+
+<https://news.ycombinator.com/item?id=22975225>
 
 <https://awesomecpp.com/>
 
