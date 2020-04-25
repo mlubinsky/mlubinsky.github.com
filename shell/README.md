@@ -15,6 +15,7 @@
 ## Linux tools
 <https://news.ycombinator.com/item?id=22438730>
 
+<https://news.ycombinator.com/item?id=22849208> programs which  save you hours
 
 ## Terminal shortcats
 <https://ramantehlan.github.io/blog/post/terminalshortcuts/>
@@ -50,6 +51,8 @@ Job control consists of the following commands:
 ###  bash  
 
 <https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html>
+
+<https://news.ycombinator.com/item?id=22975437>
 
 shellcheck  <https://www.shellcheck.net/>
 
