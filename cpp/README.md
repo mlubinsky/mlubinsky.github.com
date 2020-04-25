@@ -1,5 +1,6 @@
 <https://codeplea.com/embedding-files-in-c-programs>
 
+<https://wordsandbuttons.online/SYTYKC.pdf> C
 
 <https://awesomecpp.com/>
 
