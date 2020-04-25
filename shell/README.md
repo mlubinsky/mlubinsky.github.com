@@ -19,6 +19,8 @@
 ## Terminal shortcats
 <https://ramantehlan.github.io/blog/post/terminalshortcuts/>
 
+<https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html>
+
 ## bash job control
 
 <https://www.linuxjournal.com/content/job-control-bash-feature-you-only-think-you-dont-need>
@@ -47,6 +49,7 @@ Job control consists of the following commands:
 
 ###  bash  
 
+<https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html>
 
 shellcheck  <https://www.shellcheck.net/>
 
