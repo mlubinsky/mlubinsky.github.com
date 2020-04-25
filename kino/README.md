@@ -3,6 +3,9 @@
 <https://soap.d3.ru/post-vopros-kollektivnomu-razumu-gde-smotret-filmy-onlain-bez-registratsii-i-sms-1867574/>
 
 ## Movies
+
+https://obsudim-serialy.livejournal.com/
+
 https://ahiin.livejournal.com/293907.html
 
 https://ahiin.livejournal.com/294595.html
