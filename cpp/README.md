@@ -2,6 +2,8 @@
 
 <https://wordsandbuttons.online/SYTYKC.pdf> C
 
+<https://janet-lang.org/>
+
 <https://awesomecpp.com/>
 
 <https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md>
