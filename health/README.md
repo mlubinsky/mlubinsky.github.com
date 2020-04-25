@@ -5,6 +5,11 @@
 
 <https://habr.com/ru/company/habr/blog/498634/>
 
+
+<https://shop.sixpackabs.com/p/aa40>
+
+<https://www.youtube.com/watch?v=Jn3h3m5zVMk> табата 
+
 ## Vision
 
 <https://habr.com/ru/company/plarium/blog/498724/>
