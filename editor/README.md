@@ -2,6 +2,12 @@
 
 <https://www.freecodecamp.org/news/the-guide-to-using-eslint-and-prettier-in-a-react-app/>
 
+### File manager
+
+<https://www.youtube.com/watch?v=47QYCa8AYG4> .  vifm
+
+<https://www.youtube.com/watch?v=EGBEIb2DgtQ> . lf
+
 ## Find non-ASCII chars in file
 
 <https://codepen.io/davidrv/full/amkWdw/>
@@ -68,6 +74,7 @@ alias cat="bat"
 
 ## VIM
 
+<https://www.youtube.com/watch?v=SLQWQ_R4bRI&list=PLRjzjpJ02WDMJOTsrdByXynk8h0ScMK9R> 
 ```
 %  -matching brackets
 
