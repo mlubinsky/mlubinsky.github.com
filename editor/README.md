@@ -67,6 +67,12 @@ alias diff="diff-so-fancy"
 alias cat="bat"
 
 ## VIM
+
+```
+%  -matching brackets
+```
+<https://stackoverflow.com/questions/1445992/vim-file-navigation>
+
 <https://www.vimfromscratch.com/articles/vim-for-python/> Python
 
 <http://liuchengxu.org/posts/use-vim-as-a-python-ide/>  Python
