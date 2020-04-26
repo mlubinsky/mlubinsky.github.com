@@ -8,6 +8,8 @@
 
 <https://www.youtube.com/watch?v=EGBEIb2DgtQ> . lf
 
+<https://www.youtube.com/watch?v=cnzuzcCPYsk> nnn
+
 ## Find non-ASCII chars in file
 
 <https://codepen.io/davidrv/full/amkWdw/>
