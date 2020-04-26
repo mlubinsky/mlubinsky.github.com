@@ -11,6 +11,11 @@
 
 <https://towardsdatascience.com/end-to-end-deep-learning-tutorial-using-azure-f7bb524f7277>
 
+<https://github.com/chiphuyen/machine-learning-systems-design>
+
+<https://towardsdatascience.com/architecting-a-machine-learning-pipeline-a847f094d1c7>
+
+<https://medium.com/hackernoon/a-guide-to-scaling-machine-learning-models-in-production-aa8831163846>
 
 
 
