@@ -1,5 +1,7 @@
 ## TF Micro
 
+<https://medium.com/yonohub/deep-learning-for-embedded-linux-series-part-1-model-optimization-daa553a5979>
+
 To make predictions with our Keras model, we could just call the predict() method, passing an array of inputs. 
 
 With TensorFlow Lite, we need to do the following: 
