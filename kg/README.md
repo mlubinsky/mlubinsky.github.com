@@ -1,5 +1,7 @@
 <https://arxiv.org/abs/2003.02320>
 
+<https://www.infoq.com/articles/graph-knowledge-base-cloud-native/>
+
 <https://queue.acm.org/issuedetail.cfm?issue=3329781>
 
 <https://news.ycombinator.com/item?id=22504133>
