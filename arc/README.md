@@ -3,6 +3,9 @@
 <https://queue.acm.org/pastissues.cfm> ACM transactions
 
 ## ML infrastructure
+
+<https://www.youtube.com/watch?v=G0VJTYDhCPU> 
+
 <https://itnext.io/mlops-not-as-boring-as-it-sounds-eaebe73e3533> . ML Ops
 
 <https://medium.com/swlh/end-to-end-machine-learning-from-data-collection-to-deployment-ce74f51ca203>
