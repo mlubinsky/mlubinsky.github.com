@@ -74,6 +74,8 @@ ls /Volumes/NOD_H743ZI2/
 
 2x PDM-PCM microphone
 
+<https://www.youtube.com/watch?v=HlGJ6xxbz8s>
+
 <https://www.youtube.com/watch?v=W2-FP7twy8s>
 
 <https://www.youtube.com/watch?v=HqHIOA-Fcuw>
