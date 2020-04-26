@@ -1,5 +1,9 @@
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<http://e-maxx.ru/algo/>
+
+<https://www.reddit.com/r/algorithms/comments/g7qc13/is_there_a_cookbook_for_algorithms_a_collection/>
+
 <https://www.youtube.com/channel/UCaYQbIciTyBFMTRE2Zp81tw>
 
 <https://medium.com/@ratulsaha/preparing-for-programming-interview-as-a-phd-student-with-python-5f8af8b40d5f>
