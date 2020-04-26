@@ -74,6 +74,10 @@ ls /Volumes/NOD_H743ZI2/
 
 2x PDM-PCM microphone
 
+<https://en.wikipedia.org/wiki/Pulse-code_modulation>
+
+<https://en.wikipedia.org/wiki/Pulse-density_modulation>
+
 <https://www.youtube.com/watch?v=HlGJ6xxbz8s>
 
 <https://www.youtube.com/watch?v=W2-FP7twy8s>
