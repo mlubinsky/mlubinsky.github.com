@@ -70,6 +70,14 @@ alias cat="bat"
 
 ```
 %  -matching brackets
+
+  ctrl-f scrolls down a page 
+  ctrl-b scrolls up a page   
+  Ctrl-d scrolls down half a page 
+  ctrl-u scrolls up half a page.
+
+^ takes you to the beginning of a line, 
+$ to the end of a line
 ```
 <https://stackoverflow.com/questions/1445992/vim-file-navigation>
 
