@@ -74,6 +74,10 @@ ls /Volumes/NOD_H743ZI2/
 
 2x PDM-PCM microphone
 
+<https://www.youtube.com/watch?v=HqHIOA-Fcuw>
+
+<https://www.youtube.com/watch?v=YJmUkNTBa8s>
+
 ## Cypress
 
 <https://www.cypress.com/documentation/development-kitsboards/psoc-6-wi-fi-bt-prototyping-kit-cy8cproto-062-4343w>
