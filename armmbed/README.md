@@ -80,6 +80,50 @@ ls /Volumes/NOD_H743ZI2/
 
 <https://www.youtube.com/watch?v=YJmUkNTBa8s>
 
+pulse code modulation is a method used to convert an analog signal into a digital signal. So that it can be transmitted through a digital communication network, and then converted back into the original analog signal.
+
+The PCM process includes three steps: Sampling, Quantization, and Coding.
+
+In the sampling process, the magnitude of the analog signal is sampled regularly at uniform intervals. The obtained values are called samples.
+
+For a 4 kHz voice channel, the sampling rate is 8000 Hz, which means the signal is sampled 8000 times per second.
+
+The samples will then be converted to digital numbers as we will see in the quantization process.
+
+Quantization is the process of converting the obtained samples into discrete digital values. The most basic type of quantization is called uniform quantization.
+
+In an uniform quantization, the vertical axis, which represents the amplitude, is divided into equal sized steps. As shown in this figure, the range between 1 volt and -1 volt is divided into 16 steps, each step represents 0.125 volt.
+
+All the samples whose amplitude falls within an step, take the same step value.
+
+However, the quantization process introduces an error. This is because that the real amplitude of a sample is replaced by an approximate value. This error is called quantization noise or quantization distortion.
+
+In uniform quantization, the quantization distortion presents a problem. For example, let's assume a quantization error of 0.05 volt, if this happens at a high level signal, such as 5 volt, the noise ratio is 0.05 volt divided by 5 volt, which is 1%, not too bad. But if the same quantization error happens at a low level signal, such as 0.5 volt, the noise ratio is 0.05 volt divided by 0.5 volt, which is 10%. 
+
+Simply put, for uniform quantization, the signal to noise ratio is good at high level signals, but bad at low level signals. That is why non-uniform quantization was introduced.
+
+In non-uniform quantization process, the steps are not of equal size. Small steps are used for small signal values and large steps for large values. The purpose of doing so is to achieve that the signal-to-noise ratio is nearly independent of the signal level.
+
+This is done by favoring low-level voice over higher-level voice. In other words, more code groups are assigned to speech at low levels than at the higher levels, progressively more as the level reduces. This is shown in this figure.
+
+There are two types of non-uniform quantization methods in popular use today. They are the A-law and the u-law. Let's first look at the A-law.
+
+A law follows the logarithmic formula listed here, with A equals to 87.6.
+
+We can see that the curve consists of linear piecewise segments, seven above and seven below the origin. The segment just above and the segment just below the origin consists of two linear segments. Counting the collinear elements by the origin, there are 16 segments. Each segment has 16 8-bit PCM codes assigned. These are the codewords that identify the voltage level of a sample at some moment in time.
+
+Each codeword, often called a PCM "word", consists of 8 bits. The first bit tells the receiver if the sample is a positive or negative voltage. We can see that all PCM words above the origin start with a binary 1, and those below the origin start with a binary 0. 
+
+The next 3 bits in sequence identify the segment. There are eight segments above the origin and eight below the origin. 
+
+The last 4 bits, shown as XXXX, indicate exactly where in a particular segment that voltage line is located.
+
+The second is called u-law. It follows the logarithmic formula listed here with u equals to 100.
+
+The North American T1 system uses the u-law quantization and coding process. The process is similar to that of A-law.
+
+
+
 ## Cypress
 
 <https://www.cypress.com/documentation/development-kitsboards/psoc-6-wi-fi-bt-prototyping-kit-cy8cproto-062-4343w>
