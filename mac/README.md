@@ -5,6 +5,14 @@ ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
 
+####
+
+Page Up:  Fn + Up Arrow 
+
+### Finder - how to go to parent dorectory
+
+Command+↑ (Command + Up Arrow) 
+
 ### Split screen verically
 
 <https://support.apple.com/en-us/HT204948>
