@@ -88,11 +88,14 @@ while True:
 
 <https://youtu.be/e-_tsR0hVLQ> Flask
 
+## Admin Panel 
 <https://habr.com/ru/post/477126/>  Flask + ReactAmin
+
+<https://github.com/flask-admin/flask-admin>
 
 <https://github.com/app-generator/flask-dashboard-adminlte>
 
-
+https://github.com/app-generator/flask-dashboard-dattaable
 
 ## Fast API 
 
@@ -126,7 +129,7 @@ https://www.reddit.com/r/flask/comments/2321oc/easiest_and_fastest_way_to_host_f
 
 https://www.reddit.com/r/flask/comments/b4uoao/af_recommended_flask_video_tutorials_for_2019/
 
-https://github.com/flask-admin/flask-admin .  
+   
 
 https://potion.readthedocs.io/en/latest/    Flask-Potion
 https://habr.com/ru/post/472018/    Flask-Potion
