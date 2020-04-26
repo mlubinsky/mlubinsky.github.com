@@ -5,7 +5,12 @@
 ## ML infrastructure
 <https://itnext.io/mlops-not-as-boring-as-it-sounds-eaebe73e3533> . ML Ops
 
+<https://medium.com/swlh/end-to-end-machine-learning-from-data-collection-to-deployment-ce74f51ca203>
+
 <https://streamsql.io/blog/microservices-with-machine-learning-feature-store>
+
+<https://towardsdatascience.com/end-to-end-deep-learning-tutorial-using-azure-f7bb524f7277>
+
 
 
 
