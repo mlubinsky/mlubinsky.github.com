@@ -51,6 +51,8 @@ View the Application Here: https://covid-dash-udemy.herokuapp.com/
 
 ## React
 
+<https://www.youtube.com/watch?v=FNnhEBDYBr8>
+
 <https://www.pluralsight.com/guides/working-with-bootstraps-modals-react>
 
 <https://habr.com/ru/post/461541/> 
