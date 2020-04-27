@@ -1,6 +1,15 @@
 <https://snarky.ca/why-you-should-use-python-m-pip/>
 
+
+## Config
+<https://whalesalad.com/blog/doing-python-configuration-right>
+
+<https://tech.preferred.jp/en/blog/working-with-configuration-in-python/>
+
 <https://news.ycombinator.com/item?id=22964910>. How to config the Python app
+
+<https://news.ycombinator.com/item?id=22969375>
+
 
 <https://habr.com/ru/company/yandex/blog/498856/> lectures
 
