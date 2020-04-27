@@ -1,6 +1,19 @@
 <https://training.looker.com/> mlubinsky@ho / LeVe>
 
 ![look](Looker_terms.png)
+
+<https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/account_device_channel_related.model.lkml>
+
+```
+connection: "dea_redshift_-_analytics_prod"   => dea_redshift_-_analytics_dev
+
+explore: dim_experiment{
+  label: "Amoeba experiment"
+  description: "Amoeba A/B experiments"
+}
+```
+
+
 <https://docs.looker.com/exploring-data/creating-looker-expressions/looker-functions-and-operators>
 
 <https://docs.looker.com/data-modeling/learning-lookml/lookml-terms-and-concepts>
