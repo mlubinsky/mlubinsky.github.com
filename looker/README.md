@@ -10,6 +10,25 @@ connection: "dea_redshift_-_analytics_prod"   => dea_redshift_-_analytics_dev
 explore: dim_experiment{
   label: "Amoeba experiment"
   description: "Amoeba A/B experiments"
+  join: another_table {
+    sql_on:
+    type:
+    relationship: many_to_one . | one_to_one
+  }
+  join:  {
+  } ...
+  always_filter {
+       filters: {
+                field:
+                value:
+                }
+       filters: {
+                field:
+                value:
+                }
+                
+  }
+  
 }
 ```
 
