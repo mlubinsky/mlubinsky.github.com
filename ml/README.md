@@ -22,6 +22,8 @@
 
 <https://jacobgil.github.io/deeplearning/activelearning>
 
+<https://habr.com/ru/company/otus/blog/497770/> PyCaret библиотека машинного обучения на Python
+
 <https://artint.info/2e/index.html> BOOK
 
 <https://mlcourse.ai/> Russian
