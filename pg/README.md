@@ -6,6 +6,8 @@
 
 <https://www.youtube.com/watch?v=xqTNceHxkIo> Postgres performance
 
+<https://habr.com/ru/company/tensor/blog/498740/> SQL
+
 <https://habr.com/ru/company/tensor/blog/494776/> SQL tricks
 
 <https://habr.com/ru/company/tensor/blog/497008/>
