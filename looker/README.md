@@ -147,10 +147,28 @@ Parameters in Looker increase interactivity for users and provide flexibility fr
 
 <https://blog.redpillanalytics.com/combining-advanced-and-custom-filters-in-looker-2c45590d1129>
 
-### Custom dimentions
+### Custom dimentions templetated filters
 
 <https://docs.looker.com/data-modeling/learning-lookml/templated-filters>
-
+```
+view: customer_facts {
+  derived_table: {
+    sql:
+      SELECT
+        customer_id,
+        SUM(sale_price) AS lifetime_spend
+      FROM
+        order
+      WHERE
+        {% condition order_region %} order.region {% endcondition %}
+    ;;
+  }
+·
+  filter: order_region {
+    type: string
+  }
+}
+```
 <https://help.looker.com/hc/en-us/articles/360001285847-Timeframe-vs-Timeframe-Analysis-Using-Templated-Filters>
 
 ### Looker API
