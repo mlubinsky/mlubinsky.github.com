@@ -3,6 +3,8 @@
 ![look](Looker_terms.png)
 
 ### Model
+Model files define Explores and their relationships to other views.
+
 <https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/account_device_channel_related.model.lkml>
 
 An Explore is a view that users can query. You can think of the Explore as a starting point for a query, or in SQL terms, as the FROM in a SQL statement. Not all views are Explores, because not all views describe an entity of interest.
