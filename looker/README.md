@@ -49,6 +49,8 @@ A view declaration defines a list of fields (dimensions or measures) and their l
  GUI: Create View from Table
  <https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/agg_amoeba_trc_kpi_daily.view.lkml>
 
+<https://docs.looker.com/reference/view-reference>
+
 <https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/agg_amoeba_reports.view.lkml>
 
 <https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/agg_amoeba_allocation_events_daily.view.lkml>
