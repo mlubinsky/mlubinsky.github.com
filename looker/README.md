@@ -31,7 +31,13 @@ measure: total_sales {
     
     and so on... ;;
   }
+  
+  
+  
+  Would recommend creating a dashboard with two tiles. One tile will be with a single-record chart () that will show experiment_id, start date, end date, etc
  ``` 
+ 
+ <https://docs.looker.com/exploring-data/visualizing-query-results/single-record-options>
   
 <https://training.looker.com/> mlubinsky@ho / LeVe>
 
