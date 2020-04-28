@@ -42,6 +42,10 @@ explore: dim_experiment{
 }
 ```
 ### View:
+A view is stored in a .view.lkml file.
+
+A view declaration defines a list of fields (dimensions or measures) and their linkage to an underlying table or ```derived table```.
+
  GUI: Create View from Table
  <https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/agg_amoeba_trc_kpi_daily.view.lkml>
 
@@ -74,8 +78,22 @@ Defines:
 
 <https://docs.looker.com/data-modeling/learning-lookml/lookml-terms-and-concepts>
 
-<https://docs.looker.com/data-modeling/learning-lookml/lookml-terms-and-concepts#derived-table> Derived table
+### Derived table
+<https://docs.looker.com/data-modeling/learning-lookml/derived-tables>
 
+<https://docs.looker.com/data-modeling/learning-lookml/lookml-terms-and-concepts#derived-table> 
+
+### Dimension_group
+
+<https://docs.looker.com/reference/field-params/dimension_group>
+
+```
+  dimension_group: created {
+    type: time
+    timeframes: [date, week]
+    sql: ${TABLE}.created_at ;;
+  }
+```
 <https://looker.com/guide>
 
 <https://discourse.looker.com/>
