@@ -1,7 +1,7 @@
 <https://dashboards.bdp.roku.com/folders/1477> . dashboards
 
 <https://help.looker.com/hc/en-us/articles/360001286007-Creating-Filtered-Measures->
-
+```
 1) create a parameter as outlined here 
 <https://docs.looker.com/reference/field-params/parameter>
 , which is what the user will interact with, notice that we can limit user input to particular values you specify via "allowed values" 
@@ -9,6 +9,30 @@
 2) We'll tie that parameter to conditional logic in a dimension that will dynamically change the underlying sql query based on the user input
 
 
+
+So the first part is we'd create a parameter like this: 
+
+ parameter: limited_date_filter {
+    type: string
+    allowed_value: { value: "Is in the past 7 Days" }
+    allowed_value: { value: "Is in the past 30 Days" }
+    allowed_value: { value: "All Dates" }
+  }
+  
+and I'm seeing what we can do to link that to SQL logic that sums based on the selected value  
+
+measure: total_sales {
+    type: number
+    sql: 
+    {% if limited_date_filter._parameter_value == "'Is in the past 7 Days'" %}
+    SUM(CASE WHEN ${your_date} BETWEEN GETDATE() AND Date >= CAST(DATEADD(day, -7, GETDATE())) THEN ${sale_price} END)
+    {% elsif limited_date_filter._parameter_value == "'Is in the past 30 Days'" %}
+    SUM(CASE WHEN ${your_date} BETWEEN GETDATE() AND Date >= CAST(DATEADD(day, -30, GETDATE())) THEN ${sale_price} END)
+    
+    and so on... ;;
+  }
+ ``` 
+  
 <https://training.looker.com/> mlubinsky@ho / LeVe>
 
 ![look](Looker_terms.png)
