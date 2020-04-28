@@ -147,6 +147,10 @@ Parameters in Looker increase interactivity for users and provide flexibility fr
 
 <https://blog.redpillanalytics.com/combining-advanced-and-custom-filters-in-looker-2c45590d1129>
 
+Range filter
+
+<https://discourse.looker.com/t/date-range-filter-with-relative-dates/11507/5>
+
 ### Custom dimentions templetated filters
 
 <https://docs.looker.com/data-modeling/learning-lookml/templated-filters>
