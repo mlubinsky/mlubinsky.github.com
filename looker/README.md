@@ -64,7 +64,13 @@ view: agg_amoeba_allocation_events {
     type: string
     sql: ${TABLE}.account_id ;;
   }
+  
+  set: first_set {
+    fields: [field_one, field_two]
+  }
 ```
+  
+  
   
 Defines:
 ```
