@@ -36,6 +36,21 @@ explore: dim_experiment{
 
 <https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/agg_amoeba_reports.view.lkml>
 
+<https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/agg_amoeba_allocation_events_daily.view.lkml>
+
+<https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/agg_amoeba_allocation_events.view.lkml>
+
+Example:
+```
+view: agg_amoeba_allocation_events {
+  sql_table_name: dea.agg_amoeba_allocation_events ;;
+
+  dimension: account_id {
+    type: string
+    sql: ${TABLE}.account_id ;;
+  }
+```
+  
 Defines:
 ```
 - derived table
