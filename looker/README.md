@@ -11,6 +11,7 @@ connection: "dea_redshift_-_analytics_prod"   => dea_redshift_-_analytics_dev
 explore: dim_experiment{
   label: "Amoeba experiment"
   description: "Amoeba A/B experiments"
+  =>! view_name: agg_channel_subscription_metrics_time_grain
   join: another_table {
     sql_on:
     type:
