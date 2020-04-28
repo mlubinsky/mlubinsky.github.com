@@ -1,3 +1,5 @@
+<https://habr.com/ru/post/499394/>
+
 <https://yangshun.github.io/tech-interview-handbook/>
 
 <http://e-maxx.ru/algo/>
