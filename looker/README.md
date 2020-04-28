@@ -1,6 +1,11 @@
 <https://dashboards.bdp.roku.com/folders/1477> . dashboards
 
 <https://help.looker.com/hc/en-us/articles/360001286007-Creating-Filtered-Measures->
+
+<https://docs.looker.com/exploring-data/exploring-data>
+
+<https://docs.looker.com/video-library/exploring-data> . Video
+
 ```
 1) create a parameter as outlined here 
 <https://docs.looker.com/reference/field-params/parameter>
