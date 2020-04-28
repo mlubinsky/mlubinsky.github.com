@@ -1,3 +1,7 @@
+
+
+<https://help.looker.com/hc/en-us/articles/360001286007-Creating-Filtered-Measures->
+
 <https://training.looker.com/> mlubinsky@ho / LeVe>
 
 ![look](Looker_terms.png)
