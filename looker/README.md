@@ -37,6 +37,8 @@ explore: dim_experiment{
 }
 ```
 ### View:
+ GUI: Create View from Table
+ <https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/agg_amoeba_trc_kpi_daily.view.lkml>
 
 <https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/agg_amoeba_reports.view.lkml>
 
