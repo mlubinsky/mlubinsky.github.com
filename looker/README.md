@@ -141,6 +141,10 @@ Parameters in Looker increase interactivity for users and provide flexibility fr
 <https://blog.redpillanalytics.com/how-to-create-a-basic-parameter-in-looker-using-a-liquid-variable-e97d2b9b4669>
 
 ### Filters
+
+If You Want Filters A User Can Change, But Not Remove, Consider always_filter
+If you want to force users to use a specific set of filters, but where the default value can be changed, try always_filter instead.
+
 <https://docs.looker.com/reference/filter-expressions>
 
 <https://redpillanalytics.com/combining-advanced-and-custom-filters-in-looker/>
