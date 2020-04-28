@@ -2,6 +2,13 @@
 
 <https://help.looker.com/hc/en-us/articles/360001286007-Creating-Filtered-Measures->
 
+1) create a parameter as outlined here 
+<https://docs.looker.com/reference/field-params/parameter>
+, which is what the user will interact with, notice that we can limit user input to particular values you specify via "allowed values" 
+
+2) We'll tie that parameter to conditional logic in a dimension that will dynamically change the underlying sql query based on the user input
+
+
 <https://training.looker.com/> mlubinsky@ho / LeVe>
 
 ![look](Looker_terms.png)
