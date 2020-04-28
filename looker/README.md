@@ -2,6 +2,7 @@
 
 ![look](Looker_terms.png)
 
+### Model
 <https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/account_device_channel_related.model.lkml>
 
 ```
@@ -31,7 +32,17 @@ explore: dim_experiment{
   
 }
 ```
+### View:
 
+<https://dashboards.bdp.roku.com/projects/dea-foundation-prod/files/agg_amoeba_reports.view.lkml>
+
+Defines:
+```
+- derived table
+- measure, 
+- dimensions, 
+- filters
+```
 
 <https://docs.looker.com/exploring-data/creating-looker-expressions/looker-functions-and-operators>
 
