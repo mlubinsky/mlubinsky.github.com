@@ -1,3 +1,11 @@
+## Sound
+
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/micro/examples/micro_speech/train 
+
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/micro_speech/train/train_micro_speech_model.ipynb
+
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/micro_speech/train/README.md
+
 ## TF Micro
 
 <https://blog.tensorflow.org/search?label=TensorFlow+Lite&max-results=100>
