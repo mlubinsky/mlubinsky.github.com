@@ -1,3 +1,5 @@
+
+
 <https://dashboards.bdp.roku.com/folders/1477> . dashboards
 
 <https://help.looker.com/hc/en-us/articles/360001286007-Creating-Filtered-Measures->
@@ -191,6 +193,8 @@ Parameters in Looker increase interactivity for users and provide flexibility fr
 <https://blog.redpillanalytics.com/how-to-create-a-basic-parameter-in-looker-using-a-liquid-variable-e97d2b9b4669>
 
 ### Filters
+
+<https://discourse.looker.com/t/how-to-create-dynamic-date-filter-for-user/14370/3>
 Attributes:
   - allow_multiple_values: true | false
   - required: true | false
