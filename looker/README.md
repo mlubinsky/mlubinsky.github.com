@@ -1,3 +1,38 @@
+So, for example, we might have this filter field defined:
+```
+  filter: order_region {
+    type: string
+  }
+```
+
+And, we might also have this dimension defined in the same view file:
+```
+dimension: region {
+    type: string
+    sql: ${TABLE}.region ;;
+}
+```
+Then, we could reference both of these in the `WHERE` clause of the derived table:
+```
+view: customer_facts {
+  derived_table: {
+    sql:
+      SELECT
+        customer_id,
+        SUM(sale_price) AS lifetime_spend
+      FROM
+        order
+      WHERE
+        {% condition order_region %} order.region {% endcondition %}
+    ;;
+  }
+```
+This uses the Liquid `{% condition filter_name %} sql_or_lookml_reference {% endcondition %}` variable.  This variable returns the value of the filter you ask for with `filter_name`, applied to the `sql_or_lookml_reference` as SQL.
+The templated filter tags are always transformed into a logical expression. For example, if the user entered “Northeast” into the `order_region` filter, Looker would turn the Liquid into: 
+```
+order.region = 'Northeast'
+```
+
 <https://discourse.looker.com/t/how-to-create-dynamic-date-filter-for-user/14370/3>
 
 <https://docs.looker.com/data-modeling/learning-lookml/templated-filters>
