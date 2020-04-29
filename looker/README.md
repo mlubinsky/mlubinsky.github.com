@@ -191,9 +191,23 @@ Parameters in Looker increase interactivity for users and provide flexibility fr
 <https://blog.redpillanalytics.com/how-to-create-a-basic-parameter-in-looker-using-a-liquid-variable-e97d2b9b4669>
 
 ### Filters
+Attributes:
+  - allow_multiple_values: true | false
+  - required: true | false
 
 If You Want Filters A User Can Change, But Not Remove, Consider always_filter
 If you want to force users to use a specific set of filters, but where the default value can be changed, try always_filter instead.
+
+Example: 
+the filter is given a numeric value. 
+The measure will add only orders that have a price of more than 100:
+```
+measure: sales_18_to_25 {
+  type: sum
+  filters: [customers.age: ">=18 AND <=25"]
+  sql: ${orders.price} ;;
+}
+```
 
 <https://docs.looker.com/reference/filter-expressions>
 
