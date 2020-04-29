@@ -38,6 +38,10 @@ measure: total_sales {
   }
   
   
+  measure: runningTotal{
+     type: sum
+     sql: ${TABLE}.“runningTotal” ;;
+}
   
   Would recommend creating a dashboard with two tiles. One tile will be with a single-record chart () that will show experiment_id, start date, end date, etc
  ``` 
