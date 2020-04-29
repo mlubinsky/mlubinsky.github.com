@@ -1,3 +1,6 @@
+<https://discourse.looker.com/t/how-to-create-dynamic-date-filter-for-user/14370/3>
+
+<https://docs.looker.com/data-modeling/learning-lookml/templated-filters>
 
 
 <https://dashboards.bdp.roku.com/folders/1477> . dashboards
