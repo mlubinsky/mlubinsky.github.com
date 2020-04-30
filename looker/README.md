@@ -26,11 +26,11 @@ view: customer_facts {
       FROM
         order
       WHERE
-        {% condition order_region %} order.region {% endcondition %}
+        {\% condition order_region \%} order.region {\% endcondition \%}
     ;;
   }
  
-This uses the Liquid `{% condition filter_name %} sql_or_lookml_reference {% endcondition %}` variable.  This variable returns the value of the filter you ask for with `filter_name`, applied to the `sql_or_lookml_reference` as SQL.
+This uses the Liquid `{\% condition filter_name \%} sql_or_lookml_reference {\% endcondition \%}` variable.  This variable returns the value of the filter you ask for with `filter_name`, applied to the `sql_or_lookml_reference` as SQL.
 The templated filter tags are always transformed into a logical expression. For example, if the user entered “Northeast” into the `order_region` filter, Looker would turn the Liquid into: 
  
 order.region = 'Northeast'
