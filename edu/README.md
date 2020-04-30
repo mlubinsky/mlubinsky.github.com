@@ -1,5 +1,4 @@
-A library for development of single-page full-stack web applications in clj/cljs
-<https://fulcro.fulcrologic.com/>
+https://habr.com/ru/company/avito/blog/499458/
 
 <https://habr.com/ru/company/JetBrains-education/blog/495014/> 
 
