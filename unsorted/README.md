@@ -108,6 +108,9 @@ Sapiens. Краткая история человечества- Юваль Но
 
 
 ## Mental models
+
+<https://habr.com/ru/post/499168/> Critical thinking
+
 <https://fs.blog/best-articles/> 
 <https://nesslabs.com/mental-models> 
 <https://news.ycombinator.com/item?id=20524616> 
