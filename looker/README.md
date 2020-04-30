@@ -277,7 +277,7 @@ view: customer_facts {
       FROM
         order
       WHERE
-        {% condition order_region %} order.region {% endcondition %}
+        {\% condition order_region \%} order.region {\% endcondition \%}
     ;;
   }
 ·
