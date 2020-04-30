@@ -72,9 +72,9 @@ and I'm seeing what we can do to link that to SQL logic that sums based on the s
 measure: total_sales {
     type: number
     sql: 
-    {% if limited_date_filter._parameter_value == "'Is in the past 7 Days'" %}
+    {\% if limited_date_filter._parameter_value == "'Is in the past 7 Days'" \%}
     SUM(CASE WHEN ${your_date} BETWEEN GETDATE() AND Date >= CAST(DATEADD(day, -7, GETDATE())) THEN ${sale_price} END)
-    {% elsif limited_date_filter._parameter_value == "'Is in the past 30 Days'" %}
+    {\% elsif limited_date_filter._parameter_value == "'Is in the past 30 Days'" \%}
     SUM(CASE WHEN ${your_date} BETWEEN GETDATE() AND Date >= CAST(DATEADD(day, -30, GETDATE())) THEN ${sale_price} END)
     
     and so on... ;;
