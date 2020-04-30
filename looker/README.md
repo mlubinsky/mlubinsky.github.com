@@ -1,3 +1,6 @@
+<https://docs.looker.com/reference/explore-params/cancel_grouping_fields>
+
+
 So, for example, we might have this filter field defined:
 ```
   filter: order_region {
