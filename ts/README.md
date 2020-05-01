@@ -25,6 +25,8 @@ TBATP1 - TBATS1 but Seasonal Inference is Hardcoded by Periodicity
 TBATS2 - TBATS1 With Two Seasonal Periods
 ```
 
+<https://news.ycombinator.com/item?id=23041264> ts models
+
 <https://arxiv.org/abs/1911.13288> finansial TS with deep learning
 
 ## Time Series DB
