@@ -6,6 +6,8 @@
 
 <https://www.youtube.com/watch?v=G0VJTYDhCPU> 
 
+<https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/>
+
 <https://itnext.io/mlops-not-as-boring-as-it-sounds-eaebe73e3533> . ML Ops
 
 <https://tecton.ai/blog/devops-ml-data/>
