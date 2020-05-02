@@ -2,6 +2,8 @@
 
 <https://yangshun.github.io/tech-interview-handbook/>
 
+<https://www.youtube.com/watch?v=EuPSibuIKIg>
+
 <http://e-maxx.ru/algo/>
 
 <https://www.reddit.com/r/algorithms/comments/g7qc13/is_there_a_cookbook_for_algorithms_a_collection/>
