@@ -1,5 +1,7 @@
 <https://docs.looker.com/reference/explore-params/cancel_grouping_fields>
 
+<https://www.youtube.com/watch?v=l0ajePzSe4E&list=PL2rFVcDw2yVoXlI3onYS7Ecufjg2ODI9u>
+
 
 So, for example, we might have this filter field defined:
 ```
