@@ -21,6 +21,7 @@
 
 <https://github.com/kellyjonbrazil/jello>  JSON util
 
+<https://www.attrs.org/en/stable/>
 
 ```
  python -m py_compile my.py   # Check file syntax
