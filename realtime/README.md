@@ -1,3 +1,5 @@
+How We Created a Realtime Patient Monitoring System With Go and Vue in 3 days
+<https://kasvith.me/posts/how-we-created-a-realtime-patient-monitoring-system-with-go-and-vue/>
 
 <https://habr.com/ru/post/478750/> React and non-react plotting
 
