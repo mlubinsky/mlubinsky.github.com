@@ -4,6 +4,8 @@
 
 <https://www.youtube.com/watch?v=EuPSibuIKIg>
 
+<https://www.dailycodingproblem.com/subscribe?email=mlubinsky%40hotmail.com>
+
 <http://e-maxx.ru/algo/>
 
 <https://www.reddit.com/r/algorithms/comments/g7qc13/is_there_a_cookbook_for_algorithms_a_collection/>
