@@ -10,6 +10,8 @@
 
 <https://www.youtube.com/channel/UCaYQbIciTyBFMTRE2Zp81tw>
 
+<https://www.youtube.com/watch?v=2H_2UGsRmLE&list=PLuVT2Ug8ISOXYhtc-mSeAnJYMbI3WKY5o&index=5&t=0s>
+
 <https://medium.com/@ratulsaha/preparing-for-programming-interview-as-a-phd-student-with-python-5f8af8b40d5f>
 
 <https://www.youtube.com/watch?v=jM2dhDPYMQM>. Sliding window
