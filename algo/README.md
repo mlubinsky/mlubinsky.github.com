@@ -1,5 +1,7 @@
 <https://habr.com/ru/post/499394/>
 
+<https://crunchskills.com/binary-tree-interview-questions-and-practice-problems/>
+
 <https://yangshun.github.io/tech-interview-handbook/>
 
 <https://www.youtube.com/watch?v=EuPSibuIKIg>
