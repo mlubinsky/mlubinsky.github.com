@@ -130,7 +130,8 @@ The North American T1 system uses the u-law quantization and coding process. The
 
 
 
-## Cypress
+## Cypress y8cproto_062_4343w
+<https://blog.packetp.com/running-wifi-example-on-cy8cproto_062_4343w/> 
 
 <https://www.cypress.com/documentation/development-kitsboards/psoc-6-wi-fi-bt-prototyping-kit-cy8cproto-062-4343w>
 
