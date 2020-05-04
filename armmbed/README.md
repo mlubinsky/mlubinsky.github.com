@@ -205,6 +205,11 @@ mbed compile -m CY8CPROTO_062_4343W -t GCC_ARM
 <https://www.rlocman.ru/review/article.html?di=600377> Kalman filter
 
 ## Pelion Device Management
+
+### SDK
+
+<https://armmbed.github.io/mbed-cloud-sdk-documentation/#introduction>
+
 <https://blog.pelion.com/en>. Pelion Blog
 
 <https://www.pelion.com/docs/device-management/current/updating-firmware/integrating-the-client-in-your-application.html>
