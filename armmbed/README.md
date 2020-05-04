@@ -1,3 +1,8 @@
+## Pelion SDK
+<https://www.pelion.com/docs/device-management/current/service-api-references/service-api-documentation.html>
+
+<https://github.com/ARMmbed/mbed-cloud-sdk-python>
+
 ## MBed Version
 ```
 pwd
