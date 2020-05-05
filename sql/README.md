@@ -20,6 +20,9 @@
 ## SQL
  Medium-Hard Data   SQL Interview Questions
 <https://quip.com/2gwZArKuWk7W>
+<https://habr.com/ru/company/dcmiran/blog/500360/>
+
+
 <https://news.ycombinator.com/item?id=23053981>
 
 <https://www.db-fiddle.com/>
