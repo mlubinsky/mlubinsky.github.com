@@ -1,4 +1,8 @@
-CSS <https://every-layout.dev/>
+## CSS 
+<https://every-layout.dev/>
+
+<https://habr.com/ru/post/500304/> Grid explained
+
 
 <https://habr.com/ru/post/472816/> JS patterns
 
