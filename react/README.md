@@ -8,6 +8,9 @@
 <https://stackoverflow.com/questions/60795932/react-for-displaying-the-the-log-file-in-real-time-flask-backend>
 
 ## JS concepts for React
+
+<https://obedparla.com/code/a-visual-guide-to-react-mental-models/>
+
 <https://kentcdodds.com/blog/javascript-to-know-for-react>
 
 <https://codeartistry.io/10-javascript-concepts-you-need-to-master-react/>
