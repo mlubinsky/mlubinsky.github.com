@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://arxiv.org/abs/2004.14545> . <https://news.ycombinator.com/item?id=23060656>
+
 <https://www.deeplearningbook.org/> 
 
 <https://www.newworldai.com/advanced-deep-learning-course-deepmind/> . Youtube lectures
