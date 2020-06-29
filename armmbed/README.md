@@ -1,7 +1,49 @@
+## MbedOS 6
+
+<https://os.mbed.com/docs/mbed-os/v6.0/introduction/index.html>
+
+<https://os.mbed.com/docs/mbed-os/v6.0/program-setup/serial-communication.html>
+
+
+<https://embeddedartistry.com/blog/2018/04/26/embedded-rules-of-thumb/>
+
+another way that I found out to reset the storage and erase the memory completely is:
+
+create a empty file called 'erase.act' and drag it to the DAPLink drive. This should blow everything away.
+
+## Embedded development 101
+
+<https://habr.com/ru/post/503322/> 
+
+### mbed update
+```
+https://github.com/ARMmbed/mbed-os/blob/master/platform/mbed_version.h
+
+https://os.mbed.com/questions/82202/mbed-update-to-latest-release/
+
+mbed update
+
+printf("mbed-os-rev: %d.%d.%d  lib-rev: %d", 
+MBED_MAJOR_VERSION, MBED_MINOR_VERSION, MBED_PATCH_VERSION, MBED_LIBRARY_VERSION);
+```
+ 
 ## Pelion SDK
 <https://www.pelion.com/docs/device-management/current/service-api-references/service-api-documentation.html>
 
 <https://github.com/ARMmbed/mbed-cloud-sdk-python>
+
+
+The Pelion SDKs are deprecated. So the options to manage devices are the device management console (aka portal), the command line tools, and the service APIs.
+ 
+Here is some information.
+https://www.pelion.com/docs/device-management/current/service-api-references/index.html
+ 
+ 
+You can use Node.JS, Python or many other language stack with socket capabilities to interact with the service APIs.
+See attached short presentation with a very simple tutorial using curl and a websocket library I put together.
+ 
+Also we have other good internal tutorials on service APIs here.
+https://confluence.arm.com/display/IoTBU/Pelion+Device+Management+Service+API+usage+examples
 
 ## MBed Version
 ```
@@ -407,7 +449,6 @@ Download GCC_ARM for MAc
 https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
 mbed config -G GCC_ARM_PATH "C:\Program Files (x86)\GNU Tools ARM Embedded\7 2018-q2-update\bin
 
-$ mbed config -G CLOUD_SDK_API_KEY ak_1MDE3MDNhZDMwZDJkOGFlZGE2MWYxMzRjMDAwMDAwMDA017040793c538aeda61f134c00000000IQBgqsHL7r63RXOEXAEiz2YxB5kIgujJ
 
 $ mbed config --list
 
@@ -415,7 +456,6 @@ $ mbed config --list
 [mbed] Global config:
 ARM_PATH=/Users/miclub01/Downloads/gcc-arm-none-eabi-9-2019-q4-major/bin/
 GCC_ARM_PATH=/Users/miclub01/Downloads/gcc-arm-none-eabi-9-2019-q4-major/bin/
-CLOUD_SDK_API_KEY=ak_1MDE3MDNhZDMwZDJkOGFlZGE2MWYxMzRjMDAwMDAwMDA017040793c538aeda61f134c00000000IQBgqsHL7r63RXOEXAEiz2YxB5kIgujJ
 
 
 
@@ -507,3 +547,10 @@ http://tomgerhardt.com/Cornflake/
  ls /dev/tty.usb*      # find the tty name
  minicom -D /dev/tty.usbmodem14412
 ``` 
+
+```
+
+#cp ~/.ssh/id_rsa my_key
+#cp ~/.ssh/id_rsa PelionML_Dashboard/my_key
+
+```
