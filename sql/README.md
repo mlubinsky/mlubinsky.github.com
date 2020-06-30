@@ -1,3 +1,19 @@
+https://habr.com/ru/post/506070/ . SQL
+
+https://habr.com/ru/post/461067/
+```
+select t.product, 
+       sum(case when t.supplier = 'A' then t.volume end) as A,
+       sum(case when t.supplier = 'B' then t.volume end) as B,
+       sum(case when t.supplier = 'C' then t.volume end) as C
+from test_supply t
+group by t.product
+order by t.product;
+```
+ 
+
+
+
 ## Falcon UI
 
 <https://github.com/plotly/falcon> UI
