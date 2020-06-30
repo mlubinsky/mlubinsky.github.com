@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+https://dlcourse.ai/ . russian
+
 <https://arxiv.org/abs/2004.14545> . <https://news.ycombinator.com/item?id=23060656>
 
 <https://www.deeplearningbook.org/> 
