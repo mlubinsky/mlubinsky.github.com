@@ -3,7 +3,7 @@
 
 <https://habr.com/ru/post/500304/> Grid explained
 
-
+https://exploringjs.com/impatient-js/index.html. Book
 
 https://exploringjs.com/deep-js/ . Book
 
