@@ -3,6 +3,8 @@
 
 <https://habr.com/ru/post/500304/> Grid explained
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+
 https://exploringjs.com/impatient-js/index.html. Book
 
 https://exploringjs.com/deep-js/ . Book
