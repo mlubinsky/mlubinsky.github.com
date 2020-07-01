@@ -7,6 +7,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_Jav
 
 https://exploringjs.com/impatient-js/index.html. Book
 
+https://books.goalkicker.com/JavaScriptBook/
+
 https://exploringjs.com/deep-js/ . Book
 
 <https://habr.com/ru/post/472816/> JS patterns
