@@ -1,8 +1,23 @@
+<https://techblog.bozho.net/seven-legacy-integration-patterns/>
+
+
+<https://eng.uber.com/apache-hudi-graduation/>  Apachi Hudi
+
 <https://landing.google.com/sre/books/> SRE book
 
 <https://queue.acm.org/pastissues.cfm> ACM transactions
 
+https://medium.com/wix-engineering/6-event-driven-architecture-patterns-part-1-93758b253f47
+
+## RabbitMQ
+https://news.ycombinator.com/item?id=23258301
+
+
 ## ML infrastructure
+
+<https://cloud.google.com/solutions/machine-learning/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning>
+
+<https://www.youtube.com/watch?v=rMx3n0NTfZQ&feature=youtu.be&t=9957> 
 
 <https://www.youtube.com/watch?v=G0VJTYDhCPU> 
 
@@ -11,6 +26,10 @@
 <https://itnext.io/mlops-not-as-boring-as-it-sounds-eaebe73e3533> . ML Ops
 
 <https://tecton.ai/blog/devops-ml-data/>
+
+
+
+
 
 <https://medium.com/swlh/end-to-end-machine-learning-from-data-collection-to-deployment-ce74f51ca203>
 
@@ -183,6 +202,7 @@ https://github.com/olirice/flupy . Fluent data pipelines for python and your she
 
 ## Real time
 
+<https://habr.com/ru/post/503084/> 
 <https://www.lightbend.com/blog/use-kafka-streams-dynamically-controlled-streams>
 
 <https://medium.com/the-telegraph-engineering/pulse-the-telegraph-journey-towards-real-time-analytics-cd08c1078fa6> 

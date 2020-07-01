@@ -1,3 +1,25 @@
+<https://github.com/MattPD/cpplinks/blob/master/assembly.arm.md> ARM programming
+
+## Serial port reading
+
+Meta key
+
+<https://osxdaily.com/2013/02/01/use-option-as-meta-key-in-mac-os-x-terminal/>
+
+
+<https://www.cmrr.umn.edu/~strupp/serial.html#2_5_2>
+
+C library for reading from Serial port:
+<https://sigrok.org/wiki/Libserialport>
+
+<https://sigrok.org/api/libserialport/unstable/index.html>
+
+
+
+ML Processors
+<https://www.electronicdesign.com/technologies/embedded-revolution/article/21131474/accelerating-machine-learning-means-new-hardware>
+
+
 <https://opensource.googleblog.com/2020/03/pigweed-collection-of-embedded-libraries.html>
 
 <https://gilberttanner.com/blog/convert-your-tensorflow-object-detection-model-to-tensorflow-lite> TF Lite
@@ -339,6 +361,47 @@ Im very much simplifying this description but It is something my team and I have
 
 ```
  ### screen
+ 
+ Type Control-A followed by Control-\   (or k) to exit your screen session
+ 
+ screen basics:
+
+control-a begins the command sequence in screen
+
+Next character:
+
+d - disconnect from session
+k - terminate session
+If you disconnect, you can reconnect using screen -r
+
+
+That is if you hit Control-A followed by an “a”. If you want to kill that session, use Control-A then “k”.
+```
+script -a -t 0 out.txt screen /dev/ttyUSB0 115200
+
+Details
+
+script: A built-in application to "make a typescript of terminal session"
+-a: Append to output file
+-t 0: Time between writing to output file is 0 seconds, 
+
+so out.txt is updated for every new character
+out.txt: Is just the output file name
+screen /dev/ttyUSB0 115200: Command from question for connecting to an external device
+```
+
+ <https://stackoverflow.com/questions/14208001/save-screen-program-output-to-a-file>
+ 
+ <http://stackoverflow.com/questions/1039442/mac-os-x-terminal-apps-buffer-and-screen-command>
+ 
+ If you want to use screen as an terminal, 
+ but don't want it to go into the background when the window dies, you will need to turn off auto-detach.
+
+To do this, edit ~/.screenrc (it probably won't exist) and add the following line:
+
+autodetach off
+
+The next time you start screen, if you kill the window you will kill the session.
  ``` 
   ls /dev/tt*
   screen /dev/tty.board_name 115200

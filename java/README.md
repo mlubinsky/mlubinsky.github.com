@@ -6,6 +6,8 @@
  
  <https://habr.com/ru/company/otus/blog/478584/> . JVM internals
  
+ <https://habr.com/ru/company/domclick/blog/500646/> Java bytecode internals
+ 
  <https://www.youtube.com/watch?v=RtHA1YVLW5Y> JVM does this?
  
  <https://jokerconf.com/2019/talks/> . Java Conf

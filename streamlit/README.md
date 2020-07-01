@@ -14,6 +14,8 @@ streamlit run your_script.py [-- script args]
 
 <https://gilberttanner.com/blog/turn-your-data-science-script-into-websites-with-streamlit>
 
+https://celadonsoft.com/ai-ml/the-complete-beginners-guide-to-web-scraping
+
 <https://discuss.streamlit.io/t/the-streamlit-roadmap-big-plans-for-2020/2054>
 
 

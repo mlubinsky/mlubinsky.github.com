@@ -1,3 +1,7 @@
+### Plotly
+<https://habr.com/ru/company/skillfactory/blog/506974/>
+
+
 How We Created a Realtime Patient Monitoring System With Go and Vue in 3 days
 <https://kasvith.me/posts/how-we-created-a-realtime-patient-monitoring-system-with-go-and-vue/>
 <https://news.ycombinator.com/item?id=23051242>

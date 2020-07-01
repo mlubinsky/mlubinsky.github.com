@@ -1,6 +1,28 @@
 <https://habr.com/ru/post/499394/>
 
+https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw/videos
+
+<https://www.algoexpert.io/systems/product>
+
+<https://algorithmica.org/ru/>
+
+<https://medium.com/@andreimargeloiu/how-to-prepare-for-competitive-programming-396d557e0c12>
+
+<https://medium.com/swlh/binary-search-cheat-sheet-for-coding-interviews-9c5425af357e>
+
+<https://medium.com/@hazemu/finding-the-median-of-2-sorted-arrays-in-logarithmic-time-1d3f2ecbeb46>
+
+<https://habr.com/ru/post/503602/>
+
 <https://crunchskills.com/binary-tree-interview-questions-and-practice-problems/>
+
+<https://crunchskills.com/google-interview-questions-for-software-engineering-roles/>
+
+
+https://medium.com/dev-genius/15-binary-tree-coding-problems-from-faang-interview-2ba1ec67d077
+
+https://medium.com/@srajaninnov/find-the-diameter-of-a-binary-tree-efc45b9129a7
+
 
 <https://yangshun.github.io/tech-interview-handbook/>
 
@@ -20,7 +42,12 @@
 
 <https://www.youtube.com/watch?v=jM2dhDPYMQM>. Sliding window
 
-<https://www.youtube.com/watch?v=AAMLzNaDkjk&utm_source=reddit> System design
+## System design
+<https://www.youtube.com/watch?v=AAMLzNaDkjk&utm_source=reddit> 
+<https://www.youtube.com/watch?v=q0KGYwNbf-0>
+<https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX> . system design questions
+
+
 
 <https://www.youtube.com/watch?v=ap5Z1Q3y3Pw>
 
@@ -30,6 +57,75 @@
 
 <https://habr.com/ru/company/JetBrains-education/blog/495014/>
 
+
+## Merging 2 sorted arrays
+into 1st array where 1st array has the capacity for both
+```
+private void merge(int[] a, int n, int[] b, int m) {
+	int i = n - 1;
+	int j = m - 1;
+	int k = n + m - 1;
+	
+	while (j >= 0) {
+		if (i>=0 && a[i] > b[j])
+			a[k--] = a[i--];
+		else
+			a[k--] = b[j--];
+	}
+}
+
+
+# Python program to determine if two trees are identical 
+  
+# A binary tree node has data, pointer to left child 
+# and a pointer to right child 
+class Node: 
+    # Constructor to create a new node 
+    def __init__(self, data): 
+        self.data = data 
+        self.left = None
+        self.right = None
+      
+  
+# Given two trees, return true if they are structurally 
+# identical 
+def identicalTrees(a, b): 
+      
+    # 1. Both empty 
+    if a is None and b is None: 
+        return True 
+  
+    # 2. Both non-empty -> Compare them 
+    if a is not None and b is not None: 
+        return ((a.data == b.data) and 
+                identicalTrees(a.left, b.left)and
+                identicalTrees(a.right, b.right)) 
+      
+    # 3. one empty, one not -- false 
+    return False
+  
+# Driver program to test identicalTress function 
+root1 = Node(1) 
+root2 = Node(1) 
+root1.left = Node(2) 
+root1.right = Node(3) 
+root1.left.left = Node(4) 
+root1.left.right = Node(5) 
+  
+root2.left = Node(2) 
+root2.right = Node(3) 
+root2.left.left = Node(4) 
+root2.left.right = Node(5) 
+  
+if identicalTrees(root1, root2): 
+    print "Both trees are identical"
+else: 
+    print "Trees are not identical"
+  
+# This code is contributed by Nikhil Kumar Singh(nickzuck_007) 
+
+
+```
 ## Hash
 
 <https://www.partow.net/programming/hashfunctions/idx.html>
@@ -254,7 +350,7 @@ Unite(X, Y) — объединить два множества, в которы�
 
 <https://stackoverflow.com/questions/41515081/algorithm-find-all-permutations-of-string-a-in-string-b>
 
-<https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX> . system design questions
+
 
 <https://www.youtube.com/watch?v=bBPHpH8aKjw> look fo links here!
 

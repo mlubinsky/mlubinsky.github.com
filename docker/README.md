@@ -6,6 +6,7 @@ docker run -it  -v /Users/miclub01/GIT/FORK/pelion-ml-demo:/mnt/host mbedos/mbed
 
 <https://multipass.run/>
 
+https://monkeysatkeyboards.com/blog/makefiles-age-docker
 
 <https://github.com/wagoodman/dive> see docker layers
 

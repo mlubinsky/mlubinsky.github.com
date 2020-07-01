@@ -1,5 +1,7 @@
 https://habr.com/ru/company/avito/blog/499458/
 
+https://www.youtube.com/channel/UCimGOl6wSQWDbBFoVMQGzMg/featured MSU lectures
+
 <https://habr.com/ru/company/JetBrains-education/blog/495014/> 
 
 <https://github.com/lazyprogrammer/machine_learning_examples>

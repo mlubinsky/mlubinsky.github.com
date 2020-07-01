@@ -1,11 +1,17 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+<https://news.ycombinator.com/item?id=23153778>
 
 <https://physics.stackexchange.com/questions/148370/how-to-understand-non-associative-composition-of-velocities-in-str>
 
 <https://physicstravelguide.com/>
 
+<https://demystifyingscience.com/>
+
 <https://www.quantumfieldtheory.info/>
+
+### QM
+<https://habr.com/ru/post/501858/>
 
 <https://nautil.us/issue/83/intelligence/how-to-make-sense-of-quantum-physics>
 

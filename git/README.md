@@ -2,14 +2,27 @@
 
 <https://gitexplorer.com/>
 
-
+<https://gitbetter.substack.com/p/how-to-use-git-fetch-and-git-pull>
 
 <https://git-fork.com/> Fork: UI for Git
 
 <https://www.sublimemerge.com/>  Git UI Client, from the makers of Sublime Text
 
 
+
+
+
+https://gitbetter.substack.com/p/how-to-squash-git-commits
+
+https://www.compscilauren.com/blog/improve-your-git-workflow-and-save-time-with-git-hooks
+
 <https://codersbible.com/5-git-commands-to-know-just-after-you-get-the-basics/>
+
+<https://learngitbranching.js.org/?a=b>
+
+https://blog.jakuba.net/git-command-overview-with-useful-flags-and-aliases/
+
+https://insights.dice.com/2020/05/04/git-mastering-basics-branch-merging/
 
 <https://rogerdudler.github.io/git-guide/>
 

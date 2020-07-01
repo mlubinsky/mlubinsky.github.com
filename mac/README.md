@@ -5,11 +5,34 @@ ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
 
+### diff
+https://github.com/dandavison/delta
+
+## Rigrep
+```
+brew install rigrep
+rg Logistic tensorflow
+```
+https://github.com/BurntSushi/ripgrep
+
+
+https://wiki.nikitavoloboev.xyz/macos
+
+https://github.com/iCHAIT/awesome-macOS
+
+https://github.com/nikitavoloboev/knowledge
+
+https://lobste.rs/s/aqwsn5/praise_autohotkey
+
 ####
 
 Page Up:  Fn + Up Arrow 
 
-### Finder - how to go to parent dorectory
+###  NNN - terminal navigator
+
+https://github.com/jarun/nnn
+
+### Finder - how to go to parent directory
 
 Command+↑ (Command + Up Arrow) 
 
@@ -60,11 +83,15 @@ You can also get to this by holding the Control key and tapping the up arrow
 
 ## Windows managers for Mac
 
+<https://www.sempliva.com/tiles/>
+
+<https://magnet.crowdcafe.com/> Magnet not free
+
 <https://rectangleapp.com/> 
 
 <https://github.com/koekeishiya/yabai>
 
-<https://magnet.crowdcafe.com/> Magnet 
+ 
 
 <https://ianyh.com/amethyst/> Amethyst
 

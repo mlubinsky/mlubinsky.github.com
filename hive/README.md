@@ -1,4 +1,28 @@
 
+<https://habr.com/ru/company/mailru/blog/504952/> Avro, Parquet, ...
+
+
+Problem: if we have no records in Hive partition the copy in redshift will fail
+Solution: 
+step 1: add records with NULL values in Hive - this it will enforce the new partition/folder to be created
+
+```
+insert into agg_t
+select a,b from fact_t
+group by ...
+union select {{dt}}, NULL, NULL
+```
+step 2: remove  records  with NULL from Hive -  with  hope what new partition/folder will not be removed
+
+```
+insert overwrite table 
+				sbschema.roku_agg_product_contextual_offers_metrics_daily
+				partition 	(date_key ) 
+				SELECT * 	  
+	FROM  sbschema.roku_agg_product_contextual_offers_metrics_daily
+	WHERE date_key='2020-06-13' AND  product_id IS NOT  NULL; 
+```    
+
 ### Presto  Druid Pinot Kudu
 Presto  query execution rate that is three times faster than Hive.
 
@@ -119,7 +143,32 @@ SELECT explode(str_to_map('e1:t1&e2:t2&e3:t3','&',':'))
 The FIND_IN_SET function searches for the search string in the source_string_list and returns the position of the first occurrence in the source string list. Here the source string list should be comma delimited one. It returns 0 if the first argument contains comma.
 Example: FIND_IN_SET('ha','hao,mn,hc,ha,hef') returns 4
 
-### collect_set and concat_ws
+
+### Lateral
+```
+  create table sbschema.roku_t1 (x int, y int,  active_exp_map string);
+  insert into sbschema.roku_t1 values
+  (1, 1, "a:1&b:2&a:1"),
+  (1, 2, "b:2&c:3"),
+  (2, 1, "c:1&d:2&c:1"),
+  (2, 2, "c:1");
+  
+ 
+select * from sbschema.roku_t1 lateral view explode(str_to_map(active_exp_map,  "&", ":")) a AS experiment_id, bucket;
+
+ duplicates gone:
+ 
+ 	x	y	 active_exp_map	a.experiment_id	a.bucket
+ 	1	1	a:1&b:2&a:1     a	1
+ 	1	1	a:1&b:2&a:1  	b	 2
+ 	1	2	b:2&c:3	        b	2
+ 	1	2	b:2&c:3	        c	3
+ 	2	1	c:1&d:2&c:1	    c	1
+ 	2	1	c:1&d:2&c:1	    d	2
+ 	2	2	c:1	            c	1
+```
+
+### collect_set and concat_ws 
 <https://stackoverflow.com/questions/61038050/hive-how-to-eliminate-the-duplicated-substrings>
 ```
 select t.i, concat_ws('&',collect_set(e.val)) as grouped_s

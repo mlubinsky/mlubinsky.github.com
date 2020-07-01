@@ -29,8 +29,9 @@ TBATS2 - TBATS1 With Two Seasonal Periods
 
 <https://arxiv.org/abs/1911.13288> finansial TS with deep learning
 
-## Time Series DB
+## Time Series DBs
 
+<https://habr.com/ru/post/508362/> VictoriaMetrics, TimescaleDB и InfluxDB
 
 <https://www.youtube.com/watch?v=2SUBRE6wGiA&list=PLSE8ODhjZXjY0GMWN4X8FIkYNfiu8_Wl9>
 

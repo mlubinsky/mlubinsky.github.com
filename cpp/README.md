@@ -2,10 +2,39 @@
 
 <https://wordsandbuttons.online/SYTYKC.pdf> C
 
+
+https://www.reddit.com/r/cpp/comments/ffx95k/static_analysis_tools_you_use_in_ci_for_your_cpp/   cpp static analysis
+
+Using -D flag
+gcc  -DDEBUG=1 d.c;
+```
+#include <stdio.h>
+ 
+int main()
+{
+//    #ifdef DEBUG
+#if DEBUG   == 1
+       printf("Debug run=%d  \n", DEBUG);
+#elif DEBUG ==2
+printf("Debug run=%d  \n", DEBUG);
+    #else
+       printf("Release run\n");
+    #endif
+
+    return 1;
+}
+```
+
 ### Janet lang
 <https://janet-lang.org/> 
 
 <https://news.ycombinator.com/item?id=22975225>
+
+### Gravity lang
+<https://marcobambini.github.io/gravity/#/README>
+
+
+## UI
 
 <https://github.com/ocornut/imgui>  Dear ImGui 
 

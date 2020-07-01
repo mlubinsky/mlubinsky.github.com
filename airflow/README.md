@@ -1,3 +1,59 @@
+<https://diogoalexandrefranco.github.io/about-airflow-date-macros-ds-and-execution-date/>
+
+
+<https://airflow.apache.org/docs/stable/scheduler.html#scheduling-triggers>
+
+```  
+Note that if you run a DAG on a schedule_interval of one day, the run stamped 2016-01-01 will be trigger soon after 2016-01-01T23:59. 
+In other words, the job instance is started once the period it covers has ended.
+Let's Repeat That The scheduler runs your job one schedule_interval AFTER the start date, at the END of the period.
+```
+
+<https://stackoverflow.com/questions/62403142/airflow-branchpythonoperator-chaining>
+```
+ think you suggest to use the chain func like this:
+chain ([t1,t2,t3, fork_task, join_task] )
+? (edited) 
+
+Michael Lu  2 hours ago
+I am not clear
+
+Nick Benthem  2 hours ago
+I'd just use it as chain(t1,t2,t3,fork_task,[branch_1,branch_2],join_task)
+
+Michael Lu  2 hours ago
+I see your point. I will try it shortly
+The chain() returns nothing.
+How my return statement should look like?
+
+Nick Benthem  1 hour ago
+I wouldn't even use a new function - I'd just call
+chain(t1,t2,t3,fork_task,[branch_1,branch_2],join_task) for your downstream dependencies
+
+Michael Lu  1 hour ago
+I am trying to say what  I do not understand clearly how to use it -   f()  has the return statement; what I shout pass to return?
+
+Michael Lu  43 minutes ago
+The def f() : is not created by me, I have to obey the contract.
+How to convert the current return:
+return ( t1 >> t2 >> t3)
+to my requirement?
+
+Nick Benthem  40 minutes ago
+That seems like a weird contract - and I would re-examine what you're trying to do. You might be able to wrap the function in a lambda of some sort - but t1 >> t2 is just a moniker for __rshift__. It's a function call you're trying to do - but that's getting awfully wonky.
+Check out the code here for what that >> logic is doing: https://github.com/apache/airflow/blob/5355909b5f4ef0366e38f21141db5c95baf443ad/airflow/models.py#L2569
+airflow/models.py:2569
+    def __rshift__(self, other):
+    
+<https://github.com/apache/airflow|apache/airflow>apache/airflow | Added by GitHub
+```
+
+<https://www.youtube.com/watch?v=XJf-f56JbFM>
+
+<http://michal.karzynski.pl>
+
+<https://bhavaniravi.com/blog/apache-airflow-introduction>
+
 <https://github.com/quantumblacklabs/kedro> . Kedro: best-practice for data and ML pipelines.
 
 <https://pyvideo.org/pycon-hk-2018/industrial-machine-learning-pipelines-with-python-airflow.html> 

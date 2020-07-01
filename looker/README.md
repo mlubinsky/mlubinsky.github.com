@@ -1,3 +1,268 @@
+General Questions
+
+<https://help.looker.com/hc/en-us/articles/360023640634-Dynamic-Measures-with-Parameters>
+
+https://help.looker.com/hc/en-us/articles/360041919653-How-to-Dimensionalize-a-Measure-in-Looker
+
+<https://docs.looker.com/data-modeling/learning-lookml/working-with-joins#joins_start_with_an_explore>
+
+
+<https://discourse.looker.com/t/how-to-combine-2-views-explores/18308>
+
+## Dashboards examples:
+seconds_streamed < 60 THEN
+<https://dashboards.bdp.roku.com/explore/device_usage_related/agg_device_livetv_usage_metrics_tz?qid=1vQjAHoYqiGaJ4EzOwoGwu&origin_space=2156&toggle=vis>
+
+<https://dashboards.bdp.roku.com/dashboards/3666>
+
+
+```
+ - drill_fields
+ - dimention_group
+ - join in measure 
+ - vs derived 
+ - SQL_always
+ - bind filter
+```
+Specific questions:
+```
+ - average streaming hours: strraming hours / number of devices
+ - kids time 
+ - AVOD / TVOD /SVOD definition ???
+ - ad impression . 
+ - fact_amoeva_allocation vs dea
+```
+
+Dashboard Faced filter: 
+<https://vimeo.com/347837657>
+
+### combine explores
+<https://docs.looker.com/exploring-data/exploring-data/merged-results> combine explores
+```
+  A view translates to essentially a SQL table + all the transformations you might want to do off of that one table. An explore translates to a collection of these tables. 
+
+With the above in mind, we can join views together at the explore level. In a model file, 
+once you have defined an explore, you can join other view files to that explore using the join:{} parameter.  
+
+Essentially it means that you can just define views for your tables, and then join them in LookML without having to create a new view file and write a new derived table every time you want to join two tables to one another
+The two parameters you mentioned are also explore level parameters, with differing purposes. see: 
+```
+### always_join parameter 
+ 
+accepts a list of LookML joins (defined in your explore) that Looker will always execute when querying a given explore. 
+
+### sql_always_having 
+accepts a SQL snippet that Looker will always insert into the HAVING clause of an explore's query.
+ 
+ https://help.looker.com/hc/en-us/articles/360001286007-Creating-Filtered-Measures-
+ 
+
+###  sql for Dimensions
+```
+The sql block for dimensions can generally take any valid SQL that would go into a single column of a SELECT statement. These statements generally rely on Looker’s substitution operator, which has several forms:
+
+${TABLE}.column_name references a column in the table that is connected to the view you’re working on.
+${dimension_name} references a dimension within the view you’re working on.
+${view_name.dimension_name} references a dimension from another view.
+${view_name.SQL_TABLE_NAME} references another view or derived table. (Note that SQL_TABLE_NAME in this reference is a literal string; you do not need to replace it with anything.)
+If sql is left unspecified, then Looker assumes that there is a column in the underlying table with the same name as the field. For example, selecting a field called city without a sql parameter would be equivalent to specifying sql: ${TABLE}.city.
+
+```
+### Measures as rows
+following is based on https://help.looker.com/hc/en-us/articles/360023862233-Transpose-Table-Display-Measures-as-Rows-
+
+Custom fields:   
+```
+
+coalesce(
+ if(row()=1, ${derived_trc_amoeba_kpi.allocated_devices}, null),
+ 
+ if(row()=2, index(${derived_trc_amoeba_kpi.devices_on_trc}, 1), null),
+ if(row()=3, index(${derived_trc_amoeba_kpi.Total_hours}, 1), null),
+ if(row()=4, index(${derived_trc_amoeba_kpi.AVOD_hours}, 1), null),
+ if(row()=5, index(${derived_trc_amoeba_kpi.AVOD_movies_hours}, 1), null),
+ if(row()=6, index(${derived_trc_amoeba_kpi.AVOD_series_hours}, 1), null),
+ if(row()=7, index(${derived_trc_amoeba_kpi.SVOD_hours}, 1), null),
+ if(row()=8, index(${derived_trc_amoeba_kpi.SVOD_movies_hours}, 1), null),
+ if(row()=9, index(${derived_trc_amoeba_kpi.SVOD_series_hours}, 1), null),
+ if(row()=10, index(${derived_trc_amoeba_kpi.Livefeed_hours}, 1), null),
+ if(row()=11, index(${derived_trc_amoeba_kpi.Kids_hours}, 1), null),
+ 
+ if(row()=12, index(${derived_trc_amoeba_kpi.Active_on_TRC_percentage}, 1), null),
+ if(row()=13, index(${derived_trc_amoeba_kpi.Avg_Total_hours}, 1), null),
+ if(row()=14, index(${derived_trc_amoeba_kpi.Avg_AVOD_hours}, 1), null),
+ if(row()=15, index(${derived_trc_amoeba_kpi.Avg_AVOD_movies_hours}, 1), null),
+ if(row()=16, index(${derived_trc_amoeba_kpi.Avg_AVOD_series_hours}, 1), null),
+ if(row()=17, index(${derived_trc_amoeba_kpi.Avg_SVOD_hours}, 1), null),
+ if(row()=18, index(${derived_trc_amoeba_kpi.Avg_SVOD_movies_hours}, 1), null),
+ if(row()=19, index(${derived_trc_amoeba_kpi.Avg_SVOD_series_hours}, 1), null),
+ if(row()=20, index(${derived_trc_amoeba_kpi.Avg_Livefeed_hours}, 1), null),
+ if(row()=21, index(${derived_trc_amoeba_kpi.Avg_Kids_hours}, 1), null),
+ 
+ null)
+ 
+ 
+ 
+ 
+coalesce(
+ if(row()=1, ${agg_amoeba_trc_device_ux_grid_metrics_daily.devices_on_trc}, null),
+ if(row()=2, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.Total_hours}, 1), null),
+
+ if(row()=3, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.AVOD_hours}, 1), null),
+ if(row()=4, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.AVOD_movies_hours}, 1), null),
+ if(row()=5, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.AVOD_series_hours}, 1), null),
+ if(row()=6, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.SVOD_hours}, 1), null),
+ if(row()=7, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.SVOD_movies_hours}, 1), null),
+ if(row()=8, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.SVOD_series_hours}, 1), null),
+ if(row()=9, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.Livefeed_hours}, 1), null),
+ if(row()=10, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.Kids_hours}, 1), null),
+ null)
+ 
+ ```
+ ### derived_trc_amoeba_kpi
+ ```
+ coalesce(
+ if(row()=1, ${derived_trc_amoeba_kpi.devices_on_trc}, null),
+ if(row()=2, index(${derived_trc_amoeba_kpi.Total_hours}, 1), null),
+
+ if(row()=3, index(${derived_trc_amoeba_kpi.AVOD_hours}, 1), null),
+ if(row()=4, index(${derived_trc_amoeba_kpi.AVOD_movies_hours}, 1), null),
+ if(row()=5, index(${derived_trc_amoeba_kpi.AVOD_series_hours}, 1), null),
+ if(row()=6, index(${derived_trc_amoeba_kpi.SVOD_hours}, 1), null),
+ if(row()=7, index(${derived_trc_amoeba_kpi.SVOD_movies_hours}, 1), null),
+ if(row()=8, index(${derived_trc_amoeba_kpi.SVOD_series_hours}, 1), null),
+ if(row()=9, index(${derived_trc_amoeba_kpi.Livefeed_hours}, 1), null),
+ if(row()=10, index(${derived_trc_amoeba_kpi.Kids_hours}, 1), null),
+ null)
+ 
+ ```
+ ### Lift
+ ```
+ 100.0 * (
+${v} -
+pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"), ${v})  
+)
+/
+pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"), ${v})
+```
+Custom fields - OLD code
+
+```  
+coalesce(
+if(row()=1, ${derived_amoeba_trc_kpi.device_count}, null),
+if(row()=2, index(${derived_amoeba_trc_kpi.active_on_trc}, 1), null),
+if(row()=3, index(${derived_amoeba_trc_kpi.percent_active_on_trc}, 1), null),
+ 
+if(row()=4, index(${derived_amoeba_trc_kpi.avg_trc_hours}, 1), null),
+if(row()=5, index(${derived_amoeba_trc_kpi.avg_avod_hours}, 1), null),
+if(row()=6, index(${derived_amoeba_trc_kpi.avg_svod_hours}, 1), null),
+if(row()=7, index(${derived_amoeba_trc_kpi.avg_series_hours}, 1), null),
+if(row()=8, index(${derived_amoeba_trc_kpi.avg_movie_hours}, 1), null),
+if(row()=9, index(${derived_amoeba_trc_kpi.avg_livefeed_hours}, 1), null),
+if(row()=10, index(${derived_amoeba_trc_kpi.avg_ad_impressions_hours}, 1), null),
+if(row()=11, index(${derived_amoeba_trc_kpi.trc_hours}, 1), null),
+if(row()=12, index(${derived_amoeba_trc_kpi.avod_hours}, 1), null),
+if(row()=13, index(${derived_amoeba_trc_kpi.svod_hours}, 1), null),
+if(row()=14, index(${derived_amoeba_trc_kpi.series_hours}, 1), null),
+if(row()=15, index(${derived_amoeba_trc_kpi.movie_hours}, 1), null),
+if(row()=16, index(${derived_amoeba_trc_kpi.livefeed_hours}, 1), null),
+if(row()=17, index(${derived_amoeba_trc_kpi.ad_impressions}, 1), null),
+null)
+
+ 
+
+ 
+  dimension: dummy_three {
+    case: {
+      when: { #device_count
+        label: "Total Devices"
+        sql: 1=1 ;;
+      }
+      when: { #active_on_trc
+        label: "Devices on TRC"
+        sql: 1=1 ;;
+      }
+      when: {  #percent_active_on_trc
+        label: "% Active on TRC"
+        sql: 1=1 ;;
+      }
+      when: {  #avg_trc_hours
+        label: "Avg TRC Hours"
+        sql: 1=1 ;;
+      }
+      when: {  #avg_avod_hours
+        label: "Avg AVOD Hours"
+        sql: 1=1 ;;
+      }
+      when: {  #avg_svod_hours
+        label: "Avg SVOD Hours"
+        sql: 1=1 ;;
+      }
+      when: {   #avg_series_hours
+        label: "Avg TV Series Hours"
+        sql: 1=1 ;;
+      }
+      when: {   #avg_movie_hours
+        label: "Avg Movies Hours"
+        sql: 1=1 ;;
+      }
+
+      when: {   #avg_livefeed_hours
+        label: "Avg Livefeed Hours"
+        sql: 1=1 ;;
+      }
+
+      when: {   #avg_ad_impressions_hours
+        label: "Avg Ad Impressions Hours"
+        sql: 1=1 ;;
+      }
+#-------------Absolute numbers
+      when: { # trc_hours
+        label: "TRC Hours"
+        sql: 1=1 ;;
+      }
+
+      when: {  # avod_hours
+        label: "TRC AVOD Hours"
+        sql: 1=1 ;;
+      }
+
+      when: {  # svod_hours
+        label: "TRC SVOD Hours"
+        sql: 1=1 ;;
+      }
+
+      when: { # series_hours
+        label: "Series Hours"
+        sql: 1=1 ;;
+      }
+
+      when: { # movie_hours
+        label: "Movie Hours"
+        sql: 1=1 ;;
+      }
+      when: {   #avg_livefeed_hours
+        label: "Livefeed Hours"
+        sql: 1=1 ;;
+      }
+
+      when: {   #avg_ad_impressions_hours
+        label: "Ad Impressions Hours"
+        sql: 1=1 ;;
+      }
+    }
+
+
+Custom Fields - Table calculation ( Lift )
+100.0 *
+(
+${v} -
+pivot_where(contains(${derived_amoeba_trc_kpi.bucket}, "#Control"), ${v})  
+)
+/
+pivot_where(contains(${derived_amoeba_trc_kpi.bucket}, "#Control"), ${v}) 
+
+```
 <https://docs.looker.com/reference/explore-params/cancel_grouping_fields>
 
 <https://www.youtube.com/watch?v=l0ajePzSe4E&list=PL2rFVcDw2yVoXlI3onYS7Ecufjg2ODI9u>

@@ -1,19 +1,3 @@
-https://habr.com/ru/post/506070/ . SQL
-
-https://habr.com/ru/post/461067/
-```
-select t.product, 
-       sum(case when t.supplier = 'A' then t.volume end) as A,
-       sum(case when t.supplier = 'B' then t.volume end) as B,
-       sum(case when t.supplier = 'C' then t.volume end) as C
-from test_supply t
-group by t.product
-order by t.product;
-```
- 
-
-
-
 ## Falcon UI
 
 <https://github.com/plotly/falcon> UI
@@ -356,11 +340,13 @@ HAVING COUNT(person_id) >1
 ```
 
 
-## Hierarhy 
+## Hierarhy  Recursive SQL
  https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database
  https://news.ycombinator.com/item?id=20027586 Hierarchy and RECURSIVE SQL
  https://github.com/bitnine-oss/agensgraph . Postgres extension  AgensGraph
  http://patshaughnessy.net/2017/12/13/saving-a-tree-in-postgres-using-ltree
+ https://martinheinz.dev/blog/18 - recursive SQL
+ 
 ``` 
  WITH RECURSIVE cte (id, message, author, path, parent_id, depth)  AS (
   SELECT  id,

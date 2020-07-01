@@ -1,3 +1,10 @@
+Делайте что хотите, но пусть это приносит радость
+/Уолт Уитмен/
+
+<https://news.ycombinator.com/item?id=23504089>  The relationship between mindset and age
+
+<http://libgen.is/> . books
+
 <https://www.levels.fyi/> salary in high tech companies
 
 <https://news.ycombinator.com/item?id=21966465>  Top Paying Tech Companies by SWE Level (

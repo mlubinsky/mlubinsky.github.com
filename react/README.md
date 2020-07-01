@@ -25,9 +25,13 @@
 
 <https://blog.logrocket.com/how-to-use-svgs-in-react/>
 
-## React + Chart.js + Bootstrap table
+## React + Chart.js + Bootstrap table. Covid19
+
+<https://github.com/biln/covid19api/tree/habr>
 
 <https://github.com/trekhleb/covid-19>
+
+<https://habr.com/ru/post/501246/>
 
 <https://github.com/bgarcevic/outbreak-monitor>
 
@@ -69,6 +73,14 @@ View the Application Here: https://covid-dash-udemy.herokuapp.com/
 <https://reactjs.org/docs/getting-started.html>
 
 https://reactjs.org/community/examples.html
+
+
+https://news.ycombinator.com/item?id=23005929
+
+https://felixgerschau.com/react-rerender-components
+
+https://news.ycombinator.com/item?id=23004848
+
 
 <https://youtu.be/gSvSH9tZwII> 
 
@@ -121,6 +133,7 @@ React example
 <https://scotch.io/starters/react/getting-started-with-react-2019-edition>
 
 ## UseEffect and other Hooks
+<https://obedparla.com/code/a-visual-guide-to-react-mental-models-part-2-use-state-use-effect-and-lifecycles/>
 
 <https://medium.com/better-programming/8-awesome-react-hooks-2cb31aed4f3d>
 

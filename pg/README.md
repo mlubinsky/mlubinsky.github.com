@@ -1,5 +1,9 @@
 <https://news.ycombinator.com/item?id=22718466> what is schema vs database in Postgres?
 
+<https://bytes.yingw787.com/posts/2020/06/15/postgres_as_app_1/>
+
+<http://www.interdb.jp/pg/>. internals
+
 <https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791> What is wrong with Postgres?
 
 <https://news.ycombinator.com/item?id=22775330>   What is wrong with Postgres?
@@ -13,6 +17,15 @@
 <https://habr.com/ru/company/tensor/blog/497008/>
 
 <https://habr.com/ru/company/tensor/blog/492694/>
+## Hierarhy
+<https://towardsdatascience.com/recursive-sql-queries-with-postgresql-87e2a453f1b> Recursive SQL
+<https://habr.com/ru/company/tensor/blog/501614/>.  how to manage the hierarhy of objects?
+
+## Cube
+https://www.postgresql.org/docs/current/cube.html
+
+SP-Gist Index
+https://habr.com/ru/company/postgrespro/blog/337502/
 
 ## Redis
 <https://habr.com/ru/post/485672/>
@@ -650,6 +663,7 @@ SELECT ROW_TO_JSON(table_name) FROM table_name
 
  <https://habr.com/ru/post/475178/>
 
+<https://vsevolod.net/postgresql-jsonb-index/>
 
 <https://www.w3resource.com/PostgreSQL/postgresql-json-functions-and-operators.php>
 

@@ -2,6 +2,10 @@
 
 <http://www.mathnet.ru/php/archive.phtml?wshow=paper&jrnid=ufn&paperid=2258&option_lang=rus>
 
+<https://elementy.ru/problems/2305/Bayes_versus_virus#p4> Bayes
+
+<http://mishadoff.com/blog/what-is-greater-e-pi-or-pi-e/>
+
 ### Abstract Algebra
 <https://github.com/mavam/abstract-algebra-cheatsheet>
 
@@ -9,6 +13,7 @@
 
 <https://news.ycombinator.com/item?id=22861731>
 
+<https://news.ycombinator.com/item?id=23150699>
 
 <http://www.stat.columbia.edu/~gelman/book/> .  Bayes book 3rd ed
 

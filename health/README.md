@@ -1,5 +1,11 @@
 <https://postnauka.ru/video/154976> blood pressure
 
+https://habr.com/ru/post/506238/ .  colonoscopy
+
+https://www.amazon.com/gp/product/B07FNJB8TT/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1&tag=kdimecom-20 .  Logitech MX Vertical Wireless Mouse   
+
+https://www.amazon.com/gp/product/B003BEECTC/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1&tag=kdimecom-20
+
 ## Posture
 <https://news.ycombinator.com/item?id=22892205> posture
 
@@ -13,6 +19,8 @@
 ## Vision
 
 <https://habr.com/ru/company/plarium/blog/498724/>
+
+<https://tonsky.me/blog/monitors/>  Monitor
 
 ## Health
 

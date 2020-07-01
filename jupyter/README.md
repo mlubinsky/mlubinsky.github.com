@@ -1,12 +1,17 @@
 <https://ljvmiranda921.github.io/notebook/2020/03/16/jupyter-notebooks-in-2020-part-2/>
 
+https://habr.com/ru/company/ruvds/blog/505624/. HiSpeed DataFrames: Dask Vuex
+
 <https://habr.com/ru/post/500162/>
 
 <https://www.dataschool.io/cloud-services-for-jupyter-notebook/>
 
 <https://habr.com/ru/post/485318/> Добавляем в Jupyter Notebooks красоту и интерактивность
 
+### Pandas
 <https://habr.com/ru/company/ruvds/blog/492220/>. Pandas
+
+https://habr.com/ru/company/ruvds/blog/500428/
 
 <https://habr.com/ru/post/475210/>. Pandas
 

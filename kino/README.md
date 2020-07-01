@@ -4,6 +4,8 @@
 
 ## Movies
 
+https://soap.d3.ru/porekomenduite-pozhaluista-detektivnyi-serial-1990105/?sorting=rating
+
 https://obsudim-serialy.livejournal.com/
 
 https://zbzkino.d3.ru/

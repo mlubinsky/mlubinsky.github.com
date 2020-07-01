@@ -2,6 +2,18 @@
 
 <https://www.freecodecamp.org/news/the-guide-to-using-eslint-and-prettier-in-a-react-app/>
 
+### Diff
+
+https://github.com/dandavison/delta
+
+https://github.com/ynqa/diffy
+
+https://github.com/ymattw/ydiff
+
+https://github.com/so-fancy/diff-so-fancy
+
+https://unix.stackexchange.com/questions/196565/how-to-color-diff-output
+
 ### File manager
 
 <https://www.youtube.com/watch?v=47QYCa8AYG4> .  vifm
@@ -16,10 +28,13 @@
 
 <https://stackoverflow.com/questions/3001177/how-do-i-grep-for-all-non-ascii-characters>
 
- grep on OSX 10.8 no longer supports PCRE ("Perl-compatible regular expressions") as Darwin now uses BSD grep instead of GNU grep.
+ grep on OSX 10.8 no longer supports PCRE ("Perl-compatible regular expressions") 
+ as Darwin now uses BSD grep instead of GNU grep.
 ```
 grep --color='auto' -P -n "[\x80-\xFF]" file.xml
 ```
+
+https://stackoverflow.com/questions/18649512/unicodedecodeerror-ascii-codec-cant-decode-byte-0xe2-in-position-13-ordinal
 
 ## Code Explorer:
 
@@ -76,6 +91,12 @@ alias cat="bat"
 
 ## VIM
 
+https://danielmiessler.com/study/vim/
+
+https://www.youtube.com/watch?v=E-ZbrtoSuzw&feature=youtu.be
+
+https://www.youtube.com/watch?v=futay9NjOac
+
 <https://www.youtube.com/watch?v=SLQWQ_R4bRI&list=PLRjzjpJ02WDMJOTsrdByXynk8h0ScMK9R> 
 ```
 %  -matching brackets
@@ -124,6 +145,8 @@ $ to the end of a line
 
 ## Visual Studio Code
 
+<https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner>
+
 <https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces>
 
 <https://habr.com/ru/company/microsoft/blog/472228/> 
@@ -140,6 +163,11 @@ $ to the end of a line
 <https://www.jonrcorbin.com/the-best-vs-code-extension-list-for-full-stack-developers/>
 
 <https://code.visualstudio.com/docs/introvideos/debugging> . DEBUGGING
+
+
+### REST extensions
+
+<https://marketplace.visualstudio.com/items?itemName=humao.rest-client>
 
 ### VS python
 <https://habr.com/ru/company/microsoft/blog/471188/> . Python extension
@@ -176,4 +204,4 @@ code --diff file1.js file2.js
 
 <https://micro-editor.github.io/index.html>
 
-
+<https://news.ycombinator.com/item?id=23126458>

@@ -4,6 +4,9 @@
 <https://habr.com/ru/post/500304/> Grid explained
 
 
+
+https://exploringjs.com/deep-js/ . Book
+
 <https://habr.com/ru/post/472816/> JS patterns
 
 <https://fullstackopen.com/en/> 

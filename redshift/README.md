@@ -1,3 +1,5 @@
+<https://stackoverflow.com/questions/62418138/redshift-copy-from-the-empty-s3-partition>
+
 <https://www.intermix.io/blog/14-data-pipelines-amazon-redshift/>
 
 <https://sonra.io/2018/01/01/using-apache-airflow-to-build-a-data-pipeline-on-aws/>
@@ -195,6 +197,30 @@ select
 from NS  
 inner join books B ON NS.n <= REGEXP_COUNT(B.tags, ',') + 1
 ```
+
+### dim_experiment  - extract the buckets for given experiment
+
+```
+select id, SUBSTRING(single_bucket, 1, STRPOS(single_bucket, ':')-1 ) FROM (
+ with NS AS (
+  select 1 as n union all
+  select 2 union all
+  select 3 union all
+  select 4 union all
+  select 5 union all
+  select 6 union all
+  select 7 union all
+  select 8 union all
+  select 9 union all
+  select 10
+)
+select  A.id, TRIM(SPLIT_PART(A.buckets, ',', NS.n))  as single_bucket from NS
+inner join roku.dim_experiment A  ON NS.n <= REGEXP_COUNT(A.buckets, ',') + 1
+where id = 'phmXsT1GH'
+) C;
+```
+
+
 
 
 ```

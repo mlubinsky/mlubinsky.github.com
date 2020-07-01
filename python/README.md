@@ -1,5 +1,18 @@
 <https://snarky.ca/why-you-should-use-python-m-pip/>
 
+<https://github.com/dabeaz-course/practical-python/blob/main/Notes/Contents.md>
+
+<https://modelpredict.com/python-dependency-management-tools>
+
+<https://news.ycombinator.com/item?id=23386537> debugging
+
+## ML papers with code
+https://paperswithcode.com/
+
+<https://paperswithcode.com/paper/causalml-python-package-for-causal-machine> CasualML
+
+## yeld
+<https://medium.com/livecodestream/how-to-use-generator-and-yield-in-python-c481cea097d7>
 
 ## Config
 <https://whalesalad.com/blog/doing-python-configuration-right>
@@ -58,6 +71,10 @@ deactivate
 ## Books
 
 <https://pythonbooks.org/>
+
+https://www.amazon.com/Practices-Python-Pro-Dane-Hillard/dp/1617296082
+
+https://www.amazon.com/Serious-Python-Black-Belt-Deployment-Scalability-ebook/dp/B074S4G1L5
 
 <https://github.com/pamoroso/free-python-books>
 
@@ -149,7 +166,7 @@ https://habr.com/ru/company/ruvds/blog/485646/ . Python Tips
 <http://voorloopnul.com/blog/writing-self-contained-etl-pipeline-with-python/>
 
 ## multiprocessing vs threading
-
+<https://habr.com/ru/company/otus/blog/501056/>
 ```
     import random
     import time

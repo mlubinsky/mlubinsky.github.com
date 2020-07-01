@@ -1,3 +1,29 @@
+ <https://news.ycombinator.com/item?id=23229241> .  Linux Productivity Tools (2019)   (usenix.org)
+ 
+ <https://news.ycombinator.com/item?id=23468193>
+ 
+ https://www.reddit.com/r/programming/comments/hbetyd/gaze_a_cli_tool_that_accelerates_your_quick_coding/
+ 
+ https://github.com/wtetsu/gaze
+ 
+ 
+ ## Terminal shortcats
+<https://ramantehlan.github.io/blog/post/terminalshortcuts/>
+
+<https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html>
+
+
+
+ ```
+ set -o vi
+ ```
+ <https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.pdf>
+ 
+ 
+ 
+ 
+ <https://switowski.com/blog/favorite-cli-tools>
+ 
  
 ### How linux works
 
@@ -17,10 +43,8 @@
 
 <https://news.ycombinator.com/item?id=22849208> programs which  save you hours
 
-## Terminal shortcats
-<https://ramantehlan.github.io/blog/post/terminalshortcuts/>
 
-<https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html>
+<https://github.com/wting/autojump> autojump
 
 ## bash job control
 
@@ -120,11 +144,20 @@ echo $DIR
 echo "The script basename `basename "$0"`"
   
 ```
-### bash func
+### bash func() - add to .bashrc
+```
+function mcd(){
+   mkdir -p "$1"
+   cd "$1"
+}
+```
+
 ```
 !#/bin/bash
 
+# function which tests what $1 exists:
 function test1() { command -v "$1" >/dev/null 2>&1; }
+# function which tests what $1 exists but in different way:
 function test2() { type -P "$1" >/dev/null; }
 
 function die {
@@ -135,13 +168,14 @@ function die {
 echo ${BASH_VERSINFO[0]}
 #[[ "${BASH_VERSINFO[0]}" -lt 4 ]] && die "Bash >=4 required"
 
+## list of programs to be checked: curl nc dig:
 deps=(curl nc dig)
 for dep in "${deps[@]}"; do
   echo $dep
   test1 "${dep}" || die "Missing '${dep}'"
 done
   
-  
+# 2 ways to chech what program (e.g. curl) exists (type and command):  
 (base) [BASH_FUNC]$ type -p curl
 /Users/miclub01/anaconda3/bin/curl
 (base) [BASH_FUNC]$ command -v curl
@@ -155,7 +189,7 @@ done
 alias alog="tail -f /var/log/apache2/error.log"
 alias please='sudo $(fc -ln -1)'
 
-
+## open file from comman line with some editor:
 alias tw='open -a /Applications/TextWrangler.app'
 tw /path/I/want/opened/
 ```

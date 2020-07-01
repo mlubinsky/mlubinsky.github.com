@@ -1,8 +1,15 @@
+
+<https://www.meetup.com/Scala-Bay/events/271129752/>. Kirpichev Google
+
 <https://arxiv.org/abs/1911.01547> On the Measure of Intelligence François Chollet
 
 <https://arxiv.org/abs/2003.01384> Self-Supervised Object-Level Deep Reinforcement Learning
 
+<https://habr.com/ru/post/505516/> 1st ML model witk skilearn 
+
 <https://news.ycombinator.com/item?id=22769319>
+
+<https://explained.ai/regularization/index.html>
 
 <https://jaydaigle.net/blog/overview-of-bayesian-inference/>
 

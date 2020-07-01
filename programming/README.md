@@ -4,11 +4,53 @@
  () Parentheses
 ```
 
+https://github.com/dbohdan/structured-text-tools 
+
+https://www.backblaze.com/blog/whats-the-diff-programs-processes-and-threads/
+```
+There are the two types of memory available to a process or a thread, the stack and the heap. 
+It is important to distinguish between these two types of process memory because each thread will have its own stack, 
+but all the threads in a process will share the heap.
+
+Threads are sometimes called lightweight processes because they have their own stack but can access shared data.
+Because threads share the same address space as the process and other threads within the process, 
+the operational cost of communication between the threads is low, which is an advantage. 
+The disadvantage is that a problem with one thread in a process will certainly affect other threads and the viability of the process itself.
+```
+
+https://ollef.github.io/blog/posts/query-based-compilers.html
+
+<https://ncona.com/2020/06/create-diagrams-with-code-using-graphviz/> Graphviz
+
+https://news.ycombinator.com/item?id=23475225
+
+Developing lang in C
+https://www.youtube.com/playlist?list=PLvdK1vRmp8wMzH4w_8sQ30NKU3Bt4Cc-M&feature=share
+
+Build JavaScript compiler in C:
+https://hacks.mozilla.org/2020/06/compiler-compiler-working-on-a-javascript-engine/
+
+
+
+<https://janet-lang.org/> Janet Language
+
 <https://luminousmen.com/post/asynchronous-programming-await-the-future>
 
 <https://github.com/jbranchaud/til/blob/master/README.md> tips
 
 <https://news.ycombinator.com/item?id=22908044> tips
+
+<https://news.ycombinator.com/item?id=23118940>. tips
+```
+I'll use tmux to split my terminal into an editor window on the right, and on the left,
+I'll have a tool like watchman or entr watching for changes to my code, and running those tools e.g.
+
+    find . -name "*py" | entr make continuous
+    
+```
+
+how TLS works:
+https://habr.com/ru/company/plesk/blog/507094/
 
 
 <https://academy.lightbend.com/courses>  mostly scala and reactive programming
@@ -102,6 +144,9 @@ Nim
 
 <https://bytes.yingw787.com/posts/2019/12/06/monads/>
 
+
+https://github.com/Hirrolot/poica
+
 Product types allow you to have more than one value in a single structure, at the same time. 
 We call them ``product types`` because we can calculate the number of possible values using multiplication. 
 Example: struct ( x boolean, y boolean }  has 4 possible combinations
@@ -136,6 +181,7 @@ But why are they called sum types? Well, if the value can only be one of a fixed
 <https://news.ycombinator.com/item?id=21092698> crafting interpreters
 
 ## Parsers
+<https://news.ycombinator.com/item?id=23187239> Compiling classes
 
 <https://zserge.com/posts/cucu-part1/> small compiler
 
@@ -164,6 +210,8 @@ But why are they called sum types? Well, if the value can only be one of a fixed
 
 ### PEG
 <https://habr.com/ru/post/471860/>
+
+<https://www.youtube.com/watch?v=QppWTvh7_sI> Guido PEG talk
 
 <https://medium.com/@gvanrossum_83706/peg-parsers-7ed72462f97c> PEG from Guido
 

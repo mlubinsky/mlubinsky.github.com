@@ -5,6 +5,12 @@
 <https://habr.com/ru/company/lamoda/blog/495344/>
 
 
+## Book
+<https://www.digitalocean.com/community/books/how-to-code-in-go-ebook>
+
+<https://www.amazon.com/dp/B08BFXNTFF>. Graph algorithms
+
+
 <https://tour.golang.org/welcome/1> Go playground
 
 <https://play.golang.org/p/Irqxm0okfkt> .  Go playgrounds

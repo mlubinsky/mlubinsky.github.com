@@ -1,3 +1,7 @@
+<https://builtin.com/machine-learning/introduction-deep-learning-tensorflow-20>
+
+<https://habr.com/ru/post/500788/>
+
 ## Sound
 
 https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/micro/examples/micro_speech/train 
@@ -6,7 +10,55 @@ https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examp
 
 https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/micro/examples/micro_speech/train/README.md
 
-## TF Micro
+## TF Micro Build Op Registration
+```
+static tflite::MicroOpResolver<5> micro_op_resolver;
+  micro_op_resolver.AddBuiltin(
+      tflite::BuiltinOperator_DEPTHWISE_CONV_2D,
+      tflite::ops::micro::Register_DEPTHWISE_CONV_2D(), 3);
+  micro_op_resolver.AddBuiltin(tflite::BuiltinOperator_CONV_2D,
+                               tflite::ops::micro::Register_CONV_2D(), 3);
+  micro_op_resolver.AddBuiltin(tflite::BuiltinOperator_AVERAGE_POOL_2D,
+                               tflite::ops::micro::Register_AVERAGE_POOL_2D(),2);
+  micro_op_resolver.AddBuiltin(tflite::BuiltinOperator_RESHAPE,
+                               tflite::ops::micro::Register_RESHAPE(),1);
+  micro_op_resolver.AddBuiltin(tflite::BuiltinOperator_SOFTMAX,
+                               tflite::ops::micro::Register_SOFTMAX(), 2);
+			       
+```
+
+(mbed) (tf) [mbed]$ find . -name "*.cc" | xargs grep micro_op_resolver.Add
+
+```
+./tensorflow/lite/micro/examples/micro_speech/main_functions.cc:  if (micro_op_resolver.AddDepthwiseConv2D() != kTfLiteOk) {
+./tensorflow/lite/micro/examples/micro_speech/main_functions.cc:  if (micro_op_resolver.AddFullyConnected() != kTfLiteOk) {
+./tensorflow/lite/micro/examples/micro_speech/main_functions.cc:  if (micro_op_resolver.AddSoftmax() != kTfLiteOk) {
+./tensorflow/lite/micro/examples/micro_speech/main_functions.cc:  if (micro_op_resolver.AddReshape() != kTfLiteOk) {
+```
+
+(mbed) (tf) [mbed]$ find . -name "*.cc" | xargs grep -i Logisti
+```
+./tensorflow/lite/micro/kernels/logistic.cc:#include "tensorflow/lite/kernels/internal/reference/integer_ops/logistic.h"
+./tensorflow/lite/micro/kernels/logistic.cc:#include "tensorflow/lite/kernels/internal/reference/logistic.h"
+./tensorflow/lite/micro/kernels/logistic.cc:TfLiteStatus LogisticEval(TfLiteContext* context, TfLiteNode* node) {
+./tensorflow/lite/micro/kernels/logistic.cc:        reference_ops::Logistic(
+./tensorflow/lite/micro/kernels/logistic.cc:        reference_integer_ops::Logistic(
+./tensorflow/lite/micro/kernels/logistic.cc:TfLiteRegistration* Register_LOGISTIC() {
+./tensorflow/lite/micro/kernels/logistic.cc:                                 /*invoke=*/activations::LogisticEval,
+./tensorflow/lite/micro/all_ops_resolver.cc:  AddLogistic();
+./tensorflow/lite/core/api/flatbuffer_conversions.cc:    case BuiltinOperator_LOGISTIC:			       
+			       
+```
+
+### model.cc
+ find . -type f | xargs grep g_model
+``` 
+./tensorflow/lite/micro/examples/micro_speech/micro_features/model.cc:const unsigned char g_model[] DATA_ALIGN_ATTRIBUTE = {
+./tensorflow/lite/micro/examples/micro_speech/micro_features/model.cc:const int g_model_len = 18288;
+./tensorflow/lite/micro/examples/micro_speech/micro_features/model.h:extern const unsigned char g_model[];
+./tensorflow/lite/micro/examples/micro_speech/micro_features/model.h:extern const int g_model_len;
+./tensorflow/lite/micro/examples/micro_speech/main_functions.cc:  model = tflite::GetModel(g_model);
+```
 
 <https://blog.tensorflow.org/search?label=TensorFlow+Lite&max-results=100>
 
