@@ -317,13 +317,25 @@ For example:
 Some network file system implementation do not guarantee atomic mkdir, so you still need an extra caution with this method.
 
 
-### Script to automatically run program if file timestamp changed 
+### Script to automatically run program if file timestamp changed  (ENTR)
+
+https://jvns.ca/blog/2020/06/28/entr/
 
 <https://stackoverflow.com/questions/18599339/python-watchdog-monitoring-file-for-changes>
 
+ https://github.com/cortesi/modd/
+ 
+ https://news.ycombinator.com/item?id=23698305
+ 
 <https://www.michaelcho.me/article/using-pythons-watchdog-to-monitor-changes-to-a-directory>
 
+https://github.com/watchexec/watchexec
+
 <https://facebook.github.io/watchman/>
+
+https://facebook.github.io/watchman/docs/watchman-make
+
+https://github.com/cespare/reflex
 
 <https://gist.github.com/davidmoreno/c049e922e41aaa94e18955b9fac5549c>
 
