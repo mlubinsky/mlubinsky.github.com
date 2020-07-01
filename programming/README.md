@@ -3,7 +3,7 @@
  {} Curly brackets  are often called braces 
  () Parentheses
 ```
-
+https://www.youtube.com/watch?v=fgp0tKWYQWY implementing regex from scratch
 https://github.com/dbohdan/structured-text-tools 
 
 https://www.backblaze.com/blog/whats-the-diff-programs-processes-and-threads/
