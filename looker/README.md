@@ -9,6 +9,16 @@ https://help.looker.com/hc/en-us/articles/360041919653-How-to-Dimensionalize-a-M
 
 <https://discourse.looker.com/t/how-to-combine-2-views-explores/18308>
 
+```
+Looker doesn't have type: stddev, so we would need to achieve it in `sql`. So the steps are:
+
+1) Find the SQL function of your dialect that gives us the stddev()
+2) Make a dimension (type: number) with the sql: sttdev();
+3) Make a measure (type: number) that reference the dimension above
+
+-- we have to make a dimension first before a measure otherwise we will run into aggregation of aggregation, which most SQL dialects can not do.
+```
+
 ## Dashboards examples:
 seconds_streamed < 60 THEN
 <https://dashboards.bdp.roku.com/explore/device_usage_related/agg_device_livetv_usage_metrics_tz?qid=1vQjAHoYqiGaJ4EzOwoGwu&origin_space=2156&toggle=vis>
