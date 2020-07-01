@@ -5,6 +5,8 @@
 
 <https://habr.com/company/ruvds/blog/428576/> . PDF book
 
+https://books.goalkicker.com/NodeJSBook/
+
 <https://flaviocopes.com/> JS, Node, Express, React books 
 
 <https://github.com/goldbergyoni/nodebestpractices> . Best Practices
