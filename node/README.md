@@ -1,5 +1,7 @@
 <https://gregberge.com/blog/javascript-stack-2020>
 
+https://nodemon.io/  utility that will monitor for any changes in your source and automatically restart your server. 
+
 ## Books
 <https://jscomplete.com/learn/node-beyond-basics>
 
