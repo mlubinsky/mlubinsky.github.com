@@ -449,7 +449,7 @@ Download GCC_ARM for MAc
 https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
 mbed config -G GCC_ARM_PATH "C:\Program Files (x86)\GNU Tools ARM Embedded\7 2018-q2-update\bin
 
-$ mbed config -G CLOUD_SDK_API_KEY ak_1MDE3MDNhZDMwZDJkOGFlZGE2MWYxMzRjMDAwMDAwMDA017040793c538aeda61f134c00000000IQBgqsHL7r63RXOEXAEiz2YxB5kIgujJ
+$ mbed config -G CLOUD_SDK_API_KEY  xxxxxx
 
 $ mbed config --list
 
@@ -457,7 +457,7 @@ $ mbed config --list
 [mbed] Global config:
 ARM_PATH=/Users/miclub01/Downloads/gcc-arm-none-eabi-9-2019-q4-major/bin/
 GCC_ARM_PATH=/Users/miclub01/Downloads/gcc-arm-none-eabi-9-2019-q4-major/bin/
-CLOUD_SDK_API_KEY=ak_1MDE3MDNhZDMwZDJkOGFlZGE2MWYxMzRjMDAwMDAwMDA017040793c538aeda61f134c00000000IQBgqsHL7r63RXOEXAEiz2YxB5kIgujJ
+CLOUD_SDK_API_KEY=xxxxxxx
 
 
 
