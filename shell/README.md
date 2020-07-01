@@ -150,6 +150,12 @@ function mcd(){
    mkdir -p "$1"
    cd "$1"
 }
+
+dirinfo()
+{
+    du -ah "$1" | sort -rh | head -n 20
+}
+alias dirinfo=dirinfo()
 ```
 
 ```
