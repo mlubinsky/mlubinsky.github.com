@@ -29,6 +29,8 @@
 
 <https://github.com/photonlines/Intuitive-Guide-to-Maxwells-Equations>
 
+<https://news.ycombinator.com/item?id=23700295>
+
 <https://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf>
 
 <https://news.ycombinator.com/item?id=22810867>
