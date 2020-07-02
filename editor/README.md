@@ -91,6 +91,8 @@ alias cat="bat"
 
 ## VIM
 
+https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118
+
 https://danielmiessler.com/study/vim/
 
 https://www.youtube.com/watch?v=E-ZbrtoSuzw&feature=youtu.be
