@@ -58,6 +58,8 @@ https://medium.com/@srajaninnov/find-the-diameter-of-a-binary-tree-efc45b9129a7
 <https://habr.com/ru/company/JetBrains-education/blog/495014/>
 
 
+https://habr.com/ru/post/509220/. Hash table implementation
+
 ## Merging 2 sorted arrays
 into 1st array where 1st array has the capacity for both
 ```
