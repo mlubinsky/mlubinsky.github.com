@@ -10,6 +10,8 @@
 
 <https://www.quantumfieldtheory.info/>
 
+https://news.ycombinator.com/item?id=23690788.  Modelica
+
 ### QM
 <https://habr.com/ru/post/501858/>
 
