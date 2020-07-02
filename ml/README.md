@@ -1,4 +1,6 @@
 
+<https://habr.com/ru/company/skillfactory/blog/509212/> Good Links
+
 <https://www.meetup.com/Scala-Bay/events/271129752/>. Kirpichev Google
 
 <https://arxiv.org/abs/1911.01547> On the Measure of Intelligence François Chollet
