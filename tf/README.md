@@ -2,6 +2,11 @@
 
 <https://habr.com/ru/post/500788/>
 
+
+## TFLite
+
+<https://github.com/margaretmz/awesome-tflite>
+
 ## Sound
 
 https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/micro/examples/micro_speech/train 
