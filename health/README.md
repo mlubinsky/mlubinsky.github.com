@@ -1,5 +1,7 @@
 <https://postnauka.ru/video/154976> blood pressure
 
+https://www.youtube.com/watch?v=MR4Y4SuC3qk Neck excersises
+
 https://habr.com/ru/post/506238/ .  colonoscopy
 
 https://www.amazon.com/gp/product/B07FNJB8TT/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1&tag=kdimecom-20 .  Logitech MX Vertical Wireless Mouse   
