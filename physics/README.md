@@ -12,6 +12,8 @@
 
 https://news.ycombinator.com/item?id=23690788.  Modelica
 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4382372/.  Virus modeling
+
 ### QM
 <https://habr.com/ru/post/501858/>
 
