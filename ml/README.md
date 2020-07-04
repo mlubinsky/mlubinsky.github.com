@@ -5,6 +5,8 @@
 
 <https://arxiv.org/abs/1911.01547> On the Measure of Intelligence François Chollet
 
+https://www.amazon.com/Practical-Deep-Learning-Cloud-Mobile-ebook/dp/B07Z7957PL/ 
+
 <https://arxiv.org/abs/2003.01384> Self-Supervised Object-Level Deep Reinforcement Learning
 
 <https://habr.com/ru/post/505516/> 1st ML model witk skilearn 
