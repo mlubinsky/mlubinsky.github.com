@@ -116,6 +116,8 @@ cv2.destroyAllWindows()
 
 ## CNN
 
+<https://poloclub.github.io/cnn-explainer/> 
+
 <https://machinelearningmastery.com/deep-learning-for-computer-vision/> . Book
 
 <https://www.udemy.com/master-deep-learning-computer-visiontm-cnn-ssd-yolo-gans/learn/v4/>
