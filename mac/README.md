@@ -5,6 +5,10 @@ ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
 
+### Useful Apps
+
+<https://wiki.nikitavoloboev.xyz/macos/macos-apps>
+
 ### diff
 https://github.com/dandavison/delta
 
