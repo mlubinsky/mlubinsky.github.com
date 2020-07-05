@@ -9,6 +9,8 @@ BuildVersion:	18G95
 
 <https://wiki.nikitavoloboev.xyz/macos/macos-apps>
 
+<https://github.com/learn-anything/macos-apps>
+
 ### diff
 https://github.com/dandavison/delta
 
