@@ -11,8 +11,12 @@ BuildVersion:	18G95
 
 <https://github.com/learn-anything/macos-apps>
 
-### diff
+### diff tools
 https://github.com/dandavison/delta
+
+<https://www.jefftk.com/icdiff>
+
+<https://news.ycombinator.com/item?id=23744381>
 
 ## Rigrep
 ```
