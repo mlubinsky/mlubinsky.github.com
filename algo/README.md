@@ -1,5 +1,7 @@
 https://quastor.org/learn/course-introduction/introduction
 
+https://www.youtube.com/watch?v=2yWf3TrJ6Xs&feature=youtu.be
+
 <https://habr.com/ru/post/499394/>
 
 https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw/videos
