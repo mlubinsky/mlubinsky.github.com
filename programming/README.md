@@ -7,6 +7,9 @@ https://www.youtube.com/watch?v=fgp0tKWYQWY implementing regex from scratch
 https://github.com/dbohdan/structured-text-tools 
 
 
+### JIT 
+https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/
+
 https://carolchen.me/blog/jits-intro/   JIT
 
 https://www.backblaze.com/blog/whats-the-diff-programs-processes-and-threads/
