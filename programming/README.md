@@ -6,6 +6,9 @@
 https://www.youtube.com/watch?v=fgp0tKWYQWY implementing regex from scratch
 https://github.com/dbohdan/structured-text-tools 
 
+
+https://carolchen.me/blog/jits-intro/   JIT
+
 https://www.backblaze.com/blog/whats-the-diff-programs-processes-and-threads/
 ```
 There are the two types of memory available to a process or a thread, the stack and the heap. 
