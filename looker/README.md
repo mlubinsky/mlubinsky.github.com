@@ -81,7 +81,9 @@ If sql is left unspecified, then Looker assumes that there is a column in the un
 
 ```
 ### Measures as rows
-following is based on https://help.looker.com/hc/en-us/articles/360023862233-Transpose-Table-Display-Measures-as-Rows-
+following is based on
+
+<https://help.looker.com/hc/en-us/articles/360023862233-Transpose-Table-Display-Measures-as-Rows->
 
 Custom fields:   
 ```
