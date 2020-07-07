@@ -44,6 +44,28 @@ stddev_pop(${measure}*2/${measure})
 
 Where ${measure} is n_current and pivot_index(${mesure},1) is n_control
 
+
+
+ in terms of being able to filter those experiment and date-range fields _before_ the join, we sort of have two options.
+
+The first option would be to put that filter logic inside of the sql_on parameter in the join. For example:
+join: view_2 {
+sql_on: ${view_2.bucket} = ${view_1.bucket} AND ${view_2.date} > 'mm-dd-yyyy' AND ${view_2.experiment} = 'value'
+}
+
+The other option would be to turn that view into a derived table (), where we could apply that filter in the sql of the derived table, or the generated SQL from a native derived table.
+
+If we wanted users to be able to input the values for bucket and date range, that could be implemented using a templated filter (the documentation for templated filters is also the same that we discussed in relation to parameters  above: ). 
+Or if you opt to go the native derived table route, the filtering may look slightly different:
+
+
+During the creation of the dashboard filter, you'll need to point it to the templated filter that exists in the explore
+- It should be an option similar to what's being shown in step 3 or 5*  here: 
+```
+<https://docs.looker.com/dashboards/adding-filters-to-user-dashboards#adding_dashboard_filters_a_user_can_change>
+```
+Where in this example they are pointing the filter to a field called 'Count' in the 'Thelook Ecommerce' model and 'Order Items' explore, we'd be able to set this as the templated filter, as well as the fields it's being applied to in step 6.
+ 
 ```
 
 ## Dashboards examples:
