@@ -19,6 +19,28 @@ Looker doesn't have type: stddev, so we would need to achieve it in `sql`. So th
 3) Make a measure (type: number) that reference the dimension above
 
 -- we have to make a dimension first before a measure otherwise we will run into aggregation of aggregation, which most SQL dialects can not do.
+
+
+
+
+create  a count measure  
+
+  measure: AVOD_Movies_count {  
+    label: "AVOD Movies Record count() "
+    type: count   
+    sql: ${TABLE}.device_id;;
+    filters:  [economic_model  : "AVOD", content_type: "movie" ]
+  }
+  
+
+mean(pivot_index(${measure},1)) - mean(${measure})/
+sqrt(
+stddev_pop(pivot_index(${measure},1)*2/pivot_index(${mesure},1))
++
+stddev_pop(${measure}*2/${measure})
+
+Where ${measure} is n_current and pivot_index(${mesure},1) is n_control
+
 ```
 
 ## Dashboards examples:
