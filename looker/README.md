@@ -10,6 +10,8 @@ General Questions
 
 <https://docs.looker.com/data-modeling/learning-lookml/working-with-joins#joins_start_with_an_explore>
 
+https://docs.looker.com/reference/field-params/suggest_dimension
+
 <https://discourse.looker.com/t/how-to-combine-2-views-explores/18308>
 
 ```
