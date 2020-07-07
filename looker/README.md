@@ -4,10 +4,11 @@ General Questions
 
 <https://help.looker.com/hc/en-us/articles/360023573273-Great-Use-Cases-for-Parameter-Fields>
 
-https://help.looker.com/hc/en-us/articles/360041919653-How-to-Dimensionalize-a-Measure-in-Looker
+<https://help.looker.com/hc/en-us/articles/360041919653-How-to-Dimensionalize-a-Measure-in-Looker>
+
+<https://help.looker.com/hc/en-us/articles/360023624034-Advanced-Templated-Filters>
 
 <https://docs.looker.com/data-modeling/learning-lookml/working-with-joins#joins_start_with_an_explore>
-
 
 <https://discourse.looker.com/t/how-to-combine-2-views-explores/18308>
 
