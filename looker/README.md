@@ -15,6 +15,9 @@ General Questions
 
 https://docs.looker.com/reference/field-params/suggest_dimension
 
+
+<https://docs.looker.com/exploring-data/exploring-data/merged-results#saving_your_merged_results_to_a_dashboard>
+ 
 <https://discourse.looker.com/t/how-to-combine-2-views-explores/18308>
 
 ```
