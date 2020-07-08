@@ -12,6 +12,8 @@ https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/
 
 https://carolchen.me/blog/jits-intro/   JIT
 
+https://opensourc.es/blog/basics-multiple-dispatch/.  Multiple Dispatch
+
 https://www.backblaze.com/blog/whats-the-diff-programs-processes-and-threads/
 ```
 There are the two types of memory available to a process or a thread, the stack and the heap. 
