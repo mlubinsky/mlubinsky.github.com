@@ -11,6 +11,45 @@ another way that I found out to reset the storage and erase the memory completel
 
 create a empty file called 'erase.act' and drag it to the DAPLink drive. This should blow everything away.
 
+### LED
+
+<https://os.mbed.com/questions/78630/Thread-called-only-once-when-thread-is-c/>
+
+Available PinNames for FRDM-K64F platform.
+```
+LED (RGB)
+LED_RED = PTB22
+LED_GREEN = PTE26
+LED_BLUE = PTB21
+
+mbed original LED naming
+LED1 = LED_RED
+LED2 = LED_GREEN
+LED3 = LED_BLUE
+LED4 = LED_RED
+```
+ defined in pinnames.h
+
+```
+#include "mbed.h"
+ 
+DigitalOut red  (LED_RED);
+DigitalOut green(LED_GREEN);
+DigitalOut blue (LED_BLUE);
+ 
+int main() {
+ 
+    while (1) {
+        printf("red\n\r");        red = 0; green = 1; blue = 1; wait(5.0);  
+        printf("green\n\r");      red = 1; green = 0; blue = 1; wait(5.0);  
+        printf("blue\n\r");       red = 1; green = 1; blue = 0; wait(5.0);
+        printf("red+green\n\r");  red = 0; green = 0; blue = 1; wait(5.0);
+        printf("green+blue\n\r"); red = 1; green = 0; blue = 0; wait(5.0);
+        printf("red+blue\n\r");   red = 0; green = 1; blue = 0; wait(5.0);
+    }
+}
+```
+
 ## Embedded development 101
 
 <https://habr.com/ru/post/503322/> 
