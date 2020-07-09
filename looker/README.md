@@ -172,7 +172,7 @@ coalesce(
  null)
  ```
  #### Z-score:
-```
+```    just show count for now:
 coalesce(
  if(row()=1, ${derived_trc_amoeba_kpi.allocated_devices}, null),
  if(row()=2, index(${derived_trc_amoeba_kpi.devices_on_trc}, 1), null),
@@ -200,8 +200,46 @@ coalesce(
  null)
 
 ```
+### Let show mean for Z score:
+``` 
+ mean(pivot_index(${measure},1)) - mean(${measure})/
+sqrt(
+stddev_pop(pivot_index(${measure},1)*2/pivot_index(${mesure},1))
++
+stddev_pop(${measure}*2/${measure})
+
+Where ${measure} is n_current and pivot_index(${mesure},1) is n_control
+
+
+
+coalesce(
+ if(row()=1,  mean(${derived_trc_amoeba_kpi.allocated_devices}), null),
+ if(row()=2,  mean(${derived_trc_amoeba_kpi.devices_on_trc}),    null),
+ if(row()=3,  mean(${derived_trc_amoeba_kpi.count_Total}),       null),
+ if(row()=4,  mean(${derived_trc_amoeba_kpi.count_AVOD}),        null),
+ if(row()=5,  mean(${derived_trc_amoeba_kpi.count_AVOD_movies}), null),
+ if(row()=6,  mean(${derived_trc_amoeba_kpi.count_AVOD_series}), null),
+ if(row()=7,  mean(${derived_trc_amoeba_kpi.count_SVOD}),        null),
+ if(row()=8,  mean(${derived_trc_amoeba_kpi.count_SVOD_movies}), null),
+ if(row()=9,  mean(${derived_trc_amoeba_kpi.count_SVOD_series}), null),
+ if(row()=10, mean(${derived_trc_amoeba_kpi.count_Livefeed}),    null),
+ if(row()=11, mean(${derived_trc_amoeba_kpi.count_Kids}),        null),
  
- 
+ if(row()=12, index(${derived_trc_amoeba_kpi.Active_on_TRC_percentage}, 1), null),
+ if(row()=13, index(${derived_trc_amoeba_kpi.Avg_Total_hours}, 1), null),
+ if(row()=14, index(${derived_trc_amoeba_kpi.Avg_AVOD_hours}, 1), null),
+ if(row()=15, index(${derived_trc_amoeba_kpi.Avg_AVOD_movies_hours}, 1), null),
+ if(row()=16, index(${derived_trc_amoeba_kpi.Avg_AVOD_series_hours}, 1), null),
+ if(row()=17, index(${derived_trc_amoeba_kpi.Avg_SVOD_hours}, 1), null),
+ if(row()=18, index(${derived_trc_amoeba_kpi.Avg_SVOD_movies_hours}, 1), null),
+ if(row()=19, index(${derived_trc_amoeba_kpi.Avg_SVOD_series_hours}, 1), null),
+ if(row()=20, index(${derived_trc_amoeba_kpi.Avg_Livefeed_hours}, 1), null),
+ if(row()=21, index(${derived_trc_amoeba_kpi.Avg_Kids_hours}, 1), null),
+  if(row()=22, index(${derived_trc_amoeba_kpi.bounce_rate_10_min}, 1), null),
+ null)
+
+
+``` 
  
  ### Lift
  ```
