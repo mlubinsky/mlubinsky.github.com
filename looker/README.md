@@ -139,9 +139,11 @@ following is based on
 
 <https://help.looker.com/hc/en-us/articles/360023862233-Transpose-Table-Display-Measures-as-Rows->
 
-Custom fields:   
-```
+### derived_trc_amoeba_kpi.view
 
+Custom fields:   
+#### v
+```
 coalesce(
  if(row()=1, ${derived_trc_amoeba_kpi.allocated_devices}, null),
  
@@ -168,169 +170,50 @@ coalesce(
  if(row()=21, index(${derived_trc_amoeba_kpi.Avg_Kids_hours}, 1), null),
  
  null)
- 
- 
- 
- 
+ ```
+ #### Z-score:
+```
 coalesce(
- if(row()=1, ${agg_amoeba_trc_device_ux_grid_metrics_daily.devices_on_trc}, null),
- if(row()=2, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.Total_hours}, 1), null),
-
- if(row()=3, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.AVOD_hours}, 1), null),
- if(row()=4, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.AVOD_movies_hours}, 1), null),
- if(row()=5, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.AVOD_series_hours}, 1), null),
- if(row()=6, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.SVOD_hours}, 1), null),
- if(row()=7, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.SVOD_movies_hours}, 1), null),
- if(row()=8, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.SVOD_series_hours}, 1), null),
- if(row()=9, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.Livefeed_hours}, 1), null),
- if(row()=10, index(${agg_amoeba_trc_device_ux_grid_metrics_daily.Kids_hours}, 1), null),
- null)
+ if(row()=1, ${derived_trc_amoeba_kpi.allocated_devices}, null),
+ if(row()=2, index(${derived_trc_amoeba_kpi.devices_on_trc}, 1), null),
+ if(row()=3, index(${derived_trc_amoeba_kpi.count_Total}, 1), null),
+ if(row()=4, index(${derived_trc_amoeba_kpi.count_AVOD}, 1), null),
+ if(row()=5, index(${derived_trc_amoeba_kpi.count_AVOD_movies}, 1), null),
+ if(row()=6, index(${derived_trc_amoeba_kpi.count_AVOD_series}, 1), null),
+ if(row()=7, index(${derived_trc_amoeba_kpi.count_SVOD}, 1), null),
+ if(row()=8, index(${derived_trc_amoeba_kpi.count_SVOD_movies}, 1), null),
+ if(row()=9, index(${derived_trc_amoeba_kpi.count_SVOD_series}, 1), null),
+ if(row()=10, index(${derived_trc_amoeba_kpi.count_Livefeed}, 1), null),
+ if(row()=11, index(${derived_trc_amoeba_kpi.count_Kids}, 1), null),
  
- ```
- ### derived_trc_amoeba_kpi
- ```
- coalesce(
- if(row()=1, ${derived_trc_amoeba_kpi.devices_on_trc}, null),
- if(row()=2, index(${derived_trc_amoeba_kpi.Total_hours}, 1), null),
-
- if(row()=3, index(${derived_trc_amoeba_kpi.AVOD_hours}, 1), null),
- if(row()=4, index(${derived_trc_amoeba_kpi.AVOD_movies_hours}, 1), null),
- if(row()=5, index(${derived_trc_amoeba_kpi.AVOD_series_hours}, 1), null),
- if(row()=6, index(${derived_trc_amoeba_kpi.SVOD_hours}, 1), null),
- if(row()=7, index(${derived_trc_amoeba_kpi.SVOD_movies_hours}, 1), null),
- if(row()=8, index(${derived_trc_amoeba_kpi.SVOD_series_hours}, 1), null),
- if(row()=9, index(${derived_trc_amoeba_kpi.Livefeed_hours}, 1), null),
- if(row()=10, index(${derived_trc_amoeba_kpi.Kids_hours}, 1), null),
+ if(row()=12, index(${derived_trc_amoeba_kpi.Active_on_TRC_percentage}, 1), null),
+ if(row()=13, index(${derived_trc_amoeba_kpi.Avg_Total_hours}, 1), null),
+ if(row()=14, index(${derived_trc_amoeba_kpi.Avg_AVOD_hours}, 1), null),
+ if(row()=15, index(${derived_trc_amoeba_kpi.Avg_AVOD_movies_hours}, 1), null),
+ if(row()=16, index(${derived_trc_amoeba_kpi.Avg_AVOD_series_hours}, 1), null),
+ if(row()=17, index(${derived_trc_amoeba_kpi.Avg_SVOD_hours}, 1), null),
+ if(row()=18, index(${derived_trc_amoeba_kpi.Avg_SVOD_movies_hours}, 1), null),
+ if(row()=19, index(${derived_trc_amoeba_kpi.Avg_SVOD_series_hours}, 1), null),
+ if(row()=20, index(${derived_trc_amoeba_kpi.Avg_Livefeed_hours}, 1), null),
+ if(row()=21, index(${derived_trc_amoeba_kpi.Avg_Kids_hours}, 1), null),
+  if(row()=22, index(${derived_trc_amoeba_kpi.bounce_rate_10_min}, 1), null),
  null)
+
+```
  
- ```
+ 
+ 
  ### Lift
  ```
- 100.0 * (
-${v} -
-pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"), ${v})  
+(
+  ${v} - pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"), ${v})  
 )
 /
 pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"), ${v})
 ```
-Custom fields - OLD code
-
-```  
-coalesce(
-if(row()=1, ${derived_amoeba_trc_kpi.device_count}, null),
-if(row()=2, index(${derived_amoeba_trc_kpi.active_on_trc}, 1), null),
-if(row()=3, index(${derived_amoeba_trc_kpi.percent_active_on_trc}, 1), null),
- 
-if(row()=4, index(${derived_amoeba_trc_kpi.avg_trc_hours}, 1), null),
-if(row()=5, index(${derived_amoeba_trc_kpi.avg_avod_hours}, 1), null),
-if(row()=6, index(${derived_amoeba_trc_kpi.avg_svod_hours}, 1), null),
-if(row()=7, index(${derived_amoeba_trc_kpi.avg_series_hours}, 1), null),
-if(row()=8, index(${derived_amoeba_trc_kpi.avg_movie_hours}, 1), null),
-if(row()=9, index(${derived_amoeba_trc_kpi.avg_livefeed_hours}, 1), null),
-if(row()=10, index(${derived_amoeba_trc_kpi.avg_ad_impressions_hours}, 1), null),
-if(row()=11, index(${derived_amoeba_trc_kpi.trc_hours}, 1), null),
-if(row()=12, index(${derived_amoeba_trc_kpi.avod_hours}, 1), null),
-if(row()=13, index(${derived_amoeba_trc_kpi.svod_hours}, 1), null),
-if(row()=14, index(${derived_amoeba_trc_kpi.series_hours}, 1), null),
-if(row()=15, index(${derived_amoeba_trc_kpi.movie_hours}, 1), null),
-if(row()=16, index(${derived_amoeba_trc_kpi.livefeed_hours}, 1), null),
-if(row()=17, index(${derived_amoeba_trc_kpi.ad_impressions}, 1), null),
-null)
-
  
 
  
-  dimension: dummy_three {
-    case: {
-      when: { #device_count
-        label: "Total Devices"
-        sql: 1=1 ;;
-      }
-      when: { #active_on_trc
-        label: "Devices on TRC"
-        sql: 1=1 ;;
-      }
-      when: {  #percent_active_on_trc
-        label: "% Active on TRC"
-        sql: 1=1 ;;
-      }
-      when: {  #avg_trc_hours
-        label: "Avg TRC Hours"
-        sql: 1=1 ;;
-      }
-      when: {  #avg_avod_hours
-        label: "Avg AVOD Hours"
-        sql: 1=1 ;;
-      }
-      when: {  #avg_svod_hours
-        label: "Avg SVOD Hours"
-        sql: 1=1 ;;
-      }
-      when: {   #avg_series_hours
-        label: "Avg TV Series Hours"
-        sql: 1=1 ;;
-      }
-      when: {   #avg_movie_hours
-        label: "Avg Movies Hours"
-        sql: 1=1 ;;
-      }
-
-      when: {   #avg_livefeed_hours
-        label: "Avg Livefeed Hours"
-        sql: 1=1 ;;
-      }
-
-      when: {   #avg_ad_impressions_hours
-        label: "Avg Ad Impressions Hours"
-        sql: 1=1 ;;
-      }
-#-------------Absolute numbers
-      when: { # trc_hours
-        label: "TRC Hours"
-        sql: 1=1 ;;
-      }
-
-      when: {  # avod_hours
-        label: "TRC AVOD Hours"
-        sql: 1=1 ;;
-      }
-
-      when: {  # svod_hours
-        label: "TRC SVOD Hours"
-        sql: 1=1 ;;
-      }
-
-      when: { # series_hours
-        label: "Series Hours"
-        sql: 1=1 ;;
-      }
-
-      when: { # movie_hours
-        label: "Movie Hours"
-        sql: 1=1 ;;
-      }
-      when: {   #avg_livefeed_hours
-        label: "Livefeed Hours"
-        sql: 1=1 ;;
-      }
-
-      when: {   #avg_ad_impressions_hours
-        label: "Ad Impressions Hours"
-        sql: 1=1 ;;
-      }
-    }
-
-
-Custom Fields - Table calculation ( Lift )
-100.0 *
-(
-${v} -
-pivot_where(contains(${derived_amoeba_trc_kpi.bucket}, "#Control"), ${v})  
-)
-/
-pivot_where(contains(${derived_amoeba_trc_kpi.bucket}, "#Control"), ${v}) 
-
-```
 <https://docs.looker.com/reference/explore-params/cancel_grouping_fields>
 
 <https://www.youtube.com/watch?v=l0ajePzSe4E&list=PL2rFVcDw2yVoXlI3onYS7Ecufjg2ODI9u>
