@@ -1,6 +1,8 @@
-<https://snarky.ca/why-you-should-use-python-m-pip/>
+<https://snarky.ca/why-you-should-use-python-m-pip/>.  python -m pip
 
 <https://github.com/dabeaz-course/practical-python/blob/main/Notes/Contents.md>
+
+<https://habr.com/ru/post/510294/> better python
 
 <https://modelpredict.com/python-dependency-management-tools>
 
