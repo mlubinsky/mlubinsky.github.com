@@ -3,6 +3,8 @@
 
 <https://news.ycombinator.com/item?id=23504089>  The relationship between mindset and age
 
+https://evgeniirudnyi.livejournal.com/
+
 <http://libgen.is/> . books
 
 <https://www.levels.fyi/> salary in high tech companies
