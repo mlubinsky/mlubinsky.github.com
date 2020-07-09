@@ -11,6 +11,11 @@ https://paperswithcode.com/
 
 <https://paperswithcode.com/paper/causalml-python-package-for-causal-machine> CasualML
 
+
+## When not to use list
+
+<https://habr.com/ru/company/otus/blog/510350/>.  set() tuple() queue() ... dict()
+
 ## yeld
 <https://medium.com/livecodestream/how-to-use-generator-and-yield-in-python-c481cea097d7>
 
