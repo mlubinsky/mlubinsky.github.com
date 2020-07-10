@@ -174,17 +174,17 @@ coalesce(
  #### Z-score:
 ```    just show count for now:
 coalesce(
- if(row()=1, ${derived_trc_amoeba_kpi.allocated_devices}, null),
- if(row()=2, index(${derived_trc_amoeba_kpi.devices_on_trc}, 1), null),
- if(row()=3, index(${derived_trc_amoeba_kpi.count_Total}, 1), null),
- if(row()=4, index(${derived_trc_amoeba_kpi.count_AVOD}, 1), null),
- if(row()=5, index(${derived_trc_amoeba_kpi.count_AVOD_movies}, 1), null),
- if(row()=6, index(${derived_trc_amoeba_kpi.count_AVOD_series}, 1), null),
- if(row()=7, index(${derived_trc_amoeba_kpi.count_SVOD}, 1), null),
- if(row()=8, index(${derived_trc_amoeba_kpi.count_SVOD_movies}, 1), null),
- if(row()=9, index(${derived_trc_amoeba_kpi.count_SVOD_series}, 1), null),
- if(row()=10, index(${derived_trc_amoeba_kpi.count_Livefeed}, 1), null),
- if(row()=11, index(${derived_trc_amoeba_kpi.count_Kids}, 1), null),
+ if(row()=1, '-', null),
+ if(row()=2, '-', null),
+ if(row()=3, index(${derived_trc_amoeba_kpi.mean_Total}, 1), null),
+ if(row()=4, index(${derived_trc_amoeba_kpi.mean_AVOD}, 1), null),
+ if(row()=5, index(${derived_trc_amoeba_kpi.mean_AVOD_movies}, 1), null),
+ if(row()=6, index(${derived_trc_amoeba_kpi.mean_AVOD_series}, 1), null),
+ if(row()=7, index(${derived_trc_amoeba_kpi.mean_SVOD}, 1), null),
+ if(row()=8, index(${derived_trc_amoeba_kpi.mean_SVOD_movies}, 1), null),
+ if(row()=9, index(${derived_trc_amoeba_kpi.mean_SVOD_series}, 1), null),
+ if(row()=10, index(${derived_trc_amoeba_kpi.mean_Livefeed}, 1), null),
+ if(row()=11, index(${derived_trc_amoeba_kpi.mean_Kids}, 1), null),
  
  if(row()=12, index(${derived_trc_amoeba_kpi.Active_on_TRC_percentage}, 1), null),
  if(row()=13, index(${derived_trc_amoeba_kpi.Avg_Total_hours}, 1), null),
@@ -196,7 +196,7 @@ coalesce(
  if(row()=19, index(${derived_trc_amoeba_kpi.Avg_SVOD_series_hours}, 1), null),
  if(row()=20, index(${derived_trc_amoeba_kpi.Avg_Livefeed_hours}, 1), null),
  if(row()=21, index(${derived_trc_amoeba_kpi.Avg_Kids_hours}, 1), null),
-  if(row()=22, index(${derived_trc_amoeba_kpi.bounce_rate_10_min}, 1), null),
+ if(row()=22, index(${derived_trc_amoeba_kpi.bounce_rate_10_min}, 1), null),
  null)
 
 ```
