@@ -171,6 +171,33 @@ coalesce(
  
  null)
  ```
+ 
+ 
+ 
+ ### Z-score for row #3
+ ``` 
+ if(row()=3,  
+  ( 
+      index(${derived_trc_amoeba_kpi.mean_Total},1)
+           -
+      pivot_where(
+       contains(${derived_trc_amoeba_kpi.bucket}, "#Control"), index(${derived_trc_amoeba_kpi.mean_Total},1)
+      )
+  )
+  / 
+  sqrt(  
+      index(${derived_trc_amoeba_kpi.std2_Total_cnt},1)
+      -
+      pivot_where(
+         contains(${derived_trc_amoeba_kpi.bucket}, "#Control"), index(${derived_trc_amoeba_kpi.std2_Total_cnt},1)
+      )
+  )
+  , 
+  row()
+  )
+```  
+
+
  #### Z-score:
 ```    just show count for now:
 coalesce(
