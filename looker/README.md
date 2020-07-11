@@ -75,6 +75,24 @@ Where in this example they are pointing the filter to a field called 'Count' in 
  
 ```
 
+```
+ SELECT 
+…
+ WHERE
+        {% condition filter_name %} database_field_name {% endcondition %}
+UNION ALL
+
+SELECT
+…
+ WHERE
+        {% condition filter_name %} database_field_name {% endcondition %}
+UNION ALL
+;;
+
+## use this filter as the ‘field to update’ in the dashboard filter
+filter: filter_name{}
+```
+
 ## Dashboards examples:
 seconds_streamed < 60 THEN
 <https://dashboards.bdp.roku.com/explore/device_usage_related/agg_device_livetv_usage_metrics_tz?qid=1vQjAHoYqiGaJ4EzOwoGwu&origin_space=2156&toggle=vis>
