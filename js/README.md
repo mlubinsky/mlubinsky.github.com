@@ -1,6 +1,8 @@
 ## CSS 
 <https://every-layout.dev/>
 
+<https://web.dev/one-line-layouts/>
+
 <https://habr.com/ru/post/500304/> Grid explained
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
