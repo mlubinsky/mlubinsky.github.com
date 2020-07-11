@@ -1,7 +1,9 @@
 <https://habr.com/ru/post/499296/>
 
-<https://www.youtube.com/watch?v=lacxb-UQn44> 
-Английский язык с Мариной Озеровой
+
+<https://www.youtube.com/channel/UCHRAQhDPr9otgt8si7wWUlQ> KIRILL'S ENGLISH
+
+<https://www.youtube.com/watch?v=lacxb-UQn44>  Английский язык с Мариной Озеровой
 
 <https://habr.com/ru/company/englishdom/blog/494934/>
 
