@@ -1,5 +1,8 @@
 <https://realnotcomplex.com/>
 
+
+<http://www.mathnet.ru/php/currentissue.phtml?jrnid=mo&option_lang=rus>
+
 <http://www.mathnet.ru/php/archive.phtml?wshow=paper&jrnid=ufn&paperid=2258&option_lang=rus>
 
 <https://elementy.ru/problems/2305/Bayes_versus_virus#p4> Bayes
