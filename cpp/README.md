@@ -24,9 +24,19 @@ printf("Debug run=%d  \n", DEBUG);
     return 1;
 }
 ```
+
+<https://medium.com/himinds/a-way-to-to-minimize-errors-and-make-your-c-code-easier-to-read-eb98ad6d3656>
+
+```
+printf(“%s %s:%d …”, __FILE__, __FUNCTION__, __LINE__, …);
+
+
+char buf[100] = {0};   # same as memset(buf, 0, (sizeof(buf)/sizeof(buf[0]))) 
+```
+
 ### ZigLang
 
-<https://ziglang.org/>
+<https://ziglang.org/> 
 
 ### Janet lang
 <https://janet-lang.org/> 
