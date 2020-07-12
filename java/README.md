@@ -4,6 +4,8 @@
  
  <https://habr.com/ru/post/471772/> How Java works
  
+ <https://habr.com/ru/post/510618/> Java Memory Model
+ 
  <https://habr.com/ru/company/otus/blog/478584/> . JVM internals
  
  <https://habr.com/ru/company/domclick/blog/500646/> Java bytecode internals
