@@ -51,7 +51,7 @@ https://medium.com/@srajaninnov/find-the-diameter-of-a-binary-tree-efc45b9129a7
 <https://www.youtube.com/watch?v=q0KGYwNbf-0>
 <https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX> . system design questions
 
-
+<https://www.youtube.com/watch?v=1_HIpTBUHAs&utm_source=reddit> design twitter
 
 <https://www.youtube.com/watch?v=ap5Z1Q3y3Pw>
 
@@ -62,7 +62,7 @@ https://medium.com/@srajaninnov/find-the-diameter-of-a-binary-tree-efc45b9129a7
 <https://habr.com/ru/company/JetBrains-education/blog/495014/>
 
 
-https://habr.com/ru/post/509220/. Hash table implementation
+
 
 ## Merging 2 sorted arrays
 into 1st array where 1st array has the capacity for both
@@ -132,15 +132,6 @@ else:
 
 
 ```
-## Hash
-
-<https://www.partow.net/programming/hashfunctions/idx.html>
-
-### minhash
-<https://en.wikipedia.org/wiki/MinHash> minhash
-
-https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/?274619
-
 
 <https://habr.com/ru/company/otus/blog/485194/> Дерево отрезков 
 
@@ -156,15 +147,21 @@ https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/?274619
 
 <https://www.youtube.com/watch?v=fowDzrMa-Mo&utm_source=reddit> design distributed cache
 
-<https://www.youtube.com/watch?v=1_HIpTBUHAs&utm_source=reddit> design twitter
+
 
 <https://www.youtube.com/watch?v=tzsOc-hBPfw>
 
 <https://www.youtube.com/watch?v=Eg2BjTmnLS8>
 
+## Sort
 <https://yurichev.com/blog/qsort/> quick sort
 
 <https://habr.com/ru/post/484224/> Radix sort
+
+<https://youtu.be/3fwCe9Ct8go> faster sort
+
+
+
 
 <https://habr.com/ru/company/spice/blog/478250/>
 
@@ -200,7 +197,7 @@ https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/?274619
 
 <https://www.youtube.com/watch?v=xYBKMV92YrM>
 
-<https://programming.guide/hash-tables.html> Hash
+
 
 <https://classicproblems.com/>
 
@@ -562,6 +559,20 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
       print ("index=",i)
 
 ## Hash function and hashtable 
+
+ 
+
+<https://www.partow.net/programming/hashfunctions/idx.html>
+
+<https://programming.guide/hash-tables.html> Hash
+
+https://habr.com/ru/post/509220/. Hash table implementation
+
+### minhash
+<https://en.wikipedia.org/wiki/MinHash> minhash
+
+https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/?274619
+
 
 <https://www.data-structures-in-practice.com/hash-tables/>
 
