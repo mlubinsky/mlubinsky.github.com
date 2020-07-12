@@ -1,6 +1,6 @@
 https://arxiv.org/pdf/1812.01187.pdf .  CNN training tricks for image classification
 
-<https://habr.com/ru/post/510560/>. 
+<https://habr.com/ru/post/510560/>  RetinaNet
 
 Image formats:
 <https://youtu.be/P1K0ZNGczsk>
