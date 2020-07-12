@@ -24,6 +24,9 @@ printf("Debug run=%d  \n", DEBUG);
     return 1;
 }
 ```
+### ZigLang
+
+<https://ziglang.org/>
 
 ### Janet lang
 <https://janet-lang.org/> 
