@@ -73,6 +73,8 @@ TBATS2 - TBATS1 With Two Seasonal Periods
 
 <https://pyts.readthedocs.io/en/latest/> . pyts
 
+<https://github.com/unit8co/darts> time series in Python
+
 <https://github.com/mlubinsky/mlubinsky.github.com/blob/master/ts/time_series_forecasting_with_python_mini_course.pdf>
 
 <https://habr.com/ru/post/352980/> . Alert system for metrics
@@ -90,7 +92,7 @@ TBATS2 - TBATS1 With Two Seasonal Periods
 
 <https://www.kaggle.com/robikscube/hourly-energy-consumption/kernels>
 
-## Prophet
+## Prophet (from FaceBook)
 
 <https://www.kaggle.com/adityaecdrid/my-first-time-series-comp-added-prophet>
 
