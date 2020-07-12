@@ -4,8 +4,13 @@
  () Parentheses
 ```
 https://www.youtube.com/watch?v=fgp0tKWYQWY implementing regex from scratch
+
 https://github.com/dbohdan/structured-text-tools 
 
+Software Alchemy: Turning Complex Statistical
+Computations into Embarrassingly-Parallel Ones
+
+https://arxiv.org/pdf/1409.5827.pdf
 
 ### JIT 
 https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/
