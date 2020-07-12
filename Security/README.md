@@ -1,6 +1,10 @@
 ## Wi-Fi explained and tools 
 <https://habr.com/ru/company/comptek/blog/467587/>
 
+## Auth
+
+https://nordicapis.com/the-difference-between-http-auth-api-keys-and-oauth/
+
 ## JWT
 
 <https://habr.com/ru/post/340146/>
