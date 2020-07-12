@@ -4,6 +4,8 @@
 
 ### Diff
 
+<https://marketplace.visualstudio.com/items?itemName=MadsKristensen.FileDiffer> VS Plugin
+
 https://github.com/dandavison/delta
 
 https://github.com/ynqa/diffy
