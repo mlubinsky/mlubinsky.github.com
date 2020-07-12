@@ -1,5 +1,7 @@
 <https://snarky.ca/why-you-should-use-python-m-pip/>.  python -m pip
 
+<http://www.iakovlev.org/index.html?p=5791&m=1&l1=2> All Python in single page
+
 <https://github.com/dabeaz-course/practical-python/blob/main/Notes/Contents.md>
 
 <https://habr.com/ru/post/510294/> better python
