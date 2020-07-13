@@ -259,6 +259,29 @@ if(row()=11,  ( index(${derived_trc_amoeba_kpi.mean_Kids},1) -
 sqrt(index(${derived_trc_amoeba_kpi.std2_Kids_cnt},1) +
 pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"), index(${derived_trc_amoeba_kpi.std2_Kids_cnt},1))
 ), null),
+
+
+-- % of devices Active on TRC
+if(row()=12, 
+ (
+   index(${derived_trc_amoeba_kpi.devices_on_trc    },1)
+   /
+   index(${derived_trc_amoeba_kpi.allocated_devices} ,1)
+ )  
+   - 
+ (  pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"),        
+    index(${derived_trc_amoeba_kpi.devices_on_trc},1) 
+    /
+    index(${derived_trc_amoeba_kpi.allocated_devices},1)
+ )
+/
+sqrt(
+   index(${derived_trc_amoeba_kpi.devices_on_trc},1) +
+pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"), index(${derived_trc_amoeba_kpi.???},1))
+),
+null),
+
+
 row())
 ``` 
  ### Z-score for row #3
