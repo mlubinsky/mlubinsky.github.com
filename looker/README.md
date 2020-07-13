@@ -276,8 +276,12 @@ if(row()=12,
  )
 /
 sqrt(
-   index(${derived_trc_amoeba_kpi.devices_on_trc},1) +
-pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"), index(${derived_trc_amoeba_kpi.???},1))
+   ${phat} * (1 - pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"), ${phat}) )
+    *
+   ( 
+    (1.0 / index(${derived_trc_amoeba_kpi.devices_on_trc},1) +  
+     1.0/ pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"),            index(${derived_trc_amoeba_kpi.devices_on_trc},1)
+   ) 
 ),
 null),
 
