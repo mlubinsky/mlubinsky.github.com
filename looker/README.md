@@ -280,7 +280,8 @@ sqrt(
     *
    ( 
     (1.0 / index(${derived_trc_amoeba_kpi.devices_on_trc},1) +  
-     1.0/ pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"),            index(${derived_trc_amoeba_kpi.devices_on_trc},1)
+     1.0/ pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"),
+          index(${derived_trc_amoeba_kpi.devices_on_trc},1)
    ) 
 ),
 null),
@@ -288,6 +289,38 @@ null),
 
 row())
 ``` 
+
+
+### TMP
+
+```
+if(row()=12,
+ (
+   index(${derived_trc_amoeba_kpi.devices_on_trc},1)
+   /
+   index(${derived_trc_amoeba_kpi.allocated_devices} ,1)
+ )
+   -
+ (
+   pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"),
+    index(${derived_trc_amoeba_kpi.devices_on_trc},1))
+    /
+    index(${derived_trc_amoeba_kpi.allocated_devices},1)
+ )
+/
+sqrt(
+   222 * (1 - pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"), 222) )
+    *
+   (
+    (1.0 / index(${derived_trc_amoeba_kpi.devices_on_trc},1)) +
+     1.0/ pivot_where(contains(${derived_trc_amoeba_kpi.bucket}, "#Control"),
+          index(${derived_trc_amoeba_kpi.devices_on_trc},1))
+   )
+),
+null)
+```
+
+
  ### Z-score for row #3
  ``` 
  if(row()=3,  
