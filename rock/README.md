@@ -1,0 +1,144 @@
+```
+The # of records in Hive table roku.fact_amoeba_allocation_events
+on July 9 is significantly less ( ~2.2 billions) compared with previous days ( > 5.5 billions).
+Could you please have a look if there is any issues/delays in populating this table
+(or tell us how we can monitor it without disturbing you)
+```
+
+```
+select count(*) as cnt , count (distinct device_id) as dist_dev, date_key
+from roku.fact_amoeba_allocation_events
+where date_key >= '2020-07-01'
+group by date_key
+order by date_key
+limit 15
+```
+
+Result: (look at 1st column)
+```
+8259983	 2555157	2020-07-01
+6489805	 2035394	2020-07-02
+8919267	 3891763	2020-07-03
+5781696	 1469031	2020-07-04
+4984972	 1010221	2020-07-05
+7921315	 2070758	2020-07-06
+5026874	 893706	    2020-07-07
+14297518 8910610    2020-07-08
+2234019	 1089297	2020-07-09
+
+```
+
+
+
+
+ 
+
+Krishna Chandolu  1:57 PM
+Just reran the query, I get 3.3 Million for Jul-9
+```
+select date_key, count(*) as cnt 
+from roku.fact_amoeba_allocation_events
+where date_key >= '2020-07-01'
+group by date_key order by date_key;
+
+ 
+2020-07-01	8259983
+2020-07-02	6489805
+2020-07-03	8919267
+2020-07-04	5781696
+2020-07-05	4984972
+2020-07-06	7921315
+2020-07-07	5026874
+2020-07-08	14297518
+2020-07-09	3385679
+```
+ 
+Yep. Is it delayed and if those by how much time ?
+
+ 
+This job is scheduled to run every hour and if it receives delayed data then it still puts it in respective old partition . 
+so, counts could be updated through out until there is no delayed data. We are not calculating delay for abf job.
+ But we are extracting similar num of records in the last 7 days .
+https://app.datadoghq.com/dashboard/guy-wuq-3wf?from_ts=1593810262021&live=true&to_ts=1594415062021
+
+ 
+I just extracted some records from Kafka.
+
+
+1594415332~1594273414~allocation-v6~~~f703a2cf-edb4-47ca-a3b7-06c8aeee55fd:9ac4e0595584accfbce0e58fc95580bd~web~l8k1zRx-e~l8k1zRx-e#Test~~0~
+1594415332~1594275053~allocation-v6~~~4aa11a25-d019-453e-89fc-6ccdd619b21a:fc2e72d3dd67b8aea09e2e650f7a8a6a~web~r79QQOSEg~r79QQOSEg#Control~~1~
+1594415332~1594275052~allocation-v6~8L67D9263429~3BDE2E8C-87C7-4EF3-8564-A16C00F1444E~~grandcentral~k6U4N2L3H~k6U4N2L3H#Control~~1~
+1594415332~1594275049~allocation-v6~~~d877424b-d849-4f08-9e3f-e4cc912a70dc:4c9d1eed1941ca17bd4b75ade8831551~web~t8KTbdUg3~t8KTbdUg3#control~~1~
+Based on timestamps (2nd field)  i am seeing data from (Thursday, July 9, 2020 5 or 6 UTC) that means we are receiving data which is very delayed (>24 hrs) .
+2:13
+So, May be by tomorrow the data for 7/9 would have a full snapshot.
+
+Abhinav Wagle  2:13 PM
+Got it thanks a lot for the confirmation
+2:14
+and the datadog dashboard helps
+2:14
+just so that i understand the dashboard better, it means how may events were processed by bdp from scribe ?
+
+Krishna Chandolu  2:18 PM
+:+1: basically you need to multiply that number from datadog dashboard with 32.
+We have 32 mappers for you abf Job in bdp. The datadog shows on avg. how many records bdp extracted from (kafka) . So, to get full picture you just need to multiply that number with 32.
+2020-07-09T00:40:00.000Z	0
+2020-07-09T01:40:00.000Z	9007
+2020-07-09T02:40:00.000Z	0
+2020-07-09T03:40:00.000Z	0
+2020-07-09T04:40:00.000Z	9000
+2020-07-09T05:40:00.000Z	9000
+2020-07-09T06:40:00.000Z	0
+2020-07-09T07:40:00.000Z	0
+2020-07-09T08:40:00.000Z	9005
+2020-07-09T09:40:00.000Z	9003
+2020-07-09T10:40:00.000Z	9003
+2020-07-09T11:40:00.000Z	9000
+2020-07-09T12:40:00.000Z	0
+2020-07-09T13:40:00.000Z	0
+2020-07-09T14:40:00.000Z	9002
+2020-07-09T15:40:00.000Z	0
+2020-07-09T16:40:00.000Z	0
+2020-07-09T17:40:00.000Z	9012
+2020-07-09T18:40:00.000Z	9001
+2020-07-09T19:40:00.000Z	0
+2020-07-09T20:40:00.000Z	0
+2020-07-09T21:40:00.000Z	0
+2020-07-09T22:40:00.000Z	9005
+2020-07-09T23:40:00.000Z	0
+So, even before running query i just summed up records extracted by bdp on (7/9) from kafka and multiplied by 32. (99038 * 32 = 3.1 Million)  that almost matched with query results above for 7/9.
+2:19
+scribe -> kafka -> bdp -> fact tables. sequence of events.
+
+Abhinav Wagle  2:19 PM
+Got it ! that is super useful ! Makes sense to me now :slightly_smiling_face:
+2:19
+Now we can better estimate things
+
+Krishna Chandolu  2:20 PM
+yea you can bookmark that datadog link and change date range, If BDP is extracting less records or if there are errors that graph will easily tell you from the trend……
+
+Abhinav Wagle  2:21 PM
+yeps just did that :slightly_smiling_face:
+2:21
+thanks a lot @kchandolu!!!
+
+Krishna Chandolu  2:22 PM
+cool. If the trend is consistent meaning job is running fine and may be data is delayed. If you still have issues reach out to us. (if you send more data to scribe obviously then there will be spike in the graph or else consistent).
+:+1:
+1
+
+
+Abhinav Wagle  2:23 PM
+Yeps AI for me is now try to reduce delay from our end :slightly_smiling_face: I will take that work up now
+
+Krishna Chandolu  2:27 PM
+one more tip for you to estimate lag. If you are familiar with kafka consumer client.
+bin/kafka-console-consumer.sh --bootstrap-server kafka10-broker-1001.bdp.roku.com:9092,kafka10-broker-1002.bdp.roku.com:9092 --topic abf
+just by running that command from your mac terminal you can read kafka messages yourself to estimate lag.
+1594415332~1594273414~allocation-v6~~~f703a2cf-edb4-47ca-a3b7-06c8aeee55fd:9ac4e0595584accfbce0e58fc95580bd~web~l8k1zRx-e~l8k1zRx-e#Test~~0~
+1594415332~1594275053~allocation-v6~~~4aa11a25-d019-453e-89fc-6ccdd619b21a:fc2e72d3dd67b8aea09e2e650f7a8a6a~web~r79QQOSEg~r79QQOSEg#Control~~1~
+1594415332~1594275052~allocation-v6~8L67D9263429~3BDE2E8C-87C7-4EF3-8564-A16C00F1444E~~grandcentral~k6U4N2L3H~k6U4N2L3H#Control~~1~
+1594415332~1594275049~allocation-v6~~~d877424b-d849-4f08-9e3f-e4cc912a70dc:4c9d1eed1941ca17bd4b75ade8831551~web~t8KTbdUg3~t8KTbdUg3#control~~1~...................................................
+2nd field is timestamp and epoch convert it and subtract it from current UTC time then you can estimate lag by yourself ( in this ex:- is >24 hrs) .
