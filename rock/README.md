@@ -155,3 +155,62 @@ just by running that command from your mac terminal you can read kafka messages 
 2nd field is timestamp and epoch convert it and subtract it from current UTC time then you can estimate lag by yourself ( in this ex:- is >24 hrs) .
 
 ```
+
+
+I am using the   Redshift table  dea.agg_amoeba_allocation_events which is derived from Hive table roku.fact_amoeba_allocation_events:
+https://gitlab.eng.roku.com/dea/data-processing/blob/master/src/main/python/agg/agg_daily_non_bucketed/agg_amoeba_allocation_events_daily.hql
+I expected to see the same # of distinct devices per day  in these tables.
+But it is not always the case:
+
+```
+SELECT A.date_key, A.fact_cnt, B.dea_cnt FROM
+( SELECT date_key,	count(distinct	device_id) as fact_cnt
+from roku.fact_amoeba_allocation_events
+WHERE date_key between '2020-05-20' and '2020-06-06'
+group by date_key
+) A
+LEFT JOIN
+( SELECT date_key,  count(distinct device_id) as dea_cnt
+ from dea.agg_amoeba_allocation_events
+ WHERE date_key between '2020-05-20' and '2020-06-06'
+ group by date_key
+) B
+ ON A.date_key=B.date_key
+ ORDER BY A.date_key
+ LIMIT 100;
+Result:
+          fact_cnt  dea_cnt
+---------  -------  -------- 
+2020-05-20	965094	965094
+2020-05-21	1355545	1355545
+2020-05-22	1925684	1925684
+2020-05-23	1226620	1226620
+2020-05-24	970096	970096
+2020-05-25	800109	800109
+2020-05-26	8660952	2212133
+2020-05-27	2572230	2
+2020-05-28	1146441	1
+2020-05-29	1066561	2
+2020-05-30	1183667	1
+2020-05-31	989431	96756
+2020-06-01	13126852	2240214
+2020-06-02	28716647	1960952
+2020-06-03	4993031	1
+2020-06-04	3539983	1
+2020-06-05	4735329	4735329
+2020-06-06	1603955	1603955
+Why it is so? (edited) 
+
+
+
+
+2 replies
+
+Suvrath Penmetcha   
+I’m guessing it could be that data is coming in later into older fact partitions. Looks like fact_amoeba_allocation_events is partitioned by allocation_ts and not event time so older fact partitions can be updated. You can try moving dea.agg_amoeba_allocation_events into agg_daily  or DVIS_agg which process dates from 2-3 days ago instead of agg_daily_non_bucketed which is 1 day ago.
+
+Krishna Chandolu   
+roku.fact_amoeba_allocation_events
+ has late arriving events ranging from 1-2 days delayed data. 
+ So, like suvrath suggested try increasing the agg/bucketing duration to 3 days instead of current 1.
+``` 
