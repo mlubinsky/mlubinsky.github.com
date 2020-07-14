@@ -64,12 +64,15 @@ https://app.datadoghq.com/dashboard/guy-wuq-3wf?from_ts=1593810262021&live=true&
  
 I just extracted some records from Kafka.
 
-
+```
 1594415332~1594273414~allocation-v6~~~f703a2cf-edb4-47ca-a3b7-06c8aeee55fd:9ac4e0595584accfbce0e58fc95580bd~web~l8k1zRx-e~l8k1zRx-e#Test~~0~
 1594415332~1594275053~allocation-v6~~~4aa11a25-d019-453e-89fc-6ccdd619b21a:fc2e72d3dd67b8aea09e2e650f7a8a6a~web~r79QQOSEg~r79QQOSEg#Control~~1~
 1594415332~1594275052~allocation-v6~8L67D9263429~3BDE2E8C-87C7-4EF3-8564-A16C00F1444E~~grandcentral~k6U4N2L3H~k6U4N2L3H#Control~~1~
 1594415332~1594275049~allocation-v6~~~d877424b-d849-4f08-9e3f-e4cc912a70dc:4c9d1eed1941ca17bd4b75ade8831551~web~t8KTbdUg3~t8KTbdUg3#control~~1~
-Based on timestamps (2nd field)  i am seeing data from (Thursday, July 9, 2020 5 or 6 UTC) that means we are receiving data which is very delayed (>24 hrs) .
+
+ 
+Based on timestamps (2nd field)  i am seeing data from (Thursday, July 9, 2020 5 or 6 UTC) 
+that means we are receiving data which is very delayed (>24 hrs) .
 2:13
 So, May be by tomorrow the data for 7/9 would have a full snapshot.
 
@@ -107,7 +110,10 @@ We have 32 mappers for you abf Job in bdp. The datadog shows on avg. how many re
 2020-07-09T21:40:00.000Z	0
 2020-07-09T22:40:00.000Z	9005
 2020-07-09T23:40:00.000Z	0
-So, even before running query i just summed up records extracted by bdp on (7/9) from kafka and multiplied by 32. (99038 * 32 = 3.1 Million)  that almost matched with query results above for 7/9.
+
+
+So, even before running query i just summed up records extracted by bdp on (7/9) from kafka and multiplied by 32. 
+(99038 * 32 = 3.1 Million)  that almost matched with query results above for 7/9.
 2:19
 scribe -> kafka -> bdp -> fact tables. sequence of events.
 
@@ -117,7 +123,8 @@ Got it ! that is super useful ! Makes sense to me now :slightly_smiling_face:
 Now we can better estimate things
 
 Krishna Chandolu  2:20 PM
-yea you can bookmark that datadog link and change date range, If BDP is extracting less records or if there are errors that graph will easily tell you from the trend……
+yea you can bookmark that datadog link and change date range,
+If BDP is extracting less records or if there are errors that graph will easily tell you from the trend……
 
 Abhinav Wagle  2:21 PM
 yeps just did that :slightly_smiling_face:
@@ -135,10 +142,16 @@ Yeps AI for me is now try to reduce delay from our end :slightly_smiling_face: I
 
 Krishna Chandolu  2:27 PM
 one more tip for you to estimate lag. If you are familiar with kafka consumer client.
+
 bin/kafka-console-consumer.sh --bootstrap-server kafka10-broker-1001.bdp.roku.com:9092,kafka10-broker-1002.bdp.roku.com:9092 --topic abf
+
 just by running that command from your mac terminal you can read kafka messages yourself to estimate lag.
+
 1594415332~1594273414~allocation-v6~~~f703a2cf-edb4-47ca-a3b7-06c8aeee55fd:9ac4e0595584accfbce0e58fc95580bd~web~l8k1zRx-e~l8k1zRx-e#Test~~0~
 1594415332~1594275053~allocation-v6~~~4aa11a25-d019-453e-89fc-6ccdd619b21a:fc2e72d3dd67b8aea09e2e650f7a8a6a~web~r79QQOSEg~r79QQOSEg#Control~~1~
 1594415332~1594275052~allocation-v6~8L67D9263429~3BDE2E8C-87C7-4EF3-8564-A16C00F1444E~~grandcentral~k6U4N2L3H~k6U4N2L3H#Control~~1~
 1594415332~1594275049~allocation-v6~~~d877424b-d849-4f08-9e3f-e4cc912a70dc:4c9d1eed1941ca17bd4b75ade8831551~web~t8KTbdUg3~t8KTbdUg3#control~~1~...................................................
+
 2nd field is timestamp and epoch convert it and subtract it from current UTC time then you can estimate lag by yourself ( in this ex:- is >24 hrs) .
+
+```
