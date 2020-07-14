@@ -59,7 +59,8 @@ Yep. Is it delayed and if those by how much time ?
 This job is scheduled to run every hour and if it receives delayed data then it still puts it in respective old partition . 
 so, counts could be updated through out until there is no delayed data. We are not calculating delay for abf job.
  But we are extracting similar num of records in the last 7 days .
-https://app.datadoghq.com/dashboard/guy-wuq-3wf?from_ts=1593810262021&live=true&to_ts=1594415062021
+ 
+<https://app.datadoghq.com/dashboard/guy-wuq-3wf?from_ts=1593810262021&live=true&to_ts=1594415062021>
 
  
 I just extracted some records from Kafka.
@@ -73,19 +74,21 @@ I just extracted some records from Kafka.
  
 Based on timestamps (2nd field)  i am seeing data from (Thursday, July 9, 2020 5 or 6 UTC) 
 that means we are receiving data which is very delayed (>24 hrs) .
-2:13
+ 
 So, May be by tomorrow the data for 7/9 would have a full snapshot.
 
-Abhinav Wagle  2:13 PM
+Abhinav Wagle   
 Got it thanks a lot for the confirmation
-2:14
+ 
 and the datadog dashboard helps
 2:14
 just so that i understand the dashboard better, it means how may events were processed by bdp from scribe ?
 
 Krishna Chandolu  2:18 PM
 :+1: basically you need to multiply that number from datadog dashboard with 32.
-We have 32 mappers for you abf Job in bdp. The datadog shows on avg. how many records bdp extracted from (kafka) . So, to get full picture you just need to multiply that number with 32.
+We have 32 mappers for you abf Job in bdp. The datadog shows on avg. how many records bdp extracted from (kafka) . 
+So, to get full picture you just need to multiply that number with 32.
+
 2020-07-09T00:40:00.000Z	0
 2020-07-09T01:40:00.000Z	9007
 2020-07-09T02:40:00.000Z	0
@@ -157,8 +160,10 @@ just by running that command from your mac terminal you can read kafka messages 
 ```
 
 
-I am using the   Redshift table  dea.agg_amoeba_allocation_events which is derived from Hive table roku.fact_amoeba_allocation_events:
+I am using the   Redshift table  dea.agg_amoeba_allocation_events
+which is derived from Hive table roku.fact_amoeba_allocation_events:
 https://gitlab.eng.roku.com/dea/data-processing/blob/master/src/main/python/agg/agg_daily_non_bucketed/agg_amoeba_allocation_events_daily.hql
+
 I expected to see the same # of distinct devices per day  in these tables.
 But it is not always the case:
 
@@ -207,10 +212,13 @@ Why it is so? (edited)
 2 replies
 
 Suvrath Penmetcha   
-I’m guessing it could be that data is coming in later into older fact partitions. Looks like fact_amoeba_allocation_events is partitioned by allocation_ts and not event time so older fact partitions can be updated. You can try moving dea.agg_amoeba_allocation_events into agg_daily  or DVIS_agg which process dates from 2-3 days ago instead of agg_daily_non_bucketed which is 1 day ago.
+I’m guessing it could be that data is coming in later into older fact partitions. 
+Looks like fact_amoeba_allocation_events is partitioned by allocation_ts 
+and not event time so older fact partitions can be updated. 
+You can try moving dea.agg_amoeba_allocation_events into agg_daily  or DVIS_agg 
+which process dates from 2-3 days ago instead of agg_daily_non_bucketed which is 1 day ago.
 
 Krishna Chandolu   
-roku.fact_amoeba_allocation_events
- has late arriving events ranging from 1-2 days delayed data. 
+roku.fact_amoeba_allocation_events has late arriving events ranging from 1-2 days delayed data. 
  So, like suvrath suggested try increasing the agg/bucketing duration to 3 days instead of current 1.
 ``` 
