@@ -10,6 +10,9 @@
 
 <https://www.vaishalilambe.com/blog/learning-time-series-analysis-forecasting-phase-1>
 
+
+<https://medium.com/@michalchromcak/hcrystalball-a-unified-interface-to-time-series-forecasting-6fb57384ad57> 
+
 <https://github.com/firmai/atspy> Automated Time Series Models in Python (AtsPy)
 ```
 ARIMA - Automated ARIMA Modelling
@@ -93,6 +96,8 @@ TBATS2 - TBATS1 With Two Seasonal Periods
 <https://www.kaggle.com/robikscube/hourly-energy-consumption/kernels>
 
 ## Prophet (from FaceBook)
+
+https://medium.com/@michalchromcak/hcrystalball-a-unified-interface-to-time-series-forecasting-6fb57384ad57
 
 <https://www.kaggle.com/adityaecdrid/my-first-time-series-comp-added-prophet>
 
