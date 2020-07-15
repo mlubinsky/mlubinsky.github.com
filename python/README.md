@@ -6,6 +6,8 @@
 
 <https://habr.com/ru/post/510294/> better python
 
+<https://pythonspeed.com/articles/python-object-memory/>
+
 <https://modelpredict.com/python-dependency-management-tools>
 
 <https://news.ycombinator.com/item?id=23386537> debugging
