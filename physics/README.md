@@ -1,5 +1,8 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+
+<https://arxiv.org/list/physics.ed-ph/recent>
+
 <https://news.ycombinator.com/item?id=23153778>
 
 <https://physics.stackexchange.com/questions/148370/how-to-understand-non-associative-composition-of-velocities-in-str>
