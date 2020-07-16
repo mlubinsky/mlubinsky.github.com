@@ -2,9 +2,17 @@
  
  <https://news.ycombinator.com/item?id=23468193>
  
+ 
+ ### ENTR GAZE etc
+ 
  https://www.reddit.com/r/programming/comments/hbetyd/gaze_a_cli_tool_that_accelerates_your_quick_coding/
  
- https://github.com/wtetsu/gaze
+ 
+ https://github.com/wtetsu/gaze  Gaze runs a command, right after you save a file.
+ 
+ https://jvns.ca/blog/2020/06/28/entr/
+ 
+ https://lobste.rs/s/wjaf39/entr_rerun_your_build_when_files_change entr 
  
  
  ## Terminal shortcats
