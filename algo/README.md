@@ -1,5 +1,9 @@
 https://quastor.org/learn/course-introduction/introduction
 
+https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/
+
+https://news.ycombinator.com/item?id=23841491
+
 https://github.com/miiohio/succinct
 
 https://www.youtube.com/watch?v=2yWf3TrJ6Xs&feature=youtu.be
