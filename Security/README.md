@@ -3,6 +3,8 @@
 
 ## Auth
 
+https://gravitational.com/blog/everything-you-need-to-know-about-oauth/
+
 https://nordicapis.com/the-difference-between-http-auth-api-keys-and-oauth/
 
 ## JWT
