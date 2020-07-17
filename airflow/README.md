@@ -212,6 +212,9 @@ xcom
 ```
 
 ## Docker
+
+<https://github.com/benattali/airflow-with-docker>
+
 ### Whirl - local development and testing of Apache Airflow using Docker
 <https://github.com/godatadriven/whirl> . 
 <https://blog.godatadriven.com/open-source-airflow-local-development>
