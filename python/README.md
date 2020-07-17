@@ -23,6 +23,9 @@ https://paperswithcode.com/
 <https://habr.com/ru/company/otus/blog/510350/>.  set() tuple() queue() ... dict()
 
 ## yeld
+
+https://medium.com/better-programming/python-7-advanced-features-that-you-may-not-know-about-generators-574a65fd6e45
+
 <https://medium.com/livecodestream/how-to-use-generator-and-yield-in-python-c481cea097d7>
 
 ## Config
