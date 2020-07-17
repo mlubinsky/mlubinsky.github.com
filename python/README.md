@@ -6,7 +6,7 @@
 
 <https://habr.com/ru/post/510294/> better python
 
-<https://pythonspeed.com/articles/python-object-memory/>
+<https://pythonspeed.com/articles/python-object-memory/>.  use slots and other
 
 <https://modelpredict.com/python-dependency-management-tools>
 
