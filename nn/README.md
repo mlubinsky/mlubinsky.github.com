@@ -4,6 +4,8 @@
 
 <https://www.deeplearningbook.org/> 
 
+<https://www.youtube.com/watch?v=bVQUSndDllU>
+
 <https://www.newworldai.com/advanced-deep-learning-course-deepmind/> . Youtube lectures
 
 <https://thinc.ai/>
