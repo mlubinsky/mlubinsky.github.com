@@ -22,6 +22,9 @@ https://paperswithcode.com/
 
 <https://habr.com/ru/company/otus/blog/510350/>.  set() tuple() queue() ... dict()
 
+Lazy eval:
+<https://medium.com/better-programming/how-to-create-lazy-attributes-to-improve-performance-in-python-b369fd72e1b6>
+
 ## yeld
 
 https://medium.com/better-programming/python-7-advanced-features-that-you-may-not-know-about-generators-574a65fd6e45
