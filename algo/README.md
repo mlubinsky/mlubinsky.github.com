@@ -1,6 +1,11 @@
 https://quastor.org/learn/course-introduction/introduction
 
+https://medium.com/better-programming/dynamic-programming-interview-questions-maximum-profit-in-job-scheduling-6c5ec15c4cc5
+
+https://medium.com/better-programming/cracking-the-amazon-interview-cf6a6c5f954a
+
 https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/
+
 
 https://news.ycombinator.com/item?id=23841491
 
