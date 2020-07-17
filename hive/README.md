@@ -23,6 +23,33 @@ insert overwrite table
 	WHERE date_key='2020-06-13' AND  product_id IS NOT  NULL; 
 ```    
 
+
+ 
+I tried to use in dev env the Hive DELETE statement from Airflow:
+```
+  DELETE FROM  sbschema.roku_agg_product_contextual_offers_metrics_daily
+WHERE date_key='2020-06-13' AND  product_id IS NULL;
+```
+and I got:
+```
+ {hive_hooks.py:235} INFO - FAILED: SemanticException [Error 10294]:
+ Attempt to do update or delete using transaction manager that does not support these operations.
+ 
+
+Yamini Santhanam 
+Is your table set to transaction=true? That's all I can think of for now
+
+Todd Studenicka  
+
+you can try  insert overwrite the rows you want:
+ insert overwrite table 
+ sbschema.roku_agg_product_contextual_offers_metrics_daily
+				partition 	(date_key ) 
+SELECT * 	  
+	FROM  sbschema.roku_agg_product_contextual_offers_metrics_daily
+	WHERE date_key='2020-06-13' AND  product_id IS NOT  NULL; 
+
+```
 ### Presto  Druid Pinot Kudu
 Presto  query execution rate that is three times faster than Hive.
 
