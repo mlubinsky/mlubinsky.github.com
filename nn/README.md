@@ -4,6 +4,7 @@
 
 <https://www.deeplearningbook.org/> 
 
+<https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0> TF
 <https://www.youtube.com/watch?v=bVQUSndDllU>
 
 <https://www.newworldai.com/advanced-deep-learning-course-deepmind/> . Youtube lectures
