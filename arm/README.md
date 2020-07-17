@@ -163,7 +163,10 @@ to toggle a bit – поменять значение бита на против
 
  
  
-### Arduino Nono BTE
+### Arduino Nano BTE
+
+<https://www.youtube.com/watch?v=jCLgqaXS6Gg&feature=youtu.be>. Arduino Programming
+
 <https://medium.com/tensorflow/how-to-get-started-with-machine-learning-on-arduino-7daf95b4157>
 
 <https://arduino.github.io/ArduinoAI/BLESense-test-dashboard/>
