@@ -1,4 +1,7 @@
-<https://vc.ru/services/142989-artist-zhurnalist-hudozhnik-i-luchshiy-drug-660-mln-chelovek-pochemu-bot-microsoft-xiaoice-stal-samym-populyarnym-v-kitae?from=rss>
+<https://vc.ru/services/142989-artist-zhurnalist-hudozhnik-i-luchshiy-drug-660-mln-chelovek-pochemu-bot-microsoft-xiaoice-stal-samym-populyarnym-v-kitae?from=rss> Microsoft Bot
+
+
+<https://news.ycombinator.com/item?id=23880207>  Noise supression
 
 ## ARM NN
 
