@@ -1,5 +1,7 @@
 <https://www.youtube.com/watch?v=bVQUSndDllU>
 
+<https://libradocs.github.io/> Libra Fully Automated Machine Learning in One-Liners
+
 <https://habr.com/ru/company/skillfactory/blog/509212/> Good Links
 
 <https://www.meetup.com/Scala-Bay/events/271129752/>. Kirpichev Google
