@@ -11,6 +11,8 @@ https://news.ycombinator.com/item?id=23841491
 
 https://github.com/miiohio/succinct
 
+https://habr.com/ru/post/511646/. how to effectively store integer array
+ 
 https://www.youtube.com/watch?v=2yWf3TrJ6Xs&feature=youtu.be
 
 <https://habr.com/ru/post/499394/>
