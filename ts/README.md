@@ -78,6 +78,8 @@ TBATS2 - TBATS1 With Two Seasonal Periods
 
 <https://github.com/unit8co/darts> time series in Python
 
+<https://habr.com/ru/company/otus/blog/511782/>. sktime - time series with python
+
 <https://github.com/mlubinsky/mlubinsky.github.com/blob/master/ts/time_series_forecasting_with_python_mini_course.pdf>
 
 <https://habr.com/ru/post/352980/> . Alert system for metrics
