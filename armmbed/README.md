@@ -11,6 +11,10 @@ another way that I found out to reset the storage and erase the memory completel
 
 create a empty file called 'erase.act' and drag it to the DAPLink drive. This should blow everything away.
 
+### FRDM-K66F accelerometer
+https://community.nxp.com/docs/DOC-101385
+
+
 ### LED
 
 <https://os.mbed.com/questions/78630/Thread-called-only-once-when-thread-is-c/>
