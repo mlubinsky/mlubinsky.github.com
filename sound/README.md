@@ -11,6 +11,9 @@
 
 Низкочастотный фильтр используется для нахождения ориентации устройства, высокочастотный — для определения тряски.
 
+
+https://habr.com/ru/post/346766/.  motion detection on Android with Tensorflow
+
 ## Microsoft Bot
 <https://vc.ru/services/142989-artist-zhurnalist-hudozhnik-i-luchshiy-drug-660-mln-chelovek-pochemu-bot-microsoft-xiaoice-stal-samym-populyarnym-v-kitae?from=rss> 
 
