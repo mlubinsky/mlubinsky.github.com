@@ -14,6 +14,21 @@
 
 https://habr.com/ru/post/346766/.  motion detection on Android with Tensorflow
 
+https://www.youtube.com/watch?v=qcHjDLCJxfI
+
+https://www.youtube.com/watch?v=5022uOtWUag
+
+https://www.youtube.com/watch?v=DUznmZvSQOU
+
+https://www.youtube.com/watch?v=dEn2Qvh_qjc
+
+https://www.youtube.com/watch?v=g8h2aFAVGH0
+
+## Vibration
+
+https://www.youtube.com/watch?v=4fDqII7ut6Y
+
+
 ## Microsoft Bot
 <https://vc.ru/services/142989-artist-zhurnalist-hudozhnik-i-luchshiy-drug-660-mln-chelovek-pochemu-bot-microsoft-xiaoice-stal-samym-populyarnym-v-kitae?from=rss> 
 
