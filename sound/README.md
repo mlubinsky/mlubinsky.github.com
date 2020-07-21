@@ -1,4 +1,10 @@
-<https://vc.ru/services/142989-artist-zhurnalist-hudozhnik-i-luchshiy-drug-660-mln-chelovek-pochemu-bot-microsoft-xiaoice-stal-samym-populyarnym-v-kitae?from=rss> Microsoft Bot
+## Accelerometer
+<http://www.sensorica.ru/docs/art2.shtml>
+
+Для приложений, требующих измерений малых ускорений, лучшим решением будет использование акселерометра с высокой чувствительностью, где выходной сигнал будет выше уровня шума усилителя. Например, если ожидается уровень вибрации 0.1g, а чувствительность датчика составляет 10 мВ/g, напряжение выходного сигнала составит 1 мВ и потребуется акселерометр с более высокой чувствительностью.
+
+## Microsoft Bot
+<https://vc.ru/services/142989-artist-zhurnalist-hudozhnik-i-luchshiy-drug-660-mln-chelovek-pochemu-bot-microsoft-xiaoice-stal-samym-populyarnym-v-kitae?from=rss> 
 
 
 <https://news.ycombinator.com/item?id=23880207>  Noise supression
