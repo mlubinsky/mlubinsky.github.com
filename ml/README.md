@@ -1,3 +1,5 @@
+<https://news.ycombinator.com/item?id=23901729> ML in physics
+
 <https://www.youtube.com/watch?v=bVQUSndDllU>
 
 <https://libradocs.github.io/> Libra Fully Automated Machine Learning in One-Liners
