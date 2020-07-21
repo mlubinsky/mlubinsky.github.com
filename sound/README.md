@@ -6,6 +6,10 @@
 ## Microsoft Bot
 <https://vc.ru/services/142989-artist-zhurnalist-hudozhnik-i-luchshiy-drug-660-mln-chelovek-pochemu-bot-microsoft-xiaoice-stal-samym-populyarnym-v-kitae?from=rss> 
 
+## Question /Answer with python and streamit
+<https://www.confetti.ai/post/deploying-a-state-of-the-art-question-answering-system-with-60-lines-of-python-and-streamlit>
+
+## Noise supression
 
 <https://news.ycombinator.com/item?id=23880207>  Noise supression
 
