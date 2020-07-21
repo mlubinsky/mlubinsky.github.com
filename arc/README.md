@@ -1,5 +1,8 @@
 <https://techblog.bozho.net/seven-legacy-integration-patterns/>
 
+https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/
+
+https://news.ycombinator.com/item?id=23904000
 
 <https://eng.uber.com/apache-hudi-graduation/>  Apachi Hudi
 
