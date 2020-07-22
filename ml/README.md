@@ -4,6 +4,8 @@
 
 <https://libradocs.github.io/> Libra Fully Automated Machine Learning in One-Liners
 
+Clustering algos: https://link.springer.com/content/pdf/10.1007/s40745-015-0040-1.pdf
+
 <https://habr.com/ru/company/skillfactory/blog/509212/> Good Links
 
 <https://www.meetup.com/Scala-Bay/events/271129752/>. Kirpichev Google
