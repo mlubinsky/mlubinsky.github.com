@@ -550,8 +550,16 @@ mbed compile --target K66F --toolchain GCC_ARM --profile release
 
 <https://medium.com/linagoralabs/computing-mfccs-voice-recognition-features-on-arm-systems-dae45f016eb6>
 
+## MFCC
+
 MFCCs means Mel Frequency Cepstral Coefficients which are the most widely used features in speech recognition. MFCC coefficients model the spectral energy distribution in a perceptually meaningful way.
 http://www.cs.tut.fi/~sgn14006/PDF2015/S04-MFCC.pdf
+
+https://www.silabs.com/content/usergenerated/asi/cloud/content/siliconlabs/en/community/projects/jcr:content/content/primary/blog/efm32_voice_recognit-0WYR.social.0.10.html
+
+https://arxiv.org/pdf/1711.07128.pdf
+
+<https://dsp.stackexchange.com/questions/15145/mfcc-uncertain-of-my-results-and-algorithm>
 
 <https://github.com/ARM-software/ML-KWS-for-MCU/tree/master/Deployment>
 
