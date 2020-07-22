@@ -39,6 +39,44 @@ https://www.youtube.com/watch?v=4fDqII7ut6Y
 
 <https://news.ycombinator.com/item?id=23880207>  Noise supression
 
+ 
+
+## MFCC
+```
+ The mel-scale was developed by experimenting with the human ears 
+ interpretation of a pitch in 1940’s.
+The sole purpose
+of the experiment were to describe the human auditory system on a linear scale. 
+The experiment showed that the pitch is lineary perceived in the frequencyrange 0-1000hz. 
+Above 1000 hz, the scale becomes logaritmic. 
+
+MFCCs means Mel Frequency Cepstral Coefficients which are the most widely used features in speech recognition. MFCC coefficients model the spectral energy distribution in a perceptually meaningful way.
+```
+http://www.cs.tut.fi/~sgn14006/PDF2015/S04-MFCC.pdf
+
+http://kom.aau.dk/group/04gr742/pdf/MFCC_worksheet.pdf
+
+http://www.jatit.org/volumes/Vol79No1/5Vol79No1.pdf
+
+https://www.silabs.com/content/usergenerated/asi/cloud/content/siliconlabs/en/community/projects/jcr:content/content/primary/blog/efm32_voice_recognit-0WYR.social.0.10.html
+
+http://www.cs.tut.fi/~sgn14006/PDF2015/S04-MFCC.pdf
+
+http://www.speech.cs.cmu.edu/15-492/slides/03_mfcc.pdf
+
+https://www.researchgate.net/publication/220584952_Comparison_of_Different_Implementations_of_MFCC
+
+https://www.researchgate.net/publication/254028337_Speaker_recognition_using_Mel_Frequency_Cepstral_Coefficients_MFCC_and_Vector_quantization_VQ_techniques
+
+https://arxiv.org/pdf/1711.07128.pdf
+
+https://arxiv.org/pdf/1003.4083.pdf
+
+<https://medium.com/linagoralabs/computing-mfccs-voice-recognition-features-on-arm-systems-dae45f016eb6>
+
+
+<https://dsp.stackexchange.com/questions/15145/mfcc-uncertain-of-my-results-and-algorithm>
+
 ## ARM NN
 
 <https://www.arm.com/products/silicon-ip-cpu/ethos/arm-nn>
@@ -80,8 +118,19 @@ https://www.iguides.ru/main/other/kak_rabotaet_shazam_bystroe_preobrazovanie_fur
 ### spectrogram
 https://towardsdatascience.com/understanding-audio-data-fourier-transform-fft-spectrogram-and-speech-recognition-a4072d228520
 ```
-Suppose you are working on a Speech Recognition task. You have an audio file in which someone is speaking a phrase (for example: How are you). Your recognition system should be able to predict these three words in the same order (1. ‘how’, 2. ‘are’, 3. ‘you’). If you remember, in the previous exercise we broke our signal into its frequency values which will serve as features for our recognition system. But when we applied FFT to our signal, it gave us only frequency values and we lost the track of time information. Now our system won’t be able to tell what was spoken first if we use these frequencies as features. We need to find a different way to calculate features for our system such that it has frequency values along with the time at which they were observed. Here Spectrograms come into the picture.
-Visual representation of frequencies of a given signal with time is called Spectrogram. In a spectrogram representation plot — one axis represents the time, the second axis represents frequencies and the colors represent magnitude (amplitude) of the observed frequency at a particular time
+Suppose you are working on a Speech Recognition task. 
+You have an audio file in which someone is speaking a phrase (for example: How are you). 
+Your recognition system should be able to predict these three words in the same order
+(1. ‘how’, 2. ‘are’, 3. ‘you’).  
+we broke our signal into its frequency values which will serve as features for our recognition system.
+But when we applied FFT to our signal, it gave us only frequency values and we lost the track of time information. 
+Now our system won’t be able to tell what was spoken first if we use these frequencies as features.
+We need to find a different way to calculate features for our system such that it has frequency values along with the time at which they were observed. 
+Here Spectrograms come into the picture.
+Visual representation of frequencies of a given signal with time is called Spectrogram. 
+In a spectrogram representation plot — one axis represents the time,
+the second axis represents frequencies 
+and the colors represent magnitude (amplitude) of the observed frequency at a particular time
 
 ```
 
@@ -548,18 +597,7 @@ mbed compile --target K66F --toolchain GCC_ARM --profile release
 
 <https://community.arm.com/developer/tools-software/oss-platforms/f/machine-learning-forum/45879/re-build-tensorflow-lite-model-in-cmsis-nn>
 
-<https://medium.com/linagoralabs/computing-mfccs-voice-recognition-features-on-arm-systems-dae45f016eb6>
 
-## MFCC
-
-MFCCs means Mel Frequency Cepstral Coefficients which are the most widely used features in speech recognition. MFCC coefficients model the spectral energy distribution in a perceptually meaningful way.
-http://www.cs.tut.fi/~sgn14006/PDF2015/S04-MFCC.pdf
-
-https://www.silabs.com/content/usergenerated/asi/cloud/content/siliconlabs/en/community/projects/jcr:content/content/primary/blog/efm32_voice_recognit-0WYR.social.0.10.html
-
-https://arxiv.org/pdf/1711.07128.pdf
-
-<https://dsp.stackexchange.com/questions/15145/mfcc-uncertain-of-my-results-and-algorithm>
 
 <https://github.com/ARM-software/ML-KWS-for-MCU/tree/master/Deployment>
 
