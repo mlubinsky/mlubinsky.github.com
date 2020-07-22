@@ -1,5 +1,7 @@
 https://quastor.org/learn/course-introduction/introduction
 
+https://akshayr.me/blog/articles/python-dictionaries
+
 https://medium.com/better-programming/dynamic-programming-interview-questions-maximum-profit-in-job-scheduling-6c5ec15c4cc5
 
 https://medium.com/better-programming/cracking-the-amazon-interview-cf6a6c5f954a
