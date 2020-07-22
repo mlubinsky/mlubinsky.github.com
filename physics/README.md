@@ -3,6 +3,8 @@
 
 <https://arxiv.org/list/physics.ed-ph/recent>
 
+<https://arxiv.org/abs/1001.1778> Understanding Quaternions and the Dirac Belt Trick
+
 <https://news.ycombinator.com/item?id=23153778>
 
 <https://physics.stackexchange.com/questions/148370/how-to-understand-non-associative-composition-of-velocities-in-str>
