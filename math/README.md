@@ -1,6 +1,8 @@
 <https://ru.coursera.org/learn/geometriya-i-gruppy> Геометрия и группы
 Савватеев Алексей Владимирович
   
+https://arxiv.org/abs/1705.07621. Grasshhopper problem
+
 
 <https://realnotcomplex.com/>
 
