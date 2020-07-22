@@ -3,6 +3,8 @@
 
 <https://arxiv.org/list/physics.ed-ph/recent>
 
+<https://arxiv.org/abs/2002.12118> Simple Relativity Approach to Special Relativity
+
 <https://arxiv.org/abs/1001.1778> Understanding Quaternions and the Dirac Belt Trick
 
 <https://news.ycombinator.com/item?id=23153778>
