@@ -9,6 +9,8 @@ BuildVersion:	18G95
 
 <https://wiki.nikitavoloboev.xyz/macos/macos-apps>
 
+<https://twitter.com/craigmod/status/1268788533990289409>
+
 <https://github.com/learn-anything/macos-apps>
 
 ### diff tools
