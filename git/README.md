@@ -1,8 +1,12 @@
-## GUI
+
 
 <https://gitexplorer.com/>
 
 <https://gitbetter.substack.com/p/how-to-use-git-fetch-and-git-pull>
+
+https://habr.com/ru/company/manychat/blog/511946/
+
+## GUI
 
 <https://git-fork.com/> Fork: UI for Git
 
