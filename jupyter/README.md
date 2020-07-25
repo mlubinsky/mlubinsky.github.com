@@ -8,6 +8,9 @@ https://habr.com/ru/company/ruvds/blog/505624/. HiSpeed DataFrames: Dask Vuex
 
 <https://habr.com/ru/post/485318/> Добавляем в Jupyter Notebooks красоту и интерактивность
 
+
+<https://livecodestream.dev/post/2020-07-23-interactive-data-visualization-using-plotly-and-python/> Plotly
+
 ### Pandas
 <https://habr.com/ru/company/ruvds/blog/492220/>. Pandas
 
@@ -19,6 +22,8 @@ https://habr.com/ru/company/ruvds/blog/500428/
 https://janakiev.com/blog/jupyter-virtual-envs/
 
 # Jupyter Pandas NumPy Scikit
+
+<https://habr.com/ru/company/plarium/blog/512332/>. scikit
 
 <https://www.youtube.com/playlist?list=PL5-da3qGB5IBITZj_dYSFqnd_15JgqwA6>
 
