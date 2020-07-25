@@ -23,6 +23,8 @@ https://habr.com/ru/company/jetinfosystems/blog/498652/ Mask R-CNN etc
 
 ## Image processing without NN
 
+<https://www.linkedin.com/posts/adityaojas_opencv-deeplearning-innovation-activity-6690219835810484224-9rcO> OpenCV Sudoku Solver
+
 <https://realpython.com/storing-images-in-python/>
 
 <https://open.compscicenter.ru/archive/images/> . Все что нужно знать программисту об изображениях
