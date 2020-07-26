@@ -1,5 +1,7 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+<https://www.youtube.com/watch?v=4zcoOzXtlAo&fbclid=IwAR1c0VXp2Mljpy-5Wj-N7Gq36uuKKZhT4nKjOwlpCuWYfnQiqzPxLGbpiyM>
+
 
 <https://arxiv.org/list/physics.ed-ph/recent>
 
