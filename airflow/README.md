@@ -9,6 +9,8 @@ In other words, the job instance is started once the period it covers has ended.
 Let's Repeat That The scheduler runs your job one schedule_interval AFTER the start date, at the END of the period.
 ```
 
+<https://habr.com/ru/post/512386/> Airflow in russian
+
 <https://stackoverflow.com/questions/62403142/airflow-branchpythonoperator-chaining>
 ```
  think you suggest to use the chain func like this:
