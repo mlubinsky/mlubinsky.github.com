@@ -2,6 +2,8 @@
 
 <https://www.youtube.com/watch?v=4zcoOzXtlAo&fbclid=IwAR1c0VXp2Mljpy-5Wj-N7Gq36uuKKZhT4nKjOwlpCuWYfnQiqzPxLGbpiyM>
 
+MFTI
+<https://www.youtube.com/c/%D0%A4%D0%90%D0%9B%D0%A2%D0%9C%D0%A4%D0%A2%D0%98/playlists> 
 
 <https://arxiv.org/list/physics.ed-ph/recent>
 
