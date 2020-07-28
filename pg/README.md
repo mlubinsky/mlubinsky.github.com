@@ -2,6 +2,8 @@
 
 <https://bytes.yingw787.com/posts/2020/06/15/postgres_as_app_1/>
 
+<https://hakibenita.com/sql-tricks-application-dba>
+
 <http://www.interdb.jp/pg/>. internals
 
 <https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791> What is wrong with Postgres?
