@@ -2,7 +2,11 @@
 
 <https://bytes.yingw787.com/posts/2020/06/15/postgres_as_app_1/>
 
-<https://hakibenita.com/sql-tricks-application-dba>
+<https://hakibenita.com/sql-tricks-application-dba> 
+
+<https://habr.com/ru/company/tensor/blog/511238/> GROUP SETs
+
+<https://habr.com/ru/company/tensor/blog/508184/> Window functions
 
 <http://www.interdb.jp/pg/>. internals
 
