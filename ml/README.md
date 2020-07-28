@@ -8,6 +8,12 @@ Clustering algos: https://link.springer.com/content/pdf/10.1007/s40745-015-0040-
 
 <https://habr.com/ru/company/skillfactory/blog/509212/> Good Links
 
+<https://github.com/mljar/mljar-supervised>
+
+https://habr.com/ru/company/leroy_merlin/blog/511792/  featuretools
+
+<https://github.com/mljar/mljar-supervised>
+
 <https://www.meetup.com/Scala-Bay/events/271129752/>. Kirpichev Google
 
 <https://arxiv.org/abs/1911.01547> On the Measure of Intelligence François Chollet
