@@ -34,6 +34,14 @@ TBATS2 - TBATS1 With Two Seasonal Periods
 
 ## Time Series DBs
 
+<https://medium.com/datadriveninvestor/what-are-time-series-databases-a3e847608f91>
+
+<https://questdb.io/blog/>
+
+<https://news.ycombinator.com/item?id=23975807>
+
+<https://github.com/timescale/tsbs> Benchmarking
+
 <https://habr.com/ru/post/508362/> VictoriaMetrics, TimescaleDB и InfluxDB
 
 <https://www.youtube.com/watch?v=2SUBRE6wGiA&list=PLSE8ODhjZXjY0GMWN4X8FIkYNfiu8_Wl9>
