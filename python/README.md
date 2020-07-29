@@ -6,11 +6,16 @@
 
 <https://habr.com/ru/post/510294/> better python
 
-<https://pythonspeed.com/articles/python-object-memory/>.  use slots and other
+<https://pythonspeed.com/articles/python-object-memory/>.  use slots !!! and other tips
 
-<https://modelpredict.com/python-dependency-management-tools>
+<https://modelpredict.com/python-dependency-management-tools> 
 
 <https://news.ycombinator.com/item?id=23386537> debugging
+
+
+## with
+
+<https://medium.com/better-programming/context-managers-in-python-go-beyond-with-open-as-file-85a27e392114>
 
 ## ML papers with code
 https://paperswithcode.com/
