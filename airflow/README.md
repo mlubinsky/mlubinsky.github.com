@@ -11,6 +11,8 @@ Let's Repeat That The scheduler runs your job one schedule_interval AFTER the st
 
 <https://habr.com/ru/post/512386/> Airflow in russian
 
+http://blog.manugarri.com/how-to-trigger-a-dag-with-custom-parameters-on-airflow-ui/
+
 <https://stackoverflow.com/questions/62403142/airflow-branchpythonoperator-chaining>
 ```
  think you suggest to use the chain func like this:
