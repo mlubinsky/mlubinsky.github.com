@@ -2,6 +2,8 @@ https://quastor.org/learn/course-introduction/introduction
 
 https://oddblogger.com/recursion-memoization-dynamic-programming-lcs-problem/
 
+https://medium.com/javascript-in-plain-english/facebook-coding-interview-questions-9e40bdbbec35
+
 https://akshayr.me/blog/articles/python-dictionaries
 
 https://medium.com/better-programming/dynamic-programming-interview-questions-maximum-profit-in-job-scheduling-6c5ec15c4cc5
