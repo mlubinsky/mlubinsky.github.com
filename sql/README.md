@@ -16,6 +16,20 @@
 
 <https://news.ycombinator.com/item?id=22892946>
 
+## Running total
+
+<https://medium.com/better-programming/4-ways-to-calculate-a-running-total-with-sql-986d0019185c>
+
+```
+Select
+      t1.day
+      ,t1.driver_id
+      ,(
+        Select sum(profit) from f_daily_rides t2 
+        where t1.day    >=t2.day and t1.driver_id = t2.driver_id
+       )
+   FROM f_daily_rides t1
+```   
 
 ## SQL
  Medium-Hard Data   SQL Interview Questions
