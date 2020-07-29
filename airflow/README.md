@@ -8,6 +8,7 @@ Note that if you run a DAG on a schedule_interval of one day, the run stamped 20
 In other words, the job instance is started once the period it covers has ended.
 Let's Repeat That The scheduler runs your job one schedule_interval AFTER the start date, at the END of the period.
 ```
+<https://stackoverflow.com/questions/58414350/airflow-skip-current-task> SkipTask
 
 <https://habr.com/ru/post/512386/> Airflow in russian
 
