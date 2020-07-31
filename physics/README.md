@@ -7,6 +7,8 @@
 
 <https://www.youtube.com/watch?v=skN0WCiNeaI> Dima Shepelyansky
 
+<https://www.youtube.com/watch?v=TGlI3kazeuk>  Методы математической физики. Д. А. Шапиро
+
 MFTI
 <https://www.youtube.com/c/%D0%A4%D0%90%D0%9B%D0%A2%D0%9C%D0%A4%D0%A2%D0%98/playlists> 
 
