@@ -1,4 +1,7 @@
 
+JIT:
+<https://habr.com/ru/company/mailru/blog/513290/>
+
 Regular Expression:
 <https://blog.robertelder.org/regular-expression-visualizer/>
 
