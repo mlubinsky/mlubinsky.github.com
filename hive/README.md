@@ -69,6 +69,8 @@ Druid is fast
 But Pinot is faster?
 <https://pinot.apache.org/>
 
+<https://engineering.linkedin.com/blog/2020/apache-pinot-030-update>
+
 <https://eng.uber.com/engineering-sql-support-on-apache-pinot/>
 
 ### Impala SQL Engine
