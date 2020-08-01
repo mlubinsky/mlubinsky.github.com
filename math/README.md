@@ -3,6 +3,7 @@
   
 https://arxiv.org/abs/1705.07621. Grasshhopper problem
 
+<http://eqworld.ipmnet.ru/indexr.htm>
 
 <https://realnotcomplex.com/>
 
