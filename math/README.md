@@ -172,6 +172,8 @@ https://arxiv.org/abs/1705.07621. Grasshhopper problem
 
 <https://news.ycombinator.com/item?id=15923338> linear algebra and ML
 
+<<https://www.dhruvonmath.com/2020/07/26/who-cares-about-eigenvectors/>
+
 <https://machinelearningmastery.com/introduction-to-eigendecomposition-eigenvalues-and-eigenvectors/>
 
 <https://machinelearningmastery.com/resources-for-linear-algebra-in-machine-learning/>
