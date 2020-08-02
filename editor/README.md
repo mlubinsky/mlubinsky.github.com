@@ -1,3 +1,8 @@
+##  Latex online 
+<https://www.overleaf.com/learn>
+
+
+
 <https://www.reddit.com/r/javascript/comments/cti3xs/why_you_should_use_eslint_prettier_and/>
 
 <https://www.freecodecamp.org/news/the-guide-to-using-eslint-and-prettier-in-a-react-app/>
@@ -148,6 +153,8 @@ $ to the end of a line
 
 
 ## Visual Studio Code
+
+<https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop>  Latex
 
 <https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner>
 
