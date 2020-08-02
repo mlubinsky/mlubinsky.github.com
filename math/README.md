@@ -141,6 +141,9 @@ https://arxiv.org/abs/1705.07621. Grasshhopper problem
 
 <https://news.ycombinator.com/item?id=19933274>
 
+
+<https://www.dhruvonmath.com/2020/07/26/who-cares-about-eigenvectors/>
+
 <http://setosa.io/ev/eigenvectors-and-eigenvalues/>
 
 <https://www.youtube.com/watch?v=mxkGMbrobY0&feature=youtu.be>
