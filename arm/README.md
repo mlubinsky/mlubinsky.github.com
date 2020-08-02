@@ -1,5 +1,7 @@
 <https://github.com/MattPD/cpplinks/blob/master/assembly.arm.md> ARM programming
 
+hardware interrupt: <https://www.youtube.com/watch?v=DlEa8kd7n3Q>
+
 ## Serial port reading
 
 Meta key
