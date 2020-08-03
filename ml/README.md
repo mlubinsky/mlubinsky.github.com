@@ -4,6 +4,8 @@
 
 <https://github.com/tirthajyoti/Machine-Learning-with-Python>
 
+<https://machine-learning-with-python.readthedocs.io/en/latest/>
+
 <https://github.com/khuyentran1401/Data_science_on_Medium>
 
 <https://www.youtube.com/watch?v=bVQUSndDllU>
