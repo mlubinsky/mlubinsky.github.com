@@ -14,6 +14,7 @@
 
 <https://github.com/KartikChugh/Otto>
 
+<https://www.youtube.com/watch?v=Ozo6hkOaqPk> working with datasets 
 
 Clustering algos: https://link.springer.com/content/pdf/10.1007/s40745-015-0040-1.pdf
 
