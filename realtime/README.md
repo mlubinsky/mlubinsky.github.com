@@ -1,6 +1,7 @@
 ### Plotly
 <https://habr.com/ru/company/skillfactory/blog/506974/>
 
+<https://medium.com/plotly/interactive-and-scalable-dashboards-with-vaex-and-dash-9b104b2dc9f0>
 
 How We Created a Realtime Patient Monitoring System With Go and Vue in 3 days
 <https://kasvith.me/posts/how-we-created-a-realtime-patient-monitoring-system-with-go-and-vue/>
