@@ -1,7 +1,11 @@
-##  Latex online 
+##  Latex  
 <https://www.overleaf.com/learn>
 
+https://www.texstudio.org/
 
+<https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop>  Latex
+
+## Linters /Formatters
 
 <https://www.reddit.com/r/javascript/comments/cti3xs/why_you_should_use_eslint_prettier_and/>
 
@@ -154,7 +158,6 @@ $ to the end of a line
 
 ## Visual Studio Code
 
-<https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop>  Latex
 
 <https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner>
 
