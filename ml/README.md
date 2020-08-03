@@ -2,6 +2,8 @@
 
 <https://arxiv.org/pdf/2002.04803v2.pdf> ML and Python
 
+<https://github.com/tirthajyoti/Machine-Learning-with-Python>
+
 <https://github.com/khuyentran1401/Data_science_on_Medium>
 
 <https://www.youtube.com/watch?v=bVQUSndDllU>
