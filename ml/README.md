@@ -1,5 +1,7 @@
 <https://www.youtube.com/channel/UCwBs8TLOogwyGd0GxHCp-Dw> AIEngineering
 
+<https://www.youtube.com/channel/UCts-XMcexTiPSR8QbyRGFxA> ML
+
 <https://news.ycombinator.com/item?id=23901729> ML in physics
 
 <https://arxiv.org/pdf/2002.04803v2.pdf> ML and Python
