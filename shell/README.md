@@ -2,6 +2,7 @@
  
  <https://news.ycombinator.com/item?id=23468193>
  
+ <https://zaiste.net/posts/shell-commands-rust/>
  
  ### ENTR GAZE etc
  
