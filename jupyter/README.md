@@ -1,3 +1,5 @@
+<http://scidavis.sourceforge.net/>
+
 <https://ljvmiranda921.github.io/notebook/2020/03/16/jupyter-notebooks-in-2020-part-2/>
 
 https://habr.com/ru/company/ruvds/blog/505624/. HiSpeed DataFrames: Dask Vuex
