@@ -8,6 +8,8 @@
 
 <https://leanpub.com/plotnine-guide> . book
 
+<https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129>
+
 <https://datapane.com/gallery/>
 
 ### Plotly
