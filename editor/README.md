@@ -101,14 +101,20 @@ alias diff="diff-so-fancy"
 alias cat="bat"
 
 ## VIM
+```
+:sp/:vsp, 
+can edit remote files over scp, 
+:E, 
+:earlier, and now 
+:term, 
+```
+<https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118>
 
-https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118
+<https://danielmiessler.com/study/vim/>
 
-https://danielmiessler.com/study/vim/
+<https://www.youtube.com/watch?v=E-ZbrtoSuzw>
 
-https://www.youtube.com/watch?v=E-ZbrtoSuzw&feature=youtu.be
-
-https://www.youtube.com/watch?v=futay9NjOac
+<https://www.youtube.com/watch?v=futay9NjOac>
 
 <https://www.youtube.com/watch?v=SLQWQ_R4bRI&list=PLRjzjpJ02WDMJOTsrdByXynk8h0ScMK9R> 
 ```
