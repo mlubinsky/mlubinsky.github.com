@@ -1,3 +1,13 @@
+### Plotline
+
+<http://haifengl.github.io/vegalite.html>
+
+<https://pythonplot.com/>
+
+<https://leanpub.com/plotnine-guide> . book
+
+<https://datapane.com/gallery/>
+
 ### Plotly
 <https://habr.com/ru/company/skillfactory/blog/506974/>
 
