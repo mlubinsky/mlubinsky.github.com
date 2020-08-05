@@ -100,6 +100,9 @@ alias diff="diff-so-fancy"
 
 alias cat="bat"
 
+### Kakoune editor
+https://kakoune.org/
+
 ## VIM
 ```
 :sp/:vsp, 
