@@ -8,6 +8,10 @@
 
 <https://github.com/tirthajyoti/Machine-Learning-with-Python>
 
+<https://github.com/pycaret/pycaret> PyCaret
+
+<https://twitter.com/ComputingByArts> Michael Bukatin
+
 <https://machine-learning-with-python.readthedocs.io/en/latest/>
 
 <https://github.com/khuyentran1401/Data_science_on_Medium>
