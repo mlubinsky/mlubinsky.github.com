@@ -1,5 +1,7 @@
 https://quastor.org/learn/course-introduction/introduction
 
+https://pypi.org/project/circuitbreaker/ 
+
 https://oddblogger.com/recursion-memoization-dynamic-programming-lcs-problem/
 
 https://johnlekberg.com/blog/2020-08-01-task-order.html . topological sort
