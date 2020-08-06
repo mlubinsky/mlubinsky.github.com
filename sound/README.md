@@ -39,7 +39,13 @@ https://www.youtube.com/watch?v=4fDqII7ut6Y
 
 <https://news.ycombinator.com/item?id=23880207>  Noise supression
 
- 
+## CMSIS DSP and mbed
+https://forums.mbed.com/t/cmsis-dsp-support-forthcoming/8465
+
+## Sound on FRDM-K66F
+<https://forums.mbed.com/t/sai-on-frdm-k66f/6041>
+
+SAI (synchronous audio interface)
 
 ## MFCC
 ```
