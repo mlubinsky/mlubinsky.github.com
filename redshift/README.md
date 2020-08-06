@@ -168,6 +168,31 @@ JOIN numbers
 ON numbers.num <= regexp_count(products.tags, ',\\s') + 1
 ```
 
+
+
+### One more
+
+```
+create or replace function f_bucket (varchar, varchar)
+ returns varchar
+stable
+as $$
+SELECT 
+  CASE 
+    WHEN 0 = STRPOS($1, $2 ) THEN ''
+    ELSE 
+	  CASE 
+        WHEN 0 = STRPOS(SUBSTRING($1, STRPOS($1, $2) + LEN($2), LEN($1)), '&')  
+	      THEN SUBSTRING($1, STRPOS($1, $2) + LEN($2), LEN($1) )
+	    ELSE
+             SUBSTRING($1, STRPOS($1, $2) + LEN($2) , STRPOS($1, '&') - STRPOS($1, $2) - LEN($2)  )
+      END 
+  END 	  
+$$ language sql;
+```
+
+
+
 <https://www.holistics.io/blog/splitting-array-string-into-rows-in-amazon-redshift-or-mysql/>
 
 ```
