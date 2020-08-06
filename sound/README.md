@@ -47,6 +47,8 @@ https://forums.mbed.com/t/cmsis-dsp-support-forthcoming/8465
 
 SAI (synchronous audio interface)
 
+<https://forums.mbed.com/t/looking-for-frdm-k66f-code-example-for-microphone/9615>
+
 ## MFCC
 ```
  The mel-scale was developed by experimenting with the human ears 
