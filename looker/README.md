@@ -156,6 +156,13 @@ ${view_name.dimension_name} references a dimension from another view.
 ${view_name.SQL_TABLE_NAME} references another view or derived table. (Note that SQL_TABLE_NAME in this reference is a literal string; you do not need to replace it with anything.)
 If sql is left unspecified, then Looker assumes that there is a column in the underlying table with the same name as the field. For example, selecting a field called city without a sql parameter would be equivalent to specifying sql: ${TABLE}.city.
 
+
+We can use table calcs for this. Let's say we want to calculate "row 2 minus row 1" since the measure for the second selection is in row 2 and the measure for the first selection is in row 1.
+
+The syntax would be: offset(${view_name.measure_name}, 1) - ${view_name.measure_name}
+offset(${view_name.measure_name}, 1) --> this basically says "take the value of the next row of measure_name"
+
+ ${view_name.measure_name} --> this is "value of measure_name in this row"
 ```
 ### Measures as rows
 following is based on
