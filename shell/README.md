@@ -17,6 +17,9 @@
  
  
  ## Terminal shortcats
+ 
+<https://en.wikipedia.org/wiki/GNU_Readline>
+
 <https://ramantehlan.github.io/blog/post/terminalshortcuts/>
 
 <https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html>
