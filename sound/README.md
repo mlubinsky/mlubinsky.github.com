@@ -42,6 +42,10 @@ https://www.youtube.com/watch?v=4fDqII7ut6Y
 ## CMSIS DSP and mbed
 https://forums.mbed.com/t/cmsis-dsp-support-forthcoming/8465
 
+
+## Keyword spotting KWS
+<https://link.springer.com/article/10.1186/s13636-020-00176-2>
+
 ## Sound on FRDM-K66F
 <https://community.nxp.com/thread/500494>
 
