@@ -43,6 +43,10 @@ https://www.youtube.com/watch?v=4fDqII7ut6Y
 https://forums.mbed.com/t/cmsis-dsp-support-forthcoming/8465
 
 ## Sound on FRDM-K66F
+<https://community.nxp.com/thread/500494>
+
+<https://os.mbed.com/docs/mbed-os/v5.13/apis/usbaudio.html>  USBAudio
+
 <https://forums.mbed.com/t/sai-on-frdm-k66f/6041>
 
 SAI (synchronous audio interface)
