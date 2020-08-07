@@ -120,6 +120,9 @@ docker run -it  -v /Users/miclub01/GIT/FORK/pelion-ml-demo:/mnt/host mbedos/mbed
 
 <https://news.ycombinator.com/item?id=22888318>
 
+## Classical algo with CMSIS
+
+<https://developer.arm.com/solutions/machine-learning-on-arm/developer-material/how-to-guides/implement-classical-ml-with-arm-cmsis-dsp-libraries/what-is-a-bayesian-estimator>
 
 ## CMSIS-NN
 
