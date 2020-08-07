@@ -3,6 +3,11 @@
 
 <https://docs.looker.com/reference/explore-params/persist_for-for-explore>
 
+## Pivot
+And our table calc will be a bit different. The new syntax will be:
+
+pivot_index(${view_name.measure_name},2) - pivot_index(${view_name.measure_name},1)
+
 ## General Questions
 
 <https://help.looker.com/hc/en-us/articles/360023640634-Dynamic-Measures-with-Parameters>
