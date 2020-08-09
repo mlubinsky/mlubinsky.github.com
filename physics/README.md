@@ -2,6 +2,8 @@
 
 <https://news.ycombinator.com/item?id=24078420>
 
+<https://ium.mccme.ru/index.php>
+
 <https://www.youtube.com/watch?v=4zcoOzXtlAo&fbclid=IwAR1c0VXp2Mljpy-5Wj-N7Gq36uuKKZhT4nKjOwlpCuWYfnQiqzPxLGbpiyM>
 
 <https://elementy.ru/nauchno-populyarnaya_biblioteka/zhurnaly>
