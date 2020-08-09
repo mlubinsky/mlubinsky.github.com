@@ -1,6 +1,12 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+
+## So you want to learm physics
+
 <https://news.ycombinator.com/item?id=24078420>
+
+<https://news.ycombinator.com/item?id=24088985>
+
 
 <https://ium.mccme.ru/index.php>
 
