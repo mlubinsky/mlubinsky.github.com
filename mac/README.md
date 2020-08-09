@@ -4,6 +4,11 @@ ProductName:	Mac OS X
 ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
+### Mac shortcuts
+
+<https://support.apple.com/en-us/HT201236>
+
+<https://news.ycombinator.com/item?id=24091707>
 
 ### Useful Apps
 
