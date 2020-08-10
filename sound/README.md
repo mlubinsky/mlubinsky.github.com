@@ -43,8 +43,19 @@ https://www.youtube.com/watch?v=4fDqII7ut6Y
 https://forums.mbed.com/t/cmsis-dsp-support-forthcoming/8465
 
 
-## Keyword spotting KWS
-<https://link.springer.com/article/10.1186/s13636-020-00176-2>
+## Keyword spotting KWS CMSIS-NN
+<https://link.springer.com/article/10.1186/s13636-020-00176-2>  Danish
+
+https://github.com/PeterMS123/KWS-DS-CNN-for-embedded/blob/master/README.md
+
+Naveen Suda:
+
+<https://arxiv.org/abs/1711.07128>
+
+<https://github.com/ARM-software/ML-KWS-for-MCU>
+
+https://developer.arm.com/solutions/machine-learning-on-arm/developer-material/how-to-guides/converting-a-neural-network-for-arm-cortex-m-with-cmsis-nn/single-page
+
 
 ## Sound on FRDM-K66F
 <https://community.nxp.com/thread/500494>
