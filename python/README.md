@@ -12,6 +12,7 @@
 
 <https://news.ycombinator.com/item?id=23386537> debugging
 
+<https://habr.com/ru/company/ruvds/blog/514538/> SQLite
 
 ## with
 
