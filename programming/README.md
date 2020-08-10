@@ -133,6 +133,8 @@ Nim
 
 
 ## Func Programming
+
+<https://d3.ru/zametka-podborka-o-funktsionalnom-programmirovanii-2022041/> 
 <https://habr.com/ru/post/492460/>
 
 <https://jrsinclair.com/articles/2019/what-i-wish-someone-had-explained-about-functional-programming/>
