@@ -44,6 +44,10 @@ https://forums.mbed.com/t/cmsis-dsp-support-forthcoming/8465
 
 
 ## Keyword spotting KWS CMSIS-NN
+
+Linker error: multiple definitions
+<https://github.com/ARM-software/CMSIS_5/issues/581>
+
 <https://link.springer.com/article/10.1186/s13636-020-00176-2>  Danish
 
 https://github.com/PeterMS123/KWS-DS-CNN-for-embedded/blob/master/README.md
