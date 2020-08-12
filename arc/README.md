@@ -1,3 +1,5 @@
+Book:  <http://streamingsystems.net/>
+
 <https://techblog.bozho.net/seven-legacy-integration-patterns/>
 
 https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/
