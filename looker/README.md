@@ -3,6 +3,19 @@
 
 <https://docs.looker.com/reference/explore-params/persist_for-for-explore>
 
+```
+So measures of type number means that the measure will be an arihmethac of some sort.
+https://docs.looker.com/reference/field-reference/measure-type-reference#number
+Sorry, not aggregation, I mean arithmancy. For example, it'll look something like so: 
+
+measure: total_gross_margin_percentage {
+  type: number
+  value_format_name: percent_2
+  sql: ${total_gross_margin}/ NULLIF(${total_sale_price},0) ;;
+}
+```
+Where we're performing arithmancy in the sql
+
 ## Pivot
 And our table calc will be a bit different. The new syntax will be:
 
