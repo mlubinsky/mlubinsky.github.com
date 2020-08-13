@@ -5,8 +5,14 @@ https://www.texstudio.org/
 
 <https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop>  Latex
 
+## Julia + Pluto
+
+https://www.youtube.com/watch?v=IAF8DjrQSSk
+
 ## Jupyter Book
 https://blog.jupyter.org/announcing-the-new-jupyter-book-cbf7aa8bc72e
+
+https://news.ycombinator.com/item?id=24136955
 
 ## Linters /Formatters
 
