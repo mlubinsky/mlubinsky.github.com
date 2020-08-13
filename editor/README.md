@@ -10,6 +10,9 @@ https://www.texstudio.org/
 https://www.youtube.com/watch?v=IAF8DjrQSSk
 
 ## Jupyter Book
+
+Jupyter Book takes one or more Jupyter Notebooks and converts them into a static "book" output (looks like it primarily targets HTML output but with LaTex/PDF possible)
+
 https://blog.jupyter.org/announcing-the-new-jupyter-book-cbf7aa8bc72e
 
 https://news.ycombinator.com/item?id=24136955
