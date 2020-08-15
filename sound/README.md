@@ -73,6 +73,8 @@ SAI (synchronous audio interface)
 <https://forums.mbed.com/t/looking-for-frdm-k66f-code-example-for-microphone/9615>
 
 ## MFCC
+
+<https://haythamfayek.com/2016/04/21/speech-processing-for-machine-learning.html>
 ```
  The mel-scale was developed by experimenting with the human ears 
  interpretation of a pitch in 1940’s.
