@@ -2,6 +2,14 @@
 
 <https://www.youtube.com/channel/UCts-XMcexTiPSR8QbyRGFxA> ML
 
+Amazon ML classes:
+<https://www.youtube.com/channel/UC12LqyqTQYbXatYS9AA7Nuw/playlists>
+
+<https://github.com/aws-samples/aws-machine-learning-university-accelerated-nlp>
+
+<https://github.com/search?q=org%3Aaws-samples+%22aws-machine-learning%22>
+
+
 <https://news.ycombinator.com/item?id=23901729> ML in physics
 
 <https://arxiv.org/pdf/2002.04803v2.pdf> ML and Python
