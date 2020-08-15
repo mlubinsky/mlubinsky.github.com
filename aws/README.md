@@ -14,6 +14,10 @@ https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_2708
 
 <https://medium.com/aws-tutor/a-complete-guide-to-the-machine-learning-tools-on-aws-8a012cb4de76>
 
+### AWS book $35
+
+<https://gumroad.com/l/aws-good-parts>
+
 ### aws cli via brew
 ```
 brew install awscli
