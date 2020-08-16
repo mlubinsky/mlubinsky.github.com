@@ -1,5 +1,7 @@
 https://habr.com/ru/company/ruvds/blog/515258/. Algorithms
 
+https://github.com/labuladong/fucking-algorithm/tree/english. Leetcode guide
+
 https://quastor.org/learn/course-introduction/introduction
 
 https://pypi.org/project/circuitbreaker/ 
