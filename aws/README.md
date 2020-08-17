@@ -18,6 +18,9 @@ https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_2708
 
 <https://gumroad.com/l/aws-good-parts>
 
+
+<https://pybit.es/aws-lambda-external-libraries.html>
+
 ### aws cli via brew
 ```
 brew install awscli
