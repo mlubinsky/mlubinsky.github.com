@@ -4,6 +4,11 @@ https://gobblin.readthedocs.io/en/latest/
 
 https://gobblin.apache.org/
 
+## Gobblin  consumes data from Kafka Topics 
+
+Gobblin  consumes data from Kafka Topics 
+then organizes that data and writes it to S3 for long term storage and access via HUE, Hive, and other tools.
+
 ##  Scribe endpoint  
 
 <https://confluence.portal.roku.com:8443/display/DEA/Adding+Scribe+Endpoint+and+Gobblin+Kafka+Consumer>
