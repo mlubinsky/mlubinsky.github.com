@@ -1,5 +1,7 @@
 <https://news.ycombinator.com/item?id=22718466> what is schema vs database in Postgres?
 
+<https://habr.com/ru/company/tensor/blog/515786/> Antipatterns
+
 <https://bytes.yingw787.com/posts/2020/06/15/postgres_as_app_1/>
 
 <https://hakibenita.com/sql-tricks-application-dba> 
