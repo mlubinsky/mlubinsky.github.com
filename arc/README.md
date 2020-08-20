@@ -1,5 +1,7 @@
 Book:  <http://streamingsystems.net/>
 
+<https://robertovitillo.com/how-to-conduct-a-system-design-interview/>
+
 <https://techblog.bozho.net/seven-legacy-integration-patterns/>
 
 https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/
