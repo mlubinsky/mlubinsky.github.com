@@ -3,6 +3,8 @@
 
 ## So you want to learm physics
 
+<https://vk.com/wall-49014451?own=1> books
+
 <https://news.ycombinator.com/item?id=24078420>
 
 <https://news.ycombinator.com/item?id=24088985>
