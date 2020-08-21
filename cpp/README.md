@@ -2,6 +2,7 @@
 
 <https://wordsandbuttons.online/SYTYKC.pdf> C
 
+<https://johnysswlab.com/the-price-of-dynamic-memory-allocation/> memory allocators
 
 https://www.reddit.com/r/cpp/comments/ffx95k/static_analysis_tools_you_use_in_ci_for_your_cpp/   cpp static analysis
 
