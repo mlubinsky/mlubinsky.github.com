@@ -1,6 +1,12 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 
+##
+
+https://habr.com/ru/post/516206/. QM article
+
+https://habr.com/ru/post/342654/ Autolokebaiya
+
 ## So you want to learm physics
 
 <https://vk.com/wall-49014451?own=1> books
