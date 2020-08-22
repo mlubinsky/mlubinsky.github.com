@@ -1,5 +1,19 @@
+## Code analysis and visualier
 
-JIT:
+https://www.sourcetrail.com/
+
+https://codemap.app/
+
+https://analysis-tools.dev/
+
+https://news.ycombinator.com/item?id=24221708
+
+https://rotemtam.com/2020/08/13/python-ast/. Python
+
+https://github.com/krlvi/jar-graph. Java
+
+
+## JIT
 <https://habr.com/ru/company/mailru/blog/513290/>
 
 Regular Expression:
