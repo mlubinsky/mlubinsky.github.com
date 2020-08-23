@@ -2,7 +2,11 @@
  [] Square brackets are often simply called brackets,
  {} Curly brackets  are often called braces 
  () Parentheses
+ 
 ```
+Information Theory, Inference, and Learning Algorithms David  McKay
+https://www.inference.org.uk/itprnn/book.pdf
+
 https://www.youtube.com/watch?v=fgp0tKWYQWY implementing regex from scratch
 
 https://pro-prof.com/
