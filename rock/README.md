@@ -2,8 +2,8 @@
 ```
 CREATE EXTERNAL TABLE IF NOT EXISTS sbschema.r_1970
 (
-  server_event_ts    					BIGINT  COMMENT 'server timestamp added by scribe',
-  s              						STRING  COMMENT 'Type of experiment (segment/anonymous/user)'
+  server_event_ts  BIGINT  COMMENT 'server timestamp added by scribe',
+  s STRING  COMMENT 'Type of experiment (segment/anonymous/user)'
 )
 COMMENT 'fact amoeba allocations table'
 PARTITIONED BY (
