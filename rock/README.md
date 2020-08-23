@@ -1,3 +1,22 @@
+### COMPLEX SQL
+```
+SELECT bucket, economic_model, content_type, count(distinct device_id), sum(seconds) as sec, STDDEV(seconds) as std
+FROM (
+      select  1 as device_id, 'bucket_A' as bucket, 'AVOD' as economic_model, 10 as seconds, 'kids' as profile, 'series' as content_type
+      UNION ALL
+      select  2 as device_id, 'bucket_B' as bucket, 'SVOD' as economic_model, 10 as seconds, 'master' as profile, 'livefeed' as content_type
+      UNION ALL
+      select  3 as device_id, 'bucket_B' as bucket, 'SVOD' as economic_model, 10 as seconds, 'master' as profile, 'series' as content_type
+)    
+group by bucket, economic_model, content_type
+```
+
+### challanges to modify SQL above: 
+```
+--- calculate for AVOD/SVOD ignoring content_type
+--- calculate for profile=kids and content_type='lifefeed ignoring economic model
+```
+
 ### Recovering data from 1970-01-02
 ```
 CREATE EXTERNAL TABLE IF NOT EXISTS sbschema.r_1970
