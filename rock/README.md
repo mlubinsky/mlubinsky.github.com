@@ -50,10 +50,12 @@ and date_format(from_unixtime(server_event_ts), 'yyyy-MM-dd') = '${hiveconf:p_da
 
 ```
 
-
+## sbschema 
+````
 describe formatted sbschema.roku_fact_amoeba_allocation_events
-Location: s3://roku-dea-dev-state-stores/roku/facts/fact_amoeba_allocation_events
 
+Location: s3://roku-dea-dev-state-stores/roku/facts/fact_amoeba_allocation_events
+```
 ### Other topics 
 
 ```
