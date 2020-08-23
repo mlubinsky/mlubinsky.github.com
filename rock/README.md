@@ -15,6 +15,27 @@ group by bucket, economic_model, content_type
 ```
 --- calculate for AVOD/SVOD ignoring content_type
 --- calculate for profile=kids and content_type='lifefeed ignoring economic model
+
+Table (user_id, bucket,  profile, money, model, type)
+
+I need to calculate several aggregates: 
+count(distinct user_id), sum(money) from this table grouped by following criterias 
+1) group by bucket, model
+2) group by bucket, model, type
+3) group by bucket where type='A'
+4) group by bucket where profile='adult'
+and return it as a single result
+My current approach is:
+select model, NULL as type, count(distinct user_id), sum(money), 'model' as helper from T group by bucket, model
+UNION ALL
+select model, type, count(distinct user_id), sum(money), 'model_type' as helper from T group by bucket, model, type
+UNION ALL
+select NULL as model, type, count(distinct user_id), sum(money), 'type_A' as helper from T  where type='A' group by bucket 
+UNION ALL
+select NULL as model, type, count(distinct user_id), sum(money), 'profile_adult' as helper from T  where profile='adult' group by bucket 
+      
+The source table is big and the query is slow - I think because it is scanned 4 times ( 4 unions in SQL).
+Is it possible to achiebe it in single table scan?
 ```
 
 ### Recovering data from 1970-01-02
