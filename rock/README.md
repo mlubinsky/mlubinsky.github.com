@@ -55,6 +55,12 @@ and date_format(from_unixtime(server_event_ts), 'yyyy-MM-dd') = '${hiveconf:p_da
 describe formatted sbschema.roku_fact_amoeba_allocation_events
 
 Location: s3://roku-dea-dev-state-stores/roku/facts/fact_amoeba_allocation_events
+
+alter table sbschema.roku_fact_amoeba_allocation_events add partition (date_key='2020-08-04')
+LOCATION 's3://roku-dea-dev-state-stores/roku/facts/fact_amoeba_allocation_events/date_key=2020-08-04';
+
+LOCATION 's3://roku-data-warehouse/roku/facts/fact_amoeba_allocation_events/date_key=2020-08-04';
+
 ```
 ### Other topics 
 
