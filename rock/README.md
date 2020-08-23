@@ -1,3 +1,56 @@
+### Recovering data from 1970-01-02
+```
+CREATE EXTERNAL TABLE IF NOT EXISTS sbschema.r_1970
+(
+  server_event_ts    					BIGINT  COMMENT 'server timestamp added by scribe',
+  s              						STRING  COMMENT 'Type of experiment (segment/anonymous/user)'
+)
+COMMENT 'fact amoeba allocations table'
+PARTITIONED BY (
+  date_key STRING COMMENT 'year month day in yyyy-MM-dd format based on timestamp for allocation'
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '~'
+STORED AS TEXTFILE
+LOCATION 's3://roku-data-warehouse/roku/facts/fact_amoeba_allocation_events/'
+;
+
+alter table sbschema.r_1970 add partition (date_key='1970-01-02')
+LOCATION 's3://roku-data-warehouse/roku/facts/fact_amoeba_allocation_events/date_key=1970-01-02';
+
+grant select on table sbschema.r_1970 to role public;
+
+select * from sbschema.r_1970 where date_key='1970-01-02' and server_event_ts > 1595721600 LIMIT 30;
+```
+## INSERT from 1970-01-02 using params 
+
+hive -hiveconf p_date=2020-07-27 -f DEA-11291.hql
+
+```
+INSERT INTO roku.fact_amoeba_allocation_events
+PARTITION (date_key = '${hiveconf:p_date}')
+SELECT
+server_event_ts,
+split(s,',')[0] as allocation_ts,
+split(s,',')[1] as event_type,
+split(s,',')[2] as device_id,
+split(s,',')[3] as account_id,
+split(s,',')[4] as web_id,
+split(s,',')[5] as layer_name,
+split(s,',')[6] as experiment_id,
+split(s,',')[7] as bucket_name,
+split(s,',')[8] as bucket_configurations,
+split(s,',')[9] as experiment_version,
+split(s,',')[10] as experiment_type
+FROM sbschema.r_1970
+WHERE  date_key='1970-01-02'
+and server_event_ts < 1596579529  --- 08/04/2020 @ 10:18pm (UTC)
+and server_event_ts > 1595882141  --- 07/27/2020 @  8:35pm (UTC)
+and date_format(from_unixtime(server_event_ts), 'yyyy-MM-dd') = '${hiveconf:p_date}'
+
+```
+### Other topics 
+
 ```
 The # of records in Hive table roku.fact_amoeba_allocation_events
 on July 9 is significantly less ( ~2.2 billions) compared with previous days ( > 5.5 billions).
