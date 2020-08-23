@@ -12,6 +12,9 @@ group by bucket, economic_model, content_type
 ```
 
 ### challanges to modify SQL above: 
+
+https://stackoverflow.com/questions/63552586/refactor-sql-for-speed-use-case-instead-union-all
+
 ```
 --- calculate for AVOD/SVOD ignoring content_type
 --- calculate for profile=kids and content_type='lifefeed ignoring economic model
