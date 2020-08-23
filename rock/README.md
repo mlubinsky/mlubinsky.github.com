@@ -1,6 +1,6 @@
 ### COMPLEX SQL
 ```
-SELECT bucket, economic_model, content_type, count(distinct device_id), sum(seconds) as sec, STDDEV(seconds) as std
+SELECT bucket, economic_model, content_type, count(distinct device_id), sum(seconds) as sec, AVG(seconds), STDDEV(seconds) as std
 FROM (
       select  1 as device_id, 'bucket_A' as bucket, 'AVOD' as economic_model, 10 as seconds, 'kids' as profile, 'series' as content_type
       UNION ALL
