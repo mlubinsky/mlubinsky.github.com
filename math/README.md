@@ -5,7 +5,7 @@
   
 https://arxiv.org/abs/1705.07621. Grasshhopper problem
 
-<http://eqworld.ipmnet.ru/indexr.htm>
+<http://eqworld.ipmnet.ru/indexr.htm>  Books
 
 <https://realnotcomplex.com/>
 
@@ -82,7 +82,10 @@ https://arxiv.org/abs/1705.07621. Grasshhopper problem
 
 <https://www.mccme.ru/mmmf-lectures/books/>
 
-<https://habr.com/post/434734/> . Fourie transf
+## Fourier series
+https://www.youtube.com/watch?v=spUNpyF58BY
+
+<https://habr.com/post/434734/> . Fourier transf
 
 <https://news.ycombinator.com/item?id=18099484> Proof Without Words: Gregory’s Theorem
 
