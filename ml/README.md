@@ -2,6 +2,8 @@
 
 <https://www.youtube.com/channel/UCts-XMcexTiPSR8QbyRGFxA> ML
 
+<https://leimao.github.io/article/>
+
 Amazon ML classes:
 <https://www.youtube.com/channel/UC12LqyqTQYbXatYS9AA7Nuw/playlists>
 
