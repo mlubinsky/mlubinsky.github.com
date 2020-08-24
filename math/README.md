@@ -131,6 +131,10 @@ https://arxiv.org/abs/1705.07621. Grasshhopper problem
 ### Linear algebra
 <https://textbooks.math.gatech.edu/ila/>
 
+<https://www.youtube.com/watch?v=rowWM-MijXU> 
+
+<https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab>
+ 
 <https://explained.ai/matrix-calculus/index.html>
 
 <https://news.ycombinator.com/item?id=21628449>
