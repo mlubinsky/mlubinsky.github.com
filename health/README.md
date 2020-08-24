@@ -1,3 +1,5 @@
+<https://www.shinkareff.ru/pervaya-meditsinskaya-pomoshh-v-avtonomn/> 1st aid
+
 <https://postnauka.ru/video/154976> blood pressure
 
 https://www.youtube.com/watch?v=MR4Y4SuC3qk Neck excersises
