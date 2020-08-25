@@ -102,6 +102,9 @@ Location: s3://roku-dea-dev-state-stores/roku/facts/fact_amoeba_allocation_event
 alter table sbschema.roku_fact_amoeba_allocation_events add partition (date_key='2020-08-04')
 LOCATION 's3://roku-dea-dev-state-stores/roku/facts/fact_amoeba_allocation_events/date_key=2020-08-04';
 
+
+ALTER TABLE sbschema.roku_fact_amoeba_allocation_events SET TBLPROPERTIES ('discover.partitions' = 'true');
+
 LOCATION 's3://roku-data-warehouse/roku/facts/fact_amoeba_allocation_events/date_key=2020-08-04';
 
 ```
