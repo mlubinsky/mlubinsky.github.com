@@ -16,6 +16,8 @@ Install python on Mac: https://hackercodex.com/guide/python-development-environm
 
 <https://habr.com/ru/company/ruvds/blog/514538/> SQLite
 
+<https://github.com/giannitedesco/minotaur>  inotify wrapper
+
 ## with
 
 <https://medium.com/better-programming/context-managers-in-python-go-beyond-with-open-as-file-85a27e392114>
