@@ -1,3 +1,5 @@
+Postgres in Docker: <https://habr.com/ru/company/qiwi/blog/515692/>
+
 <https://news.ycombinator.com/item?id=22718466> what is schema vs database in Postgres?
 
 <https://habr.com/ru/company/tensor/blog/515786/> Antipatterns
