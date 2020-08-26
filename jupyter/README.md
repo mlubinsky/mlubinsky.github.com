@@ -17,6 +17,8 @@ https://habr.com/ru/company/ruvds/blog/505624/. HiSpeed DataFrames: Dask Vuex
 ### Pandas
 <https://habr.com/ru/company/ruvds/blog/492220/>. Pandas
 
+<https://towardsdatascience.com/stop-persisting-pandas-data-frames-in-csvs-f369a6440af5>
+
 https://habr.com/ru/company/ruvds/blog/500428/
 
 <https://habr.com/ru/post/475210/>. Pandas
