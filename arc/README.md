@@ -4,6 +4,8 @@ Book:  <http://streamingsystems.net/>
 
 <https://habr.com/ru/company/gms/blog/516718/> Netflix  system design-интервью
 
+https://habr.com/ru/post/516604/
+
 <https://techblog.bozho.net/seven-legacy-integration-patterns/>
 
 https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/
