@@ -4,7 +4,7 @@
 
 <https://news.ycombinator.com/item?id=22883429>
 
-## First_ROW() 
+## First_ROW 
 
 <https://stackoverflow.com/questions/63609219/best-way-to-get-1st-record-per-partition-first-value-vs-row-number>
 
