@@ -18,6 +18,8 @@
 
 ## Running total
 
+<https://stackoverflow.com/questions/63609219/best-way-to-get-1st-record-per-partition-first-value-vs-row-number>
+
 <https://medium.com/better-programming/4-ways-to-calculate-a-running-total-with-sql-986d0019185c>
 
 ```
