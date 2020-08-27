@@ -4,6 +4,10 @@ ProductName:	Mac OS X
 ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
+
+### Python setup
+<https://gist.github.com/chris-zen/9e61db6924bd37fbe414f648614ca4c5>
+
 ### Mac shortcuts
 
 <https://support.apple.com/en-us/HT201236>
