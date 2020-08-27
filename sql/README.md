@@ -30,6 +30,26 @@ content_id	store	first_value
 3	c2	s1	true
 4	c2	s1	true
 
+
+select  * from (
+SELECT content_id, store, kids_directed,  ROW_NUMBER() OVER( PARTITION BY content_id,   store   ORDER BY date_key desc) as row_num
+FROM
+(
+SELECT 'c1' as content_id, 's1' as store, True as kids_directed, '2020-01-01' as date_key
+UNION ALL
+SELECT 'c1' as content_id, 's2' as store, False as kids_directed, '2020-01-02' as date_key
+UNION ALL
+SELECT 'c2' as content_id, 's1' as store, True as kids_directed, '2020-01-02' as date_key
+UNION ALL
+SELECT 'c2' as content_id, 's1' as store, False as kids_directed, '2020-01-02' as date_key
+)
+) where row_num=1
+
+Answer
+content_id	store	kids_directed	row_num
+ c1	       s2	        false     	1
+ c1	       s1	        true	      1
+ c2	       s1	        false	     1
 ```
 
 # TablePlus DBeawer
