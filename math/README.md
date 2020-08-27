@@ -82,7 +82,10 @@ https://arxiv.org/abs/1705.07621. Grasshhopper problem
 
 <https://www.mccme.ru/mmmf-lectures/books/>
 
-## Fourier series
+## Fourier series. 
+
+<https://jackschaedler.github.io/circles-sines-signals/index.html>
+
 https://www.youtube.com/watch?v=spUNpyF58BY
 
 <https://habr.com/post/434734/> . Fourier transf
