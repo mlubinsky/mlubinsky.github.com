@@ -24,6 +24,8 @@
 
 <https://habr.com/ru/company/ruvds/blog/514538/> SQLite
 
+<https://realpython.com/python-mmap/> memory map files
+
 <https://github.com/giannitedesco/minotaur>  inotify wrapper
 
 ## with
