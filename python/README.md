@@ -1,6 +1,14 @@
 <https://snarky.ca/why-you-should-use-python-m-pip/>.  python -m pip
 
-Install python on Mac: https://hackercodex.com/guide/python-development-environment-on-mac-osx/
+
+
+### Install python on Mac: 
+<https://hackercodex.com/guide/python-development-environment-on-mac-osx/>
+
+
+<https://gist.github.com/chris-zen/9e61db6924bd37fbe414f648614ca4c5>
+
+
 
 <http://www.iakovlev.org/index.html?p=5791&m=1&l1=2> All Python in single page
 
