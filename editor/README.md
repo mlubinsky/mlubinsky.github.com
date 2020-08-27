@@ -116,6 +116,8 @@ alias cat="bat"
 https://kakoune.org/
 
 ## VIM
+
+<https://news.ycombinator.com/item?id=24287566>
 ```
 :sp/:vsp, 
 can edit remote files over scp, 
