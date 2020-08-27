@@ -4,6 +4,34 @@
 
 <https://news.ycombinator.com/item?id=22883429>
 
+## First_ROW() 
+
+<https://stackoverflow.com/questions/63609219/best-way-to-get-1st-record-per-partition-first-value-vs-row-number>
+
+```
+
+SELECT   content_id,   store, 
+FIRST_VALUE(kids_directed)   OVER( PARTITION BY content_id,   store   ORDER BY date_key desc rows unbounded preceding) 
+FROM
+(
+SELECT 'c1' as content_id, 's1' as store, True as kids_directed, '2020-01-01' as date_key
+UNION ALL
+SELECT 'c1' as content_id, 's1' as store, False as kids_directed, '2020-01-02' as date_key
+UNION ALL
+SELECT 'c2' as content_id, 's1' as store, True as kids_directed, '2020-01-02' as date_key
+UNION ALL
+SELECT 'c2' as content_id, 's1' as store, False as kids_directed, '2020-01-02' as date_key
+)
+
+ 
+content_id	store	first_value
+1	c1	s1	false
+2	c1	s1	false
+3	c2	s1	true
+4	c2	s1	true
+
+```
+
 # TablePlus DBeawer
 
 <https://news.ycombinator.com/item?id=22908224>
