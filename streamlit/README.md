@@ -1,3 +1,10 @@
+## GradIo
+
+https://gradio.app/
+
+
+## StreamIt
+
 ```
 pip install streamlit
 streamlit config show
@@ -28,6 +35,10 @@ https://celadonsoft.com/ai-ml/the-complete-beginners-guide-to-web-scraping
 <https://www.deeplearningbook.org/>
 
 <https://fluxml.ai/> .  Julia Flux
+
+
+# Pluto Julia notebook
+https://news.ycombinator.com/item?id=24281613
 
 
 ## D-Tale
