@@ -1,4 +1,7 @@
+<https://github.com/alandefreitas/matplotplusplus>
+
 <http://scidavis.sourceforge.net/>
+
 
 <https://github.com/capitanov/dsp-theory> . DSP ins Jupiter
 
