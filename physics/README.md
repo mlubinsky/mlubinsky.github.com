@@ -1,6 +1,10 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 
+## Dynamic systems
+
+https://habr.com/ru/company/mailru/blog/513016/
+
 ##
 
 https://habr.com/ru/post/516206/. QM article
