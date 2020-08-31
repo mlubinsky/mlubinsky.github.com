@@ -1,9 +1,14 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 
+## Comp physics
+http://polybook.ru/comma/
+
 ## Dynamic systems
 
 https://habr.com/ru/company/mailru/blog/513016/
+
+https://habr.com/ru/post/249429/
 
 ##
 
