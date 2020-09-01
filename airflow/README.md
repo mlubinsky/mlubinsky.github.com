@@ -22,6 +22,19 @@ https://stackoverflow.com/questions/60601713/how-to-store-the-sql-query-result-u
 
 https://towardsdatascience.com/airflow-sharing-data-between-tasks-7bbaa27eeb1
 
+```
+def do_work():
+    hiveserver = HiveServer2Hook()
+    hql = "SELECT COUNT(*) FROM foo.bar"
+    row_count = hiveserver.get_records(hql, schema='foo')
+    print row_count[0][0]
+```    
+    
+All available Hive Hooks methods can be found here: 
+
+https://github.com/apache/incubator-airflow/blob/master/airflow/hooks/hive_hooks.py
+
+
 ### XCOM
 https://pythonhosted.org/airflow/concepts.html#xcoms  
 
