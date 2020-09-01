@@ -14,6 +14,20 @@ Let's Repeat That The scheduler runs your job one schedule_interval AFTER the st
 
 http://blog.manugarri.com/how-to-trigger-a-dag-with-custom-parameters-on-airflow-ui/
 
+### How to get result of SQL?
+
+https://airflow.apache.org/docs/stable/_modules/airflow/operators/sql.html
+
+https://stackoverflow.com/questions/60601713/how-to-store-the-sql-query-result-using-airflow-and-use-the-result-in-if-else-co
+
+https://towardsdatascience.com/airflow-sharing-data-between-tasks-7bbaa27eeb1
+
+### XCOM
+https://pythonhosted.org/airflow/concepts.html#xcoms  
+
+https://github.com/airbnb/airflow/blob/master/airflow/example_dags/example_xcom.py
+
+
 <https://stackoverflow.com/questions/62403142/airflow-branchpythonoperator-chaining>
 ```
  think you suggest to use the chain func like this:
