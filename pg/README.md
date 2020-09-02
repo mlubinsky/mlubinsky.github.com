@@ -152,6 +152,8 @@ docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=passwo
 
 <https://github.com/sqitchers/sqitch> Database change management 
 
+### stored procedures
+<https://habr.com/ru/company/ruvds/blog/517302/>
 <https://sivers.org/pg2> stored procedures
 
 <https://news.ycombinator.com/item?id=21362190>
