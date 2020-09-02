@@ -1,3 +1,8 @@
+### GnuPlot
+
+<https://habr.com/ru/company/ruvds/blog/517450/>
+
+
 ### Plotline
 
 <http://haifengl.github.io/vegalite.html>
