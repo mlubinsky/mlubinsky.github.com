@@ -45,7 +45,7 @@ https://paperswithcode.com/
 Lazy eval:
 <https://medium.com/better-programming/how-to-create-lazy-attributes-to-improve-performance-in-python-b369fd72e1b6>
 
-## yeld
+## yield
 
 https://medium.com/better-programming/python-7-advanced-features-that-you-may-not-know-about-generators-574a65fd6e45
 
@@ -106,6 +106,8 @@ pip install ...
 deactivate
 ```
 ## Books
+
+<https://www.amazon.com/Modern-Python-Cookbook-flawless-expressive/dp/180020745X>
 
 <https://pythonbooks.org/>
 
