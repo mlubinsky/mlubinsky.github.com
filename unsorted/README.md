@@ -3,6 +3,8 @@
 
 <https://www.newyorker.com/humor/daily-shouts/i-thought-i-would-have-accomplished-a-lot-more-today-and-also-by-the-time-i-was-thirty-five>
 
+<https://news.ycombinator.com/item?id=24316725> discussion of article above
+
 <https://news.ycombinator.com/item?id=23504089>  The relationship between mindset and age
 
 https://evgeniirudnyi.livejournal.com/
