@@ -20,6 +20,9 @@ https://arxiv.org/abs/1705.07621. Grasshhopper problem
 
 <http://mishadoff.com/blog/what-is-greater-e-pi-or-pi-e/>
 
+
+<https://www.youtube.com/playlist?list=PLoimxvgpOG5K6bfejCpgnpz8--xSDm3n_>
+
 ### Abstract Algebra
 <https://github.com/mavam/abstract-algebra-cheatsheet>
 
