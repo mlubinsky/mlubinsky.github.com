@@ -1,6 +1,9 @@
+## C
 <https://codeplea.com/embedding-files-in-c-programs>
 
 <https://wordsandbuttons.online/SYTYKC.pdf> C
+
+https://news.ycombinator.com/item?id=24361469 . Modern C
 
 <https://johnysswlab.com/the-price-of-dynamic-memory-allocation/> memory allocators
 
