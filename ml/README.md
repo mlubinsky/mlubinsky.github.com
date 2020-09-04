@@ -4,6 +4,8 @@
 
 <https://leimao.github.io/article/>
 
+<https://towardsdatascience.com/stop-one-hot-encoding-your-categorical-variables-bbb0fba89809> One-Hot Encoding
+
 Amazon ML classes:
 <https://www.youtube.com/channel/UC12LqyqTQYbXatYS9AA7Nuw/playlists>
 
