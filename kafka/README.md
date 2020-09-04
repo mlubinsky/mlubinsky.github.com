@@ -1,3 +1,4 @@
+<https://github.com/twmb/kcl> Kafka client
 
 <https://lobste.rs/s/xylmdn/i_m_not_feeling_async_pressure>
 
