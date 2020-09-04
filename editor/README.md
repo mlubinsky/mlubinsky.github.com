@@ -86,6 +86,9 @@ https://stackoverflow.com/questions/18649512/unicodedecodeerror-ascii-codec-cant
 <https://news.ycombinator.com/item?id=21458977>
 
 
+
+https://news.ycombinator.com/item?id=24363225. vim as C++ IDE
+
 ## IntelliJ + Scala
 
 <https://stackoverflow.com/questions/23545476/where-do-i-enter-the-homebrew-scala-path-usr-local-opt-scala-idea-in-intellij?rq=1>
