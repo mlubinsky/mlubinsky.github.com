@@ -1,3 +1,5 @@
+<https://zaiste.net/posts/shell-commands-rust/> many comman line tools in Rust (procs!, fd)
+
 <http://cb.vu/unixtoolbox.xhtml>
 
 <https://neilkakkar.com/unix.html>
