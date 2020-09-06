@@ -28,6 +28,8 @@
 
 <https://github.com/giannitedesco/minotaur>  inotify wrapper
 
+<https://habr.com/ru/post/485236/> . Конфигурационные файлы в Python
+
 ## with
 
 <https://medium.com/better-programming/context-managers-in-python-go-beyond-with-open-as-file-85a27e392114>
@@ -229,6 +231,8 @@ https://habr.com/ru/company/ruvds/blog/485646/ . Python Tips
                 print(future.result())
 		
 ```
+
+### multiprocessing, asyncio
 <http://www.blog.pythonlibrary.org/2016/08/02/python-201-a-multiprocessing-tutorial/>
 
 <https://www.packtpub.com/programming/python-parallel-programming-cookbook> 
@@ -245,10 +249,12 @@ https://habr.com/ru/company/ruvds/blog/485646/ . Python Tips
 
 <https://lucumr.pocoo.org/2020/1/1/async-pressure/>
 
+https://news.ycombinator.com/item?id=24390116
+
 multiprocessing vs threading
 <https://sumit-ghosh.com/articles/multiprocessing-vs-threading-python-data-science/>
 
-<https://habr.com/ru/post/485236/> . Конфигурационные файлы в Python
+
 
 ## Stats / Numpy
 
