@@ -1,6 +1,9 @@
 <https://ru.coursera.org/learn/geometriya-i-gruppy> Геометрия и группы
 Савватеев Алексей Владимирович
 
+
+https://zen.yandex.ru/media/math_notebook/navigator-po-kanalu-5f2427db35aece0c36e9c9db
+
 <https://vk.com/mind_vs_trash>
 
 <https://twitter.com/lisyarus?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor>
