@@ -16,6 +16,8 @@ BuildVersion:	18G95
 
 ### Useful Apps
 
+<https://thume.ca/2020/09/04/macos-tips/>
+
 <https://wiki.nikitavoloboev.xyz/macos/macos-apps>
 
 <https://twitter.com/craigmod/status/1268788533990289409>
