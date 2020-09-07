@@ -6,7 +6,7 @@
  
  <https://mywiki.wooledge.org/BashPitfalls>
  
- shellcheck !!!
+ shellcheck !!! https://github.com/koalaman/shellcheck
  
  ### ENTR GAZE etc
  
