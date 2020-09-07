@@ -1,6 +1,8 @@
 ## C
 <https://github.com/nothings/stb>
 
+<https://github.com/nothings/single_file_libs>
+
 <https://codeplea.com/embedding-files-in-c-programs>
 
 <https://wordsandbuttons.online/SYTYKC.pdf> C
