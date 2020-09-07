@@ -4,6 +4,10 @@
  
  <https://zaiste.net/posts/shell-commands-rust/>
  
+ <https://mywiki.wooledge.org/BashPitfalls>
+ 
+ shellcheck !!!
+ 
  ### ENTR GAZE etc
  
  https://www.reddit.com/r/programming/comments/hbetyd/gaze_a_cli_tool_that_accelerates_your_quick_coding/
