@@ -10,6 +10,8 @@ https://habr.com/ru/company/mailru/blog/513016/
 
 https://habr.com/ru/post/249429/
 
+https://habr.com/ru/company/hsespb/blog/517838/. in C++
+
 ##
 
 https://habr.com/ru/post/516206/. QM article
