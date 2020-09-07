@@ -18,6 +18,8 @@ https://habr.com/ru/post/516206/. QM article
 
 https://habr.com/ru/post/342654/ Autolokebaiya
 
+<https://youtu.be/rO6KySrM1IY> ru
+
 ## So you want to learm physics
 
 <https://vk.com/wall-49014451?own=1> books
