@@ -10,6 +10,8 @@
 
 ## Python plotting
 
+<https://github.com/JetBrains/lets-plot/blob/master/README_PYTHON.md> as ggplot2
+
 <https://soliddata.io/index.php/2020/03/31/how-to-do-data-visualization-with-python/> seaborn
 
 <https://towardsdatascience.com/plotting-with-python-c2561b8c0f1f>
