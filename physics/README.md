@@ -4,6 +4,28 @@
 ## Comp physics
 http://polybook.ru/comma/
 
+## QuTiP QuTiP: Quantum Toolbox in Python
+
+http://qutip.org/docs/latest/index.html
+conda create -n qutip-env
+```
+# To activate this environment, use
+#
+#     $ conda activate qutip-env
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) [~]$ conda env list
+# conda environments:
+#
+base                  *  /Users/mlubinsky/opt/anaconda3
+qutip-env                /Users/mlubinsky/opt/anaconda3/envs/qutip-env
+
+(base) [~]$ conda activate qutip-env
+```
+
 ## Dynamic systems
 
 https://habr.com/ru/company/mailru/blog/513016/
