@@ -1,3 +1,11 @@
+## PG on Mac
+```
+To have launchd start postgresql now and restart at login:
+  brew services start postgresql
+Or, if you don't want/need a background service you can just run:
+  pg_ctl -D /usr/local/var/postgres start
+```  
+
 Postgres in Docker: <https://habr.com/ru/company/qiwi/blog/515692/>
 
 <https://news.ycombinator.com/item?id=22718466> what is schema vs database in Postgres?
