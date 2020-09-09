@@ -120,6 +120,17 @@ https://kakoune.org/
 
 ## VIM
 
+### Plugins
+```
+  mkdir -p ~/.vim/pack/michael/start
+  cd ~/.vim/pack/michael/start
+  git clone https://tpope.io/vim/fugitive.git
+   
+  vim -u NONE -c "helptags fugitive/doc" -c q
+  git clone https://github.com/airblade/vim-gitgutter.git
+  vim -u NONE -c "helptags vim-gitgutter/doc" -c q
+```  
+
 <https://news.ycombinator.com/item?id=24287566>
 ```
 :sp/:vsp, 
