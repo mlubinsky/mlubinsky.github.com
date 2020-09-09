@@ -1,5 +1,7 @@
 <https://datalore.jetbrains.com/> free online jupyter notebook fron jetbrains
 
+<https://araza6.github.io/posts/autodiff/autodiff/> autodiff
+
 <https://www.youtube.com/channel/UCwBs8TLOogwyGd0GxHCp-Dw> AIEngineering
 
 <https://www.youtube.com/channel/UCts-XMcexTiPSR8QbyRGFxA> ML
