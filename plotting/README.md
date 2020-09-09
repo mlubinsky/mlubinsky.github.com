@@ -10,6 +10,8 @@
 
 ## Python plotting
 
+<https://veusz.github.io/> VEUSZ
+
 <https://github.com/JetBrains/lets-plot/blob/master/README_PYTHON.md> as ggplot2
 
 <https://soliddata.io/index.php/2020/03/31/how-to-do-data-visualization-with-python/> seaborn
