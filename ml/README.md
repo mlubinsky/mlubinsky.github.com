@@ -1,3 +1,5 @@
+<https://datalore.jetbrains.com/> free online jupyter notebook fron jetbrains
+
 <https://www.youtube.com/channel/UCwBs8TLOogwyGd0GxHCp-Dw> AIEngineering
 
 <https://www.youtube.com/channel/UCts-XMcexTiPSR8QbyRGFxA> ML
