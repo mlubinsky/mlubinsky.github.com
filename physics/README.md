@@ -4,6 +4,10 @@
 ## Comp physics
 http://polybook.ru/comma/
 
+## QM software
+
+https://news.ycombinator.com/item?id=11985143
+
 https://docs.pybinding.site/en/stable/tutorial/lattice.html
 
 ## QuTiP QuTiP: Quantum Toolbox in Python
