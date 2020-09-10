@@ -113,6 +113,10 @@ deactivate
 
 <https://pythonbooks.org/>
 
+https://www.amazon.com/dp/B085KB31X3/ref=sr_1_6?dchild=1&keywords=Advanced+Python+Development&qid=1599708489&sr=8-6
+
+https://www.amazon.com/Advanced-Python-Development-Real-World-Applications-ebook/dp/B08DMKYTNM/
+
 https://www.amazon.com/Practices-Python-Pro-Dane-Hillard/dp/1617296082
 
 https://www.amazon.com/Serious-Python-Black-Belt-Deployment-Scalability-ebook/dp/B074S4G1L5
