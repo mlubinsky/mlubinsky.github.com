@@ -6,6 +6,8 @@ http://polybook.ru/comma/
 
 ## QM software
 
+https://qosf.org/
+
 https://news.ycombinator.com/item?id=11985143
 
 https://docs.pybinding.site/en/stable/tutorial/lattice.html
