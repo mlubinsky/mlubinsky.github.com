@@ -22,9 +22,13 @@ https://docs.pybinding.site/en/stable/tutorial/lattice.html
 
 ## QuTiP QuTiP: Quantum Toolbox in Python
 
+https://github.com/qutip/qutip-notebooks
+
 http://qutip.org/docs/latest/index.html
-conda create -n qutip-env
+
 ```
+conda create -n qutip-env
+ 
 # To activate this environment, use
 #
 #     $ conda activate qutip-env
