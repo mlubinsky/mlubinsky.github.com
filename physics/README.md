@@ -74,34 +74,13 @@ The following packages will be downloaded:
     ------------------------------------------------------------
                                            Total:        61.8 MB
 
-The following NEW packages will be INSTALLED:
-
-  ca-certificates    conda-forge/osx-64::ca-certificates-2020.6.20-hecda079_0
-  certifi            conda-forge/osx-64::certifi-2020.6.20-py38h32f6830_0
-  libblas            conda-forge/osx-64::libblas-3.8.0-17_openblas
-  libcblas           conda-forge/osx-64::libcblas-3.8.0-17_openblas
-  libcxx             conda-forge/osx-64::libcxx-10.0.1-h5f48129_0
-  libffi             conda-forge/osx-64::libffi-3.2.1-hb1e8313_1007
-  libgfortran        conda-forge/osx-64::libgfortran-4.0.0-3
-  libgfortran4       conda-forge/osx-64::libgfortran4-7.5.0-h1565451_3
-  liblapack          conda-forge/osx-64::liblapack-3.8.0-17_openblas
-  libopenblas        conda-forge/osx-64::libopenblas-0.3.10-openmp_h63d9170_4
-  llvm-openmp        conda-forge/osx-64::llvm-openmp-10.0.1-h28b9765_0
-  ncurses            conda-forge/osx-64::ncurses-6.2-hb1e8313_1
-  numpy              conda-forge/osx-64::numpy-1.19.1-py38h8ccc501_2
-  openssl            conda-forge/osx-64::openssl-1.1.1g-haf1e3a3_1
-  pip                conda-forge/noarch::pip-20.2.3-py_0
-  python             conda-forge/osx-64::python-3.8.5-hfc71d35_7_cpython
-  python_abi         conda-forge/osx-64::python_abi-3.8-1_cp38
-  qutip              conda-forge/osx-64::qutip-4.5.2-py38hcebb5e4_0
-  readline           conda-forge/osx-64::readline-8.0-h0678c8f_2
-  scipy              conda-forge/osx-64::scipy-1.5.2-py38h1402333_0
-  setuptools         conda-forge/osx-64::setuptools-49.6.0-py38h32f6830_0
-  sqlite             conda-forge/osx-64::sqlite-3.33.0-h960bd1c_0
-  tk                 conda-forge/osx-64::tk-8.6.10-hb0a8c7a_0
-  wheel              conda-forge/noarch::wheel-0.35.1-pyh9f0ad1d_0
-  xz                 conda-forge/osx-64::xz-5.2.5-haf1e3a3_1
-  zlib               conda-forge/osx-64::zlib-1.2.11-h7795811_1009
+     conda activate qutip-env
+     conda install -c anaconda ipykernel
+     python -m ipykernel install --user --name=qutip-env
+     jupyter notebook . -- did not work...
+     conda update -n base conda
+     conda install jupyter
+     jupyter notebook
 ```
 
 ## Dynamic systems
