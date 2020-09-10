@@ -4,9 +4,15 @@
 ## Comp physics
 http://polybook.ru/comma/
 
-## QM software
+## Sympy
+
+https://docs.sympy.org/latest/modules/physics/index.html
+
+https://github.com/sympy/quantum_notebooks
 
 https://github.com/sympy/sympy/tree/master/sympy/physics/quantum
+
+## QM software
 
 https://qosf.org/
 
