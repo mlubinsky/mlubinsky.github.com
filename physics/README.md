@@ -6,6 +6,8 @@ http://polybook.ru/comma/
 
 ## QM software
 
+https://github.com/sympy/sympy/tree/master/sympy/physics/quantum
+
 https://qosf.org/
 
 https://news.ycombinator.com/item?id=11985143
