@@ -42,6 +42,24 @@ https://paperswithcode.com/
 <https://paperswithcode.com/paper/causalml-python-package-for-causal-machine> CasualML
 
 
+## Static Method in Python: @staticmethod @classmethod @property
+https://djangocentral.com/classmethod-and-staticmethod-explained/
+https://djangocentral.com/property-decorator-explained/
+
+```
+A @staticmethod is a method that knows nothing about the class or instance it was called on unless explicitly given. It just gets the arguments that were passed, no implicit first argument and It’s definition is immutable via inheritance.
+
+In simpler words a @staticmethod  is nothing more than a regular function defined inside a class that doesn’t have access to the instance therefore It is callable without instantiating the class.
+
+Syntax:
+
+class ClassName:
+    @staticmethod
+    def method_name(arg1, arg2, ...): ...
+We use the @staticmethod decorator for defining a static method in Python, here you can observe that the static method is not taking self as an argument for the method.
+
+```
+
 ## When not to use list
 
 <https://habr.com/ru/company/otus/blog/510350/>.  set() tuple() queue() ... dict()
