@@ -5,12 +5,12 @@
  
 ```
 Server hosting: 
-
+```
 https://dathorn.com/
 Digital Ocean  
 Vultr 
 Linode 
-
+```
 Information Theory, Inference, and Learning Algorithms David  McKay
 https://www.inference.org.uk/itprnn/book.pdf
 
