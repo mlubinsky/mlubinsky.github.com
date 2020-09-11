@@ -12,6 +12,8 @@
 
 <http://www.iakovlev.org/index.html?p=5791&m=1&l1=2> All Python in single page
 
+<https://www.pythonforbeginners.com/basics/most-common-python-interview-questions-for-2020> 
+
 <https://github.com/dabeaz-course/practical-python/blob/main/Notes/Contents.md>
 
 <https://habr.com/ru/post/510294/> better python
