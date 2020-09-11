@@ -113,6 +113,8 @@ deactivate
 
 <https://pythonbooks.org/>
 
+<https://leanpub.com/clean-architectures-in-python>
+
 https://www.amazon.com/dp/B085KB31X3/ref=sr_1_6?dchild=1&keywords=Advanced+Python+Development&qid=1599708489&sr=8-6
 
 https://www.amazon.com/Advanced-Python-Development-Real-World-Applications-ebook/dp/B08DMKYTNM/
