@@ -14,6 +14,12 @@ Linode
 Information Theory, Inference, and Learning Algorithms David  McKay
 https://www.inference.org.uk/itprnn/book.pdf
 
+
+https://www.biorxiv.org/
+
+
+https://www.arxiv.org/
+
 https://www.youtube.com/watch?v=fgp0tKWYQWY implementing regex from scratch
 
 https://pro-prof.com/
