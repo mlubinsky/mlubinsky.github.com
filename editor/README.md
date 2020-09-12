@@ -124,11 +124,17 @@ https://kakoune.org/
 ```
   mkdir -p ~/.vim/pack/michael/start
   cd ~/.vim/pack/michael/start
-  git clone https://tpope.io/vim/fugitive.git
-   
+  
+  git clone https://tpope.io/vim/fugitive.git 
   vim -u NONE -c "helptags fugitive/doc" -c q
+  
+  -- gitgutter
+  
   git clone https://github.com/airblade/vim-gitgutter.git
   vim -u NONE -c "helptags vim-gitgutter/doc" -c q
+  --- inside vim:
+  :GitGutterLineHighlightsEnable
+  :set signcolumn=yes
 ```  
 
 <https://news.ycombinator.com/item?id=24287566>
