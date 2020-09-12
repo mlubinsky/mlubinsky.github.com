@@ -5,7 +5,9 @@ https://www.codementor.io/@ng3687/correlation-matrix-in-excel-python-and-r-1a6i5
 <http://scidavis.sourceforge.net/>
 
 
-<https://github.com/capitanov/dsp-theory> . DSP ins Jupiter
+<https://github.com/capitanov/dsp-theory> . DSP ins Jupiter (ru)
+
+https://diegoinacio.github.io/computer-vision-notebooks/ Comp vision, DSP and ML
 
 <https://ljvmiranda921.github.io/notebook/2020/03/16/jupyter-notebooks-in-2020-part-2/>
 
