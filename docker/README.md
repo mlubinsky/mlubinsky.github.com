@@ -1,3 +1,5 @@
+<https://www.pybootcamp.com/blog/how-to-containerize-python-application/>
+
 ```
 docker run -it  -v /Users/miclub01/GIT/FORK/pelion-ml-demo:/mnt/host mbedos/mbed-os-env /bin/bash
 ```
