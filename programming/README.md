@@ -10,6 +10,8 @@ https://dathorn.com/
 Digital Ocean  
 Vultr 
 Linode 
+Heroku https://medium.com/@henson.casper/how-to-publish-your-first-python-app-on-heroku-6af91c5bb138\
+https://stackoverflow.com/questions/61998739/heroku-or-digital-ocean-deployment
 ```
 Information Theory, Inference, and Learning Algorithms David  McKay
 https://www.inference.org.uk/itprnn/book.pdf
