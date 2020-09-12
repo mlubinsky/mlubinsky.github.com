@@ -120,6 +120,8 @@ https://kakoune.org/
 
 ## VIM
 
+https://www.youtube.com/watch?v=Gs1VDYnS-Ac
+
 ### Plugins
 ```
   mkdir -p ~/.vim/pack/michael/start
