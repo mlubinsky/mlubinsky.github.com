@@ -20,6 +20,12 @@ https://news.ycombinator.com/item?id=11985143
 
 https://docs.pybinding.site/en/stable/tutorial/lattice.html
 
+https://pymatgen.org/ .  (Python Materials Genomics) is a robust, open-source Python library for materials analysis. These are some of the main features:
+
+https://cadabra.science/tutorials.html
+
+http://www.shengbte.org/
+
 ## QuTiP QuTiP: Quantum Toolbox in Python
 
 https://github.com/qutip/qutip-notebooks
