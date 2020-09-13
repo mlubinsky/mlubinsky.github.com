@@ -1,5 +1,7 @@
 https://habr.com/ru/company/ruvds/blog/515258/. Algorithms
 
+https://github.com/alexeygrigorev/data-science-interviews . 
+
 https://youtu.be/lbcswonQmGs selection sort
 
 https://mitmath.github.io/18S191/Fall20/ . Computansional thinking using Julia
