@@ -14,6 +14,8 @@ https://github.com/sympy/sympy/tree/master/sympy/physics/quantum
 
 ## QM software
 
+https://sourceforge.net/projects/quantx/
+
 https://qosf.org/
 
 https://news.ycombinator.com/item?id=11985143
