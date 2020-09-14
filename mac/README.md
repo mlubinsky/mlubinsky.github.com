@@ -5,7 +5,14 @@ ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
 
+### Setup
+
+<https://lobste.rs/s/uzdehw/what_should_i_do_after_getting_my_first_own>
+
 ### Python setup
+
+<https://hackercodex.com/guide/python-development-environment-on-mac-osx/>
+
 <https://gist.github.com/chris-zen/9e61db6924bd37fbe414f648614ca4c5>
 
 ### Mac shortcuts
