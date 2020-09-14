@@ -15,6 +15,8 @@ https://exploringjs.com/deep-js/ . Book
 
 <https://habr.com/ru/post/472816/> JS patterns
 
+<https://www.taniarascia.com/asynchronous-javascript-event-loop-callbacks-promises-async-await/>
+
 <https://fullstackopen.com/en/> 
 
 <https://habr.com/ru/post/485294/> .  NodeJS in 2020 free russian cource
