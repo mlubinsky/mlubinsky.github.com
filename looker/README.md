@@ -102,13 +102,13 @@ Where in this example they are pointing the filter to a field called 'Count' in 
  SELECT 
 …
  WHERE
-        {% condition filter_name %} database_field_name {% endcondition %}
+        {  condition filter_name  } database_field_name { endcondition  }
 UNION ALL
 
 SELECT
 …
  WHERE
-        {% condition filter_name %} database_field_name {% endcondition %}
+        {  condition filter_name  } database_field_name {  endcondition  }
 UNION ALL
 ;;
 
