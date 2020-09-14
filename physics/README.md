@@ -1,6 +1,8 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 
+<https://en.wikipedia.org/wiki/Boris_Altshuler>
+
 ## Comp physics
 http://polybook.ru/comma/
 
