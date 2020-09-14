@@ -9,6 +9,8 @@ BuildVersion:	18G95
 
 <https://lobste.rs/s/uzdehw/what_should_i_do_after_getting_my_first_own>
 
+https://kapeli.com/dash
+
 ### Python setup
 
 <https://hackercodex.com/guide/python-development-environment-on-mac-osx/>
