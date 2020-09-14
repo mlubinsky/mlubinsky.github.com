@@ -4,6 +4,8 @@
 <https://en.wikipedia.org/wiki/Boris_Altshuler>
 
 ## Comp physics
+
+https://www.nature.com/articles/s42003-019-0715-9 . chaotic systems
 http://polybook.ru/comma/
 
 ## Sympy
