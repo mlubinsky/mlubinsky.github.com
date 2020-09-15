@@ -19,6 +19,9 @@ https://github.com/krlvi/jar-graph. Java
 Regular Expression:
 <https://blog.robertelder.org/regular-expression-visualizer/>
 
+## Parsers
+https://tratt.net/laurie/blog/entries/which_parsing_approach.html
+
 Better, Fewer, Syntax Errors for LR Parsers:
 
 <https://soft-dev.org/pubs/html/diekmann_tratt__dont_panic/>
