@@ -3,6 +3,9 @@
 
 <https://en.wikipedia.org/wiki/Boris_Altshuler>
 
+## Solid state phys
+https://teach-in.ru/file/synopsis/pdf/ofksv-M.pdf
+
 https://teach-in.ru/lecture/10_24_Khokhlov . Основы физики конденсированного состояния вещества
 
 ## Comp physics
