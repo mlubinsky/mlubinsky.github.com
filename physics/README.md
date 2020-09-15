@@ -3,6 +3,8 @@
 
 <https://en.wikipedia.org/wiki/Boris_Altshuler>
 
+https://teach-in.ru/lecture/10_24_Khokhlov . Основы физики конденсированного состояния вещества
+
 ## Comp physics
 
 https://www.nature.com/articles/s42003-019-0715-9 . chaotic systems
