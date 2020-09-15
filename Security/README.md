@@ -1,6 +1,9 @@
 ## Wi-Fi explained and tools 
 <https://habr.com/ru/company/comptek/blog/467587/>
 
+
+https://howhttps.works/
+
 ## Auth
 
 https://gravitational.com/blog/everything-you-need-to-know-about-oauth/
