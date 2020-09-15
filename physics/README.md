@@ -3,6 +3,8 @@
 
 <https://en.wikipedia.org/wiki/Boris_Altshuler>
 
+http://sadovski.iep.uran.ru/RUSSIAN/LTF/sumsch_c_files/PDF/Altshuler_1.pdf
+
 ## Solid state phys
 https://teach-in.ru/file/synopsis/pdf/ofksv-M.pdf
 
