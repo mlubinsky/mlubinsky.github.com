@@ -27,6 +27,8 @@ https://nordicapis.com/the-difference-between-http-auth-api-keys-and-oauth/
 
 ## TLS
 
+how TLS works: <https://habr.com/ru/company/plesk/blog/507094/>
+
 <https://habr.com/ru/company/qrator/blog/474832/> Как работает криптография на основе эллиптических кривых 
 <https://mcuoneclipse.com/2017/04/14/introduction-to-security-and-tls-transport-security-layer/>
 
