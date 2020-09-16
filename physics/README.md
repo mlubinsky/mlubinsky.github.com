@@ -1,5 +1,8 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+## QM
+
+https://www.reddit.com/r/quantum/comments/iqzrx8/quantum_mechanics_course/
 
 <https://en.wikipedia.org/wiki/Boris_Altshuler>
 
