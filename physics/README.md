@@ -1,5 +1,13 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+
+### Articles
+https://arxiv.org/abs/2009.06302 what is temperature?
+
+https://arxiv.org/abs/2009.05844 classic mechanics and electromagnetism
+
+https://arxiv.org/abs/2009.06706 Tutorial on the Classical Theories of Electromagnetic Scattering and Diffraction
+
 ## QM
 
 https://www.reddit.com/r/quantum/comments/iqzrx8/quantum_mechanics_course/
