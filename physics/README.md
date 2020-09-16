@@ -57,6 +57,7 @@ http://www.shengbte.org/
 https://en.wikipedia.org/wiki/List_of_quantum_chemistry_and_solid-state_physics_software
 
 ## QuTiP QuTiP: Quantum Toolbox in Python
+https://jrjohansson.github.io/computing.html
 
 https://github.com/qutip/qutip-notebooks
 
