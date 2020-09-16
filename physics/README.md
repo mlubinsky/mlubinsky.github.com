@@ -63,6 +63,8 @@ https://github.com/qutip/qutip-notebooks
 
 http://qutip.org/docs/latest/index.html
 
+https://www.gited.io/course/64
+
 ```
 conda create -n qutip-env
  
