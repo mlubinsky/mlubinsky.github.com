@@ -20,11 +20,13 @@ Regular Expression:
 <https://blog.robertelder.org/regular-expression-visualizer/>
 
 ## Parsers
+
+https://stackoverflow.com/questions/5975741/what-is-the-difference-between-ll-and-lr-parsing
+
 https://tratt.net/laurie/blog/entries/which_parsing_approach.html
 
 https://matklad.github.io/2018/06/06/modern-parser-generator.html
-
-https://stackoverflow.com/questions/5975741/what-is-the-difference-between-ll-and-lr-parsing
+ 
 
 Better, Fewer, Syntax Errors for LR Parsers:
 
