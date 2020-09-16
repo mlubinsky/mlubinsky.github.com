@@ -38,6 +38,8 @@ https://github.com/sympy/sympy/tree/master/sympy/physics/quantum
 
 ## QM software
 
+http://amcdawes.com/QMlabs/
+
 https://sourceforge.net/projects/quantx/
 
 https://qosf.org/
