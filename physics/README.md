@@ -32,6 +32,8 @@ https://docs.sympy.org/latest/modules/physics/index.html
 
 https://github.com/sympy/quantum_notebooks
 
+https://chemistry.coe.edu/piper/public/pages/quantum-calcs-sympy/
+
 https://github.com/sympy/sympy/tree/master/sympy/physics/quantum
 
 ## QM software
