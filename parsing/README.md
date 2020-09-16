@@ -27,6 +27,7 @@ https://tratt.net/laurie/blog/entries/which_parsing_approach.html
 
 https://matklad.github.io/2018/06/06/modern-parser-generator.html
  
+https://news.ycombinator.com/item?id=24480504 
 
 Better, Fewer, Syntax Errors for LR Parsers:
 
