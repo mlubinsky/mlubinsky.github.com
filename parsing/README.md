@@ -35,6 +35,8 @@ https://rust-analyzer.github.io/blog/2020/09/16/challeging-LR-parsing.html
  
 https://news.ycombinator.com/item?id=24480504 
 
+https://www.drdobbs.com/cpp/building-your-own-c-interpreter/184408184
+
 Better, Fewer, Syntax Errors for LR Parsers:
 
 <https://soft-dev.org/pubs/html/diekmann_tratt__dont_panic/>
