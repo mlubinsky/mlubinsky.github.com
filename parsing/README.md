@@ -26,6 +26,8 @@ https://stackoverflow.com/questions/5975741/what-is-the-difference-between-ll-an
 https://tratt.net/laurie/blog/entries/which_parsing_approach.html
 
 https://matklad.github.io/2018/06/06/modern-parser-generator.html
+
+https://rust-analyzer.github.io/blog/2020/09/16/challeging-LR-parsing.html
  
 https://news.ycombinator.com/item?id=24480504 
 
