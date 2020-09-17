@@ -8,6 +8,11 @@ https://arxiv.org/abs/2009.05844 classic mechanics and electromagnetism
 
 https://arxiv.org/abs/2009.06706 Tutorial on the Classical Theories of Electromagnetic Scattering and Diffraction
 
+### Renormalization
+https://www.quantamagazine.org/how-renormalization-saved-particle-physics-20200917/
+
+https://news.ycombinator.com/item?id=24504537
+
 ## QM
 
 https://www.reddit.com/r/quantum/comments/iqzrx8/quantum_mechanics_course/
