@@ -21,6 +21,10 @@ Regular Expression:
 
 ## Parsers
 
+https://github.com/gnebehay/parser  A Handwritten Math Parser in 100 lines of Python
+
+https://news.ycombinator.com/item?id=24502293
+
 https://stackoverflow.com/questions/5975741/what-is-the-difference-between-ll-and-lr-parsing
 
 https://tratt.net/laurie/blog/entries/which_parsing_approach.html
