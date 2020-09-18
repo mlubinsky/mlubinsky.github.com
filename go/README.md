@@ -1,3 +1,5 @@
+https://www.ardanlabs.com/blog/2020/09/using-python-memory.html. Go + Python
+
 <https://go101.org/article/101.html> 
 
 <https://news.ycombinator.com/item?id=22892639>  Go to write production-grade back end services
