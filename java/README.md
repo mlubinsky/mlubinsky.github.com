@@ -6,6 +6,8 @@
  
  <https://habr.com/ru/post/510618/> Java Memory Model
  
+ https://medium.com/javarevisited/java-concurrency-java-memory-model-96e3ac36ec6b Java Memory Model
+ 
  <https://habr.com/ru/company/otus/blog/478584/> . JVM internals
  
  <https://habr.com/ru/company/domclick/blog/500646/> Java bytecode internals
