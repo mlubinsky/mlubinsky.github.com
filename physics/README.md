@@ -147,6 +147,8 @@ The following packages will be downloaded:
 
 ## Dynamic systems
 
+https://github.com/hsayama/PyCX
+
 https://habr.com/ru/company/mailru/blog/513016/
 
 https://habr.com/ru/post/249429/
