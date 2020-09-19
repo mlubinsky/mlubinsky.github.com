@@ -1,5 +1,7 @@
 <https://www.shinkareff.ru/pervaya-meditsinskaya-pomoshh-v-avtonomn/> 1st aid
 
+https://www.youtube.com/watch?v=KTcKOwMX7ew. Testteron
+
 <https://zdorov.d3.ru/proshu-pomoch-sobrat-aptechku-v-pokhod-2028425/?sorting=rating>
 
 <https://postnauka.ru/video/154976> blood pressure
