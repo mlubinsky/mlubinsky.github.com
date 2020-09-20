@@ -13,6 +13,10 @@ https://rotemtam.com/2020/08/13/python-ast/. Python
 https://github.com/krlvi/jar-graph. Java
 
 
+## SAT solvers
+
+https://codingnest.com/modern-sat-solvers-fast-neat-underused-part-1-of-n/
+
 ## JIT
 <https://habr.com/ru/company/mailru/blog/513290/>
 
