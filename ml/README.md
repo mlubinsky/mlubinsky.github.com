@@ -1,3 +1,7 @@
+#### Julia ML 
+https://sciml.ai/
+
+
 <https://datalore.jetbrains.com/> free online jupyter notebook fron jetbrains
 
 <https://araza6.github.io/posts/autodiff/autodiff/> autodiff
