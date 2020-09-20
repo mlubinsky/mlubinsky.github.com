@@ -1,3 +1,5 @@
+ https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997. Effective Java 3rd ed Joshua Bloch
+ 
  <https://medium.com/@leventov/smoothiemap-2-the-lowest-memory-hash-table-ever-6bebd06780a3> .   Hash Tables comparisons
  
  <https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-14/>
@@ -13,6 +15,8 @@
  <https://habr.com/ru/company/domclick/blog/500646/> Java bytecode internals
  
  <https://www.youtube.com/watch?v=RtHA1YVLW5Y> JVM does this?
+ 
+ <https://www.youtube.com/watch?v=yhguOt863nw>. Java concurrency
  
  <https://jokerconf.com/2019/talks/> . Java Conf
  
