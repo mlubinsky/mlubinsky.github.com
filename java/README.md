@@ -18,6 +18,8 @@
  
  <https://www.youtube.com/watch?v=yhguOt863nw>. Java concurrency
  
+ <https://www.baeldung.com/>
+ 
  <https://jokerconf.com/2019/talks/> . Java Conf
  
  <https://youtu.be/qurG_J81_Cs> Pattern matching
