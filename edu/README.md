@@ -1,3 +1,5 @@
+https://mipt.ru/online/
+
 https://habr.com/ru/company/avito/blog/499458/
 
 https://www.youtube.com/channel/UCimGOl6wSQWDbBFoVMQGzMg/featured MSU lectures
