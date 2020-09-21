@@ -1,7 +1,9 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
-
+https://www.youtube.com/watch?v=gAFAj3pzvAA  QM map
 https://textbooks.opensuny.org/browse-by-subject/. free books
+
+https://www.youtube.com/watch?v=gAFAj3pzvAAhttps://www.youtube.com/watch?v=gAFAj3pzvAA
 
 ### Articles
 https://arxiv.org/abs/2009.06302 what is temperature?
