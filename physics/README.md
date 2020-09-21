@@ -1,6 +1,8 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 https://www.youtube.com/watch?v=gAFAj3pzvAA  QM map
+
+https://www.sicyon.com/resources/library/index.htm books
 https://textbooks.opensuny.org/browse-by-subject/. free books
 
 https://www.youtube.com/watch?v=gAFAj3pzvAAhttps://www.youtube.com/watch?v=gAFAj3pzvAA
