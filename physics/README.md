@@ -2,7 +2,12 @@
 
 https://www.youtube.com/watch?v=gAFAj3pzvAA  QM map
 
+## BOOKS
+
+http://nuclphys.sinp.msu.ru/books/qm/index.html
+
 https://www.sicyon.com/resources/library/index.htm books
+
 https://textbooks.opensuny.org/browse-by-subject/. free books
 
 https://www.youtube.com/watch?v=gAFAj3pzvAAhttps://www.youtube.com/watch?v=gAFAj3pzvAA
