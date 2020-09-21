@@ -8,9 +8,14 @@ http://nuclphys.sinp.msu.ru/books/qm/index.html
 
 https://www.sicyon.com/resources/library/index.htm books
 
+https://phys.vsu.ru/thp/feed.html
+
+
 https://textbooks.opensuny.org/browse-by-subject/. free books
 
-https://www.youtube.com/watch?v=gAFAj3pzvAAhttps://www.youtube.com/watch?v=gAFAj3pzvAA
+https://www.youtube.com/watch?v=gAFAj3pzvAA
+
+ 
 
 ### Articles
 https://arxiv.org/abs/2009.06302 what is temperature?
