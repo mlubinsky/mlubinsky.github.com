@@ -10,6 +10,9 @@
 
 <https://www.vaishalilambe.com/blog/learning-time-series-analysis-forecasting-phase-1>
 
+https://github.com/alan-turing-institute/sktime . SkTime - time series analysis
+
+https://news.ycombinator.com/item?id=24541487 . SkTime - time series analysis
 
 <https://medium.com/@michalchromcak/hcrystalball-a-unified-interface-to-time-series-forecasting-6fb57384ad57> 
 
