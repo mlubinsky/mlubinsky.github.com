@@ -1,3 +1,6 @@
+
+https://habr.com/ru/company/lamoda/blog/518620/
+
 <https://diogoalexandrefranco.github.io/about-airflow-date-macros-ds-and-execution-date/>
 
 
