@@ -79,6 +79,9 @@ Null hypotesis: Conversion rates are the same
 ## Code (SQL)
 
 ### z-score = (x - μ / σ)
+
+https://hakibenita.com/sql-anomaly-detection
+
 <http://www.silota.com/docs/recipes/sql-z-score.html>
 
 z-score for a set of values by subtracting the average
