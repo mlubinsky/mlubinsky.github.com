@@ -1,6 +1,7 @@
 #### Julia ML 
 https://sciml.ai/
 
+https://dafriedman97.github.io/mlbook/content/introduction.html book
 
 https://habr.com/ru/post/520204/ Decision Tree
 
