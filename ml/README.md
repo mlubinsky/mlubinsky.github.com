@@ -2,6 +2,8 @@
 https://sciml.ai/
 
 
+https://habr.com/ru/post/520204/ Decision Tree
+
 <https://datalore.jetbrains.com/> free online jupyter notebook fron jetbrains
 
 <https://araza6.github.io/posts/autodiff/autodiff/> autodiff
