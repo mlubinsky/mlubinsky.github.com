@@ -16,6 +16,29 @@ measure: total_gross_margin_percentage {
 ```
 Where we're performing arithmancy in the sql
 
+
+https://discourse.looker.com/t/rows-to-columns/3992
+
+```
+view: xxx {
+  derived_table: {
+    sql: {
+       SELECT 
+          id
+          , CASE WHEN custom_field = 'Type' then text_value ELSE NULL END as type
+          , CASE WHEN custom_field = 'Department' then text_value ELSE NULL END as department
+      FROM xxx
+      GROUP BY 1,2,3
+      ;;
+    }
+  }
+   
+  dimension: id {}
+  dimension: type {} 
+  dimension: department {}
+}
+```
+
 ## Pivot
 And our table calc will be a bit different. The new syntax will be:
 
