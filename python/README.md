@@ -1,5 +1,6 @@
 <https://snarky.ca/why-you-should-use-python-m-pip/>.  python -m pip
 
+https://news.ycombinator.com/item?id=24565499. python internals
 
 
 ### Install python on Mac: 
