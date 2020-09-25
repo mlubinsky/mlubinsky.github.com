@@ -8,6 +8,8 @@
 
 https://stackoverflow.com/questions/64055906/how-to-combine-2-sqls-into-single-sql
 
+https://mathoverflow.net/questions/372543/new-k-samples-added-to-set-calculate-new-stddev-given-the-old-avg-stddev-and-s
+
 https://math.stackexchange.com/questions/3839472/new-k-samples-added-calculate-new-stddev-given-old-avg-stddev-and-sample-size
 
 ## First_ROW 
