@@ -5,6 +5,14 @@ https://news.ycombinator.com/item?id=23096166
 ### OAuth 2
 https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5
 
+#### How to manage ssh keys
+
+https://www.paepper.com/blog/posts/how-to-properly-manage-ssh-keys-for-server-access/
+
+### VSCode via SSH
+
+https://jlelse.blog/dev/code-using-vps/
+
 # cURL and SSH , detach from terminal
 
 ### Ctrl-Z bg fg jobs disown 
