@@ -19,8 +19,12 @@ https://www.inference.org.uk/itprnn/book.pdf
 
 https://www.biorxiv.org/
 
-
 https://www.arxiv.org/
+
+### CRDT. 
+https://josephg.com/blog/crdts-are-the-future/
+
+https://news.ycombinator.com/item?id=24617542
 
 https://www.youtube.com/watch?v=fgp0tKWYQWY implementing regex from scratch
 
