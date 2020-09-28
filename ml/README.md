@@ -1,6 +1,8 @@
 #### Julia ML 
 https://sciml.ai/
 
+Eugenevectors /values : numpy + mathplotlib https://www.paepper.com/blog/posts/eigenvectors_eigenvalues_machine_learning/
+
 https://dafriedman97.github.io/mlbook/content/introduction.html book
 
 https://habr.com/ru/post/520204/ Decision Tree
