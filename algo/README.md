@@ -1,5 +1,9 @@
 https://habr.com/ru/company/ruvds/blog/515258/. Algorithms
 
+https://www.advancedalgorithms.com/ru. Advanced algo (ru)
+
+https://compsciclub.ru/
+
 https://github.com/alexeygrigorev/data-science-interviews . 
 
 https://habr.com/ru/company/tensor/blog/518726/. Prefix Trie
