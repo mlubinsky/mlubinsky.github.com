@@ -12,6 +12,19 @@ https://rotemtam.com/2020/08/13/python-ast/. Python
 
 https://github.com/krlvi/jar-graph. Java
 
+## Create Prog languages
+
+http://createyourproglang.com/
+
+https://youtu.be/flVqPLkIK-E  How to Create Your Own Programming Language -Part 1- Paradigm, Roadmap and Tools
+
+## Create Prog languages
+https://cuelang.org/ Validate, define, and use dynamic and text-based data
+
+https://koka-lang.github.io/koka/doc/kokaspec.html
+
+picat-lang.org https://news.ycombinator.com/item?id=24608997
+
 
 ## SAT solvers
 
