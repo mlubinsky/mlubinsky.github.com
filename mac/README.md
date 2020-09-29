@@ -33,6 +33,8 @@ https://github.com/gchq/CyberChef
 
 ### Useful Apps
 
+https://github.com/muesli/duf disk usage 
+
 https://cyberduck.io/
 
 https://devutils.app
