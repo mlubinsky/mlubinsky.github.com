@@ -23,7 +23,25 @@ https://kapeli.com/dash
 
 <https://news.ycombinator.com/item?id=24091707>
 
+
+
+### CyberChef
+https://gchq.github.io/CyberChef
+
+https://github.com/gchq/CyberChef
+
+
 ### Useful Apps
+
+https://cyberduck.io/
+
+https://devutils.app
+
+https://apps.apple.com/us/app/boop/id1518425043?mt=12 Boop
+
+http://ridiculousfish.com/hexfiend/
+
+<https://news.ycombinator.com/item?id=24604291>
 
 <https://thume.ca/2020/09/04/macos-tips/>
 
