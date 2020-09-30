@@ -2,8 +2,10 @@
 https://habr.com/ru/company/lamoda/blog/518620/
 
 <https://diogoalexandrefranco.github.io/about-airflow-date-macros-ds-and-execution-date/>
-
-
+```
+{{ ds }} The execution date of the running DAG as YYYY-MM-DD
+{{ macros.ds_add(ds, 5) }} add 5 days
+```
 <https://airflow.apache.org/docs/stable/scheduler.html#scheduling-triggers>
 
 ```  
@@ -204,7 +206,7 @@ Airflow’s usage pattern is to extract data, save it somewhere like S3, then pa
 <https://airflow.apache.org/docs/stable/faq.html>
  By design, an Airflow DAG will execute at the completion of its schedule_interval.
 
-The Airflow scheduler triggers the task soon after the start_date + schedule_interval is passed.
+## The Airflow scheduler triggers the task soon after the start_date + schedule_interval is passed.
 
 The default schedule_interval is one day (datetime.timedelta(1)). 
 You must specify a different schedule_interval directly to the DAG object you instantiate
