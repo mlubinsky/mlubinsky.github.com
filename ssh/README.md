@@ -111,6 +111,9 @@ Pexpect allows your script to spawn a child application and control it as if a h
 <https://github.com/fgimian/paramiko-expect>
 
 ## SSH 
+
+https://gravitational.com/blog/ssh-config/ 
+
 <https://smallstep.com/blog/ssh-tricks-and-tips/>
 
 <https://news.ycombinator.com/item?id=23025756>
