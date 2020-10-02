@@ -11,6 +11,15 @@ BuildVersion:	18G95
 
 https://kapeli.com/dash
 
+### Chrome extensions
+The great suspender
+
+chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=The%20Great%20Suspender%20-%20Chrome%20Web%20Store&pos=0&uri=https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg/related
+
+The session Buddy
+
+chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=Session%20Buddy%20-%20Chrome%20Web%20Store&pos=0&uri=https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko/related
+
 ### Python setup
 
 <https://hackercodex.com/guide/python-development-environment-on-mac-osx/>
