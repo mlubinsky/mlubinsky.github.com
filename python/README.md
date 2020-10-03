@@ -3,7 +3,14 @@
 https://news.ycombinator.com/item?id=24565499. python internals
 
 ## Docker vs virtualenv
+
 https://www.codementor.io/@adrianogalello/quit-virtualenv-and-use-docker-1at0e0olud
+
+https://pythonspeed.com/articles/activate-virtualenv-dockerfile/
+
+https://www.thoughtworks.com/insights/blog/reproducible-work-environments-using-docker
+
+https://medium.com/@stephen.odaibo/docker-containers-python-virtual-environments-virtual-machines-d00aa9b8475
 
 
 ### Install python on Mac: 
