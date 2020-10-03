@@ -35,6 +35,8 @@ Amazon ML classes:
 
 <https://github.com/pycaret/pycaret> PyCaret
 
+https://news.ycombinator.com/item?id=24671525   igel (like PyCaret)
+
 <https://twitter.com/ComputingByArts> Michael Bukatin
 
 <https://machine-learning-with-python.readthedocs.io/en/latest/>
