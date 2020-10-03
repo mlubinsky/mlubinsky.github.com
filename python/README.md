@@ -4,6 +4,8 @@ https://news.ycombinator.com/item?id=24565499. python internals
 
 ## Docker vs virtualenv
 
+https://sourcery.ai/blog/python-docker/
+
 https://www.codementor.io/@adrianogalello/quit-virtualenv-and-use-docker-1at0e0olud
 
 https://pythonspeed.com/articles/activate-virtualenv-dockerfile/
