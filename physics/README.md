@@ -2,6 +2,8 @@
 
 https://www.youtube.com/watch?v=gAFAj3pzvAA  QM map
 
+https://www.youtube.com/watch?v=rFKUs2PeRLU Симметрия в физике,
+
 ## BOOKS
 
 http://nuclphys.sinp.msu.ru/books/qm/index.html
