@@ -37,18 +37,27 @@ source ide_virtual_env/bin/activate
 cd ~/CODE/GIT/data-processing
 ./pants lint binary src/main/python:roku-dag-bag
 
-
+Copy to server
 scp dist/roku-dag-bag.pex data-processing-dev-emr-5-21.bdp.roku.com:/tmp/mlubinsky/
 or
 scp dist/roku-dag-bag.pex 10.220.11.182:/tmp/mlubinsky/
 
-
-ssh data-processing-dev-emr-5-21.bdp.roku.com
+This script does it:
+cat c
+------
+./pants lint binary src/main/python:roku-dag-bag
+status=$?
+echo "status=$status"
+[ $status -eq 0 ]  || exit 1
+scp dist/roku-dag-bag.pex data-processing-dev-emr-5-21.bdp.roku.com:/tmp/mlubinsky/
+-------
 ```
 
 ### Start Airflow DEV SERVER
 
 ```
+ssh data-processing-dev-emr-5-21.bdp.roku.com
+
 Observe that the airflow process usuallly looks like:
 nohup airflow webserver -p ${PORT} --pid /tmp/airflow${PORT}.pid
 
