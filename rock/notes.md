@@ -46,16 +46,12 @@ scp dist/roku-dag-bag.pex 10.220.11.182:/tmp/mlubinsky/
 ssh data-processing-dev-emr-5-21.bdp.roku.com
 ```
 
-### Airflow
+### Start Airflow DEV SERVER
 
 ```
- kill -9 24644
-[1]+  Done(1)                 nohup airflow webserver -p ${PORT} --pid /tmp/airflow${PORT}.pid
+Observe that the airflow process usuallly looks like:
+nohup airflow webserver -p ${PORT} --pid /tmp/airflow${PORT}.pid
 
-
-schedule_interval='30 10 * * *',
-
-schedule_interval='9 0,8 * * *’    “At minute 9 past hour 0 and 8.”
 
 
 Start Airflow on    free port (once)
@@ -83,6 +79,14 @@ nohup airflow webserver -p ${PORT} --pid /tmp/airflow${PORT}.pid &
 tail -f /home/airflow/nohup.out
 
 http://data-processing-dev-emr-5-21.bdp.roku.com:${PORT}/admin/
+```
+
+### Run Airflow DEV DAG
+```
+schedule_interval='30 10 * * *',
+
+schedule_interval='9 0,8 * * *’    “At minute 9 past hour 0 and 8.”
+
 
 “Rendered” button shows the source code for the task - check it.
 
@@ -114,8 +118,6 @@ Prepare backfill command
       'CON_ux_agg', args=args, schedule_interval='9 0,8 * * *')
 
 
-
-
 Use https://crontab.guru/ to populate backfill date
 
 1) Mark all previous steps for the tested task in DAG as complete to speed up: 
@@ -132,15 +134,6 @@ select date_key, count(*) from roku.fact_device_ux_logs
 where event_type like 'cfui%'
 group by date_key;
 
-
-
-		   DEA-9486  https://gitlab.eng.roku.com/dea/data-processing/merge_requests/7671
-		   DEA-9485 https://gitlab.eng.roku.com/dea/data-processing/merge_requests/7669
-		   DEA-9489 https://gitlab.eng.roku.com/dea/data-processing/merge_requests/7677
-		   DEA-9508 https://gitlab.eng.roku.com/dea/data-processing/merge_requests/7694
-		   DEA-9520  https://gitlab.eng.roku.com/dea/data-processing/merge_requests/7697
-		   DEA-9517 https://gitlab.eng.roku.com/dea/data-processing/merge_requests/7696
-		   DEA-9492 https://gitlab.eng.roku.com/dea/data-processing/merge_requests/7679
 ```
 ### SCP
 ```
