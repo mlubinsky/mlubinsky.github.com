@@ -19,26 +19,18 @@ $ git checkout DEA-xxxx
 $ git pull origin master
 ```
 
-### Airflow
-
+### Development Hive table:
 ```
- kill -9 24644
-[1]+  Done(1)                 nohup airflow webserver -p ${PORT} --pid /tmp/airflow${PORT}.pid
-
-
-schedule_interval='30 10 * * *',
-
-schedule_interval='9 0,8 * * *’    “At minute 9 past hour 0 and 8.”
-
-Development Hive table:
-LOCATION 's3://roku-dea-dev/sand-box/roku-data-warehouse/roku/dimensions/dim_experiment' ;
+LOCATION 's3://roku-dea-dev/sand-box/roku-data-warehouse/roku/dimensions/dim_experiment' 
 Should be:
 [s3://roku-data-warehouse/roku/dimensions/dim_experiment]
 
 Table name in dev:
 sbschema.roku_<table>
+```
 
-————
+### Build locally and scp to server
+```
 cd ~
 source ide_virtual_env/bin/activate  
 
@@ -52,6 +44,18 @@ scp dist/roku-dag-bag.pex 10.220.11.182:/tmp/mlubinsky/
 
 
 ssh data-processing-dev-emr-5-21.bdp.roku.com
+```
+
+### Airflow
+
+```
+ kill -9 24644
+[1]+  Done(1)                 nohup airflow webserver -p ${PORT} --pid /tmp/airflow${PORT}.pid
+
+
+schedule_interval='30 10 * * *',
+
+schedule_interval='9 0,8 * * *’    “At minute 9 past hour 0 and 8.”
 
 
 Start Airflow on    free port (once)
@@ -60,17 +64,15 @@ sudo chpst -u airflow -e /etc/sv/airflow-service-env sh
 source /opt/airflow/airflow-virtual-env/bin/activate
 
 export PORT=2200
-
 export PORT=2290
-
 export PORT=2299
-
 export PORT=2294
-
 export PORT=2300
+
 ps -ef | grep airflow | grep pid | grep $PORT
 
-# check what port is not in use:
+check what port is not in use:
+
 lsof -i -P -n | grep LISTEN | grep $PORT
 ls /tmp/airflow${PORT}.pid
 
