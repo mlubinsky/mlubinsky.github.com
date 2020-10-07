@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=eoOhIRpTI0I
+
 <https://www.shinkareff.ru/pervaya-meditsinskaya-pomoshh-v-avtonomn/> 1st aid
 
 https://www.youtube.com/watch?v=KTcKOwMX7ew. Testteron
