@@ -6,6 +6,8 @@ https://www.youtube.com/watch?v=rFKUs2PeRLU Симметрия в физике,
 
 https://www.youtube.com/watch?v=bUfcVTIlJz0 Green function
 
+https://www.youtube.com/watch?v=UwwBG-MbniY. Thinking fast and slow (Daniel Kahneman - Lex Fridman)
+
 ## BOOKS
 
 http://nuclphys.sinp.msu.ru/books/qm/index.html
