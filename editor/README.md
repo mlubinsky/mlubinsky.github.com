@@ -1,3 +1,7 @@
+## Vimium
+
+<https://codefaster.substack.com/p/look-ma-no-mouse-vimium>
+
 ##  Latex  
 <https://www.overleaf.com/learn>
 
