@@ -1,6 +1,14 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+## QM
 https://www.youtube.com/watch?v=gAFAj3pzvAA  QM map
+
+https://www.youtube.com/watch?v=VSCqjOXNSp8 . А.С. Трушечкин. Математика квантовой механики
+
+https://www.youtube.com/watch?v=xnt2xSNRNn0 Quantum Physics Full Course | Quantum Mechanics Course | Part 1 Author: Brant Carlson
+
+https://www.youtube.com/watch?v=K4BF7MD69_U . Course Author: Prof. Steve Spicklemire
+
 
 https://www.youtube.com/watch?v=rFKUs2PeRLU Симметрия в физике,
 
