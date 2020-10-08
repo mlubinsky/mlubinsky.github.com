@@ -1,3 +1,7 @@
+### Notes
+
+<https://lobste.rs/s/e5lx5p/what_note_taking_team_wiki_personal_wiki>
+
 ## Vimium
 
 <https://codefaster.substack.com/p/look-ma-no-mouse-vimium>
