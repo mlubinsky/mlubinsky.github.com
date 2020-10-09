@@ -12,6 +12,8 @@ https://www.youtube.com/watch?v=K4BF7MD69_U . Course Author: Prof. Steve Spickle
 
 https://www.youtube.com/watch?v=rFKUs2PeRLU Симметрия в физике,
 
+http://www.mathnet.ru/php/presentation.phtml?option_lang=rus&presentid=24832  solitons
+
 https://www.youtube.com/watch?v=bUfcVTIlJz0 Green function
 
 https://www.youtube.com/watch?v=UwwBG-MbniY. Thinking fast and slow (Daniel Kahneman - Lex Fridman)
