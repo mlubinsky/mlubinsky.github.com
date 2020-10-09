@@ -14,6 +14,8 @@ https://zen.yandex.ru/media/math_notebook/navigator-po-kanalu-5f2427db35aece0c36
   
 https://arxiv.org/abs/1705.07621. Grasshhopper problem
 
+https://habr.com/ru/company/skillfactory/blog/522634/ Проблема секретаря или задача о разборчивой невесте 
+
 <http://eqworld.ipmnet.ru/indexr.htm>  Books
 
 <https://realnotcomplex.com/>
