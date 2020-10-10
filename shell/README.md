@@ -92,6 +92,8 @@ Job control consists of the following commands:
 
 ###  bash  
 
+<https://wizardzines.com/comics/bash-errors/>
+
 Bash Error Handling (wizardzines.com)
 <https://news.ycombinator.com/item?id=24727495>
 
