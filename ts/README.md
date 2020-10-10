@@ -1,3 +1,6 @@
+
+<https://zerowithdot.com/time-forecasting-challenges/>
+
 <https://www.coursera.org/learn/practical-time-series-analysis/home/welcome>
 
 <https://habr.com/ru/post/495884/> NN for time series
