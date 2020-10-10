@@ -1,3 +1,5 @@
+ <https://nikhilism.com/post/2020/mystery-knowledge-useful-tools/>
+
  <https://news.ycombinator.com/item?id=23229241> .  Linux Productivity Tools (2019)   (usenix.org)
  
  <https://news.ycombinator.com/item?id=23468193>
