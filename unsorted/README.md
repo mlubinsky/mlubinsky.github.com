@@ -1,6 +1,8 @@
 Делайте что хотите, но пусть это приносит радость
 /Уолт Уитмен/
 
+<https://www.youtube.com/watch?v=i33BTuwTgAs> Supermemo
+
 <https://www.newyorker.com/humor/daily-shouts/i-thought-i-would-have-accomplished-a-lot-more-today-and-also-by-the-time-i-was-thirty-five>
 
 <https://news.ycombinator.com/item?id=24316725> discussion of article above
