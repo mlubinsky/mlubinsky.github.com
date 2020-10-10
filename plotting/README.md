@@ -22,6 +22,8 @@
 
 <http://vispy.org/>
 
+<https://habr.com/ru/post/468295/> matplotlib
+
 http://visidata.org/ .  can read parquet
 
 http://blog.pyviz.org/
@@ -115,6 +117,8 @@ https://movio.co/en/blog/improving-with-sql-and-charts/
 https://github.com/MLWave/kepler-mapper
 
 ## Matplotlib
+
+<https://habr.com/ru/post/468295/>
 
 <https://realpython.com/python-matplotlib-guide/>
 
