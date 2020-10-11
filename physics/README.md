@@ -11,6 +11,7 @@ https://www.youtube.com/watch?v=xnt2xSNRNn0 Quantum Physics Full Course | Quantu
 
 https://www.youtube.com/watch?v=K4BF7MD69_U . Course Author: Prof. Steve Spicklemire
 
+http://nuclphys.sinp.msu.ru/
 
 https://www.youtube.com/watch?v=rFKUs2PeRLU Симметрия в физике,
 
