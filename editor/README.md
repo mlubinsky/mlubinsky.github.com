@@ -6,7 +6,10 @@
 
 <https://codefaster.substack.com/p/look-ma-no-mouse-vimium>
 
-##  Latex  
+##  Latex  MathJax
+
+<https://news.ycombinator.com/item?id=24741077>
+
 <https://www.overleaf.com/learn>
 
 https://www.texstudio.org/
