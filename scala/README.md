@@ -1,5 +1,7 @@
 <https://riiswa.github.io/Scala-CheatSheet/>
 
+<https://leanpub.com/jvm-scala-book> JVM for Scala
+
 <https://geirsson.com/2019.html> Scala tooling in 2019
 
 <https://ammonite.io/> .   REPL ammonite
