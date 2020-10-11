@@ -18,6 +18,8 @@ http://www.mathnet.ru/php/presentation.phtml?option_lang=rus&presentid=24832  so
 
 https://www.youtube.com/watch?v=bUfcVTIlJz0 Green function
 
+https://e.lanbook.com/reader/book/619/#26. Блохинцев ДИ Основы квантовой механики
+
 https://www.youtube.com/watch?v=UwwBG-MbniY. Thinking fast and slow (Daniel Kahneman - Lex Fridman)
 
 ## BOOKS
