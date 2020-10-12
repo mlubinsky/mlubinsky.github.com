@@ -1,5 +1,7 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+<https://science.d3.ru/posovetuite-podkast-s-fizikami-2046797/?sorting=rating>
+
 ## QM
 
 http://lightcone.ru/
