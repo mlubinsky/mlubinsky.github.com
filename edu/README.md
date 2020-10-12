@@ -2,6 +2,10 @@ http://techlibrary.ru/
 
 https://mipt.ru/online/
 
+https://distant.msu.ru/
+
+https://courses.openedu.ru/
+
 https://habr.com/ru/company/avito/blog/499458/
 
 https://www.youtube.com/channel/UCimGOl6wSQWDbBFoVMQGzMg/featured MSU lectures
