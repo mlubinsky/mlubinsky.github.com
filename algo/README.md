@@ -16,6 +16,9 @@ https://habr.com/ru/company/tensor/blog/518726/. Prefix Trie
 
 https://youtu.be/lbcswonQmGs selection sort
 
+https://www.codementor.io/@svenkatadileepkumar/find-all-the-prime-numbers-less-than-n-in-o-n-time-complexity-1amti1lm2p
+
+
 https://mitmath.github.io/18S191/Fall20/ . Computansional thinking using Julia
 
 https://www.cs.auckland.ac.nz/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf
