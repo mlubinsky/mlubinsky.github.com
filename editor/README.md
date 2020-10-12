@@ -36,6 +36,10 @@ https://news.ycombinator.com/item?id=24136955
 
 ### Diff
 
+<https://diffoscope.org/> 
+
+<https://try.diffoscope.org/>
+
 <https://marketplace.visualstudio.com/items?itemName=MadsKristensen.FileDiffer> VS Plugin
 
 https://github.com/dandavison/delta
