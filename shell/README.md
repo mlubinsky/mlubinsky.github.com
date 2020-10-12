@@ -1,4 +1,6 @@
  <https://nikhilism.com/post/2020/mystery-knowledge-useful-tools/>
+ 
+ https://lobste.rs/s/ijqptg/duf_user_friendly_alternative_df
 
  <https://news.ycombinator.com/item?id=23229241> .  Linux Productivity Tools (2019)   (usenix.org)
  
