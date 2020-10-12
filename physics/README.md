@@ -1,6 +1,9 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 ## QM
+
+http://lightcone.ru/
+
 https://www.youtube.com/watch?v=gAFAj3pzvAA  QM map
 
 https://www.youtube.com/watch?v=VSCqjOXNSp8 . А.С. Трушечкин. Математика квантовой механики
