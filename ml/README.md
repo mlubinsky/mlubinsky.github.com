@@ -7,7 +7,10 @@ Eugenevectors /values : numpy + mathplotlib https://www.paepper.com/blog/posts/e
 
 https://dafriedman97.github.io/mlbook/content/introduction.html book
 
+## Decision Tree
 https://habr.com/ru/post/520204/ Decision Tree
+
+https://habr.com/ru/company/productstar/blog/523044/ Decision Tree
 
 <https://datalore.jetbrains.com/> free online jupyter notebook fron jetbrains
 
