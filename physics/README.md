@@ -6,6 +6,8 @@
 
 http://lightcone.ru/
 
+http://lightcone.ru/%d1%82%d0%b5%d0%be%d1%80%d0%b8%d1%8f-%d0%b3%d1%80%d1%83%d0%bf%d0%bf-1-%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b3%d1%80%d1%83%d0%bf%d0%bf%d1%8b/
+
 https://www.youtube.com/watch?v=gAFAj3pzvAA  QM map
 
 https://www.youtube.com/watch?v=VSCqjOXNSp8 . А.С. Трушечкин. Математика квантовой механики
