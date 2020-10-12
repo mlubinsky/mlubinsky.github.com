@@ -1,5 +1,7 @@
 https://habr.com/ru/company/ruvds/blog/515258/. Algorithms
 
+https://levelup.gitconnected.com/cracking-the-top-40-facebook-coding-interview-questions-185bab32489f
+
 https://cp-algorithms.com/
 
 https://tproger.ru/articles/problems/
