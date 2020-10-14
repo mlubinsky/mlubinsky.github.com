@@ -1,5 +1,7 @@
 Book:  <http://streamingsystems.net/>
 
+<https://medium.com/better-programming/modern-day-architecture-design-patterns-for-software-professionals-9056ee1ed977>
+
 <https://robertovitillo.com/how-to-conduct-a-system-design-interview/>
 
 <https://habr.com/ru/company/gms/blog/516718/> Netflix  system design-интервью
