@@ -1,3 +1,8 @@
+### Compare with master
+```
+https://gitlab.eng.roku.com/dea-looker/looker-foundation-prod/compare/master...PROGDE-784
+```
+
 ### COMPLEX SQL
 ```
 SELECT bucket, economic_model, content_type, count(distinct device_id), sum(seconds) as sec, AVG(seconds), STDDEV(seconds) as std
