@@ -11,7 +11,14 @@
 
 https://evgeniirudnyi.livejournal.com/
 
+### Library Genesis:
+
+gen.lib.rus.ec  libgen.rs 
+
+https://habr.com/ru/news/t/478556/
+
 <http://libgen.is/> . all books
+
 
 <https://www.levels.fyi/> salary in high tech companies
 
