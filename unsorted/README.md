@@ -21,6 +21,7 @@ https://evgeniirudnyi.livejournal.com/
 
 <https://habr.com/ru/post/464757/> how to optimize LinkedIn profile
 
+<https://news.ycombinator.com/item?id=24777640> how to write resume
 
 <http://muz4in.net/news/chempion_po_zapominaniju_delajte_ehti_3_veshhi_kazhdyj_den_esli_khotite_uluchshit_svoju_pamjat/2020-04-16-51572>.   Memory
 
