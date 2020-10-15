@@ -116,6 +116,8 @@ https://www.youtube.com/watch?v=spUNpyF58BY
 
 ### Kalman filter
 
+<https://habr.com/ru/company/singularis/blog/516798/> 
+
 <https://towardsdatascience.com/the-curious-case-of-kalman-filters-f29c3d17b121>
 
 <https://habr.com/ru/post/166693/> 
