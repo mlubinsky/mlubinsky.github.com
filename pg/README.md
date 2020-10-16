@@ -1,3 +1,7 @@
+### Time series on Postgress
+
+https://blog.joshsoftware.com/2020/10/14/efficient-evenly-distributed-sampling-of-time-series-records-in-postgresql/
+
 ## PG on Mac
 ```
 To have launchd start postgresql now and restart at login:
