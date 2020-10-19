@@ -2,6 +2,8 @@ https://habr.com/ru/company/ruvds/blog/515258/. Algorithms
 
 https://levelup.gitconnected.com/cracking-the-top-40-facebook-coding-interview-questions-185bab32489f
 
+https://doisinkidney.com/posts/2019-06-04-solving-puzzles-without-your-brain.html
+
 https://cp-algorithms.com/
 
 https://tproger.ru/articles/problems/
