@@ -1,3 +1,7 @@
+### IoT protocols
+
+https://habr.com/ru/company/otus/blog/524140/
+
 
 ## DSP books:
 
