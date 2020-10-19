@@ -6,6 +6,12 @@
 
 http://lightcone.ru/
 
+https://www.youtube.com/watch?v=7mUQtujgUUo . Страупе С. С. - Введение в квантовую физику - Квантовая информация
+
+https://www.youtube.com/watch?v=NayWtS53NNU   
+
+https://www.youtube.com/playlist?list=PLcsjsqLLSfNDqvcsTsKJM1Ee6V8Aaobl0 Введение в квантовую физику - Рубцов Алексей Николаевич
+
 https://habr.com/ru/post/523926/
 
 http://lightcone.ru/%d1%82%d0%b5%d0%be%d1%80%d0%b8%d1%8f-%d0%b3%d1%80%d1%83%d0%bf%d0%bf-1-%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b3%d1%80%d1%83%d0%bf%d0%bf%d1%8b/
