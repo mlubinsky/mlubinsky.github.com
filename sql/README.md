@@ -416,10 +416,17 @@ HAVING COUNT(person_id) >1
 
 
 ## Hierarhy  Recursive SQL
+
+https://habr.com/ru/company/tensor/blog/523812/
+
  https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database
+ 
  https://news.ycombinator.com/item?id=20027586 Hierarchy and RECURSIVE SQL
+ 
  https://github.com/bitnine-oss/agensgraph . Postgres extension  AgensGraph
+ 
  http://patshaughnessy.net/2017/12/13/saving-a-tree-in-postgres-using-ltree
+ 
  https://martinheinz.dev/blog/18 - recursive SQL
  
 ``` 
