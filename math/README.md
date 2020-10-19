@@ -1,5 +1,11 @@
-<https://ru.coursera.org/learn/geometriya-i-gruppy> Геометрия и группы
-Савватеев Алексей Владимирович
+## группы
+
+<https://ru.coursera.org/learn/geometriya-i-gruppy> Геометрия и группы. Савватеев Алексей Владимирович
+
+<https://www.youtube.com/watch?v=ihoATq9jSlQ> группы. Савватеев Алексей Владимирович
+
+<http://lightcone.ru/category/math/>
+
 
 https://mathvault.ca/
 
