@@ -96,6 +96,8 @@ Job control consists of the following commands:
 
 ###  bash  
 
+<https://github.com/dylanaraps/pure-sh-bible> common shell tasks
+
 <https://wizardzines.com/comics/bash-errors/>
 
 Bash Error Handling (wizardzines.com)
