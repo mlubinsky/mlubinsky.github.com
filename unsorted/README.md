@@ -11,6 +11,8 @@
 
 https://evgeniirudnyi.livejournal.com/
 
+https://www.youtube.com/watch?v=6JipQNWuYnA. Lex Fridman interview his father
+
 ### Library Genesis:
 
 gen.lib.rus.ec  libgen.rs 
