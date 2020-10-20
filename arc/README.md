@@ -3,6 +3,8 @@ Book:  <http://streamingsystems.net/>
 
 <https://a16z.com/2020/10/15/the-emerging-architectures-for-modern-data-infrastructure/>
 
+<https://proprogramming.org/design-dropbox-a-system-design-interview-question/>
+
 <https://news.ycombinator.com/item?id=24814687>
 
 <https://medium.com/better-programming/modern-day-architecture-design-patterns-for-software-professionals-9056ee1ed977>
