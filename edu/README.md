@@ -6,6 +6,8 @@ https://distant.msu.ru/
 
 https://courses.openedu.ru/
 
+http://www.mathnet.ru/php/seminars_archive.phtml?wshow=archive&option_lang=rus
+
 http://www.mathnet.ru/conf1820 А.С. Трушечкин, Д.А. Кронберг. Математические основы квантовой криптографии
 
 https://www.youtube.com/watch?v=dj5lAMPI8Kg   А.С. Трушечкин, Д.А. Кронберг. Математические основы квантовой криптографии
