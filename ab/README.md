@@ -4,8 +4,10 @@
 
 <https://habr.com/ru/company/boodet_online/blog/498688/>  
 
-
+## churn rate
 <https://catchjs.com/Blog/Churn>. churn rate
+
+https://news.ycombinator.com/item?id=24831637
 
 <https://habr.com/ru/post/496750/> stratification
 
