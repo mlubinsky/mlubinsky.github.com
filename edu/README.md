@@ -10,6 +10,9 @@ http://www.mathnet.ru/conf1820 А.С. Трушечкин, Д.А. Кронбер�
 
 https://www.youtube.com/watch?v=dj5lAMPI8Kg   А.С. Трушечкин, Д.А. Кронберг. Математические основы квантовой криптографии
 
+https://www.youtube.com/playlist?list=PLUbD59ZHv1GRPWYosLt-aW1yA2z8IioAd Р.В. Шамин. Осенний семестр 2020. Функциональный анализ и машинное обучение
+
+
 https://habr.com/ru/company/avito/blog/499458/
 
 https://www.youtube.com/channel/UCimGOl6wSQWDbBFoVMQGzMg/featured MSU lectures
