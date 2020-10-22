@@ -42,6 +42,8 @@ https://github.com/gchq/CyberChef
 
 ### Useful Apps
 
+https://tinyapps.org/macos.html
+
 https://github.com/muesli/duf disk usage 
 
 https://cyberduck.io/
