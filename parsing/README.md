@@ -1,4 +1,4 @@
-## Code analysis and visualier
+## Code analysis and visualizer
 
 https://www.sourcetrail.com/
 
@@ -37,6 +37,9 @@ Regular Expression:
 <https://blog.robertelder.org/regular-expression-visualizer/>
 
 ## Parsers
+https://tiarkrompf.github.io/notes/?/just-write-the-parser/
+
+https://news.ycombinator.com/item?id=24837898
 
 https://github.com/gnebehay/parser  A Handwritten Math Parser in 100 lines of Python
 
