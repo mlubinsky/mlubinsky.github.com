@@ -1,4 +1,4 @@
-https://habr.com/ru/company/skillfactory/blog/524722/.  List of useu links
+https://habr.com/ru/company/skillfactory/blog/524722/.  List of useful links
 
 #### Julia ML 
 https://sciml.ai/
