@@ -6,6 +6,7 @@
 
 <http://lightcone.ru/category/math/>
 
+https://mccme.ru/dubna/2019/program.htm
 
 https://mathvault.ca/
 
