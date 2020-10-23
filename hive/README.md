@@ -2,8 +2,13 @@
 <https://habr.com/ru/company/mailru/blog/504952/> Avro, Parquet, ...
 
 
-Problem: if we have no records in Hive partition the copy in redshift will fail
+### Problem: if  no records in Hive partition then copy to Redshift will fail: 
+
+FAILED: SemanticException [Error 10006]: Partition not found {date_key=2020-09-21}
+
+
 Solution: 
+
 step 1: add records with NULL values in Hive - this it will enforce the new partition/folder to be created
 
 ```
@@ -51,7 +56,7 @@ SELECT *
 
 ```
 
-### CASCADE keyword
+###  Using  CASCADE in ALTER TABLE ADD COLUMNS ...  
 
 https://stackoverflow.com/questions/40582387/how-to-add-columns-to-existing-hive-partitioned-table/44837663
 
