@@ -1,5 +1,7 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+<https://www.youtube.com/watch?v=E_Fmbwe79Co> nВ.П. Павлов. Как устроена теоретическая физика
+
 <https://science.d3.ru/posovetuite-podkast-s-fizikami-2046797/?sorting=rating>
 
 ## QM
