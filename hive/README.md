@@ -50,6 +50,16 @@ SELECT *
 	WHERE date_key='2020-06-13' AND  product_id IS NOT  NULL; 
 
 ```
+
+### CASCADE keyword
+
+https://stackoverflow.com/questions/40582387/how-to-add-columns-to-existing-hive-partitioned-table/44837663
+
+ALTER TABLE dbname.table_name ADD columns (column1 string,column2 string) CASCADE; 
+
+This changes the columns of a table's metadata and cascades the same change to all the partition metadata.  
+RESTRICT is the default, limiting column change only to table metadata.
+
 ### Presto  Druid Pinot Kudu
 Presto  query execution rate that is three times faster than Hive.
 
