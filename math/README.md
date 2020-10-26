@@ -164,6 +164,9 @@ https://www.youtube.com/watch?v=spUNpyF58BY
 <https://habr.com/post/343178/>
 
 ### Linear algebra
+
+https://hefferon.net/linearalgebra/index.html
+
 <https://textbooks.math.gatech.edu/ila/>
 
 <https://www.youtube.com/watch?v=rowWM-MijXU> 
