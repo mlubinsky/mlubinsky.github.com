@@ -1,4 +1,7 @@
 ## C
+
+while(0) in macro https://bowero.nl/blog/2020/10/25/defining-c-macros-the-right-way/
+
 <https://github.com/nothings/stb>
 
 <https://github.com/nothings/single_file_libs>
