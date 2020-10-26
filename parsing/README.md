@@ -37,6 +37,11 @@ Regular Expression:
 <https://blog.robertelder.org/regular-expression-visualizer/>
 
 ## Parsers
+
+http://dmitrysoshnikov.com/courses/parsing-algorithms/
+
+https://news.ycombinator.com/item?id=24898210
+
 https://tiarkrompf.github.io/notes/?/just-write-the-parser/
 
 https://news.ycombinator.com/item?id=24837898
