@@ -4,6 +4,10 @@ while(0) in macro https://bowero.nl/blog/2020/10/25/defining-c-macros-the-right-
 
 https://github.com/nothings/single_file_libs
 
+https://github.com/p-ranav/awesome-hpp
+
+https://habr.com/ru/company/pvs-studio/blog/524568/
+
 <https://github.com/nothings/stb>
 
 <https://github.com/nothings/single_file_libs>
