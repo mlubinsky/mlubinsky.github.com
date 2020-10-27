@@ -373,6 +373,8 @@ else:
 ## Dynamic programming
 <https://skerritt.blog/dynamic-programming>
 
+https://hiringfor.tech/2020/10/26/my-resources-for-dynamic-programming.html
+
 <https://medium.freecodecamp.org/unmasking-bitmasked-dynamic-programming-25669312b77b>
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
