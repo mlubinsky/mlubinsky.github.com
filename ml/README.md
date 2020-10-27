@@ -1,5 +1,7 @@
 https://habr.com/ru/company/skillfactory/blog/524722/.  List of useful links
 
+https://habr.com/ru/company/recognitor/blog/524980/
+
 #### Julia ML 
 https://sciml.ai/
 
@@ -186,6 +188,8 @@ Deploying to AWS
 
 ## AutoML
 
+https://habr.com/ru/company/otus/blog/525292/ .  pip install autoviml
+
 <https://habr.com/ru/company/jetinfosystems/blog/485232/>
 
 <https://www.ahmedbesbes.com/blog/introduction-to-mlbox>
@@ -196,6 +200,10 @@ given X predict Y
 <https://medium.com/georgian-impact-blog/choosing-the-best-automl-framework-4f2a90cb1826>
 
 <https://github.com/mljar/mljar-supervised> .  AutoML
+
+<https://libradocs.github.io/> Libra Fully Automated Machine Learning in One-Liners
+
+<https://github.com/KartikChugh/Otto>
 
 Using gridsearch for hyperparamter optimization.
 Grid search is known to perform worse than random search in cases where not all hyperparameters are of similar importanc
