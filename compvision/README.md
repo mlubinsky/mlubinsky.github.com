@@ -1,3 +1,5 @@
+http://cv-blog.ru/
+
 https://arxiv.org/pdf/1812.01187.pdf .  CNN training tricks for image classification
 
 <https://habr.com/ru/post/511372/>  Deep Learning: как это работает? Часть 3 — архитектуры CNN
