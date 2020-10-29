@@ -20,6 +20,8 @@ https://news.ycombinator.com/item?id=24361469 . Modern C
 
 <https://johnysswlab.com/the-price-of-dynamic-memory-allocation/> memory allocators
 
+https://habr.com/ru/company/mailru/blog/525484/ memory allocators
+
 https://www.reddit.com/r/cpp/comments/ffx95k/static_analysis_tools_you_use_in_ci_for_your_cpp/   cpp static analysis
 
 Using -D flag
