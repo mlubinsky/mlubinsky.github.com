@@ -51,6 +51,11 @@ printf(“%s %s:%d …”, __FILE__, __FUNCTION__, __LINE__, …);
 char buf[100] = {0};   # same as memset(buf, 0, (sizeof(buf)/sizeof(buf[0]))) 
 ```
 
+## Good C++ codebase to learn:
+
+https://news.ycombinator.com/item?id=24901244
+
+
 ### ZigLang
 
 <https://ziglang.org/> 
