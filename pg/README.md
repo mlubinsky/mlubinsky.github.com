@@ -1,3 +1,8 @@
+## MySQL
+
+https://news.ycombinator.com/item?id=24698660
+
+
 ### Time series on Postgress
 
 https://blog.joshsoftware.com/2020/10/14/efficient-evenly-distributed-sampling-of-time-series-records-in-postgresql/
