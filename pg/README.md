@@ -4,6 +4,8 @@ https://news.ycombinator.com/item?id=24698660
 
 https://sql-info.de/postgresql/postgres-gotchas.html PG gotchas
 
+https://wiki.postgresql.org/wiki/Don't_Do_This   Do not do it in PG
+
 ### Time series on Postgress
 
 https://blog.joshsoftware.com/2020/10/14/efficient-evenly-distributed-sampling-of-time-series-records-in-postgresql/
