@@ -161,6 +161,8 @@ Nim
 
 <https://d3.ru/zametka-podborka-o-funktsionalnom-programmirovanii-2022041/> 
 
+https://habr.com/ru/post/505928/
+
 https://habr.com/ru/post/506782/
 
 <https://habr.com/ru/post/492460/>
