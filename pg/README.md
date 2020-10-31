@@ -1,7 +1,8 @@
-## MySQL
+## MySQL vs PG
 
 https://news.ycombinator.com/item?id=24698660
 
+https://sql-info.de/postgresql/postgres-gotchas.html PG gotchas
 
 ### Time series on Postgress
 
