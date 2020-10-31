@@ -1,6 +1,13 @@
+https://www.confetti.ai/assets/ml-primer/ml_primer.pdf Primer
+
 https://habr.com/ru/company/skillfactory/blog/524722/.  List of useful links
 
 https://habr.com/ru/company/recognitor/blog/524980/
+
+https://habr.com/ru/company/skillfactory/blog/525512/
+
+https://habr.com/ru/company/skillbox/blog/525784/
+
 
 #### Julia ML 
 https://sciml.ai/
