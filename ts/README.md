@@ -6,6 +6,8 @@ https://youtu.be/6OGSftP2_Ts
 
 <https://www.coursera.org/learn/practical-time-series-analysis/home/welcome>
 
+https://notamonadtutorial.com/stumpy-unleashing-the-power-of-the-matrix-profile-for-time-series-analysis-7c46af040adb
+
 <https://habr.com/ru/post/495884/> NN for time series
 
 <https://www.m3db.io/> Uber's TS database
