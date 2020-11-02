@@ -2,6 +2,9 @@
 
 https://news.ycombinator.com/item?id=24565499. python internals
 
+
+https://gto76.github.io/python-cheatsheet/ . 
+
 ## Docker vs virtualenv
 
 https://sourcery.ai/blog/python-docker/
