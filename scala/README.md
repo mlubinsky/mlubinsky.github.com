@@ -1,5 +1,7 @@
 <https://riiswa.github.io/Scala-CheatSheet/>
 
+https://bszwej.medium.com/domain-driven-design-with-fp-in-scala-21b557f94aa5
+
 <https://leanpub.com/jvm-scala-book> JVM for Scala
 
 <https://geirsson.com/2019.html> Scala tooling in 2019
