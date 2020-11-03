@@ -8,6 +8,12 @@
 
 <https://datashader.org/>
 
+### Bokeh
+
+<https://sadanand-singh.github.io/posts/interactivedatavis/> 
+
+https://habr.com/ru/company/skillfactory/blog/526076/
+
 ## Python plotting
 
 <https://veusz.github.io/> VEUSZ
@@ -54,7 +60,9 @@ http://blog.pyviz.org/
 
 <https://dsaber.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/>
 
-<https://sadanand-singh.github.io/posts/interactivedatavis/> . Bokeh
+
+
+
 
 <https://altair-viz.github.io/> .  
 
