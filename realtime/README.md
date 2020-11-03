@@ -3,6 +3,10 @@
 <https://habr.com/ru/company/ruvds/blog/517450/>
 
 
+### Bokeh
+
+https://habr.com/ru/company/skillfactory/blog/526076/
+
 ### Plotline
 
 <http://haifengl.github.io/vegalite.html>
