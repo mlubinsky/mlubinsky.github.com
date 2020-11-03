@@ -1,5 +1,7 @@
 <https://rtyley.github.io/bfg-repo-cleaner/> clean the git
 
+https://news.ycombinator.com/item?id=24957280
+
 <https://gitexplorer.com/>
 
 <https://gitbetter.substack.com/p/how-to-use-git-fetch-and-git-pull>
