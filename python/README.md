@@ -3,7 +3,10 @@
 https://news.ycombinator.com/item?id=24565499. python internals
 
 
-https://gto76.github.io/python-cheatsheet/ . 
+https://gto76.github.io/python-cheatsheet/  Cheetshhet
+
+### FFT in SciPy
+https://realpython.com/python-scipy-fft/
 
 ## Docker vs virtualenv
 
