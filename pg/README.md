@@ -1,5 +1,7 @@
 ## MySQL vs PG
 
+https://habr.com/ru/company/otus/blog/526400/ MySQL performance schema
+
 https://news.ycombinator.com/item?id=24698660
 
 https://sql-info.de/postgresql/postgres-gotchas.html PG gotchas
