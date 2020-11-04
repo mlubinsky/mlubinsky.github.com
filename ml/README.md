@@ -1,3 +1,15 @@
+### Desktop applications for viewing and analyzing tabular data
+
+https://news.ycombinator.com/item?id=24983603
+
+visidata.org
+
+https://github.com/antonycourtney/tad Tad
+
+https://towardsdatascience.com/introduction-to-d-tale-5eddd81abe3f. DTale
+
+### ML
+
 https://www.confetti.ai/assets/ml-primer/ml_primer.pdf Primer
 
 https://habr.com/ru/company/skillfactory/blog/524722/.  List of useful links
