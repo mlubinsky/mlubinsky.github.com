@@ -137,6 +137,8 @@ https://kakoune.org/
 
 "| vim -" instead of less
 
+:wq. vs :x
+
 - custom text objects 
 - vim-surround
 - vim-sneak
