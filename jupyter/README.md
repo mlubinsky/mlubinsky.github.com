@@ -1,5 +1,7 @@
 <https://habr.com/ru/post/519930/> Julia language
 
+https://lwn.net/SubscriberLink/835930/47c363bef07134a4/  Pluto - Notebook for Julia (similar to Jupyter)
+
 
 https://www.codementor.io/@ng3687/correlation-matrix-in-excel-python-and-r-1a6i5puowo. correlation matrix
 
