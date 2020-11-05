@@ -137,6 +137,9 @@ https://kakoune.org/
 
 "| vim -" instead of less
 
+- custom text objects 
+- vim-surround
+- vim-sneak
 
 https://www.youtube.com/watch?v=Gs1VDYnS-Ac
 
