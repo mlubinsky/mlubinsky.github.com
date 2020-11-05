@@ -12,6 +12,9 @@ https://www.youtube.com/watch?v=7mUQtujgUUo . Страупе С. С. - Введ�
 
 https://www.youtube.com/results?search_query=%D0%A1%D1%82%D1%80%D0%B0%D1%83%D0%BF%D0%B5 Страупе 
 
+
+https://news.ycombinator.com/item?id=24996034   Many Quantum Computer Lectures
+
 https://www.youtube.com/watch?v=NayWtS53NNU   Эмиль Ахмедов: "Оптика и квантовая механика"
 
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNDqvcsTsKJM1Ee6V8Aaobl0 Введение в квантовую физику - Рубцов Алексей Николаевич
