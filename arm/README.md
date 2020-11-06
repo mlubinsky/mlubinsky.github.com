@@ -4,6 +4,8 @@ Remote Authentication Dial In User Service (RADIUS) for streaming the Call Detai
 
 https://wiki.freeradius.org/Home
 
+https://networkradius.com/doc/FreeRADIUS%20Technical%20Guide.pdf
+
 https://habr.com/ru/post/51882/
 
 https://www.dialogic.com/webhelp/BorderNet2020/2.2.0/WebHelp/radius_ov.htm
