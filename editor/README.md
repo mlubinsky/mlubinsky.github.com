@@ -145,6 +145,10 @@ https://kakoune.org/
 
 https://www.youtube.com/watch?v=Gs1VDYnS-Ac
 
+http://vi-essentials.palashkantikundu.in/
+
+https://jemma.dev/blog/intermediate-vim-tips
+
 ### Plugins
 1. Linting: python-mode. IMHO it provides very good linting out of the box
 
