@@ -1,3 +1,5 @@
+https://habr.com/ru/company/plarium/blog/526706/
+
 <https://en.wikipedia.org/wiki/Test_statistic>
 
 <http://bytepawn.com/tag/ab-testing.html>
