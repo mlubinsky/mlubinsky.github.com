@@ -39,7 +39,7 @@ https://habr.com/ru/company/skillfactory/blog/522634/ Проблема секр�
 
 <http://mishadoff.com/blog/what-is-greater-e-pi-or-pi-e/>
 
-
+https://vk.com/physics_math  Books
 
 <https://vk.com/id11394886> Nikita Lisa
 
