@@ -27,6 +27,8 @@ https://nordicapis.com/the-difference-between-http-auth-api-keys-and-oauth/
 
 ## TLS
 
+https://www.thedigitalcatonline.com/blog/2020/11/04/public-key-cryptography-ssl-certificates/
+
 https://zen.yandex.ru/media/habr/chto-takoe-tls-5f5efb3e93cc6c72ffad7fb5
 
 how TLS works: <https://habr.com/ru/company/plesk/blog/507094/>
