@@ -1,3 +1,6 @@
+https://tdom.dev/go-in-production. Go in production: web frameforls and sql
+
+
 https://www.ardanlabs.com/blog/2020/09/using-python-memory.html. Go + Python
 
 <https://go101.org/article/101.html> 
