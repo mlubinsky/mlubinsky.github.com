@@ -1,3 +1,9 @@
+https://www.mindsdb.com/. MindsDB provides a simple way to create, train and test ML models and then publish them as virtual AI-Tables into databases.
+
+Integrate seamlessly with most of databases on the market
+Use SQL queries for all manipulation with ML models
+Improve model training speed with GPU without affecting your database performance
+
 ### Desktop applications for viewing and analyzing tabular data
 
 https://news.ycombinator.com/item?id=24983603
