@@ -18,6 +18,8 @@ https://towardsdatascience.com/introduction-to-d-tale-5eddd81abe3f. DTale
 
 https://www.confetti.ai/assets/ml-primer/ml_primer.pdf Primer
 
+https://towardsdatascience.com/from-linear-regression-to-ridge-regression-the-lasso-and-the-elastic-net-4eaecaf5f7e6
+
 https://habr.com/ru/company/skillfactory/blog/524722/.  List of useful links
 
 https://habr.com/ru/company/recognitor/blog/524980/
