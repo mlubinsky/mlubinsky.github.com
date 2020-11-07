@@ -370,9 +370,11 @@ https://julien.danjou.info/how-to-log-properly-in-python/
 
 <https://spiegelmock.com/2020/01/04/python-2020-modern-best-practices/>
 
-### pyenv
+### pyenv pipenv
 
 <https://github.com/pyenv/pyenv>
+
+https://chriswarrick.com/blog/2018/07/17/pipenv-promises-a-lot-delivers-very-little/
 
 <https://dev.to/writingcode/the-python-virtual-environment-with-pyenv-pipenv-3mlo>
 
