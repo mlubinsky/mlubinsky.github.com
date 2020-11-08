@@ -5,6 +5,11 @@ https://news.ycombinator.com/item?id=24565499. python internals
 
 https://gto76.github.io/python-cheatsheet/  Cheetshhet
 
+
+### Python instead bash
+
+https://davidoha.medium.com/avoiding-bash-frustration-use-python-for-shell-scripts-44bba8ba1e9e
+
 ### FFT in SciPy
 https://realpython.com/python-scipy-fft/
 
