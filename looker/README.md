@@ -1,3 +1,12 @@
+## Helper explore for Filter dropdown:
+
+explore: dim_experiment_firmware {
+  view_name: dim_experiment
+  label: "Amoeba Experiments for Firmware"
+  description: "Amoeba Experiments for Firmware"
+  sql_always_where:  ${end_date} > '2020-09-01' AND ${client} = 'player'  ;;
+}
+
 ## Caching / persistance
 <https://docs.looker.com/reference/view-params/persist_for-for-derived_table>
 
