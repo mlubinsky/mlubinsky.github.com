@@ -1,5 +1,7 @@
 https://habr.com/ru/company/plarium/blog/526706/
 
+https://news.ycombinator.com/item?id=25014901 Bayes vs. Freq
+
 https://rpsychologist.com/d3/nhst/
 
 <https://en.wikipedia.org/wiki/Test_statistic>
