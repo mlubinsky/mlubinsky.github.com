@@ -1,3 +1,11 @@
+### SQL UI tools
+
+Sequel-Ace https://github.com/Sequel-Ace/Sequel-Ace
+
+TablePlus
+
+DBeaver
+
 ## Falcon UI
 
 <https://github.com/plotly/falcon> UI
