@@ -1,3 +1,29 @@
+## template and macros
+
+<https://www.astronomer.io/guides/templating/> 
+
+ds and macros variables can only be accessed through template as they only exists during execution and not during python code parsing
+  
+https://stackoverflow.com/questions/43149276/accessing-the-ds-variable-in-airflow
+
+https://stackoverflow.com/questions/36730714/execution-date-in-airflow-need-to-access-as-a-variable/45725005#45725005
+
+```
+EXEC_DATE = '{{ ds }}'
+EXEC_DATE = '{{ macros.ds_add(ds, 1) }}'
+```
+
+https://towardsdatascience.com/best-practices-for-airflow-developers-990c8a04f7c6
+```
+not all operator parameters are templated, so you need to make sure Jinja templating is enabled for the operators that you plan to pass macros to. 
+To check which parameters in an operator take macros as arguments, look for the template_fields attribute in the operator source code.
+For example, as of today, the most recent version of PythonOperator has three templated parameters:
+‘templates_dict’, ‘op_args’, and ‘op_kwargs’:
+template_fields = ('templates_dict', 'op_args', 'op_kwargs')
+
+In order to enable templating for more parameters, simply overwrite thetemplate_fields attribute.
+Since this attribute is an immutable tuple, make sure to include the original list of templated parameters when you overwrite it.
+```
 
 https://habr.com/ru/company/lamoda/blog/518620/
 
@@ -130,7 +156,6 @@ DynamoDB
 <https://medium.com/searce/serverless-approval-mechanism-for-ml-pipeline-using-airflow-on-aws-ecosystem-5f91a8121749>
 
 
-<https://www.astronomer.io/guides/templating/> template and macro
 
 <https://gtoonstra.github.io/etl-with-airflow/index.html>
 
