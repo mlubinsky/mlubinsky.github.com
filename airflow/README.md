@@ -19,6 +19,36 @@ Let's Repeat That The scheduler runs your job one schedule_interval AFTER the st
 
 http://blog.manugarri.com/how-to-trigger-a-dag-with-custom-parameters-on-airflow-ui/
 
+## How to combine tasks
+
+https://stackoverflow.com/questions/62895219/getting-error-in-airflow-dag-unsupported-operand-types-for-list-and-lis
+
+
+Following does not work:
+```
+task_1 >> [task_2 , task_3] >> [ task_4 , task_5 ] >> task_6 
+```
+You can fix it:
+```
+task_1 >> [task_2 , task_3]
+task_2 >> [task_4, task_5] >> task_6
+task_3 >> [task_4, task_5]
+```
+or
+```
+task_1 >> [task_2 , task_3]
+task_2 >> task_4
+task_3 >> task_5
+[task_4, task_5] >> task_6
+```
+Airflow task dependencies can't handle [list]>>[list]. Easiest way around this is to specify your dependencies over multiple lines:
+```
+task_1 >> [task_2 , task_3]
+task_2 >> [task_4, task_5]
+task_3 >> [task_4, task_5]
+[task_4 , task_5 ] >> task_6
+```
+
 ### How to get result of SQL?
 
 https://airflow.apache.org/docs/stable/_modules/airflow/operators/sql.html
