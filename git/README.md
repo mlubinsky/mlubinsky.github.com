@@ -36,7 +36,13 @@ https://insights.dice.com/2020/05/04/git-mastering-basics-branch-merging/
 
 <http://sethrobertson.github.io/GitPostProduction/gpp.html>
 
+## Gitlab
+
+https://docs.gitlab.com/ee/user/group/saml_sso/#message-saml-authentication-failed-extern-uid-has-already-been-taken
+
 <https://serokell.io/blog/comparison-of-github-and-gitlab> github vs gitlab
+
+
 
 <https://www.infoq.com/presentations/history-comments-git/>
 
