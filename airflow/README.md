@@ -1,3 +1,5 @@
+https://stackoverflow.com/questions/64796614/airflow-how-to-pass-template-macro-to-hive-script
+
 ## template and macros
 
 <https://www.astronomer.io/guides/templating/> 
