@@ -165,6 +165,10 @@ https://www.youtube.com/watch?v=spUNpyF58BY
 
 ### Linear algebra
 
+https://pabloinsente.github.io/intro-linear-algebra
+
+https://pabloinsente.github.io/intro-linear-algebra
+
 https://hefferon.net/linearalgebra/index.html
 
 <https://textbooks.math.gatech.edu/ila/>
