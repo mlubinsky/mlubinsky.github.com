@@ -1,3 +1,5 @@
+https://guttalapidem.livejournal.com/45994.html
+
 https://www.youtube.com/watch?v=eoOhIRpTI0I
 
 <https://www.shinkareff.ru/pervaya-meditsinskaya-pomoshh-v-avtonomn/> 1st aid
