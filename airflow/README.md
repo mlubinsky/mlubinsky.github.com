@@ -21,9 +21,10 @@ For example, as of today, the most recent version of PythonOperator has three te
 ‘templates_dict’, ‘op_args’, and ‘op_kwargs’:
 template_fields = ('templates_dict', 'op_args', 'op_kwargs')
 
-In order to enable templating for more parameters, simply overwrite thetemplate_fields attribute.
+In order to enable templating for more parameters, simply overwrite thextemplate_fields attribute.
 Since this attribute is an immutable tuple, make sure to include the original list of templated parameters when you overwrite it.
 ```
+ http://airflow.apache.org/docs/stable/_modules/airflow/operators/hive_operator.html#HiveOperator.template_fields
 
 https://habr.com/ru/company/lamoda/blog/518620/
 
