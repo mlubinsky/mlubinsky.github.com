@@ -274,6 +274,9 @@ else:
 <https://blog.softwaremill.com/algebraic-data-types-in-four-languages-858788043d4e> Algebraic data types
 
 ## Fibonacci
+
+https://habr.com/ru/post/261159/
+
 <https://habr.com/ru/post/449616/> 
 
 <https://habr.com/ru/post/450594/> 
