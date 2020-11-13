@@ -97,6 +97,152 @@ Time taken: 5.944 seconds, Fetched: 43 row(s)
 
 ```
 
+### Settings
+
+```
+grep: *hql: No such file or directory
+           SET hive.exec.max.dynamic.partitions.pernode=1500;
+           SET hive.exec.max.dynamic.partitions=1500;
+        SET hive.cli.print.header=true;
+        SET hive.exec.compress.output=false;
+        SET hive.exec.reducers.max=1;
+        SET hive.execution.engine=tez;
+        new_line = "SET hive.limit.query.max.table.partition = {}".format(val)
+       SET hive.execution.engine={hive_engine};
+       SET hive.mapred.mode=false;
+      SET hive.exec.compress.intermediate=true;
+      SET hive.exec.compress.output=false;
+      SET hive.exec.reducers.max=1;
+      query = """SET hive.execution.engine=mr;
+    SET hive.exec.compress.output=false;
+    SET hive.exec.reducers.max=1;
+    SET hive.execution.engine=tez;
+    max_r_update_partition_hql = """SET hive.mapred.mode=nonstrict;
+   SET hive.execution.engine={hive_engine};
+   SET hive.mapred.mode=false;
+   SET hive.mapred.mode=nonstrict;
+  SET hive.exec.compress.output=false;
+  SET hive.exec.dynamic.partition = true;
+  SET hive.exec.dynamic.partition.mode = nonstrict;
+  SET hive.exec.reducers.max=1;
+  SET hive.execution.engine=mr;
+  SET hive.execution.engine=tez;
+  SET hive.map.aggr=false;
+  SET hive.mapred.mode = nonstrict;
+  return ('SET hive.cli.print.header=false;SHOW partitions {table_name};'.format(
+  sql = '''SET hive.exec.dynamic.partition=true;
+ 
+SET hive.auto.convert.join=false;
+SET hive.auto.convert.join=true;
+SET hive.cbo.enable = true;
+SET hive.cbo.enable=false;
+SET hive.cbo.enable=true;
+SET hive.compute.query.using.stats = true;
+SET hive.exec.compress.intermediate=true;
+SET hive.exec.compress.output = true;
+SET hive.exec.compress.output=false;
+SET hive.exec.compress.output=true;
+SET hive.exec.dynamic.partition.mode=nonstrict;
+SET hive.exec.dynamic.partition=TRUE;
+SET hive.exec.dynamic.partition=true;
+SET hive.exec.max.dynamic.partitions.pernode = 1000;
+SET hive.exec.max.dynamic.partitions.pernode= 9999;
+SET hive.exec.max.dynamic.partitions.pernode=100;
+SET hive.exec.max.dynamic.partitions.pernode=10;
+SET hive.exec.max.dynamic.partitions.pernode=200;
+SET hive.exec.max.dynamic.partitions.pernode=3000;
+SET hive.exec.max.dynamic.partitions.pernode=300;
+SET hive.exec.max.dynamic.partitions.pernode=50;
+SET hive.exec.max.dynamic.partitions.pernode=99999;
+SET hive.exec.max.dynamic.partitions= 9999;
+SET hive.exec.max.dynamic.partitions=100;
+SET hive.exec.max.dynamic.partitions=10;
+SET hive.exec.max.dynamic.partitions=3000;
+SET hive.exec.max.dynamic.partitions=50;
+SET hive.exec.max.dynamic.partitions=99999;
+SET hive.exec.parallel=false;
+SET hive.exec.parallel=true;
+SET hive.exec.reducers.bytes.per.reducer=2000000;
+SET hive.exec.reducers.bytes.per.reducer=256000000;
+SET hive.exec.reducers.max=10;
+SET hive.exec.reducers.max=1;
+SET hive.exec.reducers.max=256;
+SET hive.exec.reducers.max=3000;
+SET hive.exec.reducers.max=4096;
+SET hive.exec.reducers.max=4;
+SET hive.exec.reducers.max=512;
+SET hive.exec.reducers.max=5;
+SET hive.exec.stagingdir={{ params.staging_dir }};
+SET hive.execution.engine = mr;
+SET hive.execution.engine = tez;
+SET hive.execution.engine=TEZ;
+SET hive.execution.engine=mr;
+SET hive.execution.engine=tez;
+SET hive.fetch.task.conversion = none;
+SET hive.groupby.orderby.position.alias=true;
+SET hive.limit.query.max.table.partition = 1000000;
+SET hive.limit.query.max.table.partition = 100000;
+SET hive.limit.query.max.table.partition = 10000;
+SET hive.limit.query.max.table.partition = 2000;
+SET hive.limit.query.max.table.partition=-1;
+SET hive.limit.query.max.table.partition=10000;
+SET hive.limit.query.max.table.partition=100;
+SET hive.limit.query.max.table.partition=186;
+SET hive.limit.query.max.table.partition=200;
+SET hive.limit.query.max.table.partition=250;
+SET hive.limit.query.max.table.partition=3000;
+SET hive.limit.query.max.table.partition=300;
+SET hive.limit.query.max.table.partition=50;
+SET hive.limit.query.max.table.partition=800;
+SET hive.load.dynamic.partitions.thread=15;
+SET hive.map.aggr=false;
+SET hive.map.aggr=true;
+SET hive.mapred.mode = nonstrict;
+SET hive.mapred.mode='nonstrict';
+SET hive.mapred.mode=false;
+SET hive.mapred.mode=non-strict;
+SET hive.mapred.mode=nonstrict;
+SET hive.mapred.mode=nostrict;
+SET hive.mapred.supports.subdirectories=TRUE;
+SET hive.merge.size.per.task=12800000000;
+SET hive.merge.smallfiles.avgsize=12800000000;
+SET hive.merge.tezfiles=true;
+SET hive.mv.files.thread=0;
+SET hive.optimize.sort.dynamic.partition=true;
+SET hive.optimize.union.remove=true;
+SET hive.stats.autogather = true;
+SET hive.stats.fetch.column.stats = true;
+SET hive.stats.fetch.partition.stats = true;
+SET hive.strict.checks.cartesian.product = FALSE;
+SET hive.strict.checks.cartesian.product=false;
+SET hive.strict.checks.large.query=false;
+SET hive.tez.auto.reducer.parallelism=true ;
+SET hive.tez.auto.reducer.parallelism=true;
+SET hive.tez.container.size=2048;
+SET hive.tez.container.size=4096;
+SET hive.tez.container.size=5120;
+SET hive.tez.container.size=6656;
+SET hive.tez.container.size=7168;
+SET hive.tez.container.size=8192;
+SET hive.tez.java.opts=-Xmx1638m;
+SET hive.tez.java.opts=-Xmx3275m;
+SET hive.tez.java.opts=-Xmx3276m;
+SET hive.tez.java.opts=-Xmx3600m;
+SET hive.tez.java.opts=-Xmx3g;
+SET hive.tez.java.opts=-Xmx4096m;
+SET hive.tez.java.opts=-Xmx5734m;
+SET hive.tez.java.opts=-Xmx6500m;
+SET hive.tez.java.opts=-Xmx6550m;
+SET hive.tez.java.opts=-Xmx6553m;
+SET hive.vectorized.execution.enabled = true;
+SET hive.vectorized.execution.enabled=FALSE;
+SET hive.vectorized.execution.enabled=false;
+SET hive.vectorized.execution.enabled=true;
+SET hive.vectorized.execution.reduce.enabled = true;
+SET hivevar:hr=HOUR(FROM_UNIXTIME(${partition_ts}));
+SET hivevar:partition_ts=${ts}-28800;
+SET hivevar:ts=unix_timestamp(regexp_replace('{{ ts }}', 'T',' '));
+```
 
 ### Problem: if  no records in Hive partition then copy to Redshift will fail: 
 
