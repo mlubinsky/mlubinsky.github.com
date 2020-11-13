@@ -1,5 +1,7 @@
 <https://d2l.ai/> Deep Learning book
 
+<https://www.youtube.com/watch?v=M-2upGOuaPY>  Лекция 8. Р.В. Шамин. Функциональный анализ и машинное обучение
+
 <https://arxiv.org/abs/2004.14545> . <https://news.ycombinator.com/item?id=23060656>
 
 <https://www.deeplearningbook.org/> 
