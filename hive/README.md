@@ -1,6 +1,77 @@
 
 <https://habr.com/ru/company/mailru/blog/504952/> Avro, Parquet, ...
 
+```
+hive> EXPLAIN SELECT
+    >     device_id,
+    >     concat_ws(',',collect_set(experiment_id)),
+    >     concat_ws(',',collect_set(bucket_name)),
+    >     '2020-10-25',
+    >     '2020-10-25'
+    > FROM roku.fact_amoeba_allocation_events A
+    > JOIN
+    > (
+    >  SELECT
+    >    id,
+    >    SUBSTR(CAST(start_date as string),1,10) as  start_date,
+    >    SUBSTR(CAST(end_date   as string),1,10) as  end_date
+    >  FROM  roku.dim_experiment
+    >  WHERE  '2020-10-25' between SUBSTR(CAST(start_date as string),1,10)   and  SUBSTR(CAST(end_date   as string),1,10)
+    >  AND client='player' AND is_active=1
+    > ) E
+    >
+    > ON  E.id = A.experiment_id
+    > WHERE A.date_key <= '2020-10-25'
+    > AND A.date_key between E.start_date AND E.end_date
+    > GROUP BY A.device_id;
+OK
+Plan optimized by CBO.
+
+Vertex dependency in root stage
+Map 1 <- Map 3 (BROADCAST_EDGE)
+Reducer 2 <- Map 1 (SIMPLE_EDGE)
+
+Stage-0
+  Fetch Operator
+    limit:-1
+    Stage-1
+      Reducer 2
+      File Output Operator [FS_15]
+        Select Operator [SEL_14] (rows=3033438 width=300)
+          Output:["_col0","_col1","_col2","_col3","_col4"]
+          Group By Operator [GBY_13] (rows=3033438 width=300)
+            Output:["_col0","_col1","_col2"],aggregations:["collect_set(VALUE._col0)","collect_set(VALUE._col1)"],keys:KEY._col0
+          <-Map 1 [SIMPLE_EDGE]
+            SHUFFLE [RS_12]
+              PartitionCols:_col0
+              Group By Operator [GBY_11] (rows=6066876 width=300)
+                Output:["_col0","_col1","_col2"],aggregations:["collect_set(_col1)","collect_set(_col2)"],keys:_col0
+                Select Operator [SEL_10] (rows=6066876 width=300)
+                  Output:["_col0","_col1","_col2"]
+                  Filter Operator [FIL_9] (rows=6066876 width=300)
+                    predicate:_col3 BETWEEN _col5 AND _col6
+                    Map Join Operator [MAPJOIN_20] (rows=54601889 width=300)
+                      Conds:SEL_2._col1=RS_7._col0(Inner),HybridGraceHashJoin:true,Output:["_col0","_col1","_col2","_col3","_col5","_col6"]
+                    <-Map 3 [BROADCAST_EDGE] vectorized
+                      BROADCAST [RS_7]
+                        PartitionCols:_col0
+                        Select Operator [SEL_5] (rows=11 width=284)
+                          Output:["_col0","_col1","_col2"]
+                          Filter Operator [FIL_19] (rows=11 width=284)
+                            predicate:('2020-10-25' BETWEEN substr(UDFToString(start_date), 1, 10) AND substr(UDFToString(end_date), 1, 10) and (client = 'player') and (is_active = 1) and id is not null)
+                            TableScan [TS_3] (rows=430 width=284)
+                              roku@dim_experiment,dim_experiment,Tbl:COMPLETE,Col:NONE,Output:["id","start_date","end_date","is_active","client"]
+                    <-Select Operator [SEL_2] (rows=49638080 width=300)
+                        Output:["_col0","_col1","_col2","_col3"]
+                        Filter Operator [FIL_18] (rows=49638080 width=300)
+                          predicate:experiment_id is not null
+                          TableScan [TS_0] (rows=49638080 width=300)
+                            roku@fact_amoeba_allocation_events,a,Tbl:PARTIAL,Col:NONE,Output:["device_id","experiment_id","bucket_name"]
+
+Time taken: 5.944 seconds, Fetched: 43 row(s)
+
+```
+
 
 ### Problem: if  no records in Hive partition then copy to Redshift will fail: 
 
