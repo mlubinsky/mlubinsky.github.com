@@ -1,29 +1,54 @@
 
 <https://habr.com/ru/company/mailru/blog/504952/> Avro, Parquet, ...
 
+WITH E as     
+(
+      SELECT
+        id,
+        SUBSTR(CAST(start_date as string),1,10) as  start_date,
+        SUBSTR(CAST(end_date   as string),1,10) as  end_date
+      FROM  roku.dim_experiment
+      WHERE  '2020-10-25' between SUBSTR(CAST(start_date as string),1,10)   and  SUBSTR(CAST(end_date   as string),1,10)
+      AND client='player' AND is_active=1
+)
+SELECT
+          device_id,
+          concat_ws(',',collect_set(experiment_id)),
+         concat_ws(',',collect_set(bucket_name)),
+          '2020-10-25',
+         '2020-10-25'
+     FROM roku.fact_amoeba_allocation_events A
+     JOIN E
+     ON  E.id = A.experiment_id
+     WHERE A.date_key <= '2020-10-25'
+     AND A.date_key between E.start_date AND E.end_date
+     GROUP BY A.device_id;
+
+
+
 ```
 hive> EXPLAIN SELECT
-    >     device_id,
-    >     concat_ws(',',collect_set(experiment_id)),
-    >     concat_ws(',',collect_set(bucket_name)),
-    >     '2020-10-25',
-    >     '2020-10-25'
-    > FROM roku.fact_amoeba_allocation_events A
-    > JOIN
-    > (
-    >  SELECT
-    >    id,
-    >    SUBSTR(CAST(start_date as string),1,10) as  start_date,
-    >    SUBSTR(CAST(end_date   as string),1,10) as  end_date
-    >  FROM  roku.dim_experiment
-    >  WHERE  '2020-10-25' between SUBSTR(CAST(start_date as string),1,10)   and  SUBSTR(CAST(end_date   as string),1,10)
-    >  AND client='player' AND is_active=1
-    > ) E
-    >
-    > ON  E.id = A.experiment_id
-    > WHERE A.date_key <= '2020-10-25'
-    > AND A.date_key between E.start_date AND E.end_date
-    > GROUP BY A.device_id;
+          device_id,
+          concat_ws(',',collect_set(experiment_id)),
+         concat_ws(',',collect_set(bucket_name)),
+          '2020-10-25',
+         '2020-10-25'
+     FROM roku.fact_amoeba_allocation_events A
+     JOIN
+     (
+      SELECT
+        id,
+        SUBSTR(CAST(start_date as string),1,10) as  start_date,
+        SUBSTR(CAST(end_date   as string),1,10) as  end_date
+      FROM  roku.dim_experiment
+      WHERE  '2020-10-25' between SUBSTR(CAST(start_date as string),1,10)   and  SUBSTR(CAST(end_date   as string),1,10)
+      AND client='player' AND is_active=1
+     ) E
+    
+     ON  E.id = A.experiment_id
+     WHERE A.date_key <= '2020-10-25'
+     AND A.date_key between E.start_date AND E.end_date
+     GROUP BY A.device_id;
 OK
 Plan optimized by CBO.
 
