@@ -99,28 +99,31 @@ Time taken: 5.944 seconds, Fetched: 43 row(s)
 
 ### Settings
 
+grep -r  -h "SET hive" *hql  . | sort | uniq
+
 ```
-grep: *hql: No such file or directory
-           SET hive.exec.max.dynamic.partitions.pernode=1500;
-           SET hive.exec.max.dynamic.partitions=1500;
-        SET hive.cli.print.header=true;
-        SET hive.exec.compress.output=false;
-        SET hive.exec.reducers.max=1;
-        SET hive.execution.engine=tez;
-        new_line = "SET hive.limit.query.max.table.partition = {}".format(val)
-       SET hive.execution.engine={hive_engine};
-       SET hive.mapred.mode=false;
-      SET hive.exec.compress.intermediate=true;
-      SET hive.exec.compress.output=false;
-      SET hive.exec.reducers.max=1;
+SET hive.exec.max.dynamic.partitions.pernode=1500;
+SET hive.exec.max.dynamic.partitions=1500;
+SET hive.cli.print.header=true;
+SET hive.exec.compress.output=false;
+SET hive.exec.reducers.max=1;
+SET hive.execution.engine=tez;
+SET hive.execution.engine={hive_engine};
+SET hive.mapred.mode=false;
+
+ SET hive.exec.compress.intermediate=true;
+ SET hive.exec.compress.output=false;
+ SET hive.exec.reducers.max=1;
       query = """SET hive.execution.engine=mr;
-    SET hive.exec.compress.output=false;
-    SET hive.exec.reducers.max=1;
-    SET hive.execution.engine=tez;
+      
+SET hive.exec.compress.output=false;
+SET hive.exec.reducers.max=1;
+SET hive.execution.engine=tez;
     max_r_update_partition_hql = """SET hive.mapred.mode=nonstrict;
-   SET hive.execution.engine={hive_engine};
-   SET hive.mapred.mode=false;
-   SET hive.mapred.mode=nonstrict;
+
+SET hive.execution.engine={hive_engine};
+SET hive.mapred.mode=false;
+SET hive.mapred.mode=nonstrict;
   SET hive.exec.compress.output=false;
   SET hive.exec.dynamic.partition = true;
   SET hive.exec.dynamic.partition.mode = nonstrict;
