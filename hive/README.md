@@ -1,6 +1,6 @@
 
 <https://habr.com/ru/company/mailru/blog/504952/> Avro, Parquet, ...
-
+```
 WITH E as     
 (
       SELECT
@@ -23,8 +23,8 @@ SELECT
      WHERE A.date_key <= '2020-10-25'
      AND A.date_key between E.start_date AND E.end_date
      GROUP BY A.device_id;
-
-
+```
+Plan optimized by CBO:
 
 ```
 hive> EXPLAIN SELECT
@@ -95,6 +95,70 @@ Stage-0
 
 Time taken: 5.944 seconds, Fetched: 43 row(s)
 
+```
+SIMPLE SQL: Plan not optimized by CBO.
+```
+hive> EXPLAIN
+    > SELECT
+    >     A.device_id,
+    >     concat_ws(',',collect_set(A.experiment_id)),
+    >     concat_ws(',',collect_set(A.bucket_name))
+    > FROM roku.fact_amoeba_allocation_events A
+    > JOIN
+    > (
+    >  SELECT
+    >    id,
+    >    SUBSTR(CAST(start_date as string),1,10) as  start_date,
+    >    SUBSTR(CAST(end_date   as string),1,10) as  end_date
+    >  FROM  roku.dim_experiment
+    >  WHERE id = 'I5ut8NBtK'
+    > ) E
+    >
+    > ON  E.id = A.experiment_id
+    > WHERE A.date_key <= '2020-10-25'
+    > AND A.date_key between E.start_date AND E.end_date
+    > GROUP BY A.device_id;
+OK
+Plan not optimized by CBO.
+
+Vertex dependency in root stage
+Map 2 <- Map 1 (BROADCAST_EDGE)
+Reducer 3 <- Map 2 (SIMPLE_EDGE)
+
+Stage-0
+  Fetch Operator
+    limit:-1
+    Stage-1
+      Reducer 3
+      File Output Operator [FS_21]
+        Select Operator [SEL_20] (rows=3033438 width=300)
+          Output:["_col0","_col1","_col2"]
+          Group By Operator [GBY_19] (rows=3033438 width=300)
+            Output:["_col0","_col1","_col2"],aggregations:["collect_set(VALUE._col0)","collect_set(VALUE._col1)"],keys:KEY._col0
+          <-Map 2 [SIMPLE_EDGE]
+            SHUFFLE [RS_18]
+              PartitionCols:_col0
+              Group By Operator [GBY_17] (rows=6066876 width=300)
+                Output:["_col0","_col1","_col2"],aggregations:["collect_set(_col7)","collect_set(_col8)"],keys:_col3
+                Select Operator [SEL_16] (rows=6066876 width=300)
+                  Output:["_col3","_col7","_col8"]
+                  Filter Operator [FIL_24] (rows=6066876 width=300)
+                    predicate:_col12 BETWEEN _col17 AND _col18
+                    Map Join Operator [MAPJOIN_27] (rows=54601889 width=300)
+                      Conds:FIL_26.experiment_id=RS_13.'I5ut8NBtK'(Inner),HybridGraceHashJoin:true,Output:["_col3","_col7","_col8","_col12","_col17","_col18"]
+                    <-Map 1 [BROADCAST_EDGE] vectorized
+                      BROADCAST [RS_13]
+                        PartitionCols:'I5ut8NBtK'
+                        Select Operator [SEL_8] (rows=687 width=89)
+                          Output:["_col1","_col2"]
+                          Filter Operator [FIL_25] (rows=687 width=89)
+                            predicate:(id = 'I5ut8NBtK')
+                            TableScan [TS_6] (rows=1374 width=89)
+                              roku@dim_experiment,dim_experiment,Tbl:COMPLETE,Col:NONE,Output:["id","start_date","end_date"]
+                    <-Filter Operator [FIL_26] (rows=49638080 width=300)
+                        predicate:experiment_id is not null
+                        TableScan [TS_9] (rows=49638080 width=300)
+                          roku@fact_amoeba_allocation_events,a,Tbl:PARTIAL,Col:NONE,Output:["device_id","experiment_id","bucket_name"]
 ```
 
 ### Settings
