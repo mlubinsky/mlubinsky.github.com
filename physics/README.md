@@ -17,6 +17,8 @@ https://habr.com/ru/post/526886/  Quantum Computer
 
 https://news.ycombinator.com/item?id=24996034   Many Quantum Computer Lectures
 
+https://www.youtube.com/watch?v=mujNcrgdops  Александр Львовский
+
 https://www.youtube.com/watch?v=NayWtS53NNU   Эмиль Ахмедов: "Оптика и квантовая механика"
 
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNDqvcsTsKJM1Ee6V8Aaobl0 Введение в квантовую физику - Рубцов Алексей Николаевич
