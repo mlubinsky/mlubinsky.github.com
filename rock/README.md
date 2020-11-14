@@ -103,7 +103,7 @@ and date_format(from_unixtime(server_event_ts), 'yyyy-MM-dd') = '${hiveconf:p_da
 ```
 
 ## sbschema 
-````
+```
 describe formatted sbschema.roku_fact_amoeba_allocation_events
 
 Location: s3://roku-dea-dev-state-stores/roku/facts/fact_amoeba_allocation_events
@@ -117,6 +117,52 @@ ALTER TABLE sbschema.roku_fact_amoeba_allocation_events SET TBLPROPERTIES ('disc
 LOCATION 's3://roku-data-warehouse/roku/facts/fact_amoeba_allocation_events/date_key=2020-08-04';
 
 ```
+
+### Hive error
+
+```
+select device_id, count(*) from roku.fact_amoeba_allocation_events
+where date_key between '2020-10-01' and  '2020-10-10'
+and device_id is null or device_id ='' group by device_id;
+
+ 
+], TaskAttempt 3 failed, info=[Error: Error while running task ( failure ) : org.apache.tez.runtime.library.common.shuffle.orderedgrouped.Shuffle$ShuffleError: error in shuffle in Fetcher_O {Map_1} #13
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.Shuffle$RunShuffleCallable.callInternal(Shuffle.java:305)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.Shuffle$RunShuffleCallable.callInternal(Shuffle.java:287)
+	at org.apache.tez.common.CallableWithNdc.call(CallableWithNdc.java:36)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Map_1: Shuffle failed with too many fetch failures and insufficient progress!failureCounts=55, pendingInputs=132, fetcherHealthy=false, reducerProgressedEnough=false, reducerStalled=true
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.ShuffleScheduler.isShuffleHealthy(ShuffleScheduler.java:1047)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.ShuffleScheduler.copyFailed(ShuffleScheduler.java:788)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.FetcherOrderedGrouped.setupConnection(FetcherOrderedGrouped.java:379)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.FetcherOrderedGrouped.copyFromHost(FetcherOrderedGrouped.java:261)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.FetcherOrderedGrouped.fetchNext(FetcherOrderedGrouped.java:180)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.FetcherOrderedGrouped.callInternal(FetcherOrderedGrouped.java:192)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.FetcherOrderedGrouped.callInternal(FetcherOrderedGrouped.java:56)
+	... 5 more
+, errorMessage=Shuffle Runner Failed:org.apache.tez.runtime.library.common.shuffle.orderedgrouped.Shuffle$ShuffleError: error in shuffle in Fetcher_O {Map_1} #13
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.Shuffle$RunShuffleCallable.callInternal(Shuffle.java:305)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.Shuffle$RunShuffleCallable.callInternal(Shuffle.java:287)
+	at org.apache.tez.common.CallableWithNdc.call(CallableWithNdc.java:36)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Map_1: Shuffle failed with too many fetch failures and insufficient progress!failureCounts=55, pendingInputs=132, fetcherHealthy=false, reducerProgressedEnough=false, reducerStalled=true
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.ShuffleScheduler.isShuffleHealthy(ShuffleScheduler.java:1047)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.ShuffleScheduler.copyFailed(ShuffleScheduler.java:788)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.FetcherOrderedGrouped.setupConnection(FetcherOrderedGrouped.java:379)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.FetcherOrderedGrouped.copyFromHost(FetcherOrderedGrouped.java:261)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.FetcherOrderedGrouped.fetchNext(FetcherOrderedGrouped.java:180)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.FetcherOrderedGrouped.callInternal(FetcherOrderedGrouped.java:192)
+	at org.apache.tez.runtime.library.common.shuffle.orderedgrouped.FetcherOrderedGrouped.callInternal(FetcherOrderedGrouped.java:56)
+	... 5 more
+]], Vertex did not succeed due to OWN_TASK_FAILURE, failedTasks:1 killedTasks:32, Vertex vertex_1592499732248_180534_1_01 [Reducer 2] killed/failed due to:OWN_TASK_FAILURE]Vertex killed, vertexName=Map 1, vertexId=vertex_1592499732248_180534_1_00, diagnostics=[Vertex received Kill while in RUNNING state., Vertex did not succeed due to OTHER_VERTEX_FAILURE, failedTasks:0 killedTasks:1, Vertex vertex_1592499732248_180534_1_00 [Map 1] killed/failed due to:OTHER_VERTEX_FAILURE]DAG did not succeed due to VERTEX_FAILURE. failedVertices:1 killedVertices:1
+```
+
 ### Other topics 
 
 ```
