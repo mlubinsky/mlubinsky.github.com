@@ -1,4 +1,7 @@
-https://tdom.dev/go-in-production. Go in production: web frameforls and sql
+https://reliability.substack.com/p/go-for-internal-services
+
+
+https://tdom.dev/go-in-production. Go in production: web frameworks and sql
 
 
 https://www.ardanlabs.com/blog/2020/09/using-python-memory.html. Go + Python
