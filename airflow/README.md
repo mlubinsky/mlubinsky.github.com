@@ -1,5 +1,8 @@
 https://stackoverflow.com/questions/64796614/airflow-how-to-pass-template-macro-to-hive-script
 
+Book:
+<https://livebook.manning.com/book/data-pipelines-with-apache-airflow/chapter-5/v-5/78>
+
 ## template and macros
 
 <https://www.astronomer.io/guides/templating/> 
