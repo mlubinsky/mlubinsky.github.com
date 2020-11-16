@@ -1,3 +1,8 @@
+BetterExplained.org
+Brillant.org
+
+https://news.ycombinator.com/item?id=25100241
+
 ## группы
 
 <https://ru.coursera.org/learn/geometriya-i-gruppy> Геометрия и группы. Савватеев Алексей Владимирович
