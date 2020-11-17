@@ -4,6 +4,8 @@ https://www.udemy.com/course/the-ultimate-hands-on-course-to-master-apache-airfl
 
 https://github.com/marclamberti/airflow-materials-vm
 
+https://marclamberti.com/
+
 
 https://www.udemy.com/course/apache-airflow/learn/lecture/17368650
  
