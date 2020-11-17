@@ -3,6 +3,9 @@
 https://www.udemy.com/course/the-ultimate-hands-on-course-to-master-apache-airflow/learn/lecture/15819418#overview
 
 https://github.com/marclamberti/airflow-materials-vm
+
+
+https://www.udemy.com/course/apache-airflow/learn/lecture/17368650
  
 
 ## Macro
