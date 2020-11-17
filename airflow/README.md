@@ -85,6 +85,26 @@ task_3 >> [task_4, task_5]
 
 Another example:
 ```
+first_event_chain = 
+(
+   hv_agg_channel_ux_day_prep & 
+   hv_agg_channel_ux_day_stg & 
+   hv_agg_channel_ux_day & 
+   (
+     agg_channel_ux_day |
+           (
+               hv_agg_channel_ux_week & agg_channel_ux_week
+            ) 
+            |
+             (hv_agg_channel_ux_month & agg_channel_ux_month)
+    )
+    & 
+    channel_events_done_dummy_task
+ )
+
+
+-----------------------------------------------
+
  channel_provider_ux_agg_task_chain = 
  (
    channel_provider_ux_check_done & 
