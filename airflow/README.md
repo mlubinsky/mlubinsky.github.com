@@ -81,6 +81,38 @@ task_3 >> [task_4, task_5]
 [task_4 , task_5 ] >> task_6
 ```
 
+
+
+Another example:
+```
+ channel_provider_ux_agg_task_chain = 
+ (
+   channel_provider_ux_check_done & 
+     (hv_channel_provider_ux_details_stg & 
+        (hv_channel_provider_ux_monthly  &
+          (
+            (
+              check_agg_channel_ux_provider_metrics_monthly &
+              channel_provider_ux_month &
+              hv_channel_provider_ux_weekly &
+              channel_provider_ux_weekly
+            )
+           | 
+           channel_provider_task_chain
+          ) &
+          channel_provider_ux_dm_task
+        ) | channel_provider_ux_done_dummy_task
+       ) &   channel_provider_ux_join_task
+ )
+ 
+ 
+ 
+IF3 - Looking to check for path s3://roku-dea-dev/sand-box/roku-data-warehouse/donemarkers/tables/roku/agg_channel_ux_provider_metrics_time_grain/2020-10-23.done 
+```                                        
+
+
+
+
 ### How to get result of SQL?
 
 https://airflow.apache.org/docs/stable/_modules/airflow/operators/sql.html
