@@ -1,10 +1,12 @@
-### SQL UI tools
+### SQL UI client tools
 
 Sequel-Ace https://github.com/Sequel-Ace/Sequel-Ace
 
 TablePlus
 
 DBeaver
+
+usql <https://github.com/xo/usql>
 
 ## Falcon UI
 
