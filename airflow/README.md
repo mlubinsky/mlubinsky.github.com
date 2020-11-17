@@ -93,8 +93,11 @@ cross_downstream([task_a, task_b], [task_c, task_d])
 [task_a, task_b] >> task_d
 ```
 https://stackoverflow.com/questions/62895219/getting-error-in-airflow-dag-unsupported-operand-types-for-list-and-lis
-
-
+```
+File "/tmp/mlubinsky/roku-dag-bag.pex/agg/agg_daily_non_bucketed/agg_daily_non_bucketed.py", line 476, in get_agg_daily_dag
+    >> [hive_agg_amoeba_allocation_daily_task_1, redshift_agg_amoeba_allocation_events_load_task_1]
+TypeError: unsupported operand type(s) for >>: 'HiveOperator' and 'list'
+```
 Following does not work:
 ```
 task_1 >> [task_2 , task_3] >> [ task_4 , task_5 ] >> task_6 
