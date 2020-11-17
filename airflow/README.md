@@ -3,6 +3,12 @@ https://stackoverflow.com/questions/64796614/airflow-how-to-pass-template-macro-
 Book:
 <https://livebook.manning.com/book/data-pipelines-with-apache-airflow/chapter-5/v-5/78>
 
+
+## Dependencies between tasks - ExternalTaskSensor
+
+https://www.mikulskibartosz.name/using-sensors-in-airflow/
+
+
 ## template and macros
 
 <https://www.astronomer.io/guides/templating/> 
@@ -53,6 +59,26 @@ http://blog.manugarri.com/how-to-trigger-a-dag-with-custom-parameters-on-airflow
 
 ## How to combine tasks
 
+  Task C will run after both Task A and B complete
+[task_a, task_b] >> task_c
+
+```
+from airflow.utils.helpers import chain
+#  Both Task B and C depend on Task A
+# Task D depends on both Task B and C
+chain(task_a, [task_b, task_c], task_d)
+
+# The statement above is equivalent to:
+task_a >> [task_b, task_c] >> task_d
+
+Use cross_downstream() to set dependencies between two groups of tasks:
+from airflow.utils.helpers import cross_downstream
+# Task C and D will run after both Task A and B complete
+cross_downstream([task_a, task_b], [task_c, task_d])
+# The statement above is equivalent to:
+[task_a, task_b] >> task_c
+[task_a, task_b] >> task_d
+```
 https://stackoverflow.com/questions/62895219/getting-error-in-airflow-dag-unsupported-operand-types-for-list-and-lis
 
 
