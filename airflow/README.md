@@ -1,3 +1,5 @@
+https://www.udemy.com/course/the-ultimate-hands-on-course-to-master-apache-airflow/learn/lecture/15819418#overview
+
 https://stackoverflow.com/questions/64796614/airflow-how-to-pass-template-macro-to-hive-script
 
 Book:
