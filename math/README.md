@@ -120,6 +120,8 @@ https://vk.com/physics_math  Books
 
 https://www.youtube.com/watch?v=spUNpyF58BY
 
+https://habr.com/ru/post/528734/
+
 <https://habr.com/post/434734/> . Fourier transf
 
 <https://news.ycombinator.com/item?id=18099484> Proof Without Words: Gregory’s Theorem
