@@ -385,6 +385,8 @@ Presto  query execution rate that is three times faster than Hive.
 
 Druid is fast
 
+https://druid.apache.org/docs/latest/querying/lookups.html . LOOKUPS in Druid
+
 <https://medium.com/@leventov/comparison-of-the-open-source-olap-systems-for-big-data-clickhouse-druid-and-pinot-8e042a5ed1c7>
 
 
