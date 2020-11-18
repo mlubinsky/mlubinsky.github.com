@@ -497,7 +497,14 @@ The FIND_IN_SET function searches for the search string in the source_string_lis
 Example: FIND_IN_SET('ha','hao,mn,hc,ha,hef') returns 4
 
 
-### Lateral
+### Lateral VIEW explode map_keys
+```
+SELECT id, buckets, single_bucket
+FROM roku.dim_experiment
+LATERAL VIEW explode(map_keys(buckets)) exp_buckets AS single_bucket
+LIMIT 10 ;
+```
+
 ```
   create table sbschema.roku_t1 (x int, y int,  active_exp_map string);
   insert into sbschema.roku_t1 values
