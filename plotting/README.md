@@ -5,6 +5,7 @@
 
 <https://news.ycombinator.com/item?id=20507592> 
 
+https://cloudit-eg.com/data-visualization-tools-to-make-your-data-speak/
 
 <https://datashader.org/>
 
