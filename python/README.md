@@ -5,6 +5,10 @@ https://news.ycombinator.com/item?id=24565499. python internals
 
 https://gto76.github.io/python-cheatsheet/  Cheetshhet
 
+f-strings: <https://miguendes.me/amp/73-examples-to-help-you-master-pythons-f-strings>
+
+SQLite connection <http://blog.rtwilson.com/a-python-sqlite3-context-manager-gotcha/>
+
 
 ### Python instead bash
 
