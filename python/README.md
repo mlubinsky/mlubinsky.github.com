@@ -7,8 +7,11 @@ https://gto76.github.io/python-cheatsheet/  Cheetshhet
 
 f-strings: <https://miguendes.me/amp/73-examples-to-help-you-master-pythons-f-strings>
 
+### SQLite
+
 SQLite connection <http://blog.rtwilson.com/a-python-sqlite3-context-manager-gotcha/>
 
+<https://habr.com/ru/company/ruvds/blog/514538/> SQLite
 
 ### Python instead bash
 
@@ -52,7 +55,7 @@ https://medium.com/@stephen.odaibo/docker-containers-python-virtual-environments
 
 <https://news.ycombinator.com/item?id=23386537> debugging
 
-<https://habr.com/ru/company/ruvds/blog/514538/> SQLite
+
 
 <https://realpython.com/python-mmap/> memory map files
 
