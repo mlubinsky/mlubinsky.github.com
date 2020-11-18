@@ -2,7 +2,7 @@
 
 Sequel-Ace https://github.com/Sequel-Ace/Sequel-Ace
 
-TablePlus
+TablePlus  https://tableplus.com/
 
 DBeaver
 
