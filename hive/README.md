@@ -1,5 +1,37 @@
+## File formats: pvro, parquet
 
 <https://habr.com/ru/company/mailru/blog/504952/> Avro, Parquet, ...
+
+
+## Drop external table with data
+DROP deletes data for managed tables while it only deletes metadata for external ones
+
+```
+ALTER TABLE <table-name> SET TBLPROPERTIES('EXTERNAL'='False'); //changing the tbl properties to to make the table as internal
+DROP TABLE  <table-name>; //now the table is internal if you drop the table data will be dropped automatically.
+```
+
+
+ALTER TABLE addresses_text SET TBLPROPERTIES ('external.table.purge'='false');
+
+Create an external table to store the CSV data, configuring the table so you can drop it along with the data.
+```
+
+CREATE EXTERNAL TABLE IF NOT EXISTS names_text(
+  a INT, b STRING)
+  ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY ','
+  STORED AS TEXTFILE
+  LOCATION '/user/andrena'
+  TBLPROPERTIES ('external.table.purge'='true');          
+```
+Run DROP TABLE on the external table.
+```
+DROP TABLE names_text;
+```
+
+
+### Etc
 ```
 WITH E as     
 (
