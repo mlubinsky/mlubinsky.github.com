@@ -1,9 +1,11 @@
+https://habr.com/ru/company/skillfactory/blog/528232/
+
 <https://snarky.ca/why-you-should-use-python-m-pip/>.  python -m pip
 
 https://news.ycombinator.com/item?id=24565499. python internals
 
 
-https://gto76.github.io/python-cheatsheet/  Cheetshhet
+https://gto76.github.io/python-cheatsheet/  Cheetsheet
 
 f-strings: <https://miguendes.me/amp/73-examples-to-help-you-master-pythons-f-strings>
 
