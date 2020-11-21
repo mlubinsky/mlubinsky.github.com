@@ -44,6 +44,8 @@ View the Application Here: https://covid-dash-udemy.herokuapp.com/
 
 ## React and D3 
 
+https://reactfordataviz.com/ 
+
 <https://reactfordataviz.com/> 
 
 <https://wattenberger.com/blog/react-and-d3>
