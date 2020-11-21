@@ -1117,6 +1117,8 @@ SELECT ST_X(geom) as longitude, ST_Y(geom) as latitude FROM list_geom
   
 ### PostgREST
 
+https://news.ycombinator.com/item?id=25159097
+
 <http://postgrest.org> 
 
 <http://postgrest.org/en/v5.2/api.html#binary-output>
