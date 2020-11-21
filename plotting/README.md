@@ -9,6 +9,10 @@ https://cloudit-eg.com/data-visualization-tools-to-make-your-data-speak/
 
 <https://datashader.org/>
 
+
+## Observable 
+https://news.ycombinator.com/item?id=25161409
+
 ### Bokeh
 
 <https://sadanand-singh.github.io/posts/interactivedatavis/> 
