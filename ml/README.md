@@ -1,3 +1,5 @@
+https://github.com/gugarosa/opytimizer 
+
 https://www.mindsdb.com/. MindsDB provides a simple way to create, train and test ML models and then publish them as virtual AI-Tables into databases.
 
 Integrate seamlessly with most of databases on the market
