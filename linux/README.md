@@ -1,4 +1,4 @@
-<https://zaiste.net/posts/shell-commands-rust/> many comman line tools in Rust (procs!, fd)
+<https://zaiste.net/posts/shell-commands-rust/> many command line tools in Rust (procs!, fd)
 
 <http://cb.vu/unixtoolbox.xhtml>
 
@@ -13,6 +13,10 @@
 ## How pipe is implemented
 
 https://news.ycombinator.com/item?id=22704774>
+
+## incorn vs inotify
+
+https://www.linux-magazine.com/Issues/2014/158/Monitoring-with-incron
 
 ## strace
 <https://habr.com/ru/company/badoo/blog/493856/>
