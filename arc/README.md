@@ -1,5 +1,6 @@
 Book:  <http://streamingsystems.net/>
 
+https://www.infoq.com/articles/whats-the-next-step-for-data-management/
 
 <https://a16z.com/2020/10/15/the-emerging-architectures-for-modern-data-infrastructure/>
 
