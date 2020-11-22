@@ -2,6 +2,8 @@
 
 while(0) in macro https://bowero.nl/blog/2020/10/25/defining-c-macros-the-right-way/
 
+https://news.ycombinator.com/item?id=25176531 favoritsC tricks
+
 https://github.com/nothings/single_file_libs
 
 https://github.com/p-ranav/awesome-hpp
