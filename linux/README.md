@@ -14,7 +14,7 @@
 
 https://news.ycombinator.com/item?id=22704774>
 
-## incorn vs inotify
+## incron vs inotify
 
 https://www.linux-magazine.com/Issues/2014/158/Monitoring-with-incron
 
