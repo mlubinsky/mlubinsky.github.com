@@ -112,6 +112,8 @@ Pexpect allows your script to spawn a child application and control it as if a h
 
 ## SSH 
 
+https://www.reddit.com/r/Python/comments/jxxncp/sshcontroller_a_small_package_to_easily_run_ssh/ sshcontroller
+
 https://gravitational.com/blog/ssh-config/ 
 
 <https://smallstep.com/blog/ssh-tricks-and-tips/>
