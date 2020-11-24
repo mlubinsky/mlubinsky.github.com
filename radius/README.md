@@ -25,6 +25,16 @@ https://wifisoft.zendesk.com/hc/en-us/articles/203566091-Understanding-RADIUS-se
 
 ### radius_traffic = 2,882,647
 
+```
+  bytes_in = datastore.query(
+        SELECT company, msisdn, SUM(bytes) AS bytes_in 
+         FROM radius_traffic  
+         WHERE timebin >= %(start)s AND timebin < %(end)s 
+         AND direction = 1 
+         AND company != 0 
+         GROUP BY company, msisdn"
+```        
+
 select FROM_UNIXTIME(min(timebin)), FROM_UNIXTIME(max(timebin)) from radius_traffic 
 
 2019-06-13 16:30:00	   2020-11-24 19:30:00
