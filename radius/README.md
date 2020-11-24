@@ -18,15 +18,20 @@ https://support.sonus.net/display/UXDOC61/Call+Detail+Records+Primer
 https://wifisoft.zendesk.com/hc/en-us/articles/203566091-Understanding-RADIUS-session-records-CDRs-
 
 
-## analyze_company_groups  640
+## analyze_company_groups loc  640
 
 
-## analyze_company_devices_radius 317
+## analyze_company_devices_radius loc 317
 
 ### radius_traffic = 2,882,647
 
+select FROM_UNIXTIME(min(timebin)), FROM_UNIXTIME(max(timebin)) from radius_traffic 
+
+2019-06-13 16:30:00	   2020-11-24 19:30:00
+
 select company, count(*) from radius_traffic group by company order by 2
 
+```
 3663	6
 3731	6
 3681	8
@@ -63,6 +68,17 @@ select company, count(*) from radius_traffic group by company order by 2
 3061	701037
 3361	735208
 3116	809452
+```
+
+### subscriber_imei
+
+select FROM_UNIXTIME(min(last_seen)), FROM_UNIXTIME(max(last_seen)) from subscriber_imei 
 
 
-## analyze_company_gamma 445
+### subscriber_imsi
+
+### subscriber_sgsn
+
+### subscriber_location
+
+## analyze_company_gamma loc 445
