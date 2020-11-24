@@ -6,6 +6,7 @@ Integrate seamlessly with most of databases on the market
 Use SQL queries for all manipulation with ML models
 Improve model training speed with GPU without affecting your database performance
 
+https://betterexplained.com/articles/intuitive-convolution/ Convolution
 
 https://madewithml.com/
 
