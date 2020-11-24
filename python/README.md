@@ -139,6 +139,14 @@ https://medium.com/better-programming/python-7-advanced-features-that-you-may-no
 <https://medium.com/analytics-vidhya/6-exceptionally-common-pitfalls-of-python-exception-handling-44871d6afbc7> Error handling
 
 ```
+/Users/mlubinsky/my_virt_envs
+which pip
+python -m pip install virtualenv
+virtualenv -p /Users/mlubinsky/opt/anaconda3/bin/python pywedge
+source pywedge/bin/activate
+```
+
+```
 import sys
 print(sys.prefix) # '/System/Library/Frameworks/Python.framework/Versions/3.5'
 import site
