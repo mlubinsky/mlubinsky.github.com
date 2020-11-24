@@ -79,12 +79,14 @@ UNION ALL
 select 'subscriber_sgsn'  , FROM_UNIXTIME(min(last_seen)), FROM_UNIXTIME(max(last_seen)) from subscriber_sgsn 
 UNION ALL
 select 'subscriber_location', FROM_UNIXTIME(min(last_seen)), FROM_UNIXTIME(max(last_seen)) from subscriber_location
-
+UNION ALL
+select 'subscriber_login', FROM_UNIXTIME(min(last_seen)), FROM_UNIXTIME(max(last_seen)) from subscriber_login
 
 subscriber_imei	      2019-06-20 14:19:50	2020-11-24 20:05:00
 subscriber_imsi	      2019-11-04 15:36:18	2020-11-24 20:05:00
 subscriber_sgsn	      2019-06-13 16:42:00	2020-11-24 20:05:00
 subscriber_location	  2019-09-12 12:06:26	2020-11-21 11:21:05
+subscriber_login	     2019-06-13 16:42:13	2020-11-21 11:17:34
 ```
 
 ### subscriber_imei
@@ -96,5 +98,7 @@ subscriber_location	  2019-09-12 12:06:26	2020-11-21 11:21:05
 ### subscriber_sgsn
 
 ### subscriber_location
+
+### subscriber_login
 
 ## analyze_company_gamma loc 445
