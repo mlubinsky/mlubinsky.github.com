@@ -1,5 +1,12 @@
 ### RADIUS CDR
+
+https://en.wikipedia.org/wiki/RADIUS
+
 Remote Authentication Dial In User Service (RADIUS) for streaming the Call Detail Records (CDR).
+
+Remote Access Dial-In User Service (RADIUS) is a networking protocol providing authentication, authorization, and accounting. 
+
+https://docs.microsoft.com/en-us/windows/win32/nps/ias-radius-authentication-and-accounting
 
 https://wiki.freeradius.org/Home
 
