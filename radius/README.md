@@ -112,3 +112,28 @@ subscriber_login	     2019-06-13 16:42:13	2020-11-21 11:17:34
 ### subscriber_login
 
 ## analyze_company_gamma loc 445
+```
+def read_data(company, resolution, data_type):
+   if "activity" in data_type:
+       data = callproc("getActivity")
+   else:    
+       data=callproc("getTraffic")
+
+  for company in companies
+     for data_type in [jangle-activity, jangle-bytes, radius-activity, radius-bytes]
+        analyze_company(company, data_type)
+```
+
+
+## IMEI - International Mobile Equipment Identity
+https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity
+
+https://en.wikipedia.org/wiki/MSISDN
+
+## IMSI - international mobile subscriber identity 
+An international mobile subscriber identity (IMSI) number uniquely identifies a cellphone subscriber. It's usually stored in a SIM card. 
+The IMSI is used internally within cellphone systems to identify a phone.
+
+## MSISDN  number is a cellphone's phone number
+A mobile subscriber integrated services digital network (MSISDN) number is a cellphone's phone number. 
+Most users don't know their IMSIs, while the MSISDN can be dialed to reach the phone.
