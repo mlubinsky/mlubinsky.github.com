@@ -1,3 +1,19 @@
+
+## IMEI - International Mobile Equipment Identity
+https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity
+
+## IMSI - international mobile subscriber identity 
+https://en.wikipedia.org/wiki/MSISDN
+
+An international mobile subscriber identity (IMSI) number uniquely identifies a cellphone subscriber. It's usually stored in a SIM card. 
+The IMSI is used internally within cellphone systems to identify a phone.
+
+## MSISDN  number is a cellphone's phone number
+https://en.wikipedia.org/wiki/MSISDN
+
+A mobile subscriber integrated services digital network (MSISDN) number is a cellphone's phone number. 
+Most users don't know their IMSIs, while the MSISDN can be dialed to reach the phone.
+
 ### RADIUS CDR
 
 https://en.wikipedia.org/wiki/RADIUS
@@ -118,6 +134,37 @@ subscriber_login	     2019-06-13 16:42:13	2020-11-21 11:17:34
 
 ### subscriber_login
 
+
+
+### proc getActivity
+```
+CREATE PROCEDURE `getActivity`(q_company INT unsigned, 
+   q_msisdn BIGINT unsigned, -- None
+   q_apn INT unsigned,       -- None  
+   q_data_type VARCHAR(256), 
+   q_time_start INT unsigned, 
+   q_time_end INT unsigned, 
+   q_resolution INT unsigned, 
+   q_split_by VARCHAR(256) 
+   )
+```
+### proc getTraffic
+```
+CREATE PROCEDURE `getTraffic`(IN q_company INT unsigned,
+   IN q_msisdn BIGINT unsigned,   -- None
+   IN q_remote_ip INT unsigned,   -- None
+   IN q_data_type VARCHAR(1024), 
+   IN q_protocol INT unsigned,    -- None
+   IN q_time_start INT unsigned, 
+   IN q_time_end INT unsigned, 
+   IN q_resolution INT unsigned, 
+   IN q_split_by VARCHAR(256) 
+  )
+```  
+
+
+
+
 ## analyze_company_gamma loc 445
 ```
 def read_data(company, resolution, data_type):
@@ -132,15 +179,3 @@ def read_data(company, resolution, data_type):
 ```
 
 
-## IMEI - International Mobile Equipment Identity
-https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity
-
-https://en.wikipedia.org/wiki/MSISDN
-
-## IMSI - international mobile subscriber identity 
-An international mobile subscriber identity (IMSI) number uniquely identifies a cellphone subscriber. It's usually stored in a SIM card. 
-The IMSI is used internally within cellphone systems to identify a phone.
-
-## MSISDN  number is a cellphone's phone number
-A mobile subscriber integrated services digital network (MSISDN) number is a cellphone's phone number. 
-Most users don't know their IMSIs, while the MSISDN can be dialed to reach the phone.
