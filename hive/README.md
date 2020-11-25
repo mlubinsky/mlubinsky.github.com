@@ -562,7 +562,7 @@ select * from sbschema.roku_t1 lateral view explode(str_to_map(active_exp_map,  
  	2	2	c:1	            c	1
 ```
 
-### sort array
+### sort_array
 ```
 WITH T as (
 SELECT 1 as dev_id, 'a:1&b:2' as a, 10 as cnt
@@ -580,6 +580,45 @@ FROM
      FROM T
 ) S
 GROUP BY a_sorted
+```
+build active_exp_map from fact_amoeba_alloc_Events
+```
+CREATE EXTERNAL TABLE IF NOT EXISTS sbschema.roku_tmp2
+(
+ dev_id STRING,
+ e STRING,
+ b STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+COLLECTION ITEMS TERMINATED BY ','
+MAP KEYS TERMINATED BY ':'
+STORED AS textfile
+LOCATION 's3://roku-dea-dev/sand-box/roku-data-warehouse/roku/dimensions/tmp2'
+;
+
+
+INSERT INTO sbschema.roku_tmp2
+SELECT 1 as dev_id, 'c' as e, '1' as b
+UNION ALL
+SELECT 1 as dev_id, 'b' as e, '2' as b
+UNION ALL
+SELECT 1 as dev_id, 'b' as e, '2' as b
+UNION ALL
+SELECT 2 as dev_id, 'b' as e, '2' as b
+);
+
+-- build active_exp_map with sorted content
+SELECT
+     dev_id,
+     concat_ws('&', sort_array(collect_set(e || ':' || b)))
+FROM sbschema.roku_tmp2
+GROUP BY dev_id
+```
+Output:
+```
+1	b:2&c:1
+2	b:2
 ```
 
 ### collect_set and concat_ws 
