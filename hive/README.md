@@ -562,6 +562,26 @@ select * from sbschema.roku_t1 lateral view explode(str_to_map(active_exp_map,  
  	2	2	c:1	            c	1
 ```
 
+### sort array
+```
+WITH T as (
+SELECT 1 as dev_id, 'a:1&b:2' as a, 10 as cnt
+UNION ALL
+SELECT 1 as dev_id, 'a:1&b:2' as a, 11 as cnt
+UNION ALL
+SELECT 2 as dev_id, 'b:2&a:1' as a, 12 as cnt
+)
+SELECT
+     S.a_sorted,
+     SUM(S.cnt)
+FROM
+(
+     SELECT cnt,   concat_ws('&', sort_array(split(a, '&')) ) as a_sorted
+     FROM T
+) S
+GROUP BY a_sorted
+```
+
 ### collect_set and concat_ws 
 <https://stackoverflow.com/questions/61038050/hive-how-to-eliminate-the-duplicated-substrings>
 ```
