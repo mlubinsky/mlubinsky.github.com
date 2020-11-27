@@ -40,6 +40,34 @@ https://support.sonus.net/display/UXDOC61/Call+Detail+Records+Primer
 
 https://wifisoft.zendesk.com/hc/en-us/articles/203566091-Understanding-RADIUS-session-records-CDRs-
 
+### radius_traffic_total
+
+select company, direction, sum(bytes)
+from radius_traffic_total group by company, direction
+order by 3 desc LIMIT 20
+```
+3659	1	743699779628
+3116	2	625502775854
+3659	2	308142231981
+3655	2	134790896253
+3666	1	108531627083
+3579	2	86611320084
+3655	1	81948915483
+3116	1	74895556907
+3612	2	74864970094
+3682	1	41605071448
+3061	1	20826023011
+3361	2	20412815912
+3445	2	18166636202
+3579	1	17617781901
+3445	1	15959060214
+3453	1	14895019133
+3666	2	11677578270
+3529	2	11483282990
+3641	2	10268251016
+3641	1	9165600332
+```
+
 ### jangle_traffic_total
 
 select company, sum(bytes), sum(packets)
