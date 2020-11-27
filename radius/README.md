@@ -42,6 +42,19 @@ https://wifisoft.zendesk.com/hc/en-us/articles/203566091-Understanding-RADIUS-se
 
 ### radius_traffic_total
 
+select nas, count(*) from radius_traffic_total group by nas
+```
+0	           78543
+168848919	  329462
+168979991	  167293
+1674043144	    14
+1674043147	161089
+2887712800	  3418
+2887712817	  7192
+```
+
+
+
 select company, direction, sum(bytes)
 from radius_traffic_total group by company, direction
 order by 3 desc LIMIT 20
