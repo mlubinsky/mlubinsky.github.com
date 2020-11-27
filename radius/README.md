@@ -40,12 +40,12 @@ https://support.sonus.net/display/UXDOC61/Call+Detail+Records+Primer
 
 https://wifisoft.zendesk.com/hc/en-us/articles/203566091-Understanding-RADIUS-session-records-CDRs-
 
-### SQL
+### jangle_traffic_total
 
 select company, sum(bytes), sum(packets)
 from jangle_traffic_total group by company
-```
 order by 2 desc LIMIT 20
+```
 3659	701642133246	1104855546
 3116	391760761968	702240597
 0	248696776779	1425366043
