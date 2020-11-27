@@ -51,6 +51,13 @@ https://e.lanbook.com/reader/book/619/#26. Блохинцев ДИ Основы 
 
 https://www.youtube.com/watch?v=UwwBG-MbniY. Thinking fast and slow (Daniel Kahneman - Lex Fridman)
 
+
+## Electromagnetism
+
+http://www.av8n.com/physics/maxwell-ga.htm
+
+https://news.ycombinator.com/item?id=25219503
+
 ## BOOKS
 
 http://nuclphys.sinp.msu.ru/books/qm/index.html
