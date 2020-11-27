@@ -8,4 +8,6 @@ https://news.ycombinator.com/item?id=25226260
 
 https://github.com/simonw/datasette
 
+https://simonwillison.net/
+
 https://dogsheep.github.io/
