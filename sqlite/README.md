@@ -1,3 +1,10 @@
+## SQLite utils
+
+https://github.com/simonw/sqlite-utils
+
+Sequel Ace - UI
+
+
 ## JSON
 
 https://dgl.cx/2020/06/sqlite-json-support
