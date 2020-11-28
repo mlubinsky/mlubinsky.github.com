@@ -43,6 +43,93 @@ https://support.sonus.net/display/UXDOC61/Call+Detail+Records+Primer
 
 https://wifisoft.zendesk.com/hc/en-us/articles/203566091-Understanding-RADIUS-session-records-CDRs-
 
+
+### Get activity
+
+```
+CREATE FUNCTION `_getActivityQuery`(q_company INT unsigned, 
+   q_msisdn BIGINT unsigned, 
+   q_apn INT unsigned, 
+   q_data_type_in VARCHAR(256), 
+   q_time_start INT unsigned, 
+   q_time_end INT unsigned, 
+   q_resolution INT unsigned, 
+   q_split_by_in VARCHAR(256) 
+  ) RETURNS text CHARSET utf8mb4
+BEGIN
+  DECLARE count_column VARCHAR(256);
+  DECLARE data_type VARCHAR(256);
+  DECLARE extra_columns VARCHAR(256);
+  DECLARE group_by VARCHAR(256);
+  DECLARE table_prefix VARCHAR(256);
+  DECLARE table_full VARCHAR(256);
+  DECLARE table_total VARCHAR(256);
+  DECLARE query_table VARCHAR(256);
+  DECLARE query_timebin VARCHAR(256);
+  DECLARE query_where VARCHAR(1024);
+  DECLARE query VARCHAR(10240);
+  DECLARE split_by VARCHAR(256);
+  DECLARE where_company VARCHAR(256);
+  DECLARE where_msisdn VARCHAR(256);
+  DECLARE where_apn VARCHAR(256);
+  DECLARE where_timebin VARCHAR(256);
+
+  SET data_type := _validateDataType(q_data_type_in, "activity");
+  SET split_by := _validateSplitBy(q_split_by_in, data_type);
+
+  SET where_timebin := _getWhereTimebin("t.timebin", q_time_start, q_time_end, q_resolution);
+  SET where_company := IF(ISNULL(q_company), '', CONCAT(' AND t.company = ', q_company));
+  SET where_msisdn := IF(ISNULL(q_msisdn), '', CONCAT(' AND t.msisdn = ', q_msisdn));
+  SET where_apn := IF(ISNULL(q_apn), '', CONCAT(' AND t.apn = ', q_apn));
+
+  SET query_where = CONCAT_WS('', where_timebin, where_company, where_msisdn, where_apn);
+
+  SET query_timebin := IF (q_resolution = 900 OR ISNULL(q_resolution), 'timebin', CONCAT('((timebin DIV ', q_resolution, ') * ', q_resolution, ')'));
+
+  SET table_prefix := _getDataTypeTablePrefix(data_type);
+
+  CASE data_type
+    WHEN 'radius-activity' THEN
+      SET table_full := CONCAT(table_prefix, "active");
+      IF (q_apn IS NOT NULL OR split_by = "apn") THEN
+        RETURN 'SELECT ''APN filtering/splitting is not available for RADIUS activity: please use mcaudit ''''mc-activity'''' instead.''';
+      END IF;
+    ELSE
+      IF (q_apn IS NOT NULL OR split_by = "apn") THEN
+        SET table_full := CONCAT(table_prefix, "traffic");
+      ELSE
+        SET table_full := CONCAT(table_prefix, "active");
+      END IF;
+  END CASE;
+  SET table_total := table_full;
+
+  
+
+  SET count_column := IF(ISNULL(q_msisdn), IF(q_resolution = 900 AND (data_type != "mc-activity" OR split_by = "apn"), "count", "COUNT(DISTINCT msisdn)"), "1");
+
+  
+
+  SET query_table := IF(count_column = "count", table_total, table_full);
+
+  SET extra_columns := CONCAT(query_timebin, " AS timebin");
+  SET group_by := CONCAT(" GROUP BY (t.timebin DIV ", q_resolution, ")");
+
+  CASE
+    WHEN split_by = 'apn' THEN
+      SET extra_columns := CONCAT(extra_columns, ", ", split_by);
+      SET group_by := CONCAT(group_by, ", ", split_by);
+    ELSE
+      SET group_by := group_by; 
+  END CASE;
+
+  SET query := CONCAT('SELECT ', extra_columns, ', ', count_column, ' AS count FROM ', query_table, ' AS t', query_where);
+  SET query := CONCAT_WS('', query, group_by);
+
+  RETURN query;
+END
+```
+
+
 ### radius_traffic_total
 
 select nas, count(*) from radius_traffic_total group by nas
