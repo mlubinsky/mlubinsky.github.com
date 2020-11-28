@@ -116,15 +116,109 @@ select direction, count(*) from jangle_traffic_total group by direction
 ```
 select protocol, count(*) from jangle_traffic_total group by protocol
 ```
-1	176853
-2	80
-6	510891
+1	  176853
+2	      80
+6	  510891
 17	420284
-47	1832
-54	1
-112	77565
-132	143
+47	  1832
+54	     1
+112	 77565
+132	   143
 ```
+
+## Hourly jangle_traffic_total
+
+```
+
+     SELECT
+         HOUR(FROM_UNIXTIME(timebin))  AS hour,
+         SUM(bytes) AS bytes,
+         direction
+     FROM jangle_traffic_total
+     GROUP BY
+        HOUR(FROM_UNIXTIME(timebin)) ,
+        direction
+
+    hour         bytes  direction
+0      0  3.898591e+10          1
+1      0  1.998000e+10          2
+2      1  2.792496e+10          1
+3      1  2.092122e+10          2
+4      2  2.670810e+10          1
+5      2  2.110084e+10          2
+6      3  2.958978e+10          1
+7      3  1.697634e+10          2
+8      4  2.560659e+10          1
+9      4  1.711182e+10          2
+10     5  2.498675e+10          1
+11     5  1.943292e+10          2
+12     6  3.537730e+10          1
+13     6  1.739486e+10          2
+14     7  2.627113e+10          1
+15     7  1.769755e+10          2
+16     8  2.883663e+10          1
+17     8  1.979429e+10          2
+18     9  3.534325e+10          1
+19     9  1.895512e+10          2
+20    10  4.075442e+10          1
+21    10  2.459932e+10          2
+22    11  4.026227e+10          1
+23    11  2.594304e+10          2
+24    12  5.347469e+10          1
+25    12  2.906245e+10          2
+26    13  4.395315e+10          1
+27    13  5.212066e+10          2
+28    14  4.252053e+10          1
+29    14  6.207521e+10          2
+30    15  3.573091e+10          1
+31    15  6.288073e+10          2
+32    16  3.292392e+10          1
+33    16  6.105943e+10          2
+34    17  3.011516e+10          1
+35    17  4.089404e+10          2
+36    18  4.030139e+10          1
+37    18  6.388262e+10          2
+38    19  3.455620e+10          1
+39    19  1.159381e+11          2
+40    20  3.329009e+10          1
+41    20  1.138664e+11          2
+42    21  3.236177e+10          1
+43    21  6.909064e+10          2
+44    22  3.175402e+10          1
+45    22  6.662082e+10          2
+46    23  3.059383e+10          1
+47    23  3.663575e+10          2
+```
+
+## Day of week jangle_traffic_total
+
+```
+       SELECT
+           DAYNAME(FROM_UNIXTIME(timebin))  AS dayname,
+           SUM(bytes) AS bytes,
+           direction
+       FROM jangle_traffic_total
+       GROUP BY
+          DAYNAME(FROM_UNIXTIME(timebin)) ,
+          direction
+
+      dayname         bytes  direction
+0      Friday  1.379454e+11          1
+1      Friday  2.155435e+11          2
+2      Monday  1.141178e+11          1
+3      Monday  1.486445e+11          2
+4    Saturday  9.387554e+10          1
+5    Saturday  8.004481e+10          2
+6      Sunday  9.097196e+10          1
+7      Sunday  4.993788e+10          2
+8    Thursday  1.263057e+11          1
+9    Thursday  2.779690e+11          2
+10    Tuesday  1.215070e+11          1
+11    Tuesday  1.228672e+11          2
+12  Wednesday  1.255761e+11          1
+13  Wednesday  1.142918e+11          2
+```
+
 ## analyze_company_groups loc  640
 
 
