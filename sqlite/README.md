@@ -1,3 +1,5 @@
+https://phiresky.github.io/blog/2020/sqlite-performance-tuning/
+
 ## SQLite utils
 
 https://github.com/simonw/sqlite-utils
