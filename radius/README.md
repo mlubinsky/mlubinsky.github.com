@@ -43,6 +43,17 @@ https://support.sonus.net/display/UXDOC61/Call+Detail+Records+Primer
 
 https://wifisoft.zendesk.com/hc/en-us/articles/203566091-Understanding-RADIUS-session-records-CDRs-
 
+
+### MySQL time functions
+```
+select min(timebin), FROM_UNIXTIME(min(timebin)) from radius_traffic_total
+1560443400	2019-06-13 16:30:00
+
+SELECT UNIX_TIMESTAMP('2019-06-13')
+1560384000
+SELECT FROM_UNIXTIME(1560384000)
+2019-06-13 00:00:00
+```
 ###  time range
 ```
 select 'radius_traffic_total' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from radius_traffic_total
