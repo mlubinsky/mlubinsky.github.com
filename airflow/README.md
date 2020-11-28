@@ -8,7 +8,12 @@ https://marclamberti.com/
 
 
 https://www.udemy.com/course/apache-airflow/learn/lecture/17368650
+
+
+### How to get data from Postgres: use PostgresHook
+ https://airflow.apache.org/docs/stable/_api/airflow/hooks/postgres_hook/index.html
  
+ https://youtu.be/ATUARuFh3JQ
 
 ## Macro
 https://stackoverflow.com/questions/64796614/airflow-how-to-pass-template-macro-to-hive-script
