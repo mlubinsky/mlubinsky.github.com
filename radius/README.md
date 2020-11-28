@@ -56,47 +56,52 @@ SELECT FROM_UNIXTIME(1560384000)
 ```
 ###  time range
 ```
-select 'radius_traffic_total' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from radius_traffic_total
+select 'radius_traffic_total' as T, count(*) as cnt, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from radius_traffic_total
 union ALL
-select 'radius_traffic' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from radius_traffic
+select 'radius_traffic' as T, count(*) as cnt, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from radius_traffic
 union ALL
-select 'radius_events_total' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from radius_events_total
+select 'radius_events_total' as T,  count(*) as cnt, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from radius_events_total
 union ALL
-select 'radius_events' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from radius_events
+select 'radius_events' as T, count(*) as cnt, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from radius_events
 union ALL
-select 'radius_active' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from radius_active
-
-
-UNION ALL
-
-select 'jangle_traffic_total' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from jangle_traffic_total
-union all
-select 'jangle_traffic' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from jangle_traffic
-union all
-select 'jangle_tcp_total' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from jangle_tcp_total
-union all
-select 'jangle_tcp' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from jangle_tcp
+select 'radius_active' as T, count(*) as cnt, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from radius_active
 
 UNION ALL
 
-select 'cdr_traffic_total' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from cdr_traffic_total
+select 'jangle_traffic_total' as T, count(*) as cnt, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from jangle_traffic_total
+union all
+select 'jangle_traffic' as T, count(*) as cnt, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from jangle_traffic
+union all
+select 'jangle_tcp_total' as T, count(*) as cnt, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from jangle_tcp_total
+union all
+select 'jangle_tcp' as T, count(*) as cnt, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from jangle_tcp
+
+UNION ALL
+
+select 'cdr_traffic_total' as T, count(*) as cnt, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from cdr_traffic_total
 union ALL
-select 'cdr_traffic' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from cdr_traffic
+select 'cdr_traffic' as T, count(*) as cnt, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from cdr_traffic
 union ALL
-select 'cdr_traffic_active' as T, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from cdr_traffic_active
+select 'cdr_traffic_active' as T, count(*) as cnt, FROM_UNIXTIME(min(timebin)) as min, FROM_UNIXTIME(max(timebin)) as max from cdr_traffic_active
+
 ```
 ```
-radius_traffic_total	2019-06-13 16:30:00	2020-11-28 23:00:00
-radius_traffic	      2019-06-13 16:30:00	2020-11-28 23:00:00
-radius_events_total	  2019-06-13 16:30:00	2020-11-28 23:00:00
-radius_events	        2019-06-13 16:30:00	2020-11-28 23:00:00
-radius_active	        2019-06-13 16:30:00	2020-11-28 23:00:00
-jangle_traffic_total	2019-12-18 16:30:00	2020-11-28 23:00:00
-jangle_traffic	      2019-12-18 16:30:00	2020-11-28 23:00:00
-jangle_tcp_total	    2019-12-18 16:30:00	2020-11-28 23:00:00
-jangle_tcp	          2019-12-18 16:30:00	2020-11-28 23:00:00
-cdr_traffic_total	    2019-03-16 02:15:00	2020-11-28 10:45:00
-cdr_traffic	          2019-03-16 02:15:00	2020-11-28 10:45:00
+radius_traffic_total	758462	2019-06-13 16:30:00	2020-11-28 23:00:00
+radius_traffic	     3081322	2019-06-13 16:30:00	2020-11-28 23:00:00
+
+radius_events_total	  717655	2019-06-13 16:30:00	2020-11-28 23:00:00
+radius_events	       2716174	2019-06-13 16:30:00	2020-11-28 23:00:00
+radius_active	       1777863	2019-06-13 16:30:00	2020-11-28 23:00:00
+
+jangle_traffic_total 1204256	2019-12-18 16:30:00	2020-11-28 23:15:00
+jangle_traffic	    40171058	2019-12-18 16:30:00	2020-11-28 23:15:00
+
+jangle_tcp_total	    788194	  2019-12-18 16:30:00	2020-11-28 23:15:00
+jangle_tcp	        44822267	2019-12-18 16:30:00	2020-11-28 23:15:00
+
+cdr_traffic_total	   2968854	2019-03-16 02:15:00	2020-11-28 10:45:00
+cdr_traffic	         6861720	2019-03-16 02:15:00	2020-11-28 10:45:00
+cdr_traffic_active	 6861720	2019-03-16 02:15:00	2020-11-28 10:45:00
 ```
 ### getDataTypeTablePrefix
 
