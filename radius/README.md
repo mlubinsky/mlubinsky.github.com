@@ -156,6 +156,20 @@ END
 ### getActivity
 
 ```
+CREATE PROCEDURE `getActivity`(q_company INT unsigned, 
+   q_msisdn BIGINT unsigned, 
+   q_apn INT unsigned, 
+   q_data_type VARCHAR(256), 
+   q_time_start INT unsigned, 
+   q_time_end INT unsigned, 
+   q_resolution INT unsigned, 
+   q_split_by VARCHAR(256) 
+   )
+BEGIN
+  CALL execQuery(_getActivityQuery(q_company, q_msisdn, q_apn, q_data_type, q_time_start, q_time_end, q_resolution, q_split_by));
+END
+
+
 CREATE FUNCTION `_getActivityQuery`(q_company INT unsigned, 
    q_msisdn BIGINT unsigned, 
    q_apn INT unsigned, 
