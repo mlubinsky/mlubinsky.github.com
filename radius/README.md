@@ -43,8 +43,117 @@ https://support.sonus.net/display/UXDOC61/Call+Detail+Records+Primer
 
 https://wifisoft.zendesk.com/hc/en-us/articles/203566091-Understanding-RADIUS-session-records-CDRs-
 
+### getTraffic
+```
+CREATE FUNCTION `_getTrafficQuery`(q_company INT unsigned, 
+   q_msisdn BIGINT unsigned, 
+   q_remote_ip INT unsigned, 
+   q_data_type_in VARCHAR(1024), 
+   q_protocol INT unsigned, 
+   q_time_start INT unsigned, 
+   q_time_end INT unsigned, 
+   q_resolution INT unsigned, 
+   q_graph_type_in VARCHAR(256), 
+   q_split_by_in VARCHAR(256) 
+  ) RETURNS text CHARSET utf8mb4
+BEGIN
+  DECLARE count_column VARCHAR(256);
+  DECLARE data_type VARCHAR(256);
+  DECLARE extra_columns VARCHAR(256);
+  DECLARE graph_type VARCHAR(256);
+  DECLARE group_by VARCHAR(256);
+  DECLARE order_by VARCHAR(256);
+  DECLARE table_prefix VARCHAR(256);
+  DECLARE table_full VARCHAR(256);
+  DECLARE table_total VARCHAR(256);
+  DECLARE query_table VARCHAR(256);
+  DECLARE query_timebin VARCHAR(256);
+  DECLARE query_where VARCHAR(1024);
+  DECLARE query VARCHAR(10240);
+  DECLARE split_by VARCHAR(256);
+  DECLARE where_company VARCHAR(256);
+  DECLARE where_msisdn VARCHAR(256);
+  DECLARE where_protocol VARCHAR(256);
+  DECLARE where_remote_ip VARCHAR(256);
+  DECLARE where_timebin VARCHAR(256);
 
-### Get activity
+  SET data_type := _validateDataType(q_data_type_in, "traffic");
+  SET split_by := _validateSplitBy(q_split_by_in, data_type);
+  SET graph_type := _validateGraphType(q_graph_type_in, data_type);
+
+  SET where_timebin := _getWhereTimebin("t.timebin", q_time_start, q_time_end, q_resolution);
+  SET where_company := IF(ISNULL(q_company), '', CONCAT(' AND t.company = ', q_company));
+  SET where_msisdn := IF(ISNULL(q_msisdn), '', CONCAT(' AND t.msisdn = ', q_msisdn));
+  SET where_remote_ip := IF(ISNULL(q_remote_ip), '', CONCAT(' AND t.remote_ip = ', q_remote_ip));
+  SET where_protocol := IF(ISNULL(q_protocol), '', CONCAT(' AND t.protocol = ', q_protocol));
+
+  SET query_where = CONCAT_WS('', where_timebin, where_company, where_msisdn, where_remote_ip, where_protocol);
+
+  SET query_timebin := IF (q_resolution = 900 OR ISNULL(q_resolution), 'timebin', CONCAT('((timebin DIV ', q_resolution, ') * ', q_resolution, ')'));
+
+  SET table_prefix := _getDataTypeTablePrefix(data_type);
+  SET table_full := CONCAT(table_prefix, 'traffic');
+  SET table_total := CONCAT(table_prefix, 'traffic_total');
+
+  SET query_table := IF(ISNULL(q_msisdn) AND ISNULL(q_remote_ip) AND (ISNULL(split_by) OR (split_by != "msisdn" AND split_by != "remote_ip")) AND (graph_type = "time" OR graph_type = "direction" OR graph_type = "apn" OR graph_type = "protocol" OR graph_type = "nas" OR graph_type = "sgsn"), table_total, table_full);
+
+  CASE data_type
+    WHEN 'packets' THEN
+      SET count_column := "SUM(packets)";
+    ELSE
+      SET count_column := "SUM(bytes)";
+  END CASE;
+
+  CASE graph_type
+    WHEN 'msisdn' THEN
+      SET extra_columns := "msisdn, max(timebin) AS last_seen";
+      SET group_by := " GROUP BY msisdn";
+      SET order_by := CONCAT(" ORDER BY ", count_column, " DESC");
+    WHEN 'remote_ip' THEN
+      SET extra_columns := "remote_ip, max(timebin) AS last_seen";
+      SET group_by := " GROUP BY remote_ip";
+      SET order_by := CONCAT(" ORDER BY ", count_column, " DESC");
+    WHEN 'apn' THEN
+      SET extra_columns := "apn";
+      SET group_by := " GROUP BY apn";
+      SET order_by := CONCAT(" ORDER BY ", count_column, " DESC");
+    WHEN 'direction' THEN
+      SET extra_columns := "direction";
+      SET group_by := " GROUP BY direction";
+      SET order_by := CONCAT(" ORDER BY ", count_column, " DESC");
+    WHEN 'protocol' THEN
+      SET extra_columns := "protocol";
+      SET group_by := " GROUP BY protocol";
+      SET order_by := CONCAT(" ORDER BY ", count_column, " DESC");
+    WHEN 'nas' THEN
+      SET extra_columns := "nas";
+      SET group_by := " GROUP BY nas";
+      SET order_by := CONCAT(" ORDER BY ", count_column, " DESC");
+    WHEN 'sgsn' THEN
+      SET extra_columns := "sgsn";
+      SET group_by := " GROUP BY sgsn";
+      SET order_by := CONCAT(" ORDER BY ", count_column, " DESC");
+    ELSE
+      SET extra_columns := CONCAT(query_timebin, " AS timebin");
+      SET group_by := IF(ISNULL(q_resolution), '', CONCAT(" GROUP BY (t.timebin DIV ", q_resolution, ")"));
+      SET order_by := '';
+  END CASE;
+
+  IF split_by IN ('apn', 'company', 'direction', 'msisdn', 'remote_ip', 'nas', 'protocol', 'sgsn') THEN
+      SET extra_columns := CONCAT(extra_columns, ", ", split_by);
+      SET group_by := CONCAT(group_by, ", ", split_by);
+  ELSE
+      SET group_by := group_by; 
+  END IF;
+
+  SET query := CONCAT('SELECT ', extra_columns, ', ', count_column, ' AS count FROM ', query_table, ' AS t', query_where);
+  SET query := CONCAT(query, group_by, order_by);
+
+  RETURN query;
+END
+```
+
+### getActivity
 
 ```
 CREATE FUNCTION `_getActivityQuery`(q_company INT unsigned, 
