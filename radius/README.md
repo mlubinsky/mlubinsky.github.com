@@ -1,4 +1,7 @@
 
+### APN Acces Point Name
+https://en.wikipedia.org/wiki/Access_Point_Name
+
 ## IMEI - International Mobile Equipment Identity
 https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity
 
