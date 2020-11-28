@@ -11,6 +11,9 @@ https://www.udemy.com/course/apache-airflow/learn/lecture/17368650
 
 
 ### How to get data from Postgres: use PostgresHook
+
+ https://marclamberti.com/blog/the-postgresoperator-all-you-need-to-know/
+
  https://airflow.apache.org/docs/stable/_api/airflow/hooks/postgres_hook/index.html
  
  https://youtu.be/ATUARuFh3JQ
