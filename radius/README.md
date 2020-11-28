@@ -43,8 +43,77 @@ https://support.sonus.net/display/UXDOC61/Call+Detail+Records+Primer
 
 https://wifisoft.zendesk.com/hc/en-us/articles/203566091-Understanding-RADIUS-session-records-CDRs-
 
+
+### getDataTypeTablePrefix
+
+```
+CREATE FUNCTION `_getDataTypeTablePrefix`(q_data_type VARCHAR(256) 
+  ) RETURNS text CHARSET utf8mb4
+BEGIN
+  DECLARE table_prefix VARCHAR(256);
+
+  CASE q_data_type
+    WHEN 'activity' THEN
+      IF _tableExists('radius_traffic') THEN
+        RETURN 'radius_events_';
+      ELSEIF _tableExists('mc_traffic') THEN
+        RETURN 'mc_';
+      ELSEIF _tableExists('jangle_traffic') THEN
+        RETURN 'jangle_';
+      ELSE
+        RETURN 'cdr_';
+      END IF;
+    WHEN 'bytes' THEN
+      IF _tableExists('mc_traffic') THEN
+        RETURN 'mc_';
+      ELSEIF _tableExists('jangle_traffic') THEN
+        RETURN 'jangle_';
+      ELSEIF _tableExists('radius_traffic') THEN
+        RETURN 'radius_';
+      ELSE
+        RETURN 'cdr_';
+      END IF;
+    WHEN 'cdr-activity' THEN
+      RETURN 'cdr_traffic_';
+    WHEN 'cdr-bytes' THEN
+      RETURN 'cdr_';
+    WHEN 'mc-activity' THEN
+      RETURN 'mc_';
+    WHEN 'mc-bytes' THEN
+      RETURN 'mc_';
+    WHEN 'jangle-activity' THEN
+      RETURN 'jangle_';
+    WHEN 'jangle-bytes' THEN
+      RETURN 'jangle_';
+    WHEN 'radius-activity' THEN
+      RETURN 'radius_';
+    WHEN 'radius-bytes' THEN
+      RETURN 'radius_';
+    WHEN 'radius-events' THEN
+      RETURN 'radius_';
+    ELSE
+      RETURN NULL;
+  END CASE;
+END
+```
 ### getTraffic
 ```
+CREATE PROCEDURE `getTraffic`(IN q_company INT unsigned,
+   IN q_msisdn BIGINT unsigned, 
+   IN q_remote_ip INT unsigned, 
+   IN q_data_type VARCHAR(1024), 
+   IN q_protocol INT unsigned, 
+   IN q_time_start INT unsigned, 
+   IN q_time_end INT unsigned, 
+   IN q_resolution INT unsigned, 
+   IN q_split_by VARCHAR(256) 
+  )
+BEGIN
+  CALL execQuery(_getTrafficQuery(q_company, q_msisdn, q_remote_ip, q_data_type, q_protocol, q_time_start, q_time_end, q_resolution, "time", q_split_by));
+END
+
+
+
 CREATE FUNCTION `_getTrafficQuery`(q_company INT unsigned, 
    q_msisdn BIGINT unsigned, 
    q_remote_ip INT unsigned, 
