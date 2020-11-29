@@ -2,6 +2,7 @@
 
 <https://habr.com/ru/company/mailru/blog/504952/> Avro, Parquet, ...
 
+<https://habr.com/ru/post/530422/> protobuf vs Avro
 
 ## Drop external table with data
 DROP deletes data for managed tables while it only deletes metadata for external ones
