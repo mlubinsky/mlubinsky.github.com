@@ -43,6 +43,10 @@ https://support.sonus.net/display/UXDOC61/Call+Detail+Records+Primer
 
 https://wifisoft.zendesk.com/hc/en-us/articles/203566091-Understanding-RADIUS-session-records-CDRs-
 
+## Plan:
+
+- monthly  traffic
+
 
 ### MySQL time functions
 ```
@@ -54,6 +58,8 @@ SELECT UNIX_TIMESTAMP('2019-06-13')
 SELECT FROM_UNIXTIME(1560384000)
 2019-06-13 00:00:00
 
+SELECT count(*) FROM t WHERE FROM_UNIXTIME(timebin, '%Y') = 2020
+
 SELECT FROM_UNIXTIME(1560443400)    -- 2019-06-13 16:30:00
 
 SELECT FROM_UNIXTIME(1560443400, '%H')  16
@@ -61,7 +67,7 @@ SELECT FROM_UNIXTIME(1560443400, '%d-%H')  13-16
  
 SELECT FROM_UNIXTIME(1560443400, '%M-%d-%H') June 13-16
 
-SELECT FROM_UNIXTIME(1560443400, '%m-%d-%H') June 06-13-16
+SELECT FROM_UNIXTIME(1560443400, '%m-%d-%H')  06-13-16
 ```
 ###  time range
 ```
