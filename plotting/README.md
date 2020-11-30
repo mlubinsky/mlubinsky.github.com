@@ -21,6 +21,14 @@ https://habr.com/ru/company/skillfactory/blog/526076/
 
 ## Python plotting
 
+https://towardsdatascience.com/4-libraries-that-can-perform-eda-in-one-line-of-python-code-b13938a06ae
+```
+Pandas-Profiling
+Sweetviz
+Autoviz
+D-Tale
+```
+
 <https://veusz.github.io/> VEUSZ
 
 <https://github.com/has2k1/plotnine> as ggplot2
