@@ -8,6 +8,8 @@ or forecast a signal for some point and test if this point value varies from the
 
 <https://towardsdatascience.com/anomaly-detection-with-sql-7700c7516d1d> Anomality detection with SQL
 
+https://habr.com/ru/post/530574/ .  Deep Anomaly Detection
+
 <https://pyod.readthedocs.io/en/latest/> . outliers detection
 
 <https://habr.com/ru/post/477450/>
