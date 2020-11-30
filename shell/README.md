@@ -1,3 +1,5 @@
+https://www.cyberciti.biz/tips/bash-shell-parameter-substitution-2.html
+
  <https://nikhilism.com/post/2020/mystery-knowledge-useful-tools/>
  
  https://lobste.rs/s/eprvjp/what_are_your_favorite_non_standard_cli
