@@ -1,5 +1,7 @@
 https://habr.com/ru/company/ruvds/blog/515258/. Algorithms
 
+https://erthalion.info/2020/11/28/evolution-of-btree-index-am/
+
 find the longest palindrome subsequence of a string optimally
 
 https://levelup.gitconnected.com/cracking-the-top-40-facebook-coding-interview-questions-185bab32489f
