@@ -1,6 +1,10 @@
 ## CSS 
 <https://every-layout.dev/>
 
+https://github.com/susam/spcss  HTML template
+
+https://htmx.org/. htmx allows you to access AJAX, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext
+
 <https://web.dev/one-line-layouts/>
 
 <https://habr.com/ru/post/500304/> Grid explained
