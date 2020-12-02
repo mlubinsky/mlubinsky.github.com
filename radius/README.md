@@ -62,6 +62,9 @@ SELECT count(*) FROM t WHERE FROM_UNIXTIME(timebin, '%Y') = 2020
 
 SELECT FROM_UNIXTIME(1560443400)    -- 2019-06-13 16:30:00
 
+select    FROM_UNIXTIME(timebin, '%Y-%m-%d %H:%i')  -- to get minutes, and eliminate sec
+from jangle_active LIMIT 1   -- 2019-06-13 16:30
+
 SELECT FROM_UNIXTIME(1560443400, '%H')  16
 SELECT FROM_UNIXTIME(1560443400, '%d-%H')  13-16
  
