@@ -1,5 +1,7 @@
 https://habr.com/ru/company/ruvds/blog/515258/. Algorithms
 
+https://www.reddit.com/r/MachineLearning/comments/fdw0ax/d_advanced_courses_update/
+
 http://courses.csail.mit.edu/6.851/
 
 https://erthalion.info/2020/11/28/evolution-of-btree-index-am/
