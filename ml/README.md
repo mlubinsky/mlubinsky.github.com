@@ -21,6 +21,18 @@ https://github.com/antonycourtney/tad Tad
 
 https://towardsdatascience.com/introduction-to-d-tale-5eddd81abe3f. DTale
 
+https://towardsdatascience.com/4-libraries-that-can-perform-eda-in-one-line-of-python-code-b13938a06ae
+```
+Pandas-Profiling
+Sweetviz
+Autoviz
+D-Tale
+```
+https://towardsdatascience.com/drag-and-drop-tools-for-machine-learning-pipelines-worth-a-try-63ace4a18715
+```
+Knime
+Orange
+```
 ### ML
 
 https://www.confetti.ai/assets/ml-primer/ml_primer.pdf Primer
