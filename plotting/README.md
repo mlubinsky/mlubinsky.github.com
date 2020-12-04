@@ -34,10 +34,47 @@ D-Tale
 <https://veusz.github.io/> VEUSZ
 
 
-### plotline
+## plotline
 <https://github.com/has2k1/plotnine> as ggplot2
 
 https://www.kaggle.com/residentmario/grammar-of-graphics-with-plotnine-optional
+
+https://github.com/has2k1/plotnine-examples/blob/master/plotnine_examples/examples/facet_grid.ipynb
+
+### facet grid and other examples:
+ 
+https://github.com/has2k1/plotnine-examples/tree/master/plotnine_examples 
+
+Facet a discrete variable into rows: 
+```
+facet_grid('drv ~ .')
+```
+Facet a discrete variable into columns:
+```
+facet_grid('. ~ cyl')
+```
+
+Facet two discrete variables into rows and columns:
+```
+facet_grid('drv ~ cyl')
+```
+
+You can choose if the scale of x- and y-axes are fixed or variable by using the scales argument within the facet_grid() command:
+```
+(
+    ggplot(mpg, aes(x='displ', y='hwy')) 
+    + geom_point()
+    + facet_grid('drv ~ .', scales = 'free')
+    + labs(x='displacement', y='horsepower')
+)
+```
+
+
+facet_grid('drv + transmission ~ .')
+
+
+
+```
 
 https://www.kaggle.com/residentmario/time-series-plotting-optional    time series plotting
 
