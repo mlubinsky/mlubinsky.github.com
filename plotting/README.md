@@ -33,7 +33,14 @@ D-Tale
 
 <https://veusz.github.io/> VEUSZ
 
+
+### plotline
 <https://github.com/has2k1/plotnine> as ggplot2
+
+https://www.kaggle.com/residentmario/grammar-of-graphics-with-plotnine-optional
+
+https://www.kaggle.com/residentmario/time-series-plotting-optional    time series plotting
+
 
 https://pypi.org/project/pywedge/
 
