@@ -69,12 +69,13 @@ You can choose if the scale of x- and y-axes are fixed or variable by using the 
 )
 ```
 
-
-facet_grid('drv + transmission ~ .')
-
-
-
+2-dimentional grid
 ```
+facet_grid('drv + transmission ~ .')
+```
+
+
+ 
 
 https://www.kaggle.com/residentmario/time-series-plotting-optional    time series plotting
 
