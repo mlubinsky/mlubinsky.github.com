@@ -32,6 +32,10 @@ DROP TABLE names_text;
 ```
 
 
+### Complex SQL with COLLECT_SET
+
+https://stackoverflow.com/questions/43054742/hive-collect-set
+
 ### Etc
 ```
 WITH E as     
