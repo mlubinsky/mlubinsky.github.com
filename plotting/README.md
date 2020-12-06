@@ -96,7 +96,11 @@ https://pypi.org/project/pywedge/
 
 <https://habr.com/ru/post/468295/> matplotlib
 
+## Visidata
 http://visidata.org/ .  can read parquet
+
+https://jsvine.github.io/intro-to-visidata/the-big-picture/visidata-in-60-seconds/
+
 
 http://blog.pyviz.org/
 
