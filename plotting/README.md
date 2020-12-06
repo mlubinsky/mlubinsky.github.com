@@ -101,6 +101,8 @@ http://visidata.org/ .  can read parquet
 
 https://jsvine.github.io/intro-to-visidata/the-big-picture/visidata-in-60-seconds/
 
+https://www.youtube.com/watch?v=N1CBDTgGtOU&list=PLxu7QdBkC7drrAGfYzatPGVHIpv4Et46W
+
 
 http://blog.pyviz.org/
 
