@@ -2,7 +2,12 @@
 
 <https://www.youtube.com/watch?v=E_Fmbwe79Co> nВ.П. Павлов. Как устроена теоретическая физика
 
+
+
 <https://science.d3.ru/posovetuite-podkast-s-fizikami-2046797/?sorting=rating>
+
+
+https://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf
 
 ## QM
 
@@ -11,6 +16,8 @@ http://lightcone.ru/
 https://rqc.ru/research#groups
 
 https://www.youtube.com/watch?v=7mUQtujgUUo . Страупе С. С. - Введение в квантовую физику - Квантовая информация
+
+https://arxiv.org/abs/2011.12671
 
 https://www.youtube.com/results?search_query=%D0%A1%D1%82%D1%80%D0%B0%D1%83%D0%BF%D0%B5 Страупе 
 
@@ -24,6 +31,8 @@ https://www.youtube.com/watch?v=mujNcrgdops  Александр Львовски
 https://www.youtube.com/watch?v=NayWtS53NNU   Эмиль Ахмедов: "Оптика и квантовая механика"
 
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNDqvcsTsKJM1Ee6V8Aaobl0 Введение в квантовую физику - Рубцов Алексей Николаевич
+
+https://arxiv.org/abs/quant-ph/9907069 . Mathematical surprises and Dirac's formalism in quantum mechanics
 
 https://habr.com/ru/post/523926/
 
@@ -51,6 +60,7 @@ https://e.lanbook.com/reader/book/619/#26. Блохинцев ДИ Основы 
 
 https://www.youtube.com/watch?v=UwwBG-MbniY. Thinking fast and slow (Daniel Kahneman - Lex Fridman)
 
+https://www.youtube.com/watch?v=CKJuC5CUMgU&feature=youtu.be
 
 ## Electromagnetism
 
@@ -76,11 +86,16 @@ https://www.youtube.com/watch?v=gAFAj3pzvAA
 ### Articles
 https://arxiv.org/abs/2009.06302 what is temperature?
 
+https://www.nature.com/articles/s41598-017-17526-4 . temperature of moving body
+
 https://arxiv.org/abs/2009.05844 classic mechanics and electromagnetism
 
 https://arxiv.org/abs/2009.06706 Tutorial on the Classical Theories of Electromagnetic Scattering and Diffraction
 
 https://www.youtube.com/watch?v=EceVJJGAFFI. Eugene Khutoryansky physics
+
+
+https://www.damtp.cam.ac.uk/user/tong/statphys/jaynes.pdf THE GIBBS PARADOXy
 
 ### Renormalization
 https://www.quantamagazine.org/how-renormalization-saved-particle-physics-20200917/
@@ -94,6 +109,9 @@ https://www.reddit.com/r/quantum/comments/iqzrx8/quantum_mechanics_course/
 <https://en.wikipedia.org/wiki/Boris_Altshuler>
 
 http://sadovski.iep.uran.ru/RUSSIAN/LTF/sumsch_c_files/PDF/Altshuler_1.pdf
+
+https://arxiv.org/abs/2011.09181 . A First Principles Derivation of Classical and Quantum Mechanics as the Natural Theories for Smooth Stochastic Paths
+
 
 ## Solid state phys
 https://teach-in.ru/file/synopsis/pdf/ofksv-M.pdf
