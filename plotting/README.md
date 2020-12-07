@@ -41,7 +41,8 @@ https://www.kaggle.com/residentmario/grammar-of-graphics-with-plotnine-optional
 
 https://github.com/has2k1/plotnine-examples/blob/master/plotnine_examples/examples/facet_grid.ipynb
 
-Plotnine works best with tidy data, i.e each variable is a column and each observation a row. 
+Plotnine works best with tidy data, i.e each variable is a column and each observation a row.
+https://stackoverflow.com/questions/62900745/how-to-add-legend-in-ggplot-plotnine-for-multiple-curves
 ```
 from plotnine import *
 import numpy as np
@@ -62,7 +63,8 @@ df = pd.DataFrame({
     'type': np.repeat(['metric', 'metric2'], len(iterations2))   
 })
 
-p = (ggplot(df, aes(x='iterations', y='value', color='type'))
+p = (ggplot(df, 
+     aes(x='iterations', y='value', color='type'))
      + geom_smooth(method='lm', span=0.10, se=True, level=0.80)
      # Then you can change the colour using a scale
     )
