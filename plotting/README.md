@@ -35,6 +35,10 @@ D-Tale
 
 
 ## plotline
+
+Book:
+https://leanpub.com/plotnine-guide
+
 <https://github.com/has2k1/plotnine> as ggplot2
 
 https://www.kaggle.com/residentmario/grammar-of-graphics-with-plotnine-optional
