@@ -45,6 +45,25 @@ https://www.kaggle.com/residentmario/grammar-of-graphics-with-plotnine-optional
 
 https://github.com/has2k1/plotnine-examples/blob/master/plotnine_examples/examples/facet_grid.ipynb
 
+what is hstack?
+```
+ import numpy as np
+ x=np.array((3,5,7))
+ y=np.array((30,50,70))
+ np.hstack((x,y))
+ array([ 3,  5,  7, 30, 50, 70])
+ xx=np.array([[3],[5],[7]])
+>>> xx
+array([[3],
+       [5],
+       [7]])
+yy=np.array([[30],[50],[70]])
+>>> np.hstack((xx,yy))
+array([[ 3, 30],
+       [ 5, 50],
+       [ 7, 70]])
+
+```
 Plotnine works best with tidy data, i.e each variable is a column and each observation a row.
 https://stackoverflow.com/questions/62900745/how-to-add-legend-in-ggplot-plotnine-for-multiple-curves
 ```
