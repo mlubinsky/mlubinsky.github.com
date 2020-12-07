@@ -41,6 +41,35 @@ https://www.kaggle.com/residentmario/grammar-of-graphics-with-plotnine-optional
 
 https://github.com/has2k1/plotnine-examples/blob/master/plotnine_examples/examples/facet_grid.ipynb
 
+Plotnine works best with tidy data, i.e each variable is a column and each observation a row. 
+```
+from plotnine import *
+import numpy as np
+import pandas as pd
+
+str_metric = 'metric'
+metric = np.array([0.127, 0.1715, 0.19166667, 0.21583333, 0.24866667, 0.24216667, 0.24433333,
+                   0.255, 0.291, 0.30966667, 0.32033333, 0.2415, 0.33833333, 0.30583333, 0.34433333])
+
+metric2 = metric * 2
+
+iterations2 = [i for i in range(len(metric))]
+
+# tidy data
+df = pd.DataFrame({
+    'iterations': np.hstack([iterations2, iterations2]),
+    'value': np.hstack([metric, metric2]),
+    'type': np.repeat(['metric', 'metric2'], len(iterations2))   
+})
+
+p = (ggplot(df, aes(x='iterations', y='value', color='type'))
+     + geom_smooth(method='lm', span=0.10, se=True, level=0.80)
+     # Then you can change the colour using a scale
+    )
+```    
+
+
+
 ### facet grid and other examples:
  
 https://github.com/has2k1/plotnine-examples/tree/master/plotnine_examples 
