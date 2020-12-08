@@ -2,6 +2,8 @@
 
 https://www.udemy.com/course/the-ultimate-hands-on-course-to-master-apache-airflow/learn/lecture/15819418#overview
 
+(code in introduction )
+
 https://github.com/marclamberti/airflow-materials-vm
 
 https://marclamberti.com/
