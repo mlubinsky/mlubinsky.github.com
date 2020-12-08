@@ -41,6 +41,8 @@ https://leanpub.com/plotnine-guide
 
 <https://github.com/has2k1/plotnine> as ggplot2
 
+https://realpython.com/ggplot-python/
+
 https://www.kaggle.com/residentmario/grammar-of-graphics-with-plotnine-optional
 
 https://github.com/has2k1/plotnine-examples/blob/master/plotnine_examples/examples/facet_grid.ipynb
