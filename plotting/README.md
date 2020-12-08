@@ -37,6 +37,20 @@ D-Tale
 
 https://www.kaggle.com/residentmario/time-series-plotting-optional
 
+https://www.statology.org/autocorrelation-python/
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.autocorr.html
+
+https://machinelearningmastery.com/gentle-introduction-autocorrelation-partial-autocorrelation/
+
+https://stackoverflow.com/questions/56028461/calculate-autocorrelation-as-a-function-of-lag-in-python
+
+https://pythontic.com/visualization/charts/autocorrelation
+
+https://medium.com/@dganais/autocorrelation-in-time-series-c870e87e8a65
+
+https://www.geeksforgeeks.org/autocorrelation-plot-using-matplotlib/
+
 ## plotline
 
 Book:
