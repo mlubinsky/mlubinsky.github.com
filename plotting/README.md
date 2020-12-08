@@ -33,6 +33,9 @@ D-Tale
 
 <https://veusz.github.io/> VEUSZ
 
+## Lag plot , Autocorrelated plot
+
+https://www.kaggle.com/residentmario/time-series-plotting-optional
 
 ## plotline
 
