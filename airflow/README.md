@@ -10,6 +10,64 @@ https://marclamberti.com/
 https://www.udemy.com/course/apache-airflow/learn/lecture/17368650
 
 
+### backfill
+```
+ sudo /opt/airflow/airflow backfill --help
+ 
+[2020-12-08 03:07:05,373] {__init__.py:51} INFO - Using executor CeleryExecutor
+usage: airflow backfill [-h] [-t TASK_REGEX] [-s START_DATE] [-e END_DATE]
+                        [-m] [-l] [-x] [-i] [-I] [-sd SUBDIR] [--pool POOL]
+                        [--delay_on_limit DELAY_ON_LIMIT] [-dr] [-v] [-c CONF]
+                        [--reset_dagruns] [--rerun_failed_tasks]
+                        dag_id
+
+positional arguments:
+  dag_id                The id of the dag
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -t TASK_REGEX, --task_regex TASK_REGEX
+                        The regex to filter specific task_ids to backfill
+                        (optional)
+  -s START_DATE, --start_date START_DATE
+                        Override start_date YYYY-MM-DD
+  -e END_DATE, --end_date END_DATE
+                        Override end_date YYYY-MM-DD
+  -m, --mark_success    Mark jobs as succeeded without running them
+  -l, --local           Run the task using the LocalExecutor
+  -x, --donot_pickle    Do not attempt to pickle the DAG object to send over
+                        to the workers, just tell the workers to run their
+                        version of the code.
+  -i, --ignore_dependencies
+                        Skip upstream tasks, run only the tasks matching the
+                        regexp. Only works in conjunction with task_regex
+  -I, --ignore_first_depends_on_past
+                        Ignores depends_on_past dependencies for the first set
+                        of tasks only (subsequent executions in the backfill
+                        DO respect depends_on_past).
+  -sd SUBDIR, --subdir SUBDIR
+                        File location or directory from which to look for the
+                        dag
+  --pool POOL           Resource pool to use
+  --delay_on_limit DELAY_ON_LIMIT
+                        Amount of time in seconds to wait when the limit on
+                        maximum active dag runs (max_active_runs) has been
+                        reached before trying to execute a dag run again.
+  -dr, --dry_run        Perform a dry run
+  -v, --verbose         Make logging output more verbose
+  -c CONF, --conf CONF  JSON string that gets pickled into the DagRun's conf
+                        attribute
+  --reset_dagruns       if set, the backfill will delete existing backfill-
+                        related DAG runs and start anew with fresh, running
+                        DAG runs
+  --rerun_failed_tasks  if set, the backfill will auto-rerun all the failed
+                        tasks for the backfill date range instead of throwing
+                        exceptions
+
+```
+
+
+
 ### How to get data from Postgres: use PostgresHook
 
  https://marclamberti.com/blog/the-postgresoperator-all-you-need-to-know/
