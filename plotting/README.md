@@ -10,6 +10,16 @@ https://cloudit-eg.com/data-visualization-tools-to-make-your-data-speak/
 <https://datashader.org/>
 
 
+## PlotJugger, veusz and other tools
+
+https://plotjuggler.io
+
+https://news.ycombinator.com/item?id=25357714
+
+https://kst-plot.kde.org/
+
+<https://veusz.github.io/> VEUSZ
+
 ## Observable 
 https://news.ycombinator.com/item?id=25161409
 
@@ -31,7 +41,6 @@ Autoviz
 D-Tale
 ```
 
-<https://veusz.github.io/> VEUSZ
 
 ## Lag plot , Autocorrelated plot
 
