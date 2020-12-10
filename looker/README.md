@@ -1,5 +1,15 @@
 ## Helper explore for Filter dropdown:
 ```
+
+ 70   parameter: f_exp_id {  #  defined on Dashboard
+ 71     type: string
+ 72     suggest_explore:  dim_experiment
+ 73     suggest_dimension: dim_experiment.id
+ 74   }
+ 
+```
+### SQL_ALWAYS
+```
 explore: dim_experiment_firmware {
   view_name: dim_experiment
   label: "Amoeba Experiments for Firmware"
@@ -8,7 +18,7 @@ explore: dim_experiment_firmware {
 }
 ```
 
-### SQL_ALWAYS
+
 
 ```
 explore: dim_experiment {
