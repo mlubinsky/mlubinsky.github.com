@@ -7,6 +7,40 @@ explore: dim_experiment_firmware {
   sql_always_where:  ${end_date} > '2020-09-01' AND ${client} = 'player'  ;;
 }
 ```
+
+### SQL_ALWAYS
+
+```
+explore: dim_experiment {
+  view_name: dim_experiment
+  label: "Amoeba Firmware Experiments "
+  description: "Amoeba Firmware Experiments"
+  sql_always_where:  DATE(${start_date}) > '2020-12-01' AND ${client} = 'player' and ${is_active}=1 ;;
+}
+
+explore: agg_channel_cores_daily {
+  label: "Channel Cores Metrics"
+  description: "Core Firmware Crash Metrics for Channel, Platforms, Builds, Products, Date, etc."
+  persist_with: datagroup_agg_channel_cores_daily
+  join: dim_product {
+    sql_on: ${agg_channel_cores_daily.product_id} = ${dim_product.product_id} ;;
+    type:  left_outer
+    relationship: many_to_one
+  }
+  join: dim_channel {
+    sql_on: ${agg_channel_cores_daily.channel_id} = ${dim_channel.channel_id} ;;
+    type:  left_outer
+    relationship: many_to_one
+  }
+  # filter active_exp_map:
+  sql_always_where:
+     {% if agg_channel_cores_daily.amoeba_exp_id._is_filtered %}
+          STRPOS(${agg_channel_cores_daily.active_exp_map} , {% parameter agg_channel_cores_daily.amoeba_exp_id %}) > 0
+     {% else %} 1 = 1 {% endif %};;
+}
+```
+
+
 ## Caching / persistance
 <https://docs.looker.com/reference/view-params/persist_for-for-derived_table>
 
