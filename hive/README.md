@@ -4,6 +4,15 @@
 
 <https://habr.com/ru/post/530422/> protobuf vs Avro
 
+
+## DRUID REGEXP_EXTRACT
+```
+get 2nd substring in comma separated list:
+SELECT REGEXP_EXTRACT('sales,agent', '(.*),(.*)', 2) as last_name
+Answer:
+agent
+```
+
 ## Drop external table with data
 DROP deletes data for managed tables while it only deletes metadata for external ones
 
