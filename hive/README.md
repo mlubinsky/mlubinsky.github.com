@@ -5,9 +5,16 @@
 <https://habr.com/ru/post/530422/> protobuf vs Avro
 
 
-## DRUID REGEXP_EXTRACT
+## DRUID and Hive REGEXP_EXTRACT()
+
 ```
-get 2nd substring in comma separated list:
+. stands as a wildcard for any one character, and the * means to repeat whatever came before it any number of times. 
+In a .* regular expression, the Java single wildcard character is repeated, 
+effectively making the .* regular expression operate the same way as the * wildcard does elsewhere in SQL.
+
+```
+Get 2nd substring in comma separated list:
+```
 SELECT REGEXP_EXTRACT('sales,agent', '(.*),(.*)', 2) as last_name
 Answer:
 agent
