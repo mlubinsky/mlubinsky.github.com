@@ -20,6 +20,12 @@ Answer:
 agent
 ```
 
+Get substr started from pattern hey and anded by ,
+```
+ select   regexp_extract('foot,heyz,bar', 'hey.*,', 0)
+ Answer: heyz
+```
+
 ## Drop external table with data
 DROP deletes data for managed tables while it only deletes metadata for external ones
 
