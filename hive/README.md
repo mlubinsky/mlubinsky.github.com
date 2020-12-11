@@ -40,10 +40,14 @@ Get substr started from pattern hey and ended by ,
   
   select   regexp_extract('foot,heyz,bar' , 'fo.*?,', 0)
   Answer: foot,
-  because ? makes search non-greedy
+  because ? makes search non-greedy !!!
    
  select   regexp_extract('foot,heyz,bar', 'hey.*,', 0)
  Answer: heyz
+ 
+ 
+ select   regexp_extract('foot,heyz,bar,' , 'ba.*?,' , 0)
+ Anser: bar:
 ```
 But if there is the comma
 
