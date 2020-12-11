@@ -7,6 +7,9 @@
 
 ## DRUID and Hive REGEXP_EXTRACT()
 
+How to match till 1st occurance of char:
+https://stackoverflow.com/questions/2013124/regex-matching-up-to-the-first-occurrence-of-a-character
+
 ```
 . stands as a wildcard for any one character, and the * means to repeat whatever came before it any number of times. 
 In a .* regular expression, the Java single wildcard character is repeated, 
