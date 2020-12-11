@@ -15,6 +15,15 @@ https://stackoverflow.com/questions/2013124/regex-matching-up-to-the-first-occur
 In a .* regular expression, the Java single wildcard character is repeated, 
 effectively making the .* regular expression operate the same way as the * wildcard does elsewhere in SQL.
 
+
+    select   regexp_extract('foot,heyz,bar' , 'ba.*?[^,]', 0)  -- bar
+    UNION ALL
+    select   regexp_extract('foot,heyz,bar' , 'fo.*?[^,]', 0)  -- foo . - lost last char
+    UNION ALL
+    select   regexp_extract('foot,heyz,bar' , 'he.*?[^,]', 0)  -- hey . lost last char
+
+
+
 ```
 Get 2nd substring in comma separated list:
 ```
