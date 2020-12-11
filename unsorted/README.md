@@ -13,6 +13,13 @@ https://evgeniirudnyi.livejournal.com/
 
 https://www.youtube.com/watch?v=6JipQNWuYnA. Lex Fridman interview his father
 
+## . Underrated web sites
+
+https://www.reddit.com/r/AskReddit/comments/k213qf/what_are_underrated_websites_and_what_do_you_use/
+
+https://interpreted.d3.ru/na-reddite-podelilis-ochen-krutymi-no-nedootsenionnymi-saitami-2084065/?sorting=rating
+
+
 ### Library Genesis:
 
 gen.lib.rus.ec  libgen.rs 
