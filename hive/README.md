@@ -16,11 +16,27 @@ In a .* regular expression, the Java single wildcard character is repeated,
 effectively making the .* regular expression operate the same way as the * wildcard does elsewhere in SQL.
 
 
+     select   regexp_extract('foot,heyz,bar,' , 'ba.*?,', 0)  -- bar,
+     UNION ALL
+     select   regexp_extract('foot,heyz,bar,' , 'foo.*?,' , 0)  -- foot.
+     UNION ALL
+     select   regexp_extract('foot,heyz,bar,' , 'h.*?,', 0)  -- heys,
+
+
+
+   select   regexp_extract('foot,heyz,bar,' , 'bar(.*?)([^,])', 0) - ERROR
+   
+   select   regexp_extract('foot,heyz,bar,' , 'bar(.*?,)', 0)    bar,
+   select   regexp_extract('foot,heyz,bar,' , 'bar.*?,', 0)
+
     select   regexp_extract('foot,heyz,bar' , 'ba.*?[^,]', 0)  -- bar
     UNION ALL
     select   regexp_extract('foot,heyz,bar' , 'fo.*?[^,]', 0)  -- foo . - lost last char
     UNION ALL
     select   regexp_extract('foot,heyz,bar' , 'he.*?[^,]', 0)  -- hey . lost last char
+    
+    Add comma to the end of intput string:
+    select   regexp_extract('foot,heyz,bar,' , 'foo.*?,[^,]', 0)  -- foot,h .  what is it exta chars , h
 
 
 
