@@ -1,4 +1,4 @@
-## File formats: pvro, parquet
+## File formats: Avro, Parquet
 
 <https://habr.com/ru/company/mailru/blog/504952/> Avro, Parquet, ...
 
