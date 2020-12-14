@@ -62,10 +62,12 @@ https://medium.com/@dganais/autocorrelation-in-time-series-c870e87e8a65
 
 https://www.geeksforgeeks.org/autocorrelation-plot-using-matplotlib/
 
-## plotline
+## Plotline
 
 Book:
 https://leanpub.com/plotnine-guide
+
+https://datascienceworkshops.com/blog/plotnine-grammar-of-graphics-for-python/
 
 <https://github.com/has2k1/plotnine> as ggplot2
 
