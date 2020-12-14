@@ -1,0 +1,749 @@
+import time
+from datetime import datetime, timedelta
+import numpy as np
+import pandas as pd
+
+from plotnine import *
+
+import companies
+import datastore
+import mellycount
+import radius
+import timeseries
+import read_traffic
+
+def query(sql):
+  datastore.start_transaction(readonly=True)
+  d=datastore.query(sql)
+  datastore.commit()
+  return d
+
+def all_company(start=None, end=None):
+  if not start:  start='2020-11-01'
+  if not end:    end  ='2020-12-01'
+
+  SQL=f"""
+   SELECT
+   company,
+   SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) AS GB_company 
+   FROM jangle_traffic_total
+   WHERE
+   timebin >=  UNIX_TIMESTAMP('{start}') and
+   timebin  <  UNIX_TIMESTAMP('{end}')
+   GROUP BY company
+   ORDER BY GB_company desc
+  """ 
+
+  return SQL
+
+def single_company(company, start=None, end=None, timescale=None):
+  if not start:  start='2020-11-01'
+  if not end:    end  ='2020-12-01'
+
+  if not timescale:
+       timescale= '%%m-%%d'
+  elif timescale == 'H':
+       timescale= '%%H'
+
+  SQL=f"""
+   SELECT
+   FROM_UNIXTIME(timebin, '{timescale}') as timescale,
+   SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) AS GB_company,
+   CAST(direction as char(10)) AS Direction
+   FROM jangle_traffic_total
+   WHERE
+   timebin >=  UNIX_TIMESTAMP('{start}') and
+   timebin  <  UNIX_TIMESTAMP('{end}') and
+   company =  {company}
+   GROUP BY timescale, Direction
+   ORDER BY timescale
+  """
+
+  return SQL
+
+
+if __name__ == "__main__" :
+  datastore.connect()
+
+  q=all_company()
+  print(q)
+  data=query(q)
+  print(data)
+
+  company_str = input("Enter the company_id : ")
+  if not company_str:
+      company=0
+  else:
+      company = int(company_str)
+
+  start_input = input("Enter start day (YYYY-MM-DD) or press Enter for 2020-11-01 : ")
+  if not start_input:
+      start="2020-11-01"
+  elif  len(start_input) != 10:
+      print("Error in input- format is YYYY-MM-DD")
+      exit(0)
+  else:
+      start=start_input
+
+  print("before end_input:")
+  end_input = input("""Enter duration
+       1 - 1 day
+       2 - 1 week
+       3 - 1 month
+       or press Enter for 1 day
+   """
+  )
+
+  print("end_input=",end_input)
+  
+  granularity = None
+  if not end_input or end_input == '1': 
+      n_days=1
+      granularity='H'
+  elif end_input == '2': # week
+      n_days=7
+  elif end_input == '3': # month
+      n_days=30 ## TODO
+  else:
+      print("wrong end input")
+      exit(1) 
+
+  end = (datetime.strptime(start, '%Y-%m-%d') + timedelta(days=n_days)).strftime('%Y-%m-%d')
+  
+  q=single_company(company, start, end, timescale=granularity)
+  print(q)
+  data=query(q)
+  print(data)
+
+  exit(1)
+  #################################
+
+
+  q_single_company="""
+   SELECT  
+   FROM_UNIXTIME(timebin, '%%m-%%d') as month_day,
+   SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) AS GB_company,
+   CAST(direction as char(10)) AS Direction 
+   FROM jangle_traffic_total
+   WHERE 
+   timebin >=  UNIX_TIMESTAMP('2020-01-01') and
+   timebin  <  UNIX_TIMESTAMP('2020-11-02') and
+   company =  %%d%%
+   GROUP BY month_day, Direction
+   ORDER BY month_day 
+  """ % (company)
+  
+  print(q_single_company)
+  data=query(q_single_company)
+  print(data)
+  exit(1)
+
+  #########
+  q_3116_Nov_dir  ="""
+  SELECT 
+  CAST(direction as char(10)) AS Direction_,  
+  (timebin) as T, 
+  sum(bytes)  * 1.0  / (1024 * 1024  * 1.0) AS MB_company
+  FROM jangle_traffic_total
+  WHERE company IN (3116)  
+  and timebin  >= UNIX_TIMESTAMP('2020-11-01') and timebin  <  UNIX_TIMESTAMP('2020-11-02') 
+  group by timebin, direction
+  """
+  print(q_3116_Nov_dir)
+  data=query(q_3116_Nov_dir)
+  print(data)
+
+  g = (
+        ggplot(data)
+        + aes(x="T", y="MB_company", color="Direction_")
+        + geom_point()
+        # + facet_grid('~MONTH ')
+        + labs(title=" # November 1 for company=3116 ", y="MB", x='timebin')
+      )
+  print(g)
+
+
+  exit(1)
+
+  #########
+  q_3659_Nov_1_dir  ="""
+  SELECT 
+  CAST(direction as char(10)) AS Direction_,  
+  (timebin) as T, 
+  sum(bytes)  * 1.0  / (1024 * 1024  * 1.0) AS MB_company
+  FROM jangle_traffic_total
+  WHERE company IN (3659)  
+  and timebin  >= UNIX_TIMESTAMP('2020-11-01') and timebin  <= UNIX_TIMESTAMP('2020-11-30') 
+  group by timebin, direction
+  """
+  print(q_3659_Nov_1_dir)
+  data=query(q_3659_Nov_1_dir)
+  print(data)
+
+  g = (
+        ggplot(data)
+        + aes(x="T", y="MB_company", color="Direction_")
+        + geom_point()
+        # + facet_grid('~MONTH ')
+        + labs(title=" # November   for company=3659 ", y="MB", x='timebin')
+      )
+  print(g)
+
+
+  exit(1)
+
+
+
+  #########
+  q_3659_Nov_1 ="""
+  SELECT 
+  CAST(company as char(20)) AS Company_,  
+  (timebin) as T, 
+  sum(bytes)  * 1.0  / (1024 * 1024  * 1.0) AS MB_company
+  FROM jangle_traffic_total
+  WHERE company IN (3659) and direction=1
+  and timebin  >= UNIX_TIMESTAMP('2020-11-01') and timebin  < UNIX_TIMESTAMP('2020-11-02') 
+  group by timebin
+  """
+  print(q_3659_Nov_1)
+  data=query(q_3659_Nov_1)
+  print(data)
+
+  g = (
+        ggplot(data)
+        + aes(x="T", y="MB_company", color="Company_")
+        + geom_point()
+        # + facet_grid('~MONTH ')
+        + labs(title=" # November 1 for company=3659 direction=1", y="MB", x='timebin')
+      )
+  print(g)
+
+
+  exit(1)
+
+  q_3659_Sep ="""
+  SELECT 
+  CAST(company as char(20)) AS Company_,  
+  (timebin) as T, 
+  (bytes  * 1.0 ) / (1024 * 1024  * 1.0) AS MB_company
+  FROM jangle_traffic_total
+  WHERE company IN (3659) and direction=1
+  and timebin >= UNIX_TIMESTAMP('2020-09-01') and timebin <  UNIX_TIMESTAMP('2020-10-01')
+  """
+  print(q_3659_Sep)
+  data=query(q_3659_Sep)
+  print(data)
+
+  g = (
+        ggplot(data)
+        + aes(x="T", y="MB_company", color="Company_")
+        + geom_point()
+        # + facet_grid('~MONTH ')
+        + labs(title=" # September for company=3659 direction=1", y="MB", x='timebin')
+      )
+  print(g)
+
+  #########
+  q_3659_October ="""
+  SELECT 
+  CAST(company as char(20)) AS Company_,  
+  (timebin) as T, 
+  (bytes  * 1.0 ) / (1024 * 1024  * 1.0) AS MB_company
+  FROM jangle_traffic_total
+  WHERE company IN (3659) and direction=1
+  and timebin >= UNIX_TIMESTAMP('2020-10-01') and timebin <  UNIX_TIMESTAMP('2020-11-01')
+  """
+  print(q_3659_October)
+  data=query(q_3659_October)
+  print(data)
+
+  g = (
+        ggplot(data)
+        + aes(x="T", y="MB_company", color="Company_")
+        + geom_point()
+        # + facet_grid('~MONTH ')
+        + labs(title=" # October for company=3659 direction=1", y="MB", x='timebin')
+      )
+  print(g)
+
+  #########
+  q_3659_Nov ="""
+  SELECT 
+  CAST(company as char(20)) AS Company_,  
+  (timebin) as T, 
+  (bytes  * 1.0 ) / (1024 * 1024  * 1.0) AS MB_company
+  FROM jangle_traffic_total
+  WHERE company IN (3659) and direction=1
+  and timebin >= UNIX_TIMESTAMP('2020-11-01') and timebin <  UNIX_TIMESTAMP('2020-12-01')
+  """
+  print(q_3659_Nov)
+  data=query(q_3659_Nov)
+  print(data)
+
+  g = (
+        ggplot(data)
+        + aes(x="T", y="MB_company", color="Company_")
+        + geom_point()
+        # + facet_grid('~MONTH ')
+        + labs(title=" # Nov for company=3659 direction=1", y="MB", x='timebin')
+      )
+  print(g)
+
+  exit(1)
+
+  ################################################
+  q_dev ="""
+  SELECT 
+  CAST(company as char(20)) AS Company_,  
+  FROM_UNIXTIME(timebin, '%%m') as MONTH, 
+  FROM_UNIXTIME(timebin, '%%m-%%d') as MONTH_DAY, 
+  FROM_UNIXTIME(timebin, '%%d') as DAY, 
+  count(distinct msisdn) as msisdn,
+  SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) AS GB_company,
+  SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) / count(distinct msisdn)   as GB_per_dev
+  FROM jangle_traffic
+  WHERE company IN (3659, 3116, 3666, 3655, 3579, 3061, 0)
+  and timebin >= UNIX_TIMESTAMP('2020-10-01') and timebin <  UNIX_TIMESTAMP('2020-11-01')
+  GROUP BY company, MONTH, MONTH_DAY, DAY 
+  ORDER BY MONTH_DAY, Company_
+  """
+
+  print(q_dev)
+  data=query(q_dev)
+  print(data)
+
+  g = (
+        ggplot(data)
+        + aes(x="DAY", y="msisdn", color="Company_")
+        #+ geom_point()
+        + geom_line(aes(x="DAY", y="msisdn", color="Company_"), group=1)
+        #+ facet_grid('~MONTH')
+        + labs(title=" # Devices per company  (October)", y="# of dev", x='DAY')
+      )
+  print(g)
+
+  exit(1)
+###  by company in last 4 month
+
+  q_2 ="""
+  SELECT 
+  CAST(company as char(20)) AS Company_,  
+  FROM_UNIXTIME(timebin, '%%m') as MONTH, 
+  FROM_UNIXTIME(timebin, '%%m-%%d') as MONTH_DAY, 
+  FROM_UNIXTIME(timebin, '%%d') as DAY, 
+  count(distinct msisdn) as msisdn,
+  direction,
+  SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) AS GB_company,
+  SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) / count(distinct msisdn)   as GB_per_dev
+  FROM jangle_traffic
+  WHERE company IN (3659, 3116, 3666, 3655, 3579, 3061, 0)
+  and timebin >= UNIX_TIMESTAMP('2020-10-01') and timebin <  UNIX_TIMESTAMP('2020-12-01')
+  GROUP BY company, MONTH, MONTH_DAY, DAY, direction
+  ORDER BY MONTH_DAY, Company_
+  """
+
+# WHERE company IN (3659, 3116, 3666, 3655, 3579, 3061, 0)
+  print(q_2)
+  data=query(q_2)
+  print(data)
+
+  g = (
+        ggplot(data)
+        + aes(x="DAY", y="GB_company", color="Company_")
+        + geom_point()
+        + facet_grid('~MONTH+direction')
+        + labs(title=" # GB per company  (faced_grid)", y="GB_company", x='MONTH_DAY')
+      )
+  print(g)
+
+  exit(1)
+  #############
+
+  g = (
+        ggplot(data)
+        + aes(x="DAY", y="GB_per_dev", color="Company_")
+        + geom_point()
+        + facet_grid('~MONTH+direction')
+        + labs(title=" # GB per company per device (faced_grid)", y="GB_company_per_dev", x='MONTH_DAY')
+      )
+  print(g)
+
+  exit(1)
+  #############
+  g = (
+        ggplot(data)
+        + aes(x="DAY", y="GB_company", color="Company_")
+        + geom_point()
+        + facet_grid('~MONTH')
+        + labs(title=" # GB per company  (faced_grid)", y="GB_company", x='MONTH_DAY')
+      )
+  print(g)
+
+  exit(1)
+  ############
+  
+
+  g = (
+        ggplot(data)
+        + aes(x="DAY", y="msisdn", color="Company_")
+        + geom_point()
+        + facet_grid('~MONTH')
+        + labs(title=" # of devices  (faced_grid)", y="msisdn", x='MONTH_DAY')
+      )
+  print(g)
+
+ # g = (
+ #       ggplot(
+ #           aes(x="DAY"), data=data
+ #        )
+ #       + geom_line(
+ #                    aes( y="msisdn"),
+ #                    # color="Company_",
+ #                    data=data  
+ #                  )
+ #       + facet_grid('~MONTH')
+ #       + labs(title=" # of devices  (faced_grid)", y="msisdn", x='MONTH_DAY')
+ #     )
+ # print(g)
+
+  exit(1)   
+  #####################
+  g = (
+        ggplot(data)
+        + aes(x="MONTH_DAY", y="msisdn", color="Company_")
+        + geom_point()
+        + labs(title=" # of devices  (color=company)", y="msisdn", x='MONTH_DAY', color='company')
+      )
+  print(g)
+
+  g = (
+        ggplot(data)
+        + aes(x="DAY", y="msisdn",  color="Company_")
+        + geom_point()
+        + facet_wrap('~MONTH', ncol=1, scales='free')
+        + labs(title=" # of devices  (faced_wrap)", y="msisdn", x='MONTH_DAY')
+      )
+  print(g)
+
+ ###-------------------------------------
+  q_jangle_active_daily="""
+       SELECT
+           FROM_UNIXTIME(timebin, '%%m') as month,
+           FROM_UNIXTIME(timebin, '%%d') as day,
+           count(distinct msisdn) as distinct_msisdn
+       FROM jangle_active
+       WHERE FROM_UNIXTIME(timebin, '%%Y') = 2020
+       GROUP BY
+          FROM_UNIXTIME(timebin, '%%m'),
+          FROM_UNIXTIME(timebin, '%%d')
+  """
+
+  print(q_jangle_active_daily)
+  data=query(q_jangle_active_daily)
+  print (data)
+
+  g = (
+        ggplot(data)
+        + aes(x="day", y="distinct_msisdn")
+        + geom_point()
+        + facet_wrap('~month', ncol=3)
+        + labs(title=" jangle_active  (faced_wrap)", y="distinct_msisdn", x='day')
+      )
+  print(g)
+
+  g = (
+        ggplot(data)
+        + aes(x="day", y="distinct_msisdn")
+        + geom_point()
+        + facet_wrap('~month', ncol=3, scales='free_y')
+        + labs(title="jangle_active (facet_wrap, free_y)", y="distinct_msisdn", x='day')
+      )
+  print(g)
+
+  g = (
+        ggplot(data)
+        + aes(x="day", y="distinct_msisdn")
+        + geom_point()
+        + facet_grid('~month' )
+        + labs(title="jangle_active (facet_grid)", y="distinct_msisdn", x='day')
+      )
+  print(g)
+
+  g = (
+        ggplot(data)
+        + aes(x="day", y="distinct_msisdn")
+        + geom_point()
+        + facet_grid('~month', scales='free_y' )
+        + labs(title="jangle_active (facet_grid, free_y)", y="distinct_msisdn", x='day')
+      )
+  print(g)
+
+  exit(1)
+ ###-------------------------------------
+  q_radius_active_daily="""
+       SELECT
+           FROM_UNIXTIME(timebin, '%%m') as month,
+           FROM_UNIXTIME(timebin, '%%d') as day,
+           count(distinct msisdn) as distinct_msisdn
+       FROM radius_active
+       WHERE FROM_UNIXTIME(timebin, '%%Y') = 2020
+       GROUP BY
+          FROM_UNIXTIME(timebin, '%%m'),
+          FROM_UNIXTIME(timebin, '%%d')
+  """
+
+  print(q_radius_active_daily)
+  data=query(q_radius_active_daily)
+  print (data)
+
+  g = (
+        ggplot(data)
+        + aes(x="day", y="distinct_msisdn")
+        + geom_point()
+        + facet_wrap('~month', ncol=3)
+        + labs(title=" radius_active  (faced_wrap)", y="distinct_msisdn", x='day')
+      )
+  print(g)
+
+  g = (
+        ggplot(data)
+        + aes(x="day", y="distinct_msisdn")
+        + geom_point()
+        + facet_wrap('~month', ncol=3, scales='free_y')
+        + labs(title="radius_active (facet_wrap, free_y)", y="distinct_msisdn", x='day')
+      )
+  print(g)
+
+  g = (
+        ggplot(data)
+        + aes(x="day", y="distinct_msisdn")
+        + geom_point()
+        + facet_grid('~month' )
+        + labs(title="radius_active (facet_grid)", y="distinct_msisdn", x='day')
+      )
+  print(g)
+
+  g = (
+        ggplot(data)
+        + aes(x="day", y="distinct_msisdn")
+        + geom_point()
+        + facet_grid('~month', scales='free_y' )
+        + labs(title="radius_active (facet_grid, free_y)", y="distinct_msisdn", x='day')
+      )
+  print(g)
+
+  exit(1)
+
+ ###----------------------------------------
+
+  for month in ['01','02', '03','04','05','06','07','08','09','10','11']:
+   
+    q_radius_active="""
+       SELECT  FROM_UNIXTIME(timebin, '%%d') as day,
+       count (distinct msidn)
+       FROM  radius_active
+       WHERE
+          FROM_UNIXTIME(timebin, '%%Y') = 2020
+          AND
+          FROM_UNIXTIME(timebin, '%%m')  = '""" 
+  
+    q_radius_active += month +"'"
+    q_radius_active += " GROUP BY FROM_UNIXTIME(timebin, '%%d')"
+
+   
+
+
+
+  for month in ['01','02', '03','04','05','06','07','08','09','10','11']:
+   if 0>1:
+      q_daily="""
+       SELECT  FROM_UNIXTIME(timebin, '%%d') as day,
+       SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) AS GB
+       FROM jangle_traffic_total
+       WHERE 
+          FROM_UNIXTIME(timebin, '%%Y') = 2020
+          AND 
+          FROM_UNIXTIME(timebin, '%%m')  = '""" 
+      q_daily += month +"'"
+      q_daily += " GROUP BY FROM_UNIXTIME(timebin, '%%d')"
+
+      print (q_daily)
+      data=query(q_daily)
+      print(data)
+
+
+      g = (
+        ggplot(data)
+        + aes(x="day", y="GB")
+        + geom_point()
+        + labs(title="jangle_traffic_total month="+ month, y="GB", x='day')
+      )
+      print(g)
+      g.save(month)
+
+  for month in ['01','02', '03','04','05','06','07','08','09','10','11']:
+
+      q_hourly="""
+        SELECT 
+         HOUR(FROM_UNIXTIME(timebin))  AS hour, 
+         SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) AS GB
+        FROM jangle_traffic_total 
+        WHERE 
+           FROM_UNIXTIME(timebin, '%%Y') = 2020
+           AND 
+           FROM_UNIXTIME(timebin, '%%m')  = '"""
+      q_hourly += month +"'"
+      q_hourly += " GROUP BY FROM_UNIXTIME(timebin, '%%H')"
+
+  
+
+
+      print (q_hourly)
+      data=query(q_hourly)
+      print(data)
+
+
+      g = (
+        ggplot(data)
+        + aes(x="hour", y="GB")
+        + geom_point()
+        + labs(title="jangle_traffic_total group by hour, month="+ month, y="GB", x='hour')
+      )
+      print(g)
+      g.save("hourly-month-"+month)
+
+ 
+  exit(1)
+
+  q_month_daily="""
+       SELECT
+           FROM_UNIXTIME(timebin, '%%m') as month,
+           FROM_UNIXTIME(timebin, '%%d') as day,
+           SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) AS GB
+       FROM jangle_traffic_total
+       WHERE FROM_UNIXTIME(timebin, '%%Y') = 2020
+       GROUP BY 
+          FROM_UNIXTIME(timebin, '%%m'),
+          FROM_UNIXTIME(timebin, '%%d') 
+  """
+
+  print(q_month_daily)
+  data=query(q_month_daily)
+  print (data)
+
+  g = (
+        ggplot(data)
+        + aes(x="day", y="GB")
+        + geom_point()
+        + facet_wrap('~month', ncol=3)
+        + labs(title="jangle_traffic_total (faced_wrap)", y="GB", x='day')
+      )
+  print(g)
+
+  g = (
+        ggplot(data)
+        + aes(x="day", y="GB")
+        + geom_point()
+        + facet_wrap('~month', ncol=3, scales='free_y')
+        + labs(title="jangle_traffic_total (facet_wrap, free_y)", y="GB", x='day')
+      )
+  print(g)
+
+  g = (
+        ggplot(data)
+        + aes(x="day", y="GB")
+        + geom_point()
+        + facet_grid('~month' )
+        + labs(title="jangle_traffic_total (facet_grid)", y="GB", x='day')
+      )
+  print(g)
+
+  g = (
+        ggplot(data)
+        + aes(x="day", y="GB")
+        + geom_point()
+        + facet_grid('~month', scales='free_y' )
+        + labs(title="jangle_traffic_total (facet_grid, free_y)", y="GB", x='day')
+      )
+  print(g)
+
+  # exit(1)
+
+  q_monthly="""
+     SELECT 
+         FROM_UNIXTIME(timebin, '%%m') as month,
+          SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) AS GB
+     FROM jangle_traffic_total
+     WHERE FROM_UNIXTIME(timebin, '%%Y') = 2020
+     GROUP BY FROM_UNIXTIME(timebin, '%%m') 
+  """
+
+  print(q_monthly)
+  data=query(q_monthly)
+  print (data)
+
+  g = (
+      ggplot(data)
+      + aes(x="month", y="GB")
+      + geom_point()
+      + labs(title="jangle_traffic_total", y="GB", x='month')
+    )
+  print(g)
+
+  exit(1)
+
+  q_hourly="""
+     SELECT 
+         HOUR(FROM_UNIXTIME(timebin))  AS hour, 
+         SUM(bytes) AS bytes, 
+         direction 
+     FROM jangle_traffic_total 
+     WHERE timebin >= UNIX_TIMESTAMP('%s') 
+           and timebin < UNIX_TIMESTAMP('%s')
+     GROUP BY 
+        HOUR(FROM_UNIXTIME(timebin)) , 
+        direction
+  """ % ( start , end )
+
+  q_day_name="""
+       SELECT
+           DAYNAME(FROM_UNIXTIME(timebin))  AS dayname,
+           SUM(bytes) AS bytes,
+           direction
+       FROM jangle_traffic_total
+       WHERE timebin >= UNIX_TIMESTAMP('%s') 
+             and timebin < UNIX_TIMESTAMP('%s')
+       GROUP BY
+          DAYNAME(FROM_UNIXTIME(timebin)) ,
+          direction
+  """ % ( start , end )
+
+
+  print(q_monthly)
+  data=query(q_monthly)
+  print (data)  
+
+
+
+  exit(1)
+
+  print(q_hourly)
+  data=query(q_hourly)
+  print (data)  
+
+  print(q_day_name)
+  data=query(q_day_name)
+  print (data)  
+
+  exit(1)
+
+
+
+  g = (
+    ggplot(data)
+    + aes(x="company", y="cnt")
+    + geom_point()
+    + labs(title="Head title", y="y_title")
+  )
+  print(g)   
+
