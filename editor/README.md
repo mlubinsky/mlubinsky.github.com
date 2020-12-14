@@ -135,6 +135,8 @@ https://kakoune.org/
 
 ## VIM
 
+https://lobste.rs/s/du8i6z/5_lines_i_put_blank_vimrc
+
 "| vim -" instead of less
 
 :wq. vs :x
