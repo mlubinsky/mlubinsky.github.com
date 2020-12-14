@@ -40,15 +40,16 @@ def single_company(company, start=None, end=None, timescale=None):
   if not start:  start='2020-11-01'
   if not end:    end  ='2020-12-01'
 
-  if not timescale:
+  if timescale == "minutes":
+    timescale='%%H:%%i'
+  else:
        timescale= '%%m-%%d'
-  elif timescale == 'H':
-       timescale= '%%H'
+
 
   SQL=f"""
    SELECT
    FROM_UNIXTIME(timebin, '{timescale}') as timescale,
-   SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) AS GB_company,
+   SUM(bytes) * 1.0 / (1024.0 * 1024.0 ) AS MB,
    CAST(direction as char(10)) AS Direction
    FROM jangle_traffic_total
    WHERE
@@ -61,8 +62,49 @@ def single_company(company, start=None, end=None, timescale=None):
 
   return SQL
 
+def single_company_device(company, start=None, end=None, timescale=None):
+  # protocol, remote_ip, apn, direction, packets  
+  if not start:  start='2020-11-01'
+  if not end:    end  ='2020-12-01'
 
-if __name__ == "__main__" :
+  if timescale == "minutes":
+    timescale='%%H:%%i'
+  else:
+       timescale= '%%m-%%d'
+
+
+  SQL=f"""
+   SELECT
+   CAST(msisdn as char(50)) AS msisdn,
+   FROM_UNIXTIME(timebin, '{timescale}') as timescale,
+   SUM(bytes) * 1.0 / (1024.0 * 1024.0 ) AS MB
+   FROM jangle_traffic
+   WHERE
+   timebin >=  UNIX_TIMESTAMP('{start}') and
+   timebin  <  UNIX_TIMESTAMP('{end}') and
+   company =  {company} and
+   msisdn IN
+   (
+     SELECT msisdn from (
+       SELECT msisdn, SUM(bytes) * 1.0 / (1024.0 * 1024.0 ) as MB
+       FROM jangle_traffic
+       WHERE
+       timebin >=  UNIX_TIMESTAMP('{start}') and
+       timebin  <  UNIX_TIMESTAMP('{end}') and
+       company =  {company}
+       group by msisdn
+       order by MB DESC
+       LIMIT 5
+     ) A
+   )
+   GROUP BY msisdn, timescale
+   ORDER BY timescale
+  """
+
+  return SQL
+
+
+def dialog():
   datastore.connect()
 
   q=all_company()
@@ -81,7 +123,7 @@ if __name__ == "__main__" :
       start="2020-11-01"
   elif  len(start_input) != 10:
       print("Error in input- format is YYYY-MM-DD")
-      exit(0)
+      return
   else:
       start=start_input
 
@@ -95,28 +137,56 @@ if __name__ == "__main__" :
   )
 
   print("end_input=",end_input)
-  
+
   granularity = None
-  if not end_input or end_input == '1': 
+  if not end_input or end_input == '1':
       n_days=1
-      granularity='H'
+      granularity='minutes'
   elif end_input == '2': # week
       n_days=7
   elif end_input == '3': # month
       n_days=30 ## TODO
   else:
       print("wrong end input")
-      exit(1) 
+      return
 
   end = (datetime.strptime(start, '%Y-%m-%d') + timedelta(days=n_days)).strftime('%Y-%m-%d')
-  
+
   q=single_company(company, start, end, timescale=granularity)
   print(q)
   data=query(q)
   print(data)
 
+  g = (
+        ggplot(data)
+        + aes(x="timescale", y="MB", color="Direction")
+        + geom_point()
+        + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+      )
+  print(g)
+
+  q=single_company_device(company, start, end, timescale=granularity)
+  print(q)
+  data=query(q)
+  print(data)
+
+  g = (
+        ggplot(data)
+        + aes(x="timescale", y="MB", color="msisdn")
+        + geom_point()
+        + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+      )
+  print(g)
+
+####################
+
+if __name__ == "__main__" :
+  while True:
+      dialog()
+
   exit(1)
-  #################################
+
+####################
 
 
   q_single_company="""
