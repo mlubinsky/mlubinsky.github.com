@@ -17,6 +17,7 @@ from datetime import datetime, timedelta
 start_date='2020-05-12'
 n=5
 plus_n_date = (datetime.strptime(start_date, '%Y-%m-%d') + timedelta(days=n)).strftime('%Y-%m-%d')
+```
 
 ### SQLite
 
