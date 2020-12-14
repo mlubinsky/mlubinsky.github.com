@@ -9,6 +9,15 @@ https://gto76.github.io/python-cheatsheet/  Cheetsheet
 
 f-strings: <https://miguendes.me/amp/73-examples-to-help-you-master-pythons-f-strings>
 
+
+## Date arithmetic:
+
+```
+from datetime import datetime, timedelta
+start_date='2020-05-12'
+n=5
+plus_n_date = (datetime.strptime(start_date, '%Y-%m-%d') + timedelta(days=n)).strftime('%Y-%m-%d')
+
 ### SQLite
 
 SQLite connection <http://blog.rtwilson.com/a-python-sqlite3-context-manager-gotcha/>
