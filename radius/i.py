@@ -76,12 +76,13 @@ def all_company_daily(start=None, end=None, timescale=None):
 
   return SQL
 
-def single_company(company, start=None, end=None, timescale=None):
-  if not start:  start='2020-11-01'
-  if not end:    end  ='2020-12-01'
+def single_company(company, start, end, timescale=None):
 
-
-  if timescale == "minutes":
+  if timescale == "day-hour":
+       timescale='%%d-%%H'
+  elif timescale == "hours":
+       timescale='%%H'
+  elif timescale == "minutes":
       timescale='%%H:%%i'
   else:
       timescale= '%%m-%%d'
@@ -277,7 +278,7 @@ def plot_single_company(company, start, end, n_days,  granularity):
   data=query(q)
   print(data)
 
-  print("SINGLE COMPANY ....")
+  #print("SINGLE COMPANY ....")
 
   #g = (
   #     ggplot(data)
@@ -354,7 +355,7 @@ def dialog():
    """
   )
 
-  print("end_input=",end_input)
+  #print("end_input=",end_input)
 
   granularity = None
   if not end_input or end_input == '1':
@@ -374,7 +375,7 @@ def dialog():
   ### all_company_total
   #########################
 
-  plot_all_company_total(start, end, n_days)
+  # plot_all_company_total(start, end, n_days)
 
   ############################
   ###    all_company_daily
@@ -382,7 +383,7 @@ def dialog():
 
   if  n_days == 1:
       granularity='hours'
-  plot_all_company_daily(start, end, n_days, granularity)
+  #plot_all_company_daily(start, end, n_days, granularity)
 
 
 
@@ -392,20 +393,22 @@ def dialog():
   if  n_days == 1:
       granularity='hours'
 
-  plot_devices(start, end, n_days, granularity)
+  # plot_devices(start, end, n_days, granularity)
 
   ############################
   ###    single_company
   ############################
 
-  company_str = input("Enter the company_id : ")
+  company_str = input("Enter the company_id : (default - 3659")
   if not company_str:
-      company=0
+      company=3659
   else:
       company = int(company_str)
 
   if  n_days == 1:
       granularity='minutes'
+  elif n_days < 60:
+      granularity='day-hour'
 
   plot_single_company(company, start, end, n_days, granularity)
 
@@ -413,11 +416,11 @@ def dialog():
   ####   SINGLE COMPANY_device
   #############################
 
-  plot_single_company_device(company, start, end, n_days, granularity)
+  # plot_single_company_device(company, start, end, n_days, granularity)
 
 
 
-####################
+###  main
 
 if __name__ == "__main__" :
   datastore.connect()
