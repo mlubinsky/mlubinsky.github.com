@@ -187,8 +187,152 @@ def single_company_device(company, start=None, end=None, timescale=None):
   return SQL
 
 
-def dialog():
+#--------------------------------------
+def plot_all_company_total(start, end, n_days):
+#--------------------------------------
+  q=all_company_total(start, end)
+  print(q)
+  data=query(q)
+  print(data)
 
+  g = (
+        ggplot(data)
+        + geom_bar(
+            mapping=aes(x="company", 
+                        y="GB_company", 
+                        fill="company"),
+            stat="identity"
+          )
+         + labs(title="Top 5 companies: start="+start+ "  days="+str(n_days), x='company') 
+        )
+  print(g)
+
+#--------------------------------------------------
+def  plot_all_company_daily(start, end, n_days, granularity):
+#--------------------------------------------------    
+  q=all_company_daily(start,end, granularity)
+  print(q)
+  data=query(q)
+  print(data)
+
+  #print("BEFORE geom_col")
+  #g = (
+  #   ggplot(data, aes("timescale", "MB_company", fill="company"))
+  #   + geom_col(position=position_stack(reverse=True))
+  #   + labs(title="Traffic(geom_col) for top companies start="+start+ "  days="+str(n_days) , x='time')
+
+  #)
+  #print(g)
+
+  print("BEFORE stat=identity")
+  g = (
+        ggplot(data)
+        + geom_bar(
+            mapping=aes(x="timescale",
+                        y="MB_company",
+                        fill="company"),
+            stat="identity"
+          )
+          + labs(title="Traffic for top companies start="+start+ "  days="+str(n_days) , x='time')
+
+        )
+  print(g)
+
+#----------------------------------------
+def  plot_devices(start, end, n_days, granularity):
+#----------------------------------------
+  q=devices(start,end, granularity)
+  print(q)
+  data=query(q)
+  print(data)
+
+  print("n_msisdn BEFORE geom_col")
+  g = (
+     ggplot(data, aes("timescale", "n_msisdn", fill="company"))
+     + geom_col(position=position_stack(reverse=True))
+     + labs(title="# of devices start="+start+ "  days="+str(n_days) + "  (geom_col)" , x='time')
+
+  )
+  print(g)
+
+  #print("n_msisdn BEFORE stat=identity")
+  #g = (
+  #      ggplot(data)
+  #      + geom_bar(
+  #          mapping=aes(x="timescale",
+  #                      y="n_msisdn",
+  #                      fill="company"),
+  #          stat="identity"
+  #        )
+  #        + labs(title="Number of devices start="+start+ "  days="+str(n_days) , x='time')
+
+  #      )
+  #print(g)
+
+#----------------------------------------
+def plot_single_company(company, start, end, n_days,  granularity):
+#----------------------------------------
+  q=single_company(company, start, end, timescale=granularity)
+  print(q)
+  data=query(q)
+  print(data)
+
+  print("SINGLE COMPANY ....")
+
+  #g = (
+  #     ggplot(data)
+  #      + geom_line(aes(x="timescale", y="MB", color="Direction"), group=1)
+  #      + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+  #    )
+  #print(g)
+
+  print("SINGLE COMPANY again - using dots")
+  # https://github.com/has2k1/plotnine/issues/335
+
+  # geom_path.py:83: PlotnineWarning: geom_path: 
+  # Each group consist of only one observation. Do you need to adjust the group aesthetic?
+  #g = (
+  #     ggplot(data,
+  #            aes(x="timescale", y="MB", color="Direction")
+  #            )
+  #      + geom_line(group="ignored")
+  #      + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+  #    )
+
+  g = (
+        ggplot(data,
+         aes(x="timescale", y="MB", color="Direction")
+        )
+        + geom_point()
+        + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+      )
+  print(g)
+
+#----------------------------------------
+def  plot_single_company_device(company, start, end, n_days, granularity):
+#----------------------------------------
+  q=single_company_device(company, start, end, timescale=granularity)
+  print(q)
+  data=query(q)
+  print(data)
+
+
+  print("SINGLE COMPANY DEVICE")
+  # Error AttributeError: 'float' object has no attribute 'layers'
+  # PlotnineError: "Cannot add layer to object of type <class 'float'>"
+  g = (
+        ggplot(data,
+         aes(x="timescale", y="MB", color="msisdn")
+        )
+        + geom_point()
+        + labs(title="Top 5 devices company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+      )
+  print(g)
+
+
+#----------------------------------------
+def dialog():
+#----------------------------------------
  ####################
  ### get time range
  ####################
@@ -230,56 +374,17 @@ def dialog():
   ### all_company_total
   #########################
 
-  q=all_company_total(start, end)
-  print(q)
-  data=query(q)
-  print(data)
-
-  g = (
-        ggplot(data)
-        + geom_bar(
-            mapping=aes(x="company", 
-                        y="GB_company", 
-                        fill="company"),
-            stat="identity"
-          )
-         + labs(title="Top 5 companies: start="+start+ "  days="+str(n_days), x='company') 
-        )
-  print(g)
+  plot_all_company_total(start, end, n_days)
 
   ############################
   ###    all_company_daily
   ############################
+
   if  n_days == 1:
       granularity='hours'
+  plot_all_company_daily(start, end, n_days, granularity)
 
-  q=all_company_daily(start,end, granularity)
-  print(q)
-  data=query(q)
-  print(data)
 
-  #print("BEFORE geom_col")
-  #g = (
-  #   ggplot(data, aes("timescale", "MB_company", fill="company"))
-  #   + geom_col(position=position_stack(reverse=True))
-  #   + labs(title="Traffic(geom_col) for top companies start="+start+ "  days="+str(n_days) , x='time')
-
-  #)
-  #print(g)
-
-  print("BEFORE stat=identity")
-  g = (
-        ggplot(data)
-        + geom_bar(
-            mapping=aes(x="timescale",
-                        y="MB_company",
-                        fill="company"),
-            stat="identity"
-          )
-          + labs(title="Traffic for top companies start="+start+ "  days="+str(n_days) , x='time')
-
-        )
-  print(g)
 
   ############################
   ###    devices
@@ -287,33 +392,7 @@ def dialog():
   if  n_days == 1:
       granularity='hours'
 
-  q=devices(start,end, granularity)
-  print(q)
-  data=query(q)
-  print(data)
-
-  print("n_msisdn BEFORE geom_col")
-  g = (
-     ggplot(data, aes("timescale", "n_msisdn", fill="company"))
-     + geom_col(position=position_stack(reverse=True))
-     + labs(title="# of devices start="+start+ "  days="+str(n_days) + "  (geom_col)" , x='time')
-
-  )
-  print(g)
-
-  #print("n_msisdn BEFORE stat=identity")
-  #g = (
-  #      ggplot(data)
-  #      + geom_bar(
-  #          mapping=aes(x="timescale",
-  #                      y="n_msisdn",
-  #                      fill="company"),
-  #          stat="identity"
-  #        )
-  #        + labs(title="Number of devices start="+start+ "  days="+str(n_days) , x='time')
-
-  #      )
-  #print(g)
+  plot_devices(start, end, n_days, granularity)
 
   ############################
   ###    single_company
@@ -328,62 +407,15 @@ def dialog():
   if  n_days == 1:
       granularity='minutes'
 
-  q=single_company(company, start, end, timescale=granularity)
-  print(q)
-  data=query(q)
-  print(data)
-
-  print("SINGLE COMPANY ....")
-
-  #g = (
-  #     ggplot(data)
-  #      + geom_line(aes(x="timescale", y="MB", color="Direction"), group=1)
-  #      + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
-  #    )
-  #print(g)
-
-  print("SINGLE COMPANY again - using dots")
-  # https://github.com/has2k1/plotnine/issues/335
-
-  # geom_path.py:83: PlotnineWarning: geom_path: 
-  # Each group consist of only one observation. Do you need to adjust the group aesthetic?
-  #g = (
-  #     ggplot(data,
-  #            aes(x="timescale", y="MB", color="Direction")
-  #            )
-  #      + geom_line(group="ignored")
-  #      + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
-  #    )
-
-  g = (
-        ggplot(data,
-         aes(x="timescale", y="MB", color="Direction")
-        )
-        + geom_point()
-        + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
-      )
-  print(g)
+  plot_single_company(company, start, end, n_days, granularity)
 
   #############################
   ####   SINGLE COMPANY_device
   #############################
-  q=single_company_device(company, start, end, timescale=granularity)
-  print(q)
-  data=query(q)
-  print(data)
+
+  plot_single_company_device(company, start, end, n_days, granularity)
 
 
-  print("SINGLE COMPANY DEVICE")
-  # Error AttributeError: 'float' object has no attribute 'layers'
-  # PlotnineError: "Cannot add layer to object of type <class 'float'>"
-  g = (
-        ggplot(data,
-         aes(x="timescale", y="MB", color="msisdn")
-        )
-        + geom_point()
-        + labs(title="Top 5 devices company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
-      )
-  print(g)
 
 ####################
 
