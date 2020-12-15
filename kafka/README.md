@@ -1,5 +1,7 @@
 <https://github.com/twmb/kcl> Kafka client
 
+https://habr.com/ru/company/otus/blog/532954/  KAFKA API
+
 https://habr.com/ru/company/southbridge/blog/530498/  
 
 <https://lobste.rs/s/xylmdn/i_m_not_feeling_async_pressure>
