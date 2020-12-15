@@ -32,7 +32,7 @@ def all_company_total(start, end):
    timebin  <  UNIX_TIMESTAMP('{end}')
    GROUP BY company
    ORDER BY GB_company desc
-   LIMIT 10
+   LIMIT 5
   """ 
 
   return SQL
@@ -80,29 +80,70 @@ def single_company(company, start=None, end=None, timescale=None):
   if not start:  start='2020-11-01'
   if not end:    end  ='2020-12-01'
 
+
   if timescale == "minutes":
-    timescale='%%H:%%i'
+      timescale='%%H:%%i'
   else:
-       timescale= '%%m-%%d'
+      timescale= '%%m-%%d'
 
 
   SQL=f"""
    SELECT
-   FROM_UNIXTIME(timebin, '{timescale}') as timescale,
-   SUM(bytes) * 1.0 / (1024.0 * 1024.0 ) as MB,
-   CAST(direction as char(10)) AS Direction
+     FROM_UNIXTIME(timebin, '{timescale}') as timescale,
+     SUM(bytes) * 1.0 / (1024.0 * 1024.0 ) as MB,
+     CAST(direction as char(10)) AS Direction
    FROM jangle_traffic_total
    WHERE
-   timebin >=  UNIX_TIMESTAMP('{start}') and
-   timebin  <  UNIX_TIMESTAMP('{end}') and
-   company =  {company}
+     timebin >=  UNIX_TIMESTAMP('{start}') and
+     timebin  <  UNIX_TIMESTAMP('{end}') and
+     company =  {company}
    GROUP BY timescale, Direction
    ORDER BY timescale
   """
 
   return SQL
 
+def devices(start, end, timescale):
+
+  if timescale == "hours":
+     timescale='%%H'
+  else:
+     timescale= '%%m-%%d'
+
+  SQL=f"""
+   SELECT 
+     CAST(company as char(20)) AS company,  
+     FROM_UNIXTIME(timebin, '{timescale}') as timescale,
+     count(distinct msisdn) as n_msisdn,
+     SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) AS GB_company,
+     SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) / count(distinct msisdn) as GB_per_dev
+   FROM jangle_traffic
+   WHERE
+     timebin >=  UNIX_TIMESTAMP('{start}') and
+     timebin  <  UNIX_TIMESTAMP('{end}')  and
+     company IN
+     (
+      SELECT company FROM (
+       SELECT
+          company,
+          SUM(bytes)  as sum_bytes
+       FROM jangle_traffic_total
+       WHERE
+          timebin >=  UNIX_TIMESTAMP('{start}') and
+          timebin  <  UNIX_TIMESTAMP('{end}')
+       GROUP BY company
+       ORDER BY sum_bytes DESC
+       LIMIT 5
+      ) A
+     )
+   GROUP BY company, timescale
+   ORDER BY timescale
+  """
+
+  return SQL
+
 def single_company_device(company, start=None, end=None, timescale=None):
+  # Top 5 devices  
   # protocol, remote_ip, apn, direction, packets  
   if not start:  start='2020-11-01'
   if not end:    end  ='2020-12-01'
@@ -147,8 +188,6 @@ def single_company_device(company, start=None, end=None, timescale=None):
 
 
 def dialog():
-  
-
 
  ####################
  ### get time range
@@ -204,7 +243,7 @@ def dialog():
                         fill="company"),
             stat="identity"
           )
-         + labs(title="Top 10 companies: start="+start+ "  days="+str(n_days), x='company') 
+         + labs(title="Top 5 companies: start="+start+ "  days="+str(n_days), x='company') 
         )
   print(g)
 
@@ -213,15 +252,22 @@ def dialog():
   ############################
   if  n_days == 1:
       granularity='hours'
+
   q=all_company_daily(start,end, granularity)
   print(q)
   data=query(q)
   print(data)
 
-  g = (
-     ggplot(data, aes("timescale", "MB_company", fill="company"))
-     + geom_col(position=position_stack(reverse=True))
-)
+  #print("BEFORE geom_col")
+  #g = (
+  #   ggplot(data, aes("timescale", "MB_company", fill="company"))
+  #   + geom_col(position=position_stack(reverse=True))
+  #   + labs(title="Traffic(geom_col) for top companies start="+start+ "  days="+str(n_days) , x='time')
+
+  #)
+  #print(g)
+
+  print("BEFORE stat=identity")
   g = (
         ggplot(data)
         + geom_bar(
@@ -230,10 +276,44 @@ def dialog():
                         fill="company"),
             stat="identity"
           )
-          + labs(title="start="+start+ "  days="+str(n_days) , x='time')
+          + labs(title="Traffic for top companies start="+start+ "  days="+str(n_days) , x='time')
 
         )
   print(g)
+
+  ############################
+  ###    devices
+  ############################
+  if  n_days == 1:
+      granularity='hours'
+
+  q=devices(start,end, granularity)
+  print(q)
+  data=query(q)
+  print(data)
+
+  print("n_msisdn BEFORE geom_col")
+  g = (
+     ggplot(data, aes("timescale", "n_msisdn", fill="company"))
+     + geom_col(position=position_stack(reverse=True))
+     + labs(title="# of devices start="+start+ "  days="+str(n_days) + "  (geom_col)" , x='time')
+
+  )
+  print(g)
+
+  #print("n_msisdn BEFORE stat=identity")
+  #g = (
+  #      ggplot(data)
+  #      + geom_bar(
+  #          mapping=aes(x="timescale",
+  #                      y="n_msisdn",
+  #                      fill="company"),
+  #          stat="identity"
+  #        )
+  #        + labs(title="Number of devices start="+start+ "  days="+str(n_days) , x='time')
+
+  #      )
+  #print(g)
 
   ############################
   ###    single_company
@@ -255,12 +335,12 @@ def dialog():
 
   print("SINGLE COMPANY ....")
 
-  g = (
-       ggplot(data)
-        + geom_line(aes(x="timescale", y="MB", color="Direction"), group=1)
-        + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
-      )
-  print(g)
+  #g = (
+  #     ggplot(data)
+  #      + geom_line(aes(x="timescale", y="MB", color="Direction"), group=1)
+  #      + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+  #    )
+  #print(g)
 
   print("SINGLE COMPANY again - using dots")
   # https://github.com/has2k1/plotnine/issues/335
@@ -301,7 +381,7 @@ def dialog():
          aes(x="timescale", y="MB", color="msisdn")
         )
         + geom_point()
-        + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+        + labs(title="Top 5 devices company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
       )
   print(g)
 
