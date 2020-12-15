@@ -18,13 +18,13 @@ def query(sql):
   datastore.commit()
   return d
 
-def all_company(start=None, end=None):
+def all_company_total(start, end):
   if not start:  start='2020-11-01'
   if not end:    end  ='2020-12-01'
 
   SQL=f"""
    SELECT
-   company,
+   CAST(company as char(30)) AS company,
    SUM(bytes) * 1.0 / (1024 * 1024 * 1024 * 1.0) AS GB_company 
    FROM jangle_traffic_total
    WHERE
@@ -32,7 +32,47 @@ def all_company(start=None, end=None):
    timebin  <  UNIX_TIMESTAMP('{end}')
    GROUP BY company
    ORDER BY GB_company desc
+   LIMIT 10
   """ 
+
+  return SQL
+
+def all_company_daily(start=None, end=None, timescale=None):
+  if not start:  start='2020-11-01'
+  if not end:    end  ='2020-12-01'
+
+  if timescale == "hours":
+       timescale='%%H'
+  else:
+       timescale= '%%m-%%d'
+
+
+  SQL=f"""
+   SELECT
+   FROM_UNIXTIME(timebin, '{timescale}') as timescale,
+   CAST(company as char(30)) AS company,
+   SUM(bytes) * 1.0 / (1024.0 * 1024.0) as MB_company 
+   FROM jangle_traffic_total
+   WHERE
+   timebin >=  UNIX_TIMESTAMP('{start}') and
+   timebin  <  UNIX_TIMESTAMP('{end}') and
+   company IN (
+      SELECT company from (
+       SELECT 
+          company, 
+          SUM(bytes)  as sum_bytes
+       FROM jangle_traffic_total
+       WHERE
+          timebin >=  UNIX_TIMESTAMP('{start}') and
+          timebin  <  UNIX_TIMESTAMP('{end}')
+       GROUP BY company
+       ORDER BY sum_bytes DESC
+       LIMIT 5
+     ) A
+   )
+   GROUP BY company, timescale
+   ORDER BY timescale
+  """
 
   return SQL
 
@@ -49,7 +89,7 @@ def single_company(company, start=None, end=None, timescale=None):
   SQL=f"""
    SELECT
    FROM_UNIXTIME(timebin, '{timescale}') as timescale,
-   SUM(bytes) * 1.0 / (1024.0 * 1024.0 ) AS MB,
+   SUM(bytes) * 1.0 / (1024.0 * 1024.0 ) as MB,
    CAST(direction as char(10)) AS Direction
    FROM jangle_traffic_total
    WHERE
@@ -76,8 +116,8 @@ def single_company_device(company, start=None, end=None, timescale=None):
   SQL=f"""
    SELECT
    CAST(msisdn as char(50)) AS msisdn,
-   FROM_UNIXTIME(timebin, '{timescale}') as timescale,
-   SUM(bytes) * 1.0 / (1024.0 * 1024.0 ) AS MB
+   CAST(FROM_UNIXTIME(timebin, '{timescale}') as char(40)) as timescale,
+   SUM(bytes) * 1.0 / (1024.0 * 1024.0 ) as MB
    FROM jangle_traffic
    WHERE
    timebin >=  UNIX_TIMESTAMP('{start}') and
@@ -86,14 +126,16 @@ def single_company_device(company, start=None, end=None, timescale=None):
    msisdn IN
    (
      SELECT msisdn from (
-       SELECT msisdn, SUM(bytes) * 1.0 / (1024.0 * 1024.0 ) as MB
+       SELECT 
+          msisdn, 
+          SUM(bytes)  as sum_bytes
        FROM jangle_traffic
        WHERE
-       timebin >=  UNIX_TIMESTAMP('{start}') and
-       timebin  <  UNIX_TIMESTAMP('{end}') and
-       company =  {company}
-       group by msisdn
-       order by MB DESC
+         timebin >=  UNIX_TIMESTAMP('{start}') and
+         timebin  <  UNIX_TIMESTAMP('{end}') and
+         company =  {company}
+       GROUP BY msisdn
+       ORDER BY sum_bytes DESC
        LIMIT 5
      ) A
    )
@@ -105,20 +147,14 @@ def single_company_device(company, start=None, end=None, timescale=None):
 
 
 def dialog():
-  datastore.connect()
+  
 
-  q=all_company()
-  print(q)
-  data=query(q)
-  print(data)
 
-  company_str = input("Enter the company_id : ")
-  if not company_str:
-      company=0
-  else:
-      company = int(company_str)
+ ####################
+ ### get time range
+ ####################
 
-  start_input = input("Enter start day (YYYY-MM-DD) or press Enter for 2020-11-01 : ")
+  start_input = input("Enter start day (YYYY-MM-DD) (default 2020-11-01) : ")
   if not start_input:
       start="2020-11-01"
   elif  len(start_input) != 10:
@@ -127,12 +163,11 @@ def dialog():
   else:
       start=start_input
 
-  print("before end_input:")
+  print(" ")
   end_input = input("""Enter duration
-       1 - 1 day
-       2 - 1 week
-       3 - 1 month
-       or press Enter for 1 day
+       1 - one day (default)
+       2 - one week
+       3 - one month
    """
   )
 
@@ -152,27 +187,119 @@ def dialog():
 
   end = (datetime.strptime(start, '%Y-%m-%d') + timedelta(days=n_days)).strftime('%Y-%m-%d')
 
+  #########################
+  ### all_company_total
+  #########################
+
+  q=all_company_total(start, end)
+  print(q)
+  data=query(q)
+  print(data)
+
+  g = (
+        ggplot(data)
+        + geom_bar(
+            mapping=aes(x="company", 
+                        y="GB_company", 
+                        fill="company"),
+            stat="identity"
+          )
+         + labs(title="Top 10 companies: start="+start+ "  days="+str(n_days), x='company') 
+        )
+  print(g)
+
+  ############################
+  ###    all_company_daily
+  ############################
+  if  n_days == 1:
+      granularity='hours'
+  q=all_company_daily(start,end, granularity)
+  print(q)
+  data=query(q)
+  print(data)
+
+  g = (
+     ggplot(data, aes("timescale", "MB_company", fill="company"))
+     + geom_col(position=position_stack(reverse=True))
+)
+  g = (
+        ggplot(data)
+        + geom_bar(
+            mapping=aes(x="timescale",
+                        y="MB_company",
+                        fill="company"),
+            stat="identity"
+          )
+          + labs(title="start="+start+ "  days="+str(n_days) , x='time')
+
+        )
+  print(g)
+
+  ############################
+  ###    single_company
+  ############################
+
+  company_str = input("Enter the company_id : ")
+  if not company_str:
+      company=0
+  else:
+      company = int(company_str)
+
+  if  n_days == 1:
+      granularity='minutes'
+
   q=single_company(company, start, end, timescale=granularity)
   print(q)
   data=query(q)
   print(data)
 
+  print("SINGLE COMPANY ....")
+
   g = (
-        ggplot(data)
-        + aes(x="timescale", y="MB", color="Direction")
+       ggplot(data)
+        + geom_line(aes(x="timescale", y="MB", color="Direction"), group=1)
+        + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+      )
+  print(g)
+
+  print("SINGLE COMPANY again - using dots")
+  # https://github.com/has2k1/plotnine/issues/335
+
+  # geom_path.py:83: PlotnineWarning: geom_path: 
+  # Each group consist of only one observation. Do you need to adjust the group aesthetic?
+  #g = (
+  #     ggplot(data,
+  #            aes(x="timescale", y="MB", color="Direction")
+  #            )
+  #      + geom_line(group="ignored")
+  #      + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+  #    )
+
+  g = (
+        ggplot(data,
+         aes(x="timescale", y="MB", color="Direction")
+        )
         + geom_point()
         + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
       )
   print(g)
 
+  #############################
+  ####   SINGLE COMPANY_device
+  #############################
   q=single_company_device(company, start, end, timescale=granularity)
   print(q)
   data=query(q)
   print(data)
 
+
+  print("SINGLE COMPANY DEVICE")
+  # Error AttributeError: 'float' object has no attribute 'layers'
+  # PlotnineError: "Cannot add layer to object of type <class 'float'>"
   g = (
-        ggplot(data)
-        + aes(x="timescale", y="MB", color="msisdn")
+        ggplot(data,
+         aes(x="timescale", y="MB", color="msisdn")
+        )
         + geom_point()
         + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
       )
@@ -181,6 +308,7 @@ def dialog():
 ####################
 
 if __name__ == "__main__" :
+  datastore.connect()
   while True:
       dialog()
 
