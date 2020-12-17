@@ -427,6 +427,8 @@ HAVING COUNT(person_id) >1
 
 ## Hierarhy  Recursive SQL
 
+https://medium.com/swlh/recursion-in-sql-explained-graphically-679f6a0f143b
+
 https://habr.com/ru/company/tensor/blog/523812/
 
  https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database
