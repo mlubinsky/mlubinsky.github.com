@@ -69,6 +69,9 @@ https://leanpub.com/plotnine-guide
 
 https://datascienceworkshops.com/blog/plotnine-grammar-of-graphics-for-python/
 
+https://www.practicaldatascience.org/html/plotting_part2.html
+
+
 <https://github.com/has2k1/plotnine> as ggplot2
 
 https://realpython.com/ggplot-python/
