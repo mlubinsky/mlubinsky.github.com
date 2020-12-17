@@ -13,6 +13,11 @@ https://www.ardanlabs.com/blog/2020/09/using-python-memory.html. Go + Python
 <https://habr.com/ru/company/lamoda/blog/495344/>
 
 
+## Chess engine in GO
+
+https://habr.com/ru/company/timeweb/blog/533642/
+
+
 ## Book
 <https://www.digitalocean.com/community/books/how-to-code-in-go-ebook>
 
