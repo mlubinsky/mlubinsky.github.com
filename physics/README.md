@@ -1,6 +1,8 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
-<https://www.youtube.com/watch?v=E_Fmbwe79Co> nВ.П. Павлов. Как устроена теоретическая физика
+<https://www.youtube.com/watch?v=8UtnDaGHpq0>  Introduction to Lagrangian Mechanics
+ 
+ <https://www.youtube.com/watch?v=E_Fmbwe79Co> nВ.П. Павлов. Как устроена теоретическая физика
 
 https://indico.cern.ch/event/774733/contributions/3614271/attachments/1944496/3225666/MSZ03_the_concept_of_the_photon_-_revisited.pdf 
 
