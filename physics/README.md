@@ -4,9 +4,18 @@
  
  <https://www.youtube.com/watch?v=E_Fmbwe79Co> nВ.П. Павлов. Как устроена теоретическая физика
 
+## Articles
+what is photon? 
 https://indico.cern.ch/event/774733/contributions/3614271/attachments/1944496/3225666/MSZ03_the_concept_of_the_photon_-_revisited.pdf 
 
-what is photon?
+
+https://arxiv.org/abs/quant-ph/9907069. Mathematical surprises and Dirac's formalism in quantum mechanics
+
+
+https://arxiv.org/abs/2011.12671 Sidney Coleman's Dirac Lecture "Quantum Mechanics in Your Face"
+
+http://www.physics.umd.edu/courses/Phys401/bedaque07/misconnzz.pdf Common Misconceptions Regarding Quantum Mechanics
+
 
 <https://science.d3.ru/posovetuite-podkast-s-fizikami-2046797/?sorting=rating>
 
@@ -21,9 +30,7 @@ https://rqc.ru/research#groups
 
 https://www.youtube.com/watch?v=7mUQtujgUUo . Страупе С. С. - Введение в квантовую физику - Квантовая информация
 
-https://arxiv.org/abs/2011.12671
 
-http://www.physics.umd.edu/courses/Phys401/bedaque07/misconnzz.pdf
 
 https://www.youtube.com/results?search_query=%D0%A1%D1%82%D1%80%D0%B0%D1%83%D0%BF%D0%B5 Страупе 
 
@@ -38,7 +45,6 @@ https://www.youtube.com/watch?v=NayWtS53NNU   Эмиль Ахмедов: "Опт
 
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNDqvcsTsKJM1Ee6V8Aaobl0 Введение в квантовую физику - Рубцов Алексей Николаевич
 
-https://arxiv.org/abs/quant-ph/9907069 . Mathematical surprises and Dirac's formalism in quantum mechanics
 
 https://habr.com/ru/post/523926/
 
