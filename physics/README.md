@@ -1,5 +1,8 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+<https://science.d3.ru/posovetuite-podkast-s-fizikami-2046797/?sorting=rating>
+
+
 <https://www.youtube.com/watch?v=8UtnDaGHpq0>  Introduction to Lagrangian Mechanics
  
  <https://www.youtube.com/watch?v=E_Fmbwe79Co> nВ.П. Павлов. Как устроена теоретическая физика
@@ -17,10 +20,7 @@ https://arxiv.org/abs/2011.12671 Sidney Coleman's Dirac Lecture "Quantum Mechani
 http://www.physics.umd.edu/courses/Phys401/bedaque07/misconnzz.pdf Common Misconceptions Regarding Quantum Mechanics
 
 
-<https://science.d3.ru/posovetuite-podkast-s-fizikami-2046797/?sorting=rating>
-
-
-https://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf
+https://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf.  Dyson. Why is Maxwell theory so hard?
 
 ## QM
 
