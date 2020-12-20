@@ -1,3 +1,8 @@
+https://github.com/SeldonIO/alibi-detect
+
+https://github.com/axsaucedo/seldon_experiments/blob/master/monitoring-talk/cifar10_example.ipynb
+
+
 https://youtu.be/6OGSftP2_Ts
 
 <https://github.com/alan-turing-institute/sktime> ML for time series
