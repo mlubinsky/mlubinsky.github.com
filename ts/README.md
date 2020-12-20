@@ -1,8 +1,12 @@
-https://github.com/SeldonIO/alibi-detect
 
+## Stumpy
 https://stumpy.readthedocs.io/en/latest/index.html
 
+https://www.youtube.com/watch?v=xLbPP5xNIJs
+
 https://www.cs.ucr.edu/~eamonn/100_Time_Series_Data_Mining_Questions__with_Answers.pdf
+
+https://github.com/SeldonIO/alibi-detect
 
 https://github.com/axsaucedo/seldon_experiments/blob/master/monitoring-talk/cifar10_example.ipynb
 
