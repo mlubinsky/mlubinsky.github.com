@@ -1,4 +1,10 @@
 
+## packtpub
+
+https://subscription.packtpub.com/book/big-data-and-business-intelligence/9781788290227
+
+https://subscription.packtpub.com/video/data/9781838640590
+
 ## Stumpy
 https://stumpy.readthedocs.io/en/latest/index.html
 
