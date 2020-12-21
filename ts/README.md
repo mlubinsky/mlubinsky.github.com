@@ -5,6 +5,11 @@ https://subscription.packtpub.com/book/big-data-and-business-intelligence/978178
 
 https://subscription.packtpub.com/video/data/9781838640590
 
+## coursera
+
+https://www.coursera.org/learn/practical-time-series-analysis
+
+
 ## Stumpy
 https://stumpy.readthedocs.io/en/latest/index.html
 
