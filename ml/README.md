@@ -13,6 +13,9 @@ https://madewithml.com/
 
 ### Desktop applications for viewing and analyzing tabular data
 
+
+https://moosetechnology.org/
+
 https://news.ycombinator.com/item?id=24983603
 
 visidata.org
