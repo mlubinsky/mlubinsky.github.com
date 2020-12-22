@@ -247,6 +247,24 @@ https://www.reddit.com/r/Python/comments/cop2cr/new_data_visualization_with_pyth
 
 <https://www.dataquest.io/blog/tutorial-time-series-analysis-with-pandas/> . Time Series
 
+ ### time-based indexing 
+ ```
+ df.loc['2017-08-10'] - entire  day
+ df.loc['2012-02'] - entire month
+ df.loc['2014-01-20':'2014-01-22'].  - inclusive!!
+```
+plots:
+```
+cols_plot = ['Consumption', 'Solar', 'Wind']
+axes = opsd_daily[cols_plot].plot(marker='.', alpha=0.5, linestyle='None', figsize=(11, 9), subplots=True)
+for ax in axes:
+    ax.set_ylabel('Daily Totals (GWh)')
+```
+year plot:
+```
+ax = df.loc['2017', 'Consumption'].plot()
+ax.set_ylabel('Daily Consumption (GWh)');
+```
 <https://chrisalbon.com/python/data_wrangling/pandas_time_series_basics/>
 
 <https://machinelearningmastery.com/time-series-data-visualization-with-python/>
