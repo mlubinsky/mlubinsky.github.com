@@ -38,22 +38,22 @@ https://habr.com/ru/company/ruvds/blog/500428/
 <https://habr.com/ru/post/475210/>. Pandas
 
 ### Caching pandas dataframe to local disk (pickle):
-
+```
 An example for a pandas.DataFrame:
 
-# Store your DataFrame
+  Store your DataFrame
 df.to_pickle('cached_dataframe.pkl') # will be stored in current directory
 
-# Read your DataFrame
+  Read your DataFrame
 df = pandas.read_pickle('cached_dataframe.pkl') # read from current directory
 The same methods also work for pandas.Series:
 
-# Store your Series
+  Store your Series
 series.to_pickle('cached_series.pkl') # will be stored in current directory
 
-# Read your DataFrame
+  Read your DataFrame
 series = pandas.read_pickle('cached_series.pkl') # read from current directory
-
+```
 
 ## Virtual env in Jupyter Notebook
 https://janakiev.com/blog/jupyter-virtual-envs/
