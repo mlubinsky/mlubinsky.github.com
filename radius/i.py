@@ -19,8 +19,6 @@ def query(sql):
   return d
 
 def all_company_total(start, end):
-  if not start:  start='2020-11-01'
-  if not end:    end  ='2020-12-01'
 
   SQL=f"""
    SELECT
@@ -30,6 +28,7 @@ def all_company_total(start, end):
    WHERE
    timebin >=  UNIX_TIMESTAMP('{start}') and
    timebin  <  UNIX_TIMESTAMP('{end}')
+   and company IN {COMPANY_LIST}
    GROUP BY company
    ORDER BY GB_company desc
    LIMIT 5
@@ -38,10 +37,10 @@ def all_company_total(start, end):
   return SQL
 
 def all_company_daily(start=None, end=None, timescale=None):
-  if not start:  start='2020-11-01'
-  if not end:    end  ='2020-12-01'
 
-  if timescale == "hours":
+  if timescale == "day-hour":
+       timescale='%%d-%%H'
+  elif timescale == "hours":
        timescale='%%H'
   else:
        timescale= '%%m-%%d'
@@ -56,27 +55,14 @@ def all_company_daily(start=None, end=None, timescale=None):
    WHERE
    timebin >=  UNIX_TIMESTAMP('{start}') and
    timebin  <  UNIX_TIMESTAMP('{end}') and
-   company IN (
-      SELECT company from (
-       SELECT 
-          company, 
-          SUM(bytes)  as sum_bytes
-       FROM jangle_traffic_total
-       WHERE
-          timebin >=  UNIX_TIMESTAMP('{start}') and
-          timebin  <  UNIX_TIMESTAMP('{end}')
-       GROUP BY company
-       ORDER BY sum_bytes DESC
-       LIMIT 5
-     ) A
-   )
+   company IN {COMPANY_LIST}
    GROUP BY company, timescale
    ORDER BY timescale
   """
 
   return SQL
 
-def single_company(company, start, end, timescale=None):
+def single_company_all_directions(company, start, end, timescale=None):
 
   if timescale == "day-hour":
        timescale='%%d-%%H'
@@ -104,6 +90,62 @@ def single_company(company, start, end, timescale=None):
 
   return SQL
 
+#-----------------------------------------------------------------------
+def single_company_single_direction(company, start, end, timescale, direction):
+#-----------------------------------------------------------------------
+  if timescale == "day-hour":
+       timescale='%%d-%%H'
+  elif timescale == "hours":
+       timescale='%%H'
+  elif timescale == "minutes":
+      timescale='%%H:%%i'
+  else:
+      timescale= '%%m-%%d'
+
+  SQL=f"""
+   SELECT
+     FROM_UNIXTIME(timebin, '{timescale}') as timescale,
+     SUM(bytes) * 1.0 / (1024.0 * 1024.0 ) as MB
+   FROM jangle_traffic_total
+   WHERE
+     timebin >=  UNIX_TIMESTAMP('{start}') and
+     timebin  <  UNIX_TIMESTAMP('{end}') and
+     company =  {company}
+     and direction = {direction}
+   GROUP BY timescale
+   ORDER BY timescale
+  """
+
+  return SQL
+#------------------------------------------------------------
+def single_company_protocol(company, start, end, timescale):
+#------------------------------------------------------------
+  if timescale == "day-hour":
+       timescale='%%d-%%H'
+  elif timescale == "hours":
+       timescale='%%H'
+  elif timescale == "minutes":
+      timescale='%%H:%%i'
+  else:
+      timescale= '%%m-%%d'
+
+
+  SQL=f"""
+   SELECT
+     FROM_UNIXTIME(timebin, '{timescale}') as timescale,
+     CAST(protocol as char(20)) AS   protocol,
+     SUM(bytes) * 1.0 / (1024.0 * 1024.0 ) as MB
+   FROM jangle_traffic_total
+   WHERE
+     timebin >=  UNIX_TIMESTAMP('{start}') and
+     timebin  <  UNIX_TIMESTAMP('{end}') and
+     company =  {company}
+   GROUP BY timescale, protocol
+   ORDER BY timescale
+  """
+
+  return SQL  
+
 def devices(start, end, timescale):
 
   if timescale == "hours":
@@ -122,34 +164,22 @@ def devices(start, end, timescale):
    WHERE
      timebin >=  UNIX_TIMESTAMP('{start}') and
      timebin  <  UNIX_TIMESTAMP('{end}')  and
-     company IN
-     (
-      SELECT company FROM (
-       SELECT
-          company,
-          SUM(bytes)  as sum_bytes
-       FROM jangle_traffic_total
-       WHERE
-          timebin >=  UNIX_TIMESTAMP('{start}') and
-          timebin  <  UNIX_TIMESTAMP('{end}')
-       GROUP BY company
-       ORDER BY sum_bytes DESC
-       LIMIT 5
-      ) A
-     )
+     company IN {COMPANY_LIST}
    GROUP BY company, timescale
    ORDER BY timescale
   """
 
   return SQL
 
-def single_company_device(company, start=None, end=None, timescale=None):
+def single_company_device(company, start, end, timescale=None):
   # Top 5 devices  
   # protocol, remote_ip, apn, direction, packets  
-  if not start:  start='2020-11-01'
-  if not end:    end  ='2020-12-01'
 
-  if timescale == "minutes":
+  if timescale == "day-hour":
+       timescale='%%d-%%H'
+  elif timescale == "hours":
+     timescale='%%H'
+  elif timescale == "minutes":
     timescale='%%H:%%i'
   else:
        timescale= '%%m-%%d'
@@ -204,7 +234,7 @@ def plot_all_company_total(start, end, n_days):
                         fill="company"),
             stat="identity"
           )
-         + labs(title="Top 5 companies: start="+start+ "  days="+str(n_days), x='company') 
+         + labs(title="Traffic: start="+start+ "  days="+str(n_days), x='company') 
         )
   print(g)
 
@@ -234,10 +264,51 @@ def  plot_all_company_daily(start, end, n_days, granularity):
                         fill="company"),
             stat="identity"
           )
-          + labs(title="Traffic for top companies start="+start+ "  days="+str(n_days) , x='time')
+          + labs(title="Traffic vs time:  start="+start+ "  days="+str(n_days) , x='time')
 
         )
   print(g)
+
+  #----------------------------------
+  print("Company Traffic vs time ")
+  if n_days > 1: granularity="day-hour"
+  q=all_company_daily(start,end, granularity)
+  print(q)
+  data=query(q)
+  print(data)
+
+  g = (
+        ggplot(data,
+         aes(x="timescale", y="MB_company", color="company")
+        )
+        + geom_point()
+        + labs(title="Traffic:  start="+start+ "  days="+str(n_days) , x='time')
+  )
+
+  print(g)
+
+
+#--------------------------------------------------
+def  plot_single_company_protocol(company, start, end, n_days, granularity):
+#--------------------------------------------------    
+
+  print("Company Traffic / protocol vs time ")
+  if n_days > 1: granularity="day-hour"
+  q=single_company_protocol(company, start,end, granularity)
+  print(q)
+  data=query(q)
+  print(data)
+
+  g = (
+        ggplot(data,
+         aes(x="timescale", y="MB", color="protocol")
+        )
+        + geom_point()
+        + labs(title="Traffic/protocol: company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+  )
+
+  print(g)
+
 
 #----------------------------------------
 def  plot_devices(start, end, n_days, granularity):
@@ -271,14 +342,20 @@ def  plot_devices(start, end, n_days, granularity):
   #print(g)
 
 #----------------------------------------
-def plot_single_company(company, start, end, n_days,  granularity):
+def plot_single_company_all_directions(company, start, end, n_days,  granularity):
 #----------------------------------------
-  q=single_company(company, start, end, timescale=granularity)
+ # for direction in [1,2]:
+  q=single_company_all_directions(company, start, end, granularity)
   print(q)
   data=query(q)
   print(data)
 
-  #print("SINGLE COMPANY ....")
+  if data.empty:
+    print (" NO DATA for direction=", direction, "  company=", company)
+    return
+
+
+  print("plot_single_company direction granularity=", granularity)
 
   #g = (
   #     ggplot(data)
@@ -287,7 +364,7 @@ def plot_single_company(company, start, end, n_days,  granularity):
   #    )
   #print(g)
 
-  print("SINGLE COMPANY again - using dots")
+  print("SINGLE COMPANY trying to adjust the x-marks")
   # https://github.com/has2k1/plotnine/issues/335
 
   # geom_path.py:83: PlotnineWarning: geom_path: 
@@ -299,20 +376,39 @@ def plot_single_company(company, start, end, n_days,  granularity):
   #      + geom_line(group="ignored")
   #      + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
   #    )
+  x_start=1  ## todo
+  x_end = x_start + n_days
 
   g = (
         ggplot(data,
          aes(x="timescale", y="MB", color="Direction")
         )
         + geom_point()
-        + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+        # + scale_x_continuous(breaks = np.arange(x_start, x_end, 1))
+        + labs(title="Traffic by direction: company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
       )
+
   print(g)
+
+  #  Histogram for directions 1,2
+  # for direction in [1,2]:
+  #   q=single_company_direction(company, start, end, granularity, direction)
+  #   print(q)
+  #   data=query(q)
+  #   print(data)
+  #   if not data: continue
+  #   g = (
+  #      ggplot(data,  aes("MB"))
+  #      + geom_histogram(binwidth=1,
+  #        colour="darkmagenta", fill="orchid")
+  #      + labs(title="company="+str(company)+"  start="+start+ "  days="+str(n_days) + " direction="+str(direction), x='MB')
+  #   )
+  #   print(g)
 
 #----------------------------------------
 def  plot_single_company_device(company, start, end, n_days, granularity):
 #----------------------------------------
-  q=single_company_device(company, start, end, timescale=granularity)
+  q=single_company_device(company, start, end, granularity)
   print(q)
   data=query(q)
   print(data)
@@ -326,7 +422,7 @@ def  plot_single_company_device(company, start, end, n_days, granularity):
          aes(x="timescale", y="MB", color="msisdn")
         )
         + geom_point()
-        + labs(title="Top 5 devices company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
+        + labs(title="Top 5 traffic-heavy devices for company="+str(company)+"  start="+start+ "  days="+str(n_days) , x='time')
       )
   print(g)
 
@@ -375,7 +471,7 @@ def dialog():
   ### all_company_total
   #########################
 
-  # plot_all_company_total(start, end, n_days)
+  plot_all_company_total(start, end, n_days)
 
   ############################
   ###    all_company_daily
@@ -383,7 +479,7 @@ def dialog():
 
   if  n_days == 1:
       granularity='hours'
-  #plot_all_company_daily(start, end, n_days, granularity)
+  plot_all_company_daily(start, end, n_days, granularity)
 
 
 
@@ -393,30 +489,40 @@ def dialog():
   if  n_days == 1:
       granularity='hours'
 
-  # plot_devices(start, end, n_days, granularity)
+  plot_devices(start, end, n_days, granularity)
 
   ############################
   ###    single_company
   ############################
-
-  company_str = input("Enter the company_id : (default - 3659")
-  if not company_str:
-      company=3659
-  else:
+  company=3659
+  company_str = input("Enter the company_id: \n (default - "+str(company)+") \n 2-3116 \n 3-3666 \n 4-3655 ")
+  if company_str:
       company = int(company_str)
+      if    company==2: company=3116
+      elif  company==3: company=3666
+      elif  company==4: company=3655
 
   if  n_days == 1:
       granularity='minutes'
   elif n_days < 60:
       granularity='day-hour'
 
-  plot_single_company(company, start, end, n_days, granularity)
+  for company in COMPANY_LIST:
+     plot_single_company_all_directions(company, start, end, n_days, granularity)
 
+
+  for company in COMPANY_LIST:
+     plot_single_company_protocol(company, start, end, n_days, granularity)
   #############################
   ####   SINGLE COMPANY_device
   #############################
+  if  n_days == 1:
+      granularity='minutes'
+  elif n_days < 32:
+      granularity='day-hour'
 
-  # plot_single_company_device(company, start, end, n_days, granularity)
+  for company in COMPANY_LIST:
+     plot_single_company_device(company, start, end, n_days, granularity)
 
 
 
@@ -424,6 +530,7 @@ def dialog():
 
 if __name__ == "__main__" :
   datastore.connect()
+  COMPANY_LIST=(3666, 3659,3116)
   while True:
       dialog()
 
