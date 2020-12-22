@@ -29,6 +29,17 @@ https://habr.com/ru/company/ruvds/blog/505624/. HiSpeed DataFrames: Dask Vuex
 <https://livecodestream.dev/post/2020-07-23-interactive-data-visualization-using-plotly-and-python/> Plotly
 
 ### Pandas
+
+<https://www.listendata.com/2019/07/how-to-filter-pandas-dataframe.html>
+```
+newdf = df[(df.origin == "JFK") & (df.carrier == "B6")]
+newdf = df.query('origin == "JFK" & carrier == "B6"')
+newdf = df.loc[(df.origin == "JFK") & (df.carrier == "B6")]
+
+ include all the flight details where origin is either JFK or LGA.
+ newdf = df[df.origin.isin(["JFK", "LGA"])]
+```
+
 <https://habr.com/ru/company/ruvds/blog/492220/>. Pandas
 
 <https://towardsdatascience.com/stop-persisting-pandas-data-frames-in-csvs-f369a6440af5>
