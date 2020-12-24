@@ -1,4 +1,6 @@
- https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997. Effective Java 3rd ed Joshua Bloch
+ <https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997> Effective Java 3rd ed Joshua Bloch
+ 
+ <https://pro-prof.com/archives/7527>
  
  <https://medium.com/@leventov/smoothiemap-2-the-lowest-memory-hash-table-ever-6bebd06780a3> .   Hash Tables comparisons
  
