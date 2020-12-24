@@ -2,6 +2,10 @@
 
 <https://science.d3.ru/posovetuite-podkast-s-fizikami-2046797/?sorting=rating>
 
+<http://fizka.ru/>
+
+<https://physics.d3.ru/spin-elektrona-i-neravenstva-bella-2092069/?sorting=rating>
+
 
 <https://www.youtube.com/watch?v=8UtnDaGHpq0>  Introduction to Lagrangian Mechanics
  
