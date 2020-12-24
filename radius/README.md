@@ -77,6 +77,13 @@ https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers
 
 6 - TCP
 
+### 3 companies: jangle_traffic_total
+```
+company	avg(bytes)	min(bytes)	max(bytes)	stddev(bytes)
+3,116	4,937,075.892	52	10,520,765,373	137,274,389.7869
+3,659	29,450,033.6496	48	2,330,322,505	81,628,198.1605
+3,666	6,030,797.0787	56	1,074,874,810	31,106,642.714
+```
 ### Top max bytes jangle_traffic_total
 
 ```
