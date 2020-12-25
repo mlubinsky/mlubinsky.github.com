@@ -2,7 +2,7 @@ https://habr.com/ru/company/skillbox/blog/534972/  Undo
 
 <https://rtyley.github.io/bfg-repo-cleaner/> clean the git
 
-https://news.ycombinator.com/item?id=24957280
+https://news.ycombinator.com/item?id=24957280 	Visualizing Git Concepts with D3 
 
 <https://gitexplorer.com/>
 
@@ -203,9 +203,6 @@ git rebase --interactive HEAD~2
 
 Set `merge.conflictstyle=diff3` 
 The default merge style is utterly useless, I have no idea why it is the default. diff3 gives you three pieces of information: the status before at the common ancestor; the status on the current branch; and the status on the to-be-merged branch. You can then understand what changes were made on each branch, and decide how to merge them intelligently. Without that common ancestor, it's way way harder to understand what you're looking at.
-
-
-
 
 When I want to get back to a pristine state, I prefer
 ```
