@@ -99,9 +99,15 @@ if __name__ == "__main__" :
      plt.show()
 
 # todo - use split function
-     split_date = '2020-12-01'
-     train = df.loc[df.index <  split_date].copy()
-     test =  df.loc[df.index >= split_date].copy()
+     print("len=", len(df))
+     train_len=int(0.8*len(df))
+     train=df[0:train_len].copy()
+
+     test=df[train_len:].copy()
+     test_len=len(test)
+     #split_date = '2020-12-01'
+     #train = df.loc[df.index <  split_date].copy()
+     #test =  df.loc[df.index >= split_date].copy()
 
      #train.plot(style='.',   y='MB',   title="Train set")
      #plt.show()
@@ -112,7 +118,7 @@ if __name__ == "__main__" :
      concat= test.rename(columns={'MB':'TEST'}) \
      .join( train.rename(columns={'MB':'TRAIN'}) , how='outer')
 
-     concat.plot(title='Train and test', linestyle='-', marker='o', figsize=(25, 5))
+     concat.plot(title='Train: '+str(train_len) + ' points and Test: '+str(test_len) + " points", linestyle='-', marker='o', figsize=(25, 5))
      plt.show()
 
 
@@ -126,7 +132,7 @@ if __name__ == "__main__" :
         verbose=False)
      plot_importance(reg, height=0.9)
      plt.show()
-
+#
      test['Prediction'] = reg.predict(X_test)
      all = pd.concat([test, train], sort=False)
      all[['MB','Prediction']].plot(title='Train and prediction', linestyle='-', marker='o', figsize=(25, 5))
