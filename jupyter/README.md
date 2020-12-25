@@ -5,7 +5,7 @@ https://lwn.net/SubscriberLink/835930/47c363bef07134a4/  Pluto - Notebook for Ju
 
 https://www.codementor.io/@ng3687/correlation-matrix-in-excel-python-and-r-1a6i5puowo. correlation matrix
 
-<https://github.com/alandefreitas/matplotplusplus>
+<https://github.com/alandefreitas/matplotplusplus> C++
 
 <http://scidavis.sourceforge.net/>
 
@@ -83,7 +83,12 @@ https://janakiev.com/blog/jupyter-virtual-envs/
 
 <https://towardsdatascience.com/integrate-jupyter-into-your-data-pipeline-9a02fab3cee5>
 
+
+## Data explorarion
 <https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
+
+<https://github.com/pandas-profiling/pandas-profiling>
+
 ```
 jupyter notebook
 http://localhost:8888/tree
@@ -178,25 +183,7 @@ Pandas supports two parquet implementations, fastparquet and pyarrow. They both 
 ```
 <http://peter-hoffmann.com/2020/understand-predicate-pushdown-on-rowgroup-level-in-parquet-with-pyarrow-and-python.html>
  
- 
- <https://habr.com/ru/post/486756/> .  pandas example : reads CSVs,JSOns combines, filter them
-
-## Jupyter Enterprise Gateway 
-
-<https://blog.jupyter.org/introducing-jupyter-enterprise-gateway-db4859f86762>
-
-<https://jupyter-enterprise-gateway.readthedocs.io/en/latest/getting-started.html>
-
-<https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html>
-
-<https://github.com/jupyterhub/jupyterhub-deploy-docker>
-
-
-
-
-
-
-
+<https://habr.com/ru/post/486756/> .  pandas example : reads CSVs,JSOns combines, filter them
 
 <https://realpython.com/python-statistics/>
 
@@ -210,9 +197,10 @@ Pandas supports two parquet implementations, fastparquet and pyarrow. They both 
 
 <http://www.scikit-yb.org/en/latest/index.html> . Yellowbrick extends the Scikit-Learn API to make model selection and hyperparameter tuning easier. Under the hood, it’s using Matplotlib.
 
-<https://cloudblogs.microsoft.com/opensource/2019/10/10/microsoft-open-sources-sanddance-visual-data-exploration-tool/>       SandDance   visualization tool from Microsoft Research
+<https://cloudblogs.microsoft.com/opensource/2019/10/10/microsoft-open-sources-sanddance-visual-data-exploration-tool/>
+SandDance   visualization tool from Microsoft Research
 
-<https://kanoki.org/2019/10/09/working-with-pandas-datetime/> Working with timeseries in Pandas
+
 
 <https://habr.com/ru/post/460557/>
 
@@ -244,6 +232,7 @@ https://www.reddit.com/r/Python/comments/cop2cr/new_data_visualization_with_pyth
  
 ## Plotting the time series
 
+<https://kanoki.org/2019/10/09/working-with-pandas-datetime/> Working with timeseries in Pandas
 
 <https://www.dataquest.io/blog/tutorial-time-series-analysis-with-pandas/> . Time Series
 
@@ -413,7 +402,11 @@ df_per_dayofweek.plot.bar(rot=0)
 ## Group By and resample
 
 <https://pbpython.com/pandas-grouper-agg.html>
+
 <http://benalexkeen.com/resampling-time-series-data-with-pandas/>
+
+df=df.resample(rule='W').last().  - last day of the week
+
 if you were interested in summarizing all of the sales by month, you could use the resample function. 
 
 The tricky part about using resample is that it only operates on an index.  In order to make it work, use set_index to make the date column an index and then resample:
@@ -507,29 +500,58 @@ https://github.com/HIPS/autograd
 https://www.machinelearningplus.com/101-numpy-exercises-python/
 ```
 ## Pandas
-```
+ 
 https://stackoverflow.com/questions/29432629/correlation-matrix-using-pandas
 
 https://habr.com/ru/company/ruvds/blog/451478/ 
-bиблиотекa pandas-profiling. Результаты её работы выражаются не в виде неких отдельных показателей, а в форме довольно подробного HTML-отчёта, содержащего большую часть тех сведений об анализируемых данных, которые может понадобиться знать перед тем, как приступать к более плотной работе с ними.
+bиблиотекa pandas-profiling. 
+
+Результаты её работы выражаются не в виде неких отдельных показателей,
+а в форме довольно подробного HTML-отчёта, содержащего большую часть тех сведений об анализируемых данных, 
+которые может понадобиться знать перед тем, как приступать к более плотной работе с ними.
 
 
 http://www.dataschool.io/easier-data-analysis-with-pandas/
+
 https://news.ycombinator.com/item?id=16473482
+
 http://nbviewer.jupyter.org/github/pybokeh/jupyter_notebooks/blob/master/pandas/PandasCheatSheet.ipynb
+
 https://jakevdp.github.io/PythonDataScienceHandbook/
+
 https://www.kaggle.com/learn/data-visualisation
+
 https://medium.com/dunder-data/selecting-subsets-of-data-in-pandas-6fcd0170be9c
+
 https://spapas.github.io/2016/09/21/pandas-pivot-table-primer/
+
 https://github.com/JosPolfliet/pandas-profiling
+
 https://www.dataquest.io/blog/pandas-concatenation-tutorial/
+
 https://towardsdatascience.com/how-to-learn-pandas-108905ab4955
+
 http://blog.enthought.com/python/pandas/cheat-sheets-pandas-the-python-data-analysis-library/#.WjSdBlQ-dp9
+'
 https://habrahabr.ru/company/ods/blog/322626/
+
 https://www.dataquest.io/blog/pandas-big-data/
+
 https://www.dataquest.io/blog/machine-learning-python/
+
 https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python
+
 http://hypertools.readthedocs.io/en/latest/index.html
 	
 http://www.zavtech.com/morpheus/docs/  DataFrames in Java
-```
+ 
+
+## Jupyter Enterprise Gateway 
+
+<https://blog.jupyter.org/introducing-jupyter-enterprise-gateway-db4859f86762>
+
+<https://jupyter-enterprise-gateway.readthedocs.io/en/latest/getting-started.html>
+
+<https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html>
+
+<https://github.com/jupyterhub/jupyterhub-deploy-docker>
