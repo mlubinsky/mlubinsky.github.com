@@ -1,3 +1,5 @@
+https://habr.com/ru/company/skillbox/blog/534972/  Undo
+
 <https://rtyley.github.io/bfg-repo-cleaner/> clean the git
 
 https://news.ycombinator.com/item?id=24957280
@@ -14,9 +16,12 @@ https://habr.com/ru/company/manychat/blog/511946/
 
 <https://www.sublimemerge.com/>  Git UI Client, from the makers of Sublime Text
 
+<https://www.sublimemerge.com/>  Git Client, from the makers of Sublime Text
+<http://vimcasts.org/episodes/fugitive-vim-resolving-merge-conflicts-with-vimdiff/>
 
+<https://www.kaleidoscopeapp.com/> Kaleidoscope is the file comparison app. Compare different text files, images, and folders on your Mac and iPad. Review and merge changes in a matter of seconds (merging available only on the Mac).
 
-
+## Links
 
 https://gitbetter.substack.com/p/how-to-squash-git-commits
 
@@ -101,6 +106,7 @@ Overwrite single file in my current branch with the same file in the master bran
 <https://www.youtube.com/watch?v=UWwazJ_46s0> git rebase
 
 <https://www.atlassian.com/git/tutorials/merging-vs-rebasing>
+
 
 <https://www.daolf.com/posts/git-series-part-3/>
 
@@ -199,10 +205,7 @@ Set `merge.conflictstyle=diff3`
 The default merge style is utterly useless, I have no idea why it is the default. diff3 gives you three pieces of information: the status before at the common ancestor; the status on the current branch; and the status on the to-be-merged branch. You can then understand what changes were made on each branch, and decide how to merge them intelligently. Without that common ancestor, it's way way harder to understand what you're looking at.
 
 
-<https://www.sublimemerge.com/>  Git Client, from the makers of Sublime Text
-<http://vimcasts.org/episodes/fugitive-vim-resolving-merge-conflicts-with-vimdiff/>
 
-<https://www.kaleidoscopeapp.com/> Kaleidoscope is the file comparison app. Compare different text files, images, and folders on your Mac and iPad. Review and merge changes in a matter of seconds (merging available only on the Mac).
 
 When I want to get back to a pristine state, I prefer
 ```
@@ -304,7 +307,7 @@ git checkout master
 git merge upstream/master
 ```
 
-If there are no unique commits on the local master branch, git will simply perform a fast-forward. However, if you have been making changes on master (in the vast majority of cases you probably shouldn't be - [see the next section](#doing-your-work), you may have to deal with conflicts. When doing so, be careful to respect the changes made upstream.
+If there are no unique commits on the local master branch, git will simply perform a fast-forward. However, if you have been making changes on master (in the vast majority of cases you probably shouldn't be  , you may have to deal with conflicts. When doing so, be careful to respect the changes made upstream.
 
 Now, your local master branch is up-to-date with everything modified upstream.
 
@@ -328,7 +331,7 @@ git checkout newfeature
 
 Now, go to town hacking away and making whatever changes you want to.
 
-## Submitting a Pull Request
+ 
 
 ### Cleaning Up Your Work
 
@@ -361,7 +364,7 @@ This will open up a text editor where you can specify which commits to squash.
 
 Once you've committed and pushed all of your changes to GitHub, go to the page for your fork on GitHub, select your development branch, and click the pull request button. If you need to make any adjustments to your pull request, just push the updates to GitHub. Your pull request will automatically track the changes on your development branch and update.
 
-## Accepting and Merging a Pull Request
+### Accepting and Merging a Pull Request
 
 Take note that unlike the previous sections which were written from the perspective of someone that created a fork and generated a pull request, this section is written from the perspective of the original repository owner who is handling an incoming pull request. Thus, where the "forker" was referring to the original repository as `upstream`, we're now looking at it as the owner of that original repository and the standard `origin` remote.
 
@@ -410,13 +413,7 @@ Now that you're done with the development branch, you're free to delete it.
 git branch -d newfeature
 ```
 
-
-
-**Copyright**
-
-Copyright 2017, Chase Pettit
-
-MIT License, http://www.opensource.org/licenses/mit-license.php
  
-**Additional Reading**
-* [Atlassian - Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
+ 
+ 
