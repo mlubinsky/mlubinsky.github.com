@@ -31,6 +31,8 @@ https://habr.com/ru/company/skillfactory/blog/526076/
 
 ## Python plotting
 
+https://python-graph-gallery.com/ Pandash, Seaborn, Matplotlib exzmples!
+
 https://hvplot.holoviz.org/ 
 
 https://pypi.org/project/dtale/
