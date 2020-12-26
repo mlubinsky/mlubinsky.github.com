@@ -242,6 +242,8 @@ https://www.reddit.com/r/Python/comments/cop2cr/new_data_visualization_with_pyth
 
 <https://mlcourse.ai/articles/topic9-part1-time-series/>
 
+<https://mlcourse.ai/articles/topic9-part1-time-series/>
+
 ```
 import datetime
 
