@@ -236,6 +236,50 @@ https://www.reddit.com/r/Python/comments/cop2cr/new_data_visualization_with_pyth
 
 <https://www.dataquest.io/blog/tutorial-time-series-analysis-with-pandas/> . Time Series
 
+<https://www.kdnuggets.com/2020/09/introduction-time-series-analysis-python.html>
+
+<https://analyzingalpha.com/time-series-analysis-with-python>
+
+<https://mlcourse.ai/articles/topic9-part1-time-series/>
+
+```
+import datetime
+
+df = pd.read_csv(‘Data/UMTMVS.csv’, index_col=’DATE’)
+df.head()
+df.index 
+df.index = pd.to_datetime(df.index)
+df.index
+
+Now we can see that dtype of our dataset is datetime64[ns]. T
+his “[ns]” shows that it is precise in nanoseconds.
+We can change it to “Days” or “Months” if we want.
+
+Alternatively, to avoid all this fuss, we can load data in single line of code using Pandas as follows.
+
+df = pd.read_csv(‘Data/UMTMVS.csv’, index_col=’DATE’, parse_dates=True)
+
+Here we have added parse_dates=True, so it will automatically use our index as dates.
+
+df.index
+
+
+df['Date'] = pd.to_datetime(df['Date'])
+df['Date'] = df['Date'].dt.strftime('%d.%m.%Y')
+df['year'] = pd.DatetimeIndex(df['Date']).year
+df['month'] = pd.DatetimeIndex(df['Date']).month
+df['day'] = pd.DatetimeIndex(df['Date']).day
+df['dayofyear'] = pd.DatetimeIndex(df['Date']).dayofyear
+df['weekofyear'] = pd.DatetimeIndex(df['Date']).weekofyear
+df['weekday'] = pd.DatetimeIndex(df['Date']).weekday
+df['quarter'] = pd.DatetimeIndex(df['Date']).quarter
+df['is_month_start'] = pd.DatetimeIndex(df['Date']).is_month_start
+df['is_month_end'] = pd.DatetimeIndex(df['Date']).is_month_end
+print(df.info())
+
+df = df.drop(['Date'], axis = 1)  -- drop column
+```
+
  ### time-based indexing 
  ```
  df.loc['2017-08-10'] - entire  day
