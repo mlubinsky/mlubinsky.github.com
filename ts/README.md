@@ -9,6 +9,10 @@ https://subscription.packtpub.com/video/data/9781838640590
 
 https://www.coursera.org/learn/practical-time-series-analysis
 
+## darts
+https://medium.com/unit8-machine-learning-publication/darts-time-series-made-easy-in-python-5ac2947a8878
+
+https://github.com/unit8co/darts
 
 ## Stumpy
 https://stumpy.readthedocs.io/en/latest/index.html
