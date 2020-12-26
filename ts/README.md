@@ -9,6 +9,7 @@ https://subscription.packtpub.com/video/data/9781838640590
 
 https://www.coursera.org/learn/practical-time-series-analysis
 
+
 ## darts
 https://medium.com/unit8-machine-learning-publication/darts-time-series-made-easy-in-python-5ac2947a8878
 
@@ -19,6 +20,18 @@ https://stumpy.readthedocs.io/en/latest/index.html
 
 https://www.youtube.com/watch?v=xLbPP5xNIJs
 
+https://notamonadtutorial.com/stumpy-unleashing-the-power-of-the-matrix-profile-for-time-series-analysis-7c46af040adb
+
+### sktime
+
+<https://github.com/alan-turing-institute/sktime> ML for time series
+
+https://github.com/alan-turing-institute/sktime . SkTime - time series analysis
+
+https://news.ycombinator.com/item?id=24541487 . SkTime - time series analysis
+
+### Links
+
 https://www.cs.ucr.edu/~eamonn/100_Time_Series_Data_Mining_Questions__with_Answers.pdf
 
 https://github.com/SeldonIO/alibi-detect
@@ -28,13 +41,12 @@ https://github.com/axsaucedo/seldon_experiments/blob/master/monitoring-talk/cifa
 
 https://youtu.be/6OGSftP2_Ts
 
-<https://github.com/alan-turing-institute/sktime> ML for time series
+
 
 <https://zerowithdot.com/time-forecasting-challenges/>
 
-<https://www.coursera.org/learn/practical-time-series-analysis/home/welcome>
 
-https://notamonadtutorial.com/stumpy-unleashing-the-power-of-the-matrix-profile-for-time-series-analysis-7c46af040adb
+
 
 <https://habr.com/ru/post/495884/> NN for time series
 
@@ -46,9 +58,8 @@ https://notamonadtutorial.com/stumpy-unleashing-the-power-of-the-matrix-profile-
 
 <https://www.vaishalilambe.com/blog/learning-time-series-analysis-forecasting-phase-1>
 
-https://github.com/alan-turing-institute/sktime . SkTime - time series analysis
 
-https://news.ycombinator.com/item?id=24541487 . SkTime - time series analysis
+### packages
 
 <https://medium.com/@michalchromcak/hcrystalball-a-unified-interface-to-time-series-forecasting-6fb57384ad57> 
 
@@ -217,14 +228,17 @@ decomposition = sm.tsa.seasonal_decompose(y, model='multiplicative')
 
 ## 
 <https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3>
+
 <https://www.8host.com/blog/prognozirovanie-vremennyx-ryadov-s-pomoshhyu-arima-v-python-3/>
 
 ## Article with code
 <https://habr.com/ru/company/ods/blog/327242/>  Анализ временных рядов с помощью Python
+
 <https://github.com/Yorko/mlcourse.ai/blob/master/jupyter_russian/topic09_time_series/topic9_part2_arima_time_series_deaths.ipynb>
 
 ## Article with code
 <https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/>
+
 <https://github.com/aarshayj/Analytics_Vidhya/blob/master/Articles/Time_Series_Analysis/Time_Series_AirPassenger.ipynb>
 
 ## Article with code: Seasonal ARIMA
@@ -344,7 +358,6 @@ cat  train.csv | cut -d "," -f2 | sort | uniq -c
 <https://www.kaggle.com/princeashburton/plotting-time-series-data>
 
 <https://www.kaggle.com/darshanadiga/time-series-data-exploration>
-
 
 <https://www.kaggle.com/adityaecdrid/my-first-time-series-comp-added-prophet>
 ```
