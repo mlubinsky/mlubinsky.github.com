@@ -9,11 +9,14 @@ https://www.codementor.io/@ng3687/correlation-matrix-in-excel-python-and-r-1a6i5
 
 <http://scidavis.sourceforge.net/>
 
-
+### DSP
 <https://github.com/capitanov/dsp-theory> . DSP ins Jupiter (ru)
 
 https://diegoinacio.github.io/computer-vision-notebooks/ Comp vision, DSP and ML
 
+<https://habr.com/ru/post/460445/> DSP Signal Processing
+
+### Jupyter
 <https://ljvmiranda921.github.io/notebook/2020/03/16/jupyter-notebooks-in-2020-part-2/>
 
 https://habr.com/ru/company/ruvds/blog/505624/. HiSpeed DataFrames: Dask Vuex
@@ -29,29 +32,29 @@ https://habr.com/ru/company/ruvds/blog/505624/. HiSpeed DataFrames: Dask Vuex
 <https://livecodestream.dev/post/2020-07-23-interactive-data-visualization-using-plotly-and-python/> Plotly
 
 
-### Resampling
 
-df.groupby('house').resample('D').mean().head(4)
-
-### Filling gaps in data
-```
-df[‘day_time’] = pd.to_datetime(df[‘day_time’], format=’%Y-%m-%d %H:%M:%S’)
-
-full_idx = pd.date_range(start=df[‘day_time’].min(), end=df[‘day_time’].max(), freq=’30T’)
-df = (
- df
- .groupby(‘LCLid’, as_index=False) 
- .apply(lambda group: group.reindex(full_idx, method=’nearest’)) 
- .reset_index(level=0, drop=True) 
- .sort_index() 
-)
-```
 ### Pandas
+
+https://towardsdatascience.com/pandas-full-tutorial-on-a-single-dataset-4aa43461e1e2
 
 A Series has one axis, the index. A DataFrame has two axes, the index and the columns.
 
 It’s useful to note here that in all the DataFrame functions that can be applied to either rows or columns,
 an axis of 0 refers to the index, an axis of 1 refers to the columns
+
+<https://realpython.com/python-statistics/>
+
+<https://realpython.com/pandas-python-explore-dataset/>
+
+ Jake Vanderplas . <https://jakevdp.github.io/PythonDataScienceHandbook/>
+ ```
+ df.info()    df.types()   df.index    df.dtypes df.shape  df.describe() df.columns() 
+ ```
+ 
+ <https://realpython.com/courses/idiomatic-pandas-tricks-features-you-may-not-know/>
+ 
+ 
+<https://towardsdatascience.com/pandas-tips-that-will-save-you-hours-of-head-scratching-31d8572218c9>
 
 On a DataFrame, a single argument to .loc will return a Series for the row matching the label.
 
@@ -80,6 +83,24 @@ https://habr.com/ru/company/ruvds/blog/500428/
 
 <https://habr.com/ru/post/475210/>. Pandas
 
+### Resampling
+
+df.groupby('house').resample('D').mean().head(4)
+
+### Filling gaps in data
+```
+df[‘day_time’] = pd.to_datetime(df[‘day_time’], format=’%Y-%m-%d %H:%M:%S’)
+
+full_idx = pd.date_range(start=df[‘day_time’].min(), end=df[‘day_time’].max(), freq=’30T’)
+df = (
+ df
+ .groupby(‘LCLid’, as_index=False) 
+ .apply(lambda group: group.reindex(full_idx, method=’nearest’)) 
+ .reset_index(level=0, drop=True) 
+ .sort_index() 
+)
+```
+
 ### Caching pandas dataframe to local disk (pickle):
 ```
 An example for a pandas.DataFrame:
@@ -107,7 +128,6 @@ https://janakiev.com/blog/jupyter-virtual-envs/
 
 <https://www.youtube.com/playlist?list=PL5-da3qGB5IBITZj_dYSFqnd_15JgqwA6>
 
-<https://towardsdatascience.com/pandas-tips-that-will-save-you-hours-of-head-scratching-31d8572218c9>
 
 <https://medium.com/jbennetcodes/how-to-use-pandas-to-access-databases-e4e74e6a329e> . Access Databases from Panda
 
@@ -217,9 +237,7 @@ Pandas supports two parquet implementations, fastparquet and pyarrow. They both 
  
 <https://habr.com/ru/post/486756/> .  pandas example : reads CSVs,JSOns combines, filter them
 
-<https://realpython.com/python-statistics/>
 
-<https://realpython.com/pandas-python-explore-dataset/>
 
 <https://pbpython.com/natural-breaks.html>
 
@@ -246,15 +264,13 @@ https://www.reddit.com/r/Python/comments/cop2cr/new_data_visualization_with_pyth
 
 <https://habr.com/ru/post/460321/> ML Notebooks
 
-<https://habr.com/ru/post/460445/> Signal Processing
 
-<https://realpython.com/courses/idiomatic-pandas-tricks-features-you-may-not-know/>
+
+
 
 <https://habr.com/ru/company/mailru/blog/445834/>
 
- Jake Vanderplas . <https://jakevdp.github.io/PythonDataScienceHandbook/>
- 
- df.info()    df.types()   df.index    df.dtypes df.shape  df.describe() df.columns() 
+
  
 ## Cloud Notebooks 
  
