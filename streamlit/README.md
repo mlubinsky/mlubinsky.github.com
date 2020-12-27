@@ -2,6 +2,11 @@
 
 https://gradio.app/
 
+## explainerdashboard
+
+https://explainerdashboard.readthedocs.io/en/latest/#
+
+https://github.com/oegedijk/explainerdashboard
 
 ## StreamIt
 
