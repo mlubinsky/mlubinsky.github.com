@@ -31,6 +31,8 @@ https://github.com/alan-turing-institute/sktime  SkTime - time series analysis
 
 https://news.ycombinator.com/item?id=24541487 . SkTime - time series analysis
 
+https://github.com/alan-turing-institute/sktime/blob/master/examples/01_forecasting.ipynb
+
 ### Links
 
 https://www.cs.ucr.edu/~eamonn/100_Time_Series_Data_Mining_Questions__with_Answers.pdf
