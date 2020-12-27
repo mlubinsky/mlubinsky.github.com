@@ -30,8 +30,22 @@ https://habr.com/ru/company/ruvds/blog/505624/. HiSpeed DataFrames: Dask Vuex
 
 ### Pandas
 
+A Series has one axis, the index. A DataFrame has two axes, the index and the columns.
+
+It’s useful to note here that in all the DataFrame functions that can be applied to either rows or columns,
+an axis of 0 refers to the index, an axis of 1 refers to the columns
+
+On a DataFrame, a single argument to .loc will return a Series for the row matching the label.
+
+ .loc attribute  is intended for selection and indexing by label
+.iloc is a   method for use with purely integer based indexing, starting from 0. 
+
 <https://www.listendata.com/2019/07/how-to-filter-pandas-dataframe.html>
 ```
+df.dtypes
+df.index
+
+
 newdf = df[(df.origin == "JFK") & (df.carrier == "B6")]
 newdf = df.query('origin == "JFK" & carrier == "B6"')
 newdf = df.loc[(df.origin == "JFK") & (df.carrier == "B6")]
