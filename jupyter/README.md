@@ -31,7 +31,30 @@ https://habr.com/ru/company/ruvds/blog/505624/. HiSpeed DataFrames: Dask Vuex
 
 <https://livecodestream.dev/post/2020-07-23-interactive-data-visualization-using-plotly-and-python/> Plotly
 
-
+```
+import os
+import platform
+from platform import python_version
+import jupyterlab
+import numpy as np
+import pandas as pd
+print("System")
+print("os name: %s" % os.name)
+print("system: %s" % platform.system())
+print("release: %s" % platform.release())
+print()
+print("Python")
+print("version: %s" % python_version())
+print()
+print("Python Packages")
+print("jupterlab==%s" % jupyterlab.__version__)
+print("pandas==%s" % pd.__version__)
+print("numpy==%s" % np.__version__)
+```
+Check duplicates in DataFrame
+```
+assert len(df[df.index.duplicated()]) == 0, "Dataframe has duplicates"
+```
 
 ### Pandas
 
