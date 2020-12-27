@@ -24,9 +24,10 @@ https://notamonadtutorial.com/stumpy-unleashing-the-power-of-the-matrix-profile-
 
 ### sktime
 
-<https://github.com/alan-turing-institute/sktime> ML for time series
 
-https://github.com/alan-turing-institute/sktime . SkTime - time series analysis
+<https://habr.com/ru/company/otus/blog/511782/>. sktime - time series with python
+
+https://github.com/alan-turing-institute/sktime  SkTime - time series analysis
 
 https://news.ycombinator.com/item?id=24541487 . SkTime - time series analysis
 
@@ -46,17 +47,36 @@ https://youtu.be/6OGSftP2_Ts
 <https://zerowithdot.com/time-forecasting-challenges/>
 
 
+<https://habr.com/ru/post/180409/> Обзор моделей прогнозирования временных рядов
+
+<https://habr.com/ru/post/207160/> . statmodels
+
+<https://habr.com/ru/post/436294/>
 
 
+<https://habr.com/ru/company/ods/blog/327242/> Открытый курс машинного обучения. Тема 9. Анализ временных рядов с помощью Python
+
+<https://www.vaishalilambe.com/blog/learning-time-series-analysis-forecasting-phase-1>
+
+
+
+<https://machinelearningmastery.com/taxonomy-of-time-series-forecasting-problems/>
+
+<https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/>
+
+
+
+## NN for time series
 <https://habr.com/ru/post/495884/> NN for time series
+
+<https://vorstella.com/deep-learning-time-series/>
+
+<https://medium.com/tensorflow/structural-time-series-modeling-in-tensorflow-probability-344edac24083>
 
 <https://www.m3db.io/> Uber's TS database
 
 <https://www.dataengineeringpodcast.com/datadog-timeseries-data-episode-113/>
 
-<https://habr.com/ru/company/ods/blog/327242/> Открытый курс машинного обучения. Тема 9. Анализ временных рядов с помощью Python
-
-<https://www.vaishalilambe.com/blog/learning-time-series-analysis-forecasting-phase-1>
 
 
 ### packages
@@ -120,7 +140,7 @@ TBATS2 - TBATS1 With Two Seasonal Periods
 
 <https://christian.bock.ml/posts/significant_shapelets/> 
 
-<https://vorstella.com/deep-learning-time-series/>
+
 
 <https://www.reddit.com/r/datascience/comments/deiowd/are_there_any_python_libraries_that_help_with/>
 
@@ -136,7 +156,6 @@ TBATS2 - TBATS1 With Two Seasonal Periods
 
 <https://github.com/unit8co/darts> time series in Python
 
-<https://habr.com/ru/company/otus/blog/511782/>. sktime - time series with python
 
 <https://github.com/mlubinsky/mlubinsky.github.com/blob/master/ts/time_series_forecasting_with_python_mini_course.pdf>
 
@@ -210,15 +229,6 @@ decomposition = sm.tsa.seasonal_decompose(y, model='multiplicative')
 
 ```
 
-<https://habr.com/ru/post/180409/> Обзор моделей прогнозирования временных рядов
-
-<https://habr.com/ru/post/207160/> . statmodels
-
-<https://habr.com/ru/post/436294/>
-
-<https://machinelearningmastery.com/taxonomy-of-time-series-forecasting-problems/>
-
-<https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/>
 
 <https://machinelearningmastery.com/make-manual-predictions-arima-models-python/>
 
@@ -226,7 +236,7 @@ decomposition = sm.tsa.seasonal_decompose(y, model='multiplicative')
 
 <https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/>
 
-## 
+
 <https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3>
 
 <https://www.8host.com/blog/prognozirovanie-vremennyx-ryadov-s-pomoshhyu-arima-v-python-3/>
@@ -246,7 +256,6 @@ decomposition = sm.tsa.seasonal_decompose(y, model='multiplicative')
 <https://github.com/Pierian-Data/AutoArima-Time-Series-Blog>
 
 
-<https://medium.com/tensorflow/structural-time-series-modeling-in-tensorflow-probability-344edac24083>
 
 
 <https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/>
