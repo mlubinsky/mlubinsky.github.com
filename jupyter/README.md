@@ -28,6 +28,24 @@ https://habr.com/ru/company/ruvds/blog/505624/. HiSpeed DataFrames: Dask Vuex
 
 <https://livecodestream.dev/post/2020-07-23-interactive-data-visualization-using-plotly-and-python/> Plotly
 
+
+### Resampling
+
+df.groupby('house').resample('D').mean().head(4)
+
+### Filling gaps in data
+```
+df[‘day_time’] = pd.to_datetime(df[‘day_time’], format=’%Y-%m-%d %H:%M:%S’)
+
+full_idx = pd.date_range(start=df[‘day_time’].min(), end=df[‘day_time’].max(), freq=’30T’)
+df = (
+ df
+ .groupby(‘LCLid’, as_index=False) 
+ .apply(lambda group: group.reindex(full_idx, method=’nearest’)) 
+ .reset_index(level=0, drop=True) 
+ .sort_index() 
+)
+```
 ### Pandas
 
 A Series has one axis, the index. A DataFrame has two axes, the index and the columns.
