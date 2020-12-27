@@ -8,6 +8,8 @@ https://explainerdashboard.readthedocs.io/en/latest/#
 
 https://github.com/oegedijk/explainerdashboard
 
+https://towardsdatascience.com/build-dashboards-in-less-than-10-lines-of-code-835e9abeae4b
+
 ## StreamIt
 
 ```
