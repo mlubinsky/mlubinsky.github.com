@@ -37,6 +37,8 @@ https://github.com/alan-turing-institute/sktime/blob/master/examples/01_forecast
 
 https://www.cs.ucr.edu/~eamonn/100_Time_Series_Data_Mining_Questions__with_Answers.pdf
 
+<https://spark-in.me/post/playing-with-electricity> Good links!
+
 https://github.com/SeldonIO/alibi-detect
 
 https://github.com/axsaucedo/seldon_experiments/blob/master/monitoring-talk/cifar10_example.ipynb
