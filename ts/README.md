@@ -34,7 +34,9 @@ https://news.ycombinator.com/item?id=24541487 . SkTime - time series analysis
 https://github.com/alan-turing-institute/sktime/blob/master/examples/01_forecasting.ipynb
 
 
-### XBoost
+### XBoost LightGBM 
+
+https://medium.com/@qs2178/time-series-forecasting-with-stacked-machine-learning-models-7250abdece0f
 
 https://github.com/atriptoparadise/Time-Series-with-machine-learning/blob/master/Time%20Series%20Forecasting%20with%20Stacked%20Machine%20Learning%20Models_DEMO.ipynb
 
