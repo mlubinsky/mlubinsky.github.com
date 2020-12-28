@@ -26,6 +26,8 @@ streamlit run your_script.py [-- script args]
 
 <https://habr.com/ru/post/473196/>
 
+https://medium.com/analytics-vidhya/build-and-deploy-your-own-machine-learning-web-application-by-streamlit-and-heroku-d306f2d29474
+
 <https://gilberttanner.com/blog/turn-your-data-science-script-into-websites-with-streamlit>
 
 https://celadonsoft.com/ai-ml/the-complete-beginners-guide-to-web-scraping
