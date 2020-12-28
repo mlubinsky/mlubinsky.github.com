@@ -11,7 +11,7 @@ https://subscription.packtpub.com/video/data/9781838640590
 https://www.coursera.org/learn/practical-time-series-analysis
 
 
-## darts
+## darts - not able to install
 https://medium.com/unit8-machine-learning-publication/darts-time-series-made-easy-in-python-5ac2947a8878
 
 https://github.com/unit8co/darts
@@ -24,7 +24,6 @@ https://www.youtube.com/watch?v=xLbPP5xNIJs
 https://notamonadtutorial.com/stumpy-unleashing-the-power-of-the-matrix-profile-for-time-series-analysis-7c46af040adb
 
 ### sktime
-
 
 <https://habr.com/ru/company/otus/blog/511782/>. sktime - time series with python
 
@@ -40,6 +39,12 @@ https://github.com/alan-turing-institute/sktime/blob/master/examples/01_forecast
 https://medium.com/@qs2178/time-series-forecasting-with-stacked-machine-learning-models-7250abdece0f
 
 https://github.com/atriptoparadise/Time-Series-with-machine-learning/blob/master/Time%20Series%20Forecasting%20with%20Stacked%20Machine%20Learning%20Models_DEMO.ipynb
+
+### PyTorch
+
+https://pytorch-forecasting.readthedocs.io/en/latest/
+
+https://github.com/jdb78/pytorch-forecasting
 
 ### Links
 
