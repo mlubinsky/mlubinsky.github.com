@@ -1,8 +1,38 @@
-## MySQL vs PG
+## MySQL  
 ```
 SELECT DAYNAME('2008-05-15')
 
 SELECT DAYOFWEEK(date)   1- Sunday 2 - Monday
+```
+Generate time series
+```
+select adddate('2020-01-01',  INTERVAL 1 HOUR)    
+----------
+select date from (
+    select
+        date_format(
+        adddate('2011-01-01', INTERVAL @num:=@num+1 HOUR ),
+        '%Y-%m-%d %H'
+    ) date
+    from
+        radius_traffic_total ,
+    (select @num:=-1) num
+    limit
+        366
+) as dt
+-----------------------------
+select date from (
+    select
+        date_format(
+        adddate('2011-01-01', @num:=@num+1),
+        '%Y-%m-%d'
+    ) date
+    from
+        radius_traffic_total ,
+    (select @num:=-1) num
+    limit
+        366
+) as dt
 ```
 http://restsql.org/doc/Overview.html RestSQL
 
