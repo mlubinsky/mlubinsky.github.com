@@ -4,7 +4,7 @@ https://www.youtube.com/watch?v=eoOhIRpTI0I
 
 <https://www.shinkareff.ru/pervaya-meditsinskaya-pomoshh-v-avtonomn/> 1st aid
 
-https://www.youtube.com/watch?v=KTcKOwMX7ew. Testteron
+https://www.youtube.com/watch?v=KTcKOwMX7ew. Testeron
 
 <https://zdorov.d3.ru/proshu-pomoch-sobrat-aptechku-v-pokhod-2028425/?sorting=rating>
 
@@ -29,6 +29,10 @@ https://www.amazon.com/gp/product/B003BEECTC/ref=ppx_yo_dt_b_asin_title_o01_s00?
 <https://www.youtube.com/watch?v=Jn3h3m5zVMk> табата 
 
 ## Vision
+
+https://habr.com/ru/post/533748/ Vision + Monitor
+
+https://habr.com/ru/post/508824/
 
 <https://habr.com/ru/company/plarium/blog/498724/>
 
