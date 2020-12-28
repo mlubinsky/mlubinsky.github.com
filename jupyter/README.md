@@ -149,18 +149,40 @@ series.to_pickle('cached_series.pkl') # will be stored in current directory
   Read your DataFrame
 series = pandas.read_pickle('cached_series.pkl') # read from current directory
 ```
+## Access Databases from Pandas
 
+<https://medium.com/jbennetcodes/how-to-use-pandas-to-access-databases-e4e74e6a329e> 
+```
+import MySQLdb as mdb
+user = 'YOURUSERNAME'
+passwd = 'YOURPASSWORD'
+con = mdb.connect(
+                host = '127.0.0.1', user = user, passwd = passwd) #optional - db="schema_name"
+cursor = con.cursor() 
+cursor.execute("SHOW DATABASES")  # running SQL
+print  (cursor.fetchall())
+cursor.execute("USE world")
+cursor.execute("SELECT * FROM country WHERE population>200000000")
+for i in range(cursor.rowcount):
+    row = cursor.fetchone()
+    print (row)
+    
+cursor.execute("SELECT * FROM students ")
+print cursor.fetchall()
+
+cursor.close()
+con.close()    
+```
 ## Virtual env in Jupyter Notebook
 https://janakiev.com/blog/jupyter-virtual-envs/
 
-# Jupyter Pandas NumPy Scikit
+## Jupyter Pandas NumPy Scikit
 
 <https://habr.com/ru/company/plarium/blog/512332/>. scikit
 
 <https://www.youtube.com/playlist?list=PL5-da3qGB5IBITZj_dYSFqnd_15JgqwA6>
 
 
-<https://medium.com/jbennetcodes/how-to-use-pandas-to-access-databases-e4e74e6a329e> . Access Databases from Panda
 
 <https://kanoki.org/2020/01/21/pandas-dataframe-filter-with-multiple-conditions/> filter dataframes
 
