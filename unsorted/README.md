@@ -1,6 +1,13 @@
 Делайте что хотите, но пусть это приносит радость
 /Уолт Уитмен/
-Google chrome helper fix: disable this slider:
+
+
+Google chrome helper fix: 
+
+https://softlay.net/how-to/google-chrome-helper-hogging-cpu.html
+
+disable this slider:
+
 chrome://settings/content/unsandboxedPlugins
 
 <https://www.youtube.com/watch?v=i33BTuwTgAs> Supermemo
