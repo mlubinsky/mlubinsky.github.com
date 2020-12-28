@@ -53,12 +53,20 @@ print("numpy==%s" % np.__version__)
 ```
 Check duplicates in DataFrame
 ```
-assert len(df[df.index.duplicated()]) == 0, "Dataframe has duplicates"
+assert len(df[df.index.duplicated()]) == 0, "Dataframe has duplicates")
 ```
-
+Set defalut plot size:
+```
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+mpl.rc('figure', figsize=(10, 8))
+mpl.__version__
+```
 ### Pandas
 
 https://towardsdatascience.com/pandas-full-tutorial-on-a-single-dataset-4aa43461e1e2
+
+https://nbviewer.jupyter.org/github/changhiskhan/talks/blob/master/pydata2012/pandas_timeseries.ipynb
 
 A Series has one axis, the index. A DataFrame has two axes, the index and the columns.
 
@@ -288,9 +296,6 @@ https://www.reddit.com/r/Python/comments/cop2cr/new_data_visualization_with_pyth
 <https://habr.com/ru/post/460321/> ML Notebooks
 
 
-
-
-
 <https://habr.com/ru/company/mailru/blog/445834/>
 
 
@@ -303,6 +308,8 @@ https://www.reddit.com/r/Python/comments/cop2cr/new_data_visualization_with_pyth
  
 ## Plotting the time series
 
+https://nbviewer.jupyter.org/github/changhiskhan/talks/blob/master/pydata2012/pandas_timeseries.ipynb
+
 <https://kanoki.org/2019/10/09/working-with-pandas-datetime/> Working with timeseries in Pandas
 
 <https://www.dataquest.io/blog/tutorial-time-series-analysis-with-pandas/> . Time Series
@@ -313,7 +320,6 @@ https://www.reddit.com/r/Python/comments/cop2cr/new_data_visualization_with_pyth
 
 <https://mlcourse.ai/articles/topic9-part1-time-series/>
 
-<https://mlcourse.ai/articles/topic9-part1-time-series/>
 
 ```
 import datetime
