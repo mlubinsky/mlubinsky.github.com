@@ -1,5 +1,7 @@
 https://news.ycombinator.com/item?id=25519718
 
+https://habr.com/ru/post/535216/
+
 https://habr.com/ru/company/ruvds/blog/515258/. Algorithms
 
 https://heap.io/blog/engineering/applying-textbook-data-structures-for-real-life-wins
