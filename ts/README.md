@@ -14,7 +14,11 @@ https://www.coursera.org/learn/practical-time-series-analysis
 
 https://www.youtube.com/watch?v=-r7wB9DJtiU&list=PL3N9eeOlCrP5cK0QRQxeJd6GrQvhAtpBK
 
-### Features:
+### Awesome time series in Python
+
+https://github.com/MaxBenChrist/awesome_time_series_in_python
+
+### Features based on time:
 https://www.kaggle.com/kashnitsky/correct-time-aware-cross-validation-scheme
 ```
 def add_time_features(df, X_sparse):
@@ -28,8 +32,20 @@ def add_time_features(df, X_sparse):
                 night.values.reshape(-1, 1)])
     return X
  ```   
+ 
+### Auto_TS
+
+https://github.com/AutoViML/Auto_TS
+
+### AutoTS
+
+https://github.com/winedarksea/AutoTS
+
 ## pycaret
+
 https://pycaret.org/
+
+https://www.analyticsvidhya.com/blog/2020/05/pycaret-machine-learning-model-seconds/
 
 Anomaly detection :
 
