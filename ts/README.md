@@ -10,6 +10,9 @@ https://subscription.packtpub.com/video/data/9781838640590
 
 https://www.coursera.org/learn/practical-time-series-analysis
 
+## pycaret
+https://pycaret.org/
+
 
 ## darts - not able to install
 https://medium.com/unit8-machine-learning-publication/darts-time-series-made-easy-in-python-5ac2947a8878
