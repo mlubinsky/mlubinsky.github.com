@@ -10,6 +10,9 @@ https://subscription.packtpub.com/video/data/9781838640590
 
 https://www.coursera.org/learn/practical-time-series-analysis
 
+### Youtube
+
+https://www.youtube.com/watch?v=-r7wB9DJtiU&list=PL3N9eeOlCrP5cK0QRQxeJd6GrQvhAtpBK
 
 ### Features:
 https://www.kaggle.com/kashnitsky/correct-time-aware-cross-validation-scheme
