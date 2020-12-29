@@ -2,6 +2,44 @@
 
 connection via SSH tunneling
 
+```
+    pip install sshtunnel
+    pip install mysql-connector-python
+    pip install mysqlclient
+```
+connect via SSH 
+```
+import sshtunnel
+import MySQLdb as db
+import pandas as pd
+ssh_host='192.168.240.177'
+ssh_port=22
+db_host = '127.0.0.1'
+db_port=3306
+
+SSH_USER='XXX'
+SSH_PWD='YYY'
+DB_USER=SSH_USER
+DB_PWD='ZZZ'
+
+
+def query(q):
+     with sshtunnel.SSHTunnelForwarder(
+          (ssh_host, ssh_port),
+          ssh_username=SSH_USER,   
+          ssh_password=SSH_PWD, 
+          remote_bind_address=(db_host, db_port)
+     ) as server:
+          conn = db.connect(host=db_host,
+          port=server.local_bind_port,
+          user=DB_USER,
+          passwd=DB_PWD,
+          database='analytics')
+          return pd.read_sql_query(q, conn)
+
+df = query('select * from T')
+print(df)
+```
 https://medium.com/@amirziai/query-your-database-over-an-ssh-tunnel-with-pandas-603ce49b35a1
 
 https://stackoverflow.com/questions/21903411/enable-python-to-connect-to-mysql-via-ssh-tunnelling
@@ -100,7 +138,10 @@ Postgres in Docker: <https://habr.com/ru/company/qiwi/blog/515692/>
 <https://habr.com/ru/company/tensor/blog/497008/>
 
 <https://habr.com/ru/company/tensor/blog/492694/>
+
+
 ## Hierarhy
+
 <https://towardsdatascience.com/recursive-sql-queries-with-postgresql-87e2a453f1b> Recursive SQL
 <https://habr.com/ru/company/tensor/blog/501614/>.  how to manage the hierarhy of objects?
 
