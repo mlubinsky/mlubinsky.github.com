@@ -10,6 +10,21 @@ https://subscription.packtpub.com/video/data/9781838640590
 
 https://www.coursera.org/learn/practical-time-series-analysis
 
+
+### Features:
+https://www.kaggle.com/kashnitsky/correct-time-aware-cross-validation-scheme
+```
+def add_time_features(df, X_sparse):
+    hour = df['time1'].apply(lambda ts: ts.hour)
+    morning = ((hour >= 7) & (hour <= 11)).astype('int')
+    day = ((hour >= 12) & (hour <= 18)).astype('int')
+    evening = ((hour >= 19) & (hour <= 23)).astype('int')
+    night = ((hour >= 0) & (hour <= 6)).astype('int')
+    X = hstack([X_sparse, morning.values.reshape(-1, 1), 
+                day.values.reshape(-1, 1), evening.values.reshape(-1, 1), 
+                night.values.reshape(-1, 1)])
+    return X
+ ```   
 ## pycaret
 https://pycaret.org/
 
