@@ -13,6 +13,10 @@ https://www.coursera.org/learn/practical-time-series-analysis
 ## pycaret
 https://pycaret.org/
 
+Anomaly detection :
+
+https://github.com/pycaret/pycaret/blob/master/tutorials/Anomaly%20Detection%20Tutorial%20Level%20Beginner%20-%20ANO101.ipynb
+
 
 ## darts - not able to install
 https://medium.com/unit8-machine-learning-publication/darts-time-series-made-easy-in-python-5ac2947a8878
