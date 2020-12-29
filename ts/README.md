@@ -50,6 +50,7 @@ https://medium.com/@qs2178/time-series-forecasting-with-stacked-machine-learning
 https://github.com/atriptoparadise/Time-Series-with-machine-learning/blob/master/Time%20Series%20Forecasting%20with%20Stacked%20Machine%20Learning%20Models_DEMO.ipynb
 
 ### PyTorch
+pip install pytorch-forecasting
 
 https://pytorch-forecasting.readthedocs.io/en/latest/
 
