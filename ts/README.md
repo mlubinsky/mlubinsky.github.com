@@ -20,6 +20,9 @@ https://medium.com/unit8-machine-learning-publication/darts-time-series-made-eas
 https://github.com/unit8co/darts
 
 ## Stumpy
+
+conda install stumpy
+
 https://stumpy.readthedocs.io/en/latest/index.html
 
 https://www.youtube.com/watch?v=xLbPP5xNIJs
@@ -35,6 +38,8 @@ https://github.com/alan-turing-institute/sktime  SkTime - time series analysis
 https://news.ycombinator.com/item?id=24541487 . SkTime - time series analysis
 
 https://github.com/alan-turing-institute/sktime/blob/master/examples/01_forecasting.ipynb
+
+pip install sktime-dl
 
 https://github.com/sktime/sktime-dl
 
