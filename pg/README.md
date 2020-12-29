@@ -1,4 +1,11 @@
 ## MySQL  
+
+connection via SSH tunneling
+
+https://medium.com/@amirziai/query-your-database-over-an-ssh-tunnel-with-pandas-603ce49b35a1
+
+https://stackoverflow.com/questions/21903411/enable-python-to-connect-to-mysql-via-ssh-tunnelling
+
 ```
 SELECT DAYNAME('2008-05-15')
 
