@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=xLbPP5xNIJs
 
 https://notamonadtutorial.com/stumpy-unleashing-the-power-of-the-matrix-profile-for-time-series-analysis-7c46af040adb
 
-### sktime
+### sktime and sktime-dl
 
 <https://habr.com/ru/company/otus/blog/511782/>. sktime - time series with python
 
@@ -33,6 +33,7 @@ https://news.ycombinator.com/item?id=24541487 . SkTime - time series analysis
 
 https://github.com/alan-turing-institute/sktime/blob/master/examples/01_forecasting.ipynb
 
+https://github.com/sktime/sktime-dl
 
 ### XBoost LightGBM 
 
