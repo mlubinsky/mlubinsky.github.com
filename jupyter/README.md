@@ -66,6 +66,13 @@ mpl.__version__
 
 I want to create a scatter plot of a column against the index
 ```
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+dataframe = pd.DataFrame({'Col': np.random.uniform(size=1000)})
+plt.scatter(dataframe.index, dataframe['Col'])
+
 df.reset_index().plot.scatter(x='level_0', y='price')
 ```
 https://towardsdatascience.com/pandas-full-tutorial-on-a-single-dataset-4aa43461e1e2
