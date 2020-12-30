@@ -74,6 +74,18 @@ dataframe = pd.DataFrame({'Col': np.random.uniform(size=1000)})
 plt.scatter(dataframe.index, dataframe['Col'])
 
 df.reset_index().plot.scatter(x='level_0', y='price')
+
+
+rng = date_range('1/1/2011', periods=72, freq='H')
+ts =pd.Series(np.random.randn(len(rng)), index=rng)
+
+>>> rng.freq
+<1 Hour>
+>>> rng.freqstr
+'H'
+Similary for series indexed with this index
+
+>>> ts.index.freq
 ```
 https://towardsdatascience.com/pandas-full-tutorial-on-a-single-dataset-4aa43461e1e2
 
