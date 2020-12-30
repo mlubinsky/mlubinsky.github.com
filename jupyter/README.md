@@ -86,6 +86,9 @@ ts =pd.Series(np.random.randn(len(rng)), index=rng)
 Similary for series indexed with this index
 
 >>> ts.index.freq
+
+import pandas as pd
+pd.infer_freq(ts.index)
 ```
 https://towardsdatascience.com/pandas-full-tutorial-on-a-single-dataset-4aa43461e1e2
 
