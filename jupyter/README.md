@@ -64,6 +64,10 @@ mpl.__version__
 ```
 ### Pandas
 
+I want to create a scatter plot of a column against the index
+```
+df.reset_index().plot.scatter(x='level_0', y='price')
+```
 https://towardsdatascience.com/pandas-full-tutorial-on-a-single-dataset-4aa43461e1e2
 
 https://nbviewer.jupyter.org/github/changhiskhan/talks/blob/master/pydata2012/pandas_timeseries.ipynb
