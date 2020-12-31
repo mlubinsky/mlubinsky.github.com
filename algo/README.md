@@ -6,6 +6,8 @@ https://habr.com/ru/company/ruvds/blog/515258/. Algorithms
 
 https://heap.io/blog/engineering/applying-textbook-data-structures-for-real-life-wins
 
+https://www.pythonpool.com/knapsack-problem-python/
+
 https://www.reddit.com/r/MachineLearning/comments/fdw0ax/d_advanced_courses_update/
 
 http://courses.csail.mit.edu/6.851/
