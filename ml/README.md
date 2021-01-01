@@ -2,6 +2,11 @@ Book: Computer Age Statistical Inference
 
 https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf
 
+Book:
+https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+
+https://www.microsoft.com/en-us/research/people/cmbishop/
+
 
 https://github.com/gugarosa/opytimizer 
 
