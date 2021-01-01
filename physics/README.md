@@ -13,7 +13,15 @@
  
  https://news.ycombinator.com/item?id=25588888   Well, Actually – Physics Answers 
  
- paramagnetism, diamagnetism, and ferromagnetism 
+ 
+ ### Magnetism
+ 
+ https://van.physics.illinois.edu/qa/listing.php?id=17176&t=can-magnets-do-work
+ 
+ paramagnetism, diamagnetism, and ferromagnetism :
+ 
+ Textbook covering magnetism in detail is:
+ Auerbach. Interacting Electrons and Quantum Magnetism
 
 ## Articles
 what is photon? 
