@@ -8,6 +8,8 @@ Improve model training speed with GPU without affecting your database performanc
 
 https://betterexplained.com/articles/intuitive-convolution/ Convolution
 
+https://rubikscode.net/2020/11/15/top-9-feature-engineering-techniques/
+
 https://madewithml.com/
 
 
