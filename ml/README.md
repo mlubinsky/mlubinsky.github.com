@@ -12,6 +12,17 @@ MIT Press, 2021.
 https://probml.github.io/pml-book/book1.html
 
 
+Book: Foundation of Data Science
+
+<http://www.cs.cornell.edu/jeh/book%20no%20so;utions%20March%202019.pdf>
+
+Book: Data Science in Production
+
+<https://levelup.gitconnected.com/book-launch-data-science-in-production-54b325c03818>
+
+<https://github.com/bgweber/DS_Production>
+
+https://mlpowered.com/book/ Book
 
 
 https://github.com/gugarosa/opytimizer 
@@ -193,17 +204,6 @@ https://www.amazon.com/Practical-Deep-Learning-Cloud-Mobile-ebook/dp/B07Z7957PL/
 <https://prodi.gy/> . Prodigy is a scriptable annotation tool so efficient that data scientists can do the annotation themselves, enabling a new level of rapid iteration.
 
 
-Book: Foundation of Data Science
-
-<http://www.cs.cornell.edu/jeh/book%20no%20so;utions%20March%202019.pdf>
-
-Book: Data Science in Production
-
-<https://levelup.gitconnected.com/book-launch-data-science-in-production-54b325c03818>
-
-<https://github.com/bgweber/DS_Production>
-
-https://mlpowered.com/book/ Book
 
 <https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview> 
 
