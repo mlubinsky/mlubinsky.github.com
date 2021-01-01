@@ -18,6 +18,12 @@ https://www.youtube.com/watch?v=-r7wB9DJtiU&list=PL3N9eeOlCrP5cK0QRQxeJd6GrQvhAt
 
 https://github.com/MaxBenChrist/awesome_time_series_in_python
 
+
+How to Build Exponential Smoothing Models Using Python: Simple Exponential Smoothing, Holt, and Holt-Winters
+
+https://medium.com/datadriveninvestor/how-to-build-exponential-smoothing-models-using-python-simple-exponential-smoothing-holt-and-da371189e1a1
+
+
 ### Features based on time:
 https://www.kaggle.com/kashnitsky/correct-time-aware-cross-validation-scheme
 ```
