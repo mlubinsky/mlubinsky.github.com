@@ -7,6 +7,12 @@ https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Rec
 
 https://www.microsoft.com/en-us/research/people/cmbishop/
 
+Book: Probabilistic Machine Learning: An Introduction. by Kevin Patrick Murphy.
+MIT Press, 2021.
+https://probml.github.io/pml-book/book1.html
+
+
+
 
 https://github.com/gugarosa/opytimizer 
 
