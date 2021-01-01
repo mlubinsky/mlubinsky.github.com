@@ -1,4 +1,7 @@
-Dive into Deep learning
+### Books 
+https://www.confetti.ai/assets/ml-primer/ml_primer.pdf Primer
+
+Book: Dive into Deep learning
 https://d2l.ai/d2l-en.pdf
 
 https://www.deeplearningbook.org/
@@ -76,7 +79,8 @@ Orange
 ```
 ### ML
 
-https://www.confetti.ai/assets/ml-primer/ml_primer.pdf Primer
+
+https://machinelearningmastery.com/calculate-feature-importance-with-python/
 
 https://towardsdatascience.com/from-linear-regression-to-ridge-regression-the-lasso-and-the-elastic-net-4eaecaf5f7e6
 
