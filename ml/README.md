@@ -1,3 +1,8 @@
+Dive into Deep learning
+https://d2l.ai/d2l-en.pdf
+
+https://www.deeplearningbook.org/
+
 Book: Computer Age Statistical Inference
 
 https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf
