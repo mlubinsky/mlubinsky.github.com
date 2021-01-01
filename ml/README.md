@@ -13,6 +13,10 @@ https://rubikscode.net/2020/11/15/top-9-feature-engineering-techniques/
 https://madewithml.com/
 
 
+jupyter notebooks) for the "The Elements of Statistical Learning"
+<https://github.com/maitbayev/the-elements-of-statistical-learning>  
+
+
 ### Desktop applications for viewing and analyzing tabular data
 
 
