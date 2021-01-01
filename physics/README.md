@@ -12,6 +12,8 @@
  <https://www.youtube.com/watch?v=E_Fmbwe79Co> nВ.П. Павлов. Как устроена теоретическая физика
  
  https://news.ycombinator.com/item?id=25588888   Well, Actually – Physics Answers 
+ 
+ paramagnetism, diamagnetism, and ferromagnetism 
 
 ## Articles
 what is photon? 
