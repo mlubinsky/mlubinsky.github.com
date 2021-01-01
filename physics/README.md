@@ -10,6 +10,8 @@
 <https://www.youtube.com/watch?v=8UtnDaGHpq0>  Introduction to Lagrangian Mechanics
  
  <https://www.youtube.com/watch?v=E_Fmbwe79Co> nВ.П. Павлов. Как устроена теоретическая физика
+ 
+ https://news.ycombinator.com/item?id=25588888   Well, Actually – Physics Answers 
 
 ## Articles
 what is photon? 
