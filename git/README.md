@@ -2,6 +2,9 @@ https://habr.com/ru/company/skillbox/blog/534972/  Undo
 
 <https://rtyley.github.io/bfg-repo-cleaner/> clean the git
 
+https://medium.com/better-programming/git-commands-to-live-by-349ab1fe3139
+
+
 https://news.ycombinator.com/item?id=24957280 	Visualizing Git Concepts with D3 
 
 <https://gitexplorer.com/>
