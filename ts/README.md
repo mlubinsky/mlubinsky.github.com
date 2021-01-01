@@ -24,6 +24,9 @@ How to Build Exponential Smoothing Models Using Python: Simple Exponential Smoot
 https://medium.com/datadriveninvestor/how-to-build-exponential-smoothing-models-using-python-simple-exponential-smoothing-holt-and-da371189e1a1
 
 
+https://rubikscode.net/2020/11/15/top-9-feature-engineering-techniques/
+
+
 ### Features based on time:
 https://www.kaggle.com/kashnitsky/correct-time-aware-cross-validation-scheme
 ```
