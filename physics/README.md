@@ -1,5 +1,7 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+https://mipt.ru/education/chair/theoretical_physics/courses/. 
+
 <https://science.d3.ru/posovetuite-podkast-s-fizikami-2046797/?sorting=rating>
 
 <http://fizka.ru/>
