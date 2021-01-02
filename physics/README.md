@@ -97,6 +97,11 @@ https://news.ycombinator.com/item?id=25219503
 
  ### Magnetism
  
+ Природа магнетизма.
+Моисей Исаакович Каганов, Виктор Моисеевич Цукерник
+
+ https://math.ru/lib/book/djvu/bib-kvant-15/Kv16-82_Priroda_Magnetizma_M.I.Kaganov.djvu
+ 
  https://van.physics.illinois.edu/qa/listing.php?id=17176&t=can-magnets-do-work
  
  paramagnetism, diamagnetism, and ferromagnetism :
