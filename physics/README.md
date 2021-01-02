@@ -142,6 +142,9 @@ https://arxiv.org/abs/2011.09181 . A First Principles Derivation of Classical an
 
 
 ## Solid state phys
+
+http://nuclphys.sinp.msu.ru/solidst/index.html
+
 https://teach-in.ru/file/synopsis/pdf/ofksv-M.pdf
 
 https://teach-in.ru/lecture/10_24_Khokhlov . Основы физики конденсированного состояния вещества
