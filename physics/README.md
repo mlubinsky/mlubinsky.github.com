@@ -1,5 +1,7 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+Books:  http://alexandr4784.narod.ru/tf.html
+
 http://www.all-fizika.com/article/index.php?id_article=35  Фейнмановские лекции
 
 https://mipt.ru/education/chair/theoretical_physics/courses/. 
