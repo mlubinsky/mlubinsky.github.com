@@ -97,6 +97,10 @@ https://news.ycombinator.com/item?id=25219503
 
  ### Magnetism
  
+ https://teach-in.ru/course/magnetic-properties-of-substances-and-materials/about
+ 
+ http://elibrary.lt/resursai/Uzsienio%20leidiniai/Uspechi_Fiz_Nauk/1948/09/ufn48_09_03.pdf
+ 
  http://www.physicum.narod.ru/m.htm
  
  https://me.kpi.ua/downloads/Poplavko_Magnetism.pdf
