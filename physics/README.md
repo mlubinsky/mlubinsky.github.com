@@ -97,6 +97,8 @@ https://news.ycombinator.com/item?id=25219503
 
  ### Magnetism
  
+ http://www.physicum.narod.ru/m.htm
+ 
  https://me.kpi.ua/downloads/Poplavko_Magnetism.pdf
  
  Природа магнетизма.
