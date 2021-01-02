@@ -97,6 +97,8 @@ https://news.ycombinator.com/item?id=25219503
 
  ### Magnetism
  
+ https://me.kpi.ua/downloads/Poplavko_Magnetism.pdf
+ 
  Природа магнетизма.
 Моисей Исаакович Каганов, Виктор Моисеевич Цукерник
 
