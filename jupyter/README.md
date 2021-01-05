@@ -66,8 +66,16 @@ mpl.rc('figure', figsize=(10, 8))
 mpl.__version__
 ```
 ### Pandas
+#### Filling the gaps:
+Step 1: create the range:
+r  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
 
-Create DatetimeIndex
+Step 2: reindex and fill the gaps with any value (2.0 below):
+
+df = df.set_index('date').reindex(r).fillna(2.0).rename_axis('date').reset_index()
+
+
+#### Create DatetimeIndex
 ```
 import pandas as pd
 
@@ -121,6 +129,8 @@ tmp
 2019-08-03 23:00:00     0
 2019-08-04 00:00:00    90
 Freq: H, Name: Val, Length: 73, dtype: int64
+```
+
 
 <https://pbpython.com/groupby-agg.html>
 
