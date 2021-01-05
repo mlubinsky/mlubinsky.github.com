@@ -71,28 +71,35 @@ Create DatetimeIndex
 ```
 import pandas as pd
 
-df = pd.DataFrame(
-{
-'Time':
-[
-  '2019-08-01 09:40:10',
-  '2019-08-02 09:50:10'
-],
- 'Val':
-[
-'10',
-'20'
-],
- })
+df = pd.DataFrame({
+ 'Time': [ '2019-08-01', '2019-08-02', '2019-08-03', '2019-08-04', '2019-08-05' ],
+ 'Val': [ 10, 20, 30, 40, 50 ],
+ 'Name':['A','B','C','D','E']
+})
 
 
-print(df)
+print(df.info())
 print(df.dtypes)
 print("-- to date --")
 
 df['tmp']=pd.to_datetime(df['Time'])
 df.set_index('tmp', inplace = True)
 df.drop('Time', axis=1, inplace=True)
+
+
+print( df['Val'].agg(['sum', 'mean']) )
+
+
+d=df['Val'].resample('D').sum()
+w=df['Val'].resample('W').sum()
+m=df['Val'].resample('M').sum()
+
+print(" resample day ")
+print(d)
+print(" resample week ")
+print(w)
+print(" resample month ")
+print(m)
 ```
 
 
