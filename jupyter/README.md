@@ -67,6 +67,35 @@ mpl.__version__
 ```
 ### Pandas
 
+Create DatetimeIndex
+```
+import pandas as pd
+
+df = pd.DataFrame(
+{
+'Time':
+[
+  '2019-08-01 09:40:10',
+  '2019-08-02 09:50:10'
+],
+ 'Val':
+[
+'10',
+'20'
+],
+ })
+
+
+print(df)
+print(df.dtypes)
+print("-- to date --")
+
+df['tmp']=pd.to_datetime(df['Time'])
+df.set_index('tmp', inplace = True)
+df.drop('Time', axis=1, inplace=True)
+```
+
+
 <https://pbpython.com/groupby-agg.html>
 
 I want to create a scatter plot of a column against the index
