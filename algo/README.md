@@ -2,6 +2,9 @@ https://news.ycombinator.com/item?id=25519718
 
 https://habr.com/ru/post/535216/
 
+
+https://habr.com/ru/company/JetBrains-education/blog/536032/  Видео курсов Computer Science клуба
+
 https://habr.com/ru/company/ruvds/blog/515258/. Algorithms
 
 https://heap.io/blog/engineering/applying-textbook-data-structures-for-real-life-wins
