@@ -67,6 +67,8 @@ mpl.__version__
 ```
 ### Pandas
 
+<https://pbpython.com/groupby-agg.html>
+
 I want to create a scatter plot of a column against the index
 ```
 import numpy as np
