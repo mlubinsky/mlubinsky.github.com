@@ -72,7 +72,7 @@ Create DatetimeIndex
 import pandas as pd
 
 df = pd.DataFrame({
- 'Time': [ '2019-08-01', '2019-08-02', '2019-08-03', '2019-08-04', '2019-08-05' ],
+ 'Time': [ '2019-08-01', '2019-08-02', '2019-08-03', '2019-08-04',  '2019-08-04 00:10'  ],
  'Val': [ 10, 20, 30, 40, 50 ],
  'Name':['A','B','C','D','E']
 })
@@ -100,8 +100,27 @@ print(" resample week ")
 print(w)
 print(" resample month ")
 print(m)
-```
 
+h=df['Val'].resample('1H').sum()
+print(" resample 1 hour sum ")
+print(h)
+```
+Result of resample('1H')  - it fills gaps:
+```
+ resample 1 hour sum
+tmp
+2019-08-01 00:00:00    10
+2019-08-01 01:00:00     0
+2019-08-01 02:00:00     0
+2019-08-01 03:00:00     0
+2019-08-01 04:00:00     0
+                       ..
+2019-08-03 20:00:00     0
+2019-08-03 21:00:00     0
+2019-08-03 22:00:00     0
+2019-08-03 23:00:00     0
+2019-08-04 00:00:00    90
+Freq: H, Name: Val, Length: 73, dtype: int64
 
 <https://pbpython.com/groupby-agg.html>
 
