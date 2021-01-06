@@ -13,8 +13,11 @@ https://deeplearningsystems.ai/
 <https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0> TF
 
 
+
+
 <https://www.youtube.com/watch?v=bVQUSndDllU>
 
+http://amolkapoor.com/writing/index.html    Simple DL: A Guide to Building Deep Intuition About Deep Learning
  
 
 <https://www.newworldai.com/advanced-deep-learning-course-deepmind/> . Youtube lectures
