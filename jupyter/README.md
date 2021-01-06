@@ -66,7 +66,49 @@ mpl.rc('figure', figsize=(10, 8))
 mpl.__version__
 ```
 ### Pandas
+
+#### Merge  dataframes
+
+https://stackabuse.com/how-to-merge-dataframes-in-pandas/
+
+```
+pd.merge(left, right, how='inner', on=None, left_on=None, right_on=None,
+         left_index=False, right_index=False, sort=True,
+         suffixes=('_x', '_y'), copy=True, indicator=False,
+         validate=None)
+	 
+df3_merged = pd.merge(df1, df2)	 
+
+```
+If both of our DataFrames have the column user_id with the same name, the merge() function automatically joins two tables matching on that key. If we had two columns with different names, we could use left_on='left_column_name' and right_on='right_column_name' to specify keys on both DataFrames explicitly.	 
+
+When the default value of the how parameter is set to inner, a new DataFrame is generated from the intersection of the left and right DataFrames. 
+
+There are times we want to use one of the DataFrame as the main DataFrame and include all the rows from even if they don't all intersect with each other. 
+```
+df_left = pd.merge(df2, df1, how='left', indicator=True)
+df_outer = pd.merge(df2, df1, how='outer', indicator=True)
+```
+
+We also added the indicator flag and set it to True so that Pandas adds an additional column _merge to the end of our DataFrame.
+
+This column tells us if a row was found in the left, right or both DataFrames.
+
+
+#### Merge DataFrames Using join()
+
+Unlike merge() which is a method of the Pandas instance, join() is a method of the DataFrame itself. This means that we can use it like a static method on the DataFrame: DataFrame.join(other, on=None, how='left', lsuffix='', rsuffix='', sort=False).
+
+The DataFrame we call join() from will be our left DataFrame. The DataFrame in the other argument would be our right DataFrame.
+
+The on parameter can take one or more (['key1', 'key2' ...]) arguments to define the matching key, while how parameter takes one of the handle arguments (left, right, outer, inner), and it's set to left by default.
+
+Let's try to join df2 to df1:
+
+df_join = df1.join(df2, rsuffix='_right')
+
 #### Filling the gaps:
+
 Step 1: create the range:
 r  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
 
