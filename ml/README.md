@@ -32,6 +32,7 @@ Book: Data Science in Production
 
 https://mlpowered.com/book/ Book
 
+Book: https://deeplearningsystems.ai/
 
 https://github.com/gugarosa/opytimizer 
 
