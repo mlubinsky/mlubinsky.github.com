@@ -74,6 +74,26 @@ Get substr started from pattern hey and ended by ,
 ```
 But if there is the comma
 
+
+### Group by 1
+
+```
+SET hive.groupby.orderby.position.alias=true;
+
+SELECT
+ CASE
+    WHEN active_exp_map LIKE '%zJIBXrCs5#Control%' THEN 'zJIBXrCs5#Control'
+    WHEN active_exp_map LIKE '%zJIBXrCs5#GroupA%' THEN 'zJIBXrCs5#GroupA'
+    ELSE active_exp_map
+ END as bucket,
+
+ SUM(COALESCE(total_cores,0)) as sum_total_device_cores
+FROM roku.agg_channel_cores_daily
+where date_key between '2020-12-03' and '2020-12-17'
+and active_exp_map like '%zJIBXrCs5%'
+GROUP BY 1
+```
+
 ## Drop external table with data
 DROP deletes data for managed tables while it only deletes metadata for external ones
 
