@@ -2,6 +2,7 @@
 
 https://www.manning.com/books/data-pipelines-with-apache-airflow
 
+
 ### Udemy
 
 https://www.udemy.com/course/the-ultimate-hands-on-course-to-master-apache-airflow/learn/lecture/15819418#overview
@@ -14,6 +15,10 @@ https://marclamberti.com/
 
 
 https://www.udemy.com/course/apache-airflow/learn/lecture/17368650
+
+### Article
+
+https://khashtamov.com/en/introduction-to-apache-airflow/
 
 
 ### backfill
