@@ -47,7 +47,17 @@ def add_time_features(df, X_sparse):
  ```   
  
 
-### Flow forecast
+
+### PyTorch-forecasting
+pip install pytorch-forecasting
+
+https://pytorch-forecasting.readthedocs.io/en/latest/
+
+https://github.com/jdb78/pytorch-forecasting
+
+### Flow-forecast
+
+Deep learning PyTorch library for time series forecasting, classification, and anomaly detection (originally for flood forecasting).
 
 https://github.com/AIStream-Peelout/flow-forecast
  
@@ -108,12 +118,6 @@ https://medium.com/@qs2178/time-series-forecasting-with-stacked-machine-learning
 
 https://github.com/atriptoparadise/Time-Series-with-machine-learning/blob/master/Time%20Series%20Forecasting%20with%20Stacked%20Machine%20Learning%20Models_DEMO.ipynb
 
-### PyTorch
-pip install pytorch-forecasting
-
-https://pytorch-forecasting.readthedocs.io/en/latest/
-
-https://github.com/jdb78/pytorch-forecasting
 
 ### Links
 
