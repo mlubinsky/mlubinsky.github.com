@@ -554,6 +554,27 @@ from sales_table;
 
 ## Window functions 
 
+https://khashtamov.com/en/sql-window-functions/
+
+https://news.ycombinator.com/item?id=25656583
+
+
+max salary per department:
+
+```
+SELECT * FROM (
+         SELECT id,
+                first_name,
+                department,
+                 salary,
+                MAX( salary) OVER (PARTITION BY department) as max_salary
+         FROM Salary
+     ) t
+WHERE max_salary = salary
+ORDER BY id;
+```
+
+
 <https://mjk.space/advances-sql-window-frames/>
 
 <https://oracle-base.com/articles/misc/analytic-functions>
