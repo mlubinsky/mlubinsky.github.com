@@ -68,7 +68,10 @@ Anomaly detection :
 https://github.com/pycaret/pycaret/blob/master/tutorials/Anomaly%20Detection%20Tutorial%20Level%20Beginner%20-%20ANO101.ipynb
 
 
-## darts - not able to install
+## darts  
+
+pip install 'u8darts[all]'
+
 https://medium.com/unit8-machine-learning-publication/darts-time-series-made-easy-in-python-5ac2947a8878
 
 https://github.com/unit8co/darts
