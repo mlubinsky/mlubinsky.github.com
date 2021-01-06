@@ -97,7 +97,7 @@ Select
       ,t1.driver_id
       ,(
         Select sum(profit) from f_daily_rides t2 
-        where t1.day    >=t2.day and t1.driver_id = t2.driver_id
+        where t1.day >= t2.day and t1.driver_id = t2.driver_id
        )
    FROM f_daily_rides t1
 ```   
@@ -365,6 +365,14 @@ SELECT name, id, salary,
 FROM emp
 ) A
 where rank2=1;
+
+
+  select department, first_name, salary
+  from (
+    select *, row_number() over (partition by department order by  salary desc) as n
+    from salary
+  ) _
+  where n = 1
 ```
 
 ### Find duplicate rows in a database
@@ -567,11 +575,19 @@ SELECT * FROM (
                 first_name,
                 department,
                  salary,
-                MAX( salary) OVER (PARTITION BY department) as max_salary
+                MAX(salary) OVER (PARTITION BY department) as max_salary
          FROM Salary
      ) t
 WHERE max_salary = salary
 ORDER BY id;
+
+
+  select department, first_name, salary
+  from (
+    select *, row_number() over (partition by department order by  salary desc) as n
+    from salary
+  ) _
+  where n = 1
 ```
 
 
