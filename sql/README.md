@@ -564,8 +564,13 @@ from sales_table;
 
 https://khashtamov.com/en/sql-window-functions/
 
+https://dataschool.com/how-to-teach-people-sql/how-window-functions-work/
+
+https://www.windowfunctions.com/
+
 https://news.ycombinator.com/item?id=25656583
 
+https://news.ycombinator.com/item?id=20872114
 
 max salary per department:
 
