@@ -42,6 +42,10 @@ https://habr.com/ru/post/530574/ .  Deep Anomaly Detection
 
 <https://qminer.github.io/anomalies/>
 
+
+<https://www.reddit.com/r/MachineLearning/comments/ko2ij5/p_looking_for_resources_on_anomaly_detection/>
+
+
 ## Isolation Forest
 
 <https://lambda.grofers.com/anomaly-detection-using-isolation-forest-80b3a3d1a9d8>
