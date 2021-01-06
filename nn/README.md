@@ -29,18 +29,18 @@ https://math.mit.edu/ennui/   Elegant NN UI
 
 <https://www.youtube.com/watch?v=M-2upGOuaPY>  Лекция 8. Р.В. Шамин. Функциональный анализ и машинное обучение
 
-<https://arxiv.org/abs/2004.14545> . 
+<https://arxiv.org/abs/2004.14545>  Explainable Deep Learning: A Field Guide for the Uninitiated 
 
 <https://news.ycombinator.com/item?id=23060656>
 
 
 
-<https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0> TF
+<https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0> TensorFlow MNIST
 
 
 
 
-<https://www.youtube.com/watch?v=bVQUSndDllU>
+<https://www.youtube.com/watch?v=bVQUSndDllU>   MNIST set recognision coded in python
 
 http://amolkapoor.com/writing/index.html    Simple DL: A Guide to Building Deep Intuition About Deep Learning
  
