@@ -44,6 +44,11 @@ def add_time_features(df, X_sparse):
     return X
  ```   
  
+
+### Flow forecast
+
+https://github.com/AIStream-Peelout/flow-forecast
+ 
 ### Auto_TS
 
 https://github.com/AutoViML/Auto_TS
