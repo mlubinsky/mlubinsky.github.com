@@ -11,6 +11,8 @@ BuildVersion:	18G95
 
 https://kapeli.com/dash
 
+https://peter-whittaker.com/install-python-MacOS
+
 ### Chrome extensions
 The great suspender
 
