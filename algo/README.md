@@ -19,7 +19,13 @@ https://erthalion.info/2020/11/28/evolution-of-btree-index-am/
 
 find the longest palindrome subsequence of a string optimally
 
+### Facebook
+
 https://levelup.gitconnected.com/cracking-the-top-40-facebook-coding-interview-questions-185bab32489f
+
+https://daqo.medium.com/facebook-senior-software-engineer-interview-the-only-post-youll-need-to-read-e4604ff2336d
+
+https://news.ycombinator.com/item?id=25658098
 
 https://doisinkidney.com/posts/2019-06-04-solving-puzzles-without-your-brain.html
 
