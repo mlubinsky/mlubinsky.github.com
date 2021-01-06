@@ -1,14 +1,39 @@
+### Books
+
 <https://d2l.ai/> Deep Learning book
 
 https://rubikscode.net/deep-learning-for-programmers/
 
 https://deeplearningsystems.ai/
 
+<https://www.deeplearningbook.org/> 
+
+<https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438> . Book
+
+<https://www.amazon.com/Machine-Learning-Python-Cookbook-preprocessing/dp/1491989386/> . Book
+
+<https://aiprobook.com/deep-learning-for-programmers/>
+
+<https://www.elementsofai.com/>
+
+<http://introtodeeplearning.com/>
+
+###  How to visualize NN layers?
+https://www.reddit.com/r/MachineLearning/comments/kmfx2d/d_can_anyone_recommend_a_network_architecture/
+
+
+<https://github.com/lutzroeder/netron> viewer for many NN formats
+
+https://math.mit.edu/ennui/   Elegant NN UI
+
+
 <https://www.youtube.com/watch?v=M-2upGOuaPY>  Лекция 8. Р.В. Шамин. Функциональный анализ и машинное обучение
 
-<https://arxiv.org/abs/2004.14545> . <https://news.ycombinator.com/item?id=23060656>
+<https://arxiv.org/abs/2004.14545> . 
 
-<https://www.deeplearningbook.org/> 
+<https://news.ycombinator.com/item?id=23060656>
+
+
 
 <https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0> TF
 
@@ -26,9 +51,7 @@ http://amolkapoor.com/writing/index.html    Simple DL: A Guide to Building Deep 
 
 <https://distill.pub/2020/grand-tour/>
 
-<https://github.com/lutzroeder/netron> viewer for many NN formats
 
-https://math.mit.edu/ennui/ . Elegant NN UI
 
 <https://www.youtube.com/watch?v=WsFasV46KgQ&feature=youtu.be> . Why sigmoid?
 
@@ -36,13 +59,11 @@ https://math.mit.edu/ennui/ . Elegant NN UI
 
 <https://habr.com/ru/post/482794/>
 
-<http://introtodeeplearning.com/>
+
 
 <https://habr.com/ru/company/oleg-bunin/blog/470904/>
 
-<https://aiprobook.com/deep-learning-for-programmers/>
 
-<https://www.elementsofai.com/>
 
 <https://habr.com/ru/post/467825/>
 
@@ -60,8 +81,7 @@ https://stepik.org/lesson/210100/step/1?unit=183577 .   STEPIC class
 
 <https://github.com/Mybridge/amazing-machine-learning-opensource-2019>
 
-<https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438> . Book
-<https://www.amazon.com/Machine-Learning-Python-Cookbook-preprocessing/dp/1491989386/> . Book
+
 
 <https://victorzhou.com/blog/intro-to-cnns-part-1/> . from scratch in Python
 
