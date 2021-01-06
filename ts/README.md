@@ -16,7 +16,9 @@ https://www.coursera.org/learn/practical-time-series-analysis
 
 https://www.youtube.com/watch?v=-r7wB9DJtiU&list=PL3N9eeOlCrP5cK0QRQxeJd6GrQvhAtpBK
 
-### Awesome time series in Python
+### Time series packages in Python
+
+https://www.microprediction.com/blog/popular-timeseries-packages
 
 https://github.com/MaxBenChrist/awesome_time_series_in_python
 
