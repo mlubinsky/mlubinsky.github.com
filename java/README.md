@@ -6,17 +6,21 @@
  
  <https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-14/>
  
+ ## JVM 
+ https://habr.com/ru/post/536288/ Java HotSpot JIT компилятор — устройство, мониторинг и настройка (часть 1)
+ 
  <https://habr.com/ru/post/471772/> How Java works
- 
- <https://habr.com/ru/post/510618/> Java Memory Model
- 
- https://medium.com/javarevisited/java-concurrency-java-memory-model-96e3ac36ec6b Java Memory Model
  
  <https://habr.com/ru/company/otus/blog/478584/> . JVM internals
  
  <https://habr.com/ru/company/domclick/blog/500646/> Java bytecode internals
  
  <https://www.youtube.com/watch?v=RtHA1YVLW5Y> JVM does this?
+ 
+  <https://habr.com/ru/post/510618/> Java Memory Model
+ 
+ https://medium.com/javarevisited/java-concurrency-java-memory-model-96e3ac36ec6b Java Memory Model
+ 
  
  <https://www.youtube.com/watch?v=yhguOt863nw>. Java concurrency
  
