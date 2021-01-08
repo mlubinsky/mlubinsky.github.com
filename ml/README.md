@@ -279,6 +279,10 @@ Deploying to AWS
 
 ## AutoML
 
+https://github.com/mljar/mljar-supervised
+
+https://github.com/openml/automlbenchmark
+
 https://habr.com/ru/company/otus/blog/525292/ .  pip install autoviml
 
 <https://habr.com/ru/company/jetinfosystems/blog/485232/>
