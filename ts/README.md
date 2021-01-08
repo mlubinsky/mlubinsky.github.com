@@ -52,6 +52,8 @@ def add_time_features(df, X_sparse):
 
 https://github.com/mljar/mljar-supervised
 
+https://mljar.com/blog/
+
 
 ### PyTorch-forecasting
 pip install pytorch-forecasting
