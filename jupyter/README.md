@@ -80,6 +80,15 @@ Set defalut plot size:
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 mpl.rc('figure', figsize=(10, 8))
+
+x = [5, 2, 9, 4, 7]   
+y = [10, 5, 8, 4, 2]
+width=30
+height=10
+plt.rcParams['figure.figsize'] = [width, height]
+plt.plot(x, y)
+
+
 mpl.__version__
 ```
 ### Pandas
