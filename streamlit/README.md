@@ -12,6 +12,8 @@ https://towardsdatascience.com/build-dashboards-in-less-than-10-lines-of-code-83
 
 ## StreamIt
 
+<https://www.youtube.com/watch?v=JwSS70SZdyM>
+
 ```
 pip install streamlit
 streamlit config show
