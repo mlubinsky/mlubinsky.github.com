@@ -48,6 +48,9 @@ def add_time_features(df, X_sparse):
     return X
  ```   
  
+## mljar-supervised
+
+https://github.com/mljar/mljar-supervised
 
 
 ### PyTorch-forecasting
@@ -115,7 +118,14 @@ pip install sktime-dl
 https://github.com/sktime/sktime-dl
 
 ### XBoost LightGBM 
+```
+pip list | grep xgboost
+xgboost                            0.90
 
+
+pip list | grep xgboost
+xgboost            1.2.0
+```
 https://medium.com/@qs2178/time-series-forecasting-with-stacked-machine-learning-models-7250abdece0f
 
 https://github.com/atriptoparadise/Time-Series-with-machine-learning/blob/master/Time%20Series%20Forecasting%20with%20Stacked%20Machine%20Learning%20Models_DEMO.ipynb
