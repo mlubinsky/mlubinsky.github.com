@@ -9,9 +9,13 @@ BuildVersion:	18G95
 
 <https://lobste.rs/s/uzdehw/what_should_i_do_after_getting_my_first_own>
 
+https://pawelurbanek.com/macos-free-disk-space   
+
+brew install --cask disk-inventory-x
+
 https://kapeli.com/dash
 
-https://peter-whittaker.com/install-python-MacOS
+ 
 
 ### Chrome extensions
 The great suspender
@@ -23,6 +27,9 @@ The session Buddy
 chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=Session%20Buddy%20-%20Chrome%20Web%20Store&pos=0&uri=https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko/related
 
 ### Python setup
+
+
+https://peter-whittaker.com/install-python-MacOS
 
 <https://hackercodex.com/guide/python-development-environment-on-mac-osx/>
 
