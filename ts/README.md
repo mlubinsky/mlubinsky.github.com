@@ -163,9 +163,11 @@ https://github.com/atriptoparadise/Time-Series-with-machine-learning/blob/master
 
 ### Links
 
-https://www.cs.ucr.edu/~eamonn/100_Time_Series_Data_Mining_Questions__with_Answers.pdf
+<https://www.cs.ucr.edu/~eamonn/100_Time_Series_Data_Mining_Questions__with_Answers.pdf>
 
 <https://spark-in.me/post/playing-with-electricity> Good links!
+
+<https://stackoverflow.com/questions/23199796/detect-and-exclude-outliers-in-pandas-data-frame> Remove outliers
 
 https://github.com/SeldonIO/alibi-detect
 
