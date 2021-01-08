@@ -121,6 +121,33 @@ https://github.com/sktime/sktime-dl
 
 ### XBoost LightGBM 
 ```
+conda list | grep xgboost
+_py-xgboost-mutex         2.0                       cpu_0
+libxgboost                0.90                 h0a44026_1
+py-xgboost-cpu            0.90                     py37_1
+
+
+conda install -c conda-forge xgboost
+Collecting package metadata (current_repodata.json): done
+Solving environment: |
+The environment is inconsistent, please check the package plan carefully
+The following packages are causing the inconsistency:
+
+  - defaults/osx-64::py-xgboost-cpu==0.90=py37_1
+  
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2020.12.5          |   py37hf985489_1         143 KB  conda-forge
+    libxgboost-1.1.1           |       h4a8c4bd_0         1.9 MB  conda-forge
+    py-xgboost-1.1.1           |   py37hc8dfbb8_0         1.0 MB  conda-forge
+    py-xgboost-cpu-1.1.1       |   py37hc8dfbb8_0          10 KB  conda-forge
+    xgboost-1.1.1              |   py37h570ac47_0          11 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         3.1 MB  
+
+
 pip list | grep xgboost
 xgboost                            1.31
 
