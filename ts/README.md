@@ -120,8 +120,9 @@ https://github.com/sktime/sktime-dl
 ### XBoost LightGBM 
 ```
 pip list | grep xgboost
-xgboost                            0.90
+xgboost                            1.31
 
+(mljar) virtualenv
 
 pip list | grep xgboost
 xgboost            1.2.0
