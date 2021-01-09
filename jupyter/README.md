@@ -134,6 +134,33 @@ Let's try to join df2 to df1:
 df_join = df1.join(df2, rsuffix='_right')
 
 #### Filling the gaps - and resample:
+
+```
+import pandas as pd
+
+df = pd.DataFrame({
+ 'Time': [ '2019-08-01', '2019-08-02', '2019-08-03', '2019-08-06',  '2019-08-09'  ],
+ 'Val': [ 10, 20, 30, 40, 50 ],
+ 'Name':['A','B','C','D','E']
+})
+df['Time'] = pd.to_datetime(df['Time'])
+df.set_index('Time', inplace=True)
+idx=pd.date_range(start=df.index[0], end=df.index[-1], freq='D')  # assumes it sorted by index?
+df=df.reindex(idx)
+print(df)
+
+             Val Name
+2019-08-01  10.0    A
+2019-08-02  20.0    B
+2019-08-03  30.0    C
+2019-08-04   NaN  NaN
+2019-08-05   NaN  NaN
+2019-08-06  40.0    D
+2019-08-07   NaN  NaN
+2019-08-08   NaN  NaN
+2019-08-09  50.0    E
+```
+
 Convert time column to datetime:
 df['Timestamp'] = pd.to_datetime(df['Timestamp'])
 df = df.set_index('Timestamp')
