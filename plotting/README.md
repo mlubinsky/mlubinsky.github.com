@@ -31,6 +31,10 @@ https://habr.com/ru/company/skillfactory/blog/526076/
 
 http://holoviews.org/
 
+## Dash
+
+https://realpython.com/python-dash/
+
 ## Python plotting
 
 https://python-graph-gallery.com/ Pandash, Seaborn, Matplotlib examples!
@@ -132,7 +136,7 @@ https://medium.com/@dganais/autocorrelation-in-time-series-c870e87e8a65
 
 https://www.geeksforgeeks.org/autocorrelation-plot-using-matplotlib/
 
-## Plotline
+## Plotnine
 
 Book:
 https://leanpub.com/plotnine-guide
