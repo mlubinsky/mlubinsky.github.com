@@ -133,9 +133,35 @@ Let's try to join df2 to df1:
 
 df_join = df1.join(df2, rsuffix='_right')
 
-#### Filling the gaps:
+#### Filling the gaps - and resample:
+Convert time column to datetime:
+df['Timestamp'] = pd.to_datetime(df['Timestamp'])
+df = df.set_index('Timestamp')
 
-Step 1: create the range:
+When you reindex as below, any missing index labels become NaN values
+df.reindex(pd.date_range(start=df.index[0], end=df.index[-1], freq='3H'))
+
+
+Generate sequences of fixed-frequency dates and time spans - 3 record:
+dti = pd.date_range("2018-01-01", periods=3, freq="H")
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.resample.html
+
+https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html#cookbook-resample
+resample() is a time-based groupby, followed by a reduction method on each of its groups.
+
+Resampling or converting a time series to a particular frequency
+idx = pd.date_range("2018-01-01", periods=5, freq="H")
+
+rng = pd.date_range("1/1/2012", periods=100, freq="S")
+ts = pd.Series(np.random.randint(0, 500, len(rng)), index=rng)
+ts.resample("5Min").sum()
+
+https://stackoverflow.com/questions/40419060/search-missing-timestamp-and-display-in-python
+
+
+
+Step 1: create the range with fixed: 
 r  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
 
 Step 2: reindex and fill the gaps with any value (2.0 below):
