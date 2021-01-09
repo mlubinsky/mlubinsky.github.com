@@ -35,6 +35,8 @@ http://holoviews.org/
 
 https://realpython.com/python-dash/
 
+https://habr.com/post/431754/ Dash
+
 ## Python plotting
 
 https://python-graph-gallery.com/ Pandash, Seaborn, Matplotlib examples!
