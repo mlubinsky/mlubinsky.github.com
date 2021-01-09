@@ -159,6 +159,9 @@ print(df)
 2019-08-07   NaN  NaN
 2019-08-08   NaN  NaN
 2019-08-09  50.0    E
+
+df=df.fillna(0) .  # fill NA  with 0
+print(df)
 ```
 
 Convert time column to datetime:
