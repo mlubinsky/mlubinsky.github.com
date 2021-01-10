@@ -19,14 +19,109 @@ def query(sql):
   return d
 
 #----------------------------------
-def company_jangle_traffic_per_device(company, start, end, direction=None): # granularity='hour'):
+def sql_device_count(  start, end, companies=None): # granularity='hour'):
 #-----------------------------------  
   #if granularity == 'hour':
   timescale= '%%Y-%%m-%%d %%H'
   #else: # day
   #       timescale= '%%Y-%%m-%%d'
 
-  #print(timescale)
+  COMPANY_LIST=(3659,3116, 3666)
+  filter="1=1"
+  #if not direction:
+  #  filter="1=1"
+  #else:
+  # filter="direction="+str(direction) 
+
+  SQL=f"""
+   SELECT
+   FROM_UNIXTIME(timebin, '{timescale}') as date,
+   company,
+   count(distinct msisdn) as n_msisdn
+   FROM jangle_traffic
+   WHERE
+   timebin >=  UNIX_TIMESTAMP('{start}') and
+   timebin  <  UNIX_TIMESTAMP('{end}') and
+   company in  {COMPANY_LIST}
+   and {filter}
+   GROUP BY date, company
+   ORDER BY date
+  """
+
+  return SQL
+
+def show_device_count(start, end, companies=None):
+     sql=sql_device_count(  start, end)
+     print(sql)
+     df=query(sql)
+     print(df)
+     print(df.describe())
+
+     #range  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
+     df['date'] = pd.to_datetime(df['date'])
+     print(df.columns)
+
+
+     #print("fill NA with 0")
+     #df=df.fillna(0)
+
+
+     df2=pd.pivot_table(df, values='n_msisdn', columns='company' , index=['date'])
+     print("df2.columns=")
+ 
+     print(df2.columns)
+ 
+     #range  = pd.date_range(start=df2["date"].min(), end=df2["date"].max(), freq='H')
+  
+     #df2.set_index('date', inplace=True)
+     #d2f=df2.reindex(range)
+
+     print(df2)
+     print(df2.describe())
+     print(df2.info())
+     print(df2.columns) 
+
+     df2.plot(title="Number of devices", style=".")
+     plt.show() 
+
+def show_traffic(start, end, companies=None):
+     sql= company_jangle_traffic_total(  start, end)
+     print(sql)
+     df=query(sql)
+     print(df)
+     print(df.describe())
+
+     #range  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
+     df['date'] = pd.to_datetime(df['date'])
+     print(df.columns)
+
+
+     #print("fill NA with 0")
+     #df=df.fillna(0)
+
+
+     df2=pd.pivot_table(df, values='MB', columns='company' , index=['date'])
+     print("df2.columns=")
+ 
+     print(df2.columns)
+ 
+     #range  = pd.date_range(start=df2["date"].min(), end=df2["date"].max(), freq='H')
+  
+     #df2.set_index('date', inplace=True)
+     #d2f=df2.reindex(range)
+
+     print(df2)
+     print(df2.describe())
+     print(df2.info())
+     print(df2.columns) 
+
+     df2.plot(title="Traffic(MB)", style=".")
+     plt.show()      
+#----------------------------------
+def company_jangle_traffic_per_device(company, start, end, direction=None): # granularity='hour'):
+#-----------------------------------  
+
+  timescale= '%%Y-%%m-%%d %%H'
   if not direction:
     filter="1=1"
   else:
@@ -49,6 +144,36 @@ def company_jangle_traffic_per_device(company, start, end, direction=None): # gr
 
   return SQL
 
+#----------------------------------
+def company_jangle_traffic_total(start, end, direction=None): # granularity='hour'):
+#-----------------------------------  
+  COMPANY_LIST=(3659,3116, 3666)
+  timescale= '%%Y-%%m-%%d %%H'
+  #else: # day
+  #       timescale= '%%Y-%%m-%%d'
+
+  #print(timescale)
+  if not direction:
+    filter="1=1"
+  else:
+    filter="direction="+str(direction)
+
+  SQL=f"""
+   SELECT
+   FROM_UNIXTIME(timebin, '{timescale}') as date,
+   company,
+   SUM(bytes) * 1.0 / (1024.0 * 1024.0)  as MB
+   FROM jangle_traffic_total
+   WHERE
+   timebin >=  UNIX_TIMESTAMP('{start}') and
+   timebin  <  UNIX_TIMESTAMP('{end}') and
+   company IN  {COMPANY_LIST}
+   and {filter}
+   GROUP BY date, company
+   ORDER BY date
+  """
+
+  return SQL
 
 #-----------------------------------
 def create_features(df, label=None):
@@ -204,13 +329,20 @@ def get_duration():
          return 7  # 1 week
       else:
          return int(duration)
+
+def device_count(start, end):
+     sql = sql_n_devices(start, end, companies)
+     print(sql)
+     df=query(sql)
+     print(df)
+
 #------------
 def main():
 #----------
 
   datastore.connect()
 
-  width=15
+  width=20
   height=5
   plt.rcParams['figure.figsize'] = [width, height]
 
@@ -218,13 +350,22 @@ def main():
   #COMPANY_LIST=(3666,)
   #start='2020-10-01'
   #end  ='2021-01-01'
-  company=get_company()
-  COMPANY_LIST=[]
-  COMPANY_LIST.append(company)
+
   start = get_start()
   n_days=get_duration()
   end = (datetime.strptime(start, '%Y-%m-%d') + timedelta(days=n_days)).strftime('%Y-%m-%d')
 
+  show_traffic(start, end)
+  show_device_count(start, end)
+
+  # https://stackoverflow.com/questions/22483588/how-can-i-plot-separate-pandas-dataframes-as-subplots
+  # https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
+  # TO DO: lag plot, autocorrelation plot
+  exit(0)
+
+  company=get_company()
+  COMPANY_LIST=[]
+  COMPANY_LIST.append(company)
   for company in COMPANY_LIST:
     for direction in [1,2]:
      print(company, direction)
