@@ -46,6 +46,8 @@ https://pauliacomi.com/2020/06/07/plotly-v-bokeh.html
 
 https://plotly.com/python/plotly-express/
 
+https://www.sicara.ai/blog/2018-01-30-bokeh-dash-best-dashboard-framework-python
+
 ## Awesome panel
 
 https://awesome-panel.org/
