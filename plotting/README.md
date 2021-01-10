@@ -31,11 +31,26 @@ https://habr.com/ru/company/skillfactory/blog/526076/
 
 http://holoviews.org/
 
+
 ## Dash
 
 https://realpython.com/python-dash/
 
 https://habr.com/post/431754/ Dash
+
+https://medium.com/@drimik99/a-python-programmers-guide-to-dashboarding-part-3-3908c71f6ca
+
+https://www.activestate.com/blog/dash-vs-bokeh/
+
+https://pauliacomi.com/2020/06/07/plotly-v-bokeh.html
+
+https://plotly.com/python/plotly-express/
+
+## Awesome panel
+
+https://awesome-panel.org/
+
+https://panel.holoviz.org/getting_started/index.html
 
 ## Python plotting
 
