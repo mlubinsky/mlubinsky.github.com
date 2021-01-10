@@ -19,6 +19,10 @@ Most users don't know their IMSIs, while the MSISDN can be dialed to reach the p
 
 ### RADIUS CDR
 
+RADIUS - это протокол, для авторизации, аутентификации и учёта (AAA).
+
+https://habr.com/ru/post/536648/
+
 https://en.wikipedia.org/wiki/RADIUS
 
 Remote Authentication Dial In User Service (RADIUS) for streaming the Call Detail Records (CDR).
