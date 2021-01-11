@@ -2,13 +2,18 @@
 /Уолт Уитмен/
 
 
-Google chrome helper fix: 
+### Google chrome helper fix: 
 
 https://softlay.net/how-to/google-chrome-helper-hogging-cpu.html
 
 disable this slider:
 
 chrome://settings/content/unsandboxedPlugins
+
+### Find your external IP address:
+
+dig @resolver4.opendns.com myip.opendns.com +short
+
 
 <https://www.youtube.com/watch?v=i33BTuwTgAs> Supermemo
 
