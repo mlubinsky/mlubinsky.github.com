@@ -2,6 +2,7 @@ https://news.ycombinator.com/item?id=25519718
 
 https://habr.com/ru/post/535216/
 
+http://algorithmsbook.com/
 
 https://habr.com/ru/company/JetBrains-education/blog/536032/  Видео курсов Computer Science клуба
 
