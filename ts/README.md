@@ -34,6 +34,7 @@ https://medium.com/datadriveninvestor/how-to-build-exponential-smoothing-models-
 
 https://rubikscode.net/2020/11/15/top-9-feature-engineering-techniques/
 
+https://machinelearningmastery.com/basic-feature-engineering-time-series-data-python/ . using Lags
  
 https://youtu.be/_fwhJvPW32g Time series Cross Validation
 
