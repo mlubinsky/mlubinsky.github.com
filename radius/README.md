@@ -76,6 +76,29 @@ SELECT FROM_UNIXTIME(1560443400, '%M-%d-%H') June 13-16
 
 SELECT FROM_UNIXTIME(1560443400, '%m-%d-%H')  06-13-16
 ```
+### Find time gaps using LAG
+```
+SELECT 
+   timebin, 
+   prev_bin, 
+   (timebin - prev_bin) as diff_seconds, 
+   (timebin - prev_bin)/60 as diff_mins, 
+   FROM_UNIXTIME(timebin) as t1, 
+   FROM_UNIXTIME(prev_bin) as t2
+FROM  
+
+(   
+   SELECT  timebin, LAG(timebin, 1) OVER (ORDER BY timebin) as prev_bin
+   FROM jangle_traffic_total
+   WHERE
+     timebin >=  UNIX_TIMESTAMP('2020-11-01') and
+     timebin  <  UNIX_TIMESTAMP('2020-11-02') and 
+     company in (3659) 
+) A  
+order by diff_seconds desc limit 5
+
+
+```
 ### Protocols
 https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers
 
