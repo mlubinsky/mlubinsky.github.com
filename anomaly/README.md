@@ -10,9 +10,15 @@ or forecast a signal for some point and test if this point value varies from the
 
 https://arxiv.org/abs/2009.13807
 
+### SQL for anomaly detection
+
 https://hakibenita.com/sql-anomaly-detection 
 
 <https://towardsdatascience.com/anomaly-detection-with-sql-7700c7516d1d> Anomality detection with SQL
+
+https://news.ycombinator.com/item?id=25731699
+
+<https://nickgavalas.com/anomaly-detection-on-data-streams-in-one-line-of-bash/>
 
 https://habr.com/ru/post/530574/ .  Deep Anomaly Detection
 
@@ -20,7 +26,7 @@ https://habr.com/ru/post/530574/ .  Deep Anomaly Detection
 
 <https://habr.com/ru/post/477450/>
 
-<https://nickgavalas.com/anomaly-detection-on-data-streams-in-one-line-of-bash/>
+
 
 <https://en.wikipedia.org/wiki/Anomaly_detection>
 
