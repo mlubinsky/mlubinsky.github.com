@@ -23,6 +23,52 @@ https://github.com/jvns/pandas-cookbook
 https://pandas.pydata.org/docs/getting_started/index.html
 
 
+ 
+https://stackoverflow.com/questions/29432629/correlation-matrix-using-pandas
+
+<https://machinelearningmastery.com/calculate-feature-importance-with-python/>
+
+https://habr.com/ru/company/ruvds/blog/451478/ 
+bиблиотекa pandas-profiling. 
+
+Результаты её работы выражаются не в виде неких отдельных показателей,
+а в форме довольно подробного HTML-отчёта, содержащего большую часть тех сведений об анализируемых данных, 
+которые может понадобиться знать перед тем, как приступать к более плотной работе с ними.
+
+
+http://www.dataschool.io/easier-data-analysis-with-pandas/
+
+https://news.ycombinator.com/item?id=16473482
+
+http://nbviewer.jupyter.org/github/pybokeh/jupyter_notebooks/blob/master/pandas/PandasCheatSheet.ipynb
+
+https://jakevdp.github.io/PythonDataScienceHandbook/
+
+https://www.kaggle.com/learn/data-visualisation
+
+https://medium.com/dunder-data/selecting-subsets-of-data-in-pandas-6fcd0170be9c
+
+https://spapas.github.io/2016/09/21/pandas-pivot-table-primer/
+
+https://github.com/JosPolfliet/pandas-profiling
+
+https://www.dataquest.io/blog/pandas-concatenation-tutorial/
+
+https://towardsdatascience.com/how-to-learn-pandas-108905ab4955
+
+http://blog.enthought.com/python/pandas/cheat-sheets-pandas-the-python-data-analysis-library/#.WjSdBlQ-dp9
+'
+https://habrahabr.ru/company/ods/blog/322626/
+
+https://www.dataquest.io/blog/pandas-big-data/
+
+https://www.dataquest.io/blog/machine-learning-python/
+
+https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python
+
+http://hypertools.readthedocs.io/en/latest/index.html
+
+
 ### DSP
 
 https://greenteapress.com/thinkdsp/html/index.html
@@ -35,7 +81,6 @@ https://diegoinacio.github.io/computer-vision-notebooks/ Comp vision, DSP and ML
 
 ### Jupyter
 
-<https://machinelearningmastery.com/calculate-feature-importance-with-python/>
 
 <https://ljvmiranda921.github.io/notebook/2020/03/16/jupyter-notebooks-in-2020-part-2/>
 
@@ -47,9 +92,17 @@ https://habr.com/ru/company/ruvds/blog/505624/. HiSpeed DataFrames: Dask Vuex
 
 <https://habr.com/ru/post/485318/> Добавляем в Jupyter Notebooks красоту и интерактивность
 
+https://towardsdatascience.com/how-to-produce-interactive-matplotlib-plots-in-jupyter-environment-1e4329d71651   Interactive Matplotlib Plots in Jupyter  
+
+
+<https://towardsdatascience.com/integrate-jupyter-into-your-data-pipeline-9a02fab3cee5>
+
+
 <https://youtu.be/0Ol3QkdCyAk>. Pair Plot for multivariable analysis
 
-<https://livecodestream.dev/post/2020-07-23-interactive-data-visualization-using-plotly-and-python/> Plotly
+### Plotly
+
+<https://livecodestream.dev/post/2020-07-23-interactive-data-visualization-using-plotly-and-python/> 
 
 ```
 import os
@@ -91,9 +144,9 @@ plt.plot(x, y)
 
 mpl.__version__
 ```
-### Pandas
+ 
 
-#### Merge  dataframes
+### Merge  dataframes in Pandas
 
 https://stackabuse.com/how-to-merge-dataframes-in-pandas/
 
@@ -160,7 +213,8 @@ print(df)
 2019-08-08   NaN  NaN
 2019-08-09  50.0    E
 
-df=df.fillna(0) .  # fill NA  with 0
+# fill NA  with 0
+df=df.fillna(0) .  
 print(df)
 ```
 
@@ -396,7 +450,7 @@ con.close()
 ## Virtual env in Jupyter Notebook
 https://janakiev.com/blog/jupyter-virtual-envs/
 
-## Jupyter Pandas NumPy Scikit
+##   Pandas NumPy Scikit
 
 <https://habr.com/ru/company/plarium/blog/512332/>. scikit
 
@@ -405,8 +459,6 @@ https://janakiev.com/blog/jupyter-virtual-envs/
 
 
 <https://kanoki.org/2020/01/21/pandas-dataframe-filter-with-multiple-conditions/> filter dataframes
-
-<https://towardsdatascience.com/integrate-jupyter-into-your-data-pipeline-9a02fab3cee5>
 
 
 ## Data explorarion
@@ -864,49 +916,7 @@ http://cs231n.github.io/python-numpy-tutorial/
 https://github.com/HIPS/autograd
 https://www.machinelearningplus.com/101-numpy-exercises-python/
 ```
-## Pandas
- 
-https://stackoverflow.com/questions/29432629/correlation-matrix-using-pandas
 
-https://habr.com/ru/company/ruvds/blog/451478/ 
-bиблиотекa pandas-profiling. 
-
-Результаты её работы выражаются не в виде неких отдельных показателей,
-а в форме довольно подробного HTML-отчёта, содержащего большую часть тех сведений об анализируемых данных, 
-которые может понадобиться знать перед тем, как приступать к более плотной работе с ними.
-
-
-http://www.dataschool.io/easier-data-analysis-with-pandas/
-
-https://news.ycombinator.com/item?id=16473482
-
-http://nbviewer.jupyter.org/github/pybokeh/jupyter_notebooks/blob/master/pandas/PandasCheatSheet.ipynb
-
-https://jakevdp.github.io/PythonDataScienceHandbook/
-
-https://www.kaggle.com/learn/data-visualisation
-
-https://medium.com/dunder-data/selecting-subsets-of-data-in-pandas-6fcd0170be9c
-
-https://spapas.github.io/2016/09/21/pandas-pivot-table-primer/
-
-https://github.com/JosPolfliet/pandas-profiling
-
-https://www.dataquest.io/blog/pandas-concatenation-tutorial/
-
-https://towardsdatascience.com/how-to-learn-pandas-108905ab4955
-
-http://blog.enthought.com/python/pandas/cheat-sheets-pandas-the-python-data-analysis-library/#.WjSdBlQ-dp9
-'
-https://habrahabr.ru/company/ods/blog/322626/
-
-https://www.dataquest.io/blog/pandas-big-data/
-
-https://www.dataquest.io/blog/machine-learning-python/
-
-https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python
-
-http://hypertools.readthedocs.io/en/latest/index.html
 	
 http://www.zavtech.com/morpheus/docs/  DataFrames in Java
  
