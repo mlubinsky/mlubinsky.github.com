@@ -22,8 +22,30 @@ https://mathoverflow.net/questions/372543/new-k-samples-added-to-set-calculate-n
 
 https://math.stackexchange.com/questions/3839472/new-k-samples-added-calculate-new-stddev-given-old-avg-stddev-and-sample-size
 
-##  SQL+jinja
+##  SQL + Jinja
 https://geoffruddock.com/sql-jinja-templating/
+
+
+## LEAD, LAG, FIRST_GAP
+
+
+http://databasetips.net/2019/02/12/lead-and-lag-accessing-multiple-rows-without-self-join/
+
+```
+LAG is a window function that lets you access the value from a column in a row that lags (precedes) the current row. 
+Such function receives three parameters: the first one is the column name you want to access (you may use a built-in function instead of a column). 
+The second parameter determines an offset from the current row (it is an optional parameter and its default value is 1). 
+The third parameter (optional with default value NULL) is the value to be returned if offset goes beyond the bound of the table.
+LAG is used together with OVER, where the Partition By and Order By clauses may be used.
+
+
+```
+
+
+http://databasetips.net/2019/09/05/sql-3-ways-to-find-gaps-and-missing-values/
+
+http://www.silota.com/docs/recipes/sql-gap-analysis-missing-values-sequence.html
+
 
 ## First_ROW 
 
