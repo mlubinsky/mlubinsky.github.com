@@ -1,6 +1,8 @@
 ## MySQL  
 <https://realpython.com/python-mysql/>
 
+https://ruddra.com/install-mysqlclient-macos/
+
 connection via SSH tunneling
 
 ```
