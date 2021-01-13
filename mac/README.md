@@ -33,6 +33,8 @@ https://peter-whittaker.com/install-python-MacOS
 
 <https://hackercodex.com/guide/python-development-environment-on-mac-osx/>
 
+https://ruddra.com/fix-python-after-brew-upgrade/
+
 <https://gist.github.com/chris-zen/9e61db6924bd37fbe414f648614ca4c5>
 
 ### Mac shortcuts
