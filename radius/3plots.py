@@ -36,6 +36,54 @@ def sql_top_device_count(  start, end, table):
     return SQL
 
 #----------------------------------
+def sql_top_traffic_by_protocol(  start, end, table):
+#-----------------------------------  
+    SQL = f"""
+       SELECT
+         CAST(company AS CHAR) as company,
+         SUM( 
+           CASE 
+             WHEN protocol = 1 THEN bytes
+             ELSE 0
+           END
+         )    
+          / (1024.0 * 1024.0 * 1024.0)   as  ICMP,
+
+         SUM( 
+           CASE 
+             WHEN protocol = 6 THEN bytes
+             ELSE 0
+           END
+         )    
+          / (1024.0 * 1024.0 * 1024.0)   as  TCP,
+
+         SUM( 
+           CASE 
+             WHEN protocol = 17 THEN bytes
+             ELSE 0
+           END
+         )    
+          / (1024.0 * 1024.0 * 1024.0)   as  UDP,
+
+                  SUM( 
+           CASE 
+             WHEN protocol = 112 THEN bytes
+             ELSE 0
+           END
+         )    
+          / (1024.0 * 1024.0 * 1024.0)   as  VRRP
+
+       FROM {table}
+       WHERE
+         timebin >=  UNIX_TIMESTAMP('{start}') and
+         timebin  <  UNIX_TIMESTAMP('{end}')
+       GROUP BY CAST(company AS CHAR)
+       ORDER BY  SUM(bytes) DESC
+       LIMIT 10
+    """
+    return SQL   
+
+#----------------------------------
 def sql_top_traffic_by_direction(  start, end, table):
 #-----------------------------------  
     SQL = f"""
@@ -164,8 +212,21 @@ def show_top_traffic(start, end):
       header="Top 10 companies by traffic. Table " + table + ".  " + start + "   " + end
       df.plot(kind="bar", title=header)
       plt.show()       
-      df.plot(kind="bar", title=header, stacked=True)
-      plt.show()  
+      #df.plot(kind="bar", title=header, stacked=True)
+      #plt.show()  
+      sql=sql_top_traffic_by_protocol(start, end, table)
+      print(sql)
+      df=query(sql)
+      print(df)
+      print(df.describe())
+      print(df.columns)
+      print(df.dtypes)
+
+      df.set_index('company', inplace=True)
+      header="Top 10 companies by traffic. Table " + table + ".  " + start + "   " + end
+      df.plot(kind="bar", title=header)
+      plt.show() 
+
 #--------------------------------------
 def show_device_count(start, end, companies=None):
 #--------------------------------------  
@@ -531,8 +592,8 @@ def main():
   end = (datetime.strptime(start, '%Y-%m-%d') + timedelta(days=n_days)).strftime('%Y-%m-%d')
 
 
-  #show_top_traffic(start, end)
-  #exit(0)
+  show_top_traffic(start, end)
+  exit(0)
   #show_top_device_count(start, end)
   #exit(0)
 
