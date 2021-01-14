@@ -120,8 +120,11 @@ LastPass KeePass, PasswordSafe, minykeypass - password managers
 Sapiens. Краткая история человечества- Юваль Ной Харари часть- 1 (аудиокнига)
 <https://www.youtube.com/results?search_query=%D1%85%D0%B0%D1%80%D0%B0%D1%80%D0%B8>
 
-<https://news.ycombinator.com/item?id=20801847> not technical podcasts
+<https://news.ycombinator.com/item?id=20801847> non-technical podcasts
+
 ## Gifts
+
+https://www.vat19.com/
 
 <https://5econds.com/products/multipurpose-mobile-phone-bracket>  iPhone holder
 
