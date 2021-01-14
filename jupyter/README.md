@@ -69,6 +69,38 @@ https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python
 http://hypertools.readthedocs.io/en/latest/index.html
 
 
+### Scatter matrix plot (Pair Plot) in Pandas
+
+  the relationship of every pair of parameters. If you've worked with other libraries, this type of plot might be familiar to you as a pair plot.
+
+To plot Scatter Matrix, we'll need to import the scatter_matrix() function from the pandas.plotting module.
+
+The syntax for the scatter_matrix() function is:
+
+```
+pandas.plotting.scatter_matrix(frame, alpha=0.5, figsize=None, ax=None, grid=False, diagonal='hist', marker='.', density_kwds=None, hist_kwds=None, range_padding=0.05, **kwargs)
+
+ 
+Since we're plotting pair-wise relationships for multiple classes, on a grid - 
+
+all the diagonal lines in the grid will be obsolete since it compares the entry with itself. Since this would be dead space, 
+diagonals are replaced with a univariate distribution plot for that class.
+
+The diagonal parameter can be either 'kde' or 'hist' for either Kernel Density Estimation or Histogram plots.
+
+Let's make a Scatter Matrix plot:
+
+import pandas as pd 
+import matplotlib.pyplot as plt
+import scipy
+from pandas.plotting import scatter_matrix
+
+menu = pd.read_csv('indian_food.csv')
+
+scatter_matrix(menu,diagonal='kde')
+
+plt.show()
+```
 ### DSP
 
 https://greenteapress.com/thinkdsp/html/index.html
