@@ -1,3 +1,12 @@
+## Books
+
+https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook/dp/B07Y5WSCV2
+
+
+https://www.amazon.com/Machine-Learning-Time-Forecasting-Python-ebook/dp/B08PQ6ZV71
+
+
+
 https://mlcourse.ai/articles/topic9-part1-time-series/
 
 https://towardsdatascience.com/breakthroughs-in-time-series-forecasting-at-neurips-2020-1dc1b9b6d99d
@@ -13,6 +22,10 @@ https://subscription.packtpub.com/video/data/9781838640590
 https://www.coursera.org/learn/practical-time-series-analysis
 
 https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction
+
+## Tensorflow
+
+https://www.tensorflow.org/tutorials/structured_data/time_series
 
 ## Udemy
 
@@ -40,6 +53,11 @@ https://machinelearningmastery.com/basic-feature-engineering-time-series-data-py
  
 https://youtu.be/_fwhJvPW32g Time series Cross Validation
 
+
+### A unified machine learning approach to time series forecasting applied to demand at emergency departments
+
+https://arxiv.org/abs/2007.06566
+
 ### Features based on time:
 https://www.kaggle.com/kashnitsky/correct-time-aware-cross-validation-scheme
 ```
@@ -63,6 +81,7 @@ https://mljar.com/blog/
 
 
 ### PyTorch-forecasting
+
 pip install pytorch-forecasting
 
 https://pytorch-forecasting.readthedocs.io/en/latest/
@@ -163,10 +182,11 @@ xgboost                            1.31
 pip list | grep xgboost
 xgboost            1.2.0
 ```
-https://medium.com/@qs2178/time-series-forecasting-with-stacked-machine-learning-models-7250abdece0f
+https://medium.com/@qs2178/time-series-forecasting-with-stacked-machine-learning-models-7250abdece0f  Stacked model
 
 https://github.com/atriptoparadise/Time-Series-with-machine-learning/blob/master/Time%20Series%20Forecasting%20with%20Stacked%20Machine%20Learning%20Models_DEMO.ipynb
 
+https://github.com/leepingtay/time_series_forecasting_energy/blob/master/Energy_Time_Series_Forecast_XGBoost.ipynb
 
 ### Links
 
