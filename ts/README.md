@@ -2,10 +2,15 @@
 
 https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook/dp/B07Y5WSCV2
 
-
 https://www.amazon.com/Machine-Learning-Time-Forecasting-Python-ebook/dp/B08PQ6ZV71
 
+https://www.amazon.com/Hands-Time-Analysis-Python-Techniques-ebook/dp/B08GLG46PQ/
 
+# Important articles:
+
+https://towardsdatascience.com/how-not-to-use-machine-learning-for-time-series-forecasting-avoiding-the-pitfalls-19f9d7adf424
+
+https://www.linkedin.com/pulse/how-use-machine-learning-time-series-forecasting-vegard-flovik-phd-1f/
 
 https://mlcourse.ai/articles/topic9-part1-time-series/
 
