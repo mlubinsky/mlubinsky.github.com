@@ -12,6 +12,8 @@ https://subscription.packtpub.com/video/data/9781838640590
 
 https://www.coursera.org/learn/practical-time-series-analysis
 
+https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction
+
 ## Udemy
 
 https://www.udemy.com/course/python-for-time-series-analysis-and-forecasting-arima/learn/lecture/12717065#overview
