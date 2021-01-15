@@ -156,11 +156,11 @@ print("jupterlab==%s" % jupyterlab.__version__)
 print("pandas==%s" % pd.__version__)
 print("numpy==%s" % np.__version__)
 ```
-Check duplicates in DataFrame
+### Check duplicates in DataFrame
 ```
 assert len(df[df.index.duplicated()]) == 0, "Dataframe has duplicates")
 ```
-Set defalut plot size:
+### Set defalut plot size:
 ```
 import matplotlib.pyplot as plt
 import matplotlib as mpl
@@ -176,6 +176,9 @@ plt.plot(x, y)
 
 mpl.__version__
 ```
+### Remove outliers
+
+df = df[df['item_price']<100000]
  
 
 ### Merge  dataframes in Pandas
