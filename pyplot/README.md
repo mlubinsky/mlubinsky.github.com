@@ -9,6 +9,9 @@ https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html#cookbook-p
 
 https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
 
+
+https://www.shanelynn.ie/bar-plots-in-python-using-pandas-dataframes/
+
 https://queirozf.com/entries/pandas-dataframe-plot-examples-with-matplotlib-pyplot
 
  
