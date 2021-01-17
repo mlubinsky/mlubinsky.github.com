@@ -3,6 +3,12 @@
 
 https://pythonplot.com/
 
+
+## Pandas plotting 
+https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html#cookbook-plotting
+
+https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
+
 ## Heatmaps
 
 https://blog.algorexhealth.com/2017/09/10-heatmaps-10-python-libraries/
