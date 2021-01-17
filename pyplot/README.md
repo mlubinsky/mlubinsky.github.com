@@ -9,6 +9,24 @@ https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html#cookbook-p
 
 https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
 
+https://queirozf.com/entries/pandas-dataframe-plot-examples-with-matplotlib-pyplot
+
+ 
+Line plot, multiple columns:
+Just reuse the Axes object.
+```
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# gca stands for 'get current axis'
+ax = plt.gca()
+
+df.plot(kind='line',x='name',y='num_children',ax=ax)
+df.plot(kind='line',x='name',y='num_pets', color='red', ax=ax)
+
+plt.show()
+```
+
 ## Heatmaps
 
 https://blog.algorexhealth.com/2017/09/10-heatmaps-10-python-libraries/
