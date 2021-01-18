@@ -1,13 +1,16 @@
 
-## Python plotting
+## Python plotting code examples
 
 https://pythonplot.com/
+
+https://python-graph-gallery.com/
 
 ## Seaborn
 
 http://seaborn.pydata.org/examples/index.html
 
 ## Pandas plotting 
+
 https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html#cookbook-plotting
 
 https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
