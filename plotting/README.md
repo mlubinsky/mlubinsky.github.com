@@ -61,7 +61,7 @@ https://python-graph-gallery.com/ Pandash, Seaborn, Matplotlib examples!
 
 https://www.practicaldatascience.org/html/plotting_part2.html
 
-https://hvplot.holoviz.org/ hvplot !!!
+
 
 http://holoviews.org/
 
@@ -87,16 +87,6 @@ https://datavizcatalogue.com/
 http://datavizproject.com/
 
 
-### Seaborn Matplotlib
-<https://view.datalore.jetbrains.com/notebook/v8mLoENq8XTfmStTCLNMV6> seaborn
-
-<https://soliddata.io/index.php/2020/03/31/how-to-do-data-visualization-with-python/> seaborn
-
-
-
-<https://mlwhiz.com/blog/2019/04/19/awesome_seaborn_visuals/> .  seaborn
-
-https://medium.com/@kbrook10/day-4-data-visualization-how-to-use-seaborn-for-heatmaps-bf8070e3846e Heatmap
 
 ## Matplotlib
 
@@ -136,8 +126,6 @@ https://towardsdatascience.com/data-visualization-with-bokeh-in-python-part-one-
 
 <https://github.com/mcastorina/graph-cli> .  plottting from CSV
 
-
-
 ### Lag plot , Autocorrelated plot
 
 https://www.kaggle.com/residentmario/time-series-plotting-optional
@@ -175,96 +163,8 @@ https://www.kaggle.com/residentmario/grammar-of-graphics-with-plotnine-optional
 
 https://github.com/has2k1/plotnine-examples/blob/master/plotnine_examples/examples/facet_grid.ipynb
 
-what is hstack?
-```
- import numpy as np
- x=np.array((3,5,7))
- y=np.array((30,50,70))
- np.hstack((x,y))
- array([ 3,  5,  7, 30, 50, 70])
- xx=np.array([[3],[5],[7]])
->>> xx
-array([[3],
-       [5],
-       [7]])
-yy=np.array([[30],[50],[70]])
->>> np.hstack((xx,yy))
-array([[ 3, 30],
-       [ 5, 50],
-       [ 7, 70]])
-
-```
-Plotnine works best with tidy data, i.e each variable is a column and each observation a row.
-https://stackoverflow.com/questions/62900745/how-to-add-legend-in-ggplot-plotnine-for-multiple-curves
-```
-from plotnine import *
-import numpy as np
-import pandas as pd
-
-str_metric = 'metric'
-metric = np.array([0.127, 0.1715, 0.19166667, 0.21583333, 0.24866667, 0.24216667, 0.24433333,
-                   0.255, 0.291, 0.30966667, 0.32033333, 0.2415, 0.33833333, 0.30583333, 0.34433333])
-
-metric2 = metric * 2
-
-iterations2 = [i for i in range(len(metric))]
-
-# tidy data
-df = pd.DataFrame({
-    'iterations': np.hstack([iterations2, iterations2]),
-    'value': np.hstack([metric, metric2]),
-    'type': np.repeat(['metric', 'metric2'], len(iterations2))   
-})
-
-p = (ggplot(df, 
-     aes(x='iterations', y='value', color='type'))
-     + geom_smooth(method='lm', span=0.10, se=True, level=0.80)
-     # Then you can change the colour using a scale
-    )
-```    
 
 
-
-### facet grid and other examples:
- 
-https://github.com/has2k1/plotnine-examples/tree/master/plotnine_examples 
-
-Facet a discrete variable into rows: 
-```
-facet_grid('drv ~ .')
-```
-Facet a discrete variable into columns:
-```
-facet_grid('. ~ cyl')
-```
-
-Facet two discrete variables into rows and columns:
-```
-facet_grid('drv ~ cyl')
-```
-
-You can choose if the scale of x- and y-axes are fixed or variable by using the scales argument within the facet_grid() command:
-```
-(
-    ggplot(mpg, aes(x='displ', y='hwy')) 
-    + geom_point()
-    + facet_grid('drv ~ .', scales = 'free')
-    + labs(x='displacement', y='horsepower')
-)
-```
-
-2-dimentional grid
-```
-facet_grid('drv + transmission ~ .')
-```
-
-
-### Pywedge
-https://towardsdatascience.com/pywedge-a-complete-package-for-eda-data-preprocessing-and-modelling-32171702a1e0
-
-https://pypi.org/project/pywedge/
-
-<https://github.com/JetBrains/lets-plot/blob/master/README_PYTHON.md> as ggplot2
 
 
 
