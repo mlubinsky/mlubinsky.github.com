@@ -7,19 +7,7 @@
 
 https://habr.com/ru/company/skillfactory/blog/526076/
 
-### Plotline
 
-<http://haifengl.github.io/vegalite.html>
-
-<https://pythonplot.com/>
-
-<http://ggplot.yhathq.com/>
-
-<https://leanpub.com/plotnine-guide> . book
-
-<https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129>
-
-<https://datapane.com/gallery/>
 
 ### Plotly
 <https://habr.com/ru/company/skillfactory/blog/506974/>
