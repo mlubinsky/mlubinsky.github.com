@@ -53,12 +53,9 @@ https://plotnine.readthedocs.io/en/stable/generated/plotnine.geoms.geom_tile.htm
 
 https://plotnine.readthedocs.io/en/stable/generated/plotnine.geoms.geom_bin2d.html
 
-## Plotnine
+### Plotnine
 
 https://dputhier.github.io/jgb53d-bd-prog_github/practicals/intro_ggplot/intro_ggplot.html
-
-
-### Plotline
 
 <http://haifengl.github.io/vegalite.html>
 
