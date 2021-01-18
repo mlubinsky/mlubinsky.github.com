@@ -56,3 +56,18 @@ https://plotnine.readthedocs.io/en/stable/generated/plotnine.geoms.geom_bin2d.ht
 ## Plotnine
 
 https://dputhier.github.io/jgb53d-bd-prog_github/practicals/intro_ggplot/intro_ggplot.html
+
+
+### Plotline
+
+<http://haifengl.github.io/vegalite.html>
+
+<https://pythonplot.com/>
+
+<http://ggplot.yhathq.com/>
+
+<https://leanpub.com/plotnine-guide> . book
+
+<https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129>
+
+<https://datapane.com/gallery/>
