@@ -5,6 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from plotnine import *
 
 import xgboost as xgb  # conda install py-xgboost-cpu
 from xgboost import plot_importance, plot_tree
@@ -18,6 +19,29 @@ def query(sql):
   datastore.commit()
   return d
 
+#----------------------------------
+def sql_traffic_hourly_per_day_of_week(  start, end, table=None):
+#-----------------------------------  
+    SQL = f"""
+    SELECT 
+      CONCAT( 
+            DAYOFWEEK(FROM_UNIXTIME(timebin, '%%Y-%%m-%%d')), 
+            '-',
+            DAYNAME(FROM_UNIXTIME(timebin, '%%Y-%%m-%%d')) 
+      )      
+            
+      as dayname,
+      FROM_UNIXTIME(timebin, '%%H') as hour,
+      SUM(bytes) / (1024.0 * 1024.0) as MB 
+    FROM jangle_traffic_total
+    WHERE
+         timebin >=  UNIX_TIMESTAMP('{start}') and
+         timebin  <  UNIX_TIMESTAMP('{end}')
+    GROUP BY dayname, hour
+    ORDER BY dayname, hour
+    """
+    #ORDER BY  DAYOFWEEK(FROM_UNIXTIME(timebin, '%%Y-%%m-%%d'))
+    return SQL
 #----------------------------------
 def sql_top_device_count(  start, end, table):
 #-----------------------------------  
@@ -195,6 +219,65 @@ def show_top_device_count(start, end):
       header="Top 10 companies by number of distinct devices. Table " + table + ".  " + start + "   " + end
       df.plot(kind="bar", title=header)
       plt.show() 
+
+#--------------------------------------
+def show_traffic_hourly_by_day_of_week(start, end):
+#--------------------------------------
+   for table in ['jangle_traffic_total']: #, 'radius_traffic']:
+      #sql=sql_top_traffic(start, end, table)
+      sql=sql_traffic_hourly_per_day_of_week(start, end, table)
+      print(sql)
+      df=query(sql)
+      
+      print(df)
+      print(df.describe())
+      print(df.columns)
+      print(df.dtypes)
+      #df.set_index('hour', inplace=True)
+
+      header="Hourly traffic (MB) by day of week. Table: " + table + ". From " + start + " till " + end
+      #df.plot(x="hour",y="MB", title=header)
+      #plt.show()
+
+      #fig = plt.figure()
+      #ax = fig.add_subplot(111)
+      #ax.plot(df['LimMag1.3'], df['ExpTime1.3'], label="1.3")
+      #ax.plot(df['LimMag2.0'], df['ExpTime2.0'], label="2.0")
+      #ax.plot(df['LimMag2.5'], df['ExpTime2.5'], label="2.5")
+      df.pivot(index='hour', columns='dayname', values="MB").plot(title=header)
+      plt.show()
+      return
+
+      print("faced grip")
+      g = (
+        ggplot(df,
+         aes(x="hour", y="MB") #, color="company")
+        )
+        + geom_point()
+        + facet_grid('~dayname' )
+        + labs(title=header + '  (facet_grid)')
+      )
+      print(g)
+      print("faced wrap")
+      g = (
+        ggplot(df,
+         aes(x="hour", y="MB") #, color="company")
+        )
+        + geom_point()
+        + facet_wrap('~dayname' )
+        + labs(title=header + '(facet_wrap)')
+      )
+      print(g)
+
+      #df.set_index('dayname', inplace=True)
+
+      #df.plot.barh(title=header, stacked=True)
+
+
+      #print("2nd attempt")
+      #ax=df.plot.bar(rot=0, subplots=True, stacked=True)
+      #plt.show()
+
 #--------------------------------------
 def show_top_traffic(start, end):
 #--------------------------------------
@@ -265,10 +348,102 @@ def show_device_count(start, end, companies=None):
      header="Number of devices. Table " + table + ".  " + start + "   " + end
      df2.plot(title=header, style=".")
      plt.show() 
+
 #-------------------------------------------
-def show_traffic(start, end, companies=None):
+def show_traffic_protocol(start, end, companies=None, direction=None):
 #-------------------------------------------
-   for table in ['jangle_traffic', 'radius_traffic']:
+   #for table in ['jangle_traffic_total', 'radius_traffic_total']:
+   for table in ['jangle_traffic_total']:  
+     sql= sql_traffic_protocol(start, end, table, companies)
+     print(sql)
+     df=query(sql)
+     print(df)
+     print(df.dtypes)
+     print(df.describe())
+
+     #range  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
+     df['date'] = pd.to_datetime(df['date'])
+     print(df.columns)
+
+
+     #print("fill NA with 0")
+     #df=df.fillna(0)
+
+
+     df2=pd.pivot_table(df, values='MB', columns='Protocol' , index=['date'])
+     print("df2.columns=")
+     print(df2.columns)
+
+     #range  = pd.date_range(start=df2["date"].min(), end=df2["date"].max(), freq='H')
+
+     #df2.set_index('date', inplace=True)
+     #d2f=df2.reindex(range)
+
+     print(df2)
+     print(df2.describe())
+     print(df2.info())
+     print(df2.columns)
+     header="Hourly Traffic (MB). Table: "+table+ ". From " + start + "  till " + end
+     if companies:
+        header += " Companies: "+str(companies)
+     #df2.plot(title=header, style=".")
+     #plt.show()
+
+     df2.plot(title=header)
+     plt.show()
+
+#-------------------------------------------
+def show_traffic_total_per_direction(start, end, companies=None):
+#-------------------------------------------
+   #for table in ['jangle_traffic_total', 'radius_traffic_total']:
+   for table in ['jangle_traffic_total']:  
+     sql= sql_traffic_total_per_direction(start, end, table, companies)
+     print(sql)
+     df=query(sql)
+     print(df)
+     print(df.dtypes)
+     print(df.describe())
+
+     #range  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
+     df['date'] = pd.to_datetime(df['date'])
+     print(df.columns)
+
+
+     #print("fill NA with 0")
+     #df=df.fillna(0)
+
+
+     df2=pd.pivot_table(df, values='MB', columns='direction' , index=['date'])
+     print("df2.columns=")
+     print(df2.columns)
+
+     #range  = pd.date_range(start=df2["date"].min(), end=df2["date"].max(), freq='H')
+
+     #df2.set_index('date', inplace=True)
+     #d2f=df2.reindex(range)
+
+     print(df2)
+     print(df2.describe())
+     print(df2.info())
+     print(df2.columns)
+     header="Hourly Traffic (MB). Table: "+table+ ". From " + start + "  till " + end
+     if companies:
+       if len(companies) == 1:
+           header += " Company: "+str(companies[0])
+       else:
+           header += " Companies: "+str(companies)
+     #df2.plot(title=header, style=".")
+     #plt.show()
+
+     df2.plot(title=header)
+     plt.show()
+
+
+#-------------------------------------------
+def show_traffic_total(start, end, companies=None):
+#-------------------------------------------
+   #for table in ['jangle_traffic_total', 'radius_traffic_total']:
+   for table in ['jangle_traffic_total']:  
      sql= sql_traffic_total(start, end, table, companies)
      print(sql)
      df=query(sql)
@@ -287,24 +462,28 @@ def show_traffic(start, end, companies=None):
 
      df2=pd.pivot_table(df, values='MB', columns='company' , index=['date'])
      print("df2.columns=")
- 
      print(df2.columns)
- 
+
      #range  = pd.date_range(start=df2["date"].min(), end=df2["date"].max(), freq='H')
-  
+
      #df2.set_index('date', inplace=True)
      #d2f=df2.reindex(range)
 
      print(df2)
      print(df2.describe())
      print(df2.info())
-     print(df2.columns) 
+     print(df2.columns)
+     header="Hourly Traffic (MB). Table: "+table+ ". From " + start + "  till " + end
+     if companies:
+        header += " Companies: "+str(companies)
+     #df2.plot(title=header, style=".")
+     #plt.show()
 
-     df2.plot(title="Traffic(MB). Table: "+table+ ".  " + start + "   " + end, style=".")
-     plt.show()      
+     df2.plot(title=header)
+     plt.show()
 #----------------------------------
 def sql_jangle_traffic_per_device(company, start, end, direction=None): # granularity='hour'):
-#-----------------------------------  
+#-----------------------------------
 
   timescale= '%%Y-%%m-%%d %%H'
   if not direction:
@@ -329,8 +508,9 @@ def sql_jangle_traffic_per_device(company, start, end, direction=None): # granul
 
   return SQL
 
+
 #----------------------------------
-def sql_traffic_total(start, end, table, companies, direction=None): # granularity='hour'):
+def sql_traffic_protocol(start, end, table, companies, direction=None): # granularity='hour'):
 #-----------------------------------  
   #COMPANY_LIST=(3659,3116, 3666)
   timescale= '%%Y-%%m-%%d %%H'
@@ -338,10 +518,82 @@ def sql_traffic_total(start, end, table, companies, direction=None): # granulari
   #       timescale= '%%Y-%%m-%%d'
 
   #print(timescale)
+
+  if companies and len(companies) == 1:
+     companies="("+ str(companies[0]) +")"
+
   if not direction:
-    filter="1=1"
+    direction_filter="1=1"
   else:
-    filter="direction="+str(direction)
+    direction_filter="direction="+str(direction)
+
+  SQL=f"""
+   SELECT
+   FROM_UNIXTIME(timebin, '{timescale}') as date,
+   company,
+   CASE
+       WHEN protocol=1 THEN 'ICMP'
+       WHEN protocol=6 THEN 'TCP'
+       WHEN protocol=17 THEN 'UDP'
+       WHEN protocol=112 THEN 'VRRP'
+       ELSE 'Others'
+    END as Protocol,  
+   SUM(bytes) * 1.0 / (1024.0 * 1024.0)  as MB
+   FROM {table}
+   WHERE
+   timebin >=  UNIX_TIMESTAMP('{start}') and
+   timebin  <  UNIX_TIMESTAMP('{end}') and
+   company IN  {companies}
+   and {direction_filter}
+   GROUP BY date, company, Protocol
+   ORDER BY date
+  """
+
+  return SQL
+
+
+#----------------------------------
+def sql_traffic_total_per_direction(start, end, table, companies): # granularity='hour'):
+#-----------------------------------  
+  #COMPANY_LIST=(3659,3116, 3666)
+  timescale= '%%Y-%%m-%%d %%H'
+  #else: # day
+  #       timescale= '%%Y-%%m-%%d'
+
+  #print(timescale)
+
+  if companies and len(companies) == 1:
+     companies="("+ str(companies[0]) +")"
+
+  SQL=f"""
+   SELECT
+   FROM_UNIXTIME(timebin, '{timescale}') as date,
+   company, 
+   direction,
+   SUM(bytes) * 1.0 / (1024.0 * 1024.0)  as MB
+   FROM {table}
+   WHERE
+   timebin >=  UNIX_TIMESTAMP('{start}') and
+   timebin  <  UNIX_TIMESTAMP('{end}') and
+   company IN  {companies}
+   GROUP BY date, company, direction
+   ORDER BY date
+  """
+
+  return SQL
+
+#----------------------------------
+def sql_traffic_total(start, end, table, companies ): # granularity='hour'):
+#-----------------------------------  
+  #COMPANY_LIST=(3659,3116, 3666)
+  timescale= '%%Y-%%m-%%d %%H'
+  #else: # day
+  #       timescale= '%%Y-%%m-%%d'
+
+  #print(timescale)
+
+  if companies and len(companies) == 1:
+     companies="("+ str(companies[0]) +")"
 
   SQL=f"""
    SELECT
@@ -353,7 +605,6 @@ def sql_traffic_total(start, end, table, companies, direction=None): # granulari
    timebin >=  UNIX_TIMESTAMP('{start}') and
    timebin  <  UNIX_TIMESTAMP('{end}') and
    company IN  {companies}
-   and {filter}
    GROUP BY date, company
    ORDER BY date
   """
@@ -382,20 +633,20 @@ def create_features(df, label=None, isTrain=None):
 
 
     print("Adding lag")
-    df["Lag_1"]=df["MB"].shift(1)
-    df["Lag_2"]=df["MB"].shift(2)
-    df["Lag_3"]=df["MB"].shift(3)
-    df["Lag_4"]=df["MB"].shift(4)
+    if isTrain:
+      df["Lag_1"]=df["MB"].shift(1)
+      df["Lag_2"]=df["MB"].shift(2)
+      df["Lag_3"]=df["MB"].shift(3)
+      df["Lag_4"]=df["MB"].shift(4)
 
-     #remove first 4 rows
-    print("before len(df)=", len(df) ) 
-    #df=df[4:].copy()
-    #df['Lag_1'] = df['column'].fillna(value)
-    print("after len(df)=", len(df) )
-    print(df.head(5))
+      #remove first 4 rows
+      print("before len(df)=", len(df) ) 
+      #df=df[4:].copy()
+      #df['Lag_1'] = df['column'].fillna(value)
+      print("after len(df)=", len(df) )
+      print(df.head(5))
 
-
-    X = df[[
+      X = df[[
             'hour',
             'dayofweek',
             'daysfromstart',
@@ -408,6 +659,22 @@ def create_features(df, label=None, isTrain=None):
             'Lag_3',
             'Lag_4'
           ]]
+    else: # train:
+      X = df[[
+            'hour',
+            'dayofweek',
+            'daysfromstart',
+            'morning',
+            'middleday',
+            'evening',
+            'night'
+            #'Lag_1',
+            #'Lag_2',
+            #'Lag_3',
+            #'Lag_4'
+      ]]
+
+
     if label:
         y = df[label]
 
@@ -493,8 +760,9 @@ def predict_xgboost(df, comment):
 
      #reg = xgb.XGBRegressor(n_estimators=1000)
      reg = xgb.XGBRegressor(
-       n_estimators = 1600 , 
-       random_state = 0 , 
+       n_estimators = 1600 ,
+       random_state = 0 ,
+       # objective='reg:squarederror',  # 'reg:linear'
        max_depth = 15)
 
      #reg = XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
@@ -507,11 +775,12 @@ def predict_xgboost(df, comment):
 
 
      reg.fit(X_train, y_train,
-        eval_set=[(X_train, y_train), (X_test, y_test)],
-        early_stopping_rounds=50,
+        #eval_set=[(X_train, y_train), (X_test, y_test)],
+        #early_stopping_rounds=50,
+        
         verbose=False)
 
-     # Feature importance   
+     # Feature importance
      plot_importance(reg, height=0.9)
      plt.show()
 
@@ -591,20 +860,28 @@ def main():
   n_days=get_duration()
   end = (datetime.strptime(start, '%Y-%m-%d') + timedelta(days=n_days)).strftime('%Y-%m-%d')
 
-
-  show_top_traffic(start, end)
-  exit(0)
+  #show_traffic_hourly_by_day_of_week(start, end)
+  #exit(0)
+  #show_top_traffic(start, end)
+  #exit(0)
   #show_top_device_count(start, end)
   #exit(0)
 
   COMPANY_LIST=(3659,3116, 3666)
-  COMPANY_LIST=(3659,3116)
-  #COMPANY_LIST=(3659)
-  #show_traffic(start, end, COMPANY_LIST)
+  #COMPANY_LIST=(3659,3116)
+  #COMPANY_LIST=(3659,)
+  #show_traffic_total(start, end, COMPANY_LIST)
+  for company in COMPANY_LIST:
+    single_company=list()
+    single_company.append(company)
+    #show_traffic_total(start, end, single_company)
+    show_traffic_total_per_direction(start, end, single_company)
+    show_traffic_protocol(start, end, single_company)
 
+  exit(0)
 
   #show_device_count(start, end)
-  show_device_count(start, end, COMPANY_LIST)
+  #show_device_count(start, end, COMPANY_LIST)
   # https://stackoverflow.com/questions/22483588/how-can-i-plot-separate-pandas-dataframes-as-subplots
   # https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
   # TO DO: lag plot, autocorrelation plot
@@ -638,12 +915,12 @@ def main():
      print( "df[MB].count()=")
      print(df["MB"].count())
 
-     head="Company=" + str(company) + ". Traffic per device with NA. " + start + ' - ' + end + "  direction="+str(direction)
+     head="Company=" + str(company) + ". Hourly Traffic (MB) per device. " + start + ' - ' + end + "  direction="+str(direction)
      df.plot(title=head)
      plt.show()
-
-     #continue
-
+     ######################################
+     continue
+     ######################################
 
      print("fill NA with 0")
      df=df.fillna(0)
@@ -656,7 +933,7 @@ def main():
      print(df.describe())
 
  
-     head="Company=" + str(company) + ". Traffic per device with filled gaps. " + start + ' - ' + end + "  direction="+str(direction)
+     head="Company=" + str(company) + ". Hourly Traffic (MB) per device with filled gaps. " + start + ' - ' + end + "  direction="+str(direction)
      df.plot(title=head)
      plt.show()
 
