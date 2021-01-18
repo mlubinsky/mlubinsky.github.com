@@ -345,6 +345,10 @@ Freq: H, Name: Val, Length: 73, dtype: int64
 ```
 
 
+### Groupby apply map lambda
+
+https://queirozf.com/entries/pandas-dataframe-groupby-examples
+
 <https://pbpython.com/groupby-agg.html>
 
 I want to create a scatter plot of a column against the index
