@@ -70,4 +70,6 @@ https://dputhier.github.io/jgb53d-bd-prog_github/practicals/intro_ggplot/intro_g
 
 <https://towardsdatascience.com/how-to-use-ggplot2-in-python-74ab8adec129>
 
-<https://datapane.com/gallery/>
+
+Datapane is a Python framework for building beautiful data science documents for your company, clients, or community.
+<https://datapane.com>
