@@ -3,6 +3,9 @@
 
 https://pythonplot.com/
 
+## Seaborn
+
+https://queirozf.com/entries/seaborn-by-example-data-visualization-and-plotting-using-python
 
 ## Pandas plotting 
 https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html#cookbook-plotting
