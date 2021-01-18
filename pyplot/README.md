@@ -33,11 +33,13 @@ df.plot(kind='line',x='name',y='num_pets', color='red', ax=ax)
 plt.show()
 ```
 
-## Pivot and transpose
+## Pivot, pivot_table() and transpose()
 
 https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.pivot.html
 
 df.pivot(index='hour', columns='dayname', values="MB").plot(title=header)
+
+df2=pd.pivot_table(df, index=['date'], columns='company' values='MB'  )
 
 ## Heatmaps
 
