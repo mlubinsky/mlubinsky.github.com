@@ -10,6 +10,8 @@ or forecast a signal for some point and test if this point value varies from the
 
 https://arxiv.org/abs/2009.13807
 
+https://towardsdatascience.com/anomaly-detection-with-extreme-value-analysis-b11ad19b601f
+
 ### SQL for anomaly detection
 
 https://hakibenita.com/sql-anomaly-detection 
