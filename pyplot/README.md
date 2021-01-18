@@ -30,6 +30,12 @@ df.plot(kind='line',x='name',y='num_pets', color='red', ax=ax)
 plt.show()
 ```
 
+## Pivot and transpose
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.pivot.html
+
+df.pivot(index='hour', columns='dayname', values="MB").plot(title=header)
+
 ## Heatmaps
 
 https://blog.algorexhealth.com/2017/09/10-heatmaps-10-python-libraries/
