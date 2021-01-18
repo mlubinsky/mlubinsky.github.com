@@ -261,8 +261,13 @@ When you reindex as below, any missing index labels become NaN values
 df.reindex(pd.date_range(start=df.index[0], end=df.index[-1], freq='3H'))
 
 
-Generate sequences of fixed-frequency dates and time spans - 3 record:
-dti = pd.date_range("2018-01-01", periods=3, freq="H")
+### Generate sequences of fixed-frequency dates and time spans
+following generates 3 record:
+```
+dt  = pd.date_range("2018-01-01", periods=3, freq="H")
+```
+
+### Resample
 
 https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.resample.html
 
@@ -289,6 +294,15 @@ df = df.set_index('date').reindex(r).fillna(2.0).rename_axis('date').reset_index
 
 
 #### Create DatetimeIndex
+
+```
+date_from = "2019-01-01"
+date_to = "2019-01-12"
+date_range = pd.date_range(date_from, date_to, freq="D")
+date_range
+```
+
+
 ```
 import pandas as pd
 
