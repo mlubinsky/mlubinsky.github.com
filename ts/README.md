@@ -16,6 +16,8 @@ https://mlcourse.ai/articles/topic9-part1-time-series/
 
 https://towardsdatascience.com/breakthroughs-in-time-series-forecasting-at-neurips-2020-1dc1b9b6d99d
 
+https://arxiv.org/abs/2007.06566 We find that linear models often outperform machine learning methods and that the quality of our predictions for any of the forecasting horizons of 1, 3 or 7 days 
+
 ## packtpub
 
 https://subscription.packtpub.com/book/big-data-and-business-intelligence/9781788290227
