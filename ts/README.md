@@ -8,6 +8,8 @@ https://www.amazon.com/Hands-Time-Analysis-Python-Techniques-ebook/dp/B08GLG46PQ
 
 # Important articles:
 
+https://habr.com/ru/company/ods/blog/327242/
+
 https://towardsdatascience.com/how-not-to-use-machine-learning-for-time-series-forecasting-avoiding-the-pitfalls-19f9d7adf424
 
 https://www.linkedin.com/pulse/how-use-machine-learning-time-series-forecasting-vegard-flovik-phd-1f/
@@ -61,19 +63,26 @@ https://machinelearningmastery.com/basic-feature-engineering-time-series-data-py
 https://youtu.be/_fwhJvPW32g Time series Cross Validation
 
 
-### A unified machine learning approach to time series forecasting applied to demand at emergency departments
+ 
 
-https://arxiv.org/abs/2007.06566
+### Create Features based on time:
 
-### Features based on time:
 https://www.kaggle.com/kashnitsky/correct-time-aware-cross-validation-scheme
 ```
+
+data.index = data.index.to_datetime()
+data["hour"] = data.index.hour
+data["weekday"] = data.index.weekday
+data['is_weekend'] = data.weekday.isin([5,6])*1
+
 def add_time_features(df, X_sparse):
+
     hour = df['time1'].apply(lambda ts: ts.hour)
     morning = ((hour >= 7) & (hour <= 11)).astype('int')
     day = ((hour >= 12) & (hour <= 18)).astype('int')
     evening = ((hour >= 19) & (hour <= 23)).astype('int')
     night = ((hour >= 0) & (hour <= 6)).astype('int')
+    
     X = hstack([X_sparse, morning.values.reshape(-1, 1), 
                 day.values.reshape(-1, 1), evening.values.reshape(-1, 1), 
                 night.values.reshape(-1, 1)])
