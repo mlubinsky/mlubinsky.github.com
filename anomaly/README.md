@@ -58,6 +58,92 @@ https://habr.com/ru/post/530574/ .  Deep Anomaly Detection
 <https://www.reddit.com/r/MachineLearning/comments/ko2ij5/p_looking_for_resources_on_anomaly_detection/>
 
 
+### Remove outliers
+
+https://datascience.stackexchange.com/questions/73274/remove-outliers-from-dataframe-using-pandas-in-python
+
+```
+def IQR(data):
+    q1 = data['Gbps'].quantile(0.25)
+    q3 = data['Gbps'].quantile(0.75)
+    iqr = q3 - q1
+    fence_low = q1 - 1.5 * iqr
+    fence_high = q3 + 1.5 * iqr
+    cleaned_data = data.loc[(data['Gbps'] > fence_low) & (data['Gbps'] < fence_high)]
+    return cleaned_data
+
+data = {
+    'time': ['2018-11-20 00:00:00', 
+             '2018-11-20 01:00:00', 
+	     '2018-11-20 02:00:00', 
+	     '2018-11-20 00:00:00', 
+	     '2018-11-20 01:00:00', 
+	     '2018-11-20 02:00:00'],
+    'Gbps': [ 29.8217476333333333, 
+              38.6209872666666667, 
+	      0.01, 
+	      29.8217476333333333, 
+	      38.6209872666666667, 
+	      0.0]
+}
+
+df1 = pd.DataFrame(data, columns = ['time', 'Gbps'] 
+cleaned1 = IQR(df1)
+print(cleaned1)
+```
+https://machinelearningmastery.com/model-based-outlier-detection-and-removal-in-python/
+
+https://machinelearningmastery.com/how-to-use-statistics-to-identify-outliers-in-data/
+
+https://stackoverflow.com/questions/23199796/detect-and-exclude-outliers-in-pandas-data-frame
+
+```
+df = pd.DataFrame(np.random.randn(100, 3))
+
+from scipy import stats
+df[(np.abs(stats.zscore(df)) < 3).all(axis=1)]
+```
+
+https://towardsdatascience.com/ways-to-detect-and-remove-the-outliers-404d16608dba
+```
+box plot is a method for graphically depicting groups of numerical data through their quartiles.
+Box plots may also have lines extending vertically from the boxes (whiskers) 
+indicating variability outside the upper and lower quartiles, 
+hence the terms box-and-whisker plot and box-and-whisker diagram. 
+Outliers may be plotted as individual points.
+
+The interquartile range (IQR), also called the midspread or middle 50%, or technically H-spread, is a measure of statistical dispersion, being equal to the difference between 75th and 25th percentiles, or between upper and lower quartiles, IQR = Q3 − Q1.
+In other words, the IQR is the first quartile subtracted from the third quartile; these quartiles can be clearly seen on a box plot on the data.
+It is a measure of the dispersion similar to standard deviation or variance, but is much more robust against outliers.
+IQR is somewhat similar to Z-score in terms of finding the distribution of data and then keeping some threshold to identify the outlier.
+
+```
+
+https://nextjournal.com/schmudde/how-to-remove-outliers-in-data
+```
+y = df['rando']
+removed_outliers = y.between(y.quantile(.05), y.quantile(.95))
+
+print(str(y[removed_outliers].size) + "/" + str(size) + " data points remain.") 
+
+y[removed_outliers].plot().get_figure()
+```
+
+```
+df = df[df['item_price']<100000]
+df[(np.abs(stats.zscore(df[0])) < 3)]
+```
+Another example:
+```
+q = df["col"].quantile(0.99)
+df[df["col"] < q]
+q_low = df["col"].quantile(0.01)
+q_hi  = df["col"].quantile(0.99)
+
+df_filtered = df[(df["col"] < q_hi) & (df["col"] > q_low)]
+```
+
+
 ## Isolation Forest
 
 <https://lambda.grofers.com/anomaly-detection-using-isolation-forest-80b3a3d1a9d8>
