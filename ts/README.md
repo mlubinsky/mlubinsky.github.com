@@ -6,11 +6,15 @@ https://www.amazon.com/Machine-Learning-Time-Forecasting-Python-ebook/dp/B08PQ6Z
 
 https://www.amazon.com/Hands-Time-Analysis-Python-Techniques-ebook/dp/B08GLG46PQ/
 
-# Important articles:
+## Machine Learning mastery
 
 https://machinelearningmastery.com/taxonomy-of-time-series-forecasting-problems/
 
 https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/
+
+https://machinelearningmastery.com/start-here/#deep_learning_time_series
+
+# Important articles:
 
 https://habr.com/ru/company/ods/blog/327242/
 
