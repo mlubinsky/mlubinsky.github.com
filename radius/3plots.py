@@ -476,11 +476,19 @@ def show_traffic_total(start, end, companies=None):
      header="Hourly Traffic (MB). Table: "+table+ ". From " + start + "  till " + end
      if companies:
         header += " Companies: "+str(companies)
-     #df2.plot(title=header, style=".")
+     #df2.plot(title=header, style=".")  -- useful too see gaps
      #plt.show()
 
      df2.plot(title=header)
      plt.show()
+     
+     y_max=input("Set Y-max to re-scale :")
+     if not y_max:
+        return
+     else:
+       y_max = int(y_max)
+       df2.plot(title=header, ylim=(0,y_max))
+       plt.show()
 #----------------------------------
 def sql_jangle_traffic_per_device(company, start, end, direction=None): # granularity='hour'):
 #-----------------------------------
@@ -612,7 +620,7 @@ def sql_traffic_total(start, end, table, companies ): # granularity='hour'):
   return SQL
 
 #-----------------------------------
-def create_features(df, label=None, isTrain=None):
+def create_features(df, label=None, useLags=False):
 #-----------------------------------
 #  https://pandas-docs.github.io/pandas-docs-travis/reference/api/pandas.DatetimeIndex.html
     df['hour'] = df.index.hour
@@ -631,9 +639,9 @@ def create_features(df, label=None, isTrain=None):
 
     print(df['daysfromstart'])
 
-
+    
     print("Adding lag")
-    if isTrain:
+    if useLags:
       df["Lag_1"]=df["MB"].shift(1)
       df["Lag_2"]=df["MB"].shift(2)
       df["Lag_3"]=df["MB"].shift(3)
@@ -654,10 +662,10 @@ def create_features(df, label=None, isTrain=None):
             'middleday',
             'evening',
             'night',
-            'Lag_1',
-            'Lag_2',
-            'Lag_3',
-            'Lag_4'
+           # 'Lag_1',
+           # 'Lag_2',
+           # 'Lag_3',
+           # 'Lag_4'
           ]]
     else: # train:
       X = df[[
@@ -726,10 +734,10 @@ def predict_xgboost(df, comment):
      plt.show()
 
 
-     X_train, y_train = create_features(train, label='MB', isTrain=True)
+     X_train, y_train = create_features(train, label='MB', useLags=False)
      print("len(X_train)=", len(X_train), "len(Y_train)=",len(y_train))
 
-     X_test,  y_test  = create_features(test,  label='MB', isTrain=False)
+     X_test,  y_test  = create_features(test,  label='MB', useLags=False)
      print("len(X_test)=", len(X_test), "len(Y_test)=",len(y_test))
 
      # https://www.kaggle.com/robikscube/time-series-forecasting-with-prophet
@@ -746,10 +754,10 @@ def predict_xgboost(df, comment):
               'middleday',
               'evening',
               'night',
-              'Lag_1',
-              'Lag_2',
-              'Lag_3',
-              'Lag_4'
+              #'Lag_1',
+              #'Lag_2',
+              #'Lag_3',
+              #'Lag_4'
              ],
              y_vars='MB',
              height=5 
@@ -775,9 +783,8 @@ def predict_xgboost(df, comment):
 
 
      reg.fit(X_train, y_train,
-        #eval_set=[(X_train, y_train), (X_test, y_test)],
-        #early_stopping_rounds=50,
-        
+        eval_set=[(X_train, y_train), (X_test, y_test)],
+        early_stopping_rounds=50,
         verbose=False)
 
      # Feature importance
@@ -797,8 +804,6 @@ def predict_xgboost(df, comment):
      print ("Len all=", len(all))
      print (  "Train len=",   len(train), train.index[0], train.index[-1])
      print (  "Test  len=",   len(test),  test.index[0],  test.index[-1])
-
-     
 
      predicted   = all.loc[test.index[0]:test.index[-1]]
      print("Len predicted =", len(predicted ))
@@ -870,15 +875,17 @@ def main():
   COMPANY_LIST=(3659,3116, 3666)
   #COMPANY_LIST=(3659,3116)
   #COMPANY_LIST=(3659,)
-  #show_traffic_total(start, end, COMPANY_LIST)
-  for company in COMPANY_LIST:
-    single_company=list()
-    single_company.append(company)
-    #show_traffic_total(start, end, single_company)
-    show_traffic_total_per_direction(start, end, single_company)
-    show_traffic_protocol(start, end, single_company)
 
-  exit(0)
+  if 0 > 1:
+    show_traffic_total(start, end, COMPANY_LIST)
+    for company in COMPANY_LIST:
+      single_company=list()
+      single_company.append(company)
+      #show_traffic_total(start, end, single_company)
+      show_traffic_total_per_direction(start, end, single_company)
+      show_traffic_protocol(start, end, single_company)
+
+   
 
   #show_device_count(start, end)
   #show_device_count(start, end, COMPANY_LIST)
@@ -893,8 +900,6 @@ def main():
   for company in COMPANY_LIST:
     for direction in [1,2]:
      print(company, direction)
-
-
 
      sql = sql_jangle_traffic_per_device(company, start, end, direction)
      print(sql)
@@ -919,7 +924,7 @@ def main():
      df.plot(title=head)
      plt.show()
      ######################################
-     continue
+     # continue
      ######################################
 
      print("fill NA with 0")
@@ -943,7 +948,7 @@ def main():
      #df.plot(title=head, ylim=(0,200))
      #plt.show()
 
-     comment="XGBoost. Traffic per # of devices. Company "+ str(company) 
+     comment="XGBoost. Hourly Traffic (MB) per # of devices. Company "+ str(company) + " direction="+str(direction)
      predict_xgboost(df, comment) 
 
 if __name__ == "__main__":
