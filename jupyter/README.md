@@ -22,14 +22,46 @@ https://github.com/jvns/pandas-cookbook
 
 https://pandas.pydata.org/docs/getting_started/index.html
 
+https://towardsdatascience.com/pandas-full-tutorial-on-a-single-dataset-4aa43461e1e2
+
+https://nbviewer.jupyter.org/github/changhiskhan/talks/blob/master/pydata2012/pandas_timeseries.ipynb
+
+A Series has one axis, the index. A DataFrame has two axes, the index and the columns.
+
+It’s useful to note here that in all the DataFrame functions that can be applied to either rows or columns,
+an axis of 0 refers to the index, an axis of 1 refers to the columns
+
+<https://realpython.com/python-statistics/>
+
+<https://realpython.com/pandas-python-explore-dataset/>
+
+ Jake Vanderplas . <https://jakevdp.github.io/PythonDataScienceHandbook/>
+ ```
+ df.info() 
+ df.describe()
+ df.types   
+ df.index    
+ df.shape   
+ df.columns 
+ ```
+ 
+ <https://realpython.com/courses/idiomatic-pandas-tricks-features-you-may-not-know/>
+ 
+ 
+<https://towardsdatascience.com/pandas-tips-that-will-save-you-hours-of-head-scratching-31d8572218c9>
 
  
 https://stackoverflow.com/questions/29432629/correlation-matrix-using-pandas
 
 <https://machinelearningmastery.com/calculate-feature-importance-with-python/>
 
+https://spapas.github.io/2016/09/21/pandas-pivot-table-primer/
+
+### bиблиотекa pandas-profiling:
+https://github.com/JosPolfliet/pandas-profiling
+
 https://habr.com/ru/company/ruvds/blog/451478/ 
-bиблиотекa pandas-profiling. 
+ 
 
 Результаты её работы выражаются не в виде неких отдельных показателей,
 а в форме довольно подробного HTML-отчёта, содержащего большую часть тех сведений об анализируемых данных, 
@@ -48,9 +80,8 @@ https://www.kaggle.com/learn/data-visualisation
 
 https://medium.com/dunder-data/selecting-subsets-of-data-in-pandas-6fcd0170be9c
 
-https://spapas.github.io/2016/09/21/pandas-pivot-table-primer/
 
-https://github.com/JosPolfliet/pandas-profiling
+
 
 https://www.dataquest.io/blog/pandas-concatenation-tutorial/
 
@@ -218,9 +249,9 @@ The DataFrame we call join() from will be our left DataFrame. The DataFrame in t
 The on parameter can take one or more (['key1', 'key2' ...]) arguments to define the matching key, while how parameter takes one of the handle arguments (left, right, outer, inner), and it's set to left by default.
 
 Let's try to join df2 to df1:
-
+```
 df_join = df1.join(df2, rsuffix='_right')
-
+```
 #### Filling the gaps - and resample:
 
 ```
@@ -254,46 +285,21 @@ print(df)
 ```
 
 Convert time column to datetime:
+```
 df['Timestamp'] = pd.to_datetime(df['Timestamp'])
 df = df.set_index('Timestamp')
-
+```
 When you reindex as below, any missing index labels become NaN values
-df.reindex(pd.date_range(start=df.index[0], end=df.index[-1], freq='3H'))
 
+```
+df.reindex(pd.date_range(start=df.index[0], end=df.index[-1], freq='3H'))
+```
 
 ### Generate sequences of fixed-frequency dates and time spans
 following generates 3 record:
 ```
 dt  = pd.date_range("2018-01-01", periods=3, freq="H")
 ```
-
-### Resample
-
-https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.resample.html
-
-https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html#cookbook-resample
-resample() is a time-based groupby, followed by a reduction method on each of its groups.
-
-Resampling or converting a time series to a particular frequency
-idx = pd.date_range("2018-01-01", periods=5, freq="H")
-
-rng = pd.date_range("1/1/2012", periods=100, freq="S")
-ts = pd.Series(np.random.randint(0, 500, len(rng)), index=rng)
-ts.resample("5Min").sum()
-
-https://stackoverflow.com/questions/40419060/search-missing-timestamp-and-display-in-python
-
-
-
-Step 1: create the range with fixed: 
-r  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
-
-Step 2: reindex and fill the gaps with any value (2.0 below):
-
-df = df.set_index('date').reindex(r).fillna(2.0).rename_axis('date').reset_index()
-
-
-#### Create DatetimeIndex
 
 ```
 date_from = "2019-01-01"
@@ -302,6 +308,44 @@ date_range = pd.date_range(date_from, date_to, freq="D")
 date_range
 ```
 
+### Resample
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.resample.html
+
+https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html#cookbook-resample
+
+resample() is a time-based groupby, followed by a reduction method on each of its groups.
+
+Resampling or converting a time series to a particular frequency:
+
+```
+idx = pd.date_range("2018-01-01", periods=5, freq="H")
+
+rng = pd.date_range("1/1/2012", periods=100, freq="S")
+ts = pd.Series(np.random.randint(0, 500, len(rng)), index=rng)
+ts.resample("5Min").sum()
+```
+
+Another resampling example:
+
+```
+df.groupby('house').resample('D').mean().head(4)
+```
+
+https://stackoverflow.com/questions/40419060/search-missing-timestamp-and-display-in-python
+
+
+
+Step 1: create the range with fixed: 
+```
+r  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
+```
+Step 2: reindex and fill the gaps with any value (2.0 below):
+```
+df = df.set_index('date').reindex(r).fillna(2.0).rename_axis('date').reset_index()
+```
+
+#### Create DatetimeIndex and resampling example
 
 ```
 import pandas as pd
@@ -365,7 +409,7 @@ https://queirozf.com/entries/pandas-dataframe-groupby-examples
 
 <https://pbpython.com/groupby-agg.html>
 
-I want to create a scatter plot of a column against the index
+### Create a scatter plot of a column against the index
 ```
 import numpy as np
 import pandas as pd
@@ -391,28 +435,6 @@ Similary for series indexed with this index
 import pandas as pd
 pd.infer_freq(ts.index)
 ```
-https://towardsdatascience.com/pandas-full-tutorial-on-a-single-dataset-4aa43461e1e2
-
-https://nbviewer.jupyter.org/github/changhiskhan/talks/blob/master/pydata2012/pandas_timeseries.ipynb
-
-A Series has one axis, the index. A DataFrame has two axes, the index and the columns.
-
-It’s useful to note here that in all the DataFrame functions that can be applied to either rows or columns,
-an axis of 0 refers to the index, an axis of 1 refers to the columns
-
-<https://realpython.com/python-statistics/>
-
-<https://realpython.com/pandas-python-explore-dataset/>
-
- Jake Vanderplas . <https://jakevdp.github.io/PythonDataScienceHandbook/>
- ```
- df.info()    df.types()   df.index    df.dtypes df.shape  df.describe() df.columns() 
- ```
- 
- <https://realpython.com/courses/idiomatic-pandas-tricks-features-you-may-not-know/>
- 
- 
-<https://towardsdatascience.com/pandas-tips-that-will-save-you-hours-of-head-scratching-31d8572218c9>
 
 On a DataFrame, a single argument to .loc will return a Series for the row matching the label.
 
@@ -421,8 +443,6 @@ On a DataFrame, a single argument to .loc will return a Series for the row match
 
 <https://www.listendata.com/2019/07/how-to-filter-pandas-dataframe.html>
 ```
-df.dtypes
-df.index
 
 
 newdf = df[(df.origin == "JFK") & (df.carrier == "B6")]
@@ -441,9 +461,7 @@ https://habr.com/ru/company/ruvds/blog/500428/
 
 <https://habr.com/ru/post/475210/>. Pandas
 
-### Resampling
 
-df.groupby('house').resample('D').mean().head(4)
 
 ### Filling gaps in data
 ```
