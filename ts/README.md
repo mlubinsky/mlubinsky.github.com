@@ -50,6 +50,7 @@ https://www.microprediction.com/blog/popular-timeseries-packages
 
 https://github.com/MaxBenChrist/awesome_time_series_in_python
 
+https://github.com/blue-yonder/tsfresh
 
 How to Build Exponential Smoothing Models Using Python: Simple Exponential Smoothing, Holt, and Holt-Winters
 
@@ -88,7 +89,26 @@ def add_time_features(df, X_sparse):
                 night.values.reshape(-1, 1)])
     return X
  ```   
- 
+
+calculate mean by feature:
+```
+def code_mean(data, cat_feature, real_feature):
+    """
+    Возвращает словарь, где ключами являются уникальные категории признака cat_feature, 
+    а значениями - средние по real_feature
+    """
+    return dict(data.groupby(cat_feature)[real_feature].mean())
+```
+usage:
+```
+   code_mean(data, 'weekday', "y")
+```
+Помимо перечисленных преобразований для увеличения числа признаков используют и множество других метрик, 
+например, максимальное/минимальное значение, наблюдавшееся в скользящем по ряду окне, медианы, число пиков, 
+взвешенные дисперсии и многое другое. Автоматически этим занимается  библиотека библиотека tsfresh.
+
+https://github.com/blue-yonder/tsfresh
+
 ## mljar-supervised
 
 https://github.com/mljar/mljar-supervised
