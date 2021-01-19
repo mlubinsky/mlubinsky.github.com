@@ -209,6 +209,8 @@ mpl.__version__
 ```
 ### Remove outliers
 
+https://machinelearningmastery.com/how-to-use-statistics-to-identify-outliers-in-data/
+
 https://stackoverflow.com/questions/23199796/detect-and-exclude-outliers-in-pandas-data-frame
 
 ```
