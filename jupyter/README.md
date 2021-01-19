@@ -208,6 +208,38 @@ plt.plot(x, y)
 mpl.__version__
 ```
 ### Remove outliers
+
+https://datascience.stackexchange.com/questions/73274/remove-outliers-from-dataframe-using-pandas-in-python
+
+```
+def IQR(data):
+    q1 = data['Gbps'].quantile(0.25)
+    q3 = data['Gbps'].quantile(0.75)
+    iqr = q3 - q1
+    fence_low = q1 - 1.5 * iqr
+    fence_high = q3 + 1.5 * iqr
+    cleaned_data = data.loc[(data['Gbps'] > fence_low) & (data['Gbps'] < fence_high)]
+    return cleaned_data
+
+data = {
+    'time': ['2018-11-20 00:00:00', 
+             '2018-11-20 01:00:00', 
+	     '2018-11-20 02:00:00', 
+	     '2018-11-20 00:00:00', 
+	     '2018-11-20 01:00:00', 
+	     '2018-11-20 02:00:00'],
+    'Gbps': [ 29.8217476333333333, 
+              38.6209872666666667, 
+	      0.01, 
+	      29.8217476333333333, 
+	      38.6209872666666667, 
+	      0.0]
+}
+
+df1 = pd.DataFrame(data, columns = ['time', 'Gbps'] 
+cleaned1 = IQR(df1)
+print(cleaned1)
+```
 https://machinelearningmastery.com/model-based-outlier-detection-and-removal-in-python/
 
 https://machinelearningmastery.com/how-to-use-statistics-to-identify-outliers-in-data/
