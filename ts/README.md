@@ -64,7 +64,13 @@ https://machinelearningmastery.com/basic-feature-engineering-time-series-data-py
 https://youtu.be/_fwhJvPW32g Time series Cross Validation
 
 
+### Resampling
+
+http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.resample.html?highlight=resample#pandas.DataFrame.resample
  
+df = df.resample('W', how='mean')
+df.plot(figsize=(12,6))
+df.hist()
 
 ### Create Features based on time:
 
