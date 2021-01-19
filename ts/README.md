@@ -8,6 +8,8 @@ https://www.amazon.com/Hands-Time-Analysis-Python-Techniques-ebook/dp/B08GLG46PQ
 
 # Important articles:
 
+https://machinelearningmastery.com/taxonomy-of-time-series-forecasting-problems/
+
 https://habr.com/ru/company/ods/blog/327242/
 
 https://towardsdatascience.com/how-not-to-use-machine-learning-for-time-series-forecasting-avoiding-the-pitfalls-19f9d7adf424
