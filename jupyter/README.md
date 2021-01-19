@@ -208,6 +208,7 @@ plt.plot(x, y)
 mpl.__version__
 ```
 ### Remove outliers
+https://machinelearningmastery.com/model-based-outlier-detection-and-removal-in-python/
 
 https://machinelearningmastery.com/how-to-use-statistics-to-identify-outliers-in-data/
 
