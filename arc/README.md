@@ -1,5 +1,7 @@
 Book:  <http://streamingsystems.net/>
 
+<https://habr.com/ru/company/epam_systems/blog/538018/> tools for writing diagrams
+
 https://www.infoq.com/articles/whats-the-next-step-for-data-management/
 
 <https://a16z.com/2020/10/15/the-emerging-architectures-for-modern-data-infrastructure/>
