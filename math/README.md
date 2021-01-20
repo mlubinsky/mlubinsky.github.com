@@ -38,6 +38,7 @@ https://habr.com/ru/company/skillfactory/blog/522634/ Проблема секр�
 
 <https://realnotcomplex.com/>
 
+<https://news.ycombinator.com/item?id=25831428> Good Books
 
 <http://www.mathnet.ru/php/currentissue.phtml?jrnid=mo&option_lang=rus>
 
