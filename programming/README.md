@@ -21,6 +21,9 @@ https://www.biorxiv.org/
 
 https://www.arxiv.org/
 
+
+https://www.samueltaylor.org/articles/index.html
+
 ### CRDT. 
 https://josephg.com/blog/crdts-are-the-future/
 
