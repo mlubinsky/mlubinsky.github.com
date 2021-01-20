@@ -16,6 +16,7 @@ https://stackoverflow.com/questions/61998739/heroku-or-digital-ocean-deployment
 Information Theory, Inference, and Learning Algorithms David  McKay
 https://www.inference.org.uk/itprnn/book.pdf
 
+https://aquadzn.github.io/learn-x-by-doing-y/
 
 https://www.biorxiv.org/
 
