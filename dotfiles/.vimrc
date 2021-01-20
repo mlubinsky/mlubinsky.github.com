@@ -4,6 +4,7 @@ set visualbell
 set t_vb=
 set t_Co=256
 syntax on
+au BufNewFile,BufRead *.hql set filetype=sql
 set background=dark
 set nowrap
 set cursorline
