@@ -39,7 +39,7 @@ an axis of 0 refers to the index, an axis of 1 refers to the columns
  ```
  df.info() 
  df.describe()
- df.types   
+ df.dtypes   
  df.index    
  df.shape   
  df.columns 
