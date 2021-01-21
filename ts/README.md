@@ -123,6 +123,10 @@ usage:
 
 https://github.com/blue-yonder/tsfresh
 
+## shapash
+https://github.com/MAIF/shapash
+
+
 ## mljar-supervised
 
 https://github.com/mljar/mljar-supervised
