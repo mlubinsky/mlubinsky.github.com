@@ -52,7 +52,18 @@ https://www.udemy.com/course/python-for-time-series-analysis-and-forecasting-ari
 
 https://www.youtube.com/watch?v=-r7wB9DJtiU&list=PL3N9eeOlCrP5cK0QRQxeJd6GrQvhAtpBK
 
+
+##  tsfresh and tslearn
+
+### Clustering time series in python:
+
+https://towardsdatascience.com/how-to-apply-hierarchical-clustering-to-time-series-a5fe2a7d8447
+
+https://tslearn.readthedocs.io/en/stable/gen_modules/clustering/tslearn.clustering.TimeSeriesKMeans.html
+
 ### Time series packages in Python
+
+https://tslearn.readthedocs.io/en/stable/index.html
 
 https://www.microprediction.com/blog/popular-timeseries-packages
 
