@@ -454,7 +454,14 @@ On a DataFrame, a single argument to .loc will return a Series for the row match
  .loc attribute  is intended for selection and indexing by label
 .iloc is a   method for use with purely integer based indexing, starting from 0. 
 
+## filter
+
+http://heydenberk.com/blog/posts/demystifying-pandas-numpy-filtering/
+
 <https://www.listendata.com/2019/07/how-to-filter-pandas-dataframe.html>
+
+<https://kanoki.org/2020/01/21/pandas-dataframe-filter-with-multiple-conditions/> filter dataframes
+
 ```
 
 
@@ -542,7 +549,6 @@ https://janakiev.com/blog/jupyter-virtual-envs/
 
 
 
-<https://kanoki.org/2020/01/21/pandas-dataframe-filter-with-multiple-conditions/> filter dataframes
 
 
 ## Data explorarion
@@ -995,7 +1001,7 @@ https://www.datacamp.com/community/tutorials/python-numpy-tutorial
 https://www.dataquest.io/blog/numpy-tutorial-python/
 https://www.python-course.eu/numpy.php
 https://github.com/Kyubyong/numpy_exercises
-http://heydenberk.com/blog/posts/demystifying-pandas-numpy-filtering/
+ 
 http://cs231n.github.io/python-numpy-tutorial/
 https://github.com/HIPS/autograd
 https://www.machinelearningplus.com/101-numpy-exercises-python/
