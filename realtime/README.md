@@ -1,6 +1,8 @@
-to show you, how to stream data from database to web, as soon as they are inserted into a table.
+How to stream data from database to web, as soon as they are inserted into a table.
 
 https://petrjahoda.medium.com/stream-data-from-postgres-to-web-using-go-backend-bd7d7527fe27
+
+https://materialize.com/a-simple-and-efficient-real-time-application-powered-by-materializes-tail-command/
 
 
 ### GnuPlot
