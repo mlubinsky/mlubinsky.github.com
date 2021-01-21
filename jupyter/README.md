@@ -57,7 +57,7 @@ https://stackoverflow.com/questions/29432629/correlation-matrix-using-pandas
 
 https://spapas.github.io/2016/09/21/pandas-pivot-table-primer/
 
-### bиблиотекa pandas-profiling:
+###  pandas-profiling:
 https://github.com/JosPolfliet/pandas-profiling
 
 https://habr.com/ru/company/ruvds/blog/451478/ 
@@ -83,7 +83,6 @@ https://medium.com/dunder-data/selecting-subsets-of-data-in-pandas-6fcd0170be9c
 
 
 
-https://www.dataquest.io/blog/pandas-concatenation-tutorial/
 
 https://towardsdatascience.com/how-to-learn-pandas-108905ab4955
 
@@ -163,9 +162,6 @@ https://towardsdatascience.com/how-to-produce-interactive-matplotlib-plots-in-ju
 
 <https://youtu.be/0Ol3QkdCyAk>. Pair Plot for multivariable analysis
 
-### Plotly
-
-<https://livecodestream.dev/post/2020-07-23-interactive-data-visualization-using-plotly-and-python/> 
 
 ```
 import os
@@ -207,8 +203,12 @@ plt.plot(x, y)
 
 mpl.__version__
 ```
-### Merge  dataframes in Pandas
+### Merge  dataframes in Pandas  merge() join() append() concat()
 
+https://realpython.com/pandas-merge-join-and-concat/
+
+https://www.dataquest.io/blog/pandas-concatenation-tutorial/
+ 
 https://stackabuse.com/how-to-merge-dataframes-in-pandas/
 
 ```
@@ -1003,6 +1003,10 @@ https://www.machinelearningplus.com/101-numpy-exercises-python/
 
 	
 http://www.zavtech.com/morpheus/docs/  DataFrames in Java
+ 
+### Plotly
+
+<https://livecodestream.dev/post/2020-07-23-interactive-data-visualization-using-plotly-and-python/> 
  
 
 ## Jupyter Enterprise Gateway 
