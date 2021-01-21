@@ -1,5 +1,7 @@
 Book:  <http://streamingsystems.net/>
 
+https://luminousmen.com/post/modern-big-data-architectures-lambda-kappa
+
 <https://habr.com/ru/company/epam_systems/blog/538018/> tools for writing diagrams
 
 https://www.infoq.com/articles/whats-the-next-step-for-data-management/
