@@ -416,7 +416,7 @@ def show_traffic_total_per_direction(start, end, companies=None):
      df2=pd.pivot_table(df, values='MB', columns='direction' , index=['date'])
      print("df2.columns=")
      print(df2.columns)
-
+     print(df2.dtypes)
      #range  = pd.date_range(start=df2["date"].min(), end=df2["date"].max(), freq='H')
 
      #df2.set_index('date', inplace=True)
@@ -425,19 +425,29 @@ def show_traffic_total_per_direction(start, end, companies=None):
      print(df2)
      print(df2.describe())
      print(df2.info())
-     print(df2.columns)
+     print(df2.dtypes)
+
      header="Hourly Traffic (MB). Table: "+table+ ". From " + start + "  till " + end
      if companies:
        if len(companies) == 1:
            header += " Company: "+str(companies[0])
        else:
            header += " Companies: "+str(companies)
-     #df2.plot(title=header, style=".")
+     #df2.plot(title=header, style=".") -- useful to see gaps
      #plt.show()
 
      df2.plot(title=header)
      plt.show()
 
+     for d in [1,2]:
+        df2[df2["direction"] == d].hist("MB",  bins=35, rwidth=0.9 ) # layout=(3,1) by='direction',
+        plt.show()
+     # bins=25, grid=False, figsize=(12,8), color='#86bf91', zorder=2, rwidth=0.9
+     #by='user_type', bins=25, grid=False, figsize=(8,10), layout=(3,1), sharex=True, color='#86bf91', zorder=2, rwidth=0.9)
+     
+
+     #df2.hist(column='MB', by='direction', bins=25, grid=False, figsize=(8,10), layout=(2,1), sharex=True,) 
+     #plt.show()
 
 #-------------------------------------------
 def show_traffic_total(start, end, companies=None):
@@ -455,7 +465,10 @@ def show_traffic_total(start, end, companies=None):
      df['date'] = pd.to_datetime(df['date'])
      print(df.columns)
 
-
+     for company in companies:
+        s=str(company)
+        df[df["company"] == company].hist(column="MB", rwidth=0.9, bins=30)
+        plt.show()
      #print("fill NA with 0")
      #df=df.fillna(0)
 
@@ -481,6 +494,11 @@ def show_traffic_total(start, end, companies=None):
 
      df2.plot(title=header)
      plt.show()
+
+     #for company in companies:
+     #   s=str(company)
+     #   df2.hist(column=s )
+     #   plt.show()
      
      y_max=input("Set Y-max to re-scale :")
      if not y_max:
@@ -632,14 +650,12 @@ def create_features(df, label=None, useLags=False):
     df['dayofweek'] = df.index.dayofweek
 
     first_date=df.index.array[0]
-    print(first_date)
+    #print(first_date)
     #exit(0)
 
     df['daysfromstart'] = 1 + (df.index - first_date).astype('timedelta64[D]').astype(int)
 
-    print(df['daysfromstart'])
-
-    
+    #print(df['daysfromstart'])
     print("Adding lag")
     if useLags:
       df["Lag_1"]=df["MB"].shift(1)
@@ -647,13 +663,28 @@ def create_features(df, label=None, useLags=False):
       df["Lag_3"]=df["MB"].shift(3)
       df["Lag_4"]=df["MB"].shift(4)
 
-      #remove first 4 rows
-      print("before len(df)=", len(df) ) 
+      #print("Lag_1 NULL :", df['Lag_1'].isnull().sum())
+      #print("Lag_2 NULL :", df['Lag_2'].isnull().sum())
+      #print("Lag_3 NULL :", df['Lag_3'].isnull().sum())
+      #print("Lag_4 NULL :", df['Lag_4'].isnull().sum())
+      #print("before len(df)=", len(df) ) 
+      
+      #print("remove first 4 rows since no Lag data")
+      
       #df=df[4:].copy()
-      #df['Lag_1'] = df['column'].fillna(value)
-      print("after len(df)=", len(df) )
-      print(df.head(5))
+      #print("Fill NA")
+      df['Lag_1'] = df['Lag_1'].fillna(df["MB"])
+      df['Lag_2'] = df['Lag_2'].fillna(df["MB"])
+      df['Lag_3'] = df['Lag_3'].fillna(df["MB"])
+      df['Lag_4'] = df['Lag_4'].fillna(df["MB"])
 
+      #print("Lag_1 NULL :", df['Lag_1'].isnull().sum())
+      #print("Lag_2 NULL :", df['Lag_2'].isnull().sum())
+      #print("Lag_3 NULL :", df['Lag_3'].isnull().sum())
+      #print("Lag_4 NULL :", df['Lag_4'].isnull().sum())
+
+      #print("after len(df)=", len(df) )
+      #print(df.head(5))
       X = df[[
             'hour',
             'dayofweek',
@@ -662,12 +693,12 @@ def create_features(df, label=None, useLags=False):
             'middleday',
             'evening',
             'night',
-           # 'Lag_1',
-           # 'Lag_2',
-           # 'Lag_3',
-           # 'Lag_4'
+            'Lag_1',
+            'Lag_2',
+            'Lag_3',
+            'Lag_4'
           ]]
-    else: # train:
+    else: # not use Lags
       X = df[[
             'hour',
             'dayofweek',
@@ -676,17 +707,14 @@ def create_features(df, label=None, useLags=False):
             'middleday',
             'evening',
             'night'
-            #'Lag_1',
-            #'Lag_2',
-            #'Lag_3',
-            #'Lag_4'
       ]]
 
+    #print (df.dtypes)
 
     if label:
         y = df[label]
 
-        print("len(X)=", len(X), "len(Y)=",len(y))
+        #print("len(X)=", len(X), "len(Y)=",len(y))
         #exit(0)
 
         return X, y
@@ -695,13 +723,16 @@ def create_features(df, label=None, useLags=False):
     return X
 
 #----------------
-def predict_xgboost(df, comment):
+def predict_xgboost(df, comment, useLags):
 #-----------------
-     df=df.drop('n_msisdn', axis=1)
-     split=0.8  # between test and train
-     train_len=int( split * len(df) ) 
-     train=df[0:train_len].copy()
 
+     if useLags:
+        train_len = len(df)-1
+     else:
+        split=0.8  # between test and train
+        train_len=int( split * len(df) )
+
+     train=df[0:train_len].copy()
      test=df[train_len:].copy()
      test_len=len(test)
      print("train_len=", train_len, "test_len=", test_len)
@@ -714,7 +745,7 @@ def predict_xgboost(df, comment):
      #print(test.columns)
      #print(test.dtypes)
 
-     print(train.head(5))
+     #print(train.head(5))
 
 
 
@@ -730,47 +761,51 @@ def predict_xgboost(df, comment):
      concat= test.rename(columns={'MB':'TEST'}) \
      .join( train.rename(columns={'MB':'TRAIN'}) , how='outer')
 
-     concat.plot(title=comment + ' Train: '+str(train_len) + ' points and Test: '+str(test_len) + " points", linestyle='-', marker='o', figsize=(25, 5))
-     plt.show()
+     if False:
+       concat.plot(title=comment + ' Train: '+str(train_len) + ' points and Test: '+str(test_len) + " points", linestyle='-', marker='o', figsize=(25, 5))
+       plt.show()
 
 
-     X_train, y_train = create_features(train, label='MB', useLags=False)
+     X_train, y_train = create_features(train, label='MB', useLags=useLags)
      print("len(X_train)=", len(X_train), "len(Y_train)=",len(y_train))
 
-     X_test,  y_test  = create_features(test,  label='MB', useLags=False)
+     X_test,  y_test  = create_features(test,  label='MB', useLags=useLags)
      print("len(X_test)=", len(X_test), "len(Y_test)=",len(y_test))
 
      # https://www.kaggle.com/robikscube/time-series-forecasting-with-prophet
      features_and_target = pd.concat([X_train, y_train], axis=1)
-     print(features_and_target.head())
-     sns.pairplot(features_and_target.dropna(),
-             hue=
-              'hour',
-             x_vars=[
+     #print(features_and_target.head())
+
+     x_vars=[
               'hour',
               'dayofweek',
               'daysfromstart',
               'morning',
               'middleday',
               'evening',
-              'night',
-              #'Lag_1',
-              #'Lag_2',
-              #'Lag_3',
-              #'Lag_4'
-             ],
-             y_vars='MB',
-             height=5 
-             #plot_kws={'alpha':0.15, 'linewidth':0}
-            )
-     plt.suptitle('Traffic by Day of Month, Day of Week and Hour')
-     plt.show()
+              'night'
+             ]
+     if useLags:
+             x_vars.append('Lag_1')
+             x_vars.append('Lag_2')
+             x_vars.append('Lag_3')
+             x_vars.append('Lag_4')
+
+     #sns.pairplot(features_and_target.dropna(),
+     #        hue= 'hour',
+     #        x_vars=x_vars,
+     #        y_vars='MB',
+     #        height=5 
+     #       )
+     #plt.suptitle('Traffic by Day of Month, Day of Week and Hour')
+     #plt.show()
 
      #reg = xgb.XGBRegressor(n_estimators=1000)
      reg = xgb.XGBRegressor(
        n_estimators = 1600 ,
        random_state = 0 ,
        # objective='reg:squarederror',  # 'reg:linear'
+       # 'booster':'gblinear'
        max_depth = 15)
 
      #reg = XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
@@ -795,11 +830,14 @@ def predict_xgboost(df, comment):
      test['Prediction'] = reg.predict(X_test)
 
 
-     print("Before concat")
+     print("Before concat len(test)=",len(test), "  len(train)=",len(train))
      all = pd.concat([test, train], sort=False)
-     header= comment + " range " + str(test.index[0]) + " -  " + str(test.index[-1])
-     all[['MB','Prediction']].plot(title=header, linestyle='-', marker='o', figsize=(25, 5))
-     plt.show()
+     print("After concat len(all)=",len(all))
+
+     if not useLags:
+       header= comment + " range " + str(test.index[0]) + " -  " + str(test.index[-1])
+       all[['MB','Prediction']].plot(title=header, linestyle='-', marker='o', figsize=(25, 5))
+       plt.show()
 
      print ("Len all=", len(all))
      print (  "Train len=",   len(train), train.index[0], train.index[-1])
@@ -807,11 +845,42 @@ def predict_xgboost(df, comment):
 
      predicted   = all.loc[test.index[0]:test.index[-1]]
      print("Len predicted =", len(predicted ))
+     print( "predicted=" )
      print( predicted )
-     predicted[['MB','Prediction']].plot(title=header, linestyle='-', marker='o', figsize=(25, 5))
-     plt.show() 
 
+     if not useLags:
+        predicted[['MB','Prediction']].plot(title=header, linestyle='-', marker='o', figsize=(25, 5))
+        plt.show()
+        return
+
+     print("test.dtypes=")
+     print(test.dtypes)
+     print("df.dtypes=")
+     print(df.dtypes)
+     #test.drop('MB',axis=1)
+
+     print("test=")
+     print(test)
+     cols=['MB','hour', 'morning', 'middleday', 'evening', 'night', 'dayofweek','daysfromstart', 'Lag_1', 'Lag_2', 'Lag_3', 'Lag_4']
+     test.drop(columns=cols, inplace=True)
+     test.rename(columns = {'Prediction':'MB'}, inplace = True) 
+     print("after drop test=")
+     print(test)
+
+     cc = pd.concat([df[:-1], test], sort=True)
+     #print ("len(c)=", len(cc))
+     #print(cc.dtypes)
+     print("Check the sort order below after concat")
+     print(cc.tail(10))
+     print("Check the sort order above ")
+     #exit(0)
+     #cols=['hour', 'morning', 'middleday', 'evening', 'night', 'dayofweek','daysfromstart', 'Lag_1', 'Lag_2', 'Lag_3', 'Lag_4']
+     #cols=['hour', 'morning', 'middleday', 'evening', 'night', 'dayofweek','daysfromstart', 'Lag_1', 'Lag_2', 'Lag_3', 'Lag_4', 'Prediction']
+     #cc.drop(columns=cols, inplace=True)
+     return cc
+#-----------------
 def get_company():
+#-----------------  
    DEFAULT_COMPANY=3659
    company_input=input("Company: (default 3659) :")
    if not company_input:
@@ -839,8 +908,9 @@ def get_duration():
          return 7  # 1 week
       else:
          return int(duration)
-
+#---------------------------
 def device_count(start, end):
+#---------------------------
      sql = sql_n_devices(start, end, companies)
      print(sql)
      df=query(sql)
@@ -872,20 +942,21 @@ def main():
   #show_top_device_count(start, end)
   #exit(0)
 
-  COMPANY_LIST=(3659,3116, 3666)
+  #COMPANY_LIST=(3659,3116, 3666)
   #COMPANY_LIST=(3659,3116)
-  #COMPANY_LIST=(3659,)
+  COMPANY_LIST=(3659,)
+  #COMPANY_LIST=(3116, 3666)
 
-  if 0 > 1:
+  if  False:
     show_traffic_total(start, end, COMPANY_LIST)
     for company in COMPANY_LIST:
       single_company=list()
       single_company.append(company)
       #show_traffic_total(start, end, single_company)
       show_traffic_total_per_direction(start, end, single_company)
-      show_traffic_protocol(start, end, single_company)
+      #show_traffic_protocol(start, end, single_company)
 
-   
+  #exit(0)
 
   #show_device_count(start, end)
   #show_device_count(start, end, COMPANY_LIST)
@@ -937,7 +1008,6 @@ def main():
 
      print(df.describe())
 
- 
      head="Company=" + str(company) + ". Hourly Traffic (MB) per device with filled gaps. " + start + ' - ' + end + "  direction="+str(direction)
      df.plot(title=head)
      plt.show()
@@ -947,9 +1017,101 @@ def main():
 
      #df.plot(title=head, ylim=(0,200))
      #plt.show()
-
+     df=df.drop('n_msisdn', axis=1)
+     useLags=True
+     useLags=False
      comment="XGBoost. Hourly Traffic (MB) per # of devices. Company "+ str(company) + " direction="+str(direction)
-     predict_xgboost(df, comment) 
+     if not useLags:
+       predict_xgboost(df, comment, useLags)
+       return
+
+     else:
+        #feedto xgb  df[1...10] -> get back df[1,...,10xb]
+        #add to df[1,...,10xb] df[11] ->  get back df[1,...,10xb, 11b]
+       N_points=24
+       head=df[:-N_points].copy()
+       tail=df[-N_points:].copy()
+         #head=df.copy()
+       all = predict_xgboost(head, comment, useLags)
+
+       print("i=0 after predict_xgboost len=",len(all))
+     #if useLags:
+       #for i in [0,1,2,3,4]:  # predict 1 point at the time
+       #it=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+       it=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
+       for i in it:
+           print("---i=", i)
+
+
+           print("-- step 1: tail.index[i]=")
+           print(tail.index[i])
+           print("one_rec=") 
+           one_rec = tail[tail.index == tail.index[i]]
+           print(one_rec)
+
+           print("-- step 4a - BEFORE concatenate: all.tail(10)=")
+           print (all.tail(10))
+           all=pd.concat([all, one_rec], sort=True)
+           print("-- step 4 - after concatenate: all.tail(10)=")
+           print (all.tail(10))
+           print("Make sure the order of time above is correct!!! ")
+           #exit(0)
+           all = predict_xgboost(all, comment, useLag)
+           print("i=", i," after predict_xgboost len=",len(all))
+       
+       # Final plot
+       pred = all[-i:].copy()
+       pred.rename (columns={'MB':'Prediction'}, inplace=True)
+       #  Plot
+       x = pd.concat([df, pred], axis=1, join="outer")
+       print("After concat join=outer len(x)=",len(x))
+       print(x)
+       print(x.index)
+       print("x.tail(10)=")
+       print(x.tail(10))
+       print(" is sort good above join=outer")
+       # https://realpython.com/pandas-merge-join-and-concat/
+       #header= comment + " range " + str(test.index[0]) + " -  " + str(test.index[-1])
+       header="Company "+str(company) + " direction="+str(direction)
+       x[['MB','Prediction']].plot(title=header, linestyle='-', marker='o', figsize=(25, 5))
+       plt.show()
+
+      ## Concat
+       #x_overlap = pd.concat([df[-N_points:], pred], axis=1, join="inner")
+       x_overlap = pd.concat([df, pred], axis=1, join="inner")
+       print("After concat len(x_overlap)=",len(x_overlap))
+       print(x_overlap)
+       print(x_overlap.index)
+       # https://realpython.com/pandas-merge-join-and-concat/
+       #header= comment + " range " + str(test.index[0]) + " -  " + str(test.index[-1])
+       #header="final _overlap sorted"
+       x_overlap[['MB','Prediction']].plot(title=header, linestyle='-', marker='o', figsize=(25, 5))
+       plt.show()
+
+       ##  Merge
+       #print("Merge")
+       #x_merge = pd.merge( df[-N_points:], pred )
+       #print("After merge len(x_merge)=",len(x_merge))
+       #print(x_merge)
+       #print(x_merge.index)
+       # https://realpython.com/pandas-merge-join-and-concat/
+       #header= comment + " range " + str(test.index[0]) + " -  " + str(test.index[-1])
+       #header="final _merge"
+       #x_merge[['MB','Prediction']].plot(title=header, linestyle='-', marker='o', figsize=(25, 5))
+       #plt.show()
+
+       ##  Join
+       print("Join")
+       #x_join = df[-N_points:].join(pred)
+       x_join = df.join(pred)
+       print("After join len(x_join)=",len(x_join))
+       print(x_join)
+       print(x_join.index)
+       # https://realpython.com/pandas-merge-join-and-concat/
+       #header= comment + " range " + str(test.index[0]) + " -  " + str(test.index[-1])
+       header="final _join"
+       x_join[['MB','Prediction']].plot(title=header, linestyle='-', marker='o', figsize=(25, 5))
+       plt.show()
 
 if __name__ == "__main__":
    main()
