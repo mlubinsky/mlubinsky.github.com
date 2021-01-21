@@ -9,6 +9,8 @@ https://materialize.com/a-simple-and-efficient-real-time-application-powered-by-
 
 <https://habr.com/ru/company/ruvds/blog/517450/>
 
+<https://cyberchris.xyz/posts/awk-and-gnuplot/>
+
 
 ### Bokeh
 
