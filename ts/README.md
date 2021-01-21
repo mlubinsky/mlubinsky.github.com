@@ -14,7 +14,7 @@ https://machinelearningmastery.com/time-series-forecasting-methods-in-python-che
 
 https://machinelearningmastery.com/start-here/#deep_learning_time_series
 
-# Important articles:
+## Important articles:
 
 https://habr.com/ru/company/ods/blog/327242/
 
@@ -60,6 +60,8 @@ https://www.youtube.com/watch?v=-r7wB9DJtiU&list=PL3N9eeOlCrP5cK0QRQxeJd6GrQvhAt
 https://towardsdatascience.com/how-to-apply-hierarchical-clustering-to-time-series-a5fe2a7d8447
 
 https://tslearn.readthedocs.io/en/stable/gen_modules/clustering/tslearn.clustering.TimeSeriesKMeans.html
+
+http://alexminnaar.com/2014/04/16/Time-Series-Classification-and-Clustering-with-Python.html
 
 ### Time series packages in Python
 
