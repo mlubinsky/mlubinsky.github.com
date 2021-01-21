@@ -18,7 +18,20 @@ http://seaborn.pydata.org/examples/index.html
 <https://mlwhiz.com/blog/2019/04/19/awesome_seaborn_visuals/> .  seaborn
 
 
+https://jbencook.com/pandas-melt/    pd.melt(wide_df)
+
+https://jbencook.com/seaborn-histogram/
+
+To see multiple distributions in the same plot. 
+If your Pandas DataFrame is in long format, 
+you can do this by passing in a categorical column to the hue argument:
+```
+ax = sns.histplot(df, x="revenue", bins=30, stat="probability", hue="region")
+ax.set(ylabel="$p(x)$")
+```
 ## Pandas plotting 
+
+https://jbencook.com/pandas-melt/
 
 https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html#cookbook-plotting
 
