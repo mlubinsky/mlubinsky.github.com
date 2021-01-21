@@ -1,10 +1,14 @@
-https://news.ycombinator.com/item?id=25519718
+https://news.ycombinator.com/item?id=25519718 Interview advice that got me offers 
 
-https://habr.com/ru/post/535216/
+https://habr.com/ru/post/535216/ interview
 
-http://algorithmsbook.com/
+http://algorithmsbook.com/ Algorithms for Decision Making
 
-https://news.ycombinator.com/item?id=25716581
+https://habr.com/ru/company/skillfactory/blog/538536/ interview
+
+https://medium.com/swlh/my-preparation-journey-for-google-interviews-f41e2dc3cdf9 interview
+
+https://news.ycombinator.com/item?id=25716581 	Algorithms for Decision Making
 
 https://habr.com/ru/company/JetBrains-education/blog/536032/  Видео курсов Computer Science клуба
 
