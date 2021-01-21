@@ -6,6 +6,15 @@
 An anomaly detection algorithm should either label each time point with anomaly/not anomaly, 
 or forecast a signal for some point and test if this point value varies from the forecasted enough to deem it as an anomaly.
 
+https://machinelearnings.co/data-science-tricks-simple-anomaly-detection-for-metrics-with-a-weekly-pattern-2e236970d77#.43mcl6cv5
+The system should be quite robust and automatically adapt to new baselines.
+
+https://blogs.oracle.com/datascience/introduction-to-anomaly-detection
+
+https://blogs.oracle.com/meena/anomaly-detection
+
+https://blogs.oracle.com/r/early-detection-of-process-anomalies-with-sprt
+
 MERLIN: Parameter-Free Discovery of Arbitrary Length
 Anomalies in Massive Time Series Archives:
 https://www.cs.ucr.edu/~eamonn/MERLIN_Long_version_for_website.pdf
