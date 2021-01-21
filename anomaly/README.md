@@ -6,6 +6,10 @@
 An anomaly detection algorithm should either label each time point with anomaly/not anomaly, 
 or forecast a signal for some point and test if this point value varies from the forecasted enough to deem it as an anomaly.
 
+MERLIN: Parameter-Free Discovery of Arbitrary Length
+Anomalies in Massive Time Series Archives:
+https://www.cs.ucr.edu/~eamonn/MERLIN_Long_version_for_website.pdf
+
 <https://spark-in.me/post/playing-with-electricity> has good links!
 
 https://arxiv.org/abs/2009.13807
