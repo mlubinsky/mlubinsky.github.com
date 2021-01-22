@@ -57,6 +57,15 @@ https://www.youtube.com/watch?v=-r7wB9DJtiU&list=PL3N9eeOlCrP5cK0QRQxeJd6GrQvhAt
 
 ### Clustering time series in python:
 
+https://www.kaggle.com/egregori/clustering-time-series
+Visualization idea:
+```
+X-axis: company
+Y-axis: avg traffic 
+Dot size/color   depend on traffic value (represented as heatmap on the legend)
+```
+https://www.kaggle.com/timib1203/time-series-clustering-for-forecasting-preparation
+
 https://stackoverflow.com/questions/34940808/hierarchical-clustering-of-time-series-in-python-scipy-numpy-pandas
 
 https://towardsdatascience.com/how-to-apply-hierarchical-clustering-to-time-series-a5fe2a7d8447
