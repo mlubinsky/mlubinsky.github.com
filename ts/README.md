@@ -74,9 +74,9 @@ https://tslearn.readthedocs.io/en/stable/gen_modules/clustering/tslearn.clusteri
 
 http://alexminnaar.com/2014/04/16/Time-Series-Classification-and-Clustering-with-Python.html
 
-### Time series packages in Python
+### Time series packages in Python: tslearn, tsfresh
 
-https://tslearn.readthedocs.io/en/stable/index.html
+https://tslearn.readthedocs.io/en/stable/index.html   tslearn
 
 https://www.microprediction.com/blog/popular-timeseries-packages
 
