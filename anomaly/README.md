@@ -6,6 +6,8 @@
 An anomaly detection algorithm should either label each time point with anomaly/not anomaly, 
 or forecast a signal for some point and test if this point value varies from the forecasted enough to deem it as an anomaly.
 
+https://blog.floydhub.com/introduction-to-anomaly-detection-in-python/
+
 https://www.datasciencecentral.com/profiles/blogs/anamoly-outlier-detection-using-local-outlier-factors
 
 https://machinelearnings.co/data-science-tricks-simple-anomaly-detection-for-metrics-with-a-weekly-pattern-2e236970d77#.43mcl6cv5
