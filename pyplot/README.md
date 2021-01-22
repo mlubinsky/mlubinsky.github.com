@@ -5,6 +5,8 @@ https://pythonplot.com/
 
 https://python-graph-gallery.com/
 
+https://cmdlinetips.com/2020/01/tips-to-make-common-plots-with-pandas/
+
 https://hvplot.holoviz.org/ hvplot !!!
 
 ## Seaborn
@@ -30,6 +32,8 @@ ax = sns.histplot(df, x="revenue", bins=30, stat="probability", hue="region")
 ax.set(ylabel="$p(x)$")
 ```
 ## Pandas plotting 
+
+https://cmdlinetips.com/2020/01/tips-to-make-common-plots-with-pandas/
 
 https://jbencook.com/pandas-melt/
 
