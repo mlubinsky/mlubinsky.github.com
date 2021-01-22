@@ -89,6 +89,7 @@ https://github.com/MaxBenChrist/awesome_time_series_in_python
 
 https://github.com/ml-tooling/best-of-ml-python
 
+https://github.com/arundo/adtk Anomaly detection  toolkit
 
 How to Build Exponential Smoothing Models Using Python: Simple Exponential Smoothing, Holt, and Holt-Winters
 
