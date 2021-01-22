@@ -53,8 +53,6 @@ https://www.udemy.com/course/python-for-time-series-analysis-and-forecasting-ari
 https://www.youtube.com/watch?v=-r7wB9DJtiU&list=PL3N9eeOlCrP5cK0QRQxeJd6GrQvhAtpBK
 
 
-##  tsfresh and tslearn
-
 ### Clustering time series in python:
 
 https://www.kaggle.com/egregori/clustering-time-series
@@ -78,11 +76,19 @@ http://alexminnaar.com/2014/04/16/Time-Series-Classification-and-Clustering-with
 
 https://tslearn.readthedocs.io/en/stable/index.html   tslearn
 
+https://github.com/blue-yonder/tsfresh
+
+<https://www.youtube.com/watch?v=Fm8zcOMJ-9E> tsfresh
+
 https://www.microprediction.com/blog/popular-timeseries-packages
 
 https://github.com/MaxBenChrist/awesome_time_series_in_python
 
-https://github.com/blue-yonder/tsfresh
+
+<https://www.youtube.com/watch?v=9X_4i7zdSY8>  PyFlux
+
+https://github.com/ml-tooling/best-of-ml-python
+
 
 How to Build Exponential Smoothing Models Using Python: Simple Exponential Smoothing, Holt, and Holt-Winters
 
@@ -260,11 +266,14 @@ xgboost                            1.31
 pip list | grep xgboost
 xgboost            1.2.0
 ```
-https://medium.com/@qs2178/time-series-forecasting-with-stacked-machine-learning-models-7250abdece0f  Stacked model
+<https://medium.com/@qs2178/time-series-forecasting-with-stacked-machine-learning-models-7250abdece0f>  Stacked model
 
-https://github.com/atriptoparadise/Time-Series-with-machine-learning/blob/master/Time%20Series%20Forecasting%20with%20Stacked%20Machine%20Learning%20Models_DEMO.ipynb
 
-https://github.com/leepingtay/time_series_forecasting_energy/blob/master/Energy_Time_Series_Forecast_XGBoost.ipynb
+<https://www.kaggle.com/robikscube/tutorial-time-series-forecasting-with-xgboost>
+
+<https://github.com/atriptoparadise/Time-Series-with-machine-learning/blob/master/Time%20Series%20Forecasting%20with%20Stacked%20Machine%20Learning%20Models_DEMO.ipynb>
+
+<https://github.com/leepingtay/time_series_forecasting_energy/blob/master/Energy_Time_Series_Forecast_XGBoost.ipynb>
 
 ### Links
 
@@ -421,8 +430,7 @@ https://medium.com/@michalchromcak/hcrystalball-a-unified-interface-to-time-seri
 
 <https://www.kaggle.com/robikscube/tutorial-time-series-forecasting-with-prophet>
 
-## XGBoost
-<https://www.kaggle.com/robikscube/tutorial-time-series-forecasting-with-xgboost>
+
 
 ## ARIMA 
 <https://ru.wikipedia.org/wiki/ARIMA>
@@ -671,11 +679,11 @@ There are three basic criterion for a time series to understand whether it is st
 
 <https://www.youtube.com/watch?v=9X_4i7zdSY8> Deep Learning
 
-<https://www.youtube.com/watch?v=9X_4i7zdSY8>  PyFlux
+
 
 <https://www.youtube.com/watch?v=VYpAodcdFfA> two Effective Algorithms for Time Series Forecasting
 
-<https://www.youtube.com/watch?v=Fm8zcOMJ-9E> tsfresh
+
 
 <https://towardsdatascience.com/forecasting-with-python-and-tableau-dd37a218a1e5>
 
