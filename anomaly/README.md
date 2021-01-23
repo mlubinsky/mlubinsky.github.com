@@ -4,6 +4,8 @@
 
 ## Anomaly detection
 
+https://towardsdatascience.com/ways-to-detect-and-remove-the-outliers-404d16608dba
+
 https://www.anodot.com/blog/quick-guide-different-types-outliers/
 
 https://github.com/cerlymarco/MEDIUM_NoteBook
