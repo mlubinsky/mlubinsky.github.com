@@ -55,7 +55,12 @@ https://stackoverflow.com/questions/29432629/correlation-matrix-using-pandas
 
 <https://machinelearningmastery.com/calculate-feature-importance-with-python/>
 
+
+### pivot transpose assign
+
 https://spapas.github.io/2016/09/21/pandas-pivot-table-primer/
+
+https://machinelearningknowledge.ai/pandas-assign-pandas-transpose-pandas-pivot/
 
 ###  pandas-profiling:
 https://github.com/JosPolfliet/pandas-profiling
