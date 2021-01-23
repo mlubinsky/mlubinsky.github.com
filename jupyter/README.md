@@ -22,6 +22,8 @@ https://github.com/jvns/pandas-cookbook
 
 https://pandas.pydata.org/docs/getting_started/index.html
 
+https://hackersandslackers.com/series/data-analysis-pandas/
+
 https://towardsdatascience.com/pandas-full-tutorial-on-a-single-dataset-4aa43461e1e2
 
 https://nbviewer.jupyter.org/github/changhiskhan/talks/blob/master/pydata2012/pandas_timeseries.ipynb
