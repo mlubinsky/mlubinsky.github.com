@@ -6,6 +6,8 @@
 
 https://www.anodot.com/blog/quick-guide-different-types-outliers/
 
+https://github.com/cerlymarco/MEDIUM_NoteBook
+
 https://github.com/cerlymarco/tsmoothie
 
 https://towardsdatascience.com/real-time-time-series-anomaly-detection-981cf1e1ca13
