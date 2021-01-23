@@ -52,6 +52,13 @@ https://www.udemy.com/course/python-for-time-series-analysis-and-forecasting-ari
 
 https://www.youtube.com/watch?v=-r7wB9DJtiU&list=PL3N9eeOlCrP5cK0QRQxeJd6GrQvhAtpBK
 
+## Outlier in time series: tsmoothie
+
+https://towardsdatascience.com/real-time-time-series-anomaly-detection-981cf1e1ca13
+
+https://towardsdatascience.com/time-series-smoothing-for-better-forecasting-7fbf10428b2
+A python library for time-series smoothing and outlier detection in a vectorized way.
+https://github.com/cerlymarco/tsmoothie
 
 ### Clustering time series in python:
 
