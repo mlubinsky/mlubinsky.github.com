@@ -7,6 +7,8 @@ https://python-graph-gallery.com/
 
 https://cmdlinetips.com/2020/01/tips-to-make-common-plots-with-pandas/
 
+https://www.kite.com/blog/python/data-analysis-visualization-python/
+
 https://hvplot.holoviz.org/ hvplot !!!
 
 ## Seaborn
