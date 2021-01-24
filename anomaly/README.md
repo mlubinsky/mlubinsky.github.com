@@ -2,6 +2,20 @@
 
 <https://habr.com/ru/company/yandex/blog/476826/>
 
+### Matrix Profile
+
+https://matrixprofile.org/
+
+https://github.com/matrix-profile-foundation/matrixprofile
+
+https://stumpy.readthedocs.io/en/latest/Tutorial_The_Matrix_Profile.html
+
+https://github.com/target/matrixprofile-ts
+
+https://towardsdatascience.com/introduction-to-matrix-profiles-5568f3375d90
+
+https://medium.com/@ishanmazumderedu/anomaly-detection-using-matrix-profile-57303d37ea9f
+
 ## Anomaly detection
 
 https://www.youtube.com/watch?v=xhuv8NaaroA
