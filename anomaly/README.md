@@ -4,6 +4,28 @@
 
 ## Anomaly detection
 
+https://www.youtube.com/watch?v=xhuv8NaaroA
+
+https://github.com/aabdulaal/Practical_TS_Talk
+
+https://www.kaggle.com/adithya44/anomaly-detection-with-time-series-forecasting
+
+https://medium.com/@jetnew/anomaly-detection-of-time-series-data-e0cb6b382e33
+
+
+https://www.youtube.com/watch?v=0wfOOl5XtcU. Facebook Prophet
+
+https://en.wikipedia.org/wiki/Outlier
+
+https://github.com/linkedin/luminol.  Python for anomaly detection
+
+
+https://github.com/rob-med/awesome-TS-anomaly-detection.   Awesome anomaly detection
+
+https://towardsdatascience.com/anomaly-detection-in-time-series-sensor-data-86fd52e62538
+
+https://datascience.stackexchange.com/questions/37525/anomaly-detection-on-time-series
+
 https://towardsdatascience.com/ways-to-detect-and-remove-the-outliers-404d16608dba
 
 https://www.anodot.com/blog/quick-guide-different-types-outliers/
