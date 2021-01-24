@@ -1,3 +1,6 @@
+
+https://habr.com/ru/company/southbridge/blog/534334/.  Data /volumes inside Docker
+
 <https://www.pybootcamp.com/blog/how-to-containerize-python-application/>
 
 https://pure-hack.com/posts/floki/
