@@ -2,6 +2,13 @@
 
 <https://habr.com/ru/company/yandex/blog/476826/>
 
+
+### Awesome anomaly detection
+
+https://awesomeopensource.com/projects/anomaly-detection
+
+https://github.com/rob-med/awesome-TS-anomaly-detection
+
 ### Matrix Profile
 
 https://matrixprofile.org/
@@ -16,7 +23,11 @@ https://towardsdatascience.com/introduction-to-matrix-profiles-5568f3375d90
 
 https://medium.com/@ishanmazumderedu/anomaly-detection-using-matrix-profile-57303d37ea9f
 
+http://www.cs.binghamton.edu/~pyang/ramp.pdf
+
 ## Anomaly detection
+
+https://scikit-learn.org/stable/modules/outlier_detection.html
 
 https://www.youtube.com/watch?v=xhuv8NaaroA
 
@@ -34,7 +45,6 @@ https://en.wikipedia.org/wiki/Outlier
 https://github.com/linkedin/luminol.  Python for anomaly detection
 
 
-https://github.com/rob-med/awesome-TS-anomaly-detection.   Awesome anomaly detection
 
 https://towardsdatascience.com/anomaly-detection-in-time-series-sensor-data-86fd52e62538
 
