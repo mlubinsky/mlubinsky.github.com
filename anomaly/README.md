@@ -5,6 +5,9 @@
 
 https://en.wikipedia.org/wiki/Quartile
 
+### Book
+
+https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook-dp-B07Y5WSCV2/dp/B07Y5WSCV2/
 
 ### Awesome anomaly detection
 
