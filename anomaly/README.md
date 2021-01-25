@@ -13,6 +13,8 @@ https://github.com/rob-med/awesome-TS-anomaly-detection
 ### youtube
 https://www.youtube.com/watch?v=5nfe835TVcY
 
+https://www.youtube.com/watch?v=5ldj08YLYzM
+
 https://www.youtube.com/watch?v=B5mPqFOx09U
 
 https://www.youtube.com/watch?v=XPwCo4cqqt0
