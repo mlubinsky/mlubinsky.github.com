@@ -26,7 +26,7 @@ https://www.youtube.com/watch?v=XPwCo4cqqt0
 
 https://www.youtube.com/watch?v=12Xq9OLdQwQ
 
-https://www.youtube.com/watch?v=WvaBPSeA_JA
+https://www.youtube.com/watch?v=WvaBPSeA_JA   Automatically Find Patterns & Anomalies from Time Series or Sequential Data - Sean Law
 
 https://www.youtube.com/watch?v=xhuv8NaaroA
 
