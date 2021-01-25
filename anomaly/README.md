@@ -15,6 +15,8 @@ https://www.youtube.com/watch?v=B5mPqFOx09U
 
 https://www.youtube.com/watch?v=XPwCo4cqqt0
 
+https://www.youtube.com/watch?v=12Xq9OLdQwQ
+
 ### Matrix Profile
 
 https://matrixprofile.org/
