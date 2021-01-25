@@ -17,6 +17,18 @@ https://www.youtube.com/watch?v=XPwCo4cqqt0
 
 https://www.youtube.com/watch?v=12Xq9OLdQwQ
 
+https://www.youtube.com/watch?v=WvaBPSeA_JA
+
+https://www.youtube.com/watch?v=xhuv8NaaroA
+
+
+https://www.youtube.com/watch?v=V0r2zDhdi6c
+
+https://www.youtube.com/watch?v=5p8B2Ikcw-k
+
+
+https://www.youtube.com/watch?v=Alkm-PJu9To.  Autoencoders
+
 ### Matrix Profile
 
 https://matrixprofile.org/
