@@ -9,6 +9,18 @@ from plotnine import *
 
 import xgboost as xgb  # conda install py-xgboost-cpu
 from xgboost import plot_importance, plot_tree
+
+from adtk.data import validate_series
+from adtk.visualization import plot
+from adtk.detector import ThresholdAD
+from adtk.detector import SeasonalAD
+from adtk.detector import QuantileAD
+from adtk.detector import InterQuartileRangeAD
+from adtk.detector import PersistAD
+from adtk.detector import LevelShiftAD
+from adtk.detector import VolatilityShiftAD
+from adtk.detector import  AutoregressionAD
+
 import datastore
 
 #--------------
@@ -20,23 +32,23 @@ def query(sql):
   return d
 
 #----------------------------------
-def sql_traffic_hourly_per_day_of_week(  start, end, table=None):
-#-----------------------------------  
+def sql_traffic_hourly_per_day_of_week(  start, end, table, company):
+#-----------------------------------
     SQL = f"""
     SELECT 
       CONCAT( 
-            DAYOFWEEK(FROM_UNIXTIME(timebin, '%%Y-%%m-%%d')), 
+            DAYOFWEEK(FROM_UNIXTIME(timebin, '%%Y-%%m-%%d')),
             '-',
-            DAYNAME(FROM_UNIXTIME(timebin, '%%Y-%%m-%%d')) 
-      )      
-            
+            DAYNAME(FROM_UNIXTIME(timebin, '%%Y-%%m-%%d'))
+      )
       as dayname,
       FROM_UNIXTIME(timebin, '%%H') as hour,
       SUM(bytes) / (1024.0 * 1024.0) as MB 
     FROM jangle_traffic_total
     WHERE
          timebin >=  UNIX_TIMESTAMP('{start}') and
-         timebin  <  UNIX_TIMESTAMP('{end}')
+         timebin  <  UNIX_TIMESTAMP('{end}') and
+         company = {company}
     GROUP BY dayname, hour
     ORDER BY dayname, hour
     """
@@ -221,11 +233,11 @@ def show_top_device_count(start, end):
       plt.show() 
 
 #--------------------------------------
-def show_traffic_hourly_by_day_of_week(start, end):
+def show_traffic_hourly_per_day_of_week(start, end, company):
 #--------------------------------------
    for table in ['jangle_traffic_total']: #, 'radius_traffic']:
       #sql=sql_top_traffic(start, end, table)
-      sql=sql_traffic_hourly_per_day_of_week(start, end, table)
+      sql=sql_traffic_hourly_per_day_of_week(start, end, table, company)
       print(sql)
       df=query(sql)
       
@@ -235,19 +247,19 @@ def show_traffic_hourly_by_day_of_week(start, end):
       print(df.dtypes)
       #df.set_index('hour', inplace=True)
 
-      header="Hourly traffic (MB) by day of week. Table: " + table + ". From " + start + " till " + end
-      #df.plot(x="hour",y="MB", title=header)
-      #plt.show()
+      header="Company: " + str(company)+". Hourly traffic (MB) by day of week. Table: " + table + ". From " + start + " till " + end
+      df.plot(x="hour",y="MB", title=header, linestyle='-', marker='o')
+      plt.show()
 
       #fig = plt.figure()
       #ax = fig.add_subplot(111)
       #ax.plot(df['LimMag1.3'], df['ExpTime1.3'], label="1.3")
       #ax.plot(df['LimMag2.0'], df['ExpTime2.0'], label="2.0")
       #ax.plot(df['LimMag2.5'], df['ExpTime2.5'], label="2.5")
-      df.pivot(index='hour', columns='dayname', values="MB").plot(title=header)
+      df.pivot(index='hour', columns='dayname', values="MB").plot(title=header, linestyle='-', marker='o')
       plt.show()
       return
-
+      ################################# 
       print("faced grip")
       g = (
         ggplot(df,
@@ -391,6 +403,69 @@ def show_traffic_protocol(start, end, companies=None, direction=None):
 
      df2.plot(title=header)
      plt.show()
+#------------------
+def show_adtk(s):
+#------------------
+     print("-----show_adtk----")
+     print(s.dtypes)
+     print(s)
+     print(s.index)
+
+     s = validate_series(s)
+     #plot(s)
+
+     print(" SeasonalAD() ")
+     seasonal_ad = SeasonalAD()
+     anomalies = seasonal_ad.fit_detect(s)
+     plot(s, anomaly=anomalies, anomaly_color="red", anomaly_tag="marker")
+     plt.show()
+
+     print(" ThresholdAD(high=500, low=15) ")
+     threshold_ad = ThresholdAD(high=500, low=15)
+     anomalies = threshold_ad.detect(s)
+     plot(s, anomaly=anomalies, ts_linewidth=1, ts_markersize=3, anomaly_markersize=5, anomaly_color='red', anomaly_tag="marker")
+     plt.show()
+
+     print("QuantileAD(high=0.99, low=0.01) ")
+     quantile_ad = QuantileAD(high=0.99, low=0.01)
+     anomalies = quantile_ad.fit_detect(s)
+     plot(s, anomaly=anomalies, ts_linewidth=1, ts_markersize=3, anomaly_markersize=5, anomaly_color='red', anomaly_tag="marker")
+     plt.show()
+
+     print("InterQuartileRangeAD(c=1.5) ")
+     iqr_ad = InterQuartileRangeAD(c=1.5)
+     anomalies = iqr_ad.fit_detect(s)
+     plot(s, anomaly=anomalies, ts_linewidth=1, ts_markersize=3, anomaly_markersize=5, anomaly_color='red', anomaly_tag="marker")
+     plt.show()
+
+     print(" PersistAD(c=3.0, side='positive')")
+     persist_ad = PersistAD(c=3.0, side='positive')
+     persist_ad.window = 4
+     anomalies = persist_ad.fit_detect(s)
+     plot(s, anomaly=anomalies, ts_linewidth=1, ts_markersize=3, anomaly_color='red')
+     plt.show()
+
+     print(" LevelShiftAD(c=6.0, side='both', window=5) ")
+     level_shift_ad = LevelShiftAD(c=6.0, side='both', window=5)
+     anomalies = level_shift_ad.fit_detect(s)
+     plot(s, anomaly=anomalies, anomaly_color='red')
+     plt.show()
+
+     print(" VolatilityShiftAD(c=6.0, side='positive', window=30) ")
+     volatility_shift_ad = VolatilityShiftAD(c=6.0, side='positive', window=30)
+     anomalies = volatility_shift_ad.fit_detect(s)
+     plot(s, anomaly=anomalies, anomaly_color='red')
+     plt.show()
+
+     print("AutoregressionAD(n_steps=7*2, step_size=24, c=3.0) ")
+     autoregression_ad = AutoregressionAD(n_steps=7*2, step_size=24, c=3.0)
+     anomalies = autoregression_ad.fit_detect(s)
+     plot(s, anomaly=anomalies, ts_markersize=1, anomaly_color='red', anomaly_tag="marker", anomaly_markersize=2)
+     plt.show()
+
+    # outlier_detector = OutlierDetector(LocalOutlierFactor(contamination=0.05))
+    # anomalies = outlier_detector.fit_detect(df)
+     #plot(df, anomaly=anomalies, ts_linewidth=1, ts_markersize=3, anomaly_color='red', anomaly_alpha=0.3, curve_group='all');
 
 #-------------------------------------------
 def show_traffic_total_per_direction(start, end, companies=None):
@@ -407,16 +482,25 @@ def show_traffic_total_per_direction(start, end, companies=None):
      #range  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
      df['date'] = pd.to_datetime(df['date'])
      print(df.columns)
-
-
+     print("companies=",companies)
+     sns.histplot(df, x='MB', bins=70, hue='direction')
+     plt.show()
      #print("fill NA with 0")
      #df=df.fillna(0)
-
+     #show_adtk(df["MB"])
+ 
 
      df2=pd.pivot_table(df, values='MB', columns='direction' , index=['date'])
      print("df2.columns=")
      print(df2.columns)
      print(df2.dtypes)
+     print(df2)
+
+     df2.plot.hist(bins=100)
+     plt.show()
+
+     #sns.histplot(df2,x='MB', bins=50)
+     #plt.show()
      #range  = pd.date_range(start=df2["date"].min(), end=df2["date"].max(), freq='H')
 
      #df2.set_index('date', inplace=True)
@@ -430,18 +514,19 @@ def show_traffic_total_per_direction(start, end, companies=None):
      header="Hourly Traffic (MB). Table: "+table+ ". From " + start + "  till " + end
      if companies:
        if len(companies) == 1:
-           header += " Company: "+str(companies[0])
+           header += ". Company: "+str(companies[0])
        else:
-           header += " Companies: "+str(companies)
+           header += ". Companies: "+str(companies)
      #df2.plot(title=header, style=".") -- useful to see gaps
      #plt.show()
-
+     print("show_traffic_total_per_direction()")
      df2.plot(title=header)
      plt.show()
 
-     for d in [1,2]:
-        df2[df2["direction"] == d].hist("MB",  bins=35, rwidth=0.9 ) # layout=(3,1) by='direction',
-        plt.show()
+     #for d in [1,2]:
+        #df2[df2["direction"] == d].hist("MB",  bins=35, rwidth=0.9 ) # layout=(3,1) by='direction',
+     #   df2[str(d)].hist("MB",  bins=35, rwidth=0.9 ) # layout=(3,1) by='direction',
+      #  plt.show()
      # bins=25, grid=False, figsize=(12,8), color='#86bf91', zorder=2, rwidth=0.9
      #by='user_type', bins=25, grid=False, figsize=(8,10), layout=(3,1), sharex=True, color='#86bf91', zorder=2, rwidth=0.9)
      
@@ -464,17 +549,22 @@ def show_traffic_total(start, end, companies=None):
      #range  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
      df['date'] = pd.to_datetime(df['date'])
      print(df.columns)
+     #df["MB"]=df["MB"].astype("float64")
+     #print("after conversion df.columns=")
+     #print(df.columns)
 
      for company in companies:
         s=str(company)
         df[df["company"] == company].hist(column="MB", rwidth=0.9, bins=30)
         plt.show()
+
+        #show_adtk(df["MB"])
      #print("fill NA with 0")
      #df=df.fillna(0)
 
 
      df2=pd.pivot_table(df, values='MB', columns='company' , index=['date'])
-     print("df2.columns=")
+     print("AFTER pivot_table()  df2.columns=")
      print(df2.columns)
 
      #range  = pd.date_range(start=df2["date"].min(), end=df2["date"].max(), freq='H')
@@ -486,6 +576,7 @@ def show_traffic_total(start, end, companies=None):
      print(df2.describe())
      print(df2.info())
      print(df2.columns)
+     print("show_traffic_total")
      header="Hourly Traffic (MB). Table: "+table+ ". From " + start + "  till " + end
      if companies:
         header += " Companies: "+str(companies)
@@ -495,7 +586,17 @@ def show_traffic_total(start, end, companies=None):
      df2.plot(title=header)
      plt.show()
 
-     #for company in companies:
+     
+          
+
+     print("reindex")
+     interval  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
+     df.set_index('date', inplace=True)
+     d2=df.reindex(interval)
+     for company in companies:
+       print("company=",company)
+       ts = df[df["company"] == company]
+       show_adtk(ts["MB"])
      #   s=str(company)
      #   df2.hist(column=s )
      #   plt.show()
@@ -823,8 +924,9 @@ def predict_xgboost(df, comment, useLags):
         verbose=False)
 
      # Feature importance
-     plot_importance(reg, height=0.9)
-     plt.show()
+     if False:
+       plot_importance(reg, height=0.9)
+       plt.show()
 
      print("Before Prediction")
      test['Prediction'] = reg.predict(X_test)
@@ -931,24 +1033,32 @@ def main():
   #start='2020-10-01'
   #end  ='2021-01-01'
 
+  #COMPANY_LIST=(3659,3116, 3666)
+  #COMPANY_LIST=(3659,3116)
+  #COMPANY_LIST=(3659,)
+  #COMPANY_LIST=(3116, 3666)
+  COMPANY_LIST=(3659,)
+
   start = get_start()
   n_days=get_duration()
   end = (datetime.strptime(start, '%Y-%m-%d') + timedelta(days=n_days)).strftime('%Y-%m-%d')
 
-  #show_traffic_hourly_by_day_of_week(start, end)
-  #exit(0)
+  if 0:
+    for company in COMPANY_LIST:
+      show_traffic_hourly_per_day_of_week(start, end, company)
+
+   
   #show_top_traffic(start, end)
   #exit(0)
   #show_top_device_count(start, end)
   #exit(0)
 
-  #COMPANY_LIST=(3659,3116, 3666)
-  #COMPANY_LIST=(3659,3116)
-  COMPANY_LIST=(3659,)
-  #COMPANY_LIST=(3116, 3666)
 
-  if  False:
+
+  if  True:
     show_traffic_total(start, end, COMPANY_LIST)
+    #exit(0)
+
     for company in COMPANY_LIST:
       single_company=list()
       single_company.append(company)
@@ -956,7 +1066,7 @@ def main():
       show_traffic_total_per_direction(start, end, single_company)
       #show_traffic_protocol(start, end, single_company)
 
-  #exit(0)
+  exit(0)
 
   #show_device_count(start, end)
   #show_device_count(start, end, COMPANY_LIST)
@@ -981,11 +1091,11 @@ def main():
 #     plt.show()
 
      # index
-     range  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
+     date_range  = pd.date_range(start=df["date"].min(), end=df["date"].max(), freq='H')
      #df = df.set_index('date').reindex(r).fillna(1.0).rename_axis('date').reset_index()
      df['date'] = pd.to_datetime(df['date'])
      df.set_index('date', inplace=True)
-     df=df.reindex(range)
+     df=df.reindex(date_range)
      print(df.index)
      print(df.count())
      print( "df[MB].count()=")
@@ -1019,11 +1129,11 @@ def main():
      #plt.show()
      df=df.drop('n_msisdn', axis=1)
      useLags=True
-     useLags=False
+     #useLags=False
      comment="XGBoost. Hourly Traffic (MB) per # of devices. Company "+ str(company) + " direction="+str(direction)
      if not useLags:
        predict_xgboost(df, comment, useLags)
-       return
+       continue
 
      else:
         #feedto xgb  df[1...10] -> get back df[1,...,10xb]
@@ -1033,13 +1143,16 @@ def main():
        tail=df[-N_points:].copy()
          #head=df.copy()
        all = predict_xgboost(head, comment, useLags)
-
+       print (all.tail())
+       #for j in g(): #range(10):
+       #    print(j)
+       # continue
        print("i=0 after predict_xgboost len=",len(all))
      #if useLags:
        #for i in [0,1,2,3,4]:  # predict 1 point at the time
        #it=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
-       it=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
-       for i in it:
+       #it=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
+       for i in range(0, N_points):
            print("---i=", i)
 
 
@@ -1056,7 +1169,7 @@ def main():
            print (all.tail(10))
            print("Make sure the order of time above is correct!!! ")
            #exit(0)
-           all = predict_xgboost(all, comment, useLag)
+           all = predict_xgboost(all, comment, useLags)
            print("i=", i," after predict_xgboost len=",len(all))
        
        # Final plot
@@ -1113,5 +1226,6 @@ def main():
        x_join[['MB','Prediction']].plot(title=header, linestyle='-', marker='o', figsize=(25, 5))
        plt.show()
 
+
 if __name__ == "__main__":
-   main()
+  main()
