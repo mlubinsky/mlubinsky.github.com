@@ -3,6 +3,9 @@
 <https://habr.com/ru/company/yandex/blog/476826/>
 
 
+https://en.wikipedia.org/wiki/Quartile
+
+
 ### Awesome anomaly detection
 
 https://awesomeopensource.com/projects/anomaly-detection
