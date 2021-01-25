@@ -10,6 +10,8 @@ https://medium.com/swlh/my-preparation-journey-for-google-interviews-f41e2dc3cdf
 
 https://news.ycombinator.com/item?id=25716581 	Algorithms for Decision Making
 
+https://habr.com/ru/post/539166/ Algo
+
 https://habr.com/ru/company/JetBrains-education/blog/536032/  Видео курсов Computer Science клуба
 
 https://habr.com/ru/company/ruvds/blog/515258/. Algorithms
