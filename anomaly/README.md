@@ -15,6 +15,8 @@ https://www.youtube.com/watch?v=5nfe835TVcY
 
 https://www.youtube.com/watch?v=5ldj08YLYzM
 
+https://www.youtube.com/watch?v=vnoBkTa7arI.  Local Outlier Factor
+
 https://www.youtube.com/watch?v=B5mPqFOx09U
 
 https://www.youtube.com/watch?v=XPwCo4cqqt0
