@@ -14,6 +14,9 @@ https://github.com/rob-med/awesome-TS-anomaly-detection
 
 
 ### youtube
+
+https://www.youtube.com/watch?v=v5ijNXvlC5A Modern Time Series Analysis | SciPy 2019 Tutorial | Aileen Nielsen
+
 https://www.youtube.com/watch?v=5nfe835TVcY
 
 https://www.youtube.com/watch?v=5ldj08YLYzM
