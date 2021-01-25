@@ -9,6 +9,8 @@ https://awesomeopensource.com/projects/anomaly-detection
 
 https://github.com/rob-med/awesome-TS-anomaly-detection
 
+https://www.youtube.com/watch?v=XPwCo4cqqt0
+
 ### Matrix Profile
 
 https://matrixprofile.org/
