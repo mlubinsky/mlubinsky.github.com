@@ -1,5 +1,12 @@
 The number of time periods to forecast into the future is usually referred to as the forecasting horizon.
 
+Time-series forecasting problems can be classified into two broad categories based on the number of time-steps to be forecasted.
+
+- One-step Forecasting: Only next time period value to be forecasted like monthly sales in October based on monthly sales time-series till September or next day stock prices based on daily stock prices till today
+- Multi-step Forecasting: More than one future time-periods to be forecasted like monthly sales in October, November, and December using monthly sales till September or next 5 days’ temperature based on daily temperatures till today
+
+One-step-ahead forecasting is an easy-to-implement case wherein the model is trained on the next time period using N (window size) previous observations.
+
 https://towardsdatascience.com/ml-time-series-forecasting-the-right-way-cbf3678845ff
 
 https://github.com/madagra/energy-ts-analysis
@@ -13,6 +20,7 @@ However, it is not the best strategy for long time horizons since it accumulates
 This problem arises because previous forecast values are used to build the feature space for the current step.
 
 ### Direct strategy
+https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
 The direct forecasting strategy uses a different ML model for each forecasting step. More specifically, each model is trained using as target the time series shifted of the desired number of time periods into the future. Imagine for example that one wants to train a 4 steps ahead model. In this case, each timestamp in the target time series is chosen 4 steps ahead with respect to the corresponding timestamp in the feature set. In this way, we create a model trained to predict 4 steps ahead into the future. The same procedure is repeated for all forecasting steps. The size of the training/cross-validation set slightly decreases for each additional step ahead to perform.
 
 https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
