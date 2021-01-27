@@ -6,6 +6,8 @@ https://www.amazon.com/Machine-Learning-Time-Forecasting-Python-ebook/dp/B08PQ6Z
 
 https://www.amazon.com/Hands-Time-Analysis-Python-Techniques-ebook/dp/B08GLG46PQ/
 
+https://huyenchip.com/2019/07/21/machine-learning-interviews.html
+
 ## Machine Learning mastery
 
 https://machinelearningmastery.com/taxonomy-of-time-series-forecasting-problems/
