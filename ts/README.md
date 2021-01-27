@@ -1,4 +1,5 @@
 ## Books
+https://machinelearningmastery.com/deep-learning-for-time-series-forecasting/. $37
 
 https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook/dp/B07Y5WSCV2
 
@@ -65,6 +66,9 @@ For your system to be able to make online predictions, it has to have two compon
 - Real-time pipeline: a pipeline that can process data, input it into model, and return a prediction in real-time
 
 It can be more expensive to run a learning step on only one data point than on a batch (this can be mitigated by having hardware just powerful enough to process exactly one data point).
+
+https://arxiv.org/abs/1302.6927  Online Learning for Time Series Prediction
+
 
 ## Outlier in time series: tsmoothie
 
