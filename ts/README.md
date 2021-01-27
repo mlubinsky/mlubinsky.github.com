@@ -52,6 +52,18 @@ https://www.udemy.com/course/python-for-time-series-analysis-and-forecasting-ari
 
 https://www.youtube.com/watch?v=-r7wB9DJtiU&list=PL3N9eeOlCrP5cK0QRQxeJd6GrQvhAtpBK
 
+
+### Online (real-time) prediction
+
+https://huyenchip.com/2020/12/27/real-time-machine-learning.html
+
+For your system to be able to make online predictions, it has to have two components:
+
+- Fast inference: model that can make predictions in the order of milliseconds
+- Real-time pipeline: a pipeline that can process data, input it into model, and return a prediction in real-time
+
+It can be more expensive to run a learning step on only one data point than on a batch (this can be mitigated by having hardware just powerful enough to process exactly one data point).
+
 ## Outlier in time series: tsmoothie
 
 https://towardsdatascience.com/real-time-time-series-anomaly-detection-981cf1e1ca13
@@ -91,6 +103,7 @@ https://www.microprediction.com/blog/popular-timeseries-packages
 
 https://github.com/MaxBenChrist/awesome_time_series_in_python
 
+https://ts.gluon.ai/ GluonTS - Probabilistic Time Series Modeling¶
 
 <https://www.youtube.com/watch?v=9X_4i7zdSY8>  PyFlux
 
