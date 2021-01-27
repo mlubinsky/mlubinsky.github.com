@@ -39,8 +39,9 @@ https://marksaroufim.medium.com/the-robot-overlord-manual-d4ee709155bc
 
 https://github.com/ml-tooling/best-of-ml-python
 
+https://www.youtube.com/channel/UCh8IuVJvRdporrHi-I9H7Vw. Unfold Data Science
 
-Linea models: https://www.youtube.com/watch?v=68ABAU_V8qI
+Linear models: https://www.youtube.com/watch?v=68ABAU_V8qI
 
 Best ML Blogs: https://bloggingfordevs.com/machine-learning-blogs/
 
