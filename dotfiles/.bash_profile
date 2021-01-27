@@ -3,7 +3,10 @@ set -o vi
 
 export LSCOLORS=GxFxCxDxBxegedabagaced
 alias ls='ls -G'
-alias ll='ls -lG
+alias ll='ls -lG'
+
+alias g='git status'
+alias gd='git diff'
 
 #### Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
