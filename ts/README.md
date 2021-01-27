@@ -19,6 +19,8 @@ https://machinelearningmastery.com/start-here/#deep_learning_time_series
 
 ## Important articles:
 
+https://cs.nyu.edu/~mohri/pub/otbts.pdf
+
 https://habr.com/ru/company/ods/blog/327242/
 
 https://towardsdatascience.com/how-not-to-use-machine-learning-for-time-series-forecasting-avoiding-the-pitfalls-19f9d7adf424
