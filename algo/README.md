@@ -1,5 +1,7 @@
 https://news.ycombinator.com/item?id=25519718 Interview advice that got me offers 
 
+https://habr.com/ru/company/skillfactory/blog/539058/
+
 https://habr.com/ru/post/535216/ interview
 
 http://algorithmsbook.com/ Algorithms for Decision Making
