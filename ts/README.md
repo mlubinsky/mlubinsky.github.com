@@ -1,3 +1,22 @@
+The number of time periods to forecast into the future is usually referred to as the forecasting horizon.
+
+https://towardsdatascience.com/ml-time-series-forecasting-the-right-way-cbf3678845ff
+
+https://github.com/madagra/energy-ts-analysis
+
+https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
+
+### Recursive strategy
+The recursive forecasting strategy uses only a single model pre-trained for one-step-ahead forecasting. 
+At each forecasting step, this model is used to predict one-step ahead and the value obtained from the forecasting is then fed into the same model to predict the following step (similarly to a recursive function, hence the name) and so on and so forth until the desired forecasting horizon is reached. The recursive strategy is the least expensive method for forecasting since it uses the same model. 
+However, it is not the best strategy for long time horizons since it accumulates forecasting errors at each step. 
+This problem arises because previous forecast values are used to build the feature space for the current step.
+
+### Direct strategy
+The direct forecasting strategy uses a different ML model for each forecasting step. More specifically, each model is trained using as target the time series shifted of the desired number of time periods into the future. Imagine for example that one wants to train a 4 steps ahead model. In this case, each timestamp in the target time series is chosen 4 steps ahead with respect to the corresponding timestamp in the feature set. In this way, we create a model trained to predict 4 steps ahead into the future. The same procedure is repeated for all forecasting steps. The size of the training/cross-validation set slightly decreases for each additional step ahead to perform.
+
+https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
+
 ## Books
 https://machinelearningmastery.com/deep-learning-for-time-series-forecasting/. $37
 
@@ -258,7 +277,7 @@ pip install sktime-dl
 
 https://github.com/sktime/sktime-dl
 
-### XBoost LightGBM 
+### XGBoost LightGBM 
 ```
 conda list | grep xgboost
 _py-xgboost-mutex         2.0                       cpu_0
@@ -303,6 +322,9 @@ xgboost            1.2.0
 <https://github.com/atriptoparadise/Time-Series-with-machine-learning/blob/master/Time%20Series%20Forecasting%20with%20Stacked%20Machine%20Learning%20Models_DEMO.ipynb>
 
 <https://github.com/leepingtay/time_series_forecasting_energy/blob/master/Energy_Time_Series_Forecast_XGBoost.ipynb>
+
+https://towardsdatascience.com/ml-time-series-forecasting-the-right-way-cbf3678845ff
+
 
 ### Links
 
