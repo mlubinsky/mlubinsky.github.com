@@ -244,6 +244,10 @@ http://ai.stanford.edu/people/ronnyk/2009-ExPpitfalls.pdf
 
 <https://habr.com/ru/company/otus/blog/481936/>
 
+## Multi-armed bandit
+
+https://habr.com/ru/company/mailru/blog/539176/
+
 <https://en.wikipedia.org/wiki/Multi-armed_bandit>   Multi-armed bandit
 
 <https://www.optimizely.com/optimization-glossary/multi-armed-bandit/>
