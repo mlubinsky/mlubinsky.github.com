@@ -1,3 +1,5 @@
+https://mccme.ru/shen/progbook/7edition.pdf
+
 https://news.ycombinator.com/item?id=25519718 Interview advice that got me offers 
 
 https://habr.com/ru/company/skillfactory/blog/539058/
