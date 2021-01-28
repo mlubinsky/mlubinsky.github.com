@@ -10,6 +10,6 @@ https://chessopenings.com/ru/
 
 https://lichess.org/study
 
-### Chess engine
+### Chess engine in Rust
 
 https://github.com/adam-mcdaniel/chess-engine
