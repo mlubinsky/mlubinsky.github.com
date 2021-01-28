@@ -16,6 +16,9 @@ https://awesomeopensource.com/projects/anomaly-detection
 https://github.com/rob-med/awesome-TS-anomaly-detection
 
 
+https://www.dasca.org/world-of-big-data/article/identifying-and-removing-outliers-using-python-packages
+
+
 ### youtube
 
 https://www.youtube.com/watch?v=v5ijNXvlC5A Modern Time Series Analysis | SciPy 2019 Tutorial | Aileen Nielsen
