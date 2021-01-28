@@ -89,6 +89,10 @@ https://habr.com/ru/company/otus/blog/526400/ MySQL performance schema
 https://news.ycombinator.com/item?id=24698660
 
 
+
+### Aggregator
+https://planet.postgresql.org/
+
 ### PG and Python
 
 https://khashtamov.com/en/postgresql-with-python-and-psycopg2/
