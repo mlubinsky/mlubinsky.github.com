@@ -51,6 +51,9 @@ https://medium.com/@stephen.odaibo/docker-containers-python-virtual-environments
 
 <https://gist.github.com/chris-zen/9e61db6924bd37fbe414f648614ca4c5>
 
+https://www.youtube.com/watch?v=qJ-0N34Sa_E How to set up Python 3.8 for software development (In 2021)
+
+
 
 
 <http://www.iakovlev.org/index.html?p=5791&m=1&l1=2> All Python in single page
