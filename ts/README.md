@@ -289,6 +289,8 @@ https://github.com/sktime/sktime-dl
 
 https://bradleyboehmke.github.io/HOML/gbm.html#xgboost
 
+https://www.shirin-glander.de/2018/11/ml_basics_gbm/
+
 ```
 conda list | grep xgboost
 _py-xgboost-mutex         2.0                       cpu_0
