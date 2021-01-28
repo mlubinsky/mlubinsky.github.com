@@ -246,6 +246,8 @@ http://ai.stanford.edu/people/ronnyk/2009-ExPpitfalls.pdf
 
 ## Multi-armed bandit
 
+https://visualstudiomagazine.com/articles/2019/06/01/thompson-sampling.aspx   How to Do Thompson Sampling Using Python
+
 <https://en.wikipedia.org/wiki/Multi-armed_bandit>   Multi-armed bandit
 
 https://lilianweng.github.io/lil-log/2018/01/23/the-multi-armed-bandit-problem-and-its-solutions.html
