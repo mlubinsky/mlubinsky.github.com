@@ -248,7 +248,13 @@ http://ai.stanford.edu/people/ronnyk/2009-ExPpitfalls.pdf
 
 <https://en.wikipedia.org/wiki/Multi-armed_bandit>   Multi-armed bandit
 
+https://lilianweng.github.io/lil-log/2018/01/23/the-multi-armed-bandit-problem-and-its-solutions.html
+
+https://en.wikipedia.org/wiki/Thompson_sampling
+
 https://towardsdatascience.com/solving-multiarmed-bandits-a-comparison-of-epsilon-greedy-and-thompson-sampling-d97167ca9a50
+
+https://web.stanford.edu/~bvr/pubs/TS_Tutorial.pdf
 
 https://medium.com/analytics-vidhya/multi-armed-bandit-analysis-of-thompson-sampling-algorithm-6375271f40d1
 
