@@ -250,6 +250,8 @@ http://ai.stanford.edu/people/ronnyk/2009-ExPpitfalls.pdf
 
 https://lilianweng.github.io/lil-log/2018/01/23/the-multi-armed-bandit-problem-and-its-solutions.html
 
+https://www.youtube.com/watch?v=yQwJiFFIgjA
+
 https://en.wikipedia.org/wiki/Thompson_sampling
 
 https://arxiv.org/pdf/1707.02038.pdf A Tutorial on Thompson Sampling
