@@ -286,6 +286,9 @@ pip install sktime-dl
 https://github.com/sktime/sktime-dl
 
 ### XGBoost LightGBM 
+
+https://bradleyboehmke.github.io/HOML/gbm.html#xgboost
+
 ```
 conda list | grep xgboost
 _py-xgboost-mutex         2.0                       cpu_0
