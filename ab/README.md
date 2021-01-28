@@ -246,6 +246,8 @@ http://ai.stanford.edu/people/ronnyk/2009-ExPpitfalls.pdf
 
 ## Multi-armed bandit
 
+https://towardsdatascience.com/hompson-sampling-for-multi-armed-bandit-problems-part-1-b750cbbdad34
+
 https://habr.com/ru/company/mailru/blog/539176/
 
 <https://en.wikipedia.org/wiki/Multi-armed_bandit>   Multi-armed bandit
