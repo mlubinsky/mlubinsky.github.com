@@ -65,6 +65,8 @@ http://www.cs.binghamton.edu/~pyang/ramp.pdf
 
 https://scikit-learn.org/stable/modules/outlier_detection.html
 
+https://github.com/KDD-OpenSource/DeepADoTS
+
 https://www.youtube.com/watch?v=xhuv8NaaroA
 
 https://github.com/aabdulaal/Practical_TS_Talk
