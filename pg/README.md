@@ -3,6 +3,8 @@
 
 https://ruddra.com/install-mysqlclient-macos/
 
+https://habr.com/ru/post/539792/
+
 connection via SSH tunneling
 
 ```
