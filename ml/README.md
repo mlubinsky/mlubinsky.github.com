@@ -1,3 +1,7 @@
+Gaussian process
+
+https://towardsdatascience.com/implement-a-gaussian-process-from-scratch-2a074a470bce
+
 ### Books 
 
 https://projecteuclid.org/euclid.ss/1177011137   Marcov Chain Monte Carlo article
