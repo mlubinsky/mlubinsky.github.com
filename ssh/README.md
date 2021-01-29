@@ -184,6 +184,23 @@ User user
 Hostname hostname
 ```
 
+https://www.freecodecamp.org/news/how-to-manage-multiple-ssh-keys/
+
+```
+ssh-add -l    (show)
+ssh-add -D (clear)
+ssh-add my)id_rsa
+
+cat ~/.ssh/config
+
+Host gitlab.eng.roku.com
+	   HostName gitlab.eng.roku.com
+	   User git
+	   IdentityFile ~/.ssh/original_id_rsa
+	   IdentitiesOnly yes
+
+
+```
 http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/
 
 https://habrahabr.ru/post/122445/
