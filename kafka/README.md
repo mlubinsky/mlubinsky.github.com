@@ -52,6 +52,8 @@ There is pdf version of this file:
 
 ## RabbitMQ vs Kafka
 
+https://habr.com/ru/company/southbridge/blog/536164/
+
 <https://www.infoq.com/presentations/rabbitmq-kafka/> 
 
 <https://habr.com/ru/company/itsumma/blog/471858/> 
