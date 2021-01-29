@@ -1,3 +1,5 @@
+https://habr.com/ru/post/538954/ chain of responsibility and command design pattern
+
 ## C
 
 while(0) in macro https://bowero.nl/blog/2020/10/25/defining-c-macros-the-right-way/
