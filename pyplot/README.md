@@ -147,6 +147,8 @@ https://towardsdatascience.com/data-visualization-with-bokeh-in-python-part-one-
 
 ### Plotnine
 
+https://youtu.be/z6xNKZZMWgU
+
 <https://plotnine.readthedocs.io/en/stable/> 
 
 https://github.com/has2k1/plotnine-examples/
