@@ -1,4 +1,7 @@
 ### Books 
+
+https://projecteuclid.org/euclid.ss/1177011137   Marcov Chain Monte Carlo article
+
 https://www.confetti.ai/assets/ml-primer/ml_primer.pdf Primer
 
 Book: Dive into Deep learning
