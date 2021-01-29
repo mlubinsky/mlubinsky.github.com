@@ -147,6 +147,8 @@ https://towardsdatascience.com/data-visualization-with-bokeh-in-python-part-one-
 
 ### Plotnine
 
+https://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html#1
+
 https://youtu.be/z6xNKZZMWgU
 
 <https://plotnine.readthedocs.io/en/stable/> 
