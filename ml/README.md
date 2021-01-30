@@ -2,9 +2,12 @@ Gaussian process
 
 https://towardsdatascience.com/implement-a-gaussian-process-from-scratch-2a074a470bce
 
-### Books 
+https://sandipanweb.wordpress.com/2020/12/07/bayesian-machine-learning-mcmc-and-probabilistic-programming-with-python/
 
 https://projecteuclid.org/euclid.ss/1177011137   Marcov Chain Monte Carlo article
+
+### Books 
+
 
 https://www.confetti.ai/assets/ml-primer/ml_primer.pdf Primer
 
