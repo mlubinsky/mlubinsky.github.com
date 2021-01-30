@@ -12,6 +12,8 @@ https://towardsdatascience.com/build-dashboards-in-less-than-10-lines-of-code-83
 
 ## StreamIt
 
+https://towardsdatascience.com/plotly-dash-vs-streamlit-which-is-the-best-library-for-building-data-dashboard-web-apps-97d7c98b938c
+
 <https://www.youtube.com/watch?v=JwSS70SZdyM>
 
 ```
