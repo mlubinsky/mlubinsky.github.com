@@ -64,6 +64,10 @@ https://spapas.github.io/2016/09/21/pandas-pivot-table-primer/
 
 https://machinelearningknowledge.ai/pandas-assign-pandas-transpose-pandas-pivot/
 
+
+### data describe
+https://github.com/data-describe/data-describe
+
 ###  pandas-profiling:
 https://github.com/JosPolfliet/pandas-profiling
 
