@@ -380,6 +380,10 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4382372/.  Virus modeling
 
 ## Maxwell
 
+https://andrealommen.github.io/PHY309/lectures
+
+ http://www.av8n.com/physics/maxwell-ga.htm
+
 <https://github.com/photonlines/Intuitive-Guide-to-Maxwells-Equations>
 
 <https://news.ycombinator.com/item?id=23700295>
