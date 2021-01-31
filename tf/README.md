@@ -223,6 +223,8 @@ error_reporter > Report ( "x_value: %f, y_value: %f \n " , x_value , y_value );
 
 ## PyTorch
 
+https://nn.labml.ai/
+
 <https://github.com/omerbsezer/Fast-Pytorch>
 
 ## Keras
