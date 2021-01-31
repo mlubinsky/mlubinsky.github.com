@@ -1,3 +1,5 @@
+https://github.com/MathInspector/MathInspector
+
 <https://habr.com/ru/post/519930/> Julia language
 
 https://lwn.net/SubscriberLink/835930/47c363bef07134a4/  Pluto - Notebook for Julia (similar to Jupyter)
