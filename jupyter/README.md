@@ -356,6 +356,11 @@ Another resampling example:
 df.groupby('house').resample('D').mean().head(4)
 ```
 
+https://predictivehacks.com/how-to-unlock-the-power-of-datetime-in-pandas/
+
+
+
+
 https://stackoverflow.com/questions/40419060/search-missing-timestamp-and-display-in-python
 
 
@@ -429,6 +434,32 @@ Freq: H, Name: Val, Length: 73, dtype: int64
 
 ### Groupby apply map lambda
 
+https://predictivehacks.com/pandas-groupby-tips/
+```
+df.groupby('Gender')['ColA'].mean().   -> will create Index 'Gender'
+
+df.groupby('Gender')['ColA'].mean().reset_index().  -> will NOT create Index 'Gender'
+
+df.groupby('Gender', as_index=False)['ColA'].mean(). ->  -> will NOT create Index 'Gender'
+
+df.groupby(['Gender', 'Type'])['ColA'].mean()
+
+
+grouped = df.groupby('Type')
+for g in grouped:
+    print(g)
+
+
+grouped.get_group('b')
+
+df.groupby('Gender').agg({'ColA':['mean', 'var'], 
+                          'ColB':['min', 'max'] })
+
+
+df.groupby('Gender').agg({'ColA':[('ColA_Mean','mean'), ('ColA_Var', 'var')], 
+                          'ColB':[('ColB_Min','min'), ('ColB_Max', 'max')] })
+
+```
 https://queirozf.com/entries/pandas-dataframe-groupby-examples
 
 <https://pbpython.com/groupby-agg.html>
