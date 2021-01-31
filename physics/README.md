@@ -20,6 +20,10 @@ https://mipt.ru/education/chair/theoretical_physics/courses/.
  https://news.ycombinator.com/item?id=25588888   Well, Actually – Physics Answers 
  
  
+bitvector.com. Geometric Algebra 
+
+https://www.youtube.com/watch?v=x7eLEtmq6PY Professor Anthony Lasenby. A new language for physics.
+
 
 ## Articles
 what is photon? 
