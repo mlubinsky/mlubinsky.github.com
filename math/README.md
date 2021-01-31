@@ -2,7 +2,9 @@ BetterExplained.org
 
 Brillant.org
 
-https://github.com/MathInspector/MathInspector
+https://github.com/MathInspector/MathInspector. dev env with scipy
+
+https://b-ok.org/
 
 https://etudes.ru/sketches/
 
