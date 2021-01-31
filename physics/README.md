@@ -36,6 +36,8 @@ http://www.physics.umd.edu/courses/Phys401/bedaque07/misconnzz.pdf Common Miscon
 
 https://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf.  Dyson. Why is Maxwell theory so hard?
 
+https://habr.com/ru/post/539188/  translation the article above to russian
+
 ## QM
 
 http://lightcone.ru/
