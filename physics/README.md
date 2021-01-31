@@ -382,6 +382,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4382372/.  Virus modeling
 
 https://andrealommen.github.io/PHY309/lectures
 
+https://michaelallenwarner.github.io/physics/2019/07/16/vector-triple-products-in-minkowski-spacetime.html
+
  http://www.av8n.com/physics/maxwell-ga.htm
 
 <https://github.com/photonlines/Intuitive-Guide-to-Maxwells-Equations>
