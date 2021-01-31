@@ -2,6 +2,8 @@ BetterExplained.org
 
 Brillant.org
 
+https://github.com/MathInspector/MathInspector
+
 https://etudes.ru/sketches/
 
 https://news.ycombinator.com/item?id=25100241
