@@ -1,5 +1,8 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+
+https://www.youtube.com/watch?v=pkfDYOZ1p4Y Toy models, Dr Tadashi Tokieda
+
 Books:  http://alexandr4784.narod.ru/tf.html
 
 http://www.all-fizika.com/article/index.php?id_article=35  Фейнмановские лекции
