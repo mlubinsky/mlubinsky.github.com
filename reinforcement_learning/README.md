@@ -1,12 +1,14 @@
 <https://sites.ualberta.ca/~szepesva/RLBook.html>
 
+https://corecursive.com/061-reinforcement-learning/
+
 <http://incompleteideas.net/book/RLbook2018.pdf>
 
 <https://news.ycombinator.com/item?id=19191746>
 
 <http://incompleteideas.net/book/the-book.html> .   Sutton Barto book 
 
-<https://www.newworldai.com/reinforcement-learning-course-deepmind/> . Cource by Deep Mind
+<https://www.newworldai.com/reinforcement-learning-course-deepmind/> . Course by Deep Mind
 
 <https://github.com/dennybritz/reinforcement-learning>
 
