@@ -18,6 +18,8 @@ https://hvplot.holoviz.org/ hvplot !!!
 
 http://seaborn.pydata.org/examples/index.html
 
+https://habr.com/ru/company/otus/blog/540526/
+
 <https://view.datalore.jetbrains.com/notebook/v8mLoENq8XTfmStTCLNMV6> seaborn
 
 <https://soliddata.io/index.php/2020/03/31/how-to-do-data-visualization-with-python/> seaborn
