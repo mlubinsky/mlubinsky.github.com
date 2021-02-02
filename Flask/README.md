@@ -1,3 +1,9 @@
+Pyotr is a Python library for serving and consuming REST APIs based on OpenAPI specifications. Its name is acronym of "Python OpenAPI to REST".
+
+https://pyotr.readthedocs.io/en/latest/
+
+
+
 <https://www.youtube.com/watch?v=TG8xZV5YCI4>
 
 <https://habr.com/ru/post/497724/>
