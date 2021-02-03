@@ -6,6 +6,8 @@ https://sandipanweb.wordpress.com/2020/12/07/bayesian-machine-learning-mcmc-and-
 
 https://projecteuclid.org/euclid.ss/1177011137   Marcov Chain Monte Carlo article
 
+https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distributions-526b11a24359
+
 ### Books 
 
 
