@@ -100,6 +100,9 @@ https://planet.postgresql.org/
 https://khashtamov.com/en/postgresql-with-python-and-psycopg2/
 
 
+## PG
+
+https://habr.com/ru/company/tensor/blog/540572/
 
 https://sql-info.de/postgresql/postgres-gotchas.html PG gotchas
 
