@@ -1,5 +1,6 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+https://www.piter.com/product/teoreticheskiy-minimum-spetsialnaya-teoriya-otnositelnosti-i-klassicheskaya-teoriya-polya
 
 https://www.youtube.com/watch?v=pkfDYOZ1p4Y Toy models, Dr Tadashi Tokieda
 
@@ -107,6 +108,21 @@ http://www.av8n.com/physics/maxwell-ga.htm
 
 https://news.ycombinator.com/item?id=25219503
 
+## Maxwell
+
+https://andrealommen.github.io/PHY309/lectures
+
+https://michaelallenwarner.github.io/physics/2019/07/16/vector-triple-products-in-minkowski-spacetime.html
+
+ http://www.av8n.com/physics/maxwell-ga.htm
+
+<https://github.com/photonlines/Intuitive-Guide-to-Maxwells-Equations>
+
+<https://news.ycombinator.com/item?id=23700295>
+
+<https://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf>
+
+<https://news.ycombinator.com/item?id=22810867>
 
  ### Magnetism
  
@@ -381,21 +397,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4382372/.  Virus modeling
 
 <http://www.damtp.cam.ac.uk/user/tong/kintheory/one.pdf> .  Kinetic Theory
 
-## Maxwell
 
-https://andrealommen.github.io/PHY309/lectures
-
-https://michaelallenwarner.github.io/physics/2019/07/16/vector-triple-products-in-minkowski-spacetime.html
-
- http://www.av8n.com/physics/maxwell-ga.htm
-
-<https://github.com/photonlines/Intuitive-Guide-to-Maxwells-Equations>
-
-<https://news.ycombinator.com/item?id=23700295>
-
-<https://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf>
-
-<https://news.ycombinator.com/item?id=22810867>
 
 ## Chaos
 <https://youtu.be/ovJcsL7vyrk>
