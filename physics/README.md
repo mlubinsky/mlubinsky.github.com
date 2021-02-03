@@ -46,6 +46,12 @@ https://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf.  Dyson. Why is Maxwell theor
 
 https://habr.com/ru/post/539188/  translation the article above to russian
 
+
+## Mechanics
+
+https://nadoumnet.d3.ru/termekh-khimfak-mgu-forsh-2110805/
+
+
 ## QM
 
 http://lightcone.ru/
