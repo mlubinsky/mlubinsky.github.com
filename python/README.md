@@ -9,6 +9,8 @@ https://gto76.github.io/python-cheatsheet/  Cheetsheet
 
 f-strings: <https://miguendes.me/amp/73-examples-to-help-you-master-pythons-f-strings>
 
+Python 2.7 pip.  curl https://bootstrap.pypa.io/2.7/get-pip.py --output get-pip.py
+
 
 ## Date arithmetic:
 
