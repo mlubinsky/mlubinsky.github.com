@@ -25,6 +25,13 @@ https://www.arxiv.org/
 
 https://www.samueltaylor.org/articles/index.html
 
+
+
+### All Pragmatic Programming Books
+
+https://medium.com/pragmatic-programmers/directory-of-pragmatic-programmer-books-on-medium-6a5cbadbd4b4
+
+
 ### CRDT. 
 https://josephg.com/blog/crdts-are-the-future/
 
