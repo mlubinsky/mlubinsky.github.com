@@ -4,11 +4,13 @@ Brillant.org
 
 https://github.com/MathInspector/MathInspector. dev env with scipy
 
-https://b-ok.org/
+https://b-ok.org/ .  BOOKS
 
 https://etudes.ru/sketches/
 
 https://news.ycombinator.com/item?id=25100241
+
+https://medium.com/cantors-paradise
 
 ## группы
 
