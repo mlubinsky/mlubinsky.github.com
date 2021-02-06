@@ -60,6 +60,31 @@ Redshift Optimization by AWS
 
 <https://help.looker.com/hc/en-us/articles/360001288108-Dynamically-Select-Fields-Using-Parameters>
 
+## N-Tile
+
+https://docs.aws.amazon.com/redshift/latest/dg/r_WF_NTILE.html
+
+WITH A as (
+select 1 as x
+union all
+select 2 as x
+union all
+select 3 as x
+union all
+select 4 as x
+union all
+select 5 as x
+union all
+select 6 as x
+union all
+select 7 as x
+)
+SELECT x, ntile(3)
+OVER (order by x ASC) 
+FROM A;
+ 
+
+
 ## GRANT Permission
 https://aodba.com/how-to-create-a-schema-and-grant-access-to-it-in-aws-redshift/
 ```
