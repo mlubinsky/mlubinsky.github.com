@@ -57,6 +57,9 @@ an axis of 0 refers to the index, an axis of 1 refers to the columns
  
 https://stackoverflow.com/questions/29432629/correlation-matrix-using-pandas
 
+https://github.com/adamerose/pandasgui
+
+
 <https://machinelearningmastery.com/calculate-feature-importance-with-python/>
 
 
@@ -68,6 +71,8 @@ https://machinelearningknowledge.ai/pandas-assign-pandas-transpose-pandas-pivot/
 
 
 ### data describe
+https://github.com/adamerose/pandasgui
+
 https://github.com/data-describe/data-describe
 
 ###  pandas-profiling:
