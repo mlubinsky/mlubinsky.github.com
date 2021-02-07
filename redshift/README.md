@@ -63,7 +63,7 @@ Redshift Optimization by AWS
 ## N-Tile
 
 https://docs.aws.amazon.com/redshift/latest/dg/r_WF_NTILE.html
-
+```
 WITH A as (
 select 1 as x
 union all
@@ -79,9 +79,11 @@ select 6 as x
 union all
 select 7 as x
 )
-SELECT x, ntile(3)
-OVER (order by x ASC) 
-FROM A;
+select ntile, avg(x) FROM 
+( 
+    SELECT x, ntile(3)   OVER (order by x ASC) FROM A
+) B group by ntile;
+```
  
 
 
