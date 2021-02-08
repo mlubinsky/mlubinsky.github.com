@@ -43,7 +43,11 @@ https://ruddra.com/fix-python-after-brew-upgrade/
 
 <https://news.ycombinator.com/item?id=24091707>
 
+Page Up:  Fn + Up Arrow 
 
+### Finder - how to go to parent directory
+
+Command+↑ (Command + Up Arrow) 
 
 ### CyberChef
 https://gchq.github.io/CyberChef
@@ -98,23 +102,27 @@ https://github.com/nikitavoloboev/knowledge
 
 https://lobste.rs/s/aqwsn5/praise_autohotkey
 
-####
 
-Page Up:  Fn + Up Arrow 
 
 ###  NNN - terminal navigator
 
 https://github.com/jarun/nnn
 
-### Finder - how to go to parent directory
 
-Command+↑ (Command + Up Arrow) 
 
 ### Split screen verically
 
 <https://support.apple.com/en-us/HT204948>
 
 <https://youtu.be/cYGrlEtqaVw>
+
+###   Java on Mac
+
+<https://medium.com/@danielnenkov/multiple-jdk-versions-on-mac-os-x-with-jenv-5ea5522ddc9b>
+
+<https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a> 
+
+https://dev.to/gabethere/installing-java-on-a-mac-using-homebrew-and-jevn-12m8
 
 ### Apps 
 <https://github.com/ytdl-org/youtube-dl/> youtube downloader
@@ -233,7 +241,8 @@ JAVA_HOME="$(/usr/libexec/java_home --version 1.8)" exec "/usr/local/Cellar/kafk
 
 <https://dbngin.com/> . Free All-in-One Database Version Management Tool
 
-<https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a> 
+
+
 
 <https://github.com/serhii-londar/open-source-mac-os-apps>
 
@@ -264,9 +273,7 @@ https://github.com/vsaravind007/nodeScratchpad   Run JS code snippets
 
 <https://cyberduck.io/> .  free
 
-### jEnv Java
 
-<https://medium.com/@danielnenkov/multiple-jdk-versions-on-mac-os-x-with-jenv-5ea5522ddc9b>
 
 ### Anaconda on Mac:
 
