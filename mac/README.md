@@ -20,9 +20,11 @@ https://kapeli.com/dash
 ### Chrome extensions
 The great suspender
 
+https://www.zdnet.com/article/google-kills-the-great-suspender-heres-what-you-should-do-next/
+
 chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=The%20Great%20Suspender%20-%20Chrome%20Web%20Store&pos=0&uri=https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg/related
 
-The session Buddy
+The session buddy
 
 chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=Session%20Buddy%20-%20Chrome%20Web%20Store&pos=0&uri=https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko/related
 
