@@ -58,6 +58,8 @@ http://lightcone.ru/
 
 https://rqc.ru/research#groups
 
+Неравенства Белла https://habr.com/ru/post/540620/
+
 https://www.youtube.com/watch?v=7mUQtujgUUo . Страупе С. С. - Введение в квантовую физику - Квантовая информация
 
 
