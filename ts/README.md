@@ -2,6 +2,8 @@
 
 https://otexts.com/fpp2/stationarity.html
 
+https://coderzcolumn.com/tutorials/data-science/how-to-remove-trend-and-seasonality-from-time-series-data-using-python-pandas
+
 https://analyzingalpha.com/time-series-analysis-with-python
 
 https://medium.com/@nathanvenos/time-series-analysis-in-python-ab582dd803cd
