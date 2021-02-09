@@ -1,7 +1,14 @@
 # Removing trends from time series
+
+https://otexts.com/fpp2/stationarity.html
+
 https://analyzingalpha.com/time-series-analysis-with-python
 
 https://medium.com/@nathanvenos/time-series-analysis-in-python-ab582dd803cd
+
+https://towardsdatascience.com/removing-non-linear-trends-from-timeseries-data-b21f7567ed51
+
+https://datascience.stackexchange.com/questions/56857/which-method-to-use-to-remove-trend-from-time-series
 
 https://www.kaggle.com/arunreddy1090/how-to-use-remove-trend-information-fm-timeseries
 
@@ -22,9 +29,21 @@ combined.plot(figsize=(20,10), linewidth=5, fontsize=20)
 plt.xlabel('Year', fontsize=20);
 ```
 
+pandas diff()
 
+```
+df.diff().plot(figsize=(20,10), linewidth=5, fontsize=20)
+plt.xlabel('Year', fontsize=20);
+```
 
-https://github.com/hippke/wotan
+#### Autocorrelation:
+on the x-axis, you have the lag and on the y-axis, you have how correlated the time series is with itself at that lag.
+
+```
+pd.plotting.autocorrelation_plot(some_df);
+```
+
+https://github.com/hippke/wotan smoothing library
 
 The number of time periods to forecast into the future is usually referred to as the forecasting horizon.
 
