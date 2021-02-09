@@ -5,6 +5,7 @@ https://medium.com/@nathanvenos/time-series-analysis-in-python-ab582dd803cd
 
 https://www.kaggle.com/arunreddy1090/how-to-use-remove-trend-information-fm-timeseries
 
+https://www.bounteous.com/insights/2020/09/15/forecasting-time-series-model-using-python-part-one/
 
 https://github.com/hippke/wotan
 
