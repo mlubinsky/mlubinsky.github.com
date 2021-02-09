@@ -302,6 +302,11 @@ Deploying to AWS
 
 ## AutoML
 
+
+https://habr.com/ru/company/otus/blog/541378/ Xgboost-AutoTune
+
+https://github.com/SylwiaOliwia2/xgboost-AutoTune Xgboost-AutoTune
+
 https://github.com/mljar/mljar-supervised
 
 https://github.com/openml/automlbenchmark
