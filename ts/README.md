@@ -7,6 +7,23 @@ https://www.kaggle.com/arunreddy1090/how-to-use-remove-trend-information-fm-time
 
 https://www.bounteous.com/insights/2020/09/15/forecasting-time-series-model-using-python-part-one/
 
+https://www.datacamp.com/community/tutorials/time-series-analysis-tutorial
+
+Rolling avg:
+```
+window_size=12
+df.rolling(window_size).mean().plot(figsize=(20,10), linewidth=5, fontsize=20)
+```
+How to concat and plot 2 pandas dataframes
+```
+combined = pd.concat([df1.rolling(12).mean(), df2.rolling(12).mean()], axis=1)
+
+combined.plot(figsize=(20,10), linewidth=5, fontsize=20)
+plt.xlabel('Year', fontsize=20);
+```
+
+
+
 https://github.com/hippke/wotan
 
 The number of time periods to forecast into the future is usually referred to as the forecasting horizon.
