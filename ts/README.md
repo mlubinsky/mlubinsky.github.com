@@ -18,6 +18,8 @@ https://www.kaggle.com/arunreddy1090/how-to-use-remove-trend-information-fm-time
 
 https://www.bounteous.com/insights/2020/09/15/forecasting-time-series-model-using-python-part-one/
 
+https://www.kdnuggets.com/2020/01/predict-electricity-consumption-time-series-analysis.html
+
 https://www.datacamp.com/community/tutorials/time-series-analysis-tutorial
 
 Rolling avg:
