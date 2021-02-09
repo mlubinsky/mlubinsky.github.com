@@ -56,7 +56,12 @@ https://nadoumnet.d3.ru/termekh-khimfak-mgu-forsh-2110805/
 
 http://lightcone.ru/
 
+https://habr.com/ru/post/539210/
+
 https://rqc.ru/research#groups
+
+
+https://postnauka.ru/specials/quantumworld
 
 Неравенства Белла https://habr.com/ru/post/540620/
 
