@@ -152,6 +152,7 @@ https://medium.com/@srajaninnov/find-the-diameter-of-a-binary-tree-efc45b9129a7
 <https://habr.com/ru/company/JetBrains-education/blog/495014/>
 
 
+https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 
 
 ## Merging 2 sorted arrays
