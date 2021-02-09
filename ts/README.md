@@ -2,6 +2,8 @@
 
 https://otexts.com/fpp2/stationarity.html
 
+https://machinelearningmastery.com/time-series-trends-in-python/#:~:text=Removing%20a%20Trend&text=An%20identified%20trend%20can%20be,said%20to%20be%20trend%20stationary.
+
 https://coderzcolumn.com/tutorials/data-science/how-to-remove-trend-and-seasonality-from-time-series-data-using-python-pandas
 
 https://analyzingalpha.com/time-series-analysis-with-python
