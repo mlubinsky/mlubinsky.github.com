@@ -3,6 +3,7 @@ https://analyzingalpha.com/time-series-analysis-with-python
 
 https://medium.com/@nathanvenos/time-series-analysis-in-python-ab582dd803cd
 
+https://www.kaggle.com/arunreddy1090/how-to-use-remove-trend-information-fm-timeseries
 
 The number of time periods to forecast into the future is usually referred to as the forecasting horizon.
 
