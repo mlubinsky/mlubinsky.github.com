@@ -34,6 +34,10 @@ java -jar h2o.jar
 
 https://docs.h2o.ai/h2o/latest-stable/h2o-docs/flow.html
 
+https://towardsdatascience.com/h2o-for-inexperienced-users-7bc064124264
+
+https://www.coursera.org/learn/machine-learning-h2o
+
 Time series example
 
 https://github.com/SeanPLeary/time-series-h2o-automl-example/blob/master/h2o_automl_example_with_multivariate_time_series.ipynb
