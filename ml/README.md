@@ -8,6 +8,10 @@ https://projecteuclid.org/euclid.ss/1177011137   Marcov Chain Monte Carlo articl
 
 https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distributions-526b11a24359
 
+
+### Apache Spark
+brew install apache-spark
+
 ### H2O
 
 version 3.32.0.4
