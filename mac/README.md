@@ -39,6 +39,25 @@ https://ruddra.com/fix-python-after-brew-upgrade/
 
 <https://gist.github.com/chris-zen/9e61db6924bd37fbe414f648614ca4c5>
 
+
+###   Java on Mac
+
+  brew install jenv 
+  
+To activate jenv, add the following to your /Users/miclub01/.bash_profile:
+
+  export PATH="$HOME/.jenv/bin:$PATH"
+  eval "$(jenv init -)"
+```
+ echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
+ echo 'eval "$(jenv init -)"' >> ~/.bash_profile
+```
+<https://medium.com/@danielnenkov/multiple-jdk-versions-on-mac-os-x-with-jenv-5ea5522ddc9b>
+
+<https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a> 
+
+https://dev.to/gabethere/installing-java-on-a-mac-using-homebrew-and-jevn-12m8
+
 ### Mac shortcuts
 
 <https://support.apple.com/en-us/HT201236>
@@ -118,13 +137,6 @@ https://github.com/jarun/nnn
 
 <https://youtu.be/cYGrlEtqaVw>
 
-###   Java on Mac
-
-<https://medium.com/@danielnenkov/multiple-jdk-versions-on-mac-os-x-with-jenv-5ea5522ddc9b>
-
-<https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a> 
-
-https://dev.to/gabethere/installing-java-on-a-mac-using-homebrew-and-jevn-12m8
 
 ### Apps 
 <https://github.com/ytdl-org/youtube-dl/> youtube downloader
