@@ -27,6 +27,12 @@ conda install -c h2oai h2o
 
 https://pypi.org/project/h2o/
 
+### H2O Web GUI 
+java -jar h2o.jar
+
+ http://localhost:54321
+
+https://docs.h2o.ai/h2o/latest-stable/h2o-docs/flow.html
 
 ### Books 
 
