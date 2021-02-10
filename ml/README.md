@@ -40,6 +40,8 @@ https://www.coursera.org/learn/machine-learning-h2o
 
 Time series example
 
+https://www.h2o.ai/products-dai-timeseries/
+
 https://github.com/SeanPLeary/time-series-h2o-automl-example/blob/master/h2o_automl_example_with_multivariate_time_series.ipynb
 
 https://stackoverflow.com/questions/56666876/how-to-predict-future-values-of-time-series-using-h2o-predict
