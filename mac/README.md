@@ -51,6 +51,10 @@ To activate jenv, add the following to your /Users/miclub01/.bash_profile:
 ```
  echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
  echo 'eval "$(jenv init -)"' >> ~/.bash_profile
+ 
+ brew tap AdoptOpenJDK/openjdk
+ brew  install --cask adoptopenjdk8
+
 ```
 <https://medium.com/@danielnenkov/multiple-jdk-versions-on-mac-os-x-with-jenv-5ea5522ddc9b>
 
