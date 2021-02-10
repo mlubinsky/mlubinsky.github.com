@@ -4,6 +4,12 @@ https://analyzingalpha.com/time-series-analysis-with-python
 
 https://towardsdatascience.com/ml-time-series-forecasting-the-right-way-cbf3678845ff XGBoost
 
+### XGBoost
+https://filip-wojcik.com/talks/xgboost_forecasting_eng.pdf
+
+https://towardsdatascience.com/forecasting-stock-prices-using-xgboost-a-detailed-walk-through-7817c1ff536a
+
+
 ## Hyperopt 
 https://hyperopt.github.io/hyperopt/
 
