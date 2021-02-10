@@ -14,6 +14,8 @@ https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
 ## Hyperopt 
 https://hyperopt.github.io/hyperopt/
 
+## Errors: RMSE, MAPE, and MAE 
+
 ## Removing trends from time series
 
 https://otexts.com/fpp2/stationarity.html
