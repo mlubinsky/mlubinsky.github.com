@@ -10,6 +10,9 @@ https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distribu
 
 
 ### Apache Spark
+
+https://sparkbyexamples.com/h2o-sparkling-water/install-running-sparkling-water-on-mac-os/
+
 brew install apache-spark
 
 ### H2O
