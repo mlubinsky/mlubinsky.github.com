@@ -17,6 +17,8 @@ brew install apache-spark
 
 ### H2O
 
+https://docs.h2o.ai/h2o/latest-stable/h2o-docs/downloading.html
+
 version 3.32.0.4
 
 https://anaconda.org/h2oai/h2o
