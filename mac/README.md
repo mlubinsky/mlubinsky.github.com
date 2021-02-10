@@ -55,6 +55,20 @@ To activate jenv, add the following to your /Users/miclub01/.bash_profile:
  brew tap AdoptOpenJDK/openjdk
  brew  install --cask adoptopenjdk8
 
+ls /Library/Java/JavaVirtualMachines
+adoptopenjdk-8.jdk 
+jdk-15.0.1.jdk
+
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+
+jenv versions
+* system (set by /Users/miclub01/.jenv/version)
+  1.8
+  1.8.0.282
+  openjdk64-1.8.0.282
+  
+  jenv global openjdk64-1.8.0.282
+  
 ```
 <https://medium.com/@danielnenkov/multiple-jdk-versions-on-mac-os-x-with-jenv-5ea5522ddc9b>
 
