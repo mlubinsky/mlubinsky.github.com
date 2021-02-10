@@ -9,6 +9,7 @@ https://filip-wojcik.com/talks/xgboost_forecasting_eng.pdf
 
 https://towardsdatascience.com/forecasting-stock-prices-using-xgboost-a-detailed-walk-through-7817c1ff536a
 
+https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
 
 ## Hyperopt 
 https://hyperopt.github.io/hyperopt/
