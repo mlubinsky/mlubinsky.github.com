@@ -27,12 +27,19 @@ conda install -c h2oai h2o
 
 https://pypi.org/project/h2o/
 
-### H2O Web GUI 
+####  H2O Web GUI 
 java -jar h2o.jar
 
  http://localhost:54321
 
 https://docs.h2o.ai/h2o/latest-stable/h2o-docs/flow.html
+
+Time series example
+
+https://github.com/SeanPLeary/time-series-h2o-automl-example/blob/master/h2o_automl_example_with_multivariate_time_series.ipynb
+
+https://stackoverflow.com/questions/56666876/how-to-predict-future-values-of-time-series-using-h2o-predict
+
 
 ### Books 
 
