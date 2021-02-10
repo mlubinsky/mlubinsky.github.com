@@ -8,6 +8,17 @@ https://projecteuclid.org/euclid.ss/1177011137   Marcov Chain Monte Carlo articl
 
 https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distributions-526b11a24359
 
+### H2O
+
+version 3.32.0.4
+
+https://anaconda.org/h2oai/h2o
+
+conda install -c h2oai h2o
+
+https://pypi.org/project/h2o/
+
+
 ### Books 
 
 
