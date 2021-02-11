@@ -8,6 +8,11 @@ https://projecteuclid.org/euclid.ss/1177011137   Marcov Chain Monte Carlo articl
 
 https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distributions-526b11a24359
 
+### Educational projects
+
+https://pypi.org/project/sealion/ 
+
+https://habr.com/ru/post/541742/.  Image processing
 
 ### Apache Spark
 
