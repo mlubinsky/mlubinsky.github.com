@@ -1,3 +1,5 @@
+https://habr.com/ru/company/otus/blog/541882/
+
 ### SQL UI client tools
 
 Sequel-Ace https://github.com/Sequel-Ace/Sequel-Ace
