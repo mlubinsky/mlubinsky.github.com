@@ -4,6 +4,9 @@ https://analyzingalpha.com/time-series-analysis-with-python
 
 https://towardsdatascience.com/ml-time-series-forecasting-the-right-way-cbf3678845ff XGBoost
 
+
+матрица корреляций для временных рядов https://habr.com/ru/post/541610/
+
 ### XGBoost
 https://filip-wojcik.com/talks/xgboost_forecasting_eng.pdf
 
