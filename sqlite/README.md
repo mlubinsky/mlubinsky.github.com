@@ -1,5 +1,7 @@
 https://phiresky.github.io/blog/2020/sqlite-performance-tuning/
 
+https://habr.com/ru/company/otus/blog/541820/.  SQLite with  Python and Go
+
 ## SQLite utils
 
 https://github.com/simonw/sqlite-utils
