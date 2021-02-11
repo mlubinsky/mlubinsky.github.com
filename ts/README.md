@@ -315,11 +315,12 @@ https://pytorch-forecasting.readthedocs.io/en/latest/
 
 https://github.com/jdb78/pytorch-forecasting
 
-### Flow-forecast
+### PyTorch Deep Learning Flow-forecast
 
 Deep learning PyTorch library for time series forecasting, classification, and anomaly detection (originally for flood forecasting).
 
 https://github.com/AIStream-Peelout/flow-forecast
+
  
 ### Auto_TS
 
