@@ -15,6 +15,19 @@ https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
 https://hyperopt.github.io/hyperopt/
 
 ## Errors: RMSE, MAPE, and MAE 
+https://en.wikipedia.org/wiki/Mean_absolute_percentage_error
+
+https://stats.stackexchange.com/questions/58391/mean-absolute-percentage-error-mape-in-scikit-learn
+
+https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_percentage_error.html
+Issue in code: divide by 0
+```
+import numpy as np
+
+def mean_absolute_percentage_error(y_true, y_pred): 
+    y_true, y_pred = np.array(y_true), np.array(y_pred)
+    return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
+```    
 
 ## Removing trends from time series
 
