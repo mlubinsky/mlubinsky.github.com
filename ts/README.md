@@ -1,3 +1,7 @@
+https://robjhyndman.com/publications/
+
+https://www.journals.elsevier.com/international-journal-of-forecasting
+
 ## Best
 
 https://analyzingalpha.com/time-series-analysis-with-python
