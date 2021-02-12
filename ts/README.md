@@ -6,6 +6,8 @@ https://paperswithcode.com/task/time-series-forecasting
 
 https://github.com/topics/time-series-forecasting
 
+https://github.com/cuge1995/awesome-time-series
+
 ## Best
 
 https://analyzingalpha.com/time-series-analysis-with-python
