@@ -8,6 +8,8 @@ https://github.com/topics/time-series-forecasting
 
 https://github.com/cuge1995/awesome-time-series
 
+https://awesomeopensource.com/projects/forecasting
+
 ## Best
 
 https://analyzingalpha.com/time-series-analysis-with-python
