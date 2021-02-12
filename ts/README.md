@@ -317,6 +317,8 @@ https://mljar.com/blog/
 
 ### PyTorch-forecasting
 
+https://towardsdatascience.com/introducing-pytorch-forecasting-64de99b9ef46
+
 https://analyticsindiamag.com/guide-to-pytorch-time-series-forecasting/
 
 ```
