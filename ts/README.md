@@ -309,6 +309,23 @@ https://mljar.com/blog/
 
 ### PyTorch-forecasting
 
+https://analyticsindiamag.com/guide-to-pytorch-time-series-forecasting/
+
+```
+Pytorch Forecasting is a framework made on top of PyTorch Light used to ease time series forecasting with the help of neural networks for real-world use-cases. It is having state of the art time series forecasting architectures that can be easily trained with input data points. This library has many benefits as they composed all the different requirements into specific classes like:
+
+- TimeSeriesDataSet is used to prepare the dataset for training with PyTorch, this class takes care of the variable transformation, random sampling, and missing value filling, etc. 
+- BaseModel class is used to provide data visualization such as showing predicting values vs real values.
+
+Some of the other features we get with Pytorch forecasting are:
+
+Faster model training as it is built on PyTorch lightning which allows you to train the model on CPU as well as multiple GPU.
+- Temporal fusion Transformer: An architecture developed by Oxford University and Google for Interpretable Multi-horizon Time Series forecasting that beat Amazon’s DeepAR with 39-69% in benchmarks.
+- N-BEATS model
+- DeepAR model: Most popular baseline model for time-series forecasting.
+- Ranger optimizer for faster model training.
+- Hyperparameter tuning using optuna
+```
 pip install pytorch-forecasting
 
 https://pytorch-forecasting.readthedocs.io/en/latest/
