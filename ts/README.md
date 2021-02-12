@@ -10,6 +10,8 @@ https://github.com/cuge1995/awesome-time-series
 
 https://awesomeopensource.com/projects/forecasting
 
+https://www.microprediction.com/blog/popular-timeseries-packages
+
 ## Best
 
 https://analyzingalpha.com/time-series-analysis-with-python
