@@ -28,7 +28,7 @@ https://blog.jupyter.org/announcing-the-new-jupyter-book-cbf7aa8bc72e
 
 https://news.ycombinator.com/item?id=24136955
 
-## Linters /Formatters
+## Linters / Formatters
 
 <https://www.reddit.com/r/javascript/comments/cti3xs/why_you_should_use_eslint_prettier_and/>
 
@@ -261,7 +261,10 @@ $ to the end of a line
 
 <https://marketplace.visualstudio.com/items?itemName=humao.rest-client>
 
-### VS python
+### VS Code + python
+
+https://neps.academy/blog/how-to-install-and-configure-python-and-vscode
+
 <https://habr.com/ru/company/microsoft/blog/471188/> . Python extension
 
 <https://devblogs.microsoft.com/python/python-in-visual-studio-code-january-2020-release/> Python extension
