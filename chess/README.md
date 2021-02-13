@@ -11,7 +11,7 @@ https://chessopenings.com/ru/
 https://lichess.org/study
 
 
-### Programming chess
+### Programming chess AI
 
 https://youtu.be/U4ogK0MIzqk
 
@@ -23,3 +23,10 @@ https://github.com/robtaussig/rust-chess
 
 ### JS chess
 https://github.com/robtaussig/ChaosChess/tree/master/src/engine
+
+
+### Chess engine in GO
+
+https://habr.com/ru/company/timeweb/blog/533642/
+
+
