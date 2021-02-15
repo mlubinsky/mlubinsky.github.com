@@ -7,3 +7,10 @@ https://songxia-sophia.medium.com/two-machine-learning-algorithms-to-predict-xgb
 https://stackoverflow.com/questions/34265102/xgboost-categorical-variables-dummification-vs-encoding
 
 https://blog.dataiku.com/how-do-gradient-boosting-algorithms-handle-categorical-variables
+
+
+## Hyperparams optimization:
+
+https://neptune.ai/blog/optuna-vs-hyperopt
+
+https://github.com/SylwiaOliwia2/xgboost-AutoTune
