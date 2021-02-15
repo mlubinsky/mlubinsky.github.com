@@ -7,20 +7,48 @@ import matplotlib.pyplot as plt
 
 #from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import mean_absolute_error
-from sklearn.model_selection import GridSearchCV, cross_validate, ParameterGrid
+from sklearn.metrics import mean_squared_error
+from sklearn.linear_model import LinearRegression
+#from sklearn.model_selection import (TimeSeriesSplit, train_test_split)
+#from sklearn.model_selection import GridSearchCV, cross_validate, ParameterGrid
+from sklearn.metrics import make_scorer
 
 # from sklearn.cross_validate import StratifiedKFold, KFold
 # from sklearn.grid_search import ParameterGrid
-from sklearn.metrics import mean_squared_error
 
 import xgboost as xgb
 from xgboost import plot_importance, plot_tree
+import xgboost_autotune
 
 # https://www.mikulskibartosz.name/xgboost-hyperparameter-tuning-in-python-using-grid-search/
 # https://machinelearningmastery.com/auto-sklearn-for-automated-machine-learning-in-python/
 #
 PI=math.pi
 print("PI", PI)
+
+# https://www.kaggle.com/carlolepelaars/understanding-the-metric-rmsle
+# https://github.com/dmlc/xgboost/blob/master/demo/guide-python/custom_rmsle.py
+
+def rmsle(real, predicted):
+    sum=0.0
+    for x in range(len(predicted)):
+        if predicted[x]<0 or real[x]<0: #check for negative values
+            continue
+        p = np.log(predicted[x]+1)
+        r = np.log(real[x]+1)
+        sum = sum + (p - r)**2
+    return (sum/len(predicted))**0.5
+
+
+def rmsle_2(h, y):
+    return np.sqrt(np.square(np.log(h + 1) - np.log(y + 1)).mean())
+
+# https://stackoverflow.com/questions/46202223/root-mean-log-squared-error-issue-with-scitkit-learn-ensemble-gradientboostingre
+def rmsle_3(predt, dtrain):
+        #y = dtrain.get_label()
+        predt[predt < -1] = -1 + 1e-6
+        elements = np.power(np.log1p(dtrain) - np.log1p(predt), 2)
+        return  float(np.sqrt(np.sum(elements) / len(dtrain)))
 
 #-----------------------------------
 def create_features(df, label, first_date, useLags=False):
@@ -77,8 +105,15 @@ def create_features(df, label, first_date, useLags=False):
     return X, y
 
 #-------------------
-def y_sin(df, amplitude, period=1, const=5 ):
+def y_sin_and_cos(df, amplitude, period=1, const=5 ):
   df['y'] = const + amplitude * ( np.sin(df.index.hour * period * PI  /24.0 ) - 0.2 * np.cos(df.index.hour * period * PI  /24.0 ) )
+
+def y_sin(df, amplitude, period=1, const=5 ):
+   #for k in df.index.hour:
+   #   print(k, np.sin(2* PI * k /24.0)  )
+   #exit(1)
+
+   df['y'] = const + amplitude * ( np.sin(df.index.hour * period * 2*PI  /24.0 ) )
 
 def  y_linear(df, k, a=0.0):
    first_timepoint=df.index.array[0]
@@ -92,91 +127,12 @@ def y_sin_and_linear(df, sin_amplitude, sin_period, k_linear, a_linear):
     hours_from_start =  (df.index - first_timepoint).astype('timedelta64[h]').astype(int)
     df['y'] = a_linear + k_linear * hours_from_start + sin_amplitude * np.sin(df.index.hour * sin_period * PI  /24.0 )
 
-def f():
-   return 11
+#def f():
+#   return 11
 
-
-def find_hyperparams(X_train, y_train,  X_test, y_test):
-
- param_grid = [
-              {'silent': [1],
-               'nthread': [2],
-               'eval_metric': ['rmse'],
-               'eta': [0.03],
-               'objective': ['reg:linear'],
-               'max_depth': [5, 7],
-               'num_round': [1000],
-               'subsample': [0.2, 0.4, 0.6],
-               'colsample_bytree': [0.3, 0.5, 0.7],
-               }
-              ]
 
 # https://medium.com/datadriveninvestor/an-introduction-to-grid-search-ff57adcc0998
 # Hyperparmeter grid optimization
- for params in ParameterGrid(param_grid):
-    print(params)
-    # Determine best n_rounds
-    xgboost_rounds = []
-    for train_index, test_index in kfold:
-        X_train, X_test = train[train_index], train[test_index]
-        y_train, y_test = target[train_index], target[test_index]
-
-        xg_train = xgb.DMatrix(X_train, label=y_train)
-        xg_test = xgb.DMatrix(X_test, label=y_test)
-
-        watchlist = [(xg_train, 'train'), (xg_test, 'test')]
-
-        num_round = params['num_round']
-        xgclassifier = xgb.train(params, xg_train, num_round,
-                                     watchlist,
-                                     early_stopping_rounds=early_stopping);
-        xgboost_rounds.append(xgclassifier.best_iteration)
-
-    num_round = int(np.mean(xgboost_rounds))
-    print('The best n_rounds is %d' % num_round)
-    # Solve CV
-    rmsle_score = []
-    for cv_train_index, cv_test_index in kfold:
-        X_train, X_test = train[cv_train_index, :], train[cv_test_index, :]
-        y_train, y_test = target[cv_train_index], target[cv_test_index]
-
-        # train machine learning
-        xg_train = xgb.DMatrix(X_train, label=y_train)
-        xg_test  = xgb.DMatrix(X_test, label=y_test)
-
-        watchlist = [(xg_train, 'train'), (xg_test, 'test')]
-
-        xgclassifier = xgb.train(params, xg_train, num_round);
-
-        # predict
-        predicted_results = xgclassifier.predict(xg_test)
-        rmsle_score.append(np.sqrt(mean_squared_error(y_test, predicted_results)))
-
-    if SCORE_MIN:
-        if best_score > np.mean(rmsle_score):
-            print(np.mean(rmsle_score))
-            print('new best')
-            best_score = np.mean(rmsle_score)
-            best_params = params
-            best_iter = num_round
-    else:
-        if best_score < np.mean(rmsle_score):
-            print(np.mean(rmsle_score))
-            print('new best')
-            best_score = np.mean(rmsle_score)
-            best_params = params
-            best_iter = num_round
-
-
-# Solution using best parameters
- print('best params: %s' % best_params)
- print('best score: %f' % best_score)
- xg_train = xgb.DMatrix(train, label=target)
- xg_test = xgb.DMatrix(test)
- watchlist = [(xg_train, 'train')]
- num_round = int(best_iter * test_round_fac)  # There are more samples so I can use more lines
- xgclassifier = xgb.train(best_params, xg_train, num_round, watchlist)
- return 1
 
 #------------------
 def predict_xgboost(df, comment, useLags, split=0.9, show_details=True):
@@ -208,26 +164,17 @@ def predict_xgboost(df, comment, useLags, split=0.9, show_details=True):
      mae_baseline = mean_absolute_error(test["y"], baseline_predictions)
      print("Baseline MAE is {:.2f}".format(mae_baseline))
 
-     # exit(0)
+     concat = test.rename(columns={'y':'TEST'}) \
+     .join( train.rename(columns={'y':'TRAIN'}) , how='outer')
 
-     a = test.rename(columns={'y':'TEST'})
-     b = train.rename(columns={'y':'TRAIN'})
-
-
-     concat = pd.merge(a, b, right_index=True, left_index=True, how='outer')
-     # concat = a.join(b, how='outer')
+     print("concat_join  len=", len(concat))
      print(concat)
-
-     concat.drop('Date_x', axis=1, inplace=True)
-     concat.drop('Date_y', axis=1, inplace=True)
-
-     print(concat)
-   
-#     concat = test.rename(columns={'y':'TEST'}) \
-#     .join( train.rename(columns={'y':'TRAIN'}) , how='outer')
-
+     
 
      header=comment + ' Train: '+str(train_len) + ' points and Test: '+str(test_len) + " points"
+     print(header)
+     #exit(1)
+
      if show_details:
        concat.plot(title=header, linestyle='-', marker='o', figsize=(25, 5))
        plt.show()
@@ -239,51 +186,34 @@ def predict_xgboost(df, comment, useLags, split=0.9, show_details=True):
      X_test,  y_test  = create_features(test,  'y', first_date, useLags)
      print("len(X_test)=", len(X_test), "len(Y_test)=",len(y_test))
 
-     #print( X_test.info() )
-     #X_test.plot(y="hours_from_start", title="X_test hours from start")
-     #plt.show()
-
-     #print( X_train.info() )
-     #X_train.plot(y="hours_from_start", title="X_train hours from start")
-     #plt.show()
 
      #find_hyperparams( X_train, y_train, X_test,  y_test )
-     #return
+     
      # https://www.kaggle.com/robikscube/time-series-forecasting-with-prophet
-     #features_and_target = pd.concat([X_train, y_train], axis=1)
-     #print(features_and_target.head())
 
+     rmlse_score = make_scorer( rmsle, greater_is_better=False)
 
-     #x_vars=[
-     #         'hour',
-     #         'dayofweek',
-     #         'daysfromstart',
-     #         'morning',
-     #         'middleday',
-     #         'evening',
-     #         'night'
-     #        ]
-     #if useLags:
-     #        x_vars.append('Lag_1')
-     #        x_vars.append('Lag_2')
-     #        x_vars.append('Lag_3')
-     #        x_vars.append('Lag_4')
+     fitted_model = xgboost_autotune.fit_parameters(
+        initial_model = xgb.XGBRegressor(),
+        initial_params_dict = {},
+        X_train = X_train,
+        y_train = y_train,
+        min_loss = 0.01,
+        scoring = rmlse_score,  #  accuracy, #rmlse_score,
+        n_folds=5
+     )
 
-
-     model = xgb.XGBRegressor(
-       n_estimators = 1600 ,
-       random_state = 10 ,
-       objective='reg:squarederror',  
-       #objective= 'reg:linear',
-       #objective='binary:logistic',
-       learning_rate = 0.1,
-       min_child_weight=1,
-       gamma=0, 
-       subsample=0.8, 
-       colsample_bytree=0.8,
-       # booster:'gblinear',
-       booster= 'gbtree',
-       max_depth = 35)
+#     model = xgb.XGBRegressor(
+#       n_estimators = 1600 ,
+#       random_state = 10 ,
+#       objective='reg:squarederror',  #objective= 'reg:linear', #objective='binary:logistic',
+#       learning_rate = 0.1,
+#       min_child_weight=1,
+#       gamma=0, 
+#       subsample=0.8, 
+#       colsample_bytree=0.8,
+#       booster= 'gbtree', # booster:'gblinear',
+#       max_depth = 35)
 
      # model = XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
      #    colsample_bynode=1, colsample_bytree=0.3, gamma=0,
@@ -294,19 +224,23 @@ def predict_xgboost(df, comment, useLags, split=0.9, show_details=True):
      #    silent=None, subsample=0.5, verbosity=1) 
 
 
-     model.fit(X_train, y_train,
-        eval_set=[(X_train, y_train), (X_test, y_test)],
-        early_stopping_rounds=500,
-        verbose=False)
+    # model.fit(X_train, y_train,
+    #    eval_set=[(X_train, y_train), (X_test, y_test)],
+    #    early_stopping_rounds=500,
+    #    verbose=False)
 
      # Feature importance
      if show_details:
-       plot_importance(model, height=0.9)
-       plt.show()
+       #plot_importance(model, height=0.9)
+       try:
+         plot_importance(fitted_model, height=0.9)
+         plt.show()
+       except:
+         print("error in plot_importance()")
 
      print("Before Prediction")
-     test['Prediction'] = model.predict(X_test)
-
+     # test['Prediction'] = model.predict(X_test)
+     test['Prediction'] = fitted_model.predict(X_test)
 
      print("Before concat len(test)=",len(test), "  len(train)=",len(train))
      all = pd.concat([test, train], sort=False)
@@ -341,7 +275,7 @@ def predict_xgboost(df, comment, useLags, split=0.9, show_details=True):
      cols=['y','hour', 'morning', 'middleday', 'evening', 'night', 'dayofweek','daysfromstart', 'hours_from_start', 'Lag_1', 'Lag_2', 'Lag_3', 'Lag_4']
      test.drop(columns=cols, inplace=True)
 
-     test.rename(columns = {'Prediction':'y'}, inplace = True) 
+     test.rename(columns = {'Prediction':'y'}, inplace = True)
      print("after drop test=")
      print(test)
 
@@ -352,31 +286,66 @@ def predict_xgboost(df, comment, useLags, split=0.9, show_details=True):
      print(cc.tail(10))
      print("Check the sort order above ")
 
-     #cols=['Date_x', 'Date_y', 'hours_from_start_x', 'hours_from_start_y']
-     #cc.drop(columns=cols, inplace=True)
-     #exit(0)
-     #cols=['hour', 'morning', 'middleday', 'evening', 'night', 'dayofweek','daysfromstart', 'Lag_1', 'Lag_2', 'Lag_3', 'Lag_4']
-     #cols=['hour', 'morning', 'middleday', 'evening', 'night', 'dayofweek','daysfromstart', 'Lag_1', 'Lag_2', 'Lag_3', 'Lag_4', 'Prediction']
-     #cc.drop(columns=cols, inplace=True)
      return cc
+
+def linear_detrend(df):
+    print("detrend")
+    #df["y"].plot()
+    #plt.show()
+
+    model=LinearRegression()
+    #X = (df.index-df.index[0]).hours.reshape(-1,1)
+    y = df["y"].values  # .reshape(-1,1)
+    l = len(df)
+    X = np.array(list(range(0, l))).reshape(-1,1)
+    print("X len=", len(X))
+    #print(X)
+    print("y len=", len(y))
+    #print(y)
+    if len(y) != len(X):
+        print("err")
+        exit(1)
+   
+    model.fit(X , y )
+    trend = model.predict(X)
+
+
+#linear_model.LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)
+#LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)
+#model.predict([[1], [7], [50]])
+
+    plt.plot(y)
+    plt.plot(trend)
+    plt.show()
+
+    df.rename(columns = {'y':'y_orig'}, inplace = True)
+
+    df["y"] = df["y_orig"] - trend
+
+    df[["y", "y_orig"]].plot() 
+    plt.show()
+
+    df.drop( columns=["y_orig"], inplace=True)
 
 def init_df(start_day, number_of_days):
    number_of_hours=number_of_days * 24
    rng = pd.date_range(start_day, periods=number_of_hours, freq='H')
-   df = pd.DataFrame({ 'Date': rng, 'y': 1 }, index=rng)
+   df = pd.DataFrame({  'y': 1 }, index=rng)
+   #print(df)
    return df
 
 def use_lagged():
-       N_points=5
+       N_points=5  
 
-       n_days=10
+       n_days=1
        df = init_df('2015-02-24', n_days)
        y_sin(df, amplitude=0.5, period=1, const=100)
 
        head=df[:-N_points].copy()
        tail=df[-N_points:].copy()
        useLags=True
-       comment = "Use lagged values"
+       comment = "Use lagged values n_days="+str(n_days)+" n_points="+str(N_points)
+
          #head=df.copy()
        all = predict_xgboost(head, comment, useLags)
        print (all.tail())
@@ -435,69 +404,50 @@ def use_lagged():
        print("After join len(x_join)=",len(x_join))
        print(x_join)
        print(x_join.index)
-       # https://realpython.com/pandas-merge-join-and-concat/
-       #header= comment + " range " + str(test.index[0]) + " -  " + str(test.index[-1])
+ 
        header="final _join"
        x_join[['y','Prediction']].plot(title=header, linestyle='-', marker='o', figsize=(25, 5))
        plt.show()
    
 
 def  main():
-  #number_of_hours=24*7*4 # 4 weeks
-  #rng = pd.date_range('2015-02-24', periods=number_of_hours, freq='H')
-  #df = pd.DataFrame({ 'Date': rng, 'y': f() }, index=rng) 
-  #print(df)
-  #print(df.index)
   n_days=10
   df = init_df('2015-02-24', n_days)
   useLags=False
 
-  #df.plot(y="y")
-  #plt.show() 
-  #predict_xgboost(df, "constant", useLags)
+  for const in [0]:   # [0,10]:
+   if 0:
+     df = init_df('2015-02-24', n_days) # to get rid of features?
+     amplitude=1.0
+     y_sin(df, amplitude=amplitude, period=1, const=const)
+     header = "n_days="+str(n_days) +  " sin()  amplitude="+str(amplitude)+ " const="+str(const)
+     df.plot(y="y", title=header )
+     plt.show()
+     predict_xgboost(df, header, useLags)
 
-  df = init_df('2015-02-24', n_days)
-  y_sin(df, amplitude=0.5, period=1, const=100)
-  df.plot(y="y", title="periodic + 100")
-  plt.show()
-  predict_xgboost(df, "periodic + 100", useLags)
+#--------   linear ---------
+  if 0:
+     df = init_df('2015-02-24', n_days)
+     y_linear(df, 1.0)
+#     df.plot(y="y", title="linear")
+#     plt.show()
+     linear_detrend(df)
+     
+     predict_xgboost(df, "linear", useLags)
 
-  df = init_df('2015-02-24', n_days)
-  y_sin(df, amplitude=1.0, period=1, const=5)
-  df.plot(y="y", title="periodic + 5")
-  plt.show()
-  predict_xgboost(df, " periodic + 5", useLags)
-
-  df = init_df('2015-02-24', n_days)
-  y_linear(df, 1.0)
-  df.plot(y="y", title="linear")
-  plt.show()
-  predict_xgboost(df, "linear", useLags)
-
-  #print(  df.info() )
-  #df.plot(y="hours_from_start", title="hours from start")
-  #plt.show()
-
-  #return
-
-
-
-
-  y_sin_and_linear(df, sin_amplitude=4, sin_period=10, k_linear=1, a_linear=1)
-  df.plot(y="y", title="linear + sin()")
-  plt.show()
-  predict_xgboost(df, "sin and linear", useLags)
-
-  y_sin_and_linear(df, sin_amplitude=1, sin_period=2, k_linear=0, a_linear=8)
-  df.plot(y="y", title="linear + sin() again")
-  plt.show()
-  comment="linear + sin() again"
-  predict_xgboost(df, comment, useLags)
- 
-  #
-
+#---   sin + linear ------
+  for sin_amp in [10,30]:
+    for sin_period in [1,30]:
+       header= "sin() + linear sin_amplitude="+str(sin_amp) + "  sin_period="+str(sin_period)
+       y_sin_and_linear(df, sin_amplitude=sin_amp, sin_period=sin_period, k_linear=1, a_linear=1)
+       df.plot(y="y", title=header)
+       plt.show()
+       linear_detrend(df)
+       df.plot(y="y", title="after detrend")
+       plt.show()
+       predict_xgboost(df, header, useLags)
 
 if __name__ == "__main__":
-  use_lagged()
-  #main()
+  #use_lagged()
+  main()
 
