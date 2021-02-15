@@ -18,6 +18,7 @@ https://analyzingalpha.com/time-series-analysis-with-python
 
 https://towardsdatascience.com/ml-time-series-forecasting-the-right-way-cbf3678845ff XGBoost
 
+https://towardsdatascience.com/part-2-time-series-analysis-predicting-hourly-energy-consumption-of-san-diego-ii-f09665796c9
 
 матрица корреляций для временных рядов https://habr.com/ru/post/541610/
 
