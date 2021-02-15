@@ -13,4 +13,10 @@ https://blog.dataiku.com/how-do-gradient-boosting-algorithms-handle-categorical-
 
 https://neptune.ai/blog/optuna-vs-hyperopt
 
-https://github.com/SylwiaOliwia2/xgboost-AutoTune
+https://github.com/SylwiaOliwia2/xgboost-AutoTune. 
+```
+here the fix is required for the latest version of sklearn: remove iid in
+file /Users/miclub01/anaconda3/lib/python3.7/site-packages/xgboost_autotune.py
+ 
+ 100     clf = GridSearchCV(model, parameters, scoring=scoring, verbose=0, cv = n_folds, refit=True) #, iid=iid)
+``
