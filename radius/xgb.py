@@ -5,25 +5,21 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-#from utils import get_dataset, forecast_split, mape
-
-#from forecaster import Forecaster
-#from features import get_features
-#from features import TargetTransformer
-
-#from xgb import xgboost_model
-#from linear import linear_model
 from sklearn.metrics import ( mean_absolute_error, mean_squared_error, make_scorer )
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler, scale
+
 from statsmodels.tsa.stattools import pacf, acf
 
 # Database connection
 import datastore
 
 import xgboost
+from xgboost import plot_importance, plot_tree
 import xgboost_autotune 
+
+DEBUG=True
 
 def input_cmd():
     parser = argparse.ArgumentParser()
@@ -31,17 +27,29 @@ def input_cmd():
     parser.add_argument("-s", "--steps",
                         type=int,
                         default=48,
-                        help="The number of forecasting steps")
+                        help="The number of forecasting hours")
 
-    parser.add_argument("-f", "--fcast", 
-                        type=str,
-                        default="recursive", choices=["direct", "recursive"],
-                        help="The type of forecasting")
+    parser.add_argument("-c", "--company",
+                        type=int,
+                        default=3659,
+                        help="The company")                    
 
-    parser.add_argument("-l", "--load", 
+    parser.add_argument("-f", "--file", 
                         type=str,
-                        default="C4", choices=["C1", "C2", "C3", "C4"],
-                        help="The load to predict")
+                        help="The file with 2 columns: date and value")
+
+    parser.add_argument("-b", "--begin", 
+                        type=str,
+                        help="The start date in format YYYY-MM-DD")
+
+    parser.add_argument("-e", "--end", 
+                        type=str,
+                        help="The end date in format YYYY-MM-DD")                    
+
+    parser.add_argument("-t", "--table", 
+                        type=str,
+                        default="jangle_traffic_total", choices=['jangle_traffic_total', 'radius_traffic_total'],
+                        help="The table")
 
     args = parser.parse_args()
     return args
@@ -169,10 +177,10 @@ def detrend(s):
     print('slope:', model.coef_)
     trend = model.predict(X)
 
-
-    plt.plot(y)
-    plt.plot(trend)
-    plt.show()
+    if DEBUG:
+       plt.plot(y)
+       plt.plot(trend)
+       plt.show()
     
     new_s = pd.Series( s.values - trend, s.index)
     print(new_s)
@@ -182,8 +190,10 @@ def detrend(s):
 
     print("------new_s.values")
     print(new_s.values)
-    new_s.plot(title="detrended!!!")
-    plt.show()
+
+    if DEBUG:
+       new_s.plot(title="detrended!!!")
+       plt.show()
 
     return new_s, model
 
@@ -255,7 +265,7 @@ def create_ts_features(data):
 #-----------------------------    
     def get_shift(row):
         """
-        Factory working shift: 3 shifts per day of 8 hours
+        shift: 3 shifts per day of 8 hours
         """
         if 6 <= row.hour <= 14:
             return 2
@@ -270,11 +280,9 @@ def create_ts_features(data):
     features["weekday"] = data.index.weekday
     features["dayofyear"] = data.index.dayofyear
     features["is_weekend"] = data.index.weekday.isin([5, 6]).astype(np.int32)
-    #features["weekofyear"] = data.index.weekofyear
     features["month"] = data.index.month
-    features["season"] = (data.index.month%12 + 3)//3
     features["shift"] = pd.Series(data.index.map(get_shift))
-    
+    # TODO - instead shift above is it better to have 3 features: night, day, evening 
     features.index = data.index
         
     return features
@@ -445,7 +453,7 @@ def xgboost_model(features, target, test_size=0.2, max_evals=10):
     model = res["model"]
     return model, 0.0, 0.0
 #------------------------------------
-def multi_direct(c_target, f_steps=5):
+def multi_direct(c_target, f_steps):
 #------------------------------------    
     print("-- multi_direct() ---")
 
@@ -475,9 +483,17 @@ def multi_direct(c_target, f_steps=5):
     end = start + len(f_target)
     X = np.array(list(range(start, end))).reshape(-1,1)
     fcast_xgb = model_detrended.predict(X) + fcast_xgb_detrended
+    fcast_xgb[fcast_xgb < 0] = 0 
     print("--- multi_direct() final forecast=")
     print(fcast_xgb)
-    #exit(1)
+
+    if DEBUG:
+       try:
+         plot_importance(model_detrended, height=0.9)
+         plt.show()
+       except:
+         print("error in plot_importance()")
+ 
 #----------------------------------------------------
     fig, ax = plt.subplots(1, 1, figsize=(12, 8))
     ax.plot(c_target, color="blue", label="Original", linestyle='-', marker='o')
@@ -493,43 +509,60 @@ def main():
     args = input_cmd()
 
     # get data
-    load = args.load
-    f_steps = args.steps
+    try:
+       company = args.company
+       table = args.table
+       begin = args.begin
+       end = args.end
+       fname = args.file
+       f_steps = args.steps
+       
+       
+       print(company)
+       print(table)
+       print(begin)
+       print(end)
+       print(fname)
+       print(f_steps)
 
-    FROM_FILE=1
-    FROM_DATABASE=2
-    FROM_SIMULATE=3
 
-    datasource = FROM_SIMULATE
+    except:
+       print ("Error")
+
    
-    if datasource == FROM_FILE:  
-        print ("not implemented")   
+    if fname:  
+        print ("reading from file not implemented")   
         #data = get_from_file(fname)
         #c_target = data["y"]
-    elif datasource == FROM_DATABASE:
+    elif begin and end and company >= 0:
         datastore.connect()
-        start_date='2020-12-01'  # read from command line
-        end_date='2021-01-01'    # read from command line 
-        company=3659  # read from command line
+        start_date=begin #'2020-12-01'  # read from command line
+        end_date=end #'2021-01-01'    # read from command line 
+        #company=3659  # read from command line
         direction=None # read from command line
         # COMPANY_LIST=(3659,3116, 3666)
         #    for table in ['jangle_traffic_total', 'radius_traffic_total']:
         table='jangle_traffic_total' # read from command line
         data = get_data_from_db(table, start_date, end_date, company, direction)
         print(data)
+
         #  exit(1)
         s = data["y"]  # make series
-    elif  datasource == FROM_SIMULATE:   #-- simulate
+        s.fillna(0, inplace=True)
+
+        print(s)
+        print(s.name)
+        print(s.index)
+        print(s.values)
+        s.name='y'
+
+    else:   
         print("simulate")
         #for shape in  ["random", "sin", "linear", "linear_and_sin"]:
         shape="linear_and_sin"
         s = generate_series(shape)
-         
-    else:
-        print("datasource is not provided")
-        exit(1)
-
-    multi_direct(s) 
+ 
+    multi_direct(s, f_steps) 
 
 if __name__ == "__main__":
     main()
