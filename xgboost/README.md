@@ -15,6 +15,8 @@ https://towardsdatascience.com/hyperparameter-optimization-in-python-part-0-intr
 
 https://towardsdatascience.com/hyperparameter-optimization-in-python-part-2-hyperopt-5f661db91324
 
+https://habr.com/ru/post/542624/. hyperopt
+
 https://neptune.ai/blog/optuna-vs-hyperopt
 
 hyperopt.exceptions.AllTrialsFailed
