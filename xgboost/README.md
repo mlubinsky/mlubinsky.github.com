@@ -11,7 +11,13 @@ https://blog.dataiku.com/how-do-gradient-boosting-algorithms-handle-categorical-
 
 ## Hyperparams optimization:
 
+https://towardsdatascience.com/hyperparameter-optimization-in-python-part-0-introduction-c4b66791614b
+
+https://towardsdatascience.com/hyperparameter-optimization-in-python-part-2-hyperopt-5f661db91324
+
 https://neptune.ai/blog/optuna-vs-hyperopt
+
+hyperopt.exceptions.AllTrialsFailed
 
 https://github.com/SylwiaOliwia2/xgboost-AutoTune. 
 ```
