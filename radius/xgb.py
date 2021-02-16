@@ -17,11 +17,14 @@ import datastore
 
 import xgboost
 from xgboost import plot_importance, plot_tree
-import xgboost_autotune 
+#import xgboost_autotune 
 
-DEBUG=True
+import xgb_autotune 
 
+DEBUG=False
+#---------------
 def input_cmd():
+#---------------
     parser = argparse.ArgumentParser()
 
     parser.add_argument("-s", "--steps",
@@ -53,6 +56,81 @@ def input_cmd():
 
     args = parser.parse_args()
     return args
+
+
+
+def xxxfit_parameters(initial_model, initial_params_dict, X_train, y_train, min_loss, scoring, n_folds=5, iid=False):
+    ### initial check
+    available_models = ['XGBRegressor', 'GradientBoostingRegressor', 'LGBMRegressor']
+    assert (type(initial_params_dict) is dict)
+    assert (initial_model.__class__.__name__ in available_models)
+
+    model=initial_model
+    available_params = list(model.get_params().keys())
+    # domain parameters, which will be used if no parameters provided by user
+        # 1. n_estimators- should be quite low, in ranparamsge [40-120] (should be fast to checm many parameters, n_estimators will be fine-tuned later)
+             # if optimal is 20, you might want to try lowering the learning rate to 0.05 and re-run grid search
+             # learning rate-  0.05-0.2 powinno działać na początku
+             # for LightGmax_depthBM n_estimators: must be infinite (like 9999999) and use early stopping to auto-tune (otherwise overfitting)
+        # 2. num leaves- too much will lead to overfitting
+             # min_samples_split: This should be ~0.5-1% of min_split_gaintotal values.
+             # min_child_weight:  (sample size / 1000), nevfor p_name, p_array in params_dict.items():ertheless depedns on dataset and loss
+        # 3. min_samples_leaf : a small value because of imbalanced classes, zrób kombinacje z 5 najlepszymi wartościami min_samples_split
+        # 4. max_features = ‘sqrt’ : Its a general thumb-rule to start with square root.
+        # others:param_pair = {'n_estimators': [final_params['n_estimators'] * n], 'learning_rate' : [final_params['learning_rate'] / n]}
+             # is_unbalance: false (make your own weighting with scale_pos_weight)
+             # Scale_pos_weight is the ratio of number of negative class to the positive class. Suppose, the dataset has 90 observations of negative class and 10 observations of positive class, then ideal value of scale_pos_Weight should be 9
+
+    domain_params_dicts = [{'n_estimators': [30, 50, 70, 100, 150, 200, 300]},
+                            {'max_depth': [3, 5, 7, 9], 'min_child_weight': [0.001, 0.1, 1, 5, 10, 20], 'min_samples_split': [1,2,5,10,20,30], 'num_leaves': [15, 35, 50, 75, 100,150]},
+                            {'gamma': [0.0, 0.1, 0.2, 0.3, 0.4, 0.5], 'min_samples_leaf': [1,2,5,10,20,30], 'min_child_samples': [2,7,15,25,45], 'min_split_gain': [0, 0.001, 0.1, 1,5, 20]},
+                            {'n_estimators': [30, 50, 70, 100, 150, 200, 300],  'max_features': range(10,25,3)},
+                            {'subsample': [i/10 for i in range(4,10)], 'colsample_bytree': [i/10 for i in range(4,10)], 'feature_fraction': [i/10 for i in range(4,10)]},
+                            {'reg_alpha':[1e-5, 1e-2, 0.1, 1, 25, 100], 'reg_lambda':[1e-5, 1e-2, 0.1, 1, 25, 100]}]
+
+    # iterate over parameter anmes from domain_params_dicts, and adjust parameter value from following dictionaries
+    for params_dict in domain_params_dicts:
+        params ={}
+        for p_name, p_array in params_dict.items():
+            if (p_name in available_params):
+                params[p_name] = set_initial_params(initial_params_dict, p_name, p_array)
+
+        # save new best parameters
+        best_params = find_best_params(model, params, X_train, y_train, min_loss, scoring, n_folds, iid).best_params_
+        final_params = copy(model.get_params())
+        model = update_model_params(model, final_params, best_params)
+
+    # finally adjust pair (n_estimators, learning_rate)
+    try:
+        best_score = None
+        for n in [1, 2, 4, 8, 15, 25]:
+            param_pair = {'n_estimators': [final_params['n_estimators'] * n], 'learning_rate' : [final_params['learning_rate'] / n]}
+            print('prediction for: ', param_pair)
+            clf = GridSearchCV(model, param_pair, scoring=scoring, verbose=0, cv = n_folds, refit=True,  iid=iid)
+            clf.fit(X_train, y_train)
+            new_score = scoring._score_func(clf.predict(X_train), y_train) # calculate new metric_value
+
+            # save parameters, if they give better results
+            best_param_pair = param_pair
+            if best_score is None:
+                best_score = new_score
+            elif scoring.__dict__['_sign'] == 1: # for score where greater is better
+                if new_score - best_score >= min_loss:
+                    best_score = new_score
+                    best_param_pair = param_pair
+            elif scoring.__dict__['_sign'] == -1:# for score where lower is better
+                if new_score - best_score <= min_loss:
+                    best_score = new_score
+                    best_param_pair = param_pair
+            print ('best score', best_score)
+        best_param_pair = convert_dict_of_arrays(best_param_pair)
+        model = update_model_params(model, final_params, best_param_pair)
+    except:
+        pass
+    model.fit(X_train, y_train)
+
+    return model
+
 #-------------------------------------------------------------------------
 def query(sql):
 #-------------------------------------------------------------------------
@@ -410,7 +488,8 @@ def train_autotune_model(model, X_train, y_train, **fit_parameters):
 #-------------------------------------------------------------------
      rmlse_score = make_scorer( rmsle, greater_is_better=False)
 
-     fitted_model = xgboost_autotune.fit_parameters(
+     #fitted_model = xgboost_autotune.fit_parameters(
+     fitted_model = xgb_autotune.fit_parameters(    
         initial_model = xgboost.XGBRegressor(),
         initial_params_dict = {},
         X_train = X_train,
@@ -497,7 +576,7 @@ def multi_direct(c_target, f_steps):
 #----------------------------------------------------
     fig, ax = plt.subplots(1, 1, figsize=(12, 8))
     ax.plot(c_target, color="blue", label="Original", linestyle='-', marker='o')
-    # ax.plot(rec_fcast, color="red", label="Recursive forecast")
+    
     ax.plot(fcast_xgb, color="green", label="Direct forecast", linestyle='-', marker='o')
     ax.set_title(f"{f_steps} hours forecast")
     ax.legend()
