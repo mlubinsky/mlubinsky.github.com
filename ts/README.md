@@ -12,6 +12,8 @@ https://awesomeopensource.com/projects/forecasting
 
 https://www.microprediction.com/blog/popular-timeseries-packages
 
+https://habr.com/ru/post/542638/
+
 ## Best
 
 https://analyzingalpha.com/time-series-analysis-with-python
