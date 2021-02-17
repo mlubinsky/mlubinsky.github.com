@@ -1,3 +1,5 @@
+https://xgboost.readthedocs.io/en/latest/index.html
+
 ## Data preparation, categorical values:
 
 https://machinelearningmastery.com/data-preparation-gradient-boosting-xgboost-python/
