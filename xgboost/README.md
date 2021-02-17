@@ -1,5 +1,11 @@
 https://xgboost.readthedocs.io/en/latest/index.html
 
+# Articles
+
+https://filip-wojcik.com/talks/xgboost_forecasting_eng.pdf
+
+https://towardsdatascience.com/forecasting-stock-prices-using-xgboost-a-detailed-walk-through-7817c1ff536a
+
 ## Data preparation, categorical values:
 
 https://machinelearningmastery.com/data-preparation-gradient-boosting-xgboost-python/
