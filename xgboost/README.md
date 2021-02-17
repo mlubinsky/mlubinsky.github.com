@@ -1,5 +1,35 @@
 https://xgboost.readthedocs.io/en/latest/index.html
 
+```
+def get_mape(y_true, y_pred): 
+    """
+    Compute mean absolute percentage error (MAPE)
+    """
+    y_true, y_pred = np.array(y_true), np.array(y_pred)
+    return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
+
+def get_wape(y_true, y_pred): 
+    """
+    Compute weighted absolute percentage error (WAPE)
+    """
+    y_true, y_pred = np.array(y_true), np.array(y_pred)
+    return sum(np.abs(y_true - y_pred)) / sum(y_true) * 100
+
+def get_mae(a, b):
+    """
+    Comp mean absolute error e_t = E[|a_t - b_t|]. a and b can be lists.
+    Returns a vector of len = len(a) = len(b)
+    """
+    return np.mean(abs(np.array(a)-np.array(b)))
+
+def get_rmse(a, b):
+    """
+    Comp RMSE. a and b can be lists.
+    Returns a scalar.
+    """
+    return math.sqrt(np.mean((np.array(a)-np.array(b))**2))
+ ```   
+
 ## Articles
 
 https://filip-wojcik.com/talks/xgboost_forecasting_eng.pdf
