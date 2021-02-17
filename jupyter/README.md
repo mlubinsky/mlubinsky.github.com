@@ -1,5 +1,47 @@
 https://github.com/MathInspector/MathInspector
 
+https://pythonnumericalmethods.berkeley.edu/notebooks/chapter25.03-Regression.html
+
+```
+np.random.seed(0)
+x = 10 * np.random.rand(100)
+
+def model(x, sigma=0.3):
+    fast_oscillation = np.sin(5 * x)
+    slow_oscillation = np.sin(0.5 * x)
+    noise = sigma * np.random.randn(len(x))
+
+    return slow_oscillation + fast_oscillation + noise
+
+plt.figure(figsize = (10,8))
+y = model(x)
+plt.errorbar(x, y, 0.3, fmt='o') .   ----- use it!
+plt.show()
+
+
+from sklearn.neural_network import MLPRegressor
+
+mlp = MLPRegressor(hidden_layer_sizes=(200,200,200), \
+                   max_iter = 2000, solver='lbfgs', \
+                   alpha=0.01, activation = 'tanh', \
+                   random_state = 8)
+
+xfit = np.linspace(0, 10, 1000)
+ytrue = model(xfit, 0)
+yfit = mlp.fit(x[:, None], y).predict(xfit[:, None])
+
+plt.figure(figsize = (10,8))
+plt.errorbar(x, y, 0.3, fmt='o')
+plt.plot(xfit, yfit, '-r', label = 'predicted', \
+         zorder = 10)
+plt.plot(xfit, ytrue, '-k', alpha=0.5, \
+         label = 'true model', zorder = 10)
+plt.legend()
+plt.show()
+```
+
+
+### Julia
 <https://habr.com/ru/post/519930/> Julia language
 
 https://lwn.net/SubscriberLink/835930/47c363bef07134a4/  Pluto - Notebook for Julia (similar to Jupyter)
