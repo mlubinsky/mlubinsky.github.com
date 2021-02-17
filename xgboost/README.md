@@ -1,12 +1,19 @@
 https://xgboost.readthedocs.io/en/latest/index.html
 
-# Articles
+## Articles
 
 https://filip-wojcik.com/talks/xgboost_forecasting_eng.pdf
+
+## Article with code
 
 https://towardsdatascience.com/forecasting-stock-prices-using-xgboost-a-detailed-walk-through-7817c1ff536a
 
 https://medium.com/ai-trading-labs/forecasting-stock-prices-using-xgboost-part-2-2-5fa8ce843690
+
+https://github.com/NGYB/Stocks/blob/master/StockReturnsPrediction_fh21/StockReturnsPrediction_v4_xgboost.ipynb
+
+https://github.com/NGYB/Stocks/blob/master/StockReturnsPrediction_fh21/StockReturnsPrediction_v3_xgboost.ipynb
+
 
 ## Data preparation, categorical values:
 
