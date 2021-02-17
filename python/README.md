@@ -1,5 +1,7 @@
 https://habr.com/ru/company/skillfactory/blog/528232/
 
+https://levelup.gitconnected.com/python-tricks-i-can-not-live-without-87ae6aff3af8 useful tips
+
 <https://snarky.ca/why-you-should-use-python-m-pip/>.  python -m pip
 
 https://news.ycombinator.com/item?id=24565499. python internals
