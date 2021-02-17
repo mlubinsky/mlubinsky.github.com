@@ -1,5 +1,7 @@
 https://xgboost.readthedocs.io/en/latest/index.html
 
+
+https://github.com/NGYB/Stocks/blob/master/StockReturnsPrediction_fh21/StockReturnsPrediction_v3_xgboost.ipynb  from here:
 ```
 def get_mape(y_true, y_pred): 
     """
