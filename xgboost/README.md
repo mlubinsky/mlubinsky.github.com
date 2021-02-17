@@ -6,6 +6,8 @@ https://filip-wojcik.com/talks/xgboost_forecasting_eng.pdf
 
 https://towardsdatascience.com/forecasting-stock-prices-using-xgboost-a-detailed-walk-through-7817c1ff536a
 
+https://medium.com/ai-trading-labs/forecasting-stock-prices-using-xgboost-part-2-2-5fa8ce843690
+
 ## Data preparation, categorical values:
 
 https://machinelearningmastery.com/data-preparation-gradient-boosting-xgboost-python/
