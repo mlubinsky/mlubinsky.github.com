@@ -1,3 +1,14 @@
+### Removing trailing spaces in file
+
+.vimrc
+
+autocmd BufWritePre * %s/\s\+$//e
+
+VS Code: whitespace trimming at file save time from settings:
+ File → Preference → Settings → Text Editor → Files → (scroll down a bit) Trim Trailing Whitespace
+
+ menu File → Preferences → Settings → User Settings tab .
+
 ### Notes
 
 <https://lobste.rs/s/e5lx5p/what_note_taking_team_wiki_personal_wiki>
