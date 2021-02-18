@@ -64,11 +64,72 @@ https://unix.stackexchange.com/questions/196565/how-to-color-diff-output
 
 ### File manager
 
+ranger 
 <https://www.youtube.com/watch?v=47QYCa8AYG4> .  vifm
 
 <https://www.youtube.com/watch?v=EGBEIb2DgtQ> . lf
 
 <https://www.youtube.com/watch?v=cnzuzcCPYsk> nnn
+
+
+### cd on quit in NNN
+```
+if you mean the C-g behaviour then you need to set $NNN_TMPFILE:
+    nnn() {
+      declare -x +g NNN_TMPFILE=$(mktemp --tmpdir $0.XXXX)
+      trap "rm -f $NNN_TMPFILE" EXIT
+      =nnn $@
+      [ -s $NNN_TMPFILE ] && source $NNN_TMPFILE
+    }
+    
+You can use a static file if you're sure you'll never be running more than one instance.
+I'd prefer something like:
+
+    nnn() {
+      local tmp=$(mktemp --tmpdir $0.XXXX)
+      trap "rm -f $tmp" EXIT
+      =nnn -p $tmp $@
+      [ -s $tmp ] && cd ${"$(< $tmp)":h}
+    }
+That will cd to the selected file's directory with enter/right, or do nothing if you simply quit. 
+I guess it depends if you use it for browsing a lot or simply picking a file.
+ 
+Pressing `!` in the target directory will open a new terminal session within nnn, with that path as working dir. 
+When you `exit` you'll land in nnn again.
+It's not exactly the same but close enough for me.
+
+```
+
+### Tools
+
+If you like terminal productivity I recommend: 
+   fzf, 
+   Facebook path picker (aka fpp), 
+   fd, 
+   ripgrep, 
+   lf, 
+   tig
+
+Some honorable mentions: 
+ tokei, 
+ hyperfine, 
+ lazydocker, 
+ ctop, 
+ ncspot.
+ bat, 
+ exa, 
+ percol,
+ GNU dialog or zenity, 
+ xsv, 
+ ministat, 
+ gnuplot, 
+ tshark, 
+ mitmproxy.
+ 
+Plus any project from sharkdp and burntsushi and any tools recommended by Brendan Gregg.
+
+ht editor is a personal favorite too (press F6 and go to image to get started).
+
 
 ## Find non-ASCII chars in file
 
