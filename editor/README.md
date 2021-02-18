@@ -5,9 +5,8 @@
 autocmd BufWritePre * %s/\s\+$//e
 
 VS Code: whitespace trimming at file save time from settings:
- File → Preference → Settings → Text Editor → Files → (scroll down a bit) Trim Trailing Whitespace
-
- menu File → Preferences → Settings → User Settings tab .
+ File → Preference → Settings → Text Editor → Files → (scroll down a bit) to see checkbox Trim Trailing Whitespace
+ 
 
 ### Notes
 
