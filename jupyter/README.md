@@ -60,6 +60,14 @@ http://scipy-lectures.org/index.html
 
 ### Pandas
 
+
+If you absolutely must iterate over the rows in your DataFrame, use the .itertuples() method:
+```
+for row in df.itertuples():
+    print(row.Index, row.date)
+```    
+
+
 https://chrisalbon.com/
 
 https://github.com/jvns/pandas-cookbook
@@ -1048,7 +1056,28 @@ https://www.kaggle.com/learn/overview  Pandas, TensorFlow, etc
 
 <https://stackoverflow.com/questions/40845304/runtimewarning-numpy-dtype-size-changed-may-indicate-binary-incompatibility>
 
+## Linear interpolation
+
+```
+import numpy as np
+
+points = [-2, -1, 0, 1, 2]
+values = [4, 1, 0, 1, 4]
+
+x = np.linspace(-2, 2, num=10)
+y = np.interp(x, points, values)
+
+import matplotlib.pyplot as plt
+
+plt.plot(points, values, 'o')
+plt.plot(x, y, 'o', alpha=0.5)
+
+plt.xlabel("x")
+plt.ylabel("y");
+```
+
 ## Linear model
+
 ```
 import warnings
 warnings.filterwarnings("ignore", message="numpy.dtype size changed")
