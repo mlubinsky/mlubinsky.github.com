@@ -4,6 +4,10 @@ http://jeffe.cs.illinois.edu/teaching/algorithms/
 
 https://news.ycombinator.com/item?id=25519718 Interview advice that got me offers 
 
+https://quanticdev.com/algorithms/distributed-computing/distributed-sorting/. distibuted sorting
+
+https://paddy3118.blogspot.com/2021/02/longest-common-substring-investigation.html. longest common substr
+
 https://habr.com/ru/company/skillfactory/blog/539058/
 
 https://habr.com/ru/post/535216/ interview
