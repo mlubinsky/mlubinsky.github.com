@@ -82,31 +82,50 @@ SQL parser :
  ## Go
  
 <https://lets-go.alexedwards.net/>
+
 <https://github.com/Pungyeon/clean-go-article>
+
 https://github.com/hoanhan101/ultimate-go
+
 https://github.com/quii/learn-go-with-tests
+
+https://quii.gitbook.io/learn-go-with-tests/
+
 https://github.com/ardanlabs/gotraining
 
 
 https://go101.org/article/101.html
+
 news.ycombinator.com/item?id=17061713  How to start go project in 2018
 
 http://golang-book.ru/
+
 https://habr.com/ru/post/456194/ .  go structures
+
 https://habr.com/ru/company/otus/blog/465613/
+
 https://github.com/darshanime/notes/blob/master/golang.org
+
 https://freshman.tech/golang-guess 
+
 https://getstream.io/blog/go-1-11-rocket-tutorial/
+
 https://github.com/hliyan/learn-golang
-https://quii.gitbook.io/learn-go-with-tests/
+
+
+
 https://milapneupane.com.np/2019/07/06/learning-golang-from-zero-to-hero/
 
 http://www.go-gazelle.com/issues/learn-go-by-building-a-guessing-game-clear-is-better-than-clever-geth-1-9-0-more-187822
 
 https://news.ycombinator.com/item?id=19218097
+
 https://getstream.io/blog/how-a-go-program-compiles-down-to-machine-code/
+
 https://povilasv.me/go-memory-management/
+
 https://blog.learngoprogramming.com/a-visual-guide-to-golang-memory-allocator-from-ground-up-e132258453ed
+
 https://about.sourcegraph.com/go/gophercon-2018-allocator-wrestling/
 
 
