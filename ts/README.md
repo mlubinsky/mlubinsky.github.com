@@ -24,15 +24,19 @@ https://towardsdatascience.com/part-2-time-series-analysis-predicting-hourly-ene
 
 матрица корреляций для временных рядов https://habr.com/ru/post/541610/
 
-### XGBoost
+https://mabrek.github.io/arima-vs-long-forecasts-2017/#/ 
+
+### XGBoost for TS
+
+https://habr.com/ru/company/ods/blog/327242/ 
+
 https://filip-wojcik.com/talks/xgboost_forecasting_eng.pdf
 
 https://towardsdatascience.com/forecasting-stock-prices-using-xgboost-a-detailed-walk-through-7817c1ff536a
 
 https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
 
-## Hyperopt 
-https://hyperopt.github.io/hyperopt/
+ 
 
 ## Errors: RMSE, MAPE, and MAE 
 https://en.wikipedia.org/wiki/Mean_absolute_percentage_error
