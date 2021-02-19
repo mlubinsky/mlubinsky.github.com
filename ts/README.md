@@ -37,6 +37,12 @@ https://towardsdatascience.com/forecasting-stock-prices-using-xgboost-a-detailed
 https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
 
  
+ 
+## Kalman filter
+
+https://github.com/pykalman/pykalman
+
+https://github.com/rlabbe/filterpy
 
 ## Errors: RMSE, MAPE, and MAE 
 https://en.wikipedia.org/wiki/Mean_absolute_percentage_error
