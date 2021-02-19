@@ -1,5 +1,9 @@
 <https://sites.ualberta.ca/~szepesva/RLBook.html>
 
+https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
+
+https://www.youtube.com/watch?v=0MNVhXEX9to  
+
 https://corecursive.com/061-reinforcement-learning/
 
 <http://incompleteideas.net/book/RLbook2018.pdf>
