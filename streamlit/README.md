@@ -1,5 +1,7 @@
 https://github.com/MathInspector/MathInspector
 
+https://rmorshea.github.io/articles/2021/idom-react-but-its-python/article/
+
 ## GradIo
 
 https://gradio.app/
