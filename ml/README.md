@@ -8,6 +8,9 @@ https://projecteuclid.org/euclid.ss/1177011137   Marcov Chain Monte Carlo articl
 
 https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distributions-526b11a24359
 
+
+https://mlfromscratch.com/model-stacking-explained/#/
+
 ### Educational projects
 
 https://pypi.org/project/sealion/ 
