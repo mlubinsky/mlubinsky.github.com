@@ -2,6 +2,22 @@ https://github.com/MathInspector/MathInspector
 
 https://pythonnumericalmethods.berkeley.edu/notebooks/chapter25.03-Regression.html
 
+### pandas query
+https://jbencook.com/pandas-query/
+```
+df.query("region == 'APAC' and revenue < 300")
+
+avg_revenue = df.revenue.mean()
+std_revenue = df.revenue.std()
+df.query("revenue > @avg_revenue + @std_revenue")
+
+df.query("revenue > revenue.mean() + revenue.std()").   # same as 3 lines above
+
+valid_dates = ["1999-01-02", "1999-01-03", "1999-01-04"]
+df.query("date in @valid_dates")
+```
+
+
 ```
 np.random.seed(0)
 x = 10 * np.random.rand(100)
