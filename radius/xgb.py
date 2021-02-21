@@ -19,8 +19,7 @@ import datastore
 import xgboost
 import xgb_autotune
 
-DEBUG = True
-# DEBUG=False
+DEBUG=False
 # ---------------
 def input_cmd():
     # ---------------
@@ -45,6 +44,14 @@ def input_cmd():
 
     parser.add_argument(
         "-e", "--end", type=str, help="The end date in format YYYY-MM-DD"
+    )
+
+    parser.add_argument(
+        "-m", "--metric",
+        type=str,
+        default="RMSLE",
+        choices=["RMSLE", "MAE", "MAPE", "ALL"],
+        help="Error formula"
     )
 
     parser.add_argument(
@@ -262,7 +269,6 @@ def get_features(y, opt, f_lags=True, lags=None):
 def create_ts_features(data, opt):
     # -----------------------------
 
-
     def get_shift(row):
         """
         shift: 3 shifts per day of 8 hours
@@ -281,30 +287,9 @@ def create_ts_features(data, opt):
     features["dayofyear"] = data.index.dayofyear
     features["is_weekend"] = data.index.weekday.isin([5, 6]).astype(np.int32)
 
-    if opt == "use_day_of_week":
-        features["dayofweek"] = data.index.dayofweek
+    features["dayofweek"] = data.index.dayofweek
 
-    if opt == "separate_col":
-        features["morning"] = (
-            (features["hour"] >= 7) & (features["hour"] <= 11)
-        ).astype("int")
-        features["middleday"] = (
-            (features["hour"] >= 12) & (features["hour"] <= 18)
-        ).astype("int")
-        features["evening"] = (
-            (features["hour"] >= 19) & (features["hour"] <= 23)
-        ).astype("int")
-        features["night"] = ((features["hour"] >= 0) & (features["hour"] <= 6)).astype(
-            "int"
-        )
-
-    if opt == "use_shift":
-        features["shift"] = pd.Series(data.index.map(get_shift))
-
-    if opt == "use_lag_4":
-         for l in range(1,10):
-            features[f"l_{l}"] = data.shift(l)
-            features[f"l_{l}"].fillna(0, inplace=True)
+    features["shift"] = pd.Series(data.index.map(get_shift))
 
     features.index = data.index
 
@@ -314,7 +299,7 @@ def create_ts_features(data, opt):
 # ----------------------------------------------------
 def create_lag_features(target, lags=None, thres=0.2):
     # ----------------------------------------------------
-    print("--- lags=None  create_lag_features lags=", lags)
+    print("--- create_lag_features() lags=", lags)
     scaler = StandardScaler()
     features = pd.DataFrame()
 
@@ -337,14 +322,17 @@ def create_lag_features(target, lags=None, thres=0.2):
 
     if 0 in lags:
         lags.remove(0)  # do not consider itself as lag feature
+
+    for i in range(1,5):
+        if i not in lags:
+            lags.append(i)
+
     for l in lags:
         df[f"lag_{l}"] = target.shift(l)
 
     print("----  lags= --------")
     print(lags)
     print("len df=", len(df))
-    # print(df.columns)
-    # print("--------------")
 
     features = pd.DataFrame(scaler.fit_transform(df[df.columns]), columns=df.columns)
 
@@ -355,7 +343,7 @@ def create_lag_features(target, lags=None, thres=0.2):
 
 
 # ---------------------------------------------------------------
-def direct(y, train_fn, lags, n_steps, opt, step="1H", params=None):
+def direct(y, train_fn, lags, n_steps, opt,  score_metric, step="1H"): # params=None):
     # ---------------------------------------------------------------
     """Multi-step direct forecasting using a machine learning model
         to forecast each time period ahead
@@ -364,8 +352,8 @@ def direct(y, train_fn, lags, n_steps, opt, step="1H", params=None):
         ----------
         y: pd.Series holding the input time-series to forecast
         train_fn: a function for training the model which returns as output the trained model
-                  cross-validation score and test score
-        params: additional parameters for the training function
+                and test score
+        score_metric: metric the training function
 
         Returns
         -------
@@ -392,21 +380,20 @@ def direct(y, train_fn, lags, n_steps, opt, step="1H", params=None):
 
         return features, target
 
-    params = {} if params is None else params
     fcast_values = []
     fcast_range = pd.date_range(
         y.index[-1] + pd.Timedelta(hours=1),
-        periods=n_steps,  #   self.n_steps,
-        freq=step,  # self.step
+        periods=n_steps,
+        freq=step,
     )
     fcast_features, _ = one_step_features(y.index[-1], 0)
 
-    for s in range(1, n_steps + 1):  # self.n_steps+1):
+    for s in range(1, n_steps + 1):
 
         last_date = y.index[-1] - pd.Timedelta(hours=s)
         features, target = one_step_features(last_date, s)
 
-        model, cv_score, test_score = train_fn(features, target, **params)
+        model = train_fn(features, target, score_metric)
 
         # use the model to predict s steps ahead
         predictions = model.predict(fcast_features)
@@ -429,10 +416,68 @@ def rmsle(real, predicted):
     return (sum / len(predicted)) ** 0.5
 
 
+# MAE computation
+def mae(y, yhat):
+    """
+    Safe computation of the Mean Average Percentage Error
+    Parameters
+    ----------
+    y: pd.Series or np.array holding the actual values
+    yhat: pd.Series or np.array holding the predicted values
+    perc: if True return the value in percentage
+    Returns
+    -------
+    the MAE value
+    """
+    err = -1.
+    try:
+        m = len(y.index) if type(y) == pd.Series else len(y)
+        n = len(yhat.index) if type(yhat) == pd.Series else len(yhat)
+        assert m == n
+        mae = []
+        for a, f in zip(y, yhat):
+                mae.append(np.abs((a - f)))
+        mae = np.mean(np.array(mae))
+        return mae
+
+    except AssertionError:
+        print(f"Wrong dimension for MAE calculation: y = {m}, yhat = {n}")
+        return -1.
+
+
+# MAPE computation
+def mape(y, yhat, perc=True):
+    """
+    Safe computation of the Mean Average Percentage Error
+    Parameters
+    ----------
+    y: pd.Series or np.array holding the actual values
+    yhat: pd.Series or np.array holding the predicted values
+    perc: if True return the value in percentage
+    Returns
+    -------
+    the MAPE value
+    """
+    err = -1.
+    try:
+        m = len(y.index) if type(y) == pd.Series else len(y)
+        n = len(yhat.index) if type(yhat) == pd.Series else len(yhat)
+        assert m == n
+        mape = []
+        for a, f in zip(y, yhat):
+            # avoid division by 0
+            if np.abs(a) > 1e-3:
+                mape.append(np.abs((a - f)/a))
+        mape = np.mean(np.array(mape))
+        return mape * 100. if perc else mape
+
+    except AssertionError:
+        print(f"Wrong dimension for MAPE calculation: y = {m}, yhat = {n}")
+        return -1.
 # -------------------------------------------------------------------
-def train_autotune_model(model, X_train, y_train):
+def train_autotune_model(X_train, y_train, score_metric):
     # -------------------------------------------------------------------
-    rmlse_score = make_scorer(rmsle, greater_is_better=False)
+
 
     fitted_model = xgb_autotune.fit_parameters(
         initial_model=xgboost.XGBRegressor(objective="reg:squarederror"),
@@ -440,42 +485,36 @@ def train_autotune_model(model, X_train, y_train):
         X_train=X_train,
         y_train=y_train,
         min_loss=0.01,
-        scoring=rmlse_score,
+        scoring=score_metric,
         n_folds=5,
     )
 
-    return {"loss": rmlse_score, "status": 0, "model": fitted_model}
+    return  fitted_model
 
 
 # -------------------------------------------------------------------
-def xgboost_model(features, target, test_size=0.2, max_evals=10):
+def xgboost_model(features, target, score_metric, test_size=0.2,):
     # -------------------------------------------------------------------
     """
-    Full training and testing pipeline for XGBoost ML model with
-    hyperparameter optimization using Bayesian method
-    Parameters
-    ----------
     features: pd.DataFrame holding the model features
     target: pd.Series holding the target values
-    max_evals: maximum number of iterations in the optimization procedure
+    test_size: 20% by default
     Returns
     -------
     model: the optimized XGBoost model
-    cv_score: the average RMSE coming from cross-validation
-    test_score: the RMSE on the test set
     """
 
     X_train, X_test, y_train, y_test = train_test_split(
         features, target, test_size=test_size, shuffle=False
     )
 
-    res = train_autotune_model(None, X_train, y_train)
-    model = res["model"]
-    return model, 0.0, 0.0
+    model  = train_autotune_model(X_train, y_train, score_metric)
+
+    return model
 
 
 # ------------------------------------
-def multi_direct(c_target, f_steps, option):
+def multi_direct(c_target, f_steps, option, score_metric):
     # ------------------------------------
 
     t_target, f_target, fcast_range = forecast_split(c_target, n_steps=f_steps)
@@ -495,7 +534,7 @@ def multi_direct(c_target, f_steps, option):
     t_target_detrended, model_detrended = detrend(t_target)
 
     fcast_xgb_detrended, model = direct(
-        t_target_detrended, xgboost_model, lags, f_steps, option
+        t_target_detrended, xgboost_model, lags, f_steps, option, score_metric
     )
 
     start = len(t_target)
@@ -514,14 +553,14 @@ def multi_direct(c_target, f_steps, option):
 
 
 # ---------------------------------------------
-def final_plot(c_target, predictions, options, header):
+def final_plot(c_target, predictions, labels, header):
     # ----------------------------------------------
     fig, ax = plt.subplots(1, 1, figsize=(12, 8))
 
-    ax.plot(c_target, color="blue", label="Original", linestyle="-", marker="o")
+    ax.plot(c_target, color="blue", label="Real data", linestyle="-", marker="o")
 
     for i, pred in enumerate(predictions):
-        ax.plot(pred, label=options[i], linestyle="-", marker="o")
+        ax.plot(pred, label=labels[i] , linestyle="--", marker="o")
 
     ax.set_title(header)
     ax.legend()
@@ -559,20 +598,27 @@ def main():
         if not args.hours:
             help("no hours")
 
+        print("args.metric=", args.metric)
+
         company = args.company
         table = args.table
+
         begin = args.begin
         end = args.end
+
         f_steps = args.hours
         direction = args.direction
 
         d_begin = datetime.strptime(begin, "%Y-%m-%d")
         d_end = datetime.strptime(end, "%Y-%m-%d")
+
         n_days = (d_end - d_begin).days
+
+        # The training interval should be longer at least twice than asked prediction hours
         print("n_days=", n_days)
-        if args.hours * 1.0 / (n_days * 24.0) > 0.5:
+        if  n_days * 24 < args.hours * 2:
             print(
-                "The training interval too sort the asked predition hours is too long"
+                "The training interval is too short"
             )
             exit(1)
 
@@ -602,10 +648,18 @@ def main():
         s = generate_series("linear_and_sin", begin, n_days)
 
     predictions = []
-    options = ["use_lag_4", "use_shift", "use_day_of_week"]  # ,"separate_col"]
-    for option in options:
-        p = multi_direct(s, f_steps, option)
+    labels = []
+    metrics={
+        "RMSLE": make_scorer(rmsle, greater_is_better=False),
+        "MAE"  : make_scorer(mae, greater_is_better=False),
+        "MAPE" : make_scorer(mape, greater_is_better=False)
+    }
+
+    for metric_name, metric_function in  metrics.items():
+      if args.metric == 'ALL' or args.metric == metric_name:
+        p = multi_direct(s, f_steps, None, metric_function)
         predictions.append(p)
+        labels.append( metric_name)
 
     header = "Hourly traffic (MB). "
     header += str(f_steps) + " hours prediction. "
@@ -614,7 +668,7 @@ def main():
         if direction:
             header +=  " . Direction=" + str(direction)
 
-    final_plot(s, predictions, options, header)
+    final_plot(s, predictions, labels, header)
 
 
 if __name__ == "__main__":
