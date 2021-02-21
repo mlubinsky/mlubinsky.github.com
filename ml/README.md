@@ -1,4 +1,6 @@
-Gaussian process
+https://www.theinsaneapp.com/2020/12/machine-learning-and-data-science-cheat-sheets-pdf.html
+
+### Gaussian process
 
 https://towardsdatascience.com/implement-a-gaussian-process-from-scratch-2a074a470bce
 
