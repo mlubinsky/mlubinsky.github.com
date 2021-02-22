@@ -1,5 +1,14 @@
 https://xgboost.readthedocs.io/en/latest/index.html
 
+```
+from sklearn.metrics import mean_squared_error, mean_absolute_error
+
+mean_squared_error(y_true=dfs_test[‘y’],
+y_pred=dfs_test[‘y_Prediction’])
+
+mean_absolute_error(y_true=dfs_test[‘y’],
+y_pred=dfs_test[‘y_Prediction’])
+```
 
 https://github.com/NGYB/Stocks/blob/master/StockReturnsPrediction_fh21/StockReturnsPrediction_v3_xgboost.ipynb  from here:
 ```
@@ -32,6 +41,27 @@ def get_rmse(a, b):
     return math.sqrt(np.mean((np.array(a)-np.array(b))**2))
  ```   
 
+https://github.com/julianikulski/bike-sharing/blob/master/bike_sharing_demand.ipynb
+```
+# root mean squared error
+print('XGBoost: Average RMSE train data:', 
+      sum([np.sqrt(-1 * x) for x in scores_xgb['train_neg_mean_squared_error']])/len(scores_xgb['train_neg_mean_squared_error']))
+print('XGBoost: Average RMSE test data:', 
+      sum([np.sqrt(-1 * x) for x in scores_xgb['test_neg_mean_squared_error']])/len(scores_xgb['test_neg_mean_squared_error']))
+
+# mean absolute error
+print('XGBoost: Average MAE train data:', 
+      sum([(-1 * x) for x in scores_xgb['train_neg_mean_absolute_error']])/len(scores_xgb['train_neg_mean_absolute_error']))
+print('XGBoost: Average MAE test data:', 
+      sum([(-1 * x) for x in scores_xgb['test_neg_mean_absolute_error']])/len(scores_xgb['test_neg_mean_absolute_error']))
+
+# root mean squared log error
+print('XGBoost: Average RMSLE train data:', 
+      sum([np.sqrt(-1 * x) for x in scores_xgb['train_neg_mean_squared_log_error']])/len(scores_xgb['train_neg_mean_squared_log_error']))
+print('XGBoost: Average RMSLE test data:', 
+      sum([np.sqrt(-1 * x) for x in scores_xgb['test_neg_mean_squared_log_error']])/len(scores_xgb['test_neg_mean_squared_log_error']))
+```
+
 ## Articles
 
 https://filip-wojcik.com/talks/xgboost_forecasting_eng.pdf
@@ -46,6 +76,10 @@ https://github.com/NGYB/Stocks/blob/master/StockReturnsPrediction_fh21/StockRetu
 
 https://github.com/NGYB/Stocks/blob/master/StockReturnsPrediction_fh21/StockReturnsPrediction_v3_xgboost.ipynb
 
+
+model_xgb = xgb.XGBRegressor(random_state=42)
+
+https://github.com/julianikulski/bike-sharing/blob/master/bike_sharing_demand.ipynb
 
 ## Data preparation, categorical values:
 
