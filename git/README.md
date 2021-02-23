@@ -1,3 +1,5 @@
+https://blog.isquaredsoftware.com/2021/01/coding-career-git-usage/
+
 https://habr.com/ru/company/skillbox/blog/534972/  Undo
 
 <https://rtyley.github.io/bfg-repo-cleaner/> clean the git
