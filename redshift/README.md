@@ -5,6 +5,8 @@
 <https://sonra.io/2018/01/01/using-apache-airflow-to-build-a-data-pipeline-on-aws/>
 
 
+https://docs.aws.amazon.com/redshift/latest/dg/r_COUNT.html  APPROXIMATE COUNT DISTINCT
+
 <https://www.youtube.com/user/AmazonWebServices>
 
 <https://fivetran.com/blog/warehouse-benchmark>
