@@ -14,6 +14,8 @@ https://www.microprediction.com/blog/popular-timeseries-packages
 
 https://habr.com/ru/post/542638/
 
+https://www.sktime.org/en/latest/
+
 ## Best
 
 https://analyzingalpha.com/time-series-analysis-with-python
@@ -408,6 +410,8 @@ https://www.youtube.com/watch?v=xLbPP5xNIJs
 https://notamonadtutorial.com/stumpy-unleashing-the-power-of-the-matrix-profile-for-time-series-analysis-7c46af040adb
 
 ### sktime and sktime-dl
+
+https://www.sktime.org/en/latest/
 
 <https://habr.com/ru/company/otus/blog/511782/>. sktime - time series with python
 
