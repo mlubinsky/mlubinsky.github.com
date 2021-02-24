@@ -26,6 +26,8 @@ https://towardsdatascience.com/part-2-time-series-analysis-predicting-hourly-ene
 
 https://mabrek.github.io/arima-vs-long-forecasts-2017/#/ 
 
+http://francescopochetti.com/pythonic-cross-validation-time-series-pandas-scikit-learn/ Cross validation for TS
+
 ### XGBoost for TS
 
 https://habr.com/ru/company/ods/blog/327242/ 
