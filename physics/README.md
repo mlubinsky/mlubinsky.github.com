@@ -2,6 +2,8 @@
 
 https://www.piter.com/product/teoreticheskiy-minimum-spetsialnaya-teoriya-otnositelnosti-i-klassicheskaya-teoriya-polya
 
+https://arxiv.org/pdf/2102.09371.pdf
+
 https://www.youtube.com/watch?v=pkfDYOZ1p4Y Toy models, Dr Tadashi Tokieda
 
 Books:  http://alexandr4784.narod.ru/tf.html
