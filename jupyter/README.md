@@ -1,5 +1,7 @@
 https://github.com/MathInspector/MathInspector
 
+https://habr.com/ru/company/skillfactory/blog/542870/ Jupyper add-ins
+
 https://pythonnumericalmethods.berkeley.edu/notebooks/chapter25.03-Regression.html
 
 ### pandas query
