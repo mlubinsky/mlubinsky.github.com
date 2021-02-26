@@ -1,5 +1,7 @@
 <https://github.com/twmb/kcl> Kafka client
 
+https://habr.com/ru/company/parimatch_tech/blog/544304/. Kafka clients with GUI
+
 https://habr.com/ru/company/otus/blog/532954/  KAFKA API
 
 https://habr.com/ru/company/southbridge/blog/530498/  
