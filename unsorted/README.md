@@ -1,6 +1,7 @@
 Делайте что хотите, но пусть это приносит радость
 /Уолт Уитмен/
 
+https://habr.com/ru/post/541024/ . Science channels
 
 ### Google chrome helper fix: 
 
