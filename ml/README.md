@@ -1,5 +1,7 @@
 https://www.theinsaneapp.com/2020/12/machine-learning-and-data-science-cheat-sheets-pdf.html
 
+https://www.youtube.com/watch?v=7inArpm-83U. Interview
+
 ### Gaussian process
 
 https://towardsdatascience.com/implement-a-gaussian-process-from-scratch-2a074a470bce
