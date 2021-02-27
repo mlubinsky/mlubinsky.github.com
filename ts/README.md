@@ -14,7 +14,7 @@ https://www.microprediction.com/blog/popular-timeseries-packages
 
 https://habr.com/ru/post/542638/
 
-https://www.sktime.org/en/latest/
+https://www.sktime.org/en/latest/   !!!
 
 ## Best
 
@@ -29,6 +29,8 @@ https://towardsdatascience.com/part-2-time-series-analysis-predicting-hourly-ene
 https://mabrek.github.io/arima-vs-long-forecasts-2017/#/ 
 
 http://francescopochetti.com/pythonic-cross-validation-time-series-pandas-scikit-learn/ Cross validation for TS
+
+https://blog.paperspace.com/time-series-forecasting-autoregressive-models-smoothing-methods/
 
 ### XGBoost for TS
 
