@@ -182,6 +182,8 @@ https://habr.com/ru/post/528734/
 
 ### Linear algebra
 
+https://data-science-blog.com/blog/2020/10/27/10360/   visualizing linear transformations and eigenvectors
+
 https://pabloinsente.github.io/intro-linear-algebra
 
 https://pabloinsente.github.io/intro-linear-algebra
