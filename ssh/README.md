@@ -155,6 +155,13 @@ for line in ssh.stdout:
 ```    
 
 ### TUNNELS
+
+https://news.ycombinator.com/item?id=26053323
+
+https://unix.stackexchange.com/a/118650/289353
+
+https://robotmoon.com/ssh-tunnels/
+
 https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-ssh-config/  
   
 https://hackertarget.com/ssh-examples-tunnels/
