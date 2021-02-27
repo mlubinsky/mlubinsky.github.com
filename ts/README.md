@@ -49,6 +49,9 @@ https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
 
 https://sensiml.com/documentation/application-tutorials/industrial-condition-monitoring-tutorial.html
 
+https://square.github.io/pysurvival/
+
+https://stats.stackexchange.com/questions/45670/how-can-i-transform-time-series-data-so-i-can-use-simpler-techniques-for-fault-p
 
 ### Prophet
 https://microprediction.medium.com/is-facebooks-prophet-the-time-series-messiah-or-just-a-very-naughty-boy-8b71b136bc8c
