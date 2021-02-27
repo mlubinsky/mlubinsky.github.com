@@ -28,6 +28,11 @@ https://math.stackexchange.com/questions/3839472/new-k-samples-added-calculate-n
 https://geoffruddock.com/sql-jinja-templating/
 
 
+### Window function
+
+https://www.youtube.com/watch?v=QenwDm5oWdU
+
+
 ## LEAD, LAG, FIRST_GAP
 
 
