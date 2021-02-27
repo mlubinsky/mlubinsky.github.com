@@ -16,6 +16,8 @@ https://habr.com/ru/post/542638/
 
 https://www.sktime.org/en/latest/   !!!
 
+https://blog.paperspace.com/introduction-time-series-analysis/
+
 ## Best
 
 https://analyzingalpha.com/time-series-analysis-with-python
@@ -42,7 +44,14 @@ https://towardsdatascience.com/forecasting-stock-prices-using-xgboost-a-detailed
 
 https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
 
- 
+
+## Predictive Mintanance and Survavival Analysis
+
+https://sensiml.com/documentation/application-tutorials/industrial-condition-monitoring-tutorial.html
+
+
+### Prophet
+https://microprediction.medium.com/is-facebooks-prophet-the-time-series-messiah-or-just-a-very-naughty-boy-8b71b136bc8c
  
 ## Kalman filter
 
@@ -50,7 +59,12 @@ https://github.com/pykalman/pykalman
 
 https://github.com/rlabbe/filterpy
 
-## Errors: RMSE, MAPE, and MAE 
+## Errors: RMSE, MAPE, and MAE Accuracy
+
+https://towardsdatascience.com/popular-evaluation-metrics-for-classification-with-code-580fa0d4eb20
+
+https://www.youtube.com/watch?v=lHAEPyWNgyY
+
 https://en.wikipedia.org/wiki/Mean_absolute_percentage_error
 
 https://stats.stackexchange.com/questions/58391/mean-absolute-percentage-error-mape-in-scikit-learn
