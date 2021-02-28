@@ -17,6 +17,11 @@ usql <https://github.com/xo/usql>
 <https://news.ycombinator.com/item?id=22883429>
 
 
+
+### Эффективная конструкция агрегатов
+
+https://habr.com/ru/post/544514/
+
 ## My questions
 https://stackoverflow.com/questions/64055906/how-to-combine-2-sqls-into-single-sql
 
