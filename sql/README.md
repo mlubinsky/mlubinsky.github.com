@@ -35,6 +35,8 @@ https://habr.com/ru/company/oleg-bunin/blog/329222/ . 10 способов дос
 
 https://habr.com/ru/company/postgrespro/blog/351008/ Postgres and Oracle
 
+https://habr.com/ru/post/177165/ Postgres Aggregate
+
 https://habr.com/ru/company/tensor/blog/507056/
 
 https://habr.com/ru/post/544514/
