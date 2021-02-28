@@ -27,7 +27,11 @@ https://habr.com/ru/company/nix/blog/321686/
 
 https://habr.com/ru/company/nix/blog/322214/
 
+https://habr.com/ru/post/535452/
+
 ### Эффективная конструкция агрегатов
+
+https://habr.com/ru/company/postgrespro/blog/351008/ Postgres and Oracle
 
 https://habr.com/ru/company/tensor/blog/507056/
 
