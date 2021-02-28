@@ -20,6 +20,8 @@ usql <https://github.com/xo/usql>
 
 ### Эффективная конструкция агрегатов
 
+https://habr.com/ru/post/146429/  CQRS
+
 https://habr.com/ru/company/tensor/blog/507056/
 
 https://habr.com/ru/post/544514/
