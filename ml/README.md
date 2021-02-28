@@ -4,6 +4,18 @@ https://www.youtube.com/watch?v=7inArpm-83U. Interview
 
 
 https://vita.had.co.nz/papers/tidy-data.pdf . Gradient- free algorithms
+
+
+
+### Tidy data
+
+https://vita.had.co.nz/papers/tidy-data.pdf
+
+https://pbeshai.github.io/tidy/
+
+https://uwdata.github.io/arquero/
+
+
 ### Gaussian process
 
 https://towardsdatascience.com/implement-a-gaussian-process-from-scratch-2a074a470bce
