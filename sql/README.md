@@ -31,6 +31,8 @@ https://habr.com/ru/post/535452/
 
 ### Эффективная конструкция агрегатов
 
+https://habr.com/ru/company/oleg-bunin/blog/329222/ . 10 способов достижения HighLoad'а и BigData на ровном месте
+
 https://habr.com/ru/company/postgrespro/blog/351008/ Postgres and Oracle
 
 https://habr.com/ru/company/tensor/blog/507056/
