@@ -22,6 +22,8 @@ usql <https://github.com/xo/usql>
 
 https://habr.com/ru/post/544514/
 
+https://habr.com/ru/company/tensor/blog/539016/
+
 ## My questions
 https://stackoverflow.com/questions/64055906/how-to-combine-2-sqls-into-single-sql
 
