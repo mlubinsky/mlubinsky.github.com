@@ -29,6 +29,7 @@ https://habr.com/ru/company/tensor/blog/541374/
 
 https://habr.com/ru/company/tensor/blog/540572/
 
+https://habr.com/ru/company/tensor/blog/539638/
 
 ## My questions
 https://stackoverflow.com/questions/64055906/how-to-combine-2-sqls-into-single-sql
