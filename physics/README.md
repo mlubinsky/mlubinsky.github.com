@@ -1,5 +1,8 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+
+https://www.youtube.com/channel/UCEEhbFAvl3fOW5geICQbMcg MFTI lectures
+
 https://www.piter.com/product/teoreticheskiy-minimum-spetsialnaya-teoriya-otnositelnosti-i-klassicheskaya-teoriya-polya
 
 https://arxiv.org/pdf/2102.09371.pdf
