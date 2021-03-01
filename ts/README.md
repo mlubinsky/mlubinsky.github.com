@@ -49,9 +49,18 @@ https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
 
 ## Predictive Mintanance and Survavival Analysis
 
+https://pub.towardsai.net/survival-analysis-with-python-tutorial-how-what-when-and-why-19a5cfb3c312
+
+https://www.kdnuggets.com/2020/07/complete-guide-survival-analysis-python-part1.html
+
 https://sensiml.com/documentation/application-tutorials/industrial-condition-monitoring-tutorial.html
 
 https://square.github.io/pysurvival/
+
+https://lifelines.readthedocs.io/en/latest/
+
+https://docs.pymc.io/notebooks/survival_analysis.html
+
 
 https://stats.stackexchange.com/questions/45670/how-can-i-transform-time-series-data-so-i-can-use-simpler-techniques-for-fault-p
 
