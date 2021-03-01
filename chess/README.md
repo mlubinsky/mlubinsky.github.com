@@ -29,6 +29,8 @@ https://github.com/robtaussig/ChaosChess/tree/master/src/engine
 
 https://habr.com/ru/company/timeweb/blog/533642/
 
+https://github.com/yafred/chess-explorer-go
+
 #### Java
 https://github.com/Bglaws/Chess
 
