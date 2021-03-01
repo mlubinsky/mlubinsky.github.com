@@ -20,6 +20,8 @@ https://blog.paperspace.com/introduction-time-series-analysis/
 
 ## Best
 
+https://machinelearningmastery.com/multi-step-time-series-forecasting-with-machine-learning-models-for-household-electricity-consumption/
+
 https://analyzingalpha.com/time-series-analysis-with-python
 
 https://towardsdatascience.com/ml-time-series-forecasting-the-right-way-cbf3678845ff XGBoost
