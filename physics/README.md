@@ -5,6 +5,10 @@ https://www.youtube.com/channel/UCEEhbFAvl3fOW5geICQbMcg MFTI lectures
 
 https://7i.7iskusstv.com/y2020/nomer8_9/lukanchuk/
 
+http://www.tcm.phy.cam.ac.uk/~dek12/
+
+https://teach-in.ru/course/analytical-mechanics-kugushev
+
 https://www.piter.com/product/teoreticheskiy-minimum-spetsialnaya-teoriya-otnositelnosti-i-klassicheskaya-teoriya-polya
 
 https://arxiv.org/pdf/2102.09371.pdf
