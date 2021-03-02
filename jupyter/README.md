@@ -4,6 +4,11 @@ https://habr.com/ru/company/skillfactory/blog/542870/ Jupyper add-ins
 
 https://pythonnumericalmethods.berkeley.edu/notebooks/chapter25.03-Regression.html
 
+### Sorting in pandas
+
+https://realpython.com/pandas-sort-python/
+
+
 ### pandas query
 https://jbencook.com/pandas-query/
 ```
