@@ -19,6 +19,9 @@ usql <https://github.com/xo/usql>
 
 
 ## CQRS
+
+https://habr.com/ru/post/545128/
+
 https://habr.com/ru/post/146429/  CQRS
 
 https://habr.com/ru/post/149464/ CQRS
