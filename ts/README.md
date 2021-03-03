@@ -247,7 +247,8 @@ It can be more expensive to run a learning step on only one data point than on a
 https://arxiv.org/abs/1302.6927  Online Learning for Time Series Prediction
 
 
-## Outlier in time series: tsmoothie
+### Smoothing and outliers in time series 
+https://www.youtube.com/watch?v=7L23sCOZjns
 
 https://towardsdatascience.com/real-time-time-series-anomaly-detection-981cf1e1ca13
 
