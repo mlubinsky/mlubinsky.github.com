@@ -2,10 +2,13 @@ https://www.theinsaneapp.com/2020/12/machine-learning-and-data-science-cheat-she
 
 https://www.youtube.com/watch?v=7inArpm-83U. Interview
 
+### Gradient- free algorithms
+ 
+ https://github.com/SimonBlanke/Gradient-Free-Optimizers
+ 
+ https://news.ycombinator.com/item?id=26293171
 
-https://vita.had.co.nz/papers/tidy-data.pdf . Gradient- free algorithms
-
-
+http://www.randomservices.org/random/. Markov chain etc
 
 ### Tidy data
 
