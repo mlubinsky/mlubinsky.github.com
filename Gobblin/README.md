@@ -11,6 +11,32 @@ scribe-web-1.0-SNAPSHOT.tar scribe-web-1.0-SNAPSHOT.zip
 rsync scribe-web-1.0-SNAPSHOT.tar mlubinsky@scribe-dev-1002.bdp.roku.com:/home/mlubinsky/
 ```
 
+Error
+```
+
+com.roku.dea.util.FailedPropertyUtilTest > testFailedProperty[1] PASSED
+
+> Task :scribe-service:test FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':scribe-service:test'.
+> Process 'Gradle Test Executor 1' finished with non-zero exit value 1
+  This problem might be caused by incorrect test process configuration.
+  Please refer to the test execution section in the User Manual at https://docs.gradle.org/5.4.1/userguide/java_testing.html#sec:test_execution
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.4.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+```
+
 ## Gobblin
 
 https://gobblin.readthedocs.io/en/latest/
