@@ -1,4 +1,17 @@
-## Documentation
+## Scribe
+```
+cd scribe-api/
+./gradlew clean build
+
+ (DEA-11300)$ pwd
+/Users/mlubinsky/GIT/scribe-api/scribe-web/build/distributions
+ (DEA-11300)$ ls
+scribe-web-1.0-SNAPSHOT.tar scribe-web-1.0-SNAPSHOT.zip
+
+rsync scribe-web-1.0-SNAPSHOT.tar mlubinsky@scribe-dev-1002.bdp.roku.com:/home/mlubinsky/
+```
+
+## Gobblin
 
 https://gobblin.readthedocs.io/en/latest/
 
