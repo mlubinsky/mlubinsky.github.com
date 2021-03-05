@@ -302,7 +302,9 @@ docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=passwo
 
 <https://rob.conery.io/2019/10/24/virtual-computed-columns-in-postgresql-12/>
 
-## Pub/Subscribe, queue
+## Pub/Subscribe, queue, notify
+
+https://blog.arctype.com/postgres-notify-for-real-time-dashboards/
 
 <https://habr.com/ru/post/483014/>
 
