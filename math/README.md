@@ -156,6 +156,8 @@ https://habr.com/ru/post/528734/
 
 <https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python>
 
+https://news.ycombinator.com/item?id=26363347
+
 ## Stat
 
 <https://seeing-theory.brown.edu/index.html>  
