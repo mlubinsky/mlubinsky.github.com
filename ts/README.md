@@ -67,11 +67,6 @@ https://stats.stackexchange.com/questions/45670/how-can-i-transform-time-series-
 ### Prophet
 https://microprediction.medium.com/is-facebooks-prophet-the-time-series-messiah-or-just-a-very-naughty-boy-8b71b136bc8c
  
-## Kalman filter
-
-https://github.com/pykalman/pykalman
-
-https://github.com/rlabbe/filterpy
 
 ## Errors: RMSE, MAPE, and MAE Accuracy
 
