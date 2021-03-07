@@ -263,6 +263,16 @@ You can choose if the scale of x- and y-axes are fixed or variable by using the 
 facet_grid('drv + transmission ~ .')
 ```
 
+
+https://www.anaconda.com/blog/developer-blog/python-data-visualization-2018-why-so-many-libraries/
+
+https://codeburst.io/overview-of-python-data-visualization-tools-e32e1f716d10
+
+https://youtu.be/FytuB8nFHPQ
+
+http://pbpython.com/python-vis-flowchart.html
+
+
 ### Pywedge
 https://towardsdatascience.com/pywedge-a-complete-package-for-eda-data-preprocessing-and-modelling-32171702a1e0
 
