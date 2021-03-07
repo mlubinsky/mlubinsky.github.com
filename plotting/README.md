@@ -34,6 +34,7 @@ http://holoviews.org/
 
 
 ## Dash
+
 https://github.com/plotly/dash
 
 https://plotly.com/python/is-plotly-free/
@@ -53,6 +54,11 @@ https://pauliacomi.com/2020/06/07/plotly-v-bokeh.html
 https://plotly.com/python/plotly-express/
 
 https://www.sicara.ai/blog/2018-01-30-bokeh-dash-best-dashboard-framework-python
+
+
+<https://habr.com/post/431754/> Dash
+
+<https://youtu.be/psvU4zwO3Ao> . Plotly
 
 ## Awesome panel
 
@@ -112,19 +118,11 @@ http://blog.pyviz.org/
 
 
 
-<https://habr.com/post/431754/> Dash
+
 
 <https://medium.com/swlh/effective-visualization-of-multi-dimensional-data-a-hands-on-approach-b48f36a56ee8>
 
-<https://www.anaconda.com/blog/developer-blog/python-data-visualization-2018-why-so-many-libraries/>
-
-
-
-<https://codeburst.io/overview-of-python-data-visualization-tools-e32e1f716d10>
-
-<https://youtu.be/FytuB8nFHPQ>
-
-<http://pbpython.com/python-vis-flowchart.html>
+ 
 
 <https://dsaber.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/>
 
@@ -133,7 +131,6 @@ http://blog.pyviz.org/
 <https://python-graph-gallery.com/>
 
 
-<https://youtu.be/psvU4zwO3Ao> . Plotly
 
 
 ## ELK: Elastic Search, Logstash,  Kibana
