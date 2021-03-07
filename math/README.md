@@ -124,7 +124,7 @@ https://vk.com/physics_math  Books
 
 <https://www.mccme.ru/mmmf-lectures/books/>
 
-## Fourier series. 
+## Fourier series
 
 <https://jackschaedler.github.io/circles-sines-signals/index.html>
 
@@ -161,6 +161,8 @@ https://habr.com/ru/post/528734/
 <https://github.com/Quanteeks/Statistics-lectures/blob/master/book.pdf>
 
 ## Random processes:
+
+https://arxiv.org/pdf/1907.01060.pdf
 
 <https://habr.com/post/343148/>
 
