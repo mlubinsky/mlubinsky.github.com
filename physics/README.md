@@ -1,5 +1,6 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+https://nautil.us/issue/97/wonder/the-joy-of-condensed-matter?mc_cid=1cdb5c91ba&mc_eid=5230569f41
 
 https://www.youtube.com/channel/UCEEhbFAvl3fOW5geICQbMcg MFTI lectures
 
