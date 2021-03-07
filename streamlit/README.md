@@ -15,8 +15,13 @@ https://github.com/oegedijk/explainerdashboard
 https://towardsdatascience.com/build-dashboards-in-less-than-10-lines-of-code-835e9abeae4b
 
 ## StreamIt
+<https://docs.streamlit.io/>
+
+<https://www.streamlit.io/>
 
 https://www.coursera.org/projects/interactive-dashboards-streamlit-python
+
+https://awesome-streamlit.readthedocs.io/
 
 https://towardsdatascience.com/plotly-dash-vs-streamlit-which-is-the-best-library-for-building-data-dashboard-web-apps-97d7c98b938c
 
@@ -30,9 +35,6 @@ streamlit hello
 streamlit run your_script.py [-- script args]
 ```
 
-<https://docs.streamlit.io/>
-
-<https://www.streamlit.io/>
 
 <https://habr.com/ru/post/473196/>
 
