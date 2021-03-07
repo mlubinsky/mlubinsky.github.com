@@ -36,6 +36,8 @@ http://holoviews.org/
 ## Dash
 https://github.com/plotly/dash
 
+https://plotly.com/python/is-plotly-free/
+
 https://github.com/ucg8j/awesome-dash
 
 https://realpython.com/python-dash/
