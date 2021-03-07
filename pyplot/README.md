@@ -1,6 +1,22 @@
 
 https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-2dd74df12b5e
 
+https://python-graph-gallery.com/ Pandash, Seaborn, Matplotlib examples!
+
+https://www.practicaldatascience.org/html/plotting_part2.html
+
+http://pyviz.org/
+
+http://vispy.org/
+
+https://datavizcatalogue.com/
+
+http://datavizproject.com/
+
+https://towardsdatascience.com/plotting-with-python-c2561b8c0f1f
+
+https://kite.com/blog/python/data-analysis-visualization-python
+
 ## Python plotting code examples
 
 https://www.youtube.com/watch?v=mZOIeOeswB0
