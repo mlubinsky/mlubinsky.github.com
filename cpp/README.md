@@ -1,5 +1,7 @@
 https://habr.com/ru/post/538954/ chain of responsibility and command design pattern
 
+https://habr.com/ru/post/545946/ embedding any file to c/c++
+
 ## C
 
 https://github.com/tezc/sc.  common C libraries
