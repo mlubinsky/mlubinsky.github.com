@@ -8,7 +8,16 @@ https://pythonnumericalmethods.berkeley.edu/notebooks/chapter25.03-Regression.ht
 
 https://realpython.com/pandas-sort-python/
 
+### Dropping rows and columns
 
+https://www.wrighters.io/how-to-remove-a-column-from-a-dataframe/
+
+```
+df.drop('b', axis=1)         # drop a column
+df.drop('b', axis='columns') # same
+df.drop(columns='b')         # same
+df.drop(columns=['b'])       # same
+```
 ### pandas query
 https://jbencook.com/pandas-query/
 ```
