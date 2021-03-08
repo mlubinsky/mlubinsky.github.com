@@ -3,6 +3,8 @@ https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-
 
 https://python-graph-gallery.com/ Pandash, Seaborn, Matplotlib examples!
 
+https://www.machinelearningplus.com/plots/top-50-matplotlib-visualizations-the-master-plots-python/
+
 https://www.practicaldatascience.org/html/plotting_part2.html
 
 http://pyviz.org/
