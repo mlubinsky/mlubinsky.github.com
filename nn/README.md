@@ -2,6 +2,8 @@
 
 <https://d2l.ai/> Deep Learning book
 
+https://deeplearningmath.org/
+
 https://rubikscode.net/deep-learning-for-programmers/
 
 https://deeplearningsystems.ai/
