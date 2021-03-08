@@ -33,7 +33,7 @@ https://habr.com/ru/company/skillfactory/blog/526076/
 http://holoviews.org/
 
 
-## Dash
+## Dash Plotly
 
 https://github.com/plotly/dash
 
@@ -46,6 +46,9 @@ https://realpython.com/python-dash/
 https://habr.com/post/431754/ Dash
 
 https://medium.com/@drimik99/a-python-programmers-guide-to-dashboarding-part-3-3908c71f6ca
+
+https://livecodestream.dev/post/2020-07-23-interactive-data-visualization-using-plotly-and-python/
+
 
 https://www.activestate.com/blog/dash-vs-bokeh/
 
