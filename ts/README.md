@@ -38,6 +38,25 @@ http://francescopochetti.com/pythonic-cross-validation-time-series-pandas-scikit
 
 https://blog.paperspace.com/time-series-forecasting-autoregressive-models-smoothing-methods/
 
+
+### Hierarchial time series (HTS)
+
+https://medium.com/opex-analytics/hierarchical-time-series-101-734a3da15426
+
+https://otexts.com/fpp2/hts.html
+
+https://www.youtube.com/watch?v=jo12CWZ00Lo   Bayesian hierarchical time series with Prophet and PyMC3
+
+https://datapane.com/u/eugene/reports/arima-for-hierarchical-time-series-forecasting/
+
+https://core.ac.uk/download/pdf/154428359.pdf
+
+https://forecasters.org/wp-content/uploads/gravity_forms/7-2a51b93047891f1ec3608bdbd77ca58d/2014/07/Athanasopoulos_George_ISF2014.pdf
+
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0242099
+
+https://pyro.ai/examples/forecasting_iii.html
+
 ### XGBoost for TS
 
 https://habr.com/ru/company/ods/blog/327242/ 
