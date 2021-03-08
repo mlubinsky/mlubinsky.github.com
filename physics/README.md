@@ -14,6 +14,9 @@ https://www.piter.com/product/teoreticheskiy-minimum-spetsialnaya-teoriya-otnosi
 
 https://arxiv.org/pdf/2102.09371.pdf
 
+https://teach-in.ru/file/synopsis/pdf/analytical-mechanics-kugushev-M.pdf
+
+
 https://www.youtube.com/watch?v=pkfDYOZ1p4Y Toy models, Dr Tadashi Tokieda
 
 Books:  http://alexandr4784.narod.ru/tf.html
@@ -25,6 +28,8 @@ https://mipt.ru/education/chair/theoretical_physics/courses/.
 <https://science.d3.ru/posovetuite-podkast-s-fizikami-2046797/?sorting=rating>
 
 <http://fizka.ru/>
+
+https://techlibrary.ru/
 
 <https://physics.d3.ru/spin-elektrona-i-neravenstva-bella-2092069/?sorting=rating>
 
@@ -63,6 +68,9 @@ https://habr.com/ru/post/539188/  translation the article above to russian
 
 https://nadoumnet.d3.ru/termekh-khimfak-mgu-forsh-2110805/
 
+https://teach-in.ru/file/synopsis/pdf/analytical-mechanics-kugushev-M.pdf
+
+https://teach-in.ru/course/analytical-mechanics-kugushev
 
 https://www.youtube.com/watch?v=EceVJJGAFFI
 
