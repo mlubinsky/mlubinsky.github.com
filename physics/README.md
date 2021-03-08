@@ -12,7 +12,8 @@ https://teach-in.ru/course/analytical-mechanics-kugushev
 
 https://www.piter.com/product/teoreticheskiy-minimum-spetsialnaya-teoriya-otnositelnosti-i-klassicheskaya-teoriya-polya
 
-https://arxiv.org/pdf/2102.09371.pdf
+https://arxiv.org/pdf/2102.09371.pdf  From Ramanujan to renormalization: the art of doing
+away with divergences and arriving at physical results
 
 https://teach-in.ru/file/synopsis/pdf/analytical-mechanics-kugushev-M.pdf
 
