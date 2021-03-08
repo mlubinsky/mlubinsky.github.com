@@ -1161,11 +1161,6 @@ https://www.machinelearningplus.com/101-numpy-exercises-python/
 
 	
 http://www.zavtech.com/morpheus/docs/  DataFrames in Java
- 
-### Plotly
-
-<https://livecodestream.dev/post/2020-07-23-interactive-data-visualization-using-plotly-and-python/> 
- 
 
 ## Jupyter Enterprise Gateway 
 
