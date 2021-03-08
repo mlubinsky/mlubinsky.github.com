@@ -47,15 +47,25 @@ https://otexts.com/fpp2/hts.html
 
 https://www.youtube.com/watch?v=jo12CWZ00Lo   Bayesian hierarchical time series with Prophet and PyMC3
 
+https://discourse.pymc.io/t/hierarchical-time-series-with-prophet-and-pymc3-by-matthijs-brouns/5988
+
 https://datapane.com/u/eugene/reports/arima-for-hierarchical-time-series-forecasting/
 
 https://core.ac.uk/download/pdf/154428359.pdf
+
+https://arxiv.org/abs/1912.00370
 
 https://forecasters.org/wp-content/uploads/gravity_forms/7-2a51b93047891f1ec3608bdbd77ca58d/2014/07/Athanasopoulos_George_ISF2014.pdf
 
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0242099
 
 https://pyro.ai/examples/forecasting_iii.html
+
+https://github.com/carlomazzaferro/scikit-hts
+
+https://mc-stan.org/docs/2_26/stan-users-guide/time-series-chapter.html
+
+https://github.com/xenakas/hierarchical_modelling
 
 ### XGBoost for TS
 
