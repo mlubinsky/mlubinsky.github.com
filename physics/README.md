@@ -64,6 +64,8 @@ https://habr.com/ru/post/539188/  translation the article above to russian
 https://nadoumnet.d3.ru/termekh-khimfak-mgu-forsh-2110805/
 
 
+https://www.youtube.com/watch?v=EceVJJGAFFI
+
 ## QM
 
 http://lightcone.ru/
