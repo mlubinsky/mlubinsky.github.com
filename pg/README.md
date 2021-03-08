@@ -108,7 +108,15 @@ https://sql-info.de/postgresql/postgres-gotchas.html PG gotchas
 
 https://wiki.postgresql.org/wiki/Don't_Do_This   Do not do it in PG
 
+## Graph and tree extensions for postgres
+https://news.ycombinator.com/item?id=26345755
+
+
 ### Time series on Postgress
+
+https://age.apache.org/
+
+https://www.postgresql.org/docs/current/ltree.html
 
 https://blog.joshsoftware.com/2020/10/14/efficient-evenly-distributed-sampling-of-time-series-records-in-postgresql/
 
