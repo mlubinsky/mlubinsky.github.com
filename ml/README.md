@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=7inArpm-83U. Interview
  
  https://news.ycombinator.com/item?id=26293171
 
-http://www.randomservices.org/random/. Markov chain etc
+
 
 ### Tidy data
 
@@ -19,6 +19,8 @@ https://pbeshai.github.io/tidy/
 https://uwdata.github.io/arquero/
 
 ### Stat
+
+http://www.randomservices.org/random/. Markov chain etc
 
 http://www.stat.columbia.edu/~gelman/research/unpublished/stat50.pdf
 
