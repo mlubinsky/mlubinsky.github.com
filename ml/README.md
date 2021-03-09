@@ -2,6 +2,8 @@ https://www.theinsaneapp.com/2020/12/machine-learning-and-data-science-cheat-she
 
 https://www.youtube.com/watch?v=7inArpm-83U. Interview
 
+https://theblog.github.io/post/from-tensorflow-to-pytorch/. PyTorch for Tensorflow users
+
 ### Gradient- free algorithms
  
  https://github.com/SimonBlanke/Gradient-Free-Optimizers
