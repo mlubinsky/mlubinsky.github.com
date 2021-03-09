@@ -18,6 +18,13 @@ https://pbeshai.github.io/tidy/
 
 https://uwdata.github.io/arquero/
 
+### Stat
+
+http://www.stat.columbia.edu/~gelman/research/unpublished/stat50.pdf
+
+https://news.ycombinator.com/item?id=26374788
+
+https://mixtape.scunning.com/
 
 ### Gaussian process
 
