@@ -38,6 +38,17 @@ http://francescopochetti.com/pythonic-cross-validation-time-series-pandas-scikit
 
 https://blog.paperspace.com/time-series-forecasting-autoregressive-models-smoothing-methods/
 
+### Links
+
+https://pawarbi.github.io/blog/forecasting/r/python/rpy2/altair/2020/04/21/timeseries-part1.html
+Time series Forecasting in Python & R, Part 1 (EDA) • Time series forecasting using various forecasting methods in Python & R in one notebook by Sandeep Pawar.
+
+https://github.com/deeptime-ml/deeptime
+deeptime • Python library for analysis of time series data including dimensionality reduction, clustering, and Markov model estimation by Moritz Hoffmann.
+
+https://github.com/arundo/adtk
+adtk • A Python toolkit for rule-based/unsupervised anomaly detection in time series by Arundo Analytics.
+
 
 ### Hierarchial time series (HTS)
 
