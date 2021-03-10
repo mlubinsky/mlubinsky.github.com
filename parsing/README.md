@@ -49,6 +49,8 @@ Regular Expression:
 
 ## Parsers
 
+https://devlog.hexops.com/2021/zig-parser-combinators-and-why-theyre-awesome
+
 http://dmitrysoshnikov.com/courses/parsing-algorithms/
 
 https://news.ycombinator.com/item?id=24898210
