@@ -1,5 +1,6 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+https://youtu.be/f1pclkpMhRc Entropy
 https://mipt.ru/online/
 ```
 Онлайн–курсы от Московского физико–технического института по 29 направлениям.
