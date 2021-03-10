@@ -14,6 +14,8 @@ https://corecursive.com/061-reinforcement-learning/
 
 <https://www.newworldai.com/reinforcement-learning-course-deepmind/> . Course by Deep Mind
 
+https://www.reddit.com/r/MachineLearning/comments/m0r7pe/d_best_book_hardcopy_for_rl_with_code/
+
 <https://github.com/dennybritz/reinforcement-learning>
 
 <https://github.com/marload/deep-rl-tf2>
