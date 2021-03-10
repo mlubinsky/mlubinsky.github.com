@@ -25,6 +25,10 @@ https://uwdata.github.io/arquero/
 
 ### Stat
 
+https://habr.com/ru/post/455762/. Markov 
+
+https://habr.com/ru/company/skyeng/blog/473124/
+
 http://www.randomservices.org/random/. Markov chain etc
 
 https://www.youtube.com/watch?v=i3AkTO9HLXo&list=PLM8wYQRetTxBkdvBtz-gw8b9lcVkdXQKV Markov chain
