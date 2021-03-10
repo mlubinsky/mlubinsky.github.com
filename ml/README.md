@@ -25,6 +25,8 @@ https://uwdata.github.io/arquero/
 
 ### Stat
 
+http://www.machinelearning.ru/wiki/images/7/7c/SMAIS11_MCMC.pdf
+
 https://habr.com/ru/post/455762/. Markov 
 
 https://habr.com/ru/company/skyeng/blog/473124/
