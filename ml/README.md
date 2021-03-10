@@ -27,6 +27,8 @@ https://uwdata.github.io/arquero/
 
 http://www.randomservices.org/random/. Markov chain etc
 
+https://www.youtube.com/watch?v=i3AkTO9HLXo&list=PLM8wYQRetTxBkdvBtz-gw8b9lcVkdXQKV Markov chain
+
 http://www.stat.columbia.edu/~gelman/research/unpublished/stat50.pdf
 
 https://news.ycombinator.com/item?id=26374788
@@ -39,7 +41,7 @@ https://towardsdatascience.com/implement-a-gaussian-process-from-scratch-2a074a4
 
 https://sandipanweb.wordpress.com/2020/12/07/bayesian-machine-learning-mcmc-and-probabilistic-programming-with-python/
 
-https://projecteuclid.org/euclid.ss/1177011137   Marcov Chain Monte Carlo article
+https://projecteuclid.org/euclid.ss/1177011137   Markov Chain Monte Carlo article
 
 https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distributions-526b11a24359
 
