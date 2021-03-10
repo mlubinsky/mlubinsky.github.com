@@ -40,6 +40,8 @@ https://mipt.ru/education/chair/theoretical_physics/courses/.
 
 https://techlibrary.ru/
 
+https://core.ac.uk/. many books (including russian)
+
 <https://physics.d3.ru/spin-elektrona-i-neravenstva-bella-2092069/?sorting=rating>
 
 
