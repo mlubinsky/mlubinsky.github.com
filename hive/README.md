@@ -4,6 +4,10 @@
 
 <https://habr.com/ru/post/530422/> protobuf vs Avro
 
+pip install pyorc. https://pypi.org/project/pyorc/
+
+https://github.com/uber/petastorm. Parquet format. 
+
 
 ## DRUID and Hive REGEXP_EXTRACT()
 
