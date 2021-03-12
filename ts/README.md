@@ -50,6 +50,10 @@ https://github.com/arundo/adtk
 adtk • A Python toolkit for rule-based/unsupervised anomaly detection in time series by Arundo Analytics.
 
 
+https://github.com/datamllab/tods
+
+https://github.com/zillow/luminaire
+
 ### Hierarchial time series (HTS)
 
 https://medium.com/opex-analytics/hierarchical-time-series-101-734a3da15426
