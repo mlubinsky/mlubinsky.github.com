@@ -15,9 +15,11 @@ https://awesomeopensource.com/projects/anomaly-detection
 
 https://github.com/rob-med/awesome-TS-anomaly-detection
 
+https://github.com/datamllab/tods
 
 https://www.dasca.org/world-of-big-data/article/identifying-and-removing-outliers-using-python-packages
 
+https://github.com/zillow/luminaire
 
 ### youtube
 
