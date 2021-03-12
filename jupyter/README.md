@@ -2,6 +2,8 @@ https://github.com/MathInspector/MathInspector
 
 https://habr.com/ru/company/skillfactory/blog/542870/ Jupyper add-ins
 
+https://towardsdev.com/tricks-and-best-practices-from-kaggle-794a5914480f
+
 https://pythonnumericalmethods.berkeley.edu/notebooks/chapter25.03-Regression.html
 
 ### Sorting in pandas
