@@ -35,6 +35,8 @@ WHERE $__timeFilter
 
 The templating feature allows you to create variables that can be used in your metric queries, series names and panel titles. Use this feature to create generic dashboards that can quickly be changed to show graphs for different servers or metrics.
 
+https://github.com/ricardbejarano/graphql_exporter
+
 http://localhost:3000/
 
 http://localhost:3000/datasources
