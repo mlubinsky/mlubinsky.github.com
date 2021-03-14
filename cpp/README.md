@@ -2,13 +2,22 @@ https://habr.com/ru/post/538954/ chain of responsibility and command design patt
 
 https://habr.com/ru/post/545946/ embedding any file to c/c++
 
+
+## Macros
+
+while(0) in macro https://bowero.nl/blog/2020/10/25/defining-c-macros-the-right-way/
+
+https://habr.com/ru/post/546946/
+
 ## C
 
 https://github.com/tezc/sc.  common C libraries
 
-while(0) in macro https://bowero.nl/blog/2020/10/25/defining-c-macros-the-right-way/
 
-https://news.ycombinator.com/item?id=25176531 favoritsC tricks
+
+
+
+https://news.ycombinator.com/item?id=25176531 favorits C tricks
 
 https://github.com/nothings/single_file_libs
 
