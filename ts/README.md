@@ -1,3 +1,5 @@
+https://www.ritchievink.com/blog/2018/09/26/algorithm-breakdown-ar-ma-and-arima-models/
+
 https://robjhyndman.com/publications/
 
 https://www.journals.elsevier.com/international-journal-of-forecasting
