@@ -10,6 +10,8 @@ https://github.com/cuge1995/awesome-time-series
 
 https://awesomeopensource.com/projects/forecasting
 
+https://analyticsindiamag.com/guide-to-timesynth-a-python-library-for-synthetic-time-series-generation/
+
 https://www.microprediction.com/blog/popular-timeseries-packages
 
 https://habr.com/ru/post/542638/
