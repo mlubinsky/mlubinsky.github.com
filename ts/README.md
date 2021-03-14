@@ -20,6 +20,8 @@ https://www.sktime.org/en/latest/   !!!
 
 https://blog.paperspace.com/introduction-time-series-analysis/
 
+https://medium.com/coders-camp/10-machine-learning-projects-on-time-series-forecasting-ee0368420ccd
+
 ## Best
 
 https://www.machinelearningplus.com/category/time-series/
