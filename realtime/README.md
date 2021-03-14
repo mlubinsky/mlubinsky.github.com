@@ -7,6 +7,8 @@ https://materialize.com/a-simple-and-efficient-real-time-application-powered-by-
 
 ### GnuPlot
 
+https://habr.com/ru/post/546956/
+
 <https://habr.com/ru/company/ruvds/blog/517450/>
 
 <https://cyberchris.xyz/posts/awk-and-gnuplot/>
