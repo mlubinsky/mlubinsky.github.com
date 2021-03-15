@@ -144,6 +144,8 @@ https://habr.com/ru/post/528734/
 
 ## Stat
 
+https://www.youtube.com/watch?v=CBpMePXZQTw . Random processes
+
 <https://seeing-theory.brown.edu/index.html>  
 
 <http://www.jerrydallal.com/LHSP/LHSP.HTM>
