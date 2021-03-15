@@ -144,7 +144,9 @@ https://habr.com/ru/post/528734/
 
 ## Stat
 
-https://www.youtube.com/watch?v=CBpMePXZQTw . Random processes
+https://www.youtube.com/watch?v=CBpMePXZQTw . Random processes (ru )
+
+https://www.youtube.com/watch?v=1udDbPXz27M (ru)
 
 <https://seeing-theory.brown.edu/index.html>  
 
