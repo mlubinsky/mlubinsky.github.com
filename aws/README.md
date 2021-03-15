@@ -5,6 +5,10 @@ https://habr.com/ru/company/microsoft/blog/503462/
 
 https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_270839230_130845605&dclid=CImGtNrTpeoCFQMqrQYd4dYHbA
 
+### DynamoDB
+
+https://www.youtube.com/watch?v=HaEPXoXVf2k&t=3456s
+
 ### AWS
 
 https://habr.com/ru/post/529242/
