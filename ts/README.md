@@ -1,3 +1,5 @@
+https://habr.com/ru/company/glowbyte/blog/542940/ Fourie for TS
+
 https://www.ritchievink.com/blog/2018/09/26/algorithm-breakdown-ar-ma-and-arima-models/
 
 https://robjhyndman.com/publications/
