@@ -1,3 +1,11 @@
+### Time series classification
+
+<http://www.timeseriesclassification.com/>
+
+https://paperswithcode.com/task/time-series-classification/latest
+
+https://paperswithcode.com/task/time-series/
+
 https://habr.com/ru/company/glowbyte/blog/542940/ Fourie for TS
 
 https://www.ritchievink.com/blog/2018/09/26/algorithm-breakdown-ar-ma-and-arima-models/
@@ -25,6 +33,10 @@ https://www.sktime.org/en/latest/   !!!
 https://blog.paperspace.com/introduction-time-series-analysis/
 
 https://medium.com/coders-camp/10-machine-learning-projects-on-time-series-forecasting-ee0368420ccd
+
+### Deep learning for TS
+
+https://github.com/Alro10/deep-learning-time-series
 
 ## Best
 
@@ -424,6 +436,8 @@ https://towardsdatascience.com/introducing-pytorch-forecasting-64de99b9ef46
 
 https://analyticsindiamag.com/guide-to-pytorch-time-series-forecasting/
 
+https://github.com/KurochkinAlexey/Hierarchical-Attention-Based-Recurrent-Highway-Networks-for-Time-Series-Prediction
+
 ```
 Pytorch Forecasting is a framework made on top of PyTorch Light used to ease time series forecasting with the help of neural networks for real-world use-cases. It is having state of the art time series forecasting architectures that can be easily trained with input data points. This library has many benefits as they composed all the different requirements into specific classes like:
 
@@ -680,7 +694,7 @@ TBATS2 - TBATS1 With Two Seasonal Periods
 
 <https://towardsdatascience.com/an-end-to-end-project-on-time-series-analysis-and-forecasting-with-python-4835e6bf050b>
 
-<http://www.timeseriesclassification.com/>
+
 
 <https://tslearn.readthedocs.io/en/latest/index.html> .  tslearn
 
