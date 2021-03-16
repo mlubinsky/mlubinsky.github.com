@@ -55,7 +55,15 @@ https://towardsdatascience.com/ml-time-series-forecasting-the-right-way-cbf36788
 
 https://towardsdatascience.com/part-2-time-series-analysis-predicting-hourly-energy-consumption-of-san-diego-ii-f09665796c9
 
-матрица корреляций для временных рядов https://habr.com/ru/post/541610/
+### Multivariable TS
+
+https://towardsdatascience.com/multivariate-time-series-forecasting-653372b3db36
+
+https://towardsdatascience.com/simple-multivariate-time-series-forecasting-7fa0e05579b2
+
+
+### матрица корреляций для временных рядов
+https://habr.com/ru/post/541610/
 
 https://mabrek.github.io/arima-vs-long-forecasts-2017/#/ 
 
@@ -695,7 +703,12 @@ TBATS2 - TBATS1 With Two Seasonal Periods
 
 <https://www.reddit.com/r/datascience/comments/deiowd/are_there_any_python_libraries_that_help_with/>
 
+### Visualization
+https://towardsdatascience.com/formating-and-visualizing-time-series-data-ba0b2548f27b
+
 <https://machinelearningmastery.com/time-series-data-visualization-with-python/>
+
+https://towardsdatascience.com/introduction-to-interactive-time-series-visualizations-with-plotly-in-python-d3219eb7a7af
 
 <https://towardsdatascience.com/an-end-to-end-project-on-time-series-analysis-and-forecasting-with-python-4835e6bf050b>
 
