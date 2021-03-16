@@ -4,7 +4,12 @@
 
 https://paperswithcode.com/task/time-series-classification/latest
 
+### Papers with code:
 https://paperswithcode.com/task/time-series/
+
+https://paperswithcode.com/task/time-series/latest
+
+https://pyro.ai/ Probabilistic programming
 
 https://habr.com/ru/company/glowbyte/blog/542940/ Fourie for TS
 
