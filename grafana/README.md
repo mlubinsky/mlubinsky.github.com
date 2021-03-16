@@ -18,6 +18,21 @@ http://localhost:3000/
 Connecting to Prometeus: https://prometheus.io/docs/visualization/grafana/
 
 ### Prometeus
+```
+brew install prometheus
+```
+When run from `brew services`, `prometheus` is run from
+`prometheus_brew_services` and uses the flags in:
+   /usr/local/etc/prometheus.args
+
+To have launchd start prometheus now and restart at login:
+```
+  brew services start prometheus
+```  
+Or, if you don't want/need a background service you can just run:
+```
+  prometheus --config.file=/usr/local/etc/prometheus.yml
+```  
 https://prometheus.io/docs/introduction/first_steps/
 
 https://prometheus.io/download/
