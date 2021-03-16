@@ -45,6 +45,8 @@ https://github.com/Alro10/deep-learning-time-series
 
 ## Best
 
+https://towardsdatascience.com/time-series-forecasting-with-statistical-models-in-python-code-da457a46d68a
+
 https://www.machinelearningplus.com/category/time-series/
 
 https://machinelearningmastery.com/multi-step-time-series-forecasting-with-machine-learning-models-for-household-electricity-consumption/
