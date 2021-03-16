@@ -12,6 +12,15 @@ https://www.ardanlabs.com/blog/2020/09/using-python-memory.html. Go + Python
 
 <https://habr.com/ru/company/lamoda/blog/495344/>
 
+https://habr.com/ru/post/547350/ 
+
+https://github.com/rgaryaev/pspservice
+
+https://www.pilosa.com/ Pilosa
+
+https://www.pilosa.com/docs/latest/architecture/
+
+https://github.com/RoaringBitmap/RoaringFormatSpec
 
 ## Chess engine in GO
 
