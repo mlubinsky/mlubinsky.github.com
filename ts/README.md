@@ -43,6 +43,8 @@ https://medium.com/coders-camp/10-machine-learning-projects-on-time-series-forec
 
 https://github.com/Alro10/deep-learning-time-series
 
+https://www.robots.ox.ac.uk/~parg/pubs/theses/bryanLim.pdf
+
 ## Best
 
 https://towardsdatascience.com/time-series-forecasting-with-statistical-models-in-python-code-da457a46d68a
