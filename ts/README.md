@@ -4,6 +4,11 @@
 
 https://paperswithcode.com/task/time-series-classification/latest
 
+### Luminaire
+
+https://github.com/zillow/luminaire 
+Luminaire provides several anomaly detection and forecasting capabilities that incorporate correlational and seasonal patterns as well as uncontrollable variations in the data over time.
+
 ### Papers with code:
 https://paperswithcode.com/task/time-series/
 
