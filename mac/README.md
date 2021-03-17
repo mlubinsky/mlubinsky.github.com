@@ -18,6 +18,9 @@ https://kapeli.com/dash
  
 
 ### Chrome extensions
+
+https://chrome.google.com/webstore/detail/json-formatter/cfaihfocdnniaholfnjcemnfhcjchohb/related?hl=en. JSON formatter
+
 The great suspender
 
 https://www.zdnet.com/article/google-kills-the-great-suspender-heres-what-you-should-do-next/
