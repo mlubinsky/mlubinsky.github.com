@@ -4,10 +4,16 @@
 
 https://paperswithcode.com/task/time-series-classification/latest
 
-### Luminaire
+### Anomaly detection in time series
 
 https://github.com/zillow/luminaire 
 Luminaire provides several anomaly detection and forecasting capabilities that incorporate correlational and seasonal patterns as well as uncontrollable variations in the data over time.
+
+https://github.com/arundo/adtk
+adtk • A Python toolkit for rule-based/unsupervised anomaly detection in time series by Arundo Analytics.
+
+https://github.com/datamllab/tods  TODS: An Automated Time-series Outlier Detection System
+
 
 ### Papers with code:
 https://paperswithcode.com/task/time-series/
@@ -90,13 +96,8 @@ Time series Forecasting in Python & R, Part 1 (EDA) • Time series forecasting 
 https://github.com/deeptime-ml/deeptime
 deeptime • Python library for analysis of time series data including dimensionality reduction, clustering, and Markov model estimation by Moritz Hoffmann.
 
-https://github.com/arundo/adtk
-adtk • A Python toolkit for rule-based/unsupervised anomaly detection in time series by Arundo Analytics.
 
-
-https://github.com/datamllab/tods
-
-https://github.com/zillow/luminaire
+ 
 
 ### Hierarchial time series (HTS)
 
