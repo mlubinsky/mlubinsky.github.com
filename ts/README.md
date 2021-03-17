@@ -41,6 +41,8 @@ https://medium.com/coders-camp/10-machine-learning-projects-on-time-series-forec
 
 ### Deep learning for TS
 
+https://www.ritchieng.com/the-incredible-pytorch/. 
+
 https://github.com/Alro10/deep-learning-time-series
 
 https://www.robots.ox.ac.uk/~parg/pubs/theses/bryanLim.pdf
