@@ -10,7 +10,9 @@ https://rpsychologist.com/d3/nhst/
 
 <https://habr.com/ru/company/boodet_online/blog/498688/>  
 
-## churn rate
+## Churn rate + Retention = 100 %
+https://www.sisense.com/blog/how-to-calculate-cohort-retention-in-sql/
+
 <https://catchjs.com/Blog/Churn>. churn rate
 
 https://news.ycombinator.com/item?id=24831637
