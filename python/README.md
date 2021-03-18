@@ -1,5 +1,7 @@
 https://habr.com/ru/company/skillfactory/blog/528232/
 
+https://www.codementor.io/@adammertz/quick-tip-how-i-use-pip-tools-to-wrangle-dependencies-1fzreskhok . pip-tools
+
 https://www.youtube.com/watch?v=oNalXg67XEE.  Observer pattern
 
 https://levelup.gitconnected.com/python-tricks-i-can-not-live-without-87ae6aff3af8 useful tips
