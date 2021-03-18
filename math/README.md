@@ -12,6 +12,12 @@ https://news.ycombinator.com/item?id=25100241
 
 https://medium.com/cantors-paradise
 
+## Random processes:
+
+https://www.youtube.com/watch?v=itHtAUBlnZM&list=PL-_cKNuVAYAXSlTlxonEdTTrA_ppMARaR Теория случайных процессов | Михаил Лифшиц
+
+https://www.youtube.com/watch?v=wkoX3vUP5To&list=PLcsjsqLLSfNCWYkdCFXCIPUWuPMwtp9qC  Соколов Д. Д. - Теория случайный процессов
+
 ## группы
 
 <https://ru.coursera.org/learn/geometriya-i-gruppy> Геометрия и группы. Савватеев Алексей Владимирович
