@@ -16,6 +16,8 @@ https://alumninsu.ru/news/%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B8-%D0%B4%D0%BB%D1%8
 
 https://www.youtube.com/channel/UC36hJDQpvktVUi8lr5-shrA/videos
 
+https://staff.math.su.se/mleites/books/2009-vospominaniya.pdf  about Berezin
+
 ```
 Онлайн–курсы от Московского физико–технического института по 29 направлениям.
 По каждому направлению доступны десятки ссылок на видео и тексты с лекциями преподавателей университета – материалы отсортированы по кафедрам, курсам и годам съемки.
