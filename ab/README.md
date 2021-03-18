@@ -13,6 +13,8 @@ https://rpsychologist.com/d3/nhst/
 ## Churn rate + Retention = 100 %
 https://www.sisense.com/blog/how-to-calculate-cohort-retention-in-sql/
 
+https://www.sisense.com/blog/use-self-joins-to-calculate-your-retention-churn-and-reactivation-metrics/
+
 https://dzone.com/articles/a-guide-for-customer-retention-analysis-with-sql
 
 https://www.holistics.io/blog/calculate-cohort-retention-analysis-with-sql/
@@ -20,6 +22,10 @@ https://www.holistics.io/blog/calculate-cohort-retention-analysis-with-sql/
 https://ubiq.co/database-blog/how-to-calculate-retention-rate-in-sql/
 
 https://stackoverflow.com/questions/56409832/how-to-produce-a-customer-retention-table-cohort-analysis-with-sql
+
+https://mherman.org/blog/cohort-analysis-data-sourcing-with-sql/
+
+https://excelkingdom.blogspot.com/2019/01/how-to-do-customers-retention-analysis.html
 
 ```
 Rolling retention is defined as the percentage of returning users measure at a regular interval, 
@@ -31,6 +37,7 @@ How well did these new users stick around compared to, say, pre-launch users tha
 ```
 https://blog.treasuredata.com/blog/2016/07/22/rolling-retention-done-right-in-sql/
 
+http://blog.forcerank.it/sql-for-calculating-churn-retention-reengagement
 
 <https://catchjs.com/Blog/Churn>. churn rate
 
