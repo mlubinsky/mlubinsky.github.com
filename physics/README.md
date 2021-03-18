@@ -6,9 +6,9 @@ https://mipt.ru/online/
 
 https://forany.xyz/
 
-https://www.youtube.com/watch?v=502W35rpk7Q
+https://www.youtube.com/watch?v=502W35rpk7Q Графы и квантовая механика: симплектические идеи // Сергей Новиков
 
-https://www.youtube.com/watch?v=3rYA_EwMZzE
+https://www.youtube.com/watch?v=3rYA_EwMZzE  Miсhail TSODYKS, Mathematical models of human memory
 
 https://www.youtube.com/watch?v=HxaJWpFSZtE Динамический хаос: непредсказуемость в классической механике. Михаил Фейгельман
 
