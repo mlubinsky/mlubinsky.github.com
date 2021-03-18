@@ -15,6 +15,8 @@ https://www.sisense.com/blog/how-to-calculate-cohort-retention-in-sql/
 
 https://dzone.com/articles/a-guide-for-customer-retention-analysis-with-sql
 
+https://www.holistics.io/blog/calculate-cohort-retention-analysis-with-sql/
+
 ```
 Rolling retention is defined as the percentage of returning users measure at a regular interval, 
 typical weekly or monthly, grouped by their sign-up week/month, also known as cohort. 
