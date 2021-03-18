@@ -4,6 +4,8 @@ https://www.youtube.com/watch?v=oNalXg67XEE.  Observer pattern
 
 https://levelup.gitconnected.com/python-tricks-i-can-not-live-without-87ae6aff3af8 useful tips
 
+https://proproprogs.ru/ai
+
 <https://snarky.ca/why-you-should-use-python-m-pip/>.  python -m pip
 
 https://news.ycombinator.com/item?id=24565499. python internals
