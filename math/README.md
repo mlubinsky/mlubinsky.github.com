@@ -18,6 +18,8 @@ https://www.youtube.com/watch?v=itHtAUBlnZM&list=PL-_cKNuVAYAXSlTlxonEdTTrA_ppMA
 
 https://www.youtube.com/watch?v=wkoX3vUP5To&list=PLcsjsqLLSfNCWYkdCFXCIPUWuPMwtp9qC  Соколов Д. Д. - Теория случайный процессов
 
+http://synset.com/wiki/index.php/%D0%A1%D1%82%D0%BE%D1%85%D0%B0%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B8%D1%80
+
 ## группы
 
 <https://ru.coursera.org/learn/geometriya-i-gruppy> Геометрия и группы. Савватеев Алексей Владимирович
