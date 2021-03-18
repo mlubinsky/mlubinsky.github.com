@@ -13,7 +13,12 @@ https://rpsychologist.com/d3/nhst/
 ## Churn rate + Retention = 100 %
 https://www.sisense.com/blog/how-to-calculate-cohort-retention-in-sql/
 ```
-Rolling retention is defined as the percentage of returning users measure at a regular interval, typical weekly or monthly, grouped by their sign-up week/month, also known as cohort. By grouping users based on when they signed up, you can gain insight on how your product/marketing/sales initiatives have impacted retention: For example, suppose you had a major launch and had many sign-ups over the following few days. How well did these new users stick around compared to, say, pre-launch users that signed up a week prior? 
+Rolling retention is defined as the percentage of returning users measure at a regular interval, 
+typical weekly or monthly, grouped by their sign-up week/month, also known as cohort. 
+By grouping users based on when they signed up, 
+you can gain insight on how your product/marketing/sales initiatives have impacted retention: 
+For example, suppose you had a major launch and had many sign-ups over the following few days. 
+How well did these new users stick around compared to, say, pre-launch users that signed up a week prior? 
 ```
 https://blog.treasuredata.com/blog/2016/07/22/rolling-retention-done-right-in-sql/
 
