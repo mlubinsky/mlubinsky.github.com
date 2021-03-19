@@ -7,6 +7,8 @@ https://www.machinelearningplus.com/plots/top-50-matplotlib-visualizations-the-m
 
 https://www.practicaldatascience.org/html/plotting_part2.html
 
+https://stackabuse.com/matplotlib-draw-vertical-lines-on-plot/ vertical line in matplotlib
+
 http://pyviz.org/
 
 http://vispy.org/
