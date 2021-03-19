@@ -22,6 +22,10 @@ http://synset.com/
 
 http://synset.com/wiki/index.php/%D0%A1%D1%82%D0%BE%D1%85%D0%B0%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B8%D1%80
 
+https://e.lanbook.com/book/71719 Book: Лекции по гауссовским процессам. Лифшиц М.А.
+
+https://e.lanbook.com/book/71720 Случайные процессы — от теории к практике. Лифшиц М.А.
+
 ## группы
 
 <https://ru.coursera.org/learn/geometriya-i-gruppy> Геометрия и группы. Савватеев Алексей Владимирович
