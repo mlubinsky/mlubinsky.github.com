@@ -71,6 +71,10 @@ https://geoffruddock.com/sql-jinja-templating/
 https://www.youtube.com/watch?v=QenwDm5oWdU
 
 
+### UNION
+
+https://www.foxhound.systems/blog/sql-performance-with-union/
+
 ## LEAD, LAG, FIRST_GAP
 
 
