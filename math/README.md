@@ -29,6 +29,10 @@ https://e.lanbook.com/book/71720 Случайные процессы — от т
 https://www.youtube.com/watch?v=-VMHw3dh86Q&list=PLUfHxBkkFMScK4ggnfDyUl7Vd6EKvjTRC Процессы Пуассона  
 Игорь Клейнер
 
+https://www.youtube.com/playlist?list=PLU2SDCh6kZwUS5H2tNP7xmqdpJrsnbhpO
+
+https://www.youtube.com/watch?v=-JuL2Mmrre8 Случайные матрицы: теория и приложения
+
 Сердобольская М. Л. - Теория случайных процессов
 https://www.youtube.com/watch?v=fpiVl24Zbs0&list=PLcsjsqLLSfNBYkDzBzi3zlBV2N317N11g
 
