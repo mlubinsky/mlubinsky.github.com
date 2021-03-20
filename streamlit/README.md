@@ -1,5 +1,7 @@
 https://github.com/MathInspector/MathInspector
 
+https://lowdefy.com/  An open-source low-code framework to build web apps, admin panels, BI dashboards, workflows, and CRUD apps with ease.
+
 https://rmorshea.github.io/articles/2021/idom-react-but-its-python/article/
 
 ## GradIo
