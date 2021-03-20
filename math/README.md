@@ -26,6 +26,9 @@ https://e.lanbook.com/book/71719 Book: Лекции по гауссовским 
 
 https://e.lanbook.com/book/71720 Случайные процессы — от теории к практике. Лифшиц М.А.
 
+https://www.youtube.com/watch?v=-VMHw3dh86Q&list=PLUfHxBkkFMScK4ggnfDyUl7Vd6EKvjTRC Процессы Пуассона  
+Игорь Клейнер
+
 ## группы
 
 <https://ru.coursera.org/learn/geometriya-i-gruppy> Геометрия и группы. Савватеев Алексей Владимирович
