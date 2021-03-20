@@ -12,7 +12,14 @@ https://news.ycombinator.com/item?id=25100241
 
 https://medium.com/cantors-paradise
 
-## Random processes:
+## Random processes
+
+
+https://arxiv.org/pdf/1907.01060.pdf . (ru)
+
+<https://habr.com/post/343148/>
+
+<https://habr.com/post/343178/>
 
 https://www.youtube.com/watch?v=itHtAUBlnZM&list=PL-_cKNuVAYAXSlTlxonEdTTrA_ppMARaR Теория случайных процессов | Михаил Лифшиц
 
@@ -170,9 +177,6 @@ https://habr.com/ru/post/528734/
 
 ## Stat
 
- 
-
-
 
 https://habr.com/ru/post/548104/ ТЕСТ МАННА-УИТНИ-УИЛКОКСОНА И SCORE-ФУНКЦИИ
 
@@ -192,13 +196,7 @@ https://habr.com/ru/post/548104/ ТЕСТ МАННА-УИТНИ-УИЛКОКСО
 
 <https://github.com/Quanteeks/Statistics-lectures/blob/master/book.pdf>
 
-## Random processes:
 
-https://arxiv.org/pdf/1907.01060.pdf
-
-<https://habr.com/post/343148/>
-
-<https://habr.com/post/343178/>
 
 ### Linear algebra
 
