@@ -29,6 +29,9 @@ https://e.lanbook.com/book/71720 Случайные процессы — от т
 https://www.youtube.com/watch?v=-VMHw3dh86Q&list=PLUfHxBkkFMScK4ggnfDyUl7Vd6EKvjTRC Процессы Пуассона  
 Игорь Клейнер
 
+Сердобольская М. Л. - Теория случайных процессов
+https://www.youtube.com/watch?v=fpiVl24Zbs0&list=PLcsjsqLLSfNBYkDzBzi3zlBV2N317N11g
+
 ## группы
 
 <https://ru.coursera.org/learn/geometriya-i-gruppy> Геометрия и группы. Савватеев Алексей Владимирович
