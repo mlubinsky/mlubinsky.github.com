@@ -36,6 +36,8 @@ https://www.youtube.com/watch?v=-JuL2Mmrre8 Случайные матрицы: �
 Сердобольская М. Л. - Теория случайных процессов
 https://www.youtube.com/watch?v=fpiVl24Zbs0&list=PLcsjsqLLSfNBYkDzBzi3zlBV2N317N11g
 
+https://www.youtube.com/watch?v=1udDbPXz27M (ru)
+
 ## группы
 
 <https://ru.coursera.org/learn/geometriya-i-gruppy> Геометрия и группы. Савватеев Алексей Владимирович
@@ -168,9 +170,11 @@ https://habr.com/ru/post/528734/
 
 ## Stat
 
-https://www.youtube.com/watch?v=CBpMePXZQTw . Random processes (ru )
+ 
 
-https://www.youtube.com/watch?v=1udDbPXz27M (ru)
+
+
+https://habr.com/ru/post/548104/ ТЕСТ МАННА-УИТНИ-УИЛКОКСОНА И SCORE-ФУНКЦИИ
 
 <https://seeing-theory.brown.edu/index.html>  
 
