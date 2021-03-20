@@ -17,6 +17,8 @@ https://medium.com/cantors-paradise
 
 https://arxiv.org/pdf/1907.01060.pdf . (ru)
 
+https://arxiv.org/pdf/1508.03461.pdf СТОХАСТИЧЕСКИЙ АНАЛИЗВ ЗАДАЧАХ (1)
+
 <https://habr.com/post/343148/>
 
 <https://habr.com/post/343178/>
