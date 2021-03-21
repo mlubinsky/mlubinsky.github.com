@@ -14,6 +14,8 @@ adtk • A Python toolkit for rule-based/unsupervised anomaly detection in time 
 
 https://github.com/datamllab/tods  TODS: An Automated Time-series Outlier Detection System
 
+MSDA is an open-source multidimensional multi-sensor data analysis framework, written in Python.
+https://www.datasciencecentral.com/profiles/blogs/unsupervised-feature-selection-for-time-series-data
 
 ### Papers with code:
 https://paperswithcode.com/task/time-series/
