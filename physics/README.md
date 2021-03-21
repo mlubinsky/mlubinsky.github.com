@@ -1,5 +1,7 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics
+
 https://youtu.be/f1pclkpMhRc Entropy
 
 https://mipt.ru/online/
