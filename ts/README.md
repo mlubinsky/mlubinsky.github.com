@@ -142,6 +142,8 @@ https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
 
 ## Predictive Mintanance and Survavival Analysis
 
+https://scikit-survival.readthedocs.io/en/
+
 https://pub.towardsai.net/survival-analysis-with-python-tutorial-how-what-when-and-why-19a5cfb3c312
 
 https://www.kdnuggets.com/2020/07/complete-guide-survival-analysis-python-part1.html
