@@ -1,5 +1,8 @@
 https://www.youtube.com/watch?v=tX_MeIbfEmw  К.В. Воронцов "Обзор постановок оптимизационных задач машинного обучения"
 
+
+Mikhail BELKIN https://www.youtube.com/watch?v=yPwCb12V0Mk
+
 https://www.theinsaneapp.com/2020/12/machine-learning-and-data-science-cheat-sheets-pdf.html
 
 https://www.youtube.com/watch?v=7inArpm-83U. Interview
