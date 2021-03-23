@@ -419,6 +419,9 @@ https://habr.com/ru/post/261159/
 <https://habr.com/ru/company/otus/blog/472040/> red black tree
 
 ## Dynamic programming
+
+https://www.youtube.com/watch?v=BvwQe_9FUBQ (ru)
+
 <https://skerritt.blog/dynamic-programming>
 
 https://hiringfor.tech/2020/10/26/my-resources-for-dynamic-programming.html
