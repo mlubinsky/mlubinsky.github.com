@@ -25,6 +25,8 @@ https://www.youtube.com/watch?v=GZPZbqjyhY8
 
 https://www.lektorium.tv/speaker/3276
 
+https://www.youtube.com/channel/UCiuIWkZAXNteFruoL7MsIOw
+
 ## Random processes
 
 
