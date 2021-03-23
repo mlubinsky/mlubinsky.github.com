@@ -17,7 +17,10 @@ https://medium.com/cantors-paradise
 ### Dynamic systems
 https://www.youtube.com/watch?v=HKsyGrp7fPg&list=PLLi3bLYwJwuMBvrTC64AaNEUJp2tcnlmb
 Динамические системы и бифуркации // Виктор Клепцын
+
 https://www.youtube.com/watch?v=GZPZbqjyhY8
+
+https://www.lektorium.tv/speaker/3276
 
 ## Random processes
 
