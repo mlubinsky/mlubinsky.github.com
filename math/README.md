@@ -31,6 +31,8 @@ https://www.youtube.com/watch?v=wkoX3vUP5To&list=PLcsjsqLLSfNCWYkdCFXCIPUWuPMwtp
 
 http://synset.com/
 
+https://www.youtube.com/watch?v=YBR41RpLxeE&list=PLU2SDCh6kZwUS5H2tNP7xmqdpJrsnbhpO Случайные процессы. Алексей Поляков MIPT
+
 http://synset.com/wiki/index.php/%D0%A1%D1%82%D0%BE%D1%85%D0%B0%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B8%D1%80
 
 https://e.lanbook.com/book/71719 Book: Лекции по гауссовским процессам. Лифшиц М.А.
