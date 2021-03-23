@@ -4,6 +4,8 @@ Brillant.org
 
 https://github.com/MathInspector/MathInspector. dev env with scipy
 
+https://mipt.lectoriy.ru/  
+
 https://b-ok.org/ .  BOOKS
 
 https://etudes.ru/sketches/
