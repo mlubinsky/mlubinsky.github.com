@@ -22,6 +22,8 @@ https://www.pilosa.com/docs/latest/architecture/
 
 https://github.com/RoaringBitmap/RoaringFormatSpec
 
+www.practical-go-lessons.com
+
 ## Chess engine in GO
 
 https://habr.com/ru/company/timeweb/blog/533642/
