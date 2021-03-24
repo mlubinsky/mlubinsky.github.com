@@ -23,6 +23,8 @@ https://github.com/zillow/luminaire
 
 ### youtube
 
+https://www.youtube.com/watch?v=U7xdiGc7IRU Detecting Anomalies Using Statistical Distances | SciPy 2018 |
+
 https://www.youtube.com/watch?v=v5ijNXvlC5A Modern Time Series Analysis | SciPy 2019 Tutorial | Aileen Nielsen
 
 https://www.youtube.com/watch?v=5nfe835TVcY
