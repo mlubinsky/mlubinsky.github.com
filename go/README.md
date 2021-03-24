@@ -22,7 +22,9 @@ https://www.pilosa.com/docs/latest/architecture/
 
 https://github.com/RoaringBitmap/RoaringFormatSpec
 
-www.practical-go-lessons.com
+https://www.practical-go-lessons.com
+
+https://rytisbiel.com/2021/03/06/darker-corners-of-go/
 
 ## Chess engine in GO
 
