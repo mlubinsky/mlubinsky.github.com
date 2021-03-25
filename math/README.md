@@ -14,6 +14,10 @@ https://news.ycombinator.com/item?id=25100241
 
 https://medium.com/cantors-paradise
 
+### Books
+
+https://mipt.ru/education/chair/mathematics/study/uchebniki/
+
 ### Dynamic systems
 
 http://www.dyn-sys.org/
