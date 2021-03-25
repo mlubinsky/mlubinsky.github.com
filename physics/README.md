@@ -267,6 +267,8 @@ https://arxiv.org/abs/2011.09181 . A First Principles Derivation of Classical an
 
 https://mipt.ru/education/chair/physics/records/modern/ovchinkin6.php
 
+https://mipt.ru/education/chair/physics/records/modern/morozov6.php
+
 http://nuclphys.sinp.msu.ru/solidst/index.html
 
 https://teach-in.ru/file/synopsis/pdf/ofksv-M.pdf
