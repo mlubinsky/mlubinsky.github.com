@@ -33,6 +33,8 @@ Or, if you don't want/need a background service you can just run:
 ```
   prometheus --config.file=/usr/local/etc/prometheus.yml
 ```  
+
+
 https://prometheus.io/docs/introduction/first_steps/
 
 https://prometheus.io/download/
@@ -55,6 +57,9 @@ Show all available metrics:
 ```
 localhost:9090/api/v1/label/__name__/values
 ```
+Data for the  specific metric name:
+
+https://utils.us-east-1.mbedcloud.com/prometheus/api/v1/query?query=update_service_publisher_metrics
 
 
 ### VictoriaMetrics
