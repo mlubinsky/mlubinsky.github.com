@@ -46,6 +46,17 @@ https://github.com/prometheus/node_exporter/blob/master/README.md
   http://localhost:9090/metrics
   http://localhost:9090/graph
 ```
+
+
+### Show all available metrics:
+
+Show all available metrics:
+
+```
+localhost:9090/api/v1/label/__name__/values
+```
+
+
 ### VictoriaMetrics
 
 <https://habr.com/ru/post/494034/>
