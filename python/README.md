@@ -29,6 +29,8 @@ n=5
 plus_n_date = (datetime.strptime(start_date, '%Y-%m-%d') + timedelta(days=n)).strftime('%Y-%m-%d')
 ```
 
+https://github.com/pytransitions/transitions . finite state machine in Python
+
 ### SQLite
 
 SQLite connection <http://blog.rtwilson.com/a-python-sqlite3-context-manager-gotcha/>
