@@ -80,6 +80,8 @@ https://core.ac.uk/. many books (including russian)
 
 https://bivector.net/
 
+https://www.youtube.com/watch?v=RAcyVrMNV5s
+
 https://www.youtube.com/watch?v=60z_hpEAtD8
 
 https://www.youtube.com/watch?v=x7eLEtmq6PY Professor Anthony Lasenby. A new language for physics.
