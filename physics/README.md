@@ -74,9 +74,11 @@ https://core.ac.uk/. many books (including russian)
  https://news.ycombinator.com/item?id=25588888   Well, Actually – Physics Answers 
  
  
- https://bitvector.com
+ 
 
 ### Geometric Algebra 
+
+https://bivector.net/
 
 https://www.youtube.com/watch?v=60z_hpEAtD8
 
