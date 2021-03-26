@@ -6,9 +6,29 @@ https://towardsdev.com/tricks-and-best-practices-from-kaggle-794a5914480f
 
 https://pythonnumericalmethods.berkeley.edu/notebooks/chapter25.03-Regression.html
 
+
+https://jbencook.com/binary-cross-entropy/ 
+
+The most common loss function for training a binary classifier is binary cross entropy (sometimes called log loss). You can implement it in NumPy as a one-liner:
+```
+def binary_cross_entropy(yhat: np.ndarray, y: np.ndarray) -> float:
+    """Compute binary cross-entropy loss for a vector of predictions
+
+    Parameters
+    ----------
+    yhat
+        An array with len(yhat) predictions between [0, 1]
+    y
+        An array with len(y) labels where each is one of {0, 1}
+    """
+    return -(y * np.log(yhat) + (1 - y) * np.log(1 - yhat)).mean()
+```
+
 ### Sorting in pandas
 
 https://realpython.com/pandas-sort-python/
+
+https://jbencook.com/pandas-query/
 
 ### Dropping rows and columns
 
