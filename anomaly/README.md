@@ -11,6 +11,8 @@ https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook-dp-B0
 
 ### Awesome anomaly detection
 
+https://www.youtube.com/watch?v=AGdHwNTrG3U
+
 https://awesomeopensource.com/projects/anomaly-detection
 
 https://github.com/rob-med/awesome-TS-anomaly-detection
