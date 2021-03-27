@@ -11,6 +11,7 @@ https://theblog.github.io/post/from-tensorflow-to-pytorch/. PyTorch for Tensorfl
 
 https://twitter.com/icymi_py  Python data science
 
+https://github.com/SimonBlanke/Hyperactive   collection of optimization algorithms that can be used for a variety of optimization problems.
 
 ### Gradient- free algorithms
  
