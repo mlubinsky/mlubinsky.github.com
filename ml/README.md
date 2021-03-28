@@ -22,6 +22,7 @@ https://github.com/SimonBlanke/Hyperactive   collection of optimization algorith
  https://news.ycombinator.com/item?id=26293171
 
 
+https://habr.com/ru/post/549376. ROC curve
 
 ### Tidy data
 
