@@ -18,6 +18,12 @@ https://medium.com/cantors-paradise
 
 https://mipt.ru/education/chair/mathematics/study/uchebniki/
 
+### 
+
+Р.В. Шамин. Функциональный анализ - лекции
+https://www.youtube.com/watch?v=THIwV_9fnzY&list=PLEaWFQiR5rGMUxl1x2lkW8uiFV-uX4B1D
+
+
 ### Dynamic systems
 
 http://www.dyn-sys.org/
