@@ -5,6 +5,8 @@ Mikhail BELKIN https://www.youtube.com/watch?v=yPwCb12V0Mk
 
 https://www.theinsaneapp.com/2020/12/machine-learning-and-data-science-cheat-sheets-pdf.html
 
+https://www.alexpghayes.com/blog/many-models-workflows-in-python-part-i/
+
 https://www.youtube.com/watch?v=7inArpm-83U. Interview
 
 https://theblog.github.io/post/from-tensorflow-to-pytorch/. PyTorch for Tensorflow users
