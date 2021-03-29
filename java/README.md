@@ -7,6 +7,9 @@
  <https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-14/>
  
  ## JVM 
+ 
+ https://habr.com/ru/post/549176/
+ 
  https://habr.com/ru/post/536288/ Java HotSpot JIT компилятор — устройство, мониторинг и настройка (часть 1)
  
  <https://habr.com/ru/post/471772/> How Java works
