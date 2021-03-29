@@ -16,7 +16,9 @@ https://marclamberti.com/
 
 https://www.udemy.com/course/apache-airflow/learn/lecture/17368650
 
-### Article
+### Articles
+
+https://habr.com/ru/post/549458/
 
 https://khashtamov.com/en/introduction-to-apache-airflow/
 
