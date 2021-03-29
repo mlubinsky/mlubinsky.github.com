@@ -1,5 +1,6 @@
 https://www.youtube.com/watch?v=tX_MeIbfEmw  К.В. Воронцов "Обзор постановок оптимизационных задач машинного обучения"
 
+http://ai.lector.ru/
 
 Mikhail BELKIN https://www.youtube.com/watch?v=yPwCb12V0Mk
 
