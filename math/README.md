@@ -18,11 +18,13 @@ https://medium.com/cantors-paradise
 
 https://mipt.ru/education/chair/mathematics/study/uchebniki/
 
-### 
+### Функциональный анализ
 
 Р.В. Шамин. Функциональный анализ - лекции
 https://www.youtube.com/watch?v=THIwV_9fnzY&list=PLEaWFQiR5rGMUxl1x2lkW8uiFV-uX4B1D
 
+Сергей Кисляков 
+https://www.youtube.com/playlist?list=PL-_cKNuVAYAWltu4CT1F7CWG97ZplBnTg
 
 ### Dynamic systems
 
