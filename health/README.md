@@ -34,6 +34,8 @@ https://www.amazon.com/gp/product/B003BEECTC/ref=ppx_yo_dt_b_asin_title_o01_s00?
 
 ## Vision
 
+https://it.d3.ru/chto-mozhno-sdelat-chtoby-ne-boleli-glaza-ot-kompa-2133393/?sorting=rating
+
 https://habr.com/ru/post/532294/
 
 https://habr.com/ru/post/533748/ Vision + Monitor
