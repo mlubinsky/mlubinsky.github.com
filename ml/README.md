@@ -1,6 +1,10 @@
 https://www.youtube.com/watch?v=tX_MeIbfEmw  К.В. Воронцов "Обзор постановок оптимизационных задач машинного обучения"
 
+Курс Р.В. Шамина «Машинное обучение и искусственный интеллект в математике и приложениях»
+
 http://ai.lector.ru/
+
+http://www.mathnet.ru/conf1243
 
 Mikhail BELKIN https://www.youtube.com/watch?v=yPwCb12V0Mk
 
