@@ -10,6 +10,9 @@ http://www.mathnet.ru/conf1243
 https://github.com/rwsh
 
 
+simulated annealing (ru)
+https://www.math.spbu.ru/user/gran/sb1/lopatin.pdf
+
 Mikhail BELKIN https://www.youtube.com/watch?v=yPwCb12V0Mk
 
 https://www.theinsaneapp.com/2020/12/machine-learning-and-data-science-cheat-sheets-pdf.html
