@@ -4,6 +4,9 @@
 
 https://paperswithcode.com/task/time-series-classification/latest
 
+### Bayesian time seria
+https://en.wikipedia.org/wiki/Bayesian_structural_time_series
+
 ### Anomaly detection in time series
 
 https://github.com/zillow/luminaire 
