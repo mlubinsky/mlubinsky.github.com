@@ -4,8 +4,12 @@
 
 https://paperswithcode.com/task/time-series-classification/latest
 
-### Bayesian time seria
+### Bayesian structural time series
+
 https://en.wikipedia.org/wiki/Bayesian_structural_time_series
+
+https://github.com/dafiti/causalimpact?fbclid=IwAR0493C25INSgNY-aZFg-OKNPA2BnFjteN2eiZIEYsOmhr16skLLcEacbKY
+
 
 ### Anomaly detection in time series
 
