@@ -1,3 +1,5 @@
+https://habr.com/ru/post/550260/ Психосоматика
+
 https://guttalapidem.livejournal.com/45994.html
 
 https://www.youtube.com/watch?v=eoOhIRpTI0I
