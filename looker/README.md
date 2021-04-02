@@ -2,7 +2,15 @@
 
 https://docs.looker.com/data-modeling/learning-lookml/derived-tables#referencing_derived_tables_in_other_derived_tables
 
+## Conditionally filter
 
+https://docs.looker.com/reference/explore-params/conditionally_filter#examples
+
+  conditionally_filter: {
+    filters: [derived_amoeba_allocation.date_key_date : "10 days ago for 10 days"]
+
+  }
+  
 ## Approximate count
 
 https://docs.looker.com/reference/field-params/approximate
