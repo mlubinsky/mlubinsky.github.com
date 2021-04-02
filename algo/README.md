@@ -12,6 +12,8 @@ https://habr.com/ru/company/skillfactory/blog/539058/
 
 https://habr.com/ru/post/535216/ interview
 
+https://habr.com/ru/post/550088/ interview
+
 http://algorithmsbook.com/ Algorithms for Decision Making
 
 https://habr.com/ru/company/skillfactory/blog/538536/ interview
