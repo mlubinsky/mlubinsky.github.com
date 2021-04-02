@@ -3,6 +3,16 @@
 https://docs.looker.com/data-modeling/learning-lookml/derived-tables#referencing_derived_tables_in_other_derived_tables
 
 
+## Approximate count
+
+https://docs.looker.com/reference/field-params/approximate
+
+  measure:  number_of_devices {
+    type: count_distinct
+    approximate: yes
+    sql: ${TABLE}.number_of_devices ;;
+
+
 ## Helper explore for Filter dropdown:
 ```
 
