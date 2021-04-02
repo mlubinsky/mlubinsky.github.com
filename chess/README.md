@@ -21,6 +21,9 @@ https://github.com/adam-mcdaniel/chess-engine
 
 https://github.com/robtaussig/rust-chess
 
+https://github.com/mvanthoor/rustic
+
+
 ### JS chess
 https://github.com/robtaussig/ChaosChess/tree/master/src/engine
 
