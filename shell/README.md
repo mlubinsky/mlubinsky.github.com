@@ -4,6 +4,8 @@ https://lobste.rs/s/yeloyn/minimal_safe_bash_script_template.  Minimal safe bash
 
 https://news.ycombinator.com/item?id=25428621.  Minimal safe bash
 
+https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md safe bash
+
  <https://nikhilism.com/post/2020/mystery-knowledge-useful-tools/>
  
  https://lobste.rs/s/eprvjp/what_are_your_favorite_non_standard_cli
