@@ -4,6 +4,10 @@ https://www.youtube.com/watch?v=-YMCafO_cZk (ru)
 
 Saving a Look - this saves all of your choices for filters, visualizations, fields, sorting, and so on.
 
+https://docs.looker.com/sharing-and-publishing/scheduling-and-sharing/delivering-looks-explores
+
+You may be able to drill into a value on your report.
+
 #### Look Run on Load option:
 
 Click the Look’s three-dot menu icon.
