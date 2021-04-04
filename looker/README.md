@@ -1,5 +1,20 @@
 https://www.youtube.com/watch?v=-YMCafO_cZk (ru)
 
+## Look / Scheduling / Alerts
+
+Saving a Look - this saves all of your choices for filters, visualizations, fields, sorting, and so on.
+
+#### Look Run on Load option:
+
+Click the Look’s three-dot menu icon.
+Select Edit Settings.
+Click the Run on Load switch.
+Click Save
+
+https://docs.looker.com/sharing-and-publishing/viewing-looks
+
+https://docs.looker.com/exploring-data/saving-and-editing-looks
+
 ## Referencing derived tables in other derived tables
 
 https://docs.looker.com/data-modeling/learning-lookml/derived-tables#referencing_derived_tables_in_other_derived_tables
