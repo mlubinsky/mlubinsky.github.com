@@ -1,6 +1,6 @@
 https://github.com/MathInspector/MathInspector
 
-https://habr.com/ru/company/skillfactory/blog/542870/ Jupyper add-ins
+https://habr.com/ru/company/skillfactory/blog/542870/ Jupyter add-ins
 
 https://towardsdev.com/tricks-and-best-practices-from-kaggle-794a5914480f
 
@@ -113,6 +113,8 @@ http://scipy-lectures.org/index.html
 
 
 ### Pandas
+
+https://pythonspeed.com/articles/pandas-sql-chunking/ solve out of memory problem
 
 
 If you absolutely must iterate over the rows in your DataFrame, use the .itertuples() method:
