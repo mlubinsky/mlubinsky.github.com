@@ -228,6 +228,9 @@ https://habr.com/ru/post/548104/ ТЕСТ МАННА-УИТНИ-УИЛКОКСО
 <https://github.com/Quanteeks/Statistics-lectures/blob/master/book.pdf>
 
 
+### Matrix
+
+https://news.ycombinator.com/item?id=26676729
 
 ### Linear algebra
 
