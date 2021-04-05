@@ -10,6 +10,7 @@ mean_absolute_error(y_true=dfs_test[‘y’],
 y_pred=dfs_test[‘y_Prediction’])
 ```
 
+
 https://github.com/NGYB/Stocks/blob/master/StockReturnsPrediction_fh21/StockReturnsPrediction_v3_xgboost.ipynb  from here:
 ```
 def get_mape(y_true, y_pred): 
@@ -66,6 +67,8 @@ print('XGBoost: Average RMSLE test data:',
 
 https://filip-wojcik.com/talks/xgboost_forecasting_eng.pdf
 
+<https://www.kaggle.com/robikscube/tutorial-time-series-forecasting-with-xgboost>
+
 ## Article with code
 
 https://towardsdatascience.com/forecasting-stock-prices-using-xgboost-a-detailed-walk-through-7817c1ff536a
@@ -112,4 +115,49 @@ here the fix is required for the latest version of sklearn: remove iid in
 file /Users/miclub01/anaconda3/lib/python3.7/site-packages/xgboost_autotune.py
  
  100     clf = GridSearchCV(model, parameters, scoring=scoring, verbose=0, cv = n_folds, refit=True) #, iid=iid)
-``
+```
+
+
+### XGBoost LightGBM 
+
+https://bradleyboehmke.github.io/HOML/gbm.html#xgboost
+
+https://www.shirin-glander.de/2018/11/ml_basics_gbm/
+
+```
+conda list | grep xgboost
+_py-xgboost-mutex         2.0                       cpu_0
+libxgboost                0.90                 h0a44026_1
+py-xgboost-cpu            0.90                     py37_1
+
+
+conda install -c conda-forge xgboost
+Collecting package metadata (current_repodata.json): done
+Solving environment: |
+The environment is inconsistent, please check the package plan carefully
+The following packages are causing the inconsistency:
+
+  - defaults/osx-64::py-xgboost-cpu==0.90=py37_1
+  
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2020.12.5          |   py37hf985489_1         143 KB  conda-forge
+    libxgboost-1.1.1           |       h4a8c4bd_0         1.9 MB  conda-forge
+    py-xgboost-1.1.1           |   py37hc8dfbb8_0         1.0 MB  conda-forge
+    py-xgboost-cpu-1.1.1       |   py37hc8dfbb8_0          10 KB  conda-forge
+    xgboost-1.1.1              |   py37h570ac47_0          11 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         3.1 MB  
+
+
+pip list | grep xgboost
+xgboost                            1.31
+
+(mljar) virtualenv
+
+pip list | grep xgboost
+xgboost            1.2.0
+```
+
