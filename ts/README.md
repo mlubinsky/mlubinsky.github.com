@@ -555,52 +555,14 @@ pip install sktime-dl
 
 https://github.com/sktime/sktime-dl
 
-### XGBoost LightGBM 
 
-https://bradleyboehmke.github.io/HOML/gbm.html#xgboost
-
-https://www.shirin-glander.de/2018/11/ml_basics_gbm/
-
-```
-conda list | grep xgboost
-_py-xgboost-mutex         2.0                       cpu_0
-libxgboost                0.90                 h0a44026_1
-py-xgboost-cpu            0.90                     py37_1
+<https://www.kaggle.com/robikscube/tutorial-time-series-forecasting-with-xgboost>
 
 
-conda install -c conda-forge xgboost
-Collecting package metadata (current_repodata.json): done
-Solving environment: |
-The environment is inconsistent, please check the package plan carefully
-The following packages are causing the inconsistency:
-
-  - defaults/osx-64::py-xgboost-cpu==0.90=py37_1
-  
-The following packages will be downloaded:
-
-    package                    |            build
-    ---------------------------|-----------------
-    certifi-2020.12.5          |   py37hf985489_1         143 KB  conda-forge
-    libxgboost-1.1.1           |       h4a8c4bd_0         1.9 MB  conda-forge
-    py-xgboost-1.1.1           |   py37hc8dfbb8_0         1.0 MB  conda-forge
-    py-xgboost-cpu-1.1.1       |   py37hc8dfbb8_0          10 KB  conda-forge
-    xgboost-1.1.1              |   py37h570ac47_0          11 KB  conda-forge
-    ------------------------------------------------------------
-                                           Total:         3.1 MB  
-
-
-pip list | grep xgboost
-xgboost                            1.31
-
-(mljar) virtualenv
-
-pip list | grep xgboost
-xgboost            1.2.0
-```
 <https://medium.com/@qs2178/time-series-forecasting-with-stacked-machine-learning-models-7250abdece0f>  Stacked model
 
 
-<https://www.kaggle.com/robikscube/tutorial-time-series-forecasting-with-xgboost>
+
 
 <https://github.com/atriptoparadise/Time-Series-with-machine-learning/blob/master/Time%20Series%20Forecasting%20with%20Stacked%20Machine%20Learning%20Models_DEMO.ipynb>
 
@@ -727,6 +689,9 @@ TBATS2 - TBATS1 With Two Seasonal Periods
 <https://www.reddit.com/r/datascience/comments/deiowd/are_there_any_python_libraries_that_help_with/>
 
 ### Visualization
+
+https://code.lag.net/robey/yeri/
+
 https://towardsdatascience.com/formating-and-visualizing-time-series-data-ba0b2548f27b
 
 <https://machinelearningmastery.com/time-series-data-visualization-with-python/>
