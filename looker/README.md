@@ -1,3 +1,6 @@
+
+https://docs.looker.com/data-modeling/learning-lookml/advanced-lookml-concepts
+
 https://www.youtube.com/watch?v=-YMCafO_cZk (ru)
 
 ## Look / Scheduling / Alerts
