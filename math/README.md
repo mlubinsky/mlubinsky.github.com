@@ -18,6 +18,11 @@ https://medium.com/cantors-paradise
 
 https://mipt.ru/education/chair/mathematics/study/uchebniki/
 
+
+### Optimal stopping
+
+https://en.wikipedia.org/wiki/Optimal_stopping
+
 ### Функциональный анализ
 
 Р.В. Шамин. Функциональный анализ - лекции
