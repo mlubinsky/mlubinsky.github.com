@@ -1,3 +1,6 @@
+https://algorithmstoliveby.com/
+
+
 BetterExplained.org
 
 Brillant.org
@@ -22,6 +25,8 @@ https://mipt.ru/education/chair/mathematics/study/uchebniki/
 ### Optimal stopping
 
 https://en.wikipedia.org/wiki/Optimal_stopping
+
+https://en.wikipedia.org/wiki/Ski_rental_problem
 
 ### Функциональный анализ
 
