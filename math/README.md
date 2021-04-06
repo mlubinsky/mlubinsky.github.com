@@ -26,6 +26,8 @@ https://mipt.ru/education/chair/mathematics/study/uchebniki/
 
 https://en.wikipedia.org/wiki/Optimal_stopping
 
+https://en.wikipedia.org/wiki/Secretary_problem
+
 https://en.wikipedia.org/wiki/Ski_rental_problem
 
 ### Функциональный анализ
