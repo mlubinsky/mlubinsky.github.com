@@ -8,6 +8,7 @@ https://habr.com/ru/company/parimatch_tech/blog/544304/. Kafka clients with GUI
 ### Books
 https://medium.com/@1900jwatson/the-best-books-to-learn-apache-kafka-b808f9be43d9
 
+https://habr.com/ru/company/southbridge/blog/550934/
 
 https://habr.com/ru/company/otus/blog/532954/  KAFKA API
 
