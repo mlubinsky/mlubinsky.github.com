@@ -6,6 +6,8 @@ https://paperswithcode.com/task/time-series-classification/latest
 
 ### Bayesian structural time series
 
+https://www.statsmodels.org/devel/examples/notebooks/generated/statespace_sarimax_pymc3.html?fbclid=IwAR38a2rYbidnve1bB-fawLCBgCisxAfcJVo1x5ODhlA2yYpf7xab9_ENYqI
+
 https://en.wikipedia.org/wiki/Bayesian_structural_time_series
 
 https://github.com/dafiti/causalimpact?fbclid=IwAR0493C25INSgNY-aZFg-OKNPA2BnFjteN2eiZIEYsOmhr16skLLcEacbKY
