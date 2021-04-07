@@ -15,6 +15,11 @@ https://lichess.org/study
 
 https://youtu.be/U4ogK0MIzqk
 
+
+### C++
+
+https://habr.com/ru/post/329528/
+
 ### Chess engine in Rust
 
 https://github.com/adam-mcdaniel/chess-engine
