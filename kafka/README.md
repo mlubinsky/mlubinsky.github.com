@@ -1,6 +1,13 @@
+### Client
 <https://github.com/twmb/kcl> Kafka client
 
+<https://github.com/obsidiandynamics/kafdrop> UI for Kafka
+
 https://habr.com/ru/company/parimatch_tech/blog/544304/. Kafka clients with GUI
+
+### Books
+https://medium.com/@1900jwatson/the-best-books-to-learn-apache-kafka-b808f9be43d9
+
 
 https://habr.com/ru/company/otus/blog/532954/  KAFKA API
 
@@ -10,6 +17,8 @@ https://habr.com/ru/company/southbridge/blog/530498/
 
 <https://news.ycombinator.com/item?id=23206566>
 
+
+### Docker
 <https://alexandrugris.github.io/distributed/systems/2017/06/11/kafka-patterns.html> Kafka in Docker
 
 <https://florimond.dev/blog/articles/2018/09/building-a-streaming-fraud-detection-system-with-kafka-and-python/> - in Docker
@@ -92,7 +101,7 @@ https://habr.com/company/itsumma/blog/418389/
 
 <https://medium.com/@andy.bryant/processing-guarantees-in-kafka-12dd2e30be0e>
 
-<https://github.com/obsidiandynamics/kafdrop> UI for Kafka
+
 
 <https://habr.com/ru/post/466585/> book article
 
