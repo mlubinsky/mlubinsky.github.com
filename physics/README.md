@@ -24,6 +24,8 @@ https://www.youtube.com/channel/UC36hJDQpvktVUi8lr5-shrA/videos
 
 https://staff.math.su.se/mleites/books/2009-vospominaniya.pdf  about Berezin
 
+https://en.wikipedia.org/wiki/Bound_state_in_the_continuum   (russian version is better)
+
 ```
 Онлайн–курсы от Московского физико–технического института по 29 направлениям.
 По каждому направлению доступны десятки ссылок на видео и тексты с лекциями преподавателей университета – материалы отсортированы по кафедрам, курсам и годам съемки.
