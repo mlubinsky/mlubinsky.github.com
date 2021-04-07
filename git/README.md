@@ -1,3 +1,8 @@
+## Git precommit hooks
+https://iafisher.com/blog/2020/06/precommit
+
+
+
 https://blog.isquaredsoftware.com/2021/01/coding-career-git-usage/
 
 https://habr.com/ru/company/skillbox/blog/534972/  Undo
