@@ -6,6 +6,7 @@ Sudbery, A. (1986): Quantum Mechanics and the Particles of Nature: An Outline fo
 
 Cohen-Tannoudji, Sakurai.
 
+https://mipt.ru/students/organization/mezhpr/biblio/q-ivanov.php
 
 
 https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics
