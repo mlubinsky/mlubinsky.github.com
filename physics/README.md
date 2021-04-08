@@ -1,5 +1,13 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+
+## Books
+Sudbery, A. (1986): Quantum Mechanics and the Particles of Nature: An Outline for Mathematicians.
+
+Cohen-Tannoudji, Sakurai.
+
+
+
 https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics
 
 https://www.mccme.ru/free-books/belavin/belavin-theorphys.pdf
