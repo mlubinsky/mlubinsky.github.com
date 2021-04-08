@@ -125,10 +125,13 @@ Run DROP TABLE on the external table.
 DROP TABLE names_text;
 ```
 
-#### SPLIT, SUBSTRING_INDEX
+#### SPLIT - generate array, SUBSTRING_INDEX
 ```
 SELECT SUBSTRING_INDEX(“www.big.data.n.sql.com”, “.”, 2);
 Results: http://www.big
+
+select size(split('abcd efgh 1234',' '));
+3
 
 select split('abcd efgh 1234',' ')[0];;
 abcd
