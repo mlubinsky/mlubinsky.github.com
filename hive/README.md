@@ -125,6 +125,20 @@ Run DROP TABLE on the external table.
 DROP TABLE names_text;
 ```
 
+#### SPLIT, SUBSTRING_INDEX
+```
+SELECT SUBSTRING_INDEX(“www.big.data.n.sql.com”, “.”, 2);
+Results: http://www.big
+
+select split('abcd efgh 1234',' ')[0];;
+abcd
+
+select split('abcd efgh 1234',' ')[1];
+efgh
+
+select split('abcd efgh 1234',' ')[2]; 
+1234
+```
 
 ### Complex SQL with COLLECT_SET
 
