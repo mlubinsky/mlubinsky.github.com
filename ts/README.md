@@ -13,6 +13,9 @@ https://en.wikipedia.org/wiki/Bayesian_structural_time_series
 https://github.com/dafiti/causalimpact?fbclid=IwAR0493C25INSgNY-aZFg-OKNPA2BnFjteN2eiZIEYsOmhr16skLLcEacbKY
 
 
+###  SQL for ts
+
+https://www.youtube.com/watch?v=F_gHV-Zq158
 ### Anomaly detection in time series
 
 https://github.com/zillow/luminaire 
