@@ -2,11 +2,14 @@
 
 
 ## Books
-Sudbery, A. (1986): Quantum Mechanics and the Particles of Nature: An Outline for Mathematicians.
 
-Cohen-Tannoudji, Sakurai.
+1. Sudbery, A. (1986): Quantum Mechanics and the Particles of Nature: An Outline for Mathematicians.
 
-https://mipt.ru/students/organization/mezhpr/biblio/q-ivanov.php
+2. Cohen-Tannoudji 
+
+3. Sakurai.
+
+4. https://mipt.ru/students/organization/mezhpr/biblio/q-ivanov.php
 
 
 https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics
@@ -18,6 +21,9 @@ https://youtu.be/f1pclkpMhRc Entropy
 https://mipt.ru/online/
 
 https://forany.xyz/
+
+
+https://habr.com/ru/post/533870/ Waves
 
 https://habr.com/ru/company/skillfactory/blog/549470/  Анимация волновой функции частицы Шрёдингера  с помощью Python / matplotlib
 
