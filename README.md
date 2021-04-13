@@ -4,6 +4,6 @@ My notes and code snippets
  - JavaScript
  - Python
  - Flask
-
+ - Sundry
 
 http://mlubinsky.github.com/
