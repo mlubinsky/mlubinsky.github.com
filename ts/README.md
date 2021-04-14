@@ -49,7 +49,11 @@ https://www.kaggle.com/c/m5-forecasting-uncertainty
 ###  SQL for time series
 
 https://www.youtube.com/watch?v=F_gHV-Zq158
+
+
 ### Anomaly detection in time series
+
+https://www.reddit.com/r/MachineLearning/comments/mqt3rp/d_advantages_of_ml_approaches_for_anomaly/
 
 https://github.com/zillow/luminaire 
 Luminaire provides several anomaly detection and forecasting capabilities that incorporate correlational and seasonal patterns as well as uncontrollable variations in the data over time.
