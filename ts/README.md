@@ -1,3 +1,7 @@
+### Books
+
+https://otexts.com/fpp2/
+
 ### Time series classification
 
 <http://www.timeseriesclassification.com/>
@@ -12,8 +16,37 @@ https://en.wikipedia.org/wiki/Bayesian_structural_time_series
 
 https://github.com/dafiti/causalimpact?fbclid=IwAR0493C25INSgNY-aZFg-OKNPA2BnFjteN2eiZIEYsOmhr16skLLcEacbKY
 
+### Time Series Forecasting Survey
 
-###  SQL for ts
+https://www.reddit.com/r/MachineLearning/comments/mqn4fj/r_time_series_forecasting_survey/
+
+Not a review but this paper got best paper award at AAAI21 doing forecasting on electrical data (IIRC) and other time-series using transformers:
+https://arxiv.org/abs/2012.07436
+
+This other paper used a similar but (supposedly) lower performance method so it's kind of the "baseline" for the former:
+https://arxiv.org/abs/1907.00235
+
+There's definitely a lack of up-to-date review. The closest one is this one (https://arxiv.org/abs/2004.10240) mentioned by another poster.
+
+For a comparison of different time series methods it might be worth looking into the Makridakis Competitions:
+https://en.wikipedia.org/wiki/Makridakis_Competitions
+
+Submissions were tested on thousands of time series and results collated together. Summary of the M4 competition (2018) is given here:
+
+https://www.sciencedirect.com/science/article/pii/S0169207018300785
+
+Neural forecasting: Introduction and literature overview:
+https://arxiv.org/abs/2004.10240
+
+https://www.youtube.com/watch?v=XCZHJHMLD2s
+
+The latest competition was run on kaggle in 2020:
+
+https://www.kaggle.com/c/m5-forecasting-accuracy/
+
+https://www.kaggle.com/c/m5-forecasting-uncertainty
+
+###  SQL for time series
 
 https://www.youtube.com/watch?v=F_gHV-Zq158
 ### Anomaly detection in time series
