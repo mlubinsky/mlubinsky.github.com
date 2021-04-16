@@ -6,6 +6,18 @@
  
  <https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-14/>
  
+ ### Maven
+``` 
+ Source code goes in src/main/java. 
+ Test code goes in src/test/java, 
+ Resources (images, files, whatever) go in src/main/resources, 
+ Test resources go in src/test/resources. 
+ There is a pom.xml file that contains dependencies, and if it doesn't, it points to a parent which <<does>> contain them.
+
+ There might be submodules and they all are folders containing another pom.xml. 
+ That pom.xml generally points to the main pom.xml.
+ ```
+
  ## JVM 
  
  https://habr.com/ru/post/549176/
