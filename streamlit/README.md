@@ -2,6 +2,7 @@
 
 https://medium.datadriveninvestor.com/streamlit-vs-dash-vs-voil%C3%A0-vs-panel-battle-of-the-python-dashboarding-giants-177c40b9ea57
 
+https://news.ycombinator.com/item?id=26842510 discussion
 
 https://github.com/MathInspector/MathInspector
 
