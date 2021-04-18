@@ -1,3 +1,6 @@
+https://habr.com/ru/company/gms/blog/553078/ . useful comman-line utils
+
+### bash
 https://www.cyberciti.biz/tips/bash-shell-parameter-substitution-2.html
 
 https://lobste.rs/s/yeloyn/minimal_safe_bash_script_template.  Minimal safe bash
@@ -5,6 +8,8 @@ https://lobste.rs/s/yeloyn/minimal_safe_bash_script_template.  Minimal safe bash
 https://news.ycombinator.com/item?id=25428621.  Minimal safe bash
 
 https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md safe bash
+
+
 
  <https://nikhilism.com/post/2020/mystery-knowledge-useful-tools/>
  
