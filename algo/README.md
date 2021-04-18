@@ -2,6 +2,8 @@ https://mccme.ru/shen/progbook/7edition.pdf
 
 http://jeffe.cs.illinois.edu/teaching/algorithms/
 
+https://github.com/StBogdan/CTCI_python Cracking code interview
+
 https://news.ycombinator.com/item?id=25519718 Interview advice that got me offers 
 
 https://www.youtube.com/watch?v=kbx7xpSKBaI climbing stairs
