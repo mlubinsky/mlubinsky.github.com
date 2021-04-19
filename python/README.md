@@ -2,6 +2,8 @@ https://antonz.org/python-packaging/
 
 https://awesome-python.com/
 
+https://pybind11.readthedocs.io/en/stable/ C++ from python
+
 https://habr.com/ru/company/skillfactory/blog/528232/  57 отборных репозиториев для всех разработчиков Python
 
 https://www.codementor.io/@adammertz/quick-tip-how-i-use-pip-tools-to-wrangle-dependencies-1fzreskhok . pip-tools
