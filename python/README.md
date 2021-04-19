@@ -201,6 +201,8 @@ deactivate
 ```
 ## Books
 
+https://github.com/pamoroso/free-python-books
+
 <https://www.amazon.com/Modern-Python-Cookbook-flawless-expressive/dp/180020745X>
 
 <https://pythonbooks.org/>
