@@ -4,6 +4,8 @@ http://jeffe.cs.illinois.edu/teaching/algorithms/
 
 https://github.com/StBogdan/CTCI_python Cracking code interview
 
+https://runestone.academy/runestone/books/published/pythonds/index.html#problem-solving-with-algorithms-and-data-structures-using-python
+
 https://news.ycombinator.com/item?id=25519718 Interview advice that got me offers 
 
 https://www.youtube.com/watch?v=kbx7xpSKBaI climbing stairs
