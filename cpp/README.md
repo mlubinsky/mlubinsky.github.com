@@ -197,6 +197,9 @@ A derived class constructor always calls a base class constructor.
 
 <https://codeofconnor.wordpress.com/2017/09/12/pass-by-reference-vs-pass-by-value-in-cpp/>
 
+#### Type erasure
+
+https://blog.the-pans.com/type-erasure/
 
 ### Overload new and delete
 https://habr.com/ru/post/490640/
