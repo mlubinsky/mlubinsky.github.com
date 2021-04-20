@@ -35,6 +35,8 @@ http://holoviews.org/
 
 ## Dash Plotly
 
+https://towardsdev.com/how-to-use-plotly-as-pandas-plotting-backend-123ff5378003
+
 https://github.com/plotly/dash
 
 https://plotly.com/python/is-plotly-free/
