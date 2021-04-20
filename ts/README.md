@@ -848,7 +848,7 @@ decomposition = sm.tsa.seasonal_decompose(y, model='multiplicative')
 <https://medium.com/@josemarcialportilla/using-python-and-auto-arima-to-forecast-seasonal-time-series-90877adff03c>
 <https://github.com/Pierian-Data/AutoArima-Time-Series-Blog>
 
-
+https://www.nbshare.io/notebook/136553745/Time-Series-Analysis-Using-ARIMA-From-StatsModels/
 
 
 <https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/>
