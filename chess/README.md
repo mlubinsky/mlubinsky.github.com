@@ -1,3 +1,7 @@
+### Gambits
+
+https://listudy.org/en/openings/stafford-gambit
+
 ### Openings
 
 https://levico.ru/category/debyuty/
