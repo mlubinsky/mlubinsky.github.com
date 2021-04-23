@@ -102,6 +102,8 @@ https://khashtamov.com/en/postgresql-with-python-and-psycopg2/
 
 ## PG
 
+https://zerodha.tech/blog/working-with-postgresql/
+
 https://habr.com/ru/company/tensor/blog/540572/
 
 https://sql-info.de/postgresql/postgres-gotchas.html PG gotchas
