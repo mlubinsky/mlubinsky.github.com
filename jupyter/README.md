@@ -40,6 +40,16 @@ df.drop('b', axis='columns') # same
 df.drop(columns='b')         # same
 df.drop(columns=['b'])       # same
 ```
+
+### pandas melt
+https://pub.towardsai.net/understanding-pandas-melt-pd-melt-362954f8c125
+```
+The Pandas melt() function is within many other methods used to reshape the pandas DataFrames 
+from wide to a long format which is particularly useful in data science. 
+However, the pd.melt() function is the most efficient and flexible among them. 
+The pd.melt() function unpivots/melts the pandas DataFrame from a wide to a long format.
+```
+
 ### pandas query
 https://jbencook.com/pandas-query/
 ```
