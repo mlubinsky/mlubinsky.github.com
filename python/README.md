@@ -25,6 +25,22 @@ f-strings: <https://miguendes.me/amp/73-examples-to-help-you-master-pythons-f-st
 
 Python 2.7 pip.  curl https://bootstrap.pypa.io/2.7/get-pip.py --output get-pip.py
 
+### import
+```
+import math
+math.pi
+
+from math import pi
+pi
+
+from math import pi, sqrt
+
+
+ from math import sqrt
+ from cmath import sqrt as csqrt 
+
+import math as m
+```
 
 ## Date arithmetic:
 
