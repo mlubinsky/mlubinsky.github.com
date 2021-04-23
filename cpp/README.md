@@ -11,6 +11,11 @@ https://habr.com/ru/post/546946/
 
 ## C
 
+https://accu.org/bookreviews/2020/glassborow_1952/ Book "Effective C" Robert C. Seacord
+
+https://modernc.gforge.inria.fr/   Book "Modern C" Jens Gustedt
+
+
 https://github.com/tezc/sc.  common C libraries
 
 
