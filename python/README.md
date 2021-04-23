@@ -1,3 +1,5 @@
+https://habr.com/ru/company/yandex_praktikum/blog/553900/ . Best python books
+
 https://antonz.org/python-packaging/
 
 https://awesome-python.com/
