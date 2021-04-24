@@ -3,6 +3,11 @@
 
 https://habr.com/ru/post/541024/ . Science channels
 
+### Get better on googling
+
+https://news.ycombinator.com/item?id=26911629
+
+
 ### Google chrome helper fix: 
 
 https://softlay.net/how-to/google-chrome-helper-hogging-cpu.html
