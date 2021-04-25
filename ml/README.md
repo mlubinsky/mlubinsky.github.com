@@ -1,6 +1,9 @@
 https://www.youtube.com/watch?v=tX_MeIbfEmw  К.В. Воронцов "Обзор постановок оптимизационных задач машинного обучения"
 
+### Max_Welling
 https://en.wikipedia.org/wiki/Max_Welling
+
+https://www.youtube.com/watch?v=mmDw5glry9w
 
 https://www.reddit.com/r/MachineLearning/comments/mwwftu/d_your_favorite_ai_podcasts_blogs_newsletters/
 
