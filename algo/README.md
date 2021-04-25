@@ -430,6 +430,8 @@ https://habr.com/ru/post/261159/
 
 ## Dynamic programming
 
+https://trekhleb.dev/blog/2018/dynamic-programming-vs-divide-and-conquer/
+
 https://www.youtube.com/watch?v=BvwQe_9FUBQ (ru)
 
 <https://skerritt.blog/dynamic-programming>
