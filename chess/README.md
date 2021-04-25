@@ -1,5 +1,7 @@
 ### Gambits
 
+https://en.wikipedia.org/wiki/Gambit
+
 https://listudy.org/en/openings/stafford-gambit
 
 https://www.youtube.com/watch?v=T9vSGnxvwA4  1. d4 d5 2. e4
