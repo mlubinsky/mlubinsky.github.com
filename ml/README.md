@@ -2,6 +2,8 @@ https://www.youtube.com/watch?v=tX_MeIbfEmw  К.В. Воронцов "Обзор
 
 https://en.wikipedia.org/wiki/Max_Welling
 
+https://www.reddit.com/r/MachineLearning/comments/mwwftu/d_your_favorite_ai_podcasts_blogs_newsletters/
+
 ### Курс Р.В. Шамина «Машинное обучение и искусственный интеллект в математике и приложениях»
 
 http://ai.lector.ru/
