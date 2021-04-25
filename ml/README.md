@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=tX_MeIbfEmw  К.В. Воронцов "Обзор постановок оптимизационных задач машинного обучения"
 
+https://arxiv.org/abs/1803.08823 A high-bias, low-variance introduction to Machine Learning for physicists
+
 ### Max_Welling
 https://en.wikipedia.org/wiki/Max_Welling
 
