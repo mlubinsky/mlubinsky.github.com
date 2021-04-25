@@ -18,6 +18,13 @@ https://github.com/dafiti/causalimpact?fbclid=IwAR0493C25INSgNY-aZFg-OKNPA2BnFjt
 
 
 ### Transformers
+
+https://habr.com/ru/post/486358/
+
+https://habr.com/ru/post/341240/
+
+https://habr.com/ru/post/491576/
+
 https://timeseriestransformer.readthedocs.io/en/latest/README.html
 
 https://medium.com/mlearning-ai/transformer-implementation-for-time-series-forecasting-a9db2db5c820
