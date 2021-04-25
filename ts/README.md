@@ -16,6 +16,14 @@ https://en.wikipedia.org/wiki/Bayesian_structural_time_series
 
 https://github.com/dafiti/causalimpact?fbclid=IwAR0493C25INSgNY-aZFg-OKNPA2BnFjteN2eiZIEYsOmhr16skLLcEacbKY
 
+
+### Transformers
+https://timeseriestransformer.readthedocs.io/en/latest/README.html
+
+https://medium.com/mlearning-ai/transformer-implementation-for-time-series-forecasting-a9db2db5c820
+
+https://towardsdatascience.com/the-time-series-transformer-2a521a0efad3
+
 ### Time Series Forecasting Survey
 
 https://www.reddit.com/r/MachineLearning/comments/mqn4fj/r_time_series_forecasting_survey/
