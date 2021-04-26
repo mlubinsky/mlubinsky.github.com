@@ -97,6 +97,8 @@ https://blog.dataiku.com/how-do-gradient-boosting-algorithms-handle-categorical-
 
 ## Hyperparams optimization
 
+https://machinelearningmastery.com/tune-xgboost-performance-with-learning-curves/
+
 https://aiinpractice.com/xgboost-hyperparameter-tuning-with-bayesian-optimization/
 
 https://habr.com/ru/company/skillfactory/blog/549474/
