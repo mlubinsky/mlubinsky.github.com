@@ -17,8 +17,10 @@ http://www.mathnet.ru/conf1243
 
 https://github.com/rwsh
 
+https://github.com/phongsathorn1/pretty-confusion-matrix  Confusion matrix
 
-simulated annealing (ru)
+
+Simulated annealing (ru)
 https://www.math.spbu.ru/user/gran/sb1/lopatin.pdf
 
 Mikhail BELKIN https://www.youtube.com/watch?v=yPwCb12V0Mk
