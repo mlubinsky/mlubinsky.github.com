@@ -11,6 +11,8 @@ https://www.practicaldatascience.org/html/plotting_part2.html
 
 https://stackabuse.com/matplotlib-draw-vertical-lines-on-plot/ vertical line in matplotlib
 
+https://towardsdatascience.com/a-simple-guide-to-beautiful-visualizations-in-python-f564e6b9d392
+
 https://pypi.org/project/dama/
 
 http://pyviz.org/
