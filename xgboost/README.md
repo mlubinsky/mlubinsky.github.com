@@ -1,5 +1,7 @@
 https://xgboost.readthedocs.io/en/latest/index.html
 
+https://machinelearningmastery.com/xgboost-loss-functions/
+
 ```
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
