@@ -95,7 +95,9 @@ https://stackoverflow.com/questions/34265102/xgboost-categorical-variables-dummi
 https://blog.dataiku.com/how-do-gradient-boosting-algorithms-handle-categorical-variables
 
 
-## Hyperparams optimization:
+## Hyperparams optimization
+
+https://aiinpractice.com/xgboost-hyperparameter-tuning-with-bayesian-optimization/
 
 https://habr.com/ru/company/skillfactory/blog/549474/
 
