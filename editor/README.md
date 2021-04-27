@@ -359,7 +359,10 @@ https://neps.academy/blog/how-to-install-and-configure-python-and-vscode
 
 <https://code.visualstudio.com/docs/java/java-tutorial>
 
+### diff
 show the diff between two files, with
+add to path:
+/Applications/Visual Studio Code.app//Contents/Resources/app/bin/code
 
 code --diff file1.js file2.js
  
