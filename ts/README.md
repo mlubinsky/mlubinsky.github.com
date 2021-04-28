@@ -70,6 +70,10 @@ https://www.youtube.com/watch?v=F_gHV-Zq158
 
 ### Anomaly detection in time series
 
+https://towardsdatascience.com/time-series-anomaly-detection-with-pycaret-706a6e2b2427
+
+https://pycaret.readthedocs.io/en/latest/api/anomaly.html
+
 https://www.reddit.com/r/MachineLearning/comments/mqt3rp/d_advantages_of_ml_approaches_for_anomaly/
 
 https://github.com/zillow/luminaire 
@@ -119,6 +123,10 @@ https://blog.paperspace.com/introduction-time-series-analysis/
 https://medium.com/coders-camp/10-machine-learning-projects-on-time-series-forecasting-ee0368420ccd
 
 ### Deep learning for TS
+
+https://awaywithideas.com/keras-implementation-of-a-sequence-to-sequence-model-for-time-series-prediction-using-an-encoder-decoder-architecture/
+
+
 
 https://www.ritchieng.com/the-incredible-pytorch/. 
 
