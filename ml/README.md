@@ -2,6 +2,9 @@ https://www.youtube.com/watch?v=tX_MeIbfEmw  К.В. Воронцов "Обзор
 
 https://arxiv.org/abs/1803.08823 A high-bias, low-variance introduction to Machine Learning for physicists
 
+
+https://towardsdatascience.com/maximum-likelihood-vs-bayesian-estimation-dd2eb4dfda8a
+
 ### Max_Welling
 https://en.wikipedia.org/wiki/Max_Welling
 
