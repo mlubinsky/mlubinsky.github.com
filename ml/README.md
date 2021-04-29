@@ -5,6 +5,11 @@ https://arxiv.org/abs/1803.08823 A high-bias, low-variance introduction to Machi
 
 https://towardsdatascience.com/maximum-likelihood-vs-bayesian-estimation-dd2eb4dfda8a
 
+### Fourie
+https://sidsite.com/posts/fourier-nets/
+
+https://news.ycombinator.com/item?id=26980169
+
 ### Max_Welling
 https://en.wikipedia.org/wiki/Max_Welling
 
