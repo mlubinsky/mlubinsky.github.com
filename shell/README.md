@@ -1,6 +1,14 @@
 https://habr.com/ru/company/gms/blog/553078/ . useful comman-line utils
 
 ### bash
+```
+Использование && для объединения нескольких последовательных команд 
+use ? for better error message:
+
+echo openjdk-${VERSION?}
+-bash: VERSION: parameter null or not set
+```
+
 https://www.cyberciti.biz/tips/bash-shell-parameter-substitution-2.html
 
 https://lobste.rs/s/yeloyn/minimal_safe_bash_script_template.  Minimal safe bash
