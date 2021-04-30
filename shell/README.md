@@ -91,6 +91,20 @@ https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_ba
 
 <https://github.com/wting/autojump> autojump
 
+
+### regular expression
+
+It is commonly considered a faux pas to include ‘trailing white space’ in code. That is, your lines should end with the line-return control characters and nothing else. In a regular expression, the end of the string (or line) is marked by the ‘$’ symbol, and a white-space can be indicated with ‘\s’, and a sequence of one or more white space is ‘\s+’. Thus if I search for ‘\s+$‘, I will locate all offending lines.
+
+It is often best to avoid non-ASCII characters in source code. Indeed, in some cases, there is no standard way to tell the compiler about your character encoding, so non-ASCII might trigger problems. To check all non-ASCII characters, you may do [^\x00-\x7F].
+
+Sometimes you insert too many spaces between a variable or an operator. Multiple spaces are fine at the start of a line, since they can be used for indentation, but other repeated spaces are usually in error. You can check for them with the expression \b\s{2,}. The \b indicate a word boundary.
+I use spaces to indent my code, but I always use an even number of spaces (2, 4, 8, etc.). Yet I might get it wrong and insert an odd number of spaces in some places. To detect these cases, I use the expression ^(\s\s)*\s[^\s]. To delete the extra space, I can select it with look-ahead and look-behind expressions such as <(?<=^(\s\s)*)\s(?=[^\s]).
+
+I do not want a space after the opening parenthesis nor before the closing parenthesis. I can check for such a case with (\(\s|\s\)). If I want to remove the spaces, I can detect them with a look-behind expression such as (?<=\()\s.
+
+Suppose that I want to identify all instances of a variable, I can search for \bmyname\b. By using word boundaries, I ensure that I do not catch instances of the string inside other functions or variable names. Similarly, if I want to select all variable that end with some expression, I can do it with an expression like \b\w*myname\b.
+
 ## bash job control
 
 <https://www.linuxjournal.com/content/job-control-bash-feature-you-only-think-you-dont-need>
