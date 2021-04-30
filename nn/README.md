@@ -250,6 +250,9 @@ https://habr.com/post/433804/ . MNN
 
 <https://arxiv.org/abs/1810.08533>   convolution and correlation using Fourier transform
 
+### Autoencoders
+https://www.nbshare.io/notebook/86916405/Understanding-Autoencoders-With-Examples/ 
+
 <http://web.stanford.edu/class/cs294a/sparseAutoencoder.pdf>
 
 <https://www.nvidia.ru/object/machine-learning-ai-nvidia-blog-ru.html>
