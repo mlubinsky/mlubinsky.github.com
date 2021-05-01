@@ -70,6 +70,8 @@ https://www.youtube.com/watch?v=F_gHV-Zq158
 
 ### Anomaly detection in time series
 
+https://keras.io/examples/timeseries/timeseries_anomaly_detection/
+
 https://towardsdatascience.com/time-series-anomaly-detection-with-pycaret-706a6e2b2427
 
 https://pycaret.readthedocs.io/en/latest/api/anomaly.html
