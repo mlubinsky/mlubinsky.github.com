@@ -9,6 +9,8 @@ https://www.machinelearningplus.com/plots/top-50-matplotlib-visualizations-the-m
 
 https://www.practicaldatascience.org/html/plotting_part2.html
 
+https://towardsdatascience.com/exploratory-data-analysis-visualization-and-prediction-model-in-python-241b954e1731
+
 https://stackabuse.com/matplotlib-draw-vertical-lines-on-plot/ vertical line in matplotlib
 
 https://towardsdatascience.com/a-simple-guide-to-beautiful-visualizations-in-python-f564e6b9d392
