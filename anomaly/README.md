@@ -2,6 +2,9 @@
 https://www.youtube.com/watch?v=0GNRpPaGrMk
 
 
+https://cnvrg.io/anomaly-detection-python/ 
+
+
 ## A/B testing
 
 <https://habr.com/ru/company/yandex/blog/476826/>
