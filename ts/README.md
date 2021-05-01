@@ -185,6 +185,8 @@ https://medium.com/opex-analytics/hierarchical-time-series-101-734a3da15426
 
 https://otexts.com/fpp2/hts.html
 
+https://github.com/carlomazzaferro/scikit-hts
+
 https://www.youtube.com/watch?v=jo12CWZ00Lo   Bayesian hierarchical time series with Prophet and PyMC3
 
 https://discourse.pymc.io/t/hierarchical-time-series-with-prophet-and-pymc3-by-matthijs-brouns/5988
