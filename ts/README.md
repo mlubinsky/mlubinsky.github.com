@@ -35,6 +35,9 @@ https://paperswithcode.com/task/time-series-forecasting/codeless
 
 ### Time Series Forecasting Survey
 
+https://github.com/huseinzol05/Stock-Prediction-Models
+
+
 https://www.reddit.com/r/MachineLearning/comments/mqn4fj/r_time_series_forecasting_survey/
 
 Not a review but this paper got best paper award at AAAI21 doing forecasting on electrical data (IIRC) and other time-series using transformers:
