@@ -1,4 +1,7 @@
 https://www.youtube.com/watch?v=wqQKFu41FIw  sktime
+
+https://www.youtube.com/results?search_query=%22Markus+Loning%22+time+series
+
 ### Books
 
 https://otexts.com/fpp2/
