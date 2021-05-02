@@ -623,6 +623,8 @@ https://stumpy.readthedocs.io/en/latest/index.html
 
 https://www.youtube.com/watch?v=xLbPP5xNIJs
 
+https://www.youtube.com/watch?v=T9_z7EpA8QM
+
 https://notamonadtutorial.com/stumpy-unleashing-the-power-of-the-matrix-profile-for-time-series-analysis-7c46af040adb
 
 ### sktime and sktime-dl
