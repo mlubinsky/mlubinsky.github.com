@@ -149,6 +149,8 @@ https://medium.com/coders-camp/10-machine-learning-projects-on-time-series-forec
 
 ### Deep learning for TS
 
+https://www.youtube.com/watch?v=xK1NvtNBAW4
+
 https://habr.com/ru/post/505338/  Интервальное прогнозирование временных рядов с помощью рекуррентных нейронных сетей с долгой краткосрочной памятью
 
 https://awaywithideas.com/keras-implementation-of-a-sequence-to-sequence-model-for-time-series-prediction-using-an-encoder-decoder-architecture/
