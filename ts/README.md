@@ -1,3 +1,9 @@
+### ARIMA vs NN
+
+https://www.quora.com/When-should-I-use-an-RNN-LSTM-and-when-to-use-ARIMA-for-a-time-series-forecasting-problem-What-is-the-relation-between-them
+
+https://medium.com/analytics-vidhya/time-series-forecasting-arima-vs-lstm-vs-prophet-62241c203a3b
+
 ### sktime
 
 https://www.youtube.com/watch?v=wqQKFu41FIw  sktime
