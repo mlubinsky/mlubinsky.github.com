@@ -1,6 +1,8 @@
 https://habr.com/ru/company/otus/blog/541882/
 
-https://hakibenita.com/sql-for-data-analysis  ROLLUP, CUBE GROUPING SET
+https://hakibenita.com/sql-for-data-analysis  ROLLUP, CUBE GROUPING_SET
+
+https://hakibenita.com/sql-dos-and-donts Faux predicate
 
 ### SQL UI client tools
 
