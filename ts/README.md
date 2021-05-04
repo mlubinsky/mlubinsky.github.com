@@ -14,6 +14,8 @@ https://www.youtube.com/results?search_query=%22Markus+Loning%22+time+series
 
 ### Neuralprophet
 
+https://habr.com/ru/company/otus/blog/555700/
+
 https://neuralprophet.com/model-overview/
 
 ### Books
