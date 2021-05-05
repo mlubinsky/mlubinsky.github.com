@@ -1,5 +1,7 @@
 https://habr.com/ru/company/yandex_praktikum/blog/553900/ . Best python books
 
+https://luminousmen.com/post/python-interview-questions-senior
+
 https://antonz.org/python-packaging/
 
 https://awesome-python.com/
