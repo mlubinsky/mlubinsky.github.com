@@ -11,6 +11,8 @@ https://www.youtube.com/watch?v=QA70tIInXg8 Fajarowicz variation in the Budapest
 
 ### Openings
 
+https://www.youtube.com/watch?v=mUpEZSwM95Q
+
 https://levico.ru/category/debyuty/
 
 https://xchess.ru/teorydebut.html
