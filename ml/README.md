@@ -1,3 +1,7 @@
+https://christophm.github.io/interpretable-ml-book/
+
+https://www.youtube.com/watch?v=IqT551LjKHw
+
 https://www.youtube.com/watch?v=tX_MeIbfEmw  К.В. Воронцов "Обзор постановок оптимизационных задач машинного обучения"
 
 https://arxiv.org/abs/1803.08823 A high-bias, low-variance introduction to Machine Learning for physicists
