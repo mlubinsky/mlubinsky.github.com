@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=D8Q4n6YXdpk . Window funct in Postgres
+
 ## MySQL  
 <https://realpython.com/python-mysql/>
 
