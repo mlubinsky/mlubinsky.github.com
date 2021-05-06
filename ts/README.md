@@ -215,6 +215,8 @@ deeptime • Python library for analysis of time series data including dimension
 
 ### Hierarchial time series (HTS)
 
+https://github.com/carlomazzaferro/scikit-hts
+
 https://medium.com/opex-analytics/hierarchical-time-series-101-734a3da15426
 
 https://otexts.com/fpp2/hts.html
