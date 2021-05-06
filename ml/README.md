@@ -1,4 +1,8 @@
+### SHAP - explainable AI
 https://christophm.github.io/interpretable-ml-book/
+
+https://www.youtube.com/watch?v=ylytZegK--I
+
 
 https://www.youtube.com/watch?v=IqT551LjKHw
 
