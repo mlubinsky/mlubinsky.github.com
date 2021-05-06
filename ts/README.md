@@ -1,5 +1,10 @@
 https://www.youtube.com/watch?v=svNwWSgz2NM . Deep Learning for Time Series | Dimitry Larko 
 
+https://www.youtube.com/watch?v=aXPh0NWNfcc
+
+https://www.youtube.com/watch?v=XIpui7lvjEg
+
+
 ### ARIMA vs NN
 
 https://www.quora.com/When-should-I-use-an-RNN-LSTM-and-when-to-use-ARIMA-for-a-time-series-forecasting-problem-What-is-the-relation-between-them
