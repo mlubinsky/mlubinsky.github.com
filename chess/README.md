@@ -49,6 +49,10 @@ https://github.com/robtaussig/rust-chess
 https://github.com/mvanthoor/rustic
 
 
+### AlphaZero
+
+https://www.youtube.com/watch?v=P0jd8AHwjXw
+
 ### JS chess
 https://github.com/robtaussig/ChaosChess/tree/master/src/engine
 
