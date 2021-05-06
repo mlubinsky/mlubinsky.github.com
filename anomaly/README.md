@@ -28,6 +28,8 @@ https://github.com/datamllab/tods
 
 https://www.dasca.org/world-of-big-data/article/identifying-and-removing-outliers-using-python-packages
 
+https://cnvrg.io/anomaly-detection-python/
+
 https://github.com/zillow/luminaire
 
 ### youtube
