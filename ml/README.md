@@ -14,6 +14,8 @@ https://arxiv.org/abs/1803.08823 A high-bias, low-variance introduction to Machi
 https://towardsdatascience.com/maximum-likelihood-vs-bayesian-estimation-dd2eb4dfda8a
 
 https://ggcarvalho.dev/posts/montecarlo/ .  Monte Carlo with GO
+
+https://habr.com/ru/company/otus/blog/555980/  stat paradox
 ### Fourie
 https://sidsite.com/posts/fourier-nets/
 
