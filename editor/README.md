@@ -175,6 +175,12 @@ https://stackoverflow.com/questions/18649512/unicodedecodeerror-ascii-codec-cant
 
 https://news.ycombinator.com/item?id=24363225. vim as C++ IDE
 
+
+### IntelliJ Plugins
+avro and parquet viewer:
+
+https://plugins.jetbrains.com/plugin/12281-avro-and-parquet-viewer
+
 ## IntelliJ + Scala
 
 <https://stackoverflow.com/questions/23545476/where-do-i-enter-the-homebrew-scala-path-usr-local-opt-scala-idea-in-intellij?rq=1>
