@@ -18,6 +18,8 @@ https://airflow.apache.org/docs/stable/_modules/airflow/contrib/operators/dynamo
 ### Export from DynamoDB
 https://blog.skeddly.com/2017/11/export-dynamodb-tables-to-s3.html
 
+https://www.fernandomc.com/posts/ten-examples-of-getting-data-from-dynamodb-with-python-and-boto3/
+
 https://stackoverflow.com/questions/18896329/export-data-from-dynamodb
 
 ### COMPLEX SQL
