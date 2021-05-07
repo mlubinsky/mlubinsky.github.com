@@ -15,6 +15,10 @@ https://rokumesh.us-west-2.msc.rokulabs.net/kiali/console/graph/namespaces/?edge
 ## Airflow DynamoDB
 https://airflow.apache.org/docs/stable/_modules/airflow/contrib/operators/dynamodb_to_s3.html
 
+
+
+https://confluence.portal.roku.com:8443/display/BO/Data+Delivery+Design
+
 ### Export from DynamoDB
 https://blog.skeddly.com/2017/11/export-dynamodb-tables-to-s3.html
 
