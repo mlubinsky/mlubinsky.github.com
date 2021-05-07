@@ -10,16 +10,25 @@ https://gitlab.eng.roku.com/dea/data-processing/compare/master...DEA-11853
 
 ### DynamoDB
 
+Sign into Web-Dev Aws account - apply here https://jira.portal.roku.com:8443/browse/SAM-10294
+
+https://signin.aws.amazon.com/saml
+
+Staging table:
+https://console.aws.amazon.com/dynamodbv2/home?region=us-east-1#table?name=amoeba-ml-allocation-staging&initialTableGroup=%23all
+
 https://rokumesh.us-west-2.msc.rokulabs.net/kiali/console/graph/namespaces/?edges=requestRate&graphType=versionedApp&namespaces=amoeba&idleNodes=false&duration=300&refresh=30000&operationNodes=false&idleEdges=false&injectServiceNodes=true&layout=dagre
 
 ## Airflow DynamoDB
 https://airflow.apache.org/docs/stable/_modules/airflow/contrib/operators/dynamodb_to_s3.html
 
 
-
 https://confluence.portal.roku.com:8443/display/BO/Data+Delivery+Design
 
 ### Export from DynamoDB
+
+https://towardsdatascience.com/importing-dynamodb-data-using-apache-hive-on-amazon-emr-651d468898c6
+
 https://blog.skeddly.com/2017/11/export-dynamodb-tables-to-s3.html
 
 https://www.fernandomc.com/posts/ten-examples-of-getting-data-from-dynamodb-with-python-and-boto3/
