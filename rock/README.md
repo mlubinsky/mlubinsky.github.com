@@ -7,6 +7,19 @@ Airflow
 https://gitlab.eng.roku.com/dea/data-processing/compare/master...DEA-11853
 ```
 
+
+### DynamoDB
+
+https://rokumesh.us-west-2.msc.rokulabs.net/kiali/console/graph/namespaces/?edges=requestRate&graphType=versionedApp&namespaces=amoeba&idleNodes=false&duration=300&refresh=30000&operationNodes=false&idleEdges=false&injectServiceNodes=true&layout=dagre
+
+## Airflow DynamoDB
+https://airflow.apache.org/docs/stable/_modules/airflow/contrib/operators/dynamodb_to_s3.html
+
+### Export from DynamoDB
+https://blog.skeddly.com/2017/11/export-dynamodb-tables-to-s3.html
+
+https://stackoverflow.com/questions/18896329/export-data-from-dynamodb
+
 ### COMPLEX SQL
 ```
 SELECT bucket, economic_model, content_type, count(distinct device_id), sum(seconds) as sec, AVG(seconds), STDDEV(seconds) as std
