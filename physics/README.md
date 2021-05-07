@@ -1,7 +1,7 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 
-## Books
+### Books
 
 1. Sudbery, A. (1986): Quantum Mechanics and the Particles of Nature: An Outline for Mathematicians.
 
@@ -11,6 +11,9 @@
 
 4. https://mipt.ru/students/organization/mezhpr/biblio/q-ivanov.php
 
+### links
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6783340/  Cell modelling
 
 https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics
 
