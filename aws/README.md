@@ -7,6 +7,10 @@ https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_2708
 
 ### DynamoDB
 
+https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html
+
+https://boto.cloudhackers.com/en/2.6.0/dynamodb_tut.html
+
 https://www.youtube.com/watch?v=HaEPXoXVf2k&t=3456s
 
 ### AWS
