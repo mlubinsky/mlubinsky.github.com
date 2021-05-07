@@ -15,6 +15,8 @@ https://www.freecodecamp.org/news/ultimate-dynamodb-2020-cheatsheet/
 
 https://intellipaat.com/blog/amazon-aws-dynamodb-tutorial/
 
+https://aws.amazon.com/about-aws/whats-new/2021/05/amazon-dynamodb-local-now-supports-the-aws-sdk-for-java-2-x/
+
 #### official doc
 https://docs.amazonaws.cn/en_us/amazondynamodb/latest/developerguide/bp-time-series.html
 
