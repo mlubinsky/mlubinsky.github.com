@@ -5,6 +5,18 @@ https://habr.com/ru/company/microsoft/blog/503462/
 
 https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_270839230_130845605&dclid=CImGtNrTpeoCFQMqrQYd4dYHbA
 
+
+### aws config
+```
+[DYNAMO]$ cat  ~/.aws/config
+[default]
+region = us-west-2
+output = json
+[DYNAMO]$ cat  ~/.aws/credentials
+[default]
+aws_access_key_id = YourKeyId
+aws_secret_access_key = YourSecretAccessKey
+```
 ### DynamoDB
 
 https://amazon-dynamodb-labs.com 
