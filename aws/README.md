@@ -13,6 +13,9 @@ https://amazon-dynamodb-labs.com/design-patterns/ex8streams.html
 
 https://www.freecodecamp.org/news/ultimate-dynamodb-2020-cheatsheet/
 
+https://intellipaat.com/blog/amazon-aws-dynamodb-tutorial/
+
+#### official doc
 https://docs.amazonaws.cn/en_us/amazondynamodb/latest/developerguide/bp-time-series.html
 
 https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html
