@@ -7,6 +7,13 @@ https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_2708
 
 ### DynamoDB
 
+https://amazon-dynamodb-labs.com 
+
+https://amazon-dynamodb-labs.com/design-patterns/ex8streams.html
+
+
+https://docs.amazonaws.cn/en_us/amazondynamodb/latest/developerguide/bp-time-series.html
+
 https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html
 
 https://boto.cloudhackers.com/en/2.6.0/dynamodb_tut.html
