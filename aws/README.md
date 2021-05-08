@@ -19,6 +19,8 @@ aws_secret_access_key = YourSecretAccessKey
 ```
 ### DynamoDB
 
+https://www.youtube.com/watch?v=HaEPXoXVf2k
+
 https://amazon-dynamodb-labs.com 
 
 https://amazon-dynamodb-labs.com/design-patterns/ex8streams.html
