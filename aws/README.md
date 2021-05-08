@@ -21,6 +21,7 @@ aws_secret_access_key = YourSecretAccessKey
 
 ```
 aws dynamodb list-tables --endpoint-url http://localhost:8000
+aws dynamodb describe-table --table-name Music  --endpoint-url http://localhost:8000
 ```
 Global and local secondary indexes:
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-general.html
