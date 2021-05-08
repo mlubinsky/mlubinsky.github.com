@@ -25,6 +25,8 @@ aws dynamodb list-tables --endpoint-url http://localhost:8000
 Global and local secondary indexes:
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-general.html
 
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/getting-started-step-6.html
+
 Time Series:
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-time-series.html
 
