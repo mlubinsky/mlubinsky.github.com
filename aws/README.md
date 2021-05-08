@@ -27,6 +27,9 @@ https://www.freecodecamp.org/news/ultimate-dynamodb-2020-cheatsheet/
 
 https://intellipaat.com/blog/amazon-aws-dynamodb-tutorial/
 
+#### PartiQL
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html
+
 ### DynamoDB Local
 
 https://aws.amazon.com/about-aws/whats-new/2021/02/you-now-can-use-partiql-with-dynamodb-local-to-query-insert-update-and-delete-table-data-in-amazon-dynamodb/
