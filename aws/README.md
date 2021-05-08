@@ -19,6 +19,12 @@ aws_secret_access_key = YourSecretAccessKey
 ```
 ### DynamoDB
 
+```
+aws dynamodb list-tables --endpoint-url http://localhost:8000
+```
+Global and local secondary indexes:
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-general.html
+
 https://www.youtube.com/watch?v=HaEPXoXVf2k
 
 https://amazon-dynamodb-labs.com 
