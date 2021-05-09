@@ -126,6 +126,9 @@ https://paperswithcode.com/
 <https://paperswithcode.com/paper/causalml-python-package-for-causal-machine> CasualML
 
 ## Decorator
+
+https://medium.com/techtofreedom/7-levels-of-using-decorators-in-python-370473fcbe76
+
 https://habr.com/ru/post/524052/
 
 ## Static Method in Python: @staticmethod @classmethod @property
