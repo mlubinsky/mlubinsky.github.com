@@ -4,6 +4,7 @@ https://www.youtube.com/watch?v=aXPh0NWNfcc
 
 https://www.youtube.com/watch?v=XIpui7lvjEg
 
+https://stats.stackexchange.com/questions/431712/uncertainty-quantification-in-time-series-analysis
 
 ### ARIMA vs NN
 
