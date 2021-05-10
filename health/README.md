@@ -1,5 +1,7 @@
 https://habr.com/ru/post/550260/ Психосоматика
 
+https://lenta.ru/news/2021/05/10/old/
+
 https://guttalapidem.livejournal.com/45994.html
 
 https://www.youtube.com/watch?v=eoOhIRpTI0I
