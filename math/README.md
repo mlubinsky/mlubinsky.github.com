@@ -1,5 +1,6 @@
 Ветераны броуновского движения - Вступайте в ряды Фурье!
 
+https://www.youtube.com/watch?v=8v0OYSowjok
 
 https://algorithmstoliveby.com/
 
