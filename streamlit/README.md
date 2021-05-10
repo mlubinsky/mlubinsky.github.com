@@ -25,6 +25,8 @@ https://towardsdatascience.com/build-dashboards-in-less-than-10-lines-of-code-83
 ## StreamIt
 <https://docs.streamlit.io/>
 
+https://github.com/jrieke/best-of-streamlit
+
 <https://www.streamlit.io/>
 
 https://www.coursera.org/projects/interactive-dashboards-streamlit-python
