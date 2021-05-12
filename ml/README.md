@@ -1,6 +1,8 @@
 ### SHAP - explainable AI
 https://christophm.github.io/interpretable-ml-book/
 
+https://habr.com/ru/post/556856/  Statistics with Python
+
 https://www.youtube.com/watch?v=ylytZegK--I
 
 
