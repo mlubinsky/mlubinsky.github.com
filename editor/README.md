@@ -313,7 +313,9 @@ $ to the end of a line
 
 ## Visual Studio Code
 
-
+```
+  PATH=$PATH:"/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+```
 <https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner>
 
 <https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces>
@@ -366,10 +368,11 @@ https://neps.academy/blog/how-to-install-and-configure-python-and-vscode
 <https://code.visualstudio.com/docs/java/java-tutorial>
 
 ### diff
-show the diff between two files, with
+show the diff between two files, with VSCode 
 add to path:
-/Applications/Visual Studio Code.app//Contents/Resources/app/bin/code
-
+```
+PATH=$PATH:"/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+```
 code --diff file1.js file2.js
  
 
