@@ -2,6 +2,8 @@ https://mccme.ru/shen/progbook/7edition.pdf
 
 http://jeffe.cs.illinois.edu/teaching/algorithms/
 
+https://kalkicode.com/data-structure/1500-most-common-data-structures-and-algorithms-solutions
+
 https://github.com/StBogdan/CTCI_python Cracking code interview
 
 https://runestone.academy/runestone/books/published/pythonds/index.html#problem-solving-with-algorithms-and-data-structures-using-python
