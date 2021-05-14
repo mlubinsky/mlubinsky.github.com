@@ -173,6 +173,10 @@ https://towardsdatascience.com/https-medium-com-reina-wang-tw-stochastic-gradien
 
 <https://www.fast.ai/2019/01/24/course-v3/>
 
+### Graph NN
+
+https://habr.com/ru/company/mailru/blog/557280/
+
 <https://news.ycombinator.com/item?id=18852974> .  Graph NN
 
 
