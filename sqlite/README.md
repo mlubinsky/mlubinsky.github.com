@@ -10,6 +10,8 @@ https://habr.com/ru/company/otus/blog/541820/.  SQLite with  Python and Go
 
 ## SQLite utils
 
+https://habr.com/ru/post/553696/ 
+
 https://github.com/simonw/sqlite-utils
 
 Sequel Ace - UI
