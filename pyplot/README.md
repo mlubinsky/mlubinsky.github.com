@@ -42,7 +42,10 @@ https://cmdlinetips.com/2020/01/tips-to-make-common-plots-with-pandas/
 
 https://www.kite.com/blog/python/data-analysis-visualization-python/
 
+### HVPLOT
 https://hvplot.holoviz.org/ hvplot !!!
+
+https://github.com/antonlopezr/mpl_plotter
 
 ## Seaborn
 
