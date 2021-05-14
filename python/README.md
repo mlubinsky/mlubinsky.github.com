@@ -423,9 +423,11 @@ multiprocessing vs threading
 
 ## Logging
 
+<https://habr.com/ru/company/skillfactory/blog/556942/>
+
 <https://kanoki.org/2019/10/16/python-logging/> 
 
-https://julien.danjou.info/how-to-log-properly-in-python/
+<https://julien.danjou.info/how-to-log-properly-in-python/>
 
 ## Unclassified
 
