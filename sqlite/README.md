@@ -1,3 +1,5 @@
+https://github.com/lana-k/sqliteviz +Plotly
+
 https://phiresky.github.io/blog/2020/sqlite-performance-tuning/
 
 https://antonz.org/sqlite-is-not-a-toy-database/
