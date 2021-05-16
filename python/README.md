@@ -29,6 +29,11 @@ f-strings: <https://miguendes.me/amp/73-examples-to-help-you-master-pythons-f-st
 
 Python 2.7 pip.  curl https://bootstrap.pypa.io/2.7/get-pip.py --output get-pip.py
 
+
+### get IP address
+
+IP = requests.get('https://api.ipify.org').text
+
 ### import
 ```
 import math
