@@ -1,3 +1,5 @@
+https://stepchess.ru/debut
+
 https://stepchess.ru/course/60/task/1043
 
 ### Gambits
