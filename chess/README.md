@@ -1,3 +1,5 @@
+https://stepchess.ru/course/60/task/1043
+
 ### Gambits
 
 https://en.wikipedia.org/wiki/Gambit
