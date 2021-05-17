@@ -1,5 +1,9 @@
 https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years
 
+https://habr.com/ru/company/mailru/blog/557386/. debugging
+
+https://addyosmani.com/blog/import-on-interaction/ 
+
 ## CSS 
 <https://every-layout.dev/>
 
