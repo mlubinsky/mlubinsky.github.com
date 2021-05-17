@@ -24,10 +24,11 @@ https://gitlab.eng.roku.com/dea/data-processing/compare/master...DEA-11853
 
 Scribe
 --------
-https://gitlab.eng.roku.com/dea/scribe-api/compare/master...DEA-11300/
+https://gitlab.eng.roku.com/dea/scribe-api/-/merge_requests/94/diffs
 
-
-https://gitlab.eng.roku.com/dea/scribe-api/compare/master...DEA-11300/
+Gobblin
+--------
+https://gitlab.eng.roku.com/dea/GoblineConsumers/compare/master...DEA-11300
 ```
 
 
