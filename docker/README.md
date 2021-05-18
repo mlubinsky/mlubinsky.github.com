@@ -3,6 +3,8 @@ https://habr.com/ru/company/southbridge/blog/534334/.  Data /volumes inside Dock
 
 https://www.youtube.com/watch?v=BZiwpsnLLYQ Python in Docker
 
+https://www.codingholygrail.com/build-docker-image-for-python-projects
+
 
 <https://www.pybootcamp.com/blog/how-to-containerize-python-application/>
 
