@@ -20,7 +20,10 @@ chrome://settings/content/unsandboxedPlugins
 
 dig @resolver4.opendns.com myip.opendns.com +short
 
+### Kolybanov
 https://kolybanov.livejournal.com/26384307.html
+
+thumb-p3.xhcdn.com/a/-Zb--1tKyaaXp2ldpwY4jw/000/129/957/983_1000.gif
 
 <https://www.youtube.com/watch?v=i33BTuwTgAs> Supermemo
 
