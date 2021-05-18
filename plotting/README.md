@@ -33,6 +33,10 @@ https://habr.com/ru/company/skillfactory/blog/526076/
 http://holoviews.org/
 
 
+
+
+http://glueviz.org/ 
+
 ## Dash Plotly
 
 https://github.com/lana-k/sqliteviz +Plotly
