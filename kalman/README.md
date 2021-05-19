@@ -16,6 +16,8 @@ https://habr.com/ru/post/120133/
 
 https://habr.com/ru/post/140274/ Kalman filter
 
+https://habr.com/ru/company/auriga/blog/557758/
+
 https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
 
 https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python
