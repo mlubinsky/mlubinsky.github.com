@@ -5,6 +5,8 @@
  
 ```
 
+https://news.ycombinator.com/item?id=27171970 .  Some tools
+
 Free services:
 https://habr.com/ru/company/macloud/blog/549966/
 
