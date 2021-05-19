@@ -4,6 +4,8 @@ http://jeffe.cs.illinois.edu/teaching/algorithms/
 
 https://kalkicode.com/data-structure/1500-most-common-data-structures-and-algorithms-solutions
 
+https://stackoverflow.com/questions/67526076/what-is-the-most-efficient-way-of-getting-the-intersection-of-k-sorted-arrays
+
 https://github.com/StBogdan/CTCI_python Cracking code interview
 
 https://runestone.academy/runestone/books/published/pythonds/index.html#problem-solving-with-algorithms-and-data-structures-using-python
