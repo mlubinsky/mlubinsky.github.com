@@ -2,6 +2,8 @@ https://news.ycombinator.com/item?id=26363347
 
 https://www.reddit.com/r/Python/comments/m7fl42/simply_kalman_filter_in_python/
 
+https://ai-pool.com/a/s/introduction-of-fast-fourier-transformation--fft
+
 https://github.com/pykalman/pykalman
 
 https://github.com/rlabbe/filterpy
