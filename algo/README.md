@@ -2,6 +2,8 @@ https://mccme.ru/shen/progbook/7edition.pdf
 
 http://jeffe.cs.illinois.edu/teaching/algorithms/
 
+https://ekamperi.github.io/programming/2021/04/14/longest-non-repeating-substring.html
+
 https://kalkicode.com/data-structure/1500-most-common-data-structures-and-algorithms-solutions
 
 https://stackoverflow.com/questions/67526076/what-is-the-most-efficient-way-of-getting-the-intersection-of-k-sorted-arrays
