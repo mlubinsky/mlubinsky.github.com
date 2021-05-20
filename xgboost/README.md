@@ -4,6 +4,8 @@ https://machinelearningmastery.com/xgboost-loss-functions/
 
 https://github.com/Ericdataplus/XGboost-template
 
+https://jamesmccaffrey.wordpress.com/2021/05/14/why-i-dislike-xgboost-and-why-i-like-xgboost/
+
 ```
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
@@ -110,6 +112,8 @@ https://habr.com/ru/company/skillfactory/blog/549474/
 https://towardsdatascience.com/hyperparameter-optimization-in-python-part-0-introduction-c4b66791614b
 
 https://towardsdatascience.com/hyperparameter-optimization-in-python-part-2-hyperopt-5f661db91324
+
+https://ekamperi.github.io/machine%20learning/2021/05/08/bayesian-optimization.html
 
 https://habr.com/ru/post/542624/. hyperopt
 
