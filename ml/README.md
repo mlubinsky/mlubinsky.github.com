@@ -3,6 +3,13 @@ https://christophm.github.io/interpretable-ml-book/
 
 https://habr.com/ru/post/556856/  Statistics with Python
 
+https://github.com/rushter/MLAlgorithms
+
+### Welford's_online_algorithm
+https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Welford's_online_algorithm
+
+https://natural-blogarithm.com/post/variance-welford-vs-numpy/
+
 https://www.youtube.com/watch?v=ylytZegK--I
 
 
