@@ -271,6 +271,18 @@ Or, if you don't want/need a background service you can just run:
   zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties & kafka-server-start /usr/local/etc/kafka/server.properties
   
   
+$ cat /usr/local/etc/kafka/zookeeper.properties
+
+dataDir=/usr/local/var/lib/zookeeper
+# the port at which the clients will connect
+clientPort=2181
+
+$ cat   /usr/local/etc/kafka/server.properties
+...
+zookeeper.connect=localhost:2181
+log.dirs=/usr/local/var/lib/kafka-logs
+...
+  
 $  find /usr -type f | grep kafka-console | xargs ls -l
  
 -r-xr-xr-x  144  /usr/local/Cellar/kafka/2.3.1/bin/kafka-console-consumer
