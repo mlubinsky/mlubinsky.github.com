@@ -1,3 +1,5 @@
+https://habr.com/ru/post/558488/  transformers
+
 ### SHAP - explainable AI
 https://christophm.github.io/interpretable-ml-book/
 
