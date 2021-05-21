@@ -290,6 +290,18 @@ $  find /usr -type f | grep kafka-console | xargs ls -l
 -rwxr-xr-x  945 /usr/local/Cellar/kafka/2.3.1/libexec/bin/kafka-console-consumer.sh
 -rwxr-xr-x  944 /usr/local/Cellar/kafka/2.3.1/libexec/bin/kafka-console-producer.sh
 
+zkServer start
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic testTopic
+
+kafka-console-producer --broker-list localhost:9092 --topic testTopic
+
+$ kafka-topics --describe --zookeeper localhost:2181
+Topic: testTopic	PartitionCount: 1	ReplicationFactor: 1	Configs:
+	Topic: testTopic	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
+
+
+
+
 
 $ cat /usr/local/Cellar/kafka/2.3.1/bin/kafka-console-consumer
 
