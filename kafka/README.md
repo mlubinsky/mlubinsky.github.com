@@ -1,3 +1,77 @@
+### Kafka on Mac
+
+
+http://www.technocratsid.com/install-kafka-on-macos/
+
+Issue: https://stackoverflow.com/questions/35788697/leader-not-available-kafka-in-console-producer
+
+vi config/server.properties
+
+add below line:
+
+listeners=PLAINTEXT://localhost:9092
+
+bin/kafka-server-stop.sh
+
+bin/kafka-server-start.sh -daemon config/server.properties
+
+
+```
+brew install kafka
+==> Caveats
+==> zookeeper
+To have launchd start zookeeper now and restart at login:
+  brew services start zookeeper
+Or, if you don't want/need a background service you can just run:
+  zkServer start
+==> kafka
+To have launchd start kafka now and restart at login:
+  brew services start kafka
+Or, if you don't want/need a background service you can just run:
+  zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties & kafka-server-start /usr/local/etc/kafka/server.properties
+  
+  
+$ cat /usr/local/etc/kafka/zookeeper.properties
+
+dataDir=/usr/local/var/lib/zookeeper
+# the port at which the clients will connect
+clientPort=2181
+
+$ cat   /usr/local/etc/kafka/server.properties
+...
+zookeeper.connect=localhost:2181
+log.dirs=/usr/local/var/lib/kafka-logs
+...
+  
+$  find /usr -type f | grep kafka-console | xargs ls -l
+ 
+-r-xr-xr-x  144  /usr/local/Cellar/kafka/2.3.1/bin/kafka-console-consumer
+-r-xr-xr-x  144 /usr/local/Cellar/kafka/2.3.1/bin/kafka-console-producer
+-rwxr-xr-x  945 /usr/local/Cellar/kafka/2.3.1/libexec/bin/kafka-console-consumer.sh
+-rwxr-xr-x  944 /usr/local/Cellar/kafka/2.3.1/libexec/bin/kafka-console-producer.sh
+
+zkServer start
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic testTopic
+
+kafka-console-producer --broker-list localhost:9092 --topic testTopic
+
+$ kafka-topics --describe --zookeeper localhost:2181
+Topic: testTopic	PartitionCount: 1	ReplicationFactor: 1	Configs:
+	Topic: testTopic	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
+
+kafka-console-consumer --bootstrap-server localhost:9092 --topic testTopic --from-beginning
+
+WARN [Consumer clientId=consumer-console-consumer-46359-1, groupId=console-consumer-46359] Error while fetching metadata with correlation id 73 : {testTopic=LEADER_NOT_AVAILABLE} (org.apache.kafka.clients.NetworkClient)
+
+
+$ cat /usr/local/Cellar/kafka/2.3.1/bin/kafka-console-consumer
+
+#!/bin/bash
+JAVA_HOME="$(/usr/libexec/java_home --version 1.8)" exec "/usr/local/Cellar/kafka/2.3.1/libexec/bin/kafka-console-consumer.sh" "$@"
+
+```
+
+
 ### Client
 <https://github.com/twmb/kcl> Kafka client
 
