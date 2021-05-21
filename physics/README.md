@@ -27,6 +27,7 @@ https://mipt.ru/online/
 
 https://forany.xyz/
 
+https://news.ycombinator.com/item?id=27207604 Maxwell daemon
 
 https://habr.com/ru/post/533870/ Waves
 
