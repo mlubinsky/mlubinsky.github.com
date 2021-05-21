@@ -256,6 +256,9 @@ zookeeper      stopped
 ```
 ### Kafka
 
+http://www.technocratsid.com/install-kafka-on-macos/
+
+Issue: https://stackoverflow.com/questions/35788697/leader-not-available-kafka-in-console-producer
 ```
 brew install kafka
 ==> Caveats
