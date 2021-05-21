@@ -238,6 +238,22 @@ They will install into the site-package directory
 
 <https://www.peterbe.com/plog/ld-library-not-found-for-lssl-mysqlclient-python-macos>
 
+
+### brew
+
+brew list
+```
+freetds		libtool		openjdk		pcre2		readline	unixodbc
+kafka		mysql@5.7	openssl@1.1	postgresql@9.6	ripgrep		zookeeper
+adoptopenjdk8
+```
+brew services
+```
+kafka          stopped
+mysql@5.7      stopped
+postgresql@9.6 stopped
+zookeeper      stopped
+```
 ### Kafka
 
 ```
