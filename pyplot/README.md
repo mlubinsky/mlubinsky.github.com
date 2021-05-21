@@ -1,6 +1,8 @@
 
 https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-2dd74df12b5e
 
+https://habr.com/ru/company/otus/blog/558478/
+
 https://python-graph-gallery.com/ Pandash, Seaborn, Matplotlib examples!
 
 https://habr.com/ru/post/557424/
