@@ -299,8 +299,9 @@ $ kafka-topics --describe --zookeeper localhost:2181
 Topic: testTopic	PartitionCount: 1	ReplicationFactor: 1	Configs:
 	Topic: testTopic	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
 
+kafka-console-consumer --bootstrap-server localhost:9092 --topic testTopic --from-beginning
 
-
+WARN [Consumer clientId=consumer-console-consumer-46359-1, groupId=console-consumer-46359] Error while fetching metadata with correlation id 73 : {testTopic=LEADER_NOT_AVAILABLE} (org.apache.kafka.clients.NetworkClient)
 
 
 $ cat /usr/local/Cellar/kafka/2.3.1/bin/kafka-console-consumer
