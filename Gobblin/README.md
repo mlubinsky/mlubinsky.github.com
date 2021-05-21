@@ -11,6 +11,24 @@ scribe-web-1.0-SNAPSHOT.tar scribe-web-1.0-SNAPSHOT.zip
 rsync scribe-web-1.0-SNAPSHOT.tar mlubinsky@scribe-dev-1002.bdp.roku.com:/home/mlubinsky/
 ```
 
+
+
+##  Scribe endpoint  
+
+<https://confluence.portal.roku.com:8443/display/DEA/Adding+Scribe+Endpoint+and+Gobblin+Kafka+Consumer>
+
+   
+https://console.aws.amazon.com/sqs/v2/home?region=us-east-1#/queues/https%3A%2F%2Fsqs.us-east-1.amazonaws.com%2F911173767732%2Famoeba-bdp-prod  
+
+
+```
+cd ~/CODE/GIT
+
+git clone git@gitlab.eng.roku.com:dea/scribe-api.git
+cd scribe-api
+```
+
+
 ```
 [mlubinsky@scribe-dev-1002 ~]$ 
 sudo /usr/local/bin/getFromS3AndRun.sh scribe-server_DEA-11300_LATEST.rsei
@@ -196,25 +214,20 @@ https://gobblin.apache.org/
 Gobblin  consumes data from Kafka Topics 
 then organizes that data and writes it to S3 for long term storage and access via HUE, Hive, and other tools.
 
-##  Scribe endpoint  
 
-<https://confluence.portal.roku.com:8443/display/DEA/Adding+Scribe+Endpoint+and+Gobblin+Kafka+Consumer>
-
-   
-https://console.aws.amazon.com/sqs/v2/home?region=us-east-1#/queues/https%3A%2F%2Fsqs.us-east-1.amazonaws.com%2F911173767732%2Famoeba-bdp-prod  
-
-
-### abf.job
+### Gobline abf.job
 
 https://jira.portal.roku.com:8443/browse/DEA-11280
    
-https://gitlab.eng.roku.com/dea/GoblineConsumers/blob/master/external/jobconfig/abf/abf.job#L23   
-```
-cd ~/CODE/GIT
+https://gitlab.eng.roku.com/dea/GoblineConsumers/blob/master/external/jobconfig/abf/abf.job#L23 
 
-git clone git@gitlab.eng.roku.com:dea/scribe-api.git
-cd scribe-api
 ```
+find . -name "*abf.job"
+./external/jobconfig/abf/abf.job
+./build/resources/test/job/abf/abf.job
+./src/test/resources/job/abf/abf.job
+```
+
 
 ##  GoblinConsumers   
 
