@@ -4,6 +4,8 @@ https://habr.com/ru/company/mailru/blog/557386/. debugging
 
 https://addyosmani.com/blog/import-on-interaction/ 
 
+https://habr.com/ru/company/macloud/blog/557422/ .  DOM manipulation
+
 ## CSS 
 <https://every-layout.dev/>
 
