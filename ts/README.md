@@ -35,6 +35,8 @@ https://otexts.com/fpp2/
 
 ### Time series classification
 
+http://tseregression.org/
+
 <http://www.timeseriesclassification.com/>
 
 https://paperswithcode.com/task/time-series-classification/latest
@@ -113,6 +115,8 @@ https://towardsdatascience.com/time-series-anomaly-detection-with-pycaret-706a6e
 https://pycaret.readthedocs.io/en/latest/api/anomaly.html
 
 https://www.reddit.com/r/MachineLearning/comments/mqt3rp/d_advantages_of_ml_approaches_for_anomaly/
+
+https://compete.hexagon-ml.com/practice/competition/39/#description
 
 https://github.com/zillow/luminaire 
 Luminaire provides several anomaly detection and forecasting capabilities that incorporate correlational and seasonal patterns as well as uncontrollable variations in the data over time.
@@ -284,6 +288,10 @@ https://stats.stackexchange.com/questions/45670/how-can-i-transform-time-series-
 https://www.youtube.com/watch?v=KvLG1uTC-KU
 
 https://microprediction.medium.com/is-facebooks-prophet-the-time-series-messiah-or-just-a-very-naughty-boy-8b71b136bc8c
+
+https://vonum.medium.com/forecasting-multiple-dependent-variables-with-facebook-prophet-61e12302d50b
+
+https://github.com/vonum/multi-prophet
  
 
 ## Errors: RMSE, MAPE, and MAE Accuracy
