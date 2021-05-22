@@ -209,11 +209,21 @@ https://gobblin.readthedocs.io/en/latest/
 
 https://gobblin.apache.org/
 
+Earch job has several constructs
+
+- Source
+- Extractor (e.g KafkaExtractor)
+- Converters (optional)
+- DataWriter
+- DataPublisher
+
+
 ## Gobblin  consumes data from Kafka Topics 
 
 Gobblin  consumes data from Kafka Topics 
 then organizes that data and writes it to S3 for long term storage and access via HUE, Hive, and other tools.
 
+  
 
 ### Gobline abf.job
 
@@ -228,6 +238,19 @@ find . -name "*abf.job"
 ./src/test/resources/job/abf/abf.job
 ```
 
+cat ./src/test/resources/job/abf/abf.job
+```
+### Event Type
+abf_meta_data_events=bucket,exp,test
+abf_client_service_events=abc
+```
+
+cat ./build/resources/test/job/abf/abf.job
+```
+### Event Type
+abf_meta_data_events=bucket,exp,test
+abf_client_service_events=abc
+```
 
 ##  GoblinConsumers   
 
