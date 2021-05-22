@@ -1,4 +1,4 @@
-## Scribe
+## Scribe amd Gobblin
 ```
 cd scribe-api/
 ./gradlew clean build
@@ -251,6 +251,56 @@ cat ./build/resources/test/job/abf/abf.job
 abf_meta_data_events=bucket,exp,test
 abf_client_service_events=abc
 ```
+
+cat ./external/jobconfig/abf/abf.job
+```
+#### JOB
+job.name=pull_abf_logs
+job.group=logpullg
+job.description=Gobblin job to pull A/B Framework logs from Kafka
+workunit.retry.enabled=false
+workunit.retry.policy=never
+task.maxretries=0
+mr.job.max.mappers=32
+mapreduce.map.memory.mb=2048
+
+#### SOURCE
+source.class=org.apache.gobblin.source.extractor.extract.kafka.KafkaSimpleSource
+topic.whitelist=abf
+bootstrap.with.offset=latest
+kafka.brokers=${env:KAFKA_BROKERS}
+
+
+#### EXTRACT
+## We will use default KafkaSimpleExtractor which is called from KafkaSimpleSource
+extract.namespace=org.apache.gobblin.extract.kafka
+extract.limit.enabled=true
+extract.limit.type=count
+extract.limit.count.limit=20000000
+
+#### CONVERT
+## We will use default Identity convertor called by framework. Convert nothing.
+
+#### WRITER
+simple.writer.delimiter=\n
+simple.writer.prepend.size=false
+writer.file.path=fact_amoeba_allocation_events
+writer.file.path.type=tablename
+writer.destination.type=HDFS
+writer.output.format=gz
+writer.builder.class=com.dea.roku.data.consumers.writer.BaseGzipWriterBuilder
+writer.partitioner.class=com.dea.roku.data.consumers.writer.partitioner.abf.AbfMetaEventPartition
+writer.fs.uri=${env:HADOOP_FS_URI}
+writer.staging.dir=/gobblin/abf/task-staging
+writer.output.dir=/gobblin/abf/task-output
+
+#### PUBLISHER
+data.publisher.type=org.apache.gobblin.publisher.TimePartitionedDataPublisher
+data.publisher.replace.final.dir=false
+data.publisher.fs.uri=${env:S3_BUCKET_URI}
+data.publisher.final.dir=/roku/facts
+```
+
 
 ##  GoblinConsumers   
 
