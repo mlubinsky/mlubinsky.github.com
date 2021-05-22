@@ -4,6 +4,8 @@ https://stepchess.ru/course/60/task/1043
 
 ### Gambits
 
+https://www.youtube.com/watch?v=AsOEmcmR71o  Morr Gambit (ru)
+
 https://en.wikipedia.org/wiki/Gambit
 
 https://listudy.org/en/openings/stafford-gambit
