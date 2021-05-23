@@ -1,5 +1,9 @@
 <https://arxiv.org/abs/2003.02320>
 
+http://ai.stanford.edu/blog/introduction-to-knowledge-graphs/
+
+https://news.ycombinator.com/item?id=27245696
+
 <https://www.infoq.com/articles/graph-knowledge-base-cloud-native/>
 
 <https://queue.acm.org/issuedetail.cfm?issue=3329781>
