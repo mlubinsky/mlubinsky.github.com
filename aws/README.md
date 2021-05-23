@@ -37,6 +37,8 @@ https://amazon-dynamodb-labs.com
 
 https://amazon-dynamodb-labs.com/design-patterns/ex8streams.html
 
+https://medium.com/nerd-for-tech/asynchronous-api-with-dynamodb-streams-4117776f2fa4. Streams
+
 https://www.freecodecamp.org/news/ultimate-dynamodb-2020-cheatsheet/
 
 https://intellipaat.com/blog/amazon-aws-dynamodb-tutorial/
