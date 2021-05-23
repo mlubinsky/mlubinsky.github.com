@@ -24,6 +24,10 @@ def binary_cross_entropy(yhat: np.ndarray, y: np.ndarray) -> float:
     return -(y * np.log(yhat) + (1 - y) * np.log(1 - yhat)).mean()
 ```
 
+### Reading file into DataFrame
+
+https://gretel.ai/blog/a-guide-to-load-almost-anything-into-a-dataframe
+
 ### Sorting in pandas
 
 https://realpython.com/pandas-sort-python/
