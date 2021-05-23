@@ -187,6 +187,9 @@ Hive Version for emr-5.21.1 is: 2.3.4
 
 
 ## Boto3
+
+https://www.learnaws.org/2021/05/12/aws-iam-boto3-guide/
+
 <https://stackoverflow.com/questions/36205481/read-file-content-from-s3-bucket-with-boto3>
 
 <https://boto3.amazonaws.com/v1/documentation/api/latest/index.html> Boto is  AWS  SDK for Python. It enables Python developers to create, configure, and manage AWS services, such as EC2 and S3.
