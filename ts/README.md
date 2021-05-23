@@ -110,6 +110,8 @@ https://arxiv.org/pdf/2104.09968.pdf
 
 https://keras.io/examples/timeseries/timeseries_anomaly_detection/
 
+https://towardsdatascience.com/a-comprehensive-beginners-guide-to-the-diverse-field-of-anomaly-detection-8c818d153995
+
 https://towardsdatascience.com/time-series-anomaly-detection-with-pycaret-706a6e2b2427
 
 https://pycaret.readthedocs.io/en/latest/api/anomaly.html
