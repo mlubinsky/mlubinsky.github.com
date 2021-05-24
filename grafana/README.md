@@ -17,7 +17,28 @@ http://localhost:3000/
 
 Connecting to Prometeus: https://prometheus.io/docs/visualization/grafana/
 
-### Prometeus
+## Prometheus
+
+https://blog.pvincent.io/tags/prometheus/
+
+### Metric 
+Metric is an identifier linking data points together over time. 
+For example, the metric `http_requests_total` denotes all the data points collected by Prometheus 
+for services exposing http requests counters
+ 
+### Labels 
+As there is likely to be multiple services exposing the same http_requests_total metric, labels can be added to each data point to specify which service this counter applies to:
+```
+# Request counter for the User Directory service
+http_requests_total{service="users-directory"}
+
+# Request counter for the Billing History Service
+http_requests_total{service="billing-history"}
+
+# Overall request counter regardless of service
+sum(http_requests_total) 
+```
+### Install Prometheus
 ```
 brew install prometheus
 ```
@@ -50,6 +71,8 @@ https://github.com/prometheus/node_exporter/blob/master/README.md
 ```
 
 https://coralogix.com/blog/promql-tutorial-5-tricks-to-become-a-prometheus-god/
+
+https://blog.pvincent.io/2017/12/prometheus-blog-series-part-1-metrics-and-labels/
 
 ### Show all available metrics:
 
@@ -119,8 +142,6 @@ https://stackoverflow.com/questions/48512014/using-postgres-with-grafana
 https://habr.com/ru/company/1cloud/blog/443006/
 
 https://www.youtube.com/watch?v=sKNZMtoSHN4&index=7&list=PLDGkOdUX1Ujo3wHw9-z5Vo12YLqXRjzg2
-
-
 
 
 https://www.youtube.com/watch?v=sKNZMtoSHN4&index=7&list=PLDGkOdUX1Ujo3wHw9-z5Vo12YLqXRjzg2
