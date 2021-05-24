@@ -49,6 +49,7 @@ https://github.com/prometheus/node_exporter/blob/master/README.md
   http://localhost:9090/graph
 ```
 
+https://coralogix.com/blog/promql-tutorial-5-tricks-to-become-a-prometheus-god/
 
 ### Show all available metrics:
 
