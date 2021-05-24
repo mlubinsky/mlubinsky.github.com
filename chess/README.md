@@ -1,6 +1,11 @@
+### spetchess
 https://stepchess.ru/debut
 
 https://stepchess.ru/course/60/task/1043
+
+MobileApp
+https://play.google.com/store/apps/details?id=ru.maximschool.combinationsinthespanishgamelite
+
 
 ### Gambits
 
