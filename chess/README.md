@@ -21,6 +21,9 @@ https://www.youtube.com/watch?v=7vD-2diOnec Самые убойные вариа
 https://www.youtube.com/watch?v=QA70tIInXg8 Fajarowicz variation in the Budapest Gambit:
  1.d4 Nf6 2.c4 e5 3.dxe5 Ne4.  
 
+### Budapest gambit
+
+https://www.youtube.com/watch?v=o5isuh2DH1g
 
 ###   Vienna Gambit
 
