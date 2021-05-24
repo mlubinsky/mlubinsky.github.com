@@ -27,7 +27,12 @@ For example, the metric `http_requests_total` denotes all the data points collec
 for services exposing http requests counters
  
 ### Labels 
-As there is likely to be multiple services exposing the same http_requests_total metric, labels can be added to each data point to specify which service this counter applies to:
+
+Labels are key-value pairs associated with time series that, in addition to the metric name, 
+uniquely identify them.  
+
+As there is likely to be multiple services exposing the same http_requests_total metric, 
+labels can be added to each data point to specify which service this counter applies to:
 ```
 # Request counter for the User Directory service
 http_requests_total{service="users-directory"}
