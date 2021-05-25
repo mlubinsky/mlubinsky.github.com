@@ -1,5 +1,8 @@
 https://habr.com/ru/post/558488/  transformers
 
+### Мир статистических гипотез
+https://habr.com/ru/post/558836/ 
+
 ### SHAP - explainable AI
 https://christophm.github.io/interpretable-ml-book/
 
