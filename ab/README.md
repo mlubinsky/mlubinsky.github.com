@@ -92,6 +92,8 @@ measures the probability of the null hypothesis to be true.
 
 ## Student’s T-distribution
 
+https://habr.com/ru/post/559062/
+
 T-distribution is a cousin of the Normal distribution - a bit shorter and fatter .
 The T-distribution is used instead of the normal distribution when you have small samples (usually in practice less than 30). The larger the size of your sample, the more the t-distribution looks like the normal one.  
 
