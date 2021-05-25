@@ -1,5 +1,7 @@
 https://mccme.ru/shen/progbook/7edition.pdf
 
+https://betterprogramming.pub/top-5-hardest-coding-questions-from-recent-faang-interviews-d46bcb4dd8dc
+
 http://jeffe.cs.illinois.edu/teaching/algorithms/
 
 https://ekamperi.github.io/programming/2021/04/14/longest-non-repeating-substring.html
