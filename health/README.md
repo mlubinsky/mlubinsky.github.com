@@ -2,6 +2,17 @@
 ## Pull up bar
 https://www.titan.fitness/racks/rack-accessories/titan-series/titan-series-1.25-in-single-pull-up-bar/400983.html
 
+https://wright-equipment.com/products/42-single-pull-up-bar-elite-series-rig
+
+https://www.getrxd.com/rigmonkeybars.html
+
+https://www.getrxd.com/rigmonkeybars-2032.html
+
+https://www.getrxd.com/galvanized-titan-rig-1800-6-pull-up-bar.html
+
+https://www.getrxd.com/gcf-mb4r.html
+
+------------
 
 https://habr.com/ru/post/550260/ Психосоматика
 
