@@ -1,8 +1,15 @@
 
 ## Pull up bar
+
+https://www.amazon.com/Ultimate-Body-Press-Outdoor-Green/dp/B08GSQQQZX  48 x 6 x 4 inches; 6 Pounds
+
+https://www.softoutdoor.com/products/ultimate-body-press-outdoor-pull-up-bar-green
+
 https://www.titan.fitness/racks/rack-accessories/titan-series/titan-series-1.25-in-single-pull-up-bar/400983.html
 
 https://www.titan.fitness/racks/rack-accessories/t-3-series/t-3-series-adjustable-1.25-in-pull-up-bar/401184.html
+
+https://wolverinesports.com/products/40-single-unit-chinning-bar
 
 https://wright-equipment.com/products/42-single-pull-up-bar-elite-series-rig
 
