@@ -2,6 +2,8 @@
 ## Pull up bar
 https://www.titan.fitness/racks/rack-accessories/titan-series/titan-series-1.25-in-single-pull-up-bar/400983.html
 
+https://www.titan.fitness/racks/rack-accessories/t-3-series/t-3-series-adjustable-1.25-in-pull-up-bar/401184.html
+
 https://wright-equipment.com/products/42-single-pull-up-bar-elite-series-rig
 
 https://www.getrxd.com/rigmonkeybars.html
