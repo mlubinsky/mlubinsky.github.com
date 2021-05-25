@@ -29,6 +29,7 @@ https://www.getrxd.com/galvanized-titan-rig-1800-6-pull-up-bar.html
 
 https://www.getrxd.com/gcf-mb4r.html
 
+https://www.amazon.com/Joist-Mounted-Pull-Up-Bar/dp/B01NBZO3QY
 ------------
 
 https://habr.com/ru/post/550260/ Психосоматика
