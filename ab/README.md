@@ -1,3 +1,7 @@
+https://habr.com/ru/post/558836/ Мир статистических гипотез
+
+
+
 https://habr.com/ru/company/plarium/blog/526706/
 
 https://habr.com/ru/company/mailru/blog/557308/
