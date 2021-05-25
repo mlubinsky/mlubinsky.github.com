@@ -11,6 +11,12 @@ https://www.titan.fitness/racks/rack-accessories/titan-series/titan-series-1.25-
 
 https://www.titan.fitness/racks/rack-accessories/t-3-series/t-3-series-adjustable-1.25-in-pull-up-bar/401184.html
 
+https://www.titan.fitness/racks/rack-accessories/titan-series/titan-series-2-in-single-fat-pull-up-bar/400537.html  
+
+Overall Length: 42-in.
+Diameter: 2-in.
+
+
 https://wolverinesports.com/products/40-single-unit-chinning-bar
 
 https://wright-equipment.com/products/42-single-pull-up-bar-elite-series-rig
