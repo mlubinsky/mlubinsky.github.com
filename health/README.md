@@ -7,6 +7,8 @@ https://www.softoutdoor.com/products/ultimate-body-press-outdoor-pull-up-bar-gre
 
 https://www.titan.fitness/racks/rack-accessories/titan-series/titan-series-1.25-in-single-pull-up-bar/400983.html
 
+ 42-inch ; 1.25-inch diameter, 8.5-inch endplates, 6-inches mounting holes on-center, 
+
 https://www.titan.fitness/racks/rack-accessories/t-3-series/t-3-series-adjustable-1.25-in-pull-up-bar/401184.html
 
 https://wolverinesports.com/products/40-single-unit-chinning-bar
