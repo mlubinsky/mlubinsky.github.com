@@ -1,4 +1,6 @@
-https://habr.com/ru/post/558488/  transformers
+### Transformers
+
+https://habr.com/ru/post/558488/  
 
 ### Мир статистических гипотез
 https://habr.com/ru/post/558836/ 
@@ -9,6 +11,13 @@ https://christophm.github.io/interpretable-ml-book/
 https://habr.com/ru/post/556856/  Statistics with Python
 
 https://github.com/rushter/MLAlgorithms
+
+https://github.com/trekhleb/homemade-machine-learning/ 
+
+https://www.youtube.com/watch?v=pqNCD_5r0IU  Scikit-Learn Course
+
+https://thedatasciencedigest.substack.com/p/python-data-science-digest-may-2021
+
 
 ### Welford's_online_algorithm
 https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Welford's_online_algorithm
