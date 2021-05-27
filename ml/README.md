@@ -2,6 +2,8 @@
 
 https://habr.com/ru/post/558488/ 
 
+https://semiengineering.com/neural-networks-without-matrix-math/
+
 https://semiengineering.com/developers-turn-to-analog-for-neural-nets/
 
 ### Мир статистических гипотез
