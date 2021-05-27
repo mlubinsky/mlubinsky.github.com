@@ -1,6 +1,8 @@
 ### Transformers
 
-https://habr.com/ru/post/558488/  
+https://habr.com/ru/post/558488/ 
+
+https://semiengineering.com/developers-turn-to-analog-for-neural-nets/
 
 ### Мир статистических гипотез
 https://habr.com/ru/post/558836/ 
