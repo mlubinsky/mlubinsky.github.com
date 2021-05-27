@@ -1,6 +1,8 @@
 ### AutoML
 https://habr.com/ru/post/559130/
 
+https://featuretools.alteryx.com/en/stable  Feature extraction
+
 
 ### Transformers
 
