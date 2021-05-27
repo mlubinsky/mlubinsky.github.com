@@ -1,6 +1,12 @@
+### AutoML
+https://habr.com/ru/post/559130/
+
+
 ### Transformers
 
 https://habr.com/ru/post/558488/ 
+
+## Hardware
 
 https://semiengineering.com/neural-networks-without-matrix-math/
 
