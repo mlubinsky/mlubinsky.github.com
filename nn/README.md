@@ -20,6 +20,10 @@ https://deeplearningsystems.ai/
 
 <http://introtodeeplearning.com/>
 
+### TinyML
+
+https://habr.com/ru/company/glowbyte/blog/559400/
+
 ###  How to visualize NN layers?
 https://www.reddit.com/r/MachineLearning/comments/kmfx2d/d_can_anyone_recommend_a_network_architecture/
 
