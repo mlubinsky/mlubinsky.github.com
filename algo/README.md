@@ -4,6 +4,8 @@ https://betterprogramming.pub/top-5-hardest-coding-questions-from-recent-faang-i
 
 http://jeffe.cs.illinois.edu/teaching/algorithms/
 
+https://www.pythonforbeginners.com/queue/queue-in-python
+
 https://ekamperi.github.io/programming/2021/04/14/longest-non-repeating-substring.html
 
 https://kalkicode.com/data-structure/1500-most-common-data-structures-and-algorithms-solutions
