@@ -3,6 +3,7 @@ https://habr.com/ru/post/559130/
 
 https://featuretools.alteryx.com/en/stable  Feature extraction
 
+https://habr.com/ru/company/otus/blog/559666/  Kaggle tricks
 
 ### Transformers
 
