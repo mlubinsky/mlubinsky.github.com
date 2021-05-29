@@ -22,6 +22,8 @@
  
  https://habr.com/ru/post/556268/ . Memory
  
+ https://habr.com/ru/company/mailru/blog/559794/
+ 
  https://habr.com/ru/post/549176/
  
  https://habr.com/ru/post/536288/ Java HotSpot JIT компилятор — устройство, мониторинг и настройка (часть 1)
