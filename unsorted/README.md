@@ -10,6 +10,8 @@ https://news.ycombinator.com/item?id=27302195
 
 https://news.ycombinator.com/item?id=26911629
 
+https://ytdl-org.github.io/youtube-dl/  downloader
+
 
 ### Google chrome helper fix: 
 
