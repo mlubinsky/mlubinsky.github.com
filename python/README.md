@@ -8,6 +8,9 @@ https://antonz.org/python-packaging/
 
 https://awesome-python.com/
 
+
+https://pythonhowtoprogram.com/better-organization-of-your-projects-with-python-imports/ 
+
 https://pybind11.readthedocs.io/en/stable/ C++ from python
 
 https://habr.com/ru/company/skillfactory/blog/528232/  57 отборных репозиториев для всех разработчиков Python
