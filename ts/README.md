@@ -1,5 +1,8 @@
 https://www.youtube.com/watch?v=svNwWSgz2NM . Deep Learning for Time Series | Dimitry Larko 
 
+https://habr.com/ru/post/559796/ Прогнозирование временных рядов с помощью AutoML
+
+
 https://www.youtube.com/watch?v=aXPh0NWNfcc
 
 https://www.youtube.com/watch?v=XIpui7lvjEg
