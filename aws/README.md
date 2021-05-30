@@ -19,6 +19,7 @@ aws_secret_access_key = YourSecretAccessKey
 ```
 ### DynamoDB
 
+https://github.com/dineshsonachalam/Lucid-Dynamodb
 ```
 aws dynamodb list-tables --endpoint-url http://localhost:8000
 aws dynamodb describe-table --table-name Music  --endpoint-url http://localhost:8000
