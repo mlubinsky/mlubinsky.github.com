@@ -2,6 +2,10 @@ https://habr.com/ru/company/yandex_praktikum/blog/553900/ . Best python books
 
 https://blog.guilatrova.dev/handling-exceptions-in-python-like-a-pro/
 
+https://habr.com/ru/post/560072/ interesting features
+
+https://habr.com/ru/post/559560/ . hex arhitecture in python
+
 https://luminousmen.com/post/python-interview-questions-senior
 
 https://antonz.org/python-packaging/
