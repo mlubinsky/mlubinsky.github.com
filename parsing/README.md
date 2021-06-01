@@ -44,7 +44,10 @@ https://codingnest.com/modern-sat-solvers-fast-neat-underused-part-1-of-n/
 ## JIT
 <https://habr.com/ru/company/mailru/blog/513290/>
 
-Regular Expression:
+## Regular Expression:
+
+https://learnbyexample.github.io/gnu-bre-ere-cheatsheet/
+
 <https://blog.robertelder.org/regular-expression-visualizer/>
 
 ## Parsers
