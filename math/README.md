@@ -206,6 +206,8 @@ https://vk.com/physics_math  Books
 
 ## Fourier series
 
+https://en.wikipedia.org/wiki/Gibbs_phenomenon
+
 <https://jackschaedler.github.io/circles-sines-signals/index.html>
 
 https://www.youtube.com/watch?v=spUNpyF58BY
@@ -213,6 +215,11 @@ https://www.youtube.com/watch?v=spUNpyF58BY
 https://habr.com/ru/post/528734/
 
 <https://habr.com/post/434734/> . Fourier transf
+
+
+
+
+## others
 
 <https://news.ycombinator.com/item?id=18099484> Proof Without Words: Gregory’s Theorem
 
