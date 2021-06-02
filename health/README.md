@@ -32,6 +32,9 @@ https://www.getrxd.com/gcf-mb4r.html
 https://www.amazon.com/Joist-Mounted-Pull-Up-Bar/dp/B01NBZO3QY
 ------------
 
+https://www.youtube.com/watch?v=5T7O7q1PF2I  Что есть чтобы похудеть
+
+
 https://habr.com/ru/post/550260/ Психосоматика
 
 https://lenta.ru/news/2021/05/10/old/
