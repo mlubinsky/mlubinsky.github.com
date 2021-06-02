@@ -56,6 +56,7 @@ https://towardsdatascience.com/maximum-likelihood-vs-bayesian-estimation-dd2eb4d
 https://ggcarvalho.dev/posts/montecarlo/ .  Monte Carlo with GO
 
 https://habr.com/ru/company/otus/blog/555980/  stat paradox
+
 ### Fourie
 https://sidsite.com/posts/fourier-nets/
 
@@ -96,7 +97,7 @@ https://twitter.com/icymi_py  Python data science
 
 https://github.com/SimonBlanke/Hyperactive   collection of optimization algorithms that can be used for a variety of optimization problems.
 
-### Gradient- free algorithms
+### Gradient-free algorithms
  
  https://github.com/SimonBlanke/Gradient-Free-Optimizers
  
@@ -132,6 +133,11 @@ https://news.ycombinator.com/item?id=26374788
 https://mixtape.scunning.com/
 
 ### Gaussian process
+
+ 
+https://distill.pub/2019/visual-exploration-gaussian-processes/ .  Gaussian process
+
+http://www.infinitecuriosity.org/vizgp/
 
 https://towardsdatascience.com/implement-a-gaussian-process-from-scratch-2a074a470bce
 
