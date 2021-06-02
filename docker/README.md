@@ -1,6 +1,9 @@
 
 https://habr.com/ru/company/southbridge/blog/534334/.  Data /volumes inside Docker
 
+https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose
+
+
 https://www.youtube.com/watch?v=BZiwpsnLLYQ Python in Docker
 
 https://www.codingholygrail.com/build-docker-image-for-python-projects
