@@ -7,4 +7,15 @@ https://faultan.ru/osc/essence_of_fourier_transform/
 
 https://en.wikipedia.org/wiki/Discrete_Fourier_transform
 
+
+
+https://en.wikipedia.org/wiki/Gibbs_phenomenon
+
+https://jackschaedler.github.io/circles-sines-signals/index.html
+
+https://www.youtube.com/watch?v=spUNpyF58BY
+
+ 
+
+
 https://ai-pool.com/a/s/introduction-of-fast-fourier-transformation--fft
