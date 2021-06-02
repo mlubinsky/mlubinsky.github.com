@@ -6,3 +6,5 @@ https://habr.com/ru/post/528734/
 https://faultan.ru/osc/essence_of_fourier_transform/
 
 https://en.wikipedia.org/wiki/Discrete_Fourier_transform
+
+https://ai-pool.com/a/s/introduction-of-fast-fourier-transformation--fft
