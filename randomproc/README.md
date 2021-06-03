@@ -18,7 +18,7 @@ https://www.youtube.com/watch?v=YBR41RpLxeE&list=PLU2SDCh6kZwUS5H2tNP7xmqdpJrsnb
 
 http://synset.com/wiki/index.php/%D0%A1%D1%82%D0%BE%D1%85%D0%B0%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B8%D1%80
 
-https://e.lanbook.com/book/71719 Book: Лекции по гауссовским процессам. Лифшиц М.А.
+
 
 https://e.lanbook.com/book/71720 Случайные процессы — от теории к практике. Лифшиц М.А.
 
@@ -33,12 +33,8 @@ https://www.youtube.com/watch?v=-JuL2Mmrre8 Случайные матрицы: �
 
 https://www.youtube.com/watch?v=1udDbPXz27M (ru)
 
-https://distill.pub/2019/visual-exploration-gaussian-processes/ . Gaussian process
 
-http://www.infinitecuriosity.org/vizgp/
-
-https://towardsdatascience.com/implement-a-gaussian-process-from-scratch-2a074a470bce
-
+### MCMC
 https://sandipanweb.wordpress.com/2020/12/07/bayesian-machine-learning-mcmc-and-probabilistic-programming-with-python/
 
 
@@ -49,6 +45,14 @@ https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distribu
 
 
 ## Gauss processes
+
+https://e.lanbook.com/book/71719 Book: Лекции по гауссовским процессам. Лифшиц М.А.
+
+https://distill.pub/2019/visual-exploration-gaussian-processes/ . Gaussian process
+
+http://www.infinitecuriosity.org/vizgp/
+
+https://towardsdatascience.com/implement-a-gaussian-process-from-scratch-2a074a470bce
 
 https://www.youtube.com/results?search_query=%D0%93%D0%B0%D1%83%D1%81%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B5+%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D1%8B%D0%B5+%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B
 
