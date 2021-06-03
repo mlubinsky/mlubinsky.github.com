@@ -33,6 +33,20 @@ https://www.youtube.com/watch?v=-JuL2Mmrre8 Случайные матрицы: �
 
 https://www.youtube.com/watch?v=1udDbPXz27M (ru)
 
+https://distill.pub/2019/visual-exploration-gaussian-processes/ . Gaussian process
+
+http://www.infinitecuriosity.org/vizgp/
+
+https://towardsdatascience.com/implement-a-gaussian-process-from-scratch-2a074a470bce
+
+https://sandipanweb.wordpress.com/2020/12/07/bayesian-machine-learning-mcmc-and-probabilistic-programming-with-python/
+
+
+https://projecteuclid.org/euclid.ss/1177011137 Markov Chain Monte Carlo article
+
+https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distributions-526b11a24359
+
+
 
 ## Gauss processes
 
