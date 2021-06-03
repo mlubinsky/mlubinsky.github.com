@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
+
 https://github.com/MathInspector/MathInspector
 
 https://habr.com/ru/company/skillfactory/blog/542870/ Jupyter add-ins
