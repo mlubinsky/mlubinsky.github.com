@@ -23,9 +23,7 @@ https://christophm.github.io/interpretable-ml-book/
 
 https://habr.com/ru/post/556856/  Statistics with Python
 
-https://github.com/rushter/MLAlgorithms
 
-https://github.com/trekhleb/homemade-machine-learning/ 
 
 https://www.youtube.com/watch?v=pqNCD_5r0IU  Scikit-Learn Course
 
@@ -57,7 +55,7 @@ https://ggcarvalho.dev/posts/montecarlo/ .  Monte Carlo with GO
 
 https://habr.com/ru/company/otus/blog/555980/  stat paradox
 
-### Fourie
+### Fourier
 https://sidsite.com/posts/fourier-nets/
 
 https://news.ycombinator.com/item?id=26980169
@@ -132,25 +130,15 @@ https://news.ycombinator.com/item?id=26374788
 
 https://mixtape.scunning.com/
 
-### Gaussian process
-
- 
-https://distill.pub/2019/visual-exploration-gaussian-processes/ .  Gaussian process
-
-http://www.infinitecuriosity.org/vizgp/
-
-https://towardsdatascience.com/implement-a-gaussian-process-from-scratch-2a074a470bce
-
-https://sandipanweb.wordpress.com/2020/12/07/bayesian-machine-learning-mcmc-and-probabilistic-programming-with-python/
-
-https://projecteuclid.org/euclid.ss/1177011137   Markov Chain Monte Carlo article
-
-https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distributions-526b11a24359
 
 
 https://mlfromscratch.com/model-stacking-explained/#/
 
 ### Educational projects
+
+https://github.com/rushter/MLAlgorithms
+
+https://github.com/trekhleb/homemade-machine-learning/ 
 
 https://pypi.org/project/sealion/ 
 
