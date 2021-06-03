@@ -149,6 +149,8 @@ https://www.youtube.com/watch?v=EceVJJGAFFI
 
 ## QM
 
+https://ridiculousfish.com/wavefiz/
+
 https://blog.gwlab.page/solving-1-d-schrodinger-equation-in-python-dcb3518ce454
 
 http://lightcone.ru/
