@@ -74,6 +74,8 @@ Go has block-level scoping.
 
 ## Go and databases
 
+https://github.com/nakabonne/tstorage
+
 <https://notes.eatonphil.com/database-basics.html> implementing SQL DB from scratch
 <https://news.ycombinator.com/item?id=22850817> discussion
 
