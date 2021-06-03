@@ -19,3 +19,8 @@ https://www.youtube.com/watch?v=spUNpyF58BY
 
 
 https://ai-pool.com/a/s/introduction-of-fast-fourier-transformation--fft
+
+FFT in SciPy
+https://realpython.com/python-scipy-fft/
+
+
