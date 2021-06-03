@@ -7,4 +7,6 @@ https://www.youtube.com/results?search_query=%D0%93%D0%B0%D1%83%D1%81%D1%81%D0%B
 Гауссовские процессы на языке Python
 https://www.youtube.com/watch?v=DU_Lhl_j2v0
 
+https://www.youtube.com/watch?v=xBE8qdAAj3w Primer on Gaussian Processes for Regression Analysis
+
 ## PyMC3
