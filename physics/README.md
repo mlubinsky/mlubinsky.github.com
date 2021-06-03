@@ -11,6 +11,9 @@
 
 4. https://mipt.ru/students/organization/mezhpr/biblio/q-ivanov.php
 
+
+https://blogs.baylor.edu/open_text/purpose/particle-physics-books/
+
 ### links
 
 https://arxiv.org/pdf/2105.05399.pdf
@@ -30,6 +33,8 @@ https://forany.xyz/
 https://news.ycombinator.com/item?id=27207604 Maxwell daemon
 
 https://habr.com/ru/post/533870/ Waves
+
+http://polyphys.com/
 
 https://habr.com/ru/company/skillfactory/blog/549470/  Анимация волновой функции частицы Шрёдингера  с помощью Python / matplotlib
 
@@ -141,6 +146,8 @@ https://teach-in.ru/course/analytical-mechanics-kugushev
 https://www.youtube.com/watch?v=EceVJJGAFFI
 
 ## QM
+
+https://blog.gwlab.page/solving-1-d-schrodinger-equation-in-python-dcb3518ce454
 
 http://lightcone.ru/
 
