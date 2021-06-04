@@ -1,6 +1,8 @@
 
 ## Pull up bar
 
+https://www.youtube.com/watch?v=L2VTq4jLFpE 
+
 https://www.amazon.com/Ultimate-Body-Press-Outdoor-Green/dp/B08GSQQQZX  48 x 6 x 4 inches; 6 Pounds
 
 https://www.softoutdoor.com/products/ultimate-body-press-outdoor-pull-up-bar-green
