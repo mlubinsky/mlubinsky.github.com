@@ -40,6 +40,9 @@ https://math.mit.edu/ennui/   Elegant NN UI
 <https://news.ycombinator.com/item?id=23060656>
 
 
+RNN ans LSTM are dead:
+https://habr.com/ru/post/561082/
+
 
 <https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0> TensorFlow MNIST
 
