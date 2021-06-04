@@ -20,6 +20,8 @@
 
  ## JVM 
  
+ https://habr.com/ru/post/560984/ memory /cpu usage
+ 
  https://habr.com/ru/post/556268/ . Memory
  
  https://habr.com/ru/company/mailru/blog/559794/
