@@ -52,6 +52,8 @@ https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distribu
 
 ## Gauss processes
 
+https://www.youtube.com/watch?v=xBE8qdAAj3w
+
 https://e.lanbook.com/book/71719 Book: Лекции по гауссовским процессам. Лифшиц М.А.
 
 https://distill.pub/2019/visual-exploration-gaussian-processes/ . Gaussian process
