@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
 
+https://duckdb.org/2021/05/14/sql-on-pandas.html Pandas frame + DuckDB
+
 https://github.com/MathInspector/MathInspector
 
 https://habr.com/ru/company/skillfactory/blog/542870/ Jupyter add-ins
