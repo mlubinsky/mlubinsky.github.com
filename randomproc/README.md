@@ -2,6 +2,8 @@
 
 https://arxiv.org/pdf/1907.01060.pdf . (ru)
 
+http://math.csu.ru/new_files/students/lectures/teor_slych_proc/solovev_teor_slych_proc.pdf
+
 https://arxiv.org/pdf/1508.03461.pdf СТОХАСТИЧЕСКИЙ АНАЛИЗ В ЗАДАЧАХ (1)
 
 
