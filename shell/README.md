@@ -1,5 +1,7 @@
 https://habr.com/ru/company/gms/blog/553078/ . useful comman-line utils
 
+https://habr.com/ru/company/timeweb/blog/561214/ json utilities
+
 ### bash
 ```
 Использование && для объединения нескольких последовательных команд 
