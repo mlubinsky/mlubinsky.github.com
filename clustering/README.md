@@ -1,0 +1,33 @@
+### Clustering 
+https://habrahabr.ru/post/164417/
+https://www.youtube.com/watch?v=-_gIcc5_uHY
+
+https://habrahabr.ru/post/322034/ DBSCAN
+https://en.wikipedia.org/wiki/DBSCAN  DBSCAN
+https://towardsdatascience.com/a-gentle-introduction-to-hdbscan-and-density-based-clustering-5fd79329c1e8
+	
+https://mubaris.com/2017/10/01/kmeans-clustering-in-python/
+
+
+
+### Clustering
+
+X-means  http://docs.splunk.com/Documentation/MLApp/3.4.0/User/Algorithms#X-means
+
+```
+Алгоритм кластеризации X-means представляет собой расширенный алгоритм k-means, 
+который автоматически определяет количество кластеров на основе информационного байесовского критерия (BIC). 
+Этот алгоритм удобно использовать, когда нет предварительной информации о числе кластеров, 
+на которые эти данные могут быть разделены. 
+
+RobustScaler http://docs.splunk.com/Documentation/MLApp/3.4.0/User/Algorithms#RobustScaler
+
+Это алгоритм предварительной обработки данных. По применению схож с алгоритмом StandardScaler, 
+который преобразует данные так, что для каждого признака среднее будет равно 0, а дисперсия будет равна 1, в
+результате чего все признаки будут иметь один и тот же масштаб. 
+Однако это масштабирование не гарантирует получение каких-то конкретных минимальных и максимальных значений признаков. 
+RobustScaler аналогичен StandardScaler в том плане, что в результате его применения признаки будут иметь один и тот же масштаб. 
+Однако RobustScaler вместо среднего и дисперсии использует медиану и квартили. 
+Это позволяет RobustScaler игнорировать выбросы или ошибки измерений, которые могут стать проблемой для остальных методов 
+масштабирования.
+```
