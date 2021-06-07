@@ -13,8 +13,8 @@ https://towardsdatascience.com/a-gentle-introduction-to-hdbscan-and-density-base
 https://mubaris.com/2017/10/01/kmeans-clustering-in-python/
 
 
+https://martinfleischmann.net/clustergam-visualisation-of-cluster-analysis/
 
-### Clustering
 
 X-means  http://docs.splunk.com/Documentation/MLApp/3.4.0/User/Algorithms#X-means
 
