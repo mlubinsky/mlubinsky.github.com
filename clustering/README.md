@@ -1,9 +1,13 @@
 ### Clustering 
 https://habrahabr.ru/post/164417/
+
 https://www.youtube.com/watch?v=-_gIcc5_uHY
 
+
 https://habrahabr.ru/post/322034/ DBSCAN
+
 https://en.wikipedia.org/wiki/DBSCAN  DBSCAN
+
 https://towardsdatascience.com/a-gentle-introduction-to-hdbscan-and-density-based-clustering-5fd79329c1e8
 	
 https://mubaris.com/2017/10/01/kmeans-clustering-in-python/
