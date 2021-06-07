@@ -14,30 +14,7 @@ mlubinsky.github.com
 1
 7 3
 Code
-Issues
-1
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-mlubinsky.github.com/ml.html
-@mlubinsky
-mlubinsky Update ml.html
-Latest commit 97b8dab on Aug 12, 2020
- History
- 1 contributor
-784 lines (529 sloc)  35.5 KB
-    
-
-<head>
- <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-<pre>
+ 
 
         https://habr.com/ru/company/skillfactory/blog/510688/.  what is p-value?
         http://www.stochasticlifestyle.com/the-essential-tools-of-scientific-machine-learning-scientific-ml/
@@ -75,35 +52,36 @@ https://aws.amazon.com/training/learning-paths/machine-learning/
 	
 https://www.youtube.com/playlist?list=PLl8OlHZGYOQ7bkVbuRthEsaLr7bONzbXS . CORNELL CS4780	
 	
-	https://news.ycombinator.com/item?id=20570025 .  ML Books
+https://news.ycombinator.com/item?id=20570025 .  ML Books
+	
 https://github.com/r0f1/datascience	a list of links
 	
 https://deepmind.com/blog/unsupervised-learning/	
 	
-	https://www.octavian.ai/machine-learning-on-graphs-course
+https://www.octavian.ai/machine-learning-on-graphs-course
 	
 https://jinchuika.com/en/post/1-preprocessing-part-1/ .  Preprocessing
 	
 https://skymind.ai/wiki/
 	
 	https://github.com/clone95/Machine-Learning-Study-Path/blob/master/README.md
-<pre>
+```
 In math terms, an operation F is linear if scaling inputs scales the output, and adding inputs adds the outputs:
 
 F(ax)  = a  * F(x)  
 F(x + y)  = F(x) + F(y)
+```
 
-
-<h3>Linear Models</h3>
+### Linear Models
 https://habrahabr.ru/company/ods/blog/323890/ Linear models
 
 https://medium.freecodecamp.org/learn-how-to-improve-your-linear-models-8294bfa8a731
 
 http://www.jmlr.org/papers/volume18/17-468/17-468.pdf .  Automatic Differentiation
 
-<pre>
+ 
 
-Statistical tests:
+### Statistical tests:
 https://lindeloev.github.io/tests-as-linear/
 
 https://www.youtube.com/watch?v=enpPFqcIFj8&list=PLlb7e2G7aSpRb95_Wi7lZ-zA6fOjV3_l7 . 
@@ -111,8 +89,12 @@ https://www.youtube.com/watch?v=enpPFqcIFj8&list=PLlb7e2G7aSpRb95_Wi7lZ-zA6fOjV3
 
 
 https://distill.pub/2019/visual-exploration-gaussian-processes/ .  Gaussian process
-  
+ 
+### Linear regression  
+ 
 https://blog.finxter.com/python-linear-regression-1-liner/
+
+```
 from sklearn.linear_model import LinearRegression
 import numpy as np
 
@@ -129,7 +111,7 @@ print(model.coef_)
 print(model.intercept_)
 # 155.0
 
-</pre>
+```
 Linear regression can be applied to model non-linear relationship between input and response. 
 This can be done by replacing the input x with some nonlinear function φ(x). 
 Note that doing so preserves the linearity as a function of the parame- ters w, 
@@ -147,11 +129,11 @@ https://github.com/trekhleb/homemade-machine-learning
 
 https://jalammar.github.io/ visuaslization ML cocepts
 
-<b>
+ 
 http://blog.christianperone.com/2019/01/a-sane-introduction-to-maximum-likelihood-estimation-mle-and-maximum-a-posteriori-map/
-</b>
+ 
 
-<h3>Logistic regression</h3>
+### Logistic regression 
 https://towardsdatascience.com/logistic-regression-b0af09cdb8ad 
 https://habr.com/ru/post/485872/
 https://realpython.com/logistic-regression-python/
@@ -174,7 +156,7 @@ https://github.com/robertmartin8/udemyML .  code and notes for Kirill Eremenko's
 
 https://habr.com/ru/company/singularis/blog/440026/ .  Real Kaggle project
 
-<h2>Books</h2>
+### Books 
 http://themlbook.com .  The 100 pages ML book (Andrij Burkov)
 https://github.com/jakevdp/PythonDataScienceHandbook
 
@@ -204,7 +186,7 @@ https://universalflowuniversity.com/ulibrary/?drawer1=Computer%20Programming*Neu
 https://github.com/joelgrus/data-science-from-scratch - Code from book "Data science from scratch"
 https://news.ycombinator.com/item?id=18201986
 
-<h3> Metahevristics </h3>
+#### Metahevristics  
 http://www2.cscamm.umd.edu/publications/BookChapter_CS-09-13.pdf
 https://cs.gmu.edu/~sean/book/metaheuristics/Essentials.pdf
 https://medium.com/huggingface/from-zero-to-research-an-introduction-to-meta-learning-8e16e677f78a   MetaLearning
@@ -221,11 +203,11 @@ https://github.com/danielhanchen/hyperlearn/blob/master/Modern%20Big%20Data%20Al
 
 https://habr.com/company/tssolution/blog/423783/   Splunk
 
-SageMaker:
+### SageMaker 
 
 https://towardsdatascience.com/building-fully-custom-machine-learning-models-on-aws-sagemaker-a-practical-guide-c30df3895ef7
 
-<h3> Deployment </h3>
+### Deployment  
 https://towardsdatascience.com/create-a-complete-machine-learning-web-application-using-react-and-flask-859340bddb33
 https://www.inovex.de/blog/machine-learning-model-management/
 https://towardsdatascience.com/deploying-a-machine-learning-model-as-a-rest-api-4a03b865c166 . Flask Rest API for model
@@ -249,7 +231,7 @@ https://www.sanyamkapoor.com/machine-learning/autograd-magic/ .  Automatic Diffe
 https://aws.amazon.com/training/learning-paths/machine-learning/ 
 http://www.fast.ai/2018/09/26/ml-launch/ . Online Course
 
-<b> Boosting and bagging </b>
+### Boosting and bagging  
 
 https://habr.com/ru/company/piter/blog/488362/
 
@@ -258,6 +240,7 @@ https://medium.com/mlreview/gradient-boosting-from-scratch-1e317ae4587d
 https://habr.com/ru/company/piter/blog/445780/
 https://quantdare.com/what-is-the-difference-between-bagging-and-boosting/
 
+```
 Ансамблевый метод — это метод, который совмещает множество слабых учеников, 
 которые основаны на одном и том же обучающемся алгоритме, с целью создания (более сильного) ученика, 
 чья результативность лучше, 
@@ -270,8 +253,8 @@ https://quantdare.com/what-is-the-difference-between-bagging-and-boosting/
 - Слаборезультативные классификаторы отклоняются.
 - На каждой итерации наблюдения взвешиваются по-разному.
 
-
-<h3>XGBoost</h3>
+```
+## XGBoost
 https://habr.com/ru/company/mailru/blog/438560/
 https://habr.com/ru/company/mailru/blog/438562/
 
@@ -297,26 +280,7 @@ ML BOOK with code:
 
 
 
-X-means  http://docs.splunk.com/Documentation/MLApp/3.4.0/User/Algorithms#X-means
-
-Алгоритм кластеризации X-means представляет собой расширенный алгоритм k-means, 
-который автоматически определяет количество кластеров на основе информационного байесовского критерия (BIC). 
-Этот алгоритм удобно использовать, когда нет предварительной информации о числе кластеров, 
-на которые эти данные могут быть разделены. 
-
-RobustScaler http://docs.splunk.com/Documentation/MLApp/3.4.0/User/Algorithms#RobustScaler
-
-Это алгоритм предварительной обработки данных. По применению схож с алгоритмом StandardScaler, 
-который преобразует данные так, что для каждого признака среднее будет равно 0, а дисперсия будет равна 1, в
-результате чего все признаки будут иметь один и тот же масштаб. 
-Однако это масштабирование не гарантирует получение каких-то конкретных минимальных и максимальных значений признаков. 
-RobustScaler аналогичен StandardScaler в том плане, что в результате его применения признаки будут иметь один и тот же масштаб. 
-Однако RobustScaler вместо среднего и дисперсии использует медиану и квартили. 
-Это позволяет RobustScaler игнорировать выбросы или ошибки измерений, которые могут стать проблемой для остальных методов 
-масштабирования.
-
-
-<h2> Links</h2>
+### Links 
 https://sandipanweb.wordpress.com/
 https://habr.com/company/intel/blog/417809/ . NN architectures for image recognition
 
@@ -370,7 +334,7 @@ https://spandan-madan.github.io/DeepLearningProject/docs/Deep_Learning_Project-P
 	
 https://towardsdatascience.com/visualizing-data-with-pair-plots-in-python-f228cf529166  Pair plots 
 
-	<h3>Markov Chain Monte Carlo </h3>
+### Markov Chain Monte Carlo  
 	
 https://towardsdatascience.com/markov-chain-monte-carlo-in-python-44f7e609be98
 https://habr.com/ru/company/piter/blog/491268/	
@@ -402,7 +366,7 @@ https://eli.thegreenplace.net/2018/minimal-character-based-lstm-implementation/
 http://www.wildml.com/
  
 
-<h2>PyTorch</h2>
+### PyTorch 
 
 https://habr.com/company/otus/blog/358096/
 https://habr.com/company/piter/blog/354912/  
@@ -427,14 +391,15 @@ https://towardsdatascience.com/building-prediction-apis-in-python-part-4-decoupl
 
 
 
-<h2>Statistics</h2>
+### Statistics 
+
 https://en.wikipedia.org/wiki/Correlation_and_dependence	
 http://pages.cs.wisc.edu/~tdw/files/cookbook-en.pdf
 https://etav.github.io/articles/ida_eda_method.html
 http://statistics.zone/
 https://h4labs.wordpress.com/2017/12/30/learning-probability-and-statistics/
 
-	https://news.ycombinator.com/item?id=18462520 . estimate probability of yet unhappen
+https://news.ycombinator.com/item?id=18462520 . estimate probability of yet unhappen
 	
 Calculating avg and stdev on stream
 --------------------------------------
@@ -470,7 +435,7 @@ https://www.analyticsvidhya.com/blog/2017/02/basic-probability-data-science-with
 https://en.wikipedia.org/wiki/Simpson%27s_paradox	
 	
 	
-	<h3>Bayes</h3>
+### Bayes 
 https://greenteapress.com/wp/think-bayes/
 
 https://habr.com/ru/post/510526/ bayes in python
@@ -502,13 +467,13 @@ https://www.hardikp.com/
 https://unsupervisedpandas.com/
 https://www.zabaras.com/statisticalcomputing
 
-	<h2>Signal  Processing</h2>
+### Signal  Processing
 
 https://terpconnect.umd.edu/~toh/spectrum/
 https://habr.com/post/358868/  Kalman filter
 
 
-	<h2>Machine Learning</h2>
+###  Machine Learning 
 
 <a href=https://github.com/mlubinsky/mlubinsky.github.com/tree/master/ml>Machine Learning code snippets</a>
 
@@ -595,15 +560,7 @@ https://news.ycombinator.com/item?id=16465105
 
 
 
-<h3>Clustering</h3>
-https://habrahabr.ru/post/164417/
-https://www.youtube.com/watch?v=-_gIcc5_uHY
 
-https://habrahabr.ru/post/322034/ DBSCAN
-https://en.wikipedia.org/wiki/DBSCAN  DBSCAN
-https://towardsdatascience.com/a-gentle-introduction-to-hdbscan-and-density-based-clustering-5fd79329c1e8
-	
-https://mubaris.com/2017/10/01/kmeans-clustering-in-python/
 
 
 
@@ -694,6 +651,7 @@ https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization-Ho
 L2: Euclide
 L1: producies many coefficients with zero values or very small values with few large coefficients
 
+### Bagging 
 Bagging and other resampling techniques can be used to reduce the variance in model predictions.
 In bagging (Bootstrap Aggregating), numerous replicates of the original data set are created using random selection with replacement.
 Each derivative data set is then used to construct a new model and the models are gathered together into an ensemble.
@@ -702,7 +660,9 @@ Bagging attempts to reduce the chance overfitting complex models.
 
 It trains a large number of "strong" learners in parallel.
 A strong learner is a model that's relatively unconstrained.
-Bagging then combines all the strong learners together in order to "smooth out" their predictions.
+Bagging then combines all the strong learners together in order to "smooth out" their predictions.\
+
+### Boosting
 Boosting attempts to improve the predictive flexibility of simple models.
 
 It trains a large number of "weak" learners in sequence.
@@ -711,7 +671,8 @@ Each one in the sequence focuses on learning from the mistakes of the one before
 Boosting then combines all the weak learners into a single strong learner.
 While bagging and boosting are both ensemble methods, they approach the problem from opposite directions.
 
-Bagging uses complex base models and tries to "smooth out" their predictions, while boosting uses simple base models and tries to "boost" their aggregate complexity.
+Bagging uses complex base models and tries to "smooth out" their predictions, 
+while boosting uses simple base models and tries to "boost" their aggregate complexity.
 
 https://www.analyticsvidhya.com/blog/2017/02/40-questions-to-ask-a-data-scientist-on-ensemble-modeling-techniques-skilltest-solution/
 https://towardsdatascience.com/markov-chain-monte-carlo-in-python-44f7e609be98
@@ -727,7 +688,7 @@ In decision tree algorithm calculating the nodes and forming the rules will happ
 Information Gain calculates the expected reduction in entropy due to sorting on the attribute.
 Gini Index is a metric to measure how often a randomly chosen element would be incorrectly identified. It means an attribute with lower gini index should be preferred.
 
-<h3>Random Forest</h3>
+### Random Forest 
 
 	 https://habr.com/ru/company/ruvds/blog/488342/ 
          
