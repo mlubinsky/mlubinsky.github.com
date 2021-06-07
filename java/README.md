@@ -6,6 +6,16 @@
  
  <https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-14/>
  
+ 
+### Reverse string without using reverse()
+``` 
+for(int i=s.length();i>0;--i)                //i is the length of the string  
+{  
+System.out.print(s.charAt(i-1));            //printing the character at index i-1  
+} 
+```
+ 
+ 
  ### Maven
 ``` 
  Source code goes in src/main/java. 
