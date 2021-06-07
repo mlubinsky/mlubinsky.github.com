@@ -6,6 +6,11 @@
  
  <https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-14/>
  
+ https://habr.com/ru/post/551492/ . what is new in Java
+ 
+###
+
+List<Integer> numbers = new ArrayList<>();
  
 ### Reverse string without using reverse()
 ``` 
