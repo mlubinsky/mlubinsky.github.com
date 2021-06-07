@@ -129,6 +129,8 @@ pp is a hyperparameter.
 
 Cyclic learning rates or stochastic gradient descent with warm restarts, 
 
+https://habr.com/ru/company/otus/blog/561080/ Gradient variations
+
 https://towardsdatascience.com/https-medium-com-reina-wang-tw-stochastic-gradient-descent-with-restarts-5f511975163
 
 <https://www.coursera.org/learn/supervised-learning/home/welcome>  Обучение на размеченных данных
