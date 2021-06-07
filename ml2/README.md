@@ -1,22 +1,6 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@mlubinsky 
-mlubinsky
-/
-mlubinsky.github.com
-1
-7 3
-Code
  
 
-        https://habr.com/ru/company/skillfactory/blog/510688/.  what is p-value?
+  https://habr.com/ru/company/skillfactory/blog/510688/.  what is p-value?
         http://www.stochasticlifestyle.com/the-essential-tools-of-scientific-machine-learning-scientific-ml/
 
         https://habr.com/ru/post/475552/ Блиц-проверка алгоритмов машинного обучения: скорми свой набор данных библиотеке scikit-learn 
