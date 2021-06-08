@@ -1,5 +1,8 @@
+### Resistance band
 
-## Pull up bar
+https://www.amazon.com/gp/product/B08G4JWNS7
+
+### Pull up bar
 
 https://www.youtube.com/watch?v=L2VTq4jLFpE 
 
