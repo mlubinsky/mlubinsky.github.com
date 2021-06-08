@@ -8,9 +8,14 @@
  
  https://habr.com/ru/post/551492/ . what is new in Java
  
-###
-
+### looping over string chars
+```
 List<Integer> numbers = new ArrayList<>();
+ 
+for (char c : myString.toCharArray()) {
+
+}
+ ```
  
 ### Reverse string without using reverse()
 ``` 
