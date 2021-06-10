@@ -8,6 +8,8 @@ https://www.youtube.com/watch?v=ip4toWrt6h0
 
 https://www.youtube.com/watch?v=Mmcsjbhrjyo
 
+https://www.youtube.com/watch?v=-Mbr55h3BeQ
+
 ### Pull up bar
 
 https://www.youtube.com/watch?v=L2VTq4jLFpE 
