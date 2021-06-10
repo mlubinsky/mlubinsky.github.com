@@ -4,6 +4,10 @@ https://www.amazon.com/gp/product/B08G4JWNS7
 
 https://www.youtube.com/watch?v=ip4toWrt6h0
 
+### Push-ups
+
+https://www.youtube.com/watch?v=Mmcsjbhrjyo
+
 ### Pull up bar
 
 https://www.youtube.com/watch?v=L2VTq4jLFpE 
