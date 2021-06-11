@@ -1,6 +1,8 @@
 
 https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-2dd74df12b5e
 
+https://xcorr.net/2021/06/02/dynamic-scientific-visualizations-in-the-browser-for-python-users/
+
 https://habr.com/ru/company/otus/blog/558478/
 
 https://python-graph-gallery.com/ Pandash, Seaborn, Matplotlib examples!
