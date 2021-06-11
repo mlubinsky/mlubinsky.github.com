@@ -1,5 +1,7 @@
 https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years
 
+https://httptoolkit.tech/blog/http-encodings/
+
 https://habr.com/ru/company/mailru/blog/557386/. debugging
 
 https://addyosmani.com/blog/import-on-interaction/ 
