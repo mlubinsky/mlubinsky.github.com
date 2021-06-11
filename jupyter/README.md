@@ -1,5 +1,10 @@
 https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
 
+https://stackoverflow.com/questions/36921951/truth-value-of-a-series-is-ambiguous-use-a-empty-a-bool-a-item-a-any-o
+
+https://stackoverflow.com/questions/19124601/pretty-print-an-entire-pandas-series-dataframe
+
+
 https://duckdb.org/2021/05/14/sql-on-pandas.html Pandas frame + DuckDB
 
 https://github.com/MathInspector/MathInspector
