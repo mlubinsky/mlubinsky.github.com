@@ -21,6 +21,8 @@ https://blogs.baylor.edu/open_text/purpose/particle-physics-books/
 
 https://arxiv.org/pdf/2105.05399.pdf A Curious Use of Extra Dimension in Classical Mechanics
 
+https://3quarksdaily.com/3quarksdaily/2020/01/the-fermi-pasta-ulam-tsingou-problem-a-foray-into-the-beautifully-simple-and-the-simply-beautiful.html
+
 https://physicsworld.com/a/double-slits-with-single-atoms/
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6783340/  Cell modelling
