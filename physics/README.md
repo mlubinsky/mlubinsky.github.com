@@ -1,7 +1,10 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 
-https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ
+https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ Interesting blog
+
+
+https://www.youtube.com/watch?v=jmX4FOUEfgU SkyPy
 
 ### Chaos
 
