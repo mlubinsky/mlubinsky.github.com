@@ -1,3 +1,8 @@
+### Executing remote command via SSH
+
+https://news.ycombinator.com/item?id=27483077
+
+
 ### SSL TLS explained
 
 https://news.ycombinator.com/item?id=23096166
