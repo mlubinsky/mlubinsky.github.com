@@ -93,6 +93,11 @@ https://habr.com/ru/company/otus/blog/526400/ MySQL performance schema
 https://news.ycombinator.com/item?id=24698660
 
 
+###
+
+https://spin.atomicobject.com/2021/02/04/redis-postgresql/
+
+https://news.ycombinator.com/item?id=27482243
 
 ### Aggregator
 https://planet.postgresql.org/
