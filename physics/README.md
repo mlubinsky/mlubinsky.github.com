@@ -3,6 +3,10 @@
 
 https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ
 
+### Chaos
+
+http://thechaostician.com/what-is-chaos-part-v-continuous-time/
+
 ### Books
 
 http://www.damtp.cam.ac.uk/user/tong/teaching.html
