@@ -1,3 +1,5 @@
+https://habr.com/ru/company/skillfactory/blog/561044/ . useful libs
+
 ### AutoML
 https://habr.com/ru/post/559130/
 
@@ -18,10 +20,10 @@ https://semiengineering.com/developers-turn-to-analog-for-neural-nets/
 ### Мир статистических гипотез
 https://habr.com/ru/post/558836/ 
 
+https://habr.com/ru/post/556856/  Statistics with Python
+
 ### SHAP - explainable AI
 https://christophm.github.io/interpretable-ml-book/
-
-https://habr.com/ru/post/556856/  Statistics with Python
 
 
 
