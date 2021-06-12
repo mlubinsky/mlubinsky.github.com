@@ -3,6 +3,8 @@ https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-
 
 https://xcorr.net/2021/06/02/dynamic-scientific-visualizations-in-the-browser-for-python-users/
 
+https://github.com/rougier/scientific-visualization-book
+
 https://pypi.org/project/sweetviz/
 
 https://habr.com/ru/company/otus/blog/558478/
