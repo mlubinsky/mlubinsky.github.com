@@ -1,6 +1,8 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 
+https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ
+
 ### Books
 
 http://www.damtp.cam.ac.uk/user/tong/teaching.html
