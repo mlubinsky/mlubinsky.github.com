@@ -1,4 +1,4 @@
-### spetchess
+### stepchess
 https://stepchess.ru/debut
 
 https://stepchess.ru/course/60/task/1043
@@ -52,6 +52,10 @@ https://chessopenings.com/ru/
 
 https://lichess.org/study
 
+
+### Wicilian defence
+
+https://lichess.org/study/jsSks17H
 
 ### Programming chess AI
 
