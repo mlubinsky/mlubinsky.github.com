@@ -53,7 +53,7 @@ https://chessopenings.com/ru/
 https://lichess.org/study
 
 
-### Wicilian defence
+### Sicilian defence
 
 https://lichess.org/study/jsSks17H
 
