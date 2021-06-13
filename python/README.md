@@ -4,6 +4,10 @@ https://blog.guilatrova.dev/handling-exceptions-in-python-like-a-pro/
 
 https://habr.com/ru/post/560072/ interesting features
 
+
+Working with env variables
+https://www.codementor.io/@doppler/using-environment-variables-in-python-for-app-configuration-and-secrets-1irvc9qbat
+
 https://habr.com/ru/post/559560/ . hex arhitecture in python
 
 https://luminousmen.com/post/python-interview-questions-senior
