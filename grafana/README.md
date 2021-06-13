@@ -21,6 +21,9 @@ Connecting to Prometeus: https://prometheus.io/docs/visualization/grafana/
 
 https://blog.pvincent.io/tags/prometheus/
 
+
+https://habr.com/ru/company/timeweb/blog/562378/  PromQL
+
 ### Metric 
 Metric is an identifier linking data points together over time. 
 For example, the metric `http_requests_total` denotes all the data points collected by Prometheus 
