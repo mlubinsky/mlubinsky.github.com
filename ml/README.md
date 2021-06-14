@@ -138,6 +138,8 @@ https://mlfromscratch.com/model-stacking-explained/#/
 
 ### Educational projects
 
+https://habr.com/ru/post/562640/
+
 https://github.com/rushter/MLAlgorithms
 
 https://github.com/trekhleb/homemade-machine-learning/ 
