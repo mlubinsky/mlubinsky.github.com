@@ -398,6 +398,10 @@ Let's try to join df2 to df1:
 ```
 df_join = df1.join(df2, rsuffix='_right')
 ```
+
+#### Indexing time series in Pandas
+https://www.wrighters.io/indexing-time-series-data-in-pandas/  
+
 #### Filling the gaps - and resample:
 
 ```
