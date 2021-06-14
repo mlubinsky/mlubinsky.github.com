@@ -1,3 +1,5 @@
+https://exploringjs.com/deep-js/
+
 https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years
 
 https://httptoolkit.tech/blog/http-encodings/
