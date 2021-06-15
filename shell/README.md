@@ -6,6 +6,8 @@ https://github.com/ibraheemdev/modern-unix
 
 https://darrenburns.net/posts/tools/
 
+https://darrenburns.net/posts/command-line-tools-iv
+
 
 https://habr.com/ru/company/timeweb/blog/561214/ json utilities
 
