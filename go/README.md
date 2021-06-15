@@ -1,5 +1,6 @@
 https://reliability.substack.com/p/go-for-internal-services
 
+https://habr.com/ru/company/ispring/blog/560032/
 
 https://tdom.dev/go-in-production. Go in production: web frameworks and sql
 
