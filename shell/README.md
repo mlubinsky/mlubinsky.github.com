@@ -1,5 +1,12 @@
 https://habr.com/ru/company/gms/blog/553078/ . useful comman-line utils
 
+https://github.com/Genivia/ugrep
+
+https://github.com/ibraheemdev/modern-unix
+
+https://darrenburns.net/posts/tools/
+
+
 https://habr.com/ru/company/timeweb/blog/561214/ json utilities
 
 ### bash
