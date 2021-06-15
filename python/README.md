@@ -1,5 +1,7 @@
 https://habr.com/ru/company/yandex_praktikum/blog/553900/ . Best python books
 
+https://github.com/fredrik-corneliusson/click-web
+
 https://blog.guilatrova.dev/handling-exceptions-in-python-like-a-pro/
 
 https://habr.com/ru/post/560072/ interesting features
