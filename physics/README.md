@@ -4,9 +4,11 @@
 https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ Interesting blog
 
 
-https://www.youtube.com/watch?v=jmX4FOUEfgU SkyPy
+https://www.youtube.com/watch?v=jmX4FOUEfgU SciPy
 
-https://www.youtube.com/watch?v=Teb28OFMVFc SkyPy
+https://www.youtube.com/watch?v=Teb28OFMVFc SciPy
+
+https://www.youtube.com/watch?v=cXHvC_FGx24 SciPy Optimization
 
 https://www.youtube.com/watch?v=-SdIZHPuW9o SymPy
 
