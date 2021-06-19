@@ -6,6 +6,9 @@ https://news.ycombinator.com/item?id=27458974
 
 https://www.amazon.com/gp/product/B08G4JWNS7
 
+
+https://www.youtube.com/watch?v=jFmCrA6fo78
+
 https://www.youtube.com/watch?v=ip4toWrt6h0
 
 ### Push-ups
