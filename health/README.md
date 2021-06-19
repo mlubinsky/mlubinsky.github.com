@@ -10,6 +10,8 @@ https://www.youtube.com/watch?v=byqmNGPafYo
 
 https://www.amazon.com/gp/product/B08G4JWNS7
 
+https://www.amazon.com/dp/B01M6D29B8/
+
 https://www.amazon.com/Powerlifting-Resistance-Exercise-Shoulders-Strength/dp/B08B8VHB1Z
 
 
