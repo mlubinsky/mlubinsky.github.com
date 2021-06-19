@@ -9,7 +9,7 @@ https://www.amazon.com/gp/product/B08G4JWNS7
 
 https://www.youtube.com/watch?v=jFmCrA6fo78 PULL-UPS FOR BEGINNERS | 5 Easy Tips to Perform YOUR FIRST PULLUP!
 
-https://www.youtube.com/watch?v=ip4toWrt6h0
+https://www.youtube.com/watch?v=ip4toWrt6h0 ПОДТЯГИВАНИЯ с НУЛЯ за 21 ДЕНЬ!
 
 ### Push-ups
 
