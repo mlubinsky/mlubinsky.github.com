@@ -2,6 +2,10 @@
 
 https://news.ycombinator.com/item?id=27458974
 
+### Здоровая спина
+
+https://www.youtube.com/watch?v=byqmNGPafYo
+
 ### Resistance band
 
 https://www.amazon.com/gp/product/B08G4JWNS7
