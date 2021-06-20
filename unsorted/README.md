@@ -10,7 +10,7 @@ https://news.ycombinator.com/item?id=27302195
 
 https://news.ycombinator.com/item?id=26911629
 
-https://ytdl-org.github.io/youtube-dl/  downloader
+https://ytdl-org.github.io/youtube-dl/  YouTube downloader
 
 
 ### Google chrome helper fix: 
@@ -25,6 +25,9 @@ chrome://settings/content/unsandboxedPlugins
 
 dig @resolver4.opendns.com myip.opendns.com +short
 
+### E-books
+
+https://deep-econom.livejournal.com/840005.html
 
 
 1)) Бозон Хиггса
