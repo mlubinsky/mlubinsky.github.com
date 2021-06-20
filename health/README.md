@@ -23,6 +23,8 @@ https://www.youtube.com/watch?v=L6moaHVfg2Y
 
 https://www.youtube.com/watch?v=fO3dKSQayfg
 
+https://www.youtube.com/watch?v=XknPlUPEuDk
+
 https://www.youtube.com/watch?v=jFmCrA6fo78 PULL-UPS FOR BEGINNERS | 5 Easy Tips to Perform YOUR FIRST PULLUP!
 
 https://www.youtube.com/watch?v=ip4toWrt6h0 ПОДТЯГИВАНИЯ с НУЛЯ за 21 ДЕНЬ!
