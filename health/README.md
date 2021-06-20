@@ -8,6 +8,8 @@ https://www.youtube.com/watch?v=byqmNGPafYo
 
 ### Resistance band
 
+https://www.youtube.com/watch?v=-nH9O9IWz24
+
 https://www.amazon.com/gp/product/B08G4JWNS7
 
 https://www.amazon.com/dp/B01M6D29B8/
