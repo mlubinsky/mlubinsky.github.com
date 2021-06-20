@@ -10,9 +10,12 @@ https://www.youtube.com/watch?v=byqmNGPafYo
 
 https://www.youtube.com/watch?v=-nH9O9IWz24
 
-https://www.amazon.com/gp/product/B08G4JWNS7
+https://www.amazon.com/gp/product/B08G4JWNS7  Bob and Brad Pull Up Assist Bands Resistance Band Set, Exercise Workout Bands Stretch Resistance Bands with 2 Foam Handles,
 
 https://www.amazon.com/dp/B01M6D29B8/
+
+
+https://www.amazon.com/INTENT-SPORTS-Pull-Assist-Band/dp/B01M6CYSNK/  Intent Sports Pull Up Assist Band MAX 200 
 
 https://www.amazon.com/Powerlifting-Resistance-Exercise-Shoulders-Strength/dp/B08B8VHB1Z
 
