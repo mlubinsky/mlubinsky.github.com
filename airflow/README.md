@@ -2,6 +2,8 @@
 
 https://www.manning.com/books/data-pipelines-with-apache-airflow
 
+### Dynamically generated DAGs
+https://www.astronomer.io/guides/dynamically-generating-dags
 
 ### Udemy
 
