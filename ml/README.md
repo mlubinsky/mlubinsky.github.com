@@ -12,7 +12,11 @@ https://habr.com/ru/company/otus/blog/559666/  Kaggle tricks
 
 ### Transformers
 
+https://habr.com/ru/company/skillfactory/blog/562928/
+
 https://habr.com/ru/post/558488/ 
+
+https://habr.com/ru/post/563778/
 
 ## Hardware
 
