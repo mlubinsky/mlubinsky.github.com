@@ -8,6 +8,8 @@ https://www.youtube.com/watch?v=byqmNGPafYo
 
 ### Resistance band
 
+https://www.youtube.com/watch?v=4D9RTVIanZ4
+
 https://www.youtube.com/watch?v=-nH9O9IWz24
 
 https://www.amazon.com/gp/product/B08G4JWNS7  Bob and Brad Pull Up Assist Bands Resistance Band Set, Exercise Workout Bands Stretch Resistance Bands with 2 Foam Handles,
