@@ -12,6 +12,8 @@ https://www.youtube.com/watch?v=cXHvC_FGx24 SciPy Optimization
 
 https://www.youtube.com/watch?v=-SdIZHPuW9o SymPy
 
+https://www.youtube.com/watch?v=kVjg3jbM3Pw Shrodinger eq
+ 
 ### Chaos
 
 http://thechaostician.com/what-is-chaos-part-v-continuous-time/
