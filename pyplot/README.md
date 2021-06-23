@@ -7,9 +7,11 @@ https://github.com/rougier/scientific-visualization-book
 
 https://pypi.org/project/sweetviz/
 
+https://geekyhumans.com/draw-various-types-of-charts-and-graphs-using-python/ MAtplotlib and Plotly
+
 https://habr.com/ru/company/otus/blog/558478/
 
-https://python-graph-gallery.com/ Pandash, Seaborn, Matplotlib examples!
+https://python-graph-gallery.com/ Pandas, Seaborn, Matplotlib examples!
 
 https://habr.com/ru/post/557424/
 
