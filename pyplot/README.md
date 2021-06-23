@@ -85,6 +85,8 @@ ax.set(ylabel="$p(x)$")
 ```
 ## Pandas plotting 
 
+https://opendatascience.com/how-to-pivot-and-plot-data-with-pandas/
+
 https://cmdlinetips.com/2020/01/tips-to-make-common-plots-with-pandas/
 
 https://jbencook.com/pandas-melt/
@@ -115,6 +117,8 @@ plt.show()
 ```
 
 ## Pivot, pivot_table() and transpose()
+
+https://opendatascience.com/how-to-pivot-and-plot-data-with-pandas/
 
 https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.pivot.html
 
