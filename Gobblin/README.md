@@ -17,6 +17,10 @@ rsync scribe-web-1.0-SNAPSHOT.tar mlubinsky@scribe-dev-1002.bdp.roku.com:/home/m
 
 <https://confluence.portal.roku.com:8443/display/DEA/Adding+Scribe+Endpoint+and+Gobblin+Kafka+Consumer>
 
+https://confluence.portal.roku.com:8443/display/~tstudenicka/gobblin+info
+
+https://confluence.portal.roku.com:8443/pages/viewpage.action?pageId=29209290
+
    
 https://console.aws.amazon.com/sqs/v2/home?region=us-east-1#/queues/https%3A%2F%2Fsqs.us-east-1.amazonaws.com%2F911173767732%2Famoeba-bdp-prod  
 
