@@ -39,6 +39,11 @@ http://tylerneylon.com/a/lsh1/
 
 https://www.youtube.com/watch?v=kKRvEJrvvso
 
+https://news.ycombinator.com/item?id=27614381
+
+
+
+
 https://habr.com/ru/company/skillfactory/blog/538536/ interview
 
 https://medium.com/swlh/my-preparation-journey-for-google-interviews-f41e2dc3cdf9 interview
