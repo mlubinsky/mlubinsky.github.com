@@ -32,7 +32,12 @@ https://habr.com/ru/post/550088/ interview
 
 http://algorithmsbook.com/ Algorithms for Decision Making
 
-http://tylerneylon.com/a/lsh1/ local sensitive hashing LSH
+
+### local sensitive hashing - LSH
+
+http://tylerneylon.com/a/lsh1/ 
+
+https://www.youtube.com/watch?v=kKRvEJrvvso
 
 https://habr.com/ru/company/skillfactory/blog/538536/ interview
 
