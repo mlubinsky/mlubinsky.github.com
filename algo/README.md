@@ -32,6 +32,8 @@ https://habr.com/ru/post/550088/ interview
 
 http://algorithmsbook.com/ Algorithms for Decision Making
 
+http://tylerneylon.com/a/lsh1/ local sensitive hashing LSH
+
 https://habr.com/ru/company/skillfactory/blog/538536/ interview
 
 https://medium.com/swlh/my-preparation-journey-for-google-interviews-f41e2dc3cdf9 interview
