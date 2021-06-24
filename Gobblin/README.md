@@ -305,6 +305,59 @@ data.publisher.fs.uri=${env:S3_BUCKET_URI}
 data.publisher.final.dir=/roku/facts
 ```
 
+### Gobblin anoeba
+
+rg amoeba
+
+```
+src/test/java/com/dea/roku/data/consumers/device/converter/AvroOrcDeserializerTest.java
+57:            new File("/tmp/amoeba.avro"), datumReader);
+
+src/test/java/com/dea/roku/data/consumers/device/converter/AvroSerializerTest.java
+23:    rec.put("log_id", "cserv.amoeba");
+40:    File file = new File("/tmp/amoeba.avro");
+
+src/test/java/com/dea/roku/data/consumers/fork/device/SuccessDeviceSensitiveDataAwareForkOperatorTest.java
+60:            {"1,1,1,1,1,1,cserv.amoeba", 11},
+
+src/main/resources/avro/schemas/VoiceEvent.avsc
+746:      "name": "amoeba_id",
+752:        "amoebaId"
+
+src/main/resources/avro/schemas/DeviceLogAmoeba.avsc
+4:  "name": "fact_device_log_amoeba_event",
+```
+src/test/resources/job/device/device.job
+```
+12:fact_device_log_amoeba_events=cserv.amoeba
+25:fact_device_log_amoeba_events_rec_postion=6
+220:writer.file.path.11=fact_device_log_amoeba_events
+```
+
+external/jobconfig/device_logs_v1/device_logs_v1.job
+```
+12:fact_device_log_amoeba_events=cserv.amoeba
+25:fact_device_log_amoeba_events_rec_postion=6
+185:writer.file.path.11=fact_device_log_amoeba_events
+```
+
+external/jobconfig/device_logs_v2/device_logs_v2.job
+```
+12:fact_device_log_amoeba_events=cserv.amoeba
+25:fact_device_log_amoeba_events_rec_postion=6
+214:writer.file.path.11=fact_device_log_amoeba_events_orc
+```
+
+external/jobconfig/abf/abf.job
+31:writer.file.path=fact_amoeba_allocation_events
+
+external/jobconfig/device_logs_v3/device_logs_v3.job
+```
+12:fact_device_log_amoeba_events=cserv.amoeba
+25:fact_device_log_amoeba_events_rec_postion=6
+221:writer.file.path.11=fact_device_log_amoeba_events_orc
+```
+
 
 ##  GoblinConsumers   
 
