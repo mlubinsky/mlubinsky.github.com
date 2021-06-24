@@ -3,6 +3,8 @@ https://www.wrighters.io/indexing-time-series-data-in-pandas/  Indexing time ser
 
 https://www.youtube.com/watch?v=svNwWSgz2NM . Deep Learning for Time Series | Dimitry Larko 
 
+https://arxiv.org/abs/1809.04356 Deep learning for time series classification: a review
+
 https://habr.com/ru/post/559796/ Прогнозирование временных рядов с помощью AutoML
 
 
