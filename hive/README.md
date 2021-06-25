@@ -8,6 +8,13 @@ pip install pyorc. https://pypi.org/project/pyorc/
 
 https://github.com/uber/petastorm. Parquet format. 
 
+Convert avro to JSON
+```
+curl -O http://central.maven.org/maven2/org/apache/avro/avro-tools/1.8.1/avro-tools-1.8.1.jar
+
+java -jar avro-tools-1.8.1.jar tojson --pretty [job_output].avro > output.json
+```
+
 
 ## DRUID and Hive REGEXP_EXTRACT()
 
