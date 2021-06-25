@@ -22,6 +22,8 @@ https://deeplearningsystems.ai/
 
 <http://introtodeeplearning.com/>
 
+https://atcold.github.io/NYU-DLSP21/
+
 ### TinyML
 
 https://habr.com/ru/company/glowbyte/blog/559400/
