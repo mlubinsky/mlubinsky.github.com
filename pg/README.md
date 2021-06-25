@@ -120,6 +120,9 @@ https://sql-info.de/postgresql/postgres-gotchas.html PG gotchas
 https://wiki.postgresql.org/wiki/Don't_Do_This   Do not do it in PG
 
 ## Graph and tree extensions for postgres
+
+https://hoverbear.org/blog/postgresql-hierarchical-structures/
+
 https://news.ycombinator.com/item?id=26345755
 
 
