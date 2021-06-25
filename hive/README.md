@@ -8,6 +8,8 @@ pip install pyorc. https://pypi.org/project/pyorc/
 
 https://github.com/uber/petastorm. Parquet format. 
 
+reading parquet from python: https://duckdb.org/2021/06/25/querying-parquet.html
+
 Convert avro to JSON
 ```
 curl -O http://central.maven.org/maven2/org/apache/avro/avro-tools/1.8.1/avro-tools-1.8.1.jar
