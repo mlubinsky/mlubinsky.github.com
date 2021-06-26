@@ -123,6 +123,8 @@ https://wiki.postgresql.org/wiki/Don't_Do_This   Do not do it in PG
 
 https://hoverbear.org/blog/postgresql-hierarchical-structures/
 
+https://news.ycombinator.com/item?id=27631765
+
 https://news.ycombinator.com/item?id=26345755
 
 
