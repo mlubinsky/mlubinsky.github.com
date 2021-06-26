@@ -15,6 +15,10 @@ http://allendowney.github.io/ThinkBayes2/index.html
 
 ### Casual inference
 
+https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+
+https://www.bradyneal.com/which-causal-inference-book
+
 https://www.inference.vc/causal-inference-4/?fbclid=IwAR1_P5JHLihyB_Q9a8fKVL4eVfsqEM21xVCkzYOat9rn2mbLIloyY7M51m8
 
 ### Мир статистических гипотез
