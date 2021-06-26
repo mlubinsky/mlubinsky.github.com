@@ -2,6 +2,7 @@
 
 https://github.com/astralord/Statistics-lectures/blob/master/book.pdf
 
+https://www.maa.org/sites/default/files/pdf/ebooks/GTE_sample.pdf
 
 
 In the case of normally distributed data,
