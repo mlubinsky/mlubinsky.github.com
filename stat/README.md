@@ -12,6 +12,11 @@ and 1 in 370 will deviate by three times the standard deviation
 
 http://allendowney.github.io/ThinkBayes2/index.html
 
+
+### Casual inference
+
+https://www.inference.vc/causal-inference-4/?fbclid=IwAR1_P5JHLihyB_Q9a8fKVL4eVfsqEM21xVCkzYOat9rn2mbLIloyY7M51m8
+
 ### Мир статистических гипотез
 https://habr.com/ru/post/558836/ 
 
