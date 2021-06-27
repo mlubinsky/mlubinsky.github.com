@@ -175,6 +175,8 @@ https://ridiculousfish.com/wavefiz/
 
 https://blog.gwlab.page/solving-1-d-schrodinger-equation-in-python-dcb3518ce454
 
+https://habr.com/ru/company/skillfactory/blog/564822/
+
 http://lightcone.ru/
 
 https://quantgrav.blogspot.com/
