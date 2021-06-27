@@ -114,6 +114,8 @@ https://www.youtube.com/watch?v=F_gHV-Zq158
 
 ### Anomaly detection in time series
 
+https://www.relataly.com/multivariate-outlier-detection-using-isolation-forests-in-python-detecting-credit-card-fraud/
+
 https://towardsdatascience.com/time-series-anomaly-detection-with-pycaret-706a6e2b2427
 
 https://arxiv.org/pdf/2104.09968.pdf
