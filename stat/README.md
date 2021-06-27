@@ -13,6 +13,8 @@ and 1 in 370 will deviate by three times the standard deviation
 
 http://allendowney.github.io/ThinkBayes2/index.html
 
+https://austinrochford.com/posts/2021-06-10-lego-pymc3.html
+
 
 ### Casual inference
 
