@@ -122,6 +122,8 @@ https://news.ycombinator.com/item?id=25990702
 
 https://alexkrupp.typepad.com/sensemaking/2021/06/django-for-startup-founders-a-better-software-architecture-for-saas-startups-and-consumer-apps.html
 
+https://simpleisbetterthancomplex.com/tutorial/2021/06/27/how-to-start-a-production-ready-django-project.html
+
 https://news.ycombinator.com/item?id=27605052
 
 https://habr.com/ru/post/456146/ .  +Vue
