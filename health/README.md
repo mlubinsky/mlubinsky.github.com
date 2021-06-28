@@ -24,11 +24,13 @@ https://www.amazon.com/Powerlifting-Resistance-Exercise-Shoulders-Strength/dp/B0
 
 ### Pull-ups
 
-https://www.youtube.com/watch?v=L6moaHVfg2Y
+https://www.youtube.com/watch?v=L6moaHVfg2Y PULL UPS! I Hated Them Until I Started Doing Them Like This!
 
-https://www.youtube.com/watch?v=fO3dKSQayfg
+https://www.youtube.com/watch?v=fO3dKSQayfg You CAN do pullups, my friend!
 
-https://www.youtube.com/watch?v=XknPlUPEuDk
+https://www.youtube.com/watch?v=XknPlUPEuDk 5 СПОСОБОВ БЫСТРО НАУЧИТЬСЯ ПОДТЯГИВАТЬСЯ
+
+https://www.youtube.com/watch?v=6BWm8bizU34 HOW TO GET YOUR FIRST PULL-UP 
 
 https://www.youtube.com/watch?v=jFmCrA6fo78 PULL-UPS FOR BEGINNERS | 5 Easy Tips to Perform YOUR FIRST PULLUP!
 
