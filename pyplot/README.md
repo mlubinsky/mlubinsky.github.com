@@ -13,6 +13,8 @@ https://habr.com/ru/company/otus/blog/558478/
 
 https://python-graph-gallery.com/ Pandas, Seaborn, Matplotlib examples!
 
+https://machinelearningmastery.com/seaborn-data-visualization-for-machine-learning
+
 https://habr.com/ru/post/557424/
 
 https://github.com/antonlopezr/mpl_plotter
