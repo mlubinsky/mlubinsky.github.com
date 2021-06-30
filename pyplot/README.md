@@ -7,7 +7,7 @@ https://github.com/rougier/scientific-visualization-book
 
 https://pypi.org/project/sweetviz/
 
-https://geekyhumans.com/draw-various-types-of-charts-and-graphs-using-python/ MAtplotlib and Plotly
+https://geekyhumans.com/draw-various-types-of-charts-and-graphs-using-python/ Matplotlib and Plotly
 
 https://habr.com/ru/company/otus/blog/558478/
 
@@ -57,6 +57,8 @@ https://python-graph-gallery.com/
 https://cmdlinetips.com/2020/01/tips-to-make-common-plots-with-pandas/
 
 https://www.kite.com/blog/python/data-analysis-visualization-python/
+
+https://github.com/lux-org/lux
 
 ### HVPLOT
 https://hvplot.holoviz.org/ hvplot !!!
