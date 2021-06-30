@@ -153,6 +153,8 @@ https://github.com/rushter/MLAlgorithms
 
 https://github.com/trekhleb/homemade-machine-learning/ 
 
+https://github.com/Gautam-J/Machine-Learning
+
 https://pypi.org/project/sealion/ 
 
 https://habr.com/ru/post/541742/.  Image processing
