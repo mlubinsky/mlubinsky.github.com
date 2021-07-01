@@ -1,5 +1,8 @@
 https://xgboost.readthedocs.io/en/latest/index.html
 
+
+https://machinelearningmastery.com/xgboost-for-time-series-forecasting/
+
 https://machinelearningmastery.com/xgboost-loss-functions/
 
 https://github.com/Ericdataplus/XGboost-template
