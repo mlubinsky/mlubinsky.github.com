@@ -3,7 +3,9 @@ https://habr.com/ru/company/skillfactory/blog/561044/ . useful libs
 
 https://www.youtube.com/watch?v=RaTe3dhiqdE  entropy, mutual info
 
-https://huyenchip.com/ml-interviews-book/ 
+https://huyenchip.com/ml-interviews-book/  INTERVIEW BOOK
+
+https://arxiv.org/abs/2010.03415 Knowledge based learning
 
 ### AutoML
 https://habr.com/ru/post/559130/
