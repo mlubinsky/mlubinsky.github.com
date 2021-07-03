@@ -13,6 +13,9 @@ https://www.youtube.com/watch?v=aXPh0NWNfcc
 https://www.youtube.com/watch?v=XIpui7lvjEg
 
 
+https://www.sciencedirect.com/science/article/pii/S0169207019301128.   M4 competition 2020
+
+
 https://towardsdatascience.com/4-different-approaches-for-time-series-analysis-7e2364fadcb9
 
 https://stats.stackexchange.com/questions/431712/uncertainty-quantification-in-time-series-analysis
