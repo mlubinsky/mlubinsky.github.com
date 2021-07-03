@@ -346,6 +346,12 @@ data.publisher.final.dir=/roku/facts
 rg amoeba
 
 ```
+external/jobconfig/device_logs_v3/device_logs_v3.job
+12:fact_device_log_amoeba_events=cserv.amoeba
+13:fact_device_log_amoeba_events_v2=cserv.amoeba
+```
+
+```
 src/test/java/com/dea/roku/data/consumers/device/converter/AvroOrcDeserializerTest.java
 57:            new File("/tmp/amoeba.avro"), datumReader);
 
