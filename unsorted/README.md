@@ -34,6 +34,8 @@ dig @resolver4.opendns.com myip.opendns.com +short
 
 https://deep-econom.livejournal.com/840005.html
 
+https://booksee.org/
+
 
 1)) Бозон Хиггса
 https://youtu.be/S7dTZbppz–k
