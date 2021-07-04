@@ -793,6 +793,9 @@ TBATS2 - TBATS1 With Two Seasonal Periods
 
 https://github.com/nakabonne/tstorage . in Go
 
+https://nakabonne.dev/posts/write-tsdb-from-scratch/
+
+
 <https://medium.com/datadriveninvestor/what-are-time-series-databases-a3e847608f91>
 
 <https://questdb.io/blog/>
