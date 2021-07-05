@@ -7,7 +7,10 @@ https://huyenchip.com/ml-interviews-book/  INTERVIEW BOOK
 
 https://arxiv.org/abs/2010.03415 Knowledge based learning
 
-Geometric machine learning:
+### Geometric machine learning:
+
+https://towardsdatascience.com/geometric-foundations-of-deep-learning-94cdd45b451d
+
 https://www.youtube.com/watch?v=w6Pw4MOzMuo
 
 
