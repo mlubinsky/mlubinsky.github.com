@@ -7,6 +7,9 @@ https://huyenchip.com/ml-interviews-book/  INTERVIEW BOOK
 
 https://arxiv.org/abs/2010.03415 Knowledge based learning
 
+Geometric machine learning:
+https://www.youtube.com/watch?v=w6Pw4MOzMuo
+
 ### AutoML
 https://habr.com/ru/post/559130/
 
