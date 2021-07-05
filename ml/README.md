@@ -11,7 +11,10 @@ Geometric machine learning:
 https://www.youtube.com/watch?v=w6Pw4MOzMuo
 
 
-https://news.ycombinator.com/item?id=27577467  ML beyound curve fittinh
+https://news.ycombinator.com/item?id=27577467  ML beyound curve fitting
+
+
+http://creatingdata.us/techne/deep_scatterplots/#  Zoomable scatterplot
 
 ### AutoML
 https://habr.com/ru/post/559130/
