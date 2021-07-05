@@ -32,6 +32,8 @@ dig @resolver4.opendns.com myip.opendns.com +short
 
 ### E-books
 
+https://urss.ru/cgi-bin/db.pl?lang=RU&page=Catalog&list=Series407
+
 https://deep-econom.livejournal.com/840005.html
 
 https://booksee.org/
