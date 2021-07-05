@@ -323,6 +323,8 @@ print ( ''.join([x.encode('utf-8') for x in map(unichr, range(0x0107, 0x0187))])
 
 https://habr.com/ru/company/oleg-bunin/blog/518464/
 
+https://pythonextensionpatterns.readthedocs.io/en/latest/index.html
+
 ## Creating Python Package
 
 <https://realpython.com/courses/python-modules-packages/>
