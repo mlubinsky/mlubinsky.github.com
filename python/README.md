@@ -1,3 +1,5 @@
+https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/
+
 https://habr.com/ru/company/yandex_praktikum/blog/553900/ . Best python books
 
 https://github.com/fredrik-corneliusson/click-web
