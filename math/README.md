@@ -5,6 +5,11 @@ https://www.youtube.com/watch?v=8v0OYSowjok
 https://algorithmstoliveby.com/
 
 
+https://mattferraro.dev/posts/poissons-equation
+
+https://news.ycombinator.com/item?id=27748967
+
+
 BetterExplained.org
 
 Brillant.org
