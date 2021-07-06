@@ -7,6 +7,9 @@ https://xcorr.net/2021/06/02/dynamic-scientific-visualizations-in-the-browser-fo
 
 https://github.com/rougier/scientific-visualization-book
 
+
+https://pypi.org/project/autoplotter/ (using Dash)
+
 https://pypi.org/project/sweetviz/
 
 https://geekyhumans.com/draw-various-types-of-charts-and-graphs-using-python/ Matplotlib and Plotly
