@@ -9,6 +9,9 @@ https://habr.com/ru/post/541024/ . Science channels
 Interesting blogs :
 https://news.ycombinator.com/item?id=27302195
 
+
+http://nodardjin.narod.ru/
+
 ### Get better on googling
 
 https://news.ycombinator.com/item?id=26911629
