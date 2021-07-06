@@ -4,6 +4,10 @@ https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
 
 https://tomaugspurger.github.io/modern-1-intro.html modern Pandas
 
+Add style to dataframe cells:
+https://www.analyticsvidhya.com/blog/2021/06/style-your-pandas-dataframe-and-make-it-stunning/
+
+
 https://stackoverflow.com/questions/36921951/truth-value-of-a-series-is-ambiguous-use-a-empty-a-bool-a-item-a-any-o
 
 https://stackoverflow.com/questions/19124601/pretty-print-an-entire-pandas-series-dataframe
