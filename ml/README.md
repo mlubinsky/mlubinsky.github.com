@@ -7,6 +7,9 @@ https://huyenchip.com/ml-interviews-book/  INTERVIEW BOOK
 
 https://arxiv.org/abs/2010.03415 Knowledge based learning
 
+
+https://github.com/dair-ai/ML-YouTube-Courses
+
 ### Geometric machine learning:
 
 https://towardsdatascience.com/geometric-foundations-of-deep-learning-94cdd45b451d
