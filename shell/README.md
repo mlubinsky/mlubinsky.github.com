@@ -12,10 +12,17 @@ https://darrenburns.net/posts/command-line-tools-iv
 https://habr.com/ru/company/timeweb/blog/561214/ json utilities
 
 ### bash
-```
-Использование && для объединения нескольких последовательных команд 
-use ? for better error message:
 
+Add this to  .bash_profile to go to the latest folder:
+```
+cd `ls -ltr | grep '^d' | tail -1 | awk '{print $9}'` 
+```
+ 
+Use && для объединения нескольких последовательных команд 
+
+
+Use ? for better error message:
+```
 echo openjdk-${VERSION?}
 -bash: VERSION: parameter null or not set
 ```
