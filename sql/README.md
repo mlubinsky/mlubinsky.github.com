@@ -1,3 +1,5 @@
+https://github.com/dinedal/textql  SQL for CSV and TSV
+
 https://habr.com/ru/company/otus/blog/541882/
 
 https://hakibenita.com/sql-for-data-analysis  ROLLUP, CUBE GROUPING_SET
