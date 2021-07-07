@@ -3,6 +3,11 @@ https://docs.looker.com/data-modeling/learning-lookml/advanced-lookml-concepts
 
 https://www.youtube.com/watch?v=-YMCafO_cZk (ru)
 
+
+### Agg tables in Looker
+https://docs.looker.com/data-modeling/learning-lookml/aggregate_awareness
+
+
 ## Look / Scheduling / Alerts
 
 Saving a Look - this saves all of your choices for filters, visualizations, fields, sorting, and so on.
