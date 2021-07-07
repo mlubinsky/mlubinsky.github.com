@@ -22,6 +22,7 @@ http://thechaostician.com/what-is-chaos-part-v-continuous-time/
 
 http://www.damtp.cam.ac.uk/user/tong/teaching.html
 
+https://www.susanrigetti.com/physics
 
 1. Sudbery, A. (1986): Quantum Mechanics and the Particles of Nature: An Outline for Mathematicians.
 
