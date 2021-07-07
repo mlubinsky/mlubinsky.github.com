@@ -10,6 +10,8 @@ In the case of normally distributed data,
 the three sigma rule means that roughly 1 in 22 observations will differ by twice the standard deviation or more from the mean,
 and 1 in 370 will deviate by three times the standard deviation
 
+https://statmodeling.stat.columbia.edu/2020/12/09/what-are-the-most-important-statistical-ideas-of-the-past-50-years/
+
 ### Bayes
 
 http://allendowney.github.io/ThinkBayes2/index.html
