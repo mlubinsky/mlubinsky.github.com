@@ -53,6 +53,24 @@ scp dist/roku-dag-bag.pex data-processing-dev-emr-5-21.bdp.roku.com:/tmp/mlubins
 -------
 ```
 
+
+### Kafka
+
+```
+kafka-console-consumer --bootstrap-server kafka-dev-1.bdp.roku.com:9092,kafka-dev-2.bdp.roku.com:9092 --topic amoeba --from-beginning --max-messages 100
+```
+
+use this one in dev branch:
+```
+export KAFKA_BROKERS=kafka-dev-1.bdp.roku.com:9092,
+                     kafka-dev-2.bdp.roku.com:9092
+                     
+export KAFKA_BROKERS=
+             kafka-bootstrap-a.bdp.roku.com:9092,
+             kafka-bootstrap-b.bdp.roku.com:9092,
+             kafka-bootstrap-c.bdp.roku.com:9092
+```
+
 ### Start Airflow DEV SERVER
 
 ```
