@@ -29,6 +29,30 @@ Table name in dev:
 sbschema.roku_<table>
 ```
 
+
+### Spark shell
+ 
+ Invoke spark shell. Replace jar location
+```
+spark-shell --jars /tmp/pogupta/sr_cap/sr_cap-artifacts.jar --driver-memory 6G --executor-memory 6G --conf spark.dynamicAllocation.enabled=true --conf spark.dynamicAllocation.maxExecutors=60
+```
+ Sample code snippet 
+```
+import com.roku.dea.spark.sr_cap.SrCap2DataIngestApp
+import com.roku.dea.spark.sr_cap.SrCapHelper
+import com.roku.utils.run_modes.RunModes
+val s3IngestPath = "s3://cap-data-886239521314/11f9ffc1b11a51a7ba2792269111d081"
+val capSchema = SrCapHelper.getSrCap2Schema()
+val rawDF = spark.sqlContext.read.schema(capSchema).json(s3IngestPath)
+val validDF = rawDF.filter(SrCapHelper.validSearchContentTypesUDF($"type")).persist()
+val runModeStr = "TEST"
+val runMode: RunModes = RunModes.getMode(runModeStr)
+val searchContentIngestApp = new SrCap2DataIngestApp(spark, runMode)
+val episodeIndex = (spark.read.option("header", true).csv("s3://cap-data-meta-886239521314/types/episode/latest.csv")).persist()
+val episodeDF = searchContentIngestApp.ingestEpisode(validDF, "", episodeIndex)
+episodeDF.show(false)
+```
+
 ### Build locally and scp to server
 ```
 cd ~
