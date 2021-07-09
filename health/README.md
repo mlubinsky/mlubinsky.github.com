@@ -1,5 +1,9 @@
 https://www.youtube.com/watch?v=23z_ruAi4FI
 
+
+Боль в локте, эпикондилит упражнения при локте теннисиста
+https://www.youtube.com/watch?v=oWgKw9DvjkY
+
 ### Sleep
 
 https://news.ycombinator.com/item?id=27458974
