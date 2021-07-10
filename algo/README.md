@@ -8,6 +8,9 @@ http://jeffe.cs.illinois.edu/teaching/algorithms/
 
 https://www.pythonforbeginners.com/queue/queue-in-python
 
+
+https://www.youtube.com/watch?v=Dx5eiQdv4k8 Find 2 closest points on plain
+
 https://ekamperi.github.io/programming/2021/04/14/longest-non-repeating-substring.html
 
 https://kalkicode.com/data-structure/1500-most-common-data-structures-and-algorithms-solutions
