@@ -36,6 +36,8 @@ https://www.youtube.com/watch?v=L6moaHVfg2Y PULL UPS! I Hated Them Until I Start
 
 https://www.youtube.com/watch?v=fO3dKSQayfg You CAN do pullups, my friend!
 
+https://www.youtube.com/watch?v=IpxAG2z91Ys
+
 https://www.youtube.com/watch?v=XknPlUPEuDk 5 СПОСОБОВ БЫСТРО НАУЧИТЬСЯ ПОДТЯГИВАТЬСЯ
 
 https://www.youtube.com/watch?v=6BWm8bizU34 HOW TO GET YOUR FIRST PULL-UP 
