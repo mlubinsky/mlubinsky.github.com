@@ -13,6 +13,8 @@ https://pawelurbanek.com/macos-free-disk-space
 
 brew install --cask disk-inventory-x
 
+ brew install awk coreutils findutils gnu-tar gnu-sed gnu-which gnu-time
+
 https://kapeli.com/dash
 
  
