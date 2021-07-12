@@ -58,6 +58,8 @@ https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distribu
 
 https://peterroelants.github.io/posts/gaussian-process-tutorial/
 
+https://news.ycombinator.com/item?id=27803316
+
 https://www.youtube.com/watch?v=xBE8qdAAj3w
 
 https://e.lanbook.com/book/71719 Book: Лекции по гауссовским процессам. Лифшиц М.А.
