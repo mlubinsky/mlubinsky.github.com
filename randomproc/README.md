@@ -54,7 +54,9 @@ https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distribu
 
 
 
-## Gauss processes
+## Gaussian process 
+
+https://peterroelants.github.io/posts/gaussian-process-tutorial/
 
 https://www.youtube.com/watch?v=xBE8qdAAj3w
 
