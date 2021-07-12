@@ -18,6 +18,12 @@ java -jar avro-tools-1.8.1.jar tojson --pretty [job_output].avro > output.json
 ```
 
 
+### Array of structures:
+
+select array(named_struct("person_id","1","first_name","ooo"));
+ 
+[{"person_id":"1","first_name":"ooo"}]
+
 ## DRUID and Hive REGEXP_EXTRACT()
 
 How to match till 1st occurance of char:
