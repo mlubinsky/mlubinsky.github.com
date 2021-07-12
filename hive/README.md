@@ -18,11 +18,17 @@ java -jar avro-tools-1.8.1.jar tojson --pretty [job_output].avro > output.json
 ```
 
 
-### Array of structures:
+### Array of structures  :
 
 select array(named_struct("person_id","1","first_name","ooo"));
+
+
  
 [{"person_id":"1","first_name":"ooo"}]
+
+### Array of maps :
+
+select array(map("language","string")) 
 
 ## DRUID and Hive REGEXP_EXTRACT()
 
