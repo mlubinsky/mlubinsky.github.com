@@ -9,6 +9,8 @@ https://arxiv.org/abs/1809.04356 Deep learning for time series classification: a
 
 https://habr.com/ru/post/559796/ Прогнозирование временных рядов с помощью AutoML
 
+https://www.youtube.com/watch?v=Ct2Lg0lOLoE . AutoML for TS
+
 https://facebookresearch.github.io/Kats/ 
 
 
