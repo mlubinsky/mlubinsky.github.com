@@ -1,3 +1,5 @@
+https://mymasterdesigner.com/2021/07/06/data-structures-with-python-big-guide/
+
 https://lwn.net/SubscriberLink/861910/67bbe2390d2e0c93/ API, slots, etc
 
 https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/
