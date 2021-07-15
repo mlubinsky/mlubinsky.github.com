@@ -1,5 +1,22 @@
-print " FIND 2 elements in list where sum=target"
+def merge_sorted_lists(l1, l2):
+    sorted_list = []
 
+    while (l1 and l2):
+        if (l1[0] <= l2[0]): # Compare both heads
+            item = l1.pop(0) # Pop from the head
+        else:
+            item = l2.pop(0)
+            
+        sorted_list.append(item)
+
+    # Add the remaining of the lists
+    sorted_list.extend(l1 if l1 else l2)
+
+    return sorted_list
+
+
+print " FIND 2 elements in list where sum=target"
+#-------------------------------------------
 l=[6,2,3,4,5,1]
 target=6
 d={}
