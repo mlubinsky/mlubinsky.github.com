@@ -1,6 +1,10 @@
 https://habr.com/ru/company/gms/blog/553078/ . useful comman-line utils
 
-https://github.com/Genivia/ugrep
+https://www.redhat.com/sysadmin/bash-error-handling Bash error handling!
+
+https://opensource.com/article/21/6/bash-config parsing config files with bash
+
+https://github.com/Genivia/ugrep  better grep
 
 https://github.com/ibraheemdev/modern-unix
 
