@@ -1,5 +1,9 @@
 <https://riiswa.github.io/Scala-CheatSheet/>
 
+The Scala book:
+
+https://www.handsonscala.com/
+
 <https://earthly.dev/blog/top-5-scala-blogs/>
 
 https://bszwej.medium.com/domain-driven-design-with-fp-in-scala-21b557f94aa5
