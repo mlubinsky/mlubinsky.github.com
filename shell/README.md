@@ -1,4 +1,6 @@
-https://habr.com/ru/company/gms/blog/553078/ . useful comman-line utils
+https://habr.com/ru/company/gms/blog/553078/ . useful command-line utils
+
+https://habr.com/ru/company/ruvds/blog/567150/
 
 https://www.redhat.com/sysadmin/bash-error-handling Bash error handling!
 
