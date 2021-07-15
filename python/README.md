@@ -2,6 +2,18 @@ https://mymasterdesigner.com/2021/07/06/data-structures-with-python-big-guide/
 
 https://lwn.net/SubscriberLink/861910/67bbe2390d2e0c93/ API, slots, etc
 
+```
+Now, Python is usually considered to be an interpreted language. When you run a Python code, the Python interpreter reads the file line-by-line and runs it.
+
+But behind-the-scenes, the source code is compiled into bytecode. These are similar to CPU instructions, but instead of being run by the actual CPU, these are executed by a software called a Virtual Machine (VM), which acts as a pseudo-microprocessor that runs the bytecodes. The advantage is that you can run Python on any platform as long as the VM is installed.
+
+When you run a Python code, the interpreter implicitly compiles the code into bytecode and interprets it with the VM. The reason Python is regarded to be an interpreted language is because the compilation step is implicit. You don’t have to invoke a compiler manually.
+
+When you import a module into your code, Python compiles those modules into bytecode for caching purposes. These are stored in a directory named __pycache__ in the current directory, which contains compiled .pyc files.
+```
+
+https://earthly.dev/blog/python-makefile/
+
 https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/
 
 https://habr.com/ru/company/yandex_praktikum/blog/553900/ . Best python books
