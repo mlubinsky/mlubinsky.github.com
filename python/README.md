@@ -37,7 +37,7 @@ https://antonz.org/python-packaging/
 https://awesome-python.com/
 
 
-https://pythonhowtoprogram.com/better-organization-of-your-projects-with-python-imports/ 
+
 
 https://pybind11.readthedocs.io/en/stable/ C++ from python
 
@@ -67,7 +67,11 @@ Python 2.7 pip.  curl https://bootstrap.pypa.io/2.7/get-pip.py --output get-pip.
 
 IP = requests.get('https://api.ipify.org').text
 
-### import
+
+### Import
+https://pythonhowtoprogram.com/better-organization-of-your-projects-with-python-imports/ 
+
+https://tenthousandmeters.com/blog/python-behind-the-scenes-11-how-the-python-import-system-works/
 ```
 import math
 math.pi
