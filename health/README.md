@@ -241,6 +241,8 @@ Kрасный болгарский перец.  обладает сладким 
 
 ## давление
 
+https://www.youtube.com/watch?v=IgfZdPJ5mfE  Как лечить гипертонию? доктор  Шишонин
+
 https://www.youtube.com/watch?v=YlNobs3acQQ
 
 <https://kaplya.site/upotreblenie-imbirya-pri-gipertonii/> Употребление имбиря при гипертонии
