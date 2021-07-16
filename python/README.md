@@ -115,6 +115,11 @@ SQLite connection <http://blog.rtwilson.com/a-python-sqlite3-context-manager-got
 
 <https://habr.com/ru/company/ruvds/blog/514538/> SQLite
 
+
+### SymPy
+
+http://www.doc.mmu.ac.uk/STAFF/S.Lynch/Python_for_A_Level_Mathematics_and_Beyond.html
+
 ### Python instead bash
 
 https://davidoha.medium.com/avoiding-bash-frustration-use-python-for-shell-scripts-44bba8ba1e9e
