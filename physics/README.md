@@ -278,6 +278,8 @@ https://michaelallenwarner.github.io/physics/2019/07/16/vector-triple-products-i
  
  https://me.kpi.ua/downloads/Poplavko_Magnetism.pdf
  
+ http://bit-player.org/2021/three-months-in-monte-carlo
+ 
  Природа магнетизма.
 Моисей Исаакович Каганов, Виктор Моисеевич Цукерник
 
