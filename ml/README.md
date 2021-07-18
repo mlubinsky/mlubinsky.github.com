@@ -83,6 +83,10 @@ https://ggcarvalho.dev/posts/montecarlo/ .  Monte Carlo with GO
 
 https://habr.com/ru/company/otus/blog/555980/  stat paradox
 
+### Linear regression
+
+https://www.youtube.com/watch?v=EMIyRmrPWJQ
+
 https://aegis4048.github.io/mutiple_linear_regression_and_visualization_in_python . Linear regression
 
 ### Fourier
