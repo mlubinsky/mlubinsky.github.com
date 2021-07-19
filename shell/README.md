@@ -118,25 +118,43 @@ https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_ba
 
 ### regular expression
 ```
-My favorite regex is /[ -~]*/, space-dash-tilde. That represents approximately A-Za-z0-9 plus punctuation and space. It's useful for something like `tr -d` to remove all common characters and leave all of the "oddities" so you can differentiate "" from “” or ... from … in things like markdown or source code.
+My favorite regex is /[ -~]*/, space-dash-tilde. That represents approximately A-Za-z0-9 plus punctuation and space. 
+It's useful for something like `tr -d` to remove all common characters and leave all of the "oddities" 
+so you can differentiate "" from “” or ... from … in things like markdown or source code.
 
-Explanation: [ -~] is matching the range of characters† from space (32) to tilde (126), which is the full range of printable ASCII characters. (0–31 are various control characters, and 127 is one last control character, ␡.)
+Explanation: [ -~] is matching the range of characters† from space (32) to tilde (126), 
+which is the full range of printable ASCII characters. (0–31 are various control characters, and 127 is one last control character, ␡.)
 
 To check all non-ASCII characters, you may do [^\x00-\x7F].
 Depends of the language. In Python 3, files are expected to be utf8 by default, and you can change that by adding a "# coding: <charset>" header.
 
-In fact, it's one of the reasons it was a breaking release in the first place, and being able to put non-ASCII characters in strings and comments in my source code are a huge plus.
+In fact, it's one of the reasons it was a breaking release in the first place, 
+and being able to put non-ASCII characters in strings and comments in my source code are a huge plus.
 
-It is commonly considered a faux pas to include ‘trailing white space’ in code. That is, your lines should end with the line-return control characters and nothing else. In a regular expression, the end of the string (or line) is marked by the ‘$’ symbol, and a white-space can be indicated with ‘\s’, and a sequence of one or more white space is ‘\s+’. Thus if I search for ‘\s+$‘, I will locate all offending lines.
+It is commonly considered a faux pas to include ‘trailing white space’ in code. 
+That is, your lines should end with the line-return control characters and nothing else. 
+In a regular expression, the end of the string (or line) is marked by the ‘$’ symbol, and a white-space can be indicated with ‘\s’, and a sequence of one or more white space is ‘\s+’. Thus if I search for ‘\s+$‘, I will locate all offending lines.
 
-It is often best to avoid non-ASCII characters in source code. Indeed, in some cases, there is no standard way to tell the compiler about your character encoding, so non-ASCII might trigger problems. To check all non-ASCII characters, you may do [^\x00-\x7F].
+It is often best to avoid non-ASCII characters in source code. 
+Indeed, in some cases, there is no standard way to tell the compiler about your character encoding, so non-ASCII might trigger problems. 
+To check all non-ASCII characters, you may do [^\x00-\x7F].
 
-Sometimes you insert too many spaces between a variable or an operator. Multiple spaces are fine at the start of a line, since they can be used for indentation, but other repeated spaces are usually in error. You can check for them with the expression \b\s{2,}. The \b indicate a word boundary.
-I use spaces to indent my code, but I always use an even number of spaces (2, 4, 8, etc.). Yet I might get it wrong and insert an odd number of spaces in some places. To detect these cases, I use the expression ^(\s\s)*\s[^\s]. To delete the extra space, I can select it with look-ahead and look-behind expressions such as <(?<=^(\s\s)*)\s(?=[^\s]).
+Sometimes you insert too many spaces between a variable or an operator. Multiple spaces are fine at the start of a line, 
+since they can be used for indentation, but other repeated spaces are usually in error. 
+You can check for them with the expression \b\s{2,}. The \b indicate a word boundary.
+I use spaces to indent my code, but I always use an even number of spaces (2, 4, 8, etc.). 
+Yet I might get it wrong and insert an odd number of spaces in some places. 
+To detect these cases, I use the expression ^(\s\s)*\s[^\s]. To delete the extra space, 
+I can select it with look-ahead and look-behind expressions such as <(?<=^(\s\s)*)\s(?=[^\s]).
 
-I do not want a space after the opening parenthesis nor before the closing parenthesis. I can check for such a case with (\(\s|\s\)). If I want to remove the spaces, I can detect them with a look-behind expression such as (?<=\()\s.
+I do not want a space after the opening parenthesis nor before the closing parenthesis. 
+I can check for such a case with (\(\s|\s\)). If I want to remove the spaces, 
+I can detect them with a look-behind expression such as (?<=\()\s.
 
-Suppose that I want to identify all instances of a variable, I can search for \bmyname\b. By using word boundaries, I ensure that I do not catch instances of the string inside other functions or variable names. Similarly, if I want to select all variable that end with some expression, I can do it with an expression like \b\w*myname\b.
+Suppose that I want to identify all instances of a variable, I can search for \bmyname\b. 
+By using word boundaries, I ensure that I do not catch instances of the string inside other functions or variable names. 
+Similarly, if I want to select all variable that end with some expression, 
+I can do it with an expression like \b\w*myname\b.
 ```
 ## bash job control
 
