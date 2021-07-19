@@ -13,6 +13,11 @@ https://habr.com/ru/company/otus/blog/541820/.  SQLite with  Python and Go
 
 https://avi.im/blag/2021/fast-sqlite-inserts/
 
+
+https://github.com/sqlitebrowser/sqlitebrowser
+
+https://news.ycombinator.com/item?id=27871574
+
 ## SQLite utils
 
 https://habr.com/ru/post/553696/ 
@@ -20,6 +25,13 @@ https://habr.com/ru/post/553696/
 https://github.com/simonw/sqlite-utils
 
 Sequel Ace - UI
+
+
+### DuckDB
+
+https://github.com/duckdb/duckdb
+
+https://duckdb.org/docs/data/csv
 
 
 ## JSON
