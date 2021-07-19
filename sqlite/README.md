@@ -10,6 +10,9 @@ https://unixsheikh.com/articles/sqlite-the-only-database-you-will-ever-need-in-m
 
 https://habr.com/ru/company/otus/blog/541820/.  SQLite with  Python and Go
 
+
+https://avi.im/blag/2021/fast-sqlite-inserts/
+
 ## SQLite utils
 
 https://habr.com/ru/post/553696/ 
