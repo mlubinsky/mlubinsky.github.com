@@ -7,6 +7,7 @@ https://xcorr.net/2021/06/02/dynamic-scientific-visualizations-in-the-browser-fo
 
 https://github.com/rougier/scientific-visualization-book
 
+https://plotly.com/python/
 
 https://pypi.org/project/autoplotter/ (using Dash)
 
@@ -17,6 +18,9 @@ https://geekyhumans.com/draw-various-types-of-charts-and-graphs-using-python/ Ma
 https://habr.com/ru/company/otus/blog/558478/
 
 https://python-graph-gallery.com/ Pandas, Seaborn, Matplotlib examples!
+
+
+https://matplotlib.org/stable/gallery/index.html Matplotlib examples
 
 https://machinelearningmastery.com/seaborn-data-visualization-for-machine-learning
 
