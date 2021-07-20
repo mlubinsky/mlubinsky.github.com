@@ -1,5 +1,7 @@
 https://www.wrighters.io/indexing-time-series-data-in-pandas/  Indexing time series in Pandas
 
+https://ibexorigin.medium.com/list/time-series-forecast-from-scratch-c72ccf7a9229
+
 
 https://www.youtube.com/watch?v=lqatzxjHx-A
 
