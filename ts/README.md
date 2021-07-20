@@ -252,6 +252,8 @@ https://github.com/carlomazzaferro/scikit-hts
 
 https://medium.com/opex-analytics/hierarchical-time-series-101-734a3da15426
 
+https://towardsdatascience.com/introduction-to-hierarchical-time-series-forecasting-part-ii-e73dfd3de86b
+
 https://otexts.com/fpp2/hts.html
 
 https://github.com/carlomazzaferro/scikit-hts
