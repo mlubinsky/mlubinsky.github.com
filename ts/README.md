@@ -345,6 +345,7 @@ https://machinelearningmastery.com/time-series-trends-in-python/#:~:text=Removin
 
 https://coderzcolumn.com/tutorials/data-science/how-to-remove-trend-and-seasonality-from-time-series-data-using-python-pandas
 
+https://towardsdatascience.com/how-to-remove-non-stationarity-in-time-series-forecasting-563c05c4bfc7
 
 
 https://medium.com/@nathanvenos/time-series-analysis-in-python-ab582dd803cd
