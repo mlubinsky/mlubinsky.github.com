@@ -190,6 +190,8 @@ Hive Version for emr-5.21.1 is: 2.3.4
 ## Boto3
 
 https://www.learnaws.org/2021/05/12/aws-iam-boto3-guide/
+  
+  https://dashbird.io/blog/boto3-aws-python/
 
 <https://stackoverflow.com/questions/36205481/read-file-content-from-s3-bucket-with-boto3>
 
