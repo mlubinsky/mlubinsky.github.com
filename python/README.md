@@ -2,6 +2,8 @@ https://mymasterdesigner.com/2021/07/06/data-structures-with-python-big-guide/
 
 https://lwn.net/SubscriberLink/861910/67bbe2390d2e0c93/ API, slots, etc
 
+https://death.andgravity.com/namedtuples named tuples vs dataclasses
+
 ```
 Now, Python is usually considered to be an interpreted language. 
 When you run a Python code, the Python interpreter reads the file line-by-line and runs it.
