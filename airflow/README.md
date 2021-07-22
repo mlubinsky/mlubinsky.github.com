@@ -1,6 +1,20 @@
+https://airflow.apache.org/docs/
+
 ### Book
 
 https://www.manning.com/books/data-pipelines-with-apache-airflow
+
+
+### Medium articles
+
+https://towardsdatascience.com/tagged/apache-airflow
+
+
+### Airflow 2
+
+https://towardsdatascience.com/is-apache-airflow-2-0-good-enough-for-current-data-engineering-needs-6e152455775c
+
+
 
 ### Dynamically generated DAGs
 https://www.astronomer.io/guides/dynamically-generating-dags
