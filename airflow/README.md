@@ -39,6 +39,11 @@ https://habr.com/ru/post/549458/
 https://khashtamov.com/en/introduction-to-apache-airflow/
 
 
+
+### Kubernetic Issue: Only works with the Celery or Kubernetes executors, sorry
+
+https://github.com/apache/airflow/issues/12341
+
 ### backfill
 ```
  sudo /opt/airflow/airflow backfill --help
