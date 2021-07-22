@@ -1,5 +1,6 @@
 https://habr.com/ru/company/skillfactory/blog/561044/ . useful libs
 
+https://predictivehacks.com/10-tips-and-tricks-for-data-scientists-vol-10/
 
 https://www.youtube.com/watch?v=RaTe3dhiqdE  entropy, mutual info
 
