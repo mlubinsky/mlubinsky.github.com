@@ -5,7 +5,7 @@ https://ibexorigin.medium.com/list/time-series-forecast-from-scratch-c72ccf7a922
 
 https://www.youtube.com/watch?v=lqatzxjHx-A
 
-https://www.youtube.com/watch?v=svNwWSgz2NM . Deep Learning for Time Series | Dimitry Larko 
+
 
 https://arxiv.org/abs/1809.04356 Deep learning for time series classification: a review
 
@@ -189,7 +189,11 @@ https://blog.paperspace.com/introduction-time-series-analysis/
 
 https://medium.com/coders-camp/10-machine-learning-projects-on-time-series-forecasting-ee0368420ccd
 
-### Deep learning for TS
+### Deep learning for Time Series
+
+https://www.youtube.com/watch?v=svNwWSgz2NM . Deep Learning for Time Series | Dimitry Larko 
+
+https://towardsdatascience.com/how-to-use-deep-learning-for-time-series-data-f641b1b41a96
 
 https://www.youtube.com/watch?v=xK1NvtNBAW4
 
