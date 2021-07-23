@@ -4,6 +4,8 @@ https://airflow.apache.org/docs/
 
 https://www.manning.com/books/data-pipelines-with-apache-airflow
 
+https://www.manning.com/downloads/2060 . source code
+
 
 ### Medium articles
 
