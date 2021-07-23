@@ -6,6 +6,7 @@ https://www.manning.com/books/data-pipelines-with-apache-airflow
 
 https://www.manning.com/downloads/2060 . source code
 
+https://marclamberti.com/blog/airflow-branchpythonoperator/
 
 ### Medium articles
 
