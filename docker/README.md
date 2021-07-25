@@ -1,3 +1,4 @@
+https://habr.com/ru/post/569394/ Docker для Data Scientist'a
 
 https://habr.com/ru/company/southbridge/blog/534334/.  Data /volumes inside Docker
 
