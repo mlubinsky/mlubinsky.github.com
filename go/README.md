@@ -1,5 +1,7 @@
 https://reliability.substack.com/p/go-for-internal-services
 
+https://bitfieldconsulting.com/books/love-bundle . Book 
+
 https://earthly.dev/blog/top-3-resources-to-learn-golang-in-2021/ 
 
 https://habr.com/ru/company/ispring/blog/560032/
