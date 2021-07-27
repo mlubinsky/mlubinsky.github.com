@@ -10,8 +10,16 @@ https://habr.com/ru/company/ntechlab/blog/540728/ bazel
 
 https://habr.com/ru/post/541024/ . Science channels
 
-Interesting blogs :
+### Interesting blogs  
+
+https://refined.blog/
+
 https://news.ycombinator.com/item?id=27302195
+
+https://news.ycombinator.com/item?id=27973836
+
+### Religion books
+https://ru.wikisource.org/wiki/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D1%8F_(%D0%A1%D0%B8%D0%BD%D0%BE%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4)
 
 
 http://nodardjin.narod.ru/
