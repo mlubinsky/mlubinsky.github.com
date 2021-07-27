@@ -13,8 +13,13 @@ https://habr.com/ru/post/559796/ Прогнозирование временны
 
 https://www.youtube.com/watch?v=Ct2Lg0lOLoE . AutoML for TS
 
-https://facebookresearch.github.io/Kats/ 
+https://facebookresearch.github.io/Kats/   KATS from Facebook
 
+### Time weighted averages
+
+https://blog.timescale.com/blog/what-time-weighted-averages-are-and-why-you-should-care/
+
+https://news.ycombinator.com/item?id=27958175
 
 https://www.youtube.com/watch?v=aXPh0NWNfcc
 
