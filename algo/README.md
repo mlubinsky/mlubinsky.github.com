@@ -37,6 +37,8 @@ https://habr.com/ru/post/550088/ interview
 
 http://algorithmsbook.com/ Algorithms for Decision Making
 
+https://erthalion.info/2020/11/28/evolution-of-btree-index-am/
+
 
 ### local sensitive hashing - LSH
 
