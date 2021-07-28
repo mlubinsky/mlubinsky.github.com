@@ -1,5 +1,7 @@
 https://mccme.ru/shen/progbook/7edition.pdf
 
+http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big data
+
 https://habr.com/ru/company/otus/blog/565988/ . Median in the stream
   
 https://betterprogramming.pub/top-5-hardest-coding-questions-from-recent-faang-interviews-d46bcb4dd8dc
