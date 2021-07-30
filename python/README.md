@@ -1,3 +1,5 @@
+https://stackoverflow.com/questions/68584868/python3-datetime-datetime2021-05-09-does-not-support-leading-0-but-it-works
+
 https://mymasterdesigner.com/2021/07/06/data-structures-with-python-big-guide/
 
 https://anothertechs.com/programming/python/python-data-structure-cheat-sheet-2021/
