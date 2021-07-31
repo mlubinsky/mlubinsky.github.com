@@ -1,5 +1,9 @@
 https://stackoverflow.com/questions/68584868/python3-datetime-datetime2021-05-09-does-not-support-leading-0-but-it-works
 
+Regexep to find leading 0 in month, just after year:
+```
+grep -E 'datetime\([[:space:]]*2\d{3}[[:space:]]*,[[:space:]]*0' datetime.txt
+```
 https://mymasterdesigner.com/2021/07/06/data-structures-with-python-big-guide/
 
 https://anothertechs.com/programming/python/python-data-structure-cheat-sheet-2021/
