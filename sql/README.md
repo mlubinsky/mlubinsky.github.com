@@ -6,6 +6,11 @@ https://hakibenita.com/sql-for-data-analysis  ROLLUP, CUBE GROUPING_SET
 
 https://hakibenita.com/sql-dos-and-donts Faux predicate
 
+
+### Recursion in SQL
+
+https://medium.com/swlh/recursion-in-sql-explained-graphically-679f6a0f143b
+
 ### SQL UI client tools
 
 Sequel-Ace https://github.com/Sequel-Ace/Sequel-Ace
