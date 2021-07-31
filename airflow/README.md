@@ -6,7 +6,36 @@ https://www.manning.com/books/data-pipelines-with-apache-airflow
 
 https://www.manning.com/downloads/2060 . source code
 
-https://marclamberti.com/blog/airflow-branchpythonoperator/
+https://marclamberti.com/blog/airflow-branchpythonoperator/ . BranchPythonOperator
+
+```
+def py_info():
+  print("-- Python version --")
+  print(sys.version_info)
+  #logging.info(sys.version_info)
+
+  print("site-packages=")
+  print(sysconfig.get_path('purelib'))
+  #logging.info(sysconfig.get_path('purelib'))
+
+
+  print("\n--- ENVIRONMENT VARIABLES ---\n")
+  for k,v in sorted(os.environ.items()):
+     print(k,":",v)
+     #logging.info(k + "=" + v)
+
+
+  print("\n---- PATH ----\n")
+  for item in os.environ["PATH"].split(':') :
+     print(item)
+     #logging.info(item)
+     
+info = PythonOperator(
+  task_id = 'info',
+  python_callable = py_info,
+  dag = dag
+)
+```     
 
 ### Medium articles
 
