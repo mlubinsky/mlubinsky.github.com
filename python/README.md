@@ -4,6 +4,12 @@ Regexep to find leading 0 in month, just after year:
 ```
 grep -E 'datetime\([[:space:]]*2\d{3}[[:space:]]*,[[:space:]]*0' datetime.txt
 ```
+
+Regexep to find leading 0 in day, just after month:
+```
+grep -E 'datetime\([[:space:]]*2\d{3}[[:space:]]*,[[:space:]]*\d+,[[:space:]]*0' datetime.txt
+```
+
 https://mymasterdesigner.com/2021/07/06/data-structures-with-python-big-guide/
 
 https://anothertechs.com/programming/python/python-data-structure-cheat-sheet-2021/
