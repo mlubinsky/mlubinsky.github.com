@@ -9,6 +9,11 @@ https://www.manning.com/downloads/2060 . source code
 https://marclamberti.com/blog/airflow-branchpythonoperator/ . BranchPythonOperator
 
 ```
+import os
+import sys
+import sysconfig
+import logging
+
 def py_info():
   print("-- Python version --")
   print(sys.version_info)
