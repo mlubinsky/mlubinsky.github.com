@@ -11,6 +11,8 @@ https://hakibenita.com/sql-dos-and-donts Faux predicate
 
 https://medium.com/swlh/recursion-in-sql-explained-graphically-679f6a0f143b
 
+https://news.ycombinator.com/item?id=28018058
+
 ### SQL UI client tools
 
 Sequel-Ace https://github.com/Sequel-Ace/Sequel-Ace
