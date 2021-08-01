@@ -13,6 +13,7 @@ import os
 import sys
 import sysconfig
 import logging
+from airflow.operators.python_operator import PythonOperator
 
 def py_info():
   print("-- Python version --")
