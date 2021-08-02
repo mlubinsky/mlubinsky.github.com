@@ -1,5 +1,9 @@
 https://stackoverflow.com/questions/68606694/how-to-grep-and-replace-this-pattern-from-command-line
 
+https://earthly.dev/blog/command-line-tools/
+
+https://news.ycombinator.com/item?id=27992073
+
 https://habr.com/ru/company/gms/blog/553078/ . useful command-line utils
 
 https://habr.com/ru/company/ruvds/blog/567150/
