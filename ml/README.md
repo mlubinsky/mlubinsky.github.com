@@ -6,6 +6,8 @@ https://www.youtube.com/watch?v=RaTe3dhiqdE  entropy, mutual info
 
 https://huyenchip.com/ml-interviews-book/  INTERVIEW BOOK
 
+https://rentruewang.github.io/learning-machine/intro.html. BOOK
+
 https://arxiv.org/abs/2010.03415 Knowledge based learning
 
 
