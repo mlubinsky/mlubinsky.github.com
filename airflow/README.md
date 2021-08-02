@@ -1,5 +1,28 @@
 https://airflow.apache.org/docs/
 
+To to make Several DAGs folders?
+https://xnuinside.medium.com/how-to-load-use-several-dag-folders-airflow-dagbags-b93e4ef4663c
+
+we need to put in your standard dag_folder special tiny python script.
+Call this file something like ‘add_dag_bags.py’ with very simple code inside. 
+To show, how it works, we will create two separate folders: ‘~/new_dag_bag1’ and ‘~/work/new_dag_bag2’. 
+It does not matter how much long path and there it is placed. Airflow just must have rights to access those folders.
+Code in add_dag_bags.py will be:
+
+```
+""" add additional DAGs folders """
+import os
+from airflow.models import DagBag
+dags_dirs = ['~/new_dag_bag1', '~/work/new_dag_bag2']
+
+for dir in dags_dirs:
+   dag_bag = DagBag(os.path.expanduser(dir))
+
+   if dag_bag:
+      for dag_id, dag in dag_bag.dags.items():
+         globals()[dag_id] = dag
+```
+
 ### Book
 
 https://www.manning.com/books/data-pipelines-with-apache-airflow
