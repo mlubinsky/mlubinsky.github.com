@@ -4,6 +4,10 @@ https://phiresky.github.io/blog/2020/sqlite-performance-tuning/
 
 https://antonz.org/sqlite-is-not-a-toy-database/
 
+https://blog.zachwf.com/posts/sqlite-is-dynamically-typed/
+
+https://news.ycombinator.com/item?id=28050198
+
 https://sqlite-utils.datasette.io/en/stable/cli.html#inserting-csv-or-tsv-data  Import from csv
 
 https://unixsheikh.com/articles/sqlite-the-only-database-you-will-ever-need-in-most-cases.html
