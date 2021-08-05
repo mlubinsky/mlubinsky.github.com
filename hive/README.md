@@ -26,6 +26,17 @@ select array(named_struct("person_id","1","first_name","ooo"));
  
 [{"person_id":"1","first_name":"ooo"}]
 
+
+### JSON processing: get_json _object and json_tuple()
+
+json_tuple() takes a set of keys and a JSON string. Then returns a tuple of values. 
+The json_tuple() UDF uses the lateral view syntax in Hive, which enables json_tuple() to create a virtual table 
+by applying the UDT function to each row of the original table. 
+Complex JSONs become too unwieldy because of the repeated use of LATERAL VIEW. 
+Furthermore, JSON_TUPLE can't handle nested JSONs.
+
+https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/using-json-in-hive
+
 ### Array of maps :
 
 select array(map("language","string")) 
