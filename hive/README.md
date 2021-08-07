@@ -17,6 +17,53 @@ curl -O http://central.maven.org/maven2/org/apache/avro/avro-tools/1.8.1/avro-to
 java -jar avro-tools-1.8.1.jar tojson --pretty [job_output].avro > output.json
 ```
 
+### zip file processing
+
+https://cwiki.apache.org/confluence/display/Hive/CompressedStorage
+
+load data local inpath '/home/hdfs/employee_gz.gz' into table employee_gz;
+
+```
+echo {a..c}{1..100} | xargs -n 100 | tr ' ' '|'  | \
+hdfs dfs -put - /user/hive/warehouse/mytable/data.txt
+
+create external table mytable
+(
+    col58   string
+   ,col64   string
+   ,col65   string
+)
+row format serde 'org.apache.hadoop.hive.serde2.RegexSerDe'
+with serdeproperties ("input.regex" = "^(?:([^|]*)\\|){58}(?:([^|]*)\\|){6}([^|]*)\\|.*$")
+stored as textfile
+location '/user/hive/warehouse/mytable'
+;
+```
+Another example
+http://alvincjin.blogspot.com/2014/11/hive-load-csvgz-files.html
+```
+CREATE TABLE csv_table (line STRING)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' 
+LINES TERMINATED BY '\n'
+tblproperties ("skip.header.line.count"="1");
+ 
+LOAD DATA LOCAL INPATH '/tmp/weblogs/20090603-access.log.gz' INTO TABLE csv_table;
+
+SET hive.exec.compress.output=true;
+SET io.seqfile.compression.type=BLOCK; -- NONE/RECORD/BLOCK
+INSERT OVERWRITE TABLE csv_table_sequence SELECT * FROM csv_table;
+```
+https://github.com/bernhard-42/spark-unzip
+
+since it is not splittable, every zipfile will be read by exactly one mapper (low parallelism)
+
+https://stackoverflow.com/questions/43094458/creating-external-table-from-compressed-gz-format-files-without-selecting-all
+
+http://cutler.io/2012/07/hadoop-processing-zip-files-in-mapreduce/
+
+https://github.com/bernhard-42/spark-unzip
+
+https://stackoverflow.com/questions/56158947/processing-loading-huge-gzip-file-into-hive
 
 ### Array of structures  :
 
