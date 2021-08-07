@@ -4,6 +4,8 @@ https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
 
 https://tomaugspurger.github.io/modern-1-intro.html modern Pandas
 
+https://pandas.pydata.org/pandas-docs/stable/pandas.pdf Documentation
+
 Add style to dataframe cells:
 https://www.analyticsvidhya.com/blog/2021/06/style-your-pandas-dataframe-and-make-it-stunning/
 
