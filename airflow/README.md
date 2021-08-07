@@ -1,5 +1,7 @@
 https://airflow.apache.org/docs/
 
+https://airflow.readthedocs.io/en/1.10.10/concepts.html
+
 To to make Several DAGs folders?
 https://xnuinside.medium.com/how-to-load-use-several-dag-folders-airflow-dagbags-b93e4ef4663c
 
