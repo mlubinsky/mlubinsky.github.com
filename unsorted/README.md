@@ -1,6 +1,8 @@
 Делайте что хотите, но пусть это приносит радость
 /Уолт Уитмен/
 
+https://habr.com/ru/post/571426/ Be happy!
+
 https://learnxinyminutes.com/ Learn in 6 mins
 
 http://curtclifton.net/papers/MoseleyMarks06a.pdf . Out of Tar Pit
