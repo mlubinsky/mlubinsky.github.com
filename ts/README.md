@@ -105,7 +105,7 @@ https://www.pressreader.com/australia/linux-format/20210601/283437784410697
 
 ### Time series classification
 
-tslearn
+tslearn : https://andrewm4894.com/2020/09/03/time-series-clustering-with-tslearn/
 
 https://towardsdatascience.com/how-to-apply-k-means-clustering-to-time-series-data-28d04a8f7da3
 
