@@ -7,8 +7,6 @@ https://www.youtube.com/watch?v=lqatzxjHx-A
 
 
 
-https://arxiv.org/abs/1809.04356 Deep learning for time series classification: a review
-
 https://habr.com/ru/post/559796/ Прогнозирование временных рядов с помощью AutoML
 
 https://www.youtube.com/watch?v=Ct2Lg0lOLoE . AutoML for TS
@@ -59,11 +57,47 @@ https://otexts.com/fpp2/
 
 ### Time series classification
 
+The difference to many classification problems in machine learning is that the data is ordered along the time dimension, and as such a good algorithm would need to exploit this property of the data.
+
+Classification on the other hand needs to find patterns in the data that are different between different classes in order to determine the class of the time series at hand.
+
+ynamic time warping  DTW [5] is used to calculate the distance between two time series (Fig. 3); 
+without a distance 1-NN cannot determine which time series is nearest. 
+The most naive way would be to just take the distance between each point in the time series. 
+However, it is not necessarily clear which points should be compared to which in the two time series. 
+For instance, if two identical time series are just shifted slightly, then this would result in a big distance. 
+DTW solves this by pairing up the different time points by drawing lines between them in such a way that each time point in a series must be connected to a time point in the other series, and two lines must never cross (Fig. 3). 
+The distance is the sum of the difference between the paired time points. 
+DTW chooses the connection lines in a way that minimizes this distance.
+
+
+
+https://developersbay.se/time-series-classification-an-overview/
+
+https://datascience.stackexchange.com/a/3764/2452
+
+http://alexminnaar.com/2014/04/16/Time-Series-Classification-and-Clustering-with-Python.html
+
+https://arxiv.org/abs/1809.04356 Deep learning for time series classification: a review
+
 http://tseregression.org/
 
 <http://www.timeseriesclassification.com/>
 
 https://paperswithcode.com/task/time-series-classification/latest
+
+https://medium.com/@hassanismailfawaz/deep-learning-for-time-series-classification-a-brief-overview-73b58767ed0f
+
+https://medium.datadriveninvestor.com/time-series-classification-using-feature-extraction-16209570a22e
+
+https://datasciencemilan.medium.com/time-series-classification-with-deep-learning-205db7b47e1e
+
+https://link.springer.com/article/10.1007/s10618-020-00727-3
+
+
+https://arxiv.org/abs/1909.05738.  sktime
+
+https://www.jmlr.org/papers/volume21/19-763/19-763.pdf.  pyts  A Python Package for Time Series Classification
 
 ### Bayesian structural time series
 
