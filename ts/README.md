@@ -105,6 +105,8 @@ https://www.pressreader.com/australia/linux-format/20210601/283437784410697
 
 ### Time series classification
 
+tslearn
+
 https://towardsdatascience.com/how-to-apply-k-means-clustering-to-time-series-data-28d04a8f7da3
 
 https://wiki.smu.edu.sg/18191isss608g1/img_auth.php/f/fd/Time_Series_Clustering_A_Decade_Review.pdf
@@ -175,6 +177,8 @@ A review on distance based time series classification
 https://www.cs.ucr.edu/~eamonn/Complexity-Invariant%20Distance%20Measure.pdf
 
 https://www.ijcaonline.org/archives/volume179/number6/kulkarni-2017-ijca-915974.pdf
+
+https://bird.bcamath.org/bitstream/handle/20.500.11824/888/review.pdf?sequence=1&isAllowed=y
 
 ### Bayesian structural time series
 
