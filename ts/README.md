@@ -72,6 +72,8 @@ https://huyenchip.com/2019/07/21/machine-learning-interviews.html
 
 https://en.wikipedia.org/wiki/Dynamic_time_warping
 
+https://trendypy.readthedocs.io/en/latest/README.html
+
 The difference to many classification problems in machine learning is that the data is ordered along the time dimension, and as such a good algorithm would need to exploit this property of the data.
 
 Classification on the other hand needs to find patterns in the data that are different between different classes in order to determine the class of the time series at hand.
