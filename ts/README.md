@@ -57,6 +57,17 @@ https://otexts.com/fpp2/
 
 https://www.routledge.com/Time-Series-Clustering-and-Classification/Maharaj-DUrso-Caiado/p/book/9781032093499
 
+ 
+https://machinelearningmastery.com/deep-learning-for-time-series-forecasting/. $37
+
+https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook/dp/B07Y5WSCV2
+
+https://www.amazon.com/Machine-Learning-Time-Forecasting-Python-ebook/dp/B08PQ6ZV71
+
+https://www.amazon.com/Hands-Time-Analysis-Python-Techniques-ebook/dp/B08GLG46PQ/
+
+https://huyenchip.com/2019/07/21/machine-learning-interviews.html
+
 ### Time series classification
 
 The difference to many classification problems in machine learning is that the data is ordered along the time dimension, and as such a good algorithm would need to exploit this property of the data.
@@ -78,6 +89,8 @@ https://developersbay.se/time-series-classification-an-overview/
 
 https://datascience.stackexchange.com/a/3764/2452
 
+https://www.quora.com/What-are-some-time-series-measures
+
 http://alexminnaar.com/2014/04/16/Time-Series-Classification-and-Clustering-with-Python.html
 
 https://arxiv.org/abs/1809.04356 Deep learning for time series classification: a review
@@ -96,10 +109,16 @@ https://datasciencemilan.medium.com/time-series-classification-with-deep-learnin
 
 https://link.springer.com/article/10.1007/s10618-020-00727-3
 
+https://www.quora.com/What-are-some-time-series-classification-methods
 
+https://www.quora.com/topic/Dynamic-Time-Warping-Time-Series-Analysis
+
+python code:
 https://arxiv.org/abs/1909.05738.  sktime
 
 https://www.jmlr.org/papers/volume21/19-763/19-763.pdf.  pyts  A Python Package for Time Series Classification
+
+https://github.com/johannfaouzi/pyts
 
 ### Bayesian structural time series
 
@@ -467,16 +486,7 @@ The direct forecasting strategy uses a different ML model for each forecasting s
 
 https://dzone.com/articles/lessons-learnt-while-solving-time-series-forecasti-1
 
-## Books
-https://machinelearningmastery.com/deep-learning-for-time-series-forecasting/. $37
 
-https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook/dp/B07Y5WSCV2
-
-https://www.amazon.com/Machine-Learning-Time-Forecasting-Python-ebook/dp/B08PQ6ZV71
-
-https://www.amazon.com/Hands-Time-Analysis-Python-Techniques-ebook/dp/B08GLG46PQ/
-
-https://huyenchip.com/2019/07/21/machine-learning-interviews.html
 
 ## Machine Learning mastery
 
