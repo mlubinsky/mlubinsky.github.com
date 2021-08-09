@@ -70,11 +70,13 @@ https://huyenchip.com/2019/07/21/machine-learning-interviews.html
 
 ### Time series classification
 
+https://en.wikipedia.org/wiki/Dynamic_time_warping
+
 The difference to many classification problems in machine learning is that the data is ordered along the time dimension, and as such a good algorithm would need to exploit this property of the data.
 
 Classification on the other hand needs to find patterns in the data that are different between different classes in order to determine the class of the time series at hand.
 
-ynamic time warping  DTW [5] is used to calculate the distance between two time series (Fig. 3); 
+Dynamic time warping  DTW  is used to calculate the distance between two time series (Fig. 3); 
 without a distance 1-NN cannot determine which time series is nearest. 
 The most naive way would be to just take the distance between each point in the time series. 
 However, it is not necessarily clear which points should be compared to which in the two time series. 
