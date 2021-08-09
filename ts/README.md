@@ -246,6 +246,12 @@ https://www.youtube.com/watch?v=F_gHV-Zq158
 
 ### Anomaly detection in time series
 
+https://andrewm4894.com/2021/01/03/anomaly-detection-resources/
+
+https://andrewm4894.com/2020/10/19/different-types-of-time-series-anomalies/
+
+https://github.com/netdata/community/blob/main/netdata-agent-api/netdata-pandas/anomalies_collector_deepdive.ipynb
+
 https://www.relataly.com/multivariate-outlier-detection-using-isolation-forests-in-python-detecting-credit-card-fraud/
 
 https://towardsdatascience.com/time-series-anomaly-detection-with-pycaret-706a6e2b2427
