@@ -55,6 +55,8 @@ https://neuralprophet.com/model-overview/
 
 https://otexts.com/fpp2/
 
+https://www.routledge.com/Time-Series-Clustering-and-Classification/Maharaj-DUrso-Caiado/p/book/9781032093499
+
 ### Time series classification
 
 The difference to many classification problems in machine learning is that the data is ordered along the time dimension, and as such a good algorithm would need to exploit this property of the data.
