@@ -68,9 +68,50 @@ https://www.amazon.com/Hands-Time-Analysis-Python-Techniques-ebook/dp/B08GLG46PQ
 
 https://huyenchip.com/2019/07/21/machine-learning-interviews.html
 
+### Matrix Profile
+
+https://towardsdatascience.com/introduction-to-matrix-profiles-5568f3375d90
+
+mpdist python
+
+https://www.cs.ucr.edu/~eamonn/MatrixProfile.html
+
+https://matrixprofile.org/categories/tutorial/
+
+https://ui.matrixprofile.org/
+
+https://matrixprofile.org/posts/how-to-painlessly-analyze-your-time-series/
+
+https://pythonrepo.com/repo/target-matrixprofile-ts-python-machine-learning
+
+https://pypi.org/project/matrixprofile-ts/
+
+```
+The basics of Matrix Profile are simple: If I take a snippet of my data and slide it along the rest of the time series, how well does it overlap at each new position? More specifically, we can evaluate the Euclidean distance between a subsequence and every possible time series segment of the same length, building up what’s known as the snippet’s “Distance Profile.”
+
+If the subsequence repeats itself in the data, there will be at least one perfect match and the minimum Euclidean distance will be zero (or close to zero in the presence of noise). In contrast, if the subsequence is highly unique (say it contains a significant outlier), matches will be poor and all overlap scores will be high. Note that the type of data is irrelevant: We’re only looking at general pattern conservation.
+
+We then slide every possible snippet across the time series, building up a collection of Distance Profiles. By taking the minimum value for each time step across all distance profiles, we can build the final Matrix Profile. Notice that both ends of the Matrix Profile value spectrum are useful. High values indicate uncommon patterns or anomalous events; in contrast, low values highlight repeatable motifs and provide valuable insight into your time series of interest.
+
+```
+
+stumpy 
+https://stumpy.readthedocs.io/en/latest/
+
+https://stumpy.readthedocs.io/en/latest/Tutorial_The_Matrix_Profile.html
+
+https://www.pressreader.com/australia/linux-format/20210601/283437784410697
+
+
 ### Time series classification
 
+https://towardsdatascience.com/how-to-apply-k-means-clustering-to-time-series-data-28d04a8f7da3
+
+https://wiki.smu.edu.sg/18191isss608g1/img_auth.php/f/fd/Time_Series_Clustering_A_Decade_Review.pdf
+
 https://en.wikipedia.org/wiki/Dynamic_time_warping
+
+http://people.cs.uchicago.edu/~jopa/Papers/PaparrizosSIGMOD2020.pdf
 
 https://trendypy.readthedocs.io/en/latest/README.html
 
@@ -124,6 +165,17 @@ https://www.jmlr.org/papers/volume21/19-763/19-763.pdf.  pyts  A Python Package 
 
 https://github.com/johannfaouzi/pyts
 
+file:///Users/miclub01/Downloads/energies-06-00579-v2.pdf
+
+https://www.sciencedirect.com/science/article/abs/pii/S0167278996001546?via%3Dihub  Measuring the distance between time series
+
+https://arxiv.org/abs/1806.04509 
+A review on distance based time series classification
+
+https://www.cs.ucr.edu/~eamonn/Complexity-Invariant%20Distance%20Measure.pdf
+
+https://www.ijcaonline.org/archives/volume179/number6/kulkarni-2017-ijca-915974.pdf
+
 ### Bayesian structural time series
 
 https://www.statsmodels.org/devel/examples/notebooks/generated/statespace_sarimax_pymc3.html?fbclid=IwAR38a2rYbidnve1bB-fawLCBgCisxAfcJVo1x5ODhlA2yYpf7xab9_ENYqI
@@ -132,6 +184,7 @@ https://en.wikipedia.org/wiki/Bayesian_structural_time_series
 
 https://github.com/dafiti/causalimpact?fbclid=IwAR0493C25INSgNY-aZFg-OKNPA2BnFjteN2eiZIEYsOmhr16skLLcEacbKY
 
+https://www.sciencedirect.com/science/article/abs/pii/S0167278996001546?via%3Dihub  
 
 ### Transformers
 
