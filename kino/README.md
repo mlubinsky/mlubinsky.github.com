@@ -8,6 +8,8 @@ https://soap.d3.ru/porekomenduite-pozhaluista-detektivnyi-serial-1990105/?sortin
 
 https://obsudim-serialy.livejournal.com/
 
+https://irin-v.livejournal.com/tag/%D0%9A%D0%B8%D0%BD%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B
+
 https://zbzkino.d3.ru/
 
 https://ahiin.livejournal.com/293907.html
