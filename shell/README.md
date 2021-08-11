@@ -6,6 +6,18 @@ https://news.ycombinator.com/item?id=27992073
 
 https://habr.com/ru/company/gms/blog/553078/ . useful command-line utils
 
+### change the delimiter of a file using the tr command
+``
+cat input.tsv | tr "\\t" "," > input.csv
+
+cat input.csv | tr "," "\\t" > input.tsv
+``
+
+### Determining the Number of Columns
+```
+cat input.csv | grep -v "^#" | awk "{print NF}" FS=, | uniq
+```
+
 https://habr.com/ru/company/ruvds/blog/567150/
 
 https://www.redhat.com/sysadmin/bash-error-handling Bash error handling!
