@@ -7,6 +7,12 @@ https://news.ycombinator.com/item?id=27992073
 https://habr.com/ru/company/gms/blog/553078/ . useful command-line utils
 
 
+### Group by in AWK
+
+https://www.theunixschool.com/2012/06/awk-10-examples-to-group-data-in-csv-or.html
+
+https://github.com/harelba/q   SQL for CSV files  http://harelba.github.io/q/
+
 ### Only records where 5th column > threshold
 
 awk  '$5 >= 2'  i.txt
