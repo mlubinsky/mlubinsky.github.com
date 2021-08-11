@@ -7,7 +7,14 @@ https://news.ycombinator.com/item?id=27992073
 https://habr.com/ru/company/gms/blog/553078/ . useful command-line utils
 
 
+### Sort by numeric column 2
+
+sort -k2 -n file
+
 ### Group by in AWK
+```
+awk {'a[$2]+=$6;}END{for(i in a)print i" "a[i];}' seq_with_dev.sql.out > group.txt
+```
 
 https://www.theunixschool.com/2012/06/awk-10-examples-to-group-data-in-csv-or.html
 
