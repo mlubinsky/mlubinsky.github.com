@@ -13,6 +13,8 @@ https://www.theunixschool.com/2012/06/awk-10-examples-to-group-data-in-csv-or.ht
 
 https://github.com/harelba/q   SQL for CSV files  http://harelba.github.io/q/
 
+https://github.com/tobimensch/termsql termSQL (python3)
+
 ### Only records where 5th column > threshold
 
 awk  '$5 >= 2'  i.txt
