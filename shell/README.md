@@ -7,6 +7,10 @@ https://news.ycombinator.com/item?id=27992073
 https://habr.com/ru/company/gms/blog/553078/ . useful command-line utils
 
 
+### Only records where 5th column > threshold
+
+awk  '$5 >= 2'  i.txt
+
 ### Remove header
 ```
 cat input.csv | sed "1 d" > noheader.csv
