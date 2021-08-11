@@ -12,11 +12,11 @@ https://habr.com/ru/company/gms/blog/553078/ . useful command-line utils
 cat input.csv | sed "1 d" > noheader.csv
 ```
 ### change the delimiter of a file using the tr command
-``
+```
 cat input.tsv | tr "\\t" "," > input.csv
 
 cat input.csv | tr "," "\\t" > input.tsv
-``
+```
 
 ### Determining the Number of Columns
 ```
