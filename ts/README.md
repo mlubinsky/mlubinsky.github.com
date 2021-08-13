@@ -19,6 +19,10 @@ https://towardsdatascience.com/a-brief-introduction-to-time-series-classificatio
  
 http://ceur-ws.org/Vol-2259/aics_11.pdf
 
+https://arxiv.org/pdf/2103.14200.pdf
+
+
+
 https://facebookresearch.github.io/Kats/   KATS from Facebook
 
 https://github.com/linkedin/greykite  GreyKite from LinkedIn 
