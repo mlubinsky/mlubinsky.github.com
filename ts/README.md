@@ -2,16 +2,19 @@ https://www.wrighters.io/indexing-time-series-data-in-pandas/  Indexing time ser
 
 https://ibexorigin.medium.com/list/time-series-forecast-from-scratch-c72ccf7a9229
 
-
 https://www.youtube.com/watch?v=lqatzxjHx-A
-
-
 
 https://habr.com/ru/post/559796/ Прогнозирование временных рядов с помощью AutoML
 
 https://www.youtube.com/watch?v=Ct2Lg0lOLoE . AutoML for TS
 
+
+### New ts analysis 
 https://facebookresearch.github.io/Kats/   KATS from Facebook
+
+https://github.com/unit8co/darts Darts
+
+https://news.ycombinator.com/item?id=28155196
 
 ### Time weighted averages
 
