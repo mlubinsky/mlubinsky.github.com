@@ -9,7 +9,13 @@ https://habr.com/ru/post/559796/ Прогнозирование временны
 https://www.youtube.com/watch?v=Ct2Lg0lOLoE . AutoML for TS
 
 
-### New ts analysis 
+### New  
+
+https://towardsdatascience.com/a-brief-introduction-to-time-series-classification-algorithms-7b4284d31b97
+
+ Comparison of k-NN Methods for Time Series Classification and Regression
+http://ceur-ws.org/Vol-2259/aics_11.pdf
+
 https://facebookresearch.github.io/Kats/   KATS from Facebook
 
 https://github.com/linkedin/greykite  GreyKite from LinkedIn 
