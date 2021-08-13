@@ -12,6 +12,9 @@ https://www.youtube.com/watch?v=Ct2Lg0lOLoE . AutoML for TS
 ### New ts analysis 
 https://facebookresearch.github.io/Kats/   KATS from Facebook
 
+https://github.com/linkedin/greykite  GreyKite from LinkedIn 
+
+### Darts 
 https://github.com/unit8co/darts Darts
 
 https://news.ycombinator.com/item?id=28155196
