@@ -14,6 +14,9 @@ https://www.youtube.com/watch?v=Ct2Lg0lOLoE . AutoML for TS
 https://towardsdatascience.com/a-brief-introduction-to-time-series-classification-algorithms-7b4284d31b97
 
  Comparison of k-NN Methods for Time Series Classification and Regression
+ 
+ https://pyts.readthedocs.io/en/stable/modules/classification.html
+ 
 http://ceur-ws.org/Vol-2259/aics_11.pdf
 
 https://facebookresearch.github.io/Kats/   KATS from Facebook
