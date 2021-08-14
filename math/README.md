@@ -1,5 +1,7 @@
 Ветераны броуновского движения - Вступайте в ряды Фурье!
 
+http://textbooks.math.gatech.edu/ila/index.html. Interactive linear algebra 
+
 https://news.ycombinator.com/item?id=28168339 Interactive math links!
 
 https://www.youtube.com/watch?v=8v0OYSowjok
