@@ -13,7 +13,10 @@ https://habr.com/ru/company/ntechlab/blog/540728/ bazel
 
 https://habr.com/ru/post/541024/ . Science channels
 
+### Software Engineering's Greatest Hits
 https://www.youtube.com/watch?v=HrVtA-ue-x0  Software Engineering's Greatest Hits
+
+https://news.ycombinator.com/item?id=28178257
 
 ### Interesting blogs  
 
