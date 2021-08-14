@@ -1,5 +1,7 @@
 https://mccme.ru/shen/progbook/7edition.pdf
 
+https://blog.bradfieldcs.com/an-introduction-to-hashing-in-the-era-of-machine-learning-6039394549b0
+
 http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big data
 
 http://www.dspguide.com/pdfbook.htm DSP book
@@ -7,6 +9,8 @@ http://www.dspguide.com/pdfbook.htm DSP book
 https://habr.com/ru/company/otus/blog/565988/ . Median in the stream
   
 https://betterprogramming.pub/top-5-hardest-coding-questions-from-recent-faang-interviews-d46bcb4dd8dc
+
+https://boyter.org/posts/bloom-filter/ Bloom filter 
 
 http://jeffe.cs.illinois.edu/teaching/algorithms/
 
