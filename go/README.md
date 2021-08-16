@@ -8,6 +8,7 @@ https://habr.com/ru/company/ispring/blog/560032/
 
 https://tdom.dev/go-in-production. Go in production: web frameworks and sql
 
+https://news.ycombinator.com/item?id=28196962
 
 https://www.ardanlabs.com/blog/2020/09/using-python-memory.html. Go + Python
 
