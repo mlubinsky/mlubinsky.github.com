@@ -3,7 +3,9 @@
 
 https://habr.com/ru/post/571426/ Be happy!
 
-https://learnxinyminutes.com/ Learn in 6 mins
+https://habr.com/ru/company/yandex_praktikum/blog/573090/ logical argumentation (ru)
+
+https://learnxinyminutes.com/ Learn X in 6 mins
 
 http://curtclifton.net/papers/MoseleyMarks06a.pdf . Out of Tar Pit
 
