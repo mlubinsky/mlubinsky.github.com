@@ -1,3 +1,5 @@
+https://winand.at/sql-slides-for-developers
+
 https://github.com/dinedal/textql  SQL for CSV and TSV
 
 https://habr.com/ru/company/otus/blog/541882/
