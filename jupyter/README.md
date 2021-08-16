@@ -2,6 +2,12 @@ https://github.com/mwouts/jupytext  Notebook which works with regular .py files
 
 https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
 
+### Panda tricks
+
+https://habr.com/ru/company/skillfactory/blog/573154/
+
+https://realpython.com/python-pandas-tricks/
+
 https://tomaugspurger.github.io/modern-1-intro.html modern Pandas
 
 https://pandas.pydata.org/pandas-docs/stable/pandas.pdf Documentation
