@@ -19,6 +19,8 @@ https://mymasterdesigner.com/2021/07/06/data-structures-with-python-big-guide/
 
 https://anothertechs.com/programming/python/python-data-structure-cheat-sheet-2021/
 
+https://habr.com/ru/company/otus/blog/573164/ functools
+
 https://lwn.net/SubscriberLink/861910/67bbe2390d2e0c93/ API, slots, etc
 
 https://death.andgravity.com/namedtuples named tuples vs dataclasses
