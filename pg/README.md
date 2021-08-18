@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=D8Q4n6YXdpk . Window funct in Postgres
 
+https://habr.com/ru/company/tensor/blog/573214/ SQL optimization
+
 https://habr.com/ru/company/rostelecom/blog/566624/  Migration from Oracle to PG
 
 https://habr.com/ru/company/timeweb/blog/562820/ do we need Redis if we have Postgres?
