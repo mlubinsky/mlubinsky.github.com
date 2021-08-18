@@ -45,6 +45,9 @@ https://habr.com/ru/post/550088/ interview
 
 http://algorithmsbook.com/ Algorithms for Decision Making
 
+### B-tree
+https://benjamincongdon.me/blog/2021/08/17/B-Trees-More-Than-I-Thought-Id-Want-to-Know/
+
 https://erthalion.info/2020/11/28/evolution-of-btree-index-am/
 
 
@@ -79,7 +82,7 @@ https://www.reddit.com/r/MachineLearning/comments/fdw0ax/d_advanced_courses_upda
 
 http://courses.csail.mit.edu/6.851/
 
-https://erthalion.info/2020/11/28/evolution-of-btree-index-am/
+ 
 
 find the longest palindrome subsequence of a string optimally
 
