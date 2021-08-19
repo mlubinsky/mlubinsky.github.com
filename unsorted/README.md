@@ -5,6 +5,9 @@ https://habr.com/ru/post/571426/ Be happy!
 
 https://habr.com/ru/company/yandex_praktikum/blog/573090/ logical argumentation (ru)
 
+https://news.ycombinator.com/item?id=28232165 interesing blog posts
+
+
 https://learnxinyminutes.com/ Learn X in 6 mins
 
 http://curtclifton.net/papers/MoseleyMarks06a.pdf . Out of Tar Pit
