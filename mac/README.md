@@ -17,6 +17,24 @@ brew install --cask disk-inventory-x
 
 https://kapeli.com/dash
 
+
+### 
+
+https://www.mediaatelier.com/CheatSheet/
+
+https://habr.com/ru/company/jugru/blog/573936/
+
+Cmd+Q ("command quit") — выход из приложения
+
+Cmd+H ("command hide") — скрыть окно
+
+Cmd+F ("command find") — поиск
+
+Cmd+C ("command copy") — копирование
+
+Cmd+↑ ("command up") — переход на уровень выше
+
+Cmd+↓ ("command down") — переход на уровень ниже
  
 
 ### Chrome extensions
