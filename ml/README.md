@@ -10,6 +10,7 @@ https://rentruewang.github.io/learning-machine/intro.html. BOOK
 
 https://arxiv.org/abs/2010.03415 Knowledge based learning
 
+https://habr.com/ru/company/otus/blog/573924/
 
 https://github.com/dair-ai/ML-YouTube-Courses
 
