@@ -50,6 +50,7 @@ https://benjamincongdon.me/blog/2021/08/17/B-Trees-More-Than-I-Thought-Id-Want-t
 
 https://erthalion.info/2020/11/28/evolution-of-btree-index-am/
 
+https://habr.com/ru/company/yandex/blog/572588/ hash tables
 
 ### local sensitive hashing - LSH
 
