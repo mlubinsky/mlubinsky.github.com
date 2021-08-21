@@ -23,6 +23,8 @@ https://austinrochford.com/posts/2021-06-10-lego-pymc3.html
 
 ### Casual inference
 
+https://microsoft.github.io/dowhy/
+
 https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
 
 https://www.bradyneal.com/which-causal-inference-book
