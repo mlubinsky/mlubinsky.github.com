@@ -19,7 +19,7 @@ https://habr.com/ru/company/otus/blog/558478/
 
 https://python-graph-gallery.com/ Pandas, Seaborn, Matplotlib examples!
 
-https://pythonplot.com/?fbclid=IwAR2uOUXadQ2GT96OsOlgCXa98ayCv18PvkiMIigD4kPK2QuM0wCFGivo0SI Pandas, Seaborn, Matplotlib examples!
+https://pythonplot.com/  Pandas, Seaborn, Matplotlib examples!
 
 https://matplotlib.org/stable/gallery/index.html Matplotlib examples
 
