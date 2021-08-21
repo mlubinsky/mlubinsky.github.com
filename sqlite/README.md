@@ -14,6 +14,15 @@ https://unixsheikh.com/articles/sqlite-the-only-database-you-will-ever-need-in-m
 
 https://habr.com/ru/company/otus/blog/541820/.  SQLite with  Python and Go
 
+
+```
+  CREATE TABLE tIssue (
+    id   INTEGER PRIMARY KEY NOT NULL CHECK (typeof(id) = 'integer'),
+    col1 BLOB NOT NULL                CHECK (typeof(col1) = 'blob'),
+    col2 TEXT                         CHECK (typeof(col2) = 'text' OR col2 IS NULL)
+  );
+  ```
+
 ### Fast insert
 https://blog.metaobject.com/2021/07/inserting-130m-sqlite-rows-per.html
 
