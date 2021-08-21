@@ -23,6 +23,8 @@ https://pythonplot.com/  Pandas, Seaborn, Matplotlib examples!
 
 https://matplotlib.org/stable/gallery/index.html Matplotlib examples
 
+https://github.com/matplotlib/cheatsheets
+
 https://machinelearningmastery.com/seaborn-data-visualization-for-machine-learning
 
 https://habr.com/ru/post/557424/
