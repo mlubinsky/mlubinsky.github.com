@@ -19,6 +19,22 @@ https://hackersandslackers.com/s3-boto3-python-sdk/
 
 <https://medium.com/swlh/using-s3-just-like-a-local-file-system-in-python-497737783f11>
 
+### How to get list of subfolders:
+
+```
+def get_keys_in_bucket_folder(bucket_name, prefix=None):
+    try:
+      c = boto3.client('s3')
+      result = c.list_objects(Bucket=bucket_name, Prefix=prefix, Delimiter='/')
+      for o in result.get('CommonPrefixes'):
+          print 'sub folder : ', o.get('Prefix')
+      return
+      
+my_bucket="xxxx"
+my_prefix = "yyyy/zzzz/"      - last / is important!
+get_keys_in_bucket_folder(my_bucket, my_prefix)
+```
+
 ### How to read AWS file names
 ```
 objs = boto3.client.list_objects(Bucket='my_bucket')
