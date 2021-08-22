@@ -8,6 +8,8 @@ https://www.youtube.com/watch?v=lqatzxjHx-A
 
 https://habr.com/ru/post/559796/ Прогнозирование временных рядов с помощью AutoML
 
+### Visualization
+
 https://www.youtube.com/watch?v=Ct2Lg0lOLoE . AutoML for TS
 
 Lux provides visualisation tools for exploring pandas dataframes interactively and automatically via jupyter notebook widgets. 
@@ -16,6 +18,7 @@ https://github.com/lux-org/lux
 
 https://www.python-graph-gallery.com/ 
 
+# Python libraries
 https://towardsdatascience.com/thirty-two-python-tools-and-package-libraries-to-increase-your-machine-learning-productivity-fc7bf785c5c2
 
 Python Data class
