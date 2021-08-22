@@ -10,6 +10,23 @@ https://habr.com/ru/post/559796/ Прогнозирование временны
 
 https://www.youtube.com/watch?v=Ct2Lg0lOLoE . AutoML for TS
 
+Lux provides visualisation tools for exploring pandas dataframes interactively and automatically via jupyter notebook widgets. 
+
+https://github.com/lux-org/lux
+
+https://www.python-graph-gallery.com/ 
+
+https://towardsdatascience.com/thirty-two-python-tools-and-package-libraries-to-increase-your-machine-learning-productivity-fc7bf785c5c2
+
+Python Data class
+https://medium.com/analytics-and-data/pythons-data-classes-a-data-engineer-s-best-friend-173617ee0941
+
+#### Averaging
+
+data['MA10'] = data['Close'].rolling(10).mean()
+
+Exponential moving average 
+data['EMA10'] = data['Close'].ewm(span=10, adjust=False).mean()
 
 ### New  
 
