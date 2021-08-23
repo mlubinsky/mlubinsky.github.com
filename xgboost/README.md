@@ -1,5 +1,6 @@
 https://xgboost.readthedocs.io/en/latest/index.html
 
+https://habr.com/ru/post/573040/
 
 https://machinelearningmastery.com/xgboost-for-time-series-forecasting/
 
