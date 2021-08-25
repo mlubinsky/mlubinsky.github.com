@@ -403,6 +403,9 @@ https://news.ycombinator.com/item?id=21281025
 https://kvz.io/tobuntu.html . configuring ubuntu
 
 ### CSV SQL  JSON tools
+
+https://news.ycombinator.com/item?id=28298729
+
 https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/
 https://news.ycombinator.com/item?id=21923911 	Doing a database join with CSV files
 https://news.ycombinator.com/item?id=20848581 . TSV CSV JSON command line tools
