@@ -4,6 +4,10 @@
 https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ Interesting blog
 
 
+https://youtu.be/9_oPARI4k1o
+
+### SciPy SymPy
+
 https://www.youtube.com/watch?v=jmX4FOUEfgU SciPy
 
 https://www.youtube.com/watch?v=Teb28OFMVFc SciPy
