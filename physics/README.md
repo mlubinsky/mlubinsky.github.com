@@ -39,6 +39,8 @@ https://www.susanrigetti.com/physics
 
 https://blogs.baylor.edu/open_text/purpose/particle-physics-books/
 
+https://arxiv.org/abs/2006.12564 A Somewhat Random Walk Through Nuclear and Particle Physics
+
 ### links
 
 https://arxiv.org/pdf/2105.05399.pdf A Curious Use of Extra Dimension in Classical Mechanics
