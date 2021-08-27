@@ -16,6 +16,8 @@ VS Code: whitespace trimming at file save time from settings:
 
 https://thevaluable.dev/vim-veteran/
 
+https://thevaluable.dev/vim-expert/
+
 ## Vimium
 
 <https://codefaster.substack.com/p/look-ma-no-mouse-vimium>
