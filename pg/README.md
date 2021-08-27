@@ -115,6 +115,8 @@ https://khashtamov.com/en/postgresql-with-python-and-psycopg2/
 
 ## PG
 
+https://habr.com/ru/company/postgrespro/blog/574702/  PG internals
+
 https://zerodha.tech/blog/working-with-postgresql/
 
 https://habr.com/ru/company/tensor/blog/540572/
