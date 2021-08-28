@@ -27,6 +27,9 @@ https://www.youtube.com/watch?v=w6Pw4MOzMuo
 
 https://news.ycombinator.com/item?id=27577467  ML beyound curve fitting
 
+#### Spearman's rank correlation coeff
+
+https://stackabuse.com/calculating-spearmans-rank-correlation-coefficient-in-python-with-pandas/ 
 
 http://creatingdata.us/techne/deep_scatterplots/#  Zoomable scatterplot
 
