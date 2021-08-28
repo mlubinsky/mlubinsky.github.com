@@ -17,6 +17,7 @@ brew install --cask disk-inventory-x
 
 https://kapeli.com/dash
 
+https://thume.ca/2020/09/04/macos-tips/
 
 ### 
 
