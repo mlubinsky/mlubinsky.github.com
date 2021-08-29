@@ -19,7 +19,18 @@ https://kapeli.com/dash
 
 https://thume.ca/2020/09/04/macos-tips/
 
-### 
+
+### Mac shortcuts
+
+<https://support.apple.com/en-us/HT201236>
+
+<https://news.ycombinator.com/item?id=24091707>
+
+Page Up:  Fn + Up Arrow 
+
+### Finder - how to go to parent directory
+
+Command+↑ (Command + Up Arrow) 
 
 https://www.mediaatelier.com/CheatSheet/
 
@@ -115,17 +126,8 @@ If you need to have scala@2.11 first in your PATH, run:
   echo 'export PATH="/usr/local/opt/scala@2.11/bin:$PATH"' >> /Users/mlubinsky/.bash_profile
 ```
 
-### Mac shortcuts
+brew install apache-spark@2.4.6
 
-<https://support.apple.com/en-us/HT201236>
-
-<https://news.ycombinator.com/item?id=24091707>
-
-Page Up:  Fn + Up Arrow 
-
-### Finder - how to go to parent directory
-
-Command+↑ (Command + Up Arrow) 
 
 ### CyberChef
 https://gchq.github.io/CyberChef
