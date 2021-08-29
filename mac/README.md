@@ -114,8 +114,9 @@ https://dev.to/gabethere/installing-java-on-a-mac-using-homebrew-and-jevn-12m8
 
 #### Scala and  Spark
 
-
 https://notadatascientist.com/install-spark-on-macos/
+
+brew tap eddies/spark-tap
 
 brew install scala@2.11
 ```
