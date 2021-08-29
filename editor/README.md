@@ -18,6 +18,8 @@ https://thevaluable.dev/vim-veteran/
 
 https://thevaluable.dev/vim-expert/
 
+https://toroid.org/modern-neovim
+
 ## Vimium
 
 <https://codefaster.substack.com/p/look-ma-no-mouse-vimium>
