@@ -100,6 +100,21 @@ jenv versions
 
 https://dev.to/gabethere/installing-java-on-a-mac-using-homebrew-and-jevn-12m8
 
+
+#### Scala and  Spark
+
+
+https://notadatascientist.com/install-spark-on-macos/
+
+brew install scala@2.11
+```
+scala@2.11 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have scala@2.11 first in your PATH, run:
+  echo 'export PATH="/usr/local/opt/scala@2.11/bin:$PATH"' >> /Users/mlubinsky/.bash_profile
+```
+
 ### Mac shortcuts
 
 <https://support.apple.com/en-us/HT201236>
