@@ -1,5 +1,7 @@
 ### Clustering 
 
+https://machinelearningmastery.com/clustering-algorithms-with-python/ 
+
 https://realpython.com/k-means-clustering-python/
 
 https://mubaris.com/2017/10/01/kmeans-clustering-in-python/
