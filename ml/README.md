@@ -8,6 +8,8 @@ https://huyenchip.com/ml-interviews-book/  INTERVIEW BOOK
 
 https://rentruewang.github.io/learning-machine/intro.html. BOOK
 
+https://whitead.github.io/dmol-book
+
 https://arxiv.org/abs/2010.03415 Knowledge based learning
 
 https://github.com/r0f1/datascience
