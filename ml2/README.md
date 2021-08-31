@@ -73,6 +73,8 @@ https://www.youtube.com/watch?v=enpPFqcIFj8&list=PLlb7e2G7aSpRb95_Wi7lZ-zA6fOjV3
 
 
 https://distill.pub/2019/visual-exploration-gaussian-processes/ .  Gaussian process
+
+https://gaussianbp.github.io/ Gaussiab Belief Propagation
  
 ### Linear regression  
  
