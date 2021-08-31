@@ -31,9 +31,14 @@ https://www.youtube.com/watch?v=w6Pw4MOzMuo
 
 https://news.ycombinator.com/item?id=27577467  ML beyound curve fitting
 
-https://towardsdatascience.com/dimensionality-reduction-explained-5ae45ae3058e Dimentionality redaction
+### Dimentionality reduction
+
+https://towardsdatascience.com/dimensionality-reduction-explained-5ae45ae3058e Dimentionality reduction
 
 https://featuretools.alteryx.com/en/stable  Feature extraction
+
+
+https://stackabuse.com/random-projection-theory-and-implementation-in-python-with-scikit-learn/
 
 #### Spearman's rank correlation coeff
 
