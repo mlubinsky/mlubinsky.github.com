@@ -31,6 +31,10 @@ https://www.youtube.com/watch?v=w6Pw4MOzMuo
 
 https://news.ycombinator.com/item?id=27577467  ML beyound curve fitting
 
+https://towardsdatascience.com/dimensionality-reduction-explained-5ae45ae3058e Dimentionality redaction
+
+https://featuretools.alteryx.com/en/stable  Feature extraction
+
 #### Spearman's rank correlation coeff
 
 https://stackabuse.com/calculating-spearmans-rank-correlation-coefficient-in-python-with-pandas/ 
@@ -40,7 +44,7 @@ http://creatingdata.us/techne/deep_scatterplots/#  Zoomable scatterplot
 ### AutoML
 https://habr.com/ru/post/559130/
 
-https://featuretools.alteryx.com/en/stable  Feature extraction
+
 
 https://habr.com/ru/company/otus/blog/559666/  Kaggle tricks
 
