@@ -4,6 +4,10 @@ http://textbooks.math.gatech.edu/ila/index.html. Interactive linear algebra
 
 https://nadoumnet.d3.ru/
 
+https://www.youtube.com/playlist?list=PLcsjsqLLSfNDNW9aTp8CVwvbKpTwACTjg
+или
+https://teach–in.ru/course/algebra–arzhantsev
+
 https://news.ycombinator.com/item?id=28168339 Interactive math links!
 
 https://www.youtube.com/watch?v=8v0OYSowjok
