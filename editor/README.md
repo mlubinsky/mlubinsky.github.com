@@ -318,6 +318,7 @@ $ to the end of a line
 <https://github.com/morhetz/gruvbox/wiki/Installation> Color sheme gruvebox
 
 
+https://github.com/helix-editor/helix
 
 ## Visual Studio Code
 
@@ -391,3 +392,5 @@ code --diff file1.js file2.js
 <https://micro-editor.github.io/index.html>
 
 <https://news.ycombinator.com/item?id=23126458>
+
+https://github.com/helix-editor/helix Helix
