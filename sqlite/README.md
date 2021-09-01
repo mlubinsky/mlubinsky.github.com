@@ -14,6 +14,7 @@ https://unixsheikh.com/articles/sqlite-the-only-database-you-will-ever-need-in-m
 
 https://habr.com/ru/company/otus/blog/541820/.  SQLite with  Python and Go
 
+https://github.com/simonw/sqlite-utils
 
 ```
   CREATE TABLE tIssue (
