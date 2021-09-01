@@ -2,6 +2,8 @@
 
 http://textbooks.math.gatech.edu/ila/index.html. Interactive linear algebra 
 
+https://samenright.com/2021/08/31/a-laymans-guide-to-recreational-mathematics-videos/
+
 https://nadoumnet.d3.ru/
 
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNDNW9aTp8CVwvbKpTwACTjg
