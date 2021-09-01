@@ -52,6 +52,9 @@ https://erthalion.info/2020/11/28/evolution-of-btree-index-am/
 
 https://habr.com/ru/company/yandex/blog/572588/ hash tables
 
+
+https://jornhub.dev/articles/fenwick-trees/ Fenwick tree
+
 ### local sensitive hashing - LSH
 
 http://tylerneylon.com/a/lsh1/ 
