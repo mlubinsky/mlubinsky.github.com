@@ -14,6 +14,10 @@ https://news.ycombinator.com/item?id=28292225
 https://news.ycombinator.com/item?id=28400446
 
 
+#### Simulation: Modelica JuliaSim
+
+https://www.notamonadtutorial.com/simulations-are-about-to-get-way-way-faster-with-juliasim/
+
 
 https://learnxinyminutes.com/ Learn X in 6 mins
 
