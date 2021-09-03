@@ -33,6 +33,8 @@ https://habr.com/ru/company/manychat/blog/511946/
 
 ## Links
 
+https://news.ycombinator.com/item?id=28392566
+
 https://gitbetter.substack.com/p/how-to-squash-git-commits
 
 https://www.compscilauren.com/blog/improve-your-git-workflow-and-save-time-with-git-hooks
