@@ -24,6 +24,9 @@ https://deeplearningsystems.ai/
 
 https://atcold.github.io/NYU-DLSP21/
 
+
+https://habr.com/ru/post/575520/  NN pruning 
+
 ### TinyML
 
 https://habr.com/ru/company/glowbyte/blog/559400/
