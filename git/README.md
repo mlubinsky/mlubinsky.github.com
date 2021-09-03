@@ -1,3 +1,7 @@
+https://www.biteinteractive.com/picturing-git-conceptions-and-misconceptions/
+
+https://news.ycombinator.com/item?id=28392566
+
 ## Git precommit hooks
 https://iafisher.com/blog/2020/06/precommit
 
@@ -33,7 +37,7 @@ https://habr.com/ru/company/manychat/blog/511946/
 
 ## Links
 
-https://news.ycombinator.com/item?id=28392566
+
 
 https://gitbetter.substack.com/p/how-to-squash-git-commits
 
