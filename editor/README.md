@@ -4,6 +4,10 @@ https://lite-xl.github.io/
 
 https://betterprogramming.pub/bored-of-vs-code-try-lite-xl-76d4cb3f8dda
 
+#### Helix and other editors
+
+https://news.ycombinator.com/item?id=27358479
+
 ### Removing trailing spaces in file
 
 .vimrc
