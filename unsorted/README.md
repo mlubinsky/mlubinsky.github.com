@@ -58,7 +58,7 @@ https://ytdl-org.github.io/youtube-dl/
 https://github.com/dertuxmalwieder/yaydl
 
 
-### Google chrome helper fix: 
+### Google Chrome helper fix: 
 
 https://softlay.net/how-to/google-chrome-helper-hogging-cpu.html
 
@@ -78,6 +78,8 @@ https://deep-econom.livejournal.com/840005.html
 
 https://booksee.org/
 
+
+https://avva.livejournal.com/3384243.html?view=comments#comments   reading  books suggestions
 
 1)) Бозон Хиггса
 https://youtu.be/S7dTZbppz–k
