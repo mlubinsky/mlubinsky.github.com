@@ -1,3 +1,9 @@
+#### Lite-xl
+
+https://lite-xl.github.io/
+
+https://betterprogramming.pub/bored-of-vs-code-try-lite-xl-76d4cb3f8dda
+
 ### Removing trailing spaces in file
 
 .vimrc
