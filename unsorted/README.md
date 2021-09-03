@@ -8,8 +8,12 @@ https://habr.com/ru/company/yandex_praktikum/blog/573090/ logical argumentation 
 https://news.ycombinator.com/item?id=28232165 interesing blog posts
 
 
-Tools for thinking: Obsidian etc
+#### Tools for thinking: Obsidian , Anki , etc
 https://news.ycombinator.com/item?id=28292225
+
+https://news.ycombinator.com/item?id=28400446
+
+
 
 https://learnxinyminutes.com/ Learn X in 6 mins
 
