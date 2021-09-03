@@ -141,6 +141,8 @@ plt.show()
 ### Julia
 <https://habr.com/ru/post/519930/> Julia language
 
+https://datasciencejuliahackers.com/
+
 https://lwn.net/SubscriberLink/835930/47c363bef07134a4/  Pluto - Notebook for Julia (similar to Jupyter)
 
 
