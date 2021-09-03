@@ -14,11 +14,13 @@ VS Code: whitespace trimming at file save time from settings:
  File → Preference → Settings → Text Editor → Files → (scroll down a bit) to see checkbox Trim Trailing Whitespace
  
 
-### Notes
+### Personal Notes
 
 <https://lobste.rs/s/e5lx5p/what_note_taking_team_wiki_personal_wiki>
 
 ## Vim
+
+https://vim-bootstrap.com/
 
 https://thevaluable.dev/vim-veteran/
 
