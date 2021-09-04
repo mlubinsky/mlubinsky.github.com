@@ -25,6 +25,15 @@ https://lwn.net/SubscriberLink/861910/67bbe2390d2e0c93/ API, slots, etc
 
 https://death.andgravity.com/namedtuples named tuples vs dataclasses
 
+
+### Defaultdict
+from collections import defaultdict
+
+dict_of_list = defaultdict(list)
+dict_of_list[key].append(element)
+
+
+
 ```
 Now, Python is usually considered to be an interpreted language. 
 When you run a Python code, the Python interpreter reads the file line-by-line and runs it.
