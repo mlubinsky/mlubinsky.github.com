@@ -1,6 +1,6 @@
 https://tomassetti.me/parsing-in-python/ python
 
-https://craftinginterpreters.com/introduction.html Java C++
+https://craftinginterpreters.com/introduction.html Java and C 
 
 https://interpreterbook.com/ go
 
