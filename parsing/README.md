@@ -1,5 +1,7 @@
 https://tomassetti.me/parsing-in-python/ python
 
+https://craftinginterpreters.com/introduction.html
+
 ## Advanced compilers
 
 https://news.ycombinator.com/item?id=25386756
