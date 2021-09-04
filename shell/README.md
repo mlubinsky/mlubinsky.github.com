@@ -62,6 +62,8 @@ https://habr.com/ru/company/timeweb/blog/561214/ JSON utilities
 
 ### cron
 
+https://lobste.rs/s/0vmkgr/how_ensure_cron_job_runs_exclusively
+
 https://blog.majid.info/lock/
 
 ### bash
