@@ -4,6 +4,8 @@ https://craftinginterpreters.com/introduction.html Java and C
 
 https://interpreterbook.com/ go
 
+https://www.toptal.com/scala/writing-an-interpreter Scala
+
 ## Advanced compilers
 
 https://news.ycombinator.com/item?id=25386756
