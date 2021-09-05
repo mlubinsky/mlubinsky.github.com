@@ -3,6 +3,7 @@
 
 https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ Interesting blog
 
+https://diffxweyl.wordpress.com/ Interesting blog 
 
 https://youtu.be/9_oPARI4k1o
 
@@ -40,6 +41,9 @@ https://www.susanrigetti.com/physics
 https://blogs.baylor.edu/open_text/purpose/particle-physics-books/
 
 https://arxiv.org/abs/2006.12564 A Somewhat Random Walk Through Nuclear and Particle Physics
+
+
+http://ramp-book.com/ Relativity - modern primer
 
 ### links
 
@@ -138,7 +142,7 @@ https://core.ac.uk/. many books (including russian)
  https://news.ycombinator.com/item?id=25588888   Well, Actually – Physics Answers 
  
  
- 
+ https://diffxweyl.wordpress.com/2020/09/25/physics-textbooks-for-self-study/
 
 ### Geometric Algebra 
 
