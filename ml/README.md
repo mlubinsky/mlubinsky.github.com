@@ -4,6 +4,8 @@ https://predictivehacks.com/10-tips-and-tricks-for-data-scientists-vol-10/
 
 https://www.youtube.com/watch?v=RaTe3dhiqdE  entropy, mutual info
 
+https://www.toptal.com/algorithms/metropolis-hastings-bayesian-inference
+
 https://huyenchip.com/ml-interviews-book/  INTERVIEW BOOK
 
 https://rentruewang.github.io/learning-machine/intro.html. BOOK
