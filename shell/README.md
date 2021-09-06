@@ -7,6 +7,9 @@ https://news.ycombinator.com/item?id=27992073
 https://habr.com/ru/company/gms/blog/553078/ . useful command-line utils
 
 
+https://github.com/roapi/roapi/tree/main/columnq-cli  SQL for  parquet, csv, arrow files
+
+
 ### Sort by numeric column 2
 
 sort -k2 -n file
