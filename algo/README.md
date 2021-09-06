@@ -1,5 +1,7 @@
 https://mccme.ru/shen/progbook/7edition.pdf
 
+https://habr.com/ru/post/576558/
+
 https://blog.bradfieldcs.com/an-introduction-to-hashing-in-the-era-of-machine-learning-6039394549b0
 
 http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big data
