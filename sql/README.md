@@ -1,5 +1,7 @@
 https://winand.at/sql-slides-for-developers
 
+https://news.ycombinator.com/item?id=28425379  modern databases
+
 https://github.com/dinedal/textql  SQL for CSV and TSV
 
 https://habr.com/ru/company/otus/blog/541882/
