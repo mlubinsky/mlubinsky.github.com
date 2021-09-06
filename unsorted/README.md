@@ -7,6 +7,16 @@ https://habr.com/ru/company/yandex_praktikum/blog/573090/ logical argumentation 
 
 https://news.ycombinator.com/item?id=28232165 interesing blog posts
 
+#### books
+
+обширная библиотека Library Genesis или LibGen или Колхоз
+http://libgen.rs/
+http://libgen.is/
+http://libgen.st/
+
+Научные статьи в библиотеке Sci-Hub
+https://sci-hub.ru/
+https://sci-hub.se/
 
 #### Tools for thinking: Obsidian , Anki , etc
 https://news.ycombinator.com/item?id=28292225
