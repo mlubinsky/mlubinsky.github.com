@@ -22,7 +22,9 @@ VS Code: whitespace trimming at file save time from settings:
 
 <https://lobste.rs/s/e5lx5p/what_note_taking_team_wiki_personal_wiki>
 
-## Vim
+## VIM 
+
+https://changelog.com/podcast/450
 
 https://vim-bootstrap.com/
 
