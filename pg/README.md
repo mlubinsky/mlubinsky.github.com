@@ -6,6 +6,8 @@ https://habr.com/ru/company/rostelecom/blog/566624/  Migration from Oracle to PG
 
 https://habr.com/ru/company/timeweb/blog/562820/ do we need Redis if we have Postgres?
 
+https://buttondown.email/nelhage/archive/notes-on-some-postgresql-implementation-details/
+
 ## MySQL  
 <https://realpython.com/python-mysql/>
 
