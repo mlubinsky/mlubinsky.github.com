@@ -9,6 +9,8 @@ https://news.ycombinator.com/item?id=28232165 interesing blog posts
 
 #### books
 
+https://deep-econom.livejournal.com/298746.html
+
 обширная библиотека Library Genesis или LibGen или Колхоз
 http://libgen.rs/
 http://libgen.is/
