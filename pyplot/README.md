@@ -1,5 +1,7 @@
 https://github.com/lux-org/lux
 
+https://sophiamyang.github.io/DS/visualization/holoviz/holoviz.html
+
 https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-2dd74df12b5e
 
 https://github.com/marcskovmadsen/panel-highcharts
