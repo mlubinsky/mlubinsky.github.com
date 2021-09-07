@@ -9,6 +9,10 @@ https://www.youtube.com/watch?v=oWgKw9DvjkY
 
 https://www.youtube.com/watch?v=cV_smpAKXXQ
 
+
+#### Nail fungus
+https://botalex.livejournal.com/182379.html
+
 ### Sleep
 
 https://news.ycombinator.com/item?id=27458974
