@@ -41,6 +41,7 @@ https://towardsdatascience.com/dimensionality-reduction-explained-5ae45ae3058e D
 
 https://featuretools.alteryx.com/en/stable  Feature extraction
 
+https://arxiv.org/pdf/2106.06437.pdf Feature selection
 
 https://stackabuse.com/random-projection-theory-and-implementation-in-python-with-scikit-learn/
 
