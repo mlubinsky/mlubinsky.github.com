@@ -10,6 +10,7 @@ https://hakibenita.com/sql-for-data-analysis  ROLLUP, CUBE GROUPING_SET
 
 https://hakibenita.com/sql-dos-and-donts Faux predicate
 
+https://blog.jooq.org/10-cool-sql-optimisations-that-do-not-depend-on-the-cost-model/
 
 ### Recursion in SQL
 
