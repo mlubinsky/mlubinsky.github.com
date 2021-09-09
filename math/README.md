@@ -61,10 +61,16 @@ https://www.youtube.com/playlist?list=PL-_cKNuVAYAWltu4CT1F7CWG97ZplBnTg
 
 ### Dynamic systems
 
+
+
 http://www.dyn-sys.org/
 
 https://www.youtube.com/watch?v=HKsyGrp7fPg&list=PLLi3bLYwJwuMBvrTC64AaNEUJp2tcnlmb
 Динамические системы и бифуркации // Виктор Клепцын
+
+http://sprott.physics.wisc.edu/chaostsa/
+
+Chaos and Time-Series Analysis
 
 https://www.youtube.com/watch?v=GZPZbqjyhY8
 
