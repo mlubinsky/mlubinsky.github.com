@@ -1,3 +1,5 @@
+https://arxiv.org/pdf/2106.06524.pdf 
+
 https://www.wrighters.io/indexing-time-series-data-in-pandas/  Indexing time series in Pandas
 
 https://lvngd.com/blog/time-series-data-pandas-introduction/
