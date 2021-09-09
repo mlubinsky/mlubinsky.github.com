@@ -10,6 +10,8 @@ https://habr.com/ru/company/timeweb/blog/562820/ do we need Redis if we have Pos
 
 https://buttondown.email/nelhage/archive/notes-on-some-postgresql-implementation-details/
 
+https://habr.com/ru/company/postgrespro/blog/576980/
+
 ## MySQL  
 <https://realpython.com/python-mysql/>
 
