@@ -26,6 +26,7 @@ https://stackoverflow.com/questions/36921951/truth-value-of-a-series-is-ambiguou
 
 https://stackoverflow.com/questions/19124601/pretty-print-an-entire-pandas-series-dataframe
 
+https://towardsdatascience.com/do-you-use-apply-in-pandas-there-is-a-600x-faster-way-d2497facfa66
 
 https://duckdb.org/2021/05/14/sql-on-pandas.html Pandas frame + DuckDB
 
