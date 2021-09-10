@@ -302,6 +302,8 @@ https://www.youtube.com/watch?v=F_gHV-Zq158
 
 ### Anomaly detection in time series
 
+https://towardsdatascience.com/anomaly-detection-with-time-series-forecasting-c34c6d04b24a
+
 https://towardsdatascience.com/unsupervised-anomaly-detection-on-time-series-9bcee10ab473
 
 https://andrewm4894.com/2021/01/03/anomaly-detection-resources/
