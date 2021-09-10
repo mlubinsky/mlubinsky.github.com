@@ -33,6 +33,10 @@ https://www.manning.com/downloads/2060 . source code
 
 https://marclamberti.com/blog/airflow-branchpythonoperator/ . BranchPythonOperator
 
+Dynamic DAG
+https://galea.medium.com/airflow-dynamic-dags-python-globals-4f40905d314a
+
+
 ```
 import os
 import sys
