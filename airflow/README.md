@@ -72,6 +72,9 @@ info = PythonOperator(
 
 https://towardsdatascience.com/tagged/apache-airflow
 
+cross-DAG dependencies
+https://medium.com/quintoandar-tech-blog/effective-cross-dags-dependency-in-apache-airflow-1885dc7ece9f
+
 
 ### Airflow 2
 
