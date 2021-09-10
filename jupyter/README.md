@@ -12,6 +12,8 @@ https://levelup.gitconnected.com/my-favorite-pandas-method-chains-1cf36483e6c9
 
 https://realpython.com/python-pandas-tricks/
 
+https://medium.com/gustavorsantos/8-things-you-dont-know-about-pandas-groupby-8df17c2281e4
+
 https://tomaugspurger.github.io/modern-1-intro.html modern Pandas
 
 https://pandas.pydata.org/pandas-docs/stable/pandas.pdf Documentation
