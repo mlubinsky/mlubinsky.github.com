@@ -8,6 +8,8 @@ https://mubaris.com/2017/10/01/kmeans-clustering-in-python/
 
 https://habrahabr.ru/post/164417/
 
+https://towardsdatascience.com/spectral-clustering-aba2640c0d5b
+
 https://www.youtube.com/watch?v=-_gIcc5_uHY
 
 
