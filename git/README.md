@@ -26,6 +26,8 @@ https://habr.com/ru/company/manychat/blog/511946/
 
 ## GUI
 
+https://gitup.co/
+
 <https://git-fork.com/> Fork: UI for Git
 
 <https://www.sublimemerge.com/>  Git UI Client, from the makers of Sublime Text
