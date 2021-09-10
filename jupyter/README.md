@@ -4,6 +4,8 @@ https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
 
 ### Panda tricks
 
+https://medium.com/trymito/9-simple-python-functions-that-will-speed-up-your-exploratory-data-analysis-efaa6de9f8bb
+
 https://habr.com/ru/company/skillfactory/blog/573154/
 
 https://realpython.com/python-pandas-tricks/
