@@ -1,3 +1,7 @@
+#### Nova
+
+https://nova.app/
+
 #### Lite-xl
 
 https://lite-xl.github.io/
