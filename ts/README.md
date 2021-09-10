@@ -12,6 +12,9 @@ https://www.wrighters.io/indexing-time-series-data-in-pandas/  Indexing time ser
 
 https://lvngd.com/blog/time-series-data-pandas-introduction/
 
+change point detection
+https://medium.com/dataman-in-ai/finding-the-change-points-in-a-time-series-95a308207012 
+
 https://ibexorigin.medium.com/list/time-series-forecast-from-scratch-c72ccf7a9229
 
 https://www.youtube.com/watch?v=lqatzxjHx-A
