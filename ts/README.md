@@ -1,3 +1,7 @@
+https://medium.com/swlh/5-tips-for-working-with-time-series-in-python-d889109e676d
+
+https://towardsdatascience.com/time-series-of-price-anomaly-detection-13586cd5ff46
+
 https://arxiv.org/pdf/2106.06524.pdf 
 
 https://www.wrighters.io/indexing-time-series-data-in-pandas/  Indexing time series in Pandas
