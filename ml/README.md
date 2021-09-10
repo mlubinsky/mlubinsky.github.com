@@ -3,6 +3,9 @@ https://habr.com/ru/company/skillfactory/blog/561044/ . useful libs
 
 https://causalnex.readthedocs.io/en/latest/ Casuality vs correlation
 
+kernels in ML
+https://pub.towardsai.net/types-of-kernels-in-machine-learning-291cf85fcdd0
+
 https://numpy-ml.readthedocs.io/en/latest/
 
 https://www.i-programmer.info/news/89-net/14846-free-resources-for-machine-learning.html
