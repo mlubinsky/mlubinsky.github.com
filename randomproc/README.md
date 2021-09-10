@@ -62,6 +62,8 @@ https://news.ycombinator.com/item?id=27803316
 
 https://www.youtube.com/watch?v=xBE8qdAAj3w
 
+https://arxiv.org/pdf/1812.09064.pdf in Julia
+
 https://e.lanbook.com/book/71719 Book: Лекции по гауссовским процессам. Лифшиц М.А.
 
 https://distill.pub/2019/visual-exploration-gaussian-processes/ . Gaussian process
