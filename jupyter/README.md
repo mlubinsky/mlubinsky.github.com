@@ -8,6 +8,8 @@ https://medium.com/trymito/9-simple-python-functions-that-will-speed-up-your-exp
 
 https://habr.com/ru/company/skillfactory/blog/573154/
 
+https://levelup.gitconnected.com/my-favorite-pandas-method-chains-1cf36483e6c9
+
 https://realpython.com/python-pandas-tricks/
 
 https://tomaugspurger.github.io/modern-1-intro.html modern Pandas
