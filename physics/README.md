@@ -406,6 +406,8 @@ http://qutip.org/docs/latest/index.html
 
 https://www.gited.io/course/64
 
+https://arxiv.org/pdf/1909.13651.pdf
+
 ```
 conda create -n qutip-env
  
