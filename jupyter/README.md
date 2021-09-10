@@ -229,6 +229,10 @@ https://machinelearningknowledge.ai/pandas-assign-pandas-transpose-pandas-pivot/
 
 
 ### data describe
+
+
+https://medium.com/spatial-data-science/4-tools-to-speed-up-exploratory-data-analysis-eda-in-python-e240ebcd18de
+
 https://github.com/adamerose/pandasgui
 
 https://github.com/data-describe/data-describe
