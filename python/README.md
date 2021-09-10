@@ -26,6 +26,10 @@ https://lwn.net/SubscriberLink/861910/67bbe2390d2e0c93/ API, slots, etc
 https://death.andgravity.com/namedtuples named tuples vs dataclasses
 
 
+Pipeline using generators and yeld
+https://betterprogramming.pub/3-data-processing-pipelines-you-can-build-with-python-generators-dc0d2019b177
+
+
 ### Defaultdict
 from collections import defaultdict
 
