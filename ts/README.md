@@ -10,6 +10,8 @@ https://www.youtube.com/watch?v=lqatzxjHx-A
 
 https://habr.com/ru/post/559796/ Прогнозирование временных рядов с помощью AutoML
 
+testing time series models: https://arxiv.org/pdf/2105.01404.pdf
+
 ### Visualization
 
 https://www.youtube.com/watch?v=Ct2Lg0lOLoE . AutoML for TS
