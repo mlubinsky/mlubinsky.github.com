@@ -223,6 +223,8 @@ https://paperswithcode.com/
 
 ## Decorator
 
+https://towardsdatascience.com/10-fabulous-python-decorators-ab674a732871
+
 https://medium.com/techtofreedom/7-levels-of-using-decorators-in-python-370473fcbe76
 
 https://habr.com/ru/post/524052/
