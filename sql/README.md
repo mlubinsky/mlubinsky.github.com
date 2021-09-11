@@ -20,6 +20,8 @@ https://news.ycombinator.com/item?id=28018058
 
 ### SQL UI client tools
 
+https://news.ycombinator.com/item?id=28489165
+
 Sequel-Ace https://github.com/Sequel-Ace/Sequel-Ace
 
 TablePlus  https://tableplus.com/
