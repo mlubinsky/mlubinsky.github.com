@@ -1,3 +1,5 @@
+https://medium.com/analytics-vidhya/4-performance-improving-techniques-to-make-spark-joins-10x-faster-2ec8859138b4
+
 https://sivaprasad-mandapati.medium.com/
 
 https://medium.com/swlh/building-partitions-for-processing-data-files-in-apache-spark-2ca40209c9b7
