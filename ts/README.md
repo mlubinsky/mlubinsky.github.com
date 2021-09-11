@@ -37,6 +37,8 @@ testing time series models: https://arxiv.org/pdf/2105.01404.pdf
 
 ### Random walk for TS
 
+https://en.wikipedia.org/wiki/Random_walk
+
 https://medium.com/analytics-vidhya/time-series-forecasting-with-random-walk-58e84c93058b
 
 
