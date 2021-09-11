@@ -28,6 +28,8 @@ DBeaver
 
 usql <https://github.com/xo/usql>
 
+https://github.com/TaKO8Ki/gobang/
+
 ## Falcon UI
 
 <https://github.com/plotly/falcon> UI
