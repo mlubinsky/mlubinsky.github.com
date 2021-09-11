@@ -41,6 +41,9 @@ https://en.wikipedia.org/wiki/Random_walk
 
 https://leonardoaraujosantos.gitbook.io/artificial-inteligence/appendix/statistics/probability/random-walk
 
+
+https://www.kaggle.com/questions-and-answers/64989
+
 https://medium.com/analytics-vidhya/time-series-forecasting-with-random-walk-58e84c93058b
 
 
