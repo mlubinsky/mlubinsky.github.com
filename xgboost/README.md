@@ -10,6 +10,8 @@ https://github.com/Ericdataplus/XGboost-template
 
 https://jamesmccaffrey.wordpress.com/2021/05/14/why-i-dislike-xgboost-and-why-i-like-xgboost/
 
+https://towardsdatascience.com/20-burning-xgboost-faqs-answered-to-use-the-library-like-a-pro-f8013b8df3e4
+
 ```
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
