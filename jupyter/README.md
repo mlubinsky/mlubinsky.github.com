@@ -22,6 +22,8 @@ https://medium.com/gustavorsantos/8-things-you-dont-know-about-pandas-groupby-8d
 
 https://tomaugspurger.github.io/modern-1-intro.html modern Pandas
 
+https://towardsdatascience.com/a-better-way-for-data-preprocessing-pandas-pipe-a08336a012bc
+
 https://pandas.pydata.org/pandas-docs/stable/pandas.pdf Documentation
 
 Add style to dataframe cells:
