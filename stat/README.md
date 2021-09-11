@@ -16,6 +16,11 @@ and 1 in 370 will deviate by three times the standard deviation
 
 https://statmodeling.stat.columbia.edu/2020/12/09/what-are-the-most-important-statistical-ideas-of-the-past-50-years/
 
+
+### Z-score
+
+https://statisticsbyjim.com/basics/z-score
+
 ### Bayes
 
 http://allendowney.github.io/ThinkBayes2/index.html
