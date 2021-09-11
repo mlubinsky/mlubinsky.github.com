@@ -10,6 +10,8 @@ https://medium.com/trymito/9-simple-python-functions-that-will-speed-up-your-exp
 
 https://medium.com/gustavorsantos/pandas-query-the-easiest-way-to-filter-data-39e0163ef35a
 
+https://towardsdatascience.com/25-pandas-functions-you-didnt-know-existed-p-guarantee-0-8-1a05dcaad5d0 
+
 https://habr.com/ru/company/skillfactory/blog/573154/
 
 https://levelup.gitconnected.com/my-favorite-pandas-method-chains-1cf36483e6c9
