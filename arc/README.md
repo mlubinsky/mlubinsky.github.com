@@ -2,6 +2,8 @@ Book:  <http://streamingsystems.net/>
 
 https://luminousmen.com/post/modern-big-data-architectures-lambda-kappa
 
+https://adamvotava.medium.com/
+
 ### tools for writing diagrams
 
 <https://habr.com/ru/company/epam_systems/blog/538018/> 
