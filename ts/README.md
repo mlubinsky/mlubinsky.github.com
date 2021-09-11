@@ -1,6 +1,7 @@
 https://medium.com/swlh/5-tips-for-working-with-time-series-in-python-d889109e676d
 
 
+https://microprediction.medium.com/combining-pycaret-and-timemachines-for-time-series-prediction-a4d456e47cd9
 
 https://pub.towardsai.net/highly-comparative-time-series-analysis-a-paper-review-5b51d14a291c
 
