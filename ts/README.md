@@ -33,6 +33,16 @@ https://habr.com/ru/post/559796/ Прогнозирование временны
 
 testing time series models: https://arxiv.org/pdf/2105.01404.pdf
 
+
+
+### Random walk for TS
+
+https://medium.com/analytics-vidhya/time-series-forecasting-with-random-walk-58e84c93058b
+
+
+https://machinelearningmastery.com/gentle-introduction-random-walk-times-series-forecasting-python/
+
+
 ### Visualization
 
 https://www.youtube.com/watch?v=Ct2Lg0lOLoE . AutoML for TS
