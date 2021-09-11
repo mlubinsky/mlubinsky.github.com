@@ -39,6 +39,8 @@ testing time series models: https://arxiv.org/pdf/2105.01404.pdf
 
 https://en.wikipedia.org/wiki/Random_walk
 
+https://leonardoaraujosantos.gitbook.io/artificial-inteligence/appendix/statistics/probability/random-walk
+
 https://medium.com/analytics-vidhya/time-series-forecasting-with-random-walk-58e84c93058b
 
 
