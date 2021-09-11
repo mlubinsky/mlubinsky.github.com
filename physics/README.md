@@ -18,6 +18,8 @@ https://www.youtube.com/watch?v=cXHvC_FGx24 SciPy Optimization
 https://www.youtube.com/watch?v=-SdIZHPuW9o SymPy
 
 https://www.youtube.com/watch?v=kVjg3jbM3Pw Shrodinger eq
+
+https://github.com/The-real-Han-Chen/Single-slit-and-double-slits-diffraction-Schrodinger-s-equation-in-2D-
  
 ### Chaos
 
