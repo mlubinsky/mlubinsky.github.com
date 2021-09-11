@@ -12,6 +12,8 @@ https://towardsdatascience.com/four-ways-to-quantify-synchrony-between-time-seri
 https://towardsdatascience.com/dont-make-this-mistake-when-clustering-time-series-data-d9403f39bbb2
 
 
+https://towardsdatascience.com/top-4-time-series-feature-engineering-lessons-from-kaggle-ca2d4c9cbbe7
+
 https://arxiv.org/pdf/2106.06524.pdf 
 
 https://www.wrighters.io/indexing-time-series-data-in-pandas/  Indexing time series in Pandas
