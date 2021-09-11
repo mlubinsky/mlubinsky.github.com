@@ -24,6 +24,11 @@ https://www.reddit.com/r/flask/comments/jxt71p/my_best_flask_projects_so_far/
 
 <https://news.ycombinator.com/item?id=22901856>
 
+
+
+####  Flask and KAfka
+https://medium.com/geekculture/streaming-model-inference-using-flask-and-kafka-3476d9ff5ca5
+
 ## Flask
 
 <https://unix.stackexchange.com/questions/182537/write-python-stdout-to-file-immediately>
