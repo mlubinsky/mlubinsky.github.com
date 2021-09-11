@@ -6,6 +6,8 @@ http://math.csu.ru/new_files/students/lectures/teor_slych_proc/solovev_teor_slyc
 
 https://tvims.nsu.ru/baklanov/SP/part5.1.pdf
 
+https://www.vgranville.com/2018/06/free-book-applied-stochastic-processes.html . Book
+
 https://arxiv.org/pdf/1508.03461.pdf СТОХАСТИЧЕСКИЙ АНАЛИЗ В ЗАДАЧАХ (1)
 
 
