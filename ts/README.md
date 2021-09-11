@@ -1,6 +1,6 @@
 https://medium.com/swlh/5-tips-for-working-with-time-series-in-python-d889109e676d
 
-https://towardsdatascience.com/time-series-of-price-anomaly-detection-13586cd5ff46
+
 
 https://pub.towardsai.net/highly-comparative-time-series-analysis-a-paper-review-5b51d14a291c
 
@@ -310,6 +310,10 @@ https://www.youtube.com/watch?v=F_gHV-Zq158
 
 
 ### Anomaly detection in time series
+
+https://towardsdatascience.com/time-series-of-price-anomaly-detection-13586cd5ff46
+
+https://towardsdatascience.com/time-series-anomaly-detection-with-anomalize-library-67472003c003
 
 https://towardsdatascience.com/anomaly-detection-with-time-series-forecasting-c34c6d04b24a
 
