@@ -8,6 +8,10 @@ https://tech.gorilla.co/how-can-we-quantify-similarity-between-time-series-ed1d0
 
 https://towardsdatascience.com/four-ways-to-quantify-synchrony-between-time-series-data-b99136c4a9c9
 
+
+https://towardsdatascience.com/dont-make-this-mistake-when-clustering-time-series-data-d9403f39bbb2
+
+
 https://arxiv.org/pdf/2106.06524.pdf 
 
 https://www.wrighters.io/indexing-time-series-data-in-pandas/  Indexing time series in Pandas
