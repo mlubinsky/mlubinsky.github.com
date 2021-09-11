@@ -35,6 +35,9 @@ https://habr.com/ru/company/otus/blog/573924/
 
 https://github.com/dair-ai/ML-YouTube-Courses
 
+### Kalman filter
+https://towardsdatascience.com/kalman-filter-in-a-nutshell-e66154a06862 
+
 ### Geometric machine learning:
 
 https://towardsdatascience.com/geometric-foundations-of-deep-learning-94cdd45b451d
