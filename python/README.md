@@ -32,6 +32,8 @@ https://medium.com/programming-for-beginners/how-to-use-python-generators-to-eff
 
 https://betterprogramming.pub/3-data-processing-pipelines-you-can-build-with-python-generators-dc0d2019b177
 
+https://towardsdatascience.com/python-pandas-data-pipelines-515bcc678570
+
 
 ### Defaultdict
 from collections import defaultdict
