@@ -14,6 +14,8 @@ https://towardsdatascience.com/25-pandas-functions-you-didnt-know-existed-p-guar
 
 https://habr.com/ru/company/skillfactory/blog/573154/
 
+https://towardsdatascience.com/heres-the-most-efficient-way-to-iterate-through-your-pandas-dataframe-4dad88ac92ee
+
 https://levelup.gitconnected.com/my-favorite-pandas-method-chains-1cf36483e6c9
 
 https://realpython.com/python-pandas-tricks/
