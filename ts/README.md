@@ -311,6 +311,16 @@ https://www.youtube.com/watch?v=F_gHV-Zq158
 
 ### Anomaly detection in time series
 
+ 
+
+https://github.com/pycaret/pycaret/blob/master/tutorials/Anomaly%20Detection%20Tutorial%20Level%20Beginner%20-%20ANO101.ipynb
+
+https://github.com/arundo/adtk Anomaly detection  toolkit
+
+https://blog.insightdatascience.com/a-time-series-anomaly-detection-model-for-all-types-of-time-series-f17677f8f771
+
+
+
 https://towardsdatascience.com/time-series-of-price-anomaly-detection-13586cd5ff46
 
 https://towardsdatascience.com/time-series-anomaly-detection-with-anomalize-library-67472003c003
@@ -697,6 +707,7 @@ https://www.youtube.com/watch?v=7L23sCOZjns
 https://towardsdatascience.com/real-time-time-series-anomaly-detection-981cf1e1ca13
 
 https://towardsdatascience.com/time-series-smoothing-for-better-forecasting-7fbf10428b2
+
 A python library for time-series smoothing and outlier detection in a vectorized way.
 https://github.com/cerlymarco/tsmoothie
 
@@ -737,7 +748,7 @@ https://ts.gluon.ai/ GluonTS - Probabilistic Time Series Modeling¶
 
 https://github.com/ml-tooling/best-of-ml-python
 
-https://github.com/arundo/adtk Anomaly detection  toolkit
+#### Smoothing
 
 How to Build Exponential Smoothing Models Using Python: Simple Exponential Smoothing, Holt, and Holt-Winters
 
@@ -863,9 +874,6 @@ https://pycaret.org/
 
 https://www.analyticsvidhya.com/blog/2020/05/pycaret-machine-learning-model-seconds/
 
-Anomaly detection :
-
-https://github.com/pycaret/pycaret/blob/master/tutorials/Anomaly%20Detection%20Tutorial%20Level%20Beginner%20-%20ANO101.ipynb
 
 
 ## darts  
