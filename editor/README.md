@@ -36,7 +36,13 @@ https://thevaluable.dev/vim-veteran/
 
 https://thevaluable.dev/vim-expert/
 
+
+### NeoVim
+
 https://toroid.org/modern-neovim
+
+https://www.lunarvim.org/01-installing.html
+
 
 ## Vimium
 
