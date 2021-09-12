@@ -38,6 +38,7 @@ https://www.amazon.com/Powerlifting-Resistance-Exercise-Shoulders-Strength/dp/B0
 
 
 ### Pull-ups
+https://www.youtube.com/watch?v=3YvfRx31xDE
 
 https://www.youtube.com/watch?v=L6moaHVfg2Y PULL UPS! I Hated Them Until I Started Doing Them Like This!
 
