@@ -257,6 +257,8 @@ https://www.youtube.com/watch?v=CKJuC5CUMgU&feature=youtu.be
 
 ## Electromagnetism
 
+https://gravityandlevity.wordpress.com/2009/04/08/why-cant-i-go-faster-than-the-speed-of-light-hints-from-electrodynamics/
+
 https://habr.com/ru/post/538070/
 
 https://www.youtube.com/watch?v=JztqGj6Vyts
