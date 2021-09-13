@@ -9,6 +9,8 @@ https://pub.towardsai.net/highly-comparative-time-series-analysis-a-paper-review
 
 https://tech.gorilla.co/how-can-we-quantify-similarity-between-time-series-ed1d0b633ca0
 
+https://tech.gorilla.co/customer-segmentation-in-utility-retail-using-time-series-clustering-2640d0cfe8e0
+
 https://towardsdatascience.com/four-ways-to-quantify-synchrony-between-time-series-data-b99136c4a9c9
 
 
