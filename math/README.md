@@ -1,5 +1,7 @@
 Ветераны броуновского движения - Вступайте в ряды Фурье!
 
+https://kconrad.math.uconn.edu/blurbs/analysis/gaussianintegral.pdf
+
 http://textbooks.math.gatech.edu/ila/index.html. Interactive linear algebra 
 
 https://samenright.com/2021/08/31/a-laymans-guide-to-recreational-mathematics-videos/
