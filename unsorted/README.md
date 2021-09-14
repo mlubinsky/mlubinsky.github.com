@@ -1,6 +1,10 @@
 Делайте что хотите, но пусть это приносит радость
 /Уолт Уитмен/
 
+https://news.ycombinator.com/item?id=28509498
+
+http://www.samvitjain.com/blog/regret/
+
 https://habr.com/ru/post/571426/ Be happy!
 
 https://habr.com/ru/company/yandex_praktikum/blog/573090/ logical argumentation (ru)
