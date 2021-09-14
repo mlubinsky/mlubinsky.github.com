@@ -1,3 +1,4 @@
+https://github.com/rougier/scientific-visualization-book .  BOOK!
 https://github.com/lux-org/lux
 
 https://sophiamyang.github.io/DS/visualization/holoviz/holoviz.html
