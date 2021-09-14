@@ -9,6 +9,8 @@ http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big dat
 http://www.dspguide.com/pdfbook.htm DSP book
 
 https://habr.com/ru/company/otus/blog/565988/ . Median in the stream
+
+https://news.ycombinator.com/item?id=28526966
   
 https://betterprogramming.pub/top-5-hardest-coding-questions-from-recent-faang-interviews-d46bcb4dd8dc
 
