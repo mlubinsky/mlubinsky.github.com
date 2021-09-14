@@ -4,6 +4,8 @@ https://github.com/astralord/Statistics-lectures/blob/master/book.pdf
 
 https://openintro-ims.netlify.app/ Modern stat book
 
+https://www.dynatrace.com/news/blog/why-averages-suck-and-percentiles-are-great/
+
 https://towardsdatascience.com/all-probability-distributions-explained-in-six-minutes-fe57b1d49600
 
 https://www.maa.org/sites/default/files/pdf/ebooks/GTE_sample.pdf
