@@ -1,5 +1,7 @@
  https://habr.com/ru/company/ruvds/blog/536962/
  
+ https://github.com/rougier/scientific-visualization-book
+ 
 ## BI tools: Poli, SuperSet, etc
 
 <https://github.com/shzlw/poli>
