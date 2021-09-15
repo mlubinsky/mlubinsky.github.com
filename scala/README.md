@@ -1,4 +1,7 @@
+https://scastie.scala-lang.org/ Online Scala compiler
+
 <https://riiswa.github.io/Scala-CheatSheet/>
+
 
 The Scala book:
 
