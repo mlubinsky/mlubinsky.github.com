@@ -1,5 +1,7 @@
 https://medium.com/swlh/5-tips-for-working-with-time-series-in-python-d889109e676d
 
+https://peijin.medium.com/six-cool-python-nonlinear-time-series-analysis-libraries-651ae845c65d
+
 https://statisticsbyjim.com/time-series/
 
 
