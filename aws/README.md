@@ -17,6 +17,9 @@ output = json
 aws_access_key_id = YourKeyId
 aws_secret_access_key = YourSecretAccessKey
 ```
+
+https://github.com/hseera/aws-python-utilities
+
 ### DynamoDB
 
 https://github.com/dineshsonachalam/Lucid-Dynamodb
