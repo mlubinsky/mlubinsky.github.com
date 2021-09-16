@@ -12,6 +12,8 @@ https://buttondown.email/nelhage/archive/notes-on-some-postgresql-implementation
 
 https://habr.com/ru/company/postgrespro/blog/576980/
 
+https://habr.com/ru/company/postgrespro/blog/578196/ Запросы в PostgreSQL: 4. Индексное сканирование
+
 ## MySQL  
 <https://realpython.com/python-mysql/>
 
