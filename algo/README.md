@@ -1,3 +1,5 @@
+https://www.pythonforbeginners.com/data-structures
+
 https://mccme.ru/shen/progbook/7edition.pdf
 
 https://habr.com/ru/post/576558/
