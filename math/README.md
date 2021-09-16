@@ -18,6 +18,7 @@ https://www.youtube.com/watch?v=8v0OYSowjok
 
 https://algorithmstoliveby.com/
 
+http://num.math.uni-goettingen.de/schaback/teaching/sc.pdf
 
 https://mattferraro.dev/posts/poissons-equation
 
