@@ -37,6 +37,8 @@ https://habr.com/ru/company/otus/blog/573924/
 
 https://github.com/dair-ai/ML-YouTube-Courses
 
+https://dataelixir.com/
+
 ### Kalman filter
 https://towardsdatascience.com/kalman-filter-in-a-nutshell-e66154a06862 
 
