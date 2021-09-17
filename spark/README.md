@@ -67,3 +67,18 @@ https://levelup.gitconnected.com/4-advanced-apache-spark-tips-for-faster-perform
 data file compaction
 
 https://medium.com/@himanigadve/dynamic-data-file-compaction-in-apache-spark-5d347cf3deb0
+
+
+https://mungingdata.com/apache-spark/using-the-console/
+https://mallikarjuna_g.gitbooks.io/spark/content/
+
+Working with JSON
+
+https://analyticshut.com/reading-json-data-in-spark/
+https://stackoverflow.com/questions/34069282/how-to-query-json-data-column-using-spark-dataframes
+https://sparkbyexamples.com/spark/spark-read-and-write-json-file/
+https://medium.com/expedia-group-tech/working-with-json-in-apache-spark-1ecf553c2a8c
+https://habr.com/ru/company/leroy_merlin/blog/563066/
+http://javachain.com/how-to-process-json-data-using-apache-spark/
+https://bigdataprogrammers.com/how-to-read-json-file-in-spark/
+https://kontext.tech/column/spark/532/scala-parse-json-string-as-spark-dataframe
