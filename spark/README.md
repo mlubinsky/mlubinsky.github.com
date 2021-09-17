@@ -85,17 +85,26 @@ https://bigdataprogrammers.com/how-to-read-json-file-in-spark/
 https://kontext.tech/column/spark/532/scala-parse-json-string-as-spark-dataframe
 
 
-### Installing Spark locally
+### Installing Spark 2 locally
 
 ```
-brew install apache-spark@2.4.0
 brew tap eddies/spark-tap
-brew install apache-spark@2.4.0
 brew install apache-spark@2.4.6
 spark-shell
 ```
 
-
+Spark 3
+```
+brew info apache-spark
+apache-spark: stable 3.1.2 (bottled), HEAD
+Engine for large-scale data processing
+https://spark.apache.org/
+Not installed
+From: https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/apache-spark.rb
+License: Apache-2.0
+==> Dependencies
+Required: openjdk@11 ✘
+```
 
 #### in docker
 
