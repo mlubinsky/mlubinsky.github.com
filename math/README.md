@@ -64,7 +64,7 @@ https://www.youtube.com/playlist?list=PL-_cKNuVAYAWltu4CT1F7CWG97ZplBnTg
 
 ### Dynamic systems
 
-
+https://galileo-unbound.blog/python-programs-for-nonlinear-dynamics/
 
 http://www.dyn-sys.org/
 
