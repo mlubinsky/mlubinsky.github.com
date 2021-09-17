@@ -90,7 +90,11 @@ https://kontext.tech/column/spark/532/scala-parse-json-string-as-spark-dataframe
 ```
 brew tap eddies/spark-tap
 brew install apache-spark@2.4.6
+```
+now you can use:
+```
 spark-shell
+pyspark
 ```
 
 Spark 3
