@@ -1,3 +1,41 @@
+```
+val df = Seq(
+  ("thor", "new york"),
+  ("aquaman", "atlantis"),
+  ("wolverine", "new york")
+).toDF("superhero", "city")
+
+
+df.show()
++---------+--------+
+|superhero|    city|
++---------+--------+
+|     thor|new york|
+|  aquaman|atlantis|
+|wolverine|new york|
++---------+--------+
+
+creating new column:
+
+df.withColumn("city_starts_with_new", $"city".startsWith("new")).show()
++---------+--------+--------------------+
+|superhero|    city|city_starts_with_new|
++---------+--------+--------------------+
+|     thor|new york|                true|
+|  aquaman|atlantis|               false|
+|wolverine|new york|                true|
++---------+--------+--------------------+
+```
+
+A Column object corresponding with the city column can be created using the following three syntaxes:
+```
+$"city"
+df("city")
+col("city") (must run import org.apache.spark.sql.functions.col first)
+```
+
+
+
 https://medium.com/analytics-vidhya/4-performance-improving-techniques-to-make-spark-joins-10x-faster-2ec8859138b4
 
 https://medium.com/walmartglobaltech/decoding-memory-in-spark-parameters-that-are-often-confused-c11be7488a24
