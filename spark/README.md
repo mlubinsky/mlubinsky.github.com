@@ -19,7 +19,9 @@ df.show()
 |wolverine|new york|
 +---------+--------+
 
-creating new column:
+df.printSchema()
+
+// creating new column:
 
 df.withColumn("city_starts_with_new", $"city".startsWith("new")).show()
 +---------+--------+--------------------+
