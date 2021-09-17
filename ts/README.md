@@ -4,6 +4,9 @@ https://peijin.medium.com/six-cool-python-nonlinear-time-series-analysis-librari
 
 https://statisticsbyjim.com/time-series/
 
+https://core.ac.uk/download/pdf/268877028.pdf CLUSTERING OF LARGE TIME-SERIES DATASETS USING A MULTI-STEP APPROACH
+
+https://cs.gmu.edu/~jessica/SAX_DAMI_preprint.pdf
 
 https://microprediction.medium.com/combining-pycaret-and-timemachines-for-time-series-prediction-a4d456e47cd9
 
