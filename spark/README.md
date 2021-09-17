@@ -70,6 +70,7 @@ https://medium.com/@himanigadve/dynamic-data-file-compaction-in-apache-spark-5d3
 
 
 https://mungingdata.com/apache-spark/using-the-console/
+
 https://mallikarjuna_g.gitbooks.io/spark/content/
 
 Working with JSON
@@ -82,3 +83,28 @@ https://habr.com/ru/company/leroy_merlin/blog/563066/
 http://javachain.com/how-to-process-json-data-using-apache-spark/
 https://bigdataprogrammers.com/how-to-read-json-file-in-spark/
 https://kontext.tech/column/spark/532/scala-parse-json-string-as-spark-dataframe
+
+
+### Installing Spark locally
+
+ https://habr.com/ru/post/577762/
+ 
+```
+git clone https://github.com/big-data-europe/docker-hadoop.git
+git clone https://github.com/big-data-europe/docker-spark
+git clone https://github.com/big-data-europe/docker-hive
+
+cd docker-hadoop
+sudo docker-compose up -d
+
+cd ../docker-spark
+sudo docker-compose up -d
+
+cd ../docker-hive
+ sudo docker-compose up -d
+
+cd ..
+docker ps
+## In browser: http://localhost:9870/
+```
+
