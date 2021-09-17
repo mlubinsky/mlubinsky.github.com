@@ -1,5 +1,7 @@
 https://mungingdata.com/category/apache-spark/
 
+https://mungingdata.com/apache-spark/best-books/
+
 ```
 val df = Seq(
   ("thor", "new york"),
