@@ -34,6 +34,13 @@ A Column object corresponding with the city column can be created using the foll
 $"city"
 df("city")
 col("city") (must run import org.apache.spark.sql.functions.col first)
+
+
+This is tha same:
+
+val s1 = df.select("city")
+val s2 = df.select($"city")
+
 ```
 
 
