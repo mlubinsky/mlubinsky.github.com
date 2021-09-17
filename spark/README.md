@@ -87,6 +87,18 @@ https://kontext.tech/column/spark/532/scala-parse-json-string-as-spark-dataframe
 
 ### Installing Spark locally
 
+```
+brew install apache-spark@2.4.0
+brew tap eddies/spark-tap
+brew install apache-spark@2.4.0
+brew install apache-spark@2.4.6
+spark-shell
+```
+
+
+
+#### in docker
+
  https://habr.com/ru/post/577762/
  
 ```
