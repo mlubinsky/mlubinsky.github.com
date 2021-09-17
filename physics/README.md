@@ -489,11 +489,15 @@ The following packages will be downloaded:
 
 ## Dynamic systems
 
+https://galileo-unbound.blog/2021/07/19/random-walks-with-paul-langevin-stochastic-dynamics/
+
 https://github.com/hsayama/PyCX
 
 https://habr.com/ru/company/mailru/blog/513016/
 
 https://habr.com/ru/post/249429/
+
+https://galileo-unbound.blog/
 
 https://habr.com/ru/company/hsespb/blog/517838/. in C++
 
