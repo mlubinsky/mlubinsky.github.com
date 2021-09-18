@@ -37,6 +37,8 @@ println(df.schema.fieldNames.contains("city"))
 println(df.schema.contains(StructField("city",StringType,true)))
 
 
+https://stackoverflow.com/questions/47657072/importing-schema-from-json-with-optional-value
+
 :paste
 // Entering paste mode (ctrl-D to finish) 
 
