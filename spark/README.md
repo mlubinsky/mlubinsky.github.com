@@ -33,6 +33,9 @@ df.withColumn("city_starts_with_new", $"city".startsWith("new")).show()
 +---------+--------+--------------------+
 
 
+println(df.schema.fieldNames.contains("city"))
+println(df.schema.contains(StructField("city",StringType,true)))
+
 
 :paste
 // Entering paste mode (ctrl-D to finish) 
