@@ -31,6 +31,31 @@ df.withColumn("city_starts_with_new", $"city".startsWith("new")).show()
 |  aquaman|atlantis|               false|
 |wolverine|new york|                true|
 +---------+--------+--------------------+
+
+
+
+:paste
+// Entering paste mode (ctrl-D to finish) 
+
+import org.apache.spark.sql.expressions.scalalang._
+import org.apache.spark.sql.types._
+import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}    
+val schema = StructType(Seq(
+  StructField("k1", StringType, false),
+  StructField("optK", StructType(Seq(StructField("nestedK", StringType, false))), false)
+))    
+val df = spark.read.option("allowUnquotedFieldNames",true).schema(schema).json("s3 location of data.json")       
+
+df: org.apache.spark.sql.DataFrame = [k1: string, optK: struct<nestedK: string>]
+
+scala> df.show
++--------------+------+
+|            k1|  optK|
++--------------+------+
+|     someValue|[optV]|
+|someOtherValue|  null|
++--------------+------+
+
 ```
 
 A Column object corresponding with the city column can be created using the following three syntaxes:
