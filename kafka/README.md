@@ -1,5 +1,7 @@
 ### Kafka on Mac
 
+https://towardsdatascience.com/real-time-anomaly-detection-with-apache-kafka-and-python-3a40281c01c9
+
 
 http://www.technocratsid.com/install-kafka-on-macos/
 
