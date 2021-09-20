@@ -51,6 +51,8 @@ https://www.youtube.com/watch?v=w6Pw4MOzMuo
 
 https://news.ycombinator.com/item?id=27577467  ML beyound curve fitting
 
+https://towardsdatascience.com/understanding-roc-curves-c7f0b52e931e Understanding ROC Curves with Python
+
 ### Dimentionality reduction
 
 https://towardsdatascience.com/dimensionality-reduction-explained-5ae45ae3058e Dimentionality reduction
