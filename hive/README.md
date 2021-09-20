@@ -17,6 +17,18 @@ curl -O http://central.maven.org/maven2/org/apache/avro/avro-tools/1.8.1/avro-to
 java -jar avro-tools-1.8.1.jar tojson --pretty [job_output].avro > output.json
 ```
 
+### 2 ways to insert into partition table
+```
+INSERT INTO zipcodes PARTITION(state='FL') VALUES 
+(891,'US','TAMPA',33605);
+```
+Here it’s mandatory to keep the partition column as the last column.
+
+```
+INSERT INTO zipcodes PARTITION(state) VALUES 
+(891,'US','TAMPA',33605,'FL');
+```
+
 ### zip file processing
 
 https://cwiki.apache.org/confluence/display/Hive/CompressedStorage
