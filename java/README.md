@@ -1,5 +1,10 @@
  <https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997> Effective Java 3rd ed Joshua Bloch
  
+ Java in 2021
+ https://www.avanwyk.com/revisiting-java-in-2021-ii/
+ 
+ https://news.ycombinator.com/item?id=28584518
+ 
  <https://pro-prof.com/archives/7527>
  
  <https://medium.com/@leventov/smoothiemap-2-the-lowest-memory-hash-table-ever-6bebd06780a3> .   Hash Tables comparisons
