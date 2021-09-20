@@ -159,7 +159,15 @@ Or, if you don't want/need a background service you can just run:
 ```  
 https://pgdash.io/blog/postgres-tips-and-tricks.html?p
 
-Postgres in Docker: <https://habr.com/ru/company/qiwi/blog/515692/>
+### Postgres in Docker: 
+
+<https://habr.com/ru/company/qiwi/blog/515692/>
+
+https://habr.com/ru/post/578744/
+
+
+
+
 
 <https://news.ycombinator.com/item?id=22718466> what is schema vs database in Postgres?
 
