@@ -1,5 +1,7 @@
 Book:  <http://streamingsystems.net/>
 
+https://eng.uber.com/streaming-real-time-analytics/
+
 https://luminousmen.com/post/modern-big-data-architectures-lambda-kappa
 
 https://adamvotava.medium.com/
