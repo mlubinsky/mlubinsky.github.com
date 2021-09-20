@@ -1,4 +1,5 @@
 ### Kafka on Mac
+https://habr.com/ru/post/578916/ Python микросервисы с Kafka 
 
 https://towardsdatascience.com/real-time-anomaly-detection-with-apache-kafka-and-python-3a40281c01c9
 
