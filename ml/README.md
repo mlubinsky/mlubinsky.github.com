@@ -1,5 +1,7 @@
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
+https://github.com/orico/www.mlcompendium.com
+
 https://habr.com/ru/company/skillfactory/blog/561044/ . useful libs
 
 https://towardsdatascience.com/7-cool-python-packages-kagglers-are-using-without-telling-you-e83298781cf4
