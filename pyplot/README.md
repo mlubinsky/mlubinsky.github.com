@@ -1,5 +1,8 @@
 https://github.com/rougier/scientific-visualization-book .  BOOK!
+
 https://github.com/lux-org/lux
+
+https://towardsdatascience.com/the-easiest-way-to-make-beautiful-interactive-visualizations-with-pandas-cdf6d5e91757
 
 https://sophiamyang.github.io/DS/visualization/holoviz/holoviz.html
 
