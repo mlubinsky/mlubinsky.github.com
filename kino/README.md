@@ -1,5 +1,8 @@
 поэтом можешь ты не быть, а композитором не можешь.
 
+
+https://val000.livejournal.com/2408208.html?view=comments#comments Detectives
+
 <https://soap.d3.ru/post-vopros-kollektivnomu-razumu-gde-smotret-filmy-onlain-bez-registratsii-i-sms-1867574/>
 
 ## Movies
