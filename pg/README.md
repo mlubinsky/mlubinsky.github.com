@@ -2,6 +2,8 @@ https://www.youtube.com/watch?v=D8Q4n6YXdpk . Window funct in Postgres
 
 https://habr.com/ru/company/tensor/blog/573214/ SQL optimization
 
+https://habr.com/ru/company/postgrespro/blog/579024/
+
 https://habr.com/ru/company/tensor/blog/576894/
 
 https://habr.com/ru/company/rostelecom/blog/566624/  Migration from Oracle to PG
