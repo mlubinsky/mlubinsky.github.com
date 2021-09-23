@@ -5,6 +5,58 @@ https://habr.com/ru/company/X5Group/blog/579232/. PySpark
 https://mungingdata.com/apache-spark/best-books/
 
 ```
+exploding array column:
+
+val df = Seq((1, "A", Seq(1,2,3)), (2, "B", Seq(3,5))).toDF("col1", "col2", "col3")
+df.show()
++----+----+---------+
+|col1|col2|     col3|
++----+----+---------+
+|   1|   A|[1, 2, 3]|
+|   2|   B|   [3, 5]|
++----+----+---------+
+
+val df2 = df.withColumn("col3", explode($"col3"))
+df2.show()
++----+----+----+
+|col1|col2|col3|
++----+----+----+
+|   1|   A|   1|
+|   1|   A|   2|
+|   1|   A|   3|
+|   2|   B|   3|
+|   2|   B|   5|
++----+----+----+
+
+val df3 = df.withColumn("new_col4", explode($"col3"))
+df3.show()
++----+----+---------+--------+
+|col1|col2|     col3|new_col4|
++----+----+---------+--------+
+|   1|   A|[1, 2, 3]|       1|
+|   1|   A|[1, 2, 3]|       2|
+|   1|   A|[1, 2, 3]|       3|
+|   2|   B|   [3, 5]|       3|
+|   2|   B|   [3, 5]|       5|
++----+----+---------+--------+
+
+val df5 = df.withColumn("new_col4", explode($"col3")).select("col1","col2", "new_col4")
+df5.show()
++----+----+--------+
+|col1|col2|new_col4|
++----+----+--------+
+|   1|   A|       1|
+|   1|   A|       2|
+|   1|   A|       3|
+|   2|   B|       3|
+|   2|   B|       5|
++----+----+--------+
+
+
+
+
+Filter  example
+------------------
 val df = Seq(
   ("thor", "new york"),
   ("aquaman", "atlantis"),
