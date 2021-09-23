@@ -53,6 +53,19 @@ df5.show()
 +----+----+--------+
 
 
+val df7=df.select(col("col1"),col("col2"), explode(col("col3")))
+ 
+ df7.show()
++----+----+---+
+|col1|col2|col|
++----+----+---+
+|   1|   A|  1|
+|   1|   A|  2|
+|   1|   A|  3|
+|   2|   B|  3|
+|   2|   B|  5|
++----+----+---+
+
 
 
 Filter  example
