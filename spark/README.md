@@ -67,6 +67,23 @@ val df7=df.select(col("col1"),col("col2"), explode(col("col3")))
 +----+----+---+
 
 
+creating alias for exploded column:
+-------------------------------------
+val df8=df.select(col("col1"),col("col2"), explode(col("col3")).alias("my_alias"))
+ 
+
+scala> df8.show()
++----+----+--------+
+|col1|col2|my_alias|
++----+----+--------+
+|   1|   A|       1|
+|   1|   A|       2|
+|   1|   A|       3|
+|   2|   B|       3|
+|   2|   B|       5|
++----+----+--------+
+
+
 
 Filter  example
 ------------------
