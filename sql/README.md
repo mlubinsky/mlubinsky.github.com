@@ -16,7 +16,7 @@ https://blog.jooq.org/10-cool-sql-optimisations-that-do-not-depend-on-the-cost-m
 ### Calculation AVG:
  - missing value
  - INT to float
-
+```
 with T as ( 
 select 1 as i, 5 as v 
 union all 
@@ -27,7 +27,7 @@ select 3, 5
 select avg(v) from T.   ==> 5 (ignoring NULLs!!!)
 select avg(COALESCE(v,0)) from T.  ==> 3 returns rounded to integer value
 select avg(COALESCE(v,0)+0.0) from T.  ==> 3.333
-
+```
 ### Recursion in SQL
 
 https://medium.com/swlh/recursion-in-sql-explained-graphically-679f6a0f143b
