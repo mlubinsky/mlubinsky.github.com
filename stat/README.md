@@ -1,5 +1,25 @@
 ## Stat
 
+ five number summary in statistics: 
+ mean, 
+ median, 
+ standard deviation, 
+ 25th percentile and 
+ 75th percentile.
+ 
+ interquartile range - IQR is 75th - 25th, aka, the middle-50%
+
+https://queueing-tool.readthedocs.io/en/latest/
+
+
+https://www.dynatrace.com/news/blog/why-averages-suck-and-percentiles-are-great/
+
+https://www.youtube.com/watch?v=coNDCIMH8bk
+
+"How NOT to Measure Latency"
+
+https://www.infoq.com/presentations/latency-response-time/
+
 https://github.com/astralord/Statistics-lectures/blob/master/book.pdf
 
 https://openintro-ims.netlify.app/ Modern stat book
@@ -20,6 +40,8 @@ and 1 in 370 will deviate by three times the standard deviation
 
 https://statmodeling.stat.columbia.edu/2020/12/09/what-are-the-most-important-statistical-ideas-of-the-past-50-years/
 
+	How percentile approximation works and why it's more useful than averages 
+https://news.ycombinator.com/item?id=28526966
 
 ### Z-score
 
