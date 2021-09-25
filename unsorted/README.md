@@ -439,6 +439,11 @@ https://habr.com/ru/news/t/478556/
 
 <http://libgen.is/> . all books
 
+### Salary
+
+https://www.lennysnewsletter.com/p/negotiating-comp
+
+https://news.ycombinator.com/item?id=28648384
 
 <https://www.levels.fyi/> salary in high tech companies
 
