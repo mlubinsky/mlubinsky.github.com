@@ -9,6 +9,8 @@ https://habr.com/ru/post/571426/ Be happy!
 
 https://habr.com/ru/company/yandex_praktikum/blog/573090/ logical argumentation (ru)
 
+https://www.uhnwidata.com/den-of-rich/sergey-nikolenko 
+
 https://news.ycombinator.com/item?id=28232165 interesing blog posts
 
 #### books
