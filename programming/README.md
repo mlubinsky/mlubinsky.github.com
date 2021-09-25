@@ -4,6 +4,17 @@
  () Parentheses
  
 ```
+### Content aggregators
+
+https://lukesmith.xyz/blog/a-guide-to-using-rss-to-replace-social-media
+
+https://miniflux.app/
+
+https://fraidyc.at/
+Fraidycat is a desktop app or browser extension for Firefox or Chrome. I use it to follow people (hundreds) on whatever platform they choose - Twitter, a blog, YouTube
+
+RSS BLOG Twitter content aggregator
+https://sumi.news/
 
 https://news.ycombinator.com/item?id=27171970 .  Some tools
 
