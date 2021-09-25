@@ -4,6 +4,8 @@ https://habr.com/ru/company/X5Group/blog/579232/. PySpark
 
 https://mungingdata.com/apache-spark/best-books/
 
+https://www.kdnuggets.com/2021/09/data-analysis-scala.html
+
 ```
 exploding array column:
 
