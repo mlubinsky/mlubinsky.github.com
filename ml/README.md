@@ -45,6 +45,8 @@ https://github.com/dair-ai/ML-YouTube-Courses
 
 https://dataelixir.com/
 
+https://github.com/machow/siuba  Python library for using dplyr like syntax with pandas and SQL
+
 ### Kalman filter
 https://towardsdatascience.com/kalman-filter-in-a-nutshell-e66154a06862 
 
