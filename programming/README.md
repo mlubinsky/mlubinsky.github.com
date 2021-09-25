@@ -87,7 +87,23 @@ https://hacks.mozilla.org/2020/06/compiler-compiler-working-on-a-javascript-engi
 
 
 
-<https://janet-lang.org/> Janet Language
+ 
+### ZigLang
+https://ziglang.org/
+
+### Janet lang
+
+https://janet-lang.org/
+
+https://junglecoder.com/blog/my-janet-story
+
+https://news.ycombinator.com/item?id=22975225
+
+### Gravity lang
+https://marcobambini.github.io/gravity/#/README
+
+
+
 
 <https://luminousmen.com/post/asynchronous-programming-await-the-future>
 
@@ -136,9 +152,6 @@ https://habr.com/ru/company/plesk/blog/507094/
 <https://medium.com/sicara>  articles on AI and Big Data, by Sicara
 
 <http://concurnas.com/>
-
-Julia
-Nim
 
 <https://free-for.dev/#/>
 
