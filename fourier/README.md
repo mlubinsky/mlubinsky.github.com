@@ -9,7 +9,9 @@ https://faultan.ru/osc/essence_of_fourier_transform/
 
 https://en.wikipedia.org/wiki/Discrete_Fourier_transform
 
+https://news.ycombinator.com/item?id=28632776
 
+https://hn.algolia.com/?q=Fourier
 
 https://en.wikipedia.org/wiki/Gibbs_phenomenon
 
