@@ -2,6 +2,8 @@ https://www.biteinteractive.com/picturing-git-conceptions-and-misconceptions/
 
 https://news.ycombinator.com/item?id=28392566
 
+https://ghapi.fast.ai/tutorial_actions.html  Git Actions
+
 ## Git precommit hooks
 https://iafisher.com/blog/2020/06/precommit
 
