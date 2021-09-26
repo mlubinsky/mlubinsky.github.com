@@ -4,7 +4,7 @@
  () Parentheses
  
  ```
- ### Caterory theopt
+ ### Caterory theory
  https://boris-marinov.github.io/category-theory-illustrated/05_logic/
  
  https://news.ycombinator.com/item?id=28660157
