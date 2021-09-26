@@ -3,7 +3,13 @@
  {} Curly brackets  are often called braces 
  () Parentheses
  
-```
+ ```
+ ### Caterory theopt
+ https://boris-marinov.github.io/category-theory-illustrated/05_logic/
+ 
+ https://news.ycombinator.com/item?id=28660157
+ 
+
 ### Content aggregators
 
 https://lukesmith.xyz/blog/a-guide-to-using-rss-to-replace-social-media
