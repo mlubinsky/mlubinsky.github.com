@@ -42,7 +42,7 @@ https://www.arxiv.org/
 
 https://www.samueltaylor.org/articles/index.html
 
-
+https://www.johndcook.com/
 
 ### All Pragmatic Programming Books
 
