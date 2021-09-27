@@ -27,6 +27,8 @@ http://thechaostician.com/what-is-chaos-part-v-continuous-time/
 
 ### Books
 
+http://alexandr4784.narod.ru/index.html
+
 http://www.damtp.cam.ac.uk/user/tong/teaching.html
 
 https://www.susanrigetti.com/physics
