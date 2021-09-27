@@ -1,5 +1,7 @@
 https://towardsdatascience.com/time-series-classification-using-dynamic-time-warping-61dcd9e143f6
 
+https://www.sciencedirect.com/science/article/pii/S2666827020300013
+
 https://medium.com/swlh/5-tips-for-working-with-time-series-in-python-d889109e676d
 
 https://peijin.medium.com/six-cool-python-nonlinear-time-series-analysis-libraries-651ae845c65d
