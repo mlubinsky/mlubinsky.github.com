@@ -1,6 +1,8 @@
 https://towardsdatascience.com/time-series-classification-using-dynamic-time-warping-61dcd9e143f6
 
-https://www.sciencedirect.com/science/article/pii/S2666827020300013
+https://www.sciencedirect.com/science/article/pii/S2666827020300013  clustering 
+
+https://openproceedings.org/2021/conf/edbt/p270.pdf  clustering
 
 https://medium.com/swlh/5-tips-for-working-with-time-series-in-python-d889109e676d
 
