@@ -4,6 +4,8 @@ https://medium.com/swlh/5-tips-for-working-with-time-series-in-python-d889109e67
 
 https://peijin.medium.com/six-cool-python-nonlinear-time-series-analysis-libraries-651ae845c65d
 
+https://thingsolver.com/how-to-perform-time-series-clustering-using-ml/
+
 https://statisticsbyjim.com/time-series/
 
 https://medium.com/analytics-vidhya/time-series-forecasting-a-complete-guide-d963142da33f
