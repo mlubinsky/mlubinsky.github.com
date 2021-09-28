@@ -26,6 +26,7 @@ http://jeffe.cs.illinois.edu/teaching/algorithms/
 
 https://www.pythonforbeginners.com/queue/queue-in-python
 
+https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-interviews/. Udemy
 
 https://www.youtube.com/watch?v=Dx5eiQdv4k8 Find 2 closest points on plain
 
