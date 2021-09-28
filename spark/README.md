@@ -1,5 +1,7 @@
 https://mungingdata.com/category/apache-spark/
 
+https://medium.com/@adrianchang/apache-spark-partitioning-e9faab369d14
+
 https://www.slideshare.net/databricks/fine-tuning-and-enhancing-performance-of-apache-spark-jobs
 
 https://www.youtube.com/channel/UCoVVyUViJ3mfaEKVjAJSnVA
