@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=W-wr4Fxmjsc   (ru)
+
 ### Kafka on Mac
 https://habr.com/ru/post/578916/ Python микросервисы с Kafka 
 
