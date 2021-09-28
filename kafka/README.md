@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=W-wr4Fxmjsc   (ru)
 
+https://towardsdatascience.com/master-the-kafka-shell-in-5-minutes-topics-producers-and-consumers-explained-442a15f1dac1
+
 ### Kafka on Mac
 https://habr.com/ru/post/578916/ Python микросервисы с Kafka 
 
