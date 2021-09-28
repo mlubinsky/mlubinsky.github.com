@@ -7,6 +7,10 @@ https://diffxweyl.wordpress.com/ Interesting blog
 
 https://youtu.be/9_oPARI4k1o
 
+https://arxiv.org/abs/2109.12552 Theoretical Chemistry
+
+https://arxiv.org/abs/2109.12087 Notes on symmetries in particle physics
+
 ### SciPy SymPy
 
 https://www.youtube.com/watch?v=jmX4FOUEfgU SciPy
