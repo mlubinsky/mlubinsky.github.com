@@ -682,6 +682,8 @@ https://github.com/noyesno/awka compiles awk to C for speed
 ### make  
 https://learnxinyminutes.com/docs/make/
 
+http://nuclear.mutantstargoat.com/articles/make/#writing-install-uninstall-rules
+
 
 
  
