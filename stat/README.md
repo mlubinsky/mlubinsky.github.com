@@ -11,6 +11,7 @@
 
 https://queueing-tool.readthedocs.io/en/latest/
 
+https://www.youtube.com/watch?v=pYxNSUDSFH4  Probability vs likehood
 
 https://www.dynatrace.com/news/blog/why-averages-suck-and-percentiles-are-great/
 
