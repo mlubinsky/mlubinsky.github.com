@@ -1,5 +1,7 @@
 https://mungingdata.com/category/apache-spark/
 
+https://www.slideshare.net/databricks/fine-tuning-and-enhancing-performance-of-apache-spark-jobs
+
 https://habr.com/ru/company/X5Group/blog/579232/. PySpark
 
 https://mungingdata.com/apache-spark/best-books/
