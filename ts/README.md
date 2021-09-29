@@ -1,3 +1,5 @@
+https://towardsdatascience.com/when-a-time-series-only-quacks-like-a-duck-10de9e165e 
+
 https://github.com/salesforce/Merlion#readme  Merlion: Python library for TS
 
 https://engineering.linkedin.com/blog/2021/greykite--a-flexible--intuitive--and-fast-forecasting-library
