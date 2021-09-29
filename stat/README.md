@@ -1,5 +1,7 @@
 ## Stat
 
+https://www.statlearning.com/
+
 https://www.crosstab.io/
 
 https://xcelab.net/rm/statistical-rethinking/
