@@ -56,6 +56,7 @@ https://austinrochford.com/posts/2021-06-10-lego-pymc3.html
 
 
 ### Casual inference
+https://matheusfacure.github.io/python-causality-handbook/landing-page.html
 
 https://microsoft.github.io/dowhy/
 
@@ -65,7 +66,7 @@ https://www.bradyneal.com/which-causal-inference-book
 
 https://yanirseroussi.com/causal-inference-reading-list/
 
-https://www.inference.vc/causal-inference-4/?fbclid=IwAR1_P5JHLihyB_Q9a8fKVL4eVfsqEM21xVCkzYOat9rn2mbLIloyY7M51m8
+https://www.inference.vc/causal-inference-4/
 
 ### Мир статистических гипотез
 https://habr.com/ru/post/558836/ 
