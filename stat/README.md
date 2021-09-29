@@ -11,6 +11,8 @@ https://towardsdatascience.com/statistics-in-python-generating-random-numbers-in
 
 https://towardsdatascience.com/mathematical-statistics-a-rigorous-derivation-and-analysis-of-the-wald-test-score-test-and-6262bed53c55 
 
+https://towardsdatascience.com/union-of-probabilistic-event-groups-b415d23e1a62 
+
 ## Stat
 
 https://www.statlearning.com/
