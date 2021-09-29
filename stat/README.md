@@ -2,6 +2,8 @@
 
 https://www.crosstab.io/
 
+https://xcelab.net/rm/statistical-rethinking/
+
  five number summary in statistics: 
  mean, 
  median, 
