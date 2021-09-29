@@ -8,6 +8,9 @@ https://towardsdatascience.com/random-seed-numpy-786cf7876a5f
 
 https://towardsdatascience.com/statistics-in-python-generating-random-numbers-in-python-numpy-and-sklearn-60e16b2210ae 
 
+
+https://towardsdatascience.com/mathematical-statistics-a-rigorous-derivation-and-analysis-of-the-wald-test-score-test-and-6262bed53c55 
+
 ## Stat
 
 https://www.statlearning.com/
