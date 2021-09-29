@@ -304,6 +304,8 @@ https://en.wikipedia.org/wiki/Thompson_sampling
 
 https://arxiv.org/pdf/1707.02038.pdf A Tutorial on Thompson Sampling
 
+https://towardsdatascience.com/multi-armed-bandits-thompson-sampling-algorithm-fea205cf31df 
+
 https://towardsdatascience.com/solving-multiarmed-bandits-a-comparison-of-epsilon-greedy-and-thompson-sampling-d97167ca9a50
 
 https://web.stanford.edu/~bvr/pubs/TS_Tutorial.pdf
