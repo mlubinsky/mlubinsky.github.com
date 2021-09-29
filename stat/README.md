@@ -4,6 +4,8 @@ https://www.crosstab.io/
 
 https://xcelab.net/rm/statistical-rethinking/
 
+http://bayes.cs.ucla.edu/WHY/ The Book of why
+
  five number summary in statistics: 
  mean, 
  median, 
