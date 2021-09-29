@@ -2,6 +2,8 @@ https://physicsbaseddeeplearning.org/intro.html . BOOK
 
 https://arxiv.org/abs/1709.02840  Introduction to Machine Learning
 
+https://inria.github.io/scikit-learn-mooc/
+
 https://github.com/orico/www.mlcompendium.com
 
 https://habr.com/ru/company/skillfactory/blog/561044/ . useful libs
