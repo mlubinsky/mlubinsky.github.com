@@ -1,3 +1,9 @@
+https://towardsdatascience.com/statistical-modelling-with-python-the-three-must-know-s-modules-79fa393e5640 
+
+https://towardsdatascience.com/a-practical-introduction-to-9-regression-algorithms-389057f86eb9 
+
+https://towardsdatascience.com/deep-diving-statistical-distributions-with-python-for-data-scientists-a0a4badc8d1a  
+
 ## Stat
 
 https://www.statlearning.com/
