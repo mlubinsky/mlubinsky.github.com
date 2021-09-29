@@ -1,5 +1,7 @@
 ## Stat
 
+https://www.crosstab.io/
+
  five number summary in statistics: 
  mean, 
  median, 
@@ -43,6 +45,11 @@ https://statmodeling.stat.columbia.edu/2020/12/09/what-are-the-most-important-st
 
 	How percentile approximation works and why it's more useful than averages 
 https://news.ycombinator.com/item?id=28526966
+
+### survival analysis
+https://www.crosstab.io/topics/survival-analysis
+
+https://www.crosstab.io/articles/survival-analysis-applications
 
 ### Z-score
 
