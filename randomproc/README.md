@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=itHtAUBlnZM&list=PL-_cKNuVAYAXSlTlxonEdTTrA_ppMA
 
 https://www.youtube.com/watch?v=wkoX3vUP5To&list=PLcsjsqLLSfNCWYkdCFXCIPUWuPMwtp9qC Соколов Д. Д. - Теория случайный процессов
 
-http://synset.com/
+http://synset.com/  BOOK
 
 https://www.youtube.com/watch?v=YBR41RpLxeE&list=PLU2SDCh6kZwUS5H2tNP7xmqdpJrsnbhpO Случайные процессы. Алексей Поляков MIPT
 
@@ -58,7 +58,7 @@ https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distribu
 
 ## Gaussian process 
 
-https://peterroelants.github.io/posts/gaussian-process-tutorial/
+https://peterroelants.github.io/posts/gaussian-process-tutorial/ with Python
 
 https://news.ycombinator.com/item?id=27803316
 
