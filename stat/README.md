@@ -1,8 +1,12 @@
+### Python
 https://towardsdatascience.com/statistical-modelling-with-python-the-three-must-know-s-modules-79fa393e5640 
 
 https://towardsdatascience.com/a-practical-introduction-to-9-regression-algorithms-389057f86eb9 
 
 https://towardsdatascience.com/deep-diving-statistical-distributions-with-python-for-data-scientists-a0a4badc8d1a  
+https://towardsdatascience.com/random-seed-numpy-786cf7876a5f
+
+https://towardsdatascience.com/statistics-in-python-generating-random-numbers-in-python-numpy-and-sklearn-60e16b2210ae 
 
 ## Stat
 
