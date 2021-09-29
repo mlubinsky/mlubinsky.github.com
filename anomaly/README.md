@@ -20,6 +20,8 @@ https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook-dp-B0
 
 https://towardsdatascience.com/a-comprehensive-beginners-guide-to-the-diverse-field-of-anomaly-detection-8c818d153995
 
+https://towardsdatascience.com/a-complete-anomaly-detection-algorithm-from-scratch-in-python-step-by-step-guide-4c115e65d54e 
+
 https://www.youtube.com/watch?v=AGdHwNTrG3U
 
 https://awesomeopensource.com/projects/anomaly-detection
