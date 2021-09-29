@@ -1,5 +1,7 @@
 https://www.coursera.org/learn/julia-programming/home/welcome
 
+https://github.com/mossr/BeautifulAlgorithms.jl#readme
+
 https://www.youtube.com/watch?v=4giNd6HLUQg
 
 https://techytok.com/from-zero-to-julia/
