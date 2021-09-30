@@ -4,6 +4,10 @@ https://kconrad.math.uconn.edu/blurbs/analysis/gaussianintegral.pdf
 
 http://textbooks.math.gatech.edu/ila/index.html. Interactive linear algebra 
 
+https://raw.githubusercontent.com/kenjihiranabe/The-Art-of-Linear-Algebra/main/The-Art-of-Linear-Algebra.pdf Art of linear algebra
+
+https://news.ycombinator.com/item?id=28704164
+
 https://samenright.com/2021/08/31/a-laymans-guide-to-recreational-mathematics-videos/
 
 https://nadoumnet.d3.ru/
