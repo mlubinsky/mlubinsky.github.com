@@ -58,6 +58,10 @@ https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distribu
 
 ## Gaussian process 
 
+https://gaussianbp.github.io/
+
+https://news.ycombinator.com/item?id=28367177
+
 https://peterroelants.github.io/posts/gaussian-process-tutorial/ with Python
 
 https://news.ycombinator.com/item?id=27803316
