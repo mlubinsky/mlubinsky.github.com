@@ -16,6 +16,8 @@ https://corecursive.com/061-reinforcement-learning/
 
 https://www.reddit.com/r/MachineLearning/comments/m0r7pe/d_best_book_hardcopy_for_rl_with_code/
 
+http://benjamin-recht.github.io/2018/06/25/outsider-rl/
+
 <https://github.com/dennybritz/reinforcement-learning>
 
 <https://github.com/marload/deep-rl-tf2>
