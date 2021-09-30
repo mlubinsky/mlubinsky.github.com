@@ -31,6 +31,9 @@ https://sci-hub.ru/
 https://sci-hub.se/
 
 #### Tools for thinking: Obsidian , Anki , etc
+
+RemNote,  Roam, Obsidian, LogSeq, Athens, TheBrain, Zettlr, Notion
+
 https://news.ycombinator.com/item?id=28292225
 
 https://news.ycombinator.com/item?id=28400446
