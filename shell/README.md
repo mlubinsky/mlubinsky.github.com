@@ -673,6 +673,10 @@ https://news.ycombinator.com/item?id=17183092
 ###  AWK  
 ```cat log.log | awk '{ print $1 }'```
 
+https://earthly.dev/blog/awk-examples/
+
+https://news.ycombinator.com/item?id=28707463
+
 https://news.ycombinator.com/item?id=20308865 .  AWK by example
   
 https://github.com/thewhitetulip/awk-anti-textbook
