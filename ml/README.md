@@ -6,6 +6,9 @@ https://inria.github.io/scikit-learn-mooc/
 
 https://github.com/orico/www.mlcompendium.com
 
+
+argmin.net
+
 https://habr.com/ru/company/skillfactory/blog/561044/ . useful libs
 
 https://github.com/online-ml/river#readme  Online mchine learning (streming data)
