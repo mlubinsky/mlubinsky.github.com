@@ -360,7 +360,7 @@ https://www.youtube.com/watch?v=F_gHV-Zq158
 
 ### Anomaly detection in time series
 
- 
+ https://www.microprediction.com/blog/anomaly
 
 https://github.com/pycaret/pycaret/blob/master/tutorials/Anomaly%20Detection%20Tutorial%20Level%20Beginner%20-%20ANO101.ipynb
 
