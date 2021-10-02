@@ -203,6 +203,8 @@ https://habr.com/ru/company/plesk/blog/507094/
 
 <http://www.logtailapp.com/>
 
+https://github.com/lucianmarin/logparser
+
 
 ## Func Programming
 
