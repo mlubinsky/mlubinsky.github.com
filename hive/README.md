@@ -686,6 +686,8 @@ The Enterprise Big Data Lake: Delivering the Promise of Big Data and Data Scienc
 
 https://tech.trivago.com/2019/01/30/a-new-functional-approach-to-complex-types-in-apache-hive/
 
+https://developpaper.com/macro-an-often-overlooked-weapon-in-hive/
+
 <https://dwgeek.com/working-with-hive-macros-syntax-and-examples.html/>
 
 ```
