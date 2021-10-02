@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=23z_ruAi4FI
 
+Swimming https://www.youtube.com/watch?v=LijdyVaaDnY
+
 
 Боль в локте  эпикондилит, бурсит, локоть теннисиста
 
