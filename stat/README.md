@@ -3,6 +3,8 @@ https://towardsdatascience.com/statistical-modelling-with-python-the-three-must-
 
 https://www.kdnuggets.com/2021/09/advanced-statistical-concepts-data-science.html
 
+https://www.kdnuggets.com/2021/09/determine-best-fitting-data-distribution-python.html
+
 https://towardsdatascience.com/a-practical-introduction-to-9-regression-algorithms-389057f86eb9 
 
 https://towardsdatascience.com/deep-diving-statistical-distributions-with-python-for-data-scientists-a0a4badc8d1a  
