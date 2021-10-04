@@ -13,3 +13,11 @@ https://www.youtube.com/watch?v=8Uk2e7cCuyw
 https://www.educative.io/blog/cracking-top-facebook-coding-interview-questions
 
 https://platform.stratascratch.com/coding
+
+
+Salary website: https://www.levels.fyi/
+System design youtube channel (Gaurav Sen): https://www.youtube.com/channel/UCRPM...
+System design website: https://github.com/donnemartin/system...
+Amazon leadership principles: https://www.amazon.jobs/en/principles
+Competitive coding:  leetcode.com, geeksforgeeks.org
+Mock interviews, salary negotiation consulting:  interviewing.io, interviewkickstart.com
