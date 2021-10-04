@@ -103,6 +103,34 @@ def functionName ([list of parameters]) : [return type] = {
 }
 ```
 
+### Seq has many subclasses including Queue, Range, List, Stack, and LinkedList.
+
+A Seq is an Iterable that has a defined order of elements. Sequences provide a method apply() for indexing, ranging from 0 up to the length of the sequence. Seq has many subclasses including Queue, Range, List, Stack, and LinkedList.
+```
+import scala.collection.immutable._  
+object MainObject{  
+   def main(args:Array[String]){  
+       var seq:Seq[Int] = Seq(52,85,1,8,3,2,7)  
+       seq.foreach((element:Int) => print(element+" "))  
+       println("\nAccessing element by using index")  
+       println(seq(2))  
+   }
+}
+```
+
+A List is a Seq that is implemented as an immutable linked list. It's best used in cases with last-in first-out (LIFO) access patterns.
+```
+import scala.collection.immutable._  
+object MainObject{  
+   def main(args:Array[String]){  
+      var list = List(1,8,5,6,9,58,23,15,4)  
+       var list2:List[Int] = List(1,8,5,6,9,58,23,15,4)  
+       println(list)  
+       println(list2)  
+   }
+}
+```
+
 ### Arrays
 
 ```
