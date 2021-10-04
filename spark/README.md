@@ -3,6 +3,20 @@ https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-a
 Stage
 https://towardsdatascience.com/unraveling-the-staged-execution-in-apache-spark-eff98c4cdac9
 
+ https://medium.com/data-arena/merging-different-schemas-in-apache-spark-2a9caca2c5ce
+ 
+```
+spark-submit \
+    --master k8s://https://$(minikube ip):8443 \
+    --deploy-mode cluster \
+    --name spark-pi \
+    --class org.apache.spark.examples.SparkPi \
+    --conf spark.executor.instances=2 \
+    --conf spark.kubernetes.authenticate.driver.serviceAccountName=spark-sa \
+    --conf spark.kubernetes.container.image=localhost:5000/spark-local \
+    local:///opt/spark/examples/jars/spark-examples_2.12-3.1.1.jar
+ ```  
+ 
 
 https://medium.com/technexthere/how-does-spark-joining-strategy-working-c826954e2611
 
@@ -261,6 +275,8 @@ Required: openjdk@11 ✘
 ```
 
 #### in docker
+
+https://sbakiu.medium.com/docker-best-practices-in-apache-spark-application-deployments-c013ad5aab9e
 
  https://habr.com/ru/post/577762/
  
