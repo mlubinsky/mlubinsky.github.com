@@ -642,3 +642,9 @@ MappedRDD[5] at distinct at <console>:12 (1 partitions)
  
  ```
 As you can see distinct creates a shuffle. It is also particularly important to find out this way rather than docs because there are situations where a shuffle will be required or not required for a certain function. For example, join usually requires a shuffle but if you join two RDDs that branch from the same RDD spark can sometimes elide the shuffle.
+
+
+
+###   Trait 
+Trait denotes a particular unit of Class that facilitates the use of multiple inheritances. It encapsulates a method along with its variables and fields. While a Trait can extend only one Class, a Class can have multiple traits.
+Traits are primarily used for dependency injection. Contrary to Java where dependency injection is accomplished through annotations, Scala has no annotations or no special package that needs to be imported — you only need to initialize the Class with the Trait to trigger the dependency injection.
