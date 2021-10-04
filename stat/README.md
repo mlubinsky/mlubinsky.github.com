@@ -98,6 +98,8 @@ http://allendowney.github.io/ThinkBayes2/index.html
 
 https://austinrochford.com/posts/2021-06-10-lego-pymc3.html
 
+https://pub.towardsai.net/bayesian-inference-beyond-estimating-statistical-models-4b2f78c7f090
+
 
 ### Casual inference
 https://matheusfacure.github.io/python-causality-handbook/landing-page.html
