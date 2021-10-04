@@ -26,6 +26,7 @@ Part-1: https://youtu.be/0eUWFN0vciA
 Part-2: https://youtu.be/N4rdGx4jsO4
 Part-3: https://youtu.be/ECIXh1fOpks
 
+https://www.youtube.com/watch?v=iLpjNItogwc. Apache Spark Memory Management 
 
 #### Apache Spark Series A-Z
 
