@@ -21,9 +21,13 @@ spark-submit \
 https://medium.com/technexthere/how-does-spark-joining-strategy-working-c826954e2611
 
 
+https://www.youtube.com/watch?v=FKWarVIffvU&list=PLHoQFin5tpu_JfE_k-tvVjeja9RXvBIdm Apache Spark Series A-Z
+
 https://www.youtube.com/watch?v=s6hxAj9MCL4 Closure and Accumulators in Apache spark
 
 https://www.youtube.com/watch?v=ebbx83jPbmQ Shuffle in Spark | Session-10 | Apache Spark Series from A-Z
+
+https://www.youtube.com/watch?v=n9ejUp7yDhY Interoperating RDDs, Dataframe, Datasets | Session-13
 
 https://www.youtube.com/watch?v=4dWHu-3nosE  Spark Streaming Log files in a Directory | Session-15
 
