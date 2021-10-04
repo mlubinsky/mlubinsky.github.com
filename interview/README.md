@@ -21,3 +21,5 @@ System design website: https://github.com/donnemartin/system...
 Amazon leadership principles: https://www.amazon.jobs/en/principles
 Competitive coding:  leetcode.com, geeksforgeeks.org
 Mock interviews, salary negotiation consulting:  interviewing.io, interviewkickstart.com
+
+https://cloudirregular.substack.com/p/the-greatest-resume-ive-ever-seen
