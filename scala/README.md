@@ -33,6 +33,11 @@ https://bszwej.medium.com/domain-driven-design-with-fp-in-scala-21b557f94aa5
 <https://www.youtube.com/watch?v=I3loMuHnYqw>
 
 
+### Var vs Val
+
+Val the reference cannot be changed to point to another reference
+Val keyword in Scala can be related to the functionality of java final keyword. To simplify it, Val refers to immutable declaration of a variable whereas var refers to mutable declaration of a variable in Scala.
+
 ### String
 
 ```
@@ -51,6 +56,16 @@ An object is a singleton, an instance of a class which is unique.
 An anonymous class is created for every object in the code, 
 it inherits from whatever classes you declared object to implement.
 
+### Companion objects
+
+Companion objects provide a clear separation between static and non-static methods in a class 
+because everything that is located inside a companion object is not a part of the class’s runtime objects 
+but is available from a static context and vice versa.
+
+### Unit means void
+
+Unit is a subtype of scala.anyval and is nothing but Scala equivalent of Java void that provides the Scala with an abstraction of the java platform. 
+Empty tuple i.e. () in Scala is a term that represents unit value
 
 ###  Function
 
@@ -243,6 +258,9 @@ Closure is considered as a Function whose return value is dependent upon the val
 val multiplier = (i:Int) => i * 10
 
 ### Trait
+
+A trait is a special kind of Class that enables the use of multiple inheritance. Although a trait can extend only one class, but a class can have multiple traits. However, unlike classes, traits cannot be instantiated.
+
 A Trait can be defined as a unit which Encapsulates the method and its variables or fields. 
 The following example will help us understand in a better way.
 
@@ -292,7 +310,7 @@ Implicit class is a class marked with the “implicit” keyword. This feature w
 
  There are mainly three access Modifiers available in Scala. Namely,
 
-#### Private:
+#### Private
 
 The Accessibility of a private member is restricted to the Class or the Object in which it declared.
 The following program will explain this in detail.
@@ -351,10 +369,26 @@ class Outer {
 
 ### Null	Nil	None	Nothing
 
-Null represents the absence of a value. 
-Nil denotes the end a List	
-None is the value of an Option with no value.	
-Nothing is lowest type in type System. 
+#### Null represents the absence of a value. 
+ It’s a sub-type of AnyRef type in Scala Types hierarchy.
+ As Scala runs on JVM, it uses NULL to provide the compatibility with Java null keyword, or in Scala terms, 
+ to provide type for null keyword, Null type exists. 
+ It represents the absence of type information for complex types that are inherited from AnyRef.
+
+
+
+#### Nil denotes the end a List	
+It’s a handy way of initializing an empty list since, Nil, is an object, which extends List 
+
+#### None is the value of an Option with no value.	
+
+ In cases, where you don’t know, if you would be able to return a value as expected, we can use Option [T]. 
+ It is an abstract class, with just two sub-classes,
+ Some [T] and none. 
+ With this, we can tell users that, the method might return a T of type Some [T] or it might return none.
+
+#### Nothing is lowest type in type System
+  It’s a sub-type of all the types exists in Scala Types hierarchy. It helps in providing the return type for the operations that can affect a normal program’s flow. It can only be used as a type, as instantiation of nothing cannot be done. It incorporates all types under AnyRef and AnyVal. Nothing is usually used as a return type for methods that have abnormal termination and result in an exception.
 
 ###  if else
 ```
@@ -405,3 +439,11 @@ Or
 - Java.io._: It is a package that imports every class in Scala for input-output resources.
 - PreDef: It offers type aliases for types that are used regularly used in Scala. These include Safe, Map, and the List constructors.
  
+
+### Future
+
+Scala Future is a monadic collection, which starts a background task. 
+It is an object which holds the potential value or future value, which would be available after the task is completed. 
+It also provides various operations to further chain the operations or to extract the value. 
+Future also provide various call-back functions like onComplete, OnFailure, onSuccess to name a few, which makes Future a complete concurrent task class. 
+The main and foremost difference between Scala’s Future and Java’s Future class is that the later does not provide promises/callbacks operations. 
