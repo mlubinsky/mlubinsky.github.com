@@ -276,6 +276,8 @@ Make it a trait if it might be reused in multiple and unrelated classes.
 In different parts of the class hierarchy only traits can be mixed into different parts.
 You can use abstract class, if you want to distribute it in compiled form and expects outside groups to write classes inheriting from it.
 
+Scala resolves diamond problem through the concept of Traits and class linearization rules.
+
 ```
 trait Printable{
    def print()
@@ -445,5 +447,20 @@ Or
 Scala Future is a monadic collection, which starts a background task. 
 It is an object which holds the potential value or future value, which would be available after the task is completed. 
 It also provides various operations to further chain the operations or to extract the value. 
-Future also provide various call-back functions like onComplete, OnFailure, onSuccess to name a few, which makes Future a complete concurrent task class. 
+Future also provide various call-back functions like 
+  onComplete, 
+  OnFailure, 
+  onSuccess 
+to name a few, which makes Future a complete concurrent task class. 
 The main and foremost difference between Scala’s Future and Java’s Future class is that the later does not provide promises/callbacks operations. 
+
+### Streams
+
+
+Streams in Scala are a type of lazy collection, which are created using starting element and then recursively generated using those elements. Streams are like a List, except that, elements are added only when they are accessed, hence “lazy”. Since streams are lazy in terms of adding elements, they can be unbounded also, and once the elements are added, they are cached. Since Streams can be unbounded, and all the values are computed at the time of access, programmers need to be careful on using methods which are not transformers, as it may result in java.lang.OutOfMemoryErrors.
+
+stream.max
+
+stream.size
+
+stream.sum
