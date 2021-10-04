@@ -10,6 +10,8 @@
  https://news.ycombinator.com/item?id=28660157
  
 
+leshenko.net  - exampl of git implemented in python
+
 ### Content aggregators
 
 https://lukesmith.xyz/blog/a-guide-to-using-rss-to-replace-social-media
