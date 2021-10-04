@@ -41,6 +41,8 @@ String toUpperCase: Converts all of the characters in this String to upper case 
 Char[] to CharArray(): Converts this string to a new character array.
 String[] split(String regex): Splits this string around matches of the given regular expression.
 Int length(): returns the length of this string.
+
+Val formatted= “%s %i”.format (mystring.myInt)
 ```
 
 ### Object is a singleton
@@ -59,6 +61,35 @@ def functionName ([list of parameters]) : [return type] = {
 }
 ```
 
+###  Append data in a list?
+
+Ans: In Scala to Append into a List, We have the following methods:
+```
+
+var myList = List.empty[String]
+myList :+= "a"
+myList :+= "b"
+myList :+= "c"
+```
+
+use ++ for appending a list to list
+```
+var myList = List.empty[String]
+myList ++= List("a", "b", "c")
+```
+
+### Set
+
+head: returns the head (first element) of the set
+tail: returns entire set except the head element
+isEmpty: checks if the set is empty, returns Boolean
+
+### BitSet
+
+ BitSet is a collection of smaller integers represented as bits of the larger integer. 
+ We can add multiple items in a bitset using the ‘++’ operator similar to list. 
+ Bitsets can be mutable and immutable and are sets of non-negative integers.
+ 
 ### Map
 
 val colors = Map("red" -> "#FF0000", "azure" -> "#F0FFFF")
@@ -66,6 +97,7 @@ val colors = Map("red" -> "#FF0000", "azure" -> "#F0FFFF")
 ### Arrays
 
 ```
+var z = new Array[Int](5)
 var myMatrix = ofDim[Int](3,3)  -- We use ofDim to declare multidimensional arrays.
 
 We use Range() method to generate an array containing a sequence of increasing integers in a given range.
@@ -93,6 +125,9 @@ object Demo {
          case ex: IOException = {
             println("IO Exception")
          }
+      }
+      finally {
+         println("Exiting the code...")
       }
    }
 }
@@ -175,7 +210,8 @@ The constructor parameters of case classes can be accessed directly and are trea
 
 ### App
 App is a helper class that holds the main method and its Members together. 
-The App trait can be used to quickly turn Objects into Executable programs. We can have our classes extend App to render the executable code.
+The App trait can be used to quickly turn Objects into Executable programs. 
+We can have our classes extend App to render the executable code.
 
 ```
 object Edureka extends App{
@@ -183,9 +219,23 @@ object Edureka extends App{
    }
 ```
 
-A Higher-order function is a function that does at least one of the following: 
+### Higher-order function  does at least one of the following
+
 - takes one or more Functions as Arguments
 - returns a Function as its result.
+
+```
+object Test {
+   def main(args: Array[String]) {
+       println( apply( layout, 10) 
+   )
+}
+
+def apply(f: Int => String, v: Int) = f(v)
+
+def layout[A](x: A) = "[" + x.toString() + "]"
+```
+
    
 ### Closure   
 Closure is considered as a Function whose return value is dependent upon the value of one or more variables declared outside the closure function.
@@ -293,8 +343,14 @@ class Outer {
    (new Inner).f() // OK because now f() is public
 }
  
+ 
+### Option, some, none
+
+‘Option’ is a Scala generic type that can either be ‘some’ generic value or none. 
+‘Queue’ often uses it to represent primitives that may be null.
 
 ### Null	Nil	None	Nothing
+
 Null represents the absence of a value. 
 Nil denotes the end a List	
 None is the value of an Option with no value.	
@@ -343,12 +399,5 @@ Or
 (_:Int)*(_Int)
  
 
-###  How do I Append data in a list?
 
-Ans: In Scala to Append into a List, We have the following methods:
-```
-use “:+” single value
-var myList = List.empty[String]
-myList :+= "a"
-```
  
