@@ -12,6 +12,8 @@ https://arxiv.org/pdf/2108.12301.pdf Symbolic math in Julia
 
 https://arxiv.org/pdf/2003.10146.pdf  Julia for ML
 
+https://pub.towardsai.net/13-data-science-things-i-learned-at-juliacon-2020-5362d543ced7
+
 https://viralinstruction.com/posts/badjulia/
 
 https://towardsdatascience.com/how-to-best-use-julia-with-jupyter-82678a482677
