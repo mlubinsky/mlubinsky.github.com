@@ -8,6 +8,8 @@ https://github.com/orico/www.mlcompendium.com
 
 https://github.com/blobcity/ai-seed 1000+ ready code templates to kickstart your next AI experiment
 
+https://lazypredict.readthedocs.io/en/latest/readme.html#
+
 argmin.net
 
 https://habr.com/ru/company/skillfactory/blog/561044/ . useful libs
