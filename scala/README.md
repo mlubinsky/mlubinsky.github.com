@@ -2,7 +2,7 @@ https://scastie.scala-lang.org/ Online Scala compiler
 
 <https://riiswa.github.io/Scala-CheatSheet/>
 
- 
+ https://www.zeolearn.com/interview-questions/scala
 
 The Scala book:
 
@@ -33,11 +33,36 @@ https://bszwej.medium.com/domain-driven-design-with-fp-in-scala-21b557f94aa5
 <https://www.youtube.com/watch?v=I3loMuHnYqw>
 
 
+### Integral types
+
+ Integral types: Byte, Short, Int, Long, and Char 
+
+Numerical types: Integral types + Float and Double
+
+
+### What is _*
+
+### Unary operators
+
+(2.0)unary_-    it is -2.0
+
+ only four prefixes are allowed to use. These are: +, -, !, and ~.
+
 ### Var vs Val
 
 Val the reference cannot be changed to point to another reference
 Val keyword in Scala can be related to the functionality of java final keyword. To simplify it, Val refers to immutable declaration of a variable whereas var refers to mutable declaration of a variable in Scala.
 
+```
+val welcomeStrings = new Array[String](3) 
+welcomeStrings(0) = "Welcome" 
+welcomeStrings(1) = "to "
+welcomeStrings(2) = "ProjectPro"
+
+```
+
+ variable can’t be reassigned a new value if one defines that variable using “val”. However, it is possible to make changes to the object the variable refers to.
+ 
 ### String
 
 ```
@@ -93,7 +118,15 @@ range (10, 20, 2)
 ```
 
 
-###  Append data in a list
+###  Append data in a List and ListBuffer
+
+Class List in Scala not offer the append function but offers to prepend function?
+
+Ans: This is because of the time it takes to perform both operations. For appending an element to a list in Scala, the time taken grows linearly with the size of the list whereas, prepending an element using the “::” operator takes constant time. 
+
+However, if one wants to use the append function, they can use ListBuffer.
+
+
 
 append 1 element using :+
 ```
@@ -117,7 +150,14 @@ Lists are covariant whilst array are invariants.
 The size of a list automatically increases or decreases based on the operations that are performed on it 
 i.e. a list in Scala is a variable-sized data structure whilst an array is fixed size data structure.
 
+List and Tuple are immutable, whereas arrays are mutable in Scala.
 
+### Tuple
+Unlike an Array or List, a tuple is Immutable and can hold objects with different Datatypes.
+Scala tuples combine a fixed number of items together so that they can be passed around as whole. A tuple is immutable and can hold objects with different types, unlike an array or list.
+
+ Capacity of tuples in Scala of the length two to twenty-two.
+ 
 ### Set
 
 head: returns the head (first element) of the set
@@ -133,6 +173,36 @@ isEmpty: checks if the set is empty, returns Boolean
 ### Map
 
 val colors = Map("red" -> "#FF0000", "azure" -> "#F0FFFF")
+
+
+
+### What is the difference between flatMap() and map() operations?
+
+FlatMap is a transformation operation in Apache Spark to create an RDD from existing RDD. It takes one element from an RDD and can produce 0, 1 or many outputs based on business logic. It is similar to Map operation, but Map produces one to one output. If we perform Map operation on an RDD of length N, output RDD will also be of length N. But for FlatMap operation output RDD can be of different length based on business logic
+
+```
+val array1d = Array(“Hello,World”, “This,is,an,example”)
+//array1d is an array of strings
+val maped_array = array1d.map(x => x.split(“,”))
+//maped_array will be: Array(Array(Hello, World), Array(This, is, an, example))
+val flatMap_array = array1d.flatMap(x => x.split(“,”))
+//flatMap_array will be: Array(Hello, World, This, is, an, example)
+
+```
+
+
+### Write a lambda function in Scala, using map operation, which takes a sequence of salaries as input and outputs double of every element from input.
+
+val salaries = Seq(20000, 70000, 40000)
+val doubleSalary = (x : Int) => x*2
+val newSalary = salaries.map(doubleSalary)
+>List(40000, 140000, 80000)
+Or
+
+val salaries = Seq(20000, 70000, 40000)
+val newSalary = salaries.map(x => x*2)
+//List(40000, 140000, 80000)
+
 
 
 ### Exception
@@ -231,9 +301,7 @@ def personDesc(name: String, db: Map[String, Int]): String = {
 }
 ```
 
-### Tuple
-Unlike an Array or List, a tuple is Immutable and can hold objects with different Datatypes.
-Scala tuples combine a fixed number of items together so that they can be passed around as whole. A tuple is immutable and can hold objects with different types, unlike an array or list.
+
 
 ### Case Classes
 
@@ -250,6 +318,10 @@ Case classes can be used for pattern matching.
 App is a helper class that holds the main method and its Members together. 
 The App trait can be used to quickly turn Objects into Executable programs. 
 We can have our classes extend App to render the executable code.
+App is a trait defined in scala package as "scala.App" which defines the main method. 
+If an object or class extends this trait then they will become Scala executable programs automatically as they inherit the main method from application.
+Developers need not write main method when using App 
+but the only drawback of using App is that developers have to use same name args to refer command line arguments because scala.App's main() method uses this name.
 
 ```
 object Edureka extends App{
@@ -487,3 +559,31 @@ stream.max
 stream.size
 
 stream.sum
+
+
+### Invalid code no j++ in Scala:
+
+```
+var i = 0 
+while (j < args.length) { 
+    println(args(i)) 
+    j++
+}
+ ```
+ 
+ 
+ ### Spark How will you determine whether a function causes a shuffle or not without the help of documentation?
+
+For any function, just create an RDD and call toDebugString, for example:
+```
+scala> val a = sc.parallelize(Array(1,2,3)).distinct
+scala> a.toDebugString
+MappedRDD[5] at distinct at <console>:12 (1 partitions)
+ MapPartitionsRDD[4] at distinct at <console>:12 (1 partitions)
+**ShuffledRDD[3] at distinct at <console>:12 (1 partitions)**
+  MapPartitionsRDD[2] at distinct at <console>:12 (1 partitions)
+    MappedRDD[1] at distinct at <console>:12 (1 partitions)
+       MappedRDD[1] at distinct at <console>:12 (1 partitions)
+ 
+ ```
+As you can see distinct creates a shuffle. It is also particularly important to find out this way rather than docs because there are situations where a shuffle will be required or not required for a certain function. For example, join usually requires a shuffle but if you join two RDDs that branch from the same RDD spark can sometimes elide the shuffle.
