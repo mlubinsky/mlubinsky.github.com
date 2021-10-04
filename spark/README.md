@@ -1,5 +1,9 @@
 https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-apache-spark/functional-programming-using-the-spark-shell?
 
+Stage
+https://towardsdatascience.com/unraveling-the-staged-execution-in-apache-spark-eff98c4cdac9
+
+
 https://medium.com/technexthere/how-does-spark-joining-strategy-working-c826954e2611
 
 https://mungingdata.com/category/apache-spark/
