@@ -20,6 +20,8 @@ spark-submit \
 
 https://medium.com/technexthere/how-does-spark-joining-strategy-working-c826954e2611
 
+https://medium.com/@adrianchang/apache-spark-checkpointing-ebd2ec065371
+
 ### Spark Transformations Explained with use cases | Apache Spark FAQs
 
 Part-1: https://youtu.be/0eUWFN0vciA
