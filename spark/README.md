@@ -1,5 +1,7 @@
 https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-apache-spark/functional-programming-using-the-spark-shell?
 
+https://medium.com/technexthere/how-does-spark-joining-strategy-working-c826954e2611
+
 https://mungingdata.com/category/apache-spark/
 
 https://medium.com/technexthere/how-to-size-spark-application-ff2a9d487926
