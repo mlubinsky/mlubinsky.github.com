@@ -1,5 +1,12 @@
 https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-apache-spark/functional-programming-using-the-spark-shell?
 
+
+
+There are 8 workers and both the workers and driver are m4.xlarge instances (16.0 GB, 4 Cores).
+
+https://pub.towardsai.net/4-tips-to-write-scalable-apache-spark-code-1c736e4d698e
+
+
 Stage
 https://towardsdatascience.com/unraveling-the-staged-execution-in-apache-spark-eff98c4cdac9
 
