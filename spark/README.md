@@ -6,6 +6,12 @@ There are 8 workers and both the workers and driver are m4.xlarge instances (16.
 
 https://pub.towardsai.net/4-tips-to-write-scalable-apache-spark-code-1c736e4d698e
 
+https://pub.towardsai.net/how-you-should-save-the-output-of-your-spark-etl-jobs-if-you-are-not-writing-to-a-database-c95a113eef1 
+
+https://pub.towardsai.net/a-practical-tip-when-working-with-random-samples-on-spark-23f6dbbe722b 
+
+rdd.toDebugString
+rdd.selectExpr("count(DISTINCT y ) AS uniq_x")
 
 Stage
 https://towardsdatascience.com/unraveling-the-staged-execution-in-apache-spark-eff98c4cdac9
