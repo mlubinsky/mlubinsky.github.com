@@ -8,19 +8,29 @@ https://github.com/salesforce/Merlion#readme  Merlion: Python library for TS
 
 https://towardsdatascience.com/dig-deep-enough-features-engineering-techniques-for-time-series-analysis-in-python-500c96aebade
 
-https://engineering.linkedin.com/blog/2021/greykite--a-flexible--intuitive--and-fast-forecasting-library
+https://engineering.linkedin.com/blog/2021/greykite--a-flexible--intuitive--and-fast-forecasting-library GreyKite 
 
 https://medium.com/data-science-at-microsoft/time-series-forecasting-part-1-of-3-understanding-the-fundamentals-13b52eda3e5
 
-https://medium.com/data-science-at-microsoft/time-series-forecasting-part-3-of-3-introducing-auts-adaptive-univariate-time-series-dfd7555ca8d4
-
 https://medium.com/data-science-at-microsoft/time-series-forecasting-part-2-of-3-selecting-algorithms-11b6635f61bb
 
+https://medium.com/data-science-at-microsoft/time-series-forecasting-part-3-of-3-introducing-auts-adaptive-univariate-time-series-dfd7555ca8d4
+
+
+
+### DTW dynamic time warping 
+
 https://towardsdatascience.com/time-series-classification-using-dynamic-time-warping-61dcd9e143f6
+
+### Clustering time series data sets
 
 https://www.sciencedirect.com/science/article/pii/S2666827020300013  clustering 
 
 https://openproceedings.org/2021/conf/edbt/p270.pdf  clustering
+
+https://core.ac.uk/download/pdf/268877028.pdf 
+
+
 
 https://medium.com/swlh/5-tips-for-working-with-time-series-in-python-d889109e676d
 
