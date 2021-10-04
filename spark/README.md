@@ -2,6 +2,8 @@ https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-a
 
 https://mungingdata.com/category/apache-spark/
 
+https://medium.com/technexthere/how-to-size-spark-application-ff2a9d487926
+
 https://medium.com/@adrianchang/apache-spark-partitioning-e9faab369d14
 
 https://www.slideshare.net/databricks/fine-tuning-and-enhancing-performance-of-apache-spark-jobs
