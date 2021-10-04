@@ -7,6 +7,8 @@ https://data-flair.training/blogs/scala-tutorial/
  https://www.zeolearn.com/interview-questions/scala
  
  https://data-flair.training/blogs/scala-interview-questions/
+ 
+ https://www.journaldev.com/8958/scala-interview-questions-answers
 
 The Scala book:
 
