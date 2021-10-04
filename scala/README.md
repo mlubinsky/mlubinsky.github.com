@@ -175,14 +175,41 @@ class Outer {
 }
  
 
-### a Monad in Scala?
+### Null	Nil	None	Nothing
+Null represents the absence of a value. 
+Nil denotes the end a List	
+None is the value of an Option with no value.	
+Nothing is lowest type in type System. 
+
+###  if else
+```
+object Demo {
+   def main(args: Array[String]) {
+      var x = 30;
+      if( x == 10 ){
+         println("Value of X is 10")
+      } else if( x == 20 ){
+         println("Value of X is 20");
+      } else if( x == 30 ){
+         println("Value of X is 30");
+      } else{
+         println("This is else statement");
+      }
+   }
+}
+```
+###  Monad in Scala
 
 A Monad is an object that wraps another object. You pass the Monad mini-programs,
 i.e functions, to perform the data manipulation of the underlying object, instead of manipulating the object directly.  
 Monad chooses how to apply the program to the underlying object.
 
 
+### Yield 
+is used with a loop, Yield produces a value for each iteration. Another way to do is to use map/flatMap and filter with nomads.
 
+ 
+for (i <- 1 to 5) yield i
  
 
 ### Scala Anonymous Function.
