@@ -2,6 +2,11 @@ https://scastie.scala-lang.org/ Online Scala compiler
 
 <https://riiswa.github.io/Scala-CheatSheet/>
 
+### Scala Collections
+
+https://blog.redelastic.com/a-guide-to-scala-collections-exploring-monads-in-scala-collections-ef810ef3aec3
+
+
 https://data-flair.training/blogs/scala-tutorial/
 
  https://www.zeolearn.com/interview-questions/scala
