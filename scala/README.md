@@ -333,6 +333,8 @@ for (i - 1 to 10)
 
 ### Extractor
 
+https://medium.com/wix-engineering/scala-pattern-matching-apply-the-unapply-7237f8c30b41
+
 Extractor in Scala is an object that has a method called unapply as one of its members. 
 The purpose of that unapply method is to match the value and take it apart.
 apply and unapply methods in Scala are used for mapping and unmapping data between form and model data.
