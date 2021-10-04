@@ -6,6 +6,7 @@ https://inria.github.io/scikit-learn-mooc/
 
 https://github.com/orico/www.mlcompendium.com
 
+https://github.com/blobcity/ai-seed 1000+ ready code templates to kickstart your next AI experiment
 
 argmin.net
 
