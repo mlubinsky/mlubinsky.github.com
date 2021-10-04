@@ -62,6 +62,8 @@ Companion objects provide a clear separation between static and non-static metho
 because everything that is located inside a companion object is not a part of the class’s runtime objects 
 but is available from a static context and vice versa.
 
+According to the private access specifier, private members can be accessed only within that class but Scala’s companion object and class provide special access to private members. A companion object can access all the private members of a companion class. Similarly, a companion class can access all the private members of companion objects.
+
 ### Unit means void
 
 Unit is a subtype of scala.anyval and is nothing but Scala equivalent of Java void that provides the Scala with an abstraction of the java platform. 
@@ -76,9 +78,24 @@ def functionName ([list of parameters]) : [return type] = {
 }
 ```
 
-###  Append data in a list?
+### Arrays
 
-Ans: In Scala to Append into a List, We have the following methods:
+```
+var z = new Array[Int](5)
+var myMatrix = ofDim[Int](3,3)  -- We use ofDim to declare multidimensional arrays.
+
+We use Range() method to generate an array containing a sequence of increasing integers in a given range.
+
+
+def range( start: Int, end: Int, step: Int ): Array[Int]
+ 
+range (10, 20, 2)
+```
+
+
+###  Append data in a list
+
+append 1 element using :+
 ```
 
 var myList = List.empty[String]
@@ -92,6 +109,14 @@ use ++ for appending a list to list
 var myList = List.empty[String]
 myList ++= List("a", "b", "c")
 ```
+
+### Differentiate between Array and List  
+
+List is an immutable recursive data structure whilst array is a sequential mutable data structure.
+Lists are covariant whilst array are invariants.
+The size of a list automatically increases or decreases based on the operations that are performed on it 
+i.e. a list in Scala is a variable-sized data structure whilst an array is fixed size data structure.
+
 
 ### Set
 
@@ -109,19 +134,6 @@ isEmpty: checks if the set is empty, returns Boolean
 
 val colors = Map("red" -> "#FF0000", "azure" -> "#F0FFFF")
 
-### Arrays
-
-```
-var z = new Array[Int](5)
-var myMatrix = ofDim[Int](3,3)  -- We use ofDim to declare multidimensional arrays.
-
-We use Range() method to generate an array containing a sequence of increasing integers in a given range.
-
-
-def range( start: Int, end: Int, step: Int ): Array[Int]
- 
-range (10, 20, 2)
-```
 
 ### Exception
 
@@ -165,6 +177,11 @@ for (i - 1 to 10)
 
 Extractor in Scala is an object that has a method called unapply as one of its members. 
 The purpose of that unapply method is to match the value and take it apart.
+apply and unapply methods in Scala are used for mapping and unmapping data between form and model data.
+
+Apply method – Used to assemble an object from its components. For example, if we want to create an Employee object  then use the two components  firstName and lastName and compose the Employee object using the apply method.
+
+Unapply method – Used to decompose an object from its components. It follows the reverse process of apply method. So if you have an employee object, it can be decomposed into two components- firstName and lastName.
 
 
 ### Queue
@@ -222,6 +239,12 @@ Scala tuples combine a fixed number of items together so that they can be passed
 
 Case classes provides a recursive decomposition mechanism via pattern matching, it is a regular classes which export their constructor parameter. 
 The constructor parameters of case classes can be accessed directly and are treated as public values.
+
+Case classes are standard classes declared with a special modifier case. Case classes export their constructor parameters and provide a recursive decomposition mechanism through pattern matching. The constructor parameters of case classes are treated as public values and can be accessed directly. For a case class, companion objects and its associated method also get generated automatically. All the methods in the class, as well, methods in the companion objects are generated based on the parameter list. The only advantage of Case class is that it automatically generates the methods from the parameter list.
+
+Features of Case Class in Scala
+Case objects and Case class are serializable by default.
+Case classes can be used for pattern matching.
 
 ### App
 App is a helper class that holds the main method and its Members together. 
