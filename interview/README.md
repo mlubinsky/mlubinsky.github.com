@@ -23,3 +23,28 @@ Competitive coding:  leetcode.com, geeksforgeeks.org
 Mock interviews, salary negotiation consulting:  interviewing.io, interviewkickstart.com
 
 https://cloudirregular.substack.com/p/the-greatest-resume-ive-ever-seen
+
+Inverting a binary tree:
+The root is still the root, but everything else is just flipped:
+https://leetcode.com/problems/invert-binary-tree/
+```
+
+  TreeNode* invertTree(TreeNode* root) {
+    if (root) {
+      invertTree(root->left);
+      invertTree(root->right);
+      std::swap(root->left, root->right);
+    }
+    return root;
+  }
+
+
+ invert(tree):
+      if(tree not null):
+        temp := tree.left
+        tree.left <- tree.right
+        tree.right <- temp
+        invert(tree.left)
+        invert(tree.right)
+        
+ ```       
