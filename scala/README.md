@@ -2,6 +2,8 @@ https://scastie.scala-lang.org/ Online Scala compiler
 
 <https://riiswa.github.io/Scala-CheatSheet/>
 
+https://data-flair.training/blogs/scala-tutorial/
+
  https://www.zeolearn.com/interview-questions/scala
  
  https://data-flair.training/blogs/scala-interview-questions/
