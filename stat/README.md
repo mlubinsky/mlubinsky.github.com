@@ -4,6 +4,13 @@ http://www.numericalexpert.com/tutorials.php
 
 
 ### Python
+
+https://patsy.readthedocs.io/en/
+
+if we have some variable y, and we want to regress it against some other variables x, a, b, and the interaction of a and b, then we simply write:
+
+patsy.dmatrices("y ~ x + a + b + a:b", data)
+
 https://towardsdatascience.com/statistical-modelling-with-python-the-three-must-know-s-modules-79fa393e5640 
 
 https://www.kdnuggets.com/2021/09/advanced-statistical-concepts-data-science.html
