@@ -43,6 +43,13 @@ String[] split(String regex): Splits this string around matches of the given reg
 Int length(): returns the length of this string.
 ```
 
+### Object is a singleton
+
+An object is a singleton, an instance of a class which is unique.
+An anonymous class is created for every object in the code, 
+it inherits from whatever classes you declared object to implement.
+
+
 ###  Function
 
 ```
@@ -52,8 +59,83 @@ def functionName ([list of parameters]) : [return type] = {
 }
 ```
 
+### Map
+
+val colors = Map("red" -> "#FF0000", "azure" -> "#F0FFFF")
+
+### Arrays
+
+```
+var myMatrix = ofDim[Int](3,3)  -- We use ofDim to declare multidimensional arrays.
+
+We use Range() method to generate an array containing a sequence of increasing integers in a given range.
+
+
+def range( start: Int, end: Int, step: Int ): Array[Int]
+ 
+range (10, 20, 2)
+```
+
+### Exception
+
+```
+import java.io.FileReader
+import java.io.FileNotFoundException
+import java.io.IOException
+object Demo {
+   def main(args: Array[String]) {
+      try {
+         val f = new FileReader("input.txt")
+      } catch {
+         case ex: FileNotFoundException ={
+            println("Missing file exception")
+         }  
+         case ex: IOException = {
+            println("IO Exception")
+         }
+      }
+   }
+}
+```
+
+### Recursion
+```
+def factorial_loop(i: BigInt): BigInt = {
+  var result = BigInt(1)
+  for (j- 2 to i.intValue)
+     result *= j
+     result
+}
+
+for (i - 1 to 10)
+  format("%s: %sn", i, factorial_loop(i))
+```  
+
+### Extractor
+
+Extractor in Scala is an object that has a method called unapply as one of its members. 
+The purpose of that unapply method is to match the value and take it apart.
+
+
+### Queue
+
+import scala.collection.mutable.Queue
+val empty = new Queue[Int]
 
 ### Pattern matching
+```
+object Demo {
+   def main(args: Array[String]) {
+      println(matchTest(3))
+   } 
+   def matchTest(x: Int): String = x match {
+      case 1 = "one"
+      case 2 = "two"
+      case _ = "other"
+   }
+}
+```
+Example 2
 
 ```
 def personDescription(name: String, db: Map[String, Int]): String =
@@ -84,7 +166,12 @@ def personDesc(name: String, db: Map[String, Int]): String = {
 
 ### Tuple
 Unlike an Array or List, a tuple is Immutable and can hold objects with different Datatypes.
+Scala tuples combine a fixed number of items together so that they can be passed around as whole. A tuple is immutable and can hold objects with different types, unlike an array or list.
 
+### Case Classes
+
+Case classes provides a recursive decomposition mechanism via pattern matching, it is a regular classes which export their constructor parameter. 
+The constructor parameters of case classes can be accessed directly and are treated as public values.
 
 ### App
 App is a helper class that holds the main method and its Members together. 
@@ -108,6 +195,18 @@ val multiplier = (i:Int) => i * 10
 ### Trait
 A Trait can be defined as a unit which Encapsulates the method and its variables or fields. 
 The following example will help us understand in a better way.
+
+‘Traits’ are used to define object types specified by the signature of the supported methods. 
+Scala allows to be partially implemented but traits may not have constructor parameters. 
+A trait consists of method and field definition, by mixing them into classes it can be reused.
+ 
+
+If the behaviour will not be reused, then make it a concrete class. Anyhow it is not a reusable behaviour.
+In order to inherit from it in Java code, an abstract class can be used.
+If efficiency is a priority then lean towards using a class
+Make it a trait if it might be reused in multiple and unrelated classes. 
+In different parts of the class hierarchy only traits can be mixed into different parts.
+You can use abstract class, if you want to distribute it in compiled form and expects outside groups to write classes inheriting from it.
 
 ```
 trait Printable{
