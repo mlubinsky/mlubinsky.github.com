@@ -33,6 +33,16 @@ https://bszwej.medium.com/domain-driven-design-with-fp-in-scala-21b557f94aa5
 <https://www.youtube.com/watch?v=I3loMuHnYqw>
 
 
+### String
+
+```
+String trim(): Returns a copy of the string, with leading and trailing whitespace omitted.
+String toUpperCase: Converts all of the characters in this String to upper case using the rules of the given Locale.
+Char[] to CharArray(): Converts this string to a new character array.
+String[] split(String regex): Splits this string around matches of the given regular expression.
+Int length(): returns the length of this string.
+```
+
 ###  Function
 
 ```
