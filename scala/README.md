@@ -36,11 +36,11 @@ https://bszwej.medium.com/domain-driven-design-with-fp-in-scala-21b557f94aa5
 ### String
 
 ```
-String trim(): Returns a copy of the string, with leading and trailing whitespace omitted.
-String toUpperCase: Converts all of the characters in this String to upper case using the rules of the given Locale.
-Char[] to CharArray(): Converts this string to a new character array.
-String[] split(String regex): Splits this string around matches of the given regular expression.
-Int length(): returns the length of this string.
+- String trim(): Returns a copy of the string, with leading and trailing whitespace omitted.
+- String toUpperCase: Converts all of the characters in this String to upper case using the rules of the given Locale.
+- Char[] to CharArray(): Converts this string to a new character array.
+- String[] split(String regex): Splits this string around matches of the given regular expression.
+- Int length(): returns the length of this string.
 
 Val formatted= “%s %i”.format (mystring.myInt)
 ```
@@ -399,5 +399,9 @@ Or
 (_:Int)*(_Int)
  
 
+### Packages
 
+- Java.lang._: It is a package that provides classes that are fundamental for the design of the Java programming language.
+- Java.io._: It is a package that imports every class in Scala for input-output resources.
+- PreDef: It offers type aliases for types that are used regularly used in Scala. These include Safe, Map, and the List constructors.
  
