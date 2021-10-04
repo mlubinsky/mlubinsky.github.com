@@ -20,6 +20,14 @@ spark-submit \
 
 https://medium.com/technexthere/how-does-spark-joining-strategy-working-c826954e2611
 
+### Spark Transformations Explained with use cases | Apache Spark FAQs
+
+Part-1: https://youtu.be/0eUWFN0vciA
+Part-2: https://youtu.be/N4rdGx4jsO4
+Part-3: https://youtu.be/ECIXh1fOpks
+
+
+#### Apache Spark Series A-Z
 
 https://www.youtube.com/watch?v=FKWarVIffvU&list=PLHoQFin5tpu_JfE_k-tvVjeja9RXvBIdm Apache Spark Series A-Z
 
