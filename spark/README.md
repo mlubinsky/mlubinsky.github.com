@@ -215,7 +215,10 @@ https://bigdataprogrammers.com/how-to-read-json-file-in-spark/
 https://kontext.tech/column/spark/532/scala-parse-json-string-as-spark-dataframe
 
 
-### Installing Spark 2 locally
+### Installing Spark 2 on Mac
+
+https://medium.com/swlh/pyspark-on-macos-installation-and-use-31f84ca61400
+
 ```
 brew search apache-spark@
  
