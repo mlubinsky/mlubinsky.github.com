@@ -20,6 +20,17 @@ spark-submit \
 
 https://medium.com/technexthere/how-does-spark-joining-strategy-working-c826954e2611
 
+
+https://www.youtube.com/watch?v=s6hxAj9MCL4 Closure and Accumulators in Apache spark
+
+https://www.youtube.com/watch?v=ebbx83jPbmQ Shuffle in Spark | Session-10 | Apache Spark Series from A-Z
+
+https://www.youtube.com/watch?v=4dWHu-3nosE  Spark Streaming Log files in a Directory | Session-15
+
+https://www.youtube.com/watch?v=lyn0MyZdrc4  Aggregations on Streaming Data in Spark | Session-16
+
+https://www.youtube.com/watch?v=eb3QJVATebI Spark Structured Streaming & Output Sinks | Session-17
+
 https://mungingdata.com/category/apache-spark/
 
 https://medium.com/technexthere/how-to-size-spark-application-ff2a9d487926
@@ -34,7 +45,13 @@ https://habr.com/ru/company/X5Group/blog/579232/. PySpark
 
 https://mungingdata.com/apache-spark/best-books/
 
-https://www.kdnuggets.com/2021/09/data-analysis-scala.html
+https://www.kdnuggets.com/2021/09/data-analysis-scala.html  Mutual Information
+
+
+https://www.youtube.com/watch?v=UywbytK_6Dg  Scala Coding best practices
+
+https://www.youtube.com/watch?v=bamfHaxA4EQ interview
+
 
 ```
 exploding array column:
