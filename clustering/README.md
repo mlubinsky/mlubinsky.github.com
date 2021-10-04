@@ -18,8 +18,11 @@ https://habrahabr.ru/post/322034/ DBSCAN
 https://en.wikipedia.org/wiki/DBSCAN  DBSCAN
 
 https://towardsdatascience.com/a-gentle-introduction-to-hdbscan-and-density-based-clustering-5fd79329c1e8
-	
 
+
+SciPy Hierarchical Clustering and Dendrogram Tutorial
+	
+https://joernhees.de/blog/2015/08/26/scipy-hierarchical-clustering-and-dendrogram-tutorial/
 
 
 https://martinfleischmann.net/clustergam-visualisation-of-cluster-analysis/
