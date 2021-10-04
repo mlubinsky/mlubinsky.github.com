@@ -33,6 +33,16 @@ https://bszwej.medium.com/domain-driven-design-with-fp-in-scala-21b557f94aa5
 <https://www.youtube.com/watch?v=I3loMuHnYqw>
 
 
+###  Function
+
+```
+def functionName ([list of parameters]) : [return type] = {
+   function body
+   return [expression]
+}
+```
+
+
 ### Pattern matching
 
 ```
