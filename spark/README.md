@@ -1,3 +1,5 @@
+https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-apache-spark/functional-programming-using-the-spark-shell?
+
 https://mungingdata.com/category/apache-spark/
 
 https://medium.com/@adrianchang/apache-spark-partitioning-e9faab369d14
