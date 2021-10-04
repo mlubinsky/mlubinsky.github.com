@@ -1,3 +1,8 @@
+http://www.numericalexpert.com/blog/online_stat/ single pass for (variance, skewness, kurtosis, covariance)
+
+http://www.numericalexpert.com/tutorials.php
+
+
 ### Python
 https://towardsdatascience.com/statistical-modelling-with-python-the-three-must-know-s-modules-79fa393e5640 
 
