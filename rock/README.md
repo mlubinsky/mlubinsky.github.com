@@ -10,17 +10,11 @@ Airflow
 ---------
 https://gitlab.eng.roku.com/dea/data-processing/compare/master...DEA-11853
 
-Scribe
+blame
 --------
-Looker
---------
-https://gitlab.eng.roku.com/dea-looker/looker-foundation-prod/compare/master...DE-382-materialized
 
-https://gitlab.eng.roku.com/dea-looker/looker-foundation-prod/compare/master...PROGDE-784
+https://gitlab.eng.roku.com/dea/data-processing/-/blame/master/src/main/python/agg/agg_daily/agg_homescreen_safemode_metrics_daily.hql
 
-Airflow
----------
-https://gitlab.eng.roku.com/dea/data-processing/compare/master...DEA-11853
 
 Scribe
 --------
