@@ -135,7 +135,7 @@ object MainObject{
 
 ```
 var z = new Array[Int](5)
-var myMatrix = ofDim[Int](3,3)  -- We use ofDim to declare multidimensional arrays.
+ 
 
 We use Range() method to generate an array containing a sequence of increasing integers in a given range.
 
@@ -145,6 +145,27 @@ def range( start: Int, end: Int, step: Int ): Array[Int]
 range (10, 20, 2)
 ```
 
+
+### Multidimentional array ofDim
+
+ 
+import Array.ofDim
+var a=ofDim[Int](3,3)
+
+a: Array[Array[Int]] = Array(Array(0, 0, 0), Array(0, 0, 0), Array(0, 0, 0))
+
+ var k=1
+ 
+ for(i<-0 to 2){
+    | for(j<-0 to 2){
+    | a(i)(j)={i+k}
+    | k+=1
+    | }
+    | k-=1
+    | }
+    
+scala> a
+res12: Array[Array[Int]] = Array(Array(1, 2, 3), Array(4, 5, 6), Array(7, 8, 9)).
 
 ###  Append data in a List and ListBuffer
 
