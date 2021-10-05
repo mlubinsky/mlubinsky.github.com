@@ -2,6 +2,8 @@
 
 https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
 
+https://news.ycombinator.com/item?id=28764416
+
 https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ Interesting blog
 
 https://diffxweyl.wordpress.com/ Interesting blog 
