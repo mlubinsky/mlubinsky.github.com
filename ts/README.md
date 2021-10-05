@@ -22,7 +22,14 @@ https://medium.com/data-science-at-microsoft/time-series-forecasting-part-3-of-3
 
 https://towardsdatascience.com/time-series-classification-using-dynamic-time-warping-61dcd9e143f6
 
-### Clustering time series data sets
+### Clustering time series  
+
+ 
+tslearn : https://andrewm4894.com/2020/09/03/time-series-clustering-with-tslearn/
+
+https://towardsdatascience.com/how-to-apply-k-means-clustering-to-time-series-data-28d04a8f7da3
+
+https://wiki.smu.edu.sg/18191isss608g1/img_auth.php/f/fd/Time_Series_Clustering_A_Decade_Review.pdf
 
 https://www.sciencedirect.com/science/article/pii/S2666827020300013  clustering 
 
@@ -233,14 +240,10 @@ https://stumpy.readthedocs.io/en/latest/Tutorial_The_Matrix_Profile.html
 https://www.pressreader.com/australia/linux-format/20210601/283437784410697
 
 
-### Time series classification
 
-tslearn : https://andrewm4894.com/2020/09/03/time-series-clustering-with-tslearn/
 
-https://towardsdatascience.com/how-to-apply-k-means-clustering-to-time-series-data-28d04a8f7da3
 
-https://wiki.smu.edu.sg/18191isss608g1/img_auth.php/f/fd/Time_Series_Clustering_A_Decade_Review.pdf
-
+### DTW 
 https://en.wikipedia.org/wiki/Dynamic_time_warping
 
 http://people.cs.uchicago.edu/~jopa/Papers/PaparrizosSIGMOD2020.pdf
