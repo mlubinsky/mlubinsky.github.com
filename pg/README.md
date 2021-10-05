@@ -167,6 +167,7 @@ https://pgdash.io/blog/postgres-tips-and-tricks.html?p
 
 https://habr.com/ru/post/578744/
 
+https://habr.com/ru/post/581548/
 
 
 
