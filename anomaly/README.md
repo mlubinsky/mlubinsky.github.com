@@ -18,7 +18,11 @@ https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook-dp-B0
 
 ### Awesome anomaly detection
 
+https://medium.com/geekculture/time-series-anomaly-definition-c04b7d907000
+
 https://towardsdatascience.com/a-comprehensive-beginners-guide-to-the-diverse-field-of-anomaly-detection-8c818d153995
+
+https://towardsdatascience.com/machine-learning-for-anomaly-detection-and-condition-monitoring-d4614e7de770
 
 https://towardsdatascience.com/a-complete-anomaly-detection-algorithm-from-scratch-in-python-step-by-step-guide-4c115e65d54e 
 
