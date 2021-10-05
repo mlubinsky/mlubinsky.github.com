@@ -27,6 +27,8 @@ https://atcold.github.io/NYU-DLSP21/
 
 https://habr.com/ru/post/575520/  NN pruning 
 
+https://ml-jku.github.io/hopfield-layers/ Hopfield network
+
 ### TinyML
 
 https://habr.com/ru/company/glowbyte/blog/559400/
