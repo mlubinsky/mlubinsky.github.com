@@ -1,5 +1,6 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
 
 https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ Interesting blog
 
