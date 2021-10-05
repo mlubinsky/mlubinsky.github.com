@@ -2,6 +2,7 @@ https://scastie.scala-lang.org/ Online Scala compiler
 
 <https://riiswa.github.io/Scala-CheatSheet/>
 
+https://alvinalexander.com/scala/fp-book/how-write-functions-take-function-input-parameters/
 
 val (even, odd) = xs.partition(_ % 2 == 0)
 
