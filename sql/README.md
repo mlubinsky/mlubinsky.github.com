@@ -1,3 +1,6 @@
+https://habr.com/ru/company/querifylabs/blog/578842/ SQL plan
+
+
 https://winand.at/sql-slides-for-developers
 
 https://news.ycombinator.com/item?id=28425379  modern databases
