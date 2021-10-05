@@ -4,6 +4,11 @@ https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
 
 https://news.ycombinator.com/item?id=28764416
 
+Complex Systems: a Physicist’s Viewpoint
+
+https://www.arxiv-vanity.com/papers/cond-mat/0205297/
+
+
 https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ Interesting blog
 
 https://diffxweyl.wordpress.com/ Interesting blog 
