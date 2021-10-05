@@ -380,6 +380,8 @@ https://www.youtube.com/watch?v=F_gHV-Zq158
 ### Anomaly detection in time series
 
  https://www.microprediction.com/blog/anomaly
+ 
+ https://medium.com/geekculture/time-series-anomaly-definition-c04b7d907000
 
 https://github.com/pycaret/pycaret/blob/master/tutorials/Anomaly%20Detection%20Tutorial%20Level%20Beginner%20-%20ANO101.ipynb
 
