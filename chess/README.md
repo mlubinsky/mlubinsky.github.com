@@ -1,3 +1,10 @@
+### Chess Coach
+
+https://chrisbutner.github.io/ChessCoach/
+
+https://news.ycombinator.com/item?id=28765183
+
+
 ### stepchess
 https://stepchess.ru/debut
 
