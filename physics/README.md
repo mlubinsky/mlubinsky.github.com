@@ -362,6 +362,8 @@ https://arxiv.org/abs/2011.09181 . A First Principles Derivation of Classical an
 
 ## Solid state phys
 
+https://arxiv.org/pdf/cond-mat/0505032.pdf . Spin Glasses
+
 https://mipt.ru/education/chair/physics/records/modern/ovchinkin6.php
 
 https://mipt.ru/education/chair/physics/records/modern/morozov6.php
