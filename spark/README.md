@@ -280,6 +280,16 @@ https://kontext.tech/column/spark/532/scala-parse-json-string-as-spark-dataframe
 
 ### Installing Spark 2 on Mac
 
+
+https://notadatascientist.com/install-spark-on-macos/
+```
+brew install scala@2.11
+export SPARK_HOME=/usr/local/Cellar/apache-spark/2.4.5/libexec           
+export PATH="$SPARK_HOME/bin/:$PATH"
+chmod +x /usr/local/Cellar/apache-spark/2.4.5/libexec/bin/*
+```
+
+
 https://medium.com/swlh/pyspark-on-macos-installation-and-use-31f84ca61400
 
 ```
