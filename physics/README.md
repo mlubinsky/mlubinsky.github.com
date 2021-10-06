@@ -9,6 +9,11 @@ Complex Systems: a Physicist’s Viewpoint
 https://www.arxiv-vanity.com/papers/cond-mat/0205297/
 
 
+All lectures
+
+https://arxiv.org/search/?query=lecture&searchtype=title
+
+
 https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ Interesting blog
 
 https://diffxweyl.wordpress.com/ Interesting blog 
