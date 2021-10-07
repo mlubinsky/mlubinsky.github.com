@@ -12,9 +12,11 @@
 ### Git in Python
 leshenko.net  - exampl of git implemented in python
 
-### grep
+### grep cscope opengrok
 
 https://noahan.me/posts/effective-code-browsing-part1/
+
+https://noahan.me/posts/effective-code-browsing-part2/
 
 -i	grep -i ':4F:AB' net_interfaces.txt	Ignores case sensitivity
 -w	grep -w "connect" /var/log/syslog	Search for the full word
