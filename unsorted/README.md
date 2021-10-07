@@ -416,10 +416,10 @@ https://youtu.be/rjOAA3VgcsA
 100)) Лица
 https://youtu.be/O1vTCa3–U8Q
 
-### Kolybanov
-https://kolybanov.livejournal.com/26384307.html
 
-thumb-p3.xhcdn.com/a/-Zb--1tKyaaXp2ldpwY4jw/000/129/957/983_1000.gif
+### Advanced google search
+
+https://www.google.com/advanced_search
 
 <https://www.youtube.com/watch?v=i33BTuwTgAs> Supermemo
 
