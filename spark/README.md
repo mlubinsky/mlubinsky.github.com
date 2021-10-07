@@ -27,6 +27,17 @@ RDD operations like groupByKey, distinct, join may require mapping the data acro
 Stateless Transformations- Processing of the batch does not depend on the output of the previous batch. Examples- map (), reduceByKey (), filter ().
 Stateful Transformations- Processing of the batch depends on the intermediary results of the previous batch. Examples- Transformations that depend on sliding windows
 
+### Shuffling
+
+Triggered by wide transformations like
+
+- Repartition
+- ByKey operations (except counting)
+- Joins, the worse being cross joins
+- Sorting
+- Distinct
+- GroupBy
+
 
 ### Action
 Actions are RDD operations that produce non-RDD values. They materialize a value in a Spark program. 
@@ -71,6 +82,9 @@ Executor performs all the data processing.
 Reads from and writes data to external sources.
 Executor stores the computed data in-memory, cache or on hard disk drives.
 Interacts with the storage systems.
+
+One Executor per node is considered to be more stable than two or three executors per node as is used in systems like YARN.
+Try to group-wide transformations together for best automatic optimization
 
 
 ### Minimizing data transfers and avoiding shuffling
