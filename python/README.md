@@ -25,6 +25,7 @@ https://lwn.net/SubscriberLink/861910/67bbe2390d2e0c93/ API, slots, etc
 
 https://death.andgravity.com/namedtuples named tuples vs dataclasses
 
+https://habr.com/ru/company/numdes/blog/581374/. make single exe from Python (Nuitka, etc)
 
 ### Pipeline using generators and yield
 
