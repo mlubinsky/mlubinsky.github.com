@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=D8Q4n6YXdpk . Window funct in Postgres
 
-https://news.ycombinator.com/item?id=28776786. PG clustering
+https://news.ycombinator.com/item?id=28776786. PG clustering /sharding
 
 https://habr.com/ru/company/tensor/blog/573214/ SQL optimization
 
