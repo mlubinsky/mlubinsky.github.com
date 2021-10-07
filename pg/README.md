@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=D8Q4n6YXdpk . Window funct in Postgres
 
+https://news.ycombinator.com/item?id=28776786. PG clustering
+
 https://habr.com/ru/company/tensor/blog/573214/ SQL optimization
 
 https://habr.com/ru/company/postgrespro/blog/579024/
