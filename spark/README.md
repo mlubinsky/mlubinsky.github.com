@@ -10,6 +10,9 @@ https://github.com/ankurchavda/SparkLearning#spark-learning-guide
 
 https://pub.towardsai.net/4-tips-to-write-scalable-apache-spark-code-1c736e4d698e
 
+
+https://github.com/ankurchavda/SparkLearning/blob/master/advanced/optimizations.md
+
 ### Transformation
 Basic Transformations are - map and filter. After the transformation, the resultant RDD is always different from its parent RDD.
 It can be smaller (e.g. filter, count, distinct, sample), bigger (e.g. flatMap(), union(), Cartesian()) or the same size (e.g. map).
