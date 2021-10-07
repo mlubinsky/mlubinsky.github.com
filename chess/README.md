@@ -4,6 +4,8 @@ https://chrisbutner.github.io/ChessCoach/
 
 https://news.ycombinator.com/item?id=28765183
 
+https://www.chessmonitor.com/
+
 
 ### stepchess
 https://stepchess.ru/debut
