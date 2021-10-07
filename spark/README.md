@@ -13,11 +13,20 @@ https://pub.towardsai.net/4-tips-to-write-scalable-apache-spark-code-1c736e4d698
 ### Transformation
 Basic Transformations are - map and filter. After the transformation, the resultant RDD is always different from its parent RDD.
 It can be smaller (e.g. filter, count, distinct, sample), bigger (e.g. flatMap(), union(), Cartesian()) or the same size (e.g. map).
-Narrow dependency : RDD operations like map(), union(), filter() can operate on a single partition and map the data of that partition to the resulting single partition. These kinds of operations that map data from one to one partition are referred to as Narrow operations. 
+
+
+Narrow dependency : 
+RDD operations like map(), union(), filter() can operate on a single partition and map the data of that partition to the resulting single partition. These kinds of operations that map data from one to one partition are referred to as Narrow operations. 
 
 Narrow operations don’t require distributing the data across the partitions. Each partition of the parent RDD is used by at most one partition of the child RDD.
 
-Wide dependency : RDD operations like groupByKey, distinct, join may require mapping the data across the partitions in the new RDD. These kinds of operations which maps data from one to many partitions are referred to as Wide operations Each partition of the parent RDD may be depended on by multiple child partitions.
+Wide dependency : 
+RDD operations like groupByKey, distinct, join may require mapping the data across the partitions in the new RDD. These kinds of operations which maps data from one to many partitions are referred to as Wide operations Each partition of the parent RDD may be depended on by multiple child partitions.
+
+
+Stateless Transformations- Processing of the batch does not depend on the output of the previous batch. Examples- map (), reduceByKey (), filter ().
+Stateful Transformations- Processing of the batch depends on the intermediary results of the previous batch. Examples- Transformations that depend on sliding windows
+
 
 ### Action
 Actions are RDD operations that produce non-RDD values. They materialize a value in a Spark program. 
@@ -34,6 +43,21 @@ A task is a unit of work that can be run on a partition of a distributed dataset
 
 ### Stage
 A stage is a collection of tasks that can run in parallel. A new stage is created when there is data shuffling.
+
+### Persistance
+difference between persist() and cache()?
+persist() allows the user to specify the storage level whereas cache() uses the default storage level.
+
+Apache Spark automatically persists the intermediary data from various shuffle operations, however, it is often suggested that users call persist () method on the RDD in case they plan to reuse it. Spark has various persistence levels to store the RDDs on disk or in memory or as a combination of both with different replication levels.
+The various storage/persistence levels in Spark are -
+MEMORY_ONLY
+MEMORY_ONLY_SER
+MEMORY_AND_DISK
+MEMORY_AND_DISK_SER, DISK_ONLY
+OFF_HEAP
+
+#### checkpointing
+Lineage graphs are always useful to recover RDDs from failure but this is generally time-consuming if the RDDs have long lineage chains. Spark has an API for checkpointing i.e. a REPLICATE flag to persist. However, the decision on which data to the checkpoint - is decided by the user. Checkpoints are useful when the lineage graphs are long and have wide dependencies.
 
 ### Executors
 https://stackoverflow.com/questions/32621990/what-are-workers-executors-cores-in-spark-standalone-cluster
