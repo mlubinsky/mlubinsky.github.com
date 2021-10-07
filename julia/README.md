@@ -19,3 +19,6 @@ https://viralinstruction.com/posts/badjulia/
 https://towardsdatascience.com/how-to-best-use-julia-with-jupyter-82678a482677
 
 https://icmmg.nsc.ru/sites/default/files/sovet/files/dissertaciya_palyanov_a.yu_._final_podpis.pdf
+
+
+https://habr.com/ru/post/573666/
