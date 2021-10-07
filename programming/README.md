@@ -9,8 +9,48 @@
  
  https://news.ycombinator.com/item?id=28660157
  
-
+### Git in Python
 leshenko.net  - exampl of git implemented in python
+
+### grep
+
+https://noahan.me/posts/effective-code-browsing-part1/
+
+-i	grep -i ':4F:AB' net_interfaces.txt	Ignores case sensitivity
+-w	grep -w "connect" /var/log/syslog	Search for the full word
+-A	grep -A 3 'Exception' error.log	Display 3 lines of context after matching string
+-B	grep -B 4 'Exception' error.log	Display 4 lines of context before matching string
+-C	grep -C 5 'Exception' error.log	Display 5 lines around matching string
+-r	grep -r 'quickref.me' /var/log/nginx/	Recursive search within subdirs
+-v	grep -v 'warning' /var/log/syslog	Returns all non-matching lines
+-e	grep -e '^Can' space_oddity.txt	Use regex (lines starting with 'Can')
+-E	grep -E 'ja(s|cks)on' filename	Extended regex (lines containing jason or jackson)
+-c	grep -c 'error' /var/log/syslog	Count the number of matches
+-l	grep -l 'reboot' /var/log/*	Print the name of the file(s) of matches
+-o	grep -o search_string filename	Only show the matching part of the string
+-n	grep -n "start" demo.txt	Show the line numbers of the matches
+
+^ 	Beginning of line.
+$ 	End of line.
+^$	Empty line.
+\<	Start of word.
+\>	End of word.
+.	Any character.
+? 	Optional and can only occur once.
+* 	Optional and can occur more than once.
++ 	Required and can occur more than once.
+{n} 	Previous item appears exactly n times.
+{n,} 	Previous item appears n times or more.
+{,m} 	Previous item appears n times maximum.
+{n,m} 	Previous item appears between n and m times.
+[:alpha:] 	Any lower and upper case letter.
+[:digit:] 	Any number.
+[:alnum:] 	Any lower and upper case letter or digit.
+[:space:] 	Any whites­pace.
+[A-Z­a-z] 	Any lower and upper case letter.
+[0-9] 	Any number.
+[0-9­A-Z­a-z]	Any lower and upper case letter or digit.
+
 
 ### Content aggregators
 
