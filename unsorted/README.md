@@ -488,6 +488,8 @@ UserScript:
 
 <http://modernlib.net/books/lem_stanislav/osmotr_na_meste/read/> Lem Stanislaw
 
+### Passwords managers
+https://habr.com/ru/company/cloud4y/blog/581916/
 
 LastPass KeePass, PasswordSafe, minykeypass - password managers 
 
