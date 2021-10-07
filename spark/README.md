@@ -5,7 +5,55 @@ Code for the Spark in Action Book: https://github.com/databricks/LearningSparkV2
 
 There are 8 workers and both the workers and driver are m4.xlarge instances (16.0 GB, 4 Cores).
 
+
+https://github.com/ankurchavda/SparkLearning#spark-learning-guide
+
 https://pub.towardsai.net/4-tips-to-write-scalable-apache-spark-code-1c736e4d698e
+
+### Transformation
+Basic Transformations are - map and filter. After the transformation, the resultant RDD is always different from its parent RDD.
+It can be smaller (e.g. filter, count, distinct, sample), bigger (e.g. flatMap(), union(), Cartesian()) or the same size (e.g. map).
+Narrow dependency : RDD operations like map(), union(), filter() can operate on a single partition and map the data of that partition to the resulting single partition. These kinds of operations that map data from one to one partition are referred to as Narrow operations. 
+
+Narrow operations don’t require distributing the data across the partitions. Each partition of the parent RDD is used by at most one partition of the child RDD.
+
+Wide dependency : RDD operations like groupByKey, distinct, join may require mapping the data across the partitions in the new RDD. These kinds of operations which maps data from one to many partitions are referred to as Wide operations Each partition of the parent RDD may be depended on by multiple child partitions.
+
+### Action
+Actions are RDD operations that produce non-RDD values. They materialize a value in a Spark program. 
+
+In other words, an RDD operation that returns a value of any type but RDD[T] is an action. They trigger the execution of RDD transformations to return values. Simply put, an action evaluates the RDD lineage graph.
+Actions are one of two ways to send data from executors to the driver (the other being accumulators).
+Some examples of actions are - aggregate, collect, count, countApprox, countByValue, first, fold, foreach, foreachPartition, max, min, reduce, saveAs* actions, saveAsTextFile, saveAsHadoopFile, take, takeOrdered, takeSample, toLocalIterator, top, treeAggregate, treeReduce
+
+### Driver
+The driver process runs your main() function, sits on a node in the cluster, and is responsible for three things: maintaining information about the Spark Application; responding to a user’s program or input; and analyzing, distributing, and scheduling work across the executors (defined momentarily).
+
+### Task
+A task is a unit of work that can be run on a partition of a distributed dataset and gets executed on a single executor. The unit of parallel execution is at the task level. All the tasks within a single stage can be executed in parallel.
+
+### Stage
+A stage is a collection of tasks that can run in parallel. A new stage is created when there is data shuffling.
+
+### Executors
+https://stackoverflow.com/questions/32621990/what-are-workers-executors-cores-in-spark-standalone-cluster
+
+An executor is a single JVM process that is launched for an application on a worker node. 
+Executor runs tasks and keeps data in memory or disk storage across them. Each application has its own executors. 
+A single node can run multiple executors and executors for an application can span multiple worker nodes. 
+An executor stays up for the duration of the Spark Application and runs the tasks in multiple threads. 
+The number of executors for a spark application can be specified inside the SparkConf or via the flag –num-executors from the command line.
+Executor performs all the data processing.
+Reads from and writes data to external sources.
+Executor stores the computed data in-memory, cache or on hard disk drives.
+Interacts with the storage systems.
+
+
+### Minimizing data transfers and avoiding shuffling
+  The various ways in which data transfers can be minimized when working with Apache Spark are:
+- Using Broadcast Variable- Broadcast variable enhances the efficiency of joins between small and large RDDs.
+- Using Accumulators – Accumulators help update the values of variables in parallel while executing.
+- The most common way is to avoid operations ByKey, repartition or any other operations which trigger shuffles.
 
 https://pub.towardsai.net/how-you-should-save-the-output-of-your-spark-etl-jobs-if-you-are-not-writing-to-a-database-c95a113eef1 
 
