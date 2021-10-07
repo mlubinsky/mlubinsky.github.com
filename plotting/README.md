@@ -1,4 +1,6 @@
- https://habr.com/ru/company/ruvds/blog/536962/
+https://habr.com/ru/post/581970/ multidimentional plotting
+
+https://habr.com/ru/company/ruvds/blog/536962/
  
  https://github.com/rougier/scientific-visualization-book
  
