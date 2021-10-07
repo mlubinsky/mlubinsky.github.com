@@ -681,7 +681,7 @@ https://news.ycombinator.com/item?id=20308865 .  AWK by example
   
 https://github.com/thewhitetulip/awk-anti-textbook
 https://github.com/noyesno/awka compiles awk to C for speed
-  
+https://invisible-island.net/mawk/ MAWK  
   
 ### make  
 https://learnxinyminutes.com/docs/make/
