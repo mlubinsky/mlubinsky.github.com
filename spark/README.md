@@ -98,6 +98,17 @@ Try to group-wide transformations together for best automatic optimization
 - Using Accumulators – Accumulators help update the values of variables in parallel while executing.
 - The most common way is to avoid operations ByKey, repartition or any other operations which trigger shuffles.
 
+
+### Performance tuning
+  data serialization
+  memory tuning
+  tuning data structure
+  serriaized rdd storage
+  garbage collection tuning
+  level of parallelism
+  broadcast large variable
+  data locality
+
 https://pub.towardsai.net/how-you-should-save-the-output-of-your-spark-etl-jobs-if-you-are-not-writing-to-a-database-c95a113eef1 
 
 https://pub.towardsai.net/a-practical-tip-when-working-with-random-samples-on-spark-23f6dbbe722b 
