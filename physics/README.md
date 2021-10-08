@@ -81,6 +81,11 @@ https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics
 https://www.mccme.ru/free-books/belavin/belavin-theorphys.pdf
 
 ### Entropy 
+
+https://arxiv.org/abs/1405.2061 Shennon Entropy
+
+https://news.ycombinator.com/item?id=28785902
+
 https://youtu.be/f1pclkpMhRc Entropy
 
 https://arxiv.org/abs/2108.10340 Counting microstates of the p-state paramagnet
