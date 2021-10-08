@@ -13,10 +13,12 @@ https://pub.towardsai.net/4-tips-to-write-scalable-apache-spark-code-1c736e4d698
 
 https://github.com/ankurchavda/SparkLearning/blob/master/advanced/optimizations.md
 
-### Transformation
+### Transformation are functions implemented on RDD reulting in another RDD
 Basic Transformations are - map and filter. After the transformation, the resultant RDD is always different from its parent RDD.
 It can be smaller (e.g. filter, count, distinct, sample), bigger (e.g. flatMap(), union(), Cartesian()) or the same size (e.g. map).
 
+mapPartitions() can be used as alternative to map() and foreach() - can be called for each patition while map() and foreach() os called for each element in RDD
+mapPartitionsWithIndex() 
 
 Narrow dependency : 
 RDD operations like map(), union(), filter() can operate on a single partition and map the data of that partition to the resulting single partition. These kinds of operations that map data from one to one partition are referred to as Narrow operations. 
@@ -92,7 +94,7 @@ Try to group-wide transformations together for best automatic optimization
 
 ### Minimizing data transfers and avoiding shuffling
   The various ways in which data transfers can be minimized when working with Apache Spark are:
-- Using Broadcast Variable- Broadcast variable enhances the efficiency of joins between small and large RDDs.
+- Using Broadcast Variable- Broadcast variable (readonly, in cache on every machine) no need to copy to every task; enhances the efficiency of joins between small and large RDDs.
 - Using Accumulators – Accumulators help update the values of variables in parallel while executing.
 - The most common way is to avoid operations ByKey, repartition or any other operations which trigger shuffles.
 
