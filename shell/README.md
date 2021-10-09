@@ -688,6 +688,8 @@ https://learnxinyminutes.com/docs/make/
 
 http://nuclear.mutantstargoat.com/articles/make/#writing-install-uninstall-rules
 
+### Visidata
 
+https://jsvine.github.io/intro-to-visidata/index.html
 
  
