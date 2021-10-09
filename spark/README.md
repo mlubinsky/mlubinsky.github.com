@@ -15,6 +15,11 @@ https://pub.towardsai.net/4-tips-to-write-scalable-apache-spark-code-1c736e4d698
 
 https://github.com/ankurchavda/SparkLearning/blob/master/advanced/optimizations.md
 
+
+### Coalesce vs repartition
+
+coalesce only can decrease # of partitions and it reuse the existing partitions to mimimize shuffling
+
 ### Transformation are functions implemented on RDD reulting in another RDD
 Basic Transformations are - map and filter. After the transformation, the resultant RDD is always different from its parent RDD.
 It can be smaller (e.g. filter, count, distinct, sample), bigger (e.g. flatMap(), union(), Cartesian()) or the same size (e.g. map).
