@@ -14,6 +14,7 @@ https://www.educative.io/blog/cracking-top-facebook-coding-interview-questions
 
 https://platform.stratascratch.com/coding
 
+https://www.interviewquery.com/blog-google-data-engineer-interview-questions/
 
 Salary website: https://www.levels.fyi/
 System design youtube channel (Gaurav Sen): https://www.youtube.com/channel/UCRPM...
