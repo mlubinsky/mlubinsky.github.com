@@ -692,4 +692,15 @@ http://nuclear.mutantstargoat.com/articles/make/#writing-install-uninstall-rules
 
 https://jsvine.github.io/intro-to-visidata/index.html
 
+
+### System info Linux
+
+https://habr.com/ru/company/otus/blog/581796/
+
+cat /proc/cpuinfo | grep processor | wc -l.   # number of CPUs
+
+cat /proc/cpuinfo | grep 'core id'
+
+lscpu
+
  
