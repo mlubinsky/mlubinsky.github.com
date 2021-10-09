@@ -5,6 +5,8 @@ Code for the Spark in Action Book: https://github.com/databricks/LearningSparkV2
 
 There are 8 workers and both the workers and driver are m4.xlarge instances (16.0 GB, 4 Cores).
 
+https://www.youtube.com/watch?v=G4D4iY_hZQ0&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg
+
 
 https://github.com/ankurchavda/SparkLearning#spark-learning-guide
 
