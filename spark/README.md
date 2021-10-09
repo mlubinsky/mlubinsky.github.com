@@ -66,6 +66,8 @@ A stage is a collection of tasks that can run in parallel. A new stage is create
 difference between persist() and cache()?
 persist() allows the user to specify the storage level whereas cache() uses the default storage level.
 
+cache() = persist(StorageLeVel.MEMORY_ONLY)
+
 Apache Spark automatically persists the intermediary data from various shuffle operations, however, it is often suggested that users call persist () method on the RDD in case they plan to reuse it. Spark has various persistence levels to store the RDDs on disk or in memory or as a combination of both with different replication levels.
 The various storage/persistence levels in Spark are -
 MEMORY_ONLY
