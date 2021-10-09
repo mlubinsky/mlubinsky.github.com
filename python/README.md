@@ -7,6 +7,60 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
  python -m py_compile my.py   # Check file syntax
  
  python -m json.tool my_json.json   # json buetifier
+ 
+ ```
+ s.find(pattern).  If a substring cannot be found, a -1 will be returned.
+ 
+ s.rfind(pattern)
+ 
+ s.index() function will raise an exception (ValueError) if pattren not found
+
+
+find() function can only be used on strings. 
+But the index() function can also be used on lists or tuples.
+```
+
+### Dicrionary
+```
+ city = {'UK':'London','Japan':'Tokyo'}
+ print(city['Italy'])
+  KeyError: 'Italy'
+  
+One solution to avoid the above issue is using the get() function to require a value by a key:
+city = {'UK':'London','Japan':'Tokyo'}
+print(city.get('Italy'))  get() function can return a None instead of raising an exception when a key doesn’t exist.
+  None
+  
+  from collections import defaultdict
+city = defaultdict(str)
+city['UK'] = 'London'
+print(city['Italy'] == '')
+True
+
+
+In python < 3.7 to preserve inser order:
+
+from collections import OrderedDict
+nums = OrderedDict()
+
+if you are using Python 3.7+, the insertion-order preservation 
+applies to the normal dictionaries as well
+
+to count how many times each letter is used in a piece of text
+
+from collections import Counter
+
+title = "3 Variants of Python Dictionaries That Make Your Coding Easier"
+chars = Counter(title)
+print(chars)
+# Counter({' ': 9, 'a': 6, 'i': 6, 'o': 5, 'r': 4, 'n': 4, 't': 4, 's': 3, 'e': 3, 'h': 2, '3': 1, 'V': 1, 'f': 1, 'P': 1, 'y': 1, 'D': 1, 'c': 1, 'T': 1, 'M': 1, 'k': 1, 'Y': 1, 'u': 1, 'C': 1, 'd': 1, 'g': 1, 'E': 1})
+
+
+there is a very useful method in Counter called most_common().
+ to print the first two letters that are used most often, the most_common() method can help:
+print(chars.most_common(2))
+# [(' ', 9), ('a', 6)]
+```
 
 
 Regexep to find leading 0 in month, just after year:
