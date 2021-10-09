@@ -6,6 +6,8 @@ https://towardsdatascience.com/the-easiest-way-to-make-beautiful-interactive-vis
 
 https://sophiamyang.github.io/DS/visualization/holoviz/holoviz.html
 
+https://www.zenrows.com/blog/exploratory-data-analysis-in-python
+
 https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-2dd74df12b5e
 
 https://github.com/marcskovmadsen/panel-highcharts
