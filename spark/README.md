@@ -69,11 +69,18 @@ persist() allows the user to specify the storage level whereas cache() uses the 
 cache() = persist(StorageLeVel.MEMORY_ONLY)
 
 Apache Spark automatically persists the intermediary data from various shuffle operations, however, it is often suggested that users call persist () method on the RDD in case they plan to reuse it. Spark has various persistence levels to store the RDDs on disk or in memory or as a combination of both with different replication levels.
-The various storage/persistence levels in Spark are -
-MEMORY_ONLY
-MEMORY_ONLY_SER
-MEMORY_AND_DISK
-MEMORY_AND_DISK_SER, DISK_ONLY
+The various storage/persistence levels in Spark are:
+
+MEMORY_ONLY - stores RDD as deserialized Java object
+
+MEMORY_ONLY_SER as SERIALIZED
+
+MEMORY_AND_DISK  stores RDD as deserialized Java object and dist
+
+MEMORY_AND_DISK_SER. as SERIALIZED
+
+DISK_ONLY
+
 OFF_HEAP
 
 #### checkpointing
