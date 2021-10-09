@@ -18,6 +18,9 @@ https://github.com/ankurchavda/SparkLearning/blob/master/advanced/optimizations.
 
 The general recommendation for Spark is to have 4x of partitions to the number of cores in cluster available for application, 
 and for upper bound — the task should take 100ms+ time to execute
+How to get # of partitions:
+myRDD.partitions.size
+myRDD.getPartitions()
 
 ### Coalesce vs repartition
 
