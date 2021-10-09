@@ -71,7 +71,7 @@ cache() = persist(StorageLeVel.MEMORY_ONLY)
 Apache Spark automatically persists the intermediary data from various shuffle operations, however, it is often suggested that users call persist () method on the RDD in case they plan to reuse it. Spark has various persistence levels to store the RDDs on disk or in memory or as a combination of both with different replication levels.
 The various storage/persistence levels in Spark are:
 
-MEMORY_ONLY - stores RDD as deserialized Java object
+MEMORY_ONLY - stores RDD as DEserialized Java object
 
 MEMORY_ONLY_SER as SERIALIZED (smaller memory size)
 
@@ -82,6 +82,21 @@ MEMORY_AND_DISK_SER. as SERIALIZED (smaller memory size)
 DISK_ONLY
 
 OFF_HEAP
+
+
+```
+import scala.util._
+import org.apache.spark.sql.functions._
+
+val df1=Seq.fill(50, Random.nextInt).toDF("C1")
+val df2=df1.withColumn(("C2", rand()).join(df1,"C1").persist(StorageLevel.DISK_ONLY)
+val df3=df1.withColumn(("C3", rand()).join(df2,"C2").cache()
+val df4=df1.withColumn(("C4", rand()).join(df2,"C3").cache()
+val df5=df1.withColumn(("C5", rand()).join(df2,"C4").cache()
+val df6=df1.withColumn(("C6", rand()).join(df2,"C5").cache()
+
+display(df6)
+```
 
 #### checkpointing
 Lineage graphs are always useful to recover RDDs from failure but this is generally time-consuming if the RDDs have long lineage chains. Spark has an API for checkpointing i.e. a REPLICATE flag to persist. However, the decision on which data to the checkpoint - is decided by the user. Checkpoints are useful when the lineage graphs are long and have wide dependencies.
