@@ -1,5 +1,7 @@
 https://stackoverflow.com/questions/68584868/python3-datetime-datetime2021-05-09-does-not-support-leading-0-but-it-works
 
+https://blog.guilatrova.dev/
+
  python -m py_compile my.py   # Check file syntax
  
  python -m json.tool my_json.json   # json buetifier
