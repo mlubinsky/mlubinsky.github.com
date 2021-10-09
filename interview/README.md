@@ -1,3 +1,6 @@
+https://habr.com/ru/company/skillfactory/blog/582450/
+
+
 
 https://www.udemy.com/course/leetcode-in-python-50-algorithms-coding-interview-questions/
 
