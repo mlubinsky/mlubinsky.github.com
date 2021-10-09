@@ -19,6 +19,7 @@ https://github.com/ankurchavda/SparkLearning/blob/master/advanced/optimizations.
 ### Coalesce vs repartition
 
 coalesce only can decrease # of partitions and it reuse the existing partitions to mimimize shuffling
+but it will lead to unequal sized partitions
 
 ### Transformation are functions implemented on RDD reulting in another RDD
 Basic Transformations are - map and filter. After the transformation, the resultant RDD is always different from its parent RDD.
