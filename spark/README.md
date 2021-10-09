@@ -73,11 +73,11 @@ The various storage/persistence levels in Spark are:
 
 MEMORY_ONLY - stores RDD as deserialized Java object
 
-MEMORY_ONLY_SER as SERIALIZED
+MEMORY_ONLY_SER as SERIALIZED (smaller memory size)
 
 MEMORY_AND_DISK  stores RDD as deserialized Java object and dist
 
-MEMORY_AND_DISK_SER. as SERIALIZED
+MEMORY_AND_DISK_SER. as SERIALIZED (smaller memory size)
 
 DISK_ONLY
 
