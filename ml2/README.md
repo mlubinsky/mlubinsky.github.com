@@ -732,10 +732,16 @@ https://medium.com/@mngrwl/explained-simply-how-deepmind-taught-ai-to-play-video
 
 
 <a href=http://distill.pub/>distill.pub</a>
+
 ### PCA
 https://joellaity.com/2018/10/18/pca.html
+
 <a href=https://habrahabr.ru/company/ods/blog/325654/#affinity-propagation>PCA 1</a>
+
 <a href=https://blog.3blades.io/principal-component-analysis-pca-a-practical-example-68d8df12c4bf>PCA 2</a>
+
+http://peterbloem.nl/blog/pca
+
 
 <a href=ml/QnA.html>Q & A</a>
 
