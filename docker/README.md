@@ -5,6 +5,9 @@ https://habr.com/ru/company/southbridge/blog/534334/.  Data /volumes inside Dock
 https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose
 
 ### Docker for Python
+
+https://testdriven.io/blog/docker-best-practices/
+
 https://pythonspeed.com/articles/base-image-python-docker-images/
 
 https://www.youtube.com/watch?v=BZiwpsnLLYQ Python in Docker
