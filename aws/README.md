@@ -5,10 +5,12 @@ https://habr.com/ru/company/microsoft/blog/503462/
 
 https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_270839230_130845605&dclid=CImGtNrTpeoCFQMqrQYd4dYHbA
 
-### 
+###  Scalable analytics with AWS
 
 https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513
 
+
+https://github.com/hseera/aws-python-utilities.  AWS Python utils
 ### aws config
 ```
 [DYNAMO]$ cat  ~/.aws/config
