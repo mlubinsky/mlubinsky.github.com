@@ -465,6 +465,9 @@ https://habr.com/ru/company/ruvds/blog/485646/ . Python Tips
 ```
 
 ### multiprocessing, asyncio
+
+https://towardsdatascience.com/parallelizing-python-code-3eb3c8e5f9cd
+
 <http://www.blog.pythonlibrary.org/2016/08/02/python-201-a-multiprocessing-tutorial/>
 
 <https://www.packtpub.com/programming/python-parallel-programming-cookbook> 
