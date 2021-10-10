@@ -1,3 +1,8 @@
+ http://whichjdk.com/
+ 
+ https://sdkman.io/install
+ 
+ 
  <https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997> Effective Java 3rd ed Joshua Bloch
  
  Java in 2021
