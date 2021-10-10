@@ -27,6 +27,9 @@ myRDD.getPartitions()
 map is 1:1 transform
 flatMap may return 0,1, or many elements
 
+val data = spark.read.textFile("a.txt").rdd
+val res=data.flatMap(line=>line.split(" "))
+
 ### Coalesce vs repartition
 
 coalesce only can decrease # of partitions and it reuse the existing partitions to mimimize shuffling
