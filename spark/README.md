@@ -29,7 +29,7 @@ Task is 1 thread which process 1 partition
 
 YARN app master
 
-https://www.youtube.com/watch?v=sHqzmqppKXE&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg&index=5
+https://www.youtube.com/watch?v=sHqzmqppKXE&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg&index=5  EXECUTOR Tuning
 
 https://www.youtube.com/watch?v=_q-MOcfS0Ls  join dataframes
 
