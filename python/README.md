@@ -8,6 +8,18 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
  
  python -m json.tool my_json.json   # json buetifier
  
+ 
+ https://sadh.life/post/builtins/
+ 
+ ```
+ l=['1','2','3']
+ ' '.join(l)
+'1 2 3'
+
+  first = [0,1,2]
+  second = [*a,3] # first is unchanged, second = [0,1,2,3]
+ ```
+ 
  ```
  s.find(pattern).  If a substring cannot be found, a -1 will be returned.
  
