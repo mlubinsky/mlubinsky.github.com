@@ -62,7 +62,42 @@ Leaving 1 executor for ApplicationManager  num-executors=29
 
 ```
 
+### Pair RDD
+allow to access each key in parallel
 
+countByKey()
+collectAsMap()
+lookup(key)
+
+reduceByKey()
+join()
+
+
+### Avoid groupBy
+
+val words= Array("aa", "bb", "cc", "cc", "cc")
+val wordsPairsRDD=sc.parallelize(words).map(word => (word,1))
+val  result    =  wordsPairsRDD
+   .reduceByKey(_+_)
+   .collect()
+
+println(result)
+"aa",1
+"bb",1
+"cc",3
+
+
+### Join without shuffle
+
+
+if 2 RDDs are co-located (in the same partition) then no need for shiffle
+
+if 2 rdds have the same partitioner 
+where shuffled as part of the same action
+
+smallDF
+LargeDF
+10MB - default size for broadcust
 
 https://www.youtube.com/watch?v=_q-MOcfS0Ls  join dataframes
 
