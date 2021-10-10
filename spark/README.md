@@ -31,6 +31,8 @@ YARN app master
 
 https://www.youtube.com/watch?v=sHqzmqppKXE&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg&index=5
 
+https://www.youtube.com/watch?v=_q-MOcfS0Ls  join dataframes
+
 --driver-memory(1G)
 
 --executor-memory (1G)
