@@ -24,6 +24,11 @@ spark-submit params
 Leave aside 1 core per node fo cluster management deamons:
 NamedNode, SecondaryNamed Node,DataNode,JobTracker,TaskManager
 
+5 tasks per executor. Executor= 1 JVM.
+Task is 1 thread which process 1 partition
+
+YARN app master
+
 https://www.youtube.com/watch?v=sHqzmqppKXE&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg&index=5
 
 --driver-memory(1G)
