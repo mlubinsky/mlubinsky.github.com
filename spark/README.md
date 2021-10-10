@@ -31,6 +31,39 @@ YARN app master
 
 https://www.youtube.com/watch?v=sHqzmqppKXE&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg&index=5  EXECUTOR Tuning
 
+
+Approach 1 - one executor per core is is NOT good because
+```
+- it does not take advantage of running multiple tasks on same JVM
+- shared/cached variables like broadcast vars and accumulators will be replicated in each core of the nodes 
+- it does not leave enough memory overhead for hadoop/yarn daemon process and ApplicationManager and OS 
+```
+
+Approach 2 - one executor per node  (fat executor :
+```
+num-executors = one executor per noder
+  total # of executors = total nodes in cluster = 10
+  
+executor-cores =  all cores per node (16) are assigned to one executor 
+executor-memory = Total memory in cluster / total executors = 640GB/10 = 64GB
+
+It is not good because HDFS throughput will hurt and it will result in excessive garbage result
+```
+Approach 3 - in beetween 1 and 2:
+```
+5 cores per executor
+executor-cores=5  for good HDFS throughtput
+Leave 1 core per node for Haddop/Yarn daemons and OS
+num cores available per node = 16-1=15
+Total avail;able of cores in cluster =15*10=150
+
+Number of executors = total cores / num_cores_per_executor = 150/5 =30
+Leaving 1 executor for ApplicationManager  num-executors=29
+
+```
+
+
+
 https://www.youtube.com/watch?v=_q-MOcfS0Ls  join dataframes
 
 --driver-memory(1G)
