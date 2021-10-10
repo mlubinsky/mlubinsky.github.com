@@ -91,8 +91,8 @@ Let do the same as above use groupBy:
 ---------------
 
 val  result    =  wordsPairsRDD
-   .groupByKey(_+_)
-   .map(t => (t_1, t_2.sum))
+   .groupByKey()
+   .map(t => (t._1, t._2.sum))
    .collect()
    
 
