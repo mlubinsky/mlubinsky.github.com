@@ -18,6 +18,35 @@ https://github.com/ankurchavda/SparkLearning/blob/master/advanced/optimizations.
 
 The general recommendation for Spark is to have 4x of partitions to the number of cores in cluster available for application, 
 and for upper bound — the task should take 100ms+ time to execute
+
+spark-submit params
+
+Leave aside 1 core per node fo cluster management deamons:
+NamedNode, SecondaryNamed Node,DataNode,JobTracker,TaskManager
+
+https://www.youtube.com/watch?v=sHqzmqppKXE&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg&index=5
+
+--driver-memory(1G)
+
+--executor-memory (1G)
+
+Spark standalone and YARN only:
+  --executor-cores NUM        Number of cores per executor. (Default: 1 in YARN mode,
+                              or all available cores on the worker in standalone mode)
+
+
+YARN:
+--num-executors(2)
+
+Spark standalone and Mesos only:
+  --total-executor-cores NUM  Total cores for all executors.
+
+
+ Cluster deploy mode only:
+  --driver-cores NUM          Number of cores used by the driver, only in cluster mode
+                              (Default: 1).
+
+
 How to get # of partitions:
 myRDD.partitions.size
 myRDD.getPartitions()
