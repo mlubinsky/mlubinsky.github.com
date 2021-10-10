@@ -75,6 +75,9 @@ join()
 
 ### Avoid groupBy
 
+Example word count 
+Let use reduceBy:
+-----------------
 val words= Array("aa", "bb", "cc", "cc", "cc")
 val wordsPairsRDD=sc.parallelize(words).map(word => (word,1))
 val  result    =  wordsPairsRDD
@@ -82,10 +85,16 @@ val  result    =  wordsPairsRDD
    .collect()
 
 println(result)
-"aa",1
-"bb",1
-"cc",3
+Answer:  Array (("aa",1), ("bb",1), ("cc",3))
 
+Let do the same as above use groupBy:
+---------------
+
+val  result    =  wordsPairsRDD
+   .groupByKey(_+_)
+   .map(t => (t_1, t_2.sum))
+   .collect()
+   
 
 ### Join without shuffle
 
