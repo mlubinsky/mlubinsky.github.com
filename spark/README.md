@@ -66,7 +66,17 @@ Leaving 1 executor for ApplicationManager  num-executors=29
 
 mean, median and the mode are not equel (they are equal for notmal ditribution)
 
+The mode is the number that is repeated more often than any other, so 13 is the mode.
+
 https://www.youtube.com/watch?v=HIlfO1pGo0w
+
+Solutions:
+
+1. Repartitions. spark.sql.shuffle.partitions
+2. Salting (add random siffix to key)
+3. Isolated sulting
+4. Isolated Map join
+5. Iterative broadcust Join
 
 
 ### Pair RDD
