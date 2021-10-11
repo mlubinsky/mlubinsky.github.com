@@ -115,7 +115,11 @@ val  result    =  wordsPairsRDD
    .collect()
 ```
 
-### Map MapPaertition MapPartitionWithIndex
+
+### HashPartitioner  and RangePartitioner
+
+
+### Map MapPartition MapPartitionWithIndex
 
 ### Join without shuffle
 
