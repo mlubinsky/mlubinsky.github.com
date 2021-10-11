@@ -92,6 +92,40 @@ reduceByKey()
 join()
 
 
+### Bucketing
+```
+create table a(id int, info STRING)
+clustered by(id)
+sorted by (id)
+INTO 8 buckets
+
+
+
+spark.range(10e4.toLong)
+.write
+.bucketBy(4,"id")
+.sortBy("id")
+.mode(SaveMode.Overwrite)
+saveAsTable("bucketed_4_10e4")
+
+
+spark.range(10e6.toLong)
+.write
+.bucketBy(4,"id")
+.sortBy("id")
+.mode(SaveMode.Overwrite)
+saveAsTable("bucketed_4_10e6")
+
+val b1= spark.table("bucketed_4_10e4")
+val b2= spark.table("bucketed_4_10e6")
+
+display(b1.join(b2, "id"))
+no shuffling durning the join (SortMergeJoin)
+
+
+
+```
+
 ### Avoid groupBy
 
 ```
