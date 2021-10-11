@@ -17,6 +17,10 @@ https://medium.com/data-science-at-microsoft/time-series-forecasting-part-2-of-3
 https://medium.com/data-science-at-microsoft/time-series-forecasting-part-3-of-3-introducing-auts-adaptive-univariate-time-series-dfd7555ca8d4
 
 
+Teaching AI to Classify Time-series Patterns with Synthetic Data
+
+https://www.kdnuggets.com/2021/10/teaching-ai-classify-time-series-patterns-synthetic-data.html
+
 
 ### DTW dynamic time warping 
 
