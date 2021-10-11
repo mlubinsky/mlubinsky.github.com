@@ -175,6 +175,8 @@ smallDF
 LargeDF
 10MB - default size for broadcust
 
+https://www.youtube.com/watch?v=isOuTH_49pY
+
 https://www.youtube.com/watch?v=_q-MOcfS0Ls  join dataframes
 
 --driver-memory(1G)
