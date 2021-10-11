@@ -118,6 +118,9 @@ val  result    =  wordsPairsRDD
 
 ### HashPartitioner  and RangePartitioner
 
+
+Multiple keys can be assigned to the same partition
+
 number of elements per partition
 ```
 import org.apache.spark.rdd.RDD
