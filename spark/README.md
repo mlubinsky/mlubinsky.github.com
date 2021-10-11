@@ -118,7 +118,16 @@ val  result    =  wordsPairsRDD
 
 ### HashPartitioner  and RangePartitioner
 
+number of elements per partition
+```
+import org.apache.spark.rddRDD
 
+def countByPartition(rdd: RDD[(Int, None.Type)]) = {
+  rdd.mapPartitions(iter => Iterator(iter.length))
+}
+
+countByPartition(rdd).collect()
+```
 ### Map MapPartition MapPartitionWithIndex
 
 ### Join without shuffle
