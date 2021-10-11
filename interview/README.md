@@ -12,6 +12,10 @@ Hard Interview Questions in FAANG - 4 | Live Problem Solving | Interview Crackin
 
 https://www.youtube.com/watch?v=8Uk2e7cCuyw
 
+System design interview
+
+https://www.amazon.com/System-Design-Interview-Insiders-Guide-ebook-dp-B08B3FWYBX/dp/B08B3FWYBX/ref=mt_other?_encoding=UTF8&me=&qid=
+
 
 https://www.educative.io/blog/cracking-top-facebook-coding-interview-questions
 
