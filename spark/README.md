@@ -62,6 +62,13 @@ Leaving 1 executor for ApplicationManager  num-executors=29
 
 ```
 
+### Skewed RDD 
+
+mean, median and the mode are not equel (they are equal for notmal ditribution)
+
+https://www.youtube.com/watch?v=HIlfO1pGo0w
+
+
 ### Pair RDD
 allow to access each key in parallel
 
