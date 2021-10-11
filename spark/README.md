@@ -118,6 +118,13 @@ val  result    =  wordsPairsRDD
 
 ### HashPartitioner  and RangePartitioner
 
+RDD keys should be hashable  
+
+RDD partition number is key.hashCode % number of partitions
+
+DataSet use MurMurHash3
+
+PySpark use portable_hash
 
 Multiple keys can be assigned to the same partition
 
