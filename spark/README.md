@@ -1,3 +1,5 @@
+https://livebook.manning.com/book/streaming-data/ Book (I bought it)
+
 https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-apache-spark/functional-programming-using-the-spark-shell?
 
 
