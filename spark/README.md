@@ -120,7 +120,7 @@ val  result    =  wordsPairsRDD
 
 number of elements per partition
 ```
-import org.apache.spark.rddRDD
+import org.apache.spark.rdd.RDD
 
 val rdd=sc.paralelize(
      for {
@@ -141,6 +141,15 @@ def countByPartition(rdd: RDD[(Int, None.Type)]) = {
 }
 
 countByPartition(rdd).collect()
+ result number of elements per partition: 
+ Array[Int] = Array (0,1,1,1,0,1,1,1)
+
+
+ Let repartition dataset based using HashPartitioner
+ 
+ import org.apache.spark.HashPartitioner
+ val rddOne=rdd.partitionBy(new HashPrtitioner(1))
+
 ```
 ### Map MapPartition MapPartitionWithIndex
 
