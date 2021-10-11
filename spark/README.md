@@ -122,6 +122,20 @@ number of elements per partition
 ```
 import org.apache.spark.rddRDD
 
+val rdd=sc.paralelize(
+     for {
+         x <- 1 to 3
+         y <- 1 to 2
+     } yield (x,None), 8)
+     
+rdd.collect.foreach(println))
+(1,None)
+(1,None)
+(2,None)
+(2,None)
+(3,None)
+(3,None)
+
 def countByPartition(rdd: RDD[(Int, None.Type)]) = {
   rdd.mapPartitions(iter => Iterator(iter.length))
 }
