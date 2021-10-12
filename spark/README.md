@@ -29,6 +29,20 @@ NamedNode, SecondaryNamed Node,DataNode,JobTracker,TaskManager
 5 tasks per executor. Executor= 1 JVM.
 Task is 1 thread which process 1 partition
 
+
+### Stage is
+
+  - physical unit of execution
+  - step in physical execution plan
+  - collection of task - one task per partition
+  - job is collection of stages
+  
+  There are 2 types of stages:
+  
+    - ShuffleMapstage (map)
+    - ResultStage. (reduce)
+
+
 YARN app master
 
 https://www.youtube.com/watch?v=sHqzmqppKXE&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg&index=5  EXECUTOR Tuning
@@ -41,7 +55,7 @@ Approach 1 - one executor per core is is NOT good because
 - it does not leave enough memory overhead for hadoop/yarn daemon process and ApplicationManager and OS 
 ```
 
-Approach 2 - one executor per node  (fat executor :
+Approach 2 - one executor per node  (fat executor) :
 ```
 num-executors = one executor per noder
   total # of executors = total nodes in cluster = 10
