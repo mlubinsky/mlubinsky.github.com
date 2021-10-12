@@ -30,7 +30,11 @@ NamedNode, SecondaryNamed Node,DataNode,JobTracker,TaskManager
 Task is 1 thread which process 1 partition
 
 
-### Stage https://www.youtube.com/watch?v=1BaGOCPA7OA
+### Stage , Job , Task
+
+https://www.youtube.com/watch?v=1BaGOCPA7OA
+
+https://www.youtube.com/watch?v=P1knn8i1Ijs
 
 Action creates Job  (1:1) (collection of stages) ;  stage is collection of task; task is running on 1 core
 
@@ -138,9 +142,14 @@ val b2= spark.table("bucketed_4_10e6")
 display(b1.join(b2, "id"))
 no shuffling durning the join (SortMergeJoin)
 
-
-
 ```
+
+
+### Dataframe vs Dataset vs RDD
+
+https://www.youtube.com/watch?v=xuXOiD3drps
+
+https://www.youtube.com/watch?v=Ofk7G3GD9jk
 
 ### Avoid groupBy
 
@@ -212,6 +221,22 @@ countByPartition(rdd).collect()
 
 ```
 ### Map MapPartition MapPartitionWithIndex
+
+https://www.youtube.com/watch?v=UMEnrYf8LPQ
+
+https://www.youtube.com/watch?v=TtfUUvFoKYw
+
+
+
+### Performance: predicate pushdown, etc
+
+https://www.youtube.com/watch?v=_Ne27JcLnEc
+
+
+### Cost based optimizer
+
+https://www.youtube.com/watch?v=E26fK8kgXaU
+
 
 ### Join without shuffle
 
