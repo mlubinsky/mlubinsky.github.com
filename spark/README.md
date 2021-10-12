@@ -211,12 +211,19 @@ LargeDF
 
 https://www.youtube.com/watch?v=isOuTH_49pY
 
-#### shuffle hash join
-
+#### shuffle hash join 
 ```
+ useful where any partition of the build side could be fit into memory
+ ome  table is mutch smaller then  the other one, then cost to build a hash table on a smaller table is less than sorting the larger table
+
+ only when spark.sql.join.preferSortMergeJoin=false
+ and the cost to build the hash table is less then sorting the data
+ 
+ but keep in mind - sort merge join is preferred over Shuffle Hash Join 
+
   step 1 - shuffle phase data in both tables are partitioned by the 
-join key so they can be colocated
-  step 2 - single noe hash join 
+               join key so they can be colocated
+  step 2 - single node hash join 
 ```
 #### sort join
 
