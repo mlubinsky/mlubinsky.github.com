@@ -229,12 +229,31 @@ countByPartition(rdd).collect()
  val rddOne=rdd.partitionBy(new HashPrtitioner(1))
 
 ```
-### Map MapPartition MapPartitionWithIndex
+### Map MapPartition MapPartitionWithIndex transformations
 
 https://www.youtube.com/watch?v=UMEnrYf8LPQ
 
 https://www.youtube.com/watch?v=TtfUUvFoKYw
 
+#### map() 
+
+works on a single Row at a time
+returns after each input row
+does not hold the output result in memory
+
+#### mapPartitions() 
+
+works on a partition at a time
+returns after processing all rows in partition
+output is retained in memory
+
+can be used as alternative to map() and foreach() - can be called for each patition while map() and foreach() os called for each element in RDD
+
+#### mapPartitionsWithIndex() 
+
+works on a partition at a time along with retaining the index of partitions
+returns after processing all rows in partition
+output is retained in memory
 
 
 ### Performance: predicate pushdown, etc
@@ -335,8 +354,7 @@ repartition - full shuffle to evenly distribute data
 Basic Transformations are - map and filter. After the transformation, the resultant RDD is always different from its parent RDD.
 It can be smaller (e.g. filter, count, distinct, sample), bigger (e.g. flatMap(), union(), Cartesian()) or the same size (e.g. map).
 
-mapPartitions() can be used as alternative to map() and foreach() - can be called for each patition while map() and foreach() os called for each element in RDD
-mapPartitionsWithIndex() 
+
 
 Narrow dependency : 
 RDD operations like map(), union(), filter() can operate on a single partition and map the data of that partition to the resulting single partition. These kinds of operations that map data from one to one partition are referred to as Narrow operations. 
