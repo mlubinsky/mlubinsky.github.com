@@ -153,7 +153,7 @@ https://www.youtube.com/watch?v=Ofk7G3GD9jk
 
  
 ### To use RDD in SparkSQL create view
-myRDD.createOrReplaceTempView("my_view_name")
+myRDD.createOrReplaceTempView(viewName = "my_view_name")
 
 ### Avoid groupBy
 
