@@ -211,6 +211,22 @@ LargeDF
 
 https://www.youtube.com/watch?v=isOuTH_49pY
 
+#### shuffle hash join
+
+```
+  step 1 - shuffle phase data in both tables are partitioned by the 
+join key so they can be colocated
+  step 2 - single noe hash join 
+```
+#### sort join
+
+#### broadcast join (spark.sql.autoBroadcastJoinThreshold=10485760  = 10MB by default)
+
+spark.sql.autoBroadcastJoinThreshold = -1 to disable broadcast
+join just lookup on local node
+hash join on each executor
+no shufffling envolved
+
 https://www.youtube.com/watch?v=_q-MOcfS0Ls  join dataframes
 
 --driver-memory(1G)
