@@ -30,7 +30,9 @@ NamedNode, SecondaryNamed Node,DataNode,JobTracker,TaskManager
 Task is 1 thread which process 1 partition
 
 
-### Stage is
+### Stage https://www.youtube.com/watch?v=1BaGOCPA7OA
+
+Action creates Job  (1:1) (collection of stages) ;  stage is collection of task; task is running on 1 core
 
   - physical unit of execution
   - step in physical execution plan
@@ -48,7 +50,7 @@ YARN app master
 https://www.youtube.com/watch?v=sHqzmqppKXE&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg&index=5  EXECUTOR Tuning
 
 
-Approach 1 - one executor per core is is NOT good because
+Approach 1 - one executor per core is NOT good because
 ```
 - it does not take advantage of running multiple tasks on same JVM
 - shared/cached variables like broadcast vars and accumulators will be replicated in each core of the nodes 
