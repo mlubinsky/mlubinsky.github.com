@@ -14,6 +14,8 @@ https://nadoumnet.d3.ru/ . Lectures
 
 https://habr.com/ru/post/581148/ как правильно понимать определитель матрицы
 
+https://habr.com/ru/users/dmagin/posts/ Graphs and other interesting articles
+
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNDNW9aTp8CVwvbKpTwACTjg
 или
 https://teach–in.ru/course/algebra–arzhantsev
