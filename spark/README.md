@@ -29,6 +29,11 @@ NamedNode, SecondaryNamed Node,DataNode,JobTracker,TaskManager
 5 tasks per executor. Executor= 1 JVM.
 Task is 1 thread which process 1 partition
 
+
+### Adaptive query execution Spark 3.0
+
+https://sparkbyexamples.com/spark/spark-adaptive-query-execution/
+
 ### SparkSQL
  
  https://spark.apache.org/docs/latest/sql-programming-guide.html
