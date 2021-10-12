@@ -29,6 +29,37 @@ NamedNode, SecondaryNamed Node,DataNode,JobTracker,TaskManager
 5 tasks per executor. Executor= 1 JVM.
 Task is 1 thread which process 1 partition
 
+### SparkSQL
+ 
+ https://spark.apache.org/docs/latest/sql-programming-guide.html
+ 
+select A.people, B.state, count(*) from A join B on A.state_id=B.state_id group by B.state
+
+Since there are only 50 states we cannot achieve better parallelism by adding  > 50  cores
+also since California is the biggest state the data is skewed - use broadcast join
+
+#### use EXPLAIN 
+#### SQL hints
+https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql-hint-framework.html
+
+```
+COALESCE and REPARTITION Hints
+Spark SQL 2.4 added support for COALESCE and REPARTITION hints (using SQL comments):
+
+SELECT /*+ COALESCE(5) */  
+
+SELECT /*+ REPARTITION(3) */  
+
+Broadcast Hints
+Spark SQL 2.2 supports BROADCAST hints using broadcast standard function or SQL comments:
+
+SELECT /*+ MAPJOIN(b) */  
+
+SELECT /*+ BROADCASTJOIN(b) */  
+
+SELECT /*+ BROADCAST(b) */  
+```
+
 
 ### Stage , Job , Task
 
