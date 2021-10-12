@@ -30,6 +30,10 @@ NamedNode, SecondaryNamed Node,DataNode,JobTracker,TaskManager
 Task is 1 thread which process 1 partition
 
 
+### Spark Web UI
+
+https://sparkbyexamples.com/spark/spark-web-ui-understanding/
+
 ### Adaptive query execution Spark 3.0
 
 https://sparkbyexamples.com/spark/spark-adaptive-query-execution/
