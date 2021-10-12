@@ -10,7 +10,9 @@ https://news.ycombinator.com/item?id=28704164
 
 https://samenright.com/2021/08/31/a-laymans-guide-to-recreational-mathematics-videos/
 
-https://nadoumnet.d3.ru/
+https://nadoumnet.d3.ru/ . Lectures
+
+https://habr.com/ru/post/581148/ как правильно понимать определитель матрицы
 
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNDNW9aTp8CVwvbKpTwACTjg
 или
