@@ -156,6 +156,9 @@ https://www.youtube.com/watch?v=Ofk7G3GD9jk
 
 myRDD.createOrReplaceTempView(viewName = "my_view_name")
 spark.sqlContext.sql("SELECT ...")
+.write
+.option("header",true)
+.csv(path="./../a.txt")
 
 ### Avoid groupBy
 
