@@ -236,24 +236,29 @@ https://www.youtube.com/watch?v=UMEnrYf8LPQ
 https://www.youtube.com/watch?v=TtfUUvFoKYw
 
 #### map() 
-
+```
 works on a single Row at a time
 returns after each input row
 does not hold the output result in memory
-
+```
 #### mapPartitions() 
-
+```
 works on a partition at a time
 returns after processing all rows in partition
 output is retained in memory
 
 can be used as alternative to map() and foreach() - can be called for each patition while map() and foreach() os called for each element in RDD
-
+```
 #### mapPartitionsWithIndex() 
-
+```
 works on a partition at a time along with retaining the index of partitions
 returns after processing all rows in partition
 output is retained in memory
+
+val dfList = (1 to 100) toList
+val df = dfList.toDF().map(x => x.getInt(0))
+val.df1.repartition(4).rdd.mapPartitionsWithIndex( (index,itr) => Iterator (index, itr.length))).toDF("index", "psize").show()
+```
 
 
 ### Performance: predicate pushdown, etc
