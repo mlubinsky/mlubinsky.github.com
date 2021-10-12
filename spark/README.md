@@ -221,12 +221,17 @@ https://www.youtube.com/watch?v=isOuTH_49pY
  
  but keep in mind - sort merge join is preferred over Shuffle Hash Join 
 
-  step 1 - shuffle phase data in both tables are partitioned by the 
-               join key so they can be colocated
+  step 1 - shuffle phase: data in both tables are re-partitioned by the  join key so they can be colocated
   step 2 - single node hash join 
 ```
-#### sort join
+#### sort join is the default strategy
 
+```
+step 1 - shuffle shuffle phase: data in both tables are re-partitioned by the  join key so they can be colocated
+step 2 - sort phase data sorted within each partition parallely
+step 3 - merge phase: join 2 sorted and partitioned data
+
+```
 #### broadcast join (spark.sql.autoBroadcastJoinThreshold=10485760  = 10MB by default)
 
 spark.sql.autoBroadcastJoinThreshold = -1 to disable broadcast
