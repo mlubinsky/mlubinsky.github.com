@@ -342,7 +342,9 @@ val.df1.repartition(4).rdd.mapPartitionsWithIndex( (index,itr) => Iterator (inde
 ```
 
 
-### Performance: predicate pushdown, etc
+### Performance: partition pruning , predicate pushdown 
+
+https://www.youtube.com/watch?v=PJvpseiPACQ
 
 https://www.youtube.com/watch?v=_Ne27JcLnEc
 
