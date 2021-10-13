@@ -12,8 +12,6 @@ https://hiringfor.tech/2020/10/26/my-resources-for-dynamic-programming.html
 
 
 
-##  Dynamic programming
-
 <https://habr.com/post/418867/> 
 
 <https://habr.com/post/423939/>
