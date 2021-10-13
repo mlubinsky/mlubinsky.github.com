@@ -32,9 +32,17 @@ https://hiringfor.tech/2020/10/26/my-resources-for-dynamic-programming.html
 
 <https://macnovicetomaster.wordpress.com/2019/06/05/dynamic-programming-practice-problems/>
 
-#### Dynamic Programming-  Python implementation of Min Cost Path on grid problem 
+<https://skerritt.blog/dynamic-programming/>
 
-  
+<https://hackernoon.com/dynamic-programming-for-brute-forcers-36f26c2466cf>
+
+<https://medium.com/@codingfreak/top-50-dynamic-programming-practice-problems-4208fed71aa3>
+
+<https://lukasmericle.github.io/dynprotut/
+
+####   Python implementation of Min Cost Path on grid problem 
+
+```  
 def minCost(cost, m, n): 
   
     # Instead of following line, we can use int tc[m+1][n+1] or 
@@ -61,17 +69,19 @@ def minCost(cost, m, n):
             tc[i][j] = min(tc[i-1][j-1], tc[i-1][j], tc[i][j-1]) + cost[i][j] 
   
     return tc[m][n] 
-  
-#### Driver program to test above functions 
+ ``` 
+  Driver program to test above functions 
+ ``` 
     cost = [[1, 2, 3], 
             [4, 8, 2], 
             [1, 5, 3]] 
     print(minCost(cost, 2, 2)) 
-
+```
 
 
 ### Count number of ways to reach   mat[m-1][n-1] from mat[0][0]   in a matrix mat[][] 
-### Returns The number of way from top-left to mat[m-1][n-1] 
+ Return    number of way from top-left to mat[m-1][n-1] 
+``` 
 def countPaths(m, n): 
   
     dp = [[0 for i in range(m + 1)]  
@@ -86,23 +96,20 @@ def countPaths(m, n):
                             dp[i][j - 1])              
       
     return dp[m][n] 
-  
-### Driver code 
-if __name__ =="__main__": 
-      
+```
+
+ Driver code 
+``` 
+if __name__ =="__main__":    
     n = 5
     m = 5
     print(countPaths(n, m)) 
-   
-## Dynamic programming 
-<https://skerritt.blog/dynamic-programming/>
+```   
+ 
 
-<https://hackernoon.com/dynamic-programming-for-brute-forcers-36f26c2466cf>
 
-<https://medium.com/@codingfreak/top-50-dynamic-programming-practice-problems-4208fed71aa3>
 
-<https://lukasmericle.github.io/dynprotut/
-## Egg drop
+#### Egg drop
 <https://habr.com/post/423679/>
 
 <http://declanoller.com/2018/09/03/the-egg-drop-puzzle-brute-force-dynamic-programming-and-markov-decision-processes/>
