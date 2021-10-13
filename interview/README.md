@@ -1,3 +1,14 @@
+### Udemy
+
+https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-interviews/. Udemy
+
+https://www.udemy.com/course/leetcode-in-python-50-algorithms-coding-interview-questions/
+
+https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-interviews
+
+
+<https://www.udemy.com/11-essential-coding-interview-questions/?couponCode=AMAZON2>
+
 
 ## Merging 2 sorted arrays
 into 1st array where 1st array has the capacity for both
@@ -67,6 +78,7 @@ else:
 
 
 ```
+http://www.cmsmagazine.ru/library/items/programming/80-problems-with-it-interviews/
 
 
 
@@ -207,9 +219,7 @@ https://tproger.ru/articles/problems/
 
 https://www.pythonpool.com/knapsack-problem-python/
 
-https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-interviews/. Udemy
 
-https://www.udemy.com/course/leetcode-in-python-50-algorithms-coding-interview-questions/
 
 https://github.com/BitPunchZ/Leetcode-in-python-50-Algorithms-Coding-Interview-Questions/
 
@@ -235,7 +245,6 @@ https://www.youtube.com/watch?v=kbx7xpSKBaI climbing stairs
 
 
 
-https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-interviews
 
 
 https://habr.com/ru/company/otus/blog/565988/ . Median in the stream
@@ -252,13 +261,225 @@ https://habr.com/ru/post/576558/
 
 https://habr.com/ru/post/579410/ interview for ML
 
+## Print the outlier nodes in binary tree
+<https://www.jeffcarp.com/posts/2018-how-to-solve-every-software-engineering-interview-question/> 
 
+
+<https://habr.com/ru/post/457042/> . Tree traversal using 2 threads (Java)
+
+## LCA
+<https://en.wikipedia.org/wiki/Lowest_common_ancestor>
+<https://sites.google.com/site/mytechnicalcollection/algorithms/trees/lca-of-binary-tree>
+<https://stackoverflow.com/questions/1484473/how-to-find-the-lowest-common-ancestor-of-two-nodes-in-any-binary-tree>
+
+
+<https://www.youtube.com/channel/UCcAWgbpROQrPok18E6UozWw/videos>
+
+<https://www.facebook.com/tusharroy25/>
+
+<https://github.com/mission-peace/interview/tree/master/src/com/interview>
+
+<https://github.com/donnemartin/interactive-coding-challenges>
+
+<https://github.com/alexhagiopol/cracking-the-coding-interview>
+
+<https://github.com/charulagrl/data-structures-and-algorithms>
+
+<https://github.com/thundergolfer/interview-with-python/tree/master/solutions/python>
+
+<https://github.com/anubhavshrimal/Data_Structures_Algorithms_In_Python>
+
+<https://github.com/bt3gl/Python-and-Algorithms-and-Data-Structures/>
+
+<https://blog.finxter.com/python-interview-questions/>
+
+<https://stackoverflow.com/questions/11897088/diameter-of-binary-tree-better-design>
+
+<http://www.interviewdruid.com/>
+<https://github.com/parineeth/tbboci-3rd-edition-python>
+<https://www.amazon.com/dp/1983861189>
+
+<https://www.algoexpert.io/product>
+
+<https://www.hackerrank.com/>
+
+<https://www.interviewbit.com/>
+
+<https://www.quora.com/How-do-I-learn-algorithms-2>
+
+<https://skillupper.com/>
+
+<https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/>
+
+<https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/>
+
+<https://habr.com/post/430788/>
+
+<https://stackabuse.com/graph-data-structure-interview-questions/>
+
+<http://www.java67.com/2018/05/top-75-programming-interview-questions-answers.html>
 
 Hard Interview Questions in FAANG - 4 | Live Problem Solving | Interview Cracking Series
 
 https://www.youtube.com/watch?v=8Uk2e7cCuyw
 
-System design interview
+
+
+<https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
+
+<https://blog.usejournal.com/i-interviewed-at-six-top-companies-in-silicon-valley-in-six-days-and-stumbled-into-six-job-offers-fe9cc7bbc996>
+
+<https://www.businessinsider.fr/us/microsoft-new-developer-interview-process-2018-12>
+
+<https://stackabuse.com/programming-interview-questions/>
+
+<https://bradfieldcs.com/algos/>
+
+<http://rachitiitr.blogspot.com/>
+
+<https://www.youtube.com/watch?v=4NIb9l3imAo>
+
+disjoint set union (DSU) или Union-Find.
+<https://habr.com/ru/post/104772/>
+создать быструю структуру, которая поддерживает следующие операции:
+
+MakeSet(X) — внести в структуру новый элемент X, создать для него множество размера 1 из самого себя.
+Find(X) — возвратить идентификатор множества, которому принадлежит элемент X. В качестве идентификатора мы будем выбирать один элемент из этого множества — представителя множества. Гарантируется, что для одного и того же множества представитель будет возвращаться один и тот же, иначе невозможно будет работать со структурой: не будет корректной даже проверка принадлежности двух элементов одному множеству if (Find(X) == Find(Y)).
+
+Unite(X, Y) — объединить два множества, в которых лежат элементы X и Y, в одно новое.
+
+
+<http://iolivia.me/posts/4-bloom-filter-part-3/> Bloom filter
+
+<https://stackoverflow.com/questions/2936213/explain-how-finding-cycle-start-node-in-cycle-linked-list-work>
+
+<https://stackoverflow.com/questions/41515081/algorithm-find-all-permutations-of-string-a-in-string-b>
+
+<https://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/>
+
+<http://www.java67.com/2018/05/top-75-programming-interview-questions-answers.html>
+
+<http://www.algorithmsilluminated.org/>
+
+<https://able.bio/daqo/landing-a-software-engineering-job-at-facebook--78k4a0s>
+
+<https://habr.com/ru/company/digital-ecosystems/blog/473018/> Facebook 
+ 
+<https://github.com/TheAlgorithms/Python>
+
+<https://www.geeksforgeeks.org/union-find/> union-find (disjoint-set)
+
+<https://habr.com/ru/company/edison/blog/481304/>
+
+<http://blog.amynguyen.net/?p=853>
+
+<https://news.ycombinator.com/item?id=18236396> .  Favorite algos
+
+<https://aryaboudaie.com/interviews/python/technical/2017/11/06/python-for-interviews.html>
+
+<https://algoexpert.io/rachit>  Use "rachit" as coupon code to get 30% off
+
+<http://quiz.geeksforgeeks.org/amazons-most-frequently-asked-interview-questions-set-2/>
+
+<https://www.geeksforgeeks.org/amazons-asked-interview-questions/>
+
+<https://habr.com/ru/post/112222/> heap
+
+<https://medium.com/educative/3-month-coding-interview-bootcamp-904422926ce8>
+
+<https://habr.com/ru/post/437702/> Разбор задачи с собеседования в Google: синонимичные запросы
+
+<http://algorithms.wtf/> 
+
+<https://www.byte-by-byte.com/google-interview/>
+
+<https://courses.csail.mit.edu/iap/interview/materials.php>
+
+
+https://www.advancedalgorithms.com/ru. Advanced algo (ru)
+
+https://github.com/alexeygrigorev/data-science-interviews . 
+
+https://github.com/labuladong/fucking-algorithm/tree/english. Leetcode guide
+
+<https://github.com/30-seconds/30-seconds-of-python-code>
+
+<https://m.stopa.io/10-offers-100-days-the-journey-16a0407b8d95> interview
+<https://habr.com/ru/post/454264/> . Inteview
+
+<https://hackernoon.com/20-string-coding-interview-questions-for-programmers-6b6735b6d31c>
+
+<https://medium.com/@fahimulhaq/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed>
+
+<https://www.solutionfactory.in/posts/Floyd-Cycle-Detection-Algorithm-in-Java> Cycle detection
+
+<https://docs.google.com/spreadsheets/d/1GOO4s1NcxCR8a44F0XnsErz5rYDxNbHAHznu4pJMRkw/edit#gid=0>
+
+<https://www.youtube.com/watch?v=9clnwaqOU2E> string algo
+
+<https://www.globalsoftwaresupport.com/most-common-programming-interview-questions-in-2019/>
+
+<https://github.com/devAmoghS/Practice-Problems>
+
+<https://habr.com/ru/post/442352/> Бинарные деревья поиска
+
+<https://www.youtube.com/watch?v=lpO_arK69vg> LCA
+
+
+<https://www.youtube.com/watch?v=bBPHpH8aKjw> look fo links here!
+
+##  Google interview
+<https://habr.com/post/419945/>
+
+<https://news.ycombinator.com/item?id=18374938>
+
+<https://habr.com/company/google/blog/425279/> 
+
+https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knights-dialer-f780d516f029
+
+
+<https://www.youtube.com/watch?v=5o-kdjv7FD0>
+
+<https://interviewing.io/recordings>
+
+<https://habr.com/post/419725/> Non-symmetric dime simulation
+
+<http://www.cmsmagazine.ru/library/items/programming/80-problems-with-it-interviews/>
+
+<https://saru.science/tech/2017/01/18/judy-arrays.html> Judy array
+
+<https://www.reddit.com/r/cpp/comments/9afpq7/whats_your_favorite_data_structure/>
+
+<https://habr.com/post/420605/>
+
+<https://discuss.codechef.com/questions/48877/data-structures-and-algorithms>
+
+<https://www.youtube.com/watch?v=1CxyVdA_654> Running mediam in stream
+
+<https://www.youtube.com/watch?v=IHsX70r-fIQ> Max sub-sequence in string
+
+<https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0>
+
+<https://stackoverflow.com/questions/3260653/algorithm-to-find-top-10-search-terms/3260905#3260905>
+
+<https://blog.datopia.io/2018/11/03/hitchhiker-tree/>
+
+<https://github.com/tayllan/awesome-algorithms>
+
+<https://github.com/karan/Projects>
+
+<http://yucoding.blogspot.com/2017/01/leetcode-question-range-sum-query.html>
+<http://massivealgorithms.blogspot.com/>
+<http://ruslanledesma.com/>
+<http://algorithms.tutorialhorizon.com/>
+
+
+
+
+
+
+
+### System design interview
 
 https://www.amazon.com/System-Design-Interview-Insiders-Guide-ebook-dp-B08B3FWYBX/dp/B08B3FWYBX/ref=mt_other?_encoding=UTF8&me=&qid=
 
@@ -319,3 +540,43 @@ https://leetcode.com/problems/invert-binary-tree/
         invert(tree.right)
         
  ```       
+ 
+ 
+ 
+### Find 1st element in rotated sorted array
+
+ ```
+    def bs(lst, start, end):
+       print ("start=",start, "end=", end)
+       if start == end:  return start
+       m = (start+end)//2
+       print ("middle=",m, lst[m])
+
+       if m < end and lst[m+1] < lst[m]:
+          return m+1
+       if m > start and lst[m] < lst[m-1]:
+          return m
+
+       if lst[end] > lst[m]:
+          return bs(lst, start, m -1)
+       else:
+          return  bs(lst, m+1, end)
+
+    def find(l):
+      start=0
+      end=len(l)-1
+      i= bs(l, start, end)
+      return i
+
+    if __name__ =="__main__":
+      print ("main")
+      l1=[5,10,20, 1,2,3,4]
+      print(l1)
+      i=find(l1)
+      print ("index=",i)
+
+      l2=[20, 1,2,3,4]
+      print(l2)
+      i=find(l2)
+      print ("index=",i)
+```
