@@ -10,6 +10,51 @@ https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-intervie
 <https://www.udemy.com/11-essential-coding-interview-questions/?couponCode=AMAZON2>
 
 
+### Github
+
+<https://github.com/programmercave0/Algo-Data-Structure/blob/master/README.md>
+
+<https://yangshun.github.io/tech-interview-handbook/>
+
+<https://github.com/mission-peace/interview/tree/master/src/com/interview>
+
+<https://github.com/donnemartin/interactive-coding-challenges>
+
+<https://github.com/alexhagiopol/cracking-the-coding-interview>
+
+<https://github.com/charulagrl/data-structures-and-algorithms>
+
+<https://github.com/thundergolfer/interview-with-python/tree/master/solutions/python>
+
+<https://github.com/anubhavshrimal/Data_Structures_Algorithms_In_Python>
+
+<https://github.com/bt3gl/Python-and-Algorithms-and-Data-Structures/>
+
+https://github.com/BitPunchZ/Leetcode-in-python-50-Algorithms-Coding-Interview-Questions/
+
+https://ekamperi.github.io/programming/2021/04/14/longest-non-repeating-substring.html
+
+https://github.com/StBogdan/CTCI_python Cracking code interview
+
+<https://github.com/parineeth/tbboci-3rd-edition-python>
+
+https://github.com/alexeygrigorev/data-science-interviews . 
+
+https://github.com/labuladong/fucking-algorithm/tree/english. Leetcode guide
+
+<https://github.com/30-seconds/30-seconds-of-python-code>
+
+<https://github.com/TheAlgorithms/Python>
+
+
+<https://github.com/devAmoghS/Practice-Problems>
+
+<https://github.com/tayllan/awesome-algorithms>
+
+<https://github.com/karan/Projects>
+
+
+
 ## Merging 2 sorted arrays
 into 1st array where 1st array has the capacity for both
 ```
@@ -73,9 +118,6 @@ if identicalTrees(root1, root2):
     print "Both trees are identical"
 else: 
     print "Trees are not identical"
-  
-# This code is contributed by Nikhil Kumar Singh(nickzuck_007) 
-
 
 ```
 http://www.cmsmagazine.ru/library/items/programming/80-problems-with-it-interviews/
@@ -98,6 +140,8 @@ https://habr.com/ru/post/535216/ interview
 
 https://habr.com/ru/post/550088/ interview
 
+### String Algo
+
 https://paddy3118.blogspot.com/2021/02/longest-common-substring-investigation.html. longest common substr
 
 
@@ -105,7 +149,7 @@ find the longest palindrome subsequence of a string optimally
 
 https://alkeshghorpade.me/post/leetcode-longest-substring-without-repeating-characters
 
-https://oddblogger.com/recursion-memoization-dynamic-programming-lcs-problem/
+
 
 https://johnlekberg.com/blog/2020-08-01-task-order.html . topological sort
 
@@ -134,7 +178,7 @@ https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw/videos
 
 <https://medium.com/swlh/binary-search-cheat-sheet-for-coding-interviews-9c5425af357e>
 
-<https://medium.com/@hazemu/finding-the-median-of-2-sorted-arrays-in-logarithmic-time-1d3f2ecbeb46>
+<https://medium.com/@hazemu/finding-the-median-of-2-sorted-arrays-in-logarithmic-time-1d3f2ecbeb46> Median of 2 sorted attays
 
 <https://habr.com/ru/post/503602/>
 
@@ -155,7 +199,7 @@ https://medium.com/@srajaninnov/find-the-diameter-of-a-binary-tree-efc45b9129a7
 <https://rcoh.me/posts/linear-time-median-finding/>.      MEDIAN finding 
 
 
-<https://github.com/programmercave0/Algo-Data-Structure/blob/master/README.md>
+
 
 <https://data-flair.training/blogs/python-programming-interview-questions/>
 
@@ -187,7 +231,7 @@ https://medium.com/@srajaninnov/find-the-diameter-of-a-binary-tree-efc45b9129a7
 
 
 
-<https://yangshun.github.io/tech-interview-handbook/>
+
 
 <https://www.youtube.com/watch?v=EuPSibuIKIg>
 
@@ -221,7 +265,7 @@ https://www.pythonpool.com/knapsack-problem-python/
 
 
 
-https://github.com/BitPunchZ/Leetcode-in-python-50-Algorithms-Coding-Interview-Questions/
+
 
 
 https://www.pythonforbeginners.com/queue/queue-in-python
@@ -229,13 +273,13 @@ https://www.pythonforbeginners.com/queue/queue-in-python
 
 https://www.youtube.com/watch?v=Dx5eiQdv4k8 Find 2 closest points on plain
 
-https://ekamperi.github.io/programming/2021/04/14/longest-non-repeating-substring.html
+
 
 https://kalkicode.com/data-structure/1500-most-common-data-structures-and-algorithms-solutions
 
 https://stackoverflow.com/questions/67526076/what-is-the-most-efficient-way-of-getting-the-intersection-of-k-sorted-arrays
 
-https://github.com/StBogdan/CTCI_python Cracking code interview
+
 
 https://runestone.academy/runestone/books/published/pythonds/index.html#problem-solving-with-algorithms-and-data-structures-using-python
 
@@ -277,26 +321,14 @@ https://habr.com/ru/post/579410/ interview for ML
 
 <https://www.facebook.com/tusharroy25/>
 
-<https://github.com/mission-peace/interview/tree/master/src/com/interview>
 
-<https://github.com/donnemartin/interactive-coding-challenges>
-
-<https://github.com/alexhagiopol/cracking-the-coding-interview>
-
-<https://github.com/charulagrl/data-structures-and-algorithms>
-
-<https://github.com/thundergolfer/interview-with-python/tree/master/solutions/python>
-
-<https://github.com/anubhavshrimal/Data_Structures_Algorithms_In_Python>
-
-<https://github.com/bt3gl/Python-and-Algorithms-and-Data-Structures/>
 
 <https://blog.finxter.com/python-interview-questions/>
 
 <https://stackoverflow.com/questions/11897088/diameter-of-binary-tree-better-design>
 
 <http://www.interviewdruid.com/>
-<https://github.com/parineeth/tbboci-3rd-edition-python>
+
 <https://www.amazon.com/dp/1983861189>
 
 <https://www.algoexpert.io/product>
@@ -365,7 +397,7 @@ Unite(X, Y) — объединить два множества, в которы�
 
 <https://habr.com/ru/company/digital-ecosystems/blog/473018/> Facebook 
  
-<https://github.com/TheAlgorithms/Python>
+
 
 <https://www.geeksforgeeks.org/union-find/> union-find (disjoint-set)
 
@@ -398,11 +430,7 @@ Unite(X, Y) — объединить два множества, в которы�
 
 https://www.advancedalgorithms.com/ru. Advanced algo (ru)
 
-https://github.com/alexeygrigorev/data-science-interviews . 
 
-https://github.com/labuladong/fucking-algorithm/tree/english. Leetcode guide
-
-<https://github.com/30-seconds/30-seconds-of-python-code>
 
 <https://m.stopa.io/10-offers-100-days-the-journey-16a0407b8d95> interview
 <https://habr.com/ru/post/454264/> . Inteview
@@ -419,7 +447,7 @@ https://github.com/labuladong/fucking-algorithm/tree/english. Leetcode guide
 
 <https://www.globalsoftwaresupport.com/most-common-programming-interview-questions-in-2019/>
 
-<https://github.com/devAmoghS/Practice-Problems>
+
 
 <https://habr.com/ru/post/442352/> Бинарные деревья поиска
 
@@ -464,9 +492,7 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 <https://blog.datopia.io/2018/11/03/hitchhiker-tree/>
 
-<https://github.com/tayllan/awesome-algorithms>
 
-<https://github.com/karan/Projects>
 
 <http://yucoding.blogspot.com/2017/01/leetcode-question-range-sum-query.html>
 <http://massivealgorithms.blogspot.com/>
