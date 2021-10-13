@@ -228,6 +228,63 @@ no shuffling durning the join (SortMergeJoin)
 
 ### Dataframe vs Dataset vs RDD
 
+RDD has map(), filter() , reduce()
+
+convert from a DataFrame to an RDD via its rdd method: df.rdd is RDD[Row] 
+convert from an RDD to a DataFrame (if the RDD is in a tabular format) 
+via the toDF() method
+
+val sampleRDD = sqlContext.jsonFile("hdfs://localhost:9000/jsondata.json")
+
+val sample_DF = sampleRDD.toDF()
+
+DataFrame: named columns, uses a catalyst optimizer , weakly typed
+
+df.filter("age > 21");
+
+Because the code above is referring to data attributes by name, it is not possible for the compiler to catch any errors. If attribute names are incorrect then the error will only detected at runtime, when the query plan is created.
+
+
+In following code: people("deptId"), 
+you're not getting back an Int, or a Long, you're getting back a Column object 
+```
+val people = sqlContext.read.parquet("...")
+val department = sqlContext.read.parquet("...")
+
+people.filter("age > 30")
+  .join(department, people("deptId") === department("id"))
+  .groupBy(department("name"), "gender")
+  .agg(avg(people("salary")), max(people("age")))
+```
+
+On the contrary, DataSet[T] is typed
+
+val people: People = val people = sqlContext.read.parquet("...").as[People]
+
+
+```
+spark.createDataFrame(
+    [
+        (1, 'Lakshay'),  
+        (2, 'Aniruddha'),
+        (100, 'Siddhart')
+    ],
+    ['id', 'Name'] #   columns labels here
+)
+```
+#### Datasets is an extension of Dataframes API with the benefits of both RDDs and the Datasets. 
+
+dataset.filter(_.age < 21);
+
+
+It is fast as well as provides a type-safe interface - synax and semantic aeero during compilation
+#### encoders
+
+Dataset API has the concept of encoders which translate between JVM representations (objects) and Spark’s internal binary format. Spark has built-in encoders which are very advanced in that they generate byte code to interact with off-heap data and provide on-demand access to individual attributes without having to de-serialize an entire object
+
+
+Aggregation is faster in DataFrames.
+
 https://www.youtube.com/watch?v=xuXOiD3drps
 
 https://www.youtube.com/watch?v=Ofk7G3GD9jk
