@@ -1,5 +1,7 @@
 ## Dynamic programming
 
+https://oddblogger.com/recursion-memoization-dynamic-programming-lcs-problem/
+
 https://trekhleb.dev/blog/2018/dynamic-programming-vs-divide-and-conquer/
 
 https://www.youtube.com/watch?v=BvwQe_9FUBQ (ru)
