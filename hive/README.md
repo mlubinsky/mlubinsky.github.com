@@ -86,6 +86,23 @@ select array(named_struct("person_id","1","first_name","ooo"));
 [{"person_id":"1","first_name":"ooo"}]
 
 
+### Explode and LATERAL VIEW
+
+```
+select col1, explode(split(col2,'\\s')) from table_name;
+
+SemanticException [Error 10081]: UDTF's are not supported outside the SELECT clause, nor nested in expressions
+```
+ solution
+ ```
+ select s.code, exp.splitted
+  from sample_07 s
+  lateral view explode(split('asdfa adsfa asdaf asdfad','\\s')) exp as splitted
+```
+ 
+ 
+ 
+
 ### JSON processing: get_json _object and json_tuple()
 
 json_tuple() takes a set of keys and a JSON string. Then returns a tuple of values. 
