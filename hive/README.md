@@ -99,9 +99,45 @@ SemanticException [Error 10081]: UDTF's are not supported outside the SELECT cla
   from sample_07 s
   lateral view explode(split('asdfa adsfa asdaf asdfad','\\s')) exp as splitted
 ```
- 
- 
- 
+ How to parse JSON array:
+```
+WITH T as
+(
+  SELECT
+  'key1' as key,
+  '[{"website":"baidu.com","name":" Baidu "},{"website":"google.com","name":" Google "}]' as value
+  UNION ALL
+  SELECT
+  'key2' as key,
+  '[{"website":"yandex.com","name":" YANDEX "}]' as value
+)
+select
+key,
+tmp
+FROM T 
+LATERAL VIEW
+explode(
+        split(
+            regexp_replace(
+                regexp_replace(
+                  value,
+                  '\\[|\\]',
+                  ''
+                ),
+             '\\}\\,\\{',
+             '\\}\\;\\{'
+            ),
+         '\\;'
+        )
+       ) tmp_t as tmp
+```
+ Result:
+ ```
+ key1	{"website":"baidu.com","name":" Baidu "}
+ key1	{"website":"google.com","name":" Google "}
+ key2	{"website":"yandex.com","name":" YANDEX "}
+ ```
+ Issue: the result above is not good: use json_tuple or get_json_object() to convert the json in 2 separate columns: website and name
 
 ### JSON processing: get_json _object and json_tuple()
 
