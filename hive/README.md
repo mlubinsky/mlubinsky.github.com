@@ -1,3 +1,5 @@
+https://stackoverflow.com/questions/69576832/how-to-use-hive-macro-to-reduce-boilerplate
+
 ## File formats: Avro, Parquet
 
 <https://habr.com/ru/company/mailru/blog/504952/> Avro, Parquet, ...
