@@ -138,6 +138,48 @@ explode(
  key2	{"website":"yandex.com","name":" YANDEX "}
  ```
  Issue: the result above is not good: use json_tuple or get_json_object() to convert the json in 2 separate columns: website and name
+ 
+ Solution: use GET_JSON_OBJECT
+``` 
+ WITH T as
+(
+  SELECT
+  'key1' as key,
+  '[{"website":"baidu.com","name":" Baidu "},{"website":"google.com","name":" Google "}]' as value
+  UNION ALL
+  SELECT
+  'key2' as key,
+  '[{"website":"yandex.com","name":" YANDEX "}]' as value
+)
+select
+key,
+GET_JSON_OBJECT(tmp,'$.website') as website,
+GET_JSON_OBJECT(tmp,'$.name') as name,
+tmp
+FROM T 
+LATERAL VIEW
+explode(
+        split(
+            regexp_replace(
+                regexp_replace(
+                  value,
+                  '\\[|\\]',
+                  ''
+                ),
+             '\\}\\,\\{',
+             '\\}\\;\\{'
+            ),
+         '\\;'
+        )
+       ) tmp_t as tmp
+```
+Result
+```
+
+key1	baidu.com	 Baidu 	{"website":"baidu.com","name":" Baidu "}
+key1	google.com	 Google 	{"website":"google.com","name":" Google "}
+key2	yandex.com	 YANDEX 	{"website":"yandex.com","name":" YANDEX "}
+```
 
 ### JSON processing: get_json _object and json_tuple()
 
