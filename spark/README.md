@@ -3,6 +3,8 @@ https://livebook.manning.com/book/streaming-data/ Book (I bought it)
 https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-apache-spark/functional-programming-using-the-spark-shell?
 
 
+https://databricks.com/p/webinar/databricks-on-aws-3-part-training-series Free training
+
 Code for the Spark in Action Book: https://github.com/databricks/LearningSparkV2
 
 There are 8 workers and both the workers and driver are m4.xlarge instances (16.0 GB, 4 Cores).
