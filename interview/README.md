@@ -32,6 +32,28 @@ def longest(s):
 	    
     return ans 	    
 ```
+
+#### Group anagrams
+```
+def findHash(s):
+   return ''.join(sorted(s))
+   
+def groupAnagrams(strs):
+   answers=[]
+   m={}
+   for s in strs:
+      hashed=findshash(s)
+      if hashed not in m:
+           m[hashed]=[]
+	   
+      m[hashed].append(s)
+      
+   for p in m.values():
+      answers.append(p)
+      
+   return answers   
+```
+
 ##### Max sum array of fixed length
 ```
 def maxSum(arr, window):
