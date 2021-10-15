@@ -10,6 +10,11 @@ https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-intervie
 <https://www.udemy.com/11-essential-coding-interview-questions/?couponCode=AMAZON2>
 
 
+#### All elements in array are present twice, but 1 element is unique - find it
+
+return 2*sum(set(arr)) - sum(arr)
+
+
 #### Longest substr without repeating char
 ```
 def longest(s):
