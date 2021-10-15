@@ -1,5 +1,7 @@
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
+https://www.manning.com/books/deep-learning-with-python-second-edition. ML with Python 2nd ed
+
 https://arxiv.org/abs/1709.02840  Introduction to Machine Learning
 
 https://inria.github.io/scikit-learn-mooc/
