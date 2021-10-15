@@ -10,6 +10,24 @@ https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-intervie
 <https://www.udemy.com/11-essential-coding-interview-questions/?couponCode=AMAZON2>
 
 
+#### Longest substr without repeating char
+```
+def longest(s):
+    m={}
+    left=right=ans=0
+    n=len(s)
+    while left <n and right < n:
+        el=s[right]
+	   if el in m:
+	       left = max(left, m(el)+1)
+	       
+	    m[el]=right
+	    ans=max(ans, right-left+1)
+	    right +=1
+	    
+    return ans 	    
+```
+##### Max sum array of fixed length
 ```
 def maxSum(arr, window):
    arrSize=len(arr)
