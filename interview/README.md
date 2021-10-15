@@ -10,6 +10,21 @@ https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-intervie
 <https://www.udemy.com/11-essential-coding-interview-questions/?couponCode=AMAZON2>
 
 
+```
+def maxSum(arr, window):
+   arrSize=len(arr)
+   if arrSize <= window: return None
+   
+   window_sum = sum([arr[i] for i in range(window)])
+   max_sum = window_sum
+   
+   for i in range(arrSize - window):
+      window_sum = window_sum -arr[i] + arr[i+window]
+      max_sum = max(window_sum, max_sum)
+      
+   return max_sum   
+```
+
 ### Github
 
 <https://github.com/programmercave0/Algo-Data-Structure/blob/master/README.md>
