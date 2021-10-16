@@ -360,6 +360,9 @@ https://medium.com/better-programming/python-7-advanced-features-that-you-may-no
  
  python -m json.tool my_json.json   # json buetifier
  
+ 
+ https://pythonspeed.com/articles/conda-vs-pip/    Pip vs conda
+ 
 ```
 <https://medium.com/analytics-vidhya/6-exceptionally-common-pitfalls-of-python-exception-handling-44871d6afbc7> Error handling
 
