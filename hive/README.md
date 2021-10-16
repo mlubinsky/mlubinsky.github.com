@@ -103,7 +103,17 @@ SemanticException [Error 10081]: UDTF's are not supported outside the SELECT cla
   from sample_07 s
   lateral view explode(split('asdfa adsfa asdaf asdfad','\\s')) exp as splitted
 ```
- How to parse JSON array:
+
+Another example:
+```
+select
+ lat.* from (select 0) t
+ lateral view
+ explode(array('A','B','C')) lat
+```
+
+
+#### How to parse JSON array:
 ```
 WITH T as
 (
