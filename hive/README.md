@@ -187,6 +187,10 @@ key2	yandex.com	 YANDEX 	{"website":"yandex.com","name":" YANDEX "}
 
 ### JSON processing: get_json _object and json_tuple()
 
+#### json_tuple(string jsonStr,string k1,...,string kn)
+
+json_tuple takes JSON string and a set of n keys, and returns a tuple of n values. This is a more efficient version of the get_json_object UDF because it can get multiple keys with just one call.
+
 json_tuple() takes a set of keys and a JSON string. Then returns a tuple of values. 
 The json_tuple() UDF uses the lateral view syntax in Hive, which enables json_tuple() to create a virtual table 
 by applying the UDT function to each row of the original table. 
