@@ -4,15 +4,14 @@ https://scastie.scala-lang.org/ Online Scala compiler
 
 https://alvinalexander.com/scala/fp-book/how-write-functions-take-function-input-parameters/
 
+### Examples of partition, sortBy, minBy, head, filter, case, collect, take, drop, split and map
+```
 val (even, odd) = xs.partition(_ % 2 == 0)
-
 val minByAbs = xs.sortBy(Math.abs).head
-
 val minByAbs = xs.minBy(Math.abs) .  --- this is better
-
 val doublesOfPositive = xs.filter(_ > 0).map(2 * _)
 
-val doublesOfPositive = xs.collect { . this is better
+val doublesOfPositive = xs.collect {  -- . this is better
   case x if x > 0 => 
     2 * x
 }
@@ -20,15 +19,15 @@ val doublesOfPositive = xs.collect { . this is better
 val leftHalf = xs.take(3)
 val rightHalf = xs.drop(3)
 val (leftHalf, rightHalf) = xs.splitAt(3)  -- this is better
-
+```
 
 #### grouped
 
 grouped(n) splits the collection into collections with n elements each
 (the last one may contain less than n elements, depending on the size of the original collection):
-
+```
 xs.grouped(3).toList // List(List(4, 5, 2), List(-1, -3, 4))
-
+```
 ### Scala Collections
 
 https://medium.com/wix-engineering/the-little-gems-of-scala-standard-library-32ef298bf0df
