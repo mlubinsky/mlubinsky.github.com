@@ -19,6 +19,18 @@ $ git checkout DEA-xxxx
 $ git pull origin master
 ```
 
+
+### Backfill
+```
+D=2021-10-01T04:00
+echo $D
+
+rm -rf nohup.out
+#nohup sudo /opt/airflow/airflow run CON_sr_dim dim_content_library_status $D  -i -f  -sd /tmp/mlubinsky/ &
+
+nohup sudo /opt/airflow/airflow backfill --rerun_failed_tasks   CON_sr_dim -I  -s $D  -e $D -sd /tmp/mlubinsky/ &
+tail -f nohup.out
+```
 ### Development Hive table:
 ```
 LOCATION 's3://roku-dea-dev/sand-box/roku-data-warehouse/roku/dimensions/dim_experiment' 
