@@ -3,7 +3,7 @@ How many items   in a dictionary?
 d={'a':1, 'b':2}
 len(d)
 len(d.keys()
-sum(d.values())
+sum(d.values()))
 
 How many unique values are there in a list?
 
@@ -19,7 +19,52 @@ for c in set(mystring):
     
 counts = {value: things.count(value) for value in things}
 
-    
+
+#### dot product
+
+  x_vector = (1, 2, 3)
+  y_vector = (4, 5, 6)
+
+>>> sum(x * y for x, y in zip(x_vector, y_vector))
+
+what happens if you provide sequences with different lengths?
+In that case, zip() ignores the extra values from the longest sequence, which leads to an incorrect result.
+
+  def dot_product(x_vector, y_vector):
+      if len(x_vector) != len(y_vector):
+          raise ValueError("Vectors must have equal sizes")
+      return sum(x * y for x, y in zip(x_vector, y_vector))
+
+#### Flattening a List of Lists
+
+ def flatten_list(a_list):
+      flat = []
+      for sublist in a_list:
+          flat += sublist
+      return flat
+ 
+ >>> def flatten_list(a_list):
+...     flat = []
+...     for sublist in a_list:
+...         for item in sublist:
+...             flat.append(item)
+...     return flat
+...
+
+>>> matrix = [
+...     [1, 2, 3],
+...     [4, 5, 6],
+...     [7, 8, 9],
+... ]    
+
+ matrix = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+ ]
+
+>>> flatten_list(matrix)
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 #### determine if a string has all unique characters:
 
