@@ -1,10 +1,36 @@
+
+#### determine if a string has all unique characters:
+
+Time: O(n)
+Space: Additional O(n)
+
+https://github.com/donnemartin/interactive-coding-challenges/blob/master/arrays_strings/unique_chars/unique_chars_solution.ipynb
+
+     def has_unique_chars(self, string):
+        if string is None:
+            return False
+        return len(set(string)) == len(string)
+
 """
+
+    def has_unique_chars(self, string):
+        if string is None:
+            return False
+        chars_set = set()
+        for char in string:
+            if char in chars_set:
+                return False
+            else:
+                chars_set.add(char)
+        return True
+
+
 https://github.com/alexhagiopol/cracking-the-coding-interview/blob/master/python_solutions/chapter_01_arrays_and_strings/problem_01_01_is_unique.py
 
 https://github.com/donnemartin/interactive-coding-challenges/blob/master/arrays_strings/permutation/permutation_solution.ipynb
 
-Problem Statement:
-Implement an algorithm to determine if a string has all unique characters.
+#### Implement an algorithm to determine if a string has all unique characters.
+------------------------------------------------------------------------------
 What if you cannot use additional data structures?
  
 Solution:
