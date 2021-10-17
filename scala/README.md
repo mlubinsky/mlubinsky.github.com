@@ -145,7 +145,11 @@ def functionName ([list of parameters]) : [return type] = {
 
 ### Seq has many subclasses including Queue, Range, List, Stack, and LinkedList.
 
-A Seq is an Iterable that has a defined order of elements. Sequences provide a method apply() for indexing, ranging from 0 up to the length of the sequence. Seq has many subclasses including Queue, Range, List, Stack, and LinkedList.
+A Seq is an Iterable that has a defined order of elements. 
+
+Sequences provide a method apply() for indexing, ranging from 0 up to the length of the sequence. 
+
+ 
 ```
 import scala.collection.immutable._  
 object MainObject{  
@@ -158,7 +162,10 @@ object MainObject{
 }
 ```
 
-A List is a Seq that is implemented as an immutable linked list. It's best used in cases with last-in first-out (LIFO) access patterns.
+### List 
+A List is a Seq that is implemented as an immutable linked list. 
+
+It's best used in cases with last-in first-out (LIFO) access patterns.
 ```
 import scala.collection.immutable._  
 object MainObject{  
@@ -171,14 +178,24 @@ object MainObject{
 }
 ```
 
+last element in the list:
+
+```
+import scala.collection.immutable._
+object HelloWorld {
+   def main(args: Array[String]) {
+      val temp_list: List[String] = List("Hello", "World", "SCALA", "is", "awesome")
+      println("Elements of temp_list: " + temp_list.last)
+   }
+}
+```
+
 ### Arrays
 
 ```
 var z = new Array[Int](5)
  
-
-We use Range() method to generate an array containing a sequence of increasing integers in a given range.
-
+use Range() method to generate an array containing a sequence of increasing integers in a given range.
 
 def range( start: Int, end: Int, step: Int ): Array[Int]
  
@@ -188,7 +205,7 @@ range (10, 20, 2)
 
 ### Multidimentional array ofDim
 
- 
+``` 
 import Array.ofDim
 var a=ofDim[Int](3,3)
 
@@ -206,6 +223,7 @@ a: Array[Array[Int]] = Array(Array(0, 0, 0), Array(0, 0, 0), Array(0, 0, 0))
     
 scala> a
 res12: Array[Array[Int]] = Array(Array(1, 2, 3), Array(4, 5, 6), Array(7, 8, 9)).
+```
 
 ###  Append data in a List and ListBuffer
 
@@ -280,18 +298,21 @@ val flatMap_array = array1d.flatMap(x => x.split(“,”))
 ```
 
 
-### Write a lambda function in Scala, using map operation, which takes a sequence of salaries as input and outputs double of every element from input.
+#### Write a lambda function  using map(), which takes a sequence of salaries as input and outputs double of every element from input.
 
+```
 val salaries = Seq(20000, 70000, 40000)
 val doubleSalary = (x : Int) => x*2
 val newSalary = salaries.map(doubleSalary)
+
 >List(40000, 140000, 80000)
 Or
 
 val salaries = Seq(20000, 70000, 40000)
 val newSalary = salaries.map(x => x*2)
-//List(40000, 140000, 80000)
 
+//List(40000, 140000, 80000)
+```
 
 
 ### Exception
@@ -443,7 +464,65 @@ Closure is considered as a Function whose return value is dependent upon the val
 
 val multiplier = (i:Int) => i * 10
 
-### Trait
+### Trait va AbstractClasses
+```
+No| Key                 |	Trait	                                        |     Abstract Class
+1	Multiple inheritance  | Trait supports multiple inheritance           | Abstract Class supports single inheritance only.
+2	Instance	            | Trait can be added to an object instance.	    | Abstract class cannot be added to an object instance.
+3	Constructor parameters|	Trait cannot have parameters in its constructors | Abstract class can have parameterised constructor.
+4	Interoperability	    | Traits are interoperable with java if they don't have any implementation.	| Abstract classes are interoperable with java without any restriction.
+5	Stackability	        |Traits are stackable and are dynamically bound . |Abstract classes are not stacable and are statically bound.
+```
+
+```
+trait SampleTrait {
+   // Abstract method
+   def test
+
+   // Non-Abstract method
+   def tutorials() {
+      println("Traits tutorials")
+   }
+}
+
+abstract class SampleAbstractClass {
+   // Abstract method
+   def test
+
+   // Non-abstract meythod
+   def tutorials() {
+      println("Abstract Class tutorial")
+   }
+}
+
+class Tester extends SampleAbstractClass {
+   def test() {
+      println("Welcome to Tutorialspoint")
+   }
+}
+
+class TraitTester extends SampleTrait {
+   def test() {
+      println("Welcome to Tutorialspoint")
+   }
+}
+
+object HelloWorld {
+   // Main method
+   def main(args: Array[String]) {
+      var obj = new Tester()
+      obj.tutorials()
+      obj.test()
+      var obj1 = new TraitTester()
+      obj1.tutorials()
+      obj1.test()
+   }
+}
+```
+
+Trait denotes a particular unit of Class that facilitates the use of multiple inheritances. 
+It encapsulates a method along with its variables and fields. While a Trait can extend only one Class, a Class can have multiple traits.
+Traits are primarily used for dependency injection. Contrary to Java where dependency injection is accomplished through annotations, Scala has no annotations or no special package that needs to be imported — you only need to initialize the Class with the Trait to trigger the dependency injection.
 
 A trait is a special kind of Class that enables the use of multiple inheritance. Although a trait can extend only one class, but a class can have multiple traits. However, unlike classes, traits cannot be instantiated.
 
@@ -457,6 +536,7 @@ A trait consists of method and field definition, by mixing them into classes it 
 
 If the behaviour will not be reused, then make it a concrete class. Anyhow it is not a reusable behaviour.
 In order to inherit from it in Java code, an abstract class can be used.
+
 If efficiency is a priority then lean towards using a class
 Make it a trait if it might be reused in multiple and unrelated classes. 
 In different parts of the class hierarchy only traits can be mixed into different parts.
@@ -496,7 +576,7 @@ Implicit class is a class marked with the “implicit” keyword. This feature w
 
 ### Explain the access Modifiers available in Scala
 
- There are mainly three access Modifiers available in Scala. Namely,
+ There are mainly three access Modifiers available in Scala: private, protected and public
 
 #### Private
 
@@ -659,28 +739,5 @@ var i = 0
 while (j < args.length) { 
     println(args(i)) 
     j++
-}
- ```
- 
- 
- ### Spark How will you determine whether a function causes a shuffle or not without the help of documentation?
-
-For any function, just create an RDD and call toDebugString, for example:
+} 
 ```
-scala> val a = sc.parallelize(Array(1,2,3)).distinct
-scala> a.toDebugString
-MappedRDD[5] at distinct at <console>:12 (1 partitions)
- MapPartitionsRDD[4] at distinct at <console>:12 (1 partitions)
-**ShuffledRDD[3] at distinct at <console>:12 (1 partitions)**
-  MapPartitionsRDD[2] at distinct at <console>:12 (1 partitions)
-    MappedRDD[1] at distinct at <console>:12 (1 partitions)
-       MappedRDD[1] at distinct at <console>:12 (1 partitions)
- 
- ```
-As you can see distinct creates a shuffle. It is also particularly important to find out this way rather than docs because there are situations where a shuffle will be required or not required for a certain function. For example, join usually requires a shuffle but if you join two RDDs that branch from the same RDD spark can sometimes elide the shuffle.
-
-
-
-###   Trait 
-Trait denotes a particular unit of Class that facilitates the use of multiple inheritances. It encapsulates a method along with its variables and fields. While a Trait can extend only one Class, a Class can have multiple traits.
-Traits are primarily used for dependency injection. Contrary to Java where dependency injection is accomplished through annotations, Scala has no annotations or no special package that needs to be imported — you only need to initialize the Class with the Trait to trigger the dependency injection.
