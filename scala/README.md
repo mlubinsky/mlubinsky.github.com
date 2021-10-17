@@ -6,6 +6,7 @@ https://alvinalexander.com/scala/fp-book/how-write-functions-take-function-input
 
 ### Examples of partition, sortBy, minBy, head, filter, case, collect, take, drop, split and map
 ```
+val xs=List(1,8,5,6,9,58,23,15,4) ;
 val (even, odd) = xs.partition(_ % 2 == 0)
 val minByAbs = xs.sortBy(Math.abs).head
 val minByAbs = xs.minBy(Math.abs) .  --- this is better
