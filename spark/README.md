@@ -31,6 +31,30 @@ NamedNode, SecondaryNamed Node,DataNode,JobTracker,TaskManager
 5 tasks per executor. Executor= 1 JVM.
 Task is 1 thread which process 1 partition
 
+### toDebug
+
+  How to  determine whether a function causes a shuffle or not without the help of documentation?
+For any function, just create an RDD and call toDebugString, for example:
+
+```
+ val a = sc.parallelize(Array(1,2,3)).distinct
+ a.toDebugString
+ 
+MappedRDD[5] at distinct at <console>:12 (1 partitions)
+ MapPartitionsRDD[4] at distinct at <console>:12 (1 partitions)
+**ShuffledRDD[3] at distinct at <console>:12 (1 partitions)**
+  MapPartitionsRDD[2] at distinct at <console>:12 (1 partitions)
+    MappedRDD[1] at distinct at <console>:12 (1 partitions)
+       MappedRDD[1] at distinct at <console>:12 (1 partitions)
+``` 
+As you can see distinct creates a shuffle. I
+t is also particularly important to find out this way rather than docs because 
+there are situations where a shuffle will be required or not required for a certain function. 
+
+For example, join usually requires a shuffle 
+but if you join two RDDs that branch from the same RDD spark can sometimes elide the shuffle.
+
+
 
 ### Spark Web UI
 
