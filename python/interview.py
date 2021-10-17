@@ -1,4 +1,13 @@
 https://www.tutorialspoint.com/questions/category/Python
+  
+#### sorted() vs list.sort() in place
+
+a=[3,4,2]
+sorted(a)
+[2, 3, 4]
+a.sort()
+a
+[2, 3, 4]
 
 #### 3 sum interview problem
 
