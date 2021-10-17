@@ -1,3 +1,5 @@
+https://www.tutorialspoint.com/questions/category/Python
+
 #### 3 sum interview problem
 
 https://www.tutorialspoint.com/3sum-in-python
