@@ -1,3 +1,51 @@
+#### 3 sum interview problem
+
+https://www.tutorialspoint.com/3sum-in-python
+
+There are there elements a, b, c in the array, such that a + b + c = 0. 
+Find all triplets.
+
+Sort the array nums, and define an array res
+for i in range 0 to length of nums – 3
+  if i > 0 and nums[i] = nums[i - 1], then skip the next part and continue
+  l := i + 1 and r := length of nums – 1
+          
+  while l < r
+    sum := sum of nums[i], nums[l] and nums[r]
+    if sum < 0, then l := l + 1, otherwise when sum > 0, then r := r – 1
+    otherwise insert nums[i], nums[l], nums[r] into the res array
+
+    while l < length of nums – 1 and nums[l] = nums[l + 1]
+       increase l by 1
+
+    while r > 0 and nums[r] = nums[r - 1]
+       decrease r by 1
+     
+    increase l by 1 and decrease r by 1
+
+     
+def threeSum( nums):
+      nums.sort()
+      result = []
+      for i in range(len(nums)-2):
+         if i> 0 and nums[i] == nums[i-1]:
+            continue
+         l = i+1
+         r = len(nums)-1
+         while(l<r):
+            sum = nums[i] + nums[l] + nums[r]
+            if sum<0:
+               l+=1
+            elif sum >0:
+               r-=1
+            else:
+               result.append([nums[i],nums[l],nums[r]])
+               while l<len(nums)-1 and nums[l] == nums[l + 1] : l += 1
+               while r>0 and nums[r] == nums[r - 1]: r -= 1
+               l+=1
+               r-=1
+      return result
+
 How many items   in a dictionary?
 
 d={'a':1, 'b':2}
