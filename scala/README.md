@@ -9,7 +9,10 @@ https://alvinalexander.com/scala/fp-book/how-write-functions-take-function-input
 val xs=List(1,8,5,6,9,58,23,15,4) ;
 val (even, odd) = xs.partition(_ % 2 == 0)
 val minByAbs = xs.sortBy(Math.abs).head
-val minByAbs = xs.minBy(Math.abs) .  --- this is better
+val minByAbs = xs.minBy(Math.abs)    <- this is better
+val maxByAbs = xs.sortBy(Math.abs).last
+
+
 val doublesOfPositive = xs.filter(_ > 0).map(2 * _)
 
 val doublesOfPositive = xs.collect {  -- . this is better
