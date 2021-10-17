@@ -2,6 +2,8 @@ https://www.tutorialspoint.com/questions/category/Python
 
 #### 3 sum interview problem
 
+https://medium.com/swlh/crack-leetcode-15-3sum-b0dfd80c3550
+  
 https://www.tutorialspoint.com/3sum-in-python
 
 There are there elements a, b, c in the array, such that a + b + c = 0. 
