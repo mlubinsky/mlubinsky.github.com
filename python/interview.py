@@ -1,3 +1,25 @@
+How many items   in a dictionary?
+
+d={'a':1, 'b':2}
+len(d)
+len(d.keys()
+sum(d.values())
+
+How many unique values are there in a list?
+
+len(set(mystr))
+
+#### frequency of every char in the string - use count():
+
+for c in set(mystring):
+     print (c, mystring.count(c))
+    
+####    frequency of every char in the list
+    use defaultdict or the following dictionary comprehention
+    
+counts = {value: things.count(value) for value in things}
+
+    
 
 #### determine if a string has all unique characters:
 
