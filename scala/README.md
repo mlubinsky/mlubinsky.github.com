@@ -8,14 +8,16 @@ https://alvinalexander.com/scala/fp-book/how-write-functions-take-function-input
 ```
 val xs=List(1,8,5,6,9,58,23,15,4) ;
 val (even, odd) = xs.partition(_ % 2 == 0)
-val minByAbs = xs.sortBy(Math.abs).head
-val minByAbs = xs.minBy(Math.abs)    <- this is better
-val maxByAbs = xs.sortBy(Math.abs).last
 
+val minByAbs1 = xs.sortBy(Math.abs).head
+val minByAbs2 = xs.minBy(Math.abs)    <- this is better because no need to sort
+
+val maxByAbs1 = xs.sortBy(Math.abs).last
+val maxByAbs2=xs.maxBy(Math.abs)   <- this is better because no need to sort
 
 val doublesOfPositive = xs.filter(_ > 0).map(2 * _)
 
-val doublesOfPositive = xs.collect {  -- . this is better
+val doublesOfPositive = xs.collect {  -- . this is better - why?
   case x if x > 0 => 
     2 * x
 }
