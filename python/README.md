@@ -6,12 +6,22 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
 
  python -m py_compile my.py   # Check file syntax
  
- python -m json.tool my_json.json   # json buetifier
+ python -m json.tool my_json.json   # json buatyfier
  
  
  https://sadh.life/post/builtins/
  
  ```
+ reverse string
+ s[::-1]
+ 
+ l='abcdaa'
+ set(l)
+ set(['a', 'c', 'b', 'd'])
+ 
+sorted(l)
+['a', 'a', 'a', 'b', 'c', 'd']
+ 
  l=['1','2','3']
  ' '.join(l)
 '1 2 3'
