@@ -15,6 +15,33 @@ https://docs.aws.amazon.com/redshift/latest/dg/r_COUNT.html  APPROXIMATE COUNT D
 
 Both Snowflake and Redshift Spectrum allow queries on ORC files as external files located in Amazon S3. However, Snowflake edged out Redshift Spectrum for its ability to also load and transform ORC data files directly into Snowflake.
 
+
+####   \d stl_load_errors
+
+```
+     Column      |            Type             | Modifiers
+-----------------+-----------------------------+-----------
+ userid          | integer                     |
+ slice           | integer                     |
+ tbl             | integer                     |
+ starttime       | timestamp without time zone |
+ session         | integer                     |
+ query           | integer                     |
+ filename        | character(256)              |
+ line_number     | bigint                      |
+ colname         | character(127)              |
+ type            | character(10)               |
+ col_length      | character(10)               |
+ position        | integer                     |
+ raw_line        | character(1024)             |
+ raw_field_value | character(1024)             |
+ err_code        | integer                     |
+ err_reason      | character(100)              |
+ is_partial      | integer                     |
+ start_offset    | bigint                      |
+ 
+ ```
+
 ## Dremio
 
 <https://www.dremio.com/>
