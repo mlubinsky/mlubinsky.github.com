@@ -3,6 +3,8 @@ https://livebook.manning.com/book/streaming-data/ Book (I bought it)
 https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-apache-spark/functional-programming-using-the-spark-shell?
 
 
+https://www.amazon.com/Guide-Spark-Partitioning-Explained-Depth/dp/B08L25WHJ4  Guide to Spark Partitioning
+
 https://databricks.com/p/webinar/databricks-on-aws-3-part-training-series Free training
 
 https://habr.com/ru/post/568276/ Databricks
@@ -512,6 +514,20 @@ https://www.youtube.com/watch?v=_Ne27JcLnEc
 ### Cost based optimizer
 
 https://www.youtube.com/watch?v=E26fK8kgXaU
+
+### Join types: 
+
+https://towardsdatascience.com/demystifying-joins-in-apache-spark-38589701a88e
+
+https://habr.com/ru/company/otus/blog/556722/
+```
+1. Перемешанный хеш (Shuffle Hash Join)
+2. Широковещательный хеш (Broadcast Hash Join)
+3. Сортировка через слияние (Sort Merge Join)
+4. Dекартов джойн (Cartesian Join)
+5. Широковещательный джойн вложенного цикла (Broadcast Nested Loop Join)
+```
+
 
 
 ### Join without shuffle
