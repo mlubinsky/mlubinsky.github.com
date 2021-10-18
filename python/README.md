@@ -26,10 +26,14 @@ sorted(l)
  ' '.join(l)
 '1 2 3'
 
-  first = [0,1,2]
-  second = [*a,3] # first is unchanged, second = [0,1,2,3]
+first = [0,1,2]
+second = [*a,3] # first is unchanged, second = [0,1,2,3]
+  
+ def dotProduct(listA,listB): 
+    return sum( [x*y] for x,y in zip(listA, listB)]
+    
  ```
- 
+ String fuctions
  ```
  s.find(pattern).  If a substring cannot be found, a -1 will be returned.
  
