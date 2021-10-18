@@ -64,6 +64,28 @@ https://github.com/thundergolfer/interview-with-python/blob/master/solutions/pyt
 
 https://ekamperi.github.io/programming/2021/04/14/longest-non-repeating-substring.html
  
+https://github.com/StBogdan/PythonWork/blob/master/Leetcode/3.py
+
+```
+def lengthOfLongestSubstring(s) :
+        if not s:
+            return 0
+
+        len_max = 1
+        elem_seen = set()
+        start = 0
+        for i, ltr in enumerate(s):
+            if ltr in elem_seen:
+                len_max = max(i - start, len_max)
+                while start < i and ltr in elem_seen:
+                    elem_seen.remove(s[start])
+                    start += 1
+            elem_seen.add(ltr)
+
+        len_max = max(len(s) - start, len_max)
+        return len_max
+```
+
 
 ```
 def longest(s):
@@ -210,6 +232,8 @@ https://github.com/BitPunchZ/Leetcode-in-python-50-Algorithms-Coding-Interview-Q
 
 
 https://github.com/StBogdan/CTCI_python Cracking code interview
+
+https://github.com/StBogdan/PythonWork
 
 <https://github.com/parineeth/tbboci-3rd-edition-python>
 
