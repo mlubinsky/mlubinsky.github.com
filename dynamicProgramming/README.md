@@ -177,6 +177,12 @@ if __name__ =="__main__":
  
 ### Coin exchange problem
 
+https://github.com/donnemartin/interactive-coding-challenges/tree/master/recursion_dynamic
+
+https://github.com/donnemartin/interactive-coding-challenges/tree/master/recursion_dynamic/coin_change_ways
+
+https://github.com/charulagrl/data-structures-and-algorithms/blob/master/algorithm-questions/dynamic_programming/coin_change.py
+
 Determine the total number of unique ways to make n cents, given coins of denominations less than n cents.
 Example:
 ```
@@ -224,6 +230,27 @@ Complexity:
 
 Time: O(i * j)
 Space: O(i * j)
+
+
+def coin_change_dynamic(coins, total):
+	'''Return the number of ways to to make the change using dynamic approach'''
+	result = [[0] * len(coins) for i in range(total+1)] 
+
+	for i in range(total+1):
+		for j, coin in enumerate(coins):
+			if not i:
+				result[i][j] = 1
+			else:
+				# When the coin is part of the solution
+				x = result[i-coin][j] if i - coin >= 0 else 0
+				# When coin is not part of the solution
+				y = result[i][j-1] if j >= 1 else 0
+				
+				# total count
+				result[i][j] = x + y
+
+	return result[total][len(coins)-1]
+
 ```
 #### Egg drop
 <https://habr.com/post/423679/>
