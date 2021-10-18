@@ -197,6 +197,8 @@ key2	yandex.com	 YANDEX 	{"website":"yandex.com","name":" YANDEX "}
 
 ### JSON processing: get_json _object and json_tuple()
 
+https://community.cloudera.com/t5/Support-Questions/Complex-Json-transformation-using-Hive-functions/td-p/236476
+
 #### json_tuple(string jsonStr,string k1,...,string kn)
 
 json_tuple takes JSON string and a set of n keys, and returns a tuple of n values. This is a more efficient version of the get_json_object UDF because it can get multiple keys with just one call.
