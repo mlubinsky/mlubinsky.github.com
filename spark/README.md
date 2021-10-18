@@ -42,6 +42,7 @@ https://habr.com/ru/company/otus/blog/540396/
 
 https://habr.com/ru/company/otus/blog/541426/
 
+https://www.unraveldata.com/resources/troubleshooting-apache-spark/
 
 spark.executor.memory или spark.driver.memory
 spark.yarn.executor.memoryOverhead
