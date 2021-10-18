@@ -64,6 +64,11 @@ https://sparkbyexamples.com/spark/spark-web-ui-understanding/
 
 https://sparkbyexamples.com/spark/spark-adaptive-query-execution/
 
+
+### Structured Streaming
+
+https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html
+
 ### SparkSQL
  
  https://spark.apache.org/docs/latest/sql-programming-guide.html
