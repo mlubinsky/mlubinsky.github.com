@@ -224,6 +224,8 @@ select A.people, B.state, count(*) from A join B on A.state_id=B.state_id group 
 Since there are only 50 states we cannot achieve better parallelism by adding  > 50  cores
 also since California is the biggest state the data is skewed - use broadcast join
 
+
+https://habr.com/ru/company/vk/blog/442688/
 ```
 val train = sqlContext.read.parquet("/events/hackatons/SNAHackathon/2019/collabTrain")
 
