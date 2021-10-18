@@ -9,7 +9,7 @@ a.sort()
 a
 [2, 3, 4]
 
-#### 3 sum interview problem
+#### 3 sum problem
 
 https://www.geeksforgeeks.org/find-a-triplet-that-sum-to-a-given-value/
   
@@ -61,6 +61,33 @@ def threeSum( nums):
                r-=1
       return result
 
+    
+####  find three elements whose sum is closest to give value.    
+
+```
+import sys
+def threeSumClosest(A, B):
+    i , n = 0 , len(A)
+    A = sorted(A)
+    diff = sys.maxint
+    close_sum = 0
+    while i <= n-3:
+        j , k = i+1 , n-1
+        sum = A[i] + A[j] + A[k]
+        if sum == B:
+            return sum
+        if diff > abs(sum - B):
+            diff += abs(sum-B)
+            close_sum = sum
+        if sum < B:
+            j += 1
+        else:
+            k -= 1
+        i += 1
+    return close_sum
+print threeSumClosest([-1, 2, 1, -4], 1)
+```
+    
 How many items   in a dictionary?
 
 d={'a':1, 'b':2}
@@ -76,6 +103,22 @@ len(set(mystr))
 
 for c in set(mystring):
      print (c, mystring.count(c))
+    
+    
+from collections import Counter
+
+def count_characters_one( string ):
+    """ Counts with a for loop and a dict. """
+    d = {}
+    for s in string:
+        d[s] = d.get(s,0)+1
+    return d
+
+def count_characters_two( string ):
+    """ Counts using collections.Count """
+    counter = Counter(string)
+    return counter    
+    
     
 ####    frequency of every char in the list
     use defaultdict or the following dictionary comprehention
