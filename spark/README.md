@@ -5,6 +5,8 @@ https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-a
 
 https://databricks.com/p/webinar/databricks-on-aws-3-part-training-series Free training
 
+https://habr.com/ru/post/568276/ Databricks
+
 Code for the Spark in Action Book: https://github.com/databricks/LearningSparkV2
 
 There are 8 workers and both the workers and driver are m4.xlarge instances (16.0 GB, 4 Cores).
@@ -58,6 +60,8 @@ but if you join two RDDs that branch from the same RDD spark can sometimes elide
 
 ### Spark Web UI
 
+http://spark.apache.org/docs/latest/web-ui.html
+
 https://sparkbyexamples.com/spark/spark-web-ui-understanding/
 
 ### Adaptive query execution Spark 3.0
@@ -67,8 +71,76 @@ https://sparkbyexamples.com/spark/spark-adaptive-query-execution/
 
 ### Structured Streaming
 
+https://habr.com/ru/company/otus/blog/557812/
+
+```
+val sparkConf = new SparkConf().setAppName("DirectKafkaWordCount")
+val ssc = new StreamingContext(sparkConf, Seconds(2))
+
+// Create direct kafka stream with brokers and topics
+val topicsSet = topics.split(",").toSet
+val kafkaParams = Map[String, Object](
+  ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG -> brokers,
+  ConsumerConfig.GROUP_ID_CONFIG -> groupId,
+  ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG -> classOf[StringDeserializer],
+  ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG -> classOf[StringDeserializer])
+val messages = KafkaUtils.createDirectStream[String, String](
+  ssc,
+  LocationStrategies.PreferConsistent,
+  ConsumerStrategies.Subscribe[String, String]
+  (topicsSet, kafkaParams))
+
+// Get the lines, split them into words, count the words and print
+val lines = messages.map(_.value)
+val words = lines.flatMap(_.split(" "))
+val wordCounts = words.map(x => (x, 1L)).reduceByKey(_ + _)
+wordCounts.print()
+
+// Start the computation
+ssc.start()
+ssc.awaitTermination()
+```
+
 https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html
 
+https://habr.com/ru/company/rambler_and_co/blog/569932/
+
+```
+В потоковом пайплайне важно понимать разделение операций на stateless и stateful.
+
+инструменты Spark Structured Streaming для stateful-операций. Рассмотрим здесь три из них:
+
+1. Event time - время, в которое событие произошло. 
+2. Watermark;
+3. окно в join condition
+
+Watermark – это то время, после которого все события потока должны храниться в стейте и которое обновляется в конце обработки каждого микробатча. Watermark позволяет ограничить количество хранимых событий.
+
+Вычисляется Watermark так:
+a) берём максимальное (минимальное или среднее, есть вариации) время события в стейте (Event time);
+b) вычитаем watermarkDelay – некоторое значение типа timedelta, которое мы задали в коде.
+Теперь стейт не будет разрастаться, потому что старые события будут удаляться автоматически.
+
+Kafka timestamp очень ненадёжный: в половине случаев приходил нулевой Event time
+
+мы хотим установить правило: все интересующие нас события на клиенте происходят в течение N минут после ответа сервиса. Чтобы поиск шёл не по всему стейту, а только по определённому временному окну вокруг события, достаточно указать ограничения на Event time обоих потоков относительно друг друга в условии джойна.
+
+Так будет выглядеть условие для простого джойна:
+
+s1 = input_stream1.alias("s1")
+s2 = input_stream2.alias("s2")
+
+s1.join(
+s2, on="""
+s1.word=s2.word
+and s1.event_time <= s2.event_time + interval '5 seconds'
+and s1.event_time >= s2.event_time - interval '30 seconds'
+""")
+
+ Классический вариант решения проблемы скоса – добавить в NULL-ключи соль для более равномерного распределения – оказался не лучшим вариантом. 
+ Мы нашли более эффективный способ: выделили все события с NULL-ключами в отдельный поток и стали писать его в базу без джойна.
+
+```
 ### SparkSQL
  
  https://spark.apache.org/docs/latest/sql-programming-guide.html
