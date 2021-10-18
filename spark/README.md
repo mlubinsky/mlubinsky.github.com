@@ -812,8 +812,21 @@ https://pub.towardsai.net/how-you-should-save-the-output-of-your-spark-etl-jobs-
 
 https://pub.towardsai.net/a-practical-tip-when-working-with-random-samples-on-spark-23f6dbbe722b 
 
+```
 rdd.toDebugString
 rdd.selectExpr("count(DISTINCT y ) AS uniq_x")
+
+
+spark.range(1000).filter("id > 100").selectExpr("sum(id)").explain()
+
+== Physical Plan ==
+*Aggregate(functions=[sum(id#201L)])
++- Exchange SinglePartition, None
+   +- *Aggregate(functions=[sum(id#201L)])
+      +- *Filter (id#201L > 100)
+         +- *Range 0, 1, 3, 1000, [id#201L]
+
+```
 
 Stage
 https://towardsdatascience.com/unraveling-the-staged-execution-in-apache-spark-eff98c4cdac9
