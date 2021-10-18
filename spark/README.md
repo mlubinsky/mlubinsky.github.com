@@ -13,7 +13,17 @@ https://habr.com/ru/post/568276/ Databricks
 
 Code for the Spark in Action Book: https://github.com/databricks/LearningSparkV2
 
-There are 8 workers and both the workers and driver are m4.xlarge instances (16.0 GB, 4 Cores).
+There are 8 workers and both the workers and driver are 
+
+https://aws.amazon.com/ec2/pricing/on-demand/
+https://habr.com/ru/company/otus/blog/529100/
+```
+m4.xlarge  instance:  16.0 GB, 4 Cores
+r5.4xlarge instance:  128GB 16 cores
+```
+
+--executor-cores 5
+
 
 https://www.youtube.com/watch?v=G4D4iY_hZQ0&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg
 
