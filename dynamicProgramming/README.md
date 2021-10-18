@@ -108,9 +108,56 @@ if __name__ =="__main__":
     print(countPaths(n, m)) 
 ```   
  
+### Coin exchange problem
 
+Determine the total number of unique ways to make n cents, given coins of denominations less than n cents.
+Example:
+```
+coins: [1, 2, 3], 
+target= 5 -> 5
+number of unique ways = 5
 
+1+1+1+2=5
+1+1+3=5
+1+2+2=5
+2+2+1=5
+3+2=5
+```
 
+We'll use a bottom-up dynamic programming approach.
+
+The rows (i) represent the coin values.
+The columns (j) represent the totals.
+```
+  -------------------------
+  | 0 | 1 | 2 | 3 | 4 | 5 |
+  -------------------------
+0 | 1 | 0 | 0 | 0 | 0 | 0 |
+1 | 1 | 1 | 1 | 1 | 1 | 1 |
+2 | 1 | 1 | 2 | 2 | 3 | 3 |
+3 | 1 | 1 | 2 | 3 | 4 | 5 |
+  -------------------------
+
+Number of ways to get total n with coin[n] equals:
+* Number of ways to get total n with coin[n - 1] plus
+* Number of ways to get total n - coin[n]
+
+if j == 0:
+    T[i][j] = 1
+if row == 0:
+    T[i][j] = 0
+if coins[i] >= j
+    T[i][j] = T[i - 1][j] + T[i][j - coins[i]]
+else:
+    T[i][j] = T[i - 1][j]
+
+The answer will be in the bottom right corner of the matrix.
+
+Complexity:
+
+Time: O(i * j)
+Space: O(i * j)
+```
 #### Egg drop
 <https://habr.com/post/423679/>
 
