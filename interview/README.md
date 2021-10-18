@@ -60,7 +60,11 @@ https://github.com/thundergolfer/interview-with-python/blob/master/solutions/pyt
 ...
 
 
-#### Longest substr without repeating char
+#### Longest substr without repeating char O(n) complexity
+
+https://ekamperi.github.io/programming/2021/04/14/longest-non-repeating-substring.html
+ 
+
 ```
 def longest(s):
     m={}
@@ -203,7 +207,7 @@ https://github.com/lilianweng/LeetcodePython
 
 https://github.com/BitPunchZ/Leetcode-in-python-50-Algorithms-Coding-Interview-Questions/
 
-https://ekamperi.github.io/programming/2021/04/14/longest-non-repeating-substring.html
+
 
 https://github.com/StBogdan/CTCI_python Cracking code interview
 
@@ -226,7 +230,7 @@ https://github.com/labuladong/fucking-algorithm/tree/english. Leetcode guide
 
 
 
-## Merging 2 sorted arrays
+### Merging 2 sorted arrays
 into 1st array where 1st array has the capacity for both
 ```
 private void merge(int[] a, int n, int[] b, int m) {
@@ -241,12 +245,12 @@ private void merge(int[] a, int n, int[] b, int m) {
 			a[k--] = b[j--];
 	}
 }
+```
 
-
-# Python program to determine if two trees are identical 
+###   determine if two trees are identical 
   
-# A binary tree node has data, pointer to left child 
-# and a pointer to right child 
+  binary tree node has data, pointer to left child and a pointer to right child 
+```  
 class Node: 
     # Constructor to create a new node 
     def __init__(self, data): 
@@ -254,9 +258,6 @@ class Node:
         self.left = None
         self.right = None
       
-  
-# Given two trees, return true if they are structurally 
-# identical 
 def identicalTrees(a, b): 
       
     # 1. Both empty 
