@@ -22,9 +22,17 @@ https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-intervie
 
 #### All elements in array are present twice, but 1 element is unique - find it
 
+```
 return 2*sum(set(arr)) - sum(arr)
+```
+
+#### All permutation of the string
+
+https://github.com/thundergolfer/interview-with-python/blob/master/solutions/python/string-permutations.py
 
 #### Given strings S and T find the min window in S which contains all chars in T
+
+...
 
 
 #### Longest substr without repeating char
