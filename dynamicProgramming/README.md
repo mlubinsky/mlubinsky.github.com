@@ -62,6 +62,28 @@ def maximum_sum_dynamic(arr):
 	return max(soln)
  ``` 
 
+#### Cat the rod
+
+https://github.com/charulagrl/data-structures-and-algorithms/blob/master/algorithm-questions/dynamic_programming/cutting_a_rod.py
+
+Given a rod of length n   and an array of prices that contains prices of all pieces of size smaller than n.
+
+Determine the maximum value obtainable by cutting up the rod and selling the pieces.
+```
+def cutting_a_rod_dynamic(values, length):
+	
+	soln = [0] * (length+1)
+
+	for i in range(1, length+1):
+		soln[i] = -sys.maxint
+		for j in range(i):
+			res = soln[i-j-1] + values[j]
+			if res > soln[i]:
+				soln[i] = res
+
+	return soln[length]
+```
+
 ####    Min Cost Path on grid 
 
 ```  
