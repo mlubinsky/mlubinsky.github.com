@@ -82,6 +82,43 @@ def maxSum(arr, window):
    return max_sum   
 ```
 
+#### Max sum array of any length
+
+  Time complexity: O(n*n)
+```  
+def maximum_sum_dynamic(arr):
+	'''Calculating maximum sum increasing subsequence using dynamic programming'''
+	soln = [-sys.maxint] * len(arr)
+
+	for i in range(len(arr)):
+		soln[i] = arr[i]
+
+	for i in range(1, len(arr)):
+		for j in range(i):
+			if arr[j] < arr[i] and soln[j] + arr[i] > soln[i]:
+				soln[i] = soln[j] + arr[i]
+
+
+	return max(soln)
+```
+
+#### Longest increasing subsequence
+
+```
+# Time Complexity: O(n * n)
+def longest_increasing_subsequence_dynamic(array, length):
+	'''Using dynamic programming to find the length of longest increasing subsequence'''
+	lis = [1] * length
+
+	for i in range(1, length):
+		for j in range(i):
+			if (array[j] < array[i] and lis[i] < lis[j] + 1):
+				lis[i] = lis[j] + 1
+	
+	return max(lis)
+```	
+	
+
 ### Github
 
 https://github.com/lilianweng/LeetcodePython
