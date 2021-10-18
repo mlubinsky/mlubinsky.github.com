@@ -283,6 +283,12 @@ def coin_change_dynamic(coins, total):
 	return result[total][len(coins)-1]
 
 ```
+
+#### best-time-to-buy-and-sell-stock 
+
+https://github.com/StBogdan/PythonWork/blob/master/Leetcode/188.py
+
+
 #### Egg drop
 <https://habr.com/post/423679/>
 
