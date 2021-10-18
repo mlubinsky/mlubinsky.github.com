@@ -28,10 +28,20 @@ sorted(l)
 
 first = [0,1,2]
 second = [*a,3] # first is unchanged, second = [0,1,2,3]
-  
+```
+dot poroduct:
+```
  def dotProduct(listA,listB): 
     return sum( [x*y] for x,y in zip(listA, listB)]
     
+ if vectors are sparse there is optimized solution:
+ 
+    def dotProduct(vec1, vec2) :
+        sparse_nums= {i: n for i, n in enumerate(nums) if n != 0}
+        result = 0
+        for i, n in sparce_nums.items():
+            result += n * vec2.nums.get(i, 0)
+        return result
  ```
  String fuctions
  ```
