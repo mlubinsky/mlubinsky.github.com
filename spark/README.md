@@ -46,6 +46,7 @@ https://habr.com/ru/company/otus/blog/541426/
 
 https://www.unraveldata.com/resources/troubleshooting-apache-spark/
 
+```
 spark.executor.memory или spark.driver.memory
 spark.yarn.executor.memoryOverhead
 
@@ -68,6 +69,9 @@ sparkContext.broadcast
 
 Неправильная настройка Spark.sql.autoBroadcastJoinThreshold - try to reduce it
 
+Код, написанный с помощью Spark SQL⁵, выполняется не так, как код, написанный с использованием RDD. Когда запускается действие, Spark генерирует код, который сворачивает несколько трансформаций данных в одну функцию. Этот процесс называется формированием кода всего этапа (Whole-Stage Code Generation)⁶. Spark пытается воспроизвести процесс написания специального кода для конкретной задачи, в котором не используются вызовы виртуальных функций. 
+
+```
 
 ### toDebug
 
