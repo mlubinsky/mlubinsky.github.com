@@ -12,7 +12,7 @@ https://hiringfor.tech/2020/10/26/my-resources-for-dynamic-programming.html
 
 <https://medium.freecodecamp.org/unmasking-bitmasked-dynamic-programming-25669312b77b>
 
-
+https://github.com/charulagrl/data-structures-and-algorithms/tree/master/algorithm-questions/dynamic_programming
 
 <https://habr.com/post/418867/> 
 
