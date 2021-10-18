@@ -309,6 +309,7 @@ The mode is the number that is repeated more often than any other, so 13 is the 
 
 https://www.youtube.com/watch?v=HIlfO1pGo0w
 
+```
 Solutions:
 
 1. Repartitions. spark.sql.shuffle.partitions
@@ -316,6 +317,33 @@ Solutions:
 3. Isolated sulting
 4. Isolated Map join
 5. Iterative broadcust Join
+```
+
+add salt to join key
+
+https://habr.com/ru/company/otus/blog/541426/
+
+```
+val salted_fact_df = spark.sql
+( 
+"select " + 
+"concan(key,'_', FLOOR(RAND(123456)*19))" 
++ as SALTED_KEY, val FROM original_fact_table"
+)
+salted_fact_df.createOrReplaceGlobalTempView(fat_table_salted)
+
+```
+
+### Off heap 
+```
+ Spark могут хранить информацию вне кучи (off-heap). Вы можете включить off-heap накопитель, используя команды
+
+-conf spark.memory.offHeap.enabled = true
+
+-conf spark.memory.offHeap.size = Xgb.
+Будьте осторожны при использовании хранилища вне кучи (off-heap), т.к. это не повлияет на размер памяти самой кучи (on-heap), т.е. не уменьшает ее объем. Поэтому, чтобы определить общий лимит памяти, задайте меньший размер кучи.
+```
+
 
 
 ### Pair RDD
