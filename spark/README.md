@@ -472,9 +472,18 @@ https://www.youtube.com/watch?v=isOuTH_49pY
 #### sort join is the default strategy
 
 ```
-step 1 - shuffle shuffle phase: data in both tables are re-partitioned by the  join key so they can be colocated
+step 1 - shuffle  phase: data in both tables are re-partitioned by the  join key so they can be colocated
 step 2 - sort phase data sorted within each partition parallely
 step 3 - merge phase: join 2 sorted and partitioned data
+
+если  размер достаточно большой, то будет выбран SortMergeJoin. 
+Чтобы выполнить этот вид соединения, Spark должен сделать так, чтобы одинаковые ключи из основного набора данных и из дельты расположились совместно (в партициях RDD с одинаковыми индексами) и были отсортированы в пределах партиций. 
+Записи можно только перераспределить и отсортировать заново, затратив на это время и ресурсы. 
+
+Производится Shuffle: записи каждого набора перемешиваются по значению хешей. 
+Перемешивание устраняет любую сортировку, которая сохранилась при чтении, теперь порядок записей никак не зависит от первоначального.
+
+SortMergeJoin делает своё дело, полученный набор данных сохраняет тот же порядок записей, что был после Shuffle и локальной сортировки.
 
 ```
 #### broadcast join (spark.sql.autoBroadcastJoinThreshold=10485760  = 10MB by default)
