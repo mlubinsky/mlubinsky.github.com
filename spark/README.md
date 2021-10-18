@@ -35,6 +35,37 @@ NamedNode, SecondaryNamed Node,DataNode,JobTracker,TaskManager
 5 tasks per executor. Executor= 1 JVM.
 Task is 1 thread which process 1 partition
 
+
+### Spark config for performance
+
+https://habr.com/ru/company/otus/blog/540396/
+
+https://habr.com/ru/company/otus/blog/541426/
+
+
+spark.executor.memory или spark.driver.memory
+spark.yarn.executor.memoryOverhead
+
+"spark.memory.fraction". По умолчанию — 60%. Из них по умолчанию 50% (настраивается параметром "spark.memory.storageFraction"
+
+Для файлов HDFS каждая задача Spark будет считывать блок данных размером 128 МБ. Таким образом, если выполняется 10 параллельных задач, то потребность в памяти составляет не менее 128*10 только для хранения разбитых на разделы данных. 
+
+Если это этап reduce-stage (стадия Shuffle), то для определения количества задач Spark будет использовать либо настройку "spark.default.parallelism" для RDD (Resilient Distributed Dataset),
+либо "spark.sql.shuffle.partitions" для DataSet (набор данных). 
+Сколько задач будет выполняться параллельно каждой управляющей программе, будет зависеть от свойства "spark.executor.cores". 
+Если это значение установить больше без учета памяти, то программы могут отказать  и привести к ситуации OOM (недостаточно памяти)
+
+OutOfMemory may be beause of driver settings:
+
+rdd.collect()
+
+sparkContext.broadcast 
+
+Низкий уровень памяти драйвера, настроенный в соответствии с требованиями приложения
+
+Неправильная настройка Spark.sql.autoBroadcastJoinThreshold - try to reduce it
+
+
 ### toDebug
 
   How to  determine whether a function causes a shuffle or not without the help of documentation?
