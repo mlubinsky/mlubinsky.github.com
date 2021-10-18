@@ -168,6 +168,10 @@ https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html
 
 https://habr.com/ru/company/rambler_and_co/blog/569932/
 
+
+
+### Spark Streaming
+https://habr.com/ru/post/451160/
 ```
 В потоковом пайплайне важно понимать разделение операций на stateless и stateful.
 
@@ -204,7 +208,14 @@ and s1.event_time >= s2.event_time - interval '30 seconds'
  Мы нашли более эффективный способ: выделили все события с NULL-ключами в отдельный поток и стали писать его в базу без джойна.
 
 ```
+
+
+
+
+
 ### SparkSQL
+
+https://habr.com/ru/company/alfastrah/blog/481924/
  
  https://spark.apache.org/docs/latest/sql-programming-guide.html
  
