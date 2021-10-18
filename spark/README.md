@@ -224,7 +224,31 @@ select A.people, B.state, count(*) from A join B on A.state_id=B.state_id group 
 Since there are only 50 states we cannot achieve better parallelism by adding  > 50  cores
 also since California is the biggest state the data is skewed - use broadcast join
 
-#### use EXPLAIN 
+```
+val train = sqlContext.read.parquet("/events/hackatons/SNAHackathon/2019/collabTrain")
+
+z.show(train.groupBy($"date").agg(
+        functions.count($"instanceId_userId").as("count"),
+        functions.countDistinct($"instanceId_userId").as("users"),
+        functions.countDistinct($"instanceId_objectId").as("objects"),
+        functions.countDistinct($"metadata_ownerId").as("owners"))
+      .orderBy("date"))
+      
+      or like this:
+     
+val train = sqlContext.read.parquet("/events/hackatons/SNAHackathon/2019/collabTrain")
+
+z.show(
+   train groupBy $"date" agg(
+        count($"instanceId_userId") as "count",
+        countDistinct($"instanceId_userId") as "users",
+        countDistinct($"instanceId_objectId") as "objects",
+        countDistinct($"metadata_ownerId") as "owners")
+   orderBy "date"
+)
+      
+```
+ 
 #### SQL hints
 https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql-hint-framework.html
 
