@@ -118,6 +118,8 @@ but if you join two RDDs that branch from the same RDD spark can sometimes elide
 
 ### Spark Web UI
 
+https://habr.com/ru/company/otus/blog/526892/
+
 http://spark.apache.org/docs/latest/web-ui.html
 
 https://sparkbyexamples.com/spark/spark-web-ui-understanding/
