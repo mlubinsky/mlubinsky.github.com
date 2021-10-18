@@ -22,8 +22,13 @@ m4.xlarge  instance:  16.0 GB, 4 Cores
 r5.4xlarge instance:  128GB 16 cores
 ```
 
+```
 --executor-cores 5
-
+--executor-memory 34G
+--num-executors (3x - 1)
+--driver-memory 34G
+--driver-cores 5
+```
 
 https://www.youtube.com/watch?v=G4D4iY_hZQ0&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg
 
