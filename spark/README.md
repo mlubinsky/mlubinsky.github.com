@@ -64,6 +64,9 @@ https://habr.com/ru/company/otus/blog/541426/
 
 https://www.unraveldata.com/resources/troubleshooting-apache-spark/
 
+
+https://medium.com/swlh/insights-into-parquet-storage-ac7e46b94ffe
+
 ```
 spark.executor.memory или spark.driver.memory
 spark.yarn.executor.memoryOverhead
