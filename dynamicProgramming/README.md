@@ -42,15 +42,34 @@ https://github.com/charulagrl/data-structures-and-algorithms/tree/master/algorit
 
 <https://lukasmericle.github.io/dynprotut/
 
-####   Python implementation of Min Cost Path on grid problem 
+
+####  Maximum Sum Increasing subsequence
+
+```
+def maximum_sum_dynamic(arr):
+	'''Calculating maximum sum increasing subsequence using dynamic programming'''
+	soln = [-sys.maxint] * len(arr)
+
+	for i in range(len(arr)):
+		soln[i] = arr[i]
+
+	for i in range(1, len(arr)):
+		for j in range(i):
+			if arr[j] < arr[i] and soln[j] + arr[i] > soln[i]:
+				soln[i] = soln[j] + arr[i]
+
+
+	return max(soln)
+ ``` 
+
+####    Min Cost Path on grid 
 
 ```  
 def minCost(cost, m, n): 
   
     # Instead of following line, we can use int tc[m+1][n+1] or 
-    # dynamically allocate memoery to save space. The following 
-    # line is used to keep te program simple and make it working 
-    # on all compilers. 
+    # dynamically allocate memory to save space.  
+    
     R = 3
     C = 3
     tc = [[0 for x in range(C)] for x in range(R)] 
@@ -81,7 +100,33 @@ def minCost(cost, m, n):
 ```
 
 
+### Min cost path - another version
+
+https://github.com/charulagrl/data-structures-and-algorithms/blob/master/algorithm-questions/dynamic_programming/min_cost_path.py
+
+  Time-complexity: O(m*n) where m, n are dimensions of the matrix
+
+```
+import sys
+def min_cost_dynamic(cell):
+	 
+	m = len(cell)
+	n = len(cell[0])
+
+	for i in range(m):
+		for j in range(n):
+			if i > 0 or j > 0:
+				min_left = cell[i-1][j] if i-1 >=0 else sys.maxint
+				min_top = cell[i][j-1] if j-1 >=0 else sys.maxint
+				min_diagonal = cell[i-1][j-1] if j-1 >=0 and i-1 >=0 else sys.maxint
+
+				cell[i][j] += min(min_left, min_top, min_diagonal)
+
+	return cell[m-1][n-1]
+```
+
 ### Count number of ways to reach   mat[m-1][n-1] from mat[0][0]   in a matrix mat[][] 
+
  Return    number of way from top-left to mat[m-1][n-1] 
 ``` 
 def countPaths(m, n): 
