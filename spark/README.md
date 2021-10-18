@@ -38,6 +38,9 @@ NamedNode, SecondaryNamed Node,DataNode,JobTracker,TaskManager
 Task is 1 thread which process 1 partition
 
 
+https://medium.com/expedia-group-tech/part-3-efficient-executor-configuration-for-apache-spark-b4602929262
+
+
 ### Spark config for performance
 
 https://habr.com/ru/company/otus/blog/540396/
@@ -73,7 +76,7 @@ sparkContext.broadcast
 
 ```
 
-### toDebug
+### toDebug and explain()
 
   How to  determine whether a function causes a shuffle or not without the help of documentation?
 For any function, just create an RDD and call toDebugString, for example:
