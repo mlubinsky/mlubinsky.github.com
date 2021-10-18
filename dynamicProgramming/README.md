@@ -85,7 +85,38 @@ def cutting_a_rod_dynamic(values, length):
 ```
 
 ####    Min Cost Path on grid 
+https://github.com/StBogdan/PythonWork/blob/master/Leetcode/64.py
 
+```
+def minPathSum(self, grid: List[List[int]]) -> int:
+        rows = len(grid)
+        cols = len(grid[0])
+
+        sm = [[0] * cols for _ in range(rows)]
+        # print(sm)
+
+        ts = 0
+        for col in range(cols):
+            ts += grid[0][col]
+            sm[0][col] = ts
+
+        ts = 0
+        for row in range(rows):
+            ts += grid[row][0]
+            sm[row][0] = ts
+
+        for row in range(1, rows):
+            for col in range(1, cols):
+                to_get_here = min(sm[row - 1][col], sm[row][col - 1])
+                sm[row][col] = to_get_here + grid[row][col]
+
+        # for row in sm:
+        #     print(row)
+        return sm[rows - 1][cols - 1]
+```
+
+
+another solution
 ```  
 def minCost(cost, m, n): 
   
