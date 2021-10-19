@@ -1,5 +1,7 @@
 Ветераны броуновского движения - Вступайте в ряды Фурье!
 
+https://amathr.org/software/
+
 https://grinfeld.org/books/An-Introduction-To-Tensor-Calculus/
 
 https://kconrad.math.uconn.edu/blurbs/analysis/gaussianintegral.pdf
