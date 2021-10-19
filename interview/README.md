@@ -2,79 +2,50 @@ https://towardsdatascience.com/how-i-doubled-my-salary-in-4-months-e8c5b2b9f5bc
 
 
 ```
-  Section		Score	Total
-  Inspect			
+Section		Score	Total
+
+Inspect			
  
 Did I explicilty state what the input was?		1
- 
 Did I clarify what the desired output was?		1
- 
 Did I construct a simple example that could be solved by hand?		2
- 
 Did I write out all Axioms?		1
- 
 Did I write out and derive all intelligent assumptions?		1
  
 Strategy			
  
 Did I brainstorm a simple solution?		2
- 
 Did I analyze the runtime?		2
- 
 Did I analyze the space requirement?		1
- 
 Did I ask if the input problem set would be small enough for this to suffice?
-1
-13
 Was I able to come up with a better more sophisticated solution?		4
-14
 Did I analyze the time complexity of this solution?		2
-15
 Did I analyze the space complexity of this solution?		2
-16
 Did I compare it directly to my initial simple solution?		1
-17
 Was I confident when I started coding?		4
-18
 Did I think through all approaches that come to mind?		5
-19
 Did I explicitly write out my desired strategy?		4
-20
 Did I explicitly consider base cases?		2
-21
 How well did I handle getting stuck?		5
-22
-Code			
-23
-How cleanly was my code written?		2
-24
-Did I explicitly check for any off-by-one errors?		2
-25
-Was I able to predict what funtions I would end up implementing ?		1
-26
-Did my brainstormed strategy solve the problem?		3
-27
-How smooth was the coding process?		2
-28
-Was I able to talk through my code?		5
-29
-Did I leverage any interesting functions in my code?		2
-30
-Review			
-31
-Did I prove my runtime complexity?		2
-32
-Did I prove my spacetime complexity?		2
-33
-Did I write up different test cases and process them?		6
-34
-Did I go line by line, no matter how trivial?		2
-35
-DId I have to make any changes when reviewing my code?		2
-36
-0	72
-37
 
+Code	
+
+How cleanly was my code written?		2
+Did I explicitly check for any off-by-one errors?		2
+Was I able to predict what funtions I would end up implementing ?		1
+Did my brainstormed strategy solve the problem?		3
+How smooth was the coding process?		2
+Was I able to talk through my code?		5
+Did I leverage any interesting functions in my code?		2
+
+Review			
+
+Did I prove my runtime complexity?		2
+Did I prove my spacetime complexity?		2
+Did I write up different test cases and process them?		6
+Did I go line by line, no matter how trivial?		2
+DId I have to make any changes when reviewing my code?		2
+ 
 ```
 How to use this rubric: https://3dtrends.substack.com/p/the-coding-interview-pt-1-inspect
 
