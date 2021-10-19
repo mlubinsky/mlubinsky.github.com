@@ -131,11 +131,12 @@ https://towardsdatascience.com/python-pandas-data-pipelines-515bcc678570
 
 
 ### Defaultdict
+```
 from collections import defaultdict
 
 dict_of_list = defaultdict(list)
 dict_of_list[key].append(element)
-
+```
 
 
 ```
