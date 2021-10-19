@@ -71,8 +71,12 @@ https://www.youtube.com/watch?v=w6Pw4MOzMuo
 
 https://news.ycombinator.com/item?id=27577467  ML beyound curve fitting
 
+#### WAX-ML
+
 https://arxiv.org/pdf/2106.06524.pdf WAX-ML: A Python library for machine learning and feedback
 loops on streaming data
+
+https://wax-ml.readthedocs.io/en/latest/
 
 ### ROC
 
