@@ -271,6 +271,26 @@ def longest_increasing_subsequence_dynamic(array, length):
 	return max(lis)
 ```	
 
+#### find the continuous subarray  which has the largest sum and return its sum.
+ 
+```
+input=[-2,1,-3,4,-1,2,1,-5,4]
+
+def array_num(input):
+    max_so_far=input[0]
+    sum=0
+    for index in range(1,len(input)):
+        if input[index]>max_so_far:
+            sum=input[index]
+        else:
+            sum+=input[index]
+        if sum>max_so_far:
+            max_so_far=sum
+    return(max_so_far)
+
+print(array_num(input))
+```
+
 #### Largest continuous sum
 
 ```
