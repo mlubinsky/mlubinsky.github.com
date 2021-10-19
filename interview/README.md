@@ -2,27 +2,27 @@ https://towardsdatascience.com/how-i-doubled-my-salary-in-4-months-e8c5b2b9f5bc
 
 
 ```
-1 Section		Score	Total
-2 Inspect			
-3
+  Section		Score	Total
+  Inspect			
+ 
 Did I explicilty state what the input was?		1
-4
+ 
 Did I clarify what the desired output was?		1
-5
+ 
 Did I construct a simple example that could be solved by hand?		2
-6
+ 
 Did I write out all Axioms?		1
-7
+ 
 Did I write out and derive all intelligent assumptions?		1
-8
+ 
 Strategy			
-9
+ 
 Did I brainstorm a simple solution?		2
-10
+ 
 Did I analyze the runtime?		2
-11
+ 
 Did I analyze the space requirement?		1
-12
+ 
 Did I ask if the input problem set would be small enough for this to suffice?
 1
 13
