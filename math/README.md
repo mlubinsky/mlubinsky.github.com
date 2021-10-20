@@ -16,6 +16,8 @@ https://samenright.com/2021/08/31/a-laymans-guide-to-recreational-mathematics-vi
 
 https://nadoumnet.d3.ru/ . Lectures
 
+https://grinfeld.org/ Tensor calculus
+
 https://habr.com/ru/post/581148/ как правильно понимать определитель матрицы
 
 https://habr.com/ru/users/dmagin/posts/ Graphs and other interesting articles
