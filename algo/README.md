@@ -4,6 +4,8 @@ https://blog.bradfieldcs.com/an-introduction-to-hashing-in-the-era-of-machine-le
 
 http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big data
 
+https://www.infoq.com/presentations/abstract-algebra-analytics/ 
+
 http://www.dspguide.com/pdfbook.htm DSP book
 
 
