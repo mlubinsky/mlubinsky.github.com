@@ -8,11 +8,11 @@ https://www.infoq.com/presentations/abstract-algebra-analytics/
 
 http://www.dspguide.com/pdfbook.htm DSP book
 
-
+https://www.infoq.com/data-analysis/
 
 https://news.ycombinator.com/item?id=28526966 Precentile
 
-http://www.numericalexpert.com/articles/single_pass_stat/
+http://www.numericalexpert.com/articles/single_pass_stat/ Calculate STD and other metrics in single pass
   
 
 https://boyter.org/posts/bloom-filter/ Bloom filter 
