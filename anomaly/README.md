@@ -1,3 +1,6 @@
+https://github.com/yzhao062/anomaly-detection-resources
+
+
 ## Real time anomaly using Spark
 https://www.youtube.com/watch?v=0GNRpPaGrMk
 
