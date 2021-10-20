@@ -1,5 +1,7 @@
 https://towardsdatascience.com/how-i-doubled-my-salary-in-4-months-e8c5b2b9f5bc
 
+https://liuzhenglaichn.gitbook.io/algorithm/
+
 https://www.youtube.com/watch?v=vs4aFU3DiXY  interview for ML
 
 
