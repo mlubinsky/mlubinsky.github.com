@@ -250,6 +250,8 @@ https://news.ycombinator.com/item?id=26676729
 
 ### Linear algebra
 
+https://www.andreinc.net/2021/01/20/eigenvalues-and-eigenvectors-explained
+
 https://data-science-blog.com/blog/2020/10/27/10360/   visualizing linear transformations and eigenvectors
 
 https://pabloinsente.github.io/intro-linear-algebra
