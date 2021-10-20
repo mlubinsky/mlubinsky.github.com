@@ -319,6 +319,29 @@ So, the DP transformation function is:
 maxDP[i] = max(maxDP[i-1] * nums[i], minDP[i-1]* nums[i], nums[i
 ]);
 minDP[i] = min(minDP[i-1]* nums[i], maxDP[i-1]*nums[i], nums[i])
+
+
+
+def maxProduct( nums)
+  
+ n = nums.size();
+ maxDP = [0]*n
+ minDP = [0]*n
+ maxDP[0] = nums[0];
+ minDP[0] = nums[0];
+ result = nums[0];
+	
+ for  i  in range (len(nums))
+     maxDP[i] = max(max(maxDP[i - 1] * nums[i], 
+	          nums[i]), 
+	          minDP[i - 1] * nums[i]);
+     minDP[i] = min(min(minDP[i - 1] * nums[i], 
+	          nums[i]),
+	          maxDP[i - 1] * nums[i]);
+	
+  result = max(result, maxDP[i]);
+
+return result;
 ```
 
 #### Is number prime?
