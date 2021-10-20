@@ -306,6 +306,21 @@ def largest_continous_sum_two(arr):
     return max_sum
 ```
 
+
+#### max product subarray
+```
+It is similar to maximum sum subarray problem. But the input can have both
+positive and negative number. Only store the local maximum number is not
+enough.
+we can use DP to solve this problem. Let maxDP[i] denote the maximum
+product in subarray [0,...,i], and minDP[i] indicates the min product in subarray
+[0,..,i]
+So, the DP transformation function is:
+maxDP[i] = max(maxDP[i-1] * nums[i], minDP[i-1]* nums[i], nums[i
+]);
+minDP[i] = min(minDP[i-1]* nums[i], maxDP[i-1]*nums[i], nums[i])
+```
+
 #### Is number prime?
 ```
 def is_prime(n):
