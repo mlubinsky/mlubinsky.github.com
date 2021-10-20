@@ -42,6 +42,18 @@ https://github.com/charulagrl/data-structures-and-algorithms/tree/master/algorit
 
 <https://lukasmericle.github.io/dynprotut/
 
+https://github.com/YaokaiYang-assaultmaster/LeetCode (Java)
+
+
+https://jimmy-shen.medium.com/
+
+#### Template for any substring problem
+
+https://leetcode.com/problems/minimum-window-substring/discuss/26808/here-is-a-10-line-template-that-can-solve-most-substring-problems
+
+https://github.com/YaokaiYang-assaultmaster/LeetCode/blob/master/GeneralizedMethod/%5BImportant%5DA%20template%20that%20can%20solve%20most%20%22substring%22%20problems.md
+
+https://liuzhenglaichn.gitbook.io/algorithm/array/sliding-window
 
 ####  Maximum Sum Increasing subsequence
 
