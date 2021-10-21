@@ -1,3 +1,10 @@
+### ClickHouse vs TimescaleDB for timeseries
+
+https://blog.timescale.com/blog/what-is-clickhouse-how-does-it-compare-to-postgresql-and-timescaledb-and-how-does-it-perform-for-time-series-data/
+
+https://news.ycombinator.com/item?id=28945903
+
+
 https://towardsdatascience.com/when-a-time-series-only-quacks-like-a-duck-10de9e165e 
 
 https://towardsdatascience.com/a-common-mistake-to-avoid-when-working-with-time-series-data-eedf60a8b4c1
@@ -186,7 +193,7 @@ https://www.youtube.com/results?search_query=%22sktime%22+time+series
 
 https://www.youtube.com/results?search_query=%22Markus+Loning%22+time+series
 
-### Neuralprophet
+### Neural prophet
 
 https://habr.com/ru/company/otus/blog/555700/
 
