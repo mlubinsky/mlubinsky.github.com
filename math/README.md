@@ -68,6 +68,18 @@ https://en.wikipedia.org/wiki/Secretary_problem
 
 https://en.wikipedia.org/wiki/Ski_rental_problem
 
+
+### Average distance between 2 points in rectanle, circle, on on line
+
+https://www.youtube.com/watch?v=i4VqXRRXi68
+
+https://www.youtube.com/watch?v=DUfCAO0u7mQ
+
+https://www.youtube.com/watch?v=QbGQ-ETddzs
+
+https://www.youtube.com/watch?v=TFhKK6bWcYE
+
+
 ### Функциональный анализ
 
 Р.В. Шамин. Функциональный анализ - лекции
