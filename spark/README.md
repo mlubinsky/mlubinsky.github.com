@@ -11,6 +11,9 @@ https://databricks.com/p/webinar/databricks-on-aws-3-part-training-series Free t
 
 https://habr.com/ru/post/568276/ Databricks
 
+
+http://cloudsqale.com/
+
 Code for the Spark in Action Book: https://github.com/databricks/LearningSparkV2
 
 There are 8 workers and both the workers and driver are 
