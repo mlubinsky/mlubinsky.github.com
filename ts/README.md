@@ -4,6 +4,8 @@ https://blog.timescale.com/blog/what-is-clickhouse-how-does-it-compare-to-postgr
 
 https://medium.com/confluera-engineering/real-time-security-insights-apache-pinot-at-confluera-a6e5f401ff02
 
+https://tech.marksblogg.com/faster-clickhouse-imports-csv-parquet-mysql.html
+
  Apache Pinot primarily because of the availability of star-tree index, low latency
  
 https://imply.io/post/apache-druid-vs-time-series-databases
