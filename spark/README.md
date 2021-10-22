@@ -58,6 +58,7 @@ Task is 1 thread which process 1 partition
 
 https://medium.com/expedia-group-tech/part-3-efficient-executor-configuration-for-apache-spark-b4602929262
 
+https://medium.com/expedia-group-tech/part-6-summary-of-apache-spark-cost-tuning-strategy-8d06148c5da6
 
 ### Spark config for performance
 
