@@ -6,7 +6,12 @@ https://luminousmen.com/post/modern-big-data-architectures-lambda-kappa
 
 https://adamvotava.medium.com/
 
-https://news.ycombinator.com/item?id=28830007. Memcached vs Redis
+
+### Memcached vs Redis
+
+https://news.ycombinator.com/item?id=28830007. 
+
+https://engineering.kablamo.com.au/posts/2021/memcached-vs-redis-whats-the-difference
 
 ### tools for writing diagrams
 
