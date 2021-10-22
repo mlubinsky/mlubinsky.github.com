@@ -8,6 +8,10 @@ https://medium.com/confluera-engineering/real-time-security-insights-apache-pino
  
 https://imply.io/post/apache-druid-vs-time-series-databases
 
+https://imply.io/post/apache-druid-joins
+
+https://imply.io/post/how-we-enabled-the-go-fast-button-on-topn-queries-hint-we-used-vectorized-virtual-columns-which-is-new-in-apache-druid-0200
+
 https://news.ycombinator.com/item?id=22868286
 
 https://news.ycombinator.com/item?id=28945903
