@@ -61,6 +61,8 @@ https://medium.com/expedia-group-tech/part-3-efficient-executor-configuration-fo
 
 ### Spark config for performance
 
+https://medium.com/expedia-group-tech/part-3-efficient-executor-configuration-for-apache-spark-b4602929262
+
 https://habr.com/ru/company/otus/blog/540396/
 
 https://habr.com/ru/company/otus/blog/541426/
