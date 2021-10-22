@@ -6,6 +6,8 @@ https://luminousmen.com/post/modern-big-data-architectures-lambda-kappa
 
 https://adamvotava.medium.com/
 
+https://news.ycombinator.com/item?id=28830007. Memcached vs Redis
+
 ### tools for writing diagrams
 
 <https://habr.com/ru/company/epam_systems/blog/538018/> 
