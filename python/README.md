@@ -42,6 +42,69 @@ dot poroduct:
         for i, n in sparce_nums.items():
             result += n * vec2.nums.get(i, 0)
         return result
+	
+  ## Anagram 	
+    from collections import Counter
+
+    def anagram(first, second):
+         return Counter(first) == Counter(second)
+	 
+    def anagram(first, second):
+         return first == second[::-1]	 
+
+    # size in bytes
+    import sys 
+    variable = 30 
+    print(sys.getsizeof(variable))
+    
+   #  splits the list into smaller lists of the specified size:
+   def chunk(list, size):
+    return [list[i:i+size] for i in range(0,len(list), size)]
+    
+   lstA = [1,2,3,4,5,6,7,8,9,10]
+   lstSize = 3
+   chunk(lstA, lstSize)
+   
+   ## flatten the nested arrays:
+
+   def flatten(items):
+    for item in items:
+        if isinstance(item, list):
+            yield from flatten(item)
+        else:
+            yield item
+
+items = [1, [2], [[3], 4], 5]
+assert list(flatten(items)) == [1, 2, 3, 4, 5]
+   
+   # Removal of False Values
+
+   def compact(lst):
+      return list(filter(bool, lst))
+    
+   compact([0, 1, False, 2, '',' ', 3, 'a', 's', 34])
+   
+   Convert a list of Strings to a single String, where each item from the list is separated by commas:
+   
+   hobbies = ["singing", "soccer", "swimming"]
+   print("My hobbies are:") # My hobbies are:
+   print(", ".join(hobbies)) # singing, soccer, swimming
+	
+  Return  the difference between the two lists after applying this function to each element of both lists:
+
+   def difference_by(a, b, fn):
+      b = set(map(fn, b))
+      return [item for item in a if fn(item) not in b]
+    
+  from math import floor
+  print(difference_by([2.1, 1.2], [2.3, 3.4],floor)) # [1.2]
+  print(difference_by([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], lambda v : v['x'])) # [ { x: 2 } ]
+  
+  
+  def has_duplicates(lst):
+    return len(lst) != len(set(lst))
+	
+	
  ```
  String fuctions
  ```
@@ -56,7 +119,7 @@ find() function can only be used on strings.
 But the index() function can also be used on lists or tuples.
 ```
 
-### Dicrionary
+### Dictionary
 ```
  city = {'UK':'London','Japan':'Tokyo'}
  print(city['Italy'])
@@ -67,12 +130,37 @@ city = {'UK':'London','Japan':'Tokyo'}
 print(city.get('Italy'))  get() function can return a None instead of raising an exception when a key doesn’t exist.
   None
   
-  from collections import defaultdict
+from collections import defaultdict
 city = defaultdict(str)
 city['UK'] = 'London'
 print(city['Italy'] == '')
 True
 
+to combine two dictionaries:
+
+def merge_dictionaries(a, b):
+    return {**a,**b}
+    
+a = { 'x': 1, 'y': 2}
+b = { 'y': 3, 'z': 4}
+print(merge_dictionaries(a, b)) # {'y': 3, 'x': 1, 'z': 4}
+
+
+Convert Two Lists to a Dictionary
+
+def merge_dictionaries(a, b):
+    return {**a,**b}
+    
+a = { 'x': 1, 'y': 2}
+b = { 'y': 3, 'z': 4}
+print(merge_dictionaries(a, b)) # {'y': 3, 'x': 1, 'z': 4}
+
+def to_dictionary(keys, values):
+    return dict(zip(keys, values))
+    
+keys = ["a", "b", "c"]    
+values = [2, 3, 4]
+print(to_dictionary(keys, values)) # {'a': 2, 'c': 4, 'b': 3}
 
 In python < 3.7 to preserve inser order:
 
