@@ -47,6 +47,11 @@ https://www.youtube.com/watch?v=1udDbPXz27M (ru)
 
 
 ### MCMC
+
+https://arxiv.org/abs/1809.10756
+
+https://news.ycombinator.com/item?id=28941145 probabilistic programming 
+
 https://sandipanweb.wordpress.com/2020/12/07/bayesian-machine-learning-mcmc-and-probabilistic-programming-with-python/
 
 
