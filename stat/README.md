@@ -11,6 +11,13 @@ if we have some variable y, and we want to regress it against some other variabl
 
 patsy.dmatrices("y ~ x + a + b + a:b", data)
 
+
+https://habr.com/ru/post/556856/   
+
+https://habr.com/ru/post/562380/
+
+https://towardsdatascience.com/probability-distributions-with-pythons-scipy-3da89bf60565
+
 https://towardsdatascience.com/statistical-modelling-with-python-the-three-must-know-s-modules-79fa393e5640 
 
 https://www.kdnuggets.com/2021/09/advanced-statistical-concepts-data-science.html
@@ -118,10 +125,6 @@ https://www.inference.vc/causal-inference-4/
 https://habr.com/ru/post/558836/ 
 
 
-### Stat with Python
-https://habr.com/ru/post/556856/   
-
-https://habr.com/ru/post/562380/
 
 ### Anova
 https://davidbergkamp.com/two-way-anova-tukeys-honest-difference-test/
