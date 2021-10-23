@@ -7,6 +7,10 @@
  ### Caterory theory
  https://boris-marinov.github.io/category-theory-illustrated/05_logic/
  
+ https://arxiv.org/abs/1803.05316
+ 
+ http://eugeniacheng.com/wp-content/uploads/2017/02/cheng-lauda-guidebook.pdf
+ 
  https://news.ycombinator.com/item?id=28660157
  
 ### Git in Python
