@@ -4,6 +4,8 @@ https://www.youtube.com/watch?v=3QA4Yg4leGQ&list=RDCMUCNc-Wa_ZNBAGzFkYbAHw9eg&st
 
 https://liuzhenglaichn.gitbook.io/algorithm/
 
+https://towardsdatascience.com/intro-to-data-structures-2615eadc343d
+
 https://www.youtube.com/watch?v=vs4aFU3DiXY  interview for ML
 
 
