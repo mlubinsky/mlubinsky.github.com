@@ -57,6 +57,14 @@ dot poroduct:
     variable = 30 
     print(sys.getsizeof(variable))
     
+   # check whether two lists contain the same elements or not,
+   def compare(l1, l2):
+    if len(l1) != len(l2):
+        return False
+    else: 
+         return l1.sort() == l2.sort()
+    
+   
    #  splits the list into smaller lists of the specified size:
    def chunk(list, size):
     return [list[i:i+size] for i in range(0,len(list), size)]
