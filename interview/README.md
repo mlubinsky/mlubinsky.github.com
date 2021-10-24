@@ -80,6 +80,26 @@ https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-intervie
 <https://www.udemy.com/11-essential-coding-interview-questions/?couponCode=AMAZON2>
 
 
+
+#### Reverse linked list
+
+https://medium.com/outco/reversing-a-linked-list-easy-as-1-2-3-560fbffe2088
+
+```
+function reverse(head) {
+// Step 1
+  let previous = null
+  let current = head
+  let following = head
+}
+// Step 2
+  while(current !== null) {
+    following = following.next
+    current.next = previous
+    previous = current          
+    current = following         // <===== 2d
+  }
+```
 #### All elements in array are present twice, but 1 element is unique - find it
 
 ```
