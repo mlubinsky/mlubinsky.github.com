@@ -1,5 +1,7 @@
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
+https://deepmind.com/learning-resources/reinforcement-learning-series-2021  
+
 https://www.manning.com/books/deep-learning-with-python-second-edition. ML with Python 2nd ed
 
 https://arxiv.org/abs/1709.02840  Introduction to Machine Learning
@@ -72,6 +74,10 @@ https://www.youtube.com/watch?v=w6Pw4MOzMuo
 
 
 https://news.ycombinator.com/item?id=27577467  ML beyound curve fitting
+
+### JAX
+
+https://deepmind.com/blog/article/using-jax-to-accelerate-our-research
 
 #### WAX-ML
 
