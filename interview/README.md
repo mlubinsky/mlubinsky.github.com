@@ -8,6 +8,7 @@ https://towardsdatascience.com/intro-to-data-structures-2615eadc343d
 
 https://www.youtube.com/watch?v=vs4aFU3DiXY  interview for ML
 
+https://emre.me/
 
 ```
 Section		Score	Total
@@ -83,6 +84,30 @@ https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-intervie
 
 #### Reverse linked list
 
+
+https://emre.me/coding-patterns/in-place-reversal-of-a-linked-list/
+
+```
+class ListNode:
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+
+
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        if head is None:
+            return head
+
+        previous, current, next = None, head, None
+        while current is not None:
+            next = current.next  # temporarily store the next node
+            current.next = previous  # reverse the current node
+            previous = current  # point previous to the current node
+            current = next  # move on
+        return previous
+
+```
 https://medium.com/outco/reversing-a-linked-list-easy-as-1-2-3-560fbffe2088
 
 ```
@@ -223,6 +248,23 @@ def maxSum(arr, window):
       max_sum = max(window_sum, max_sum)
       
    return max_sum   
+```
+
+#### max avg subarray og given N
+```
+class Solution:
+    def findMaxAverage(self, nums: List[int], k: int) -> float:
+        average = []
+        _sum, start = 0, 0
+        for end in range(len(nums)):
+            _sum += nums[end]  # add the next element
+
+            if end >= k - 1:
+                average.append(_sum / k)  # calculate the average
+                _sum -= nums[start]  # subtract the element going out
+                start += 1  # slide the window
+
+        return max(average)
 ```
 
 #### Max sum array of any length
