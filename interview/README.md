@@ -14,6 +14,25 @@ https://www.pankajtanwar.in/coding-diary
 
 https://emre.me/coding-patterns/merge-intervals/
 
+#### Given an integer array nums and an integer k, return the number of pairs (i, j) where i < j such that |nums[i] - nums[j]| == k.
+
+https://www.pankajtanwar.in/code/count-number-of-pairs-with-absolute-difference-k
+```
+class Solution {
+public:
+    int countKDifference(vector<int>& nums, int k) {
+        int list[201] = {0};
+        int res = 0;
+        
+        for(auto val: nums) {
+            res += (val-k >= 0 ? list[val-k] : 0) + list[val+k];
+            list[val]++;
+        }
+        return res;
+    }
+}
+```    
+
 #### 2 Heaps pattern Find ( Median from Data Stream)
 https://emre.me/coding-patterns/two-heaps/
 ```
