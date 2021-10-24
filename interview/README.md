@@ -10,6 +10,8 @@ https://www.youtube.com/watch?v=vs4aFU3DiXY  interview for ML
 
 https://emre.me/
 
+https://www.pankajtanwar.in/coding-diary
+
 https://emre.me/coding-patterns/merge-intervals/
 
 #### 2 Heaps pattern Find ( Median from Data Stream)
