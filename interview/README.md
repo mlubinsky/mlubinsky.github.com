@@ -10,6 +10,28 @@ https://www.youtube.com/watch?v=vs4aFU3DiXY  interview for ML
 
 https://emre.me/
 
+
+#### Longest common substr
+
+https://emre.me/coding-patterns/longest-common-substring-subsequence/
+```
+class Solution:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        memo = [[-1 for _ in range(len(text2))] for _ in range(len(text1))]
+        return self.longestCommonSubsequence_recursive(memo, text1, text2, 0, 0)
+
+    def longestCommonSubsequence_recursive(self, memo, text1, text2, i, j):
+        if i == len(text1) or j == len(text2):
+            return 0
+        if memo[i][j] == -1:
+            if text1[i] == text2[j]:
+                memo[i][j] = 1 + self.longestCommonSubsequence_recursive(memo, text1, text2, i + 1, j + 1)
+            else:
+                memo[i][j] = max(self.longestCommonSubsequence_recursive(memo, text1, text2, i + 1, j),
+                                 self.longestCommonSubsequence_recursive(memo, text1, text2, i, j + 1))
+        return memo[i][j]
+```
+
 ```
 Section		Score	Total
 
