@@ -10,6 +10,20 @@ https://www.youtube.com/watch?v=vs4aFU3DiXY  interview for ML
 
 https://emre.me/
 
+#### 2 Heaps pattern Find ( Median from Data Stream)
+https://emre.me/coding-patterns/two-heaps/
+```
+ we want to know the smallest element in one part and the biggest element in the other part.
+ Two Heaps pattern uses two Heap data structure to solve these problems;
+ 
+ a Min Heap to find the smallest element and a Max Heap to find the biggest element.
+ 
+ Design a data structure that supports the following two operations:
+
+void addNum(int num) - Add a integer number from the data stream to the data structure.
+double findMedian() - Return the median of all elements so far.
+```
+
 #### Topological sort
 
 There are a total of n courses you have to take, labeled from 0 to n - 1.
