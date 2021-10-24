@@ -97,8 +97,12 @@ function reverse(head) {
     following = following.next
     current.next = previous
     previous = current          
-    current = following         // <===== 2d
+    current = following
   }
+  // Step 3  
+  return previous
+}
+
 ```
 #### All elements in array are present twice, but 1 element is unique - find it
 
