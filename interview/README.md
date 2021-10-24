@@ -10,6 +10,111 @@ https://www.youtube.com/watch?v=vs4aFU3DiXY  interview for ML
 
 https://emre.me/
 
+#### Topological sort
+
+There are a total of n courses you have to take, labeled from 0 to n - 1.
+
+Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0, 1]
+
+Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses?
+
+```
+The aim of topological sort is to provide a partial ordering among the vertices of the graph such that if there is an edge from U to V then U <= V, which means, U comes before V in the ordering.
+
+Source: Any node that has no incoming edge and has only outgoing edges is called a source.
+Sink: Any node that has only incoming edges and no outgoing edge is called a sink.
+Topological ordering starts with one of the sources and ends at one of the sinks.
+A topological ordering is possible only when the graph has no directed cycles, i.e. if the graph is a Directed Acyclic Graph (DAG). If the graph has a cycle, some vertices will have cyclic dependencies which makes it impossible to find a linear ordering among vertices.
+To find the topological sort of a graph we can traverse the graph in a Breadth First Search (BFS) way.
+
+a. Initialization
+
+We will store the graph in Adjacency Lists, which means each parent vertex will have a list containing all of its children. We will do this using a Hash Table where the key will be the parent vertex number and the value will be a List containing children vertices.
+
+To find the sources, we will keep a Hash Table to count the in-degrees (count of incoming edges of each vertex). Any vertex with 0 in-degree will be a source.
+
+b. Build the graph and find in-degrees of all vertices
+
+We will build the graph from the input and populate the in-degrees Hash Table.
+
+c. Find all sources
+
+All vertices with 0 in-degrees will be our sources and we will store them in a Queue.
+
+d. Sort
+
+For each source:
+
+Add it to the sorted list.
+Get all of its children from the graph.
+Decrement the in-degree of each child by 1.
+If a child’s in-degree becomes 0, add it to the sources Queue.
+Repeat these steps, until the source Queue is empty.
+
+from collections import deque
+from typing import List
+
+
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        sorted_list = []
+
+        if numCourses <= 0:
+            return False
+
+        # a. Initialization
+        graph = {i: [] for i in range(numCourses)}  # adjacency list graph
+        in_degree = {i: 0 for i in range(numCourses)}  # count of incoming edges
+
+        # b. Build the graph
+        for prerequisite in prerequisites:
+            parent, child = prerequisite[0], prerequisite[1]
+            graph[parent].append(child)  # put the child into it's parent's list
+            in_degree[child] += 1
+
+        # c. Find all sources
+        sources = deque()
+        for key in in_degree:
+            if in_degree[key] == 0:
+                sources.append(key)
+
+        # d. Sort
+        while sources:
+            vertex = sources.popleft()
+            sorted_list.append(vertex)
+            for child in graph[vertex]:  # get the node's children to decrement their in-degrees
+                in_degree[child] -= 1
+                if in_degree[child] == 0:
+                    sources.append(child)
+
+        # if sorted_list does not contain all the courses, there is a cyclic dependency between courses
+        # scheduling is not possible if there is a cyclic dependency
+        return len(sorted_list) == numCourses
+Time Complexity: O(V + E) where V is the total number of courses and E is the total number of prerequisites.
+
+Space Complexity: O(V + E) since we are storing all of the prerequisites for each course in an adjacency list.
+```
+#### Top K numbers
+
+To have top k largest numbers in the heap. We will use a min-heap for this;
+Time Complexity: O(N log K).
+```
+from heapq import *
+
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        min_heap = []
+        
+        for i in range(k):
+            heappush(min_heap, nums[i])
+        
+        for i in range(k, len(nums)):
+            if nums[i] > min_heap[0]:
+                heappop(min_heap)
+                heappush(min_heap, nums[i])
+            
+        return min_heap[0]
+```	
 
 #### Given a string s, find the longest palindromic subsequence’s length in s. 
 
