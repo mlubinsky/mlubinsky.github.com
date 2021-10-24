@@ -45,6 +45,8 @@ https://thevaluable.dev/vim-expert/
 
 https://toroid.org/modern-neovim
 
+https://habr.com/ru/post/585222/
+
 https://www.lunarvim.org/01-installing.html
 
 
