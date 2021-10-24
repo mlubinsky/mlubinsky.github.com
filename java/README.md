@@ -2,6 +2,7 @@
  
  https://sdkman.io/install
  
+ https://evacchi.github.io/java/records/jbang/2021/10/12/learn-you-an-actor-system-java-17-switch-expressions.html
  
  <https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997> Effective Java 3rd ed Joshua Bloch
  
@@ -15,6 +16,8 @@
  <https://medium.com/@leventov/smoothiemap-2-the-lowest-memory-hash-table-ever-6bebd06780a3> .   Hash Tables comparisons
  
  <https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-14/>
+ 
+ https://advancedweb.hu/new-language-features-since-java-8-to-17/
  
  https://habr.com/ru/post/551492/ . what is new in Java
  
