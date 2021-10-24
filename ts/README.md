@@ -29,6 +29,8 @@ https://github.com/salesforce/Merlion#readme  Merlion: Python library for TS
 
 https://towardsdatascience.com/dig-deep-enough-features-engineering-techniques-for-time-series-analysis-in-python-500c96aebade
 
+https://habr.com/ru/post/584896/  Feature extractions for time series
+
 https://engineering.linkedin.com/blog/2021/greykite--a-flexible--intuitive--and-fast-forecasting-library GreyKite 
 
 https://medium.com/data-science-at-microsoft/time-series-forecasting-part-1-of-3-understanding-the-fundamentals-13b52eda3e5
