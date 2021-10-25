@@ -1365,3 +1365,58 @@ https://leetcode.com/problems/invert-binary-tree/
       i=find(l2)
       print ("index=",i)
 ```
+
+Brackets:
+```
+def isProperlyNested(S):
+    stack = []
+    for s in S:
+        if s == '{' or s == '(' or s == '[':
+            stack.append(s)
+        elif s =='}':
+            if stack and stack[-1] == '{':
+                stack.pop()
+            else:
+                stack.append(s)
+        elif s ==')':
+            if stack and stack[-1] == '(':
+                stack.pop()
+            else:
+                stack.append(s)
+        elif s == ']':
+            if stack and stack[-1] == '[':
+                stack.pop()
+            else:
+                stack.append(s)
+        else:
+            pass
+                
+    # non-empty stack, NOT properly nested 
+    if stack:
+        return S, stack, False
+    
+    # properly nested
+    else:
+        return S, stack, True
+        
+S = "(()(())())"
+print(isProperlyNested(S))
+
+S =  "())"
+print(isProperlyNested(S))
+
+S = "(()){}[]"
+print(isProperlyNested(S))
+
+S = ")("
+print(isProperlyNested(S))
+
+S = "+)(+()"
+print(isProperlyNested(S))
+
+S = "(12)(34)"
+print(isProperlyNested(S))
+
+S = ""
+print(isProperlyNested(S))
+```
