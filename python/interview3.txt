@@ -99,61 +99,7 @@ Construct a list using comprehension for a given list of N numbers. The element 
 L = [0,3,5,8,12,14,18,21]
 [x for x in L[::2] if x % 2 == 0]
 
-class BinaryTree:
-   def __init__(self, value):
-      self.value = value
-      self.left = None
-      self.right = None
 
-   def insert(self, value):
-      # node value is already set -> starts traversing
-      if self.value:
-         # left
-         if value < self.value:
-            # To set a new left value, make a new node
-            if self.left is None:
-               self.left = BinaryTree(value)
-
-            # if left value is already set, call insert() on left
-            else:
-               self.left.insert(value)
-
-         # right
-         else:  # value > self.value
-            # To set a new right value, make a new node
-            if self.right is None:
-               self.right = BinaryTree(value)
-
-            # if right value is already set, call insert() on right
-            else:
-               self.right.insert(value)
-
-      # if value is not set
-      else:
-         self.value = value
-
-   def printInOrder(self):
-      if self.left:
-         self.left.printInOrder()
-      print self.value,
-      if self.right:
-         self.right.printInOrder()
-
-if __name__ == '__main__':
-   root = BinaryTree('F')
-   root.insert('B')
-   root.insert('G')
-   root.insert('A')
-   root.insert('D')
-   root.insert('I')
-   root.insert('C')
-   root.insert('E')
-   root.insert('H')
-   root.printInOrder()
-
-Output:
-
-A B C D E F G H I
 
 Missing integer from a sequence
 ------------------------------------
