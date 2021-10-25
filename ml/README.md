@@ -16,6 +16,8 @@ https://lazypredict.readthedocs.io/en/latest/readme.html#
 
 argmin.net
 
+https://t.me/emeliml Эмели Драль о прикладном машинном обучении.
+
 https://github.com/faridrashidi/kaggle-solutions Kaggle solutions
 
 https://habr.com/ru/company/skillfactory/blog/561044/ . useful libs
