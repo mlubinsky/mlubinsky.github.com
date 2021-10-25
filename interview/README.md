@@ -6,6 +6,8 @@ https://www.youtube.com/watch?v=3QA4Yg4leGQ&list=RDCMUCNc-Wa_ZNBAGzFkYbAHw9eg&st
 
 https://liuzhenglaichn.gitbook.io/algorithm/
 
+https://www.techiedelight.com
+
 https://towardsdatascience.com/intro-to-data-structures-2615eadc343d
 
 https://www.java67.com/2018/05/top-75-programming-interview-questions-answers.html
