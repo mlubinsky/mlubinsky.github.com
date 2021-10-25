@@ -11,10 +11,11 @@ if we have some variable y, and we want to regress it against some other variabl
 
 patsy.dmatrices("y ~ x + a + b + a:b", data)
 
+https://habr.com/ru/post/585232/  Получаем кривую плотности распределения вероятности
 
-https://habr.com/ru/post/556856/   
+https://habr.com/ru/post/556856/   Python и статистический вывод: часть 4
 
-https://habr.com/ru/post/562380/
+https://habr.com/ru/post/562380/ Погружаемся в статистику вместе с Python
 
 https://towardsdatascience.com/probability-distributions-with-pythons-scipy-3da89bf60565
 
