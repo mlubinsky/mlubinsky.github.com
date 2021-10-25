@@ -297,8 +297,23 @@ def coin_change_dynamic(coins, total):
 ```
 
 #### best-time-to-buy-and-sell-stock 
+```
+prices = [100, 113, 110, 85, 105, 102, 86, 63, 81, 101, 94, 106, 101, 79, 94, 90, 97]
+result = 0
+minSofar = prices[0]
+for i in range(1, len(prices)):
+    minSofar = min(minSofar, prices[i])
+    result = max (result, prices[i] - minSofar)
+
+print result
+```
 
 https://github.com/StBogdan/PythonWork/blob/master/Leetcode/188.py
+
+Stock cell/buy 2 times
+https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/
+
+https://stackoverflow.com/questions/44634395/maximum-profit-by-buying-and-selling-a-share-exactly-k-times
 
 
 #### Egg drop
