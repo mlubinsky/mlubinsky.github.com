@@ -16,7 +16,9 @@ https://emre.me/
 
 https://www.pankajtanwar.in/coding-diary
 
-https://emre.me/coding-patterns/merge-intervals/
+https://emre.me/coding-patterns/merge-intervals/ . Merge intervals
+
+https://www.interviewbit.com/coding-interview-questions/
 
 #### Given an integer array nums and an integer k, return the number of pairs (i, j) where i < j such that |nums[i] - nums[j]| == k.
 
@@ -36,6 +38,13 @@ public:
     }
 }
 ```    
+
+#### For  binary tree find max depth and max wide
+
+the breadth-first search algorithm would work best to find the max-width of the tree,
+and the depth-first search algorithm would work best to find the max-depth. 
+
+https://github.com/GEEGABYTE1/Width-Depth-Tree-Problems
 
 #### 2 Heaps pattern Find ( Median from Data Stream)
 https://emre.me/coding-patterns/two-heaps/
