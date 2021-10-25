@@ -14,6 +14,9 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
  https://sadh.life/post/builtins/
  
  ```
+ last element of array:
+  s[-1]
+  
  reverse string
  s[::-1]
  
