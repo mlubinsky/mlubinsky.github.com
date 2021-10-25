@@ -8,6 +8,8 @@ https://liuzhenglaichn.gitbook.io/algorithm/
 
 https://towardsdatascience.com/intro-to-data-structures-2615eadc343d
 
+https://www.java67.com/2018/05/top-75-programming-interview-questions-answers.html
+
 https://www.youtube.com/watch?v=vs4aFU3DiXY  interview for ML
 
 https://emre.me/
