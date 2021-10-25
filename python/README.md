@@ -30,6 +30,21 @@ sorted(l)
 
 first = [0,1,2]
 second = [*a,3] # first is unchanged, second = [0,1,2,3]
+
+
+list to dictionary
+
+number = ['eins','zwei','drei',1,2,3]
+print(dict(zip(number[:3], number[3:])))  
+
+number = ['eins',1,'zwei',2,'drei',3]
+print(dict(zip(number[0::2], number[1::2]))) 
+
+The list.sort() method is only defined for lists. In contrast, the sorted() function accepts any iterable.
+
+Note that both list.sort() and sorted() have a key parameter t
+
+
 ```
 dot poroduct:
 ```
