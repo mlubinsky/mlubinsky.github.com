@@ -1,6 +1,6 @@
 https://habr.com/ru/post/558836/ Мир статистических гипотез
 
-
+https://vkteam.medium.com/practitioners-guide-to-statistical-tests-ed2d580ef04f
 
 https://habr.com/ru/company/plarium/blog/526706/
 
