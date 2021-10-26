@@ -211,6 +211,8 @@ https://www.youtube.com/watch?v=EceVJJGAFFI
 
 ## QM
 
+https://www.youtube.com/playlist?list=PLq94LoYzjZTos43uI14BeBJ8Y6d0v2g6f
+
 https://ridiculousfish.com/wavefiz/
 
 https://blog.gwlab.page/solving-1-d-schrodinger-equation-in-python-dcb3518ce454
