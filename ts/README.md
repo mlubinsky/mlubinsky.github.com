@@ -24,6 +24,9 @@ https://news.ycombinator.com/item?id=28945903
  https://arxiv.org/abs/2105.01098
  
  
+https://towardsdatascience.com/stop-one-hot-encoding-your-time-based-features-24c699face2f
+
+ 
 https://towardsdatascience.com/tagged/time-series-from-scratch  - several articles
 
 Part 1: “Anomaly Detection for Time Series“
