@@ -25,7 +25,12 @@ https://github.com/faridrashidi/kaggle-solutions Kaggle solutions
 
 https://habr.com/ru/company/skillfactory/blog/561044/ . useful libs
 
-https://github.com/online-ml/river#readme  Online mchine learning (streming data)
+### Online mchine learning (Incremental learning, continual learning, and stream learning)
+
+https://github.com/online-ml/river#readme  
+
+https://towardsdatascience.com/river-the-best-python-library-for-online-machine-learning-56bf6f71a403
+
 
 https://towardsdatascience.com/7-cool-python-packages-kagglers-are-using-without-telling-you-e83298781cf4
 
