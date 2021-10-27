@@ -25,6 +25,8 @@ https://www.amazon.com/Practical-Time-Analysis-Prediction-Statistics-ebook-dp-B0
 
 https://medium.com/geekculture/time-series-anomaly-definition-c04b7d907000
 
+https://towardsdatascience.com/mastering-outlier-detection-in-python-61d1090a5b08
+
 https://towardsdatascience.com/a-comprehensive-beginners-guide-to-the-diverse-field-of-anomaly-detection-8c818d153995
 
 https://towardsdatascience.com/machine-learning-for-anomaly-detection-and-condition-monitoring-d4614e7de770
