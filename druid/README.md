@@ -4,6 +4,8 @@ https://druid.apache.org/docs/latest/tutorials/index.html
 
 https://www.youtube.com/watch?v=6jJi11r71sY
 
+https://www.youtube.com/watch?v=f-LLTle-Xug
+
 ```
 ls -ltr  /usr/local/bin/ | grep druid | cut -b 53-200
 
