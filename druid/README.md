@@ -6,6 +6,11 @@ https://www.youtube.com/watch?v=6jJi11r71sY
 
 https://www.youtube.com/watch?v=f-LLTle-Xug
 
+
+Druid and Kafka
+
+https://medium.com/outbrain-engineering/understanding-spark-streaming-with-kafka-and-druid-25b69e28dcb7
+
 ```
 ls -ltr  /usr/local/bin/ | grep druid | cut -b 53-200
 
