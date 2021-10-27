@@ -30,4 +30,43 @@ druid-broker.sh -> ../Cellar/druid/0.22.0/bin/druid-broker.sh
  druid-middleManager.sh -> ../Cellar/druid/0.22.0/bin/druid-middleManager.sh
  druid-node.sh -> ../Cellar/druid/0.22.0/bin/druid-node.sh
  druid-overlord.sh -> ../Cellar/druid/0.22.0/bin/druid-overlord.sh
+ 
+ 
+ find . -name dsql*
+./libexec/bin/dsql-main
+./libexec/bin/dsql
+
+
+
+ls -ltr ./libexec/bin/ | cut -b 51-150
+
+ verify-java
+ verify-default-ports
+ supervise
+ start-single-server-xlarge
+ start-single-server-small
+ start-single-server-medium
+ start-single-server-large
+ start-nano-quickstart
+ start-micro-quickstart
+ start-cluster-query-server
+ start-cluster-master-with-zk-server
+ start-cluster-master-no-zk-server
+ start-cluster-data-server
+ service
+ run-zk
+ run-druid
+ post-index-task-main
+ post-index-task
+ jconsole.sh
+ java-util
+ generate-example-metrics
+ dsql-main
+ dsql
+ broker.sh
+ coordinator.sh
+ historical.sh
+ middleManager.sh
+ node.sh
+ overlord.sh
 ```
