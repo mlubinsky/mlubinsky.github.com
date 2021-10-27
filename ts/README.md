@@ -33,6 +33,9 @@ Part 7:“Time Series with Zillow’s Luminaire — Part II Optimal Specificatio
 Part 8: “Time Series with Zillow’s Luminaire — Part III Modeling”
 Part 9:“A Technical Guide on RNN/LSTM/GRU for Stock Price Prediction”
 
+https://towardsdatascience.com/feature-engineering-on-time-series-data-transforming-signal-data-of-a-smartphone-accelerometer-for-72cbe34b8a60
+
+
 https://towardsdatascience.com/when-a-time-series-only-quacks-like-a-duck-10de9e165e 
 
 https://towardsdatascience.com/a-common-mistake-to-avoid-when-working-with-time-series-data-eedf60a8b4c1
