@@ -8,11 +8,23 @@ https://www.youtube.com/watch?v=f-LLTle-Xug
 
 https://blog.datumo.io/data-partitioning-optimization-in-apache-druid-part-i-13e71d4d3538
 
+https://engineering.salesforce.com/delivering-high-quality-insights-interactively-using-apache-druid-at-salesforce-7a038f0fe3d1
+
 Segment — the smallest unit of storage in Apache Druid. 
 Data in Druid has to be partitioned into time chunks
 (the range of the time chunk is called the segment granularity), 
 and these time chunks are divided into segments. 
 The target segment size should be in the range of 300–700mb. Segments in Druid are immutable.
+
+Columns=Dimensions+Metrics
+Dimensions are filterable and group-able, which normally represents the scope of slice and dice in your query
+Metrics are measurements of users’ interests, which usually correspond to the column where users apply aggregations at query time, 
+such as max(),sum(),distinct_count(), 95thPercentile(). 
+(It is worth noting that aggregations in Druid can be applied both at ingestion time and query/post-query time.)
+
+
+it is worth it to put extra effort into reducing the cardinalities introduced by timestamp. The way Druid approaches this is called rollup; you can think of rollup in Druid as a scheme to generate a summary of data by truncating the timestamp and pre-aggregating. Truncating the timestamp is an effective way to reduce cardinalities that are introduced by timestamp. Druid generates mergeable aggregates after rollup in segments and records them with the same combination of dimensions (including the truncated timestamp). Druid can easily calculate aggregates from billions of records in sub-seconds.
+
 
 Druid and Kafka
 
