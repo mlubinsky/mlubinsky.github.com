@@ -35,6 +35,9 @@ Part 9:“A Technical Guide on RNN/LSTM/GRU for Stock Price Prediction”
 
 https://towardsdatascience.com/feature-engineering-on-time-series-data-transforming-signal-data-of-a-smartphone-accelerometer-for-72cbe34b8a60
 
+https://towardsdatascience.com/time-series-from-scratch-introduction-to-time-series-with-pandas-347ac9c6b451
+
+
 
 https://towardsdatascience.com/when-a-time-series-only-quacks-like-a-duck-10de9e165e 
 
