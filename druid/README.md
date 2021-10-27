@@ -6,6 +6,13 @@ https://www.youtube.com/watch?v=6jJi11r71sY
 
 https://www.youtube.com/watch?v=f-LLTle-Xug
 
+https://blog.datumo.io/data-partitioning-optimization-in-apache-druid-part-i-13e71d4d3538
+
+Segment — the smallest unit of storage in Apache Druid. 
+Data in Druid has to be partitioned into time chunks
+(the range of the time chunk is called the segment granularity), 
+and these time chunks are divided into segments. 
+The target segment size should be in the range of 300–700mb. Segments in Druid are immutable.
 
 Druid and Kafka
 
