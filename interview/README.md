@@ -1,5 +1,7 @@
 https://towardsdatascience.com/how-i-doubled-my-salary-in-4-months-e8c5b2b9f5bc
 
+https://cp-algorithms.com/index.html
+
 https://habr.com/ru/company/geekfactor/blog/585352/ 7 платформ для подготовки к техническому интервью
 
 https://www.youtube.com/watch?v=3QA4Yg4leGQ&list=RDCMUCNc-Wa_ZNBAGzFkYbAHw9eg&start_radio=1
