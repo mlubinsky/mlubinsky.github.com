@@ -1,5 +1,7 @@
 https://github.com/yzhao062/anomaly-detection-resources
 
+https://towardsdatascience.com/5-outlier-detection-methods-that-every-data-enthusiast-must-know-f917bf439210
+
 
 ## Real time anomaly using Spark
 https://www.youtube.com/watch?v=0GNRpPaGrMk
