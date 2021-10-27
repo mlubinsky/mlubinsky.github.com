@@ -8,7 +8,7 @@ https://jupyterbook.org/intro.html
 
 https://executablebooks.org/en/latest/gallery.html
 
-
+https://www.pola.rs/ - fast dataframe
 
 ### Panda tricks
 
