@@ -100,6 +100,8 @@ https://wax-ml.readthedocs.io/en/latest/
 
 https://en.wikipedia.org/wiki/Receiver_operating_characteristic  ROC curve
 
+https://towardsdatascience.com/a-graphical-explanation-of-roc-and-auc-183705caeb27
+
 https://towardsdatascience.com/understanding-roc-curves-c7f0b52e931e Understanding ROC Curves with Python
 
 https://habr.com/ru/company/netologyru/blog/582756/
