@@ -5,6 +5,8 @@ Syncthing is a continuous file synchronization program. It synchronizes files be
 
 https://syncthing.net/  
 
+https://www.keldysh.ru/pages/BioCyber/Lectures.html Redko (ru)
+
 http://nonagon.org/ExLibris/ . Math Physics Programming
 
 https://news.ycombinator.com/item?id=28509498
