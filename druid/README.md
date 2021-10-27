@@ -11,6 +11,8 @@ Druid and Kafka
 
 https://medium.com/outbrain-engineering/understanding-spark-streaming-with-kafka-and-druid-25b69e28dcb7
 
+https://medium.com/pinterest-engineering/pinterests-analytics-as-a-platform-on-druid-part-1-of-3-9043776b7b76
+
 ```
 ls -ltr  /usr/local/bin/ | grep druid | cut -b 53-200
 
