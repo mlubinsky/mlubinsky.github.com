@@ -21,12 +21,15 @@ https://news.ycombinator.com/item?id=28945903
  A change point is the one that the data trend shifts abruptly.
  Solution to detect change points is called Pruned Exact Linear Time (PELT)
  https://medium.com/dataman-in-ai/time-series-with-zillows-luminaire-f86c3a3f8e6f
+ https://arxiv.org/abs/2105.01098
  
  
+https://towardsdatascience.com/tagged/time-series-from-scratch  - several articles
+
 Part 1: “Anomaly Detection for Time Series“
 Part 2: “Detecting the Change Points in a Time Series”
 Part 3: “Algorithmic Trading with Technical Indicators in R”
-Part 4:“Kalman Filter Explained!”
+Part 4:“Kalman Filter Explained!”  https://medium.com/dataman-in-ai/kalman-filter-explained-4d65b47916bf
 Part 5:“Business Forecasting with Facebook’s “Prophet”
 Part 6:“Time Series with Zillow’s Luminaire — Part I Data Exploration”
 Part 7:“Time Series with Zillow’s Luminaire — Part II Optimal Specifications”
@@ -34,6 +37,9 @@ Part 8: “Time Series with Zillow’s Luminaire — Part III Modeling”
 Part 9:“A Technical Guide on RNN/LSTM/GRU for Stock Price Prediction”
 
 https://towardsdatascience.com/feature-engineering-on-time-series-data-transforming-signal-data-of-a-smartphone-accelerometer-for-72cbe34b8a60
+
+
+https://towardsdatascience.com/linkedins-response-to-prophet-silverkite-and-greykite-4fd0131f64cb
 
 https://towardsdatascience.com/time-series-from-scratch-introduction-to-time-series-with-pandas-347ac9c6b451
 
