@@ -638,6 +638,8 @@ val.df1.repartition(4).rdd.mapPartitionsWithIndex( (index,itr) => Iterator (inde
 
 ### Performance: partition pruning , predicate pushdown 
 
+https://medium.com/swlh/troubleshooting-stragglers-in-your-spark-application-47f2568663ec
+
 https://www.youtube.com/watch?v=PJvpseiPACQ
 
 https://www.youtube.com/watch?v=_Ne27JcLnEc
