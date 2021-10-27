@@ -4,6 +4,8 @@ https://earthly.dev/blog/command-line-tools/
 
 https://github.com/TaKO8Ki/awesome-alternatives-in-rust
 
+https://lib.rs/command-line-utilities
+
 https://news.ycombinator.com/item?id=27992073
 
 https://habr.com/ru/company/gms/blog/553078/ . useful command-line utils
