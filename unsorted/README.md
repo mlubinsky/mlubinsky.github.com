@@ -7,6 +7,8 @@ https://syncthing.net/
 
 https://www.keldysh.ru/pages/BioCyber/Lectures.html Redko (ru)
 
+https://www.keldysh.ru/departments/dpt_17/redko.html
+
 http://nonagon.org/ExLibris/ . Math Physics Programming
 
 https://news.ycombinator.com/item?id=28509498
