@@ -13,6 +13,13 @@ https://medium.com/outbrain-engineering/understanding-spark-streaming-with-kafka
 
 https://medium.com/pinterest-engineering/pinterests-analytics-as-a-platform-on-druid-part-1-of-3-9043776b7b76
 
+https://medium.com/pinterest-engineering/pinterests-analytics-as-a-platform-on-druid-part-2-of-3-e63d5280a1a9
+
+https://medium.com/pinterest-engineering/pinterests-analytics-as-a-platform-on-druid-part-3-of-3-579406ffa374
+
+
+https://medium.com/@knoldus/sql-on-apache-druid-part-ii-which-sql-workload-will-be-faster-on-druid-d1a83e834c99
+
 ```
 ls -ltr  /usr/local/bin/ | grep druid | cut -b 53-200
 
