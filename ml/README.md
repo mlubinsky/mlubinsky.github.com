@@ -6,6 +6,8 @@ https://www.manning.com/books/deep-learning-with-python-second-edition. ML with 
 
 https://arxiv.org/abs/1709.02840  Introduction to Machine Learning
 
+https://arxiv.org/abs/2004.09280 Towards a theory of machine learning. Vitaly Vanchurin
+
 https://arxiv.org/pdf/2110.06209.pdf  A Brief Introduction to Automatic Differentiation for
 Machine Learning
 
