@@ -3,6 +3,23 @@ https://github.com/yzhao062/anomaly-detection-resources
 https://towardsdatascience.com/5-outlier-detection-methods-that-every-data-enthusiast-must-know-f917bf439210
 
 
+https://towardsdatascience.com/well-log-data-outlier-detection-with-machine-learning-a19cafc5ea37
+
+Box Plot:
+
+IQR - Inter Quartile Range
+```
+A boxplot is a graphical and standardised way to display the distribution of data based on five key numbers: 
+  The “minimum”, 
+  1st Quartile (25th percentile), 
+  median (2nd Quartile./ 50th Percentile), 
+  the 3rd Quartile (75th percentile), 
+  and the “maximum”. 
+  The minimum and maximum values are defined as Q1–1.5 * IQR and Q3 + 1.5 * IQR respectively. 
+   Any points that fall outside of these limits are referred to as outliers.
+```
+
+
 ## Real time anomaly using Spark
 https://www.youtube.com/watch?v=0GNRpPaGrMk
 
