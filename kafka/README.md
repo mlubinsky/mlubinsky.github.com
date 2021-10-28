@@ -4,6 +4,8 @@ https://towardsdatascience.com/master-the-kafka-shell-in-5-minutes-topics-produc
 
 https://towardsdatascience.com/apache-kafka-in-python-how-to-stream-data-with-producers-and-consumers-307e84ca8bdb
 
+https://towardsdatascience.com/make-a-mock-real-time-stream-of-data-with-python-and-kafka-7e5e23123582
+
 ### Kafka on Mac
 https://habr.com/ru/post/578916/ Python микросервисы с Kafka 
 
