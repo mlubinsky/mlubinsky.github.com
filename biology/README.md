@@ -1,3 +1,6 @@
+
+https://arxiv.org/abs/2110.14602 Towards a Theory of Evolution as Multilevel Learning
+
 https://www.youtube.com/watch?v=m40UnvhT1Vg
 
 cancer
