@@ -25,6 +25,31 @@ SELECT id,month
 FROM bill
 ```
 
+###
+```
+SELECT 
+  VARIANCE(amount) AS var_amount,
+  VAR_POP(amount) AS var_pop_amount,
+  VAR_SAMP(amount) AS var_samp_amount,
+  STDDEV_SAMP(amount) as stddev_sample_amount,
+  STDDEV_POP(amount) as stddev_pop_amount,
+FROM bill
+```
+
+### Subtotal ROLLUP
+
+It’s an extension of a GROUP BY clause with the ability to add subtotals and grand totals to your data.
+
+```
+SELECT  
+  Type,
+  id,
+  SUM (Amount) AS total_amount
+FROM bill
+GROUP BY Type,id WITH ROLLUP
+```
+
+
 ### Calculation AVG:
  - missing value
  - INT to float
