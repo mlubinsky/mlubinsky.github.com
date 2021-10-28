@@ -17,6 +17,14 @@ https://hakibenita.com/sql-dos-and-donts Faux predicate
 https://blog.jooq.org/10-cool-sql-optimisations-that-do-not-depend-on-the-cost-model/
 
 
+### Running totals
+```
+SELECT id,month
+ , Amount
+ , SUM(Amount) OVER (ORDER BY id) as total_sum
+FROM bill
+```
+
 ### Calculation AVG:
  - missing value
  - INT to float
