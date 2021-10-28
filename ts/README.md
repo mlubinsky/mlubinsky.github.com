@@ -28,7 +28,7 @@ https://news.ycombinator.com/item?id=28945903
 https://towardsdatascience.com/stop-one-hot-encoding-your-time-based-features-24c699face2f
 
  
-https://towardsdatascience.com/tagged/time-series-from-scratch  - several articles
+https://towardsdatascience.com/tagged/time-series-from-scratch  - several articles!!!
 
 Part 1: “Anomaly Detection for Time Series“
 Part 2: “Detecting the Change Points in a Time Series”
@@ -40,6 +40,8 @@ Part 7:“Time Series with Zillow’s Luminaire — Part II Optimal Specificatio
 Part 8: “Time Series with Zillow’s Luminaire — Part III Modeling”
 Part 9:“A Technical Guide on RNN/LSTM/GRU for Stock Price Prediction”
 
+https://towardsdatascience.com/time-series-clustering-deriving-trends-and-archetypes-from-sequential-data-bb87783312b4  clustering
+
 https://towardsdatascience.com/feature-engineering-on-time-series-data-transforming-signal-data-of-a-smartphone-accelerometer-for-72cbe34b8a60
 
 https://towardsdatascience.com/how-to-detect-seasonality-outliers-and-changepoints-in-your-time-series-5d0901498cff
@@ -48,6 +50,7 @@ https://towardsdatascience.com/linkedins-response-to-prophet-silverkite-and-grey
 
 https://towardsdatascience.com/time-series-from-scratch-introduction-to-time-series-with-pandas-347ac9c6b451
 
+https://towardsdatascience.com/every-pandas-function-you-can-should-use-to-manipulate-time-series-711cb0c5c749
 
 
 https://towardsdatascience.com/when-a-time-series-only-quacks-like-a-duck-10de9e165e 
