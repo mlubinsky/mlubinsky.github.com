@@ -1,3 +1,8 @@
+# Look here for more examples:
+# https://betterprogramming.pub/six-advanced-decorator-patterns-5ffe67552691
+# https://medium.com/techtofreedom/7-levels-of-using-decorators-in-python-370473fcbe76
+
+
 def measure_time(func):
     def wrapper(*args, **kwargs):
         from time import time
@@ -54,3 +59,28 @@ def restart():
 
 shutdown()
 restart() 
+
+
+
+
+def log_call(fun):
+    """
+        Decorator @log_call wraps the funtion 
+        with log events.
+    """
+    def wrapper(*args, **kwargs):
+        #Pre:
+        logger.info("before function: {}".format(fun.__name__))
+        result = fun(*args, **kwargs)
+        #post:
+        logger.info("after function: {}, result:
+                   {}".format(fun.__name__,result))
+        return result
+    return wrapper
+@log_call
+def add_one(x):
+    x = x+1
+    return(x)
+y=0
+y = add_one(y)
+y
