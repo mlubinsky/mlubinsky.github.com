@@ -11,6 +11,7 @@ https://databricks.com/p/webinar/databricks-on-aws-3-part-training-series Free t
 
 https://habr.com/ru/post/568276/ Databricks
 
+https://habr.com/ru/company/neoflex/blog/578654/ оптимизация производительности на реальных примерах
 
 http://cloudsqale.com/
 
