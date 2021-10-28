@@ -8,7 +8,7 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
 
  python -m py_compile my.py   # Check file syntax
  
- python -m json.tool my_json.json   # json buatyfier
+ python -m json.tool my_json.json   # json beautyfier
  
  
  https://sadh.life/post/builtins/
@@ -300,7 +300,7 @@ https://antonz.org/python-packaging/
 https://awesome-python.com/
 
 
-
+https://towardsdatascience.com/simulate-real-life-events-in-python-using-simpy-e6d9152a102f SimPy
 
 https://pybind11.readthedocs.io/en/stable/ C++ from python
 
