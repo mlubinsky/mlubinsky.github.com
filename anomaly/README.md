@@ -2,6 +2,11 @@ https://github.com/yzhao062/anomaly-detection-resources
 
 https://towardsdatascience.com/5-outlier-detection-methods-that-every-data-enthusiast-must-know-f917bf439210
 
+https://medium.com/mlpoint/local-outlier-factor-a-way-to-detect-outliers-dde335d77e1a
+
+Isolation Forest (IF)
+One Class SVM (SVM)
+Local Outlier Factor (LOF)
 
 https://towardsdatascience.com/well-log-data-outlier-detection-with-machine-learning-a19cafc5ea37
 
