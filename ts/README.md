@@ -27,6 +27,7 @@ https://news.ycombinator.com/item?id=28945903
  
 https://towardsdatascience.com/stop-one-hot-encoding-your-time-based-features-24c699face2f
 
+ https://ibexorigin.medium.com/list/time-series-forecast-from-scratch-c72ccf7a9229  - several articles!!!
  
 https://towardsdatascience.com/tagged/time-series-from-scratch  - several articles!!!
 
