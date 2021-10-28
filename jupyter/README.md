@@ -171,7 +171,13 @@ https://datasciencejuliahackers.com/
 https://lwn.net/SubscriberLink/835930/47c363bef07134a4/  Pluto - Notebook for Julia (similar to Jupyter)
 
 
+### Correlation
 https://www.codementor.io/@ng3687/correlation-matrix-in-excel-python-and-r-1a6i5puowo. correlation matrix
+
+https://towardsdatascience.com/the-fastest-way-to-visualize-correlation-in-python-ce10ed533346
+
+df.corr().style.background_gradient(cmap="Blues")
+
 
 <https://github.com/alandefreitas/matplotplusplus> C++
 
