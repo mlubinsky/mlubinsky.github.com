@@ -1,3 +1,5 @@
+https://github.com/NIteshx2/AdvancedSQL_Interview
+
 https://towardsdatascience.com/how-i-doubled-my-salary-in-4-months-e8c5b2b9f5bc
 
 https://cp-algorithms.com/index.html
