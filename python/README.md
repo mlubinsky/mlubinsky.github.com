@@ -13,6 +13,35 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
  
  https://sadh.life/post/builtins/
  
+ 
+ #### Collection
+ 
+  Once the deque is full, every time you add a new element at the end(using append, 
+  like for lists) the first element will be removed.
+  a deque is also more efficient than lists for adding and removing values at both ends. 
+  There are the methods append, appendleft, pop, popleftthat all take O(1). 
+  On the other hand, accessing elements in the middle is more expensive, approximately O(n).
+``` 
+ from collections import deque
+ a = deque(maxlen=10)
+``` 
+#### Counter
+```
+from collections import Counter
+c = Counter(“aaabbccdaaa”)
+print(c)
+#Output: Counter({'a': 6, 'b': 2, 'c': 2, 'd': 1})
+```
+
+#### DefaultDict
+```
+from collections import defaultdict
+toAdd =[("key1", 3), ("key2", 5), ("key3", 6), ("key2", 7)]
+d = defaultdict(list)
+for key, val in toAdd:
+  d[key].append(val)
+```
+
  ```
  last element of array:
   s[-1]
