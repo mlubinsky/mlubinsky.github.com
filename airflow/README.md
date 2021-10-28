@@ -1,5 +1,10 @@
 https://airflow.apache.org/docs/
 
+https://levelup.gitconnected.com/airflow-command-line-interface-cli-cheat-sheet-6e5d90bd3552
+
+airflow dags list
+airflow tasks list
+
 https://airflow.readthedocs.io/en/1.10.10/concepts.html
 
 To to make Several DAGs folders?
