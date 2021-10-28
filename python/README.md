@@ -76,6 +76,11 @@ The list.sort() method is only defined for lists. In contrast, the sorted() func
 
 Note that both list.sort() and sorted() have a key parameter t
 
+ Merging dictionaries
+dict1 = {'a':2 , 'b': 20}
+dict2 = {'c':15 , 'd': 40}
+merged_dict = {**dict1, **dict2}
+
 
 ```
 dot poroduct:
