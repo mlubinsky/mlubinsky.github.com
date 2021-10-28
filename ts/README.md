@@ -73,6 +73,8 @@ https://medium.com/data-science-at-microsoft/time-series-forecasting-part-3-of-3
 
 Teaching AI to Classify Time-series Patterns with Synthetic Data
 
+https://towardsdatascience.com/create-synthetic-time-series-with-anomaly-signatures-in-python-c0b80a6c093c
+
 https://www.kdnuggets.com/2021/10/teaching-ai-classify-time-series-patterns-synthetic-data.html
 
 
