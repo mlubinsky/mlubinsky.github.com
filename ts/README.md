@@ -21,6 +21,7 @@ https://news.ycombinator.com/item?id=28945903
  A change point is the one that the data trend shifts abruptly.
  Solution to detect change points is called Pruned Exact Linear Time (PELT)
  https://medium.com/dataman-in-ai/time-series-with-zillows-luminaire-f86c3a3f8e6f
+ https://towardsdatascience.com/how-to-detect-seasonality-outliers-and-changepoints-in-your-time-series-5d0901498cff
  https://arxiv.org/abs/2105.01098
  
  
@@ -41,6 +42,7 @@ Part 9:“A Technical Guide on RNN/LSTM/GRU for Stock Price Prediction”
 
 https://towardsdatascience.com/feature-engineering-on-time-series-data-transforming-signal-data-of-a-smartphone-accelerometer-for-72cbe34b8a60
 
+https://towardsdatascience.com/how-to-detect-seasonality-outliers-and-changepoints-in-your-time-series-5d0901498cff
 
 https://towardsdatascience.com/linkedins-response-to-prophet-silverkite-and-greykite-4fd0131f64cb
 
