@@ -37,6 +37,10 @@ https://emre.me/coding-patterns/merge-intervals/ . Merge intervals
 
 https://www.interviewbit.com/coding-interview-questions/
 
+
+https://towardsdatascience.com/10-algorithms-to-solve-before-your-python-coding-interview-feb74fb9bc27
+
+
 #### Given an integer array nums and an integer k, return the number of pairs (i, j) where i < j such that |nums[i] - nums[j]| == k.
 
 https://www.pankajtanwar.in/code/count-number-of-pairs-with-absolute-difference-k
@@ -472,7 +476,55 @@ https://github.com/thundergolfer/interview-with-python/blob/master/solutions/pyt
 
 #### Given strings S and T find the min window in S which contains all chars in T
 
-...
+???
+ 
+
+
+####  Given a string, find the first non-repeating character in it and return its index. 
+```
+# If it doesn't exist, return -1. # Note: all the input strings are already lowercase.
+
+#Approach 1
+def solution(s):
+    frequency = {}
+    for i in s:
+        if i not in frequency:
+            frequency[i] = 1
+        else:
+            frequency[i] +=1
+    for i in range(len(s)):
+        if frequency[s[i]] == 1:
+            return i
+    return -1
+
+print(solution('alphabet'))
+print(solution('barbados'))
+print(solution('crunchy'))
+
+print('###')
+
+#Approach 2 using collection 
+
+import collections
+
+def solution(s):
+    # build hash map : character and how often it appears
+    count = collections.Counter(s) # <-- gives back a dictionary with words occurrence count 
+                                         #Counter({'l': 1, 'e': 3, 't': 1, 'c': 1, 'o': 1, 'd': 1})
+    # find the index
+    for idx, ch in enumerate(s):
+        if count[ch] == 1:
+            return idx     
+    return -1
+
+print(solution('alphabet'))
+print(solution('barbados'))
+print(solution('crunchy'))
+
+```
+
+
+
 
 
 #### Longest substr without repeating char O(n) complexity
