@@ -35,6 +35,16 @@ print(c)
 #Output: Counter({'a': 6, 'b': 2, 'c': 2, 'd': 1})
 ```
 
+#### Flatten a list of lists
+```
+input_list = [[1], [2,3,4], [5,6], [7,8], [9]]
+output_list = [item for sublist in input_list for item in sublist]
+print(output_list)
+
+Output:
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
 #### DefaultDict
 ```
 from collections import defaultdict
@@ -79,10 +89,14 @@ The list.sort() method is only defined for lists. In contrast, the sorted() func
 Note that both list.sort() and sorted() have a key parameter t
 
  Merging dictionaries
+ 
+ 
 dict1 = {'a':2 , 'b': 20}
-dict2 = {'c':15 , 'd': 40}
+dict2 = {'c':15 , 'a': 40}
 merged_dict = {**dict1, **dict2}
-
+print(merged_dict)
+{'a': 40, 'b': 20, 'c': 15}
+ 
 
 ```
 dot poroduct:
