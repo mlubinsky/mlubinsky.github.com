@@ -1,5 +1,45 @@
 # https://medium.com/hackernoon/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 
+#. Max Substr without repeating chars
+"""
+  Linear Time:   using the window sliding technique.
+ Whenever we see repetition, we remove the window till the repeated string.
+"""
+
+def longestUniqueSubsttr(string):
+ 
+    # last index of every character
+    last_idx = {}
+    max_len = 0
+ 
+    # starting index of current
+    # window to calculate max_len
+    start_idx = 0
+ 
+    for i in range(0, len(string)):
+       
+        # Find the last index of str[i]
+        # Update start_idx (starting index of current window)
+        # as maximum of current value of start_idx and last
+        # index plus 1
+        if string[i] in last_idx:
+            start_idx = max(start_idx, last_idx[string[i]] + 1)
+ 
+        # Update result if we get a larger window
+        max_len = max(max_len, i-start_idx + 1)
+ 
+        # Update last index of current char.
+        last_idx[string[i]] = i
+ 
+    return max_len
+ 
+ 
+# Driver program to test the above function
+string = "geeksforgeeks"
+print("The input string is " + string)
+length = longestUniqueSubsttr(string)
+print("The length of the longest non-repeating character" +
+      " substring is " + str(length))
 
 https://www.callicoder.com/minimum-window-substring/
  
