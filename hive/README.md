@@ -1,5 +1,6 @@
 https://habr.com/ru/post/585460/
 
+https://tech.trivago.com/2019/01/30/a-new-functional-approach-to-complex-types-in-apache-hive/
 
 https://stackoverflow.com/questions/69576832/how-to-use-hive-macro-to-reduce-boilerplate
 
