@@ -35,6 +35,12 @@ print(c)
 #Output: Counter({'a': 6, 'b': 2, 'c': 2, 'd': 1})
 ```
 
+
+#### Square all numbers
+```
+numbers = [1,2,3,4,5,6,7]
+output = [num**2 for num in numbers]
+```
 #### Flatten a list of lists
 ```
 input_list = [[1], [2,3,4], [5,6], [7,8], [9]]
