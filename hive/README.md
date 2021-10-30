@@ -1,3 +1,6 @@
+https://habr.com/ru/post/585460/
+
+
 https://stackoverflow.com/questions/69576832/how-to-use-hive-macro-to-reduce-boilerplate
 
 https://stackoverflow.com/questions/69591239/problem-with-explode-in-hive-or-spark-query
