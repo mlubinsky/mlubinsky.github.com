@@ -38,9 +38,15 @@ https://www.youtube.com/watch?v=kVjg3jbM3Pw Shrodinger eq
 
 https://github.com/The-real-Han-Chen/Single-slit-and-double-slits-diffraction-Schrodinger-s-equation-in-2D-
  
-### Chaos
+### Chaos , Solitons, Dynamical systems
+
+https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%9F%D1%83%D0%B0%D0%BD%D0%BA%D0%B0%D1%80%D0%B5_%E2%80%94_%D0%91%D0%B5%D0%BD%D0%B4%D0%B8%D0%BA%D1%81%D0%BE%D0%BD%D0%B0
+
+http://lib.brsu.by/sites/default/files/books/%D0%91%D1%83%D0%BB%D0%BB%D0%B0%D1%84%2C%20%D0%A4.%20%D0%9A%D0%BE%D0%B4%D1%80%D0%B8%20-%20%D0%A1%D0%BE%D0%BB%D0%B8%D1%82%D0%BE%D0%BD%D1%8B.pdf
 
 http://thechaostician.com/what-is-chaos-part-v-continuous-time/
+
+https://habr.com/ru/company/ruvds/blog/583120/
 
 ### Books
 
@@ -169,6 +175,11 @@ https://core.ac.uk/. many books (including russian)
  
  
  https://diffxweyl.wordpress.com/2020/09/25/physics-textbooks-for-self-study/
+ 
+ 
+#### Gibbs effect 
+
+https://mipt.ru/education/chair/physics/S_III/Metod_3/G_t_an/BulyginGibbs.pdf
 
 ### Geometric Algebra 
 
