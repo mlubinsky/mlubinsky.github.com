@@ -1,5 +1,84 @@
 # https://medium.com/hackernoon/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 
+# difference between remove, del and pop?
+#remove() remove the first matching value.
+li = ['a','b','c','d']
+li.remove('b')
+li
+#=> ['a', 'c', 'd']
+
+# del removes an element by index.
+li = ['a','b','c','d']
+del li[0]
+li
+#=> ['b', 'c', 'd']
+
+# pop() removes an element by index and returns that element.
+li = ['a','b','c','d']
+li.pop(2)
+#=> 'c'
+li
+#=> ['a', 'b', 'd']
+
+
+
+# Check if a string only contains numbers.
+'123a'.isnumeric()
+#=> False
+'123'.isnumeric()
+#=> True
+
+#Check if a string only contains letters.
+
+'123a'.isalpha()
+#=> False
+'a'.isalpha()
+#=> True
+
+'123abc...'.isalnum()
+#=> False
+'123abc'.isalnum()
+#=> True
+
+# Return a list of keys from a dictionary.
+
+d = {'id':7, 'name':'Shiba', 'color':'brown', 'speed':'very slow'}
+list(d)
+#=> ['id', 'name', 'color', 'speed']
+
+
+# How to combine two lists into a list of tuples?
+a = ['a','b','c']
+b = [1,2,3]
+[(k,v) for k,v in zip(a,b)]
+#=> [('a', 1), ('b', 2), ('c', 3)]
+
+# How can you sort a dictionary by key, alphabetically?
+# You can’t “sort” a dictionary because dictionaries don’t have order
+# but you can return a sorted list of tuples which has the keys and values that are in the dictionary.
+d = {'c':3, 'd':4, 'b':2, 'a':1}
+sorted(d.items())
+#=> [('a', 1), ('b', 2), ('c', 3), ('d', 4)]
+
+###  How do any() and all() work?
+### Any takes a sequence and returns true if any element in the sequence is true.
+### All returns true only if all elements in the sequence are true.
+a = [False, False, False]
+b = [True, False, False]
+c = [True, True, True]
+print( any(a) )
+print( any(b) )
+print( any(c) )
+#=> False
+#=> True
+#=> True
+print( all(a) )
+print( all(b) )
+print( all(c) )
+#=> False
+#=> False
+#=> True
+
 # Given a non-empty string s, you may delete at most one character. 
 # Judge whether you can make it a palindrome.
 # The string will only contain lowercase characters a-z.
