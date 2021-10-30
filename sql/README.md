@@ -18,6 +18,7 @@ https://blog.jooq.org/10-cool-sql-optimisations-that-do-not-depend-on-the-cost-m
 
 
 ### Running totals
+https://betterprogramming.pub/4-ways-to-calculate-a-running-total-with-sql-986d0019185c
 ```
 SELECT id,month
  , Amount
