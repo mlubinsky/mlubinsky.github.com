@@ -1,5 +1,8 @@
 ## Dynamic programming
 
+https://medium.com/free-code-camp/follow-these-steps-to-solve-any-dynamic-programming-interview-problem-cc98e508cd0e
+
+
 https://oddblogger.com/recursion-memoization-dynamic-programming-lcs-problem/
 
 https://trekhleb.dev/blog/2018/dynamic-programming-vs-divide-and-conquer/
