@@ -25,6 +25,8 @@ such as max(),sum(),distinct_count(), 95thPercentile().
 
 it is worth it to put extra effort into reducing the cardinalities introduced by timestamp. The way Druid approaches this is called rollup; you can think of rollup in Druid as a scheme to generate a summary of data by truncating the timestamp and pre-aggregating. Truncating the timestamp is an effective way to reduce cardinalities that are introduced by timestamp. Druid generates mergeable aggregates after rollup in segments and records them with the same combination of dimensions (including the truncated timestamp). Druid can easily calculate aggregates from billions of records in sub-seconds.
 
+Insights into Bitmap Index
+https://levelup.gitconnected.com/insights-into-indexing-using-bitmap-index-c28a3db1ad97
 
 Druid and Kafka
 
