@@ -198,7 +198,22 @@ But the index() function can also be used on lists or tuples.
 ```
 
 ### Dictionary
+
+Transpose of a matrix
 ```
+mat = [[1,2,3], [4,5,6], [7,8,9]]
+transpose_matrix = [list(item) for item in zip(*mat)]
+print(transpose_matrix)
+```
+
+Swap Keys and Values in a dictionary
+
+```
+dict = {'Name': 'Joy', 'Age': 25, 'Language':'Python'}
+result = {v:k for k, v in dict.items()}
+print(result)
+
+
  city = {'UK':'London','Japan':'Tokyo'}
  print(city['Italy'])
   KeyError: 'Italy'
