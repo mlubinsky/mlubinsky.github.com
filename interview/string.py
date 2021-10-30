@@ -1,6 +1,87 @@
 # https://medium.com/hackernoon/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 
 # Find the smallest window in a string containing all characters of another string
+https://stackoverflow.com/questions/2459653/how-to-find-smallest-substring-which-contains-all-characters-from-a-given-string
+
+ 
+ 
+https://www.interviewkickstart.com/problems/minimum-window-substring 
+""" 
+ we create an array named frequency to keep a count of occurrences of each character in string t (O(length of t)). 
+ Now we start traversing the string S and keep a variable “cnt” which increases whenever we encounter a character present in string t.
+ When the value of count reaches the length of t, this substring contains all the characters present in string t. 
+ We try removing extra characters as well as unwanted characters from the beginning of the obtained string. 
+ The resultant string is checked whether it can become the minimum window, and the answer is updated accordingly.
+
+This algorithm uses the 2 pointer method, which is widely used in solving various problems. 
+You can refer https://www.geeksforgeeks.org/two-pointers-technique/ article 
+ 
+ 
+ Time Complexity:
+O(n) where n is the length of string s.
+
+Since each character of string s is traversed at most 2 times, the time complexity of the algorithm is O(n) + O(m).
+
+Auxiliary Space Used:
+O(1).
+
+We are creating 2 frequency arrays of size 128, which use extra space O(128) + O(128). Hence it is O(1).
+
+Space Complexity:
+O(n+m) where n is the length of string s and m is the length of string t.
+
+For storing input it will take O(n+m), as we are storing two strings of length n and length m and the auxiliary space used is O(1) hence total complexity will be O(n+m).
+
+Note: We could use an array of length 62 (with some mapping) instead of 128, but this is a general solution which works for the input string containing any ASCII characters.
+"""
+    public static String minimum_window(String s, String t){
+
+        String result = "";
+
+        if(t.length()>s.length()) {
+            return "-1";
+        }
+        int n = s.length(), m = t.length();   
+        int freq1[] = new int[128]; /*creating a frequency array to store the 
+                                    frequencies of the characters in string t*/
+        int freq2[] = new int[128]; /*creating a frequency array to store the 
+                                    frequencies of the characters in string s*/
+        for (char c : t.toCharArray()) {
+            freq1[c]++;
+        }
+        int l = 0, len = n+1; 
+        int cnt = 0;
+        /*This part uses "2 pointer method." You can find a link 
+        for the same in the editorial of this problem.*/
+        for (int i = 0; i < n ; i++){
+            char temp = s.charAt(i);
+            freq2[temp]++;
+            //if a character is present in string t we increment the count of cnt variable.
+            if (freq1[temp]!=0 && freq2[temp]<=freq1[temp]) {
+                cnt++; 
+            }
+            /*if we match all the characters present in string t, 
+            we try to find the minimum window possible*/
+            if (cnt==m) {
+                /*if any character is occuring more than the required times, we try to remove it
+                from the starting and also try to remove the unwanted characters that are 
+                not a part of string t from the starting. We check the remainder string if it 
+                can become the smallest window.*/
+                while (freq2[s.charAt(l)]>freq1[s.charAt(l)] || freq1[s.charAt(l)]==0) { 
+                    if (freq2[s.charAt(l)]>freq1[s.charAt(l)]) { 
+                        freq2[s.charAt(l)]--; 
+                    }
+                    l++; 
+                }
+                //check if this can become the smallest window and update the result accordingly.
+                if (len > i-l+1) { 
+                    len = i-l+1;
+                    result = s.substring(l,l+len);
+                } 
+            } 
+        } 
+        return result.length()==0?"-1":result;
+    }
 """
 1. First check if the length of the string is less than the length of the given pattern, 
 if yes then “no such window can exist “.
