@@ -8,6 +8,21 @@ https://stackoverflow.com/questions/69591239/problem-with-explode-in-hive-or-spa
 
 ## File formats: Avro, Parquet
 
+pip install parquet-tools
+
+https://pypi.org/project/parquet-tools/
+
+DuckDB for parquet
+
+https://duckdb.org/docs/data/parquet.  https://duckdb.org/2021/06/25/querying-parquet.html
+
+https://parquet.apache.org/documentation/latest/
+
+
+https://medium.com/swlh/insights-into-parquet-storage-ac7e46b94ffe
+
+parquet-tools meta hdfs://host:port/<location>/file1
+
 <https://habr.com/ru/company/mailru/blog/504952/> Avro, Parquet, ...
 
 <https://habr.com/ru/post/530422/> protobuf vs Avro
