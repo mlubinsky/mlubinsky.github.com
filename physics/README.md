@@ -181,6 +181,9 @@ https://core.ac.uk/. many books (including russian)
 
 https://mipt.ru/education/chair/physics/S_III/Metod_3/G_t_an/BulyginGibbs.pdf
 
+В точках разрыва функции, разложенной в ряд Фурье, скачки значений суммы ряда Фурье превышают величину скачков значений самой
+функции на одинаковые доли, равные 17,9%.
+
 ### Geometric Algebra 
 
 https://bivector.net/
