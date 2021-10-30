@@ -13,6 +13,11 @@ All lectures
 
 https://arxiv.org/search/?query=lecture&searchtype=title
 
+https://mipt.ru/education/chair/physics/S_V/poleznaya-literatura-po-kursu.php
+
+https://mipt.ru/education/chair/physics/S_6/method/
+
+https://mipt.ru/education/chair/physics/S_V/
 
 https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ Interesting blog
 
