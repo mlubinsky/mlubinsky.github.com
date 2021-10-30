@@ -1,6 +1,12 @@
 https://github.com/NIteshx2/AdvancedSQL_Interview
 
+https://medium.com/javarevisited/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0
+
 https://towardsdatascience.com/how-i-doubled-my-salary-in-4-months-e8c5b2b9f5bc
+
+https://github.com/yangshun/tech-interview-handbook
+
+https://github.com/kdn251/interviews
 
 https://cp-algorithms.com/index.html
 
@@ -21,6 +27,11 @@ https://www.youtube.com/watch?v=vs4aFU3DiXY  interview for ML
 https://emre.me/
 
 https://www.pankajtanwar.in/coding-diary
+
+
+https://www.java67.com/2018/04/21-string-programming-and-coding-interview-questions-answers.html
+
+https://www.educative.io/courses/grokking-the-coding-interview?affiliate_id=5073518643380224
 
 https://emre.me/coding-patterns/merge-intervals/ . Merge intervals
 
