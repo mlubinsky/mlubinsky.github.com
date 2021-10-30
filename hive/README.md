@@ -105,6 +105,20 @@ SemanticException [Error 10081]: UDTF's are not supported outside the SELECT cla
  select s.code, exp.splitted
   from sample_07 s
   lateral view explode(split('asdfa adsfa asdaf asdfad','\\s')) exp as splitted
+  
+  
+  
+ SELECT employee_id, employee_name, employee_telephone, employee_date, addr_city, addr_street, addr_zipcode, dept_name, dept_director, dept_budget
+
+FROM employee
+
+LATERAL VIEW json_tuple (employee.json, 'id', 'name', 'telephone', 'date', 'address', 'department') emp AS employee_id, employee_name, employee_telephone, employee_date, employee_address, employee_department
+
+LATERAL VIEW json_tuple (emp.employee_address, 'city', 'street', 'zipcode') addr AS addr_city, addr_street, addr_zipcode
+
+LATERAL VIEW json_tuple (emp.employee_department, 'name', 'director', 'budget') dept AS dept_name, dept_director, dept_budget 
+  
+  
 ```
 
 Another example:
