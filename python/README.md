@@ -10,6 +10,8 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
  
  python -m json.tool my_json.json   # json beautyfier
  
+ Install Anaconda
+ https://towardsdatascience.com/how-to-easily-set-up-python-on-any-m1-mac-5ea885b73fab
  
  https://sadh.life/post/builtins/
  
