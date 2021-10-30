@@ -554,6 +554,10 @@ https://habr.com/ru/post/516206/. QM article
 
 https://habr.com/ru/post/342654/ Autolokebaiya
 
+Цепо́чка То́ды (англ. Toda's chain) — система дискретных нелинейных уравнений, описывающих динамику взаимосвязанных нелинейных осцилляторов. Имеет важное значение в теории колебаний кристаллических решёток.
+
+https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B0_%D0%A2%D0%BE%D0%B4%D1%8B
+
 <https://youtu.be/rO6KySrM1IY> ru
 
 ## So you want to learm physics
