@@ -179,6 +179,10 @@ https://www.youtube.com/watch?v=tX_MeIbfEmw  К.В. Воронцов "Обзор
 https://arxiv.org/abs/1803.08823 A high-bias, low-variance introduction to Machine Learning for physicists
 
 
+#### MAXIMUM Likelihood
+
+https://habr.com/ru/company/otus/blog/585610/
+
 https://towardsdatascience.com/maximum-likelihood-vs-bayesian-estimation-dd2eb4dfda8a
 
 https://ggcarvalho.dev/posts/montecarlo/ .  Monte Carlo with GO
