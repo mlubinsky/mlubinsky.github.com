@@ -1,5 +1,44 @@
 # https://medium.com/hackernoon/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 
+
+# find the second largest element in a list or the second smallest element in a list.
+
+def second_largest(numbers):
+    minimum = float('-inf')
+    first, second = minimum, minimum
+    for n in numbers:
+        if n > first:
+            first, second = n, first
+        elif first > n > second:
+            second = n
+    return second if second != minimum else None
+  
+# or   
+numbers = set(numbers)
+numbers.remove(max(numbers))
+max(numbers)
+
+# or 
+sorted(set(numbers))[-2]
+
+###. using sorting
+my_list = [13, 51, 1, -14, 0, 91, 43]
+my_list.sort()
+print(my_list[-2])  # 51
+
+# or
+largest_element = max(my_list)
+my_list.remove(largest_element)
+print(max(my_list))  # 51
+
+
+
+list_1 = [1, 2, 3]
+list_2 = ['one', 'two', 'tree']
+list(zip(list_1, list_2))
+
+# [(1,one),(2,two),(3,tree)]
+
 #. Max Substr without repeating chars
 """
   Linear Time:   using the window sliding technique.
