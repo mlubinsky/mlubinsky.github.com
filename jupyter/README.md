@@ -2,6 +2,16 @@ https://github.com/mwouts/jupytext  Notebook which works with regular .py files
 
 https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
 
+```
+import pandas as pd
+from sqlite3 import connect
+df = pd.DataFrame([['a', 'b', 'c', 'd', 'e'], [100, 200, 300, 400, 500]]).T
+df
+
+conn = connect(':memory:')
+df.to_sql('test_data', conn)
+pd.read_sql('SELECT [0] FROM test_data WHERE [1]>200', conn)
+```
 
 ### Jupyter books
 https://jupyterbook.org/intro.html
