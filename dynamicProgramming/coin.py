@@ -1,3 +1,14 @@
+# What is the maximum amount of water one could hold between two vertical sticks (disregarding any sticks in between)? 
+# Note that the amount of water that can be held is determined 
+# by the distance between the sticks and the height of the shorter.
+# let use 2-pointers approach
+# If we were to move the right pointer left, the area would decrease if left pointer height is smaller, 
+#   since the height of wather reservour is restricted by the smaller stick.
+
+ # Hence, our rationale for moving will be to move whichever of the pointers points to the smaller bar.
+ #  The algorithm terminates when the left and right pointers meet  
+   
+
 # https://runestone.academy/runestone/books/published/pythonds/Recursion/DynamicProgramming.html
 # making change using the fewest coins
 
