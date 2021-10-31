@@ -1,7 +1,35 @@
 # https://medium.com/hackernoon/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 
+# Not only lists but also strings can be reversed with slicing.
+
+numbers = [1, 2, 3, 4, 5]
+print(numbers[::-1])
+#[5, 4, 3, 2, 1]
+
+s = "Hello"
+print(s[::-1])
+# olleH
 
 # find the second largest element in a list or the second smallest element in a list.
+
+# list of numbers - length of list should be at least 2
+list1 = [10, 20, 4, 45, 99]
+ 
+mx=max(list1[0],list1[1])
+secondmax=min(list1[0],list1[1])
+n =len(list1)
+for i in range(2,n):
+    if list1[i]>mx:
+        secondmax=mx
+        mx=list1[i]
+    elif list1[i]>secondmax and \
+        mx != list1[i]:
+        secondmax=list1[i]
+ 
+print("Second highest number is : ",\
+      str(secondmax))
+
+#-----------------
 
 def second_largest(numbers):
     minimum = float('-inf')
