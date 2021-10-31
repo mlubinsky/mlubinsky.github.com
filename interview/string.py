@@ -1,5 +1,19 @@
 # https://medium.com/hackernoon/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 
+
+# The Sieve Of Eratosthenes
+def sieve_of_eratosthenes(upper_bound):
+    primes = [True] * upper_bound
+    primes[0] = False
+    primes[1] = False
+    for i in range(2, isqrt(upper_bound)+1):
+        if primes[i]:
+            for x in range(i*i, upper_bound, i):
+                primes[x]=False
+    return primes.count(True)
+
+print(sieve_of_eratosthenes(10000000))
+
 # Not only lists but also strings can be reversed with slicing.
 
 numbers = [1, 2, 3, 4, 5]
