@@ -7,6 +7,27 @@ def decode(inp):
     if  item.isdigit():
        out += int(item) * inp[i-1]
   return out
+#------------------------------
+def encode(message):
+  encoded_string = ""
+  i = 0
+  while (i <= len(message)-1):
+        count = 1
+        ch = message[i]
+        j = i
+        while (j < len(message)-1):
+        #if the character at the current index is the same as the character at the next index. If the characters are the same, the count is incremented to 1'''
+            if (message[j] == message[j + 1]):
+                count = count + 1
+                j = j + 1
+            else:
+                break
+        #the count and the character is concatenated to the encoded string'''
+        encoded_string += ch + str(count)
+        i = j + 1
+
+  return encoded_string
+#-------------------------
 
 s='a2z4'
 print(s)
