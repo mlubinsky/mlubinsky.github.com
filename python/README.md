@@ -16,6 +16,17 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
  https://sadh.life/post/builtins/
  
  
+ ####  Python Libraries
+``` 
+from stdlib_list import stdlib_list
+ 
+# Change this 3.7 to version of Python
+libraries = stdlib_list("3.7")
+ 
+# Printing libraries
+print('[%s]' % '\n'.join(map(str, libraries))
+``` 
+ 
  #### Collection
  
   Once the deque is full, every time you add a new element at the end(using append, 
