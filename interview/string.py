@@ -1,6 +1,18 @@
 # https://medium.com/hackernoon/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 
 
+def decode(inp):
+  out=''
+  for i, item in enumerate(inp):
+    if  item.isdigit():
+       out += int(item) * inp[i-1]
+  return out
+
+s='a2z4'
+print(s)
+print(decode(s))
+
+
 # The Sieve Of Eratosthenes
 def sieve_of_eratosthenes(upper_bound):
     primes = [True] * upper_bound
