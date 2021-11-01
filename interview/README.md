@@ -6,6 +6,8 @@ https://towardsdatascience.com/how-i-doubled-my-salary-in-4-months-e8c5b2b9f5bc
 
 https://github.com/yangshun/tech-interview-handbook
 
+https://www.youtube.com/watch?v=tWVWeAqZ0WU . Graph Algo
+
 https://github.com/kdn251/interviews
 
 https://cp-algorithms.com/index.html
