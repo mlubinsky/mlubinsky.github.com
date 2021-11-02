@@ -45,6 +45,8 @@ https://towardsdatascience.com/10-algorithms-to-solve-before-your-python-coding-
 
 https://github.com/thundergolfer/interview-with-python/tree/master/solutions/python
 
+https://redquark.org/blogs
+
 
 #### Given an integer array nums and an integer k, return the number of pairs (i, j) where i < j such that |nums[i] - nums[j]| == k.
 
