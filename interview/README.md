@@ -43,6 +43,9 @@ https://www.interviewbit.com/coding-interview-questions/
 https://towardsdatascience.com/10-algorithms-to-solve-before-your-python-coding-interview-feb74fb9bc27
 
 
+https://github.com/thundergolfer/interview-with-python/tree/master/solutions/python
+
+
 #### Given an integer array nums and an integer k, return the number of pairs (i, j) where i < j such that |nums[i] - nums[j]| == k.
 
 https://www.pankajtanwar.in/code/count-number-of-pairs-with-absolute-difference-k
