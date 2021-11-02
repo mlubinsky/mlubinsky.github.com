@@ -33,8 +33,111 @@ s='a2z4'
 print(s)
 print(decode(s))
 
+#  Findt subarray  with sum as given sum_
+ ----------------------------------------------
+# Returns true if the there is a subarray
+# of arr[] with sum  equal to 'sum'
+# otherwise returns false. Also, prints  the result.
+
+def subArraySum(arr,   sum_):
+    n = len(arr) 
+    # Initialize curr_sum as value of first element  and starting point as 0
+    curr_sum = arr[0]
+    start = 0
+ 
+    # Add elements one by  one to curr_sum and
+    # if the curr_sum exceeds sum, then remove starting element
+    i = 1
+    while i <= n:
+         
+        # If curr_sum exceeds the sum, then remove the starting elements
+        while curr_sum > sum_ and start < i-1:
+         
+            curr_sum = curr_sum - arr[start]
+            start += 1
+             
+        # If curr_sum becomes equal to sum, then return true
+        if curr_sum == sum_:
+            print ("Sum found between indexes")
+            print ("% d and % d"%(start, i-1))
+            return 1
+ 
+        # Add this element to curr_sum
+        if i < n:
+            curr_sum = curr_sum + arr[i]
+        i += 1
+ 
+    # If we reach here, then no subarray
+    print ("No subarray found")
+    return 0
+ 
+# Driver program
+arr = [15, 2, 4, 8, 9, 5, 10, 23]
+
+sum_ = 23
+ 
+subArraySum(arr,   sum_)
+
+# Longest substr with at most 2 distinct chars
+# ----------------------------------------------
+int lengthOfLongestSubstringTwoDistinct(string s) {
+        vector<int> map(128, 0);
+        int counter=0, begin=0, end=0, d=0; 
+        while(end<s.size()){
+            if(map[s[end++]]++==0) counter++;
+            while(counter>2) 
+                 if(map[s[begin++]]--==1) counter--;
+            d=max(d, end-begin);
+        }
+        return d;
+    }
+
+# Longest Substring Without Repeating Characters
+#-------------------------------------------------
+int lengthOfLongestSubstring(string s) {
+        vector<int> map(128,0);
+        int counter=0, begin=0, end=0, d=0; 
+        while(end<s.size()){
+            if(map[s[end++]]++>0) counter++; 
+            while(counter>0) 
+                 if(map[s[begin++]]-->1) counter--;
+            d=max(d, end-begin); //while valid, update d
+        }
+        return d;
+    }
+
+
+# longest consequitive sequence which can be constructed in array by reshuffling elements
+# ---------------------------------------------------------------------------
+# for each  element n from input we check if (n-1) and (n+1) in the set
+# if they are we increase len and erase these numbers
+s= set()
+maxlen=0
+for n in numbers:
+   tmp=n
+   len=0
+  
+   while n in s:
+      s.remove(n)
+      n+=1
+      len+=1
+      
+    n = temp-1
+    while n in s:
+      s.remove(n)
+      n -=1
+      len++
+      
+    maxlen = max(maxlen, len)
+ 
+return maxlen
+
+
+
+
 
 # The Sieve Of Eratosthenes
+#--------------------------------
 def sieve_of_eratosthenes(upper_bound):
     primes = [True] * upper_bound
     primes[0] = False
@@ -58,7 +161,7 @@ print(s[::-1])
 # olleH
 
 # find the second largest element in a list or the second smallest element in a list.
-
+#-------------------------------------------------
 # list of numbers - length of list should be at least 2
 list1 = [10, 20, 4, 45, 99]
  
@@ -76,6 +179,12 @@ for i in range(2,n):
 print("Second highest number is : ",\
       str(secondmax))
 
+
+
+
+
+
+[100,4,200,1,2,3] - answer
 #-----------------
 
 def second_largest(numbers):
