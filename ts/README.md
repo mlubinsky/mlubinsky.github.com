@@ -1,5 +1,7 @@
 ### ClickHouse vs TimescaleDB  vs Druid vs Pinot for timeseries
 
+https://pradeepchhetri.xyz/clickhousevstimescaledb/
+
 https://blog.timescale.com/blog/what-is-clickhouse-how-does-it-compare-to-postgresql-and-timescaledb-and-how-does-it-perform-for-time-series-data/
 
 https://medium.com/confluera-engineering/real-time-security-insights-apache-pinot-at-confluera-a6e5f401ff02
