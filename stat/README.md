@@ -1,3 +1,6 @@
+https://www.cs.ox.ac.uk/people/nando.defreitas/publications/BayesOptLoop.pdf Bayes
+
+
 http://www.numericalexpert.com/blog/online_stat/ single pass for (variance, skewness, kurtosis, covariance)
 
 http://www.numericalexpert.com/tutorials.php
