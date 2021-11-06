@@ -3,6 +3,10 @@ https://habr.com/ru/company/ruvds/blog/582126/. Наш мозг не компь�
 
 https://arxiv.org/abs/2110.14602 Towards a Theory of Evolution as Multilevel Learning
 
+https://www.nature.com/articles/d41586-021-02904-w
+
+https://news.ycombinator.com/item?id=29123843
+
 https://www.youtube.com/watch?v=m40UnvhT1Vg
 
 cancer
