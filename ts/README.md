@@ -207,7 +207,8 @@ http://ceur-ws.org/Vol-2259/aics_11.pdf
 
 https://arxiv.org/pdf/2103.14200.pdf
 
-
+https://arxiv.org/pdf/2110.10914.pdf Empirical Evaluation of Time-Series Feature
+Sets
 
 https://facebookresearch.github.io/Kats/   KATS from Facebook
 
@@ -216,7 +217,16 @@ https://github.com/linkedin/greykite  GreyKite from LinkedIn
 ### Darts 
 https://github.com/unit8co/darts Darts
 
+https://arxiv.org/pdf/2110.03224.pdf
+
 https://news.ycombinator.com/item?id=28155196
+
+### DeepTime
+
+https://github.com/deeptime-ml/deeptime
+
+https://arxiv.org/pdf/2110.15013.pdf
+
 
 ### Time weighted averages
 
