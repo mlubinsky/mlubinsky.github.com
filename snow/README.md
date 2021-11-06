@@ -1,5 +1,7 @@
 ### Overview
 
+https://apisero.com/airflow-integration-with-snowflake/ Airflow + Snowflake
+
 <https://www.infoq.com/presentations/snowflake-architecture/>
 
 <https://www.analytics.today/blog/tuning-snowflake>
