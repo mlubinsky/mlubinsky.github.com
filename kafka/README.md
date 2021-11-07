@@ -6,7 +6,10 @@ https://towardsdatascience.com/apache-kafka-in-python-how-to-stream-data-with-pr
 
 https://towardsdatascience.com/make-a-mock-real-time-stream-of-data-with-python-and-kafka-7e5e23123582
 
-### Kafka on Mac
+### Kafka and Python
+
+https://habr.com/ru/post/587592/
+
 https://habr.com/ru/post/578916/ Python микросервисы с Kafka 
 
 https://towardsdatascience.com/real-time-anomaly-detection-with-apache-kafka-and-python-3a40281c01c9
