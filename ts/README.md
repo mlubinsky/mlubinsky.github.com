@@ -1,3 +1,7 @@
+https://www.youtube.com/hashtag/timeseries
+
+https://www.youtube.com/watch?v=3sH1kisAK9s  Time Series Data Analysis and Exploratory Analysis
+
 ### ClickHouse vs TimescaleDB  vs Druid vs Pinot for timeseries
 
 https://pradeepchhetri.xyz/clickhousevstimescaledb/
@@ -27,7 +31,10 @@ https://news.ycombinator.com/item?id=28945903
  https://arxiv.org/abs/2105.01098
  
  
-https://towardsdatascience.com/stop-one-hot-encoding-your-time-based-features-24c699face2f
+https://towardsdatascience.com/stop-one-hot-encoding-your-time-based-features-24c699face2f Do not use One Hot Encoding
+
+
+https://www.youtube.com/watch?v=jR0phoeXjrc Multivariate Time Series Data Preprocessing with Pandas in Python 
 
  https://ibexorigin.medium.com/list/time-series-forecast-from-scratch-c72ccf7a9229  - several articles!!!
  
