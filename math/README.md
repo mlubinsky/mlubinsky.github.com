@@ -94,6 +94,8 @@ https://galileo-unbound.blog/python-programs-for-nonlinear-dynamics/
 
 http://www.dyn-sys.org/
 
+https://www.youtube.com/playlist?list=PLbN57C5Zdl6j_qJA-pARJnKsmROzPnO9V
+
 https://www.youtube.com/watch?v=HKsyGrp7fPg&list=PLLi3bLYwJwuMBvrTC64AaNEUJp2tcnlmb
 Динамические системы и бифуркации // Виктор Клепцын
 
