@@ -1,5 +1,7 @@
 https://habr.com/ru/company/jugru/blog/586376/. Chrome extensions
 
+https://habr.com/ru/post/587750/ sync/locks/
+
 ```
  [] Square brackets are often simply called brackets,
  {} Curly brackets  are often called braces 
