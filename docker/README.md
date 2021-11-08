@@ -14,6 +14,8 @@ https://www.youtube.com/watch?v=BZiwpsnLLYQ Python in Docker
 
 https://www.codingholygrail.com/build-docker-image-for-python-projects
 
+https://habr.com/ru/company/wunderfund/blog/586778/
+
 
 <https://www.pybootcamp.com/blog/how-to-containerize-python-application/>
 
