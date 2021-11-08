@@ -60,6 +60,27 @@ http://bayes.cs.ucla.edu/WHY/ The Book of why
  75th percentile.
  
  interquartile range - IQR is 75th - 25th, aka, the middle-50%
+ 
+ 
+https://habr.com/ru/post/548104/ ТЕСТ МАННА-УИТНИ-УИЛКОКСОНА И SCORE-ФУНКЦИИ
+
+https://seeing-theory.brown.edu/index.html
+
+http://www.jerrydallal.com/LHSP/LHSP.HTM
+
+https://www.stat.berkeley.edu/~aditya/resources/AllLectures2018Fall201A.pdf
+
+https://habr.com/post/265321/ . statistical disributions
+
+https://seeing-theory.brown.edu/index.html . Visual probability and stat
+
+https://textbooks.opensuny.org/introduction-to-the-modeling-and-analysis-of-complex-systems/
+
+https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf
+
+https://github.com/Quanteeks/Statistics-lectures/blob/master/book.pdf 
+ 
+ 
 
 https://queueing-tool.readthedocs.io/en/latest/
 
