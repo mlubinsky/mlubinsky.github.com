@@ -1,5 +1,9 @@
 https://github.com/NIteshx2/AdvancedSQL_Interview
 
+https://www.educative.io/path/ace-python-coding-interview
+
+https://www.algoexpert.io/
+
 https://habr.com/ru/post/587348/
 
 https://medium.com/javarevisited/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0
