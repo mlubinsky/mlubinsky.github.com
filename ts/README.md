@@ -2,6 +2,8 @@ https://www.youtube.com/hashtag/timeseries
 
 https://www.youtube.com/watch?v=3sH1kisAK9s  Time Series Data Analysis and Exploratory Analysis
 
+https://www.youtube.com/watch?v=r71hWIUscV4 . Moving Avg
+
 ### ClickHouse vs TimescaleDB  vs Druid vs Pinot for timeseries
 
 https://pradeepchhetri.xyz/clickhousevstimescaledb/
