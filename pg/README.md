@@ -4,6 +4,10 @@ https://news.ycombinator.com/item?id=28776786. PG clustering /sharding
 
 https://habr.com/ru/company/tensor/blog/573214/ SQL optimization
 
+https://news.ycombinator.com/item?id=29163319 	Lesser-known Postgres features
+
+https://hakibenita.com/tag/postgresql
+
 sshtunnel to postgres
 
 https://towardsdatascience.com/how-to-connect-to-a-postgresql-database-with-python-using-ssh-tunnelling-d803282f71e7
