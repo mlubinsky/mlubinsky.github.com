@@ -4,6 +4,8 @@ https://stackoverflow.com/questions/68584868/python3-datetime-datetime2021-05-09
 
 https://blog.guilatrova.dev/
 
+https://github.com/cosmicpython/book Good Book
+
 https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
 
  python -m py_compile my.py   # Check file syntax
