@@ -4,6 +4,8 @@ https://www.youtube.com/watch?v=3sH1kisAK9s  Time Series Data Analysis and Explo
 
 https://www.youtube.com/watch?v=r71hWIUscV4 . Moving Avg
 
+https://medium.com/data-science-at-microsoft/python-open-source-libraries-for-scaling-time-series-forecasting-solutions-3485c3bd8156
+
 ### ClickHouse vs TimescaleDB  vs Druid vs Pinot for timeseries
 
 https://pradeepchhetri.xyz/clickhousevstimescaledb/
