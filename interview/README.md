@@ -1,5 +1,7 @@
 https://github.com/NIteshx2/AdvancedSQL_Interview
 
+https://www.algorithm-archive.org/
+
 https://www.educative.io/path/ace-python-coding-interview
 
 https://www.algoexpert.io/
