@@ -71,7 +71,13 @@ public:
         return res;
     }
 }
-```    
+```   
+
+### Path from root to given node
+
+https://www.devglan.com/datastructure/print-path-from-root-to-node-binary-tree
+
+https://www.techiedelight.com/print-all-paths-from-root-to-leaf-nodes-binary-tree/
 
 #### For  binary tree find max depth and max wide
 
