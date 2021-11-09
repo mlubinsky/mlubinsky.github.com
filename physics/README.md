@@ -230,6 +230,8 @@ https://www.youtube.com/watch?v=EceVJJGAFFI
 
 ## QM
 
+https://www.youtube.com/watch?v=8mi0PoPvLvs . Advanced Quantum Mechanics. Leonard Susskind
+
 https://www.youtube.com/playlist?list=PLq94LoYzjZTos43uI14BeBJ8Y6d0v2g6f
 
 https://ridiculousfish.com/wavefiz/
