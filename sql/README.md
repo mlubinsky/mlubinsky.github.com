@@ -1,5 +1,7 @@
 https://habr.com/ru/company/querifylabs/blog/578842/ SQL plan
 
+https://hakibenita.com/sql-for-data-analysis
+
 https://towardsdatascience.com/jinja-sql-%EF%B8%8F-7e4dff8d8778 Jinja with SQL
 
 https://winand.at/sql-slides-for-developers
