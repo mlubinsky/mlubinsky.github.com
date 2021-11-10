@@ -8,7 +8,13 @@ https://medium.com/data-science-at-microsoft/python-open-source-libraries-for-sc
 
 https://habr.com/ru/post/588270/ Noise reduction
 
-https://habr.com/ru/post/588320/ Anomaly detection
+### Anomaly detection
+
+https://pkghosh.wordpress.com/2019/07/25/time-series-sequence-anomaly-detection-with-markov-chain-on-spark/ 
+
+https://habr.com/ru/post/588320/ 
+
+ 
 
 ### ClickHouse vs TimescaleDB  vs Druid vs Pinot for timeseries
 
