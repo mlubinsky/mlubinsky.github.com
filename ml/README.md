@@ -21,6 +21,8 @@ https://lazypredict.readthedocs.io/en/latest/readme.html#
 
 https://www.argmin.net/
 
+https://datasketches.apache.org/ A software library of stochastic streaming algorithms
+
 https://medium.com/inspiredbrilliance/fast-approximation-on-massive-datasets-dd23117bab7f
 
 https://t.me/emeliml Эмели Драль о прикладном машинном обучении.
