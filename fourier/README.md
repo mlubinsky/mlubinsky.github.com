@@ -1,3 +1,5 @@
+https://see.stanford.edu/materials/lsoftaee261/book-fall-07.pdf
+
 ## Fourier series
 https://habr.com/ru/post/528734/
 
