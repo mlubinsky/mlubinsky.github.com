@@ -128,6 +128,8 @@ http://creatingdata.us/techne/deep_scatterplots/#  Zoomable scatterplot
 https://habr.com/ru/post/559130/
 
 
+Data Driven Causal Relationship Discovery with Python Example Code
+https://pkghosh.wordpress.com/2021/05/25/data-driven-causal-relationship-discovery-with-python-example-code/
 
 https://habr.com/ru/company/otus/blog/559666/  Kaggle tricks
 
