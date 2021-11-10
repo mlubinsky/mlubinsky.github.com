@@ -84,6 +84,8 @@ https://towardsdatascience.com/tagged/apache-airflow
 cross-DAG dependencies
 https://medium.com/quintoandar-tech-blog/effective-cross-dags-dependency-in-apache-airflow-1885dc7ece9f
 
+Airflow in Docker
+https://levelup.gitconnected.com/running-airflow-in-docker-759068fb43b2
 
 ### Airflow 2
 
