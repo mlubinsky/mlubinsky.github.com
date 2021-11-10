@@ -32,6 +32,9 @@ https://news.ycombinator.com/item?id=22868286
 
 https://news.ycombinator.com/item?id=28945903
 
+### Change point detection
+https://pkghosh.wordpress.com/2020/09/27/time-series-change-point-detection-with-two-sample-statistic-on-spark-with-application-for-retail-sales-data/
+
  A change point is the one that the data trend shifts abruptly.
  Solution to detect change points is called Pruned Exact Linear Time (PELT)
  https://medium.com/dataman-in-ai/time-series-with-zillows-luminaire-f86c3a3f8e6f
