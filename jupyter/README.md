@@ -4,6 +4,8 @@ https://medium.com/codex/how-to-set-up-and-run-python-data-science-development-e
 
 https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
 
+https://lux-api.readthedocs.io/en/latest/index.html  visual data exploration
+
 ```
 import pandas as pd
 from sqlite3 import connect
