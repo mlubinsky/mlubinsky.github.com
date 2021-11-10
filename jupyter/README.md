@@ -9,6 +9,23 @@ https://lux-api.readthedocs.io/en/latest/index.html  visual data exploration
 
 https://towardsdatascience.com/summarize-pandas-data-frames-b9770567f940 Skimpy is a convenient way to generate quick summaries of any dataset, even without writing any code.
 
+https://pkghosh.wordpress.com/2020/07/13/learn-about-your-data-with-about-seventy-data-exploration-functions-all-in-one-python-class/
+
+https://medium.com/trymito/9-simple-python-functions-that-will-speed-up-your-exploratory-data-analysis-efaa6de9f8bb
+
+<https://realpython.com/python-statistics/>
+
+<https://realpython.com/pandas-python-explore-dataset/>
+
+
+<https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
+
+ 
+
+<https://cloudblogs.microsoft.com/opensource/2019/10/10/microsoft-open-sources-sanddance-visual-data-exploration-tool/>
+SandDance   visualization tool from Microsoft Research
+
+### SQLite
 ```
 import pandas as pd
 from sqlite3 import connect
@@ -31,7 +48,6 @@ https://www.pola.rs/ - fast dataframe
 
 https://towardsdatascience.com/4-pandas-functions-that-i-wish-i-knew-earlier-1edcc3a491bb
 
-https://medium.com/trymito/9-simple-python-functions-that-will-speed-up-your-exploratory-data-analysis-efaa6de9f8bb
 
 https://medium.com/gustavorsantos/pandas-query-the-easiest-way-to-filter-data-39e0163ef35a
 
@@ -234,9 +250,7 @@ A Series has one axis, the index. A DataFrame has two axes, the index and the co
 It’s useful to note here that in all the DataFrame functions that can be applied to either rows or columns,
 an axis of 0 refers to the index, an axis of 1 refers to the columns
 
-<https://realpython.com/python-statistics/>
 
-<https://realpython.com/pandas-python-explore-dataset/>
 
  Jake Vanderplas . <https://jakevdp.github.io/PythonDataScienceHandbook/>
  ```
@@ -807,8 +821,8 @@ https://janakiev.com/blog/jupyter-virtual-envs/
 
 
 
-## Data explorarion
-<https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
+
+
 
 <https://github.com/pandas-profiling/pandas-profiling>
 
@@ -817,7 +831,7 @@ jupyter notebook
 http://localhost:8888/tree
 
 https://realpython.com/python-statistics/
-https://realpython.com/pandas-python-explore-dataset/
+
 
 import math
 import statistics
@@ -918,8 +932,7 @@ Pandas supports two parquet implementations, fastparquet and pyarrow. They both 
 
 <http://www.scikit-yb.org/en/latest/index.html> . Yellowbrick extends the Scikit-Learn API to make model selection and hyperparameter tuning easier. Under the hood, it’s using Matplotlib.
 
-<https://cloudblogs.microsoft.com/opensource/2019/10/10/microsoft-open-sources-sanddance-visual-data-exploration-tool/>
-SandDance   visualization tool from Microsoft Research
+
 
 
 
