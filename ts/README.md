@@ -6,6 +6,10 @@ https://www.youtube.com/watch?v=r71hWIUscV4 . Moving Avg
 
 https://medium.com/data-science-at-microsoft/python-open-source-libraries-for-scaling-time-series-forecasting-solutions-3485c3bd8156
 
+https://habr.com/ru/post/588270/ Noise reduction
+
+https://habr.com/ru/post/588320/ Anomaly detection
+
 ### ClickHouse vs TimescaleDB  vs Druid vs Pinot for timeseries
 
 https://pradeepchhetri.xyz/clickhousevstimescaledb/
