@@ -19,7 +19,7 @@ https://github.com/blobcity/ai-seed 1000+ ready code templates to kickstart your
 
 https://lazypredict.readthedocs.io/en/latest/readme.html#
 
-https://argmin.net
+https://www.argmin.net/
 
 https://medium.com/inspiredbrilliance/fast-approximation-on-massive-datasets-dd23117bab7f
 
