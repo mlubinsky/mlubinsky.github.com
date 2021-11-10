@@ -4,7 +4,10 @@ https://medium.com/codex/how-to-set-up-and-run-python-data-science-development-e
 
 https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
 
+### Exploratory Data Analysis (EDA)
 https://lux-api.readthedocs.io/en/latest/index.html  visual data exploration
+
+https://towardsdatascience.com/summarize-pandas-data-frames-b9770567f940 Skimpy is a convenient way to generate quick summaries of any dataset, even without writing any code.
 
 ```
 import pandas as pd
