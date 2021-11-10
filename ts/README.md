@@ -68,6 +68,7 @@ https://towardsdatascience.com/time-series-from-scratch-introduction-to-time-ser
 
 https://towardsdatascience.com/every-pandas-function-you-can-should-use-to-manipulate-time-series-711cb0c5c749
 
+https://towardsdatascience.com/time-series-decomposition-and-statsmodels-parameters-69e54d035453
 
 https://towardsdatascience.com/when-a-time-series-only-quacks-like-a-duck-10de9e165e 
 
