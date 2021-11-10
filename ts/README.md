@@ -12,6 +12,8 @@ https://habr.com/ru/post/588270/ Noise reduction
 
 https://pkghosh.wordpress.com/2019/07/25/time-series-sequence-anomaly-detection-with-markov-chain-on-spark/ 
 
+https://www.microsoft.com/en-us/research/wp-content/uploads/2014/01/gupta14_tkde.pdf
+
 https://habr.com/ru/post/588320/ 
 
  
