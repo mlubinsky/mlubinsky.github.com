@@ -19,7 +19,9 @@ https://github.com/blobcity/ai-seed 1000+ ready code templates to kickstart your
 
 https://lazypredict.readthedocs.io/en/latest/readme.html#
 
-argmin.net
+https://argmin.net
+
+https://medium.com/inspiredbrilliance/fast-approximation-on-massive-datasets-dd23117bab7f
 
 https://t.me/emeliml Эмели Драль о прикладном машинном обучении.
 
