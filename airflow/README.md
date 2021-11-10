@@ -42,6 +42,10 @@ Dynamic DAG
 https://galea.medium.com/airflow-dynamic-dags-python-globals-4f40905d314a
 
 
+Decorator Airflow
+https://levelup.gitconnected.com/airflow-decorators-for-a-clean-data-pipeline-48ebdf12e9b0
+
+
 ```
 import os
 import sys
