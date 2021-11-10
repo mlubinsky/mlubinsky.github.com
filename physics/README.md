@@ -152,6 +152,7 @@ away with divergences and arriving at physical results
 
 https://teach-in.ru/file/synopsis/pdf/analytical-mechanics-kugushev-M.pdf
 
+http://www.scholarpedia.org/article/Autoresonance_in_nonlinear_systems
 
 https://www.youtube.com/watch?v=pkfDYOZ1p4Y Toy models, Dr Tadashi Tokieda
 
