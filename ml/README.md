@@ -21,9 +21,20 @@ https://lazypredict.readthedocs.io/en/latest/readme.html#
 
 https://www.argmin.net/
 
+### Approxim algo (count distinct, count min sketch=frequency count)
 https://datasketches.apache.org/ A software library of stochastic streaming algorithms
 
 https://medium.com/inspiredbrilliance/fast-approximation-on-massive-datasets-dd23117bab7f
+
+https://web.stanford.edu/class/cs168/
+
+https://web.stanford.edu/class/cs168/l/
+
+https://web.stanford.edu/class/cs168/l/l1.pdf
+
+https://web.stanford.edu/class/cs168/l/l2.pdf
+
+
 
 https://t.me/emeliml Эмели Драль о прикладном машинном обучении.
 
