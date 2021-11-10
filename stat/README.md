@@ -35,6 +35,11 @@ https://towardsdatascience.com/a-practical-introduction-to-9-regression-algorith
 https://towardsdatascience.com/deep-diving-statistical-distributions-with-python-for-data-scientists-a0a4badc8d1a  
 https://towardsdatascience.com/random-seed-numpy-786cf7876a5f
 
+
+https://towardsdatascience.com/practical-guide-to-common-probability-distributions-in-machine-learning-487f6137625
+
+https://towardsdatascience.com/practical-guide-to-common-probability-distributions-in-machine-learning-part-2-5bcb910218c0 
+
 https://towardsdatascience.com/statistics-in-python-generating-random-numbers-in-python-numpy-and-sklearn-60e16b2210ae 
 
 
