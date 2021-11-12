@@ -45,6 +45,12 @@ https://github.com/The-real-Han-Chen/Single-slit-and-double-slits-diffraction-Sc
  
 ### Chaos , Solitons, Dynamical systems
 
+https://www.youtube.com/watch?v=-FvrON0OmYc
+
+This course of 25 lectures, filmed at Cornell University in Spring 2014, is intended for newcomers to nonlinear dynamics and chaos. It closely follows Prof. Strogatz's book, "Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering." :
+
+https://www.youtube.com/playlist?list=PLbN57C5Zdl6j_qJA-pARJnKsmROzPnO9V
+
 https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%9F%D1%83%D0%B0%D0%BD%D0%BA%D0%B0%D1%80%D0%B5_%E2%80%94_%D0%91%D0%B5%D0%BD%D0%B4%D0%B8%D0%BA%D1%81%D0%BE%D0%BD%D0%B0
 
 http://lib.brsu.by/sites/default/files/books/%D0%91%D1%83%D0%BB%D0%BB%D0%B0%D1%84%2C%20%D0%A4.%20%D0%9A%D0%BE%D0%B4%D1%80%D0%B8%20-%20%D0%A1%D0%BE%D0%BB%D0%B8%D1%82%D0%BE%D0%BD%D1%8B.pdf
