@@ -1,5 +1,9 @@
 https://see.stanford.edu/materials/lsoftaee261/book-fall-07.pdf
 
+https://www.youtube.com/watch?v=toj_IoCQE-4 FFT
+
+https://www.youtube.com/watch?v=s2K1JfNR7Sc. Denoise data with FFT
+
 ## Fourier series
 https://habr.com/ru/post/528734/
 
@@ -27,6 +31,8 @@ https://www.youtube.com/watch?v=spUNpyF58BY
 https://ai-pool.com/a/s/introduction-of-fast-fourier-transformation--fft
 
 ### FFT in SciPy
+
+https://www.youtube.com/watch?v=O0Y8FChBaFU Numpy fft function. 
 
 https://realpython.com/python-scipy-fft/
 
