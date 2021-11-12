@@ -14,6 +14,7 @@ https://news.ycombinator.com/item?id=28526966 Precentile
 
 http://www.numericalexpert.com/articles/single_pass_stat/ Calculate STD and other metrics in single pass
   
+https://www.algorithm-archive.org/  
 
 https://boyter.org/posts/bloom-filter/ Bloom filter 
 
