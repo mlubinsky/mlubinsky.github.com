@@ -20,6 +20,25 @@ https://hakibenita.com/sql-dos-and-donts Faux predicate
 
 https://blog.jooq.org/10-cool-sql-optimisations-that-do-not-depend-on-the-cost-model/
 
+### LAG and LEAD
+
+ the monthly percent change in costs
+``` 
+with monthly_costs as (
+    SELECT
+        date
+      , monthlycosts
+      , LEAD(monthlycosts) OVER (ORDER BY date) as
+        previousCosts
+    FROM
+        costs
+)
+SELECT
+    date
+  , (monthlycosts - previousCosts) / previousCosts * 100 AS
+    costPercentChange
+FROM monthly_costs
+```
 
 ### Running totals
 https://betterprogramming.pub/4-ways-to-calculate-a-running-total-with-sql-986d0019185c
