@@ -7,6 +7,15 @@ airflow tasks list
 
 https://airflow.readthedocs.io/en/1.10.10/concepts.html
 
+### Dynamic DAGs
+
+https://www.astronomer.io/guides/dynamically-generating-dags
+
+https://towardsdatascience.com/data-engineers-shouldnt-write-airflow-dags-b885d57737ce
+
+https://towardsdatascience.com/data-engineers-shouldnt-write-airflow-dags-part-2-8dee642493fb
+
+
 To to make Several DAGs folders?
 https://xnuinside.medium.com/how-to-load-use-several-dag-folders-airflow-dagbags-b93e4ef4663c
 
