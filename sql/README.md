@@ -1,7 +1,17 @@
 https://habr.com/ru/company/querifylabs/blog/578842/ SQL plan
 
-https://habr.com/ru/post/588859/  averaging and smoothing for noise reduction
+### Moving Average
 
+https://habr.com/ru/post/588859/  averaging and smoothing for noise reduction
+```
+SELECT
+    Date
+  , dailyConversions
+  , AVG(dailyConversions) OVER (ORDER BY Date ROWS 10 PRECEDING) AS
+    10_dayMovingAverage
+FROM
+    conversions
+```
 https://hakibenita.com/sql-for-data-analysis
 
 https://towardsdatascience.com/jinja-sql-%EF%B8%8F-7e4dff8d8778 Jinja with SQL
