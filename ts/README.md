@@ -6,6 +6,8 @@ https://www.youtube.com/watch?v=r71hWIUscV4 . Moving Avg
 
 https://medium.com/data-science-at-microsoft/python-open-source-libraries-for-scaling-time-series-forecasting-solutions-3485c3bd8156
 
+https://betterprogramming.pub/how-to-deal-with-time-series-using-pandas-and-plotly-express-45b6848432df
+
 https://habr.com/ru/post/588270/ Noise reduction
 
 ### Anomaly detection
