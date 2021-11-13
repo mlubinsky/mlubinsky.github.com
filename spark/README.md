@@ -36,6 +36,7 @@ r5.4xlarge instance:  128GB 16 cores
 
 https://www.youtube.com/watch?v=G4D4iY_hZQ0&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg
 
+https://towardsdatascience.com/overcoming-apache-sparks-biggest-pain-points-b374cebcf6a4
 
 https://github.com/ankurchavda/SparkLearning#spark-learning-guide
 
