@@ -2,6 +2,8 @@ https://livebook.manning.com/book/streaming-data/ Book (I bought it)
 
 https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-apache-spark/functional-programming-using-the-spark-shell?
 
+bucketing
+https://towardsdatascience.com/best-practices-for-bucketing-in-spark-sql-ea9f23f7dd53
 
 https://habr.com/ru/company/newprolab/blog/530568/ What is new in Spark 3.0
 
