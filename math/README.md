@@ -1,5 +1,7 @@
 Ветераны броуновского движения - Вступайте в ряды Фурье!
 
+https://aimath.org/textbooks/approved-textbooks/
+
 https://amathr.org/software/
 
 https://grinfeld.org/books/An-Introduction-To-Tensor-Calculus/
