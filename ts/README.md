@@ -10,6 +10,11 @@ https://betterprogramming.pub/how-to-deal-with-time-series-using-pandas-and-plot
 
 https://habr.com/ru/post/588270/ Noise reduction
 
+
+#### tsflex
+
+https://predict-idlab.github.io/tsflex/
+
 ### Anomaly detection
 
 https://pkghosh.wordpress.com/2019/07/25/time-series-sequence-anomaly-detection-with-markov-chain-on-spark/ 
