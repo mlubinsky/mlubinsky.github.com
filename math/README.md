@@ -2,6 +2,8 @@
 
 https://aimath.org/textbooks/approved-textbooks/
 
+http://index-of.es/Varios-2/ books
+
 https://amathr.org/software/
 
 https://grinfeld.org/books/An-Introduction-To-Tensor-Calculus/
