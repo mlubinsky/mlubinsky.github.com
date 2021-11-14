@@ -1,10 +1,14 @@
 https://github.com/NIteshx2/AdvancedSQL_Interview
 
+https://www.amazon.com/Algorithm-Design-Manual-Computer-Science-dp-3030542556/dp/3030542556 The Algorithm Design Manual by Skiena
+
 https://www.algorithm-archive.org/
 
 https://www.educative.io/path/ace-python-coding-interview
 
 https://www.algoexpert.io/
+
+https://www.chrislaux.com/
 
 https://habr.com/ru/post/587348/
 
