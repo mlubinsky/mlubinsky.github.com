@@ -1,5 +1,41 @@
 https://habr.com/ru/post/585460/
 
+https://medium.com/swlh/hive-optimization-quick-refresher-5e596654bc1d
+```
+SET hive.execution.engine=tez;
+
+Vectorization
+SET hive.vectorized.execution=true;
+SET hive.vectorized.execution.enabled=true;
+
+Predicate push down
+SET hive.optimize.ppd=true;
+
+Join Optimizations
+SET hive.auto.convert.join=true;
+SET hive.auto.convert.join.noconditionaltask=true;
+
+SMB Join
+SET hive.auto.convert.sortmerge.join=true;
+SET hive.optimize.bucketmapjoin=true;
+SET hive.optimize.bucketmapjoin.sortedmerge=true;
+
+If tables are bucketed and sorted SMB join should be converted to SMB Map-Join.
+SKEWED TABLE
+CREATE TABLE <table_name>(col1 STRING, col2 STRING)
+SKEWED BY (col1) ON (col_val1, col_val2, col_val3) 
+[STORED AS DIRECTORIES];
+
+SKEWED JOIN
+SET hive.optimize.skewjoin=true;
+SET hive.skewjoin.key=500000;
+
+Cost based optimization
+SET hive.cbo.enable=true;
+SET hive.compute.query.using.stats=true;
+SET hive.stats.fetch.column.stats=true;
+SET hive.stats.fetch.partition.stats=true;
+```
 https://tech.trivago.com/2019/01/30/a-new-functional-approach-to-complex-types-in-apache-hive/
 
 https://stackoverflow.com/questions/69576832/how-to-use-hive-macro-to-reduce-boilerplate
