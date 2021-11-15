@@ -14,7 +14,11 @@ https://habr.com/ru/post/587348/
 
 https://medium.com/javarevisited/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0
 
+https://mlengineer.io/how-i-prepare-for-amazon-applied-scientist-l5-2020-30e080cb5dbe
+
 https://towardsdatascience.com/how-i-doubled-my-salary-in-4-months-e8c5b2b9f5bc
+
+https://mlengineer.io/how-i-got-facebook-mle-offer-us-4-2020-by-practicing-2-lc-questions-per-day-ce3b27abfc
 
 https://github.com/yangshun/tech-interview-handbook
 
