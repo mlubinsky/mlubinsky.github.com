@@ -20,6 +20,8 @@ https://towardsdatascience.com/how-i-doubled-my-salary-in-4-months-e8c5b2b9f5bc
 
 https://mlengineer.io/how-i-got-facebook-mle-offer-us-4-2020-by-practicing-2-lc-questions-per-day-ce3b27abfc
 
+https://mlengineer.io/how-i-failed-amazon-interview-mle-9def3c91b886
+
 https://github.com/yangshun/tech-interview-handbook
 
 https://www.youtube.com/watch?v=tWVWeAqZ0WU . Graph Algo
