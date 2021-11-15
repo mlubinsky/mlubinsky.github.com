@@ -1,5 +1,8 @@
 https://github.com/mwouts/jupytext  Notebook which works with regular .py files
 
+
+https://www.labri.fr/perso/nrougier/from-python-to-numpy/
+
 https://medium.com/codex/how-to-set-up-and-run-python-data-science-development-environment-with-jupyter-on-docker-17e04e11d6c
 
 https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
