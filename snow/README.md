@@ -2,6 +2,9 @@
 
 https://apisero.com/airflow-integration-with-snowflake/ Airflow + Snowflake
 
+spark + snowflake:
+https://medium.com/@pious.tiwari/use-spark-with-snowflake-as-datasource-c390447a0762
+
 <https://www.infoq.com/presentations/snowflake-architecture/>
 
 <https://www.analytics.today/blog/tuning-snowflake>
