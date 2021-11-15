@@ -7,6 +7,10 @@ https://medium.com/codex/how-to-set-up-and-run-python-data-science-development-e
 
 https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
 
+Vectorized pandas operations:
+
+https://python.plainenglish.io/pandas-how-you-can-speed-up-50x-using-vectorized-operations-d6e829317f30
+
 ### Exploratory Data Analysis (EDA)
 https://lux-api.readthedocs.io/en/latest/index.html  visual data exploration
 
