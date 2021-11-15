@@ -8,6 +8,7 @@ https://towardsdatascience.com/your-comprehensive-guide-to-the-basics-of-time-se
 
 https://sarit-maitra.medium.com/take-time-series-a-level-up-with-walk-forward-validation-217c33114f68
 
+
 https://medium.com/mlearning-ai/proper-picture-of-time-series-forecasting-5dccc53436bc
 
 https://www.youtube.com/watch?v=r71hWIUscV4 . Moving Avg
