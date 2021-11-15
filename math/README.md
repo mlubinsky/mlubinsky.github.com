@@ -4,6 +4,8 @@ https://aimath.org/textbooks/approved-textbooks/
 
 http://index-of.es/Varios-2/ books
 
+В Босс Лекции по математике тома 1 - 16 2004 - 2011 г.
+
 https://www.mccme.ru/free-books/
 
 http://nozdr.ru/biblio/edu/math/high
