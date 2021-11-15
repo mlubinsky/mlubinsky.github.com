@@ -6,6 +6,8 @@ http://index-of.es/Varios-2/ books
 
 https://www.mccme.ru/free-books/
 
+http://nozdr.ru/biblio/edu/math/high
+
 https://amathr.org/software/
 
 https://grinfeld.org/books/An-Introduction-To-Tensor-Calculus/
