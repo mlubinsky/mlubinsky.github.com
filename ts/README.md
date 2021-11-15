@@ -1,5 +1,7 @@
 https://www.youtube.com/hashtag/timeseries
 
+https://onlinelibrary.wiley.com/doi/book/10.1002/9781119682394 . Book
+
 https://towardsdatascience.com/announcing-pycarets-new-time-series-module-b6e724d4636c  PyCarets
 
 https://www.youtube.com/watch?v=3sH1kisAK9s  Time Series Data Analysis and Exploratory Analysis
