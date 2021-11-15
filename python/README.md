@@ -311,6 +311,9 @@ Regexep to find leading 0 in day, just after month:
 grep -E 'datetime\([[:space:]]*2\d{3}[[:space:]]*,[[:space:]]*\d+,[[:space:]]*0' datetime.txt
 ```
 
+### Data structures 
+https://betterprogramming.pub/stop-using-python-lists-everywhere-consider-using-deques-instead-74d37441be4e
+
 https://mymasterdesigner.com/2021/07/06/data-structures-with-python-big-guide/
 
 https://anothertechs.com/programming/python/python-data-structure-cheat-sheet-2021/
