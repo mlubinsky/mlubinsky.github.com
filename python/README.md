@@ -554,6 +554,8 @@ We use the @staticmethod decorator for defining a static method in Python, here 
 
 <https://habr.com/ru/company/otus/blog/510350/>.  set() tuple() queue() ... dict()
 
+https://python.plainenglish.io/queue-data-strucure-theory-and-python-implementation-e58f3582c390
+
 Lazy eval:
 <https://medium.com/better-programming/how-to-create-lazy-attributes-to-improve-performance-in-python-b369fd72e1b6>
 
