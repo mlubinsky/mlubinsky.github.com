@@ -8,6 +8,8 @@ https://towardsdatascience.com/announcing-pycarets-new-time-series-module-b6e724
 
 https://www.youtube.com/watch?v=3sH1kisAK9s  Time Series Data Analysis and Exploratory Analysis
 
+https://eriikcasstro.medium.com/eda-for-time-series-b2ea7b36c65a
+
 https://towardsdatascience.com/your-comprehensive-guide-to-the-basics-of-time-series-modeling-f673398b5df3
 
 https://sarit-maitra.medium.com/take-time-series-a-level-up-with-walk-forward-validation-217c33114f68
