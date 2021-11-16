@@ -1,6 +1,7 @@
-https://www.youtube.com/watch?v=23z_ruAi4FI
+https://www.youtube.com/watch?v=23z_ruAi4FI  Бубновский
 
-L-Citrulline
+
+L-Citrulline !!!
 
 Swimming https://www.youtube.com/watch?v=LijdyVaaDnY
 
