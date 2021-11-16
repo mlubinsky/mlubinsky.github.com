@@ -4,6 +4,8 @@ https://medium.com/analytics-vidhya/descriptive-predictive-and-feature-selection
 
 https://onlinelibrary.wiley.com/doi/book/10.1002/9781119682394 . Book
 
+https://paritoshsharmaghimire.medium.com/datetime-in-pandas-read-csv-everything-you-have-to-know-8245bd048fa
+
 https://towardsdatascience.com/announcing-pycarets-new-time-series-module-b6e724d4636c  PyCarets
 
 https://www.youtube.com/watch?v=3sH1kisAK9s  Time Series Data Analysis and Exploratory Analysis
