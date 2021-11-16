@@ -1,5 +1,7 @@
 https://lukasz.langa.pl/f15a8851-af26-4e94-a4b1-c146c57c9d20/.  datasette with plot
 
+https://instructobit.com/tutorial/116/Remotely-running-commands-or-scripts-with-python . SSH Paramico
+
 https://stackoverflow.com/questions/68584868/python3-datetime-datetime2021-05-09-does-not-support-leading-0-but-it-works
 
 https://blog.guilatrova.dev/
