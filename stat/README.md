@@ -14,6 +14,8 @@ if we have some variable y, and we want to regress it against some other variabl
 
 patsy.dmatrices("y ~ x + a + b + a:b", data)
 
+https://cdanielaam.medium.com/essential-mathematical-equations-for-predictive-models-fcb79630ec96
+
 https://habr.com/ru/post/585232/  Получаем кривую плотности распределения вероятности
 
 https://habr.com/ru/post/587372/ Получаем кривую плотности распределения вероятности случайного процесса
