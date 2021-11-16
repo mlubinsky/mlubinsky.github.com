@@ -9,6 +9,13 @@ https://towardsdatascience.com/best-practices-for-bucketing-in-spark-sql-ea9f23f
 https://medium.com/analytics-vidhya/spark-bucketing-is-not-as-simple-as-it-looks-c74f105f4af0
 
 
+https://medium.com/curious-data-catalog/sparks-skew-problem-does-it-impact-performance-257cdef53680
+
+https://medium.com/curious-data-catalog/spill-often-ignored-sparks-performance-problem-9b4c1ea962f
+
+https://medium.com/curious-data-catalog/sparks-salting-a-step-towards-mitigating-skew-problem-5b2e66791620
+
+
 https://habr.com/ru/company/newprolab/blog/530568/ What is new in Spark 3.0
 
 https://www.amazon.com/Guide-Spark-Partitioning-Explained-Depth/dp/B08L25WHJ4  Guide to Spark Partitioning
