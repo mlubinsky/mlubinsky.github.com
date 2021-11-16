@@ -1,5 +1,7 @@
 https://www.youtube.com/hashtag/timeseries
 
+https://medium.com/analytics-vidhya/descriptive-predictive-and-feature-selection-on-time-series-data-813a202312b1
+
 https://onlinelibrary.wiley.com/doi/book/10.1002/9781119682394 . Book
 
 https://towardsdatascience.com/announcing-pycarets-new-time-series-module-b6e724d4636c  PyCarets
