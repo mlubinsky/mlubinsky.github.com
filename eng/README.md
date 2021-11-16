@@ -1,5 +1,7 @@
 <https://habr.com/ru/post/499296/>
 
+https://habr.com/ru/company/englishdom/blog/589357/ Accent
+
 Youtube channel: PhoneticFanatic
 ----------------------------------
 
