@@ -13,6 +13,9 @@ https://habr.com/ru/company/newprolab/blog/530568/ What is new in Spark 3.0
 
 https://www.amazon.com/Guide-Spark-Partitioning-Explained-Depth/dp/B08L25WHJ4  Guide to Spark Partitioning
 
+
+https://ajithshetty28.medium.com/lesser-known-facts-short-cuts-in-spark-part2-4dc801a83dfb
+
 https://databricks.com/p/webinar/databricks-on-aws-3-part-training-series Free training
 
 https://habr.com/ru/post/568276/ Databricks
