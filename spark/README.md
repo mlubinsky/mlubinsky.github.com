@@ -13,6 +13,7 @@ https://habr.com/ru/company/newprolab/blog/530568/ What is new in Spark 3.0
 
 https://www.amazon.com/Guide-Spark-Partitioning-Explained-Depth/dp/B08L25WHJ4  Guide to Spark Partitioning
 
+https://medium.com/nerd-for-tech/apache-spark-optimization-techniques-b982e71153ff
 
 https://ajithshetty28.medium.com/lesser-known-facts-short-cuts-in-spark-part2-4dc801a83dfb
 
