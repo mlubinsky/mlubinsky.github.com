@@ -1,9 +1,11 @@
 https://www.youtube.com/hashtag/timeseries
 
-Autocorrelation
+Autocorrelation ACF and partial PACF
 https://medium.com/@chaunn3502/autocorrelation-and-partial-autocorrelation-in-time-series-data-1dfdb683e48e
 
 https://medium.com/analytics-vidhya/descriptive-predictive-and-feature-selection-on-time-series-data-813a202312b1
+
+https://medium.com/gousto-engineering-techbrunch/stop-using-prophet-as-a-black-box-3-ways-it-can-go-wrong-1046f6c6ec73 Prothet
 
 https://onlinelibrary.wiley.com/doi/book/10.1002/9781119682394 . Book
 
