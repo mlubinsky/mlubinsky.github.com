@@ -1,5 +1,8 @@
 https://github.com/mwouts/jupytext  Notebook which works with regular .py files
 
+Useful extension for Jupyter: hinterland
+https://towardsdatascience.com/the-only-auto-completion-extension-youll-ever-need-for-your-jupyter-notebooks-87bbaecb7126
+
 
 https://www.labri.fr/perso/nrougier/from-python-to-numpy/
 
