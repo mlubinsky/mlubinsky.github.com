@@ -1,5 +1,7 @@
 http://techlibrary.ru/
 
+https://habr.com/ru/post/587732/  Ontol: Лучшие бесплатные онлайн-курсы от MIT
+
 https://mipt.ru/online/
 
 https://distant.msu.ru/
