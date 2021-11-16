@@ -1,5 +1,8 @@
 Ветераны броуновского движения - Вступайте в ряды Фурье!
 
+Latex:
+https://artofproblemsolving.com/wiki/index.php/LaTeX:LaTeX_on_AoPS
+
 https://aimath.org/textbooks/approved-textbooks/
 
 http://index-of.es/Varios-2/ books
