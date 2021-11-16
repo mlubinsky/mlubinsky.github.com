@@ -31,6 +31,7 @@ https://www.youtube.com/watch?v=spUNpyF58BY
 https://ai-pool.com/a/s/introduction-of-fast-fourier-transformation--fft
 
 ### FFT in SciPy
+https://github.com/natsunoyuki/blog_posts/blob/main/mathematics/Fourier%20Transforms%20in%20Python.ipynb
 
 https://www.youtube.com/watch?v=O0Y8FChBaFU Numpy fft function. 
 
