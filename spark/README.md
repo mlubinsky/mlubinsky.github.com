@@ -18,7 +18,12 @@ https://medium.com/curious-data-catalog/sparks-salting-a-step-towards-mitigating
 
 https://habr.com/ru/company/newprolab/blog/530568/ What is new in Spark 3.0
 
+### Partitioning
+
 https://www.amazon.com/Guide-Spark-Partitioning-Explained-Depth/dp/B08L25WHJ4  Guide to Spark Partitioning
+
+https://medium.com/@vladimir.prus/spark-partitioning-the-fine-print-5ee02e7cb40b
+
 
 https://medium.com/nerd-for-tech/apache-spark-optimization-techniques-b982e71153ff
 
