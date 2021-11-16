@@ -1,5 +1,10 @@
 https://www.youtube.com/hashtag/timeseries
 
+tsplot https://github.com/brett-hosking/tsplot
+Plotting timeseries with 2 Y-axis
+https://nbviewer.org/github/brett-hosking/tsplot/blob/master/examples/notebooks/EMSO_EGIM_Azores_Oxygen.ipynb
+
+
 Autocorrelation ACF and partial PACF
 https://medium.com/@chaunn3502/autocorrelation-and-partial-autocorrelation-in-time-series-data-1dfdb683e48e
 
