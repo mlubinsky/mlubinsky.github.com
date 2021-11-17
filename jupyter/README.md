@@ -14,6 +14,9 @@ Vectorized pandas operations:
 
 https://python.plainenglish.io/pandas-how-you-can-speed-up-50x-using-vectorized-operations-d6e829317f30
 
+
+https://cdanielaam.medium.com/essential-mathematical-equations-for-predictive-models-fcb79630ec96
+
 ### Exploratory Data Analysis (EDA)
 https://lux-api.readthedocs.io/en/latest/index.html  visual data exploration
 
