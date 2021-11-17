@@ -19,11 +19,15 @@ https://github.com/orico/www.mlcompendium.com
 
 https://github.com/blobcity/ai-seed 1000+ ready code templates to kickstart your next AI experiment
 
-https://lazypredict.readthedocs.io/en/latest/readme.html#
+https://lazypredict.readthedocs.io/en/latest/readme.html
+
+Spearman vs Pearson correlation:
+
+https://medium.com/productive-data-science/spearman-coefficient-tool-for-a-generalized-correlation-analysis-d15b70d4ff1e
 
 https://www.argmin.net/
 
-### Approxim algo (count distinct, count min sketch=frequency count)
+### Approximation algo (count distinct, count min sketch=frequency count)
 https://datasketches.apache.org/ A software library of stochastic streaming algorithms
 
 https://medium.com/inspiredbrilliance/fast-approximation-on-massive-datasets-dd23117bab7f
