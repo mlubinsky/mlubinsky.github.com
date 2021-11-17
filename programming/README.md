@@ -1,5 +1,7 @@
 https://habr.com/ru/company/jugru/blog/586376/. Chrome extensions
 
+https://browserflow.app/ . Automate everything in browser!
+
 https://habr.com/ru/post/587750/ sync/locks/
 
 ```
