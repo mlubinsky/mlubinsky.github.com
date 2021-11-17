@@ -11,6 +11,8 @@ https://arxiv.org/abs/2004.09280 Towards a theory of machine learning. Vitaly Va
 https://arxiv.org/pdf/2110.06209.pdf  A Brief Introduction to Automatic Differentiation for
 Machine Learning
 
+https://cdanielaam.medium.com/essential-mathematical-equations-for-predictive-models-fcb79630ec96
+
 https://inria.github.io/scikit-learn-mooc/
 
 https://github.com/orico/www.mlcompendium.com
