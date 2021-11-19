@@ -1,5 +1,13 @@
 https://developers.google.com/machine-learning/crash-course/
 
+https://towardsdatascience.com/key-concepts-to-improve-your-understanding-of-probability-theory-ca1d999dd6c9
+
+https://towardsdatascience.com/change-column-data-type-in-pandas-954d7acdef1d
+
+https://towardsdatascience.com/a-beginners-guide-to-discrete-time-markov-chains-d5be17cf0e12
+
+The Markov property states that p_ij is independent of the state in which the system was at times (t-2), (t-3),…,0. The Markov property is stated as follows:
+
 https://medium.com/pythoneers/30-basic-machine-learning-questions-answered-692acd10841f
 ```
 The Stages of Building A Machine Learning Model 
@@ -179,6 +187,7 @@ The number of calls have to be greater or equal to 0, whereas in Linear Regressi
 The Poisson distribution is a probability distribution that measures how many times and how likely x (calls) will occur over a specified period. 
 
 Generalised Linear Models GLM
+https://towardsdatascience.com/what-is-so-general-about-generalized-linear-model-15dde9be2640
 
 GLM’s are a generalisation of Linear Regression where the response variable takes a non-normal distribution such as a Poisson or Binomial distribution. GLM’s contain three core things:
 - Part of the Exponential Family of Distributions
@@ -217,6 +226,8 @@ class ReservoirSampler:
             self.result = element
 ```
 ### Clustering
+
+https://medium.com/analytics-vidhya/a-cheatsheet-to-clustering-algorithms-a2d49fa2cc69
 
 https://medium.com/analytics-vidhya/less-known-applications-of-k-means-clustering-dimensionality-reduction-anomaly-detection-and-908f4bee155f
 
