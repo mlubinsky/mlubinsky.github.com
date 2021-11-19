@@ -93,6 +93,9 @@ Book
 https://otexts.com/fpp3/stationarity.html
 https://otexts.com/fpp3/tscv.html
 
+
+https://medium.com/@appravi18/time-series-analysis-with-classic-statistical-methods-fe6dfaf0cd4a
+
 Kaggle
 https://towardsdatascience.com/key-takeaways-from-kaggles-most-recent-time-series-competition-ventilator-pressure-prediction-7a1d2e4e0131
 
