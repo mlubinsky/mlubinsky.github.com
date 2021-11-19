@@ -1,5 +1,32 @@
 https://developers.google.com/machine-learning/crash-course/
 
+https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/
+
+https://chetna-shahi31.medium.com/hypothesis-testing-bae1e74543f
+
+There are 2 types of Hypothesis:
+```
+Null Hypothesis: Previous value and observed values from the claim are same.
+Null Hypothesis treats everything same or equal. Null hypothesis states that there is no relationship between the two variables being studied (one variable does not affect the other). It states the results are due to chance and are not significant in terms of supporting the idea being investigated. Thus, the null hypothesis assumes that whatever you are trying to prove did not happen.
+2. Alternative Hypothesis: Mathematically opposite of Null hypothesis.
+Hypothesis Type is determined based on Test (Statistics):
+
+Chi-squared Test : A chi-square test requires categorical variables, usually only two, but each may have any number of levels.
+
+t-student Test : A t-test requires two variables; one must be categorical and have exactly two levels, and the other must be quantitative and be estimable by a mean. For example, the two groups could be Republicans and Democrats, and the quantitative variable could be age.
+
+Fisher’s Z Test: In a z-test, the sample is assumed to be normally distributed.
+
+ANOVA Test: It is also called an analysis of variance and is used to compare multiple (three or more) samples with a single test. It is used when the categorical feature has more than two categories.
+
+
+After the test results, you can use Level of Significance to determine if Null hypothesis would be accepted or rejected.
+Level of Significance (alpha): Shows amount of data that is significant. It can be either 5% or 1%. Shows if there ≤5% gap between observed and previous value then the null hypothesis is accepted.
+
+Level of Confidence ( c ): Shows confidence in data. It will be 95% if alpha is 5%
+alpha + c = 1
+p-value is probability of Null Hypothesis to be true. If its <0.05 then we reject Null Hypothesis.
+```
 ### Plotting
 Seaborn pairplot   (pair-wise scatter plot(
 Heatmap
