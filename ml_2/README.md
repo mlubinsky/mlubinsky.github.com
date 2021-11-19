@@ -30,7 +30,16 @@ L1 term refers to same thing except for the calculation method of the distance,
 which is actually manhattan distance. 
 In the figure below, L2 and L1 regularization terms are demonstrated with loss functions of logistic regression and linear regression respectively.
 
+
+### Anomaly detection
+
+Anomaly Detection using Local Outlier Factor
+https://arshren.medium.com/anomaly-detection-using-local-outlier-factor-4e52f16894f
+
 ### Model evaluation
+
+https://towardsdatascience.com/4-metrics-to-evaluate-your-regression-models-885e9caeee57
+
 https://arxiv.org/abs/1811.12808
 Sebastian Raschka gave a very nice summary in his paper, Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning, of 4 model validation methods:
 Performance estimation
@@ -42,7 +51,12 @@ Performance estimation
 
 https://medium.com/@tzjy/why-is-model-validation-so-important-in-data-science-877fdc70550
  
-Model evaluation using sklearn.metrics (MAE — mean absolute error, RMSE — root mean squared error), 
+https://towardsdatascience.com/4-metrics-to-evaluate-your-regression-models-885e9caeee57 
+Model evaluation using sklearn.metrics
+MSE - Mean Squared Error  the MSE penalizes large errors.
+MAPE  - Mean Absolute Percentage Error 
+MAE — mean absolute error, 
+RMSE — root mean squared error), 
 and comparison of observed 
 and forecast value integrals (yearly absolute energy demand in MWh)
 
