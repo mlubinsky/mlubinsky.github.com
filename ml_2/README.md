@@ -1,10 +1,17 @@
 https://developers.google.com/machine-learning/crash-course/
 
+bayes: https://towardsdatascience.com/bayes-theorem-the-core-of-machine-learning-69f5703e511f
+
+central limit theorem (the sampling distribution of the sample means will be approximately normal distribution even if the original distribution wasn’t normally distributed)
+
 https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/
 
 https://chetna-shahi31.medium.com/hypothesis-testing-bae1e74543f
 
-There are 2 types of Hypothesis:
+
+https://medium.com/analytics-vidhya/why-should-your-company-do-an-ab-testing-88d42ec8337c
+
+###  2-sided hypotesis : there are 2 types of Hypothesis:
 ```
 1. Null Hypothesis: Previous value and observed values from the claim are same.
 Null Hypothesis treats everything same or equal.
@@ -65,7 +72,38 @@ GLM’s are a generalisation of Linear Regression where the response variable ta
  
 https://towardsdatascience.com/poisson-regression-and-generalised-linear-models-606fe5f7c1fd
 
+
+### Streaming Algo
+https://towardsdatascience.com/introduction-to-streaming-algorithms-b71808de6d29
+ algorithms that are able to process an extremely large, maybe even unbounded, data set and compute some desired output using only a constant amount of RAM.
+
+```
+class StreamingMean:
+    def __init__(self):
+        self.result = 0
+        self.n = 0
+
+    def update(self, element):
+        self.result = (self.result * self.n + element) / (self.n+1)
+        self.n += 1
+```
+https://en.wikipedia.org/wiki/Reservoir_sampling
+```
+from random import random
+
+class ReservoirSampler:
+    def __init__(self):
+        self.result = None
+        self.n = 0
+
+    def update(self, element):
+        self.n += 1
+        if random() < 1 / self.n:  # Satisfied with prob. 1/n.
+            self.result = element
+```
 ### Clustering
+
+https://medium.com/analytics-vidhya/less-known-applications-of-k-means-clustering-dimensionality-reduction-anomaly-detection-and-908f4bee155f
 
 https://medium.com/softplus-publication/clustering-harness-the-power-of-kmeans-and-gmm-using-sklearn-2b9e2aea61dd
 
@@ -123,7 +161,7 @@ as we can always run an exhaustive search with a fixed model and compare the obt
 
 https://towardsdatascience.com/how-to-mitigate-overfitting-with-feature-selection-164897c0c3db
 
- following techniques that can be used to mitigate overfitting:
+Following techniques that can be used to mitigate overfitting:
 Cross-validation
 Regularization
 Dimensionality Reduction
@@ -132,6 +170,18 @@ Feature Selection
 
 
 ### Model evaluation
+
+https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9
+
+Confusion Matrices are the most basic way of interpreting a Classification Model. 
+They hold four important values which describe the results of a Classification Model:
+True Positives(TP), False Positives(FP), False Negatives(FN) and True Negatives(TN). 
+When we plot a Confusion Matrix we would like the values on the main diagonal (TP and TN)
+to be as large as possible.
+
+https://medium.com/softplus-publication/machine-learning-model-evaluation-and-interpretation-with-python-977ea324842
+
+https://www.dataquest.io/blog/understanding-regression-error-metrics/
 
 https://towardsdatascience.com/4-metrics-to-evaluate-your-regression-models-885e9caeee57
 
@@ -152,7 +202,8 @@ Model evaluation using sklearn.metrics
 MSE - Mean Squared Error  the MSE penalizes large errors.
 MAPE  - Mean Absolute Percentage Error 
 MAE — mean absolute error, 
-RMSE — root mean squared error), 
+RMSE — root mean squared error  is the square root of the average of squared residuals  
+
 and comparison of observed 
 and forecast value integrals (yearly absolute energy demand in MWh)
 
