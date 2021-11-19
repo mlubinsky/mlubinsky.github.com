@@ -1,5 +1,105 @@
 https://developers.google.com/machine-learning/crash-course/
 
+https://medium.com/pythoneers/30-basic-machine-learning-questions-answered-692acd10841f
+```
+The Stages of Building A Machine Learning Model 
+- Data Collection: It is the first stage of any kind of machine learning model. In this stage, the appropriate data is decided and then it is collected using some algorithm or manually.
+- Data Processing: In this stage, the data that we have collected in the first stage is preprocessed by handling all the null values, categorical data, etc. also in the same stage the data features are made in the same range if they are not already.
+- Model Building: In this stage first we choose appropriate algorithms to create the model and then with the help of sklearn the model is built.
+- Model Evaluation: After the model is created it is evaluated using some techniques of statistics like
+
+Type I and Type II errors 
+- Type I Error(False Positive Error):- It occurs when the null hypothesis is true but it gets rejected means if claims something has happened when it hasn’t.
+- Type II Error(False Negative Error):-it occurs when the null hypothesis gets accepted when it's not true means it claims nothing when something has happened.
+
+True Positive: Actual Value = Predicted Value when o/p is 1
+True Negative : Actual Value != Predicted Value when o/p is 0
+False Positive: Type I Error
+False Negative: Type II Error
+
+Precision is the ratio of correctly predicted positive observation and total predicted positive observation. It shows how precise our model is.
+Precision = TP/TP+FP
+Recall is the ratio of the correct predicted positive observation and the total observation in the class.
+Recall = TP/TP+FN
+
+F1-Score is the weighted average of recall and precision.
+F1-Score = 2*(Recall * Precision) / (Recall + Precision)
+Accuracy is the ratio of correctly predicted positive observations to the total positive observations.
+Accuracy = TP+TN/TP+TN+FP+FN
+
+P-Value is the determination of a result when the null hypothesis assumed to be true. if the p-value is very small (<0.05) then our assumption that the null hypothesis is correct is most likely to be false. Thus we reject the null hypothesis.
+
+14. Explain how a Roc Curve Works?
+Ans: An Roc curve is a graph showing the performance of a classification model at different thresholds. it uses two curve plot parameters True positive rate(sensitivity) and False positive rate(Specificity).
+◾ The closer the curve follows the left-hand border and then the top border the more accurate the test is.
+◾ The closer the curve to a 45* diagonal of ROC Space the less accurate the test is.
+
+15. How Knn different from K-means clustering?
+
+Ans: Knn is a supervised machine learning technique that is used for classification or regression problems. In Knn the K represents the number of nearest neighbors used to predict the dependent var.
+K-means clustering is an unsupervised machine learning algorithm that is used to divide the data into different clusters based on k (number of clustering), and centroids.
+
+16. What is ‘Naive’ in the Naive Bayes Theorem?
+
+Ans: Naive Bayes classifier assumes that all the input variables are independent of each other means they don’t have any relationship between them which is actually an unrealistic assumption for real data.
+Let’s suppose a dataset that contains information about fruits and detects whether the fruit is an apple or not. A sample of this data contains a fruit that is red, round, and about 4'' in diameter. Even if all these features depend on each other or upon the existence of the other feature A Naive Bayes classifier will always consider them as independent contributors for the prediction of the fruit.
+17. How Ensemble Learning Works?
+
+Ans: Ensemble Learning is a technique in which the predictions or results of multiple models are combines to achieve better performance. Let’s Take an example if you buy a car you generally go for research on the web to search for reviews and features of different cars and In the end, after combining all the reviews you create your own review of that car and decide whether you want to purchase or not. The review you create is the better version of all the reviews you read because it contains the information from all the reviews. 
+Ensemble learning works the same, The predictions from many algorithms are used to create a better model.
+Ensemble Learning can be done using two ways, one is to use different algorithms prediction combine to generate a new high accuracy prediction or another way is to use a single algorithm multiple times and at the end, use each model prediction to generate a better model with good accuracy.
+“Don’t Let Yesterday Take Up Too Much Of Today.” — Will Rogers
+
+18. What is bagging and Boosting in machine learning?
+
+Ans: Bagging is a method of combining predictions of the same type means from the same algorithm. Ex: Random Forest. In this, each model is built independently with equal weight given to them. It reduces the overfitting problem. it also decreases the variance.
+Boosting is a way of combining predictions belongs to different algorithms. Ex: Gradient boosting. The new model is highly influenced by the performance of the previously built models. It reduces the bias.
+
+19. What is a bias-variance tradeoff?
+
+Ans: bias is the difference between the average prediction of the model and the correct value on the other hand variance is the variability of a data point that shows the spread of the data.
+if our model has fewer parameters then it may have High bias and Low variance because of that it will consistent but inaccurate on average.
+A model with a large number of parameters may have Low bias and High variance models which are mostly accurate on average but inconsistent in nature.
+A good model always has low bias and low variance.
+
+20. Explain L1 and L2 Regularization?
+
+Ans: A Regression model that uses L1 Regularization is called Lasso Regression and the Model which uses L2 Regularization is called Ridge Regression. 
+◾ L1 regularization adds the penalty term in the cost function by adding the absolute value of weight(Wj), while L2 regularization adds the squared value of weights(Wj) in the cost function.
+◾ One More difference between both of them is that L1 regularization tries to estimate the median of the data while L2 regularization tries to estimate the mean of the data. 
+◾ L1 regularization helps in eliminating the features that are not important.
+
+21. What are the different ways you know to handle missing values in machine learning?
+
+Ans: 1. Replacing the missing value with the mean, median, or mode.
+2. Replacing the missing values with a random value.
+3. Taking all the NaN values and using them as a New Feature.
+4. Replacing NaN values with the third deviation value.
+5. Replacing NaN with Lease or Last Outlier
+6. Replacing NaN with the most frequent Category (Categorical Values)
+7. Treating the missing values as a new category
+8. Apply a classifier to predict NaN values
+9. Drop Values
+
+
+Handle Categorical Values in the dataset?
+
+Ans: To Handle Categorical Values We Can Perform Encoding That Basically converts the categorical data into numerical data.
+
+Nomial Encoding: When data do not have an inherent order.
+1.1 One Hot Encoding
+1.2 One Hot Encoding with many features
+1.3 Mean Encoding
+
+Ordinal Encoding: When data have an inherent order.
+2.1 Label Encoding
+2.2 Target Guided Encoding
+
+3. Count Encoding
+
+
+```
+
 bayes: https://towardsdatascience.com/bayes-theorem-the-core-of-machine-learning-69f5703e511f
 
 central limit theorem (the sampling distribution of the sample means will be approximately normal distribution even if the original distribution wasn’t normally distributed)
