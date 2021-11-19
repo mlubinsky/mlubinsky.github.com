@@ -105,11 +105,15 @@ https://www.youtube.com/watch?v=THIwV_9fnzY&list=PLEaWFQiR5rGMUxl1x2lkW8uiFV-uX4
 Сергей Кисляков 
 https://www.youtube.com/playlist?list=PL-_cKNuVAYAWltu4CT1F7CWG97ZplBnTg
 
-### Dynamic systems
+### Dynamical systems
 
 https://galileo-unbound.blog/python-programs-for-nonlinear-dynamics/
 
 http://www.dyn-sys.org/
+
+https://www.youtube.com/watch?v=stbpUXA6Mow
+
+https://www.youtube.com/watch?v=2VBN_dJZLWc&t=3906s
 
 https://www.youtube.com/playlist?list=PLbN57C5Zdl6j_qJA-pARJnKsmROzPnO9V
 
