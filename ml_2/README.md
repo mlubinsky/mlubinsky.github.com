@@ -18,6 +18,11 @@ https://medium.com/softplus-publication/clustering-harness-the-power-of-kmeans-a
 
 https://medium.com/@tzjy/4-typical-sampling-methods-you-need-for-data-science-jobs-python-code-included-b003feb6504b
 
+
+### Transformation to normal dist
+
+https://medium.com/softplus-publication/bring-your-data-to-normal-distribution-with-imperio-yeojohnsontransformer-f4bb09402e1e
+
 ### Quantile
 https://medium.com/@tzjy/a-gentle-intro-to-quantile-regression-5f03b6bddae2
 
