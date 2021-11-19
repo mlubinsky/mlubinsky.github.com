@@ -449,6 +449,9 @@ https://otexts.com/fpp3/stationarity.html
 https://otexts.com/fpp3/tscv.html
 
 #### Change point detection
+
+https://towardsdatascience.com/getting-started-with-breakpoints-analysis-in-python-124471708d38
+
 https://medium.com/@baw_H1/bayesian-approach-to-time-series-change-point-detection-613bf9376568
 
  A change-point (CP) is abstraction for an abrupt change in a TS; its value is the time-index at which the TS changes its behavior. The behavior of a TS before the CP is different from that after the CP. More specifically, a CP is a point in time at which the parameters of the underlying distribution or the parameters of the model used to describe the TS abruptly change (e.g. mean, variance, trend) ([1]). This characterization underlies the proposed method discussed below. CP detection is about the statistical characterization of a CP. 
