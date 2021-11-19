@@ -1,5 +1,7 @@
 https://github.com/NIteshx2/AdvancedSQL_Interview
 
+https://github.com/prius/learning
+
 https://medium.com/@pv.safronov/graph-traversal-python-patterns-that-help-you-think-less-and-code-faster-66f76e1ab820
 
 https://www.amazon.com/Algorithm-Design-Manual-Computer-Science-dp-3030542556/dp/3030542556 The Algorithm Design Manual by Skiena
