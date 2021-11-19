@@ -41,7 +41,19 @@ p-value is probability of Null Hypothesis to be true. If its <0.05 then we rejec
 ### Plotting
 Seaborn pairplot   (pair-wise scatter plot(
 Heatmap
-Cross-correlation plot
+Cross-correlation plot 
+
+```
+corrMatrix = df.cor()
+import seaborn as sn
+sn.heatmap(corrMatrix, annot=True)
+```
+
+Types of Correlation coefficients:  https://towardsdatascience.com/beyond-correlation-coefficients-and-mean-squared-error-952bd966cedb
+
+1. Sample Correlation coefficients.
+2. Population Correlation coefficients.
+3. Pearson Correlation coefficients.
 
 autoviz and lux
 https://bobrupakroy.medium.com/autoviz-and-lux-8de6fe4d9a25
@@ -49,6 +61,9 @@ sweetviz
 https://bobrupakroy.medium.com/sweetviz-one-liner-eda-b4c645612845 
 mito
 https://towardsdatascience.com/mito-speed-up-dataset-manipulation-with-no-coding-407b8c72f46f 
+
+### Apriori Algo
+https://medium.com/analytics-vidhya/apriori-algorithm-a1f8589f32a0 
 
 ### Logistic regression
 
@@ -112,7 +127,11 @@ https://medium.com/softplus-publication/clustering-harness-the-power-of-kmeans-a
 https://medium.com/@tzjy/4-typical-sampling-methods-you-need-for-data-science-jobs-python-code-included-b003feb6504b
 
 
-### Transformation to normal dist
+### Transformation /scaling /normalization
+
+https://medium.com/@tzjy/feature-scaling-and-normalization-do-they-matter-to-machine-learning-algorithm-ebbb07dd3efc
+
+to normal dist
 
 https://medium.com/softplus-publication/bring-your-data-to-normal-distribution-with-imperio-yeojohnsontransformer-f4bb09402e1e
 
@@ -170,6 +189,12 @@ Feature Selection
 
 
 ### Model evaluation
+ Regression: regression is a process of finding the correlation between the dependent and independent variables. it is helpful in the prediction of the continuous variables such as the prediction of Stock Market, House prices, etc. 
+ In regression, our task is to find the best suitable line that can predict the output accurately.
+
+Classification: Classification is the process of finding a function that helps in dividing the data into different classes. These are mainly used in discrete data. 
+In Classification, our aim is to find the decision boundary which can divide the dataset into different classes.
+
 
 https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9
 
@@ -182,6 +207,8 @@ to be as large as possible.
 https://medium.com/softplus-publication/machine-learning-model-evaluation-and-interpretation-with-python-977ea324842
 
 https://www.dataquest.io/blog/understanding-regression-error-metrics/
+
+https://towardsdatascience.com/beyond-correlation-coefficients-and-mean-squared-error-952bd966cedb
 
 https://towardsdatascience.com/4-metrics-to-evaluate-your-regression-models-885e9caeee57
 
