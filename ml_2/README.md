@@ -6,8 +6,12 @@ https://chetna-shahi31.medium.com/hypothesis-testing-bae1e74543f
 
 There are 2 types of Hypothesis:
 ```
-Null Hypothesis: Previous value and observed values from the claim are same.
-Null Hypothesis treats everything same or equal. Null hypothesis states that there is no relationship between the two variables being studied (one variable does not affect the other). It states the results are due to chance and are not significant in terms of supporting the idea being investigated. Thus, the null hypothesis assumes that whatever you are trying to prove did not happen.
+1. Null Hypothesis: Previous value and observed values from the claim are same.
+Null Hypothesis treats everything same or equal.
+Null hypothesis states that there is no relationship between the two variables being studied (one variable does not affect the other). 
+It states the results are due to chance and are not significant in terms of supporting the idea being investigated. 
+Thus, the null hypothesis assumes that whatever you are trying to prove did not happen.
+
 2. Alternative Hypothesis: Mathematically opposite of Null hypothesis.
 Hypothesis Type is determined based on Test (Statistics):
 
@@ -39,7 +43,11 @@ https://bobrupakroy.medium.com/sweetviz-one-liner-eda-b4c645612845
 mito
 https://towardsdatascience.com/mito-speed-up-dataset-manipulation-with-no-coding-407b8c72f46f 
 
-### Regression
+### Logistic regression
+
+https://towardsdatascience.com/logistic-regression-from-first-principles-in-python-82f238effef1
+
+### Linear Regression
 Linear Regression is a model used to fit a line or hyperplane to a dataset where the output is continuous and has residuals which are normally distributed. 
 
 Imagine you are a phone operator and want to predict how many calls you will receive in a day. Do you think Linear Regression would be a suitable model? 
@@ -154,7 +162,12 @@ Book
 https://otexts.com/fpp3/stationarity.html
 https://otexts.com/fpp3/tscv.html
 
+#### Change point detection
+https://medium.com/@baw_H1/bayesian-approach-to-time-series-change-point-detection-613bf9376568
 
+ A change-point (CP) is abstraction for an abrupt change in a TS; its value is the time-index at which the TS changes its behavior. The behavior of a TS before the CP is different from that after the CP. More specifically, a CP is a point in time at which the parameters of the underlying distribution or the parameters of the model used to describe the TS abruptly change (e.g. mean, variance, trend) ([1]). This characterization underlies the proposed method discussed below. CP detection is about the statistical characterization of a CP. 
+ 
+ARIMA
 https://medium.com/@appravi18/time-series-analysis-with-classic-statistical-methods-fe6dfaf0cd4a
 
 Kaggle
