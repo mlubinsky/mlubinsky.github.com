@@ -318,6 +318,11 @@ In the figure below, L2 and L1 regularization terms are demonstrated with loss f
 
 
 ## Anomaly detection
+
+https://medium.com/low-code-for-advanced-data-science/anomaly-detection-for-predictive-maintenance-exploratory-data-analysis-56d13f1bc212
+
+https://medium.com/low-code-for-advanced-data-science/anomaly-detection-for-predictive-maintenance-control-charts-abcbe656c2d0
+
 Isolation forest is an unsupervised learning algorithm that works on the principle of isolating anomalies. 
 Isolation Forest like any other tree ensemble method is built on the basis of the decision tree. Just a Random Forest here in Isolation Forest we are isolating the extreme values.
 Extreme values are less frequent than regular observations i.e. they lie further from the regular observations in the feature space. 
