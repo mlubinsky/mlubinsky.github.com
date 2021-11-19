@@ -1,5 +1,7 @@
 https://developers.google.com/machine-learning/crash-course/
 
+https://medium.com/codex/11-ml-algorithms-you-should-know-in-2021-8fecbd3a2a1a
+
 https://towardsdatascience.com/key-concepts-to-improve-your-understanding-of-probability-theory-ca1d999dd6c9
 
 https://towardsdatascience.com/change-column-data-type-in-pandas-954d7acdef1d
@@ -163,6 +165,9 @@ Types of Correlation coefficients:  https://towardsdatascience.com/beyond-correl
 2. Population Correlation coefficients.
 3. Pearson Correlation coefficients.
 
+ Predictive Power Score PPS can uncover non-linear relationships between different columns and data types (non-numeric), is asymmetric and will show values, for example, if variable A can predict B and values for variable B to predict A.
+https://medium.com/geekculture/an-alternative-to-correlation-predictive-power-score-in-python-a3160c95d701
+
 autoviz and lux
 https://bobrupakroy.medium.com/autoviz-and-lux-8de6fe4d9a25
 sweetviz
@@ -281,6 +286,9 @@ https://arshren.medium.com/anomaly-detection-using-local-outlier-factor-4e52f168
 
 
 ### Feature selection
+
+https://pub.towardsai.net/feature-selection-and-removing-in-machine-learning-dd3726f5865c
+
 https://bechirtr97.medium.com/feature-selection-in-unsupervised-learning-problems-585a56d024bd
 
 In the case of supervised learning, this task is relatively easy thanks to preexisting tricks, 
