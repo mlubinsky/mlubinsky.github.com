@@ -4,6 +4,8 @@ https://medium.com/codex/11-ml-algorithms-you-should-know-in-2021-8fecbd3a2a1a
 
 https://towardsdatascience.com/key-concepts-to-improve-your-understanding-of-probability-theory-ca1d999dd6c9
 
+https://towardsdatascience.com/binomial-distribution-ec76d74952c4  Binomial
+
 https://towardsdatascience.com/change-column-data-type-in-pandas-954d7acdef1d
 
 https://towardsdatascience.com/a-beginners-guide-to-discrete-time-markov-chains-d5be17cf0e12
