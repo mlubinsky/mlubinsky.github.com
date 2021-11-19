@@ -1,14 +1,30 @@
 https://developers.google.com/machine-learning/crash-course/
 
+Beta distibution
+
+https://medium.com/analytics-vidhya/once-again-beta-distribution-db467a7eded0
+
+https://python.plainenglish.io/matrix-calculation-with-python-5df443c8911f Matrix operations 
+
 https://psrivasin.medium.com/p-value-in-hypothesis-testing-9c071775405d p-value
 
+https://towardsdatascience.com/a-checklist-of-basic-statistics-24b1d671d52
+
 https://benjaminobi.medium.com/mastery-of-data-science-theory-will-make-you-stand-out-e569b1220b1d
+
+### Interview
+https://medium.com/geekculture/24-maxims-every-data-scientist-should-know-d9ef9df5887e
 
 https://medium.com/codex/data-science-interview-prep-machine-learning-concepts-1b2f16b584ca
 
 https://medium.com/@tzjy/data-science-interview-prep-supervised-learning-models-3fc2a8f1cd5c
 
-### Heatmap pairplot
+https://medium.com/analytics-vidhya/5-question-series-data-science-ai-4-3070be5632a2
+
+### Heatmap pairplot  Q-Q plot
+ Quantile-Quantile plots.   plot the quantiles of a sample distribution against quantiles of a theoretical distribution. Doing this helps us determine if a dataset follows any particular type of probability distribution like normal, uniform, exponential.
+https://medium.com/@khandelwal.akansha/q-q-plot-ensure-your-ml-model-is-based-on-the-right-distribution-fe52b6ff4332
+
 https://medium.com/omics-diary/how-to-evaluate-relatedness-between-categorical-variables-using-the-seaborn-library-93f2c00784da
 
 ```
@@ -219,6 +235,8 @@ https://medium.com/analytics-vidhya/apriori-algorithm-a1f8589f32a0
 https://towardsdatascience.com/logistic-regression-from-first-principles-in-python-82f238effef1
 
 ### Linear Regression
+https://medium.com/@amitjain2110/10-assumptions-of-linear-regression-c58f8703d657
+
 Linear Regression is a model used to fit a line or hyperplane to a dataset where the output is continuous and has residuals which are normally distributed. 
 
 Imagine you are a phone operator and want to predict how many calls you will receive in a day. Do you think Linear Regression would be a suitable model? 
@@ -357,6 +375,21 @@ Feature Selection
 
 
 ### Model evaluation
+
+https://medium.com/@amitjain2110/important-model-evaluation-error-metrics-b649bca8ea74
+ 
+1. RMSE: Root Mean Squared Error
+2. ME: Mean Error
+3. MAE: Mean Absolute Error
+4. MAPE: Mean Absolute Percentage Error
+5. MASE: Mean Absolute Scaled Error
+6. Confusion Matrix
+7. Gain and Lift Chart
+8. Kolmogorov Smirnov Chart
+9. AUC — ROC
+10. Gini Coefficient
+11. Concordant — Discordant…
+
  Regression: regression is a process of finding the correlation between the dependent and independent variables. it is helpful in the prediction of the continuous variables such as the prediction of Stock Market, House prices, etc. 
  In regression, our task is to find the best suitable line that can predict the output accurately.
 
