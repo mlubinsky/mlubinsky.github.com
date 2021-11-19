@@ -1,5 +1,37 @@
 https://developers.google.com/machine-learning/crash-course/
 
+https://benjaminobi.medium.com/mastery-of-data-science-theory-will-make-you-stand-out-e569b1220b1d
+
+https://medium.com/codex/data-science-interview-prep-machine-learning-concepts-1b2f16b584ca
+
+https://medium.com/@tzjy/data-science-interview-prep-supervised-learning-models-3fc2a8f1cd5c
+
+### Heatmap pairplot
+https://medium.com/omics-diary/how-to-evaluate-relatedness-between-categorical-variables-using-the-seaborn-library-93f2c00784da
+
+```
+import csv
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+from scipy import stats 
+from scipy.stats import pearsonr
+pvals = pd.DataFrame([[pearsonr(df_log2FC[c], df_log2FC[y])[1] for y in df_log2FC.columns] for c in df_log2FC.columns],
+ columns=df_log2FC.columns, index=df_log2FC.columns)
+pvals
+
+mask = np.zeros_like(corr)
+mask[np.triu_indices_from(mask)] = True
+with sns.axes_style('white'):
+ f, ax = plt.subplots(figsize=(10, 7))
+ ax = sns.heatmap(corr, cmap='vlag', mask=mask, center=0, square=True, linewidths=2, annot=True, cbar_kws={'shrink': .5})
+ 
+  = sns.pairplot(df_log2FC)
+g.map_lower(sns.regplot)
+```
+
 https://medium.com/codex/11-ml-algorithms-you-should-know-in-2021-8fecbd3a2a1a
 
 https://towardsdatascience.com/key-concepts-to-improve-your-understanding-of-probability-theory-ca1d999dd6c9
@@ -193,7 +225,15 @@ The number of calls have to be greater or equal to 0, whereas in Linear Regressi
 
 The Poisson distribution is a probability distribution that measures how many times and how likely x (calls) will occur over a specified period. 
 
-Generalised Linear Models GLM
+https://towardsdatascience.com/complete-guide-to-regressional-analysis-using-python-bbe76b3e451f
+```
+In Machine Learning, tasks are often split into four major categories: Supervised Learning, Unsupervised Learning, Semi-Supervised Learning, and Reinforcement Learning.
+Regression falls into the domain of Supervised Learning, where the goal is to learn or model a function that maps a set of inputs to a set of outputs.
+In Supervised Learning, our set of outputs are commonly called the dependent variable in statistics or the target variable in the Machine Learning Community. This target variable can either be discrete, commonly called Classification, or continuous, commonly called Regression.
+In this way, Regression is simply trying to predict a continuous target variable given a set of inputs
+```
+
+Generalised Linear Models - GLM
 https://towardsdatascience.com/what-is-so-general-about-generalized-linear-model-15dde9be2640
 
 GLM’s are a generalisation of Linear Regression where the response variable takes a non-normal distribution such as a Poisson or Binomial distribution. GLM’s contain three core things:
