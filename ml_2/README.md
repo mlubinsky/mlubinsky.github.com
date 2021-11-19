@@ -36,6 +36,26 @@ autoviz and lux
 https://bobrupakroy.medium.com/autoviz-and-lux-8de6fe4d9a25
 sweetviz
 https://bobrupakroy.medium.com/sweetviz-one-liner-eda-b4c645612845 
+mito
+https://towardsdatascience.com/mito-speed-up-dataset-manipulation-with-no-coding-407b8c72f46f 
+
+### Regression
+Linear Regression is a model used to fit a line or hyperplane to a dataset where the output is continuous and has residuals which are normally distributed. 
+
+Imagine you are a phone operator and want to predict how many calls you will receive in a day. Do you think Linear Regression would be a suitable model? 
+The answer is NO for the following reasons:
+The number of calls have to be greater or equal to 0, whereas in Linear Regression the output can be negative as well as positive.
+
+The Poisson distribution is a probability distribution that measures how many times and how likely x (calls) will occur over a specified period. 
+
+Generalised Linear Models GLM
+
+GLM’s are a generalisation of Linear Regression where the response variable takes a non-normal distribution such as a Poisson or Binomial distribution. GLM’s contain three core things:
+- Part of the Exponential Family of Distributions
+- Linear Predictors
+- Link Function
+ 
+https://towardsdatascience.com/poisson-regression-and-generalised-linear-models-606fe5f7c1fd
 
 ### Clustering
 
@@ -83,6 +103,19 @@ https://bobrupakroy.medium.com/isolation-forest-7aa9bb9825cf
 https://bobrupakroy.medium.com/local-outlier-factor-lof-5d358ef8fd06
 https://arshren.medium.com/anomaly-detection-using-local-outlier-factor-4e52f16894f
 
+
+### Feature selection
+
+https://towardsdatascience.com/how-to-mitigate-overfitting-with-feature-selection-164897c0c3db
+
+ following techniques that can be used to mitigate overfitting:
+Cross-validation
+Regularization
+Dimensionality Reduction
+Creating Ensembles
+Feature Selection
+
+
 ### Model evaluation
 
 https://towardsdatascience.com/4-metrics-to-evaluate-your-regression-models-885e9caeee57
@@ -97,6 +130,7 @@ Performance estimation
 - (Repeated) k-fold cross-validation with independent test set
 
 https://medium.com/@tzjy/why-is-model-validation-so-important-in-data-science-877fdc70550
+ 
  
 https://towardsdatascience.com/4-metrics-to-evaluate-your-regression-models-885e9caeee57 
 Model evaluation using sklearn.metrics
