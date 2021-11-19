@@ -1,9 +1,18 @@
 https://developers.google.com/machine-learning/crash-course/
 
 ### Plotting
-Seaborn pairplot
+Seaborn pairplot   (pair-wise scatter plot(
 Heatmap
 Cross-correlation plot
+
+autoviz and lux
+https://bobrupakroy.medium.com/autoviz-and-lux-8de6fe4d9a25
+sweetviz
+https://bobrupakroy.medium.com/sweetviz-one-liner-eda-b4c645612845 
+
+### Clustering
+
+https://medium.com/softplus-publication/clustering-harness-the-power-of-kmeans-and-gmm-using-sklearn-2b9e2aea61dd
 
 ### Sampling
 
@@ -31,9 +40,15 @@ which is actually manhattan distance.
 In the figure below, L2 and L1 regularization terms are demonstrated with loss functions of logistic regression and linear regression respectively.
 
 
-### Anomaly detection
+## Anomaly detection
+Isolation forest is an unsupervised learning algorithm that works on the principle of isolating anomalies. 
+Isolation Forest like any other tree ensemble method is built on the basis of the decision tree. Just a Random Forest here in Isolation Forest we are isolating the extreme values.
+Extreme values are less frequent than regular observations i.e. they lie further from the regular observations in the feature space. 
+Thus with random sub-sampling/bootstrap aggregating like in the random forest, isolation forest is able to identify and isolate the extreme values.
+https://bobrupakroy.medium.com/isolation-forest-7aa9bb9825cf
 
-Anomaly Detection using Local Outlier Factor
+###  Local Outlier Factor - LOF
+https://bobrupakroy.medium.com/local-outlier-factor-lof-5d358ef8fd06
 https://arshren.medium.com/anomaly-detection-using-local-outlier-factor-4e52f16894f
 
 ### Model evaluation
@@ -60,10 +75,21 @@ RMSE — root mean squared error),
 and comparison of observed 
 and forecast value integrals (yearly absolute energy demand in MWh)
 
+
+### PCA
+
+ PCA uses some techniques to find the most important features or directions in the data and then it can discard unimportant parts to get the desired dimensionality of the target space.
+ 
+ https://medium.com/mlearning-ai/principal-component-analysis-explained-with-example-e1c4890ef420
+ 
 ## Timeseries
+
+Book
 https://otexts.com/fpp3/stationarity.html
 https://otexts.com/fpp3/tscv.html
 
+Kaggle
+https://towardsdatascience.com/key-takeaways-from-kaggles-most-recent-time-series-competition-ventilator-pressure-prediction-7a1d2e4e0131
 
 https://medium.com/analytics-vidhya/multi-seasonal-time-series-analysis-decomposition-and-forecasting-with-python-609409570007
 
