@@ -1,5 +1,7 @@
 https://developers.google.com/machine-learning/crash-course/
 
+https://psrivasin.medium.com/p-value-in-hypothesis-testing-9c071775405d p-value
+
 https://benjaminobi.medium.com/mastery-of-data-science-theory-will-make-you-stand-out-e569b1220b1d
 
 https://medium.com/codex/data-science-interview-prep-machine-learning-concepts-1b2f16b584ca
