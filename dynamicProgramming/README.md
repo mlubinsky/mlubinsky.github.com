@@ -80,7 +80,7 @@ def maximum_sum_dynamic(arr):
 	return max(soln)
  ``` 
 
-#### Cat the rod
+#### Cut the rod
 
 https://github.com/charulagrl/data-structures-and-algorithms/blob/master/algorithm-questions/dynamic_programming/cutting_a_rod.py
 
@@ -101,6 +101,33 @@ def cutting_a_rod_dynamic(values, length):
 
 	return soln[length]
 ```
+Another solution from https://www.techiedelight.com/rod-cutting/
+```
+# Function to find the best way to cut a rod of length `n`
+# where the rod of length `i` has a cost `price[i-1]`
+def rodCut(price, n):
+ 
+    # `T[i]` stores the maximum profit achieved from a rod of length `i`
+    T = [0] * (n + 1)
+ 
+    # consider a rod of length `i`
+    for i in range(1, n + 1):
+        # divide the rod of length `i` into two rods of length `j`
+        # and `i-j` each and take maximum
+        for j in range(1, i + 1):
+            T[i] = max(T[i], price[j - 1] + T[i - j])
+ 
+    # `T[n]` stores the maximum profit achieved from a rod of length `n`
+    return T[n]
+ 
+ 
+if __name__ == '__main__':
+ 
+    price = [1, 5, 8, 9, 10, 17, 17, 20]
+    n = 4        # rod length
+ 
+    print('Profit is', rodCut(price, n))
+   `` 
 
 ####    Min Cost Path on grid 
 https://github.com/StBogdan/PythonWork/blob/master/Leetcode/64.py
