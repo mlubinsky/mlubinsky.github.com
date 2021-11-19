@@ -10,7 +10,9 @@ https://medium.com/@chaunn3502/autocorrelation-and-partial-autocorrelation-in-ti
 
 https://medium.com/analytics-vidhya/descriptive-predictive-and-feature-selection-on-time-series-data-813a202312b1
 
-https://medium.com/gousto-engineering-techbrunch/stop-using-prophet-as-a-black-box-3-ways-it-can-go-wrong-1046f6c6ec73 Prothet
+https://medium.com/gousto-engineering-techbrunch/stop-using-prophet-as-a-black-box-3-ways-it-can-go-wrong-1046f6c6ec73 Prophet
+
+https://griddb.net/en/ GridDB
 
 https://onlinelibrary.wiley.com/doi/book/10.1002/9781119682394 . Book
 
