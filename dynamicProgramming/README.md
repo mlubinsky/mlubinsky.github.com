@@ -2,6 +2,8 @@
 
 https://medium.com/free-code-camp/follow-these-steps-to-solve-any-dynamic-programming-interview-problem-cc98e508cd0e
 
+https://medium.com/@pv.safronov/dynamic-programming-is-simple-3-multi-root-recursion-c613dfcc15b4
+
 https://betterprogramming.pub/a-systematic-approach-to-dynamic-programming-54902b6b0071
 
 https://oddblogger.com/recursion-memoization-dynamic-programming-lcs-problem/
