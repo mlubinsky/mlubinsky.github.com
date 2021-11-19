@@ -113,6 +113,13 @@ https://arshren.medium.com/anomaly-detection-using-local-outlier-factor-4e52f168
 
 
 ### Feature selection
+https://bechirtr97.medium.com/feature-selection-in-unsupervised-learning-problems-585a56d024bd
+
+In the case of supervised learning, this task is relatively easy thanks to preexisting tricks, 
+such as feature importance embedded in many scikit learn models perse 
+(i.e Random Forrests, linear regression, logistic regression …etc.),
+and the existence of loss functions computable directly is also a big help, 
+as we can always run an exhaustive search with a fixed model and compare the obtain loss scores.
 
 https://towardsdatascience.com/how-to-mitigate-overfitting-with-feature-selection-164897c0c3db
 
