@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=23z_ruAi4FI  Бубновский
 
+https://habr.com/ru/post/590183/
+https://makeright.ru/library/keep-sharp-by-sanjay-gupta-book-sprint/
 
 L-Citrulline !!!
 
