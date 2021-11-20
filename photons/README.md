@@ -1,5 +1,7 @@
 https://scask.ru/ books
 
+http://www.issp.ac.ru/ebooks/books/open/
+
 ### SAJEEV JOHN
 
 https://www.physics.utoronto.ca/~john/
