@@ -1,3 +1,5 @@
+http://optics.sinp.msu.ru/stud/stud.html
+
 https://scask.ru/ books
 
 http://www.issp.ac.ru/ebooks/books/open/
