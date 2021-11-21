@@ -1,5 +1,8 @@
 https://developers.google.com/machine-learning/crash-course/
 
+automatic differntiation JAX
+https://arxiv.org/pdf/2111.00254.pdf
+
 Beta distibution
 
 https://medium.com/analytics-vidhya/once-again-beta-distribution-db467a7eded0
