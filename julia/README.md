@@ -8,7 +8,12 @@ https://techytok.com/from-zero-to-julia/
 
 https://devpoga.org/post/2021-08-04_learning_julia_line_by_line/
 
-https://arxiv.org/pdf/2108.12301.pdf Symbolic math in Julia
+### Symbolic math in Julia
+
+https://arxiv.org/pdf/2108.12301.pdf 
+
+https://juliasymbolics.org/
+
 
 https://arxiv.org/pdf/2003.10146.pdf  Julia for ML
 
