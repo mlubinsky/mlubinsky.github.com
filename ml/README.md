@@ -8,8 +8,25 @@ https://arxiv.org/abs/1709.02840  Introduction to Machine Learning
 
 https://arxiv.org/abs/2004.09280 Towards a theory of machine learning. Vitaly Vanchurin
 
+
+### Automatic differentiation JAX
+
 https://arxiv.org/pdf/2110.06209.pdf  A Brief Introduction to Automatic Differentiation for
 Machine Learning
+
+automatic differntiation JAX
+https://arxiv.org/pdf/2111.00254.pdf
+
+
+https://deepmind.com/blog/article/using-jax-to-accelerate-our-research
+
+#### WAX-ML
+
+https://arxiv.org/pdf/2106.06524.pdf WAX-ML: A Python library for machine learning and feedback
+loops on streaming data
+
+https://wax-ml.readthedocs.io/en/latest/
+
 
 https://cdanielaam.medium.com/essential-mathematical-equations-for-predictive-models-fcb79630ec96
 
@@ -108,16 +125,6 @@ https://www.youtube.com/watch?v=w6Pw4MOzMuo
 
 https://news.ycombinator.com/item?id=27577467  ML beyound curve fitting
 
-### JAX
-
-https://deepmind.com/blog/article/using-jax-to-accelerate-our-research
-
-#### WAX-ML
-
-https://arxiv.org/pdf/2106.06524.pdf WAX-ML: A Python library for machine learning and feedback
-loops on streaming data
-
-https://wax-ml.readthedocs.io/en/latest/
 
 ### ROC
 
