@@ -15,6 +15,8 @@ https://www.studmed.ru/search?q=%D0%91%D0%BE%D1%81%D1%81+%D0%92.+%D0%9B%D0%B5%D0
 
 https://www.mccme.ru/free-books/
 
+http://www.slimy.com/~steuard/teaching/tutorials/Lagrange.html Lagrange multiplier in optimization
+
 http://nozdr.ru/biblio/edu/math/high
 
 https://amathr.org/software/
