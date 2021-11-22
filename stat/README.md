@@ -1,13 +1,30 @@
 
 ### Bayes
 
+https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/
+
 P(A/B) = P(A) * P(B/A) / P(B)
+
 posterior = prior * (likelihood /marginal)
 
 - Posterior probability (updated probability after the evidence is considered)
 - Prior probability (the probability before the evidence is considered)
 - Likelihood (probability of the evidence, given the belief is true)
 - Marginal probability (probability of the evidence, under any circumstance)
+
+- 1% of women have breast cancer (and therefore 99% do not).
+- 80% of mammograms detect breast cancer when it is there (and therefore 20% miss it).
+- 9.6% of mammograms detect breast cancer when it’s not there (and therefore 90.4% correctly return a negative result).
+
+Suppose you get a positive test result. What are the chances you have cancer? 
+
+The chances of a true positive = chance you have cancer * chance test caught it = 1% * 80% = .008
+
+The chances of a false positive = chance you don’t have cancer * chance test caught it anyway = 99% * 9.6% = 0.09504
+
+The chance of getting a real, positive result is .008. The chance of getting any type of positive result is the chance of a true positive plus the chance of a false positive (.008 + 0.09504 = .10304).
+
+So, our chance of cancer is .008/.10304 = 0.0776, or about 7.8%.
 
 http://allendowney.github.io/ThinkBayes2/index.html
 
