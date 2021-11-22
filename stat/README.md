@@ -1,3 +1,21 @@
+
+### Bayes
+
+P(A/B) = P(A) * P(B/A) / P(B)
+posterior = prior * (likelihood /marginal)
+
+- Posterior probability (updated probability after the evidence is considered)
+- Prior probability (the probability before the evidence is considered)
+- Likelihood (probability of the evidence, given the belief is true)
+- Marginal probability (probability of the evidence, under any circumstance)
+
+http://allendowney.github.io/ThinkBayes2/index.html
+
+https://austinrochford.com/posts/2021-06-10-lego-pymc3.html
+
+https://pub.towardsai.net/bayesian-inference-beyond-estimating-statistical-models-4b2f78c7f090
+
+
 https://www.cs.ox.ac.uk/people/nando.defreitas/publications/BayesOptLoop.pdf Bayes
 
 
@@ -152,13 +170,6 @@ https://www.crosstab.io/articles/survival-analysis-applications
 
 https://statisticsbyjim.com/basics/z-score
 
-### Bayes
-
-http://allendowney.github.io/ThinkBayes2/index.html
-
-https://austinrochford.com/posts/2021-06-10-lego-pymc3.html
-
-https://pub.towardsai.net/bayesian-inference-beyond-estimating-statistical-models-4b2f78c7f090
 
 
 ### Casual inference
