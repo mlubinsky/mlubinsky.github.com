@@ -80,6 +80,8 @@ Go has block-level scoping.
 
 ## Go and databases
 
+https://henvic.dev/posts/go-postgres/ 
+
 https://github.com/nakabonne/tstorage
 
 <https://notes.eatonphil.com/database-basics.html> implementing SQL DB from scratch
