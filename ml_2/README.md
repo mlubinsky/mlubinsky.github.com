@@ -107,13 +107,19 @@ K-means clustering is an unsupervised machine learning algorithm that is used to
 16. What is ‘Naive’ in the Naive Bayes Theorem?
 
 Ans: Naive Bayes classifier assumes that all the input variables are independent of each other means they don’t have any relationship between them which is actually an unrealistic assumption for real data.
-Let’s suppose a dataset that contains information about fruits and detects whether the fruit is an apple or not. A sample of this data contains a fruit that is red, round, and about 4'' in diameter. Even if all these features depend on each other or upon the existence of the other feature A Naive Bayes classifier will always consider them as independent contributors for the prediction of the fruit.
+Let’s suppose a dataset that contains information about fruits and detects whether the fruit is an apple or not.
+A sample of this data contains a fruit that is red, round, and about 4'' in diameter. 
+Even if all these features depend on each other or upon the existence of the other feature A Naive Bayes classifier will always consider them as independent contributors for the prediction of the fruit.
+
 17. How Ensemble Learning Works?
 
-Ans: Ensemble Learning is a technique in which the predictions or results of multiple models are combines to achieve better performance. Let’s Take an example if you buy a car you generally go for research on the web to search for reviews and features of different cars and In the end, after combining all the reviews you create your own review of that car and decide whether you want to purchase or not. The review you create is the better version of all the reviews you read because it contains the information from all the reviews. 
+Ans: Ensemble Learning is a technique in which the predictions or results of multiple models are combines to achieve better performance. 
+Let’s Take an example 
+if you buy a car you generally go for research on the web to search for reviews and features of different cars 
+and In the end, after combining all the reviews you create your own review of that car and decide whether you want to purchase or not. The review you create is the better version of all the reviews you read because it contains the information from all the reviews. 
 Ensemble learning works the same, The predictions from many algorithms are used to create a better model.
 Ensemble Learning can be done using two ways, one is to use different algorithms prediction combine to generate a new high accuracy prediction or another way is to use a single algorithm multiple times and at the end, use each model prediction to generate a better model with good accuracy.
-“Don’t Let Yesterday Take Up Too Much Of Today.” — Will Rogers
+ 
 
 18. What is bagging and Boosting in machine learning?
 
@@ -122,14 +128,16 @@ Boosting is a way of combining predictions belongs to different algorithms. Ex: 
 
 19. What is a bias-variance tradeoff?
 
-Ans: bias is the difference between the average prediction of the model and the correct value on the other hand variance is the variability of a data point that shows the spread of the data.
+Ans: bias is the difference between the average prediction of the model and the correct value 
+on the other hand variance is the variability of a data point that shows the spread of the data.
 if our model has fewer parameters then it may have High bias and Low variance because of that it will consistent but inaccurate on average.
 A model with a large number of parameters may have Low bias and High variance models which are mostly accurate on average but inconsistent in nature.
 A good model always has low bias and low variance.
 
 20. Explain L1 and L2 Regularization?
 
-Ans: A Regression model that uses L1 Regularization is called Lasso Regression and the Model which uses L2 Regularization is called Ridge Regression. 
+Ans: A Regression model that uses L1 Regularization is called Lasso Regression 
+and the Model which uses L2 Regularization is called Ridge Regression. 
 ◾ L1 regularization adds the penalty term in the cost function by adding the absolute value of weight(Wj), while L2 regularization adds the squared value of weights(Wj) in the cost function.
 ◾ One More difference between both of them is that L1 regularization tries to estimate the median of the data while L2 regularization tries to estimate the mean of the data. 
 ◾ L1 regularization helps in eliminating the features that are not important.
