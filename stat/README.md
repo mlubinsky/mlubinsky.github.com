@@ -6,6 +6,25 @@ http://www.numericalexpert.com/blog/online_stat/ single pass for (variance, skew
 http://www.numericalexpert.com/tutorials.php
 
 
+### Permutations
+
+The number of permutations of n distinct objects is n!
+
+### combinations = сочетание
+  сочетанием из   n по   k называется набор из   k элементов, выбранных из   n-элементного множества, 
+  в котором не учитывается порядок элементов.
+
+combination is a selection of items from a set that has distinct members, 
+such that the order of selection does not matter 
+
+If the set has n elements, the number of k-combinations, denoted as  C_{k}^{n}} C_{k}^{n}, is equal to the binomial coefficient C= n!/k!(n-k)!
+
+### Размещение = k-permutations of n
+
+размеще́нием (из n по k) называется упорядоченный набор из k различных элементов из некоторого множества различных n элементов.  В отличие от сочетаний, размещения учитывают порядок следования предметов.
+
+A= n!/k!(n-k)!
+
 ### Python
 
 https://patsy.readthedocs.io/en/
