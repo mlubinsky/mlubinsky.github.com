@@ -126,15 +126,9 @@ https://news.ycombinator.com/item?id=23841491
 ### Succinct
 https://github.com/miiohio/succinct
 
-
 <https://habr.com/ru/company/mailru/blog/479822/> Succinct data structures
 
 https://habr.com/ru/post/511646/. how to effectively store integer array
- 
-
-
-<https://www.dailycodingproblem.com/subscribe?email=mlubinsky%40hotmail.com>
-
 
 
 ## System design
@@ -146,14 +140,17 @@ https://habr.com/ru/post/511646/. how to effectively store integer array
 
 <https://www.youtube.com/watch?v=ap5Z1Q3y3Pw>
 
+<https://www.youtube.com/watch?v=fowDzrMa-Mo&utm_source=reddit> design distributed cache
+
+
+<https://www.youtube.com/watch?v=tzsOc-hBPfw>
+
+<https://www.youtube.com/watch?v=Eg2BjTmnLS8>
+
+### Unsorted
 <https://github.com/mochow13/competitive-programming-library> 
 
-
-
 <https://habr.com/ru/company/JetBrains-education/blog/495014/>
-
-
-
 
 
 <https://habr.com/ru/company/otus/blog/485194/> Дерево отрезков 
@@ -165,14 +162,6 @@ https://habr.com/ru/post/511646/. how to effectively store integer array
 
 
 
-<https://www.youtube.com/watch?v=fowDzrMa-Mo&utm_source=reddit> design distributed cache
-
-
-
-<https://www.youtube.com/watch?v=tzsOc-hBPfw>
-
-<https://www.youtube.com/watch?v=Eg2BjTmnLS8>
-
 ### Sort
 <https://yurichev.com/blog/qsort/> quick sort
 
@@ -183,12 +172,9 @@ https://habr.com/ru/post/511646/. how to effectively store integer array
 
 https://youtu.be/lbcswonQmGs selection sort
 
+<https://dev.to/s_awdesh> duplicates in array, dual pivot sort
+
 <https://habr.com/ru/company/otus/blog/476510/> Шахматный Bitboard
-
-
-
-
-<https://github.com/prabhupant/python-ds>
 
 
 
@@ -221,35 +207,27 @@ https://youtu.be/lbcswonQmGs selection sort
 
 <https://www.youtube.com/channel/UC_79TBgKFlEwFp345dYF7ag>
 
-<https://robertheaton.com/2014/05/02/jaccard-similarity-and-minhash-for-winners/>
-
-
-
-
-
-<https://www.byte-by-byte.com>
-
 
 <https://habr.com/ru/post/438512/> алгоритм Хаффмана
-
-
-
-
 
 
 <https://www.youtube.com/watch?v=TeZqKnC2gvA> Visitor design pattern
 
 
+### ML
 
-
+<https://github.com/prabhupant/python-ds>
 
 <http://www.benfrederickson.com/distance-metrics/>
 
 
+### Interview
 
 <https://www.quora.com/How-do-I-start-learning-or-strengthen-my-knowledge-of-data-structures-and-algorithms?redirected_qid=2804253>
 
+<https://www.dailycodingproblem.com/subscribe?email=mlubinsky%40hotmail.com>
 
+<https://www.byte-by-byte.com>
 
 <https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf>
 
@@ -264,12 +242,7 @@ https://youtu.be/lbcswonQmGs selection sort
 <https://www.youtube.com/watch?v=7Hlb8YX2-W8>
 
 
-
-
-
 <http://cslibrary.stanford.edu/>
-
-
 
 
 <https://www.youtube.com/watch?v=GiCWlXEhht8>
@@ -319,7 +292,10 @@ https://habr.com/ru/company/yandex/blog/572588/ hash tables
 https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/?274619
 
 
+<https://robertheaton.com/2014/05/02/jaccard-similarity-and-minhash-for-winners/>
+
 <https://www.data-structures-in-practice.com/hash-tables/>
+
 
 <https://engineering.fb.com/developer-tools/f14/>
 
@@ -360,10 +336,6 @@ https://news.ycombinator.com/item?id=27614381
 <https://en.wikipedia.org/wiki/Locality-sensitive_hashing>
 
 <http://unboxresearch.com/articles/lsh_post1.html>
-
-
-<https://dev.to/s_awdesh> duplicates in array, dual pivot sort
-
 
 
 ## Regular expression
