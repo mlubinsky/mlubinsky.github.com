@@ -1,6 +1,9 @@
 https://github.com/NIteshx2/AdvancedSQL_Interview
 
+
 https://github.com/prius/learning
+
+https://github.com/prabhupant/python-ds
 
 https://medium.com/@pv.safronov/graph-traversal-python-patterns-that-help-you-think-less-and-code-faster-66f76e1ab820
 
@@ -68,6 +71,21 @@ https://towardsdatascience.com/10-algorithms-to-solve-before-your-python-coding-
 https://github.com/thundergolfer/interview-with-python/tree/master/solutions/python
 
 https://redquark.org/blogs
+
+
+### Interview
+
+<https://www.quora.com/How-do-I-start-learning-or-strengthen-my-knowledge-of-data-structures-and-algorithms?redirected_qid=2804253>
+
+<https://www.dailycodingproblem.com/subscribe?email=mlubinsky%40hotmail.com>
+
+<https://www.byte-by-byte.com>
+
+<https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf>
+
+<https://hackernoon.com/10-data-structure-algorithms-and-programming-courses-to-crack-any-coding-interview-e1c50b30b927>
+
+<https://www.bitdegree.org/user/course/data-structures-and-algorithms>
 
 
 #### Given an integer array nums and an integer k, return the number of pairs (i, j) where i < j such that |nums[i] - nums[j]| == k.
