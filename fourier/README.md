@@ -2,6 +2,8 @@ https://see.stanford.edu/materials/lsoftaee261/book-fall-07.pdf
 
 https://www.youtube.com/watch?v=toj_IoCQE-4 FFT
 
+https://www.youtube.com/watch?v=KTj1YgeN2sY Discrete FT Steve Brunton
+
 https://www.youtube.com/watch?v=s2K1JfNR7Sc. Denoise data with FFT
 
 ## Fourier series
