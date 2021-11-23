@@ -2,11 +2,25 @@
 
 https://blog.bradfieldcs.com/an-introduction-to-hashing-in-the-era-of-machine-learning-6039394549b0
 
+### Books
+
+http://algorithmsbook.com/ Algorithms for Decision Making
+
 http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big data
 
-https://www.infoq.com/presentations/abstract-algebra-analytics/ 
+<http://csc.kth.se/~jsannemo/slask/main.pdf> Book
+
+<https://cses.fi/book.pdf> Book
+
+<http://e-maxx.ru/index.php>
+
+
 
 http://www.dspguide.com/pdfbook.htm DSP book
+
+
+
+https://www.infoq.com/presentations/abstract-algebra-analytics/ 
 
 https://www.infoq.com/data-analysis/
 
@@ -28,7 +42,7 @@ https://quanticdev.com/algorithms/distributed-computing/distributed-sorting/. di
 
 
 
-http://algorithmsbook.com/ Algorithms for Decision Making
+
 
 ### B-tree
 https://benjamincongdon.me/blog/2021/08/17/B-Trees-More-Than-I-Thought-Id-Want-to-Know/
@@ -242,11 +256,7 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 
 <https://www.youtube.com/watch?v=7Hlb8YX2-W8>
 
-<http://csc.kth.se/~jsannemo/slask/main.pdf> Book
 
-<https://cses.fi/book.pdf> Book
-
-<http://e-maxx.ru/index.php>
 
 
 
@@ -288,6 +298,8 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 https://blog.bradfieldcs.com/an-introduction-to-hashing-in-the-era-of-machine-learning-6039394549b0
 
  https://www.andreinc.net/2021/11/08/a-tale-of-java-hash-tables
+ 
+https://news.ycombinator.com/item?id=29319151 
 
 <https://www.partow.net/programming/hashfunctions/idx.html>
 
