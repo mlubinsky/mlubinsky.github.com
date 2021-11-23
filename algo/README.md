@@ -53,20 +53,12 @@ https://habr.com/ru/company/JetBrains-education/blog/536032/  Видео кур�
 https://heap.io/blog/engineering/applying-textbook-data-structures-for-real-life-wins
 
 
-
 https://www.reddit.com/r/MachineLearning/comments/fdw0ax/d_advanced_courses_update/
 
 http://courses.csail.mit.edu/6.851/
 
- 
-
-
-
-
-
 
 https://compsciclub.ru/
-
 
 
 https://habr.com/ru/company/tensor/blog/518726/. Prefix Trie
@@ -80,12 +72,9 @@ https://mitmath.github.io/18S191/Fall20/ . Computansional thinking using Julia
 
 https://www.cs.auckland.ac.nz/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf
 
-
-
 https://quastor.org/learn/course-introduction/introduction
 
 https://pypi.org/project/circuitbreaker/ 
-
 
 
 https://news.ycombinator.com/item?id=23841491
@@ -121,7 +110,6 @@ https://habr.com/ru/post/511646/. how to effectively store integer array
 
 
 https://habr.com/ru/company/otus/blog/541378/ Bloom filter
-
 
 
 <https://habr.com/ru/company/otus/blog/485194/> Дерево отрезков 
@@ -201,7 +189,6 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 <https://www.amazon.com/dp/1793296634> Algo Book
 
 
-
 <http://www.cs.sjtu.edu.cn/~jiangli/teaching/CS222/files/materials/Algorithm%20Design.pdf> Algo book
 
 <https://medium.com/@adityakumar_98609/fenwick-tree-binary-index-tree-aca7824d9c2a> fenwick
@@ -223,15 +210,15 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 
 <https://www.youtube.com/watch?v=TeZqKnC2gvA> Visitor design pattern
 
+### Tree
+
 <https://habr.com/ru/company/otus/blog/472040/> red black tree
 
 
 
 <https://blog.sqreen.io/demystifying-radix-trees/> . Radix tree
+
 <https://news.ycombinator.com/item?id=18921058> . Radix trees
-
-
-
 
 
 
@@ -297,6 +284,8 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 
 
 ## Hash function and hashtable 
+
+https://blog.bradfieldcs.com/an-introduction-to-hashing-in-the-era-of-machine-learning-6039394549b0
 
  https://www.andreinc.net/2021/11/08/a-tale-of-java-hash-tables
 
