@@ -35,18 +35,11 @@ https://benjamincongdon.me/blog/2021/08/17/B-Trees-More-Than-I-Thought-Id-Want-t
 
 https://erthalion.info/2020/11/28/evolution-of-btree-index-am/
 
-https://habr.com/ru/company/yandex/blog/572588/ hash tables
+
 
 
 https://jornhub.dev/articles/fenwick-trees/ Fenwick tree
 
-### local sensitive hashing - LSH
-
-http://tylerneylon.com/a/lsh1/ 
-
-https://www.youtube.com/watch?v=kKRvEJrvvso
-
-https://news.ycombinator.com/item?id=27614381
 
 
 https://news.ycombinator.com/item?id=25716581 	Algorithms for Decision Making
@@ -274,8 +267,12 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 
 <http://cslibrary.stanford.edu/>
 
-<http://www.idryman.org/blog/2017/07/04/learn-hash-table-the-hard-way/
-<https://medium.com/engineering-brainly/locality-sensitive-hashing-explained-304eb39291e4>  Local sensitive hash
+
+
+
+
+
+
 <https://sagi.io/2017/07/bloom-filters-for-the-perplexed/>
 <https://news.ycombinator.com/item?id=15346337>
 
@@ -301,13 +298,21 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 
 ## Hash function and hashtable 
 
- 
+ https://www.andreinc.net/2021/11/08/a-tale-of-java-hash-tables
 
 <https://www.partow.net/programming/hashfunctions/idx.html>
 
 <https://programming.guide/hash-tables.html> Hash
 
 https://habr.com/ru/post/509220/. Hash table implementation
+
+https://habr.com/ru/company/yandex/blog/572588/ hash tables
+
+
+<http://www.idryman.org/blog/2017/07/04/learn-hash-table-the-hard-way/
+
+<https://medium.com/engineering-brainly/locality-sensitive-hashing-explained-304eb39291e4>  Local sensitive hash
+
 
 ### minhash
 <https://en.wikipedia.org/wiki/MinHash> minhash
@@ -344,17 +349,21 @@ https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/?274619
 
 <https://dzone.com/articles/simple-magic-consistent>
 
-## Locality sensitive hashing
+
+### local sensitive hashing - LSH
+
+http://tylerneylon.com/a/lsh1/ 
+
+https://www.youtube.com/watch?v=kKRvEJrvvso
+
+https://news.ycombinator.com/item?id=27614381
 
 <https://en.wikipedia.org/wiki/Locality-sensitive_hashing>
 
 <http://unboxresearch.com/articles/lsh_post1.html>
 
+
 <https://dev.to/s_awdesh> duplicates in array, dual pivot sort
-
-
-
-## Others
 
 
 
