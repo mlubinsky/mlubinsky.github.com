@@ -14,7 +14,7 @@ http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big dat
 
 <https://cses.fi/book.pdf> Book
 
-<http://e-maxx.ru/index.php>
+<http://e-maxx.ru/index.php>     <http://e-maxx.ru/algo/>
 
 <https://cses.fi/book/> . Competitive programming book
 
@@ -23,7 +23,7 @@ http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big dat
 
 <http://www.cs.sjtu.edu.cn/~jiangli/teaching/CS222/files/materials/Algorithm%20Design.pdf> Algo book
 
-<http://e-maxx.ru/algo/>
+
 
 <https://www.reddit.com/r/algorithms/comments/g7qc13/is_there_a_cookbook_for_algorithms_a_collection/>
 
@@ -107,12 +107,10 @@ http://courses.csail.mit.edu/6.851/
 https://compsciclub.ru/
 
 
-
-
 https://www.codementor.io/@svenkatadileepkumar/find-all-the-prime-numbers-less-than-n-in-o-n-time-complexity-1amti1lm2p
 
 
-https://mitmath.github.io/18S191/Fall20/ . Computansional thinking using Julia
+https://mitmath.github.io/18S191/Fall20/ . Computasional thinking using Julia
 
 https://www.cs.auckland.ac.nz/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf
 
@@ -216,24 +214,11 @@ https://youtu.be/lbcswonQmGs selection sort
 
 ### ML
 
-<https://github.com/prabhupant/python-ds>
 
 <http://www.benfrederickson.com/distance-metrics/>
 
 
-### Interview
 
-<https://www.quora.com/How-do-I-start-learning-or-strengthen-my-knowledge-of-data-structures-and-algorithms?redirected_qid=2804253>
-
-<https://www.dailycodingproblem.com/subscribe?email=mlubinsky%40hotmail.com>
-
-<https://www.byte-by-byte.com>
-
-<https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf>
-
-<https://hackernoon.com/10-data-structure-algorithms-and-programming-courses-to-crack-any-coding-interview-e1c50b30b927>
-
-<https://www.bitdegree.org/user/course/data-structures-and-algorithms>
 
 
 
