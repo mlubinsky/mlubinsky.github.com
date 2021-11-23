@@ -6,6 +6,8 @@ https://blog.bradfieldcs.com/an-introduction-to-hashing-in-the-era-of-machine-le
 
 http://algorithmsbook.com/ Algorithms for Decision Making
 
+https://news.ycombinator.com/item?id=25716581 	Algorithms for Decision Making
+
 http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big data
 
 <http://csc.kth.se/~jsannemo/slask/main.pdf> Book
@@ -14,11 +16,39 @@ http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big dat
 
 <http://e-maxx.ru/index.php>
 
+<https://cses.fi/book/> . Competitive programming book
 
+<https://www.amazon.com/dp/1793296634> Algo Book
+
+
+<http://www.cs.sjtu.edu.cn/~jiangli/teaching/CS222/files/materials/Algorithm%20Design.pdf> Algo book
+
+<http://e-maxx.ru/algo/>
+
+<https://www.reddit.com/r/algorithms/comments/g7qc13/is_there_a_cookbook_for_algorithms_a_collection/>
+
+
+<http://opendatastructures.org/>
+
+<https://algs4.cs.princeton.edu/home/>
 
 http://www.dspguide.com/pdfbook.htm DSP book
 
+### Bloom filter, Hyperloglog
 
+https://boyter.org/posts/bloom-filter/ Bloom filter 
+
+https://habr.com/ru/company/otus/blog/541378/ Bloom filter
+
+<https://sagi.io/2017/07/bloom-filters-for-the-perplexed/>
+
+<https://news.ycombinator.com/item?id=15346337>
+
+<https://djhworld.github.io/hyperloglog/>
+
+<https://mungingdata.com/apache-spark/hyperloglog-count-distinct/> HyperLogLog for approximate count distinct
+
+### Not books
 
 https://www.infoq.com/presentations/abstract-algebra-analytics/ 
 
@@ -30,38 +60,40 @@ http://www.numericalexpert.com/articles/single_pass_stat/ Calculate STD and othe
   
 https://www.algorithm-archive.org/  
 
-https://boyter.org/posts/bloom-filter/ Bloom filter 
 
 http://jeffe.cs.illinois.edu/teaching/algorithms/
 
 
-
 https://quanticdev.com/algorithms/distributed-computing/distributed-sorting/. distibuted sorting
 
+### Tree
+
+<https://habr.com/ru/company/otus/blog/472040/> red black tree
 
 
+<https://blog.sqreen.io/demystifying-radix-trees/> . Radix tree
 
+<https://news.ycombinator.com/item?id=18921058> . Radix trees
 
+### Tree, suffix tree, B-tree, etc
 
+https://habr.com/ru/company/tensor/blog/518726/. Prefix Trie
 
-### B-tree
+<https://habr.com/ru/post/455260/> Merkel's tree
+
+<https://humanreadablemag.com/issues/0/articles/the-wonders-of-the-suffix-tree-through-the-lens-of-ukkonen%E2%80%99s-algorithm/>
+
 https://benjamincongdon.me/blog/2021/08/17/B-Trees-More-Than-I-Thought-Id-Want-to-Know/
 
 https://erthalion.info/2020/11/28/evolution-of-btree-index-am/
 
-
-
+<https://medium.com/@adityakumar_98609/fenwick-tree-binary-index-tree-aca7824d9c2a> fenwick
 
 https://jornhub.dev/articles/fenwick-trees/ Fenwick tree
 
-
-
-https://news.ycombinator.com/item?id=25716581 	Algorithms for Decision Making
-
-
+###
 
 https://habr.com/ru/company/JetBrains-education/blog/536032/  Видео курсов Computer Science клуба
-
 
 
 https://heap.io/blog/engineering/applying-textbook-data-structures-for-real-life-wins
@@ -75,9 +107,7 @@ http://courses.csail.mit.edu/6.851/
 https://compsciclub.ru/
 
 
-https://habr.com/ru/company/tensor/blog/518726/. Prefix Trie
 
-https://youtu.be/lbcswonQmGs selection sort
 
 https://www.codementor.io/@svenkatadileepkumar/find-all-the-prime-numbers-less-than-n-in-o-n-time-complexity-1amti1lm2p
 
@@ -93,17 +123,17 @@ https://pypi.org/project/circuitbreaker/
 
 https://news.ycombinator.com/item?id=23841491
 
+### Succinct
 https://github.com/miiohio/succinct
+
+
+<https://habr.com/ru/company/mailru/blog/479822/> Succinct data structures
 
 https://habr.com/ru/post/511646/. how to effectively store integer array
  
 
 
 <https://www.dailycodingproblem.com/subscribe?email=mlubinsky%40hotmail.com>
-
-<http://e-maxx.ru/algo/>
-
-<https://www.reddit.com/r/algorithms/comments/g7qc13/is_there_a_cookbook_for_algorithms_a_collection/>
 
 
 
@@ -123,12 +153,11 @@ https://habr.com/ru/post/511646/. how to effectively store integer array
 <https://habr.com/ru/company/JetBrains-education/blog/495014/>
 
 
-https://habr.com/ru/company/otus/blog/541378/ Bloom filter
+
 
 
 <https://habr.com/ru/company/otus/blog/485194/> Дерево отрезков 
 
-<https://habr.com/ru/company/mailru/blog/479822/> Succinct data structures
 
 <https://habr.com/ru/post/484756/> Visual information theory
 
@@ -144,7 +173,7 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 
 <https://www.youtube.com/watch?v=Eg2BjTmnLS8>
 
-## Sort
+### Sort
 <https://yurichev.com/blog/qsort/> quick sort
 
 <https://habr.com/ru/post/484224/> Radix sort
@@ -152,13 +181,12 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 <https://youtu.be/3fwCe9Ct8go> faster sort
 
 
+https://youtu.be/lbcswonQmGs selection sort
+
 <https://habr.com/ru/company/otus/blog/476510/> Шахматный Bitboard
 
-<https://mungingdata.com/apache-spark/hyperloglog-count-distinct/> HyperLogLog for approximate count distinct
 
 
-
-<https://humanreadablemag.com/issues/0/articles/the-wonders-of-the-suffix-tree-through-the-lens-of-ukkonen%E2%80%99s-algorithm/>
 
 <https://github.com/prabhupant/python-ds>
 
@@ -186,9 +214,6 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 
 
 
-<https://habr.com/ru/post/455260/> Merkel's tree
-
-
 
 <http://web.stanford.edu/class/archive/cs/cs161/cs161.1168/>
 
@@ -198,41 +223,23 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 
 <https://robertheaton.com/2014/05/02/jaccard-similarity-and-minhash-for-winners/>
 
-<https://cses.fi/book/> . Competitive programming book
-
-<https://www.amazon.com/dp/1793296634> Algo Book
 
 
-<http://www.cs.sjtu.edu.cn/~jiangli/teaching/CS222/files/materials/Algorithm%20Design.pdf> Algo book
 
-<https://medium.com/@adityakumar_98609/fenwick-tree-binary-index-tree-aca7824d9c2a> fenwick
 
 <https://www.byte-by-byte.com>
 
 
 <https://habr.com/ru/post/438512/> алгоритм Хаффмана
 
-<https://djhworld.github.io/hyperloglog/>
 
 
 
-<http://opendatastructures.org/>
 
-
-
-<https://algs4.cs.princeton.edu/home/>
 
 <https://www.youtube.com/watch?v=TeZqKnC2gvA> Visitor design pattern
 
-### Tree
 
-<https://habr.com/ru/company/otus/blog/472040/> red black tree
-
-
-
-<https://blog.sqreen.io/demystifying-radix-trees/> . Radix tree
-
-<https://news.ycombinator.com/item?id=18921058> . Radix trees
 
 
 
@@ -260,18 +267,9 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 
 
 
-
-
 <http://cslibrary.stanford.edu/>
 
 
-
-
-
-
-
-<https://sagi.io/2017/07/bloom-filters-for-the-perplexed/>
-<https://news.ycombinator.com/item?id=15346337>
 
 
 <https://www.youtube.com/watch?v=GiCWlXEhht8>
@@ -365,7 +363,6 @@ https://news.ycombinator.com/item?id=27614381
 
 
 <https://dev.to/s_awdesh> duplicates in array, dual pivot sort
-
 
 
 
