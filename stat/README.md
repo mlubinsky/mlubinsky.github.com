@@ -1,6 +1,8 @@
 
 ### Bayes
 
+https://www.edx.org/bio/elena-moltchanova . Bayes stat with R
+
 https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/
 
 P(A/B) = P(A) * P(B/A) / P(B)
