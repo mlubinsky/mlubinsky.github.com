@@ -1,5 +1,8 @@
 https://www.youtube.com/hashtag/timeseries
 
+https://pub.towardsai.net/time-series-analysis-hands-on-with-scikit-learn-feature-engineering-1e958e6534da
+
+
 tsplot https://github.com/brett-hosking/tsplot
 Plotting timeseries with 2 Y-axis
 https://nbviewer.org/github/brett-hosking/tsplot/blob/master/examples/notebooks/EMSO_EGIM_Azores_Oxygen.ipynb
