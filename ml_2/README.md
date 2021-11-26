@@ -65,7 +65,13 @@ https://towardsdatascience.com/binomial-distribution-ec76d74952c4  Binomial
 
 https://towardsdatascience.com/change-column-data-type-in-pandas-954d7acdef1d
 
+### Narkov model
+
+https://towardsdatascience.com/a-math-lovers-guide-to-hidden-markov-models-ad718df9fde8
+
 https://towardsdatascience.com/a-beginners-guide-to-discrete-time-markov-chains-d5be17cf0e12
+
+
 
 The Markov property states that p_ij is independent of the state in which the system was at times (t-2), (t-3),…,0. The Markov property is stated as follows:
 
