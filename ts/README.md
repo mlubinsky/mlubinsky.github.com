@@ -302,6 +302,9 @@ https://arxiv.org/pdf/2110.15013.pdf
 
 https://blog.timescale.com/blog/what-time-weighted-averages-are-and-why-you-should-care/
 
+https://medium.com/analytics-vidhya/understanding-exponential-moving-averages-e3f020d9d13b
+
+
 https://news.ycombinator.com/item?id=27958175
 
 https://www.youtube.com/watch?v=aXPh0NWNfcc
