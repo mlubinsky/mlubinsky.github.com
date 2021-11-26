@@ -30,6 +30,10 @@ https://medium.com/@khandelwal.akansha/q-q-plot-ensure-your-ml-model-is-based-on
 
 https://medium.com/omics-diary/how-to-evaluate-relatedness-between-categorical-variables-using-the-seaborn-library-93f2c00784da
 
+https://medium.com/@outside2SDs/an-overview-of-correlation-measures-between-categorical-and-continuous-variables-4c7f85610365
+
+https://seaborn.pydata.org/generated/seaborn.heatmap.html
+
 ```
 import csv
 import numpy as np
