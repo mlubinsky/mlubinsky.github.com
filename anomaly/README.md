@@ -6,6 +6,8 @@ https://towardsdatascience.com/5-outlier-detection-methods-that-every-data-enthu
 
 https://medium.com/mlpoint/local-outlier-factor-a-way-to-detect-outliers-dde335d77e1a
 
+https://indranil-chakraborty1989.medium.com/getting-the-best-out-of-your-anomaly-detection-models-e98509ced133
+
 Isolation Forest (IF)
 One Class SVM (SVM)
 Local Outlier Factor (LOF)
