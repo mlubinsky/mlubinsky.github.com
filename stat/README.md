@@ -43,6 +43,11 @@ http://www.numericalexpert.com/blog/online_stat/ single pass for (variance, skew
 http://www.numericalexpert.com/tutorials.php
 
 
+
+
+https://sakshamgulati123.medium.com/an-intuitive-guide-to-various-statistical-tests-d8148105eeca
+
+
 ### Permutations
 
 The number of permutations of n distinct objects is n!
