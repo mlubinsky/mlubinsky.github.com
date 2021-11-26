@@ -216,3 +216,5 @@ https://habr.com/ru/post/558836/
 
 ### Anova
 https://davidbergkamp.com/two-way-anova-tukeys-honest-difference-test/
+
+https://towardsdatascience.com/statistics-in-python-using-anova-for-feature-selection-b4dc876ef4f0
