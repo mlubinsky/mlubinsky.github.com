@@ -65,7 +65,7 @@ https://towardsdatascience.com/binomial-distribution-ec76d74952c4  Binomial
 
 https://towardsdatascience.com/change-column-data-type-in-pandas-954d7acdef1d
 
-### Narkov model
+### Markov model
 
 https://towardsdatascience.com/a-math-lovers-guide-to-hidden-markov-models-ad718df9fde8
 
