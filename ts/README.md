@@ -2,6 +2,8 @@ https://www.youtube.com/hashtag/timeseries
 
 https://pub.towardsai.net/time-series-analysis-hands-on-with-scikit-learn-feature-engineering-1e958e6534da
 
+https://ajay-arunachalam08.medium.com/building-explainable-forecasting-models-with-state-of-the-art-deep-neural-networks-using-a-ad3fa5844fef
+
 
 tsplot https://github.com/brett-hosking/tsplot
 Plotting timeseries with 2 Y-axis
