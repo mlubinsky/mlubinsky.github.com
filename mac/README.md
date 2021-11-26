@@ -48,6 +48,12 @@ Cmd+↑ ("command up") — переход на уровень выше
 
 Cmd+↓ ("command down") — переход на уровень ниже
  
+Cmd+ ~ next window of same app
+
+### From Linux to Mac
+https://habr.com/ru/post/588380/  Linux -> Mac
+
+https://habr.com/ru/company/vdsina/blog/507016/ Mac-> Linux
 
 ### Chrome extensions
 
