@@ -33,6 +33,7 @@ https://medium.com/trymito/9-simple-python-functions-that-will-speed-up-your-exp
 
 <https://hi-bumblebee.com/> Visually explore and analyze Big Data from any Jupyter Notebook
 
+https://subhash-achutha.medium.com/10-automating-eda-tools-65e1065636ae
  
 
 <https://cloudblogs.microsoft.com/opensource/2019/10/10/microsoft-open-sources-sanddance-visual-data-exploration-tool/>
