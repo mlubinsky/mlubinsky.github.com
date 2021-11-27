@@ -4,11 +4,36 @@ Useful extension for Jupyter: hinterland
 https://towardsdatascience.com/the-only-auto-completion-extension-youll-ever-need-for-your-jupyter-notebooks-87bbaecb7126
 
 
+### NumPy
 https://www.labri.fr/perso/nrougier/from-python-to-numpy/
+
+https://www.youtube.com/watch?v=DcfYgePyedM
+
+https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
+
+
+<https://habr.com/ru/post/469355/> NumPy
+```
+http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users.html
+https://realpython.com/numpy-array-programming/	
+http://nbviewer.jupyter.org/github/vlad17/np-learn/blob/master/presentation.ipynb?flush_cache=true NumPy
+http://www.labri.fr/perso/nrougier/from-python-to-numpy/
+https://docs.scipy.org/doc/numpy-1.10.0/user/basics.broadcasting.html
+https://www.analyticsvidhya.com/blog/2017/02/top-28-cheat-sheets-for-machine-learning-data-science-probability-sql-big-data/
+http://www.labri.fr/perso/nrougier/teaching/numpy.100/index.html
+https://www.datacamp.com/community/tutorials/python-numpy-tutorial
+https://www.dataquest.io/blog/numpy-tutorial-python/
+https://www.python-course.eu/numpy.php
+https://github.com/Kyubyong/numpy_exercises
+ 
+http://cs231n.github.io/python-numpy-tutorial/
+https://github.com/HIPS/autograd
+https://www.machinelearningplus.com/101-numpy-exercises-python/
+```
 
 https://medium.com/codex/how-to-set-up-and-run-python-data-science-development-environment-with-jupyter-on-docker-17e04e11d6c
 
-https://www.youtube.com/watch?v=DcfYgePyedM . NumPy
+
 
 Vectorized pandas operations:
 
@@ -954,7 +979,7 @@ Pandas supports two parquet implementations, fastparquet and pyarrow. They both 
 
 <https://habr.com/ru/post/470864/> Web UI for Jupiter 
 
-<https://habr.com/ru/post/469355/> NumPy
+
 
 <https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python> free course
 
@@ -1292,23 +1317,7 @@ plt.plot(xTest,preds,color='blue', linewidth=3)
 plt.show()
 ```
 
-## NumPy 
-```
-http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users.html
-https://realpython.com/numpy-array-programming/	
-http://nbviewer.jupyter.org/github/vlad17/np-learn/blob/master/presentation.ipynb?flush_cache=true NumPy
-http://www.labri.fr/perso/nrougier/from-python-to-numpy/
-https://docs.scipy.org/doc/numpy-1.10.0/user/basics.broadcasting.html
-https://www.analyticsvidhya.com/blog/2017/02/top-28-cheat-sheets-for-machine-learning-data-science-probability-sql-big-data/
-http://www.labri.fr/perso/nrougier/teaching/numpy.100/index.html
-https://www.datacamp.com/community/tutorials/python-numpy-tutorial
-https://www.dataquest.io/blog/numpy-tutorial-python/
-https://www.python-course.eu/numpy.php
-https://github.com/Kyubyong/numpy_exercises
- 
-http://cs231n.github.io/python-numpy-tutorial/
-https://github.com/HIPS/autograd
-https://www.machinelearningplus.com/101-numpy-exercises-python/
+
 ```
 
 	
