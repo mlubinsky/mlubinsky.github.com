@@ -29,6 +29,8 @@ https://habr.com/ru/post/575520/  NN pruning
 
 https://ml-jku.github.io/hopfield-layers/ Hopfield network
 
+https://news.ycombinator.com/item?id=29315107  Transformers from scratch
+
 ### TinyML
 
 https://habr.com/ru/company/glowbyte/blog/559400/
