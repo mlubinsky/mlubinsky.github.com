@@ -1,5 +1,7 @@
 https://github.com/rougier/scientific-visualization-book .  BOOK!
 
+https://www.youtube.com/watch?v=cTJBJH8hacc matplotlib tutorial
+
 https://github.com/lux-org/lux
 
 https://towardsdatascience.com/the-easiest-way-to-make-beautiful-interactive-visualizations-with-pandas-cdf6d5e91757
