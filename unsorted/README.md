@@ -1,6 +1,8 @@
 Делайте что хотите, но пусть это приносит радость
 /Уолт Уитмен/
 
+https://web.archive.org/web/20060920043324/http://www.msu.edu/~shlapent/memoirr.htm
+
 Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes. Your data is your data alone and you deserve to choose where it is stored, whether it is shared with some third party, and how it's transmitted over the internet.
 
 https://syncthing.net/  
