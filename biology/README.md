@@ -12,3 +12,8 @@ https://www.youtube.com/watch?v=m40UnvhT1Vg
 cancer
 
 https://habr.com/ru/post/564978/
+
+
+Molecular motors
+
+https://www.youtube.com/watch?v=sbFL2U7Vwls    (ru)  В.А.Твердислов "Хиральность и иерархия струкутр в биомакромолекулах. Молекулярные машины"
