@@ -19,6 +19,7 @@ Machine Learning
 automatic differntiation JAX
 https://arxiv.org/pdf/2111.00254.pdf
 
+https://www.youtube.com/watch?v=WdTeDXsOSj4
 
 https://deepmind.com/blog/article/using-jax-to-accelerate-our-research
 
@@ -166,6 +167,8 @@ https://habr.com/ru/company/otus/blog/559666/  Kaggle tricks
 ### Transformers
 
 https://habr.com/ru/company/skillfactory/blog/562928/
+
+https://habr.com/ru/company/wunderfund/blog/592231/
 
 https://habr.com/ru/post/558488/ 
 
