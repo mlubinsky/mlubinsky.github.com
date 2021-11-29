@@ -1,3 +1,5 @@
+https://begriffs.com/posts/2021-11-28-practical-parsing.html  bison flex
+
 https://tomassetti.me/parsing-in-python/ python
 
 https://craftinginterpreters.com/introduction.html Java and C 
