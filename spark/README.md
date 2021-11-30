@@ -1,3 +1,5 @@
+https://habr.com/ru/company/otus/blog/592605/
+
 https://www.youtube.com/channel/UCl8BC-R6fqITW9UrSXj5Uxg
 
 https://www.youtube.com/channel/UClM7fatYZhgbMqpqyqHmKAw/videos
