@@ -1,5 +1,7 @@
 https://habr.com/ru/post/569394/ Docker для Data Scientist'a
 
+https://github.com/jesseduffield/lazydocker
+
 https://habr.com/ru/company/southbridge/blog/534334/.  Data /volumes inside Docker
 
 https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose
