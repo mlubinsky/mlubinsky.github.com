@@ -1,3 +1,5 @@
+https://lobste.rs/s/x0b8wo/practical_parsing_with_flex_bison
+
 https://begriffs.com/posts/2021-11-28-practical-parsing.html  bison flex
 
 https://tomassetti.me/parsing-in-python/ python
