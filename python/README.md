@@ -4,6 +4,8 @@ https://instructobit.com/tutorial/116/Remotely-running-commands-or-scripts-with-
 
 https://stackoverflow.com/questions/68584868/python3-datetime-datetime2021-05-09-does-not-support-leading-0-but-it-works
 
+https://www.reddit.com/r/Python/comments/r6aqji/how_do_you_deploy_python_applications/
+
 https://blog.guilatrova.dev/
 
 https://github.com/cosmicpython/book Good Free Book
