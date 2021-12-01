@@ -10,6 +10,7 @@ https://web.eecs.umich.edu/~jabernet/eecs598course/fall2015/web/
 
 https://arxiv.org/abs/2004.09280 Towards a theory of machine learning. Vitaly Vanchurin
 
+https://www.youtube.com/watch?v=LlKAna21fLE
 
 ### Automatic differentiation JAX
 
@@ -22,6 +23,7 @@ https://arxiv.org/pdf/2111.00254.pdf
 https://www.youtube.com/watch?v=WdTeDXsOSj4
 
 https://deepmind.com/blog/article/using-jax-to-accelerate-our-research
+
 
 #### WAX-ML
 
