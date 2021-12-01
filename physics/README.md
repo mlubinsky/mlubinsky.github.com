@@ -225,6 +225,8 @@ https://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf.  Dyson. Why is Maxwell theor
 https://habr.com/ru/post/539188/  translation the article above to russian
 
 
+https://www.youtube.com/watch?v=KGJqykotjog  What Are Electrons REALLY Doing In A Wire?
+
 ## Mechanics
 
 https://nadoumnet.d3.ru/termekh-khimfak-mgu-forsh-2110805/
