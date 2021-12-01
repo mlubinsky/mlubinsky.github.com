@@ -3,6 +3,15 @@ https://developers.google.com/machine-learning/crash-course/
 automatic differntiation JAX
 https://arxiv.org/pdf/2111.00254.pdf
 
+
+Semi-Supervised Learning with Label Spreading Algorithm
+https://towardsdatascience.com/how-to-benefit-from-the-semi-supervised-learning-with-label-spreading-algorithm-2f373ae5de96
+
+
+Semi-Supervised Learning — How to Assign Labels with Label Propagation Algorithm
+
+https://towardsdatascience.com/semi-supervised-learning-how-to-assign-labels-with-label-propagation-algorithm-9f1683f4d0eb
+
 Beta distibution
 
 https://medium.com/analytics-vidhya/once-again-beta-distribution-db467a7eded0
