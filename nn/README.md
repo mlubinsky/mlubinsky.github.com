@@ -31,6 +31,11 @@ https://ml-jku.github.io/hopfield-layers/ Hopfield network
 
 https://news.ycombinator.com/item?id=29315107  Transformers from scratch
 
+Math for DeepLearning:
+
+http://www.arxiv-sanity.com/2105.04026v1
+
+
 ### TinyML
 
 https://habr.com/ru/company/glowbyte/blog/559400/
