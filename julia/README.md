@@ -8,6 +8,11 @@ https://techytok.com/from-zero-to-julia/
 
 https://devpoga.org/post/2021-08-04_learning_julia_line_by_line/
 
+
+Book - datascience with Julia:
+https://datascience-book.gitlab.io/
+
+
 ### Symbolic math in Julia
 
 https://arxiv.org/pdf/2108.12301.pdf 
