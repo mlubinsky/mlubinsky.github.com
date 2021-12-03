@@ -9,8 +9,10 @@ https://techytok.com/from-zero-to-julia/
 https://devpoga.org/post/2021-08-04_learning_julia_line_by_line/
 
 
-Book - datascience with Julia:
+Book - data science with Julia:
 https://datascience-book.gitlab.io/
+
+
 
 
 ### Symbolic math in Julia
@@ -20,7 +22,11 @@ https://arxiv.org/pdf/2108.12301.pdf
 https://juliasymbolics.org/
 
 
+### ML
 https://arxiv.org/pdf/2003.10146.pdf  Julia for ML
+
+https://www.analyticsvidhya.com/blog/2021/05/top-julia-machine-learning-libraries/ . Flux Knet Merlin etc
+
 
 https://pub.towardsai.net/13-data-science-things-i-learned-at-juliacon-2020-5362d543ced7
 
