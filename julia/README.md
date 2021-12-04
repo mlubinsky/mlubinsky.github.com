@@ -13,7 +13,7 @@ Book - data science with Julia:
 https://datascience-book.gitlab.io/
 
 
-
+https://fluxml.ai/
 
 ### Symbolic math in Julia
 
