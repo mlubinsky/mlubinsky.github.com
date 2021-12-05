@@ -60,9 +60,16 @@ https://www.lunarvim.org/01-installing.html
 
 <https://www.overleaf.com/learn>
 
+https://artofproblemsolving.com/wiki/index.php/LaTeX:LaTeX_on_AoPS
+
 https://www.texstudio.org/
 
 <https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop>  Latex
+
+https://www.youtube.com/watch?v=331YxgOJUGw
+
+https://medium.com/@mathcube7
+
 
 ## Julia + Pluto
 
