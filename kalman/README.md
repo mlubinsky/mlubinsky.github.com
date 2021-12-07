@@ -1,3 +1,7 @@
+https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
+
+https://news.ycombinator.com/item?id=29473271
+
 https://news.ycombinator.com/item?id=26363347
 
 https://www.reddit.com/r/Python/comments/m7fl42/simply_kalman_filter_in_python/
