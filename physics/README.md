@@ -61,6 +61,8 @@ https://habr.com/ru/company/ruvds/blog/583120/
 
 ### Books
 
+https://ikfia.ysn.ru/statisticheskaya-fizika/  
+
 http://alexandr4784.narod.ru/index.html
 
 http://www.damtp.cam.ac.uk/user/tong/teaching.html
