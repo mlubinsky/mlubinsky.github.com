@@ -37,12 +37,16 @@ https://news.ycombinator.com/item?id=29315107  Transformers from scratch
 https://github.com/che-shr-cat/deep-learning-for-biology-hse-2019-course
 Лекция:
 https://www.youtube.com/watch?v=uP_aL_78BcY
-Слайды:
-https://github.com/.../slides/%2312.%20Transformers.pdf
+
+Слайды:  https://github.com/che-shr-cat/deep-learning-for-biology-hse-2019-course/blob/master/slides/%2312.%20Transformers.pdf
+
+ 
 1. Transformer Zoo — рассказ про разнообразие трансформеров и их применений
 https://www.youtube.com/watch?v=KZ9NXYcXVBY
+
 2. Transformer Zoo (a deeper dive) — более глубокий рассказ про архитектуру и что в ней можно варьировать
 https://www.youtube.com/watch?v=7e4LxIVENZA
+
 3. Свежий рассказ про трансформеры в 2021 году
 https://www.youtube.com/watch?v=8dN6ZVnDArk
 
