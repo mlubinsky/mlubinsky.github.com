@@ -16,7 +16,31 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
 
  python -m py_compile my.py   # Check file syntax
  
- python -m json.tool my_json.json   # json beautyfier
+ python -m json.tool my_json.json   # json beautyfier - warning: will sort the keys!
+ 
+ Preserve the key sorting in jsoj keys 
+ ```
+ import json
+import collections
+
+def pp_json(json_thing, sort=False, indents=4):
+    if type(json_thing) is str:
+      #  print(json.dumps(json.loads(json_thing), sort_keys=sort, indent=indents))
+        print(json.dumps(json.loads(json_thing, object_pairs_hook=collections.OrderedDict), sort_keys=sort, indent=indents))
+    else:
+        print(json.dumps(json_thing, sort_keys=sort, indent=indents))
+    return None
+
+fname="ascii_without_last_char.json"
+# fname='test.txt'
+with open(fname, 'r') as handle:
+  json_string_or_dict = handle.read()
+  #json_string_or_dict = json.load(handle)
+
+pp_json(json_string_or_dict, False, 2)
+
+```
+
  
  Install Anaconda
  https://towardsdatascience.com/how-to-easily-set-up-python-on-any-m1-mac-5ea885b73fab
