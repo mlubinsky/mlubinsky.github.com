@@ -1,6 +1,8 @@
 
 ### Bayes
 
+https://towardsdatascience.com/a-gentle-intro-to-conjugate-priors-8be6ac0d31f6
+
 https://www.edx.org/bio/elena-moltchanova . Bayes stat with R
 
 https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/
