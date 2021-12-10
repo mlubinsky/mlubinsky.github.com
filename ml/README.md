@@ -35,6 +35,8 @@ loops on streaming data
 https://wax-ml.readthedocs.io/en/latest/
 
 
+https://habr.com/ru/post/592177/  Active learning
+
 https://cdanielaam.medium.com/essential-mathematical-equations-for-predictive-models-fcb79630ec96
 
 https://inria.github.io/scikit-learn-mooc/
