@@ -1,5 +1,7 @@
 https://www.youtube.com/hashtag/timeseries
 
+https://towardsdatascience.com/the-poisson-hidden-markov-model-for-time-series-regression-236c269914dd HMM for time series
+
 https://news.ycombinator.com/item?id=29453707
 
 https://pub.towardsai.net/time-series-analysis-hands-on-with-scikit-learn-feature-engineering-1e958e6534da
