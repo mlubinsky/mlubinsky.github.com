@@ -1,5 +1,7 @@
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
+https://www.mlexample.com/ . BOOK
+
 https://deepmind.com/learning-resources/reinforcement-learning-series-2021  
 
 https://www.manning.com/books/deep-learning-with-python-second-edition. ML with Python 2nd ed
