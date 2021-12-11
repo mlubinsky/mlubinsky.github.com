@@ -1,5 +1,7 @@
 Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-to-load-local-file-in-sc-textfile-instead-of-hdfs
 
+https://habr.com/ru/company/otus/blog/594787/ . pandaspark pyspark in spark 3.2
+
 https://habr.com/ru/company/otus/blog/592605/
 
 https://www.youtube.com/channel/UCl8BC-R6fqITW9UrSXj5Uxg
