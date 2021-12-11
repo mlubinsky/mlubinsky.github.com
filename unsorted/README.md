@@ -11,9 +11,11 @@ https://syncthing.net/
 
 https://www.keldysh.ru/pages/BioCyber/Lectures.html Redko (ru)
 
+
 https://www.keldysh.ru/departments/dpt_17/redko.html
 
 http://nonagon.org/ExLibris/ . Math Physics Programming
+
 
 https://news.ycombinator.com/item?id=28509498
 
@@ -26,6 +28,9 @@ https://habr.com/ru/company/yandex_praktikum/blog/573090/ logical argumentation 
 https://www.uhnwidata.com/den-of-rich/sergey-nikolenko 
 
 https://news.ycombinator.com/item?id=28232165 interesing blog posts
+
+
+https://nintil.com/scaling-tacit-knowledge
 
 #### books
 
