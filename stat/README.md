@@ -1,6 +1,8 @@
 
 ### Bayes
 
+https://towardsdatascience.com/detect-change-points-with-bayesian-inference-and-pymc3-3b4f3ae6b9bb
+
 https://towardsdatascience.com/a-gentle-intro-to-conjugate-priors-8be6ac0d31f6
 
 https://www.edx.org/bio/elena-moltchanova . Bayes stat with R
