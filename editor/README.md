@@ -56,6 +56,8 @@ https://www.lunarvim.org/01-installing.html
 
 ##  Latex  MathJax
 
+xhttps://habr.com/ru/company/skillfactory/blog/593999/
+
 <https://news.ycombinator.com/item?id=24741077>
 
 <https://www.overleaf.com/learn>
