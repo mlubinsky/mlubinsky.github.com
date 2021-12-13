@@ -21,6 +21,10 @@ https://medium.com/curious-data-catalog/sparks-skew-problem-does-it-impact-perfo
 
 https://medium.com/curious-data-catalog/spill-often-ignored-sparks-performance-problem-9b4c1ea962f
 
+### Salting
+
+https://towardsdatascience.com/skewed-data-in-spark-add-salt-to-compensate-16d44404088b
+
 https://medium.com/curious-data-catalog/sparks-salting-a-step-towards-mitigating-skew-problem-5b2e66791620
 
 
