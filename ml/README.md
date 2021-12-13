@@ -34,10 +34,7 @@ loops on streaming data
 
 https://wax-ml.readthedocs.io/en/latest/
 
-### Active learning
-https://habr.com/ru/post/592177/  
 
-https://habr.com/ru/post/593615/
 
 https://cdanielaam.medium.com/essential-mathematical-equations-for-predictive-models-fcb79630ec96
 
@@ -76,12 +73,17 @@ https://github.com/faridrashidi/kaggle-solutions Kaggle solutions
 
 https://habr.com/ru/company/skillfactory/blog/561044/ . useful libs
 
+
+### Active learning
+https://habr.com/ru/post/592177/  
+
+https://habr.com/ru/post/593615/
+
 ### Online machine learning (incremental learning, continual learning, and stream learning)
 
 https://github.com/online-ml/river#readme  
 
 https://towardsdatascience.com/river-the-best-python-library-for-online-machine-learning-56bf6f71a403
-
 
 https://towardsdatascience.com/7-cool-python-packages-kagglers-are-using-without-telling-you-e83298781cf4
 
