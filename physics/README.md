@@ -240,6 +240,7 @@ https://teach-in.ru/course/analytical-mechanics-kugushev
 https://www.youtube.com/watch?v=EceVJJGAFFI
 
 ## QM
+https://arxiv.org/pdf/2112.05619.pdf
 
 https://www.youtube.com/watch?v=8mi0PoPvLvs . Advanced Quantum Mechanics. Leonard Susskind
 
