@@ -34,8 +34,10 @@ loops on streaming data
 
 https://wax-ml.readthedocs.io/en/latest/
 
+### Active learning
+https://habr.com/ru/post/592177/  
 
-https://habr.com/ru/post/592177/  Active learning
+https://habr.com/ru/post/593615/
 
 https://cdanielaam.medium.com/essential-mathematical-equations-for-predictive-models-fcb79630ec96
 
@@ -179,6 +181,8 @@ https://habr.com/ru/company/wunderfund/blog/592231/
 https://habr.com/ru/post/558488/ 
 
 https://habr.com/ru/post/563778/
+
+https://habr.com/ru/company/wunderfund/blog/594333/
 
 ## Hardware
 
