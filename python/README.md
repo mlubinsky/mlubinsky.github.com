@@ -16,10 +16,12 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
 
 https://github.com/scottrogowski/code2flow
 
-
+```
  python -m py_compile my.py   # Check file syntax
  
  python -m json.tool my_json.json   # json beautyfier - warning: will sort the keys!
+ ```
+ 
  
  Preserve the json key orders 
  ```
@@ -50,6 +52,12 @@ pp_json(json_string_or_dict, False, 2)
  
  https://sadh.life/post/builtins/
  
+ 
+ ### Many Python versions on single Mac box:
+
+https://asdf-vm.com/
+
+https://justinmayer.com/posts/homebrew-python-is-not-for-you/
  
  ####  Python Libraries
 ``` 
