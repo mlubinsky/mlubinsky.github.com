@@ -45,6 +45,7 @@ https://www.amazon.com/Guide-Spark-Partitioning-Explained-Depth/dp/B08L25WHJ4  G
 
 https://medium.com/@vladimir.prus/spark-partitioning-the-fine-print-5ee02e7cb40b
 
+https://towardsdatascience.com/the-art-of-joining-in-spark-dcbd33d693c
 
 https://medium.com/nerd-for-tech/apache-spark-optimization-techniques-b982e71153ff
 
