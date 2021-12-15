@@ -11,6 +11,8 @@ df.display()
 
 https://habr.com/ru/company/otus/blog/594787/ . pandaspark pyspark in spark 3.2
 
+https://towardsdatascience.com/six-spark-exercises-to-rule-them-all-242445b24565
+
 https://habr.com/ru/company/otus/blog/592605/
 
 https://www.youtube.com/channel/UCl8BC-R6fqITW9UrSXj5Uxg
