@@ -1,3 +1,9 @@
+
+Lichess vs chess.com
+
+https://news.ycombinator.com/item?id=29572447
+
+
 ### Chess Coach
 
 https://chrisbutner.github.io/ChessCoach/
