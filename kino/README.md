@@ -1,5 +1,7 @@
 поэтом можешь ты не быть, а композитором не можешь.
 
+https://dok-zlo.livejournal.com/tag/%D0%BA%D0%B8%D0%BD%D0%BE
+
 https://top-reyting.ru/kino/30-luchshich-novich-detektivnich-serialov-2021-goda.html
 
 
