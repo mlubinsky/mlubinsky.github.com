@@ -1,6 +1,8 @@
 
 Lichess vs chess.com
 
+https://siddhesh.substack.com/p/chesscom-vs-lichess
+
 https://news.ycombinator.com/item?id=29572447
 
 
