@@ -2,6 +2,8 @@
 
 https://arxiv.org/pdf/1907.01060.pdf . (ru)
 
+https://stepik.org/course/57281/promo . Теория вероятностей - II (дискретные случайные процессы)
+
 http://math.csu.ru/new_files/students/lectures/teor_slych_proc/solovev_teor_slych_proc.pdf
 
 https://tvims.nsu.ru/baklanov/SP/part5.1.pdf
