@@ -34,6 +34,18 @@ https://nintil.com/scaling-tacit-knowledge
 
 #### books
 
+Ask HN: What books have made the biggest impact on your mental models?
+https://news.ycombinator.com/item?id=15155833
+
+	Ask HN: Life Changing Books?
+https://news.ycombinator.com/item?id=29605394
+
+Ask HN: What are the best books for professional effectiveness?
+https://news.ycombinator.com/item?id=29602228
+
+Non-Violent Communication Book
+
+
 https://deep-econom.livejournal.com/298746.html
 
 обширная библиотека Library Genesis или LibGen или Колхоз
