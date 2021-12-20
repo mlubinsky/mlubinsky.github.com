@@ -9,6 +9,13 @@ Complex Systems: a Physicist’s Viewpoint
 https://www.arxiv-vanity.com/papers/cond-mat/0205297/
 
 
+### The Joule-Thomson Effect and Models We Know (mattferraro.dev)
+https://mattferraro.dev/posts/joule-thomson
+
+https://news.ycombinator.com/item?id=29593553
+
+
+
 All lectures
 
 https://arxiv.org/search/?query=lecture&searchtype=title
