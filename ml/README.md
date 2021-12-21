@@ -176,6 +176,8 @@ https://habr.com/ru/company/otus/blog/559666/  Kaggle tricks
 
 ### Transformers
 
+https://news.ycombinator.com/item?id=29617087
+
 https://habr.com/ru/company/skillfactory/blog/562928/
 
 https://habr.com/ru/company/wunderfund/blog/592231/
