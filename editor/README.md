@@ -226,7 +226,7 @@ https://stackoverflow.com/questions/18649512/unicodedecodeerror-ascii-codec-cant
 
 
 
-https://news.ycombinator.com/item?id=24363225. vim as C++ IDE
+
 
 
 ### IntelliJ Plugins
@@ -264,6 +264,10 @@ alias cat="bat"
 https://kakoune.org/
 
 ## VIM
+
+https://www.moolenaar.net/habits.html
+
+https://news.ycombinator.com/item?id=24363225. vim as C++ IDE
 
 https://lobste.rs/s/du8i6z/5_lines_i_put_blank_vimrc
 
