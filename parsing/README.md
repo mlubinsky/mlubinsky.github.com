@@ -10,6 +10,10 @@ https://interpreterbook.com/ go
 
 https://www.toptal.com/scala/writing-an-interpreter Scala
 
+### ANTLR
+
+https://habr.com/ru/company/sberdevices/blog/597553/
+
 ## Advanced compilers
 
 https://news.ycombinator.com/item?id=25386756
