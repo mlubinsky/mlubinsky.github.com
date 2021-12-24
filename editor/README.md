@@ -1,3 +1,5 @@
+https://penrose.ink/siggraph20.html   Math visualization
+
 https://github.com/Eugene-Mark/bigdata-file-viewer
 
 #### Nova (not free)
@@ -60,7 +62,11 @@ https://www.lunarvim.org/01-installing.html
 
 ##  Latex  MathJax
 
-xhttps://habr.com/ru/company/skillfactory/blog/593999/
+https://latex-cookbook.net/
+
+https://news.ycombinator.com/item?id=29672872
+
+https://habr.com/ru/company/skillfactory/blog/593999/
 
 <https://news.ycombinator.com/item?id=24741077>
 
