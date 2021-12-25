@@ -23,6 +23,17 @@ https://gitlab.eng.roku.com/dea/scribe-api/-/merge_requests/94/diffs
 Gobblin
 --------
 https://gitlab.eng.roku.com/dea/GoblineConsumers/compare/master...DEA-11300
+
+backfill.sh
+----------------
+D=2021-12-21T04:00
+echo $D
+
+rm -rf nohup.out
+#nohup sudo /opt/airflow/airflow run CON_sr_dim dim_content_library_status $D  -i -f  -sd /tmp/mlubinsky/ &
+
+nohup sudo /opt/airflow/airflow backfill --rerun_failed_tasks   CON_sr_dim -I  -s $D  -e $D -sd /tmp/mlubinsky/ &
+tail -f nohup.out
 ```
 
 
