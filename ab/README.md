@@ -18,6 +18,8 @@ https://rpsychologist.com/d3/nhst/
 
 <https://habr.com/ru/company/boodet_online/blog/498688/>  
 
+https://habr.com/ru/company/X5Group/blog/596279/
+
 ## Churn rate + Retention = 100 %
 https://www.sisense.com/blog/how-to-calculate-cohort-retention-in-sql/
 
