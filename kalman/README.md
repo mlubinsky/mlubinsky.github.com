@@ -1,5 +1,7 @@
 https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
 
+https://habr.com/ru/post/594249/
+
 https://news.ycombinator.com/item?id=29473271
 
 https://news.ycombinator.com/item?id=26363347
