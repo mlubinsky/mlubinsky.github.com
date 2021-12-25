@@ -29,6 +29,14 @@ https://habr.com/ru/post/575520/  NN pruning
 
 https://ml-jku.github.io/hopfield-layers/ Hopfield network
 
+### Automatic differentiation
+
+TensorFlow, PyTorch, Jax, and Julia
+
+http://www.stochasticlifestyle.com/engineering-trade-offs-in-automatic-differentiation-from-tensorflow-and-pytorch-to-jax-and-julia/
+
+https://news.ycombinator.com/item?id=29682507
+
 ### Transformers 
 
 https://news.ycombinator.com/item?id=29315107  Transformers from scratch
