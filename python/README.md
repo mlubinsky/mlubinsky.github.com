@@ -16,6 +16,13 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
 
 https://github.com/scottrogowski/code2flow
 
+Important: 
+
+Pointers with python: https://yurichev.com/news/20211223_Py_ptrs/
+
+
+
+
 ```
  python -m py_compile my.py   # Check file syntax
  
