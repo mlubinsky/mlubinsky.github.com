@@ -62,7 +62,25 @@ SELECT id,month
 FROM bill
 ```
 
-#### LAG and LEAD
+<https://stackoverflow.com/questions/63609219/best-way-to-get-1st-record-per-partition-first-value-vs-row-number>
+
+<https://medium.com/better-programming/4-ways-to-calculate-a-running-total-with-sql-986d0019185c>
+
+```
+Select
+      t1.day
+      ,t1.driver_id
+      ,(
+        Select sum(profit) from f_daily_rides t2 
+        where t1.day >= t2.day and t1.driver_id = t2.driver_id
+       )
+   FROM f_daily_rides t1
+```   
+
+
+
+
+### LAG and LEAD
 Given: weather table  contains daily temperature   in different cities:
 (date, city, temperature)
 How can you create a table that also contains the temperature difference between the current day and the next day? For the first row, the difference column should contain the value 1.2.
@@ -290,22 +308,7 @@ content_id	store	kids_directed	row_num
 
 <https://news.ycombinator.com/item?id=22892946>
 
-## Running total
 
-<https://stackoverflow.com/questions/63609219/best-way-to-get-1st-record-per-partition-first-value-vs-row-number>
-
-<https://medium.com/better-programming/4-ways-to-calculate-a-running-total-with-sql-986d0019185c>
-
-```
-Select
-      t1.day
-      ,t1.driver_id
-      ,(
-        Select sum(profit) from f_daily_rides t2 
-        where t1.day >= t2.day and t1.driver_id = t2.driver_id
-       )
-   FROM f_daily_rides t1
-```   
 
 ## SQL
  Medium-Hard Data   SQL Interview Questions
