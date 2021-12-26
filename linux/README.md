@@ -20,3 +20,8 @@ https://www.linux-magazine.com/Issues/2014/158/Monitoring-with-incron
 
 ## strace
 <https://habr.com/ru/company/badoo/blog/493856/>
+
+
+## Make Makefile
+
+https://danyspin97.org/blog/makefiles-best-practices/
