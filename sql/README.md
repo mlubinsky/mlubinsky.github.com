@@ -50,7 +50,10 @@ SELECT
 FROM monthly_costs
 ```
 
-### Running totals
+### Running total
+
+https://habr.com/ru/post/597963/ 
+
 https://betterprogramming.pub/4-ways-to-calculate-a-running-total-with-sql-986d0019185c
 ```
 SELECT id,month
