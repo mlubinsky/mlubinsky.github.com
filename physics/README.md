@@ -14,6 +14,7 @@ https://mattferraro.dev/posts/joule-thomson
 
 https://news.ycombinator.com/item?id=29593553
 
+https://www.youtube.com/watch?v=1cYAL0RT3zw  Symmetry Breaking and Magnetism - Prof Stephen Blundell
 
 
 All lectures
