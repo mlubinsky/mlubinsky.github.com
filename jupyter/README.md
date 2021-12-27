@@ -317,6 +317,7 @@ https://github.com/adamerose/pandasgui
 
 ### pivot transpose assign
 
+
 https://spapas.github.io/2016/09/21/pandas-pivot-table-primer/
 
 https://machinelearningknowledge.ai/pandas-assign-pandas-transpose-pandas-pivot/
@@ -354,8 +355,9 @@ https://www.kaggle.com/learn/data-visualisation
 
 https://medium.com/dunder-data/selecting-subsets-of-data-in-pandas-6fcd0170be9c
 
+Summarizing data with Pandas crosstab
 
-
+https://towardsdatascience.com/summarizing-data-with-pandas-crosstab-efc8b9abecf
 
 
 https://towardsdatascience.com/how-to-learn-pandas-108905ab4955
