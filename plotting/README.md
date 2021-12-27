@@ -43,6 +43,8 @@ http://glueviz.org/
 
 ## Dash Plotly
 
+https://towardsdatascience.com/leap-from-matplotlib-to-plotly-a-hands-on-tutorial-for-beginners-d208cd9e6522
+
 https://github.com/lana-k/sqliteviz +Plotly
 
 https://towardsdev.com/how-to-use-plotly-as-pandas-plotting-backend-123ff5378003
