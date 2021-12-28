@@ -8,6 +8,8 @@ https://techytok.com/from-zero-to-julia/
 
 https://devpoga.org/post/2021-08-04_learning_julia_line_by_line/
 
+https://juliabook.chkwon.net/book
+
 
 Book - data science with Julia:
 https://datascience-book.gitlab.io/
