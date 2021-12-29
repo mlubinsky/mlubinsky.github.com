@@ -1,5 +1,7 @@
 https://www.coursera.org/learn/julia-programming/home/welcome
 
+https://www.freecodecamp.org/news/learn-julia-programming-language/
+
 https://github.com/mossr/BeautifulAlgorithms.jl#readme
 
 https://www.youtube.com/watch?v=4giNd6HLUQg
