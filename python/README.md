@@ -1,3 +1,5 @@
+https://awesome-python.com/
+
 https://lukasz.langa.pl/f15a8851-af26-4e94-a4b1-c146c57c9d20/.  datasette with plot
 
 https://instructobit.com/tutorial/116/Remotely-running-commands-or-scripts-with-python . SSH Paramico
