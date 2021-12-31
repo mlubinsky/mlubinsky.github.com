@@ -7,6 +7,10 @@ BuildVersion:	18G95
 
 ### Setup
 
+https://hookrace.net/blog/macos-setup/
+
+https://news.ycombinator.com/item?id=29742551
+
 <https://lobste.rs/s/uzdehw/what_should_i_do_after_getting_my_first_own>
 
 https://pawelurbanek.com/macos-free-disk-space   
