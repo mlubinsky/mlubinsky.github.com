@@ -1,4 +1,6 @@
-https://www.youtube.com/watch?v=D8Q4n6YXdpk . Window funct in Postgres
+https://retool.com/blog/best-postgresql-guis-in-2020/. Best UI tools for Postgres
+
+https://www.youtube.com/watch?v=D8Q4n6YXdpk . Window function in Postgres
 
 https://news.ycombinator.com/item?id=28776786. PG clustering /sharding
 
