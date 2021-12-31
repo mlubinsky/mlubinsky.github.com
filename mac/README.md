@@ -249,6 +249,8 @@ You can also get to this by holding the Control key and tapping the up arrow
 
 ## Windows managers for Mac
 
+https://taoofmac.com/space/apps/window_managers
+
 <https://www.sempliva.com/tiles/>
 
 <https://magnet.crowdcafe.com/> Magnet not free
