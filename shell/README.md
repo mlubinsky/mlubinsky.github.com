@@ -1,5 +1,7 @@
 https://stackoverflow.com/questions/68606694/how-to-grep-and-replace-this-pattern-from-command-line
 
+https://habr.com/ru/post/590021/ how to write bash scripts
+
 https://earthly.dev/blog/command-line-tools/
 
 https://github.com/TaKO8Ki/awesome-alternatives-in-rust
