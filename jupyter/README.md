@@ -5,6 +5,9 @@ https://towardsdatascience.com/the-only-auto-completion-extension-youll-ever-nee
 
 
 ### NumPy
+
+https://betterprogramming.pub/a-comprehensive-guide-to-numpy-data-types-8f62cb57ea83
+
 https://www.labri.fr/perso/nrougier/from-python-to-numpy/
 
 https://www.youtube.com/watch?v=DcfYgePyedM
