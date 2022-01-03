@@ -2,6 +2,8 @@
 
 https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
 
+https://www.youtube.com/watch?v=i7q8bISGwMQ Steve Brunton
+
 https://www.youtube.com/watch?v=0MNVhXEX9to  
 
 https://corecursive.com/061-reinforcement-learning/
