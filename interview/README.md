@@ -1,5 +1,9 @@
 https://towardsdatascience.com/how-to-find-all-solutions-to-the-subset-sum-problem-597f77677e45
 
+https://malisper.me/an-algorithm-for-passing-programming-interviews/
+
+https://news.ycombinator.com/item?id=29775023
+
 https://github.com/NIteshx2/AdvancedSQL_Interview
 
 https://www.youtube.com/watch?v=fAAZixBzIAI . Binary Tree
