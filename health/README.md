@@ -1,7 +1,10 @@
 https://www.youtube.com/watch?v=23z_ruAi4FI  Бубновский
 
 https://habr.com/ru/post/590183/
+
 https://makeright.ru/library/keep-sharp-by-sanjay-gupta-book-sprint/
+
+https://youtu.be/Kjfm6b3vVvQ Пять упражнений которые избавят от защемления нерва в шейном отделе.
 
 L-Citrulline !!!
 
