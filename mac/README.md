@@ -77,12 +77,13 @@ chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#ttl=Session%2
 
 https://github.com/simonw/til/blob/main/python/macos-catalina-sort-of-ships-with-python3.md
 
+on MacOS Catalina
 ```
-[PROGDE-1497]$ which python3
+  which python3
 /usr/bin/python3
-[PROGDE-1497]$ python3 -V
+  python3 -V
 Python 3.8.2
-[PROGDE-1497]$ python -V
+  python -V
 Python 2.7.16
 ```
 
