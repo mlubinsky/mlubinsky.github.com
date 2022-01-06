@@ -81,7 +81,11 @@ https://news.ycombinator.com/item?id=27171970 .  Some tools
 Free services:
 https://habr.com/ru/company/macloud/blog/549966/
 
-Server hosting: 
+### Free web pages
+https://neocities.org/
+https://pages.cloudflare.com/#pricing
+
+### Server hosting: 
 ```
 https://dathorn.com/
 Digital Ocean  
@@ -94,6 +98,8 @@ Information Theory, Inference, and Learning Algorithms David  McKay
 https://www.inference.org.uk/itprnn/book.pdf
 
 https://aquadzn.github.io/learn-x-by-doing-y/
+
+
 
 https://www.biorxiv.org/
 
