@@ -22,8 +22,8 @@ https://habr.com/ru/post/587750/ sync/locks/
  
  https://news.ycombinator.com/item?id=28660157
  
-### Git in Python
-leshenko.net  - exampl of git implemented in python
+### Git implemented  Python
+leshenko.net   
 
 ### grep cscope opengrok
 
@@ -51,8 +51,9 @@ https://news.ycombinator.com/item?id=27171970 .  Some tools
 Free services:
 https://habr.com/ru/company/macloud/blog/549966/
 
-### Free web pages
+### Free web page hosting
 https://neocities.org/
+
 https://pages.cloudflare.com/#pricing
 
 ### Server hosting: 
@@ -64,7 +65,8 @@ Linode
 Heroku https://medium.com/@henson.casper/how-to-publish-your-first-python-app-on-heroku-6af91c5bb138\
 https://stackoverflow.com/questions/61998739/heroku-or-digital-ocean-deployment
 ```
-Information Theory, Inference, and Learning Algorithms David  McKay
+
+### Information Theory, Inference, and Learning Algorithms David  McKay
 https://www.inference.org.uk/itprnn/book.pdf
 
 https://aquadzn.github.io/learn-x-by-doing-y/
@@ -85,7 +87,7 @@ https://www.johndcook.com/
 https://medium.com/pragmatic-programmers/directory-of-pragmatic-programmer-books-on-medium-6a5cbadbd4b4
 
 
-### CRDT. 
+### CRDT
 https://josephg.com/blog/crdts-are-the-future/
 
 https://news.ycombinator.com/item?id=24617542
@@ -102,10 +104,6 @@ Computations into Embarrassingly-Parallel Ones
 https://arxiv.org/pdf/1409.5827.pdf
 
  
-
-
-
-
  
 ### ZigLang
 https://ziglang.org/
@@ -125,6 +123,8 @@ https://marcobambini.github.io/gravity/#/README
 
 
 <https://luminousmen.com/post/asynchronous-programming-await-the-future>
+
+### Tips
 
 <https://github.com/jbranchaud/til/blob/master/README.md> tips
 
@@ -274,24 +274,6 @@ But why are they called sum types? Well, if the value can only be one of a fixed
 
 <https://lobste.rs/s/mrjnp5/type_systems_covariance_contravariance> . Covariance/Contrvariance
 
-<https://news.ycombinator.com/item?id=21092698> crafting interpreters
-
-
-### JavaScript
-<https://lihautan.com/json-parser-with-javascript/>
-<https://news.ycombinator.com/item?id=21772336>   JavaScript
-
-<https://chelseatroy.com/2019/11/11/building-a-parser/>
-
-<https://siddhesh.in/posts/gcc-under-the-hood.html> gcc under the hood
-<https://deniskyashif.com/translation-using-syntactic-rules/>
-<https://habr.com/ru/post/469213/> Parser combinator RUST
-<https://habr.com/ru/post/462781/>
-
-<https://medium.com/@vladimirkozhaev/antlr-an-informal-introduction-609f885a38f7> ANTLR
-
-<https://www.booleanworld.com/building-recursive-descent-parsers-definitive-guide/> Recursive decendt parsers
-
 
 
 ## Clojure
@@ -323,7 +305,9 @@ But why are they called sum types? Well, if the value can only be one of a fixed
 
 <https://www.youtube.com/user/schafer5/videos>
 
-<https://habr.com/ru/company/englishdom/blog/438066/> .  different youtube links
+<https://habr.com/ru/company/englishdom/blog/438066/>    many  different youtube links
+
+
 ## Browser extension for JSON: JsonDiscovery
 <https://habr.com/ru/post/461185/> 
 
@@ -481,11 +465,11 @@ https://akoutmos.com/
 I started a blog the middle of last year and have written mostly about topics related to Elixir. But have also covered topics like RabbitMQ, Prometheus, Grafana, and PostGIS. I find my own blog very useful as I often reference the associated GitHub tutorial projects to remind myself how I did something :D.
 
 
-I started posting weeknotes a few months ago and it's really helped me get back into the habit of posting at least once a week: https://simonwillison.net/
+  https://simonwillison.net/
 Weeknotes archive here: https://simonwillison.net/tags/weeknotes/
 
 
-If you’re into Laravel and PHP, Freek is very open about all his code: https://freek.dev
+ 
 I also blog about code and the financial side of running your own business: https://ma.ttias.be
 
 
@@ -493,7 +477,8 @@ I'm trying to get a forum about MMO development started by posting to my own blo
 
 
 
-Small Cult Following, for Rust core language development: http://smallcultfollowing.com/babysteps/ It's far from a solo project but he presents unique insights into the language. I personally really enjoyed his discussion of associated type constructors and high-kinded types, a series back in 2016(!), back when I started toying with Rust and somewhat frustrated by the lack of HKT.
+Small Cult Following, for Rust core language development: http://smallcultfollowing.com/babysteps/ 
+It's far from a solo project but he presents unique insights into the language. I personally really enjoyed his discussion of associated type constructors and high-kinded types, a series back in 2016(!), back when I started toying with Rust and somewhat frustrated by the lack of HKT.
 reply
 
 Anyway, you might find it interesting: https://blog.spacefrigates.com
