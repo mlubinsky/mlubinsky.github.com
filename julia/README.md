@@ -16,6 +16,7 @@ https://juliabook.chkwon.net/book
 Book - data science with Julia:
 https://datascience-book.gitlab.io/
 
+https://news.ycombinator.com/item?id=29813194
 
 https://fluxml.ai/
 
