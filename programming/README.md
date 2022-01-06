@@ -1,6 +1,9 @@
 https://habr.com/ru/company/jugru/blog/586376/. Chrome extensions
 
-https://browserflow.app/ . Automate everything in browser!
+###  Automate everything in browser!
+https://browserflow.app/ 
+https://chrome.google.com/webstore/detail/automa/infppggnoaenmfagbfknfkancpbljcca
+
 
 https://habr.com/ru/post/587750/ sync/locks/
 
