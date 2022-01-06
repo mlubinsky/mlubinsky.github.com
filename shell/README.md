@@ -34,7 +34,7 @@ https://github.com/harelba/q   SQL for CSV files  http://harelba.github.io/q/
 
 https://github.com/tobimensch/termsql termSQL (python3)
 
-### Only records where 5th column > threshold
+### AWK - find the only records where 5th column > threshold
 
 awk  '$5 >= 2'  i.txt
 
@@ -42,7 +42,7 @@ awk  '$5 >= 2'  i.txt
 ```
 cat input.csv | sed "1 d" > noheader.csv
 ```
-### change the delimiter of a file using the tr command
+### change the column delimiter  using the tr command
 ```
 cat input.tsv | tr "\\t" "," > input.csv
 
@@ -60,7 +60,7 @@ https://www.redhat.com/sysadmin/bash-error-handling Bash error handling!
 
 https://opensource.com/article/21/6/bash-config parsing config files with bash
 
-https://github.com/Genivia/ugrep  better grep
+
 
 https://github.com/ibraheemdev/modern-unix
 
@@ -120,6 +120,63 @@ https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_ba
  
  shellcheck !!! https://github.com/koalaman/shellcheck
  
+ ### GREP
+ https://github.com/Genivia/ugrep  better grep
+ 
+ ```
+-i	grep -i ':4F:AB' net_interfaces.txt	Ignores case sensitivity
+-w	grep -w "connect" /var/log/syslog	Search for the full word
+-A	grep -A 3 'Exception' error.log	Display 3 lines of context after matching string
+-B	grep -B 4 'Exception' error.log	Display 4 lines of context before matching string
+-C	grep -C 5 'Exception' error.log	Display 5 lines around matching string
+-r	grep -r 'quickref.me' /var/log/nginx/	Recursive search within subdirs
+-v	grep -v 'warning' /var/log/syslog	Returns all non-matching lines
+-e	grep -e '^Can' space_oddity.txt	Use regex (lines starting with 'Can')
+-E	grep -E 'ja(s|cks)on' filename	Extended regex (lines containing jason or jackson)
+-c	grep -c 'error' /var/log/syslog	Count the number of matches
+-l	grep -l 'reboot' /var/log/*	Print the name of the file(s) of matches
+-o	grep -o search_string filename	Only show the matching part of the string
+-n	grep -n "start" demo.txt	Show the line numbers of the matches
+
+^ 	Beginning of line.
+$ 	End of line.
+^$	Empty line.
+\<	Start of word.
+\>	End of word.
+.	Any character.
+? 	Optional and can only occur once.
+* 	Optional and can occur more than once.
++ 	Required and can occur more than once.
+{n} 	Previous item appears exactly n times.
+{n,} 	Previous item appears n times or more.
+{,m} 	Previous item appears n times maximum.
+{n,m} 	Previous item appears between n and m times.
+[:alpha:] 	Any lower and upper case letter.
+[:digit:] 	Any number.
+[:alnum:] 	Any lower and upper case letter or digit.
+[:space:] 	Any whites­pace.
+[A-Z­a-z] 	Any lower and upper case letter.
+[0-9] 	Any number.
+[0-9­A-Z­a-z]	Any lower and upper case letter or digit.
+```
+
+
+ 
+Use -v to show those that do not contain “match”: grep -v match file.txt  
+
+Use -c to count how many matches: grep -c match file.txt
+
+Show list of files that match: grep -rl match *
+
+Number of lines to show before and after match: grep -B 2 -A 2 match file.txt
+
+
+### tr (also exists: expand and unexpand)  
+```
+cat geeks.txt | tr ':[space]:' '\t' > out.txt  - replace spaces with tabso
+cat myfile | tr a-z A-Z > output.txt
+```
+
  ### ENTR GAZE etc
  
  https://www.reddit.com/r/programming/comments/hbetyd/gaze_a_cli_tool_that_accelerates_your_quick_coding/
@@ -600,18 +657,7 @@ https://github.com/iipeace/guider
 ### MS Excel  
 http://supercoolpics.com/10-bystryh-fishek-v-rabote-s-microsoft-excel/
 
-###  grep  
-Use -v to show those that do not contain “match”: grep -v match file.txt
-Use -c to count how many matches: grep -c match file.txt
-Show list of files that match: grep -rl match *
-Number of lines to show before and after match: grep -B 2 -A 2 match file.txt
 
-
-## tr (also exists: expand and unexpand)  
-```
-cat geeks.txt | tr ':[space]:' '\t' > out.txt  - replace spaces with tabso
-cat myfile | tr a-z A-Z > output.txt
-```
 
 ### xargs  
 ```
