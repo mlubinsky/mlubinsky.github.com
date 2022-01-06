@@ -98,36 +98,8 @@ Computations into Embarrassingly-Parallel Ones
 
 https://arxiv.org/pdf/1409.5827.pdf
 
-### JIT 
-https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/
+ 
 
-https://carolchen.me/blog/jits-intro/   JIT
-
-https://opensourc.es/blog/basics-multiple-dispatch/.  Multiple Dispatch
-
-https://www.backblaze.com/blog/whats-the-diff-programs-processes-and-threads/
-```
-There are the two types of memory available to a process or a thread, the stack and the heap. 
-It is important to distinguish between these two types of process memory because each thread will have its own stack, 
-but all the threads in a process will share the heap.
-
-Threads are sometimes called lightweight processes because they have their own stack but can access shared data.
-Because threads share the same address space as the process and other threads within the process, 
-the operational cost of communication between the threads is low, which is an advantage. 
-The disadvantage is that a problem with one thread in a process will certainly affect other threads and the viability of the process itself.
-```
-
-https://ollef.github.io/blog/posts/query-based-compilers.html
-
-<https://ncona.com/2020/06/create-diagrams-with-code-using-graphviz/> Graphviz
-
-https://news.ycombinator.com/item?id=23475225
-
-Developing lang in C
-https://www.youtube.com/playlist?list=PLvdK1vRmp8wMzH4w_8sQ30NKU3Bt4Cc-M&feature=share
-
-Build JavaScript compiler in C:
-https://hacks.mozilla.org/2020/06/compiler-compiler-working-on-a-javascript-engine/
 
 
 
@@ -170,7 +142,7 @@ https://habr.com/ru/company/plesk/blog/507094/
 
 <https://academy.lightbend.com/courses>  mostly scala and reactive programming
 
-<https://habr.com/ru/post/497402/> make your own language in Python
+
 
 <https://habr.com/ru/company/JetBrains-education/blog/495014/>  educational links
 
@@ -301,18 +273,6 @@ But why are they called sum types? Well, if the value can only be one of a fixed
 
 <https://news.ycombinator.com/item?id=21092698> crafting interpreters
 
-## Parsers
-<https://news.ycombinator.com/item?id=23187239> Compiling classes
-
-<https://zserge.com/posts/cucu-part1/> small compiler
-
-<https://tomassetti.me/why-you-should-not-use-flex-yacc-and-bison/>
-
-<https://news.ycombinator.com/item?id=22491536>
-
-<https://www.sanity.io/blog/why-we-wrote-yet-another-parser-compiler>
-
-<https://habr.com/ru/post/489534/>
 
 ### JavaScript
 <https://lihautan.com/json-parser-with-javascript/>
@@ -329,29 +289,7 @@ But why are they called sum types? Well, if the value can only be one of a fixed
 
 <https://www.booleanworld.com/building-recursive-descent-parsers-definitive-guide/> Recursive decendt parsers
 
-### PEG
-<https://habr.com/ru/post/471860/>
 
-<https://www.youtube.com/watch?v=QppWTvh7_sI> Guido PEG talk
-
-<https://medium.com/@gvanrossum_83706/peg-parsers-7ed72462f97c> PEG from Guido
-
-<https://medium.com/@gvanrossum_83706/building-a-peg-parser-d4869b5958fb> PEG part 2
-
-
-
-<https://www3.nd.edu/~dthain/compilerbook/> .  Compiler Book
-
-<<https://tech.yandex.ru/tomita/doc/dg/concept/about-docpage/> . Tomita parser
-
-<https://www.youtube.com/watch?v=1axJDmK_pnE> .  Parser Combinators
-<https://youtu.be/1axJDmK_pnE>
-
-<https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92> . Parsing
-
-<https://engineering.desmos.com/articles/pratt-parser/> . Pratt parser
-
-<https://tomassetti.me/parsing-in-python/> Parsing in Python
 
 ## Clojure
 
