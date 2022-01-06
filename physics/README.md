@@ -1,5 +1,9 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+Example of article with formulas
+https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-newton-4bd99941d18e
+
+
 https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
 
 https://news.ycombinator.com/item?id=28764416
