@@ -14,6 +14,9 @@ https://blog.guilatrova.dev/
 
 https://github.com/cosmicpython/book Good Free Book
 
+Book: Python distilled by David Beazley 
+https://www.amazon.com/Python-Essential-Reference-Developers-Library/dp/0134173279/   
+
 https://www.cosmicpython.com/
 
 https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
