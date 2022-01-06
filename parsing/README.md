@@ -10,9 +10,13 @@ https://interpreterbook.com/ go
 
 https://www.toptal.com/scala/writing-an-interpreter Scala
 
+<https://news.ycombinator.com/item?id=21092698> crafting interpreters
+
 ### ANTLR
 
 https://habr.com/ru/company/sberdevices/blog/597553/
+
+<https://medium.com/@vladimirkozhaev/antlr-an-informal-introduction-609f885a38f7>  
 
 ## Advanced compilers
 
@@ -72,9 +76,25 @@ https://learnbyexample.github.io/gnu-bre-ere-cheatsheet/
 
 <https://blog.robertelder.org/regular-expression-visualizer/>
 
-## Parsers
+### JavaScript
+<https://lihautan.com/json-parser-with-javascript/>
+<https://news.ycombinator.com/item?id=21772336>   JavaScript
+
 
 ## Parsers
+
+<https://chelseatroy.com/2019/11/11/building-a-parser/>
+
+<https://siddhesh.in/posts/gcc-under-the-hood.html> gcc under the hood
+<https://deniskyashif.com/translation-using-syntactic-rules/>
+<https://habr.com/ru/post/469213/> Parser combinator RUST
+<https://habr.com/ru/post/462781/>
+
+
+
+<https://www.booleanworld.com/building-recursive-descent-parsers-definitive-guide/> Recursive decendt parsers
+
+
 <https://news.ycombinator.com/item?id=23187239> Compiling classes
 
 <https://zserge.com/posts/cucu-part1/> small compiler
