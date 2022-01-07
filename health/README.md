@@ -4,7 +4,7 @@ https://www.youtube.com/watch?v=gOkm4iZLVHQ Бубновский - Insult
 
 https://www.youtube.com/watch?v=V105d0BLQPU . Flexibility - Zhumadilov Valery
 
-https://habr.com/ru/post/590183/
+https://habr.com/ru/post/590183/ . Сохранить остроту ума в любом возрасте
 
 https://makeright.ru/library/keep-sharp-by-sanjay-gupta-book-sprint/
 
