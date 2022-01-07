@@ -4,6 +4,8 @@ https://phiresky.github.io/blog/2020/sqlite-performance-tuning/
 
 https://antonz.org/sqlite-is-not-a-toy-database/
 
+https://antonz.org/sqlean/
+
 https://blog.zachwf.com/posts/sqlite-is-dynamically-typed/
 
 https://news.ycombinator.com/item?id=28050198
