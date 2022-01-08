@@ -56,9 +56,12 @@ https://medium.com/productive-data-science/spearman-coefficient-tool-for-a-gener
 https://www.argmin.net/
 
 ### Approximation algo (count distinct, count min sketch=frequency count)
+
 https://datasketches.apache.org/ A software library of stochastic streaming algorithms
 
 https://medium.com/inspiredbrilliance/fast-approximation-on-massive-datasets-dd23117bab7f
+
+https://www.youtube.com/watch?v=6nqV58NA_Ew  Adam Optimization from Scratch in Python
 
 https://web.stanford.edu/class/cs168/
 
