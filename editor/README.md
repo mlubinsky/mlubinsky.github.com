@@ -162,7 +162,7 @@ It's not exactly the same but close enough for me.
 ### Tools
 
 If you like terminal productivity I recommend: 
-   fzf, 
+   fzf  https://betterprogramming.pub/meet-fzf-a-fuzzy-finder-to-enhance-your-command-line-workflow-a2890f6a70f8
    Facebook path picker (aka fpp), 
    fd, 
    ripgrep, 
