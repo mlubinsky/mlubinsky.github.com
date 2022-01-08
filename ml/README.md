@@ -6,6 +6,9 @@ https://deepmind.com/learning-resources/reinforcement-learning-series-2021
 
 https://www.manning.com/books/deep-learning-with-python-second-edition. ML with Python 2nd ed
 
+Real time ML
+https://huyenchip.com//2022/01/02/real-time-machine-learning-challenges-and-solutions.html
+
 https://arxiv.org/abs/1709.02840  Introduction to Machine Learning
 
 https://web.eecs.umich.edu/~jabernet/eecs598course/fall2015/web/
