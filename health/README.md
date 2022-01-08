@@ -2,6 +2,10 @@ https://www.youtube.com/watch?v=23z_ruAi4FI  Бубновский
 
 https://www.youtube.com/watch?v=gOkm4iZLVHQ Бубновский - Insult
 
+https://www.youtube.com/watch?v=HddbEZQTrcU . Insult
+
+https://www.youtube.com/watch?v=30PPmosjarM ЛЕЧЕНИЕ ГИПЕРТОНИИ: 7 простых способов,
+
 https://www.youtube.com/watch?v=V105d0BLQPU . Flexibility - Zhumadilov Valery
 
 https://habr.com/ru/post/590183/ . Сохранить остроту ума в любом возрасте
