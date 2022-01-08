@@ -260,6 +260,12 @@ Kрасный болгарский перец.  обладает сладким 
 
 ## давление
 
+https://www.youtube.com/watch?v=erCh52eJmRs . доктор Евдокименко
+
+
+https://www.youtube.com/watch?v=ugt0m4bQIPs . доктор Евдокименко
+
+
 https://www.youtube.com/watch?v=IgfZdPJ5mfE  Как лечить гипертонию? доктор  Шишонин
 
 https://www.youtube.com/hashtag/%D0%B3%D0%B8%D0%BF%D0%B5%D1%80%D1%82%D0%BE%D0%BD%D0%B8%D1%8F
