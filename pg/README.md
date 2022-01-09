@@ -4,6 +4,8 @@ https://www.youtube.com/watch?v=D8Q4n6YXdpk . Window function in Postgres
 
 https://news.ycombinator.com/item?id=28776786. PG clustering /sharding
 
+https://news.ycombinator.com/item?id=29858083 . Tips for a Healthier Postgres Database 
+
 https://habr.com/ru/company/tensor/blog/573214/ SQL optimization
 
 https://habr.com/ru/post/597651/
