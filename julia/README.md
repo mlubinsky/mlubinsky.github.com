@@ -1,3 +1,5 @@
+https://lwn.net/Articles/835930/ . Pluto (Julia notebook)
+
 https://www.coursera.org/learn/julia-programming/home/welcome
 
 https://www.freecodecamp.org/news/learn-julia-programming-language/
