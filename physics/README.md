@@ -77,6 +77,8 @@ https://habr.com/ru/company/ruvds/blog/583120/
 
 ### Books
 
+http://www.imp.uran.ru/?q=ru/lib_monografy
+
 https://ikfia.ysn.ru/statisticheskaya-fizika/  
 
 http://alexandr4784.narod.ru/index.html
