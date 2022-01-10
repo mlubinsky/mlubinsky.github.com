@@ -5,8 +5,12 @@ https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-
 
 E.Stefanovich
 https://arxiv.org/pdf/physics/0504062.pdf 
+
 https://www.youtube.com/watch?v=GSCXVZhIxcQ
+
 https://vixra.org/author/eugene_v_stefanovich
+
+https://arxiv.org/search/?searchtype=author&query=Stefanovich%2C+E+V
 
 https://arxiv.org/abs/2110.05294 Quantum mechanics via quantum tomography
 Arnold Neumaier
