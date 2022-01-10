@@ -1,5 +1,9 @@
 ### Books
 
+https://github.com/BoltzmannEntropy/interviews.ai
+
+https://arxiv.org/abs/2201.00650
+
 <https://d2l.ai/> Deep Learning book
 
 https://arxiv.org/abs/2105.04026 math of deep learning
