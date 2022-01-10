@@ -73,6 +73,13 @@ If the set has n elements, the number of k-combinations, denoted as  C_{k}^{n}} 
 
 A= n!/k!(n-k)!
 
+
+### краткий обзор  методов выбора случайной точки на диске, на окружности, на сфере и на шаре. 
+
+Во всех этих задачах подразумевается равномерное распределение по поверхности или по объему
+
+https://nabbla1.livejournal.com/95999.html
+
 ### Python
 
 https://patsy.readthedocs.io/en/
