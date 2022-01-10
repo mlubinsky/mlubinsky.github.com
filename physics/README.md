@@ -17,6 +17,8 @@ Complex Systems: a Physicist’s Viewpoint
 https://www.arxiv-vanity.com/papers/cond-mat/0205297/
 
 
+https://en.wikipedia.org/wiki/Constantin_Piron 
+
 ### The Joule-Thomson Effect and Models We Know (mattferraro.dev)
 https://mattferraro.dev/posts/joule-thomson
 
