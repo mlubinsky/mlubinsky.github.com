@@ -3,8 +3,9 @@
 Example of article with formulas
 https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-newton-4bd99941d18e
 
-
-https://arxiv.org/pdf/physics/0504062.pdf E.Stefanovich
+E.Stefanovich
+https://arxiv.org/pdf/physics/0504062.pdf 
+https://www.youtube.com/watch?v=GSCXVZhIxcQ
 https://vixra.org/author/eugene_v_stefanovich
 
 https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
