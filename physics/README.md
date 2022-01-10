@@ -5,7 +5,7 @@ https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-
 
 
 https://arxiv.org/pdf/physics/0504062.pdf E.Stefanovich
-
+https://vixra.org/author/eugene_v_stefanovich
 
 https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
 
