@@ -8,6 +8,9 @@ https://arxiv.org/pdf/physics/0504062.pdf
 https://www.youtube.com/watch?v=GSCXVZhIxcQ
 https://vixra.org/author/eugene_v_stefanovich
 
+https://arxiv.org/abs/2110.05294 Quantum mechanics via quantum tomography
+Arnold Neumaier
+
 https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
 
 https://news.ycombinator.com/item?id=28764416
