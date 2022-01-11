@@ -17,7 +17,8 @@ Arnold Neumaier
 
 https://www.youtube.com/watch?v=Yv3BGGdiufE
 Математические конструкции в квантовой логике и их современное применение | Лекториум
-
+https://www.lektorium.tv/course/22783   	
+Алексей Гринбаум
 
 https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
 
