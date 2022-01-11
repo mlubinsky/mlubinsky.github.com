@@ -20,6 +20,11 @@ https://www.youtube.com/watch?v=Yv3BGGdiufE
 https://www.lektorium.tv/course/22783   	
 Алексей Гринбаум
 
+https://www.lektorium.tv/node/39291  Geometric interpretation of entropy 	
+Grigory Dvorkin | Григорий Дворкин
+
+
+
 https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
 
 https://news.ycombinator.com/item?id=28764416
