@@ -120,6 +120,8 @@ https://lichess.org/study/jsSks17H
 
 https://youtu.be/U4ogK0MIzqk
 
+### Build CHESS engine with Python
+https://www.youtube.com/watch?v=4qwFwdCcgac&ab_channel=Anchor
 
 ### C++
 
