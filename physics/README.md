@@ -20,6 +20,11 @@ https://www.youtube.com/watch?v=Yv3BGGdiufE
 https://www.lektorium.tv/course/22783   	
 Алексей Гринбаум
 
+https://www.youtube.com/watch?v=VSCqjOXNSp8  А.С. Трушечкин. Математика квантовой механики
+
+
+
+### Entropy
 https://www.lektorium.tv/node/39291  Geometric interpretation of entropy 	
 Grigory Dvorkin | Григорий Дворкин
 
