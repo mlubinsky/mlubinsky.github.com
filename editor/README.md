@@ -393,6 +393,9 @@ https://github.com/helix-editor/helix
 <https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens> . GitLens
 
 
+https://marketplace.visualstudio.com/items?itemName=tomaszbartoszewski.avro-tools AVRO Tools
+
+
 <https://code.visualstudio.com/blogs/2019/10/03/remote-ssh-tips-and-tricks> SSH
 
 <https://www.jonrcorbin.com/the-best-vs-code-extension-list-for-full-stack-developers/>
