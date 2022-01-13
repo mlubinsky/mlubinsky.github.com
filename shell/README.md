@@ -18,7 +18,24 @@ https://github.com/roapi/roapi/tree/main/columnq-cli  SQL for  parquet, csv, arr
 ### Remove trailing spaces
 ```
 sed 's/[[:space:]]*$//'  a.json > b.json
+
 ```
+
+### Process 1 line at the time
+```
+F=abc.txt
+
+x=0
+ 
+cat $F | while read line; do
+  x=$(( x+1 ))
+  echo $x
+  echo $line | jq '.' > $x.json
+done
+```
+
+
+
 ### Sort by numeric column 2
 
 sort -k2 -n file
