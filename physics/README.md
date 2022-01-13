@@ -29,6 +29,8 @@ https://mipt.ru/education/chairs/fpfkt/downloads/sciseminar/2019_spring/%D0%AF%D
 https://www.lektorium.tv/node/38964
 
 ### Entropy
+https://habr.com/ru/company/JetBrains-education/blog/599637/
+
 https://www.lektorium.tv/node/39291  Geometric interpretation of entropy 	
 Grigory Dvorkin | Григорий Дворкин
 
