@@ -6,9 +6,13 @@ https://www.youtube.com/watch?v=HddbEZQTrcU . Insult
 
 https://www.youtube.com/watch?v=30PPmosjarM ЛЕЧЕНИЕ ГИПЕРТОНИИ: 7 простых способов,
 
+https://www.evdokimenko.ru/ 
+
 https://www.youtube.com/watch?v=V105d0BLQPU . Flexibility - Zhumadilov Valery
 
 https://habr.com/ru/post/590183/ . Сохранить остроту ума в любом возрасте
+
+https://www.forbes.ru/svoi-biznes/446663-kak-alkogol-uedinenie-i-ctenie-pomogaut-najti-genial-noe-resenie-i-vojti-v-potok
 
 https://makeright.ru/library/keep-sharp-by-sanjay-gupta-book-sprint/
 
