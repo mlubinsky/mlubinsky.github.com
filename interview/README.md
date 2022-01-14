@@ -17,6 +17,8 @@ https://github.com/prius/learning
 
 https://github.com/prabhupant/python-ds
 
+https://habr.com/ru/company/otus/blog/599309/
+
 https://medium.com/@pv.safronov/graph-traversal-python-patterns-that-help-you-think-less-and-code-faster-66f76e1ab820
 
 https://www.amazon.com/Algorithm-Design-Manual-Computer-Science-dp-3030542556/dp/3030542556 The Algorithm Design Manual by Skiena
