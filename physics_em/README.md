@@ -10,6 +10,12 @@ On apparent faster-than-light behavior of moving electric fields
 Germano D’Abramo
 https://arxiv.org/pdf/2106.05168.pdf 
 
+### Pizzella vs Shabad
+A different interpretation of ”Measuring propagation speed of Coulomb fields” by R. de Sangro, G. Finocchiaro, P. Patteri,
+M. Piccolo, G. Pizzella
+Anatoly Shabad
+https://arxiv.org/pdf/1606.00710.pdf
+
 A note on ”Measuring propagation speed of Coulomb fields” by R.de Sangro, G. Finocchiaro, P. Patteri, M. Piccolo, G. Pizzella
 
 D. M. Gitman A. E. Shabad and A.A. Shishmarev  Apr 2016
