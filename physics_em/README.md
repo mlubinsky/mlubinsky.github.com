@@ -10,6 +10,21 @@ On apparent faster-than-light behavior of moving electric fields
 Germano D’Abramo
 https://arxiv.org/pdf/2106.05168.pdf 
 
+
+### Blinov Bezulenkov
+
+https://fr.art1lib.org/book/70856074/7e3b48
+
+Verification of the Rigidity of the Coulomb Field in MotionWEB OF SCIENCE
+Authors:  Blinov, S. V.; Bulyzhenkov, I. E. 
+
+Published:Jun 2018 in Russian Physics Journal
+DOI: 10.1007/S11182-018-1403-9
+
+
+Flux Density of the Umov Electromagnetic Energy during Uniform Motion of an Extended ElectronWEB OF SCIENCE
+Authors:  Blinov, S., V   Published:Feb 2020 in Bulletin of the Lebedev Physics Institute
+
 ### Pizzella vs Shabad
 A different interpretation of ”Measuring propagation speed of Coulomb fields” by R. de Sangro, G. Finocchiaro, P. Patteri,
 M. Piccolo, G. Pizzella
