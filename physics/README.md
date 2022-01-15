@@ -4,17 +4,6 @@ Example of article with formulas
 https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-newton-4bd99941d18e
 
 
-https://arxiv.org/pdf/2106.05168.pdf . On apparent faster-than-light behavior of moving electric fields
-Germano D’Abramo
-
-E.Stefanovich
-https://arxiv.org/pdf/physics/0504062.pdf 
-
-https://www.youtube.com/watch?v=GSCXVZhIxcQ
-
-https://vixra.org/author/eugene_v_stefanovich
-
-https://arxiv.org/search/?searchtype=author&query=Stefanovich%2C+E+V
 
 https://arxiv.org/abs/2110.05294 Quantum mechanics via quantum tomography
 Arnold Neumaier
