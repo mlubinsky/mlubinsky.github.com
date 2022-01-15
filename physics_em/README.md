@@ -2,7 +2,17 @@ Coulomb Interaction Does Not Spread Instantaneously. R. I. Tzontchev, A. E. Chub
 https://arxiv.org/abs/physics/0010036v1
 
 
-Vladimir Onoochin
+
+A note on ”Measuring propagation speed of Coulomb fields” by R.de Sangro, G. Finocchiaro, P. Patteri, M. Piccolo, G. Pizzella
+
+D. M. Gitman A. E. Shabad and A.A. Shishmarev  Apr 2016
+https://arxiv.org/pdf/1605.02545.pdf
+
+Abstract: 
+the full identity is demonstrated between the Feynman formula for the field of a moving charge 
+and the Lienard-Wiechert potentials.
+
+### Vladimir Onoochin
 
 http://www.cartesio-episteme.net/episteme/epi6/ep6-onooch.htm
 
