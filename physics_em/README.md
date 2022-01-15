@@ -13,7 +13,7 @@ the full identity is demonstrated between the Feynman formula for the field of a
 and the Lienard-Wiechert potentials.
 
 ### Vladimir Onoochin
-
+On the Impossibility to Describe the Fields of the System of Uniformly Moving Charges in the Frame of Special Relativity
 http://www.cartesio-episteme.net/episteme/epi6/ep6-onooch.htm
 
 https://www.researchgate.net/profile/Vladimir-Onoochin
