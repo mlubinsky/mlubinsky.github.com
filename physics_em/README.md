@@ -1,4 +1,4 @@
-### Superluminal  Copulumn speed
+### Superluminal  Coulomb speed
 Coulomb Interaction Does Not Spread Instantaneously. R. I. Tzontchev, A. E. Chubykalo, J. M. Rivera-Juarez
 https://arxiv.org/abs/physics/0010036v1
 
