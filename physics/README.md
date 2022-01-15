@@ -3,6 +3,10 @@
 Example of article with formulas
 https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-newton-4bd99941d18e
 
+
+https://arxiv.org/pdf/2106.05168.pdf . On apparent faster-than-light behavior of moving electric fields
+Germano D’Abramo
+
 E.Stefanovich
 https://arxiv.org/pdf/physics/0504062.pdf 
 
