@@ -5,14 +5,14 @@ http://new-idea.kulichki.net/pubfiles/150210210052.pdf
 Coulomb Interaction Does Not Spread Instantaneously. R. I. Tzontchev, A. E. Chubykalo, J. M. Rivera-Juarez
 https://arxiv.org/abs/physics/0010036v1
 
-
+http://www.pandualism.com/c/coulomb_experiment.html 
 
 On apparent faster-than-light behavior of moving electric fields
 Germano D’Abramo
 https://arxiv.org/pdf/2106.05168.pdf 
 
 
-https://physics.stackexchange.com/questions/253400/speed-of-the-coulomb-field-measured-to-be-infinite
+
 
 
 ### Blinov Bezulenkov
@@ -34,6 +34,9 @@ Flux Density of the Umov Electromagnetic Energy during Uniform Motion of an Exte
 Authors:  Blinov, S., V   Published:Feb 2020 in Bulletin of the Lebedev Physics Institute
 
 ### Pizzella vs Shabad
+
+https://physics.stackexchange.com/questions/253400/speed-of-the-coulomb-field-measured-to-be-infinite
+
 A different interpretation of ”Measuring propagation speed of Coulomb fields” by R. de Sangro, G. Finocchiaro, P. Patteri,
 M. Piccolo, G. Pizzella
 Anatoly Shabad
