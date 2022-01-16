@@ -2,6 +2,8 @@ https://awesome-python.com/
 
 https://medium.com/@siddharth.sahu/must-know-python-concepts-for-experienced-developers-4554ceea3d95
 
+https://www.amazon.com/dp/B09MV4X8TV Python Architecture patterns
+
 https://www.wilbertom.com/tutorial/use-signals-to-safely-stop-a-process/
 
 https://lukasz.langa.pl/f15a8851-af26-4e94-a4b1-c146c57c9d20/.  datasette with plot
