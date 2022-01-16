@@ -17,9 +17,12 @@ https://arxiv.org/abs/physics/0010036v1
 
 http://www.pandualism.com/c/coulomb_experiment.html 
 
+### Germano D’Abramo
 On apparent faster-than-light behavior of moving electric fields
 Germano D’Abramo
 https://arxiv.org/pdf/2106.05168.pdf 
+
+https://www.researchgate.net/publication/352877122_Reply_to_Classical_Electromagnetic_Fields_of_a_Pair_of_Annihilating_Charges_by_Kirk_T_McDonald
 
 https://www.researchgate.net/publication/352877122_Reply_to_Classical_Electromagnetic_Fields_of_a_Pair_of_Annihilating_Charges_by_Kirk_T_McDonald
 
