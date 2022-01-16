@@ -1,3 +1,6 @@
+http://new-idea.kulichki.net/pubfiles/150210210052.pdf
+ЗАПАЗДЫВАЮЩИЕ ПОТЕНЦИАЛЫ И МАГНИТНЫЕ ЯВЛЕНИЯ Кирсанов Ю.Я.
+
 ### Superluminal  Coulomb speed
 Coulomb Interaction Does Not Spread Instantaneously. R. I. Tzontchev, A. E. Chubykalo, J. M. Rivera-Juarez
 https://arxiv.org/abs/physics/0010036v1
@@ -12,6 +15,10 @@ https://arxiv.org/pdf/2106.05168.pdf
 
 
 ### Blinov Bezulenkov
+
+https://www.youtube.com/watch?v=kv47n9QjubQ  Движение плотности энергии протяженного электрона описывает вектор Умова, а не Пойтинга / С.В.Блинов
+Блинов Сергей Викторович, serj_blinov@mail.ru 
+аспирант МФТИ
 
 https://fr.art1lib.org/book/70856074/7e3b48
 
