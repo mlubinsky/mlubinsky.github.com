@@ -5,11 +5,7 @@ http://new-idea.kulichki.net/pubfiles/150210210052.pdf
 Coulomb Interaction Does Not Spread Instantaneously. R. I. Tzontchev, A. E. Chubykalo, J. M. Rivera-Juarez
 https://arxiv.org/abs/physics/0010036v1
 
-On the theoretical possibility of the electromagnetic scalar potential wave spreading with an arbitrary velocity in vacuum
-by Andrew E. Chubykalo, Vladimir Onoochin
-https://arxiv.org/abs/physics/0204062  
 
-http://www.trinitas.ru/rus/doc/0001/005d/00012478.htm
 
 On apparent faster-than-light behavior of moving electric fields
 Germano D’Abramo
@@ -51,6 +47,16 @@ https://arxiv.org/pdf/1605.02545.pdf
 Abstract: 
 the full identity is demonstrated between the Feynman formula for the field of a moving charge 
 and the Lienard-Wiechert potentials.
+
+### Andrew E. Chubykalo
+
+On the theoretical possibility of the electromagnetic scalar potential wave spreading with an arbitrary velocity in vacuum
+by Andrew E. Chubykalo, Vladimir Onoochin
+https://arxiv.org/abs/physics/0204062  
+
+http://www.trinitas.ru/rus/doc/0001/005d/00012478.htm
+
+http://wiki.naturalphilosophy.org/index.php?title=Andrew_E_Chubykalo
 
 ### Vladimir Onoochin
 On the Impossibility to Describe the Fields of the System of Uniformly Moving Charges in the Frame of Special Relativity
