@@ -229,6 +229,9 @@ https://habr.com/ru/post/508824/
 <https://mir24.tv/news/16378197/eksperty-nazvali-luchshii-frukt-dlya-omolazhivaniya-organizma>
 
 ## Slipping
+Китайцы рассказали, КАК ЗАСЫПАЮТ за 2 минуты!
+https://www.youtube.com/watch?v=lAWFH4_qhk0
+
 <https://zen.yandex.ru/media/experiment/usnut-za-90-sekund-tehnika-bystrogo-pogrujeniia-v-son-ot-vostochnyh-mudrecov-5df464753642b600ac239159>
 
 ## AMPK
