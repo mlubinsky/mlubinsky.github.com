@@ -38,14 +38,13 @@ https://www.youtube.com/watch?v=kv47n9QjubQ  Движение плотности
 
 https://fr.art1lib.org/book/70856074/7e3b48
 
-Verification of the Rigidity of the Coulomb Field in MotionWEB OF SCIENCE
+Verification of the Rigidity of the Coulomb Field in Motion
 Authors:  Blinov, S. V.; Bulyzhenkov, I. E. 
 
-Published:Jun 2018 in Russian Physics Journal
-DOI: 10.1007/S11182-018-1403-9
+Published:Jun 2018 in Russian Physics Journal  DOI: 10.1007/S11182-018-1403-9
 
 
-Flux Density of the Umov Electromagnetic Energy during Uniform Motion of an Extended ElectronWEB OF SCIENCE
+Flux Density of the Umov Electromagnetic Energy during Uniform Motion of an Extended Electron 
 Authors:  Blinov, S., V   Published:Feb 2020 in Bulletin of the Lebedev Physics Institute
 
 ### Pizzella vs Shabad
@@ -85,6 +84,10 @@ by Andrew E. Chubykalo, Vladimir Onoochin
 https://arxiv.org/abs/physics/0204062  
 
 http://www.trinitas.ru/rus/doc/0001/005d/00012478.htm
+
+
+Проблема «4/3»
+http://80bola.com.trinitas.ru/rus/doc/0016/001g/00164093.htm
 
 http://wiki.naturalphilosophy.org/index.php?title=Andrew_E_Chubykalo
 
