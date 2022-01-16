@@ -14,6 +14,7 @@ Germano D’Abramo
 https://arxiv.org/pdf/2106.05168.pdf 
 
 
+Relativity of time and instantaneous interaction of charged particles
 https://article.sciencepublishinggroup.com/html/10.11648.j.ajmp.s.2015040201.13.html
 
 
