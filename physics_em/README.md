@@ -1,5 +1,8 @@
 https://www.feynmanlectures.caltech.edu/II_21.html
 
+https://ufn.ru/ru/articles/1988/9/e/ Специальная теория относительности и эффект Саньяка
+
+
 https://www.onlinescientificresearch.com/articles/the-clock-riddle-and-einsteins-third-postulate-of-special-relativity.pdf
 
 http://new-idea.kulichki.net/pubfiles/150210210052.pdf
