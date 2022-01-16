@@ -21,6 +21,8 @@ On apparent faster-than-light behavior of moving electric fields
 Germano D’Abramo
 https://arxiv.org/pdf/2106.05168.pdf 
 
+https://www.researchgate.net/publication/352877122_Reply_to_Classical_Electromagnetic_Fields_of_a_Pair_of_Annihilating_Charges_by_Kirk_T_McDonald
+
 
 Relativity of time and instantaneous interaction of charged particles
 https://article.sciencepublishinggroup.com/html/10.11648.j.ajmp.s.2015040201.13.html
