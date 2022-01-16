@@ -19,6 +19,31 @@ Gene therapy (ru)
 https://www.youtube.com/watch?v=QybCCXJdLn8&t=2s
 
 
+https://www.youtube.com/results?search_query=Faculty+of+Bioengineering+and+Bioinformatics%2C+MSU&sp=EiG4AQHCARtDaElKd19ZS1J4NU50VVlSNnpBeHg5YmZoNVk%253D
+
+Михаил Никитин: "История фотосинтеза, или кто сделал небо голубым
+https://www.youtube.com/watch?v=eXc1eXbJBIU
+
+### Михаил Никитин. 
+https://www.youtube.com/playlist?list=PLsgpsPeRv64h8d2lgoQpx-Z755m5gO4Rs
+
+https://www.youtube.com/playlist?list=PL9Zn3Gcp2G7YWIeeIVglBXEnCtTggCIoR
+
+https://www.youtube.com/playlist?list=PLf8iQozIdvKhwJrnksSMugsRbhRTGkJ9w
+
+Лекция 4. Атмосфера и климат.
+https://www.youtube.com/watch?v=iTKe2BMvzZM
+
+Михаил Никитин. Лекция 5. Место возникновения жизни. 
+https://www.youtube.com/watch?v=TYkkN3r8IZo
+
+Лекция 9.
+https://www.youtube.com/watch?v=0sWOhMe7DK0
+
+Центр Архэ
+https://www.youtube.com/channel/UCY41Iz96tJZMEp1qyLH-LYQ
+
+
 Molecular motors
 
 https://www.youtube.com/watch?v=sbFL2U7Vwls    (ru)  В.А.Твердислов "Хиральность и иерархия струкутр в биомакромолекулах. Молекулярные машины"
