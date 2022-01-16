@@ -15,6 +15,9 @@ cancer
 
 https://habr.com/ru/post/564978/
 
+Gene therapy (ru)
+https://www.youtube.com/watch?v=QybCCXJdLn8&t=2s
+
 
 Molecular motors
 
