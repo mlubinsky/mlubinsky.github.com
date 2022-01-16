@@ -18,13 +18,19 @@ https://habr.com/ru/post/564978/
 Gene therapy (ru)
 https://www.youtube.com/watch?v=QybCCXJdLn8&t=2s
 
+### Окштейн И.Л., МФТИ
+https://www.youtube.com/playlist?list=PLwg7NW3ZH-fX2HGMrhXNvQjJtwpE9ORTz
+
+
+### Михаил Никитин. 
 
 https://www.youtube.com/results?search_query=Faculty+of+Bioengineering+and+Bioinformatics%2C+MSU&sp=EiG4AQHCARtDaElKd19ZS1J4NU50VVlSNnpBeHg5YmZoNVk%253D
+
 
 Михаил Никитин: "История фотосинтеза, или кто сделал небо голубым
 https://www.youtube.com/watch?v=eXc1eXbJBIU
 
-### Михаил Никитин. 
+
 https://www.youtube.com/playlist?list=PLsgpsPeRv64h8d2lgoQpx-Z755m5gO4Rs
 
 https://www.youtube.com/playlist?list=PL9Zn3Gcp2G7YWIeeIVglBXEnCtTggCIoR
