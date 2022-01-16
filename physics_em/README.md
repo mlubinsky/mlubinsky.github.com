@@ -4,6 +4,8 @@ https://ufn.ru/ru/articles/1988/9/e/ Специальная теория отн�
 
 https://ufn.ru/ru/articles/1976/2/h/citedby.html Распространение импульсов
 
+https://ufn.ru/ru/articles/1996/6/d/  Коллапсы волновых функций
+
 https://www.onlinescientificresearch.com/articles/the-clock-riddle-and-einsteins-third-postulate-of-special-relativity.pdf
 
 http://new-idea.kulichki.net/pubfiles/150210210052.pdf
