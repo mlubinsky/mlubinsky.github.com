@@ -38,10 +38,12 @@ https://www.youtube.com/watch?v=kv47n9QjubQ  Движение плотности
 
 https://fr.art1lib.org/book/70856074/7e3b48
 
+https://www.researchgate.net/publication/325546912_Verification_of_the_Rigidity_of_the_Coulomb_Field_in_Motion
 Verification of the Rigidity of the Coulomb Field in Motion
 Authors:  Blinov, S. V.; Bulyzhenkov, I. E. 
 
 Published:Jun 2018 in Russian Physics Journal  DOI: 10.1007/S11182-018-1403-9
+
 
 
 Flux Density of the Umov Electromagnetic Energy during Uniform Motion of an Extended Electron 
