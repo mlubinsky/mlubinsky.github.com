@@ -14,6 +14,9 @@ Germano D’Abramo
 https://arxiv.org/pdf/2106.05168.pdf 
 
 
+https://physics.stackexchange.com/questions/253400/speed-of-the-coulomb-field-measured-to-be-infinite
+
+
 ### Blinov Bezulenkov
 
 https://www.youtube.com/watch?v=kv47n9QjubQ  Движение плотности энергии протяженного электрона описывает вектор Умова, а не Пойтинга / С.В.Блинов
