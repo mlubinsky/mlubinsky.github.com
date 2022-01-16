@@ -106,6 +106,7 @@ https://www.amazon.com/Last-Word-Been-Classical-Electrodynamics/dp/1589490363
 
 https://www.jpier.org/pierm/pier.php?paper=13101401
 
+https://physics.princeton.edu/~mcdonald/examples/onoochin.pdf
 
 
 ### Eugene Stefanovich
