@@ -1,3 +1,5 @@
+https://www.feynmanlectures.caltech.edu/II_21.html
+
 http://new-idea.kulichki.net/pubfiles/150210210052.pdf
 ЗАПАЗДЫВАЮЩИЕ ПОТЕНЦИАЛЫ И МАГНИТНЫЕ ЯВЛЕНИЯ Кирсанов Ю.Я.
 
@@ -12,7 +14,7 @@ Germano D’Abramo
 https://arxiv.org/pdf/2106.05168.pdf 
 
 
-
+https://article.sciencepublishinggroup.com/html/10.11648.j.ajmp.s.2015040201.13.html
 
 
 ### Blinov Bezulenkov
