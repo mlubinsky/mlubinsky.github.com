@@ -46,6 +46,10 @@ Authors:  Blinov, S., V   Published:Feb 2020 in Bulletin of the Lebedev Physics 
 
 ### Pizzella vs Shabad
 
+https://arxiv.org/pdf/1211.2913.pdf Measuring Propagation Speed of Coulomb Fields R. de Sangro, G. Finocchiaro, P.Patteri, M. Piccolo, G. Pizzella
+2014
+
+
 https://physics.stackexchange.com/questions/253400/speed-of-the-coulomb-field-measured-to-be-infinite
 
 A different interpretation of ”Measuring propagation speed of Coulomb fields” by R. de Sangro, G. Finocchiaro, P. Patteri,
@@ -61,6 +65,14 @@ https://arxiv.org/pdf/1605.02545.pdf
 Abstract: 
 the full identity is demonstrated between the Feynman formula for the field of a moving charge 
 and the Lienard-Wiechert potentials.
+
+
+Why the interpretation of “Measuring
+propagation speed of Coulomb fields” stands
+
+R. de Sangro, G. Finocchiaro, P. Patteri, M. Piccolo, G. Pizzella
+October 18, 2018
+https://arxiv.org/pdf/1611.06935.pdf
 
 ### Andrew E. Chubykalo
 
