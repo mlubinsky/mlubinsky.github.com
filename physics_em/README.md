@@ -1,5 +1,7 @@
 https://www.feynmanlectures.caltech.edu/II_21.html
 
+https://www.onlinescientificresearch.com/articles/the-clock-riddle-and-einsteins-third-postulate-of-special-relativity.pdf
+
 http://new-idea.kulichki.net/pubfiles/150210210052.pdf
 ЗАПАЗДЫВАЮЩИЕ ПОТЕНЦИАЛЫ И МАГНИТНЫЕ ЯВЛЕНИЯ Кирсанов Ю.Я.
 
