@@ -21,6 +21,8 @@ https://mipt.ru/education/chairs/fpfkt/downloads/sciseminar/2019_spring/%D0%AF%D
 
 https://www.lektorium.tv/node/38964
 
+https://www.physics.princeton.edu/~mcdonald/examples/ McDonald
+
 ### Entropy
 https://habr.com/ru/company/JetBrains-education/blog/599637/
 
