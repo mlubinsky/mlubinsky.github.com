@@ -18,6 +18,10 @@ https://habr.com/ru/post/564978/
 Gene therapy (ru)
 https://www.youtube.com/watch?v=QybCCXJdLn8&t=2s
 
+### Molecular biology
+
+<https://news.ycombinator.com/item?id=22763100>
+
 ### Окштейн И.Л., МФТИ
 https://www.youtube.com/playlist?list=PLwg7NW3ZH-fX2HGMrhXNvQjJtwpE9ORTz
 
