@@ -87,11 +87,15 @@ https://arxiv.org/abs/physics/0204062
 
 http://www.trinitas.ru/rus/doc/0001/005d/00012478.htm
 
+http://wiki.naturalphilosophy.org/index.php?title=Andrew_E_Chubykalo
 
-Проблема «4/3»
+### Проблема «4/3»
+
+https://physics.stackexchange.com/questions/80856/does-the-frac43-problem-of-classical-electromagnetism-remain-in-quantum-m
+
 http://80bola.com.trinitas.ru/rus/doc/0016/001g/00164093.htm
 
-http://wiki.naturalphilosophy.org/index.php?title=Andrew_E_Chubykalo
+
 
 ### Vladimir Onoochin
 On the Impossibility to Describe the Fields of the System of Uniformly Moving Charges in the Frame of Special Relativity
