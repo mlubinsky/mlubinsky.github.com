@@ -119,6 +119,10 @@ https://sci-hub.se/
 
 RemNote,  Roam, Obsidian, LogSeq, Athens, TheBrain, Zettlr, Notion
 
+https://news.ycombinator.com/item?id=29948616
+
+https://arunkprasad.com/log/who-uses-todo-lists/
+
 https://news.ycombinator.com/item?id=28292225
 
 https://news.ycombinator.com/item?id=28400446
@@ -584,9 +588,7 @@ LastPass KeePass, PasswordSafe, minykeypass - password managers
 
 <https://habr.com/ru/post/474658/> choose right mouse!
 
-## Molecular biology
 
-<https://news.ycombinator.com/item?id=22763100>
 
 ## Shoes
 <https://youtu.be/IijQyX_YCKA>
