@@ -431,6 +431,8 @@ https://textbooks.opensuny.org/browse-by-subject/. free books
 https://www.youtube.com/watch?v=gAFAj3pzvAA
 
  https://en.wikipedia.org/wiki/Ashcroft_and_Mermin
+ 
+ https://physics.stackexchange.com/questions/22046/books-for-condensed-matter-after-ashcroft-mermin
 
 ### Articles
 https://arxiv.org/abs/2009.06302 what is temperature?
