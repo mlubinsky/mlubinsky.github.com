@@ -464,6 +464,9 @@ https://arxiv.org/abs/2011.09181 . A First Principles Derivation of Classical an
 
 ## Solid state phys
 
+
+https://www.youtube.com/watch?v=QkADXsCwD3o Subir Sachdev - Quantum phase transitions in condensed matter 
+
 https://arxiv.org/pdf/cond-mat/0505032.pdf . Spin Glasses
 
 https://mipt.ru/education/chair/physics/records/modern/ovchinkin6.php
