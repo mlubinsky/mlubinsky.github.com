@@ -1,5 +1,7 @@
 https://towardsdatascience.com/how-to-find-all-solutions-to-the-subset-sum-problem-597f77677e45
 
+https://habr.com/ru/post/646319/ amazon interview
+
 https://malisper.me/an-algorithm-for-passing-programming-interviews/
 
 https://news.ycombinator.com/item?id=29775023
