@@ -3,7 +3,9 @@
 Example of article with formulas
 https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-newton-4bd99941d18e
 
+http://theoreticalminimum.com/
 
+https://www.youtube.com/watch?v=SCUnoxJ5pho&list=PL193BC0532FE7B02C
 
 https://arxiv.org/abs/2110.05294 Quantum mechanics via quantum tomography
 Arnold Neumaier
