@@ -1,3 +1,4 @@
+https://www.youtube.com/watch?v=TfYf_rPWUdY mRNA
 
 https://habr.com/ru/company/ruvds/blog/582126/. Наш мозг не компьютер
 
