@@ -5,6 +5,8 @@ https://arxiv.org/abs/2110.14602 Towards a Theory of Evolution as Multilevel Lea
 
 https://habr.com/ru/company/timeweb/blog/594859/  Краткое знакомство с моделированием белков
 
+https://condensedconcepts.blogspot.com/2021/09/nanoscale-machines-in-nature.html
+
 https://www.nature.com/articles/d41586-021-02904-w
 
 https://news.ycombinator.com/item?id=29123843
