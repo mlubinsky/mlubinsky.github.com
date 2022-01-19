@@ -112,6 +112,8 @@ https://habr.com/ru/company/ruvds/blog/583120/
 
 ### Books
 
+https://mathematicbooks.com/product/mathematical-methods-for-physics-and-engineering-a-comprehensive-guide/ 
+
 http://www.imp.uran.ru/?q=ru/lib_monografy
 
 https://ikfia.ysn.ru/statisticheskaya-fizika/  
