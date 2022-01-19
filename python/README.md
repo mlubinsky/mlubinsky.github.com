@@ -1,5 +1,9 @@
 https://awesome-python.com/
 
+https://python-patterns.guide/
+
+https://www.python-unleashed.com/blog
+
 https://medium.com/@siddharth.sahu/must-know-python-concepts-for-experienced-developers-4554ceea3d95
 
 https://www.amazon.com/dp/B09MV4X8TV Python Architecture patterns
