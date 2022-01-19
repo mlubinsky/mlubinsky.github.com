@@ -7,6 +7,8 @@ https://iopscience.iop.org/
 
 http://theoreticalminimum.com/
 
+https://condensedconcepts.blogspot.com/2021/04/fifty-years-ago-three-big-discoveries.html
+
 https://www.youtube.com/watch?v=SCUnoxJ5pho&list=PL193BC0532FE7B02C
 
 https://arxiv.org/abs/2110.05294 Quantum mechanics via quantum tomography
