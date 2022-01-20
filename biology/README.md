@@ -1,3 +1,6 @@
+https://arxiv.org/abs/2201.06897. The world beyond physics: how big is it?
+Sauro Succi
+
 https://www.youtube.com/watch?v=TfYf_rPWUdY mRNA
 
 https://habr.com/ru/company/ruvds/blog/582126/. Наш мозг не компьютер
