@@ -20,12 +20,7 @@ https://www.reddit.com/r/Python/comments/r6aqji/how_do_you_deploy_python_applica
 
 https://blog.guilatrova.dev/
 
-https://github.com/cosmicpython/book Good Free Book
 
-Book: Python distilled by David Beazley 
-https://www.amazon.com/Python-Essential-Reference-Developers-Library/dp/0134173279/   
-
-https://www.cosmicpython.com/
 
 https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
 
@@ -693,6 +688,15 @@ deactivate
 ```
 ## Books
 
+
+https://effectivepython.com/ 2nd edition
+
+https://github.com/cosmicpython/book Good Free Book
+
+Book: Python distilled by David Beazley 
+https://www.amazon.com/Python-Essential-Reference-Developers-Library/dp/0134173279/   
+
+https://www.cosmicpython.com/
 https://github.com/pamoroso/free-python-books
 
 <https://www.amazon.com/Modern-Python-Cookbook-flawless-expressive/dp/180020745X>
@@ -701,7 +705,7 @@ https://github.com/pamoroso/free-python-books
 
 <https://leanpub.com/clean-architectures-in-python>
 
-https://www.amazon.com/dp/B085KB31X3/ref=sr_1_6?dchild=1&keywords=Advanced+Python+Development&qid=1599708489&sr=8-6
+https://www.amazon.com/dp/B085KB31X3  Architecture Patterns with Python
 
 https://www.amazon.com/Advanced-Python-Development-Real-World-Applications-ebook/dp/B08DMKYTNM/
 
