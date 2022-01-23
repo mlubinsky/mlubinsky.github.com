@@ -1,3 +1,5 @@
+<https://modelpredict.com/python-dependency-management-tools> 
+
 ### pip
 <https://snarky.ca/why-you-should-use-python-m-pip/>.  python -m pip
 
