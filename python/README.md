@@ -567,7 +567,7 @@ https://www.youtube.com/watch?v=qJ-0N34Sa_E How to set up Python 3.8 for softwar
 
 <https://github.com/giannitedesco/minotaur>  inotify wrapper
 
-<https://habr.com/ru/post/485236/> . Конфигурационные файлы в Python
+
 
 ## with
 
@@ -629,6 +629,8 @@ https://www.codementor.io/@doppler/using-environment-variables-in-python-for-app
 
 
 <https://news.ycombinator.com/item?id=22964910>. How to config the Python app
+
+<https://habr.com/ru/post/485236/> . Конфигурационные файлы в Python
 
 <https://news.ycombinator.com/item?id=22969375>
 
