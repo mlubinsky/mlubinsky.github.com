@@ -433,8 +433,6 @@ https://habr.com/ru/post/560072/ interesting features
 https://habr.com/ru/post/566920/  Algebraic data types in Python
 
 
-Working with env variables
-https://www.codementor.io/@doppler/using-environment-variables-in-python-for-app-configuration-and-secrets-1irvc9qbat
 
 https://habr.com/ru/post/559560/ . hex arhitecture in python
 
@@ -621,10 +619,14 @@ https://medium.com/better-programming/python-7-advanced-features-that-you-may-no
 
 <https://medium.com/livecodestream/how-to-use-generator-and-yield-in-python-c481cea097d7>
 
-## Config
+## Config and env variables
 <https://whalesalad.com/blog/doing-python-configuration-right>
 
 <https://tech.preferred.jp/en/blog/working-with-configuration-in-python/>
+
+Working with env variables
+https://www.codementor.io/@doppler/using-environment-variables-in-python-for-app-configuration-and-secrets-1irvc9qbat
+
 
 <https://news.ycombinator.com/item?id=22964910>. How to config the Python app
 
