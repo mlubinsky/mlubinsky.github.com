@@ -445,19 +445,18 @@ https://awesome-python.com/
 
 https://towardsdatascience.com/simulate-real-life-events-in-python-using-simpy-e6d9152a102f SimPy
 
-https://pybind11.readthedocs.io/en/stable/ C++ from python
+
 
 https://habr.com/ru/company/skillfactory/blog/528232/  57 отборных репозиториев для всех разработчиков Python
 
-https://www.codementor.io/@adammertz/quick-tip-how-i-use-pip-tools-to-wrangle-dependencies-1fzreskhok . pip-tools
-
+ 
 https://www.youtube.com/watch?v=oNalXg67XEE.  Observer pattern
 
 https://levelup.gitconnected.com/python-tricks-i-can-not-live-without-87ae6aff3af8 useful tips
 
 https://proproprogs.ru/ai
 
-<https://snarky.ca/why-you-should-use-python-m-pip/>.  python -m pip
+
 
 https://news.ycombinator.com/item?id=24565499. python internals
 
@@ -466,7 +465,7 @@ https://gto76.github.io/python-cheatsheet/  Cheetsheet
 
 f-strings: <https://miguendes.me/amp/73-examples-to-help-you-master-pythons-f-strings>
 
-Python 2.7 pip.  curl https://bootstrap.pypa.io/2.7/get-pip.py --output get-pip.py
+
 
 
 ### get IP address
@@ -653,43 +652,12 @@ https://www.codementor.io/@doppler/using-environment-variables-in-python-for-app
  python -m json.tool my_json.json   # json buetifier
  
  
- https://pythonspeed.com/articles/conda-vs-pip/    Pip vs conda
+
  
 ```
 <https://medium.com/analytics-vidhya/6-exceptionally-common-pitfalls-of-python-exception-handling-44871d6afbc7> Error handling
 
-```
-/Users/mlubinsky/my_virt_envs
-which pip
-python -m pip install virtualenv
-virtualenv -p /Users/mlubinsky/opt/anaconda3/bin/python pywedge
-source pywedge/bin/activate
-```
 
-```
-import sys
-print(sys.prefix) # '/System/Library/Frameworks/Python.framework/Versions/3.5'
-import site
-data = site.getsitepackages()
-print(data)
-
-pip install virtualenv
-mkdir python-virtual-environments 
-cd python-virtual-environments
-
-# Python 2:
-$ virtualenv env
- 
-# Python 3
-$ python3 -m venv env
-echo $PATH
-source env/bin/activate
-echo $PATH
-
-pip install ...
-...
-deactivate
-```
 ## Books
 
 
@@ -773,6 +741,8 @@ print ( ''.join([x.encode('utf-8') for x in map(unichr, range(0x0107, 0x0187))])
 ## Binding with C++
 
 <https://iscinumpy.gitlab.io/post/tools-to-bind-to-python/>
+
+https://pybind11.readthedocs.io/en/stable/ C++ from python
 
 https://habr.com/ru/company/oleg-bunin/blog/518464/
 
@@ -872,8 +842,7 @@ multiprocessing vs threading
 <https://pbpython.com/natural-breaks.html>
 
 ## Other topics
-
-```python -m json.tool my_json.json```
+ 
 
 <https://habr.com/ru/company/otus/blog/490244/> .  ctypes
 
@@ -924,26 +893,10 @@ multiprocessing vs threading
 <https://habr.com/ru/post/471618/> C++ fropm python
 
 ## Python tools
-<https://cjolowicz.github.io/posts/hypermodern-python-01-setup/>
 
-<https://pip.pypa.io/en/stable/user_guide/>
 
 <https://spiegelmock.com/2020/01/04/python-2020-modern-best-practices/>
 
-### pyenv pipenv
-
-<https://github.com/pyenv/pyenv>
-
-https://chriswarrick.com/blog/2018/07/17/pipenv-promises-a-lot-delivers-very-little/
-
-<https://dev.to/writingcode/the-python-virtual-environment-with-pyenv-pipenv-3mlo>
-
-<https://khashtamov.com/ru/pyenv-python/>
-
-<https://virtualenv.pypa.io/en/latest/> 
-pyenv, poetry, black, flake8, isort, pre-commit, pytest, coverage, tox, Azure Pipelines, sphinx, and readthedocs:
-
-<https://medium.com/georgian-impact-blog/python-tooling-makes-a-project-tick-181d567eea44>
 
 ## Slots
 <https://habr.com/ru/company/ruvds/blog/480356/>
