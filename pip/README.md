@@ -70,8 +70,14 @@ deactivate
 Install Anaconda https://towardsdatascience.com/how-to-easily-set-up-python-on-any-m1-mac-5ea885b73fab
 
 
-### Many Python versions on single Mac box:
+###   Python  on   Mac  :
 https://asdf-vm.com/
 
 https://justinmayer.com/posts/homebrew-python-is-not-for-you/
+
+https://hackercodex.com/guide/python-development-environment-on-mac-osx/
+
+https://gist.github.com/chris-zen/9e61db6924bd37fbe414f648614ca4c5
+
+https://www.youtube.com/watch?v=qJ-0N34Sa_E How to set up Python 3.8 for software development (In 2021)
 
