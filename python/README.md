@@ -415,7 +415,12 @@ https://habr.com/ru/company/yandex_praktikum/blog/553900/ . Best python books
 
 https://github.com/fredrik-corneliusson/click-web
 
+### Exceptions  
+<https://medium.com/analytics-vidhya/6-exceptionally-common-pitfalls-of-python-exception-handling-44871d6afbc7> Error handling
+
 https://blog.guilatrova.dev/handling-exceptions-in-python-like-a-pro/
+
+
 
 https://habr.com/ru/post/560072/ interesting features
 
@@ -628,8 +633,7 @@ https://www.codementor.io/@doppler/using-environment-variables-in-python-for-app
 
 <https://www.attrs.org/en/stable/>
 
- 
-<https://medium.com/analytics-vidhya/6-exceptionally-common-pitfalls-of-python-exception-handling-44871d6afbc7> Error handling
+
 
 
 ## Books
@@ -721,6 +725,10 @@ https://pybind11.readthedocs.io/en/stable/ C++ from python
 https://habr.com/ru/company/oleg-bunin/blog/518464/
 
 https://pythonextensionpatterns.readthedocs.io/en/latest/index.html
+
+<https://habr.com/ru/post/471618/> C++ fropm python
+
+<https://habr.com/ru/company/otus/blog/490244/> .  ctypes
 
 ## Creating Python Package
 
@@ -818,7 +826,7 @@ multiprocessing vs threading
 ## Other topics
  
 
-<https://habr.com/ru/company/otus/blog/490244/> .  ctypes
+
 
 ### Requests lib
 
@@ -864,7 +872,7 @@ multiprocessing vs threading
 
 <https://blog.richard.do/2019/10/17/supercharge-your-python-testing-workflow/> . Testing
 
-<https://habr.com/ru/post/471618/> C++ fropm python
+
 
 ## Python tools
 
