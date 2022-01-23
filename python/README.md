@@ -31,12 +31,10 @@ Important:
 Pointers with python: https://yurichev.com/news/20211223_Py_ptrs/
 
 
-
-
 ```
  python -m py_compile my.py   # Check file syntax
  
- python -m json.tool my_json.json   # json beautyfier - warning: will sort the keys!
+ python -m json.tool my_json.json   # json beautifier - warning: will sort the keys ard remove .0 !
  ```
  
  
@@ -62,19 +60,10 @@ with open(fname, 'r') as handle:
 pp_json(json_string_or_dict, False, 2)
 
 ```
-
- 
- Install Anaconda
- https://towardsdatascience.com/how-to-easily-set-up-python-on-any-m1-mac-5ea885b73fab
  
  https://sadh.life/post/builtins/
  
- 
- ### Many Python versions on single Mac box:
 
-https://asdf-vm.com/
-
-https://justinmayer.com/posts/homebrew-python-is-not-for-you/
  
  ####  Python Libraries
 ``` 
@@ -443,7 +432,7 @@ https://antonz.org/python-packaging/
 https://awesome-python.com/
 
 
-https://towardsdatascience.com/simulate-real-life-events-in-python-using-simpy-e6d9152a102f SimPy
+
 
 
 
@@ -511,9 +500,11 @@ SQLite connection <http://blog.rtwilson.com/a-python-sqlite3-context-manager-got
 <https://habr.com/ru/company/ruvds/blog/514538/> SQLite
 
 
-### SymPy
+### SymPy SimPy
 
 http://www.doc.mmu.ac.uk/STAFF/S.Lynch/Python_for_A_Level_Mathematics_and_Beyond.html
+
+https://towardsdatascience.com/simulate-real-life-events-in-python-using-simpy-e6d9152a102f SimPy
 
 ### Python instead bash
 
@@ -534,16 +525,7 @@ https://www.thoughtworks.com/insights/blog/reproducible-work-environments-using-
 
 https://medium.com/@stephen.odaibo/docker-containers-python-virtual-environments-virtual-machines-d00aa9b8475
 
-
-### Install python on Mac: 
-<https://hackercodex.com/guide/python-development-environment-on-mac-osx/>
-
-
-<https://gist.github.com/chris-zen/9e61db6924bd37fbe414f648614ca4c5>
-
-https://www.youtube.com/watch?v=qJ-0N34Sa_E How to set up Python 3.8 for software development (In 2021)
-
-
+ 
 
 
 <http://www.iakovlev.org/index.html?p=5791&m=1&l1=2> All Python in single page
@@ -556,7 +538,7 @@ https://www.youtube.com/watch?v=qJ-0N34Sa_E How to set up Python 3.8 for softwar
 
 <https://pythonspeed.com/articles/python-object-memory/>.  use slots !!! and other tips
 
-<https://modelpredict.com/python-dependency-management-tools> 
+
 
 <https://news.ycombinator.com/item?id=23386537> debugging
 
@@ -568,8 +550,8 @@ https://www.youtube.com/watch?v=qJ-0N34Sa_E How to set up Python 3.8 for softwar
 
 
 
-## with
-
+## Context managers ( beyond with )
+ 
 <https://medium.com/better-programming/context-managers-in-python-go-beyond-with-open-as-file-85a27e392114>
 
 ## ML papers with code
@@ -646,15 +628,7 @@ https://www.codementor.io/@doppler/using-environment-variables-in-python-for-app
 
 <https://www.attrs.org/en/stable/>
 
-```
- python -m py_compile my.py   # Check file syntax
  
- python -m json.tool my_json.json   # json buetifier
- 
- 
-
- 
-```
 <https://medium.com/analytics-vidhya/6-exceptionally-common-pitfalls-of-python-exception-handling-44871d6afbc7> Error handling
 
 
