@@ -9,7 +9,8 @@ http://theoreticalminimum.com/
 
 https://condensedconcepts.blogspot.com/2021/04/fifty-years-ago-three-big-discoveries.html
 
-https://www.youtube.com/watch?v=SCUnoxJ5pho&list=PL193BC0532FE7B02C
+### QM
+https://www.youtube.com/watch?v=SCUnoxJ5pho&list=PL193BC0532FE7B02C Lectures
 
 https://arxiv.org/abs/2110.05294 Quantum mechanics via quantum tomography
 Arnold Neumaier
@@ -25,12 +26,21 @@ https://www.youtube.com/watch?v=VSCqjOXNSp8  А.С. Трушечкин. Мате
 Яшин Всеволод
 https://mipt.ru/education/chairs/fpfkt/downloads/sciseminar/2019_spring/%D0%AF%D1%88%D0%B8%D0%BD_%D0%92%D1%81%D0%B5%D0%B2%D0%BE%D0%BB%D0%BE%D0%B4_%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BB%D0%BE%D0%B3%D0%B8%D0%BA%D0%B0.pdf
 
-https://www.lektorium.tv/node/38964
+https://www.lektorium.tv/node/38964 Квантовая теория поля как задача по теории операторов. 	
+Николай Филонов
 
 https://www.physics.princeton.edu/~mcdonald/examples/ McDonald
 
 ### Entropy
 https://habr.com/ru/company/JetBrains-education/blog/599637/
+
+https://arxiv.org/abs/1405.2061 Shennon Entropy
+
+https://news.ycombinator.com/item?id=28785902
+
+https://youtu.be/f1pclkpMhRc Entropy
+
+https://arxiv.org/abs/2108.10340 Counting microstates of the p-state paramagnet
 
 https://www.lektorium.tv/node/39291  Geometric interpretation of entropy 	
 Grigory Dvorkin | Григорий Дворкин
@@ -41,11 +51,11 @@ https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
 
 https://news.ycombinator.com/item?id=28764416
 
-https://urss.ru/
+https://urss.ru/.    Science Books
 
 https://pirsa.org/ 
 
-Complex Systems: a Physicist’s Viewpoint
+#### Complex Systems: a Physicist’s Viewpoint  by Giorgio Parisi
 
 https://www.arxiv-vanity.com/papers/cond-mat/0205297/
 
@@ -60,7 +70,7 @@ https://news.ycombinator.com/item?id=29593553
 https://www.youtube.com/watch?v=1cYAL0RT3zw  Symmetry Breaking and Magnetism - Prof Stephen Blundell
 
 
-All lectures
+#### All lectures
 
 https://arxiv.org/search/?query=lecture&searchtype=title
 
@@ -72,15 +82,24 @@ https://mipt.ru/education/chair/physics/S_V/
 
 https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ Interesting blog
 
-https://diffxweyl.wordpress.com/ Interesting blog 
+https://diffxweyl.wordpress.com/ Interesting QM blog 
 
-https://youtu.be/9_oPARI4k1o
+https://www.youtube.com/watch?v=9_oPARI4k1o     Почему электроны в проводе не кончаются, а провода не портятся
 
 https://arxiv.org/abs/2109.12552 Theoretical Chemistry
 
 https://arxiv.org/abs/2109.12087 Notes on symmetries in particle physics
 
-### SciPy SymPy
+
+### SymPy
+
+http://www.doc.mmu.ac.uk/STAFF/S.Lynch/Python_for_A_Level_Mathematics_and_Beyond.html
+
+https://www.youtube.com/watch?v=-SdIZHPuW9o  
+
+https://www.youtube.com/watch?v=1yBPEPhq54M
+
+### SciPy 
 
 https://www.youtube.com/watch?v=jmX4FOUEfgU SciPy
 
@@ -88,7 +107,7 @@ https://www.youtube.com/watch?v=Teb28OFMVFc SciPy
 
 https://www.youtube.com/watch?v=cXHvC_FGx24 SciPy Optimization
 
-https://www.youtube.com/watch?v=-SdIZHPuW9o SymPy
+### Shredinger
 
 https://www.youtube.com/watch?v=kVjg3jbM3Pw Shrodinger eq
 
@@ -154,15 +173,7 @@ https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics
 
 https://www.mccme.ru/free-books/belavin/belavin-theorphys.pdf
 
-### Entropy 
 
-https://arxiv.org/abs/1405.2061 Shennon Entropy
-
-https://news.ycombinator.com/item?id=28785902
-
-https://youtu.be/f1pclkpMhRc Entropy
-
-https://arxiv.org/abs/2108.10340 Counting microstates of the p-state paramagnet
 
 https://mipt.ru/online/
 
