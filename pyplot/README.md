@@ -10,7 +10,14 @@ https://towardsdatascience.com/the-easiest-way-to-make-beautiful-interactive-vis
 
 https://sophiamyang.github.io/DS/visualization/holoviz/holoviz.html
 
+### EDA 
+
 https://www.zenrows.com/blog/exploratory-data-analysis-in-python
+
+https://towardsdatascience.com/exploratory-sensor-data-analysis-in-python-3a26d6931e67
+
+https://towardsdatascience.com/exploratory-data-analysis-visualization-and-prediction-model-in-python-241b954e1731
+
 
 https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-2dd74df12b5e
 
@@ -52,7 +59,7 @@ https://www.machinelearningplus.com/plots/top-50-matplotlib-visualizations-the-m
 
 https://www.practicaldatascience.org/html/plotting_part2.html
 
-https://towardsdatascience.com/exploratory-data-analysis-visualization-and-prediction-model-in-python-241b954e1731
+
 
 https://stackabuse.com/matplotlib-draw-vertical-lines-on-plot/ vertical line in matplotlib
 
