@@ -9,6 +9,7 @@ https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_2708
 
 https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6de6a90e3513
 
+https://iamondemand.com/blog/how-to-setup-lambda-using-only-the-aws-cli/ 
 
 https://github.com/hseera/aws-python-utilities.  AWS Python utils
 ### aws config
