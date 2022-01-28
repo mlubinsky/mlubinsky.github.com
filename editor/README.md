@@ -32,6 +32,10 @@ VS Code: whitespace trimming at file save time from settings:
 
 ## VIM 
 
+https://github.com/mhinz/vim-galore
+
+https://news.ycombinator.com/item?id=30084913
+
 ```
 :w !sudo tee "%"
 ```
