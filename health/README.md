@@ -10,6 +10,9 @@ https://www.evdokimenko.ru/
 
 https://www.dmoose.com/products/gymnastic-workout-rings  Gymnastic Rings
 
+https://www.macrofit.co/home-gym/ .  Home gym
+
+
 https://www.youtube.com/watch?v=V105d0BLQPU . Flexibility - Zhumadilov Valery
 
 https://habr.com/ru/post/590183/ . Сохранить остроту ума в любом возрасте
