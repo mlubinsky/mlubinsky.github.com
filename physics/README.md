@@ -173,7 +173,7 @@ https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics
 
 https://www.mccme.ru/free-books/belavin/belavin-theorphys.pdf
 
-
+https://www.youtube.com/watch?v=XwBxlE6RJMU   StatPysics MFTI
 
 https://mipt.ru/online/
 
