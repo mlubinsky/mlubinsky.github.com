@@ -64,7 +64,7 @@ https://aws.amazon.com/about-aws/whats-new/2021/02/you-now-can-use-partiql-with-
 
 https://aws.amazon.com/about-aws/whats-new/2021/05/amazon-dynamodb-local-now-supports-the-aws-sdk-for-java-2-x/
 
-#### official doc
+#### DynamoDB  official doc
 https://docs.amazonaws.cn/en_us/amazondynamodb/latest/developerguide/bp-time-series.html
 
 https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html
@@ -116,6 +116,9 @@ aws --version
 aws-cli/1.16.300 Python/3.7.5 Darwin/18.7.0 botocore/1.13.36
 ```
 ### aws cli via pip install
+
+https://realpython.com/courses/python-boto3-aws-s3/
+
 ```
 cd my_virt_envs/
 virtualenv aws
@@ -198,6 +201,8 @@ Hive Version for emr-5.21.1 is: 2.3.4
 
 ## Boto3
 
+  https://realpython.com/courses/python-boto3-aws-s3/
+  
 https://www.learnaws.org/2021/05/12/aws-iam-boto3-guide/
   
   https://dashbird.io/blog/boto3-aws-python/
