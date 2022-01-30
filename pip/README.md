@@ -1,5 +1,7 @@
 <https://modelpredict.com/python-dependency-management-tools> 
 
+https://www.andreagrandi.it/2022/01/29/install-python-with-pyenv-and-pyenvvirtualenv-create-virtual-environment-with-specific-python-version-macos/
+
 ### pip
 <https://snarky.ca/why-you-should-use-python-m-pip/>.  python -m pip
 
