@@ -6,6 +6,8 @@ https://www.youtube.com/watch?v=HddbEZQTrcU . Insult
 
 https://www.youtube.com/watch?v=30PPmosjarM ЛЕЧЕНИЕ ГИПЕРТОНИИ: 7 простых способов,
 
+https://www.youtube.com/watch?v=FUAM9MXypDU  ГИПЕРТОНИ
+
 https://www.evdokimenko.ru/ 
 
 https://www.dmoose.com/products/gymnastic-workout-rings  Gymnastic Rings
