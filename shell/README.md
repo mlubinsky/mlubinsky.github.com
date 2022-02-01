@@ -24,6 +24,15 @@ https://news.ycombinator.com/item?id=27992073
 
 https://habr.com/ru/company/gms/blog/553078/ . useful command-line utils
 
+### looking for files on S3 with pattern = XXX
+```
+
+D=20210706011852/
+B=s3://cap-data-multipart-886239521314/cap2/compressed/
+aws s3 ls $B$D | \
+awk '{print $4}' | \
+xargs -I FNAME sh -c "echo FNAME; aws s3 cp $B${D}FNAME - | zgrep -i -c XXX"
+```
 
 https://github.com/roapi/roapi/tree/main/columnq-cli  SQL for  parquet, csv, arrow files
 
