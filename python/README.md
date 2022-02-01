@@ -574,6 +574,9 @@ https://medium.com/techtofreedom/7-levels-of-using-decorators-in-python-370473fc
 
 https://habr.com/ru/post/524052/
 
+https://habr.com/ru/post/648967/
+
+
 ## Static Method in Python: @staticmethod @classmethod @property
 https://djangocentral.com/classmethod-and-staticmethod-explained/
 https://djangocentral.com/property-decorator-explained/
@@ -857,6 +860,8 @@ multiprocessing vs threading
 ## Logging
 
 <https://habr.com/ru/company/skillfactory/blog/556942/>
+
+https://habr.com/ru/post/649033/
 
 <https://kanoki.org/2019/10/16/python-logging/> 
 
