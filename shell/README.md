@@ -1,3 +1,12 @@
+First line in every bash file should be:
+```
+#!/usr/bin/env bash
+```
+Unlike in most other programming languages, when you define a variable in Bash, 
+you must not include spaces around the variable name.
+
+https://blog.djy.io/10-bash-quirks-and-how-to-live-with-them/
+
 https://stackoverflow.com/questions/68606694/how-to-grep-and-replace-this-pattern-from-command-line
 
 https://habr.com/ru/post/590021/ how to write bash scripts
