@@ -12,6 +12,7 @@ https://medium.com/@tomas.duhourq/building-scalable-analytics-with-aws-part-i-6d
 https://iamondemand.com/blog/how-to-setup-lambda-using-only-the-aws-cli/ 
 
 https://github.com/hseera/aws-python-utilities.  AWS Python utils
+
 ### aws config
 ```
 [DYNAMO]$ cat  ~/.aws/config
@@ -29,6 +30,9 @@ https://github.com/hseera/aws-python-utilities
 ### DynamoDB
 
 https://github.com/dineshsonachalam/Lucid-Dynamodb
+
+https://medium.com/duda/dynamodb-everything-you-need-to-know-about-single-table-design-3535a3d4f024
+
 ```
 aws dynamodb list-tables --endpoint-url http://localhost:8000
 aws dynamodb describe-table --table-name Music  --endpoint-url http://localhost:8000
