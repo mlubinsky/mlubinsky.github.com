@@ -2,6 +2,9 @@ First line in every bash file should be:
 ```
 #!/usr/bin/env bash
 ```
+
+https://www.mulle-kybernetik.com/modern-bash-scripting/
+
 Unlike in most other programming languages, when you define a variable in Bash, 
 you must not include spaces around the variable name.
 
