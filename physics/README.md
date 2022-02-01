@@ -31,6 +31,9 @@ https://www.lektorium.tv/node/38964 Квантовая теория поля к�
 
 https://www.physics.princeton.edu/~mcdonald/examples/ McDonald
 
+
+https://habr.com/ru/post/544030/ FermiNet
+
 ### Entropy
 https://habr.com/ru/company/JetBrains-education/blog/599637/
 
