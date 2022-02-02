@@ -9,6 +9,9 @@ http://theoreticalminimum.com/
 
 https://condensedconcepts.blogspot.com/2021/04/fifty-years-ago-three-big-discoveries.html
 
+Articles from philosophers of science
+http://philsci-archive.pitt.edu/view/subjects/
+
 ### QM
 https://www.youtube.com/watch?v=SCUnoxJ5pho&list=PL193BC0532FE7B02C Lectures
 
