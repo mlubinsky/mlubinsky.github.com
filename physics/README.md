@@ -9,11 +9,20 @@ http://theoreticalminimum.com/
 
 https://condensedconcepts.blogspot.com/2021/04/fifty-years-ago-three-big-discoveries.html
 
+
+http://www.lightandmatter.com/books.html
+
 Article - Root of things: https://arxiv.org/pdf/0906.4955.pdf 
 
 ### Articles / Journals:
 
+Online archives where scientists post research spark information revolution | Hacker News
+https://news.ycombinator.com/item?id=30129857 
+
 ufn.ru 
+pnas.org
+
+
 
 Известия вузов. Физика:
 http://journals.tsu.ru/physics/
