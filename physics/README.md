@@ -9,7 +9,16 @@ http://theoreticalminimum.com/
 
 https://condensedconcepts.blogspot.com/2021/04/fifty-years-ago-three-big-discoveries.html
 
-Articles from philosophers of science
+Article - Root of things: https://arxiv.org/pdf/0906.4955.pdf 
+
+### Articles / Journals:
+
+ufn.ru 
+
+Известия вузов. Физика:
+http://journals.tsu.ru/physics/
+
+from philosophers of science
 http://philsci-archive.pitt.edu/view/subjects/
 
 https://cyberleninka.ru/
