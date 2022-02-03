@@ -19,9 +19,13 @@ Article - Root of things: https://arxiv.org/pdf/0906.4955.pdf
 Online archives where scientists post research spark information revolution | Hacker News
 https://news.ycombinator.com/item?id=30129857 
 
-ufn.ru 
+ufn.ru  pereucet
+
+https://journals.nsu.ru/siberian-journal-physics/  Сибирский физический журнал
+
 pnas.org
 
+https://journals.nsu.ru/siberian-journal-physics/archive/2008/T3V2/5/0125/  Игнатович Владимир Казимирович. Одномерный периодический потенциал в квантовой механике
 
 
 Известия вузов. Физика:
