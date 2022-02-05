@@ -1,5 +1,9 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+
+
+https://www.feynmanlectures.caltech.edu/III_toc.html
+
 Example of article with formulas
 https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-newton-4bd99941d18e
 
