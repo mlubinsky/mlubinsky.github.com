@@ -2,6 +2,7 @@
 
 https://www.andreagrandi.it/2022/01/29/install-python-with-pyenv-and-pyenvvirtualenv-create-virtual-environment-with-specific-python-version-macos/
 
+
 ### pip
 
 https://realpython.com/what-is-pip/
