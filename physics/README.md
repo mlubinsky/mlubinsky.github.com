@@ -3,6 +3,8 @@
 Example of article with formulas
 https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-newton-4bd99941d18e
 
+https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-4-separation-of-variables-19b88bee86e0
+
 https://iopscience.iop.org/
 
 http://theoreticalminimum.com/
