@@ -7,7 +7,13 @@ https://www.youtube.com/watch?v=TfYf_rPWUdY mRNA
 
 https://habr.com/ru/company/ruvds/blog/582126/. Наш мозг не компьютер
 
+### Vitaly Vanchurin, Yuri I. Wolf,  Eugene V. Koonin,  Mikhail I. Katsnelson
+
 https://arxiv.org/abs/2110.14602 Towards a Theory of Evolution as Multilevel Learning
+
+https://www.pnas.org/content/119/6/e2120037119
+
+https://www.pnas.org/content/119/6/e2120042119
 
 https://habr.com/ru/company/timeweb/blog/594859/  Краткое знакомство с моделированием белков
 
