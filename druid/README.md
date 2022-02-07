@@ -1,6 +1,7 @@
 
 https://druid.apache.org/docs/latest/tutorials/index.html
 
+https://www.decipherzone.com/blog-detail/apache-druid-architecture
 
 https://www.youtube.com/watch?v=6jJi11r71sY
 
