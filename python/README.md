@@ -369,7 +369,12 @@ https://habr.com/ru/company/otus/blog/573164/ functools
 
 https://lwn.net/SubscriberLink/861910/67bbe2390d2e0c93/ API, slots, etc
 
+### Dataclasses
+https://habr.com/ru/company/otus/blog/650257/
+
 https://death.andgravity.com/namedtuples named tuples vs dataclasses
+
+<https://florimond.dev/blog/articles/2018/10/reconciling-dataclasses-and-properties-in-python/> DataClasses
 
 https://habr.com/ru/company/numdes/blog/581374/. make single exe from Python (Nuitka, etc)
 
@@ -843,7 +848,7 @@ multiprocessing vs threading
 
 
 
-<https://florimond.dev/blog/articles/2018/10/reconciling-dataclasses-and-properties-in-python/> DataClasses
+
 
 <https://github.com/benfred/py-spy>  py-spy: Sampling profiler for Python programs
 
