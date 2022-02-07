@@ -1,3 +1,7 @@
+https://habr.com/ru/company/otus/blog/650231/
+
+https://elastisys.com/designing-and-deploying-scalable-applications-on-kubernetes/
+
 <https://testdriven.io/running-flask-on-kubernetes>
 
 <https://habr.com/company/flant/blog/420813/>
