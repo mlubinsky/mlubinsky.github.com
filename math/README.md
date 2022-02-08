@@ -91,7 +91,7 @@ https://en.wikipedia.org/wiki/Secretary_problem
 https://en.wikipedia.org/wiki/Ski_rental_problem
 
 
-### Average distance between 2 points in rectanle, circle, on on line
+### Average distance between 2 points in rectangle, on circle, on line, etc
 
 https://www.youtube.com/watch?v=i4VqXRRXi68
 
@@ -189,6 +189,16 @@ https://vk.com/physics_math  Books
 
 ### Abstract Algebra
 <https://github.com/mavam/abstract-algebra-cheatsheet>
+
+https://arxiv.org/pdf/1804.04657.pdf
+
+https://www.youtube.com/playlist?list=PL1JJ1jVZ9z5DjMQRkgzvC4c73GvLJOdjM
+
+
+### Д.Г. Ильинский:
+"Теория колец и полей" https://www.youtube.com/playlist?list=PL4_hYwCyhAvbOH9yAll08bwTjcdbxpN_v
+ 
+"Приложения алгебраиче-ских структур"   https://www.youtube.com/playlist?list=PL4_hYwCyhAvY_FcWILwDqeL4GAt7CDh-B
 
 <https://jwkennington.com/blog/algebra-ladder/> 
 
