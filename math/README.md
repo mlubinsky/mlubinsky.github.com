@@ -10,13 +10,15 @@ https://aimath.org/textbooks/approved-textbooks/
 
 http://index-of.es/Varios-2/ books
 
-В Босс Лекции по математике тома 1 - 16 2004 - 2011 г.
+В. Босс Лекции по математике тома 1 - 16 2004 - 2011 г.
 
 https://urss.ru/cgi-bin/db.pl?lang=Ru&blang=ru&page=Catalog&list=Series407
 
 https://www.studmed.ru/search?q=%D0%91%D0%BE%D1%81%D1%81+%D0%92.+%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D0%B8+%D0%BF%D0%BE+%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B5
 
 https://www.mccme.ru/free-books/
+
+PDE https://people.maths.ox.ac.uk/trefethen/pdectb.html
 
 http://www.slimy.com/~steuard/teaching/tutorials/Lagrange.html Lagrange multiplier in optimization
 
