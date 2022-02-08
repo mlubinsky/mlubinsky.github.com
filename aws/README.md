@@ -1,3 +1,7 @@
+### GCP
+
+https://habr.com/ru/post/117146/
+
 ### Azure
 
 Learn Azure  for free from MS
