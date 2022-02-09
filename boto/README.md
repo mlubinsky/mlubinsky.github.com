@@ -2,6 +2,7 @@ https://stackoverflow.com/questions/30249069/listing-contents-of-a-bucket-with-b
 
 https://stackoverflow.com/questions/27292145/python-boto-list-contents-of-specific-dir-in-bucket
 
+https://towardsdatascience.com/demystifying-boto3-how-to-use-any-aws-service-with-python-b5c69593bcfa
 
 <https://boto3.amazonaws.com/v1/documentation/api/1.9.42/reference/services/s3.html>
 
