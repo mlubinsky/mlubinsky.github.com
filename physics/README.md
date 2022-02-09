@@ -22,6 +22,8 @@ Article - Root of things: https://arxiv.org/pdf/0906.4955.pdf
 
 ### Articles / Journals:
 
+https://www.sciencedirect.com/#open-access
+
 Online archives where scientists post research spark information revolution | Hacker News
 https://news.ycombinator.com/item?id=30129857 
 
