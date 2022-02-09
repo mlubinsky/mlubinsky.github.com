@@ -47,6 +47,9 @@ https://cyberleninka.ru/
 ### QM
 https://www.youtube.com/watch?v=SCUnoxJ5pho&list=PL193BC0532FE7B02C Lectures
 
+https://www.sciencedirect.com/science/article/pii/S0003491619300120 Separation of conditions as a prerequisite for quantum theory
+ HansDe Raedta / Mikhail I.Katsnelson / Dennis Willschc / Kristel   Michielsen
+
 https://arxiv.org/abs/2110.05294 Quantum mechanics via quantum tomography
 Arnold Neumaier
 
