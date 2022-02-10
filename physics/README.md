@@ -403,6 +403,8 @@ https://www.youtube.com/watch?v=VSCqjOXNSp8 . А.С. Трушечкин. Мат�
 
 http://www.mathnet.ru/conf1813  Г. Г. Амосов  "Математические основания квантовой механики"
 
+https://www.youtube.com/watch?v=4csKNAKtEQ0 Липовка Антон 
+
 https://www.youtube.com/watch?v=xnt2xSNRNn0 Quantum Physics Full Course | Quantum Mechanics Course | Part 1 Author: Brant Carlson
 
 https://www.youtube.com/watch?v=K4BF7MD69_U . Course Author: Prof. Steve Spicklemire
