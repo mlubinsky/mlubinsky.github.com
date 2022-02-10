@@ -3,6 +3,8 @@ Sauro Succi
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6783340/  Cell modelling
 
+https://evolutionnews.org/2022/02/nuclear-pore-complex-comes-into-focus/
+
 https://www.youtube.com/watch?v=TfYf_rPWUdY mRNA
 
 https://habr.com/ru/company/ruvds/blog/582126/. Наш мозг не компьютер
