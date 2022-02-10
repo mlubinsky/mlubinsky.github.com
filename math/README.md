@@ -1,5 +1,8 @@
 Ветераны броуновского движения - Вступайте в ряды Фурье!
 
+Math-Net.Ru channel on youtube:
+https://www.youtube.com/channel/UC_fq8SDW37l86fdJxlprL1A
+
 Books: 
 https://scask.ru/index.php
 
