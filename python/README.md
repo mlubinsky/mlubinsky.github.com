@@ -2,7 +2,9 @@ https://awesome-python.com/
 
 https://python-patterns.guide/
 
-https://practicalpython.yasoob.me/toc.html
+https://practicalpython.yasoob.me/toc.html  free Book
+
+https://inventwithpython.com/bigbookpython/ free Book
 
 https://www.python-unleashed.com/blog
 
