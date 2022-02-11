@@ -490,7 +490,6 @@ https://www.sicyon.com/resources/library/index.htm books
 
 https://phys.vsu.ru/thp/feed.html
 
-
 https://textbooks.opensuny.org/browse-by-subject/. free books
 
 https://www.youtube.com/watch?v=gAFAj3pzvAA
@@ -531,6 +530,8 @@ https://arxiv.org/abs/2011.09181 . A First Principles Derivation of Classical an
 
 ## Solid state phys
 
+https://espressospin.org/teaching/ Sergey Frolov, University of Pittsburgh
+https://frolovlab.org/ 
 
 https://www.youtube.com/watch?v=QkADXsCwD3o Subir Sachdev - Quantum phase transitions in condensed matter 
 
