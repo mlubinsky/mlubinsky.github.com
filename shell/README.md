@@ -5,6 +5,9 @@ First line in every bash file should be:
 
 https://www.mulle-kybernetik.com/modern-bash-scripting/
 
+### Visidata
+https://jsvine.github.io/intro-to-visidata/the-big-picture/visidata-in-60-seconds/
+
 Unlike in most other programming languages, when you define a variable in Bash, 
 you must not include spaces around the variable name.
 
