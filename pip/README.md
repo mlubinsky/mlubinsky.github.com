@@ -9,6 +9,14 @@ https://realpython.com/what-is-pip/
 
 <https://snarky.ca/why-you-should-use-python-m-pip/>.  python -m pip
 
+````pip search ZZZ``` does not work
+Solution:
+
+```
+   pip install pip_search
+   pip_search ZZZ
+```
+
  https://pythonspeed.com/articles/conda-vs-pip/    Pip vs conda
 
 Python 2.7 pip.  
