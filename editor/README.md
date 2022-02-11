@@ -40,6 +40,8 @@ https://news.ycombinator.com/item?id=30084913
 :w !sudo tee "%"
 ```
 
+https://github.com/chrisbra/csv.vim  CSV viewer
+
 https://jaredgorski.org/writing/6-a-vim-puff-piece/
 
 https://changelog.com/podcast/450
