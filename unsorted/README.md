@@ -59,7 +59,7 @@ https://jewishpogroms.info/wp-content/uploads/2021/12/Pogromy-Book-NadiaLipes.pd
 
 https://web.archive.org/web/20060920043324/http://www.msu.edu/~shlapent/memoirr.htm
 
- 
+ https://www.uhnwidata.com/den-of-rich/mikhail-katsnelson
  
  https://github.com/vpatryshev/wowiki/wiki/Internet.-The-Good-Parts.   Vlad Patryshev
  
