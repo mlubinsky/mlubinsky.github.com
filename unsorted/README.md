@@ -3,6 +3,8 @@
 
 https://news.ycombinator.com/item?id=30230620
 
+http://www.belousenko.com/  Non-technical Books
+
 http://www.belousenko.com/books/pomerants/pomerants_utenok.pdf
 
 ```
