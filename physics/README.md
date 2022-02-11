@@ -11,6 +11,8 @@ https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-4-separation-
 
 https://iopscience.iop.org/
 
+https://www.worldscientific.com/doi/abs/10.1142/S0217751X21502018 Charge conservation, entropy current and gravitation
+
 http://theoreticalminimum.com/
 
 https://condensedconcepts.blogspot.com/2021/04/fifty-years-ago-three-big-discoveries.html
@@ -22,6 +24,14 @@ Article - Root of things: https://arxiv.org/pdf/0906.4955.pdf
 
 
 https://www.youtube.com/watch?v=9sv-RElTc6s
+
+### Topology
+
+https://mokrousov-group.physik.uni-mainz.de/staff/ Topological Nanoelectronics Group
+
+Article  in  Proceedings of the National Academy of Sciences · January 2018
+Topological transformations of Hopf solitons in chiral ferromagnets and liquid crystals
+Topological_transformations_of_Hopf_solitons_in_ch.pdf
 
 ### Articles / Journals:
 
