@@ -3,6 +3,7 @@
 
 https://news.ycombinator.com/item?id=30230620
 
+http://www.belousenko.com/books/pomerants/pomerants_utenok.pdf
 
 ```
 *Монтень. "Опыты", книга III, глава VIII. Об искусстве беседы*
