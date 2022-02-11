@@ -4,6 +4,10 @@ https://www.mlexample.com/ . BOOK
 
 https://deepmind.com/learning-resources/reinforcement-learning-series-2021  
 
+High-dimentional ML:
+
+https://towardsdatascience.com/high-dimensional-learning-ea6131785802
+
 https://www.manning.com/books/deep-learning-with-python-second-edition. ML with Python 2nd ed
 
 Real time ML
