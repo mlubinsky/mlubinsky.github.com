@@ -4,7 +4,7 @@
 
 https://www.feynmanlectures.caltech.edu/III_toc.html
 
-Example of article with formulas
+Example of articles with formulas
 https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-newton-4bd99941d18e
 
 https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-4-separation-of-variables-19b88bee86e0
@@ -16,9 +16,12 @@ http://theoreticalminimum.com/
 https://condensedconcepts.blogspot.com/2021/04/fifty-years-ago-three-big-discoveries.html
 
 
-http://www.lightandmatter.com/books.html
+http://www.lightandmatter.com/books.html  Квантовая теория поля: визуализация от ScienceClic
 
 Article - Root of things: https://arxiv.org/pdf/0906.4955.pdf 
+
+
+https://www.youtube.com/watch?v=9sv-RElTc6s
 
 ### Articles / Journals:
 
