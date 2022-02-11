@@ -8,6 +8,9 @@ High-dimentional ML:
 
 https://towardsdatascience.com/high-dimensional-learning-ea6131785802
 
+Monte-Carlo in Python
+https://towardsdatascience.com/how-to-create-a-monte-carlo-simulation-using-python-c24634a0978a
+
 https://www.manning.com/books/deep-learning-with-python-second-edition. ML with Python 2nd ed
 
 Real time ML
