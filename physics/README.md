@@ -29,6 +29,10 @@ https://www.youtube.com/watch?v=9sv-RElTc6s
 
 https://mokrousov-group.physik.uni-mainz.de/staff/ Topological Nanoelectronics Group
 
+https://arxiv.org/abs/2202.03123
+
+https://spot.colorado.edu/~smalyukh/
+
 Article  in  Proceedings of the National Academy of Sciences · January 2018
 Topological transformations of Hopf solitons in chiral ferromagnets and liquid crystals
 Topological_transformations_of_Hopf_solitons_in_ch.pdf
