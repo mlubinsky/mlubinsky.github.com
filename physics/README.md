@@ -13,6 +13,8 @@ https://iopscience.iop.org/
 
 https://www.worldscientific.com/doi/abs/10.1142/S0217751X21502018 Charge conservation, entropy current and gravitation
 
+https://www.youtube.com/watch?v=qmAfXJKgpVg . Quantum computers (ru)
+
 http://theoreticalminimum.com/
 
 https://condensedconcepts.blogspot.com/2021/04/fifty-years-ago-three-big-discoveries.html
