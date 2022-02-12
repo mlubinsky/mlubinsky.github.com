@@ -33,6 +33,13 @@ VS Code: whitespace trimming at file save time from settings:
 ## VIM 
 
 https://github.com/mhinz/vim-galore
+```
+ mkdir -p ~/.vim/pack/my-plugins/start
+ git clone https://github.com/chrisbra/csv.vim ~/.vim/pack/dist/start/csv
+ 
+ :helptags
+ https://github.com/chrisbra/csv.vim
+```
 
 https://news.ycombinator.com/item?id=30084913
 
