@@ -11,6 +11,8 @@ https://ajay-arunachalam08.medium.com/building-explainable-forecasting-models-wi
 
 https://towardsdatascience.com/time-series-modeling-with-orbit-a38e03a2a4ea  Uber’s new time-series model ORBIT 
 
+https://github.com/tinkoff-ai/etna from tinkoff
+
 tsplot https://github.com/brett-hosking/tsplot
 Plotting timeseries with 2 Y-axis
 https://nbviewer.org/github/brett-hosking/tsplot/blob/master/examples/notebooks/EMSO_EGIM_Azores_Oxygen.ipynb
