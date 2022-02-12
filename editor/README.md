@@ -39,12 +39,13 @@ https://github.com/mhinz/vim-galore
  ### csv plugin
  https://www.vim.org/scripts/script.php?script_id=2830
  
- ```
+ Open csv.vmb in Vim and source the file: 
+```
  :so % 
-
+```
 This will install the plugin into your $HOME/.vim/ftplugin directory and the documentation into your $HOME/.vim/doc directory. 
 
-
+```
  mkdir -p ~/.vim/pack/my-plugins/start
  git clone https://github.com/chrisbra/csv.vim ~/.vim/pack/dist/start/csv
  
