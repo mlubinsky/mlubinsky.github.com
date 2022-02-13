@@ -31,6 +31,8 @@ https://www.youtube.com/watch?v=9sv-RElTc6s
 
 ### Topology
 
+https://www.youtube.com/watch?v=cNQyZpmkp8g
+
 https://www.youtube.com/channel/UCVAmzfNGfC6zOnUojEC2yag
 
 https://nbviewer.org/github/topocm/topocm_content/blob/edx_2015/w3_pump_QHE/QHEedgestates.ipynb
