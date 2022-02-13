@@ -4,6 +4,10 @@ https://www.mlexample.com/ . BOOK
 
 https://deepmind.com/learning-resources/reinforcement-learning-series-2021  
 
+Никита Калинин, топологическ анализ данных
+
+https://www.youtube.com/playlist?list=PLKXEsFnBcT5BD47xO19UsKshsQ7DMU3Sa
+
 High-dimentional ML:
 
 https://towardsdatascience.com/high-dimensional-learning-ea6131785802
