@@ -1,6 +1,10 @@
 https://arxiv.org/abs/2201.06897. The world beyond physics: how big is it?
 Sauro Succi
 
+Aging clocks, entropy, and the limits of age-reversal. 
+  Andrei E. Tarkhov, Kirill A. Denisov,  Peter O. Fedichev
+https://www.biorxiv.org/content/10.1101/2022.02.06.479300v1
+
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6783340/  Cell modelling
 
 https://evolutionnews.org/2022/02/nuclear-pore-complex-comes-into-focus/
