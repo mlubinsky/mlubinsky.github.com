@@ -1,6 +1,12 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 
+### Fourie
+
+https://www.youtube.com/watch?v=r18Gi8lSkfM
+
+https://www.youtube.com/watch?v=0DHNGtsmmH8
+
 ### Classical mechanics
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNBO3IAsYw6yB4v1Pfal5v2t (ru)
 
