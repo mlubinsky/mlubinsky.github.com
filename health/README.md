@@ -22,6 +22,8 @@ https://www.youtube.com/watch?v=qF9ALhfNZaI
 Denis Semenikhin
 
 
+https://www.youtube.com/watch?v=fClRS4GtOOM  Лечение (омоложение) сердца при помощи правильного КАРДИО
+
 https://habr.com/ru/post/590183/ . Сохранить остроту ума в любом возрасте
 
 https://www.forbes.ru/svoi-biznes/446663-kak-alkogol-uedinenie-i-ctenie-pomogaut-najti-genial-noe-resenie-i-vojti-v-potok
