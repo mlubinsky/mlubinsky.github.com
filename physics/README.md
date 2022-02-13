@@ -1,7 +1,7 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 
-Classic mechanics
+### Classical mechanics
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNBO3IAsYw6yB4v1Pfal5v2t (ru)
 
 https://www.feynmanlectures.caltech.edu/III_toc.html
@@ -30,6 +30,10 @@ Article - Root of things: https://arxiv.org/pdf/0906.4955.pdf
 https://www.youtube.com/watch?v=9sv-RElTc6s
 
 ### Topology
+
+https://www.youtube.com/channel/UCVAmzfNGfC6zOnUojEC2yag
+
+https://nbviewer.org/github/topocm/topocm_content/blob/edx_2015/w3_pump_QHE/QHEedgestates.ipynb
 
 https://mokrousov-group.physik.uni-mainz.de/staff/ Topological Nanoelectronics Group
 
