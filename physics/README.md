@@ -1,6 +1,8 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 
+Classic mechanics
+https://www.youtube.com/playlist?list=PLcsjsqLLSfNBO3IAsYw6yB4v1Pfal5v2t (ru)
 
 https://www.feynmanlectures.caltech.edu/III_toc.html
 
