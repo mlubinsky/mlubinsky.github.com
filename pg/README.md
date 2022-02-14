@@ -10,6 +10,8 @@ https://news.ycombinator.com/item?id=29858083 . Tips for a Healthier Postgres Da
 
 https://habr.com/ru/company/tensor/blog/573214/ SQL optimization
 
+https://habr.com/ru/company/tensor/blog/651407/. SQL optimization
+
 https://habr.com/ru/post/597651/
 
 https://www.pgmustard.com/blog/
