@@ -25,6 +25,7 @@ https://www.reddit.com/r/Python/comments/r6aqji/how_do_you_deploy_python_applica
 https://blog.guilatrova.dev/
 
 
+https://bas.codes/posts/python-dict-slots Understanding Attributes, Dicts and Slots in Python
 
 https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
 
