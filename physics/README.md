@@ -163,7 +163,18 @@ https://mipt.ru/education/chair/physics/S_6/method/
 
 https://mipt.ru/education/chair/physics/S_V/
 
+
+###  Теория поля Лектор
 https://www.youtube.com/watch?v=8cLyKSEeGeE    Теория поля Лектор: Осипов Дмитрий Львович
+
+Теория поля (3 курс, осень 2021) - Дорофеенко А. В.Лекторий ФПМИ
+
+https://www.youtube.com/watch?v=aLu5nBNcCjo&list=PL4_hYwCyhAvaBJOHaYBOHn9X3ale6FqsP
+
+
+
+
+
 
 https://www.youtube.com/channel/UCUanJlIm1l3UpM-OqpN5JQQ Interesting blog
 
