@@ -10,6 +10,8 @@ https://www.youtube.com/watch?v=0DHNGtsmmH8
 ### Classical mechanics
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNBO3IAsYw6yB4v1Pfal5v2t (ru)
 
+https://teach-in.ru/course/analytical-mechanics-kugushev
+
 https://www.feynmanlectures.caltech.edu/III_toc.html
 
 ### Example of QM articles with formulas
@@ -302,7 +304,7 @@ https://7i.7iskusstv.com/y2020/nomer8_9/lukanchuk/
 
 http://www.tcm.phy.cam.ac.uk/~dek12/
 
-https://teach-in.ru/course/analytical-mechanics-kugushev
+
 
 https://www.piter.com/product/teoreticheskiy-minimum-spetsialnaya-teoriya-otnositelnosti-i-klassicheskaya-teoriya-polya
 
