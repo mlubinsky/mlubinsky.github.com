@@ -89,6 +89,10 @@ https://cyberleninka.ru/
 ### QM
 https://www.youtube.com/watch?v=SCUnoxJ5pho&list=PL193BC0532FE7B02C Lectures
 
+https://www.youtube.com/playlist?list=PLzZPcCojoi_V-JDjTVp2yT3OJtyEkbQBl
+
+https://mipt.lectoriy.ru/course?category=TheoreticalPhysics
+
 https://www.sciencedirect.com/science/article/pii/S0003491619300120 Separation of conditions as a prerequisite for quantum theory
  HansDe Raedta / Mikhail I.Katsnelson / Dennis Willschc / Kristel   Michielsen
 
