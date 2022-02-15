@@ -1,3 +1,7 @@
+https://habr.com/ru/post/589415/
+
+https://habr.com/ru/post/651653/
+
 https://habr.com/ru/company/otus/blog/650231/
 
 https://elastisys.com/designing-and-deploying-scalable-applications-on-kubernetes/
