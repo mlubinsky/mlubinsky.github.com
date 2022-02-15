@@ -12,10 +12,12 @@ https://www.youtube.com/playlist?list=PLcsjsqLLSfNBO3IAsYw6yB4v1Pfal5v2t (ru)
 
 https://www.feynmanlectures.caltech.edu/III_toc.html
 
-Example of articles with formulas
+### Example of QM articles with formulas
 https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-newton-4bd99941d18e
 
 https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-4-separation-of-variables-19b88bee86e0
+
+https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-5-spherical-harmonics-a82dc40a1d4a
 
 https://iopscience.iop.org/
 
