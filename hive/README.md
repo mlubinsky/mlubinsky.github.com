@@ -279,6 +279,25 @@ Complex JSONs become too unwieldy because of the repeated use of LATERAL VIEW.
 Furthermore, JSON_TUPLE can't handle nested JSONs.
 
 https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/using-json-in-hive
+	
+### MAP and STRUCT
+	
+	https://datadojo.dev/2020/06/07/working-with-complex-datatypes-in-hive/
+````	
+-- map example	
+	SELECT 
+	first_name, 
+	grade["math"] AS math_grade 
+FROM 
+	students
+ --- struct example	-- structs can be accessed through DOT (.). 
+SELECT 
+	first_name, 
+	teacher.math AS math_teacher 
+FROM 
+	student
+```
+	
 
 ### Array of maps :
 
