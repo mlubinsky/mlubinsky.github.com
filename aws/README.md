@@ -2,6 +2,10 @@
 
 https://habr.com/ru/post/117146/
 
+https://googlecloudcheatsheet.withgoogle.com/
+
+https://cloud.google.com/blog/topics/developers-practitioners/introducing-google-cloud-architecture-diagramming-tool
+
 ### Azure
 
 Learn Azure  for free from MS
