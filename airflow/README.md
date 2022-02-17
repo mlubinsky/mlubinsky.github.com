@@ -1,3 +1,5 @@
+https://blog.fal.ai/the-unbundling-of-airflow-2/ 
+
 https://airflow.apache.org/docs/
 
 https://levelup.gitconnected.com/airflow-command-line-interface-cli-cheat-sheet-6e5d90bd3552
