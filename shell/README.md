@@ -7,6 +7,10 @@ https://www.mulle-kybernetik.com/modern-bash-scripting/
 
 https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
 
+https://github.com/dylanaraps/pure-bash-bible
+
+http://mywiki.wooledge.org/BashPitfalls
+
 ### Visidata
 https://jsvine.github.io/intro-to-visidata/the-big-picture/visidata-in-60-seconds/
 
