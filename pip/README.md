@@ -1,7 +1,12 @@
+https://pdm.fming.dev/ PDM
+
 <https://modelpredict.com/python-dependency-management-tools> 
+
+https://python.plainenglish.io/10-tools-to-help-claw-your-way-back-to-sanity-while-coding-python-df0af160c33e
 
 https://www.andreagrandi.it/2022/01/29/install-python-with-pyenv-and-pyenvvirtualenv-create-virtual-environment-with-specific-python-version-macos/
 
+https://blog.pronus.io/en/posts/python/how-to-set-up-a-perfect-python-project/
 
 pyenv + poetry
 https://briansunter.com/blog/python-setup-pyenv-poetry/
