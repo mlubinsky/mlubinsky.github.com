@@ -7,6 +7,12 @@ https://www.biorxiv.org/content/10.1101/2022.02.06.479300v1
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6783340/  Cell modelling
 
+Modeling Progression of Single Cell Populations Through the Cell Cycle as a Sequence of Switches
+
+ Zinovyev1,2,3*,  Michail Sadovsky4,5,6,7,  Laurence Calzone1,2,3,  Aziz Fouché1,2,3,  Clarice S. Groeneveld8,9,  Alexander Chervov1,2,3,  Emmanuel Barillot1,2,3 and  Alexander N. Gorban7,10
+ 
+https://www.frontiersin.org/articles/10.3389/fmolb.2021.793912/full
+
 https://evolutionnews.org/2022/02/nuclear-pore-complex-comes-into-focus/
 
 https://www.youtube.com/watch?v=TfYf_rPWUdY mRNA
