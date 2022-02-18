@@ -41,7 +41,9 @@ https://www.youtube.com/watch?v=9sv-RElTc6s
 
 ### Topology
 
-https://www.youtube.com/watch?v=i53bGQFvpCA Topology in quantum matte
+https://www.youtube.com/watch?v=i53bGQFvpCA Topology in quantum matter
+
+https://www.youtube.com/watch?v=atVvFGEpWz0
 
 https://www.youtube.com/watch?v=aGNGl-sQzNA
 
