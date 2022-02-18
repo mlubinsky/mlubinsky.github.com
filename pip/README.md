@@ -3,6 +3,9 @@
 https://www.andreagrandi.it/2022/01/29/install-python-with-pyenv-and-pyenvvirtualenv-create-virtual-environment-with-specific-python-version-macos/
 
 
+pyenv + poetry
+https://briansunter.com/blog/python-setup-pyenv-poetry/
+
 ### pip
 
 https://realpython.com/what-is-pip/
