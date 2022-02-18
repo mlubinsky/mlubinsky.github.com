@@ -119,6 +119,9 @@ https://www.physics.princeton.edu/~mcdonald/examples/ McDonald
 https://habr.com/ru/post/544030/ FermiNet
 
 ### Entropy
+
+https://arxiv.org/abs/2202.07982
+
 https://habr.com/ru/company/JetBrains-education/blog/599637/
 
 https://arxiv.org/abs/1405.2061 Shennon Entropy
