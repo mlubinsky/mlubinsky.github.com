@@ -118,6 +118,17 @@ https://www.jpier.org/pierm/pier.php?paper=13101401
 https://physics.princeton.edu/~mcdonald/examples/onoochin.pdf
 
 
+### QFT
+Профессор Миннесотского университета, США Михаил Шифман - Вторая жизнь квантовой теории поля
+https://www.youtube.com/watch?v=rRBvo80Ym-E
+
+https://www.youtube.com/watch?v=SMdgiWi6cgk . Павел Шестопалов
+
+https://www.youtube.com/watch?v=bxyTCiJ0t14 . ЗЛОЙ АНАЛИТИК ВСЕЛЕННОЙ.
+
+
+
+
 ### Eugene Stefanovich
 
 Is Minkowski Space-Time Compatible with Quantum Mechanics?
