@@ -126,7 +126,7 @@ https://www.youtube.com/watch?v=SMdgiWi6cgk . Павел Шестопалов
 
 https://www.youtube.com/watch?v=bxyTCiJ0t14 . ЗЛОЙ АНАЛИТИК ВСЕЛЕННОЙ.
 
-
+https://www.youtube.com/watch?v=zNVQfWC_evg   Quantum Fields: The Real Building Blocks of the Universe - with David Tong
 
 
 ### Eugene Stefanovich
