@@ -41,6 +41,8 @@ https://www.youtube.com/watch?v=9sv-RElTc6s
 
 ### Topology
 
+https://www.youtube.com/watch?v=PJxxbWPUtpI&t=1958s
+
 https://www.youtube.com/watch?v=i53bGQFvpCA Topology in quantum matter
 
 https://www.youtube.com/watch?v=atVvFGEpWz0
