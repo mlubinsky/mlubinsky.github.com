@@ -14,6 +14,12 @@ https://teach-in.ru/course/analytical-mechanics-kugushev
 
 https://www.feynmanlectures.caltech.edu/III_toc.html
 
+### Stat physics
+
+https://ikfia.ysn.ru/statisticheskaya-fizika/  
+
+https://sethna.lassp.cornell.edu/StatMech/EntropyOrderParametersComplexity20.pdf
+
 ### Example of QM articles with formulas
 https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-newton-4bd99941d18e
 
