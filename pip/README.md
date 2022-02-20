@@ -1,5 +1,7 @@
 https://pdm.fming.dev/ PDM
 
+https://bas.codes/posts/python-virtualenv-venv-pip-pyenv-poetry
+
 <https://modelpredict.com/python-dependency-management-tools> 
 
 https://python.plainenglish.io/10-tools-to-help-claw-your-way-back-to-sanity-while-coding-python-df0af160c33e
