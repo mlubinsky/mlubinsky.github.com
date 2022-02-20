@@ -1,5 +1,7 @@
 https://github.com/lana-k/sqliteviz +Plotly
 
+https://medium.com/@JasonWyatt/squeezing-performance-from-sqlite-indexes-indexes-c4e175f3c346
+
 https://medium.com/@JasonWyatt/squeezing-performance-from-sqlite-insertions-971aff98eef2
 
 https://medium.com/@JasonWyatt/squeezing-performance-from-sqlite-explaining-the-virtual-machine-2550ef6c5db
