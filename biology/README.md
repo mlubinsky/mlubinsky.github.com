@@ -5,6 +5,9 @@ Sauro Succi
 Consciousness is supported by near-critical slow cortical electrodynamics
 https://www.pnas.org/content/119/7/e2024455119
 
+https://news.ycombinator.com/item?id=30350261
+
+
 Aging clocks, entropy, and the limits of age-reversal. 
   Andrei E. Tarkhov, Kirill A. Denisov,  Peter O. Fedichev
 https://www.biorxiv.org/content/10.1101/2022.02.06.479300v1
