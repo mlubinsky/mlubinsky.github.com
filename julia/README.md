@@ -47,3 +47,7 @@ https://icmmg.nsc.ru/sites/default/files/sovet/files/dissertaciya_palyanov_a.yu_
 
 
 https://habr.com/ru/post/573666/
+
+https://news.ycombinator.com/item?id=30337515 	Why We Use Julia, 10 Years Later
+
+
