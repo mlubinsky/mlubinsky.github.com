@@ -181,6 +181,10 @@ https://hacks.mozilla.org/2020/06/compiler-compiler-working-on-a-javascript-engi
 
 <https://medium.com/@gvanrossum_83706/building-a-peg-parser-d4869b5958fb> PEG part 2
 
+The Packrat Parsing and Parsing Expression Grammars Page
+https://bford.info/packrat/
+
+https://news.ycombinator.com/item?id=30395775
 
 
 <https://www3.nd.edu/~dthain/compilerbook/> .  Compiler Book
