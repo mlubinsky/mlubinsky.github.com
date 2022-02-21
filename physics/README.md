@@ -96,6 +96,9 @@ http://philsci-archive.pitt.edu/view/subjects/
 
 https://cyberleninka.ru/
 
+
+https://www.youtube.com/channel/UCQvfzjcxgn-pkdnzPrkQBtA . Spin Phenomena Interdisciplinary Center (SPICE)
+
 ### QM
 https://www.youtube.com/watch?v=SCUnoxJ5pho&list=PL193BC0532FE7B02C Lectures
 
@@ -117,6 +120,8 @@ https://www.lektorium.tv/course/22783
 https://www.youtube.com/watch?v=VSCqjOXNSp8  А.С. Трушечкин. Математика квантовой механики
 
 https://www.youtube.com/watch?v=HouOHJWAy84 Лекция 1. В.Ж. Сакбаев. Аксиоматика квантовой механики
+
+https://www.youtube.com/watch?v=VTciIwTr1Vw . Albert Shwarts
 
 
 Яшин Всеволод
