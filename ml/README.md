@@ -28,6 +28,11 @@ https://arxiv.org/abs/2004.09280 Towards a theory of machine learning. Vitaly Va
 
 https://www.youtube.com/watch?v=LlKAna21fLE
 
+
+Лекция 1. Р.В. Шамин. Стохастический анализ и его приложения в машинном обучении
+https://www.youtube.com/playlist?list=PLUbD59ZHv1GSmj1ecP7ARU2LMqZgT_TyQ
+
+
 ### Automatic differentiation JAX
 
 https://arxiv.org/pdf/2110.06209.pdf  A Brief Introduction to Automatic Differentiation for
