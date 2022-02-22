@@ -16,6 +16,8 @@ https://www.feynmanlectures.caltech.edu/III_toc.html
 
 ### Stat physics
 
+https://www.youtube.com/watch?v=D1RzvXDXyqA Leonard Susskind 
+
 https://ikfia.ysn.ru/statisticheskaya-fizika/  
 
 https://sethna.lassp.cornell.edu/StatMech/EntropyOrderParametersComplexity20.pdf
