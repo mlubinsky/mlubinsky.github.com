@@ -99,6 +99,9 @@ https://habr.com/ru/company/skillfactory/blog/561044/ . useful libs
 
 
 ### Active learning
+
+https://lilianweng.github.io/lil-log/2022/02/20/active-learning.html
+
 https://habr.com/ru/post/592177/  
 
 https://habr.com/ru/post/593615/
