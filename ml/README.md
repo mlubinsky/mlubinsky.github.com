@@ -8,6 +8,9 @@ https://deepmind.com/learning-resources/reinforcement-learning-series-2021
 
 https://www.youtube.com/playlist?list=PLKXEsFnBcT5BD47xO19UsKshsQ7DMU3Sa
 
+
+https://news.ycombinator.com/item?id=30417811 What are the most important statistical ideas of the past 50 years? (tandfonline.com)
+
 High-dimentional ML:
 
 https://towardsdatascience.com/high-dimensional-learning-ea6131785802
