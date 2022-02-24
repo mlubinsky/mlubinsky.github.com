@@ -20,6 +20,8 @@ https://www.youtube.com/watch?v=D1RzvXDXyqA Leonard Susskind
 
 https://ikfia.ysn.ru/statisticheskaya-fizika/  
 
+https://www.youtube.com/watch?v=qIIHpTgTWI0 Точно решаемые модели статистической физики, лекция 2, Я.П. Пугай,.
+
 https://sethna.lassp.cornell.edu/StatMech/EntropyOrderParametersComplexity20.pdf
 
 ### Example of QM articles with formulas
