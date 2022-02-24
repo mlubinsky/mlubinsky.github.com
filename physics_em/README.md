@@ -124,6 +124,10 @@ https://physics.princeton.edu/~mcdonald/examples/onoochin.pdf
 Введение в квантовую теорию поля 1 Казаков Д.
 https://www.youtube.com/watch?v=KVX5lHZWZGE
 
+
+https://www.youtube.com/watch?v=My981dYqZ_g
+
+
 Профессор Миннесотского университета, США Михаил Шифман - Вторая жизнь квантовой теории поля
 https://www.youtube.com/watch?v=rRBvo80Ym-E
 
