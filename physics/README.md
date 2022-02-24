@@ -123,6 +123,8 @@ https://www.youtube.com/watch?v=VSCqjOXNSp8  А.С. Трушечкин. Мате
 
 https://www.youtube.com/watch?v=HouOHJWAy84 Лекция 1. В.Ж. Сакбаев. Аксиоматика квантовой механики
 
+https://www.youtube.com/watch?v=jWD2_kvJDbU Лекция 2. В.Ж. Сакбаев
+
 https://www.youtube.com/watch?v=VTciIwTr1Vw . Albert Shwarts
 
 
