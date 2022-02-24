@@ -38,6 +38,11 @@ http://shamin.ru/
 https://www.youtube.com/playlist?list=PLUbD59ZHv1GSmj1ecP7ARU2LMqZgT_TyQ
 
 
+
+Fingerprint Matching in Python
+https://www.youtube.com/watch?v=IIvfqfKkiio
+
+
 ### Automatic differentiation JAX
 
 https://arxiv.org/pdf/2110.06209.pdf  A Brief Introduction to Automatic Differentiation for
