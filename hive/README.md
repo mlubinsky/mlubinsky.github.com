@@ -135,13 +135,19 @@ http://cutler.io/2012/07/hadoop-processing-zip-files-in-mapreduce/
 https://github.com/bernhard-42/spark-unzip
 
 https://stackoverflow.com/questions/56158947/processing-loading-huge-gzip-file-into-hive
+	
+## Struct
+	Select STRUCT is NULL is always false.
 
 ### Array of structures  :
 
 select array(named_struct("person_id","1","first_name","ooo"));
 
+Answer:
+	[{"person_id":"1","first_name":"ooo"}]
+
 ### How to insert NULL in struct
-	
+	https://issues.apache.org/jira/browse/HIVE-4022
 Given table T with 3 columns:
 ```
 C1 string
@@ -161,7 +167,7 @@ select 'c1_val',
 from z_dummy;
 ```
  
-[{"person_id":"1","first_name":"ooo"}]
+
 
 
 ### Explode and LATERAL VIEW
