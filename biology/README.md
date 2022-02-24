@@ -9,12 +9,6 @@ https://news.ycombinator.com/item?id=30350261
 
 
 
-https://trv-science.ru/2022/02/zhizn-kak-mnogourovnevoe-obuchenie/
-
-Thermodynamics of evolution and the origin of life
-Vitaly Vanchurina,b,1, Yuri I. Wolfa , Eugene V. Koonina,1 , and Mikhail I. Katsnelsonc,1
-
-https://www.pnas.org/content/pnas/119/6/e2120042119.full.pdf
 
 
 Aging clocks, entropy, and the limits of age-reversal. 
@@ -37,7 +31,18 @@ https://habr.com/ru/company/ruvds/blog/582126/. Наш мозг не компь�
 
 ### Vitaly Vanchurin, Yuri I. Wolf,  Eugene V. Koonin,  Mikhail I. Katsnelson
 
+
+https://trv-science.ru/2022/02/zhizn-kak-mnogourovnevoe-obuchenie/
+
+Thermodynamics of evolution and the origin of life
+Vitaly Vanchurina,b,1, Yuri I. Wolfa , Eugene V. Koonina,1 , and Mikhail I. Katsnelsonc,1
+
+https://www.pnas.org/content/pnas/119/6/e2120042119.full.pdf
+
+
 https://arxiv.org/abs/2110.14602 Towards a Theory of Evolution as Multilevel Learning
+
+https://www.pnas.org/content/pnas/119/6/e2120037119.full.pdf
 
 https://www.pnas.org/content/119/6/e2120037119
 
