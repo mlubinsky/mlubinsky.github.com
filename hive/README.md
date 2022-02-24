@@ -147,7 +147,9 @@ Answer:
 	[{"person_id":"1","first_name":"ooo"}]
 
 ### How to insert NULL in struct
+	
 	https://issues.apache.org/jira/browse/HIVE-4022
+	
 Given table T with 3 columns:
 ```
 C1 string
