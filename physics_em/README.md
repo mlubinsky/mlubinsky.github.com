@@ -133,6 +133,12 @@ https://www.youtube.com/watch?v=My981dYqZ_g
 https://www.youtube.com/watch?v=QV1vew31YcU
 
 
+https://www.youtube.com/watch?v=060Sa1-MYok
+
+
+https://www.youtube.com/watch?v=50miSAp4eGY . Фейгельман М.В.
+
+
 Профессор Миннесотского университета, США Михаил Шифман - Вторая жизнь квантовой теории поля
 https://www.youtube.com/watch?v=rRBvo80Ym-E
 
