@@ -128,6 +128,11 @@ https://www.youtube.com/watch?v=KVX5lHZWZGE
 https://www.youtube.com/watch?v=My981dYqZ_g
 
 
+Интегрируемые модели квантовой теории поля. Лекция 1. М.Ю. Лашкевич.
+
+https://www.youtube.com/watch?v=QV1vew31YcU
+
+
 Профессор Миннесотского университета, США Михаил Шифман - Вторая жизнь квантовой теории поля
 https://www.youtube.com/watch?v=rRBvo80Ym-E
 
