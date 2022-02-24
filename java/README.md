@@ -2,6 +2,10 @@
  
  https://sdkman.io/install
  
+ ### Java from command line:
+ https://habr.com/ru/post/652985/
+ 
+ 
  https://evacchi.github.io/java/records/jbang/2021/10/12/learn-you-an-actor-system-java-17-switch-expressions.html
  
  <https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997> Effective Java 3rd ed Joshua Bloch
