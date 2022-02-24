@@ -140,7 +140,26 @@ https://stackoverflow.com/questions/56158947/processing-loading-huge-gzip-file-i
 
 select array(named_struct("person_id","1","first_name","ooo"));
 
+### How to insert NULL in struct
+	
+Given table T with 3 columns:
+```
+C1 string
+C2 struct<c2_a:array<string>, c2_c:string>
+C3 array<struct<c3_a:string, c3_b:string>>	
 
+insert into T
+select 'c1_val',
+	named_struct(
+	   'c2_a',array(cast (null as string)),
+	   'c2_c',cast (null as string)
+	),
+	 array(named_struct(
+	        'c3_a',cast (null as string) ,
+	        'c3_b',cast (null as string))
+	 ) 
+from z_dummy;
+```
  
 [{"person_id":"1","first_name":"ooo"}]
 
