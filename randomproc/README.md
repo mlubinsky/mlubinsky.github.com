@@ -13,6 +13,9 @@ https://www.vgranville.com/2018/06/free-book-applied-stochastic-processes.html .
 https://arxiv.org/pdf/1508.03461.pdf СТОХАСТИЧЕСКИЙ АНАЛИЗ В ЗАДАЧАХ (1)
 
 
+Лекция 2. Р.В. Шамин. Стохастический анализ и его приложения в машинном обучении
+https://www.youtube.com/watch?v=oHGWpc-Dl6I
+
 http://www.gaussianprocess.org/gpml/chapters/
 
 http://leonidzhukov.net/hse/2013/stochmod/
