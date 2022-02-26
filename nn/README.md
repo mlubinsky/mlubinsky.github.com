@@ -1,5 +1,8 @@
 ### Books
 
+https://sebastianraschka.com/blog/2022/ml-pytorch-book.html
+
+
 https://github.com/BoltzmannEntropy/interviews.ai
 
 https://arxiv.org/abs/2201.00650
