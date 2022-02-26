@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=Peq4GCPNC5c&t=1s . 10 common interview questions - solved
 
+https://www.youtube.com/watch?v=JtMuXmmDl9s
+
 https://towardsdatascience.com/how-to-find-all-solutions-to-the-subset-sum-problem-597f77677e45
 
 https://habr.com/ru/post/646319/ amazon interview
