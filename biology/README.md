@@ -1,6 +1,9 @@
 https://arxiv.org/abs/2201.06897. The world beyond physics: how big is it?
 Sauro Succi
 
+Eugene Shakhnovich
+https://www.uhnwidata.com/den-of-rich/eugene-shakhnovich
+
 
 Consciousness is supported by near-critical slow cortical electrodynamics
 https://www.pnas.org/content/119/7/e2024455119
