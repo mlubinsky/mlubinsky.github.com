@@ -4,6 +4,8 @@ Sauro Succi
 Eugene Shakhnovich
 https://www.uhnwidata.com/den-of-rich/eugene-shakhnovich
 
+https://www.pnas.org/content/117/3/1485 . Cotranslational folding allows misfolding-prone proteins to circumvent deep kinetic traps
+
 
 Consciousness is supported by near-critical slow cortical electrodynamics
 https://www.pnas.org/content/119/7/e2024455119
