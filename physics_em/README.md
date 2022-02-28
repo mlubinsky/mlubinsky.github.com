@@ -125,7 +125,7 @@ https://physics.princeton.edu/~mcdonald/examples/onoochin.pdf
 https://www.youtube.com/watch?v=KVX5lHZWZGE
 
 
-https://www.youtube.com/watch?v=My981dYqZ_g
+https://www.youtube.com/watch?v=My981dYqZ_g Введение в квантовую теорию поля 2 Владимиров А.А.
 
 
 Интегрируемые модели квантовой теории поля. Лекция 1. М.Ю. Лашкевич.
