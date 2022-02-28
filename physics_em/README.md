@@ -129,11 +129,10 @@ https://www.youtube.com/watch?v=My981dYqZ_g Введение в квантову
 
 
 Интегрируемые модели квантовой теории поля. Лекция 1. М.Ю. Лашкевич.
-
 https://www.youtube.com/watch?v=QV1vew31YcU
 
 
-https://www.youtube.com/watch?v=060Sa1-MYok
+https://www.youtube.com/watch?v=060Sa1-MYok Александр Чирцов — На стыке квантовой механики и релятивистской теории
 
 
 https://www.youtube.com/watch?v=50miSAp4eGY . Фейгельман М.В.
