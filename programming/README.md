@@ -1,5 +1,7 @@
 https://habr.com/ru/company/jugru/blog/586376/. Chrome extensions
 
+https://memo.barrucadu.co.uk/scheduling-problems.html . Solving Scheduling Problems with Integer Linear Programming with Python
+
 ###  Automate everything in browser!
 https://browserflow.app/ 
 https://chrome.google.com/webstore/detail/automa/infppggnoaenmfagbfknfkancpbljcca
