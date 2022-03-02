@@ -1,5 +1,7 @@
 Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-to-load-local-file-in-sc-textfile-instead-of-hdfs
 
+https://habr.com/ru/company/otus/blog/653977/ . Monitoring Apache Spark
+
 https://habr.com/ru/company/otus/blog/653033/ Spark ML example
 
 https://stackoverflow.com/questions/39067505/pyspark-display-a-spark-data-frame-in-a-table-format
