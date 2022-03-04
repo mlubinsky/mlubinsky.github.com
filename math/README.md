@@ -122,6 +122,8 @@ https://www.youtube.com/playlist?list=PL-_cKNuVAYAWltu4CT1F7CWG97ZplBnTg
 
 ### Dynamical systems
 
+https://www.quantamagazine.org/how-mathematicians-make-sense-of-chaos-20220302/
+
 https://galileo-unbound.blog/python-programs-for-nonlinear-dynamics/
 
 http://www.dyn-sys.org/
