@@ -120,6 +120,7 @@ https://physics.princeton.edu/~mcdonald/examples/onoochin.pdf
 
 ### QFT
 
+https://arxiv.org/pdf/2203.01245.pdf
 
 Введение в квантовую теорию поля 1 Казаков Д.
 https://www.youtube.com/watch?v=KVX5lHZWZGE
