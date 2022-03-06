@@ -20,6 +20,9 @@ Aging clocks, entropy, and the limits of age-reversal.
   Andrei E. Tarkhov, Kirill A. Denisov,  Peter O. Fedichev
 https://www.biorxiv.org/content/10.1101/2022.02.06.479300v1
 
+Principles for the design of multicellular engineered living systems
+https://aip.scitation.org/doi/pdf/10.1063/5.0076635
+
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6783340/  Cell modelling
 
 Modeling Progression of Single Cell Populations Through the Cell Cycle as a Sequence of Switches
