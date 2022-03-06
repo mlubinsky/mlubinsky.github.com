@@ -1,6 +1,9 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 
+"There is no God and Dirac is his Prophet." 
+— W. Pauli
+
 ### Fourie
 
 https://www.youtube.com/watch?v=r18Gi8lSkfM
