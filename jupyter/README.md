@@ -3,6 +3,17 @@ https://github.com/mwouts/jupytext  Notebook which works with regular .py files
 Useful extension for Jupyter: hinterland
 https://towardsdatascience.com/the-only-auto-completion-extension-youll-ever-need-for-your-jupyter-notebooks-87bbaecb7126
 
+### Polars
+
+Lightning-fast DataFrame library for Rust and Python
+
+https://www.pola.rs/
+
+https://news.ycombinator.com/item?id=30589250
+
+https://github.com/machow/siuba
+
+
 
 ### NumPy
 
