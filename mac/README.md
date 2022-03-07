@@ -7,6 +7,8 @@ BuildVersion:	18G95
 
 ### Setup
 
+https://hackercodex.com/guide/python-development-environment-on-mac-osx/
+
 https://hookrace.net/blog/macos-setup/
 
 https://news.ycombinator.com/item?id=29742551
