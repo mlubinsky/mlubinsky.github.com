@@ -56,6 +56,8 @@ https://www.youtube.com/watch?v=9sv-RElTc6s
 
 ### Topology
 
+https://scitechdaily.com/a-new-theoretical-concept-interweaves-magnetism-and-topology-revolutionary-future-potential/
+
 https://www.nature.com/articles/s41598-021-04178-8 Non-Hermitian topology in rock–paper–scissors games
 
 
