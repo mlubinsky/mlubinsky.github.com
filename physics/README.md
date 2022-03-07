@@ -56,6 +56,9 @@ https://www.youtube.com/watch?v=9sv-RElTc6s
 
 ### Topology
 
+https://www.nature.com/articles/s41598-021-04178-8 Non-Hermitian topology in rock–paper–scissors games
+
+
 https://www.youtube.com/watch?v=PJxxbWPUtpI&t=1958s
 
 https://www.youtube.com/watch?v=i53bGQFvpCA Topology in quantum matter
