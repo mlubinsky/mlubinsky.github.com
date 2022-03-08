@@ -18,6 +18,8 @@
 
 https://news.ycombinator.com/item?id=30303231 life span limit
 
+https://news.ycombinator.com/item?id=30597187. Cancer
+
 https://www.youtube.com/watch?v=23z_ruAi4FI  Бубновский
 
 https://www.youtube.com/watch?v=gOkm4iZLVHQ Бубновский - Insult
