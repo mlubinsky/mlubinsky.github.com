@@ -1,6 +1,10 @@
 https://arxiv.org/abs/2201.06897. The world beyond physics: how big is it?
 Sauro Succi
 
+
+https://probmods.org/. Probabilistic models of cognition
+
+
 Eugene Shakhnovich
 https://www.uhnwidata.com/den-of-rich/eugene-shakhnovich
 
