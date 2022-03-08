@@ -9,6 +9,7 @@ https://viktor-chumak.livejournal.com/215090.html
 
 https://skysheep.livejournal.com/174458.html 
 
+https://spydell.livejournal.com/707019.html
 
 немцы или амеры, вполне могли дожать Зелю до выполнения Минского договора.
 https://kireev.livejournal.com/1959659.html?view=comments&style=mine&nc=48#comments
