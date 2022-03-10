@@ -22,6 +22,9 @@ https://actoris.livejournal.com/231751.html russian point of view
 
 https://experiment8or.livejournal.com/423955.html
 
+Many links:
+https://sova-f.livejournal.com/608612.html?view=comments&style=mine&nc=98#comments
+
 
  Mearsheimer, McGovern, Matlock. Mearsheimer explains his understanding of Russia actions (which are not accepted by US establishment).  
 
