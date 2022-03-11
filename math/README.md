@@ -92,6 +92,13 @@ https://medium.com/cantors-paradise
 
 https://mipt.ru/education/chair/mathematics/study/uchebniki/
 
+### Tensors
+
+https://mfaizan.github.io/2022/03/08/why-tensors.html
+
+
+https://news.ycombinator.com/item?id=30610238
+
 
 ### Optimal stopping
 
