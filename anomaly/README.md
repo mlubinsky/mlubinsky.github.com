@@ -1,5 +1,7 @@
 https://github.com/yzhao062/anomaly-detection-resources
 
+https://habr.com/ru/company/otus/blog/654767/
+
 https://towardsdatascience.com/a-complete-anomaly-detection-algorithm-from-scratch-in-python-step-by-step-guide-4c115e65d54e
 
 https://towardsdatascience.com/5-outlier-detection-methods-that-every-data-enthusiast-must-know-f917bf439210
