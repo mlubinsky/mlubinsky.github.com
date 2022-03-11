@@ -126,6 +126,8 @@ https://causalnex.readthedocs.io/en/latest/ Casuality vs correlation
 
 https://towardsdatascience.com/summarize-pandas-data-frames-b9770567f940 Skimpy is a convenient way to generate quick summaries of any dataset, even without writing any code.
 
+https://habr.com/ru/post/654907/. Jini index
+
 kernels in ML
 https://pub.towardsai.net/types-of-kernels-in-machine-learning-291cf85fcdd0
 
