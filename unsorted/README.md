@@ -70,6 +70,8 @@ https://web.archive.org/web/20060920043324/http://www.msu.edu/~shlapent/memoirr.
  
  https://github.com/vpatryshev/wowiki/wiki/Internet.-The-Good-Parts.   Vlad Patryshev
  
+ https://users.mccme.ru/anromash/courses/index.html 
+ 
 https://yandex.ru/q/profile/ahuunw9jmhjtx7awq4nb221yj0/ Андрей Плахов
 
 
