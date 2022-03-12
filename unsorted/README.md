@@ -7,6 +7,8 @@ https://news.ycombinator.com/item?id=30593302 Regrets of dying
 
 http://www.belousenko.com/  Non-technical Books
 
+https://u1lib.org/ free books
+
 http://www.belousenko.com/books/pomerants/pomerants_utenok.pdf
 
 ```
