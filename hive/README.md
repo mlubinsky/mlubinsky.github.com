@@ -1,3 +1,20 @@
+### Add column in the middle
+
+first add the column user_id to the table with below command:
+
+ALTER TABLE table_name ADD COLUMNS (user_id BIGINT);
+
+To make user_id column as the first column in your table use change column with FIRST clause:
+
+ ALTER TABLE table_name CHANGE COLUMN user_id user_id BIGINT first;
+
+Use AFTER instead of FIRST if you want to move the specified column after any other column. Like say, I want to move DOB column AFTER  user_id column:
+
+ALTER TABLE table_name CHANGE COLUMN dob dob date AFTER user_id;
+
+Please note that this commands changes metadata only. 
+If you are moving columns, the data must already match the new schema or you must change it to match by some other means.
+
 https://habr.com/ru/post/585460/
 
 https://medium.com/swlh/hive-optimization-quick-refresher-5e596654bc1d
