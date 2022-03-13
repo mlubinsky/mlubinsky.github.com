@@ -31,6 +31,7 @@ https://arxiv.org/abs/2004.09280 Towards a theory of machine learning. Vitaly Va
 
 https://www.youtube.com/watch?v=LlKAna21fLE
 
+https://news.ycombinator.com/item?id=30658324 ML tools
 
 http://shamin.ru/
 
