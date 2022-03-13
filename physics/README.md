@@ -4,6 +4,12 @@
 "There is no God and Dirac is his Prophet." 
 — W. Pauli
 
+Artemy Kolchinsky
+https://scholar.google.ru/citations?hl=en&user=RmRwJJIAAAAJ&view_op=list_works&sortby=pubdate
+
+Vitaly Vanchurin
+https://scholar.google.com/citations?hl=en&user=nEEFLp0AAAAJ&view_op=list_works&sortby=pubdate
+
 ### Fourie
 
 https://www.youtube.com/watch?v=r18Gi8lSkfM
