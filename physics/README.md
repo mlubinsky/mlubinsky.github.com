@@ -42,6 +42,9 @@ https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-4-separation-
 
 https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-5-spherical-harmonics-a82dc40a1d4a
 
+https://medium.com/quantafy/part-one-ehrenfests-theorem-2204808cab9a
+
+
 https://iopscience.iop.org/
 
 https://www.worldscientific.com/doi/abs/10.1142/S0217751X21502018 Charge conservation, entropy current and gravitation
