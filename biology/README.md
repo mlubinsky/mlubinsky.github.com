@@ -47,7 +47,7 @@ https://www.youtube.com/watch?v=TfYf_rPWUdY mRNA
 https://habr.com/ru/company/ruvds/blog/582126/. Наш мозг не компьютер
 
 ### Vitaly Vanchurin, Yuri I. Wolf,  Eugene V. Koonin,  Mikhail I. Katsnelson
-
+https://trv-science.ru/2022/03/vsya-nasha-zhizn-zadachi-po-optimizacii 
 
 https://trv-science.ru/2022/02/zhizn-kak-mnogourovnevoe-obuchenie/
 
