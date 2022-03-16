@@ -47,6 +47,9 @@ Pointers with python: https://yurichev.com/news/20211223_Py_ptrs/
  python -m json.tool my_json.json   # json beautifier - warning: will sort the keys ard remove .0 !
  ```
  
+ process big json files
+ https://pythonspeed.com/articles/json-memory-streaming/
+ 
  
  Preserve the json key orders 
  ```
