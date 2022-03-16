@@ -1,3 +1,5 @@
+https://yoshuabengio.org/
+
 ### Books
 
 https://sebastianraschka.com/blog/2022/ml-pytorch-book.html
