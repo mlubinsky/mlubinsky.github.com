@@ -13,6 +13,28 @@ https://docs.aws.amazon.com/redshift/latest/dg/r_COUNT.html  APPROXIMATE COUNT D
 
 <https://fivetran.com/blog/obt-star-schema>
 
+
+### Locks in Redshift
+
+https://docs.aws.amazon.com/redshift/latest/dg/r_STV_LOCKS.html
+
+```
+select distinct(id) table_id
+,trim(datname)   db_name
+,trim(nspname)   schema_name
+,trim(relname)   table_name
+from stv_locks
+join stv_tbl_perm on stv_locks.table_id = stv_tbl_perm.id
+join pg_class on pg_class.oid = stv_tbl_perm.id
+join pg_namespace on pg_namespace.oid = relnamespace
+join pg_database on pg_database.oid = stv_tbl_perm.db_id;
+
+
+select table_id, last_update, lock_owner, lock_owner_pid from stv_locks;
+```
+
+
+
 Both Snowflake and Redshift Spectrum allow queries on ORC files as external files located in Amazon S3. However, Snowflake edged out Redshift Spectrum for its ability to also load and transform ORC data files directly into Snowflake.
 
 
