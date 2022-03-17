@@ -2,6 +2,11 @@ https://habr.com/ru/company/jugru/blog/586376/. Chrome extensions
 
 https://memo.barrucadu.co.uk/scheduling-problems.html . Solving Scheduling Problems with Integer Linear Programming with Python
 
+
+### Video file formats and processing
+
+https://github.com/leandromoreira/digital_video_introduction
+
 https://sidbala.com/h-264-is-magic/ H.264 algo
 
 ###  Automate everything in browser!
