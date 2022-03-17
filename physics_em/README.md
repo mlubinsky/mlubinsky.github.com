@@ -135,6 +135,8 @@ https://www.youtube.com/watch?v=QV1vew31YcU
 
 https://www.youtube.com/watch?v=060Sa1-MYok Александр Чирцов — На стыке квантовой механики и релятивистской теории
 
+https://www.youtube.com/playlist?list=PLUbD59ZHv1GTIeCSh63ymQ8x62TMfeyyw 2022 г. А.С. Шварц. Квантовая механика и квантовая теория поля. Алгебраический и геометрический подходы. Весенний семестр
+
 
 https://www.youtube.com/watch?v=50miSAp4eGY . Фейгельман М.В.
 
