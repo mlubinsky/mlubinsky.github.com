@@ -31,6 +31,9 @@ join pg_database on pg_database.oid = stv_tbl_perm.db_id;
 
 
 select table_id, last_update, lock_owner, lock_owner_pid from stv_locks;
+
+
+select pg_terminate_backend(26023);
 ```
 
 
