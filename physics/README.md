@@ -44,6 +44,7 @@ https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-5-spherical-h
 
 https://medium.com/quantafy/part-one-ehrenfests-theorem-2204808cab9a
 
+https://www.cantorsparadise.com/einsteins-brownian-motion-9d2d2f9c3d04
 
 https://iopscience.iop.org/
 
