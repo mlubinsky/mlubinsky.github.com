@@ -1,5 +1,7 @@
 https://yoshuabengio.org/
 
+https://weightagnostic.github.io/. Weight agnostic NN
+
 ### Books
 
 https://sebastianraschka.com/blog/2022/ml-pytorch-book.html
