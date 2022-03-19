@@ -1,5 +1,13 @@
 поэтом можешь ты не быть, а композитором не можешь.
 
+### Ricchi e Poveri - Come vorrei
+
+https://www.youtube.com/watch?v=KT44aQ_10XM&list=RDqx89ylJyeKU&index=27
+
+https://www.youtube.com/watch?v=C0qaCBq2yLM
+
+
+
 https://dok-zlo.livejournal.com/tag/%D0%BA%D0%B8%D0%BD%D0%BE
 
 https://top-reyting.ru/kino/30-luchshich-novich-detektivnich-serialov-2021-goda.html
