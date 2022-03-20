@@ -106,6 +106,9 @@ https://nintil.com/scaling-tacit-knowledge
 
 #### books
 
+Ask HN: What book changed your life?
+https://news.ycombinator.com/item?id=30734709
+
 Ask HN: What books have made the biggest impact on your mental models?
 https://news.ycombinator.com/item?id=15155833
 
