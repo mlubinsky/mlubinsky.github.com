@@ -33,6 +33,11 @@ https://news.ycombinator.com/item?id=27992073
 
 https://habr.com/ru/company/gms/blog/553078/ . useful command-line utils
 
+
+### Fzf
+
+https://news.ycombinator.com/item?id=30736518
+
 ### looking for files on S3 with pattern = XXX
 ```
 
