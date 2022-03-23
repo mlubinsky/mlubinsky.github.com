@@ -1,10 +1,18 @@
+### Header
+
+SET hive.cli.print.header=true;
+
+
 ### Hive UDF
 https://stackoverflow.com/questions/13940498/how-to-create-a-hive-udf-for-all-sessions
 
+```
 CREATE FUNCTION sbschema.roku_get_business_channel_id as 'com.roku.dea.hive.udfs.BusinessChannelUdf' USING JAR 's3://roku-dea-dev/sandbox/mlubinsky/hiveUdf.jar';
 
 aws s3 cp hiveUdf.jar s3://roku-dea-dev/sandbox/mlubinsky/
 
+DESCRIBE FUNCTION EXTENDED sbschema.roku_get_business_channel_id;
+```
 
 
 ### Add column in the middle
