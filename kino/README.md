@@ -1,5 +1,7 @@
 поэтом можешь ты не быть, а композитором не можешь.
 
+https://www.youtube.com/watch?v=dISZqTGdlx4&list=PLLVr9rhMLtCiocQIok8eNbBTaAj0fJZek Na grud`
+
 ### Ricchi e Poveri - Come vorrei
 
 https://www.youtube.com/watch?v=KT44aQ_10XM&list=RDqx89ylJyeKU&index=27
