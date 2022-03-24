@@ -274,6 +274,8 @@ https://sparkbyexamples.com/spark/spark-adaptive-query-execution/
 
 ### Structured Streaming
 
+https://habr.com/ru/company/ozontech/blog/656883/
+
 https://habr.com/ru/company/otus/blog/557812/
 
 ```
