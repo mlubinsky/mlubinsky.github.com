@@ -8,6 +8,7 @@ https://pub.towardsai.net/time-series-analysis-hands-on-with-scikit-learn-featur
 
 https://ajay-arunachalam08.medium.com/building-explainable-forecasting-models-with-state-of-the-art-deep-neural-networks-using-a-ad3fa5844fef 
 
+https://habr.com/ru/company/tinkoff/blog/657297/ Как прогнозировать временные ряды с ETNA
 
 https://towardsdatascience.com/time-series-modeling-with-orbit-a38e03a2a4ea  Uber’s new time-series model ORBIT 
 
