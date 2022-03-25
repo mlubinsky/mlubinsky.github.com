@@ -31,6 +31,8 @@ https://www.pythonmorsels.com/built-in-functions-in-python/.
 
 https://sadh.life/post/builtins/
 
+Collection classes
+https://codesolid.com/useful-collection-classes-in-python-you-may-not-know/ 
 
 https://bas.codes/posts/python-dict-slots Understanding Attributes, Dicts and Slots in Python
 
