@@ -2,6 +2,8 @@ Wait loss: https://news.ycombinator.com/item?id=30617118
 
 https://www.youtube.com/watch?v=OP0D5cloQUc 
 
+https://www.youtube.com/watch?v=GK_QpYgydpU Testesteron Dr. Petrick
+
 Названы продукты для профилактики ишемической болезни сердца
 Диетолог Рыль: дефицит селена приводит к ишемической болезни сердца
  
