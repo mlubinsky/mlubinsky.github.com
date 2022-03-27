@@ -278,6 +278,8 @@ https://habr.com/ru/company/ruvds/blog/583120/
 
 ### Books
 
+https://www.motionmountain.net/index.html
+
 https://physics.stackexchange.com/questions/22046/books-for-condensed-matter-after-ashcroft-mermin/22060#22060
 
 https://mathematicbooks.com/product/mathematical-methods-for-physics-and-engineering-a-comprehensive-guide/ 
