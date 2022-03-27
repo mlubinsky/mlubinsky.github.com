@@ -63,6 +63,16 @@ https://habr.com/ru/company/vdsina/blog/507016/ Mac-> Linux
 
 ### Chrome extensions
 
+Include at the end 
+of your ~/.bashrc, ~/.bash_profile or ~/.aliases the following lines:
+
+ Google Chrome Alias
+```
+google-chrome() {
+    open -a "Google Chrome" "$1"
+}
+```
+
 https://chrome.google.com/webstore/detail/json-formatter/cfaihfocdnniaholfnjcemnfhcjchohb/related?hl=en. JSON formatter
 
 The great suspender
