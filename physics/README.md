@@ -120,6 +120,7 @@ http://philsci-archive.pitt.edu/view/subjects/
 
 https://cyberleninka.ru/
 
+https://medium.com/@natsunoyuki/simulating-magnetism-with-python-a15f7c3042f1
 
 https://www.youtube.com/channel/UCQvfzjcxgn-pkdnzPrkQBtA . Spin Phenomena Interdisciplinary Center (SPICE)
 
