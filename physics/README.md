@@ -624,6 +624,10 @@ https://www.quantamagazine.org/how-renormalization-saved-particle-physics-202009
 https://news.ycombinator.com/item?id=24504537
 
 ## QM
+https://www.youtube.com/playlist?list=PLthfp5exSWEoUgz9P2-8sCy4BEun69bUL  Квантовая механика, Хайдуков З. В., 11.02.2022г.
+
+https://www.youtube.com/playlist?list=PLthfp5exSWErBIoHpaPV77pq8kHHIeWu4
+
 
 https://www.reddit.com/r/quantum/comments/iqzrx8/quantum_mechanics_course/
 
