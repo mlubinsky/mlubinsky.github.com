@@ -4,6 +4,10 @@ https://www.youtube.com/watch?v=OP0D5cloQUc
 
 https://www.youtube.com/watch?v=GK_QpYgydpU Testesteron Dr. Petrick
 
+Креатин для «айтишника»: как спортивная добавка помогает при сидячем образе жизни
+
+https://habr.com/ru/post/655023/
+
 
 https://zelusfitness.com/  Sport equipment
 
@@ -428,6 +432,8 @@ Trigonella foenum-graecum (TFG). Эта трава, больше известн�
 Чеснок
 
 ### Магний
+https://habr.com/ru/post/657653/
+
 источники магния:
 ```
 - Темно-зеленые овощи (шпинат, брокколи, капуста)
