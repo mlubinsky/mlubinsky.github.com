@@ -12,7 +12,11 @@ https://habr.com/ru/company/tensor/blog/573214/ SQL optimization
 
 https://habr.com/ru/company/tensor/blog/651407/. SQL optimization
 
-https://habr.com/ru/post/597651/
+https://habr.com/ru/post/657667/ TRY / CATCH в PostgreSQL
+
+https://habr.com/ru/company/tensor/blog/657895/ SQL HowTo: разные варианты работы с EAV
+
+https://habr.com/ru/post/597651/ PostgreSQL: занимательный пример работы индексов, планировщика запросов и магии
 
 https://www.pgmustard.com/blog/
 
