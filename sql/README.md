@@ -2,6 +2,8 @@ https://habr.com/ru/company/querifylabs/blog/578842/ SQL plan
 
 https://news.ycombinator.com/item?id=30323131  Dashboards for SQL database
 
+https://habr.com/ru/company/tensor/blog/657895/ SQL HowTo: разные варианты работы с EAV
+
 ### Moving Average
 
 https://habr.com/ru/post/588859/  averaging and smoothing for noise reduction
