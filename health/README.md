@@ -8,6 +8,8 @@ https://www.youtube.com/watch?v=GK_QpYgydpU Testesteron Dr. Petrick
 
 https://habr.com/ru/post/655023/
 
+https://habr.com/ru/post/652493/  система физического и ментального здоровья гика
+
 
 https://zelusfitness.com/  Sport equipment
 
