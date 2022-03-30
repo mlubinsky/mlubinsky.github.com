@@ -1,3 +1,10 @@
+OLD Freelancer
+https://www.youtube.com/watch?v=wKTiK7SlfF4
+
+https://www.youtube.com/watch?v=lokOJCCbKMQ
+
+
+
 Wait loss: https://news.ycombinator.com/item?id=30617118
 
 https://www.youtube.com/watch?v=OP0D5cloQUc 
