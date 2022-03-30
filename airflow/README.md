@@ -1,3 +1,15 @@
+## Airflow sensors
+
+https://marclamberti.com/blog/airflow-sensors/
+
+### Airflow wait for s3 file
+https://www.mikulskibartosz.name/postpone-airflow-dag-until-s3-upload/
+
+https://hevodata.com/learn/s3keysensor/
+
+https://airflow.apache.org/docs/apache-airflow/1.10.5/_api/airflow/sensors/s3_key_sensor/index.html
+
+
 https://blog.fal.ai/the-unbundling-of-airflow-2/ 
 
 https://airflow.apache.org/docs/
