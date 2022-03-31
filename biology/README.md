@@ -3,11 +3,20 @@ University of Minnesota Duluth
 https://scholar.google.com/citations?hl=en&user=nEEFLp0AAAAJ&view_op=list_works&sortby=pubdate
 
 
+https://www.nature.com/collections/iahbbijjbb  2021 Top 25 Health Sciences Articles
+
 https://arxiv.org/abs/2201.06897. The world beyond physics: how big is it?
 Sauro Succi
 
 
 https://probmods.org/. Probabilistic models of cognition
+
+Михаил Цодыкс
+
+https://www.youtube.com/watch?v=cYuepljq5vA
+
+https://www.youtube.com/watch?v=MDj_rAH0rdM Мозг, память и корень из Пи.
+
 
 
 Eugene Shakhnovich
