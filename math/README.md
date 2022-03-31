@@ -130,6 +130,9 @@ https://www.youtube.com/playlist?list=PL-_cKNuVAYAWltu4CT1F7CWG97ZplBnTg
 
 ### Dynamical systems
 
+https://www.youtube.com/watch?v=WJFU_KEyjus Vladimir Yankov
+
+
 https://www.quantamagazine.org/how-mathematicians-make-sense-of-chaos-20220302/
 
 https://galileo-unbound.blog/python-programs-for-nonlinear-dynamics/
