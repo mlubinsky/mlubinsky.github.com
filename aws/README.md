@@ -15,6 +15,7 @@ https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_2708
 
 ###  Scalable analytics with AWS
 
+https://aws.amazon.com/ec2/instance-types/
 
 https://www.youtube.com/watch?v=uQdzcIf_KII .  AWS Full Course In 11 Hours 
 
