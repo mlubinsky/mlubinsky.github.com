@@ -4,6 +4,10 @@
 "There is no God and Dirac is his Prophet." 
 — W. Pauli
 
+Modern problems in theoretical physics MFTI (ru)
+https://www.youtube.com/playlist?list=PLthfp5exSWErBIoHpaPV77pq8kHHIeWu4
+
+
 Artemy Kolchinsky
 https://scholar.google.ru/citations?hl=en&user=RmRwJJIAAAAJ&view_op=list_works&sortby=pubdate
 
