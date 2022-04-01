@@ -157,6 +157,9 @@ https://mipt.ru/education/chairs/fpfkt/downloads/sciseminar/2019_spring/%D0%AF%D
 https://www.lektorium.tv/node/38964 Квантовая теория поля как задача по теории операторов. 	
 Николай Филонов
 
+Advanced QM
+https://www.youtube.com/watch?v=33QHal6E2_4&list=PLHyI3Fbmv0Sem-xmU7PHh61zhjvttWidT
+
 https://www.physics.princeton.edu/~mcdonald/examples/ McDonald
 
 
