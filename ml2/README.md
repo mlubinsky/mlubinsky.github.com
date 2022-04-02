@@ -734,6 +734,12 @@ https://medium.com/@mngrwl/explained-simply-how-deepmind-taught-ai-to-play-video
 <a href=http://distill.pub/>distill.pub</a>
 
 ### PCA
+
+https://blog.kxy.ai/5-reasons-you-should-never-use-pca-for-feature-selection/
+
+
+https://news.ycombinator.com/item?id=30876293
+
 https://joellaity.com/2018/10/18/pca.html
 
 <a href=https://habrahabr.ru/company/ods/blog/325654/#affinity-propagation>PCA 1</a>
