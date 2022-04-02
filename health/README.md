@@ -18,6 +18,10 @@ https://habr.com/ru/post/655023/
 https://habr.com/ru/post/652493/  система физического и ментального здоровья гика
 
 
+
+https://www.youtube.com/watch?v=x3NPAxiMRPw HOW TO GET YOUR FIRST PULL-UP
+
+
 https://zelusfitness.com/  Sport equipment
 
 
