@@ -45,6 +45,7 @@ https://www.youtube.com/playlist?list=PLUbD59ZHv1GSmj1ecP7ARU2LMqZgT_TyQ
 Fingerprint Matching in Python
 https://www.youtube.com/watch?v=IIvfqfKkiio
 
+PCA https://news.ycombinator.com/item?id=30876293
 
 ### Automatic differentiation JAX
 
