@@ -1,5 +1,9 @@
 ### Lectures
 
+канал по дистанционному образованию в МФТИ
+
+https://www.youtube.com/channel/UCEEhbFAvl3fOW5geICQbMcg
+
 https://www.youtube.com/watch?v=mcttbZ30_sc Основы квантовой физики - Алексей Рубцов
 
 https://www.youtube.com/watch?v=7Blzcwz0Ejk  Квантовая механика, Никитин Н. В., 01.04.2022г.
