@@ -43,3 +43,9 @@ https://www.lektorium.tv/node/38964 Квантовая теория поля к�
 
 Advanced QM
 https://www.youtube.com/watch?v=33QHal6E2_4&list=PLHyI3Fbmv0Sem-xmU7PHh61zhjvttWidT
+
+
+
+https://habr.com/ru/company/skillfactory/blog/549470/  Анимация волновой функции частицы Шрёдингера  с помощью Python / matplotlib
+
+https://www.youtube.com/watch?v=502W35rpk7Q Графы и квантовая механика: симплектические идеи // Сергей Новиков
