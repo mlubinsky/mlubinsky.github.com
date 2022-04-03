@@ -1,8 +1,10 @@
 Vitaly Vanchurin
 University of Minnesota Duluth
 https://scholar.google.com/citations?hl=en&user=nEEFLp0AAAAJ&view_op=list_works&sortby=pubdate
-
-
+ 
+ 
+https://www.quantamagazine.org/most-complete-simulation-of-a-cell-probes-lifes-hidden-rules-20220224/ 
+ 
 http://www.rasa-usa.org/en/
 
 https://www.nature.com/collections/iahbbijjbb  2021 Top 25 Health Sciences Articles
