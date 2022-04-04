@@ -2,6 +2,10 @@ Vitaly Vanchurin
 University of Minnesota Duluth
 https://scholar.google.com/citations?hl=en&user=nEEFLp0AAAAJ&view_op=list_works&sortby=pubdate
  
+ Сергей Ястребов
+От атомов к древу. Введение в современную науку о жизни
+ https://vsenauka.ru/knigi/vsenauchnyie-knigi/book-details.html?id=823
+ 
  
 https://www.quantamagazine.org/most-complete-simulation-of-a-cell-probes-lifes-hidden-rules-20220224/ 
  
