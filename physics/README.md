@@ -43,12 +43,7 @@ https://www.youtube.com/watch?v=qIIHpTgTWI0 Точно решаемые моде
 
 https://sethna.lassp.cornell.edu/StatMech/EntropyOrderParametersComplexity20.pdf
 
-### Example of QM articles with formulas
-https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-2-kepler-and-newton-4bd99941d18e
 
-https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-4-separation-of-variables-19b88bee86e0
-
-https://www.cantorsparadise.com/the-road-to-quantum-mechanics-part-5-spherical-harmonics-a82dc40a1d4a
 
 https://medium.com/quantafy/part-one-ehrenfests-theorem-2204808cab9a
 
@@ -130,8 +125,6 @@ https://cyberleninka.ru/
 https://medium.com/@natsunoyuki/simulating-magnetism-with-python-a15f7c3042f1
 
 https://www.youtube.com/channel/UCQvfzjcxgn-pkdnzPrkQBtA . Spin Phenomena Interdisciplinary Center (SPICE)
-
-
 
 https://www.physics.princeton.edu/~mcdonald/examples/ McDonald
 
@@ -230,12 +223,7 @@ https://www.youtube.com/watch?v=jmX4FOUEfgU SciPy
 https://www.youtube.com/watch?v=Teb28OFMVFc SciPy
 
 https://www.youtube.com/watch?v=cXHvC_FGx24 SciPy Optimization
-
-### Shredinger
-
-https://www.youtube.com/watch?v=kVjg3jbM3Pw Shrodinger eq
-
-https://github.com/The-real-Han-Chen/Single-slit-and-double-slits-diffraction-Schrodinger-s-equation-in-2D-
+ 
  
 ### Chaos , Solitons, Dynamical systems
 
@@ -327,11 +315,7 @@ https://staff.math.su.se/mleites/books/2009-vospominaniya.pdf  about Berezin
 
 https://en.wikipedia.org/wiki/Bound_state_in_the_continuum   (russian version is better)
 
-```
-Онлайн–курсы от Московского физико–технического института по 29 направлениям.
-По каждому направлению доступны десятки ссылок на видео и тексты с лекциями преподавателей университета – материалы отсортированы по кафедрам, курсам и годам съемки.
  
-
 
   
 
@@ -406,14 +390,6 @@ what is photon?
 https://indico.cern.ch/event/774733/contributions/3614271/attachments/1944496/3225666/MSZ03_the_concept_of_the_photon_-_revisited.pdf 
 
 
-https://arxiv.org/abs/quant-ph/9907069. Mathematical surprises and Dirac's formalism in quantum mechanics
-
-
-https://arxiv.org/abs/2011.12671 Sidney Coleman's Dirac Lecture "Quantum Mechanics in Your Face"
-
-http://www.physics.umd.edu/courses/Phys401/bedaque07/misconnzz.pdf Common Misconceptions Regarding Quantum Mechanics
-
-
 https://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf.  Dyson. Why is Maxwell theory so hard?
 
 https://habr.com/ru/post/539188/  translation the article above to russian
@@ -432,77 +408,6 @@ https://teach-in.ru/course/analytical-mechanics-kugushev
 https://www.youtube.com/watch?v=EceVJJGAFFI
 
 ## QM
-https://arxiv.org/pdf/2112.05619.pdf
-
-https://www.youtube.com/watch?v=8mi0PoPvLvs . Advanced Quantum Mechanics. Leonard Susskind
-
-https://www.youtube.com/playlist?list=PLq94LoYzjZTos43uI14BeBJ8Y6d0v2g6f
-
-https://ridiculousfish.com/wavefiz/
-
-https://blog.gwlab.page/solving-1-d-schrodinger-equation-in-python-dcb3518ce454
-
-https://github.com/quantum-visualizations/qmsolve
-
-
-https://habr.com/ru/company/skillfactory/blog/564822/
-
-http://lightcone.ru/
-
-https://quantgrav.blogspot.com/
-
-https://habr.com/ru/post/539210/
-
-https://rqc.ru/research#groups
-
-
-https://postnauka.ru/specials/quantumworld
-
-Неравенства Белла https://habr.com/ru/post/540620/
-
-https://www.youtube.com/watch?v=7mUQtujgUUo . Страупе С. С. - Введение в квантовую физику - Квантовая информация
-
-
-
-https://www.youtube.com/results?search_query=%D0%A1%D1%82%D1%80%D0%B0%D1%83%D0%BF%D0%B5 Страупе 
-
-
-https://habr.com/ru/post/526886/  Quantum Computer
-
-https://news.ycombinator.com/item?id=24996034   Many Quantum Computer Lectures
-
-https://www.youtube.com/watch?v=mujNcrgdops  Александр Львовский
-
-https://www.youtube.com/watch?v=NayWtS53NNU   Эмиль Ахмедов: "Оптика и квантовая механика"
-
-https://www.youtube.com/playlist?list=PLcsjsqLLSfNDqvcsTsKJM1Ee6V8Aaobl0 Введение в квантовую физику - Рубцов Алексей Николаевич
-
-
-https://habr.com/ru/post/523926/
-
-http://lightcone.ru/%d1%82%d0%b5%d0%be%d1%80%d0%b8%d1%8f-%d0%b3%d1%80%d1%83%d0%bf%d0%bf-1-%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b3%d1%80%d1%83%d0%bf%d0%bf%d1%8b/
-
-https://www.youtube.com/watch?v=gAFAj3pzvAA  QM map
-
-https://www.youtube.com/watch?v=VSCqjOXNSp8 . А.С. Трушечкин. Математика квантовой механики
-
-http://www.mathnet.ru/conf1813  Г. Г. Амосов  "Математические основания квантовой механики"
-
-https://www.youtube.com/watch?v=4csKNAKtEQ0 Липовка Антон 
-
-https://www.youtube.com/watch?v=xnt2xSNRNn0 Quantum Physics Full Course | Quantum Mechanics Course | Part 1 Author: Brant Carlson
-
-https://www.youtube.com/watch?v=K4BF7MD69_U . Course Author: Prof. Steve Spicklemire
-
-http://nuclphys.sinp.msu.ru/
-
-https://www.youtube.com/watch?v=rFKUs2PeRLU Симметрия в физике,
-
-http://www.mathnet.ru/php/presentation.phtml?option_lang=rus&presentid=24832  solitons
-
-https://www.youtube.com/watch?v=bUfcVTIlJz0 Green function
-
-https://e.lanbook.com/reader/book/619/#26. Блохинцев ДИ Основы квантовой механики
 
 https://www.youtube.com/watch?v=UwwBG-MbniY. Thinking fast and slow (Daniel Kahneman - Lex Fridman)
 
@@ -597,13 +502,7 @@ https://www.quantamagazine.org/how-renormalization-saved-particle-physics-202009
 
 https://news.ycombinator.com/item?id=24504537
 
-## QM
-https://www.youtube.com/playlist?list=PLthfp5exSWEoUgz9P2-8sCy4BEun69bUL  Квантовая механика, Хайдуков З. В., 11.02.2022г.
 
-https://www.youtube.com/playlist?list=PLthfp5exSWErBIoHpaPV77pq8kHHIeWu4
-
-
-https://www.reddit.com/r/quantum/comments/iqzrx8/quantum_mechanics_course/
 
 <https://en.wikipedia.org/wiki/Boris_Altshuler>
 
@@ -766,9 +665,7 @@ https://galileo-unbound.blog/
 
 https://habr.com/ru/company/hsespb/blog/517838/. in C++
 
-##
-
-https://habr.com/ru/post/516206/. QM article
+ 
 
 https://habr.com/ru/post/342654/ Autolokebaiya
 
@@ -824,10 +721,7 @@ https://news.ycombinator.com/item?id=23690788.  Modelica
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4382372/.  Virus modeling
 
-### QM
-<https://habr.com/ru/post/501858/>
 
-<https://nautil.us/issue/83/intelligence/how-to-make-sense-of-quantum-physics>
 
 <https://www.quantamagazine.org/mathematicians-prove-batchelors-law-of-turbulence-20200204/> Turbulence
 
@@ -865,8 +759,4 @@ https://www.youtube.com/user/MIT
 
 <https://arxiv.org/abs/hep-th/9702027>
 
-## QM
 
-<https://arxiv.org/abs/quant-ph/0702225>
-
-<https://arxiv.org/pdf/quant-ph/0702225.pdf>
