@@ -59,3 +59,9 @@ https://www.youtube.com/watch?v=33QHal6E2_4&list=PLHyI3Fbmv0Sem-xmU7PHh61zhjvttW
 https://habr.com/ru/company/skillfactory/blog/549470/  Анимация волновой функции частицы Шрёдингера  с помощью Python / matplotlib
 
 https://www.youtube.com/watch?v=502W35rpk7Q Графы и квантовая механика: симплектические идеи // Сергей Новиков
+
+Time-Dependent Schrodinger Equation in Python: Two Different Techniques
+https://www.youtube.com/watch?v=kVjg3jbM3Pw
+
+https://github.com/The-real-Han-Chen/Single-slit-and-double-slits-diffraction-Schrodinger-s-equation-in-2D-
+
