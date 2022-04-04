@@ -8,6 +8,9 @@ https://www.youtube.com/watch?v=mcttbZ30_sc Основы квантовой фи
 
 https://www.youtube.com/watch?v=7Blzcwz0Ejk  Квантовая механика, Никитин Н. В., 01.04.2022г.
 
+https://www.youtube.com/playlist?list=PLthfp5exSWEoUgz9P2-8sCy4BEun69bUL  Квантовая механика, Хайдуков З. В., 11.02.2022г.
+
+
 https://www.youtube.com/playlist?list=PLzZPcCojoi_V-JDjTVp2yT3OJtyEkbQBl Осипов Д.Л.  Осень 2016
 
 https://journals.nsu.ru/siberian-journal-physics/archive/2008/T3V2/5/0125/  Игнатович Владимир Казимирович. Одномерный периодический потенциал в квантовой механике
