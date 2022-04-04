@@ -11,6 +11,7 @@ https://www.youtube.com/watch?v=7Blzcwz0Ejk  Квантовая механика
 https://www.youtube.com/playlist?list=PLthfp5exSWEoUgz9P2-8sCy4BEun69bUL  Квантовая механика, Хайдуков З. В., 11.02.2022г.
 
 
+
 https://www.youtube.com/playlist?list=PLzZPcCojoi_V-JDjTVp2yT3OJtyEkbQBl Осипов Д.Л.  Осень 2016
 
 
@@ -147,7 +148,7 @@ https://www.youtube.com/watch?v=xnt2xSNRNn0 Quantum Physics Full Course | Quantu
 
 https://www.youtube.com/watch?v=K4BF7MD69_U . Course Author: Prof. Steve Spicklemire
 
-http://nuclphys.sinp.msu.ru/
+http://nuclphys.sinp.msu.ru/ Nuclear physics
 
 https://www.youtube.com/watch?v=rFKUs2PeRLU Симметрия в физике,
 
@@ -156,4 +157,12 @@ http://www.mathnet.ru/php/presentation.phtml?option_lang=rus&presentid=24832  so
 https://www.youtube.com/watch?v=bUfcVTIlJz0 Green function
 
 https://e.lanbook.com/reader/book/619/#26. Блохинцев ДИ Основы квантовой механики
+
+ 
+https://www.youtube.com/playlist?list=PLthfp5exSWEoUgz9P2-8sCy4BEun69bUL  Квантовая механика, Хайдуков З. В., 11.02.2022г.
+
+https://www.youtube.com/playlist?list=PLthfp5exSWErBIoHpaPV77pq8kHHIeWu4
+
+
+https://www.reddit.com/r/quantum/comments/iqzrx8/quantum_mechanics_course/
 
