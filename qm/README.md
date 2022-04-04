@@ -13,11 +13,14 @@ https://www.youtube.com/playlist?list=PLthfp5exSWEoUgz9P2-8sCy4BEun69bUL  Ква
 
 https://www.youtube.com/playlist?list=PLzZPcCojoi_V-JDjTVp2yT3OJtyEkbQBl Осипов Д.Л.  Осень 2016
 
+
+https://www.youtube.com/watch?v=LCA0CKfL9H4&list=PLthfp5exSWEpsV0TcHLpezrS6oXssHNds
+ "Квантовая механика", Тернов А. И. 05.02.2021г. 
+
 https://journals.nsu.ru/siberian-journal-physics/archive/2008/T3V2/5/0125/  Игнатович Владимир Казимирович. Одномерный периодический потенциал в квантовой механике
 
  
 https://www.youtube.com/playlist?list=PL193BC0532FE7B02C Quantum Mechanics  
-
 
 
 https://mipt.lectoriy.ru/course?category=TheoreticalPhysics
