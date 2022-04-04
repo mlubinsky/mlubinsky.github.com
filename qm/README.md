@@ -166,3 +166,15 @@ https://www.youtube.com/playlist?list=PLthfp5exSWErBIoHpaPV77pq8kHHIeWu4
 
 https://www.reddit.com/r/quantum/comments/iqzrx8/quantum_mechanics_course/
 
+https://habr.com/ru/post/516206/. QM article
+
+ 
+<https://habr.com/ru/post/501858/>
+
+<https://nautil.us/issue/83/intelligence/how-to-make-sense-of-quantum-physics>
+
+
+<https://arxiv.org/abs/quant-ph/0702225>
+
+<https://arxiv.org/pdf/quant-ph/0702225.pdf>
+
