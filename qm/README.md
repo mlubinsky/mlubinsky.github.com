@@ -1,5 +1,7 @@
 ### Lectures
 
+https://www.youtube.com/playlist?list=PLthfp5exSWErBIoHpaPV77pq8kHHIeWu4
+
 канал по дистанционному образованию в МФТИ
 
 https://www.youtube.com/channel/UCEEhbFAvl3fOW5geICQbMcg
