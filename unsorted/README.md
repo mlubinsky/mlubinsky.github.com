@@ -683,7 +683,11 @@ https://www.vat19.com/
 
 <https://www.art.com/>
 
+
 <https://everydaycarry.com/>
+
+### Knives
+https://lastday.club/luchshie-nozhi-vyzhivaniya-2021-kak-vybrat-nozh-rukovodstvo-pokupatelya/
 
 <https://www.etsy.com/listing/523027817/personalized-engraved-5-in-1-knife>  Engraved 5-in-1 Knife & MultiTool by Left Coast Original 
 
