@@ -2,6 +2,8 @@
 
 https://www.youtube.com/playlist?list=PLthfp5exSWErBIoHpaPV77pq8kHHIeWu4
 
+https://www.youtube.com/watch?v=42TYj0C4zzg&list=PLqdhXM8ko4WEFhN5uw8lFnR1jM9MfZgzm Чирцов Александр:  
+
 канал по дистанционному образованию в МФТИ
 
 https://www.youtube.com/channel/UCEEhbFAvl3fOW5geICQbMcg
