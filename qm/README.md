@@ -18,6 +18,8 @@ https://www.youtube.com/playlist?list=PLthfp5exSWEoUgz9P2-8sCy4BEun69bUL  Ква
 
 https://www.youtube.com/playlist?list=PLzZPcCojoi_V-JDjTVp2yT3OJtyEkbQBl Осипов Д.Л.  Осень 2016
 
+https://www.youtube.com/playlist?list=PLHOMZXOczEYNAZX6Qw60rSKAPFupnQUli Осипов Д.Л.  Осень 2016
+
 
 https://www.youtube.com/watch?v=LCA0CKfL9H4&list=PLthfp5exSWEpsV0TcHLpezrS6oXssHNds
  "Квантовая механика", Тернов А. И. 05.02.2021г. 
