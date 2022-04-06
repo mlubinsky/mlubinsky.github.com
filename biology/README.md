@@ -136,7 +136,8 @@ https://www.youtube.com/channel/UCY41Iz96tJZMEp1qyLH-LYQ
 
 
 ### Molecular motors
-
+How Molecular Motors Extract Order from Chaos(A Key Issues Review)
+Peter M Hoffmann
 https://cpb-us-e1.wpmucdn.com/s.wayne.edu/dist/c/2/files/2018/07/MolecMachinesv7-1cpb97f.pdf
 
 https://www.youtube.com/watch?v=sbFL2U7Vwls    (ru)  В.А.Твердислов "Хиральность и иерархия струкутр в биомакромолекулах. Молекулярные машины"
