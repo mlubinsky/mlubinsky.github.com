@@ -137,6 +137,8 @@ https://www.youtube.com/channel/UCY41Iz96tJZMEp1qyLH-LYQ
 
 ### Molecular motors
 
+https://cpb-us-e1.wpmucdn.com/s.wayne.edu/dist/c/2/files/2018/07/MolecMachinesv7-1cpb97f.pdf
+
 https://www.youtube.com/watch?v=sbFL2U7Vwls    (ru)  В.А.Твердислов "Хиральность и иерархия струкутр в биомакромолекулах. Молекулярные машины"
 
 https://ufn.ru/ru/articles/2020/4/a/ Управление нанотранспортом с помощью рэтчет-эффекта
