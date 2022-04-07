@@ -6,7 +6,7 @@ SET hive.cli.print.header=true;
 
 MSCK REPAIR TABLE
 
-emrfs synch
+emrfs synch  https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emrfs-cli-reference.html
 
 ### Hive UDF
 https://stackoverflow.com/questions/13940498/how-to-create-a-hive-udf-for-all-sessions
