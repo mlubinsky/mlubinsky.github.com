@@ -15,6 +15,13 @@ https://blog.pronus.io/en/posts/python/how-to-set-up-a-perfect-python-project/
 pyenv + poetry
 https://briansunter.com/blog/python-setup-pyenv-poetry/
 
+
+### Flake
+
+python3 -m pip install flake8
+
+flake8 myscript.py
+
 ### pip
 
 https://realpython.com/what-is-pip/
