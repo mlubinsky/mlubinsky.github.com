@@ -1,5 +1,9 @@
 https://github.com/mwouts/jupytext  Notebook which works with regular .py files
 
+Как встроить блокнот Jupyter на любой сайт
+https://habr.com/ru/company/skillfactory/blog/659279/
+
+
 Useful extension for Jupyter: hinterland
 https://towardsdatascience.com/the-only-auto-completion-extension-youll-ever-need-for-your-jupyter-notebooks-87bbaecb7126
 
