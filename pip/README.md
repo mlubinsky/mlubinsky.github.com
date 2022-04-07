@@ -17,6 +17,7 @@ https://briansunter.com/blog/python-setup-pyenv-poetry/
 
 
 ### Flake Black
+https://habr.com/ru/company/skillfactory/blog/659493/
 
 python3 -m pip install flake8
 
