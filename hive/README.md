@@ -2,6 +2,11 @@
 
 SET hive.cli.print.header=true;
 
+#### Repair
+
+MSCK REPAIR TABLE
+
+emrfs synch
 
 ### Hive UDF
 https://stackoverflow.com/questions/13940498/how-to-create-a-hive-udf-for-all-sessions
