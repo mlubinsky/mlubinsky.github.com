@@ -16,11 +16,19 @@ pyenv + poetry
 https://briansunter.com/blog/python-setup-pyenv-poetry/
 
 
-### Flake
+### Flake Black
 
 python3 -m pip install flake8
 
 flake8 myscript.py
+
+python3 -m pip install black
+
+black --check myscript.py
+
+black --diff myscript.py
+
+black myscript.py
 
 ### pip
 
