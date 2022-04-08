@@ -479,7 +479,10 @@ https://news.ycombinator.com/item?id=24565499. python internals
 
 https://gto76.github.io/python-cheatsheet/  Cheetsheet
 
-f-strings: <https://miguendes.me/amp/73-examples-to-help-you-master-pythons-f-strings>
+### f-strings:
+<https://miguendes.me/amp/73-examples-to-help-you-master-pythons-f-strings>
+
+https://martinheinz.dev/blog/70
 
 
 
