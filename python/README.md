@@ -484,6 +484,7 @@ https://gto76.github.io/python-cheatsheet/  Cheetsheet
 
 https://martinheinz.dev/blog/70
 
+<https://habr.com/ru/post/462179/> f-strings (Python > 3.6)
 
 
 
@@ -666,6 +667,8 @@ https://www.codementor.io/@doppler/using-environment-variables-in-python-for-app
 
 ## Books
 
+Python Distilled
+Fluent Python
 
 https://effectivepython.com/ 2nd edition
 
@@ -1012,7 +1015,7 @@ python3 -m http.server <8000> (python3)
 
 <https://www.techrepublic.com/google-amp/article/how-netflix-uses-python-streaming-giant-reveals-its-programming-language-libraries-and-frameworks/>
 
-<https://habr.com/ru/post/462179/> f-strings (Python > 3.6)
+
 
 <https://www.blog.duomly.com/20-essential-python-tips-and-tricks-you-should-know/>
 
