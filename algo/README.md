@@ -251,6 +251,8 @@ https://youtu.be/lbcswonQmGs selection sort
 
 ## Hash function and hashtable 
 
+https://www.andreinc.net/2022/03/15/perfect-hashing-with-java
+
 https://blog.bradfieldcs.com/an-introduction-to-hashing-in-the-era-of-machine-learning-6039394549b0
 
  https://www.andreinc.net/2021/11/08/a-tale-of-java-hash-tables
