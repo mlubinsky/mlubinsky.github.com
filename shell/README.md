@@ -11,6 +11,8 @@ https://github.com/dylanaraps/pure-bash-bible
 
 http://mywiki.wooledge.org/BashPitfalls
 
+https://medium.com/capital-one-tech/bashing-the-bash-replacing-shell-scripts-with-python-d8d201bc0989
+
 ### Visidata
 https://jsvine.github.io/intro-to-visidata/the-big-picture/visidata-in-60-seconds/
 
