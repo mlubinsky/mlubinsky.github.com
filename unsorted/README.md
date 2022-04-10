@@ -64,6 +64,8 @@ http://www.belousenko.com/books/pomerants/pomerants_utenok.pdf
 
 https://jewishpogroms.info/wp-content/uploads/2021/12/Pogromy-Book-NadiaLipes.pdf
 
+https://www.complexityexplorer.org/courses
+
 https://web.archive.org/web/20060920043324/http://www.msu.edu/~shlapent/memoirr.htm
 
  https://www.uhnwidata.com/den-of-rich/mikhail-katsnelson
