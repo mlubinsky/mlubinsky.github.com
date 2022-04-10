@@ -1257,9 +1257,11 @@ https://habr.com/ru/post/579410/ interview for ML
 
 <https://skillupper.com/>
 
-<https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/>
+### Hash
 
 <https://moultano.wordpress.com/2018/11/08/minhashing-3kbzhsxyg4467-6/>
+
+https://realpython.com/python-hash-table/
 
 <https://habr.com/post/430788/>
 
