@@ -2,6 +2,8 @@ https://physicsbaseddeeplearning.org/intro.html . BOOK
 
 https://www.mlexample.com/ . BOOK
 
+https://arxiv.org/abs/2203.08890  The Mathematics of Artificial Intelligence
+
 https://machinelearningrecipes.com/blog/post/1687564/stochastic-processes-and-simulations
 
 https://deepmind.com/learning-resources/reinforcement-learning-series-2021  
