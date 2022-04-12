@@ -93,6 +93,10 @@ https://arxiv.org/abs/2011.12671 Sidney Coleman's Dirac Lecture "Quantum Mechani
 http://www.physics.umd.edu/courses/Phys401/bedaque07/misconnzz.pdf Common Misconceptions Regarding Quantum Mechanics
 
 
+### Relativistic QM
+
+https://www.youtube.com/playlist?list=PLbMVogVj5nJTDMhThY9xu2Tvg0u1RPuxO
+
 ### 
 
 https://arxiv.org/pdf/2112.05619.pdf
