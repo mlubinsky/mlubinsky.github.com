@@ -2,6 +2,15 @@
 
 https://arxiv.org/pdf/1907.01060.pdf . (ru)
 
+Non-euilibrium stat mechanics
+https://www.youtube.com/playlist?list=PLbMVogVj5nJQqNx0ElSk3Ip04Ofg7B22W
+
+Physical Applications of Stochastic Processes by Prof. V. Balakrishnan,Department of Physics,IIT Madras.
+https://www.youtube.com/playlist?list=PLbMVogVj5nJQo8D9D-D6lMqh4FJbPeE_f
+
+
+https://www.youtube.com/playlist?list=PLbMVogVj5nJQqNx0ElSk3Ip04Ofg7B22W
+
 https://machinelearningrecipes.com/blog/post/1687564/stochastic-processes-and-simulations BOOK
 
 https://stepik.org/course/57281/promo . Теория вероятностей - II (дискретные случайные процессы)
