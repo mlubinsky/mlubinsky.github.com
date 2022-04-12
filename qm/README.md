@@ -30,6 +30,11 @@ https://journals.nsu.ru/siberian-journal-physics/archive/2008/T3V2/5/0125/  Иг
 https://www.youtube.com/playlist?list=PL193BC0532FE7B02C Quantum Mechanics  
 
 
+MIT QUANTUM PHYSICS 
+https://ocw.mit.edu/search/?q=QUANTUM%20PHYSICS
+
+https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/
+
 https://mipt.lectoriy.ru/course?category=TheoreticalPhysics
 
 https://www.sciencedirect.com/science/article/pii/S0003491619300120 Separation of conditions as a prerequisite for quantum theory
