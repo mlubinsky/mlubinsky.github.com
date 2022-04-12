@@ -227,6 +227,8 @@ https://www.youtube.com/watch?v=cXHvC_FGx24 SciPy Optimization
  
 ### Chaos , Solitons, Dynamical systems
 
+https://www.youtube.com/playlist?list=PLbMVogVj5nJQKk1E7OUQs_TcW_zQoaO4t
+
 https://www.youtube.com/watch?v=-FvrON0OmYc
 
 This course of 25 lectures, filmed at Cornell University in Spring 2014, is intended for newcomers to nonlinear dynamics and chaos. It closely follows Prof. Strogatz's book, "Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering." :
