@@ -2,6 +2,9 @@ https://penrose.ink/siggraph20.html   Math visualization
 
 https://github.com/Eugene-Mark/bigdata-file-viewer
 
+
+https://coteditor.com/
+
 #### Nova (not free)
 
 https://nova.app/
