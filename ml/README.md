@@ -11,6 +11,8 @@ https://machinelearningrecipes.com/blog/post/1687564/stochastic-processes-and-si
 
 https://deepmind.com/learning-resources/reinforcement-learning-series-2021  
 
+https://www.assemblyai.com/blog/differentiable-programming-a-simple-introduction/
+
 Никита Калинин, топологическ анализ данных
 
 https://www.youtube.com/playlist?list=PLKXEsFnBcT5BD47xO19UsKshsQ7DMU3Sa
