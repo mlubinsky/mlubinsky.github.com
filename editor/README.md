@@ -2,6 +2,7 @@ https://penrose.ink/siggraph20.html   Math visualization
 
 https://github.com/Eugene-Mark/bigdata-file-viewer
 
+https://www.zeditor.app/
 
 https://coteditor.com/
 
