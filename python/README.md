@@ -482,6 +482,8 @@ https://gto76.github.io/python-cheatsheet/  Cheetsheet
 ### f-strings:
 <https://miguendes.me/amp/73-examples-to-help-you-master-pythons-f-strings>
 
+https://www.pythonmorsels.com/string-formatting/
+
 https://martinheinz.dev/blog/70
 
 <https://habr.com/ru/post/462179/> f-strings (Python > 3.6)
