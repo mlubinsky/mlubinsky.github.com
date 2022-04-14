@@ -119,6 +119,19 @@ Overwrite single file in my current branch with the same file in the master bran
 
 ## Remote repo
 
+git config --get remote.origin.url
+
+get remote branch
+```
+git fetch
+git checkout branchnamehere
+```
+if above does not work then try:
+```
+  git checkout -b  PROGDE-1891 origin/PROGDE-1891
+  git fetch
+```
+
 <https://gist.github.com/Chaser324/ce0505fbed06b947d962>
 
 ## Rebasing and Squashing
