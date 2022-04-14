@@ -1,5 +1,7 @@
 https://pdm.fming.dev/ PDM
 
+https://realpython.com/python-virtual-environments-a-primer/ 
+
 https://hackercodex.com/guide/python-development-environment-on-mac-osx/
 
 https://bas.codes/posts/python-virtualenv-venv-pip-pyenv-poetry
