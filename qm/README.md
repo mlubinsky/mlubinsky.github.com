@@ -6,6 +6,8 @@ https://www.youtube.com/playlist?list=PLHyI3Fbmv0Sem-xmU7PHh61zhjvttWidT
 
 https://www.youtube.com/watch?v=42TYj0C4zzg&list=PLqdhXM8ko4WEFhN5uw8lFnR1jM9MfZgzm Чирцов Александр:  
 
+https://ocw.mit.edu/search/?q=QUANTUM%20PHYSICS MIT
+
 http://blog.rudnyi.ru/ru/2022/04/ponyatna-li-klassicheskaya-mehanika-2.html
 
 канал по дистанционному образованию в МФТИ
