@@ -3,6 +3,8 @@
 
 https://habr.com/ru/post/658707/
 
+https://habr.com/ru/company/otus/blog/658311/
+
 https://towardsdatascience.com/detect-change-points-with-bayesian-inference-and-pymc3-3b4f3ae6b9bb
 
 https://towardsdatascience.com/a-gentle-intro-to-conjugate-priors-8be6ac0d31f6
