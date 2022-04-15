@@ -45,11 +45,16 @@ Important:
 Pointers with python: https://yurichev.com/news/20211223_Py_ptrs/
 
 
-```
  python -m py_compile my.py   # Check file syntax
  
- python -m json.tool my_json.json   # json beautifier - warning: will sort the keys ard remove .0 !
- ```
+
+ 
+python -m json.tool my_json.json   # json beautifier - warning: will sort the keys ard remove .0 !
+
+
+ ### JSON processing tools
+ 
+ https://github.com/dcmoura/spyql  very fast
  
  process big json files
  https://pythonspeed.com/articles/json-memory-streaming/
@@ -77,6 +82,43 @@ with open(fname, 'r') as handle:
 pp_json(json_string_or_dict, False, 2)
 
 ```
+ 
+Another useful python json processing script: https://replit.com/@gabrielsroka/Bash#pj.py
+```
+""" (space/comma)-delimited list of dotted values, eg
+echo "$r" | python pj.py 'id profile.login profile.email'
+or
+echo "$r" | python pj.py 'id,profile.login,profile.email'
+
+where $r is a JSON object or an array of objects
+"""
+
+import json
+import sys
+
+def main():
+    for d in [', ', ',', ' ']: # these are in order
+        keys = sys.argv[1].split(d)
+        if len(keys) > 1:
+            break
+
+    j = json.load(sys.stdin)
+    os = j if (type(j) is list) else [j]
+    for o in os:
+        print(d.join(dot(o, key) for key in keys))
+
+def dot(v, key):
+    """dot({a:{b:'c'}}, 'a.b') -> 'c'."""
+    for k in key.split('.'):
+        v = v.get(k)
+        if not v:
+            return ''
+    return v
+
+main()
+```
+ 
+ 
  
  https://sadh.life/post/builtins/
  
