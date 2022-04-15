@@ -52,7 +52,7 @@ http://www.numericalexpert.com/blog/online_stat/ single pass for (variance, skew
 
 http://www.numericalexpert.com/tutorials.php
 
-
+precision and recall https://habr.com/ru/post/661119/
 
 
 https://sakshamgulati123.medium.com/an-intuitive-guide-to-various-statistical-tests-d8148105eeca
