@@ -1,6 +1,8 @@
 Делайте что хотите, но пусть это приносит радость
 /Уолт Уитмен/
 
+https://massolit.site/book/garri-potter-sbornik-7-knig-lp
+
 https://news.ycombinator.com/item?id=30230620
 
 https://news.ycombinator.com/item?id=30593302 Regrets of dying
