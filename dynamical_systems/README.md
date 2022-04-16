@@ -7,6 +7,8 @@ https://www.youtube.com/watch?v=-FvrON0OmYc
 Introduction to Linear Dynamical Systems (EE263)
 <https://www.youtube.com/playlist?list=PL06960BA52D0DB32B>
 
+Physics - Nonlynear Dynamic
+https://www.youtube.com/playlist?list=PLbMVogVj5nJQKk1E7OUQs_TcW_zQoaO4t
 
 https://www.youtube.com/watch?v=WJFU_KEyjus Vladimir Yankov
 
