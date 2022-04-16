@@ -2,6 +2,10 @@
 
 SET hive.cli.print.header=true;
 
+### Order by positional
+
+SET hive.groupby.orderby.position.alias=true;
+
 #### Repair
 
 MSCK REPAIR TABLE
