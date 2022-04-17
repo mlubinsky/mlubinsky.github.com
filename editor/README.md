@@ -6,7 +6,10 @@ https://www.zeditor.app/
 
 https://coteditor.com/
 
+### Helix 
 https://helix-editor.com/
+
+https://www.youtube.com/watch?v=9Zj-wiQ9_Xw
 
 #### Nova (not free)
 
