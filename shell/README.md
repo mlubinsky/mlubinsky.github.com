@@ -1,3 +1,8 @@
+### Shebang
+
+https://scriptingosx.com/2022/04/on-env-shebangs/
+
+https://news.ycombinator.com/item?id=31027532
 First line in every bash file should be:
 ```
 #!/usr/bin/env bash
