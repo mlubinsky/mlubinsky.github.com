@@ -2,6 +2,12 @@ https://yoshuabengio.org/
 
 https://weightagnostic.github.io/. Weight agnostic NN
 
+### 	The Principles of Deep Learning Theory
+
+https://arxiv.org/abs/2106.10165
+
+https://news.ycombinator.com/item?id=31051540
+
 ### Books
 
 https://sebastianraschka.com/blog/2022/ml-pytorch-book.html
