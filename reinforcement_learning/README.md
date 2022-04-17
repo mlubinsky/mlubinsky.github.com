@@ -1,5 +1,7 @@
 <https://sites.ualberta.ca/~szepesva/RLBook.html>
 
+https://web.mit.edu/dimitrib/www/RLbook.html
+
 https://habr.com/ru/post/599923/
 
 https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
