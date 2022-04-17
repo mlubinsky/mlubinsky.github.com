@@ -2,6 +2,10 @@
 
 https://arxiv.org/pdf/1907.01060.pdf . (ru)
 
+https://www.youtube.com/watch?v=YuMIO_3xGuQ
+
+https://www.edx.org/course/stochastic-processes-data-analysis-and-computer-si#!
+
 Non-euilibrium stat mechanics
 https://www.youtube.com/playlist?list=PLbMVogVj5nJQqNx0ElSk3Ip04Ofg7B22W
 
