@@ -33,6 +33,10 @@ https://www.feynmanlectures.caltech.edu/III_toc.html
 
 ### Stat physics
 
+https://arxiv.org/vc/arxiv/papers/0911/0911.2076v3.pdf
+
+https://vida-louca.livejournal.com/60575.html
+
 https://www.youtube.com/watch?v=D1RzvXDXyqA Leonard Susskind 
 
 https://ikfia.ysn.ru/statisticheskaya-fizika/  
