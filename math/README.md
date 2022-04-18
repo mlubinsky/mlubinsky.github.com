@@ -6,6 +6,8 @@ https://www.youtube.com/channel/UC_fq8SDW37l86fdJxlprL1A
 Никита Калинин - топологический анализ данных
 https://www.youtube.com/playlist?list=PLKXEsFnBcT5BD47xO19UsKshsQ7DMU3Sa
 
+https://github.com/gillescastel/lecture-notes/
+
  Topology
  https://www.topologywithouttears.net/
 
