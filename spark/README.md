@@ -8,6 +8,8 @@ https://habr.com/ru/company/otus/blog/653033/ Spark ML example
 
 https://stackoverflow.com/questions/39067505/pyspark-display-a-spark-data-frame-in-a-table-format
 
+https://medium.com/credera-engineering/how-to-write-unit-tests-for-spark-f8ea22cf6448 Unit test
+
 ```
 df.show(n=2, truncate=False, vertical=True)
 
