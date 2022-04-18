@@ -95,6 +95,9 @@ val data = df0.unionAll(df1Over)
 data.groupBy("target").count.show        
 ```
 
+### PySpark
+https://insaid.medium.com/eda-with-pyspark-1f29b7d1618
+
 https://habr.com/ru/company/otus/blog/594787/ . pandaspark pyspark in spark 3.2
 
 https://towardsdatascience.com/six-spark-exercises-to-rule-them-all-242445b24565
