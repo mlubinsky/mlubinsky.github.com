@@ -18,6 +18,13 @@ http://mywiki.wooledge.org/BashPitfalls
 
 https://medium.com/capital-one-tech/bashing-the-bash-replacing-shell-scripts-with-python-d8d201bc0989
 
+### JSON
+
+jq https://stedolan.github.io/jq/
+
+https://github.com/antonmedv/fx
+
+
 ### Visidata
 https://jsvine.github.io/intro-to-visidata/the-big-picture/visidata-in-60-seconds/
 
