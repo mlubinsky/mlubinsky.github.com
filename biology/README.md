@@ -6,7 +6,9 @@ https://scholar.google.com/citations?hl=en&user=nEEFLp0AAAAJ&view_op=list_works&
 От атомов к древу. Введение в современную науку о жизни
  https://vsenauka.ru/knigi/vsenauchnyie-knigi/book-details.html?id=823
  
- 
+ A Review of Mathematical and Computational Methods in Cancer Dynamics
+https://arxiv.org/abs/2201.02055
+
 https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014/video_galleries/lecture-videos/
 
  
