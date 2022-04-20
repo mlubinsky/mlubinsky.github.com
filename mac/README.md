@@ -25,6 +25,9 @@ https://kapeli.com/dash
 
 https://thume.ca/2020/09/04/macos-tips/
 
+https://github.com/orf/crontabula Parse crontab expression in Python
+
+https://github.com/yukondude/Scripnix
 
 ### Mac shortcuts
 
