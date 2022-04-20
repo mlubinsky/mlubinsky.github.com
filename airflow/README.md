@@ -1,3 +1,39 @@
+Четыре хитрости в работе с пайплайнами данных, о которых знают не все
+https://habr.com/ru/company/vk/blog/659389/
+
+e-mail notification
+```
+from airflow.utils.email import send_email
+
+email_to = 'receivers@email.com'
+email_subject = '(FAILED) ' + jobname + date
+email_content = 'Your job has failed.'
+send_email(email_to, email_subject, email_content)
+```
+Slack nitification https://slack.dev/python-slack-sdk/web/index.html
+```
+from slack import WebClient
+client = WebClient(token = 'your token here')
+response = client.chat_postMessage(
+                channel = slack_cannel,
+                text = message
+                )
+ ```   
+ Logging
+``` 
+Import PostgresHook
+
+#Extraction Job
+def ExtractFromSource(query):
+    query_to_run = query
+    logging.info("Query : %" query_to_run)
+    
+    cursor = PostgresHook(connection).get_conn().cursor()
+    logging.info("Connecting to Postgres Connection %" connection)
+cursor.execute(query_to_run)
+    result = cursor.fetchall()
+```
+
 ## Airflow sensors
 
 https://marclamberti.com/blog/airflow-sensors/
