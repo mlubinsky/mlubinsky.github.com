@@ -1,5 +1,7 @@
 Ветераны броуновского движения - Вступайте в ряды Фурье!
 
+https://math.stackexchange.com/questions/302023/best-sets-of-lecture-notes-and-articles
+
 Math-Net.Ru channel on youtube:
 https://www.youtube.com/channel/UC_fq8SDW37l86fdJxlprL1A
 
