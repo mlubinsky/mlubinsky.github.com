@@ -83,6 +83,9 @@ https://learnbyexample.github.io/gnu-bre-ere-cheatsheet/
 <https://news.ycombinator.com/item?id=21772336>   JavaScript
 
 
+### Parsing with Go
+
+https://blog.gopheracademy.com/advent-2014/parsers-lexers/
 ## Parsers
 
 <https://chelseatroy.com/2019/11/11/building-a-parser/>
