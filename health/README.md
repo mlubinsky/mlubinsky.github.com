@@ -1,6 +1,8 @@
 OLD Freelancer
 https://www.youtube.com/watch?v=wKTiK7SlfF4
 
+https://www.lesswrong.com/posts/ui6mDLdqXkaXiDMJ5/core-pathways-of-aging
+
 https://www.youtube.com/watch?v=lokOJCCbKMQ
 
 https://www.youtube.com/watch?v=eJMMPgVh-cQ
