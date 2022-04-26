@@ -216,6 +216,9 @@ https://statisticsbyjim.com/basics/z-score
 
 
 ### Casual inference
+
+https://habr.com/ru/company/ods/blog/544208/
+
 https://matheusfacure.github.io/python-causality-handbook/landing-page.html
 
 https://microsoft.github.io/dowhy/
