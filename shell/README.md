@@ -24,6 +24,12 @@ jq https://stedolan.github.io/jq/
 
 https://github.com/antonmedv/fx
 
+Commandline tool for running SQL queries against JSON, CSV, Excel, Parquet, and more:
+ 
+https://github.com/multiprocessio/dsq
+https://github.com/harelba/q
+https://github.com/dinedal/textql
+https://github.com/roapi/roapi/tree/main/columnq-cli  SQL for  parquet, csv, arrow files
 
 ### Visidata
 https://jsvine.github.io/intro-to-visidata/the-big-picture/visidata-in-60-seconds/
@@ -61,7 +67,7 @@ awk '{print $4}' | \
 xargs -I FNAME sh -c "echo FNAME; aws s3 cp ${B}FNAME - | zgrep -i -c XXX"
 ```
 
-https://github.com/roapi/roapi/tree/main/columnq-cli  SQL for  parquet, csv, arrow files
+
 
 ### Remove trailing spaces
 ```
