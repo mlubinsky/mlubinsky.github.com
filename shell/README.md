@@ -8,6 +8,11 @@ First line in every bash file should be:
 #!/usr/bin/env bash
 ```
 
+list of files in current folder:
+
+echo * | tr ' ' '\n'
+ 
+
 https://www.mulle-kybernetik.com/modern-bash-scripting/
 
 https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
