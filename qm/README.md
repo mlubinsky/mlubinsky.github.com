@@ -36,6 +36,8 @@ https://journals.nsu.ru/siberian-journal-physics/archive/2008/T3V2/5/0125/  Иг
 https://www.youtube.com/playlist?list=PL193BC0532FE7B02C Quantum Mechanics  
 
 
+https://ilovetheuniverse.com/this-is-the-worlds-first-image-of-light-as-both-a-particle-and-a-wave 
+
 MIT QUANTUM PHYSICS 
 https://ocw.mit.edu/search/?q=QUANTUM%20PHYSICS
 
