@@ -25,3 +25,18 @@ https://www.youtube.com/watch?v=2VBN_dJZLWc&t=3906s
 https://www.youtube.com/playlist?list=PLbN57C5Zdl6j_qJA-pARJnKsmROzPnO9V
 
 https://www.youtube.com/watch?v=HKsyGrp7fPg&list=PLLi3bLYwJwuMBvrTC64AaNEUJp2tcnlmb Динамические системы и бифуркации // Виктор Клепцын
+
+
+## Dynamic systems
+
+https://galileo-unbound.blog/2021/07/19/random-walks-with-paul-langevin-stochastic-dynamics/
+
+https://github.com/hsayama/PyCX
+
+https://habr.com/ru/company/mailru/blog/513016/
+
+https://habr.com/ru/post/249429/
+
+https://galileo-unbound.blog/
+
+https://habr.com/ru/company/hsespb/blog/517838/. in C++
