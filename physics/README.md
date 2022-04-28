@@ -139,6 +139,10 @@ https://habr.com/ru/post/544030/ FermiNet
 
 ### Entropy
 
+https://www.cantorsparadise.com/it-took-me-10-years-to-understand-entropy-here-is-what-i-learned-b2d51e8ccd4c
+
+https://news.ycombinator.com/item?id=31164725
+
 https://arxiv.org/abs/2202.07982
 
 https://habr.com/ru/company/JetBrains-education/blog/599637/
@@ -659,19 +663,6 @@ The following packages will be downloaded:
      jupyter notebook
 ```
 
-## Dynamic systems
-
-https://galileo-unbound.blog/2021/07/19/random-walks-with-paul-langevin-stochastic-dynamics/
-
-https://github.com/hsayama/PyCX
-
-https://habr.com/ru/company/mailru/blog/513016/
-
-https://habr.com/ru/post/249429/
-
-https://galileo-unbound.blog/
-
-https://habr.com/ru/company/hsespb/blog/517838/. in C++
 
  
 
