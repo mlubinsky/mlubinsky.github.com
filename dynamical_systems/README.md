@@ -3,6 +3,7 @@ https://www.youtube.com/watch?v=2VBN_dJZLWc.   Dynamical Systems (Part 1/2)
 
 https://www.youtube.com/watch?v=-FvrON0OmYc
 
+Extreme events in dynamical systems and random walkers: A review https://arxiv.org/abs/2109.11219
 
 Introduction to Linear Dynamical Systems (EE263)
 <https://www.youtube.com/playlist?list=PL06960BA52D0DB32B>
