@@ -3,6 +3,9 @@
 
 https://massolit.site/book/garri-potter-sbornik-7-knig-lp
 
+https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
+https://news.ycombinator.com/item?id=31199300
+
 https://news.ycombinator.com/item?id=30230620
 
 https://news.ycombinator.com/item?id=30593302 Regrets of dying
