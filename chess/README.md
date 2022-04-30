@@ -26,6 +26,7 @@ https://www.youtube.com/watch?v=foniOh5Mjv4
 12 Nbc7+ Kd7
 13 Qg4+
 ```
+https://news.ycombinator.com/item?id=30975583 Why chess problem are attack-oriented?
 
 <https://chess.stackexchange.com/questions/75/very-aggressive-openings> Agressive opening
 
