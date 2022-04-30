@@ -36,6 +36,8 @@ https://github.com/hsayama/PyCX
 
 https://habr.com/ru/company/mailru/blog/513016/
 
+https://habr.com/ru/company/vk/blog/513016/
+
 https://habr.com/ru/post/249429/
 
 https://galileo-unbound.blog/
