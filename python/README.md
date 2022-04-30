@@ -26,6 +26,8 @@ https://www.reddit.com/r/Python/comments/r6aqji/how_do_you_deploy_python_applica
 
 https://blog.guilatrova.dev/
 
+https://pypi.org/project/parquet-tools/
+
 ### Build-ins  
 https://www.pythonmorsels.com/built-in-functions-in-python/.  
 
