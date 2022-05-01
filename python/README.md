@@ -173,13 +173,24 @@ Output:
 ```
 
 #### DefaultDict
-```
+``` 
 from collections import defaultdict
+
+dict_of_list = defaultdict(list)
+dict_of_list[key].append(element)
+
 toAdd =[("key1", 3), ("key2", 5), ("key3", 6), ("key2", 7)]
 d = defaultdict(list)
 for key, val in toAdd:
   d[key].append(val)
+  
+  
+city = defaultdict(str)
+city['UK'] = 'London'
+print(city['Italy'] == '')
+True  
 ```
+
 
  ```
  last element of array:
@@ -215,8 +226,7 @@ The list.sort() method is only defined for lists. In contrast, the sorted() func
 
 Note that both list.sort() and sorted() have a key parameter t
 
- Merging dictionaries
- 
+ Merging 2 dictionaries
  
 dict1 = {'a':2 , 'b': 20}
 dict2 = {'c':15 , 'a': 40}
@@ -350,11 +360,7 @@ city = {'UK':'London','Japan':'Tokyo'}
 print(city.get('Italy'))  get() function can return a None instead of raising an exception when a key doesn’t exist.
   None
   
-from collections import defaultdict
-city = defaultdict(str)
-city['UK'] = 'London'
-print(city['Italy'] == '')
-True
+
 
 to combine two dictionaries:
 
@@ -446,14 +452,17 @@ https://betterprogramming.pub/3-data-processing-pipelines-you-can-build-with-pyt
 https://towardsdatascience.com/python-pandas-data-pipelines-515bcc678570
 
 
-### Defaultdict
-```
-from collections import defaultdict
 
-dict_of_list = defaultdict(list)
-dict_of_list[key].append(element)
-```
 
+### Download from youtube
+```
+# pip install pytube
+import pytube
+link = input('Enter Youtube Video URL')
+yt = pytube.Youtube(link)
+yt.streams.first().download()
+print('downloaded', link)
+```
 
 ```
 Now, Python is usually considered to be an interpreted language. 
