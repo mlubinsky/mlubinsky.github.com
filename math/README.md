@@ -12,6 +12,10 @@ https://www.youtube.com/playlist?list=PLKXEsFnBcT5BD47xO19UsKshsQ7DMU3Sa
 
 https://github.com/gillescastel/lecture-notes/
 
+Группы и алгебры Ли, Штепин В. В., 03.02.2022г.
+https://www.youtube.com/playlist?list=PLthfp5exSWEoWfDHiYfiRsWCgSIgC9mc4
+
+
  Topology
  https://www.topologywithouttears.net/
 
