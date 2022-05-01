@@ -103,6 +103,8 @@ https://www.pola.rs/ - fast dataframe
 
 ### Panda tricks
 
+https://tomaugspurger.github.io/
+
 https://towardsdatascience.com/4-pandas-functions-that-i-wish-i-knew-earlier-1edcc3a491bb
 
 
