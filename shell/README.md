@@ -23,6 +23,21 @@ http://mywiki.wooledge.org/BashPitfalls
 
 https://medium.com/capital-one-tech/bashing-the-bash-replacing-shell-scripts-with-python-d8d201bc0989
 
+###	Command line tools for productive programmers 
+https://news.ycombinator.com/item?id=18483460
+
+https://github.com/alebcay/awesome-shell#applications
+
+https://news.ycombinator.com/item?id=21363121
+
+https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
+ 
+https://earthly.dev/blog/command-line-tools/
+
+https://news.ycombinator.com/item?id=27992073
+
+https://news.ycombinator.com/item?id=31009313
+
 ### JSON
 
 jq https://stedolan.github.io/jq/
@@ -35,6 +50,8 @@ https://github.com/multiprocessio/dsq
 https://github.com/harelba/q
 https://github.com/dinedal/textql
 https://github.com/roapi/roapi/tree/main/columnq-cli  SQL for  parquet, csv, arrow files
+
+miller 
 
 ### Visidata
 https://jsvine.github.io/intro-to-visidata/the-big-picture/visidata-in-60-seconds/
