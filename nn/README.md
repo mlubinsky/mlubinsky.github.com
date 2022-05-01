@@ -2,6 +2,11 @@ https://yoshuabengio.org/
 
 https://weightagnostic.github.io/. Weight agnostic NN
 
+### Diff programming
+https://www.assemblyai.com/blog/differentiable-programming-a-simple-introduction/
+
+https://news.ycombinator.com/item?id=31000709
+
 ### 	The Principles of Deep Learning Theory
 
 https://arxiv.org/abs/2106.10165
