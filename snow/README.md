@@ -1,3 +1,5 @@
+https://habr.com/ru/post/663922/
+
 ### Overview
 
 https://apisero.com/airflow-integration-with-snowflake/ Airflow + Snowflake
