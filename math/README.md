@@ -2,6 +2,8 @@
 
 https://math.stackexchange.com/questions/302023/best-sets-of-lecture-notes-and-articles
 
+https://www.susanrigetti.com/math
+
 https://math.stackexchange.com/search?tab=votes&q=is%3aanswer
 
 Math-Net.Ru channel on youtube:
