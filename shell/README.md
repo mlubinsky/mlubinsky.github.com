@@ -1,3 +1,5 @@
+https://dwmkerr.com/effective-shell-part-1-navigating-the-command-line/
+
 ### Shebang
 
 https://scriptingosx.com/2022/04/on-env-shebangs/
