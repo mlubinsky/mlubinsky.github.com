@@ -1,3 +1,5 @@
+https://effective-shell.com/
+
 https://dwmkerr.com/effective-shell-part-1-navigating-the-command-line/
 
 ### Shebang
