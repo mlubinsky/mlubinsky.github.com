@@ -1,3 +1,7 @@
+Steven H.Strogatz
+Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering 
+https://www.amazon.com/Nonlinear-Dynamics-Chaos-Applications-Nonlinearity-ebook-dp-B07BMB5P15/dp/B07BMB5P15
+
 ### Steve Brunton
 https://www.youtube.com/watch?v=2VBN_dJZLWc.   Dynamical Systems (Part 1/2)
 
