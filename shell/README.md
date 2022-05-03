@@ -13,6 +13,10 @@ list of files in current folder:
 echo * | tr ' ' '\n'
  
 
+https://github.com/onceupon/Bash-Oneliner
+
+https://news.ycombinator.com/item?id=31250275
+
 https://www.mulle-kybernetik.com/modern-bash-scripting/
 
 https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
