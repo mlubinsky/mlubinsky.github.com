@@ -6,6 +6,24 @@ https://habr.com/ru/company/otus/blog/653977/ . Monitoring Apache Spark
 
 https://habr.com/ru/company/otus/blog/653033/ Spark ML example
 
+```
+nohup spark-sql 
+--master yarn  
+--conf spark.dynamicAllocation.enabled=true 
+--conf spark.executor.memoryOverhead=6GB 
+--conf spark.dynamicAllocation.maxExecutors=100 
+--conf spark.shuffle.service.enabled=true 
+--conf spark.sql.shuffle.partitions=6000 
+--conf spark.driver.maxResultSize=8g 
+--conf spark.serializer=org.apache.spark.serializer.KryoSerializer 
+--conf mapreduce.input.fileinputformat.input.dir.recursive=true 
+--conf spark.hive.mapred.supports.subdirectories=true 
+--executor-memory 30g 
+--driver-memory 10g 
+--executor-cores 5 
+-f /home/hadoop/vambati/test.hql > test.log &
+```
+
 https://stackoverflow.com/questions/39067505/pyspark-display-a-spark-data-frame-in-a-table-format
 
 https://medium.com/credera-engineering/how-to-write-unit-tests-for-spark-f8ea22cf6448 Unit test
