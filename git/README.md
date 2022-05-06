@@ -1,5 +1,7 @@
 https://www.biteinteractive.com/picturing-git-conceptions-and-misconceptions/
 
+https://stackoverflow.com/questions/9210446/how-to-replace-local-branch-with-remote-branch-entirely-in-git
+
 https://news.ycombinator.com/item?id=28392566
 
 https://ghapi.fast.ai/tutorial_actions.html  Git Actions
