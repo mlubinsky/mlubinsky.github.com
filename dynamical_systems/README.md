@@ -2,6 +2,8 @@ Steven H.Strogatz
 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering 
 https://www.amazon.com/Nonlinear-Dynamics-Chaos-Applications-Nonlinearity-ebook-dp-B07BMB5P15/dp/B07BMB5P15
 
+https://usa1lib.org/book/2961335/6837cf Теория сложности (Complexity) и системный подход
+
 ### Steve Brunton
 https://www.youtube.com/watch?v=2VBN_dJZLWc.   Dynamical Systems (Part 1/2)
 
