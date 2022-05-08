@@ -6,6 +6,10 @@ SET hive.cli.print.header=true;
 
 SET hive.groupby.orderby.position.alias=true;
 
+### See Hive settings
+
+hive -e "SET;" | grep <Search-String> 
+
 #### Repair
 
 MSCK REPAIR TABLE
