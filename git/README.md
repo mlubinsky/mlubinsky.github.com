@@ -4,6 +4,21 @@ https://stackoverflow.com/questions/9210446/how-to-replace-local-branch-with-rem
 
 https://news.ycombinator.com/item?id=28392566
 
+word diff:
+
+git diff --word-diff
+
+https://blog.ipspace.net/2020/04/git-tip-word-diff.html
+
+cat ~/.gitconfig
+
+In .gitconfig:
+
+[alias]
+
+wdiff = diff --word-diff --word-diff-regex='\\w+'
+
+
 https://ghapi.fast.ai/tutorial_actions.html  Git Actions
 
 ## Git precommit hooks
