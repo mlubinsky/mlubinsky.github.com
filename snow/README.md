@@ -1,5 +1,16 @@
 https://habr.com/ru/post/663922/
 
+###
+
+https://github.com/lynnlangit/learn-snowflakedb
+
+https://www.youtube.com/playlist?list=PLba2xJ7yxHB73xHFsyu0YViu3Hi6Ckxzj
+
+https://toppertips.com/
+
+https://toppertips.com/snowflake-etl-example-ch19-part01
+
+
 ### Overview
 
 https://apisero.com/airflow-integration-with-snowflake/ Airflow + Snowflake
