@@ -18,6 +18,8 @@ https://github.com/gillescastel/lecture-notes/
 https://www.youtube.com/playlist?list=PLthfp5exSWEoWfDHiYfiRsWCgSIgC9mc4
 
 
+https://www.youtube.com/watch?v=Iz7PSlTpjyI Lee Algebra
+
  Topology
  https://www.topologywithouttears.net/
 
