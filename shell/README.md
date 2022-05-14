@@ -1,5 +1,7 @@
 https://effective-shell.com/
 
+https://dashdash.io/
+
 https://dwmkerr.com/effective-shell-part-1-navigating-the-command-line/
 
 ### Shebang
