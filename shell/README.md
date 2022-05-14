@@ -50,6 +50,10 @@ https://news.ycombinator.com/item?id=31009313
 
 jq https://stedolan.github.io/jq/
 
+```
+cat a.json | jq -r '.key'
+```
+
 https://github.com/antonmedv/fx
 
 Commandline tool for running SQL queries against JSON, CSV, Excel, Parquet, and more:
