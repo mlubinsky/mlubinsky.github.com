@@ -105,6 +105,9 @@ Gene therapy (ru)
 https://www.youtube.com/watch?v=QybCCXJdLn8&t=2s
 
 ### Molecular biology
+МФТИ Молекулярная биология, Пупов Д. В., 22.04.2022
+https://www.youtube.com/playlist?list=PLthfp5exSWEqHCSmeN7RkAGVl9ck4iDzL
+
 
 <https://news.ycombinator.com/item?id=22763100>
 
