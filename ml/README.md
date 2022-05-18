@@ -571,6 +571,10 @@ https://habr.com/ru/company/productstar/blog/523044/ Decision Tree
 
 <https://leimao.github.io/article/>
 
+### Categorial encodig
+
+https://habr.com/ru/post/666234/
+
 <https://towardsdatascience.com/stop-one-hot-encoding-your-categorical-variables-bbb0fba89809> One-Hot Encoding
 
 Amazon ML classes:
