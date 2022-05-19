@@ -35,6 +35,51 @@ tutorial_etl_dag = tutorial_taskflow_api_etl()
 ```
 
 
+### Writing DAG with XCOM
+From https://databand.ai/blog/airflow-2-0-and-why-we-are-excited-at-databand/
+```
+def prepare_email(**kwargs):
+    ti = kwargs['ti']
+    raw_json = ti.xcom_pull(task_ids='get_ip')
+    external_ip = json.loads(raw_json)['origin']
+    ti.xcom_push(key="subject", value=f'Server connected from {external_ip}')
+    ti.xcom_push(key="body", value=f'Seems like today your server executing Airflow is connected from the external IP {external_ip}')
+
+with DAG('send_server_ip', default_args=default_args, schedule_interval=None) as dag:
+    get_ip = SimpleHttpOperator(task_id='get_ip', endpoint='get', method='GET', xcom_push=True)
+    email_info = PythonOperator(task_id="prepare_email", python_callable=prepare_email, xcom_push=True, provide_context=True)
+    send_email = EmailOperator(
+        task_id='send_email',
+        to='example@example.com',
+        subject="{{ ti.xcom_pull(key='subject', task_ids='prepare_email') }}",
+        html_content="{{ ti.xcom_pull(key='body', task_ids='prepare_email') }}"
+    )
+
+get_ip >> email_info >> send_email
+```
+### Writing DAGs with decorators
+From https://databand.ai/blog/airflow-2-0-and-why-we-are-excited-at-databand/
+
+```
+@task(multiple_outputs=True)
+def prepare_email(raw_json: str) -> Dict[str, str]:
+    external_ip = json.loads(raw_json)['origin']
+    return {
+        'subject':f'Server connected from {external_ip}',
+        'body': f'Seems like today your server executing Airflow is connected from the external IP {external_ip}'
+    }
+
+with DAG('send_server_ip', default_args=default_args, schedule_interval=None) as dag:
+    get_ip = SimpleHttpOperator(task_id='get_ip', endpoint='get', method='GET', xcom_push=True)
+    email_info = prepare_email(get_ip.output)
+    send_email = EmailOperator(
+        task_id='send_email',
+        to='example@example.com',
+        subject=email_info['subject'],
+        html_content=email_info['body']
+    )
+
+```
 
 Четыре хитрости в работе с пайплайнами данных, о которых знают не все
 https://habr.com/ru/company/vk/blog/659389/
