@@ -59,7 +59,11 @@ get_ip >> email_info >> send_email
 ```
 ### Writing DAGs with decorators
 From https://databand.ai/blog/airflow-2-0-and-why-we-are-excited-at-databand/
+https://databand.ai/blog/streamline-your-pipeline-code-with-functional-dags-in-airflow-2-0/
 
+Annotating a function with the @task decorator converts the function to a “PythonFunctionalOperator” that’s created behind the scenes when Airflow prepares your DAG for execution. 
+
+The multiple_outputs attribute marks that this function will return more than a single value.
 ```
 @task(multiple_outputs=True)
 def prepare_email(raw_json: str) -> Dict[str, str]:
