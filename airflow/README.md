@@ -1,4 +1,6 @@
 ### Airflow 2
+https://airflow.apache.org/blog/airflow-two-point-oh-is-here/
+
 ```
 from airflow.decorators import dag, task
 from airflow.utils.dates import days_ago
