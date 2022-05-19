@@ -9,8 +9,11 @@ https://scholar.google.com/citations?hl=en&user=nEEFLp0AAAAJ&view_op=list_works&
  A Review of Mathematical and Computational Methods in Cancer Dynamics
 https://arxiv.org/abs/2201.02055
 
+System Biology MIT
 https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014/video_galleries/lecture-videos/
 
+ 
+ https://www.quantamagazine.org/in-worms-inheritance-beyond-genes-can-help-evolution-20220419/ 
  
 https://www.quantamagazine.org/most-complete-simulation-of-a-cell-probes-lifes-hidden-rules-20220224/ 
  
