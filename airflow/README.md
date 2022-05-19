@@ -1,6 +1,8 @@
 ### Airflow 2
 https://airflow.apache.org/blog/airflow-two-point-oh-is-here/
 
+Airflow 2.3.0 dropped support for Python 3.6. It’s tested with Python 3.7, 3.8, 3.9 and 3.10.
+
 ```
 from airflow.decorators import dag, task
 from airflow.utils.dates import days_ago
