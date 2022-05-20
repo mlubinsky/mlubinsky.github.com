@@ -1,5 +1,7 @@
 VPN https://p4pn.net/install/
 
+https://sre.google/books/. Google site reliability books
+
 https://habr.com/ru/company/jugru/blog/586376/. Chrome extensions
 
 https://memo.barrucadu.co.uk/scheduling-problems.html . Solving Scheduling Problems with Integer Linear Programming with Python
