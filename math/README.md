@@ -1,3 +1,7 @@
+Render math expression in Markdown
+https://news.ycombinator.com/item?id=31438864
+
+
 Ветераны броуновского движения - Вступайте в ряды Фурье!
 
 https://math.stackexchange.com/questions/302023/best-sets-of-lecture-notes-and-articles
