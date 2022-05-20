@@ -1,3 +1,8 @@
+GUI for SQLite
+
+https://lobste.rs/s/k9hzrj/db_browser_for_sqlite
+
+
 https://github.com/lana-k/sqliteviz +Plotly
 
 https://news.ycombinator.com/item?id=30610532. SQL Lite + CSV
