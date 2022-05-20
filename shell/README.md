@@ -4,6 +4,8 @@ https://dashdash.io/
 
 https://dwmkerr.com/effective-shell-part-1-navigating-the-command-line/
 
+https://news.ycombinator.com/item?id=31448148 new command line tools like fd, etc
+
 ### Shebang
 
 https://scriptingosx.com/2022/04/on-env-shebangs/
