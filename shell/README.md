@@ -54,6 +54,11 @@ https://news.ycombinator.com/item?id=31009313
 
 jq https://stedolan.github.io/jq/
 
+https://blog.kellybrazil.com/2021/04/12/practical-json-at-the-command-line/
+
+ 
+
+
 ```
 cat a.json | jq -r '.key'
 ```
