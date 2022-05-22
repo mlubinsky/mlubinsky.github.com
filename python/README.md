@@ -28,6 +28,8 @@ https://blog.guilatrova.dev/
 
 https://pypi.org/project/parquet-tools/
 
+https://antonz.org/compact-objects/
+
 ### Build-ins  
 https://www.pythonmorsels.com/built-in-functions-in-python/.  
 
