@@ -1,3 +1,13 @@
+https://shopify.engineering/lessons-learned-apache-airflow-scale
+
+https://news.ycombinator.com/item?id=31480320
+
+docker-compose up --build
+
+MWAA is abbreviation of:
+https://aws.amazon.com/managed-workflows-for-apache-airflow/
+
+
 ### Airflow 2
 https://airflow.apache.org/blog/airflow-two-point-oh-is-here/
 
