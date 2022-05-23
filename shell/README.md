@@ -56,7 +56,44 @@ jq https://stedolan.github.io/jq/
 
 https://blog.kellybrazil.com/2021/04/12/practical-json-at-the-command-line/
 
- 
+https://habr.com/ru/company/timeweb/blog/561214/ JSON utilities 
+
+https://habr.com/ru/company/otus/blog/665642/
+
+
+```
+#1. 
+get_status() {
+    curl -s -X GET $RETRIEVE_ENDPOINT \
+    -H 'Content-Type: application/json' \
+    -d "${JSON_DATA}" \
+    | jq -r '.status' \
+    | cat
+}
+
+# 2. prepare request
+JSON_DATA=$(jq -n \
+              --arg maestroqa_token "$MAESTROQA_TOKEN" \
+              --arg export_id "$EXPORT_ID" \
+              '{apiToken: $maestroqa_token, exportId: $export_id }' )
+
+# 3. get current status ("in progress" / "complete")
+STATUS="$(get_status)"
+printf "STATUS=$STATUS\n"
+
+# 4. poll every 10 seconds
+while [ "$STATUS" != "complete" ]; do
+  printf "STATUS=$STATUS\n"
+  sleep 10
+  STATUS="$(get_status)"
+done
+```
+
+
+
+
+
+
 
 
 ```
@@ -183,7 +220,7 @@ https://darrenburns.net/posts/tools/
 https://darrenburns.net/posts/command-line-tools-iv
 
 
-https://habr.com/ru/company/timeweb/blog/561214/ JSON utilities
+
 
 
 ### cron
