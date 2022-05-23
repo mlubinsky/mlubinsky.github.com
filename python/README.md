@@ -651,6 +651,10 @@ https://paperswithcode.com/
 
 ## Decorator
 
+https://bytepawn.com/python-decorators-for-data-scientists.html
+
+https://news.ycombinator.com/item?id=31476521
+
 https://towardsdatascience.com/10-fabulous-python-decorators-ab674a732871
 
 https://medium.com/techtofreedom/7-levels-of-using-decorators-in-python-370473fcbe76
