@@ -1,3 +1,9 @@
+Ian Tsybulkin:
+
+https://iantsybulkin.medium.com/clustering-openings-of-chess-games-7fe0e36a6fae
+
+
+
 https://news.ycombinator.com/item?id=31433914
 
 Lichess vs chess.com
