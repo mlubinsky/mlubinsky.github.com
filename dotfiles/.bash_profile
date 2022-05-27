@@ -1,5 +1,5 @@
 echo "hello from bash_profile"
-set -o vi
+set -o vi #  if you want vim binding 
 
 export LSCOLORS=GxFxCxDxBxegedabagaced
 alias ls='ls -G'
@@ -17,3 +17,22 @@ git_branch() {
 }
 
 export PS1="[\W]\[\033[00;32m\]\$(git_branch)\[\033[00m\]\$ "
+
+#### zsh #####
+
+cat ~/.zshrc
+
+function git_branch_name()
+{
+  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  if [[ $branch == "" ]];
+  then
+    :
+  else
+    echo '('$branch')'
+  fi
+}
+
+# Config for prompt. PS1 synonym.
+prompt='%2/%F{yellow}$(git_branch_name)%f '
+
