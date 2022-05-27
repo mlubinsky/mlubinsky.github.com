@@ -2,6 +2,8 @@ https://yoshuabengio.org/
 
 https://weightagnostic.github.io/. Weight agnostic NN
 
+DL book https://arxiv.org/pdf/2106.10165.pdf
+
 ### Diff programming
 https://www.assemblyai.com/blog/differentiable-programming-a-simple-introduction/
 
