@@ -92,6 +92,9 @@ https://news.ycombinator.com/item?id=27748967
 
 BetterExplained.org
 
+Uniformy disribute  points in the circle
+https://news.ycombinator.com/item?id=31509536
+
 Brillant.org
 
 https://github.com/MathInspector/MathInspector. dev env with scipy
