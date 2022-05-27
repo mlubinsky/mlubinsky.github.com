@@ -25,6 +25,9 @@ https://iamondemand.com/blog/how-to-setup-lambda-using-only-the-aws-cli/
 
 https://github.com/hseera/aws-python-utilities.  AWS Python utils
 
+
+https://blog.serverlessq.com/aws-sns-vs-sqs-what-are-the-main-differences
+
 ### aws config
 ```
 [DYNAMO]$ cat  ~/.aws/config
