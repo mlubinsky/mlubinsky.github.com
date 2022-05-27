@@ -1,3 +1,5 @@
+https://architecturenotes.co/datasette-simon-willison/
+
 GUI for SQLite
 
 https://lobste.rs/s/k9hzrj/db_browser_for_sqlite
