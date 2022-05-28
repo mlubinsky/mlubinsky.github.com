@@ -6,6 +6,8 @@ https://scholar.google.com/citations?hl=en&user=nEEFLp0AAAAJ&view_op=list_works&
 От атомов к древу. Введение в современную науку о жизни
  https://vsenauka.ru/knigi/vsenauchnyie-knigi/book-details.html?id=823
  
+ https://www.quantamagazine.org/first-support-for-a-physics-theory-of-life-20170726/ 
+ 
  A Review of Mathematical and Computational Methods in Cancer Dynamics
 https://arxiv.org/abs/2201.02055
 
