@@ -4,6 +4,8 @@ https://sre.google/books/. Google site reliability books
 
 https://habr.com/ru/company/jugru/blog/586376/. Chrome extensions
 
+https://vak.dreamwidth.org/891889.html  PlantUML - generate sequence diagrams SVG from text
+
 https://memo.barrucadu.co.uk/scheduling-problems.html . Solving Scheduling Problems with Integer Linear Programming with Python
 
 
