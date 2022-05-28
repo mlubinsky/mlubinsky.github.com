@@ -1,3 +1,5 @@
+https://itnext.io/filtering-by-dynamic-attributes-90ada3504361  Filtering by dynamic attributes
+
 https://habr.com/ru/company/querifylabs/blog/578842/ SQL plan
 
 https://news.ycombinator.com/item?id=30323131  Dashboards for SQL database
