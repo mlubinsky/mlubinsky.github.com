@@ -261,6 +261,16 @@ sparkContext.broadcast
 
 ### toDebug and explain()
 
+https://medium.com/@chitrarth236/spark-dataframe-api-part-1-fundamentals-41dd51e46714
+
+By default, explain with no argument will display the physical plan
+
+explain(mode=”simple”) displays the physical plan
+explain(mode=”extended”) displays physical and various logical plans
+explain(mode=”cost”) displays the optimized logical plan and related statistics
+explain(mode=”formatted”) displays a split output composed of a physical plan outline and a section with each node’s details
+explain(mode=”codegen”) displays the java code to be executed
+
   How to  determine whether a function causes a shuffle or not without the help of documentation?
 For any function, just create an RDD and call toDebugString, for example:
 
@@ -1115,7 +1125,7 @@ https://www.slideshare.net/databricks/fine-tuning-and-enhancing-performance-of-a
 
 https://www.youtube.com/channel/UCoVVyUViJ3mfaEKVjAJSnVA
 
-https://habr.com/ru/company/X5Group/blog/579232/. PySpark
+
 
 https://mungingdata.com/apache-spark/best-books/
 
@@ -1336,8 +1346,17 @@ export PATH="$SPARK_HOME/bin/:$PATH"
 chmod +x /usr/local/Cellar/apache-spark/2.4.5/libexec/bin/*
 ```
 
-
+### PySpark
+https://habr.com/ru/company/X5Group/blog/579232/. PySpark
+https://www.youtube.com/watch?v=_C8kWso4ne4
+https://parisrohan.medium.com/an-attempt-to-spark-your-interest-in-pyspark-fddccdc3081f
 https://medium.com/swlh/pyspark-on-macos-installation-and-use-31f84ca61400
+
+Get column description:
+
+df_data.describe().show()
+
+df_data.columns
 
 ```
 brew search apache-spark@
