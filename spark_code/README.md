@@ -1,5 +1,162 @@
 ### Code
 
+```
+exploding array column:
+
+val df = Seq((1, "A", Seq(1,2,3)), (2, "B", Seq(3,5))).toDF("col1", "col2", "col3")
+df.show()
++----+----+---------+
+|col1|col2|     col3|
++----+----+---------+
+|   1|   A|[1, 2, 3]|
+|   2|   B|   [3, 5]|
++----+----+---------+
+
+val df2 = df.withColumn("col3", explode($"col3"))
+df2.show()
++----+----+----+
+|col1|col2|col3|
++----+----+----+
+|   1|   A|   1|
+|   1|   A|   2|
+|   1|   A|   3|
+|   2|   B|   3|
+|   2|   B|   5|
++----+----+----+
+
+val df3 = df.withColumn("new_col4", explode($"col3"))
+df3.show()
++----+----+---------+--------+
+|col1|col2|     col3|new_col4|
++----+----+---------+--------+
+|   1|   A|[1, 2, 3]|       1|
+|   1|   A|[1, 2, 3]|       2|
+|   1|   A|[1, 2, 3]|       3|
+|   2|   B|   [3, 5]|       3|
+|   2|   B|   [3, 5]|       5|
++----+----+---------+--------+
+
+val df5 = df.withColumn("new_col4", explode($"col3")).select("col1","col2", "new_col4")
+df5.show()
++----+----+--------+
+|col1|col2|new_col4|
++----+----+--------+
+|   1|   A|       1|
+|   1|   A|       2|
+|   1|   A|       3|
+|   2|   B|       3|
+|   2|   B|       5|
++----+----+--------+
+
+
+val df7=df.select(col("col1"),col("col2"), explode(col("col3")))
+ 
+ df7.show()
++----+----+---+
+|col1|col2|col|
++----+----+---+
+|   1|   A|  1|
+|   1|   A|  2|
+|   1|   A|  3|
+|   2|   B|  3|
+|   2|   B|  5|
++----+----+---+
+
+
+creating alias for exploded column:
+-------------------------------------
+val df8=df.select(col("col1"),col("col2"), explode(col("col3")).alias("my_alias"))
+ 
+
+scala> df8.show()
++----+----+--------+
+|col1|col2|my_alias|
++----+----+--------+
+|   1|   A|       1|
+|   1|   A|       2|
+|   1|   A|       3|
+|   2|   B|       3|
+|   2|   B|       5|
++----+----+--------+
+
+
+
+Filter  example
+------------------
+val df = Seq(
+  ("thor", "new york"),
+  ("aquaman", "atlantis"),
+  ("wolverine", "new york")
+).toDF("superhero", "city")
+
+
+df.show()
++---------+--------+
+|superhero|    city|
++---------+--------+
+|     thor|new york|
+|  aquaman|atlantis|
+|wolverine|new york|
++---------+--------+
+
+df.printSchema()
+
+// creating new column:
+
+df.withColumn("city_starts_with_new", $"city".startsWith("new")).show()
++---------+--------+--------------------+
+|superhero|    city|city_starts_with_new|
++---------+--------+--------------------+
+|     thor|new york|                true|
+|  aquaman|atlantis|               false|
+|wolverine|new york|                true|
++---------+--------+--------------------+
+
+
+println(df.schema.fieldNames.contains("city"))
+println(df.schema.contains(StructField("city",StringType,true)))
+
+
+https://stackoverflow.com/questions/47657072/importing-schema-from-json-with-optional-value
+
+:paste
+// Entering paste mode (ctrl-D to finish) 
+
+import org.apache.spark.sql.expressions.scalalang._
+import org.apache.spark.sql.types._
+import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}    
+val schema = StructType(Seq(
+  StructField("k1", StringType, false),
+  StructField("optK", StructType(Seq(StructField("nestedK", StringType, false))), false)
+))    
+val df = spark.read.option("allowUnquotedFieldNames",true).schema(schema).json("s3 location of data.json")       
+
+df: org.apache.spark.sql.DataFrame = [k1: string, optK: struct<nestedK: string>]
+
+scala> df.show
++--------------+------+
+|            k1|  optK|
++--------------+------+
+|     someValue|[optV]|
+|someOtherValue|  null|
++--------------+------+
+
+A Column object corresponding with the city column can be created using the following three syntaxes:
+
+$"city"
+df("city")
+col("city") (must run import org.apache.spark.sql.functions.col first)
+
+
+This is tha same:
+
+val s1 = df.select("city")
+val s2 = df.select($"city")
+
+
+```
+
+
  https://habr.com/ru/company/otus/blog/653033/
  
 ```
@@ -88,3 +245,97 @@ df1
 val data = df0.unionAll(df1Over)
 data.groupBy("target").count.show 
 ```
+
+### SparkSQL
+https://habr.com/ru/company/alfastrah/blog/481924/
+
+https://spark.apache.org/docs/latest/sql-programming-guide.html
+
+```
+select A.people, B.state, count(*) from A join B on A.state_id=B.state_id group by B.state
+```
+Since there are only 50 states we cannot achieve better parallelism by adding > 50 cores also since California is the biggest state the data is skewed - use broadcast join
+
+https://habr.com/ru/company/vk/blog/442688/
+```
+val train = sqlContext.read.parquet("/events/hackatons/SNAHackathon/2019/collabTrain")
+
+z.show(train.groupBy($"date").agg(
+        functions.count($"instanceId_userId").as("count"),
+        functions.countDistinct($"instanceId_userId").as("users"),
+        functions.countDistinct($"instanceId_objectId").as("objects"),
+        functions.countDistinct($"metadata_ownerId").as("owners"))
+      .orderBy("date"))
+      
+      or like this:
+     
+val train = sqlContext.read.parquet("/events/hackatons/SNAHackathon/2019/collabTrain")
+
+z.show(
+   train groupBy $"date" agg(
+        count($"instanceId_userId") as "count",
+        countDistinct($"instanceId_userId") as "users",
+        countDistinct($"instanceId_objectId") as "objects",
+        countDistinct($"metadata_ownerId") as "owners")
+   orderBy "date"
+)
+```
+### SQL hints
+https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql-hint-framework.html
+```
+COALESCE and REPARTITION Hints
+Spark SQL 2.4 added support for COALESCE and REPARTITION hints (using SQL comments):
+
+SELECT /*+ COALESCE(5) */  
+
+SELECT /*+ REPARTITION(3) */  
+
+Broadcast Hints
+Spark SQL 2.2 supports BROADCAST hints using broadcast standard function or SQL comments:
+
+SELECT /*+ MAPJOIN(b) */  
+
+SELECT /*+ BROADCASTJOIN(b) */  
+
+SELECT /*+ BROADCAST(b) */
+```
+
+### Extracting values from Row
+```
+val transactions = Seq((1, 2), (1, 4), (2, 3)).toDF("user_id", "category_id")
+
+val transactions_with_counts = transactions
+  .groupBy($"user_id", $"category_id")
+  .count
+
+There are a few ways to access Row values and keep expected types:
+
+a) 
+transactions_with_counts.map(
+  r => Rating(r.getInt(0), r.getInt(1), r.getLong(2))
+)
+
+b)
+transactions_with_counts.map(r => Rating(
+  r.getAs[Int]("user_id"), r.getAs[Int]("category_id"), r.getAs[Long](2)
+))
+
+c)
+import org.apache.spark.sql.Row
+
+transactions_with_counts.map{
+  case Row(user_id: Int, category_id: Int, rating: Long) =>
+    Rating(user_id, category_id, rating)
+} 
+
+d) Converting to statically typed Dataset (Spark 1.6+ / 2.0+):
+
+transactions_with_counts.as[(Int, Int, Long)]
+
+e)
+case class Rating(user_id: Int, category_id:Int, count:Long)
+val transactions_with_counts = transactions.groupBy($"user_id", $"category_id").count
+
+val rating = transactions_with_counts.as[Rating]
+```
+This way you will not run into run-time errors in Spark because your Rating class column name is identical to the 'count' column name generated by Spark on run-time.
