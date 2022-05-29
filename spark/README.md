@@ -2,6 +2,8 @@ Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-t
 
 https://selectfrom.dev/spark-performance-tuning-spill-7318363e18cb
 
+https://selectfrom.dev/apache-spark-partitioning-bucketing-3fd350816911
+
 https://habr.com/ru/company/otus/blog/653977/ . Monitoring Apache Spark
 
 https://habr.com/ru/company/otus/blog/653033/ Spark ML example
