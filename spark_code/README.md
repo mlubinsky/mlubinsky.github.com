@@ -1,14 +1,134 @@
 ### Code
 
-```
 
 Get column description:
-
+```
 df_data.describe().show()
 
 df_data.columns
+```
 
-exploding array column:
+Handling missing values
+```
+from pyspark.sql.functions import col,isnan,when,count
+df2 = df_data.select([count(when(col(c).contains(‘None’) | \
+ col(c).contains(‘NULL’) | \ (col(c) == ‘’ ) | \ col(c).isNull() | \ isnan(c), c  )).alias(c)
+ for c in df_data.columns])
+ 
+df2.show()
+```
+### Count of missing values in a single column
+```
+df_data.filter(df_data.column_name.isNull()).show()
+```
+### Filter null on multiple columns
+```
+df_data.filter(df_data.column_name1.isNull() & df_data.column_name2.isNull()).show()
+```
+
+### DROP function
+
+The drop function has three parameters namely how, thres, subset.
+
+how parameter accepts two values namely 
+-i) all: to drop a record when all the values are null ; 
+ii) any: to drop a record if any one of it’s value is null
+
+thres parameter is used to specify the minimum number of null values required to drop a record.
+
+subset parameter is used to specify the dataset subset which needs to be checked.
+
+### DROP the entire record if all the values are null:
+```
+df_data = df_data.na.drop(how=’all’)
+DROP the entire record if it contains a null value:
+
+df_data = df_data.na.drop(how=’any’)
+```
+
+### FILL function:
+
+The fill function has two parameters namely value and subset.
+```
+df_data = df_data.na.fill('missing')
+```
+The above code will replace the null values with the keyword ‘missing’
+
+### IMPUTER function:
+
+To use the imputer function we first need to import it
+
+from pyspark.ml.feature import Imputer
+
+imputer parameters
+inputsCols is used to specify a list of columns and inputCol is used to specify a single column that needs to be considered while checking for null values.
+
+Similarly, outputCol and outputCols are used to specify the single or multiple output columns depending on the inputs.
+
+strategy parameter defines the technique that needs to be applied on the target column to impute it’s null values. Acceptible values are ‘mean’, ‘median’, ‘mode’
+```
+#import imputer library
+from pyspark.ml.feature import Imputer
+#set input columns
+inputCols = ['cname1', 'cname2', 'cname3']
+#define imputer
+imputer = Imputer(
+inputCols = inputCols,
+outputCols = ["{}_imputed".format(c) for c in                inputCols]).setStrategy("mean")
+#apply imputer
+imputer.fit(df_data).transform(df_data)
+```
+
+### Filter dataframe:
+
+We can use the filter function to extract the required data from a dataframe
+
+ 
+df_data.filter(“year > 2010”).show(5)
+ 
+df_data.filter(df_data['year'] > 2010).show(5)
+
+query 1 and 2 give the same data that is the top 5 rows where year is greater than 2010
+
+We can use the ~ symbol to get the inverse of a filter
+```
+df_data.filter(~(df_data[‘year’] > 2010)).show(5)
+```
+The above code gives the top 5 rows where year is less than 2010
+
+To filter the dataframes based on more than one condition we can use the & | operators
+```
+df_data.filter((df_data[‘selling_price’]>200000)&(df_data[‘selling_price’]< 400000)).show(5)
+```
+The above code filters dataframe where selling price is between 2lakh and 4lakh
+```
+df_data.filter((df_data[‘transmission’]==’Automatic’)|(df_data[‘transmission’]==’Manual’)).show(5)
+```
+The above code filters dataframe where the transmission is either manual or automatic.
+
+### Get distinct values from a column:
+```
+df_data.select(‘column_name’).distinct().collect()
+```
+### Group data and get count:
+
+```
+df_data.groupBy(‘column_name’).count().show()
+```
+
+### Group data to get mean values:
+```
+df_data.groupBy(‘column_name’).mean().show()
+```
+### Group data to get sum:
+```
+df_data.groupBy(‘column_name’).sum().show()
+```
+
+
+### Exploding array column:
+
+```
 
 val df = Seq((1, "A", Seq(1,2,3)), (2, "B", Seq(3,5))).toDF("col1", "col2", "col3")
 df.show()
