@@ -1,6 +1,13 @@
 ### Code
 
 ```
+
+Get column description:
+
+df_data.describe().show()
+
+df_data.columns
+
 exploding array column:
 
 val df = Seq((1, "A", Seq(1,2,3)), (2, "B", Seq(3,5))).toDF("col1", "col2", "col3")
