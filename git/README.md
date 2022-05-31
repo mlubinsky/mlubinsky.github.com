@@ -1,3 +1,11 @@
+```
+git fetch --all
+git reset --hard origin/master
+git checkout master
+git pull
+git checkout de-gcp-migration
+```
+
 https://www.biteinteractive.com/picturing-git-conceptions-and-misconceptions/
 
 https://stackoverflow.com/questions/9210446/how-to-replace-local-branch-with-remote-branch-entirely-in-git
