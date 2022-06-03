@@ -66,6 +66,16 @@ http://jeffe.cs.illinois.edu/teaching/algorithms/
 
 https://quanticdev.com/algorithms/distributed-computing/distributed-sorting/. distibuted sorting
 
+
+
+### Trie
+
+https://mazzo.li/posts/haskell-readability.html
+
+https://www.cnblogs.com/lexus/archive/2012/03/05/2379830.html
+
+https://habr.com/ru/company/tensor/blog/518726/. Prefix Trie
+
 ### Tree
 
 <https://habr.com/ru/company/otus/blog/472040/> red black tree
@@ -77,7 +87,7 @@ https://quanticdev.com/algorithms/distributed-computing/distributed-sorting/. di
 
 ### Tree, suffix tree, B-tree, etc
 
-https://habr.com/ru/company/tensor/blog/518726/. Prefix Trie
+
 
 <https://habr.com/ru/post/455260/> Merkel's tree
 
@@ -110,7 +120,7 @@ https://compsciclub.ru/
 https://www.codementor.io/@svenkatadileepkumar/find-all-the-prime-numbers-less-than-n-in-o-n-time-complexity-1amti1lm2p
 
 
-https://mitmath.github.io/18S191/Fall20/ . Computasional thinking using Julia
+https://mitmath.github.io/18S191/Fall20/ . Computational thinking using Julia
 
 https://www.cs.auckland.ac.nz/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf
 
