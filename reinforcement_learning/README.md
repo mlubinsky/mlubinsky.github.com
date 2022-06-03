@@ -10,6 +10,10 @@ https://stable-baselines3.readthedocs.io/en/master/
 
 https://spinningup.openai.com/en/latest/
 
+Stanford CS330: Deep multitasking and meta learning:
+
+https://www.youtube.com/watch?v=0rZtSwNOTQo&list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5
+
 https://habr.com/ru/post/599923/
 
 https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
