@@ -6,6 +6,8 @@ https://www.manning.com/books/grokking-deep-reinforcement-learning
 
 https://github.com/seungeunrho/minimalRL/blob/master/sac.py
 
+https://stable-baselines3.readthedocs.io/en/master/
+
 https://spinningup.openai.com/en/latest/
 
 https://habr.com/ru/post/599923/
