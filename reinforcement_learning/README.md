@@ -2,6 +2,12 @@
 
 https://web.mit.edu/dimitrib/www/RLbook.html
 
+https://www.manning.com/books/grokking-deep-reinforcement-learning
+
+https://github.com/seungeunrho/minimalRL/blob/master/sac.py
+
+https://spinningup.openai.com/en/latest/
+
 https://habr.com/ru/post/599923/
 
 https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
