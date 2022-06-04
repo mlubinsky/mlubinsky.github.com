@@ -57,6 +57,10 @@ https://news.ycombinator.com/item?id=30975583 Why chess problem are attack-orien
  
 
 ### Chess programming
+
+
+https://github.com/shaunharker/chessboard C++ + python binding
+
 <https://youtu.be/mVdh5z0jtAo>
 
 
