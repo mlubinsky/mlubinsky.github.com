@@ -14,6 +14,8 @@ http://minikanren.org/
 https://github.com/ashton314/muKanren_reading
 
 ### Prolog
+
+https://www.metalevel.at/prolog Power of Prolog
 Quantum prolog
 https://quantumprolog.sgml.io/bioinformatics-demo/part1.html
 
