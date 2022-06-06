@@ -22,6 +22,9 @@ https://quantumprolog.sgml.io/
 Quinn Wilton - Deriving Knowledge from Data
 https://www.youtube.com/watch?v=lYLkaOq7WbU
 
+Differences between miniKanren and Prolog
+http://minikanren.org/minikanren-and-prolog.html
+
 ### Video file formats and processing
 
 https://github.com/leandromoreira/digital_video_introduction
