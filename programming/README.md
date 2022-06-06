@@ -8,6 +8,9 @@ https://vak.dreamwidth.org/891889.html  PlantUML - generate sequence diagrams SV
 
 https://memo.barrucadu.co.uk/scheduling-problems.html . Solving Scheduling Problems with Integer Linear Programming with Python
 
+### Kanren 
+https://github.com/ashton314/muKanren_reading
+
 ### Prolog
 Quinn Wilton - Deriving Knowledge from Data
 https://www.youtube.com/watch?v=lYLkaOq7WbU
