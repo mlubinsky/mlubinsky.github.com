@@ -5,6 +5,10 @@ Extreme events in dynamical systems and random walkers: A review
 https://arxiv.org/abs/2109.11219
 
 
+
+https://pages.cs.wisc.edu/~tdw/files/cookbook-en.pdf
+
+
 ### Bayes
 
 https://habr.com/ru/post/658707/
