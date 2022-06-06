@@ -12,6 +12,9 @@ https://memo.barrucadu.co.uk/scheduling-problems.html . Solving Scheduling Probl
 https://github.com/ashton314/muKanren_reading
 
 ### Prolog
+Quantum prolog
+https://quantumprolog.sgml.io/
+
 Quinn Wilton - Deriving Knowledge from Data
 https://www.youtube.com/watch?v=lYLkaOq7WbU
 
