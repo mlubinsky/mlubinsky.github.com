@@ -16,6 +16,10 @@ https://github.com/ashton314/muKanren_reading
 ### Prolog
 
 https://www.metalevel.at/prolog Power of Prolog
+
+
+https://www.youtube.com/channel/UCFFeNyzCEQDS4KCecugmotg Power of Prolog
+
 Quantum prolog
 https://quantumprolog.sgml.io/bioinformatics-demo/part1.html
 
