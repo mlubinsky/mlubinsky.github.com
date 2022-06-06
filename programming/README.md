@@ -13,6 +13,8 @@ https://github.com/ashton314/muKanren_reading
 
 ### Prolog
 Quantum prolog
+https://quantumprolog.sgml.io/bioinformatics-demo/part1.html
+
 https://quantumprolog.sgml.io/
 
 Quinn Wilton - Deriving Knowledge from Data
