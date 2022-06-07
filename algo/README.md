@@ -6,6 +6,8 @@ https://blog.bradfieldcs.com/an-introduction-to-hashing-in-the-era-of-machine-le
 
 http://algorithmsbook.com/ Algorithms for Decision Making
 
+https://habr.com/ru/company/mygames/blog/669390/ consistent hashing
+
 https://news.ycombinator.com/item?id=25716581 	Algorithms for Decision Making
 
 http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big data
