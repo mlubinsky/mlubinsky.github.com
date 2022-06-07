@@ -410,6 +410,8 @@ $ to the end of a line
 https://github.com/helix-editor/helix
 
 ## Visual Studio Code
+Git History
+https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory
 
 ```
   PATH=$PATH:"/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
