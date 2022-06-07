@@ -1,3 +1,7 @@
+https://mpov.timmorgan.org/i-built-a-ruby-parser/
+
+Book: craftinginterpreters.com/
+
 https://lobste.rs/s/x0b8wo/practical_parsing_with_flex_bison
 
 https://begriffs.com/posts/2021-11-28-practical-parsing.html  bison flex
