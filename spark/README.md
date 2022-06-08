@@ -236,9 +236,15 @@ https://sparkbyexamples.com/spark/spark-adaptive-query-execution/
 
 ### Structured Streaming
 
+https://databricks.com/blog/2017/01/19/real-time-streaming-etl-structured-streaming-apache-spark-2-1.html
+
+https://habr.com/ru/company/otus/blog/670266/
+
 https://habr.com/ru/company/ozontech/blog/656883/
 
 https://habr.com/ru/company/otus/blog/557812/
+
+https://livebook.manning.com/book/streaming-data/ Book (I bought it)
 
 ```
 val sparkConf = new SparkConf().setAppName("DirectKafkaWordCount")
