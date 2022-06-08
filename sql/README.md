@@ -1,3 +1,6 @@
+DBT https://habr.com/ru/post/670062/
+
+
 https://itnext.io/filtering-by-dynamic-attributes-90ada3504361  Filtering by dynamic attributes
 
 https://habr.com/ru/company/tensor/blog/667998/  SQL ANY / ALL / CASE optimization
