@@ -20,6 +20,8 @@ https://www.youtube.com/watch?v=OP0D5cloQUc
 
 https://www.youtube.com/watch?v=GK_QpYgydpU Testesteron Dr. Petrick
 
+https://www.youtube.com/watch?v=41CQoIVfgz0 XXX Dr.Pertik
+
 Креатин для «айтишника»: как спортивная добавка помогает при сидячем образе жизни
 
 https://habr.com/ru/post/655023/
