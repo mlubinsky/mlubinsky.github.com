@@ -5,6 +5,17 @@ git checkout master
 git pull
 git checkout de-gcp-migration
 ```
+Fixing problem:
+
+```
+git pull origin master
+Error: You have divergent branches and need to specify how to reconcile them.
+
+git pull --ff-only origin master
+Error: fatal: Not possible to fast-forward, aborting.
+
+git pull --rebase origin master
+```
 
 https://www.biteinteractive.com/picturing-git-conceptions-and-misconceptions/
 
