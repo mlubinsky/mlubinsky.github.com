@@ -6,9 +6,13 @@ https://gitlab.eng.roku.com/dea-looker/looker-foundation-prod/compare/master...D
 
 https://gitlab.eng.roku.com/dea-looker/looker-foundation-prod/compare/master...PROGDE-784
 
+
+
 Airflow
 ---------
-https://gitlab.eng.roku.com/dea/data-processing/compare/master...DEA-11853
+https://gitlab.eng.roku.com/dea/data-processing/compare/master...PROGDE-2036
+
+https://gitlab.eng.roku.com/dea-looker/looker-foundation-prod/compare/de-gcp-migration...PROGDE-2015
 
 blame
 --------
