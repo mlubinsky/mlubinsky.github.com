@@ -12,7 +12,7 @@ Airflow
 ---------
 https://gitlab.eng.roku.com/dea/data-processing/compare/master...PROGDE-2036
 
-https://gitlab.eng.roku.com/dea-looker/looker-foundation-prod/compare/de-gcp-migration...PROGDE-2015
+https://gitlab.eng.roku.com/dea/data-processing/compare/de-gcp-migration...PROGDE-2015
 
 blame
 --------
