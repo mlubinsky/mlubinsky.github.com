@@ -6,6 +6,10 @@ https://luminousmen.com/post/modern-big-data-architectures-lambda-kappa
 
 https://adamvotava.medium.com/
 
+Apache Iceberg:
+https://www.youtube.com/watch?v=LiC9vZATv0o&t=8s
+
+https://www.dremio.com/subsurface/comparison-of-data-lake-table-formats-iceberg-hudi-and-delta-lake/
 
 ### Memcached vs Redis
 
