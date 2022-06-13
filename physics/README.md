@@ -20,6 +20,10 @@ https://scholar.google.ru/citations?hl=en&user=RmRwJJIAAAAJ&view_op=list_works&s
 Vitaly Vanchurin
 https://scholar.google.com/citations?hl=en&user=nEEFLp0AAAAJ&view_op=list_works&sortby=pubdate
 
+### Sachdev
+
+http://sachdev.physics.harvard.edu/
+
 ### Fourie
 
 https://www.youtube.com/watch?v=r18Gi8lSkfM
