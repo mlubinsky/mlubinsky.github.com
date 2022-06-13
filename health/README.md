@@ -36,6 +36,8 @@ https://www.youtube.com/watch?v=x3NPAxiMRPw HOW TO GET YOUR FIRST PULL-UP
 https://zelusfitness.com/  Sport equipment
 
 
+https://news.ycombinator.com/item?id=31630679. Cancer 
+
 Названы продукты для профилактики ишемической болезни сердца
 Диетолог Рыль: дефицит селена приводит к ишемической болезни сердца
  
