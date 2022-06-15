@@ -156,6 +156,8 @@ http://blog.pyviz.org/
 
 <https://habr.com/ru/post/443528/>
 
+https://habr.com/ru/post/671344/
+
 
 ### Visualization on desktop
 
