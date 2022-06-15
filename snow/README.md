@@ -2,6 +2,8 @@ https://habr.com/ru/post/663922/
 
 ###
 
+https://www.linkedin.com/learning/learning-snowflakedb/learn-the-snowflake-data-life-cycle?autoplay=true&u=2102905
+
 https://github.com/lynnlangit/learn-snowflakedb
 
 https://www.youtube.com/playlist?list=PLba2xJ7yxHB73xHFsyu0YViu3Hi6Ckxzj
