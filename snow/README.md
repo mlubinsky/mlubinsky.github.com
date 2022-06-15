@@ -1,5 +1,7 @@
 https://habr.com/ru/post/663922/
 
+https://docs.snowflake.com/en/
+
 https://github.com/Snowflake-Labs/awesome-snowflake
 
 ###
