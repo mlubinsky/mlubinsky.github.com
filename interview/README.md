@@ -1,5 +1,7 @@
 https://grow.google/certificates/interview-warmup/
 
+https://florian.github.io//xor-trick/ XOR trick
+
 https://www.youtube.com/watch?v=Peq4GCPNC5c&t=1s . 10 common interview questions - solved
 
 https://habr.com/ru/post/661577/ Обход графа в ширину (BFS) и глубину (DFS)
