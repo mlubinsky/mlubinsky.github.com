@@ -12,11 +12,20 @@ dim_device_detail:  dim_product (product_id, product_segment here is device_type
 ```
 
 ### Git pull
+
+https://stackoverflow.com/questions/62653114/how-can-i-deal-with-this-git-warning-pulling-without-specifying-how-to-reconci
+
+git config --global pull.ff only
+
 ```
 If you are working for longer duration on your branch, you may want to pull in changes 
 from master every now and then to make sure you are not too far behind and in conflict with someone else' deployed changes.
 $ git checkout DEA-xxxx
 $ git pull origin master
+
+git pull --ff-only origin master
+If the fast-forward later is failing, try 
+git pull --no-ff
 ```
 
 
