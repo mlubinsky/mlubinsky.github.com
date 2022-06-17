@@ -54,6 +54,10 @@ https://news.ycombinator.com/item?id=31009313
 
 jq https://stedolan.github.io/jq/
 
+https://qmacro.org/tags/jq/
+ 
+
+
 https://blog.kellybrazil.com/2021/04/12/practical-json-at-the-command-line/
 
 https://habr.com/ru/company/timeweb/blog/561214/ JSON utilities 
