@@ -1,4 +1,8 @@
-DBT https://habr.com/ru/post/670062/
+### DBT
+https://habr.com/ru/post/670062/
+
+https://www.youtube.com/watch?v=9RCfz3ef19o
+
 
 
 https://itnext.io/filtering-by-dynamic-attributes-90ada3504361  Filtering by dynamic attributes
