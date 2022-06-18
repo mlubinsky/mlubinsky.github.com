@@ -11,6 +11,10 @@ https://machinelearningrecipes.com/blog/post/1687564/stochastic-processes-and-si
 
 https://deepmind.com/learning-resources/reinforcement-learning-series-2021  
 
+
+https://www.youtube.com/watch?v=mLHIMulCHcM  Andrew Ng's New Machine Learning Specialization is Out!!!
+
+
 ### Differentiable programming
 
 https://www.assemblyai.com/blog/differentiable-programming-a-simple-introduction/
