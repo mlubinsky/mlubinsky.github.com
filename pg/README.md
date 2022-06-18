@@ -6,6 +6,8 @@ https://www.youtube.com/watch?v=D8Q4n6YXdpk . Window function in Postgres
 
 https://news.ycombinator.com/item?id=28776786. PG clustering /sharding
 
+https://postgres.ai/blog/20220525-common-db-schema-change-mistakes
+
 https://blog.crunchydata.com/blog/five-tips-for-a-healthier-postgres-database-in-the-new-year
 
 https://news.ycombinator.com/item?id=29858083 . Tips for a Healthier Postgres Database 
