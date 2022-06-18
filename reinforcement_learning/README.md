@@ -1,3 +1,6 @@
+https://discord.com/invite/BCfHWaSMkr Aleksei Petrenko
+
+
 <https://sites.ualberta.ca/~szepesva/RLBook.html>
 
 https://web.mit.edu/dimitrib/www/RLbook.html
