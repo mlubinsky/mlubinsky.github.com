@@ -14,6 +14,8 @@ https://news.ycombinator.com/item?id=30593302 Regrets of dying
 
 http://www.belousenko.com/  Non-technical Books
 
+https://scientificrussia.ru/lectures
+
 Tools for better thinking:
 https://untools.co/
 
