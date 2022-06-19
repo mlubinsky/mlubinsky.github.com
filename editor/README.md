@@ -417,6 +417,18 @@ $ to the end of a line
 https://github.com/helix-editor/helix
 
 ## Visual Studio Code
+
+To invoke from command line
+```
+sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
+```
+Or  add this to PATH
+```
+~/.zprofile
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+```
+
 Git History
 https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory
 
