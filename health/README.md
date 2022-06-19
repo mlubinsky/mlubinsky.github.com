@@ -66,9 +66,16 @@ https://www.youtube.com/watch?v=gOkm4iZLVHQ Бубновский - Insult
 
 https://www.youtube.com/watch?v=HddbEZQTrcU . Insult
 
+## давление
+https://www.youtube.com/watch?v=xxdsbWMEDBA 7 способов снизить давление без таблеток
+
 https://www.youtube.com/watch?v=30PPmosjarM ЛЕЧЕНИЕ ГИПЕРТОНИИ: 7 простых способов,
 
 https://www.youtube.com/watch?v=FUAM9MXypDU  ГИПЕРТОНИ
+
+
+<https://postnauka.ru/video/154976> blood pressure
+
 
 https://www.evdokimenko.ru/ 
 
@@ -220,7 +227,6 @@ https://www.sfweekly.com/sponsored/5-best-male-enhancement-pills-2020-which-prod
 
 <https://zdorov.d3.ru/proshu-pomoch-sobrat-aptechku-v-pokhod-2028425/?sorting=rating>
 
-<https://postnauka.ru/video/154976> blood pressure
 
 https://www.youtube.com/watch?v=MR4Y4SuC3qk Neck excersises
 
