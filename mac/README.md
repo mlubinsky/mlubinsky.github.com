@@ -7,6 +7,8 @@ BuildVersion:	18G95
 
 ### Setup
 
+https://habr.com/ru/post/672510/ from Linux to Mac
+
 https://earthly.dev/blog/homebrew-on-m1/ Homebrew on Mac1
 
 https://hackercodex.com/guide/python-development-environment-on-mac-osx/
