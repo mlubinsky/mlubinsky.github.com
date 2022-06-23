@@ -1,3 +1,4 @@
+### Git pull and rebase
 ```
 git fetch --all
 git reset --hard origin/master
@@ -15,6 +16,15 @@ git pull --ff-only origin master
 Error: fatal: Not possible to fast-forward, aborting.
 
 git pull --rebase origin master
+```
+
+### Fetch remote branch - use switch statement
+https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch
+
+```
+  git fetch
+  git switch mps_total_revenue
+  git pull origin master
 ```
 
 https://www.biteinteractive.com/picturing-git-conceptions-and-misconceptions/
