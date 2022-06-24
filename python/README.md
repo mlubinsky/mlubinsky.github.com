@@ -35,7 +35,15 @@ https://www.pythonmorsels.com/built-in-functions-in-python/.
 
 https://sadh.life/post/builtins/
 
-Collection classes
+### Operator itemgetter how to sort
+https://stackoverflow.com/questions/18595686/how-do-operator-itemgetter-and-sort-work
+
+https://docs.python.org/3/library/operator.html#operator.itemgetter
+
+https://wiki.python.org/moin/HowTo/Sorting/#Key_Functions
+
+
+### Collection classes
 https://codesolid.com/useful-collection-classes-in-python-you-may-not-know/ 
 
 https://bas.codes/posts/python-dict-slots Understanding Attributes, Dicts and Slots in Python
