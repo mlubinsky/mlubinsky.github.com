@@ -1,5 +1,14 @@
 https://effective-shell.com/
 
+
+```
+Start your own commands in my ~/bin/ from comma !
+To remember which of my commands are available in my ~/bin/ directory 
+or when simply trying to remember what some of my commands are called,
+I simply type a comma followed by tab and my list of commands appears
+
+
+```
 https://dashdash.io/
 
 https://dwmkerr.com/effective-shell-part-1-navigating-the-command-line/
