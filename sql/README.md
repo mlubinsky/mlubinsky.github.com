@@ -33,7 +33,11 @@ FROM
 ```
 https://hakibenita.com/sql-for-data-analysis
 
+### Jinja
+
 https://towardsdatascience.com/jinja-sql-%EF%B8%8F-7e4dff8d8778 Jinja with SQL
+
+https://towardsdatascience.com/a-simple-approach-to-templated-sql-queries-in-python-adc4f0dc511
 
 https://winand.at/sql-slides-for-developers
 
