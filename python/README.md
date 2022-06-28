@@ -52,7 +52,22 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
 
 https://github.com/scottrogowski/code2flow
 
-Important: 
+
+```
+a_items = [1,2,3]
+b_items = [4,5,6]
+
+for a in a_items:
+    for b in b_items:
+        print(f'{a} x {b} = {a*b}')
+
+print()
+#  Better way
+from itertools import product
+for a,b in product(a_items, b_items):
+    print(f'{a} x {b} = {a*b}')
+```
+### Important: 
 
 Pointers with python: https://yurichev.com/news/20211223_Py_ptrs/
 
