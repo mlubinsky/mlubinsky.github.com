@@ -53,6 +53,9 @@ https://betterprogramming.pub/4-anti-patterns-in-python-a6d5023c8473
 https://github.com/scottrogowski/code2flow
 
 
+Use
+@dataclasses (especially with frozen=True) 
+
 ```
 a_items = [1,2,3]
 b_items = [4,5,6]
