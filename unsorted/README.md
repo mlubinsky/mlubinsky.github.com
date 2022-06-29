@@ -152,6 +152,8 @@ https://sci-hub.se/
 
 #### Tools for thinking: Obsidian , Anki , etc
 
+https://habr.com/ru/post/674014/
+
 https://reasonabledeviations.com/2022/06/12/molecular-notes-part-2/
 
 RemNote,  Roam, Obsidian, LogSeq, Athens, TheBrain, Zettlr, Notion
