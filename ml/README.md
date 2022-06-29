@@ -6,6 +6,7 @@ https://arxiv.org/abs/2203.08890  The Mathematics of Artificial Intelligence
 
 https://news.ycombinator.com/item?id=30984662
 
+https://arxiv.org/abs/2206.13446 Pan and paper exersices in ML
 
 https://machinelearningrecipes.com/blog/post/1687564/stochastic-processes-and-simulations
 
