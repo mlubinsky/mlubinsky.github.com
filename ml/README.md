@@ -5,8 +5,10 @@ https://www.mlexample.com/ . BOOK
 https://arxiv.org/abs/2203.08890  The Mathematics of Artificial Intelligence
 
 https://news.ycombinator.com/item?id=30984662
+ 
+https://www.cs.ubc.ca/~schmidtm/Courses/LecturesOnML/ Pen and Paper in ML 
 
-https://arxiv.org/abs/2206.13446 Pan and paper exersices in ML
+https://arxiv.org/abs/2206.13446 Pen and paper exersices in ML
 
 https://machinelearningrecipes.com/blog/post/1687564/stochastic-processes-and-simulations
 
