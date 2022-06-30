@@ -1,6 +1,7 @@
 Render math expression in Markdown
 https://news.ycombinator.com/item?id=31438864
 
+https://mathics.org/ Wolfram's Mathemetica free clone
 
 Ветераны броуновского движения - Вступайте в ряды Фурье!
 
