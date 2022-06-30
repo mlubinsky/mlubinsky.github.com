@@ -1,5 +1,7 @@
 https://habr.com/ru/post/653363/ . [Часть 1] Математика в АБ-тестах. Что такое z-score и p-value?
 
+https://habr.com/ru/company/vk/blog/673914/ bandits
+
 https://habr.com/ru/post/558836/ Мир статистических гипотез
 
 https://vkteam.medium.com/practitioners-guide-to-statistical-tests-ed2d580ef04f
