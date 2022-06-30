@@ -1,6 +1,9 @@
 Делайте что хотите, но пусть это приносит радость
 /Уолт Уитмен/
 
+http://bactra.org/ Cosma's Home Page
+
+
 https://massolit.site/book/garri-potter-sbornik-7-knig-lp
 
 https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
