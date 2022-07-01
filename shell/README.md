@@ -9,6 +9,16 @@ I simply type a comma followed by tab and my list of commands appears
 
 
 ```
+convert file to lower case
+
+tr '[:upper:]' '[:lower:]' < inputFile > outputFile
+
+
+REMOVING NEWLINES (AND REPLACING WITH SPACES)
+
+tr '\n' ' ' < inputFile
+
+
 https://dashdash.io/
 
 https://dwmkerr.com/effective-shell-part-1-navigating-the-command-line/
