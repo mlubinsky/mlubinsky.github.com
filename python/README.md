@@ -1,5 +1,8 @@
 https://github.com/AbdulMalikDev/PythonCheatSheet
 
+https://realpython.com/queue-in-python/
+
+
 https://awesome-python.com/
 
 https://python-patterns.guide/
