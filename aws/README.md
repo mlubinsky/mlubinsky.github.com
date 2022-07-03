@@ -1,5 +1,9 @@
 ### GCP
 
+Dataproc is a fully managed and highly scalable service for running Apache Spark, Apache Flink, Presto, and 30+ open source tools and frameworks. 
+
+https://cloud.google.com/dataproc
+
 https://habr.com/ru/post/117146/
 
 https://googlecloudcheatsheet.withgoogle.com/
