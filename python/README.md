@@ -1,3 +1,5 @@
+https://github.com/AbdulMalikDev/PythonCheatSheet
+
 https://awesome-python.com/
 
 https://python-patterns.guide/
