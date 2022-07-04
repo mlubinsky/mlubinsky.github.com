@@ -1,5 +1,9 @@
 Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-to-load-local-file-in-sc-textfile-instead-of-hdfs
 
+
+https://habr.com/ru/company/neoflex/blog/578654/ Very Good
+
+
 https://selectfrom.dev/spark-performance-tuning-spill-7318363e18cb
 
 https://selectfrom.dev/apache-spark-partitioning-bucketing-3fd350816911
@@ -235,6 +239,8 @@ https://sparkbyexamples.com/spark/spark-adaptive-query-execution/
 
 
 ### Structured Streaming
+
+https://habr.com/ru/company/neoflex/blog/674944/ PySpark Structured Streaming и Kafka
 
 https://databricks.com/blog/2017/01/19/real-time-streaming-etl-structured-streaming-apache-spark-2-1.html
 
