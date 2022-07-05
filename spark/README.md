@@ -12,6 +12,10 @@ https://habr.com/ru/company/otus/blog/653977/ . Monitoring Apache Spark
 
 https://habr.com/ru/company/otus/blog/653033/ Spark ML example
 
+Spark submit:
+
+https://spark.apache.org/docs/3.2.1/submitting-applications.html
+
 ```
 nohup spark-sql 
 --master yarn  
