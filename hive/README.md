@@ -10,6 +10,13 @@ SET hive.groupby.orderby.position.alias=true;
 
 hive -e "SET;" | grep <Search-String> 
 
+
+## If CTE is used many times then better to materialize it:
+
+SET hive.default.fileformat=Orc; 
+
+SET hive.optimize.cte.materialize.threshold=2;
+
 #### Repair
 
 MSCK REPAIR TABLE
