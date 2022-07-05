@@ -11,6 +11,10 @@ How to compare distributions:
 https://habr.com/ru/company/skillfactory/blog/674880/
 
 
+https://github.com/matteocourthoud/Blog-Posts
+
+Cook book
+
 https://pages.cs.wisc.edu/~tdw/files/cookbook-en.pdf
 
 
