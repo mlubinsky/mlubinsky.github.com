@@ -34,6 +34,21 @@ grouped(n) splits the collection into collections with n elements each
 ```
 xs.grouped(3).toList // List(List(4, 5, 2), List(-1, -3, 4))
 ```
+###
+
+https://blog.indoorvivants.com/2022-02-13-maintaining-scala-open-source-library-part-I
+
+### Scala 3
+https://blog.indoorvivants.com/2020-12-30-scala3-video-part-I
+
+https://blog.indoorvivants.com/2021-02-08-scala3-video-part-II
+
+### Scala Native
+Scala Native is an ahead of time compiler and standalone runtime allowing to compile Scala code to machine language without the need for the JVM. 
+
+https://medium.com/virtuslab/revisiting-scala-native-performance-67029089f241
+
+
 ### Scala Collections
 
 https://medium.com/wix-engineering/the-little-gems-of-scala-standard-library-32ef298bf0df
