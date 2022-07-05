@@ -6,6 +6,9 @@ https://mltechniques.com/resources/
 Extreme events in dynamical systems and random walkers: A review
 https://arxiv.org/abs/2109.11219
 
+How to compare distributions:
+
+https://habr.com/ru/company/skillfactory/blog/674880/
 
 
 https://pages.cs.wisc.edu/~tdw/files/cookbook-en.pdf
