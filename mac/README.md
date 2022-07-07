@@ -169,6 +169,15 @@ If you need to have scala@2.11 first in your PATH, run:
 
 brew install apache-spark@2.4.6
 
+```
+brew install scala@2.12
+ pwd
+/usr/local/opt
+[opt]$ ls -ltr | grep scala
+lrwxrwxr-x  1 mlubinsky  admin  30 Aug 29  2021 scala@2.11 -> ../Cellar/scala@2.11/2.11.12_1
+lrwxr-xr-x  1 mlubinsky  admin  28 Jul  7 15:07 scala@2.12 -> ../Cellar/scala@2.12/2.12.14
+```
+
 
 ### CyberChef
 https://gchq.github.io/CyberChef
