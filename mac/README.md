@@ -11,7 +11,7 @@ https://habr.com/ru/post/672510/ from Linux to Mac
 
 https://earthly.dev/blog/homebrew-on-m1/ Homebrew on Mac1
 
-https://hackercodex.com/guide/python-development-environment-on-mac-osx/
+https://hackercodex.com/guide/python-development-environment-on-mac-osx/.  Python
 
 https://hookrace.net/blog/macos-setup/
 
@@ -24,6 +24,19 @@ https://pawelurbanek.com/macos-free-disk-space
 brew install --cask disk-inventory-x
 
  brew install awk coreutils findutils gnu-tar gnu-sed gnu-which gnu-time
+ 
+ 
+ 
+ ### “Permission denied @ apply2files” 
+
+https://stackoverflow.com/questions/61899041/permission-denied-apply2files-usr-local-lib-node-modules-expo-cli-node-modu
+
+Reset permissions to /user/local.  
+```
+sudo chown -R $(whoami):admin /usr/local/* \
+&& sudo chmod -R g+rwx /usr/local/*
+``` 
+ 
 
 https://kapeli.com/dash
 
