@@ -64,7 +64,7 @@ https://data-flair.training/blogs/scala-tutorial/
  
  https://www.journaldev.com/8958/scala-interview-questions-answers
 
-The Scala book:
+### The Scala book:
 
 https://www.handsonscala.com/
 
