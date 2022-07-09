@@ -2,6 +2,8 @@ https://jsomers.net/i-should-have-loved-biology/
 
 https://news.ycombinator.com/item?id=32035054
 
+https://news.ycombinator.com/item?id=25136422
+
 Vitaly Vanchurin
 ( University of Minnesota Duluth )
 https://scholar.google.com/citations?hl=en&user=nEEFLp0AAAAJ&view_op=list_works&sortby=pubdate
