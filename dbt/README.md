@@ -12,6 +12,8 @@ https://feng-tao.github.io/amundsen/databuilder/
 
 https://github.com/amundsen-io/amundsendatabuilder
 
+https://www.youtube.com/watch?v=GL4DxwCBn60
+
 https://www.astronomer.io/events/recaps/data-lineage-with-openlineage-and-airflow/
 
 https://blog.anant.us/data-engineers-lunch-36-amundsen-dse-with-airflow/
