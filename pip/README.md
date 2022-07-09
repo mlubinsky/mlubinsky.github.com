@@ -4,6 +4,9 @@ https://realpython.com/python-virtual-environments-a-primer/
 
 https://hackercodex.com/guide/python-development-environment-on-mac-osx/
 
+
+https://kaderovski.com/posts/ultimate-python-development-environment-configuration/
+
 https://bas.codes/posts/python-virtualenv-venv-pip-pyenv-poetry
 
 <https://modelpredict.com/python-dependency-management-tools> 
