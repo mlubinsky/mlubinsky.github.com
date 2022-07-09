@@ -98,6 +98,26 @@ def s3_read(source, profile_name=None):
     body = s3_object['Body']
     return body.read()
  ```
+ 
+ 
+### Use paginator to get > 1,000 objects 
+
+The inbuilt boto3 Paginator class is the easiest way to overcome the 1000 record limitation of list-objects-v2. This can be implemented as follows
+```
+s3 = boto3.client('s3')
+
+paginator = s3.get_paginator('list_objects_v2')
+pages = paginator.paginate(Bucket='bucket', Prefix='prefix')
+
+for page in pages:
+    for obj in page['Contents']:
+        print(obj['Size'])
+        
+```        
+For more details: 
+https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectsV2
+
+
 ### Write to S3 
  
  /Users/mlubinsky/CODE/GIT/data-processing/src/main/python/utils/S3Utils.py
