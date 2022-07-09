@@ -114,9 +114,11 @@ for page in pages:
         print(obj['Size'])
         
 ```        
-For more details: 
+Python - For more details: 
 https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectsV2
 
+Java paginator:
+https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html
 
 ### Write to S3 
  
