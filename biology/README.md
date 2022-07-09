@@ -1,8 +1,14 @@
+https://www.goodreads.com/book/show/25660581-the-deeper-genome
+
+https://freethoughtblogs.com/pharyngula/2008/02/03/buffeted-by-the-winds-of-chanc/
+
 https://jsomers.net/i-should-have-loved-biology/
 
 https://news.ycombinator.com/item?id=32035054
 
 https://news.ycombinator.com/item?id=25136422
+
+https://www.pnas.org/doi/10.1073/pnas.1620001114
 
 Vitaly Vanchurin
 ( University of Minnesota Duluth )
