@@ -31,6 +31,8 @@ https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.ht
 
 Java paginator:
 
+https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/pagination.html
+
 https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/paginators/package-summary.html
 
 https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html
