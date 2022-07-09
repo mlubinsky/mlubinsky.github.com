@@ -12,6 +12,33 @@ https://towardsdatascience.com/demystifying-boto3-how-to-use-any-aws-service-wit
  1.9.124
 ```
 
+### Use paginator to get > 1,000 objects 
+
+The inbuilt boto3 Paginator class is the easiest way to overcome the 1000 record limitation of list-objects-v2. This can be implemented as follows
+```
+s3 = boto3.client('s3')
+
+paginator = s3.get_paginator('list_objects_v2')
+pages = paginator.paginate(Bucket='bucket', Prefix='prefix')
+
+for page in pages:
+    for obj in page['Contents']:
+        print(obj['Size'])
+        
+```        
+Python - boto paginator: 
+https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectsV2
+
+Java paginator:
+
+https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/paginators/package-summary.html
+
+https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html
+
+
+
+
+
 <https://www.slsmk.com/use-boto3-to-open-an-aws-s3-file-directly/>
 
 <https://www.slsmk.com/amazon-aws-tech-notes-and-articles/>
@@ -98,27 +125,6 @@ def s3_read(source, profile_name=None):
     body = s3_object['Body']
     return body.read()
  ```
- 
- 
-### Use paginator to get > 1,000 objects 
-
-The inbuilt boto3 Paginator class is the easiest way to overcome the 1000 record limitation of list-objects-v2. This can be implemented as follows
-```
-s3 = boto3.client('s3')
-
-paginator = s3.get_paginator('list_objects_v2')
-pages = paginator.paginate(Bucket='bucket', Prefix='prefix')
-
-for page in pages:
-    for obj in page['Contents']:
-        print(obj['Size'])
-        
-```        
-Python - For more details: 
-https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectsV2
-
-Java paginator:
-https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html
 
 ### Write to S3 
  
