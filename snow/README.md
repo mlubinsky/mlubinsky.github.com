@@ -4,6 +4,9 @@ https://docs.snowflake.com/en/
 
 https://github.com/Snowflake-Labs/awesome-snowflake
 
+
+https://www.snowflake.com/blog/snowpark-python-innovation-available-all-snowflake-customers/
+
 ###
 
 https://www.linkedin.com/learning/learning-snowflakedb/learn-the-snowflake-data-life-cycle?autoplay=true&u=2102905
