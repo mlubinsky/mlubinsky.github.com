@@ -2,6 +2,8 @@ https://habr.com/ru/post/663922/
 
 https://docs.snowflake.com/en/
 
+https://www.youtube.com/watch?v=kqZRXoFcKo0
+
 https://github.com/Snowflake-Labs/awesome-snowflake
 
 https://christianlauer90.medium.com/how-snowflake-enforces-its-data-cloud-snowflake-summit-2022-a34caab204ad
