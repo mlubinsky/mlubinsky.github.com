@@ -9,6 +9,8 @@ https://docs.getdbt.com/docs/introduction
 
 https://www.youtube.com/watch?v=5rNquRnNb4E
 
+https://www.youtube.com/watch?v=5rNquRnNb4E&list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT
+
 https://github.com/dbt-labs
 
 ### Amundsen
