@@ -7,6 +7,8 @@ https://www.youtube.com/watch?v=SBTvJU2vEoc&list=PL7_h0bRfL52qWoCcS18nXcT1s-5rSa
 
 https://docs.getdbt.com/docs/introduction
 
+https://www.youtube.com/watch?v=5rNquRnNb4E
+
 https://github.com/dbt-labs
 
 ### Amundsen
