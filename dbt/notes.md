@@ -12,6 +12,9 @@ if schema_obj.is_csv:
 
 print("schema_obj.fields")
 print(schema_obj.fields)
+
+for f in schema_obj.list_all_files():
+    print(f)
 ```
 
 Result:
