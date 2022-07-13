@@ -1,4 +1,20 @@
+```
+from bdp.common.schema.base import Schema
+#schema="ios_app_estimates_weekly_i"
+schema="mps_bin_kpi_o"
+schema_obj = Schema.factory(schema)
 
+print(schema_obj)
+
+print("is_csv=",schema_obj.is_csv)
+if schema_obj.is_csv:
+    print("is_tab delimiter=",schema_obj.csv_delimiter == '\t')
+
+print("schema_obj.fields")
+print(schema_obj.fields)
+```
+
+Result:
 ```
 { 'bucket': 'aardvark-prod-dca-data',
   'columns': [ 'unified_product_id:long',
