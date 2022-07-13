@@ -50,6 +50,8 @@ https://github.com/hseera/aws-python-utilities
 
 https://github.com/dineshsonachalam/Lucid-Dynamodb
 
+https://www.usenix.org/system/files/atc22-vig.pdf
+
 https://medium.com/duda/dynamodb-everything-you-need-to-know-about-single-table-design-3535a3d4f024
 
 ```
