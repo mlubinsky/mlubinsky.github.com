@@ -1,5 +1,7 @@
 https://www.goodreads.com/book/show/25660581-the-deeper-genome
 
+https://www.quantamagazine.org/embryo-cells-set-patterns-for-growth-by-pushing-and-pulling-20220712
+
 https://freethoughtblogs.com/pharyngula/2008/02/03/buffeted-by-the-winds-of-chanc/
 
 https://jsomers.net/i-should-have-loved-biology/
