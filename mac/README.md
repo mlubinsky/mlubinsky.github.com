@@ -128,6 +128,33 @@ https://ruddra.com/fix-python-after-brew-upgrade/
 <https://gist.github.com/chris-zen/9e61db6924bd37fbe414f648614ca4c5>
 
 
+### brew  
+
+brew list
+```
+apache-spark	jq		oniguruma	openjdk@11	pcre2		ripgrep
+```
+
+ls /opt/homebrew/Cellar
+```
+apache-spark jq           oniguruma    openjdk@11   pcre2        ripgrep
+```
+
+ls /opt/homebrew/bin
+```
+brew                 jq                   onig-config          pcre2test            run-example          spark-shell          sparkR
+docker-image-tool.sh load-spark-env.sh    pcre2-config         pyspark              spark-beeline        spark-sql
+find-spark-home      meld                 pcre2grep            rg
+```
+
+ls /opt/homebrew/opt/
+
+
+
+On machine with Anaconda run this:
+
+/opt/homebrew/bin/pyspark
+
 ###   Java on Mac
 
   brew install jenv 
