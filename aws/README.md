@@ -48,6 +48,8 @@ https://github.com/hseera/aws-python-utilities
 
 ### DynamoDB
 
+https://news.ycombinator.com/item?id=32094046
+
 https://github.com/dineshsonachalam/Lucid-Dynamodb
 
 https://www.usenix.org/system/files/atc22-vig.pdf
