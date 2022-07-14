@@ -34,6 +34,18 @@ df_category.dtypes  # column names and types
 df_category.printSchema()
 ```
 
+### New staff
+
+https://databricks.com/product/photon
+
+https://datahubproject.io/
+
+greatexpectations.io
+
+Iceberg
+
+
+
 ### DBT
 
 https://docs.getdbt.com/docs/introduction
