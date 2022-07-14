@@ -82,6 +82,8 @@ https://www.cnblogs.com/lexus/archive/2012/03/05/2379830.html
 
 https://habr.com/ru/company/tensor/blog/518726/. Prefix Trie
 
+https://habr.com/ru/company/otus/blog/676692/
+
 ### Tree
 
 <https://habr.com/ru/company/otus/blog/472040/> red black tree
