@@ -4,6 +4,8 @@ https://pganalyze.com/blog/how-postgres-chooses-index
 
 https://www.youtube.com/watch?v=D8Q4n6YXdpk . Window function in Postgres
 
+https://www.timescale.com/blog/how-postgresql-views-and-materialized-views-work-and-how-they-influenced-timescaledb-continuous-aggregates/
+
 https://news.ycombinator.com/item?id=28776786. PG clustering /sharding
 
 https://postgres.ai/blog/20220525-common-db-schema-change-mistakes
