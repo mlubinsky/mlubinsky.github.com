@@ -2,6 +2,7 @@ https://github.com/AbdulMalikDev/PythonCheatSheet
 
 https://realpython.com/queue-in-python/
 
+https://mathspp.com/blog/pydonts/dunder-methods   dunder metods (with double undescore)   __aa__
 
 https://awesome-python.com/
 
