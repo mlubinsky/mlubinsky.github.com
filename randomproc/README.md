@@ -33,6 +33,9 @@ https://www.youtube.com/watch?v=EXBO08-78IU
 Лекция 2. Р.В. Шамин. Стохастический анализ и его приложения в машинном обучении
 https://www.youtube.com/watch?v=oHGWpc-Dl6I
 
+
+https://medium.com/@xichu.zhang
+
 http://www.gaussianprocess.org/gpml/chapters/
 
 http://leonidzhukov.net/hse/2013/stochmod/
