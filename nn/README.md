@@ -297,6 +297,8 @@ https://habr.com/ru/company/mailru/blog/557280/
 
 ## Keras
 
+https://arxiv.org/pdf/2009.05673.pdf book
+
 <https://github.com/keras-team/keras/tree/master/examples> Keras
 
 <https://nextjournal.com/mpd/image-classification-with-keras> . Keras
