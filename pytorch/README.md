@@ -2,6 +2,8 @@
 
 Book https://sebastianraschka.com/blog/2022/ml-pytorch-book.html
 
+Book https://sebastianraschka.com/blog/2022/ml-pytorch-book.html
+
 https://pytorch.org/tutorials/
 
 https://pytorch.org/docs/stable/index.html
