@@ -1,5 +1,7 @@
 https://www.youtube.com/hashtag/timeseries
 
+https://habr.com/ru/company/tinkoff/blog/677186/. new TS library
+
 https://towardsdatascience.com/the-poisson-hidden-markov-model-for-time-series-regression-236c269914dd HMM for time series
 
 https://news.ycombinator.com/item?id=29453707
