@@ -79,6 +79,10 @@ Article - Root of things: https://arxiv.org/pdf/0906.4955.pdf
 
 https://www.youtube.com/watch?v=9sv-RElTc6s
 
+
+https://www.dissercat.com/content/novye-simmetrii-v-elektrodinamike-i-kvantovoi-teorii
+
+
 ### Topology
 
 https://scitechdaily.com/a-new-theoretical-concept-interweaves-magnetism-and-topology-revolutionary-future-potential/
