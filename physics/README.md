@@ -55,7 +55,7 @@ https://www.youtube.com/watch?v=qIIHpTgTWI0 Точно решаемые моде
 
 https://sethna.lassp.cornell.edu/StatMech/EntropyOrderParametersComplexity20.pdf
 
-
+https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.129.031601 Quantum chaos
 
 https://medium.com/quantafy/part-one-ehrenfests-theorem-2204808cab9a
 
