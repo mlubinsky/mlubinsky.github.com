@@ -157,6 +157,8 @@ https://sci-hub.se/
 
 https://habr.com/ru/post/674014/
 
+https://news.ycombinator.com/item?id=32152935
+
 https://reasonabledeviations.com/2022/06/12/molecular-notes-part-2/
 
 RemNote,  Roam, Obsidian, LogSeq, Athens, TheBrain, Zettlr, Notion
