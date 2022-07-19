@@ -4,6 +4,8 @@ https://www.memorymanagement.org/
 
 https://sre.google/books/. Google site reliability books
 
+https://free-for.dev/#/ Free tools for devs
+
 https://habr.com/ru/company/jugru/blog/586376/. Chrome extensions
 
 https://vak.dreamwidth.org/891889.html  PlantUML - generate sequence diagrams SVG from text
