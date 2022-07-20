@@ -1,3 +1,5 @@
+https://github.com/averkij/mstu-nlp-course Обзор современного машинного обучения
+
 
 ### Transformer
 
