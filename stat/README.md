@@ -6,6 +6,9 @@ https://mltechniques.com/resources/
 Extreme events in dynamical systems and random walkers: A review
 https://arxiv.org/abs/2109.11219
 
+
+https://www.toptal.com/algorithms/metropolis-hastings-bayesian-inference
+
 ### How to compare distributions:
 
 https://habr.com/ru/company/skillfactory/blog/674880/
