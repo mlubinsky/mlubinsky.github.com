@@ -33,8 +33,12 @@ https://habr.com/ru/hub/natural_language_processing/
    - 10% of the masked words are replaced with random words
    - (a) and (b) work together to force the model to predict every word in the sentence (models are lazy)
 
-3. BERT then attempts to predict all the words in the sentence, and only the masked words contribute to the loss function - inclusive of the unchanged and randomly replaced words
-The model fine-tuned on next-sentence-prediction. In this step, the model tries to determine if a given sentence is the next sentence in the text
+3. BERT then attempts to predict all the words in the sentence, 
+and only the masked words contribute to the loss function - inclusive of the unchanged and randomly replaced words
+The model fine-tuned on next-sentence-prediction. 
+In this step, the model tries to determine if a given sentence is the next sentence in the text
 
-Convergence is slow, and BERT takes a long time to train. However, it learns the contextual relationships in text far better. Word vectors are very shallow representations that limit the complexity that they can model—BERT does not have this limitation.
+Convergence is slow, and BERT takes a long time to train. However, it learns the contextual relationships in text far better. 
+Word vectors are very shallow representations that limit the complexity 
+that they can model—BERT does not have this limitation.
 ```
