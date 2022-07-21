@@ -20,6 +20,8 @@ https://www.toptal.com/machine-learning/embeddings-in-machine-learning
 
 ### Transformer
 
+https://arxiv.org/abs/2207.09238 Formal Algorithms for Transformers
+
 https://data-science-blog.com/blog/2020/12/30/transformer/ 
 
 https://habr.com/ru/post/657443/ Hugging Face (стартап, стоящий за библиотекой transformers)
