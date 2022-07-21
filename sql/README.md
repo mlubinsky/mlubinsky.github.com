@@ -4,6 +4,28 @@ https://habr.com/ru/post/670062/
 https://www.youtube.com/watch?v=9RCfz3ef19o
 
 
+### Anti-join
+
+https://towardsdatascience.com/why-is-nobody-talking-about-sql-anti-joins-f970a5f6cb54
+
+An anti-join is when you would like to keep all of the records in the original table except those records that match the other table.
+```
+select * 
+from admissions a
+left join physicians p
+  on a.attending_physician_id = p.physician_id
+where TRUE
+  and p.physician_id is null
+```
+
+https://www.postgresqltutorial.com/postgresql-except/ ( == MINUS in Oracele)
+EXCEPT operator is, basically it takes a table and finds all records in the first table that aren’t in the second table. This is exactly the same purpose as an anti-join, 
+but they are used in different scenarios:
+
+Use the EXCEPT when you only need the columns you are comparing between the two tables
+Use the anti-join when you need more columns than what you would compare when using the EXCEPT operator
+
+
 
 https://itnext.io/filtering-by-dynamic-attributes-90ada3504361  Filtering by dynamic attributes
 
