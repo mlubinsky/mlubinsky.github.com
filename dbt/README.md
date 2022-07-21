@@ -2,8 +2,26 @@
 
 https://databricks.com/spark/jdbc-drivers-archive
 
-
 ### PySpark
+What is the difference:
+#### createOrReplaceTempView
+```
+df=spark.read.format("delta").load("s3://aardvark-prod-dca-data/fact/APP_TOTAL_REVENUE/range_type=WEEK/")
+df.createOrReplaceTempView("weekly_table")
+spark.sql(SQL).show(55)
+```
+#### registerTempTable
+```
+path="s3://aardvark-prod-dca-data/fact/APP_TOTAL_REVENUE/range_type=WEEK/date=2012-01-14/"
+df=spark.read.format("delta").load(path)
+df.show(3)
+
+df.registerTempTable("like_table_name")
+df_result = spark.sql("select * from like_table_name ")
+df_result.show(3)
+```
+
+
 
 https://dbmstutorials.com/pyspark/spark-overview-and-setup.html
 
