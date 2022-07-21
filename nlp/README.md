@@ -8,6 +8,10 @@ https://ods.ai/
 
 https://burlachenkok.github.io/Courses-at-Stanford-relative-to-AI/
 
+Transfer learning
+
+https://www.toptal.com/deep-learning/exploring-pre-trained-models
+
 
 ### Transformer
 
