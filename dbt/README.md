@@ -3,6 +3,9 @@
 https://databricks.com/spark/jdbc-drivers-archive
 
 ### PySpark
+
+https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
+
 What is the difference:
 #### createOrReplaceTempView
 ```
