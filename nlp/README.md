@@ -12,6 +12,9 @@ Transfer learning
 
 https://www.toptal.com/deep-learning/exploring-pre-trained-models
 
+Embedding
+https://www.toptal.com/machine-learning/embeddings-in-machine-learning
+
 
 ### Transformer
 
