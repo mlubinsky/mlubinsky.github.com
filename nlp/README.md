@@ -11,6 +11,8 @@ https://burlachenkok.github.io/Courses-at-Stanford-relative-to-AI/
 
 https://huggingface.co/course/chapter1/1
 
+https://github.com/huggingface/course
+
 Topic modeling:
 https://www.toptal.com/python/topic-modeling-python
 
