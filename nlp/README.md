@@ -20,6 +20,8 @@ https://www.toptal.com/machine-learning/embeddings-in-machine-learning
 
 ### Transformer
 
+https://web.stanford.edu/class/cs25/
+
 https://arxiv.org/abs/2207.09238 Formal Algorithms for Transformers
 
 https://data-science-blog.com/blog/2020/12/30/transformer/ 
