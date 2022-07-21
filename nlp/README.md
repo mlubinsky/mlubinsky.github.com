@@ -27,6 +27,8 @@ https://www.toptal.com/machine-learning/embeddings-in-machine-learning
 
 https://web.stanford.edu/class/cs25/
 
+http://nlp.seas.harvard.edu/annotated-transformer/
+
 https://arxiv.org/abs/2207.09238 Formal Algorithms for Transformers
 
 https://data-science-blog.com/blog/2020/12/30/transformer/ 
