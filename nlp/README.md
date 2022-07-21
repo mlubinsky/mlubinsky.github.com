@@ -6,7 +6,10 @@ https://ods.ai/tracks/nlp-course-spring-22
 
 https://ods.ai/
 
+### Classes 
 https://burlachenkok.github.io/Courses-at-Stanford-relative-to-AI/
+
+https://huggingface.co/course/chapter1/1
 
 Topic modeling:
 https://www.toptal.com/python/topic-modeling-python
