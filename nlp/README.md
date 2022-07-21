@@ -8,8 +8,10 @@ https://ods.ai/
 
 https://burlachenkok.github.io/Courses-at-Stanford-relative-to-AI/
 
-Transfer learning
+Topic modeling:
+https://www.toptal.com/python/topic-modeling-python
 
+Transfer learning
 https://www.toptal.com/deep-learning/exploring-pre-trained-models
 
 Embedding
