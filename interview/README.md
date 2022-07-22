@@ -1,5 +1,11 @@
 https://grow.google/certificates/interview-warmup/
 
+Вы стоите на поверхности Земли. 
+Затем вы начинаете идти: проходите один километр на юг, 
+один на запад и один на север. В итоге вы оказываетесь в начальной точке.
+Где вы стоите?
+https://habr.com/ru/post/678254/
+
 https://florian.github.io//xor-trick/ XOR trick
 
 https://www.youtube.com/watch?v=Peq4GCPNC5c&t=1s . 10 common interview questions - solved
