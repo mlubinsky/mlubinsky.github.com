@@ -8,12 +8,15 @@ https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
 What is the difference:
 #### createOrReplaceTempView
+https://spark.apache.org/docs/3.1.3/api/python/reference/api/pyspark.sql.DataFrame.createOrReplaceTempView.html
 ```
 df=spark.read.format("delta").load("s3://aardvark-prod-dca-data/fact/APP_TOTAL_REVENUE/range_type=WEEK/")
 df.createOrReplaceTempView("weekly_table")
 spark.sql(SQL).show(55)
 ```
-#### registerTempTable
+#### registerTempTable (deprecated)
+
+https://spark.apache.org/docs/3.1.3/api/python/reference/api/pyspark.sql.DataFrame.registerTempTable.html?highlight=registertemptable
 ```
 path="s3://aardvark-prod-dca-data/fact/APP_TOTAL_REVENUE/range_type=WEEK/date=2012-01-14/"
 df=spark.read.format("delta").load(path)
