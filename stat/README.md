@@ -22,6 +22,12 @@ Cook book
 
 https://pages.cs.wisc.edu/~tdw/files/cookbook-en.pdf
 
+```
+P R O B A B I L I S T I C N U M E R I C S
+C O M P U TA T I O N A S  M A C H I N E L E A R N I N G
+```
+https://www.probabilistic-numerics.org/assets/ProbabilisticNumerics.pdf
+
 
 ### Bayes
 
