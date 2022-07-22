@@ -1,5 +1,9 @@
 https://github.com/averkij/mstu-nlp-course Обзор современного машинного обучения
 
+https://lifearchitect.ai/models/
+
+https://lifearchitect.ai/timeline/
+
 https://stepik.org/org/dlschool  Школа глубокого обучения МФТИ
 
 https://ods.ai/tracks/nlp-course-spring-22 
