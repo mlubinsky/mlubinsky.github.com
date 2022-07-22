@@ -18,6 +18,8 @@ https://habr.com/ru/company/mygames/blog/677074/
 
 https://github.com/matteocourthoud/Blog-Posts
 
+### Books
+
 Cook book
 
 https://pages.cs.wisc.edu/~tdw/files/cookbook-en.pdf
@@ -28,6 +30,7 @@ C O M P U TA T I O N A S  M A C H I N E L E A R N I N G
 ```
 https://www.probabilistic-numerics.org/assets/ProbabilisticNumerics.pdf
 
+https://lukepereira.github.io/notebooks/documents/2021-moduli-attention/main.pdf
 
 ### Bayes
 
