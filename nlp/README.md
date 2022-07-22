@@ -6,6 +6,8 @@ https://ods.ai/tracks/nlp-course-spring-22
 
 https://ods.ai/
 
+https://www.fast.ai/2022/07/21/dl-coders-22/. Practical Deep Learning for Coders 2022
+
 ### Classes 
 https://burlachenkok.github.io/Courses-at-Stanford-relative-to-AI/
 
