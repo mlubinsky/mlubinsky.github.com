@@ -172,6 +172,8 @@ https://news.ycombinator.com/item?id=28292225
 https://news.ycombinator.com/item?id=28400446
 
 
+https://news.ycombinator.com/item?id=32191140 interesting RSS feeds 
+
 #### Personal development
 
 https://news.ycombinator.com/item?id=28369727
