@@ -1,3 +1,6 @@
+## Keras Book
+Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurélien Geron
+
 ## PyTorch
 
 Book https://sebastianraschka.com/blog/2022/ml-pytorch-book.html
