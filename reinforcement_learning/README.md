@@ -13,6 +13,8 @@ https://stable-baselines3.readthedocs.io/en/master/
 
 https://spinningup.openai.com/en/latest/
 
+https://data-science-blog.com/blog/2021/07/31/my-elaborate-study-notes-on-reinforcement-learning/
+
 Stanford CS330: Deep multitasking and meta learning:
 
 https://www.youtube.com/watch?v=0rZtSwNOTQo&list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5
