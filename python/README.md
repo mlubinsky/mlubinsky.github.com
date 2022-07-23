@@ -543,7 +543,7 @@ https://habr.com/ru/post/559560/ . hex arhitecture in python
 
 https://luminousmen.com/post/python-interview-questions-senior
 
-https://antonz.org/python-packaging/
+
 
 https://awesome-python.com/
 
@@ -585,7 +585,13 @@ IP = requests.get('https://api.ipify.org').text
 
 
 ### Import
+use importlib
+
+https://habr.com/ru/post/678488/ Как универсально организовать импорты в проекте, независимо от того, где находятся модули?
+
 https://pythonhowtoprogram.com/better-organization-of-your-projects-with-python-imports/ 
+
+https://antonz.org/python-packaging/
 
 https://tenthousandmeters.com/blog/python-behind-the-scenes-11-how-the-python-import-system-works/
 ```
