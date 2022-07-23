@@ -13,6 +13,7 @@ https://www.youtube.com/channel/UCEEhbFAvl3fOW5geICQbMcg
 Modern problems in theoretical physics MFTI (ru)
 https://www.youtube.com/playlist?list=PLthfp5exSWErBIoHpaPV77pq8kHHIeWu4
 
+https://www.youtube.com/channel/UCmsSWg3AUqBrvz9Y_mqfRNQ/videos
 
 https://www.damtp.cam.ac.uk/user/tong/teaching.html Tong
 
