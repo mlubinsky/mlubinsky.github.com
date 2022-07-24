@@ -3,6 +3,9 @@ https://habr.com/ru/post/670062/
 
 https://www.youtube.com/watch?v=9RCfz3ef19o
 
+Database browser:
+
+https://wisser.github.io/Jailer/
 
 ### Anti-join
 
