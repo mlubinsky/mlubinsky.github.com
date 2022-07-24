@@ -2,6 +2,8 @@
 
 https://iagoleal.com/posts/dynamic-programming/
 
+https://www.youtube.com/playlist?list=PLCiTDJays9rU7WmHIlEFZsXT_boyJ6oZu
+
 https://medium.com/free-code-camp/follow-these-steps-to-solve-any-dynamic-programming-interview-problem-cc98e508cd0e
 
 https://towardsdatascience.com/how-to-find-all-solutions-to-the-subset-sum-problem-597f77677e45
