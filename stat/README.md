@@ -120,8 +120,9 @@ https://nabbla1.livejournal.com/95999.html
 
 ### Python
 
-https://patsy.readthedocs.io/en/
+https://patsy.readthedocs.io/en/latest/  Describing statistical models in Python
 
+ 
 if we have some variable y, and we want to regress it against some other variables x, a, b, and the interaction of a and b, then we simply write:
 
 patsy.dmatrices("y ~ x + a + b + a:b", data)
