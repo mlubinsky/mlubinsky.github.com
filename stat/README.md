@@ -6,6 +6,7 @@ https://mltechniques.com/resources/
 Extreme events in dynamical systems and random walkers: A review
 https://arxiv.org/abs/2109.11219
 
+https://habr.com/ru/post/678604/ Viterbi 
 
 https://www.toptal.com/algorithms/metropolis-hastings-bayesian-inference
 
