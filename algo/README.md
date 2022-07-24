@@ -4,6 +4,8 @@ https://news.ycombinator.com/item?id=32186203 Obsure data structures
 
 https://blog.bradfieldcs.com/an-introduction-to-hashing-in-the-era-of-machine-learning-6039394549b0
 
+https://www.youtube.com/watch?v=poz15EVC4MQ Stack
+
 ### Books
 
 http://algorithmsbook.com/ Algorithms for Decision Making
