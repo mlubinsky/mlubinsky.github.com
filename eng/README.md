@@ -1,3 +1,7 @@
+It's a massive country with many different races and cultures in it. 
+Painting them all with one brush isn't very nice.
+
+
 <https://habr.com/ru/post/499296/>
 
 https://habr.com/ru/company/englishdom/blog/589357/ Accent
