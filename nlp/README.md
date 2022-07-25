@@ -1,5 +1,7 @@
 https://github.com/averkij/mstu-nlp-course Обзор современного машинного обучения
 
+https://zilliz.com/learn/what-is-vector-database  What is a Vector Database?
+
 https://lifearchitect.ai/models/
 
 https://lifearchitect.ai/timeline/
