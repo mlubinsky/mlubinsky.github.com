@@ -121,6 +121,7 @@ https://www.uhnwidata.com/den-of-rich/sergey-nikolenko
 
 https://news.ycombinator.com/item?id=28232165 interesing blog posts
 
+https://news.ycombinator.com/item?id=32220192 interesting youtube channels
 
 https://nintil.com/scaling-tacit-knowledge
 
