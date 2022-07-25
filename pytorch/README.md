@@ -42,6 +42,8 @@ https://www.youtube.com/watch?v=v43SlgBcZ5Y PyTorch Tutorial (2022), Part 1: Ten
 
 https://www.youtube.com/watch?v=w9U57o6wto0 PyTorch Tutorial (2022), Part 2: Basic Networks
 
+https://www.youtube.com/watch?v=NaptjtDyvuY PyTorch Tutorial (2022), Part 3:
+
 https://www.youtube.com/watch?v=c36lUUr864M Deep Learning With PyTorch - Full Course
 
 https://www.youtube.com/watch?v=Wr0SZ5BNmVk Intro To TorchData: Load Data Like A Pro In PyTorch
