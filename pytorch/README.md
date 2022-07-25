@@ -36,6 +36,8 @@ https://spandan-madan.github.io/DeepLearningProject/docs/Deep_Learning_Project-P
 
 ### Youtube
 
+https://www.youtube.com/c/PyTorch
+
 https://www.youtube.com/watch?v=v43SlgBcZ5Y PyTorch Tutorial (2022), Part 1: Tensors
 
 https://www.youtube.com/watch?v=w9U57o6wto0 PyTorch Tutorial (2022), Part 2: Basic Networks
