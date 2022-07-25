@@ -42,7 +42,9 @@ https://www.youtube.com/watch?v=w9U57o6wto0 PyTorch Tutorial (2022), Part 2: Bas
 
 https://www.youtube.com/watch?v=c36lUUr864M Deep Learning With PyTorch - Full Course
 
-https://www.youtube.com/watch?v=GIsg-ZUy0MY
+https://www.youtube.com/watch?v=Wr0SZ5BNmVk Intro To TorchData: Load Data Like A Pro In PyTorch
+
+https://www.youtube.com/watch?v=GIsg-ZUy0MY PyTorch for Deep Learning - Full Course / Tutorial
 
 
  
