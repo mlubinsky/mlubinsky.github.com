@@ -143,6 +143,7 @@ https://www.youtube.com/watch?v=4qwFwdCcgac&ab_channel=Anchor
 
 https://habr.com/ru/post/329528/
 
+
 ### Chess engine in Rust
 
 https://github.com/adam-mcdaniel/chess-engine
@@ -161,6 +162,8 @@ https://github.com/robtaussig/ChaosChess/tree/master/src/engine
 
 
 ### Chess engine in GO
+
+https://github.com/qnkhuat/gochess
 
 https://habr.com/ru/company/timeweb/blog/533642/
 
