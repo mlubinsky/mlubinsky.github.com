@@ -69,7 +69,7 @@ df_category.printSchema()
 
 https://databricks.com/product/photon
 
-https://datahubproject.io/
+https://datahubproject.io/ - instead Amundsen
 
 greatexpectations.io
 
@@ -87,7 +87,7 @@ https://www.youtube.com/watch?v=5rNquRnNb4E&list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1e
 
 https://github.com/dbt-labs
 
-### Amundsen
+### Amundsen or (https://datahubproject.io/ - instead Amundsen)
 
 https://www.amundsen.io/
 
