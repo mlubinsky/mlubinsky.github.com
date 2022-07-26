@@ -1,5 +1,7 @@
 https://grow.google/certificates/interview-warmup/
 
+https://habr.com/ru/company/getmatch/blog/678742/
+
 Вы стоите на поверхности Земли. 
 Затем вы начинаете идти: проходите один километр на юг, 
 один на запад и один на север. В итоге вы оказываетесь в начальной точке.
