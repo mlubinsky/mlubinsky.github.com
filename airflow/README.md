@@ -1,3 +1,5 @@
+https://habr.com/ru/company/otus/blog/679104/
+
 https://shopify.engineering/lessons-learned-apache-airflow-scale
 
 https://news.ycombinator.com/item?id=31480320
