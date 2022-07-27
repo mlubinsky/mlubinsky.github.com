@@ -35,6 +35,8 @@ https://news.ycombinator.com/item?id=31000709
 
 https://www.youtube.com/playlist?list=PLKXEsFnBcT5BD47xO19UsKshsQ7DMU3Sa
 
+Laslo vs Ridge regression
+https://habr.com/ru/post/679232/
 
 https://news.ycombinator.com/item?id=30417811 What are the most important statistical ideas of the past 50 years? (tandfonline.com)
 
