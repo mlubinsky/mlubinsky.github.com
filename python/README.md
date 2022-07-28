@@ -4,6 +4,8 @@ https://realpython.com/queue-in-python/
 
 https://mathspp.com/blog/pydonts/dunder-methods   dunder metods (with double undescore)   __aa__
 
+https://mathspp.com/blog/how-to-create-a-python-package-in-2022 
+
 https://awesome-python.com/
 
 https://python-patterns.guide/
@@ -585,6 +587,9 @@ IP = requests.get('https://api.ipify.org').text
 
 
 ### Import
+
+https://mathspp.com/blog/how-to-create-a-python-package-in-2022
+
 use importlib
 
 https://habr.com/ru/post/678488/ Как универсально организовать импорты в проекте, независимо от того, где находятся модули?
