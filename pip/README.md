@@ -1,5 +1,7 @@
 https://pdm.fming.dev/ PDM
 
+https://mathspp.com/blog/how-to-create-a-python-package-in-2022
+
 https://realpython.com/python-virtual-environments-a-primer/ 
 
 https://hackercodex.com/guide/python-development-environment-on-mac-osx/
