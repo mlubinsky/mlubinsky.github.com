@@ -273,6 +273,8 @@ https://youtu.be/lbcswonQmGs selection sort
 
 ## Hash function and hashtable 
 
+https://notes.volution.ro/v1/2022/07/notes/1290a79c/
+
 https://www.andreinc.net/2022/03/15/perfect-hashing-with-java
 
 https://blog.bradfieldcs.com/an-introduction-to-hashing-in-the-era-of-machine-learning-6039394549b0
