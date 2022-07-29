@@ -1,9 +1,12 @@
 https://architecturenotes.co/datasette-simon-willison/
+ 
 
-GUI for SQLite
+### GUI
+https://github.com/sqlitebrowser/sqlitebrowser
 
 https://lobste.rs/s/k9hzrj/db_browser_for_sqlite
 
+Sequel Ace - UI
 
 https://github.com/lana-k/sqliteviz +Plotly
 
@@ -50,8 +53,6 @@ https://avi.im/blag/2021/fast-sqlite-inserts/
 
 https://news.ycombinator.com/item?id=27872575
 
-### GUI
-https://github.com/sqlitebrowser/sqlitebrowser
 
 ### Work with CSV files using SQL. For data scientists and engineers (superintendent.app)
 
@@ -63,7 +64,14 @@ https://habr.com/ru/post/553696/
 
 https://github.com/simonw/sqlite-utils
 
-Sequel Ace - UI
+### Internals
+https://fly.io/blog/sqlite-internals-btree/
+
+https://jvns.ca/blog/2014/09/27/how-does-sqlite-work-part-1-pages/
+
+https://jvns.ca/blog/2014/10/02/how-does-sqlite-work-part-2-btrees/
+
+http://carlosproal.com/ir/papers/p121-comer.pdf The Ubiquitous B-Tree
 
 
 ### DuckDB
