@@ -25,9 +25,9 @@ csv_schema = StructType(
 )      
 fname="file:/dbfs/FileStore/uploads/mlubinsky/20220728_mps_weights.csv"
 
-df = spark.read.option("header",True).option("delimiter",",").schema(csv_schema).csv(fname)
+df_csv = spark.read.option("header",True).option("delimiter",",").schema(csv_schema).csv(fname)
 
-df_ordered=df.select("genre_id","downloads_weight","mps_total_downloads_weight","revenue_weight","mps_total_revenue_weight","mps_monetization_sov_weight","rau_weight","afu_weight","adu_weight","atu_weight","ris_weight","cumulative_rating_count_weight","incremental_rating_count_weight","cumulative_ratings_average_weight","incremental_ratings_average_weight")
+df_ordered=df_csv.select("genre_id","downloads_weight","mps_total_downloads_weight","revenue_weight","mps_total_revenue_weight","mps_monetization_sov_weight","rau_weight","afu_weight","adu_weight","atu_weight","ris_weight","cumulative_rating_count_weight","incremental_rating_count_weight","cumulative_ratings_average_weight","incremental_ratings_average_weight")
 ```
 
 ### CLEAR
