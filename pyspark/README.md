@@ -4,7 +4,8 @@
 from pyspark.sql.types import *
 
 csv_schema = StructType(
-   [
+   [   
+       StructField('id', IntegerType(), True),
        StructField('genre_id', LongType(), True),
        StructField('downloads_weight', DoubleType(), True),
        StructField('mps_total_downloads_weight', DoubleType(), True),
@@ -28,6 +29,10 @@ df = spark.read.option("header",True).option("delimiter",",").schema(csv_schema)
 
 df_ordered=df.select("genre_id","downloads_weight","mps_total_downloads_weight","revenue_weight","mps_total_revenue_weight","mps_monetization_sov_weight","rau_weight","afu_weight","adu_weight","atu_weight","ris_weight","cumulative_rating_count_weight","incremental_rating_count_weight","cumulative_ratings_average_weight","incremental_ratings_average_weight")
 ```
+
+### CLEAR
+
+aws s3 rm --recursive s3://aardvark-prod-dca-data/oss/MPS_APPIQ_TAXONOMY_WEIGHTS
 
 ### DELTA
 ```
