@@ -1,3 +1,19 @@
+### Book
+
+https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
+
+
+/opt/homebrew/bin/pyspark
+
+### JOIN
+
+https://dzone.com/articles/pyspark-join-explained-with-examples
+
+https://insaid.medium.com/eda-with-pyspark-1f29b7d1618
+
+https://stackoverflow.com/questions/39067505/pyspark-display-a-spark-data-frame-in-a-table-format
+
+
 ### CSV
 
 ```
