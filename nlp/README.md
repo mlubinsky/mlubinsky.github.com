@@ -14,6 +14,8 @@ https://ods.ai/
 
 https://www.fast.ai/2022/07/21/dl-coders-22/. Practical Deep Learning for Coders 2022
 
+https://www.youtube.com/watch?v=oWo9SNcyxlI
+
 ### Classes 
 https://burlachenkok.github.io/Courses-at-Stanford-relative-to-AI/
 
