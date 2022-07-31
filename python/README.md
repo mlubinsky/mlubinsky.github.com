@@ -16,6 +16,8 @@ https://inventwithpython.com/bigbookpython/ free Book
 
 https://www.python-unleashed.com/blog
 
+https://cjolowicz.github.io/tags/python/
+
 https://realpython.com/python-hash-table/ Build hash table in Python
 
 https://medium.com/@siddharth.sahu/must-know-python-concepts-for-experienced-developers-4554ceea3d95
