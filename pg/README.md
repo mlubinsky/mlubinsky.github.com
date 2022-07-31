@@ -30,7 +30,11 @@ https://www.pgmustard.com/blog/
 
 https://news.ycombinator.com/item?id=29163319 	Lesser-known Postgres features
 
+https://shekhargulati.com/2022/07/08/my-notes-on-gitlabs-postgres-schema-design/
+
 https://hakibenita.com/tag/postgresql
+
+
 
 sshtunnel to postgres
 
