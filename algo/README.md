@@ -60,6 +60,8 @@ https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 
 ### Not books
 
+https://github.com/tobymao/sqlglot/blob/main/posts/sql_diff.md
+
 https://www.infoq.com/presentations/abstract-algebra-analytics/ 
 
 https://www.infoq.com/data-analysis/
