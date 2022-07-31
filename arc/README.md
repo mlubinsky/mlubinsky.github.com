@@ -9,9 +9,12 @@ https://adamvotava.medium.com/
 Apache Iceberg:
 https://www.youtube.com/watch?v=LiC9vZATv0o&t=8s
 
-https://databricks.com/session_na20/patterns-and-operational-insights-from-the-first-users-of-delta-lake
+
 
 https://www.dremio.com/subsurface/comparison-of-data-lake-table-formats-iceberg-hudi-and-delta-lake/
+
+### Обзор паттернов интеграции микросервисов. Часть 1
+https://habr.com/ru/company/southbridge/blog/679906/
 
 ### Memcached vs Redis
 
