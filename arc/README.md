@@ -16,6 +16,8 @@ https://www.dremio.com/subsurface/comparison-of-data-lake-table-formats-iceberg-
 ### Обзор паттернов интеграции микросервисов. Часть 1
 https://habr.com/ru/company/southbridge/blog/679906/
 
+https://twirl.github.io/The-API-Book/index.ru.html
+
 ### Memcached vs Redis
 
 https://news.ycombinator.com/item?id=28830007. 
