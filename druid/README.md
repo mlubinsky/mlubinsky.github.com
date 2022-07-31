@@ -1,6 +1,9 @@
 
 https://druid.apache.org/docs/latest/tutorials/index.html
 
+https://www.micahlerner.com/2022/05/15/druid-a-real-time-analytical-data-store.html
+
+
 https://www.decipherzone.com/blog-detail/apache-druid-architecture
 
 https://www.youtube.com/watch?v=6jJi11r71sY
