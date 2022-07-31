@@ -2,6 +2,11 @@
 
 https://www.youtube.com/c/databricks
 
+https://community.cloud.databricks.com/login.html. - playground
+
+https://docs.databricks.com/data/databricks-datasets.html
+
+
 https://databricks.com/spark/jdbc-drivers-archive
 
 ### PySpark
