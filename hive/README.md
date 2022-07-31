@@ -34,6 +34,18 @@ aws s3 cp hiveUdf.jar s3://roku-dea-dev/sandbox/mlubinsky/
 DESCRIBE FUNCTION EXTENDED sbschema.roku_get_business_channel_id;
 ```
 
+### Avro
+column which contains array of strings
+```
+{ 
+  "name":"parameters",  
+  "type": { 
+      "type": "array",
+      "items": "string"
+   } 
+}
+```
+
 
 ### Add column in the middle
 
