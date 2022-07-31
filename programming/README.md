@@ -81,8 +81,8 @@ https://noahan.me/posts/effective-code-browsing-part1/
 
 https://noahan.me/posts/effective-code-browsing-part2/
 
-
-
+Func programming 
+https://www.cl.cam.ac.uk/teaching/Lectures/funprog-jrh-1996/
 
 ### Content aggregators
 
