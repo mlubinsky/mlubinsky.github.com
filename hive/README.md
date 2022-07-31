@@ -254,12 +254,46 @@ LATERAL VIEW json_tuple (emp.employee_department, 'name', 'director', 'budget') 
   
 ```
 
-Another example:
+Another example of lateral view/explode:
 ```
 select
  lat.* from (select 0) t
  lateral view
  explode(array('A','B','C')) lat
+```
+
+#### important: SET hive.map.aggr=false;
+```
+SET hive.map.aggr=false;
+
+WITH A AS (
+SELECT 1 as id, array(
+                     'subbrand_cbs',
+                     'subbrand_nickelodeon',
+                     'subbrand_mtv',
+                     'subbrand_bet',
+                     'subbrand_comedycentral',
+                     'subbrand_smithsonian'
+                    ) as tags
+UNION ALL
+SELECT 2 as id, array( 'nikelsonseries_roku', 'nikelson2series_roku' )  as tags
+UNION ALL
+SELECT 3 as id, array('nickelodeon', '123_movie_roku') as tags
+)
+
+SELECT A.id, A.tags,
+concat_ws(' ',
+  collect_set(
+         CASE
+            WHEN tag LIKE 'subbrand_%' THEN SUBSTR(tag,10)
+            ELSE NULL
+         END
+    )
+)
+as provider_sub_brand
+
+FROM A LATERAL VIEW OUTER EXPLODE(tags) t as tag
+ GROUP BY A.id, A.tags
 ```
 
 
