@@ -6,6 +6,8 @@ https://community.cloud.databricks.com/login.html. - playground
 
 https://docs.databricks.com/data/databricks-datasets.html
 
+https://databricks.com/session_na20/patterns-and-operational-insights-from-the-first-users-of-delta-lake
+
 ### DB workflow
 
 Workflows > click Create
