@@ -6,6 +6,29 @@ https://community.cloud.databricks.com/login.html. - playground
 
 https://docs.databricks.com/data/databricks-datasets.html
 
+### DB workflow
+
+Workflows > click Create
+
+#### jobs
+https://docs.databricks.com/data-engineering/jobs/jobs.html
+A job is a way to run non-interactive code in a Databricks cluster. 
+For example, you can run an extract, transform, and load (ETL) 
+
+https://docs.databricks.com/data-engineering/jobs/index.html
+
+You create jobs through the Jobs UI, the Jobs API, or the Databricks CLI. 
+The Jobs UI allows you to monitor, test, and troubleshoot your running and completed jobs.
+
+https://databricks.com/blog/2022/05/10/introducing-databricks-workflows.html
+
+https://docs.databricks.com/data-engineering/jobs/jobs-quickstart.html
+
+
+https://www.youtube.com/watch?v=H2FS4ijpFZA
+
+
+### JDBC
 
 https://databricks.com/spark/jdbc-drivers-archive
 
