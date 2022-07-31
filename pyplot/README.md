@@ -10,7 +10,10 @@ https://towardsdatascience.com/the-easiest-way-to-make-beautiful-interactive-vis
 
 https://sophiamyang.github.io/DS/visualization/holoviz/holoviz.html
 
+
+https://shiny.rstudio.com/py/ 
 ### EDA 
+
 
 https://www.zenrows.com/blog/exploratory-data-analysis-in-python
 
