@@ -838,6 +838,8 @@ https://www.amazon.com/Serious-Python-Black-Belt-Deployment-Scalability-ebook/dp
 
 <https://docs.python.org/2/howto/unicode.html>
 
+https://blog.fredrb.com/2022/07/31/character-encoding-utf8/
+
 <https://stackoverflow.com/questions/18034272/python-str-vs-unicode-types/18034409>
 
 <https://medium.com/better-programming/strings-unicode-and-bytes-in-python-3-everything-you-always-wanted-to-know-27dc02ff2686>
