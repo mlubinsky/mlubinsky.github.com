@@ -64,3 +64,61 @@ df_genre_weights = load_as_spark_df(spark, "MPS_APPIQ_TAXONOMY_WEIGHTS_O", genre
 
 
 ```
+
+Problem with duplicated columns:
+```
+df = spark.createDataFrame(
+    [
+        (1, 2, 3, 4, 5 ,6 , 7 ,8 , 9),   
+    ],
+    ["universal_app_id", "country_code", "product_id", "platform", "device_type", "range_type", "date", "app_name", "total_downloads"]
+)
+
+df_unified_totals = spark.createDataFrame(
+    [ 
+        (1, 2),   
+    ],
+    ["universal_app_id", "country_code"]
+)
+
+dim_cats = spark.createDataFrame(
+        [
+        (1, 2, 3, 4, 5),  
+        (10, 20, 30, 40, 50),
+    ],
+    ["dim_legacy_category_id", "dim_id", "dim_platform", "dim_category_id", "dim_unified_category_id"]
+)  
+
+import pyspark.sql.functions as F   
+df = df.join(
+            df_unified_totals, on=["universal_app_id", "country_code"]
+)
+
+df = (
+            df.alias("a")
+            .join(
+                dim_cats.alias("b"),
+                [(F.col("a.product_id") == F.col("b.dim_id"))],
+                "left",
+            )
+            .select("a.*", "b.dim_unified_category_id")
+)
+print("Step 3")
+for c in df.columns:
+    print(c)
+```
+Result:
+```
+universal_app_id
+country_code
+universal_app_id
+country_code
+product_id
+platform
+device_type
+range_type
+date
+app_name
+total_downloads
+dim_unified_category_id
+```
