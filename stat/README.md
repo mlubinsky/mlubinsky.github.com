@@ -14,6 +14,8 @@ https://www.toptal.com/algorithms/metropolis-hastings-bayesian-inference
 
 https://habr.com/ru/company/skillfactory/blog/674880/
 
+https://habr.com/ru/company/X5Tech/blog/679842/
+
 https://habr.com/ru/company/mygames/blog/677074/
 
 
