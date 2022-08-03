@@ -3,6 +3,10 @@
 https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
 
+SWew joins
+https://habr.com/ru/company/first/blog/678826/
+
+
 /opt/homebrew/bin/pyspark
 
 ### Dataframe
