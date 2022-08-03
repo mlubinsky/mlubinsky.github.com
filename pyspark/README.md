@@ -5,6 +5,16 @@ https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
 /opt/homebrew/bin/pyspark
 
+### Dataframe
+https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.html
+
+pdf = df.toPandas()
+
+### Pandas Dataframe to string
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_string.html
+
+pdf.to_string
+
 ### JOIN
 
 https://dzone.com/articles/pyspark-join-explained-with-examples
