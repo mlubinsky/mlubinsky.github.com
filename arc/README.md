@@ -18,6 +18,9 @@ https://habr.com/ru/company/southbridge/blog/679906/
 
 https://twirl.github.io/The-API-Book/index.ru.html
 
+Consesnsus in distibuted systems
+https://habr.com/ru/company/dododev/blog/463469/
+
 ### Memcached vs Redis
 
 https://news.ycombinator.com/item?id=28830007. 
