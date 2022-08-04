@@ -96,6 +96,8 @@ python -m json.tool my_json.json   # json beautifier - warning: will sort the ke
 
  ### JSON processing tools
  
+ https://bcmullins.github.io/parsing-json-python/. extract element from json
+ 
  https://pythonspeed.com/articles/faster-python-json-parsing/ 
  
  https://github.com/dcmoura/spyql  very fast
