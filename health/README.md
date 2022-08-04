@@ -1,5 +1,22 @@
 https://plakhov.livejournal.com/234894.html - Extra weight
 
+### ЛЕЧЕНИЕ ПРОСТАТИТА
+
+https://www.youtube.com/watch?v=v3oKCsA2EUw 
+
+https://www.youtube.com/watch?v=SwhiNAQPhjU&t=0s
+
+https://www.youtube.com/watch?v=7NdVCfTg0yw&t=0s
+
+https://www.youtube.com/watch?v=7NdVCfTg0yw
+
+ Flexibility:
+
+https://www.youtube.com/watch?v=V105d0BLQPU
+
+https://www.youtube.com/playlist?list=PLX8K3P2dGCECIs4h8KQYz1L190I_IFDcw
+
+
 Sun glasses: https://pubmed.ncbi.nlm.nih.gov/21617534/
 
 Both ultraviolet-A (UV-A) and UV-B induce cataract formation and are not necessary for sight. Ultraviolet radiation is also a risk factor for damage to the retinas of children. The removal of these wavelengths from ocular exposure will greatly reduce the risk of early cataract and retinal damage. One way this may be easily done is by wearing sunglasses that block wavelengths below 400 nm (marked 400 on the glasses). However, because of the geometry of the eye, these glasses must be wraparound sunglasses to prevent reflective UV radiation from reaching the eye. Additional protection may be offered by contact lenses that absorb significant amounts of UV radiation.In addition to UV radiation, short blue visible light (400-440 nm) is a risk factor for the adult human retina. This wavelength of light is not essential for sight and not necessary for a circadian rhythm response. For those over 50 years old, it would be of value to remove these wavelengths of light with specially designed sunglasses or contact lenses to reduce the risk of age-related macular degeneration.
