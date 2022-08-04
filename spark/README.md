@@ -71,6 +71,8 @@ https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-a
 https://towardsdatascience.com/best-practices-for-bucketing-in-spark-sql-ea9f23f7dd53
 https://medium.com/analytics-vidhya/spark-bucketing-is-not-as-simple-as-it-looks-c74f105f4af0
 
+### Skew 
+https://habr.com/ru/company/first/blog/678826/
 
 https://medium.com/curious-data-catalog/sparks-skew-problem-does-it-impact-performance-257cdef53680
 
