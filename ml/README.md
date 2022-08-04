@@ -39,6 +39,9 @@ https://news.ycombinator.com/item?id=31000709
 
 https://www.youtube.com/playlist?list=PLKXEsFnBcT5BD47xO19UsKshsQ7DMU3Sa
 
+Feature Engineering:
+https://habr.com/ru/company/ruvds/blog/680498/
+
 Laslo vs Ridge regression
 https://habr.com/ru/post/679232/
 
