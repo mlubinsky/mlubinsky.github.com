@@ -32,6 +32,8 @@ https://deepmind.com/learning-resources/reinforcement-learning-series-2021
 
 https://www.youtube.com/watch?v=mLHIMulCHcM  Andrew Ng's New Machine Learning Specialization is Out!!!
 
+Why do tree-based models still outperform deep learning on tabular data
+https://news.ycombinator.com/item?id=32333565
 
 ### Differentiable programming
 
