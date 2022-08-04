@@ -1131,6 +1131,9 @@ python3 -m http.server <8000> (python3)
 
 
 ### Use Jinja template to generate dynamic SQL
+
+https://realpython.com/primer-on-jinja-templating/
+
 <https://medium.com/analytics-and-data/jinja-the-sql-way-of-the-ninja-9a64fc815564> (see pdf file in this folder)
 
 
