@@ -160,6 +160,8 @@ https://habr.com/ru/post/593615/
 
 ### Online machine learning (incremental learning, continual learning, and stream learning)
 
+https://www.quantamagazine.org/the-computer-scientist-trying-to-teach-ai-to-learn-like-we-do-20220802 
+
 https://github.com/online-ml/river#readme  
 
 https://towardsdatascience.com/river-the-best-python-library-for-online-machine-learning-56bf6f71a403
