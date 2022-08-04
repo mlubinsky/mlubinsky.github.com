@@ -1,5 +1,9 @@
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
+100 Data Science вопросов
+https://www.youtube.com/watch?v=BI-yjkRKymg
+
+
 https://www.cs.ubc.ca/~schmidtm/Courses/LecturesOnML/
 
 https://onedrive.live.com/?authkey=%21AMC9DofT%5FW6hqE4&cid=199F8C87205FEB30&id=199F8C87205FEB30%21214006&parId=199F8C87205FEB30%21213972&o=OneUp
