@@ -3,6 +3,7 @@ https://physicsbaseddeeplearning.org/intro.html . BOOK
 100 Data Science вопросов
 https://www.youtube.com/watch?v=BI-yjkRKymg
 
+https://www.cs.toronto.edu/~duvenaud/cookbook/
 
 https://www.cs.ubc.ca/~schmidtm/Courses/LecturesOnML/
 
