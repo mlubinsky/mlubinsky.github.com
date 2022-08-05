@@ -3,7 +3,7 @@
 https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
 
-SWew joins
+### Skew joins
 https://habr.com/ru/company/first/blog/678826/
 
 
@@ -28,9 +28,35 @@ https://insaid.medium.com/eda-with-pyspark-1f29b7d1618
 https://stackoverflow.com/questions/39067505/pyspark-display-a-spark-data-frame-in-a-table-format
 
 
-### 
+### Columns with nulls
 
- PySpark ANY can check if any value of a column meets a condition.
+https://sparkbyexamples.com/pyspark/pyspark-find-count-of-null-none-nan-values/
+
+```
+import numpy as np
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+data = [
+    ("James","CA",np.NaN), ("Julia","",None),
+    ("Ram",None,200.0), ("Ramya","NULL",np.NAN)
+]
+df =spark.createDataFrame(data,["name","state","number"])
+df.show()
+
+
+from pyspark.sql.functions import col,isnan, when, count
+df.select(
+         [
+            count(when(isnan(c) | col(c).isNull(), c)).alias(c) for c in df.columns
+         ]
+   ).show()
+```
+
+### ANY
+Pandas has ANY :
+https://sparkbyexamples.com/pandas/pandas-check-if-any-value-is-nan-in-a-dataframe/
+
+ PySpark has ANY - it  can check if any value of a column meets a condition.
  
 ```
 from pyspark.sql import functions as F
