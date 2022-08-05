@@ -17,7 +17,23 @@ pdf = df.toPandas()
 ### Pandas Dataframe to string
 https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_string.html
 
-pdf.to_string
+pdf.to_string(). -- look how to ignore index
+
+### head() vs first()
+DataFrame.head(n=None)   (default - return 1 row)
+https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.head.html
+```
+df.head()
+Row(age=2, name='Alice')
+df.head(1)
+[Row(age=2, name='Alice')]
+```
+
+```
+df.first()
+Row(age=2, name='Alice')
+```
+https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.first.html
 
 ### JOIN
 
