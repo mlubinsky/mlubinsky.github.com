@@ -28,6 +28,21 @@ https://insaid.medium.com/eda-with-pyspark-1f29b7d1618
 https://stackoverflow.com/questions/39067505/pyspark-display-a-spark-data-frame-in-a-table-format
 
 
+### 
+
+ PySpark ANY can check if any value of a column meets a condition.
+ 
+```
+from pyspark.sql import functions as F
+
+data = [[1,2,3],[None, 5, 6], [7, None, 9]]
+df = spark.createDataFrame(data, schema=["col1", "col2", "col3"])
+
+cols = [f"any({col} is null) as {col}_contains_null" for col in df.columns]
+
+df.selectExpr(cols).show()
+```
+
 ### CSV
 
 ```
