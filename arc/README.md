@@ -2,6 +2,14 @@ Book:  <http://streamingsystems.net/>
 
 https://eng.uber.com/streaming-real-time-analytics/
 
+Documenting software architecture
+
+https://www.innoq.com/en/blog/brief-introduction-to-arc42/
+
+
+https://news.ycombinator.com/item?id=32353500
+
+
 https://luminousmen.com/post/modern-big-data-architectures-lambda-kappa
 
 https://adamvotava.medium.com/
