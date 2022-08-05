@@ -17,7 +17,10 @@ pdf = df.toPandas()
 ### Pandas Dataframe to string
 https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_string.html
 
-pdf.to_string(). -- look how to ignore index
+panda_df.to_string()  -- accepts arg to print index:
+
+print(df.select(F.count(F.when(F.isnan(c) | F.col(c).isNull(),c)).alias(c)).toPandas().to_string(index=False))  
+
 
 ### head() vs first()
 DataFrame.head(n=None)   (default - return 1 row)
@@ -44,7 +47,21 @@ https://insaid.medium.com/eda-with-pyspark-1f29b7d1618
 https://stackoverflow.com/questions/39067505/pyspark-display-a-spark-data-frame-in-a-table-format
 
 
+### Example: F.expr, any(), head(), lit(), cast(), check for nulls
+
+```
+        for col in df.columns:
+            has_nulls = f"any({col} is null)"
+            if df.select(F.expr(has_nulls)).head()[0]:
+                df = df.withColumn(f"{col}_uniform_scaled", F.lit(None).cast("double"))
+            else:
+                ...
+```
+
+
 ### Columns with nulls
+
+https://stackoverflow.com/questions/37262762/filter-pyspark-dataframe-column-with-none-value
 
 https://sparkbyexamples.com/pyspark/pyspark-find-count-of-null-none-nan-values/
 
@@ -66,6 +83,11 @@ df.select(
             count(when(isnan(c) | col(c).isNull(), c)).alias(c) for c in df.columns
          ]
    ).show()
+   
+   
+ ### printing via toPandas()  
+ print(df.select(F.count(F.when(F.isnan(c) | F.col(c).isNull(),c)).alias(c)).toPandas().to_string(index=False))  
+   
 ```
 
 ### ANY
