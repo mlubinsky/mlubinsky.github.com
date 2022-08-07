@@ -124,6 +124,8 @@ https://nabbla1.livejournal.com/95999.html
 
 https://patsy.readthedocs.io/en/latest/  Describing statistical models in Python
 
+https://habr.com/ru/post/681218/. statmodels
+
  
 if we have some variable y, and we want to regress it against some other variables x, a, b, and the interaction of a and b, then we simply write:
 
