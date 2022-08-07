@@ -20,6 +20,14 @@ Error: fatal: Not possible to fast-forward, aborting.
 git pull --rebase origin master
 ```
 
+
+### Restore
+git checkout — $FILE` and `git restore $FILE
+
+### switch
+
+git switch branch:
+
 ### Fetch remote branch - use switch statement
 https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch
 
