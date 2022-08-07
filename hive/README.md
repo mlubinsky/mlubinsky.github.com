@@ -11,6 +11,11 @@ SET hive.groupby.orderby.position.alias=true;
 hive -e "SET;" | grep <Search-String> 
 
 
+### Timestamp + interval
+
+https://stackoverflow.com/questions/73264703/hive-how-to-add-dynamic-interval-from-the-column
+
+
 ## If CTE is used many times then better to materialize it:
 
 SET hive.default.fileformat=Orc; 
