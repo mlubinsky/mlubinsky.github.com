@@ -21,8 +21,11 @@ https://www.youtube.com/watch?v=LiC9vZATv0o&t=8s
 
 https://www.dremio.com/subsurface/comparison-of-data-lake-table-formats-iceberg-hudi-and-delta-lake/
 
-### Обзор паттернов интеграции микросервисов. Часть 1
+### Обзор паттернов интеграции микросервисов. Часть 1 ,2
 https://habr.com/ru/company/southbridge/blog/679906/
+
+https://habr.com/ru/company/southbridge/blog/681326/
+
 
 https://twirl.github.io/The-API-Book/index.ru.html
 
