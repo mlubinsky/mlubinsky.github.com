@@ -17,6 +17,10 @@ https://habr.com/ru/company/microsoft/blog/503462/
 
 https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_270839230_130845605&dclid=CImGtNrTpeoCFQMqrQYd4dYHbA
 
+
+### S3 explained
+https://habr.com/ru/company/cloud4y/blog/681376/
+
 ###  Scalable analytics with AWS
 
 https://aws.amazon.com/ec2/instance-types/
