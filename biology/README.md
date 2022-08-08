@@ -2,6 +2,16 @@ https://www.goodreads.com/book/show/25660581-the-deeper-genome
 
 https://www.quantamagazine.org/embryo-cells-set-patterns-for-growth-by-pushing-and-pulling-20220712
 
+
+### Immune system atlas 
+
+https://www.nature.com/articles/s41586-022-05028-x
+
+https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-05028-x/MediaObjects/41586_2022_5028_MOESM1_ESM.pdf
+
+https://news.ycombinator.com/item?id=32381790
+
+
 https://freethoughtblogs.com/pharyngula/2008/02/03/buffeted-by-the-winds-of-chanc/
 
 https://jsomers.net/i-should-have-loved-biology/
