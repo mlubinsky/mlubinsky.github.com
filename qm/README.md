@@ -8,6 +8,8 @@ https://www.youtube.com/watch?v=42TYj0C4zzg&list=PLqdhXM8ko4WEFhN5uw8lFnR1jM9MfZ
 
 https://ocw.mit.edu/search/?q=QUANTUM%20PHYSICS MIT
 
+https://www.math.columbia.edu/~woit/QMbook/qmbook-latest.pdf
+
 http://blog.rudnyi.ru/ru/2022/04/ponyatna-li-klassicheskaya-mehanika-2.html
 
 канал по дистанционному образованию в МФТИ
