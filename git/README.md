@@ -3,6 +3,8 @@ https://jwiegley.github.io/git-from-the-bottom-up/
 
 ### Git log
 
+git log --after=2022-05-20 --before=2022-06-10 --pretty=format:"%h %an %ad" --date=short
+
 git log --after="2014-7-1" 
 
 git log --after="2014-7-1" --before="2014-7-4"
