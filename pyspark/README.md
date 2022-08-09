@@ -21,7 +21,15 @@ panda_df.to_string()  -- accepts arg to print index:
 
 print(df.select(F.count(F.when(F.isnan(c) | F.col(c).isNull(),c)).alias(c)).toPandas().to_string(index=False))  
 
+Use limit:
+df.limit(3).toPandas().to_string(index=False)
 
+
+### print schema without show()
+```
+schema = df._jdf.schema().treeString()
+print(schema)
+```
 ### head() vs first()
 DataFrame.head(n=None)   (default - return 1 row)
 https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.head.html
