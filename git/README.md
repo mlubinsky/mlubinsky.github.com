@@ -1,5 +1,15 @@
 https://jwiegley.github.io/git-from-the-bottom-up/
 
+
+### Git log
+
+git log --since=2022-08-08 --raw
+
+git log --author=mlubinsky --raw
+
+
+git log --since=2022-08-08 --patch 
+
 ### Git pull and rebase
 ```
 git fetch --all
