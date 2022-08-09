@@ -5,6 +5,8 @@ https://jwiegley.github.io/git-from-the-bottom-up/
 
 git log --after="2014-7-1" 
 
+git log --after="2014-7-1" --before="2014-7-4"
+
 git log --since=2022-08-08 --raw
 
 git log --author=mlubinsky --raw
