@@ -1,5 +1,9 @@
 https://jwiegley.github.io/git-from-the-bottom-up/
 
+### Git diff
+
+git diff <commit-id> <commit-id>
+
 
 ### Git log
 
