@@ -7,6 +7,19 @@ git diff <commit-id> <commit-id>
 
 ### Git log
 
+If you have modified some files in a Git repository and did a git add on them, 
+but haven’t yet done a git commit on them, you can view those changes with this command:
+
+git diff --cached
+
+git diff --cached src/main/scala/agt/Main.scala
+
+git log  -p -- filename
+
+git log -p --follow -- <filename>
+
+git log  -p  filename
+
 git log --after=2022-05-20 --before=2022-06-10 --pretty=format:"%h %an %ad" --date=short
 
 git log --after="2014-7-1" 
