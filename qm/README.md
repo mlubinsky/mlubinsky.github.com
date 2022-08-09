@@ -22,7 +22,7 @@ https://www.youtube.com/watch?v=7Blzcwz0Ejk  Квантовая механика
 
 https://www.youtube.com/playlist?list=PLthfp5exSWEoUgz9P2-8sCy4BEun69bUL  Квантовая механика, Хайдуков З. В., 11.02.2022г.
 
-
+https://math.ucr.edu/home/baez/
 
 https://www.youtube.com/playlist?list=PLzZPcCojoi_V-JDjTVp2yT3OJtyEkbQBl Осипов Д.Л.  Осень 2016
 
