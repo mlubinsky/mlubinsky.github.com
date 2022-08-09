@@ -15,6 +15,8 @@ https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-05028-x/Media
 https://news.ycombinator.com/item?id=32381790
 
 
+https://www.pillar.vc/playlist/article/open-source-tools-for-computational-biology/
+
 https://freethoughtblogs.com/pharyngula/2008/02/03/buffeted-by-the-winds-of-chanc/
 
 https://jsomers.net/i-should-have-loved-biology/
