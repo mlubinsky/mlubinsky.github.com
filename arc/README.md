@@ -34,6 +34,10 @@ https://habr.com/ru/company/dododev/blog/463469/
 
 ### Memcached vs Redis
 
+https://architecturenotes.co/redis/ 
+
+https://news.ycombinator.com/item?id=32426879
+
 https://news.ycombinator.com/item?id=28830007. 
 
 https://engineering.kablamo.com.au/posts/2021/memcached-vs-redis-whats-the-difference
