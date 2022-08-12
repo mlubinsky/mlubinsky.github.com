@@ -30,6 +30,12 @@ df.limit(3).toPandas().to_string(index=False)
 schema = df._jdf.schema().treeString()
 print(schema)
 ```
+
+### Get value from the df with single row and col:
+```
+df = spark.sql('select count(1) as count_check from schema.table')
+value = df.collect()[0][0]
+```
 ### head() vs first()
 DataFrame.head(n=None)   (default - return 1 row)
 https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.head.html
