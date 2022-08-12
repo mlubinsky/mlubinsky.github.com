@@ -53,6 +53,10 @@ Row(age=2, name='Alice')
 https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.first.html
 
 
+### Group by
+
+df.filter(df.colname == 50.0).groupBy('another_colname').count().show()
+
 ### Expression
 https://www.nbshare.io/notebook/374005461/Pyspark-Expr-Example/
 ```
