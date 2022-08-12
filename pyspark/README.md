@@ -98,6 +98,14 @@ df.select(
    
 ```
 
+### groupBy, sum, agg
+```
+df.groupBy('genre_id').agg(
+ F.sum( (F.col('monetization_score').isNull()).cast('int') ).alias('monetization_null_count'),
+ F.sum( (F.col('monetization_score').isNotNull()).cast('int') ).alias('monetization_NOT_null_count'),   
+).orderBy('genre_id').show(40)
+```
+
 ### ANY
 Pandas has ANY :
 https://sparkbyexamples.com/pandas/pandas-check-if-any-value-is-nan-in-a-dataframe/
