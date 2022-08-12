@@ -52,6 +52,24 @@ Row(age=2, name='Alice')
 ```
 https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.first.html
 
+
+### Expression
+https://www.nbshare.io/notebook/374005461/Pyspark-Expr-Example/
+```
+from pyspark.sql.functions import (col, expr)
+# here we update the column "Classify" using the CASE expression. 
+# The conditions are based on the values in the Salary column
+modified_df = df.withColumn("Classify", 
+    expr("CASE WHEN Salary < 5000 THEN 1 "+
+               "WHEN Salary < 10000 THEN 2 " +
+                "ELSE 3 " + 
+           END")
+    )
+    
+modified_df = df.withColumn("New_Salary", expr("Salary + 500"))    
+
+```
+
 ### JOIN
 
 https://dzone.com/articles/pyspark-join-explained-with-examples
