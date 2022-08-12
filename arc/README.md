@@ -6,6 +6,9 @@ Documenting software architecture
 
 https://www.innoq.com/en/blog/brief-introduction-to-arc42/
 
+Algorithms you should know before you take system design interviews
+
+https://blog.bytebytego.com/p/algorithms-you-should-know-before
 
 https://news.ycombinator.com/item?id=32353500
 
@@ -17,6 +20,8 @@ https://adamvotava.medium.com/
 Apache Iceberg:
 https://www.youtube.com/watch?v=LiC9vZATv0o&t=8s
 
+
+https://news.ycombinator.com/item?id=32429533
 
 
 https://www.dremio.com/subsurface/comparison-of-data-lake-table-formats-iceberg-hudi-and-delta-lake/
