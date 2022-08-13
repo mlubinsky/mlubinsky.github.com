@@ -149,9 +149,18 @@ find-spark-home      meld                 pcre2grep            rg
 
 ls /opt/homebrew/opt/
 
+### Pyspark issue
+
+Anaconda's pyspark fails:
+
+which pyspark
+/Users/mlubinsky/opt/anaconda3/bin/pyspark
+
+/Users/mlubinsky/opt/anaconda3/lib/python3.9/site-packages/pyspark/bin/spark-class: line 96: CMD: bad array subscript
+head: illegal line count -- -1
 
 
-On machine with Anaconda run this:
+But homebrew Pyspark works:
 
 /opt/homebrew/bin/pyspark
 
