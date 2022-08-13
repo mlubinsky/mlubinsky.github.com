@@ -143,6 +143,7 @@ https://www.youtube.com/watch?v=4qwFwdCcgac&ab_channel=Anchor
 
 https://habr.com/ru/post/329528/
 
+https://habr.com/ru/post/682122/
 
 ### Chess engine in Rust
 
