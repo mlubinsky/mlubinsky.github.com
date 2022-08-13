@@ -57,6 +57,23 @@ https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFra
 
 df.filter(df.colname == 50.0).groupBy('another_colname').count().show()
 
+
+### Infinity:
+```
+def _replace_infs(c, v):
+        is_infinite = c.isin(
+            [
+                F.lit("+Infinity").cast("float")
+                , F.lit("-Infinity").cast("float")
+            ]
+        )
+return F.when(c.isNotNull() & is_infinite, v).otherwise(c)
+        
+        
+df = df.withColumn(
+                s, self._replace_infs(F.col(s), F.lit(None))
+)         
+```
 ### Expression
 https://www.nbshare.io/notebook/374005461/Pyspark-Expr-Example/
 ```
