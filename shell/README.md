@@ -7,14 +7,20 @@ To remember which of my commands are available in my ~/bin/ directory
 or when simply trying to remember what some of my commands are called,
 I simply type a comma followed by tab and my list of commands appears
 
-
 ```
-convert file to lower case
+
+### Make folder and go into it:
+
+function ccd { mkdir -p "$1" && cd "$1" }
+
+
+
+### convert file to lower case
 
 tr '[:upper:]' '[:lower:]' < inputFile > outputFile
 
 
-REMOVING NEWLINES (AND REPLACING WITH SPACES)
+### REMOVING NEWLINES (AND REPLACING WITH SPACES)
 
 tr '\n' ' ' < inputFile
 
