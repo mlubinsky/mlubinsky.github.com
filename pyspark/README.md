@@ -31,6 +31,35 @@ schema = df._jdf.schema().treeString()
 print(schema)
 ```
 
+### GROUP BY HAVING COUNT() > 1
+
+```
+df.groupBy(*cols).count().show()
+
+df.groupBy(*cols).count().filter(F.col('count')>1).show()
+```
+
+How to convert this to PySpark:
+
+```
+sqlContext.sql("select Category,count(*) as 
+count from hadoopexam where HadoopExamFee<3200  
+group by Category having count>10")
+```
+Answer:
+```
+from pyspark.sql.functions import *
+
+df.filter(df.HadoopExamFee<3200)
+  .groupBy('Category')
+  .agg(count('Category').alias('count'))
+  .filter(col('count')>10)
+```
+
+GEneric answer:
+```
+df.groupBy(someExpr).agg(somAgg).where(somePredicate) 
+```
 ### Get value from the df with single row and col:
 ```
 df = spark.sql('select count(1) as count_check from schema.table')
