@@ -60,6 +60,11 @@ http://mywiki.wooledge.org/BashPitfalls
 
 https://medium.com/capital-one-tech/bashing-the-bash-replacing-shell-scripts-with-python-d8d201bc0989
 
+
+### other scripts
+
+https://news.ycombinator.com/item?id=32467957
+
 ###	Command line tools for productive programmers 
 https://news.ycombinator.com/item?id=18483460
 
