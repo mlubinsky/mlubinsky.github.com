@@ -1,5 +1,7 @@
 https://github.com/rougier/scientific-visualization-book .  BOOK!
 
+https://habr.com/ru/company/otus/blog/682500/.  Python based dashboards
+
 https://www.youtube.com/watch?v=cTJBJH8hacc matplotlib tutorial
 
 https://github.com/ponnhide/patchworklib subplot manager
