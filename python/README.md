@@ -18,6 +18,9 @@ https://practicalpython.yasoob.me/toc.html  free Book
 
 https://inventwithpython.com/bigbookpython/ free Book
 
+### any() all() and generators
+https://habr.com/ru/company/wunderfund/blog/681426/
+
 https://www.python-unleashed.com/blog
 
 https://cjolowicz.github.io/tags/python/
