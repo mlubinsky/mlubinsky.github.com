@@ -3,6 +3,11 @@
 https://news.ycombinator.com/item?id=27483077
 
 
+
+### SSH tips and tricks
+
+https://news.ycombinator.com/item?id=32486031
+
 ### SSL TLS explained
 
 https://news.ycombinator.com/item?id=23096166
