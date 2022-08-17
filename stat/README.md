@@ -1,6 +1,10 @@
 https://www.cantorsparadise.com/whats-the-probability-of-1-appearing-as-the-first-digit-of-a-number-41f2fcd781c7 
 frequency of 1st digit in the number - Benford's law
 
+Hight dimentional probability - Roman Vershinin: 
+https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.pdf
+
+
 https://mltechniques.com/resources/ 
 
 Extreme events in dynamical systems and random walkers: A review
