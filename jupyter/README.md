@@ -9,6 +9,15 @@ https://habr.com/ru/company/skillfactory/blog/659279/
 Useful extension for Jupyter: hinterland
 https://towardsdatascience.com/the-only-auto-completion-extension-youll-ever-need-for-your-jupyter-notebooks-87bbaecb7126
 
+### Read big csv file fast - use datatable
+```
+import datatable as dt
+import pandas as pd
+def read_fast_csv(f):
+    frame = dt.fread(f)
+    ds = frame.to_pandas()
+    return ds
+```
 ### Polars
 
 Lightning-fast DataFrame library for Rust and Python
