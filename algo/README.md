@@ -101,7 +101,7 @@ https://habr.com/ru/company/otus/blog/676692/
 
 ### Tree, suffix tree, B-tree, etc
 
-
+https://habr.com/ru/post/681940/
 
 <https://habr.com/ru/post/455260/> Merkel's tree
 
