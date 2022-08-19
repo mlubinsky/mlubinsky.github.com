@@ -90,6 +90,8 @@ https://thevaluable.dev/vim-expert/
 
 ### NeoVim
 
+https://habr.com/ru/company/avito/blog/682962/
+
 https://toroid.org/modern-neovim
 
 https://habr.com/ru/post/585222/
