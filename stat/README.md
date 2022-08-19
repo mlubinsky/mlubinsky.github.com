@@ -254,7 +254,8 @@ https://www.crosstab.io/articles/survival-analysis-applications
 
 https://statisticsbyjim.com/basics/z-score
 
-
+### Correlation
+https://habr.com/ru/post/683442/
 
 ### Casual inference
 
