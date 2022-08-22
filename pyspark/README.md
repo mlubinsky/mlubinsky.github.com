@@ -9,6 +9,13 @@ https://habr.com/ru/company/first/blog/678826/
 
 /opt/homebrew/bin/pyspark
 
+
+### Show verically (useful for wide table)
+```
+fname="/FileStore/uploads/reviews_20220822_hour_23/20600000009072.gz"
+df = spark.read.options(header='False', inferSchema='True', delimiter='\t').schema(schema).csv(fname) 
+df.show(n=3, truncate=250, vertical=True)
+```
 ### Dataframe
 https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.html
 
