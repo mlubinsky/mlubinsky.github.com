@@ -7,6 +7,7 @@ https://mathics.org/ Wolfram's Mathemetica free clone
 
 https://mltechniques.com/resources/
 
+https://www.math.uci.edu/~rvershyn/teaching/2010-11/602/functional-analysis.pdf  Func analysys
 
 https://math.stackexchange.com/questions/302023/best-sets-of-lecture-notes-and-articles
 
