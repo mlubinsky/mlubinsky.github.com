@@ -37,6 +37,8 @@ https://www.toptal.com/machine-learning/embeddings-in-machine-learning
 
 https://jalammar.github.io/illustrated-transformer/
 
+https://habr.com/ru/company/lanit/blog/682506/
+
 https://amatriain.net/blog/transformer-models-an-introduction-and-catalog-2d1e9039f376/
 
 https://web.stanford.edu/class/cs25/
