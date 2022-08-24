@@ -1,3 +1,9 @@
+### Key-Value stores
+
+https://notes.eatonphil.com/whats-the-big-deal-about-key-value-databases.html
+
+https://news.ycombinator.com/item?id=32566851
+
 ### DBT
 https://habr.com/ru/post/670062/
 
