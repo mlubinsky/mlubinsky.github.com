@@ -32,6 +32,14 @@ Use limit:
 df.limit(3).toPandas().to_string(index=False)
 
 
+### Reading files
+```
+path="s3://aardvark-prod-dca-data/fact/APP_TOTAL_REVENUE/range_type=WEEK/date=2012-01-14/" 
+df=spark.read.parquet(path)
+
+spark.read.format(“delta”).load(path)
+```
+
 ### print schema without show()
 ```
 schema = df._jdf.schema().treeString()
