@@ -32,7 +32,7 @@ Use limit:
 df.limit(3).toPandas().to_string(index=False)
 
 
-### Reading files
+### Reading parquet and delta files
 ```
 path="s3://aardvark-prod-dca-data/fact/APP_TOTAL_REVENUE/range_type=WEEK/date=2012-01-14/" 
 df=spark.read.parquet(path)
@@ -42,6 +42,13 @@ df = spark.read.format(“delta”).load(path)
 df.display()
 ```
 
+### createOrReplaceTempView
+https://spark.apache.org/docs/3.1.3/api/python/reference/api/pyspark.sql.DataFrame.createOrReplaceTempView.html
+```
+df=spark.read.format("delta").load("s3://aardvark-prod-dca-data/fact/APP_TOTAL_REVENUE/range_type=WEEK/")
+df.createOrReplaceTempView("weekly_table")
+spark.sql(SQL).show(55)
+```
 ### print schema without show()
 ```
 schema = df._jdf.schema().treeString()
