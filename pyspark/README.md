@@ -37,7 +37,9 @@ df.limit(3).toPandas().to_string(index=False)
 path="s3://aardvark-prod-dca-data/fact/APP_TOTAL_REVENUE/range_type=WEEK/date=2012-01-14/" 
 df=spark.read.parquet(path)
 
-spark.read.format(“delta”).load(path)
+df = spark.read.format(“delta”).load(path)
+
+df.display()
 ```
 
 ### print schema without show()
