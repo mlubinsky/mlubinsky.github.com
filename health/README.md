@@ -1,5 +1,10 @@
 https://plakhov.livejournal.com/234894.html - Extra weight
 
+Астаксантин- самый мощный антиоксидант
+
+https://www.youtube.com/watch?v=kjQhq6YtGaI
+
+
 ### ЛЕЧЕНИЕ ПРОСТАТИТА
 
 https://www.youtube.com/watch?v=v3oKCsA2EUw 
