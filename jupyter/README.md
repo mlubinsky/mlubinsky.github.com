@@ -6,6 +6,7 @@ https://github.com/mwouts/jupytext  Notebook which works with regular .py files
 https://habr.com/ru/company/skillfactory/blog/659279/
 
 
+
 Useful extension for Jupyter: hinterland
 https://towardsdatascience.com/the-only-auto-completion-extension-youll-ever-need-for-your-jupyter-notebooks-87bbaecb7126
 
@@ -18,6 +19,11 @@ def read_fast_csv(f):
     ds = frame.to_pandas()
     return ds
 ```
+
+Use pandas best practises:
+  
+https://habr.com/ru/company/wunderfund/blog/682388/
+
 ### Polars
 
 Lightning-fast DataFrame library for Rust and Python
