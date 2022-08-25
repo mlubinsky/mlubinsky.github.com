@@ -1,6 +1,11 @@
+### Streaming
+
 Book:  <http://streamingsystems.net/>
 
 https://eng.uber.com/streaming-real-time-analytics/
+
+https://habr.com/ru/company/ru_mts/blog/684476/
+
 
 Documenting software architecture
 
