@@ -4,6 +4,8 @@ https://github.com/prabhupant/python-ds
 
 https://habr.com/ru/company/getmatch/blog/678742/
 
+https://habr.com/ru/post/684756/ binary search
+
 https://habr.com/ru/post/679008/ process big file
 
 Вы стоите на поверхности Земли. 
