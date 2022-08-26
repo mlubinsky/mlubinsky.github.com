@@ -1,5 +1,11 @@
 https://www.fast.ai/2022/07/28/nbdev-v2/
 
+Start every notebook as
+```
+    %load_ext autoreload
+    %autoreload 2
+```    
+
 https://github.com/mwouts/jupytext  Notebook which works with regular .py files
 
 Как встроить блокнот Jupyter на любой сайт
