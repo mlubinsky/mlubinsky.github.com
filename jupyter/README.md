@@ -6,6 +6,20 @@ Start every notebook as
     %autoreload 2
 ```    
 
+One alternative to loading models in .py scripts is making use of joblib's dump() and load() methods for pipelines.  
+https://joblib.readthedocs.io/en/latest/generated/joblib.dump.html
+That way, if you put your classifiers in joblib pipelines, once you're done with fitting steps you can just export your trained classifier with:
+```
+    joblib.dump(pipe, "trained_classifier.dump")
+And resume your work with:
+    joblib.load("trained_classifier.dump")
+    
+ ````   
+Considering this works for any Python object, a lot of heavy lifting can be exported 
+for later (swift) use this way.
+
+
+
 https://github.com/mwouts/jupytext  Notebook which works with regular .py files
 
 Как встроить блокнот Jupyter на любой сайт
