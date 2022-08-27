@@ -58,6 +58,8 @@ Transformers: https://habr.com/ru/search/?q=%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D1%84
 
 ### BERT
 
+https://towardsdatascience.com/everything-you-need-to-know-about-albert-roberta-and-distilbert-11a74334b2da
+
 https://habr.com/ru/post/682630/
 
 https://habr.com/ru/post/680986/
