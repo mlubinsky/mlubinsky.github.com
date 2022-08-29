@@ -86,11 +86,13 @@ https://news.ycombinator.com/item?id=31009313
 
 ### JSON
 
+https://sqlite-utils.datasette.io/en/stable/cli.html#inserting-json-data
+
 jq https://stedolan.github.io/jq/
 
 https://qmacro.org/tags/jq/
  
-
+https://plantuml.com/json
 
 https://blog.kellybrazil.com/2021/04/12/practical-json-at-the-command-line/
 
