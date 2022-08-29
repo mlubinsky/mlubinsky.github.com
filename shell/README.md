@@ -60,6 +60,9 @@ http://mywiki.wooledge.org/BashPitfalls
 
 https://medium.com/capital-one-tech/bashing-the-bash-replacing-shell-scripts-with-python-d8d201bc0989
 
+### jc jq
+
+https://blog.kellybrazil.com/2022/08/29/tutorial-rapid-script-development-with-bash-jc-and-jq/
 
 ### other scripts
 
@@ -67,6 +70,7 @@ https://news.ycombinator.com/item?id=32467957
 
 ###	Command line tools for productive programmers 
 https://news.ycombinator.com/item?id=18483460
+
 
 https://github.com/alebcay/awesome-shell#applications
 
