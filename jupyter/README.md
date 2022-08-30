@@ -28,6 +28,7 @@ https://habr.com/ru/company/skillfactory/blog/659279/
 
 
 Useful extension for Jupyter: hinterland
+
 https://towardsdatascience.com/the-only-auto-completion-extension-youll-ever-need-for-your-jupyter-notebooks-87bbaecb7126
 
 ### Read big csv file fast - use datatable
@@ -91,6 +92,8 @@ https://medium.com/codex/how-to-set-up-and-run-python-data-science-development-e
 
 
 Vectorized pandas operations:
+
+https://newtechaudit.ru/pochemu-vash-pandas-rabotaet-v-3000-raz-medlennee/
 
 https://python.plainenglish.io/pandas-how-you-can-speed-up-50x-using-vectorized-operations-d6e829317f30
 
