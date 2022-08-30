@@ -41,9 +41,7 @@ def read_fast_csv(f):
     return ds
 ```
 
-Use pandas best practises:
-  
-https://habr.com/ru/company/wunderfund/blog/682388/
+
 
 ### Polars
 
@@ -91,7 +89,11 @@ https://medium.com/codex/how-to-set-up-and-run-python-data-science-development-e
 
 
 
-Vectorized pandas operations:
+### Vectorized pandas operations:
+
+Use pandas best practises:
+  
+https://habr.com/ru/company/wunderfund/blog/682388/
 
 https://newtechaudit.ru/pochemu-vash-pandas-rabotaet-v-3000-raz-medlennee/
 
