@@ -293,6 +293,9 @@ https://habr.com/ru/company/rambler_and_co/blog/569932/
 
 
 ### Spark Streaming
+
+https://habr.com/ru/company/ru_mts/blog/685492/
+
 https://habr.com/ru/post/451160/
 ```
 В потоковом пайплайне важно понимать разделение операций на stateless и stateful.
