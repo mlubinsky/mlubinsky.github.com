@@ -913,6 +913,9 @@ https://habr.com/ru/company/ruvds/blog/485646/ . Python Tips
 <http://voorloopnul.com/blog/writing-self-contained-etl-pipeline-with-python/>
 
 ## multiprocessing vs threading
+
+https://habr.com/ru/company/skillbox/blog/685682/
+
 <https://habr.com/ru/company/otus/blog/501056/>
 ```
     import random
@@ -939,6 +942,8 @@ https://habr.com/ru/company/ruvds/blog/485646/ . Python Tips
 ```
 
 ### multiprocessing, asyncio
+
+https://habr.com/ru/company/skillbox/blog/685682/
 
 https://towardsdatascience.com/parallelizing-python-code-3eb3c8e5f9cd
 
