@@ -22,6 +22,12 @@ https://phiresky.github.io/blog/2020/sqlite-performance-tuning/
 
 https://antonz.org/sqlite-is-not-a-toy-database/
 
+SQLite and DuckDB
+
+https://simonwillison.net/2022/Sep/1/sqlite-duckdb-paper/
+
+https://news.ycombinator.com/item?id=32675861
+
 https://antonz.org/sqlean/
 
 https://blog.zachwf.com/posts/sqlite-is-dynamically-typed/
