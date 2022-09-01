@@ -16,6 +16,16 @@ fname="/FileStore/uploads/reviews_20220822_hour_23/20600000009072.gz"
 df = spark.read.options(header='False', inferSchema='True', delimiter='\t').schema(schema).csv(fname) 
 df.show(n=3, truncate=250, vertical=True)
 ```
+
+### For left join  find which join column doesn not have match
+```
+    df = df.join(df_genre_weights, on=["genre_id"], how="left")
+    df_missing_genres = df.select('genre_id').filter(F.col("downloads_weight").isNull()).distinct().collect()
+    missing_genres = [v['genre_id'] for v in df_missing_genres]
+
+    print("missing genres =" + str(missing_genres))
+```    
+    
 ### Dataframe
 https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.html
 
