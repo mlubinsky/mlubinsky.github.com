@@ -1,5 +1,7 @@
 https://www.goodreads.com/book/show/25660581-the-deeper-genome
 
+https://www.quantamagazine.org/biologists-rethink-the-logic-behind-cells-molecular-signals-20210916 
+
 https://www.quantamagazine.org/embryo-cells-set-patterns-for-growth-by-pushing-and-pulling-20220712
 
 https://www.quantamagazine.org/most-complete-simulation-of-a-cell-probes-lifes-hidden-rules-20220224 
