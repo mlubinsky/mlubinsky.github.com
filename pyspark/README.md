@@ -2,6 +2,9 @@
 
 https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
+### Partitions
+
+https://habr.com/ru/company/otus/blog/686142/
 
 ### Skew joins
 https://habr.com/ru/company/first/blog/678826/
