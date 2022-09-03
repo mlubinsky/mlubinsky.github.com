@@ -83,7 +83,9 @@ http://jeffe.cs.illinois.edu/teaching/algorithms/
 
 https://quanticdev.com/algorithms/distributed-computing/distributed-sorting/. distibuted sorting
 
+### bitmaps
 
+https://vikramoberoi.com/a-primer-on-roaring-bitmaps-what-they-are-and-how-they-work/
 
 ### Trie
 
