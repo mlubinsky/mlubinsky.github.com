@@ -44,6 +44,8 @@ https://habr.com/ru/company/dododev/blog/463469/
 
 ### Memcached vs Redis
 
+https://habr.com/ru/company/wunderfund/blog/685894/ Redis
+
 https://architecturenotes.co/redis/ 
 
 https://news.ycombinator.com/item?id=32426879
