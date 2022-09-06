@@ -2,6 +2,8 @@ https://github.com/AbdulMalikDev/PythonCheatSheet
 
 https://www.reddit.com/r/Python/comments/wyl1lp/which_not_so_well_known_python_packages_do_you/
 
+https://www.reddit.com/r/Python/comments/x3z0lp/what_packages_replaced_standard_library_modules/
+
 https://realpython.com/queue-in-python/
 
 https://realpython.com/sort-python-dictionary/
