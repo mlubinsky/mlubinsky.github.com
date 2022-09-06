@@ -259,6 +259,8 @@ https://habr.com/ru/post/683442/
 
 ### Casual inference
 
+https://habr.com/ru/company/glowbyte/blog/686398/
+
 https://arxiv.org/abs/2206.15475
 
 https://arxiv.org/abs/2206.15475
