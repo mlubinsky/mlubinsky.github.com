@@ -1,6 +1,8 @@
 
 https://habr.com/ru/post/682884/   Time management
 
+https://pybit.es/articles/a-super-simple-zettelkasten-note-taking-system/
+
 https://www.zengobi.com/curio/
 
 https://habr.com/ru/post/681500/
