@@ -3,6 +3,18 @@ How to interact with files on Databricks
 
 https://docs.databricks.com/files/index.html 
 
+```
+%sh: Allows you to run shell code in your notebook. To fail the cell if the shell command has a non-zero exit status, add the -e option. This command runs only on the Apache Spark driver, and not the workers. 
+To run a shell command on all nodes, use an init script.
+
+%fs: Allows you to use dbutils filesystem commands.
+For example, to run the dbutils.fs.ls command to list files, 
+you can specify %fs ls instead. For more information, see How to interact with files on Databricks.
+
+%md: Allows you to include various types of documentation, including text, images, and mathematical formulas and equations. See the next section.
+
+```
+
 https://www.youtube.com/c/databricks
 
 https://community.cloud.databricks.com/login.html. - playground
