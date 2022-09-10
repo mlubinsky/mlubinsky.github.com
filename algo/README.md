@@ -1,5 +1,7 @@
 https://ru.algorithmica.org/
 
+https://courses.csail.mit.edu/6.851/fall17/lectures/
+
 https://www.youtube.com/c/Reducible
 
 https://web.stanford.edu/class/cs168/index.html
