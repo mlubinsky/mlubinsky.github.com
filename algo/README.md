@@ -16,6 +16,8 @@ https://news.ycombinator.com/item?id=25716581 	Algorithms for Decision Making
 
 ### Partitionong and hashing
 
+https://m.youtube.com/watch?v=UF9Iqmg94tk consistent hashing
+
 https://habr.com/ru/company/mygames/blog/669390/ consistent hashing
 
 https://www.thedigitalcatonline.com/blog/2022/08/23/data-partitioning-and-consistent-hashing/
