@@ -4,6 +4,14 @@ https://usaco.guide/CPH.pdf
 
 https://ru.algorithmica.org/
 
+```
+Let’s say we want to count the number of times elements appear in a stream of data. A simple solution is to maintain a hash table that maps elements to their frequencies.
+
+This approach does not scale: Imagine having a stream with billions of elements, most of which are unique. Even if we are only interested in the most important ones, this method has huge space requirements. Since we do not know for which items to store counts, our hash table will grow to contain billions of elemen
+```
+
+https://florian.github.io//count-min-sketch/
+
 https://courses.csail.mit.edu/6.851/fall17/lectures/
 
 https://www.youtube.com/c/Reducible
