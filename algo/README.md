@@ -1,5 +1,7 @@
 https://ru.algorithmica.org/
 
+https://www.youtube.com/c/Reducible
+
 https://web.stanford.edu/class/cs168/index.html
 
 https://news.ycombinator.com/item?id=32186203 Obsure data structures
