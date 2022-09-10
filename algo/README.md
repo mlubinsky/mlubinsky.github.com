@@ -1,3 +1,5 @@
+https://habr.com/ru/post/686806/ ML + information theory
+
 https://ru.algorithmica.org/
 
 https://courses.csail.mit.edu/6.851/fall17/lectures/
