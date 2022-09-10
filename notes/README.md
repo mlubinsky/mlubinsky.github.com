@@ -1,3 +1,6 @@
+https://codethrasher.com/post/2022-09-09-evolving-my-note-taking-processes/
+
+https://news.ycombinator.com/item?id=32784470
 
 https://habr.com/ru/post/682884/   Time management
 
