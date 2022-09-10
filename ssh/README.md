@@ -2,7 +2,9 @@
 
 https://news.ycombinator.com/item?id=27483077
 
+https://plumbum.readthedocs.io/en/latest/remote.html
 
+https://iapyeh.github.io/sshscript/index
 
 ### SSH tips and tricks
 
