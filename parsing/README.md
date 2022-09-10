@@ -2,6 +2,10 @@ https://mpov.timmorgan.org/i-built-a-ruby-parser/
 
 Book: craftinginterpreters.com/
 
+http://venge.net/graydon/talks/CompilerTalk-2019.pdf?utm_source=thenewstack&utm_medium=website&utm_campaign=platform
+
+https://news.ycombinator.com/item?id=32780472
+
 Recursive descent parsing library for Python based on functional combinators
 https://github.com/vlasovskikh/funcparserlib
 
