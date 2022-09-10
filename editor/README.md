@@ -13,7 +13,7 @@ https://coteditor.com/
 sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 ```
 
-### Helix 
+### Helix , Zed
 https://helix-editor.com/
 
 https://www.youtube.com/watch?v=9Zj-wiQ9_Xw
@@ -21,6 +21,11 @@ https://www.youtube.com/watch?v=9Zj-wiQ9_Xw
 #### Nova (not free)
 
 https://nova.app/
+
+
+### PyCharm
+
+https://habr.com/ru/post/687482/
 
 #### Lite-xl
 
