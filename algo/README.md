@@ -1,4 +1,5 @@
-https://habr.com/ru/post/686806/ ML + information theory
+https://habr.com/ru/post/686806/ ML + information theory 1
+https://habr.com/ru/post/687546/ ML + information theory 2
 
 https://usaco.guide/CPH.pdf
 
