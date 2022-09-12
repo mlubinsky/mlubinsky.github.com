@@ -1,9 +1,14 @@
 https://habr.com/ru/post/686806/ ML + information theory 1
+
 https://habr.com/ru/post/687546/ ML + information theory 2
 
-https://usaco.guide/CPH.pdf
+https://usaco.guide/CPH.pdf Competitive programming handbook
+
+https://www.jjj.de/fxt/fxtbook.pdf
 
 https://ru.algorithmica.org/
+
+https://tproger.ru/books/algorithms-data-structures-books/
 
 ```
 Let’s say we want to count the number of times elements appear in a stream of data. A simple solution is to maintain a hash table that maps elements to their frequencies.
