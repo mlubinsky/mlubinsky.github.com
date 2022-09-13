@@ -1,4 +1,6 @@
 https://architecturenotes.co/datasette-simon-willison/
+
+https://habr.com/ru/post/687994/
  
 
 ### GUI
