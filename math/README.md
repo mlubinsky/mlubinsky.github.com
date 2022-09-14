@@ -13,6 +13,10 @@ https://math.stackexchange.com/questions/302023/best-sets-of-lecture-notes-and-a
 
 https://www.susanrigetti.com/math
 
+
+Greeen function
+https://www.youtube.com/watch?v=ism2SfZgFJg
+
 https://math.stackexchange.com/search?tab=votes&q=is%3aanswer
 
 Math-Net.Ru channel on youtube:
