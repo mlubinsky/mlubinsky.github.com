@@ -1,4 +1,15 @@
+ Meta-learning
+ https://habr.com/ru/post/688820/
  
+ A Gentle Introduction to Meta-Learning by Edward Ma
+
+https://pub.towardsai.net/a-gentle-introduction-to-meta-learning-8e36f3d93f61
+
+From zero to research — An introduction to Meta-learning by Thomas Wolf
+
+https://medium.com/huggingface/from-zero-to-research-an-introduction-to-meta-learning-8e16e677f78a
+
+
 
   https://habr.com/ru/company/skillfactory/blog/510688/.  what is p-value?
         http://www.stochasticlifestyle.com/the-essential-tools-of-scientific-machine-learning-scientific-ml/
