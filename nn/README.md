@@ -14,6 +14,9 @@ http://www.e-cortex.com/technology.html
 
 http://psych.colorado.edu/~oreilly/pdp++/manual/pdp-user_235.html
 
+https://www.labri.fr/perso/nrougier/papers/10.1073.pnas.0502455102.pdf
+
+
 https://weightagnostic.github.io/. Weight agnostic NN
 
 https://habr.com/ru/post/652295/
