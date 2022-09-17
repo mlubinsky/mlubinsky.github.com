@@ -1,5 +1,19 @@
 https://yoshuabengio.org/
 
+### Leabra 
+
+https://www.researchgate.net/publication/270960245_The_Leabra_Model_of_Neural_Interactions_and_Learning_in_the_Neocortex
+
+https://emersim.org/
+
+https://en.wikipedia.org/wiki/Leabra
+
+https://github.com/emer/leabra
+
+http://www.e-cortex.com/technology.html
+
+http://psych.colorado.edu/~oreilly/pdp++/manual/pdp-user_235.html
+
 https://weightagnostic.github.io/. Weight agnostic NN
 
 https://habr.com/ru/post/652295/
