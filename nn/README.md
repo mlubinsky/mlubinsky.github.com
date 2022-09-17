@@ -1,5 +1,16 @@
 https://yoshuabengio.org/
 
+### Meta-learning
+
+https://pub.towardsai.net/a-gentle-introduction-to-meta-learning-8e36f3d93f61 Metalearning
+
+https://habr.com/ru/post/688820/
+
+
+From zero to research — An introduction to Meta-learning by Thomas Wolf
+
+(https://medium.com/huggingface/from-zero-to-research-an-introduction-to-meta-learning-8e16e677f78a)
+
 ### Leabra 
 
 https://www.researchgate.net/publication/270960245_The_Leabra_Model_of_Neural_Interactions_and_Learning_in_the_Neocortex
