@@ -1,5 +1,7 @@
 https://github.com/rougier/scientific-visualization-book .  BOOK!
 
+https://proplot.readthedocs.io/en/stable/ proplot
+
 https://dataviz.dylancastillo.co/
 
 https://habr.com/ru/company/otus/blog/682500/.  Python based dashboards
