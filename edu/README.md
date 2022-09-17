@@ -1,3 +1,5 @@
+http://coursecatalog.web.cmu.edu/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/#bscurriculumtextcontainer
+
 http://techlibrary.ru/
 
 https://opensyllabus.org/
