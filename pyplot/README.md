@@ -210,6 +210,10 @@ https://www.geeksforgeeks.org/autocorrelation-plot-using-matplotlib/
 
 ## Matplotlib
 
+https://github.com/rougier/matplotlib-tutorial
+
+https://github.com/rougier/scientific-visualization-book
+
 <https://habr.com/ru/post/468295/>
 
 <https://realpython.com/python-matplotlib-guide/>
