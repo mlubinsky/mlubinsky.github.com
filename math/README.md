@@ -1,6 +1,8 @@
 Render math expression in Markdown
 https://news.ycombinator.com/item?id=31438864
 
+https://explained-from-first-principles.com/#focus
+
 https://mathics.org/ Wolfram's Mathemetica free clone
 
 Ветераны броуновского движения - Вступайте в ряды Фурье!
