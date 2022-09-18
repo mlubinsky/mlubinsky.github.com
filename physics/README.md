@@ -6,6 +6,9 @@
 
 https://data.stackexchange.com/physics/query/1378063
 
+Newton’s law from quantum mechanics: macroscopic bodies in the vacuum
+https://arxiv.org/pdf/2209.07318.pdf
+
  канал по дистанционному образованию в МФТИ
  
 https://www.youtube.com/channel/UCEEhbFAvl3fOW5geICQbMcg
