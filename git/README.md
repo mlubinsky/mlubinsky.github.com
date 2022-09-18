@@ -1,5 +1,12 @@
 https://jwiegley.github.io/git-from-the-bottom-up/
 
+https://github.com/extrawurst/gitui
+```
+brew install tig 
+brew install lazygit 
+brew install gitui
+```
+
 ### Git diff
 
 git diff <commit-id> <commit-id>
