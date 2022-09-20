@@ -2,6 +2,8 @@ https://retool.com/blog/best-postgresql-guis-in-2020/. Best UI tools for Postgre
 
 https://pganalyze.com/blog/how-postgres-chooses-index
 
+https://www.crunchydata.com/blog/postgres-data-flow
+
 https://www.youtube.com/watch?v=D8Q4n6YXdpk . Window function in Postgres
 
 https://www.timescale.com/blog/how-postgresql-views-and-materialized-views-work-and-how-they-influenced-timescaledb-continuous-aggregates/
