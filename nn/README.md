@@ -2,6 +2,8 @@ https://yoshuabengio.org/
 
 ### Meta-learning
 
+https://ufn.ru/ru/articles/2022/5/b/
+
 https://pub.towardsai.net/a-gentle-introduction-to-meta-learning-8e36f3d93f61 Metalearning
 
 https://habr.com/ru/post/688820/
@@ -29,6 +31,7 @@ https://www.labri.fr/perso/nrougier/
 
 https://www.labri.fr/perso/nrougier/papers/10.1073.pnas.0502455102.pdf
 
+https://ufn.ru/ru/articles/2022/5/b/
 
 https://weightagnostic.github.io/. Weight agnostic NN
 
