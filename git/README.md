@@ -58,6 +58,10 @@ git pull --ff-only origin master
 Error: fatal: Not possible to fast-forward, aborting.
 
 git pull --rebase origin master
+  
+git add <file>  
+You are currently rebasing branch 'advanced_reviews_rms_model_update' on '1401809'.
+  (all conflicts fixed: run "git rebase --continue")  
 ```
 
 
