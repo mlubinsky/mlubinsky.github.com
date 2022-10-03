@@ -1,5 +1,7 @@
 ```
-schedule_interval = '@once'
+default_args: {
+      schedule_interval = '@once'
+     } 
 ```
 
 
