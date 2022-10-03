@@ -1,3 +1,8 @@
+```
+schedule_interval = '@once'
+```
+
+
 https://habr.com/ru/company/otus/blog/679104/
 
 https://habr.com/ru/post/682460/
