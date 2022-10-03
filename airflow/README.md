@@ -1,4 +1,17 @@
+https://airflow.apache.org/docs/apache-airflow/stable/dag-run.html
+
+```
+dag = DAG(
+    "example_parameterized_dag",
+    schedule=None,
+    start_date=pendulum.datetime(2021, 1, 1, tz="UTC"),
+    catchup=False,
+)
+```
+
 How to start DAG from command line:
+
+
 
 
 airflow.sh schedule -d airflow_stats_dag &
