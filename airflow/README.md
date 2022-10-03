@@ -1,7 +1,11 @@
 How to disable DAG:
 
-I suppose if you set the start date of the dag to some date way in the future, 
+1) if you set the start date of the dag to some date way in the future, 
 you'll halt it until that time period. Dag stays in tact, but doesn't run.
+
+2) set an end_date in the past
+
+3)
 ```
 default_args: {
       schedule_interval = '@once'
