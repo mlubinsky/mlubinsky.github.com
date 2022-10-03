@@ -1,3 +1,9 @@
+How to start DAG from command line:
+
+
+airflow.sh schedule -d airflow_stats_dag &
+
+
 How to disable DAG:
 
 1) if you set the start date of the dag to some date way in the future, 
