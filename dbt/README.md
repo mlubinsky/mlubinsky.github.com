@@ -3,6 +3,8 @@ How to interact with files on Databricks
 
 https://docs.databricks.com/files/index.html 
 
+%sh <command> /dbfs/<path>/
+
 ```
 %sh: Allows you to run shell code in your notebook. To fail the cell if the shell command has a non-zero exit status, add the -e option. This command runs only on the Apache Spark driver, and not the workers. 
 To run a shell command on all nodes, use an init script.
