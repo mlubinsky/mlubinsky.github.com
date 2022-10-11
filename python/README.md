@@ -1,3 +1,25 @@
+Generate dates in range
+```
+import datetime
+
+start_date='2022-04-02'
+start = datetime.datetime.strptime(start_date, "%Y-%m-%d")
+end_date = '2022-08-27'
+weeks=[start_date] 
+str_next=start_date
+
+while str_next < end_date:
+    next = start + datetime.timedelta(days=7)
+    str_next=str(next)[0:10]
+    weeks.append(str_next)
+    start=next
+
+print("====.  done   =====")    
+for i, week in enumerate(weeks):
+   print(i,week)
+```
+
+
 https://github.com/AbdulMalikDev/PythonCheatSheet
 
 https://www.reddit.com/r/Python/comments/wyl1lp/which_not_so_well_known_python_packages_do_you/
