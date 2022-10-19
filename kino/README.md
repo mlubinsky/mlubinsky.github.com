@@ -10,6 +10,98 @@ https://www.youtube.com/watch?v=dISZqTGdlx4&list=PLLVr9rhMLtCiocQIok8eNbBTaAj0fJ
 
 https://news.ycombinator.com/item?id=32799789
 
+
+### Best movies
+https://www.worldofreel.com/blog/2019/4/results
+
+01. Mad Max: Fury Road (George Miller)  
+02. The Tree of Life (Terrence Malick)  
+03. Moonlight  (Barry Jenkins) 
+04. Boyhood (Richard Linklater) 
+05. The Social Network (David Fincher) 
+06. The Master (Paul Thomas Anderson) 
+07.  Roma (Alfonso Cuaron) 
+08. Phantom Thread (Paul Thomas Anderson) 
+09. A Separation (Asghar Farhadi)
+09. Inside Llewyn Davis (Joel Coen) 
+11. Get Out (Jordan Peele) 
+12. Under the Skin (Jonathan Glazer) 
+13. Carol (Todd Haynes) 
+13. Margaret (Kenneth Lonergan) 
+15. Toni Erdmann (Maren Ade) 
+16. Uncle Boonmee (Apichatpong Weerasethakul) 
+17. Twin Peaks: The Return (David Lynch) 
+18. Her (Spike Jonze) 
+18. Call Me By Your Name (Luca Guadagnino) 
+20. The Act of Killing (Joshua Oppenheimer) 
+20. Inception (Christopher Nolan) 
+20. Holy Motors (Leos Carax) 
+21. La La Land (Damien Chazelle)
+21. 12 Years A Slave (Steve McQueen) 
+23. Certified Copy (Abbas Kiarostami)
+24. The Florida Project (Sean Baker)
+24. Amour (Michael Haneke)
+25. Ida (Pawel Pawlikowski)
+
+--
+https://www.worldofreel.com/blog/2020/5/jfj030p0dzlzh0u97m5btusmavghk4
+
+1) Mulholland Drive (David Lynch) 
+2) There Will Be Blood (Paul Thomas Anderson) 
+3) Zodiac (David Fincher) 
+4) In the Mood For Love (Wong Kar-Wai) 
+5) No Country For Old Men (Joel and Ethan Coen) 
+6) Children of Men (Alfonso Cuaron)
+7) Eternal Sunshine of the Spotless Mind (Michel Gondry)  
+8) Spirited Away (Hayao Miyazaki) 
+9) Yi Yi: A One and A Two (Edward Yang) 
+10) Lost in Translation (Sofia Coppola) 
+
+11) The Dark Knight (Christopher Nolan)
+12) Pan's Labyrinth (Guillermo del Toro) 
+13) 25th Hour (Spike Lee) 
+14) 4 Months, 3 Weeks, 2 Days (Cristi Mungiu)
+15) The New World (Terrence Malick) 
+16) Brokeback Mountain (Ang Lee)   
+17) Inglourious Basterds (Quentin Tarantino) 
+18) Y Tu Mamá También (Alfonso Cuaron)
+19) The Royal Tenenbaums (Wes Anderson) 
+20) The Departed (Martin Scorsese)
+
+21) City of God (Fernando Meirelles)
+22) WALL-E (Andrew Stanton)
+23) The Lord of the Rings Trilogy (Peter Jackson)
+24) Almost Famous (Cameron Crowe)
+25) Talk to Her (Pedro Almodovar)
+26) Crouching Tiger, Hidden Dragon (Ang Lee)
+27) Oldboy (Chan Woo-Park)
+28) The Hurt Locker (Kathryn Bigelow)
+29) Dogville (Lars Von Trier)
+30) The Death of Mr. Lazarescu (Cristi Puiu)
+
+31) Caché (Michael Haneke)
+32) The Assassination of Jesse James By the Coward Robert Ford (Andrew Dominik)
+33) Memento (Christopher Nolan)
+34) Synecdoche, New York (Charlie Kaufman) 
+35) Werckmeister Harmonies (Béla Tarr)
+36) Syndromes and a Century (Apichatpong Weerasethakul)
+37) Rachel Getting Married (Jonathan Demme)
+38) Miami Vice (Michael Mann)
+39) Amelie (Jean-Pierre Jeunet)
+40) Donnie Darko (Richard Kelly)
+
+41) Up! (Pete Docter)
+42) Adaptation (Spike Jonze)
+43) Sideways (Alexander Payne)
+44) Moulin Rouge (Baz Luhrmann) 
+45) The White Ribbon (Michael Haneke)
+46) Punch-Drunk-Love (Paul Thomas Anderson)
+47) A.I. Artificial Intelligence (Steven Spielberg)
+48) Ghost World (Terry Zwigoff) 
+49) The Prestige (Christopher Nolan)
+50) The Incredibles (Brad Bird)
+
+
 ### Music
 
 https://youtu.be/WGU_4-5RaxU Blondie - Heart Of Glass
