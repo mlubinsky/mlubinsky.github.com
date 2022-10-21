@@ -22,7 +22,19 @@ SET hive.default.fileformat=Orc;
 
 SET hive.optimize.cte.materialize.threshold=2;
 
+
 #### Repair
+
+````
+GRANT SELECT ON TABLE dea.dim_sr_cap_series_stg TO ROLE public;
+
+set hive.msck.path.validation=ignore;
+msck repair table dea.dim_sr_cap_media_documents_stg;
+msck repair table dea.dim_sr_cap_episodes_stg;
+msck repair table dea.dim_sr_cap_seasons_stg;
+msck repair table dea.dim_sr_cap_series_stg;
+```
+
 
 MSCK REPAIR TABLE
 
