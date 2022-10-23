@@ -2,6 +2,41 @@
 
 https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
+
+
+### JSON schema
+
+```
+new_json="""{
+ "contentID": { "S": "s-para"}
+ }
+"""
+print(new_json)
+
+# Read without schema:
+df = spark.read.json(sc.parallelize([new_json]))
+df.show()
+df.printSchema()
+
+# Read with schema:
+contentID_schema=StructType([
+        StructField("S", StringType(), True)
+])
+
+beehive_schema = StructType([
+   StructField("contentID", contentID_schema ,True)
+])
+
+df2 = spark.read.schema(beehive_schema).json(sc.parallelize([new_json]))
+df2.printSchema()
+root
+ |-- contentID: struct (nullable = true)
+ |    |-- S: string (nullable = true)
+
+df2.show(truncate=False)
+
+```
+
 ### Partitions
 
 https://habr.com/ru/company/otus/blog/686142/
