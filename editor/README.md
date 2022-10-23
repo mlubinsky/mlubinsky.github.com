@@ -426,6 +426,13 @@ $ to the end of a line
 https://github.com/helix-editor/helix
 
 ## Visual Studio Code
+```
+Find matching bracker: Cmd Shift   \
+```
+Shift code block left: Shift+ Tab
+Shift code block left: Tab
+
+
 
 To invoke from command line
 ```
