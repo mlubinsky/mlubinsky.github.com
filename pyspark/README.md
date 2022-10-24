@@ -18,6 +18,9 @@ df = spark.read.json(sc.parallelize([new_json]))
 df.show()
 df.printSchema()
 
+print(df.schema)
+The printed schema can be used "as is" to define the schema:
+
 # Read with schema:
 contentID_schema=StructType([
         StructField("S", StringType(), True)
