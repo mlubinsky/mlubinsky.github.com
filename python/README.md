@@ -1,3 +1,6 @@
+python CLI:
+https://medium.com/@martin.heinz/python-cli-tricks-that-dont-require-any-code-whatsoever-e7bdb9409aeb
+
 Generate dates in range
 ```
 import datetime
