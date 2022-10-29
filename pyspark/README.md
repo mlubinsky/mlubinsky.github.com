@@ -32,12 +32,23 @@ dataDictionary = [
 df = spark.createDataFrame(data=dataDictionary, schema = schema)
 print(df.schema)
 df.printSchema()
+ |-- name: string (nullable = true)
+ |-- properties: map (nullable = true)
+ |    |-- key: string
+ |    |-- value: string (valueContainsNull = true)
+
 df.show(truncate=False)
 
 ## let read the same data without specifying schema:
-df2 = spark.createDataFrame(data=dataDictionary
+df2 = spark.createDataFrame(data=dataDictionary)
 print(df2.schema)
+StructType([StructField('_1', StringType(), True), StructField('_2', MapType(StringType(), StringType(), True), True)])
+
 df2.printSchema()
+ |-- _1: string (nullable = true)
+ |-- _2: map (nullable = true)
+ |    |-- key: string
+ |    |-- value: string (valueContainsNull = true)
  
 
 ```
