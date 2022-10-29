@@ -30,8 +30,16 @@ dataDictionary = [
         ('Jefferson',{'hair':'brown','eye':''})
         ]
 df = spark.createDataFrame(data=dataDictionary, schema = schema)
+print(df.schema)
 df.printSchema()
 df.show(truncate=False)
+
+## let read the same data without specifying schema:
+df2 = spark.createDataFrame(data=dataDictionary
+print(df2.schema)
+df2.printSchema()
+ 
+
 ```
 Explode properties column: will generate 2 columns: key and value
 ```
