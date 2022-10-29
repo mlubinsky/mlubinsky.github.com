@@ -3,16 +3,16 @@
 https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
 
-### StructType MapType
-```
+### StructType 
+ 
 StructType() constructor takes list of StructField, 
 StructField takes a fieldname and type of the value.
 
-
+### MapType
 https://sparkbyexamples.com/pyspark/pyspark-maptype-dict-examples/
 
 
-
+```
 from pyspark.sql.types import StructField, StructType, StringType, MapType
 schema = StructType([
     StructField('name', StringType(), True),
@@ -32,17 +32,17 @@ dataDictionary = [
 df = spark.createDataFrame(data=dataDictionary, schema = schema)
 df.printSchema()
 df.show(truncate=False)
-
+```
 Explode properties column: will generate 2 columns: key and value
-
+```
 from pyspark.sql.functions import explode
 df.select(df.name,explode(df.properties)).show()
 
-Get only keys:
+#  Get only keys:
 from pyspark.sql.functions import map_keys
 df.select(df.name,map_keys(df.properties)).show()
 
-Get only values:
+# Get only values:
 from pyspark.sql.functions import map_values
 df.select(df.name,map_values(df.properties)).show()
 ```
