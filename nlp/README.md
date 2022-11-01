@@ -25,6 +25,8 @@ https://huggingface.co/course/chapter1/1
 
 https://github.com/huggingface/course
 
+https://www.stxnext.com/blog/hugging-face-tutorial/
+
 Topic modeling:
 https://www.toptal.com/python/topic-modeling-python
 
