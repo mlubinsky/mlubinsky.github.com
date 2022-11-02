@@ -13,6 +13,7 @@ https://onedrive.live.com/?authkey=%21AMC9DofT%5FW6hqE4&cid=199F8C87205FEB30&id=
 Serving ML model
 https://news.ycombinator.com/item?id=32277894
 
+https://kolodezev.ru/mlsysd1.html 
 
 https://www.mlexample.com/ . BOOK
 
