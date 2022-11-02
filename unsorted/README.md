@@ -19,6 +19,9 @@ https://news.ycombinator.com/item?id=30593302 Regrets of dying
 
 http://www.belousenko.com/  Non-technical Books
 
+Александра Зиновьев
+https://lgz.ru/article/-43-6857-26-10-2022/s-nami-mogli-sdelat-vsye-chto-ugodno/ 
+
 https://scientificrussia.ru/lectures
 
 Tools for better thinking:
