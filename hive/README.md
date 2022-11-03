@@ -33,6 +33,12 @@ But slightly modified query  gives  another result:
 select date_key, count(*) from A where date_key > '2022-07-10'  group by date_key;
 Result:
 2022-07-12	2281097
+	
+It usually happens when the metadata is not available for that date_key with hive. Try running this:
+	
+ANALYZE TABLE hive_table PARTITION(partitioned_col) COMPUTE STATISTICS
+
+The  first query output is usually pulled from metadata and second query needs processing.	
  
 ANALYZE TABLE solved this issue.
 
