@@ -23,16 +23,36 @@ SET hive.default.fileformat=Orc;
 SET hive.optimize.cte.materialize.threshold=2;
 
 
+###  Issue
+```
+select  count(*)  from A where date_key = '2022-07-12' 
+Result: 0
+
+But slightly modified query  gives  another result:
+
+select date_key, count(*) from A where date_key > '2022-07-10'  group by date_key;
+Result:
+2022-07-12	2281097
+ 
+ANALYZE TABLE solved this issue.
+
+set hive.compute.query.using.stats=false
+
+Doing this would ensure that hive wouldn't use the stats/cache that it has but to run the map reduce job to calculate the counts. Would be handy to use when adding/pointing new partitions to an existing table.
+if you are inserting the data into the table directly, hive auto generates the new stats using the setting below.
+
+set hive.stats.autogather=true
+
+use this only for adhoc queries when in need. Analyze table is still a standard way to get the counts updated
+```
 #### Repair
 
 ````
-GRANT SELECT ON TABLE dea.dim_sr_cap_series_stg TO ROLE public;
+GRANT SELECT ON TABLE a TO ROLE public;
 
 set hive.msck.path.validation=ignore;
-msck repair table dea.dim_sr_cap_media_documents_stg;
-msck repair table dea.dim_sr_cap_episodes_stg;
-msck repair table dea.dim_sr_cap_seasons_stg;
-msck repair table dea.dim_sr_cap_series_stg;
+msck repair table my_schema.my_table;
+
 ```
 
 
