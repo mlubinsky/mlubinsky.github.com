@@ -102,6 +102,75 @@ https://www.worldofreel.com/blog/2020/5/jfj030p0dzlzh0u97m5btusmavghk4
 50) The Incredibles (Brad Bird)
 
 
+
+Inside Man - serial
+The cleaner
+The tourist
+Есть ещё пара, где всё хорошо кроме конца - 
+Severance
+The Old Man
+
+Bad Sisters.
+Молодой Морс
+Clarkson’s Farm  -- Follow Jeremy Clarkson as he attempts to run a farm in the countryside.
+Дорамы на Кинопоиске. 
+Catch-22, 6 серий 
+
+The good fight 
+
+iasip --- It's Always Sunny in Philadelphia (2005) (TV Series)
+Don Matteo,
+ Solsidan (“Swedish soft cringe”)   - The lives of two very different families in the posh neighborhood of Solsidan in Sweden.
+
+All the sins - A detective is forced to confront difficult home truths about his past, and his present, while on the trail of a serial killer in rural northern Finland.
+
+
+
+For All Mankind, 
+  
+Pennyworth
+
+Utopia.
+
+Sandman
+The Boys
+
+What we do in shadows
+
+Upright
+
+Call my agent, французский с субтитрами
+
+Северные воды (North Water) - атмосферно, коротко (5 серий)
+
+Slow Horses скоро второй сезон будет.
+The Suspect 2022 (психиатра с паркинсоном подозревают), Inside Man (священник в Англии и убийца в американской тюрьме: в чем связь? очень хорошо); The Capture, S2 (deepfake в британской политике, очень неплохо); Sherwood (в британском, бывшем шахтерском — это важно — городе происходят странные убийства); The Old Man (старый црушник давно скрывается от властей, которым он чем-то насолил, но тут события разворачиваются неожиданным для него образом; хорошо, но оборвано, и неясно, продолжится ли); Intimidad (феминистская повестка в политике Бильбао; неплохо).
+
+Не сериалы, но мне очень зашли относительно старый 
+Hell or High Water 
+и новый Highwaymen
+Война Фойла, 
+Troppo, 
+Война на острове, 
+The Dropout
+ Periferals очень неплох на амазон прайм.
+ Only Murders in the Building — лучший сериал за последние насколько лет. Два сезона по 8-9 серий с несвязанными сюжетам
+ The Peripheral вроде ок первые два эпизода.
+
+ Foundation - неплохо, но, если честно, не знаю, как он воспринимается, если сравнивать с книгой.
+Halo.
+Ещё сериал Хранители (фантазия режиссера на тему продолжения Watchmen)
+
+Gravity falls - идеальное попадание, плюс реально смешно, даже мне. Ну и Good Omens до этого (очень утешительно), хотя это никакой не сериал, конечно.
+
+Legion https://www.imdb.com/title/tt5114356/
+Легион (2017) - гениально. 
+Звездный путь: нижние палубы.
+\ Королева Чхорин.  Mr. Queen: The Secret
+Путешественники (2016, Канада) - 
+
+
+
 ### Music
 
 https://youtu.be/WGU_4-5RaxU Blondie - Heart Of Glass
