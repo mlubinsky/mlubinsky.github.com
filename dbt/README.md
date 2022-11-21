@@ -1,4 +1,12 @@
 ### Databricks
+
+Message:
+Determining location of DBIO file fragments. This operation can take some time.
+
+Solution:
+%sql Optimize [table name]
+
+
 How to interact with files on Databricks
 
 https://docs.databricks.com/files/index.html 
