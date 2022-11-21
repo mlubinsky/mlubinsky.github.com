@@ -1,7 +1,17 @@
-### Databricks
+## Databricks
 
-Message:
+### Message:
 Determining location of DBIO file fragments. This operation can take some time.
+
+https://docs.databricks.com/optimizations/disk-cache.html
+
+c5d, r5d, and z1d series workers are configured for disk caching, but not enabled by default. To enable for caching, see Enable or disable the disk cache.
+
+spark.databricks.io.cache.enabled true
+spark.databricks.io.cache.maxDiskUsage "{DISK SPACE PER NODE RESERVED FOR CACHED DATA}"
+spark.databricks.io.cache.maxMetaDataCache "{DISK SPACE PER NODE RESERVED FOR CACHED METADATA}"
+
+https://www.databricks.com/blog/2018/07/31/processing-petabytes-of-data-in-seconds-with-databricks-delta.html
 
 Solution:
 %sql Optimize [table name]
