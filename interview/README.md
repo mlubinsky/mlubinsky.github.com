@@ -1,3 +1,9 @@
+https://www.linkedin.com/feed/update/urn:li:activity:7001201153686269952/
+
+https://alignedclarity.substack.com/p/streamline-your-resume-and-increase
+
+https://docs.google.com/document/d/19fr_36WOzKlq_zyGP2RdxMEsdNQMZdUqn1Vahncr2pY/edit#heading=h.xg3o3psx1mah
+
 https://grow.google/certificates/interview-warmup/
 
 https://github.com/prabhupant/python-ds
