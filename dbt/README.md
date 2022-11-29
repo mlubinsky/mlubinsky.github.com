@@ -1,5 +1,27 @@
 ## Databricks
 
+### Delta format
+
+https://mungingdata.com/delta-lake/updating-partitions-with-replacewhere/
+
+```
+from bdp.common.spark.spark_utils import load_as_spark_df
+import pyspark.sql.functions as F
+
+path= "s3://b2c-prod-dca-model-evaluate/oss/MPS_APPIQ_TAXONOMY_WEIGHTS_DS/version=0.3/"
+aio_weights = spark.read.parquet(path)
+aio_weights = aio_weights.withColumn("version",F.lit("1.1.0"))
+
+params={"version": "1.0.0"}
+df_WEIGHTS_100 = load_as_spark_df(spark, "MPS_APPIQ_TAXONOMY_WEIGHTS_O", params)
+
+new_path = "s3://aardvark-prod-dca-data/oss/tmp_MPS_APPIQ_TAXONOMY_WEIGHTS"
+
+#### replaceWhere https://mungingdata.com/delta-lake/updating-partitions-with-replacewhere/
+aio_weights.write.partitionBy("version").format("delta").save(new_path)
+df_WEIGHTS_100.write.format("delta").option("replaceWhere", "version" == "1.0.0").mode("overwrite").save(new_path)
+```
+
 ### Message:
 Determining location of DBIO file fragments. This operation can take some time.
 
