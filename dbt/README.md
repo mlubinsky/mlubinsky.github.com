@@ -1,5 +1,10 @@
 ## Databricks
 
+### Generate sequence
+```
+SELECT explode( sequence(DATE'2018-02-01', DATE'2018-02-09', INTERVAL 1 DAY) ) as generated_date
+```
+
 ### Delta format
 
 https://mungingdata.com/delta-lake/updating-partitions-with-replacewhere/
