@@ -102,6 +102,28 @@ df2.show(truncate=False)
 
 ```
 
+#### check_uniq in dataframe
+
+```
++    def _check_uniq(df, msg):
++        cols = [ 'date', 'product_id', 'unified_product_id', 'country_code', 'device_code',
++                'market_code', 'genre_id']
++        logger.info(msg + " check_uniq total records=" + str(df.count()))
++        for c in cols:
++            if c not in df.columns:
++                logger.info("ERROR " + c + " not in " + str(df.columns))
++
++        df_gr = df.groupBy(*cols).count().filter(F.col('count') > 1)
++        cnt = df_gr.count()
++        if cnt > 0:
++            logger.info(msg + " check_uniq failed number of non-uniq keys= " + str(cnt))
++            logger.info(df_gr.limit(10).toPandas().to_string(index=False))
++        else:
++            logger.info(msg + " check_uniq OK")
++
+```
+
+
 ### Partitions
 
 https://habr.com/ru/company/otus/blog/686142/
