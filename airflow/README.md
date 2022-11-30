@@ -90,6 +90,47 @@ def tutorial_taskflow_api_etl():
 tutorial_etl_dag = tutorial_taskflow_api_etl()
 ```
 
+#### BranchPythonOperator
+https://airflow.apache.org/docs/apache-airflow/stable/_api/airflow/operators/python/index.html
+```
+classairflow.operators.python.BranchPythonOperator(*, 
+    python_callable, 
+    op_args=None, 
+    op_kwargs=None, 
+    templates_dict=None, 
+    templates_exts=None, 
+    show_return_value_in_logs=True, **kwargs)
+    
+Bases: PythonOperator, airflow.models.skipmixin.SkipMixin
+```
+You can pass params to python_callable vi op_args or op_kwarrgs
+
+```
+PythonOperator have a named parameter op_kwargs and accepts dict object.
+
+have
+
+t5_send_notification = PythonOperator(
+    task_id='t5_send_notification',
+    provide_context=True,
+    python_callable=SendEmail,
+    op_kwargs={"my_param":'value1'},
+    dag=dag,
+)
+
+def SendEmail(my_param,**kwargs):
+    print(my_param) #'value_1'
+    msg = MIMEText("The pipeline for client1 is completed, please check.")
+    msg['Subject'] = "xxxx"
+    msg['From'] = "xxxx"
+```
+
+Allows a workflow to “branch” or follow a path following the execution of this task.
+
+It derives the PythonOperator and expects a Python function that returns a single task_id or list of task_ids to follow. The task_id(s) returned should point to a task directly downstream from {self}. 
+
+```
+
 
 ### Writing DAG with XCOM
 From https://databand.ai/blog/airflow-2-0-and-why-we-are-excited-at-databand/
