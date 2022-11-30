@@ -4,22 +4,26 @@ https://medium.com/@martin.heinz/python-cli-tricks-that-dont-require-any-code-wh
 Generate dates in range
 ```
 import datetime
+def generate_dates_in_range(start_date, end_date, range="DAY"):
+  start = datetime.datetime.strptime(start_date, "%Y-%m-%d")
+  all_dates=[start_date] 
+  str_next=start_date
 
-start_date='2022-04-02'
-start = datetime.datetime.strptime(start_date, "%Y-%m-%d")
-end_date = '2022-08-27'
-weeks=[start_date] 
-str_next=start_date
-
-while str_next < end_date:
-    next = start + datetime.timedelta(days=7)
+  if range == "DAY": 
+        interval=1
+  elif range =="WEEK": 
+        interval=7
+  else:
+        print("Unknown range ", range)
+        return None
+    
+  while str_next < end_date:
+    next = start + datetime.timedelta(days=interval)
     str_next=str(next)[0:10]
-    weeks.append(str_next)
+    all_dates.append(str_next)
     start=next
-
-print("====.  done   =====")    
-for i, week in enumerate(weeks):
-   print(i,week)
+    
+  return all_dates
 ```
 
 
