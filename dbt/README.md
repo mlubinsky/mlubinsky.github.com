@@ -1,5 +1,15 @@
 ## Databricks
 
+#### Export CSV file locally
+```
+f="dbfs:/FileStore/uploads/anna/paid_search.csv"
+df = spark.read.option("header", "true").format("csv").load(f)
+display(df)
+
+https://app-annie-p-mkt-derivatives.cloud.databricks.com/files/uploads/anna/paid_search.csv?o=651224624067749
+just change the part after o=
+```
+
 ### Generate sequence
 ```
 SELECT explode( sequence(DATE'2018-02-01', DATE'2018-02-09', INTERVAL 1 DAY) ) as generated_date
