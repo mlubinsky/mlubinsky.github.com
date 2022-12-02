@@ -9,9 +9,9 @@ _sqldf.write.option("header",True).csv(f)
 ls /dbfs/FileStore/uploads/mlubinsky/23_apps_review_count.csv
 
 
-f="dbfs:/FileStore/uploads/anna/paid_search.csv"
-df = spark.read.option("header", "true").format("csv").load(f)
-display(df)
+df_23 = spark.read.option("header", "true").format("csv").load(f)
+display(df_23)
+
 
 https://app-annie-p-mkt-derivatives.cloud.databricks.com/files/uploads/anna/paid_search.csv?o=651224624067749
 just change the part after o=
