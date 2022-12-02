@@ -2,6 +2,13 @@
 
 #### Export CSV file locally
 ```
+f="dbfs:/FileStore/uploads/mlubinsky/23_apps_review_count.csv"
+_sqldf.write.option("header",True).csv(f)
+
+%sh
+ls /dbfs/FileStore/uploads/mlubinsky/23_apps_review_count.csv
+
+
 f="dbfs:/FileStore/uploads/anna/paid_search.csv"
 df = spark.read.option("header", "true").format("csv").load(f)
 display(df)
