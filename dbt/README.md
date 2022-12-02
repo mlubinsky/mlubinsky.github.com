@@ -9,7 +9,8 @@ _sqldf.write.option("header",True).csv(f)
 -- solution - convert to pandas
 output_fname = "/dbfs/FileStore/uploads/mlubinsky/23_apps_review_count.csv"
 pd = df_23.toPandas()
-pd.to_csv(output_fname)
+pd.to_csv(output_fname) # this will create index
+pd.to_csv('your.csv', index=False) # no index
 
 %sh
 ls /dbfs/FileStore/uploads/mlubinsky/23_apps_review_count.csv
