@@ -4,6 +4,12 @@
 ```
 f="dbfs:/FileStore/uploads/mlubinsky/23_apps_review_count.csv"
 _sqldf.write.option("header",True).csv(f)
+-- issue :  command above will create folder, ponettiall > 1 file
+
+-- solution - convert to pandas
+output_fname = "/dbfs/FileStore/uploads/mlubinsky/23_apps_review_count.csv"
+pd = df_23.toPandas()
+pd.to_csv(output_fname)
 
 %sh
 ls /dbfs/FileStore/uploads/mlubinsky/23_apps_review_count.csv
