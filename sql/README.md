@@ -1,3 +1,5 @@
+https://sqlfordevs.com/ebook
+
 ### Key-Value stores
 
 https://notes.eatonphil.com/whats-the-big-deal-about-key-value-databases.html
