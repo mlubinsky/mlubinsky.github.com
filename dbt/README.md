@@ -29,6 +29,73 @@ just change the part after o=
 SELECT explode( sequence(DATE'2018-02-01', DATE'2018-02-09', INTERVAL 1 DAY) ) as generated_date
 ```
 
+###  consider PIVOT, UNPIVOT
+
+```
+WITH G as
+(  
+SELECT explode( sequence(DATE'2022-08-01', DATE'2022-11-30', INTERVAL 1 DAY) ) as generated_date
+)
+,
+daily_reviews as ( 
+SELECT
+  app_id, process_date, count(*) as daily_reviews_cnt
+from parquet.`s3://b2c-prod-advanced-review/fact/REVIEW_UNIFORM/version=1.0.5/`
+where process_date > '2022-08-01' and process_date <=  '2022-11-30'
+-- and ( app_id = 20600000009072 or   app_id =  20600000000465 )
+group by app_id, process_date
+),
+
+popular_apps as
+(
+ select app_id, 
+ max(daily_reviews_cnt) as max_daily_reviews_cnt,
+ sum(daily_reviews_cnt) as sum_daily_reviews_cnt
+ from daily_reviews
+ group by app_id
+ having max(daily_reviews_cnt) > 100
+)
+,
+g_cross_app as
+(
+SELECT G.generated_date, popular_apps.app_id, 
+popular_apps.max_daily_reviews_cnt,
+popular_apps.sum_daily_reviews_cnt
+FROM G 
+CROSS join popular_apps
+)
+,
+gaps as (
+SELECT 
+G.generated_date,  
+G.app_id, 
+G.max_daily_reviews_cnt,
+G.sum_daily_reviews_cnt,
+r.process_date,
+r.daily_reviews_cnt
+FROM  g_cross_app as G LEFT JOIN 
+daily_reviews as r ON G.generated_date = r.process_date AND G.app_id = r.app_id
+where  r.process_date IS NULL
+order by G.generated_date
+),
+result as
+( 
+SELECT 
+M.app_id, 
+M.app_name,
+gaps.sum_daily_reviews_cnt,
+array_join(sort_array(collect_list(generated_date)), ', ') as dates_without_reviews
+
+FROM gaps
+JOIN  APP_NAMES_view AS M ON   gaps.app_id = M.app_id
+group by M.app_id, M.app_name,
+gaps.sum_daily_reviews_cnt
+ 
+)
+SELECT * FROM result
+order by sum_daily_reviews_cnt DESC
+```
+
 ### Delta format
 
 https://mungingdata.com/delta-lake/updating-partitions-with-replacewhere/
