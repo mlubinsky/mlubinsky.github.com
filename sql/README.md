@@ -1,5 +1,19 @@
 https://sqlfordevs.com/ebook
 
+
+### Convert column to comma-separated list
+
+
+ it can achieved using one of the spark function.. 
+```
+ concat_ws(', ',collect_set( col_name ))  
+```
+Another way:
+```
+select user, array_join(collect_list(department), ', ')
+from tablenamehere
+group by user
+```
 ### Key-Value stores
 
 https://notes.eatonphil.com/whats-the-big-deal-about-key-value-databases.html
