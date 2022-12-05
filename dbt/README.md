@@ -261,6 +261,8 @@ greatexpectations.io
 
 
 ### DBT
+  
+  https://www.adventofdata.com/modern-data-modeling-start-with-the-end/
 
 https://docs.getdbt.com/docs/introduction
 
