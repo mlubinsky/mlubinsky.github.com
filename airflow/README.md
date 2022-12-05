@@ -1,3 +1,5 @@
+https://stackoverflow.com/questions/50708226/airflow-macros-in-python-operator
+
 https://airflow.apache.org/docs/apache-airflow/stable/dag-run.html
 
 ```
