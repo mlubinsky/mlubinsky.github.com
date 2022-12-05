@@ -1,3 +1,4 @@
+https://kolodezev.ru/
 
 https://habr.com/ru/company/ruvds/blog/703164/
 
