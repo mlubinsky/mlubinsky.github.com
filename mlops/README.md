@@ -1,3 +1,8 @@
+https://docs.databricks.com/machine-learning/feature-store/index.html
+
+ The raw data requires preprocessing and transformation before it can be used to build a model.
+ This process is called feature engineering, and the outputs of this process are called features
+
 https://kolodezev.ru/
 
 https://arxiv.org/pdf/2205.02302.pdf
