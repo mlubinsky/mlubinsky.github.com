@@ -1,5 +1,7 @@
 https://kolodezev.ru/
 
+https://arxiv.org/pdf/2205.02302.pdf
+
 https://habr.com/ru/company/ruvds/blog/703164/
 
 https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
