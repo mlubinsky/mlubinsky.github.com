@@ -1,3 +1,12 @@
+### Data observbility
+https://www.montecarlodata.com/blog-introducing-the-5-pillars-of-data-observability/
+```
+Is the data up-to-date?
+Is the data complete?
+Are fields within expected ranges?
+Is the null rate higher or lower than it should be?
+Has the schema changed?
+```
 ## Databricks
 
 #### Export CSV file locally
