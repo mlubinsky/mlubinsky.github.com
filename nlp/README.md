@@ -1,6 +1,12 @@
 https://github.com/averkij/mstu-nlp-course Обзор современного машинного обучения
 
-https://habr.com/ru/company/otus/blog/687796/
+https://habr.com/ru/post/704592/  Введение в библиотеку Transformers и платформу Hugging Face
+
+https://github.com/FrancescoSaverioZuppichini/my-spaces/tree/v0.0.1 Run HuggingFace locally
+
+https://huggingface.co/blog/arxiv
+
+https://habr.com/ru/company/otus/blog/687796/ Обработка естественного языка (NLP) методами машинного обучения в Python
 
 https://zilliz.com/learn/what-is-vector-database  What is a Vector Database?
 
