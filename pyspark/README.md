@@ -7,6 +7,28 @@ https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 https://towardsdatascience.com/pyspark-or-pandas-why-not-both-95523946ec7c
 
 
+### Update Dataframe
+```
+import pyspark.sql.functions as F
+from pyspark.sql.functions import col, when 
+path= "s3://b2c-prod-dca-model-evaluate/oss/MPS_APPIQ_TAXONOMY_WEIGHTS_DS/version=0.3/"
+aio_weights = spark.read.parquet(path)
+updated_weights = aio_weights.withColumn("revenue_weight",
+                 when(col("genre_id") == 2012, 0)
+                .when(col("genre_id") == 2009004, 1)
+                .otherwise(col("revenue_weight"))
+              )  
+aio_weights.printSchema()
+updated_weights.printSchema()
+
+
+version="1.1.0"
+updated_weights = updated_weights.withColumn("version",F.lit(version))
+new_path = "s3://aardvark-prod-dca-data/oss/MPS_APPIQ_TAXONOMY_WEIGHTS"
+
+updated_weights.write.format("delta").partitionBy("version").save(new_path)
+```
+
 ### StructType 
  
 StructType() constructor takes list of StructField, 
