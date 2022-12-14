@@ -1,5 +1,7 @@
 https://www.youtube.com/hashtag/timeseries
 
+https://www.influxdata.com/time-series-analysis-methods/
+
 https://observablehq.com/@observablehq/analyzing-time-series-data
 
 https://stackoverflow.blog/2022/03/03/stop-aggregating-away-the-signal-in-your-data/
