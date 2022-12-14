@@ -1,3 +1,5 @@
+https://www.linkedin.com/feed/update/urn:li:share:6999048339581280256/ 
+
 I specialize in building large scales end to end daata pipelines and analytics
 
 Machine Learning solutions | My services cover Recommendation Engines,
