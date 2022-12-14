@@ -1,5 +1,7 @@
 https://habr.com/ru/company/selectel/blog/703460/
 
+https://codinginfinite.com/mlflow-tutorial-with-code-example/
+
 https://docs.databricks.com/machine-learning/feature-store/index.html
 
  The raw data requires preprocessing and transformation before it can be used to build a model.
