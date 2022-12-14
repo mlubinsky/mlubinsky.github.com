@@ -10,5 +10,5 @@ MLOps and Data Science Applications.
 - Languages: Python, Java, Scala, C, C++
 - Big Data: Apache Spark, Apache Flink,  Hadoop,  
 - Cloud platfoms: AWS, GCP, Databricks
-- Data anaysis: Pandas, sklearn, PyTorch, Tensorflow
+- Data anaysis and macine learning: Pandas, sklearn, PyTorch, Tensorflow
 - Reporting: Looker, Tableau 
