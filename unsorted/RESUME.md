@@ -8,7 +8,8 @@ MLOps and Data Science Applications.
 
 - Databases: Postgres, MySQL, MariaDB, Oracle, Redshift, Presto
 - Languages: Python, Java, Scala, C, C++
-- Big Data: Apache Spark, Apache Flink,  Hadoop,  
+- Apache Airflow, dbt
+- Big Data: Apache Spark, Apache Flink,  Hadoop, Snowflake 
 - Cloud platfoms: AWS, GCP, Databricks
 - Data anaysis and machine learning: Pandas, sklearn, PyTorch, Tensorflow
 - Reporting: Looker, Tableau 
