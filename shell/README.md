@@ -947,4 +947,25 @@ cat /proc/cpuinfo | grep 'core id'
 
 lscpu
 
- 
+#### https://muhammadraza.me/2022/data-oneliners/
+```
+To print the first column of a CSV file:
+awk -F, '{print $1}' file.csv
+To print the first and third columns of a CSV file:
+awk -F, '{print $1 "," $3}' file.csv
+To print only the lines of a CSV file that contain a specific string:
+grep "string" file.csv
+To sort a CSV file based on the values in the second column:
+sort -t, -k2 file.csv 
+
+To remove the first row of a CSV file (the header row):
+tail -n +2 file.csv
+To remove duplicates from a CSV file based on the values in the first column:
+awk -F, '!seen[$1]++' file.csv
+To calculate the sum of the values in the third column of a CSV file:
+awk -F, '{sum+=$3} END {print sum}' file.csv
+To convert a CSV file to a JSON array:
+jq -R -r 'split(",") | {name:.[0],age:.[1]}' file.csv
+To convert a CSV file to a SQL INSERT statement:
+awk -F, '{printf "INSERT INTO table VALUES (\"%s\", \"%s\", \"%s\");\n", $1, $
+```
