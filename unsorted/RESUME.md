@@ -1,6 +1,6 @@
 https://www.linkedin.com/feed/update/urn:li:share:6999048339581280256/ 
 
-I specialize in building the large scales end to end daata pipelines and analytics.
+I specialize in building the large scales end to end data pipelines and analytics.
 
 Machine Learning solutions | My services cover Recommendation Engines,
 Natural Language Processing, Computer Vision, ML Engineering,
