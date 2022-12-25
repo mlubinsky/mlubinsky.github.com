@@ -1,5 +1,6 @@
 https://discord.com/invite/BCfHWaSMkr Aleksei Petrenko
 
+https://jonathan-hui.medium.com/rl-deep-reinforcement-learning-series-833319a95530
 
 <https://sites.ualberta.ca/~szepesva/RLBook.html>
 
