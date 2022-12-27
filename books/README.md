@@ -8,7 +8,7 @@ http://libgen.rs/
 http://libgen.is/ 
 http://libgen.st/
 
-### Pomerants
+### Pomerantzs
 http://www.belousenko.com/books/pomerants/pomerants_utenok.pdf
 
 https://habr.com/ru/news/t/478556/
@@ -80,9 +80,12 @@ https://deep-econom.livejournal.com/840005.html
 
 https://booksee.org/
 
+### Boks suggestions
+
 https://avva.livejournal.com/3384243.html?view=comments#comments reading books suggestions
 
 
+<https://news.ycombinator.com/item?id=19087418> important books
 
 Ask HN: What book changed your life? https://news.ycombinator.com/item?id=30734709
 
