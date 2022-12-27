@@ -54,7 +54,10 @@ https://gatta-bianka.dreamwidth.org/605367.html#cutid1
 
 
 
-### Non-science E-books
+### Non-technical E-books
+
+Тропик Рака  - Генри Миллер
+http://loveread.ec/read_book.php?id=29194&p=2
 
 ### Pomerantzs
 http://www.belousenko.com/books/pomerants/pomerants_utenok.pdf
