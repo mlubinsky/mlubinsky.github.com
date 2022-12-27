@@ -49,7 +49,7 @@ http://unpaywall.org/ — Поиск открытой версии статьи 
 
 https://ads.harvard.edu — астрофизика и астрономия, также есть много по физике и по численному моделированию
 https://www.elibrary.ru/ 
-```
+ 
 
 https://gatta-bianka.dreamwidth.org/605367.html#cutid1
 
@@ -58,6 +58,9 @@ https://gatta-bianka.dreamwidth.org/605367.html#cutid1
 ### E-books
 
 https://imwerden.de/ Books
+
+
+<http://modernlib.net/books/lem_stanislav/osmotr_na_meste/read/> Lem Stanislaw
 
 https://massolit.site/book/garri-potter-sbornik-7-knig-lp
 
@@ -89,6 +92,9 @@ Ask HN: Life Changing Books?
 https://news.ycombinator.com/item?id=29605394
 
 Ask HN: What are the best books for professional effectiveness? https://news.ycombinator.com/item?id=29602228
+
+
+<https://news.ycombinator.com/item?id=21900498> best books
 
 Non-Violent Communication Book
 
