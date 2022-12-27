@@ -38,6 +38,19 @@ www.pdfdrive.com – крупнейший сайт для бесплатного
 
 www.base-search.net – один из мощнейних поисковиков по текстам академических исследований. Более 100 миллионов научных документов, 70% из них бесплатны
 
+https://oatd.org/ — Open Access Theses and Dissertations
+https://medium.com/
+https://www.re3data.org/ — Агрегатор репозиториев для данных исследований
+https://openknowledgemaps.org/ — Open Knowledge Maps
+https://www.researchgate.net/
+https://www.mendeley.com
+https://arxiv.org/ — препринты
+http://unpaywall.org/ — Поиск открытой версии статьи по DOI
+
+https://ads.harvard.edu — астрофизика и астрономия, также есть много по физике и по численному моделированию
+https://www.elibrary.ru/ 
+```
+
 https://gatta-bianka.dreamwidth.org/605367.html#cutid1
 
 
