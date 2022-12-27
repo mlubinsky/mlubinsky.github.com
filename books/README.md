@@ -8,8 +8,7 @@ http://libgen.rs/
 http://libgen.is/ 
 http://libgen.st/
 
-### Pomerantzs
-http://www.belousenko.com/books/pomerants/pomerants_utenok.pdf
+
 
 https://habr.com/ru/news/t/478556/
 
@@ -55,16 +54,22 @@ https://gatta-bianka.dreamwidth.org/605367.html#cutid1
 
 
 
-### E-books
+### Non-science E-books
+
+### Pomerantzs
+http://www.belousenko.com/books/pomerants/pomerants_utenok.pdf
 
 https://imwerden.de/ Books
 
+http://www.belousenko.com/ Non-technical Books
 
 <http://modernlib.net/books/lem_stanislav/osmotr_na_meste/read/> Lem Stanislaw
 
 https://massolit.site/book/garri-potter-sbornik-7-knig-lp
 
-http://www.belousenko.com/ Non-technical Books
+### Science books
+
+https://scoap3.org/scoap3-books/
 
 https://u1lib.org/ free books
 
@@ -80,7 +85,7 @@ https://deep-econom.livejournal.com/840005.html
 
 https://booksee.org/
 
-### Boks suggestions
+### Books suggestions
 
 https://avva.livejournal.com/3384243.html?view=comments#comments reading books suggestions
 
@@ -109,10 +114,10 @@ https://news.ycombinator.com/item?id=20438302
 
 https://www.youtube.com/watch?v=I1xNLgeU6ok Сергей Довлатов (аудиокнига)
 
-Russian
+ 
 http://www.audiopedia.su/
 
-https://mp3biblion.d3.ru/ Audiobooks
+https://mp3biblion.d3.ru/  
 
 https://www.youtube.com/channel/UC25I3BRU8oQ9rtZXce-fsqA Russian Audiobooks
 
