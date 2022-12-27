@@ -3,9 +3,7 @@
 
 http://bactra.org/ Cosma's Home Page
 
-https://imwerden.de/  Books
-
-https://massolit.site/book/garri-potter-sbornik-7-knig-lp
+ 
 
 https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
 
@@ -17,7 +15,7 @@ https://news.ycombinator.com/item?id=30230620
 
 https://news.ycombinator.com/item?id=30593302 Regrets of dying
 
-http://www.belousenko.com/  Non-technical Books
+ 
 
 Александра Зиновьев
 https://lgz.ru/article/-43-6857-26-10-2022/s-nami-mogli-sdelat-vsye-chto-ugodno/ 
@@ -28,31 +26,6 @@ Tools for better thinking:
 https://untools.co/
 
 https://news.ycombinator.com/item?id=31647181
-
-### Specialized search engines
-brave.com 
-
-www.refseek.com – поисковик по академическим ресурсам. Более миллиарда источников: энциклопедии, монографии, журналы.
-
-www.worldcat.org – поиск по содержимому 20 тысяч мировых библиотек. Узнаете, где лежит ближайшая нужная вам редкая книга.
-
-https://link.springer.com – доступ к более чем 10 миллионам научных документов: книги, статьи, протоколы исследований.
-
-www.bioline.org.br – библиотека научных журналов по bioscience, издаваемых в развивающихся странах.
-
-http://repec.org – добровольцы из 102 стран собрали почти 4 миллиона публикаций по экономике и смежным наукам.
-
-www.science.gov – американский государственный поисковик по 2200+ научным сайтам. Индексируются более 200 миллионов статей.
-
-www.pdfdrive.com – крупнейший сайт для бесплатного скачивания книг в формате PDF. Заявляют более 225 миллионов названий.
-
-www.base-search.net – один из мощнейних поисковиков по текстам академических исследований. Более 100 миллионов научных документов, 70% из них бесплатны
-
-https://gatta-bianka.dreamwidth.org/605367.html#cutid1
-
-https://u1lib.org/ free books
-
-http://www.belousenko.com/books/pomerants/pomerants_utenok.pdf
 
 ```
 *Монтень. "Опыты", книга III, глава VIII. Об искусстве беседы*
@@ -109,7 +82,9 @@ https://jewishpogroms.info/wp-content/uploads/2021/12/Pogromy-Book-NadiaLipes.pd
 
 https://www.complexityexplorer.org/courses
 
-https://web.archive.org/web/20060920043324/http://www.msu.edu/~shlapent/memoirr.htm
+https://web.archive.org/web/20060920043324/
+
+http://www.msu.edu/~shlapent/memoirr.htm
 
  https://www.uhnwidata.com/den-of-rich/mikhail-katsnelson
  
@@ -130,10 +105,7 @@ https://www.keldysh.ru/pages/BioCyber/Lectures.html Redko (ru)
 
 
 https://www.keldysh.ru/departments/dpt_17/redko.html
-
-http://nonagon.org/ExLibris/ . Math Physics Programming
-
-
+ 
 https://news.ycombinator.com/item?id=28509498
 
 http://www.samvitjain.com/blog/regret/
@@ -149,35 +121,6 @@ https://news.ycombinator.com/item?id=28232165 interesing blog posts
 https://news.ycombinator.com/item?id=32220192 interesting youtube channels
 
 https://nintil.com/scaling-tacit-knowledge
-
-#### books
-
-Ask HN: What book changed your life?
-https://news.ycombinator.com/item?id=30734709
-
-Ask HN: What books have made the biggest impact on your mental models?
-https://news.ycombinator.com/item?id=15155833
-
-	Ask HN: Life Changing Books?
-https://news.ycombinator.com/item?id=29605394
-
-Ask HN: What are the best books for professional effectiveness?
-https://news.ycombinator.com/item?id=29602228
-
-Non-Violent Communication Book
-
-
-https://deep-econom.livejournal.com/298746.html
-
-### Library Genesis или LibGen или Колхоз
-
-http://libgen.rs/
-http://libgen.is/
-http://libgen.st/
-
-### Научные статьи в библиотеке Sci-Hub
-https://sci-hub.ru/
-https://sci-hub.se/
 
 #### Tools for thinking: Obsidian , Anki , etc
 
@@ -265,17 +208,7 @@ chrome://settings/content/unsandboxedPlugins
 
 dig @resolver4.opendns.com myip.opendns.com +short
 
-### E-books
-
-https://urss.ru/cgi-bin/db.pl?lang=RU&page=Catalog&list=Series407
-
-https://deep-econom.livejournal.com/840005.html
-
-https://booksee.org/
-
-
-https://avva.livejournal.com/3384243.html?view=comments#comments   reading  books suggestions
-
+ 
 1)) Бозон Хиггса
 https://youtu.be/S7dTZbppz–k
 ==
@@ -581,34 +514,10 @@ https://youtu.be/O1vTCa3–U8Q
 
 https://www.google.com/advanced_search
 
-https://sci–hub.se/
+ 
 
 https://gitlab.com/magnolia1234
 
-Поисковики для научной информации:
-```
-www.refseek.com – поисковик по академическим ресурсам. Более миллиарда источников: энциклопедии, монографии, журналы.
-www.worldcat.org – поиск по содержимому 20 тысяч мировых библиотек. Узнаете, где лежит ближайшая нужная вам редкая книга.
-https://link.springer.com – доступ к более чем 10 миллионам научных документов: книги, статьи, протоколы исследований.
-www.bioline.org.br – библиотека научных журналов по bioscience, издаваемых в развивающихся странах.
-http://repec.org – добровольцы из 102 стран собрали почти 4 миллиона публикаций по экономике и смежным наукам.
-www.science.gov – американский государственный поисковик по 2200+ научным сайтам. Индексируются более 200 миллионов статей.
-www.pdfdrive.com – крупнейший сайт для бесплатного скачивания книг в формате PDF. Заявляют более 225 миллионов названий.
-www.base-search.net – один из мощнейних поисковиков по текстам академических исследований. Более 100 миллионов научных документов, 70% из них бесплатны.
-
-
-https://oatd.org/ — Open Access Theses and Dissertations
-https://medium.com/
-https://www.re3data.org/ — Агрегатор репозиториев для данных исследований
-https://openknowledgemaps.org/ — Open Knowledge Maps
-https://www.researchgate.net/
-https://www.mendeley.com
-https://arxiv.org/ — препринты
-http://unpaywall.org/ — Поиск открытой версии статьи по DOI
-
-https://ads.harvard.edu — астрофизика и астрономия, также есть много по физике и по численному моделированию
-https://www.elibrary.ru/ 
-```
 
 <https://www.youtube.com/watch?v=i33BTuwTgAs> Supermemo
 
@@ -622,20 +531,12 @@ https://evgeniirudnyi.livejournal.com/
 
 https://www.youtube.com/watch?v=6JipQNWuYnA. Lex Fridman interview his father
 
-## . Underrated web sites
+##   Underrated web sites
 
 https://www.reddit.com/r/AskReddit/comments/k213qf/what_are_underrated_websites_and_what_do_you_use/
 
 https://interpreted.d3.ru/na-reddite-podelilis-ochen-krutymi-no-nedootsenionnymi-saitami-2084065/?sorting=rating
 
-
-### Library Genesis:
-
-gen.lib.rus.ec  libgen.rs 
-
-https://habr.com/ru/news/t/478556/
-
-<http://libgen.is/> . all books
 
 ### Salary
 
@@ -665,7 +566,6 @@ UserScript:
 
 
 
-<https://news.ycombinator.com/item?id=21900498> best books
 
 
 
@@ -675,7 +575,6 @@ UserScript:
 
 <https://meaningness.com/metablog/how-to-think> how to think
 
-<http://modernlib.net/books/lem_stanislav/osmotr_na_meste/read/> Lem Stanislaw
 
 ### Passwords managers
 https://habr.com/ru/company/cloud4y/blog/581916/
@@ -713,6 +612,7 @@ LastPass KeePass, PasswordSafe, minykeypass - password managers
 
 <https://explorabl.es/> Explorable
 
+### Resume
 <https://cvcompiler.com/blog/facelift-your-it-resume-to-get-more-interviews/> Resume
 
 <https://www.youtube.com/results?search_query=%D1%85%D0%B0%D1%80%D0%B0%D1%80%D0%B8> Владимир Федорин - krym
@@ -745,6 +645,7 @@ https://lastday.club/luchshie-nozhi-vyzhivaniya-2021-kak-vybrat-nozh-rukovodstvo
 
 <https://www.etsy.com/listing/523027817/personalized-engraved-5-in-1-knife>  Engraved 5-in-1 Knife & MultiTool by Left Coast Original 
 
+### Gifts 
 <https://www.geekwrapped.com/unique-gifts-unusual-gift-ideas>
 
 <https://www.thisiswhyimbroke.com/gifts/gifts-for-geeks/>
@@ -805,14 +706,7 @@ https://lastday.club/luchshie-nozhi-vyzhivaniya-2021-kak-vybrat-nozh-rukovodstvo
 <http://www.arxiv-sanity.com>
 
 
-## BOOKS
-<http://gen.lib.rus.ec/> Genesis
-
-<http://libgen.io/> . Genesis
-
-<http://b-ok.org/>x
-
-<http://ebook-dl.com>
+ 
 
 Live calculation in browser
 <https://habr.com/ru/post/444596/> .  <iodide.io>
@@ -922,26 +816,11 @@ Live calculation in browser
 
 <https://overreacted.io/preparing-for-tech-talk-part-2-what-why-and-how/>
 
-## Audio books
-<https://news.ycombinator.com/item?id=20438302>
-
-<https://www.youtube.com/watch?v=I1xNLgeU6ok> Сергей Довлатов (аудиокнига)
-
-## Russian
-<http://www.audiopedia.su/>
-
-<https://mp3biblion.d3.ru/> Audiobooks
-
-<https://www.youtube.com/channel/UC25I3BRU8oQ9rtZXce-fsqA> Russian Audiobooks
-
-<http://staroeradio.ru/audio/8599>
-
+ 
 <https://www.youtube.com/watch?time_continue=1&v=wu3p7dxrhl8> Easter front animated 1941
 
 
-
 <http://psylib.org.ua/books/danch01/101/txt01.htm>
-
 
 
 
