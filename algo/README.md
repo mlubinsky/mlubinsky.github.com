@@ -1,5 +1,7 @@
 https://the-algorithms.com/
 
+https://github.com/GauravWalia19/Free-Algorithms-Books/blob/master/Library/Python.md
+
 https://habr.com/ru/post/686806/ ML + information theory 1
 
 https://habr.com/ru/post/687546/ ML + information theory 2
