@@ -11,11 +11,14 @@ http://10.0.0.83:5000/webman/index.cgi
 
 Dropdown list appears: select homes
 
+https://kb.synology.com/en-in/DSM/tutorial/Quick_Start_External_Access
+
 https://kb.synology.com/tr-tr/DSM/tutorial/Unable_to_Locate_NAS
 ```
 You may find your Synology NAS via either of the following tools:
 
-Web Assistant: Enter find.synology.com or synologynas:5000 (synologynas.local:5000 for Mac computers) in the address bar of your web browser.
+Web Assistant: Enter find.synology.com or synologynas:5000 (synologynas.local:5000 
+for Mac computers) in the address bar of your web browser.
 
 Synology Assistant: Open Synology Assistant desktop utility.  
 ```
