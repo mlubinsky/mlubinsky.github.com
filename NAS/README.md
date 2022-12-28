@@ -3,9 +3,10 @@ ARRIS router: 10.0.0.1  admin/password1
 
 Disk station: 10.0.0.83
 
-Finder -> Go -> Connect to Server:  smb://10.0.0.83
+Finder -> Go -> Connect to Server:  smb://10.0.0.83 
 admin/pereucet
 
+Dropdown list appears: select homes
 
 https://kb.synology.com/tr-tr/DSM/tutorial/Unable_to_Locate_NAS
 ```
