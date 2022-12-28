@@ -16,3 +16,12 @@ Enter IP address as 192.167.1.201
 Enter Subnet mask as 255.255.0.0
 Select Apply
 ```
+
+### Once you’re done with assigning static IP addresses to both PC and NAS: 
+
+connect the Synology NAS to Mac or PC using the Ethernet Cable. Here, I connected Port 1 to Mac because the static IP address is configured to Port 1. You can use an ethernet port on the NAS that has a static IP address but, you should use the same IP range on the PC.
+```
+Open Synology Assistant
+Click on Search
+Your PC or Laptop will detect the Synology NAS connected over Ethernet
+```
