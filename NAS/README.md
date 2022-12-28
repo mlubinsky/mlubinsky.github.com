@@ -1,3 +1,12 @@
+https://kb.synology.com/tr-tr/DSM/tutorial/Unable_to_Locate_NAS
+```
+You may find your Synology NAS via either of the following tools:
+
+Web Assistant: Enter find.synology.com or synologynas:5000 (synologynas.local:5000 for Mac computers) in the address bar of your web browser.
+
+Synology Assistant: Open Synology Assistant desktop utility.  
+```
+
 https://nascompares.com/answer/can-i-connect-synology-diskstation-nas-directly-to-a-pc-or-mac/
 ```
 Can I connect my Synology NAS directly to my computer?
