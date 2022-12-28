@@ -1,3 +1,4 @@
+https://nascompares.com/answer/can-i-connect-synology-diskstation-nas-directly-to-a-pc-or-mac/
 ```
 Can I connect my Synology NAS directly to my computer?
 If you want to connect your NAS directly, you can do it. 
