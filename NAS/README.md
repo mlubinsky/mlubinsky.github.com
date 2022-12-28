@@ -1,3 +1,10 @@
+```
+Can I connect my Synology NAS directly to my computer?
+If you want to connect your NAS directly, you can do it. 
+Set up manual IP on your PC and NAS with a one in the same IP range. 
+Than use Synology finder app or type IP in the address bar and it's done.
+```
+
 https://gizarena.com/connect-synology-nas-directly-to-pc-over-ethernet/
 
 
