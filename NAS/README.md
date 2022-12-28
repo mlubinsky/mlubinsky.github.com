@@ -4,7 +4,10 @@ ARRIS router: 10.0.0.1  admin/password1
 Disk station: 10.0.0.83
 
 Finder -> Go -> Connect to Server:  smb://10.0.0.83 
+
 admin/pereucet
+
+http://10.0.0.83:5000/webman/index.cgi 
 
 Dropdown list appears: select homes
 
