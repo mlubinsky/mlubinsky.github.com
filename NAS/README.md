@@ -33,9 +33,15 @@ Than use Synology finder app or type IP in the address bar and it's done.
 
 https://gizarena.com/connect-synology-nas-directly-to-pc-over-ethernet/
 
-### Scan to e-mail
+### Scan from HP printer to e-mail
+
+https://www.youtube.com/watch?v=OM7PS-5D06A
 
 https://h30434.www3.hp.com/t5/Scanning-Faxing-Copying/Scan-to-email-M283fdw/td-p/8318699
+
+
+
+### NAS
  The DS220+ NAS has two LAN ports. 
  
  The LAN Port 2 is connected to the Router and
