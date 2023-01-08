@@ -6,6 +6,8 @@ https://www.youtube.com/watch?v=kqZRXoFcKo0  What Is Information Schema In Snowf
 
 https://github.com/Snowflake-Labs/awesome-snowflake
 
+snowflake concepts like Streams, tasks, warehouse optimizations, SQL tuning/pruning
+
 https://christianlauer90.medium.com/how-snowflake-enforces-its-data-cloud-snowflake-summit-2022-a34caab204ad
 
 https://www.snowflake.com/blog/snowpark-python-innovation-available-all-snowflake-customers/
