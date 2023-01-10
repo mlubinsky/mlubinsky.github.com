@@ -4,6 +4,8 @@ https://docs.snowflake.com/en/
 
 https://www.youtube.com/watch?v=kqZRXoFcKo0  What Is Information Schema In Snowflake | Chapter-22
 
+https://www.youtube.com/watch?v=Jg5KQ7UpaqI. Interview questions
+
 https://github.com/Snowflake-Labs/awesome-snowflake
 
 snowflake concepts like Streams, tasks, warehouse optimizations, SQL tuning/pruning
