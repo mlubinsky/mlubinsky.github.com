@@ -436,6 +436,9 @@ Find matching bracker: Cmd Shift   \
 Shift code block left: Shift+ Tab
 Shift code block left: Tab
 
+Markdown viewer plugin
+https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
+
 
 
 To invoke from command line
