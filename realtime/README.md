@@ -5,6 +5,9 @@ https://www.youtube.com/watch?v=wBd2TN4BP8A
 
 https://redpanda.com/blog/data-stream-processing-spark-flink-ksqldb
 
+### Pinot
+https://dev.startree.ai/
+
 https://www.youtube.com/watch?v=GvVYG6chYoI Druid / Pinot
 
 ### Spark Structured Streaming
