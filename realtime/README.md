@@ -5,6 +5,9 @@ https://www.youtube.com/watch?v=wBd2TN4BP8A
 
 https://redpanda.com/blog/data-stream-processing-spark-flink-ksqldb
 
+### Pinot and Flink
+https://www.youtube.com/watch?v=0byVuWrwOhw
+
 ### Pinot
 https://dev.startree.ai/
 
