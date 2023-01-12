@@ -12,6 +12,8 @@ https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html
 
 https://www.udemy.com/course/apache-spark-streaming-in-scala/
 
+https://dataai.udemy.com/course/spark-streaming-using-python/l
+
 https://www.packtpub.com/product/real-time-stream-processing-using-apache-spark-3-for-scala-developers-video/9781803242040
 
 https://jaceklaskowski.gitbooks.io/spark-structured-streaming/content/spark-sql-streaming-stateful-stream-processing.html
