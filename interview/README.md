@@ -1,5 +1,9 @@
 https://relational.ai/careers/
 
+https://stepik.org/lesson/41233/step/1?unit=19817 
+
+https://stepik.org/course/126012/promo Interview prep (russian)
+
 https://www.linkedin.com/feed/update/urn:li:activity:7001201153686269952/
 
 https://alignedclarity.substack.com/p/streamline-your-resume-and-increase
