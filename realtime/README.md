@@ -17,7 +17,24 @@ https://www.packtpub.com/product/real-time-stream-processing-using-apache-spark-
 https://jaceklaskowski.gitbooks.io/spark-structured-streaming/content/spark-sql-streaming-stateful-stream-processing.html
 
 ### Flink
+https://dataai.udemy.com/course/apache-flink-a-real-time-hands-on-course-on-flink/
+
 https://www.ververica.com/blog/apache-flink-sql-past-present-and-future
+
+Hoin hints (hash, broadcast, sort) 
+
+
+Keyed Stream (after keyBy Operation) window()
+Window assigner defines how entities are assigned to windows
+
+
+Non-keyed stream wnidowAll()
+
+- Tumbling window - time based - no overlapped
+- Sliding window - time based windows are overlappping (offset parameter)
+- 
+
+
 
 How to stream data from database to web, as soon as they are inserted into a table.
 
