@@ -1,6 +1,22 @@
 
 https://fennel.ai/blog/challenges-of-building-realtime-ml-pipelines/
 
+https://www.youtube.com/watch?v=wBd2TN4BP8A
+
+https://redpanda.com/blog/data-stream-processing-spark-flink-ksqldb
+
+https://www.youtube.com/watch?v=GvVYG6chYoI Druid / Pinot
+
+### Spark Structured Streaming
+https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html
+
+https://www.udemy.com/course/apache-spark-streaming-in-scala/
+
+https://www.packtpub.com/product/real-time-stream-processing-using-apache-spark-3-for-scala-developers-video/9781803242040
+
+https://jaceklaskowski.gitbooks.io/spark-structured-streaming/content/spark-sql-streaming-stateful-stream-processing.html
+
+### Flink
 https://www.ververica.com/blog/apache-flink-sql-past-present-and-future
 
 How to stream data from database to web, as soon as they are inserted into a table.
