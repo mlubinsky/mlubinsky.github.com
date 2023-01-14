@@ -27,9 +27,9 @@ https://www.packtpub.com/product/real-time-stream-processing-using-apache-spark-
 https://jaceklaskowski.gitbooks.io/spark-structured-streaming/content/spark-sql-streaming-stateful-stream-processing.html
 
 ### Flink
-processing time (system time)
-event time  - when evend occured on source (embedded within record)
-ingestion time - cannot handle out of order events
+- processing time (system time)
+- event time  - when evend occured on source (embedded within record)
+- ingestion time - cannot handle out of order events
  
 
 https://dataai.udemy.com/course/apache-flink-a-real-time-hands-on-course-on-flink/
