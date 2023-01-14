@@ -47,7 +47,7 @@ Non-keyed stream wnidowAll()
 
 - Tumbling window - time based - no overlapped
 - Sliding window - time based windows are overlappping (offset parameter)
-- Session window
+- Session window - created based on activity, does not have fixed start or end time, ended then there is gap in activity
 - Global window (window per key, do computation with trigger)
 
 
