@@ -1,5 +1,12 @@
 https://relational.ai/careers/
 
+https://stepik.org/course/217    Алгоритмы: теория и практика. Методы
+
+https://stepik.org/course/1547  Алгоритмы: теория и практика. Структуры данных
+
+https://stepik.org/course/102772 Ace Your Next Coding Interview by Learning Algorithms
+
+
 https://stepik.org/lesson/41233/step/1?unit=19817 
 
 https://stepik.org/course/126012/promo Interview prep (russian)
