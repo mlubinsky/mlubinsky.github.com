@@ -30,6 +30,14 @@ def chunk(list, size):
     return [list[i:i+size] for i in range(0,len(list), size)]
 
 ```
+Decapitalize
+```
+def decapitalize(str):
+    return str[:1].lower() + str[1:]
+  
+decapitalize('FooBar') # 'fooBar'
+decapitalize('FooBar') # 'fooBar'
+```
 
 removes falsy values (False, None, 0 and “”) from a list by using filter().
 ```
