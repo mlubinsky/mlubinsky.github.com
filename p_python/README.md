@@ -12,6 +12,47 @@ from collections import Counter
 def anagram(first, second):
     return Counter(first) == Counter(second)
 ```
+ check the memory usage of an object.
+```
+import sys 
+
+variable = 30 
+print(sys.getsizeof(variable)) # 24
+```
+length of a string in bytes.
+```
+def byte_size(string):
+    return(len(string.encode('utf-8')))
+```
+chunk a list into smaller lists of a specified size.
+```
+def chunk(list, size):
+    return [list[i:i+size] for i in range(0,len(list), size)]
+
+```
+
+removes falsy values (False, None, 0 and “”) from a list by using filter().
+```
+def compact(lst):
+    return list(filter(None, lst))
+  
+  
+compact([0, 1, False, 2, '', 3, 'a', 's', 34]) # [ 1, 2, 3, 'a', 's', 34 ]
+```
+
+transpose a 2D array:
+```
+array = [['a', 'b'], ['c', 'd'], ['e', 'f']]
+transposed = zip(*array)
+print(transposed) # [('a', 'c', 'e'), ('b', 'd', 'f')]
+```
+turn a list of strings into a single string with each element from the list separated by commas.
+```
+hobbies = ["basketball", "football", "swimming"]
+
+print("My hobbies are:") # My hobbies are:
+print(", ".join(hobbies)) # basketball, football, swimming
+```
 ### Python functions
 
 ```
