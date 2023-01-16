@@ -4,6 +4,8 @@
 ```
 import sys
 sys.getrecursionlimit() ## 1000
+
+sys.setrecursionlimit(5000) 
 ```
 #### check  whether the given list has duplicates:
 ```
