@@ -39,7 +39,7 @@ decapitalize('FooBar') # 'fooBar'
 decapitalize('FooBar') # 'fooBar'
 ```
 
-removes falsy values (False, None, 0 and “”) from a list by using filter().
+#### remove falsy values (False, None, 0 and “”) from a list by using filter().
 ```
 def compact(lst):
     return list(filter(None, lst))
@@ -54,13 +54,214 @@ array = [['a', 'b'], ['c', 'd'], ['e', 'f']]
 transposed = zip(*array)
 print(transposed) # [('a', 'c', 'e'), ('b', 'd', 'f')]
 ```
-turn a list of strings into a single string with each element from the list separated by commas.
+#### turn a list of strings into a single string with each element from the list separated by commas
 ```
 hobbies = ["basketball", "football", "swimming"]
 
 print("My hobbies are:") # My hobbies are:
 print(", ".join(hobbies)) # basketball, football, swimming
 ```
+
+
+#### flatten a potentially deep list using recursion.
+```
+def spread(arg):
+    ret = []
+    for i in arg:
+        if isinstance(i, list):
+            ret.extend(i)
+        else:
+            ret.append(i)
+    return ret
+
+def deep_flatten(xs):
+    flat_list = []
+    [flat_list.extend(deep_flatten(x)) for x in xs] if isinstance(xs, list) else flat_list.append(xs)
+    return flat_list
+
+
+deep_flatten([1, [2], [[3], 4], 5]) # [1,2,3,4,5]
+```
+ 
+#### finds the difference between two iterables by keeping only the values that are in the first one.
+```
+def difference(a, b):
+    set_a = set(a)
+    set_b = set(b)
+    comparison = set_a.difference(set_b)
+    return list(comparison)
+
+
+difference([1,2,3], [1,2,4]) # [3]
+ ```
+#### Return the difference between two lists after applying a given function to each element of both lists.
+```
+def difference_by(a, b, fn):
+    b = set(map(fn, b))
+    return [item for item in a if fn(item) not in b]
+
+
+from math import floor
+difference_by([2.1, 1.2], [2.3, 3.4], floor) # [1.2]
+difference_by([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], lambda v : v['x']) # [ { x: 2 } ]
+```
+#### Chained function call - You can call multiple functions inside a single line.
+```
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+a, b = 4, 5
+print((subtract if a > b else add)(a, b)) # 9   
+```
+
+#### check whether a list has duplicate values by using the fact that set() contains only unique elements.
+```
+def has_duplicates(lst):
+    return len(lst) != len(set(lst))
+    
+    
+x = [1,2,3,4,5,5]
+y = [1,2,3,4,5]
+has_duplicates(x) # True
+has_duplicates(y) # False
+```
+####  Merge two dictionaries
+```
+def merge_two_dicts(a, b):
+    c = a.copy()   # make a copy of a 
+    c.update(b)    # modify keys and values of a with the ones from b
+    return c
+
+
+a = { 'x': 1, 'y': 2}
+b = { 'y': 3, 'z': 4}
+print(merge_two_dicts(a, b)) # {'y': 3, 'x': 1, 'z': 4}
+```
+In Python 3.5 and above, you can also do it like the following:
+```
+def merge_dictionaries(a, b)
+   return {**a, **b}
+
+
+a = { 'x': 1, 'y': 2}
+b = { 'y': 3, 'z': 4}
+print(merge_dictionaries(a, b)) # {'y': 3, 'x': 1, 'z': 4}
+```
+#### Convert two lists into a dictionary
+```
+def to_dictionary(keys, values):
+    return dict(zip(keys, values))
+    
+
+keys = ["a", "b", "c"]    
+values = [2, 3, 4]
+print(to_dictionary(keys, values)) # {'a': 2, 'c': 4, 'b': 3}
+```
+   
+
+#### Calculate the time it takes to execute a particular code.
+```
+import time
+
+start_time = time.time()
+
+a = 1
+b = 2
+c = a + b
+print(c) #3
+
+end_time = time.time()
+total_time = end_time - start_time
+print("Time: ", total_time)
+
+# ('Time: ', 1.1205673217773438e-05)
+```
+
+
+#### You can have an else clause as part of a try/except block, which is executed if no exception is thrown.
+```
+try:
+    2*3
+except TypeError:
+    print("An exception was raised")
+else:
+    print("Thank God, no exceptions were raised.")
+
+#Thank God, no exceptions were raised.
+```
+
+#### The most frequent element that appears in a list.
+```
+def most_frequent(list):
+    return max(set(list), key = list.count)
+  
+
+numbers = [1,2,1,2,3,2,1,4,2]
+most_frequent(numbers)  
+```
+#### checks whether a given string is a palindrome.
+```
+def palindrome(a):
+    return a == a[::-1]
+
+
+palindrome('mom') # True
+```
+#### Calculator without if-else
+```
+import operator
+action = {
+    "+": operator.add,
+    "-": operator.sub,
+    "/": operator.truediv,
+    "*": operator.mul,
+    "**": pow
+}
+print (action['-'](50, 25)) # 25
+````
+#### randomize the order of the elements in a list. Note that shuffle works in place, and returns None.
+```
+from random import shuffle
+
+foo = [1, 2, 3, 4]
+shuffle(foo) 
+print(foo) # [1, 4, 3, 2] , foo = [1, 2, 3, 4]
+28. Spread
+This method flattens a list similarly like [].concat(…arr) in JavaScript.
+
+def spread(arg):
+    ret = []
+    for i in arg:
+        if isinstance(i, list):
+            ret.extend(i)
+        else:
+            ret.append(i)
+    return ret
+
+
+spread([1,2,3,[4,5,6],[7],8,9]) # [1,2,3,4,5,6,7,8,9]
+```
+
+###  Swap values without having to use an additional one
+```
+a, b = -1, 14
+a, b = b, a
+
+print(a) # 14
+print(b) # -1
+```
+### Get default value for missing keys
+```
+d = {'a': 1, 'b': 2}
+
+print(d.get('c', 3)) # 3
+```
+
+
+
 ### Python functions
 
 ```
