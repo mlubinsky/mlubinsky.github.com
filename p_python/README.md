@@ -1,25 +1,30 @@
 ### Python snippets
 
-check  whether the given list has duplicates:
+### recursion limit
+```
+import sys
+sys.getrecursionlimit() ## 1000
+```
+#### check  whether the given list has duplicates:
 ```
  def all_unique(lst):
     return len(lst) == len(set(lst))
 ```    
- check if two strings are anagrams:
+####  check if two strings are anagrams:
 ```
 from collections import Counter
 
 def anagram(first, second):
     return Counter(first) == Counter(second)
 ```
- check the memory usage of an object.
+#### check the memory usage of an object
 ```
 import sys 
 
 variable = 30 
 print(sys.getsizeof(variable)) # 24
 ```
-length of a string in bytes.
+#### length of a string in bytes
 ```
 def byte_size(string):
     return(len(string.encode('utf-8')))
