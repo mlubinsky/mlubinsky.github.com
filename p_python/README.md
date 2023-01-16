@@ -1,3 +1,17 @@
+### Python snippets
+
+check  whether the given list has duplicates:
+```
+ def all_unique(lst):
+    return len(lst) == len(set(lst))
+```    
+ check if two strings are anagrams:
+```
+from collections import Counter
+
+def anagram(first, second):
+    return Counter(first) == Counter(second)
+```
 ### Python functions
 
 ```
