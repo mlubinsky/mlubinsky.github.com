@@ -1,5 +1,7 @@
 ### Python notes
 
+https://www.youtube.com/watch?v=wiGkV37Kbxk
+
 ### Recursion limit
 ```
 import sys
