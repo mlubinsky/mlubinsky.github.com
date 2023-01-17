@@ -19,6 +19,9 @@ from collections import Counter
 def anagram(first, second):
     return Counter(first) == Counter(second)
 ```
+
+Another approach: build dictionary(char->count) for one string and traverse other string to decrease counter, if some counter < 0 then answer is False
+
 #### check the memory usage of an object
 ```
 import sys 
