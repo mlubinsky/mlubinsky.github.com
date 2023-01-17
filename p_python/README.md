@@ -1,17 +1,78 @@
-### Python snippets
+### Python notes
 
-### recursion limit
+### Recursion limit
 ```
 import sys
 sys.getrecursionlimit() ## 1000
 
 sys.setrecursionlimit(5000) 
 ```
+
+#### Sorting
+
+https://tproger.ru/translations/python-sorting/
+
+list.sort(reverse=True/False) - in place, returns None
+
+sorted(any_iterable_object, key=..., reverse=True/False) - returns new sorted object
+
+```
+student_tuples = [
+        ('john', 'A', 15),
+        ('jane', 'B', 12),
+        ('dave', 'B', 10),
+    ]
+sorted(student_tuples, key=lambda student: student[2])   # sort by age
+
+[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
+```
+
+####  Common elements in lists
+```
+result = list(filter(lambda elem: elem in b, a))
+result = [elem for elem in a if elem in b]
+result = list(set(a) & set(b))
+```
+### Elements in list A which are not in list B
+```
+set_1 = set(['White', 'Black', 'Red'])
+set_2 = set(['Red', 'Green'])
+
+print(set_1 - set_2)
+```
+
+#### Sort dictionary by value
+```
+import operator
+d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+
+result_ascended = dict(sorted(d.items(), key=operator.itemgetter(1)))
+result_descended = dict(sorted(d.items(), key=operator.itemgetter(1), reverse=True))
+```
+### find 3 keys with max values
+```
+my_dict = {'a':500, 'b':5874, 'c': 560,'d':400, 'e':5874, 'f': 20}
+result = sorted(my_dict, key=my_dict.get, reverse=True)[:3]
+
+
+from heapq import nlargest
+result = nlargest(3, my_dict, key=my_dict.get)
+```
 #### check  whether the given list has duplicates:
 ```
  def all_unique(lst):
     return len(lst) == len(set(lst))
 ```    
+
+####  check if   strings is e palindrome:
+```
+def is_palindrome(string):
+    return string == string[::-1]
+
+def is_palindrome(string):
+    return string == ''.join(reversed(string))
+```
+
 ####  check if two strings are anagrams:
 ```
 from collections import Counter
@@ -21,6 +82,23 @@ def anagram(first, second):
 ```
 
 Another approach: build dictionary(char->count) for one string and traverse other string to decrease counter, if some counter < 0 then answer is False
+
+
+### How many times some char present in string
+```
+string = 'Python Software Foundation'
+string.count('o') 
+```
+
+
+#### Usage of * and **
+https://tproger.ru/translations/asterisks-in-python-what-they-are-and-how-to-use-them/
+
+```
+ numbers = [2, 1, 3, 4, 7]
+ more_numbers = [*numbers, 11, 18]
+ print(*more_numbers, sep=', ')  # 2, 1, 3, 4, 7, 11, 18
+```
 
 #### check the memory usage of an object
 ```
@@ -34,13 +112,13 @@ print(sys.getsizeof(variable)) # 24
 def byte_size(string):
     return(len(string.encode('utf-8')))
 ```
-chunk a list into smaller lists of a specified size.
+#### chunk a list into smaller lists of a specified size.
 ```
 def chunk(list, size):
     return [list[i:i+size] for i in range(0,len(list), size)]
 
 ```
-Decapitalize
+#### Decapitalize
 ```
 def decapitalize(str):
     return str[:1].lower() + str[1:]
@@ -58,7 +136,7 @@ def compact(lst):
 compact([0, 1, False, 2, '', 3, 'a', 's', 34]) # [ 1, 2, 3, 'a', 's', 34 ]
 ```
 
-transpose a 2D array:
+#### transpose a 2D array:
 ```
 array = [['a', 'b'], ['c', 'd'], ['e', 'f']]
 transposed = zip(*array)
@@ -138,7 +216,7 @@ y = [1,2,3,4,5]
 has_duplicates(x) # True
 has_duplicates(y) # False
 ```
-####  Merge two dictionaries
+####  Merge  dictionaries
 ```
 def merge_two_dicts(a, b):
     c = a.copy()   # make a copy of a 
@@ -159,6 +237,15 @@ def merge_dictionaries(a, b)
 a = { 'x': 1, 'y': 2}
 b = { 'y': 3, 'z': 4}
 print(merge_dictionaries(a, b)) # {'y': 3, 'x': 1, 'z': 4}
+
+
+result = {}
+for d in (dict_a, dict_b, dict_c):
+    result.update(d)
+    
+result = {**dict_a, **dict_b, **dict_c}    
+
+
 ```
 #### Convert two lists into a dictionary
 ```
