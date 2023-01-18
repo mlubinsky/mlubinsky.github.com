@@ -17,6 +17,12 @@ https://www.youtube.com/watch?v=GvVYG6chYoI Druid / Pinot
 
 ### Spark Structured Streaming
 
+Output modes:
+- complete
+- update
+- append
+
+
 tumbling window - not overlapped
 
 watermark - 
