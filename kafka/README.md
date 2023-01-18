@@ -1,3 +1,14 @@
+Kafka message:
+```
+key
+value
+topic
+partition integer
+offset long
+timestamp
+timestampType
+```
+
 https://www.youtube.com/watch?v=W-wr4Fxmjsc   (ru)
 
 https://habr.com/ru/company/southbridge/blog/683168/
