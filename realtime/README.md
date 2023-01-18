@@ -21,6 +21,24 @@ Output modes:
 - complete
 - update
 - append
+```
+window_agg_df = trade_df \
+  .withWatrmark("CreatedTime", " 30 minute") \
+  .groupBy(window(col("CreatedTime"), " 15 minute")) \
+   .agg(sum("Buy").alias("TotalBuy"),
+        sum("Sell.alias("TotalSell"))
+        
+ output_df = window_agg_df.select("window.start",  "window.end", "TotalBuy", "TotalSell")
+ 
+ window_query = output_df.writeStream \
+  .format("console") \
+  .outputMode("complete") \
+  .option("checkpointLocation", "chk-point-dit") \
+  .trigger(processingTime="1 minute") \
+  .start()
+  
+  window.query.awaitTermination()
+```
 
 
 tumbling window - not overlapped
