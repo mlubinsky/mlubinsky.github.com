@@ -15,6 +15,11 @@ https://dev.startree.ai/
 
 https://www.youtube.com/watch?v=GvVYG6chYoI Druid / Pinot
 
+
+### Kafka streaming
+
+exactly once semantic (vs at least once for Spark)
+
 ### Spark Structured Streaming
 
 https://dataai.udemy.com/course/spark-streaming-using-python/learn/lecture/22355480#overview
