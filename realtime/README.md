@@ -16,6 +16,14 @@ https://dev.startree.ai/
 https://www.youtube.com/watch?v=GvVYG6chYoI Druid / Pinot
 
 ### Spark Structured Streaming
+
+tumbling window - not overlapped
+
+watermark - 
+what is the maximum possible delay?
+
+when late records are not relevant? 
+
 https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html
 
 https://www.udemy.com/course/apache-spark-streaming-in-scala/
