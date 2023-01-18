@@ -17,6 +17,10 @@ https://www.youtube.com/watch?v=GvVYG6chYoI Druid / Pinot
 
 ### Spark Structured Streaming
 
+https://dataai.udemy.com/course/spark-streaming-using-python/learn/lecture/22355480#overview
+
+https://github.com/LearningJournal/Spark-Streaming-In-Python
+
 Output modes:
 - complete
 - update
