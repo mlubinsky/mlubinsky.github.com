@@ -37,6 +37,15 @@ You want to do "big" joins, meaning joining one big fact table to another big fa
 and you are okay with these queries taking a long time to complete.
 ```
 
+
+###  Druid SQL query
+```
+Under the covers, every Druid SQL query is translated into a query in the JSON-based Druid native query format before it runs on data nodes. You can view the native query for this query by clicking ... and Explain SQL Query.
+
+While you can use Druid SQL for most purposes, familiarity with native query is useful for composing complex queries and for troubleshooting performance issues. For more information, see Native queries.
+```
+https://druid.apache.org/docs/latest/querying/querying.html
+
 After the Druid services finish startup, open the web console at http://localhost:8888.
 
 
