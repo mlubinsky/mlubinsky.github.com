@@ -1,4 +1,5 @@
 
+
 https://fennel.ai/blog/challenges-of-building-realtime-ml-pipelines/
 
 https://itnext.io/exploring-popular-open-source-stream-processing-technologies-part-2-of-2-2832b7727cd0
@@ -6,6 +7,10 @@ https://itnext.io/exploring-popular-open-source-stream-processing-technologies-p
 https://www.youtube.com/watch?v=wBd2TN4BP8A
 
 https://redpanda.com/blog/data-stream-processing-spark-flink-ksqldb
+
+https://www.bytewax.io/blog/stream-processing-roundup
+
+https://www.bytewax.io/blog/stream-processing-roundup2
 
 ### Pinot and Flink
 https://www.youtube.com/watch?v=0byVuWrwOhw
