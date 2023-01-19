@@ -7,6 +7,11 @@ https://mathics.org/ Wolfram's Mathemetica free clone
 
 Ветераны броуновского движения - Вступайте в ряды Фурье!
 
+https://mathpages.com/
+
+Math books:
+https://news.ycombinator.com/item?id=34439828
+
 https://mltechniques.com/resources/
 
 https://www.math.uci.edu/~rvershyn/teaching/2010-11/602/functional-analysis.pdf  Func analysys
