@@ -306,9 +306,14 @@ https://habr.com/ru/company/rambler_and_co/blog/569932/
 will be delays between event time and processing time due to how data is ingested and whether the overall application experiences issues like downtime.
 
 #### Stateless transformation 
+```
 Each batch doing its own processing independently of anything that occurred prior to this batch. 
 Example: HTTP protocol, REST API
 
+There are stateless operations, such as filter(), map(), and flatMap(), which do not keep data around (do not maintain state) while moving from processing from one stream element to the next. 
+
+And there are stateful operations, such as distinct(), limit(), sorted(), reduce(), and collect(), which may pass the state from previously processed elements to the processing of the next element.
+```
 #### Stateful transformations
  the processing of each micro-batch of data depends on the previous batches of data either fully or partially.
  Stateful stream processing means a “State” is shared between events(stream entities).
