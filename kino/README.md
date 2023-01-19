@@ -7,7 +7,25 @@ https://www.youtube.com/watch?v=dISZqTGdlx4&list=PLLVr9rhMLtCiocQIok8eNbBTaAj0fJ
 
 https://geish-a.livejournal.com/1445327.html?view=comments#comments
 
-
+https://avva.livejournal.com/3519039.html?view=comments#comments
+```
+Men in black
+лес в снегу
+Фильм «Август»
+ Convoy пересматривал, периодами бывает "Чёрная кошка, белый кот", иногда что-то совсем другое, например Transporter или Accountant.
+Firefly
+Wings of Desire (Небо над Берлином)
+The Fish Called Wanda
+Some Like It Hot
+Сериал про Эркюля Пуаро с Дэвидом Суше
+Отпуск в чистилище, Vacances au purgatoire, 1992.
+Даунхаус с тогда еще прекрасным Охлобыстиным.
+Пятый элемент.
+ Убить Фрейда.
+Under the Tuscan sun
+Love Actually  
+Достучаться до небес
+```
 ### Best documentary movies
 
 https://news.ycombinator.com/item?id=32799789
