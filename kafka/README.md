@@ -306,8 +306,10 @@ ensure		  log4j.properties.template  tools-log4j.properties.template
 https://medium.com/@stephane.maarek/how-to-use-apache-kafka-to-transform-a-batch-pipeline-into-a-real-time-one-831b48a6ad85  
      
 https://www.confluent.io/blog/putting-power-apache-kafka-hands-data-scientists/
+
 https://www.infoq.com/articles/traffic-data-monitoring-iot-kafka-and-spark-streaming
-       https://jobs.zalando.com/tech/blog/many-to-many-using-kafka/index.html
+
+https://jobs.zalando.com/tech/blog/many-to-many-using-kafka/index.html
        
 <https://www.confluent.io/blog/building-streaming-application-ksql/> . KSQL
 
@@ -322,19 +324,28 @@ https://jeeconf.com/program/building-event-sourced-systems-with-kafka-streams/
 https://jeeconf.com/program/reactive-stream-processing-with-akka-streams/
 
 https://hackernoon.com/thorough-introduction-to-apache-kafka-6fbf2989bbc1
+
 https://itnext.io/from-monoliths-to-microservices-b6b851ab43e3
+
 https://www.datanami.com/2018/04/30/how-netflix-optimized-flink-for-massive-scale-on-aws/ Flink
                                                      
- https://habr.com/company/sberbank/blog/353608/ 
- https://habr.com/company/piter/blog/352978/  
- https://habr.com/post/354486/   
- https://habr.com/company/skbkontur/blog/353204/ 
- https://www.youtube.com/watch?v=eublKlalobg&feature=youtu.be
- https://speakerdeck.com/vikgamov/devnexus-2018-apache-kafka-a-streaming-data-platform
- https://www.confluent.io/blog/ksql-in-action-enriching-csv-events-with-data-from-rdbms-into-AWS/  
- https://medium.com/tecnolog%C3%ADa/how-we-built-a-streaming-analytics-solution-using-apache-kafka-druid-66c257adcd9a 
+https://habr.com/company/sberbank/blog/353608/ 
+
+https://habr.com/company/piter/blog/352978/  
+
+https://habr.com/post/354486/   
+
+https://habr.com/company/skbkontur/blog/353204/ 
+
+https://www.youtube.com/watch?v=eublKlalobg&feature=youtu.be
+
+https://speakerdeck.com/vikgamov/devnexus-2018-apache-kafka-a-streaming-data-platform
+
+https://www.confluent.io/blog/ksql-in-action-enriching-csv-events-with-data-from-rdbms-into-AWS/  
+ 
+https://medium.com/tecnolog%C3%ADa/how-we-built-a-streaming-analytics-solution-using-apache-kafka-druid-66c257adcd9a 
  https://assets.ctfassets.net/oxjq45e8ilak/1y637HHnSQQMewS0m4usYS/95ffde03d09c3f49dcc7fe85fc976553/Gamov_Kafka_EOS.pdf
- https://habr.com/company/jugru/blog/354238/
  
+https://habr.com/company/jugru/blog/354238/
  
- http://tech.marksblogg.com/presto-connectors-kafka-mongodb-mysql-postgresql-redis.html Presto
+http://tech.marksblogg.com/presto-connectors-kafka-mongodb-mysql-postgresql-redis.html Presto
