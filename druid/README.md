@@ -13,6 +13,19 @@ Similar to search systems, Druid builds inverted indexes for string columns for 
 Unlike many traditional systems, Druid can optionally pre-aggregate data as it is ingested. This pre-aggregation step is known as rollup, and can lead to dramatic storage savings.
 ```
 
+SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'druid'.
+
+```
+Lookup datasources correspond to Druid's key-value lookup objects. 
+In Druid SQL, they reside in the lookup schema. They are preloaded in memory on all servers, so they can be accessed rapidly. 
+They can be joined onto regular tables using the join operator.
+
+Lookup datasources are key-value oriented and always have exactly two columns: k (the key) and v (the value), and both are always strings.
+
+To see a list of all lookup datasources, use the SQL query 
+
+SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'lookup'.
+```
 
 ### Druid is likely a good choice if your use case matches a few of the following:
 ```
