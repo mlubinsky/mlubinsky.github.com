@@ -46,6 +46,14 @@ While you can use Druid SQL for most purposes, familiarity with native query is 
 ```
 https://druid.apache.org/docs/latest/querying/querying.html
 
+
+```
+SELECT FLOOR(__time to HOUR) AS HourTime, SUM(deleted) AS LinesDeleted
+FROM wikipedia WHERE TIME_IN_INTERVAL("__time", '2015-09-12/2015-09-13')
+GROUP BY 1
+```
+
+
 After the Druid services finish startup, open the web console at http://localhost:8888.
 
 
