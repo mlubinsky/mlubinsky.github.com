@@ -4,7 +4,7 @@ https://fennel.ai/blog/challenges-of-building-realtime-ml-pipelines/
 
 https://itnext.io/exploring-popular-open-source-stream-processing-technologies-part-2-of-2-2832b7727cd0
 
-https://www.youtube.com/watch?v=wBd2TN4BP8A
+https://www.youtube.com/watch?v=wBd2TN4BP8A PART 1 - Introduction to real-time machine learning prediction demo
 
 https://redpanda.com/blog/data-stream-processing-spark-flink-ksqldb
 
