@@ -305,6 +305,17 @@ https://habr.com/ru/company/rambler_and_co/blog/569932/
 
 will be delays between event time and processing time due to how data is ingested and whether the overall application experiences issues like downtime.
 
+#### Stateless transformation 
+Each batch doing its own processing independently of anything that occurred prior to this batch. 
+Example: HTTP protocol, REST API
+
+#### Stateful transformations
+ the processing of each micro-batch of data depends on the previous batches of data either fully or partially.
+ Stateful stream processing means a “State” is shared between events(stream entities).
+ And therefore past events can influence the way the current events are processe
+ 
+In Kafka, there are two kinds of operations, stateless and stateful. When a stateless operation is made on a Kafka message, it can be done totally independently from any other message processing. This makes the operations quick and light-weight. 
+ 
 https://habr.com/ru/company/ru_mts/blog/685492/
 
 https://habr.com/ru/post/451160/
