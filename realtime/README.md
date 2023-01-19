@@ -20,6 +20,16 @@ https://dev.startree.ai/
 
 https://www.youtube.com/watch?v=GvVYG6chYoI Druid / Pinot
 
+Eaach table in Pinot is associated with a Schema. 
+A schema defines what fields are present in the table along with the data types. 
+The schema is stored in Zookeeper, along with the table configuration.
+
+Below, we see the schema and config for one of the three Realtime tables, purchasesEnriched. 
+Note how the columns are divided into three categories:
+-  Dimension
+-  Metric
+-  DateTime
+
 
 ### Kafka streaming
 
