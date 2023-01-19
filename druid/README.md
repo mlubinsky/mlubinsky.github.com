@@ -1,3 +1,11 @@
+```
+Apache Druid and Apache Pinot are both fundamentally similar because they store data and process queries on the same nodes,
+deviating from the decoupled architecture of BigQuery. 
+Druid and Pinot both have their data storing format with indexes, are tightly coupled with their query processing engines, 
+and unsupportiveness of large data volumes between nodes,
+so the queries run faster in both than Big Data processing systems like Presto, Hive, Spark, Kudu and Parquet.
+```
+
 ### Druid Ingestion
 Druid supports both streaming and batch ingestion. 
 Druid connects to a source of raw data, typically a message bus such as Apache Kafka (for streaming data loads), or a distributed filesystem such as HDFS (for batch data loads).
