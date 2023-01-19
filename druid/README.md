@@ -54,7 +54,24 @@ GROUP BY 1
 ```
 
 
-After the Druid services finish startup, open the web console at http://localhost:8888.
+After the Druid services finish startup, open the web console at http://localhost:8888
+
+### Lookup
+```
+SELECT
+  LOOKUP(store, 'store_to_country') AS country,
+  SUM(revenue)
+FROM sales
+GROUP BY 1
+
+SELECT
+  store_to_country.v AS country,
+  SUM(sales.revenue) AS country_revenue
+FROM
+  sales
+  INNER JOIN lookup.store_to_country ON sales.store = store_to_country.k
+GROUP BY 1
+```
 
 
 https://druid.apache.org/docs/latest/tutorials/index.html
