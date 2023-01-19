@@ -1,3 +1,42 @@
+### Druid Ingestion
+Druid supports both streaming and batch ingestion. 
+Druid connects to a source of raw data, typically a message bus such as Apache Kafka (for streaming data loads), or a distributed filesystem such as HDFS (for batch data loads).
+
+Druid converts raw data stored in a source to a more read-optimized format (called a Druid “segment”) in a process calling “indexing”.
+
+### Storage
+```
+Like many analytic data stores, Druid stores data in columns. Depending on the type of column (string, number, etc), different compression and encoding methods are applied. Druid also builds different types of indexes based on the column type.
+
+Similar to search systems, Druid builds inverted indexes for string columns for fast search and filter. Similar to timeseries databases, Druid intelligently partitions data by time to enable fast time-oriented queries.
+
+Unlike many traditional systems, Druid can optionally pre-aggregate data as it is ingested. This pre-aggregation step is known as rollup, and can lead to dramatic storage savings.
+```
+
+
+### Druid is likely a good choice if your use case matches a few of the following:
+```
+Insert rates are very high, but updates are less common.
+Most of your queries are aggregation and reporting queries. For example "group by" queries. 
+You may also have searching and scanning queries.
+You are targeting query latencies of 100ms to a few seconds.
+Your data has a time component. Druid includes optimizations and design choices specifically related to time.
+You may have more than one table, but each query hits just one big distributed table. 
+Queries may potentially hit more than one smaller "lookup" table.
+You have high cardinality data columns, e.g. URLs, user IDs, and need fast counting and ranking over them.
+You want to load data from Kafka, HDFS, flat files, or object storage like Amazon S3.
+```
+
+### Situations where you would likely not want to use Druid include:
+```
+You need low-latency updates of existing records using a primary key. Druid supports streaming inserts, but not streaming updates.
+You can perform updates using background batch jobs.
+You are building an offline reporting system where query latency is not very important.
+You want to do "big" joins, meaning joining one big fact table to another big fact table, and you are okay with these queries taking a long time to complete.
+```
+
+
+
 
 https://druid.apache.org/docs/latest/tutorials/index.html
 
