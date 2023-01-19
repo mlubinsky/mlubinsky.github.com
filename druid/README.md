@@ -3,7 +3,6 @@ https://druid.apache.org/docs/latest/tutorials/index.html
 
 https://www.micahlerner.com/2022/05/15/druid-a-real-time-analytical-data-store.html
 
-
 https://www.decipherzone.com/blog-detail/apache-druid-architecture
 
 https://www.youtube.com/watch?v=6jJi11r71sY
@@ -14,6 +13,9 @@ https://blog.datumo.io/data-partitioning-optimization-in-apache-druid-part-i-13e
 
 https://engineering.salesforce.com/delivering-high-quality-insights-interactively-using-apache-druid-at-salesforce-7a038f0fe3d1
 
+https://medium.com/tecnolog%C3%ADa/how-we-built-a-streaming-analytics-solution-using-apache-kafka-druid-66c257adcd9a 
+
+```
 Segment — the smallest unit of storage in Apache Druid. 
 Data in Druid has to be partitioned into time chunks
 (the range of the time chunk is called the segment granularity), 
@@ -27,8 +29,11 @@ such as max(),sum(),distinct_count(), 95thPercentile().
 (It is worth noting that aggregations in Druid can be applied both at ingestion time and query/post-query time.)
 
 
-it is worth it to put extra effort into reducing the cardinalities introduced by timestamp. The way Druid approaches this is called rollup; you can think of rollup in Druid as a scheme to generate a summary of data by truncating the timestamp and pre-aggregating. Truncating the timestamp is an effective way to reduce cardinalities that are introduced by timestamp. Druid generates mergeable aggregates after rollup in segments and records them with the same combination of dimensions (including the truncated timestamp). Druid can easily calculate aggregates from billions of records in sub-seconds.
-
+it is worth it to put extra effort into reducing the cardinalities introduced by timestamp. 
+The way Druid approaches this is called rollup; you can think of rollup in Druid as a scheme to generate a summary of data 
+by truncating the timestamp and pre-aggregating. Truncating the timestamp is an effective way to reduce cardinalities that are introduced by timestamp. Druid generates mergeable aggregates after rollup in segments and records them with the same combination of dimensions (including the truncated timestamp). 
+Druid can easily calculate aggregates from billions of records in sub-seconds.
+```
 Insights into Bitmap Index
 https://levelup.gitconnected.com/insights-into-indexing-using-bitmap-index-c28a3db1ad97
 
