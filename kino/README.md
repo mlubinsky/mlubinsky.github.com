@@ -9,6 +9,25 @@ https://geish-a.livejournal.com/1445327.html?view=comments#comments
 
 https://avva.livejournal.com/3519039.html?view=comments#comments
 ```
+Скромное обаяние буржуазии
+Lock stock and two smoking barrels
+Adams Family
+Tucker & Dale vs. Evil
+
+National Lampoon's European Vacation
+Let me in
+Coraline
+Firefly
+Southern Comfort
+Fracture
+Body of Lies
+V for Vendetta
+Best in Show
+Inside Out.
+Rocky Horror Picture Show
+8 женщин
+Futurama
+Dr Who
 Men in black
 лес в снегу
 Фильм «Август»
