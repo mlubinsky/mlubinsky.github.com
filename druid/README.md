@@ -29,13 +29,15 @@ You want to load data from Kafka, HDFS, flat files, or object storage like Amazo
 
 ### Situations where you would likely not want to use Druid include:
 ```
-You need low-latency updates of existing records using a primary key. Druid supports streaming inserts, but not streaming updates.
+You need low-latency updates of existing records using a primary key. 
+Druid supports streaming inserts, but not streaming updates.
 You can perform updates using background batch jobs.
 You are building an offline reporting system where query latency is not very important.
-You want to do "big" joins, meaning joining one big fact table to another big fact table, and you are okay with these queries taking a long time to complete.
+You want to do "big" joins, meaning joining one big fact table to another big fact table, 
+and you are okay with these queries taking a long time to complete.
 ```
 
-
+After the Druid services finish startup, open the web console at http://localhost:8888.
 
 
 https://druid.apache.org/docs/latest/tutorials/index.html
