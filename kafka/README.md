@@ -13,11 +13,30 @@ https://www.youtube.com/watch?v=W-wr4Fxmjsc   (ru)
 
 https://habr.com/ru/company/southbridge/blog/683168/
 
+#### Stream 
+
 https://towardsdatascience.com/master-the-kafka-shell-in-5-minutes-topics-producers-and-consumers-explained-442a15f1dac1
+
+https://www.vultr.com/docs/how-to-use-kafka-streams-for-stateful-and-stateless-data-processing/
 
 https://towardsdatascience.com/apache-kafka-in-python-how-to-stream-data-with-producers-and-consumers-307e84ca8bdb
 
 https://towardsdatascience.com/make-a-mock-real-time-stream-of-data-with-python-and-kafka-7e5e23123582
+
+
+<https://www.jesse-anderson.com/2019/10/why-i-recommend-my-clients-not-use-ksql-and-kafka-streams/> Do not use Kafka Stream and KSQL
+
+<https://www.confluent.io/blog/build-streaming-etl-solutions-with-kafka-and-rail-data> 
+
+<https://medium.com/@sathishjayaram/points-to-remember-while-processing-streaming-timeseries-data-in-order-using-kafka-and-spark-38cdf787a304>
+
+<https://dzone.com/articles/life-beyond-kafka-with-apache-pulsar>   Apache Pulsar
+
+<https://dzone.com/articles/5-courses-to-learn-apache-kafka-in-2019> 5 Kafka classes /courses
+
+<https://dev.to/victorgil/using-apache-kafka-to-implement-event-driven-microservices-af2>
+
+<https://ordepdev.me/posts/tales-from-running-kafka-streams-in-production>
 
 ### Kafka and Python
 
@@ -135,19 +154,6 @@ There is pdf version of this file:
 
 <https://habr.com/ru/post/466385/>  Изучение механики обмена сообщениями посредством ActiveMQ и Kafka. Глава 1
 
-<https://www.jesse-anderson.com/2019/10/why-i-recommend-my-clients-not-use-ksql-and-kafka-streams/> Do not use Kafka Stream and KSQL
-
-<https://www.confluent.io/blog/build-streaming-etl-solutions-with-kafka-and-rail-data> 
-
-<https://medium.com/@sathishjayaram/points-to-remember-while-processing-streaming-timeseries-data-in-order-using-kafka-and-spark-38cdf787a304>
-
-<https://dzone.com/articles/life-beyond-kafka-with-apache-pulsar>   Apache Pulsar
-
-<https://dzone.com/articles/5-courses-to-learn-apache-kafka-in-2019> 5 Kafka classes /courses
-
-<https://dev.to/victorgil/using-apache-kafka-to-implement-event-driven-microservices-af2>
-
-<https://ordepdev.me/posts/tales-from-running-kafka-streams-in-production>
 
 ## RQ Celery etc
 
