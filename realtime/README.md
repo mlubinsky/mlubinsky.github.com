@@ -18,6 +18,8 @@ https://www.youtube.com/watch?v=GvVYG6chYoI Druid / Pinot
 
 ### Kafka streaming
 
+https://docs.confluent.io/platform/current/streams/concepts.html#kstream
+
 https://www.vultr.com/docs/how-to-use-kafka-streams-for-stateful-and-stateless-data-processing/
 ```
 Kafka Streams has two types of APIs:
