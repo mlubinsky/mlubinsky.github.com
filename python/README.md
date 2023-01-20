@@ -1,3 +1,9 @@
+Book which I bought:
+https://powerfulpython.com/ Vantive99!
+
+Good book to read: 
+cosmic_python https://www.cosmicpython.com/book/preface.html
+
 python CLI:
 https://medium.com/@martin.heinz/python-cli-tricks-that-dont-require-any-code-whatsoever-e7bdb9409aeb
 
