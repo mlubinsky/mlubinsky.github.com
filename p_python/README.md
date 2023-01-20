@@ -34,7 +34,8 @@ blocks = { n: "x" * n for n in range (5) }
 print ( blocks )
 {0: '', 1: 'x', 2: 'xx ', 3: 'xxx ', 4: 'xxxx '}
 ```
-
+Any list comprehension you can write, you can use to create an equivalent generator
+object, just by swapping "(" and ")" for "[" and "]".
 #### map, filter, zip
 ```
 numbers = [1 , 2 , 3]
