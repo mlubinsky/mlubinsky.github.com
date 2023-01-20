@@ -2,13 +2,21 @@
 
 https://www.youtube.com/watch?v=wiGkV37Kbxk
 
-#### *argv
+#### *argv amd **kwargs
 Writing *args is a wellfollowed convention, but you can choose a different name - the asterisk is what makes it a variable
 argument
 ```
 def takes_any_args (* args ) :
   print (" Type of args : " + str( type ( args ) ) ) # Type of args : <class 'tuple '>
   print (" Value of args : " + str( args ) )
+  
+```  
+The  keyword arguments won’t be captured by the *args idiom. Instead, Python provides a
+different syntax - using two asterisks instead of one:
+```
+def print_kwargs (** kwargs ) :
+  for key , value in kwargs . items () :
+      print ("{} -> {}". format (key , value ) )  
 ```
 
 #### Generators, yield
