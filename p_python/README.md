@@ -18,6 +18,8 @@ def print_kwargs (** kwargs ) :
   for key , value in kwargs . items () :
       print ("{} -> {}". format (key , value ) )  
 ```
+The variable kwargs is a dictionary. (In contrast to args  that is a tuple.)
+ 
 
 #### Generators, yield
 A function is a generator function if and only if it uses "yield" instead of "return"
