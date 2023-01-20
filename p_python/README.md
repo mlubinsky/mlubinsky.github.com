@@ -20,7 +20,59 @@ def print_kwargs (** kwargs ) :
 ```
 The variable kwargs is a dictionary. (In contrast to args  that is a tuple.)
  
+####
 
+A key function is a function that takes exactly one argument - an element in the list. 
+It returns the derived value used in the comparison.
+
+```
+ nums = ["12", "7", "30", "14", "3"]
+ max( nums )
+'7'
+max(nums , key= int)
+'30'
+min( nums )
+'12 '
+>>> sorted ( nums )
+['12 ', '14 ', '3', '30 ', '7']
+>>>
+>>> # And with a key function :
+... min(nums , key= int)
+'3'
+>>> sorted (nums , key= int)
+['3', '7', '12 ', '14 ', '30 ']
+```
+We can create the custom key function as well
+```
+def get_gpa ( who) :
+ return who[" gpa"]
+
+sorted ( students , key= get_gpa )
+```
+
+ Alternatively, the operator module’s
+itemgetter creates and returns a key function that looks up a named dictionary field:
+```
+ from operator import itemgetter
+ # Sort by GPA ...
+ sorted ( students , key= itemgetter ("gpa") )
+```
+This is how you use itemgetter when the sequence elements are dictionaries. It also works when
+the elements are tuples or lists - just pass a number index instead:
+
+ # Same data , but as a list of tuples .
+```
+... student_rows = [
+... (" Joe Smith ", " physics ", 3.7) ,
+... (" Jane Jones ", " chemistry ", 3.8) ,
+... (" Zoe Fox", " literature ", 3.4) ,
+... ]
+>>>
+>>> # GPA is the 3rd item in the tuple , i.e. index 2.
+... # Highest GPA:
+... max( student_rows , key= itemgetter (2) )
+('Jane Jones ', 'chemistry ', 3.8)
+```
 #### Generators, yield
 A function is a generator function if and only if it uses "yield" instead of "return"
 This generator object is an iterator, which means you can iterate through it using next() or a for
