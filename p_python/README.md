@@ -18,6 +18,8 @@ The _yield_ statement simultaneously defines an exit point, and a re-entry point
 For generator objects, each time a new value is requested, 
 the flow of control picks up on the line after the yield statement. 
 
+ The __yield from__ statement is used specifically in generator functions, when they yield values directly from another generator object (or, equivalently, by calling another generator function)
+
 #### Recursion limit
 ```
 import sys
