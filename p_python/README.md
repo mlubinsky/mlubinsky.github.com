@@ -533,3 +533,14 @@ If d is decorator it means :
 x = d(x)
 
 The d above should be callable: have method __call__
+```
+def printlog ( func ) :
+  def wrapper (* args , ** kwargs ) :
+      print (" CALLING : " + func . __name__ )
+      return func (* args , ** kwargs )
+  return wrapper
+
+@printlog
+ def foo(x) :
+    print (x + 2)
+```
