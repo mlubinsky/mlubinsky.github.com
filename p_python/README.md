@@ -20,6 +20,27 @@ the flow of control picks up on the line after the yield statement.
 
  The __yield from__ statement is used specifically in generator functions, when they yield values directly from another generator object (or, equivalently, by calling another generator function)
 
+
+#### map, filter, zip
+```
+numbers = [1 , 2 , 3]
+def double (n) :
+  return 2 * n
+  
+mapped = map( double , numbers )
+for num in mapped : print ( num)
+
+def is_even (n) :
+  return n % 2 == 0
+  
+filtered = filter ( is_even , numbers )
+for num in filtered : print (num)
+
+
+zipped = zip( numbers , big_numbers )
+for pair in zipped : print ( pair )
+```
+
 #### Recursion limit
 ```
 import sys
