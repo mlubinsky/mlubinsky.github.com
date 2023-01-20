@@ -2,7 +2,23 @@
 
 https://www.youtube.com/watch?v=wiGkV37Kbxk
 
-### Recursion limit
+#### Generators, yield
+A function is a generator function if and only if it uses "yield" instead of "return"
+This generator object is an iterator, which means you can iterate through it using next() or a for
+loop
+```
+def gen_nums () :
+  n = 0
+  while n < 4:
+      yield n
+      n += 1
+```
+The _yield_ statement simultaneously defines an exit point, and a re-entry point.
+
+For generator objects, each time a new value is requested, 
+the flow of control picks up on the line after the yield statement. 
+
+#### Recursion limit
 ```
 import sys
 sys.getrecursionlimit() ## 1000
