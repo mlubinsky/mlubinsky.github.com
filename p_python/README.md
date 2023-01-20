@@ -21,6 +21,10 @@ the flow of control picks up on the line after the yield statement.
  The __yield from__ statement is used specifically in generator functions, when they yield values directly from another generator object (or, equivalently, by calling another generator function)
 
 #### List and dictionary comprehensions
+
+The structure is
+[ EXPR for VAR in SEQUENCE if CONDITION ]
+
 ```
 squares = [ n*n for n in range (6) ]
 print ( squares )
