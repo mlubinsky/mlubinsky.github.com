@@ -20,6 +20,16 @@ the flow of control picks up on the line after the yield statement.
 
  The __yield from__ statement is used specifically in generator functions, when they yield values directly from another generator object (or, equivalently, by calling another generator function)
 
+#### List and dictionary comprehensions
+```
+squares = [ n*n for n in range (6) ]
+print ( squares )
+[0 , 1 , 4 , 9 , 16 , 25]
+
+blocks = { n: "x" * n for n in range (5) }
+print ( blocks )
+{0: '', 1: 'x', 2: 'xx ', 3: 'xxx ', 4: 'xxxx '}
+```
 
 #### map, filter, zip
 ```
