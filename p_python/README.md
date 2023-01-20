@@ -543,4 +543,17 @@ def printlog ( func ) :
 @printlog
  def foo(x) :
     print (x + 2)
+    
+    
+def running_average ( func ) :
+  data = {" total " : 0 , " count " : 0}
+  def wrapper (* args , ** kwargs ) :
+      val = func (* args , ** kwargs )
+      data [" total "] += val
+      data [" count "] += 1
+      print (" Average of {} so far: {:.01 f}". format (func . __name__ , data [" total "] / data [" count "]) )
+  return func (* args , ** kwargs )
+  
+return wrapper    
+    
 ```
