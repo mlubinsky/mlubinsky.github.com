@@ -36,6 +36,15 @@ print ( blocks )
 ```
 Any list comprehension you can write, you can use to create an equivalent generator
 object, just by swapping "(" and ")" for "[" and "]".
+```
+#  This
+many_squares = ( n*n for n in range ( NUM_SQUARES ) )
+# ... is EXACTLY EQUIVALENT to this :
+def gen_many_squares ( limit ) :
+  for n in range ( limit ) :
+     yield n * n
+many_squares = gen_many_squares ( NUM_SQUARES )
+```
 #### map, filter, zip
 ```
 numbers = [1 , 2 , 3]
