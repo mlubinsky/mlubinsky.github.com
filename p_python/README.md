@@ -3,7 +3,7 @@
 https://www.youtube.com/watch?v=wiGkV37Kbxk
 
 #### *argv amd **kwargs
-Writing *args is a wellfollowed convention, but you can choose a different name - the asterisk is what makes it a variable
+Writing *args is a well followed convention, but you can choose a different name - the asterisk is what makes it a variable
 argument
 ```
 def takes_any_args (* args ) :
