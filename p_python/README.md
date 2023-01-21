@@ -20,7 +20,20 @@ def print_kwargs (** kwargs ) :
 ```
 The variable kwargs is a dictionary. (In contrast to args  that is a tuple.)
  
-####
+#### Logging exception
+
+The logging module has a function called exception, which will log your message
+along with the full stack trace of the current exception. So you can write code like this:
+```
+import logging
+def get_number () :
+   return int('foo ')
+try:
+   x = get_number ()
+except :
+    logging . exception ('Caught an error ')
+``` 
+#### Sorting
 
 A key function is a function that takes exactly one argument - an element in the list. 
 It returns the derived value used in the comparison.
