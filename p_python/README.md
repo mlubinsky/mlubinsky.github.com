@@ -377,6 +377,7 @@ def merge_two_dicts(a, b):
     c.update(b)    # modify keys and values of a with the ones from b
     return c
 
+In code above in case of keys collision between 2 dictionaries the last update wins
 
 a = { 'x': 1, 'y': 2}
 b = { 'y': 3, 'z': 4}
@@ -397,6 +398,7 @@ result = {}
 for d in (dict_a, dict_b, dict_c):
     result.update(d)
     
+Merge 3 dictionaries:    
 result = {**dict_a, **dict_b, **dict_c}    
 
 
