@@ -2,7 +2,7 @@
 
 https://www.youtube.com/watch?v=wiGkV37Kbxk
 
-#### *argv amd **kwargs
+#### *argv and **kwargs
 Writing *args is a well followed convention, but you can choose a different name - the asterisk is what makes it a variable
 argument
 ```
