@@ -12,6 +12,9 @@ https://siddhesh.substack.com/p/chesscom-vs-lichess
 
 https://news.ycombinator.com/item?id=29572447
 
+
+### A00 Grob Opening: Grob Gambit
+
 ### Дебют Понциани
 
 https://www.youtube.com/watch?v=foniOh5Mjv4
