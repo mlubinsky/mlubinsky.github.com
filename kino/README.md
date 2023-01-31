@@ -2,6 +2,17 @@
 
 https://www.elizarov.info/
 
+
+## Detectives
+https://collider.com/best-movie-detectives-like-glass-onion/#philip-marlowe---lsquo-the-big-sleep-rsquo-1946
+
+Poker Face 2023 https://www.imdb.com/title/tt14269590/ 
+
+https://cinema.d3.ru/
+
+https://soap.d3.ru/
+
+
 https://www.youtube.com/watch?v=dISZqTGdlx4&list=PLLVr9rhMLtCiocQIok8eNbBTaAj0fJZek 
 Бар "На грудь" - 1 Сезон
 
