@@ -1,4 +1,6 @@
-https://relational.ai/careers/
+https://relational.ai/careers/ JOB
+
+https://github.com/nkwade/nkwade-lc-solutions
 
 https://stepik.org/course/217    Алгоритмы: теория и практика. Методы
 
