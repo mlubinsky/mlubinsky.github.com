@@ -108,6 +108,27 @@ For generator objects, each time a new value is requested,
 the flow of control picks up on the line after the yield statement. 
 
  The __yield from__ statement is used specifically in generator functions, when they yield values directly from another generator object (or, equivalently, by calling another generator function)
+ 
+ 
+#### Generate last day of month
+
+```
+from datetime import datetime, timedelta
+
+def last_day_of_month(year):
+ last_days=[]   
+ for i in range(2,13):
+    dt = datetime(year, i, 1)
+    previous_month = dt - timedelta(days=1)
+    print(i, previous_month.date())
+    last_days.append(str(previous_month.date()))
+    
+ last_days.append(str(datetime(year, 12, 31).date()))
+ return last_days               
+                  
+result=last_day_of_month(2022)
+print(result)
+``` 
 
 #### List and dictionary comprehensions
 
