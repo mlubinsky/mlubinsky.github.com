@@ -20,6 +20,29 @@ def print_kwargs (** kwargs ) :
 ```
 The variable kwargs is a dictionary. (In contrast to args  that is a tuple.)
  
+#### dequeue
+
+```
+from collections import deque
+# create an empty queue
+queue = deque()
+# add elements to the queue
+queue.append("apple")
+queue.append("banana")
+queue.append("cherry")
+# remove and return the first element from the queue
+print(queue.popleft()) # prints "apple"
+print(queue.popleft()) # prints "banana"
+```
+You also can use appendleft() for adding element at left and pop() for removing element from right.
+
+if you try to use the popleft() method on an empty queue, it will raise an IndexError
+in the worst case scenario, the time complexity of popleft() operation on a deque object is O(n) because it's implemented as a cyclic buffer, so if we constantly add elements and remove elements from one end, the buffer will be reallocated every time it becomes full and this operation can be costly.
+
+In summary, using collections.deque as a queue in Python has an O(1) time complexity on average for both the enqueue and dequeue operations, making it an efficient data structure for queue operations, but in the worst case the time complexity could be O(n).
+
+
+ 
 #### Logging exception
 
 The logging module has a function called exception, which will log your message
