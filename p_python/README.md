@@ -19,7 +19,14 @@ def print_kwargs (** kwargs ) :
       print ("{} -> {}". format (key , value ) )  
 ```
 The variable kwargs is a dictionary. (In contrast to args  that is a tuple.)
- 
+
+### reversed
+```
+s = 'Python'
+print(list(reversed(s)))
+
+# Output: ['n', 'o', 'h', 't', 'y', 'P']
+``` 
 #### dequeue
 
 ```
