@@ -292,8 +292,9 @@ The columns (j) represent the totals.
 2 | 1 | 1 | 2 | 2 | 3 | 3 |
 3 | 1 | 1 | 2 | 3 | 4 | 5 |
   -------------------------
-
+```
 Number of ways to get total n with coin[n] equals:
+```
 * Number of ways to get total n with coin[n - 1] plus
 * Number of ways to get total n - coin[n]
 
@@ -312,7 +313,7 @@ Complexity:
 
 Time: O(i * j)
 Space: O(i * j)
-
+ 
 
 def coin_change_dynamic(coins, total):
 	'''Return the number of ways to to make the change using dynamic approach'''
