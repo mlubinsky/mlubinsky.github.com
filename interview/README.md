@@ -2,6 +2,8 @@ https://relational.ai/careers/ JOB
 
 https://github.com/nkwade/nkwade-lc-solutions
 
+https://github.com/klaus19/LeetcodeinPython
+
 https://stepik.org/course/217    Алгоритмы: теория и практика. Методы
 
 https://stepik.org/course/1547  Алгоритмы: теория и практика. Структуры данных
