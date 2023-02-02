@@ -180,7 +180,17 @@ https://www.techiedelight.com/print-all-paths-from-root-to-leaf-nodes-binary-tre
 
 the breadth-first search algorithm would work best to find the max-width of the tree,
 and the depth-first search algorithm would work best to find the max-depth. 
+```
+class TreeNode(object):
 
+      def __init__(self, val=0, left=None, right=None):
+         self.val = val
+         self.left = left
+         self.right = right
+
+      def maxDepth(self, root):
+          return 0 if root is None else 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
+```
 https://github.com/GEEGABYTE1/Width-Depth-Tree-Problems
 
 #### 2 Heaps pattern Find ( Median from Data Stream)
