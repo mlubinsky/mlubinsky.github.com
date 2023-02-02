@@ -133,7 +133,7 @@ if __name__ == '__main__':
     n = 4        # rod length
  
     print('Profit is', rodCut(price, n))
-   `` 
+ ``` 
 
 ####    Min Cost Path on grid 
 https://github.com/StBogdan/PythonWork/blob/master/Leetcode/64.py
