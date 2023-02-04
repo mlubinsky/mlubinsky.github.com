@@ -1,4 +1,6 @@
-Kafka message:
+https://www.freecodecamp.org/news/apache-kafka-handbook/
+
+Structure of Kafka message:
 ```
 key
 value
