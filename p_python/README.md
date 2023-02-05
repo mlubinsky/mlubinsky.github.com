@@ -20,7 +20,25 @@ def print_kwargs (** kwargs ) :
 ```
 The variable kwargs is a dictionary. (In contrast to args  that is a tuple.)
 
-### reversed
+#### Usage of * and **
+https://tproger.ru/translations/asterisks-in-python-what-they-are-and-how-to-use-them/
+
+example of unpacking
+```
+ numbers = [2, 1, 3, 4, 7]
+ more_numbers = [*numbers, 11, 18]
+ print(*more_numbers, sep=', ')  # 2, 1, 3, 4, 7, 11, 18
+ 
+ A = [1, 2, 3]
+ B = (4, 5, 6)
+ C = {7, 8, 9}
+ L = [*A, *B, *C]
+ 
+ a, *mid, b = [1, 2, 3, 4, 5, 6]
+ print(a, mid, b)
+ # 1 [2, 3, 4, 5] 6
+```
+### reversed()
 ```
 s = 'Python'
 print(list(reversed(s)))
@@ -48,7 +66,20 @@ in the worst case scenario, the time complexity of popleft() operation on a dequ
 
 In summary, using collections.deque as a queue in Python has an O(1) time complexity on average for both the enqueue and dequeue operations, making it an efficient data structure for queue operations, but in the worst case the time complexity could be O(n).
 
+### itertools
 
+#### product()
+```
+from itertools import product
+
+list_a = [1, 2020, 70]
+list_b = [2, 4, 7, 2000]
+list_c = [3, 70, 7]
+
+for a, b, c in product(list_a, list_b, list_c):
+    if a + b + c == 2077:
+        print(a, b, c)
+```        
  
 #### Logging exception
 
@@ -184,6 +215,8 @@ def gen_many_squares ( limit ) :
   for n in range ( limit ) :
      yield n * n
 many_squares = gen_many_squares ( NUM_SQUARES )
+
+
 ```
 #### map, filter, zip
 ```
@@ -194,17 +227,34 @@ def double (n) :
 mapped = map( double , numbers )
 for num in mapped : print ( num)
 
+names = ['yAnG', 'MASk', 'thoMas', 'LISA']
+names = map(str.capitalize, names)
+print(list(names))
+# ['Yang', 'Mask', 'Thomas', 'Lisa']
+```
+
+### filter()
+```
 def is_even (n) :
   return n % 2 == 0
   
 filtered = filter ( is_even , numbers )
 for num in filtered : print (num)
-
-
+```
+### zip()
+```
 zipped = zip( numbers , big_numbers )
 for pair in zipped : print ( pair )
 ```
+### reduce()
+```
+from functools import reduce
 
+city = ['L', 'o', 'n', 'd', 'o', 'n', 2, 0, 2, 0]
+city_to_str = reduce(lambda x, y: str(x) + str(y), city)
+print(city_to_str)
+# London2020
+```
 #### Recursion limit
 ```
 import sys
@@ -296,14 +346,7 @@ string.count('o')
 ```
 
 
-#### Usage of * and **
-https://tproger.ru/translations/asterisks-in-python-what-they-are-and-how-to-use-them/
 
-```
- numbers = [2, 1, 3, 4, 7]
- more_numbers = [*numbers, 11, 18]
- print(*more_numbers, sep=', ')  # 2, 1, 3, 4, 7, 11, 18
-```
 
 #### check the memory usage of an object
 ```
@@ -452,7 +495,10 @@ for d in (dict_a, dict_b, dict_c):
 Merge 3 dictionaries:    
 result = {**dict_a, **dict_b, **dict_c}    
 
+Python 3.9 way:
 
+cities = cities_us | cities_uk
+cities_us |= cities_uk  # in place
 ```
 #### Convert two lists into a dictionary
 ```
