@@ -217,6 +217,7 @@ the flow of control picks up on the line after the yield statement.
  
 #### Stack, queue, priority queue (heapq)  
  https://realpython.com/queue-in-python/
+ https://realpython.com/python-deque/
  
 #### Generate last day of month
 
