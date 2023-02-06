@@ -66,6 +66,50 @@ in the worst case scenario, the time complexity of popleft() operation on a dequ
 
 In summary, using collections.deque as a queue in Python has an O(1) time complexity on average for both the enqueue and dequeue operations, making it an efficient data structure for queue operations, but in the worst case the time complexity could be O(n).
 
+
+### defaukdict()
+https://realpython.com/python-defaultdict/
+```
+from collections import defaultdict
+def def_value():
+    return "Not Present"
+d = defaultdict(def_value)
+d["a"] = 1
+d["b"] = 2
+  
+print(d["a"])
+print(d["b"])
+print(d["c"])    
+```
+When the list class is passed as the default_factory argument, then a defaultdict is created with the values that are list.
+```
+from collections import defaultdict
+  
+  
+# Defining a dict
+d = defaultdict(list)
+  
+for i in range(5):
+    d[i].append(i)
+```
+When the int class is passed as the default_factory argument, then a defaultdict is created with default value as zero.
+
+```
+d = defaultdict(int)
+   
+L = [1, 2, 3, 4, 2, 4, 1, 2]
+   
+# Iterate through the list
+# for keeping the count
+for i in L:
+       
+    # The default value is 0
+    # so there is no need to 
+    # enter the key first
+    d[i] += 1
+```    
+
+
 ### itertools
 
 #### product()
@@ -75,6 +119,7 @@ from itertools import product
 list_a = [1, 2020, 70]
 list_b = [2, 4, 7, 2000]
 list_c = [3, 70, 7]
+
 
 for a, b, c in product(list_a, list_b, list_c):
     if a + b + c == 2077:
