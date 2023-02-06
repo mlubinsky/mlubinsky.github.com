@@ -49,3 +49,13 @@ CREATE STREAM s (
  value_format-'AVRO'
 )
 ```
+Create stream with JOIN
+```
+CREATE STREAM J  WITH (
+ kafka topic = 'my_topic',
+ value_format-'AVRO'
+)
+FROM a
+INNER JOIN b
+ON a.id = b.id
+```
