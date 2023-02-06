@@ -111,7 +111,7 @@ for i in L:
 
 
 ### itertools
-
+https://realpython.com/python-itertools/
 #### product()
 ```
 from itertools import product
