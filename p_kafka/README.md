@@ -58,4 +58,5 @@ CREATE STREAM J  WITH (
 FROM a
 INNER JOIN b
 ON a.id = b.id
+EMIT CHANGES
 ```
