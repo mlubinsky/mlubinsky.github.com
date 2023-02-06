@@ -33,3 +33,12 @@ aggregate()
 ### ksqlDB:
  - SQL syntax: CREATE STREAM, CREATE TABLE, SELECT, JOIN, GROUP BY, SUM
  - Kafka Streams under the hood
+
+```
+CREATE TABLE T (
+ id STRING PRINARY TABLE
+) WITH (
+ kafka topic = 'my_topic',
+ value_format-'AVRO'
+)
+```
