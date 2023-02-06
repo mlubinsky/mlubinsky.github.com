@@ -215,6 +215,8 @@ the flow of control picks up on the line after the yield statement.
 
  The __yield from__ statement is used specifically in generator functions, when they yield values directly from another generator object (or, equivalently, by calling another generator function)
  
+#### Stack, queue, priority queue (heapq)  
+ https://realpython.com/queue-in-python/
  
 #### Generate last day of month
 
