@@ -49,7 +49,7 @@ CREATE STREAM s (
  value_format-'AVRO'
 )
 ```
-Create stream with JOIN
+Create stream with JOIN using EMIT CHANGES
 ```
 CREATE STREAM J  WITH (
  kafka topic = 'my_topic',
@@ -59,4 +59,18 @@ FROM a
 INNER JOIN b
 ON a.id = b.id
 EMIT CHANGES
+```
+Example of WINDOW TUMBLING and EMIT FINAL:
+
+```
+CREATE TABLE T  WITH (
+ kafka topic = 'my_topic',
+ value_format-'AVRO'
+) AS
+SELECT ...
+FROM
+WINDOW TUMBLING(SIZE 2 HOURS, RETENTION 7 DAYS, GRACE PERIOD 10 MINUTES
+WHERE x < y
+...
+EMIT FINAL
 ```
