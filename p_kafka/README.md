@@ -41,4 +41,11 @@ CREATE TABLE T (
  kafka topic = 'my_topic',
  value_format-'AVRO'
 )
+
+CREATE STREAM s (
+ id STRING PRINARY TABLE
+) WITH (
+ kafka topic = 'my_topic',
+ value_format-'AVRO'
+)
 ```
