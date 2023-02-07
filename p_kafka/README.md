@@ -1,4 +1,18 @@
-Topic consist of  partitions
+### Event message - are serialized into binary,
+
+- key
+- value
+- timestamp
+- compression type
+- headers for metadata (optional)
+- partition and offset id (once the message is written to a topic)
+
+
+Topic consist of  partitions.
+Default retention - 7 days.
+
+If messages have no key, they will be evenly distributed among partitions in a round robin manner:
+
 
 Kafka Producer API (low level) vs Kafla Connect
 
