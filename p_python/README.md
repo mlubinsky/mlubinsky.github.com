@@ -6,7 +6,7 @@ https://www.youtube.com/watch?v=wiGkV37Kbxk
 Writing *args is a well followed convention, but you can choose a different name - the asterisk is what makes it a variable
 argument
 ```
-def takes_any_args (* args ) :
+def takes_any_args (*args ) :
   print (" Type of args : " + str( type ( args ) ) ) # Type of args : <class 'tuple '>
   print (" Value of args : " + str( args ) )
   
@@ -139,26 +139,40 @@ try:
 except :
     logging . exception ('Caught an error ')
 ``` 
+
 #### Sorting
+
+https://tproger.ru/translations/python-sorting/
+
+list.sort(reverse=True/False) - in place, returns None
+
+sorted(any_iterable_object, key=..., reverse=True/False) - returns new sorted object
+
+```
+student_tuples = [
+        ('john', 'A', 15),
+        ('jane', 'B', 12),
+        ('dave', 'B', 10),
+    ]
+sorted(student_tuples, key=lambda student: student[2])   # sort by age
+
+[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
+```
 
 A key function is a function that takes exactly one argument - an element in the list. 
 It returns the derived value used in the comparison.
 
 ```
- nums = ["12", "7", "30", "14", "3"]
- max( nums )
-'7'
-max(nums , key= int)
-'30'
-min( nums )
-'12 '
->>> sorted ( nums )
-['12 ', '14 ', '3', '30 ', '7']
->>>
->>> # And with a key function :
-... min(nums , key= int)
-'3'
->>> sorted (nums , key= int)
+nums = ["12", "7", "30", "14", "3"]
+max( nums ) # '7'
+max(nums , key= int) # '30'
+min( nums ) # '12 '
+sorted ( nums ) # ['12 ', '14 ', '3', '30 ', '7']
+
+# And with a key function (cast to int):
+min(nums , key= int) # '3'
+
+sorted (nums , key= int)
 ['3', '7', '12 ', '14 ', '30 ']
 ```
 We can create the custom key function as well
@@ -170,10 +184,10 @@ sorted ( students , key= get_gpa )
 ```
 
  Alternatively, the operator module’s
-itemgetter creates and returns a key function that looks up a named dictionary field:
+_itemgetter_ creates and returns a key function that looks up a named dictionary field:
 ```
  from operator import itemgetter
- # Sort by GPA ...
+ # Sort by GPA:
  sorted ( students , key= itemgetter ("gpa") )
 ```
 This is how you use itemgetter when the sequence elements are dictionaries. It also works when
@@ -181,15 +195,15 @@ the elements are tuples or lists - just pass a number index instead:
 
   Same data , but as a list of tuples .
 ```
-... student_rows = [
-... (" Joe Smith ", " physics ", 3.7) ,
-... (" Jane Jones ", " chemistry ", 3.8) ,
-... (" Zoe Fox", " literature ", 3.4) ,
-... ]
->>>
->>> # GPA is the 3rd item in the tuple , i.e. index 2.
-... # Highest GPA:
-... max( student_rows , key= itemgetter (2) )
+ student_rows = [
+   (" Joe Smith ", " physics ", 3.7) ,
+   (" Jane Jones ", " chemistry ", 3.8) ,
+   (" Zoe Fox", " literature ", 3.4) ,
+ ]
+
+# GPA is the 3rd item in the tuple , i.e. index 2.
+# Highest GPA:
+ max( student_rows , key= itemgetter (2) )
 ('Jane Jones ', 'chemistry ', 3.8)
 ```
 
@@ -311,24 +325,7 @@ sys.getrecursionlimit() ## 1000
 sys.setrecursionlimit(5000) 
 ```
 
-#### Sorting
 
-https://tproger.ru/translations/python-sorting/
-
-list.sort(reverse=True/False) - in place, returns None
-
-sorted(any_iterable_object, key=..., reverse=True/False) - returns new sorted object
-
-```
-student_tuples = [
-        ('john', 'A', 15),
-        ('jane', 'B', 12),
-        ('dave', 'B', 10),
-    ]
-sorted(student_tuples, key=lambda student: student[2])   # sort by age
-
-[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
-```
 
 ####  Common elements in lists
 ```
