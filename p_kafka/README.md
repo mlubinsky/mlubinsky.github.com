@@ -11,7 +11,8 @@
 Topic consist of  partitions.
 Default retention - 7 days.
 
-If messages have no key, they will be evenly distributed among partitions in a round robin manner:
+If messages have no key, they will be evenly distributed among partitions in a round robin manner.
+Messages that have the same key will always be sent to the same partition. The key is run through a hashing function which turns it into an integer (partition number).
 
 
 Kafka Producer API (low level) vs Kafla Connect
