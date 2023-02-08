@@ -11,6 +11,11 @@
 - groupby
 - sum
 
+#### Times 
+ 
+- Processing time — time of a particular machine that will process the specific element. It could be different than the actual event time when the event is generated, and the order of events could be separate because of the network failures and delays.
+- Event time — It is the time when an event is generated at the source. It’s the actual time of an event (embedded within record).
+- Ingestion time — It is a time when the Flink receives an event for processing. It could be more reliable than the processing time since all the operators will see the same timestamp for the individual event;  helps to handle out of order events
 
 #### Joins
 
@@ -46,26 +51,12 @@ This hint is used to leverage the sorting to make joins faster. As we know if da
 
 
 
-
-
-
-52
-
-
-
-
-
-
-
 #### Storage
 - Files: local, HDFS. S3
 - Databases: MongoDB, HBase
 - Streams: Kafka, Flume, RabbitMQ
 
-#### Timestamps 
-- processing time (system time)
-- event time - when evend occured on source (embedded within record)
-- ingestion time - cannot handle out of order events
+
  
 https://dataai.udemy.com/course/apache-flink-a-real-time-hands-on-course-on-flink/
 
