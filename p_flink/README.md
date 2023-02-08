@@ -1,7 +1,7 @@
 #### Flinkdata  abstractions:
 
-DataSet    -  batch processing (Table, Jelly API  for Graph processing, FLINK ML API for Machine Learning)
-DataStream - stream processing
+- DataSet    -  batch processing (Table, Jelly API  for Graph processing, FLINK ML API for Machine Learning)
+- DataStream - stream processing
 
 ### Storage
 - Files: local, HDFS. S3
@@ -12,7 +12,7 @@ DataStream - stream processing
 - processing time (system time)
 - event time - when evend occured on source (embedded within record)
 - ingestion time - cannot handle out of order events
-- 
+ 
 https://dataai.udemy.com/course/apache-flink-a-real-time-hands-on-course-on-flink/
 
 https://www.ververica.com/blog/apache-flink-sql-past-present-and-future
