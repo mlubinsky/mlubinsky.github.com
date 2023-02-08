@@ -1,13 +1,10 @@
 
 #### Spark Structured Streaming
 
-Micro batching
+Micro batching, not real time
+Uses DAG as execution engine ( Flink uses controlled cyclic dependency graph as execution engine) 
 
-https://dataai.udemy.com/course/spark-streaming-using-python/learn/lecture/22355480#overview
 
-https://github.com/LearningJournal/Spark-Streaming-In-Python
-
-https://medium.com/@shivagarg91/state-management-stateful-stateless-aggregations-on-unbounded-data-in-structured-streaming-1-3-6cf95cc32724
 
 spark remembers all the windows forever and waits for the late events forever.
 
@@ -73,6 +70,13 @@ tumbling window - not overlapped
 watermark - what is the maximum possible delay?
 
 when late records are not relevant?
+
+### Links 
+https://dataai.udemy.com/course/spark-streaming-using-python/learn/lecture/22355480#overview
+
+https://github.com/LearningJournal/Spark-Streaming-In-Python
+
+https://medium.com/@shivagarg91/state-management-stateful-stateless-aggregations-on-unbounded-data-in-structured-streaming-1-3-6cf95cc32724
 
 https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html
 
