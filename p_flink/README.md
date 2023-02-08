@@ -84,13 +84,15 @@ So to summarize, we have MapFunction for DataStreams and CoMapFunction for Conne
 
 #### State Management
 https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/concepts/stateful-stream-processing/
+
 The streaming application can be stateful or stateless. 
 In many cases, you can process application stream elements independently from each other, but some cases require managing state, referred to as _stateful stream processing_. 
 
 For example, if we monitor the average running temperature of an IoT sensor, we need to store some values in the state. Also, the state is required to support Flink’s fault-tolerance behavior.
 
 #### There are two types of states
-— Operator state: The operator state is related to a single operator,
+
+— Operator state: The operator state is related to a single operator
 - Keyed state is shared across a keyed stream. Keyed states support different data structures to store the state values — ValueSate, ListSate, MapState, ReducingState.
 
 The state can be used with any of the transformations, but we have to use the Rich version of the functions 
