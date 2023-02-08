@@ -47,7 +47,7 @@ print(list(reversed(s)))
 ``` 
 
 #### Stack, queue, priority queue (heapq)  
- https://realpython.com/queue-in-python/ 
+ https://realpython.com/queue-in-python/ <br>
  https://realpython.com/python-deque/
 
 #### dequeue
