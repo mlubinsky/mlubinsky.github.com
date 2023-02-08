@@ -71,12 +71,7 @@ in the worst case scenario, the time complexity of popleft() operation on a dequ
 
 In summary, using collections.deque as a queue in Python has an O(1) time complexity on average for both the enqueue and dequeue operations, making it an efficient data structure for queue operations, but in the worst case the time complexity could be O(n).
 
-#### Named tuples
-```
-from collections import namedtuple
 
-NamedTupleCard = namedtuple('NamedTupleCard', ['rank', 'suit'])
-```
 
 #### defautdict()
 https://realpython.com/python-defaultdict/
@@ -119,6 +114,17 @@ for i in L:
     # enter the key first
     d[i] += 1
 ```    
+
+### attr
+
+https://www.attrs.org/en/stable/
+
+#### Named tuples
+```
+from collections import namedtuple
+
+NamedTupleCard = namedtuple('NamedTupleCard', ['rank', 'suit'])
+```
 
 #### Dataclass
 
