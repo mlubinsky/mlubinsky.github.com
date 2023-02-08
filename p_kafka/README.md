@@ -1,4 +1,4 @@
-### Event message  
+### Event message  contains:
 
 - key
 - value
