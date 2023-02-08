@@ -1,5 +1,5 @@
 ### Python notes
-https://docs.python-guide.org/writing/gotchas/#mutable-default-arguments
+https://docs.python-guide.org/ 
 
 https://www.youtube.com/watch?v=wiGkV37Kbxk
 
