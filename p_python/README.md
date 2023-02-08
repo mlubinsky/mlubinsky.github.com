@@ -1,7 +1,7 @@
 ### Python notes
 https://docs.python-guide.org/ 
 
-https://www.youtube.com/watch?v=wiGkV37Kbxk
+https://www.youtube.com/watch?v=wiGkV37Kbxk Raymond Hettinger: Numerical Marvels Inside Python
 
 #### *argv and **kwargs
 Writing *args is a well followed convention, but you can choose a different name - the asterisk is what makes it a variable
