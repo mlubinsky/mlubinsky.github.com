@@ -11,7 +11,7 @@ https://medium.com/@shivagarg91/state-management-stateful-stateless-aggregations
 
 spark remembers all the windows forever and waits for the late events forever.
 
-Checkpoints
+#### Checkpoints
 Streaming applications are always running and most of them are maintaining some kind of state. 
 Preserving the state across failures/restarts becomes a vital part of State management. 
 The checkpoint is the solution to the State recovery and implemented using WAL (write-ahead logs).
@@ -37,6 +37,9 @@ It contains information about the data source; Example: Location of the file, Ka
 /state: 
 As the name indicates, this folder contains the state of each computed partition in the encoded format (LZ4). 
 If Spark has 200 partitions, there would be 200 directories under the state folder.
+
+#### Watermarks
+
 Watermarks are the solution to forever state management of the windows to accommodate late events.
 It provides a mechanism to control the state in a bounded way. It controls the state to grow indefinitely.
 
