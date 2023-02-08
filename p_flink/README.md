@@ -1,5 +1,14 @@
+#### Flinkdata  abstractions:
 
+DataSet    -  batch processing (Table, Jelly API  for Graph processing, FLINK ML API for Machine Learning)
+DataStream - stream processing
 
+### Storage
+Files: local, HDFS. S3
+Databases: MongoDB, HBase
+Streams: KAfka, Flume, RabbitMQ
+
+#### Timestamps 
 - processing time (system time)
 - event time - when evend occured on source (embedded within record)
 - ingestion time - cannot handle out of order events
