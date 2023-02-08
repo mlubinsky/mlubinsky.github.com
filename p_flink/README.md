@@ -1,6 +1,6 @@
 #### Flinkdata  abstractions:
 
-- DataSet    -  batch processing (Table, Jelly API  for Graph processing, FLINK ML API for Machine Learning)
+- DataSet  (like Datafame in Spark)  -  batch processing (Table, Jelly API  for Graph processing, FLINK ML API for Machine Learning)
 - DataStream - stream processing
 
 ### Storage
