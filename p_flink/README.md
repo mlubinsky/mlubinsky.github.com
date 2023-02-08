@@ -11,11 +11,93 @@
 - groupby
 - sum
 
+#### Map 
+
+All transformations require a user defined functions to be provided by application developer. For example, if we have to map String values to Integer from a data stream, we will transform each value using the MapFunction. MapFunction is used with the DataStreams and user has to implement the business logic for each value in the map method as follows
+```
+class MyMapFunction implements MapFunction<String, Integer> {
+  public Integer map(String value) { return Integer.parseInt(value); }
+};
+```
+CoMapFunctions are similar to MapFunction except they are used for the ConnectedStream so we will map the values of both streams using respected map methods, map1, map2. There is no guarantee that which map method will be called first. The following sample has two input streams of Integer and strings and it returns boolean.
+```
+connectedStreams.map(new CoMapFunction<Integer, String, Boolean>() {
+    @Override
+    public Boolean map1(Integer value) {
+        return true;
+    }
+
+    @Override
+    public Boolean map2(String value) {
+        return false;
+    }
+});
+```
+Rich functions provide four additional methods open, close, getRuntimeContext and setRuntimeContext other than map methods. We can have both RichMap and RichCoMap.
+
+Open is used to make function stateful by initializing the state. It’s only called once. RuntimeContext is used to access different state types e.g. ValueState, ListState. Similarly, we can clean up on the close method as it is called when processing is done.
+
+Following is the example using RichFlatMapFunction to count average of all values over a count window of 5. It does use value state to store the running sum and count of the values. We will initialize the state using open method of the rich function. We have used gerRuntimeContext to get the state descriptor.
+```
+public class CountWindowAverage extends RichFlatMapFunction<Tuple2<Long, Long>, Tuple2<Long, Long>> {
+
+    /**
+     * The ValueState with count, a running sum.
+     */
+    private transient ValueState<Tuple2<Long, Long>> sum;
+
+    @Override
+    public void flatMap(Tuple2<Long, Long> input, Collector<Tuple2<Long, Long>> out) throws Exception {
+
+        // access the state value
+        Tuple2<Long, Long> currentSum = sum.value();
+        currentSum.f0 += 1;
+        currentSum.f1 += input.f1;
+        sum.update(currentSum);
+
+        // if the count is 5, emit the average and clear the state
+        if (currentSum.f0 >= 5) {
+            out.collect(new Tuple2<>(input.f0, currentSum.f1 / currentSum.f0));
+            sum.clear();
+        }
+    }
+
+    @Override
+    public void open(Configuration config) {
+        ValueStateDescriptor<Tuple2<Long, Long>> descriptor =
+                new ValueStateDescriptor<>(
+                        "average", // the state name
+                        TypeInformation.of(new TypeHint<Tuple2<Long, Long>>() {}), // type information
+                        Tuple2.of(0L, 0L)); // default value of the state, if nothing was set
+        sum = getRuntimeContext().getState(descriptor);
+    }
+}
+```
+So to summarize, we have MapFunction for DataStreams and CoMapFunction for ConnectedStreams. Furthermore, appending Rich to these functions make them rich by adding four additional methods which are commonly used for state management.
+
 #### Times 
  
 - Processing time — time of a particular machine that will process the specific element. It could be different than the actual event time when the event is generated, and the order of events could be separate because of the network failures and delays.
 - Event time — It is the time when an event is generated at the source. It’s the actual time of an event (embedded within record).
 - Ingestion time — It is a time when the Flink receives an event for processing. It could be more reliable than the processing time since all the operators will see the same timestamp for the individual event;  helps to handle out of order events
+
+
+#### State Management
+https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/concepts/stateful-stream-processing/
+The streaming application can be stateful or stateless. 
+In many cases, you can process application stream elements independently from each other, but some cases require managing state, referred to as _stateful stream processing_. 
+
+For example, if we monitor the average running temperature of an IoT sensor, we need to store some values in the state. Also, the state is required to support Flink’s fault-tolerance behavior.
+
+#### There are two types of states
+— Operator state: The operator state is related to a single operator,
+- Keyed state is shared across a keyed stream. Keyed states support different data structures to store the state values — ValueSate, ListSate, MapState, ReducingState.
+
+The state can be used with any of the transformations, but we have to use the Rich version of the functions 
+such as _RichFlatMapFunction_ because it provides additional methods used to set up the state.
+
+
+
 
 #### Joins
 
@@ -62,7 +144,7 @@ https://dataai.udemy.com/course/apache-flink-a-real-time-hands-on-course-on-flin
 
 https://www.ververica.com/blog/apache-flink-sql-past-present-and-future
 
-Join hints (hash, broadcast, sort)
+ 
 
 Keyed Stream (after keyBy Operation) window() Window assigner defines how entities are assigned to windows
 
