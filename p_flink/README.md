@@ -3,6 +3,16 @@
 - DataSet  (like Datafame in Spark)  -  batch processing (Table, Jelly API  for Graph processing, FLINK ML API for Machine Learning)
 - DataStream - stream processing
 
+#### DataSources for DataStream API
+
+readFile(fileInputFormat, path, wathcType, interval, PathFilter)
+socketTextStream
+addSource() Kafka, Flume, etc
+
+#### Data Sink
+
+writeAs
+
 #### DataSet Tranformations
 
 - filter
