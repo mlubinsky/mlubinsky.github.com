@@ -4,9 +4,9 @@ DataSet    -  batch processing (Table, Jelly API  for Graph processing, FLINK ML
 DataStream - stream processing
 
 ### Storage
-Files: local, HDFS. S3
-Databases: MongoDB, HBase
-Streams: KAfka, Flume, RabbitMQ
+- Files: local, HDFS. S3
+- Databases: MongoDB, HBase
+- Streams: Kafka, Flume, RabbitMQ
 
 #### Timestamps 
 - processing time (system time)
