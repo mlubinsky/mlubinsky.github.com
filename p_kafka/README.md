@@ -58,7 +58,7 @@ This can be achieved using groupByKey or a more generic group method.
 
 While using groupByKey is straightforward, note that a KeyValueMapper can be used with groupBy to use a different key. 
 For example, you can use it to group user transactions based on card type:
-
+```
 KStream<String, User> transactions = builder.stream("transactions");
 
 KGroupedStream<String, String> grouped = transactions.groupBy(new KeyValueMapper<String, User, String>() {
