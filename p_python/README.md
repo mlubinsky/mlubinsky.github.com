@@ -45,6 +45,11 @@ print(list(reversed(s)))
 
 # Output: ['n', 'o', 'h', 't', 'y', 'P']
 ``` 
+
+#### Stack, queue, priority queue (heapq)  
+ https://realpython.com/queue-in-python/
+ https://realpython.com/python-deque/
+
 #### dequeue
 
 ```
@@ -109,6 +114,29 @@ for i in L:
     d[i] += 1
 ```    
 
+#### Dataclass
+
+https://realpython.com/python-data-classes/
+
+```
+@dataclass
+class DataClassCard:
+    rank: str
+    suit: str
+    
+queen_of_hearts = DataClassCard('Q', 'Hearts')    
+```
+Without dataclass the code above will be implemented as:
+```
+class RegularCard:
+    def __init__(self, rank, suit):
+        self.rank = rank
+        self.suit = suit
+```
+
+@dataclass(slots=True)
+
+@dataclass(slots=True, frozen=True)
 
 ### itertools
 https://realpython.com/python-itertools/
@@ -229,9 +257,7 @@ the flow of control picks up on the line after the yield statement.
 
  The __yield from__ statement is used specifically in generator functions, when they yield values directly from another generator object (or, equivalently, by calling another generator function)
  
-#### Stack, queue, priority queue (heapq)  
- https://realpython.com/queue-in-python/
- https://realpython.com/python-deque/
+
  
 #### Generate last day of month
 
