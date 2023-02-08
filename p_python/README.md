@@ -1,4 +1,5 @@
 ### Python notes
+https://docs.python-guide.org/writing/gotchas/#mutable-default-arguments
 
 https://www.youtube.com/watch?v=wiGkV37Kbxk
 
@@ -38,6 +39,23 @@ example of unpacking
  print(a, mid, b)
  # 1 [2, 3, 4, 5] 6
 ```
+
+#### Default arg
+https://docs.python-guide.org/writing/gotchas/#mutable-default-arguments
+Python’s default arguments are evaluated once when the function is defined, 
+not each time the function is called.
+
+This means that if you use a mutable default argument and mutate it, you will and have mutated that object for all future calls to the function as well.
+
+Do this:
+```
+def append_to(element, to=None):
+    if to is None:
+        to = []
+    to.append(element)
+    return to
+```
+
 ### reversed()
 ```
 s = 'Python'
