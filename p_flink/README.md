@@ -142,6 +142,40 @@ such as _RichFlatMapFunction_ because it provides additional methods used to set
     .window(<WindowAssigner>)
     .apply(<JoinFunction>); 
 ```
+  
+https://medium.com/@knoldus/flink-join-two-data-streams-1cc40d18a7c7
+  
+```
+  final DataStream<Tuple2<Integer, String>> departmentStream = executionEnvironment
+                    .socketTextStream("localhost", 9001)
+                    .map((MapFunction<String, Tuple2<Integer, String>>) departmentTextStream -> {
+                        String[] salaryFields = departmentTextStream.split(" ");
+                        if (salaryFields.length == 2 &&
+                                !(salaryFields[0].isEmpty()
+                                        || salaryFields[1].isEmpty())) {
+                            return new Tuple2<>(Integer.parseInt(salaryFields[0]), salaryFields[1]);
+                        } else {
+                            throw new Exception("Not valid input passed");
+                        }
+                    }, TypeInformation.of(new TypeHint<Tuple2<Integer, String>>() {
+                    }));
+  ```
+  
+  Now, join the salary data stream and department data stream on a key id of an individual which is common in both the streams. After joining, The resultant data stream will have all the information in one go -: id, name, salary, and department of an individual.
+```
+final DataStream<Tuple4<Integer, String, String, Double>> joinedStream =
+                 salaryStream.join(departmentStream)
+                 .where(getSalaryJoinKey -> getSalaryJoinKey.f0, TypeInformation.of(new TypeHint<Integer>() {}))
+                 .equalTo((KeySelector<Tuple2<Integer, String>, Integer>) getDepartmentKey -> getDepartmentKey.f0)
+                 .window(TumblingProcessingTimeWindows.of(Time.seconds(30)))
+                 .apply((JoinFunction<Tuple3<Integer, String, Double>,
+                         Tuple2<Integer, String>, Tuple4<Integer, String, String, Double>>) (salaryDetail, departmentDetail) ->
+                                    new Tuple4<>(salaryDetail.f0, salaryDetail.f1, departmentDetail.f1, salaryDetail.f2),
+                                    TypeInformation.of(new TypeHint<Tuple4<Integer, String, String, Double>>() {}));
+```  
+Here, using a common window for both the stream. We want a tumbling window and window to be based on processing time that’s why using TumblinProcessingTimeWindows Class. The window size is 30 sec which means all entities from both the streams that come within 10 seconds will be included in one window. Then apply JoinFunction to perform join on both the streams and get the resultant complete joined information of an individual.
+  
+  
 #### Dataset Joins
 
  Following is an inner join for person (pid, personName) and location (pid,locationName) dataset.
