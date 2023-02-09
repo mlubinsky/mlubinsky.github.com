@@ -24,6 +24,7 @@ writeAs
 ##### Map: 
 получает объект T и в результате возвращает объект типа R; MapFunction строго однократно применяется с каждым элементом объекта DataStream.
 
+
 SingleOutputStreamOperator<R> map(MapFunction<T,R> mapper)
 
 #### Reduce: 
@@ -312,6 +313,9 @@ DataStream<Tuple5<String,String, String, Integer, Integer>> mapped
 ```
 
 #### Links
+  
+https://habr.com/ru/company/beeline/blog/648729/
+  
 https://habr.com/ru/company/piter/blog/531434/
 
 https://flink.apache.org/news/2020/07/30/demo-fraud-detection-3.html
