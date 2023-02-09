@@ -117,7 +117,8 @@ https://nightlies.apache.org/flink/flink-docs-release-1.10/dev/event_time.html
 #### State Management
 https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/concepts/stateful-stream-processing/
 
-
+https://habr.com/ru/company/neoflex/blog/573730/
+  
 The streaming application can be stateful or stateless. 
 In many cases, you can process application stream elements independently from each other, but some cases require managing state, referred to as _stateful stream processing_. 
 
@@ -131,10 +132,17 @@ For example, if we monitor the average running temperature of an IoT sensor, we 
 The state can be used with any of the transformations, but we have to use the Rich version of the functions 
 such as _RichFlatMapFunction_ because it provides additional methods used to set up the state.
 
-
-
-
-#### Joins
+#### DataStream join
+ 
+ https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/operators/joining/
+```  
+ stream.join(otherStream)
+    .where(<KeySelector>)
+    .equalTo(<KeySelector>)
+    .window(<WindowAssigner>)
+    .apply(<JoinFunction>); 
+```
+#### Dataset Joins
 
  Following is an inner join for person (pid, personName) and location (pid,locationName) dataset.
 ```
@@ -266,14 +274,18 @@ Flink currently supports 3 main state primitives for keyed state:
 
 ### Window types
 https://flink.apache.org/news/2015/12/04/Introducing-windows.html
+  
+https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/operators/windows/#window-assigners  
 
 https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/operators/windows/
 
 - Tumbling window - time based - no overlapped
 - Sliding window - time based windows are overlappping (offset parameter)
-- Session window - created based on activity, does not have fixed start or end time, ended then there is gap in activity
-- Global window (window per key, do computation with trigger)
-
+- Session window - created based on activity, does not have fixed start or end time, ended then there is gap in activity.  session window closes when it does not receive elements for a certain period of time, i.e., when a gap of inactivity occurred. A session window assigner can be configured with either a static session gap or with a session gap extractor function which defines how long the period of inactivity is. When this period expires, the current session closes and subsequent elements are assigned to a new session window.
+  
+- Global window (window per key, do computation with trigger). This windowing scheme is only useful if you also specify a custom trigger. 
+  
+-  You can also implement a custom window assigner by extending the WindowAssigner class.
 
 
 
@@ -286,6 +298,16 @@ https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/o
 - PurgingTrigger
 
 
+#### Trigger interface 
+  has five methods that allow a Trigger to react to different events:
+
+- The onElement() method is called for each element that is added to a window.
+- The onEventTime() method is called when a registered event-time timer fires.
+- The onProcessingTime() method is called when a registered processing-time timer fires.
+- The onMerge() method is relevant for stateful triggers and merges the states of two triggers when their corresponding windows merge, e.g. when using session windows.
+- Finally the clear() method performs any action needed upon removal of the corresponding window.
+  
+  
 Trigger actions:
 - CONTINUE - do nothing
 - FIRE - trigger the computation (default)
