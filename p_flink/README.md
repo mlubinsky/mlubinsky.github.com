@@ -243,3 +243,9 @@ https://flink.apache.org/news/2015/12/04/Introducing-windows.html
 - ProcessingTimeTrigger
 - CountTrigger
 - PurgingTrigger
+
+
+https://flink.apache.org/news/2020/07/30/demo-fraud-detection-3.html
+
+https://www.ververica.com/blog/flink-sql-queries-and-time
+
