@@ -249,3 +249,5 @@ https://flink.apache.org/news/2020/07/30/demo-fraud-detection-3.html
 
 https://www.ververica.com/blog/flink-sql-queries-and-time
 
+https://www.ververica.com/blog
+
