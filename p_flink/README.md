@@ -14,6 +14,7 @@ addSource() Kafka, Flume, etc
 writeAs
 
 #### DataSet/DataStream Tranformations
+https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/operators/overview/
 
 - filter
 - map
