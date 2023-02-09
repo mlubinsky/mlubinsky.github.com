@@ -216,7 +216,10 @@ if __name__ == '__main__':
     main()
 ```
 
-### Keyed bs nonkeyed
+### Keyed vs non-keyed stream
+
+ Keying a stream shuffles all the records such that elements with the same key are assigned to the same partition. 
+ This means all records with the same key are processed by the same physical instance of the next operator.
 
 Keyed Stream (after keyBy() Operation) - window() 
 
