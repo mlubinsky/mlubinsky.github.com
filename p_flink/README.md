@@ -230,7 +230,10 @@ Window assigner defines how entities are assigned to windows
 
 DataStream<Tuple5<String,String, String, Integer, Integer>> mapped = data.map(new Splitter())
 
-
+Flink currently supports 3 main state primitives for keyed state:
+- ValueState, 
+-  ListState, 
+-  MapState.
 
 ### Window types
 https://flink.apache.org/news/2015/12/04/Introducing-windows.html
@@ -241,6 +244,10 @@ https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/o
 - Sliding window - time based windows are overlappping (offset parameter)
 - Session window - created based on activity, does not have fixed start or end time, ended then there is gap in activity
 - Global window (window per key, do computation with trigger)
+
+
+
+
 
 ### Triggers
 
