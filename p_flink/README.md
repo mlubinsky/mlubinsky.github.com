@@ -278,6 +278,9 @@ Trigger actions:
 5. 3. .evictor() - optional; to remove elements from window after window function is applied
 6. result
 
+
+### Watermarks, allowed lateness, late elements
+
 https://flink.apache.org/news/2020/07/30/demo-fraud-detection-3.html
 
 https://www.ververica.com/blog/flink-sql-queries-and-time
