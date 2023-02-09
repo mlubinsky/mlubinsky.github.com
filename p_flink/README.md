@@ -45,7 +45,9 @@ class MyMapFunction implements MapFunction<String, Integer> {
   public Integer map(String value) { return Integer.parseInt(value); }
 };
 ```
-CoMapFunctions are similar to MapFunction except they are used for the ConnectedStream so we will map the values of both streams using respected map methods, map1, map2. There is no guarantee that which map method will be called first. The following sample has two input streams of Integer and strings and it returns boolean.
+
+####  CoMapFunctions 
+  are similar to MapFunction except they are used for the ConnectedStream so we will map the values of both streams using respected map methods, map1, map2. There is no guarantee that which map method will be called first. The following sample has two input streams of Integer and strings and it returns boolean.
 ```
 connectedStreams.map(new CoMapFunction<Integer, String, Boolean>() {
     @Override
@@ -59,7 +61,9 @@ connectedStreams.map(new CoMapFunction<Integer, String, Boolean>() {
     }
 });
 ```
-Rich functions provide four additional methods open, close, getRuntimeContext and setRuntimeContext other than map methods. We can have both RichMap and RichCoMap.
+
+  #### Rich functions 
+  provide four additional methods open, close, getRuntimeContext and setRuntimeContext other than map methods. We can have both RichMap and RichCoMap.
 
 Open is used to make function stateful by initializing the state. It’s only called once. RuntimeContext is used to access different state types e.g. ValueState, ListState. Similarly, we can clean up on the close method as it is called when processing is done.
 
@@ -102,7 +106,8 @@ public class CountWindowAverage extends RichFlatMapFunction<Tuple2<Long, Long>, 
 So to summarize, we have MapFunction for DataStreams and CoMapFunction for ConnectedStreams. Furthermore, appending Rich to these functions make them rich by adding four additional methods which are commonly used for state management.
 
 #### Times 
- 
+https://nightlies.apache.org/flink/flink-docs-release-1.10/dev/event_time.html
+  
 - Processing time — time of a particular machine that will process the specific element. It could be different than the actual event time when the event is generated, and the order of events could be separate because of the network failures and delays.
 - Event time — It is the time when an event is generated at the source. It’s the actual time of an event (embedded within record).
 - Ingestion time — It is a time when the Flink receives an event for processing. It could be more reliable than the processing time since all the operators will see the same timestamp for the individual event;  helps to handle out of order events
