@@ -235,6 +235,8 @@ DataStream<Tuple5<String,String, String, Integer, Integer>> mapped = data.map(ne
 ### Window types
 https://flink.apache.org/news/2015/12/04/Introducing-windows.html
 
+https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/operators/windows/
+
 - Tumbling window - time based - no overlapped
 - Sliding window - time based windows are overlappping (offset parameter)
 - Session window - created based on activity, does not have fixed start or end time, ended then there is gap in activity
