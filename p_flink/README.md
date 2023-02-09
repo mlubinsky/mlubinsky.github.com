@@ -134,6 +134,9 @@ The state can be used with any of the transformations, but we have to use the Ri
 such as _RichFlatMapFunction_ because it provides additional methods used to set up the state.
 
 #### DataStream join
+  
+https://selectfrom.dev/dynamic-filtering-in-flink-af6939f3da2e  
+  
  
  https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/operators/joining/
 ```  
@@ -305,7 +308,8 @@ DataStream<Tuple5<String,String, String, Integer, Integer>> mapped
 Flink currently supports 3 main state primitives for keyed state:
 - ValueState, 
 -  ListState, 
--  MapState.
+-  MapState
+-BroadCast State https://www.ververica.com/blog/a-practical-guide-to-broadcast-state-in-apache-flink  
 
 ### Window types
 https://flink.apache.org/news/2015/12/04/Introducing-windows.html
