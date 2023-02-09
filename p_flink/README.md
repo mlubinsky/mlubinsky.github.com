@@ -281,6 +281,17 @@ Trigger actions:
 
 ### Watermarks, allowed lateness, late elements
 
+```
+DataStream<Tuple5<String,String, String, Integer, Integer>> mapped
+ .keyBy(0)
+ .window(TumblingProcessingTimeWindows.of(Time.seconds(2)))
+ .allowedLateness(time)
+ .sideOutputLateDate(lateOutputTag)
+ .reduce(new Reduce1());
+```
+
+
+
 https://flink.apache.org/news/2020/07/30/demo-fraud-detection-3.html
 
 https://www.ververica.com/blog/flink-sql-queries-and-time
