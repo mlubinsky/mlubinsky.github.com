@@ -230,6 +230,12 @@ Non-keyed stream - wnidowAll()
 Window assigner defines how entities are assigned to windows
 
 DataStream<Tuple5<String,String, String, Integer, Integer>> mapped = data.map(new Splitter())
+```
+DataStream<Tuple5<String,String, String, Integer, Integer>> mapped
+ .keyBy(0)
+ .window(TumblingProcessingTimeWindows.of(Time.seconds(2)))
+ .reduce(new Reduce1());
+```
 
 Flink currently supports 3 main state primitives for keyed state:
 - ValueState, 
