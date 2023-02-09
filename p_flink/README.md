@@ -216,9 +216,18 @@ if __name__ == '__main__':
     main()
 ```
 
-Keyed Stream (after keyBy Operation) window() Window assigner defines how entities are assigned to windows
+### Keyed bs nonkeyed
 
-Non-keyed stream wnidowAll()
+Keyed Stream (after keyBy() Operation) - window() 
+
+
+Non-keyed stream - wnidowAll()
+
+Window assigner defines how entities are assigned to windows
+
+DataStream<Tuple5<String,String, String, Integer, Integer>> mapped = data.map(new Splitter())
+
+
 
 ### Window types
 
