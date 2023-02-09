@@ -86,6 +86,7 @@ reduce operation can be used to combine streams of values and implement sum, min
 You can think of aggregate operation as a generic version of reduce.
 
 #### Windowing with Kafka Streams
+https://www.confluent.io/blog/windowing-in-kafka-streams/
 ```
 For example, a common requirement for website analytics is to have metrics about the number of unique page views per hour, 
 clicks per minute, etc. 
@@ -93,7 +94,7 @@ Windowing lets you confine the stream processing operations to execute within a 
 ```
 #### Supported time windows: 
 - sliding 
-- tumbling
+- tumbling - special subtype of hopping window where windowSize and advanceSize are the same
 - hopping 
 - session-based time windows
 
