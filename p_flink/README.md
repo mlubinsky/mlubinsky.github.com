@@ -264,6 +264,20 @@ https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/o
 - PurgingTrigger
 
 
+Trigger actions:
+- CONTINUE - do nothing
+- FIRE - trigger the computation (default)
+- PURGE - clear content on Window
+- FIRE_AND_PURGE
+
+
+1. Window created window() / windowAll
+2. .Trigger()
+3. .evictor() - optional; to remove elements from window before window function is applied
+4. window function (redce/fold/aggregare/etc)
+5. 3. .evictor() - optional; to remove elements from window after window function is applied
+6. result
+
 https://flink.apache.org/news/2020/07/30/demo-fraud-detection-3.html
 
 https://www.ververica.com/blog/flink-sql-queries-and-time
