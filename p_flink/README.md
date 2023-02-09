@@ -13,13 +13,29 @@ addSource() Kafka, Flume, etc
 
 writeAs
 
-#### DataSet Tranformations
+#### DataSet/DataStream Tranformations
 
 - filter
 - map
 - flatmap
 - groupby
 - sum
+
+##### Map: 
+получает объект T и в результате возвращает объект типа R; MapFunction строго однократно применяется с каждым элементом объекта DataStream.
+
+SingleOutputStreamOperator<R> map(MapFunction<T,R> mapper)
+
+#### Reduce: 
+получает два последовательных значения и возвращает один объект, скомбинировав их в объект того же типа; этот метод прогоняется по всем значениям в группе, пока из них не останется всего одно.
+
+T reduce(T value1, T value2)
+
+#### Filter: 
+получает объект T и возвращает поток объектов T; этот метод прогоняется по всем элементам DataStream, но возвращает только те, для которых функция возвращает true.
+
+SingleOutputStreamOperator<T> filter(FilterFunction<T> filter)
+
 
 #### Map 
 
@@ -290,7 +306,8 @@ DataStream<Tuple5<String,String, String, Integer, Integer>> mapped
  .reduce(new Reduce1());
 ```
 
-
+#### Links
+https://habr.com/ru/company/piter/blog/531434/
 
 https://flink.apache.org/news/2020/07/30/demo-fraud-detection-3.html
 
