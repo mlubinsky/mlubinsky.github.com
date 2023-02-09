@@ -230,6 +230,7 @@ DataStream<Tuple5<String,String, String, Integer, Integer>> mapped = data.map(ne
 
 
 ### Window types
+https://flink.apache.org/news/2015/12/04/Introducing-windows.html
 
 - Tumbling window - time based - no overlapped
 - Sliding window - time based windows are overlappping (offset parameter)
