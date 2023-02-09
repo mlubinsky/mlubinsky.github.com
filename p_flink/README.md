@@ -332,6 +332,20 @@ DataStream<Tuple5<String,String, String, Integer, Integer>> mapped
  .allowedLateness(time)
  .sideOutputLateDate(lateOutputTag)
  .reduce(new Reduce1());
+  
+  
+final OutputTag<T> lateOutputTag = new OutputTag<T>("late-data"){};
+
+DataStream<T> input = ...;
+
+SingleOutputStreamOperator<T> result = input
+    .keyBy(<key selector>)
+    .window(<window assigner>)
+    .allowedLateness(<time>)
+    .sideOutputLateData(lateOutputTag)
+    .<windowed transformation>(<window function>);
+
+DataStream<T> lateStream = result.getSideOutput(lateOutputTag);  
 ```
 
 #### Links
