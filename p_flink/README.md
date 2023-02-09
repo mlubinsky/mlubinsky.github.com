@@ -95,6 +95,7 @@ So to summarize, we have MapFunction for DataStreams and CoMapFunction for Conne
 #### State Management
 https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/concepts/stateful-stream-processing/
 
+
 The streaming application can be stateful or stateless. 
 In many cases, you can process application stream elements independently from each other, but some cases require managing state, referred to as _stateful stream processing_. 
 
