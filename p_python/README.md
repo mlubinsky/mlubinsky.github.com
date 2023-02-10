@@ -789,3 +789,6 @@ def running_average ( func ) :
 return wrapper    
     
 ```
+
+### Enumeration
+https://florian-dahlitz.de/articles/why-you-should-use-more-enums-in-python
