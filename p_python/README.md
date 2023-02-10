@@ -38,9 +38,10 @@ example of unpacking
  a, *mid, b = [1, 2, 3, 4, 5, 6]
  print(a, mid, b)
  # 1 [2, 3, 4, 5] 6
+ 
 ```
 
-#### Default arg
+#### Default arg - do nt use mutable default args!
 https://docs.python-guide.org/writing/gotchas/#mutable-default-arguments
 Python’s default arguments are evaluated once when the function is defined, 
 not each time the function is called.
@@ -55,6 +56,24 @@ def append_to(element, to=None):
     to.append(element)
     return to
 ```
+
+### Show all methods for the class/function
+
+all methods of list:
+
+name for name in dir(list) if not name.startswith("__")]
+
+['append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+``` 
+all string methods:
+[name for name in dir(str) if not name.startswith("__")]
+['capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> len(_)
+47
+```
+
+
 
 ### reversed()
 ```
