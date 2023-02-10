@@ -41,7 +41,7 @@ example of unpacking
  
 ```
 
-#### Default arg - do nt use mutable default args!
+#### Default arg - do not use mutable default args!
 https://docs.python-guide.org/writing/gotchas/#mutable-default-arguments
 Python’s default arguments are evaluated once when the function is defined, 
 not each time the function is called.
