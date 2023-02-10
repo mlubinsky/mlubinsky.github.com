@@ -1,3 +1,21 @@
+https://habr.com/ru/company/southbridge/blog/716022/. Kafka, BigQuery & Looker Studio
+
+https://towardsdatascience.com/real-time-event-streaming-with-kafka-bigquery-69c3baebb51e
+
+```
+Examples with python
+Мы будем использовать пакет Faker для создания поддельных потоковых данных для нашего приложения. Наша поддельная полезная нагрузка события будет выглядеть примерно так:
+
+{'user_id':001,
+'artist': 'tony-allen',
+'song_id': 03, 
+'song_name':  'lady',
+'event_type':'song_completed',
+'timestamp': '2022-11-03 07:22:13'}
+Чтобы установить пакет Faker, запустите это в окне терминала:
+
+pip install Faker
+```
 
 
 https://fennel.ai/blog/challenges-of-building-realtime-ml-pipelines/
