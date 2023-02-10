@@ -1,7 +1,19 @@
 https://github.blog/2023-02-06-the-technology-behind-githubs-new-code-search/
 
-Mantiscore is an opensource fork of Sphinx Search,
 
+
+Meilisearch 1.0 – Open-source search engine built in Rust
+  
 https://news.ycombinator.com/item?id=34707727
 
+Mantiscore is an opensource fork of Sphinx Search (C++)
+
 https://news.ycombinator.com/item?id=34741018
+
+ZincSearch alternative to elasticsearch that requires minimal resources, written in Go.
+https://github.com/zinclabs/zinc
+
+TypeSence - About
+Open Source alternative to Algolia and an Easier-to-Use alternative to ElasticSearch
+https://github.com/typesense/typesense
+
