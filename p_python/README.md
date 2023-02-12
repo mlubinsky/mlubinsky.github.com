@@ -775,7 +775,21 @@ def printlog ( func ) :
 @printlog
  def foo(x) :
     print (x + 2)
+
+#--------------------------------
+from time import ctime   
+def logged(_func):
+    def _wrapped():
+        print('Function %r called at: %s' % (
+            _func.__name__, ctime()))
+        return _func()
+    return _wrapped
     
+@logged
+def foo():
+    print('foo() called')
+    
+#---------------------------------    
     
 def running_average ( func ) :
   data = {" total " : 0 , " count " : 0}
