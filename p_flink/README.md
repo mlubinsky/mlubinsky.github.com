@@ -1,7 +1,16 @@
+#### Flink cluster
+
+ - Job Manager 
+ - Task Manager
+
+
+ - session-cluster - can process several jobs
+ - job-cluster - can process 1 job
+
 #### Flink data  abstractions:
 
 - DataSet  (like Datafame in Spark)  -  batch processing (Table, Jelly API  for Graph processing, FLINK ML API for Machine Learning)
-- DataStream - stream processing
+- DataStream<T> - stream processing
 
 #### DataSources for DataStream API
 
@@ -128,7 +137,12 @@ For example, if we monitor the average running temperature of an IoT sensor, we 
 #### There are two types of states
 
 — Operator state: The operator state is related to a single operator
-- Keyed state is shared across a keyed stream. Keyed states support different data structures to store the state values — ValueSate, ListSate, MapState, ReducingState.
+- Keyed state is shared across a keyed stream. Keyed states support different data structures to store the state values:
+
+— ValueSate, 
+- ListSate, 
+- MapState, 
+- ReducingState.
 
 The state can be used with any of the transformations, but we have to use the Rich version of the functions 
 such as _RichFlatMapFunction_ because it provides additional methods used to set up the state.
@@ -319,12 +333,31 @@ https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/o
 https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/operators/windows/
 
 - Tumbling window - time based - no overlapped
+```
+// Tumbling window, without key
+public AllWindowedStream<T,TimeWindow> timeWindowAll(Time size)
+// Tumbling window, with key
+public WindowedStream<T,KEY,TimeWindow> timeWindow(Time size)
+```
 - Sliding window - time based windows are overlappping (offset parameter)
+```
+dataStreamObject.timeWindow(Time.minutes(1), Time.seconds(30))
+```
+
 - Session window - created based on activity, does not have fixed start or end time, ended then there is gap in activity.  session window closes when it does not receive elements for a certain period of time, i.e., when a gap of inactivity occurred. A session window assigner can be configured with either a static session gap or with a session gap extractor function which defines how long the period of inactivity is. When this period expires, the current session closes and subsequent elements are assigned to a new session window.
   
+```  
+  // Определение фиксированного сеансового окна длительностью 2 секунды
+dataStreamObject.window(ProcessingTimeSessionWindows.withGap(Time.seconds(2)))
+// Определение динамического сеансового окна, которое может быть задано элементами потока 
+dataStreamObject.window(EventTimeSessionWindows.withDynamicGap((elem) -> {
+        // возвращается промежуток между сеансами, который может зависеть от событий потока 
+    }))
+```  
 - Global window (window per key, do computation with trigger). This windowing scheme is only useful if you also specify a custom trigger. 
   
--  You can also implement a custom window assigner by extending the WindowAssigner class.
+- Count window  - does not depend on time  
+- User-defined window: You can also implement a custom window assigner by extending the WindowAssigner class.
 
 
 
@@ -385,6 +418,161 @@ SingleOutputStreamOperator<T> result = input
     .<windowed transformation>(<window function>);
 
 DataStream<T> lateStream = result.getSideOutput(lateOutputTag);  
+```
+
+### Split the stream
+
+#### ProcessFunction()
+https://github.com/liorksh/FlinkBasicDemo
+````
+В приведенном ниже фрагменте кода вызывается ProcessFunction, разделяющий поток на два боковых, 
+в зависимости от свойства ввода. 
+Для получения того же результата нам пришлось бы неоднократно использовать функцию filter.
+
+Функция ProcessFunction собирает определенные объекты (на основе критерия)
+и отправляет в главный выводной коллектор (заключается в SingleOutputStreamOperator), 
+а остальные события передаются в боковые выводы. 
+Поток DataStream разделяется по вертикали и публикует различные форматы для каждого бокового потока.
+
+Обратите внимание: определение бокового потока вывода основано на уникальном теге вывода (объект OutputTag).
+
+   // Определить отдельный поток для Исполнителей
+            final OutputTag<Tuple2<String,String>> playerTag
+                    = new OutputTag<Tuple2<String,String>>("player"){};
+
+            // Определить отдельный поток для Певцов
+            final OutputTag<Tuple2<String,Integer>> singerTag
+                    = new OutputTag<Tuple2<String,Integer>>("singer"){};
+
+            // Преобразовать каждую запись в объект InputData и разделить главный поток на два боковых.
+            SingleOutputStreamOperator<InputData> inputDataMain
+                    = inputStream
+                    .process(new ProcessFunction<String, InputData>() {
+
+                        @Override
+                        public void processElement(
+                                String inputStr,
+                                Context ctx,
+                                Collector<InputData> collInputData) {
+
+                            Utils.print(Utils.COLOR_CYAN, "Received record : " + inputStr);
+
+                            // Преобразовать строку в объект InputData 
+                            InputData inputData = InputData.getDataObject(inputStr);
+
+                            switch (inputData.getType())
+                            {
+                                case "Singer":
+// Создать выходной кортеж со значениями имени и счета
+                                    ctx.output(singerTag,
+                                            new Tuple2<String,Integer>
+                                                    (inputData.getName(), inputData.getScore()));
+                                    break;
+                                case "Player":
+ // Создать выходной кортеж со значениями имени и типа;
+// Если новоиспеченный кортеж не совпадает с типом playerTag, то выбрасывается ошибка компиляции ("вывод метода не может быть применен к указанным типам")
+                                    ctx.output(playerTag,
+                                            new Tuple2<String, String>
+                                                    (inputData.getName(), inputData.getType()));
+                                    break;
+                                default:
+                      // Собрать вывод основного потока как объекты InputData 
+                                    collInputData.collect(inputData);
+                                    break;
+                            }
+                        }
+                    });
+
+
+```
+
+getSideOutput()
+
+### Merge the streams
+- connect()
+https://github.com/liorksh/FlinkBasicDemo
+```
+// В описании возвращенного потока учтены типы данных обоих потоков 
+        ConnectedStreams<Tuple2<String, Integer>, Tuple2<String, String>> mergedStream
+                = singerStream
+                .connect(playerStream);
+
+
+        DataStream<Tuple4<String, String, String, Integer>> combinedStream
+                = mergedStream.map(new CoMapFunction<
+                        Tuple2<String, Integer>, // Поток 1
+                        Tuple2<String, String>, // Поток 2
+                        Tuple4<String, String, String, Integer> //Вывод
+                        >() {
+
+                            @Override
+                            public Tuple4<String, String, String, Integer>  //Обработка потока 1
+                            map1(Tuple2<String, Integer> singer) throws Exception {
+                                return new Tuple4<String, String, String, Integer>
+                                        ("Source: singer stream", singer.f0, "", singer.f1);
+                            }
+
+                            @Override
+                            public Tuple4<String, String, String, Integer> 
+// Обработка потока 2
+                            map2(Tuple2<String, String> player) throws Exception {
+                                return new Tuple4<String, String, String, Integer>
+                                        ("Source: player stream", player.f0, player.f1, 0);
+                            }
+                 });
+```
+
+- map()
+
+
+#### Build DataStream:
+```
+// Определение фиксированного сеансового окна длительностью 2 секунды
+dataStreamObject.window(ProcessingTimeSessionWindows.withGap(Time.seconds(2)))
+// Определение динамического сеансового окна, которое может быть задано элементами потока 
+dataStreamObject.window(EventTimeSessionWindows.withDynamicGap((elem) -> {
+        // возвращается промежуток между сеансами, который может зависеть от событий потока 
+    }))
+    
+ // Каждая запись преобразуется в кортеж с именем и счетом 
+        DataStream<Tuple2<String, Integer>> userCounts
+                = inputDataObjectStream
+                .map(new MapFunction<InputData,Tuple2<String,Integer>>() {
+
+                    @Override
+                    public Tuple2<String,Integer> map(InputData item) {
+                        return new Tuple2<String,Integer>(item.getName() ,item.getScore() );
+                    }
+                })
+                .returns(Types.TUPLE(Types.STRING, Types.INT))
+                .keyBy(0)  // возвращает KeyedStream<T, Tuple> на основе первого элемента (поля 'name')
+                //.timeWindowAll(Time.seconds(windowInterval)) // НЕ ИСПОЛЬЗОВАТЬ timeWindowAll с потоком на основе ключей
+                .timeWindow(Time.seconds(2)) // вернуть WindowedStream<T, KEY, TimeWindow>
+                .reduce((x,y) -> new Tuple2<String,Integer>( x.f0+"-"+y.f0, x.f1+y.f1));    
+   
+   
+ // Определить временное окно и подсчитать количество записей
+           DataStream<Tuple2<String,Integer>> inputCountSummary
+                    = inputDataObjectStream
+                    .map( item
+                            -> new Tuple2<String,Integer>
+                            (String.valueOf(System.currentTimeMillis()),1)) 
+// для каждого элемента вернуть кортеж из временной метки и целого числа (1)
+                    .returns(Types.TUPLE(Types.STRING ,Types.INT))
+                    .timeWindowAll(Time.seconds(windowInterval)) // кувыркающееся окно
+                    .reduce((x,y) -> // суммируем числа, и так до достижения единого результата
+                            (new Tuple2<String, Integer>(x.f0, x.f1 + y.f1)));
+
+            // Задаем в качестве стока для потокового файла каталог вывода 
+            final StreamingFileSink<Tuple2<String,Integer>> countSink
+                    = StreamingFileSink
+                        .forRowFormat(new Path(outputDir),
+                                new SimpleStringEncoder<Tuple2<String,Integer>>
+                                        ("UTF-8"))
+                        .build();
+
+            // Добавляем поток стока к DataStream; при таком условии inputCountSummary будет вписан в путь countSink 
+            inputCountSummary.addSink(countSink);   
 ```
 
 #### Links
