@@ -139,11 +139,19 @@ For example, if we monitor the average running temperature of an IoT sensor, we 
 — Operator state: The operator state is related to a single operator
 - Keyed state is shared across a keyed stream. Keyed states support different data structures to store the state values:
 
-— ValueSate, 
-- ListSate, 
-- MapState, 
-- ReducingState.
+ https://habr.com/ru/company/beeline/blog/648729/
+ 
+ ```
+    1. ValueState<T> стейт хранит само событие
 
+    2. ListState<T> это список событий (тип также совпадает с типом события)
+
+    3. ReducingState<T> хранит одно событие, отражающее все события по этому ключу, при добавлении события вызывается функция свертки ReduceFunction.
+
+    4. AggregatingState<IN, OUT> также хранит одно событие, отражающее все события по этому ключу, но в отличие от ReducingState тип хранимого значения может отличаться от типа события в потоке, при добавлении вызывается функция агрегации AggregateFunction.
+
+    5. MapState<UK, UV> хранит события в структуре ключ-значение, типы не зависят от типа событий в потоке.
+```
 The state can be used with any of the transformations, but we have to use the Rich version of the functions 
 such as _RichFlatMapFunction_ because it provides additional methods used to set up the state.
 
