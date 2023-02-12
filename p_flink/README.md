@@ -10,7 +10,7 @@
 #### Flink data  abstractions:
 
 - DataSet  (like Datafame in Spark)  -  batch processing (Table, Jelly API  for Graph processing, FLINK ML API for Machine Learning)
-- DataStream<T> - stream processing
+- DataStream<T> - stream processing https://nightlies.apache.org/flink/flink-docs-release-1.2/api/java/org/apache/flink/streaming/api/datastream/DataStream.html
 
 #### DataSources for DataStream API
 
