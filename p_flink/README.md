@@ -74,9 +74,17 @@ connectedStreams.map(new CoMapFunction<Integer, String, Boolean>() {
 ```
 
   #### Rich functions 
-  provide four additional methods open, close, getRuntimeContext and setRuntimeContext other than map methods. We can have both RichMap and RichCoMap.
+  provide four additional methods:
+ - open, 
+ - close, 
+ - getRuntimeContext and 
+ - setRuntimeContext()
+ 
+ other than map methods. We can have both RichMap and RichCoMap.
 
-Open is used to make function stateful by initializing the state. It’s only called once. RuntimeContext is used to access different state types e.g. ValueState, ListState. Similarly, we can clean up on the close method as it is called when processing is done.
+Open is used to make function stateful by initializing the state. It’s only called once. 
+RuntimeContext is used to access different state types e.g. ValueState, ListState. 
+Similarly, we can clean up on the close method as it is called when processing is done.
 
 Following is the example using RichFlatMapFunction to count average of all values over a count window of 5. It does use value state to store the running sum and count of the values. We will initialize the state using open method of the rich function. We have used gerRuntimeContext to get the state descriptor.
 ```
