@@ -38,6 +38,8 @@ Kafka Producer API (low level) vs Kafla Connect
 
 https://docs.confluent.io/platform/current/streams/concepts.html#kstream
 
+https://www.confluent.io/blog/co-partitioning-in-kafka-streams/
+
 https://www.vultr.com/docs/how-to-use-kafka-streams-for-stateful-and-stateless-data-processing/
 ```
 Kafka Streams has two types of APIs:
