@@ -442,6 +442,12 @@ SingleOutputStreamOperator<T> result = input
     .allowedLateness(<time>)
     .sideOutputLateData(lateOutputTag)
     .<windowed transformation>(<window function>);
+ 
+ here window function could be
+ - ProcessFunction, 
+ - CoProcessFunction
+ - ProcessWindowFunction
+ - ProcessAllWindowFunction
 
 DataStream<T> lateStream = result.getSideOutput(lateOutputTag);  
 ```
