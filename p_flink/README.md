@@ -331,7 +331,7 @@ Flink currently supports 3 main state primitives for keyed state:
 - ValueState, 
 -  ListState, 
 -  MapState
--BroadCast State https://www.ververica.com/blog/a-practical-guide-to-broadcast-state-in-apache-flink  
+-  BroadCast State https://www.ververica.com/blog/a-practical-guide-to-broadcast-state-in-apache-flink  
 
 ### Window types
 https://flink.apache.org/news/2015/12/04/Introducing-windows.html
