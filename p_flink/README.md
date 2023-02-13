@@ -491,7 +491,8 @@ DataStream<T> lateStream = result.getSideOutput(lateOutputTag);
 
 #### ProcessFunction()
 https://github.com/liorksh/FlinkBasicDemo
-````
+ 
+```
 В приведенном ниже фрагменте кода вызывается ProcessFunction, разделяющий поток на два боковых, 
 в зависимости от свойства ввода. 
 Для получения того же результата нам пришлось бы неоднократно использовать функцию filter.
