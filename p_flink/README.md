@@ -395,14 +395,32 @@ Trigger actions:
 - FIRE_AND_PURGE
 
 
+Default Trigger available for every Window type .... 
+ 
+Window lifecycle 
+ 
 1. Window created window() / windowAll
 2. .Trigger()
 3. .evictor() - optional; to remove elements from window before window function is applied
 4. window function (redce/fold/aggregare/etc)
-5. 3. .evictor() - optional; to remove elements from window after window function is applied
+5. evictor() - optional; to remove elements from window after window function is applied
 6. result
 
+ ### Default evictors
 
+ 
+ CountEvictor - keeps the user-specified number of elelemts from the window and discard the remaining 
+ ```
+ .evictor(CountEvictor.of(4))
+ ``
+DeltaEvictor: takes DeltaFunction and threshold  args, computes delta betweeen last element and remaining elements and then removes those elements whose delta > threshold
+ ```
+ .evictor(DeltaEvictor.of(threshold.new MyDelta())
+ ```
+ TimeEviictor 
+ 
+ You cat create your own Evictor based on Evictoe interfacre
+ 
 ### Watermarks, allowed lateness, late elements
 
 ```
