@@ -131,6 +131,7 @@ https://nightlies.apache.org/flink/flink-docs-release-1.10/dev/event_time.html
 - Event time — It is the time when an event is generated at the source. It’s the actual time of an event (embedded within record).
 - Ingestion time — It is a time when the Flink receives an event for processing. It could be more reliable than the processing time since all the operators will see the same timestamp for the individual event;  helps to handle out of order events
 
+keyBy() converts the DataStream into the KeyedDataStream 
 
 #### State Management
 https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/concepts/stateful-stream-processing/
@@ -147,10 +148,12 @@ For example, if we monitor the average running temperature of an IoT sensor, we 
 
 #### There are two types of states
 
-— Operator state: The operator state is related to a single operator
-- Keyed state is shared across a keyed stream. Keyed states support different data structures to store the state values:
+— Operator state: The operator state is related to a single operator - 2 sub types (Broadcast and List State)
+- Keyed state is shared across a keyed stream. Keyed states support different data structures to store the state values: 6 state sub-types:
 
  https://habr.com/ru/company/beeline/blog/648729/
+ 
+ #### Keyed State 
  
  ```
     1. ValueState<T> стейт хранит само событие
@@ -162,9 +165,28 @@ For example, if we monitor the average running temperature of an IoT sensor, we 
     4. AggregatingState<IN, OUT> также хранит одно событие, отражающее все события по этому ключу, но в отличие от ReducingState тип хранимого значения может отличаться от типа события в потоке, при добавлении вызывается функция агрегации AggregateFunction.
 
     5. MapState<UK, UV> хранит события в структуре ключ-значение, типы не зависят от типа событий в потоке.
+    
+    6. Broadcast State
 ```
+#### RichFunction
+Keyed State can only be used in RichFunction. The biggest difference between RichFunction and common and traditional Function is that it has its own lifecycle. The use of Key State contains the following four steps:
+
+```
+ 1. Declare the State as the instance variable in the RichFunction.
+ 2. Perform an initialization assignment operation for the State in the open () method corresponding to the RichFunction.
+      2.a The first step of the assignment operation is to create a StateDescriptor and specify a name for the State during the creation. 
+      2.b The second step is to call the getRuntimeContext().getState(…) in RichFunction to pass in the defined StateDescriptor so as to obtain the State.
+3. Call State method (e.g. state.value() or state.update() to read and write
+```
+
 The state can be used with any of the transformations, but we have to use the Rich version of the functions 
 such as _RichFlatMapFunction_ because it provides additional methods used to set up the state.
+
+
+### Broadcast state:
+
+ https://www.ververica.com/blog/a-practical-guide-to-broadcast-state-in-apache-flink  
+ https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/fault-tolerance/broadcast_state/
 
 #### DataStream join
   
@@ -339,13 +361,7 @@ DataStream<Tuple5<String,String, String, Integer, Integer>> mapped
  .reduce(new Reduce1());
 ```
 
-Flink currently supports followingstate primitives for keyed state:
-- ValueState, 
--  ListState, 
--  MapState
--  BroadCast State 
- https://www.ververica.com/blog/a-practical-guide-to-broadcast-state-in-apache-flink  
- https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/fault-tolerance/broadcast_state/
+
 
 ### Window types
 https://flink.apache.org/news/2015/12/04/Introducing-windows.html
