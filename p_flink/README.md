@@ -412,7 +412,7 @@ Window lifecycle
  CountEvictor - keeps the user-specified number of elelemts from the window and discard the remaining 
  ```
  .evictor(CountEvictor.of(4))
- ``
+ ```
 DeltaEvictor: takes DeltaFunction and threshold  args, computes delta betweeen last element and remaining elements and then removes those elements whose delta > threshold
  ```
  .evictor(DeltaEvictor.of(threshold.new MyDelta())
@@ -422,10 +422,15 @@ DeltaEvictor: takes DeltaFunction and threshold  args, computes delta betweeen l
  You cat create your own Evictor based on Evictoe interfacre
  
 ### Watermarks, allowed lateness, late elements
+ 
+ 
+ 
+ 
 
 ```
 DataStream<Tuple5<String,String, String, Integer, Integer>> mapped
  .keyBy(0)
+ .asssignTimestampsAndWatermarks(new DemoWatermark<MyEvent)
  .window(TumblingProcessingTimeWindows.of(Time.seconds(2)))
  .allowedLateness(time)
  .sideOutputLateDate(lateOutputTag)
