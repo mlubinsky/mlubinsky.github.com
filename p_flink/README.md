@@ -129,7 +129,10 @@ https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/concepts/statefu
 
 https://habr.com/ru/company/neoflex/blog/573730/
   
-The streaming application can be stateful or stateless. 
+The streaming application/transformation can be 
+ - stateful- depends on current element and previous elements  : reduce, sum, aggregate
+ - stateless - depends on current element only: map, flatmap, filter
+ 
 In many cases, you can process application stream elements independently from each other, but some cases require managing state, referred to as _stateful stream processing_. 
 
 For example, if we monitor the average running temperature of an IoT sensor, we need to store some values in the state. Also, the state is required to support Flink’s fault-tolerance behavior.
