@@ -338,11 +338,13 @@ DataStream<Tuple5<String,String, String, Integer, Integer>> mapped
  .reduce(new Reduce1());
 ```
 
-Flink currently supports 3 main state primitives for keyed state:
+Flink currently supports followingstate primitives for keyed state:
 - ValueState, 
 -  ListState, 
 -  MapState
--  BroadCast State https://www.ververica.com/blog/a-practical-guide-to-broadcast-state-in-apache-flink  
+-  BroadCast State 
+ https://www.ververica.com/blog/a-practical-guide-to-broadcast-state-in-apache-flink  
+ https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/fault-tolerance/broadcast_state/
 
 ### Window types
 https://flink.apache.org/news/2015/12/04/Introducing-windows.html
