@@ -170,7 +170,8 @@ such as _RichFlatMapFunction_ because it provides additional methods used to set
   
 https://selectfrom.dev/dynamic-filtering-in-flink-af6939f3da2e  
   
- 
+https://blog.knoldus.com/flink-join-two-data-streams/
+
  https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/operators/joining/
 ```  
  stream.join(otherStream)
