@@ -7,6 +7,11 @@
  - session-cluster - can process several jobs
  - job-cluster - can process 1 job
 
+
+### CEP complex event processing
+
+https://dev.to/aws-builders/serverless-complex-event-processing-with-apache-flink-3dbm
+
 #### Flink data  abstractions:
 
 - DataSet  (like Datafame in Spark)  -  batch processing (Table, Jelly API  for Graph processing, FLINK ML API for Machine Learning)
