@@ -8,7 +8,9 @@
  - job-cluster - can process 1 job
 
 
-### CEP  - Complex Event Processing
+### FlinkCEP  - Complex Event Processing
+
+https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/libs/cep/
 
 https://habr.com/ru/post/471946/
 
