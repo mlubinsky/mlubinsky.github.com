@@ -15,7 +15,14 @@ If messages have no key, they will be evenly distributed among partitions in a r
 Messages that have the same key will always be sent to the same partition. The key is run through a hashing function which turns it into an integer (partition number).
 
 
-Kafka Producer API (low level) vs Kafla Connect
+При создании топика обязательно указывайте конкретные цифры для retention.bytes и retention.ms.
+Это спасет вас от неприятной ситуации, когда топик внезапно «отъел» все дисковое пространство на брокерах.
+Обычно Kafka после такого «ложится», и, чтобы завести кластер снова, одной команды `systemctl start kafka.service` не хватит.
+
+Используйте троттлинг при балансировке партиции топика. Если вы балансируете партиции топика по брокерам без троттлинга, это может привести к сильной деградации производительности всего кластера.
+
+
+### Kafka Producer API (low level) vs Kafla Connect
 
 ### Kafka Producer/Consumer API:
  - for almost any language
