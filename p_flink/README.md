@@ -8,7 +8,9 @@
  - job-cluster - can process 1 job
 
 
-### CEP complex event processing
+### CEP  - Complex Event Processing
+
+https://habr.com/ru/post/471946/
 
 https://dev.to/aws-builders/serverless-complex-event-processing-with-apache-flink-3dbm
 
