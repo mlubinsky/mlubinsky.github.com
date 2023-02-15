@@ -15,6 +15,19 @@ If messages have no key, they will be evenly distributed among partitions in a r
 Messages that have the same key will always be sent to the same partition. The key is run through a hashing function which turns it into an integer (partition number).
 
 
+### Topic
+https://kafka.apache.org/documentation/#topicconfigs
+
+На уровне топика можно задать такие конфигурационные параметры, как:
+
+```
+- объем хранимых данных и/или их возраст (retention.bytes, retention.ms);
+- фактор избыточности данных (replication factor);
+- максимальный размер одного сообщения (max.message.bytes);
+- минимальное число согласованных реплик, при котором в топик можно будет записать данные (min.insync.replicas);
+- возможность провести failover на не синхронную отстающую реплику с потенциальной потерей данных (unclean.leader.election.enable);
+- и еще много других (https://kafka.apache.org/documentation/#topicconfigs)
+```
 При создании топика обязательно указывайте конкретные цифры для retention.bytes и retention.ms.
 Это спасет вас от неприятной ситуации, когда топик внезапно «отъел» все дисковое пространство на брокерах.
 Обычно Kafka после такого «ложится», и, чтобы завести кластер снова, одной команды `systemctl start kafka.service` не хватит.
