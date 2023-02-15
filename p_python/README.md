@@ -1,6 +1,10 @@
 ### Python notes
 https://docs.python-guide.org/ 
 
+https://docs.python.org/3/library/functions.html
+
+https://docs.python.org/3/library/index.html
+
 https://www.youtube.com/watch?v=wiGkV37Kbxk Raymond Hettinger: Numerical Marvels Inside Python
 
 #### *argv and **kwargs
