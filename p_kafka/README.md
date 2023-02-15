@@ -24,6 +24,8 @@ Messages that have the same key will always be sent to the same partition. The k
 
 ### Kafka Producer API (low level) vs Kafla Connect
 
+более миллиона сообщений в секунду на чтение и на запись при объеме сообщений 1 килобайт
+
 ### Kafka Producer/Consumer API:
  - for almost any language
  - good if you own producer code
