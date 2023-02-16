@@ -1,5 +1,7 @@
 https://www.youtube.com/channel/UCZgt6AzoyjslHTC9dz0UoTw System design
 
+https://designgurus.org/blog System Design
+
 https://itnext.io/redis-stack-the-backbone-for-efficient-microservices-b632d1bc8055
 
 ### The Redis stack 
