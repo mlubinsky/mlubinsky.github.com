@@ -1,7 +1,20 @@
 
 https://itnext.io/redis-stack-the-backbone-for-efficient-microservices-b632d1bc8055
 
-Why is Redis so 𝐟𝐚𝐬𝐭?
+### The Redis stack 
+
+- Redis JSON, 
+- Redis Search: uses Inverted index and Trie
+- Redis Timeseries, 
+- Redis Graph
+- Redis Bloom
+
+### RedisGraph
+
+Under the hood, RedisGraph uses GraphBlas to implement the sparse adjacency. It uses an adaptation of the Property Graph Model where Nodes (vertices) and Relationships (edges) have attributes. Nodes can have multiple labels and Relationships have a relationship type. It uses an extension of the OpenCypher to query the database.
+
+
+### Why is Redis so 𝐟𝐚𝐬𝐭?
 .
 .
 The diagram below shows 3 main reasons:
