@@ -1,3 +1,8 @@
+https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013
+
+https://www.ou.nl/documents/40554/791670/IM0203_03.pdf/30dae517-691e-b3c7-22ed-a55ad27726d6
+
+
 - Functional Requirements (Features)
 - Non-Functional Requirements (Scale, Latency, Availability, Security, Reliability)
 - Traffic & Capacity Estimates
