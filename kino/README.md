@@ -1,6 +1,9 @@
 поэтом можешь ты не быть, а композитором не можешь.
 
+Elizarov 
 https://www.elizarov.info/
+
+https://joe-alex.livejournal.com/610005.html
 
 
 ## Detectives
