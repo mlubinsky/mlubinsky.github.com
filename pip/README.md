@@ -1,3 +1,7 @@
+https://pypa.github.io/pipx/
+
+https://pip-tools.readthedocs.io/en/latest/
+
 https://pdm.fming.dev/ PDM
 
 https://mathspp.com/blog/how-to-create-a-python-package-in-2022
@@ -67,6 +71,8 @@ https://www.codementor.io/@adammertz/quick-tip-how-i-use-pip-tools-to-wrangle-de
 
 ### pyenv pipenv
 
+https://www.jackhoy.com/web-applications/2017/02/12/setting-up-a-python-dev-environment.html
+
 <https://github.com/pyenv/pyenv>
 
 https://chriswarrick.com/blog/2018/07/17/pipenv-promises-a-lot-delivers-very-little/
@@ -81,7 +87,7 @@ pyenv, poetry, black, flake8, isort, pre-commit, pytest, coverage, tox, Azure Pi
 <https://medium.com/georgian-impact-blog/python-tooling-makes-a-project-tick-181d567eea44>
 
 
-### Virtual env
+### Virtualenv
 
 ```
 /Users/mlubinsky/my_virt_envs
@@ -104,17 +110,26 @@ cd python-virtual-environments
 
 # Python 2:
 $ virtualenv env
- 
-# Python 3
-$ python3 -m venv env
+```
+
+### venv + pip (Python 3)
+```
+
+$ python3 -m venv venv_name
 echo $PATH
-source env/bin/activate
+source path_to_venv_name/bin/activate (or . venv_name/bin/activate)
 echo $PATH
 
 pip install ...
 ...
 deactivate
 ```
+
+
+You can call it directly by referencing the venv python exe eg 
+
+venv_folder/bin/python /path/to/your/script.py
+
 
 ### Anaconda setup
 
