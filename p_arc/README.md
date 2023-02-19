@@ -3,6 +3,24 @@ https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nu
 https://www.ou.nl/documents/40554/791670/IM0203_03.pdf/30dae517-691e-b3c7-22ed-a55ad27726d6
 
 
+https://en.wikipedia.org/wiki/Dead_letter_queue
+
+https://saurabhthakur.dev/polling-made-simpler
+
+```
+In message queueing the dead letter queue is a service implementation to store messages that meet one or more of the following criteria:
+
+Message that is sent to a queue that does not exist.[1][2]
+Queue length limit exceeded.
+Message length limit exceeded.
+Message is rejected by another queue exchange.[3]
+Message reaches a threshold read counter number, because it is not consumed. Sometimes this is called a "back out queue".
+The message expires due to per-message TTL (time to live)[4]
+Message is not processed successfully.
+Dead letter queue storing of these messages allows developers to look for common patterns and potential software problems.[5]
+```
+
+
 - Functional Requirements (Features)
 - Non-Functional Requirements (Scale, Latency, Availability, Security, Reliability)
 - Traffic & Capacity Estimates
