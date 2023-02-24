@@ -6,6 +6,8 @@ https://www.elizarov.info/
 
 https://humus.livejournal.com/8854168.html
 
+https://www.youtube.com/watch?v=f4Lq3EZv7xI  Audiobooks Земля. Часть 1.
+
 ### Serials
 
 https://joe-alex.livejournal.com/610005.html
