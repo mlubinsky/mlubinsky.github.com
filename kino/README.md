@@ -1,7 +1,10 @@
 поэтом можешь ты не быть, а композитором не можешь.
 
-Elizarov 
+### Elizarov 
+
 https://www.elizarov.info/
+
+https://humus.livejournal.com/8854168.html
 
 https://joe-alex.livejournal.com/610005.html
 
