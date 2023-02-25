@@ -10,6 +10,8 @@ https://habr.com/ru/company/cloud_mts/blog/716548/
 
 ### The Redis stack 
 
+https://blog.logrocket.com/guide-to-fully-understanding-redis/
+
 - Redis JSON, 
 - Redis Search: uses Inverted index and Trie
 - Redis Timeseries, 
