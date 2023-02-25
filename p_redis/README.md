@@ -4,6 +4,10 @@ https://designgurus.org/blog System Design
 
 https://itnext.io/redis-stack-the-backbone-for-efficient-microservices-b632d1bc8055
 
+### Redis vs Postgres
+
+https://habr.com/ru/company/cloud_mts/blog/716548/
+
 ### The Redis stack 
 
 - Redis JSON, 
