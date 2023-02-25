@@ -1,3 +1,5 @@
+Best book: https://www.amazon.com/Learning-Go-Idiomatic-Real-World-Programming-ebook/dp/B08XYGCM71
+
 https://reliability.substack.com/p/go-for-internal-services
 
 https://bitfieldconsulting.com/books/love-bundle . Book 
