@@ -1,4 +1,4 @@
-#### 
+####  Youtube
 
 https://www.youtube.com/watch?v=laNOk_6lPB8. Find the Right Data Streaming Architecture for Your Data Needs - AWS Online Tech Talks
 
@@ -7,6 +7,9 @@ https://www.youtube.com/watch?v=BXOD6pncb7s  Data Pipelines: Introduction to Str
 https://www.youtube.com/watch?v=4OHUTJDlnag  Flink + Pulsar: The Path To Unified Batch and Streaming
 
 https://www.youtube.com/watch?v=QxZDdumDEO0  Как лечить гипертонию с помощью упражнений? Профилактика повышенного артериального давления
+
+
+https://www.youtube.com/results?search_query=Apache+Flink+ru
 
 
 #### Spark Structured Streaming
