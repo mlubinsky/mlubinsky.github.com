@@ -1,3 +1,7 @@
+#### 
+
+https://www.youtube.com/watch?v=laNOk_6lPB8. Find the Right Data Streaming Architecture for Your Data Needs - AWS Online Tech Talks
+
 
 #### Spark Structured Streaming
 
