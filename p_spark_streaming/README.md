@@ -6,6 +6,8 @@ https://www.youtube.com/watch?v=BXOD6pncb7s  Data Pipelines: Introduction to Str
 
 https://www.youtube.com/watch?v=4OHUTJDlnag  Flink + Pulsar: The Path To Unified Batch and Streaming
 
+https://www.youtube.com/watch?v=QxZDdumDEO0  Как лечить гипертонию с помощью упражнений? Профилактика повышенного артериального давления
+
 
 #### Spark Structured Streaming
 
