@@ -4,6 +4,8 @@ https://www.youtube.com/watch?v=laNOk_6lPB8. Find the Right Data Streaming Archi
 
 https://www.youtube.com/watch?v=BXOD6pncb7s  Data Pipelines: Introduction to Streaming Data Pipelines
 
+https://www.youtube.com/watch?v=4OHUTJDlnag  Flink + Pulsar: The Path To Unified Batch and Streaming
+
 
 #### Spark Structured Streaming
 
