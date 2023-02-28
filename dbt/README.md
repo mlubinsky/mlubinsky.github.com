@@ -13,9 +13,11 @@ Has the schema changed?
 ```
 f="dbfs:/FileStore/uploads/mlubinsky/23_apps_review_count.csv"
 _sqldf.write.option("header",True).csv(f)
--- issue :  command above will create folder, ponettiall > 1 file
+```
+Issue with code above :  it will create folder, ponentially with > 1 file
 
--- solution - convert to pandas
+Solution - convert to pandas:
+```
 output_fname = "/dbfs/FileStore/uploads/mlubinsky/23_apps_review_count.csv"
 pd = df_23.toPandas()
 pd.to_csv(output_fname) # this will create index
