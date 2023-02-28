@@ -29,11 +29,13 @@ ls /dbfs/FileStore/uploads/mlubinsky/23_apps_review_count.csv
 
 df_23 = spark.read.option("header", "true").format("csv").load(f)
 display(df_23)
-
+```
+#### How to download file from DBFS to local machine
 
 https://app-annie-p-mkt-derivatives.cloud.databricks.com/files/uploads/anna/paid_search.csv?o=651224624067749
+
 just change the part after o=
-```
+
 
 ### Generate sequence
 ```
