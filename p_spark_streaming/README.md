@@ -2,6 +2,8 @@
 
 https://www.youtube.com/watch?v=laNOk_6lPB8. Find the Right Data Streaming Architecture for Your Data Needs - AWS Online Tech Talks
 
+https://www.youtube.com/watch?v=BXOD6pncb7s  Data Pipelines: Introduction to Streaming Data Pipelines
+
 
 #### Spark Structured Streaming
 
