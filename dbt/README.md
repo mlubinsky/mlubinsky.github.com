@@ -34,6 +34,11 @@ display(df_23)
 
 https://app-annie-p-mkt-derivatives.cloud.databricks.com/files/uploads/anna/paid_search.csv?o=651224624067749
 
+https://app-annie-p-dom-aio.cloud.databricks.com/files/tables/IAP/Icon_mappings/IAP_Icon_map_v10.csv?o=3836794479208844
+
+https://app-annie-p-dom-aio.cloud.databricks.com/tables/IAP/Icon_mappings/IAP_Icon_map_v10.csv?o=3836794479208844
+
+
 just change the part after o=
 
 
