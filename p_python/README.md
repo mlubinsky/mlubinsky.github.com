@@ -1,4 +1,24 @@
 ### Python notes
+#### Immutable types
+
+  Integers, floats, complex numbers, and Booleans, are always immutable. 
+  
+  Strings, bytes and tuples are immutable 
+  
+  lists, dictionaries, and sets are mutable 
+```  
+   isinstance([1, 2, 3], list)
+
+   issubclass(bool, int) #  True
+   
+   isinstance(True, int) # True
+
+   isinstance(False, int)  True
+
+    int(True) # 1
+
+   int(False) # 0 
+```
 https://docs.python-guide.org/ 
 
 https://docs.python.org/3/library/functions.html
