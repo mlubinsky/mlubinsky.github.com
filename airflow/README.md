@@ -10,14 +10,38 @@ dag = DAG(
     catchup=False,
 )
 ```
+### BranchPythonOperator
+```
+    def _choose_platform(**kwargs):
+        platform = kwargs.get("templates_dict").get("platform")
+        print("INSIDE _choose_platform(): platform=", platform)
+        if platform == "all":
+            return ["etl_reviews_ios", "etl_reviews_android"]
+        elif platform == "ios":
+            return [
+                "etl_reviews_ios",
+            ]
+        elif platform == "android":
+            return [
+                "etl_reviews_android",
+            ]
+        else:
+            return None
+
+    choose_platform = BranchPythonOperator(
+        task_id="choose_platform",
+        python_callable=_choose_platform,
+        templates_dict={"platform": "{{ dag_run.conf.get('platform', 'all') }}"},
+    )
+
+start >> choose_platform >> [etl_reviews_ios, etl_reviews_android]
+```
+
 
 How to start DAG from command line:
-
-
-
-
+```
 airflow.sh schedule -d airflow_stats_dag &
-
+```
 
 How to disable DAG:
 
