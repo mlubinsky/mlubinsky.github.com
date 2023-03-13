@@ -51,7 +51,7 @@ nohup spark-sql
 -f /home/hadoop/vambati/test.hql > test.log &
 ```
 
-### COMPUTE STATISTICS and SQL HINT
+### COMPUTE STATISTICS and SQL HINTs
 
  Spark существуют различные алгоритмы реализации join-ов: SortMergeJoin, BroadcastHashJoin, CartesianProduct 
  https://habr.com/ru/company/sberbank/blog/496310/
@@ -64,9 +64,9 @@ ANALYZE TABLE scheme_name.table_name COMPUTE STATISTICS;
 https://medium.com/credera-engineering/how-to-write-unit-tests-for-spark-f8ea22cf6448 Unit test
 
 Проверить, что статистика собрана, можно в среде hive командой вида:
-
+```
 show create table scheme_name.table_name;
-
+```
 Нужно посмотреть, появились ли в конце описания в блоке TBLPROPERTIES свойства 'spark.sql.statistics.numRows' и 'spark.sql.statistics.totalSize':
 ```
 CREATE EXTERNAL TABLE `scheme_name.table_name`(
@@ -84,6 +84,13 @@ select /*+ BROADCAST(t) */ big.field1,
   from source_scheme.big_table as big
   left join source_scheme.small_table as t
     on big.field1 = t.field1;
+```
+
+ Spark SQL есть и другие хинты, в т.ч. с версии 2.4 появляются хинты
+ 
+ ```
+ /*+ COALESCE(n) */, где n – количество партиций, на которые будет разбит результат, 
+ /* + REPARTITION (n) */, где n – количество партиций при repartition.
 ```
 
 ### PySpark
