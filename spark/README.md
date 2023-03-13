@@ -51,7 +51,7 @@ nohup spark-sql
 -f /home/hadoop/vambati/test.hql > test.log &
 ```
 
-### COMPUTE STATISTICS
+### COMPUTE STATISTICS and SQL HINT
 
  Spark существуют различные алгоритмы реализации join-ов: SortMergeJoin, BroadcastHashJoin, CartesianProduct 
  https://habr.com/ru/company/sberbank/blog/496310/
@@ -75,6 +75,15 @@ TBLPROPERTIES (
   'spark.sql.statistics.numRows'='363852167', 
   'spark.sql.statistics.totalSize'='82589603650', 
 …
+
+
+insert overwrite table target_scheme.target_table
+select /*+ BROADCAST(t) */ big.field1,
+       big.field2,
+       t.field3
+  from source_scheme.big_table as big
+  left join source_scheme.small_table as t
+    on big.field1 = t.field1;
 ```
 
 ### PySpark
