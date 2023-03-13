@@ -192,7 +192,7 @@ https://habr.com/ru/post/592067/ RRD Dataframe
 
 Example of Airflow tasks which invokes Spark
 https://habr.com/ru/company/neoflex/blog/700118/
-````
+```
 test_tasks = []
 for table in all_table_full_names:
     test_task = BashOperator(
