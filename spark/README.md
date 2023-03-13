@@ -46,6 +46,9 @@ df.groupBy('col1').agg(med_func).show()
 ### Spark + Pandas
 
 https://habr.com/ru/company/otus/blog/594787/ 
+
+https://habr.com/ru/post/710338/
+
  
 партиционирование немного по-разному поддерживается в Hive и в spark и может быть источником граблей. 
 Просто положить данные в папочку на hdfs (с помощью distcp или файловых операций) может быть недостаточно.
