@@ -6,6 +6,30 @@ Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-t
 ### Spark SQL
 https://spark.apache.org/docs/latest/api/sql/index.html
 
+### How many partitions
+
+https://habr.com/ru/company/otus/blog/686142/
+
+https://habr.com/ru/company/otus/blog/704010/
+
+У DataFrame, DataSet, созданного из файла на HDFS, будет столько партиций, сколько блоков на HDFS имеет исходный файл. 
+Либо в зависимости от параметра 
+```
+spark.sql.files.maxPartitionBytes  // which defaults to 128MB
+
+
+val fromHdfsFileDF = spark
+.read
+.format(“parquet”)
+.load(“hdfs://user/crimes_csv/part-00000-f8e2d087-fd31-4cb5-b96e-62d36ee7074b-c000.parquet”)
+fromHdfsFileDF.rdd.getNumPartitions
+```
+
+У DataFrame, DataSet, созданного в результате джойна, группировки или другой 
+
+spark.conf.get("spark.sql.shuffle.partitions") => 200
+
+
 https://habr.com/ru/company/X5Tech/blog/684024/ Parallel execution in Spark
 
 можно зафиксировать ресурсы за вашим приложением c помощью spark.executor.instances 
