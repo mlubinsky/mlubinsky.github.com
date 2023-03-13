@@ -6,8 +6,15 @@ Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-t
 ### Spark SQL
 https://spark.apache.org/docs/latest/api/sql/index.html
 
+https://habr.com/ru/company/X5Tech/blog/684024/ Parallel execution in Spark
+
+можно зафиксировать ресурсы за вашим приложением c помощью spark.executor.instances 
+
+initialExecutors
+
 https://habr.com/ru/company/neoflex/blog/578654/ Very Good
 
+https://habr.com/ru/company/onefactor/blog/695562/
 
 https://selectfrom.dev/spark-performance-tuning-spill-7318363e18cb
 
