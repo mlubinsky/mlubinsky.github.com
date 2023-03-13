@@ -20,6 +20,16 @@ https://mungingdata.com/pyspark/chaining-dataframe-transformations/
  map, filter, transform, array_contains, exists ,  aggregate
  map_filter, map_zip_with, transform_keys и transform_values
  
+ https://habr.com/ru/company/alfastrah/blog/481924/
+ 
+ ```
+ dfAtom = dfCon.join(dfCStat,con_stat, "inner")\
+    .join(dfSubj,con_subj_own,"inner") \
+    .join(dfPPers,con_ppers_own, "left") \          
+    .drop("con_contract_status_id","sbj_subject_type_id",
+          "pp_subject_id","con_owner_subject_id","cst_status_id")
+ ```
+ 
 партиционирование немного по-разному поддерживается в Hive и в spark и может быть источником граблей. 
 Просто положить данные в папочку на hdfs (с помощью distcp или файловых операций) может быть недостаточно.
 Надо будет вызывать ```msck repair table```, чтобы обновить партиции в metastore. 
