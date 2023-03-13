@@ -504,6 +504,7 @@ https://www.youtube.com/watch?v=P1knn8i1Ijs
 Action creates Job  (1:1) (collection of stages) ;  stage is collection of tasks; task is running on 1 partition / core
 
 ```
+В Spark обработка блоков от одной перетасовки (Shuffle) до другой называется этапом (Stage). 
  
 A job will then be decomposed into single or multiple stages; 
 stages are further divided into individual tasks;
@@ -523,19 +524,36 @@ Stages are created for each job based on shuffle boundaries, i.e. what operation
     - ResultStage. (reduce)
 
 
+https://habr.com/ru/company/neoflex/blog/578654/
+```
+viDF = spark.read.parquet("/tst/vi/")
+viDF.createOrReplaceTempView("ViewingInterval")
+spark.sql("""select t.*, 
+                    explode(get_list_of_seconds(duatation)) as secondNumber 
+               from ViewingInterval""")
+  
+Let do repartition (shuffle) to use many core
+
+viDF = spark.read.parquet("/tst/vi/")
+viDF.repartition(60).createOrReplaceTempView("ViewingInterval")
+spark.sql("""select t.*, 
+                    explode(get_list_of_seconds(duatation)) as secondNumber 
+               from ViewingInterval""")  
+```
+
 YARN app master
 
 https://www.youtube.com/watch?v=sHqzmqppKXE&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg&index=5  EXECUTOR Tuning
 
 
-Approach 1 - one executor per core is NOT good because
+#### Approach 1 - one executor per CORE is NOT good because
 ```
 - it does not take advantage of running multiple tasks on same JVM
 - shared/cached variables like broadcast vars and accumulators will be replicated in each core of the nodes 
 - it does not leave enough memory overhead for hadoop/yarn daemon process and ApplicationManager and OS 
 ```
 
-Approach 2 - one executor per node  (fat executor) :
+#### Approach 2 - one executor per NODE  (fat executor) :
 ```
 num-executors = one executor per noder
   total # of executors = total nodes in cluster = 10
@@ -545,7 +563,7 @@ executor-memory = Total memory in cluster / total executors = 640GB/10 = 64GB
 
 It is not good because HDFS throughput will hurt and it will result in excessive garbage result
 ```
-Approach 3 - in beetween 1 and 2:
+#### Approach 3 - in beetween 1 and 2:
 ```
 5 cores per executor
 executor-cores=5  for good HDFS throughtput
