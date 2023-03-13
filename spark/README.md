@@ -1,5 +1,7 @@
 https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql-QueryExecution.html#execution-pipeline
 
+https://umbertogriffo.gitbook.io/apache-spark-best-practices-and-tuning/
+
 Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-to-load-local-file-in-sc-textfile-instead-of-hdfs
 
 
