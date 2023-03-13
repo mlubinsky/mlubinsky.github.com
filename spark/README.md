@@ -147,6 +147,34 @@ https://habr.com/ru/post/592067/ RRD Dataframe
 Не-использование Broadcast в некоторых конфигурациях данных — тоже.
 ```
 
+Example of Airflow tasks which invokes Spark
+https://habr.com/ru/company/neoflex/blog/700118/
+````
+test_tasks = []
+for table in all_table_full_names:
+    test_task = BashOperator(
+        task_id=f"run_dq_tests_for_{table.replace('.', '_')}",
+        bash_command=f"/opt/dev/spark/spark-3.2.1/bin/spark-submit \
+        --driver-memory 2g \
+        --executor-memory 2g \
+        --executor-cores 2 \
+        --conf spark.dynamicAllocation.maxExecutors=4 \
+        --conf spark.dynamicAllocation.initialExecutors=2 \
+        --conf spark.sql.shuffle.partitions=8 \
+        --conf spark.sql.sources.partitionOverwriteMode=dynamic \
+        --conf spark.pyspark.virtualenv.enabled=true \
+        --conf spark.pyspark.virtualenv.type=native \
+        --jars {LIBS_PATH}/postgresql-42.3.6.jar \
+        --conf spark.pyspark.python={VENV_PATH}/bin/python3.9 \
+        --conf spark.pyspark.virtualenv.bin.path={VENV_PATH}/bin/ \
+        {SCRIPTS_PATH}/{RUN_TESTS_SCRIPT} {table}" + " {{ logical_date }}",
+        dag=dag,
+        trigger_rule=TriggerRule.ALL_DONE
+    )
+    test_tasks.append(test_task)
+```
+
+
 JSON createOrReplaceTempView
 ```
 Read JSON file and register temp view
