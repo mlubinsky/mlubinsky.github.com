@@ -30,6 +30,10 @@ https://mungingdata.com/pyspark/chaining-dataframe-transformations/
           "pp_subject_id","con_owner_subject_id","cst_status_id")
  ```
  
+### Spark + Pandas
+
+https://habr.com/ru/company/otus/blog/594787/ 
+ 
 партиционирование немного по-разному поддерживается в Hive и в spark и может быть источником граблей. 
 Просто положить данные в папочку на hdfs (с помощью distcp или файловых операций) может быть недостаточно.
 Надо будет вызывать ```msck repair table```, чтобы обновить партиции в metastore. 
@@ -493,6 +497,8 @@ https://sparkbyexamples.com/spark/spark-adaptive-query-execution/
 ### Structured Streaming
 
 https://habr.com/ru/company/neoflex/blog/674944/ PySpark Structured Streaming и Kafka
+
+https://habr.com/ru/company/neoflex/blog/686242/ PySpark + Kafka
 
 https://databricks.com/blog/2017/01/19/real-time-streaming-etl-structured-streaming-apache-spark-2-1.html
 
