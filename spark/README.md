@@ -21,6 +21,19 @@ https://habr.com/ru/company/otus/blog/557812/
 
 приложения Spark выполнялись в кластере больших данных Hadoop, на котором доступен модуль YARN (Yet Another Resource Negotiator — «еще один ресурсный посредник»).
 
+https://habr.com/ru/post/592067/ RRD Dataframe
+
+```
+Read JSON file and register temp view
+
+context.jsonFile("s3n://…").createOrReplaceTempView("json")
+
+Execute SQL query
+
+results = context.sql("""SELECT * FROM people JOIN json …""")
+```
+
+
 ### Spark submit:
 
 https://spark.apache.org/docs/3.2.1/submitting-applications.html
