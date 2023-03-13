@@ -1,7 +1,7 @@
 Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-to-load-local-file-in-sc-textfile-instead-of-hdfs
 
 
-Spark SQL
+### Spark SQL
 https://spark.apache.org/docs/latest/api/sql/index.html
 
 https://habr.com/ru/company/neoflex/blog/578654/ Very Good
@@ -346,9 +346,38 @@ https://sparkbyexamples.com/spark/spark-web-ui-understanding/
 
 ### Adaptive query execution Spark 3.0
 
+https://habr.com/ru/company/cloudera/blog/560246/
+
+Spark определяет подходящее количество партиций для первого этапа, но для второго этапа использует по умолчанию "магическое число" - 200.
+
+И это плохо по трем причинам:
+
+1. 200 вряд ли будет идеальным количеством партиций, а именно их количество является одним из критических факторов, влияющих на производительность;
+
+2. Если вы запишете результат этого второго этапа на диск, у вас может получиться 200 маленьких файлов;
+
+spark.conf.set(“spark.sql.shuffle.partitions”,”2″)
+
 https://sparkbyexamples.com/spark/spark-adaptive-query-execution/
 
 
+
+Когда оба: 
+```
+ spark.sql.adaptive.enabled и
+ spark.sql.adaptive.coalescePartitions.enabled 
+```
+установлены на true, Spark объединит смежные перемешанные разделы в соответствии с целевым размером, указанным в spark.sql.adaptive.advisoryPartitionSizeInBytes.
+Это делается, чтобы избежать слишком большого количества мелких задач.
+
+вам необходимо предоставить AQE свое определение перекоса.
+
+Это включает в себя два параметра:
+
+1.   spark.sql.adaptive.skewJoin.skewedPartitionFactor является относительным: партиция считается с пересом, если ее размер больше, чем этот коэффициент, умноженный на средний размер партиции, а также, если он больше, чем
+
+2.   spark.sql.adaptive.skewedPartitionThresholdInBytes, который является абсолютным: это порог, ниже которого перекос будет игнорироваться.
+    
 ### Structured Streaming
 
 https://habr.com/ru/company/neoflex/blog/674944/ PySpark Structured Streaming и Kafka
@@ -851,8 +880,58 @@ https://www.youtube.com/watch?v=PJvpseiPACQ
 https://www.youtube.com/watch?v=_Ne27JcLnEc
 
 
-### Cost based optimizer
+### Cost and rule based optimizer
 
+https://habr.com/ru/company/neoflex/blog/417103/
+```
+ два вида оптимизаторов запросов:
+
+
+Оптимизаторы, основанные на фиксированных правилах (Rule-based optimizator, RBO).
+Оптимизаторы, основанные на оценке стоимости выполнения запроса (Cost-based optimizator, CBO).
+
+Первые заточены на применении набора фиксированных правил, например, применение условий фильтраций из where на более ранних этапах, если это возможно, предвычисление констант и т.д.
+
+CBO оптимизатор для оценки качества полученного плана используют стоимостную функцию, которая обычно зависит от объема обрабатываемых данных, количества строк, попадающих под фильтры, стоимости выполнения тех или иных операций.
+
+Ознакомиться детально с дизайн-спецификацией на CBO для Apache Spark можно по ссылкам: спецификация и основная JIRA задача для реализации.
+
+Отправной точкой для изучения полного набора существующих оптимизаций может послужить код Optimizer.scala.
+
+Вот небольшая выдержка из длинного списка доступных оптимизаций:
+
+def batches: Seq[Batch] = {
+  val operatorOptimizationRuleSet =
+    Seq(
+      // Operator push down
+      PushProjectionThroughUnion,
+      ReorderJoin,
+      EliminateOuterJoin,
+      PushPredicateThroughJoin,
+      PushDownPredicate,
+      LimitPushDown,
+      ColumnPruning,
+      InferFiltersFromConstraints,
+      // Operator combine
+      CollapseRepartition,
+      CollapseProject,
+      CollapseWindow,
+      CombineFilters,
+      CombineLimits,
+      CombineUnions,
+      // Constant folding and strength reduction
+      NullPropagation,
+      ConstantPropagation,
+........
+
+Следует отметить, что список данных оптимизаций включает в себя как оптимизации, основанные на правилах, так и оптимизации, основанные на оценки стоимости запроса, о которых будет сказано ниже.
+
+Особенностью CBO является то, что для корректной работы ему необходимо знать и хранить информацию по статистике данных, используемых в запросе — количество записей, размер записи, гистограммы распределения данных в столбцах таблиц.
+
+Для сбора статистики используется набор SQL команд ANALYZE TABLE… COMPUTE STATISTICS, кроме того, необходим набор таблиц для хранения информации, API предоставляется через ExternalCatalog, точнее через HiveExternalCatalog.
+
+Так как в настоящий момент CBO по умолчанию отключен, то основной упор будет сделан на исследовании доступных оптимизация и нюансов RBO.
+```
 https://www.youtube.com/watch?v=E26fK8kgXaU
 
 ### Join types: 
@@ -914,6 +993,8 @@ step 3 - merge phase: join 2 sorted and partitioned data
 SortMergeJoin делает своё дело, полученный набор данных сохраняет тот же порядок записей, что был после Shuffle и локальной сортировки.
 
 ```
+
+
 #### broadcast join (spark.sql.autoBroadcastJoinThreshold=10485760  = 10MB by default)
 
 spark.sql.autoBroadcastJoinThreshold = -1 to disable broadcast
@@ -969,17 +1050,25 @@ It can be smaller (e.g. filter, count, distinct, sample), bigger (e.g. flatMap()
 
 
 
-Narrow dependency : 
+#### Narrow dependency : 
 RDD operations like map(), union(), filter() can operate on a single partition and map the data of that partition to the resulting single partition. These kinds of operations that map data from one to one partition are referred to as Narrow operations. 
 
 Narrow operations don’t require distributing the data across the partitions. Each partition of the parent RDD is used by at most one partition of the child RDD.
 
-Wide dependency : 
+#### Wide dependency : 
 RDD operations like groupByKey, distinct, join may require mapping the data across the partitions in the new RDD. These kinds of operations which maps data from one to many partitions are referred to as Wide operations Each partition of the parent RDD may be depended on by multiple child partitions.
 
 
-Stateless Transformations- Processing of the batch does not depend on the output of the previous batch. Examples- map (), reduceByKey (), filter ().
-Stateful Transformations- Processing of the batch depends on the intermediary results of the previous batch. Examples- Transformations that depend on sliding windows
+#### Stateless Transformations
+Processing of the batch does not depend on the output of the previous batch.
+
+Examples- map (), reduceByKey (), filter ().
+
+#### Stateful Transformations
+ Processing of the batch depends on the intermediary results of the previous batch.
+
+Examples- Transformations that depend on sliding windows
+
 
 ### Shuffling
 
@@ -1102,7 +1191,7 @@ spark.range(1000).filter("id > 100").selectExpr("sum(id)").explain()
 
 ```
 
-Stage
+### Stage
 https://towardsdatascience.com/unraveling-the-staged-execution-in-apache-spark-eff98c4cdac9
 
  https://medium.com/data-arena/merging-different-schemas-in-apache-spark-2a9caca2c5ce
@@ -1249,7 +1338,7 @@ spark-shell
 pyspark
 ```
 
-Spark 3
+### Spark 3
 ```
 brew info apache-spark
 apache-spark: stable 3.1.2 (bottled), HEAD
