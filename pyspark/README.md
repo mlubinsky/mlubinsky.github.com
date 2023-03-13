@@ -218,6 +218,11 @@ print(schema)
 
 ### GROUP BY HAVING COUNT() > 1
 
+from pyspark.sql.functions import avg
+
+df.groupBy("category").agg(avg("sales")).show()
+
+
 ```
 df.groupBy(*cols).count().show()
 
