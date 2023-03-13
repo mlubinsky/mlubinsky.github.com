@@ -30,6 +30,19 @@ https://mungingdata.com/pyspark/chaining-dataframe-transformations/
           "pp_subject_id","con_owner_subject_id","cst_status_id")
  ```
  
+### Median calculation
+```
+# Pandas
+df.groupby("col1")["col2"].median()
+
+# PySpark
+from pyspark.sql import Window
+import pyspark.sql.functions as F
+
+med_func = F.expr('percentile_approx(col2, 0.5, 20)')
+df.groupBy('col1').agg(med_func).show()
+```
+
 ### Spark + Pandas
 
 https://habr.com/ru/company/otus/blog/594787/ 
