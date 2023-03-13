@@ -216,11 +216,24 @@ schema = df._jdf.schema().treeString()
 print(schema)
 ```
 
-### GROUP BY HAVING COUNT() > 1
-
+### Group by
+```
+df.filter(df.colname == 50.0).groupBy('another_colname').count().show()
 from pyspark.sql.functions import avg
 
 df.groupBy("category").agg(avg("sales")).show()
+```
+
+
+#### groupBy, sum, agg
+```
+df.groupBy('genre_id').agg(
+ F.sum( (F.col('monetization_score').isNull()).cast('int') ).alias('monetization_null_count'),
+ F.sum( (F.col('monetization_score').isNotNull()).cast('int') ).alias('monetization_NOT_null_count'),   
+).orderBy('genre_id').show(40)
+```
+
+#### GROUP BY HAVING COUNT() > 1
 
 
 ```
@@ -246,7 +259,7 @@ df.filter(df.HadoopExamFee<3200)
   .filter(col('count')>10)
 ```
 
-GEneric answer:
+Generic answer:
 ```
 df.groupBy(someExpr).agg(somAgg).where(somePredicate) 
 ```
@@ -272,9 +285,7 @@ Row(age=2, name='Alice')
 https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.first.html
 
 
-### Group by
 
-df.filter(df.colname == 50.0).groupBy('another_colname').count().show()
 
 
 ### Infinity:
@@ -362,13 +373,6 @@ df.select(
    
 ```
 
-### groupBy, sum, agg
-```
-df.groupBy('genre_id').agg(
- F.sum( (F.col('monetization_score').isNull()).cast('int') ).alias('monetization_null_count'),
- F.sum( (F.col('monetization_score').isNotNull()).cast('int') ).alias('monetization_NOT_null_count'),   
-).orderBy('genre_id').show(40)
-```
 
 ### ANY
 Pandas has ANY :
