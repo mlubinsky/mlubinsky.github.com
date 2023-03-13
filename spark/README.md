@@ -51,18 +51,40 @@ nohup spark-sql
 -f /home/hadoop/vambati/test.hql > test.log &
 ```
 
-https://stackoverflow.com/questions/39067505/pyspark-display-a-spark-data-frame-in-a-table-format
+### COMPUTE STATISTICS
+
+ Spark существуют различные алгоритмы реализации join-ов: SortMergeJoin, BroadcastHashJoin, CartesianProduct 
+ https://habr.com/ru/company/sberbank/blog/496310/
+
+Для этого посредством spark-submit вызываем команду вида:
+
+ANALYZE TABLE scheme_name.table_name COMPUTE STATISTICS;
+
 
 https://medium.com/credera-engineering/how-to-write-unit-tests-for-spark-f8ea22cf6448 Unit test
 
+Проверить, что статистика собрана, можно в среде hive командой вида:
 
+show create table scheme_name.table_name;
+
+Нужно посмотреть, появились ли в конце описания в блоке TBLPROPERTIES свойства 'spark.sql.statistics.numRows' и 'spark.sql.statistics.totalSize':
+```
+CREATE EXTERNAL TABLE `scheme_name.table_name`(
+TBLPROPERTIES (
+…
+  'spark.sql.statistics.numRows'='363852167', 
+  'spark.sql.statistics.totalSize'='82589603650', 
+…
+```
 
 ### PySpark
 https://insaid.medium.com/eda-with-pyspark-1f29b7d1618
 
 https://habr.com/ru/company/otus/blog/594787/ . pandaspark pyspark in spark 3.2
 
- 
+ https://stackoverflow.com/questions/39067505/pyspark-display-a-spark-data-frame-in-a-table-format
+
+
 https://habr.com/ru/company/X5Group/blog/579232/. PySpark
 https://www.youtube.com/watch?v=_C8kWso4ne4
 https://parisrohan.medium.com/an-attempt-to-spark-your-interest-in-pyspark-fddccdc3081f
