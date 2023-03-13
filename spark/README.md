@@ -12,9 +12,26 @@ https://habr.com/ru/company/otus/blog/653977/ . Monitoring Apache Spark
 
 https://habr.com/ru/company/otus/blog/653033/ Spark ML example
 
-Spark submit:
+### Spark submit:
 
 https://spark.apache.org/docs/3.2.1/submitting-applications.html
+```
+spark-submit 
+--class <…sqlrunner> 
+--name <taskname> 
+--queue <yarnqueue> 
+--executor-cores 1 
+--executor-memory 1g 
+--driver-cores 1 
+--driver-memory 1g 
+--num-executors 1 
+--master yarn 
+--deploy-mode cluster <hdfs://…sqlrunner.jar> 
+sqlFile=<…sql>
+```
+
+
+### Spark-sql
 
 ```
 nohup spark-sql 
