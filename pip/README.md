@@ -1,3 +1,5 @@
+https://snarky.ca/how-virtual-environments-work/ 
+
 https://pypa.github.io/pipx/
 
 https://pip-tools.readthedocs.io/en/latest/
