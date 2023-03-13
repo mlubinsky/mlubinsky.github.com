@@ -14,6 +14,9 @@ https://spark.apache.org/docs/latest/api/sql/index.html
 https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql.html#functions
 
 https://habr.com/ru/company/otus/blog/575740/
+
+https://mungingdata.com/pyspark/chaining-dataframe-transformations/
+
  map, filter, transform, array_contains, exists ,  aggregate
  map_filter, map_zip_with, transform_keys и transform_values
  
