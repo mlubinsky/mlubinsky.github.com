@@ -32,7 +32,17 @@ Execute SQL query
 
 results = context.sql("""SELECT * FROM people JOIN json …""")
 ```
+### Spark configuration issues
+https://habr.com/ru/company/otus/blog/540396/
+Обычными причинами, приводящими к OutOfMemory OOM (недостаточно памяти) драйвера, являются:
 
+rdd.collect()
+
+sparkContext.broadcast 
+
+Низкий уровень памяти драйвера, настроенный в соответствии с требованиями приложения
+
+Неправильная настройка Spark.sql.autoBroadcastJoinThreshold.
 
 ### Spark submit:
 
