@@ -70,6 +70,9 @@ https://habr.com/ru/company/tensor/blog/657895/ SQL HowTo: разные вари
 
 https://habr.com/ru/post/664000/
 
+LAG function
+https://habr.com/ru/post/545870/
+
 ### Moving Average
 
 https://habr.com/ru/post/588859/  averaging and smoothing for noise reduction
