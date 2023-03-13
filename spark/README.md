@@ -329,6 +329,9 @@ but if you join two RDDs that branch from the same RDD spark can sometimes elide
 
 
 ### Spark Web UI
+https://spark.apache.org/docs/latest/web-ui.html
+
+https://habr.com/ru/company/otus/blog/526892/
 
 https://medium.com/swlh/spark-ui-to-debug-queries-3ba43279efee
 
@@ -498,8 +501,17 @@ https://www.youtube.com/watch?v=1BaGOCPA7OA
 
 https://www.youtube.com/watch?v=P1knn8i1Ijs
 
-Action creates Job  (1:1) (collection of stages) ;  stage is collection of task; task is running on 1 core
+Action creates Job  (1:1) (collection of stages) ;  stage is collection of tasks; task is running on 1 partition / core
 
+```
+ 
+A job will then be decomposed into single or multiple stages; 
+stages are further divided into individual tasks;
+and tasks are units of execution that the Spark driver's scheduler ships to Spark Executors on the Spark worker nodes to execute in your cluster.
+
+A Spark stage is a smaller sets of tasks that depend on each other.
+Stages are created for each job based on shuffle boundaries, i.e. what operations can be performed serially or in parallel
+```
   - physical unit of execution
   - step in physical execution plan
   - collection of task - one task per partition
