@@ -6,6 +6,13 @@ Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-t
 ### Spark SQL
 https://spark.apache.org/docs/latest/api/sql/index.html
 
+### PySpark functions
+https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql.html#functions
+
+https://habr.com/ru/company/otus/blog/575740/
+ map, filter, transform, array_contains, exists ,  aggregate
+ map_filter, map_zip_with, transform_keys и transform_values
+
 ### How many partitions
 
 https://habr.com/ru/company/otus/blog/686142/
@@ -229,6 +236,18 @@ https://medium.com/analytics-vidhya/spark-bucketing-is-not-as-simple-as-it-looks
 
 ### Skew 
 https://habr.com/ru/company/first/blog/678826/
+
+```
+оптимизации перекошенного соединения в AQE:
+
+spark.sql.adaptive.skewJoin.enabled: Этот логический параметр определяет, включена или выключена оптимизация перекошенного соединения. Значение по умолчанию — true.
+
+spark.sql.adaptive.skewJoin.skewedPartitionFactor: Этот целочисленный параметр управляет интерпретацией перекошенного раздела. Значение по умолчанию равно 5.
+
+spark.sql.adaptive.skewJoin.skewedPartitionThresholdInBytes: Этот параметр в мегабайтах также управляет интерпретацией перекошенного раздела. Значение по умолчанию равно 256 MB.
+
+Раздел считается перекошенным, если оба параметра (partition size (размер раздела) > skewedPartitionFactor * median partition size (медианный размер раздела)) и (partition size > skewedPartitionThresholdInBytes) соответствуют действительности.
+```
 
 https://medium.com/curious-data-catalog/sparks-skew-problem-does-it-impact-performance-257cdef53680
 
