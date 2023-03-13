@@ -92,7 +92,10 @@ select /*+ BROADCAST(t) */ big.field1,
  /*+ COALESCE(n) */, где n – количество партиций, на которые будет разбит результат, 
  /* + REPARTITION (n) */, где n – количество партиций при repartition.
 ```
-
+По умолчанию задача соединения двух таблиц, выполненная посредством spark-submit, будет разбита на 200 партиций. Изменить эту настройку по умолчанию можно, задав другое значение конфигурации spark.sql.shuffle.partitions, например:
+```
+--conf spark.sql.shuffle.partitions=1000
+```
 ### PySpark
 https://insaid.medium.com/eda-with-pyspark-1f29b7d1618
 
