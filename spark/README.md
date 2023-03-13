@@ -1,6 +1,9 @@
 Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-to-load-local-file-in-sc-textfile-instead-of-hdfs
 
 
+Spark SQL
+https://spark.apache.org/docs/latest/api/sql/index.html
+
 https://habr.com/ru/company/neoflex/blog/578654/ Very Good
 
 
