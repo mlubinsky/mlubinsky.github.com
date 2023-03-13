@@ -6,6 +6,8 @@ https://leanpub.com/beautiful-spark/
 
 Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-to-load-local-file-in-sc-textfile-instead-of-hdfs
 
+spark-shell
+https://habr.com/ru/post/480846/
 
 ### Spark SQL
 https://spark.apache.org/docs/latest/api/sql/index.html
