@@ -9,6 +9,24 @@ Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-t
 spark-shell
 https://habr.com/ru/post/480846/
 
+https://habr.com/ru/post/708468/
+```
+from pyspark.sql import SparkSession
+ 
+spark = SparkSession.builder.getOrCreate()
+spark.conf.set("spark.sql.execution.arrow.pyspark.enabled", "true")
+spark
+
+df = spark.read.csv('data/train.csv', header=True, inferSchema=True)
+df.printSchema()
+
+ Метод pandas_api преобразует существующий DataFrame в pandas-on-Spark DataFrame (это доступно только в том случае, если pandas установлен и доступен).
+
+df.pandas_api().isna().mean()
+df = df.dropna()
+df.pandas_api().isna().sum()
+```
+
 ### Spark SQL
 https://spark.apache.org/docs/latest/api/sql/index.html
 
