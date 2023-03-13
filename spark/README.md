@@ -12,6 +12,15 @@ https://habr.com/ru/company/otus/blog/653977/ . Monitoring Apache Spark
 
 https://habr.com/ru/company/otus/blog/653033/ Spark ML example
 
+
+### Spark Architecture
+https://habr.com/ru/company/otus/blog/557812/
+ процесс Spark Driver. Это управляющий (master) процесс, который содержит все процедуры и задания, которые надлежит выполнить (направленные ациклические графы — DAG, определенные пользователем в коде Java, Scala или Python).
+ 
+ Управляющий процесс передает исполнительным процессам (Executor) задачи, которые надлежит выполнить, и контролирует их успешное выполнение, прежде чем будет завершен сам.
+
+приложения Spark выполнялись в кластере больших данных Hadoop, на котором доступен модуль YARN (Yet Another Resource Negotiator — «еще один ресурсный посредник»).
+
 ### Spark submit:
 
 https://spark.apache.org/docs/3.2.1/submitting-applications.html
@@ -322,7 +331,21 @@ https://habr.com/ru/company/otus/blog/670266/
 https://habr.com/ru/company/ozontech/blog/656883/
 
 https://habr.com/ru/company/otus/blog/557812/
+Когда данные передаются в тему Kafka, они автоматически распределяются между разделами согласно ключу, который вы определили в сообщении Kafka. 
 
+Каждое сообщение добавляется в тему Kafka с определенным смещением или с идентификатором, указывающим его позицию в разделе. 
+
+Если в качестве ключа задать null, то сообщение будет автоматически равномерно распределяться между разделами.
+
+
+```
+ kafka-topics 
+ --zookeeper <host>:2181 
+ --create 
+ --topic <topic-name> 
+ --partitions <number-of-partitions> 
+ --replication-factor <number-of-replicas>
+```
 https://livebook.manning.com/book/streaming-data/ Book (I bought it)
 
 ```
