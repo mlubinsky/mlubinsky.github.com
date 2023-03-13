@@ -12,6 +12,10 @@ https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql.html#funct
 https://habr.com/ru/company/otus/blog/575740/
  map, filter, transform, array_contains, exists ,  aggregate
  map_filter, map_zip_with, transform_keys и transform_values
+ 
+партиционирование немного по-разному поддерживается в Hive и в spark и может быть источником граблей. 
+Просто положить данные в папочку на hdfs (с помощью distcp или файловых операций) может быть недостаточно.
+Надо будет вызывать ```msck repair table```, чтобы обновить партиции в metastore. 
 
 ### How many partitions
 
