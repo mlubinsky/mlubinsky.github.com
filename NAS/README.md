@@ -1,7 +1,11 @@
+### NetGear
+192.168.1.1
 
-ARRIS router: 10.0.0.1  admin/password1
+https://kb.netgear.com/980/How-do-I-log-in-to-my-NETGEAR-router
 
-Disk station: 10.0.0.83
+### ARRIS router: 10.0.0.1  admin/password1
+
+### Synology Disk station DS-213 station: 10.0.0.83
 
 Finder -> Go -> Connect to Server:  smb://10.0.0.83 
 
