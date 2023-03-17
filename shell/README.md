@@ -1,5 +1,15 @@
 https://effective-shell.com/
 
+https://github.com/dbohdan/structured-text-tools
+
+Slice and dice logs on the command line:
+
+https://github.com/rcoh/angle-grinder
+
+Logfile Navigator  https://lnav.org
+
+Render Markdown on CLI
+https://github.com/charmbracelet/glow
 
 ```
 Start your own commands in my ~/bin/ from comma !
