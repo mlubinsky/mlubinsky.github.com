@@ -23,7 +23,7 @@ https://pawelurbanek.com/macos-free-disk-space
 
 brew install --cask disk-inventory-x
 
- brew install awk coreutils findutils gnu-tar gnu-sed gnu-which gnu-time
+brew install awk coreutils findutils gnu-tar gnu-sed gnu-which gnu-time
  
  
  
@@ -36,6 +36,12 @@ Reset permissions to /user/local.
 sudo chown -R $(whoami):admin /usr/local/* \
 && sudo chmod -R g+rwx /usr/local/*
 ``` 
+ 
+ ### Preview
+ 
+https://www.fourth-wall.co.uk/post/10-tips-for-preview-the-default-mac-app-that-people-forget-about
+
+https://news.ycombinator.com/item?id=31315110
  
 
 https://kapeli.com/dash
