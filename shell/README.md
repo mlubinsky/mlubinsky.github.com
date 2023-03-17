@@ -11,6 +11,10 @@ Logfile Navigator  https://lnav.org
 Render Markdown on CLI
 https://github.com/charmbracelet/glow
 
+
+ stream processing 
+https://www.benthos.dev/
+
 ```
 Start your own commands in my ~/bin/ from comma !
 To remember which of my commands are available in my ~/bin/ directory 
