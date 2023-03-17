@@ -11,6 +11,8 @@ Logfile Navigator  https://lnav.org
 Render Markdown on CLI
 https://github.com/charmbracelet/glow
 
+Json analysis
+https://thenybble.de/posts/json-analysis/
 
  stream processing 
 https://www.benthos.dev/
