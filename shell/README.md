@@ -15,6 +15,13 @@ https://github.com/charmbracelet/glow
  stream processing 
 https://www.benthos.dev/
 
+### Clickhouse Local,  DuckDB,  Polars,  for analyzing local files (including json)
+https://clickhouse.com/blog/extracting-converting-querying-local-files-with-sql-clickhouse-local
+
+### DuckDB : 
+https://duckdb.org/docs/extensions/json.html 
+ select a,b,c from '*.jsonl.gz'
+ 
 ```
 Start your own commands in my ~/bin/ from comma !
 To remember which of my commands are available in my ~/bin/ directory 
