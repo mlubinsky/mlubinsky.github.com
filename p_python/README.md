@@ -834,3 +834,7 @@ return wrapper
 
 ### Enumeration
 https://florian-dahlitz.de/articles/why-you-should-use-more-enums-in-python
+
+### Working with binary files: BytesIO 
+
+https://github.com/lingeringwillx/StructIO
