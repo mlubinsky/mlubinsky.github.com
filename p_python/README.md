@@ -838,3 +838,53 @@ https://florian-dahlitz.de/articles/why-you-should-use-more-enums-in-python
 ### Working with binary files: BytesIO 
 
 https://github.com/lingeringwillx/StructIO
+
+### Context manager
+implements __enter__() and __exit__()
+
+```
+class timer(object):
+    def __enter__(self):
+        self.t = time.clock()
+        return self
+
+    def __exit__(self, type, value, traceback):
+        self.e = time.clock()
+
+    def __float__(self):
+        return float(self.e - self.t)
+
+# Use timer:
+with timer() as t1:
+    …
+    foo(...)
+    …
+print(t1)
+```
+
+Decorator contextmanager returns object with automatically created  __enter__() и __exit__()
+```
+# scrapy\scrapy\utils\misc.py
+@contextmanager
+def set_environ(**kwargs):
+    """Temporarily set environment 
+       variables inside the context … """
+
+    original_env = {k: os.environ.get(k) for k in kwargs}
+    os.environ.update(kwargs)
+    try:
+        yield
+    finally:
+        for k, v in original_env.items():
+            if v is None:
+                del os.environ[k]
+            else:
+                os.environ[k] = v
+
+# Usage
+…
+with set_environ(SCRAPY_CHECK='true'):
+    for spidername in args or spider_loader.list():
+        spidercls = spider_loader.load(spidername)
+…
+```
