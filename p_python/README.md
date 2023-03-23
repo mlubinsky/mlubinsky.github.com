@@ -897,7 +897,12 @@ with set_environ(SCRAPY_CHECK='true'):
 ```
 
 ### Numpy
-Slow
+
+https://github.com/rougier/numpy-100
+
+https://github.com/ajcr/100-pandas-puzzles
+
+Slow:
 ```
 list_of_numbers = list(range(10000))
 %%timeit
