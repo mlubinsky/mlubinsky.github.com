@@ -862,7 +862,7 @@ with timer() as t1:
 print(t1)
 ```
 
-Decorator contextmanager returns object with automatically created  __enter__() и __exit__()
+Decorator @contextmanager returns object with automatically created  __enter__() и __exit__()
 ```
 # scrapy\scrapy\utils\misc.py
 @contextmanager
@@ -887,4 +887,30 @@ with set_environ(SCRAPY_CHECK='true'):
     for spidername in args or spider_loader.list():
         spidercls = spider_loader.load(spidername)
 …
+```
+
+### Numpy
+Slow
+```
+list_of_numbers = list(range(10000))
+%%timeit
+result = 0
+for i in list_of_numbers:
+    result += i
+```    
+Faster
+```    
+ %timeit sum(list_of_numbers)   
+```
+Very slow:
+```
+import numpy as np
+%timeit np.sum(list_of_numbers)
+```
+However, if you can somehow obtain your data in the form of NumPy arrays from the start, 
+or if you perform many operations that might compensate for the conversion time, 
+the gain in performance can be considerable:
+```
+ndarray_of_numbers = np.array(list_of_numbers)
+%timeit np.sum(ndarray_of_numbers)
 ```
