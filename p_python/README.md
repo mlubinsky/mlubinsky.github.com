@@ -320,12 +320,19 @@ own class
 A function is a generator function if and only if it uses "yield" instead of "return"
 This generator object is an iterator, which means you can iterate through it using next() or a for
 loop
+
+The performance improvement from the use of generators is the result of the lazy (on demand) generation of values,
+
+Generator will provide performance benefits only if we do not intend to use that set of generated values more than once
+
 ```
-def gen_nums () :
+def gen_nums (N_MAX) :
   n = 0
-  while n < 4:
+  while n < N_MAX:
       yield n
       n += 1
+      
+sum_of_first_n = sum(gen_nums(1000000))      
 ```
 The _yield_ statement simultaneously defines an exit point, and a re-entry point.
 
