@@ -33,7 +33,19 @@ https://news.ycombinator.com/item?id=25136422
 
 https://www.pnas.org/doi/10.1073/pnas.1620001114
 
-Vitaly Vanchurin
+### Vitaly Vanchurin
+
+-- видеоканал Artificial Neural Computing https://www.youtube.com/@ArtificialNeuralComputing
+-- группа The World as a Neural Network в фейсбуке (основные обсуждения пока тут): https://www.facebook.com/groups/2930104110608299
+-- чат в телеграме https://t.me/theworldasaneuralnetworkchat и обсуждения в зуме с 19 до 21 часа по пятницам (ссылка на зум в инфо канала)
+-- канал в телеграме https://t.me/theworldasaneuralnetwork
+-- вопросы, которые обсуждаются: https://docs.google.com/document/d/1xNEmpqhzt6QRp4CFkXwJJ2yfE3zofEcn0Vn5PbtLs2Q/edit
+-- разговор про природу искусства: https://www.facebook.com/groups/2930104110608299/posts/3470688086549896/
+-- работы Ванчурина https://scholar.google.com/citations?hl=en&user=nEEFLp0AAAAJ&view_op=list_works&sortby=pubdate
+-- компания Ванчурина https://artificialneuralcomputing.com/
+-- интервью Ванчурина (январь 2023) по-русски на пару часов: https://www.youtube.com/watch?v=p6mUVE6nmGY, по-английски на пять часов: https://www.youtube.com/watch?v=RIEtRGfFSGI (ноябрь 2022)
+
+
 ( University of Minnesota Duluth )
 https://scholar.google.com/citations?hl=en&user=nEEFLp0AAAAJ&view_op=list_works&sortby=pubdate
  
