@@ -1,0 +1,21 @@
+https://docs.djangoproject.com/en/4.1/intro/tutorial01/
+
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
+
+https://django-best-practices.readthedocs.io/en/latest/
+
+Do it once
+```
+python3 -m venv ~/VIRTUAL_ENV/django
+source ~/VIRTUAL_ENV/django/bin/activate
+python -m pip install Django
+```
+python -m django --version
+ 
+Start project
+ 
+```
+django-admin startproject mysite
+cd mysite
+python manage.py runserver 9999
+```
