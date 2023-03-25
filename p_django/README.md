@@ -20,6 +20,8 @@ cd mysite
 python manage.py runserver 9999
 ```
 
-### Streamli
+### Streamlit
+
+https://www.kdnuggets.com/publications/sheets/Streamlit_for_Machine_Learning_Cheat_Sheet_KDnuggets.pdf
 
 https://docs.streamlit.io/library/api-reference/charts/st.pydeck_chart
