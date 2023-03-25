@@ -40,6 +40,9 @@ DjangoX - starter framework for new Django projects https://github.com/wsvincent
 DRFX - starter framework for new Django REST Framework projects https://github.com/wsvincent/drfx
 
 ### Recommended Django projects
+
+https://djangobuilder.io/#/ 
+
 https://news.ycombinator.com/item?id=33845414
 
 
