@@ -27,8 +27,11 @@ cd mysite
 python manage.py runserver 9999
 ```
 
+### books
 
-https://wsvincent.com/about/ books
+https://wsvincent.com/about/ 
+https://masteringdjango.com/
+
 Django News Newsletter https://django-news.com/
  
  
@@ -36,8 +39,12 @@ Awesome Django  https://github.com/wsvincent/awesome-django
 DjangoX - starter framework for new Django projects https://github.com/wsvincent/djangox
 DRFX - starter framework for new Django REST Framework projects https://github.com/wsvincent/drfx
 
+### Recommended Django projects
+https://news.ycombinator.com/item?id=33845414
 
 
+### Starlette vs FlaskAPI
+with asyncpg and plain SQL
 
 ### Streamlit
 
