@@ -27,6 +27,18 @@ cd mysite
 python manage.py runserver 9999
 ```
 
+
+https://wsvincent.com/about/ books
+Django News Newsletter https://django-news.com/
+ 
+ 
+Awesome Django  https://github.com/wsvincent/awesome-django
+DjangoX - starter framework for new Django projects https://github.com/wsvincent/djangox
+DRFX - starter framework for new Django REST Framework projects https://github.com/wsvincent/drfx
+
+
+
+
 ### Streamlit
 
 https://www.kdnuggets.com/publications/sheets/Streamlit_for_Machine_Learning_Cheat_Sheet_KDnuggets.pdf
