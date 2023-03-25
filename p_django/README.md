@@ -19,3 +19,7 @@ django-admin startproject mysite
 cd mysite
 python manage.py runserver 9999
 ```
+
+### Streamli
+
+https://docs.streamlit.io/library/api-reference/charts/st.pydeck_chart
