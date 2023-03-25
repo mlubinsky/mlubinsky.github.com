@@ -1,3 +1,5 @@
+# Django
+
 https://docs.djangoproject.com/en/4.1/intro/tutorial01/
 
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
@@ -25,3 +27,7 @@ python manage.py runserver 9999
 https://www.kdnuggets.com/publications/sheets/Streamlit_for_Machine_Learning_Cheat_Sheet_KDnuggets.pdf
 
 https://docs.streamlit.io/library/api-reference/charts/st.pydeck_chart
+
+### Others
+
+https://may69.com/purepython/
