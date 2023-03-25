@@ -6,6 +6,8 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
 
 https://django-best-practices.readthedocs.io/en/latest/
 
+https://zachgoldstein.engineering/posts/crusty-knives/crusty-knives/
+
 Do it once
 ```
 python3 -m venv ~/VIRTUAL_ENV/django
