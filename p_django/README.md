@@ -8,7 +8,10 @@ https://django-best-practices.readthedocs.io/en/latest/
 
 https://zachgoldstein.engineering/posts/crusty-knives/crusty-knives/
 
-Do it once
+Django SQL Dashboard provides an authenticated interface for executing read-only SQL queries directly against your PostgreSQL database,
+https://datasette.io/tools/django-sql-dashboard
+
+Do it once to install Django
 ```
 python3 -m venv ~/VIRTUAL_ENV/django
 source ~/VIRTUAL_ENV/django/bin/activate
