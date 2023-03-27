@@ -29,6 +29,8 @@ https://docs.python.org/3/library/functions.html
 
 https://docs.python.org/3/library/index.html
 
+https://github.com/Suor/funcy
+
 https://www.youtube.com/watch?v=wiGkV37Kbxk Raymond Hettinger: Numerical Marvels Inside Python
 
 #### *argv and **kwargs
