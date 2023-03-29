@@ -32,8 +32,10 @@ print("df_read.count()=", df_read.count())
 df_read.display()
 
 ```
+Check result:
+```
 %sh
-ls /dbfs/FileStore/uploads/mlubinsky/23_apps_review_count.csv
+ls /dbfs/FileStore/uploads/mlubinsky/icon_mapping_march_29.csv
 
 ```
 #### How to download file from DBFS to local machine
