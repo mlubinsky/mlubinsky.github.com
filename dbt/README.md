@@ -31,6 +31,13 @@ df_read = spark.read.option("header", "true").format("csv").load(read_fname)
 print("df_read.count()=", df_read.count())
 df_read.display()
 
+Yet another way to read csv file from DBFS
+def load_icon_mapping_from_dbfs(spark, params):
+        path = "/FileStore/tables/IAP/Icon_mappings/IAP_Icon_map_v10.csv"
+        df_csv = spark.read.option("header", "true").format("csv").load(path)
+        print(icon_mapping.count())
+        return df_csv
+
 ```
 Check result:
 ```
