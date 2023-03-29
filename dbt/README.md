@@ -18,17 +18,23 @@ Issue with code above :  it will create folder, ponentially with > 1 file
 
 Solution - convert to pandas:
 ```
-output_fname = "/dbfs/FileStore/uploads/mlubinsky/23_apps_review_count.csv"
-pd = df_23.toPandas()
-pd.to_csv(output_fname) # this will create index
-pd.to_csv('your.csv', index=False) # no index
+fname="FileStore/uploads/mlubinsky/icon_mapping_march_29.csv"
+output_fname = "/dbfs/"+fname
+pd = mapping_all.toPandas()
+#pd.to_csv(output_fname) # this will create index
+pd.to_csv(output_fname, index=False) # no index
 
+print("mapping_all.count()=", mapping_all.count())
+
+read_fname="dbfs:/"+fname
+df_read = spark.read.option("header", "true").format("csv").load(read_fname)
+print("df_read.count()=", df_read.count())
+df_read.display()
+
+```
 %sh
 ls /dbfs/FileStore/uploads/mlubinsky/23_apps_review_count.csv
 
-
-df_23 = spark.read.option("header", "true").format("csv").load(f)
-display(df_23)
 ```
 #### How to download file from DBFS to local machine
 
