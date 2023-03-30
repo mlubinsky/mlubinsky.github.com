@@ -1,3 +1,7 @@
+https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag
+
+https://medium.com/@finndersen/the-ultimate-guide-to-pandas-read-csv-function-5377874e27d5
+
 https://medium.com/@finndersen/guide-to-pandas-extension-types-and-how-to-create-your-own-3b213d689c86
 
 ```
