@@ -1,4 +1,7 @@
 ### Python notes
+
+https://www.stationx.net/python-data-structures-cheat-sheet/
+
 #### Immutable types
 
   Integers, floats, complex numbers, and Booleans, are always immutable. 
