@@ -31,7 +31,7 @@ pyenv + poetry
 https://briansunter.com/blog/python-setup-pyenv-poetry/
 
 
-### Flake Black
+### Flake Black riff
 https://habr.com/ru/company/skillfactory/blog/659493/
 
 python3 -m pip install flake8
@@ -72,8 +72,31 @@ https://www.codementor.io/@adammertz/quick-tip-how-i-use-pip-tools-to-wrangle-de
 
 <https://pip.pypa.io/en/stable/user_guide/>
 
+### venv vs  virtualenv
+
+ venv: This is a built-in module in Python >= 3.3 
+ 
+Two most popular virtual environment libraries for Python are venv and virtualenv. The difference between these two are negligible. However, there is one big difference and that is venv is a standard library that does not need to be installed while virtualenv needs to be installed with pip.
+
+### pipenv vs virtualenv
+
+pipenv is similar to virtualenv , it has one extra feature, which is Pipfile , Pipfile is similat to what we see as packages. json in npm . Pipfile contains all the installed packages in the current environment, and automatically updates itself if you install a new package inside the same environment.
+
 
 ### pyenv pipenv
+```
+To install Python 3.10, I recommend using pyenv. 
+Pyenv allows you to have multiple versions of Python on your workstation.
+Here’s what I did to install 3.10.4 on my laptop after installing Pyenv. (3.10.4 was the latest version of 3.10 
+when I wrote this, you might choose to install any version above 3.10.0).
+
+pyenv install 3.10.4
+
+Then, I used pyenv-virtualenv to make a virtual environment to work with the new 3.10 install.
+
+pyenv virtualenv 3.10.4 python-matching
+pyenv activate python-matching
+```
 
 https://www.jackhoy.com/web-applications/2017/02/12/setting-up-a-python-dev-environment.html
 
