@@ -2,6 +2,14 @@
 
 https://csvbase.com/blog/3
 
+If you want to see the gory details of the format, try the parquet-tools package on PyPI with a sample file:
+
+https://pypi.org/project/parquet-tools/
+```
+pip install -U parquet-tools
+curl -O "https://csvbase.com/meripaterson/stock-exchanges.parquet"
+parquet-tools inspect --detail stock-exchanges.parquet
+```
 
 ### Pandas 2.0
 
