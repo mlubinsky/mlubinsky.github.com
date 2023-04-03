@@ -1,3 +1,17 @@
+### Pandas 2.0
+
+https://news.ycombinator.com/item?id=35423569
+```
+strings as objects and integers turning into floats when NaNs are introduced have been a much bigger annoyance to me, than it ought to.
+I'm excited to try out the new pyarrow dtypes, but it also sounds confusing that there are now 2 classes of types
+
+
+Yeah, I stopped using pandas entirely for ETL for this exact reason. 
+If you are trying to maintain the fidelity of the data while cleaning, automatic casting is awful. 
+If the new backend prevents automatic casting, it might be worth reconsidering for me.
+
+```
+
 https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag
 
 https://betterprogramming.pub/pandas-illustrated-the-definitive-visual-guide-to-pandas-c31fa921a43
