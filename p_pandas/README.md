@@ -1,5 +1,7 @@
 ### Pandas 2.0
 
+https://datapythonista.me/blog/pandas-20-and-the-arrow-revolution-part-i
+
 https://news.ycombinator.com/item?id=35423569
 ```
 strings as objects and integers turning into floats when NaNs are introduced have been a much bigger annoyance to me, than it ought to.
