@@ -1,3 +1,8 @@
+### Working with parquet
+
+https://csvbase.com/blog/3
+
+
 ### Pandas 2.0
 
 https://datapythonista.me/blog/pandas-20-and-the-arrow-revolution-part-i
