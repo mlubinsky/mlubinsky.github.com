@@ -1,4 +1,25 @@
+### Pre-commit
+
+https://pre-commit.com/
+
+https://builtwithdjango.com/blog/improve-your-code-with-pre-commit
+
+Create file in the root of your repo: 
+.pre-commit-config.yaml
+```
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+```
+
+
 https://jwiegley.github.io/git-from-the-bottom-up/
+
+### Git GUI
 
 https://github.com/extrawurst/gitui
 ```
