@@ -1,5 +1,7 @@
 https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag
 
+https://betterprogramming.pub/pandas-illustrated-the-definitive-visual-guide-to-pandas-c31fa921a43
+
 https://medium.com/@finndersen/the-ultimate-guide-to-pandas-read-csv-function-5377874e27d5
 
 https://medium.com/@finndersen/guide-to-pandas-extension-types-and-how-to-create-your-own-3b213d689c86
