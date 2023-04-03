@@ -4,7 +4,9 @@ https://www.tadviewer.com/  A fast viewer for CSV and Parquet files and SQLite a
 
 https://csvbase.com/blog/3
 
-If you want to see the gory details of the format, try the parquet-tools package on PyPI with a sample file:
+https://www.linkedin.com/pulse/all-you-need-know-parquet-file-structure-depth-rohan-karanjawala/
+
+If you want to see the gory details of the format, try the _parquet-tools_ package on PyPI with a sample file:
 
 https://pypi.org/project/parquet-tools/
 ```
