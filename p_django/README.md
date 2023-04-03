@@ -8,6 +8,12 @@ https://django-best-practices.readthedocs.io/en/latest/
 
 https://zachgoldstein.engineering/posts/crusty-knives/crusty-knives/
 
+https://www.django-unicorn.com/
+
+https://www.django-rest-framework.org/
+
+https://django-ninja.rest-framework.com/
+
 Django SQL Dashboard provides an authenticated interface for executing read-only SQL queries directly against your PostgreSQL database,
 https://datasette.io/tools/django-sql-dashboard
 
