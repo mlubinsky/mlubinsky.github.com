@@ -1,5 +1,7 @@
 ### Working with parquet
 
+https://www.tadviewer.com/  A fast viewer for CSV and Parquet files and SQLite and DuckDb databases that supports large files.
+
 https://csvbase.com/blog/3
 
 If you want to see the gory details of the format, try the parquet-tools package on PyPI with a sample file:
