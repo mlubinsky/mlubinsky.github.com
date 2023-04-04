@@ -13,6 +13,7 @@ https://pypi.org/project/parquet-tools/
 pip install -U parquet-tools
 curl -O "https://csvbase.com/meripaterson/stock-exchanges.parquet"
 parquet-tools inspect --detail stock-exchanges.parquet
+ parquet-tools cat <your file.parquet> | grep etc
 ```
 
 ### Pandas 2.0
