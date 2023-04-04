@@ -8,6 +8,8 @@ https://github.com/domoritz/arrow-tools
 
 https://csvbase.com/blog/3
 
+https://clickhouse.com/blog/extracting-converting-querying-local-files-with-sql-clickhouse-local
+
 https://news.ycombinator.com/item?id=35418933
 
 https://www.linkedin.com/pulse/all-you-need-know-parquet-file-structure-depth-rohan-karanjawala/
