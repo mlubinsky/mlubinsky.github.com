@@ -2,6 +2,10 @@
 
 https://www.tadviewer.com/  A fast viewer for CSV and Parquet files and SQLite and DuckDb databases that supports large files.
 
+https://til.simonwillison.net/duckdb/parquet
+
+https://github.com/domoritz/arrow-tools
+
 https://csvbase.com/blog/3
 
 https://www.linkedin.com/pulse/all-you-need-know-parquet-file-structure-depth-rohan-karanjawala/
