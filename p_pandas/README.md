@@ -53,6 +53,28 @@ df.info()
 ```
 Now we expect the data column has type datetime
 
+To convert string column to number:
+
+df['quantity'] = pd.to_numeric(df['quantity'], errors='coerce')
+df.query('quantity < 0')
+
+Convert negative numbers to positive:
+
+df.loc[df['quantity'] < 0,'quantity'] = abs(df['quantity'])
+
+Duplicates:
+
+df[df.duplicated()]
+
+Remove duplicates:
+
+df = df.drop(df[df.duplicated()].index)
+
+Show unique values:
+
+df.product_name.unique()
+
+df.to_csv('processed_data.csv',index=False, header=True)
 
 ### Pandas 2.0
 
