@@ -24,6 +24,36 @@ parquet-tools inspect --detail stock-exchanges.parquet
  parquet-tools cat <your file.parquet> | grep etc
 ```
 
+### Reading csv
+```
+import pandas as pd
+import re
+
+df = pd.read_csv('data_with_errors.csv')
+df.head()
+df.info()
+```
+Observe the data column has type string,
+Following attempt to fix it may fail if some records have not obey the expected format:
+```
+df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
+```
+Another attempt to fix:
+```
+search = lambda x: x if re.search(r"\d{4}-\d{2}-\d{2}", x) else 'not found'
+df['date'] = df['date'].map(search)
+df.query('date == "not found"').count()
+```
+Let delete records where data are not valid
+```
+df = df.drop(df.query('date == "not found"').index)
+df.query('date == "not found"').count()
+df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
+df.info()
+```
+Now we expect the data column has type datetime
+
+
 ### Pandas 2.0
 
 https://datapythonista.me/blog/pandas-20-and-the-arrow-revolution-part-i
