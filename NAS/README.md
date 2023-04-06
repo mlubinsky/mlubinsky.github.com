@@ -1,4 +1,6 @@
-### NetGear AX1800 WiFi 6 router 6MA62954A0529 unevenmoon759
+### NetGear AX1800 WiFi 6 router 
+Serial: 6MA62954A0529 unevenmoon759
+
 https://www.downloads.netgear.com/files/GDC/RAX10/RAX10_UM_EN.pdf
 
 192.168.1.1
