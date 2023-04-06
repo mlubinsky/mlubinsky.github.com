@@ -3,15 +3,19 @@ Serial: 6MA62954A0529 unevenmoon759
 
 https://www.downloads.netgear.com/files/GDC/RAX10/RAX10_UM_EN.pdf
 
-192.168.1.1
+192.168.1.1 admin/V...7!
 
 https://kb.netgear.com/980/How-do-I-log-in-to-my-NETGEAR-router
 
 ### ARRIS router: 10.0.0.1  admin/password1
 
-### Synology Disk station DS-213 station: 10.0.0.83
+### Synology Disk station DS-213 station: 192.168.1.47
 
-Finder -> Go -> Connect to Server:  smb://10.0.0.83 
+old: 10.0.0.83
+
+Finder -> Go -> Connect to Server:  smb://192.168.1.47
+
+old: smb://10.0.0.83 
 
 admin/pereucet
 
