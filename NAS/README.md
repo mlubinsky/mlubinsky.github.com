@@ -1,4 +1,6 @@
-### NetGear
+### NetGear AX1800 WiFi 6 router
+https://www.downloads.netgear.com/files/GDC/RAX10/RAX10_UM_EN.pdf
+
 192.168.1.1
 
 https://kb.netgear.com/980/How-do-I-log-in-to-my-NETGEAR-router
