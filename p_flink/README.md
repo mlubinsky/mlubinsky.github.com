@@ -23,9 +23,11 @@ https://dev.to/aws-builders/serverless-complex-event-processing-with-apache-flin
 
 #### DataSources for DataStream API
 
-readFile(fileInputFormat, path, wathcType, interval, PathFilter)
-socketTextStream
-addSource() Kafka, Flume, etc
+- readFile(fileInputFormat, path, wathcType, interval, PathFilter)
+- socketTextStream
+addSource() 
+- Kafka 
+- Flume, etc
 
 #### Data Sink
 
@@ -47,19 +49,31 @@ https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/o
 SingleOutputStreamOperator<R> map(MapFunction<T,R> mapper)
 
 #### Reduce: 
-получает два последовательных значения и возвращает один объект, скомбинировав их в объект того же типа; этот метод прогоняется по всем значениям в группе, пока из них не останется всего одно.
-
+```
+получает два последовательных значения и возвращает один объект, 
+скомбинировав их в объект того же типа; 
+этот метод прогоняется по всем значениям в группе, пока из них не останется всего одно.
+```
 T reduce(T value1, T value2)
 
 #### Filter: 
-получает объект T и возвращает поток объектов T; этот метод прогоняется по всем элементам DataStream, но возвращает только те, для которых функция возвращает true.
-
+```
+получает объект T и возвращает поток объектов T; 
+этот метод прогоняется по всем элементам DataStream, 
+но возвращает только те, для которых функция возвращает true.
+```
 SingleOutputStreamOperator<T> filter(FilterFunction<T> filter)
 
 
 #### Map 
-
-All transformations require a user defined functions to be provided by application developer. For example, if we have to map String values to Integer from a data stream, we will transform each value using the MapFunction. MapFunction is used with the DataStreams and user has to implement the business logic for each value in the map method as follows
+```
+All transformations require a user defined functions to be provided by application developer. 
+For example, if we have to map String values to Integer from a data stream, 
+we will transform each value using the MapFunction. 
+MapFunction is used with the DataStreams and user has to implement the business logic 
+for each value in the map method as follows:
+```
+Exmaple:
 ```
 class MyMapFunction implements MapFunction<String, Integer> {
   public Integer map(String value) { return Integer.parseInt(value); }
@@ -67,7 +81,12 @@ class MyMapFunction implements MapFunction<String, Integer> {
 ```
 
 ####  CoMapFunctions 
-  are similar to MapFunction except they are used for the ConnectedStream so we will map the values of both streams using respected map methods, map1, map2. There is no guarantee that which map method will be called first. The following sample has two input streams of Integer and strings and it returns boolean.
+```
+  CoMapFunctions are similar to MapFunction except they are used for the ConnectedStream 
+  so we will map the values of both streams using respected map methods, map1, map2. 
+  There is no guarantee that which map method will be called first. 
+```  
+  The following sample has two input streams of Integer and strings and it returns boolean.
 ```
 connectedStreams.map(new CoMapFunction<Integer, String, Boolean>() {
     @Override
@@ -83,19 +102,24 @@ connectedStreams.map(new CoMapFunction<Integer, String, Boolean>() {
 ```
 
   #### Rich functions 
-  provide four additional methods:
- - open, 
- - close, 
- - getRuntimeContext and 
+  provide four additional methods  other than map methods:
+ - open()
+ - close() 
+ - getRuntimeContext() 
  - setRuntimeContext()
  
- other than map methods. We can have both RichMap and RichCoMap.
-
-Open is used to make function stateful by initializing the state. It’s only called once. 
+ We can have both RichMap and RichCoMap.
+```
+open() is used to make function stateful by initializing the state. It’s only called once. 
 RuntimeContext is used to access different state types e.g. ValueState, ListState. 
 Similarly, we can clean up on the close method as it is called when processing is done.
 
-Following is the example using RichFlatMapFunction to count average of all values over a count window of 5. It does use value state to store the running sum and count of the values. We will initialize the state using open method of the rich function. We have used gerRuntimeContext to get the state descriptor.
+Following is the example using RichFlatMapFunction to count average of all values over a count window of 5. 
+It does use value state to store the running sum and count of the values. 
+We will initialize the state using open method of the rich function. 
+We have used gerRuntimeContext to get the state descriptor.
+```
+Code:
 ```
 public class CountWindowAverage extends RichFlatMapFunction<Tuple2<Long, Long>, Tuple2<Long, Long>> {
 
@@ -131,7 +155,9 @@ public class CountWindowAverage extends RichFlatMapFunction<Tuple2<Long, Long>, 
     }
 }
 ```
-So to summarize, we have MapFunction for DataStreams and CoMapFunction for ConnectedStreams. Furthermore, appending Rich to these functions make them rich by adding four additional methods which are commonly used for state management.
+So to summarize, we have MapFunction for DataStreams and CoMapFunction for ConnectedStreams. 
+Furthermore, appending Rich to these functions make them rich 
+by adding four additional methods which are commonly used for state management.
 
 #### Times 
 https://nightlies.apache.org/flink/flink-docs-release-1.10/dev/event_time.html
@@ -151,14 +177,14 @@ The streaming application/transformation can be
  - stateful- depends on current element and previous elements  : reduce, sum, aggregate
  - stateless - depends on current element only: map, flatmap, filter
  
-In many cases, you can process application stream elements independently from each other, but some cases require managing state, referred to as _stateful stream processing_. 
+In many cases, you can process application stream elements independently from each other, 
+but some cases require managing state, referred to as _stateful stream processing_. 
 
 For example, if we monitor the average running temperature of an IoT sensor, we need to store some values in the state. Also, the state is required to support Flink’s fault-tolerance behavior.
 
 #### There are two types of states
-
 — Operator state: The operator state is related to a single operator - 2 sub types (Broadcast and List State)
-- Keyed state is shared across a keyed stream. Keyed states support different data structures to store the state values: 6 state sub-types:
+- Keyed state: is shared across a keyed stream. Keyed states support different data structures to store the state values: 6 state sub-types:
 
  https://habr.com/ru/company/beeline/blog/648729/
  
@@ -178,14 +204,16 @@ For example, if we monitor the average running temperature of an IoT sensor, we 
     6. Broadcast State
 ```
 #### RichFunction
-Keyed State can only be used in RichFunction. The biggest difference between RichFunction and common and traditional Function is that it has its own lifecycle. The use of Key State contains the following four steps:
+Keyed State can only be used in RichFunction. 
+The biggest difference between RichFunction and common and traditional Function is that it has its own lifecycle. 
+The use of Key State contains the following four steps:
 
 ```
  1. Declare the State as the instance variable in the RichFunction.
- 2. Perform an initialization assignment operation for the State in the open () method corresponding to the RichFunction.
+ 2. Perform an initialization assignment operation for the State in the open() method corresponding to the RichFunction.
       2.a The first step of the assignment operation is to create a StateDescriptor and specify a name for the State during the creation. 
       2.b The second step is to call the getRuntimeContext().getState(…) in RichFunction to pass in the defined StateDescriptor so as to obtain the State.
-3. Call State method (e.g. state.value() or state.update() to read and write
+3. Call State method: e.g. state.value() or state.update() to read and write
 ```
 
 The state can be used with any of the transformations, but we have to use the Rich version of the functions 
