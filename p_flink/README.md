@@ -37,8 +37,8 @@ writeAs
 https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/operators/overview/
 
 - filter
-- map
-- flatmap
+- map: for every input eleement : 1 output element
+- flatmap:  returns a collection (which can hold none, one, or more elements).
 - groupby
 - sum
 
