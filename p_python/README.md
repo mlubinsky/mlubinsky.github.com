@@ -11,15 +11,11 @@ https://www.stationx.net/python-data-structures-cheat-sheet/
   lists, dictionaries, and sets are mutable 
 ```  
    isinstance([1, 2, 3], list)
-
    issubclass(bool, int) #  True
-   
    isinstance(True, int) # True
-
    isinstance(False, int)  True
-
-    int(True) # 1
-
+   
+   int(True) # 1
    int(False) # 0 
 ```
 ### Links
@@ -846,6 +842,31 @@ def running_average ( func ) :
   
 return wrapper    
     
+```
+### Retry decorator
+```
+import time
+from functools import wraps
+def retry(max_tries=3, delay_seconds=1):
+    def decorator_retry(func):
+        @wraps(func)
+        def wrapper_retry(*args, **kwargs):
+            tries = 0
+            while tries < max_tries:
+                try:
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    tries += 1
+                    if tries == max_tries:
+                        raise e
+                    time.sleep(delay_seconds)
+        return wrapper_retry
+    return decorator_retry
+@retry(max_tries=5, delay_seconds=2)
+
+def call_dummy_api():
+    response = requests.get("https://jsonplaceholder.typicode.com/todos/1")
+    return response
 ```
 
 ### Enumeration
