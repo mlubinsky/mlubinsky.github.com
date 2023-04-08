@@ -889,7 +889,26 @@ def my_function():
     time.sleep(1)  # simulate some time-consuming operation
     return    
 ```
+Now, whenever the code is executed, you’d see an output similar to this:
+```
+INFO:root:Executing extract_data
+INFO:root:Finished executing extract_data
+INFO:root:Executing transform_data
+INFO:root:Finished executing transform_data
+INFO:root:Executing load_data
+INFO:root:Finished executing load_data
+```
+### Combining decorators
+```
+@log_execution
+@timing_decorator
+def my_function(x, y):
+    time.sleep(1)
+    return x + y
+```    
+
 ### Loggging decorator
+https://towardsdatascience.com/python-decorators-for-data-science-6913f717669a
 ```
 import logging
 import functools
