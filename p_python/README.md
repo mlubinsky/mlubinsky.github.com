@@ -847,6 +847,7 @@ return wrapper
 ```
 import time
 from functools import wraps
+
 def retry(max_tries=3, delay_seconds=1):
     def decorator_retry(func):
         @wraps(func)
@@ -862,11 +863,76 @@ def retry(max_tries=3, delay_seconds=1):
                     time.sleep(delay_seconds)
         return wrapper_retry
     return decorator_retry
-@retry(max_tries=5, delay_seconds=2)
+    
 
+@retry(max_tries=5, delay_seconds=2)
 def call_dummy_api():
     response = requests.get("https://jsonplaceholder.typicode.com/todos/1")
     return response
+```
+### Timing decorator
+```
+import time
+
+def timing_decorator(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        print(f"Function {func.__name__} took {end_time - start_time} seconds to run.")
+        return result
+    return wrapper
+    
+@timing_decorator
+def my_function():
+    # some code here
+    time.sleep(1)  # simulate some time-consuming operation
+    return    
+```
+### Loggging decorator
+```
+import logging
+import functools
+
+logging.basicConfig(level=logging.INFO)
+
+def log_execution(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        logging.info(f"Executing {func.__name__}")
+        result = func(*args, **kwargs)
+        logging.info(f"Finished executing {func.__name__}")
+        return result
+    return wrapper
+
+@log_execution
+def extract_data(source):
+    # extract data from source
+    data = ...
+
+    return data
+
+@log_execution
+def transform_data(data):
+    # transform data
+    transformed_data = ...
+
+    return transformed_data
+
+@log_execution
+def load_data(data, target):
+    # load data into target
+    ...
+
+def main():
+    # extract data
+    data = extract_data(source)
+
+    # transform data
+    transformed_data = transform_data(data)
+
+    # load data
+    load_data(transformed_data, target)
 ```
 
 ### Enumeration
