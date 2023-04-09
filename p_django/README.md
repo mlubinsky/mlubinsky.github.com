@@ -57,6 +57,8 @@ with asyncpg and plain SQL
 
 ### Streamlit
 
+https://www.youtube.com/watch?v=gWV1gbeB-IM&t
+
 https://www.redhat.com/sysadmin/streamlit-display-data
 
 https://www.kdnuggets.com/publications/sheets/Streamlit_for_Machine_Learning_Cheat_Sheet_KDnuggets.pdf
