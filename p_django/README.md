@@ -1,3 +1,8 @@
+# Plotly / Dash
+
+https://habr.com/ru/articles/728256/
+
+
 # Django
 
 https://docs.djangoproject.com/en/4.1/intro/tutorial01/
