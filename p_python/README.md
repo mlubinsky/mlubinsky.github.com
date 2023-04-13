@@ -34,6 +34,8 @@ https://github.com/zx80/anodb  - Python with SQL
 
 https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag
 
+https://joblib.readthedocs.io/ joblib
+
 https://www.youtube.com/watch?v=wiGkV37Kbxk Raymond Hettinger: Numerical Marvels Inside Python
 
 #### *argv and **kwargs
