@@ -36,6 +36,10 @@ https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag
 
 https://joblib.readthedocs.io/ joblib
 
+https://news.ycombinator.com/item?id=35546804 joblib
+
+https://github.com/amaargiru/pycore
+
 https://www.youtube.com/watch?v=wiGkV37Kbxk Raymond Hettinger: Numerical Marvels Inside Python
 
 #### *argv and **kwargs
