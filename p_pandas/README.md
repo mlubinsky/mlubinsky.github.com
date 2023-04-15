@@ -6,6 +6,8 @@ https://til.simonwillison.net/duckdb/parquet
 
 https://github.com/domoritz/arrow-tools
 
+https://habr.com/ru/companies/skillfactory/articles/720530/
+
 https://csvbase.com/blog/3
 
 https://clickhouse.com/blog/extracting-converting-querying-local-files-with-sql-clickhouse-local
