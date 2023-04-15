@@ -28,7 +28,10 @@ parquet-tools inspect --detail stock-exchanges.parquet
 
 
 ### Pandas
-https://github.com/noklam/dtype_diet/tree/master/
+
+https://github.com/noklam/dtype_diet/tree/master/ Save memory
+
+https://habr.com/ru/companies/otus/articles/728118/
 
 https://www.youtube.com/watch?v=-tU7fuUiq7w
 
