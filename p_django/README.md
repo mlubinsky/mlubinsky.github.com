@@ -17,6 +17,8 @@ https://www.django-unicorn.com/
 
 https://www.django-rest-framework.org/
 
+https://testdriven.io/blog/drf-basics/
+
 https://django-ninja.rest-framework.com/
 
 Django SQL Dashboard provides an authenticated interface for executing read-only SQL queries directly against your PostgreSQL database,
