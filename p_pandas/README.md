@@ -24,6 +24,12 @@ parquet-tools inspect --detail stock-exchanges.parquet
  parquet-tools cat <your file.parquet> | grep etc
 ```
 
+
+### Pandas
+https://github.com/noklam/dtype_diet/tree/master/
+
+https://www.youtube.com/watch?v=-tU7fuUiq7w
+
 ### Reading csv
 ```
 import pandas as pd
