@@ -30,6 +30,8 @@ https://github.com/noklam/dtype_diet/tree/master/
 
 https://www.youtube.com/watch?v=-tU7fuUiq7w
 
+https://habr.com/ru/search/?q=pandas&target_type=posts&order=relevance
+
 ### Reading csv
 ```
 import pandas as pd
