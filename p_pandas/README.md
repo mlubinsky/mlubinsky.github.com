@@ -32,6 +32,9 @@ https://www.youtube.com/watch?v=-tU7fuUiq7w
 
 https://habr.com/ru/search/?q=pandas&target_type=posts&order=relevance
 
+Correlation matrix:
+https://habr.com/ru/articles/708468/
+
 ### Reading csv
 
 ```
