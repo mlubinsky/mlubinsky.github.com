@@ -33,6 +33,18 @@ https://www.youtube.com/watch?v=-tU7fuUiq7w
 https://habr.com/ru/search/?q=pandas&target_type=posts&order=relevance
 
 ### Reading csv
+
+```
+df_train = pd.read_csv('data/train.csv',
+                        dtype={'content_id': 'int16',
+                               'content_type_id': 'int8',
+                               'task_container_id': 'int16',
+                               'user_answer': 'int8',
+                               'answered_correctly': 'int8',
+                               'prior_question_elapsed_time': 'float32'})
+                               
+```
+
 ```
 import pandas as pd
 import re
