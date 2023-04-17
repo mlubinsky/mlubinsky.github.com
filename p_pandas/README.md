@@ -26,6 +26,9 @@ parquet-tools inspect --detail stock-exchanges.parquet
  parquet-tools cat <your file.parquet> | grep etc
 ```
 
+### Polars
+
+https://itnext.io/the-fastest-way-to-read-a-csv-file-in-pandas-2-0-532c1f978201
 
 ### Pandas
 
@@ -41,6 +44,8 @@ Correlation matrix:
 https://habr.com/ru/articles/708468/
 
 ### Reading csv
+
+https://pandas.pydata.org/docs/user_guide/scale.html
 
 ```
 df_train = pd.read_csv('data/train.csv',
