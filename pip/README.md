@@ -1,4 +1,15 @@
+## My Mac
 ````
+pwd
+/Users/mlubinsky/Library/Python/3.9/bin
+
+-rwxr-xr-x@ 1 mlubinsky  staff       256 Apr 18 12:50 pip
+-rwxr-xr-x@ 1 mlubinsky  staff       256 Apr 18 12:50 pip3
+-rwxr-xr-x@ 1 mlubinsky  staff       256 Apr 18 12:50 pip3.10
+-rwxr-xr-x@ 1 mlubinsky  staff       256 Apr 18 12:50 pip3.9
+-rwxr-xr-x@ 1 mlubinsky  staff  23797762 Apr 18 12:49 ruff
+
+
 pip3 list
 Package    Version
 ---------- -------
