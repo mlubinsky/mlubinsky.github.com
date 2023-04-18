@@ -1,3 +1,25 @@
+````
+pip3 list
+Package    Version
+---------- -------
+altgraph   0.17.2
+future     0.18.2
+macholib   1.15.2
+pip        23.1
+ruff       0.0.261
+setuptools 58.0.4
+six        1.15.0
+wheel      0.37.0
+[~]$ ruff
+-bash: ruff: command not found
+ 
+[~]$ python3 -m pip  install ruff
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ruff in ./Library/Python/3.9/lib/python/site-packages (0.0.261)
+ 
+[~]$ pip3 -V
+pip 23.1 from /Users/mlubinsky/Library/Python/3.9/lib/python/site-packages/pip (python 3.9)
+```
 https://snarky.ca/how-virtual-environments-work/ 
 
 https://news.ycombinator.com/item?id=35131357
@@ -27,11 +49,17 @@ https://www.andreagrandi.it/2022/01/29/install-python-with-pyenv-and-pyenvvirtua
 
 https://blog.pronus.io/en/posts/python/how-to-set-up-a-perfect-python-project/
 
+
 pyenv + poetry
 https://briansunter.com/blog/python-setup-pyenv-poetry/
 
 
-### Flake Black riff
+### Flake Black ruff
+```
+python3 -m pip  install ruff
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ruff in ./Library/Python/3.9/lib/python/site-packages (0.0.261)
+```
 https://habr.com/ru/company/skillfactory/blog/659493/
 
 python3 -m pip install flake8
