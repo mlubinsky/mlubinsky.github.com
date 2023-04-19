@@ -208,6 +208,8 @@ NamedTupleCard = namedtuple('NamedTupleCard', ['rank', 'suit'])
 
 https://realpython.com/python-data-classes/
 
+https://earthly.dev/blog/python-data-classes/
+
 ```
 @dataclass
 class DataClassCard:
