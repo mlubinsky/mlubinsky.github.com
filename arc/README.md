@@ -1,5 +1,14 @@
 https://github.com/DovAmir/awesome-design-patterns
 
+
+### Diagrams builders 
+
+https://diagrams.mingrammer.com/  Python
+
+https://towardsdatascience.com/diagrams-as-code-python-d9cbaa959ed5
+
+draw.io and Excalidraw.com
+
 ### Streaming
 
 Book:  <http://streamingsystems.net/>
