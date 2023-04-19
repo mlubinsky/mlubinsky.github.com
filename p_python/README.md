@@ -22,6 +22,8 @@ https://www.stationx.net/python-data-structures-cheat-sheet/
 
 https://docs.python-guide.org/ 
 
+https://realpython.com/python-pathlib/ Pathlib module from standard library
+
 https://realpython.com/python-iterators-iterables/
 
 https://docs.python.org/3/library/functions.html
