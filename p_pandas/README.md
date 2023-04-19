@@ -1,5 +1,7 @@
 ### Working with parquet
 
+https://lobste.rs/s/c49sak/which_embedded_olap_database_pick
+
 https://www.tadviewer.com/  A fast viewer for CSV and Parquet files and SQLite and DuckDb databases that supports large files.
 
 https://til.simonwillison.net/duckdb/parquet
