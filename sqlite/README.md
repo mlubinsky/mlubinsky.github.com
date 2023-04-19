@@ -8,6 +8,8 @@ https://sqlite-utils.datasette.io/en/stable/cli.html SQLite extensions
 ### GUI
 https://github.com/sqlitebrowser/sqlitebrowser
 
+https://github.com/little-brother/sqlite-gui
+
 https://lobste.rs/s/k9hzrj/db_browser_for_sqlite
 
 Sequel Ace - UI
