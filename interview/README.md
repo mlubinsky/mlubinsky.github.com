@@ -1,5 +1,7 @@
 https://relational.ai/careers/ JOB
 
+https://habr.com/ru/articles/729944/
+
 https://github.com/nkwade/nkwade-lc-solutions
 
 https://github.com/klaus19/LeetcodeinPython
