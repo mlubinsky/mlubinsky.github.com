@@ -44,6 +44,9 @@ https://github.com/amaargiru/pycore
 
 https://www.youtube.com/watch?v=wiGkV37Kbxk Raymond Hettinger: Numerical Marvels Inside Python
 
+How to contribute to open source python projects:
+https://www.reddit.com/r/Python/comments/12p771v/what_can_i_contribute_to_scipy_or_other_with_my/
+
 #### *argv and **kwargs
 Writing *args is a well followed convention, but you can choose a different name - the asterisk is what makes it a variable
 argument
