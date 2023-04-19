@@ -32,6 +32,8 @@ parquet-tools inspect --detail stock-exchanges.parquet
 
 ### Polars
 
+https://www.parand.com/a-practical-introduction-to-polars.html
+
 https://itnext.io/the-fastest-way-to-read-a-csv-file-in-pandas-2-0-532c1f978201
 
 ### Pandas
