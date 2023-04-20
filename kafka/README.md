@@ -1,5 +1,7 @@
 https://www.freecodecamp.org/news/apache-kafka-handbook/
 
+https://stackabuse.com/how-to-list-all-kafka-topics/
+
 Structure of Kafka message:
 ```
 key
