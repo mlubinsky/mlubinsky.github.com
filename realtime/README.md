@@ -2,6 +2,8 @@ https://habr.com/ru/company/southbridge/blog/716022/. Kafka, BigQuery & Looker S
 
 https://habr.com/ru/companies/southbridge/articles/730380/
 
+https://habr.com/ru/companies/uchi_ru/articles/730330/
+
 https://towardsdatascience.com/real-time-event-streaming-with-kafka-bigquery-69c3baebb51e
 
 ```
