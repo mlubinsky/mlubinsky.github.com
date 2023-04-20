@@ -18,7 +18,9 @@ https://habr.com/ru/company/microsoft/blog/503462/
 https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_270839230_130845605&dclid=CImGtNrTpeoCFQMqrQYd4dYHbA
 
 
-### AWS EC2 cheatsheet
+### AWS  cheatsheets
+
+https://www.datadoghq.com/resources/datadog-lambda-cheatsheet/
 
 https://www.datadoghq.com/resources/datadog-ec2-cheatsheet/
 
