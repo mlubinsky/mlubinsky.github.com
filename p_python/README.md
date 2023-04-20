@@ -24,6 +24,8 @@ https://docs.python-guide.org/
 
 https://realpython.com/python-pathlib/ Pathlib module from standard library
 
+https://cheatography.com/mad100141/cheat-sheets/path-cheat-sheet-python/
+
 https://realpython.com/python-iterators-iterables/
 
 https://docs.python.org/3/library/functions.html
