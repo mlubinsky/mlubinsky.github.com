@@ -1,3 +1,9 @@
+## Windows
+
+https://www.postgresql.org/download/windows/
+
+https://postgis.net/workshops/postgis-intro/installation.html PostGIS
+
 ## UI Clients 
 
 <https://www.macpostgresclient.com/> . SQLPlus 
