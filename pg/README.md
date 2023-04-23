@@ -4,6 +4,23 @@ https://www.postgresql.org/download/windows/
 
 https://postgis.net/workshops/postgis-intro/installation.html PostGIS
 
+### Create users and roles
+
+https://chartio.com/learn/postgresql/create-a-user-with-pgadmin/
+```
+CREATE DATABASE xxx
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+    
+CREATE DATABASE yourdbname;
+CREATE USER youruser WITH ENCRYPTED PASSWORD 'yourpass';
+GRANT ALL PRIVILEGES ON DATABASE yourdbname TO youruser;    
+
+```
+
 ## UI Clients 
 
 <https://www.macpostgresclient.com/> . SQLPlus 
