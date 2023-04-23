@@ -4,6 +4,14 @@ https://www.postgresql.org/download/windows/
 
 https://postgis.net/workshops/postgis-intro/installation.html PostGIS
 
+
+### PG dump /restore
+```
+chcp 1252
+set PGPASSWORD=spotlight_password
+pg_dump -h 1ip_here -d dbname -U username --file=spotlight.sql
+```
+
 ### PgAdmin
  right click on database:
  ```
