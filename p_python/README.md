@@ -42,6 +42,8 @@ https://joblib.readthedocs.io/ joblib
 
 https://news.ycombinator.com/item?id=35546804 joblib
 
+https://www.reddit.com/r/Python/comments/12tr2sn/pythoneers_here_what_are_some_of_the_best_python/
+
 https://github.com/amaargiru/pycore
 
 https://www.youtube.com/watch?v=wiGkV37Kbxk Raymond Hettinger: Numerical Marvels Inside Python
