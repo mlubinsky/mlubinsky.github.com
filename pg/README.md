@@ -6,11 +6,20 @@ https://postgis.net/workshops/postgis-intro/installation.html PostGIS
 
 
 ### PG dump /restore
+
+pd_dump Options:
+```
+-C 
+-Fp   -F, --format=c|d|t|p output file format (custom, directory, tar, plain text (default)
+```
+Example:
 ```
 chcp 1252
 set PGPASSWORD=spotlight_password
 pg_dump -h 1ip_here -d dbname -U username --file=spotlight.sql
 ```
+### Restore
+ psql -U {user-name} -d {desintation_db}-f {dumpfilename.sql}
 
 ### PgAdmin
  right click on database:
