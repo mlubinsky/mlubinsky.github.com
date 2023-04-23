@@ -4,6 +4,12 @@ https://www.postgresql.org/download/windows/
 
 https://postgis.net/workshops/postgis-intro/installation.html PostGIS
 
+### PgAdmin
+ right click on database:
+ ```
+ psql tool
+ query tool
+```
 ### Create users and roles
 
 https://chartio.com/learn/postgresql/create-a-user-with-pgadmin/
