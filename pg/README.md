@@ -41,8 +41,8 @@ pg_dump --jobs=3 --format=directory --file=dump.dir dbname
 Example:
 ```
 chcp 1252
-set PGPASSWORD=spotlight_password
-pg_dump -h 1ip_here -d dbname -U username --file=spotlight.sql
+set PGPASSWORD=my_password
+pg_dump -h  ip_here -d dbname -U username -Fc --file=mydump.custom_format
 ```
 ### Restore
  psql -U {user-name} -d {desintation_db}-f {dumpfilename.sql}
