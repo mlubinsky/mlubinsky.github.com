@@ -9,7 +9,7 @@ https://postgis.net/workshops/postgis-intro/installation.html PostGIS
 
 https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-pgdump-restore
 
-Vaccum before backup:
+Vaccum before backup:  https://www.postgresql.org/docs/current/sql-vacuum.html
 ```
 select 
 schemaname,
