@@ -27,7 +27,12 @@ Output a custom-format archive suitable for input into pg_restore. Together with
 
 d
 directory
-Output a directory-format archive suitable for input into pg_restore. This will create a directory with one file for each table and blob being dumped, plus a so-called Table of Contents file describing the dumped objects in a machine-readable format that pg_restore can read. A directory format archive can be manipulated with standard Unix tools; for example, files in an uncompressed archive can be compressed with the gzip tool. This format is compressed by default and also supports parallel dumps.
+Output a directory-format archive suitable for input into pg_restore. 
+This will create a directory with one file for each table and blob being dumped, 
+plus a so-called Table of Contents file describing the dumped objects in a machine-readable format that pg_restore can read. 
+A directory format archive can be manipulated with standard Unix tools; for example, 
+files in an uncompressed archive can be compressed with the gzip tool. 
+This format is compressed by default and also supports parallel dumps.
 
 It is possible to dump multiple tables in parallel when using the directory dump format.
 This is faster, but it also leads to a higher load on the database server. 
@@ -35,16 +40,19 @@ We control the number of tables exported in parallel using the '—jobs' option.
 In our example, we export three tables in parallel. It is not possible to redirect the output to a file as we are writing a directory.
 We use the '—file' option instead with specification for the directory name:
 
-pg_dump --jobs=3 --format=directory --file=dump.dir dbname
+The specified directory that the pg_dump will create must not exist. You can dump data into a specified directory by using the following command:
+
+pg_dump -F d database_name -f database_directory
+pg_dump --format=directory --jobs=3  --file=dump.dir database_name
 
 ```
-Example:
+Example of custom flag:
 ```
 chcp 1252
 set PGPASSWORD=my_password
 pg_dump -h  ip_here -d dbname -U username -Fc --file=mydump.custom_format
 ```
-### Restore
+### Restore using psql works only with plain text format (default)
  psql -U {user-name} -d {desintation_db}-f {dumpfilename.sql}
 
 
