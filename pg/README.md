@@ -20,6 +20,23 @@ pd_dump Options:
 ```
 -C 
 -Fp   -F, --format=c|d|t|p output file format (custom, directory, tar, plain text (default)
+
+c
+custom
+Output a custom-format archive suitable for input into pg_restore. Together with the directory output format, this is the most flexible output format in that it allows manual selection and reordering of archived items during restore. This format is also compressed by default.
+
+d
+directory
+Output a directory-format archive suitable for input into pg_restore. This will create a directory with one file for each table and blob being dumped, plus a so-called Table of Contents file describing the dumped objects in a machine-readable format that pg_restore can read. A directory format archive can be manipulated with standard Unix tools; for example, files in an uncompressed archive can be compressed with the gzip tool. This format is compressed by default and also supports parallel dumps.
+
+It is possible to dump multiple tables in parallel when using the directory dump format.
+This is faster, but it also leads to a higher load on the database server. 
+We control the number of tables exported in parallel using the '—jobs' option. 
+In our example, we export three tables in parallel. It is not possible to redirect the output to a file as we are writing a directory.
+We use the '—file' option instead with specification for the directory name:
+
+pg_dump --jobs=3 --format=directory --file=dump.dir dbname
+
 ```
 Example:
 ```
