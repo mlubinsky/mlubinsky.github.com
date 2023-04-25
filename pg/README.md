@@ -21,6 +21,14 @@ pg_dump -h 1ip_here -d dbname -U username --file=spotlight.sql
 ### Restore
  psql -U {user-name} -d {desintation_db}-f {dumpfilename.sql}
 
+
+
+###
+ 
+ https://philbooth.me/blog/nine-ways-to-shoot-yourself-in-the-foot-with-postgresql
+ 
+ https://news.ycombinator.com/item?id=35684220
+ 
 ### PgAdmin
  right click on database:
  ```
