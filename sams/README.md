@@ -1,5 +1,7 @@
 ## KML format
 
+https://developers.google.com/kml/documentation/kmlreference#polygon
+
 https://sites.google.com/site/kmltouring/google-earth-tools/polygons
 
 https://sites.google.com/site/kmltouring/editing-kml
