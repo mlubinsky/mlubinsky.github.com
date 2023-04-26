@@ -90,7 +90,9 @@ pg_dump -h  ip_here -d dbname -U username -Fc --file=mydump.custom_format
 
 
 
-###
+### Tune Postgres
+
+https://pgtune.leopard.in.ua/
  
  https://philbooth.me/blog/nine-ways-to-shoot-yourself-in-the-foot-with-postgresql
  
