@@ -1,3 +1,26 @@
+
+1. 5 Hidden Apache Spark Facts That Fewer People Talk About
+https://lnkd.in/guvSUKCs
+
+2. CDC Replication: What It Is, How It Works, & Best Practices
+https://bit.ly/3H6Uze6
+
+3. What Is Trino And Why Is It Great At Processing Big Data
+https://lnkd.in/gXkuZm6C
+
+4. Should You Use Apache Airflow?
+https://lnkd.in/gvvxBVKc
+
+5. Intro To Databricks - What Is Databricks
+https://lnkd.in/gAaavFEJ
+
+6. Data Governance for Modern Organizations, Part 1 by Shinji Kim
+https://lnkd.in/gJNsExQY
+
+7. The Truth about Prefect, Mage, and Airflow by Daniel Beach
+https://lnkd.in/gEimhmzK
+
+
 ### Working with parquet
 
 https://lobste.rs/s/c49sak/which_embedded_olap_database_pick
