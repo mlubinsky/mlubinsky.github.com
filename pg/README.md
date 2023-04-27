@@ -92,6 +92,8 @@ pg_dump -h  ip_here -d dbname -U username -Fc --file=mydump.custom_format
 
 ### Tune Postgres
 
+https://wiki.postgresql.org/wiki/Don%27t_Do_This
+
 work_mem is the maximum available memory per operation and not just per connection
 
 set local work_mem = '50MB'
