@@ -1,5 +1,7 @@
 https://habr.com/ru/company/southbridge/blog/716022/. Kafka, BigQuery & Looker Studio
 
+https://habr.com/ru/companies/southbridge/articles/731526/ Streaming
+
 https://habr.com/ru/companies/southbridge/articles/730380/
 
 https://habr.com/ru/companies/uchi_ru/articles/730330/
