@@ -61,12 +61,30 @@ aws_secret_access_key = YourSecretAccessKey
 https://github.com/hseera/aws-python-utilities
 
 ### DynamoDB
-https://www.dynamodbguide.com/key-concepts  book
+https://www.dynamodbbook.com/ book
+https://www.dynamodbguide.com/key-concepts   
+https://www.alexdebrie.com/posts/dynamodb-paper
+https://www.alexdebrie.com/posts/dynamodb-partitions/
+https://www.alexdebrie.com/posts/dynamodb-one-to-many/#denormalization-by-using-a-complex-attribute
+```
+A single DynamoDB item cannot exceed 400KB of data
+The second type of primary key is a composite primary key. 
+A composite primary key consists of two elements: a partition key and a sort key. 
+
+89 million requests per second is a big database by any standards (and that's just Amazon's use of DynamoDB)!
+
+Under the hood, DynamoDB is splitting your data into partitions, which are independent storage segments of roughly 10GB in size. 
+DynamoDB uses the partition key to assign your items to a given partition,
+An individual partition is actually a set of three partition instances in different availability zones which form a replication group. 
+One of the instances is the leader for a given partition and is responsible for handling all writes. 
+When a write comes in, the leader writes it locally and ensures it is commited to at least one additional replica before returning to the client. 
+This increases durability in the event of failure, as the loss of one node will not result in loss of data.
+
 Коллекция элементов в DynamoDB относится ко всем элементам в таблице или индексе, которые имеют общий ключ раздела (partition key).
 
 На примере ниже у нас есть таблица DynamoDB, которая содержит актеров и фильмы, в которых они играли.
 Основной ключ является составным, где ключ раздела - имя актера, а ключ сортировки - название фильма.
-
+```
 https://habr.com/ru/articles/732578/
 
 https://www.dynamodbbook.com/
