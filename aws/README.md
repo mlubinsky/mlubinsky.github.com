@@ -61,6 +61,13 @@ aws_secret_access_key = YourSecretAccessKey
 https://github.com/hseera/aws-python-utilities
 
 ### DynamoDB
+https://www.dynamodbguide.com/key-concepts  book
+Коллекция элементов в DynamoDB относится ко всем элементам в таблице или индексе, которые имеют общий ключ раздела (partition key).
+
+На примере ниже у нас есть таблица DynamoDB, которая содержит актеров и фильмы, в которых они играли.
+Основной ключ является составным, где ключ раздела - имя актера, а ключ сортировки - название фильма.
+
+https://habr.com/ru/articles/732578/
 
 https://www.dynamodbbook.com/
 
