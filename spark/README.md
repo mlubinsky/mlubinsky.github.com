@@ -358,6 +358,9 @@ https://towardsdatascience.com/best-practices-for-bucketing-in-spark-sql-ea9f23f
 https://medium.com/analytics-vidhya/spark-bucketing-is-not-as-simple-as-it-looks-c74f105f4af0
 
 ### Skew 
+
+https://towardsdatascience.com/deep-dive-into-handling-apache-spark-data-skew-57ce0d94ee38
+
 https://habr.com/ru/company/first/blog/678826/
 
 ```
@@ -466,6 +469,21 @@ https://www.unraveldata.com/resources/troubleshooting-apache-spark/
 https://medium.com/swlh/insights-into-parquet-storage-ac7e46b94ffe
 
 ```
+spark.sql.shuffle.partitions might be one of the most critical configurations in Spark. 
+It configures the number of partitions to use when shuffling data for joins or aggregations. 
+Configuring this value won’t always mean dealing with the skew issue, but it could be general optimization on the Spark job. 
+The default value is 200, which is suitable for many big data projects back in the day and still relevant for small/medium size data projects.
+
+2. Broadcast join
+Broadcast join might be the fastest join type that you can use to avoid skewness. 
+By giving when the BROADCAST hint, we explicitly provide information to Spark on which dataframe we’d need to send to each executor.
+
+The broadcast join usually works with smaller size dataframe like dimension tables or the data has metadata. 
+It is not appropriate for transaction tables with millions of rows.
+
+df_skew.join(broadcast(df_evenly.select(“value”)),”value”, “inner”).count()
+
+
 spark.executor.memory или spark.driver.memory
 spark.yarn.executor.memoryOverhead
 
@@ -837,6 +855,8 @@ add salt to join key
 
 https://habr.com/ru/company/otus/blog/541426/
 
+https://towardsdatascience.com/skewed-data-in-spark-add-salt-to-compensate-16d44404088b
+
 ```
 val salted_fact_df = spark.sql
 ( 
@@ -845,6 +865,13 @@ val salted_fact_df = spark.sql
 + as SALTED_KEY, val FROM original_fact_table"
 )
 salted_fact_df.createOrReplaceGlobalTempView(fat_table_salted)
+
+
+we could salt on the key to distributing data evenly, but that changed my join 
+key. How do you join back to the original key after salting?
+
+
+df_left = df_skew.withColumn(“salt”, (rand() * spark.conf.get(“spark.sql.shuffle.partitions”)).cast(“int”))
 
 ```
 
