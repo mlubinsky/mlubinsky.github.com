@@ -8,6 +8,7 @@ https://www.stationx.net/python-data-structures-cheat-sheet/
   
   Strings, bytes and tuples are immutable 
   
+### Mutable types  
   lists, dictionaries, and sets are mutable 
 ```  
    isinstance([1, 2, 3], list)
