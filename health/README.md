@@ -1,5 +1,7 @@
 https://plakhov.livejournal.com/234894.html - Extra weight
 
+https://www.youtube.com/watch?v=QxZDdumDEO0 Как лечить гипертонию с помощью упражнений? Профилактика повышенного артериального давления
+
 Астаксантин- самый мощный антиоксидант
 
 https://www.youtube.com/watch?v=kjQhq6YtGaI
