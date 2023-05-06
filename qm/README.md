@@ -1,3 +1,36 @@
+This playlist will help you get a strong foundation in quantum physics, covering essential topics and concepts. The videos are organized in a logical sequence, starting with introductory content and progressing to more advanced topics. Enjoy your marathon study session!
+Quantum Physics for Beginners: Overview and Basics
+Video: https://www.youtube.com/watch?v=stxqkFCcrk0
+The Double-Slit Experiment: The Peculiar Behavior of Quantum Particles
+Video: https://www.youtube.com/watch?v=p-MNSLsjjdo
+Wave-Particle Duality: Understanding the Nature of Quantum Particles
+Video: https://www.youtube.com/watch?v=1PSi5ZYL8kc
+Quantum States and Superposition
+Video: https://www.youtube.com/watch?v=HR6O5PO5W0Y
+Quantum Entanglement: The Spooky Action at a Distance
+Video: https://www.youtube.com/watch?v=ZuvK-od647c
+The Schrödinger Equation: The Core of Quantum Mechanics
+Video: https://www.youtube.com/watch?v=8UJwGnERiL8
+Quantum Mechanics and Classical Physics: Comparisons and Contrasts
+Video: https://www.youtube.com/watch?v=1ZLJHc0Q_dw
+Quantum Tunnelling: The Surprising World of Quantum Barriers
+Video: https://www.youtube.com/watch?v=1hJ8zSGPEEo
+Quantum Computing: Harnessing the Power of Quantum Physics
+Video: https://www.youtube.com/watch?v=6IbG6d2D6PA
+Quantum Field Theory: Bridging Quantum Mechanics and Special Relativity
+Video: https://www.youtube.com/watch?v=Rk6x1U6bXYA
+The Many Worlds Interpretation of Quantum Mechanics
+Video: https://www.youtube.com/watch?v=pKxCyQNfm2M
+The Copenhagen Interpretation and Other Interpretations of Quantum Mechanics
+Video: https://www.youtube.com/watch?v=rbRVnD46DYY
+Quantum Teleportation: The Future of Communication
+Video: https://www.youtube.com/watch?v=7FyIUVXOTdM
+Quantum Biology: The Quantum World Meets Life Sciences
+Video: https://www.youtube.com/watch?v=ADiql3FG5is
+Applications of Quantum Physics: From Medicine to Technology
+Video: https://www.youtube.com/watch?v=KkI5li5J5Po
+ 
+
 ### Lectures
 
 https://www.youtube.com/playlist?list=PLthfp5exSWErBIoHpaPV77pq8kHHIeWu4
