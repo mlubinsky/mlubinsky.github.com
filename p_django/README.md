@@ -8,6 +8,8 @@ https://habr.com/ru/articles/728256/
 
 ## Django
 
+https://pybit.es/articles/django-plugin-recommendations-by-antonio-mele-top-10-picks-for-web-development/
+
 https://docs.djangoproject.com/en/4.1/intro/tutorial01/
 
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
