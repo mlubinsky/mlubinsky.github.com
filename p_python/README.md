@@ -35,6 +35,8 @@ https://docs.python.org/3/library/index.html
 
 https://github.com/Suor/funcy. A fancy and practical functional tools
 
+https://martinheinz.dev/blog/96 Missing Python libs
+
 https://github.com/zx80/anodb  - Python with SQL
 
 https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag
