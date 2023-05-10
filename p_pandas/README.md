@@ -59,6 +59,13 @@ https://www.parand.com/a-practical-introduction-to-polars.html
 
 https://itnext.io/the-fastest-way-to-read-a-csv-file-in-pandas-2-0-532c1f978201
 
+
+https://www.reddit.com/r/Python/comments/13bb59x/test_on_4_concurrent_jobs_using_pythonpolars/
+
+https://datashader.org/ Fast plotting of million of points
+
+https://ponder.io/ponder-on-duckdb/ Ponder and DuckDB
+
 ### Pandas
 
 https://github.com/noklam/dtype_diet/tree/master/ Save memory
