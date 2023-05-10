@@ -67,7 +67,9 @@ https://news.ycombinator.com/item?id=33845414
 ### Starlette vs FlaskAPI
 with asyncpg and plain SQL
 
-### Streamlit
+### Streamlit, Pycone, NiceGUI, etc
+
+https://awesome-panel.org/home
 
 https://www.youtube.com/watch?v=gWV1gbeB-IM&t
 
