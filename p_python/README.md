@@ -23,6 +23,8 @@ https://www.stationx.net/python-data-structures-cheat-sheet/
 
 https://docs.python-guide.org/ 
 
+https://stackabuse.com/guide-to-lists-in-python/ List
+
 https://realpython.com/python-pathlib/ Pathlib module from standard library
 
 https://cheatography.com/mad100141/cheat-sheets/path-cheat-sheet-python/
