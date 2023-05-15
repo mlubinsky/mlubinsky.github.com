@@ -73,6 +73,8 @@ https://realpython.com/pandas-dataframe/
 https://github.com/noklam/dtype_diet/tree/master/ Save memory
 
   https://www.webpages.uidaho.edu/~stevel/cheatsheets/Pandas%20DataFrame%20Notes_12pages.pdf
+  
+https://pub.towardsai.net/pandas-cheat-sheet-functions-for-data-analysis-2cf4923266aa  
 
 https://habr.com/ru/companies/otus/articles/728118/
 
@@ -137,7 +139,7 @@ Convert negative numbers to positive:
 
 df.loc[df['quantity'] < 0,'quantity'] = abs(df['quantity'])
 
-Duplicates:
+#### Duplicates:
 
 df[df.duplicated()]
 
