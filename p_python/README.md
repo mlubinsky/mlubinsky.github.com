@@ -1,6 +1,7 @@
 ### Python notes
 
 https://www.stationx.net/python-data-structures-cheat-sheet/
+https://github.com/prabhupant/python-ds
 
 #### Immutable types
 
