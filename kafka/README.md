@@ -47,6 +47,9 @@ https://towardsdatascience.com/make-a-mock-real-time-stream-of-data-with-python-
 ### Kafka and Python
 
 https://habr.com/ru/company/neoflex/blog/686242/ PySpark and Kafka
+
+https://habr.com/ru/companies/southbridge/articles/735262/
+
 https://habr.com/ru/post/587592/
 
 https://habr.com/ru/post/578916/ Python микросервисы с Kafka 
