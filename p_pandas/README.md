@@ -68,6 +68,8 @@ https://ponder.io/ponder-on-duckdb/ Ponder and DuckDB
 
 ### Pandas
 
+https://realpython.com/pandas-dataframe/
+
 https://github.com/noklam/dtype_diet/tree/master/ Save memory
 
 https://habr.com/ru/companies/otus/articles/728118/
