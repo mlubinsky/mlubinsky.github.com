@@ -8,6 +8,8 @@ https://www.amazon.com/Nonlinear-Dynamics-Chaos-Applications-Nonlinearity-ebook-
 
 https://usa1lib.org/book/2961335/6837cf Теория сложности (Complexity) и системный подход
 
+https://nd.ics.org.ru/ Russian MAgazine
+
 ### Steve Brunton
 https://www.youtube.com/watch?v=2VBN_dJZLWc.   Dynamical Systems (Part 1/2)
 
