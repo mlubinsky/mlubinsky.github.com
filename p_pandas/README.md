@@ -87,6 +87,30 @@ https://www.youtube.com/watch?v=DKZ2XmYsY3E
 Correlation matrix:
 https://habr.com/ru/articles/708468/
 
+
+Find not-numerical data in columns:
+https://towardsdatascience.com/pandas-cheat-sheet-for-data-preprocessing-cd1bcd607426
+```
+col_miss = ['DIS', 'B']
+for i_col in col_miss:
+    for j in df_X[i_col].unique():
+        try:
+            float(j)
+        except ValueError:
+            print(j)
+```
+
+
+value_counts()   tells us the distribution of a column or dataframe as a number of times it occurs in the data.
+
+ merge two data frames horizontally:
+ pd.concat([ df1, df2],axis=0)
+ 
+ df['tall_male'] = np.where(
+                              df['Male Height in Ft'] > 6.0,
+                              1,
+                              0)
+ 
 ### Reading csv
 
 https://pandas.pydata.org/docs/user_guide/scale.html
@@ -140,6 +164,10 @@ Convert negative numbers to positive:
 df.loc[df['quantity'] < 0,'quantity'] = abs(df['quantity'])
 
 #### Duplicates:
+
+how many different values (number of unique values) are contained in each column using “nunique”:
+
+df_X.nunique()
 
 df[df.duplicated()]
 
