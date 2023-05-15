@@ -7,6 +7,10 @@ https://chengzhizhao.com/4-free-fantastic-diagramming-tools-to-make-yours-stand-
 
 https://diagrams.mingrammer.com/  Python
 
+https://d2lang.com/
+
+PlantUML
+
 https://towardsdatascience.com/diagrams-as-code-python-d9cbaa959ed5
 
 draw.io and Excalidraw.com
