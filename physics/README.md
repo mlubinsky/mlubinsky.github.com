@@ -39,6 +39,9 @@ https://www.youtube.com/watch?v=r18Gi8lSkfM
 
 https://www.youtube.com/watch?v=0DHNGtsmmH8
 
+
+https://pubs.aip.org/ American Journal of Physics
+
 ### Classical mechanics
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNBO3IAsYw6yB4v1Pfal5v2t (ru)
 
