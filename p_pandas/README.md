@@ -68,6 +68,18 @@ https://ponder.io/ponder-on-duckdb/ Ponder and DuckDB
 
 ### Pandas
 
+df.describe(include=object).T
+
+Find maximum values of Age and Amount_spent by Gender:
+```
+df[['Age', 'Amount_spent']].groupby(df['Gender']).max()
+```
+
+Find mean, count, and max values of Age and Amount_spent by Gender then we can use agg() function with groupby() .
+```
+state_gender_res = df[['Age','Gender','Amount_spent']].groupby(['Gender']).agg(['count', 'mean', 'max'])
+```
+
 https://realpython.com/pandas-dataframe/
 
 https://github.com/noklam/dtype_diet/tree/master/ Save memory
