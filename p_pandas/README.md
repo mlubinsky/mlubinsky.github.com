@@ -72,6 +72,8 @@ https://realpython.com/pandas-dataframe/
 
 https://github.com/noklam/dtype_diet/tree/master/ Save memory
 
+https://www.linkedin.com/posts/stratascratch_pandas-dataframe-manipulation-cheat-sheet-activity-7052686958531084289-ostL 
+
 https://habr.com/ru/companies/otus/articles/728118/
 
 https://www.youtube.com/watch?v=-tU7fuUiq7w
