@@ -87,6 +87,11 @@ https://www.youtube.com/watch?v=DKZ2XmYsY3E
 Correlation matrix:
 https://habr.com/ru/articles/708468/
 
+https://towardsai.net/p/data-science/pandas-complete-tutorial-for-data-science-in-2022
+
+Counting total missing values in each column in ascending order we use .sum() and sort_values(ascending=False) function.
+
+df.isna().sum().sort_values(ascending=False)
 
 Find not-numerical data in columns:
 https://towardsdatascience.com/pandas-cheat-sheet-for-data-preprocessing-cd1bcd607426
@@ -100,6 +105,10 @@ for i_col in col_miss:
             print(j)
 ```
 
+ Imputing forward fill or backfill by ffill and bfill. In ffill missing value impute from the value of the above row and for bfill it’s taken from the below rows value.
+
+df['Referal'].fillna(method='ffill', inplace=True)
+
 
 value_counts()   tells us the distribution of a column or dataframe as a number of times it occurs in the data.
 
@@ -110,6 +119,8 @@ value_counts()   tells us the distribution of a column or dataframe as a number 
                               df['Male Height in Ft'] > 6.0,
                               1,
                               0)
+ #### Join
+ https://pub.towardsai.net/deep-dive-into-pandas-dataframe-join-pd-join-4cc2adee351d
  
 ### Reading csv
 
