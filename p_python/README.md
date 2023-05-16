@@ -1,6 +1,9 @@
 ### Python notes
 
 https://www.stationx.net/python-data-structures-cheat-sheet/
+
+https://github.com/amaargiru/pycore
+
 https://github.com/prabhupant/python-ds
 
 #### Immutable types
@@ -20,6 +23,13 @@ https://github.com/prabhupant/python-ds
    int(True) # 1
    int(False) # 0 
 ```
+
+### copy/ deepcopy
+
+copy() - the elements themselves are not deep-copied, so if the original object contains nested structures (like lists or dictionaries), the references to these nested objects are copied, not the objects themselves. 
+
+This means that changes made to the nested objects in the original object will also be reflected in the shallow copy and vice versa:`
+
 ### Links
 
 https://docs.python-guide.org/ 
@@ -50,7 +60,7 @@ https://news.ycombinator.com/item?id=35546804 joblib
 
 https://www.reddit.com/r/Python/comments/12tr2sn/pythoneers_here_what_are_some_of_the_best_python/
 
-https://github.com/amaargiru/pycore
+
 
 https://www.youtube.com/watch?v=wiGkV37Kbxk Raymond Hettinger: Numerical Marvels Inside Python
 
