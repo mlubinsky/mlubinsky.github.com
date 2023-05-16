@@ -2,6 +2,8 @@ https://www.youtube.com/hashtag/timeseries
 
 https://www.influxdata.com/time-series-analysis-methods/
 
+https://tomaszs2.medium.com/5-python-projects-people-dont-know-about-ep-3-7124a28239a3 smoothing
+
 https://observablehq.com/@observablehq/analyzing-time-series-data
 
 https://stackoverflow.blog/2022/03/03/stop-aggregating-away-the-signal-in-your-data/
