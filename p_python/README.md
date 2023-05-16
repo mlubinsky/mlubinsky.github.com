@@ -1050,6 +1050,8 @@ https://github.com/rougier/numpy-100
 
 https://github.com/ajcr/100-pandas-puzzles
 
+https://medium.com/@nhemenway2013/my-favorite-way-to-smooth-noisy-data-with-python-bd28abe4b7d0 Smoothing noisy data
+
 Slow:
 ```
 list_of_numbers = list(range(10000))
