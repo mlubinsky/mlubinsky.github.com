@@ -70,6 +70,8 @@ https://ponder.io/ponder-on-duckdb/ Ponder and DuckDB
 
 ### Pandas
 
+https://datascientyst.com/
+
 df.describe(include=object).T
 
 Find maximum values of Age and Amount_spent by Gender:
