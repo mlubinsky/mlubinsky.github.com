@@ -9,6 +9,8 @@ https://mathics.org/ Wolfram's Mathemetica free clone
 
 https://mathpages.com/
 
+https://galoisian.files.wordpress.com/2018/11/undergraduate-lecture-notes-in-physics-paul-j-nahin-inside-interesting-integrals-2015-springer-1.pdf
+
 Math books:
 https://news.ycombinator.com/item?id=34439828
 
