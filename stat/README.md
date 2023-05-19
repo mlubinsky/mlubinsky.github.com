@@ -267,7 +267,12 @@ https://arxiv.org/abs/2206.15475
 
 https://habr.com/ru/company/ods/blog/544208/
 
+BOOK: Causal Inference for The Brave and True
+
 https://matheusfacure.github.io/python-causality-handbook/landing-page.html
+
+BOOK: Causal Inference in Python
+https://www.oreilly.com/library/view/causal-inference-in/9781098140243/
 
 https://microsoft.github.io/dowhy/
 
