@@ -305,8 +305,9 @@ https://planet.postgresql.org/
 https://khashtamov.com/en/postgresql-with-python-and-psycopg2/
 
 
-## PG
+## PG PG internals
 
+https://habr.com/ru/articles/736154/ 
 https://habr.com/ru/company/postgrespro/blog/574702/  PG internals
 
 https://zerodha.tech/blog/working-with-postgresql/
