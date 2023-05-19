@@ -1052,8 +1052,15 @@ https://github.com/rougier/numpy-100
 
 https://github.com/ajcr/100-pandas-puzzles
 
+### Savitzy-Golay (Savgol) filter:
+from scipy.signal import savgol_filter
+```
+For any given datapoint (datapoint k for example), a window/subset of the data is selected around the datapoint. 
+A polynomial is then fit through this window of data and the corresponding filtered output datapoint is computed by evaluating the best-fit polynomial at time t[k] 
+``` 
 https://medium.com/@nhemenway2013/my-favorite-way-to-smooth-noisy-data-with-python-bd28abe4b7d0 Smoothing noisy data
 
+### Performance
 Slow:
 ```
 list_of_numbers = list(range(10000))
