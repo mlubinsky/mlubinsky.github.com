@@ -493,7 +493,9 @@ from
     ) as mb;    
 ```    
 
-### postgres on docker
+### Postgres in docker
+
+https://habr.com/ru/companies/piter/articles/736332/
 
 <https://hub.docker.com/_/postgres>
 ```
