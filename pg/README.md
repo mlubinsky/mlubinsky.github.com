@@ -298,7 +298,7 @@ https://spin.atomicobject.com/2021/02/04/redis-postgresql/
 
 https://news.ycombinator.com/item?id=27482243
 
-### Aggregator
+### Posthres Aggregator
 https://planet.postgresql.org/
 
 ### PG and Python
@@ -344,13 +344,7 @@ Or, if you don't want/need a background service you can just run:
 ```  
 https://pgdash.io/blog/postgres-tips-and-tricks.html?p
 
-### Postgres in Docker: 
 
-<https://habr.com/ru/company/qiwi/blog/515692/>
-
-https://habr.com/ru/post/578744/
-
-https://habr.com/ru/post/581548/
 
 
 
@@ -493,9 +487,15 @@ from
     ) as mb;    
 ```    
 
-### Postgres in docker
+### Postgres in Docker
 
 https://habr.com/ru/companies/piter/articles/736332/
+
+<https://habr.com/ru/company/qiwi/blog/515692/>
+
+https://habr.com/ru/post/578744/
+
+https://habr.com/ru/post/581548/
 
 <https://hub.docker.com/_/postgres>
 ```
@@ -686,7 +686,7 @@ Combined index vs separate index
 <https://pgdash.io/blog/postgres-features.html>
 
 
-## Import JSON,XML files to postgree
+## Import JSON,XML files to postgres
 https://github.com/okbob/pgimportdoc
 
 ## STORED PROCEDURES
