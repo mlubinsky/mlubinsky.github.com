@@ -46,6 +46,8 @@ https://docs.python.org/3/library/functions.html
 
 https://docs.python.org/3/library/index.html
 
+https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag
+
 https://github.com/Suor/funcy. A fancy and practical functional tools
 
 https://martinheinz.dev/blog/96 Missing Python libs
