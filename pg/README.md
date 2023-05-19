@@ -49,9 +49,8 @@ https://docs.bit.io/docs/exporting-and-restoring-data-via-pg_dump-and-pg_restore
 
 https://www.postgresql.org/docs/current/app-pgrestore.html
 
-pd_dump Options:
+pd_dump Options: https://www.postgresql.org/docs/current/app-pgdump.html
 ```
--C 
 -Fp   -F, --format=c|d|t|p output file format (custom, directory, tar, plain text (default)
 
 c
