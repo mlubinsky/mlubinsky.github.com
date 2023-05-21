@@ -120,6 +120,8 @@ https://physics.princeton.edu/~mcdonald/examples/onoochin.pdf
 
 ### QFT
 
+https://gcher.com/posts/2023-04-16-an-intuitive-explanation-of-quantum-field-theory/
+
 https://arxiv.org/pdf/2203.01245.pdf
 
 Введение в квантовую теорию поля 1 Казаков Д.
