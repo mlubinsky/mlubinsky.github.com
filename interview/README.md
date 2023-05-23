@@ -14,9 +14,9 @@ https://stepik.org/course/102772 Ace Your Next Coding Interview by Learning Algo
 
 
 https://medium.com/@tudorache.a.bogdan/day-5-arrays-median-of-two-sorted-arrays-17c9349e21ca
-
+Find median of two sorted arrays 
+The median value is the value that separates a dataset into two equal halves..
 ```
-Solution #
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
       
