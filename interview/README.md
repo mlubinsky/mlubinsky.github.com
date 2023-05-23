@@ -13,6 +13,47 @@ https://stepik.org/course/1547  Алгоритмы: теория и практи
 https://stepik.org/course/102772 Ace Your Next Coding Interview by Learning Algorithms
 
 
+https://medium.com/@tudorache.a.bogdan/day-5-arrays-median-of-two-sorted-arrays-17c9349e21ca
+
+```
+Solution #
+class Solution(object):
+    def findMedianSortedArrays(self, nums1, nums2):
+      
+        m, n = len(nums1), len(nums2)
+        total_length = m + n
+
+        if total_length % 2 == 0:
+            mid1 = mid2 = total_length // 2
+        else:
+            mid1 = mid2 = total_length // 2 + 1
+
+        pointer1 = pointer2 = 0
+        median1 = median2 = 0.0
+
+        while pointer1 + pointer2 < mid2:
+            if pointer1 < m and (pointer2 >= n or nums1[pointer1] <= nums2[pointer2]):
+                median1 = nums1[pointer1]
+                pointer1 += 1
+            else:
+                median1 = nums2[pointer2]
+                pointer2 += 1
+
+            if pointer1 + pointer2 >= mid1:
+                median2 = median1
+                break
+
+        if total_length % 2 == 0:
+            if pointer1 < m and (pointer2 >= n or nums1[pointer1] <= nums2[pointer2]):
+                median2 = nums1[pointer1]
+            else:
+                median2 = nums2[pointer2]
+            return (median1 + median2) / 2.0
+        else:
+            return median1
+
+```
+
 https://stepik.org/lesson/41233/step/1?unit=19817 
 
 https://stepik.org/course/126012/promo Interview prep (russian)
