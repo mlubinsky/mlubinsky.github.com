@@ -24,6 +24,12 @@ https://lnkd.in/gEimhmzK
 https://medium.com/@mathcube7
 
 ### Working with parquet
+```
+import sys
+import panadas as pd
+
+df = pd.read_parquet(sys.argv[1], engine="fastparquet")
+```
 
 https://lobste.rs/s/c49sak/which_embedded_olap_database_pick
 
