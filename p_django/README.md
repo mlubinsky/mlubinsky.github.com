@@ -5,6 +5,8 @@ https://shiny.rstudio.com/py/
 
 https://habr.com/ru/articles/728256/
 
+https://towardsdatascience.com/a-comprehensive-guide-to-building-enterprise-level-plotly-dash-apps-bd40dfe1313c
+
 ## Flask
 
 https://www.patricksoftwareblog.com/my_favorite_python_packages_for_flask.html
