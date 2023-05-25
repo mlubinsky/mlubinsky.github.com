@@ -7,6 +7,8 @@ https://habr.com/ru/articles/728256/
 
 https://towardsdatascience.com/a-comprehensive-guide-to-building-enterprise-level-plotly-dash-apps-bd40dfe1313c
 
+https://www.youtube.com/playlist?list=PL-2EBeDYMIbTt63EH9ubqbvQqJkBP3vzy
+
 ## Flask
 
 https://www.patricksoftwareblog.com/my_favorite_python_packages_for_flask.html
@@ -28,6 +30,8 @@ https://www.django-unicorn.com/
 https://www.django-rest-framework.org/
 
 https://testdriven.io/blog/drf-basics/
+
+https://www.youtube.com/playlist?list=PL-2EBeDYMIbTt63EH9ubqbvQqJkBP3vzy
 
 https://django-ninja.rest-framework.com/
 
