@@ -5,6 +5,9 @@ https://shiny.rstudio.com/py/
 
 https://habr.com/ru/articles/728256/
 
+## Flask
+
+https://www.patricksoftwareblog.com/my_favorite_python_packages_for_flask.html
 
 ## Django
 
