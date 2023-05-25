@@ -13,6 +13,10 @@ https://www.youtube.com/playlist?list=PL-2EBeDYMIbTt63EH9ubqbvQqJkBP3vzy
 
 https://www.patricksoftwareblog.com/my_favorite_python_packages_for_flask.html
 
+https://pgjones.dev/blog/modern-flask-2023/
+
+https://www.softwaretestinghelp.com/flask-design-patterns-for-web-applications/
+
 ## Django
 
 https://pybit.es/articles/django-plugin-recommendations-by-antonio-mele-top-10-picks-for-web-development/
