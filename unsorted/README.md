@@ -6,8 +6,9 @@ http://bactra.org/ Cosma's Home Page
  getpocket.com.   vantive98
  
  https://us.shein.com/1pc-Stainless-Steel-Multifunction-Wrench-p-11878340-cat-4562.html Tool
-
-https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/
+ 
+[
+](https://best.lovetoknow.com/genius-products-amazon-youve-never-seen-before-112243
 
 https://news.ycombinator.com/item?id=32466823 Thinking routine
 
