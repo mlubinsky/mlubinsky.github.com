@@ -20,8 +20,7 @@ https://lnkd.in/gJNsExQY
 7. The Truth about Prefect, Mage, and Airflow by Daniel Beach
 https://lnkd.in/gEimhmzK
 
-### Math and python
-https://medium.com/@mathcube7
+ 
 
 ### Working with parquet
 ```
@@ -75,6 +74,8 @@ https://datashader.org/ Fast plotting of million of points
 https://ponder.io/ponder-on-duckdb/ Ponder and DuckDB
 
 ### Pandas
+
+https://www.pythonforbeginners.com/basics/pandas-map-vs-apply-method-in-python map() vs apply()
 
 https://datascientyst.com/
 
