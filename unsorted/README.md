@@ -7,8 +7,7 @@ http://bactra.org/ Cosma's Home Page
  
  https://us.shein.com/1pc-Stainless-Steel-Multifunction-Wrench-p-11878340-cat-4562.html Tool
  
-[
-](https://best.lovetoknow.com/genius-products-amazon-youve-never-seen-before-112243
+ https://best.lovetoknow.com/genius-products-amazon-youve-never-seen-before-112243
 
 https://news.ycombinator.com/item?id=32466823 Thinking routine
 
