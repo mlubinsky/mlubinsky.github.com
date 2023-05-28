@@ -1,3 +1,5 @@
+https://github.com/manuzhang/awesome-streaming Awesome streaming
+
 ####  Youtube
 
 https://www.youtube.com/watch?v=Wqko7MunKZs Flink vs Kafka Streams/ksqlDB: Comparing Stream Processing Tools
