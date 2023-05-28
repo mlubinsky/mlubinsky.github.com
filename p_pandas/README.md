@@ -20,7 +20,8 @@ https://lnkd.in/gJNsExQY
 7. The Truth about Prefect, Mage, and Airflow by Daniel Beach
 https://lnkd.in/gEimhmzK
 
- 
+Python libs:
+https://tryolabs.com/blog/2022/12/26/top-python-libraries-2022 
 
 ### Working with parquet
 ```
