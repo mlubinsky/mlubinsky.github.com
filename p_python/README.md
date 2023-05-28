@@ -52,7 +52,7 @@ https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag
 
 https://github.com/Suor/funcy. A fancy and practical functional tools
 
-https://toolz.readthedocs.io/en/latest/
+https://toolz.readthedocs.io/en/latest/  https://github.com/pytoolz/cytoolz
 
 https://martinheinz.dev/blog/96 Missing Python libs (boltons, etc)
 
