@@ -846,6 +846,8 @@ func_name(f)
 ### Decorators
 https://www.poeticdev.com/data/python-decorators-when-to-use-and-when-to-avoid-them/
 
+https://soshace.com/understanding-python-decorators-and-how-to-use-them-effectively/
+
 If d is decorator it means :
 x = d(x)
 
