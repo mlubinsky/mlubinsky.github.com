@@ -1,5 +1,7 @@
 https://stackoverflow.com/questions/50708226/airflow-macros-in-python-operator
 
+https://habr.com/ru/articles/737046/
+
 https://airflow.apache.org/docs/apache-airflow/stable/dag-run.html
 
 https://habr.com/ru/companies/neoflex/articles/736292/
