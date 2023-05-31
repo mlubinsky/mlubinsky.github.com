@@ -76,6 +76,8 @@ https://ponder.io/ponder-on-duckdb/ Ponder and DuckDB
 
 ### Pandas
 
+https://stackabuse.com/reading-and-writing-sql-files-in-pandas/
+
 https://www.pythonforbeginners.com/basics/pandas-map-vs-apply-method-in-python map() vs apply()
 
 https://datascientyst.com/
