@@ -9,6 +9,8 @@ https://towardsdatascience.com/a-comprehensive-guide-to-building-enterprise-leve
 
 https://www.youtube.com/playlist?list=PL-2EBeDYMIbTt63EH9ubqbvQqJkBP3vzy
 
+https://www.youtube.com/watch?v=W_qQTKupZpY
+
 ## Flask
 
 https://www.patricksoftwareblog.com/my_favorite_python_packages_for_flask.html
