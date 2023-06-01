@@ -1,3 +1,4 @@
+https://habr.com/ru/companies/ru_mts/articles/738208/  Plotting 
 
 1. 5 Hidden Apache Spark Facts That Fewer People Talk About
 https://lnkd.in/guvSUKCs
@@ -236,7 +237,7 @@ If the new backend prevents automatic casting, it might be worth reconsidering f
 
 ```
 
-### Data Cleaning Cheat Sheet inPython - By Eugenia Anello
+### Data Cleaning Cheat Sheet in Python - By Eugenia Anello
 ```
 Table of Contents:
 1. Dealing with Missing Data
