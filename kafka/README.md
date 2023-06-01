@@ -1,5 +1,7 @@
 https://www.freecodecamp.org/news/apache-kafka-handbook/
 
+https://habr.com/ru/articles/738874/
+
 https://habr.com/ru/companies/southbridge/articles/730380/
 
 https://stackabuse.com/how-to-list-all-kafka-topics/
