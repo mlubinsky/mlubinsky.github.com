@@ -1,3 +1,38 @@
+### Install Apache on Windows
+
+https://www.sitepoint.com/how-to-install-apache-on-windows/
+
+Microsoft have new version of vc_redist for apps developed with Microsoft Visual Studio 2022.
+Version: 14.30.30704
+
+x64 - https://aka.ms/vs/17/release/VC_redist.x64.exe
+
+Download Apache (x64)  https://www.apachelounge.com/
+
+Open an “Administrator” command prompt
+```
+mkdir c:/Apache24
+cd  c:/Apache24/bin
+httpd.exe -t
+httpd.exe
+ http://localhost
+ 
+Install Apache Service
+ httpd.exe -k install -n "Apache HTTP Server"
+
+Edit conf/httpd.conf 
+Line 60, listen to all requests on port 80:
+Listen *:80
+Line 162, enable mod-rewrite by removing the # (optional, but useful):
+
+LoadModule rewrite_module modules/mod_rewrite.so
+Line 227, specify the server domain name:
+
+ServerName localhost:80
+Line 224, allow .htaccess overrides:
+
+AllowOverride All
+```
 ### WAMPSERVER
 
 https://www.wampserver.com/en/
