@@ -1,5 +1,7 @@
 https://relational.ai/careers/ JOB
 
+https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers 
+
 https://habr.com/ru/articles/729944/
 
 https://github.com/nkwade/nkwade-lc-solutions
