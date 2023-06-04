@@ -3,6 +3,8 @@ https://shiny.rstudio.com/py/
 
 ## Plotly / Dash
 
+https://github.com/santosjorge/cufflinks
+
 https://habr.com/ru/articles/728256/
 
 https://towardsdatascience.com/a-comprehensive-guide-to-building-enterprise-level-plotly-dash-apps-bd40dfe1313c
