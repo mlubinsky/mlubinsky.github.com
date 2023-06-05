@@ -36,9 +36,6 @@ https://docs.python-guide.org/
 
 https://stackabuse.com/guide-to-lists-in-python/ List
 
-https://realpython.com/python-pathlib/ Pathlib module from standard library
-
-https://cheatography.com/mad100141/cheat-sheets/path-cheat-sheet-python/
 
 https://realpython.com/python-iterators-iterables/
 
@@ -47,6 +44,18 @@ https://docs.python.org/3/library/functions.html
 https://docs.python.org/3/library/index.html
 
 https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag
+
+
+
+### Communicating with OS and filesystem
+
+https://realpython.com/python-pathlib/ Pathlib module from standard library ( istead of os.path and glob)
+
+shutil (for copy,move, chown, which, create archive)
+
+https://cheatography.com/mad100141/cheat-sheets/path-cheat-sheet-python/
+
+external lib: sh  https://amoffat.github.io/sh/index.html https://amoffat.github.io/sh/sections/faq.html
 
 ### 3rd party libs
 
