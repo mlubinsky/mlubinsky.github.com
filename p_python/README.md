@@ -55,7 +55,15 @@ shutil (for copy,move, chown, which, create archive)
 
 https://cheatography.com/mad100141/cheat-sheets/path-cheat-sheet-python/
 
-external lib: sh  https://amoffat.github.io/sh/index.html https://amoffat.github.io/sh/sections/faq.html
+### Running apps from python subprocess and alternatives : 
+
+https://realpython.com/python-subprocess/
+
+https://docs.python.org/3/library/shlex.html
+
+sh  https://amoffat.github.io/sh/index.html https://amoffat.github.io/sh/sections/faq.html
+
+https://www.pyinvoke.org/
 
 ### 3rd party libs
 
