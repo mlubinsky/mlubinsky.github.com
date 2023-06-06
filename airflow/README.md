@@ -14,32 +14,6 @@ dag = DAG(
     catchup=False,
 )
 ```
-### BranchPythonOperator
-```
-    def _choose_platform(**kwargs):
-        platform = kwargs.get("templates_dict").get("platform")
-        print("INSIDE _choose_platform(): platform=", platform)
-        if platform == "all":
-            return ["etl_reviews_ios", "etl_reviews_android"]
-        elif platform == "ios":
-            return [
-                "etl_reviews_ios",
-            ]
-        elif platform == "android":
-            return [
-                "etl_reviews_android",
-            ]
-        else:
-            return None
-
-    choose_platform = BranchPythonOperator(
-        task_id="choose_platform",
-        python_callable=_choose_platform,
-        templates_dict={"platform": "{{ dag_run.conf.get('platform', 'all') }}"},
-    )
-
-start >> choose_platform >> [etl_reviews_ios, etl_reviews_android]
-```
 
 
 How to start DAG from command line:
@@ -120,6 +94,33 @@ def tutorial_taskflow_api_etl():
 tutorial_etl_dag = tutorial_taskflow_api_etl()
 ```
 
+### BranchPythonOperator
+```
+    def _choose_platform(**kwargs):
+        platform = kwargs.get("templates_dict").get("platform")
+        print("INSIDE _choose_platform(): platform=", platform)
+        if platform == "all":
+            return ["etl_reviews_ios", "etl_reviews_android"]
+        elif platform == "ios":
+            return [
+                "etl_reviews_ios",
+            ]
+        elif platform == "android":
+            return [
+                "etl_reviews_android",
+            ]
+        else:
+            return None
+
+    choose_platform = BranchPythonOperator(
+        task_id="choose_platform",
+        python_callable=_choose_platform,
+        templates_dict={"platform": "{{ dag_run.conf.get('platform', 'all') }}"},
+    )
+
+start >> choose_platform >> [etl_reviews_ios, etl_reviews_android]
+```
+
 #### BranchPythonOperator
 https://airflow.apache.org/docs/apache-airflow/stable/_api/airflow/operators/python/index.html
 ```
@@ -159,7 +160,7 @@ Allows a workflow to “branch” or follow a path following the execution of th
 
 It derives the PythonOperator and expects a Python function that returns a single task_id or list of task_ids to follow. The task_id(s) returned should point to a task directly downstream from {self}. 
 
-```
+ 
 
 
 ### Writing DAG with XCOM
