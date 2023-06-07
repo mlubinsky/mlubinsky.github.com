@@ -14,9 +14,9 @@ class Solution:
         }
 
         for char in s:
-            if char in '([{':
+            if char in '([{':  #  if char in brackets.keys()
                 stack.append(char)
-            elif char in ')]}':
+            elif char in ')]}': #  if char in brackets.values()
                 if len(stack) == 0 or brackets[char] != stack.pop():
                     return False
 
