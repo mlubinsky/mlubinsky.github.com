@@ -2,6 +2,27 @@ https://relational.ai/careers/ JOB
 
 https://leetsolve.com/48-rotate-image
 
+Brackets matching
+```
+class Solution:
+    def isValid(self, s: str) -> bool:     
+        stack = []
+        brackets = {
+            ')': '(',
+            ']': '[',
+            '}': '{'
+        }
+
+        for char in s:
+            if char in '([{':
+                stack.append(char)
+            elif char in ')]}':
+                if len(stack) == 0 or brackets[char] != stack.pop():
+                    return False
+
+        return len(stack) == 0
+```
+
 https://gaultier.github.io/blog/kahns_algorithm.html
 
 https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers 
