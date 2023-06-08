@@ -146,3 +146,54 @@ From here: <https://habr.com/ru/company/piter/blog/466529/>
 Теперь давайте разберемся, как “java” работает в качестве (1) интерпретатора (2) JIT-компилятора и/или (3) AOT-компилятора – и когда.
 
 Если коротко – как правило, “java” делает и (1), и (2). Начиная с Java 9 возможен и третий вариант. 
+
+
+
+### HashMap. ConcurrentHashMap
+
+https://stackoverflow.com/questions/1291836/concurrenthashmap-vs-synchronized-hashmap
+
+```
+We should favor Collections.synchronizedMap() when data consistency is of utmost importance,
+and we should choose ConcurrentHashMap for performance-critical applications where there are far more write operations than there are read operations.
+
+This is because the Collections.synchronizedMap() requires each thread to acquire a lock on the entire object for both read/write operations. 
+By comparison, the ConcurrentHashMap allows threads to acquire locks on separate segments of the collection, and make modifications at the same time.
+
+Hashtable is belongs to the Collection framework; ConcurrentHashMap belongs to the Executor framework. Hashtable uses single lock for whole data. ConcurrentHashMap uses multiple locks on segment level (16 by default) instead of object level i.e. whole Map . ConcurrentHashMap locking is applied only for updates
+```
+
+### Interfaces
+```
+import java.io.*;
+ 
+// A simple interface
+interface In1 {
+   
+    // public, static and final
+    final int a = 10;
+ 
+    // public and abstract
+    void display();
+}
+ 
+// A class that implements the interface.
+class TestClass implements In1 {
+   
+    // Implementing the capabilities of interface
+    @Override
+    public void display(){
+      System.out.println("Geek");
+    }
+ 
+    // Driver Code
+    public static void main(String[] args)
+    {
+        TestClass t = new TestClass();
+        t.display();
+        System.out.println(a);
+    }
+}
+```
+
+
