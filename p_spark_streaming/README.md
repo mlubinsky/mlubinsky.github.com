@@ -1,3 +1,6 @@
+Kafka + PySpark Streaming
+https://medium.com/plumbersofdatascience/kafka-with-spark-streaming-different-approaches-to-read-data-f38616c023b8
+
 https://github.com/manuzhang/awesome-streaming Awesome streaming
 
 ####  Youtube
