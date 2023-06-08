@@ -372,13 +372,14 @@ https://towardsdatascience.com/best-practices-for-bucketing-in-spark-sql-ea9f23f
 https://medium.com/analytics-vidhya/spark-bucketing-is-not-as-simple-as-it-looks-c74f105f4af0
 
 ### Skew 
+https://medium.com/@suffyan.asad1/handling-data-skew-in-apache-spark-techniques-tips-and-tricks-to-improve-performance-e2934b00b021
 
 https://towardsdatascience.com/deep-dive-into-handling-apache-spark-data-skew-57ce0d94ee38
 
 https://habr.com/ru/company/first/blog/678826/
 
 ```
-оптимизации перекошенного соединения в AQE:
+оптимизации перекошенного соединения в AQE: Adaptive Query Execution 
 
 spark.sql.adaptive.skewJoin.enabled: Этот логический параметр определяет, включена или выключена оптимизация перекошенного соединения. 
 Значение по умолчанию — true.
