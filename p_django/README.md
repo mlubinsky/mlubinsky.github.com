@@ -3,6 +3,8 @@ https://shiny.rstudio.com/py/
 
 ## Plotly / Dash
 
+https://habr.com/ru/companies/rosbank/articles/740374/
+
 https://www.datasimple.education/post/python-data-analysis-tips-3d-scatter-in-ploty-interactive-3d-data-analysis/
 
 https://github.com/santosjorge/cufflinks
