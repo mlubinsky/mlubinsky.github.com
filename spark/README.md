@@ -2,6 +2,8 @@ https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql-QueryEx
 
 https://umbertogriffo.gitbook.io/apache-spark-best-practices-and-tuning/
 
+https://sunilrana123.medium.com/bigdata-interview-question-part-3-38f36c57bac2
+
 https://leanpub.com/beautiful-spark/
 
 Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-to-load-local-file-in-sc-textfile-instead-of-hdfs
