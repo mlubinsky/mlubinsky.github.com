@@ -1,3 +1,7 @@
+Database diagrams
+https://news.ycombinator.com/item?id=36243926
+
+
 https://sqlfordevs.com/ebook
 
 
