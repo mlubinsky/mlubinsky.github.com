@@ -50,6 +50,8 @@ https://towardsdatascience.com/make-a-mock-real-time-stream-of-data-with-python-
 
 ### Kafka and Python
 
+https://www.toptal.com/microservices/event-driven-microservices-kafka-python
+
 https://habr.com/ru/company/neoflex/blog/686242/ PySpark and Kafka
 
 https://habr.com/ru/companies/southbridge/articles/735262/
