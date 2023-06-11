@@ -36,6 +36,7 @@ https://docs.python-guide.org/
 
 https://stackabuse.com/guide-to-lists-in-python/ List
 
+https://docs.python.org/3/library/devmode.html
 
 https://realpython.com/python-iterators-iterables/
 
