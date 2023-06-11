@@ -138,7 +138,15 @@ example of unpacking
 https://docs.python-guide.org/writing/gotchas/#mutable-default-arguments
 Python’s default arguments are evaluated once when the function is defined, 
 not each time the function is called.
-
+```
+    def fn(arg=[]):
+        arg.append(1)
+        print(arg)
+        
+    fn() # [1]
+    fn() # [1, 1]
+    fn() # [1, 1, 1]
+```
 This means that if you use a mutable default argument and mutate it, you will and have mutated that object for all future calls to the function as well.
 
 Do this:
