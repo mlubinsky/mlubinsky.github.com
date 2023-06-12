@@ -80,7 +80,7 @@ https://www.structlog.org/en/stable/index.html struct logging
 
 https://steve.dignam.xyz/2023/04/09/structlog-instead-of-logging/
 
-
+https://coderslegacy.com/cython-vs-cpython-comparing-speed/  Cython
 
 https://joblib.readthedocs.io/ joblib
 
