@@ -1,5 +1,7 @@
 ### Python notes
 
+https://www.bitecode.dev/p/relieving-your-python-packaging-pain
+
 https://www.stationx.net/python-data-structures-cheat-sheet/
 
 https://github.com/amaargiru/pycore
