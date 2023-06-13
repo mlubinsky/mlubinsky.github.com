@@ -1,5 +1,8 @@
 ### Python notes
 
+#### pip
+https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
+
 https://www.bitecode.dev/p/relieving-your-python-packaging-pain
 
 https://www.stationx.net/python-data-structures-cheat-sheet/
