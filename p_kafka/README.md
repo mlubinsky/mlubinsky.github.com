@@ -1,3 +1,6 @@
+Book
+https://www.amazon.com/Kafka-Definitive-Real-Time-Stream-Processing/dp/1492043087
+
 ### Event message  contains:
 
 - key
