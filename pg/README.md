@@ -4,6 +4,8 @@ https://www.postgresql.org/download/windows/
 
 https://postgis.net/workshops/postgis-intro/installation.html PostGIS
 
+https://www.yugabyte.com/postgresql/postgresql-high-availability/ High Availability
+
 ### How to find running SQL and kill it?
 ```
 SELECT * FROM pg_stat_activity WHERE state = 'active';
