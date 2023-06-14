@@ -9,6 +9,9 @@ https://www.cs.ubc.ca/~schmidtm/Courses/LecturesOnML/
 
 https://onedrive.live.com/?authkey=%21AMC9DofT%5FW6hqE4&cid=199F8C87205FEB30&id=199F8C87205FEB30%21214006&parId=199F8C87205FEB30%21213972&o=OneUp
 
+### Graph NN
+https://distill.pub/2021/gnn-intro/
+
 aGrUM is a C++ library for graphical models. It is designed for easily building applications using graphical 
 models such as Bayesian networks, influence diagrams, decision trees, GAI networks or Markov decision processe
 
