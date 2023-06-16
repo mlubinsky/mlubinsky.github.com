@@ -2,6 +2,8 @@ https://www.freecodecamp.org/news/apache-kafka-handbook/
 
 https://habr.com/ru/articles/738874/
 
+https://www.youtube.com/watch?v=BVxDFL5iTx8 Kafka 3.5 KRaft instead Zookeper
+
 https://habr.com/ru/companies/sbermarket/articles/738634/
 
 https://habr.com/ru/companies/southbridge/articles/730380/
