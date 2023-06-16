@@ -1,6 +1,8 @@
 ### JavaScript
 https://unsuckjs.com/
 
+https://github.com/PyHAT-stack/awesome-python-htmx/tree/main HTMX
+
 ## Shiny for Python
 https://shiny.rstudio.com/py/
 
