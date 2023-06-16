@@ -1,3 +1,15 @@
+### Redirect output to file
+
+Take care to add 2>&1 at the end of the instruction because on Windows, the order of redirection is important as command 2>&1 > logfile will produce an empty file
+
+#### To combine ERR and STDOUT
+ 
+command > logfile 2>&1 
+
+##### To separate ERR and STDOUT
+
+dir test.exe > output.txt 2> err.txt
+
 ### File Compare Utils
 Compare It!
 https://www.grigsoft.com/wincmp3.htm
