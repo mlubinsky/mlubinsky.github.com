@@ -28,6 +28,9 @@ https://github.com/prabhupant/python-ds
    int(True) # 1
    int(False) # 0 
 ```
+### translate() and maketrans()
+
+combination of translate() and maketrans() methods provide more flexibility by allowing for simultaneous multiple-character translations. It's useful when you have a set of characters that need to be replaced. However, for simple task of removing a single character, it's smarter to stick to replace().
 
 ### copy/ deepcopy
 
