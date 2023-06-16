@@ -65,6 +65,8 @@ https://cheatography.com/mad100141/cheat-sheets/path-cheat-sheet-python/
 
 https://realpython.com/python-subprocess/
 
+https://martinheinz.dev/blog/98
+
 https://docs.python.org/3/library/shlex.html
 
 sh  https://amoffat.github.io/sh/index.html https://amoffat.github.io/sh/sections/faq.html
