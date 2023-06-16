@@ -10,6 +10,11 @@ command > logfile 2>&1
 ```
 dir test.exe > output.txt 2> err.txt
 ```
+
+#### Redirect to NULL
+```
+dir test.exe 1> myoutput.txt 2>nul
+```
 ### File Compare Utils
 Compare It!
 https://www.grigsoft.com/wincmp3.htm
