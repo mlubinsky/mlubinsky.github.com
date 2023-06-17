@@ -21,6 +21,8 @@ https://www.grigsoft.com/wincmp3.htm
 
 ### Install Apache on Windows
 
+LoadModule libpq_module /usr/lib/apache/1.3/mod_libpq.so  http.conf
+
 https://www.sitepoint.com/how-to-install-apache-on-windows/
 
 Microsoft have new version of vc_redist for apps developed with Microsoft Visual Studio 2022.
