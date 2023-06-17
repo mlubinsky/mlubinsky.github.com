@@ -1,6 +1,6 @@
 https://github.com/DovAmir/awesome-design-patterns
 
-
+https://habr.com/ru/companies/kts/articles/741846/ Полное руководство по проектированию систем в виде схемы
 ### Diagrams builders 
 
 https://text-to-diagram.com/
