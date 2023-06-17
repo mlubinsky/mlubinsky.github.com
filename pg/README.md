@@ -6,7 +6,7 @@ https://postgis.net/workshops/postgis-intro/installation.html PostGIS
 
 https://www.yugabyte.com/postgresql/postgresql-high-availability/ High Availability
 
-### How to find running SQL and kill it?
+### How to find currently running SQL and kill it?
 ```
 SELECT * FROM pg_stat_activity WHERE state = 'active';
 So you can identify the PID of the hanging query you want to terminate, run this:
@@ -17,6 +17,30 @@ This query might take a while to kill the query, so if you want to kill it the h
 SELECT pg_terminate_backend(PID);
 ```
 
+###  JSON
+
+https://stackoverflow.com/questions/53086816/postgresql-aggregate-multiple-rows-as-json-array-based-on-specific-column/53087015#53087015
+```
+I would like to generate a JSON output, consisting of arrays of arrays, whereas each of the inner arrays contains the aggregated points of a trip (as indicated by trip_log_id).
+
+SELECT json_agg(trips)
+FROM (
+    SELECT 
+        json_agg(
+            json_build_object(
+                'recorded_at', created_at, 
+                'latitude', latitude, 
+                'longitude', longitude
+            )
+        ) as trips
+    FROM data_tracks
+    GROUP by trip_log_id
+)s
+
+1. json_build_object creates your main json objects
+2. json_agg() ... GROUP BY trip_log_id groups these json objects into one trip object
+3. second json_agg aggregates all trips into one array
+```
 ### PG dump / restore
 
 https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-pgdump-restore
