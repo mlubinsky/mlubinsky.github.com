@@ -1,5 +1,5 @@
  http://whichjdk.com/
- 
+
  https://sdkman.io/install
  
  What is a modern Java environment?
@@ -12,6 +12,8 @@
  https://evacchi.github.io/java/records/jbang/2021/10/12/learn-you-an-actor-system-java-17-switch-expressions.html
  
  <https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997> Effective Java 3rd ed Joshua Bloch
+
+https://habr.com/ru/articles/739338/ JVM Internals
  
  Java in 2021
  https://www.avanwyk.com/revisiting-java-in-2021-ii/
