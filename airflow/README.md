@@ -1,5 +1,7 @@
 https://stackoverflow.com/questions/50708226/airflow-macros-in-python-operator
 
+https://www.astronomer.io/events/webinars/improve-your-dags-with-hidden-airflow-features/
+
 https://www.datafold.com/blog/3-most-underused-features-of-apache-airflow
 
 Task failure handling:
