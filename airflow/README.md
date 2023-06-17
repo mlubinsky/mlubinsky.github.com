@@ -1,5 +1,8 @@
 https://stackoverflow.com/questions/50708226/airflow-macros-in-python-operator
 
+Task failure
+https://stackabuse.com/handling-task-failures-in-airflow-a-practical-guide/
+
 https://habr.com/ru/articles/737046/
 
 https://airflow.apache.org/docs/apache-airflow/stable/dag-run.html
