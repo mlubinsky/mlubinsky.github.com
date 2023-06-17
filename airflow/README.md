@@ -1,6 +1,8 @@
 https://stackoverflow.com/questions/50708226/airflow-macros-in-python-operator
 
-Task failure
+https://www.datafold.com/blog/3-most-underused-features-of-apache-airflow
+
+Task failure handling:
 https://stackabuse.com/handling-task-failures-in-airflow-a-practical-guide/
 
 https://habr.com/ru/articles/737046/
