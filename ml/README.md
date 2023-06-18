@@ -1,5 +1,15 @@
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
+
+
+### Steven Brunton book and code 
+
+https://www.youtube.com/@Eigensteve
+
+https://faculty.washington.edu/sbrunton/DataBookV2.pdf
+
+https://github.com/dynamicslab/
+
 100 Data Science вопросов
 https://www.youtube.com/watch?v=BI-yjkRKymg
 
