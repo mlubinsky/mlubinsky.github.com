@@ -70,6 +70,8 @@ https://www.parand.com/a-practical-introduction-to-polars.html
 
 https://itnext.io/the-fastest-way-to-read-a-csv-file-in-pandas-2-0-532c1f978201
 
+https://dev.to/ranggakd/polars-vs-pandas-a-brief-tale-of-two-dataframe-libraries-lli
+
 
 https://www.reddit.com/r/Python/comments/13bb59x/test_on_4_concurrent_jobs_using_pythonpolars/
 
