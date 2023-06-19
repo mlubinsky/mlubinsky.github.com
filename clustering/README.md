@@ -1,4 +1,7 @@
 ### Clustering 
+
+https://en.wikipedia.org/wiki/Determining_the_number_of_clusters_in_a_data_set
+
 ```
 The 'elbow method' is a heuristic (a subjective rule of thumb) rather than a statistic.
  A more mathematically rigorous and defensible approach is the Gap Statistic.
