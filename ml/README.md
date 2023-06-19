@@ -1,6 +1,6 @@
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
-
+https://www.youtube.com/playlist?list=PLnu7tVik2MzLUv0wrYiBHOwbf7QpcWlIr
 
 ### Steven Brunton book and code 
 
