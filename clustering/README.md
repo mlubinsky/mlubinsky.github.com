@@ -1,4 +1,14 @@
 ### Clustering 
+```
+The 'elbow method' is a heuristic (a subjective rule of thumb) rather than a statistic.
+ A more mathematically rigorous and defensible approach is the Gap Statistic.
+If I am your boss, I will expect and ask you for the Gap stat, because we may need to explain and >defend< our analysis.
+ "I simply eye-balled it" 👁️ won't cut it when we are under the spotlight.
+But before you cluster, you must determine whether there are clusters in the dataset.
+To test for that, you use the Hopkins statistic. You must do this for clustering algorithms will cluster even random white-noise.
+Finally, once you cluster you should also try K-Medoids and see which of the two, K-Medoids or K-Means, is a better fit.
+K-Means is intolerant of outliers.
+```
 
 https://machinelearningmastery.com/clustering-algorithms-with-python/ 
 
