@@ -4,6 +4,10 @@
 "There is no God and Dirac is his Prophet." 
 — W. Pauli
 
+
+https://www.damtp.cam.ac.uk/user/tong/teaching.html
+
+
 https://data.stackexchange.com/physics/query/1378063
 
 Newton’s law from quantum mechanics: macroscopic bodies in the vacuum
