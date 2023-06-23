@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=GUn9zN-wtf4
+
 https://www.decube.io/post/snowflake-vs-databricks-side-by-side-comparison
 
 https://habr.com/ru/post/663922/
