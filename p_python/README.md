@@ -5,11 +5,15 @@ https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 
 https://www.bitecode.dev/p/relieving-your-python-packaging-pain
 
+### Links
+
 https://www.stationx.net/python-data-structures-cheat-sheet/
 
 https://github.com/amaargiru/pycore
 
 https://github.com/prabhupant/python-ds
+
+https://superfastpython.com/
 
 #### Immutable types
 
