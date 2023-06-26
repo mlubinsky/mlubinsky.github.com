@@ -66,6 +66,8 @@ https://superuser.com/questions/994013/run-two-wamp-servers-installed-in-differe
 
 ### GNSS, RINEX,  NMEA  (National Marine Electronics Association)
 
+https://www.sparkfun.com/datasheets/GPS/NMEA%20Reference%20Manual-Rev2.1-Dec07.pdf NMEA
+
 https://home.csis.u-tokyo.ac.jp/~dinesh/Dinesh_T_files/GNSS_10_Introduction_DataFormats.pdf
 
 https://en.wikipedia.org/wiki/NMEA_0183
