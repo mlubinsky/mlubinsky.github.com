@@ -388,7 +388,7 @@ _itemgetter_ creates and returns a key function that looks up a named dictionary
 This is how you use itemgetter when the sequence elements are dictionaries. It also works when
 the elements are tuples or lists - just pass a number index instead:
 
-  Same data , but as a list of tuples .
+  Same data, but as a list of tuples:
 ```
  student_rows = [
    (" Joe Smith ", " physics ", 3.7) ,
@@ -405,6 +405,14 @@ the elements are tuples or lists - just pass a number index instead:
 _operator_ also provides _attrgetter_, for keying off an attribute of the element, and _methodcaller_
 for keying off a method’s return value - useful when the sequence elements are instances of your
 own class
+
+Example: sorting using functools
+```
+from functools import cmp_to_key
+xs = ['4', '42', '46', '427', '465']
+xs.sort(key=cmp_to_key(lambda a, b: int(b+a)-int(a+b)))
+print(''.join(xs)) # 46546442742
+```
 
 #### Generators, yield
 A function is a generator function if and only if it uses "yield" instead of "return"
