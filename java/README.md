@@ -14,6 +14,8 @@
  <https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997> Effective Java 3rd ed Joshua Bloch
 
 https://habr.com/ru/articles/739338/ JVM Internals
+
+https://habr.com/ru/articles/743862/  Java Interview questions
  
  Java in 2021
  https://www.avanwyk.com/revisiting-java-in-2021-ii/
