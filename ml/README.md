@@ -19,6 +19,9 @@ https://www.cs.ubc.ca/~schmidtm/Courses/LecturesOnML/
 
 https://onedrive.live.com/?authkey=%21AMC9DofT%5FW6hqE4&cid=199F8C87205FEB30&id=199F8C87205FEB30%21214006&parId=199F8C87205FEB30%21213972&o=OneUp
 
+### Cosine Similarity
+https://en.wikipedia.org/wiki/Cosine_similarity
+
 ### Graph NN
 https://distill.pub/2021/gnn-intro/
 
