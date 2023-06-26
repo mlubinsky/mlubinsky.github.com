@@ -13,6 +13,10 @@ https://github.com/amaargiru/pycore
 
 https://github.com/prabhupant/python-ds
 
+### Fast python
+
+https://www.amazon.com/Python-Science-Tiago-Rodrigues-Antao/dp/1617297933
+
 https://superfastpython.com/ Threading, Multiprocessing, and AsyncIO
 
 #### Immutable types
