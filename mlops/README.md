@@ -2,6 +2,7 @@ https://www.hopsworks.ai/mlops-dictionary
 
 https://habr.com/ru/companies/otus/articles/735170/
 
+https://habr.com/ru/articles/743782/
 
 https://habr.com/ru/company/selectel/blog/703460/
 
