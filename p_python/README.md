@@ -82,6 +82,8 @@ https://www.pyinvoke.org/
 
 ### 3rd party libs
 
+https://github.com/vinta/awesome-python
+
 https://github.com/Suor/funcy. A fancy and practical functional tools
 
 https://toolz.readthedocs.io/en/latest/  https://github.com/pytoolz/cytoolz
