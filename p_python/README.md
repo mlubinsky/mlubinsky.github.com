@@ -295,7 +295,10 @@ NamedTupleCard = namedtuple('NamedTupleCard', ['rank', 'suit'])
 ```
 
 #### Dataclass
-
+```
+The @dataclass decorator (introduced in Python 3.7) can automatically generate several special methods for a class,
+such as __init__, __repr__, __eq__, __lt__, and so on.
+```
 https://realpython.com/python-data-classes/
 
 https://earthly.dev/blog/python-data-classes/
@@ -912,6 +915,8 @@ func_name(f)
 https://www.poeticdev.com/data/python-decorators-when-to-use-and-when-to-avoid-them/
 
 https://soshace.com/understanding-python-decorators-and-how-to-use-them-effectively/
+
+https://medium.com/techtofreedom/9-python-built-in-decorators-that-optimize-your-code-significantly-bc3f661e9017
 
 If d is decorator it means :
 x = d(x)
