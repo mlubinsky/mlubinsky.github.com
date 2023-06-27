@@ -23,6 +23,9 @@ https://www.amazon.com/Python-Science-Tiago-Rodrigues-Antao/dp/1617297933
 
 https://superfastpython.com/ Threading, Multiprocessing, and AsyncIO
 
+Combining mulithreading and multiprocessing:
+https://heyashy.medium.com/blazing-fast-etls-with-simultaneous-multiprocessing-and-multithreading-214865b56516
+
 #### Immutable types
 
   Integers, floats, complex numbers, and Booleans, are always immutable. 
