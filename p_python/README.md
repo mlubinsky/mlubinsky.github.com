@@ -920,6 +920,8 @@ https://soshace.com/understanding-python-decorators-and-how-to-use-them-effectiv
 
 https://medium.com/techtofreedom/9-python-built-in-decorators-that-optimize-your-code-significantly-bc3f661e9017
 
+https://betterprogramming.pub/six-advanced-decorator-patterns-5ffe67552691
+
 If d is decorator it means :
 x = d(x)
 
