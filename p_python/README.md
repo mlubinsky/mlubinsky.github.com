@@ -21,6 +21,8 @@ https://www.amazon.com/High-Performance-Python-Performant-Programming/dp/1492055
 
 https://www.amazon.com/Python-Science-Tiago-Rodrigues-Antao/dp/1617297933
 
+https://pythonspeed.com/
+
 https://superfastpython.com/ Threading, Multiprocessing, and AsyncIO
 
 Combining mulithreading and multiprocessing:
