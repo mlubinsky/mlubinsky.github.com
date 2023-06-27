@@ -1,3 +1,6 @@
+https://www.youtube.com/watch?v=4mNdXz2333U  10 Mins for entire body!
+
+
 https://plakhov.livejournal.com/234894.html - Extra weight
 
 https://www.youtube.com/watch?v=QxZDdumDEO0 Как лечить гипертонию с помощью упражнений? Профилактика повышенного артериального давления
