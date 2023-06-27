@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=JJ_nnGkZjBc&list=PL2Uw4_HvXqvY2zhJ9AMUa_Z6dtMGF3gtb&index=126
+
 https://stackoverflow.com/questions/50708226/airflow-macros-in-python-operator
 
 https://www.astronomer.io/events/webinars/improve-your-dags-with-hidden-airflow-features/
