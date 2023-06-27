@@ -2,6 +2,9 @@ https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql-QueryEx
 
 https://umbertogriffo.gitbook.io/apache-spark-best-practices-and-tuning/
 
+Out of memory
+https://medium.com/@sathamn.n/surviving-an-oom-issue-in-apache-spark-a-thrilling-interview-experience-e9f7cbd214dc
+
 https://sunilrana123.medium.com/bigdata-interview-question-part-3-38f36c57bac2
 
 https://leanpub.com/beautiful-spark/
