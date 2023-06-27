@@ -1,5 +1,11 @@
 https://www.youtube.com/watch?v=4mNdXz2333U  10 Mins for entire body!
 
+### Al Kavadio:
+
+https://habr.com/ru/articles/743508/
+
+https://alkavadlo.com/
+
 
 https://plakhov.livejournal.com/234894.html - Extra weight
 
@@ -13,13 +19,26 @@ https://www.youtube.com/watch?v=kjQhq6YtGaI
 ```
 Here are some exercises that may be beneficial for men over 60:
 
-Aerobic exercises: These exercises can improve cardiovascular health, strengthen the heart, and boost overall fitness. Examples include brisk walking, jogging, cycling, swimming, and dancing.
+Aerobic exercises:
+*****************
+These exercises can improve cardiovascular health, strengthen the heart, and boost overall fitness.
+Examples include brisk walking, jogging, cycling, swimming, and dancing.
 
-Strength training: Resistance training can help build muscle mass, improve bone density, and increase metabolism. Examples include weightlifting, bodyweight exercises, and resistance band training.
+Strength training:
+*****************
+Resistance training can help build muscle mass, improve bone density, and increase metabolism.
+Examples include weightlifting, bodyweight exercises, and resistance band training.
 
-Balance exercises: As people age, balance can become an issue, increasing the risk of falls. Balance exercises can help improve stability and reduce the risk of falls. Examples include standing on one foot, heel-to-toe walking, and yoga.
+Balance exercises:
+******************
+As people age, balance can become an issue, increasing the risk of falls.
+Balance exercises can help improve stability and reduce the risk of falls.
+Examples include standing on one foot, heel-to-toe walking, and yoga.
 
-Flexibility exercises: Stretching can help improve range of motion, reduce stiffness, and prevent injury. Examples include yoga, Pilates, and static stretches.
+Flexibility exercises:
+***********************
+Stretching can help improve range of motion, reduce stiffness, and prevent injury.
+Examples include yoga, Pilates, and static stretches.
 ```
 
 ### ЛЕЧЕНИЕ ПРОСТАТИТА
