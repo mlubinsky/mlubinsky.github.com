@@ -9,6 +9,26 @@ https://alkavadlo.com/
 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully
 https://www.amazon.com/Built-Move-Essential-Habits-Freely-ebook/dp/B0B5STDSC8
 
+Kicking Ass After 50
+https://www.amazon.com/Kicking-Ass-After-Ken-Berry/dp/B0C1J5BNWW/r
+
+Balance Exercises for Seniors Over 60:
+https://www.amazon.com/Balance-Exercises-Seniors-Easy-Follow/dp/B0BVP1C9V1
+
+Fitness Freedom for Seniors:
+https://www.amazon.com/dp/B0BYR88TRF
+
+Core Exercises for Seniors
+https://www.amazon.com/dp/1990404235/
+
+Strength Training Workouts for Seniors Over 60:
+https://www.amazon.com/Strength-Training-Workouts-Seniors-Over/dp/B0BBYBW69S
+
+https://www.amazon.com/Younger-You-Reverse-Age-Longer-ebook/dp/B08RYRJV4Q
+
+ https://www.amazon.com/Essential-Balance-Exercises-Seniors-Senior-Friendly/dp/B0C2S4MWL1
+
+https://www.amazon.com/Smart-Sex-Boost-Your-Pleasure-ebook/
 
 https://plakhov.livejournal.com/234894.html - Extra weight
 
