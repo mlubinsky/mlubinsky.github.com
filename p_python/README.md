@@ -327,6 +327,8 @@ class RegularCard:
 
 ### itertools
 https://realpython.com/python-itertools/
+
+
 #### product()
 ```
 from itertools import product
@@ -460,7 +462,24 @@ the flow of control picks up on the line after the yield statement.
  The __yield from__ statement is used specifically in generator functions, when they yield values directly from another generator object (or, equivalently, by calling another generator function)
  
 
- 
+### Convert Json to CSV
+
+```
+import json
+if __name__ == '__main__':
+    try:
+        with open('input.json', 'r') as f:
+            data = json.loads(f.read())
+
+        output = ','.join([*data[0]])  ### what is it?
+        for obj in data:
+            output += f'\n{obj["Name"]},{obj["age"]},{obj["birthyear"]}'
+
+        with open('output.csv', 'w') as f:
+            f.write(output)
+    except Exception as ex:
+        print(f'Error: {str(ex)}')
+```
 #### Generate last day of month
 
 ```
