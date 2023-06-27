@@ -303,6 +303,8 @@ https://realpython.com/python-data-classes/
 
 https://earthly.dev/blog/python-data-classes/
 
+https://betterprogramming.pub/9-python-dataclass-best-practices-to-improve-the-development-process-8a68df446580
+
 ```
 @dataclass
 class DataClassCard:
