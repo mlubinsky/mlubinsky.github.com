@@ -6,6 +6,9 @@ https://habr.com/ru/articles/743508/
 
 https://alkavadlo.com/
 
+Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully
+https://www.amazon.com/Built-Move-Essential-Habits-Freely-ebook/dp/B0B5STDSC8
+
 
 https://plakhov.livejournal.com/234894.html - Extra weight
 
