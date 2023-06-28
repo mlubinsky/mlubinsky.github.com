@@ -1,5 +1,7 @@
-Render math expression in Markdown
+### Render math expression in Markdown
 https://news.ycombinator.com/item?id=31438864
+
+https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions
 
 When $a \ne 0$, there are two solutions to 
 
@@ -19,7 +21,7 @@ https://mathpages.com/
 
 https://galoisian.files.wordpress.com/2018/11/undergraduate-lecture-notes-in-physics-paul-j-nahin-inside-interesting-integrals-2015-springer-1.pdf
 
-Math books:
+### Math books:
 https://news.ycombinator.com/item?id=34439828
 
 https://mltechniques.com/resources/
