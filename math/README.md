@@ -1,9 +1,7 @@
 Render math expression in Markdown
 https://news.ycombinator.com/item?id=31438864
 
-When $a \ne 0$, t
-
-here are two solutions to 
+When $a \ne 0$, there are two solutions to 
 
 $(ax^2 + bx + c = 0)$ 
 
