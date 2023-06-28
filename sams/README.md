@@ -157,10 +157,6 @@ https://developers.google.com/kml/documentation/kml_tut
 Same as above but with Angular 1
 
 ```
-Here's an example of implementing the same logic using AngularJS (Angular 1) framework:
-
-html
-Copy code
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
@@ -199,7 +195,7 @@ Copy code
 </body>
 </html>
 ```
-Explnation:
+Explanation:
 ```
 In this example, we start by including the AngularJS library using a script tag.
 The ng-app directive is added to the html element to initialize the AngularJS application.
