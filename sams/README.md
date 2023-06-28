@@ -100,4 +100,55 @@ https://renenyffenegger.ch/notes/tools/Google-Earth/kml/index
 
 https://developers.google.com/kml/documentation/kml_tut
 
- 
+### Web
+ ```
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vertical Radio Buttons with Conditional Text Input</title>
+  <script>
+    function handleRadioChange() {
+      var option1Radio = document.getElementById("option1");
+      var option2Radio = document.getElementById("option2");
+      var textInput1 = document.getElementById("text-input1");
+      var textInput2 = document.getElementById("text-input2");
+
+      if (option1Radio.checked) {
+        textInput1.style.display = "block";
+        textInput2.style.display = "none";
+      } else if (option2Radio.checked) {
+        textInput1.style.display = "none";
+        textInput2.style.display = "block";
+      } else {
+        textInput1.style.display = "none";
+        textInput2.style.display = "none";
+      }
+    }
+  </script>
+  <style>
+    .text-input {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Choose an Option:</h2>
+  <label for="option1">
+    <input type="radio" id="option1" name="options" value="option1" onchange="handleRadioChange()"> Option 1
+  </label>
+  <br>
+  <label for="option2">
+    <input type="radio" id="option2" name="options" value="option2" onchange="handleRadioChange()"> Option 2
+  </label>
+  <br>
+  <label for="text-input1">Text Input 1:</label>
+  <input type="text" id="text-input1" name="text-input1" class="text-input">
+  <br>
+  <label for="text-input2">Text Input 2:</label>
+  <input type="text" id="text-input2" name="text-input2" class="text-input">
+</body>
+</html>
+
+
+
+```
