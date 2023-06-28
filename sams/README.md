@@ -152,3 +152,61 @@ https://developers.google.com/kml/documentation/kml_tut
 
 
 ```
+
+
+Same as above but with Angular 1
+
+```
+Here's an example of implementing the same logic using AngularJS (Angular 1) framework:
+
+html
+Copy code
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>Vertical Radio Buttons with Conditional Text Input (AngularJS)</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+  <style>
+    .text-input {
+      display: none;
+    }
+  </style>
+</head>
+<body ng-controller="myController">
+  <h2>Choose an Option:</h2>
+  <label for="option1">
+    <input type="radio" id="option1" name="options" value="option1" ng-model="selectedOption" ng-change="handleRadioChange()"> Option 1
+  </label>
+  <br>
+  <label for="option2">
+    <input type="radio" id="option2" name="options" value="option2" ng-model="selectedOption" ng-change="handleRadioChange()"> Option 2
+  </label>
+  <br>
+  <label for="text-input1">Text Input 1:</label>
+  <input type="text" id="text-input1" name="text-input1" class="text-input" ng-show="selectedOption === 'option1'">
+  <br>
+  <label for="text-input2">Text Input 2:</label>
+  <input type="text" id="text-input2" name="text-input2" class="text-input" ng-show="selectedOption === 'option2'">
+
+  <script>
+    angular.module('myApp', [])
+      .controller('myController', function($scope) {
+        $scope.handleRadioChange = function() {
+          // Implementation of radio button change logic
+        };
+      });
+  </script>
+</body>
+</html>
+In this example, we start by including the AngularJS library using a script tag. The ng-app directive is added to the html element to initialize the AngularJS application.
+
+We define an AngularJS module called "myApp" and create a controller called "myController" using the controller method. The controller function is then attached to the ng-controller directive in the body tag.
+
+Inside the controller function, we define the handleRadioChange function, which will be triggered whenever a radio button is selected or deselected. You can implement the necessary logic within this function to handle the visibility of the text input elements based on the selected radio button.
+
+In the HTML code, the ng-model directive is used to bind the selected radio button value to the $scope.selectedOption variable. The ng-change directive is used to call the handleRadioChange function whenever the selected option changes.
+
+The ng-show directive is applied to each text input element to conditionally show or hide them based on the value of $scope.selectedOption. If the selected option matches the desired option for each text input, the respective input will be displayed.
+
+Note: AngularJS is an older version of the Angular framework and is no longer actively developed or recommended for new projects. It's recommended to use the latest version of Angular (Angular 2+) for new projects.
+````
