@@ -5,6 +5,13 @@ https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 
 https://www.bitecode.dev/p/relieving-your-python-packaging-pain
 
+### Ruff - linter, it also can replaces Black and isort
+```
+pip install ruff
+ruff check .
+```
+https://www.blog.pythonlibrary.org/2023/06/28/an-intro-to-ruff-an-extremely-fast-python-linter/
+
 ### Links
 
 https://www.stationx.net/python-data-structures-cheat-sheet/
