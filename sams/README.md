@@ -198,15 +198,24 @@ Copy code
   </script>
 </body>
 </html>
-In this example, we start by including the AngularJS library using a script tag. The ng-app directive is added to the html element to initialize the AngularJS application.
+```
+Explnation:
+```
+In this example, we start by including the AngularJS library using a script tag.
+The ng-app directive is added to the html element to initialize the AngularJS application.
 
-We define an AngularJS module called "myApp" and create a controller called "myController" using the controller method. The controller function is then attached to the ng-controller directive in the body tag.
+We define an AngularJS module called "myApp" and create a controller called "myController" using the controller method.
+ The controller function is then attached to the ng-controller directive in the body tag.
 
-Inside the controller function, we define the handleRadioChange function, which will be triggered whenever a radio button is selected or deselected. You can implement the necessary logic within this function to handle the visibility of the text input elements based on the selected radio button.
+Inside the controller function, we define the handleRadioChange function, which will be triggered whenever a radio button is selected or deselected.
+You can implement the necessary logic within this function to handle the visibility of the text input elements based on the selected radio button.
 
-In the HTML code, the ng-model directive is used to bind the selected radio button value to the $scope.selectedOption variable. The ng-change directive is used to call the handleRadioChange function whenever the selected option changes.
+In the HTML code, the ng-model directive is used to bind the selected radio button value to the $scope.selectedOption variable.
+The ng-change directive is used to call the handleRadioChange function whenever the selected option changes.
 
-The ng-show directive is applied to each text input element to conditionally show or hide them based on the value of $scope.selectedOption. If the selected option matches the desired option for each text input, the respective input will be displayed.
+The ng-show directive is applied to each text input element to conditionally show or hide them based on the value of $scope.selectedOption.
+ If the selected option matches the desired option for each text input, the respective input will be displayed.
 
-Note: AngularJS is an older version of the Angular framework and is no longer actively developed or recommended for new projects. It's recommended to use the latest version of Angular (Angular 2+) for new projects.
+Note: AngularJS is an older version of the Angular framework and is no longer actively developed or recommended for new projects.
+ It's recommended to use the latest version of Angular (Angular 2+) for new projects.
 ````
