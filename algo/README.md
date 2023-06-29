@@ -16,6 +16,9 @@ https://ru.algorithmica.org/
 
 https://tproger.ru/books/algorithms-data-structures-books/
 
+Hash function
+https://papa.bretmulvey.com/post/124027987928/hash-functions
+
 ```
 Let’s say we want to count the number of times elements appear in a stream of data. A simple solution is to maintain a hash table that maps elements to their frequencies.
 
