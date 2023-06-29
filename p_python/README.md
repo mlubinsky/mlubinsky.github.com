@@ -104,6 +104,8 @@ https://www.pyinvoke.org/
 
 https://github.com/vinta/awesome-python
 
+https://pluggy.readthedocs.io/en/latest/ Pluggy
+
 https://github.com/Suor/funcy. A fancy and practical functional tools
 
 https://toolz.readthedocs.io/en/latest/  https://github.com/pytoolz/cytoolz
