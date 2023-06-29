@@ -6,6 +6,9 @@ https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 https://www.bitecode.dev/p/relieving-your-python-packaging-pain
 
 ### Using -m flag
+
+https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag
+
 https://til.simonwillison.net/python/stdlib-cli-tools
 
 https://news.ycombinator.com/item?id=36515531
@@ -88,7 +91,7 @@ https://docs.python.org/3/library/functions.html
 
 https://docs.python.org/3/library/index.html
 
-https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag
+
 
 
 
