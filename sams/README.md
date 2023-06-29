@@ -1,3 +1,9 @@
+### Javascript HTTP POST  - PHP
+
+https://stackoverflow.com/questions/45426158/send-data-from-html-form-to-php
+
+ https://www.w3schools.com/php/php_forms.asp
+
 ### Redirect output to file
 
 Take care to add 2>&1 at the end of the instruction because on Windows, the order of redirection is important as command 2>&1 > logfile will produce an empty file
