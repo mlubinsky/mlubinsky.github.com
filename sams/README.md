@@ -188,7 +188,22 @@ Same as above but with Angular 1
     angular.module('myApp', [])
       .controller('myController', function($scope) {
         $scope.handleRadioChange = function() {
-          // Implementation of radio button change logic
+          var option1 = 'option1';
+          var option2 = 'option2';
+
+          var textInput1 = document.getElementById("text-input1");
+          var textInput2 = document.getElementById("text-input2");
+
+          if ($scope.selectedOption === option1) {
+            textInput1.style.display = "block";
+            textInput2.style.display = "none";
+          } else if ($scope.selectedOption === option2) {
+            textInput1.style.display = "none";
+            textInput2.style.display = "block";
+          } else {
+            textInput1.style.display = "none";
+            textInput2.style.display = "none";
+          }
         };
       });
   </script>
