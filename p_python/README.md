@@ -5,6 +5,18 @@ https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 
 https://www.bitecode.dev/p/relieving-your-python-packaging-pain
 
+### Using -m flag
+https://til.simonwillison.net/python/stdlib-cli-tools
+
+https://news.ycombinator.com/item?id=36515531
+
+python -m http.server 8001
+```
+modules with a if __name__ == "__main__": block that are available on Python's standard import path
+can be executed from the terminal using python -m name_of_module
+```
+python -m site
+
 ### Ruff - linter, it also can replaces Black and isort
 ```
 pip install ruff
