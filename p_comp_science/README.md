@@ -1,3 +1,9 @@
+## Kuramoto
+
+ https://github.com/fabridamicelli/kuramoto
+
+ https://arxiv.org/pdf/2306.14928.pdf
+
 
 https://github.com/liam-ilan/electron-orbitals
 
