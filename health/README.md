@@ -1,5 +1,10 @@
 https://www.youtube.com/watch?v=4mNdXz2333U  10 Mins for entire body!
 
+
+### Maximux Oxigen Consumption
+
+https://www.youtube.com/watch?v=2tVAklHoj8s
+
 ### Adjustable kettlebell: 
 
 https://www.titan.fitness/endurance/kettlebells/adjustable/20-lb-adjustable-kettlebell/422505.html
