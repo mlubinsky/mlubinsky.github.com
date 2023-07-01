@@ -4,6 +4,8 @@ https://habr.com/ru/post/687994/
 
 ### SQLite extensions
 
+https://sqlpkg.org/
+
 https://sqlite-utils.datasette.io/en/stable/cli.html 
 
 https://antonz.org/sqlean-py/
