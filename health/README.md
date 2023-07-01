@@ -1,5 +1,8 @@
 https://www.youtube.com/watch?v=4mNdXz2333U  10 Mins for entire body!
 
+Adjustable kettlebell: 
+https://www.titan.fitness/endurance/kettlebells/adjustable/20-lb-adjustable-kettlebell/422505.html
+
 ### Al Kavadio:
 
 https://habr.com/ru/articles/743508/
