@@ -2,7 +2,11 @@ https://architecturenotes.co/datasette-simon-willison/
 
 https://habr.com/ru/post/687994/
 
-https://sqlite-utils.datasette.io/en/stable/cli.html SQLite extensions
+### SQLite extensions
+
+https://sqlite-utils.datasette.io/en/stable/cli.html 
+
+https://antonz.org/sqlean-py/
  
 
 ### GUI
