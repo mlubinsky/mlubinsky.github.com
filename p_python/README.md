@@ -97,7 +97,16 @@ https://docs.python.org/3/library/index.html
 
 ### Communicating with OS and filesystem
 
-https://realpython.com/python-pathlib/ Pathlib module from standard library ( istead of os.path and glob)
+https://realpython.com/python-pathlib/ Pathlib module from standard library (instead of os.path and glob)
+Example: search file recursively:
+```
+import pathlib
+folder="/opt/homebrew"
+fname="README"
+l=list(pathlib.Path(folder).rglob(fname))
+print(l)
+```
+
 
 shutil (for copy,move, chown, which, create archive)
 
