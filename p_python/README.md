@@ -104,7 +104,11 @@ import pathlib
 folder="/opt/homebrew"
 fname="README"
 l=list(pathlib.Path(folder).rglob(fname))
-print(l)
+
+for e in l:
+    basename = pathlib.Path(e).stem
+    p = pathlib.Path(e).parent
+    print(basename, p,  e)
 ```
 
 
