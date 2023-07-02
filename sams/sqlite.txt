@@ -14,6 +14,102 @@ def create_local_db_objects(local_db_interface):
         )
     """)
 
+
+def write_data_log_to_database(self):
+-------------------------------------------
+        if not self.profiler_enabled or not self.record_data_log_to_local_database_enabled:
+            return
+
+        if self.data_log is None:
+            logger.debug("profiler {0} recorded no data, nothing to write to database".format(self.display_name))
+            return
+
+        # prepare the profiler data log for insert into the local sqlite database
+        profiler_log_records = []
+        for iteration in self.data_log:
+            iteration_log = self.data_log[iteration]
+
+            # if db_log_seq > 0, we are picking up from somewhere we left off in the same iteration
+            db_log_seq = self.data_log_db_seq[iteration]
+            for data_structure in iteration_log[db_log_seq:]:
+                self.data_log_db_seq[iteration] += 1
+                profiler_log_records += [(
+                    self.spotbot_test.test_id,                                                  # test_id
+                    iteration,                                                                  # iteration
+                    self.display_name,                                                          # profiler_name
+                    self.data_log_db_seq[iteration],                                            # log_sequence
+                    None if data_structure is None else json.dumps(data_structure, indent = 4)  # data_structure
+                )]
+
+        if len(profiler_log_records) != 0:
+            # insert the data
+            current_timestamp = str(datetime.datetime.utcnow())
+            self.spotbot_test.local_db_interface.execute_values(
+                sql = """
+                    INSERT INTO test_profiler_log (
+                        test_id,
+                        iteration,
+                        profiler_name,
+                        log_sequence,
+                        data_structure,
+                        record_modified_ts
+                    ) VALUES (?, ?, ?, ?, ?, '""" + current_timestamp + """')
+                """,
+                records = profiler_log_records
+            )
+            logger.debug(f"profiler {self.display_name} wrote {len(profiler_log_records)} record(s) to the local database")
+
+    # called after each test iteration, and can be called on demand by the test designer
+    def stop(self):
+------------------------------
+        logger.debug("stopping profiler {0}".format(self.display_name))
+
+        if not self.profiler_enabled:
+            raise SpotbotProfilerException("stop was attempted on disabled profiler {0}".format(self.display_name))
+
+        # flush any remaining buffered data to local database
+        self.write_data_log_to_database()
+
+        # archive profiler records from local db to shared farm db
+        if not self.spotbot_test.offline_mode and self.record_data_log_to_shared_database_enabled:
+            logger.debug(f"archiving {self.display_name} profiler database records")
+            records = self.spotbot_test.local_db_interface.execute("""
+                SELECT test_id,
+                       iteration,
+                       profiler_name,
+                       log_sequence,
+                       data_structure,
+                       record_modified_ts
+                FROM   test_profiler_log
+                WHERE  test_id = :test_id
+                   AND iteration = :iteration
+                   AND profiler_name = :profiler_name
+                """, {
+                    "test_id": self.spotbot_test.test_id,
+                    "iteration": self.spotbot_test.current_test_iteration,
+                    "profiler_name": self.display_name
+                }
+            )
+            rec_count = len(records)
+            logger.debug(f"{rec_count} record(s) found for archiving")
+            self.spotbot_test.db_interface.execute_values("""
+                INSERT INTO test_profiler_log (
+                    test_id,
+                    iteration,
+                    profiler_name,
+                    log_sequence,
+                    data_structure,
+                    record_modified_ts
+                ) VALUES %s
+                ON CONFLICT DO NOTHING
+                """, records
+            )
+            logger.debug(f"{rec_count} record(s) records archived")
+        else:
+            logger.debug(f"running in offline mode, skipping archiving profiler {self.display_name} local database records to shared database")
+
+
+
 spotbot_test.py
 -------------------
 def create_local_db_objects(local_db_interface):
