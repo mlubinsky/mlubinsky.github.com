@@ -29,6 +29,40 @@ def create_local_db_objects(local_db_interface):
         )
     """)
 
+def db_log(self, message, data_structure = None):
+---------------------------------------------------
+        # encode optional data structure argument to JSON and insert log record to local and farm db
+        record_id = None
+        data_structure is None else json.dumps(data_structure, indent = 4)
+
+        # local DB
+        if self.local_db_interface is None:
+            logger.warning("local database connection not established, unable to create local database log record")
+        else:
+            self.local_db_interface.execute("""
+                INSERT INTO test_log (
+                    test_id,
+                    iteration,
+                    message,
+                    data_structure,
+                    record_modified_ts
+                ) VALUES (
+                    :test_id,
+                    :iteration,
+                    :message,
+                    :data_structure,
+                    :record_modified_ts
+                )
+            """, {
+                "test_id": self.test_id,
+                "iteration": self.current_test_iteration,
+                "message": message,
+                "data_structure": data_structure_json,
+                "record_modified_ts": str(datetime.datetime.utcnow())
+            })
+            logger.debug("created local database test_log record")
+
+
 test_controller.py
 -------------------
         spotbot_profiler.create_local_db_objects(self.local_db_interface)
