@@ -1,0 +1,35 @@
+spotbot_profiler.py
+---------------------
+def create_local_db_objects(local_db_interface):
+    logger.debug("creating local db test_profiler_log table")
+    local_db_interface.execute("""
+        CREATE TABLE IF NOT EXISTS test_profiler_log (
+            record_id          INTEGER PRIMARY KEY,
+            test_id            INTEGER NOT NULL,
+            iteration          INTEGER NOT NULL,
+            profiler_name      TEXT NOT NULL,
+            log_sequence       INTEGER NOT NULL,
+            data_structure     TEXT,
+            record_modified_ts TEXT NOT NULL
+        )
+    """)
+
+spotbot_test.py
+-------------------
+def create_local_db_objects(local_db_interface):
+    logger.debug("creating local db test_log table")
+    local_db_interface.execute("""
+        CREATE TABLE IF NOT EXISTS test_log (
+            record_id          INTEGER PRIMARY KEY,
+            test_id            INTEGER NOT NULL,
+            iteration          INTEGER,
+            message            TEXT,
+            data_structure     TEXT,
+            record_modified_ts TEXT NOT NULL
+        )
+    """)
+
+test_controller.py
+-------------------
+        spotbot_profiler.create_local_db_objects(self.local_db_interface)
+        spotbot_test.create_local_db_objects(self.local_db_interface)
