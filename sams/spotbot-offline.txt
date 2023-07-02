@@ -1,0 +1,97 @@
+This document is being used to plan the integration of Spotbot Offline into the Spotlight field test analysis tool.
+
+
+
+Spotbot provides a service "Spotbot Offline Submitter", defined in: C:\workspace\OBS\spotbot\spotbot\framework\services\spotbot_offline_submitter.py
+
+This program monitors the spotbot database table "spotbot_offline_request" for unprocesed requests to run spotbot offline.  For each unprocesed request, it makes a spotbot offline run submission to be executed on the "spotbot-spotlight-server" node, which is the new spotlight server 105.140.16.236.
+This execution is performed over SSH using local user "UserA".  It is expected that UserA has the V: drive mapped so that it can read the input log .bin files and write the output sqllite spotbot.db file to the same directory.
+
+The spotbot_offline_request table that the service reads looks like this: (from C:\workspace\OBS\spotbot\db\table\spotbot_offline_request.sql)
+
+CREATE TABLE spotbot_offline_request (
+    spotbot_offline_req_id BIGSERIAL PRIMARY KEY,
+    request_status         TEXT NOT NULL,
+    request_json           JSON,
+    spotbot_submission_id  BIGINT,
+    record_modified_ts     TIMESTAMP NOT NULL
+);
+
+ALTER TABLE spotbot_offline_request ADD CONSTRAINT fk_sor_ssid FOREIGN KEY (spotbot_submission_id) REFERENCES submission_header(submission_id);
+
+CREATE INDEX i_sor_ssid ON spotbot_offline_request(spotbot_submission_id);
+
+
+request_status indicates is one of:
+    REQUESTED - the spotbot offline execution has been requested, but not started
+    QUEUED - the spotbot offline execution has been started
+    REQ_SUCCESS - the spotbot offline execution has completed with success
+    REQ_FAILED - the spotbot offline execution has completed with failure
+
+
+request_status is a JSON object representing the parameters into the spotbot offline test execution.  It looks like:
+
+{
+    "logs_to_process": [
+        {
+            "rawbinlog_bin": "P:/2022-12/2022-12-13/G2/20221213_Driving/A146B#11/gps/rawbinlog.bin",
+            "rawbinlog_time": "P:/2022-12/2022-12-13/G2/20221213_Driving/A146B#11/gps/rawbinlog.time",
+            "protocols_xml": "P:/2022-12/2022-12-13/G2/20221213_Driving/A146B#11/gps/rawbinlog.protocols.xml",
+            "output_dir": "P:/2022-12/2022-12-13/G2/20221213_Driving/A146B#11/gps"
+        },
+        {
+            "rawbinlog_bin": "P:/2022-12/2022-12-13/G2/20221213_Driving/A146B#12/gps/rawbinlog.bin",
+            "rawbinlog_time": "P:/2022-12/2022-12-13/G2/20221213_Driving/A146B#12/gps/rawbinlog.time",
+            "protocols_xml": "P:/2022-12/2022-12-13/G2/20221213_Driving/A146B#12/gps/rawbinlog.protocols.xml",
+            "output_dir": "P:/2022-12/2022-12-13/G2/20221213_Driving/A146B#12/gps"
+        }
+    ]
+}
+
+Each object in the "logs_to_process" array are processed in parallel as seperate spotbot_offline.py test executions.
+
+
+How does the spotbot_offline_request table get populated?  By C:\workspace\OBS\spotbot\web\spotbot_offline_submitter.php
+This is a PHP page that is running on the spotbot web server.  It accepts JSON as the request body, and a context parameter on the URL.
+
+So a call like this can be made to insert into spotbot_offline_request:
+curl -d @c:\users\m.booher\desktop\my_config.json "http://localhost/spotbot/spotbot_offline_submitter.php?context=SUBMIT"
+
+The content of my_config.json gets inserted into spotbot_offline_request.request_json, and the unique spotbot_offline_req_id that is generated will be returned.
+
+And the web page also provides a context for checking the status of the request for a spotbot_offline_req_id:
+curl "http://localhost/spotbot/spotbot_offline_submitter.php?context=STATUS_CHECK&spotbot_offline_req_id=1234"
+
+This will return the request_status value from spotbot_offline_request for the specified spotbot_offline_req_id, or REQ_NOT_FOUND if the request ID doesn't exist.
+
+
+
+Spotlight integration plan -
+
+We need to call spotbot_offline_submitter.php?context=SUBMIT from the spotlight ETL process. (
+
+Michael
+
+Modify /spotlight/etl/etl_util.py run_spotlight_exception_profiler() function to:
+
+Scan the file hierarchy for the field test being processed, scanning for "rawbinlog.bin" files.  From this list, construct the above .json structure ("logs_to_process").  Make an HTTP call using the requests package to spotbot_offline_submitter.php passing that .json as the body and SUBMIT context on the URL params. 
+
+
+
+After submission, have a loop periodically check for completion.  STATUS_CHECK for submission ID, timeout after 30 minutes, or proceed when status is complete.
+
+)
+
+
+
+  It will need to first scan the field test date directory for all rawbinlog.bin files and construct the correspnding.json to be passed into spotbot_offline_sumbitter.php
+
+It should then wait in a loop, periodically checking for completion by calling spotbot_offline_submitter.php?context=STATUS_CHECK&spotbot_offline_req_id=nnn
+
+It should either time out if too much time passes before completion, or proceed to the next ETL steps when completion is detected.
+It will need to read the output spotbot.db sqllite files to populate the annotation_* spotlight tables.
+
+
+
+(Michael - make a new program to read spotbot.db sqllite file, insert annotation header table)  example attached).  Inspect annotation_parser.py for existing program that reads annotations.json and loads to the spotlight Postgres database.
+
