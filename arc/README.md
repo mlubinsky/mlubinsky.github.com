@@ -1,3 +1,9 @@
+### API book:
+
+https://twirl.github.io/The-API-Book/index.ru.html
+https://www.amazon.com/gp/product/B09RHH44S5/
+
+### System design
 https://github.com/DovAmir/awesome-design-patterns
 
 https://habr.com/ru/companies/kts/articles/741846/ Полное руководство по проектированию систем в виде схемы
