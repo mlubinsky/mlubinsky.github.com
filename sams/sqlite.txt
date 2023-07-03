@@ -1,3 +1,34 @@
+annotation_header.sql
+--------------------------
+CREATE TABLE annotation_header (
+	annotation_id    BIGSERIAL PRIMARY KEY,
+	annotation_type  TEXT NOT NULL,
+	test_package_id  BIGINT NOT NULL,
+	subject          TEXT NOT NULL,
+	annotation_text  TEXT NOT NULL,
+	status           TEXT NOT NULL,
+	jira_key         TEXT,
+	jira_summary     TEXT,
+	selection_string TEXT,
+	test_id          BIGINT,
+	angry_gps_log_id BIGINT,
+	nav_gps_log_id   BIGINT,
+	last_touched_by  TEXT,
+    last_touched_ts  TIMESTAMP
+);
+
+ALTER SEQUENCE annotation_header_annotation_id_seq RESTART WITH 10000;
+
+ALTER TABLE annotation_header ADD CONSTRAINT fk_ah_tpid FOREIGN KEY (test_package_id) REFERENCES test_package(test_package_id);
+ALTER TABLE annotation_header ADD CONSTRAINT fk_ah_tid FOREIGN KEY (test_id) REFERENCES test_header(test_id);
+ALTER TABLE annotation_header ADD CONSTRAINT fk_ah_agpslid FOREIGN KEY (angry_gps_log_id) REFERENCES angry_gps_log_header(log_id);
+ALTER TABLE annotation_header ADD CONSTRAINT fk_ah_ngpslid FOREIGN KEY (nav_gps_log_id) REFERENCES nav_gps_log_header(log_id);
+CREATE INDEX i_ah_tpidat ON annotation_header(test_package_id, annotation_type);
+CREATE INDEX i_ah_tid ON annotation_header(test_id);
+CREATE INDEX i_ah_ngpslid ON annotation_header(nav_gps_log_id);
+CREATE INDEX i_ah_agpslid ON annotation_header(angry_gps_log_id);
+CREATE INDEX i_ah_jk ON annotation_header(jira_key);
+
 spotbot_profiler.py
 ---------------------
 def create_local_db_objects(local_db_interface):
