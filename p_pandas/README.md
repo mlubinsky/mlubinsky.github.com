@@ -81,6 +81,8 @@ https://ponder.io/ponder-on-duckdb/ Ponder and DuckDB
 
 ### Pandas
 
+https://stackabuse.com/how-to-efficiently-convert-data-types-in-pandas/
+
 https://stackabuse.com/handling-duplicate-values-in-a-pandas-dataframe/  duplicates findings
 
 https://stackabuse.com/reading-and-writing-sql-files-in-pandas/
