@@ -1,5 +1,48 @@
-def parse(self, annotation_file_id, annotation_file_name):
+import json
+import logging
 
+class AnnotationParser:
+
+    def __init__(self, db, db_cursor, test_package_id, report_date_root):
+        self.logger = logging.getLogger("spotlight_etl.annotation_parser")
+        self.db = db
+        self.db_cursor = db_cursor
+        self.test_package_id = test_package_id
+        self.report_date_root = report_date_root
+
+    def load_annotations(self):
+    ############################        
+        self.logger.info("load_annotations begin")
+
+        self.logger.info("scanning for annotation json files")
+        self.db_cursor.execute("""
+            SELECT file_id,
+                   file_system_path
+            FROM   file
+            WHERE  test_package_id = %(test_package_id)s
+               AND file_type = 'file'
+               AND file_system_path LIKE %(log_pattern)s
+            ORDER BY file_system_path
+            """, {
+                "test_package_id": self.test_package_id,
+                "log_pattern": "%/annotations.json"
+            }
+        )
+        for record in self.db_cursor.fetchall():
+            annotation_file_id = record[0]
+            annotation_file_name = self.report_date_root + record[1]
+            self.logger.info("processing annotation_file " + str(annotation_file_id) + ": " + annotation_file_name)
+            try:
+                self.parse(annotation_file_id, annotation_file_name)
+                self.db.commit()
+            except Exception as e:
+                self.db.rollback()
+                self.logger.warn("annotation_parser exception: " + str(e))
+
+        self.logger.info("load_annotations complete")
+
+    def parse(self, annotation_file_id, annotation_file_name):
+    #############################################################
         with open(annotation_file_name) as annotation_file:
             annotations = json.load(annotation_file)["annotations"]
 
