@@ -45,6 +45,14 @@ def create_local_db_objects(local_db_interface):
         )
     """)
 
+Example of content of column test_profiler_log.data_structure:
+
+{
+    "msg_rx_time": "01:09:46.519000",
+    "stuck_count": 0,
+    "new_temp": 211850,
+    "old_temp": null
+}
 
 def write_data_log_to_database(self):
 -------------------------------------------
