@@ -45,6 +45,8 @@ def create_local_db_objects(local_db_interface):
         )
     """)
 
+select profiler_name, count(*) FROM test_profiler_log group by profiler_name
+
 Example of content of column test_profiler_log.data_structure:
 
 {
