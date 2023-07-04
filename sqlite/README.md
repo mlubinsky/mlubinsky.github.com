@@ -10,6 +10,7 @@ https://sqlite-utils.datasette.io/en/stable/cli.html
 
 https://antonz.org/sqlean-py/
  
+https://www.joseferben.com/posts/3-things-that-surprised-me-while-running-sqlite-in-production/
 
 ### GUI
 https://github.com/sqlitebrowser/sqlitebrowser
