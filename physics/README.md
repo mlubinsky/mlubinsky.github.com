@@ -7,6 +7,7 @@
 
 https://www.damtp.cam.ac.uk/user/tong/teaching.html
 
+https://diffxweyl.wordpress.com/2020/09/25/physics-textbooks-for-self-study/
 
 https://data.stackexchange.com/physics/query/1378063
 
