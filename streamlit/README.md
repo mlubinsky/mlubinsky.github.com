@@ -23,7 +23,10 @@ https://github.com/oegedijk/explainerdashboard
 https://towardsdatascience.com/build-dashboards-in-less-than-10-lines-of-code-835e9abeae4b
 
 ## StreamIt
-<https://docs.streamlit.io/>
+
+https://habr.com/ru/companies/amvera/articles/744952/
+
+https://docs.streamlit.io/
 
 https://github.com/jrieke/best-of-streamlit
 
