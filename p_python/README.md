@@ -142,6 +142,10 @@ https://martinheinz.dev/blog/96 Missing Python libs (boltons, etc)
 
 https://github.com/zx80/anodb  - Python with SQL
 
+### Logging
+
+https://betterstack.com/community/guides/logging/python/python-logging-best-practices/
+
 https://www.structlog.org/en/stable/index.html struct logging
 
 https://steve.dignam.xyz/2023/04/09/structlog-instead-of-logging/
