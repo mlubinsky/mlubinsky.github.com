@@ -1,3 +1,6 @@
+Book:
+https://www.astronomer.io/ebooks/data-pipelines-with-apache-airflow.pdf
+
 https://www.youtube.com/watch?v=JJ_nnGkZjBc&list=PL2Uw4_HvXqvY2zhJ9AMUa_Z6dtMGF3gtb&index=126
 
 https://stackoverflow.com/questions/50708226/airflow-macros-in-python-operator
