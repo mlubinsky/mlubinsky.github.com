@@ -1,5 +1,7 @@
 ### Python notes
 
+https://www.youtube.com/c/pyconus
+
 #### pip
 https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 
@@ -46,6 +48,8 @@ https://www.amazon.com/Python-Science-Tiago-Rodrigues-Antao/dp/1617297933
 https://pythonspeed.com/
 
 https://superfastpython.com/ Threading, Multiprocessing, and AsyncIO
+
+https://coderslegacy.com/cython-vs-cpython-comparing-speed/  Cython
 
 Combining mulithreading and multiprocessing:
 https://heyashy.medium.com/blazing-fast-etls-with-simultaneous-multiprocessing-and-multithreading-214865b56516
@@ -142,15 +146,6 @@ https://martinheinz.dev/blog/96 Missing Python libs (boltons, etc)
 
 https://github.com/zx80/anodb  - Python with SQL
 
-### Logging
-
-https://betterstack.com/community/guides/logging/python/python-logging-best-practices/
-
-https://www.structlog.org/en/stable/index.html struct logging
-
-https://steve.dignam.xyz/2023/04/09/structlog-instead-of-logging/
-
-https://coderslegacy.com/cython-vs-cpython-comparing-speed/  Cython
 
 https://joblib.readthedocs.io/ joblib
 
@@ -160,11 +155,22 @@ https://www.reddit.com/r/Python/comments/12tr2sn/pythoneers_here_what_are_some_o
 
 https://towardsdatascience.com/simulating-physical-systems-with-python-dd5751e80b5c Simulating Physical Systems with Python 
 
+### Logging
+
+https://betterstack.com/community/guides/logging/python/python-logging-best-practices/
+
+https://www.structlog.org/en/stable/index.html struct logging
+
+https://steve.dignam.xyz/2023/04/09/structlog-instead-of-logging/
+
+
+
+
 
 
 https://www.youtube.com/watch?v=wiGkV37Kbxk Raymond Hettinger: Numerical Marvels Inside Python
 
-How to contribute to open source python projects:
+### How to contribute to open source python projects:
 https://www.reddit.com/r/Python/comments/12p771v/what_can_i_contribute_to_scipy_or_other_with_my/
 
 #### *argv and **kwargs
