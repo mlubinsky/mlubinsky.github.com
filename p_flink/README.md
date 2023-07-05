@@ -315,6 +315,8 @@ This hint is used to leverage the sorting to make joins faster. As we know if da
 
 ### Flink Table and SQL
 
+https://habr.com/ru/companies/neoflex/articles/745730/
+
 default_catalog and initial database default_database
  
 https://dataai.udemy.com/course/apache-flink-a-real-time-hands-on-course-on-flink/
