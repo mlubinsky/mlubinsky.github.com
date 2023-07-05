@@ -15,7 +15,11 @@
 
 https://habr.com/ru/articles/739338/ JVM Internals
 
-https://habr.com/ru/articles/743862/  Java Interview questions
+### Java Interview questions
+
+https://habr.com/ru/articles/743862/  
+
+https://habr.com/ru/articles/745910/
  
  Java in 2021
  https://www.avanwyk.com/revisiting-java-in-2021-ii/
