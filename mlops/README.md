@@ -1,3 +1,5 @@
+https://www.evidentlyai.com/ml-system-design
+
 https://www.hopsworks.ai/mlops-dictionary
 
 https://habr.com/ru/companies/otus/articles/735170/
