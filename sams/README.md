@@ -1,3 +1,9 @@
+### Debug print in PHP
+
+echo nl2br("\n command=" . $command ) ;
+
+echo json_encode($_REQUEST); for hash arrays
+
 ### Javascript HTTP POST  - PHP
 
 https://stackoverflow.com/questions/45426158/send-data-from-html-form-to-php
