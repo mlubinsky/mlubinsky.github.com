@@ -7,6 +7,9 @@ https://www.guru99.com/longest-common-subsequence.html
 FAANG interview questions
 https://media.licdn.com/dms/document/media/D4D1FAQH_q662e7ciYg/feedshare-document-pdf-analyzed/0/1686549764622?e=1687392000&v=beta&t=t3ZlZ6w4CMjYMfIDEg8DKA15ecgVSqrX5XNwo2pcBd0
 
+URL shortener: https://habr.com/ru/articles/746602/
+ 
+
 https://habr.com/ru/articles/743514/
 
 All permutations of string
