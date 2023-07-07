@@ -6,6 +6,8 @@ https://postgis.net/workshops/postgis-intro/installation.html PostGIS
 
 https://www.yugabyte.com/postgresql/postgresql-high-availability/ High Availability
 
+https://www.youtube.com/watch?v=mnEU2_cwE_s B-tree indexes (ru)
+
 ### How to find currently running SQL and kill it?
 ```
 SELECT * FROM pg_stat_activity WHERE state = 'active';
