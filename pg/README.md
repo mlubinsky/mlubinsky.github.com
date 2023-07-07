@@ -1,4 +1,4 @@
-## Windows
+
 
 https://www.postgresql.org/download/windows/
 
@@ -6,7 +6,10 @@ https://postgis.net/workshops/postgis-intro/installation.html PostGIS
 
 https://www.yugabyte.com/postgresql/postgresql-high-availability/ High Availability
 
+### Indexes
 https://www.youtube.com/watch?v=mnEU2_cwE_s B-tree indexes (ru)
+
+https://kmoppel.github.io/2022-12-09-the-bountiful-world-of-postgres-indexing-options/
 
 ### How to find currently running SQL and kill it?
 ```
