@@ -1,5 +1,7 @@
 https://habr.com/ru/post/569394/ Docker для Data Scientist'a
 
+https://masteringbackend.com/posts/docker-tutorial
+
 https://habr.com/ru/company/first/blog/658951/ Docker management tools
 
 https://github.com/jesseduffield/lazydocker
