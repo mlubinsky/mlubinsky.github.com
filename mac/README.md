@@ -4,11 +4,15 @@ ProductName:	Mac OS X
 ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
-Command-line utils in MacOS:
+### Command-line utils in MacOS:
 
 https://saurabhs.org/advanced-macos-commands
 
 https://news.ycombinator.com/item?id=36491704
+
+open -e opens the file in TextEdit, in plain-text mode by default.
+
+sample PROCESS SECS spends SECS seconds watching the process (name or pid) PROCESS, then outputs a stack-based profile. You can do this from Activity Monitor, but I often find it faster to do from the CLI.
 
 ### Setup
 
