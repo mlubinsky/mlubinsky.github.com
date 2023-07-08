@@ -4,7 +4,10 @@ ProductName:	Mac OS X
 ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
-Comman-line utils in MacOS:
+Command-line utils in MacOS:
+
+https://saurabhs.org/advanced-macos-commands
+
 https://news.ycombinator.com/item?id=36491704
 
 ### Setup
