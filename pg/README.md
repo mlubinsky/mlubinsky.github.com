@@ -64,7 +64,9 @@ last_autovacuum,
 last_autoanalyze,
 last_analyze 
 from pg_stat_all_tables 
-where n_live_tup >0;
+where n_live_tup >0
+order by n_dead_tup DESC
+LIMIT 20;
 ```
 The dead_pct column in this query is the percentage of dead tuples when compared to live tuples. 
 
