@@ -484,6 +484,9 @@ print(''.join(xs)) # 46546442742
 ```
 
 #### Generators, yield
+
+https://andrewodendaal.com/mastering-pythons-yield-a-comprehensive-guide-to-advanced-usage/
+
 A function is a generator function if and only if it uses "yield" instead of "return"
 This generator object is an iterator, which means you can iterate through it using next() or a for
 loop
