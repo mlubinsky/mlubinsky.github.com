@@ -1,5 +1,10 @@
 https://www.fast.ai/2022/07/28/nbdev-v2/
 
+### Git and Jupyter notebooks
+https://news.ycombinator.com/item?id=36629055
+https://www.reviewnb.com/git-jupyter-notebook-ultimate-guide
+
+
 Start every notebook as
 ```
     %load_ext autoreload
