@@ -22,6 +22,9 @@ This query might take a while to kill the query, so if you want to kill it the h
 SELECT pg_terminate_backend(PID);
 ```
 
+
+SELECT pg_size_pretty(pg_relation_size('t_test'));
+
 ###  JSON
 
 https://stackoverflow.com/questions/53086816/postgresql-aggregate-multiple-rows-as-json-array-based-on-specific-column/53087015#53087015
