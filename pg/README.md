@@ -11,9 +11,13 @@ https://www.postgresql.org/docs/current/ddl-partitioning.html
 
 <https://habr.com/ru/company/barsgroup/blog/481694/> Partitioning
 
+the upper bound is exclusive  !!!
+```
 CREATE TABLE t ( i int,  d DATE NOT NULL) PARTITION BY RANGE(d);
-CREATE TABLE t_2022 PARTITION OF t
-FOR VALUES FROM (2022) TO (2023)
+CREATE TABLE t_2022 PARTITION OF t for values from ('2022-01-01') to ('2023-01-01');
+CREATE TABLE t_2023 PARTITION OF t for values from ('2023-01-01') to ('2024-01-01');
+```
+
 
 
 ### Indexes
