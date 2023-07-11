@@ -6,6 +6,16 @@ https://postgis.net/workshops/postgis-intro/installation.html PostGIS
 
 https://www.yugabyte.com/postgresql/postgresql-high-availability/ High Availability
 
+### Partitioning
+https://www.postgresql.org/docs/current/ddl-partitioning.html
+
+<https://habr.com/ru/company/barsgroup/blog/481694/> Partitioning
+
+CREATE TABLE t ( i int,  d DATE NOT NULL) PARTITION BY RANGE(d);
+CREATE TABLE t_2022 PARTITION OF t
+FOR VALUES FROM (2022) TO (2023)
+
+
 ### Indexes
 https://www.youtube.com/watch?v=mnEU2_cwE_s B-tree indexes (ru)
 
@@ -482,7 +492,6 @@ https://blog.crunchydata.com/blog/postgres-indexes-for-newbies index
 
 <https://habr.com/ru/post/479920/> WITH ORDINALITY
 
-<https://habr.com/ru/company/barsgroup/blog/481694/> Partitioning
 
 https://habr.com/ru/post/481122/
 
