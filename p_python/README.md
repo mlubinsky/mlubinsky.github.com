@@ -9,6 +9,8 @@ https://www.bitecode.dev/p/relieving-your-python-packaging-pain
 
 ### Using -m flag
 
+python -m pip install -U pip
+
 https://stackoverflow.com/questions/50821312/meaning-of-python-m-flag
 
 https://til.simonwillison.net/python/stdlib-cli-tools
