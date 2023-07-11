@@ -54,11 +54,29 @@ https://coderslegacy.com/cython-vs-cpython-comparing-speed/  Cython
 Combining mulithreading and multiprocessing:
 https://heyashy.medium.com/blazing-fast-etls-with-simultaneous-multiprocessing-and-multithreading-214865b56516
 
+```
+import statistics
+from multiprocessing import Pool
+
+data = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [7, 6, 5, 4],
+]
+
+with Pool() as pool:
+    row_means = pool.map(statistics.fmean, data)
+
+assert row_means == [2.5, 6.5, 5.5]
+```
 #### Immutable types
 
   Integers, floats, complex numbers, and Booleans, are always immutable. 
   
   Strings, bytes and tuples are immutable 
+
+positive_infinity = float('inf')
+negative_infinity = float('-inf')
   
 #### Mutable types  
   lists, dictionaries, and sets are mutable 
@@ -113,6 +131,20 @@ for e in l:
     basename = pathlib.Path(e).stem
     p = pathlib.Path(e).parent
     print(basename, p,  e)
+
+# read file:
+
+from pathlib import Path
+
+file_contents = Path('my.log').read_text()
+file_lines = Path("my.log").read_text().splitlines()  # list of lines
+
+path = Path(__file__).parent / "config.json"  # relative to this module
+
+if not path.exists():  # Check for existence
+    path.parent.mkdir(parents=True, exist_ok=True)  # Create directories
+    path.write_text("{}")  # Writing creates a new file by default
+
 ```
 
 
@@ -143,6 +175,8 @@ https://github.com/Suor/funcy. A fancy and practical functional tools
 https://toolz.readthedocs.io/en/latest/  https://github.com/pytoolz/cytoolz
 
 https://martinheinz.dev/blog/96 Missing Python libs (boltons, etc)
+
+https://medium.com/codex/boost-your-python-project-with-these-7-libraries-f8f364f6afa7
 
 https://github.com/zx80/anodb  - Python with SQL
 
@@ -475,6 +509,19 @@ _operator_ also provides _attrgetter_, for keying off an attribute of the elemen
 for keying off a method’s return value - useful when the sequence elements are instances of your
 own class
 
+Sort dict by value:
+```
+my_dict = {
+    "Plan A": 1,
+    "Plan B": 3,
+    "Plan C": 2,
+}
+
+my_dict = {key: my_dict[key] for key in sorted(my_dict, key=my_dict.get)}
+
+assert list(my_dict.keys()) == ['Plan A', 'Plan C', 'Plan B']
+```
+
 Example: sorting using functools
 ```
 from functools import cmp_to_key
@@ -645,6 +692,16 @@ d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
 
 result_ascended = dict(sorted(d.items(), key=operator.itemgetter(1)))
 result_descended = dict(sorted(d.items(), key=operator.itemgetter(1), reverse=True))
+
+my_dict = {
+    "Plan A": 1,
+    "Plan B": 3,
+    "Plan C": 2,
+}
+
+my_dict = {key: my_dict[key] for key in sorted(my_dict, key=my_dict.get)}
+
+assert list(my_dict.keys()) == ['Plan A', 'Plan C', 'Plan B']
 ```
 ### find 3 keys with max values
 ```
@@ -991,6 +1048,8 @@ https://medium.com/techtofreedom/9-python-built-in-decorators-that-optimize-your
 
 https://betterprogramming.pub/six-advanced-decorator-patterns-5ffe67552691
 
+https://python.plainenglish.io/five-python-wrappers-that-can-reduce-your-code-by-half-af775feb1d5
+
 If d is decorator it means :
 x = d(x)
 
@@ -1018,7 +1077,20 @@ def logged(_func):
 @logged
 def foo():
     print('foo() called')
-    
+
+#  printing the inputs and outputs of each function
+#--------------------------------------------------
+def debug(func):
+    def wrapper(*args, **kwargs):
+        # print the fucntion name and arguments
+        print(f"Calling {func.__name__} with args: {args} kwargs: {kwargs}")
+        # call the function
+        result = func(*args, **kwargs)
+        # print the results
+        print(f"{func.__name__} returned: {result}")
+        return result
+    return wrapper
+
 #---------------------------------    
     
 def running_average ( func ) :
