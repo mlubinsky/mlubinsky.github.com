@@ -182,6 +182,7 @@ https://medium.com/codex/boost-your-python-project-with-these-7-libraries-f8f364
 
 https://github.com/zx80/anodb  - Python with SQL
 
+https://samuel-vidovich.medium.com/3-cool-python-libraries-that-will-save-you-time-and-effort-27fcdc6762d5
 
 https://joblib.readthedocs.io/ joblib
 
