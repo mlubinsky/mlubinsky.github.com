@@ -92,6 +92,19 @@ CREATE TABLE t_2023 PARTITION OF t for values from ('2023-01-01') to ('2024-01-0
 
 Also it is useful to create the default partition
 
+### Serial column
+```
+For serial column PostgreSQL will create a sequence with a name like tablename_colname_seq.
+ Default column values will be assigned from this sequence. But when you explicitly insert a value into serial column,
+it doesn’t affect sequence generator, and its next value will not change. So it can generate a duplicate value.
+
+To prevent this after you inserted explicit values you need to change
+the current value of a sequence generator either with ALTER SEQUENCE statement or with setval() function, e.g.:
+
+ALTER SEQUENCE tablename_colname_seq RESTART WITH 52;
+SELECT setval('tablename_colname_seq', (SELECT max(colname) FROM tablename));
+```
+
 ### Indexes
 https://www.youtube.com/watch?v=mnEU2_cwE_s B-tree indexes (ru)
 
