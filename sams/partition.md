@@ -1,3 +1,10 @@
+1. rename annotation_point to annotation_point_prod
+2. create new annotation_point (PARTITIONED)
+    DROP FK CONSTRAINST annotation_point_prod ???
+    
+4. populate new annotation_point FROM  annotation_point_prod
+   where test_date >= ' ' and test_date <= ' '
+
 ```
 CREATE TABLE tracking_point_part ( ... )
 ALTER TABLE tracking_point RENAME TO tracking_point_prod; 
