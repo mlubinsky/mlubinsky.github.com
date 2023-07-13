@@ -1,6 +1,8 @@
 Book
 https://www.amazon.com/Kafka-Definitive-Real-Time-Stream-Processing/dp/1492043087
 
+https://habr.com/ru/articles/747658/ Kafka Streaming
+
 ### Event message  contains:
 
 - key
