@@ -94,6 +94,10 @@ annotation_tracking_lost_position     fk_atlp_fprid
 ```
 
 remove foreign key constraint
+```
 ALTER TABLE your_tbl DROP constraint your_cnstrnt;
+```
 how to disable foreign key constraint in postgresql
+```
 ALTER TABLE tbl_StudentMarks DISABLE TRIGGER ALL;
+```
