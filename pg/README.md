@@ -1,5 +1,11 @@
-
-### Find all tables which are referncing the given table
+### All constraints for given table:
+```
+SELECT *
+FROM
+   information_schema.table_constraints 
+   WHERE table_name='PUT_TABLE_NAME_HERE' 
+```   
+### Find all tables which are referencing the given table
 
 https://stackoverflow.com/questions/5347050/postgresql-sql-script-to-get-a-list-of-all-tables-that-have-a-particular-column
 
@@ -54,7 +60,7 @@ CREATE TABLE t_2022 PARTITION OF t for values from ('2022-01-01') to ('2023-01-0
 CREATE TABLE t_2023 PARTITION OF t for values from ('2023-01-01') to ('2024-01-01');
 ```
 
-
+Also it is useful to create the default partition
 
 ### Indexes
 https://www.youtube.com/watch?v=mnEU2_cwE_s B-tree indexes (ru)
