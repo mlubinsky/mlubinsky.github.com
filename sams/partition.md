@@ -1,3 +1,23 @@
+```
+CREATE TABLE tracking_point_part ( ... )
+ALTER TABLE tracking_point RENAME TO tracking_point_prod; 
+ALTER TABLE tracking_point_part RENAME TO tracking_point;
+
+issue above : after renaming the table FK into renamed table from other tables are automatically started to point into renamed table!!!
+
+CREATE TABLE annotation_tracking_lost_position (
+	selection_id        BIGSERIAL PRIMARY KEY,
+	annotation_id       BIGINT NOT NULL,
+	tracking_header_id  BIGINT NOT NULL,
+	fix_point_record_id BIGINT NOT NULL
+);
+
+ALTER TABLE annotation_tracking_lost_position ADD CONSTRAINT fk_atlp_aid FOREIGN KEY (annotation_id) REFERENCES annotation_header(annotation_id);
+ALTER TABLE annotation_tracking_lost_position ADD CONSTRAINT fk_atlp_thid FOREIGN KEY (tracking_header_id) REFERENCES tracking_header(header_id);
+ALTER TABLE annotation_tracking_lost_position ADD CONSTRAINT fk_atlp_fprid FOREIGN KEY (fix_point_record_id) REFERENCES tracking_point(record_id);
+CREATE INDEX i_atlp_aid ON annotation_tracking_lost_position(annotation_id);
+```
+
 ### db/function/delete_test_package.sql
   NEW LINE:
  
