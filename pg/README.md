@@ -1,4 +1,10 @@
 
+### Find all tables which are referncing the given table
+
+https://stackoverflow.com/questions/5347050/postgresql-sql-script-to-get-a-list-of-all-tables-that-have-a-particular-column
+
+https://dataedo.com/kb/query/postgresql/list-all-tables-refrenced-by-specific-table
+
 
 https://www.postgresql.org/download/windows/
 
