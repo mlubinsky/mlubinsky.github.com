@@ -82,3 +82,12 @@ CREATE TABLE tracking_point (
 ALTER TABLE tracking_point ADD CONSTRAINT fk_tp_hid FOREIGN KEY (header_id) REFERENCES tracking_header(header_id);
 ALTER TABLE tracking_point ADD CONSTRAINT fk_tp_tpid FOREIGN KEY (test_package_id) REFERENCES test_package(test_package_id);
 ```
+
+### Issue - renaming the table automaticall get reflected in FK
+column record_id in table tracking_point is used as FK in 
+```
+annotation_tracking_jump
+annotation_tracking_tunnel_recovery
+annotation_tracking_early_termination
+annotation_tracking_lost_position
+```
