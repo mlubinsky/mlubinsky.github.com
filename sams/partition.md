@@ -86,8 +86,14 @@ ALTER TABLE tracking_point ADD CONSTRAINT fk_tp_tpid FOREIGN KEY (test_package_i
 ### Issue - renaming the table automaticall get reflected in FK
 column record_id in table tracking_point is used as FK in 
 ```
-annotation_tracking_jump
-annotation_tracking_tunnel_recovery
-annotation_tracking_early_termination
-annotation_tracking_lost_position
+table                               constraint_name
+annotation_tracking_jump fk_atj_      fprid
+annotation_tracking_tunnel_recovery   fk_attr_fprid
+annotation_tracking_early_termination fk_atet_fprid
+annotation_tracking_lost_position     fk_atlp_fprid
 ```
+
+remove foreign key constraint
+ALTER TABLE your_tbl DROP constraint your_cnstrnt;
+how to disable foreign key constraint in postgresql
+ALTER TABLE tbl_StudentMarks DISABLE TRIGGER ALL;
