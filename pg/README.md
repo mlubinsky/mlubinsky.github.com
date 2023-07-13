@@ -65,6 +65,8 @@ Also it is useful to create the default partition
 ### Indexes
 https://www.youtube.com/watch?v=mnEU2_cwE_s B-tree indexes (ru)
 
+https://habr.com/ru/companies/otus/articles/747882/
+
 https://kmoppel.github.io/2022-12-09-the-bountiful-world-of-postgres-indexing-options/
 
 ### How to find currently running SQL and kill it?
