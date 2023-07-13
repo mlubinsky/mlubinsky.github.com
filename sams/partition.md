@@ -87,7 +87,7 @@ ALTER TABLE tracking_point ADD CONSTRAINT fk_tp_tpid FOREIGN KEY (test_package_i
 column record_id in table tracking_point is used as FK in 
 ```
 table                               constraint_name
-annotation_tracking_jump fk_atj_      fprid
+annotation_tracking_jump              fk_atj_fprid
 annotation_tracking_tunnel_recovery   fk_attr_fprid
 annotation_tracking_early_termination fk_atet_fprid
 annotation_tracking_lost_position     fk_atlp_fprid
