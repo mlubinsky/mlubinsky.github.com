@@ -5,6 +5,16 @@ https://stackoverflow.com/questions/5347050/postgresql-sql-script-to-get-a-list-
 
 https://dataedo.com/kb/query/postgresql/list-all-tables-refrenced-by-specific-table
 
+### Find long-running query
+```
+SELECT
+  pid,
+  now() - pg_stat_activity.query_start AS duration,
+  query,
+  state
+FROM pg_stat_activity
+WHERE (now() - pg_stat_activity.query_start) > interval '5 minutes';
+```
 
 https://www.postgresql.org/download/windows/
 
