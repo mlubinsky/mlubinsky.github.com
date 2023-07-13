@@ -5,6 +5,26 @@ https://stackoverflow.com/questions/5347050/postgresql-sql-script-to-get-a-list-
 
 https://dataedo.com/kb/query/postgresql/list-all-tables-refrenced-by-specific-table
 
+```
+SELECT
+    r.table_name, 
+    u.table_name,
+    u.column_name,
+    u.table_schema, 
+    fk.*
+FROM information_schema.constraint_column_usage       u
+INNER JOIN information_schema.referential_constraints fk
+           ON u.constraint_catalog = fk.unique_constraint_catalog
+               AND u.constraint_schema = fk.unique_constraint_schema
+               AND u.constraint_name = fk.unique_constraint_name
+INNER JOIN information_schema.key_column_usage        r
+           ON r.constraint_catalog = fk.constraint_catalog
+               AND r.constraint_schema = fk.constraint_schema
+               AND r.constraint_name = fk.constraint_name
+WHERE
+    u.table_name = 'PUT_TABLE_NAME_HERE'
+```
+
 ### Find long-running query
 ```
 SELECT
