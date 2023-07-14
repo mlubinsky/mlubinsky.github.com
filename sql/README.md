@@ -9,6 +9,15 @@ RANK numbers are skipped so there may be a gap in rankings, and may not be uniqu
 
 DENSE_RANK numbers are not skipped so there will not be a gap in rankings, and may not be unique
 
+### Window functions
+
+https://habr.com/ru/post/664000/
+
+RANK, DENSE_RANK, NTILE ROW_NUMBER, CUME_DIST
+
+FIRST_VALUE, LAST_VALUE, LAG LEAD NTH_VALUE
+
+
 ### UNNEST - convert array to rows
 ```
 create table test(
@@ -101,9 +110,7 @@ https://news.ycombinator.com/item?id=30323131  Dashboards for SQL database
 
 https://habr.com/ru/company/tensor/blog/657895/ SQL HowTo: разные варианты работы с EAV
 
-### Window functions
 
-https://habr.com/ru/post/664000/
 
 
 
