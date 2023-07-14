@@ -100,8 +100,7 @@ https://habr.com/ru/company/tensor/blog/657895/ SQL HowTo: разные вари
 
 https://habr.com/ru/post/664000/
 
-LAG function
-https://habr.com/ru/post/545870/
+
 
 ### Moving Average
 
@@ -139,25 +138,7 @@ https://hakibenita.com/sql-dos-and-donts Faux predicate
 
 https://blog.jooq.org/10-cool-sql-optimisations-that-do-not-depend-on-the-cost-model/
 
-### LAG and LEAD
 
- the monthly percent change in costs
-``` 
-with monthly_costs as (
-    SELECT
-        date
-      , monthlycosts
-      , LEAD(monthlycosts) OVER (ORDER BY date) as
-        previousCosts
-    FROM
-        costs
-)
-SELECT
-    date
-  , (monthlycosts - previousCosts) / previousCosts * 100 AS
-    costPercentChange
-FROM monthly_costs
-```
 
 ### Running total
 
@@ -186,10 +167,36 @@ Select
    FROM f_daily_rides t1
 ```   
 
-
-
-
 ### LAG and LEAD
+ 
+ ```
+LAG is a window function that lets you access the value from a column in a row that lags (precedes) the current row. 
+Such function receives three parameters: the first one is the column name you want to access (you may use a built-in function instead of a column). 
+The second parameter determines an offset from the current row (it is an optional parameter and its default value is 1). 
+The third parameter (optional with default value NULL) is the value to be returned if offset goes beyond the bound of the table.
+LAG is used together with OVER, where the Partition By and Order By clauses may be used.
+
+
+```
+https://habr.com/ru/post/545870/
+
+ the monthly percent change in costs
+``` 
+with monthly_costs as (
+    SELECT
+        date
+      , monthlycosts
+      , LEAD(monthlycosts) OVER (ORDER BY date) as
+        previousCosts
+    FROM
+        costs
+)
+SELECT
+    date
+  , (monthlycosts - previousCosts) / previousCosts * 100 AS
+    costPercentChange
+FROM monthly_costs
+```
 Given: weather table  contains daily temperature   in different cities:
 (date, city, temperature)
 How can you create a table that also contains the temperature difference between the current day and the next day? For the first row, the difference column should contain the value 1.2.
@@ -203,11 +210,23 @@ WITH cte AS(
    FROM weather W1                                                                                                                                                   
    LEFT JOIN weather W2                                                                                                                                              
    ON W1.date = W2.date and W1.city = W2.city
-)                                                                                                                       SELECT 
+)
+  SELECT 
    *, 
    COALESCE((temp_next - temperature), 0) AS temp_diff 
 FROM cte;
 ```
+
+## LEAD, LAG, FIRST_GAP
+
+
+http://databasetips.net/2019/02/12/lead-and-lag-accessing-multiple-rows-without-self-join/
+
+http://databasetips.net/2019/09/05/sql-3-ways-to-find-gaps-and-missing-values/
+
+http://www.silota.com/docs/recipes/sql-gap-analysis-missing-values-sequence.html
+
+
 
 ###
 ```
@@ -255,77 +274,6 @@ https://medium.com/swlh/recursion-in-sql-explained-graphically-679f6a0f143b
 
 https://news.ycombinator.com/item?id=28018058
 
-### SQL UI client tools
-
-https://datastation.multiprocess.io/docs/installation.html
-
-https://news.ycombinator.com/item?id=28489165
-
-Sequel-Ace https://github.com/Sequel-Ace/Sequel-Ace
-
-TablePlus  https://tableplus.com/
-
-DBeaver
-
-usql <https://github.com/xo/usql>
-
-https://github.com/TaKO8Ki/gobang/
-
-## Falcon UI
-
-<https://github.com/plotly/falcon> UI
-
-<https://news.ycombinator.com/item?id=22883429>
-
-
-
-## CQRS
-
-https://habr.com/ru/post/545128/
-
-https://habr.com/ru/post/146429/  CQRS
-
-https://habr.com/ru/post/149464/ CQRS
-
-https://habr.com/ru/company/nix/blog/321686/
-
-https://habr.com/ru/company/nix/blog/322214/
-
-https://habr.com/ru/post/535452/
-
-### Эффективная конструкция агрегатов
-
-https://habr.com/ru/company/oleg-bunin/blog/329222/ . 10 способов достижения HighLoad'а и BigData на ровном месте
-
-https://habr.com/ru/company/postgrespro/blog/351008/ Postgres and Oracle
-
-https://habr.com/ru/post/177165/ Postgres Aggregate
-
-https://habr.com/ru/company/tensor/blog/507056/
-
-https://habr.com/ru/post/544514/
-
-https://habr.com/ru/company/tensor/blog/539016/
-
-
-https://habr.com/ru/company/tensor/blog/541374/
-
-https://habr.com/ru/company/tensor/blog/540572/
-
-https://habr.com/ru/company/tensor/blog/539638/
-
-https://habr.com/ru/post/214643/
-
-## My questions
-https://stackoverflow.com/questions/64055906/how-to-combine-2-sqls-into-single-sql
-
-https://mathoverflow.net/questions/372543/new-k-samples-added-to-set-calculate-new-stddev-given-the-old-avg-stddev-and-s
-
-https://math.stackexchange.com/questions/3839472/new-k-samples-added-calculate-new-stddev-given-old-avg-stddev-and-sample-size
-
-##  SQL + Jinja
-https://geoffruddock.com/sql-jinja-templating/
-
 
 ### Window function
 
@@ -336,25 +284,6 @@ https://www.youtube.com/watch?v=QenwDm5oWdU
 
 https://www.foxhound.systems/blog/sql-performance-with-union/
 
-## LEAD, LAG, FIRST_GAP
-
-
-http://databasetips.net/2019/02/12/lead-and-lag-accessing-multiple-rows-without-self-join/
-
-```
-LAG is a window function that lets you access the value from a column in a row that lags (precedes) the current row. 
-Such function receives three parameters: the first one is the column name you want to access (you may use a built-in function instead of a column). 
-The second parameter determines an offset from the current row (it is an optional parameter and its default value is 1). 
-The third parameter (optional with default value NULL) is the value to be returned if offset goes beyond the bound of the table.
-LAG is used together with OVER, where the Partition By and Order By clauses may be used.
-
-
-```
-
-
-http://databasetips.net/2019/09/05/sql-3-ways-to-find-gaps-and-missing-values/
-
-http://www.silota.com/docs/recipes/sql-gap-analysis-missing-values-sequence.html
 
 
 ## First_ROW 
@@ -1029,7 +958,7 @@ OVER (partition by breed order by weight), 0) as weight_to_lose
 FROM cats order by weight, name
 ```
 
-### Q9: First of each group
+### Q9: First of each group: first_value
 
 Cats are vain. Each cat would like to pretend it has the lowest weight for its color.
 
@@ -1057,3 +986,74 @@ over ntile_window as thirds, ntile(4) over ntile_window as quart
 from cats window ntile_window AS ( ORDER BY weight)
 ```
 
+
+### SQL UI client tools
+
+https://datastation.multiprocess.io/docs/installation.html
+
+https://news.ycombinator.com/item?id=28489165
+
+Sequel-Ace https://github.com/Sequel-Ace/Sequel-Ace
+
+TablePlus  https://tableplus.com/
+
+DBeaver
+
+usql <https://github.com/xo/usql>
+
+https://github.com/TaKO8Ki/gobang/
+
+## Falcon UI
+
+<https://github.com/plotly/falcon> UI
+
+<https://news.ycombinator.com/item?id=22883429>
+
+
+
+## CQRS
+
+https://habr.com/ru/post/545128/
+
+https://habr.com/ru/post/146429/  CQRS
+
+https://habr.com/ru/post/149464/ CQRS
+
+https://habr.com/ru/company/nix/blog/321686/
+
+https://habr.com/ru/company/nix/blog/322214/
+
+https://habr.com/ru/post/535452/
+
+### Эффективная конструкция агрегатов
+
+https://habr.com/ru/company/oleg-bunin/blog/329222/ . 10 способов достижения HighLoad'а и BigData на ровном месте
+
+https://habr.com/ru/company/postgrespro/blog/351008/ Postgres and Oracle
+
+https://habr.com/ru/post/177165/ Postgres Aggregate
+
+https://habr.com/ru/company/tensor/blog/507056/
+
+https://habr.com/ru/post/544514/
+
+https://habr.com/ru/company/tensor/blog/539016/
+
+
+https://habr.com/ru/company/tensor/blog/541374/
+
+https://habr.com/ru/company/tensor/blog/540572/
+
+https://habr.com/ru/company/tensor/blog/539638/
+
+https://habr.com/ru/post/214643/
+
+## My questions
+https://stackoverflow.com/questions/64055906/how-to-combine-2-sqls-into-single-sql
+
+https://mathoverflow.net/questions/372543/new-k-samples-added-to-set-calculate-new-stddev-given-the-old-avg-stddev-and-s
+
+https://math.stackexchange.com/questions/3839472/new-k-samples-added-calculate-new-stddev-given-old-avg-stddev-and-sample-size
+
+##  SQL + Jinja
+https://geoffruddock.com/sql-jinja-templating/
