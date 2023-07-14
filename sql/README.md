@@ -4,6 +4,32 @@ https://news.ycombinator.com/item?id=36243926
 
 https://sqlfordevs.com/ebook
 
+### UNNEST - conver array to rows
+```
+create table test(
+    p_name text[],
+    p_id varchar(14),
+    p_email varchar(50)
+ );
+
+INSERT INTO test (p_name, p_id, p_email)
+VALUES (ARRAY['Peter Mont', 'Derak Powel'], 'PEMO-7894-OMEP', 'pmont1699@xyzmail.kom');
+
+
+INSERT INTO test (p_name, p_id, p_email)
+VALUES (ARRAY['Devid Hogg', 'Lusi Nail', 'Ben Knot'], 'DELU-8529-HONA', 'devlus2021@xyzmail.kom');
+ 
+
+p_name                               |p_id          |p_email               |
+-------------------------------------+--------------+----------------------+
+{"Peter Mont","Derak Powel"}         |PEMO-7894-OMEP|pmont1699@xyzmail.kom |
+{"Devid Hogg","Lusi Nail","Ben Knot"}|DELU-8529-HONA|devlus2021@xyzmail.kom|
+ 
+ 
+
+SELECT p_id, unnest(p_name)
+FROM test;
+```
 
 ### Convert column to comma-separated list
 
