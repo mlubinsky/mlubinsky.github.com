@@ -9,7 +9,7 @@ RANK numbers are skipped so there may be a gap in rankings, and may not be uniqu
 
 DENSE_RANK numbers are not skipped so there will not be a gap in rankings, and may not be unique
 
-### UNNEST - conver array to rows
+### UNNEST - convert array to rows
 ```
 create table test(
     p_name text[],
