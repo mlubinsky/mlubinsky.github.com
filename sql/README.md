@@ -5,7 +5,9 @@ https://news.ycombinator.com/item?id=36243926
 https://sqlfordevs.com/ebook
 
 ### RANK() vs DENSE_RANK()
-RANK numbers are skipped so there may be a gap in rankings, and may not be unique. DENSE_RANK numbers are not skipped so there will not be a gap in rankings, and may not be unique
+RANK numbers are skipped so there may be a gap in rankings, and may not be unique. 
+
+DENSE_RANK numbers are not skipped so there will not be a gap in rankings, and may not be unique
 
 ### UNNEST - conver array to rows
 ```
