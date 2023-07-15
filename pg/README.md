@@ -81,6 +81,8 @@ https://www.yugabyte.com/postgresql/postgresql-high-availability/ High Availabil
 ### Partitioning
 https://www.postgresql.org/docs/current/ddl-partitioning.html
 
+https://www.postgresql.org/docs/current/ddl-partitioning.html#DDL-PARTITIONING-DECLARATIVE
+
 <https://habr.com/ru/company/barsgroup/blog/481694/> Partitioning
 
 the upper bound is exclusive  !!!
@@ -89,10 +91,35 @@ CREATE TABLE t ( i int,  d DATE NOT NULL) PARTITION BY RANGE(d);
 CREATE TABLE t_2022 PARTITION OF t for values from ('2022-01-01') to ('2023-01-01');
 CREATE TABLE t_2023 PARTITION OF t for values from ('2023-01-01') to ('2024-01-01');
 ```
+Also it is useful to create the default partition:
 
-Also it is useful to create the default partition
+CREATE TABLE t_default PARTITION OF t DEFAULT;
 
+https://alexey-soshin.medium.com/dealing-with-partitions-in-postgres-11-fa9cc5ecf466
+
+can we create SERIAL column with UNIQUE constrain on table  partitioned by RANGE(date) ?
+```
+On partitioned tables, all primary keys, unique constraints and unique indexes must contain the partition expression.
+ That is because indexes on partitioned tables are implemented by individual indexes on each partition,
+and there is no way to enforce uniqueness across different indexes.
+```
+both the primary key and unique keys need to include the partition key
+
+### Unique constraint
+```
+CREATE TABLE bar (
+    pkey        SERIAL PRIMARY KEY,
+    foo_fk      VARCHAR(256) NOT NULL REFERENCES foo(name), 
+    name        VARCHAR(256) NOT NULL, 
+    UNIQUE (foo_fk,name)
+);
+
+ALTER TABLE tablename ADD CONSTRAINT constraintname UNIQUE (columns);
+```
 ### Serial column
+https://stackoverflow.com/questions/244243/how-to-reset-postgres-primary-key-sequence-when-it-falls-out-of-sync
+
+
 ```
 For serial column PostgreSQL will create a sequence with a name like tablename_colname_seq.
  Default column values will be assigned from this sequence. But when you explicitly insert a value into serial column,
@@ -104,6 +131,42 @@ the current value of a sequence generator either with ALTER SEQUENCE statement o
 ALTER SEQUENCE tablename_colname_seq RESTART WITH 52;
 SELECT setval('tablename_colname_seq', (SELECT max(colname) FROM tablename));
 ```
+
+### Primary key
+
+ALTER TABLE table_name ADD CONSTRAINT some_constraint PRIMARY KEY(COLUMN_NAME1,COLUMN_NAME2);
+
+### FK constraint
+ foreign key must reference columns that either are a primary key or form a unique constraint
+```
+CREATE TABLE customers(
+   customer_id INT GENERATED ALWAYS AS IDENTITY,
+   customer_name VARCHAR(255) NOT NULL,
+   PRIMARY KEY(customer_id)
+);
+
+CREATE TABLE contacts(
+   contact_id INT GENERATED ALWAYS AS IDENTITY,
+   customer_id INT,
+   contact_name VARCHAR(255) NOT NULL,
+   phone VARCHAR(15),
+   email VARCHAR(100),
+   PRIMARY KEY(contact_id),
+   CONSTRAINT fk_customer
+      FOREIGN KEY(customer_id) 
+	  REFERENCES customers(customer_id)
+);
+
+Because the foreign key constraint does not have the ON DELETE and ON UPDATE action, they default to NO ACTION.
+```
+
+The RESTRICT action is similar to the NO ACTION. The difference only arises when you define the foreign key constraint as DEFERRABLE with an INITIALLY DEFERRED or INITIALLY IMMEDIATE mode.
+
+ON DELETE SET NULL
+
+ON DELETE CASCADE
+
+ON DELETE SET DEFAULT
 
 ### Indexes
 https://www.youtube.com/watch?v=mnEU2_cwE_s B-tree indexes (ru)
@@ -123,6 +186,9 @@ This query might take a while to kill the query, so if you want to kill it the h
 SELECT pg_terminate_backend(PID);
 ```
 
+
+
+### Size of objects 
 
 SELECT pg_size_pretty(pg_relation_size('t_test'));
 
