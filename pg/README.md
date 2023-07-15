@@ -72,6 +72,20 @@ FROM pg_stat_activity
 WHERE (now() - pg_stat_activity.query_start) > interval '5 minutes';
 ```
 
+### How to find currently running SQL and kill it?
+```
+SELECT * FROM pg_stat_activity WHERE state = 'active';
+So you can identify the PID of the hanging query you want to terminate, run this:
+
+SELECT pg_cancel_backend(PID);
+This query might take a while to kill the query, so if you want to kill it the hard way, run this instead:
+
+SELECT pg_terminate_backend(PID);
+```
+
+
+
+
 https://www.postgresql.org/download/windows/
 
 https://postgis.net/workshops/postgis-intro/installation.html PostGIS
@@ -175,16 +189,6 @@ https://habr.com/ru/companies/otus/articles/747882/
 
 https://kmoppel.github.io/2022-12-09-the-bountiful-world-of-postgres-indexing-options/
 
-### How to find currently running SQL and kill it?
-```
-SELECT * FROM pg_stat_activity WHERE state = 'active';
-So you can identify the PID of the hanging query you want to terminate, run this:
-
-SELECT pg_cancel_backend(PID);
-This query might take a while to kill the query, so if you want to kill it the hard way, run this instead:
-
-SELECT pg_terminate_backend(PID);
-```
 
 
 
