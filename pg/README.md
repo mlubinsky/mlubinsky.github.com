@@ -145,6 +145,10 @@ the current value of a sequence generator either with ALTER SEQUENCE statement o
 ALTER SEQUENCE tablename_colname_seq RESTART WITH 52;
 SELECT setval('tablename_colname_seq', (SELECT max(colname) FROM tablename));
 ```
+If you do noit know the seq name then use this:
+```
+SELECT setval(pg_get_serial_sequence('tbl', 'tbl_id'), max(tbl_id)) FROM tbl;
+```
 
 ### Primary key
 
