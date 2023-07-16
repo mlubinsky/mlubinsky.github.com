@@ -32,6 +32,10 @@ brew install gitui
 
 git diff <commit-id> <commit-id>
 
+Compare current branch with master
+
+git diff master.. 
+
 
 ### Git log
 
