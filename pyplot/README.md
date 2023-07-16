@@ -1,5 +1,7 @@
 https://github.com/rougier/scientific-visualization-book .  BOOK!
 
+https://habr.com/ru/companies/ru_mts/articles/738208/ Plotting
+
 https://habr.com/ru/companies/ru_mts/articles/738208/ matplotlib
 
 https://github.com/garrettj403/SciencePlots
