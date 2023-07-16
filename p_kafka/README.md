@@ -3,6 +3,8 @@ https://www.amazon.com/Kafka-Definitive-Real-Time-Stream-Processing/dp/149204308
 
 https://habr.com/ru/articles/747658/ Kafka Streaming
 
+https://medium.com/riskified-technology/message-broker-vs-event-broker-when-to-use-each-one-of-them-15597320a8ba
+
 ### Event message  contains:
 
 - key
