@@ -1,3 +1,8 @@
+Free online book: Python for data analysis:
+https://wesmckinney.com/book/
+
+
+
 https://habr.com/ru/companies/ru_mts/articles/738208/  Plotting 
 
 1. 5 Hidden Apache Spark Facts That Fewer People Talk About
