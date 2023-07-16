@@ -533,6 +533,13 @@ xs.sort(key=cmp_to_key(lambda a, b: int(b+a)-int(a+b)))
 print(''.join(xs)) # 46546442742
 ```
 
+
+Find biggest elements in dictionary values:
+
+### Find the highest value in the dictionary
+
+highest_value = max(some_dict.values())
+
 #### Generators, yield
 
 https://andrewodendaal.com/mastering-pythons-yield-a-comprehensive-guide-to-advanced-usage/
