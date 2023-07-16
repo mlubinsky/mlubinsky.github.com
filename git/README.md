@@ -40,6 +40,10 @@ Specific file
 
 git diff master... filepath
 
+Compare with remote master:
+
+git diff origin/master...
+
 
 ### Git log
 
