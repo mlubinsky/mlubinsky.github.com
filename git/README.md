@@ -32,9 +32,13 @@ brew install gitui
 
 git diff <commit-id> <commit-id>
 
-Compare current branch with master
+Compare current branch with local master
 
 git diff master.. 
+
+Specific file
+
+git diff master... filepath
 
 
 ### Git log
