@@ -178,6 +178,8 @@ https://toolz.readthedocs.io/en/latest/  https://github.com/pytoolz/cytoolz
 
 https://martinheinz.dev/blog/96 Missing Python libs (boltons, etc)
 
+https://pypi.org/project/ubelt/ ubely
+
 https://medium.com/codex/boost-your-python-project-with-these-7-libraries-f8f364f6afa7
 
 https://github.com/zx80/anodb  - Python with SQL
