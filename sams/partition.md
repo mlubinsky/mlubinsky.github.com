@@ -107,4 +107,21 @@ ALTER TABLE your_tbl DROP constraint your_cnstrnt;
 how to disable foreign key constraint in postgresql
 ```
 ALTER TABLE tbl_StudentMarks DISABLE TRIGGER ALL;
-```
+
+I created the partitioned table in Postgres 15:
+
+CREATE TABLE T (
+	id bigserial NOT NULL,
+        date DATE,
+        ..., 
+        primary key(record_id, test_date)
+)PARTITION BY RANGE (test_date);
+
+I added several partitions like this:
+CREATE TABLE T_2020 PARTITION OF T for values from ('2020-01-01') to ('2021-01-01');
+CREATE TABLE T_2021 PARTITION OF T for values from ('2021-01-01') to ('2022-01-01');
+
+Question: is it guaraneed that the id (bigserial)  column will be unique across all partitions?
+I see from metadata that there is just 1 sequence for T table created automatically for this bigserial column,
+so there is no individual sequence per partition.
+Does it mean that id column will be unique across all partitions?
