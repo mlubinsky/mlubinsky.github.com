@@ -5,6 +5,7 @@ https://habr.com/ru/articles/747658/ Kafka Streaming
 
 https://medium.com/riskified-technology/message-broker-vs-event-broker-when-to-use-each-one-of-them-15597320a8ba
 
+https://www.youtube.com/watch?v=7Faly8jORIw Kafka vs RabbitMQ
 ### Event message  contains:
 
 - key
