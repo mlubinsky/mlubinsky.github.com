@@ -1,5 +1,7 @@
 ### Python notes
 
+https://github.com/gto76/python-cheatsheet
+
 https://www.youtube.com/c/pyconus
 
 #### pip
