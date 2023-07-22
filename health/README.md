@@ -14,6 +14,8 @@ https://www.titan.fitness/endurance/kettlebells/adjustable/20-lb-adjustable-kett
 
 https://www.marcypro.com/apex-adjustable-kettle-bell-apkb-5009-black
 
+https://www.bowflex.com/selecttech/840-kettlebell/100790.html
+
 ### Al Kavadio:
 
 https://habr.com/ru/articles/743508/
