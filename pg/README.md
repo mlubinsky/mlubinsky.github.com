@@ -1,3 +1,5 @@
+https://www.psycopg.org/docs/extras.html
+
 ### Is it guaranteed that bigserial column is unique across all partitions in Postgres 15 partitioned table?
 
 https://stackoverflow.com/questions/76734370/is-it-guaranteed-that-bigserial-column-is-unique-across-all-partitions-in-postgr
