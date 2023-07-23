@@ -2,6 +2,8 @@
 
 https://github.com/gto76/python-cheatsheet
 
+https://coderslegacy.com/how-to-import-python-files-from-subdirectories/
+
 https://www.youtube.com/c/pyconus
 
 #### pip
