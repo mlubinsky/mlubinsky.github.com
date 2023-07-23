@@ -78,6 +78,13 @@ https://superuser.com/questions/994013/run-two-wamp-servers-installed-in-differe
 
 ### GNSS, RINEX,  NMEA  (National Marine Electronics Association)
 
+https://docs.novatel.com/OEM7/Content/Logs/GPRMC.htm
+```
+field 10 is the date: Date: dd/mm/yy xxxxxx 210307
+Fixes can come from 3 possible message types.  For each fix UTC, we will choose exactly one of GPGGA, GPRMC, and GNRMC, in that priority order.
+```
+The date field is in GPRMC and GNRMC, but not the GPGGA sentence
+
 https://www.sparkfun.com/datasheets/GPS/NMEA%20Reference%20Manual-Rev2.1-Dec07.pdf NMEA
 
 https://home.csis.u-tokyo.ac.jp/~dinesh/Dinesh_T_files/GNSS_10_Introduction_DataFormats.pdf
