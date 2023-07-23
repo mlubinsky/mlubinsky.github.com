@@ -6,6 +6,10 @@ echo json_encode($_REQUEST); for hash arrays
 
 ### Javascript HTTP POST  - PHP
 
+```
+var str = JSON.stringify(obj, null, 2);
+consol.log(str)
+```
 https://stackoverflow.com/questions/45426158/send-data-from-html-form-to-php
 
  https://www.w3schools.com/php/php_forms.asp
