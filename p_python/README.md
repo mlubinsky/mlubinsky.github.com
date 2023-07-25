@@ -10,6 +10,8 @@ https://erikvandeven.medium.com/python-uncovering-the-overlooked-core-functional
 
 https://github.com/dabeaz-course/python-mastery/tree/main
 
+https://news.ycombinator.com/item?id=36853495
+
 #### pip
 https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 
