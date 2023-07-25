@@ -6,6 +6,10 @@ https://coderslegacy.com/how-to-import-python-files-from-subdirectories/
 
 https://www.youtube.com/c/pyconus
 
+https://erikvandeven.medium.com/python-uncovering-the-overlooked-core-functionalities-54590420c225
+
+https://github.com/dabeaz-course/python-mastery/tree/main
+
 #### pip
 https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 
