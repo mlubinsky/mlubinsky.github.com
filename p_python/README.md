@@ -1064,6 +1064,9 @@ func_name(f)
 ```
 
 ### Decorators
+
+https://habr.com/ru/articles/750312/
+
 https://www.poeticdev.com/data/python-decorators-when-to-use-and-when-to-avoid-them/
 
 https://soshace.com/understanding-python-decorators-and-how-to-use-them-effectively/
