@@ -12,6 +12,10 @@ https://github.com/dabeaz-course/python-mastery/tree/main
 
 https://news.ycombinator.com/item?id=36853495
 
+Code quality tools:
+
+https://habr.com/ru/companies/otus/articles/750214/
+
 #### pip
 https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 
