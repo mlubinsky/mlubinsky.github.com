@@ -4,6 +4,12 @@ https://github.com/topics/postgresql-backup -- backup
 
 https://github.com/fukawi2/pgsql-backup/blob/develop/src/pgsql-backup.sh
 
+### tracing performance of individual queries inside stored procedure
+
+
+RAISE NOTICE 'STEP X  timeofday= %',  timeofday();
+
+
 ### Is it guaranteed that bigserial column is unique across all partitions in Postgres 15 partitioned table?
 
 https://stackoverflow.com/questions/76734370/is-it-guaranteed-that-bigserial-column-is-unique-across-all-partitions-in-postgr
