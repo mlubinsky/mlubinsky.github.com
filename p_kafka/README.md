@@ -3,11 +3,16 @@ https://www.amazon.com/Kafka-Definitive-Real-Time-Stream-Processing/dp/149204308
 
 https://habr.com/ru/articles/747658/ Kafka Streaming
 
+### Kafka vs RabbitMQ
+ 
 https://www.youtube.com/watch?v=wP-FMNuO3D0
 
 https://medium.com/riskified-technology/message-broker-vs-event-broker-when-to-use-each-one-of-them-15597320a8ba
 
 https://www.youtube.com/watch?v=7Faly8jORIw Kafka vs RabbitMQ
+
+https://habr.com/ru/companies/bft/articles/750298/
+
 ### Event message  contains:
 
 - key
