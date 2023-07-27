@@ -17,6 +17,8 @@ https://www.youtube.com/watch?v=7Faly8jORIw Kafka vs RabbitMQ
 
 https://habr.com/ru/companies/bft/articles/750298/
 
+https://www.youtube.com/watch?v=ZpoBYFsMPSI
+
 ### Event message  contains:
 
 - key
