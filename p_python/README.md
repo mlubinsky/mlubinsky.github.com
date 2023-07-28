@@ -39,9 +39,14 @@ can be executed from the terminal using python -m name_of_module
 python -m site
 
 ### Ruff - linter, it also can replaces Black and isort
+https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
+
+https://stackoverflow.com/questions/75639719/decrease-mistake-severity-for-ruff-python-linter-in-vscode-extension
+
 ```
 pip install ruff
 ruff check .
+ruff check file.py --ignore E501    # to ignore E501 Line too long
 ```
 https://www.blog.pythonlibrary.org/2023/06/28/an-intro-to-ruff-an-extremely-fast-python-linter/
 
