@@ -1,5 +1,8 @@
 https://www.psycopg.org/docs/extras.html
 
+### Backup
+https://www.postgresql.org/docs/current/backup.html
+
 https://github.com/topics/postgresql-backup -- backup
 
 https://github.com/fukawi2/pgsql-backup/blob/develop/src/pgsql-backup.sh
