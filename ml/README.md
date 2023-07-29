@@ -21,6 +21,13 @@ https://www.cs.ubc.ca/~schmidtm/Courses/LecturesOnML/
 
 https://onedrive.live.com/?authkey=%21AMC9DofT%5FW6hqE4&cid=199F8C87205FEB30&id=199F8C87205FEB30%21214006&parId=199F8C87205FEB30%21213972&o=OneUp
 
+Пример уменьшения размерности данных с помощью линейных и нелинейных методов в Python:
+
+PCA ICA TruncatedSVD MDS（Multidimensional Scaling）t-SNE (t-Distributed Stochastic Neighbor Embedding) UMAP (Uniform Manifold Approximation and Projection)
+
+https://habr.com/ru/articles/751050/
+
+
 ### Cosine Similarity
 https://en.wikipedia.org/wiki/Cosine_similarity
 
