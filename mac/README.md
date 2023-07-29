@@ -4,6 +4,9 @@ ProductName:	Mac OS X
 ProductVersion:	10.14.6
 BuildVersion:	18G95
 ```
+
+https://lobste.rs/s/d5qwzs/what_is_your_mac_os_setup
+ 
 ### Command-line utils in MacOS:
 
 https://saurabhs.org/advanced-macos-commands
