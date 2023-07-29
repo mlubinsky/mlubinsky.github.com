@@ -1,5 +1,9 @@
 https://relational.ai/careers/ JOB
 
+how to build resume:
+
+https://news.ycombinator.com/item?id=36901303
+
 https://leetsolve.com/48-rotate-image
 
 https://www.guru99.com/longest-common-subsequence.html
