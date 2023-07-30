@@ -12,6 +12,8 @@ https://github.com/dabeaz-course/python-mastery/tree/main
 
 https://news.ycombinator.com/item?id=36853495
 
+https://dev.to/scofieldidehen/advanced-python-tips-for-development-olo
+
 Code quality tools:
 
 https://habr.com/ru/companies/otus/articles/750214/
