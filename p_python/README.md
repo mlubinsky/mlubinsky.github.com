@@ -189,6 +189,8 @@ https://www.pyinvoke.org/
 
 ### 3rd party libs
 
+https://www.youtube.com/watch?v=g_Q19NKPWR4
+
 https://github.com/vinta/awesome-python
 
 https://pluggy.readthedocs.io/en/latest/ Pluggy
