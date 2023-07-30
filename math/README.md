@@ -1,3 +1,9 @@
+### Functions are vectors
+
+https://thenumb.at/Functions-are-Vectors/
+
+https://news.ycombinator.com/item?id=36921446
+
 ### Render math expression in Markdown
 https://news.ycombinator.com/item?id=31438864
 
