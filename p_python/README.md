@@ -60,6 +60,8 @@ https://github.com/prabhupant/python-ds
 
 ### Fast python
 
+https://realpython.com/python-profiling/
+
 https://pythonbooks.org/python-high-performance-second-edition/
 
 https://www.amazon.com/High-Performance-Python-Performant-Programming/dp/1492055026/
