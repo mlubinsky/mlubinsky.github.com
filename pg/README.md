@@ -1,3 +1,8 @@
+Postgre vs MySQL 
+https://www.bytebase.com/blog/postgres-vs-mysql/
+
+
+
 https://www.psycopg.org/docs/extras.html
 
 ### Backup
