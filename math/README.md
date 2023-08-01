@@ -91,6 +91,9 @@ https://grinfeld.org/books/An-Introduction-To-Tensor-Calculus/
 
 https://kconrad.math.uconn.edu/blurbs/analysis/gaussianintegral.pdf
 
+### Linear Algebra
+https://explained.ai/matrix-calculus/
+
 http://textbooks.math.gatech.edu/ila/index.html. Interactive linear algebra 
 
 https://raw.githubusercontent.com/kenjihiranabe/The-Art-of-Linear-Algebra/main/The-Art-of-Linear-Algebra.pdf Art of linear algebra
