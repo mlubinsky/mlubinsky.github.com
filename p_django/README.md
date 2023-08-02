@@ -6,6 +6,8 @@ https://github.com/PyHAT-stack/awesome-python-htmx/tree/main HTMX
 ## Shiny for Python
 https://shiny.rstudio.com/py/
 
+https://www.taipy.io/ Python on Web
+
 ## Plotly / Dash
 
 https://habr.com/ru/companies/rosbank/articles/740374/
