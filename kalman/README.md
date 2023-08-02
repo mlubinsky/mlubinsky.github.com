@@ -1,5 +1,9 @@
 https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
 
+https://praveshkoirala.com/2023/06/13/a-non-mathematical-introduction-to-kalman-filters-for-programmers/
+
+https://news.ycombinator.com/item?id=36971975
+
 https://mathvoices.ams.org/featurecolumn/2022/02/01/the-kalman-filter-helping-chickens-cross-the-road/
 
 https://habr.com/ru/post/594249/
