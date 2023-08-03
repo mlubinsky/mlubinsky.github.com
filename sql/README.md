@@ -46,8 +46,12 @@ FROM test;
 ```
 
 ### Convert column to comma-separated list
-
-
+```
+  SELECT yt.userid,
+         GROUP_CONCAT(yt.col ORDER BY yt.col SEPARATOR ' ') AS combined
+    FROM YOUR_TABLE yt
+GROUP BY yt.userid
+```
  it can achieved using one of the spark function.. 
 ```
  concat_ws(', ',collect_set( col_name ))  
