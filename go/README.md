@@ -1,5 +1,7 @@
 Best book: https://www.amazon.com/Learning-Go-Idiomatic-Real-World-Programming-ebook/dp/B08XYGCM71
 
+https://www.sethvargo.com/things-im-excited-for-in-go-1-21/
+
 https://habr.com/ru/companies/selectel/articles/747738/ URL shortener
 
 https://habr.com/ru/companies/yadro/articles/747308/
