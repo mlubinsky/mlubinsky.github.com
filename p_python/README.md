@@ -511,6 +511,9 @@ def get_gpa ( who) :
 sorted ( students , key= get_gpa )
 ```
 
+### operator()
+https://realpython.com/python-operator-module/
+
  Alternatively, the operator module’s
 _itemgetter_ creates and returns a key function that looks up a named dictionary field:
 ```
