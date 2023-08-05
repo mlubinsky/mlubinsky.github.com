@@ -41,7 +41,9 @@ https://agrum.gitlab.io/
 
 https://webia.lip6.fr/~phw/aGrUM/BookOfWhy/
 
+EDA  exploratory data analysis:
 
+https://habr.com/ru/companies/otus/articles/752434/
 
 Serving ML model
 https://news.ycombinator.com/item?id=32277894
