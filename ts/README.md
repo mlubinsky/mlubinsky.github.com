@@ -1,5 +1,7 @@
 https://www.youtube.com/hashtag/timeseries
 
+https://habr.com/ru/articles/752662/
+
 https://www.influxdata.com/time-series-analysis-methods/
 
 https://tomaszs2.medium.com/5-python-projects-people-dont-know-about-ep-3-7124a28239a3 smoothing
