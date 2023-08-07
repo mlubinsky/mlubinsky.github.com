@@ -12,6 +12,9 @@ https://siddhesh.substack.com/p/chesscom-vs-lichess
 
 https://news.ycombinator.com/item?id=29572447
 
+Aprslanov chess show: 
+https://www.youtube.com/@arslanovchessshow7721
+
 
 ### A00 Grob Opening: Grob Gambit
 
