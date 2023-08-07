@@ -12,6 +12,9 @@ https://siddhesh.substack.com/p/chesscom-vs-lichess
 
 https://news.ycombinator.com/item?id=29572447
 
+Дарио: школа шахмат
+https://www.youtube.com/@dario_chess/featured
+
 Arslanov chess show: 
 https://www.youtube.com/@arslanovchessshow7721
 
