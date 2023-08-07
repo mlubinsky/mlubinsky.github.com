@@ -12,7 +12,7 @@ https://siddhesh.substack.com/p/chesscom-vs-lichess
 
 https://news.ycombinator.com/item?id=29572447
 
-Aprslanov chess show: 
+Arslanov chess show: 
 https://www.youtube.com/@arslanovchessshow7721
 
 
