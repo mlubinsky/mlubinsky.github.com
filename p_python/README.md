@@ -40,6 +40,14 @@ can be executed from the terminal using python -m name_of_module
 ```
 python -m site
 
+```
+try:
+    from StringIO import StringIO ## for Python 2
+except ImportError:
+    from io import StringIO ## for Python 3
+```
+
+
 ### Ruff - linter, it also can replaces Black and isort
 https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
 
