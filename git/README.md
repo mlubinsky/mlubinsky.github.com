@@ -1,3 +1,10 @@
+https://learngitbranching.js.org/
+
+https://www.youtube.com/watch?v=hZS96dwKvt0
+
+https://www.youtube.com/watch?v=1ffBJ4sVUb4
+
+
 #### Manage SSH for several github accounts
 
 https://news.ycombinator.com/item?id=36768334
