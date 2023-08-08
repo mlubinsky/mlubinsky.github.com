@@ -29,6 +29,11 @@ Quantum Biology: The Quantum World Meets Life Sciences
 Video: https://www.youtube.com/watch?v=ADiql3FG5is
 Applications of Quantum Physics: From Medicine to Technology
 Video: https://www.youtube.com/watch?v=KkI5li5J5Po
+
+
+### QFT Квантовая теория поля 2022-2023
+
+https://sites.google.com/view/qft2023/
  
 
 ### Lectures
