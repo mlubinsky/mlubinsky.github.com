@@ -18,6 +18,9 @@ https://www.youtube.com/@dario_chess/featured
 Arslanov chess show: 
 https://www.youtube.com/@arslanovchessshow7721
 
+ДЕБЮТ ЗА БЕЛЫХ ДЛЯ   Гамбит Блэкмара-Димера
+https://www.youtube.com/watch?v=Y2-pihhB1D0
+
 
 ### A00 Grob Opening: Grob Gambit
 
