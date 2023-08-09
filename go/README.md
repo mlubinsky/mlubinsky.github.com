@@ -1,5 +1,11 @@
 Best book: https://www.amazon.com/Learning-Go-Idiomatic-Real-World-Programming-ebook/dp/B08XYGCM71
 
+Build web site with go:
+
+https://lets-go-further.alexedwards.net/
+
+https://lets-go.alexedwards.net/
+
 https://www.sethvargo.com/things-im-excited-for-in-go-1-21/
 
 https://habr.com/ru/companies/selectel/articles/747738/ URL shortener
