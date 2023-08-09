@@ -1,7 +1,17 @@
 Postgre vs MySQL 
 https://www.bytebase.com/blog/postgres-vs-mysql/
 
+https://habr.com/ru/articles/753192/
+```
+create table order_data (
+	order_date date,
+	sales integer
+);
 
+insert into order_data
+select date_trunc('day', dd), random() * 50000
+from generate_series('2015-01-01'::date, '2025-01-01'::date, '1 minute') dd;
+```
 
 https://www.psycopg.org/docs/extras.html
 
