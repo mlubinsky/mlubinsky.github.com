@@ -12,6 +12,8 @@ https://habr.com/ru/companies/vk/articles/741702/  Data Formats (avro, etc)
 
 ### Diagrams builders 
 
+http://magjac.com/graphviz-visual-editor/
+
 https://text-to-diagram.com/
 
 https://sequencediagram.org/
