@@ -18,8 +18,12 @@ https://www.youtube.com/@dario_chess/featured
 Arslanov chess show: 
 https://www.youtube.com/@arslanovchessshow7721
 
-### Гамбит Инглунда-Чарлика
+### Гамбит  Инглунда-Чарлика for black
 https://www.youtube.com/watch?v=NmRg-S97Thc
+
+### Гамбит Руссо for black against e4
+
+https://www.youtube.com/watch?v=hKEqUs3piTU
 
 ### ДЕБЮТ ЗА БЕЛЫХ    Гамбит Блэкмара-Димера
 https://www.youtube.com/watch?v=Y2-pihhB1D0
