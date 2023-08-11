@@ -58,3 +58,30 @@ print("Different files:")
 for file_path in differing_files:
     print(file_path)
 ```
+### Compare folders using .bat 
+```
+@echo off
+setlocal
+
+set "folderA=C:\A"
+set "folderB=C:\B"
+
+setlocal enabledelayedexpansion
+for /r "%folderA%" %%a in (*) do (
+    set "relativePath=%%~pa"
+    set "fileB=!folderB!\!relativePath:~1!\%%~nxa"
+    if exist "!fileB!" (
+        fc "%%a" "!fileB!" > nul
+        if errorlevel 1 (
+            echo Different: "%%a"
+        )
+    ) else (
+        echo Missing in folder B: "%%a"
+    )
+)
+
+endlocal
+```
+
+
+
