@@ -1,3 +1,4 @@
+### Compare 2 folders PoweShell:
 ```
 $folderA = "C:\A"
 $folderB = "C:\B"
@@ -31,4 +32,29 @@ $differentFiles | ForEach-Object { Write-Host $_ }
 # You can also save the list to a text file if you want
 #$differentFiles | Out-File -FilePath "DifferentFilesList.txt"
 
+```
+### Compare folders using Python
+```
+import filecmp
+import os
+
+folder_a = r'C:\A'
+folder_b = r'C:\B'
+
+differing_files = []
+
+for dirpath, dirnames, filenames in os.walk(folder_a):
+    for filename in filenames:
+        file_path_a = os.path.join(dirpath, filename)
+        file_path_b = os.path.join(folder_b, os.path.relpath(file_path_a, folder_a))
+        
+        if os.path.exists(file_path_b):
+            if not filecmp.cmp(file_path_a, file_path_b, shallow=False):
+                differing_files.append(file_path_a)
+        else:
+            differing_files.append(file_path_a)
+
+print("Different files:")
+for file_path in differing_files:
+    print(file_path)
 ```
