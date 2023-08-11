@@ -2,6 +2,9 @@ https://architecturenotes.co/datasette-simon-willison/
 
 https://habr.com/ru/post/687994/
 
+### JSON in SQLite
+https://news.ycombinator.com/item?id=37082941
+
 ### SQLite extensions
 
 https://sqlpkg.org/
