@@ -15,6 +15,9 @@ from generate_series('2015-01-01'::date, '2025-01-01'::date, '1 minute') dd;
 
 https://www.psycopg.org/docs/extras.html  Python Driver
 
+### Audit table
+https://www.heap.io/blog/how-postgres-audit-tables-saved-us-from-taking-down-production
+
 ### SQL optimization
 https://towardsdatascience.com/how-we-optimized-postgresql-queries-100x-ff52555eabe
 
