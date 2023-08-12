@@ -1,5 +1,7 @@
 https://yoshuabengio.org/
 
+https://habr.com/ru/articles/753920/
+
 ### Meta-learning
 
 https://ufn.ru/ru/articles/2022/5/b/
