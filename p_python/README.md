@@ -157,6 +157,34 @@ https://docs.python.org/3/library/index.html
 https://stackoverflow.com/questions/1349332/python-passing-a-function-into-another-function
 
 
+### Standard libs: contextlib and others
+
+https://pub.towardsai.net/20-underdog-python-built-in-libraries-that-deserve-much-more-attention-6ff35baeb06c
+
+https://towardsdatascience.com/how-to-build-custom-context-managers-in-python-31727ffe96e1
+
+```
+from contextlib import contextmanager
+
+@contextmanager
+def timer():
+    # Start the timer
+    start = time.time()
+    # context breakdown
+    yield
+    # End the timer
+    end = time.time()
+
+    # Tell the user how much time elapsed
+    print(f"This code block executed in {round(end - start, 3)} seconds.")
+
+import time
+
+with timer():
+    for _ in range(10):
+        time.sleep(0.5)
+
+```
 ### Communicating with OS and filesystem
 
 https://realpython.com/python-pathlib/ Pathlib module from standard library (instead of os.path and glob)
