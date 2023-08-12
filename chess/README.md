@@ -39,6 +39,7 @@ https://www.youtube.com/watch?v=d_hRppobNMU
 
 https://www.youtube.com/watch?v=foniOh5Mjv4
 
+https://www.youtube.com/watch?v=3Lr0OuCVS3M
 
 ### B32 Sicilian Defense: Kalashnikov Variation
 ```
