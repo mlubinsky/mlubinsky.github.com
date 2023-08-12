@@ -47,7 +47,139 @@ except ImportError:
     from io import StringIO ## for Python 3
 ```
 
+### Dictionary
 
+####  Merge dictionaries
+```
+d1 = {'a': 1, 'b': 2}
+d2 = {'b': 3, 'c': 4}
+{**d1, **d2}
+{'a': 1, 'b': 3, 'c': 4}
+```
+It returns a new dictionary object, 
+however, if d1 and d2 have the same key, then d1 will overwrite d2. 
+
+If you use the dictionary update method, the original object will be modified, for example:
+```
+d1 = {'a':1, 'b':2}
+d1 = {'c':1, 'd':2}
+d2.update(d1)
+d2
+{'c': 1, 'd': 2, 'a': 1, 'b': 2}
+```
+#### Iterate dictionary
+```
+d = {'c': 3, 'd': 4, 'a': 1, 'b': 2}
+ 
+for key, value in d.items():
+    print(key, value)
+ 
+
+for key in d:
+    print(key, d[key])
+
+```
+#### Dictionary derivation
+You can use dict comprehension to build a dictionary:
+```
+fruits = ['apple', 'mango', 'banana','cherry']
+{f:len(f) for f in fruits}
+```
+Result:
+
+{'apple': 5, 'mango': 5, 'banana': 6, 'cherry': 6}
+
+####  Sort dictionary
+A dictionary is essentially an unordered container object (in fact, 
+Python 3.6 started to support order, but this order refers to the order in which keys are added). 
+You can sort a dictionary by key or value using lambda function as sort key:
+```
+d = {"c": 3, "a": 1, "f":6, "b": 0}
+
+##### Sort by key
+ 
+sorted(d.items(), key=lambda x:x[0])
+# [('a', 1), ('b', 0), ('c', 3), ('f', 6)]
+
+#### Sort by value
+sorted(d.items(), key=lambda x:x[1])
+# [('b', 0), ('a', 1), ('c', 3), ('f', 6)]
+```
+####  Dictionary count
+Count the number of occurrences of each letter in the list:
+```
+chars = ['a', 'b','c','a','d','c']
+d = {}
+for c in chars:
+    d[c] = d.get(c, 0) + 1
+
+# {'a': 2, 'b': 1, 'c': 2, 'd': 1}
+Or you can use the collections.defaultdict method:
+
+import collections
+chars = ['a', 'b','c','a','d','c']
+
+dd = collections.defaultdict(int)
+for c in chars:
+    dd[c] += 1
+```
+
+####  Delete item from dictionary
+ 
+```
+d = {'ob1':'computer', 'ob2':'mouse', 'ob3':'printer'}
+del d['ob1']
+# {'ob3': 'printer', 'ob2': 'mouse'}
+
+Delete all items:
+
+d = {'ob1':'computer', 'ob2':'mouse', 'ob3':'printer'}
+d.clear()
+# {}
+```
+#### Convert two lists to a dictionary
+To create a dictionary from two sequences, use the dict() and zip() method.
+```
+stocks = ['reliance', 'infosys', 'tcs'] 
+prices = [2175, 1127, 2750] 
+d = dict(zip(stocks, prices))
+print(d)# {'reliance': 2175, 'infosys': 1127, 'tcs': 2750}
+```
+
+#### fromkeys() to build a dictionary
+```
+The dictionary fromkeys() method is used to create a new dictionary, 
+and the elements in the iterable object are used as the keys in the dictionary, 
+and all keys correspond to the same value, and the default is None.
+
+{}.fromkeys(["name", "age"])
+{'name': None, 'age': None}
+
+  or if you don't wnat to use None
+{}.fromkeys(["Jack", "Chow","Fook"], 0)
+{'Jack': 0, 'Chow': 0, 'Fook': 0}
+10. setdefault() to return the value of a key
+The syntax of the method setdefault() is dict.setdefault(key, default=None).
+
+Parameters:
+
+key — the key value to look up.
+default — the default key value to set when the key does not exist.
+Return value:
+If the key is in the dictionary, return the corresponding value. If not in the dictionary, insert the key and set the default value default, and return default, the default value is None.
+```
+For example:
+```
+dict1 = {'name': 'tony', 'likes': 'soccer', 123: 456}
+
+dict1.setdefault('name', 'jack')
+dict1.setdefault('likes', None)
+dict1.setdefault('weight', None)
+
+# Output
+{'name': 'tony', 'likes': 'soccer', 123: 456, 'weight': None}
+
+```
 ### Ruff - linter, it also can replaces Black and isort
 https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
 
