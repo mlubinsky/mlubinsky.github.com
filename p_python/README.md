@@ -80,9 +80,16 @@ https://www.amazon.com/Python-Science-Tiago-Rodrigues-Antao/dp/1617297933
 
 https://pythonspeed.com/
 
+https://coderslegacy.com/cython-vs-cpython-comparing-speed/  Cython
+
+### Multiprocessing 
+https://news.ycombinator.com/item?id=37089817
+
+https://milliams.com/courses/parallel_python/
+
 https://superfastpython.com/ Threading, Multiprocessing, and AsyncIO
 
-https://coderslegacy.com/cython-vs-cpython-comparing-speed/  Cython
+https://github.com/sybrenjansen/mpire
 
 Combining mulithreading and multiprocessing:
 https://heyashy.medium.com/blazing-fast-etls-with-simultaneous-multiprocessing-and-multithreading-214865b56516
