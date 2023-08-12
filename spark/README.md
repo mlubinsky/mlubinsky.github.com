@@ -7,6 +7,8 @@ https://medium.com/@sathamn.n/surviving-an-oom-issue-in-apache-spark-a-thrilling
 
 https://sunilrana123.medium.com/bigdata-interview-question-part-3-38f36c57bac2
 
+https://blog.devgenius.io/solution-spark-debugging-a-slow-application-e900ebd7bec9
+
 https://leanpub.com/beautiful-spark/
 
 Read local file instead HDFS: https://stackoverflow.com/questions/27299923/how-to-load-local-file-in-sc-textfile-instead-of-hdfs
