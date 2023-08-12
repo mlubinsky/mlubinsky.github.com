@@ -1307,6 +1307,25 @@ def main():
 ### Enumeration
 https://florian-dahlitz.de/articles/why-you-should-use-more-enums-in-python
 
+```
+from dataclasses import dataclass
+from enum import Enum, unique
+
+@unique
+class CarBrand(Enum):
+    VOLVO = "volvo"
+    BMW = "bmw"
+    VW = "volkswagen"
+
+
+@dataclass
+class Car:
+    brand: CarBrand
+
+
+volvo = Car(brand="volvo")
+```
+
 ### Working with binary files: BytesIO 
 
 https://github.com/lingeringwillx/StructIO
