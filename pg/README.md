@@ -129,6 +129,8 @@ https://www.yugabyte.com/postgresql/postgresql-high-availability/ High Availabil
 ### Partitioning
 https://www.postgresql.org/docs/current/ddl-partitioning.html
 
+https://engineering.workable.com/postgres-live-partitioning-of-existing-tables-15a99c16b291
+
 https://www.postgresql.org/docs/current/ddl-partitioning.html#DDL-PARTITIONING-DECLARATIVE
 
 <https://habr.com/ru/company/barsgroup/blog/481694/> Partitioning
