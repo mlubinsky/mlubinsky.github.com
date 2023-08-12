@@ -13,7 +13,7 @@ select date_trunc('day', dd), random() * 50000
 from generate_series('2015-01-01'::date, '2025-01-01'::date, '1 minute') dd;
 ```
 
-https://www.psycopg.org/docs/extras.html
+https://www.psycopg.org/docs/extras.html  Python Driver
 
 ### Backup
 https://www.postgresql.org/docs/current/backup.html
@@ -31,6 +31,9 @@ RAISE NOTICE 'STEP X  timeofday= %',  timeofday();
 ### Is it guaranteed that bigserial column is unique across all partitions in Postgres 15 partitioned table?
 
 https://stackoverflow.com/questions/76734370/is-it-guaranteed-that-bigserial-column-is-unique-across-all-partitions-in-postgr
+
+
+https://luis-sena.medium.com/tuning-your-postgresql-for-high-performance-5580abed193d
 
 ### All constraints for given table:
 https://reside-ic.github.io/blog/querying-for-foreign-key-constraints/
