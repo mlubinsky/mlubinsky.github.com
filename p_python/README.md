@@ -185,6 +185,40 @@ with timer():
         time.sleep(0.5)
 
 ```
+
+### Exceptions
+```
+try:
+    # Some code that may raise an exception.
+except <ExceptionType> as err:
+    # This part will only be executed when the specified exception is raised.
+else:
+    # This part will only be executed when no exception is raised.
+finally:
+    # This part will always be excuted
+```
+
+log the traceback, rather than just the error message. 
+```
+import traceback
+
+try:
+    num = int("abc")
+except ValueError as err:
+    print(traceback.format_exc)
+```
+or using logging
+```
+import logging
+
+logger = logging.getLogger()
+
+try:
+    num = int("abc")
+except ValueError as err:
+    logger.exception(err)
+```
+
 ### Communicating with OS and filesystem
 
 https://realpython.com/python-pathlib/ Pathlib module from standard library (instead of os.path and glob)
