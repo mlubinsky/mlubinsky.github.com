@@ -193,6 +193,7 @@ ruff check file.py --ignore E501    # to ignore E501 Line too long
 https://www.blog.pythonlibrary.org/2023/06/28/an-intro-to-ruff-an-extremely-fast-python-linter/
 
 ### Links
+https://medium.com/techtofreedom/10-python-interview-questions-for-senior-developers-4fefe773719a
 
 https://www.stationx.net/python-data-structures-cheat-sheet/
 
