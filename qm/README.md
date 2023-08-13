@@ -108,6 +108,7 @@ https://www.youtube.com/watch?v=VTciIwTr1Vw . Albert Shwarts
 
 
 Квантовая механика, Киселев В. В., 1 лекция, 06.09.2022
+https://sites.google.com/view/quanty-kiselev
 https://www.youtube.com/watch?v=8GA_52Y_3EY
 
 Яшин Всеволод
