@@ -107,6 +107,9 @@ https://www.youtube.com/watch?v=jWD2_kvJDbU Лекция 2. В.Ж. Сакбае�
 https://www.youtube.com/watch?v=VTciIwTr1Vw . Albert Shwarts
 
 
+Квантовая механика, Киселев В. В., 1 лекция, 06.09.2022
+https://www.youtube.com/watch?v=8GA_52Y_3EY
+
 Яшин Всеволод
 https://mipt.ru/education/chairs/fpfkt/downloads/sciseminar/2019_spring/%D0%AF%D1%88%D0%B8%D0%BD_%D0%92%D1%81%D0%B5%D0%B2%D0%BE%D0%BB%D0%BE%D0%B4_%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BB%D0%BE%D0%B3%D0%B8%D0%BA%D0%B0.pdf
 
