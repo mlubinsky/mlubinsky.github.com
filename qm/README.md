@@ -1,4 +1,5 @@
 This playlist will help you get a strong foundation in quantum physics, covering essential topics and concepts. The videos are organized in a logical sequence, starting with introductory content and progressing to more advanced topics. Enjoy your marathon study session!
+```
 Quantum Physics for Beginners: Overview and Basics
 Video: https://www.youtube.com/watch?v=stxqkFCcrk0
 The Double-Slit Experiment: The Peculiar Behavior of Quantum Particles
@@ -29,7 +30,7 @@ Quantum Biology: The Quantum World Meets Life Sciences
 Video: https://www.youtube.com/watch?v=ADiql3FG5is
 Applications of Quantum Physics: From Medicine to Technology
 Video: https://www.youtube.com/watch?v=KkI5li5J5Po
-
+```
 
 ### QFT Квантовая теория поля 2022-2023
 
