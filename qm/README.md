@@ -36,6 +36,7 @@ Video: https://www.youtube.com/watch?v=KkI5li5J5Po
 
 https://sites.google.com/view/qft2023/
  
+https://www.youtube.com/watch?v=OWP-pZ6A90s  best book for quantum field theory
 
 ### Lectures
 
