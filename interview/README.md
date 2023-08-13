@@ -1,5 +1,7 @@
 https://relational.ai/careers/ JOB
 
+https://news.ycombinator.com/item?id=37111256
+
 how to build resume:
 
 https://news.ycombinator.com/item?id=36901303
