@@ -201,6 +201,11 @@ https://github.com/amaargiru/pycore
 
 https://github.com/prabhupant/python-ds
 
+https://itnext.io/dependency-injection-in-python-a1e56ab8bdd0
+
+https://medium.com/@fareedkhandev/best-data-analysis-library-in-python-ad2572288017 PyGWalker
+
+
 ### Fast python
 
 https://realpython.com/python-profiling/
