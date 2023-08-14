@@ -4,7 +4,6 @@ https://github.com/gto76/python-cheatsheet
 
 https://coderslegacy.com/how-to-import-python-files-from-subdirectories/
 
-https://www.youtube.com/c/pyconus
 
 https://erikvandeven.medium.com/python-uncovering-the-overlooked-core-functionalities-54590420c225
 
@@ -17,6 +16,12 @@ https://dev.to/scofieldidehen/advanced-python-tips-for-development-olo
 Code quality tools:
 
 https://habr.com/ru/companies/otus/articles/750214/
+
+### Conference talks
+
+https://www.youtube.com/c/pyconus
+
+https://www.youtube.com/playlist?list=PLt4L3V8wVnF4GJb8dekLGTNx44FNIFwdv
 
 #### pip
 https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
