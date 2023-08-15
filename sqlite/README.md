@@ -18,6 +18,32 @@ https://antonz.org/sqlean-py/
  
 https://www.joseferben.com/posts/3-things-that-surprised-me-while-running-sqlite-in-production/
 
+https://habr.com/ru/articles/754400/
+```
+import sqlite3
+connection = sqlite3.connect('my_database.db')
+cursor = connection.cursor()
+cursor.execute('SELECT * FROM Users')
+users = cursor.fetchall()
+connection.close()
+# Преобразуем результаты в список словарей
+users_list = []
+for user in users:
+  user_dict = {
+    'id': user[0],
+    'username': user[1],
+    'email': user[2],
+    'age': user[3]
+  }
+  users_list.append(user_dict)
+
+for user in users_list:
+  print(user)
+
+```
+
+
+
 ### GUI
 https://github.com/sqlitebrowser/sqlitebrowser
 
