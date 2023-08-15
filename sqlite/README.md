@@ -41,8 +41,10 @@ for user in users_list:
   print(user)
 
 ```
-
-
+Instead code above (for user in users):
+```
+connection.row_factory = sqlite3.Row
+```
 
 ### GUI
 https://github.com/sqlitebrowser/sqlitebrowser
