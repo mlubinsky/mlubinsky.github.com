@@ -1016,11 +1016,39 @@ def is_even (n) :
 filtered = filter ( is_even , numbers )
 for num in filtered : print (num)
 ```
-### zip()
+### zip() allows to iterate over multiple lists in parallel
+https://realpython.com/python-zip-function/
+
+
+It’s possible that the iterables you pass in as arguments aren’t the same length.
+In these cases, the number of elements that zip() puts out will be equal to the length of the shortest iterable.
+The remaining elements in any longer iterables will be totally ignored by zip()
 ```
-zipped = zip( numbers , big_numbers )
+integers = [1, 2, 3]
+letters = ["a", "b", "c"]
+floats = [4.0, 5.0, 6.0]
+
+for i, l, f in zip(integers, letters, floats):
+    print(i, l, f)
+```
+ zip() function creates an iterator that will aggregate elements from two or more iterables.
+```
+zipped = zip( numbers , big_numbers ) # createszipped  iterator
 for pair in zipped : print ( pair )
 ```
+
+If trailing or unmatched values are important to you, then you can use itertools.zip_longest() instead of zip().
+With this function, the missing values will be replaced with whatever you pass to the fillvalue argument (defaults to None). 
+The iteration will continue until the longest iterable is exhausted:
+```
+from itertools import zip_longest
+numbers = [1, 2, 3]
+letters = ['a', 'b', 'c']
+longest = range(5)
+zipped = zip_longest(numbers, letters, longest, fillvalue='?')
+list(zipped)
+[(1, 'a', 0), (2, 'b', 1), (3, 'c', 2), ('?', '?', 3), ('?', '?', 4)]
+`` 
 ### reduce()
 ```
 from functools import reduce
