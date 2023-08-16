@@ -4,6 +4,28 @@ https://github.com/gto76/python-cheatsheet
 
 https://coderslegacy.com/how-to-import-python-files-from-subdirectories/
 
+How to import arbitrary code: https://stackoverflow.com/questions/19009932/import-arbitrary-python-source-file-python-3-3
+```
+#!/usr/bin/env python3
+
+import os
+import importlib
+
+def import_path(path):
+    module_name = os.path.basename(path).replace('-', '_')
+    spec = importlib.util.spec_from_loader(
+        module_name,
+        importlib.machinery.SourceFileLoader(module_name, path)
+    )
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    sys.modules[module_name] = module
+    return module
+
+notmain = import_path('not-main')
+print(notmain)
+print(notmain.x)
+```
 
 https://erikvandeven.medium.com/python-uncovering-the-overlooked-core-functionalities-54590420c225
 
@@ -40,16 +62,16 @@ https://news.ycombinator.com/item?id=36515531
 
 python -m http.server 8001
 ```
-modules with a if __name__ == "__main__": block that are available on Python's standard import path
+modules with a if __name__ == "__main__": block that are available on Python's standard  path
 can be executed from the terminal using python -m name_of_module
 ```
 python -m site
 
 ```
 try:
-    from StringIO import StringIO ## for Python 2
-except ImportError:
-    from io import StringIO ## for Python 3
+    from StringIO  StringIO ## for Python 2
+except Error:
+    from io  StringIO ## for Python 3
 ```
 
 ### Dictionary
@@ -121,7 +143,7 @@ for c in chars:
 # {'a': 2, 'b': 1, 'c': 2, 'd': 1}
 Or you can use the collections.defaultdict method:
 
-import collections
+ collections
 chars = ['a', 'b','c','a','d','c']
 
 dd = collections.defaultdict(int)
@@ -238,8 +260,8 @@ Combining mulithreading and multiprocessing:
 https://heyashy.medium.com/blazing-fast-etls-with-simultaneous-multiprocessing-and-multithreading-214865b56516
 
 ```
-import statistics
-from multiprocessing import Pool
+ statistics
+from multiprocessing  Pool
 
 data = [
     [1, 2, 3, 4],
@@ -307,7 +329,7 @@ https://pub.towardsai.net/20-underdog-python-built-in-libraries-that-deserve-muc
 https://towardsdatascience.com/how-to-build-custom-context-managers-in-python-31727ffe96e1
 
 ```
-from contextlib import contextmanager
+from contextlib  contextmanager
 
 @contextmanager
 def timer():
@@ -321,7 +343,7 @@ def timer():
     # Tell the user how much time elapsed
     print(f"This code block executed in {round(end - start, 3)} seconds.")
 
-import time
+ time
 
 with timer():
     for _ in range(10):
