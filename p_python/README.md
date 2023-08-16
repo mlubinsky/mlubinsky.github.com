@@ -47,7 +47,10 @@ from copy import deepcopy
 >>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 >>> matrix_copy = deepcopy(matrix)
 ```
-### List methods:
+### List  
+https://realpython.com/python-list/
+https://realpython.com/how-to-split-a-python-list-into-chunks/
+https://realpython.com/python-flatten-list/
 ```
  append() adds single item to list
  extend()  adds iterable to list
@@ -55,6 +58,37 @@ from copy import deepcopy
  remove(item) removes 1st occurance
  pop([index]) argument is optional - removes last item in the list
  clear() removes all
+ index("value") - raises ValueError exception if not found, if value occures many times it returns 1st entry
+ count("value") - returns 0 if not found 
+```
+
+### List as stack or queue
+https://realpython.com/how-to-implement-python-stack/
+https://realpython.com/queue-in-python/
+
+```
+stack = []
+stack.append("Copy")
+stack.append("Paste")
+stack.append("Remove")
+stack # ['Copy', 'Paste', 'Remove']
+
+stack.pop() #'Remove'
+stack.pop() #'Paste'
+stack.pop() #'Copy'
+stack       # []
+```
+
+queue:
+```
+queue = []
+queue.append("John")
+queue.append("Jane")
+queue.append("Linda")
+queue  # ['John', 'Jane', 'Linda']
+queue.pop(0) # 'John'
+queue.pop(0) # 'Jane'
+queue.pop(0) #'Linda'
 ```
 
 However, in performance-critical situations or when your lists are large, you may want to use more efficient data types, such as collections.deque, for example.
@@ -280,6 +314,8 @@ https://www.blog.pythonlibrary.org/2023/06/28/an-intro-to-ruff-an-extremely-fast
 
 ### Links
 https://medium.com/techtofreedom/10-python-interview-questions-for-senior-developers-4fefe773719a
+
+https://realpython.com/python-string-contains-substring/
 
 https://www.stationx.net/python-data-structures-cheat-sheet/
 
@@ -993,8 +1029,12 @@ many_squares = gen_many_squares ( NUM_SQUARES )
 
 
 ```
-#### map, filter, zip
+#### map 
 ```
+numbers = ["2", "9", "5", "1", "6"]
+numbers = list(map(int, numbers)) # cast to int
+# result: [2, 9, 5, 1, 6]
+
 numbers = [1 , 2 , 3]
 def double (n) :
   return 2 * n
@@ -1009,7 +1049,11 @@ print(list(names))
 ```
 
 ### filter()
+https://realpython.com/python-filter-function/
 ```
+integers = [20, 31, 52, 6, 17, 8, 42, 55]
+even_numbers = list(filter(lambda number: number % 2 == 0, integers))
+
 def is_even (n) :
   return n % 2 == 0
   
