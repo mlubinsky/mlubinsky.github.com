@@ -1,6 +1,9 @@
 ### Python notes
 
 https://github.com/gto76/python-cheatsheet
+
+https://wiki.python.org/moin/TimeComplexity
+
 ```
 An object’s identity is a unique identifier that distinguishes it from other objects. 
 ou can use the built-in id() function to get the identity of any Python object.
@@ -18,21 +21,43 @@ the references to these nested objects are copied, not the objects themselves.
 This means that changes made to the nested objects in the original object will also be reflected in the shallow copy and vice versa:`
 
 A shallow copy of an existing list is a new list containing references to the objects stored in the original list. 
-In other words, when you create a shallow copy of a list, Python constructs a new list with a new identity. Then, it inserts references to the objects in the original list into the new list.
+In other words, when you create a shallow copy of a list, Python constructs a new list with a new identity.
+Then, it inserts references to the objects in the original list into the new list.
 There are at least three different ways to create shallow copies of an existing list. You can use:
 
  - The slicing operator, [:]
-- The .copy() method
-- The copy() function from the copy module
+ - The .copy() method
+ - The copy() function from the copy module
 ```
 Code:
 ```
 countries = ["United States", "Canada", "Poland", "Germany", "Austria"]
-nations = countries[:]
+nations = countries[:]   # sane as  nations = countries.copy()
 id(countries) == id(nations) # Result: False
-
+id(nations[0]) == id(countries[0]) # Result: True
+# let update countries  -> it will not impact nations:
+#  if you change an element in one of the lists, then the change won’t reflect in the copy.
+countries[0] = "USA"
+id(countries[0]) == id(nations[0]) # Result: False
 ```
 
+When you create a deep copy of a list, Python constructs a new list object and then inserts copies of the objects from the original list recursively.
+```
+from copy import deepcopy
+>>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>> matrix_copy = deepcopy(matrix)
+```
+### List methods:
+```
+ append() adds single item to list
+ extend()  adds iterable to list
+ insert(index,value) into specified position
+ remove(item) removes 1st occurance
+ pop([index]) argument is optional - removes last item in the list
+ clear() removes all
+```
+
+However, in performance-critical situations or when your lists are large, you may want to use more efficient data types, such as collections.deque, for example.
 
 ### Import
 
@@ -589,7 +614,10 @@ all string methods:
 
 
 
-### reversed()
+### reversed()  takes a sequence as an argument and returns an iterator
+
+https://realpython.com/python-reverse-list/
+
 ```
 s = 'Python'
 print(list(reversed(s)))
