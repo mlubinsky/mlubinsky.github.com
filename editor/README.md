@@ -1,6 +1,15 @@
 https://penrose.ink/siggraph20.html   Math visualization
 
-### KeeenWrite
+
+fast viewer for CSV and Parquet files and SQLite and DuckDb
+
+https://www.tadviewer.com/
+
+https://vdt-labs.com/easy-csv-editor/
+
+https://superintendent.app/
+
+### KeenWrite
 
 https://github.com/DaveJarvis/keenwrite/blob/main/docs/screenshots.md
 
