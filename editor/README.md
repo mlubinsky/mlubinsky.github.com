@@ -9,15 +9,17 @@ https://vdt-labs.com/easy-csv-editor/
 
 https://superintendent.app/
 
+https://github.com/Eugene-Mark/bigdata-file-viewer
+
 ### KeenWrite
 
 https://github.com/DaveJarvis/keenwrite/blob/main/docs/screenshots.md
 
-https://github.com/Eugene-Mark/bigdata-file-viewer
+ 
 
-https://www.zeditor.app/
 
-https://coteditor.com/
+
+ 
 
 
 ### To invoke Sublime from command line (as subl)  create symbolic link
@@ -26,8 +28,9 @@ https://coteditor.com/
 sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 ```
 
-### Helix , Zed
-https://helix-editor.com/  
+### Helix 
+https://helix-editor.com/ 
+
 https://github.com/helix-editor/helix/releases
 
 https://www.youtube.com/watch?v=9Zj-wiQ9_Xw
