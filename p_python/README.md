@@ -10,6 +10,30 @@ Assignments don’t create copies of objects in Python.
 Instead, they create bindings between the variable and the object involved in the assignment. 
 Therefore, when you have several aliases of a given list, changes in an alias will affect the rest of the aliases.
 ```
+
+### shallow copy/ deepcopy
+```
+copy() - the elements themselves are not deep-copied, so if the original object contains nested structures (like lists or dictionaries), 
+the references to these nested objects are copied, not the objects themselves. 
+This means that changes made to the nested objects in the original object will also be reflected in the shallow copy and vice versa:`
+
+A shallow copy of an existing list is a new list containing references to the objects stored in the original list. 
+In other words, when you create a shallow copy of a list, Python constructs a new list with a new identity. Then, it inserts references to the objects in the original list into the new list.
+There are at least three different ways to create shallow copies of an existing list. You can use:
+
+ - The slicing operator, [:]
+- The .copy() method
+- The copy() function from the copy module
+```
+Code:
+```
+countries = ["United States", "Canada", "Poland", "Germany", "Austria"]
+nations = countries[:]
+id(countries) == id(nations) # Result: False
+
+```
+
+
 ### Import
 
 https://coderslegacy.com/how-to-import-python-files-from-subdirectories/
@@ -308,11 +332,7 @@ negative_infinity = float('-inf')
 
 combination of translate() and maketrans() methods provide more flexibility by allowing for simultaneous multiple-character translations. It's useful when you have a set of characters that need to be replaced. However, for simple task of removing a single character, it's smarter to stick to replace().
 
-### copy/ deepcopy
 
-copy() - the elements themselves are not deep-copied, so if the original object contains nested structures (like lists or dictionaries), the references to these nested objects are copied, not the objects themselves. 
-
-This means that changes made to the nested objects in the original object will also be reflected in the shallow copy and vice versa:`
 
 ### Links
 
