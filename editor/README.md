@@ -27,7 +27,8 @@ sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/
 ```
 
 ### Helix , Zed
-https://helix-editor.com/
+https://helix-editor.com/  
+https://github.com/helix-editor/helix/releases
 
 https://www.youtube.com/watch?v=9Zj-wiQ9_Xw
 
