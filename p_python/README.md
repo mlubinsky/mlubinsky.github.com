@@ -1,6 +1,16 @@
 ### Python notes
 
 https://github.com/gto76/python-cheatsheet
+```
+An object’s identity is a unique identifier that distinguishes it from other objects. 
+ou can use the built-in id() function to get the identity of any Python object.
+
+In Python, you can create aliases of variables using the assignment operator (=). 
+Assignments don’t create copies of objects in Python. 
+Instead, they create bindings between the variable and the object involved in the assignment. 
+Therefore, when you have several aliases of a given list, changes in an alias will affect the rest of the aliases.
+```
+### Import
 
 https://coderslegacy.com/how-to-import-python-files-from-subdirectories/
 
