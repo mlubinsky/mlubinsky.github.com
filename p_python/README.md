@@ -777,7 +777,7 @@ except :
     logging . exception ('Caught an error ')
 ``` 
 
-#### Sorting
+#### Sorting: sorted() and .sort()
 
 https://tproger.ru/translations/python-sorting/
 
@@ -785,6 +785,24 @@ list.sort(reverse=True/False) - in place, returns None
 
 sorted(any_iterable_object, key=..., reverse=True/False) - returns new sorted object
 
+Example: find median in unordered list:
+```
+ def median(samples):
+      n = len(samples)
+      middle_index = n // 2
+      sorted_samples = sorted(samples)
+      # Odd number of values
+      if n % 2:
+          return sorted_samples[middle_index]
+ 
+      # Even number of values
+      lower, upper = middle_index - 1, middle_index + 1
+      return sum(sorted_samples[lower:upper]) / 2
+
+ median([3, 5, 1, 4, 2])
+```
+
+Example: Use key=
 ```
 student_tuples = [
         ('john', 'A', 15),
