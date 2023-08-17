@@ -1,3 +1,15 @@
+### .BAT file to traverse folder
+
+```
+@ECHO OFF
+ 
+for %%f in (directory\path\*.txt) do (
+  set /p val=<%%f
+  echo "fullname: %%f"
+  echo "name: %%~nf"
+  echo "contents: !val!"
+)
+```
 ### Compare 2 folders PoweShell:
 ```
 $folderA = "C:\A"
