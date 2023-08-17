@@ -1,3 +1,10 @@
+### find
+
+number of lines in file:
+
+find /v /c “” C:\Users\Martin\Desktop\sample.txt
+
+
 ### .BAT file to traverse folder
 
 ```
