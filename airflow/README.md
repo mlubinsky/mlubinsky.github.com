@@ -1,6 +1,8 @@
 Book:
 https://www.astronomer.io/ebooks/data-pipelines-with-apache-airflow.pdf
 
+https://www.youtube.com/watch?v=uB7zweaF8EA What is new in Airflow 2.7 ?
+
 Airflow in Docker:
 
 https://stackabuse.com/running-airflow-locally-with-docker-a-technical-guide/
