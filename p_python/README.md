@@ -97,6 +97,8 @@ However, in performance-critical situations or when your lists are large, you ma
 
 https://coderslegacy.com/how-to-import-python-files-from-subdirectories/
 
+https://coderslegacy.com/python-lazy-loading-with-importlib/
+
 How to import arbitrary code: https://stackoverflow.com/questions/19009932/import-arbitrary-python-source-file-python-3-3
 ```
 #!/usr/bin/env python3
