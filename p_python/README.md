@@ -786,6 +786,8 @@ class RegularCard:
 ### itertools
 https://realpython.com/python-itertools/
 
+https://www.youtube.com/watch?v=aumxFs2DO5o
+
 
 #### product()
 ```
