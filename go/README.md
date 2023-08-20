@@ -6,7 +6,9 @@ https://lets-go-further.alexedwards.net/
 
 https://lets-go.alexedwards.net/
 
-https://www.sethvargo.com/things-im-excited-for-in-go-1-21/
+https://www.sethvargo.com/things-im-excited-for-in-go-1-21/  whats new?
+
+https://habr.com/ru/companies/ru_mts/articles/755580/ Go 1.21 - whats new?
 
 https://habr.com/ru/companies/selectel/articles/747738/ URL shortener
 
