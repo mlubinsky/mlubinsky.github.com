@@ -32,7 +32,7 @@ deactivate
 The py script.py launches the Python version stated in #! or Python 2 if #! is missing. The py -3 script.py launches the Python 3.
 
 ### My Mac
-````
+```
 pwd
 /Users/mlubinsky/Library/Python/3.9/bin
 
