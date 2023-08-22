@@ -1,3 +1,7 @@
+### .bat file to invoke ruff
+```
+ruff check %* --ignore E501
+```
 ### find
 
 number of lines in file:
