@@ -15,8 +15,8 @@ https://github.com/Eugene-Mark/bigdata-file-viewer
 
 https://github.com/DaveJarvis/keenwrite/blob/main/docs/screenshots.md
 
- 
-
+### Lapce 
+https://lapce.dev/
 
 ### PDF tools
 
