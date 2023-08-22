@@ -1,4 +1,4 @@
-### How to run multiple Python versions:
+### How to run multiple Python versions on Windows:
 
 https://stackoverflow.com/questions/4583367/how-to-run-multiple-python-versions-on-windows
 
