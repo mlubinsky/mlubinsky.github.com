@@ -4,6 +4,8 @@ https://cpu.land/the-basics
 
 https://www.memorymanagement.org/
 
+https://habr.com/ru/articles/755252/ How DNS works
+
 https://habr.com/ru/articles/755638/ Как работает компьютер: глубокое погружение (на примере Linux)
 
 https://sre.google/books/. Google site reliability books
