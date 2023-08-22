@@ -1,4 +1,37 @@
-## My Mac
+### How to run multiple Python versions:
+
+https://stackoverflow.com/questions/4583367/how-to-run-multiple-python-versions-on-windows
+
+```
+py -0
+ -V:3.8 *         Python 3.8 (64-bit)
+ -V:2.7           Python 2.7
+ -V:2.7-32        Python 2.7-32
+
+```
+instead of running python command run pylauncher command (py) specyfing which version of Python you want;
+```
+py -2.6 – version 2.6
+py -2 – latest installed version 2.x
+py -3.4 – version 3.4
+py -3 – latest installed version 3.x
+```
+
+virtualenv -p c:\python2.5\python.exe c:\venvs\2.5
+
+virtualenv -p c:\python2.6\python.exe c:\venvs\2.6
+
+then you can activate the first and work with Python 2.5 like this
+
+c:\venvs\2.5\activate
+
+and when you want to switch to Python 2.6 you do
+
+deactivate  
+ 
+The py script.py launches the Python version stated in #! or Python 2 if #! is missing. The py -3 script.py launches the Python 3.
+
+### My Mac
 ````
 pwd
 /Users/mlubinsky/Library/Python/3.9/bin
