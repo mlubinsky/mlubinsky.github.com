@@ -18,7 +18,9 @@ https://github.com/DaveJarvis/keenwrite/blob/main/docs/screenshots.md
  
 
 
+### PDF tools
 
+https://news.ycombinator.com/item?id=37110628
  
 
 
