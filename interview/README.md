@@ -15,6 +15,8 @@ https://media.licdn.com/dms/document/media/D4D1FAQH_q662e7ciYg/feedshare-documen
 
 URL shortener: https://habr.com/ru/articles/746602/
 
+https://www.youtube.com/watch?v=rPp46idEvnM  Hash table from Lukin (ru)
+
  https://habr.com/ru/articles/756394/
 
 https://habr.com/ru/articles/743514/
