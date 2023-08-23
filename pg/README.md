@@ -2,7 +2,9 @@ Postgre vs MySQL
 https://www.bytebase.com/blog/postgres-vs-mysql/
 
 
-https://pglocks.org/ locks
+https://pglocks.org/ PG locks
+
+https://habr.com/ru/articles/756074/ PG columns alighnments
 
 https://habr.com/ru/articles/753192/
 ```
