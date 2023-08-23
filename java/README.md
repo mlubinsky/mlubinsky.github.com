@@ -70,6 +70,8 @@ System.out.print(s.charAt(i-1));            //printing the character at index i-
  
  https://habr.com/ru/post/685518/
 
+ https://habr.com/ru/companies/otus/articles/756450/
+
  https://itnext.io/the-memory-structure-of-jvm-part-2-d103426369c2
  
  https://habr.com/ru/post/560984/ memory /cpu usage
