@@ -1,6 +1,14 @@
-https://github.com/man-group/dtale Visualizer for pandas data structures
+### D-Tale Visualizer for pandas data structures
 
-### Convert Jupyter Notebooks to Web App:
+https://github.com/man-group/dtale 
+
+http://alphatechadmin.pythonanywhere.com/dtale/main/1
+```
+D-Tale is the combination of a Flask back-end and a React front-end to bring you an easy way to view & analyze Pandas data structures.
+It integrates seamlessly with ipython notebooks & python/ipython terminals.
+Currently this tool supports such Pandas objects as DataFrame, Series, MultiIndex, DatetimeIndex & RangeIndex.
+```
+### Convert Jupyter Notebooks to Web App: mercury
 
 https://github.com/mljar/mercury
 
