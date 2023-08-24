@@ -17,6 +17,8 @@ https://www.youtube.com/watch?v=zU-LndSG5RE
 
 https://www.youtube.com/watch?v=krDfPEYVVvk
 
+Algorithms: 
+https://github.com/heineman
 
 FAANG interview questions
 https://media.licdn.com/dms/document/media/D4D1FAQH_q662e7ciYg/feedshare-document-pdf-analyzed/0/1686549764622?e=1687392000&v=beta&t=t3ZlZ6w4CMjYMfIDEg8DKA15ecgVSqrX5XNwo2pcBd0
