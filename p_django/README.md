@@ -1,3 +1,11 @@
+### Convert Jupyter Notebooks to Web App:
+
+https://github.com/mljar/mercury
+
+https://runmercury.com/
+
+
+
 ### JavaScript
 https://unsuckjs.com/
 
@@ -98,6 +106,8 @@ https://news.ycombinator.com/item?id=33845414
 with asyncpg and plain SQL
 
 ### Streamlit, Pycone, NiceGUI, etc
+
+https://nicegui.io/
 
 https://awesome-panel.org/home
 
