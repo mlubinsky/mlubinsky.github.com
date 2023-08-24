@@ -2,6 +2,8 @@
 
 https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
+https://www.youtube.com/watch?v=jWZ9K1agm5Y  PySpark Course: Big Data Handling with Python and Apache Spark
+
 ### UDF pandas
 
 https://towardsdatascience.com/pyspark-or-pandas-why-not-both-95523946ec7c
