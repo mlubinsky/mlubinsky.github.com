@@ -4,7 +4,7 @@ https://github.com/mljar/mercury
 
 https://runmercury.com/
 
-
+https://www.reddit.com/r/Python/comments/15z1amc/how_to_build_the_front_end_of_a_web_app_if_you/
 
 ### JavaScript
 https://unsuckjs.com/
