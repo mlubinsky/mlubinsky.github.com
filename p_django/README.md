@@ -1,3 +1,5 @@
+https://github.com/man-group/dtale Visualizer for pandas data structures
+
 ### Convert Jupyter Notebooks to Web App:
 
 https://github.com/mljar/mercury
