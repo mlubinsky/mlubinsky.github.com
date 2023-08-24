@@ -122,6 +122,9 @@ print(notmain)
 print(notmain.x)
 ```
 
+ Collection module: 
+https://www.pynerds.com/python-collections-module/
+
 https://erikvandeven.medium.com/python-uncovering-the-overlooked-core-functionalities-54590420c225
 
 https://github.com/dabeaz-course/python-mastery/tree/main
