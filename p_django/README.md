@@ -1,3 +1,12 @@
+
+
+### Voilà turns Jupyter notebooks into standalone web applications
+
+https://voila.readthedocs.io/en/stable/
+
+https://github.com/voila-dashboards/voila
+
+
 ### D-Tale Visualizer for pandas data structures
 
 https://github.com/man-group/dtale 
