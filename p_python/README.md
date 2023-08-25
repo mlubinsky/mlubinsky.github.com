@@ -654,6 +654,22 @@ all string methods:
 ```
 
 
+every object is equipped with a __dict__ attribute:
+```
+instance = TestClass()
+print(instance.__dict__)
+print(vars(instance))
+```
+
+### getattr() returns the value of the name attribute of the Company instance c:
+
+name = getattr(c, 'name')
+
+ However, you can provide a third argument to getattr(), which will be returned if the attribute is not found, thus avoiding the error:
+
+location = getattr(c, 'location', 'Not available')
+print(location)
+
 
 ### reversed()  takes a sequence as an argument and returns an iterator
 
