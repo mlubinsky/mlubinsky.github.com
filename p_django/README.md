@@ -1,5 +1,7 @@
 https://github.com/causalens/dara 
 
+https://github.com/gradio-app/gradio
+
 
 ### Voilà turns Jupyter notebooks into standalone web applications
 
