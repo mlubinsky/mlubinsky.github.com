@@ -1,3 +1,9 @@
+VSCode extension for SQLite
+
+https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer
+
+
+
 https://architecturenotes.co/datasette-simon-willison/
 
 https://habr.com/ru/post/687994/
