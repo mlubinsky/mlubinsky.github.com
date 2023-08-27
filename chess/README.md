@@ -30,7 +30,15 @@ https://www.youtube.com/watch?v=NmRg-S97Thc
 
 https://www.youtube.com/watch?v=hKEqUs3piTU
 
-### ДЕБЮТ ЗА БЕЛЫХ    Гамбит Блэкмара-Димера
+###    Гамбит Блэкмара-Димера -  ЗА БЕЛЫХ 
+```
+1. d4 d5
+2. e4 dxe4
+3. Nc3
+```
+
+https://en.wikipedia.org/wiki/Blackmar%E2%80%93Diemer_Gambit
+
 https://www.youtube.com/watch?v=Y2-pihhB1D0
 
 https://www.youtube.com/watch?v=fd8A1G3339Y
