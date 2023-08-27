@@ -65,6 +65,37 @@ https://www.youtube.com/watch?v=foniOh5Mjv4
 
 https://www.youtube.com/watch?v=3Lr0OuCVS3M
 
+
+###  Scandinavian defence 1. e4 d5 for black 
+
+https://chesspathways.com/chess-openings/kings-pawn-opening/scandinavian-defense/
+
+https://chess-teacher.com/scandinavian-defense-kadas-gambit/
+
+https://www.thechesswebsite.com/portuguese-gambit-2/
+
+https://www.ianchessgambits.com/scandinavian-gambits.html
+
+https://www.youtube.com/watch?v=p0EQV6yLnaY
+
+https://en.wikipedia.org/wiki/Scandinavian_Defense
+
+https://chess.fandom.com/wiki/Scandinavian_Defense,_Modern_Variation
+
+Kiel Variation:
+https://www.365chess.com/eco/B01_Scandinavian_Kiel_variation
+```	
+1, е4 d5
+2. ed Nf6
+3. d4 N:d5
+3 c4 Nb4
+4. Qa4+ Nc6
+5. d5 b5!
+6. Q:b5 Nc2+
+7. King d8  Bd7
+8. dc Bc4
+```
+
 https://www.youtube.com/watch?v=nWKVLQTkW_k
 
 ### B32 Sicilian Defense: Kalashnikov Variation
