@@ -18,7 +18,11 @@ https://www.youtube.com/@dario_chess/featured
 Arslanov chess show: 
 https://www.youtube.com/@arslanovchessshow7721
 
-Nimcovich defence - black
+### Albin Counter Gambit
+
+https://www.youtube.com/watch?v=tCbwWH25c1Q
+ 
+### Nimcovich defence - black
 
 https://www.youtube.com/watch?v=y4e2QKDPKgQ
 
