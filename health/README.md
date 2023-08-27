@@ -1,3 +1,8 @@
+### Morning exersises:
+
+https://www.youtube.com/watch?v=o-89SYgIwuo
+
+
 https://www.youtube.com/watch?v=4mNdXz2333U  10 Mins for entire body!
 
 
