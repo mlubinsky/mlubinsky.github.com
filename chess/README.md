@@ -54,6 +54,11 @@ https://www.youtube.com/watch?v=d_hRppobNMU
 
 ### Дебют Понциани
 
+```	
+1, е4 е5
+2. Kf3 Kc6
+3. с3
+```
 https://www.youtube.com/watch?v=foniOh5Mjv4
 
 https://www.youtube.com/watch?v=3Lr0OuCVS3M
