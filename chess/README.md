@@ -18,6 +18,11 @@ https://www.youtube.com/@dario_chess/featured
 Arslanov chess show: 
 https://www.youtube.com/@arslanovchessshow7721
 
+Nimcovich defence - black
+
+https://www.youtube.com/watch?v=y4e2QKDPKgQ
+
+
 ### Гамбит  Инглунда-Чарлика for black
 https://www.youtube.com/watch?v=NmRg-S97Thc
 
