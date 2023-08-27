@@ -122,7 +122,7 @@ print(notmain)
 print(notmain.x)
 ```
 
- Collection module: 
+### Collection module: 
 https://www.pynerds.com/python-collections-module/
 
 https://erikvandeven.medium.com/python-uncovering-the-overlooked-core-functionalities-54590420c225
@@ -147,6 +147,12 @@ https://www.youtube.com/playlist?list=PLt4L3V8wVnF4GJb8dekLGTNx44FNIFwdv
 https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 
 https://www.bitecode.dev/p/relieving-your-python-packaging-pain
+
+```
+import sys
+sys.executable
+'/Users/mlubinsky/anaconda3/bin/python'
+```
 
 ### Using -m flag
 
