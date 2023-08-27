@@ -9,6 +9,12 @@ https://www.youtube.com/watch?v=4mNdXz2333U  10 Mins for entire body!
 
 https://www.youtube.com/watch?v=kPF0Re0S09Y
 
+
+
+### Cistanche
+ 
+Цистанхе (латинское Cistanche). Полностью все названия даны во 2 части моего выступления. Смотрите: "Мощнее женьщеня в 5 раз.
+
 ### Dr. Berg 
 https://www.youtube.com/watch?v=jeYe34V7J4Q
 
