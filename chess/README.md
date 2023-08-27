@@ -58,6 +58,8 @@ https://www.youtube.com/watch?v=d_hRppobNMU
 1, е4 е5
 2. Kf3 Kc6
 3. с3
+3    ... Cc5 ??
+4. d4 
 ```
 https://www.youtube.com/watch?v=foniOh5Mjv4
 
