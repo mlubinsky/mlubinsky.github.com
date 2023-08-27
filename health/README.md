@@ -24,6 +24,9 @@ https://www.youtube.com/watch?v=Us8n8VBQn_c
 
 https://www.youtube.com/watch?v=jARqCcCjxnI Petrik
 
+### АШВАГАНДА
+
+https://www.youtube.com/watch?v=_7A7fSYxBpM
 
 ### Cistanche
 
