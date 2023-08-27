@@ -134,6 +134,8 @@ https://www.youtube.com/watch?v=QA70tIInXg8 Fajarowicz variation in the Budapest
 
 ### Budapest gambit
 
+https://en.wikipedia.org/wiki/Budapest_Gambit
+
 https://www.youtube.com/watch?v=o5isuh2DH1g
 
 ###   Vienna Gambit
