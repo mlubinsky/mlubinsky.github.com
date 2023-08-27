@@ -122,18 +122,22 @@ https://listudy.org/en/openings/stafford-gambit
 ### Remote Chess Academy GM Igor Smirnov
 https://www.youtube.com/watch?v=T9vSGnxvwA4  1. d4 d5 2. e4 . 
 
-### kchess.ru
+### kchess.ru  Испанская партия
 https://www.youtube.com/watch?v=mUpEZSwM95Q Самые убойные варианты. Испанская партия.
 
 https://www.youtube.com/watch?v=7vD-2diOnec Самые убойные варианты. Испанская партия. Часть 2
 
 https://www.youtube.com/watch?v=Px7KyCwMgoI . Испанская партия. Варианты, которые не пишут в книгах
 
-https://www.youtube.com/watch?v=QA70tIInXg8 Fajarowicz variation in the Budapest Gambit:
- 1.d4 Nf6 2.c4 e5 3.dxe5 Ne4.  
 
 ### Budapest gambit
 
+https://www.youtube.com/watch?v=QA70tIInXg8 Fajarowicz variation in the Budapest Gambit:
+```
+ 1.d4 Nf6 
+ 2.c4 e5 
+ 3.dxe5 Ne4  
+```
 https://en.wikipedia.org/wiki/Budapest_Gambit
 
 https://www.youtube.com/watch?v=o5isuh2DH1g
