@@ -154,7 +154,7 @@ https://www.bitecode.dev/p/relieving-your-python-packaging-pain
 ```
 import sys
 sys.executable
-'/Users/mlubinsky/anaconda3/bin/python'
+## Result: '/Users/mlubinsky/anaconda3/bin/python'
 ```
 
 ### Using -m flag
@@ -345,6 +345,8 @@ https://medium.com/@fareedkhandev/best-data-analysis-library-in-python-ad2572288
 
 
 ### Fast python
+
+https://habr.com/ru/companies/ruvds/articles/757336/ cProfile  / profile
 
 https://realpython.com/python-profiling/
 
