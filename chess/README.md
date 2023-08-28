@@ -172,6 +172,8 @@ https://play.google.com/store/apps/details?id=ru.maximschool.combinationsinthesp
 ```
 https://en.wikipedia.org/wiki/Smith%E2%80%93Morra_Gambit
 
+https://www.youtube.com/watch?v=3qYYU3Epp8Y&
+
 https://www.youtube.com/watch?v=AsOEmcmR71o  Morr Gambit (ru)
 
 https://en.wikipedia.org/wiki/Gambit
