@@ -346,7 +346,9 @@ https://medium.com/@fareedkhandev/best-data-analysis-library-in-python-ad2572288
 
 ### Profiling
 
-https://pypi.org/project/scalene/0.9.15/
+https://github.com/plasma-umass/scalene
+
+https://pypi.org/project/scalene 
 
 https://habr.com/ru/companies/ruvds/articles/757336/ cProfile  / profile
 
