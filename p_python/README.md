@@ -144,6 +144,9 @@ https://www.youtube.com/c/pyconus
 https://www.youtube.com/playlist?list=PLt4L3V8wVnF4GJb8dekLGTNx44FNIFwdv
 
 #### pip
+
+https://stackabuse.com/installing-python-packages-from-a-git-repo-with-pip/
+
 https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 
 https://www.bitecode.dev/p/relieving-your-python-packaging-pain
