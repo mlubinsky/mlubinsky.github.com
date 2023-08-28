@@ -1,3 +1,5 @@
+http://localhost:3000/login   admin/admin
+
 https://grafana.com/grafana/download
 
 https://www.metricfire.com/blog/grafana-dashboards-from-basic-to-advanced/
