@@ -1,3 +1,18 @@
+https://www.metricfire.com/blog/grafana-dashboards-from-basic-to-advanced/
+
+https://sbcode.net/grafana/
+
+https://medium.com/grafana-tutorials/graphing-non-time-series-sql-data-in-grafana-8a0ea8c55ee3
+
+### Plotly extension for graphana
+
+https://github.com/NatelEnergy/grafana-plotly-panel
+
+https://corpglory.com/s/timescaledb-grafana-plotly-time-series-analysis/
+
+https://grafana.com/grafana/plugins/ae3e-plotly-panel/
+
+
 ###  grafonnet - библиотека для написания дашбордов Grafana с помощью кода на языке jsonnet
 
 https://habr.com/ru/company/mailru/blog/577230/
