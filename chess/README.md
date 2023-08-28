@@ -163,7 +163,14 @@ MobileApp
 https://play.google.com/store/apps/details?id=ru.maximschool.combinationsinthespanishgamelite
 
 
-### Gambits
+### Morr gambit
+
+```
+1. e4 c5
+2. d4 cxd4
+3. c3
+```
+https://en.wikipedia.org/wiki/Smith%E2%80%93Morra_Gambit
 
 https://www.youtube.com/watch?v=AsOEmcmR71o  Morr Gambit (ru)
 
