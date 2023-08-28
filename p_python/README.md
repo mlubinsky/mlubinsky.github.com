@@ -344,11 +344,15 @@ https://itnext.io/dependency-injection-in-python-a1e56ab8bdd0
 https://medium.com/@fareedkhandev/best-data-analysis-library-in-python-ad2572288017 PyGWalker
 
 
-### Fast python
+### Profiling
+
+https://pypi.org/project/scalene/0.9.15/
 
 https://habr.com/ru/companies/ruvds/articles/757336/ cProfile  / profile
 
 https://realpython.com/python-profiling/
+
+### Fast python
 
 https://pythonbooks.org/python-high-performance-second-edition/
 
