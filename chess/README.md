@@ -195,7 +195,11 @@ https://en.wikipedia.org/wiki/Budapest_Gambit
 https://www.youtube.com/watch?v=o5isuh2DH1g
 
 ###   Vienna Gambit
-
+```
+1. e4 e5
+2. Nc3 Nf6
+3. f4
+```
 https://www.youtube.com/watch?v=-yRhn48blBc
 
 ### Openings
