@@ -212,6 +212,8 @@ https://www.udemy.com/course/bxbphbez/learn/lecture/31489186#content
 
 ## давление
 
+https://www.youtube.com/watch?v=jMEk18O4qik  Список самых эффективных упражнений для снижения давления
+
 https://www.youtube.com/watch?v=xxdsbWMEDBA 7 способов снизить давление без таблеток
 
 https://www.youtube.com/watch?v=30PPmosjarM ЛЕЧЕНИЕ ГИПЕРТОНИИ: 7 простых способов,
