@@ -329,6 +329,8 @@ https://www.blog.pythonlibrary.org/2023/06/28/an-intro-to-ruff-an-extremely-fast
 ### Links
 https://medium.com/techtofreedom/10-python-interview-questions-for-senior-developers-4fefe773719a
 
+https://www.jjinux.com/2022/08/python-my-favorite-python-tricks-for.html
+
 https://realpython.com/python-string-contains-substring/
 
 https://www.stationx.net/python-data-structures-cheat-sheet/
