@@ -1,6 +1,9 @@
 Postgre vs MySQL 
 https://www.bytebase.com/blog/postgres-vs-mysql/
 
+https://hakibenita.com/postgresql-unknown-features
+
+https://news.ycombinator.com/item?id=37309309
 
 https://pglocks.org/ PG locks
 
