@@ -27,6 +27,11 @@ https://www.youtube.com/watch?v=tCbwWH25c1Q
 https://www.youtube.com/watch?v=y4e2QKDPKgQ
 
 
+### Scotch Gambit
+
+https://www.youtube.com/watch?v=KH-wT0l_Csk
+
+
 ### Гамбит  Инглунда-Чарлика for black
 https://www.youtube.com/watch?v=NmRg-S97Thc
 
