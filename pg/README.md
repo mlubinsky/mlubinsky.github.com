@@ -1,7 +1,16 @@
 Postgre vs MySQL 
 https://www.bytebase.com/blog/postgres-vs-mysql/
 
+### Less known features
 https://hakibenita.com/postgresql-unknown-features
+
+https://news.ycombinator.com/item?id=37309309
+
+https://news.ycombinator.com/item?id=29163319
+
+https://gist.github.com/ryanguill/101a19fb6ae6dfb26a01396c53fd3c66
+
+https://medium.com/cognite/postgres-can-do-that-f221a8046e
 
 https://news.ycombinator.com/item?id=37309309
 
