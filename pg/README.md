@@ -1,7 +1,27 @@
 Postgre vs MySQL 
 https://www.bytebase.com/blog/postgres-vs-mysql/
 
-### Less known features
+### Schema
+```
+In Postgres, “public” is a Default schema. So, by default, Postgres users can access the "public" schema and create objects in it, such as views, tables, etc.
+
+The SET SEARCH_PATH command, however, allows a user to set any other schema as the default schema. 
+
+SHOW SEARCH_PATH;
+SET SEARCH_PATH = example;
+```
+How to Change Default Schema Permanently at the Database Level?
+```
+ALTER DATABASE db_name SET search_path TO schema_name;
+```
+How to Change Default Schema Permanently at User Level?
+```
+To change a default schema at the user/role level, the “ALTER USER” or “ALTER ROLE” command is used with the “SET SEARCH_PATH” clause:
+
+ALTER ROLE|USER role_name SET search_path TO schema_name;
+```
+
+### Less known Postgres features
 https://hakibenita.com/postgresql-unknown-features
 
 https://news.ycombinator.com/item?id=37309309
