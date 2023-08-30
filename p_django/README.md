@@ -60,6 +60,8 @@ https://habr.com/ru/companies/ru_mts/articles/738208/ Plotting mathplotlib
 
 https://www.patricksoftwareblog.com/my_favorite_python_packages_for_flask.html
 
+https://testdriven.io/guides/flask-deep-dive/
+
 https://pgjones.dev/blog/modern-flask-2023/
 
 https://www.softwaretestinghelp.com/flask-design-patterns-for-web-applications/
