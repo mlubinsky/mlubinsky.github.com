@@ -3,9 +3,12 @@ https://www.bytebase.com/blog/postgres-vs-mysql/
 
 ### How do I get a list of column names from a psycopg2 cursor
 
+https://stackoverflow.com/questions/10252247/how-do-i-get-a-list-of-column-names-from-a-psycopg2-cursor
+```
 curs.execute("Select * FROM people LIMIT 0")
+cursor.fetchone()
 colnames = [desc[0] for desc in curs.description]
-
+```
 ### Schema
 ```
 In Postgres, “public” is a Default schema. So, by default, Postgres users can access the "public" schema and create objects in it, such as views, tables, etc.
