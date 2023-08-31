@@ -4,6 +4,14 @@ echo nl2br("\n command=" . $command ) ;
 
 echo json_encode($_REQUEST); for hash arrays
 
+### Pandas
+```
+error_types_interests = ['_position2DError', '_xTrackError', '_alongTrackError', 'SOG_Error', '_headingError', 'dist_error']
+
+df1_lsi_tmp = df1_LSI.loc[df1_LSI['Error_Type'].isin(error_types_interests)].groupby(['Chipset','Model','Signal_Bands','Error_Type']).agg('mean')
+```
+
+
 ### Javascript HTTP POST  - PHP
 
 ```
