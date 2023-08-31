@@ -33,6 +33,11 @@ https://www.youtube.com/watch?v=KH-wT0l_Csk
 
 
 ### Гамбит  Инглунда-Чарлика for black
+
+https://en.wikipedia.org/wiki/Englund_Gambit
+
+https://www.youtube.com/watch?v=uoybEevtqcA
+
 https://www.youtube.com/watch?v=NmRg-S97Thc
 
 ### Гамбит Руссо for black against e4
