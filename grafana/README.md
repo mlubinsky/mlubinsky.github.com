@@ -53,6 +53,20 @@ ms	millisecond
 
 ```
 
+
+https://grafana.com/blog/2023/07/07/how-to-visualize-time-series-from-sql-databases-with-grafana/
+
+```
+SELECT
+$__timeGroupAlias(payment_date, 1h),
+sum(amount) AS "amount"
+FROM payment
+WHERE
+$__timeFilter(payment_date)
+GROUP BY 1
+ORDER BY $__timeGroup(payment_date, 1h)
+```
+
 ### Plotly extension for graphana
 
 https://github.com/NatelEnergy/grafana-plotly-panel
