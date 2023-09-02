@@ -106,9 +106,19 @@ https://www.youtube.com/watch?v=2G3PmEZI6n8&list=PLGmu4KtWiH6-F2JlLVvCTsMR91I4ix
 
 ### Linear Algebra
 
+https://coffeemug.github.io/spakhm.com/posts/01-lingalg-p1/linalg-p1.html
+
+https://web.stanford.edu/~boyd/vmls/
+
 https://youtube.com/playlist?list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B&si=PXkIbFMqqozrsYEu  3Blue1Brown
 
 https://explained.ai/matrix-calculus/
+
+https://arxiv.org/abs/1404.1100  PCA
+
+https://codingthematrix.com/
+
+https://pimbook.org/
 
 https://news.ycombinator.com/item?id=37354179
 
