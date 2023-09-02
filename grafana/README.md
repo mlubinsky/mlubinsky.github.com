@@ -8,6 +8,30 @@ https://sbcode.net/grafana/
 
 https://medium.com/grafana-tutorials/graphing-non-time-series-sql-data-in-grafana-8a0ea8c55ee3
 
+### Grafana as  a code
+
+https://medium.com/@tarantool/grafana-as-code-b642cac9ae75
+
+https://andidog.de/blog/2022-04-21-grafana-dashboards-best-practices-dashboards-as-code
+
+### Variables
+
+https://nightingaledvs.com/how-to-in-grafana%E2%80%8A-%E2%80%8Apart-2-creating-interactive-dashboards/
+ There are 7 types of variables
+ Query variables:
+ ```
+SELECT answer, count(distinct respondent) as value
+FROM survey_data
+WHERE application = '$application'
+AND question = '$question'
+GROUP BY answer
+```
+https://www.timescale.com/blog/grafana-variables-101/
+
+https://fmancardi.wordpress.com/2021/01/16/learning-grafana-using-url-variables-in-sql-queries/
+
+https://grafana.com/docs/grafana/latest/dashboards/variables/variable-syntax/#time-range-variables
+
 ### Macros / Postgres
 
 https://grafana.com/docs/grafana/latest/datasources/postgres/#macros
@@ -66,6 +90,8 @@ $__timeFilter(payment_date)
 GROUP BY 1
 ORDER BY $__timeGroup(payment_date, 1h)
 ```
+
+ Query Inspector in the top right. This shows us the full expansion of the SQL query,
 
 ### Plotly extension for graphana
 
