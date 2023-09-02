@@ -91,8 +91,26 @@ https://grinfeld.org/books/An-Introduction-To-Tensor-Calculus/
 
 https://kconrad.math.uconn.edu/blurbs/analysis/gaussianintegral.pdf
 
+
+### Linear Algebra with SymPy
+
+https://live.sympy.org/
+
+https://live.sympy.org/?evaluate=A%20%3D%20Matrix(%5B%5B0%2C%20%201%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%5B-1%2C%200%5D%5D)%0A%23--%0AA%20*%20Matrix(%5B1%2C0%5D)%0A
+
+https://minireference.com/static/tutorials/sympy_tutorial.pdf
+
+https://github.com/minireference/sympytut_notebooks/blob/master/notebooks/Linear-algebra.ipynb
+
+https://www.youtube.com/watch?v=2G3PmEZI6n8&list=PLGmu4KtWiH6-F2JlLVvCTsMR91I4ix0_z&index=1
+
 ### Linear Algebra
+
+https://youtube.com/playlist?list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B&si=PXkIbFMqqozrsYEu  3Blue1Brown
+
 https://explained.ai/matrix-calculus/
+
+https://news.ycombinator.com/item?id=37354179
 
 http://textbooks.math.gatech.edu/ila/index.html. Interactive linear algebra 
 
