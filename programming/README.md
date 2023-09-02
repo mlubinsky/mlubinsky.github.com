@@ -20,7 +20,12 @@ https://vak.dreamwidth.org/891889.html  PlantUML - generate sequence diagrams SV
 
 https://memo.barrucadu.co.uk/scheduling-problems.html . Solving Scheduling Problems with Integer Linear Programming with Python
 
+### Wren
+
 https://wren.io/  Wren Programming language
+
+### Odin
+https://odin-lang.org/
 
 ### Awesome
 
