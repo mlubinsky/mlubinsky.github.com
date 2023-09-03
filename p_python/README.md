@@ -826,6 +826,8 @@ class RegularCard:
 ### itertools
 https://realpython.com/python-itertools/
 
+https://www.kdnuggets.com/2023/08/4-python-itertools-filter-functions-probably-didnt-know.html 
+
 https://www.youtube.com/watch?v=aumxFs2DO5o
 
 
