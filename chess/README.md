@@ -20,6 +20,8 @@ https://www.youtube.com/@arslanovchessshow7721
 
 ### Albin Counter Gambit
 
+https://www.youtube.com/watch?v=WU9ai7VYylk
+
 https://www.youtube.com/watch?v=tCbwWH25c1Q
  
 ### Nimcovich defence - black
