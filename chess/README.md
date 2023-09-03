@@ -51,6 +51,7 @@ https://www.youtube.com/watch?v=EwOZrsS45w0
 1. d4 d5
 2. e4 dxe4
 3. Nc3
+4. f3
 ```
 
 https://en.wikipedia.org/wiki/Blackmar%E2%80%93Diemer_Gambit
