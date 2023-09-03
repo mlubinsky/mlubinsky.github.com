@@ -29,6 +29,8 @@ https://www.youtube.com/watch?v=y4e2QKDPKgQ
 
 ### Scotch Gambit
 
+https://en.wikipedia.org/wiki/Scotch_Game#Scotch_Gambit
+
 https://www.youtube.com/watch?v=KH-wT0l_Csk
 
 
