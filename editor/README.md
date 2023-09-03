@@ -20,6 +20,8 @@ https://lapce.dev/
 
 ### PDF tools
 
+https://habr.com/ru/companies/globalsign/articles/758568/
+
 https://news.ycombinator.com/item?id=37110628
  
 
