@@ -1,6 +1,10 @@
 Postgre vs MySQL 
 https://www.bytebase.com/blog/postgres-vs-mysql/
 
+Postgress deep dive:
+
+https://avestura.dev/blog/explaining-the-postgres-meme
+
 ### How do I get a list of column names from a psycopg2 cursor
 
 https://stackoverflow.com/questions/10252247/how-do-i-get-a-list-of-column-names-from-a-psycopg2-cursor
