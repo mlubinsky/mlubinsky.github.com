@@ -115,8 +115,14 @@ https://github.com/nakabonne/tstorage
 <https://conroy.org/introducing-sqlc>
 <https://github.com/kyleconroy/sqlc>
 <https://habr.com/ru/company/oleg-bunin/blog/461935/> .  Postgres SQL
+
+
 <https://github.com/jmoiron/sqlx>
 
+SQX, a way to build flexible database models in Go
+https://stytch.com/blog/open-sourcing-sqx-a-way-to-build-flexible-database-models-in-go/
+
+https://news.ycombinator.com/item?id=37360249
 
 SQL parser :
 <https://golang.works-hub.com/learn/lets-build-a-sql-parser-in-go-2cce1>
