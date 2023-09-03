@@ -293,6 +293,8 @@ SELECT pg_size_pretty(pg_relation_size('t_test'));
 
 ###  JSON
 
+https://habr.com/ru/companies/otus/articles/758010/
+
 https://stackoverflow.com/questions/53086816/postgresql-aggregate-multiple-rows-as-json-array-based-on-specific-column/53087015#53087015
 ```
 I would like to generate a JSON output, consisting of arrays of arrays, whereas each of the inner arrays contains the aggregated points of a trip (as indicated by trip_log_id).
