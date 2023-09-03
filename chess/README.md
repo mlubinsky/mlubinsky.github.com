@@ -45,6 +45,8 @@ https://www.youtube.com/watch?v=NmRg-S97Thc
 https://www.youtube.com/watch?v=hKEqUs3piTU
 
 ###    Гамбит Блэкмара-Димера -  ЗА БЕЛЫХ 
+
+https://www.youtube.com/watch?v=EwOZrsS45w0
 ```
 1. d4 d5
 2. e4 dxe4
