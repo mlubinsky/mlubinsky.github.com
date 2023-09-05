@@ -16,6 +16,8 @@ https://andidog.de/blog/2022-04-21-grafana-dashboards-best-practices-dashboards-
 
 ### Variables
 
+https://grafana.com/docs/grafana/latest/dashboards/variables/add-template-variables/
+
 https://nightingaledvs.com/how-to-in-grafana%E2%80%8A-%E2%80%8Apart-2-creating-interactive-dashboards/
 ```
 Go to the dashboard Settings -> Variables and create a new variable with the type set to Query. Select your   data source as Data Source. Then you can write a SQL query that returns one column with all your test names. Save the variable.
