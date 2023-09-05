@@ -17,6 +17,19 @@ https://andidog.de/blog/2022-04-21-grafana-dashboards-best-practices-dashboards-
 ### Variables
 
 https://nightingaledvs.com/how-to-in-grafana%E2%80%8A-%E2%80%8Apart-2-creating-interactive-dashboards/
+```
+Go to the dashboard Settings -> Variables and create a new variable with the type set to Query. Select your   data source as Data Source. Then you can write a SQL query that returns one column with all your test names. Save the variable.
+
+Then there should be a dropdown at the top of the dashboard where you can choose the test name you want from. Then use the variable in your query, for example in the WHERE clause to filter for those test names only.
+
+Variable drop-down lists are displayed in the order they are listed in the variable list in Dashboard settings.
+Put the variables that you will change often at the top, so they will be shown first (far left on the dashboard).
+By default, variables don’t have a default value. This means that the topmost value in the drop-down is always preselected. If you want to pre-populate a variable with an empty value, you can use the following workaround in the variable settings:
+Select the Include All Option checkbox.
+In the Custom all value field, enter a value like +.
+```
+
+
  There are 7 types of variables
  Query variables:
  ```
