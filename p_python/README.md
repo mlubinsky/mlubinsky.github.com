@@ -122,6 +122,22 @@ print(notmain)
 print(notmain.x)
 ```
 
+### functols module
+
+https://florian-dahlitz.de/articles/introduction-to-pythons-functools-module
+```
+cached_property()
+cmp_to_key()
+lru_cache()
+partial()
+partialmethod()
+reduce()
+singledispatch()
+singledispatchmethod()
+total_ordering()
+update_wrapper()
+wraps()
+```
 ### Collection module: 
 https://www.pynerds.com/python-collections-module/
 
@@ -714,8 +730,8 @@ digits[::-1]   Result: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 
 #### Stack, queue, priority queue (heapq)  
  https://realpython.com/queue-in-python/ <br>
- https://realpython.com/python-deque/
-
+ https://realpython.com/python-deque/ <br>
+https://favtutor.com/blogs/heap-in-python <br>
 #### dequeue
 
 ```
