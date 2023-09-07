@@ -14,6 +14,8 @@ https://www.jjj.de/fxt/fxtbook.pdf
 
 https://ru.algorithmica.org/
 
+https://codeconfessions.substack.com/p/bloom-filters-and-beyond  Bloom filter
+
 https://tproger.ru/books/algorithms-data-structures-books/
 
 Hash function
