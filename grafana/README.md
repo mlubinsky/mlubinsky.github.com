@@ -1,5 +1,7 @@
 ### Grafana Plugins
 
+https://grafana.com/grafana/plugins/
+
 https://habr.com/ru/companies/flant/articles/423851/
 
 https://gapit-htmlgraphics-panel.gapit.io/
