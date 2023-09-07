@@ -90,6 +90,8 @@ http://www.dspguide.com/pdfbook.htm DSP book
 
 https://boyter.org/posts/bloom-filter/ Bloom filter 
 
+https://codeconfessions.substack.com/p/bloom-filters-and-beyond
+
 https://habr.com/ru/company/otus/blog/541378/ Bloom filter
 
 <https://sagi.io/2017/07/bloom-filters-for-the-perplexed/>
