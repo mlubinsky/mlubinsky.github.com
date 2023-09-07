@@ -1,4 +1,8 @@
+https://erdogant.github.io/d3graph/pages/html/index.html
+
 https://towardsdatascience.com/creating-beautiful-stand-alone-interactive-d3-charts-with-python-804117cb95a7
+
+https://towardsdatascience.com/d3blocks-the-python-library-to-create-interactive-and-standalone-d3js-charts-3dda98ce97d4
 
 https://habr.com/ru/post/581970/ multidimentional plotting
 
