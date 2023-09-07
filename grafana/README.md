@@ -1,3 +1,5 @@
+Grafana date/time picker: press Ctrl button to set the range
+
 ### Grafana Plugins
 
 https://grafana.com/grafana/plugins/
