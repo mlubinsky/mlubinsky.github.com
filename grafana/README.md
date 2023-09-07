@@ -1,3 +1,6 @@
+https://gapit-htmlgraphics-panel.gapit.io/
+Благодаря связке JavaScript с HTML и CSS он позволяет реализовывать любую логику и визуализацию панелей. Код можно править прямо в настройках панели и без дополнительных манипуляций на стороне Grafana.
+
 http://localhost:3000/login   admin/admin
 
 https://grafana.com/grafana/download
@@ -7,6 +10,13 @@ https://www.metricfire.com/blog/grafana-dashboards-from-basic-to-advanced/
 https://sbcode.net/grafana/
 
 https://medium.com/grafana-tutorials/graphing-non-time-series-sql-data-in-grafana-8a0ea8c55ee3
+
+### Transform
+
+https://grafana.com/docs/grafana/latest/panels-visualizations/query-transform-data/transform-data/
+
+https://www.youtube.com/watch?v=aoAmRHq3vhU
+
 
 ### Grafana as  a code
 
