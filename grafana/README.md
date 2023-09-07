@@ -7,6 +7,7 @@ https://habr.com/ru/companies/flant/articles/423851/
 https://gapit-htmlgraphics-panel.gapit.io/
 Благодаря связке JavaScript с HTML и CSS он позволяет реализовывать любую логику и визуализацию панелей. Код можно править прямо в настройках панели и без дополнительных манипуляций на стороне Grafana.
 
+### Grafana
 http://localhost:3000/login   admin/admin
 
 https://grafana.com/grafana/download
