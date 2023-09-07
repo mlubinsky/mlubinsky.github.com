@@ -1,3 +1,5 @@
+https://towardsdatascience.com/creating-beautiful-stand-alone-interactive-d3-charts-with-python-804117cb95a7
+
 https://habr.com/ru/post/581970/ multidimentional plotting
 
 https://habr.com/ru/company/ruvds/blog/536962/
