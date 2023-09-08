@@ -1,6 +1,29 @@
 Grafana date/time picker: press Ctrl button to set the range
 
 
+### Consistent Colors
+
+```
+To ensure consistent colors for the same attribute name in different Grafana panels, you can use Grafana's built-in alias pattern and color mapping options. Here's how you can achieve this:
+
+Define an Alias Pattern:
+
+In each of your panels, go to the "Query" or "Visualization" settings where you configure the display of your data.
+Look for an "Alias" or "Legend" setting. Grafana allows you to specify an alias pattern using variables and labels.
+Create a consistent alias pattern that includes a label from your data that remains constant for the same attribute name across different panels. For example, if you have an attribute named "AttributeName," your alias pattern might be something like Attribute Name: $Attribute.
+Set Up Color Mapping:
+
+In Grafana, you can set up color mapping based on the alias pattern.
+Go to the "Panel" settings (not the query settings) for each panel.
+Look for a "Legend" or "Display" section, depending on the visualization type.
+In this section, you'll find an option to define colors based on series or aliases.
+Create color mappings that specify consistent colors for specific alias patterns. For example, you can assign the color blue to all series with the alias pattern Attribute Name: A and red to Attribute Name: B, and so on.
+Apply the Alias Patterns:
+
+Ensure that you apply the same alias pattern to the same attribute name in different panels. This consistency will ensure that Grafana assigns the same color to the same attribute name across panels.
+By following these steps, you can achieve consistent coloring for the same attribute name in different Grafana panels. Grafana will use the alias patterns you defined to assign colors, making it easier to visually identify and compare data across panels.
+```
+
 ###  Repeat  Panel
 ```
 Question #1: Avoiding Long and Repetitive SQL Queries
