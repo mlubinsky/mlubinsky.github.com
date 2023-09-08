@@ -1,5 +1,41 @@
 Grafana date/time picker: press Ctrl button to set the range
 
+
+###  Repeat 
+```
+Question #1: Avoiding Long and Repetitive SQL Queries
+To avoid typing 12 very similar but long SQL queries, you can use Grafana's built-in support for templating and dynamic queries.
+Grafana allows you to create dynamic dashboards using variables. Here's how you can achieve this:
+
+Create a Template Variable for Month:
+
+Create a template variable named "Month" as previously described.
+Modify Your SQL Queries:
+
+In your SQL queries for each panel, you can use the template variable like this:
+ 
+WHERE month_column = $Month
+
+This SQL clause ensures that each panel filters data for the selected month.
+Use Repeat Panels Feature:
+
+Grafana offers a "Repeat Panels" feature that allows you to create a single panel
+and repeat it for each value of the template variable (in your case, 12 months). Here's how to set it up:
+Edit your dashboard.
+Click on the panel you want to repeat.
+In the "Panel Title" section, click the "Repeat" checkbox.
+Select the "Month" template variable from the dropdown.
+Grafana will automatically create 12 panels, one for each month, and apply the appropriate SQL filter for each panel.
+This approach significantly reduces the need for repetitive SQL queries and allows you to manage all 12 panels efficiently.
+
+Question #2: Avoiding Dropdown Selection for All 12 Months
+If you have exactly 12 months and you want to display all of them without asking the user to select them via a dropdown list, you can use the "Repeat Panels" feature as mentioned above. This will automatically create and display all 12 panels, each filtered for a different month, without requiring user interaction.
+
+With the "Repeat Panels" feature, you can achieve your goal of displaying data for all 12 months simultaneously without redundant dropdown selections.
+
+```
+
+
 ### Grafana Plugins
 
 https://grafana.com/grafana/plugins/
