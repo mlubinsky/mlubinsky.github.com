@@ -38,6 +38,28 @@ without requiring user interaction.
 
 With the "Repeat Panels" feature, you can achieve your goal of displaying data for all 12 months simultaneously without redundant dropdown selections.
 
+
+Panel Title: Suppose you have a panel with a title like "My Panel."
+
+Repeat Panels: When you enable the "Repeat" feature for this panel and select a template variable, Grafana will create multiple panels,
+one for each value of the template variable.
+
+Generated Titles: Grafana generates titles for the repeated panels by appending the selected variable values to the original panel title.
+ For example, if your variable is "Month" and has values like "January," "February," "March," etc., Grafana will create panels with titles like:
+
+"My Panel - January"
+"My Panel - February"
+"My Panel - March"
+and so on for each selected month.
+
+This naming convention allows you to easily identify and differentiate the repeated panels based on the values of the template variable.
+It's especially useful when you have a dashboard with many panels, each representing different subsets of data or time periods.
+
+
+
+
+
+
 ```
 ### Deploy to another machine:
 
