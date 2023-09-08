@@ -1,7 +1,7 @@
 Grafana date/time picker: press Ctrl button to set the range
 
 
-###  Repeat 
+###  Repeat  Panel
 ```
 Question #1: Avoiding Long and Repetitive SQL Queries
 To avoid typing 12 very similar but long SQL queries, you can use Grafana's built-in support for templating and dynamic queries.
@@ -34,7 +34,49 @@ If you have exactly 12 months and you want to display all of them without asking
 With the "Repeat Panels" feature, you can achieve your goal of displaying data for all 12 months simultaneously without redundant dropdown selections.
 
 ```
+### Deploy to another machine:
 
+```
+Deploying a Grafana dashboard from one machine to another typically involves exporting the dashboard configuration and then importing it on the target machine.
+Here are the general steps to achieve this:
+
+Export the Dashboard:
+
+Open the Grafana Dashboard: Make sure you are logged in to the Grafana instance where your dashboard is located.
+
+Select the Dashboard: Click on the dashboard you want to export to select it.
+
+Export the Dashboard JSON: To export the dashboard configuration, click on the gear icon (⚙️) in the top right corner of the dashboard, then select "Export."
+
+Save the JSON File: This will generate a JSON file containing your dashboard configuration. Save this file to your local machine.
+
+Transfer the Dashboard JSON File:
+
+Copy the exported JSON file to the target machine where you want to deploy the dashboard. You can use methods such as SCP, SFTP,
+or any file-sharing mechanism to transfer the file to the target machine.
+
+Import the Dashboard:
+
+Open Grafana on the Target Machine: Make sure you are logged in to the Grafana instance on the target machine.
+
+Access the Dashboard Section: In Grafana, go to the "Dashboards" section.
+
+Import the Dashboard: Click the "Import" button to open the import dashboard dialog.
+
+Upload the JSON File: In the import dashboard dialog, you can either paste the JSON content or upload the JSON file you exported earlier.
+To upload the file, click "Upload JSON File" and select the file from your local machine.
+
+Import the Dashboard: After uploading the JSON file, click the "Load" button. Grafana will parse the JSON file and display a preview of the dashboard.
+
+Configure the Import Settings: Review and configure the import settings as needed. You may need to map data sources, variables, or other settings to match your target Grafana instance.
+
+Import the Dashboard: Once you are satisfied with the import settings, click the "Import" button to create the dashboard on the target machine.
+
+Your dashboard should now be available and accessible on the target machine's Grafana instance with all its panels and settings intact.
+
+Keep in mind that the target machine should have the necessary data sources and configurations set up to ensure the dashboard functions correctly.
+If there are any differences in data sources or environment settings between the two machines, you may need to adjust the dashboard configuration accordingly.
+```
 
 ### Grafana Plugins
 
