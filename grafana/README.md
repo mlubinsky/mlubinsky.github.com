@@ -4,6 +4,7 @@ Grafana date/time picker: press Ctrl button to set the range
 ###  Repeat  Panel
 ```
 Question #1: Avoiding Long and Repetitive SQL Queries
+--------------------------------------
 To avoid typing 12 very similar but long SQL queries, you can use Grafana's built-in support for templating and dynamic queries.
 Grafana allows you to create dynamic dashboards using variables. Here's how you can achieve this:
 
@@ -29,7 +30,11 @@ Grafana will automatically create 12 panels, one for each month, and apply the a
 This approach significantly reduces the need for repetitive SQL queries and allows you to manage all 12 panels efficiently.
 
 Question #2: Avoiding Dropdown Selection for All 12 Months
-If you have exactly 12 months and you want to display all of them without asking the user to select them via a dropdown list, you can use the "Repeat Panels" feature as mentioned above. This will automatically create and display all 12 panels, each filtered for a different month, without requiring user interaction.
+---------------------
+If you have exactly 12 months and you want to display all of them without asking the user to select them via a dropdown list,
+you can use the "Repeat Panels" feature as mentioned above. This will automatically create and display all 12 panels,
+each filtered for a different month,
+without requiring user interaction.
 
 With the "Repeat Panels" feature, you can achieve your goal of displaying data for all 12 months simultaneously without redundant dropdown selections.
 
@@ -37,11 +42,12 @@ With the "Repeat Panels" feature, you can achieve your goal of displaying data f
 ### Deploy to another machine:
 
 ```
-Deploying a Grafana dashboard from one machine to another typically involves exporting the dashboard configuration and then importing it on the target machine.
+Deploying a Grafana dashboard from one machine to another typically involves exporting the dashboard configuration a
+nd then importing it on the target machine.
 Here are the general steps to achieve this:
 
 Export the Dashboard:
-
+--------------------
 Open the Grafana Dashboard: Make sure you are logged in to the Grafana instance where your dashboard is located.
 
 Select the Dashboard: Click on the dashboard you want to export to select it.
@@ -56,7 +62,7 @@ Copy the exported JSON file to the target machine where you want to deploy the d
 or any file-sharing mechanism to transfer the file to the target machine.
 
 Import the Dashboard:
-
+---------------------
 Open Grafana on the Target Machine: Make sure you are logged in to the Grafana instance on the target machine.
 
 Access the Dashboard Section: In Grafana, go to the "Dashboards" section.
@@ -67,7 +73,7 @@ Upload the JSON File: In the import dashboard dialog, you can either paste the J
 To upload the file, click "Upload JSON File" and select the file from your local machine.
 
 Import the Dashboard: After uploading the JSON file, click the "Load" button. Grafana will parse the JSON file and display a preview of the dashboard.
-
+----------------------------------------------------------------------------
 Configure the Import Settings: Review and configure the import settings as needed. You may need to map data sources, variables, or other settings to match your target Grafana instance.
 
 Import the Dashboard: Once you are satisfied with the import settings, click the "Import" button to create the dashboard on the target machine.
