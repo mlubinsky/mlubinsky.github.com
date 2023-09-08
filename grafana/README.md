@@ -82,7 +82,10 @@ Similarly, edit the right panel and enable the "Repeat" checkbox with the same "
 Now, when you enable "Repeat Panels" for both the left and right panels using the same template variable, Grafana will automatically create pairs of panels for all 12 months. You'll have pairs of bar charts and tables, with each pair representing a different month. The right table panel in each pair will use the same month selected in the corresponding left bar chart panel.
 
 This approach allows you to efficiently create and manage pairs of panels for all 12 months without manually duplicating them.
-Users can switch between months using the template variable, and both panels in each pair will update accordingly.
+
+If you have set up your Grafana dashboard to use the "Repeat Panels" feature with a template variable for months and you've configured it to display all 12 months simultaneously, Grafana will not show a dropdown list with template variable values on top of the dashboard. The dropdown list is typically used when you want users to select a specific value from the variable, but in this case, the dashboard will automatically display all 12 panels corresponding to the 12 months without requiring user interaction.
+
+When you enable the "Repeat Panels" feature and use a template variable, Grafana will generate the panels for each value of the variable (in your case, each month) and display them side by side on the dashboard without the need for a dropdown selection. Users will see all the data for all 12 months at once.  
 
 
 ```
