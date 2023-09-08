@@ -57,7 +57,32 @@ It's especially useful when you have a dashboard with many panels, each represen
 
 
 
+you have pairs of panels for each month, with a bar chart on the left and a table on the right, and the table uses the data from the left panel.
+If you want to create similar pairs of panels for all 12 months efficiently, you can still use Grafana's "Repeat Panels" feature along with template variables. Here's how you can achieve this:
 
+Create a Template Variable for Month:
+
+Create a template variable named "Month" as previously described.
+Create Your Left Panel (Bar Chart):
+
+Create the left panel (bar chart) as you normally would, using the "Month" template variable in your SQL queries to filter data for the selected month.
+Create Your Right Panel (Table):
+
+Create the right panel (table) next to the left panel.
+In the SQL query for the right panel, use the "Month" template variable as a filter, just like in the left panel.
+Since the right panel is designed to use the same month as the left panel, you can use the same "Month" template variable.
+Enable "Repeat Panels" for Both Panels:
+
+Edit the left panel, and in the "Panel Title" section, click the "Repeat" checkbox.
+
+Select the "Month" template variable from the dropdown.
+
+Similarly, edit the right panel and enable the "Repeat" checkbox with the same "Month" template variable.
+
+Now, when you enable "Repeat Panels" for both the left and right panels using the same template variable, Grafana will automatically create pairs of panels for all 12 months. You'll have pairs of bar charts and tables, with each pair representing a different month. The right table panel in each pair will use the same month selected in the corresponding left bar chart panel.
+
+This approach allows you to efficiently create and manage pairs of panels for all 12 months without manually duplicating them.
+Users can switch between months using the template variable, and both panels in each pair will update accordingly.
 
 
 ```
