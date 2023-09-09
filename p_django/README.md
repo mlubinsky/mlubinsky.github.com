@@ -4,6 +4,10 @@ https://github.com/gradio-app/gradio
 
 Reflex: https://github.com/reflex-dev/reflex
 
+https://nitro.h2o.ai/ 
+
+https://wave.h2o.ai/
+
 https://www.reddit.com/r/Python/comments/16apdp9/writing_productionready_web_apps_from_python/
 
 
