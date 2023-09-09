@@ -12,6 +12,8 @@ https://habr.com/ru/companies/vk/articles/741702/  Data Formats (avro, etc)
 
 ### Diagrams builders 
 
+https://habr.com/ru/articles/759820/
+
 https://kroki.io/
 
 https://pikchr.org/home/doc/trunk/homepage.md
