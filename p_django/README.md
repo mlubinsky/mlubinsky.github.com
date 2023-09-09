@@ -2,6 +2,10 @@ https://github.com/causalens/dara
 
 https://github.com/gradio-app/gradio
 
+Reflex: https://github.com/reflex-dev/reflex
+
+https://www.reddit.com/r/Python/comments/16apdp9/writing_productionready_web_apps_from_python/
+
 
 ### Voilà turns Jupyter notebooks into standalone web applications
 
