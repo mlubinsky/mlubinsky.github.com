@@ -1,3 +1,9 @@
+
+## Comp physics 
+
+https://github.com/mlubinsky/mlubinsky.github.com/tree/master/p_comp_science
+
+
 ## Kuramoto
 
  https://github.com/fabridamicelli/kuramoto
