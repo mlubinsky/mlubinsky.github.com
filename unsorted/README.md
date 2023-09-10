@@ -7,6 +7,10 @@ The most counterintuitive facts in all of mathematics, computer science, and phy
 
 https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
 
+https://news.ycombinator.com/item?id=28764416
+
+### GetPocket
+
  getpocket.com.  
  User : vantive98
 
