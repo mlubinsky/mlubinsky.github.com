@@ -1,8 +1,9 @@
 
-## Comp physics 
+## Physics with functional programming
 
 https://github.com/mlubinsky/mlubinsky.github.com/tree/master/p_comp_science
 
+https://news.ycombinator.com/item?id=37391161
 
 ## Kuramoto
 
