@@ -3,6 +3,10 @@
 
 http://bactra.org/ Cosma's Home Page
 
+The most counterintuitive facts in all of mathematics, computer science, and physics
+
+https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
+
  getpocket.com.  
  User : vantive98
 
