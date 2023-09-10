@@ -1,4 +1,6 @@
-[https://github.com/mlubinsky/mlubinsky.github.com/tree/master/grafana](https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features/)
+https://grafana.com/blog/2023/06/13/grafana-10-release-all-the-new-features-to-know/
+ 
+https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features/
 
 
 Grafana date/time picker: press Ctrl button to set the range
@@ -37,6 +39,8 @@ Grafana allows you to create dynamic dashboards using variables. Here's how you 
 Create a Template Variable for Month:
 
 Create a template variable named "Month" as previously described.
+activate SHOW ALL
+
 Modify Your SQL Queries:
 
 In your SQL queries for each panel, you can use the template variable like this:
