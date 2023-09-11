@@ -4,6 +4,8 @@ https://github.com/gto76/python-cheatsheet
 
 https://wiki.python.org/moin/TimeComplexity
 
+https://pydoit.org/
+
 https://www.bitecode.dev/p/you-are-comfy-with-python-basics
 
 https://lobste.rs/s/sns4mr/comfy_with_python_basic_tooling_now_what
