@@ -4,6 +4,10 @@ https://github.com/gto76/python-cheatsheet
 
 https://wiki.python.org/moin/TimeComplexity
 
+https://www.bitecode.dev/p/you-are-comfy-with-python-basics
+
+https://lobste.rs/s/sns4mr/comfy_with_python_basic_tooling_now_what
+
 ```
 An object’s identity is a unique identifier that distinguishes it from other objects. 
 ou can use the built-in id() function to get the identity of any Python object.
