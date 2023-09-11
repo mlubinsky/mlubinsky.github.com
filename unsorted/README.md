@@ -14,6 +14,11 @@ https://news.ycombinator.com/item?id=28764416
  getpocket.com.  
  User : vantive98
 
+### The Base16, Base32, and Base64 Data Encodings
+https://datatracker.ietf.org/doc/html/rfc4648
+
+
+
 ### Blogging platform:
 https://writefreely.org/
 
