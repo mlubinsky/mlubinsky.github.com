@@ -4,7 +4,16 @@ https://github.com/gto76/python-cheatsheet
 
 https://wiki.python.org/moin/TimeComplexity
 
+
+#### Task runners
+
+https://just.systems/man/en/chapter_1.html
+
+https://taskfile.dev/
+
 https://pydoit.org/
+
+https://github.com/TekWizely/run
 
 https://www.bitecode.dev/p/you-are-comfy-with-python-basics
 
