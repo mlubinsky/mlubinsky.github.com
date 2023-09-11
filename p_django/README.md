@@ -2,6 +2,8 @@ https://github.com/causalens/dara
 
 https://github.com/gradio-app/gradio
 
+https://github.com/streamsync-cloud/streamsync
+
 Reflex: https://github.com/reflex-dev/reflex
 
 https://nitro.h2o.ai/ 
