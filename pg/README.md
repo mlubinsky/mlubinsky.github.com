@@ -8,7 +8,8 @@ https://avestura.dev/blog/explaining-the-postgres-meme
 ### PG function
 ```
 CREATE OR REPLACE FUNCTION get_descriptions(category text, metric text = NULL, start_date DATE = NULL, end_date DATE = NULL)
- returns setof varchar(255)
+-- returns setof varchar(255)
+  returns setof kpi.description%TYPE
 as $func$
 DECLARE
  sql text := ' select distinct description from kpi where kpi_category = $1'; 
@@ -19,7 +20,7 @@ BEGIN
 	RETURN QUERY EXECUTE sql using category, metric, start_date, end_date;
  
 END;
-$func$ language plpgsql;
+$func$ language plpgsql IMMUTABLE;
 
 SELECT get_descriptions('Driving_HighSpeed-Dongtan', 'Percentage_SpecIn_Speed(20Km/h)', '2022-01-01','2023-12-30')
 ```
