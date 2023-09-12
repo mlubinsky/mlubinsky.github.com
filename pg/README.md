@@ -1,11 +1,29 @@
 Postgre vs MySQL 
 https://www.bytebase.com/blog/postgres-vs-mysql/
 
-Postgress deep dive:
+### Postgress deep dive:
 
 https://avestura.dev/blog/explaining-the-postgres-meme
 
-### How do I get a list of column names from a psycopg2 cursor
+### PG function
+```
+CREATE OR REPLACE FUNCTION get_descriptions(category text, metric text = NULL, start_date DATE = NULL, end_date DATE = NULL)
+ returns setof varchar(255)
+as $func$
+DECLARE
+ sql text := ' select distinct description from kpi where kpi_category = $1'; 
+BEGIN
+	sql := sql || ' AND kpi_metric =   $2 ';
+ 	sql := sql || ' AND report_date >= $3 '; 
+ 	sql := sql || ' AND report_date <= $4 ';
+	RETURN QUERY EXECUTE sql using category, metric, start_date, end_date;
+ 
+END;
+$func$ language plpgsql;
+
+SELECT get_descriptions('Driving_HighSpeed-Dongtan', 'Percentage_SpecIn_Speed(20Km/h)', '2022-01-01','2023-12-30')
+```
+### How do I get a list of column names from a psycopg2 cursor ?
 
 https://stackoverflow.com/questions/10252247/how-do-i-get-a-list-of-column-names-from-a-psycopg2-cursor
 ```
