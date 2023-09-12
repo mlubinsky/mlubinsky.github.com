@@ -23,6 +23,58 @@ END;
 $func$ language plpgsql IMMUTABLE;
 
 SELECT get_descriptions('Driving_HighSpeed-Dongtan', 'Percentage_SpecIn_Speed(20Km/h)', '2022-01-01','2023-12-30')
+
+
+
+create or replace function max_metrics(category text, metric text = NULL, start_date DATE = NULL, end_date DATE = NULL)
+returns text
+as $func$
+declare
+    kpi_source text :='MX'; -- TODO
+    sql text := 'select distinct description from kpi where';
+    result text := 'select report_date';
+    description kpi.description%type;
+--    all_desc setof text;
+    all_desc varchar(50)[];
+begin
+--	sql := sql || ' kpi_category = $1 ';
+    sql := sql || ' kpi_category = ' || quote_literal(category) ;
+	sql := sql || ' AND kpi_source = '  || quote_literal(kpi_source); --  $2 '; -- MX OR Internal
+--	sql := sql || ' AND kpi_metric =   $2 ';
+    sql := sql || ' AND kpi_metric = '   || quote_literal(metric) ;
+ 	sql := sql || ' AND report_date >= ' ||  quote_literal(start_date) ; 
+ 	sql := sql || ' AND report_date <= ' ||  quote_literal(end_date) ;
+    sql := sql || ' ORDER BY description ';
+ 
+   
+    --execute sql into all_desc;
+    -- for description in all_desc
+    for description in execute sql
+--    loop
+--    	raise notice '%' , description;
+--    end loop
+--    
+--    for description in select * from exec(sql)  -- using category, metric, start_date, end_date
+    loop
+	     result := result || ', ';
+    	 result := result || 'max(kpi_value) filter(where description=' || quote_literal(description)  || ') as ' || quote_ident(description);
+    end loop;
+   
+    result := result || ' from kpi where kpi_source = ' || quote_literal(kpi_source) ;
+    result := result || ' and kpi_category = '          || quote_literal(category)   ;
+    result := result || ' and kpi_metric='              || quote_literal(metric)    ;
+    result := result || ' and report_date >= '          || quote_literal(start_date) ; 
+    result := result || ' and report_date <= '          || quote_literal(end_date)   ; 
+    result := result || ' group by  report_date order by report_date asc';
+
+    return result;
+end
+$func$ language plpgsql IMMUTABLE;
+
+-------------------------------
+ SELECT max_metrics('Driving_HighSpeed-Dongtan', 'Percentage_SpecIn_Speed(20Km/h)', '2022-01-01','2023-12-30')
+
+
 ```
 ### How do I get a list of column names from a psycopg2 cursor ?
 
