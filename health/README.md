@@ -506,6 +506,8 @@ Kрасный болгарский перец.  обладает сладким 
 
 ## давление
 
+https://news.ycombinator.com/item?id=37471354
+
 https://www.youtube.com/watch?v=erCh52eJmRs . доктор Евдокименко
 
 
