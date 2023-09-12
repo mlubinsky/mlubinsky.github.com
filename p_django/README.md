@@ -78,6 +78,12 @@ https://www.softwaretestinghelp.com/flask-design-patterns-for-web-applications/
 
 ## Django
 
+https://news.ycombinator.com/item?id=37482220
+
+https://til.simonwillison.net/django/building-a-blog-in-django
+
+https://wagtail.org/
+
 https://pybit.es/articles/django-plugin-recommendations-by-antonio-mele-top-10-picks-for-web-development/
 
 https://docs.djangoproject.com/en/4.1/intro/tutorial01/
