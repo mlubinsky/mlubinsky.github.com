@@ -5,8 +5,17 @@ https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features
 
 Grafana date/time picker: press Ctrl button to set the range
 
+### Formatting dates
 
-###
+File: defaults.ini 
+```
+[date_formats]
+# For information on what formatting patterns that are supported https://momentjs.com/docs/#/displaying/
+
+# Default system date format used in time range picker and other places where full time is displayed
+full_date = YYYY-MM-DD HH:mm:ss
+```
+### ChatGPT
 
 ```
 
