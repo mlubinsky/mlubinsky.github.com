@@ -75,6 +75,63 @@ $func$ language plpgsql IMMUTABLE;
  SELECT max_metrics('Driving_HighSpeed-Dongtan', 'Percentage_SpecIn_Speed(20Km/h)', '2022-01-01','2023-12-30')
 
 
+
+There is a table with following columns:
+   product,  vendor, date, price
+ 
+I have to build an interactive report/dashboard (using Grafana).
+to show 
+max(price) per product  for every date within the user-provided interval.
+ 
+So  SQL will look like 
+
+SELECT date,
+   max(price) filer(where product)='A') as A,
+  max(price)  filer(where product)='B') as B,
+  max(price)  filer(where product)='C') as C,
+  ...
+FROM T
+where  
+  date  BETWEEN $start_date and $end_date
+group by date
+
+The problem is that the product list is not fixed and cannot be hardcoded in SQL
+It means that in SQL above the number of columns in SELECT list is not fixed.
+
+To solve it I tried to build the dynamic SQL string inside Postgres.
+As a first step I find out all products in given interval.
+Then I build the final SQL by looping over products.
+The issue is how to execute this SQL and return result to outsite wold?
+As far as I know the Postgres function  signature allows to specify returns type as a table   ,
+but in my case the number of columns in the table is defined dynamically, on fly
+
+create or replace function max_price_per_product(start_date DATE, end_date DATE)
+returns text
+as $func$
+declare
+  prod T.product%type;
+  prod_sql text;
+  final_sql text = 'select date';
+begin
+  prod_sql = 'SELECT DISTINCT product from T';
+  prod_sql := prod_sql || ' AND date >= ' ||  quote_literal(start_date);  
+  prod_sql := prod_sql || ' AND date <= ' ||  quote_literal(end_date);
+ 
+  for prod in execute prod_sql
+  LOOP
+     final_sql := final_sql || ', '
+     final_sql := final_sql || 'max(price) filter(where product=' || quote_literal(prod) || ' ) as ' || quote_ident(prod)
+  END LOOP;
+ 
+    final_sql := final_sql || ' from T ' ;
+    final_sql := final_sql || ' and date >= ' || quote_literal(start_date) ;
+    final_sql := final_sql || ' and date <= ' || quote_literal(end_date)   ;
+    final_sql := final_sql || ' group by  date order by  date asc';
+
+    return final_sql;
+end
+$func$ language plpgsql IMMUTABLE;
+But I do not know how to execute it 
 ```
 ### How do I get a list of column names from a psycopg2 cursor ?
 
