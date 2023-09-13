@@ -1,6 +1,13 @@
 Postgre vs MySQL 
 https://www.bytebase.com/blog/postgres-vs-mysql/
 
+
+### Postgres crosstab
+
+https://stackoverflow.com/questions/15506199/dynamic-alternative-to-pivot-with-case-and-group-by/15514334#15514334
+
+https://dba.stackexchange.com/questions/159280/how-do-i-generate-a-pivoted-cross-join-where-the-resulting-table-definition-is-u/159286#159286
+
 ### Postgress deep dive:
 
 https://avestura.dev/blog/explaining-the-postgres-meme
