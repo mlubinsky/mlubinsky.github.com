@@ -2,8 +2,12 @@ https://grafana.com/blog/2023/06/13/grafana-10-release-all-the-new-features-to-k
  
 https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features/
 
+### Color mapping
 
-Grafana date/time picker: press Ctrl button to set the range
+Bar chart -> override -> fields with name -> In dropdown select description -> value mapping
+
+### Grafana date/time picker: 
+press Ctrl button to set the range
 
 ### Formatting dates
 
