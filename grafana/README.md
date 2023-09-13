@@ -6,6 +6,46 @@ https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features
 Grafana date/time picker: press Ctrl button to set the range
 
 
+###
+
+```
+
+SELECT product,
+       date,
+       MAX(price) AS max_price
+FROM T
+WHERE date BETWEEN :start_date AND :end_date
+GROUP BY product, date
+
+Create a Grafana Panel:
+
+Open your Grafana dashboard and create a new panel.
+Choose "Table" as the visualization type for now. We'll change it to a bar chart later.
+Configure the Data Source:
+
+In the "Query" section of your panel, select your PostgreSQL data source.
+Write the SQL query that retrieves the data as discussed earlier, including product, date, and MAX(price).
+Use $start and $end as variables for the user-provided date range (replace these variables with the appropriate syntax if your Grafana version uses different placeholders).
+Convert to a Bar Chart:
+
+After configuring the data source query, change the visualization type from "Table" to "Graph."
+Configure the x-axis and y-axis settings:
+For the x-axis, select the date field.
+For the y-axis, select the max_price field.
+Set the "Mode" to "Bars."
+Choose "product" for "Group by."
+Customize the Chart:
+
+Customize the appearance of the chart as desired, including labels, axis names, and legends.
+Time Range Picker:
+
+Make sure your Grafana dashboard has a time range picker that allows users to select the date range. This ensures that the $start and $end variables are populated correctly.
+Save and View:
+
+Save your panel and view it on your dashboard. Users can now select a date range using the time range picker, and the bar chart will display the maximum price per product for each date within the selected range.
+By following these steps, you can create a Grafana bar chart that visualizes the maximum price per product for each date within a user-provided date range.
+
+```
 ### Consistent Colors
 
 ```
