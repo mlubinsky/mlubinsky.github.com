@@ -4,6 +4,8 @@ https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features
 
 https://community.grafana.com/t/bar-char-based-on-sql-with-2-items-in-group-by/103510
 
+https://stackoverflow.com/questions/77100024/grafana-bar-chart-based-on-sql-with-2-items-in-group-by
+
 ### Color mapping
 
 Bar chart -> Overrides -> fields with name -> In dropdown select description -> value mapping
