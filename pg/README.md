@@ -4,6 +4,24 @@ https://www.bytebase.com/blog/postgres-vs-mysql/
 
 ### Postgres crosstab
 
+```
+CREATE EXTENSION tablefunc;
+select * from T;
+
+CREATE TEMP TABLE T (dt DATE, name text, value float);
+insert into T values ('2023-01-01', 'A', 100.0);
+insert into T values ('2023-01-01', 'B', 200.0);
+insert into T values ('2023-01-01', 'C', 300.0);
+
+select * from crosstab( 'select dt, name, value from T order by 1,2')
+as ct (dt DATE, val1 float, val2 float, val3 float);
+
+|dt        |val1|val2|val3|
+|----------|----|----|----|
+|2023-01-01|100 |200 |300 |
+
+```
+
 https://stackoverflow.com/questions/15506199/dynamic-alternative-to-pivot-with-case-and-group-by/15514334#15514334
 
 https://dba.stackexchange.com/questions/159280/how-do-i-generate-a-pivoted-cross-join-where-the-resulting-table-definition-is-u/159286#159286
