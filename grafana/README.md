@@ -29,7 +29,10 @@ Use $start and $end as variables for the user-provided date range (replace these
 Convert to a Bar Chart:
 
 After configuring the data source query, change the visualization type from "Table" to "Graph."
-Configure the x-axis and y-axis settings:
+
+```
+#### Configure the x-axis and y-axis settings:
+```
 For the x-axis, select the date field.
 For the y-axis, select the max_price field.
 Set the "Mode" to "Bars."
@@ -37,12 +40,21 @@ Choose "product" for "Group by."
 Customize the Chart:
 
 Customize the appearance of the chart as desired, including labels, axis names, and legends.
+```
+#### Set Label Names (Alias By):
+```
+Scroll down to the "Legend" section of the panel settings.
+In the "Alias By" field, you can specify how you want to label the bars on the x-axis. You can use template variables to dynamically generate the labels.
+To label the bars by the product field, simply enter $product in the "Alias By" field. This will use the product values as the labels for the bars.
+Customize the Chart:
+
 Time Range Picker:
 
 Make sure your Grafana dashboard has a time range picker that allows users to select the date range. This ensures that the $start and $end variables are populated correctly.
 Save and View:
 
-Save your panel and view it on your dashboard. Users can now select a date range using the time range picker, and the bar chart will display the maximum price per product for each date within the selected range.
+Save your panel and view it on your dashboard. Users can now select a date range using the time range picker,
+ and the bar chart will display the maximum price per product for each date within the selected range.
 By following these steps, you can create a Grafana bar chart that visualizes the maximum price per product for each date within a user-provided date range.
 
 ```
