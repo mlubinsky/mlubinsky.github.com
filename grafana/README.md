@@ -4,7 +4,7 @@ https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features
 
 ### Color mapping
 
-Bar chart -> override -> fields with name -> In dropdown select description -> value mapping
+Bar chart -> Overrides -> fields with name -> In dropdown select description -> value mapping
 
 ### Grafana date/time picker: 
 press Ctrl button to set the range
