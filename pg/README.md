@@ -1,6 +1,8 @@
 Postgre vs MySQL 
 https://www.bytebase.com/blog/postgres-vs-mysql/
 
+https://stackoverflow.com/questions/11740256/refactor-a-pl-pgsql-function-to-return-the-output-of-various-select-queries/11751557#11751557
+
 
 ### Postgres crosstab
 
