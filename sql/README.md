@@ -1,6 +1,10 @@
-Database diagrams
+### Database diagrams
+
+https://wisser.github.io/Jailer/
+
 https://news.ycombinator.com/item?id=36243926
 
+### mmm
 https://medium.com/towards-data-engineering/most-asked-complex-sql-queries-in-data-engineering-interviews-9fde381d23f8
 
 https://sqlfordevs.com/ebook
