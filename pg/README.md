@@ -20,6 +20,13 @@ as ct (dt DATE, val1 float, val2 float, val3 float);
 |----------|----|----|----|
 |2023-01-01|100 |200 |300 |
 
+
+select * from crosstab4( 'select dt::text, name, value::text from T order by 1,2');
+
+|row_name  |category_1|category_2|category_3|category_4|
+|----------|----------|----------|----------|----------|
+|2023-01-01|100       |200       |300       |          |
+
 ```
 
 https://stackoverflow.com/questions/15506199/dynamic-alternative-to-pivot-with-case-and-group-by/15514334#15514334
