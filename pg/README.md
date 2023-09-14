@@ -2,6 +2,27 @@ Postgre vs MySQL
 https://www.bytebase.com/blog/postgres-vs-mysql/
 
 ### EXECUTE format
+
+https://www.postgresql.org/docs/current/plpgsql-statements.html
+
+https://www.postgresql.org/docs/current/functions-string.html#FUNCTIONS-STRING-FORMAT
+
+EXECUTE command-string [ INTO [STRICT] target ] [ USING expression [, ... ] ];
+
+```
+   EXECUTE 'SELECT count(*) FROM mytable WHERE inserted_by = $1 AND inserted <= $2'
+   INTO c
+   USING checked_user, checked_date;
+
+
+   EXECUTE format('SELECT count(*) FROM %I '
+   'WHERE inserted_by = $1 AND inserted <= $2', tabname)
+   INTO c
+   USING checked_user, checked_date;
+```
+
+
+
 https://stackoverflow.com/questions/11740256/refactor-a-pl-pgsql-function-to-return-the-output-of-various-select-queries/11751557#11751557
 
 
