@@ -32,6 +32,14 @@ Applications of Quantum Physics: From Medicine to Technology
 Video: https://www.youtube.com/watch?v=KkI5li5J5Po
 ```
 
+Hilbert Space
+https://news.ycombinator.com/item?id=37524169
+
+https://www.cphysics.org/
+ 
+
+
+
 ### QFT Квантовая теория поля 2022-2023
 
 https://sites.google.com/view/qft2023/
