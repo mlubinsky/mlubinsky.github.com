@@ -2,7 +2,13 @@ VSCode extension for SQLite
 
 https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer
 
-
+# Download file, unzip, load to sqlite and run SQL 
+```
+curl -s https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip \
+| gunzip \
+| sqlite3 -csv ':memory:' '.import /dev/stdin stdin' \
+  "select Date from stdin order by USD asc limit 1;"
+```
 
 https://architecturenotes.co/datasette-simon-willison/
 
