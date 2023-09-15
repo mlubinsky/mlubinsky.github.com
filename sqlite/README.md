@@ -10,6 +10,27 @@ curl -s https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip \
   "select Date from stdin order by USD asc limit 1;"
 ```
 
+
+### Conversion from wide format to long format
+
+https://csvbase.com/blog/5
+
+"Wide:  format example: colunms are, date, list of currencies
+
+Date,USD,JPY,BGN,CYP,CZK,DKK,EEK,GBP,HUF,LTL,LVL,MTL,[and on, and on]
+
+"Long" format: just 3 columns like this:
+
+Date,Currency,Rate
+
+Converting from wide to long format is "meld" operation
+```
+curl -s https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip | \
+gunzip | \
+python3 -c 'import sys, pandas as pd
+pd.read_csv(sys.stdin).melt("Date").to_csv(sys.stdout, index=False)'
+```
+
 https://architecturenotes.co/datasette-simon-willison/
 
 https://habr.com/ru/post/687994/
