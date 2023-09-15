@@ -137,7 +137,7 @@ print(notmain)
 print(notmain.x)
 ```
 
-### functols module
+### functools module
 
 https://florian-dahlitz.de/articles/introduction-to-pythons-functools-module
 ```
@@ -400,6 +400,9 @@ https://pythonspeed.com/
 https://coderslegacy.com/cython-vs-cpython-comparing-speed/  Cython
 
 ### Multiprocessing 
+
+https://www.bitecode.dev/p/the-easy-way-to-concurrency-and-parallelism
+
 https://news.ycombinator.com/item?id=37089817
 
 https://milliams.com/courses/parallel_python/
