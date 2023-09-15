@@ -2,6 +2,8 @@ https://the-algorithms.com/
 
 https://habr.com/ru/articles/743800/  Bloom Filter,  Count-Min Sketch, HyperLogLog
 
+https://codeconfessions.substack.com/p/cpython-bloom-filter-usage
+
 https://github.com/GauravWalia19/Free-Algorithms-Books/blob/master/Library/Python.md
 
 https://habr.com/ru/post/686806/ ML + information theory 1
