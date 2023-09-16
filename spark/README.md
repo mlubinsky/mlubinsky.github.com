@@ -1318,7 +1318,9 @@ repartition - full shuffle to evenly distribute data
 Basic Transformations are - map and filter. After the transformation, the resultant RDD is always different from its parent RDD.
 It can be smaller (e.g. filter, count, distinct, sample), bigger (e.g. flatMap(), union(), Cartesian()) or the same size (e.g. map).
 
+### Wide vs narrow tranformations
 
+https://blog.devgenius.io/unleashing-the-power-of-apache-spark-narrow-and-wide-transformations-in-action-4c2483480c4a 
 
 #### Narrow dependency : 
 RDD operations like map(), union(), filter() can operate on a single partition and map the data of that partition to the resulting single partition. These kinds of operations that map data from one to one partition are referred to as Narrow operations. 
