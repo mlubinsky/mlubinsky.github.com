@@ -1,4 +1,8 @@
-https://habr.com/ru/articles/761464/ High Load architecture
+### High Load real time architecture
+
+https://habr.com/ru/articles/761464/ 
+
+https://www.kdnuggets.com/how-to-digest-15-billion-logs-per-day-and-keep-big-queries-within-1-second
 
 ### API book:
 
