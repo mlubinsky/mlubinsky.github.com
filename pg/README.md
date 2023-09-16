@@ -31,6 +31,8 @@ https://stackoverflow.com/questions/11740256/refactor-a-pl-pgsql-function-to-ret
 
 https://www.enterprisedb.com/postgres-tutorials/how-run-hierarchical-queries-oracle-and-postgresql
 
+https://www.mendelowski.com/docs/postgresql/recursive-sql-queries/
+
 ```
 WITH RECURSIVE cte AS (                                                                                                                                                          
 SELECT emp_no, ename, manager_no, 1 AS level                                                                                                                                             FROM   dummy_table                                                                                                                                                                     
