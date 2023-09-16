@@ -25,6 +25,22 @@ EXECUTE command-string [ INTO [STRICT] target ] [ USING expression [, ... ] ];
 
 https://stackoverflow.com/questions/11740256/refactor-a-pl-pgsql-function-to-return-the-output-of-various-select-queries/11751557#11751557
 
+### Recursive SQL
+
+https://www.enterprisedb.com/postgres-tutorials/how-run-hierarchical-queries-oracle-and-postgresql
+
+```
+WITH RECURSIVE cte AS (                                                                                                                                                          
+SELECT emp_no, ename, manager_no, 1 AS level                                                                                                                                             FROM   dummy_table                                                                                                                                                                     
+where manager_no is null                                                                                                                                                            
+UNION  ALL                                                                                                                                                                               
+SELECT e.emp_no, e.ename, e.manager_no, c.level + 1                                                                                                                                      FROM   cte c                                                                                                                                                                            
+JOIN   dummy_table e ON e.manager_no = c.emp_no                                                                                  
+)                                                                                                                                                                                     
+SELECT *                                                                                                                                                                                 
+FROM   cte;
+```
+
 
 ### Postgres crosstab
 https://learnsql.com/blog/creating-pivot-tables-in-postgresql-using-the-crosstab-function/
