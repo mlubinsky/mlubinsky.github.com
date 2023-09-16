@@ -29,6 +29,10 @@ https://stackoverflow.com/questions/11740256/refactor-a-pl-pgsql-function-to-ret
 
 ### Recursive SQL
 
+A Different Type of SQL Recursion with PostgreSQL
+
+https://github.com/vb-consulting/blog/discussions/1
+
 https://indrajith.me/posts/recursive-queries-in-postgresql-for-hierarchial-data/
 
 https://www.enterprisedb.com/postgres-tutorials/how-run-hierarchical-queries-oracle-and-postgresql
