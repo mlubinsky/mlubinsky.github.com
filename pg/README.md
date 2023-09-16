@@ -43,7 +43,10 @@ FROM   cte;
 
 
 ### Postgres crosstab
+
 https://learnsql.com/blog/creating-pivot-tables-in-postgresql-using-the-crosstab-function/
+
+https://www.postgresonline.com/article_pfriendly/283.html
 
 https://www.postgresql.org/docs/current/tablefunc.html
 ```
