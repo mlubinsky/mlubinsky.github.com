@@ -34,6 +34,16 @@ df = df.dropna()
 df.pandas_api().isna().sum()
 ```
 
+### groupByKey() reduceByKey() aggregateByKey()
+```
+groupByKey() is just to group your dataset based on a key. It will result in data shuffling when RDD is not already partitioned.
+
+reduceByKey() is something like grouping + aggregation. We can say reduceByKey() equivalent to dataset.group(...).reduce(...). It will shuffle less data unlike groupByKey().
+
+aggregateByKey() is logically same as reduceByKey() but it lets you return result in different type. In another words, it lets you have an input as type x and aggregate result as type y. For example (1,2),(1,4) as input and (1,"six") as output. It also takes zero-value that will be applied at the beginning of each key.
+Note: One similarity is they all are wide operations.
+```
+
 ### Spark SQL
 https://spark.apache.org/docs/latest/api/sql/index.html
 
