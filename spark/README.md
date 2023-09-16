@@ -35,6 +35,9 @@ df.pandas_api().isna().sum()
 ```
 
 ### groupByKey() reduceByKey() aggregateByKey()
+
+https://stackoverflow.com/questions/43364432/spark-difference-between-reducebykey-vs-groupbykey-vs-aggregatebykey-vs-combi
+
 ```
 groupByKey() is just to group your dataset based on a key. It will result in data shuffling when RDD is not already partitioned.
 
