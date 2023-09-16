@@ -1,3 +1,5 @@
+https://habr.com/ru/articles/761464/ High Load architecture
+
 ### API book:
 
 https://twirl.github.io/The-API-Book/index.ru.html
