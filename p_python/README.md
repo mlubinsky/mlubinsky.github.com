@@ -15,6 +15,8 @@ https://pydoit.org/
 
 https://github.com/TekWizely/run
 
+
+####
 https://www.bitecode.dev/p/you-are-comfy-with-python-basics
 
 https://lobste.rs/s/sns4mr/comfy_with_python_basic_tooling_now_what
@@ -583,6 +585,8 @@ sh  https://amoffat.github.io/sh/index.html https://amoffat.github.io/sh/section
 https://www.pyinvoke.org/
 
 ### 3rd party libs
+
+https://www.reddit.com/r/Python/comments/16j7pj5/what_python_libraries_programs_will_blow_peoples/
 
 https://www.youtube.com/watch?v=g_Q19NKPWR4
 
