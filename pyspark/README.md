@@ -1,3 +1,7 @@
+Implementing Pyspark Real Time Application || End-to-End Project 
+
+https://www.youtube.com/watch?v=wFOojyYvLRE
+
 ### Book
 
 https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
