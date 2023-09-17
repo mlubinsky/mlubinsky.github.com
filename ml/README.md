@@ -14,6 +14,8 @@ https://docs.profiling.ydata.ai/   Data quality for Pandas and Spark dataframes
 
 https://www.youtube.com/watch?v=6IGx7ZZdS74 Beginner Data Science Portfolio Project Walkthrough (Kaggle Titanic)
 
+https://medium.com/@techlatest.net/exploratory-data-analysis-with-python-jupyter-notebook-a-tutorial-on-how-to-perform-exploratory-5a800791b04f
+
 https://github.com/rougier/ML-Recipes
 
 ### Steven Brunton book and code 
