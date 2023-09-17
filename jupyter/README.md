@@ -1,5 +1,7 @@
 https://www.fast.ai/2022/07/28/nbdev-v2/
 
+https://docs.profiling.ydata.ai/   Data quality for Pandas??  Data quality profiling and exploratory data analysis a
+
 ### Git and Jupyter notebooks
 https://news.ycombinator.com/item?id=36629055
 https://www.reviewnb.com/git-jupyter-notebook-ultimate-guide
