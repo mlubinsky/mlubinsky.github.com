@@ -6,6 +6,13 @@ https://community.grafana.com/t/bar-char-based-on-sql-with-2-items-in-group-by/1
 
 https://stackoverflow.com/questions/77100024/grafana-bar-chart-based-on-sql-with-2-items-in-group-by
 
+
+### Mac
+
+brew install grafana
+
+brew services start grafana
+
 ### Color mapping
 
 Bar chart -> Overrides -> fields with name -> In dropdown select description -> value mapping
