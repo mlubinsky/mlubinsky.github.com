@@ -1,3 +1,4 @@
+https://medium.com/@techlatest.net/using-jupyter-notebook-with-big-data-a-guide-on-how-to-use-jupyter-notebook-with-big-data-f473af87185b
 
 ### How to share Jupyter notebook
 https://medium.com/@techlatest.net/sharing-jupyter-notebooks-a-blog-post-on-how-to-share-jupyter-notebooks-with-others-including-how-2f5632a54f2d
