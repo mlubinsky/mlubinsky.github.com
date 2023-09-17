@@ -586,6 +586,8 @@ https://www.pyinvoke.org/
 
 ### 3rd party libs
 
+https://pythonspeed.com/articles/faster-python-json-parsing/  Fast memory-efficient Python JSON parsing with msgspec
+
 https://www.reddit.com/r/Python/comments/16j7pj5/what_python_libraries_programs_will_blow_peoples/
 
 https://www.youtube.com/watch?v=g_Q19NKPWR4
