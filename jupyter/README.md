@@ -4,7 +4,7 @@ https://medium.com/@techlatest.net/sharing-jupyter-notebooks-a-blog-post-on-how-
 
 https://www.fast.ai/2022/07/28/nbdev-v2/
 
-
+###  Dataframe visualizer
 https://docs.profiling.ydata.ai/   Data quality   it supports both Pandas Dataframes and Spark Dataframes.
 
 ### Git and Jupyter notebooks
@@ -37,7 +37,7 @@ https://github.com/mwouts/jupytext  Notebook which works with regular .py files
 Как встроить блокнот Jupyter на любой сайт
 https://habr.com/ru/company/skillfactory/blog/659279/
 
-
+https://github.com/topics/big-data?l=jupyter+notebook
 
 Useful extension for Jupyter: hinterland
 
@@ -65,7 +65,8 @@ https://news.ycombinator.com/item?id=30589250
 
 https://github.com/machow/siuba
 
-
+###   Ibis   Python dataframe library
+https://ibis-project.org/
 
 ### NumPy
 
