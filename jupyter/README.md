@@ -50,11 +50,11 @@ def read_fast_csv(f):
 
 
 
-### Polars
-
-Lightning-fast DataFrame library for Rust and Python
+### Polars Lightning-fast DataFrame library for Rust and Python
 
 https://www.pola.rs/
+
+https://github.com/ddotta/awesome-polars
 
 https://news.ycombinator.com/item?id=30589250
 
