@@ -1,4 +1,9 @@
+
+### How to share Jupyter notebook
+https://medium.com/@techlatest.net/sharing-jupyter-notebooks-a-blog-post-on-how-to-share-jupyter-notebooks-with-others-including-how-2f5632a54f2d
+
 https://www.fast.ai/2022/07/28/nbdev-v2/
+
 
 https://docs.profiling.ydata.ai/   Data quality   it supports both Pandas Dataframes and Spark Dataframes.
 
