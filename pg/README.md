@@ -3,6 +3,8 @@ https://www.bytebase.com/blog/postgres-vs-mysql/
 
 https://www.reddit.com/r/PostgreSQL/
 
+https://planet.postgresql.org/
+
 https://www.postgresonline.com/
 
 ### EXECUTE format
