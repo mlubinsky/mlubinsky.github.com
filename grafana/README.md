@@ -9,9 +9,12 @@ https://stackoverflow.com/questions/77100024/grafana-bar-chart-based-on-sql-with
 
 ### Mac
 
+brew install postgresql@15
+
 brew install grafana
 
 brew services start grafana
+
 
 ### Color mapping
 
