@@ -9,7 +9,10 @@ https://www.youtube.com/playlist?list=PLnu7tVik2MzLUv0wrYiBHOwbf7QpcWlIr
 https://www.oreilly.com/library/view/machine-learning-with/9781098135713/  ML Cookbook, 2nd edition
 
 
-https://docs.profiling.ydata.ai/   Data quality for Pandas
+https://docs.profiling.ydata.ai/   Data quality for Pandas and Spark dataframes
+
+
+https://www.youtube.com/watch?v=6IGx7ZZdS74 Beginner Data Science Portfolio Project Walkthrough (Kaggle Titanic)
 
 https://github.com/rougier/ML-Recipes
 
