@@ -12,6 +12,8 @@ https://towardsdatascience.com/awesome-data-science-tools-to-master-in-2023-data
 
 https://www.bitrook.com/blog/exploratory-data-analysis-comparison
 
+https://pub.towardsai.net/5-python-packages-for-effortless-eda-94abddac3bc5
+
 
 ### Git and Jupyter notebooks
 https://news.ycombinator.com/item?id=36629055
