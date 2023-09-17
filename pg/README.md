@@ -1,6 +1,8 @@
 Postgre vs MySQL 
 https://www.bytebase.com/blog/postgres-vs-mysql/
 
+https://www.reddit.com/r/PostgreSQL/
+
 https://www.postgresonline.com/
 
 ### EXECUTE format
