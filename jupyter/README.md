@@ -8,6 +8,9 @@ https://www.fast.ai/2022/07/28/nbdev-v2/
 ###  Dataframe visualizer
 https://docs.profiling.ydata.ai/   Data quality   it supports both Pandas Dataframes and Spark Dataframes.
 
+https://www.bitrook.com/blog/exploratory-data-analysis-comparison
+
+
 ### Git and Jupyter notebooks
 https://news.ycombinator.com/item?id=36629055
 https://www.reviewnb.com/git-jupyter-notebook-ultimate-guide
