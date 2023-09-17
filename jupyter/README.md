@@ -8,6 +8,8 @@ https://www.fast.ai/2022/07/28/nbdev-v2/
 ###  Dataframe visualizer
 https://docs.profiling.ydata.ai/   Data quality   it supports both Pandas Dataframes and Spark Dataframes.
 
+https://towardsdatascience.com/awesome-data-science-tools-to-master-in-2023-data-profiling-edition-29d29310f779
+
 https://www.bitrook.com/blog/exploratory-data-analysis-comparison
 
 
