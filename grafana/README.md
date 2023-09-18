@@ -267,7 +267,10 @@ https://medium.com/grafana-tutorials/graphing-non-time-series-sql-data-in-grafan
 
 ### Transformation
 
-#### Preparing time series
+#### Transformation: Preparing time series
+For bar chart  grouping by date:
+Bat chart color scheme: Classic Palette
+
 Format: Multi-frame time series
 ```
 
@@ -281,7 +284,7 @@ order by report_date, description;
 
 ```
 
-#### Grouping to matrix (pivoting)
+#### Grouping to matrix (pivoting) - for Table Pallete
 
 For Table panel to get 1 row and many columns (as many columns ar many unique descriptions in following SQL
 ```
