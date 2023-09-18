@@ -1,5 +1,10 @@
 https://mpmath.org/ Python math library
 
+### SymPy
+https://habr.com/ru/companies/otus/articles/761344/
+
+https://marketplace.visualstudio.com/items?itemName=OrangeX4.latex-sympy-calculator
+
 ## Physics with functional programming
 
 https://github.com/mlubinsky/mlubinsky.github.com/tree/master/p_comp_science
