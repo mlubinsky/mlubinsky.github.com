@@ -265,8 +265,32 @@ https://sbcode.net/grafana/
 
 https://medium.com/grafana-tutorials/graphing-non-time-series-sql-data-in-grafana-8a0ea8c55ee3
 
-### Transform
+### Transformation
 
+#### Preparing time series
+Format: Multi-frame time series
+```
+
+select report_date, description, kpi_value as " "
+from kpi 
+where kpi_category = 'SemiShadedVDR-SuwonStation' 
+and kpi_metric='SpeedError_Max'
+and report_date >= DATE($__timeFrom()) 
+and report_date <= DATE($__timeTo()) 
+order by report_date, description;
+
+```
+
+#### Grouping to matrix (pivoting)
+
+For Table panel to get 1 row and many columns (as many columns ar many unique descriptions in following SQL
+```
+select CAST(report_date AS TEXT) as report_date, description, value
+Transormation: Grouping to matrix
+Column: description
+Row: report_date
+Cell value: value
+```
 https://volkovlabs.io/blog/transformations-grafana-20230519/
 
 https://grafana.com/docs/grafana/latest/panels-visualizations/query-transform-data/transform-data/
