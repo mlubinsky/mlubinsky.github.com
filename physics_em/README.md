@@ -1,3 +1,6 @@
+https://www.amazon.com/Electricity-Magnetism-Mathematicians-Thomas-Garrity-dp-1107435161/dp/1107435161
+
+
 https://www.feynmanlectures.caltech.edu/II_21.html
 
 https://ufn.ru/ru/articles/1988/9/e/ Специальная теория относительности и эффект Саньяка
