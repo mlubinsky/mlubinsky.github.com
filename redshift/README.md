@@ -1,12 +1,24 @@
-DISTRIBUTION KEY
+### DISTRIBUTION KEY
 https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-best-dist-key.html
-
-When you run a query, the query optimizer redistributes the rows to the compute nodes as needed to perform any joins and aggregations. The goal in selecting a table distribution style is to minimize the impact of the redistribution step by locating the data where it needs to be before the query is run.
-
+```
+When you run a query, the query optimizer redistributes the rows to the compute nodes as needed to perform any joins and aggregations. 
+The goal in selecting a table distribution style is to minimize the impact of the redistribution step by locating the data where it needs to be before the query is run.
+```
 
 
 SORT KEY
 https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-sort-key.html
+
+
+### CONSTRAINTS
+```
+Define primary key and foreign key constraints between tables wherever appropriate.
+Even though they are informational only, the query optimizer uses those constraints to generate more efficient query plans.
+
+Do not define primary key and foreign key constraints unless your application enforces the constraints.
+Amazon Redshift does not enforce unique, primary-key, and foreign-key constraints.
+```
+
 
 <https://stackoverflow.com/questions/62418138/redshift-copy-from-the-empty-s3-partition>
 
