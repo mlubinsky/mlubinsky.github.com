@@ -1,5 +1,7 @@
 ### High Load real time architecture
 
+https://rockset.com/
+
 https://habr.com/ru/articles/761464/ 
 
 https://www.kdnuggets.com/how-to-digest-15-billion-logs-per-day-and-keep-big-queries-within-1-second
