@@ -14,6 +14,8 @@ https://www.youtube.com/watch?v=wP-FMNuO3D0
 
 https://eranstiller.com/rabbitmq-vs-kafka-an-architects-dilemma-part-1
 
+https://news.ycombinator.com/item?id=37574552
+
 https://medium.com/riskified-technology/message-broker-vs-event-broker-when-to-use-each-one-of-them-15597320a8ba
 
 https://www.youtube.com/watch?v=7Faly8jORIw Kafka vs RabbitMQ
