@@ -18,9 +18,27 @@ https://news.ycombinator.com/item?id=28764416
 https://datatracker.ietf.org/doc/html/rfc4648
 
 
+### Static Site generators
+https://jamstack.org/generators/
+
+https://www.kytta.dev/blog/one-week-with-zola/
+
+Hugo, hosted on Azure Static Web Apps for free
 
 ### Blogging platform:
 https://writefreely.org/
+
+I use 11ty in combination with nextcloud. I have all my markdown files in nextcloud and edit/add them from there, and I have a file watcher that invokes the 11ty builder on change.
+
+Latex Editor
+https://editor.codecogs.com/
+https://editor.codecogs.com/docs/4-LaTeX_rendering.php
+
+wordpress
+
+https://www.silvrback.com/
+
+
 
 
 Михаил Самуилович Качан
