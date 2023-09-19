@@ -1,3 +1,10 @@
+### Amazon Redshift does not enforce primary key and foreign key constraints
+Specify the primary key and foreign keys for all your tables.
+
+Amazon Redshift does not enforce primary key and foreign key constraints, 
+but the query optimizer uses them when it generates query plans. 
+ 
+
 ### DISTRIBUTION KEY
 https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-best-dist-key.html
 ```
