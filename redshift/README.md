@@ -22,8 +22,10 @@ choosing the primary key (or a column of the composite primary key) as the distr
 If the table grows larger and none of the columns are suitable to be the distribution key, Amazon Redshift changes the distribution style to EVEN. 
 The change in distribution style occurs in the background with minimal impact to user queries.
 ```
-### SORT KEY
+### SORT KEY: COMPOUND and INTERLEAVE
 https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-sort-key.html
+
+https://docs.aws.amazon.com/redshift/latest/dg/t_Sorting_data.html
 
 When you create a table, you can alternatively define one or more of its columns as sort keys.
 When data is initially loaded into the empty table, the rows are stored on disk in sorted order.
