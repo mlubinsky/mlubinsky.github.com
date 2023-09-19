@@ -1,3 +1,9 @@
+DISTRIBUTION KEY
+https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-best-dist-key.html
+
+When you run a query, the query optimizer redistributes the rows to the compute nodes as needed to perform any joins and aggregations. The goal in selecting a table distribution style is to minimize the impact of the redistribution step by locating the data where it needs to be before the query is run.
+
+
 
 SORT KEY
 https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-sort-key.html
