@@ -2,11 +2,20 @@
 https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-best-dist-key.html
 ```
 When you run a query, the query optimizer redistributes the rows to the compute nodes as needed to perform any joins and aggregations. 
-The goal in selecting a table distribution style is to minimize the impact of the redistribution step by locating the data where it needs to be before the query is run.
+The goal in selecting a table distribution style is to minimize the impact of the redistribution step by locating the data
+ where it needs to be before the query is run.
 ```
-
-
-SORT KEY
+When you create a table, you can designate one of four distribution styles; AUTO, EVEN, KEY, or ALL.
+https://docs.aws.amazon.com/redshift/latest/dg/c_choosing_dist_sort.html
+```
+With AUTO distribution, Amazon Redshift assigns an optimal distribution style based on the size of the table data. 
+For example, if AUTO distribution style is specified, Amazon Redshift initially assigns the ALL distribution style to a small table.
+When the table grows larger, Amazon Redshift might change the distribution style to KEY, 
+choosing the primary key (or a column of the composite primary key) as the distribution key. 
+If the table grows larger and none of the columns are suitable to be the distribution key, Amazon Redshift changes the distribution style to EVEN. 
+The change in distribution style occurs in the background with minimal impact to user queries.
+```
+### SORT KEY
 https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-sort-key.html
 
 
