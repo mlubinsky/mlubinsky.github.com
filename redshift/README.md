@@ -1,3 +1,7 @@
+
+SORT KEY
+https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-sort-key.html
+
 <https://stackoverflow.com/questions/62418138/redshift-copy-from-the-empty-s3-partition>
 
 <https://www.intermix.io/blog/14-data-pipelines-amazon-redshift/>
