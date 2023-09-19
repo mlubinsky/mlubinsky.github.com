@@ -4,7 +4,21 @@ https://ufn.ru/ru/articles/1988/9/e/ Специальная теория отн�
 
 https://ufn.ru/ru/articles/1976/2/h/citedby.html Распространение импульсов
 
+https://en.wikipedia.org/wiki/Moving_magnet_and_conductor_problem
+
 https://ufn.ru/ru/articles/1996/6/d/  Коллапсы волновых функций
+
+https://en.wikipedia.org/wiki/Mathematical_descriptions_of_the_electromagnetic_field
+
+https://en.wikipedia.org/wiki/Jefimenko%27s_equations
+
+https://bivector.net/ Geometric Algebra
+
+https://arxiv.org/pdf/1509.00501.pdf  Vector Algebra War (Clifford geometric algebra)
+
+https://en.wikipedia.org/wiki/Relativistic_electromagnetism
+
+How Special Relativity Makes Magnets Work https://www.youtube.com/watch?v=1TKSfAkWWN0
 
 https://www.onlinescientificresearch.com/articles/the-clock-riddle-and-einsteins-third-postulate-of-special-relativity.pdf
 
