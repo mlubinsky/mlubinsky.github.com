@@ -20,9 +20,13 @@ https://ufn.ru/ru/articles/1996/6/d/  Коллапсы волновых функ
 
 https://en.wikipedia.org/wiki/Mathematical_descriptions_of_the_electromagnetic_field
 
+### Geometric Algebra
+
 https://en.wikipedia.org/wiki/Jefimenko%27s_equations
 
 https://bivector.net/ Geometric Algebra
+
+https://habr.com/ru/articles/761300/
 
 https://arxiv.org/pdf/1509.00501.pdf  Vector Algebra War (Clifford geometric algebra)
 
