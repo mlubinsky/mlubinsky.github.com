@@ -40,6 +40,18 @@ Do not define primary key and foreign key constraints unless your application en
 Amazon Redshift does not enforce unique, primary-key, and foreign-key constraints.
 ```
 
+### Materialized view
+
+https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-overview.html
+```
+ A materialized view contains a precomputed result set, based on an SQL query over one or more base tables.
+You can issue SELECT statements to query a materialized view, in the same way that you can query other tables or views in the database.
+Amazon Redshift returns the precomputed results from the materialized view, without having to access the base tables at all.
+Amazon Redshift provides a few ways to keep materialized views up to date for automatic rewriting.
+ You can configure materialized views with the automatic refresh option to refresh materialized views when base tables of materialized views are updated.
+This autorefresh operation runs at a time when cluster resources are available to minimize disruptions to other workloads. Because the scheduling of autorefresh is workload-dependent, you can have more control over when Amazon Redshift refreshes your materialized views. You can schedule a materialized view refresh job by using Amazon Redshift scheduler API and console integration.
+For more information about query scheduling, see Scheduling a query on the Amazon Redshift console.
+```
 
 <https://stackoverflow.com/questions/62418138/redshift-copy-from-the-empty-s3-partition>
 
