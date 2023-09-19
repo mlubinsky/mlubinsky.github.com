@@ -2,6 +2,13 @@ https://www.feynmanlectures.caltech.edu/II_21.html
 
 https://ufn.ru/ru/articles/1988/9/e/ Специальная теория относительности и эффект Саньяка
 
+### Why is Maxwell's theory so hard to understand?  Dyson
+http://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf
+
+https://news.ycombinator.com/item?id=18837677
+
+https://news.ycombinator.com/item?id=22810867
+
 https://ufn.ru/ru/articles/1976/2/h/citedby.html Распространение импульсов
 
 https://en.wikipedia.org/wiki/Moving_magnet_and_conductor_problem
