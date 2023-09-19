@@ -25,6 +25,9 @@ The change in distribution style occurs in the background with minimal impact to
 ### SORT KEY
 https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-sort-key.html
 
+When you create a table, you can alternatively define one or more of its columns as sort keys.
+When data is initially loaded into the empty table, the rows are stored on disk in sorted order.
+Information about sort key columns is passed to the query planner, and the planner uses this information to construct plans that exploit the way that the data is sorted.
 
 ### CONSTRAINTS
 ```
