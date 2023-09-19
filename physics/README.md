@@ -4,6 +4,8 @@
 "There is no God and Dirac is his Prophet." 
 — W. Pauli
 
+https://www.cphysics.org/index.html
+
 https://mccme.ru/free-books/
 
 https://www.damtp.cam.ac.uk/user/tong/teaching.html
