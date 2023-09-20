@@ -104,6 +104,8 @@ https://antonz.org/sqlite-is-not-a-toy-database/
 
 SQLite and DuckDB
 
+https://harlequin.sh/  DuckDB interface
+
 https://simonwillison.net/2022/Sep/1/sqlite-duckdb-paper/
 
 https://news.ycombinator.com/item?id=32675861
@@ -161,6 +163,8 @@ http://carlosproal.com/ir/papers/p121-comer.pdf The Ubiquitous B-Tree
 
 
 ### DuckDB
+
+https://harlequin.sh/ DuckDB interface
 
 https://github.com/duckdb/duckdb
 
