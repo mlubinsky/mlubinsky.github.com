@@ -4,6 +4,8 @@
 
  https://www.youtube.com/watch?v=7F_SJhS1OaQ
 
+ https://www.youtube.com/watch?v=Iz7PSlTpjyI
+
 ### Functions are vectors
 
 https://thenumb.at/Functions-are-Vectors/
