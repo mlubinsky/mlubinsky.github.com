@@ -2,6 +2,8 @@
 
  https://www.youtube.com/watch?v=ZRca3Ggpy_g
 
+ https://www.youtube.com/watch?v=7F_SJhS1OaQ
+
 ### Functions are vectors
 
 https://thenumb.at/Functions-are-Vectors/
