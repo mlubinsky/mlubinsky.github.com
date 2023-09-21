@@ -1,3 +1,14 @@
+### Submit
+```
+./bin/spark-submit \
+  --class com.example.MainClass \
+  --master spark://cluster-url:7077 \
+  --executor-memory 2g \
+  --total-executor-cores 4 \
+  /path/to/your/app.jar \
+  arg1 arg2
+```
+
 ### Code
 
 
