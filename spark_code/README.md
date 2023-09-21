@@ -1,4 +1,5 @@
 ### Submit
+https://spark.apache.org/docs/latest/submitting-applications.html
 ```
 ./bin/spark-submit \
   --class com.example.MainClass \
