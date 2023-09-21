@@ -452,8 +452,9 @@ https://github.com/helix-editor/helix
 
 ## Visual Studio Code
 
-https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit
+https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit   Remote SSH
 
+https://marketplace.visualstudio.com/items?itemName=formulahendry.docker-explorer   Docker Explorer
 ```
 Find matching bracker: Cmd Shift   \
 ```
