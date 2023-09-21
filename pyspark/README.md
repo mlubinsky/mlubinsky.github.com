@@ -8,6 +8,25 @@ https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
 https://www.youtube.com/watch?v=jWZ9K1agm5Y  PySpark Course: Big Data Handling with Python and Apache Spark
 
+### compute the total counts of each of the unique words on a spark
+```
+sc.textFile(“hdfs://user/bigtextfile.txt”);
+def toWords(line):
+      return line.split()
+
+words = lines.flatMap(toWords)     We are going to flatMap instead of the map because our function is returning multiple values.
+
+def toTuple(word):
+     return (word, 1)
+
+wordsTuple = words.map(toTuple)
+
+def sum(x, y):
+   return x+y
+
+counts = wordsTuple.reduceByKey(sum)
+```
+
 ### UDF pandas
 
 https://towardsdatascience.com/pyspark-or-pandas-why-not-both-95523946ec7c
