@@ -1,7 +1,7 @@
 https://penrose.ink/siggraph20.html   Math visualization
 
 
-fast viewer for CSV and Parquet files and SQLite and DuckDb
+### fast viewer for CSV and Parquet files and SQLite and DuckDb
 
 https://www.tadviewer.com/
 
@@ -174,6 +174,8 @@ https://news.ycombinator.com/item?id=24136955
 
 ### Diff
 
+CompareIt! (Windows) WinMerge (windows)
+
 https://github.com/dandavison/delta
 
 <https://diffoscope.org/> 
@@ -191,6 +193,21 @@ https://github.com/ymattw/ydiff
 https://github.com/so-fancy/diff-so-fancy
 
 https://unix.stackexchange.com/questions/196565/how-to-color-diff-output
+
+ 
+
+<https://yousseb.github.io/meld/>
+
+<https://github.com/ymattw/ydiff>
+
+<https://github.com/so-fancy/diff-so-fancy>
+
+In order to make it your default Git pager, run this:
+
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+
+alias diff="diff-so-fancy"
+
 
 ### File manager
 
@@ -315,19 +332,6 @@ https://plugins.jetbrains.com/plugin/12281-avro-and-parquet-viewer
 
 <https://stackoverflow.com/questions/23545476/where-do-i-enter-the-homebrew-scala-path-usr-local-opt-scala-idea-in-intellij?rq=1>
 
-## Diff
-
-<https://yousseb.github.io/meld/>
-
-<https://github.com/ymattw/ydiff>
-
-<https://github.com/so-fancy/diff-so-fancy>
-
-In order to make it your default Git pager, run this:
-
-git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
-
-alias diff="diff-so-fancy"
 
 ## Command line tools
 
@@ -447,6 +451,9 @@ $ to the end of a line
 https://github.com/helix-editor/helix
 
 ## Visual Studio Code
+
+https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit
+
 ```
 Find matching bracker: Cmd Shift   \
 ```
