@@ -8,7 +8,7 @@ https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
 https://www.youtube.com/watch?v=jWZ9K1agm5Y  PySpark Course: Big Data Handling with Python and Apache Spark
 
-### compute the total counts of each of the unique words on a spark
+### Compute  total counts of each of  unique words on a spark
 ```
 sc.textFile(“hdfs://user/bigtextfile.txt”);
 def toWords(line):
@@ -25,6 +25,44 @@ def sum(x, y):
    return x+y
 
 counts = wordsTuple.reduceByKey(sum)
+```
+
+
+### In a very huge text file  check if a particular keyword exists.
+```
+result = “Not Set”
+lock = threading.Lock()
+accum = sc.accumulator(0)
+
+def map_func(line):
+    #introduce delay to emulate the slowness
+    sleep(1);
+    if line.find(“Adventures”) > -1:
+              accum.add(1);
+             return 1;
+    return 0;
+
+def start_job():
+    global result
+    try:
+        sc.setJobGroup(“job_to_cancel”, “some description”)
+
+        lines = sc.textFile(“hdfs://hadoop1.knowbigdata.com/user/student/sgiri/wordcount/input/big.txt”);
+
+         result = lines.map(map_func);
+         result.take(1);
+         except Exception as e:
+                  result = “Cancelled”
+lock.release()
+
+def stop_job():
+    while accum.value < 3 :
+          sleep(1);
+          sc.cancelJobGroup(“job_to_cancel”)
+          supress = lock.acquire()
+          supress = thread.start_new_thread(start_job, tuple())
+          supress = thread.start_new_thread(stop_job, tuple())
+          supress = lock.acquire()
 ```
 
 ### UDF pandas
