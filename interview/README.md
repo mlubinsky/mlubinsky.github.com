@@ -13,6 +13,8 @@ https://www.guru99.com/longest-common-subsequence.html
 Prefix SUM
 https://blog.devgenius.io/array-coding-pattern-prefix-sum-a83d313c7e5a
 
+Longest common prefix; https://python.plainenglish.io/longest-common-prefix-2d237c52e11d
+
 Matrix in python: 
  https://blog.devgenius.io/working-with-matrix-in-python-cheatsheet-2654835d9dc7
  
