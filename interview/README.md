@@ -10,6 +10,10 @@ https://leetsolve.com/48-rotate-image
 
 https://www.guru99.com/longest-common-subsequence.html
 
+Matrix in python: 
+ https://blog.devgenius.io/working-with-matrix-in-python-cheatsheet-2654835d9dc7
+ 
+
 Yandex interview: 
 https://www.youtube.com/watch?v=0yxjWwoZtLw
 
