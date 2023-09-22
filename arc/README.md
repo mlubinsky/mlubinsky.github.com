@@ -1,3 +1,23 @@
+Event - driven applications:
+
+https://enlear.academy/aspects-of-event-driven-apps-aws-c81e80ef7fc6
+
+https://enlear.academy/asynchronous-request-handling-with-aws-sqs-c4df33ae9717
+
+```
+In a push-based system, the event producer or pusher needs a promise from the consumer
+that the consumer will be able to process whatever events are generated.
+
+In a pull-based model, the consumers poll for events. This pull mechanism allows for buffering & batching.
+ Consumer polls and process messages when it has the capacity for the same.
+
+Also, messages can be consumed in a blocking or non-blocking way. Message brokers enable asynchronous communications between services so that the sending service need not wait for the receiving service’s reply.
+
+This improves fault tolerance and resiliency in the systems in which they’re employed.
+
+Amazon Simple Queue Service (SQS) is a fully managed message queueing service that allows you to decouple your applications. It helps you improve your applications’ performance and user experience by allowing you to communicate asynchronously between client and server.
+```
+
 ### High Load real time architecture
 
 https://www.epsio.io/
