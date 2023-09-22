@@ -91,6 +91,8 @@ https://blog.devgenius.io/spark-questions-interview-series-c31cedf41652
 
 ### Out of memory
 
+https://medium.com/swlh/spark-oom-error-closeup-462c7a01709d
+
 https://blog.devgenius.io/spark-errors-uncluttered-fc0b2fb74ed0
 
 https://medium.com/@sathamn.n/surviving-an-oom-issue-in-apache-spark-a-thrilling-interview-experience-e9f7cbd214dc
