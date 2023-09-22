@@ -10,6 +10,9 @@ https://leetsolve.com/48-rotate-image
 
 https://www.guru99.com/longest-common-subsequence.html
 
+Prefix SUM
+https://blog.devgenius.io/array-coding-pattern-prefix-sum-a83d313c7e5a
+
 Matrix in python: 
  https://blog.devgenius.io/working-with-matrix-in-python-cheatsheet-2654835d9dc7
  
