@@ -13,6 +13,10 @@ https://www.guru99.com/longest-common-subsequence.html
 Intervals:
 https://faun.pub/intervals-coding-pattern-efa438dede8a
 
+Priority queue
+https://faun.pub/priority-queue-using-heapq-9d8fccc49d51
+
+
 Prefix SUM
 https://blog.devgenius.io/array-coding-pattern-prefix-sum-a83d313c7e5a
 
