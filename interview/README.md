@@ -1477,7 +1477,10 @@ https://www.youtube.com/watch?v=8Uk2e7cCuyw
 
 <https://www.youtube.com/watch?v=4NIb9l3imAo>
 
-disjoint set union (DSU) или Union-Find.
+### disjoint set union (DSU) или Union-Find.
+
+https://python.plainenglish.io/union-find-data-structure-in-python-8e55369e2a4f
+
 <https://habr.com/ru/post/104772/>
 создать быструю структуру, которая поддерживает следующие операции:
 
