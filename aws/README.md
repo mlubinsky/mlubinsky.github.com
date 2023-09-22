@@ -21,7 +21,10 @@ https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_2708
 ### AWS Lambda
 
 https://medium.com/swlh/lambda-internals-exploration-ae6c21d9521e
+
 https://towardsdatascience.com/aws-lambda-integration-with-snowflake-426debc9ec3a
+
+https://asrathore08.medium.com/long-running-jobs-in-step-function-with-system-manager-and-lambda-f6b2543719f3
 
 ### AWS  cheatsheets
 
