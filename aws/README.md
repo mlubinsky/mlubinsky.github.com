@@ -18,6 +18,11 @@ https://habr.com/ru/company/microsoft/blog/503462/
 https://azure.microsoft.com/en-us/free/search/?OCID=AID2000129_OLA_23943940_270839230_130845605&dclid=CImGtNrTpeoCFQMqrQYd4dYHbA
 
 
+### AWS Lambda
+
+https://medium.com/swlh/lambda-internals-exploration-ae6c21d9521e
+https://towardsdatascience.com/aws-lambda-integration-with-snowflake-426debc9ec3a
+
 ### AWS  cheatsheets
 
 https://www.datadoghq.com/resources/datadog-lambda-cheatsheet/
