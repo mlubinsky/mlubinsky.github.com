@@ -1,3 +1,6 @@
+### SPARK SQL
+https://books.japila.pl/spark-sql-internals/features/
+
 ### Spark performance
 https://holdenk.github.io/spark-flowchart/flowchart/error/
 
@@ -21,11 +24,11 @@ To speed up this we can call a cache to persist the joined data frame in memory.
 So optimizer uses the shortcut to fetch the data instead of computing it from the source.
 ```
 
---Shuffle
---Skew
---Spill
---Storage
---Serialization
+- Shuffle  https://blog.devgenius.io/shuffle-in-spark-d95b5ebe7b4e
+- Skew (partitioning) https://blog.devgenius.io/spark-partitioning-da6dba06949f
+- Spill  https://blog.devgenius.io/spark-spill-7e027085ca4c
+- Storage
+- Serialization
 
 ### Spark configuration
 
@@ -87,6 +90,9 @@ https://blog.devgenius.io/debugging-a-memory-leak-in-spark-application-221406308
 https://blog.devgenius.io/spark-questions-interview-series-c31cedf41652
 
 ### Out of memory
+
+https://blog.devgenius.io/spark-errors-uncluttered-fc0b2fb74ed0
+
 https://medium.com/@sathamn.n/surviving-an-oom-issue-in-apache-spark-a-thrilling-interview-experience-e9f7cbd214dc
 ```
 First, we need to find out what caused the OOM error. 
@@ -526,6 +532,103 @@ https://medium.com/curious-data-catalog/sparks-salting-a-step-towards-mitigating
 https://habr.com/ru/company/newprolab/blog/530568/ What is new in Spark 3.0
 
 ### Partitioning
+
+https://blog.devgenius.io/spark-partitioning-da6dba06949f
+
+
+In Spark, the number of partitions comes into the picture at three stages of the pipeline.
+```
+Input / Reading
+Shuffle / Transformation
+Output / Writing
+```
+
+Reading:
+```
+For reading files from Parquet, JSON, and ORC we can set the bytes for each partition.
+
+spark.default.parallelism — how many partitions are read in when doing spark.read
+spark.sql.files.maxPartitionBytes — The maximum number of bytes to put into a single partition when reading files.
+spark.sql.files.minPartitionNum — minimum number of split file partition
+spark.files.openCostInBytes — estimated cost to open a file
+
+While reading from databases we can ser (partitionColumn, lowerBound, upperBound, numPartitions ).
+ These values will divide the data(between lower & upper bound) into partitions (a number equal to numPartitions). S
+o let us say we have an Id column and we set lowerBound to 1 and upperBound to 40000 with numPartitions to 4.
+Then in the case of equal distribution spark will have 4 partitions with 10000 records each.
+
+Note: For while reading from folders containing large number of files, enumeration of datasets is a challenge as it happens on driver.
+This processing of file listing follows a serial code path and can be slow.
+There are third party solutions, like RapidFile, to speed up file listing.
+
+```
+Shuffle
+```
+When we perform a wide transformation (group by, join, window function, sort) there is a shuffle(redistribution) of data. During this shuffle, new partitions get created or removed. E.g If we use row_number() function it will reduce the number of partition to 1.
+
+The smaller size of partitions (more partitions) will increase the parallel running jobs, which can improve performance, but too small of a partition will cause overhead and increase the GC time. Larger partitions (fewer number of partitions) will decrease the number of jobs running in parallel.
+
+df.rdd.getNumPartitions()
+
+spark.sql.shuffle.partitions— Default number of partitions returned by transformations like join, reduceByKey, and parallelize when not set by user. Default is 200.
+
+We can manually tweak the number of partitions by coalescing or repartitioning.
+
+repartition(numPartitions) — Uses RoundRobinPartitioning
+repartition(partitionExprs) — Uses HashPartitioner
+repartitionByRange(partitionExprs) — Uses range partitioning.
+coalesce(numPartitions) — Use only to reduce the number of partitions.
+
+Note: In most cases, Coalesce should be preferred over repartition while reducing the number of partitions. But Repartition guarantees that the data distribution in the partition is roughly the same size. So in some cases, it may be preferred.
+
+In case where are performing aggregate on unique columns we should control the shuffle by using repartition.
+
+Good partitioning of data leads to better speed and fewer OOMs errors.
+
+The repartition leads to a full shuffle of data between the executors making the job slower. The coalesce operation doesn’t trigger a full shuffle when it reduces the number of partitions. It only transfers the data from partitions being removed to existing partitions.
+
+We can get partitions and there record count for each one using the following code:
+
+from pyspark.sql.functions import spark_partition_id, asc, desc
+
+df.withColumn("partitionId", spark_partition_id())\
+    .groupBy("partitionId")\
+    .count()\
+    .orderBy(asc("count"))\
+    .show()
+```
+Output
+```
+The number of files that get written out is controlled by the parallelization of your DataFrame or RDD.
+So if your data is split across 10 Spark partitions you cannot write fewer than 10 files without reducing partitioning (e.g. coalesce or repartition).
+
+partitionBy() — Partitions the output by the given columns on the file system.
+maxRecordsPerFile — number of records in a single file in each partition. This helps in fixing large file problem.
+
+When we write data, using the maxRecordsPerFile option, we can limit the number of records that get written per file in each partition.
+
+To get one file per partition, use repartition() with the same columns you want the output to be partitioned by.
+
+The partitionBy method does not trigger any shuffle but it may generate a two many files.
+Imagine we have 200 partitions, and we want to partition data by date.
+Each spark task will produce 365 files in which leads to 365×200=73k files.
+
+partition_cols = [] 
+df.repartition(*partition_cols)\
+  .write.partitionBy(*partition_cols)\
+  .mode(SaveMode.Append).parquet(path)
+Spark also gives us the option of bucketing while writing data to tables.
+In bucketing data is divided into smaller portions called “buckets”.
+
+df.write.bucketBy(12, "key").saveAsTable("table_name")
+No of files in bucketing = df.partition * number of bucket
+
+Also, To use bucket join for tables having buckets multiple of each other we need to set the following:
+
+spark.sql.bucketing.coalesceBucketsInJoin.enabled
+```
+
+
 ```
 repartition(numPartitions) — Uses RoundRobinPartitioning
 repartition(partitionExprs) — Uses HashPartitioner
