@@ -4,10 +4,41 @@ https://wisser.github.io/Jailer/
 
 https://news.ycombinator.com/item?id=36243926
 
-### mmm
+###  Interview questions
+
+Duplicates in table: https://blog.devgenius.io/duplicates-in-sql-e7a146d0131
+
+```
+SELECT col1, col2
+FROM table_name
+WHERE (col1, col2) IN (
+    SELECT col1, col2 FROM table_name
+    GROUP BY col1, col2 
+    HAVING COUNT(*) > 1
+    )
+
+If the set of column values is unique in the table then the partition with that column set will have single rows. Conversely, partitions with more than one row denote the presence of duplicate values. We use ROW_NUMBER() to assign a sequential integer to each row within the partition of a result set. A sequence (appearance/occurrence) greater than one means that the value is appearing more than one time.
+
+WITH dedup AS (
+ SELECT col1, col2,
+  ROW_NUMBER() OVER (PARTITION BY col1, col2 ORDER BY col3 ASC) AS occurrence
+ FROM table_name
+)
+SELECT col1, col2
+FROM dedup
+WHERE occurrence > 1
+```
+
+https://blog.devgenius.io/sql-practice-questions-1-800ed65d99b2
+
+https://blog.devgenius.io/sql-practice-questions-5-456cfb41757a
+
 https://medium.com/towards-data-engineering/most-asked-complex-sql-queries-in-data-engineering-interviews-9fde381d23f8
 
 https://sqlfordevs.com/ebook
+
+Recursive CTE
+https://blog.devgenius.io/recursive-cte-demystified-6adc0021813f
 
 ### RANK() vs DENSE_RANK()
 RANK numbers are skipped so there may be a gap in rankings, and may not be unique. 
@@ -257,6 +288,29 @@ FROM cte;
 
 ## LEAD, LAG, FIRST_GAP
 
+find all numbers that appear at least three times consecutively.
+```
++----+-----+
+| id | num |
++----+-----+
+| 1  | 1   |
+| 2  | 1   |
+| 3  | 1   |
+| 4  | 2   |
+| 5  | 1   |
+| 6  | 2   |
+| 7  | 2   |
++----+-----+
+
+WITH cte as (
+    SELECT num, 
+        LEAD(num, 1) OVER() AS next_num, 
+        LAG(num) OVER (ORDER BY id) AS prev_num
+    FROM `Logs`
+)
+SELECT DISTINCT num as ConsecutiveNums 
+FROM cte WHERE num=next_num and num=prev_num;
+```
 
 http://databasetips.net/2019/02/12/lead-and-lag-accessing-multiple-rows-without-self-join/
 
