@@ -3,6 +3,8 @@ https://www.astronomer.io/ebooks/data-pipelines-with-apache-airflow.pdf
 
 https://www.youtube.com/watch?v=uB7zweaF8EA What is new in Airflow 2.7 ?
 
+https://blog.devgenius.io/airflow-task-parallelism-6360e60ab942
+
 Airflow in Docker:
 
 https://stackabuse.com/running-airflow-locally-with-docker-a-technical-guide/
@@ -378,8 +380,20 @@ info = PythonOperator(
 
 https://towardsdatascience.com/tagged/apache-airflow
 
-cross-DAG dependencies
+### Cross-DAG dependencies
+
+https://blog.devgenius.io/airflow-cross-dag-dependency-b127dd3b69d8
+
 https://medium.com/quintoandar-tech-blog/effective-cross-dags-dependency-in-apache-airflow-1885dc7ece9f
+
+Airflow provides us with 3 native ways to create cross-dag dependency.
+```
+Push-based — TriggerDagRunOperator
+Pull-based — ExternalTaskSensor
+Across Environments — Airflow API (SimpleHttpOperator)
+```
+
+
 
 
 
@@ -413,7 +427,7 @@ https://khashtamov.com/en/introduction-to-apache-airflow/
 
 
 
-### Kubernetic Issue: Only works with the Celery or Kubernetes executors, sorry
+### Kubernetes issue: Only works with the Celery or Kubernetes executors, sorry
 
 https://github.com/apache/airflow/issues/12341
 
