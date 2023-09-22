@@ -1,6 +1,31 @@
 Book:
 https://www.astronomer.io/ebooks/data-pipelines-with-apache-airflow.pdf
 
+https://medium.com/numberly-tech-blog/orchestrating-python-workflows-in-apache-airflow-fd8be71ad504
+
+pip install apache-airflow
+```
+Airflow is basically coding DAGs, that are composed of Tasks, that are run by Operators
+
+Airflow “Hooks” are a high level interface that leverages Airflow Connections to get access to such resources.
+They often use external libraries or tedious network operations “under the hood”.
+
+Operators
+Airflow has a very extensive set of operators available, here are some examples:
+
+BashOperator - executes a bash command
+PythonOperator - calls an arbitrary Python function
+EmailOperator - sends an email
+```
+
+https://medium.com/nerd-for-tech/airflow-features-callback-trigger-clsuter-policy-cc7f8022e7d3
+
+https://medium.com/numberly-tech-blog/orchestrating-python-workflows-in-apache-airflow-fd8be71ad504
+
+Deferreble operators
+
+https://blog.devgenius.io/airflow-deferrable-operators-5a7c90aaa14f
+
 https://www.youtube.com/watch?v=uB7zweaF8EA What is new in Airflow 2.7 ?
 
 https://blog.devgenius.io/airflow-task-parallelism-6360e60ab942
