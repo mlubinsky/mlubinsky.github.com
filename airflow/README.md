@@ -3,6 +3,10 @@ https://www.astronomer.io/ebooks/data-pipelines-with-apache-airflow.pdf
 
 https://medium.com/numberly-tech-blog/orchestrating-python-workflows-in-apache-airflow-fd8be71ad504
 
+https://medium.com/nerd-for-tech/airflow-mwaa-automating-etl-for-a-data-warehouse-f5e50d14713c
+
+https://medium.com/nerd-for-tech/airflow-catchup-backfill-demystified-355def1b6f92
+
 pip install apache-airflow
 ```
 Airflow is basically coding DAGs, that are composed of Tasks, that are run by Operators
