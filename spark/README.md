@@ -1,3 +1,28 @@
+### Spark performance
+```
+df = df_eu.join(df_lac, how="inner", on="value")
+
+df_1 = df.filter(filter_condition_1)
+df_2 = df.filter(filter_condition_2)
+
+## Add a new col aftre performing some transformation
+df_1 = df_1.withColumn("new_col", transform_1)
+df_2 = df_2.withColumn("new_col", transform_2)
+
+## Union the two data frames
+df_1.union(df_2).count()
+
+In the above example, we will notice that the join happened twice.
+To speed up this we can call a cache to persist the joined data frame in memory.
+So optimizer uses the shortcut to fetch the data instead of computing it from the source.
+```
+
+--Shuffle
+--Skew
+--Spill
+--Storage
+--Serialization
+
 ### Spark configuration
 
 https://blog.devgenius.io/spark-configurations-96eab8775e7
@@ -328,7 +353,13 @@ Execute SQL query
 
 results = context.sql("""SELECT * FROM people JOIN json …""")
 ```
-### Spark configuration issues
+### Spark configuration  
+
+https://blog.devgenius.io/solution-spark-debugging-a-slow-application-e900ebd7bec9
+
+In general, the number of cores can be experimented with in the range of
+3–5 for executors with memory in the range of 20–40G.
+
 https://habr.com/ru/company/otus/blog/540396/
 Обычными причинами, приводящими к OutOfMemory OOM (недостаточно памяти) драйвера, являются:
 
@@ -491,7 +522,12 @@ https://medium.com/curious-data-catalog/sparks-salting-a-step-towards-mitigating
 https://habr.com/ru/company/newprolab/blog/530568/ What is new in Spark 3.0
 
 ### Partitioning
-
+```
+repartition(numPartitions) — Uses RoundRobinPartitioning
+repartition(partitionExprs) — Uses HashPartitioner
+repartitionByRange(partitionExprs) — Uses range partitioning.
+coalesce(numPartitions) — Use only to reduce the number of partitions.
+```
 https://www.amazon.com/Guide-Spark-Partitioning-Explained-Depth/dp/B08L25WHJ4  Guide to Spark Partitioning
 
 https://medium.com/@vladimir.prus/spark-partitioning-the-fine-print-5ee02e7cb40b
@@ -669,8 +705,20 @@ http://spark.apache.org/docs/latest/web-ui.html
 
 https://sparkbyexamples.com/spark/spark-web-ui-understanding/
 
-### Adaptive query execution Spark 3.0
+### Adaptive query execution (AQE)  Spark >= 3.0
 
+```
+AQE increases and decreases partitions by dynamically coalescing or splitting the partitions.
+
+spark.sql.adaptive.enabled true
+spark.sql.adaptive.skewJoin.enabled true
+spark.sql.adaptive.coalescePartitions.enabled true
+spark.sql.adaptive.advisoryPartitionSizeInBytes 134217728
+spark.sql.adaptive.skewJoin.skewedPartitionFactor
+spark.sql.adaptive.skewJoin.skewedPartitionThresholdInBytes
+spark.sql.adaptive.advisoryPartitionSizeInBytes
+Note: Caching the DataFrame just before writing disables AQE for the transformations that occur in our DataFrame before calling cache().
+```
 https://habr.com/ru/company/cloudera/blog/560246/
 
 Spark определяет подходящее количество партиций для первого этапа, но для второго этапа использует по умолчанию "магическое число" - 200.
