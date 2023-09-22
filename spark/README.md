@@ -1,4 +1,7 @@
 ### Spark performance
+https://holdenk.github.io/spark-flowchart/flowchart/error/
+https://holdenk.github.io/spark-flowchart/flowchart/slow/
+
 ```
 df = df_eu.join(df_lac, how="inner", on="value")
 
