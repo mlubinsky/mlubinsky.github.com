@@ -463,6 +463,8 @@ content_id	store	kids_directed	row_num
  <https://towardsdatascience.com/python-vs-sql-comparison-for-data-pipelines-8ca727b34032>
  
  <https://habr.com/ru/post/474458/> . Нарастающий (накопительный) итог 
+
+ 
  
  <https://towardsdatascience.com/anomaly-detection-with-sql-7700c7516d1d> Anomaly detection with SQL
 
@@ -750,11 +752,12 @@ WHERE
 ```
 
 ## Retrieve the names of all people that have more than 1 order 
+```
  Suppose we have 2 tables: \
  Person(id, name, age, salary) \
  Orders(num,date, person_id, amount): \
  Task: retrieve the names of all people that have more than 1 order 
- 
+``` 
 ### Answer 1:
 ``` 
  SELECT name from person where id in (
@@ -888,10 +891,23 @@ select
 from sales_table a
 join sales_table b on a.date >= b.date
 group by a.date
-order by a.date;
+order by a.date
+
+
+SELECT city, month,
+    SUM(amount) OVER (
+        PARTITION BY city
+        ORDER BY month
+        RANGE UNBOUNDED PRECEDING
+    ) as total_sale
+FROM Sales;
 ```
 
+
 Using window function:
+
+https://blog.devgenius.io/sql-window-function-d39858e52784
+
 ```
 select date,
     sum(sales) over (order by date rows unbounded preceding) as cumulative_sales
