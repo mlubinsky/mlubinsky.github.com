@@ -1,10 +1,76 @@
+### Spark configuration
+
+https://blog.devgenius.io/spark-configurations-96eab8775e7
+
+- Application Properties
+```
+Spark allows us to set these application configurations in multiple ways.
+
+1. $SPARK_HOME/conf/spark-defaults.conf file
+
+2. $SPARK_HOME/bin/spark-submit on the command line
+
+3. When creating the SparkSession
+
+# Application Properties
+spark.app.name 
+spark.master
+
+# Runtime properties
+spark.driver|executor.extraJavaOptions
+spark.driver|executor.extraClassPath
+
+# Memory configuration
+spark.driver.memory 
+spark.executor.memory
+
+# Execution environment 
+spark.executor.cores
+
+# SQL related 
+spark.sql.autoBroadcastJoinThreshold
+spark.sql.broadcastTimeout
+spark.sql.shuffle.partitions
+
+# Spark Streaming
+spark.streaming.kafka.maxRatePerPartition
+spark.streaming.backpressure.enabled
+
+# Spark UI
+spark.eventLog.dir
+spark.ui.enabled
+```
+- Runtime environment, Execution Behaviour
+- Spark SQL, Streaming
+- Memory Management, Spark UI
+- Networking, Security
+
+
 https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql-QueryExecution.html#execution-pipeline
 
 https://umbertogriffo.gitbook.io/apache-spark-best-practices-and-tuning/
 
-Out of memory
-https://medium.com/@sathamn.n/surviving-an-oom-issue-in-apache-spark-a-thrilling-interview-experience-e9f7cbd214dc
 
+### Troubleshooting
+
+https://blog.devgenius.io/debugging-a-memory-leak-in-spark-application-22140630877d
+
+https://blog.devgenius.io/spark-questions-interview-series-c31cedf41652
+
+### Out of memory
+https://medium.com/@sathamn.n/surviving-an-oom-issue-in-apache-spark-a-thrilling-interview-experience-e9f7cbd214dc
+```
+First, we need to find out what caused the OOM error. 
+Is it execution memory, overhead, storage memory, or memory leak? Based on that we can adjust the following:
+
+Number of cores (decreasing it)
+spark.executor.memory
+spark.memory.fraction
+spark.memory.storageFraction
+spark.executor.memoryOverhead
+spark.executor.pyspark.memory
+spark.memory.offHeap.size + spark.memory.offHeap.enabled
+```
 https://sunilrana123.medium.com/bigdata-interview-question-part-3-38f36c57bac2
 
 https://blog.devgenius.io/solution-spark-debugging-a-slow-application-e900ebd7bec9
