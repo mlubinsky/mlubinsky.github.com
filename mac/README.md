@@ -148,6 +148,7 @@ https://ruddra.com/fix-python-after-brew-upgrade/
 
 ### brew  
 
+
 brew list
 ```
 apache-spark	jq		oniguruma	openjdk@11	pcre2		ripgrep
@@ -248,6 +249,24 @@ jenv versions
 
 https://dev.to/gabethere/installing-java-on-a-mac-using-homebrew-and-jevn-12m8
 
+###
+brew install apache-spark
+
+/opt/homebrew/Cellar/apache-spark/3.5.0/bin
+```
+docker-image-tool.sh 
+load-spark-env.sh    r
+run-example          
+spark-class          
+spark-shell          
+spark-submit
+find-spark-home      
+pyspark              
+spark-beeline        
+spark-connect-shell  
+spark-sql            
+sparkR
+```
 
 #### Scala and  Spark
 
