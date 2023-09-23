@@ -39,9 +39,18 @@ https://grafana.com/docs/grafana/latest/panels-visualizations/visualizations/bar
 
 https://play.grafana.org/d/ktMs4D6Mk/5-bar-charts-and-pie-charts?orgId=1
 
-X - metric name
-Y - DUT value
+https://www.youtube.com/watch?v=ky78RZ2f7oc
 
+X - metric 
+legend - DUT 
+
+SELECT metric, dut, v from T where dt=..
+```
+Apply transformation: Grouping to matrix:
+ Column: dut
+ Row: metric
+ Cell value : V
+```
 https://www.youtube.com/watch?v=Bu-MxNJT44c
 
 https://community.grafana.com/t/plotting-non-time-series-on-x-axis/70913/9
