@@ -42,6 +42,8 @@ https://play.grafana.org/d/ktMs4D6Mk/5-bar-charts-and-pie-charts?orgId=1
 X - metric name
 Y - DUT value
 
+https://www.youtube.com/watch?v=Bu-MxNJT44c
+
 https://community.grafana.com/t/plotting-non-time-series-on-x-axis/70913/9
 
 ```
