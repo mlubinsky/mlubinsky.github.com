@@ -7,6 +7,10 @@ https://planet.postgresql.org/
 
 https://www.postgresonline.com/
 
+https://tembo.io/blog/introducing-pgmq/  Message Queue
+
+https://news.ycombinator.com/item?id=37610899
+
 ### EXECUTE format
 
 https://www.postgresql.org/docs/current/plpgsql-statements.html
