@@ -58,6 +58,17 @@ Apply transformation: Grouping to matrix
  Row: metric
  Cell value : V
 ```
+
+If data is present in following table format (dt, dut, metric1 int, metric2 int, metric3 int)
+we need to convert it to format (dut, metric, value) to feed to grafana:
+
+```
+select dut, 'm1' as metric, m1  as value from daily 
+union all
+select dut, 'm2' as metric, m2  as value from daily 
+..
+```
+
 https://www.youtube.com/watch?v=Bu-MxNJT44c
 
 https://community.grafana.com/t/plotting-non-time-series-on-x-axis/70913/9
