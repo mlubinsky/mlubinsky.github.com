@@ -96,6 +96,19 @@ https://dba.stackexchange.com/questions/159280/how-do-i-generate-a-pivoted-cross
 
 https://avestura.dev/blog/explaining-the-postgres-meme
 
+
+### build dynamic SQL
+```
+Pivot this:
+SELECT name, attr1, attr1, attr3, ... FROM T
+
+Goal:   columns are: name_1, name_2, ...
+Rows: attr1, attr2, attr_3,  etc
+
+
+```
+
+
 ### PG function
 ```
 CREATE OR REPLACE FUNCTION get_descriptions(category text, metric text = NULL, start_date DATE = NULL, end_date DATE = NULL)
