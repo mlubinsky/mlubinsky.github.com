@@ -2,9 +2,13 @@
 https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 
 
+### Grafana release notes
+
 https://grafana.com/blog/2023/06/13/grafana-10-release-all-the-new-features-to-know/
  
 https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features/
+
+### Stack overflow
 
 https://community.grafana.com/t/bar-char-based-on-sql-with-2-items-in-group-by/103510
 
@@ -25,6 +29,16 @@ brew services start grafana
 ### Color mapping
 
 Bar chart -> Overrides -> fields with name -> In dropdown select description -> value mapping
+
+
+### Plotting non-time series on X - axis
+https://community.grafana.com/t/plotting-non-time-series-on-x-axis/70913/9
+
+```
+Hide x axis legend 
+xAxis: {
+show: false },
+```
 
 ### Grafana date/time picker: 
 press Ctrl button to set the range
@@ -250,6 +264,8 @@ If there are any differences in data sources or environment settings between the
 ```
 
 ### Grafana Plugins
+
+https://grafana.com/grafana/plugins/volkovlabs-echarts-panel/  Apache ECharts plugin
 
 https://grafana.com/grafana/plugins/
 
