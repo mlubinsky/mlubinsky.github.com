@@ -40,13 +40,20 @@ https://grafana.com/docs/grafana/latest/panels-visualizations/visualizations/bar
 https://play.grafana.org/d/ktMs4D6Mk/5-bar-charts-and-pie-charts?orgId=1
 
 https://www.youtube.com/watch?v=ky78RZ2f7oc
-
+```
+select 
+--dt, 
+metric, 
+dut, 
+v  
+from daily_kpi where dt='2023-01-01'
+order by metric
+ 
 X - metric 
 legend - DUT 
 
-SELECT metric, dut, v from T where dt=..
-```
-Apply transformation: Grouping to matrix:
+Apply transformation: Grouping to matrix
+****************************************
  Column: dut
  Row: metric
  Cell value : V
