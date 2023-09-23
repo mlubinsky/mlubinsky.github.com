@@ -37,6 +37,8 @@ Bar chart allows to plot categorical values on X-axis:
 
 https://grafana.com/docs/grafana/latest/panels-visualizations/visualizations/bar-chart/
 
+https://play.grafana.org/d/ktMs4D6Mk/5-bar-charts-and-pie-charts?orgId=1
+
 X - metric name
 Y - DUT value
 
