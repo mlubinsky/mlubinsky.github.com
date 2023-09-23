@@ -32,6 +32,14 @@ Bar chart -> Overrides -> fields with name -> In dropdown select description -> 
 
 
 ### Plotting non-time series on X - axis
+
+Bar chart allows to plot categorical values on X-axis:
+
+https://grafana.com/docs/grafana/latest/panels-visualizations/visualizations/bar-chart/
+
+X - metric name
+Y - DUT value
+
 https://community.grafana.com/t/plotting-non-time-series-on-x-axis/70913/9
 
 ```
