@@ -4,6 +4,12 @@ https://arxiv.org/pdf/1907.01060.pdf . (ru)
 
 https://www.youtube.com/watch?v=9pOysIYQH50
 
+https://www.youtube.com/results?search_query=%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D1%8B%D0%B5+%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B+%D0%BC%D1%84%D1%82%D0%B8
+
+https://www.youtube.com/playlist?list=PLs2E8YVkilDB31gq6GcgRg9xZJkQQg5eE
+
+https://www.youtube.com/playlist?list=PL4_hYwCyhAvYVM77cTV0WspsLbtASnAy4
+
 https://www.youtube.com/watch?v=pj-U59XNhs4
 
 https://www.youtube.com/watch?v=YuMIO_3xGuQ
