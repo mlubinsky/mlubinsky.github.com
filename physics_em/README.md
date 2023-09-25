@@ -22,6 +22,8 @@ https://en.wikipedia.org/wiki/Mathematical_descriptions_of_the_electromagnetic_f
 
 ### Geometric Algebra
 
+https://peeterjoot.com/writing/geometric-algebra-for-electrical-engineers/ BOOK
+
 https://en.wikipedia.org/wiki/Jefimenko%27s_equations
 
 https://bivector.net/ Geometric Algebra
