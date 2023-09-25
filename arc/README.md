@@ -1,3 +1,5 @@
+https://twirl.github.io/The-API-Book/index.ru.html  API book
+
 Event - driven applications:
 
 https://enlear.academy/aspects-of-event-driven-apps-aws-c81e80ef7fc6
