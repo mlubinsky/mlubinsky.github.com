@@ -7,9 +7,30 @@ https://planet.postgresql.org/
 
 https://www.postgresonline.com/
 
+### Possgres queue
+
+https://adriano.fyi/posts/2023-09-24-choose-postgres-queue-technology/
+
 https://tembo.io/blog/introducing-pgmq/  Message Queue
 
-https://news.ycombinator.com/item?id=37610899
+https://news.ycombinator.com/item?id=37636841
+
+https://lobste.rs/s/rk3eft/choose_postgres_queue_technology
+
+## Pub/Subscribe, queue, notify
+
+https://news.ycombinator.com/item?id=37636841
+
+https://ctodive.com/hooks-the-secret-feature-powering-the-postgres-ecosystem-f05b3b82e0ba hooks
+
+https://blog.crunchydata.com/blog/message-queuing-using-native-postgresql
+
+https://news.ycombinator.com/item?id=30119285
+
+https://blog.arctype.com/postgres-notify-for-real-time-dashboards/
+
+
+https://news.ycombinator.com/item?id=37610899  Ways to capture changes in Postgres
 
 https://hakibenita.com/sql-for-data-analysis  
 
@@ -1093,17 +1114,7 @@ docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=passwo
 
 <https://rob.conery.io/2019/10/24/virtual-computed-columns-in-postgresql-12/>
 
-## Pub/Subscribe, queue, notify
 
-https://news.ycombinator.com/item?id=37636841
-
-https://ctodive.com/hooks-the-secret-feature-powering-the-postgres-ecosystem-f05b3b82e0ba hooks
-
-https://blog.crunchydata.com/blog/message-queuing-using-native-postgresql
-
-https://news.ycombinator.com/item?id=30119285
-
-https://blog.arctype.com/postgres-notify-for-real-time-dashboards/
 
 <https://habr.com/ru/post/483014/>
 
