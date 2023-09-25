@@ -2,6 +2,10 @@
 
 https://arxiv.org/pdf/1907.01060.pdf . (ru)
 
+https://www.youtube.com/watch?v=9pOysIYQH50
+
+https://www.youtube.com/watch?v=pj-U59XNhs4
+
 https://www.youtube.com/watch?v=YuMIO_3xGuQ
 
 https://bjlkeng.github.io/posts/an-introduction-to-stochastic-calculus/
