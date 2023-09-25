@@ -1093,6 +1093,8 @@ docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=passwo
 
 ## Pub/Subscribe, queue, notify
 
+https://news.ycombinator.com/item?id=37636841
+
 https://ctodive.com/hooks-the-secret-feature-powering-the-postgres-ecosystem-f05b3b82e0ba hooks
 
 https://blog.crunchydata.com/blog/message-queuing-using-native-postgresql
