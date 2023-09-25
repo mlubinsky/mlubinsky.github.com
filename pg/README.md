@@ -11,6 +11,8 @@ https://tembo.io/blog/introducing-pgmq/  Message Queue
 
 https://news.ycombinator.com/item?id=37610899
 
+https://hakibenita.com/sql-for-data-analysis  
+
 ### EXECUTE format
 
 https://www.postgresql.org/docs/current/plpgsql-statements.html
