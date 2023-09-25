@@ -6,6 +6,8 @@ https://news.ycombinator.com/item?id=36243926
 
 ###  Interview questions
 
+https://habr.com/ru/articles/588859/
+
 Duplicates in table: https://blog.devgenius.io/duplicates-in-sql-e7a146d0131
 
 ```
