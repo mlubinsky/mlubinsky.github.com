@@ -7,7 +7,9 @@ https://planet.postgresql.org/
 
 https://www.postgresonline.com/
 
-### Possgres queue
+### Postgres queue
+
+https://habr.com/ru/articles/763188/
 
 https://adriano.fyi/posts/2023-09-24-choose-postgres-queue-technology/
 
