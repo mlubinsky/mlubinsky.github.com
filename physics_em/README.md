@@ -5,6 +5,8 @@ https://www.feynmanlectures.caltech.edu/II_21.html
 
 https://ufn.ru/ru/articles/1988/9/e/ Специальная теория относительности и эффект Саньяка
 
+https://peeterjoot.com/
+
 ### Why is Maxwell's theory so hard to understand?  Dyson
 http://www.damtp.cam.ac.uk/user/tong/em/dyson.pdf
 
