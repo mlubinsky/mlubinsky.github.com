@@ -4,7 +4,7 @@ https://wisser.github.io/Jailer/
 
 https://news.ycombinator.com/item?id=36243926
 
-### Upsret
+### Upsert
 
 https://antonz.org/sql-upsert/
 
