@@ -18,6 +18,10 @@ Mingrammer/diagrams был создан специально для создан
 
 ### Diagrams builders 
 
+https://habr.com/ru/company/epam_systems/blog/538018/
+
+https://news.ycombinator.com/item?id=26940593
+
 https://habr.com/ru/articles/759820/
 
 https://kroki.io/
