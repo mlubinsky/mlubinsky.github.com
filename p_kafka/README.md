@@ -10,6 +10,8 @@ https://www.youtube.com/watch?v=4HV2N0GKhd8
 
 https://www.youtube.com/watch?v=wP-FMNuO3D0
 
+https://joshaustin.tech/blog/kafka-as-an-antipattern/
+
 ### Kafka vs RabbitMQ
 
 https://eranstiller.com/rabbitmq-vs-kafka-an-architects-dilemma-part-1
