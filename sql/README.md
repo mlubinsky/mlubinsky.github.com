@@ -4,6 +4,12 @@ https://wisser.github.io/Jailer/
 
 https://news.ycombinator.com/item?id=36243926
 
+### Upsret
+
+https://antonz.org/sql-upsert/
+
+https://news.ycombinator.com/item?id=37641628
+
 ###  Interview questions
 
 https://habr.com/ru/articles/588859/
