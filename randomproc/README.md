@@ -2,17 +2,19 @@
 
 https://arxiv.org/pdf/1907.01060.pdf . (ru)
 
-https://www.youtube.com/watch?v=9pOysIYQH50
+https://www.youtube.com/watch?v=9pOysIYQH50 Лекторий ФПМИ Случайные процессы 1. Вводные понятия
 
 https://www.youtube.com/results?search_query=%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D1%8B%D0%B5+%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B+%D0%BC%D1%84%D1%82%D0%B8
 
-https://www.youtube.com/playlist?list=PLs2E8YVkilDB31gq6GcgRg9xZJkQQg5eE
+https://www.youtube.com/playlist?list=PLs2E8YVkilDB31gq6GcgRg9xZJkQQg5eE Лекции по случайным процессам 2021 Максим Широбоков
 
-https://www.youtube.com/playlist?list=PL4_hYwCyhAvYVM77cTV0WspsLbtASnAy4
+https://www.youtube.com/playlist?list=PL4_hYwCyhAvYVM77cTV0WspsLbtASnAy4 Случайные процессы (3 курс, весна 2022) - Широбоков М. Г.
 
-https://www.youtube.com/watch?v=pj-U59XNhs4
+https://www.youtube.com/watch?v=pj-U59XNhs4 Сердобольская М.Л. - Теория случайных процессов. Лекции
 
-https://www.youtube.com/watch?v=YuMIO_3xGuQ
+https://www.youtube.com/watch?v=YuMIO_3xGuQ  intro to stochastic models
+
+https://www.youtube.com/watch?v=cxUITPuTiDs Шкляев А.В. - Теория случайных процессов 
 
 https://bjlkeng.github.io/posts/an-introduction-to-stochastic-calculus/
 
@@ -25,7 +27,7 @@ Physical Applications of Stochastic Processes by Prof. V. Balakrishnan,Departmen
 https://www.youtube.com/playlist?list=PLbMVogVj5nJQo8D9D-D6lMqh4FJbPeE_f
 
 
-https://www.youtube.com/playlist?list=PLbMVogVj5nJQqNx0ElSk3Ip04Ofg7B22W
+https://www.youtube.com/playlist?list=PLbMVogVj5nJQqNx0ElSk3Ip04Ofg7B22W Physics - Nonequilibrium Statistical Mechanics
 
 https://machinelearningrecipes.com/blog/post/1687564/stochastic-processes-and-simulations BOOK
 
