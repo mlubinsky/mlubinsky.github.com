@@ -1,3 +1,5 @@
+https://habr.com/ru/companies/epam_systems/articles/538018/
+
 ### D2
 
 https://d2-lang.com/
