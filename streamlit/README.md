@@ -1,7 +1,16 @@
 
 https://nicegui.io/
 
+### Solara 
+https://github.com/widgetti/solara
 
+https://solara.dev/
+
+### StreamSync
+
+https://github.com/streamsync-cloud/streamsync
+
+https://www.streamsync.cloud/getting-started.html
 
 
 ### Streamlit vs Dash vs Voilà vs Panel — Battle of The Python Dashboarding Giants 
