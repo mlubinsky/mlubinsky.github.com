@@ -1,8 +1,8 @@
-### Streamlit Plotly
 
-https://www.youtube.com/watch?v=yg0Y7w4AHhw
+https://nicegui.io/
 
-https://www.youtube.com/watch?v=7yAw1nPareM
+
+
 
 ### Streamlit vs Dash vs Voilà vs Panel — Battle of The Python Dashboarding Giants 
 
@@ -41,6 +41,12 @@ https://github.com/jrieke/best-of-streamlit
 https://www.coursera.org/projects/interactive-dashboards-streamlit-python
 
 https://awesome-streamlit.readthedocs.io/
+
+### Streamlit + Plotly
+
+https://www.youtube.com/watch?v=yg0Y7w4AHhw
+
+https://www.youtube.com/watch?v=7yAw1nPareM
 
 https://towardsdatascience.com/plotly-dash-vs-streamlit-which-is-the-best-library-for-building-data-dashboard-web-apps-97d7c98b938c
 
