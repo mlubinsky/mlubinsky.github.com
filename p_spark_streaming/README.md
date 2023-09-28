@@ -1,6 +1,7 @@
 Book:
 https://www.amazon.com/Scaling-Machine-Learning-Spark-Distributed/dp/1098106822
 
+https://habr.com/ru/companies/otus/articles/764136/
 
 Kafka + PySpark Streaming
 https://medium.com/plumbersofdatascience/kafka-with-spark-streaming-different-approaches-to-read-data-f38616c023b8
