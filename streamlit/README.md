@@ -1,5 +1,7 @@
 ### Streamlit Plotly
 
+https://www.youtube.com/watch?v=yg0Y7w4AHhw
+
 https://www.youtube.com/watch?v=7yAw1nPareM
 
 ### Streamlit vs Dash vs Voilà vs Panel — Battle of The Python Dashboarding Giants 
