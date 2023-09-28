@@ -1,5 +1,7 @@
 https://habr.com/ru/companies/epam_systems/articles/538018/
 
+https://github.com/jgraph/drawio-desktop
+
 ### D2
 
 https://d2-lang.com/
