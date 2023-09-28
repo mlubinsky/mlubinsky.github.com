@@ -24,7 +24,7 @@ https://habr.com/ru/companies/globalsign/articles/758568/
 
 https://news.ycombinator.com/item?id=37110628
  
-
+https://smallpdf.com/ru
 
 ### To invoke Sublime from command line (as subl)  create symbolic link
 
