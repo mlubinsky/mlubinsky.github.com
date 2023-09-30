@@ -2,7 +2,9 @@ Book
 
 https://www.amazon.com/Kafka-Definitive-Real-Time-Stream-Processing/dp/1492043087
 
-https://habr.com/ru/articles/747658/ Kafka Streaming
+https://habr.com/ru/articles/747658/ Kafka Streaming (Python)
+
+https://habr.com/ru/articles/764582/ Kafka + Gp
 
 https://dev.to/miguelaeh/handling-computer-vision-events-in-real-time-with-python-kafka-and-pipeless-4pno 
 
