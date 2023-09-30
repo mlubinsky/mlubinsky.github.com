@@ -1,7 +1,10 @@
 https://medium.com/@techlatest.net/using-jupyter-notebook-with-big-data-a-guide-on-how-to-use-jupyter-notebook-with-big-data-f473af87185b
 
+### PyGWalker
 
-https://www.youtube.com/watch?v=ogyxjkYRgPE PyGWalker
+https://medium.com/@fareedkhandev/best-data-analysis-library-in-python-ad2572288017
+
+https://www.youtube.com/watch?v=ogyxjkYRgPE 
 
 ### How to share Jupyter notebook
 https://medium.com/@techlatest.net/sharing-jupyter-notebooks-a-blog-post-on-how-to-share-jupyter-notebooks-with-others-including-how-2f5632a54f2d
