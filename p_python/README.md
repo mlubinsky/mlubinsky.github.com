@@ -6,6 +6,38 @@ https://wiki.python.org/moin/TimeComplexity
 
 https://github.com/luminousmen/data-toolset   Avro and Parquet 
 
+
+### Float type
+https://www.techbeamers.com/floating-point-numbers-in-python/
+```
+Machine epsilon (eps) is the smallest positive number that, when added to 1.0, results in a value greater than 1.0.
+It measures the precision of the floating-point system.
+In Python, you can access the machine epsilon using sys.float_info.epsilon.
+```
+Example:  Machine epsilon in Python
+```
+import sys
+epsilon = sys.float_info.epsilon
+print(epsilon)  # Output: 2.220446049250313e-16
+```
+
+ Special values in floating-point: inf -inf
+```
+infinity_pos = float('inf')
+infinity_neg = float('-inf')
+nan = float('nan')
+
+print(infinity_pos)  # Output: inf
+print(infinity_neg)  # Output: -inf
+print(nan)           # Output: nan
+```
+  Overflowing a float to infinity
+```
+large_number = 1.7e308     # A very large positive floating-point number
+result = large_number * 2  # Doubling the already large number
+print(result)              # Output: inf
+```
+
 #### Task runners
 
 https://just.systems/man/en/chapter_1.html
