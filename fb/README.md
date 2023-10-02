@@ -2,11 +2,17 @@ https://engineering.fb.com/2023/06/27/developer-tools/meta-developer-tools-open-
 
 https://www.youtube.com/watch?v=GLTR39VIAdc Datas Structures and Algo
 
-https://systemdesign.one/system-design-interview-cheatsheet/
+
 
 https://habr.com/ru/companies/otus/articles/764680/  recommendation system
 
 https://habr.com/ru/companies/otus/articles/764222/  recommendation system
+
+### System design 
+
+https://www.youtube.com/watch?v=o5n85GRKuzk
+
+https://systemdesign.one/system-design-interview-cheatsheet/
 
 ### Interview questions
 
