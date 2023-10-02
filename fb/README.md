@@ -7,3 +7,6 @@ https://systemdesign.one/system-design-interview-cheatsheet/
 https://habr.com/ru/companies/otus/articles/764680/  recommendation system
 
 https://habr.com/ru/companies/otus/articles/764222/  recommendation system
+
+
+https://habr.com/ru/articles/764718/  leetcode
