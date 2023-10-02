@@ -16,4 +16,8 @@ https://www.youtube.com/watch?v=DDRo29ptFwE
 
 https://www.youtube.com/watch?v=xF554Tlzo-c  I solved 541 Leetcode problems. But you need only 150.
 
+https://www.youtube.com/watch?v=kp3fCihUXEg
+
+https://www.youtube.com/watch?v=SVvr3ZjtjI8&list=PLot-Xpze53leF0FeHz2X0aG3zd0mr1AW_
+
 https://habr.com/ru/articles/764718/  leetcode
