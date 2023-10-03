@@ -20,6 +20,8 @@ https://www.youtube.com/watch?v=_K-eupuDVEc  Google system design interview: Des
 
 ### Interview questions
 
+https://www.youtube.com/watch?v=GcW4mgmgSbw  Sliding windows
+
 https://www.youtube.com/watch?v=EM8IgIIiOdY
 
 https://www.youtube.com/watch?v=DDRo29ptFwE
