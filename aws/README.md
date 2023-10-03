@@ -28,6 +28,9 @@ https://asrathore08.medium.com/long-running-jobs-in-step-function-with-system-ma
 
 ### AWS  cheatsheets
 
+https://www.youtube.com/watch?v=FDEpdNdFglI Intro to AWS - The Most Important Services To Learn
+
+
 https://www.datadoghq.com/resources/datadog-lambda-cheatsheet/
 
 https://www.datadoghq.com/resources/datadog-ec2-cheatsheet/
