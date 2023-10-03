@@ -10,9 +10,11 @@ https://habr.com/ru/companies/otus/articles/764222/  recommendation system
 
 ### System design 
 
-https://www.youtube.com/watch?v=o5n85GRKuzk
+https://www.youtube.com/watch?v=o5n85GRKuzk Design Twitter - System Design Interview
 
 https://systemdesign.one/system-design-interview-cheatsheet/
+
+https://www.youtube.com/watch?v=_K-eupuDVEc  Google system design interview: Design Spotify
 
 ### Interview questions
 
