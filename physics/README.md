@@ -12,6 +12,8 @@ https://www.damtp.cam.ac.uk/user/tong/teaching.html
 
 https://www.susanrigetti.com/physics
 
+https://landau.gitlab.io/qm/fall_template/
+
 https://www.youtube.com/watch?v=5ceeTIhIig0 Симметрия в физике частиц, Харук И. В., лекция 1, 13.09.2023
 
 https://diffxweyl.wordpress.com/2020/09/25/physics-textbooks-for-self-study/
