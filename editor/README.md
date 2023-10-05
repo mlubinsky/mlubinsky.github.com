@@ -136,6 +136,10 @@ https://www.lunarvim.org/01-installing.html
 
 ##  Latex  MathJax
 
+https://www.youtube.com/watch?v=u9tqwIzRZ8I Latex
+
+Lyx
+
 https://latex-cookbook.net/
 
 https://news.ycombinator.com/item?id=29672872
