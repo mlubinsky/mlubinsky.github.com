@@ -1,5 +1,8 @@
 https://penrose.ink/siggraph20.html   Math visualization
 
+https://jupyterbook.org/
+
+https://quarto.org/  open-source scientific and technical publishing system
 
 ### fast viewer for CSV and Parquet files and SQLite and DuckDb
 
