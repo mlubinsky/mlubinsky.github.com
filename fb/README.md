@@ -10,6 +10,8 @@ https://habr.com/ru/companies/otus/articles/764222/  recommendation system
 
 ### System design 
 
+https://habr.com/ru/companies/otus/articles/765014/
+
 https://www.youtube.com/watch?v=mCM6QVHD08c
 
 https://habr.com/ru/companies/otus/articles/764902/ Redis Memcahed
