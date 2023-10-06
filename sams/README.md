@@ -44,8 +44,17 @@ Compare It!
 https://www.grigsoft.com/wincmp3.htm
 
 
-### INS (inersial  navigational systems) -  инерциальные навигационные системы (ИНС),
+### Inertial Measurement Unit - IMU
+
+INS (inersial  navigational systems) -  инерциальные навигационные системы (ИНС)
+
+ Блок инерциальных измерений (БИИ, или от англ. IMU — Inertial Measurement Unit) состоит из гироскопов и акселерометров позволяющих отслеживать вращательные и поступательные движения.
+ 
 https://habr.com/ru/companies/whoosh/articles/765628/
+
+
+https://habr.com/ru/articles/255661/ Фильтр Маджвика
+
 
 ### Install Apache on Windows
 
