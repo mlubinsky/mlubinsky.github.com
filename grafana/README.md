@@ -1,6 +1,8 @@
 ### AWS CloudWatch  
 https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 
+### Embedd Webpage to Grafana
+https://stackoverflow.com/questions/65847384/embedding-a-website-in-a-grafana-dashboard
 
 ### Grafana release notes
 
