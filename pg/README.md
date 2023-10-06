@@ -7,6 +7,9 @@ https://planet.postgresql.org/
 
 https://www.postgresonline.com/
 
+stored procedure to rename tables and indexes:
+https://habr.com/ru/articles/765484/
+
 ### Postgres queue
 
 https://habr.com/ru/articles/763188/
