@@ -1,3 +1,5 @@
+shellcheck -o all myshellscript.sh  - check any shell script
+
 https://effective-shell.com/
 
 https://github.com/dbohdan/structured-text-tools
