@@ -43,6 +43,10 @@ dir test.exe 1> myoutput.txt 2>nul
 Compare It!
 https://www.grigsoft.com/wincmp3.htm
 
+
+### INS (inersial  navigational systems) -  инерциальные навигационные системы (ИНС),
+https://habr.com/ru/companies/whoosh/articles/765628/
+
 ### Install Apache on Windows
 
 LoadModule libpq_module /usr/lib/apache/1.3/mod_libpq.so  http.conf
