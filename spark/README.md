@@ -3,6 +3,8 @@ https://books.japila.pl/spark-sql-internals/features/
 
 ### Spark performance
 
+https://habr.com/ru/companies/avito/articles/764996/
+
 https://habr.com/ru/companies/megafon/articles/763864/
 
 https://holdenk.github.io/spark-flowchart/flowchart/error/
