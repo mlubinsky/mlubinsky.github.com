@@ -2,8 +2,6 @@ https://engineering.fb.com/2023/06/27/developer-tools/meta-developer-tools-open-
 
 https://www.youtube.com/watch?v=GLTR39VIAdc Datas Structures and Algo
 
-
-
 https://habr.com/ru/companies/otus/articles/764680/  recommendation system
 
 https://habr.com/ru/companies/otus/articles/764222/  recommendation system
@@ -37,3 +35,38 @@ https://www.youtube.com/watch?v=kp3fCihUXEg
 https://www.youtube.com/watch?v=SVvr3ZjtjI8&list=PLot-Xpze53leF0FeHz2X0aG3zd0mr1AW_
 
 https://habr.com/ru/articles/764718/  leetcode
+
+
+#### Compress string 1:
+
+```
+def rle_encode(data: str) -> str: 
+    encoded = [] 
+    i = 0 
+    while i <= len(data)-1: 
+        count = 1 
+        ch = data[i] 
+        j = i 
+        while j < len(data) - 1: 
+            if data[j] == data[j+1]: 
+                count = count+1 
+                j = j + 1
+            else:
+                break
+        encoded.append(str(count) + ch)
+        i = j + 1
+    return "".join(encoded)
+```
+### Compress string 2:
+```
+from itertools import groupby
+
+def rle_encode(data: str) -> str:
+    return "".join(str(len(list(group_items))) + key
+        for key, group_items in groupby(data))
+
+```
+
+
+
+
