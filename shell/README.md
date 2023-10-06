@@ -1,4 +1,4 @@
-shellcheck -o all myshellscript.sh  - check any shell script
+shellcheck -o all myshellscript.sh  : use shellcheck  to check any shell script
 
 https://effective-shell.com/
 
