@@ -3,6 +3,13 @@ https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 
 ### Embedd Webpage to Grafana
 https://stackoverflow.com/questions/65847384/embedding-a-website-in-a-grafana-dashboard
+```
+<!--
+<iframe style="width: 100%; height: 100%" src="http://gnss-spotlight.ssi.samsung.com:8090/daily_main_container.php?test_date=2023-10-06"></iframe>
+-->
+<iframe style="width: 100%; height: 100%" src="http://gnss-spotlight.ssi.samsung.com:8090/daily_main_container.php?test_date={__from:date:YYYY-MM-DD}"></iframe>
+```
+
 
 ### Grafana release notes
 
