@@ -6,6 +6,7 @@ https://wiki.python.org/moin/TimeComplexity
 
 https://github.com/luminousmen/data-toolset   Avro and Parquet 
 
+https://habr.com/ru/companies/kaspersky/articles/762788/
 
 ### Float type
 https://www.techbeamers.com/floating-point-numbers-in-python/
@@ -188,6 +189,19 @@ total_ordering()
 update_wrapper()
 wraps()
 ```
+
+@functools.cache
+def do_something(a, b):
+
+#### functools reduce()
+```
+from functools import reduce
+city = ['L', 'o', 'n', 'd', 'o', 'n', 2, 0, 2, 0]
+city_to_str = reduce(lambda x, y: str(x) + str(y), city)
+print(city_to_str)
+# London2020
+```
+
 ### Collection module: 
 https://www.pynerds.com/python-collections-module/
 
@@ -659,11 +673,6 @@ https://www.structlog.org/en/stable/index.html struct logging
 
 https://steve.dignam.xyz/2023/04/09/structlog-instead-of-logging/
 
-
-
-
-
-
 https://www.youtube.com/watch?v=wiGkV37Kbxk Raymond Hettinger: Numerical Marvels Inside Python
 
 ### How to contribute to open source python projects:
@@ -789,6 +798,7 @@ digits[::-1]   Result: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
  https://realpython.com/queue-in-python/ <br>
  https://realpython.com/python-deque/ <br>
 https://favtutor.com/blogs/heap-in-python <br>
+
 #### dequeue
 
 ```
@@ -903,8 +913,7 @@ https://www.kdnuggets.com/2023/08/4-python-itertools-filter-functions-probably-d
 
 https://www.youtube.com/watch?v=aumxFs2DO5o
 
-
-#### product()
+#### itertools product()
 ```
 from itertools import product
 
@@ -916,7 +925,8 @@ list_c = [3, 70, 7]
 for a, b, c in product(list_a, list_b, list_c):
     if a + b + c == 2077:
         print(a, b, c)
-```        
+```   
+     
  
 #### Logging exception
 
@@ -1212,15 +1222,7 @@ zipped = zip_longest(numbers, letters, longest, fillvalue='?')
 list(zipped)
 [(1, 'a', 0), (2, 'b', 1), (3, 'c', 2), ('?', '?', 3), ('?', '?', 4)]
 `` 
-### reduce()
-```
-from functools import reduce
 
-city = ['L', 'o', 'n', 'd', 'o', 'n', 2, 0, 2, 0]
-city_to_str = reduce(lambda x, y: str(x) + str(y), city)
-print(city_to_str)
-# London2020
-```
 #### Recursion limit
 ```
 import sys
