@@ -48,6 +48,24 @@ https://www.youtube.com/watch?v=VjHt2fX1nqc
 
 https://www.youtube.com/watch?v=B50d9imVvuE
 
+https://www.youtube.com/watch?v=ybLiU5wU8f4 7 Worst Foods for Prostate Health
+
+Good:
+ - pumpkin seeds
+ - tomatos
+ - salmon
+ - nuts
+ - broccoli
+ 
+To avoid:
+ - process food
+ - alcohol
+ - caffeine
+ - spicy food
+ - sugar
+ - fried food
+ - dalry
+
 ### Dr. Berg 
 https://www.youtube.com/watch?v=jeYe34V7J4Q
 
