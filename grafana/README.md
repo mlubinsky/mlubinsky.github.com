@@ -19,6 +19,8 @@ https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features
 
 ### Stack overflow
 
+https://stackoverflow.com/questions/77268256/grafana-dashboard-how-to-avoid-typing-similar-sqls-which-are-different-only-by
+
 https://community.grafana.com/t/how-to-avoid-typing-similar-sqls-which-are-different-only-by-filter-value-in-where-clause/105296
 
 https://community.grafana.com/t/bar-char-based-on-sql-with-2-items-in-group-by/103510
