@@ -10,6 +10,47 @@ https://www.postgresonline.com/
 stored procedure to rename tables and indexes:
 https://habr.com/ru/articles/765484/
 
+
+### Is it possible to pass params in view?
+
+https://stackoverflow.com/questions/11401749/pass-in-where-parameters-to-postgresql-view
+
+```
+CREATE OR REPLACE FUNCTION param_labels(_region_label text, _model_label text)
+  RETURNS TABLE (param_label text, param_graphics_label text)
+  LANGUAGE sql AS
+$func$
+SELECT p.param_label, p.param_graphics_label
+FROM   parameters      p 
+JOIN   parameter_links l USING (param_id)
+JOIN   regions         r USING (region_id)
+JOIN   models          m USING (model_id)
+WHERE  p.active
+AND    r.region_label = $1 
+AND    m.model_label = $2
+ORDER  BY p.param_graphics_label;
+$func$;
+```
+Another example:
+```
+create or replace function label_params(parm1 text, parm2 text)
+  returns table (param_label text, param_graphics_label text)
+as
+$body$
+  select ...
+  WHERE region_label = $1 
+     AND model_id = (SELECT model_id FROM models WHERE model_label = $2)
+  ....
+$body$
+language sql;
+
+Usage:
+
+select *
+from label_params('foo', 'bar')
+```
+Since Postgres 9.2 you can use the declared parameter names in place of $1 and $2 in SQL functions. 
+
 ### Postgres queue
 
 https://habr.com/ru/articles/763188/
