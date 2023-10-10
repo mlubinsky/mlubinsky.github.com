@@ -55,7 +55,28 @@ https://habr.com/ru/companies/whoosh/articles/765628/
 
 https://habr.com/ru/articles/255661/ Фильтр Маджвика
 
+### TODO
+```
+Weekly MX KPI
+AGPS (m)  labels are wrong  
+TODO
+****** Order for MX
+1 Percentage Total fix count
+2 Percentage SpecIn 2D Error 30 m
+3 Percentage Speed 20 km/h
+4 Percentage VDR Engage count
 
+Add for Internal dashboard (Heading | 2DError| Speed) 90 panel
+
+Fix Type: All, VDR, non_VDR for MX and Internal
+
+Add CEP90 for Daily
+
+How to populate programmatically threshold and max ?
+
+
+Daily dashboard:  model variable should be populated based on the selected date
+```
 ### Install Apache on Windows
 
 LoadModule libpq_module /usr/lib/apache/1.3/mod_libpq.so  http.conf
