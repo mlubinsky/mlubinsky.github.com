@@ -51,6 +51,65 @@ from label_params('foo', 'bar')
 ```
 Since Postgres 9.2 you can use the declared parameter names in place of $1 and $2 in SQL functions. 
 
+
+### Passing array to function
+
+```
+create or replace function weekly_kpi (
+_fix text, 
+_source text, 
+_chipset text[], 
+_model text[], 
+_category text, 
+_metric text, 
+_start_date DATE, 
+_end_date DATE)
+returns table (report_date DATE, description   text,  " "   float)
+language sql as
+$func$
+select report_date, description,
+CASE 
+  WHEN _fix = 'AVG_ALL'     THEN kpi_value_avg
+  WHEN _fix = 'AVG_VDR'     THEN kpi_value_avg_vdr
+  WHEN _fix = 'AVG_NON_VDR' THEN kpi_value_avg_nonvdr
+  WHEN _fix = 'STD_ALL'     THEN kpi_value_std
+  WHEN _fix = 'STD_VDR'     THEN kpi_value_std_vdr
+  WHEN _fix = 'STD_NON_VDR' THEN kpi_value_std_nonvdr
+  WHEN _fix = 'MAX_ALL'     THEN kpi_value_max
+  WHEN _fix = 'MAX_VDR'     THEN kpi_value_max_vdr
+  WHEN _fix = 'MAX_NON_VDR' THEN kpi_value_max_nonvdr
+ END  as " "
+from kpi 
+where kpi_source   = _source
+  and chipset = ANY(_chipset)
+  and model = ANY(_model)
+  and kpi_category =  _category
+  and kpi_metric= _metric
+  and report_date >= _start_date and report_date <= _end_date
+$func$;
+
+select * from weekly_kpi(
+'AVG_ALL', 
+'Internal-RootEVT1', 
+'{Apple,Berry, K43E1,Kiwi}'::text[], 
+'{Apple_A15_Bionic,Full Android on S5E9945 ERD,Pixel_6_Pro,Pixel_7_Pro,RootEVT1,SM-G991N,SM-G996N,SM-S911N,SM-S916N}'::text[],
+'VDR_ParkingGarage-HomePlus',
+'2DError_CEP50',
+DATE('2023-07-11T07:00:00Z') ,
+DATE('2023-08-31T06:59:59Z')
+)
+----------------------------------------
+SELECT STRING_TO_ARRAY(
+'HELLO WELCOME TO COMMAND PROMPT', ' ');
+
+{HELLO,WELCOME,TO,COMMAND,PROMPT}
+
+
+```
+
+
+
+
 ### Postgres queue
 
 https://habr.com/ru/articles/763188/
