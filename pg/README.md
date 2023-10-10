@@ -98,6 +98,18 @@ select * from weekly_kpi(
 DATE('2023-07-11T07:00:00Z') ,
 DATE('2023-08-31T06:59:59Z')
 )
+
+------- Usage
+select * from weekly_kpi(
+'$value', 
+'$source', 
+ ARRAY[$chipset],
+ ARRAY[$model],
+'VDR_ParkingGarage-HomePlus',
+'2DError_CEP50',
+DATE($__timeFrom()) ,
+DATE($__timeTo())
+)
 ----------------------------------------
 SELECT STRING_TO_ARRAY(
 'HELLO WELCOME TO COMMAND PROMPT', ' ');
