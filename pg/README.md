@@ -104,7 +104,16 @@ SELECT STRING_TO_ARRAY(
 
 {HELLO,WELCOME,TO,COMMAND,PROMPT}
 
-
+select * from weekly_kpi(
+'$value', 
+'$source', 
+STRING_TO_ARRAY(ARRAY_TO_STRING(ARRAY[$chipset],','),',')::text[],
+STRING_TO_ARRAY(ARRAY_TO_STRING(ARRAY[$model]  ,','),',')::text[],
+'VDR_ParkingGarage-HomePlus',
+'2DError_CEP50',
+DATE($__timeFrom()) ,
+DATE($__timeTo())
+)
 ```
 
 
