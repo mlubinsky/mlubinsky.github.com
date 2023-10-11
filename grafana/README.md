@@ -21,6 +21,8 @@ https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features
 
 https://community.grafana.com/t/issue-with-transformation-prepare-time-series-multi-frame-time-series/105397
 
+https://stackoverflow.com/questions/77276225/grafana-dashboard-bar-chart-for-time-series
+
 https://stackoverflow.com/questions/77268256/grafana-dashboard-how-to-avoid-typing-similar-sqls-which-are-different-only-by
 
 https://community.grafana.com/t/how-to-avoid-typing-similar-sqls-which-are-different-only-by-filter-value-in-where-clause/105296
