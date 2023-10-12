@@ -1,3 +1,17 @@
+
+Great links to stat resources
+https://news.ycombinator.com/item?id=37854846
+
+https://jasp-stats.org/
+
+https://xcelab.net/rm/statistical-rethinking/  A Bayesian Course with Examples in R and Stan (& PyMC3 & brms & Julia too
+
+https://users.aalto.fi/~ave/ROS.pdf  Regression and Other Stories
+
+https://openintro-ims2.netlify.app/
+
+https://brilliant.org/courses/statistics/
+
 ### queueing-theory
 
 https://github.com/joelparkerhenderson/queueing-theory
