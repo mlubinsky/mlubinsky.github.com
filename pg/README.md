@@ -12,6 +12,7 @@ https://habr.com/ru/articles/765484/
 
 show timezone; -- America/Los_Angeles
 
+ ALTER DATABASE db_name SET TIMEZONE TO 'new_timezone';
 
 ### Is it possible to pass params in view?
 
