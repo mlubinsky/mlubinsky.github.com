@@ -1,4 +1,8 @@
+https://www.statlearning.com/
+
 https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/edit?pli=1  Introduction to probability 2nd edition
+
+https://www.thegreatcourses.com/courses/learning-statistics-concepts-and-applications-in-r  Learning Statistics: Concepts and Applications in R
 
 Great links to stat resources
 https://news.ycombinator.com/item?id=37854846
