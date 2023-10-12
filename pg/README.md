@@ -10,6 +10,8 @@ https://www.postgresonline.com/
 stored procedure to rename tables and indexes:
 https://habr.com/ru/articles/765484/
 
+show timezone; -- America/Los_Angeles
+
 
 ### Is it possible to pass params in view?
 
