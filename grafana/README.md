@@ -17,9 +17,12 @@ https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 default_timezone = UTC
 ```
 
-### Start Grafana on Mac
-sudo brew services start grafana
+### Date Selector  in Grafana variable 
+```
+select ${__from:date:YYYY-MM-DD}  
 
+select DATE($__timeFrom()) 
+```
 
 ### How to Embedd external Webpage to Grafana
 https://stackoverflow.com/questions/65847384/embedding-a-website-in-a-grafana-dashboard
