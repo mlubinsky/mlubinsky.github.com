@@ -35,6 +35,8 @@ So combining:
 
 select
 to_char(to_timestamp(${__from}),'YYYY-MM-DD');
+
+select metric from daily_kpi where dt = DATE(substr($__timeFrom(), 1, 10) );
  
 
 ```
