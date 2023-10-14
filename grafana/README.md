@@ -4,7 +4,18 @@ https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 ### grafana.ini
 ./System/Volumes/Data/opt/homebrew/etc/grafana/grafana.ini
 ./System/Volumes/Data/opt/homebrew/Cellar/grafana/10.1.1/.bottle/etc/grafana/grafana.ini
+```
+[date_formats]
+# For information on what formatting patterns that are supported https://momentjs.com/docs/#/displaying/
 
+# Default system date format used in time range picker and other places where full time is displayed
+;full_date = YYYY-MM-DD HH:mm:ss
+;full_date = YYYY-MM-DD
+
+
+;default_timezone = browser
+default_timezone = UTC
+```
 
 ### How to Embedd Webpage to Grafana
 https://stackoverflow.com/questions/65847384/embedding-a-website-in-a-grafana-dashboard
