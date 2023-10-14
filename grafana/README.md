@@ -20,11 +20,18 @@ default_timezone = UTC
 ### Date Selector  in Grafana variable 
 ```
 select $__timeFrom()        -- 2023-01-01T08:00:00Z
+
+select substr($__timeFrom(), 1, 10 );
+
 select DATE($__timeFrom())  -- 1672531200000
 
 select ${__from} -- 1672560000000
 select ${__from:date:YYYY-MM-DD}  -- 2021
 
+Postgres:
+SELECT to_char(to_timestamp(1195374767),'YYYY-MM-DD');
+
+So final 
 
 ```
 
