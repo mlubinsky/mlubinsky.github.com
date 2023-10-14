@@ -19,9 +19,13 @@ default_timezone = UTC
 
 ### Date Selector  in Grafana variable 
 ```
-select ${__from:date:YYYY-MM-DD}  
+select $__timeFrom()        -- 2023-01-01T08:00:00Z
+select DATE($__timeFrom())  -- 1672531200000
 
-select DATE($__timeFrom()) 
+select ${__from} -- 1672560000000
+select ${__from:date:YYYY-MM-DD}  -- 2021
+
+
 ```
 
 ### How to Embedd external Webpage to Grafana
