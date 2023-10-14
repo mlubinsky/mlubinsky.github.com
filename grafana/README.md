@@ -31,7 +31,11 @@ select ${__from:date:YYYY-MM-DD}  -- 2021
 Postgres:
 SELECT to_char(to_timestamp(1195374767),'YYYY-MM-DD');
 
-So final 
+So combining:
+
+select
+to_char(to_timestamp(${__from}),'YYYY-MM-DD');
+ 
 
 ```
 
