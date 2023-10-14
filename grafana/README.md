@@ -1,7 +1,12 @@
 ### AWS CloudWatch  
 https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 
-### Embedd Webpage to Grafana
+### grafana.ini
+./System/Volumes/Data/opt/homebrew/etc/grafana/grafana.ini
+./System/Volumes/Data/opt/homebrew/Cellar/grafana/10.1.1/.bottle/etc/grafana/grafana.ini
+
+
+### How to Embedd Webpage to Grafana
 https://stackoverflow.com/questions/65847384/embedding-a-website-in-a-grafana-dashboard
 ```
 <!--
