@@ -1,6 +1,7 @@
 Postgre vs MySQL 
 https://www.bytebase.com/blog/postgres-vs-mysql/
 
+
 https://www.reddit.com/r/PostgreSQL/
 
 https://planet.postgresql.org/
@@ -10,9 +11,24 @@ https://www.postgresonline.com/
 stored procedure to rename tables and indexes:
 https://habr.com/ru/articles/765484/
 
+### Timezone
 show timezone; -- America/Los_Angeles
 
  ALTER DATABASE db_name SET TIMEZONE TO 'new_timezone';
+
+
+### Web Interface to Postgres PostREST, etc
+
+https://habr.com/ru/articles/767442/
+
+https://habr.com/ru/articles/757990/
+
+
+https://github.com/apostoldevel/module-PGFetch
+
+https://github.com/olifolkerd/tabulator
+
+https://tabulator.info/docs/5.5
 
 ### Is it possible to pass params in view?
 
