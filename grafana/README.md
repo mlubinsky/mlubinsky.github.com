@@ -59,6 +59,10 @@ https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features
 
 ### Stack overflow
 
+https://stackoverflow.com/questions/77304277/grafana-does-not-update-the-variable-which-depends-on-datetime-picker
+
+https://community.grafana.com/t/grafana-does-not-update-the-variable-which-depends-on-datetime-picker/105690
+
 https://community.grafana.com/t/issue-with-transformation-prepare-time-series-multi-frame-time-series/105397
 
 https://stackoverflow.com/questions/77276225/grafana-dashboard-bar-chart-for-time-series
