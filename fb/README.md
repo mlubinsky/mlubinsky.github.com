@@ -20,6 +20,17 @@ https://systemdesign.one/system-design-interview-cheatsheet/
 
 https://www.youtube.com/watch?v=_K-eupuDVEc  Google system design interview: Design Spotify
 
+
+
+### Blind 75 LeetCode questions refer to a curated list of the 75 most frequently asked LeetCode algorithms questions. 
+
+I bought it:
+https://www.udemy.com/course/blind-75-leetcode-questions-ace-algorithms-coding-interview/learn/lecture/37964360#overview
+
+https://www.youtube.com/watch?v=em4EP-IiKac
+
+https://medium.com/codex/leetcode-167-two-sum-ii-input-array-is-sorted-python-solution-daa49d13215f
+
 ### Interview questions
 
 https://www.youtube.com/playlist?list=PLQZEzAa9dfpkv0kZkjomTj553gQyafNiB  Solving All 150 NeetCode Problems
