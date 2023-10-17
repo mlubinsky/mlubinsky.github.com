@@ -10,13 +10,15 @@ https://habr.com/ru/companies/otus/articles/764222/  recommendation system
 ### Binary tree
 https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
 
-depth-first 
+```
 breadth-first = lever order
 
-in-order
+depth-first has 3 variations:
+
+in-order  (for Binary Search Tree it gives nodes in sorted manner)
 pre-order
 post-order
-
+```
 ### Invert binary tree
 https://www.youtube.com/watch?v=4kRn1xlDJlY&list=PLQZEzAa9dfpkv0kZkjomTj553gQyafNiB&index=11
 ```
