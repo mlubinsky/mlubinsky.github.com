@@ -8,8 +8,10 @@ https://habr.com/ru/companies/otus/articles/764222/  recommendation system
 
 
 ### Binary tree
-depth - first
-bread order
+https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
+
+depth-first 
+breadth-first = lever order
 
 in-order
 pre-order
