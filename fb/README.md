@@ -6,6 +6,15 @@ https://habr.com/ru/companies/otus/articles/764680/  recommendation system
 
 https://habr.com/ru/companies/otus/articles/764222/  recommendation system
 
+
+### Binary tree
+depth - first
+bread order
+
+in-order
+pre-order
+post-order
+
 ### Invert binary tree
 https://www.youtube.com/watch?v=4kRn1xlDJlY&list=PLQZEzAa9dfpkv0kZkjomTj553gQyafNiB&index=11
 ```
