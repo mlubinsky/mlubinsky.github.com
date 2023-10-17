@@ -13,11 +13,9 @@ https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
 #### max depth
 ````
 def maxDepth(root):
-   left = right = 0
+ 
    if not root return 0
-   if root.left: left +=maxDepth(root.left)
-   if root.right: right +=maxDepth(root.right)
-   return max(left,right)
+   return max(maxDepth(root.right),  maxDepth(root.left)) + 1
 
 ````
 
