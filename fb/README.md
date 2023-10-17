@@ -10,15 +10,16 @@ https://habr.com/ru/companies/otus/articles/764222/  recommendation system
 https://www.youtube.com/watch?v=4kRn1xlDJlY&list=PLQZEzAa9dfpkv0kZkjomTj553gQyafNiB&index=11
 ```
 def helper(root):
-  if root.left:      helper(root.left)
-  if root.right:     helper(root.right)
+  if not root: return None
+  helper(root.left)
+  helper(root.right)
 
   # current node:
   tmp = root.left
-  root.left = root.rigth
+  root.left = root.right
   root.right = tmp
 
-  if not root: return None
+
 
 def invert(root):
     helper(root)
