@@ -51,6 +51,30 @@ def invert(root):
     helper(root)
     return root
 ```
+### min # of removes to make string  with parenteses valid
+ https://www.youtube.com/watch?v=PDO3vvly7eU
+````
+ def min_removes(s):
+    incidesToRemove = set()
+    stack=list()
+    for i, c in enumerate(s):
+       if c == '(':
+          stack.append(c)
+       elif c == ')':
+          if stack: incidesToRemove.add(i)
+          else: stack.pop()
+     while stack:
+          incidesToRemove.add(stack.pop())
+
+     result = list() 
+     for i in range(len(s)-1):
+         if i not in ncidesToRemove:
+         result.append(s[i])
+     return result
+       
+
+
+```
 ### System design 
 
 https://habr.com/ru/companies/otus/articles/765014/
