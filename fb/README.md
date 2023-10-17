@@ -15,9 +15,9 @@ breadth-first = lever order
 
 depth-first has 3 variations:
 
-in-order  (for Binary Search Tree it gives nodes in sorted manner)
-pre-order
-post-order
+in-order:  left subtree, current node, right subtree  (for Binary Search Tree it gives nodes in sorted manner)
+pre-order: current node, left subtree, right subtree
+post-order: left subtree, right subtree, current node
 ```
 ### Invert binary tree
 https://www.youtube.com/watch?v=4kRn1xlDJlY&list=PLQZEzAa9dfpkv0kZkjomTj553gQyafNiB&index=11
