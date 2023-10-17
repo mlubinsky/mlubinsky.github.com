@@ -20,6 +20,9 @@ https://systemdesign.one/system-design-interview-cheatsheet/
 
 https://www.youtube.com/watch?v=_K-eupuDVEc  Google system design interview: Design Spotify
 
+3sum a+b+c
+
+all permutations of string without recursion
 
 
 ### Blind 75 LeetCode questions refer to a curated list of the 75 most frequently asked LeetCode algorithms questions. 
