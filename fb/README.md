@@ -18,9 +18,11 @@ def maxDepth(root):
    return max(maxDepth(root.right),  maxDepth(root.left)) + 1
 
 ````
+### diameter
 
+https://www.youtube.com/watch?v=X7_5fYEVIIU&list=PLQZEzAa9dfpkv0kZkjomTj553gQyafNiB&index=16
 
-
+### traversal
 ```
 breadth-first = lever order
 
