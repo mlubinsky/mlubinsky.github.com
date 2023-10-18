@@ -8,6 +8,18 @@ https://github.com/luminousmen/data-toolset   Avro and Parquet
 
 https://habr.com/ru/companies/kaspersky/articles/762788/
 
+### random notes
+```
+from math import factorial
+factorial(3)
+6
+
+list('abc')
+['a', 'b', 'c']
+w = [c for c in 'abc']
+w
+['a', 'b', 'c']
+``` 
 ### Float type
 https://www.techbeamers.com/floating-point-numbers-in-python/
 ```
