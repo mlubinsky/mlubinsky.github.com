@@ -214,15 +214,17 @@ def topKFrequent(self, nums, k):
 ```
 ### Blind 75 LeetCode questions refer to a curated list of the 75 most frequently asked LeetCode algorithms questions. 
 
- 
+ https://github.com/david-legend/python-algorithms/
+
+ https://github.com/hotsno/blind-75/tree/main/solutions
 
 https://github.com/abhimathore/Grind-75
 
-https://github.com/hotsno/blind-75/tree/main/solutions
+
 
 https://github.com/redayzarra/leetcode
 
-https://github.com/david-legend/python-algorithms
+ 
 
 
 I bought it:
