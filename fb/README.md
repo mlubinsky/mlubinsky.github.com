@@ -10,6 +10,54 @@ https://habr.com/ru/companies/otus/articles/764222/  recommendation system
 ### Binary tree
 https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
 
+### Tree traversal
+```
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+from collections import deque
+class Solution:
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        if not root:
+            return []
+        d = deque()
+        d.append(root)
+        res = []
+        while d:
+            level = []
+            for i in range(len(d)):
+                node = d.popleft()
+                level.append(node.val)
+                if node.left:
+                    d.append(node.left)
+                if node.right:
+                    d.append(node.right)
+            res.append(level)
+        return res
+```
+ 
+#### breadth-first = lever order
+
+#### depth-first has 3 variations:
+```
+in-order:  left subtree, current node, right subtree  (for Binary Search Tree it gives nodes in sorted manner)
+pre-order: current node, left subtree, right subtree
+post-order: left subtree, right subtree, current node
+```
+### Compare is 2 trees are the same
+```
+    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        if not p and not q:
+            return True
+        if not p or not q:
+            return False
+        if p.val != q.val:
+            return False
+        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+ ```       
+
 #### max depth
 ```
 def maxDepth(root):
@@ -22,16 +70,7 @@ def maxDepth(root):
 
 https://www.youtube.com/watch?v=X7_5fYEVIIU&list=PLQZEzAa9dfpkv0kZkjomTj553gQyafNiB&index=16
 
-### Tree traversal
-```
-breadth-first = lever order
 
-depth-first has 3 variations:
-
-in-order:  left subtree, current node, right subtree  (for Binary Search Tree it gives nodes in sorted manner)
-pre-order: current node, left subtree, right subtree
-post-order: left subtree, right subtree, current node
-```
 ### Invert binary tree
 https://www.youtube.com/watch?v=4kRn1xlDJlY&list=PLQZEzAa9dfpkv0kZkjomTj553gQyafNiB&index=11
 ```
@@ -51,6 +90,42 @@ def invert(root):
     helper(root)
     return root
 ```
+
+### Binary Tree Maximum Path Sum
+https://github.com/hotsno/blind-75/blob/main/solutions
+```
+class Solution:
+    res = float('-inf')
+----------------------------
+    def maxPathSum(self, root: Optional[TreeNode]) -> int:
+        self.helper(root)
+        return self.res
+---------------------
+    def helper(self, root):
+        if not root:
+            return 0
+        left, right = self.helper(root.left), self.helper(root.right)
+        path_max = max(root.val, root.val + left, root.val + right)
+        self.res = max(self.res, path_max, root.val + left + right)
+        return path_max
+```
+
+### Brackets:
+```
+    def isValid(self, s: str) -> bool:
+        stack = []
+        d = {")":"(", "}":"{", "]":"["}
+        for c in s:
+            if c in "([{":
+                stack.append(c)
+            if c in ")]}":
+                if len(stack) == 0:
+                    return False
+                if d[c] != stack.pop():
+                    return False
+        return len(stack) == 0
+```
+
 ### min # of removes to make string  with parenteses valid
  https://www.youtube.com/watch?v=PDO3vvly7eU
 ```
