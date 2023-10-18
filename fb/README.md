@@ -94,9 +94,52 @@ https://www.youtube.com/watch?v=_K-eupuDVEc  Google system design interview: Des
 all permutations of string without recursion
 
 
+### Buy /Sell Stock
+    def maxProfit(self, prices: List[int]) -> int:
+        low = prices[0]
+        res = 0
+        for price in prices:
+            if price < low:
+                low = price
+            res = max(res, price - low)
+        return res
+        
+
+
+
+### Return K most frequent elements in the list IN ANY ORDER
+
+#####  Use the counter function to count the elements
+```
+from collections import Counter
+def topKFrequent(self, nums, k):
+
+      count = Counter(nums)  # builds the dict: item: frequency
+      return [c[0] for c in count.most_common(k)]
+```
+
+
+#####   Use a max heap
+```
+from collections import Cunter
+
+def topKFrequent(self, nums, k):
+      count = Counter(nums)
+      heap = []
+      ans = []
+
+      for i in count:
+        heappush(heap, (-count[i], i))
+
+      while k:
+        ans.append(heappop(heap)[1])
+        k -= 1
+
+      return ans
+```
 ### Blind 75 LeetCode questions refer to a curated list of the 75 most frequently asked LeetCode algorithms questions. 
 
-https://github.com/gosiqueira/blind-75
+ 
 
 https://github.com/abhimathore/Grind-75
 
