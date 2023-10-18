@@ -101,6 +101,9 @@ https://www.udemy.com/course/blind-75-leetcode-questions-ace-algorithms-coding-i
 
 https://www.youtube.com/watch?v=em4EP-IiKac
 
+https://www.youtube.com/watch?v=KLlXCFG5TnA&list=PLot-Xpze53ldVwtstag2TL4HQhAnC8ATf blind-75 solutions
+
+
 https://medium.com/codex/leetcode-167-two-sum-ii-input-array-is-sorted-python-solution-daa49d13215f
 
 ### Interview questions
