@@ -11,18 +11,18 @@ https://habr.com/ru/companies/otus/articles/764222/  recommendation system
 https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
 
 #### max depth
-````
+```
 def maxDepth(root):
  
    if not root return 0
    return max(maxDepth(root.right),  maxDepth(root.left)) + 1
 
-````
-### diameter
+```
+### Binary tree diameter
 
 https://www.youtube.com/watch?v=X7_5fYEVIIU&list=PLQZEzAa9dfpkv0kZkjomTj553gQyafNiB&index=16
 
-### traversal
+### Tree traversal
 ```
 breadth-first = lever order
 
@@ -53,7 +53,7 @@ def invert(root):
 ```
 ### min # of removes to make string  with parenteses valid
  https://www.youtube.com/watch?v=PDO3vvly7eU
-````
+```
  def min_removes(s):
     incidesToRemove = set()
     stack=list()
@@ -95,6 +95,17 @@ all permutations of string without recursion
 
 
 ### Blind 75 LeetCode questions refer to a curated list of the 75 most frequently asked LeetCode algorithms questions. 
+
+https://github.com/gosiqueira/blind-75
+
+https://github.com/abhimathore/Grind-75
+
+https://github.com/hotsno/blind-75/tree/main/solutions
+
+https://github.com/redayzarra/leetcode
+
+https://github.com/david-legend/python-algorithms
+
 
 I bought it:
 https://www.udemy.com/course/blind-75-leetcode-questions-ace-algorithms-coding-interview/learn/lecture/37964360#overview
