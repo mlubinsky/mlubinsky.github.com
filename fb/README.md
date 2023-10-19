@@ -7,6 +7,8 @@ https://habr.com/ru/companies/otus/articles/764680/  recommendation system
 https://habr.com/ru/companies/otus/articles/764222/  recommendation system
 
 
+https://walkccc.me/LeetCode/ Solutions
+
 ### Binary tree
 https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
 
