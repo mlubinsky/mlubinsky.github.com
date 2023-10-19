@@ -9,6 +9,8 @@ https://habr.com/ru/companies/otus/articles/764222/  recommendation system
 
 https://walkccc.me/LeetCode/ Solutions
 
+https://www.algoexpert.io/ I bought it!
+
 ### Binary tree
 https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
 
