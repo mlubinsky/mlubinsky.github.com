@@ -7,7 +7,12 @@ https://habr.com/ru/companies/otus/articles/764680/  recommendation system
 https://habr.com/ru/companies/otus/articles/764222/  recommendation system
 
 
+### Leetcode
 https://walkccc.me/LeetCode/ Solutions
+
+https://dxmahata.gitbooks.io/leetcode-python-solutions/content/
+
+https://github.com/ChenglongChen/LeetCode-3/tree/master/Python
 
 https://www.algoexpert.io/ I bought it!
 
