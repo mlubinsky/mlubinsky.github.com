@@ -125,6 +125,12 @@ https://realpython.com/python-flatten-list/
  count("value") - returns 0 if not found 
 ```
 
+### List comprehention  [expression for item in list if conditional]
+
+list comprehension is the process of creating a new list from an existing list. Or, you can say that it is Python's unique way of appending a for loop to a list
+```
+list_b = [i**2 for i in range(1, 20)]
+```
 ### List as stack or queue
 https://realpython.com/how-to-implement-python-stack/
 https://realpython.com/queue-in-python/
@@ -156,7 +162,7 @@ queue.pop(0) #'Linda'
 
 However, in performance-critical situations or when your lists are large, you may want to use more efficient data types, such as collections.deque, for example.
 
-### Set
+### Set  -  mutable
 ```
 my_list = [1, 2, 2, 3, 4, 4, 4]
 the_set = set(my_list) 
@@ -176,6 +182,8 @@ my_set.remove('x') # If the element is not found in the set, the remove() method
  {expression for item in iterable if condition}
  numbers = [1, 2, 3, 4, 5, 6]
  even_numbers = {x for x in numbers if x % 2 != 0}
+
+ frozen_numbers = frozenset(numbers)
 ```
 ### Import
 
