@@ -7,7 +7,10 @@ https://wiki.python.org/moin/TimeComplexity
 https://github.com/luminousmen/data-toolset   Avro and Parquet 
 
 https://habr.com/ru/companies/kaspersky/articles/762788/
-
+```
+strings = [string1, string2, string3]
+string1 = "".join(strings)
+```
 ### random notes
 ```
 from math import factorial
