@@ -1,6 +1,10 @@
 ### AWS CloudWatch  
 https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 
+### import dashboard
+
+http://105.140.16.223:3000/dashboard/import
+
 ### grafana.ini
 ./System/Volumes/Data/opt/homebrew/etc/grafana/grafana.ini
 ./System/Volumes/Data/opt/homebrew/Cellar/grafana/10.1.1/.bottle/etc/grafana/grafana.ini
