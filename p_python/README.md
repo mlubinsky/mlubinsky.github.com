@@ -156,6 +156,27 @@ queue.pop(0) #'Linda'
 
 However, in performance-critical situations or when your lists are large, you may want to use more efficient data types, such as collections.deque, for example.
 
+### Set
+```
+my_list = [1, 2, 2, 3, 4, 4, 4]
+the_set = set(my_list) 
+
+my_set.remove('x') # If the element is not found in the set, the remove() method will raise a KeyError
+
+ discard()  removes the specified element if it's present, but if it's not, the method does nothing and doesn't raise an error
+ clear()
+ combined = a.union(b)
+ combined = a | b
+ common_elements = a.intersection(b)
+ common_elements = a & b
+ diff_elements = a.difference(b)
+ diff_elements = a - b
+ x.issubset(y)
+ (y.issuperset(x)
+ {expression for item in iterable if condition}
+ numbers = [1, 2, 3, 4, 5, 6]
+ even_numbers = {x for x in numbers if x % 2 != 0}
+```
 ### Import
 
 https://coderslegacy.com/how-to-import-python-files-from-subdirectories/
