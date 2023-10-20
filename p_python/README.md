@@ -18,7 +18,7 @@ reverse_string = input_string[::-1]
 def reverse_string(input_string):
     return ''.join(reversed(input_string))
 
-for i in reversed(range(5)):
+for i in reversed(range(5)):  # range(10)[::-1]
     print(i)
 ```
 ### random notes
