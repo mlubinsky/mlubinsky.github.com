@@ -161,6 +161,8 @@ class Solution:
 ```
 ### System design 
 
+https://github.com/ByteByteGoHq/system-design-101
+
 https://habr.com/ru/companies/otus/articles/765014/
 
 https://www.youtube.com/watch?v=mCM6QVHD08c
