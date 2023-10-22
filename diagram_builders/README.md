@@ -2,6 +2,10 @@ https://habr.com/ru/companies/epam_systems/articles/538018/
 
 https://github.com/jgraph/drawio-desktop
 
+https://www.ilograph.com/blog/posts/concrete-diagramming-models/
+
+https://c4model.com/
+
 ### D2
 
 https://d2-lang.com/
