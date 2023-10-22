@@ -1,3 +1,22 @@
+### System design 
+
+https://habr.com/ru/articles/769018/ event driving arc
+
+https://github.com/ByteByteGoHq/system-design-101
+
+https://habr.com/ru/companies/otus/articles/765014/
+
+https://www.youtube.com/watch?v=mCM6QVHD08c
+
+https://habr.com/ru/companies/otus/articles/764902/ Redis Memcahed
+
+https://www.youtube.com/watch?v=o5n85GRKuzk Design Twitter - System Design Interview
+
+https://systemdesign.one/system-design-interview-cheatsheet/
+
+https://www.youtube.com/watch?v=_K-eupuDVEc  Google system design interview: Design Spotify
+
+
 https://engineering.fb.com/2023/06/27/developer-tools/meta-developer-tools-open-source/
 
 https://www.youtube.com/watch?v=GLTR39VIAdc Datas Structures and Algo
@@ -159,21 +178,7 @@ class Solution:
 
 
 ```
-### System design 
 
-https://github.com/ByteByteGoHq/system-design-101
-
-https://habr.com/ru/companies/otus/articles/765014/
-
-https://www.youtube.com/watch?v=mCM6QVHD08c
-
-https://habr.com/ru/companies/otus/articles/764902/ Redis Memcahed
-
-https://www.youtube.com/watch?v=o5n85GRKuzk Design Twitter - System Design Interview
-
-https://systemdesign.one/system-design-interview-cheatsheet/
-
-https://www.youtube.com/watch?v=_K-eupuDVEc  Google system design interview: Design Spotify
 
 3sum a+b+c
 
