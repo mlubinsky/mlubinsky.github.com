@@ -35,6 +35,78 @@ https://github.com/ChenglongChen/LeetCode-3/tree/master/Python
 
 https://www.algoexpert.io/ I bought it!
 
+### Calculate maximum value using ‘+’ or ‘*’ sign between all gigits in a string of digits
+```
+The maximum value on multiplying all values but the point is to handle the case of 0 and 1 i.e. On multiplying with 0 and 1 we get the lower value as compared to on adding with 0 and 1
+
+
+def calcMaxValue(str): 
+  
+    # Store first character as integer 
+    # in result 
+    res = ord(str[0]) - 48
+  
+    # Start traversing the string  
+    for i in range(1, len(str)): 
+          
+        # Check if any of the two numbers  
+        # is 0 or 1, If yes then add current  
+        # element 
+        if(str[i] == '0' or
+           str[i] == '1' or res < 2): 
+            res += ord(str[i]) - 48
+        else: 
+            res *= ord(str[i]) - 48
+  
+    return res          
+  
+# Driver code 
+if __name__== "__main__": 
+    str = "01891"; 
+    print(calcMaxValue(str)); 
+```
+### Find all Fibonschi numbers in array
+```
+python3 program to find largest Fibonacci subset
+  
+# Prints largest subset of an array whose
+# all elements are fibonacci numbers
+def findFibSubset(arr, n):
+ 
+    # Find maximum element in arr[]
+    m= max(arr)
+  
+    # Generate all Fibonacci numbers till
+    # max and store them in hash.
+    a = 0
+    b = 1
+    hash = []
+    hash.append(a)
+    hash.append(b)
+    while (b < m):
+     
+        c = a + b
+        a = b
+        b = c
+        hash.append(b)
+     
+  
+    # Npw iterate through all numbers and
+    # quickly check for Fibonacci using
+    # hash.
+    for i in range (n):
+        if arr[i] in hash :
+            print( arr[i],end=" ")
+  
+# Driver code
+if __name__ == "__main__":
+ 
+    arr = [4, 2, 8, 5, 20, 1, 40, 13, 23]
+    n = len(arr)
+    findFibSubset(arr, n)
+
+```
+
 ### Find all triplets with 0 sum
 
 ```
