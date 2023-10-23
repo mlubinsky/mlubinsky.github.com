@@ -35,6 +35,62 @@ https://github.com/ChenglongChen/LeetCode-3/tree/master/Python
 
 https://www.algoexpert.io/ I bought it!
 
+### Count all distinct pairs with difference equal to k
+```
+1) Initialize count as 0
+2) Sort all numbers in increasing order.
+3) Remove duplicates from array.
+4) Do following for each element arr[i]
+   a) Binary Search for arr[i] + k in subarray from i+1 to n-1.
+   b) If arr[i] + k found, increment count. 
+5) Return count.
+
+def binarySearch(arr, low, high, x):
+ 
+    if (high >= low):
+ 
+        mid = low + (high - low)//2
+        if x == arr[mid]:
+            return (mid)
+        elif(x > arr[mid]):
+            return binarySearch(arr, (mid + 1), high, x)
+        else:
+            return binarySearch(arr, low, (mid - 1), x)
+ 
+    return -1
+ 
+ 
+# Returns count of pairs with
+# difference k in arr[] of size n.
+def countPairsWithDiffK(arr, n, k):
+ 
+    count = 0
+    arr.sort()  # Sort array elements
+ 
+    # code to remove
+    # duplicates from arr[]
+ 
+    # Pick a first element point
+    i = 0
+    while(i < n):
+        while(i - 1 >= 0 and arr[i] == arr[i - 1]):
+            i += 1
+        if (binarySearch(arr, i + 1, n - 1,
+                         arr[i] + k) != -1):
+            count += 1
+        i += 1
+ 
+    return count
+ 
+ 
+# Driver Code
+arr = [1, 5, 3, 4, 2]
+n = len(arr)
+k = 3
+print("Count of pairs with given diff is ",
+      countPairsWithDiffK(arr, n, k))
+```
+
 ### Calculate maximum value using ‘+’ or ‘*’ sign between all gigits in a string of digits
 ```
 The maximum value on multiplying all values but the point is to handle the case of 0 and 1 i.e. On multiplying with 0 and 1 we get the lower value as compared to on adding with 0 and 1
@@ -91,9 +147,7 @@ def findFibSubset(arr, n):
         hash.append(b)
      
   
-    # Npw iterate through all numbers and
-    # quickly check for Fibonacci using
-    # hash.
+    # Npw iterate through all numbers andquickly check for Fibonacci using hash.
     for i in range (n):
         if arr[i] in hash :
             print( arr[i],end=" ")
@@ -737,6 +791,65 @@ if __name__ == '__main__':
     main()
 ```
 
+
+### Convert ternary expression to binary tree.  The expressions may be nested
+```
+traverse a string make first character as root and do following step recursively . 
+If we see Symbol ‘?’ then we add next character as the left child of root. 
+If we see Symbol ‘:’  then we add it as the right child of current root.
+
+class Node: 
+    def __init__(self, key): 
+        self.data = key 
+        self.left = None
+        self.right = None
+  
+# Function to convert ternary  
+# expression to a Binary tree 
+# It returns the root node  
+# of the tree 
+def convert_expression(expression, i): 
+    if i >= len(expression): 
+        return None
+  
+    # Create a new node object 
+    # for the expression at 
+    # ith index 
+    root = Node(expression[i]) 
+  
+    i += 1
+  
+    # if current character of  
+    # ternary expression is '?' 
+    # then we add next character  
+    # as a left child of 
+    # current node 
+    if (i < len(expression) and 
+                expression[i] is "?"): 
+        root.left = convert_expression(expression, i + 1) 
+          
+    # else we have to add it  
+    # as a right child of 
+    # current node expression[0] == ':' 
+    elif i < len(expression): 
+        root.right = convert_expression(expression, i + 1) 
+    return root 
+  
+# Function to print the tree 
+# in a pre-order traversal pattern 
+def print_tree(root): 
+    if not root: 
+        return
+    print(root.data, end=' ') 
+    print_tree(root.left) 
+    print_tree(root.right) 
+  
+# Driver Code 
+if __name__ == "__main__": 
+    string_expression = "a?b?c:d:e"
+    root_node = convert_expression(string_expression, 0) 
+    print_tree(root_node) 
+```
 ### Convert binary tree to double linked list 
 ```
 from binary_tree import *
