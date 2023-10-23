@@ -35,10 +35,280 @@ https://github.com/ChenglongChen/LeetCode-3/tree/master/Python
 
 https://www.algoexpert.io/ I bought it!
 
+### Move zeros to left in place  
+https://www.educative.io/blog/cracking-top-facebook-coding-interview-questions
+```
+Keep two markers: read_index and write_index and point them to the end of the array.  
+
+While moving read_index towards the start of the array:
+
+If read_index points to 0, skip.
+If read_index points to a non-zero value, write the value at read_index to write_index and decrement write_index.
+Assign zeros to all the values before the write_index and to the current position of write_index as well.
+
+def move_zeros_to_left(A):
+  if len(A) < 1:
+    return
+
+  lengthA = len(A)
+  write_index = lengthA - 1
+  read_index = lengthA - 1
+
+  while(read_index >= 0):
+    if A[read_index] != 0:
+      A[write_index] = A[read_index]
+      write_index -= 1
+
+    read_index -= 1
+
+  while(write_index >= 0):
+    A[write_index]=0;
+    write_index-=1
+    
+v = [1, 10, 20, 0, 59, 63, 0, 88, 0]
+print("Original Array:", v)
+
+move_zeros_to_left(v)
+
+print("After Moving Zeroes to Left: ", v)
+```
+### Merge overlapping intervals
+
+```
+class Pair:
+  def __init__(self, first, second):
+    self.first = first
+    self.second = second
+
+def merge_intervals(v):
+  if v == None or len(v) == 0 :
+    return None
+
+  result = []
+  result.append(Pair(v[0].first, v[0].second))
+
+  for i in range(1, len(v)):
+    x1 = v[i].first
+    y1 = v[i].second
+    x2 = result[len(result) - 1].first
+    y2 = result[len(result) - 1].second
+
+    if y2 >= x1:
+      result[len(result) - 1].second = max(y1, y2)
+    else:
+      result.append(Pair(x1, y1))
+
+  return result;
+
+v = [Pair(1, 5), Pair(3, 1), Pair(4, 6), 
+     Pair(6, 8), Pair(10, 12), Pair(11, 15)]
+
+result = merge_intervals(v)
+
+for i in range(len(result)):
+  print("[" + str(result[i].first) + ", " + str(result[i].second) + "]", end =" ")
+
+```
+
 ### Binary tree
 https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
 
-### Tree traversal
+
+### Convert binary tree to double linked list 
+```
+from binary_tree import *
+from binary_tree_node import *
+
+# Initializing the first and the last nodes
+first = None
+last = None
+
+
+def convert_to_linked_list_rec(curr_node):
+    global first
+    global last
+
+    # Return if the current node is None
+    if not curr_node:
+        return
+    else:
+        # Performing in-order tree traversal
+        convert_to_linked_list_rec(curr_node.left)
+
+        if last:
+            # Connecting the last and current nodes
+            last.right = curr_node
+            curr_node.left = last
+        else:
+            # Initializing the first node
+            first = curr_node
+
+        # Updating the current node
+        last = curr_node
+        convert_to_linked_list_rec(curr_node.right)
+
+
+def convert_to_linked_list(root):
+    global first
+    global last
+
+    if not root:
+        # Return null if the root doesn't exist
+        return None
+    else:
+        first = None
+        last = None
+        convert_to_linked_list_rec(root)
+
+        # Closing the linked list
+        last.right = None
+        first.left = None
+        return first
+
+
+def main():
+    input1 = [100, 50, 200, 25, 75, 125, 350]
+    tree1 = BinaryTree(input1)
+
+    tree2 = BinaryTree(100)
+    tree2.insert(50)
+    tree2.insert(200)
+    tree2.insert(25)
+    # Add a node at an incorrect position
+    tree2.insert_bt(110)
+    tree2.insert(125)
+    tree2.insert(350)
+
+    tree3 = BinaryTree(100)
+    tree3.insert(50)
+    tree3.insert(200)
+    tree3.insert(25)
+    tree3.insert(75)
+    # Add a node at an incorrect position
+    tree3.insert_bt(90)
+    tree3.insert(350)
+
+    input4 = [100, 50, 200, 25, 75, 125, 350]
+    input4.sort()
+    tree4 = BinaryTree(input4)
+
+    input5 = reversed(input4)
+    tree5 = BinaryTree(input5)
+
+    tree6 = BinaryTree(100)
+
+    # Defining test cases
+    test_case_roots = [tree1.root, tree2.root, tree3.root,
+                       tree4.root, tree5.root, tree6.root, None]
+
+    for i in range(len(test_case_roots)):
+        if i > 0:
+            print()
+        print(str(i + 1) + ".\tBinary tree:")
+        display_tree(test_case_roots[i])
+
+        print("\n\tDoubly Linked List:")
+        get_dll_list(convert_to_linked_list(test_case_roots[i]))
+        print("----------------------------------------------------------------------------------------------------")
+
+
+if __name__ == '__main__':
+    main()
+```
+
+### 
+
+### Tree level order traversal
+Given the root of a binary tree, display the node values at each level. Node values for all levels should be displayed on separate lines. 
+```
+from collections import deque
+from binary_tree import *
+from binary_tree_node import *
+
+# Using two queues
+def level_order_traversal(root):
+    #   We print None if the root is None
+    if not root:
+        print("None", end="")
+    else:
+        result = ""
+        
+        # Declaring an array of two queues
+        queues = [deque(), deque()]
+
+        # Initializing the current and next queues
+        current_queue = queues[0]
+        next_queue = queues[1]
+
+        # Enqueuing the root node into the current queue and setting
+        # level to zero   
+        current_queue.append(root)
+        level_number = 0
+
+        # Printing nodes in level-order until the current queue remains
+        # empty
+        while current_queue:
+            # Dequeuing and printing the first element of queue
+            temp = current_queue.popleft()
+            print(str(temp.data), end="")
+            result += str(temp.data) + ""
+
+            # Adding dequeued node's children to the next queue
+            if temp.left:
+                next_queue.append(temp.left)
+
+            if temp.right:
+                next_queue.append(temp.right)
+
+            # When the current queue is empty, we increase the level, print a new line
+            # and swap the current and next queues   
+            if not current_queue:
+                level_number += 1
+                if next_queue:
+                    print(" : ", end="")
+                current_queue = queues[level_number % 2]
+                next_queue = queues[(level_number + 1) % 2]
+            else:
+                print(", ", end="")
+
+def main():
+    # Creating a binary tree
+    input1 = [100, 50, 200, 25, 75, 350]
+    tree1 = BinaryTree(input1)
+
+    # Creating a right degenerate binary tree
+    input2 = sorted(input1)
+    tree2 = BinaryTree(input2)
+
+    # Creating a left degenerate binary tree
+    input2.reverse()
+    tree3 = BinaryTree(input2)
+
+    # Creating a single node binary tree
+    tree4 = BinaryTree(100)
+
+    test_case_roots = [tree1.root, tree2.root, tree3.root, tree4.root, None]
+    test_case_statements = ["Level-Order Traversal of a normal binary search tree: ",
+            "Level-Order Traversal of a right degenerate binary search tree: ",
+            "Level-Order Traversal of a left degenerate binary search tree: ",
+            "Level-Order Traversal of a single node binary tree: ",
+            "Level-Order Traversal of a null tree: "]
+
+    for i in range(len(test_case_roots)):
+        if (i > 0):
+            print()
+        print(str(i + 1) + ". Binary Tree:")
+        display_tree(test_case_roots[i])
+        print("\n   " + test_case_statements[i],end="\n   ")
+
+        # Printing the in-order list using the method we just implemented
+        level_order_traversal(test_case_roots[i])
+        print("\n-------------------------------------------------------------------------------------------------------------------------------")
+
+if __name__ == '__main__':
+    main()
+```
+### Yet another level order traversal
 ```
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
