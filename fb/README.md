@@ -35,6 +35,110 @@ https://github.com/ChenglongChen/LeetCode-3/tree/master/Python
 
 https://www.algoexpert.io/ I bought it!
 
+### Search in rotated array
+
+```
+def binary_search(arr, start, end, key):
+  # assuming all the keys are unique.
+  
+  if (start > end):
+    return -1;
+
+  mid = int(start + (end - start) / 2)
+
+  if arr[mid] == key:
+    return mid
+    
+  if arr[start] <= arr[mid] and key <= arr[mid] and key >= arr[start]:
+    return binary_search(arr, start, mid - 1, key)
+  
+  elif arr[mid] <= arr[end] and key >= arr[mid] and key <= arr[end]: 
+    return binary_search(arr, mid + 1, end, key)
+
+  elif arr[end] <= arr[mid]:
+    return binary_search(arr, mid + 1, end, key)
+
+  elif arr[start] >= arr[mid]:
+    return binary_search(arr, start, mid - 1, key)
+
+  return -1;
+
+def binary_search_rotated(arr, key):
+  return binary_search(arr, 0, len(arr)-1, key)
+
+v1 = [6, 7, 1, 2, 3, 4, 5];
+  
+print("Key(3) found at: " + str(binary_search_rotated(v1, 3)))
+print("Key(6) found at: " + str(binary_search_rotated(v1, 6)))
+  
+v2 = [4, 5, 6, 1, 2, 3];
+  
+print("Key(3) found at: " + str(binary_search_rotated(v2, 3)))
+print("Key(6) found at: " + str(binary_search_rotated(v2, 6)))
+```
+
+### Find the high and low index in sorted array with duplicates
+```
+def find_low_index(arr, key):
+  
+  low = 0
+  high = len(arr) - 1
+  mid = int(high / 2)
+
+  while low <= high:
+
+    mid_elem = arr[mid]
+
+    if mid_elem < key:
+      low = mid + 1
+    else:
+      high = mid - 1
+
+    mid = low + int((high - low) / 2)
+
+  if low < len(arr) and arr[low] == key:
+    return low
+
+  return -1
+
+def find_high_index(arr, key):
+  low = 0
+  high = len(arr) - 1
+  mid = int(high / 2)
+
+  while low <= high:
+    mid_elem = arr[mid]
+
+    if mid_elem <= key:
+      low = mid + 1
+    else:
+      high = mid - 1
+
+    mid = low + int((high - low) / 2);
+  
+  if high == -1:
+    return high
+
+  if high < len(arr) and arr[high] == key:
+    return high
+
+  return -1
+
+
+array = [1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 6, 6]
+key = 5
+low = find_low_index(array, key)
+high = find_high_index(array, key)
+print("Low Index of " + str(key) + ": " + str(low))
+print("High Index of " + str(key) + ": " + str(high))
+
+key = -2
+low = find_low_index(array, key)
+high = find_high_index(array, key)
+print("Low Index of " + str(key) + ": " + str(low))
+print("High Index of " + str(key) + ": " + str(high))
+```
+
 ### Find all possible subsets (2**n)
 ```
 n = size of given integer set
