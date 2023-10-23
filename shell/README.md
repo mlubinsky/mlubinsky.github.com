@@ -24,6 +24,16 @@ https://www.benthos.dev/
 ### Clickhouse Local,  DuckDB,  Polars,  for analyzing local files (including json)
 https://clickhouse.com/blog/extracting-converting-querying-local-files-with-sql-clickhouse-local
 
+https://www.vantage.sh/blog/clickhouse-local-vs-duckdb
+
+https://github.com/chdb-io/chdb  -- embedded Clockhouse in python
+
+pip install chdb
+
+https://dbpilot.io/changelog#embedded-clickhouse-and-standalone-duckdb-support-2023-08-31
+
+if you had data in a format that DuckDb doesn't work with, like Protobuf, Avro, ORC, Arrow, etc. ClickHouse reads and writes data in over 70 formats
+
 ### DuckDB : 
 https://duckdb.org/docs/extensions/json.html 
  select a,b,c from '*.jsonl.gz'
