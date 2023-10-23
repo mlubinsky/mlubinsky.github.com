@@ -34,6 +34,26 @@ https://dxmahata.gitbooks.io/leetcode-python-solutions/content/
 https://github.com/ChenglongChen/LeetCode-3/tree/master/Python
 
 https://www.algoexpert.io/ I bought it!
+### String segmentation
+Given a dictionary of words and a large input string. You have to find out whether the input string can be completely segmented into the words of a given dictionary. 
+
+ ```
+def can_segment_string(s, dictionary):
+  for i in range(1, len(s) + 1):
+    first = s[0:i]
+    if first in dictionary:
+      second = s[i:]
+      if not second or second in dictionary or can_segment_string(second, dictionary):
+        return True
+  return False
+  
+s = "hellonow";
+dictionary= set(["hello","hell","on","now"])
+if can_segment_string(s, dictionary):
+  print("String Can be Segmented")
+else:
+  print("String Can NOT be Segmented")
+```
 
 ### Reverse words in sentense
 Reverse the order of words in a given sentence (an array of characters).
