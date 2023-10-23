@@ -34,6 +34,194 @@ https://dxmahata.gitbooks.io/leetcode-python-solutions/content/
 https://github.com/ChenglongChen/LeetCode-3/tree/master/Python
 
 https://www.algoexpert.io/ I bought it!
+
+### Find all possible subsets (2**n)
+```
+n = size of given integer set
+subsets_count = 2^n
+for i = 0 to subsets_count
+    form a subset using the value of 'i' as following:
+        bits in number 'i' represent index of elements to choose from original set,
+        if a specific bit is 1 choose that number from original set and add it to current subset,
+        e.g. if i = 6 i.e 110 in binary means that 1st and 2nd elements in original array need to be picked.
+    add current subset to list of all subsets
+
+
+def get_bit(num, bit):
+    temp = (1 << bit)
+    temp = temp & num
+    if temp == 0:
+      return 0
+    return 1
+        
+def get_all_subsets(v, sets):
+    subsets_count = 2 ** len(v)
+    for i in range(0, subsets_count):
+      st = set([])
+      for j in range(0, len(v)):
+         if get_bit(i, j) == 1:
+            st.add(v[j])
+      sets.append(st)
+      
+def main():
+    v = [8,13,3,22,17,39,87,45,36]
+    subsets = []
+    get_all_subsets(v, subsets);
+    print("****Total*****" + str(len(subsets)))
+    for i in range(0, len(subsets)):
+        print("{", end = "")
+        print(subsets[i], end = "")
+        print("}")
+    print("****Total*****" + str(len(subsets)))
+
+main()  
+
+```
+
+### Graphs: Clone a directed graph
+```
+from directed_graph import *
+
+def clone_rec(root, graph, nodes_completed):
+  # Base case when there is no node
+  if not root:
+    return None
+
+  # Creating new vertex/node
+  pNew = Node(root.data)
+
+  # Using hashmap to keep track of visited nodes
+  nodes_completed[root] = pNew
+
+  # Adding new vertex in the graph
+  graph.add_vertex_in_nodes(pNew)
+
+  # Iterate over each neighbor of the current vertex/node
+  for p in root.neighbors:
+    x = nodes_completed.get(p)
+    if not x:
+      # If node is not visited call recursive function to create vertex/node
+      pNew.neighbors.append(clone_rec(p, graph, nodes_completed))
+    else:
+      # If node is visited just add it to the neighbors of current vertex/node
+      pNew.neighbors.append(x)
+  return pNew
+
+def clone(graph):
+  # Hashmap to keep record of visited nodes
+  nodes_completed = {}
+  
+  # Creating new graph
+  clone_graph = DirectedGraph()
+  
+  # clone_rec function call
+  # Passing first node as root node
+  
+  if not graph.nodes:
+    return None
+  else:
+    clone_rec(graph.nodes[0], clone_graph, nodes_completed)
+
+  # Return deep copied graph
+  return clone_graph
+
+def main():
+  # Main start from here
+  g1 = DirectedGraph()
+
+  print("------------   EXAMPLE # 1    -----------")
+  # Adding verteces/nodes
+  g1.add_vertex(0)
+  g1.add_vertex(1)
+  g1.add_vertex(2)
+  g1.add_vertex(3)
+  g1.add_vertex(4)
+
+  # Adding edges of vertex/node 0
+  g1.add_edge(0, 2)
+  g1.add_edge(0, 3)
+  g1.add_edge(0, 4)
+
+  # Adding edges of vertex/node 1
+  g1.add_edge(1, 2)
+
+  # Adding edges of vertex/node 2
+  g1.add_edge(2, 0)
+
+  # Adding edges of vertex/node 3
+  g1.add_edge(3, 2)
+
+  # Adding edges of vertex/node 4
+  g1.add_edge(4, 1)
+  g1.add_edge(4, 3)
+  g1.add_edge(4, 0)
+
+  # Printing graph
+
+  print("Original graph (before copy): ")
+  print(g1)
+
+  g1_copy = clone(g1)
+  print("Cloned graph (after copy):")
+  print(g1_copy)
+
+  print("\nOriginal graph (after deleting an edge [0->2]):")
+  g1.delete_edge(0, 2)
+  print(g1)
+
+  print("\nCloned graph (after deleting an edge [0->2] from original the graph): ")
+  print(g1_copy)
+
+  g2 = DirectedGraph()
+
+  # Adding verteces/nodes
+
+  print("\n\n------------   EXAMPLE # 2    -----------")
+  g2.add_vertex("v1")
+  g2.add_vertex("v2")
+  g2.add_vertex("v3")
+  g2.add_vertex("v4")
+  g2.add_vertex("v5")
+
+  g2.add_edge("v1", "v2")
+  g2.add_edge("v1", "v3")
+  g2.add_edge("v1", "v4")
+
+  g2.add_edge("v2", "v1")
+  g2.add_edge("v2", "v3")
+  g2.add_edge("v2", "v4")
+
+  g2.add_edge("v3", "v1")
+  g2.add_edge("v3", "v2")
+  g2.add_edge("v3", "v4")
+  g2.add_edge("v3", "v5")
+
+  g2.add_edge("v4", "v1")
+  g2.add_edge("v4", "v2")
+  g2.add_edge("v4", "v3")
+  g2.add_edge("v4", "v5")
+
+  g2.add_edge("v5", "v3")
+
+  print("Original graph (before copy):")
+  print(g2)
+
+  g2_copy = clone(g2)
+  print("\nCloned graph (after copy):")
+  print(g2_copy)
+
+
+  print("\nOriginal graph (after deleting an edge [v5->v3]):")
+  g2.delete_edge("v5", "v3")
+  print(g2)
+
+  print("\nCloned graph (after deleting an edge [v5->v3] from original the graph): ")
+  print(g2_copy)
+
+if __name__ == '__main__':
+  main()
+```
+
 ### String segmentation
 Given a dictionary of words and a large input string. You have to find out whether the input string can be completely segmented into the words of a given dictionary. 
 
@@ -560,7 +748,43 @@ all permutations of string without recursion
 
 
 ### Buy /Sell Stock
-    def maxProfit(self, prices: List[int]) -> int:
+```
+def find_buy_sell_stock_prices(array):
+  if array == None or len(array) < 2:
+    return None
+
+  current_buy = array[0]
+  global_sell = array[1]
+  global_profit = global_sell - current_buy
+
+  current_profit = float('-inf')
+
+  for i in range(1, len(array)):
+    current_profit = array[i] - current_buy
+
+    if current_profit > global_profit:
+      global_profit = current_profit
+      global_sell = array[i]
+
+    if current_buy > array[i]:
+      current_buy = array[i];
+
+  result = global_sell - global_profit, global_sell                 
+   
+  return result
+
+array = [1, 2, 3, 4, 3, 2, 1, 2, 5]  
+result = find_buy_sell_stock_prices(array)
+print("Buy Price: " + str(result[0]) + ", Sell Price: " + str(result[1]))
+
+array = [8, 6, 5, 4, 3, 2, 1]
+result = find_buy_sell_stock_prices(array)
+print("Buy Price: " + str(result[0]) + ", Sell Price: " + str(result[1]))
+```
+
+Yet another solution 
+```
+    def maxProfit(self, prices):
         low = prices[0]
         res = 0
         for price in prices:
@@ -568,7 +792,7 @@ all permutations of string without recursion
                 low = price
             res = max(res, price - low)
         return res
-        
+   ```     
 
 
 
