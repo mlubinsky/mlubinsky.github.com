@@ -396,6 +396,125 @@ for i in range(len(result)):
 ### Binary tree
 https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
 
+### Serialize/desiarilize binary tree
+
+We’ll use a pre-order traversal here. We’ll also serialize some markers to represent a null pointer to help deserialize the tree.
+```
+from binary_tree import *
+from binary_tree_node import *
+
+# Initializing our marker as the max possible int value
+MARKER = float('inf')
+
+def serialize_rec(node, stream):
+    # Adding marker to stream if the node is None
+    if (node == None):
+        stream.append(MARKER)
+        return
+   
+    # Adding node to stream
+    stream.append(node.data)
+
+    # Doing a pre-order tree traversal for serialization
+    serialize_rec(node.left, stream)
+    serialize_rec(node.right, stream)
+
+# Function to serialize tree into list of integer.
+def serialize(root):
+    stream = []
+    serialize_rec(root, stream)
+    return stream
+
+# Function to deserialize integer list into a binary tree.
+def deserialize(stream):
+    # dequeue first element form list
+    val = stream.pop(0)
+
+    # Return None when a marker is encountered
+    if (val == MARKER):
+        return None
+
+    # Creating new Binary Tree Node from current value from stream
+    node = BinaryTreeNode(val)
+
+    # Doing a pre-order tree traversal for serialization
+    node.left = deserialize(stream)
+    node.right = deserialize(stream)
+
+    # Return node if it exists
+    return node
+
+def main():
+    input1 = [100, 50, 200, 25, 75, 350]
+    tree1 = BinaryTree(input1)
+    orgTree1 = tree1.get_tree_deep_copy()
+
+    tree2 = BinaryTree(100)
+    tree2.insert_bt(200)
+    tree2.insert_bt(75)
+    tree2.insert_bt(50)
+    tree2.insert_bt(25)
+    tree2.insert_bt(350)
+    orgTree2 = tree2.get_tree_deep_copy()
+
+
+    tree3 = BinaryTree(200)
+    tree3.insert_bt(350)
+    tree3.insert_bt(100)
+    tmp = tree3.find_in_BT(350)
+    tmp.right = BinaryTreeNode(75)
+    tmp.right.right = BinaryTreeNode(50)
+    tmp = tree3.find_in_BT(100)
+    tmp.left = BinaryTreeNode(25)
+    orgTree3 = tree3.get_tree_deep_copy()
+
+    
+    input4 = [100, 50, 200, 25, 75, 350]
+    input4.sort()
+    tree4 = BinaryTree(input4)
+    orgTree4 = tree4.get_tree_deep_copy()
+    
+
+    input5 = reversed(input4)
+    tree5 = BinaryTree(input5)
+    orgTree5 = tree5.get_tree_deep_copy()
+    
+
+    tree6 = BinaryTree(100)
+    orgTree6 = tree6.get_tree_deep_copy()
+
+    # Defining test cases
+    inputs = [tree1.root, tree2.root, tree3.root,
+                       tree4.root, tree5.root, tree6.root, None]
+
+    original_trees =[orgTree1, orgTree2, orgTree3, orgTree4, orgTree5, orgTree6, None]
+
+    for i in range(len(inputs)):
+        if (i > 0):
+            print("\n")
+        
+        print(str(i + 1) + ".\tBinary tree:")
+        if (original_trees[i] == None):
+            display_tree(None)
+        else:
+            display_tree(original_trees[i].root)
+        
+        print("\n\tMarker used for NULL nodes in serialization/deserialization: " + str(MARKER))
+        
+        # Serialization
+        ostream = serialize(inputs[i])
+        print("\n\tSerialized integer list:")
+        print("\t" + str(ostream))
+
+        # Deserialization
+        deserialized_root = deserialize(ostream)
+        print("\n\tDeserialized binary tree:")
+        display_tree(deserialized_root)
+        print("----------------------------------------------------------------------------------------------------")
+
+if __name__ == '__main__':
+    main()
+```
 
 ### Convert binary tree to double linked list 
 ```
