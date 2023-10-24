@@ -37,6 +37,10 @@ https://github.com/ChenglongChen/LeetCode-3/tree/master/Python
 
 https://www.algoexpert.io/ I bought it!
 
+### Given two singly linked lists that intersect at some point, find the intersecting node
+
+https://github.com/ruppysuppy/Daily-Coding-Problem-Solutions/blob/master/Solutions/020.py
+
 ### Given two unsorted arrays  find all pairs from both arrays whose sum is equal to X.
 ```
 def findPairs(arr1, arr2, n, m, x): 
