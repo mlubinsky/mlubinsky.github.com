@@ -61,6 +61,104 @@ n = len(arr1)
 m = len(arr2) 
 findPairs(arr1, arr2, n, m, x)
 ```
+
+### Find median in data stream using heap
+
+```
+If the data set has an odd number then the middle one will be consider as median.
+If the data set has an even number then there is no distinct middle value and the median will be the arithmetic mean of the two middle values.
+
+We can use a max heap on the left side to represent elements that are less than effective median, and a min-heap on the right side to represent elements that are greater than effective median.
+After processing an incoming element, the number of elements in heaps differs atmost by 1 element. When both heaps contain the same number of elements, we pick the average of heaps root data as effective median. When the heaps are not balanced, we select effective median from the root of the heap containing more elements.
+
+Time Complexity: O(n * log n), All the operations within the loop (push, pop) take O(log n) time in the worst case for a heap of size N.
+Auxiliary Space: O(n)
+
+
+from heapq import heappush, heappop, heapify
+import math
+ 
+# Function to find the median of stream of data
+def streamMed(arr, N):
+     
+    # Declaring two min heap
+    g = []
+    s = []
+    for i in range(len(arr)):
+       
+        # Negation for treating it as max heap
+        heappush(s, -arr[i])
+        heappush(g, -heappop(s))
+        if len(g) > len(s):
+            heappush(s, -heappop(g))
+ 
+        if len(g) != len(s):
+            print(-s[0])
+        else:
+            print((g[0] - s[0])/2)
+ 
+ 
+# Driver code
+if __name__ == '__main__':
+    A = [5, 15, 1, 3, 2, 8, 7, 9, 10, 6, 11, 4]
+    N = len(A)
+     
+    # Function call
+    streamMed(A, N)
+```
+### Find m-th smallest value in k sorted arrays - use heap
+```
+Given k sorted arrays of possibly different sizes, find m-th smallest value in the merged array.
+
+The time complexity of heap based solution is O(m Log k).
+1. Create a min heap of size k and insert 1st element in all the arrays into the heap 
+2. Repeat following steps m times 
+…..a) Remove minimum element from heap (minimum is always at root) and store it in output array. 
+…..b) Insert next element from the array from which the element is extracted. If the array doesn’t have any more elements, then do nothing. 
+3. Print the last removed item.
+
+
+from heapq import *
+ 
+#  This function takes an array of arrays as an
+#  argument and all arrays are assumed to be
+#  sorted. It returns m-th smallest element in
+#  the array obtained after merging the given
+#  arrays.
+def mThLargest(arr, m):
+ 
+    #  Create a min heap. Every
+    #  heap node has first element of an array
+    pq = []
+    for i in range(len(arr)):
+        heappush(pq, (arr[i][0], (i, 0)))
+ 
+    #  Now one by one get the minimum element
+    #  from min heap and replace it with next
+    #  element of its array
+    count = 0
+    while count < m and pq:
+        curr = heappop(pq)
+ 
+        #  i ==> Array Number
+        #  j ==> Index in the array number
+        i = curr[1][0]
+        j = curr[1][1]
+ 
+        # The next element belongs to same array as current.
+        if j + 1 < len(arr[i]):
+            heappush(pq, (arr[i][j + 1], (i, j + 1)))
+        count += 1
+ 
+    return arr[i][j]
+ 
+# Driver Code
+arr = [[2, 6, 12], [1, 9], [23, 34, 90, 2000]]
+m = 4
+print(mThLargest(arr, m))
+```
+
+
 ### Find subarray with given sum (Not negative numbers) - sliding window
 
 ```
