@@ -35,6 +35,137 @@ https://github.com/ChenglongChen/LeetCode-3/tree/master/Python
 
 https://www.algoexpert.io/ I bought it!
 
+### Given two unsorted arrays  find all pairs from both arrays whose sum is equal to X.
+```
+def findPairs(arr1, arr2, n, m, x): 
+  
+    # Insert all elements of  
+    # first array in a hash 
+    s = set() 
+    for i in range (0, n): 
+        s.add(arr1[i]) 
+  
+    # Subtract sum from second  
+    # array elements one by one  
+    # and check it's present in 
+    # array first or not 
+    for j in range(0, m): 
+        if ((x - arr2[j]) in s): 
+            print((x - arr2[j]), '', arr2[j]) 
+  
+# Driver code 
+arr1 = [1, 0, -4, 7, 6, 4] 
+arr2 = [0, 2, 4, -3, 2, 1] 
+x = 8
+n = len(arr1) 
+m = len(arr2) 
+findPairs(arr1, arr2, n, m, x)
+```
+### Find subarray with given sum (Not negative numbers) - sliding window
+
+```
+Create two variables, start=0, currentSum = arr[0]
+Traverse the array from index 1 to end.
+Update the variable currentSum by adding current element, currentSum = currentSum + arr[i]
+If the currentSum is greater than the given sum, update the variable currentSum as currentSum = currentSum – arr[start],
+and update start as, start++.
+If the currentSum is equal to given sum, print the subarray and break the loop.
+
+
+def subArraySum(arr, n, sum_):
+ 
+    # Initialize currentSum as
+    # value of first element
+    # and starting point as 0
+    currentSum = arr[0]
+    start = 0
+ 
+    # Add elements one by
+    # one to currentSum and
+    # if the currentSum exceeds
+    # the sum, then remove
+    # starting element
+    i = 1
+    while i <= n:
+ 
+        # If currentSum exceeds
+        # the sum, then remove
+        # the starting elements
+        while currentSum > sum_ and start < i-1:
+ 
+            currentSum = currentSum - arr[start]
+            start += 1
+ 
+        # If currentSum becomes
+        # equal to sum, then
+        # return true
+        if currentSum == sum_:
+            print("Sum found between indexes % d and % d" % (start, i-1))
+ 
+            return 1
+ 
+        # Add this element
+        # to currentSum
+        if i < n:
+            currentSum = currentSum + arr[i]
+        i += 1
+ 
+    # If we reach here,
+    # then no subarray
+    print("No subarray found")
+    return 0
+ 
+ 
+# Driver program
+if __name__ == '__main__':
+    arr = [15, 2, 4, 8, 9, 5, 10, 23]
+    n = len(arr)
+    sum_ = 23
+ 
+subArraySum(arr, n, sum_)
+```
+
+### Rotate matrix in place
+```
+def rotateMatrix(mat):
+ 
+    # reversing the matrix
+    for i in range(len(mat)):
+        mat[i].reverse()
+ 
+    # make transpose of the matrix
+    for i in range(len(mat)):
+        for j in range(i, len(mat)):
+ 
+            # swapping mat[i][j] and mat[j][i]
+            mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
+ 
+ 
+# Function to print the matrix
+def displayMatrix(mat):
+ 
+    for i in range(0, len(mat)):
+        for j in range(0, len(mat)):
+            print(mat[i][j], end=' ')
+        print()
+ 
+ 
+# Driver code
+if __name__ == "__main__":
+    mat = [[1, 2, 3, 4],
+           [5, 6, 7, 8],
+           [9, 10, 11, 12],
+           [13, 14, 15, 16]]
+ 
+    # Function call
+    rotateMatrix(mat)
+ 
+    # Print rotated matrix
+    displayMatrix(mat)
+
+```
+
+
 ### Count all distinct pairs with difference equal to k
 ```
 1) Initialize count as 0
@@ -159,6 +290,70 @@ if __name__ == "__main__":
     n = len(arr)
     findFibSubset(arr, n)
 
+```
+
+
+### Smallest subarray with sum greater than a given value - sliding window
+
+```
+# O(n) solution for finding smallest
+# subarray with sum greater than x
+ 
+# Returns length of smallest subarray
+# with sum greater than x. If there
+# is no subarray with given sum, then
+# returns n + 1
+ 
+ 
+def smallestSubWithSum(arr, n, x):
+ 
+    # Initialize current sum and minimum length
+    curr_sum = 0
+    min_len = n + 1
+ 
+    # Initialize starting and ending indexes
+    start = 0
+    end = 0
+    while (end < n):
+ 
+        # Keep adding array elements while current
+        # sum is smaller than or equal to x
+        while (curr_sum <= x and end < n):
+            curr_sum += arr[end]
+            end += 1
+ 
+        # If current sum becomes greater than x.
+        while (curr_sum > x and start < n):
+ 
+            # Update minimum length if needed
+            if (end - start < min_len):
+                min_len = end - start
+ 
+            # remove starting elements
+            curr_sum -= arr[start]
+            start += 1
+ 
+    return min_len
+ 
+ 
+# Driver program
+arr1 = [1, 4, 45, 6, 10, 19]
+x = 51
+n1 = len(arr1)
+res1 = smallestSubWithSum(arr1, n1, x)
+print("Not possible") if (res1 == n1 + 1) else print(res1)
+ 
+arr2 = [1, 10, 5, 2, 7]
+n2 = len(arr2)
+x = 9
+res2 = smallestSubWithSum(arr2, n2, x)
+print("Not possible") if (res2 == n2 + 1) else print(res2)
+ 
+arr3 = [1, 11, 100, 1, 0, 200, 3, 2, 1, 250]
+n3 = len(arr3)
+x = 280
+res3 = smallestSubWithSum(arr3, n3, x)
+print("Not possible") if (res3 == n3 + 1) else print(res3)
 ```
 
 ### Find all triplets with 0 sum
