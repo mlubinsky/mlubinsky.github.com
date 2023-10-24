@@ -38,7 +38,7 @@ https://www.algoexpert.io/ I bought it!
 ### Count all distinct pairs with difference equal to k
 ```
 1) Initialize count as 0
-2) Sort all numbers in increasing order.
+2) Sort all numbers in increasing order.  O(nLogn) t
 3) Remove duplicates from array.
 4) Do following for each element arr[i]
    a) Binary Search for arr[i] + k in subarray from i+1 to n-1.
@@ -67,8 +67,8 @@ def countPairsWithDiffK(arr, n, k):
     count = 0
     arr.sort()  # Sort array elements
  
-    # code to remove
-    # duplicates from arr[]
+    # code to remove duplicates from arr[] - 
+    # TODO another approach to remove duplicated in arr and sort results : sorted(set(arr))  require extra space
  
     # Pick a first element point
     i = 0
