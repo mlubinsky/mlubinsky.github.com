@@ -42,6 +42,9 @@ https://habr.com/ru/companies/kts/articles/741846/ Полное руководс
 
 https://habr.com/ru/companies/vk/articles/741702/  Data Formats (avro, etc)
 
+### Elastic search
+
+https://betterprogramming.pub/system-design-series-elasticsearch-architecting-for-search-5d5e61360463
 
 ### Streaming
 
