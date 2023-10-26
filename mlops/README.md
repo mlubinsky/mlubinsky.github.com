@@ -2,6 +2,8 @@ https://www.evidentlyai.com/ml-system-design
 
 https://habr.com/ru/companies/beeline_tech/articles/760308/
 
+https://habr.com/ru/companies/beeline_tech/articles/760308/
+
 https://www.hopsworks.ai/mlops-dictionary
 
 https://habr.com/ru/companies/otus/articles/735170/
