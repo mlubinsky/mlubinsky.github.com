@@ -6,6 +6,33 @@ https://twirl.github.io/The-API-Book/index.ru.html
 
 https://www.amazon.com/gp/product/B09RHH44S5/
 
+### System design interview
+
+ Gaurav Sen: https://www.youtube.com/@gkcs
+ 
+donnemartin https://github.com/donnemartin/system-design-primer
+
+https://www.amazon.com/System-Design-Interview-Insiders-Guide-ebook-dp-B08B3FWYBX/dp/B08B3FWYBX/ref=mt_other?_encoding=UTF8&me=&qid=
+
+
+## Coding
+https://www.educative.io/blog/cracking-top-facebook-coding-interview-questions
+
+https://platform.stratascratch.com/coding
+
+https://www.interviewquery.com/blog-google-data-engineer-interview-questions/
+
+### Salary website: 
+
+https://www.levels.fyi/
+
+
+
+Amazon leadership principles: https://www.amazon.jobs/en/principles
+
+
+
+
 ### Event - driven applications:
 
 https://enlear.academy/aspects-of-event-driven-apps-aws-c81e80ef7fc6
