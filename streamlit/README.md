@@ -6,6 +6,10 @@ https://github.com/widgetti/solara
 
 https://solara.dev/
 
+### LiteStar
+
+https://betterprogramming.pub/introducing-litestar-a-new-python-web-framework-part-2-0bf2564f9f07
+
 ### StreamSync
 
 https://github.com/streamsync-cloud/streamsync
