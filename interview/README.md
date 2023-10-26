@@ -1,10 +1,19 @@
 https://relational.ai/careers/ JOB
 
+
+Competitive coding:  leetcode.com, geeksforgeeks.org
+
+Mock interviews, salary negotiation consulting:  interviewing.io, interviewkickstart.com
+
 https://news.ycombinator.com/item?id=37111256
 
-how to build resume:
+### How to build resume:
+
+https://cloudirregular.substack.com/p/the-greatest-resume-ive-ever-seen
 
 https://news.ycombinator.com/item?id=36901303
+
+### Problems
 
 https://leetsolve.com/48-rotate-image
 
@@ -1616,35 +1625,13 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 
 <http://yucoding.blogspot.com/2017/01/leetcode-question-range-sum-query.html>
+
 <http://massivealgorithms.blogspot.com/>
+
 <http://ruslanledesma.com/>
+
 <http://algorithms.tutorialhorizon.com/>
 
-
-
-
-
-
-
-### System design interview
-
-https://www.amazon.com/System-Design-Interview-Insiders-Guide-ebook-dp-B08B3FWYBX/dp/B08B3FWYBX/ref=mt_other?_encoding=UTF8&me=&qid=
-
-
-https://www.educative.io/blog/cracking-top-facebook-coding-interview-questions
-
-https://platform.stratascratch.com/coding
-
-https://www.interviewquery.com/blog-google-data-engineer-interview-questions/
-
-Salary website: https://www.levels.fyi/
-System design youtube channel (Gaurav Sen): https://www.youtube.com/channel/UCRPM...
-System design website: https://github.com/donnemartin/system...
-Amazon leadership principles: https://www.amazon.jobs/en/principles
-Competitive coding:  leetcode.com, geeksforgeeks.org
-Mock interviews, salary negotiation consulting:  interviewing.io, interviewkickstart.com
-
-https://cloudirregular.substack.com/p/the-greatest-resume-ive-ever-seen
 
 
 ## Fibonacci
