@@ -1275,7 +1275,7 @@ longest = range(5)
 zipped = zip_longest(numbers, letters, longest, fillvalue='?')
 list(zipped)
 [(1, 'a', 0), (2, 'b', 1), (3, 'c', 2), ('?', '?', 3), ('?', '?', 4)]
-`` 
+``` 
 
 #### Recursion limit
 ```
