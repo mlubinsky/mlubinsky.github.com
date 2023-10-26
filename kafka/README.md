@@ -10,10 +10,19 @@ https://habr.com/ru/companies/southbridge/articles/730380/
 
 https://stackabuse.com/how-to-list-all-kafka-topics/
 
-Structure of Kafka message:
+Structure of Kafka message (binary):
+
+Messages are usually small (less than 1 MB) and sent in a standard data format, such as JSON, Avro, or Protobuf. Even so, they can be compressed to save on data. 
+
+The compression type can be set to gzip, lz4, snappy, zstd, or none.
+
+Once a message is sent into a Kafka topic, it also receives a partition number and offset id (more about these later).
+
 ```
-key
+key - usually string or int
 value
+headers for metadata (optional)
+compt=ression type (e.g. gzip)
 topic
 partition integer
 offset long
