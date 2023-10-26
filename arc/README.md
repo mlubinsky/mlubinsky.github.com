@@ -1,6 +1,12 @@
-https://twirl.github.io/The-API-Book/index.ru.html  API book
+ 
 
-Event - driven applications:
+### API book (ru)
+
+https://twirl.github.io/The-API-Book/index.ru.html
+
+https://www.amazon.com/gp/product/B09RHH44S5/
+
+### Event - driven applications:
 
 https://enlear.academy/aspects-of-event-driven-apps-aws-c81e80ef7fc6
 
@@ -30,10 +36,7 @@ https://habr.com/ru/articles/761464/
 
 https://www.kdnuggets.com/how-to-digest-15-billion-logs-per-day-and-keep-big-queries-within-1-second
 
-### API book:
 
-https://twirl.github.io/The-API-Book/index.ru.html
-https://www.amazon.com/gp/product/B09RHH44S5/
 
 ### System design
 https://github.com/DovAmir/awesome-design-patterns
@@ -55,11 +58,11 @@ https://eng.uber.com/streaming-real-time-analytics/
 https://habr.com/ru/company/ru_mts/blog/684476/
 
 
-Documenting software architecture
+### Documenting software architecture
 
 https://www.innoq.com/en/blog/brief-introduction-to-arc42/
 
-Algorithms you should know before you take system design interviews
+### Algorithms you should know before you take system design interviews
 
 https://blog.bytebytego.com/p/algorithms-you-should-know-before
 
@@ -84,11 +87,13 @@ https://habr.com/ru/company/southbridge/blog/679906/
 
 https://habr.com/ru/company/southbridge/blog/681326/
 
-
-https://twirl.github.io/The-API-Book/index.ru.html
+ 
 
 Consesnsus in distibuted systems
 https://habr.com/ru/company/dododev/blog/463469/
+
+## RabbitMQ
+https://news.ycombinator.com/item?id=23258301
 
 ### Memcached vs Redis
 
@@ -102,9 +107,7 @@ https://news.ycombinator.com/item?id=28830007.
 
 https://engineering.kablamo.com.au/posts/2021/memcached-vs-redis-whats-the-difference
 
-### tools for writing diagrams
- 
-
+### No name
 
 https://www.infoq.com/articles/whats-the-next-step-for-data-management/
 
@@ -136,8 +139,7 @@ https://news.ycombinator.com/item?id=23904000
 
 https://medium.com/wix-engineering/6-event-driven-architecture-patterns-part-1-93758b253f47
 
-## RabbitMQ
-https://news.ycombinator.com/item?id=23258301
+
 
 
 ## ML infrastructure
@@ -153,9 +155,6 @@ https://news.ycombinator.com/item?id=23258301
 <https://itnext.io/mlops-not-as-boring-as-it-sounds-eaebe73e3533> . ML Ops
 
 <https://tecton.ai/blog/devops-ml-data/>
-
-
-
 
 
 <https://medium.com/swlh/end-to-end-machine-learning-from-data-collection-to-deployment-ce74f51ca203>
