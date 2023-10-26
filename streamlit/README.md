@@ -39,6 +39,8 @@ https://towardsdatascience.com/build-dashboards-in-less-than-10-lines-of-code-83
 
 ## StreamIt
 
+
+https://betterprogramming.pub/from-traffic-to-revenue-a-deep-dive-into-my-medium-data-98ac5b405605 + DuckDB +Plotly
 https://habr.com/ru/companies/amvera/articles/744952/
 
 https://docs.streamlit.io/
