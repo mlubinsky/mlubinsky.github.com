@@ -4,6 +4,10 @@ https://habr.com/ru/companies/ru_mts/articles/738208/ Plotting
 
 https://habr.com/ru/companies/ru_mts/articles/738208/ matplotlib
 
+## PyVis
+
+https://medium.com/@stephanhausberg/graph-networks-visualization-with-pyvis-and-keyword-extraction-cd973d372e2c
+
 https://github.com/garrettj403/SciencePlots
 
 https://lets-plot.org/
