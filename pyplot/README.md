@@ -4,6 +4,9 @@ https://habr.com/ru/companies/ru_mts/articles/738208/ Plotting
 
 https://habr.com/ru/companies/ru_mts/articles/738208/ matplotlib
 
+### Visro
+https://github.com/mckinsey/vizro
+
 ## PyVis
 
 https://medium.com/@stephanhausberg/graph-networks-visualization-with-pyvis-and-keyword-extraction-cd973d372e2c
