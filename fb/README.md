@@ -1,5 +1,11 @@
 ### System design 
 
+System Design:
+👉 Byte Byte Go by Alex Xu - https://lnkd.in/eEGZ-3mY
+👉 Byte Sized Design by Alex Nguyen - https://lnkd.in/e7yxQJf7
+👉 System Design One by Neo K. - https://lnkd.in/ePa9WCGx
+👉 Systems Design Challenges by Ricardo A. Morales - https://lnkd.in/eSX6kdb3
+
 https://habr.com/ru/articles/769018/ event driving arc
 
 https://github.com/ByteByteGoHq/system-design-101
