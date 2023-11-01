@@ -17,6 +17,8 @@ https://habr.com/ru/articles/739338/ JVM Internals
 
 ### Java Interview questions
 
+https://dzone.com/articles/top-40-java-8-interview-questions-with-answers
+
 https://habr.com/ru/articles/743862/  
 
 https://habr.com/ru/articles/745910/
