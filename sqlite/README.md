@@ -1,4 +1,6 @@
-VSCode extension for SQLite
+https://antonz.org/sqlite-3-44/
+
+### VSCode extension for SQLite
 
 https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer
 
