@@ -503,10 +503,24 @@ https://livebook.manning.com/book/streaming-data/ Book (I bought it)
 
 https://livevideo.manning.com/module/22_1_3/spark-in-motion/an-introduction-to-apache-spark/functional-programming-using-the-spark-shell?
 
-#### bucketing
-https://towardsdatascience.com/best-practices-for-bucketing-in-spark-sql-ea9f23f7dd53
-https://medium.com/analytics-vidhya/spark-bucketing-is-not-as-simple-as-it-looks-c74f105f4af0
+#### Bucketing
 
+https://selectfrom.dev/apache-spark-partitioning-bucketing-3fd350816911
+
+https://towardsdatascience.com/best-practices-for-bucketing-in-spark-sql-ea9f23f7dd53
+
+https://medium.com/analytics-vidhya/spark-bucketing-is-not-as-simple-as-it-looks-c74f105f4af0
+```
+Spark also gives us the option of bucketing while writing data to tables.
+In bucketing data is divided into smaller portions called “buckets”.
+
+df.write.bucketBy(12, "key").saveAsTable("table_name")
+Number of files in bucketing = df.partition * number of bucket
+
+ To use bucket join for tables having buckets multiple of each other we need to set the following:
+
+spark.sql.bucketing.coalesceBucketsInJoin.enabled
+```
 ### Skew 
 https://medium.com/@suffyan.asad1/handling-data-skew-in-apache-spark-techniques-tips-and-tricks-to-improve-performance-e2934b00b021
 
@@ -626,11 +640,12 @@ partition_cols = []
 df.repartition(*partition_cols)\
   .write.partitionBy(*partition_cols)\
   .mode(SaveMode.Append).parquet(path)
+
 Spark also gives us the option of bucketing while writing data to tables.
 In bucketing data is divided into smaller portions called “buckets”.
 
 df.write.bucketBy(12, "key").saveAsTable("table_name")
-No of files in bucketing = df.partition * number of bucket
+Number of files in bucketing = df.partition * number of bucket
 
 Also, To use bucket join for tables having buckets multiple of each other we need to set the following:
 
