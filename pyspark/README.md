@@ -47,9 +47,9 @@ yesterday_df = spark.createDataFrame([
  ["user_id", "product_name","zip_code"])
 
 import pyspark.sql.functions as F
-
- df_new = today_df.withColumn('date',F.lit("10/27"))
- df_new.show()
+df_old = yesterday_df.withColumn('date',F.lit("10/26"))
+df_new = today_df.withColumn('date',F.lit("10/27"))
+df_new.show()
 +-------+------------+--------+-----+
 |user_id|product_name|zip_code| date|
 +-------+------------+--------+-----+
@@ -69,6 +69,10 @@ df_new.union(df_old).show()
 |      2| hulu+disney|   90026|10/26|
 |      3| hulu+disney|   90026|10/26|
 +-------+------------+--------+-----+
+
+
+# INNER JOIN with renaming columns to avoid column names duplications:
+df_new.join(df_old, df_old.user_id == df_new.user_id, "inner").select(df_old.user_id, df_old.product_name.alias("old_product")).show()
 
 ```
 
