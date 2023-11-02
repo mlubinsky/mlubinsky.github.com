@@ -4,6 +4,8 @@ https://www.youtube.com/watch?v=wFOojyYvLRE
 
 https://habr.com/ru/articles/765188/  Feature eng and cluster analysis 
 
+https://towardsdatascience.com/did-you-know-this-in-spark-sql-a7398bfcc41e
+
 ### Book
 
 https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
