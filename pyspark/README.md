@@ -31,6 +31,47 @@ def sum(x, y):
 counts = wordsTuple.reduceByKey(sum)
 ```
 
+### Data Lake implementation
+```
+
+yesterday_df = spark.createDataFrame([
+ (1,"hulu","90046"),
+ (2,"hulu+disney" ,"90026"),
+ (3,"hulu+disney" ,"90026")],
+ ["user_id", "product_name","zip_code"])
+
+ today_df = spark.createDataFrame([
+ (1,"hulu+disney","90046"),
+ (2,"hulu+disney" ,"90036"),
+ (4,"hulu+disney" ,"90026")],
+ ["user_id", "product_name","zip_code"])
+
+import pyspark.sql.functions as F
+
+ df_new = today_df.withColumn('date',F.lit("10/27"))
+ df_new.show()
++-------+------------+--------+-----+
+|user_id|product_name|zip_code| date|
++-------+------------+--------+-----+
+|      1| hulu+disney|   90046|10/27|
+|      2| hulu+disney|   90036|10/27|
+|      4| hulu+disney|   90026|10/27|
++-------+------------+--------+-----+
+
+df_new.union(df_old).show()
++-------+------------+--------+-----+
+|user_id|product_name|zip_code| date|
++-------+------------+--------+-----+
+|      1| hulu+disney|   90046|10/27|
+|      2| hulu+disney|   90036|10/27|
+|      4| hulu+disney|   90026|10/27|
+|      1|        hulu|   90046|10/26|
+|      2| hulu+disney|   90026|10/26|
+|      3| hulu+disney|   90026|10/26|
++-------+------------+--------+-----+
+
+```
+
 
 ### In a very huge text file  check if a particular keyword exists.
 ```
