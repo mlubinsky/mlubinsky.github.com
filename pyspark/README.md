@@ -10,7 +10,7 @@ https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
 https://www.youtube.com/watch?v=jWZ9K1agm5Y  PySpark Course: Big Data Handling with Python and Apache Spark
 
-### Compute  total counts of each of  unique words on a spark
+### Compute  total counts of each of  unique words on a spark: map() and flatMap()
 ```
 sc.textFile(“hdfs://user/bigtextfile.txt”);
 def toWords(line):
@@ -145,6 +145,8 @@ df2.printSchema()
  
 
 ```
+
+### Explode
 Explode properties column: will generate 2 columns: key and value
 ```
 from pyspark.sql.functions import explode
@@ -194,6 +196,35 @@ root
 df2.show(truncate=False)
 
 ```
+
+### Window function to calculate sum and cumulative
+
+```
+from pyspark.sql import Window
+from pyspark.sql.functions import sum
+l = [
+  (1, 10, '2020-11-01'), 
+  (1, 30, '2020-11-02'), 
+  (1, 50, '2020-11-03')
+]
+df = spark.createDataFrame(l,['user_id', 'price', 'purchase_date'])
+w1 = Window().partitionBy('user_id')
+w2 = Window().partitionBy('user_id').orderBy('purchase_date')
+(
+  df
+  .withColumn('total_expenses', sum('price').over(w1))
+  .withColumn('cumulative_expenses', sum('price').over(w2))
+).show()
++-------+-----+-------------+--------------+-------------------+
+|user_id|price|purchase_date|total_expenses|cumulative_expenses|
++-------+-----+-------------+--------------+-------------------+
+|      1|   10|   2020-11-01|            90|                 10|
+|      1|   30|   2020-11-02|            90|                 40|
+|      1|   50|   2020-11-03|            90|                 90|
++-------+-----+-------------+--------------+-------------------+
+
+```
+
 
 #### check_uniq in dataframe
 
