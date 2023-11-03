@@ -45,7 +45,15 @@ https://www.vat19.com/
 
 ### Interesting blogs
 
- 
+http://bactra.org/ Cosma's Home Page
+
+ https://www.uhnwidata.com/den-of-rich/sergey-nikolenko Sergei Nikolenko
+
+https://news.ycombinator.com/item?id=28232165 interesing blog posts
+
+https://news.ycombinator.com/item?id=32220192 interesting youtube channels
+
+https://nintil.com/scaling-tacit-knowledge
 
 https://www.reddit.com/r/AskReddit/comments/k213qf/what_are_underrated_websites_and_what_do_you_use/
 
