@@ -2,6 +2,12 @@ https://www.youtube.com/hashtag/timeseries
 
 https://habr.com/ru/companies/mvideo/articles/769756/ TS analysis with Python
 
+https://habr.com/ru/companies/mvideo/articles/771820/  
+
+### Skforekast
+
+https://joaquinamatrodrigo.github.io/skforecast/
+
 https://habr.com/ru/articles/752662/
 
 https://www.influxdata.com/time-series-analysis-methods/
