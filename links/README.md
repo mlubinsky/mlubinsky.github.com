@@ -10,7 +10,46 @@
 
 <https://habr.com/ru/company/englishdom/blog/438066/>    many  different youtube links
 
+
+### Software Engineering's Greatest Hits
+https://www.youtube.com/watch?v=HrVtA-ue-x0  Software Engineering's Greatest Hits
+
+https://news.ycombinator.com/item?id=28178257
+
+
+### Gifts and Shopping
+
+https://www.vat19.com/
+
+ 
+
+<https://www.icanvas.com/> Painting: Eric Waugh, Gustav Klimt 
+
+<https://www.greatbigcanvas.com/> Painting
+
+<https://www.art.com/>
+
+<https://everydaycarry.com/>
+
+<https://www.geekwrapped.com/unique-gifts-unusual-gift-ideas>
+
+<https://www.thisiswhyimbroke.com/gifts/gifts-for-geeks/>
+
+<https://gomboc-shop.com/>
+
+<http://www.dudeiwantthat.com/gift-guides/gifts-for-geeks.asp>
+
+<https://www.uncommongoods.com/fun/by-interest/geek-gifts>
+
+ 
+
 ### Interesting blogs
+
+ 
+
+https://www.reddit.com/r/AskReddit/comments/k213qf/what_are_underrated_websites_and_what_do_you_use/
+
+https://interpreted.d3.ru/na-reddite-podelilis-ochen-krutymi-no-nedootsenionnymi-saitami-2084065/?sorting=rating
 
 https://refined.blog/
 
