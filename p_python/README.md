@@ -494,6 +494,8 @@ https://realpython.com/python-profiling/
 
 https://pythonbooks.org/python-high-performance-second-edition/
 
+https://habr.com/ru/companies/otus/articles/771346/
+
 https://www.amazon.com/High-Performance-Python-Performant-Programming/dp/1492055026/
 
 https://www.amazon.com/Python-Science-Tiago-Rodrigues-Antao/dp/1617297933
