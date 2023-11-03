@@ -72,8 +72,42 @@ df_new.union(df_old).show()
 
 
 # INNER JOIN with renaming columns to avoid column names duplications:
-df_new.join(df_old, df_old.user_id == df_new.user_id, "inner").select(df_old.user_id, df_old.product_name.alias("old_product")).show()
+df_new.join(df_old, df_old.user_id == df_new.user_id, "inner").select(
+ df_old.user_id,
+ df_old.product_name.alias("old_product_name"),
+ df_new.product_name.alias("new_product_name"),
+ df_old.zip_code.alias("old_zip_code"),
+ df_new.zip_code.alias("new_zip_code"),
+ df_old.date.alias("old_date"),
+ df_new.date.alias("new_date")
+).show()
 
+
+### Leftanti returns records which exists in left only
+
+df_old.join(df_new, df_old.user_id == df_new.user_id, "leftanti").show()
++-------+------------+--------+-----+
+|user_id|product_name|zip_code| date|
++-------+------------+--------+-----+
+|      3| hulu+disney|   90026|10/26|
++-------+------------+--------+-----+
+
+df_new.join(df_old, df_old.user_id == df_new.user_id, "leftanti").show()
++-------+------------+--------+-----+
+|user_id|product_name|zip_code| date|
++-------+------------+--------+-----+
+|      4| hulu+disney|   90026|10/27|
++-------+------------+--------+-----+
+
+df_new_anti = df_new.join(df_old, df_old.user_id == df_new.user_id, "leftanti")
+df_old_anti = df_old.join(df_new, df_old.user_id == df_new.user_id, "leftanti")
+df_new_anti.union(df_old_anti).show()
++-------+------------+--------+-----+
+|user_id|product_name|zip_code| date|
++-------+------------+--------+-----+
+|      4| hulu+disney|   90026|10/27|
+|      3| hulu+disney|   90026|10/26|
++-------+------------+--------+-----+
 ```
 
 
