@@ -47,6 +47,7 @@ yesterday_df = spark.createDataFrame([
  ["user_id", "product_name","zip_code"])
 
 import pyspark.sql.functions as F
+
 df_old = yesterday_df.withColumn('date',F.lit("10/26"))
 df_new = today_df.withColumn('date',F.lit("10/27"))
 df_new.show()
@@ -72,16 +73,20 @@ df_new.union(df_old).show()
 
 
 # INNER JOIN with renaming columns to avoid column names duplications:
+
 df_new.join(df_old, df_old.user_id == df_new.user_id, "inner").select(
  df_old.user_id,
  df_old.product_name.alias("old_product_name"),
  df_new.product_name.alias("new_product_name"),
  df_old.zip_code.alias("old_zip_code"),
  df_new.zip_code.alias("new_zip_code"),
- df_old.date.alias("old_date"),
- df_new.date.alias("new_date")
+ df_old.date.alias("start_date"),
+ df_new.date.alias("end_date")
 ).show()
 
+### Find records which exists in both  dfs and product_name and zip_code are the same:
+
+df_new.join(df_old,["user_id","product_name","zip_code"]).show()
 
 ### Leftanti returns records which exists in left only
 
