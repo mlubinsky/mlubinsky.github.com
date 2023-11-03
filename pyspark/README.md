@@ -32,6 +32,11 @@ counts = wordsTuple.reduceByKey(sum)
 ```
 
 ### Data Lake implementation
+
+https://sparkbyexamples.com/pyspark/pyspark-join-explained-with-examples/
+
+https://sparkbyexamples.com/pyspark/pyspark-join-multiple-columns/
+
 ```
 
 yesterday_df = spark.createDataFrame([
@@ -85,6 +90,7 @@ df_new.join(df_old, df_old.user_id == df_new.user_id, "inner").select(
 ).show()
 
 ### Find records which exists in both  dfs and product_name and zip_code are the same:
+ this synax will eliminate duplicate column names
 
 df_new.join(df_old,["user_id","product_name","zip_code"]).show()
 
