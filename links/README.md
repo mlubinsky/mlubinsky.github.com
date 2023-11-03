@@ -1,4 +1,4 @@
-## youtube programming
+### youtube programming
 
 <https://techyaks.com/>
 
@@ -10,7 +10,15 @@
 
 <https://habr.com/ru/company/englishdom/blog/438066/>    many  different youtube links
 
+### Interesting blogs
 
+https://refined.blog/
+
+https://collection.mataroa.blog/
+
+https://news.ycombinator.com/item?id=27302195
+
+https://news.ycombinator.com/item?id=27973836
 
 Fabrice Bellard: https://bellard.org/ 
 
