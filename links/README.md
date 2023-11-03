@@ -1,25 +1,37 @@
 
-Fabrice Bellard: https://bellard.org/ This is not really a blog, but a traditional website with links to the work of its author (who is probably one of the top programmers ever). It updates rarely, but when it does, it is to expose yet another monumental piece of computing work that will blow your universe.
-Linus Akesson: https://www.linusakesson.net/ He's always onto some funny crazy things: obfuscated programming, underhanded programming, c64 emulation, chiptunes...
+Fabrice Bellard: https://bellard.org/ 
+
+Linus Akesson: https://www.linusakesson.net/  
+
 Uriel l'Étranger: http://cat-v.org/ The only self-described "philosopher of software" that I have ever seen. His website is of course not updated anymore, but you can re-read it many times and always learn something new.
+
 Ted Unangst: https://flak.tedunangst.com/ Nice to follow some cool news about openbsd development
+
 Andy Chu: http://www.oilshell.org/blog/ Who has embarked in an amazing quest to turn the unix shell into a cleaner tool
+
 Jens Gustedt: https://gustedt.wordpress.com/ If you really want to be up to date about the evolution of the C language
-I love the blog posts of Julia Evans - https://jvns.ca/
 
-[1] https://jvns.ca/blog/2017/04/07/xdp-bpf-tutorial/ [2] https://jvns.ca/blog/2016/01/02/winning-the-bias-variance-tr... [1] https://jvns.ca/perf-zine.pdf
+  Julia Evans - https://jvns.ca/
 
-Here's a good one: https://susam.in/
+ https://jvns.ca/perf-zine.pdf
+
+  https://susam.in/
 
 Sinkhole incident: https://susam.in/blog/sinkholed/ HN discussion: https://news.ycombinator.com/item?id=21700139
 
-For low-level software, these are great: https://eli.thegreenplace.net/ https://travisdowns.github.io/ https://preshing.com/
+For low-level software: https://eli.thegreenplace.net/ https://travisdowns.github.io/ https://preshing.com/
 
-Whenever I evaluate a technology stack for microservice architecture viability, I implement the same feature identical polyglot persistent microservice then run it through the same load test as all the others. In that way, I can compare and contrast these various technology stacks. I blog about the results here. http://glennengstrand.info
+```
+Whenever I evaluate a technology stack for microservice architecture viability,
+I implement the same feature identical polyglot persistent microservice then run it through the same load test as all the others. 
+In that way, I can compare and contrast these various technology stacks.
+I blog about the results here:
+```
+http://glennengstrand.info
 
-[0] https://github.com/sixhobbits/technical-writing/blob/master/...
+  https://github.com/sixhobbits/technical-writing/blob/master/...
 
-Cliffski's blog is one of the only ones I follow that is still active. Not every post is on development progress, but enough that I find it worth following: http://www.positech.co.uk/cliffsblog/
+  http://www.positech.co.uk/cliffsblog/
 
 https://www.positech.co.uk/cliffsblog/2019/12/16/stability-p...
 
@@ -41,9 +53,9 @@ Adam Aelkus: https://aelkus.github.io/
 
 Bert Hubert: https://berthub.eu/
 
-[1] https://blog.jessfraz.com/
+  https://blog.jessfraz.com/
 
-[2] https://news.ycombinator.com/from?site=jessfraz.com
+  https://news.ycombinator.com/from?site=jessfraz.com
 
 https://overreacted.io - Dan Abramov's blog
 
@@ -53,18 +65,24 @@ I also wrote a basic script to rank domains by HN upvotes if you want to distill
 
 https://drewdevault.com
 
-http://www.tinytouchtales.com covers both the process and the results, including the $ numbers. Great games too :) https://bvckup2.com/wip covers mostly technical parts, but gives a good view into what's involved in making a software product from A to Z, especially in the parts further down the page.
+http://www.tinytouchtales.com covers both the process and the results, including the $ numbers. Great games too :)
+
+https://bvckup2.com/wip covers mostly technical parts, but gives a good view into what's involved in making a software product from A to Z, especially in the parts further down the page.
 
 https://vorpus.org/blog
 
 https://vorpus.org/blog/notes-on-structured-concurrency-or-g...
 
-Alex Pakhunov: https://blog.not-a-kernel-guy.com/ Alex Pakhunov (aka 'Not a kernel guy') is Sr. Software Engineer, Flight Software at SpaceX.
-[0] https://twitter.com/alexeypa/status/958886120825081856
+### Alex Pakhunov (  aka not a kernel guy )
+ 
+https://blog.not-a-kernel-guy.com/  
 
-[1] https://blog.not-a-kernel-guy.com/about/
+https://twitter.com/alexeypa/status/958886120825081856
 
-One of the sweetest Distributed Systems blogs I have ever read: http://muratbuffalo.blogspot.com And yes, also my favorite 101 explainer blog: https://arjunsreedharan.org
+ 
+One of the sweetest Distributed Systems blogs I have ever read: http://muratbuffalo.blogspot.com 
+
+And yes, also my favorite 101 explainer blog: https://arjunsreedharan.org
 
 @mdo (Bootstrop) - http://markdotto.com/
 
@@ -102,7 +120,12 @@ Small Cult Following, for Rust core language development: http://smallcultfollow
 
 Anyway, you might find it interesting: https://blog.spacefrigates.com
 
-I love reading these two for Python/Recommender Systems: 1. Ben Frederickson: https://www.benfrederickson.com/blog/ 2. Erik Bernhardsson: https://erikbern.com/ And for pure ML: 1. Ferenc Huszár: https://www.inference.vc/ 2. John Langford: https://hunch.net (although he hasn't written a technical post in a while)
+I love reading these two for Python/Recommender Systems: 
+
+1. Ben Frederickson: https://www.benfrederickson.com/blog/
+2. Erik Bernhardsson: https://erikbern.com/
+3. And for pure ML: 1. Ferenc Huszár: https://www.inference.vc/
+4.  John Langford: https://hunch.net (although he hasn't written a technical post in a while)
 
 Very good articles about Elixir and Erlang https://www.theerlangelist.com/
 
@@ -126,7 +149,9 @@ https://tonsky.me/
 
 https://nadiaeghbal.com/posts/
 
-Nicholas Frechette[0] has a deeply technical blog about building his MIT licensed animation compression library for game development... [0] https://nfrechette.github.io/
+Nicholas Frechette[0] has a deeply technical blog about building his MIT licensed animation compression library for game development:
+
+https://nfrechette.github.io/
 
 https://kyletruong.com
 
@@ -152,7 +177,8 @@ I personally enjoy https://jalammar.github.io/ and https://mlexplained.com/- For
 
 Here’s a good one: https://stevelosh.com/ And here’s mine: https://jezenthomas.com/
 
-rusu.io tracks the challenges, lessons and successes in the development of a solo developer. It won't overflow you with content that you cannot keep up with, but you'll get good insights into how a stoic approach to life and development works
+rusu.io tracks the challenges, lessons and successes in the development of a solo developer.
+It won't overflow you with content that you cannot keep up with, but you'll get good insights into how a stoic approach to life and development works
 
 Shameless self-plug: I blog about React, interaction/animation, and remote work. It's a bit of a pot pourri, but people seem to like it! https://www.joshwcomeau.com/
 
@@ -188,7 +214,8 @@ https://shkspr.mobi
 
 Looks like nobody has mentioned https://daringfireball.net/ yet.
 
-It's Apple-focused but it's definitely from the perspective of a developer. It's not generic macrumors-type reporting for the layman. reply Awesome comment feed. Specific to CSS, Chris Coyier's stuff is good https://css-tricks.com/author/chriscoyier/
+ 
+https://css-tricks.com/author/chriscoyier/
 
 Here's mine: https://jacobobryant.com/
 
