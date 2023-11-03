@@ -1,3 +1,16 @@
+## youtube programming
+
+<https://techyaks.com/>
+
+<https://news.ycombinator.com/item?id=18217762>
+
+<https://www.youtube.com/user/sentdex/videos>
+
+<https://www.youtube.com/user/schafer5/videos>
+
+<https://habr.com/ru/company/englishdom/blog/438066/>    many  different youtube links
+
+
 
 Fabrice Bellard: https://bellard.org/ 
 
