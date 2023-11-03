@@ -1,9 +1,9 @@
 Делайте что хотите, но пусть это приносит радость
 /Уолт Уитмен/
 
-http://bactra.org/ Cosma's Home Page
+ 
 
-The most counterintuitive facts in all of mathematics, computer science, and physics
+### The most counterintuitive facts in all of mathematics, computer science, and physics
 
 https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
 
@@ -128,7 +128,7 @@ https://news.ycombinator.com/item?id=31647181
 
 https://jewishpogroms.info/wp-content/uploads/2021/12/Pogromy-Book-NadiaLipes.pdf
 
-https://www.complexityexplorer.org/courses Compleity explorer
+https://www.complexityexplorer.org/courses Complexity explorer
 
 https://web.archive.org/web/20060920043324/
 
@@ -138,7 +138,7 @@ http://www.msu.edu/~shlapent/memoirr.htm
  
  https://github.com/vpatryshev/wowiki/wiki/Internet.-The-Good-Parts.   Vlad Patryshev
  
- https://users.mccme.ru/anromash/courses/index.html 
+ https://users.mccme.ru/anromash/courses/index.html  Moscow Center for Math Education
  
 https://yandex.ru/q/profile/ahuunw9jmhjtx7awq4nb221yj0/ Андрей Плахов
 
@@ -162,9 +162,7 @@ https://habr.com/ru/post/571426/ Be happy!
 
 https://habr.com/ru/company/yandex_praktikum/blog/573090/ logical argumentation (ru)
 
-https://www.uhnwidata.com/den-of-rich/sergey-nikolenko 
-
-https://news.ycombinator.com/item?id=28232165 interesing blog posts
+ 
 
 https://news.ycombinator.com/item?id=32220192 interesting youtube channels
 
@@ -248,12 +246,6 @@ chrome://settings/content/unsandboxedPlugins
 
 dig @resolver4.opendns.com myip.opendns.com +short
 
-
-
-
-
-
- 
 
 https://gitlab.com/magnolia1234
 
