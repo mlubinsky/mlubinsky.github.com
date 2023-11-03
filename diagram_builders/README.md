@@ -6,6 +6,8 @@ https://www.ilograph.com/blog/posts/concrete-diagramming-models/
 
 https://c4model.com/
 
+https://kroki.io/
+
 ### D2
 
 https://d2-lang.com/
