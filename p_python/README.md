@@ -146,6 +146,9 @@ list_b = [i**2 for i in range(1, 20)]
 ```
 ### List as stack or queue
 https://realpython.com/how-to-implement-python-stack/
+
+https://stackabuse.com/guide-to-stacks-in-python/
+
 https://realpython.com/queue-in-python/
 
 ```
