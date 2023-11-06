@@ -47,6 +47,10 @@ https://www.algoexpert.io/ I bought it!
 
 https://github.com/ruppysuppy/Daily-Coding-Problem-Solutions/blob/master/Solutions/020.py
 
+###  Given an array of integers and a value, determine if there are any three integers in the array whose sum equals the given value.
+
+https://www.educative.io/blog/apple-coding-interview-questions
+
 ### Given two unsorted arrays  find all pairs from both arrays whose sum is equal to X.
 ```
 def findPairs(arr1, arr2, n, m, x): 
