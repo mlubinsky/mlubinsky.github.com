@@ -51,6 +51,10 @@ https://github.com/ruppysuppy/Daily-Coding-Problem-Solutions/blob/master/Solutio
 
 https://www.educative.io/blog/apple-coding-interview-questions
 
+### Find all palindrome substrings
+
+For each letter in the input string, start expanding to the left and right while checking for even and odd length palindromes. Move to the next letter if we know a palindrome doesn’t exist there.
+
 ### Given two unsorted arrays  find all pairs from both arrays whose sum is equal to X.
 ```
 def findPairs(arr1, arr2, n, m, x): 
