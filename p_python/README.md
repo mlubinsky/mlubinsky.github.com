@@ -149,8 +149,6 @@ https://realpython.com/how-to-implement-python-stack/
 
 https://stackabuse.com/guide-to-stacks-in-python/
 
-https://realpython.com/queue-in-python/
-
 ```
 stack = []
 stack.append("Copy")
@@ -176,8 +174,87 @@ queue.pop(0) # 'Jane'
 queue.pop(0) #'Linda'
 ```
 
-However, in performance-critical situations or when your lists are large, you may want to use more efficient data types, such as collections.deque, for example.
+### Queue
+https://realpython.com/queue-in-python/
 
+https://stackabuse.com/guide-to-queues-in-python/
+
+deque is implemented using a doubly-linked list. It supports fast O(1) appends and pops from both ends
+```
+from collections import deque
+queue = deque()
+# Enqueue
+queue.append('A')
+queue.append('B')
+queue.append('C')
+print(queue)  # Output: deque(['A', 'B', 'C'])
+
+# Dequeue
+queue.popleft()
+print(queue)  # Output: deque(['B', 'C'])
+
+
+dq.appendleft('A')  # add to the front
+dq.append('B')      # add to the rear
+dq.pop()            # remove from the rear
+dq.popleft()        # remove from the front
+```
+#### Implementing a Circular Queue
+```
+A circular queue (or ring buffer) is an advanced data structure where the last element is connected to the first, ensuring a circular flow. deque can mimic this behavior using its maxlen property:
+
+from collections import deque
+
+circular_queue = deque(maxlen=3)
+circular_queue.append(1)
+circular_queue.append(2)
+circular_queue.append(3)
+
+# Now the queue is full, adding another element will remove the oldest one
+circular_queue.append(4)
+print(circular_queue)  # Output: deque([2, 3, 4], maxlen=3)
+```
+
+
+
+#### queue module in Python provides a more specialized approach to queue management, catering to various use cases:
+```
+SimpleQueue - A basic FIFO queue
+LifoQueue - A LIFO queue, essentially a stack
+PriorityQueue - Elements are dequeued based on their assigned priority
+ 
+import queue
+q = queue.SimpleQueue() ## FIFO
+# Enqueue
+q.put('A')
+q.put('B')
+q.put('C')
+print(q.queue)  # Output: ['A', 'B', 'C']
+
+# Dequeue
+q.get()
+print(q.queue)  # Output: ['B', 'C']
+
+import queue
+
+q = queue.SimpleQueue()
+
+try:
+    item = q.get_nowait()
+except queue.Empty:
+    print("Queue is empty!")
+
+pq = queue.PriorityQueue()
+pq.put((2, "Task B"))
+pq.put((1, "Task A"))  # Lower numbers denote higher priority
+pq.put((3, "Task C"))
+
+while not pq.empty():
+    _, task = pq.get()
+    print(f"Processing: {task}")
+
+
+```
 ### Set  -  mutable
 ```
 my_list = [1, 2, 2, 3, 4, 4, 4]
