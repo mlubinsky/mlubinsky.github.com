@@ -21,12 +21,17 @@ def reverse_string(input_string):
 for i in reversed(range(5)):  # range(10)[::-1]
     print(i)
 ```
-### random notes
+###  factorial 
 ```
 from math import factorial
 factorial(3)
 6
+```
 
+### bisect 
+   https://betterprogramming.pub/everything-you-can-do-with-pythons-bisect-module-40bdaadbc22f
+### Converting string to list of chars 
+```
 list('abc')
 ['a', 'b', 'c']
 w = [c for c in 'abc']
@@ -83,11 +88,19 @@ https://lobste.rs/s/sns4mr/comfy_with_python_basic_tooling_now_what
 ```
 An object’s identity is a unique identifier that distinguishes it from other objects. 
 ou can use the built-in id() function to get the identity of any Python object.
-
+```
+### Alias vs copy
+```
 In Python, you can create aliases of variables using the assignment operator (=). 
 Assignments don’t create copies of objects in Python. 
 Instead, they create bindings between the variable and the object involved in the assignment. 
 Therefore, when you have several aliases of a given list, changes in an alias will affect the rest of the aliases.
+
+a=[1,2,3]
+b=a
+a.append(4)
+print(a)   #[1, 2, 3, 4]
+print(b)  # [1, 2, 3, 4]
 ```
 
 ### shallow copy/ deepcopy
@@ -800,6 +813,11 @@ https://news.ycombinator.com/item?id=35546804 joblib
 https://www.reddit.com/r/Python/comments/12tr2sn/pythoneers_here_what_are_some_of_the_best_python/
 
 https://towardsdatascience.com/simulating-physical-systems-with-python-dd5751e80b5c Simulating Physical Systems with Python 
+
+### Scheduling
+https://docs.python.org/3/library/sched.html
+
+https://pypi.org/project/schedule/ job scheduling 
 
 ### Logging
 
