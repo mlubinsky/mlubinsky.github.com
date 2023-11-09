@@ -1638,7 +1638,11 @@ FROM
     pay_history;
 ```
 
-##  DateTime
+##  DateTime,  timestamp и timestamptz , timezones
+
+https://habr.com/ru/articles/772954/
+
+select now()::timestamp, now();
 
 SHOW timezone;
 
