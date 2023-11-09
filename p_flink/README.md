@@ -1,5 +1,7 @@
 https://www.kdnuggets.com/how-to-digest-15-billion-logs-per-day-and-keep-big-queries-within-1-second
 
+https://habr.com/ru/companies/ru_mts/articles/772898/
+
 How to Digest 15 Billion Logs Per Day and Keep Big Queries Within 1 Second
 
 
