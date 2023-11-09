@@ -1,6 +1,16 @@
 ### AWS CloudWatch  
 https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 
+
+### Datasource as variable, repeat and other Grafana tricks
+
+https://habr.com/ru/companies/karuna/articles/771134/
+
+variable name: datasource
+
+variable type:  Data Source
+$(datasource)
+
 ### import dashboard
 
 http://105.140.16.223:3000/dashboard/import
