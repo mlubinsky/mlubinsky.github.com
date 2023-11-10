@@ -2,6 +2,8 @@ https://physicsbaseddeeplearning.org/intro.html . BOOK
 
 https://arxiv.org/abs/2308.10825 Topological data analysis
 
+https://habr.com/ru/companies/otus/articles/773102/ bias, variance, etc
+
 https://news.ycombinator.com/item?id=37137810 links
 
 https://www.youtube.com/playlist?list=PLnu7tVik2MzLUv0wrYiBHOwbf7QpcWlIr
