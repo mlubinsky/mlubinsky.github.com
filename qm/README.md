@@ -1,3 +1,5 @@
+https://habr.com/ru/companies/macloud/articles/555522/ 
+
 This playlist will help you get a strong foundation in quantum physics, covering essential topics and concepts. The videos are organized in a logical sequence, starting with introductory content and progressing to more advanced topics. Enjoy your marathon study session!
 ```
 Quantum Physics for Beginners: Overview and Basics
