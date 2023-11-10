@@ -27,15 +27,16 @@ https://engineering.fb.com/2023/06/27/developer-tools/meta-developer-tools-open-
 
 https://www.youtube.com/watch?v=GLTR39VIAdc Datas Structures and Algo
 
+### Recommendation systems
+https://habr.com/ru/articles/773126/
+
 https://habr.com/ru/companies/otus/articles/764680/  recommendation system
 
 https://habr.com/ru/companies/otus/articles/764222/  recommendation system
 
 
 
-
-
-Recently I have received a lot of queries regarding my preparation that landed me in FAANG/MAANG companies. Below are some of the resources that helped me a lot -
+-
 
 ✅ 𝐂𝐨𝐝𝐢𝐧𝐠 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰
 👉 Solve LeetCode medium-level problems (at least more than 250+ covering different topics)
