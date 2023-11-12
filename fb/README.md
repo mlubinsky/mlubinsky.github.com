@@ -72,6 +72,43 @@ Array, Binary Search, Sliding Window, Matrix, Two Pointer, Intervals, Hash Map, 
 
 ✅ 𝐂𝐫𝐚𝐜𝐤𝐢𝐧𝐠 𝐭𝐡𝐞 𝐆𝐀𝐌𝐀𝐌 𝐓𝐞𝐜𝐡𝐧𝐢𝐜𝐚𝐥 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰𝐬 - For all the preparation resources, strategies, tips, and roadmap that I followed, you can buy my ebook at - https://lnkd.in/d9xe8yfJ
 
+### Implement hash table from scratch
+
+```
+class HashTable:
+    def __init__(self, size):
+        self.size = size
+        self.table = [[] for _ in range(size)]
+
+    def _hash(self, key):
+        return ord(key[0]) % self.size
+
+    def set(self, key, value):
+        hash_index = self._hash(key)
+        for kvp in self.table[hash_index]:
+            if kvp[0] == key:
+                kvp[1] = value
+                return
+
+        self.table[hash_index].append([key, value])
+
+    def get(self, key):
+        hash_index = self._hash(key)
+        for kvp in self.table[hash_index]:
+            if kvp[0] == key:
+                return kvp[1]
+
+        raise KeyError(f'Key {key} not found')
+
+    def remove(self, key):
+        hash_index = self._hash(key)
+        for i, kvp in enumerate(self.table[hash_index]):
+            if kvp[0] == key:
+                self.table[hash_index].pop(i)
+                return
+
+        raise KeyError(f'Key {key} not found')
+```
 
 
 ### Leetcode
