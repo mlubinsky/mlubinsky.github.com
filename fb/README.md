@@ -74,6 +74,8 @@ Array, Binary Search, Sliding Window, Matrix, Two Pointer, Intervals, Hash Map, 
 
 ### Implement hash table from scratch
 
+https://stackoverflow.com/questions/20253580/hash-table-implementation-in-python
+
 https://stackabuse.com/hash-tables-in-python/
 
 ```
