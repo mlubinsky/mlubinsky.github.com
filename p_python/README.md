@@ -584,6 +584,7 @@ https://habr.com/ru/companies/ruvds/articles/757336/ cProfile  / profile
 https://realpython.com/python-profiling/
 
 ### Fast python
+https://habr.com/ru/articles/773376/
 
 https://pythonbooks.org/python-high-performance-second-edition/
 
