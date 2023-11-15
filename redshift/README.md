@@ -1,3 +1,5 @@
+https://blog.artie.so/best-practices-on-running-redshift-at-scale
+
 ### Amazon Redshift does not enforce primary key and foreign key constraints
 Specify the primary key and foreign keys for all your tables.
 
