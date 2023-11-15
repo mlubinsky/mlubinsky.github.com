@@ -72,6 +72,19 @@ Array, Binary Search, Sliding Window, Matrix, Two Pointer, Intervals, Hash Map, 
 
 ✅ 𝐂𝐫𝐚𝐜𝐤𝐢𝐧𝐠 𝐭𝐡𝐞 𝐆𝐀𝐌𝐀𝐌 𝐓𝐞𝐜𝐡𝐧𝐢𝐜𝐚𝐥 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰𝐬 - For all the preparation resources, strategies, tips, and roadmap that I followed, you can buy my ebook at - https://lnkd.in/d9xe8yfJ
 
+
+
+### Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string's permutations is the substring of the second string.
+```
+# Examples:
+
+# Input:s1 = "ab" s2 = "eidbaooo"
+# Output:True
+# Explanation: s2 contains one permutation of s1 ("ba")
+
+# Input:s1= "ab" s2 = "eidboaoo"
+# Output: False
+```
 ### Implement hash table from scratch
 
 https://stackoverflow.com/questions/20253580/hash-table-implementation-in-python
