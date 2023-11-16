@@ -949,10 +949,14 @@ digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 digits[::-1]   Result: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 ```
 
-#### Stack, queue, priority queue (heapq)  
+#### Stack, queue, priority queue  
  https://realpython.com/queue-in-python/ <br>
  https://realpython.com/python-deque/ <br>
+
+#### heapq 
 https://favtutor.com/blogs/heap-in-python <br>
+
+https://stackabuse.com/guide-to-heaps-in-python/
 
 #### dequeue
 
