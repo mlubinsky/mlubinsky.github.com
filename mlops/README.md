@@ -1,5 +1,7 @@
 https://www.evidentlyai.com/ml-system-design
 
+https://habr.com/ru/companies/vk/articles/772538/
+
 https://habr.com/ru/companies/otus/articles/773320/
 
 https://habr.com/ru/companies/beeline_tech/articles/760308/
