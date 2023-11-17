@@ -1,3 +1,5 @@
+https://arxiv.org/ftp/arxiv/papers/2201/2201.00650.pdf Deep Learning interview
+
 https://yoshuabengio.org/
 
 https://habr.com/ru/articles/753920/
