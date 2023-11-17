@@ -1,5 +1,7 @@
 https://arxiv.org/ftp/arxiv/papers/2201/2201.00650.pdf Deep Learning interview
 
+https://www.coursera.org/account/accomplishments/verify/8GHFJCCQ6G3T?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course
+
 https://yoshuabengio.org/
 
 https://habr.com/ru/articles/753920/
