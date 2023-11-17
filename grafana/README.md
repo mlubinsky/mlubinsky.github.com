@@ -403,10 +403,10 @@ https://medium.com/grafana-tutorials/graphing-non-time-series-sql-data-in-grafan
 
 #### Transformation: Preparing time series
 For bar chart  grouping by date:
-Bat chart color scheme: Classic Palette
-
-Format: Multi-frame time series
 ```
+Bat chart color scheme: Classic Palette
+Transform: Prepare time series
+Format: Multi-frame time series
 
 select report_date, description, kpi_value as " "
 from kpi 
