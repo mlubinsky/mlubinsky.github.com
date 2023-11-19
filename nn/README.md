@@ -1,6 +1,39 @@
 https://arxiv.org/ftp/arxiv/papers/2201/2201.00650.pdf Deep Learning interview
 
+### Courses 
+https://fleuret.org/dlc/ DEEP LEARNING COURSE
+
+https://fleuret.org/francois/lbdl.html  Little Book of Deep Learning 
+
+Practical Deep Learning for Coders https://course.fast.ai/
+
+https://youtube.com/playlist?list=PLTKMiZHVd_2KJtIXOW0zFhFfBaJJilH51&si=ocsN2zSPN7YsrGiY by Sebastian Raschka.
+
+https://karpathy.ai/zero-to-hero.html Andrej Karpathy
+
+https://www.deeplearningbook.org/ , PDF version: https://github.com/janishar/mit-deep-learning-book-pdf
+
+https://web.stanford.edu/~jurafsky/slp3/ transformer architecture.
+
+https://sebastianraschka.com/blog/2023/llm-reading-list.html
+
+The "Understanding Deep Learning" book:
+https://udlbook.github.io/udlbook/ (free PDF and Jupyter notebooks available)
+
+https://github.com/VikParuchuri/zero_to_gpt . Videos are all optional (cover the same content as the text).
+
+https://arthurdouillard.com/deepcourse/
+
+https://d2l.ai/
+
+https://atcold.github.io/NYU-DLSP20/
+
+https://m.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy machine learning lecture series (19 videos)
+
 https://www.coursera.org/account/accomplishments/verify/8GHFJCCQ6G3T?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course
+
+
+https://news.ycombinator.com/item?id=38331200
 
 https://yoshuabengio.org/
 
