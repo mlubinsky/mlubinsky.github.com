@@ -14,6 +14,9 @@ https://karpathy.ai/zero-to-hero.html Andrej Karpathy
 https://www.deeplearningbook.org/ , PDF version: https://github.com/janishar/mit-deep-learning-book-pdf
 
 https://web.stanford.edu/~jurafsky/slp3/ transformer architecture.
+ 
+### Large language models
+https://github.blog/2023-10-30-the-architecture-of-todays-llm-applications/
 
 https://sebastianraschka.com/blog/2023/llm-reading-list.html
 
