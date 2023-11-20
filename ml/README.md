@@ -312,6 +312,11 @@ https://pkghosh.wordpress.com/2021/05/25/data-driven-causal-relationship-discove
 
 https://habr.com/ru/company/otus/blog/559666/  Kaggle tricks
 
+
+### Accuracy, Precision, Recall, F1-score
+
+https://habr.com/ru/articles/775032/
+
 ### Transformers
 
 https://news.ycombinator.com/item?id=29617087
