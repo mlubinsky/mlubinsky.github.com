@@ -1,5 +1,9 @@
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
+Математика больших данных (4-5 курсы, осень 2022) - Гасников А.В
+
+https://www.youtube.com/playlist?list=PL4_hYwCyhAvZIqYnUHqHf7g0G74gPOHo1
+
 https://arxiv.org/abs/2308.10825 Topological data analysis
 
 https://habr.com/ru/companies/otus/articles/773102/ bias, variance, etc
