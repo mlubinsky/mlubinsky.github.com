@@ -1,3 +1,7 @@
+### Fair coin - generate 1/3 probability
+
+https://math.stackexchange.com/questions/3568428/get-1-3-probability-from-a-coin-in-minimal-mean-of-the-amount-of-flips
+
 ### Lie groups
 
  https://www.youtube.com/watch?v=ZRca3Ggpy_g
