@@ -18,6 +18,11 @@ https://thenumb.at/Functions-are-Vectors/
 
 https://news.ycombinator.com/item?id=36921446
 
+
+### Latex, Oerleaf, Typst
+
+https://news.ycombinator.com/item?id=38354422
+
 ### Render math expression in Markdown
 https://news.ycombinator.com/item?id=31438864
 
