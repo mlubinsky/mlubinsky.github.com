@@ -1,3 +1,5 @@
+https://vue.tufts.edu/  VUE
+
 https://habr.com/ru/companies/epam_systems/articles/538018/
 
 https://github.com/jgraph/drawio-desktop
