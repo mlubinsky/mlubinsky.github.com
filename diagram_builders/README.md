@@ -50,6 +50,9 @@ https://dev.to/appmap/quickly-learn-how-new-to-you-code-works-using-sequence-dia
 
 http://fmc-modeling.org/
 
+### Marmaid
+https://mermaid.live/
+
 https://mermaid.js.org/syntax/gitgraph.html
 
 https://swimlanes.io/
