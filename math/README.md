@@ -1,5 +1,7 @@
 ### Fair coin - generate 1/3 probability
 
+https://mindyourdecisions.com/blog/2017/01/01/can-you-solve-it-use-a-coin-to-simulate-any-probability-sunday-puzzle/
+
 https://math.stackexchange.com/questions/3568428/get-1-3-probability-from-a-coin-in-minimal-mean-of-the-amount-of-flips
 
 ### Lie groups
