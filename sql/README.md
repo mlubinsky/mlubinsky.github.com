@@ -12,6 +12,8 @@ https://news.ycombinator.com/item?id=37641628
 
 ###  Interview questions
 
+https://www.youtube.com/watch?v=NKXH7o8m2x4
+
 https://habr.com/ru/articles/588859/
 
 Duplicates in table: https://blog.devgenius.io/duplicates-in-sql-e7a146d0131
