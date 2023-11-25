@@ -75,6 +75,8 @@ Array, Binary Search, Sliding Window, Matrix, Two Pointer, Intervals, Hash Map, 
 
 ###
 
+https://www.youtube.com/watch?v=dK76rXBQ_IA  Very good channel
+
 https://habr.com/ru/companies/ruvds/articles/775570/
 
 ### Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string's permutations is the substring of the second string.
