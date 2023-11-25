@@ -4,6 +4,8 @@ https://chaosbook.org/
 
 https://habr.com/ru/articles/750380/
 
+https://habr.com/ru/articles/761426/
+
 ### Steven H.Strogatz
 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering 
 https://www.amazon.com/Nonlinear-Dynamics-Chaos-Applications-Nonlinearity-ebook-dp-B07BMB5P15/dp/B07BMB5P15
