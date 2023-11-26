@@ -15,6 +15,10 @@ donnemartin https://github.com/donnemartin/system-design-primer
 https://www.amazon.com/System-Design-Interview-Insiders-Guide-ebook-dp-B08B3FWYBX/dp/B08B3FWYBX/ref=mt_other?_encoding=UTF8&me=&qid=
 
 
+Queue 
+https://www.tedinski.com/2019/03/05/backpressure.html
+
+
 ## Coding
 https://www.educative.io/blog/cracking-top-facebook-coding-interview-questions
 
