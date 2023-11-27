@@ -8,6 +8,8 @@ https://www.cphysics.org/index.html
 
 https://mccme.ru/free-books/
 
+https://landau.gitlab.io/
+
 https://www.damtp.cam.ac.uk/user/tong/teaching.html
 
 https://www.susanrigetti.com/physics
