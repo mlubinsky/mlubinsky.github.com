@@ -1,5 +1,7 @@
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
+https://leanpub.com/insidethemachinelearninginterview/c/CyberMonday2023HugeSale  Inside the Machine Learning Interview: 151 Real Questions from FAANG and How to Answer Them
+
 Математика больших данных (4-5 курсы, осень 2022) - Гасников А.В
 
 https://www.youtube.com/playlist?list=PL4_hYwCyhAvZIqYnUHqHf7g0G74gPOHo1
