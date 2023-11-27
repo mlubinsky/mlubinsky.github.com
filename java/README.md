@@ -69,6 +69,8 @@ System.out.print(s.charAt(i-1));            //printing the character at index i-
  ```
 
  ## JVM 
+
+ https://habr.com/ru/companies/otus/articles/776342/  Garbage collection
  
  https://habr.com/ru/post/685518/
 
