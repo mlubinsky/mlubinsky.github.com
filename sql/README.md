@@ -12,6 +12,54 @@ https://news.ycombinator.com/item?id=37641628
 
 ###  Interview questions
 
+https://habr.com/ru/companies/tensor/articles/776834/
+
+Let generate 1mln random records for 1 year:
+
+```
+CREATE TABLE fact4agg AS
+  SELECT
+    now()::date - (random() * 365)::integer dt      -- дата "факта"
+  , chr(ascii('a') + (random() * 26)::integer) code -- код агрегации
+  FROM
+    generate_series(1, 1e6);
+
+CREATE INDEX ON fact4agg(dt);
+
+WITH params(dtb, dte) AS (
+  VALUES(now()::date - 30, now()::date)
+)
+SELECT
+  dt::date
+FROM
+  params, generate_series(dtb, dte, '1 day') dt;
+
+
+WITH params(dtb, dte) AS (
+  VALUES(now()::date - 30, now()::date)
+)
+SELECT
+	dt
+,	code
+,	count(*) qty
+FROM
+	params
+,	fact4agg
+WHERE
+	dt BETWEEN dtb AND dte
+GROUP BY
+	1, 2;
+
+
+
+DROP INDEX fact4agg_dt_idx;
+
+CREATE INDEX ON fact4agg(dt)   INCLUDE(code);
+```
+
+
+
+
 https://www.youtube.com/watch?v=NKXH7o8m2x4
 
 https://habr.com/ru/articles/588859/
