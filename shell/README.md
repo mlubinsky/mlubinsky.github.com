@@ -179,11 +179,14 @@ cat a.json | jq -r '.key'
 
 https://github.com/antonmedv/fx
 
-Commandline tool for running SQL queries against JSON, CSV, Excel, Parquet, and more:
+### Commandline tool for running SQL queries against JSON, CSV, Excel, Parquet, and more:
  
 https://github.com/multiprocessio/dsq
+
 https://github.com/harelba/q
+
 https://github.com/dinedal/textql
+
 https://github.com/roapi/roapi/tree/main/columnq-cli  SQL for  parquet, csv, arrow files
 
 miller 
@@ -1006,3 +1009,118 @@ jq -R -r 'split(",") | {name:.[0],age:.[1]}' file.csv
 To convert a CSV file to a SQL INSERT statement:
 awk -F, '{printf "INSERT INTO table VALUES (\"%s\", \"%s\", \"%s\");\n", $1, $
 ```
+
+### RIGREP https://skerritt.blog/ripgrep-cheatsheet/
+
+Ripgrep search for specific file types
+Problem
+You want to find out where the AWS ARN 123456789012 is used. You have a mono-repo with many file types in it. You're only interested in Terraform files.
+
+Solution globbing for file types
+rg '123456789012' -g '*.tf'
+This globs through all files that end with .tf (the Terraform extension) for the ARN.
+
+Problem
+You want to search for the API endpoint "localhost:4531" through all Rust files.
+
+Solution using Ripgrep's types
+Ripgrep comes with a number of filetypes built in. You can do:
+
+rg "localhost:4531" --type rust
+# or more succinctly 
+rg "localhost:4531" --trust
+You can find the full list of file types with ripgrep --type-list.
+
+
+Pro tip: Do rg --type-list | rg terraform to see if your file type is supported.
+Problem
+You want to find where the ARN is used, but want to ignore all markdown files.
+
+Solution using inverse type selection
+rg '123456789012' --type-not markdown
+Case insensitive
+$ rg example
+
+$ rg -i example
+hello_blog
+1:ExAmple
+-i does it.
+
+Regex support
+Ripgrep supports regex search by default.
+
+$ rg 'fast\w+' README.md
+75:  faster than both. (N.B. It is not, strictly speaking, a "drop-in" replacement
+119:### Is it really faster than everything else?
+Find the word fast followed by some number of other letters.
+
+Literal string (no regex)
+Ripgrep by default uses regex to search. Sometimes the word we want to find contains valid regex, so this is an issue.
+
+$ rg 'hello*.'
+hello_blog
+3:hello.*
+4:hello this is a test
+
+☹️
+
+We can search literally with:
+
+$ rg -F 'hello.*'
+hello_blog
+3:hello.*
+-F is the argument
+
+Show lines around the found text
+Sometimes we want to search for something, and we'd like context on the found text in the file.
+
+To find 1 line before our matched text:
+
+$ rg "hello" -B 1
+hello_blog
+2-ThisIsATest
+3:hello.*
+-B for before
+
+To find 1 line after our matched text:
+
+$ rg "hello" -A 1
+hello_blog
+3:hello.*
+4-Disney
+-A for after
+
+To find 1 line before and after our text:
+
+$ rg "hello" -C 1
+hello_blog
+2-ThisIsATest
+3:hello.*
+4-Disney
+-C for a combination of A and B
+
+Get statistics of a search
+I use this to work out how much work it would be to go through my search.
+
+So searching "crypto" would take a while. How about crypto in Python files? This helps me speed up finding things.
+
+rg "crypto" --stats
+.... (full output of the search)
+1292 matches
+1083 matched lines
+232 files contained matches
+36826 files searched
+6296587 bytes printed
+254562478 bytes searched
+5.805867 seconds spent searching
+1.559705 seconds
+Exclude a directory
+I do not want to search through our modules directory, only our code.
+
+We can do this by:
+
+$ rg crypto -g '!modules/' -g '!pypi/'
+Find Files
+Find all files that have the word "cluster" in them.
+
+rg --files | rg cluster
