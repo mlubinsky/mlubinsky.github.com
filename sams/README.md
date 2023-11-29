@@ -38,6 +38,14 @@ dir test.exe > output.txt 2> err.txt
 
 ###  Setup Superset
 ```
+py --list
+  *               Active venv
+ -V:3.12          Python 3.12 (64-bit)
+ -V:3.10          Python 3.10 (64-bit)
+ -V:3.8           Python 3.8 (64-bit)
+ -V:2.7           Python 2.7
+ -V:2.7-32        Python 2.7-32
+
 cd c:\ALL_ENV
 rmdir  SUPERSET
 python -m venv SUPERSET 
