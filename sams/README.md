@@ -35,11 +35,25 @@ command > logfile 2>&1
 dir test.exe > output.txt 2> err.txt
 ```
 
+
+###  Setup Superset
+```
+cd c:\ALL_ENV
+rmdir  SUPERSET
+python -m venv SUPERSET 
+SUPERSET\Scripts\activate.bat
+python.exe -m pip install --upgrade pip --index-url=http://105.128.27.80/PYPI/web/simple --trusted-host 105.128.27.80    
+pip install apache-superset==1.3.2  --index-url=http://105.128.27.80/PYPI/web/simple --trusted-host 105.128.27.80
+```
+
+
 #### Redirect to NULL
 ```
 dir test.exe 1> myoutput.txt 2>nul
 ```
 ### File Compare Utils
+winmerge
+
 Compare It!
 https://www.grigsoft.com/wincmp3.htm
 
