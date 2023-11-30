@@ -37,6 +37,7 @@ dir test.exe > output.txt 2> err.txt
 
 
 ###  Setup Superset
+https://apache-superset.readthedocs.io/en/latest/installation.html
 ```
 py --list
   *               Active venv
@@ -46,12 +47,17 @@ py --list
  -V:2.7           Python 2.7
  -V:2.7-32        Python 2.7-32
 
-cd c:\ALL_ENV
-rmdir  SUPERSET
+cd c:\ALL_VENV
+cd c:\CODE\all_venv
+
+rmdir /S /Q SUPERSET
 python -m venv SUPERSET 
 SUPERSET\Scripts\activate.bat
 python.exe -m pip install --upgrade pip --index-url=http://105.128.27.80/PYPI/web/simple --trusted-host 105.128.27.80    
 pip install apache-superset==1.3.2  --index-url=http://105.128.27.80/PYPI/web/simple --trusted-host 105.128.27.80
+
+
+deactivate
 ```
 
 
