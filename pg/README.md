@@ -1,6 +1,7 @@
 
-https://dev.to/lnahrf/mastering-postgres-debugging-must-know-queries-for-database-troubleshooting-495a?fbclid=IwAR35x-9hEeFUeoJfv142jRBMB2SQTB2ndh77zvSfw628d27ITWGderkLTME
+https://dev.to/lnahrf/mastering-postgres-debugging-must-know-queries-for-database-troubleshooting-495a 
 
+https://www.enterprisedb.com/postgres-tutorials/10-tools-every-developer-should-have-when-working-postgresql
 
 Postgre vs MySQL 
 https://www.bytebase.com/blog/postgres-vs-mysql/
