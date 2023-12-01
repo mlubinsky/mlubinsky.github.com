@@ -10,6 +10,27 @@ https://www.youtube.com/watch?v=lORQ_wt2MZY
 
 https://math.stackexchange.com/questions/3834837/how-to-use-a-fair-coin-to-simulate-any-probability-p-of-winning
 
+### How do you create an event with a probability of 1/3 using an unbiased coin?
+ 
+``` 
+unbiased coin has P(H) = P(T) = 1/2.
+To create the event that the question desires, do follow:
+first, understand that P(HH) = P(HT) = P(TH) = P(TT) = 1/4
+
+if you flip coin 2 times in a row:
+1) HH happens -> do sth
+2) HT happens -> do another stuff
+3) TH happens -> do other stuff
+4) if TT happens -> reroll coin 2 times again and go back .
+
+This guarantees that we only observe 1/3 events.
+
+ 
+Toss the unbiased coin thrice. Given the outcome is not both tails ( T T) ,
+ then the outcome of both heads (H H) has probability 1/3.
+```
+
+###
 https://www.statlearning.com/
 
 https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/edit?pli=1  Introduction to probability 2nd edition
