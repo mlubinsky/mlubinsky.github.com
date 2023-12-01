@@ -40,6 +40,9 @@ https://news.ycombinator.com/item?id=37524169
 https://www.cphysics.org/
  
 
+Квантовая механика - 1.1 | Введение | Заиграев Н. М.
+
+https://www.youtube.com/watch?v=5Z2RnlZkGRM&list=PLti61wgkUWHxVJwqQgAWcMnmg1Uopuu-k&index=1&t=472s
 
 
 ### QFT Квантовая теория поля 2022-2023
