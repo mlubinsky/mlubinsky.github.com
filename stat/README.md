@@ -11,6 +11,8 @@ https://www.youtube.com/watch?v=lORQ_wt2MZY
 https://math.stackexchange.com/questions/3834837/how-to-use-a-fair-coin-to-simulate-any-probability-p-of-winning
 
 ### How do you create an event with a probability of 1/3 using an unbiased coin?
+
+https://math.stackexchange.com/questions/3568428/get-1-3-probability-from-a-coin-in-minimal-mean-of-the-amount-of-flips
  
 ``` 
 unbiased coin has P(H) = P(T) = 1/2.
