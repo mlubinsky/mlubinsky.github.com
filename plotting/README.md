@@ -17,6 +17,8 @@ https://habr.com/ru/company/ruvds/blog/536962/
 
 https://habr.com/ru/articles/773296/  Superset
 
+https://habr.com/ru/companies/rostelecom/articles/772118/ Superset
+
 <https://github.com/shzlw/poli>
 
 <https://news.ycombinator.com/item?id=20507592> 
