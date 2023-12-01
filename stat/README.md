@@ -1,4 +1,6 @@
-Unfair coin - simulate any probability
+### Unfair coin - simulate any probability
+
+https://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html
 
 https://www.youtube.com/watch?v=lORQ_wt2MZY
 
