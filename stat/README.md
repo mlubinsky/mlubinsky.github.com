@@ -4,6 +4,8 @@ https://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.ht
 
 https://www.quora.com/How-can-I-simulate-a-die-given-a-fair-coin
 
+https://www.quora.com/Can-you-use-a-single-coin-to-simulate-probabilities-like-frac-1-11-Whats-the-minimum-number-of-flips-on-average
+
 https://www.youtube.com/watch?v=lORQ_wt2MZY
 
 https://math.stackexchange.com/questions/3834837/how-to-use-a-fair-coin-to-simulate-any-probability-p-of-winning
