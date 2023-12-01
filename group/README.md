@@ -1,8 +1,16 @@
-Теория групп. Лекция 1 (Алексей Савватеев)
+Теория групп. (Алексей Савватеев)
 
-https://www.youtube.com/watch?v=ihoATq9jSlQ
+https://www.youtube.com/watch?v=ihoATq9jSlQ  Лекция 1 
 
-https://www.youtube.com/watch?v=cEC7gPN441w
+https://www.youtube.com/watch?v=cEC7gPN441w  Лекция 2
+
+https://www.youtube.com/watch?v=OgQSmqZABVY 4 
+
+https://www.youtube.com/watch?v=OraV8VbFzrQ 5 
+
+https://www.youtube.com/watch?v=obXICujbJMw 6
+
+https://www.youtube.com/watch?v=ytRgMCC2DN0 7 
 
 LightCone
 
