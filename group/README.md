@@ -1,8 +1,13 @@
 Теория групп. (Алексей Савватеев)
 
+https://www.youtube.com/playlist?list=PLsdv2rpSb41YX3GXvKg7YQOwl-MVNkz9H
+
+
 https://www.youtube.com/watch?v=ihoATq9jSlQ  Лекция 1 
 
 https://www.youtube.com/watch?v=cEC7gPN441w  Лекция 2
+
+https://www.youtube.com/watch?v=m0Fz88VtTKc 3
 
 https://www.youtube.com/watch?v=OgQSmqZABVY 4 
 
