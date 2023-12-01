@@ -1,4 +1,6 @@
-Unfair coin
+Unfair coin - simulate any probability
+
+https://www.youtube.com/watch?v=lORQ_wt2MZY
 
 https://math.stackexchange.com/questions/3834837/how-to-use-a-fair-coin-to-simulate-any-probability-p-of-winning
 
