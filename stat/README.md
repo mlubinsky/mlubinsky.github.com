@@ -1,3 +1,7 @@
+Unfair coin
+
+https://math.stackexchange.com/questions/3834837/how-to-use-a-fair-coin-to-simulate-any-probability-p-of-winning
+
 https://www.statlearning.com/
 
 https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/edit?pli=1  Introduction to probability 2nd edition
