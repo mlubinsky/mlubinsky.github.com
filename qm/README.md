@@ -1,5 +1,7 @@
 https://habr.com/ru/companies/macloud/articles/555522/ 
 
+https://www.youtube.com/playlist?list=PLq3E5oubNNoB3fjQzUYM7nbJmwv6Q2MHG  math foundation of QM
+
 This playlist will help you get a strong foundation in quantum physics, covering essential topics and concepts. The videos are organized in a logical sequence, starting with introductory content and progressing to more advanced topics. Enjoy your marathon study session!
 ```
 Quantum Physics for Beginners: Overview and Basics
