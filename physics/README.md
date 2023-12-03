@@ -12,6 +12,8 @@ http://theorphys.psu.ru/lib/
 
 https://phys.vsu.ru/thp/feed.html
 
+https://physicspages.com/
+
 https://studizba.com/hs/mgu-im-lomonosova/files/
 
 https://mccme.ru/free-books/
