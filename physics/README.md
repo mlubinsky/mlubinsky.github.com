@@ -6,6 +6,10 @@
 
 https://www.cphysics.org/index.html
 
+https://studizba.com/hs/mfti-gu/files/
+
+https://studizba.com/hs/mgu-im-lomonosova/files/
+
 https://mccme.ru/free-books/
 
 https://landau.gitlab.io/
