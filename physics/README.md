@@ -8,6 +8,8 @@ https://www.cphysics.org/index.html
 
 https://studizba.com/hs/mfti-gu/files/
 
+http://theorphys.psu.ru/lib/
+
 https://phys.vsu.ru/thp/feed.html
 
 https://studizba.com/hs/mgu-im-lomonosova/files/
