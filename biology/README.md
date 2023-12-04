@@ -3,6 +3,8 @@
  There are 2 copies of every of 23 chromosome. 
 
  Y chromosome is found only in males.
+
+ https://www.bbc.com/future/article/20121102-will-we-ever-crack-lifes-code
 ```
  Genes encode the instructions for assembling proteins, molecular machines that perform vital jobs in our cells. 
  A protein is a long chain of amino acids, and we can predict that chain with perfect precision. 
