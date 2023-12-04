@@ -143,6 +143,12 @@ https://djangobuilder.io/#/
 
 https://news.ycombinator.com/item?id=33845414
 
+### Panel
+
+https://awesome-panel.org/home
+
+https://medium.com/@marcskovmadsen/i-prefer-to-use-panel-for-my-data-apps-here-is-why-1ff5d2b98e8f
+
 
 ### Starlette vs FlaskAPI
 with asyncpg and plain SQL
@@ -151,7 +157,7 @@ with asyncpg and plain SQL
 
 https://nicegui.io/
 
-https://awesome-panel.org/home
+
 
 https://www.youtube.com/watch?v=gWV1gbeB-IM&t
 
