@@ -17,6 +17,11 @@
 ### DNA File formats
 
 https://bioinformatics.stackexchange.com/questions/1/whats-the-most-efficient-file-format-for-the-storage-of-dna-sequences
+
+The standard and the most common sequence format is FASTA for sure. You can compress it with a compressor. For the ~3GB human genome, 
+gzip reduces the size to ~900MB, depending on the option in use.
+
+Another often used format is UCSC's 2-bit format. This format keeps each A/C/G/T with 2 bits.
  
 ```
  Genes encode the instructions for assembling proteins, molecular machines that perform vital jobs in our cells. 
