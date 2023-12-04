@@ -21,7 +21,15 @@ Each has repetitive DNA at the tips of its four arms – the telomeres – and a
  Some genes provide the information needed to make an enormous variety of different proteins that perform assorted functions important to life,
  while other sections of DNA have regulatory functions. 
 
-It has turned out that most diseases are affected by hundreds of genes, 
+It has turned out that most diseases are affected by hundreds of genes,
+
+
+Protein-coding genes make up just 1.5% of our genome, the rest includes a lot of what is thought to be useless junk with no discernible function.
+But it also contains regulatory sequences that control when, where and how our genes are used.
+We need to identify these if we’re ever to predict how a genome leads to a living, breathing organism.
+The technology for doing that is being developed, and the ENCODE project – the Encyclopaedia of DNA elements –
+has put it to good use, compiling a catalogue of the various regulatory sequences in our own genome. But
+ENCODE involved 442 scientists intensely running experiments for a decade, and even its unprecedented catalogue is incomplete.
 ```
 https://www.goodreads.com/book/show/25660581-the-deeper-genome
 
