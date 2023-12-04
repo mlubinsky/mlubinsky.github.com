@@ -13,6 +13,10 @@
  3.055 billion base pair (bp) sequence of a human genome
 
  In 2001, Celera Genomics and the International Human Genome Sequencing Consortium published their initial drafts of the human genome
+
+### DNA File formats
+
+https://bioinformatics.stackexchange.com/questions/1/whats-the-most-efficient-file-format-for-the-storage-of-dna-sequences
  
 ```
  Genes encode the instructions for assembling proteins, molecular machines that perform vital jobs in our cells. 
