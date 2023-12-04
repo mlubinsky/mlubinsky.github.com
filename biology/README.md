@@ -18,6 +18,8 @@
 
 https://bioinformatics.stackexchange.com/questions/1/whats-the-most-efficient-file-format-for-the-storage-of-dna-sequences
 
+http://emboss.open-bio.org/html/use/ch05s02.html
+
 The standard and the most common sequence format is FASTA for sure. You can compress it with a compressor. For the ~3GB human genome, 
 gzip reduces the size to ~900MB, depending on the option in use.
 
