@@ -145,9 +145,13 @@ https://news.ycombinator.com/item?id=33845414
 
 ### Panel
 
+https://panel.holoviz.org/index.html
+
 https://awesome-panel.org/home
 
 https://medium.com/@marcskovmadsen/i-prefer-to-use-panel-for-my-data-apps-here-is-why-1ff5d2b98e8f
+
+https://www.datarevenue.com/en-blog/data-dashboarding-streamlit-vs-dash-vs-shiny-vs-voila
 
 
 ### Starlette vs FlaskAPI
