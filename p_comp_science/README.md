@@ -2,6 +2,8 @@ https://mpmath.org/ Python math library
 
 https://github.com/osscar-org/quantum-mechanics
 
+https://medium.com/@natsunoyuki/quantum-mechanics-with-python-de2a7f8edd1f
+
 ### QuTiP
 https://github.com/jrjohansson/qutip-lectures
 
