@@ -1,3 +1,28 @@
+ The DNA alphabet only has four letters: A, C, G and T. 
+
+ There are 2 copies of every of 23 chromosome. 
+
+ Y chromosome is found only in males.
+```
+ Genes encode the instructions for assembling proteins, molecular machines that perform vital jobs in our cells. 
+ A protein is a long chain of amino acids, and we can predict that chain with perfect precision. 
+ But the chain also folds, origami-like, into a complex three-dimensional shape, and the shape dictates everything that the protein does, 
+ from the chemical reactions it speeds up to the other molecules it sticks to.
+
+ The problem is that some DNA is extremely repetitive. 
+ Certain stretches of the genome repeat the same sequences over and over, sometimes for thousands of bases.
+
+The repetitive DNA often turns up in the same bits of the genome. 
+Our DNA isn't stored in one long continuous rope, but is instead split into smaller chunks called chromosomes.
+These are X-shaped (apart from one Y-shaped chromosome carried by men) 
+and there are 23 pairs of them in humans. 
+Each has repetitive DNA at the tips of its four arms – the telomeres – and at the central cross, the centromere. Both are important.
+
+ Some genes provide the information needed to make an enormous variety of different proteins that perform assorted functions important to life,
+ while other sections of DNA have regulatory functions. 
+
+It has turned out that most diseases are affected by hundreds of genes, 
+```
 https://www.goodreads.com/book/show/25660581-the-deeper-genome
 
 https://www.quantamagazine.org/biologists-rethink-the-logic-behind-cells-molecular-signals-20210916 
@@ -11,6 +36,11 @@ https://www.quantamagazine.org/most-complete-simulation-of-a-cell-probes-lifes-h
 https://actu.epfl.ch/news/a-secret-language-of-cells-new-cell-computations-u/
 
 https://news.ycombinator.com/item?id=32387815
+
+
+### Bioinformatics
+
+https://www.bbc.com/future/article/20230210-the-man-whose-genome-you-can-read-end-to-end
 
 ### Immune system atlas 
 
