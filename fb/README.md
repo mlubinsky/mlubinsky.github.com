@@ -88,7 +88,7 @@ https://habr.com/ru/companies/ruvds/articles/775570/
 
 
 ###  Given an array of N+1 integers containing elements in range [1, N]. Find any one duplicate number.
-
+https://medium.com/@rohitverma_87831/best-coding-interview-question-of-all-time-92f6cbdd656f
 [4,3,3,1,1,2]
 
 We can use HashMap O(N) space and maintain count of each element of the array, as soon as we found an element whose count is more than 1 we found our answer. 
