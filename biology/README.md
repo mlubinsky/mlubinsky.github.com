@@ -5,6 +5,15 @@
  Y chromosome is found only in males.
 
  https://www.bbc.com/future/article/20121102-will-we-ever-crack-lifes-code
+
+ https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/
+
+ https://www.biorxiv.org/content/10.1101/2021.05.26.445798v1
+
+ 3.055 billion base pair (bp) sequence of a human genome
+
+ In 2001, Celera Genomics and the International Human Genome Sequencing Consortium published their initial drafts of the human genome
+ 
 ```
  Genes encode the instructions for assembling proteins, molecular machines that perform vital jobs in our cells. 
  A protein is a long chain of amino acids, and we can predict that chain with perfect precision. 
