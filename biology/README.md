@@ -22,6 +22,8 @@ http://emboss.open-bio.org/html/use/ch05s02.html
 
 https://linsalrob.github.io/ComputationalGenomicsManual/
 
+https://linsalrob.github.io/ComputationalGenomicsManual/SequenceFileFormats/
+
 The standard and the most common sequence format is FASTA for sure. You can compress it with a compressor. For the ~3GB human genome, 
 gzip reduces the size to ~900MB, depending on the option in use.
 
