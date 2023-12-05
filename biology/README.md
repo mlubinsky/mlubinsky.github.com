@@ -8,6 +8,9 @@ https://www.youtube.com/watch?v=cBDZSGf9HRE Variant Calling Format VCF
 
 DNA Sample -> sequencing -> Raw Sequence FASFA/FANTQ -> alignment -> Aligned reads (BAM SAM) -> variant calling -> Carian Call (VCF)
 
+
+https://www.youtube.com/watch?v=Kfs6xgGn6Pc ChIP-Seq files - BigWig (Wiggle) and BED/bigBed
+
 https://habr.com/ru/articles/137082/ Практическая биоинформатика ч.2.
 https://habr.com/ru/articles/137267/ Практическая биоинформатика ч.3.
 https://habr.com/ru/articles/137453/ Практическая биоинформатика ч.4.
