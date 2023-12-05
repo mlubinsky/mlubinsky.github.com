@@ -1,3 +1,4 @@
+https://metaperl.github.io/pure-python-web-development/class-a.html
 
 https://nicegui.io/
 
