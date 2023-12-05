@@ -4,6 +4,9 @@
 "There is no God and Dirac is his Prophet." 
 — W. Pauli
 
+
+https://www.youtube.com/@mephislecturesarchive4112  MIFI lectures
+
 https://www.cphysics.org/index.html
 
 https://studizba.com/hs/mfti-gu/files/
