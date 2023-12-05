@@ -783,6 +783,10 @@ https://www.pyinvoke.org/
 
 ### 3rd party libs
 
+DiskCache efficiently makes gigabytes of storage space available for caching. 
+By leveraging rock-solid database libraries and memory-mapped files, cache performance can match and exceed industry-standard solutions. 
+https://grantjenks.com/docs/diskcache/
+
 https://pythonspeed.com/articles/faster-python-json-parsing/  Fast memory-efficient Python JSON parsing with msgspec
 
 https://www.reddit.com/r/Python/comments/16j7pj5/what_python_libraries_programs_will_blow_peoples/
