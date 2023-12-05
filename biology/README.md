@@ -14,6 +14,16 @@
 
  In 2001, Celera Genomics and the International Human Genome Sequencing Consortium published their initial drafts of the human genome
 
+### SEQANSWERS
+
+https://www.seqanswers.com/articles/324199-from-algorithms-to-assemblies-an-interview-with-sequencing-analysis-experts%E2%80%94part-1
+
+https://www.seqanswers.com/articles/324579-qc-alignment-and-mapping-recommended-tools-for-next-level-sequencing-analysis
+
+https://www.seqanswers.com/articles/324604-variant-analysis-and-genome-assembly-recommended-tools-for-next-level-sequencing-analysis
+
+https://www.seqanswers.com/articles/324616-differential-expression-and-data-visualization-recommended-tools-for-next-level-sequencing-analysis
+
 ### DNA File formats
 
 https://bioinformatics.stackexchange.com/questions/1/whats-the-most-efficient-file-format-for-the-storage-of-dna-sequences
