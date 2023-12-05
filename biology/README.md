@@ -1,16 +1,41 @@
 https://habr.com/ru/articles/452622/
 https://habr.com/ru/articles/137069/
+https://habr.com/ru/companies/epam_systems/articles/337892/
+https://habr.com/ru/articles/138486/ Алгоритмы в биоинформатике ч.1
+
+https://habr.com/ru/articles/137082/ Практическая биоинформатика ч.2.
+https://habr.com/ru/articles/137267/ Практическая биоинформатика ч.3.
+https://habr.com/ru/articles/137453/ Практическая биоинформатика ч.4.
+https://habr.com/ru/articles/137626/ Практическая биоинформатика ч.5.
 
 https://habr.com/ru/articles/115641/
 https://habr.com/ru/articles/385865/
 https://habr.com/ru/articles/48533/
 https://habr.com/ru/articles/378545/
-https://rosalind.info/problems/locations/
+
+https://habr.com/ru/articles/181850/
+
+https://rosalind.info/problems/locations/ Структура белка: введение для айтишников
+https://habr.com/ru/articles/170429/  Браузеры генома
+https://habr.com/ru/companies/stepic/articles/196870/
+
 https://habr.com/ru/articles/412453/
 https://bioinformaticsinstitute.ru/sites/default/files/grigorev_-_tehnologii_sekvenirovaniya_compressed.pdf
 https://bioinformaticsinstitute.ru/sites/default/files/ramensky2017summer.pdf
-
+https://bioinformaticsinstitute.ru/sites/default/files/sequoia_0.pdf 
 https://habr.com/ru/articles/448376/
+
+
+https://habr.com/ru/articles/443526/  От алгоритмов до рака: лекции со школы по биоинформатике
+https://habr.com/ru/articles/153305/ Видеолекции по биоинформатике
+https://habr.com/ru/articles/198784/ Видеолекции по биоинформатике
+
+https://vimeo.com/30294283 Многомерный анализ microarray данных
+https://vimeo.com/30295235 Технологии ChIP-seq и компьютерный анализ геномных профилей связывания
+
+https://en.wikipedia.org/wiki/DNA_sequencing
+https://en.wikipedia.org/wiki/ChIP_sequencing 
+https://en.wikipedia.org/wiki/RNA-Seq
 ```
 ДНК — это полимерная цепь, состоящая из мономеров четырех типов, называемых нуклеотидами, 
 The DNA alphabet only has four letters: A, C, G and T. 
