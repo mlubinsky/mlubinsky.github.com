@@ -1,3 +1,8 @@
+convert Jupyter notebook to pdf, laxet pypdf
+
+https://habr.com/ru/companies/lanit/articles/777514/
+
+
 https://medium.com/@techlatest.net/using-jupyter-notebook-with-big-data-a-guide-on-how-to-use-jupyter-notebook-with-big-data-f473af87185b
 
 ### PyGWalker
