@@ -1,3 +1,5 @@
+https://en.wikipedia.org/wiki/Exome
+
 https://habr.com/ru/articles/452622/
 https://habr.com/ru/articles/137069/
 https://habr.com/ru/companies/epam_systems/articles/337892/
