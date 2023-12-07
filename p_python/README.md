@@ -4,9 +4,17 @@ https://github.com/gto76/python-cheatsheet
 
 https://wiki.python.org/moin/TimeComplexity
 
+https://habr.com/ru/companies/kaspersky/articles/762788/ Функциональное программирование в Python
+
+https://github.com/nyggus/tracemem  memory used by a Python session
+
+
+### Query CSV, JSON and Parquet files
+
 https://github.com/luminousmen/data-toolset   Avro and Parquet 
 
-https://habr.com/ru/companies/kaspersky/articles/762788/
+https://github.com/MarkyMan4/filequery Query CSV, JSON and Parquet files with SQL
+
 
 ### String
 ```
