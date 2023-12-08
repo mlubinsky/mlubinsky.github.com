@@ -70,6 +70,8 @@ https://news.ycombinator.com/item?id=35131357
 
 ### PIPX 
 
+https://github.com/pypa/pipx
+
 https://pypa.github.io/pipx/
 
 Installing self-contained programs written in Python not packaged for your distro:
