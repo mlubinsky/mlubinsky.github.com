@@ -9,6 +9,11 @@ https://habr.com/ru/companies/kaspersky/articles/762788/ Функциональ�
 https://github.com/nyggus/tracemem  memory used by a Python session
 
 
+### Linting Python in Visual Studio Code
+
+https://code.visualstudio.com/docs/python/linting
+
+
 ### Query CSV, JSON and Parquet files
 
 https://github.com/luminousmen/data-toolset   Avro and Parquet 
