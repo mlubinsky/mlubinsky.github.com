@@ -1,3 +1,5 @@
+https://bioinformatics.stackexchange.com/
+
 https://www.youtube.com/watch?v=P0xUb-rRxU4
 
 https://en.wikipedia.org/wiki/Exome
