@@ -592,6 +592,11 @@ https://habr.com/ru/companies/ruvds/articles/757336/ cProfile  / profile
 https://realpython.com/python-profiling/
 
 ### Fast python
+
+https://github.com/plasma-umass/scalene  memory profiler
+
+https://bloomberg.github.io/memray/index.html memory profiler
+
 https://habr.com/ru/articles/773376/
 
 https://pythonbooks.org/python-high-performance-second-edition/
