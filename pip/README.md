@@ -68,7 +68,20 @@ https://snarky.ca/how-virtual-environments-work/
 
 https://news.ycombinator.com/item?id=35131357
 
+### PIPX 
+
 https://pypa.github.io/pipx/
+
+Installing self-contained programs written in Python not packaged for your distro:
+
+    PIPX_HOME=/usr/local/pipx PIPX_BIN_DIR=/usr/local/bin pipx install app==1.2.3
+    
+It sets up an isolated install for each app with only its deps and makes it transparent.
+
+ 
+ 
+
+
 
 https://pip-tools.readthedocs.io/en/latest/
 
