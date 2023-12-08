@@ -13,6 +13,8 @@ https://github.com/nyggus/tracemem  memory used by a Python session
 
 https://code.visualstudio.com/docs/python/linting
 
+https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html#cheat-sheet-py3
+
 
 ### Query CSV, JSON and Parquet files
 
