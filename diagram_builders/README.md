@@ -6,11 +6,19 @@ https://github.com/jgraph/drawio-desktop
 
 https://www.ilograph.com/blog/posts/concrete-diagramming-models/
 
+### C4
 https://c4model.com/
+
+
+
+https://habr.com/ru/articles/778726/
+
 
 https://kroki.io/
 
 ### D2
+
+https://d2lang.com/
 
 https://d2-lang.com/
 ```
@@ -63,13 +71,13 @@ https://www.mcternan.me.uk/mscgen/
 
 https://diagrams.mingrammer.com/  Python
 
-https://d2lang.com/
 
-https://c4model.com/
+
+
 
 https://chatuml.com/
 
-PlantUML
+### PlantUML
 
 https://towardsdatascience.com/diagrams-as-code-python-d9cbaa959ed5
 
