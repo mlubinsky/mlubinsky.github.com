@@ -25,4 +25,6 @@ https://www.youtube.com/watch?v=wA8Wa2zAJ3E&list=PLnbH8YQPwKblIpRi0ARO2VadnMwntv
 https://www.youtube.com/watch?v=wTdO_N0qGg4
 
 
+https://www.youtube.com/watch?v=ajkof5THayg Лекция №1 по Теории групп. Смежные классы. Теорема Лагранжа. Богданов И.И.
+
 https://www.youtube.com/watch?v=ajkof5THayg
