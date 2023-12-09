@@ -1,7 +1,8 @@
 Делайте что хотите, но пусть это приносит радость
 /Уолт Уитмен/
 
- 
+
+ https://web.whatsapp.com/  WhatsUp on web
 
 ### The most counterintuitive facts in all of mathematics, computer science, and physics
 
