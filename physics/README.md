@@ -5,6 +5,8 @@
 — W. Pauli
 
 
+https://vk.com/club70818948 QM books
+
 https://www.youtube.com/@mephislecturesarchive4112  MIFI lectures
 
 https://www.cphysics.org/index.html
