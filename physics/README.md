@@ -7,6 +7,8 @@
 
 https://vk.com/club70818948 QM books
 
+https://vk.com/physics_math
+
 https://www.youtube.com/@mephislecturesarchive4112  MIFI lectures
 
 https://www.cphysics.org/index.html
