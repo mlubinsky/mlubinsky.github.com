@@ -17,6 +17,29 @@ py -3.4 – version 3.4
 py -3 – latest installed version 3.x
 ```
 
+https://devblogs.microsoft.com/python/python-linting-video/
+
+https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
+
+https://www.b-list.org/weblog/2023/dec/07/pip-install-safely/
+
+pytest
+https://coderslegacy.com/pytest-tutorial-unit-testing-in-python/
+
+```
+python -m pip install -r requirements/app.txt
+
+
+python -m pip install \
+    --require-hashes \
+    --no-deps \
+    --only-binary :all: \
+    -r requirements/app.txt
+
+```
+
+https://www.b-list.org/weblog/2023/dec/05/understanding-python-venv/
+
 virtualenv -p c:\python2.5\python.exe c:\venvs\2.5
 
 virtualenv -p c:\python2.6\python.exe c:\venvs\2.6
