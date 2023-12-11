@@ -135,6 +135,8 @@ https://medium.com/codex/how-to-set-up-and-run-python-data-science-development-e
 
 ### Vectorized pandas operations:
 
+https://solothought.com/tutorial/python-pandas-visual/
+
 Use pandas best practises:
   
 https://habr.com/ru/company/wunderfund/blog/682388/
