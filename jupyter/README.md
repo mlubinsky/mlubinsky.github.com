@@ -6,6 +6,8 @@ https://www.datascienceportfol.io/abid
 
 https://www.youtube.com/watch?v=D9CLhQdLp8w  How to Make a Data Science Portfolio With GitHub Pages (2023)
 
+https://www.youtube.com/watch?v=MRGw1dq43hQ
+
 
 https://www.kdnuggets.com/5-free-platforms-for-building-a-strong-data-science-portfolio
 
