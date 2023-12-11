@@ -5,6 +5,9 @@ https://udlbook.github.io/udlbook/
 ### Courses 
 https://fleuret.org/dlc/ DEEP LEARNING COURSE
 
+
+https://arxiv.org/pdf/2310.20360.pdf Mathematical Introduction to Deep Learning
+
 https://fleuret.org/francois/lbdl.html  Little Book of Deep Learning 
 
 Practical Deep Learning for Coders https://course.fast.ai/
