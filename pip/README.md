@@ -23,7 +23,7 @@ https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 
 https://www.b-list.org/weblog/2023/dec/07/pip-install-safely/
 
-pytest
+#### pytest
 https://coderslegacy.com/pytest-tutorial-unit-testing-in-python/
 
 ```
@@ -137,6 +137,9 @@ https://briansunter.com/blog/python-setup-pyenv-poetry/
 
 
 ### Flake Black ruff
+
+https://devblogs.microsoft.com/python/python-linting-video/
+
 ```
 python3 -m pip  install ruff
 Defaulting to user installation because normal site-packages is not writeable
