@@ -5,6 +5,18 @@ https://habr.com/ru/companies/lanit/articles/777514/
 
 https://medium.com/@techlatest.net/using-jupyter-notebook-with-big-data-a-guide-on-how-to-use-jupyter-notebook-with-big-data-f473af87185b
 
+
+ GitHub doesn't render large Jupyter Notebooks, so just in case, here is an nbviewer link to the notebook:
+
+https://nbviewer.jupyter.org/url/github.com/pathwaycom/pathway-examples/blob/main/showcases/live-data-jupyter.ipynb
+
+Want to run the code yourself? Here is a binder link to start your own Jupyter server and try it out!
+
+https://mybinder.org/v2/gh/pathwaycom/pathway-examples/main?filepath=showcases%2Flive-data-jupyter.ipynb
+
+
+
+
 ### PyGWalker
 
 https://medium.com/@fareedkhandev/best-data-analysis-library-in-python-ad2572288017
