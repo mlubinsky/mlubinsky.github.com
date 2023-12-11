@@ -5,6 +5,7 @@ https://udlbook.github.io/udlbook/
 ### Courses 
 https://fleuret.org/dlc/ DEEP LEARNING COURSE
 
+https://d2l.ai/  Dive into Deep Learning
 
 https://arxiv.org/pdf/2310.20360.pdf Mathematical Introduction to Deep Learning
 
@@ -23,6 +24,9 @@ https://fleuret.org/francois/lbdl.html  Little Book of Deep Learning
 Practical Deep Learning for Coders https://course.fast.ai/
 
 https://youtube.com/playlist?list=PLTKMiZHVd_2KJtIXOW0zFhFfBaJJilH51&si=ocsN2zSPN7YsrGiY by Sebastian Raschka.
+
+
+https://github.com/karpathy/nanoGPT
 
 https://karpathy.ai/zero-to-hero.html Andrej Karpathy
 
