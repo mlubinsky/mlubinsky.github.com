@@ -1,5 +1,15 @@
+### Data Science Portfolio
+
+https://dagshub.com/kingabzpro
+
+https://www.datascienceportfol.io/abid
+
 https://www.youtube.com/watch?v=D9CLhQdLp8w  How to Make a Data Science Portfolio With GitHub Pages (2023)
 
+
+https://www.kdnuggets.com/5-free-platforms-for-building-a-strong-data-science-portfolio
+
+https://365datascience.com/career-advice/how-to-build-a-data-science-portfolio/
 
 convert Jupyter notebook to pdf, laxet pypdf
 
