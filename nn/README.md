@@ -8,6 +8,16 @@ https://fleuret.org/dlc/ DEEP LEARNING COURSE
 
 https://arxiv.org/pdf/2310.20360.pdf Mathematical Introduction to Deep Learning
 
+https://www.catalyzex.com/paper/arxiv:2310.20360/code Code for Mathematical Introduction to Deep Learning
+
+Understanding Neural Networks
+
+https://arxiv.org/pdf/2106.10165.pdf  The Principles of Deep Learning Theory 
+
+The Modern Mathematics of Deep Learning https://arxiv.org/abs/2105.04026
+
+Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges https://arxiv.org/abs/2104.13478v2
+
 https://fleuret.org/francois/lbdl.html  Little Book of Deep Learning 
 
 Practical Deep Learning for Coders https://course.fast.ai/
