@@ -1,3 +1,6 @@
+https://www.youtube.com/watch?v=D9CLhQdLp8w  How to Make a Data Science Portfolio With GitHub Pages (2023)
+
+
 convert Jupyter notebook to pdf, laxet pypdf
 
 https://habr.com/ru/companies/lanit/articles/777514/
