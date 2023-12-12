@@ -453,7 +453,7 @@ https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/using-json-in-hive
 ### MAP and STRUCT
 	
 	https://datadojo.dev/2020/06/07/working-with-complex-datatypes-in-hive/
-````	
+```	
 -- map example	
 	SELECT 
 	first_name, 
