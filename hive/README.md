@@ -53,7 +53,7 @@ use this only for adhoc queries when in need. Analyze table is still a standard 
 ```
 #### Repair
 
-````
+```
 GRANT SELECT ON TABLE a TO ROLE public;
 
 set hive.msck.path.validation=ignore;
