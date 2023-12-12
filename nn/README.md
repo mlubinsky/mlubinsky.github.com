@@ -2,9 +2,17 @@ https://arxiv.org/ftp/arxiv/papers/2201/2201.00650.pdf Deep Learning interview
 
 https://udlbook.github.io/udlbook/  Understanding Deep Learning by Simon J.D. Prince
 
+### Chris Bishop
+
 https://issuu.com/cmb321/docs/deep_learning_ebook Deep Learning: Foundations and Concepts. Chris Bishop
 
 https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+
+### Probabilistic Machine Learning: An Introduction by Kevin Patrick Murphy.
+MIT Press, March 2022.
+https://probml.github.io/pml-book/book1.html
+
+https://probml.github.io/pml-book/book2.html  Advanced topics
 
 ### Courses 
 https://fleuret.org/dlc/ DEEP LEARNING COURSE
