@@ -1,5 +1,7 @@
 https://bioinformatics.stackexchange.com/
 
+https://cmdcolin.github.io/awesome-genome-visualization
+
 https://www.youtube.com/watch?v=P0xUb-rRxU4
 
 https://en.wikipedia.org/wiki/Exome
