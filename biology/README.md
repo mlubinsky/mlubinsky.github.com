@@ -1,7 +1,32 @@
 https://bioinformatics.stackexchange.com/
 
+https://www.reddit.com/r/bioinformatics
+
+https://www.biostars.org/
+
+https://jobim2022.sciencesconf.org/data/pages/JOBIM2022_proceedings_posters_demos.pdf
+
+### Software
 https://cmdcolin.github.io/awesome-genome-visualization
 
+https://github.com/wheretrue/biobear
+```
+biobear is a Python library designed for reading and searching bioinformatic file formats,
+ using Rust as its backend and producing Arrow Batch Readers and other downstream formats (like polars or duckdb).
+
+The python package has minimal dependencies and only requires Polars. Biobear can be used to read various bioinformatic file formats,
+including FASTA, FASTQ, VCF, BAM, and GFF locally or from an object store like S3.
+It can also query some indexed file formats locally like VCF and BAM.
+```
+
+https://github.com/bigdatagenomics/adam
+```
+ADAM is a library and command line tool that enables the use of Apache Spark to parallelize genomic data analysis across cluster/cloud computing environments.
+ ADAM uses a set of schemas to describe genomic sequences, reads, variants/genotypes, and features,
+and can be used with data in legacy genomic file formats such as SAM/BAM/CRAM, BED/GFF3/GTF, and VCF, as well as data stored in the columnar Apache Parquet format.
+On a single node, ADAM provides competitive performance to optimized multi-threaded tools,
+ while enabling scale out to clusters with more than a thousand cores. ADAM's APIs can be used from Scala, Java, Python, R, and SQL.
+```
 https://www.youtube.com/watch?v=P0xUb-rRxU4
 
 https://en.wikipedia.org/wiki/Exome
@@ -16,8 +41,21 @@ https://www.genenames.org/
 
 https://en.wikipedia.org/wiki/Allele
 
-### VCF 
+### VCF  Variant Call Format 
+https://www.biostars.org/p/200986/
 
+https://gemini.readthedocs.io/en/latest/content/database_schema.html
+
+```
+VCF file has samples. Each sample is attached to a variant . The variant database contains chr,pos,ref,alt as a unique key. info field in "sample_has_variant" contains optional values( Postgre Array type).
+genotype field contains : 0 = homozygotes ref , 1 = heterozygote 2 = homozygote alt -1 = composite
+
+VCF (and gVCF) files are text, and they are usually gzipped. 
+Whether they are gzipped or not, 
+they usually have an accompanying index file that allows any section to be accessed without having to sequentially read through. 
+This is possible with the gzipped version because a variant of gzip called bgzip is used that compresses blocks of data, 
+and locations of the start positions of those blocks are stored in the index.
+```
 https://samtools.github.io/hts-specs/VCFv4.4.pdf
 
 https://samtools.github.io/hts-specs/
