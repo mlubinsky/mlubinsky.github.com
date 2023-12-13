@@ -861,15 +861,30 @@ https://www.youtube.com/watch?v=wiGkV37Kbxk Raymond Hettinger: Numerical Marvels
 ### How to contribute to open source python projects:
 https://www.reddit.com/r/Python/comments/12p771v/what_can_i_contribute_to_scipy_or_other_with_my/
 
-#### *argv and **kwargs
+#### *args and **kwargs
+args is always a tuple, which can be empty.
 Writing *args is a well followed convention, but you can choose a different name - the asterisk is what makes it a variable
 argument
 ```
 def takes_any_args (*args ) :
   print (" Type of args : " + str( type ( args ) ) ) # Type of args : <class 'tuple '>
   print (" Value of args : " + str( args ) )
-  
-```  
+  print(f"args is a {type(args)} with {len(args)} elements.") # args is a <class 'tuple'> with 2 elements.
+
+
+def add(*numbers_to_add):
+  added = 0
+  for number in numbers_to_add:
+      added += number
+  return added
+
+add(1, 2, 3, 4, 5)
+15  
+```
+
+
+
+
 The  keyword arguments won’t be captured by the *args idiom. Instead, Python provides a
 different syntax - using two asterisks instead of one:
 ```
