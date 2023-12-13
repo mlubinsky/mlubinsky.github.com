@@ -16,6 +16,8 @@ https://www.genenames.org/
 
 ### VCF 
 
+https://samtools.github.io/hts-specs/VCFv4.4.pdf
+
 https://samtools.github.io/hts-specs/
 
 https://www.databricks.com/blog/2019/06/26/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers.html
