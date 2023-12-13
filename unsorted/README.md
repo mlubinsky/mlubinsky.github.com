@@ -10,6 +10,9 @@ https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
 
 https://news.ycombinator.com/item?id=28764416
 
+HTTPX
+https://hypermedia.systems/
+
 ### GetPocket
 
  getpocket.com.  
