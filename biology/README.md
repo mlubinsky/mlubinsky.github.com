@@ -18,6 +18,8 @@ https://www.genenames.org/
 
 https://samtools.github.io/hts-specs/
 
+https://www.databricks.com/blog/2019/06/26/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers.html
+
 https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/genomic-data-in-parquet-format-on-azure/ba-p/3150554
 
 https://glow.readthedocs.io/en/latest/introduction.html
