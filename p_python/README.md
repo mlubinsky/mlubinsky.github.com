@@ -2,6 +2,8 @@
 
 https://github.com/gto76/python-cheatsheet
 
+https://www.pythonlikeyoumeanit.com/index.html
+
 https://wiki.python.org/moin/TimeComplexity
 
 https://habr.com/ru/companies/kaspersky/articles/762788/ Функциональное программирование в Python
