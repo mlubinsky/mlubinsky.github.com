@@ -14,7 +14,15 @@ https://habr.com/ru/companies/epam_systems/articles/337892/
 
 https://www.genenames.org/
 
+### VCF 
+
+https://glow.readthedocs.io/en/latest/introduction.html
+
 https://www.youtube.com/watch?v=cBDZSGf9HRE Variant Calling Format VCF
+
+https://stackoverflow.com/questions/65547168/cant-read-a-vcf-file-through-spark
+
+
 
 DNA Sample -> sequencing -> Raw Sequence FASFA/FANTQ -> alignment -> Aligned reads (BAM SAM) -> variant calling -> Carian Call (VCF)
 
