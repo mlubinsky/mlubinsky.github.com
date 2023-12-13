@@ -14,6 +14,8 @@ https://habr.com/ru/companies/epam_systems/articles/337892/
 
 https://www.genenames.org/
 
+https://en.wikipedia.org/wiki/Allele
+
 ### VCF 
 
 https://samtools.github.io/hts-specs/VCFv4.4.pdf
@@ -171,7 +173,7 @@ GWAS (Genome wide association study, полигеномный поиск асс�
 
  In 2001, Celera Genomics and the International Human Genome Sequencing Consortium published their initial drafts of the human genome
 ```
-### SEQANSWERS
+### SEQANSWERS.COM
 
 https://www.seqanswers.com/articles/324199-from-algorithms-to-assemblies-an-interview-with-sequencing-analysis-experts%E2%80%94part-1
 
