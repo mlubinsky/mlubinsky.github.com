@@ -29,7 +29,22 @@ On a single node, ADAM provides competitive performance to optimized multi-threa
 ```
 https://www.youtube.com/watch?v=P0xUb-rRxU4
 
+https://en.wikipedia.org/wiki/Exon
 https://en.wikipedia.org/wiki/Exome
+```
+An exon is any part of a gene that will form a part of the final mature RNA produced by that gene after introns have been removed by RNA splicing.
+ The term exon refers to both the DNA sequence within a gene and to the corresponding sequence in RNA transcripts.
+ In RNA splicing, introns are removed and exons are covalently joined to one another as part of generating the mature RNA.
+ Just as the entire set of genes for a species constitutes the genome, the entire set of exons constitutes the exome.
+
+The human exome consists of roughly 233,785 exons,
+about 80% of which are less than 200 base pairs in length,
+ constituting a total of about 1.1% of the total genome, or about 30 megabases of DNA.
+
+The phenotypes of genetic disorders are a result of mutated exons.
+In addition, since the exome only comprises 1.5% of the total genome,
+this process is more cost efficient and fast as it involves sequencing around 40 million bases rather than the 3 billion base pairs that make up the genome
+```
 
 https://en.wikipedia.org/wiki/DNA_microarray
 
@@ -40,7 +55,16 @@ https://habr.com/ru/companies/epam_systems/articles/337892/
 https://www.genenames.org/
 
 https://en.wikipedia.org/wiki/Allele
+```
+An allele[1], or allelomorph, is a variant of the sequence of nucleotides at a particular location, or locus, on a DNA molecule.[2]
 
+Alleles can differ at a single position through single nucleotide polymorphisms (SNP),[3] but they can also have insertions and deletions of up to several thousand base pairs.[4]
+Homozygous and heterozygous are terms that are used to describe allele pairs. 
+Individuals carrying two identical alleles (RR or rr) are known as homozygous. 
+While individual organisms bearing different alleles (Rr) are known as heterozygous.
+Being homozygous for a particular gene means you inherited two identical versions.
+ It's the opposite of a heterozygous genotype, where the alleles are different. People who have recessive traits, like blue eyes or red hair, are always homozygous for that gene.
+```
 ### VCF  Variant Call Format 
 https://www.biostars.org/p/200986/
 
