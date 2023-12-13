@@ -54,6 +54,8 @@ https://habr.com/ru/companies/epam_systems/articles/337892/
 
 https://www.genenames.org/
 
+https://www.genome.gov/genetics-glossary/Allele
+
 https://en.wikipedia.org/wiki/Allele
 ```
 An allele[1], or allelomorph, is a variant of the sequence of nucleotides at a particular location, or locus, on a DNA molecule.[2]
