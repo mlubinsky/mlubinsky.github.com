@@ -196,6 +196,9 @@ aws-cli/1.16.300 Python/3.7.5 Darwin/18.7.0 botocore/1.13.36
 ```
 ### aws cli via pip install
 
+Running a Python script on an EC2 instance
+https://medium.com/@hello_prism/running-a-python-script-on-an-ec2-instance-8691589b3080
+
 https://realpython.com/courses/python-boto3-aws-s3/
 
 ```
