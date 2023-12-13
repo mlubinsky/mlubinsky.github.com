@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=2kv2LrKu-1c&list=PLqiTu7XWQ7jRy8AygDJL5ugVvVgYE05Kj Kazahstan prorammers
 
+https://www.youtube.com/watch?v=gbgiFVFhGkc 
+
 ### System design 
 
 System Design:
