@@ -16,6 +16,10 @@ https://www.genenames.org/
 
 ### VCF 
 
+https://samtools.github.io/hts-specs/
+
+https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/genomic-data-in-parquet-format-on-azure/ba-p/3150554
+
 https://glow.readthedocs.io/en/latest/introduction.html
 
 https://www.youtube.com/watch?v=cBDZSGf9HRE Variant Calling Format VCF
