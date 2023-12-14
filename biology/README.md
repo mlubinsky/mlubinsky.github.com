@@ -7,7 +7,13 @@ https://www.biostars.org/
 https://jobim2022.sciencesconf.org/data/pages/JOBIM2022_proceedings_posters_demos.pdf
 
 ### Software
+
+
 https://cmdcolin.github.io/awesome-genome-visualization
+
+https://www.wheretrue.dev/
+
+https://wheretrue.com/
 
 https://github.com/wheretrue/biobear
 ```
