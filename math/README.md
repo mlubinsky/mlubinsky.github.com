@@ -113,8 +113,11 @@ https://grinfeld.org/books/An-Introduction-To-Tensor-Calculus/
 
 https://kconrad.math.uconn.edu/blurbs/analysis/gaussianintegral.pdf
 
+Math analys ru
+https://www.youtube.com/playlist?list=PLcsjsqLLSfNDuleTFinPo1WY3V4EesuLO
 
 ### Linear Algebra with SymPy
+
 
 https://live.sympy.org/
 
@@ -127,6 +130,9 @@ https://github.com/minireference/sympytut_notebooks/blob/master/notebooks/Linear
 https://www.youtube.com/watch?v=2G3PmEZI6n8&list=PLGmu4KtWiH6-F2JlLVvCTsMR91I4ix0_z&index=1
 
 ### Linear Algebra
+
+3Blue1Brown Linear Angebra (ru)
+https://www.youtube.com/playlist?list=PLVjLpKXnAGLXPaS7FRBjd5yZeXwJxZil2
 
 https://coffeemug.github.io/spakhm.com/posts/01-lingalg-p1/linalg-p1.html
 
