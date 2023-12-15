@@ -6,6 +6,11 @@ https://www.biostars.org/
 
 https://jobim2022.sciencesconf.org/data/pages/JOBIM2022_proceedings_posters_demos.pdf
 
+
+Philipp Kapranov. Evidence for widespread existence of functional novel and non-canonical human transcripts
+
+https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-023-01753-5
+
 https://www.10xgenomics.com/
 
 
