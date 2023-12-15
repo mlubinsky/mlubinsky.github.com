@@ -1,5 +1,8 @@
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
+Topological data analysis. Nikita Kalinin.
+https://www.youtube.com/playlist?list=PLKXEsFnBcT5BD47xO19UsKshsQ7DMU3Sa
+
 https://leanpub.com/insidethemachinelearninginterview/c/CyberMonday2023HugeSale  Inside the Machine Learning Interview: 151 Real Questions from FAANG and How to Answer Them
 
 Математика больших данных (4-5 курсы, осень 2022) - Гасников А.В
