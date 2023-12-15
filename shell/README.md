@@ -22,6 +22,9 @@ https://thenybble.de/posts/json-analysis/
 https://www.benthos.dev/
 
 ### Clickhouse Local,  DuckDB,  Polars,  for analyzing local files (including json)
+
+https://antonz.org/trying-chdb/ Clickhouse embeddable 
+
 https://clickhouse.com/blog/extracting-converting-querying-local-files-with-sql-clickhouse-local
 
 https://www.vantage.sh/blog/clickhouse-local-vs-duckdb
