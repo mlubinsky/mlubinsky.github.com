@@ -6,6 +6,17 @@ https://www.biostars.org/
 
 https://jobim2022.sciencesconf.org/data/pages/JOBIM2022_proceedings_posters_demos.pdf
 
+
+### cBioPortal for Cancer Genomics
+
+https://www.cbioportal.org/
+
+https://aacrjournals.org/cancerres/article/83/23/3861/730145/Analysis-and-Visualization-of-Longitudinal-Genomic
+
+https://www.youtube.com/watch?v=leDlA48NKPA&list=PLE2tjlUyHL8Fj1OOlvMepnLNqimTCLlyx&index=10
+
+https://www.linkedin.com/company/cbioportal/
+
 ### Software
 
 
