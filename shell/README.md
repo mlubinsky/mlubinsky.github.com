@@ -21,7 +21,11 @@ https://thenybble.de/posts/json-analysis/
  stream processing 
 https://www.benthos.dev/
 
-### Clickhouse Local,  DuckDB,  Polars,  for analyzing local files (including json)
+### Clickhouse Local,  DuckDB,  Polars,  for analyzing local files (including json and parquet)
+
+https://auxten.com/the-birth-of-chdb/
+
+https://doc.chdb.io/#/
 
 https://antonz.org/trying-chdb/ Clickhouse embeddable 
 
