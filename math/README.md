@@ -1,3 +1,5 @@
+https://www.dissercat.com/catalog/fiziko-matematicheskie-nauki
+
 ### Fair coin - generate 1/3 probability
 
 https://mindyourdecisions.com/blog/2017/01/01/can-you-solve-it-use-a-coin-to-simulate-any-probability-sunday-puzzle/
