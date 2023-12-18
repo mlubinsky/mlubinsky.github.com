@@ -1805,6 +1805,8 @@ func_name(f)
 
 ### Decorators
 
+https://medium.com/techtofreedom/9-python-built-in-decorators-that-optimize-your-code-significantly-bc3f661e9017
+
 https://habr.com/ru/articles/750312/
 
 https://www.poeticdev.com/data/python-decorators-when-to-use-and-when-to-avoid-them/
