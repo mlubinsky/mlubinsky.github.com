@@ -10,6 +10,8 @@ https://habr.com/ru/companies/kaspersky/articles/762788/ Функциональ�
 
 https://github.com/nyggus/tracemem  memory used by a Python session
 
+https://www.pixelstech.net/article/1702794038-Where-Have-You-Installed-Your-Python-Packages
+
 
 ### Linting Python in Visual Studio Code
 
