@@ -61,6 +61,7 @@ https://www.featurestore.org/
 ➡ LLM roadmaps by Maxime Labonne: https://lnkd.in/dgpe7p4H
 
 💡Together with Başak and Raphaël, we run Marvelous MLOps, where we share MLOps cheatsheets, memes, and articles on MLOps.
+https://www.linkedin.com/company/marvelous-mlops/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BveUHM6moTAG6h3Yj6bnf2w%3D%3D
 
 💡Check out my other recommendations on learning resources:
 ➡ Part 1: https://lnkd.in/gb36cyGG
