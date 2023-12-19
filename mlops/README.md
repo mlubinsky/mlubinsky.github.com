@@ -39,6 +39,33 @@ MLOps — это культура разработки ML, нацеленная 
 
 https://www.featurestore.org/
 
+
+📕 MLOps books:
+➡ Machine Learning Engineering with Python - Second Edition by Andy McMahon published by Packt
+➡ Reliable Machine Learning: Applying SRE Principles to ML in Production by Cathy Chen, MA, CPCC, Niall Murphy, Kranti K. Parisa, D. Sculley, Todd Underwood
+
+📰 MLOps and LLM(Ops) blogs:
+➡ Chip Huyen: https://lnkd.in/gVB22DuE
+➡ Eugene Yan: https://lnkd.in/gPwN8mSm
+➡ Decoding ML by Paul Iusztin: https://lnkd.in/gQehWnHr
+➡ LLM watch by Pascal Biese: https://lnkd.in/gJhZH4mb
+
+📽 LLM(Ops) courses:
+➡ Hands-on LLMs by Pau Labarta Bajo, Alexandru Răzvanț, and Paul Iusztin: https://lnkd.in/ggpxRsc7
+➡ LLM BootCamp by Sergey Karayev, Charles Frye, and Josh Tobin: https://lnkd.in/gKMZGYSQ 
+➡ Introduction to Q&A Systems with LLMs by Rahul Parundekar and MLOps Community: https://lnkd.in/gMYaFcTg
+
+🔖 Curated lists of references for MLOps/LLM(Ops):
+➡ Awesome LLMOps by Ce Gao: https://lnkd.in/gFrri858
+➡ Awesome MLOps by Dr. Larysa Visengeriyeva: https://lnkd.in/eMttRFhA
+➡ LLM roadmaps by Maxime Labonne: https://lnkd.in/dgpe7p4H
+
+💡Together with Başak and Raphaël, we run Marvelous MLOps, where we share MLOps cheatsheets, memes, and articles on MLOps.
+
+💡Check out my other recommendations on learning resources:
+➡ Part 1: https://lnkd.in/gb36cyGG
+➡ Part 2: https://lnkd.in/gYiXFDdD
+
 ### Feature engineering (конструирование признаков)
 связано с автоматизацией конвейеров ETL и контролем их версий. В идеале это должно быть что-то в стиле feature store. Если вам незнакома эта концепция, то изучите этот веб-сайт. Некоторые из имеющихся на рынке инструментов: Databricks Feature Store, Feast, Tecton.
 
