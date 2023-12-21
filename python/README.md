@@ -8,6 +8,10 @@ https://habr.com/ru/articles/782266/   many good interview questions
 
 python -m py_compile yourfile.py   # chech what code is valid
 
+Serialization /desiarizatiom - very good article
+https://realpython.com/python-serialize-data/
+
+
 python CLI:
 https://medium.com/@martin.heinz/python-cli-tricks-that-dont-require-any-code-whatsoever-e7bdb9409aeb
 
