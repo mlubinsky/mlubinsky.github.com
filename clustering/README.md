@@ -1,3 +1,5 @@
+https://habr.com/ru/companies/spbifmo/articles/781710/
+
 ### Clustering 
 
 https://en.wikipedia.org/wiki/Determining_the_number_of_clusters_in_a_data_set
