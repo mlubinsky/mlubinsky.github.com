@@ -5,6 +5,8 @@
 — W. Pauli
 
 
+https://www.youtube.com/@viascience
+
 https://vk.com/club70818948 QM books
 
 https://vk.com/physics_math
