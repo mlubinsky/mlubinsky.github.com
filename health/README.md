@@ -23,6 +23,8 @@ https://www.youtube.com/watch?v=Us8n8VBQn_c
 
 ### Eldery Spots Кератомы 
 
+https://www.youtube.com/watch?v=syc32WTCRGA
+
 https://www.youtube.com/watch?v=CgOeXzKHQuA Dr. Berg
 
 https://www.youtube.com/watch?v=6ZPUCJE4Bkc  Кератомы 
