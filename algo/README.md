@@ -20,6 +20,8 @@ https://codeconfessions.substack.com/p/bloom-filters-and-beyond  Bloom filter
 
 https://tproger.ru/books/algorithms-data-structures-books/
 
+https://www.youtube.com/playlist?list=PL4_hYwCyhAvZZe505W6mfZQLvOmd7iAn7  MFTI algo lectures ru
+
 Hash function
 https://papa.bretmulvey.com/post/124027987928/hash-functions
 
