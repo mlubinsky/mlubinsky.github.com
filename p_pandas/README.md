@@ -69,6 +69,42 @@ parquet-tools inspect --detail stock-exchanges.parquet
 
 ### Polars
 
+ https://pola.rs/
+
+You can use Polars in spark with arrow udfs
+
+Cloud support.
+
+Example:
+```
+pl.scan_parquet("s3://polars-inc-test/tpch/scale-10/lineitem/*.parquet")
+```
+Polars comes with a SQL front-end that converts to polars LazyFrames (think query plans).
+```
+You can even mix and match the SQL and the LazyFrame API.
+
+df = pl.DataFrame({
+    "foo": [1, 2, 3],
+    "bar": [1, 2, 3],
+})
+
+
+ctxt = pl.SQLContext({"table_1": df})
+
+# returns a LazyFrame
+lf = ctxt.execute("""SELECT sum(foo), bar FROM table_1 GROUP BY bar""")
+
+# explain query plan
+lf.explain()
+
+# continue with LazyFrame API
+lf = lf.with_columns(some_computation = pl.col("bar").diff() * pl.col("foo"))
+
+# get result
+lf.collect()
+```
+
+
 https://habr.com/ru/companies/spectr/articles/738766/
 
 https://www.parand.com/a-practical-introduction-to-polars.html
