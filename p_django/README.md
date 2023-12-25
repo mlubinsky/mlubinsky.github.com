@@ -24,23 +24,8 @@ https://voila.readthedocs.io/en/stable/
 https://github.com/voila-dashboards/voila
 
 
-### D-Tale Visualizer for pandas data structures
+ 
 
-https://github.com/man-group/dtale 
-
-http://alphatechadmin.pythonanywhere.com/dtale/main/1
-```
-D-Tale is the combination of a Flask back-end and a React front-end to bring you an easy way to view & analyze Pandas data structures.
-It integrates seamlessly with ipython notebooks & python/ipython terminals.
-Currently this tool supports such Pandas objects as DataFrame, Series, MultiIndex, DatetimeIndex & RangeIndex.
-```
-### Convert Jupyter Notebooks to Web App: mercury
-
-https://github.com/mljar/mercury
-
-https://runmercury.com/
-
-https://www.reddit.com/r/Python/comments/15z1amc/how_to_build_the_front_end_of_a_web_app_if_you/
 
 ### JavaScript
 https://unsuckjs.com/
@@ -145,33 +130,11 @@ https://djangobuilder.io/#/
 
 https://news.ycombinator.com/item?id=33845414
 
-### Panel
-
-https://panel.holoviz.org/index.html
-
-https://awesome-panel.org/home
-
-https://medium.com/@marcskovmadsen/i-prefer-to-use-panel-for-my-data-apps-here-is-why-1ff5d2b98e8f
-
-https://www.datarevenue.com/en-blog/data-dashboarding-streamlit-vs-dash-vs-shiny-vs-voila
+ 
 
 
 ### Starlette vs FlaskAPI
 with asyncpg and plain SQL
-
-### Streamlit, Pycone, NiceGUI, etc
-
-https://nicegui.io/
-
-
-
-https://www.youtube.com/watch?v=gWV1gbeB-IM&t
-
-https://www.redhat.com/sysadmin/streamlit-display-data
-
-https://www.kdnuggets.com/publications/sheets/Streamlit_for_Machine_Learning_Cheat_Sheet_KDnuggets.pdf
-
-https://docs.streamlit.io/library/api-reference/charts/st.pydeck_chart
 
 ### Others
 
