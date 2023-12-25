@@ -71,6 +71,8 @@ parquet-tools inspect --detail stock-exchanges.parquet
 
  https://pola.rs/
 
+ https://www.youtube.com/watch?v=aiHSMYvoqYE&list=PLTsu3dft3CWiow7L7WrCd27ohlra_5PGH&index=6&t=689s
+
 You can use Polars in spark with arrow udfs
 
 Cloud support.
