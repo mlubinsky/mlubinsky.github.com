@@ -70,6 +70,8 @@ https://stackoverflow.com/questions/65847384/embedding-a-website-in-a-grafana-da
 
 ### Grafana release notes
 
+https://habr.com/ru/companies/kts/articles/782940/ Grafana 10 new features
+
 https://grafana.com/blog/2023/06/13/grafana-10-release-all-the-new-features-to-know/
  
 https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features/
