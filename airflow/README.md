@@ -1,6 +1,8 @@
 ### Mage, prefect, Dagster, AWS Step function, AWS Glue
 https://www.mage.ai/
 
+https://gitlab.kitware.com/computer-vision/cmd_queue
+
 
 Airflow Book:
 https://www.astronomer.io/ebooks/data-pipelines-with-apache-airflow.pdf
