@@ -64,6 +64,16 @@ https://awesome-streamlit.readthedocs.io/
 
 <https://gilberttanner.com/blog/turn-your-data-science-script-into-websites-with-streamlit>
 
+
+https://www.youtube.com/watch?v=gWV1gbeB-IM&t
+
+https://www.redhat.com/sysadmin/streamlit-display-data
+
+https://www.kdnuggets.com/publications/sheets/Streamlit_for_Machine_Learning_Cheat_Sheet_KDnuggets.pdf
+
+https://docs.streamlit.io/library/api-reference/charts/st.pydeck_chart
+
+
 ### Streamlit + Plotly
 
 https://www.youtube.com/watch?v=yg0Y7w4AHhw
@@ -151,9 +161,17 @@ Currently this tool supports such Pandas objects as DataFrame, Series, MultiInde
 Convert Jupyter Notebooks to Web App: mercury
 https://github.com/mljar/mercury
 ```
+
+### Convert Jupyter Notebooks to Web App: mercury
+
+https://github.com/mljar/mercury
+
 https://runmercury.com/
 
 https://www.reddit.com/r/Python/comments/15z1amc/how_to_build_the_front_end_of_a_web_app_if_you/
+https://runmercury.com/
+
+ 
 
 coingecko python wrapper: <https://github.com/man-c/pycoingecko>
 
