@@ -1,5 +1,7 @@
 https://antonz.org/sqlite-3-44/
 
+https://docs.python.org/3/library/sqlite3.html#command-line-interface
+
 ### VSCode extension for SQLite
 
 https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer
