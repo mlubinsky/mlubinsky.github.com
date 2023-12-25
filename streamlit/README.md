@@ -62,6 +62,8 @@ https://www.coursera.org/projects/interactive-dashboards-streamlit-python
 
 https://awesome-streamlit.readthedocs.io/
 
+<https://gilberttanner.com/blog/turn-your-data-science-script-into-websites-with-streamlit>
+
 ### Streamlit + Plotly
 
 https://www.youtube.com/watch?v=yg0Y7w4AHhw
@@ -81,11 +83,26 @@ streamlit run your_script.py [-- script args]
 ```
 
 
+https://www.youtube.com/watch?v=gWV1gbeB-IM&t
+
+https://www.redhat.com/sysadmin/streamlit-display-data
+
+https://www.kdnuggets.com/publications/sheets/Streamlit_for_Machine_Learning_Cheat_Sheet_KDnuggets.pdf
+
+https://docs.streamlit.io/library/api-reference/charts/st.pydeck_chart
+
+Others
+https://may69.com/purepython/
+
+###  NiceGUI
+https://nicegui.io/
+
+
 <https://habr.com/ru/post/473196/>
 
 https://medium.com/analytics-vidhya/build-and-deploy-your-own-machine-learning-web-application-by-streamlit-and-heroku-d306f2d29474
 
-<https://gilberttanner.com/blog/turn-your-data-science-script-into-websites-with-streamlit>
+
 
 https://celadonsoft.com/ai-ml/the-complete-beginners-guide-to-web-scraping
 
@@ -96,6 +113,17 @@ https://celadonsoft.com/ai-ml/the-complete-beginners-guide-to-web-scraping
 
 
 <https://github.com/forbesmyester/esqlate>  Build minimum viable admin panels quickly with just SQL
+
+
+### Panel
+https://panel.holoviz.org/index.html
+
+https://awesome-panel.org/home
+
+https://medium.com/@marcskovmadsen/i-prefer-to-use-panel-for-my-data-apps-here-is-why-1ff5d2b98e8f
+
+https://www.datarevenue.com/en-blog/data-dashboarding-streamlit-vs-dash-vs-shiny-vs-voila
+
 
 ## DeepLearning Book
 <https://www.deeplearningbook.org/>
@@ -111,6 +139,21 @@ https://news.ycombinator.com/item?id=24281613
 <https://www.youtube.com/watch?v=0RihZNdQc7k> D-tail
 
 <https://github.com/man-group/dtale>
+
+D-Tale Visualizer for pandas data structures
+https://github.com/man-group/dtale
+
+http://alphatechadmin.pythonanywhere.com/dtale/main/1
+```
+D-Tale is the combination of a Flask back-end and a React front-end to bring you an easy way to view & analyze Pandas data structures.
+It integrates seamlessly with ipython notebooks & python/ipython terminals.
+Currently this tool supports such Pandas objects as DataFrame, Series, MultiIndex, DatetimeIndex & RangeIndex.
+Convert Jupyter Notebooks to Web App: mercury
+https://github.com/mljar/mercury
+```
+https://runmercury.com/
+
+https://www.reddit.com/r/Python/comments/15z1amc/how_to_build_the_front_end_of_a_web_app_if_you/
 
 coingecko python wrapper: <https://github.com/man-c/pycoingecko>
 
