@@ -1,3 +1,4 @@
+https://habr.com/ru/companies/tensor/articles/782918/
 
 https://dev.to/lnahrf/mastering-postgres-debugging-must-know-queries-for-database-troubleshooting-495a 
 
