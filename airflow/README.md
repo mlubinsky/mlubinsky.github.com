@@ -1,4 +1,8 @@
-Book:
+### Mage, prefect, Dagster, AWS Step function, AWS Glue
+https://www.mage.ai/
+
+
+Airflow Book:
 https://www.astronomer.io/ebooks/data-pipelines-with-apache-airflow.pdf
 
 https://medium.com/numberly-tech-blog/orchestrating-python-workflows-in-apache-airflow-fd8be71ad504
