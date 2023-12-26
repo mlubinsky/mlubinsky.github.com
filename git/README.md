@@ -1,3 +1,5 @@
+alias gfp=“git commit --amend --no-edit && git push --force-with-lease”
+
 https://learngitbranching.js.org/
 
 https://www.youtube.com/watch?v=hZS96dwKvt0
