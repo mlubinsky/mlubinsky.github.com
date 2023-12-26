@@ -12,6 +12,7 @@ https://github.com/nyggus/tracemem  memory used by a Python session
 
 https://www.pixelstech.net/article/1702794038-Where-Have-You-Installed-Your-Python-Packages
 
+https://www.reddit.com/r/Python/comments/18nrst3/some_easy_open_source_python_projects_to/
 
 ### Linting Python in Visual Studio Code
 
