@@ -76,6 +76,8 @@ https://grafana.com/blog/2023/06/13/grafana-10-release-all-the-new-features-to-k
  
 https://grafana.com/blog/2023/08/24/grafana-10.1-release-all-the-latest-features/
 
+https://grafana.com/blog/2023/10/24/grafana-10.2-release-grafana-panel-title-generator-interactive-visualizations-and-more
+
 ### Stack overflow
 
 https://stackoverflow.com/questions/77304277/grafana-does-not-update-the-variable-which-depends-on-datetime-picker
