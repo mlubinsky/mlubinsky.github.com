@@ -4,6 +4,10 @@ https://wisser.github.io/Jailer/
 
 https://news.ycombinator.com/item?id=36243926
 
+### Time series SQL
+
+https://questdb.io/blog/olap-vs-time-series-databases-the-sql-perspective/
+
 ### Upsert
 
 https://antonz.org/sql-upsert/
