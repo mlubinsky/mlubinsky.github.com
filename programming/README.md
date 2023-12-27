@@ -1,5 +1,7 @@
 VPN https://p4pn.net/install/
 
+https://learnxinyminutes.com/
+
 https://cpu.land/the-basics
 
 https://www.memorymanagement.org/
