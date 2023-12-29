@@ -1,5 +1,7 @@
 Best book: https://www.amazon.com/Learning-Go-Idiomatic-Real-World-Programming-ebook/dp/B08XYGCM71
 
+https://tour.ardanlabs.com/tour/eng/list
+
 https://bitfieldconsulting.com/golang/tao-of-go
 
 Build web site with go:
