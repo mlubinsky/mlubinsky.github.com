@@ -1,7 +1,7 @@
 ## Postgres Notes
 
 #### Generate series
-````
+```
 SELECT * FROM generate_series(1, 5);
 SELECT * from generate_series(0,10,2);
 SELECT * from generate_series('2021-01-01','2021-01-02', INTERVAL '1 hour');
@@ -65,6 +65,4 @@ FROM generate_series(1,1000000) G(n);
 CREATE TABLE tmp_sessions AS
 SELECT G.n AS SessionId
 FROM generate_series(30,49) G(n);
-````
-
-#### Index
+```
