@@ -102,7 +102,7 @@ explore: agg_channel_cores_daily {
 }
 ```
 where XXX above 3 lines above is  
-###### {% parameter agg_channel_cores_daily.amoeba_exp_id %}
+###### {percent_sign_here parameter agg_channel_cores_daily.amoeba_exp_id percent_sign_here}
 
 
 ## Caching / persistance
