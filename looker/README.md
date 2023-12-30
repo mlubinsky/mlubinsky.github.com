@@ -97,10 +97,12 @@ explore: agg_channel_cores_daily {
   # filter active_exp_map:
   sql_always_where:
      {% if agg_channel_cores_daily.amoeba_exp_id._is_filtered %}
-          STRPOS(${agg_channel_cores_daily.active_exp_map} , {% parameter agg_channel_cores_daily.amoeba_exp_id %}) > 0
+          STRPOS(${agg_channel_cores_daily.active_exp_map} , XXX) > 0
      {% else %} 1 = 1 {% endif %};;
 }
 ```
+where XXX above 3 lines above is  
+###### {% parameter agg_channel_cores_daily.amoeba_exp_id %}
 
 
 ## Caching / persistance
