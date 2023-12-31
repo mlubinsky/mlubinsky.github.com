@@ -1,4 +1,4 @@
-markdown            : kramdown
-# markdown: GFM
+# markdown            : kramdown
+markdown: GFM
 # https://kramdown.gettalong.org/documentation.html
 # https://github.github.com/gfm/
