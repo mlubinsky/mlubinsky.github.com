@@ -2,9 +2,9 @@ theme: jekyll-theme-minimal
 title: Michael Lubinsky's homepage
 description: Programming, Math and Physics
 # markdown            : kramdown
-markdown: GFM
-plugins:
-  - jekyll-optional-front-matter
+# markdown: GFM
+# plugins:
+#   - jekyll-optional-front-matter
 # https://docs.github.com/en/pages  
 # https://kramdown.gettalong.org/documentation.html
 # https://github.github.com/gfm/
