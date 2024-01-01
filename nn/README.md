@@ -2,6 +2,9 @@ https://arxiv.org/ftp/arxiv/papers/2201/2201.00650.pdf Deep Learning interview
 
 https://udlbook.github.io/udlbook/  Understanding Deep Learning by Simon J.D. Prince
 
+
+https://arxiv.org/pdf/2310.20360.pdf Maht Introduction to Deep Learning
+
 https://arxiv.org/pdf/2207.09238.pdf Formal Algorithms for Transformers
 
 ### Chris Bishop
