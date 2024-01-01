@@ -22,6 +22,8 @@ https://www.youtube.com/watch?v=ytRgMCC2DN0 7
 
 https://www.youtube.com/watch?v=aF0amljoZk4&list=PL4_hYwCyhAvZQoUsDe17ZGXIxcG3O84RG
 
+https://publications.hse.ru/mirror/pubs/share/direct/433420486.pdf
+
 
 ### LightCone
 
