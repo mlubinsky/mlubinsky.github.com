@@ -5,5 +5,6 @@ description: Programming, Math and Physics
 markdown: GFM
 plugins:
   - jekyll-optional-front-matter
+# https://docs.github.com/en/pages  
 # https://kramdown.gettalong.org/documentation.html
 # https://github.github.com/gfm/
