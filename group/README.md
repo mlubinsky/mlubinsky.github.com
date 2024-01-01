@@ -20,7 +20,7 @@ https://www.youtube.com/watch?v=ytRgMCC2DN0 7
 ### Основы высшей алгебры и теории кодирования (1 курс, весна 2022) - Лектор: Вялый М.Н.
 
 
-https://www.youtube.com/watch?v=aF0amljoZk4&list=PL4_hYwCyhAvZQoUsDe17ZGXIxcG3O84RG&index=1
+https://www.youtube.com/watch?v=aF0amljoZk4&list=PL4_hYwCyhAvZQoUsDe17ZGXIxcG3O84RG
 
 
 ### LightCone
