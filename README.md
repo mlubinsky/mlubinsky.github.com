@@ -1,3 +1,7 @@
+---
+layout: post
+title: Blogging Like a Hacker
+---
 ### My notes and code snippets
  - Java
  - Scala
