@@ -1,4 +1,8 @@
 # markdown            : kramdown
 markdown: GFM
+plugins:
+  - jekyll-optional-front-matter
+gems:
+  - jekyll-optional-front-matter  
 # https://kramdown.gettalong.org/documentation.html
 # https://github.github.com/gfm/
