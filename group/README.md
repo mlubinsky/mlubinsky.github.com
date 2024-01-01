@@ -1,4 +1,4 @@
-Теория групп. (Алексей Савватеев)
+### Теория групп. (Алексей Савватеев)
 
 https://www.youtube.com/playlist?list=PLsdv2rpSb41YX3GXvKg7YQOwl-MVNkz9H
 
@@ -17,7 +17,13 @@ https://www.youtube.com/watch?v=obXICujbJMw 6
 
 https://www.youtube.com/watch?v=ytRgMCC2DN0 7 
 
-LightCone
+### Основы высшей алгебры и теории кодирования (1 курс, весна 2022) - Лектор: Вялый М.Н.
+
+
+https://www.youtube.com/watch?v=aF0amljoZk4&list=PL4_hYwCyhAvZQoUsDe17ZGXIxcG3O84RG&index=1
+
+
+### LightCone
 
 https://www.youtube.com/watch?v=wA8Wa2zAJ3E&list=PLnbH8YQPwKblIpRi0ARO2VadnMwntvF51&pp=iAQB
 
