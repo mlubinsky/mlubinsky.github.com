@@ -1,6 +1,8 @@
-https://www.youtube.com/watch?v=2kv2LrKu-1c&list=PLqiTu7XWQ7jRy8AygDJL5ugVvVgYE05Kj Kazahstan prorammers
+https://www.youtube.com/watch?v=2kv2LrKu-1c&list=PLqiTu7XWQ7jRy8AygDJL5ugVvVgYE05Kj Kazahstan programmers
 
 https://www.youtube.com/watch?v=gbgiFVFhGkc 
+
+Majority element https://github.com/NaughtyConstrictor/From-Majority-to-Frequent-Elements-Boyer-Moore-and-Misra-Gries
 
 ### System design 
 
