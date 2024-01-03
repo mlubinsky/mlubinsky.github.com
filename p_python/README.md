@@ -2101,6 +2101,8 @@ with set_environ(SCRAPY_CHECK='true'):
 
 ### Numpy
 
+https://realpython.com/search?q=numpy
+
 https://github.com/rougier/numpy-100
 
 https://github.com/ajcr/100-pandas-puzzles
