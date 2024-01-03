@@ -158,6 +158,41 @@ from copy import deepcopy
 >>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 >>> matrix_copy = deepcopy(matrix)
 ```
+
+### Array
+https://realpython.com/python-array/
+```
+Unlike the classic array data structure with a fixed length, Python’s array data type is dynamically sized.
+Therefore, you can add elements to an empty array later, and it’ll automatically resize itself accordingly.
+There are thirteen numeric types in the array module, each represented by a single-letter type code, which you can reveal by accessing the typecodes variable:
+
+ import array
+ array.typecodes
+'bBuhHiIlLqQfd'
+
+
+TypeCode	C_Type	Minimum Size in Bytes
+b	signed char	1
+B	unsigned char	1
+h	signed short	2
+H	unsigned short	2
+i	signed int	2
+I	unsigned int	2
+l	signed long	4
+L	unsigned long	4
+q	signed long long	8
+Q	unsigned long long	8
+f	float	4
+d	double	8
+u	wchar_t	2
+
+
+array("i").itemsize
+4
+ array("i").typecode
+'i'
+``` 
+
 ### List  
 https://realpython.com/python-list/
 https://realpython.com/how-to-split-a-python-list-into-chunks/
