@@ -1,3 +1,8 @@
+### Lance Lance: modern columnar data format for ML
+
+
+https://lancedb.github.io/lance/
+
 ### Header
 
 SET hive.cli.print.header=true;
