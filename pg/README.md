@@ -19,6 +19,12 @@ https://www.postgresonline.com/
 stored procedure to rename tables and indexes:
 https://habr.com/ru/articles/765484/
 
+
+### Range types
+
+https://www.crunchydata.com/blog/better-range-types-in-postgres-14-turning-100-lines-of-sql-into-3
+
+
 ### Timezone
 show timezone; -- America/Los_Angeles
 
