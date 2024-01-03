@@ -4,6 +4,54 @@ https://www.youtube.com/watch?v=gbgiFVFhGkc
 
 Majority element https://github.com/NaughtyConstrictor/From-Majority-to-Frequent-Elements-Boyer-Moore-and-Misra-Gries
 
+
+### links
+
+
+9) Path to Senior Engineer Handbook by Jordan Cutler
+
+https://lnkd.in/exkJCxVi
+
+
+8) Tech interview handbook by Yangshun Tay
+
+https://lnkd.in/e7EjsJNF
+
+
+7) You don't know JavaScript by Kyle Simpson
+
+https://lnkd.in/eua7KvPC
+
+
+6) Papers we love
+
+https://lnkd.in/eGcbN9RR
+
+
+5) System design primer
+
+https://lnkd.in/eFyMhK6Z
+
+
+4) Developer roadmap
+
+https://lnkd.in/e9MuB_Yg
+
+
+3) Freecodecamp
+
+https://lnkd.in/e_4pA8xV
+
+
+2) Free programming books
+
+https://lnkd.in/eXAzAJ3M
+
+
+1) Web development for beginners by Microsoft
+
+https://lnkd.in/evM43KHy
+
 ### System design 
 
 System Design:
