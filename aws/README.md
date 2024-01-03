@@ -6,6 +6,8 @@ https://cloud.google.com/dataproc
 
 https://habr.com/ru/post/117146/
 
+https://www.everand.com/book/431727414/Google-Cloud-Platform-for-Data-Engineering-From-Beginner-to-Data-Engineer-using-Google-Cloud-Platform 
+
 https://googlecloudcheatsheet.withgoogle.com/
 
 https://cloud.google.com/blog/topics/developers-practitioners/introducing-google-cloud-architecture-diagramming-tool
