@@ -4,7 +4,44 @@ https://udlbook.github.io/udlbook/  Understanding Deep Learning by Simon J.D. Pr
 
 https://arxiv.org/pdf/2310.20360.pdf Math Introduction to Deep Learning
 
+https://www.neelnanda.io/mechanistic-interpretability
+
+### Transformers
+
+https://en.wikipedia.org/wiki/Transformer
+
 https://arxiv.org/pdf/2207.09238.pdf Formal Algorithms for Transformers
+
+https://osanseviero.github.io/hackerllama/blog/posts/random_transformer/
+
+https://johnthickstun.com/docs/transformers.pdf
+
+https://web.stanford.edu/~jurafsky/slp3/ transformer architecture.
+
+ 
+
+https://news.ycombinator.com/item?id=29315107  Transformers from scratch
+
+0. Лекция про трансформеры из курса, который я читал в магистратуре ВШЭ для биоинформатиков
+https://github.com/che-shr-cat/deep-learning-for-biology-hse-2019-course
+Лекция:
+https://www.youtube.com/watch?v=uP_aL_78BcY
+
+Слайды:  https://github.com/che-shr-cat/deep-learning-for-biology-hse-2019-course/blob/master/slides/%2312.%20Transformers.pdf
+
+ 
+1. Transformer Zoo — рассказ про разнообразие трансформеров и их применений
+https://www.youtube.com/watch?v=KZ9NXYcXVBY
+
+2. Transformer Zoo (a deeper dive) — более глубокий рассказ про архитектуру и что в ней можно варьировать
+https://www.youtube.com/watch?v=7e4LxIVENZA
+
+3. Свежий рассказ про трансформеры в 2021 году
+https://www.youtube.com/watch?v=8dN6ZVnDArk
+
+Math for DeepLearning:
+
+http://www.arxiv-sanity.com/2105.04026v1
 
 ### Chris Bishop
 
@@ -50,7 +87,7 @@ https://karpathy.ai/zero-to-hero.html Andrej Karpathy
 
 https://www.deeplearningbook.org/ , PDF version: https://github.com/janishar/mit-deep-learning-book-pdf
 
-https://web.stanford.edu/~jurafsky/slp3/ transformer architecture.
+
  
 ### Large language models
 https://github.blog/2023-10-30-the-architecture-of-todays-llm-applications/
@@ -178,30 +215,7 @@ http://www.stochasticlifestyle.com/engineering-trade-offs-in-automatic-different
 
 https://news.ycombinator.com/item?id=29682507
 
-### Transformers 
 
-https://news.ycombinator.com/item?id=29315107  Transformers from scratch
-
-0. Лекция про трансформеры из курса, который я читал в магистратуре ВШЭ для биоинформатиков
-https://github.com/che-shr-cat/deep-learning-for-biology-hse-2019-course
-Лекция:
-https://www.youtube.com/watch?v=uP_aL_78BcY
-
-Слайды:  https://github.com/che-shr-cat/deep-learning-for-biology-hse-2019-course/blob/master/slides/%2312.%20Transformers.pdf
-
- 
-1. Transformer Zoo — рассказ про разнообразие трансформеров и их применений
-https://www.youtube.com/watch?v=KZ9NXYcXVBY
-
-2. Transformer Zoo (a deeper dive) — более глубокий рассказ про архитектуру и что в ней можно варьировать
-https://www.youtube.com/watch?v=7e4LxIVENZA
-
-3. Свежий рассказ про трансформеры в 2021 году
-https://www.youtube.com/watch?v=8dN6ZVnDArk
-
-Math for DeepLearning:
-
-http://www.arxiv-sanity.com/2105.04026v1
 
 
 ### TinyML
