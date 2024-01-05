@@ -4,6 +4,15 @@
  
  What is a modern Java environment?
  https://news.ycombinator.com/item?id=30841581
+
+
+
+ ### Modern Java/JVM build practises
+
+ https://github.com/binkley/modern-java-practices
+
+ https://news.ycombinator.com/item?id=38875318
+ 
  
  ### Java from command line:
  https://habr.com/ru/post/652985/
