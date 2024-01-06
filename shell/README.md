@@ -2,6 +2,8 @@ shellcheck -o all myshellscript.sh  : use shellcheck  to check any shell script
 
 https://effective-shell.com/
 
+https://terminaltrove.com/list/ terminal utils
+
 https://github.com/dbohdan/structured-text-tools
 
 https://news.ycombinator.com/item?id=36501364 Working with CSV and other formats from shell
