@@ -21,6 +21,9 @@ https://news.ycombinator.com/item?id=25200702
 
 https://news.ycombinator.com/item?id=25167928
 
+### HTMX
+ 
+https://refine.dev/blog/what-is-htmx/
 
 https://htmx.org/  htmx allows you to access AJAX, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext
 
