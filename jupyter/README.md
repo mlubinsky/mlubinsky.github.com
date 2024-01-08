@@ -29,8 +29,8 @@ Want to run the code yourself? Here is a binder link to start your own Jupyter s
 
 https://mybinder.org/v2/gh/pathwaycom/pathway-examples/main?filepath=showcases%2Flive-data-jupyter.ipynb
 
-
-
+### Numpy
+https://habr.com/ru/articles/784978/
 
 ### PyGWalker
 
