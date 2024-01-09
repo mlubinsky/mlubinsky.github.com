@@ -54,6 +54,8 @@ https://lnkd.in/evM43KHy
 
 ### System design 
 
+https://github.com/madd86/awesome-system-design
+
 System Design:
 👉 Byte Byte Go by Alex Xu - https://lnkd.in/eEGZ-3mY
 👉 Byte Sized Design by Alex Nguyen - https://lnkd.in/e7yxQJf7
