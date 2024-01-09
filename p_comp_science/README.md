@@ -4,6 +4,9 @@ https://github.com/osscar-org/quantum-mechanics
 
 https://medium.com/@natsunoyuki/quantum-mechanics-with-python-de2a7f8edd1f
 
+
+https://arxiv.org/pdf/2303.16449.pdf Python Tips and tricks for quantum optics, quantum computing and beyond
+
 ### QuTiP
 https://github.com/jrjohansson/qutip-lectures
 
