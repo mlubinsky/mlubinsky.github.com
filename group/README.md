@@ -25,6 +25,9 @@ https://www.youtube.com/watch?v=aF0amljoZk4&list=PL4_hYwCyhAvZQoUsDe17ZGXIxcG3O8
 https://publications.hse.ru/mirror/pubs/share/direct/433420486.pdf
 
 
+### Lie groups in physics
+https://arxiv.org/pdf/2012.00834.pdf
+
 ### LightCone
 
 https://www.youtube.com/watch?v=wA8Wa2zAJ3E&list=PLnbH8YQPwKblIpRi0ARO2VadnMwntvF51&pp=iAQB
