@@ -31,7 +31,8 @@ This guarantees that we only observe 1/3 events.
 Toss the unbiased coin thrice. Given the outcome is not both tails ( T T) ,
  then the outcome of both heads (H H) has probability 1/3.
 ```
-
+### Markov chain
+https://arxiv.org/pdf/2207.02296.pdf
 ###
 https://www.statlearning.com/
 
