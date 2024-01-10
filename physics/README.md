@@ -1,8 +1,17 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
 
+
+
+
 "There is no God and Dirac is his Prophet." 
 — W. Pauli
+
+https://www.coursera.org/learn/quantum-physics/lecture
+
+https://www.coursera.org/specializations/the-physics-of-emergence-introduction-to-condensed-matter/
+
+https://www.facebook.com/victor.galitski
 
 https://acephysics.net/
 
