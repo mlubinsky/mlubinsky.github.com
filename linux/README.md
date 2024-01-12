@@ -27,3 +27,15 @@ https://www.linux-magazine.com/Issues/2014/158/Monitoring-with-incron
 https://danyspin97.org/blog/makefiles-best-practices/
 
 http://gabarro.org/ccn/makemath.html
+
+https://tech.davis-hansson.com/p/make/
+
+https://25thandclement.com/~william/cuda/Makefile.md.html
+
+https://latedev.wordpress.com/2014/11/08/generic-makefiles-with-gcc-and-gnu-make/
+
+https://labs.tomasino.org/makefiles-for-fun-and-profit/
+
+https://antonz.org/makefile-automation/
+
+https://ricardoanderegg.com/posts/makefile-python-project-tricks/
