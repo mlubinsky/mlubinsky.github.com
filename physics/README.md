@@ -360,6 +360,7 @@ https://www.susanrigetti.com/physics
 
 3. Sakurai.
 
+https://www.youtube.com/watch?v=K2Bb6MDwMU0&list=PLthfp5exSWErTOlEm4gMRLYpQ9D1W1_2o&index=1 Ivanov Kak pokimat' kvantovuiy mehviku
 4. https://mipt.ru/students/organization/mezhpr/biblio/q-ivanov.php
 
 
