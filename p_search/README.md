@@ -1,3 +1,10 @@
+### Vector databases
+
+https://news.ycombinator.com/item?id=38971221
+
+https://tge-data-web.nyc3.digitaloceanspaces.com/docs/Vector%20Databases%20-%20A%20Technical%20Primer.pdf
+
+
 https://github.blog/2023-02-06-the-technology-behind-githubs-new-code-search/
 
 https://github.blog/2021-12-15-a-brief-history-of-code-search-at-github/
