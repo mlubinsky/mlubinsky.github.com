@@ -25,3 +25,5 @@ https://www.linux-magazine.com/Issues/2014/158/Monitoring-with-incron
 ## Make Makefile
 
 https://danyspin97.org/blog/makefiles-best-practices/
+
+http://gabarro.org/ccn/makemath.html
