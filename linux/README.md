@@ -39,3 +39,5 @@ https://labs.tomasino.org/makefiles-for-fun-and-profit/
 https://antonz.org/makefile-automation/
 
 https://ricardoanderegg.com/posts/makefile-python-project-tricks/
+
+https://news.ycombinator.com/item?id=32303193
