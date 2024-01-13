@@ -6,9 +6,13 @@ https://mindyourdecisions.com/blog/2017/01/01/can-you-solve-it-use-a-coin-to-sim
 
 https://math.stackexchange.com/questions/3568428/get-1-3-probability-from-a-coin-in-minimal-mean-of-the-amount-of-flips
 
-### Generalized fourier transform
+### Generalized Fourier transform
+
+https://see.stanford.edu/Course/EE261/137
 
 https://news.ycombinator.com/item?id=35582084
+
+http://gabarro.org/ccn/gen_fourier.html
 
 
 ### Lie groups
