@@ -1,6 +1,6 @@
 https://www.dissercat.com/catalog/fiziko-matematicheskie-nauki
 
-### Series of math 
+### Series of math topics
 
 https://www.youtube.com/watch?v=9CBS5CAynBE&list=PLDcSwjT2BF_WVum1CMO9hMSIa7TyrGjsK
 
