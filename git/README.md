@@ -7,6 +7,9 @@ https://www.youtube.com/watch?v=hZS96dwKvt0
 https://www.youtube.com/watch?v=1ffBJ4sVUb4
 
 
+https://www.leemeichin.com/posts/conditional-git-config.html
+
+
 #### Manage SSH for several github accounts
 
 https://news.ycombinator.com/item?id=36768334
