@@ -5,9 +5,11 @@ https://learngitbranching.js.org/
 https://www.youtube.com/watch?v=hZS96dwKvt0
 
 https://www.youtube.com/watch?v=1ffBJ4sVUb4
-
+### Git config
 
 https://www.leemeichin.com/posts/conditional-git-config.html
+
+https://news.ycombinator.com/item?id=38942892
 
 
 #### Manage SSH for several github accounts
