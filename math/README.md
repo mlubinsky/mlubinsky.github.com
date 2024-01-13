@@ -1,5 +1,9 @@
 https://www.dissercat.com/catalog/fiziko-matematicheskie-nauki
 
+### Series of math 
+
+https://www.youtube.com/watch?v=9CBS5CAynBE&list=PLDcSwjT2BF_WVum1CMO9hMSIa7TyrGjsK
+
 ### Fair coin - generate 1/3 probability
 
 https://mindyourdecisions.com/blog/2017/01/01/can-you-solve-it-use-a-coin-to-simulate-any-probability-sunday-puzzle/
