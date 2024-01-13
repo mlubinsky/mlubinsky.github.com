@@ -2,6 +2,10 @@ https://physicsbaseddeeplearning.org/intro.html . BOOK
 
 https://habr.com/ru/articles/783766/ interview
 
+### ML Notebooks
+
+https://github.com/ageron/handson-ml3
+
 https://aman.ai/primers/ai/
 
 Topological data analysis. Nikita Kalinin.
