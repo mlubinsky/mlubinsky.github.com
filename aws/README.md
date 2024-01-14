@@ -4,6 +4,11 @@ https://explore.skillbuilder.aws/learn/catalog
 
 https://explore.skillbuilder.aws/learn/mycourses Machine Learning Plan (I enrolled)
 
+
+### Asure databricks learning
+
+https://www.databricks.com/resources/webinar/azure-databricks-free-training-series-track
+
 ### GCP
 
 Dataproc is a fully managed and highly scalable service for running Apache Spark, Apache Flink, Presto, and 30+ open source tools and frameworks. 
