@@ -10,6 +10,8 @@ https://www.neelnanda.io/mechanistic-interpretability
 
 ### Transformers
 
+https://magazine.sebastianraschka.com/p/understanding-and-coding-self-attention
+
 https://en.wikipedia.org/wiki/Transformer
 
 https://arxiv.org/pdf/2207.09238.pdf Formal Algorithms for Transformers
