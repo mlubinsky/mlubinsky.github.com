@@ -15,6 +15,11 @@ https://www.facebook.com/victor.galitski
 
 https://acephysics.net/
 
+### Spinors
+
+https://www.youtube.com/playlist?list=PLJHszsWbB6hoOo_wMb0b6T44KM_ABZtBs
+
+
 https://www.youtube.com/@viascience
 
 https://vk.com/club70818948 QM books
