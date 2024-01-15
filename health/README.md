@@ -46,9 +46,12 @@ https://www.youtube.com/watch?v=oavk4SOKU1E
 Цистанхе (латинское Cistanche). Полностью все названия даны во 2 части моего выступления. Смотрите: "Мощнее женьщеня в 5 раз.
 
 
+
+https://www.youtube.com/watch?v=FzH6prtnOF0 Упражнения для мышц ТАЗОВОГО ДНА
+
 ### Prost
 
-Exersize: https://www.youtube.com/watch?v=s9YFFif2zfo
+Exersise: https://www.youtube.com/watch?v=s9YFFif2zfo
 
 https://www.youtube.com/watch?v=SwhiNAQPhjU
 
