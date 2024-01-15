@@ -48,6 +48,8 @@ https://www.youtube.com/watch?v=oavk4SOKU1E
 
 ### Prost
 
+Exersize: https://www.youtube.com/watch?v=s9YFFif2zfo
+
 https://www.youtube.com/watch?v=SwhiNAQPhjU
 
 https://www.youtube.com/watch?v=v3oKCsA2EUw
@@ -78,7 +80,7 @@ To avoid:
  - spicy food
  - sugar
  - fried food
- - dalry
+ - dairy
 
 ### Dr. Berg 
 https://www.youtube.com/watch?v=jeYe34V7J4Q
