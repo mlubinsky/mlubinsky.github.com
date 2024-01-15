@@ -1,5 +1,8 @@
 https://www.dissercat.com/catalog/fiziko-matematicheskie-nauki
 
+### Семинар  по математическим методам в физике 
+https://www.youtube.com/watch?v=uhtb8FD_GAI&list=PLPFUq1zn8x35_0NTQqHNKwCjb9CVhS7MX
+
 ### Series of math topics
 
 https://www.youtube.com/watch?v=9CBS5CAynBE&list=PLDcSwjT2BF_WVum1CMO9hMSIa7TyrGjsK
