@@ -49,6 +49,8 @@ https://www.youtube.com/watch?v=oavk4SOKU1E
 
 https://www.youtube.com/watch?v=FzH6prtnOF0 Упражнения для мышц ТАЗОВОГО ДНА
 
+https://www.youtube.com/watch?v=MqJJyl1RmFk Упражнения для тазобедренного сустава. Растяжка при коксартрозе.
+
 ### Prost
 
 Exersise: https://www.youtube.com/watch?v=s9YFFif2zfo
