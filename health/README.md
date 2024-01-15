@@ -2,6 +2,8 @@ https://news.ycombinator.com/item?id=38839088
 
 ### Morning exersises:
 
+https://www.youtube.com/watch?v=WGmT8BfuLzU
+
 https://www.youtube.com/watch?v=o-89SYgIwuo
 
 https://www.youtube.com/watch?v=y__YcYI9eow
