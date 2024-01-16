@@ -1,6 +1,92 @@
 I bought this:
 https://www.udemy.com/cart/success/1027511410/
 
+### Storage
+As data is loaded, Snowflake organizes data into 16MB variable length chunks called micro-partitions. It automatically captures metadata statistics about every entry, including every column's minimum and maximum value. 
+
+
+### Performance
+
+https://www.analytics.today/blog/top-3-snowflake-performance-tuning-tactics
+
+```
+select query_type
+,      warehouse_size
+,      warehouse_name
+,      partitions_scanned
+,      partitions_total
+,      partitions_scanned / nullifzero(partitions_total) * 100 as pct_scanned
+from sb_query_history
+where warehouse_size is not null
+and   partitions_scanned > 1000
+and   pct_scanned > 0.8
+order by partitions_scanned desc,
+         pct_scanned desc;
+```
+
+### WDH
+```
+Virtual Warehouse consists of several servers, and each server is a computer with (currently) eight virtual CPUs, memory and SSD storage.  When a query is executed, data is read from Remote Storage into Local Storage (SSD), acting as a data cache.  
+
+When created, a Virtual Warehouse comprises a cluster of servers that work together as a single machine and are sized as simple T-Shirt sizes.
+SIZE     NODES       VCPUs
+XSMALL  1            8
+SMALL   2            16
+MEDIUM  4            32
+LARGE   8            64 
+XLARGE  16           128
+X2LARGE 32           256
+...
+X6LARGE
+
+
+create warehouse PROD_REPORTING with
+        warehouse_size     = SMALL
+       auto_suspend        = 600
+       auto_resume         = true
+       initially_suspended = true
+       comment = 'PROD Reporting Warehouse';
+
+use warehouse PROD_REPORTING;
+
+alter warehouse PROD_REPORTING set
+   warehouse_size    = MEDIUM;
+
+
+alter warehouse PROD_REPORTING set
+    warehouse_size    = MEDIUM
+    min_cluster_count = 1
+    max_cluster_count = 5
+    scaling_policy = ‘STANDARD’;
+
+```
+### Stream
+
+### Task
+
+CREATE OR REPLACE TASK x 
+WAREHAUSE = COMPUTE_WH
+SCHEDULE="USING CRON  * * 7 UTC'  # SCHEDULE='1 MINUTE'
+AS 'SQL STAREMENT'
+
+Tree of tasks
+
+### Transient, Permanent and External tables
+
+
+### UDF / store proc
+
+https://docs.snowflake.com/en/developer-guide/snowflake-scripting/index
+
+```
+CREATE OR REPLACE PROCEDURE x()
+RETURNS FLOAT
+LANGUAGE SQL
+AS
+$$
+   SQL STATEMENTS
+$$
+```
 
 https://www.youtube.com/watch?v=GUn9zN-wtf4
 
