@@ -89,6 +89,9 @@ Tree of tasks
 
 ### Transient, Permanent and External tables
 
+### Dynamic table 
+
+https://docs.snowflake.com/en/user-guide/dynamic-tables-about
 
 ### UDF / store proc
 
