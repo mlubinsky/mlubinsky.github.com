@@ -1,4 +1,6 @@
-Best book: https://www.amazon.com/Learning-Go-Idiomatic-Real-World-Programming-ebook/dp/B08XYGCM71
+Best book: Learning Go: An Idiomatic Approach to Real-world Go Programming 2nd Edition
+by Jon Bodner 
+https://www.amazon.com/_/dp/1098139291
 
 https://habr.com/ru/articles/786826/  100 questions
 
