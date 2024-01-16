@@ -1,3 +1,7 @@
+I bought this:
+https://www.udemy.com/cart/success/1027511410/
+
+
 https://www.youtube.com/watch?v=GUn9zN-wtf4
 
 https://www.decube.io/post/snowflake-vs-databricks-side-by-side-comparison
