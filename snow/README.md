@@ -2,8 +2,16 @@ I bought this:
 https://www.udemy.com/cart/success/1027511410/
 
 ### Storage
-As data is loaded, Snowflake organizes data into 16MB variable length chunks called micro-partitions. It automatically captures metadata statistics about every entry, including every column's minimum and maximum value. 
+```
+As data is loaded, Snowflake organizes data into 16MB variable length chunks called micro-partitions.
+ It automatically captures metadata statistics about every entry, including every column's minimum and maximum value.
 
+Snowflake Micro-partitions are immutable, and, once written cannot be modified
+
+This means an update against one or more rows creates a new version of the entire micro-partition with the updated rows
+
+The prior micro-partition is kept for time travel or immediately removed as required. 
+```
 
 ### Performance
 
@@ -23,6 +31,14 @@ and   pct_scanned > 0.8
 order by partitions_scanned desc,
          pct_scanned desc;
 ```
+
+### Clustering
+
+https://docs.snowflake.com/en/user-guide/tables-clustering-keys
+
+https://www.analytics.today/blog/snowflake-clustering-best-practice
+
+alter table sales   cluster by (status, store_no);
 
 ### WDH
 ```
