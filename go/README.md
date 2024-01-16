@@ -2,7 +2,9 @@ Best book: Learning Go: An Idiomatic Approach to Real-world Go Programming 2nd E
 by Jon Bodner 
 https://www.amazon.com/_/dp/1098139291
 
-https://habr.com/ru/articles/786826/  100 questions
+https://github.com/dariubs/GoBooks
+
+https://habr.com/ru/articles/786826/  100 GO interview questions
 
 https://tour.ardanlabs.com/tour/eng/list
 
