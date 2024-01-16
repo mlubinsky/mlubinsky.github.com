@@ -1,5 +1,7 @@
 Best book: https://www.amazon.com/Learning-Go-Idiomatic-Real-World-Programming-ebook/dp/B08XYGCM71
 
+https://habr.com/ru/articles/786826/  100 questions
+
 https://tour.ardanlabs.com/tour/eng/list
 
 https://bitfieldconsulting.com/golang/tao-of-go
