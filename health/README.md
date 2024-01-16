@@ -1,4 +1,11 @@
+
+
 https://news.ycombinator.com/item?id=38839088
+
+### дыхательная гимнастика 
+
+https://habr.com/ru/articles/786784/
+
 
 ### Morning exersises:
 
