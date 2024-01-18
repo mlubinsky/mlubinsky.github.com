@@ -384,6 +384,9 @@ print(notmain.x)
 ### functools module
 
 https://florian-dahlitz.de/articles/introduction-to-pythons-functools-module
+
+https://jacobpadilla.com/articles/Functools-Deep-Dive
+
 ```
 cached_property()
 cmp_to_key()
@@ -1982,6 +1985,8 @@ def my_function(x, y):
 
 ### Loggging decorator
 https://towardsdatascience.com/python-decorators-for-data-science-6913f717669a
+
+https://jacobpadilla.com/articles/Functools-Deep-Dive
 ```
 import logging
 import functools
