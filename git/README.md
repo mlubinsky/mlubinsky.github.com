@@ -2,6 +2,13 @@ alias gfp=“git commit --amend --no-edit && git push --force-with-lease”
 
 https://learngitbranching.js.org/
 
+### Git troubleshhoting
+
+https://ohshitgit.com/
+
+https://jacobpadilla.com/articles/Time-Travel-With-Git
+
+
 https://www.youtube.com/watch?v=hZS96dwKvt0
 
 https://www.youtube.com/watch?v=1ffBJ4sVUb4
