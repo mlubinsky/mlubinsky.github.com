@@ -383,6 +383,8 @@ print(notmain.x)
 
 ### functools module
 
+https://medium.com/techtofreedom/7-uses-of-python-functools-that-make-your-code-more-professional-a42f55bacd44
+
 https://florian-dahlitz.de/articles/introduction-to-pythons-functools-module
 
 https://jacobpadilla.com/articles/Functools-Deep-Dive
