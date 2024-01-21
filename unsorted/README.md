@@ -22,7 +22,10 @@ https://hypermedia.systems/
 https://datatracker.ietf.org/doc/html/rfc4648
 
 ### BAy Area
-https://tandcvillage.com/
+https://tandcvillage.com/ Town and City Village
+
+Foothill 
+https://www.cityofpaloalto.org/Departments/Community-Services/Open-Space-Parks/Neighborhood-Parks/Foothills-Nature-Preserve
 
 ### Static Site generators
 https://jamstack.org/generators/
