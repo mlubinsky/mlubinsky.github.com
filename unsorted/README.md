@@ -21,6 +21,8 @@ https://hypermedia.systems/
 ### The Base16, Base32, and Base64 Data Encodings
 https://datatracker.ietf.org/doc/html/rfc4648
 
+### BAy Area
+https://tandcvillage.com/
 
 ### Static Site generators
 https://jamstack.org/generators/
