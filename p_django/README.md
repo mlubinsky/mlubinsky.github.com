@@ -1,3 +1,11 @@
+https://github.com/dot-agent/nextpy
+
+https://reflex.dev/
+
+niceGUI
+
+mckinsey’s vizro? I think its built on top of plotly. Considering it as alternative to Tableau. 
+
 https://metaperl.github.io/pure-python-web-development/class-a.html
 
 https://github.com/causalens/dara 
