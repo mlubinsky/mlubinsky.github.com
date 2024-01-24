@@ -1,4 +1,11 @@
-alias gfp=“git commit --amend --no-edit && git push --force-with-lease”
+alias gfp="git commit --amend --no-edit && git push --force-with-lease"
+
+### Clone without history
+```
+git clone --depth 1 --branch v3.12.0 https://github.com/python/cpython.git
+ 
+git clone --depth 1 --branch v3.12.0 git@github.com:python/cpython.git
+```
 
 https://learngitbranching.js.org/
 
