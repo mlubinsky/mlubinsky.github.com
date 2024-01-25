@@ -23,6 +23,10 @@ https://devblogs.microsoft.com/python/python-linting-video/
 https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html#cheat-sheet-py3
 
 
+## Working with MS Excel
+
+https://hakibenita.com/fast-excel-python
+
 ###
 
 https://pathway.com/
