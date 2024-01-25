@@ -16,6 +16,52 @@ https://www.youtube.com/watch?v=HrVtA-ue-x0  Software Engineering's Greatest Hit
 
 https://news.ycombinator.com/item?id=28178257
 
+ Interview Prep:
+1. Tech Interview Handbook: [Link](https://lnkd.in/d2F5z4Af) (by Yangshun Tay)
+
+2. Guide to Software Engineering Interviews: [Link](https://lnkd.in/dm2MbsgD) (by Kevin Naughton)
+
+3. DevOps Exercises: [Link](https://lnkd.in/dPCDT55k)
+
+🛠 System Design:
+
+4. Big Tech Engineering Tech Blogs: [Link](https://lnkd.in/dJaGjeES)
+
+5. System Design 101: [Link](https://lnkd.in/d5itZHgQ) (by Alex Xu)
+
+6. System Design Primer: [Link](https://lnkd.in/dkPScaCW) (by Donne Martin)
+
+7. Essential JS Design Patterns: [Link](https://lnkd.in/dWmBwK-i) (by Addy Osmani)
+
+8. Awesome Scalability: [Link](https://lnkd.in/de4UZbiA)
+
+9. Awesome System Design Resources: [Link](https://lnkd.in/dU6wFXkn) (by Ashish Pratap Singh)
+
+10. Coding Challenges Solutions: [Link](https://lnkd.in/dJV_8pgH) (by John Crickett)
+
+🤖 ML/AI:
+11. Hands-on LLM: [Link](https://lnkd.in/dww8GPdt) (by Paul Iusztin)
+
+12. Papers We Love: [Link](https://lnkd.in/dkjsCq8z)
+
+13. Notes on AI for Software Engineers: [Link](https://lnkd.in/dANSnC4f)
+
+14. LLM 101 Course: [Link](https://lnkd.in/dVKwvVUR) (by Maxime Labonne)
+
+15. ML Paper of the Week: [Link](https://lnkd.in/d66HxP52) (by Elvis S.)
+
+🗺 Complete Roadmaps:
+16. Path to Senior Engineer Handbook: [Link](https://lnkd.in/dC3dQvy6) (by Jordan Cutler)
+
+17. 100+ Resources to Become a Great Engineering Leader: [Link](https://lnkd.in/dFwV2GMv) (by Gregor Ojstersek)
+
+18. DevOps Roadmap in 2024: [Link](https://lnkd.in/ddE5DkDJ) (by Dr. Milan Milanović)
+
+19. The Book of Secret Knowledge: [Link](https://lnkd.in/d69jrK4T)
+
+20. Free Programming Books: [Link](https://lnkd.in/d5JCRakw)
+
+
 
 ### Gifts and Shopping
 
