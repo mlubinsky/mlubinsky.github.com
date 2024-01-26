@@ -22,6 +22,13 @@ https://www.postgresonline.com/
 stored procedure to rename tables and indexes:
 https://habr.com/ru/articles/765484/
 
+### Read csv as tuples
+```
+import csv
+with open('/tmp/test.csv') as f:
+    data=[tuple(line) for line in csv.reader(f)]
+```
+
 ### Python + Postgres
 
 https://www.psycopg.org/docs/usage.html#passing-parameters-to-sql-queries
