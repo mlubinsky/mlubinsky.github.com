@@ -1,4 +1,5 @@
 ### Vector databases
+https://news.ycombinator.com/item?id=39119198
 
 https://news.ycombinator.com/item?id=38971221
 
