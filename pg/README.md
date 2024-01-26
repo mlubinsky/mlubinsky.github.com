@@ -23,7 +23,42 @@ stored procedure to rename tables and indexes:
 https://habr.com/ru/articles/765484/
 
 ### Python + Postgres
-#### Insert many records at once
+
+https://www.psycopg.org/docs/usage.html#passing-parameters-to-sql-queries
+
+### Insert one record at the time:
+```
+import psycopg2
+df = pd.read_csv('dataframe.csv')
+
+conn = psycopg2.connect(database = "postgres",
+                        user = "postgres",
+                        password = "12345",
+                        host = "127.0.0.1",
+                        port = "5432")
+
+cur = conn.cursor()
+
+for i in range(0 ,len(df)):
+    values = (df['date'][i], df['open'][i], df['high'][i], df['low'][i], df['close'][i])
+    cur.execute("INSERT INTO T (date, open, high, low, close) VALUES (%s, %s, %s, %s, %s)",
+                values)
+
+conn.commit()
+print("Records created successfully")
+conn.close()
+```
+
+#### Insert many records using cur.execute() in the loop
+```
+data = [('Babita', 'Bihar'), ('Anushka', 'Hyderabad'), 
+        ('Anamika', 'Banglore'), ('Sanaya', 'Pune'),
+        ('Radha', 'Chandigarh')]
+
+for d in data:
+    cursor.execute("INSERT into employee(name, state) VALUES (%s, %s)", d)
+```
+#### Insert many records at once using cur.executemany()
 ```
 def insert_many(some list):
     sql = "INSERT INTO vendors(vendor_name) VALUES(%s)"
