@@ -39,6 +39,13 @@ https://news.ycombinator.com/item?id=29742551
 
 <https://lobste.rs/s/uzdehw/what_should_i_do_after_getting_my_first_own>
 
+
+https://app.vnote.fun/en_us/
+
+
+
+### Dosk space
+
 https://pawelurbanek.com/macos-free-disk-space   
 
 brew install --cask disk-inventory-x
