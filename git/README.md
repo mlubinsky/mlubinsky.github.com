@@ -15,6 +15,10 @@ https://ohshitgit.com/
 
 https://jacobpadilla.com/articles/Time-Travel-With-Git
 
+### Articles
+
+https://medium.com/@tigerasks/git-gud-b29c11ab2c60
+
 https://medium.com/@tigerasks/rebase-once-1642b7dc0563
 
 https://www.youtube.com/watch?v=hZS96dwKvt0
