@@ -9,6 +9,8 @@
 
  ### Modern Java/JVM build practises
 
+ https://habr.com/ru/articles/789344/ Maven
+
  https://github.com/binkley/modern-java-practices
 
  https://news.ycombinator.com/item?id=38875318
