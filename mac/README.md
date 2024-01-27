@@ -264,7 +264,7 @@ jenv versions
 
 https://dev.to/gabethere/installing-java-on-a-mac-using-homebrew-and-jevn-12m8
 
-###
+### Spark
 brew install apache-spark
 
 /opt/homebrew/Cellar/apache-spark/3.5.0/bin
@@ -317,6 +317,8 @@ https://github.com/gchq/CyberChef
 
 
 ### Useful Apps
+
+https://app.vnote.fun/en_us/
 
 https://tinyapps.org/macos.html
 
