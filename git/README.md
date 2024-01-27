@@ -21,10 +21,6 @@ https://medium.com/@tigerasks/git-gud-b29c11ab2c60
 
 https://medium.com/@tigerasks/rebase-once-1642b7dc0563
 
-https://www.youtube.com/watch?v=hZS96dwKvt0
-
-https://www.youtube.com/watch?v=1ffBJ4sVUb4
-
 ```
 git fetch lets our local repository know about the state of origin, our remote. We fetch remote changes into our local git repository.
 
@@ -32,6 +28,11 @@ git pull runs git fetch, then if the current branch is behind the remote, it wil
 
 If fast-forward is impossible, it will run git merge or git rebase, depending on your configuration.
 ```
+### Youtube
+
+https://www.youtube.com/watch?v=hZS96dwKvt0
+
+https://www.youtube.com/watch?v=1ffBJ4sVUb4
 
 ### Git config
 
