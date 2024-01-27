@@ -17,6 +17,10 @@ https://jacobpadilla.com/articles/Time-Travel-With-Git
 
 ### Articles
 
+difference between commit and merge
+
+https://blog.stackademic.com/whats-the-difference-between-git-rebase-and-git-merge-cdf656b5310e
+
 https://medium.com/@tigerasks/git-gud-b29c11ab2c60
 
 https://medium.com/@tigerasks/rebase-once-1642b7dc0563
