@@ -23,6 +23,8 @@ sample PROCESS SECS spends SECS seconds watching the process (name or pid) PROCE
 
 ### Setup
 
+https://blog.scriptmint.com/my-macbook-setup-for-development-2024-caefe65d8bfb
+
 https://habr.com/ru/post/672510/ from Linux to Mac
 
 https://earthly.dev/blog/homebrew-on-m1/ Homebrew on Mac1
