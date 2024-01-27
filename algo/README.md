@@ -22,7 +22,9 @@ https://tproger.ru/books/algorithms-data-structures-books/
 
 https://www.youtube.com/playlist?list=PL4_hYwCyhAvZZe505W6mfZQLvOmd7iAn7  MFTI algo lectures ru
 
-Hash function
+### Hash function and table
+https://redixhumayun.github.io/databases/2024/01/26/extendible-hash-tables.html
+
 https://papa.bretmulvey.com/post/124027987928/hash-functions
 
 ```
