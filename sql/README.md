@@ -16,6 +16,8 @@ https://news.ycombinator.com/item?id=37641628
 
 ###  Interview questions
 
+https://habr.com/ru/articles/789420/
+
 https://habr.com/ru/companies/tensor/articles/776834/
 
 Let generate 1mln random records for 1 year:
