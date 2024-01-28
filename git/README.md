@@ -15,6 +15,8 @@ https://ohshitgit.com/
 
 https://jacobpadilla.com/articles/Time-Travel-With-Git
 
+https://www.kdnuggets.com/10-advanced-git-techniques
+
 ### Articles
 
 difference between commit and merge
