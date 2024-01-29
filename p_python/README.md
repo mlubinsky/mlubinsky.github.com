@@ -45,6 +45,16 @@ https://holoviz.org/
 
 https://dataprep.ai/
 
+## Plotting
+
+ http://www.gnuplot.info/
+
+ https://github.com/dkogan/gnuplotlib
+
+ https://github.com/bedbad/justpyplot
+ 
+
+### Pipeline
 https://pathway.com/
 
 ### Query CSV, JSON and Parquet files
