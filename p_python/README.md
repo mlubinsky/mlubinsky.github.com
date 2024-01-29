@@ -31,13 +31,30 @@ https://hakibenita.com/fast-excel-python
 
 sys.path.append(os.getcwd())
 
+### Data Tools
+
+https://www.jetbrains.com/dataspell/ JetBrains
+
+https://deepnote.com/compare
+
+https://colab.research.google.com/
+
+Spider
+
+https://holoviz.org/
+
+https://dataprep.ai/
+
 https://pathway.com/
 
 ### Query CSV, JSON and Parquet files
 
 https://github.com/luminousmen/data-toolset   Avro and Parquet 
 
-https://github.com/MarkyMan4/filequery Query CSV, JSON and Parquet files with SQL
+ Query CSV, JSON and Parquet files with SQL
+ 
+https://github.com/MarkyMan4/filequery  https://pypi.org/project/filequery/
+
 
 
 ### String
@@ -647,7 +664,7 @@ https://medium.com/@fareedkhandev/best-data-analysis-library-in-python-ad2572288
 
 https://docs.python.org/3/library/profile.html
 
-https://github.com/plasma-umass/scalene
+https://github.com/plasma-umass/scalene  high-performance, high-precision CPU, GPU, and memory profiler
 
 https://pypi.org/project/scalene 
 
@@ -676,6 +693,8 @@ https://pythonspeed.com/
 https://coderslegacy.com/cython-vs-cpython-comparing-speed/  Cython
 
 ### Multiprocessing 
+
+https://habr.com/ru/articles/789904/
 
 https://www.bitecode.dev/p/the-easy-way-to-concurrency-and-parallelism
 
