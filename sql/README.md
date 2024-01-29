@@ -4,6 +4,12 @@ https://wisser.github.io/Jailer/
 
 https://news.ycombinator.com/item?id=36243926
 
+### Query optimizer
+
+https://xuanwo.io/2024/02-what-i-talk-about-when-i-talk-about-query-optimizer-part-1/
+
+https://news.ycombinator.com/item?id=39176797
+
 ### Time series SQL
 
 https://questdb.io/blog/olap-vs-time-series-databases-the-sql-perspective/
