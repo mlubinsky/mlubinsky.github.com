@@ -29,6 +29,8 @@ https://hakibenita.com/fast-excel-python
 
 ###
 
+sys.path.append(os.getcwd())
+
 https://pathway.com/
 
 ### Query CSV, JSON and Parquet files
