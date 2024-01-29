@@ -1,3 +1,9 @@
+### Airflowctl
+https://airflowsummit.org/sessions/2023/introducing-airflowctl/
+pip install airflow ctl
+https://github.com/kaxil/airflowctl
+
+
 ### Mage, prefect, Dagster, AWS Step function, AWS Glue
 https://www.mage.ai/
 
