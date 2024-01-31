@@ -134,10 +134,10 @@ order by metric
 X - metric 
 legend - DUT 
 
-Apply transformation: Grouping to matrix
+Apply transformation: "Grouping to matrix" to make the bar chart where X-axis is not the date
 ****************************************
  Column: dut
- Row: metric
+ Row: metric <-- will be X-axis
  Cell value : V
 ```
 
@@ -148,7 +148,7 @@ we need to convert it to format (dut, metric, value) to feed to grafana:
 select dut, 'm1' as metric, m1  as value from daily 
 union all
 select dut, 'm2' as metric, m2  as value from daily 
-..
+
 ```
 
 https://www.youtube.com/watch?v=Bu-MxNJT44c
