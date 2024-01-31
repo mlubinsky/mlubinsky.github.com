@@ -113,7 +113,7 @@ brew services start grafana
 Bar chart -> Overrides -> fields with name -> In dropdown select description -> value mapping
 
 
-### Plotting non-time series on X - axis
+### Bar chart: how to plot categorial values  (not time) on X - axis
 
 Bar chart allows to plot categorical values on X-axis:
 
@@ -409,6 +409,7 @@ https://medium.com/grafana-tutorials/graphing-non-time-series-sql-data-in-grafan
 ### Transformation
 
 #### Transformation: Preparing time series
+Bat chart color scheme: Classic Palette
 For bar chart  grouping by date:
 ```
 Bat chart color scheme: Classic Palette
