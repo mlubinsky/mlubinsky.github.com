@@ -123,16 +123,8 @@ https://play.grafana.org/d/ktMs4D6Mk/5-bar-charts-and-pie-charts?orgId=1
 
 https://www.youtube.com/watch?v=ky78RZ2f7oc
 ```
-select 
---dt, 
-metric, 
-dut, 
-v  
-from daily_kpi where dt='2023-01-01'
-order by metric
- 
-X - metric 
-legend - DUT 
+select metric, DUT, v  from daily_kpi where dt='2023-01-01' order by metric
+Let make: X-axis: metric legend - DUT 
 
 Apply transformation: "Grouping to matrix" to make the bar chart where X-axis is not the date
 ****************************************
