@@ -1,4 +1,45 @@
+```
+Basic Interview Questions of Docker & Dockerfile:-
+
+1. How will you run multiple Docker containers in one single host?
+Answer: Docker Compose is the best way to run multiple containers as a single service by defining them in a docker-compose.yml file.
+
+2. If you delete a running container, what happens to the data stored in that container?
+Answer: When a running container is deleted, all data in its file system also goes away. However, we can use Docker Data Volumes to persist data even if the container is deleted.
+
+3. How do you manage sensitive security data like passwords in Docker?
+Answer: Docker Secrets and Docker Environment Variables can be used to manage sensitive data.
+
+4. What is the difference between Docker Image and a Docker Container?
+Answer: Docker Image is a template that contains the application, libraries, and dependencies required to run an application, whereas a Docker Container is the running instance of a Docker Image.
+
+5. How do you handle persistent storage in Docker?
+Answer: Docker Volumes and Docker Bind Mounts are used to handle persistent storage in Docker.
+
+6. What is the process to create a Docker Container from a Dockerfile?
+Answer: Docker Build command is used to create Docker images from a Dockerfile and then Docker Run command is used to create Containers from Docker images.
+
+7. How will you scale Docker containers based on traffic to your application?
+Answer: Docker Swarm or Kubernetes can be used to auto-scale Docker Containers based on traffic load.
+
+8. When RUN and CMD instructions will be executed?
+Answer: RUN instruction will be executed while building the Docker Image. CMD instruction will be executed while starting the Container.
+
+9. What’s the different between COPY and ADD instructions?
+Answer: Using COPY instruction,We can copy local files and folders from docker build context to Docker Image. These files and folders will be copied while creating a Docker Image.
+ADD instruction works similar to COPY instruction but the only different is that we can download files from remote locations that’s from Internet while creating a Docker Image.
+
+10. What’s the different between CMD and ENTRYPOINT instructions?
+Answer: CMD instruction will be used to start the process or application inside the Container.
+ENTRYPOINT instruction also works similar to CMD instruction. ENTRYPOINT instruction will also be executed while creating a container. CMD instruction can be overridden while creating a Container where as ENTRYPOINT instruction cannot be overridden while creating a Container.
+
+11. When we have both CMD and ENTRYPOINT instructions in a Dockerfile?
+Answer: CMD instruction will not be executed and CMD instruction will be passed as an argument for ENTRYPOINT.
+```
+
+
 https://habr.com/ru/post/569394/ Docker для Data Scientist'a
+
 
 https://masteringbackend.com/posts/docker-tutorial
 
