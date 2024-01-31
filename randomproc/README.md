@@ -18,6 +18,8 @@ https://www.youtube.com/watch?v=9pOysIYQH50 Лекторий ФПМИ Случа
 
 https://www.youtube.com/watch?v=rp2iA6NyCH8  Введение в теорию случайных процессов. Лекция 1. Бланк М. Л.
 
+https://www.youtube.com/watch?v=x7JPtqQcYPw Случайные процессы, случайные матрицы и интегрируемые модели. Занятие 1. Поволоцкий А. М.
+
 https://www.youtube.com/results?search_query=%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D1%8B%D0%B5+%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B+%D0%BC%D1%84%D1%82%D0%B8
 
 https://www.youtube.com/playlist?list=PLs2E8YVkilDB31gq6GcgRg9xZJkQQg5eE Лекции по случайным процессам 2021 Максим Широбоков
