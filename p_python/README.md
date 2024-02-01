@@ -672,6 +672,8 @@ https://medium.com/@fareedkhandev/best-data-analysis-library-in-python-ad2572288
 
 ### Profiling
 
+https://github.com/pyutils/line_profiler
+
 https://docs.python.org/3/library/profile.html
 
 https://github.com/plasma-umass/scalene  high-performance, high-precision CPU, GPU, and memory profiler
