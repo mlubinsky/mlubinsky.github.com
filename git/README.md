@@ -1,3 +1,6 @@
+https://jvns.ca/blog/2024/02/01/dealing-with-diverged-git-branches/
+
+
 alias gfp="git commit --amend --no-edit && git push --force-with-lease"
 
 ### Clone without history
