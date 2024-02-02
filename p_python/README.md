@@ -442,6 +442,9 @@ def do_something(a, b):
 #### functools reduce()
 ```
 from functools import reduce
+# pattern of usage:
+result = reducing(binary_func, seq, init_val=None)
+
 city = ['L', 'o', 'n', 'd', 'o', 'n', 2, 0, 2, 0]
 city_to_str = reduce(lambda x, y: str(x) + str(y), city)
 print(city_to_str)
