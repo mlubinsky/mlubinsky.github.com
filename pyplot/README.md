@@ -4,6 +4,8 @@ https://habr.com/ru/companies/ru_mts/articles/738208/ Plotting
 
 https://habr.com/ru/companies/ru_mts/articles/738208/ matplotlib
 
+https://github.com/TutteInstitute/datamapplot
+
 ### Visro
 https://github.com/mckinsey/vizro
 
