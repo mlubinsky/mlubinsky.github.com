@@ -25,6 +25,11 @@ https://www.postgresonline.com/
 stored procedure to rename tables and indexes:
 https://habr.com/ru/articles/765484/
 
+
+### pg_cron pg_partman, etc
+
+https://tembo.io/blog/tembo-data-warehouse
+
 ### Foreign data wrappers FDW
 ```
 CREATE EXTENSION clerk_fdw;
@@ -33,7 +38,9 @@ CREATE FOREIGN DATA WRAPPER clerk_wrapper
   handler clerk_fdw_handler
   validator clerk_fdw_validator;
 
-Next, we create a server object. This is where we configure the connection to the source data system. In the case of Clerk.dev, we need to provide our API key. The server object also needs to know which FDW to use, so we direct it to the clerk_wrapper we created above.
+Next, we create a server object. This is where we configure the connection to the source data system.
+In the case of Clerk.dev, we need to provide our API key.
+The server object also needs to know which FDW to use, so we direct it to the clerk_wrapper we created above.
 
 CREATE SERVER clerk_server
   foreign data wrapper clerk_wrapper
