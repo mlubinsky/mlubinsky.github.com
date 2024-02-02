@@ -3,6 +3,13 @@ https://jvns.ca/blog/2024/02/01/dealing-with-diverged-git-branches/
 
 alias gfp="git commit --amend --no-edit && git push --force-with-lease"
 
+```
+cd ..
+cp work-repo/code.py /tmp/
+rm -rf work-repo && git clone github.com/.../work-repo.git
+cp /tmp/code.py work-repo/
+cd work-repo && git checkout my_branch && git add -u && git commit
+```
 ### Clone without history
 ```
 git clone --depth 1 --branch v3.12.0 https://github.com/python/cpython.git
