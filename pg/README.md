@@ -1,3 +1,6 @@
+
+
+
 https://www.youtube.com/watch?v=i1HYbATmWaw
 
 https://habr.com/ru/companies/tensor/articles/782918/
@@ -21,6 +24,46 @@ https://www.postgresonline.com/
 
 stored procedure to rename tables and indexes:
 https://habr.com/ru/articles/765484/
+
+### Foreign data wrappers FDW
+```
+CREATE EXTENSION clerk_fdw;
+
+CREATE FOREIGN DATA WRAPPER clerk_wrapper
+  handler clerk_fdw_handler
+  validator clerk_fdw_validator;
+
+Next, we create a server object. This is where we configure the connection to the source data system. In the case of Clerk.dev, we need to provide our API key. The server object also needs to know which FDW to use, so we direct it to the clerk_wrapper we created above.
+
+CREATE SERVER clerk_server
+  foreign data wrapper clerk_wrapper
+  options (
+    api_key '<clerk secret Key>');
+
+Finally, we create a foreign table. This is where we tell Postgres how to map the data from Clerk into a table.
+
+CREATE FOREIGN TABLE clerk_users (
+  user_id text,
+  first_name text,
+  last_name text,
+  email text,
+  gender text,
+  created_at bigint,
+  updated_at bigint,
+  last_sign_in_at bigint,
+  phone_numbers bigint,
+  username text
+  )
+  server clerk_server
+  options (
+      object 'users'
+  );
+
+SELECT *
+FROM information_schema.foreign_tables
+```
+
+
 
 ### Read csv as tuples
 ```
