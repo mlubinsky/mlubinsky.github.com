@@ -440,10 +440,18 @@ wraps()
 def do_something(a, b):
 
 #### functools reduce()
+https://www.techbeamers.com/python-reduce/
 ```
 from functools import reduce
 # pattern of usage:
 result = reducing(binary_func, seq, init_val=None)
+
+prices = [100, 50, 30, 80, 120]
+def apply_discount(total, price):
+    return total - (price * 0.1)
+discounted_total = reduce(apply_discount, prices)
+print("Original Total:", sum(prices))
+print("Discounted Total:", discounted_total)
 
 city = ['L', 'o', 'n', 'd', 'o', 'n', 2, 0, 2, 0]
 city_to_str = reduce(lambda x, y: str(x) + str(y), city)
