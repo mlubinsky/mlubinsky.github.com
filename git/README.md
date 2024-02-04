@@ -17,6 +17,8 @@ git clone --depth 1 --branch v3.12.0 https://github.com/python/cpython.git
 git clone --depth 1 --branch v3.12.0 git@github.com:python/cpython.git
 ```
 
+https://github.com/Bhupesh-V/ugit/blob/master/ugit  undo git
+
 https://learngitbranching.js.org/
 
 ### Git troubleshhoting
