@@ -64,6 +64,8 @@ https://www.youtube.com/watch?v=MqJJyl1RmFk Упражнения для тазо
 
 Exersise: https://www.youtube.com/watch?v=s9YFFif2zfo
 
+https://www.youtube.com/watch?v=J5z3qkIpCEM
+
 https://www.youtube.com/watch?v=SwhiNAQPhjU
 
 https://www.youtube.com/watch?v=v3oKCsA2EUw
