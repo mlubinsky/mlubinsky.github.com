@@ -16,6 +16,8 @@ https://www.jjj.de/fxt/fxtbook.pdf
 
 https://ru.algorithmica.org/
 
+https://habr.com/ru/articles/790844/ Sparce arrays
+
 https://codeconfessions.substack.com/p/bloom-filters-and-beyond  Bloom filter
 
 https://tproger.ru/books/algorithms-data-structures-books/
