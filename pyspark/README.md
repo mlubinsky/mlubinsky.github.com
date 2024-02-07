@@ -17,6 +17,9 @@ https://www.amazon.com/Data-Algorithms-Spark-Recipes-Patterns/dp/1492082384
 https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
 
+https://www.amazon.com/dp/1804612987 Causal Inference and Discovery in Python: Unlock the secrets of modern causal machine learning with DoWhy, EconML, PyTorch and more
+
+
 https://www.youtube.com/watch?v=jWZ9K1agm5Y  PySpark Course: Big Data Handling with Python and Apache Spark
 
 
