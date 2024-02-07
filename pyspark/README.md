@@ -6,11 +6,20 @@ https://habr.com/ru/articles/765188/  Feature eng and cluster analysis
 
 https://towardsdatascience.com/did-you-know-this-in-spark-sql-a7398bfcc41e
 
-### Book
+### Books
+
+https://www.amazon.com/Advanced-Analytics-PySpark-Patterns-Learning/dp/1098103653
+
+https://www.amazon.com/Analysis-Python-PySpark-Jonathan-Rioux/dp/1617297208/
+
+https://www.amazon.com/Data-Algorithms-Spark-Recipes-Patterns/dp/1492082384
 
 https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf
 
+
 https://www.youtube.com/watch?v=jWZ9K1agm5Y  PySpark Course: Big Data Handling with Python and Apache Spark
+
+
 
 ### Compute  total counts of each of  unique words on a spark: map() and flatMap()
 ```
