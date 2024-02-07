@@ -8,6 +8,9 @@ https://arxiv.org/pdf/2310.20360.pdf Math Introduction to Deep Learning
 
 https://www.neelnanda.io/mechanistic-interpretability
 
+https://www.linkedin.com/feed/update/urn:li:activity:7161083292249669632/
+
+
 ### Transformers
 
 https://www.youtube.com/watch?v=3hL1KCI5iVY
