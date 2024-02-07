@@ -3,6 +3,8 @@
 
 Для господина, живущего в праздности, демонстративное потребление материальных ценностей есть средство достижения уважения. (Торстейн Веблен)
 
+Были бы мозги - было бы сотрясение
+
  https://web.whatsapp.com/  WhatsUp on web
 
 ### The most counterintuitive facts in all of mathematics, computer science, and physics
