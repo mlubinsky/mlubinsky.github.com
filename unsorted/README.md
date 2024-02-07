@@ -22,13 +22,16 @@ https://hypermedia.systems/
 ### The Base16, Base32, and Base64 Data Encodings
 https://datatracker.ietf.org/doc/html/rfc4648
 
-### BAy Area
+### Bay Area
 https://tandcvillage.com/ Town and City Village
 
 Foothill 
 https://www.cityofpaloalto.org/Departments/Community-Services/Open-Space-Parks/Neighborhood-Parks/Foothills-Nature-Preserve
 
 ### Static Site generators
+
+https://news.ycombinator.com/item?id=39272953
+
 https://jamstack.org/generators/
 
 https://www.kytta.dev/blog/one-week-with-zola/
