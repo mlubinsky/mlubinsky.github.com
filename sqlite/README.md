@@ -84,6 +84,9 @@ connection.row_factory = sqlite3.Row
 ```
 
 ### GUI
+
+https://sqlitebrowser.org/
+
 https://github.com/sqlitebrowser/sqlitebrowser
 
 https://github.com/little-brother/sqlite-gui
