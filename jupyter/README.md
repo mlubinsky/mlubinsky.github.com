@@ -1,5 +1,6 @@
 https://arrow.apache.org/datafusion/user-guide/introduction.html  Apache DataFusion 
 
+https://github.com/DataForScience/   Interesting jupyter notebooks to study
 
 ### Data Science Portfolio
 
