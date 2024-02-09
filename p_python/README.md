@@ -31,6 +31,14 @@ https://hakibenita.com/fast-excel-python
 
 sys.path.append(os.getcwd())
 
+### Any
+
+Check what string has no specific values:
+
+if not any(value in line for value in ("StatusRequest", "StatusResponse")):
+
+if "StatusRequest" not in line and "StatusResponse" not in line:
+
 ### Data Tools
 
 https://www.jetbrains.com/dataspell/ JetBrains
