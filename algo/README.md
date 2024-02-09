@@ -1,5 +1,8 @@
 https://the-algorithms.com/
 
+Data Structures for Data-Intensive apps:
+https://cs-people.bu.edu/mathan/publications/fnt23-athanassoulis.pdf 
+
 https://habr.com/ru/articles/743800/  Bloom Filter,  Count-Min Sketch, HyperLogLog
 
 https://codeconfessions.substack.com/p/cpython-bloom-filter-usage
