@@ -74,6 +74,12 @@ https://habr.com/ru/post/546956/
 <https://cyberchris.xyz/posts/awk-and-gnuplot/>
 
 
+###  Small application that plots lines that are sent to the application's stdin
+
+ https://branc116.github.io/brplot/
+ 
+ https://github.com/branc116/brplot
+
 ### Bokeh
 
 https://habr.com/ru/company/skillfactory/blog/526076/
