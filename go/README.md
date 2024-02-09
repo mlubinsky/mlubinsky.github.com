@@ -8,6 +8,10 @@ https://habr.com/ru/articles/786826/  100 GO interview questions
 
 https://tour.ardanlabs.com/tour/eng/list
 
+How I write HTTP services in Go:
+https://grafana.com/blog/2024/02/09/how-i-write-http-services-in-go-after-13-years/
+https://news.ycombinator.com/item?id=39318867
+
 https://bitfieldconsulting.com/golang/tao-of-go
 
 Build web site with go:
