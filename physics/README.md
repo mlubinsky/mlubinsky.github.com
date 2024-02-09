@@ -17,6 +17,8 @@ https://www.facebook.com/victor.galitski
 
 https://acephysics.net/
 
+https://nicf.net/articles/physics-for-mathematicians/
+
 ### Spinors
 
 https://www.youtube.com/playlist?list=PLJHszsWbB6hoOo_wMb0b6T44KM_ABZtBs
