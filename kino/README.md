@@ -3,6 +3,9 @@
 https://www.facebook.com/groups/831245680230275/?hoisted_section_header_type=recently_seen&multi_permalinks=6787237647964352
 
 ### Михаил Щербаков
+
+https://mkshch.com/ 
+
 https://www.youtube.com/channel/UCaakOudYE7Eh50W7lOEJYfw
 
 ### Elizarov 
@@ -352,8 +355,6 @@ https://ahiin.livejournal.com/302541.html
 
 ## Music
 
-Михаил Щербаков
-https://mkshch.com/ 
 
 https://www.last.fm/ru/music/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB+%D0%A9%D0%B5%D1%80%D0%B1%D0%B0%D0%BA%D0%BE%D0%B2
 <https://www.youtube.com/watch?v=_TeyBKMITqs> . Egorov
