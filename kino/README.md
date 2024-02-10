@@ -2,6 +2,9 @@
 
 https://www.facebook.com/groups/831245680230275/?hoisted_section_header_type=recently_seen&multi_permalinks=6787237647964352
 
+### Михаил Щербаков
+https://www.youtube.com/channel/UCaakOudYE7Eh50W7lOEJYfw
+
 ### Elizarov 
 
 https://www.elizarov.info/
