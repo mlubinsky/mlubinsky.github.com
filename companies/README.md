@@ -1,14 +1,14 @@
 https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
-nvidia 
-amd 
-arm 
-cisco 
-comcast 
-verizon 
-netflix 
-bitedance 
-applied materials 
+nvidia  
+amd   
+arm   
+cisco   
+comcast   
+verizon  
+netflix  
+bitedance   
+applied materials   
 yahoo 
 
 1. Quest Software - https://Inkd.in/gqaB5RTN
