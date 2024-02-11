@@ -3,6 +3,9 @@ https://airflowsummit.org/sessions/2023/introducing-airflowctl/
 pip install airflow ctl
 https://github.com/kaxil/airflowctl
 
+ Airflow: как повысить стабильность загрузки данных в 5 раз
+https://habr.com/ru/articles/792872/
+
 
 ### Mage, prefect, Dagster, AWS Step function, AWS Glue
 https://www.mage.ai/
