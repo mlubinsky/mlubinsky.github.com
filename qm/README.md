@@ -176,6 +176,8 @@ http://www.physics.umd.edu/courses/Phys401/bedaque07/misconnzz.pdf Common Miscon
 
 ### Relativistic QM
 
+https://ufn.ru/ru/articles/2022/1/e/  Открытие релятивистского уравнения Шрёдингера
+
 https://www.youtube.com/playlist?list=PLbMVogVj5nJTDMhThY9xu2Tvg0u1RPuxO
 
 ### 
