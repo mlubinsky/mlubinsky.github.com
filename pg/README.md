@@ -2,7 +2,7 @@ Postgres is enough:
 
 https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb
 
-
+MERGE: https://habr.com/ru/companies/otus/articles/792396/
 
 https://www.youtube.com/watch?v=i1HYbATmWaw
 
