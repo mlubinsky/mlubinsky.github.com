@@ -7,50 +7,23 @@ Majority element https://github.com/NaughtyConstrictor/From-Majority-to-Frequent
 
 ### links
 
+9) Path to Senior Engineer Handbook by Jordan Cutler  https://lnkd.in/exkJCxVi
 
-9) Path to Senior Engineer Handbook by Jordan Cutler
+8) Tech interview handbook by Yangshun Tay https://lnkd.in/e7EjsJNF
 
-https://lnkd.in/exkJCxVi
+7) You don't know JavaScript by Kyle Simpson https://lnkd.in/eua7KvPC
 
+6) Papers we love https://lnkd.in/eGcbN9RR
 
-8) Tech interview handbook by Yangshun Tay
+5) System design primer https://lnkd.in/eFyMhK6Z
 
-https://lnkd.in/e7EjsJNF
+4) Developer roadmap https://lnkd.in/e9MuB_Yg
 
+3) Freecodecamp https://lnkd.in/e_4pA8xV
 
-7) You don't know JavaScript by Kyle Simpson
+2) Free programming books https://lnkd.in/eXAzAJ3M
 
-https://lnkd.in/eua7KvPC
-
-
-6) Papers we love
-
-https://lnkd.in/eGcbN9RR
-
-
-5) System design primer
-
-https://lnkd.in/eFyMhK6Z
-
-
-4) Developer roadmap
-
-https://lnkd.in/e9MuB_Yg
-
-
-3) Freecodecamp
-
-https://lnkd.in/e_4pA8xV
-
-
-2) Free programming books
-
-https://lnkd.in/eXAzAJ3M
-
-
-1) Web development for beginners by Microsoft
-
-https://lnkd.in/evM43KHy
+1) Web development for beginners by Microsoft https://lnkd.in/evM43KHy
 
 ### System design 
 
@@ -105,16 +78,7 @@ https://engineering.fb.com/2023/06/27/developer-tools/meta-developer-tools-open-
 
 https://www.youtube.com/watch?v=GLTR39VIAdc Datas Structures and Algo
 
-### Recommendation systems
-https://habr.com/ru/articles/773126/
 
-https://habr.com/ru/companies/otus/articles/764680/  recommendation system
-
-https://habr.com/ru/companies/otus/articles/764222/  recommendation system
-
-
-
--
 
 ✅ 𝐂𝐨𝐝𝐢𝐧𝐠 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰
 👉 Solve LeetCode medium-level problems (at least more than 250+ covering different topics)
@@ -194,7 +158,9 @@ int findAnyRepeatedNumber(int[] arr) {
 }
 ```
 
-### Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string's permutations is the substring of the second string.
+### Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. 
+
+In other words, one of the first string's permutations is the substring of the second string.
 ```
 # Examples:
 
