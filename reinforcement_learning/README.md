@@ -4,6 +4,8 @@ https://arxiv.org/pdf/2304.00803.pdf A Tutorial Introduction to Reinforcement Le
 
 https://arxiv.org/pdf/2211.17217.pdf Tutorial on Neural Networks and Gradient-free Training
 
+Tutorial on the Spectral Theory of Markov Chains https://arxiv.org/pdf/2207.02296.pdf
+
 https://habr.com/ru/articles/789218/
 
 https://www.youtube.com/watch?v=2pWv7GOvuf0
