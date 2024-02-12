@@ -2,6 +2,13 @@ https://arrow.apache.org/datafusion/user-guide/introduction.html  Apache DataFus
 
 https://github.com/DataForScience/   Interesting jupyter notebooks to study
 
+### Export Jupyter notebooks to other formats
+
+https://nbconvert.readthedocs.io/en/latest/usage.html#supported-output-formats
+
+jupyter nbconvert --to FORMAT notebook.ipynb
+
+FORMAT can be : html, pdf, etc
 
 ### SQL from Jupyter notebooks
 
