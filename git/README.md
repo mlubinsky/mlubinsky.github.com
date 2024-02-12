@@ -64,6 +64,7 @@ https://news.ycombinator.com/item?id=38942892
 https://news.ycombinator.com/item?id=36768334
 
 ### Pre-commit
+https://www.elliotjordan.com/posts/pre-commit-01-intro/
 
 https://pre-commit.com/
 
