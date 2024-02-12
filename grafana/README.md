@@ -7,12 +7,15 @@ https://habr.com/ru/companies/ozontech/articles/774712/
 
 
 ### Tooltip customization
+
+1. 
 https://stackoverflow.com/questions/77984607/how-to-add-extra-info-in-tooltips-on-grafana-time-series-dashboard-based-on-sql
 
+2.
 https://community.grafana.com/t/how-to-add-extra-info-in-tooltips-on-grafana-time-series-dashboard-based-on-sql/114297
-
-
-https://github.com/grafana/grafana/issues/73989
+ 
+3.  
+ https://github.com/grafana/grafana/issues/73989
 
 ### Datasource as variable, repeat and other Grafana tricks
 
