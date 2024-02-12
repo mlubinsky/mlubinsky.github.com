@@ -1,8 +1,11 @@
 https://thekalmanfilter.com/kalman-filter-explained-simply/
+https://news.ycombinator.com/item?id=39343746
 
 https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
 
 https://praveshkoirala.com/2023/06/13/a-non-mathematical-introduction-to-kalman-filters-for-programmers/
+
+https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python/
 
 https://news.ycombinator.com/item?id=36971975
 
