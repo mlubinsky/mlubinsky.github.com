@@ -25,6 +25,11 @@ https://news.ycombinator.com/item?id=37391161
 
 ## Kuramoto
 
+https://arxiv.org/pdf/2402.06442.pdf
+
+https://arxiv.org/pdf/2110.06966.pdf : A strongly-damped
+oscillator, a weakly-damped oscillator and an undamped oscillator (integrator) driven by noise.
+
  https://github.com/fabridamicelli/kuramoto
 
  https://arxiv.org/pdf/2306.14928.pdf
