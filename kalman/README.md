@@ -1,4 +1,7 @@
 https://thekalmanfilter.com/kalman-filter-explained-simply/
+
+https://www.youtube.com/watch?v=CaCcOwJPytQ
+
 https://news.ycombinator.com/item?id=39343746
 
 https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
