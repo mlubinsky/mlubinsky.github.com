@@ -2,6 +2,46 @@ https://arrow.apache.org/datafusion/user-guide/introduction.html  Apache DataFus
 
 https://github.com/DataForScience/   Interesting jupyter notebooks to study
 
+
+### SQL from Jupyter notebooks
+
+https://github.com/ploomber/jupysql
+
+https://jupysql.ploomber.io/
+
+https://habr.com/ru/companies/wunderfund/articles/792970/
+
+pip install jupysql sqlalchemy-redshift redshift-connector 'sqlalchemy<2'
+
+ следующий фрагмент кода для создания объекта sqlalchemy.engine для Redshift:
+```
+from os import environ
+from sqlalchemy import create_engine
+from sqlalchemy.engine import URL
+ 
+user = environ["REDSHIFT_USERNAME"]
+password = environ["REDSHIFT_PASSWORD"]
+host = environ["REDSHIFT_HOST"]
+ 
+url = URL.create(
+    drivername="redshift+redshift_connector",
+    username=user,
+    password=password,
+    host=host,
+    port=5439,
+    database="dev",
+)
+ 
+engine = create_engine(url)
+
+%sql engine --alias redshift-sqlalchemy
+```
+
+С этого момента всё выглядит крайне просто — берём «магическую» команду и пишем любые запросы, которые нужно выполнить. Их результаты попадут в выходные данные ячейки:
+
+%sql
+SELECT * FROM public.ecommerce_purchases WHERE product_id = 123
+
 ### Data Science Portfolio
 
 https://dagshub.com/kingabzpro
