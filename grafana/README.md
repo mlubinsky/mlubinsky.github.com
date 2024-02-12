@@ -5,6 +5,13 @@ https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 
 https://habr.com/ru/companies/ozontech/articles/774712/
 
+
+### Tooltip customization
+
+https://community.grafana.com/t/how-to-add-extra-info-in-tooltips-on-grafana-time-series-dashboard-based-on-sql/114297
+
+https://github.com/grafana/grafana/issues/73989
+
 ### Datasource as variable, repeat and other Grafana tricks
 
 https://habr.com/ru/companies/karuna/articles/771134/
