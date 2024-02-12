@@ -1,3 +1,5 @@
+https://thekalmanfilter.com/kalman-filter-explained-simply/
+
 https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
 
 https://praveshkoirala.com/2023/06/13/a-non-mathematical-introduction-to-kalman-filters-for-programmers/
