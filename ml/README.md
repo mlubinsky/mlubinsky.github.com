@@ -2,6 +2,9 @@ https://physicsbaseddeeplearning.org/intro.html . BOOK
 
 https://habr.com/ru/articles/783766/ interview
 
+
+Feature Selection Tutorial with Python Examples https://arxiv.org/pdf/2106.06437.pdf
+
 ### ML Notebooks
 
 https://github.com/ageron/handson-ml3
