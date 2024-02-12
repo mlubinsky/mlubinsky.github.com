@@ -1,5 +1,7 @@
 https://discord.com/invite/BCfHWaSMkr Aleksei Petrenko
 
+https://arxiv.org/pdf/2304.00803.pdf A Tutorial Introduction to Reinforcement Learning
+
 https://habr.com/ru/articles/789218/
 
 https://www.youtube.com/watch?v=2pWv7GOvuf0
