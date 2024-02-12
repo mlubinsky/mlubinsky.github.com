@@ -1,13 +1,14 @@
 https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
 nvidia  
+adobe
 amd   
 arm   
 cisco   
 comcast   
 verizon  
 netflix  
-bitedance   
+bytedance   
 applied materials   
 yahoo 
 
@@ -69,3 +70,29 @@ yahoo
 56. Affordmate - http://www.affordmate.com
 57. Xapobank - http://www.xapobank.com
 58. Symetra - http://www.symetra.com
+
+
+### No clear objective. 
+
+If I have to guess what you want to do or sort through a busy "personal statement", I won’t make it to the end. Also, remove “happy words” like "highly motivated" and "quick learner" from your resume and state clearly what you want to do so I know if you fit the role. 
+
+### No impact / No data. 
+
+Writing “what you do” inevitably makes you look junior. "Created reports" reads as "paper pusher" and "developed XYZ module" is hardly any better.
+
+Tell me why your work mattered with numbers: 
+
+- How much money did you generate?
+- How much faster/more reliable/better was the system you developed?
+
+“Doers” get hired to take orders and do while people who make an impact get hired to make a difference. The latter pays a whole lot better. 
+
+This point is another place where it is worth mentioning “Happy Words”. We often feel we must write that we are a "Collaborative, diligent worker" or a "Motivated self-starter", etc. 
+
+Recruiters skip right past all that to see what you have DONE. Focus on the impact you can deliver and explain it in numbers. SHOWING that you are all of those “happy words” through your clear results is much stronger than claiming it in words.
+
+### Words. 
+
+FAR TOO MANY. 
+
+We feel that if the reader would just understand us and our struggles, they would hire us. But the reader is not there to care about our lives. They are there to answer a simple question: will this person accomplish what I need them to?
