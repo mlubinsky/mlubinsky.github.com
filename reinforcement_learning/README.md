@@ -2,6 +2,8 @@ https://discord.com/invite/BCfHWaSMkr Aleksei Petrenko
 
 https://arxiv.org/pdf/2304.00803.pdf A Tutorial Introduction to Reinforcement Learning
 
+https://arxiv.org/pdf/2211.17217.pdf Tutorial on Neural Networks and Gradient-free Training
+
 https://habr.com/ru/articles/789218/
 
 https://www.youtube.com/watch?v=2pWv7GOvuf0
