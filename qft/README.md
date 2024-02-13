@@ -42,6 +42,7 @@ https://www.youtube.com/watch?v=060Sa1-MYok Александр Чирцов — 
 
 https://www.youtube.com/playlist?list=PLUbD59ZHv1GTIeCSh63ymQ8x62TMfeyyw 2022 г. А.С. Шварц. Квантовая механика и квантовая теория поля. Алгебраический и геометрический подходы. Весенний семестр
 
+https://arxiv.org/pdf/2207.02243
 
 https://www.youtube.com/watch?v=50miSAp4eGY . Фейгельман М.В.
 
