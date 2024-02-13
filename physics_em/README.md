@@ -112,8 +112,7 @@ the full identity is demonstrated between the Feynman formula for the field of a
 and the Lienard-Wiechert potentials.
 
 
-Why the interpretation of “Measuring
-propagation speed of Coulomb fields” stands
+Why the interpretation of “Measuring propagation speed of Coulomb fields” stands
 
 R. de Sangro, G. Finocchiaro, P. Patteri, M. Piccolo, G. Pizzella
 October 18, 2018
@@ -158,39 +157,7 @@ https://www.jpier.org/pierm/pier.php?paper=13101401
 https://physics.princeton.edu/~mcdonald/examples/onoochin.pdf
 
 
-### QFT
 
-https://gcher.com/posts/2023-04-16-an-intuitive-explanation-of-quantum-field-theory/
-
-https://arxiv.org/pdf/2203.01245.pdf
-
-Введение в квантовую теорию поля 1 Казаков Д.
-https://www.youtube.com/watch?v=KVX5lHZWZGE
-
-
-https://www.youtube.com/watch?v=My981dYqZ_g Введение в квантовую теорию поля 2 Владимиров А.А.
-
-
-Интегрируемые модели квантовой теории поля. Лекция 1. М.Ю. Лашкевич.
-https://www.youtube.com/watch?v=QV1vew31YcU
-
-
-https://www.youtube.com/watch?v=060Sa1-MYok Александр Чирцов — На стыке квантовой механики и релятивистской теории
-
-https://www.youtube.com/playlist?list=PLUbD59ZHv1GTIeCSh63ymQ8x62TMfeyyw 2022 г. А.С. Шварц. Квантовая механика и квантовая теория поля. Алгебраический и геометрический подходы. Весенний семестр
-
-
-https://www.youtube.com/watch?v=50miSAp4eGY . Фейгельман М.В.
-
-
-Профессор Миннесотского университета, США Михаил Шифман - Вторая жизнь квантовой теории поля
-https://www.youtube.com/watch?v=rRBvo80Ym-E
-
-https://www.youtube.com/watch?v=SMdgiWi6cgk . Павел Шестопалов
-
-https://www.youtube.com/watch?v=bxyTCiJ0t14 . ЗЛОЙ АНАЛИТИК ВСЕЛЕННОЙ.
-
-https://www.youtube.com/watch?v=zNVQfWC_evg   Quantum Fields: The Real Building Blocks of the Universe - with David Tong
 
 
 ### Eugene Stefanovich
