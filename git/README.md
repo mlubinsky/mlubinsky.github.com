@@ -1,5 +1,8 @@
 https://jvns.ca/blog/2024/02/01/dealing-with-diverged-git-branches/
 
+https://news.ycombinator.com/item?id=39356042
+
+https://blog.gitbutler.com/git-tips-and-tricks/
 
 alias gfp="git commit --amend --no-edit && git push --force-with-lease"
 
