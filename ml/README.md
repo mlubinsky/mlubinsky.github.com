@@ -8,6 +8,14 @@ Feature Selection Tutorial with Python Examples https://arxiv.org/pdf/2106.06437
 https://arxiv.org/pdf/1905.12787.pdf  The Theory Behind Overfitting, Cross Validation,
 Regularization, Bagging, and Boosting: Tutorial
 
+
+
+Machine Learning Phystech
+https://www.youtube.com/@MachineLearningIS
+
+Доп. главы машинного обучения, Карпачёв Н.Е.
+https://www.youtube.com/watch?v=Cs5NuVseHxU
+
 ### ML Notebooks
 
 https://github.com/ageron/handson-ml3
