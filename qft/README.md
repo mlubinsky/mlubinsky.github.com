@@ -15,3 +15,7 @@ https://www.youtube.com/watch?v=OWP-pZ6A90s best book for quantum field theory
 
 Введение в квантовую теорию поля. Лосяков В. В. Дунин-Барковский П. И. 
 https://www.youtube.com/playlist?list=PLq3E5oubNNoCpooUUfq93XJBXUPhv8tkq
+
+
+https://www.lektorium.tv/node/38964 Квантовая теория поля как задача по теории операторов. 	
+Николай Филонов
