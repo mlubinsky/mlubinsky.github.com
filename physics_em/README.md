@@ -5,6 +5,10 @@ https://www.feynmanlectures.caltech.edu/II_21.html
 
 https://ufn.ru/ru/articles/1988/9/e/ Специальная теория относительности и эффект Саньяка
 
+A Tutorial on the Classical Theories of Electromagnetic Scattering and Diffraction
+Masud Mansuripur
+https://arxiv.org/ftp/arxiv/papers/2009/2009.06706.pdf
+
 https://peeterjoot.com/
 
 ### Why is Maxwell's theory so hard to understand?  Dyson
