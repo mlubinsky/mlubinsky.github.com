@@ -60,3 +60,7 @@ https://visualpde.com/
 https://www.youtube.com/@MrPSolver
 
 https://www.youtube.com/@BestDamnTutoring/videos
+
+
+Advanced Optimization Tutorial
+https://arxiv.org/pdf/2007.13545.pdf
