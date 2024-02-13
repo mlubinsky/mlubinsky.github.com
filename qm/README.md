@@ -61,21 +61,14 @@ https://www.cphysics.org/
 https://www.youtube.com/watch?v=5Z2RnlZkGRM&list=PLti61wgkUWHxVJwqQgAWcMnmg1Uopuu-k&index=1&t=472s
 
 
-### QFT Квантовая теория поля 2022-2023
-Введение в квантовую теорию поля Московский Физико-Технический Институт, Весна 2017
-https://poboiko.bitbucket.io/qft/fall17/
-
-https://sites.google.com/view/qft2023/
  
-https://www.youtube.com/watch?v=OWP-pZ6A90s  best book for quantum field theory
 
 ### Lectures
- Введение в квантовую теорию поля.  Лосяков В. В. Дунин-Барковский П. И.
-https://www.youtube.com/playlist?list=PLq3E5oubNNoCpooUUfq93XJBXUPhv8tkq
+ 
 
-https://www.youtube.com/playlist?list=PLthfp5exSWErBIoHpaPV77pq8kHHIeWu4
+https://www.youtube.com/playlist?list=PLthfp5exSWErBIoHpaPV77pq8kHHIeWu4 Лекции по курсу "Современные проблемы теоретической физик
 
-https://www.youtube.com/playlist?list=PLHyI3Fbmv0Sem-xmU7PHh61zhjvttWidT
+https://www.youtube.com/playlist?list=PLHyI3Fbmv0Sem-xmU7PHh61zhjvttWidT Tutorials: Advancing Quantum Mechanics with Mathematics and
 
 https://www.youtube.com/watch?v=42TYj0C4zzg&list=PLqdhXM8ko4WEFhN5uw8lFnR1jM9MfZgzm Чирцов Александр:  
 
@@ -147,8 +140,7 @@ https://www.youtube.com/watch?v=8GA_52Y_3EY
 Яшин Всеволод
 https://mipt.ru/education/chairs/fpfkt/downloads/sciseminar/2019_spring/%D0%AF%D1%88%D0%B8%D0%BD_%D0%92%D1%81%D0%B5%D0%B2%D0%BE%D0%BB%D0%BE%D0%B4_%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BB%D0%BE%D0%B3%D0%B8%D0%BA%D0%B0.pdf
 
-https://www.lektorium.tv/node/38964 Квантовая теория поля как задача по теории операторов. 	
-Николай Филонов
+
 
 https://arxiv.org/pdf/2208.07433.pdf Exact solutions
 
