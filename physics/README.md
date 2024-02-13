@@ -23,6 +23,8 @@ https://nicf.net/articles/physics-for-mathematicians/
 МЕХАНИКА И ТЕОРИЯ ОТНОСИТЕЛЬНОСТИ Задачи семинарских занятий с решениями
 https://arxiv.org/pdf/1711.01670.pdf
 
+https://nicf.net/articles/physics-for-mathematicians/
+
 ### Spinors
 
 https://www.youtube.com/playlist?list=PLJHszsWbB6hoOo_wMb0b6T44KM_ABZtBs
