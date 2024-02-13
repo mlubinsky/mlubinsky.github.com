@@ -15,6 +15,12 @@ https://math.stackexchange.com/questions/3568428/get-1-3-probability-from-a-coin
 
 ### Generalized Fourier transform
 
+Вьюгин И.В. Анализ Фурье. Весна 2023.
+
+https://www.youtube.com/playlist?list=PLq3E5oubNNoCrTxwEvUuMrhv2kqHW4cJx  
+
+
+
 https://see.stanford.edu/Course/EE261/137
 
 https://news.ycombinator.com/item?id=35582084
