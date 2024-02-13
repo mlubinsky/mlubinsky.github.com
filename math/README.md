@@ -23,6 +23,8 @@ http://gabarro.org/ccn/gen_fourier.html
 
 
 ### Lie groups
+Lie Groups and their applications to Particle Physics: A Tutorial for Undergraduate Physics Majors
+https://arxiv.org/pdf/2012.00834.pdf
 
  https://www.youtube.com/watch?v=ZRca3Ggpy_g
 
