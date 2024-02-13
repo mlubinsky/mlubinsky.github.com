@@ -1,7 +1,8 @@
 https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
+https://openai.com/careers/hwsw-co-design-engineer  
 nvidia  
-adobe
+adobe 
 amd   
 arm   
 cisco   
