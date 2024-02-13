@@ -4,8 +4,16 @@ https://github.com/osscar-org/quantum-mechanics
 
 https://medium.com/@natsunoyuki/quantum-mechanics-with-python-de2a7f8edd1f
 
-Quantum Interactive Learning Tutorials (QuILTs)
+### Quantum Interactive Learning Tutorials (QuILTs)
+
 https://www.physport.org/curricula/QuILTs/
+
+https://arxiv.org/pdf/1602.04869.pdf
+
+https://arxiv.org/ftp/arxiv/papers/1602/1602.06162.pdf
+
+https://arxiv.org/pdf/1603.03108.pdf
+
 
 https://arxiv.org/pdf/2303.16449.pdf Python Tips and tricks for quantum optics, quantum computing and beyond
 
