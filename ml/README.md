@@ -5,6 +5,9 @@ https://habr.com/ru/articles/783766/ interview
 
 Feature Selection Tutorial with Python Examples https://arxiv.org/pdf/2106.06437.pdf
 
+https://arxiv.org/pdf/1905.12787.pdf  The Theory Behind Overfitting, Cross Validation,
+Regularization, Bagging, and Boosting: Tutorial
+
 ### ML Notebooks
 
 https://github.com/ageron/handson-ml3
