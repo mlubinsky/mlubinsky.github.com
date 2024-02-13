@@ -6,6 +6,8 @@ https://medium.com/@natsunoyuki/quantum-mechanics-with-python-de2a7f8edd1f
 
 ### Quantum Interactive Learning Tutorials (QuILTs)
 
+https://arxiv.org/ftp/arxiv/papers/1509/1509.07740.pdf
+
 https://www.physport.org/curricula/QuILTs/
 
 https://arxiv.org/pdf/1602.04869.pdf
