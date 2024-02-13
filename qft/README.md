@@ -19,3 +19,38 @@ https://www.youtube.com/playlist?list=PLq3E5oubNNoCpooUUfq93XJBXUPhv8tkq
 
 https://www.lektorium.tv/node/38964 Квантовая теория поля как задача по теории операторов. 	
 Николай Филонов
+
+
+### QFT
+
+https://gcher.com/posts/2023-04-16-an-intuitive-explanation-of-quantum-field-theory/
+
+https://arxiv.org/pdf/2203.01245.pdf
+
+Введение в квантовую теорию поля 1 Казаков Д.
+https://www.youtube.com/watch?v=KVX5lHZWZGE
+
+
+https://www.youtube.com/watch?v=My981dYqZ_g Введение в квантовую теорию поля 2 Владимиров А.А.
+
+
+Интегрируемые модели квантовой теории поля. Лекция 1. М.Ю. Лашкевич.
+https://www.youtube.com/watch?v=QV1vew31YcU
+
+
+https://www.youtube.com/watch?v=060Sa1-MYok Александр Чирцов — На стыке квантовой механики и релятивистской теории
+
+https://www.youtube.com/playlist?list=PLUbD59ZHv1GTIeCSh63ymQ8x62TMfeyyw 2022 г. А.С. Шварц. Квантовая механика и квантовая теория поля. Алгебраический и геометрический подходы. Весенний семестр
+
+
+https://www.youtube.com/watch?v=50miSAp4eGY . Фейгельман М.В.
+
+
+Профессор Миннесотского университета, США Михаил Шифман - Вторая жизнь квантовой теории поля
+https://www.youtube.com/watch?v=rRBvo80Ym-E
+
+https://www.youtube.com/watch?v=SMdgiWi6cgk . Павел Шестопалов
+
+https://www.youtube.com/watch?v=bxyTCiJ0t14 . ЗЛОЙ АНАЛИТИК ВСЕЛЕННОЙ.
+
+https://www.youtube.com/watch?v=zNVQfWC_evg   Quantum Fields: The Real Building Blocks of the Universe - with David Tong
