@@ -56,8 +56,8 @@ https://www.youtube.com/watch?v=5Z2RnlZkGRM&list=PLti61wgkUWHxVJwqQgAWcMnmg1Uopu
 
 
 ### QFT Квантовая теория поля 2022-2023
-
-
+Введение в квантовую теорию поля Московский Физико-Технический Институт, Весна 2017
+https://poboiko.bitbucket.io/qft/fall17/
 
 https://sites.google.com/view/qft2023/
  
