@@ -1,8 +1,11 @@
 https://habr.com/ru/companies/macloud/articles/555522/ 
 
+Пятов П. Н. Сапонов П. А. Математические основы квантовой
 https://www.youtube.com/playlist?list=PLti61wgkUWHxVJwqQgAWcMnmg1Uopuu-k Zaigraev (ru)
 
 mipt.lectoriy.ru/lecturer/KiselevVV/lectures
+
+https://www.youtube.com/playlist?list=PLq3E5oubNNoB3fjQzUYM7nbJmwv6Q2MHG
 
 https://arxiv.org/pdf/1110.6815.pdf The modern tools of quantum mechanics
 
