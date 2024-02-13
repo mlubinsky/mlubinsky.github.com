@@ -4,6 +4,8 @@ https://www.youtube.com/playlist?list=PLti61wgkUWHxVJwqQgAWcMnmg1Uopuu-k Zaigrae
 
 mipt.lectoriy.ru/lecturer/KiselevVV/lectures
 
+https://arxiv.org/pdf/1110.6815.pdf The modern tools of quantum mechanics
+
 https://www.youtube.com/playlist?list=PLq3E5oubNNoB3fjQzUYM7nbJmwv6Q2MHG  math foundation of QM
 
 This playlist will help you get a strong foundation in quantum physics, covering essential topics and concepts. The videos are organized in a logical sequence, starting with introductory content and progressing to more advanced topics. Enjoy your marathon study session!
