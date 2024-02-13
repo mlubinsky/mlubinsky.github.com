@@ -57,11 +57,15 @@ https://www.youtube.com/watch?v=5Z2RnlZkGRM&list=PLti61wgkUWHxVJwqQgAWcMnmg1Uopu
 
 ### QFT Квантовая теория поля 2022-2023
 
+
+
 https://sites.google.com/view/qft2023/
  
 https://www.youtube.com/watch?v=OWP-pZ6A90s  best book for quantum field theory
 
 ### Lectures
+ Введение в квантовую теорию поля.  Лосяков В. В. Дунин-Барковский П. И.
+https://www.youtube.com/playlist?list=PLq3E5oubNNoCpooUUfq93XJBXUPhv8tkq
 
 https://www.youtube.com/playlist?list=PLthfp5exSWErBIoHpaPV77pq8kHHIeWu4
 
