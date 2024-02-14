@@ -13,6 +13,9 @@ A Tutorial on the Classical Theories of Electromagnetic Scattering and Diffracti
 Masud Mansuripur
 https://arxiv.org/ftp/arxiv/papers/2009/2009.06706.pdf
 
+https://arxiv.org/pdf/1204.3077.pdf  Magnetic Monopoles
+The gauge symmetry of Maxwell’s equations is known mathematically as U(1). 
+
 https://peeterjoot.com/
 
 ### Why is Maxwell's theory so hard to understand?  Dyson
