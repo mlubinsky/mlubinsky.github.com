@@ -1,3 +1,24 @@
+```
+From a general point of view, we need three ingredients:
+• a space of states, that we denote as S,
+• a space of observables, that we denote as O and
+• a real valued pairing O×S → R. This pairing, which produces a real
+number out of an observable and a state, represents the measuring
+operation.
+
+In Quantum Mechanics, we have two main pictures.
+
+• in the Schreodinger picture, S is associated with a Hilbert space H and
+the set of dynamical variables (the observables) is a derived concept.
+Observables are identified with self-adjoint bounded operators on H.
+
+• in the Heisenberg picture the situation is complementary: the set of
+dynamical variables (the observables) is the primary concept. They
+are assumed to be (the real part) of a C∗ -algebra A. The states, on
+the other hand, are a derived concept defined as a proper subset of
+the set of linear functionals on A.
+```
+
 https://habr.com/ru/companies/macloud/articles/555522/ 
 
 Пятов П. Н. Сапонов П. А. Математические основы квантовой
@@ -20,6 +41,8 @@ https://arxiv.org/pdf/1201.4234.pdf
 https://arxiv.org/pdf/0812.0721.pdf
 
 https://arxiv.org/pdf/0804.3728.pdf
+
+https://arxiv.org/pdf/0707.3539.pdf
 
 ### Stat phys
 https://arxiv.org/pdf/1109.2475.pdf Stat Physics
