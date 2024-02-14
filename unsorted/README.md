@@ -32,7 +32,10 @@ https://tandcvillage.com/ Town and City Village
 Foothill 
 https://www.cityofpaloalto.org/Departments/Community-Services/Open-Space-Parks/Neighborhood-Parks/Foothills-Nature-Preserve
 
-### Static Site generators
+### Static Site generators: 
+https://quarto.org/ is the best
+
+https://news.ycombinator.com/item?id=39367103
 
 https://news.ycombinator.com/item?id=39272953
 
