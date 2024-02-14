@@ -4,11 +4,11 @@ https://github.com/osscar-org/quantum-mechanics
 
 https://medium.com/@natsunoyuki/quantum-mechanics-with-python-de2a7f8edd1f
 
-### Quantum Interactive Learning Tutorials (QuILTs)
+### Quantum Interactive Learning Tutorials (QuILTs) uses Java
 
 https://arxiv.org/ftp/arxiv/papers/1509/1509.07740.pdf
 
-https://www.physport.org/curricula/QuILTs/
+https://www.physport.org/curricula/QuILTs/ install from here: Java
 
 https://arxiv.org/pdf/1602.04869.pdf
 
