@@ -13,6 +13,8 @@ https://www.youtube.com/playlist?list=PLq3E5oubNNoB3fjQzUYM7nbJmwv6Q2MHG
 
 https://arxiv.org/pdf/1110.6815.pdf The modern tools of quantum mechanics
 
+https://arxiv.org/pdf/1211.5627.pdf A short introduction to the quantum formalism[s]
+
 https://arxiv.org/pdf/1109.2475.pdf Stat Physics
 
 
