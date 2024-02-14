@@ -17,6 +17,8 @@ https://arxiv.org/pdf/1211.5627.pdf A short introduction to the quantum formalis
 
 https://arxiv.org/pdf/1201.4234.pdf
 
+https://arxiv.org/pdf/0812.0721.pdf
+
 ### Stat phys
 https://arxiv.org/pdf/1109.2475.pdf Stat Physics
 
