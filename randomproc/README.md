@@ -124,6 +124,7 @@ https://arxiv.org/abs/1809.10756
 
 https://arxiv.org/pdf/cond-mat/0410490.pdf
 
+https://arxiv.org/pdf/2204.10145.pdf
 
 https://news.ycombinator.com/item?id=28941145 probabilistic programming 
 
