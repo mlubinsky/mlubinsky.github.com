@@ -1,11 +1,24 @@
 ### NetGear AX1800 WiFi 6 router 
 Serial: 6MA62954A0529 unevenmoon759
 
+###  NetGear ser manual
+ 
 https://www.downloads.netgear.com/files/GDC/RAX10/RAX10_UM_EN.pdf
 
 192.168.1.1 admin/V...7!
 
 https://kb.netgear.com/980/How-do-I-log-in-to-my-NETGEAR-router
+
+#### NetGear LEDs
+https://kb.netgear.com/24244/What-do-the-LEDs-on-my-NETGEAR-router-mean
+```
+1. Power LED
+2. Internet LED
+3.  USB LED
+4. Ethernet LED
+5. WPS
+6. 2.Ghz or 5 GHz wireless
+```
 
 ### ARRIS router: 10.0.0.1  admin/password1
 
