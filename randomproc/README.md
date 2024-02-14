@@ -124,6 +124,8 @@ https://sandipanweb.wordpress.com/2020/12/07/bayesian-machine-learning-mcmc-and-
 
 https://arxiv.org/pdf/0905.1629.pdf Monte Carlo in statphys
 
+https://arxiv.org/pdf/0803.0217.pdf Monte Carlo Ising Model
+
 https://projecteuclid.org/euclid.ss/1177011137 Markov Chain Monte Carlo article
 
 https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distributions-526b11a24359
