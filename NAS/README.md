@@ -14,10 +14,26 @@ https://kb.netgear.com/24244/What-do-the-LEDs-on-my-NETGEAR-router-mean
 ```
 1. Power LED
 2. Internet LED
-3.  USB LED
+
+3. WiFi LED
+
 4. Ethernet LED
+• Solid green. The router detected a 1 Gbps link with a device that is connected to
+one of the router's Ethernet ports.
+• Solid Amber. The router detected a 10/100 Mbps link with a device that is connected
+to one of the router's Ethernet ports.
+• Blinking green. One of the router's Ethernet ports is sending or receiving traffic at
+1 Gbps.
+• Blinking amber. One of the router's Ethernet ports is sending or receiving traffic
+at 10/100 Mbps.
+• Off. No device is connected to an Ethernet port.
+
 5. WPS
-6. 2.Ghz or 5 GHz wireless
+Pressing the WPS button on the back of the router lets your WPS-enabled device join
+your router's WiFi network without typing the WiFi password. The WPS LED blinks
+green during the WPS process and then lights solid green when the WPS-enabled
+device connects to your router's WiFi network.
+
 ```
 
 ### ARRIS router: 10.0.0.1  admin/password1
