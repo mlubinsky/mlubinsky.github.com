@@ -83,6 +83,8 @@ https://news.ycombinator.com/item?id=34439828
 
 https://mltechniques.com/resources/
 
+https://arxiv.org/pdf/1904.02539.pdf  Func analysis
+
 https://www.math.uci.edu/~rvershyn/teaching/2010-11/602/functional-analysis.pdf  Func analysys
 
 https://math.stackexchange.com/questions/302023/best-sets-of-lecture-notes-and-articles
