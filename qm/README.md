@@ -193,6 +193,8 @@ http://www.physics.umd.edu/courses/Phys401/bedaque07/misconnzz.pdf Common Miscon
 
 https://ufn.ru/ru/articles/2022/1/e/  Открытие релятивистского уравнения Шрёдингера
 
+https://arxiv.org/pdf/0708.0052.pdf
+
 https://www.youtube.com/playlist?list=PLbMVogVj5nJTDMhThY9xu2Tvg0u1RPuxO
 
 ### 
