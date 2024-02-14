@@ -313,6 +313,8 @@ https://www.crosstab.io/articles/survival-analysis-applications
 
 ### Z-score
 
+https://habr.com/ru/companies/otus/articles/793678/
+
 https://statisticsbyjim.com/basics/z-score
 
 ### Correlation
