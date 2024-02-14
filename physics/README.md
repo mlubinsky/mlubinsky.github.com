@@ -19,6 +19,11 @@ https://acephysics.net/
 
 https://nicf.net/articles/physics-for-mathematicians/
 
+### Special relativity
+https://arxiv.org/pdf/1508.01968.pdf
+
+<https://arxiv.org/abs/2002.12118> Simple Relativity Approach to Special Relativity
+
 З. К. Силагадзе
 МЕХАНИКА И ТЕОРИЯ ОТНОСИТЕЛЬНОСТИ Задачи семинарских занятий с решениями
 https://arxiv.org/pdf/1711.01670.pdf
@@ -803,7 +808,7 @@ MFTI
 
 <https://arxiv.org/list/physics.ed-ph/recent>
 
-<https://arxiv.org/abs/2002.12118> Simple Relativity Approach to Special Relativity
+
 
 <https://arxiv.org/abs/1001.1778> Understanding Quaternions and the Dirac Belt Trick
 
