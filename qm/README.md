@@ -40,6 +40,8 @@ https://arxiv.org/pdf/1110.6815.pdf The modern tools of quantum mechanics
 
 https://arxiv.org/pdf/1211.5627.pdf A short introduction to the quantum formalism[s]
 
+https://arxiv.org/pdf/1812.10732.pdf
+
 https://arxiv.org/pdf/1201.4234.pdf
 
 https://arxiv.org/pdf/0812.0721.pdf
