@@ -8,6 +8,9 @@ https://arxiv.org/pdf/2402.02119 An Introduction to Stochastic Partial Different
 
 https://arxiv.org/pdf/2111.13160
 
+https://arxiv.org/pdf/1008.1510.pdf  Elementary Introduction to the Wiener Process and
+Stochastic Integrals
+
 https://vk.com/physics_math
 
 http://wiki.cs.hse.ru/%D0%A1%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D1%8B%D0%B5_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B_(%D0%B7%D0%B8%D0%BC%D0%B0_2022)
