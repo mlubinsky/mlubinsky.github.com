@@ -19,6 +19,9 @@ the other hand, are a derived concept defined as a proper subset of
 the set of linear functionals on A.
 ```
 
+Pauli’s Exclusion Principle — No two electrons can share the same
+quantum numbers. https://arxiv.org/pdf/quant-ph/0511002.pdf
+
 https://habr.com/ru/companies/macloud/articles/555522/ 
 
 Пятов П. Н. Сапонов П. А. Математические основы квантовой
