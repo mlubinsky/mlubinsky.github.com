@@ -122,11 +122,14 @@ https://arxiv.org/abs/1809.10756
 
 https://arxiv.org/pdf/cond-mat/0410490.pdf
 
+
 https://news.ycombinator.com/item?id=28941145 probabilistic programming 
 
 https://sandipanweb.wordpress.com/2020/12/07/bayesian-machine-learning-mcmc-and-probabilistic-programming-with-python/
 
 https://arxiv.org/pdf/0905.1629.pdf Monte Carlo in statphys
+
+https://arxiv.org/pdf/cond-mat/0104167.pdf Monte Carlo in statphys
 
 https://arxiv.org/pdf/0803.0217.pdf Monte Carlo Ising Model
 
