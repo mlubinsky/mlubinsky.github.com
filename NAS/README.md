@@ -28,7 +28,7 @@ to one of the router's Ethernet ports.
 at 10/100 Mbps.
 • Off. No device is connected to an Ethernet port.
 
-5. WPS
+5. WPS : Wi-fi Protected Setup
 Pressing the WPS button on the back of the router lets your WPS-enabled device join
 your router's WiFi network without typing the WiFi password. The WPS LED blinks
 green during the WPS process and then lights solid green when the WPS-enabled
