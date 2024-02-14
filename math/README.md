@@ -29,6 +29,9 @@ http://gabarro.org/ccn/gen_fourier.html
 
 
 ### Lie groups
+
+https://arxiv.org/pdf/1911.01053.pdf Symmetries of Ordinary Differential Equations
+
 Lie Groups and their applications to Particle Physics: A Tutorial for Undergraduate Physics Majors
 https://arxiv.org/pdf/2012.00834.pdf
 
