@@ -122,6 +122,7 @@ https://news.ycombinator.com/item?id=28941145 probabilistic programming
 
 https://sandipanweb.wordpress.com/2020/12/07/bayesian-machine-learning-mcmc-and-probabilistic-programming-with-python/
 
+https://arxiv.org/pdf/0905.1629.pdf Monte Carlo in statphys
 
 https://projecteuclid.org/euclid.ss/1177011137 Markov Chain Monte Carlo article
 
