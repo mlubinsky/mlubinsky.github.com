@@ -55,7 +55,9 @@ https://www.youtube.com/watch?v=SMdgiWi6cgk . Павел Шестопалов
 https://www.youtube.com/watch?v=bxyTCiJ0t14 . ЗЛОЙ АНАЛИТИК ВСЕЛЕННОЙ.
 
 
-### Feynman Integral
+### Feynman Path Integral
+https://arxiv.org/pdf/hep-th/9302097.pdf
+
 https://arxiv.org/pdf/1005.1855.pdf
 
 https://www.youtube.com/watch?v=zNVQfWC_evg   Quantum Fields: The Real Building Blocks of the Universe - with David Tong
