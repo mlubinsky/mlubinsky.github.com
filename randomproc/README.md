@@ -130,6 +130,8 @@ https://arxiv.org/pdf/2204.10145.pdf
 
 https://news.ycombinator.com/item?id=28941145 probabilistic programming 
 
+https://arxiv.org/pdf/1809.10756.pdf probabilistic programming 
+
 https://sandipanweb.wordpress.com/2020/12/07/bayesian-machine-learning-mcmc-and-probabilistic-programming-with-python/
 
 https://arxiv.org/pdf/0905.1629.pdf Monte Carlo in statphys
