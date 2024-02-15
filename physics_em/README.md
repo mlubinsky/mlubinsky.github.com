@@ -8,6 +8,7 @@ https://ufn.ru/ru/articles/1988/9/e/ Специальная теория отн�
 Classical Electrodynamics: A Tutorial on its Foundations∗
 https://arxiv.org/pdf/physics/9907046.pdf
 
+https://fizteh.urfu.ru/fileadmin/user_upload/site_19855/Studentu/Literatura/Atomnaja_fizika/Laboratornaja_rabota_No11_Formula_Planka__PDF__620KB_.pdf
 
 A Tutorial on the Classical Theories of Electromagnetic Scattering and Diffraction
 Masud Mansuripur
