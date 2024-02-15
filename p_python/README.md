@@ -41,6 +41,8 @@ if "StatusRequest" not in line and "StatusResponse" not in line:
 
 ### Data Tools
 
+https://pola.rs/posts/polars_birds_eye_view/
+
 https://www.jetbrains.com/dataspell/ JetBrains
 
 https://deepnote.com/compare
