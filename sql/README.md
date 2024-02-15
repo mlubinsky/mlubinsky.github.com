@@ -959,16 +959,6 @@ https://news.ycombinator.com/item?id=13517490
 
 https://vadimtropashko.wordpress.com/%e2%80%9csql-design-patterns%e2%80%9d-book/about/
 
-## Delete duplicate records
-```
-DELETE    FROM T 
-WHERE  ctid NOT IN
-        (
-        SELECT  MAX(ctid) 
-        FROM  T 
-        GROUP BY  T.*
-        )
-```
 
 ## Running total
 ```
