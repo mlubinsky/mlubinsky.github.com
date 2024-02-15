@@ -53,7 +53,7 @@ https://holoviz.org/
 
 https://dataprep.ai/
 
-## Plotting
+## Plotting: GnuPlot and others
 
  http://www.gnuplot.info/
 
