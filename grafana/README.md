@@ -1,3 +1,19 @@
+https://grafana.com/go/webinar/building-advanced-grafana-dashboards/
+
+Wednesday, February 21, 2024 09:30 PST
+
+https://grafana.com/files/building-advanced-grafana-dashboards.pdf?pg=webinar-building-advanced-grafana-dashboards&plcmt=related-content-2
+
+https://www.reddit.com/r/grafana/comments/jpnbhb/grafana_best_practices_and_advanced_techniques/
+
+https://github.com/FlxPeters/awsome-grafana
+
+https://grafana.com/blog/2022/06/06/grafana-dashboards-a-complete-guide-to-all-the-different-types-you-can-build/
+
+https://www.metricfire.com/blog/grafana-dashboards-from-basic-to-advanced/
+
+https://logit.io/blog/post/top-grafana-dashboards-and-visualisations/
+
 ### AWS CloudWatch  
 https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 
