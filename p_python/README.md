@@ -73,7 +73,19 @@ https://github.com/luminousmen/data-toolset   Avro and Parquet
  
 https://github.com/MarkyMan4/filequery  https://pypi.org/project/filequery/
 
+### Log viewers
 
+https://news.ycombinator.com/item?id=39317580
+
+https://github.com/Textualize/toolong
+
+https://github.com/dloss/klp
+
+https://lnav.org/
+
+https://logdy.dev/
+
+https://github.com/kernc/diff-logs
 
 ### String
 ```
