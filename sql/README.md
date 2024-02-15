@@ -76,7 +76,8 @@ https://www.youtube.com/watch?v=NKXH7o8m2x4
 
 https://habr.com/ru/articles/588859/
 
-Duplicates in table: https://blog.devgenius.io/duplicates-in-sql-e7a146d0131
+### Duplicates in table: 
+https://blog.devgenius.io/duplicates-in-sql-e7a146d0131
 
 ```
 SELECT col1, col2
@@ -98,6 +99,29 @@ SELECT col1, col2
 FROM dedup
 WHERE occurrence > 1
 ```
+
+### Find duplicate rows in a database
+```
+SELECT * FROM emp a WHERE rowid = (SELECT MAX(rowid) FROM EMP b WHERE a.empno=b.empno)
+```
+### Delete duplicates
+```
+DELETE FROM emp a WHERE rowid != (SELECT MAX(rowid) FROM emp b WHERE a.empno=b.empno);
+```
+
+### Delete duplicate records
+```
+DELETE    FROM T 
+WHERE  ctid NOT IN
+        (
+        SELECT  MAX(ctid) 
+        FROM  T 
+        GROUP BY  T.*
+        )
+```
+
+
+
 
 https://blog.devgenius.io/sql-practice-questions-1-800ed65d99b2
 
@@ -785,14 +809,7 @@ where rank2=1;
   where n = 1
 ```
 
-### Find duplicate rows in a database
-```
-SELECT * FROM emp a WHERE rowid = (SELECT MAX(rowid) FROM EMP b WHERE a.empno=b.empno)
-```
-### Delete duplicates
-```
-DELETE FROM emp a WHERE rowid != (SELECT MAX(rowid) FROM emp b WHERE a.empno=b.empno);
-```
+
 
 ### Find the employees who have the second highest salary per department:
 ``` 
