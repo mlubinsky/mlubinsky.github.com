@@ -315,12 +315,47 @@ SELECT id,month
 FROM bill
 ```
 
+
+## Running total
+```
+select
+    a.date,
+    sum(b.sales) as cumulative_sales
+from sales_table a
+join sales_table b on a.date >= b.date
+group by a.date
+order by a.date
+
+
+SELECT city, month,
+    SUM(amount) OVER (
+        PARTITION BY city
+        ORDER BY month
+        RANGE UNBOUNDED PRECEDING
+    ) as total_sale
+FROM Sales;
+```
+
+
+Using window function:
+
+https://blog.devgenius.io/sql-window-function-d39858e52784
+
+```
+select date,
+    sum(sales) over (order by date rows unbounded preceding) as cumulative_sales
+from sales_table;
+```
+
+
+
+
 <https://stackoverflow.com/questions/63609219/best-way-to-get-1st-record-per-partition-first-value-vs-row-number>
 
 <https://medium.com/better-programming/4-ways-to-calculate-a-running-total-with-sql-986d0019185c>
 
 ```
-Select
+SELECT
       t1.day
       ,t1.driver_id
       ,(
@@ -959,37 +994,6 @@ https://news.ycombinator.com/item?id=13517490
 
 https://vadimtropashko.wordpress.com/%e2%80%9csql-design-patterns%e2%80%9d-book/about/
 
-
-## Running total
-```
-select
-    a.date,
-    sum(b.sales) as cumulative_sales
-from sales_table a
-join sales_table b on a.date >= b.date
-group by a.date
-order by a.date
-
-
-SELECT city, month,
-    SUM(amount) OVER (
-        PARTITION BY city
-        ORDER BY month
-        RANGE UNBOUNDED PRECEDING
-    ) as total_sale
-FROM Sales;
-```
-
-
-Using window function:
-
-https://blog.devgenius.io/sql-window-function-d39858e52784
-
-```
-select date,
-    sum(sales) over (order by date rows unbounded preceding) as cumulative_sales
-from sales_table;
-```
 
 ## Window functions 
 
