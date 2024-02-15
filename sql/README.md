@@ -131,8 +131,7 @@ https://medium.com/towards-data-engineering/most-asked-complex-sql-queries-in-da
 
 https://sqlfordevs.com/ebook
 
-Recursive CTE
-https://blog.devgenius.io/recursive-cte-demystified-6adc0021813f
+
 
 ### RANK() vs DENSE_RANK()
 RANK numbers are skipped so there may be a gap in rankings, and may not be unique. 
@@ -896,7 +895,12 @@ HAVING COUNT(person_id) >1
 ```
 
 
-## Hierarhy  Recursive SQL
+## Hierarhy and  Recursive SQL
+
+
+https://blog.devgenius.io/recursive-cte-demystified-6adc0021813f
+
+https://habr.com/ru/articles/794028/
 
 https://medium.com/swlh/recursion-in-sql-explained-graphically-679f6a0f143b
 
