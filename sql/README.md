@@ -303,11 +303,18 @@ https://blog.jooq.org/10-cool-sql-optimisations-that-do-not-depend-on-the-cost-m
 
 
 
-### Running total
+## Running total
 
 https://habr.com/ru/post/597963/ 
 
+https://blog.jooq.org/2014/04/29/nosql-no-sql-how-to-calculate-running-totals/
+
 https://betterprogramming.pub/4-ways-to-calculate-a-running-total-with-sql-986d0019185c
+
+<https://stackoverflow.com/questions/63609219/best-way-to-get-1st-record-per-partition-first-value-vs-row-number>
+
+<https://medium.com/better-programming/4-ways-to-calculate-a-running-total-with-sql-986d0019185c>
+
 ```
 SELECT id,month
  , Amount
@@ -315,8 +322,6 @@ SELECT id,month
 FROM bill
 ```
 
-
-## Running total
 ```
 select
     a.date,
@@ -348,11 +353,6 @@ from sales_table;
 ```
 
 
-
-
-<https://stackoverflow.com/questions/63609219/best-way-to-get-1st-record-per-partition-first-value-vs-row-number>
-
-<https://medium.com/better-programming/4-ways-to-calculate-a-running-total-with-sql-986d0019185c>
 
 ```
 SELECT
