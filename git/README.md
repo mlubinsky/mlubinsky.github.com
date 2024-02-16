@@ -1,5 +1,7 @@
 https://jvns.ca/blog/2024/02/01/dealing-with-diverged-git-branches/
 
+https://jvns.ca/blog/2024/02/16/popular-git-config-options/
+
 https://news.ycombinator.com/item?id=39356042
 
 https://blog.gitbutler.com/git-tips-and-tricks/
