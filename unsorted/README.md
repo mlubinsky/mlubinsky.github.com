@@ -39,6 +39,10 @@ https://news.ycombinator.com/item?id=39367103
 
 https://news.ycombinator.com/item?id=39272953
 
+https://observablehq.com/blog/observable-2-0
+
+https://news.ycombinator.com/item?id=39383386
+
 https://jamstack.org/generators/
 
 https://www.kytta.dev/blog/one-week-with-zola/
