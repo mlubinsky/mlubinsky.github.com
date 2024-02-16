@@ -1,3 +1,5 @@
+https://www.youtube.com/playlist?list=PLfFghEzKVmjttkxVtVIvNZRuoSUuWtsFN  Deploying ML
+
 https://www.evidentlyai.com/ml-system-design
 
 https://habr.com/ru/companies/vk/articles/772538/
