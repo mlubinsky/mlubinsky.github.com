@@ -4,6 +4,8 @@ https://docs.python.org/3/library/sqlite3.html#command-line-interface
 
 https://habr.com/ru/articles/792630/
 
+https://kerkour.com/sqlite-for-servers
+
 ### VSCode extension for SQLite
 
 https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer
