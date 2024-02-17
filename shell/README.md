@@ -2,6 +2,8 @@ shellcheck -o all myshellscript.sh  : use shellcheck  to check any shell script
 
 https://effective-shell.com/
 
+https://github.com/jlevy/the-art-of-command-line
+
 https://terminaltrove.com/list/ terminal utils
 
 https://github.com/dbohdan/structured-text-tools
