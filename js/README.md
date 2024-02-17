@@ -27,6 +27,8 @@ https://refine.dev/blog/what-is-htmx/
 
 https://hypermedia.systems/hypermedia-systems/
 
+https://pycoders.com/link/12216/feed FastAPI and HTMX, the right way.
+
 https://lassebomh.github.io/htmx-playground/
 
 https://htmx.org/  htmx allows you to access AJAX, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext
