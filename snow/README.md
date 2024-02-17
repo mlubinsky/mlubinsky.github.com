@@ -32,6 +32,11 @@ order by partitions_scanned desc,
          pct_scanned desc;
 ```
 
+
+### Keyword "qualify"
+
+https://docs.snowflake.com/en/sql-reference/constructs/qualify
+
 ### Clustering
 
 https://docs.snowflake.com/en/user-guide/tables-clustering-keys
