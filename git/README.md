@@ -4,6 +4,8 @@ https://jvns.ca/blog/2024/02/16/popular-git-config-options/
 
 https://lobste.rs/s/spjgop/popular_git_config_options
 
+https://bernsteinbear.com/git/
+
 https://news.ycombinator.com/item?id=39400352
 
 https://news.ycombinator.com/item?id=39356042
