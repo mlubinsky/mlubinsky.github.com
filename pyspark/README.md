@@ -1,4 +1,9 @@
-Implementing Pyspark Real Time Application || End-to-End Project 
+https://towardsdatascience.com/4-examples-to-take-your-pyspark-skills-to-next-level-2a04cbe6e630
+
+https://towardsdatascience.com/5-examples-to-master-pyspark-window-operations-26583066e227
+
+
+### Implementing Pyspark Real Time Application || End-to-End Project 
 
 https://www.youtube.com/watch?v=wFOojyYvLRE
 
