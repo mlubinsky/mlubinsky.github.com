@@ -10,6 +10,7 @@ https://www.neelnanda.io/mechanistic-interpretability
 
 https://www.linkedin.com/feed/update/urn:li:activity:7161083292249669632/
 
+https://github.com/fastai/fastbook
 
 ### Transformers
 
