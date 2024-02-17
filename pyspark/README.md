@@ -776,3 +776,189 @@ app_name
 total_downloads
 dim_unified_category_id
 ```
+
+### https://towardsdatascience.com/2-silent-pyspark-mistakes-you-should-be-aware-of-de52c3a188c4
+```
+Let’s say we have a dataset with millions of rows.
+We make a mistake in calculating the sales quantities.
+Then, we create aggregate features based on the sales quantities such as weekly total,
+ the moving average of the last 14 days, and so on.
+ These features are used in a machine learning model that predicts the demand in the next week.
+
+We evaluate the predictions and find out the accuracy is not good enough.
+Then, we spend lots of time trying different things to improve the accuracy such as feature engineering or hyperparameter tuning.
+ These strategies don’t have a big impact on the accuracy because the problem is in the data.
+
+This is a scenario that we may encounter when working with large datasets.
+In this article, we’ll go over two specific PySpark mistakes that might cause unexpected results.
+For those who haven’t used PySpark yet, it is the Python API for Spark,
+which is an analytics engine used for large-scale data processing.
+
+We’ll create a small dataset for a few rows and columns.
+It’s enough to demonstrate and explain the two cases we’ll cover. Both are applicable to much larger datasets as well.
+
+from pyspark.sql import SparkSession
+from pyspark.sql import Window, functions as F
+
+# initialize spark session
+spark = SparkSession.builder.getOrCreate()
+
+# create a spark dataframe using a list of dictionaries
+data = [
+    {"group_1": 'A', "group_2": 104, "id": 1211},
+    {"group_1": 'B', "group_2": None, "id": 3001},
+    {"group_1": 'B', "group_2": 105, "id": 1099},
+    {"group_1": 'A', "group_2": 124, "id": 3380}
+]
+
+df = spark.createDataFrame(data)
+
+# display the dataframe
+df.show()
+
+# output
++-------+-------+----+
+|group_1|group_2|  id|
++-------+-------+----+
+|      A|    104|1211|
+|      B|   NULL|3001|
+|      B|    105|1099|
+|      A|    124|3380|
++-------+-------+----+
+The DataFrame contains 4 rows and 3 columns and there is a missing value (i.e. NULL) in the second row of the second column.
+
+1. concat and concat_ws
+The concat and concat_ws functions are used for concatenating (i.e. combining) string columns. There is a small difference between them in the case of having Null values. We need to take it into consideration. Otherwise, the result of the concatenation operation might be misleading.
+
+Let’s first use the concat function to combine the group_1 and group_2 columns to create a new column called group .
+
+df = df.withColumn("group", F.concat("group_1", "group_2"))
+
+df.show()
+
+# output
++-------+-------+----+-----+
+|group_1|group_2|  id|group|
++-------+-------+----+-----+
+|      A|    104|1211| A104|
+|      B|   NULL|3001| NULL|
+|      B|    105|1099| B105|
+|      A|    124|3380| A124|
++-------+-------+----+-----+
+Everything seems ok except for the second row. The group_2 value is null, which causes the group value to be null as well.
+
+The output of the concat function is null if any of the concatenated values is null.
+
+This is not the ideal behavior. If we only have the first group info,
+then we’d except the group value to be equal to that value (i.e. “B”).
+Just because we don’t have the subgroup info, we don’t want to lose information about the first level grouping.
+
+In such cases, it’s better to use the concat_ws function. Let’s try it.
+
+df = df.withColumn("group", F.concat_ws("group_1", "group_2"))
+
+df.show()
+
+# output
++-------+-------+----+-----+
+|group_1|group_2|  id|group|
++-------+-------+----+-----+
+|      A|    104|1211|  104|
+|      B|   NULL|3001|     |
+|      B|    105|1099|  105|
+|      A|    124|3380|  124|
++-------+-------+----+-----+
+This is not the output we expect. The second row of the group column is empty,
+which is not very different from having a null value. Also, the other group values are also wrong. This is worse than what the concat function did.
+
+To solve this problem, we just need to specify a separator.
+If we don’t need a character between groups, we can just provide an empty string as a separator.
+
+df = df.withColumn("group", F.concat_ws("", "group_1", "group_2"))
+
+df.show()
+
+# output
++-------+-------+----+-----+
+|group_1|group_2|  id|group|
++-------+-------+----+-----+
+|      A|    104|1211| A104|
+|      B|   NULL|3001|    B|
+|      B|    105|1099| B105|
+|      A|    124|3380| A124|
++-------+-------+----+-----+
+Now, the output is just as we expect.
+
+2. Conditional column creation
+Consider we want to create a new column based on the values in other columns. In PySpark, we can use the when function for this task. In the case of multiple conditions, we can chain the when functions and conclude with the otherwise function.
+
+The order of conditions matter in some cases. It’s best explained with an example so let’s get to it.
+
+We have the following DataFrame:
+
++-------+-------+----+-----+
+|group_1|group_2|  id|group|
++-------+-------+----+-----+
+|      A|    104|1211| A104|
+|      B|   NULL|3001|    B|
+|      B|    105|1099| B105|
+|      A|    124|3380| A124|
++-------+-------+----+-----+
+We want to create a dummy column according to the following conditions:
+
+If group 1 is A, it is 100
+If group 1 is A and group 2 is 124, it is 200
+Otherwise it is 300
+Using the when and otherwise functions, we can create this dummy column as follows:
+
+df = df.withColumn(
+    "dummy",
+    F.when(F.col("group_1")=="A", 100)\
+    .when(((F.col("group_1")=="A") & (F.col("group_2")=="124")), 200)\
+    .otherwise(300)
+)
+
+df.show()
+
+# output
++-------+-------+----+-----+-----+
+|group_1|group_2|  id|group|dummy|
++-------+-------+----+-----+-----+
+|      A|    104|1211| A104|  100|
+|      B|   NULL|3001|    B|  300|
+|      B|    105|1099| B105|  300|
+|      A|    124|3380| A124|  100|
++-------+-------+----+-----+-----+
+The output is not exactly correct. The last row fits the second condition (group 1 is A and group 2 is 124) so the value in the dummy column should be 200.
+
+The reason for this problem is the order of conditions. Since we write the condition group_1=="A" before a more specific (or sub) condition group_1=="A" & group_2=="124" , the latter is kind of ignored.
+
+If we switch these two conditions, the output will actually be correct.
+
+df = df.withColumn(
+    "dummy",
+    F.when(((F.col("group_1")=="A") & (F.col("group_2")=="124")), 200)\
+    .when(F.col("group_1")=="A", 100)\
+    .otherwise(300)
+)
+
+df.show()
+
+# output
++-------+-------+----+-----+-----+
+|group_1|group_2|  id|group|dummy|
++-------+-------+----+-----+-----+
+|      A|    104|1211| A104|  100|
+|      B|   NULL|3001|    B|  300|
+|      B|    105|1099| B105|  300|
+|      A|    124|3380| A124|  200|
++-------+-------+----+-----+-----+
+Now the last value of the dummy column is 200, which is correct.
+
+This is hard to notice when working with larger datasets. But, it might have a big impact on the downstream tasks. The output might be completely wrong. Thus, we should always pay attention to the order of conditions in such cases.
+
+Final words
+Data cleaning and processing are very important steps in a workflow as they affect downstream processes. A small mistake we make in these steps might lead to erroneous results.
+
+Be aware of silent mistakes that do not raise an error but have the potential to fail your model or product.
+```
