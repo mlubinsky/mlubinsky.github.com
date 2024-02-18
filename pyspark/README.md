@@ -1,3 +1,7 @@
+https://asrathore08.medium.com/pyspark-code-snippets-part-i-e2baf37a2e4
+
+https://asrathore08.medium.com/pyspark-code-snippets-part-ii-e24996ffff3c
+
 https://towardsdatascience.com/4-examples-to-take-your-pyspark-skills-to-next-level-2a04cbe6e630
 
 https://towardsdatascience.com/5-examples-to-master-pyspark-window-operations-26583066e227
