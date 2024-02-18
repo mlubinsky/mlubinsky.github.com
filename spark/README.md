@@ -1,3 +1,7 @@
+### Spark interview questions 
+
+https://asrathore08.medium.com/spark-interview-question-xiii-e41244e41d7a
+
 ### SPARK SQL
 https://books.japila.pl/spark-sql-internals/features/
 
