@@ -1,5 +1,6 @@
 https://relational.ai/careers/ JOB
 
+https://habr.com/ru/articles/794556/
 
 Competitive coding:  leetcode.com, geeksforgeeks.org
 
