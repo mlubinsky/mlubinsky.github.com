@@ -28,6 +28,8 @@ https://www.youtube.com/watch?v=tCbwWH25c1Q
 
 https://www.youtube.com/watch?v=y4e2QKDPKgQ
 
+### ВЕНСКАЯ ПАРТИЯ
+https://www.youtube.com/watch?v=LZQKIm2jIy8
 
 ### Scotch Gambit / гамбит Геринга / Шотландский гамбит
 
