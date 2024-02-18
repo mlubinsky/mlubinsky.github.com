@@ -1,3 +1,10 @@
+### Books
+
+https://leanpub.com/streamprocessingwithapacheflink
+
+https://www.amazon.com/Stream-Processing-Apache-Flink-Implementation/dp/149197429X
+
+
 https://www.kdnuggets.com/how-to-digest-15-billion-logs-per-day-and-keep-big-queries-within-1-second
 
 https://habr.com/ru/companies/ru_mts/articles/772898/
