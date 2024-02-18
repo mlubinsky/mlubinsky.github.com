@@ -14,6 +14,8 @@ https://www.pixelstech.net/article/1702794038-Where-Have-You-Installed-Your-Pyth
 
 https://www.reddit.com/r/Python/comments/18nrst3/some_easy_open_source_python_projects_to/
 
+https://medium.datadriveninvestor.com/mastering-advanced-python-40-pro-level-snippets-for-2024-85f5b9359103
+
 ### Linting Python in Visual Studio Code
 
 https://code.visualstudio.com/docs/python/linting
