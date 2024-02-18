@@ -47,6 +47,8 @@ https://www.reddit.com/r/Python/comments/wyl1lp/which_not_so_well_known_python_p
 
 https://www.reddit.com/r/Python/comments/x3z0lp/what_packages_replaced_standard_library_modules/
 
+https://medium.datadriveninvestor.com/mastering-advanced-python-40-pro-level-snippets-for-2024-85f5b9359103
+
 https://realpython.com/queue-in-python/
 
 https://realpython.com/sort-python-dictionary/
