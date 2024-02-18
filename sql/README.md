@@ -76,6 +76,51 @@ https://www.youtube.com/watch?v=NKXH7o8m2x4
 
 https://habr.com/ru/articles/588859/
 
+
+### Qualify
+```
+The QUALIFY clause has been introduced in a SELECT SQL query by Teradata years ago. It’s been followed over the years by Oracle, Snowflake, Google BigQuery, Databricks and other relational database systems. It is not part of the SQL standard.
+
+What Problem QUALIFY Solved
+In a SQL statement, you cannot filter in the WHERE clause by a window function (e.g. a statistical function call, usually followed by an OVER clause). This is because any window function call is internally evaluated after the WHERE clause evaluation.
+
+Try to execute any of the following queries in your Snowflake web UI, and you will get the “Window function [ROW_NUMBER() OVER (ORDER BY FRUITS.NAME ASC NULLS LAST)] appears outside of SELECT, QUALIFY, and ORDER BY clauses” compilation error:
+
+select name
+from (values ('apples'), ('oranges'), ('nuts')) as fruits(name)
+where row_number() over (order by name) >= 2
+order by name;
+
+select name, row_number() over (order by name) as rn
+from (values ('apples'), ('oranges'), ('nuts')) as fruits(name)
+where rn >= 2
+order by name;
+The typical fix was to separate a subquery, in which all window functions are evaluated. The outer query was now applying the WHERE filter on fields already evaluated before:
+
+with cte as (
+  select name, row_number() over (order by name) as rn
+  from (values ('apples'), ('oranges'), ('nuts')) as fruits(name)
+  order by name)
+select *
+from cte
+where rn >= 2;
+QUALIFY is simply a convenient clause that allows you to filter on window functions in the same query, but after the window function values have been calculated. All these correct versions return “nuts” and “oranges”, in this order.
+
+select name, row_number() over (order by name) as rn
+from (values ('apples'), ('oranges'), ('nuts')) as fruits(name)
+qualify rn >= 2
+order by name;
+
+select name
+from (values ('apples'), ('oranges'), ('nuts')) as fruits(name)
+qualify row_number() over (order by name) >= 2
+order by name;
+The Order of Execution in a SQL Query
+The order of the SQL clauses in a SELECT query is not the same as the internal order of execution and evaluation of these clauses. The projection specified in the SELECT clause alone is evaluated by the end.
+
+From the picture below, you can see that window functions (the OVER clauses) are evaluated well after the WHERE clause. So you cannot use the WHERE clause with window functions. The new QUALIFY clause acts like WHERE, but it is executed after the window functions have been evaluated:
+```
+
 ### Duplicates in table: 
 https://blog.devgenius.io/duplicates-in-sql-e7a146d0131
 
