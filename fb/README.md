@@ -1,3 +1,6 @@
+https://habr.com/ru/articles/794556/
+
+
 https://www.youtube.com/watch?v=2kv2LrKu-1c&list=PLqiTu7XWQ7jRy8AygDJL5ugVvVgYE05Kj Kazahstan programmers
 
 https://www.youtube.com/watch?v=gbgiFVFhGkc 
