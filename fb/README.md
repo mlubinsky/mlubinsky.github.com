@@ -171,7 +171,7 @@ In other words, one of the first string's permutations is the substring of the s
 # Input:s1= "ab" s2 = "eidboaoo"
 # Output: False
 ```
-### Implement hash table from scratch
+### Implement hash table from scratch  - 1
 
 https://stackoverflow.com/questions/20253580/hash-table-implementation-in-python
 
@@ -212,7 +212,58 @@ class HashTable:
 
         raise KeyError(f'Key {key} not found')
 ```
+### Implementing hash table - 2
+https://habr.com/ru/articles/794556/
+```
+class HashTable:
+    def __init__(self):
+        self.hashTable = [[],] * 10
 
+    def checkPrime(self, n):
+        if n == 1 or n == 0:
+            return 0
+        for i in range(2, n//2):
+            if n % i == 0:
+                return 0
+        return 1
+
+    def getPrime(self, n):
+        if n % 2 == 0:
+            n = n + 1
+        while not self.checkPrime(n):
+            n += 2
+        return n
+
+    def hashFunction(self, key):
+        capacity = self.getPrime(10)
+        return key % capacity
+
+    def insertData(self, key, data):
+        index = self.hashFunction(key)
+        self.hashTable[index] = [key, data]
+
+    def removeData(self, key):
+        index = self.hashFunction(key)
+        self.hashTable[index] = 0
+
+    def __str__(self):
+        return str(self.hashTable)
+
+
+hash_table = HashTable()
+
+hash_table.insertData(123, "apple")
+hash_table.insertData(432, "mango")
+hash_table.insertData(213, "banana")
+hash_table.insertData(654, "guava")
+
+print(hash_table)
+hash_table.removeData(123)
+print(hash_table)
+
+# [[], [], [123, 'apple'], [432, 'mango'], [213, 'banana'], [654, 'guava'], [], [], [], []]
+# [[], [], 0, [432, 'mango'], [213, 'banana'], [654, 'guava'], [], [], [], []]
+```
 
 ### Leetcode
 https://walkccc.me/LeetCode/ Solutions
