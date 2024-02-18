@@ -29,7 +29,9 @@ https://www.youtube.com/watch?v=tCbwWH25c1Q
 https://www.youtube.com/watch?v=y4e2QKDPKgQ
 
 
-### Scotch Gambit
+### Scotch Gambit гамбит Геринга (Шотландский гамбит!)
+
+https://www.youtube.com/watch?v=-MPQYtrGpR0
 
 https://en.wikipedia.org/wiki/Scotch_Game#Scotch_Gambit
 
