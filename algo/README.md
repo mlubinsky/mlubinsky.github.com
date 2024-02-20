@@ -52,9 +52,13 @@ https://redixhumayun.github.io/databases/2024/01/26/extendible-hash-tables.html
 https://papa.bretmulvey.com/post/124027987928/hash-functions
 
 ```
-Let’s say we want to count the number of times elements appear in a stream of data. A simple solution is to maintain a hash table that maps elements to their frequencies.
+Let’s say we want to count the number of times elements appear in a stream of data.
+A simple solution is to maintain a hash table that maps elements to their frequencies.
 
-This approach does not scale: Imagine having a stream with billions of elements, most of which are unique. Even if we are only interested in the most important ones, this method has huge space requirements. Since we do not know for which items to store counts, our hash table will grow to contain billions of elemen
+This approach does not scale:
+ Imagine having a stream with billions of elements, most of which are unique.
+Even if we are only interested in the most important ones, this method has huge space requirements.
+Since we do not know for which items to store counts, our hash table will grow to contain billions of elements
 ```
 
 https://florian.github.io//count-min-sketch/
