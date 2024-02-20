@@ -3,9 +3,28 @@ https://the-algorithms.com/
 Data Structures for Data-Intensive apps:
 https://cs-people.bu.edu/mathan/publications/fnt23-athanassoulis.pdf 
 
-https://habr.com/ru/articles/743800/  Bloom Filter,  Count-Min Sketch, HyperLogLog
+### Probabilistic data structures: Bloom filter  Hyperloglog
+### Bloom filter, Hyperloglog
 
-https://codeconfessions.substack.com/p/cpython-bloom-filter-usage
+https://boyter.org/posts/bloom-filter/ Bloom filter 
+
+https://codeconfessions.substack.com/p/bloom-filters-and-beyond
+
+https://habr.com/ru/company/otus/blog/541378/ Bloom filter
+
+<https://sagi.io/2017/07/bloom-filters-for-the-perplexed/>
+
+<https://news.ycombinator.com/item?id=15346337>
+
+<https://djhworld.github.io/hyperloglog/>
+
+<https://mungingdata.com/apache-spark/hyperloglog-count-distinct/> HyperLogLog for approximate count distinct
+https://samwho.dev/bloom-filters/  
+https://habr.com/ru/articles/743800/  Bloom Filter,  Count-Min Sketch, HyperLogLog  
+https://codeconfessions.substack.com/p/bloom-filters-and-beyond  Bloom filter  
+https://codeconfessions.substack.com/p/cpython-bloom-filter-usage  
+
+
 
 https://github.com/GauravWalia19/Free-Algorithms-Books/blob/master/Library/Python.md
 
@@ -21,7 +40,7 @@ https://ru.algorithmica.org/
 
 https://habr.com/ru/articles/790844/ Sparce arrays
 
-https://codeconfessions.substack.com/p/bloom-filters-and-beyond  Bloom filter
+
 
 https://tproger.ru/books/algorithms-data-structures-books/
 
@@ -97,21 +116,7 @@ http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big dat
 
 http://www.dspguide.com/pdfbook.htm DSP book
 
-### Bloom filter, Hyperloglog
 
-https://boyter.org/posts/bloom-filter/ Bloom filter 
-
-https://codeconfessions.substack.com/p/bloom-filters-and-beyond
-
-https://habr.com/ru/company/otus/blog/541378/ Bloom filter
-
-<https://sagi.io/2017/07/bloom-filters-for-the-perplexed/>
-
-<https://news.ycombinator.com/item?id=15346337>
-
-<https://djhworld.github.io/hyperloglog/>
-
-<https://mungingdata.com/apache-spark/hyperloglog-count-distinct/> HyperLogLog for approximate count distinct
 
 ### Not books
 
