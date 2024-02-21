@@ -37,6 +37,8 @@ https://news.ycombinator.com/item?id=37391161
 
 ## Kuramoto
 
+ (https://arxiv.org/abs/2402.12481
+
 https://arxiv.org/pdf/2402.06442.pdf
 
 https://arxiv.org/pdf/2110.06966.pdf : A strongly-damped
