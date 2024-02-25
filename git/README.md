@@ -16,6 +16,8 @@ https://blog.gitbutler.com/git-tips-and-tricks/
 
 alias gfp="git commit --amend --no-edit && git push --force-with-lease"
 
+https://habr.com/ru/articles/796119/ Популярные конфигурационные опции для работы с git
+
 ```
 cd ..
 cp work-repo/code.py /tmp/
