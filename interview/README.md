@@ -16,6 +16,8 @@ https://news.ycombinator.com/item?id=36901303
 
 ### Problems
 
+https://www.techbeamers.com/python-tricky-coding-exercises/#google_vignette
+
 https://www.leetsolve.com/
 
 https://leetsolve.com/48-rotate-image
