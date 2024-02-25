@@ -743,6 +743,8 @@ https://coderslegacy.com/cython-vs-cpython-comparing-speed/  Cython
 
 https://habr.com/ru/articles/789904/
 
+https://news.ycombinator.com/item?id=39490747
+
 https://www.bitecode.dev/p/the-easy-way-to-concurrency-and-parallelism
 
 https://news.ycombinator.com/item?id=37089817
