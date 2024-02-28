@@ -31,6 +31,8 @@ https://tryolabs.com/blog/2022/12/26/top-python-libraries-2022
 
 https://habr.com/ru/articles/795785/
 
+https://pypi.org/project/adix/ Data Exploration Made Easy & Colorful 
+
 ### Working with parquet
 ```
 import sys
