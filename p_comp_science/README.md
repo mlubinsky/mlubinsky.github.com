@@ -25,6 +25,8 @@ https://github.com/jrjohansson/qutip-lectures
 ### SymPy
 https://habr.com/ru/companies/otus/articles/761344/
 
+https://news.ycombinator.com/item?id=39537448
+
 https://marketplace.visualstudio.com/items?itemName=OrangeX4.latex-sympy-calculator
 
 https://chemistry.coe.edu/piper/posts/quantum-calcs-sympy/index.html
