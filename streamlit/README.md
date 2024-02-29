@@ -7,6 +7,8 @@ https://python.plainenglish.io/top-5-python-frontend-libraries-for-data-science-
 ### Trame 
 https://kitware.github.io/trame/
 
+https://vimeo.com/761096621/af2287747f
+
 ### Solara 
 https://github.com/widgetti/solara
 
