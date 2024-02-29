@@ -1232,6 +1232,8 @@ class RegularCard:
 ### itertools
 https://realpython.com/python-itertools/
 
+https://levelup.gitconnected.com/9-things-i-never-knew-about-itertools-python-until-recently-b98fbed92d2f
+
 https://medium.com/techtofreedom/10-python-itertools-to-make-your-code-neater-cleaner-and-better-5e1aada5e13e
 
 https://www.kdnuggets.com/2023/08/4-python-itertools-filter-functions-probably-didnt-know.html 
