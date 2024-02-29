@@ -8,6 +8,8 @@ Mock interviews, salary negotiation consulting:  interviewing.io, interviewkicks
 
 https://news.ycombinator.com/item?id=37111256
 
+https://medium.com/the-weekly-readme/resources-that-got-me-into-amazon-microsoft-and-google-029d7daf3965
+
 ### How to build resume:
 
 https://cloudirregular.substack.com/p/the-greatest-resume-ive-ever-seen
