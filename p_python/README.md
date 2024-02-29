@@ -729,6 +729,8 @@ https://github.com/plasma-umass/scalene  memory profiler
 
 https://bloomberg.github.io/memray/index.html memory profiler
 
+https://github.com/joerick/pyinstrument
+
 https://habr.com/ru/articles/773376/
 
 https://pythonbooks.org/python-high-performance-second-edition/
