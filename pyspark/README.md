@@ -6,6 +6,8 @@ https://towardsdatascience.com/4-examples-to-take-your-pyspark-skills-to-next-le
 
 https://towardsdatascience.com/5-examples-to-master-pyspark-window-operations-26583066e227
 
+https://towardsdatascience.com/best-data-wrangling-functions-in-pyspark-3e903727319e
+
 
 ### Implementing Pyspark Real Time Application || End-to-End Project 
 
