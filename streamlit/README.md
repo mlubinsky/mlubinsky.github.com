@@ -2,6 +2,8 @@ https://metaperl.github.io/pure-python-web-development/class-a.html
 
 https://nicegui.io/
 
+https://python.plainenglish.io/top-5-python-frontend-libraries-for-data-science-91261a65e366
+
 ### Solara 
 https://github.com/widgetti/solara
 
