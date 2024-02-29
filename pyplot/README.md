@@ -10,6 +10,8 @@ https://towardsdatascience.com/professionally-visualize-data-distributions-in-py
 
 https://python.plainenglish.io/data-visualization-for-exploratory-data-analysis-eda-in-python-4aea402648e7
 
+https://towardsdatascience.com/declarative-vs-imperative-plotting-3ee9952d6bf3
+
 ### Visro
 https://github.com/mckinsey/vizro
 
