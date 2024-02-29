@@ -12,6 +12,9 @@ https://blog.devgenius.io/leveraging-sql-capabilities-in-pyspark-simplifying-big
 
 https://medium.com/@maitreemanna8002/pyspark-optimization-technique-for-better-performance-47a7bcd6a72e
 
+https://medium.com/@Zakbasil/pyspark-performance-improvement-part-1-04a2e3bed7bd
+
+
 ### Implementing Pyspark Real Time Application || End-to-End Project 
 
 https://www.youtube.com/watch?v=wFOojyYvLRE
