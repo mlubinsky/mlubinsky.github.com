@@ -8,6 +8,7 @@ https://towardsdatascience.com/5-examples-to-master-pyspark-window-operations-26
 
 https://towardsdatascience.com/best-data-wrangling-functions-in-pyspark-3e903727319e
 
+https://blog.devgenius.io/leveraging-sql-capabilities-in-pyspark-simplifying-big-data-analysis-ff63fcfc82f0
 
 ### Implementing Pyspark Real Time Application || End-to-End Project 
 
