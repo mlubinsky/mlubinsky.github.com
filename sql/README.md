@@ -353,6 +353,12 @@ https://github.com/dinedal/textql  SQL for CSV and TSV
 
 https://habr.com/ru/company/otus/blog/541882/
 
+### GROUPING SET
+```
+SELECT department_id, job_id, SUM(salary) AS total_salary
+FROM employees
+GROUP BY GROUPING SETS ((department_id), (department_id, job_id));
+```
 https://hakibenita.com/sql-for-data-analysis  ROLLUP, CUBE GROUPING_SET
 
 https://hakibenita.com/sql-dos-and-donts Faux predicate
