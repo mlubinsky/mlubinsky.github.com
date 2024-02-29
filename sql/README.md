@@ -324,6 +324,11 @@ https://habr.com/ru/company/tensor/blog/657895/ SQL HowTo: разные вари
 
 
 ### Moving Average
+```
+SELECT employee_id, salary,
+       SUM(salary) OVER (ORDER BY employee_id ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS salary_sum
+FROM employees;
+```
 
 https://habr.com/ru/post/588859/  averaging and smoothing for noise reduction
 ```
