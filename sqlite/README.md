@@ -1,5 +1,7 @@
 https://towardsdev.com/sqlite-v-duckdb-e803add4f698  vs DuckDB
 
+https://levelup.gitconnected.com/duckdb-vs-polars-2ff19cc7af41
+
 https://antonz.org/sqlite-3-44/
 
 https://docs.python.org/3/library/sqlite3.html#command-line-interface
