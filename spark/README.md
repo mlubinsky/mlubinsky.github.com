@@ -4,6 +4,8 @@ https://asrathore08.medium.com/spark-interview-question-xiii-e41244e41d7a
 
 https://towardsdatascience.com/1-5-years-of-spark-knowledge-in-8-tips-f003c4743083
 
+https://sujit-j-fulse.medium.com/optimise-an-already-optimised-heavy-spark-job-with-long-lineage-2f6cb37f8b80
+
 ### SPARK SQL
 https://books.japila.pl/spark-sql-internals/features/
 
