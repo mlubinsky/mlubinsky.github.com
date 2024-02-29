@@ -2,6 +2,8 @@ https://asrathore08.medium.com/airflow-interview-questions-iv-cef5100d44c5
 
 https://medium.com/@patricklowe33/etl-using-docker-python-postgres-airflow-ed3e9508bd2e
 
+https://medium.com/@anupamk36/airflow-best-practices-d982fabd61f6
+
 ### Airflowctl
 https://airflowsummit.org/sessions/2023/introducing-airflowctl/
 pip install airflow ctl
