@@ -61,6 +61,8 @@ https://holoviz.org/
 
 https://dataprep.ai/
 
+https://codeandquery.com/build-scalable-data-pipelines-in-python-using-dlt-5e8275fd3371  DLT
+
 https://towardsdev.com/five-killer-optimization-techniques-that-most-pandas-arent-aware-of-f1e31af2257a
 
 ## Plotting: GnuPlot and others
