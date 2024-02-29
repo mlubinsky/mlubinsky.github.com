@@ -12,7 +12,7 @@ This means an update against one or more rows creates a new version of the entir
 
 The prior micro-partition is kept for time travel or immediately removed as required. 
 ```
-
+https://blog.det.life/i-spent-another-6-hours-understanding-the-design-principles-of-snowflake-heres-what-i-found-dea9fd74ae96
 ### Performance
 
 https://www.analytics.today/blog/top-3-snowflake-performance-tuning-tactics
