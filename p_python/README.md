@@ -43,6 +43,8 @@ if "StatusRequest" not in line and "StatusResponse" not in line:
 
 ### Data Tools
 
+https://datatable.readthedocs.io/en/latest/
+
 https://pola.rs/posts/polars_birds_eye_view/
 
 https://www.jetbrains.com/dataspell/ JetBrains
@@ -56,6 +58,8 @@ Spider
 https://holoviz.org/
 
 https://dataprep.ai/
+
+https://towardsdev.com/five-killer-optimization-techniques-that-most-pandas-arent-aware-of-f1e31af2257a
 
 ## Plotting: GnuPlot and others
 
@@ -1390,6 +1394,10 @@ Find biggest elements in dictionary values:
 highest_value = max(some_dict.values())
 
 #### Generators, yield
+
+https://levelup.gitconnected.com/python-generators-how-to-efficiently-fetch-data-from-databases-25f1947f56c0
+
+https://towardsdatascience.com/python-for-data-engineers-f3d5db59b6dd
 
 https://www.dabeaz.com/generators/Generators.pdf
 
