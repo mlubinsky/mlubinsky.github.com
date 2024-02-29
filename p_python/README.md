@@ -979,6 +979,8 @@ https://docs.python.org/3/library/sched.html
 
 https://pypi.org/project/schedule/ job scheduling 
 
+https://gaurav-adarshi.medium.com/different-ways-to-schedule-tasks-in-python-45e03d5411ee
+
 ### Logging
 
 https://betterstack.com/community/guides/logging/python/python-logging-best-practices/
