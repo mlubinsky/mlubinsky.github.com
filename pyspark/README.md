@@ -10,6 +10,8 @@ https://towardsdatascience.com/best-data-wrangling-functions-in-pyspark-3e903727
 
 https://blog.devgenius.io/leveraging-sql-capabilities-in-pyspark-simplifying-big-data-analysis-ff63fcfc82f0
 
+https://medium.com/@maitreemanna8002/pyspark-optimization-technique-for-better-performance-47a7bcd6a72e
+
 ### Implementing Pyspark Real Time Application || End-to-End Project 
 
 https://www.youtube.com/watch?v=wFOojyYvLRE
