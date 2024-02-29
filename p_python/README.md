@@ -18,6 +18,9 @@ https://www.reddit.com/r/Python/comments/18nrst3/some_easy_open_source_python_pr
 
 https://medium.datadriveninvestor.com/mastering-advanced-python-40-pro-level-snippets-for-2024-85f5b9359103
 
+Read large file:  
+https://tonylixu.medium.com/python-tips-how-to-hand-large-files-84fbbc464a75
+
 ### Linting Python in Visual Studio Code
 
 https://code.visualstudio.com/docs/python/linting
