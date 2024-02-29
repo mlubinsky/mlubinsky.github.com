@@ -20,6 +20,7 @@ https://news.ycombinator.com/item?id=36901303
 
 https://allaboutalgorithms.com/finding-closest-points-faster-than-o-n%C2%B2-ea5d005bc911
 
+https://machine-learning-made-simple.medium.com/coding-interviews-problem-12-group-shifted-strings-meta-82b6499eb5bd
 
 https://www.techbeamers.com/python-tricky-coding-exercises/#google_vignette
 
