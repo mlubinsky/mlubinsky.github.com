@@ -2243,3 +2243,6 @@ ndarray_of_numbers = np.array(list_of_numbers)
 ### Others
 Billion rows challange
 https://levelup.gitconnected.com/python-libraries-take-the-billion-row-challenge-7c108611a9ad
+
+file watcher
+https://github.com/samuelcolvin/watchfiles
