@@ -6,6 +6,10 @@ https://habr.com/ru/companies/ru_mts/articles/738208/ matplotlib
 
 https://github.com/TutteInstitute/datamapplot
 
+https://towardsdatascience.com/professionally-visualize-data-distributions-in-python-09481e1493b2
+
+https://python.plainenglish.io/data-visualization-for-exploratory-data-analysis-eda-in-python-4aea402648e7
+
 ### Visro
 https://github.com/mckinsey/vizro
 
