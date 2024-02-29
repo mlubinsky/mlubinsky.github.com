@@ -10,6 +10,8 @@ https://news.ycombinator.com/item?id=37111256
 
 https://medium.com/the-weekly-readme/resources-that-got-me-into-amazon-microsoft-and-google-029d7daf3965
 
+https://medium.com/@ricbedin/how-i-landed-4-staff-l6-software-engineering-offers-amazon-meta-stripe-and-braze-cfeed8d3e5a9
+
 ### How to build resume:
 
 https://cloudirregular.substack.com/p/the-greatest-resume-ive-ever-seen
