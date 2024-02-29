@@ -6,6 +6,8 @@ https://towardsdatascience.com/1-5-years-of-spark-knowledge-in-8-tips-f003c47430
 
 https://sujit-j-fulse.medium.com/optimise-an-already-optimised-heavy-spark-job-with-long-lineage-2f6cb37f8b80
 
+https://medium.com/@stanislav.i.kulchitskiy/spark-jobs-resources-estimation-f7b6da87b64c
+
 ### Delta lake
 https://medium.com/@abhinav.prakash1804/delta-lake-vs-parquet-86e1e926f446
 
