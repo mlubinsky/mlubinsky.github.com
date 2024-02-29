@@ -20,7 +20,9 @@ https://antonz.org/sql-upsert/
 
 https://news.ycombinator.com/item?id=37641628
 
-###  Interview questions
+###  Advanced Interview questions
+
+https://blog.devops.dev/top-10-advanced-sql-queries-dd5717b7e902
 
 https://habr.com/ru/articles/789420/
 
