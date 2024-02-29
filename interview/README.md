@@ -16,6 +16,9 @@ https://news.ycombinator.com/item?id=36901303
 
 ### Problems
 
+https://allaboutalgorithms.com/finding-closest-points-faster-than-o-n%C2%B2-ea5d005bc911
+
+
 https://www.techbeamers.com/python-tricky-coding-exercises/#google_vignette
 
 https://www.leetsolve.com/
