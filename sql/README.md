@@ -24,6 +24,8 @@ https://news.ycombinator.com/item?id=37641628
 
 https://blog.devops.dev/top-10-advanced-sql-queries-dd5717b7e902
 
+https://blog.stackademic.com/9-advanced-sql-queries-for-data-mastery-ce37ae78837e
+
 https://habr.com/ru/articles/789420/
 
 https://habr.com/ru/companies/tensor/articles/776834/
