@@ -4,6 +4,9 @@ https://nicegui.io/
 
 https://python.plainenglish.io/top-5-python-frontend-libraries-for-data-science-91261a65e366
 
+### Trame 
+https://kitware.github.io/trame/
+
 ### Solara 
 https://github.com/widgetti/solara
 
