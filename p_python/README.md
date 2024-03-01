@@ -60,6 +60,18 @@ https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html#cheat-sheet-py3
 
 https://hakibenita.com/fast-excel-python
 
+https://www.datacamp.com/tutorial/python-excel-tutorial
+
+https://kahemchu.medium.com/automate-excel-chart-with-python-d7bec97df1e5
+
+https://pandas-xlsxwriter-charts.readthedocs.io/
+
+https://forum.codewithmosh.com/t/creating-a-graph-in-excel/21607/2
+
+https://support.microsoft.com/en-us/office/create-python-in-excel-plots-and-charts-798b5e8d-ce45-4451-8da3-f269cdad5cff
+
+https://www.pyxll.com/docs/userguide/plotting/index.html
+
 ###
 
 sys.path.append(os.getcwd())
