@@ -886,6 +886,16 @@ with timer():
 ```
 
 ### Exceptions
+
+Example 1
+```
+ try:
+     l = ["a", "b"]
+     int(l[2])
+ except (ValueError, IndexError) as e:
+     pass
+```
+Example 2
 ```
 try:
     # Some code that may raise an exception.
