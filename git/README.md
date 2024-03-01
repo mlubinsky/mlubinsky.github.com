@@ -4,6 +4,8 @@ https://jvns.ca/blog/2024/02/01/dealing-with-diverged-git-branches/
 
 https://jvns.ca/blog/2024/02/16/popular-git-config-options/
 
+https://adrg.se/blog/dotfiles-digest-git
+
 https://lobste.rs/s/spjgop/popular_git_config_options
 
 https://bernsteinbear.com/git/
