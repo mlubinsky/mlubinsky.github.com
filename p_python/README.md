@@ -1,5 +1,7 @@
 ### Python notes
 
+https://norvig.com/python-iaq.html
+
 https://github.com/gto76/python-cheatsheet
 
 https://medium.com/techtofreedom/python-is-neither-call-by-value-nor-call-by-reference-2a0c8f6f4a8f
