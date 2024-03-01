@@ -21,6 +21,32 @@ https://medium.datadriveninvestor.com/mastering-advanced-python-40-pro-level-sni
 Read large file:  
 https://tonylixu.medium.com/python-tips-how-to-hand-large-files-84fbbc464a75
 
+
+### Default arguments pitfall
+```
+def foo( bar=[]):
+    bar.append("x")
+    return bar
+
+foo()     ["x"]
+foo()     ["x","x"]
+foo()     ["x","x","x"]
+
+
+значение по умолчанию для функции инициализируется только один раз, во время определения функции.
+Таким образом, аргумент bar инициализируется по умолчанию (т. е. пустым списком) только тогда, 
+когда foo() определен впервые, но последующие вызовы foo() 
+(т. е. без указания аргумента bar) продолжат использовать тот же список, 
+который был создан для аргумента bar в момент первого определения функции.
+
+Solution
+ def foo(bar=None):
+    if bar is None:		# or if not bar:
+        bar = []
+   bar.append("baz")
+   return bar
+
+```
 ### Linting Python in Visual Studio Code
 
 https://code.visualstudio.com/docs/python/linting
