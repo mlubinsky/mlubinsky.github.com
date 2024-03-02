@@ -251,6 +251,8 @@ https://www.youtube.com/watch?v=WGU_4-5RaxU Blondie - Heart Of Glass
 
 https://www.youtube.com/watch?v=qx89ylJyeKU Yaki-Da - I Saw You Dancing
 
+https://www.youtube.com/watch?v=aZ5rfs0O_I0
+
 ### Ricchi e Poveri - Come vorrei
 
 https://www.youtube.com/watch?v=KT44aQ_10XM&list=RDqx89ylJyeKU&index=27
