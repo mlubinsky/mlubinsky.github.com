@@ -1,5 +1,7 @@
 Postgres is enough:
 
+https://habr.com/ru/articles/794839/
+
 https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb
 
 MERGE: https://habr.com/ru/companies/otus/articles/792396/
