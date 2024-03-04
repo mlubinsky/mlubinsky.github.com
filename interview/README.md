@@ -2,6 +2,8 @@ https://relational.ai/careers/ JOB
 
 https://habr.com/ru/articles/794556/
 
+https://habr.com/ru/articles/797837/
+
 Competitive coding:  leetcode.com, geeksforgeeks.org
 
 Mock interviews, salary negotiation consulting:  interviewing.io, interviewkickstart.com
