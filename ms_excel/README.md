@@ -9,3 +9,8 @@ https://openpyxl.readthedocs.io/en/stable
 https://github.com/jmcnamara/XlsxWriter
 
 https://xlsxwriter.readthedocs.io/
+
+https://forum.codewithmosh.com/t/creating-a-graph-in-excel/21607/7
+
+
+### OpenPyXL vs xlsxwriter
