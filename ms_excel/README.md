@@ -1,0 +1,11 @@
+https://blog.aspose.com/cells/create-excel-xls-xlsx-using-python-excel-api/
+
+https://stackoverflow.com/questions/13437727/how-to-write-to-an-excel-spreadsheet-using-python
+
+https://www.xlwings.org/
+
+https://openpyxl.readthedocs.io/en/stable
+
+https://github.com/jmcnamara/XlsxWriter
+
+https://xlsxwriter.readthedocs.io/
