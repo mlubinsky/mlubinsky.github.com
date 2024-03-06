@@ -1,3 +1,9 @@
+### Statistical process control
+using SQL
+https://github.com/jchester/spc-kit
+
+https://news.ycombinator.com/item?id=39612775
+
 ### Unfair coin - simulate any probability
 
 https://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html
