@@ -4,6 +4,10 @@ https://github.com/jchester/spc-kit
 
 https://news.ycombinator.com/item?id=39612775
 
+### How to generate uniformly random pointson n-spheres and in n-balls
+
+https://extremelearning.com.au/how-to-generate-uniformly-random-points-on-n-spheres-and-n-balls/
+
 ### Unfair coin - simulate any probability
 
 https://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html
