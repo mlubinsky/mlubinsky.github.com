@@ -8,6 +8,15 @@ https://news.ycombinator.com/item?id=39612775
 
 https://extremelearning.com.au/how-to-generate-uniformly-random-points-on-n-spheres-and-n-balls/
 
+https://news.ycombinator.com/item?id=39606371
+
+
+### краткий обзор  методов выбора случайной точки на диске, на окружности, на сфере и на шаре. 
+
+Во всех этих задачах подразумевается равномерное распределение по поверхности или по объему
+
+https://nabbla1.livejournal.com/95999.html
+
 ### Unfair coin - simulate any probability
 
 https://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html
@@ -189,11 +198,6 @@ If the set has n elements, the number of k-combinations, denoted as  C_{k}^{n}} 
 A= n!/k!(n-k)!
 
 
-### краткий обзор  методов выбора случайной точки на диске, на окружности, на сфере и на шаре. 
-
-Во всех этих задачах подразумевается равномерное распределение по поверхности или по объему
-
-https://nabbla1.livejournal.com/95999.html
 
 ### Python
 
