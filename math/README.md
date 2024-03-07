@@ -54,6 +54,8 @@ https://news.ycombinator.com/item?id=36921446
 
 https://news.ycombinator.com/item?id=38354422
 
+https://news.ycombinator.com/item?id=39452356
+
 ### Render math expression in Markdown
 https://news.ycombinator.com/item?id=31438864
 
