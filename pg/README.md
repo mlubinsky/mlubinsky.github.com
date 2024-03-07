@@ -90,6 +90,8 @@ with open('/tmp/test.csv') as f:
 
 ### Python + Postgres
 
+https://techbeamers.com/python-connect-postgresql/
+
 https://www.psycopg.org/docs/usage.html#passing-parameters-to-sql-queries
 
 https://python.plainenglish.io/demystifying-database-interactions-with-psycopg3-a-practical-guide-54f60d268211
