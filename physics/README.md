@@ -23,6 +23,8 @@ https://nicf.net/articles/physics-for-mathematicians/
 
 https://habr.com/ru/articles/798293/
 
+https://ikfia.ysn.ru/wp-content/uploads/2018/01/Einstein_t1_1965ru.pdf
+
 https://arxiv.org/pdf/1508.01968.pdf
 
 <https://arxiv.org/abs/2002.12118> Simple Relativity Approach to Special Relativity
