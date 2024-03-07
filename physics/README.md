@@ -47,6 +47,8 @@ https://www.youtube.com/@viascience
 
 https://vk.com/club70818948 QM books
 
+https://ikfia.ysn.ru/v-pomoshh-studentu-i-aspirantu/   Books
+
 https://vk.com/physics_math
 
 https://www.youtube.com/@mephislecturesarchive4112  MIFI lectures
