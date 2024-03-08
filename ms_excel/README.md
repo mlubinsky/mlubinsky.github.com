@@ -41,7 +41,9 @@ line_chart.add_data(label_values)  # Add labels without a second set of y-values
 ```
 
 ```
-This will create a line chart with your y-values connected by lines, and your custom labels displayed at the corresponding positions on the x-axis. However, the line for the label series will be invisible as it has no y-values.
+This will create a line chart with your y-values connected by lines,
+and your custom labels displayed at the corresponding positions on the x-axis.
+However, the line for the label series will be invisible as it has no y-values.
 ```
 ### Workaround 2: Format X-Axis Tick Labels
 ```
@@ -49,7 +51,8 @@ Prepare Your Data: Keep your data in the usual format (y-values with correspondi
 
 Set Categories: Use the set_categories method on your LineChart object, referencing the cells containing your x-values.
 
-Format Tick Labels: Access the chart object's x_axis property and then the tick property. You can format the tick labels using properties like label_font and rotation.
+Format Tick Labels: Access the chart object's x_axis property and then the tick property.
+You can format the tick labels using properties like label_font and rotation.
 ```
 Python
 ```
