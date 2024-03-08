@@ -18,6 +18,30 @@ https://forum.codewithmosh.com/t/creating-a-graph-in-excel/21607/7
 
 https://stackoverflow.com/questions/44234905/customized-series-title-in-openpyxl-python
 
+```
+from openpyxl import Workbook
+from openpyxlchart import LineChart
+
+# Sample data (replace with your actual data)
+data = [
+    [2, 4, 7, 5],  # Series data (values)
+    ["Apple", "Orange", "Banana", "Pear"]  # Category labels (separate row)
+]
+
+# Create a workbook and chart object
+wb = Workbook()
+chart = LineChart()
+
+# Add data to the chart (assuming data starts from A1 in your worksheet)
+chart.add_data(data, titles_from_rows=True)  # Titles from the first row (category labels)
+
+# Attach the chart to the worksheet
+ws = wb.active
+ws.add_chart(chart, "E5")  #の位置 (E5) to specify the chart location
+
+```
+
+
 ### titles_from_data
 ```
  The titles_from_data argument in the add_data method of openpyxl's LineChart (and other chart types)
