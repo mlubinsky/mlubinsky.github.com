@@ -18,6 +18,60 @@ https://forum.codewithmosh.com/t/creating-a-graph-in-excel/21607/7
 
 https://stackoverflow.com/questions/44234905/customized-series-title-in-openpyxl-python
 
+
+### Example 0:
+
+```
+import random
+from openpyxl import Workbook
+from openpyxl.chart import LineChart, Reference
+
+workbook = Workbook()
+sheet = workbook.active
+
+# Let's create some sample sales data
+rows = [
+    ["", "January", "February", "March", "April",
+    "May", "June", "July", "August", "September",
+     "October", "November", "December"],
+    ['XX', ],
+    ['YY', ],
+    ['ZZ', ],
+]
+
+for row in rows:
+    sheet.append(row)
+
+for row in sheet.iter_rows(min_row=2,
+                           max_row=4,
+                           min_col=2,
+                           max_col=13):
+    for cell in row:
+        cell.value = random.randrange(5, 100)
+
+chart = LineChart()
+data = Reference(worksheet=sheet,
+                 min_row=2,
+                 max_row=4,
+                 min_col=1,  # first column has titles XX YY ZZ
+                 max_col=13)
+
+chart.add_data(data, from_rows=True, titles_from_data=True)
+sheet.add_chart(chart, "B6")
+
+# Add categories: this is 1st row with names
+cats = Reference(worksheet=sheet,
+                 min_row=1,
+                 max_row=1,
+                 min_col=2,
+                 max_col=13)
+chart.set_categories(cats)
+
+workbook.save("line_chart.xlsx")
+
+```
+
+
 ### Example 1
 ```
 from openpyxl import Workbook
