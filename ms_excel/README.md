@@ -17,6 +17,48 @@ https://xlsxwriter.readthedocs.io/
 https://forum.codewithmosh.com/t/creating-a-graph-in-excel/21607/7
 
 https://stackoverflow.com/questions/44234905/customized-series-title-in-openpyxl-python
+
+### titles_from_data
+```
+ The titles_from_data argument in the add_data method of openpyxl's LineChart (and other chart types)
+ is indeed a useful feature for handling chart titles. Here's how it works:
+
+When titles_from_data is set to True (default):
+
+openpyxl assumes the first row or column (depending on the data orientation) contains titles for the data series.
+It will automatically extract those titles and use them as the labels for the data series in the chart.
+
+Example:
+
+# Assuming your data (y-values) starts from cell B2 and titles (series names) are in row A1:A2
+
+data = Reference(worksheet, min_col=2, min_row=2, max_col=2, max_row=10)
+line_chart.add_data(data, titles_from_data=True)
+ 
+In this example, line_chart will use the values in cells A1 and A2 (assuming they contain series names) as titles for the data series in the chart.
+
+When titles_from_data is set to False:
+
+openpyxl will not use any data for titles.
+You'll need to define custom titles separately using the chart object's properties.
+
+Example:
+
+Python
+data = Reference(worksheet, min_col=2, min_row=2, max_col=2, max_row=10)
+line_chart.add_data(data, titles_from_data=False)
+
+# Set custom titles (optional)
+line_chart.title = "My Line Chart"
+line_chart.series[0].title = "Series 1"  # Set title for the first series (indexing starts from 0)
+ 
+Choosing the Right Approach:
+
+If your data has titles in the first row/column, using titles_from_data=True is convenient.
+If your titles are elsewhere or you want custom titles, set titles_from_data=False and define titles manually.
+By effectively using the titles_from_data argument, you can streamline your chart creation process and ensure proper labeling of your data series.
+```
+
 ```
 Unfortunately, openpyxl currently doesn't offer a direct way to set custom x-axis labels for charts. However, there are a couple of workarounds you can use to achieve a similar effect:
 ```
