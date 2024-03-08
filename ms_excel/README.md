@@ -59,7 +59,9 @@ line_chart.set_categories(categories)
 # Access and format x-axis tick labels (optional)
 line_chart.x_axis.tick.label_font = openpyxl.styles.Font(name="Calibri", size=10)
 line_chart.x_axis.tick.label_rotation = 45  # Optional rotation for long labels
-Use code with caution.
+```
+
+```
 This approach uses the existing x-values as data points but allows some formatting of the tick labels displayed on the x-axis.
 ```
 
