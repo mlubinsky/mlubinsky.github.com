@@ -16,7 +16,7 @@ https://xlsxwriter.readthedocs.io/
 
 https://forum.codewithmosh.com/t/creating-a-graph-in-excel/21607/7
 
-
+https://stackoverflow.com/questions/44234905/customized-series-title-in-openpyxl-python
 ```
 Unfortunately, openpyxl currently doesn't offer a direct way to set custom x-axis labels for charts. However, there are a couple of workarounds you can use to achieve a similar effect:
 ```
