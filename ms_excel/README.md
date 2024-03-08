@@ -83,35 +83,41 @@ Workaround 2 is more suitable if you want to format the existing x-values displa
 
 ### Assign custom colors to various elements of your LineChart using openpyxl. 
 
-1. Accessing Chart Elements:
+#### 1. Accessing Chart Elements:
 
 Once you've created your LineChart object, you can access individual elements you want to color. Here are some common properties:
 series: This holds information about each data series in the chart.
 fill: This property applies to the area enclosed by the lines in a line chart.
 line: This property applies to the actual lines in the chart.
-2. Color Choice:
+
+####  2. Color Choice:
 
 openpyxl uses the ColorChoice class to represent colors. You can define colors in a few ways:
 Preset colors: Use pre-defined color names like "red", "blue", etc.
 Indexed colors: Use an index value corresponding to the color palette used in Excel (limited options).
 RGB values: Define custom colors using a tuple of red, green, and blue values (e.g., (255, 0, 0) for red).
-3. Applying Colors:
+
+#### 3. Applying Colors:
 
 Series Color: Access a specific data series within the series property (indexing starts from 0). Then, set the fill or line property of the series to a ColorChoice object:
-Python
-# Assuming you have two data series in your chart
+ 
+Assuming you have two data series in your chart
+```
 line_chart.series[0].fill = openpyxl.drawing.colors.ColorChoice('blue')
 line_chart.series[1].line = openpyxl.drawing.colors.ColorChoice(rgb=(0, 128, 0))  # Green using RGB
-Use code with caution.
-Line Chart Fill: Set the fill property of the entire chart object to color the background area:
-Python
-line_chart.fill = openpyxl.drawing.colors.ColorChoice('yellow')
-Use code with caution.
-Additional Tips:
+```
 
+#### Line Chart Fill: Set the fill property of the entire chart object to color the background area:
+```
+line_chart.fill = openpyxl.drawing.colors.ColorChoice('yellow')
+```
+ 
+Additional Tips:
+```
 Explore the openpyxl.drawing.colors module for a list of available preset color names and how to define RGB colors.
 You can also customize the color of other chart elements like axes and legend text using similar approaches. Refer to the openpyxl documentation for details on properties of different chart elements.
 Here are some resources for further reference:
-
+```
 Openpyxl LineChart API: https://openpyxl.readthedocs.io/en/stable/api/openpyxl.chart.reader.html
+
 openpyxl ColorChoice Class: https://openpyxl.readthedocs.io/en/stable/api/openpyxl.drawing.colors.html
