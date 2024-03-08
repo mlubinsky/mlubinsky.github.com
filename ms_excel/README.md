@@ -163,3 +163,56 @@ Here are some resources for further reference:
 Openpyxl LineChart API: https://openpyxl.readthedocs.io/en/stable/api/openpyxl.chart.reader.html
 
 openpyxl ColorChoice Class: https://openpyxl.readthedocs.io/en/stable/api/openpyxl.drawing.colors.html
+
+
+
+###  in openpyxl, there isn't a direct way to specify which data series acts as the x-axis in a LineChart. 
+```
+Line charts inherently treat both provided data series as y-values connected by lines.
+
+However, there are a couple of workarounds you can employ to achieve an effect similar to having a designated x-axis series:
+```
+#### Workaround 1: Arrange Data for Sorting
+```
+Data Organization: Organize your data such that the intended x-axis values are in the first column (column A). Place your y-values for each data series in subsequent columns (e.g., B, C, etc.).
+
+Sorting Data (Optional): While not strictly necessary, you can sort the data in your worksheet by the first column (x-axis values) to ensure a sequential order on the chart.
+
+Adding Data Series: When adding data to your LineChart object, reference the data ranges for both series:
+
+ 
+x_values = Reference(worksheet, min_col=1, min_row=2, max_col=1, max_row=10)
+y_values1 = Reference(worksheet, min_col=2, min_row=2, max_col=2, max_row=10)
+y_values2 = Reference(worksheet, min_col=3, min_row=2, max_col=3, max_row=10)  # Assuming multiple data series
+
+line_chart.add_data(y_values1, titles_from_data=True)
+line_chart.add_data(y_values2, titles_from_data=True)
+ 
+Explanation:
+
+By placing the x-axis values in the first column and referencing them first when adding data, openpyxl will typically plot them on the x-axis. The subsequent data series (y-values) will be connected to these x-axis values, creating a line chart with the desired appearance.
+```
+#### Workaround 2: Mimic an X-Axis with Labels (for Categorical Data)
+````
+Data Format: If your x-axis data represents categories (e.g., weekdays, months), you can keep them in a separate row (e.g., row 1). Place your y-values for each data series in subsequent rows.
+
+Adding Data and Categories: When adding data to your LineChart, reference the y-values and set the categories using the set_categories method:
+
+y_values1 = Reference(worksheet, min_col=2, min_row=2, max_col=2, max_row=10)
+y_values2 = Reference(worksheet, min_col=3, min_row=2, max_col=3, max_row=10)
+categories = Reference(worksheet, min_row=1, min_col=1, max_row=1, max_col=len(y_values1.cols))  # Assuming all series have same length
+
+line_chart.add_data(y_values1, titles_from_data=True)
+line_chart.add_data(y_values2, titles_from_data=True)
+line_chart.set_categories(categories)
+ 
+Formatting X-Axis Labels (Optional): You can format the x-axis tick labels (categories) using the x_axis.tick property for improved readability.
+```
+#### Choosing the Right Workaround:
+```
+Workaround 1 is suitable for numerical or sequential x-axis data.
+Workaround 2 is better for categorical x-axis data where labels are more important than a strict linear order.
+
+Remember, these are workarounds, and the ideal approach depends on your specific data and chart requirements.
+
+```
