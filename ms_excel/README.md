@@ -19,6 +19,44 @@ https://forum.codewithmosh.com/t/creating-a-graph-in-excel/21607/7
 https://stackoverflow.com/questions/44234905/customized-series-title-in-openpyxl-python
 
 
+###  Merging cells
+```
+from openpyxl import Workbook
+
+# Create a new workbook and worksheet
+workbook = Workbook()
+sheet = workbook.active
+
+# Define your Python dictionary
+data_dict = {"Key1": ["Value A1", "Value A2", "Value A3"],
+             "Key2": ["Value B1", "Value B2"],
+             "Key1": ["Value A4"]}  # Duplicate key for merging
+
+# Write headers
+sheet["A1"] = "Key"
+sheet["B1"] = "Value"
+
+# Variables for merging
+start_row = 2  # Track starting row for each key
+current_key = None  # Store previous key
+
+# Loop through dictionary items
+for row, (key, value_list) in enumerate(data_dict.items(), start=2):
+    if key != current_key:  # New key encountered
+        sheet["A" + str(row)] = key
+        start_row = row
+        current_key = key
+    else:  # Same key as previous row, merge cells
+        sheet.merge_cells(start_row=start_row, start_column=1, end_row=row, end_column=1)
+
+    for value in value_list:
+        row += 1
+        sheet["B" + str(row)] = value
+
+# Save the workbook
+workbook.save("dict_to_excel_merged.xlsx")
+```
+
 ### Example 0:
 
 ```
