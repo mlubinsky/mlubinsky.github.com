@@ -1,3 +1,5 @@
+https://eloquentjavascript.net/
+
 https://exploringjs.com/deep-js/
 
 https://tabulator.info/docs/   Tabulator
