@@ -57,7 +57,88 @@ for row, (key, value_list) in enumerate(data_dict.items(), start=2):
 workbook.save("dict_to_excel_merged.xlsx")
 ```
 
-### Example 0:
+### Cell colors:
+
+```
+Both Color and PatternFill classes in the openpyxl.styles module are used for formatting cells in Excel spreadsheets,
+but they target different aspects of cell appearance:
+
+Color Class:
+
+Defines a single, solid color for the cell's background.
+Useful for simple color fills without any patterns.
+Properties:
+rgb: A string representing the RGB color code (e.g., "FFFF99" for orange).
+PatternFill Class:
+
+Defines a pattern for the cell's background, which can be a solid color fill (achieved through patternType="solid"),
+a gradient fill, or various other pre-defined patterns.
+Offers more flexibility in cell aesthetics.
+Properties:
+patternType: The type of pattern to apply (e.g., "solid", "diagonal", "linearGradient").
+fgColor: The foreground color used in the pattern (applicable to all pattern types).
+```
+#### PatternFill example
+```
+from openpyxl import Workbook
+from openpyxl.styles import PatternFill
+
+# Pattern definitions (replace with desired patterns)
+orange_fill = PatternFill(patternType="solid", fgColor="FFFF99")
+blue_fill = PatternFill(patternType="solid", fgColor="007FFF")
+green_fill = PatternFill(patternType="solid", fgColor="00FF00")
+red_fill = PatternFill(patternType="solid", fgColor="FF0000")
+
+# Create a new workbook and worksheet
+workbook = Workbook()
+sheet = workbook.active
+
+# Sample dictionary (key: value, pattern)
+data_dict = {"A1": ("Value A1", orange_fill),
+             "A2": ("Value A2", blue_fill),
+             "A3": ("Value A3", green_fill),
+             "B2": ("Value B2", red_fill)}
+
+# Write data and set background patterns
+for cell, (value, pattern) in data_dict.items():
+    sheet[cell].value = value
+    sheet[cell].fill = pattern
+
+# Save the workbook
+workbook.save("patterned_cells.xlsx")
+```
+#### Color example
+```
+from openpyxl import Workbook
+from openpyxl.styles import Color, Fill
+
+# Color definitions (replace with desired RGB values for customization)
+orange = Color(rgb="FFFF99")
+blue = Color(rgb="007FFF")
+green = Color(rgb="00FF00")
+red = Color(rgb="FF0000")
+
+# Create a new workbook and worksheet
+workbook = Workbook()
+sheet = workbook.active
+
+# Sample dictionary (key: value, color)
+data_dict = {"A1": ("Value A1", orange),
+             "A2": ("Value A2", blue),
+             "A3": ("Value A3", green),
+             "B2": ("Value B2", red)}
+
+# Write data and set background colors
+for cell, (value, color) in data_dict.items():
+    sheet[cell].value = value
+    fill = Fill(start_color=color, fill_type="solid")
+    sheet[cell].fill = fill
+
+# Save the workbook
+workbook.save("colored_cells.xlsx")
+```
+
+### LineChart Example 0:
 
 ```
 import random
