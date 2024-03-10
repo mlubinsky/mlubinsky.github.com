@@ -77,6 +77,67 @@ Offers more flexibility in cell aesthetics.
 Properties:
 patternType: The type of pattern to apply (e.g., "solid", "diagonal", "linearGradient").
 fgColor: The foreground color used in the pattern (applicable to all pattern types).
+
+red_fill = PatternFill(patternType="solid", start_color="FF0000")
+
+Bright Red:
+-------------
+#FF0000: Pure red, the most vibrant shade.
+#F00: Shorthand version of #FF0000.
+Lighter Reds:
+
+#E04A5F: Coral red, with a hint of warmth.
+#FF6347: Tomato red, a slightly toned-down red.
+#FF7F50: Coral, a vibrant orange-red.
+Darker Reds:
+
+#8B0000: Dark red, a deep and intense shade.
+#C62828: Crimson, a rich and luxurious red.
+#A52A2A: Brown red, with a touch of earthiness.
+Variations:
+
+#FF1493: Deep Pink, a vivid and feminine shade.
+#DC143C: Crimson Red, a bright and regal color.
+#B22222: Firebrick, a subdued and elegant red.
+
+Orange
+--------
+Bright orange: "#FFA500" (This is a common shade of orange used for reference)
+Light orange: "#FFCC99" (A lighter and warmer shade)
+Dark orange: "#FF7F00" (A deeper and more intense orange)
+
+Green
+------
+Light green: "#90EE90"
+Lime green: "#00FF00" (same as pure green)
+Dark green: "#006400"
+Forest green: "#228B22"
+Lawn green: "#7CFC00"
+Sea green: "#2E8B57"
+
+
+Bright Blues:
+-------------
+#0000FF: True blue, the most classic shade.
+#00F: Shorthand version of #0000FF.
+#007FFF: Azure, a sky blue with a hint of green.
+#4169E1: Royal blue, a rich and vibrant shade.
+Lighter Blues:
+
+#ADD8E6: Light blue, a soft and calming shade.
+#87CEFA: Sky blue, reminiscent of a clear sky.
+#ACE5EE: Light steel blue, with a touch of grey.
+Darker Blues:
+
+#00008B: Dark blue, a deep and mysterious shade.
+#191970: Midnight blue, evocative of the night sky.
+#0047AB: Navy blue, a classic and elegant color.
+Variations:
+
+#6495ED: Cornflower blue, a soft and delicate shade.
+#7B68EE: Medium slate blue, with a touch of purple.
+#4682B4: Steel blue, a greyish-blue with a metallic feel.
+
 ```
 #### PatternFill example
 ```
