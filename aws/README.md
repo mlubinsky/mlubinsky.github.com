@@ -53,12 +53,14 @@ https://www.datadoghq.com/resources/datadog-ec2-cheatsheet/
 aws s3 rm --recursive xxx
 
 ### S3 explained
+
 https://habr.com/ru/company/cloud4y/blog/681376/
 
 https://calpaterson.com/s3.html
 
 https://lobste.rs/s/t9d5z4/s3_is_files_not_filesystem
 
+https://news.ycombinator.com/item?id=39656657
 
 ###  Scalable analytics with AWS
 
