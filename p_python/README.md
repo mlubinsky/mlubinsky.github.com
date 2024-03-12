@@ -74,7 +74,61 @@ https://support.microsoft.com/en-us/office/create-python-in-excel-plots-and-char
 
 https://www.pyxll.com/docs/userguide/plotting/index.html
 
-###
+### Example
+
+```
+lists A and B of the same lenght logically related by index.
+We creating sorted list from A and we also want to create somehow the new list from B to preserve the by index relation between A_sorted and B_new
+
+Here are two common approaches to create a new list from B that preserves the matching with the sorted A_sorted list in Python:
+
+1. Using Dictionary Comprehension:
+
+Python
+A = [3, 1, 4, 1]
+B = ["apple", "banana", "cherry", "date"]
+
+A_sorted = sorted(A)
+
+# Create a dictionary with sorted elements from A as keys and corresponding elements from B as values
+B_sorted = {element: B[A.index(element)] for element in A_sorted}
+
+print(B_sorted)  # Output: {'banana': 'banana', 'date': 'date', 'apple': 'apple', 1: 'cherry'}
+
+# Sort the dictionary by keys to get B_sorted in the same order as A_sorted
+B_sorted = list(dict(sorted(B_sorted.items())).values())
+
+print(B_sorted)  # Output: ['banana', 'date', 'apple', 'cherry']
+ 
+Explanation:
+
+Create a dictionary where keys are elements from the sorted A_sorted list and values are the corresponding elements from B at the same index using dictionary comprehension.
+Optionally, sort the dictionary by keys using sorted(B_sorted.items()) to ensure the order aligns with A_sorted.
+Extract the values from the sorted dictionary using list(dict(...).values()) to get the final B_sorted list.
+
+2. Using zip and List Comprehension:
+
+Python
+A = [3, 1, 4, 1]
+B = ["apple", "banana", "cherry", "date"]
+
+A_sorted = sorted(A)
+
+# Use zip and list comprehension to create B_sorted based on the order in A_sorted
+B_sorted = [B[A.index(element)] for element in A_sorted]
+
+print(B_sorted)  # Output: ['banana', 'date', 'apple', 'date']
+ 
+Explanation:
+
+Use zip to create an iterator of paired elements from A_sorted and B.
+Use list comprehension to iterate through the zipped pairs and access the corresponding element from B using the index obtained from A.index(element).
+This creates a new list B_sorted containing elements from B in the same order as the sorted A_sorted list.
+
+```
+
+
+
 
 sys.path.append(os.getcwd())
 
