@@ -7,6 +7,10 @@ list_of_tuples = [('a', 1), ('b', 2), ('c', 3)]
 dictionary_from_list = dict(list_of_tuples)
 
 print(dictionary_from_list)
+
+
+
+dictionary_from_list = {t[0]: t[1:] for t in list_of_tuples}
 ```
 
 ### Division in pandas
