@@ -1,5 +1,7 @@
 https://arxiv.org/ftp/arxiv/papers/2201/2201.00650.pdf Deep Learning interview
 
+https://boramorka.github.io/LLM-Book/
+
 https://udlbook.github.io/udlbook/  Understanding Deep Learning by Simon J.D. Prince
 
 https://arxiv.org/pdf/2310.06251.pdf Deep Learning Tutorial
