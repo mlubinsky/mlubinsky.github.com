@@ -1,3 +1,33 @@
+### Division in pandas
+```
+import pandas as pd
+import numpy as np  # Import NumPy for missing value handling
+
+# Sample DataFrame (replace with your actual data)
+data = {'col1': [1.5, None, 3.2, 0, 4.1],
+        'col2': [2.3, 5, 1.8, None, 7.2],
+        'col3': [None, 4.7, 0, 2.1, None],
+        'col4': [6.4, 0, None, 8.3, 1.9],
+        'col5': [0, 3.8, None, 5.1, None]}
+df = pd.DataFrame(data)
+
+# Number for division
+divisor = 10
+
+# Create a new empty DataFrame with the same shape as the original
+new_df = pd.DataFrame(index=df.index, columns=df.columns)
+
+# Efficient division with handling for None and 0 using NumPy
+new_df = df.div(divisor, fill_value=np.NAN)  # Replace with None if you prefer None over NaN
+
+# Replace NaN with None (optional)
+new_df = new_df.fillna(None)  # Uncomment if you prefer None over NaN
+
+print(new_df)
+```
+
+
+
 https://www.pythonexcel.com/
 
 https://realpython.com/openpyxl-excel-spreadsheets-python/
