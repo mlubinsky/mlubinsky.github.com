@@ -25,7 +25,38 @@ new_df = new_df.fillna(None)  # Uncomment if you prefer None over NaN
 
 print(new_df)
 ```
+### Division in pandas 2
+```
+import pandas as pd
+import numpy as np
 
+# Assuming df is your original DataFrame
+# Replace 'given_number' with your desired number
+given_number = 10
+
+# Create a sample DataFrame for demonstration
+data = {
+    'col1': [1.0, 2.0, None, 0, 5.0],
+    'col2': [4.0, 0, 6.0, None, 8.0],
+    'col3': [0, 3.0, None, 2.0, 1.0],
+    'col4': [7.0, 0, 9.0, None, 0],
+    'col5': [None, 5.0, 0, 4.0, None]
+}
+
+df = pd.DataFrame(data)
+
+# Function to perform division with handling None and 0 values
+def safe_divide(x, y):
+    if y == 0 or pd.isna(y):
+        return None
+    else:
+        return x / y
+
+# Apply safe_divide function element-wise on the DataFrame
+new_df = df.apply(lambda x: safe_divide(given_number, x))
+
+print(new_df)
+```
 
 
 https://www.pythonexcel.com/
