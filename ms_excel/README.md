@@ -1,3 +1,14 @@
+
+
+
+#### Create dictionary from list of tuples
+```
+list_of_tuples = [('a', 1), ('b', 2), ('c', 3)]
+dictionary_from_list = dict(list_of_tuples)
+
+print(dictionary_from_list)
+```
+
 ### Division in pandas
 ```
 import pandas as pd
