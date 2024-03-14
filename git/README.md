@@ -38,6 +38,13 @@ https://github.com/Bhupesh-V/ugit/blob/master/ugit  undo git
 
 https://learngitbranching.js.org/
 
+https://habr.com/ru/articles/799413/
+```
+git switch other-branch
+git switch -  # Переключение обратно на предыдудую ветвь, аналогично "cd -"
+git switch remote-branch  # Непосредственное переключение на удалённую ветвь и её отслеживание
+```
+
 ### Git troubleshhoting
 
 https://ohshitgit.com/
