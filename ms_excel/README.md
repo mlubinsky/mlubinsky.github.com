@@ -1,4 +1,25 @@
-### Find dates with min and max  value per date
+### Find dates with min and max  value per date (1)
+```
+import pandas as pd
+
+# Sample DataFrame (replace with your actual data)
+data = {'date': ['2023-01-01', '2023-01-02', '2023-01-03', '2023-01-02'],
+        'number': [5, 2, 8, 2]}
+df = pd.DataFrame(data)
+
+# Find the index of the minimum and maximum values
+min_index = df['number'].idxmin()
+max_index = df['number'].idxmax()
+
+# Get the corresponding dates
+min_date = df.loc[min_index, 'date']
+max_date = df.loc[max_index, 'date']
+
+# Print the results
+print(f"Date with minimum number: {min_date}")
+print(f"Date with maximum number: {max_date}")
+```
+### Find dates with min and max  value per date (2)
 ```
 import pandas as pd
 
