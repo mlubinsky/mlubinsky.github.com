@@ -1,3 +1,52 @@
+### MIN / MAX PER GROUP
+```
+import pandas as pd
+
+# Sample DataFrame (replace with your actual data)
+data = {'date': ['2023-01-01', '2023-01-01', '2023-01-02', '2023-01-02', '2023-02-01'],
+        'dut': ['A', 'B', 'C', 'A', 'D'],
+        'target': [10.5, 12.3, 8.7, 15.2, 9.1]}
+df = pd.DataFrame(data)
+
+# Group by date, find min and max values for target and dut
+grouped_df = df.groupby('date').agg({'target': ['min', 'max'], 'dut': ['min', 'max']})
+
+# Rename columns for clarity
+grouped_df.columns = ['target_min', 'target_max', 'dut_min', 'dut_max']
+
+# Reset index to create separate columns
+grouped_df = grouped_df.reset_index()
+
+print(grouped_df)
+```
+
+### Min/Max per group again
+
+```
+# Assuming df is your pandas DataFrame with columns 'date', 'dut', and 'target'
+
+# Find the index of the row with the minimum value in the 'target' column for each date
+min_indices = df.groupby('date')['target'].idxmin()
+
+# Find the index of the row with the maximum value in the 'target' column for each date
+max_indices = df.groupby('date')['target'].idxmax()
+
+# Extract the corresponding records for min and max targets
+min_records = df.loc[min_indices]
+max_records = df.loc[max_indices]
+
+# Merge min and max records based on 'date'
+result_df = pd.merge(min_records, max_records, on='date', suffixes=('_min', '_max'))
+
+# Rename columns
+result_df.rename(columns={'dut_min': 'dut_min', 'target_min': 'target_min', 'dut_max': 'dut_max', 'target_max': 'target_max'}, inplace=True)
+
+# Reorder columns if needed
+result_df = result_df[['date', 'dut_min', 'target_min', 'dut_max', 'target_max']]
+
+
+```
+
 ### Find dates with min and max  value per date (1)
 ```
 import pandas as pd
