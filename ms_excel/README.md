@@ -65,6 +65,43 @@ print(min_max_df)
 ```
 
 
+# Fid min and max  in group 3 
+
+To have all names with the minimum and maximum values  per day are included,
+
+```
+import pandas as pd
+
+# Sample DataFrame
+data = {'name': ['John', 'Jane', 'John', 'Jane', 'Alice', 'Jane', 'Alice'],
+        'date': ['2024-01-01', '2024-01-01', '2024-01-02', '2024-01-02', '2024-01-03', '2024-01-03', '2024-01-03'],
+        'value': [10.5, 20.3, 15.2, 20.3, 12.7, 20.3, 22.1]}
+
+df = pd.DataFrame(data)
+
+# Convert date column to datetime
+df['date'] = pd.to_datetime(df['date'])
+
+# Group by date and aggregate min and max values for each group
+agg_df = df.groupby('date').agg({'name': ['min', 'max'], 'value': ['min', 'max']})
+
+# Flatten the multi-index columns
+agg_df.columns = ['_'.join(col).strip() for col in agg_df.columns.values]
+
+# Rename columns
+agg_df = agg_df.rename(columns={'name_min': 'name_min_value', 'name_max': 'name_max_value', 'value_min': 'min_value', 'value_max': 'max_value'})
+
+# Reset index to make date a column again
+agg_df = agg_df.reset_index()
+
+# Filter to include all names with the minimum and maximum values
+min_values = df.groupby('date')['value'].transform(min)
+max_values = df.groupby('date')['value'].transform(max)
+agg_df = df[(df['value'] == min_values) | (df['value'] == max_values)]
+
+print(agg_df)
+```
+
 ### Read some columns only:
 ```
 import pandas as pd
