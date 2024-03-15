@@ -1,3 +1,24 @@
+### Find uniq numbers per group
+```
+import pandas as pd
+
+# Sample DataFrame
+data = {'name': ['Alice', 'Bob', 'Charlie', 'Alice', 'Bob', 'David'],
+        'date': ['2023-01-01', '2023-01-01', '2023-02-02', '2023-03-03', '2023-03-03', '2023-03-03'],
+        'val': [10.5, 12.3, 8.7, 15.2, 9.1, 10.5]}
+df = pd.DataFrame(data)
+
+# Group by name and date, calculate the number of unique values in 'val'
+name_date_counts = df.groupby(['name', 'date'])['val'].nunique()
+
+# Reset index to create separate columns
+name_date_counts = name_date_counts.reset_index()
+
+print(name_date_counts)
+
+```
+
+
 ### Find names with min and max values per date 1
 ```
 import pandas as pd
