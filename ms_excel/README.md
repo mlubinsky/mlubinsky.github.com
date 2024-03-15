@@ -1,3 +1,23 @@
+### Find dates with min and max  value per date
+```
+import pandas as pd
+
+# Assuming df is your pandas DataFrame with columns 'date' and 'number'
+
+# Find the row with the minimum value in the 'number' column
+min_row = df.loc[df['number'].idxmin()]
+
+# Find the row with the maximum value in the 'number' column
+max_row = df.loc[df['number'].idxmax()]
+
+# Extract the dates corresponding to the min and max numbers
+date_min = min_row['date']
+date_max = max_row['date']
+
+print("Date with minimum number:", date_min)
+print("Date with maximum number:", date_max)
+```
+
 ### Find uniq numbers per group
 ```
 import pandas as pd
