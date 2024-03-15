@@ -1,3 +1,19 @@
+### Read some columns only:
+```
+import pandas as pd
+
+# Path to your CSV file
+file_path = "your_file.csv"
+
+# Specify the desired columns by name
+desired_columns = ["column1", "column3", "column5"]
+
+# Read the CSV file, selecting only the specified columns
+df = pd.read_csv(file_path, header=0, usecols=desired_columns)
+
+print(df)
+
+```
 
 
 
