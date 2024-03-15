@@ -19,6 +19,8 @@
 
  https://aosabook.org/en/ Arhitecture of open source apps
 
+ https://archive.org/details/texts
+
 ### The most counterintuitive facts in all of mathematics, computer science, and physics
 
 https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
