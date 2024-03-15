@@ -15,7 +15,63 @@ print(df)
 
 ```
 
+### Parse string and populate new columns
+```
+import pandas as pd
+import re  # Import regular expressions library
 
+# Sample DataFrame
+data = {'A': ['text1 2023-11-21 some text lsi\name1# text2', 'other text 2024-05-03 lsi\name2# more text']}
+df = pd.DataFrame(data)
+
+# Define regular expressions to extract date and name
+date_pattern = r'(\d{4}-\d{2}-\d{2})'  # Matches pattern YYYY-MM-DD
+name_pattern = r'lsi\\(.*?)#'  # Matches "lsi\" followed by any characters until "#"
+
+# Extract date and name using regular expressions
+df['date'] = df['A'].str.extract(date_pattern)
+df['name'] = df['A'].str.extract(name_pattern)
+
+# Drop the original column A (optional)
+df = df.drop('A', axis=1)
+
+print(df)
+```
+
+### Parse string and populate new columns 2
+```
+import pandas as pd
+import re
+
+# Sample DataFrame
+data = {'A': ['Some text lsiJohn Doe # other text 2023-05-10 more text',
+              'Another text 2022-12-15 lsiJane Smith # additional text']}
+
+df = pd.DataFrame(data)
+
+# Function to extract date and name
+def extract_info(text):
+    # Extracting date
+    date_match = re.search(r'\d{4}-\d{2}-\d{2}', text)
+    if date_match:
+        date = date_match.group()
+    else:
+        date = None
+    
+    # Extracting name
+    name_match = re.search(r'lsi(.*?)#', text)
+    if name_match:
+        name = name_match.group(1).strip()
+    else:
+        name = None
+    
+    return date, name
+
+# Apply function to DataFrame and create new columns
+df['date'], df['name'] = zip(*df['A'].apply(extract_info))
+
+print(df)
+```
 
 #### Create dictionary from list of tuples
 ```
