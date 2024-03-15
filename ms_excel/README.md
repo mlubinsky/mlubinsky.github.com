@@ -1,3 +1,40 @@
+### Find duts with min and max values per date
+```
+import pandas as pd
+
+# Sample DataFrame (replace with your actual data)
+data = {'name': ['Alice', 'Bob', 'Charlie', 'Alice', 'Bob', 'David', 'Alice'],
+        'date': ['2023-01-01', '2023-01-01', '2023-02-02', '2023-03-03', '2023-03-03', '2023-03-03', '2023-03-03'],
+        'value': [10.5, 12.3, 8.7, 15.2, 9.1, 10.5, 11.2]}
+df = pd.DataFrame(data)
+
+# Group by date, find min and max values for each name-date combination
+grouped_df = df.groupby(['date', 'name'])[['value']].agg(['min', 'max'])
+
+# Reset index
+grouped_df.columns = ['min_value', 'max_value']
+grouped_df = grouped_df.reset_index()
+
+# Sort by date and name
+grouped_df = grouped_df.sort_values(by=['date', 'name'])
+
+# Option 1: Keep the first occurrence of min value (using head(1))
+min_max_df = (grouped_df[grouped_df['value'] == grouped_df['min_value']]
+              .groupby(['date'])
+              .head(1))  # Keep only the first row for each date with min value
+
+# Option 2: Keep the last occurrence of min value (using tail(1))
+# min_max_df = (grouped_df[grouped_df['value'] == grouped_df['min_value']]
+#               .groupby(['date'])
+#               .tail(1))  # Keep only the last row for each date with min value
+
+# Combine min and max value rows
+min_max_df = pd.concat([min_max_df, grouped_df[grouped_df['value'] == grouped_df['max_value']]])
+
+print(min_max_df)
+```
+
+
 ### Read some columns only:
 ```
 import pandas as pd
