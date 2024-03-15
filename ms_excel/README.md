@@ -1,4 +1,4 @@
-### Find names with min and max values per date 2
+### Find names with min and max values per date 1
 ```
 import pandas as pd
 
@@ -48,18 +48,18 @@ grouped_df = grouped_df.reset_index()
 # Sort by date and name
 grouped_df = grouped_df.sort_values(by=['date', 'name'])
 
-# Option 1: Keep the first occurrence of min value (using head(1))
-min_max_df = (grouped_df[grouped_df['value'] == grouped_df['min_value']]
-              .groupby(['date'])
-              .head(1))  # Keep only the first row for each date with min value
+# Identify minimum value rows
+min_value_rows = grouped_df[grouped_df['value'] == grouped_df['min_value']]
 
-# Option 2: Keep the last occurrence of min value (using tail(1))
-# min_max_df = (grouped_df[grouped_df['value'] == grouped_df['min_value']]
-#               .groupby(['date'])
-#               .tail(1))  # Keep only the last row for each date with min value
+# Identify maximum value rows
+max_value_rows = grouped_df[grouped_df['value'] == grouped_df['max_value']]
 
-# Combine min and max value rows
-min_max_df = pd.concat([min_max_df, grouped_df[grouped_df['value'] == grouped_df['max_value']]])
+# Create a new column 'record_type'
+min_value_rows['record_type'] = 'min'
+max_value_rows['record_type'] = 'max'
+
+# Combine min and max value DataFrames
+min_max_df = pd.concat([min_value_rows, max_value_rows])
 
 print(min_max_df)
 ```
