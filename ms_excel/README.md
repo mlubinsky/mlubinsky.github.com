@@ -1,4 +1,5 @@
-### NAN
+### NAN divion 
+pandas 1.0.5
 ```
     ddd = {
     'A': ['a', 'b'],
@@ -16,6 +17,49 @@
 
     axis1 = df1.iloc[:, 1:].div(df2.iloc[:, 1:], axis=0)
 
+
+
+
+
+ddd = {'A': ['a', 'b'], 'X': [100.0, 20.0], 'Y': [6.0, 2.0]}
+df = pd.DataFrame(ddd)
+
+# Ensure both 'a' and 'b' exist in 'A' column before division
+if ('a' not in df['A'].tolist()) or ('b' not in df['A'].tolist()):
+  print("Elements 'a' and 'b' not found in column A. Division cannot be performed.")
+else:
+  # Select rows by value, ensuring correct alignment
+  df1 = df.loc[df['A'] == 'a']
+  df2 = df.loc[df['A'] == 'b']
+
+  # Calculate ratios (excluding 'A' column)
+  res = df1.iloc[:, 1:].div(df2.iloc[:, 1:], axis=0)
+  print(res)
+
+
+
+
+import pandas as pd
+
+ddd = {
+    'A': ['a', 'b'],
+    'X': [100.0, 20.0],
+    'Y': [6.0, 2.0]
+}
+df = pd.DataFrame(ddd)
+
+# Ensure that both 'a' and 'b' are present in the original DataFrame
+df = df[df['A'].isin(['a', 'b'])]
+
+df1 = df[df['A'] == 'a']
+df2 = df[df['A'] == 'b']
+
+# Check if both 'a' and 'b' rows exist
+if len(df1) == 1 and len(df2) == 1:
+    res = df1.iloc[:, 1:].div(df2.iloc[:, 1:], axis=1)
+    print(res)
+else:
+    print("Both 'a' and 'b' rows are required for division.")
 ```
 
 
