@@ -6,6 +6,8 @@ https://habr.com/ru/articles/797837/
 
 Competitive coding:  leetcode.com, geeksforgeeks.org
 
+https://uproger.com/bolshaya-shpargalka-po-algoritmam-s-sobesedovanij/
+
 Mock interviews, salary negotiation consulting:  interviewing.io, interviewkickstart.com
 
 https://news.ycombinator.com/item?id=37111256
