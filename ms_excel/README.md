@@ -1,5 +1,54 @@
 ###
 ```
+I have pythons pandas dataframe with following columns : column A (string datatype) and many other columns with float datatype.
+Also I have python list named N which contains  the tuples.
+Tuple has 2 elements.
+
+One of the  float column names is named REF.
+Please create new dataframe with the same columns as dataframe above 
+Take from original dataframe  only rows where value in column A  exists in python list on tuples
+The  float columns in new 
+dataframe should be calculated as division of  REF column by float column in original dataframe .
+
+import pandas as pd
+
+# Create a DataFrame
+df = pd.DataFrame({'A': ['X', 'Y', 'X', 'Z', 'Y'],
+                   'B': [1, 2, 3, 4, 5],
+                   'C': [6, 7, 8, 9, 10],
+                   'REF': [100, 200, 300, 400, 500]})
+
+# Create a list of tuples
+N = [('X', 'Y'), ('Y', 'Z')]
+
+
+def filter_and_calculate(df, N):
+  """Filters rows and calculates ratios in a new DataFrame
+
+  Args:
+      df (pandas.DataFrame): The DataFrame to filter.
+      N (list): A list of tuples containing elements to match in column 'A'.
+
+  Returns:
+      pandas.DataFrame: A new DataFrame with filtered rows and calculated ratios.
+  """
+
+  filtered_df = df[df['A'].isin([i[0] for i in N]) & df['A'].isin([i[1] for i in N])]
+  # Calculate ratios (excluding 'REF' and 'A' columns)
+  ratios = filtered_df.iloc[:, 2:].div(filtered_df['REF'], axis=0)
+
+  # Combine filtered DataFrame with calculated ratios
+  result = pd.concat([filtered_df[['A']], ratios], axis=1)
+  return result
+
+
+result = filter_and_calculate(df.copy(), N.copy())
+print(result)
+```
+
+
+###
+```
 data_source: blank
 adhoc_label: P2P
 test_date: 2024-02-26
