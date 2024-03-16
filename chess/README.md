@@ -1,3 +1,5 @@
+https://chessbook.com/  build your chess repertour
+
 Ian Tsybulkin:
 
 https://iantsybulkin.medium.com/clustering-openings-of-chess-games-7fe0e36a6fae
