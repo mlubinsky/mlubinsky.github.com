@@ -128,10 +128,12 @@ This creates a new list B_sorted containing elements from B in the same order as
 ```
 
 
-
-
+### System path manipulation
+```
+import sys
+sys.path.insert(0, os.path.abspath('..'))
 sys.path.append(os.getcwd())
-
+```
 ### Any
 
 Check what string has no specific values:
