@@ -1,4 +1,35 @@
-###
+### Devide REF by othe column
+```
+import pandas as pd
+
+# Sample DataFrame
+data = {
+    'A': ['a', 'b', 'c'],
+    'REF': [10.0, 20.0, 30.0],
+    'X': [5.0, 10.0, 15.0],
+    'Y': [2.0, 4.0, 6.0],
+    'Z': [1.0, 2.0, 3.0]
+}
+
+df = pd.DataFrame(data)
+
+# New DataFrame
+new_df = pd.DataFrame()
+
+# Copying the 'A' column
+new_df['A'] = df['A']
+
+# Calculating division for each float column except 'REF'
+for col in df.columns:
+    if col != 'A' and col != 'REF':
+        new_df[col] = df['REF'] / df[col]
+
+# Adding the 'REF' column
+new_df['REF'] = df['REF']
+
+
+```
+### X
 ```
 I have pythons pandas dataframe with following columns : column A (string datatype) and many other columns with float datatype.
 Also I have python list named N which contains  the tuples.
