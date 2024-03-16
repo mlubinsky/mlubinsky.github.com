@@ -8,10 +8,13 @@
     df = pd.DataFrame(ddd)
     df1 = df[df['A'] =='a']
     df2 = df[df['A'] == 'b']
+    
     print(df1)
     print(df2)
 
-    res = df1.iloc[:, 1:].div(df2.iloc[:, 1:], axis=0)
+    axis0 = df1.iloc[:, 1:].div(df2.iloc[:, 1:], axis=0)
+
+    axis1 = df1.iloc[:, 1:].div(df2.iloc[:, 1:], axis=0)
 
 ```
 
