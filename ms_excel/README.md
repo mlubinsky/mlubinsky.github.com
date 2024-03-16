@@ -1,3 +1,89 @@
+### Calc ratio 1
+```
+import pandas as pd
+
+
+def calculate_ratios(df, N):
+  """Calculates ratios for each tuple in a new DataFrame
+
+  Args:
+      df (pandas.DataFrame): The DataFrame to filter.
+      N (list): A list of tuples containing elements to match in column 'A'.
+
+  Returns:
+      pandas.DataFrame: A new DataFrame with ratios for each tuple.
+  """
+
+  result = pd.DataFrame()
+  for t in N:
+    # Filter rows based on tuple elements
+    filtered_df = df[df['A'].isin(t)]
+    # Ensure both elements from the tuple exist (at least one row in each filter)
+    if len(filtered_df) == 2:
+      # Select rows corresponding to tuple elements
+      df1 = filtered_df[filtered_df['A'] == t[0]]
+      df2 = filtered_df[filtered_df['A'] == t[1]]
+      # Calculate ratios (excluding 'A' column)
+      ratio_df = df1.iloc[:, 1:].div(df2.iloc[:, 1:], axis=0)
+      # Create a new row with tuple string and ratios
+      ratio_df = pd.DataFrame({'T': str(t), **ratio_df.to_dict()})
+      result = pd.concat([result, ratio_df], ignore_index=True)
+  return result
+
+
+# Example usage (replace with your DataFrame and list of tuples)
+df = pd.DataFrame(...)  # Create your DataFrame
+N = [('X', 'Y'), ('Y', 'Z')]  # Replace with your list of tuples
+
+result = calculate_ratios(df.copy(), N.copy())
+print(result)
+```
+### Calc ratio 2
+
+```
+import pandas as pd
+
+# Sample DataFrame
+data = {
+    'A': ['a', 'b', 'c', 'd'],
+    'X': [10.0, 20.0, 30.0, 40.0],
+    'Y': [5.0, 10.0, 15.0, 20.0],
+    'Z': [2.0, 4.0, 6.0, 8.0]
+}
+
+df = pd.DataFrame(data)
+
+# Sample list of tuples
+tuple_list = [('a', 'b'), ('c', 'd')]
+
+# New DataFrame
+new_data = []
+
+# Iterating over each tuple in the list
+for pair in tuple_list:
+    # Selecting rows corresponding to tuple[0] and tuple[1]
+    row1 = df[df['A'] == pair[0]]
+    row2 = df[df['A'] == pair[1]]
+    
+    # Calculating division for each float column
+    division_result = row1.iloc[:, 1:] / row2.iloc[:, 1:]
+    
+    # Combining the tuple into a single string
+    tuple_string = str(pair)
+    
+    # Appending to the new data list
+    new_data.append([tuple_string] + division_result.values.tolist()[0])
+
+# Constructing the new DataFrame
+columns = ['T'] + list(division_result.columns)
+new_df = pd.DataFrame(new_data, columns=columns)
+
+print(new_df)
+
+
+```
+
+
 ### Devide REF by othe column
 ```
 import pandas as pd
