@@ -2,6 +2,8 @@ https://metaperl.github.io/pure-python-web-development/class-a.html
 
 https://nicegui.io/
 
+https://news.ycombinator.com/item?id=39566732
+
 https://python.plainenglish.io/top-5-python-frontend-libraries-for-data-science-91261a65e366
 
 ### Trame 
