@@ -1,4 +1,44 @@
-### rows divion 
+### extract val from 1 row
+```
+There are two main ways to extract values for specific columns from a pandas DataFrame with exactly one row into a Python variable:
+
+Method 1: Using .iloc[0]
+
+This method uses integer-based indexing to access the first (and only) row of the DataFrame. You can then access specific columns by their names.
+
+Python
+import pandas as pd
+
+# Create a DataFrame with one row
+data = {'col1': [10], 'col2': ['apple']}
+df = pd.DataFrame(data)
+
+# Extract values using `.iloc[0]`
+col1_value = df.iloc[0]['col1']
+col2_value = df.iloc[0]['col2']
+
+# Print the extracted values
+print(f"col1 value: {col1_value}")
+print(f"col2 value: {col2_value}")
+Use code with caution.
+Method 2: Using .squeeze()
+
+The .squeeze() method attempts to convert the DataFrame to a Series (a one-dimensional labeled array), effectively returning the single row as a dictionary-like object. You can then access columns by their names.
+
+Python
+# Extract values using `.squeeze()`
+single_row_dict = df.squeeze()
+col1_value = single_row_dict['col1']
+col2_value = single_row_dict['col2']
+
+# Print the extracted values
+print(f"col1 value: {col1_value}")
+print(f"col2 value: {col2_value}")
+
+```
+
+
+### rows division 
 pandas 1.0.5
 ```
     ddd = {
