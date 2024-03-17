@@ -149,7 +149,7 @@ print(new_df)
 ```
 
 
-### Devide REF by othe column
+### Divide REF by other column
 ```
 import pandas as pd
 
@@ -242,7 +242,7 @@ TestSpot: Underbridge Tunnels  Downtown SJ HQ
 TestEnv: UC OpenSky Tunnel LowSpeedGarage  Tunnel-UC
 StartTOW:  163356
 EndTOW: 166780
-
+```
 
 
 ### MIN / MAX PER GROUP
@@ -547,7 +547,7 @@ print(dictionary_from_list)
 dictionary_from_list = {t[0]: t[1:] for t in list_of_tuples}
 ```
 
-### Division in pandas
+### Division in pandas with replacing None
 ```
 import pandas as pd
 import numpy as np  # Import NumPy for missing value handling
@@ -574,7 +574,7 @@ new_df = new_df.fillna(None)  # Uncomment if you prefer None over NaN
 
 print(new_df)
 ```
-### Division in pandas 2
+### Safe Division in pandas 2 using apply()
 ```
 import pandas as pd
 import numpy as np
