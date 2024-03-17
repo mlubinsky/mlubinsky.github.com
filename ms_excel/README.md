@@ -7,9 +7,9 @@ pandas 1.0.5
     'Y': [6.0, 2.0]
 }
     df = pd.DataFrame(ddd)
-    df1 = df[df['A'] =='a']
-    df2 = df[df['A'] == 'b']
-    
+    df1 = df[df['A'] =='a'].reset_index(drop=True)
+    df2 = df[df['A'] == 'b'].reset_index(drop=True)
+
     print(df1)
     print(df2)
 
@@ -29,8 +29,8 @@ if ('a' not in df['A'].tolist()) or ('b' not in df['A'].tolist()):
   print("Elements 'a' and 'b' not found in column A. Division cannot be performed.")
 else:
   # Select rows by value, ensuring correct alignment
-  df1 = df.loc[df['A'] == 'a']
-  df2 = df.loc[df['A'] == 'b']
+  df1 = df.loc[df['A'] == 'a'].reset_index(drop=True)
+  df2 = df.loc[df['A'] == 'b'].reset_index(drop=True)
 
   # Calculate ratios (excluding 'A' column)
   res = df1.iloc[:, 1:].div(df2.iloc[:, 1:], axis=0)
@@ -86,8 +86,8 @@ def calculate_ratios(df, N):
     # Ensure both elements from the tuple exist (at least one row in each filter)
     if len(filtered_df) == 2:
       # Select rows corresponding to tuple elements
-      df1 = filtered_df[filtered_df['A'] == t[0]]
-      df2 = filtered_df[filtered_df['A'] == t[1]]
+      df1 = filtered_df[filtered_df['A'] == t[0]].reset_index(drop=True)
+      df2 = filtered_df[filtered_df['A'] == t[1]].reset_index(drop=True)
       # Calculate ratios (excluding 'A' column)
       ratio_df = df1.iloc[:, 1:].div(df2.iloc[:, 1:], axis=0)
       # Create a new row with tuple string and ratios
@@ -127,8 +127,8 @@ new_data = []
 # Iterating over each tuple in the list
 for pair in tuple_list:
     # Selecting rows corresponding to tuple[0] and tuple[1]
-    row1 = df[df['A'] == pair[0]]
-    row2 = df[df['A'] == pair[1]]
+    row1 = df[df['A'] == pair[0]].reset_index(drop=True)
+    row2 = df[df['A'] == pair[1]].reset_index(drop=True)
     
     # Calculating division for each float column
     division_result = row1.iloc[:, 1:] / row2.iloc[:, 1:]
