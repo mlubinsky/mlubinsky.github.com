@@ -1,4 +1,47 @@
-### rename columns
+
+### Apply modulo 360  to all columns containing the target string in their names
+```
+import pandas as pd
+
+def apply_modulo_360(df, target_str):
+  """
+  This function takes a DataFrame and a target string and applies modulo 360
+  to all columns containing the target string in their names.
+
+  Args:
+      df (pandas.DataFrame): The DataFrame to modify.
+      target_str (str): The target string to identify columns for modification.
+
+  Returns:
+      pandas.DataFrame: The modified DataFrame with modulo 360 applied to target columns.
+  """
+
+  # Filter columns containing the target string
+  filtered_cols = [col for col in df.columns if target_str in col]
+
+  # Ensure all filtered columns have numeric data type (float)
+  if not all(df[col].dtypes == np.float64 for col in filtered_cols):
+      raise ValueError("Not all target columns have numeric data type (float).")
+
+  # Apply modulo 360 operation for selected columns
+  df[filtered_cols] = df[filtered_cols] % 360
+
+  return df
+
+# Create a sample DataFrame
+data = {'col1': [180, 270, 390], 'XXX_col2': [45, 90, 135], 'col3': [10, 20, 30]}
+df = pd.DataFrame(data)
+target_str = "XXX"
+
+# Apply the function to modify the DataFrame
+df_modified = apply_modulo_360(df.copy(), target_str)  # Use a copy to avoid modifying original df
+
+print(df_modified)
+```
+
+
+
+### Rename df columns
 ```
 # Create a sample DataFrame with prefixed columns
 data = {'XXX_col1': [1, 2, 3], 'XXX_col2': [4, 5, 6]}
