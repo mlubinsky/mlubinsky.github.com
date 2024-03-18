@@ -1,4 +1,29 @@
-### Apply 360 modulo to rows where metric name starts from specific pattern
+###   Apply 360 modulo to rows where metric name starts from specific pattern V1
+```
+import pandas as pd
+
+# Sample DataFrame
+data = {'metric': ['XXX123', 'YYY456', 'XXX789'],
+        'float_column1': [100.0, 200.0, 300.0],
+        'float_column2': [150.0, 250.0, 350.0]}
+
+df = pd.DataFrame(data)
+
+# Define a function to update float columns based on the condition
+def update_float_columns(row):
+    if row['metric'].startswith('XXX'):
+        row['float_column1'] = row['float_column1'] % 360
+        row['float_column2'] = row['float_column2'] % 360
+    return row
+
+# Apply the function to each row of the DataFrame
+df = df.apply(update_float_columns, axis=1)
+
+print(df)
+```
+
+
+### Apply 360 modulo to rows where metric name starts from specific pattern V2
 ```
 import pandas as pd
 
