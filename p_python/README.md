@@ -1,3 +1,9 @@
+
+### Build a dictionary with list elements as keys and their indices as values
+
+my_dict = {item: index for index, item in enumerate(my_list)}
+
+
 ### Python notes
 
 https://norvig.com/python-iaq.html
