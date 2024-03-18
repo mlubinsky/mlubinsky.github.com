@@ -1,4 +1,21 @@
-### extract val from 1 row
+### rename columns
+```
+# Create a sample DataFrame with prefixed columns
+data = {'XXX_col1': [1, 2, 3], 'XXX_col2': [4, 5, 6]}
+df = pd.DataFrame(data)
+
+Approach 1
+# Remove prefix using str.replace with regex
+df.columns = df.columns.str.replace('^XXX_', '', regex=True)
+
+Approach 2
+
+# Remove prefix using list comprehension
+new_column_names = [col.replace('XXX_', '') for col in df.columns]
+df.columns = new_column_names
+```
+
+### Extract val from dataframe with 1 row
 ```
 There are two main ways to extract values for specific columns from a pandas DataFrame with exactly one row into a Python variable:
 
