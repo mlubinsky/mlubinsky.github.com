@@ -9,11 +9,14 @@ data = {'metric': ['XXX123', 'YYY456', 'XXX789'],
 
 df = pd.DataFrame(data)
 
+# Find the names of all float columns dynamically
+float_columns = df.select_dtypes(include=['float']).columns
+
 # Define a function to update float columns based on the condition
 def update_float_columns(row):
     if row['metric'].startswith('XXX'):
-        row['float_column1'] = row['float_column1'] % 360
-        row['float_column2'] = row['float_column2'] % 360
+        for col in float_columns:
+            row[col] = row[col] % 360
     return row
 
 # Apply the function to each row of the DataFrame
