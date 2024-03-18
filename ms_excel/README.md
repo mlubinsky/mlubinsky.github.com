@@ -1,3 +1,49 @@
+### Apply 360 modulo to rows where metric name starts from specific pattern
+```
+import pandas as pd
+
+def update_dataframe(df):
+  """
+  This function updates a DataFrame by applying modulo 360 to float columns
+  for rows where the 'metric' column value starts with 'XXX'.
+
+  Args:
+      df (pandas.DataFrame): The DataFrame to modify.
+
+  Returns:
+      pandas.DataFrame: The modified DataFrame.
+  """
+
+  # Filter rows where 'metric' starts with 'XXX'
+  filtered_df = df[df['metric'].str.startswith('XXX')]
+
+  # Ensure float columns exist (optional)
+  if not any(df.dtypes[col] == np.float64 for col in df.columns if col != 'metric'):
+      print("No float columns found (excluding 'metric').")
+      return df  # Return original DataFrame if no float columns
+
+  # Select float columns (excluding 'metric')
+  float_cols = [col for col in df.columns if col != 'metric' and df[col].dtypes == np.float64]
+
+  # Apply modulo 360 for selected columns in filtered rows
+  filtered_df[float_cols] = filtered_df[float_cols] % 360
+
+  # Update the original DataFrame with the modified rows
+  df.update(filtered_df)
+
+  return df
+
+# Create a sample DataFrame
+data = {'metric': ['ABC', 'XXX_data1', 'DEF', 'XXX_data2'], 'col1': [180, 270, 390, 45], 'col2': [10, 20, 30, 90]}
+df = pd.DataFrame(data)
+
+# Apply the function to modify the DataFrame
+df_modified = update_dataframe(df.copy())  # Use a copy to avoid modifying original df
+
+print(df_modified)
+```
+
+
 
 ### Apply modulo 360  to all columns containing the target string in their names
 ```
