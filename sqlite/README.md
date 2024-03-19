@@ -181,12 +181,22 @@ http://carlosproal.com/ir/papers/p121-comer.pdf The Ubiquitous B-Tree
 
 ### DuckDB
 
+```
+As DuckDB is an analytics database, it has only minimal support for transactions and parallel write access.
+ You therefore couldn’t use it in applications and APIs that process and store input data arriving arbitrarily. Similarly when multiple concurrent processes read from a writeable database.
+```
+
 https://harlequin.sh/ DuckDB interface
 
 https://github.com/duckdb/duckdb
 
 https://duckdb.org/docs/data/csv
 
+```
+In Python,  DuckDB is for getting the data you want, in the form you want it, from a file / remote place. 
+Polars is for when you want to do something with that data, like visualize it.
+`duckdb.sql("SELECT foo, bar * 2 as bar_times_2 FROM ...").pl()` (now in polars format) -> other stuff
+```
 
 ## JSON
 
