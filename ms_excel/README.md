@@ -75,7 +75,9 @@ for nominator, denominator in ratio_list:
     float_cols = df.select_dtypes(include=[np.float64])
 
     # Calculate division element-wise for float columns
-    division_result = np.true_divide(nominator_row[float_cols].iloc[0], denominator_row[float_cols].iloc[0])
+    # wrong! division_result = np.true_divide(nominator_row[float_cols].iloc[0], denominator_row[float_cols].iloc[0])
+    division_result = np.where(denominator_row[float_cols].iloc[0] == 0, 1,
+                               np.true_divide(nominator_row[float_cols].iloc[0], denominator_row[float_cols].iloc[0]))
 
     # Replace 0 / 0 with 1 using NumPy's where function
     division_result = np.where((division_result == 0) & (denominator_row.iloc[0]['A'] == 0), 1, division_result)
