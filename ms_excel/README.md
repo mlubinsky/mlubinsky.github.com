@@ -1,3 +1,46 @@
+### version 0
+```
+import pandas as pd
+
+# Example DataFrame
+data = {
+    'A': ['nominator1', 'denominator1', 'nominator2', 'denominator2'],
+    'float_col1': [10.0, 20.0, 0.0, 40.0],
+    'float_col2': [5.0, 15.0, 0.0, 35.0]
+}
+
+df = pd.DataFrame(data)
+
+# List of tuples
+tuples_list = [('nominator1', 'denominator1'), ('nominator2', 'denominator2')]
+
+# Create a dictionary to store the results
+results_dict = {}
+
+# Iterate over each tuple
+for tup in tuples_list:
+    nominator_row = df[df['A'] == tup[0]].iloc[0]
+    denominator_row = df[df['A'] == tup[1]].iloc[0]
+
+    nominator_values = nominator_row.drop('A')
+    denominator_values = denominator_row.drop('A')
+
+    # Calculate division
+    result_values = nominator_values / denominator_values
+    
+    # Handling the case where both nominator and denominator are zero
+    result_values[(nominator_values == 0) & (denominator_values == 0)] = 1
+
+    # Store the results in the dictionary
+    results_dict[tup] = result_values.values
+
+# Create a DataFrame from the dictionary
+result_df = pd.DataFrame(results_dict, index=df.columns[1:]).T
+result_df.index = result_df.index.map(str)
+```
+
+
+
 ### Divide row by row with handling 0/0 as 1 (version 1)
 ```
 import pandas as pd
