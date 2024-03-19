@@ -1,4 +1,4 @@
-### version 0
+### Divide row by row with handling 0/0 as 1 (version 0)
 ```
 import pandas as pd
 
