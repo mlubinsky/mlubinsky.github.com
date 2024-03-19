@@ -1,34 +1,53 @@
 ### Divide row by row with handling 0/0 as 1 (version 1)
 ```
 import pandas as pd
+import numpy as np  # Import NumPy for division by zero handling
 
-# Example DataFrame
-data = {
-    'A': ['nominator', 'denominator', 'other', 'other'],
-    'float_col1': [10.0, 20.0, 0.0, 40.0],
-    'float_col2': [5.0, 15.0, 0.0, 35.0]
-}
-
+# Sample DataFrame (replace with your actual data)
+data = {'A': ['Value1', 'Value2', 'Value3', 'Nominator', 'Denominator'],
+        'B': [1.2, 3.4, 5.6, 7.8, 9.1],
+        'C': [2.5, 4.7, 6.9, 10.2, 11.4],
+        # Add more float columns as needed
+        'D': [3.8, 5.1, 7.4, 12.6, 13.8]}
 df = pd.DataFrame(data)
 
-# Selecting nominator and denominator rows
-nominator_row = df[df['A'] == 'nominator'].iloc[0]
-denominator_row = df[df['A'] == 'denominator'].iloc[0]
+# Define list of tuples for nominator-denominator pairs (replace with your actual list)
+ratio_list = [('Nominator', 'Denominator'), ('Value1', 'Value3')]
 
-# Filtering out the 'A' column for division
-nominator_values = nominator_row.drop('A')
-denominator_values = denominator_row.drop('A')
+# Create an empty dictionary to store division results
+division_results = {}
 
-# Calculating the division
-result_values = nominator_values / denominator_values
+# Iterate through each tuple in the list
+for nominator, denominator in ratio_list:
+    # Filter rows based on specific values in column A
+    nominator_row = df[df['A'] == nominator]
+    denominator_row = df[df['A'] == denominator]
 
-# Handling the case where both nominator and denominator are zero
-result_values[(nominator_values == 0) & (denominator_values == 0)] = 1
+    # Check if both nominator and denominator rows are found
+    if len(nominator_row) != 1 or len(denominator_row) != 1:
+        print(f"Error: Nominator '{nominator}' or denominator '{denominator}' row not found, or multiple rows found.")
+        continue  # Skip to the next iteration if rows not found
 
-# Creating a new DataFrame with the result
-result_df = pd.DataFrame(result_values).T
+    # Select only float columns (excluding column A) for division
+    float_cols = df.select_dtypes(include=[np.float64])
 
-print(result_df)
+    # Calculate division element-wise for float columns
+    division_result = np.true_divide(nominator_row[float_cols].iloc[0], denominator_row[float_cols].iloc[0])
+
+    # Replace 0 / 0 with 1 using NumPy's where function
+    division_result = np.where((division_result == 0) & (denominator_row.iloc[0]['A'] == 0), 1, division_result)
+
+    # Store the division result for the specific tuple (string representation)
+    division_results[(nominator, denominator)] = division_result.values.reshape(1, -1)
+
+# Create a new DataFrame from the division results dictionary
+new_df = pd.DataFrame(division_results).T  # Transpose to have ratios as columns
+
+# Create the first column with string presentation of tuples
+new_df.insert(0, 'Ratio', [f"{nom}/{denom}" for nom, denom in ratio_list])
+
+# Print the new DataFrame
+print(new_df)
 
 ```
 
