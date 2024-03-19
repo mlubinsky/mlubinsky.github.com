@@ -1,3 +1,42 @@
+### Divide row by row with handling 0/0 as 1
+```
+import pandas as pd
+import numpy as np  # Import NumPy for division by zero handling
+
+# Sample DataFrame (replace with your actual data)
+data = {'A': ['Value1', 'Value2', 'Value3', 'Nominator', 'Denominator'],
+        'B': [1.2, 3.4, 5.6, 7.8, 9.1],
+        'C': [2.5, 4.7, 6.9, 10.2, 11.4],
+        # Add more float columns as needed
+        'D': [3.8, 5.1, 7.4, 12.6, 13.8]}
+df = pd.DataFrame(data)
+
+# Define values for nominator and denominator rows (replace with your actual values)
+nominator_value = 'Nominator'
+denominator_value = 'Denominator'
+
+# Filter rows based on specific values in column A
+nominator_row = df[df['A'] == nominator_value]
+denominator_row = df[df['A'] == denominator_value]
+
+# Check if both nominator and denominator rows are found
+if len(nominator_row) != 1 or len(denominator_row) != 1:
+    print("Error: Nominator or denominator row not found, or multiple rows found.")
+else:
+    # Calculate division element-wise for each column (excluding column A)
+    division_result = np.true_divide(nominator_row.iloc[0], denominator_row.iloc[0])
+    division_result = division_result.drop('A')  # Remove column A from the result
+
+    # Replace 0 / 0 with 1 using NumPy's where function
+    division_result = np.where((division_result == 0) & (denominator_row.iloc[0]['A'] == 0), 1, division_result)
+
+    # Create a new DataFrame with the calculated division
+    new_df = pd.DataFrame(division_result.values.reshape(1, -1), columns=division_result.index)
+
+    print(new_df)
+```
+
+
 ###   Apply 360 modulo to rows where metric name starts from specific pattern V1
 ```
 import pandas as pd
