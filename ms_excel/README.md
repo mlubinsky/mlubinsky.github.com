@@ -1,4 +1,39 @@
-### Divide row by row with handling 0/0 as 1
+### Divide row by row with handling 0/0 as 1 (version 1)
+```
+import pandas as pd
+
+# Example DataFrame
+data = {
+    'A': ['nominator', 'denominator', 'other', 'other'],
+    'float_col1': [10.0, 20.0, 0.0, 40.0],
+    'float_col2': [5.0, 15.0, 0.0, 35.0]
+}
+
+df = pd.DataFrame(data)
+
+# Selecting nominator and denominator rows
+nominator_row = df[df['A'] == 'nominator'].iloc[0]
+denominator_row = df[df['A'] == 'denominator'].iloc[0]
+
+# Filtering out the 'A' column for division
+nominator_values = nominator_row.drop('A')
+denominator_values = denominator_row.drop('A')
+
+# Calculating the division
+result_values = nominator_values / denominator_values
+
+# Handling the case where both nominator and denominator are zero
+result_values[(nominator_values == 0) & (denominator_values == 0)] = 1
+
+# Creating a new DataFrame with the result
+result_df = pd.DataFrame(result_values).T
+
+print(result_df)
+
+```
+
+
+### Divide row by row with handling 0/0 as 1 (version 2)
 ```
 import pandas as pd
 import numpy as np  # Import NumPy for division by zero handling
