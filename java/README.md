@@ -7,6 +7,9 @@
 
 
 
+https://nipafx.dev/java-visitor-pattern-pointless/
+
+
  ### Modern Java/JVM build practises
 
  https://habr.com/ru/articles/789344/ Maven
