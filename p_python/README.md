@@ -6,13 +6,17 @@ my_dict = {item: index for index, item in enumerate(my_list)}
 Основные типы распределений вероятностей в примерах
 https://habr.com/ru/articles/801101/
 
+### By value or by reference?
+
+https://medium.com/techtofreedom/python-is-neither-call-by-value-nor-call-by-reference-2a0c8f6f4a8f
+
 ### Python notes
 
 https://norvig.com/python-iaq.html
 
 https://github.com/gto76/python-cheatsheet
 
-https://medium.com/techtofreedom/python-is-neither-call-by-value-nor-call-by-reference-2a0c8f6f4a8f
+
 
 https://www.pythonlikeyoumeanit.com/index.html
 
