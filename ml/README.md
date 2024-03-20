@@ -8,6 +8,7 @@ https://habr.com/ru/articles/783766/ interview
 
 https://habr.com/ru/companies/megafon/articles/800919/ interview
 
+https://habr.com/ru/articles/800973/  data preparation for ML
 
 Feature Selection Tutorial with Python Examples https://arxiv.org/pdf/2106.06437.pdf
 
