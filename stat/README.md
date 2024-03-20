@@ -1,3 +1,7 @@
+### Основные типы распределений вероятностей в примерах
+
+https://habr.com/ru/articles/801101/
+
 ### Statistical process control
 using SQL
 https://github.com/jchester/spc-kit
