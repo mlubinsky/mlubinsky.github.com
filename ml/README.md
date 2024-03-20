@@ -6,6 +6,8 @@ https://arxiv.org/pdf/1912.13213.pdf Modern Online learning
 
 https://habr.com/ru/articles/783766/ interview
 
+https://habr.com/ru/companies/megafon/articles/800919/ interview
+
 
 Feature Selection Tutorial with Python Examples https://arxiv.org/pdf/2106.06437.pdf
 
