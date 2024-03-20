@@ -3,7 +3,7 @@
 
 my_dict = {item: index for index, item in enumerate(my_list)}
 
-Основные типы распределений вероятностей в примерах
+### Основные типы распределений вероятностей в примерах
 https://habr.com/ru/articles/801101/
 
 ### By value or by reference?
@@ -15,6 +15,8 @@ https://nedbatchelder.com/blog/202403/does_python_have_pointers.html
 https://codebeez.nl/blogs/the-memory-footprint-of-your-python-application/
 
 ### Python notes
+
+https://hynek.me/til/python-portable-binaries/  Python Portable binaries
 
 https://norvig.com/python-iaq.html
 
