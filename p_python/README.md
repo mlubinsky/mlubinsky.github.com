@@ -190,6 +190,8 @@ https://mljar.com/blog/postgresql-dashboard-python/
 
 https://realpython.com/python-seaborn/
 
+https://realpython.com/pandas-plot-python/
+
  http://www.gnuplot.info/
 
  https://github.com/dkogan/gnuplotlib
