@@ -1,3 +1,5 @@
+https://stackoverflow.com/questions/78173460/how-to-divide-row-by-row-for-the-same-float-column-in-python-pandas
+
 ### Divide row by row with handling 0/0 as 1 (version 0)
 ```
 import pandas as pd
