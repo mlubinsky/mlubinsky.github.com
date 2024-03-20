@@ -10,6 +10,8 @@ https://habr.com/ru/articles/801101/
 
 https://medium.com/techtofreedom/python-is-neither-call-by-value-nor-call-by-reference-2a0c8f6f4a8f
 
+https://nedbatchelder.com/blog/202403/does_python_have_pointers.html
+
 ### Python notes
 
 https://norvig.com/python-iaq.html
@@ -176,7 +178,9 @@ https://codeandquery.com/build-scalable-data-pipelines-in-python-using-dlt-5e827
 
 https://towardsdev.com/five-killer-optimization-techniques-that-most-pandas-arent-aware-of-f1e31af2257a
 
-## Plotting: GnuPlot and others
+## Plotting: Seaborn, GnuPlot and others
+
+https://realpython.com/python-seaborn/
 
  http://www.gnuplot.info/
 
