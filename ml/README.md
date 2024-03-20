@@ -10,6 +10,8 @@ https://habr.com/ru/companies/megafon/articles/800919/ interview
 
 https://habr.com/ru/articles/800973/  data preparation for ML
 
+https://habr.com/ru/companies/yandex/articles/800945/ data quantization
+
 Feature Selection Tutorial with Python Examples https://arxiv.org/pdf/2106.06437.pdf
 
 https://arxiv.org/pdf/1905.12787.pdf  The Theory Behind Overfitting, Cross Validation,
