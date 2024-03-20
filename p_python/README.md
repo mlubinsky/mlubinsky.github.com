@@ -3,6 +3,8 @@
 
 my_dict = {item: index for index, item in enumerate(my_list)}
 
+Основные типы распределений вероятностей в примерах
+https://habr.com/ru/articles/801101/
 
 ### Python notes
 
