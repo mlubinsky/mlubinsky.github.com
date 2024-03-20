@@ -12,6 +12,8 @@ https://medium.com/techtofreedom/python-is-neither-call-by-value-nor-call-by-ref
 
 https://nedbatchelder.com/blog/202403/does_python_have_pointers.html
 
+https://codebeez.nl/blogs/the-memory-footprint-of-your-python-application/
+
 ### Python notes
 
 https://norvig.com/python-iaq.html
@@ -177,6 +179,10 @@ https://dataprep.ai/
 https://codeandquery.com/build-scalable-data-pipelines-in-python-using-dlt-5e8275fd3371  DLT
 
 https://towardsdev.com/five-killer-optimization-techniques-that-most-pandas-arent-aware-of-f1e31af2257a
+
+### Postgres Dashboard (Panels and others)
+
+https://mljar.com/blog/postgresql-dashboard-python/
 
 ## Plotting: Seaborn, GnuPlot and others
 
