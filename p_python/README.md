@@ -197,6 +197,8 @@ https://realpython.com/pandas-plot-python/
  https://github.com/dkogan/gnuplotlib
 
  https://github.com/bedbad/justpyplot
+
+ https://github.com/man-group/dtale
  
 
 ### Pipeline
