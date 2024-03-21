@@ -1,5 +1,43 @@
 ### Monitor folder for new exe files:
 ```
+import time
+import os
+from datetime import datetime
+
+# Folder to monitor
+folder_to_monitor = "C:\\path\\to\\your\\folder"
+
+# Interval between checks (in seconds)
+check_interval = 5 * 60  # 5 minutes
+
+# Set to keep track of executables that have already been logged
+logged_executables = set()
+
+while True:
+    # Get the current list of .exe files in the folder
+    current_executables = {file for file in os.listdir(folder_to_monitor) if file.endswith('.exe')}
+
+    # Determine the new executables by subtracting the set of logged executables from the current set
+    new_executables = current_executables - logged_executables
+
+    if new_executables:
+        # Update the logged executables set
+        logged_executables.update(new_executables)
+
+        # Create a timestamp for the new text file
+        timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+
+        # Create a new text file and write the names of the new executables
+        with open(f"NEW_{timestamp}.txt", "w") as log_file:
+            for exe in new_executables:
+                log_file.write(exe + "\n")
+    
+    # Wait for the specified interval before checking again
+    time.sleep(check_interval)
+```
+
+### Monitor folder for new exe files:
+```
 import os
 import time
 from datetime import datetime
