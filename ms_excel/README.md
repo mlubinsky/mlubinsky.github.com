@@ -1,3 +1,51 @@
+### Monitor folder for new exe files:
+```
+import os
+import time
+from datetime import datetime
+#------------------------------
+def monitor_folder(folder_path):
+#-------------------------------
+
+  # Get all existing files in the folder
+  existing_files = set(os.listdir(folder_path))
+
+  while True:
+    # Wait for 5 minutes
+    time.sleep(60 * 5)
+
+    # Get all files in the folder after the wait
+    current_files = set(os.listdir(folder_path))
+
+    # Identify new files (not present earlier)
+    new_files = current_files - existing_files
+
+    # Filter new files for .exe extension
+    new_exe_files = [f for f in new_files if f.endswith('.exe')]
+
+    if new_exe_files:
+      # Create timestamp for the log file name
+      timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+      log_filename = f"NEW_{timestamp}.txt"
+      log_filepath = os.path.join(folder_path, log_filename)
+
+      # Write new .exe file names to the log file
+      with open(log_filepath, 'w') as logfile:
+        logfile.writelines(f"{filename}\n" for filename in new_exe_files)
+
+      # Update existing files for next iteration
+      existing_files.update(current_files)
+
+if __name__ == "__main__":
+  # Replace 'C:/path/to/your/folder' with the actual folder path
+  folder_path = 'C:/path/to/your/folder'
+  monitor_folder(folder_path)
+```
+
+
+
+
+### Divide row by row 
 https://stackoverflow.com/questions/78173460/how-to-divide-row-by-row-for-the-same-float-column-in-python-pandas
 
 ### Divide row by row with handling 0/0 as 1 (version 0)
