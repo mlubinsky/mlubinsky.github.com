@@ -1,16 +1,12 @@
 ### Monitor 3
 ```
-Python
+
 import os
 import time
 from datetime import datetime
-
+#-------------------------------
 def monitor_folder(folder_path):
-  """Monitors a folder for new executable files and logs them to a text file.
-
-  Args:
-    folder_path: The path to the folder to monitor.
-  """
+#-------------------------------
   # Get all existing files and their last modification times
   existing_files = {}
   for filename in os.listdir(folder_path):
@@ -19,8 +15,7 @@ def monitor_folder(folder_path):
     existing_files[filename] = last_modified
 
   while True:
-    # Wait for 5 minutes
-    time.sleep(60 * 5)
+    time.sleep(60 * 5)     # Wait for 5 minutes
 
     # Get all files and their last modification times
     current_files = {}
