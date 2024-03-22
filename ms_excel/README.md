@@ -1,3 +1,63 @@
+### Monitor 3
+```
+Python
+import os
+import time
+from datetime import datetime
+
+def monitor_folder(folder_path):
+  """Monitors a folder for new executable files and logs them to a text file.
+
+  Args:
+    folder_path: The path to the folder to monitor.
+  """
+  # Get all existing files and their last modification times
+  existing_files = {}
+  for filename in os.listdir(folder_path):
+    filepath = os.path.join(folder_path, filename)
+    last_modified = os.path.getmtime(filepath)
+    existing_files[filename] = last_modified
+
+  while True:
+    # Wait for 5 minutes
+    time.sleep(60 * 5)
+
+    # Get all files and their last modification times
+    current_files = {}
+    for filename in os.listdir(folder_path):
+      filepath = os.path.join(folder_path, filename)
+      last_modified = os.path.getmtime(filepath)
+      current_files[filename] = last_modified
+
+    # Identify new files based on modification time
+    new_files = []
+    for filename, modified_time in current_files.items():
+      if filename not in existing_files or modified_time > existing_files[filename]:
+        new_files.append(filename)
+
+    # Filter new files for .exe extension
+    new_exe_files = [f for f in new_files if f.endswith('.exe')]
+
+    if new_exe_files:
+      # Create timestamp for the log file name
+      timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+      log_filename = f"NEW_{timestamp}.txt"
+      log_filepath = os.path.join(folder_path, log_filename)
+
+      # Write new .exe file names to the log file
+      with open(log_filepath, 'w') as logfile:
+        logfile.writelines(f"{filename}\n" for filename in new_exe_files)
+
+    # Update existing files for next iteration
+    existing_files = current_files
+
+if __name__ == "__main__":
+  # Replace 'C:/path/to/your/folder' with the actual folder path
+  folder_path = 'C:/path/to/your/folder'
+  monitor_folder(folder_path)
+```
+
+
 ### Monitor folder for new exe files:
 ```
 import time
