@@ -42,6 +42,11 @@ Read large file:
 https://tonylixu.medium.com/python-tips-how-to-hand-large-files-84fbbc464a75
 
 
+### Dunder methods __xxx___
+
+https://www.pythonmorsels.com/every-dunder-method/
+
+
 ### Default arguments pitfall
 ```
 def foo( bar=[]):
