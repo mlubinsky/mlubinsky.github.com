@@ -10,6 +10,8 @@ https://news.ycombinator.com/item?id=39793505
 
 https://python.plainenglish.io/top-5-python-frontend-libraries-for-data-science-91261a65e366
 
+eel https://www.youtube.com/watch?v=Bh8pYfwFjA0
+
 ### Trame 
 https://kitware.github.io/trame/
 
