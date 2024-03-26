@@ -1,3 +1,52 @@
+###
+```
+import requests
+import time
+
+# Function to send a job to the server
+def submit_job(data):
+    response = requests.post("http://example.com/submit", json=data)
+    if response.status_code == 200:
+        return response.json().get('job_id')
+    else:
+        print("Failed to submit job")
+        return None
+
+# Function to check the status of a job
+def check_job_status(job_id):
+    response = requests.get(f"http://example.com/status/{job_id}")
+    if response.status_code == 200:
+        return response.json().get('status')
+    else:
+        print(f"Failed to check status for job {job_id}")
+        return None
+
+# Function to continuously check the status of all submitted jobs
+def monitor_jobs(job_ids):
+    completed_jobs = set()
+    while job_ids:
+        for job_id in list(job_ids):  # Convert to list to avoid RuntimeError for set size change during iteration
+            status = check_job_status(job_id)
+            if status == "completed":
+                print(f"SUCCESS: Job {job_id} completed.")
+                job_ids.remove(job_id)
+                completed_jobs.add(job_id)
+            elif status is None:
+                # Handle cases where check_job_status could not retrieve status
+                job_ids.remove(job_id)
+        time.sleep(5)  # Wait for 5 seconds before checking again
+    return completed_jobs
+
+# Example usage
+if __name__ == "__main__":
+    # Submit a few jobs and collect their IDs
+    job_data = [{"data": "job1"}, {"data": "job2"}, {"data": "job3"}]
+    job_ids = set(submit_job(data) for data in job_data if submit_job(data))
+
+    # Monitor the status of submitted jobs
+    monitor_jobs(job_ids)
+```
+
 ### submit_job.py
 ```
 import requests
