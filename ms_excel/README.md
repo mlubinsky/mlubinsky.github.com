@@ -5,7 +5,76 @@ There is another HTTP API call which allows to check the status for the given jo
 When status=True it means the given job is completed.
 This job creates the folder named by job_id and put some files into it.
 I need to launch another python program after the job is completed.
+```
+def submit_job():
+    # Replace with actual URL for submitting jobs
+    url = "http://your-server-address/submit-job"
+    response = requests.post(url, ...)  # Replace with required data
+    job_id = response.json()["job_id"]  # Extract job_id from response
+    return job_id
 
+def check_job_status(job_id):
+    # Replace with actual URL for checking job status
+    url = f"http://your-server-address/job-status/{job_id}"
+    response = requests.get(url)
+    return response.json()["status"]  # Extract status from response
+
+
+job_id = submit_job()
+
+while True:
+    job_status = check_job_status(job_id)
+    if job_status:
+        # Job is completed, launch the other Python program
+        subprocess.run(["python", "path/to/other/script.py", job_id])  # Replace with actual path and arguments
+        break
+    else:
+        # Job is not yet completed, wait and check again
+        time.sleep(5)  # Adjust waiting time as needed
+
+```
+Yet another code:
+```
+import requests
+import time
+import subprocess
+
+
+def submit_job():
+    # Replace with actual URL for submitting jobs
+    url = "http://your-server-address/submit-job"
+    response = requests.post(url, ...)  # Replace with required data
+    job_id = response.json()["job_id"]  # Extract job_id from response
+    return job_id
+
+
+def check_job_status(job_id):
+    # Replace with actual URL for checking job status
+    url = f"http://your-server-address/job-status/{job_id}"
+    response = requests.get(url)
+    return response.json()["status"]  # Extract status from response
+
+
+def launch_other_script(job_id):
+    # Replace with actual path and arguments
+    subprocess.run(["python", "path/to/other/script.py", job_id])
+
+
+def main():
+    while True:
+        job_id = submit_job()
+        launch_other_script(job_id)  # Launch other script immediately after submission
+        job_status = check_job_status(job_id)
+        while not job_status:
+            # Job is not completed, wait and check again
+            time.sleep(5)  # Adjust waiting time as needed
+            job_status = check_job_status(job_id)
+        # Job completed, continue to the next iteration
+
+
+if __name__ == "__main__":
+    main()
+```
 
 ### Monitor 3
 ```
