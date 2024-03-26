@@ -1,3 +1,12 @@
+### requests
+There is Python program which from time to time sends HTTP  POST call to server using Pythons requests library.
+This HTTP call push some task into the server queue, the server returns back the assigned job_id.
+There is another HTTP API call which allows to check the status for the given job_id.
+When status=True it means the given job is completed.
+This job creates the folder named by job_id and put some files into it.
+I need to launch another python program after the job is completed.
+
+
 ### Monitor 3
 ```
 
