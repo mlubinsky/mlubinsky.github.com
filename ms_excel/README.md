@@ -1,11 +1,79 @@
-### requests
+### submit_job.py
+```
+import requests
+
+def submit_job():
+    # Replace with actual URL for submitting jobs
+    url = "http://your-server-address/submit-job"
+    response = requests.post(url, ...)  # Replace with required data
+    job_id = response.json()["job_id"]  # Extract job_id from response
+    return job_id
+
+def write_job_id(job_id, filename):
+    with open(filename, "w") as f:
+        f.write(job_id)
+
+if __name__ == "__main__":
+    job_id = submit_job()
+    write_job_id(job_id, "job_ids.txt")  # Replace with desired filename
+    print(f"Job submitted. Job ID: {job_id}")
+
+```
+
+### check_job_status.py
+```
+import requests
+import time
+import subprocess
+
+def read_job_ids(filename):
+    job_ids = []
+    with open(filename, "r") as f:
+        for line in f:
+            job_ids.append(line.strip())
+    return job_ids
+
+def check_job_status(job_id):
+    # Replace with actual URL for checking job status
+    url = f"http://your-server-address/job-status/{job_id}"
+    response = requests.get(url)
+    return response.json()["status"]  # Extract status from response
+
+def launch_other_script(job_id):
+    # Replace with actual path and arguments
+    subprocess.run(["python", "path/to/other/script.py", job_id])
+
+def main():
+    filename = "job_ids.txt"  # Replace with desired filename
+    while True:
+        job_ids = read_job_ids(filename)
+        for job_id in job_ids:
+            status = check_job_status(job_id)
+            if status:
+                launch_other_script(job_id)
+                # Optionally, remove completed job ID from the file
+                job_ids.remove(job_id)
+        if not job_ids:
+            # No pending jobs in the file, wait and check again
+            time.sleep(60)  # Adjust waiting time as needed
+        with open(filename, "w") as f:  # Overwrite with remaining IDs
+            f.writelines(job_ids)
+
+if __name__ == "__main__":
+    main()
+
+```
+
+###
+
+```
 There is Python program which from time to time sends HTTP  POST call to server using Pythons requests library.
 This HTTP call push some task into the server queue, the server returns back the assigned job_id.
 There is another HTTP API call which allows to check the status for the given job_id.
 When status=True it means the given job is completed.
 This job creates the folder named by job_id and put some files into it.
 I need to launch another python program after the job is completed.
-```
+
 def submit_job():
     # Replace with actual URL for submitting jobs
     url = "http://your-server-address/submit-job"
