@@ -64,6 +64,67 @@ if __name__ == "__main__":
 
 ```
 
+### check_job_status_2.py
+```
+import requests
+import time
+import subprocess
+
+def read_job_ids(filename):
+    job_ids = []
+    with open(filename, "r") as f:
+        for line in f:
+            job_ids.append(line.strip())
+    return job_ids
+
+def read_processed_jobs(filename):
+    processed_jobs = set()
+    try:
+        with open(filename, "r") as f:
+            for line in f:
+                processed_jobs.add(line.strip())
+    except FileNotFoundError:
+        pass  # Ignore if the file doesn't exist yet
+    return processed_jobs
+
+def write_processed_jobs(processed_jobs, filename):
+    with open(filename, "w") as f:
+        f.writelines(job_id + "\n" for job_id in processed_jobs)
+
+def check_job_status(job_id):
+    # Replace with actual URL for checking job status
+    url = f"http://your-server-address/job-status/{job_id}"
+    response = requests.get(url)
+    return response.json()["status"]  # Extract status from response
+
+def launch_other_script(job_id):
+    # Replace with actual path and arguments
+    subprocess.run(["python", "path/to/other/script.py", job_id])
+
+
+def main():
+    job_ids_filename = "job_ids.txt"
+    processed_jobs_filename = "processed_jobs.txt"
+
+    processed_jobs = read_processed_jobs(processed_jobs_filename)
+    while True:
+        job_ids = read_job_ids(job_ids_filename)
+        for job_id in job_ids:
+            if job_id not in processed_jobs:
+                status = check_job_status(job_id)
+                if status:
+                    launch_other_script(job_id)
+                    processed_jobs.add(job_id)
+        write_processed_jobs(processed_jobs, processed_jobs_filename)
+
+        if not job_ids:
+            # No pending jobs in the file, wait and check again
+            time.sleep(60)  # Adjust waiting time as needed
+
+if __name__ == "__main__":
+    main()
+```
+
 ###
 
 ```
