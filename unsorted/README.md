@@ -1,5 +1,8 @@
-ChatGPT gemini.google.com https://www.anthropic.com/claude
-https://poe.com/
+- ChatGPT 
+- gemini.google.com
+- https://claude.ai/
+- https://www.anthropic.com/claude
+- https://poe.com/
 
 Делайте что хотите, но пусть это приносит радость
 /Уолт Уитмен/
