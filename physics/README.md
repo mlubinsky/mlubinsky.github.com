@@ -614,6 +614,8 @@ https://www.youtube.com/watch?v=gAFAj3pzvAA
 ### Articles
 https://arxiv.org/abs/2009.06302 what is temperature?
 
+https://www.mdpi.com/1099-4300/22/12/1366
+
 https://www.nature.com/articles/s41598-017-17526-4 . temperature of moving body
 
 https://arxiv.org/abs/2009.05844 classic mechanics and electromagnetism
