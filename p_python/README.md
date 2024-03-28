@@ -46,6 +46,8 @@ https://tonylixu.medium.com/python-tips-how-to-hand-large-files-84fbbc464a75
 
 https://www.pythonmorsels.com/every-dunder-method/
 
+https://habr.com/ru/companies/otus/articles/801595/
+
 
 ### Default arguments pitfall
 ```
@@ -881,6 +883,8 @@ https://habr.com/ru/companies/ruvds/articles/757336/ cProfile  / profile
 https://realpython.com/python-profiling/
 
 ### Fast python
+
+https://habr.com/ru/articles/803607/  multiprocessing
 
 https://github.com/plasma-umass/scalene  memory profiler
 
