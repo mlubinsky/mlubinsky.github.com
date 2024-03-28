@@ -10,6 +10,8 @@ https://habr.com/ru/companies/megafon/articles/800919/ interview
 
 https://habr.com/ru/articles/800973/  data preparation for ML
 
+https://habr.com/ru/users/egaoharu_kensei/publications/articles/
+
 https://stepik.org/course/68260/promo  Free course
 
 https://habr.com/ru/companies/yandex/articles/800945/ data quantization
