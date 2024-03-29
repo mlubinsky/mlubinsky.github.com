@@ -14,6 +14,8 @@ https://www.metricfire.com/blog/grafana-dashboards-from-basic-to-advanced/
 
 https://logit.io/blog/post/top-grafana-dashboards-and-visualisations/
 
+https://habr.com/ru/articles/803527/
+
 ### AWS CloudWatch  
 https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 
