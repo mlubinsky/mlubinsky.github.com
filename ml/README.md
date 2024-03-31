@@ -21,7 +21,7 @@ Feature Selection Tutorial with Python Examples https://arxiv.org/pdf/2106.06437
 https://arxiv.org/pdf/1905.12787.pdf  The Theory Behind Overfitting, Cross Validation,
 Regularization, Bagging, and Boosting: Tutorial
 
-
+https://smunshi.net/entropy-cross-entropy-and-kullback-leibler-divergence.html
 
 Machine Learning Phystech
 https://www.youtube.com/@MachineLearningIS
