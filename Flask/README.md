@@ -31,6 +31,10 @@ https://medium.com/geekculture/streaming-model-inference-using-flask-and-kafka-3
 
 ## Flask
 
+https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+
+https://habr.com/ru/articles/804245/
+
 <https://unix.stackexchange.com/questions/182537/write-python-stdout-to-file-immediately>
 
 <https://stackoverflow.com/questions/38630421/how-to-execute-shell-command-and-stream-output-with-python-and-flask-upon-http-r>
