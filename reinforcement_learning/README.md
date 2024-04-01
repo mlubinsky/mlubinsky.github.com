@@ -1,3 +1,5 @@
+https://habr.com/ru/companies/otus/articles/803041/
+
 https://discord.com/invite/BCfHWaSMkr Aleksei Petrenko
 
 https://arxiv.org/pdf/2304.00803.pdf A Tutorial Introduction to Reinforcement Learning
