@@ -11,6 +11,7 @@ python -m py_compile yourfile.py   # chech what code is valid
 Serialization /desiarizatiom - very good article
 https://realpython.com/python-serialize-data/
 
+https://habr.com/ru/companies/tensor/articles/790282/
 
 python CLI:
 https://medium.com/@martin.heinz/python-cli-tricks-that-dont-require-any-code-whatsoever-e7bdb9409aeb
