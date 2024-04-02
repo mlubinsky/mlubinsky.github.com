@@ -886,6 +886,8 @@ https://realpython.com/python-profiling/
 
 https://habr.com/ru/articles/803607/  multiprocessing
 
+https://habr.com/ru/articles/804917/
+
 https://github.com/plasma-umass/scalene  memory profiler
 
 https://bloomberg.github.io/memray/index.html memory profiler
