@@ -2,6 +2,10 @@ https://www.youtube.com/playlist?list=PLL7QpTxsA4se-mAKKoVOs3VcaP71X_LA-  Stream
 
 ### Spark interview questions 
 
+https://habr.com/ru/companies/beeline_tech/articles/804513/ Оптимизируем параметры запуска приложения Spark. Часть первая
+
+https://habr.com/ru/companies/sberbank/articles/805285/  Как перезапускать PySpark-приложение и зачем это может понадобиться
+
 https://asrathore08.medium.com/spark-interview-question-xiii-e41244e41d7a
 
 https://towardsdatascience.com/1-5-years-of-spark-knowledge-in-8-tips-f003c4743083
