@@ -59,14 +59,29 @@ addSource()
 
 writeAs
 
-#### DataSet/DataStream Tranformations
+#### Operators: DataSet/DataStream Tranformations
+
+Operators transform one or more DataStreams into a new DataStream. Programs can combine multiple transformations into sophisticated dataflow topologies.
+
+https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/dev/datastream/operators/overview/
+
 https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/operators/overview/
 
-- filter
-- map: for every input eleement : 1 output element
-- flatmap:  returns a collection (which can hold none, one, or more elements).
+- filter (DataStream → DataStream)
+- map: for every input eleement : 1 output element (DataStream → DataStream)
+- flatmap:  returns a collection (which can hold none, one, or more elements). (DataStream → DataStream)
 - groupby
 - sum
+- keyBy  (DataStream → KeyedStream)
+- reduce (KeyedStream → DataStream)
+- Window  (KeyedStream → WindowedStream )
+```  
+Windows can be defined on already partitioned KeyedStreams. Windows group the data in each key according to some characteristic (e.g., the data that arrived within the last 5 seconds). See windows for a complete description of windows.
+Java
+dataStream
+  .keyBy(value -> value.f0)
+  .window(TumblingEventTimeWindows.of(Time.seconds(5))); 
+```
 
 ##### Map: 
 получает объект T и в результате возвращает объект типа R; MapFunction строго однократно применяется с каждым элементом объекта DataStream.
