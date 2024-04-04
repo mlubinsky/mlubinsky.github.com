@@ -4,6 +4,8 @@
 
 https://habr.com/ru/companies/domclick/articles/802833/
 
+https://habr.com/ru/articles/805221/
+
 https://twirl.github.io/The-API-Book/index.ru.html
 
 https://www.amazon.com/gp/product/B09RHH44S5/
