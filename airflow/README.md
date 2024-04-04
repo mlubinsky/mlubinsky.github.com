@@ -1,3 +1,5 @@
+https://habr.com/ru/companies/ozonbank/articles/805011/ Мониторинг Apache Airflow. Оценка «прожорливости» тасок
+
 https://asrathore08.medium.com/airflow-interview-questions-iv-cef5100d44c5 
 
 https://medium.com/@patricklowe33/etl-using-docker-python-postgres-airflow-ed3e9508bd2e
