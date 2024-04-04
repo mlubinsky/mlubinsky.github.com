@@ -76,8 +76,10 @@ https://nightlies.apache.org/flink/flink-docs-release-1.16/docs/dev/datastream/o
 - reduce (KeyedStream → DataStream)
 - Window  (KeyedStream → WindowedStream )
 ```  
-Windows can be defined on already partitioned KeyedStreams. Windows group the data in each key according to some characteristic (e.g., the data that arrived within the last 5 seconds). See windows for a complete description of windows.
-Java
+Windows can be defined on already partitioned KeyedStreams.
+Windows group the data in each key according to some characteristic
+(e.g., the data that arrived within the last 5 seconds). 
+Java example:
 dataStream
   .keyBy(value -> value.f0)
   .window(TumblingEventTimeWindows.of(Time.seconds(5))); 
@@ -222,6 +224,12 @@ In many cases, you can process application stream elements independently from ea
 but some cases require managing state, referred to as _stateful stream processing_. 
 
 For example, if we monitor the average running temperature of an IoT sensor, we need to store some values in the state. Also, the state is required to support Flink’s fault-tolerance behavior.
+
+Out of the box, Flink bundles these state backends:
+
+- HashMapStateBackend
+- EmbeddedRocksDBStateBackend
+
 
 #### There are two types of states
 — Operator state: The operator state is related to a single operator - 2 sub types (Broadcast and List State)
