@@ -102,13 +102,27 @@ dataStream
   .window(TumblingEventTimeWindows.of(Time.seconds(5))); 
 ```
 
-
-
-##### Map: 
-получает объект T и в результате возвращает объект типа R; MapFunction строго однократно применяется с каждым элементом объекта DataStream.
-
+#### Map: 
+```
+получает объект T и в результате возвращает объект типа R;
+MapFunction строго однократно применяется с каждым элементом объекта DataStream.
+```
 
 SingleOutputStreamOperator<R> map(MapFunction<T,R> mapper)
+
+```
+All transformations require a user defined functions to be provided by application developer. 
+For example, if we have to map String values to Integer from a data stream, 
+we will transform each value using the MapFunction. 
+MapFunction is used with the DataStreams and user has to implement the business logic 
+for each value in the map method as follows:
+```
+Example:
+```
+class MyMapFunction implements MapFunction<String, Integer> {
+  public Integer map(String value) { return Integer.parseInt(value); }
+};
+```
 
 #### Reduce: 
 ```
@@ -127,20 +141,7 @@ T reduce(T value1, T value2)
 SingleOutputStreamOperator<T> filter(FilterFunction<T> filter)
 
 
-#### Map 
-```
-All transformations require a user defined functions to be provided by application developer. 
-For example, if we have to map String values to Integer from a data stream, 
-we will transform each value using the MapFunction. 
-MapFunction is used with the DataStreams and user has to implement the business logic 
-for each value in the map method as follows:
-```
-Exmaple:
-```
-class MyMapFunction implements MapFunction<String, Integer> {
-  public Integer map(String value) { return Integer.parseInt(value); }
-};
-```
+
 
 ####  CoMapFunctions 
 ```
@@ -272,11 +273,12 @@ Out of the box, Flink bundles these state backends:
     6. Broadcast State
 ```
 #### RichFunction
+```
 Keyed State can only be used in RichFunction. 
-The biggest difference between RichFunction and common and traditional Function is that it has its own lifecycle. 
+The biggest difference between RichFunction and common and traditional Function is
+that it has its own lifecycle. 
 The use of Key State contains the following four steps:
 
-```
  1. Declare the State as the instance variable in the RichFunction.
  2. Perform an initialization assignment operation for the State in the open() method corresponding to the RichFunction.
       2.a The first step of the assignment operation is to create a StateDescriptor and specify a name for the State during the creation. 
@@ -326,7 +328,9 @@ https://medium.com/@knoldus/flink-join-two-data-streams-1cc40d18a7c7
                     }));
   ```
   
-  Now, join the salary data stream and department data stream on a key id of an individual which is common in both the streams. After joining, The resultant data stream will have all the information in one go -: id, name, salary, and department of an individual.
+  Now, join the salary data stream and department data stream on a key id of an individual which is common in both the streams. After joining, 
+  
+ The resultant data stream will have all the information in one go -: id, name, salary, and department of an individual.
 ```
 final DataStream<Tuple4<Integer, String, String, Double>> joinedStream =
                  salaryStream.join(departmentStream)
@@ -338,7 +342,11 @@ final DataStream<Tuple4<Integer, String, String, Double>> joinedStream =
                                     new Tuple4<>(salaryDetail.f0, salaryDetail.f1, departmentDetail.f1, salaryDetail.f2),
                                     TypeInformation.of(new TypeHint<Tuple4<Integer, String, String, Double>>() {}));
 ```  
-Here, using a common window for both the stream. We want a tumbling window and window to be based on processing time that’s why using TumblinProcessingTimeWindows Class. The window size is 30 sec which means all entities from both the streams that come within 10 seconds will be included in one window. Then apply JoinFunction to perform join on both the streams and get the resultant complete joined information of an individual.
+Here, using a common window for both the stream. We want a tumbling window and window to be based on processing time that’s why using TumblinProcessingTimeWindows Class. 
+
+The window size is 30 sec which means all entities from both the streams that come within 10 seconds will be included in one window. 
+
+Then apply JoinFunction to perform join on both the streams and get the resultant complete joined information of an individual.
   
   
 #### Dataset Joins
@@ -359,8 +367,9 @@ Flink also let the app developers specify join hints. There are six type of join
 This will use the default system optimizations while doing the join operations. Hence it’s optional.
 
 #### BROADCAST_HASH_FIRST: 
+```
 Flink is a distributed stream processing and when we are joining two different data sets or streams, both of those can be on different nodes. Joining data from different nodes can be quite expensive operation. If one of the dataset is small, we can move it to the memory of the other nodes so that whenever they are joining with each other they perform the join operation from the data in the memory and avoid the shuffling of data among different nodes. This hint will broadcast the first dataset to the different nodes before performing the join.
-
+```
 #### BROADCAST_HASH_SECOND: 
 It is similar to the BROADCAST_HASH_FIRST except we move the second data set into the memory of the nodes for join operations to reduce shuffling.
 
@@ -559,10 +568,6 @@ DeltaEvictor: takes DeltaFunction and threshold  args, computes delta betweeen l
  You cat create your own Evictor based on Evictoe interfacre
  
 ### Watermarks, allowed lateness, late elements
- 
- 
- 
- 
 
 ```
 DataStream<Tuple5<String,String, String, Integer, Integer>> mapped
