@@ -2,6 +2,9 @@ https://www.youtube.com/playlist?list=PLL7QpTxsA4se-mAKKoVOs3VcaP71X_LA-  Stream
 
 ### Spark interview questions 
 
+https://habr.com/ru/articles/805143/ 3 способа запуска Spark в Kubernetes из Airflow
+
+
 https://habr.com/ru/companies/beeline_tech/articles/804513/ Оптимизируем параметры запуска приложения Spark. Часть первая
 
 https://habr.com/ru/companies/sberbank/articles/805285/  Как перезапускать PySpark-приложение и зачем это может понадобиться
