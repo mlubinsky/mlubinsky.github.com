@@ -63,9 +63,15 @@ writeAs
 #### Keyed DataStream
 
 ```
-If you want to use keyed state, you first need to specify a key on a DataStream that should be used to partition the state (and also the records in the stream themselves). You can specify a key using keyBy(KeySelector) in Java/Scala API or key_by(KeySelector) in Python API on a DataStream. This will yield a KeyedStream, which then allows operations that use keyed state.
+If you want to use keyed state, you first need to specify a key on a DataStream
+that should be used to partition the state (and also the records in the stream themselves).
+ You can specify a key using keyBy(KeySelector) in Java/Scala API
+or key_by(KeySelector) in Python API on a DataStream.
+This will yield a KeyedStream, which then allows operations that use keyed state.
 
-A key selector function takes a single record as input and returns the key for that record. The key can be of any type and must be derived from deterministic computations.
+A key selector function takes a single record as input
+and returns the key for that record.
+The key can be of any type and must be derived from deterministic computations.
 ```
 
 
