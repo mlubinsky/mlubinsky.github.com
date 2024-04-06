@@ -1,3 +1,5 @@
+https://habr.com/ru/companies/otus/articles/805801/
+
 https://www.youtube.com/hashtag/timeseries
 
 https://habr.com/ru/companies/mvideo/articles/769756/ TS analysis with Python
