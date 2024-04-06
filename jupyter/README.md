@@ -1,5 +1,6 @@
 https://habr.com/ru/articles/805271/   Pandas
 
+https://habr.com/ru/companies/otus/articles/805801/ Time series
 
 https://arrow.apache.org/datafusion/user-guide/introduction.html  Apache DataFusion 
 
