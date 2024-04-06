@@ -32,6 +32,8 @@ https://www.youtube.com/@MachineLearningIS
 Доп. главы машинного обучения, Карпачёв Н.Е.
 https://www.youtube.com/watch?v=Cs5NuVseHxU
 
+https://habr.com/ru/companies/otus/articles/805801/ Time series, clustering
+
 ### ML Notebooks
 
 https://github.com/ageron/handson-ml3
