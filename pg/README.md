@@ -388,6 +388,8 @@ FROM   cte;
 
 ### Postgres crosstab
 
+https://blog.aurelianix.com/2024/04/04/postgresql-and-its-annoying-crosstab/
+
 https://learnsql.com/blog/creating-pivot-tables-in-postgresql-using-the-crosstab-function/
 
 https://www.postgresonline.com/article_pfriendly/283.html
