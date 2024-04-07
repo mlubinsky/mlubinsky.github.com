@@ -1,5 +1,12 @@
 https://habr.com/ru/articles/803671/ Diagram buider
 
+https://schemaspy.org/
+
+
+
+
+https://news.ycombinator.com/item?id=39955944
+
 https://vue.tufts.edu/  VUE
 
 https://habr.com/ru/companies/epam_systems/articles/538018/
