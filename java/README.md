@@ -1,3 +1,5 @@
+https://habr.com/ru/articles/806027/  Java for interview
+ 
  http://whichjdk.com/
 
  https://sdkman.io/install
