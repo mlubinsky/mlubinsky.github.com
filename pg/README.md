@@ -1,3 +1,5 @@
+https://habr.com/ru/companies/otus/articles/804281/  Config
+
 Postgres is enough:
 
 https://habr.com/ru/articles/794839/
