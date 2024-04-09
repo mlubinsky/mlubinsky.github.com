@@ -1,5 +1,7 @@
 https://www.youtube.com/playlist?list=PLL7QpTxsA4se-mAKKoVOs3VcaP71X_LA-  Streaming systems
 
+https://habr.com/ru/articles/806287/ Python + Spark
+
 ### Spark interview questions 
 
 https://habr.com/ru/articles/805143/ 3 способа запуска Spark в Kubernetes из Airflow
