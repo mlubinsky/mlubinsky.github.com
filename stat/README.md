@@ -2,6 +2,8 @@
 
 https://habr.com/ru/articles/801101/
 
+https://habr.com/ru/articles/807051/ Индуктивная статистика: доверительные интервалы, предельные ошибки, размер выборки и проверка гипотез
+
 ### Statistical process control
 using SQL
 https://github.com/jchester/spc-kit
