@@ -1,3 +1,5 @@
+https://habr.com/ru/articles/807501/ init
+
 https://blog.gitbutler.com/git-tips-and-tricks/
 
 https://jvns.ca/blog/2024/02/01/dealing-with-diverged-git-branches/
