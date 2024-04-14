@@ -12,6 +12,7 @@ https://www.amazon.com/Stream-Processing-Apache-Flink-Implementation/dp/14919742
 https://data-flair.training/blogs/apache-flink-books/
 
 
+https://datorios.com/
 
 https://www.kdnuggets.com/how-to-digest-15-billion-logs-per-day-and-keep-big-queries-within-1-second
 
