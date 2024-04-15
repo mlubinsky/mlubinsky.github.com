@@ -4,6 +4,9 @@ https://habr.com/ru/articles/801101/
 
 https://habr.com/ru/articles/807051/ Индуктивная статистика: доверительные интервалы, предельные ошибки, размер выборки и проверка гипотез
 
+
+https://habr.com/ru/articles/217545/ Как правильно лгать с помощью статистики
+
 ### Statistical process control
 using SQL
 https://github.com/jchester/spc-kit
