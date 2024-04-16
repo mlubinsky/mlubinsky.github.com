@@ -10,6 +10,10 @@ https://twirl.github.io/The-API-Book/index.ru.html
 
 https://www.amazon.com/gp/product/B09RHH44S5/
 
+### DATA SHARDING
+
+https://habr.com/ru/articles/807931/
+
 ### System design interview
 
  Gaurav Sen: https://www.youtube.com/@gkcs
