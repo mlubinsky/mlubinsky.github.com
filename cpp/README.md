@@ -2,6 +2,7 @@ https://habr.com/ru/post/538954/ chain of responsibility and command design patt
 
 https://habr.com/ru/post/545946/ embedding any file to c/c++
 
+https://habr.com/ru/companies/yandex_praktikum/articles/807387/  lot of cpp links
 
 ## Macros
 
