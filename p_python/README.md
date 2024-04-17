@@ -14,6 +14,14 @@ https://nedbatchelder.com/blog/202403/does_python_have_pointers.html
 
 https://codebeez.nl/blogs/the-memory-footprint-of-your-python-application/
 
+### f-string
+https://pybit.es/articles/python-f-string-codes-i-use-every-day/
+```
+print(f"Example 2: {year}") # Example 2: 2022
+print(f"Example 3: {2 + 2}") # Example 3: 4
+text = "Data Science Blog"
+print(f"{text=}")  # text='Data Science Blog'
+```
 ### Python notes
 
 https://hynek.me/til/python-portable-binaries/  Python Portable binaries
