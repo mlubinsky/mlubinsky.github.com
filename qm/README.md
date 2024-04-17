@@ -1,4 +1,6 @@
 https://arxiv.org/pdf/quant-ph/0007045.pdf
+
+https://www.scottaaronson.com/democritus/lec9.html
 ```
 From a general point of view, we need three ingredients:
 • a space of states, that we denote as S,
