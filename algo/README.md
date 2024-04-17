@@ -3,6 +3,8 @@ https://the-algorithms.com/
 Data Structures for Data-Intensive apps:
 https://cs-people.bu.edu/mathan/publications/fnt23-athanassoulis.pdf 
 
+https://habr.com/ru/articles/808511/ Дерево отрезков
+
 ### Probabilistic data structures: Bloom filter  Hyperloglog
  
 https://towardsdatascience.com/how-to-store-and-query-100-million-items-using-just-77mb-with-python-bloom-filters-6b3e8549f032
