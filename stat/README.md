@@ -345,6 +345,9 @@ https://habr.com/ru/companies/otus/articles/793678/
 https://statisticsbyjim.com/basics/z-score
 
 ### Correlation
+
+https://towardsdatascience.com/a-new-coefficient-of-correlation-64ae4f260310
+
 https://habr.com/ru/post/683442/
 
 ### Casual inference
