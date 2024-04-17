@@ -2129,6 +2129,8 @@ func_name(f)
 
 https://medium.com/techtofreedom/9-python-built-in-decorators-that-optimize-your-code-significantly-bc3f661e9017
 
+https://medium.com/codex/unwrapping-the-power-of-python-a-quick-guide-to-wrappers-and-decorators-db442dd89ae2
+
 https://medium.com/@ayush-thakur02/python-decorators-that-can-reduce-your-code-by-half-b19f673bc7d8
 
 https://habr.com/ru/articles/750312/
