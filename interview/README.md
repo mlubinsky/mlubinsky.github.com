@@ -1,3 +1,10 @@
+```
+Google Advanced Data Analytics Professional Certificate | Coursera
+Microsoft Certified: Power BI Data Analyst Associate - Certifications | Microsoft Learn
+AWS Certified Machine Learning - Specialty Certification | AWS Certification | AWS (amazon.com)
+Microsoft Certified: Azure Data Scientist Associate
+```
+
 https://relational.ai/careers/ JOB
 
 https://habr.com/ru/articles/794556/
