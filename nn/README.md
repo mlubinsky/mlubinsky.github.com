@@ -14,6 +14,13 @@ https://www.linkedin.com/feed/update/urn:li:activity:7161083292249669632/
 
 https://github.com/fastai/fastbook
 
+
+### Embeddings
+
+https://bawolf.substack.com/p/embeddings-are-a-good-starting-point
+
+Embeddings are points in many-dimensional space, up to thousands of dimensions. 
+
 ### Transformers
 
 https://www.youtube.com/watch?v=3hL1KCI5iVY
