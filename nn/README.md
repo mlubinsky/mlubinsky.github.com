@@ -14,7 +14,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7161083292249669632/
 
 https://github.com/fastai/fastbook
 
-
+https://habr.com/ru/companies/selectel/articles/808335/  Что такое дрифт ML-моделей и как его мониторить?
 https://github.com/anthropics/anthropic-cookbook
 
 ### Embeddings
