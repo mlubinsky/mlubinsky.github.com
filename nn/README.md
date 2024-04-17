@@ -15,6 +15,8 @@ https://www.linkedin.com/feed/update/urn:li:activity:7161083292249669632/
 https://github.com/fastai/fastbook
 
 
+https://github.com/anthropics/anthropic-cookbook
+
 ### Embeddings
 
 https://bawolf.substack.com/p/embeddings-are-a-good-starting-point
