@@ -4,6 +4,8 @@ https://habr.com/ru/articles/806287/ PySpark + Kafka
 
 ### Spark interview questions 
 
+https://habr.com/ru/companies/alfa/articles/808415/
+
 https://habr.com/ru/articles/807421/ План запросов на примерах
 
 https://habr.com/ru/articles/805143/ 3 способа запуска Spark в Kubernetes из Airflow
