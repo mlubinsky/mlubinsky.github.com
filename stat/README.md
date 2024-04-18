@@ -380,7 +380,7 @@ https://www.inference.vc/causal-inference-4/
 ### Мир статистических гипотез
 https://habr.com/ru/post/558836/ 
 
-
+https://habr.com/ru/companies/X5Tech/articles/807001/  T-test
 
 ### Anova
 https://davidbergkamp.com/two-way-anova-tukeys-honest-difference-test/
