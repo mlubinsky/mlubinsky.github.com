@@ -1,5 +1,7 @@
 https://arxiv.org/pdf/quant-ph/0007045.pdf
 
+https://www.nobelprize.org/uploads/2018/06/vleck-lecture.pdf QM and magnetism
+
 https://www.scottaaronson.com/democritus/lec9.html
 
 https://www.scottaaronson.com/democritus/default.html
