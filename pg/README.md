@@ -1,5 +1,7 @@
 https://habr.com/ru/companies/otus/articles/804281/  Config
 
+queues in postgres https://news.ycombinator.com/item?id=40077233
+
 Ten years of improvements in PostgreSQL's optimizer (rmarcus.info)
 https://news.ycombinator.com/item?id=40060123
 
