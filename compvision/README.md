@@ -1,3 +1,7 @@
+Book:
+https://books.google.cz/books?id=xtC_EAAAQBAJ&printsec=frontcover&redir_esc=y#v=onepage&q&f=false
+
+
 http://cv-blog.ru/
 
 https://arxiv.org/pdf/1812.01187.pdf .  CNN training tricks for image classification
