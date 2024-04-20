@@ -14,6 +14,9 @@ https://habr.com/ru/users/egaoharu_kensei/publications/articles/
 
 https://stepik.org/course/68260/promo  Free course
 
+ML on graphs: 
+https://storage.googleapis.com/xavierbresson/lectures/CS6208/lecture01_introduction.pdf
+
 Теоретические основы всех популярных алгоритмов машинного обучения и их реализация с нуля на Python
 https://habr.com/ru/articles/804605/
 
