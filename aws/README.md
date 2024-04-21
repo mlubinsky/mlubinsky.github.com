@@ -1,3 +1,5 @@
+https://habr.com/ru/articles/809195/ certification
+
 ### AWS learning
 
 https://explore.skillbuilder.aws/learn/catalog
