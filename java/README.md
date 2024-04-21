@@ -1,3 +1,5 @@
+https://piotrminkowski.com/2022/01/05/useful-unknown-java-features/
+
 https://habr.com/ru/articles/806027/  Java for interview
  
  http://whichjdk.com/
