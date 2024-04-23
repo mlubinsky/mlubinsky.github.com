@@ -1,3 +1,4 @@
+https://habr.com/ru/articles/809751/
 ```
 Apache Druid and Apache Pinot are both fundamentally similar because they store data and process queries on the same nodes,
 deviating from the decoupled architecture of BigQuery. 
