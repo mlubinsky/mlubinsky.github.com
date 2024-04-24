@@ -1,5 +1,7 @@
 https://habr.com/ru/companies/otus/articles/804281/  Config
 
+https://habr.com/ru/companies/karuna/articles/809305/ pgvector
+
 https://habr.com/ru/companies/selectel/articles/807259/ Выжимаем максимум из PostgreSQL
 
 queues in postgres https://docs.hatchet.run/blog/multi-tenant-queues
