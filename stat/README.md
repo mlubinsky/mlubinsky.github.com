@@ -7,6 +7,10 @@ https://habr.com/ru/articles/807051/ Индуктивная статистика
 
 https://habr.com/ru/articles/217545/ Как правильно лгать с помощью статистики
 
+Разбираемся в ROC и AUC
+https://habr.com/ru/companies/otus/articles/809147/
+
+
 ### Statistical process control
 using SQL
 https://github.com/jchester/spc-kit
