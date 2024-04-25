@@ -1,3 +1,5 @@
+https://lobste.rs/s/krkuc9/who_are_your_favorite_tech_youtubers
+
 ### youtube programming
 
 <https://techyaks.com/>
