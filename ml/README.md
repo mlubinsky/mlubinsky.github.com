@@ -14,7 +14,13 @@ https://habr.com/ru/users/egaoharu_kensei/publications/articles/
 
 https://stepik.org/course/68260/promo  Free course
 
-Vector DB : https://habr.com/ru/companies/tochka/articles/809493/
+### Vector DB 
+
+https://habr.com/ru/companies/tochka/articles/809493/
+
+https://swirlaiconnect.com/blog/using-vectors-without-a-vector-database
+
+
 
 ML on graphs: 
 https://storage.googleapis.com/xavierbresson/lectures/CS6208/lecture01_introduction.pdf
