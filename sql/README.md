@@ -974,6 +974,8 @@ HAVING COUNT(person_id) >1
 
 ## Hierarhy and  Recursive SQL
 
+https://www.databasestar.com/hierarchical-data-sql/
+
 https://medium.com/learning-sql/some-of-the-useful-recursive-cte-examples-ddd63bced99a
 
 https://blog.devgenius.io/recursive-cte-demystified-6adc0021813f
