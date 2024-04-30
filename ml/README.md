@@ -61,28 +61,29 @@ https://leanpub.com/insidethemachinelearninginterview/c/CyberMonday2023HugeSale
 
 
 ###  beginner-level projects in Machine Learning!
-```
-- Project1:https://lnkd.in/dWRKJpZF
-- Project2:https://lnkd.in/d7t9XmNX
-- Project3:https://lnkd.in/dGYn3a2S
-- Project4:https://lnkd.in/dAn3bNjS
-- Project5:https://lnkd.in/dXXvWvmM
-- Project6:https://lnkd.in/dCi5BNhF
-- Project7:https://lnkd.in/dQmPp7kX
-- Project8:https://lnkd.in/djWNbaGN
-- Project9:https://lnkd.in/drzMdCmE
-- Project10:https://lnkd.in/dXav4Ubi
-- Project11:https://lnkd.in/dsRgUEva
-- Project12:https://lnkd.in/dXhjEEtA
-- Project13:https://lnkd.in/dS6_Rih9
-- Project14:https://lnkd.in/dn2NdE_a
-- Project15:https://lnkd.in/dugHuCfw
-- Project16:https://lnkd.in/dydKg-gS
-- Project17:https://lnkd.in/dAZ_v2s5
-- Project18:https://lnkd.in/dWfYDqZq
-- Project19:https://lnkd.in/d5Db6xAf
+ 
+- Project1: https://lnkd.in/dWRKJpZF  
+- Project2: https://lnkd.in/d7t9XmNX  
+- Project3: https://lnkd.in/dGYn3a2S  
+- Project4: https://lnkd.in/dAn3bNjS  
+- Project5: https://lnkd.in/dXXvWvmM  
+- Project6: https://lnkd.in/dCi5BNhF  
+- Project7: https://lnkd.in/dQmPp7kX  
+- Project8: https://lnkd.in/djWNbaGN  
+- Project9: https://lnkd.in/drzMdCmE  
+- Project10: https://lnkd.in/dXav4Ubi  
+- Project11: https://lnkd.in/dsRgUEva  
+- Project12: https://lnkd.in/dXhjEEtA  
+- Project13: https://lnkd.in/dS6_Rih9  
+- Project14: https://lnkd.in/dn2NdE_a  
+- Project15: https://lnkd.in/dugHuCfw  
+- Project16: https://lnkd.in/dydKg-gS  
+- Project17: https://lnkd.in/dAZ_v2s5  
+- Project18:https://lnkd.in/dWfYDqZq  
+- Project19:https://lnkd.in/d5Db6xAf  
 - Project20:https://lnkd.in/dg8X-sbZ
-```
+  
+ 
 
 
 Математика больших данных (4-5 курсы, осень 2022) - Гасников А.В
@@ -393,6 +394,9 @@ https://stackabuse.com/calculating-spearmans-rank-correlation-coefficient-in-pyt
 http://creatingdata.us/techne/deep_scatterplots/#  Zoomable scatterplot
 
 ### AutoML
+
+https://habr.com/ru/articles/811425/
+
 https://habr.com/ru/post/559130/
 
 
