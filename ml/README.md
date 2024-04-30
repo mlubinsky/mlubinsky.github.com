@@ -14,6 +14,8 @@ https://habr.com/ru/users/egaoharu_kensei/publications/articles/
 
 https://stepik.org/course/68260/promo  Free course
 
+https://habr.com/ru/companies/raft/articles/811371/ error backpropagation
+
 ### Vector DB 
 
 https://habr.com/ru/companies/tochka/articles/809493/
