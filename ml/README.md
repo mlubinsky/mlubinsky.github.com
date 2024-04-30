@@ -16,6 +16,8 @@ https://stepik.org/course/68260/promo  Free course
 
 https://habr.com/ru/companies/raft/articles/811371/ error backpropagation
 
+math behind AlexNet https://towardsdatascience.com/the-math-behind-deep-cnn-alexnet-738d858e5a2f
+
 ### Vector DB 
 
 https://habr.com/ru/companies/tochka/articles/809493/
