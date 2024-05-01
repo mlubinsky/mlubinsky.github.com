@@ -3,7 +3,7 @@ https://habr.com/ru/articles/803671/ Diagram buider
 https://schemaspy.org/
 
 
-
+https://news.ycombinator.com/item?id=40226897
 
 https://news.ycombinator.com/item?id=39955944
 
