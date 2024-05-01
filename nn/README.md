@@ -184,8 +184,11 @@ https://weightagnostic.github.io/. Weight agnostic NN
 
 https://habr.com/ru/post/652295/
 
-The Principles of Deep Learning Theory (book)
- https://arxiv.org/pdf/2106.10165.pdf
+
+
+liquid-neural-network
+
+https://ai.gopubby.com/build-your-own-liquid-neural-network-with-pytorch-6a68582a7acb
 
 ### Diff programming
 https://www.assemblyai.com/blog/differentiable-programming-a-simple-introduction/
@@ -195,6 +198,9 @@ https://news.ycombinator.com/item?id=31000709
 ### 	The Principles of Deep Learning Theory
 
 https://arxiv.org/abs/2106.10165
+
+The Principles of Deep Learning Theory (book)
+ https://arxiv.org/pdf/2106.10165.pdf
 
 https://news.ycombinator.com/item?id=31051540
 
