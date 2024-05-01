@@ -1,3 +1,5 @@
+https://www.sscardapane.it/alice-book
+
 https://vickiboykis.com/what_are_embeddings/
 
 https://habr.com/ru/articles/804119/ Attention is Not All You Need: как менялась архитектура трансформера
