@@ -1,5 +1,7 @@
 DuckDB Book https://www.manning.com/books/duckdb-in-action/
 
+https://medium.com/towards-data-science/duckdb-and-aws-how-to-aggregate-100-million-rows-in-1-minute-3634eef06b79
+
 https://towardsdev.com/sqlite-v-duckdb-e803add4f698  vs DuckDB
 
 https://levelup.gitconnected.com/duckdb-vs-polars-2ff19cc7af41
