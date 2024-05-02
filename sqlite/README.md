@@ -55,6 +55,8 @@ https://habr.com/ru/post/687994/
 
 ### JSON in SQLite
 
+https://rodydavis.com/sqlite/nosql 
+
 https://www.sqlite.org/json1.html
 
 https://news.ycombinator.com/item?id=37082941
