@@ -463,6 +463,8 @@ https://github.com/helix-editor/helix
 
 ## Visual Studio Code
 
+https://habr.com/ru/companies/cdek_blog/articles/811631/
+
 https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker Spell Checker
 
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit   Remote SSH
