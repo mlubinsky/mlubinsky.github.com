@@ -330,7 +330,9 @@ https://stackoverflow.com/questions/18649512/unicodedecodeerror-ascii-codec-cant
 
 
 
+### IntelliJ P
 
+https://www.youtube.com/watch?v=jDHQvfAVfKc
 
 ### IntelliJ Plugins
 avro and parquet viewer:
