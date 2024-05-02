@@ -6,6 +6,8 @@ https://cs-people.bu.edu/mathan/publications/fnt23-athanassoulis.pdf
 https://habr.com/ru/articles/808511/ Дерево отрезков
 
 ### Probabilistic data structures: Bloom filter  Hyperloglog
+
+https://justinjaffray.com/a-charming-algorithm-for-count-distinct/
  
 https://towardsdatascience.com/how-to-store-and-query-100-million-items-using-just-77mb-with-python-bloom-filters-6b3e8549f032
 
