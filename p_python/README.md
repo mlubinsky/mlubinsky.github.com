@@ -1,5 +1,9 @@
 https://www.pythonmorsels.com/time-complexities/
 
+high - quality python code
+https://news.ycombinator.com/item?id=40085887
+
+
 ### Build a dictionary with list elements as keys and their indices as values
 
 my_dict = {item: index for index, item in enumerate(my_list)}
