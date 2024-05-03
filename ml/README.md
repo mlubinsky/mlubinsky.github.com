@@ -26,7 +26,7 @@ https://habr.com/ru/companies/tochka/articles/809493/
 
 https://swirlaiconnect.com/blog/using-vectors-without-a-vector-database
 
-
+https://duckdb.org/2024/05/03/vector-similarity-search-vss.html
 
 ML on graphs: 
 https://storage.googleapis.com/xavierbresson/lectures/CS6208/lecture01_introduction.pdf
