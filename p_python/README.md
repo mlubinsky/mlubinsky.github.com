@@ -11,6 +11,8 @@ https://habr.com/ru/articles/801101/
 
 https://medium.com/techtofreedom/python-is-neither-call-by-value-nor-call-by-reference-2a0c8f6f4a8f
 
+https://www.pythonmorsels.com/variables-are-pointers/
+
 https://nedbatchelder.com/blog/202403/does_python_have_pointers.html
 
 https://codebeez.nl/blogs/the-memory-footprint-of-your-python-application/
