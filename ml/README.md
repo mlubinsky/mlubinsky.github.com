@@ -20,6 +20,8 @@ math behind AlexNet https://towardsdatascience.com/the-math-behind-deep-cnn-alex
 
 ### Vector DB 
 
+https://www.youtube.com/watch?v=035I2WKj5F0
+
 https://habr.com/ru/companies/tochka/articles/809493/
 
 https://swirlaiconnect.com/blog/using-vectors-without-a-vector-database
