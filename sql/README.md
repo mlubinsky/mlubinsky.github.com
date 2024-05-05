@@ -223,6 +223,8 @@ order by product;
 
 ### Window functions
 
+https://towardsdatascience.com/understand-sql-window-functions-once-and-for-all-4447824c1cb4
+
 https://habr.com/ru/post/664000/
 
 RANK, DENSE_RANK, NTILE ROW_NUMBER, CUME_DIST
