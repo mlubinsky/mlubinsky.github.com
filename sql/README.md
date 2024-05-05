@@ -22,6 +22,8 @@ https://news.ycombinator.com/item?id=37641628
 
 ###  Advanced Interview questions
 
+https://medium.com/@mtrentz/answer-business-questions-effectively-with-these-sql-tricks-b20555db48c8
+
 Задача двумерной упаковки интервалов
 https://habr.com/ru/companies/otus/articles/801487/
 
