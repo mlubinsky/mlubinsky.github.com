@@ -238,6 +238,8 @@ https://www.youtube.com/watch?v=IIvfqfKkiio
 
 PCA https://news.ycombinator.com/item?id=30876293
 
+https://habr.com/ru/articles/811437/ отличия PCA от UMAP и t-SNE
+
 ### Automatic differentiation JAX
 
 https://arxiv.org/pdf/2110.06209.pdf  A Brief Introduction to Automatic Differentiation for
