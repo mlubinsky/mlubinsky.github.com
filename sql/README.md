@@ -24,6 +24,8 @@ https://news.ycombinator.com/item?id=37641628
 
 https://medium.com/@mtrentz/answer-business-questions-effectively-with-these-sql-tricks-b20555db48c8
 
+https://medium.com/illumination/this-is-exactly-how-i-use-sql-at-work-as-a-data-analyst-141f0d178d7c
+
 Задача двумерной упаковки интервалов
 https://habr.com/ru/companies/otus/articles/801487/
 
