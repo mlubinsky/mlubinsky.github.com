@@ -22,6 +22,8 @@ https://habr.com/ru/companies/raft/articles/811371/ error backpropagation
 
 math behind AlexNet https://towardsdatascience.com/the-math-behind-deep-cnn-alexnet-738d858e5a2f
 
+https://nuancesprog.ru/computer-science/
+
 ### Vector DB 
 
 https://www.youtube.com/watch?v=035I2WKj5F0
