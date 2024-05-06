@@ -290,10 +290,6 @@ https://notes.eatonphil.com/whats-the-big-deal-about-key-value-databases.html
 
 https://news.ycombinator.com/item?id=32566851
 
-###  Storing trees in database:
-
-https://habr.com/ru/articles/812601/ Древовидные структуры в SQL
-https://habr.com/ru/company/bimeister/blog/672634/
 
 ### DBT
 https://habr.com/ru/post/670062/
@@ -988,6 +984,9 @@ HAVING COUNT(person_id) >1
 ## Hierarhy and  Recursive SQL
 
 https://habr.com/ru/articles/812601/ Древовидные структуры в SQL 
+
+https://habr.com/ru/company/bimeister/blog/672634/
+
 
 https://www.databasestar.com/hierarchical-data-sql/
 
