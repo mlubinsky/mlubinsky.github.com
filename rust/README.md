@@ -1,3 +1,5 @@
+https://google.github.io/comprehensive-rust/
+
 <https://doc.rust-lang.org/stable/book/foreword.html>
 
 https://www.lurklurk.org/effective-rust/intro.html
