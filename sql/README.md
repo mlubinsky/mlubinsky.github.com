@@ -22,6 +22,12 @@ https://news.ycombinator.com/item?id=37641628
 
 ###  Advanced Interview questions
 
+https://blog.devgenius.io/sql-practice-questions-1-800ed65d99b2
+
+https://blog.devgenius.io/sql-practice-questions-5-456cfb41757a
+
+https://medium.com/towards-data-engineering/most-asked-complex-sql-queries-in-data-engineering-interviews-9fde381d23f8
+
 https://www.databasestar.com/hierarchical-data-sql/
 
 https://habr.com/ru/articles/812601/ Древовидные структуры в SQL
@@ -197,11 +203,7 @@ WHERE  ctid NOT IN
 
 
 
-https://blog.devgenius.io/sql-practice-questions-1-800ed65d99b2
 
-https://blog.devgenius.io/sql-practice-questions-5-456cfb41757a
-
-https://medium.com/towards-data-engineering/most-asked-complex-sql-queries-in-data-engineering-interviews-9fde381d23f8
 
 https://sqlfordevs.com/ebook
 
@@ -234,6 +236,8 @@ order by product;
 https://towardsdatascience.com/understand-sql-window-functions-once-and-for-all-4447824c1cb4
 
 https://habr.com/ru/post/664000/
+
+https://www.youtube.com/watch?v=QenwDm5oWdU
 
 RANK, DENSE_RANK, NTILE ROW_NUMBER, CUME_DIST
 
@@ -335,8 +339,6 @@ https://habr.com/ru/company/tensor/blog/657895/ SQL HowTo: разные вари
 
 
 
-
-
 ### Moving Average
 ```
 SELECT employee_id, salary,
@@ -428,7 +430,7 @@ FROM Sales;
 ```
 
 
-Using window function:
+Runnig total using window function:
 
 https://blog.devgenius.io/sql-window-function-d39858e52784
 
@@ -575,16 +577,7 @@ select avg(v) from T.   ==> 5 (ignoring NULLs!!!)
 select avg(COALESCE(v,0)) from T.  ==> 3 returns rounded to integer value
 select avg(COALESCE(v,0)+0.0) from T.  ==> 3.333
 ```
-### Recursion in SQL
 
-https://medium.com/swlh/recursion-in-sql-explained-graphically-679f6a0f143b
-
-https://news.ycombinator.com/item?id=28018058
-
-
-### Window function
-
-https://www.youtube.com/watch?v=QenwDm5oWdU
 
 
 ### UNION
@@ -1003,6 +996,14 @@ https://habr.com/ru/company/tensor/blog/523812/
  https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database
  
  https://news.ycombinator.com/item?id=20027586 Hierarchy and RECURSIVE SQL
+
+
+### Recursion in SQL
+
+https://medium.com/swlh/recursion-in-sql-explained-graphically-679f6a0f143b
+
+https://news.ycombinator.com/item?id=28018058
+ 
  
  https://github.com/bitnine-oss/agensgraph . Postgres extension  AgensGraph
  
