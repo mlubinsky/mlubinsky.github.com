@@ -389,9 +389,7 @@ https://blog.jooq.org/10-cool-sql-optimisations-that-do-not-depend-on-the-cost-m
 
 
 ## Running total
-
-
- <https://habr.com/ru/post/474458/> . Нарастающий (накопительный) итог 
+<https://habr.com/ru/post/474458/> . Нарастающий (накопительный) итог 
 
 https://habr.com/ru/post/597963/ 
 
@@ -975,6 +973,8 @@ HAVING COUNT(person_id) >1
 
 
 ## Hierarhy and  Recursive SQL
+
+https://www.ibase.ru/treedb/
 
 https://habr.com/ru/articles/812601/ Древовидные структуры в SQL 
 
