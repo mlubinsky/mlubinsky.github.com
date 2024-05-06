@@ -24,6 +24,8 @@ https://news.ycombinator.com/item?id=37641628
 
 https://www.databasestar.com/hierarchical-data-sql/
 
+https://habr.com/ru/articles/812601/ Древовидные структуры в SQL
+
 https://medium.com/@mtrentz/answer-business-questions-effectively-with-these-sql-tricks-b20555db48c8
 
 https://medium.com/illumination/this-is-exactly-how-i-use-sql-at-work-as-a-data-analyst-141f0d178d7c
@@ -290,6 +292,7 @@ https://news.ycombinator.com/item?id=32566851
 
 ###  Storing trees in database:
 
+https://habr.com/ru/articles/812601/ Древовидные структуры в SQL
 https://habr.com/ru/company/bimeister/blog/672634/
 
 ### DBT
@@ -388,6 +391,9 @@ https://blog.jooq.org/10-cool-sql-optimisations-that-do-not-depend-on-the-cost-m
 
 
 ## Running total
+
+
+ <https://habr.com/ru/post/474458/> . Нарастающий (накопительный) итог 
 
 https://habr.com/ru/post/597963/ 
 
@@ -639,7 +645,7 @@ content_id	store	kids_directed	row_num
  c2	       s1	        false	     1
 ```
 
-# TablePlus DBeawer
+# TablePlus DBeaver
 
 <https://news.ycombinator.com/item?id=22908224>
 
@@ -675,7 +681,6 @@ content_id	store	kids_directed	row_num
  
  <https://towardsdatascience.com/python-vs-sql-comparison-for-data-pipelines-8ca727b34032>
  
- <https://habr.com/ru/post/474458/> . Нарастающий (накопительный) итог 
 
  
  
@@ -981,6 +986,8 @@ HAVING COUNT(person_id) >1
 
 
 ## Hierarhy and  Recursive SQL
+
+https://habr.com/ru/articles/812601/ Древовидные структуры в SQL 
 
 https://www.databasestar.com/hierarchical-data-sql/
 
