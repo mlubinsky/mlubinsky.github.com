@@ -35,6 +35,9 @@ Embeddings are points in many-dimensional space, up to thousands of dimensions.
 
 ### Transformers
 
+
+https://qudata.com/ml/ru/NN_Attention.html Attention - Механизм внимания
+
 https://www.youtube.com/watch?v=3hL1KCI5iVY
 
 https://magazine.sebastianraschka.com/p/understanding-and-coding-self-attention
