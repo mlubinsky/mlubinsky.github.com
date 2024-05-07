@@ -31,7 +31,12 @@ https://medium.com/@abhinav.prakash1804/delta-lake-vs-parquet-86e1e926f446
 ### SPARK SQL
 https://books.japila.pl/spark-sql-internals/features/
 
+### Spark + Docker
+https://habr.com/ru/companies/lamoda/articles/810705/
+
 ### Spark performance
+
+
 
 https://habr.com/ru/companies/oleg-bunin/articles/768284/
 
