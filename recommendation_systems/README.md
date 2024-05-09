@@ -1,5 +1,7 @@
 ### Recommendation Systems
 
+https://habr.com/ru/companies/selectel/articles/811585/ (link to book inside)
+
 https://habr.com/ru/articles/773126/
 
 https://habr.com/ru/articles/792994/
@@ -13,3 +15,4 @@ https://habr.com/ru/companies/otus/articles/764222/ recommendation system
 https://arxiv.org/ftp/arxiv/papers/2108/2108.06367.pdf
 
 Multi-Objective Recommendations: A Tutorial
+
