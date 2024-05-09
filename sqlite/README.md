@@ -10,6 +10,8 @@ https://levelup.gitconnected.com/duckdb-vs-polars-2ff19cc7af41
 
 https://antonz.org/sqlite-3-44/
 
+https://antonz.org/tags/modern-sqlite/
+
 https://docs.python.org/3/library/sqlite3.html#command-line-interface
 
 https://habr.com/ru/articles/792630/
