@@ -188,7 +188,11 @@ groupByKey() is just to group your dataset based on a key. It will result in dat
 
 reduceByKey() is something like grouping + aggregation. We can say reduceByKey() equivalent to dataset.group(...).reduce(...). It will shuffle less data unlike groupByKey().
 
-aggregateByKey() is logically same as reduceByKey() but it lets you return result in different type. In another words, it lets you have an input as type x and aggregate result as type y. For example (1,2),(1,4) as input and (1,"six") as output. It also takes zero-value that will be applied at the beginning of each key.
+aggregateByKey() is logically same as reduceByKey() but it lets you return result in different type.
+In another words, it lets you have an input as type x and aggregate result as type y.
+For example (1,2),(1,4) as input and (1,"six") as output.
+It also takes zero-value that will be applied at the beginning of each key.
+
 Note: One similarity is they all are wide operations.
 ```
 
@@ -259,11 +263,11 @@ https://habr.com/ru/company/otus/blog/594787/
 
 https://habr.com/ru/post/710338/
 
- 
+``` 
 партиционирование немного по-разному поддерживается в Hive и в spark и может быть источником граблей. 
 Просто положить данные в папочку на hdfs (с помощью distcp или файловых операций) может быть недостаточно.
 Надо будет вызывать ```msck repair table```, чтобы обновить партиции в metastore. 
-
+```
 ### How many partitions
 
 https://habr.com/ru/company/otus/blog/686142/
@@ -347,7 +351,8 @@ https://habr.com/ru/company/otus/blog/557812/
 
 https://habr.com/ru/company/otus/blog/529100/
  Нам также нужно назначить драйвер для обработки всех исполнителей в узле. Если мы используем количество исполнителей, кратное 3, 
- то наш одноядерный драйвер будет размещен в своем собственном 16-ядерном узле, что означает, что аж 14 ядер на этом последнем узле не будут использоваться в течение всего выполнения задачи. 
+ то наш одноядерный драйвер будет размещен в своем собственном 16-ядерном узле, что означает,
+что аж 14 ядер на этом последнем узле не будут использоваться в течение всего выполнения задачи. 
  
  идеальное количество исполнителей должно быть кратным 3 минус один исполнитель, чтобы освободить место для нашего драйвера.
  
@@ -415,16 +420,13 @@ In general, the number of cores can be experimented with in the range of
 3–5 for executors with memory in the range of 20–40G.
 
 https://habr.com/ru/company/otus/blog/540396/
+```
 Обычными причинами, приводящими к OutOfMemory OOM (недостаточно памяти) драйвера, являются:
-
-rdd.collect()
-
-sparkContext.broadcast 
-
-Низкий уровень памяти драйвера, настроенный в соответствии с требованиями приложения
-
-Неправильная настройка Spark.sql.autoBroadcastJoinThreshold.
-
+   rdd.collect()
+   sparkContext.broadcast 
+   Низкий уровень памяти драйвера, настроенный в соответствии с требованиями приложения
+   Неправильная настройка Spark.sql.autoBroadcastJoinThreshold.
+```
 ### Spark submit:
 
 https://spark.apache.org/docs/3.2.1/submitting-applications.html
@@ -480,7 +482,8 @@ https://medium.com/credera-engineering/how-to-write-unit-tests-for-spark-f8ea22c
 ```
 show create table scheme_name.table_name;
 ```
-Нужно посмотреть, появились ли в конце описания в блоке TBLPROPERTIES свойства 'spark.sql.statistics.numRows' и 'spark.sql.statistics.totalSize':
+Нужно посмотреть, появились ли в конце описания в блоке TBLPROPERTIES свойства
+'spark.sql.statistics.numRows' и 'spark.sql.statistics.totalSize':
 ```
 CREATE EXTERNAL TABLE `scheme_name.table_name`(
 TBLPROPERTIES (
@@ -505,7 +508,8 @@ select /*+ BROADCAST(t) */ big.field1,
  /*+ COALESCE(n) */, где n – количество партиций, на которые будет разбит результат, 
  /* + REPARTITION (n) */, где n – количество партиций при repartition.
 ```
-По умолчанию задача соединения двух таблиц, выполненная посредством spark-submit, будет разбита на 200 партиций. Изменить эту настройку по умолчанию можно, задав другое значение конфигурации spark.sql.shuffle.partitions, например:
+По умолчанию задача соединения двух таблиц, выполненная посредством spark-submit, будет разбита на 200 партиций. 
+Изменить эту настройку по умолчанию можно, задав другое значение конфигурации spark.sql.shuffle.partitions, например:
 ```
 --conf spark.sql.shuffle.partitions=1000
 ```
@@ -523,6 +527,7 @@ https://parisrohan.medium.com/an-attempt-to-spark-your-interest-in-pyspark-fddcc
 https://medium.com/swlh/pyspark-on-macos-installation-and-use-31f84ca61400
 
 
+end o pySpark
 
 
 
@@ -566,14 +571,21 @@ https://habr.com/ru/company/first/blog/678826/
 ```
 оптимизации перекошенного соединения в AQE: Adaptive Query Execution 
 
-spark.sql.adaptive.skewJoin.enabled: Этот логический параметр определяет, включена или выключена оптимизация перекошенного соединения. 
+spark.sql.adaptive.skewJoin.enabled:
+Этот логический параметр определяет, включена или выключена оптимизация перекошенного соединения. 
 Значение по умолчанию — true.
 
-spark.sql.adaptive.skewJoin.skewedPartitionFactor: Этот целочисленный параметр управляет интерпретацией перекошенного раздела. Значение по умолчанию равно 5.
+spark.sql.adaptive.skewJoin.skewedPartitionFactor:
+Этот целочисленный параметр управляет интерпретацией перекошенного раздела.
+Значение по умолчанию равно 5.
 
-spark.sql.adaptive.skewJoin.skewedPartitionThresholdInBytes: Этот параметр в мегабайтах также управляет интерпретацией перекошенного раздела. Значение по умолчанию равно 256 MB.
+spark.sql.adaptive.skewJoin.skewedPartitionThresholdInBytes:
+Этот параметр в мегабайтах также управляет интерпретацией перекошенного раздела.
+Значение по умолчанию равно 256 MB.
 
-Раздел считается перекошенным, если оба параметра (partition size (размер раздела) > skewedPartitionFactor * median partition size (медианный размер раздела)) и (partition size > skewedPartitionThresholdInBytes) соответствуют действительности.
+Раздел считается перекошенным, если оба параметра
+(partition size (размер раздела) > skewedPartitionFactor * median partition size (медианный размер раздела)) и
+(partition size > skewedPartitionThresholdInBytes) соответствуют действительности.
 ```
 
 https://medium.com/curious-data-catalog/sparks-skew-problem-does-it-impact-performance-257cdef53680
@@ -615,20 +627,24 @@ While reading from databases we can ser (partitionColumn, lowerBound, upperBound
 o let us say we have an Id column and we set lowerBound to 1 and upperBound to 40000 with numPartitions to 4.
 Then in the case of equal distribution spark will have 4 partitions with 10000 records each.
 
-Note: For while reading from folders containing large number of files, enumeration of datasets is a challenge as it happens on driver.
+Note: For while reading from folders containing large number of files,
+enumeration of datasets is a challenge as it happens on driver.
 This processing of file listing follows a serial code path and can be slow.
 There are third party solutions, like RapidFile, to speed up file listing.
 
 ```
 Shuffle
 ```
-When we perform a wide transformation (group by, join, window function, sort) there is a shuffle(redistribution) of data. During this shuffle, new partitions get created or removed. E.g If we use row_number() function it will reduce the number of partition to 1.
+When we perform a wide transformation (group by, join, window function, sort) there is a shuffle(redistribution) of data.
+During this shuffle, new partitions get created or removed.
+E.g If we use row_number() function it will reduce the number of partition to 1.
 
 The smaller size of partitions (more partitions) will increase the parallel running jobs, which can improve performance, but too small of a partition will cause overhead and increase the GC time. Larger partitions (fewer number of partitions) will decrease the number of jobs running in parallel.
 
 df.rdd.getNumPartitions()
 
-spark.sql.shuffle.partitions— Default number of partitions returned by transformations like join, reduceByKey, and parallelize when not set by user. Default is 200.
+spark.sql.shuffle.partitions— Default number of partitions returned by transformations like
+ join, reduceByKey, and parallelize when not set by user. Default is 200.
 
 We can manually tweak the number of partitions by coalescing or repartitioning.
 
@@ -637,13 +653,18 @@ repartition(partitionExprs) — Uses HashPartitioner
 repartitionByRange(partitionExprs) — Uses range partitioning.
 coalesce(numPartitions) — Use only to reduce the number of partitions.
 
-Note: In most cases, Coalesce should be preferred over repartition while reducing the number of partitions. But Repartition guarantees that the data distribution in the partition is roughly the same size. So in some cases, it may be preferred.
+Note: In most cases, Coalesce should be preferred over repartition while reducing the number of partitions.
+
+But Repartition guarantees that the data distribution in the partition is roughly the same size.
+So in some cases,it may be preferred.
 
 In case where are performing aggregate on unique columns we should control the shuffle by using repartition.
 
 Good partitioning of data leads to better speed and fewer OOMs errors.
 
-The repartition leads to a full shuffle of data between the executors making the job slower. The coalesce operation doesn’t trigger a full shuffle when it reduces the number of partitions. It only transfers the data from partitions being removed to existing partitions.
+The repartition leads to a full shuffle of data between the executors making the job slower.
+The coalesce operation doesn’t trigger a full shuffle when it reduces the number of partitions.
+It only transfers the data from partitions being removed to existing partitions.
 
 We can get partitions and there record count for each one using the following code:
 
