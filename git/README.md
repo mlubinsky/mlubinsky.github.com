@@ -1,3 +1,5 @@
+https://habr.com/ru/articles/813399/ How to make useful github front page
+
 https://habr.com/ru/articles/807501/ init
 
 https://blog.gitbutler.com/git-tips-and-tricks/
