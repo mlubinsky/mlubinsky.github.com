@@ -6,6 +6,8 @@ https://mechmath.ipmnet.ru/lib/?s=phlectures
 
 https://phys.vsu.ru/thp/feed.html
 
+https://statphys.narod.ru/
+
 https://statphys.narod.ru/statknigi.html
 
 https://booktracker.org/viewtopic.php?t=19870
