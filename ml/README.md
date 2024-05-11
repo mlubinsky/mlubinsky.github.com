@@ -24,6 +24,8 @@ math behind AlexNet https://towardsdatascience.com/the-math-behind-deep-cnn-alex
 
 https://nuancesprog.ru/computer-science/
 
+https://habr.com/ru/articles/813221/ Методы оптимизации в машинном и глубоком обучении. 
+
 ### Vector DB 
 
 https://www.youtube.com/watch?v=035I2WKj5F0
