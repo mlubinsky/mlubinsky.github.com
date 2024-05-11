@@ -1,5 +1,7 @@
 # download this
 http://www.physics.gov.az/fiellib.html
+Example:
+http://www.physics.gov.az/book_K/Feynman_Hibs.pdf
 
 https://ikfia.ysn.ru/statisticheskaya-fizika/
 
