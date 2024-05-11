@@ -33,6 +33,9 @@ https://www.youtube.com/watch?v=yyHP4ySDOeg
 https://www.youtube.com/watch?v=lEGR3u2SWKk
 Воронцов К.В. | Лекция 27 по Методам машинного обучения, 2024, весна| ВМК МГУ
 
+Доп. главы машинного обучения, Карпачёв Н.Е., лекция 1, 05.02.2024
+https://www.youtube.com/watch?v=Cs5NuVseHxU&list=PLti61wgkUWHyhCM4jK0ktwyDGN8XiGgHv&index=1
+
 ### Vector DB 
 
 https://www.youtube.com/watch?v=035I2WKj5F0
