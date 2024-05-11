@@ -1,4 +1,17 @@
 # download this
+
+https://mechmath.ipmnet.ru/
+
+https://mechmath.ipmnet.ru/lib/?s=phlectures
+
+https://phys.vsu.ru/thp/feed.html
+
+https://booktracker.org/viewtopic.php?t=19870
+
+https://old.mccme.ru/free-books/
+
+https://www.studmed.ru/science/fizika/
+
 http://www.physics.gov.az/fiellib.html
 Example:
 http://www.physics.gov.az/book_K/Feynman_Hibs.pdf
