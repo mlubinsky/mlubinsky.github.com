@@ -10,6 +10,8 @@ http://www.t-z-n.ru/archives/tom4.pdf
 
 http://www.t-z-n.ru/archives/tom9.pdf
 
+http://publ.lib.ru/ARCHIVES/F/FEYNMAN_Richard_Fillips/_Feynman_R.F..html
+
 
 ### Library Genesis:
 library.lol
