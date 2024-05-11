@@ -26,6 +26,9 @@ https://nuancesprog.ru/computer-science/
 
 https://habr.com/ru/articles/813221/ Методы оптимизации в машинном и глубоком обучении. 
 
+https://www.youtube.com/watch?v=yyHP4ySDOeg
+Местецкий Л.М. | Лекция 12.1 по Обработке и распознаванию изображений, 2024, весна| ВМК МГУ
+
 ### Vector DB 
 
 https://www.youtube.com/watch?v=035I2WKj5F0
