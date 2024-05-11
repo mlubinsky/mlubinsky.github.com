@@ -1,6 +1,15 @@
 # download this
 http://www.physics.gov.az/fiellib.html
 
+https://ikfia.ysn.ru/statisticheskaya-fizika/
+
+https://ikfia.ysn.ru/v-pomoshh-studentu-i-aspirantu/
+
+Feinman lectures physics
+http://www.t-z-n.ru/archives/tom4.pdf
+
+http://www.t-z-n.ru/archives/tom9.pdf
+
 
 ### Library Genesis:
 library.lol
