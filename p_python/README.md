@@ -8,6 +8,12 @@ https://news.ycombinator.com/item?id=40085887
 
 my_dict = {item: index for index, item in enumerate(my_list)}
 
+### Calculate number of occurance for every char in string
+```
+mystring="abcdafff"
+for c in set(mystring):
+     print (c, mystring.count(c))
+```
 ### Exception handling
 
 ```
