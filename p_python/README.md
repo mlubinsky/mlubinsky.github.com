@@ -8,6 +8,26 @@ https://news.ycombinator.com/item?id=40085887
 
 my_dict = {item: index for index, item in enumerate(my_list)}
 
+### Exception handling
+
+```
+try:
+       # Some Code.... 
+except ZeroDivisionError:
+    print("You cannot divide by zero.")
+except ValueError:
+    print("Invalid input. Please enter a valid number.")        
+except Exception as e:
+       # optional block
+       # Handling of exception (if required)
+else:
+       # execute if no exception
+finally:
+      # Some code .....(always executed)
+      #  Even if you return in the except block still the finally block will execute
+ ```
+
+
 ### Основные типы распределений вероятностей в примерах
 https://habr.com/ru/articles/801101/
 
