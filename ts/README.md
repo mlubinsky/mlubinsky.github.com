@@ -16,7 +16,11 @@ https://joaquinamatrodrigo.github.io/skforecast/
 
 https://habr.com/ru/articles/752662/
 
+Бутстрап временных рядов
+https://habr.com/ru/companies/X5Tech/articles/814579/
+
 https://www.influxdata.com/time-series-analysis-methods/
+
 
 https://tomaszs2.medium.com/5-python-projects-people-dont-know-about-ep-3-7124a28239a3 smoothing
 
