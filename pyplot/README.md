@@ -1,5 +1,9 @@
 https://pyvista.org/  (on top of VTK)
 
+https://habr.com/ru/companies/astralinux/articles/814881/ HoloViews + Flask
+
+https://holoviews.org/user_guide/Deploying_Bokeh_Apps.html#combining-bokeh-application-and-flask-application
+
 https://github.com/rougier/scientific-visualization-book .  BOOK!
 
 https://habr.com/ru/companies/ru_mts/articles/738208/ Plotting
