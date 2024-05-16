@@ -12,7 +12,7 @@ https://habr.com/ru/articles/807421/ План запросов на пример
 
 https://towardsdatascience.com/six-spark-exercises-to-rule-them-all-242445b24565
 
-https://habr.com/ru/articles/805143/ 3 способа запуска Spark в Kubernetes из Airflow
+
 
 
 https://habr.com/ru/companies/beeline_tech/articles/804513/ Оптимизируем параметры запуска приложения Spark. Часть первая
@@ -36,9 +36,11 @@ https://books.japila.pl/spark-sql-internals/features/
 ### Spark + Airflow + Docker
 https://habr.com/ru/companies/lamoda/articles/810705/
 
+https://habr.com/ru/articles/805143/ 3 способа запуска Spark в Kubernetes из Airflow
+
 ### Spark performance
 
-
+https://habr.com/ru/companies/beeline_tech/articles/804513/
 
 https://habr.com/ru/companies/oleg-bunin/articles/768284/
 
