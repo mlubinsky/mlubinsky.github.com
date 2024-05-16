@@ -10,6 +10,8 @@ https://habr.com/ru/companies/otus/articles/808141/
 
 https://habr.com/ru/articles/807421/ План запросов на примерах
 
+https://towardsdatascience.com/six-spark-exercises-to-rule-them-all-242445b24565
+
 https://habr.com/ru/articles/805143/ 3 способа запуска Spark в Kubernetes из Airflow
 
 
