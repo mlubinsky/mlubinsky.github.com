@@ -815,10 +815,9 @@ for c in chars:
 # {'a': 2, 'b': 1, 'c': 2, 'd': 1}
 Or you can use the collections.defaultdict method:
 
- collections
-chars = ['a', 'b','c','a','d','c']
-
-dd = collections.defaultdict(int)
+from collections import defaultdict
+dd = defaultdict(int)
+#dd = collections.defaultdict(int)
 for c in chars:
     dd[c] += 1
 ```
