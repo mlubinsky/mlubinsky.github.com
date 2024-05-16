@@ -1,3 +1,5 @@
+ https://habr.com/ru/articles/813885/ о движении частиц в квантовом мире
+
 https://arxiv.org/pdf/quant-ph/0007045.pdf
 
 https://www.nobelprize.org/uploads/2018/06/vleck-lecture.pdf QM and magnetism
