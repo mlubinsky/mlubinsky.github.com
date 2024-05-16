@@ -11,6 +11,8 @@ my_dict = {item: index for index, item in enumerate(my_list)}
 ### Calculate number of occurance for every char in string
 ```
 mystring="abcdafff"
+print(set(mystring)
+
 for c in set(mystring):
      print (c, mystring.count(c))
 ```
