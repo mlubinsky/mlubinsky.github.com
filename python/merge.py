@@ -1,3 +1,34 @@
+def merge_2_sorted_lists(left, right):
+    result = []
+    i1=0
+    i2=0
+    l1=len(left)
+    l2=len(right)
+
+
+    while i1 < l1 and i2<l2:
+        if left[i1] > right[i2]:
+            result.append(right[i2])
+            i2=i2+1
+        else:
+            result.append(left[i1])
+            i1=i1+1
+
+    if i1 < l1:
+        result.extend(left[i1:])
+    if i2 < l2:
+        result.extend(right[i2:])
+
+    return result
+##########    
+## Test:
+#########
+a=[1, 3,30]
+b=[2, 10, 20,40]
+print(merge_2_sorted_lists(a,b))
+
+
+
 from collections import deque
 
 import heapq
@@ -26,31 +57,7 @@ def merge_sorted_lists(left, right):
 
 
 
-def merge_2_sorted_lists(left, right):
-    """
-    Merge sort merging function.
-    TODO: Improve, add examples."""
-    result = []
-    i1=0
-    i2=0
-    l1=len(left)
-    l2=len(right)
-
-
-    while i1 < l1 and l2<l2:
-        if left[i1] > right[i2]:
-            result.append(righ[i2])
-            i2=i2+1
-        else:
-            result.append(left[i1])
-            i1=i1+1
-
-    if left:
-        result.extend(left)
-    if right:
-        result.extend(right)
-
-    return result
+ 
 
 ###   merge any numbers of lists
 
