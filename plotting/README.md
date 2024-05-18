@@ -1,12 +1,19 @@
 https://docs.evidence.dev/
 
-https://observablehq.com/plot/getting-started
-
-
-
-## D3.js  and Observable
+###  Observable
 
 https://news.ycombinator.com/item?id=40378791
+
+ https://observablehq.com/plot/
+
+ https://observablehq.com/framework/
+
+ https://observablehq.com/plot/getting-started
+
+
+
+## D3.js  
+
 
 https://erdogant.github.io/d3graph/pages/html/index.html
 
