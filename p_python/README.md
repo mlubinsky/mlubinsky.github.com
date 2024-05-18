@@ -208,7 +208,7 @@ This creates a new list B_sorted containing elements from B in the same order as
 ```
 
 ### List
- use dit([]) to look up the functions that operate on a List.
+ use dir([]) to look up the functions that operate on a List.
 ```
 
 >>> dir([])
