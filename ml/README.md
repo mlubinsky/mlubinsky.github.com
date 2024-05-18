@@ -78,6 +78,8 @@ https://aman.ai/primers/ai/
 Topological data analysis. Nikita Kalinin.
 https://www.youtube.com/playlist?list=PLKXEsFnBcT5BD47xO19UsKshsQ7DMU3Sa
 
+https://habr.com/ru/articles/814981/ Ansamble learning
+
 ### Inside the Machine Learning Interview: 151 Real Questions from FAANG 
 
 
