@@ -494,6 +494,35 @@ array("i").itemsize
 ``` 
 
 
+#### Stack, queue, priority queue  
+ https://realpython.com/queue-in-python/ <br>
+ https://realpython.com/python-deque/ <br>
+
+#### heapq 
+https://favtutor.com/blogs/heap-in-python <br>
+
+https://stackabuse.com/guide-to-heaps-in-python/
+
+#### dequeue
+
+```
+from collections import deque
+# create an empty queue
+queue = deque()
+# add elements to the queue
+queue.append("apple")
+queue.append("banana")
+queue.append("cherry")
+# remove and return the first element from the queue
+print(queue.popleft()) # prints "apple"
+print(queue.popleft()) # prints "banana"
+```
+You also can use appendleft() for adding element at left and pop() for removing element from right.
+
+if you try to use the popleft() method on an empty queue, it will raise an IndexError
+in the worst case scenario, the time complexity of popleft() operation on a deque object is O(n) because it's implemented as a cyclic buffer, so if we constantly add elements and remove elements from one end, the buffer will be reallocated every time it becomes full and this operation can be costly.
+
+In summary, using collections.deque as a queue in Python has an O(1) time complexity on average for both the enqueue and dequeue operations, making it an efficient data structure for queue operations, but in the worst case the time complexity could be O(n).
 
 
 ### Queue
@@ -1279,35 +1308,6 @@ digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 digits[::-1]   Result: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 ```
 
-#### Stack, queue, priority queue  
- https://realpython.com/queue-in-python/ <br>
- https://realpython.com/python-deque/ <br>
-
-#### heapq 
-https://favtutor.com/blogs/heap-in-python <br>
-
-https://stackabuse.com/guide-to-heaps-in-python/
-
-#### dequeue
-
-```
-from collections import deque
-# create an empty queue
-queue = deque()
-# add elements to the queue
-queue.append("apple")
-queue.append("banana")
-queue.append("cherry")
-# remove and return the first element from the queue
-print(queue.popleft()) # prints "apple"
-print(queue.popleft()) # prints "banana"
-```
-You also can use appendleft() for adding element at left and pop() for removing element from right.
-
-if you try to use the popleft() method on an empty queue, it will raise an IndexError
-in the worst case scenario, the time complexity of popleft() operation on a deque object is O(n) because it's implemented as a cyclic buffer, so if we constantly add elements and remove elements from one end, the buffer will be reallocated every time it becomes full and this operation can be costly.
-
-In summary, using collections.deque as a queue in Python has an O(1) time complexity on average for both the enqueue and dequeue operations, making it an efficient data structure for queue operations, but in the worst case the time complexity could be O(n).
 
 
 
