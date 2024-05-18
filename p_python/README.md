@@ -8,6 +8,30 @@ https://news.ycombinator.com/item?id=40085887
 
 my_dict = {item: index for index, item in enumerate(my_list)}
 
+#### Immutable types
+
+  Integers, floats, complex numbers, and Booleans, are always immutable. 
+  
+  Strings, bytes and tuples are immutable 
+
+positive_infinity = float('inf')
+negative_infinity = float('-inf')
+  
+#### Mutable types  
+  lists, dictionaries, and sets are mutable 
+```  
+   isinstance([1, 2, 3], list)
+   issubclass(bool, int) #  True
+   isinstance(True, int) # True
+   isinstance(False, int)  True
+   
+   int(True) # 1
+   int(False) # 0 
+```
+### translate() and maketrans()
+
+combination of translate() and maketrans() methods provide more flexibility by allowing for simultaneous multiple-character translations. It's useful when you have a set of characters that need to be replaced. However, for simple task of removing a single character, it's smarter to stick to replace().
+
 
 ### Exception handling
 
@@ -947,30 +971,6 @@ with Pool() as pool:
 
 assert row_means == [2.5, 6.5, 5.5]
 ```
-#### Immutable types
-
-  Integers, floats, complex numbers, and Booleans, are always immutable. 
-  
-  Strings, bytes and tuples are immutable 
-
-positive_infinity = float('inf')
-negative_infinity = float('-inf')
-  
-#### Mutable types  
-  lists, dictionaries, and sets are mutable 
-```  
-   isinstance([1, 2, 3], list)
-   issubclass(bool, int) #  True
-   isinstance(True, int) # True
-   isinstance(False, int)  True
-   
-   int(True) # 1
-   int(False) # 0 
-```
-### translate() and maketrans()
-
-combination of translate() and maketrans() methods provide more flexibility by allowing for simultaneous multiple-character translations. It's useful when you have a set of characters that need to be replaced. However, for simple task of removing a single character, it's smarter to stick to replace().
-
 
 
 ### Links
