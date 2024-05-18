@@ -1,7 +1,10 @@
 https://www.pythonmorsels.com/time-complexities/
 
-high - quality python code
+high - quality python code:
 https://news.ycombinator.com/item?id=40085887
+
+working with parquet files:
+https://www.blog.pythonlibrary.org/2024/05/06/how-to-read-and-write-parquet-files-with-python/
 
 
 ### Build a dictionary with list elements as keys and their indices as values
