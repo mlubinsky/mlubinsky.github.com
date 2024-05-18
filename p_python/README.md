@@ -92,7 +92,32 @@ https://www.pythonmorsels.com/every-dunder-method/
 https://habr.com/ru/companies/otus/articles/801595/
 
 
-### Default arguments pitfall
+### Default arguments pitfall - do not use mutable default args!
+
+https://docs.python-guide.org/writing/gotchas/#mutable-default-arguments
+Python’s default arguments are evaluated once when the function is defined, 
+not each time the function is called.
+```
+    def fn(arg=[]):
+        arg.append(1)
+        print(arg)
+        
+    fn() # [1]
+    fn() # [1, 1]
+    fn() # [1, 1, 1]
+```
+This means that if you use a mutable default argument and mutate it, you will and have mutated that object for all future calls to the function as well.
+
+Do this:
+```
+def append_to(element, to=None):
+    if to is None:
+        to = []
+    to.append(element)
+    return to
+```
+
+
 ```
 def foo( bar=[]):
     bar.append("x")
@@ -109,7 +134,8 @@ foo()     ["x","x","x"]
 (т. е. без указания аргумента bar) продолжат использовать тот же список, 
 который был создан для аргумента bar в момент первого определения функции.
 
-Solution
+Solution:
+
  def foo(bar=None):
     if bar is None:		# or if not bar:
         bar = []
@@ -1262,29 +1288,7 @@ example of unpacking
  
 ```
 
-#### Default arg - do not use mutable default args!
-https://docs.python-guide.org/writing/gotchas/#mutable-default-arguments
-Python’s default arguments are evaluated once when the function is defined, 
-not each time the function is called.
-```
-    def fn(arg=[]):
-        arg.append(1)
-        print(arg)
-        
-    fn() # [1]
-    fn() # [1, 1]
-    fn() # [1, 1, 1]
-```
-This means that if you use a mutable default argument and mutate it, you will and have mutated that object for all future calls to the function as well.
 
-Do this:
-```
-def append_to(element, to=None):
-    if to is None:
-        to = []
-    to.append(element)
-    return to
-```
 
 ### Show all methods for the class/function
 
