@@ -8,14 +8,7 @@ https://news.ycombinator.com/item?id=40085887
 
 my_dict = {item: index for index, item in enumerate(my_list)}
 
-### Calculate number of occurance for every char in string
-```
-mystring="abcdafff"
-print(set(mystring)
 
-for c in set(mystring):
-     print (c, mystring.count(c))
-```
 ### Exception handling
 
 ```
@@ -135,32 +128,9 @@ Solution:
    return bar
 
 ```
-### Linting Python in Visual Studio Code
-
-https://code.visualstudio.com/docs/python/linting
-
-https://devblogs.microsoft.com/python/python-linting-video/
-
-https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html#cheat-sheet-py3
 
 
-## Working with MS Excel
-
-https://hakibenita.com/fast-excel-python
-
-https://www.datacamp.com/tutorial/python-excel-tutorial
-
-https://kahemchu.medium.com/automate-excel-chart-with-python-d7bec97df1e5
-
-https://pandas-xlsxwriter-charts.readthedocs.io/
-
-https://forum.codewithmosh.com/t/creating-a-graph-in-excel/21607/2
-
-https://support.microsoft.com/en-us/office/create-python-in-excel-plots-and-charts-798b5e8d-ce45-4451-8da3-f269cdad5cff
-
-https://www.pyxll.com/docs/userguide/plotting/index.html
-
-### Example
+### Examples
 
 ```
 lists A and B of the same lenght logically related by index.
@@ -250,6 +220,18 @@ https://realpython.com/python-flatten-list/
  count("value") - returns 0 if not found 
 ```
 
+#### The most frequent element that appears in a list.
+```
+def most_frequent(list):
+    return max(set(list), key = list.count)
+  
+
+numbers = [1,2,1,2,3,2,1,4,2]
+most_frequent(numbers)  
+```
+
+
+
 ### List comprehention  [expression for item in list if conditional]
 
 list comprehension is the process of creating a new list from an existing list. Or, you can say that it is Python's unique way of appending a for loop to a list
@@ -299,6 +281,10 @@ Check what string has no specific values:
 if not any(value in line for value in ("StatusRequest", "StatusResponse")):
 
 if "StatusRequest" not in line and "StatusResponse" not in line:
+
+
+
+
 ### String
 ```
 strings = [string1, string2, string3]
@@ -312,6 +298,24 @@ def reverse_string(input_string):
 for i in reversed(range(5)):  # range(10)[::-1]
     print(i)
 ```
+
+#### checks whether a given string is a palindrome.
+```
+def palindrome(a):
+    return a == a[::-1]
+
+
+palindrome('mom') # True
+```
+### Calculate number of occurance for every char in string
+```
+mystring="abcdafff"
+print(set(mystring)
+
+for c in set(mystring):
+     print (c, mystring.count(c))
+```
+
 ###  factorial 
 ```
 from math import factorial
@@ -1985,35 +1989,9 @@ print("Time: ", total_time)
 ```
 
 
-#### You can have an else clause as part of a try/except block, which is executed if no exception is thrown.
-```
-try:
-    2*3
-except TypeError:
-    print("An exception was raised")
-else:
-    print("Thank God, no exceptions were raised.")
-
-#Thank God, no exceptions were raised.
-```
-
-#### The most frequent element that appears in a list.
-```
-def most_frequent(list):
-    return max(set(list), key = list.count)
-  
-
-numbers = [1,2,1,2,3,2,1,4,2]
-most_frequent(numbers)  
-```
-#### checks whether a given string is a palindrome.
-```
-def palindrome(a):
-    return a == a[::-1]
+ 
 
 
-palindrome('mom') # True
-```
 #### Calculator without if-else
 ```
 import operator
@@ -2272,4 +2250,27 @@ https://logdy.dev/
 
 https://github.com/kernc/diff-logs
 
+### Linting Python in Visual Studio Code
 
+https://code.visualstudio.com/docs/python/linting
+
+https://devblogs.microsoft.com/python/python-linting-video/
+
+https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html#cheat-sheet-py3
+
+
+## Working with MS Excel
+
+https://hakibenita.com/fast-excel-python
+
+https://www.datacamp.com/tutorial/python-excel-tutorial
+
+https://kahemchu.medium.com/automate-excel-chart-with-python-d7bec97df1e5
+
+https://pandas-xlsxwriter-charts.readthedocs.io/
+
+https://forum.codewithmosh.com/t/creating-a-graph-in-excel/21607/2
+
+https://support.microsoft.com/en-us/office/create-python-in-excel-plots-and-charts-798b5e8d-ce45-4451-8da3-f269cdad5cff
+
+https://www.pyxll.com/docs/userguide/plotting/index.html
