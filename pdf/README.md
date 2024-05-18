@@ -1,4 +1,6 @@
-PDF editing with FireFox: https://news.ycombinator.com/item?id=40383879
+PDF editing with FireFox: https://www.mozilla.org/en-GB/firefox/features/pdf-editor/
+
+https://news.ycombinator.com/item?id=40383879
 
 https://www.pdfequips.com
 
