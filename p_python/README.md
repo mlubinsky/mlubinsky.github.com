@@ -39,15 +39,7 @@ finally:
 ### Основные типы распределений вероятностей в примерах
 https://habr.com/ru/articles/801101/
 
-### By value or by reference?
 
-https://medium.com/techtofreedom/python-is-neither-call-by-value-nor-call-by-reference-2a0c8f6f4a8f
-
-https://www.pythonmorsels.com/variables-are-pointers/
-
-https://nedbatchelder.com/blog/202403/does_python_have_pointers.html
-
-https://codebeez.nl/blogs/the-memory-footprint-of-your-python-application/
 
 ### f-string
 https://pybit.es/articles/python-f-string-codes-i-use-every-day/
@@ -256,73 +248,6 @@ Check what string has no specific values:
 if not any(value in line for value in ("StatusRequest", "StatusResponse")):
 
 if "StatusRequest" not in line and "StatusResponse" not in line:
-
-### Data Tools
-
-https://datatable.readthedocs.io/en/latest/
-
-https://pola.rs/posts/polars_birds_eye_view/
-
-https://www.jetbrains.com/dataspell/ JetBrains
-
-https://deepnote.com/compare
-
-https://colab.research.google.com/
-
-Spider
-
-https://holoviz.org/
-
-https://dataprep.ai/
-
-https://codeandquery.com/build-scalable-data-pipelines-in-python-using-dlt-5e8275fd3371  DLT
-
-https://towardsdev.com/five-killer-optimization-techniques-that-most-pandas-arent-aware-of-f1e31af2257a
-
-### Postgres Dashboard (Panels and others)
-
-https://mljar.com/blog/postgresql-dashboard-python/
-
-## Plotting: Seaborn, GnuPlot and others
-
-https://realpython.com/python-seaborn/
-
-https://realpython.com/pandas-plot-python/
-
- http://www.gnuplot.info/
-
- https://github.com/dkogan/gnuplotlib
-
- https://github.com/bedbad/justpyplot
-
- https://github.com/man-group/dtale
- 
-
-### Pipeline
-https://pathway.com/
-
-### Query CSV, JSON and Parquet files
-
-https://github.com/luminousmen/data-toolset   Avro and Parquet 
-
- Query CSV, JSON and Parquet files with SQL
- 
-https://github.com/MarkyMan4/filequery  https://pypi.org/project/filequery/
-
-### Log viewers
-
-https://news.ycombinator.com/item?id=39317580
-
-https://github.com/Textualize/toolong
-
-https://github.com/dloss/klp
-
-https://lnav.org/
-
-https://logdy.dev/
-
-https://github.com/kernc/diff-logs
-
 ### String
 ```
 strings = [string1, string2, string3]
@@ -384,15 +309,7 @@ result = large_number * 2  # Doubling the already large number
 print(result)              # Output: inf
 ```
 
-#### Task runners
 
-https://just.systems/man/en/chapter_1.html
-
-https://taskfile.dev/
-
-https://pydoit.org/
-
-https://github.com/TekWizely/run
 
 
 ####
@@ -400,6 +317,17 @@ https://www.bitecode.dev/p/you-are-comfy-with-python-basics
 
 https://lobste.rs/s/sns4mr/comfy_with_python_basic_tooling_now_what
 
+ 
+
+### By value or by reference?
+
+https://medium.com/techtofreedom/python-is-neither-call-by-value-nor-call-by-reference-2a0c8f6f4a8f
+
+https://www.pythonmorsels.com/variables-are-pointers/
+
+https://nedbatchelder.com/blog/202403/does_python_have_pointers.html
+
+https://codebeez.nl/blogs/the-memory-footprint-of-your-python-application/
 ```
 An object’s identity is a unique identifier that distinguishes it from other objects. 
 ou can use the built-in id() function to get the identity of any Python object.
@@ -2263,3 +2191,82 @@ https://levelup.gitconnected.com/python-libraries-take-the-billion-row-challenge
 
 file watcher
 https://github.com/samuelcolvin/watchfiles
+
+#### Task runners
+
+https://just.systems/man/en/chapter_1.html
+
+https://taskfile.dev/
+
+https://pydoit.org/
+
+https://github.com/TekWizely/run
+
+
+### Data Tools
+
+https://datatable.readthedocs.io/en/latest/
+
+https://pola.rs/posts/polars_birds_eye_view/
+
+https://www.jetbrains.com/dataspell/ JetBrains
+
+https://deepnote.com/compare
+
+https://colab.research.google.com/
+
+Spider
+
+https://holoviz.org/
+
+https://dataprep.ai/
+
+https://codeandquery.com/build-scalable-data-pipelines-in-python-using-dlt-5e8275fd3371  DLT
+
+https://towardsdev.com/five-killer-optimization-techniques-that-most-pandas-arent-aware-of-f1e31af2257a
+
+### Postgres Dashboard (Panels and others)
+
+https://mljar.com/blog/postgresql-dashboard-python/
+
+## Plotting: Seaborn, GnuPlot and others
+
+https://realpython.com/python-seaborn/
+
+https://realpython.com/pandas-plot-python/
+
+ http://www.gnuplot.info/
+
+ https://github.com/dkogan/gnuplotlib
+
+ https://github.com/bedbad/justpyplot
+
+ https://github.com/man-group/dtale
+ 
+
+### Pipeline
+https://pathway.com/
+
+### Query CSV, JSON and Parquet files
+
+https://github.com/luminousmen/data-toolset   Avro and Parquet 
+
+ Query CSV, JSON and Parquet files with SQL
+ 
+https://github.com/MarkyMan4/filequery  https://pypi.org/project/filequery/
+
+### Log viewers
+
+https://news.ycombinator.com/item?id=39317580
+
+https://github.com/Textualize/toolong
+
+https://github.com/dloss/klp
+
+https://lnav.org/
+
+https://logdy.dev/
+
+https://github.com/kernc/diff-logs
+
+
