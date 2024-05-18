@@ -214,9 +214,8 @@ This creates a new list B_sorted containing elements from B in the same order as
 ```
 
 ### List
- Lets say we want to look up the functions that operate on a List.
+ use dit([]) to look up the functions that operate on a List.
 ```
-
 
 >>> dir([])
 ['__add__', '__class__', '__contains__', '__delattr__', '__delitem__',
@@ -235,6 +234,58 @@ sort(...)
     L.sort(cmp=None, key=None, reverse=False) -- stable sort *IN PLACE*;
     cmp(x, y) -> -1, 0, 1
 ```
+
+### List  
+https://realpython.com/python-list/
+https://realpython.com/how-to-split-a-python-list-into-chunks/
+https://realpython.com/python-flatten-list/
+```
+ append() adds single item to list
+ extend()  adds iterable to list
+ insert(index,value) into specified position
+ remove(item) removes 1st occurance
+ pop([index]) argument is optional - removes last item in the list
+ clear() removes all
+ index("value") - raises ValueError exception if not found, if value occures many times it returns 1st entry
+ count("value") - returns 0 if not found 
+```
+
+### List comprehention  [expression for item in list if conditional]
+
+list comprehension is the process of creating a new list from an existing list. Or, you can say that it is Python's unique way of appending a for loop to a list
+```
+list_b = [i**2 for i in range(1, 20)]
+```
+### List as stack or queue
+https://realpython.com/how-to-implement-python-stack/
+
+https://stackabuse.com/guide-to-stacks-in-python/
+
+```
+stack = []
+stack.append("Copy")
+stack.append("Paste")
+stack.append("Remove")
+stack # ['Copy', 'Paste', 'Remove']
+
+stack.pop() #'Remove'
+stack.pop() #'Paste'
+stack.pop() #'Copy'
+stack       # []
+```
+
+queue:
+```
+queue = []
+queue.append("John")
+queue.append("Jane")
+queue.append("Linda")
+queue  # ['John', 'Jane', 'Linda']
+queue.pop(0) # 'John'
+queue.pop(0) # 'Jane'
+queue.pop(0) #'Linda'
+```
+
 ### System path manipulation
 ```
 import sys
@@ -414,56 +465,8 @@ array("i").itemsize
 'i'
 ``` 
 
-### List  
-https://realpython.com/python-list/
-https://realpython.com/how-to-split-a-python-list-into-chunks/
-https://realpython.com/python-flatten-list/
-```
- append() adds single item to list
- extend()  adds iterable to list
- insert(index,value) into specified position
- remove(item) removes 1st occurance
- pop([index]) argument is optional - removes last item in the list
- clear() removes all
- index("value") - raises ValueError exception if not found, if value occures many times it returns 1st entry
- count("value") - returns 0 if not found 
-```
 
-### List comprehention  [expression for item in list if conditional]
 
-list comprehension is the process of creating a new list from an existing list. Or, you can say that it is Python's unique way of appending a for loop to a list
-```
-list_b = [i**2 for i in range(1, 20)]
-```
-### List as stack or queue
-https://realpython.com/how-to-implement-python-stack/
-
-https://stackabuse.com/guide-to-stacks-in-python/
-
-```
-stack = []
-stack.append("Copy")
-stack.append("Paste")
-stack.append("Remove")
-stack # ['Copy', 'Paste', 'Remove']
-
-stack.pop() #'Remove'
-stack.pop() #'Paste'
-stack.pop() #'Copy'
-stack       # []
-```
-
-queue:
-```
-queue = []
-queue.append("John")
-queue.append("Jane")
-queue.append("Linda")
-queue  # ['John', 'Jane', 'Linda']
-queue.pop(0) # 'John'
-queue.pop(0) # 'Jane'
-queue.pop(0) #'Linda'
-```
 
 ### Queue
 https://realpython.com/queue-in-python/
