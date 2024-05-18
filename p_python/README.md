@@ -52,6 +52,48 @@ finally:
       #  Even if you return in the except block still the finally block will execute
  ```
 
+### Exceptions
+
+Example 1
+```
+ try:
+     l = ["a", "b"]
+     int(l[2])
+ except (ValueError, IndexError) as e:
+     pass
+```
+Example 2
+```
+try:
+    # Some code that may raise an exception.
+except <ExceptionType> as err:
+    # This part will only be executed when the specified exception is raised.
+else:
+    # This part will only be executed when no exception is raised.
+finally:
+    # This part will always be excuted
+```
+
+log the traceback, rather than just the error message. 
+```
+import traceback
+
+try:
+    num = int("abc")
+except ValueError as err:
+    print(traceback.format_exc)
+```
+or using logging
+```
+import logging
+
+logger = logging.getLogger()
+
+try:
+    num = int("abc")
+except ValueError as err:
+    logger.exception(err)
+```
 
 ### Основные типы распределений вероятностей в примерах
 https://habr.com/ru/articles/801101/
@@ -1049,48 +1091,7 @@ with timer():
 
 ```
 
-### Exceptions
 
-Example 1
-```
- try:
-     l = ["a", "b"]
-     int(l[2])
- except (ValueError, IndexError) as e:
-     pass
-```
-Example 2
-```
-try:
-    # Some code that may raise an exception.
-except <ExceptionType> as err:
-    # This part will only be executed when the specified exception is raised.
-else:
-    # This part will only be executed when no exception is raised.
-finally:
-    # This part will always be excuted
-```
-
-log the traceback, rather than just the error message. 
-```
-import traceback
-
-try:
-    num = int("abc")
-except ValueError as err:
-    print(traceback.format_exc)
-```
-or using logging
-```
-import logging
-
-logger = logging.getLogger()
-
-try:
-    num = int("abc")
-except ValueError as err:
-    logger.exception(err)
-```
 
 ### Communicating with OS and filesystem
 
