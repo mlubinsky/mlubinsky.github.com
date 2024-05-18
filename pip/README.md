@@ -1,3 +1,6 @@
+### Install Python on Mac
+https://lobste.rs/s/rchiux/how_install_python_on_mac
+
 ### How to run multiple Python versions on Windows:
 
 https://stackoverflow.com/questions/4583367/how-to-run-multiple-python-versions-on-windows
