@@ -1,3 +1,5 @@
+
+
 https://metaperl.github.io/pure-python-web-development/class-a.html
 
 https://nicegui.io/
@@ -90,6 +92,8 @@ https://docs.streamlit.io/library/api-reference/charts/st.pydeck_chart
 
 
 ### Streamlit + Plotly
+
+https://johnloewen.substack.com/p/high-impact-python-streamlit-beautiful
 
 https://www.youtube.com/watch?v=yg0Y7w4AHhw
 
