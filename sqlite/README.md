@@ -1,5 +1,7 @@
 DuckDB Book https://www.manning.com/books/duckdb-in-action/
 
+https://www.definite.app/blog/query-any-ducking-thing
+
 https://medium.com/towards-data-science/duckdb-and-aws-how-to-aggregate-100-million-rows-in-1-minute-3634eef06b79
 
 https://medium.com/codex/this-pandas-alternative-is-350x-faster-when-processing-100-million-rows-3f6ff992182d
