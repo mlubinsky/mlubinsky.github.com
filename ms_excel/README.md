@@ -1,3 +1,26 @@
+## openpyxl: update specific cells based on certain conditions
+```
+Next code iterates over the rows of the active sheet starting from the second row (assuming the first row contains headers).
+For each row, it checks the value in the second column (index 1) and updates the value in the third column (index 2) based on the condition.
+
+
+from openpyxl import load_workbook
+
+# Load the Excel workbook
+workbook = load_workbook('data.xlsx')
+sheet = workbook.active
+
+# Update cell values based on conditions
+for row in sheet.iter_rows(min_row=2, values_only=True):
+    if row[1] > 100:
+        sheet.cell(row=row[0], column=3).value = 'High'
+    else:
+        sheet.cell(row=row[0], column=3).value = 'Low'
+
+# Save the updated workbook
+workbook.save('updated_data.xlsx')
+```
+
 ### chat gpt submit_job.py
 ```
 import requests
