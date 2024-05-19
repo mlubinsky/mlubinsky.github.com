@@ -1,7 +1,10 @@
 ## openpyxl: update specific cells based on certain conditions
 ```
-Next code iterates over the rows of the active sheet starting from the second row (assuming the first row contains headers).
-For each row, it checks the value in the second column (index 1) and updates the value in the third column (index 2) based on the condition.
+Next code iterates over the rows of the active sheet
+starting from the second row (assuming the first row contains headers).
+
+For each row, it checks the value in the second column (index 1)
+and updates the value in the third column (index 2) based on the condition.
 
 
 from openpyxl import load_workbook
