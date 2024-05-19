@@ -6,9 +6,12 @@ https://python.plainenglish.io/101-advanced-everyday-python-for-data-scientists-
 
 https://python.plainenglish.io/a-comprehensive-guide-to-python-automation-streamlining-tasks-and-boosting-productivity-fad00c5b62c5
 
+https://python.plainenglish.io/a-comprehensive-guide-to-python-automation-streamlining-tasks-and-boosting-productivity-fad00c5b62c5
+
 https://python.plainenglish.io/
  
 Now lets start with #1–100 of 501
+
 ### 1) Write a Python function to check whether a given number is prime or not.
 #Proposed solution by github.com/tushar2704
 ```
