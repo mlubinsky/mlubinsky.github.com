@@ -1,6 +1,8 @@
 
 https://habr.com/ru/post/653363/ . [Часть 1] Математика в АБ-тестах. Что такое z-score и p-value?
 
+https://habr.com/ru/companies/otus/articles/815769/
+
 https://habr.com/ru/articles/781060/
 
 https://habr.com/ru/companies/sbermarket/articles/774608/
