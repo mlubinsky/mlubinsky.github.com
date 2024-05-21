@@ -31,6 +31,8 @@ https://habr.com/ru/company/ruvds/blog/536962/
  
 ## BI tools: Poli, SuperSet, etc
 
+https://habr.com/ru/companies/otpbank/articles/815689/
+
 https://habr.com/ru/articles/773296/  Superset
 
 https://habr.com/ru/companies/rostelecom/articles/772118/ Superset
