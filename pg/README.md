@@ -52,6 +52,11 @@ https://www.postgresonline.com/
 stored procedure to rename tables and indexes:
 https://habr.com/ru/articles/765484/
 
+### time_series extension
+
+https://tembo.io/blog/pg-timeseries
+
+https://news.ycombinator.com/item?id=40417347
 
 ### pg_cron pg_partman, etc
 
