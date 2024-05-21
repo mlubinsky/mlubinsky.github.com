@@ -24,7 +24,10 @@ MERGE: https://habr.com/ru/companies/otus/articles/792396/
 
 locking https://leontrolski.github.io/pglockpy.html
 
-Popular extensions:
+### Postgres extensions:
+
+https://pgt.dev/
+
 https://habr.com/ru/companies/otus/articles/791870/
 
 https://www.youtube.com/watch?v=i1HYbATmWaw
