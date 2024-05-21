@@ -38,6 +38,27 @@ https://www.youtube.com/watch?v=lEGR3u2SWKk
 Доп. главы машинного обучения, Карпачёв Н.Е., лекция 1, 05.02.2024
 https://www.youtube.com/watch?v=Cs5NuVseHxU&list=PLti61wgkUWHyhCM4jK0ktwyDGN8XiGgHv&index=1
 
+
+### Links - become a Machine Learning Engineer: 👇
+
+1. Airbnb AI & Machine Learning - https://lnkd.in/gzAXfQg5
+2. Databricks Data Science & ML - https://lnkd.in/gRPE8Gbm
+3. Google AI research applications - https://lnkd.in/gctN7Ths
+4. NVIDIA Data Science - https://lnkd.in/ghzhBPnm
+5. Apple Machine Learning Research - https://lnkd.in/gcJggDju
+6. Stripe Machine Learning for Fraud Detection - https://lnkd.in/gKS4F-V3
+7. Netflix Recommender System - https://lnkd.in/gm4pTRf4
+8. Uber AI - https://lnkd.in/gXA8UEBU
+9. X (aka Twitter) - https://lnkd.in/gNDME2-m
+10. Pinterest Ads Recommender - https://lnkd.in/g8QXRH3i
+11. Meta AI - https://lnkd.in/gGMp-Jh2
+12. Microsoft ML - https://lnkd.in/gm-aSSP9
+13. DoorDash Data Science and ML - https://lnkd.in/gHkDwpvC
+14. MongoDB AI - https://lnkd.in/g8c3HNaa
+15. Amazon Machine Learning Blog - https://lnkd.in/g2Q3ZmEh
+16. Grammarly NLP/ML - https://lnkd.in/guMDtPfW
+17. Spotify Machine Learning - https://lnkd.in/gGq7uj9g
+
 ### Vector DB 
 
 https://www.youtube.com/watch?v=035I2WKj5F0
