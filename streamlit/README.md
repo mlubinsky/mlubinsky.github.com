@@ -67,7 +67,7 @@ https://www.youtube.com/watch?v=VJe_80iUUuc
 
 https://python.plainenglish.io/1-streamlit-magic-cheat-sheets-17000-lines-of-codes-65de30513311
 
-
+https://github.com/Kanaries/pygwalker  Streamlit  + PygWalker
 https://betterprogramming.pub/from-traffic-to-revenue-a-deep-dive-into-my-medium-data-98ac5b405605 + DuckDB +Plotly
 
 https://towardsdatascience.com/streamlit-supports-5-important-data-visualization-libraries-which-to-choose-8f0c6d19c705  code examples using Altair, Bokeh, Plotly, Pandas Plot, and Matplotlib, 
