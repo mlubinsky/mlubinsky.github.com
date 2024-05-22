@@ -41,6 +41,8 @@ https://www.youtube.com/watch?v=Cs5NuVseHxU&list=PLti61wgkUWHyhCM4jK0ktwyDGN8XiG
 
 ### Links - become a Machine Learning Engineer: 👇
 
+https://www.kdnuggets.com/10-github-repositories-to-master-data-engineering
+
 1. Airbnb AI & Machine Learning - https://lnkd.in/gzAXfQg5
 2. Databricks Data Science & ML - https://lnkd.in/gRPE8Gbm
 3. Google AI research applications - https://lnkd.in/gctN7Ths
