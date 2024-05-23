@@ -9,6 +9,8 @@ Has the schema changed?
 ```
 ## Databricks
 
+https://habr.com/ru/companies/otus/articles/592605/
+
 https://habr.com/ru/companies/slurm/articles/754464/
 
 Apache Spark 3.4   вошел в релиз Databricks Runtime 13.0.
