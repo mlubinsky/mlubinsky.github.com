@@ -9,6 +9,8 @@ Has the schema changed?
 ```
 ## Databricks
 
+https://www.youtube.com/@Databricks
+
 https://habr.com/ru/companies/otus/articles/592605/
 
 https://habr.com/ru/companies/slurm/articles/754464/
