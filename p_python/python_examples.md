@@ -298,6 +298,7 @@ returning -1 if the target is not found.
 ```
 
 ### 17) Write a Python function to find the maximum sum of a contiguous subarray with a size of k in a given list of integers.
+```
 #Proposed solution by github.com/tushar2704
 def max_sum_subarray_k(arr, k):
     max_sum = sum(arr[:k])
@@ -310,8 +311,9 @@ def max_sum_subarray_k(arr, k):
 # Example usage:
 print(max_sum_subarray_k([1, 2, 3, 4, 5, 6], 3))  # Output: 15
 Explanation: This function calculates the maximum sum of any contiguous subarray of size k using a sliding window approach.
-
-18) Write a Python function to implement a stack using a linked list.
+```
+### 18) Write a Python function to implement a stack using a linked list.
+```
 #Proposed solution by github.com/tushar2704
 class StackNode:
     def __init__(self, value):
@@ -342,8 +344,8 @@ stack.push(3)
 print(stack.pop())  # Output: 3
 print(stack.pop())  # Output: 2
 Explanation: This function implements a stack using a linked list where each node contains a value and a reference to the next node.
-
-19) Write a Python function to implement a queue using two stacks.
+```
+### 19) Write a Python function to implement a queue using two stacks.
 #Proposed solution by github.com/tushar2704
 class Queue:
     def __init__(self):
