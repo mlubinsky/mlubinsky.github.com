@@ -346,6 +346,7 @@ print(stack.pop())  # Output: 2
 Explanation: This function implements a stack using a linked list where each node contains a value and a reference to the next node.
 ```
 ### 19) Write a Python function to implement a queue using two stacks.
+```
 #Proposed solution by github.com/tushar2704
 class Queue:
     def __init__(self):
@@ -369,8 +370,9 @@ queue.enqueue(3)
 print(queue.dequeue())  # Output: 1
 print(queue.dequeue())  # Output: 2
 Explanation: This function implements a queue using two stacks. One stack is used for enqueuing, and the other for dequeuing.
-
-20) Write a Python function to find the longest increasing subsequence in a given list of integers.
+```
+### 20) Write a Python function to find the longest increasing subsequence in a given list of integers.
+```
 #Proposed solution by github.com/tushar2704
 def longest_increasing_subsequence(nums):
     if not nums:
@@ -385,8 +387,9 @@ def longest_increasing_subsequence(nums):
 # Example usage:
 print(longest_increasing_subsequence([10, 9, 2, 5, 3, 7, 101, 18]))  # Output: 4
 Explanation: This function uses dynamic programming to find the length of the longest increasing subsequence in a list of integers. Each element in the dp array keeps track of the longest subsequence ending at that index.
-
-21) Write a Python function to find the shortest path between two nodes in a graph using Dijkstra’s algorithm.
+```
+### 21) Write a Python function to find the shortest path between two nodes in a graph using Dijkstra’s algorithm.
+```
 import heapq
 
 def dijkstra_algorithm(graph, start_node):
@@ -417,9 +420,12 @@ graph = {
     'D': {}
 }
 print(dijkstra_algorithm(graph, 'A'))  # Output: {'A': 0, 'B': 1, 'C': 2, 'D': 3}
-Explanation: This function implements Dijkstra’s algorithm to find the shortest path from a start node to all other nodes in a weighted graph. It uses a priority queue to always process the nearest available node.
+Explanation: This function implements Dijkstra’s algorithm to find the shortest path from a start node to all other nodes in a weighted graph.
+ It uses a priority queue to always process the nearest available node.
+```
 
-22) Write a Python function to find the longest common substring between two given strings.
+### 22) Write a Python function to find the longest common substring between two given strings.
+```
 #Proposed solution by github.com/tushar2704
 def longest_common_substring(str1, str2):
     m, n = len(str1), len(str2)
@@ -442,8 +448,9 @@ def longest_common_substring(str1, str2):
 # Example usage:
 print(longest_common_substring("abcde", "abfce"))  # Output: "ab"
 Explanation: This function uses dynamic programming to find the longest common substring between two strings. It maintains a table dp where dp[i][j] is the length of the longest common substring ending at str1[i-1] and str2[j-1].
-
-23) Write a Python function to check if a given string is a palindrome.
+```
+### 23) Write a Python function to check if a given string is a palindrome.
+```
 #Proposed solution by github.com/tushar2704
 def is_palindrome(s):
     return s == s[::-1]
@@ -451,9 +458,11 @@ def is_palindrome(s):
 # Example usage:
 print(is_palindrome("radar"))  # Output: True
 print(is_palindrome("hello"))  # Output: False
-Explanation: This function checks if a string is the same forwards and backwards, which defines a palindrome.
 
-24) Write a Python function to sort a given list of integers using the quicksort algorithm.
+Explanation: This function checks if a string is the same forwards and backwards, which defines a palindrome.
+```
+### 24) Write a Python function to sort a given list of integers using the quicksort algorithm.
+```
 #Proposed solution by github.com/tushar2704
 def quicksort(arr):
     if len(arr) <= 1:
@@ -466,9 +475,12 @@ def quicksort(arr):
 
 # Example usage:
 print(quicksort([3,6,8,10,1,2,1]))  # Output: [1, 1, 2, 3, 6, 8, 10]
-Explanation: This function implements the quicksort algorithm, a divide-and-conquer sorting algorithm. It selects a pivot and partitions the list into elements less than, equal to, and greater than the pivot, and recursively sorts the partitions.
-
-25) Write a Python function to generate all permutations of a given list of integers.
+Explanation: This function implements the quicksort algorithm, a divide-and-conquer sorting algorithm.
+It selects a pivot and partitions the list into elements less than, equal to, and greater than the pivot,
+and recursively sorts the partitions.
+```
+### 25) Write a Python function to generate all permutations of a given list of integers.
+```
 #Proposed solution by github.com/tushar2704
 from itertools import permutations
 
@@ -485,8 +497,10 @@ As this blog is open to all members, there is no paywall, so consider buying me 
 Tushar Aggarwal
 Hey, If you gain something from my work, consider supporting me by buying me a beer!🍺🍻
 buymeacoffee.com
+```
 
-26) Write a Python function to merge two sorted arrays into a single sorted array.
+### 26) Write a Python function to merge two sorted arrays into a single sorted array.
+```
 #Proposed solution by github.com/tushar2704
 def merge_sorted_arrays(arr1, arr2):
     result = []
@@ -505,8 +519,9 @@ def merge_sorted_arrays(arr1, arr2):
 # Example usage:
 print(merge_sorted_arrays([1, 3, 5], [2, 4, 6]))  # Output: [1, 2, 3, 4, 5, 6]
 Explanation: This function merges two sorted arrays into a single sorted array by comparing elements from both arrays and appending the smaller one to the result list.
-
-27) Write a Python function to find the maximum subarray sum in a given array of integers.
+```
+### 27) Write a Python function to find the maximum subarray sum in a given array of integers.
+```
 #Proposed solution by github.com/tushar2704
 def max_subarray_sum(arr):
     max_sum = current_sum = arr[0]
@@ -518,8 +533,9 @@ def max_subarray_sum(arr):
 # Example usage:
 print(max_subarray_sum([-2, -3, 4, -1, -2, 1, 5, -3]))  # Output: 7
 Explanation: This function uses Kadane’s algorithm to find the maximum sum of a contiguous subarray within a one-dimensional array of numbers.
-
-28) Write a Python function to find the first non￾repeating character in a given string.
+```
+### 28) Write a Python function to find the first non￾repeating character in a given string.
+```
 #Proposed solution by github.com/tushar2704
 def first_non_repeating_character(s):
     frequency = {}
@@ -536,8 +552,9 @@ def first_non_repeating_character(s):
 # Example usage:
 print(first_non_repeating_character("alphabet"))  # Output: 'l'
 Explanation: This function finds the first non-repeating character in a string by creating a frequency dictionary and then checking which character has a frequency of one.
-
-29) Write a Python function to reverse a given linked list.
+```
+### 29) Write a Python function to reverse a given linked list.
+```
 #Proposed solution by github.com/tushar2704
 class ListNode:
     def __init__(self, value=0, next=None):
@@ -561,8 +578,8 @@ reversed_head = reverse_linked_list(head)
 while reversed_head:
     print(reversed_head.value, end=" ")  # Output: 3 2 1
 Explanation: This function reverses a singly linked list by changing the direction of the links between nodes.
-
-30) Write a Python function to implement binary search on a given sorted array of integers.
+```
+### 30) Write a Python function to implement binary search on a given sorted array of integers.
 #Proposed solution by github.com/tushar2704
 def binary_search(arr, target):
     low, high = 0, len(arr) - 1
