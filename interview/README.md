@@ -1,3 +1,5 @@
+
+https://www.youtube.com/watch?v=_keHRxzx7as  Новые задачи на LeetCode | Ща порешаем! #99
 ```
 Google Advanced Data Analytics Professional Certificate | Coursera
 Microsoft Certified: Power BI Data Analyst Associate - Certifications | Microsoft Learn
