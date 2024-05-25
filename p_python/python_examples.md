@@ -112,6 +112,7 @@ for number in count_down(3):
 Explanation: yield allows a function to return values one at a time as they are needed, creating a generator that can be iterated over.
 ```
 ### 7) What is the difference between a list comprehension and a generator expression in Python? Provide an example of each.
+```
 List Comprehension Example:
 
 #Proposed solution by github.com/tushar2704
@@ -125,8 +126,9 @@ squares_gen = (x**2 for x in range(10))
 print(list(squares_gen))
 # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 Explanation: List comprehensions generate lists, while generator expressions create generators. Generators are more memory-efficient as they yield items one at a time.
-
-8) Write a Python function to check whether a given string is a palindrome or not.
+```
+### 8) Write a Python function to check whether a given string is a palindrome or not.
+```
 #Proposed solution by github.com/tushar2704
 def is_palindrome(s):
     return s == s[::-1]
@@ -135,8 +137,9 @@ def is_palindrome(s):
 print(is_palindrome("radar"))  # Output: True
 print(is_palindrome("hello"))  # Output: False
 Explanation: This function checks if a string is the same forwards and backwards, which defines a palindrome.
-
-9) Write a Python function to find the second highest number in a list.
+```
+### 9) Write a Python function to find the second highest number in a list.
+```
 #Proposed solution by github.com/tushar2704
 def second_highest(lst):
     unique_sorted = sorted(set(lst), reverse=True)
@@ -146,8 +149,10 @@ def second_highest(lst):
 print(second_highest([1, 2, 3, 4, 5]))  # Output: 4
 print(second_highest([5, 5, 5, 5]))     # Output: None
 Explanation: This function removes duplicates with set, sorts the list, and returns the second highest number if it exists.
+```
 
-10) Write a Python function to count the number of vowels in a given string.
+### 10) Write a Python function to count the number of vowels in a given string.
+```
 #Proposed solution by github.com/tushar2704
 def count_vowels(s):
     return sum(1 for char in s if char.lower() in 'aeiou')
@@ -155,8 +160,9 @@ def count_vowels(s):
 # Example usage:
 print(count_vowels("hello world"))  # Output: 3
 Explanation: This function counts vowels in a string using a generator expression, checking each character against a set of vowels.
-
-11) Write a Python function to find the common elements between two lists.
+```
+### 11) Write a Python function to find the common elements between two lists.
+```
 #Proposed solution by github.com/tushar2704
 def find_common_elements(list1, list2):
     return list(set(list1) & set(list2))
@@ -164,8 +170,9 @@ def find_common_elements(list1, list2):
 # Example usage:
 print(find_common_elements([1, 2, 3, 4], [3, 4, 5, 6]))  # Output: [3, 4]
 Explanation: This function uses set intersection to find common elements between two lists, which is efficient and concise.
-
-12) Write a Python function to reverse a linked list.
+```
+### 12) Write a Python function to reverse a linked list.
+```
 #Proposed solution by github.com/tushar2704
 class ListNode:
     def __init__(self, value=0, next=None):
@@ -190,6 +197,7 @@ while reversed_head:
     print(reversed_head.value, end=" ")
     reversed_head = reversed_head.next  # Output: 3 2 1
 Explanation: This function reverses a singly linked list by changing the direction of the links between nodes.
+```
 
 13) Write a Python function to find the shortest path between two nodes in a graph.
 #Proposed solution by github.com/tushar2704
