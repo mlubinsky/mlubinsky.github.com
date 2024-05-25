@@ -13,7 +13,8 @@ https://python.plainenglish.io/
 Now lets start with #1–100 of 501
 
 ### 1) Write a Python function to check whether a given number is prime or not.
-#Proposed solution by github.com/tushar2704
+ 
+ Proposed solution by github.com/tushar2704
 ```
 def is_prime(n):
     if n < 2:
@@ -30,6 +31,7 @@ print(is_prime(4))   # Output: False
 Explanation: This function checks if a number is prime by attempting to divide it by all numbers up to its square root. If any divisor is found, it returns False; otherwise, it returns True.
 
 ### 2) Write a Python function to find the largest continuous sum in a given list of integers.
+```
 #Proposed solution by github.com/tushar2704
 def max_subarray_sum(arr):
     max_sum = current_sum = arr[0]
@@ -40,9 +42,14 @@ def max_subarray_sum(arr):
 
 # Example usage:
 print(max_subarray_sum([-2, -3, 4, -1, -2, 1, 5, -3]))  # Output: 7
-Explanation: This function uses Kadane’s algorithm to find the maximum sum of a contiguous subarray. It iterates through the list, updating the current sum and maximum sum as needed.
 
-3) What is the difference erence between ‘is’ and ‘==’ inPython?
+Explanation:
+This function uses Kadane’s algorithm to find the maximum sum of a contiguous subarray.
+It iterates through the list, updating the current sum and maximum sum as needed.
+```
+
+### 3) What is the difference erence between ‘is’ and ‘==’ inPython?
+```
 '==' checks for equality, meaning it checks whether the values of two variables are the same.
 'is' checks for identity, meaning it checks whether two variables point to the same object in memory.
 #Proposed solution by github.com/tushar2704
@@ -54,7 +61,10 @@ print(a == b)  # Output: True
 print(a is b)  # Output: True
 print(a == c)  # Output: True
 print(a is c)  # Output: False
-4) What is the purpose of the ‘enumerate’ function in Python? Provide an example.
+```
+
+### 4) What is the purpose of the ‘enumerate’ function in Python? Provide an example.
+```
 #Proposed solution by github.com/tushar2704
 fruits = ['apple', 'banana', 'cherry']
 for index, fruit in enumerate(fruits):
@@ -65,8 +75,9 @@ for index, fruit in enumerate(fruits):
 # 1 banana
 # 2 cherry
 Explanation: enumerate provides a convenient way to access both the index and the value of items in a list, making it useful for loops where you need both.
+```
 
-5) What is the purpose of the ‘zip’ function in Python? Provide an example.
+### 5) What is the purpose of the ‘zip’ function in Python? Provide an example.
 #Proposed solution by github.com/tushar2704
 names = ['Alice', 'Bob', 'Charlie']
 ages = [25, 30, 35]
