@@ -199,7 +199,8 @@ while reversed_head:
 Explanation: This function reverses a singly linked list by changing the direction of the links between nodes.
 ```
 
-13) Write a Python function to find the shortest path between two nodes in a graph.
+### 13) Write a Python function to find the shortest path between two nodes in a graph.
+```
 #Proposed solution by github.com/tushar2704
 import heapq
 
@@ -235,8 +236,10 @@ graph = {
 }
 print(shortest_path(graph, 'A', 'D'))  # Output: 4
 Explanation: This function implements Dijkstra’s algorithm using a priority queue to find the shortest path in a weighted graph.
+```
 
-14) Write a Python function to fi nd the intersection of two sorted lists.
+### 14) Write a Python function to fi nd the intersection of two sorted lists.
+```
 #Proposed solution by github.com/tushar2704
 def intersection_of_sorted_lists(list1, list2):
     i, j = 0, 0
@@ -255,8 +258,9 @@ def intersection_of_sorted_lists(list1, list2):
 # Example usage:
 print(intersection_of_sorted_lists([1, 2, 4, 5, 6], [2, 3, 5, 7]))  # Output: [2, 5]
 Explanation: This function finds the intersection of two sorted lists by using two pointers, efficiently comparing elements.
-
-15) Write a Python function to fi nd the longest common prefix among a list of strings.
+```
+### 15) Write a Python function to fi nd the longest common prefix among a list of strings.
+```
 #Proposed solution by github.com/tushar2704
 def longest_common_prefix(strs):
     if not strs:
@@ -271,8 +275,9 @@ def longest_common_prefix(strs):
 # Example usage:
 print(longest_common_prefix(["flower", "flow", "flight"]))  # Output: "fl"
 Explanation: This function finds the longest common prefix by comparing characters of the shortest string with all other strings.
-
-16) Write a Python function to perform a binary search on a sorted list.
+```
+### 16) Write a Python function to perform a binary search on a sorted list.
+```
 #Proposed solution by github.com/tushar2704
 def binary_search(arr, target):
     low, high = 0, len(arr) - 1
@@ -288,9 +293,11 @@ def binary_search(arr, target):
 
 # Example usage:
 print(binary_search([1, 2, 3, 4, 5, 6], 4))  # Output: 3
-Explanation: This function performs a binary search to find the index of a target value within a sorted array, returning -1 if the target is not found.
+Explanation: This function performs a binary search to find the index of a target value within a sorted array,
+returning -1 if the target is not found.
+```
 
-17) Write a Python function to find the maximum sum of a contiguous subarray with a size of k in a given list of integers.
+### 17) Write a Python function to find the maximum sum of a contiguous subarray with a size of k in a given list of integers.
 #Proposed solution by github.com/tushar2704
 def max_sum_subarray_k(arr, k):
     max_sum = sum(arr[:k])
