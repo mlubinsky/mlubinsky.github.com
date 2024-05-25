@@ -78,6 +78,7 @@ Explanation: enumerate provides a convenient way to access both the index and th
 ```
 
 ### 5) What is the purpose of the ‘zip’ function in Python? Provide an example.
+```
 #Proposed solution by github.com/tushar2704
 names = ['Alice', 'Bob', 'Charlie']
 ages = [25, 30, 35]
@@ -89,9 +90,12 @@ for name, age in zip(names, ages):
 # Bob is 30 years old
 # Charlie is 35 years old
 Explanation: zip combines elements from multiple lists into a single iterable of tuples, pairing elements based on their position.
+```
 
-6) What is the purpose of the ‘yield’ keyword in Python? Provide an example.
+### 6) What is the purpose of the ‘yield’ keyword in Python? Provide an example.
+```
 #Proposed solution by github.com/tushar2704
+
 def count_down(num):
     while num > 0:
         yield num
@@ -106,8 +110,8 @@ for number in count_down(3):
 # 2
 # 1
 Explanation: yield allows a function to return values one at a time as they are needed, creating a generator that can be iterated over.
-
-7) What is the difference between a list comprehension and a generator expression in Python? Provide an example of each.
+```
+### 7) What is the difference between a list comprehension and a generator expression in Python? Provide an example of each.
 List Comprehension Example:
 
 #Proposed solution by github.com/tushar2704
