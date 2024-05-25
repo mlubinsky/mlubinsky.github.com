@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=v_q2JTIqE20
+
 https://github.com/cuda-mode/lectures
 
 https://thechipletter.substack.com/p/demystifying-gpu-compute-architectures
