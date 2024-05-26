@@ -9,6 +9,10 @@ AWS Certified Machine Learning - Specialty Certification | AWS Certification | A
 Microsoft Certified: Azure Data Scientist Associate
 ```
 
+https://habr.com/ru/articles/817029/  Как найти работу мечты в США 1 
+https://habr.com/ru/articles/817031/ Как найти работу мечты в США 2
+
+
 https://relational.ai/careers/ JOB
 
 https://habr.com/ru/articles/794556/
