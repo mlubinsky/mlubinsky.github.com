@@ -63,6 +63,8 @@ https://www.kdnuggets.com/10-github-repositories-to-master-data-engineering
 
 ### Vector DB 
 
+https://habr.com/ru/articles/817173/
+
 https://www.youtube.com/watch?v=035I2WKj5F0
 
 https://habr.com/ru/companies/tochka/articles/809493/
