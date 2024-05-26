@@ -1,5 +1,11 @@
 https://www.freecodecamp.org/news/apache-kafka-handbook/
 
+### Schema Registry 
+
+https://habr.com/ru/articles/811283/
+
+https://habr.com/ru/articles/817121/
+
 https://habr.com/ru/articles/738874/
 
 https://www.youtube.com/watch?v=BVxDFL5iTx8 Kafka 3.5 KRaft instead Zookeper
