@@ -134,6 +134,8 @@ http://wiki.naturalphilosophy.org/index.php?title=Andrew_E_Chubykalo
 
 ### Проблема «4/3»
 
+https://arxiv.org/abs/2405.00071
+
 https://physics.stackexchange.com/questions/80856/does-the-frac43-problem-of-classical-electromagnetism-remain-in-quantum-m
 
 http://80bola.com.trinitas.ru/rus/doc/0016/001g/00164093.htm
