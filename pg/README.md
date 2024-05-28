@@ -8,6 +8,8 @@ https://habr.com/ru/companies/karuna/articles/809305/ pgvector
 
 https://habr.com/ru/companies/selectel/articles/807259/ Выжимаем максимум из PostgreSQL
 
+https://habr.com/ru/companies/otus/articles/815893/
+
 queues in postgres https://docs.hatchet.run/blog/multi-tenant-queues
 https://news.ycombinator.com/item?id=40077233
 
