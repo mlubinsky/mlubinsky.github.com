@@ -1,10 +1,16 @@
-https://habr.com/ru/companies/otus/articles/804281/  Config
+
+
+https://habr.com/ru/companies/otus/articles/817187/ Интеграция PostgreSQL с другими СУБД через dblink
 
 https://postgres.ai/blog/20220525-common-db-schema-change-mistakes
 
 https://news.ycombinator.com/item?id=40186752
 
 https://habr.com/ru/companies/karuna/articles/809305/ pgvector
+
+### Config
+
+https://habr.com/ru/companies/otus/articles/804281/  Config
 
 https://habr.com/ru/companies/selectel/articles/807259/ Выжимаем максимум из PostgreSQL
 
