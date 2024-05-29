@@ -22,7 +22,7 @@ https://news.ycombinator.com/item?id=40077233
 Ten years of improvements in PostgreSQL's optimizer (rmarcus.info)
 https://news.ycombinator.com/item?id=40060123
 
-Postgres is enough:
+### Postgres is enough:
 
 https://habr.com/ru/articles/794839/
 
@@ -879,6 +879,9 @@ ON DELETE SET NULL
 ON DELETE CASCADE
 
 ON DELETE SET DEFAULT
+
+### Slow delete
+https://ivdl.co.za/2024/05/29/achieving-a-100x-speedup-of-deletes-on-postgresql/
 
 ### Indexes
 https://www.youtube.com/watch?v=mnEU2_cwE_s B-tree indexes (ru)
