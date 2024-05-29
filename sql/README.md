@@ -6,6 +6,8 @@ https://news.ycombinator.com/item?id=36243926
 
 ### Query optimizer
 
+https://vldb.org/pvldb/vol14/p2383-fent.pdf A Practical Approach to Groupjoin and Nested Aggregates
+
 https://xuanwo.io/2024/02-what-i-talk-about-when-i-talk-about-query-optimizer-part-1/
 
 https://news.ycombinator.com/item?id=39176797
