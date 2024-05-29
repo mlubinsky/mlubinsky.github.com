@@ -13,6 +13,42 @@ number of lines in file:
 find /v /c “” C:\Users\Martin\Desktop\sample.txt
 
 
+
+### How to invoke program located on another Windows box on same network?
+
+
+https://www.reddit.com/r/PowerShell/comments/q9e887/tldr_of_how_to_run_commands_on_a_remote_windows/
+
+#### OpenSSH
+
+https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui
+
+https://medium.com/geekculture/setup-ssh-server-on-windows-10-11-34c7f096eaff
+
+#### PowerShell
+https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/running-remote-commands?view=powershell-7.4
+
+https://serverfault.com/questions/690852/use-powershell-to-start-a-gui-program-on-a-remote-machine
+
+#### PSexec
+
+https://www.youtube.com/watch?v=uis36XxFUfg
+
+https://4sysops.com/archives/three-ways-to-run-remote-windows-commands/
+
+https://learn.microsoft.com/en-us/sysinternals/downloads/psexec
+
+psexec \\RemoteComputer cmd.exe
+
+psexec \\computer_name -u username -p password ipconfig
+
+#### The WMIC obsoleted !!!  is part of wbem win folder: C:\Windows\System32\wbem
+
+winrs -r:PCNAME cmd
+
+WMIC /node:ComputerName process call create “cmd.exe /c start.exe”
+
+
 ### .BAT file to traverse folder
 
 ```
