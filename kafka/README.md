@@ -1,5 +1,7 @@
 https://www.freecodecamp.org/news/apache-kafka-handbook/
 
+https://habr.com/ru/articles/818007/
+
 ### Schema Registry 
 
 https://habr.com/ru/articles/811283/
