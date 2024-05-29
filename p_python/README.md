@@ -55,9 +55,8 @@ finally:
       #  Even if you return in the except block still the finally block will execute
  ```
 
-### Exceptions
 
-Example 1
+#### Example 1
 ```
  try:
      l = ["a", "b"]
@@ -65,28 +64,17 @@ Example 1
  except (ValueError, IndexError) as e:
      pass
 ```
-Example 2
-```
-try:
-    # Some code that may raise an exception.
-except <ExceptionType> as err:
-    # This part will only be executed when the specified exception is raised.
-else:
-    # This part will only be executed when no exception is raised.
-finally:
-    # This part will always be excuted
-```
 
-log the traceback, rather than just the error message. 
+
+#### Example 2: log the traceback, rather than just the error message. 
 ```
 import traceback
-
 try:
     num = int("abc")
 except ValueError as err:
     print(traceback.format_exc)
 ```
-or using logging
+#### Example 3: using logging
 ```
 import logging
 
@@ -293,10 +281,15 @@ https://realpython.com/python-flatten-list/
 ```
 def most_frequent(list):
     return max(set(list), key = list.count)
-  
 
 numbers = [1,2,1,2,3,2,1,4,2]
-most_frequent(numbers)  
+most_frequent(numbers)
+
+from collections import Counter
+letters = ['a', 'b', 'c', 'a', 'c', 'a', 't', 'p', 'b', 'a', 'y', 't', 'c']
+letter_counts = Counter(letters)
+print(letter_counts.most_common(1)) # [('a', 4)]  this is array of tuples(char, count)
+letter_counts.most_common(1)[0][0] # tale 1st element from array of tuples and take 1st item in the tuple(which is char)
 ```
 
 
