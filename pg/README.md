@@ -74,6 +74,9 @@ https://news.ycombinator.com/item?id=40417347
 https://tembo.io/blog/tembo-data-warehouse
 
 ### Foreign data wrappers FDW
+
+https://habr.com/ru/companies/otus/articles/817063/ Интеграция PostgreSQL и Hadoop
+
 ```
 CREATE EXTENSION clerk_fdw;
 
