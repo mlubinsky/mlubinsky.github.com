@@ -1,4 +1,58 @@
-Find the matching - Gemini:
+### Find matching - ChatGPT
+```
+import os
+import glob
+
+# Define input and output base directories
+input_base_dir = r"C:\FieldTestLogs\spotlight"
+output_base_dir = r"C:\RegressionLibrary\SPOT-ACE"
+
+def get_matching_output_folder(input_folder):
+    # Extract the year, month, and day from the input folder path
+    parts = input_folder.split(os.sep)
+    year, month, day = parts[-3], parts[-2], parts[-1]
+    output_folder = os.path.join(output_base_dir, year, month, day)
+    return output_folder
+
+def check_subfolder_existence(input_folder, output_folder, subfolder_name):
+    input_subfolder = os.path.join(input_folder, subfolder_name)
+    if os.path.exists(input_subfolder):
+        output_subfolders = glob.glob(os.path.join(output_folder, f"{subfolder_name}*"))
+        if not output_subfolders:
+            print(f"Missing matching output subfolder for: {input_subfolder}")
+
+def main():
+    for root, dirs, files in os.walk(input_base_dir):
+        if len(dirs) == 0 and len(files) == 0:
+            # This is an empty directory
+            continue
+        
+        if len(dirs) == 2 and all(d in dirs for d in ['SF', 'G2']):
+            input_folder = root
+            output_folder = get_matching_output_folder(input_folder)
+            
+            if not os.path.exists(output_folder):
+                print(f"No matching output folder for: {input_folder}")
+            else:
+                check_subfolder_existence(input_folder, output_folder, 'G2')
+                check_subfolder_existence(input_folder, output_folder, 'SF')
+        elif 'SF' in dirs or 'G2' in dirs:
+            input_folder = root
+            output_folder = get_matching_output_folder(input_folder)
+            
+            if not os.path.exists(output_folder):
+                print(f"No matching output folder for: {input_folder}")
+            else:
+                if 'G2' in dirs:
+                    check_subfolder_existence(input_folder, output_folder, 'G2')
+                if 'SF' in dirs:
+                    check_subfolder_existence(input_folder, output_folder, 'SF')
+
+if __name__ == "__main__":
+    main()
+```
+
+### Find the matching - Gemini:
 ```
 
 import os
