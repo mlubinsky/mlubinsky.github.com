@@ -1,3 +1,89 @@
+Find the matching - Gemini:
+```
+
+import os
+
+def find_matching_output(input_folder):
+  """
+  Finds the matching output folder for a given input folder based on MM-DD.
+
+  Args:
+      input_folder (str): Path to the input folder.
+
+  Returns:
+      str: Path to the matching output folder or None if not found.
+  """
+  # Extract month and day from input folder path
+  _, _, month_day = input_folder.split("\\")[-2:]
+
+  # Construct matching output folder path
+  output_folder = os.path.join(
+      "C:\\RegressionLibrary\\SPOT-ACE", month_day, month_day
+  )
+
+  # Check if output folder exists
+  if not os.path.exists(output_folder):
+    return None
+
+  return output_folder
+
+def check_subfolder_match(input_folder, subfolder, output_folder):
+  """
+  Checks if the output folder has a subfolder starting with the specified name.
+
+  Args:
+      input_folder (str): Path to the input folder.
+      subfolder (str): Name of the subfolder to check (e.g., "G2", "SF").
+      output_folder (str): Path to the output folder.
+
+  Returns:
+      bool: True if a matching subfolder is found, False otherwise.
+  """
+  matching_subfolders = [
+      d for d in os.listdir(output_folder) if d.startswith(subfolder)
+  ]
+  return len(matching_subfolders) > 0
+
+def main():
+  """
+  Main function to iterate through input folders and perform checks.
+  """
+  base_path = "C:\\FieldTestLogs\\spotlight"
+
+  for year in range(2024, 2025):
+    for month in range(1, 13):
+      month_str = f"{month:02d}"
+      for day in range(1, 32):
+        day_str = f"{day:02d}"
+        input_folder = os.path.join(base_path, year, month_str, day_str)
+
+        # Check if input folder exists
+        if not os.path.exists(input_folder):
+          continue
+
+        # Find matching output folder
+        output_folder = find_matching_output(input_folder)
+
+        if not output_folder:
+          # No matching output folder found
+          print(f"Input folder: {input_folder} (no matching output)")
+          continue
+
+        # Check for G2 subfolder mismatch
+        if os.path.exists(os.path.join(input_folder, "G2")) and not check_subfolder_match(input_folder, "G2", output_folder):
+          print(f"Input G2 mismatch: {os.path.join(input_folder, 'G2')}")
+
+        # Check for SF subfolder mismatch
+        if os.path.exists(os.path.join(input_folder, "SF")) and not check_subfolder_match(input_folder, "SF", output_folder):
+          print(f"Input SF mismatch: {os.path.join(input_folder, 'SF')}")
+
+if __name__ == "__main__":
+  main()
+```
+
+
+
+
 ### Debug print in PHP
 
 echo nl2br("\n command=" . $command ) ;
