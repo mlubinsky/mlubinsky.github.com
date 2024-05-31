@@ -1,3 +1,7 @@
+### DuckDB
+
+https://www.nikolasgoebel.com/2024/05/28/duckdb-doesnt-need-data.html
+
 DuckDB Book https://www.manning.com/books/duckdb-in-action/
 
 https://www.definite.app/blog/query-any-ducking-thing
@@ -8,7 +12,30 @@ https://medium.com/codex/this-pandas-alternative-is-350x-faster-when-processing-
 
 https://towardsdev.com/sqlite-v-duckdb-e803add4f698  vs DuckDB
 
+
+```
+As DuckDB is an analytics database, it has only minimal support for transactions and parallel write access.
+ You therefore couldn’t use it in applications and APIs that process and store input data arriving arbitrarily. Similarly when multiple concurrent processes read from a writeable database.
+```
+
+https://harlequin.sh/ DuckDB interface
+
+https://github.com/duckdb/duckdb
+
+https://duckdb.org/docs/data/csv
+
+```
+In Python,  DuckDB is for getting the data you want, in the form you want it, from a file / remote place. 
+Polars is for when you want to do something with that data, like visualize it.
+`duckdb.sql("SELECT foo, bar * 2 as bar_times_2 FROM ...").pl()` (now in polars format) -> other stuff
+```
+
+
 https://levelup.gitconnected.com/duckdb-vs-polars-2ff19cc7af41
+
+
+
+
 
 https://antonz.org/sqlite-3-44/
 
@@ -189,24 +216,7 @@ https://jvns.ca/blog/2014/10/02/how-does-sqlite-work-part-2-btrees/
 http://carlosproal.com/ir/papers/p121-comer.pdf The Ubiquitous B-Tree
 
 
-### DuckDB
 
-```
-As DuckDB is an analytics database, it has only minimal support for transactions and parallel write access.
- You therefore couldn’t use it in applications and APIs that process and store input data arriving arbitrarily. Similarly when multiple concurrent processes read from a writeable database.
-```
-
-https://harlequin.sh/ DuckDB interface
-
-https://github.com/duckdb/duckdb
-
-https://duckdb.org/docs/data/csv
-
-```
-In Python,  DuckDB is for getting the data you want, in the form you want it, from a file / remote place. 
-Polars is for when you want to do something with that data, like visualize it.
-`duckdb.sql("SELECT foo, bar * 2 as bar_times_2 FROM ...").pl()` (now in polars format) -> other stuff
-```
 
 ## JSON
 
