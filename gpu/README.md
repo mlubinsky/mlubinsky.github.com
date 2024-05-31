@@ -1,3 +1,5 @@
+https://medium.com/@muhammedashraf2661/cuda-programming-an-introduction-to-gpu-architecture-dfd8dfffa13f
+
 https://www.youtube.com/watch?v=v_q2JTIqE20
 
 https://github.com/cuda-mode/lectures
