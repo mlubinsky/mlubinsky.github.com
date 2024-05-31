@@ -58,6 +58,8 @@ aws s3 rm --recursive xxx
 
 https://habr.com/ru/company/cloud4y/blog/681376/
 
+https://blog.plerion.com/things-you-wish-you-didnt-need-to-know-about-s3/
+
 https://calpaterson.com/s3.html
 
 https://lobste.rs/s/t9d5z4/s3_is_files_not_filesystem
