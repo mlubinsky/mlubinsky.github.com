@@ -247,6 +247,11 @@ https://habr.com/ru/post/575520/  NN pruning
 
 https://ml-jku.github.io/hopfield-layers/ Hopfield network
 
+
+### JAX
+
+https://medium.com/@muhammedashraf2661/a-quick-introduction-to-the-fastest-machine-learning-framework-jax-dbe95eaf30bf
+
 ### Automatic differentiation
 
 TensorFlow, PyTorch, Jax, and Julia
