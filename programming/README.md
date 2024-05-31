@@ -183,6 +183,8 @@ https://ziglang.org/
 
 https://janet-lang.org/
 
+https://janet.guide/
+
 https://junglecoder.com/blog/my-janet-story
 
 https://news.ycombinator.com/item?id=22975225
