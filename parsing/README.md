@@ -189,6 +189,9 @@ Build JavaScript compiler in C:
 https://hacks.mozilla.org/2020/06/compiler-compiler-working-on-a-javascript-engine/
 
 ### PEG
+
+https://lobste.rs/s/tpvfzt/recommendations_for_practical
+
 <https://habr.com/ru/post/471860/>
 
 <https://www.youtube.com/watch?v=QppWTvh7_sI> Guido PEG talk
