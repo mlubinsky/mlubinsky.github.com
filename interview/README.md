@@ -1,3 +1,4 @@
+https://habr.com/ru/companies/bothub/articles/812265/  System design interview
 
 https://www.youtube.com/watch?v=_keHRxzx7as   Глеб Михайлов Новые задачи на LeetCode | Ща порешаем! #99  
 https://www.youtube.com/watch?v=JtMuXmmDl9s    Саша Лукин  
@@ -98,7 +99,7 @@ https://habr.com/ru/articles/743514/
 All permutations of string
 https://www.techbeamers.com/permutation-of-a-string-in-python/
 
-Brackets matching
+### Brackets matching
 ```
 class Solution:
     def isValid(self, s: str) -> bool:     
@@ -137,7 +138,8 @@ https://stepik.org/course/102772 Ace Your Next Coding Interview by Learning Algo
 
 
 https://medium.com/@tudorache.a.bogdan/day-5-arrays-median-of-two-sorted-arrays-17c9349e21ca
-Find median of two sorted arrays 
+
+### Find median of two sorted arrays 
 The median value is the value that separates a dataset into two equal halves..
 ```
 class Solution(object):
