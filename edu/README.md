@@ -68,7 +68,11 @@ Lecture 6: Singular Value Decomposition (SVD)
 ### Geometric Algebra
 <https://www.youtube.com/watch?v=tX4H_ctggYo>
 
+https://bivector.net/
+
 https://habr.com/ru/articles/818933/
+
+https://habr.com/ru/articles/732926/ Spinors for humans
 
 
 Leonard Susskind - Why does mathematics work?
