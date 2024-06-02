@@ -26,6 +26,8 @@ https://news.ycombinator.com/item?id=18837677
 
 https://news.ycombinator.com/item?id=22810867
 
+https://photonlines.substack.com/p/an-intuitive-guide-to-maxwells-equations
+
 https://ufn.ru/ru/articles/1976/2/h/citedby.html Распространение импульсов
 
 https://en.wikipedia.org/wiki/Moving_magnet_and_conductor_problem
