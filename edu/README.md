@@ -65,8 +65,11 @@ Introduction to Linear Dynamical Systems (EE263)
 Lecture 6: Singular Value Decomposition (SVD)
 <https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/video-lectures/lecture-6-singular-value-decomposition-svd/>
 
-Geometric Algebra
+### Geometric Algebra
 <https://www.youtube.com/watch?v=tX4H_ctggYo>
+
+https://habr.com/ru/articles/818933/
+
 
 Leonard Susskind - Why does mathematics work?
 <https://www.youtube.com/watch?v=2bgZmBAnhdg>
