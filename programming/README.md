@@ -142,12 +142,9 @@ https://www.inference.org.uk/itprnn/book.pdf
 
 https://aquadzn.github.io/learn-x-by-doing-y/
 
-
-
 https://www.biorxiv.org/
 
 https://www.arxiv.org/
-
 
 https://www.samueltaylor.org/articles/index.html
 
@@ -192,9 +189,6 @@ https://news.ycombinator.com/item?id=22975225
 ### Gravity lang
 https://marcobambini.github.io/gravity/#/README
 
-
-
-
 <https://luminousmen.com/post/asynchronous-programming-await-the-future>
 
 ### Tips
@@ -217,8 +211,6 @@ https://habr.com/ru/company/plesk/blog/507094/
 
 
 <https://academy.lightbend.com/courses>  mostly scala and reactive programming
-
-
 
 <https://habr.com/ru/company/JetBrains-education/blog/495014/>  educational links
 
@@ -300,7 +292,30 @@ https://habr.com/ru/post/506782/
 <http://www.tomharding.me/fantasy-land/>
 
 ### Monads
+https://www.jerf.org/iri/post/2958/
 
+https://byorgey.wordpress.com/2009/01/12/abstraction-intuition-and-the-monad-tutorial-fallacy/
+```
+Monads embody the concept of "chaining" functions. Every monad implements the chaining in a different way,
+but the user of the monad doesn't have to know how it's done. It's just "call this function on foo,
+take the result and pass it to the next" and so on.
+Plain old functions do it with plain old function composition (functions are monads!),
+ but something like Maybe will return None if it gets a None,
+and only otherwise pass the data on.
+The Future monad will await completion then pass it on (async/await is a monad!),
+the List monad will merge together zero or more list results from mapping over each of its items, and so on.
+Again, the cool thing is that it's the same syntax no matter what kind of Monad you're in,
+so you can totally change the behavior of a monadic function
+by just using it with a more specific return type (at least in Haskell,
+other languages might make you pass around an implementation) Monads are a neat tool of composition,
+but composing monads themselves is fiddly and cumbersome, involving monad transformer "stacks" of deeply nested generic types.
+Monad transformers are really just not fun.
+
+I'd give specific examples, but I'm kind of lethargic from the burrito I had for lunch.
+If you're familiar with flatMap(), a Monad is anything that's "flatmappable"
+(which in JS is just arrays, but languages like Scala take it much further).
+In C#, it's IQueryable (LINQ is a monad!)
+``
 https://news.ycombinator.com/item?id=40553551
 
 <https://habr.com/ru/post/490112/> monads
