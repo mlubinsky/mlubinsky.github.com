@@ -53,12 +53,12 @@ https://holdenk.github.io/spark-flowchart/flowchart/error/
 https://holdenk.github.io/spark-flowchart/flowchart/slow/
 
 ```
-df = df_eu.join(df_lac, how="inner", on="value")
+df = df_eu.join(df_lac, how="inner", on="value")   <--- this join is executed twice!!!
 
 df_1 = df.filter(filter_condition_1)
 df_2 = df.filter(filter_condition_2)
 
-## Add a new col aftre performing some transformation
+## Add a new col after performing some transformation
 df_1 = df_1.withColumn("new_col", transform_1)
 df_2 = df_2.withColumn("new_col", transform_2)
 
@@ -669,9 +669,9 @@ Good partitioning of data leads to better speed and fewer OOMs errors.
 The repartition leads to a full shuffle of data between the executors making the job slower.
 The coalesce operation doesn’t trigger a full shuffle when it reduces the number of partitions.
 It only transfers the data from partitions being removed to existing partitions.
-
-We can get partitions and there record count for each one using the following code:
-
+```
+###  Get partitions and there record count for each one:
+```
 from pyspark.sql.functions import spark_partition_id, asc, desc
 
 df.withColumn("partitionId", spark_partition_id())\
@@ -684,6 +684,21 @@ Output
 ```
 The number of files that get written out is controlled by the parallelization of your DataFrame or RDD.
 So if your data is split across 10 Spark partitions you cannot write fewer than 10 files without reducing partitioning (e.g. coalesce or repartition).
+```
+### PartitionBy
+https://medium.com/@tomhcorbin/mastering-pyspark-partitioning-repartition-vs-partitionby-cfde90aa3622
+```
+When you call df.write.partitionBy('column'), each of the original partitions in df is written independently. That is, each of your original partitions is sub-partitioned separately based on the 'column', and a separate file is written for each sub-partition. This means that the number of output files depends on the distribution of data in the original partitions.
+
+You would expect partitionBy() to create a global partitioning based on the specified column, resulting in a number of output files equal to the number of unique values in the column. However, partitionBy() operates on the level of individual partitions, leading to a potentially larger number of output files.
+
+One strategy to control the number of output files is to use repartition() before partitionBy(). This allows you to control the number of partitions in memory before writing out the data. Here's how you can do it:
+
+df.repartition(7, "DayOfWeek").write.partitionBy("DayOfWeek").parquet("path")
+
+In this example, the DataFrame is first repartitioned into 7 partitions based on ‘DayOfWeek’. repartition() uses a hash-based partitioner, which ensures that the unique ‘DayOfWeek’ values make their way into each partition. Then, when writing out the data with partitionBy(), each of these 7 partitions is written independently, resulting in a maximum of 7 output files for each unique value in 'DayOfWeek'.
+
+
 
 partitionBy() — Partitions the output by the given columns on the file system.
 maxRecordsPerFile — number of records in a single file in each partition. This helps in fixing large file problem.
@@ -692,7 +707,7 @@ When we write data, using the maxRecordsPerFile option, we can limit the number 
 
 To get one file per partition, use repartition() with the same columns you want the output to be partitioned by.
 
-The partitionBy method does not trigger any shuffle but it may generate a two many files.
+The partitionBy method does not trigger any shuffle but it may generate a too many files.
 Imagine we have 200 partitions, and we want to partition data by date.
 Each spark task will produce 365 files in which leads to 365×200=73k files.
 
@@ -700,7 +715,9 @@ partition_cols = []
 df.repartition(*partition_cols)\
   .write.partitionBy(*partition_cols)\
   .mode(SaveMode.Append).parquet(path)
-
+```
+### Bucketing: bucketBy
+```
 Spark also gives us the option of bucketing while writing data to tables.
 In bucketing data is divided into smaller portions called “buckets”.
 
