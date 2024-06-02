@@ -299,9 +299,17 @@ https://habr.com/ru/post/506782/
 
 <http://www.tomharding.me/fantasy-land/>
 
+### Monads
+
+https://news.ycombinator.com/item?id=40553551
+
 <https://habr.com/ru/post/490112/> monads
 
 <https://medium.com/@lettier/your-easy-guide-to-monads-applicatives-functors-862048d61610>
+
+<https://bytes.yingw787.com/posts/2019/12/06/monads/>
+
+
 
 <https://www.freecodecamp.org/news/functional-programming-patterns-cookbook-3a0dfe2d7e0a/>
 
@@ -311,7 +319,7 @@ https://habr.com/ru/post/506782/
 
 <https://harrylaou.com/slides/AlgebrasInProgramming.pdf>
 
-<https://bytes.yingw787.com/posts/2019/12/06/monads/>
+
 
 
 https://github.com/Hirrolot/poica
