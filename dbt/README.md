@@ -22,8 +22,19 @@ https://www.youtube.com/watch?v=Kn_Gu_3DCeE    REST API in Databricks
 
 https://www.youtube.com/watch?v=5E65mE_IiNQ Overview on Databricks Delta Live Tables with Multi-Hop Architecture
 
+
+### Partitioning vs Z-ordering
+
+https://medium.com/@tomhcorbin/data-storage-decisions-partitioning-vs-z-ordering-e39d5cddb178
+
 ### Datalake
 
+https://docs.databricks.com/en/delta/table-properties.html Delta table properties
+
+https://docs.databricks.com/en/delta/data-skipping.html
+```
+In Databricks Runtime 13.3 and above, Databricks recommends using clustering for Delta table layout. Clustering is not compatible with Z-ordering. See Use liquid clustering for Delta tables.
+```
 https://www.youtube.com/watch?v=dJvdzJQHpaQ
 
 https://www.youtube.com/watch?v=u95h8bBWpjI
