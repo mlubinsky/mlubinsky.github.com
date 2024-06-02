@@ -26,6 +26,21 @@ https://www.youtube.com/watch?v=5E65mE_IiNQ Overview on Databricks Delta Live Ta
 ### Partitioning vs Z-ordering
 
 https://medium.com/@tomhcorbin/data-storage-decisions-partitioning-vs-z-ordering-e39d5cddb178
+```
+Only partition tables larger than a terabyte in size.
+Partitioning tables smaller than this tend not to be worth the overhead.
+Try to keep your partition size around 1GB each or larger.
+This helps keep the number of partitions lower.
+If you regularly query a table based on a certain column,
+this table might be a good candidate for partitioning.
+
+When to Z-Order
+If your table is less than a terabyte in size, Z-order it instead of partitioning it.
+Use Z-ordering when your queries span multiple dimensions.
+But don’t don’t Z-order on too many columns.
+If you regularly query based on high cardinality columns, use Z-ordering.
+```
+
 
 ### Datalake
 
@@ -33,7 +48,9 @@ https://docs.databricks.com/en/delta/table-properties.html Delta table propertie
 
 https://docs.databricks.com/en/delta/data-skipping.html
 ```
-In Databricks Runtime 13.3 and above, Databricks recommends using clustering for Delta table layout. Clustering is not compatible with Z-ordering. See Use liquid clustering for Delta tables.
+In Databricks Runtime 13.3 and above,
+Databricks recommends using clustering for Delta table layout. Clustering is not compatible with Z-ordering.
+See Use liquid clustering for Delta tables.
 ```
 https://www.youtube.com/watch?v=dJvdzJQHpaQ
 
