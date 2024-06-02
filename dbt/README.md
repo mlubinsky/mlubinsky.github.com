@@ -15,6 +15,20 @@ https://habr.com/ru/companies/otus/articles/592605/
 
 https://habr.com/ru/companies/slurm/articles/754464/
 
+https://www.youtube.com/watch?v=BmhlAf3pk84 Databricks Certified Data Engineer Associate Exam Preparation - 45 Practice Questions & Answers
+
+ 
+https://www.youtube.com/watch?v=Kn_Gu_3DCeE    REST API in Databricks 
+
+https://www.youtube.com/watch?v=5E65mE_IiNQ Overview on Databricks Delta Live Tables with Multi-Hop Architecture
+
+### Datalake
+
+https://www.youtube.com/watch?v=dJvdzJQHpaQ
+
+https://www.youtube.com/watch?v=u95h8bBWpjI
+
+
 Apache Spark 3.4   вошел в релиз Databricks Runtime 13.0.
 
 В Apache Spark 3.4 пользователи теперь могут читать и делать записи в формате Protobuf с помощью встроенных функций from_protobuf() и to_protobuf().
