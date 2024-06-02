@@ -35,12 +35,17 @@ If you regularly query a table based on a certain column,
 this table might be a good candidate for partitioning.
 
 When to Z-Order
+
+If you expect a column to be commonly used in query predicates and if that column has high cardinality
+(that is, a large number of distinct values) which might make it ineffective for PARTITIONing the table by,
+then use ZORDER BY instead 
+
 If your table is less than a terabyte in size, Z-order it instead of partitioning it.
 Use Z-ordering when your queries span multiple dimensions.
 But don’t don’t Z-order on too many columns.
 If you regularly query based on high cardinality columns, use Z-ordering.
 ```
-
+https://www.youtube.com/watch?v=A1aR1A8OwOU Z-Order
 
 ### Datalake
 
