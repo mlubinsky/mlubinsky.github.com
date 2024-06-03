@@ -33,7 +33,12 @@ Note
 The Delta Live Tables distinction between live tables and streaming live tables is not enforced from the table perspective.
 
 
-__Unmanaged__ tables will always specify a LOCATION during table creation; you can either register an existing directory of data files as a table or provide a path when a table is first defined. Because data and metadata are managed independently, you can rename a table or register it to a new database without needing to move any data. Data engineers often prefer unmanaged tables and the flexibility they provide for production data.
+__Unmanaged__ tables will always specify a LOCATION during table creation;
+ you can either register an existing directory of data files as a table or
+ provide a path when a table is first defined.
+Because data and metadata are managed independently, you can rename a table
+or register it to a new database without needing to move any data.
+Data engineers often prefer unmanaged tables and the flexibility they provide for production data.
 
 ```
 
