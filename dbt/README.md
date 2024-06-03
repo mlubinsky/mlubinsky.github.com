@@ -7,6 +7,37 @@ Are fields within expected ranges?
 Is the null rate higher or lower than it should be?
 Has the schema changed?
 ```
+
+### Slowly changing dimensions
+
+1. “SCD Type 1” — the “Old Record” is “Overwritten” with the “New Record” (MERGE/UPSERT)
+2. “SCD Type 2” — a “New Record” is “Introduced” for “Each Change” of the “Attribute”.
+3. “SCD Type 3” — a “New Column” is “Introduced” for “Each Change” of the “Attribute”.
+```
+MERGE INTO training.person TARGET
+USING vw_person SOURCE
+ON TARGET.PersonId = SOURCE.PersonId
+WHEN MATCHED THEN
+  UPDATE SET
+    TARGET.FirstName = SOURCE.FirstName,
+    TARGET.LastName = SOURCE.LastName,
+    TARGET.Country = SOURCE.Country
+WHEN NOT MATCHED THEN
+  INSERT
+  (
+    PersonId,
+    FirstName,
+    LastName,
+    Country
+  )
+  VALUES
+  (
+    SOURCE.PersonId,
+    SOURCE.FirstName,
+    SOURCE.LastName,
+    SOURCE.Country
+  )
+```  
 ## Databricks
 https://www.youtube.com/@Databricks
 
