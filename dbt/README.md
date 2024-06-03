@@ -18,6 +18,15 @@ Table: a collection of rows and columns stored as data files in object storage.
 View: a saved query typically against one or more tables or data sources.
 Function: saved logic that returns a scalar value or set of rows.
 ```
+
+#### Metastore
+```
+The metastore contains all of the metadata that defines data objects in the lakehouse. Azure Databricks provides the following metastore options:
+
+Unity Catalog metastore: Unity Catalog provides centralized access control, auditing, lineage, and data discovery capabilitie
+Built-in Hive metastore (legacy): Each Azure Databricks workspace includes a built-in Hive metastore as a managed service.
+External Hive metastore (legacy): 
+```
 #### Tables
 ```
 There are two kinds of tables in Databricks, managed and unmanaged (or external) tables.
@@ -41,7 +50,12 @@ or register it to a new database without needing to move any data.
 Data engineers often prefer unmanaged tables and the flexibility they provide for production data.
 
 ```
-
+#### Delta Live Tables
+```
+Delta Live Tables is a declarative framework for building reliable, maintainable, and testable data processing pipelines.
+You define the transformations to perform on your data and
+ Delta Live Tables manages task orchestration, cluster management, monitoring, data quality, and error handling.
+```
 https://www.youtube.com/@Databricks
 
 https://habr.com/ru/companies/otus/articles/592605/
