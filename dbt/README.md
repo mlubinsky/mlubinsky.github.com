@@ -8,6 +8,16 @@ Is the null rate higher or lower than it should be?
 Has the schema changed?
 ```
 ## Databricks
+https://www.youtube.com/@Databricks
+
+https://habr.com/ru/companies/otus/articles/592605/
+
+https://habr.com/ru/companies/slurm/articles/754464/
+
+https://www.youtube.com/watch?v=BmhlAf3pk84 Databricks Certified Data Engineer Associate Exam Preparation - 45 Practice Questions & Answers
+ 
+https://www.youtube.com/watch?v=Kn_Gu_3DCeE    REST API in Databricks 
+
 ```
 The Databricks lakehouse architecture combines data stored with the Delta Lake protocol in cloud object storage with metadata registered to a metastore.
 There are five primary objects in the Databricks lakehouse:
@@ -56,21 +66,34 @@ Delta Live Tables is a declarative framework for building reliable, maintainable
 You define the transformations to perform on your data and
  Delta Live Tables manages task orchestration, cluster management, monitoring, data quality, and error handling.
 ```
-https://www.youtube.com/@Databricks
-
-https://habr.com/ru/companies/otus/articles/592605/
-
-https://habr.com/ru/companies/slurm/articles/754464/
-
-https://www.youtube.com/watch?v=BmhlAf3pk84 Databricks Certified Data Engineer Associate Exam Preparation - 45 Practice Questions & Answers
-
- 
-https://www.youtube.com/watch?v=Kn_Gu_3DCeE    REST API in Databricks 
-
 https://www.youtube.com/watch?v=5E65mE_IiNQ Overview on Databricks Delta Live Tables with Multi-Hop Architecture
 
 
-### Partitioning vs Z-ordering
+#### Liquid clustering
+https://docs.databricks.com/en/delta/clustering.html
+```
+Delta Lake liquid clustering replaces table partitioning and ZORDER to simplify data layout decisions and optimize query performance.
+Databricks recommends using Databricks Runtime 15.2 and above for all tables with liquid clustering enabled.
+Clustering is not compatible with partitioning or ZORDER, and requires that you use Databricks to manage all layout and optimization operations for data in your table. After liquid clustering is enabled, run OPTIMIZE jobs as usual to incrementally cluster data.
+
+CREATE TABLE table1(col0 int, col1 string) USING DELTA CLUSTER BY (col0);
+
+ALTER TABLE <table_name> CLUSTER BY (<clustering_columns>)
+```
+
+#### Performance improvement wit OPTIMIZE and Z-ordering
+
+
+OPTIMIZE table_name [WHERE predicate]
+  [ZORDER BY (col_name1 [, ...] ) ]
+```
+One way to improve this speed is to coalesce small files into larger ones.
+In Databricks Runtime 13.3 and above, Databricks recommends using clustering for Delta table layout.
+ See Use liquid clustering for Delta tables.
+Databricks recommends using predictive optimization to automatically run OPTIMIZE for Delta tables
+```
+
+#### Partitioning vs Z-ordering
 
 https://medium.com/@tomhcorbin/data-storage-decisions-partitioning-vs-z-ordering-e39d5cddb178
 ```
@@ -91,7 +114,23 @@ If your table is less than a terabyte in size, Z-order it instead of partitionin
 Use Z-ordering when your queries span multiple dimensions.
 But don’t don’t Z-order on too many columns.
 If you regularly query based on high cardinality columns, use Z-ordering.
+ 
+
+ZORDER BY Collocatse column information in the same set of files. Co-locality is used by Delta Lake data-skipping algorithms to dramatically reduce the amount of data that needs to be read. You can specify multiple columns for ZORDER BY as a comma-separated list. However, the effectiveness of the locality decreases with each additional column.
+
+You cannot use this clause on tables that use liquid clustering.
+
+ 
+SQL
+   OPTIMIZE events;
+
+  OPTIMIZE events WHERE date >= '2017-01-01';
+
+  OPTIMIZE events
+    WHERE date >= current_timestamp() - INTERVAL 1 day
+    ZORDER BY (eventType);
 ```
+
 https://www.youtube.com/watch?v=A1aR1A8OwOU Z-Order
 
 ### Datalake
