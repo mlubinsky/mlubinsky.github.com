@@ -8,6 +8,30 @@ Is the null rate higher or lower than it should be?
 Has the schema changed?
 ```
 ## Databricks
+```
+The Databricks lakehouse architecture combines data stored with the Delta Lake protocol in cloud object storage with metadata registered to a metastore.
+There are five primary objects in the Databricks lakehouse:
+
+Catalog: a grouping of databases.
+Database or schema: a grouping of objects in a catalog. Databases contain tables, views, and functions.
+Table: a collection of rows and columns stored as data files in object storage.
+View: a saved query typically against one or more tables or data sources.
+Function: saved logic that returns a scalar value or set of rows.
+```
+#### Tables
+```
+There are two kinds of tables in Databricks, managed and unmanaged (or external) tables.
+
+__Managed__ tables: Databricks manages both the metadata and the data for a managed table; when you drop a table, you also delete the underlying data. Data analysts and other users that mostly work in SQL may prefer this behavior. Managed tables are the default when creating a table.
+
+it is possible to create tables on Databricks that are not Delta tables. These tables are not backed by Delta Lake, and will not provide the ACID transactions and optimized performance of Delta tables.
+Tables falling into this category include tables registered against data in external systems
+and tables registered against other file formats in the data lake. 
+
+Note
+
+The Delta Live Tables distinction between live tables and streaming live tables is not enforced from the table perspective.
+```
 
 https://www.youtube.com/@Databricks
 
