@@ -31,10 +31,12 @@ https://towardsdatascience.com/spectral-clustering-aba2640c0d5b
 
 https://www.youtube.com/watch?v=-_gIcc5_uHY
 
-
+### DBSCAN
 https://habrahabr.ru/post/322034/ DBSCAN
 
 https://en.wikipedia.org/wiki/DBSCAN  DBSCAN
+
+https://habr.com/ru/articles/818889/ Сравниваем DBSCAN и OPTICS
 
 https://towardsdatascience.com/a-gentle-introduction-to-hdbscan-and-density-based-clustering-5fd79329c1e8
 
