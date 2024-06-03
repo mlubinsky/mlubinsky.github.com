@@ -83,6 +83,7 @@ ALTER TABLE <table_name> CLUSTER BY (<clustering_columns>)
 
 #### Performance improvement wit OPTIMIZE and Z-ordering
 
+https://docs.databricks.com/en/optimizations/predictive-optimization.html
 
 OPTIMIZE table_name [WHERE predicate]
   [ZORDER BY (col_name1 [, ...] ) ]
