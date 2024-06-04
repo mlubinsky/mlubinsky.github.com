@@ -25,7 +25,80 @@ https://www.youtube.com/@flinkforward
 
 https://kavitmht.medium.com/building-a-real-time-data-streaming-pipeline-using-kafka-flink-and-postgres-stream-100k-records-365ea7b6c176
 
+###  Kafka + Flink
+
+https://mysteryweevil.medium.com/demystifying-stream-processing-with-apache-flink-a-practical-introduction-fa976c77d831
+
+```
+DataStream<T> dataStream = // your data stream
+dataStream
+    .assignTimestampsAndWatermarks(new YourTimestampExtractor())
+    .windowAll(EventTimeSessionWindows.withGap(Time.minutes(5)))
+    .process(new YourProcessWindowFunction());
+```
+
+https://medium.com/@muniandibaskaran/apache-flink-kafka-consumer-producer-example-0e657d8a3471
+
+Through Watermark, the user can define the acceptable lateness allowed for processing elements with timestamps below the Watermark being left unprocessed.
+
+ Flink comes in handy as it provides three characteristics 
+ - IngestionTime
+ - ProcessingTime
+ - EventTime
+
+https://medium.com/@siladityaghosh/apache-flink-an-overview-with-sample-code-84fe19113f21
+
+pip install apache-flink
+
+PyFlink to implement WordCount
+
+```
+# Import PyFlink modules
+from pyflink.datastream import StreamExecutionEnvironment
+from pyflink.table import StreamTableEnvironment, DataTypes
+from pyflink.table.udf import udf
+
+# Create a StreamExecutionEnvironment
+env = StreamExecutionEnvironment.get_execution_environment()
+env.set_parallelism(1)
+
+# Create a StreamTableEnvironment
+t_env = StreamTableEnvironment.create(env)
+
+# Define a Python UDF to split words
+@udf(input_types=[DataTypes.STRING()], result_type=DataTypes.ARRAY(DataTypes.STRING()))
+def split(words):
+    return words.split()
+
+# Register the Python UDF
+t_env.register_function("split", split)
+
+# Read a text file as a stream
+t_env.execute_sql("""
+    CREATE TABLE words (
+        word STRING
+    ) WITH (
+        'connector' = 'filesystem',
+        'path' = '/path/to/file',
+        'format' = 'csv'
+    )
+""")
+
+# Count the frequency of words
+t_env.execute_sql("""
+    SELECT word, COUNT(*) AS `count`
+    FROM words, LATERAL TABLE(split(word)) AS T(word)
+    GROUP BY word
+""").print()
+
+# Execute the job
+t_env.execute("WordCount")
+```
+
+
 #### Flink cluster
+
+
 
  - Job Manager 
  - Task Manager
