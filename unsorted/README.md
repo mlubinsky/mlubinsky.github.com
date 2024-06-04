@@ -20,6 +20,7 @@
 далеко не уедешь. Нужна еще и педаль газа
 ```
 
+https://www.maimonides-guide.com/
 
  https://web.whatsapp.com/  WhatsUp on web
 
