@@ -402,9 +402,9 @@ https://medium.com/@knoldus/flink-join-two-data-streams-1cc40d18a7c7
                     }));
   ```
   
-  Now, join the salary data stream and department data stream on a key id of an individual which is common in both the streams. After joining, 
-  
- The resultant data stream will have all the information in one go -: id, name, salary, and department of an individual.
+Now, join the salary data stream and department data stream on a key id of an individual which is common in both the streams.
+After joining, the resultant data stream will have all the information in one go:  
+id, name, salary, and department of an individual.
 ```
 final DataStream<Tuple4<Integer, String, String, Double>> joinedStream =
                  salaryStream.join(departmentStream)
@@ -442,21 +442,32 @@ This will use the default system optimizations while doing the join operations. 
 
 #### BROADCAST_HASH_FIRST: 
 ```
-Flink is a distributed stream processing and when we are joining two different data sets or streams, both of those can be on different nodes. Joining data from different nodes can be quite expensive operation. If one of the dataset is small, we can move it to the memory of the other nodes so that whenever they are joining with each other they perform the join operation from the data in the memory and avoid the shuffling of data among different nodes. This hint will broadcast the first dataset to the different nodes before performing the join.
+Flink is a distributed stream processing and when we are joining two different data sets or streams, both of those can be on different nodes.
+Joining data from different nodes can be quite expensive operation.
+If one of the dataset is small, we can move it to the memory of the other nodes so that whenever they are joining with each other
+they perform the join operation from the data in the memory and avoid the shuffling of data among different nodes.
+This hint will broadcast the first dataset to the different nodes before performing the join.
 ```
 #### BROADCAST_HASH_SECOND: 
 It is similar to the BROADCAST_HASH_FIRST except we move the second data set into the memory of the nodes for join operations to reduce shuffling.
 
 #### REPARTITION_HASH_FIRST: 
-This will create a hash table from the input dataset to optimize the lookup for the join operation. As data is large and distributed, having a hash table will help to quickly find the relevant column values when we are joining. This hint will built the hash table from the first input.
-
+```
+This will create a hash table from the input dataset to optimize the lookup for the join operation.
+As data is large and distributed, having a hash table will help to quickly find the relevant column values when we are joining.
+ This hint will built the hash table from the first input.
+```
 #### REPARTITION_HASH_SECOND: 
-It is simlar to REPARTITION_HASH_FIRST but builds the hashtable for the second dataset. In general we use the hint for the data set that is small in size.
-
+```
+It is simlar to REPARTITION_HASH_FIRST but builds the hashtable for the second dataset.
+In general we use the hint for the data set that is small in size.
+```
 #### REPARTITION_SORT_MERGE: 
-This hint is used to leverage the sorting to make joins faster. As we know if datasets are sorted and it’s just like serial reads on both of the datasets. This hint is passed to tell Flink that one of the dataset is already sorted and it can leverage the already sorted dataset.
-
-
+```
+This hint is used to leverage the sorting to make joins faster.
+As we know if datasets are sorted and it’s just like serial reads on both of the datasets.
+This hint is passed to tell Flink that one of the dataset is already sorted and it can leverage the already sorted dataset.
+```
 
 #### Storage
 - Files: local, HDFS. S3
@@ -534,7 +545,7 @@ if __name__ == '__main__':
 ### Keyed vs non-keyed stream
 
  Keying a stream shuffles all the records such that elements with the same key are assigned to the same partition. 
- This means all records with the same key are processed by the same physical instance of the next operator.
+ This means all records with the same key are processed by the same physical instance of the next operator. 
 
 Keyed Stream (after keyBy() Operation) - window() 
 
@@ -572,7 +583,9 @@ public WindowedStream<T,KEY,TimeWindow> timeWindow(Time size)
 dataStreamObject.timeWindow(Time.minutes(1), Time.seconds(30))
 ```
 
-- Session window - created based on activity, does not have fixed start or end time, ended then there is gap in activity.  session window closes when it does not receive elements for a certain period of time, i.e., when a gap of inactivity occurred. A session window assigner can be configured with either a static session gap or with a session gap extractor function which defines how long the period of inactivity is. When this period expires, the current session closes and subsequent elements are assigned to a new session window.
+- Session window - created based on activity, does not have fixed start or end time, ended then there is gap in activity.
+- session window closes when it does not receive elements for a certain period of time, i.e., when a gap of inactivity occurred.
+- A session window assigner can be configured with either a static session gap or with a session gap extractor function which defines how long the period of inactivity is. When this period expires, the current session closes and subsequent elements are assigned to a new session window.
   
 ```  
   // Определение фиксированного сеансового окна длительностью 2 секунды
@@ -586,9 +599,6 @@ dataStreamObject.window(EventTimeSessionWindows.withDynamicGap((elem) -> {
   
 - Count window  - does not depend on time  
 - User-defined window: You can also implement a custom window assigner by extending the WindowAssigner class.
-
-
-
 
 ### Triggers
 
