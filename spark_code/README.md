@@ -23,8 +23,16 @@ df_data.columns
 Handling missing values
 ```
 from pyspark.sql.functions import col,isnan,when,count
-df2 = df_data.select([count(when(col(c).contains(‘None’) | \
- col(c).contains(‘NULL’) | \ (col(c) == ‘’ ) | \ col(c).isNull() | \ isnan(c), c  )).alias(c)
+df2 = df_data.select([
+         count(  \
+               when( \
+                     col(c).contains('None') | \
+                                 col(c).contains('NULL') | \
+                                 (col(c) == '' ) | \
+                                 col(c).isNull() | \
+                                 isnan(c), c \
+                  ) \
+         ).alias(c) \
  for c in df_data.columns])
  
 df2.show()
