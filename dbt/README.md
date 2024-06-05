@@ -126,7 +126,24 @@ You define the transformations to perform on your data and
 ```
 https://www.youtube.com/watch?v=5E65mE_IiNQ Overview on Databricks Delta Live Tables with Multi-Hop Architecture
 
+### Streaming
+```
+Databricks recommends using Delta Live Tables with Enhanced Autoscaling for streaming workloads. 
+See Optimize the cluster utilization of Delta Live Tables pipelines with Enhanced Autoscaling.
 
+Databricks recommends using Auto Loader to ingest supported file types from cloud object storage into Delta Lake.
+For ETL pipelines, Databricks recommends using Delta Live Tables (which uses Delta tables and Structured Streaming).
+You can also configure incremental ETL workloads by streaming to and from Delta Lake tables.
+
+What is the difference between Streaming live table and live table?
+
+A live table or view always reflects the results of the query that defines it,
+including when the query defining the table or view is updated, or an input data source is updated.
+ Like a traditional materialized view, a live table or view may be entirely computed when possible to optimize computation resources and time.
+
+A streaming live table or view processes data that has been added only since the last pipeline update.
+Streaming tables and views are stateful; if the defining query changes, new data will be processed based on the new query and existing data is not recomputed.
+```
 #### Liquid clustering
 https://docs.databricks.com/en/delta/clustering.html
 ```
