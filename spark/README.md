@@ -1694,7 +1694,26 @@ Actions are RDD operations that produce non-RDD values. They materialize a value
 
 In other words, an RDD operation that returns a value of any type but RDD[T] is an action. They trigger the execution of RDD transformations to return values. Simply put, an action evaluates the RDD lineage graph.
 Actions are one of two ways to send data from executors to the driver (the other being accumulators).
-Some examples of actions are - aggregate, collect, count, countApprox, countByValue, first, fold, foreach, foreachPartition, max, min, reduce, saveAs* actions, saveAsTextFile, saveAsHadoopFile, take, takeOrdered, takeSample, toLocalIterator, top, treeAggregate, treeReduce
+Some examples of actions are
+- aggregate,
+- collect,
+- count,
+- countApprox,
+- countByValue,
+- first,
+- fold,
+- foreach,
+- foreachPartition,
+- max,
+- min,
+- reduce,
+- saveAs* : saveAsTextFile, saveAsHadoopFile,
+- show
+- take, takeOrdered, takeSample,
+- toLocalIterator,
+- top,
+- treeAggregate,
+- treeReduce
 
 ### Driver
 The driver process runs your main() function, sits on a node in the cluster, and is responsible for three things: maintaining information about the Spark Application; responding to a user’s program or input; and analyzing, distributing, and scheduling work across the executors (defined momentarily).
