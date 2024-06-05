@@ -62,11 +62,28 @@ def sum(x, y):
 counts = wordsTuple.reduceByKey(sum)
 ```
 
-### Data Lake implementation
+### JOIN
+```
+When you join dataframes with the same column name, the resultant frame contains all columns from both DataFrames. 
+We will end up with duplicate columns. To get a join result with out duplicate you have to use:
 
+  
+empDF.join(deptDF,["dept_id","branch_id"]).show()
+```
 https://sparkbyexamples.com/pyspark/pyspark-join-explained-with-examples/
 
 https://sparkbyexamples.com/pyspark/pyspark-join-multiple-columns/
+
+# PySpark join multiple columns syntax 1
+```
+empDF.join(deptDF, (empDF["dept_id"] == deptDF["dept_id"]) &
+   ( empDF["branch_id"] == deptDF["branch_id"])).show()
+```
+# PySpark join multiple columns syntax 2 using where  or filter:
+```
+empDF.join(deptDF).where((empDF["dept_id"] == deptDF["dept_id"]) &
+    (empDF["branch_id"] == deptDF["branch_id"])).show()
+```
 
 ```
 
