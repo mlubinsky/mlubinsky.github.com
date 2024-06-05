@@ -41,6 +41,8 @@ WHEN NOT MATCHED THEN
 ## Databricks
 https://www.youtube.com/@Databricks
 
+https://habr.com/ru/companies/slurm/articles/754464/ Apache Spark 3.4 для Databricks Runtime 13.0
+
 https://habr.com/ru/companies/otus/articles/592605/
 
 https://habr.com/ru/companies/slurm/articles/754464/
