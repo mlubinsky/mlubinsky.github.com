@@ -2,13 +2,20 @@ https://www.youtube.com/playlist?list=PLL7QpTxsA4se-mAKKoVOs3VcaP71X_LA-  Stream
 
 https://habr.com/ru/articles/806287/ PySpark + Kafka
 
+###  План запросов
+https://www.youtube.com/watch?v=99fYi2mopbs
+
+https://www.youtube.com/watch?v=9EIzhRKpiM8
+
+https://habr.com/ru/articles/807421/ План запросов на примерах
+
 ### Spark interview questions 
 
 https://habr.com/ru/companies/alfa/articles/808415/
 
 https://habr.com/ru/companies/otus/articles/808141/
 
-https://habr.com/ru/articles/807421/ План запросов на примерах
+
 
 https://towardsdatascience.com/six-spark-exercises-to-rule-them-all-242445b24565
 
