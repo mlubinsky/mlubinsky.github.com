@@ -70,6 +70,20 @@ Unity Catalog metastore: Unity Catalog provides centralized access control, audi
 Built-in Hive metastore (legacy): Each Azure Databricks workspace includes a built-in Hive metastore as a managed service.
 External Hive metastore (legacy): 
 ```
+
+### Timetravel
+
+https://learn.microsoft.com/en-us/azure/databricks/delta/history
+```
+DESCRIBE HISTORY '/data/events/'          -- get the full history of the table
+DESCRIBE HISTORY delta.`/data/events/`
+DESCRIBE HISTORY '/data/events/' LIMIT 1  -- get the last operation only
+
+DESCRIBE HISTORY eventsTable
+RESTORE TABLE db.target_table TO VERSION AS OF <version>
+RESTORE TABLE delta.`/data/target/` TO TIMESTAMP AS OF <timestamp>
+```
+
 #### Tables
 ```
 There are two kinds of tables in Databricks, managed and unmanaged (or external) tables.
