@@ -9,6 +9,12 @@ https://www.youtube.com/watch?v=9EIzhRKpiM8
 
 https://habr.com/ru/articles/807421/ План запросов на примерах
 
+https://habr.com/ru/companies/avito/articles/764996/
+```
+df.explain()
+# есть разные опции как форматировать вывод
+df.explain(mode='formatted')
+```
 ### Spark interview questions 
 
 https://habr.com/ru/companies/alfa/articles/808415/
