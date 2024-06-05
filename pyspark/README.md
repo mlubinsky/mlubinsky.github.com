@@ -125,10 +125,10 @@ df_new.union(df_old).show()
 +-------+------------+--------+-----+
 
 
+```
 
-
-# INNER JOIN with renaming columns to avoid column names duplications:
-
+### INNER JOIN with renaming columns to avoid column names duplications:
+```
 df_new.join(df_old, df_old.user_id == df_new.user_id, "inner").select(
  df_old.user_id,
  df_old.product_name.alias("old_product_name"),
@@ -159,8 +159,9 @@ df_inner = df_new.join(df_old, df_old.user_id == df_new.user_id, "inner").select
 
 df_new.join(df_old,
 (df_old.user_id == df_new.user_id) , "inner").show()
-
+```
 ### Find records with same id but different zip code or product_name:
+```
 df_new.join(df_old,
 (df_old.user_id == df_new.user_id) &
 ((df_old.product_name != df_new.product_name)  | (df_old.zip_code != df_new.zip_code )) , "inner").show()
@@ -198,15 +199,17 @@ df_inner_2 = df_new.join(df_old,
  df_new.date.alias("end_date")
 )
 
-
+```
 ### Find records which exists in both  dfs and product_name and zip_code are the same:
+```
  this syntax will eliminate duplicate column names
 
 df_new.join(df_old,["user_id","product_name","zip_code"]).show()
 
 df_exact_match = df_new.join(df_old,["user_id","product_name","zip_code"])
-
+```
 ### Find records with same id but different zip code or product_name:
+```
 step 1:
 
 df_common_user_id = df_new.join(df_old, df_old.user_id == df_new.user_id , "inner").show()
@@ -216,9 +219,9 @@ step 2: remove exact match:
 df_dup = df_common_user_id.join(df_exact_match , df_common_user.user_id == df_exact_match.user_id, "leftanti")
 
 df_dup = df_common_user_id.join(df_exact_match , ["user_id"], "leftanti")
-
+```
 ### Leftanti returns records which exists in left only
-
+```
 df_old.join(df_new, df_old.user_id == df_new.user_id, "leftanti").show()
 +-------+------------+--------+-----+
 |user_id|product_name|zip_code| date|
