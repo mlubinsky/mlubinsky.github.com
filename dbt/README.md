@@ -70,7 +70,15 @@ Unity Catalog metastore: Unity Catalog provides centralized access control, audi
 Built-in Hive metastore (legacy): Each Azure Databricks workspace includes a built-in Hive metastore as a managed service.
 External Hive metastore (legacy): 
 ```
+### Medallion architecture
+https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion
+```
+The terms bronze (raw), silver (validated), and gold (enriched) describe the quality of the data in each of these layers.
 
+ The silver layer represents a validated, enriched version of our data that can be trusted for downstream analytics.
+
+This gold data is often highly refined and aggregated, containing data that powers analytics, machine learning, and production applications. 
+```
 ### Timetravel
 
 https://learn.microsoft.com/en-us/azure/databricks/delta/history
