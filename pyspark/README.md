@@ -394,6 +394,20 @@ root
 df2.show(truncate=False)
 
 ```
+### получение медианы для каждой группы данных
+
+```
+# Pandas
+df.groupby("col1")["col2"].median()
+
+# PySpark
+from pyspark.sql import Window
+import pyspark.sql.functions as F
+
+med_func = F.expr('percentile_approx(col2, 0.5, 20)')
+df.groupBy('col1').agg(med_func).show()
+
+```
 
 ### Window function to calculate sum and cumulative
 
@@ -538,14 +552,17 @@ df.groupBy(*cols).count().show()
 df.groupBy(*cols).count().filter(F.col('count')>1).show()
 ```
 
-How to convert this to PySpark:
+### Question: how to convert this to PySpark?
 
 ```
-sqlContext.sql("select Category,count(*) as 
-count from hadoopexam where HadoopExamFee<3200  
-group by Category having count>10")
+sqlContext.sql("
+select Category,count(*) as count from hadoopexam
+where HadoopExamFee < 3200  
+group by Category
+having count>10
+")
 ```
-Answer:
+### Answer to question above:
 ```
 from pyspark.sql.functions import *
 
@@ -555,7 +572,7 @@ df.filter(df.HadoopExamFee<3200)
   .filter(col('count')>10)
 ```
 
-Generic answer:
+### Generic answer:
 ```
 df.groupBy(someExpr).agg(somAgg).where(somePredicate) 
 ```
