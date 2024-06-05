@@ -82,6 +82,9 @@ DESCRIBE HISTORY '/data/events/' LIMIT 1  -- get the last operation only
 DESCRIBE HISTORY eventsTable
 RESTORE TABLE db.target_table TO VERSION AS OF <version>
 RESTORE TABLE delta.`/data/target/` TO TIMESTAMP AS OF <timestamp>
+
+SELECT * FROM people10m TIMESTAMP AS OF '2018-10-18T22:15:12.013Z'
+SELECT * FROM delta.`/tmp/delta/people10m` VERSION AS OF 123
 ```
 
 #### Tables
