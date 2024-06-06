@@ -149,7 +149,9 @@ https://docs.databricks.com/en/delta/clustering.html
 ```
 Delta Lake liquid clustering replaces table partitioning and ZORDER to simplify data layout decisions and optimize query performance.
 Databricks recommends using Databricks Runtime 15.2 and above for all tables with liquid clustering enabled.
-Clustering is not compatible with partitioning or ZORDER, and requires that you use Databricks to manage all layout and optimization operations for data in your table. After liquid clustering is enabled, run OPTIMIZE jobs as usual to incrementally cluster data.
+Clustering is not compatible with partitioning or ZORDER,
+and requires that you use Databricks to manage all layout and optimization operations for data in your table.
+After liquid clustering is enabled, run OPTIMIZE jobs as usual to incrementally cluster data.
 
 CREATE TABLE table1(col0 int, col1 string) USING DELTA CLUSTER BY (col0);
 
@@ -164,7 +166,7 @@ OPTIMIZE table_name [WHERE predicate]
   [ZORDER BY (col_name1 [, ...] ) ]
 ```
 One way to improve this speed is to coalesce small files into larger ones.
-In Databricks Runtime 13.3 and above, Databricks recommends using clustering for Delta table layout.
+In Databricks Runtime 13.3 and above, Databricks __recommends using clustering__ for Delta table layout.
  See Use liquid clustering for Delta tables.
 Databricks recommends using predictive optimization to automatically run OPTIMIZE for Delta tables
 ```
