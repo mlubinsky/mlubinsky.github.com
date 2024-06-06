@@ -13,6 +13,38 @@ number of lines in file:
 find /v /c “” C:\Users\Martin\Desktop\sample.txt
 
 
+###  my.bat
+
+``` 
+@echo off
+
+rem Create RUNNING.txt with current timestamp
+echo.%date% %time% > RUNNING.txt
+
+rem Execute your Python scripts here
+python script1.py
+if %errorlevel% neq 0 goto :fail
+
+python script2.py
+if %errorlevel% neq 0 goto :fail
+
+... (add more python scripts)
+
+:success
+rem Add current timestamp and rename to SUCCESS.txt
+echo.%date% %time% >> RUNNING.txt
+ren RUNNING.txt SUCCESS.txt
+goto :eof
+
+:fail
+rem Rename to FAILED.txt
+ren RUNNING.txt FAILED.txt
+echo An error occurred during execution. Check FAILED.txt for details.
+goto :eof
+```
+
+
+
 
 ### How to invoke program located on another Windows box on same network?
 
