@@ -38,7 +38,24 @@ how late the data is expected to be in terms of event time.
 For a specific window ending at time T, the engine will maintain state and
 allow late data to update the state until (max event time seen by the engine - late threshold > T).
 In other words, late data within the threshold will be aggregated, but data later
-than the threshold will start getting dropped
+than the threshold will start getting dropped.
+
+windowedCounts = words \
+    .withWatermark("timestamp", "10 minutes") \
+    .groupBy(
+        window(words.timestamp, "10 minutes", "5 minutes"),
+        words.word) \
+    .count()
+
+Spark supports three types of time windows:
+
+- tumbling - (fixed-sized), non-overlapping
+- sliding -  (fixed-sized), overlapping
+- session -  Session window has a dynamic size of the window length, depending on the inputs.
+A session window starts with an input, and expands itself if following input has been received within gap duration.
+For static gap duration, a session window closes when there’s no input received within gap duration after receiving the latest input.
+
+Session window uses session_window function. The usage of the function is similar to the window function.
 ```
 
 #### Checkpoints
