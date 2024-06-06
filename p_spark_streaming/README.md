@@ -32,8 +32,14 @@ Micro batching, not real time
 Uses DAG as execution engine ( Flink uses controlled cyclic dependency graph as execution engine) 
 
 
-
-spark remembers all the windows forever and waits for the late events forever.
+```
+You can define the watermark of a query by specifying the event time column and the threshold on
+how late the data is expected to be in terms of event time.
+For a specific window ending at time T, the engine will maintain state and
+allow late data to update the state until (max event time seen by the engine - late threshold > T).
+In other words, late data within the threshold will be aggregated, but data later
+than the threshold will start getting dropped
+```
 
 #### Checkpoints
 Streaming applications are always running and most of them are maintaining some kind of state. 
