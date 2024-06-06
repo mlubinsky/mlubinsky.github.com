@@ -699,6 +699,14 @@ The number of files that get written out is controlled by the parallelization of
 So if your data is split across 10 Spark partitions you cannot write fewer than 10 files without reducing partitioning (e.g. coalesce or repartition).
 ```
 ### PartitionBy
+https://spark-school.ru/blog/partitionby/
+```
+Apache spark поддерживает два вида партиций: в оперативной памяти в виде фрейма данных (DataFrame) и на диске в виде файла:
+
+Партиция в памяти выполняется с помощью вызовов repartition или coalesce.
+Партиция на диске выполняется с помощью вызова partitionBy (это аналогично партициям в Hive).
+```
+
 https://medium.com/@tomhcorbin/mastering-pyspark-partitioning-repartition-vs-partitionby-cfde90aa3622
 ```
 When you call df.write.partitionBy('column'), each of the original partitions in df is written independently. That is, each of your original partitions is sub-partitioned separately based on the 'column', and a separate file is written for each sub-partition. This means that the number of output files depends on the distribution of data in the original partitions.
