@@ -43,6 +43,12 @@ https://www.youtube.com/watch?v=jWZ9K1agm5Y  PySpark Course: Big Data Handling w
 
 ### Find the Highest & Lowest Salaried Employee in each Department
 ```
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import min,max,col,rank,desc
+from  pyspark.sql.window import Window
+from pyspark.sql.types import *
+
+spark=SparkSession.builder.appName("min_max").getOrCreate()
 # finding the max salary
 window_spec_1=Window.partitionBy("emp_dep_id").orderBy(desc("salary"))
 df_1=df.withColumn("rnk",rank().over(window_spec_1))
