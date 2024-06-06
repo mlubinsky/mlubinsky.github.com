@@ -315,24 +315,31 @@ https://mungingdata.com/pyspark/chaining-dataframe-transformations/
           "pp_subject_id","con_owner_subject_id","cst_status_id")
  ```
  
- Example of agg, window, groupby: https://habr.com/ru/post/545870/
+### Example of agg, window, groupby: 
+
+https://habr.com/ru/post/545870/
  
  ```
 from pyspark.sql.functions import lag
 from pyspark.sql import functions as F
 from pyspark.sql.window import Window
-# Equivalent of Pandas.dataframe.shift() method
+
+# F.lag() - Equivalent of Pandas.dataframe.shift() method
+*************************************************
 w = Window().partitionBy().orderBy(col("proj_id"))
 df_dataframe = df.withColumn('lag', F.lag("proj_end").over(w))
-#...
-# Equivalent of SQL- CASE WHEN...THEN...ELSE... END
+ 
+# F.when/F.otherwise - Equivalent of SQL- CASE WHEN...THEN...ELSE... END
+#######################################################
 df_dataframe = df_dataframe.withColumn('flag',F.when(df_dataframe["proj_start"] == df_dataframe["lag"],0).otherwise(1))
-#...
-# Cumsum by column flag
+ 
+# Cumulative sum by column named 'flag'
+#########################
 w = Window().partitionBy().orderBy(col("proj_id"))
 df_dataframe = df_dataframe.withColumn("proj_group", F.sum("flag").over(w))
-#...
-# Equivalent of SQL - GROUP BY
+ 
+# agg.min, agg.max   Equivalent of SQL - GROUP BY
+#################################
 from pyspark.sql.functions import  min, max
 df_group = df_dataframe.groupBy("proj_group").agg(min("proj_start").alias("date_start"), \
                                                   max("proj_end").alias("date_end"))
