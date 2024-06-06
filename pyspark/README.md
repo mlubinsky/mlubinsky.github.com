@@ -41,8 +41,26 @@ https://www.amazon.com/dp/1804612987 Causal Inference and Discovery in Python: U
 
 https://www.youtube.com/watch?v=jWZ9K1agm5Y  PySpark Course: Big Data Handling with Python and Apache Spark
 
+### Find the Highest & Lowest Salaried Employee in each Department
+```
+# finding the max salary
+window_spec_1=Window.partitionBy("emp_dep_id").orderBy(desc("salary"))
+df_1=df.withColumn("rnk",rank().over(window_spec_1))
+df_1=df_1.filter(col("rnk") == 1)
+df_1=df_1.withColumnRenamed("emp_name","emp_max_salary")
+
+# finding the min salary
+window_spec_2=Window.partitionBy("emp_dep_id").orderBy(("salary"))
+df_2=df.withColumn("rnk",rank().over(window_spec_2))
+df_2=df_2.filter(col("rnk") == 1)
+df_2=df_2.withColumnRenamed("emp_name","emp_min_salary")
+df_2=df_2.withColumnRenamed("emp_dep_id","emp_min_dep_id")
 
 
+# final df
+final_df=df_1.join(df_2,df_1.emp_dep_id == df_2.emp_min_dep_id,'inner')
+final_df.select("emp_dep_id","emp_max_salary","emp_min_salary").display()
+```
 ### Compute  total counts of each of  unique words on a spark: map() and flatMap()
 ```
 sc.textFile(“hdfs://user/bigtextfile.txt”);
