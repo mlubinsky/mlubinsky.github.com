@@ -13,7 +13,7 @@ number of lines in file:
 find /v /c “” C:\Users\Martin\Desktop\sample.txt
 
 
-###  my.bat
+###  Gemini my.bat
 
 ``` 
 @echo off
@@ -43,6 +43,35 @@ echo An error occurred during execution. Check FAILED.txt for details.
 goto :eof
 ```
 
+### ChatGPT my.bat
+```
+@echo off
+setlocal enabledelayedexpansion
+
+:: Create RUNNING.txt with the current timestamp
+echo %date% %time% > RUNNING.txt
+
+:: Call your Python scripts
+call python script1.py
+if errorlevel 1 goto failed
+
+call python script2.py
+if errorlevel 1 goto failed
+
+call python script3.py
+if errorlevel 1 goto failed
+
+:: If all scripts succeed, add timestamp and rename to SUCCESS.txt
+echo %date% %time% >> RUNNING.txt
+rename RUNNING.txt SUCCESS.txt
+goto end
+
+:failed
+:: If any script fails, rename RUNNING.txt to FAILED.txt
+rename RUNNING.txt FAILED.txt
+
+:end
+```
 
 
 
