@@ -56,6 +56,13 @@ A session window starts with an input, and expands itself if following input has
 For static gap duration, a session window closes when there’s no input received within gap duration after receiving the latest input.
 
 Session window uses session_window function. The usage of the function is similar to the window function.
+
+sessionizedCounts = events \
+    .withWatermark("timestamp", "10 minutes") \
+    .groupBy(
+        session_window(events.timestamp, "5 minutes"),
+        events.userId) \
+    .count()
 ```
 
 #### Checkpoints
