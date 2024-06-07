@@ -20,6 +20,8 @@ https://acephysics.net/
 
 https://nicf.net/articles/physics-for-mathematicians/
 
+https://www.youtube.com/@bogolyubovinstitutefortheo9998
+
 ### Special relativity
 
 https://habr.com/ru/articles/798293/
