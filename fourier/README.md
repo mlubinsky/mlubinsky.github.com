@@ -2,8 +2,6 @@ https://see.stanford.edu/materials/lsoftaee261/book-fall-07.pdf
 
 https://www.youtube.com/watch?v=toj_IoCQE-4 FFT
 
-
-
 https://www.youtube.com/watch?v=KTj1YgeN2sY Discrete FT Steve Brunton
 
 https://www.youtube.com/watch?v=s2K1JfNR7Sc. Denoise data with FFT
@@ -24,6 +22,14 @@ https://faultan.ru/osc/essence_of_fourier_transform/
 https://en.wikipedia.org/wiki/Discrete_Fourier_transform
 
 https://www.youtube.com/watch?v=GKsCWivmlHg Top 3 Most Important Fourier Transforms in Python
+
+
+### Generalizations of Fourier analysis
+
+http://gabarro.org/ccn/gen_fourier.html
+
+https://news.ycombinator.com/item?id=35582084
+
 
 https://news.ycombinator.com/item?id=28632776
 
