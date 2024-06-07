@@ -11,16 +11,19 @@ https://www.youtube.com/watch?v=s2K1JfNR7Sc. Denoise data with FFT
 ## Fourier series
 https://habr.com/ru/post/528734/
 
-https://www.youtube.com/watch?v=GKsCWivmlHg Top 3 Most Important Fourier Transforms in Python
-
 https://news.ycombinator.com/item?id=40578705
 
 ## Fourier transform
-<https://habr.com/post/434734/> . Fourier transf
+
+<https://habr.com/post/434734/> 
+
+https://howthefouriertransformworks.com/
 
 https://faultan.ru/osc/essence_of_fourier_transform/
 
 https://en.wikipedia.org/wiki/Discrete_Fourier_transform
+
+https://www.youtube.com/watch?v=GKsCWivmlHg Top 3 Most Important Fourier Transforms in Python
 
 https://news.ycombinator.com/item?id=28632776
 
@@ -31,9 +34,6 @@ https://en.wikipedia.org/wiki/Gibbs_phenomenon
 https://jackschaedler.github.io/circles-sines-signals/index.html
 
 https://www.youtube.com/watch?v=spUNpyF58BY
-
- 
-
 
 https://ai-pool.com/a/s/introduction-of-fast-fourier-transformation--fft
 
