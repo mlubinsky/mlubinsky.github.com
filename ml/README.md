@@ -422,7 +422,11 @@ https://www.youtube.com/watch?v=w6Pw4MOzMuo
 https://news.ycombinator.com/item?id=27577467  ML beyound curve fitting
 
 
-### ROC
+### Confusion matrix, Accuracy, Precision, Recall, F-score, ROC-AUC
+
+https://habr.com/ru/articles/820411/  Confusion matrix, Accuracy, Precision, Recall, F-score, ROC-AUC
+
+https://github.com/phongsathorn1/pretty-confusion-matrix  Confusion matrix
 
 https://en.wikipedia.org/wiki/Receiver_operating_characteristic  ROC curve
 
@@ -555,7 +559,7 @@ http://www.mathnet.ru/conf1243
 
 https://github.com/rwsh
 
-https://github.com/phongsathorn1/pretty-confusion-matrix  Confusion matrix
+
 
 
 Simulated annealing (ru)
