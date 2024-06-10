@@ -61,6 +61,13 @@ https://www.kdnuggets.com/10-github-repositories-to-master-data-engineering
 16. Grammarly NLP/ML - https://lnkd.in/guMDtPfW
 17. Spotify Machine Learning - https://lnkd.in/gGq7uj9g
 
+1. Data Science Interviews By Alexey Grigorev : https://lnkd.in/gdRwnWeJ
+2. Cheatsheet for Data Science by Austin Powell : https://lnkd.in/g5MSJrpD
+3. Cracking the DS interview by James Le(: https://lnkd.in/geSVJmJR
+4. DS Questions and Answers by Youssef Hosni : https://lnkd.in/gA5ihxs5
+5. Coding and ML System Design by Alireza Dirafzoon: https://lnkd.in/gXFaaaQR
+
+
 ### Vector DB 
 
 https://habr.com/ru/articles/817173/
