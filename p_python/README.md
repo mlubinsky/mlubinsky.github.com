@@ -19,7 +19,16 @@ my_dict = {item: index for index, item in enumerate(my_list)}
 
 positive_infinity = float('inf')
 negative_infinity = float('-inf')
-  
+
+### Bytes 
+
+https://www.thepythoncodingstack.com/p/bytes-python-built-in-unicode-utf-8-encoding
+```
+A bytes object is an immutable sequence of integers. But not just any integers. 
+The elements in a bytes object are integers in the range 0 to 255. 
+These are the numbers that can be represented by eight bits, where each bit is either 0 or 1. 
+The largest 8-bit number is the number that has eight 1's in binary:
+ ```
 #### Mutable types  
   lists, dictionaries, and sets are mutable 
 ```  
