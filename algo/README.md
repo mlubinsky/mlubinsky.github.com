@@ -1,5 +1,7 @@
 https://the-algorithms.com/
 
+https://www.youtube.com/watch?v=ugGT4T5HcsI  (rus, 4 hours)
+
 Data Structures for Data-Intensive apps:
 https://cs-people.bu.edu/mathan/publications/fnt23-athanassoulis.pdf 
 
