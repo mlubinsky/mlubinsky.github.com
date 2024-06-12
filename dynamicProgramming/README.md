@@ -2,6 +2,8 @@
 
 https://iagoleal.com/posts/dynamic-programming/
 
+https://habr.com/ru/companies/otus/articles/819815/
+
 https://qsantos.fr/2024/01/04/dynamic-programming-is-not-black-magic/
 
 https://www.youtube.com/playlist?list=PLCiTDJays9rU7WmHIlEFZsXT_boyJ6oZu
