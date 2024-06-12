@@ -135,7 +135,118 @@ if __name__ == "__main__":
   main()
 ```
 
+### Geolocation 1
+```
+First, you need to sign up for an API key from OpenCage: OpenCage Geocoding API.
 
+Here is the Python function:
+
+python
+Copy code
+import requests
+
+def get_geolocation(api_key, latitude, longitude):
+    url = "https://api.opencagedata.com/geocode/v1/json"
+    params = {
+        "key": api_key,
+        "q": f"{latitude},{longitude}",
+        "pretty": 1
+    }
+
+    response = requests.get(url, params=params)
+    if response.status_code == 200:
+        data = response.json()
+        if data['results']:
+            location = data['results'][0]['components']
+            address = data['results'][0]['formatted']
+            city = location.get('city', '')
+            state = location.get('state', '')
+            country = location.get('country', '')
+            country_code = location.get('country_code', '').upper()
+            return {
+                "address": address,
+                "city": city,
+                "state": state,
+                "country": country,
+                "country_code": country_code
+            }
+        else:
+            return "No results found for the given coordinates."
+    else:
+        return f"Error: {response.status_code}"
+
+# Example usage
+api_key = "YOUR_API_KEY"
+latitude = 51.5074
+longitude = -0.1278
+
+geolocation = get_geolocation(api_key, latitude, longitude)
+print(geolocation)
+
+```
+
+
+### Geolocation 2
+```
+import requests
+
+def get_geolocation(longitude, latitude, api_key=None):
+  """
+  Retrieves geolocation information based on longitude and latitude.
+
+  Args:
+      longitude (float): Longitude coordinate.
+      latitude (float): Latitude coordinate.
+      api_key (str, optional): API key for an external service (if needed). Defaults to None.
+
+  Returns:
+      dict: Dictionary containing geolocation information (may vary depending on service).
+  """
+
+  # Example using Google Maps Geocoding API (replace with your preferred service)
+  if api_key:
+    url = f"https://maps.googleapis.com/maps/api/geocode/json?latlng={latitude},{longitude}&key={api_key}"
+    response = requests.get(url)
+    if response.status_code == 200:
+      data = response.json()
+      if data['status'] == 'OK':
+        # Extract relevant information from the response (may vary based on service)
+        address = data['results'][0]['formatted_address']
+        for component in data['results'][0]['address_components']:
+          if 'administrative_area_level_2' in component['types']:
+            city = component['long_name']
+          elif 'administrative_area_level_1' in component['types']:
+            state = component['long_name']
+          elif 'country' in component['types']:
+            country = component['long_name']
+        return {
+          'address': address,
+          'city': city,
+          'state': state,
+          'country': country,
+        }
+      else:
+        print(f"Geocoding error: {data['status']}")
+    else:
+      print(f"API request failed with status code: {response.status_code}")
+  else:
+    print("Warning: No API key provided. Geolocation lookup may not be available.")
+
+  return {}
+
+# Example usage (replace with your actual API key or use a different service)
+geolocation = get_geolocation(longitude=-122.4194, latitude=37.7749, api_key='<YOUR_API_KEY>')
+if geolocation:
+  print(geolocation)
+else:
+  print("Geolocation information unavailable.")
+Use code with caution.
+content_copy
+Remember to replace '<YOUR_API_KEY>' with your actual API key if you're using an external service.  This function provides a basic framework, and you'll need to adapt it to the specific service you choose.
+
+For a purely local approach, you'd need to explore local geocoding databases or libraries that might be available for your use case. These may have their own installation and usage instructions.
+
+```
 
 
 ### Debug print in PHP
