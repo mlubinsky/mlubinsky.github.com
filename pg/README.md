@@ -10,6 +10,10 @@ https://habr.com/ru/companies/karuna/articles/809305/ pgvector
 
 ### Config
 
+https://tembo.io/blog/optimizing-memory-usage
+
+https://news.ycombinator.com/item?id=40642803
+
 https://habr.com/ru/companies/otus/articles/804281/  Config
 
 https://habr.com/ru/companies/selectel/articles/807259/ Выжимаем максимум из PostgreSQL
