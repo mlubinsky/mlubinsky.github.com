@@ -526,6 +526,8 @@ greatexpectations.io
 
 
 ### DBT
+
+https://habr.com/ru/articles/821503/
   
   https://www.adventofdata.com/modern-data-modeling-start-with-the-end/
 
