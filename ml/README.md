@@ -431,6 +431,8 @@ https://news.ycombinator.com/item?id=27577467  ML beyound curve fitting
 
 ### Confusion matrix, Accuracy, Precision, Recall, F-score, ROC-AUC
 
+https://habr.com/ru/articles/821547/
+
 https://habr.com/ru/articles/820411/  Confusion matrix, Accuracy, Precision, Recall, F-score, ROC-AUC
 
 https://github.com/phongsathorn1/pretty-confusion-matrix  Confusion matrix
