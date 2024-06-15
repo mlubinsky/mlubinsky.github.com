@@ -56,6 +56,8 @@ aws s3 rm --recursive xxx
 
 ### S3 explained
 
+https://www.youtube.com/watch?v=BecRFTzjXA8  (rus)
+
 https://habr.com/ru/company/cloud4y/blog/681376/
 
 https://blog.plerion.com/things-you-wish-you-didnt-need-to-know-about-s3/
