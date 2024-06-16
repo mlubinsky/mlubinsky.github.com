@@ -88,6 +88,8 @@ https://chatuml.com/
 
 ### PlantUML
 
+https://habr.com/ru/companies/X5Tech/articles/821687/
+
 https://towardsdatascience.com/diagrams-as-code-python-d9cbaa959ed5
 
 draw.io 
