@@ -81,6 +81,8 @@ https://mathpages.com/
 
 https://galoisian.files.wordpress.com/2018/11/undergraduate-lecture-notes-in-physics-paul-j-nahin-inside-interesting-integrals-2015-springer-1.pdf
 
+https://complex-analysis.com/ Visual Complex Analysis
+
 ### Math books:
 
 https://mccme.ru/free-books/
