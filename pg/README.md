@@ -1,4 +1,4 @@
-
+https://habr.com/ru/articles/821993/ Статический анализ структуры базы данных 
 
 https://habr.com/ru/companies/otus/articles/817187/ Интеграция PostgreSQL с другими СУБД через dblink
 
