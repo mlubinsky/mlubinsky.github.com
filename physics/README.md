@@ -10,6 +10,8 @@ https://www.feynmanlectures.caltech.edu/
 
 https://www.coursera.org/learn/quantum-physics/ Galitsky
 
+https://www.doctorphys.com/theoretical/index.html
+
 https://www.coursera.org/specializations/the-physics-of-emergence-introduction-to-condensed-matter/
 
 https://www.coursera.org/search?query=quantum%20mechanics&
