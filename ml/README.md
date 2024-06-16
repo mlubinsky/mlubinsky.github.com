@@ -38,6 +38,8 @@ https://www.youtube.com/watch?v=lEGR3u2SWKk
 Доп. главы машинного обучения, Карпачёв Н.Е., лекция 1, 05.02.2024
 https://www.youtube.com/watch?v=Cs5NuVseHxU&list=PLti61wgkUWHyhCM4jK0ktwyDGN8XiGgHv&index=1
 
+Автопереобучение моделей в Production
+https://habr.com/ru/companies/alfa/articles/821447/
 
 ### Links - become a Machine Learning Engineer: 👇
 
