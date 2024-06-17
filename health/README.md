@@ -1,4 +1,4 @@
-
+https://dmitriysh.livejournal.com/
 
 https://news.ycombinator.com/item?id=38839088
 
