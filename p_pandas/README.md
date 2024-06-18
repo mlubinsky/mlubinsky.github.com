@@ -138,6 +138,52 @@ https://www.pythonforbeginners.com/basics/pandas-map-vs-apply-method-in-python m
 
 https://datascientyst.com/
 
+#### Z-score
+```
+import pandas as pd
+
+data = {'score': [56, 65, 67, 74, 75, 42, 76, 63, 67, 85, 120]}
+df = pd.DataFrame(data)
+
+# расчет z-оценки
+df['z_score'] = (df['score'] - df['score'].mean()) / df['score'].std()
+
+# фильтрация выбросов
+df_filtered = df[(df['z_score'] > -3) & (df['z_score'] < 3)]  # same as df['z_score'].abs() < 3
+```
+
+### Интерквартильный размах (IQR method)
+```
+IQR — это мера разброса данных, равная разнице между третьим Q3 и первым квартилями Q1. Формула для расчета IQR:
+
+IQR = Q3 - Q1
+
+Выбросами считаются значения, выходящие за пределы:
+
+Q1 - 1.5 \times IQR (нижний предел) и Q3 + 1.5 \times IQR (верхний предел).
+
+Пример на Python:
+
+import numpy as np
+
+data = {'score': [56, 65, 67, 74, 75, 42, 76, 63, 67, 85, 120]}
+df = pd.DataFrame(data)
+
+# расчет квартилей
+Q1 = df['score'].quantile(0.25)
+Q3 = df['score'].quantile(0.75)
+IQR = Q3 - Q1
+
+# определение границ выбросов
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+
+# фильтрация выбросов
+df_filtered = df[(df['score'] >= lower_bound) & (df['score'] <= upper_bound)]
+
+```
+
+
 df.describe(include=object).T
 
 Find maximum values of Age and Amount_spent by Gender:
