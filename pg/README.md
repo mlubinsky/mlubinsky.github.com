@@ -8,6 +8,8 @@ https://news.ycombinator.com/item?id=40186752
 
 https://habr.com/ru/companies/karuna/articles/809305/ pgvector
 
+https://habr.com/ru/companies/postgrespro/articles/819911/ Built-in replanning как способ корректировать огрехи оптимизатора PostgreSQL
+
 ### Config
 
 https://tembo.io/blog/optimizing-memory-usage
