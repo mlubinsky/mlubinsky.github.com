@@ -1,8 +1,9 @@
 https://towardsdatascience.com/setting-a-dockerized-python-environment-the-elegant-way-f716ef85571d
 
+https://habr.com/ru/articles/822707/ 
 ```
-Basic Interview Questions of Docker & Dockerfile:-
-
+Basic Interview Questions of Docker & Dockerfile:
+---------------------------------------------------
 1. How will you run multiple Docker containers in one single host?
 Answer: Docker Compose is the best way to run multiple containers as a single service by defining them in a docker-compose.yml file.
 
