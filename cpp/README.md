@@ -4,6 +4,8 @@ https://habr.com/ru/post/545946/ embedding any file to c/c++
 
 https://habr.com/ru/articles/822509/  Static and dynamic polymorfism
 
+https://habr.com/ru/companies/pvs-studio/articles/822911/ arrays and poiner problems
+
 https://habr.com/ru/companies/yandex_praktikum/articles/807387/  lot of cpp links
 
 ## Macros
