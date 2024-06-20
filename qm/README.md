@@ -38,7 +38,9 @@ https://habr.com/ru/companies/macloud/articles/555522/
 Пятов П. Н. Сапонов П. А. Математические основы квантовой
 https://www.youtube.com/playlist?list=PLq3E5oubNNoB3fjQzUYM7nbJmwv6Q2MHG   
 
+https://teach-in.ru/course/density-matrix Матрица плотности. Часть 1
 
+https://teach-in.ru/course/density-matrix-part2 Матрица плотности. Часть 2
 
 https://www.youtube.com/playlist?list=PLti61wgkUWHxVJwqQgAWcMnmg1Uopuu-k Zaigraev (ru)
 
