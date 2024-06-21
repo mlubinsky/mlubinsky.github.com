@@ -60,6 +60,8 @@ https://www.youtube.com/watch?v=BecRFTzjXA8  (rus)
 
 https://habr.com/ru/company/cloud4y/blog/681376/
 
+https://habr.com/ru/companies/selectel/articles/822855/ S3 + python
+
 https://blog.plerion.com/things-you-wish-you-didnt-need-to-know-about-s3/
 
 https://calpaterson.com/s3.html
