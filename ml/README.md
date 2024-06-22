@@ -16,6 +16,8 @@ https://habr.com/ru/articles/800973/  data preparation for ML
 
 https://github.com/ml-tooling/best-of-ml-python
 
+https://thecleverprogrammer.com/2023/07/15/machine-learning-projects-using-python/
+
 https://habr.com/ru/users/egaoharu_kensei/publications/articles/
 
 https://stepik.org/course/68260/promo  Free course
