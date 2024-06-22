@@ -307,7 +307,11 @@ https://www.youtube.com/watch?v=rFKUs2PeRLU Симметрия в физике,
 
 http://www.mathnet.ru/php/presentation.phtml?option_lang=rus&presentid=24832  solitons
 
+### Green function
 https://www.youtube.com/watch?v=bUfcVTIlJz0 Green function
+
+https://www.cantorsparadise.com/making-sense-of-greens-functions-18ed2152ab6f
+
 
 https://e.lanbook.com/reader/book/619/#26. Блохинцев ДИ Основы квантовой механики
 
