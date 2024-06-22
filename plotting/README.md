@@ -4,6 +4,9 @@ https://habr.com/ru/companies/mws/articles/822757/
 
 https://habr.com/ru/companies/mws/articles/820959/
 
+Hippotable
+https://habr.com/ru/articles/823502/
+
 ###  Observable
 
 https://news.ycombinator.com/item?id=40378791
