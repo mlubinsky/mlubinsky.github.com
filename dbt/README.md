@@ -10,6 +10,8 @@ Has the schema changed?
 
 ### Slowly changing dimensions
 
+https://en.wikipedia.org/wiki/Slowly_changing_dimension
+
 1. “SCD Type 1” — the “Old Record” is “Overwritten” with the “New Record” (MERGE/UPSERT)
 2. “SCD Type 2” — a “New Record” is “Introduced” for “Each Change” of the “Attribute”.
 3. “SCD Type 3” — a “New Column” is “Introduced” for “Each Change” of the “Attribute”.
