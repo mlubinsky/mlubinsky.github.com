@@ -121,6 +121,11 @@ Data engineers often prefer unmanaged tables and the flexibility they provide fo
 
 ```
 #### Delta Live Tables
+
+https://learn.microsoft.com/en-us/azure/databricks/delta-live-tables/sql-ref
+
+https://learn.microsoft.com/en-us/azure/databricks/delta-live-tables/expectations
+
 ```
 Delta Live Tables is a declarative framework for building reliable, maintainable, and testable data processing pipelines.
 You define the transformations to perform on your data and
