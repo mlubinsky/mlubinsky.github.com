@@ -63,6 +63,20 @@ Table: a collection of rows and columns stored as data files in object storage.
 View: a saved query typically against one or more tables or data sources.
 Function: saved logic that returns a scalar value or set of rows.
 ```
+#### Unity Catalog
+
+https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/
+```
+Unity Catalog provides centralized access control, auditing, lineage, and data discovery capabilities across Azure Databricks workspaces.
+
+In Unity Catalog, the hierarchy of primary data objects flows from metastore to table or volume:
+
+-  Metastore: The top-level container for metadata. Each metastore exposes a three-level namespace (catalog.schema.table) that organizes your data.
+-  Catalog: The first layer of the object hierarchy, used to organize your data assets.
+-  Schema: Also known as databases, schemas are the second layer of the object hierarchy and contain tables and views.
+- Tables, views, and volumes: At the lowest level in the data object hierarchy are tables, views, and volumes. Volumes provide governance for non-tabular data.
+- Models: Although they are not, strictly speaking, data assets, registered models can also be managed in Unity Catalog and reside at the lowest level in the object hierarchy.
+```
 
 #### Metastore
 ```
@@ -101,7 +115,9 @@ SELECT * FROM delta.`/tmp/delta/people10m` VERSION AS OF 123
 ```
 There are two kinds of tables in Databricks, managed and unmanaged (or external) tables.
 
-__Managed__ tables: Databricks manages both the metadata and the data for a managed table; when you drop a table, you also delete the underlying data. Data analysts and other users that mostly work in SQL may prefer this behavior. Managed tables are the default when creating a table.
+__Managed__ tables: Databricks manages both the metadata and the data for a managed table;
+when you drop a table, you also delete the underlying data. Data analysts and other users that mostly work in SQL may prefer this behavior.
+ Managed tables are the default when creating a table.
 
 it is possible to create tables on Databricks that are not Delta tables. These tables are not backed by Delta Lake, and will not provide the ACID transactions and optimized performance of Delta tables.
 Tables falling into this category include tables registered against data in external systems
