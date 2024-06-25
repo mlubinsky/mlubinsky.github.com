@@ -10,6 +10,8 @@ https://habr.com/ru/articles/217545/ Как правильно лгать с п�
 Разбираемся в ROC и AUC
 https://habr.com/ru/companies/otus/articles/809147/
 
+https://habr.com/ru/companies/aktiv-company/articles/823510/
+
 
 ### Statistical process control
 using SQL
