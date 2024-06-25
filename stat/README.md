@@ -1,3 +1,7 @@
+### DAU, CLV, etc
+https://habr.com/ru/companies/otus/articles/823490/
+
+
 ### Основные типы распределений вероятностей в примерах
 
 https://habr.com/ru/articles/801101/
