@@ -156,11 +156,17 @@ https://www.youtube.com/watch?v=ky78RZ2f7oc
 select metric, DUT, v  from daily_kpi where dt='2023-01-01' order by metric
 Let make: X-axis: metric legend - DUT 
 
-Apply transformation: "Grouping to matrix" to make the bar chart where X-axis is not the date
+Transform: "Grouping to matrix" to make the bar chart where X-axis is not the date
 ****************************************
  Column: dut
  Row: metric <-- will be X-axis
  Cell value : V
+
+select 'm' as metric, 'A' as dut, 10 as value
+union ALL
+select 'm' as metric, 'B' as dut, 20 as value
+union ALL
+select 'm' as metric, 'C' as dut, 30 as value
 ```
 
 If data is present in following table format (dt, dut, metric1 int, metric2 int, metric3 int)
