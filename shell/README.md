@@ -12,6 +12,8 @@ https://terminaltrove.com/list/ terminal utils
 
 https://github.com/dbohdan/structured-text-tools
 
+https://news.ycombinator.com/item?id=40765005 find. ls, bash discussion
+
 https://news.ycombinator.com/item?id=36501364 Working with CSV and other formats from shell
 
 Slice and dice logs on the command line:
