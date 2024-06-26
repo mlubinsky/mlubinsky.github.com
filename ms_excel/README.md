@@ -1,3 +1,5 @@
+https://habr.com/ru/articles/824050/
+
 ## openpyxl: update specific cells based on certain conditions
 ```
 Next code iterates over the rows of the active sheet
