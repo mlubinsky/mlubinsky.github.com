@@ -24,6 +24,33 @@ https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 https://habr.com/ru/companies/ozontech/articles/774712/
 
 
+### Export result to file:
+```
+Grafana allows exporting the data behind the visualizations, but not the visualizations themselves as images. Here's how a Grafana user can export the data from your barchart and table to a CSV file:
+```
+#### For Barchart:
+```
+1.  The user should hover over the **three-dot menu** in the top right corner of the barchart panel.
+2.  Select **Inspect** > **Data**.
+3.  This opens a panel on the right side displaying the data in a table format.
+4.  Click the blue **Download CSV** button to download the data associated with the barchart.
+```
+#### For Table:
+```
+1.  Similar to the barchart, the user can click the **three-dot menu** in the top right corner of the table panel.
+2.  Select **Inspect** > **Data**.
+3.  This will again display the data in a table format on the right side.
+4.  Click the blue **Download CSV** button to download the data from the table.
+```
+#### Additional Notes:
+```
+* By default, the downloaded CSV will include all data series in the panel and a timestamp column.
+* Users can configure export options within the "Data" tab that appears after selecting "Inspect" > "Data". This allows them to:
+    * Enable "Apply panel transformation" to utilize any transformations applied within the panel before export.
+    * Choose between "Formatted data" (including labels) or "Raw data" (numerical values).
+
+While this method doesn't provide a direct export of the chart image, it offers a way for users to obtain the underlying data for further analysis or manipulation outside of Grafana. 
+```
 ### Tooltip customization
 
 1. 
