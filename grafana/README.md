@@ -24,7 +24,47 @@ https://aws.plainenglish.io/observability-in-aws-cloudwatch-ed60a2c4fdcd
 https://habr.com/ru/companies/ozontech/articles/774712/
 
 
-### Export result to file:
+### Export Grafana result to file
+CharGPT suggests
+ 
+#### Exporting Dashboards and Panels as Images
+
+##### Export as PNG:
+```
+Open the Grafana dashboard.
+Click on the panel title to open the panel menu.
+Select "Share" from the panel menu.
+In the "Share" panel, go to the "Direct link rendered image" tab.
+Click on the "Render" button to generate a PNG image of the panel.
+Save the rendered image to your local file system.
+```
+##### Export as PDF:
+```
+Open the Grafana dashboard.
+Click on the dashboard title to open the dashboard menu.
+Select "Share dashboard" from the dashboard menu.
+In the "Share" panel, go to the "Export" tab.
+Choose "Export to PDF" and follow the prompts to generate and download the PDF file.
+```
+#### Exporting Data from Tables
+
+##### Export as CSV:
+```
+Open the Grafana dashboard and navigate to the table panel.
+Click on the panel title to open the panel menu.
+Select "Inspect" from the panel menu.
+In the "Inspect" panel, go to the "Data" tab.
+Click on the "Download CSV" button to export the table data as a CSV file.
+```
+#### Using Plugins and External Tools
+```
+Grafana Plugins: Some plugins may offer additional export features.
+Check the Grafana Plugin catalog for plugins that support enhanced exporting capabilities.
+API and Scripting: Advanced users can use Grafana's HTTP API to programmatically export data and visualizations.
+This approach requires some scripting knowledge and can be integrated into automated workflows.
+ 
+```
+Gemini suggests
 ```
 Grafana allows exporting the data behind the visualizations,
 but not the visualizations themselves as images.
