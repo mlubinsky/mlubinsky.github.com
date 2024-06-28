@@ -1082,6 +1082,8 @@ https://news.ycombinator.com/item?id=37089817
 
 https://milliams.com/courses/parallel_python/
 
+https://habr.com/ru/articles/825206/
+
 https://superfastpython.com/ Threading, Multiprocessing, and AsyncIO
 
 https://github.com/sybrenjansen/mpire
