@@ -4,6 +4,8 @@ https://zellij.dev/
 
 https://effective-shell.com/
 
+https://git.einval.com/cgi-bin/gitweb.cgi?p=abcde.git;a=blob_plain;f=abcde;hb=8726dfe84907e162e4b10a23cec0832ff544c1a1
+
 https://medium.com/@devhellomello/new-computer-setup-for-techies-2024-neovim-and-ollama-and-fish-oh-my-60cf3879bad8
 
 https://github.com/jlevy/the-art-of-command-line
