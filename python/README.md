@@ -41,6 +41,15 @@ def generate_dates_in_range(start_date, end_date, range="DAY"):
   return all_dates
 ```
 
+### env var
+
+```
+import os
+if 'HOME' in os.environ:
+    v = os.environ.get('HOME')
+```
+
+
 
 https://github.com/AbdulMalikDev/PythonCheatSheet
 
