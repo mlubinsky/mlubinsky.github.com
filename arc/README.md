@@ -16,6 +16,8 @@ https://habr.com/ru/articles/807931/
 
 ### System design interview
 
+https://www.youtube.com/@CodeWithYu
+
 https://habr.com/ru/articles/825560/
 
 https://neiko.notion.site/Whiteboard-3e7a4c319f2b45d0848d451bb959497b
