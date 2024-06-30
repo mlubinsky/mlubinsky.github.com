@@ -1,3 +1,5 @@
+https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions
+
 https://habr.com/ru/companies/bothub/articles/812265/  System design interview
 
 https://www.youtube.com/watch?v=_keHRxzx7as   Глеб Михайлов Новые задачи на LeetCode | Ща порешаем! #99  
