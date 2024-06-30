@@ -27,6 +27,8 @@ https://kavitmht.medium.com/building-a-real-time-data-streaming-pipeline-using-k
 
 ###  Kafka + Flink
 
+https://www.youtube.com/@CodeWithYu
+
 https://mysteryweevil.medium.com/demystifying-stream-processing-with-apache-flink-a-practical-introduction-fa976c77d831
 
 ```
