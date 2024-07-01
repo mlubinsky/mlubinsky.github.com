@@ -62,7 +62,11 @@ https://www.youtube.com/watch?v=uB7zweaF8EA What is new in Airflow 2.7 ?
 
 https://blog.devgenius.io/airflow-task-parallelism-6360e60ab942
 
-Airflow in Docker:
+### Airflow in Docker:
+
+https://github.com/ntd284/personal_install_airflow_docker
+
+https://www.linkedin.com/pulse/how-can-install-airflow-docker-minutes-duong-nguyen-tuan-wkddc/?trackingId=0K0AgWo0iNYvHboc%2FIM4cQ%3D%3D
 
 https://stackabuse.com/running-airflow-locally-with-docker-a-technical-guide/
 
