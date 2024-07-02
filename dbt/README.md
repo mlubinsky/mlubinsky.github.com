@@ -8,6 +8,8 @@ Is the null rate higher or lower than it should be?
 Has the schema changed?
 ```
 
+https://habr.com/ru/articles/822669/ Хранилища данных. Обзор технологий и подходов к проектированию
+
 ### Slowly changing dimensions
 
 https://en.wikipedia.org/wiki/Slowly_changing_dimension
