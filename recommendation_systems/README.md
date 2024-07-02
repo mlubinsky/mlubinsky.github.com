@@ -2,6 +2,8 @@
 
 https://habr.com/ru/companies/selectel/articles/811585/ (link to book inside)
 
+https://habr.com/ru/articles/825896/ Графы в рекомендательных системах
+
 https://habr.com/ru/articles/773126/
 
 https://habr.com/ru/articles/792994/
