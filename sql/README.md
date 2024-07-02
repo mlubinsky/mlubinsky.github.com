@@ -1,3 +1,6 @@
+
+https://habr.com/ru/articles/825970/
+
 ### Database diagrams
 
 https://wisser.github.io/Jailer/
