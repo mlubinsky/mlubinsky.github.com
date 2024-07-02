@@ -23,6 +23,8 @@ How to Digest 15 Billion Logs Per Day and Keep Big Queries Within 1 Second
 
 https://www.youtube.com/@flinkforward
 
+https://getindata.com/blog/optimizing-flink-sql-joins-state-management-efficient-checkpointing/  Optimizing Flink SQL: Joins, State Management and Efficient Checkpointing
+
 https://kavitmht.medium.com/building-a-real-time-data-streaming-pipeline-using-kafka-flink-and-postgres-stream-100k-records-365ea7b6c176
 
 ###  Kafka + Flink
