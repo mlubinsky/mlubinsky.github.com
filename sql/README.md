@@ -1,3 +1,6 @@
+### django-sql-explorer
+https://github.com/explorerhq/django-sql-explorer
+https://news.ycombinator.com/item?id=40857589
 
 https://habr.com/ru/articles/825970/
 
