@@ -1,6 +1,9 @@
 ### Install Python on Mac
 https://lobste.rs/s/rchiux/how_install_python_on_mac
 
+### PyInstaller
+https://lobste.rs/s/szslrx/how_convert_python_applications
+
 ### How to run multiple Python versions on Windows:
 
 https://stackoverflow.com/questions/4583367/how-to-run-multiple-python-versions-on-windows
@@ -26,8 +29,9 @@ https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 
 https://www.b-list.org/weblog/2023/dec/07/pip-install-safely/
 
-#### pytest
-https://coderslegacy.com/pytest-tutorial-unit-testing-in-python/
+
+
+https://habr.com/ru/companies/productstar/articles/826732/ pip commands explained
 
 ```
 python -m pip install -r requirements/app.txt
@@ -290,3 +294,5 @@ https://gist.github.com/chris-zen/9e61db6924bd37fbe414f648614ca4c5
 
 https://www.youtube.com/watch?v=qJ-0N34Sa_E How to set up Python 3.8 for software development (In 2021)
 
+#### pytest
+https://coderslegacy.com/pytest-tutorial-unit-testing-in-python/
