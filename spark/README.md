@@ -2,6 +2,9 @@ https://www.youtube.com/playlist?list=PLL7QpTxsA4se-mAKKoVOs3VcaP71X_LA-  Stream
 
 https://habr.com/ru/articles/806287/ PySpark + Kafka
 
+### Local Spark in Docker
+https://medium.com/programmers-journey/deadsimple-pyspark-docker-spark-cluster-on-your-laptop-9f12e915ecf4
+
 ###  План запросов
 https://www.youtube.com/watch?v=99fYi2mopbs
 
