@@ -23,10 +23,14 @@ df.explain(mode='formatted')
 https://habr.com/ru/companies/alfa/articles/808415/
 
 https://habr.com/ru/companies/otus/articles/808141/
-
-
+```
+spark = SparkSession.builder \
+.appName(“MySparkApp”) \
+.config(“spark.serializer”, “org.apache.spark.serializer.KryoSerializer”) \
+.getOrCreate()
 
 https://towardsdatascience.com/six-spark-exercises-to-rule-them-all-242445b24565
+```
 
 ```
 #   Output how many products have been actually sold at least once
