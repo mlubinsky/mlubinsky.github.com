@@ -20,6 +20,8 @@ df.explain(mode='formatted')
 ```
 ### Spark interview questions 
 
+https://medium.com/@siladityaghosh/complex-data-manipulation-techniques-with-apache-pyspark-407f2c3295d3
+
 https://habr.com/ru/companies/alfa/articles/808415/
 
 https://habr.com/ru/companies/otus/articles/808141/
