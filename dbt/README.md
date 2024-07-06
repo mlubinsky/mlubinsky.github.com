@@ -553,10 +553,12 @@ greatexpectations.io
 ### DBT
 
 https://habr.com/ru/articles/821503/
-  
-  https://www.adventofdata.com/modern-data-modeling-start-with-the-end/
 
-  https://medium.com/datamindedbe/use-dbt-and-duckdb-instead-of-spark-in-data-pipelines-9063a31ea2b5
+https://medium.com/apache-airflow/how-we-orchestrate-2000-dbt-models-in-apache-airflow-90901504032d
+  
+https://www.adventofdata.com/modern-data-modeling-start-with-the-end/
+
+https://medium.com/datamindedbe/use-dbt-and-duckdb-instead-of-spark-in-data-pipelines-9063a31ea2b5
 
 https://docs.getdbt.com/docs/introduction
 
