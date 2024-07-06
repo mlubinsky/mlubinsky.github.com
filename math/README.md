@@ -11,6 +11,9 @@ https://www.youtube.com/watch?v=uhtb8FD_GAI&list=PLPFUq1zn8x35_0NTQqHNKwCjb9CVhS
 
 https://www.youtube.com/watch?v=9CBS5CAynBE&list=PLDcSwjT2BF_WVum1CMO9hMSIa7TyrGjsK
 
+### Ramsey
+https://ega-math.narod.ru/Nquant/Ramsey.htm
+
 ### Fair coin - generate 1/3 probability
 
 https://mindyourdecisions.com/blog/2017/01/01/can-you-solve-it-use-a-coin-to-simulate-any-probability-sunday-puzzle/
