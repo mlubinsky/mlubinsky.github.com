@@ -29,7 +29,7 @@ https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/
 
 https://www.b-list.org/weblog/2023/dec/07/pip-install-safely/
 
-
+https://www.stuartellis.name/articles/python-modern-practices/
 
 https://habr.com/ru/companies/productstar/articles/826732/ pip commands explained
 
