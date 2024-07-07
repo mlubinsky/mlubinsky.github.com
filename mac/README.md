@@ -264,7 +264,10 @@ jenv versions
 
 https://dev.to/gabethere/installing-java-on-a-mac-using-homebrew-and-jevn-12m8
 
-### Spark
+### Install Spark
+
+https://medium.com/@le.oasis/setting-up-apache-spark-on-macos-a-comprehensive-guide-78af7642deb1
+
 brew install apache-spark
 
 /opt/homebrew/Cellar/apache-spark/3.5.0/bin
