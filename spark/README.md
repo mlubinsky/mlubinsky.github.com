@@ -2031,6 +2031,8 @@ https://kontext.tech/column/spark/532/scala-parse-json-string-as-spark-dataframe
 
 ### Installing Spark 2 on Mac
 
+https://medium.com/@le.oasis/setting-up-apache-spark-on-macos-a-comprehensive-guide-78af7642deb1
+
 https://notadatascientist.com/running-apache-spark-and-s3-locally/
 
 https://notadatascientist.com/install-spark-on-macos/
