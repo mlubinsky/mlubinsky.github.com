@@ -80,7 +80,7 @@ https://www.youtube.com/watch?v=oHGWpc-Dl6I
 
 https://medium.com/@xichu.zhang
 
-http://www.gaussianprocess.org/gpml/chapters/
+
 
 http://leonidzhukov.net/hse/2013/stochmod/
 
@@ -147,6 +147,10 @@ https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distribu
 
 
 ## Gaussian process 
+
+http://www.gaussianprocess.org/gpml/chapters/
+
+https://medium.com/the-quantastic-journal/mathematical-understanding-of-gaussian-process-eaffc9c8a6d6
 
 https://gaussianbp.github.io/
 
