@@ -1,3 +1,9 @@
+### Power Toys
+Color picker:
+
+https://learn.microsoft.com/en-us/windows/powertoys/color-picker
+
+
 ### Terminal
 
 https://github.com/microsoft/terminal
