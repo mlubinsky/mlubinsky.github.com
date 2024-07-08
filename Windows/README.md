@@ -3,7 +3,7 @@ Color picker:
 
 https://learn.microsoft.com/en-us/windows/powertoys/color-picker
 
-ctivate Color Picker (Win+Shift+C) 
+activate Color Picker (Win+Shift+C) 
 
 ### Terminal
 
