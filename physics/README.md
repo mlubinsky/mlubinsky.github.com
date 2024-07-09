@@ -7,6 +7,9 @@ https://www.feynmanlectures.caltech.edu/
 David Tong: Lectures on Theoretical Physics
 https://www.damtp.cam.ac.uk/user/tong/teaching.html
 
+Cambridge Notes
+https://dec41.user.srcf.net/notes/
+
 "There is no God and Dirac is his Prophet." 
 — W. Pauli
 
