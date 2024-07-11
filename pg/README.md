@@ -40,6 +40,18 @@ FROM (
     FROM T
 ) AS subquery
 GROUP BY id;
+
+SELECT id, 
+       COALESCE(COUNT(CASE WHEN number > 7 THEN 1 END), 0) AS count_greater_than_7
+FROM (
+    SELECT id, 
+           CASE 
+               WHEN A = '' THEN NULL
+               ELSE unnest(string_to_array(A, ','))::int 
+           END AS number
+    FROM T
+) AS subquery
+GROUP BY id;
 ```
 
 ### Bulk operations: insert/ delete
