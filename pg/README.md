@@ -55,6 +55,16 @@ GROUP BY id;
 
 Error [0A000]: ERROR: set-returning functions are not allowed in CASE
   Hint: You might be able to move the set-returning function into a LATERAL FROM item.
+
+
+SELECT t.id, 
+       COUNT(CASE WHEN number > 7 THEN 1 END) AS count_greater_than_7
+FROM T
+LEFT JOIN LATERAL (
+    SELECT unnest(string_to_array(t.A, ','))::int AS number
+) AS subquery ON true
+GROUP BY t.id;
+
 ```
 
 ### Bulk operations: insert/ delete
