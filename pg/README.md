@@ -10,6 +10,29 @@ https://habr.com/ru/companies/karuna/articles/809305/ pgvector
 
 https://habr.com/ru/companies/postgrespro/articles/819911/ Built-in replanning как способ корректировать огрехи оптимизатора PostgreSQL
 
+### SQL question
+ 
+The content of  column A is the comma-separated numbers.
+Please write SQL which returns how many numbers in this column are greater then 7. 
+```
+SELECT SUM(t.num_count) AS total_numbers_gt_7
+FROM (
+  SELECT id, 
+         array_position(array_remove(string_to_array(A, ','), NULL), x) AS idx,
+         x AS num,
+         CASE WHEN x > 7 THEN 1 ELSE 0 END AS num_count
+  FROM T, unnest(string_to_array(A, ',')) AS x
+) AS t
+WHERE t.num_count = 1;
+
+
+SELECT COUNT(*) AS count_greater_than_7
+FROM (
+    SELECT unnest(string_to_array(A, ','))::int AS number
+    FROM T
+) AS subquery
+WHERE number > 7;
+```
 
 ### Bulk operations: insert/ delete
 
