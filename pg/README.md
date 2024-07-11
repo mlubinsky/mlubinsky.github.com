@@ -32,6 +32,14 @@ FROM (
     FROM T
 ) AS subquery
 WHERE number > 7;
+
+SELECT id, 
+       COUNT(CASE WHEN number > 7 THEN 1 END) AS count_greater_than_7
+FROM (
+    SELECT id, unnest(string_to_array(A, ','))::int AS number
+    FROM T
+) AS subquery
+GROUP BY id;
 ```
 
 ### Bulk operations: insert/ delete
