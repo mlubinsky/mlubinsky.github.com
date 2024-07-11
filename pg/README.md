@@ -40,7 +40,7 @@ FROM (
     FROM T
 ) AS subquery
 GROUP BY id;
-
+-------------------------------------------------
 SELECT id, 
        COALESCE(COUNT(CASE WHEN number > 7 THEN 1 END), 0) AS count_greater_than_7
 FROM (
@@ -52,6 +52,9 @@ FROM (
     FROM T
 ) AS subquery
 GROUP BY id;
+
+Error [0A000]: ERROR: set-returning functions are not allowed in CASE
+  Hint: You might be able to move the set-returning function into a LATERAL FROM item.
 ```
 
 ### Bulk operations: insert/ delete
