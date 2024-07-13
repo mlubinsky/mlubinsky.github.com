@@ -94,6 +94,9 @@ Professional bias /deformation example:
 
 ```
 ### Religion
+
+https://azbyka.ru/otechnik/6/
+
 ```
 "В одном небольшом американском городке некий бизнесмен решил открыть кабак.
 Беда в том,что он находился на одной улице с церковью.
@@ -204,6 +207,8 @@ Professional bias /deformation example:
 ## Phylosophy
 
 https://www.youtube.com/watch?v=GwWOE8roeRU  Философия - логика схождения с ума. "Ремесло экстаза" 2011 Беседа с Анатолием Ахутиным
+
+https://azbyka.ru/otechnik/6/
 
 Heiling — Anoana (Live) на рипите: Тимей, Парменид, Завещание Гёте 
  
