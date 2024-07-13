@@ -4,6 +4,8 @@ https://arxiv.org/pdf/2207.10185.pdf Modern Stat Learning Book
 
 https://habr.com/ru/articles/814343/  What is Kernel
 
+https://github.com/owainlewis/awesome-artificial-intelligence
+
 https://arxiv.org/pdf/1912.13213.pdf Modern Online learning
 
 https://habr.com/ru/articles/783766/ interview
