@@ -212,6 +212,8 @@ https://azbyka.ru/otechnik/6/
 
 http://flibusta.site/b/260187  Лекции по истории философии. Книга первая
 
+http://www.mts.edu.27.ru/biblio/Phil/colection/pdf/1991_chanyshev.pdf
+
 
 Heiling — Anoana (Live) на рипите: Тимей, Парменид, Завещание Гёте 
  
