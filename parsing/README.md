@@ -1,5 +1,7 @@
 https://mpov.timmorgan.org/i-built-a-ruby-parser/
 
+https://compilerbook.com/
+
 Book: craftinginterpreters.com/
 
 http://venge.net/graydon/talks/CompilerTalk-2019.pdf?utm_source=thenewstack&utm_medium=website&utm_campaign=platform
