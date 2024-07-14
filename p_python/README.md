@@ -1293,6 +1293,21 @@ Reasons for using subprocess.Popen():
 
 More control: Popen() offers finer-grained control over the process. You can manage its standard input, output, and error streams independently, allowing you to interact with the running process if needed.
  This might be useful in situations where you need to send data to the .bat file or read its output line by line.
+
+using subprocess.Popen() with subprocess.communicate() can provide more flexibility compared to subprocess.run().
+
+Here are some advantages of using subprocess.Popen() and subprocess.communicate():
+
+Real-time Output: With subprocess.Popen(), you can capture the output in real-time, which can be useful for long-running processes where you want to see the output as it is generated.
+
+More Control:
+subprocess.Popen() gives you more control over the process execution, including the ability to handle stdin, stdout, and stderr streams separately, send input to the process, or terminate it if needed.
+
+Non-blocking Execution:
+You can achieve non-blocking execution by periodically checking the process status,
+which is useful for monitoring and interacting with the process while it is running.
+
+
 Reasons to prefer subprocess.run() (generally):
 
 Simpler execution: run() simplifies the process execution by handling its lifecycle internally. You provide the command and capture the output and return code in a single call.
@@ -1302,6 +1317,47 @@ When to choose which:
 
 For simple execution and capturing output: Use subprocess.run(). It's the recommended approach for most cases.
 For more control over the process and its streams: Use subprocess.Popen() if you need to interact with the running process or manage its input/output explicitly.
+
+import subprocess
+
+def run_bat_file(bat_file_path):
+    try:
+        # Open the subprocess and redirect stdout and stderr
+        process = subprocess.Popen(
+            [bat_file_path],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            shell=True
+        )
+
+        # Capture output in real-time
+        stdout, stderr = process.communicate()
+
+        # Print the output to the console
+        if stdout:
+            print(stdout)
+        if stderr:
+            print(stderr)
+
+        # Check if the return code is not 0 and print error message
+        if process.returncode != 0:
+            print(f"Error: The bat file failed with return code {process.returncode}")
+            print(stderr)
+
+        return stdout
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Example usage
+output = run_bat_file('path_to_your_bat_file.bat')
+print(output)
+
+
+
+
+
 
 import subprocess
 
