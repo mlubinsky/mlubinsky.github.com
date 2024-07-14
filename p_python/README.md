@@ -1206,6 +1206,42 @@ sh  https://amoffat.github.io/sh/index.html https://amoffat.github.io/sh/section
 
 https://www.pyinvoke.org/
 
+
+```
+Please help me to write the following python function:
+This function on should  call the Windows bat file using subprocess module.
+The output of .bat file should be visible in console and at the same time it should be captured into variable which is returned by subprocess.
+If the called .bat file fails or the return code of .bat file is not 0 then print the error message.
+
+import subprocess
+
+def run_bat_file(bat_file_path):
+    try:
+        # Run the .bat file and capture output
+        result = subprocess.run(
+            [bat_file_path],
+            capture_output=True,
+            text=True,
+            shell=True
+        )
+
+        # Print the output to the console
+        print(result.stdout)
+
+        # Check if the return code is not 0 and print error message
+        if result.returncode != 0:
+            print(f"Error: The bat file failed with return code {result.returncode}")
+            print(result.stderr)
+
+        return result.stdout
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Example usage
+output = run_bat_file('path_to_your_bat_file.bat')
+print(output)
+```
 ### 3rd party libs
 
 DiskCache efficiently makes gigabytes of storage space available for caching. 
