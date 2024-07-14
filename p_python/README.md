@@ -1283,10 +1283,26 @@ def call_bat_file(bat_file_path):
     error_msg = f"An unexpected error occurred: {e}"
     print(error_msg)
     return error_msg
+```
 
 
-Another approach: Popen() and communicate()
-----------------------------------------
+
+### Another approach: Popen() and communicate()
+```
+Reasons for using subprocess.Popen():
+
+More control: Popen() offers finer-grained control over the process. You can manage its standard input, output, and error streams independently, allowing you to interact with the running process if needed.
+ This might be useful in situations where you need to send data to the .bat file or read its output line by line.
+Reasons to prefer subprocess.run() (generally):
+
+Simpler execution: run() simplifies the process execution by handling its lifecycle internally. You provide the command and capture the output and return code in a single call.
+It's great when you just want to run a command, wait for it to finish, and get the results without needing to manage the process streams explicitly.
+Error handling: run() automatically checks the return code and raises an exception if the command fails. This simplifies error handling compared to manually checking the return code with Popen().
+When to choose which:
+
+For simple execution and capturing output: Use subprocess.run(). It's the recommended approach for most cases.
+For more control over the process and its streams: Use subprocess.Popen() if you need to interact with the running process or manage its input/output explicitly.
+
 import subprocess
 
 def call_bat_file(bat_file_path):
