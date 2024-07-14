@@ -1246,6 +1246,45 @@ output = run_bat_file('path_to_your_bat_file.bat')
 print(output)
 
 
+Example 2
+----------
+import subprocess
+
+def call_bat_file(bat_file_path):
+  """Calls a Windows .bat file and captures output while handling errors.
+
+  Args:
+      bat_file_path (str): The path to the .bat file.
+
+  Returns:
+      str: The captured output of the .bat file, or an error message if execution fails.
+  """
+
+  try:
+    # Use run() for simpler execution
+    completed_process = subprocess.run(
+        bat_file_path,
+        capture_output=True,  # Capture output
+        shell=True,         # Allow shell interpretation (optional)
+        text=True,          # Decode output to string automatically
+    )
+
+    if completed_process.returncode != 0:
+      raise subprocess.CalledProcessError(returncode=completed_process.returncode, cmd=[bat_file_path])
+
+    return completed_process.stdout
+
+  except subprocess.CalledProcessError as e:
+    error_msg = f"Error running '{bat_file_path}': {e}"
+    print(error_msg)
+    return error_msg
+
+  except Exception as e:
+    error_msg = f"An unexpected error occurred: {e}"
+    print(error_msg)
+    return error_msg
+
+
 Another approach: Popen() and communicate()
 ----------------------------------------
 import subprocess
