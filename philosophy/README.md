@@ -1,6 +1,8 @@
 Michael Sugrue
 https://www.youtube.com/@dr.michaelsugrue
 
+https://archive.ph/KSoMH
+
 https://news.ycombinator.com/item?id=34270650
 
 Lectures on Nietzsche - Robert C. Solomon  
