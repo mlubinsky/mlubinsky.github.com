@@ -1208,11 +1208,14 @@ https://www.pyinvoke.org/
 
 
 ```
-Please help me to write the following python function:
 This function on should  call the Windows bat file using subprocess module.
-The output of .bat file should be visible in console and at the same time it should be captured into variable which is returned by subprocess.
-If the called .bat file fails or the return code of .bat file is not 0 then print the error message.
+The output of .bat file should be visible in console and at the same time
+it should be captured into variable which is returned by subprocess.
+If the called .bat file fails or the return code of .bat file is not 0 then
+print the error message.
 
+Using run()
+------------
 import subprocess
 
 def run_bat_file(bat_file_path):
@@ -1241,6 +1244,61 @@ def run_bat_file(bat_file_path):
 # Example usage
 output = run_bat_file('path_to_your_bat_file.bat')
 print(output)
+
+
+Another approach: Popen() and communicate()
+----------------------------------------
+import subprocess
+
+def call_bat_file(bat_file_path):
+  """Calls a Windows .bat file and captures output while handling errors.
+
+  Args:
+      bat_file_path (str): The path to the .bat file.
+
+  Returns:
+      str: The captured output of the .bat file, or an error message if execution fails.
+  """
+
+  try:
+    # Use Popen for more control over the process
+    process = subprocess.Popen(
+        [bat_file_path],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,  # Combine stdout and stderr for easier handling
+        shell=True  # Allow shell interpretation for complex .bat files (optional)
+    )
+
+    # Capture output and potential errors
+    output, _ = process.communicate()  # Read combined stdout and stderr
+    output = output.decode('utf-8')  # Decode bytes to string
+
+    # Check return code for errors
+    if process.returncode != 0:
+      raise subprocess.CalledProcessError(returncode=process.returncode, cmd=[bat_file_path])
+
+    return output
+
+  except subprocess.CalledProcessError as e:
+    error_msg = f"Error running '{bat_file_path}': {e}"
+    print(error_msg)
+    return error_msg
+
+  except Exception as e:
+    error_msg = f"An unexpected error occurred: {e}"
+    print(error_msg)
+    return error_msg
+
+# Example usage
+bat_file_path = "C:\\path\\to\\your\\bat_file.bat"  # Replace with your actual path
+output = call_bat_file(bat_file_path)
+
+if output.startswith("Error"):
+  print("The .bat file failed to execute.")
+else:
+  print("The .bat file output:\n", output)
+
+
 ```
 ### 3rd party libs
 
