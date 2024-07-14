@@ -30,7 +30,47 @@ https://antonz.org/sql-upsert/
 
 https://news.ycombinator.com/item?id=37641628
 
+#### Max salary per department
+
+https://habr.com/ru/articles/828728/
+```
+CREATE TABLE departments (
+   department_id integer PRIMARY KEY,
+   name text NOT NULL
+);
+CREATE TABLE employees (
+   employee_id integer PRIMARY KEY,
+   department_id integer NOT NULL REFERENCES departments(department_id),
+   name text NOT NULL,
+   salary money NOT NULL
+);
+
+SELECT name AS employee, salary 
+FROM (
+  SELECT department_id, max(salary) AS salary 
+  FROM employees 
+  GROUP BY department_id
+) AS m 
+JOIN employees AS e USING (department_id, salary);
+
+SELECT name AS employee, salary 
+FROM (
+  SELECT name, salary, max(salary) OVER (PARTITION BY department_id) AS ms 
+  FROM employees
+) AS e 
+WHERE salary=ms;
+
+SELECT name AS employee, salary 
+FROM (
+  SELECT name, salary, rank() OVER (PARTITION BY department_id ORDER BY salary DESC)
+  AS rnk FROM employees e
+) AS e 
+WHERE rnk=1;
+```
+
 ###   Interview questions
+
+
 
 https://habr.com/ru/companies/otus/articles/811169/
 
