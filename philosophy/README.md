@@ -172,6 +172,8 @@ https://www.maimonides-guide.com/
 
 ### Philosophy 
 
+http://nitshe.ru/
+
 https://www.youtube.com/@AndriiBaumeister
 
 https://www.youtube.com/watch?v=Bdq6gt4LXoE Stoicism (ru)
