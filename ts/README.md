@@ -12,6 +12,8 @@ https://habr.com/ru/companies/mvideo/articles/771820/
 
 ### Skforekast
 
+https://github.com/cerlymarco/tsmoothie
+
 https://joaquinamatrodrigo.github.io/skforecast/
 
 https://habr.com/ru/articles/752662/
