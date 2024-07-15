@@ -172,6 +172,8 @@ https://www.maimonides-guide.com/
 
 ### Philosophy 
 
+https://www.youtube.com/@AndriiBaumeister
+
 https://www.youtube.com/watch?v=Bdq6gt4LXoE Stoicism (ru)
 
 https://www.youtube.com/watch?v=GwWOE8roeRU  Философия - логика схождения с ума. "Ремесло экстаза" 2011 Беседа с Анатолием Ахутиным
