@@ -8,6 +8,14 @@ http://venge.net/graydon/talks/CompilerTalk-2019.pdf?utm_source=thenewstack&utm_
 
 https://news.ycombinator.com/item?id=32780472
 
+
+ 
+
+<https://bernsteinbear.com/blog/bytecode-interpreters/>
+
+<https://news.ycombinator.com/item?id=18821475>
+
+
 Recursive descent parsing library for Python based on functional combinators
 https://github.com/vlasovskikh/funcparserlib
 
