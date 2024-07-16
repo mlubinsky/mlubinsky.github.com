@@ -2,6 +2,8 @@ https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-que
 
 https://habr.com/ru/companies/bothub/articles/812265/  System design interview
 
+https://habr.com/ru/companies/ods/articles/828772/
+
 https://www.youtube.com/watch?v=_keHRxzx7as   Глеб Михайлов Новые задачи на LeetCode | Ща порешаем! #99  
 https://www.youtube.com/watch?v=JtMuXmmDl9s    Саша Лукин  
 https://www.youtube.com/watch?v=csCtjoDmByA   Squares of a Sorted Array. 
