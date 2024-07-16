@@ -4,7 +4,6 @@ https://asrathore08.medium.com/pyspark-code-snippets-part-ii-e24996ffff3c
 
 https://towardsdatascience.com/4-examples-to-take-your-pyspark-skills-to-next-level-2a04cbe6e630
 
-https://towardsdatascience.com/5-examples-to-master-pyspark-window-operations-26583066e227
 
 https://towardsdatascience.com/best-data-wrangling-functions-in-pyspark-3e903727319e
 
@@ -14,8 +13,154 @@ https://medium.com/@maitreemanna8002/pyspark-optimization-technique-for-better-p
 
 https://medium.com/@Zakbasil/pyspark-performance-improvement-part-1-04a2e3bed7bd
 
+```
+# Add an increasing ID column starting in 1
+display(
+    df
+    .limit(100)
+    .withColumn('ID', F.monotonically_increasing_id()+1 )
+)
+
+## Aggregate
+----------------
+df = df.groupBy('gender').agg(F.max('age').alias('max_age_by_gender'))
+
+df = df.groupBy('age').agg(F.collect_set('name').alias('person_names'))
+
+# Get the aggregated values and list them in a new variable
+display(
+    df.limit(50)
+    .groupBy('cut')
+    .agg( F.array_agg('price'))
+)
+
+
+df
+.groupBy('cut')
+.agg( F.count('cut').alias('n_count'), #count of obervations
+      F.countDistinct('price').alias('distinct') ) #distinct n prices
+      
+df
+.groupBy('cut')
+.agg( F.sum('price').alias('total'),
+          F.mean('price').alias('avg_price'),
+          F.min('price').alias('min_price'),
+          F.max('price').alias('max_price') 
+)
+
+# COUNT_IF
+----------
+display(
+    df
+    .groupBy('cut')
+    .agg( F.count_if( col('price') > 18000))
+)
+
+
+## Median
+------------
+    df
+    .groupBy('cut')
+    .agg( F.median('price').alias('median'),
+     F.percentile('price', 0.5).alias('50th pct'))
+
+
+## SelectExpr
+---------------
+sub_df = data.selectExpr("store_code as store_id",
+                         "cast(product_code as int) as product_id",
+                         "cast(sales_date as date) as date",
+                         "cast(sales_qty as int)")
+
+# Moving Average using expr()
+----
+expression = """
+mean(sales_qty) over (partition by store_id, product_id order by date 
+rows between 2 preceding and current row)
+"""
+
+sub_df = (
+    sub_df
+    .withColumn("moving_avg", F.round(F.expr(expression), 2))
+)
+
+#### String split()
+ display( df
+        .select( col('carat').cast('string'))
+        .select( F.split('carat', '\.')[0],
+                 F.split('carat', '\.')[1] ) 
+        )
+
+
+# Moving Average
+--------------------
+window = (
+    Window
+    .partitionBy("store_id", "product_id")
+    .orderBy("date")
+    .rowsBetween(-2, Window.currentRow)
+)
+
+# calculate mean over the window
+sub_df = (
+    sub_df
+    .withColumn("moving_avg", F.round(F.mean("sales_qty").over(window), 2))
+)
+
+# Explode
+----------
+
+from pyspark.sql.functions import explode
+data = [("Alice", [1, 2, 3]), ("Bob", [4, 5]), ("Charlie", [6])]
+df = spark.createDataFrame(data, ["name", "numbers"])
+# explode the numbers column
+df_exploded = df.select("name", explode("numbers").alias("number"))
+
+# Pivot 
+--------
+data = [("Alice", "apples", 10), ("Alice", "oranges", 5),
+        ("Bob", "apples", 7), ("Bob", "oranges", 3),
+        ("Charlie", "apples", 2), ("Charlie", "oranges", 1)]
+df = spark.createDataFrame(data, ["name", "fruit", "quantity"])
+
+# pivot the fruit column
+df_pivoted = df.groupBy("name").pivot("fruit", ["apples", "oranges"]).agg(sum("quantity"))
+
+# Array
+---------
+from pyspark.sql import functions as F, types as T
+
+# Column Array - F.array(*cols)
+df = df.withColumn('full_name', F.array('fname', 'lname'))
+
+# Empty Array
+df = df.withColumn('empty_array_column', F.array([]))
+
+# Get element at index
+df = df.withColumn('first_element', F.col("my_array").getItem(0))
+
+# Array Size/Length
+df = df.withColumn('array_length', F.size('my_array'))
+
+# Flatten Array
+df = df.withColumn('flattened', F.flatten('my_array'))
+
+# Unique/Distinct
+df = df.withColumn('unique_elements', F.array_distinct('my_array'))
+
+# Map over & transform array elements
+# ["This", "is", "very", "verbose"] -> [4, 2, 4, 7]
+df = df.withColumn("len_col", transform("array_col", lambda x: length(x)))
+
+# Explode & collect
+from pyspark.sql.functions import explode, length, collect_list
+df = df.withColumn("col_temp", explode("array_col")).withColumn("len_col_temp", length("col_temp"))
+   .groupBy("unique_id").agg(collect_list("len_col_temp").alias("len_col")
+```
 
 ### Window fuctions
+https://towardsdatascience.com/5-examples-to-master-pyspark-window-operations-26583066e227
+
 https://sairamdgr8.medium.com/acing-apache-spark-dataframes-interview-questions-series-using-pyspark-with-window-functions-4a38e6f80d19
 ```
 # Window functions in pyspark
