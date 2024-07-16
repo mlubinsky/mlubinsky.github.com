@@ -551,9 +551,3 @@ https://news.ycombinator.com/item?id=27614381
 <https://medium.com/@cdiggins/beyond-regular-expressions-an-introduction-to-parsing-context-free-grammars-ee77bdab5a92>
 
 
-## Inerpretators Compiles
-
-<https://bernsteinbear.com/blog/bytecode-interpreters/>
-
-<https://news.ycombinator.com/item?id=18821475>
-
