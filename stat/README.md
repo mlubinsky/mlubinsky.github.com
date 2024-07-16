@@ -1,3 +1,5 @@
+https://habr.com/ru/companies/kuper/articles/827448/  Cтатистические критерии для начинающих
+
 ### DAU, CLV, etc
 https://habr.com/ru/companies/otus/articles/823490/
 
