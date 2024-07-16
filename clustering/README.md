@@ -1,6 +1,8 @@
-https://habr.com/ru/companies/spbifmo/articles/781710/
+https://habr.com/ru/companies/spbifmo/articles/781710/ Sparkling: Открытая библиотека для автоматического решения задачи кластеризации табличных и мультимодальных данных
 
 ### Clustering 
+
+https://habr.com/ru/articles/829202/ алгоритм K-means++
 
 https://en.wikipedia.org/wiki/Determining_the_number_of_clusters_in_a_data_set
 
