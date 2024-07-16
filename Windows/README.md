@@ -38,6 +38,34 @@ if "%A%"=="G2" (
     echo Variable A is not G2
 )
 ```
+Gemini solution:
+```
+Code snippet
+@echo off
+
+setlocal enabledelayedexpansion
+
+if "!A!"=="G2" (
+  echo A is equal to G2! Executing code...
+  REM Your code here
+  echo This line will only be executed if A is G2
+) else (
+  echo A is not equal to G2. Skipping code execution.
+)
+
+endlocal
+pause
+``` 
+
+Gemini Explanation:
+```
+@echo off: This line hides the commands from being echoed on the screen.
+setlocal enabledelayedexpansion: This line enables delayed variable expansion within a block scope.
+This allows us to use the exclamation mark (!) for variable expansion even within quotes.
+if "!A!"=="G2" ( ... ) else ( ... ): This if-else statement remains the same, but we use !A! for variable expansion.
+!: This exclamation mark allows delayed variable expansion within double quotes.
+This ensures the actual value of A is compared, including any surrounding quotes.
+```
 
 ### Removing quotes in bat file
 CharGPT solution:
