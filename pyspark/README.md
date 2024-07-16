@@ -14,8 +14,54 @@ https://medium.com/@maitreemanna8002/pyspark-optimization-technique-for-better-p
 
 https://medium.com/@Zakbasil/pyspark-performance-improvement-part-1-04a2e3bed7bd
 
-https://sairamdgr8.medium.com/acing-apache-spark-dataframes-interview-questions-series-using-pyspark-with-window-functions-4a38e6f80d19
 
+### Window fuctions
+https://sairamdgr8.medium.com/acing-apache-spark-dataframes-interview-questions-series-using-pyspark-with-window-functions-4a38e6f80d19
+```
+# Window functions in pyspark
+----------------------------------
+from pyspark.sql.window import Window
+from pyspark.sql.functions import col, row_number, rank, dense_rank, lead,lag, percent_rank, ntile, mean
+from pyspark.sql import functions as f
+
+spark = SparkSession.builder.appName('Spark_window_functions').getOrCreate()
+emp_df = spark.read.csv(r'emp.csv',header=True,inferSchema=True) 
+emp_df.show(10)
+
+# Window definition / spec
+win_func = Window.partitionBy(emp_df['DEPTNO']).orderBy(emp_df['SAL'].desc()) 
+
+emp_df.withColumn('rank',row_number().over(win_func)).show()
+
+# Equivalent SQL
+select e.*, row_number() over(partition by deptno order by sal desc) rank from emp e) rk 
+
+------------------------
+win = Window.partitionBy(df1['channel_code']).orderBy(df1['sum_spent'].desc())
+
+revenue_difference = (df1['sum_spent']-lead(df1['sum_spent']).over(win))
+df1.select(df1['channel_code'],df1['prod_code'],
+            df1['sum_spent'],revenue_difference.\ 
+            alias('spent_diff_lead')).show(truncate=False)
+--------------            
+winrow = Window.partitionBy(df1['channel_code']) \
+                         .orderBy(df1['sum_spent'].desc()) \
+                         .rowsBetween(Window.unboundedPreceding, 
+                                              Window.currentRow)
+revenue_difference =(f.max(df1['sum_spent']).over(winrow)-df1['sum_spent'])
+df1.select(df1['channel_code'],df1['prod_code'],
+              df1['sum_spent'],revenue_difference \
+              .alias("spend_difference")).show(truncate=False)
+-------------------
+winra=Window.partitionBy(df1['channel_code']) \
+                        .orderBy(df1['sum_spent'].desc()) \
+                        .rangeBetween(Window.unboundedPreceding,
+                                       Window.currentRow) 
+revenue_difference =(f.max(df1['sum_spent']).over(winra)-df1['sum_spent'])
+df1.select(df1['channel_code'],df1['prod_code'],df1['sum_spent'],
+             revenue_difference.alias("spend_difference")) \
+             .show(truncate=False)
+```
 
 ### Implementing Pyspark Real Time Application || End-to-End Project 
 
