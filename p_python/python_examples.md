@@ -580,7 +580,9 @@ while reversed_head:
 Explanation: This function reverses a singly linked list by changing the direction of the links between nodes.
 ```
 ### 30) Write a Python function to implement binary search on a given sorted array of integers.
-#Proposed solution by github.com/tushar2704
+
+ Proposed solution by github.com/tushar2704
+```
 def binary_search(arr, target):
     low, high = 0, len(arr) - 1
     while low <= high:
@@ -596,9 +598,11 @@ def binary_search(arr, target):
 # Example usage:
 print(binary_search([1, 2, 3, 4, 5, 6], 4))  # Output: 3
 Explanation: This function performs a binary search to find the index of a target value within a sorted array, returning -1 if the target is not found.
+```
 
-31) Write a Python function to implement the merge sort algorithm to sort a given list of integers.
-#Proposed solution by github.com/tushar2704
+### 31) Write a Python function to implement the merge sort algorithm to sort a given list of integers.
+Proposed solution by github.com/tushar2704
+```
 def merge_sort(arr):
     if len(arr) > 1:
         mid = len(arr) // 2
@@ -634,9 +638,10 @@ arr = [12, 11, 13, 5, 6, 7]
 merge_sort(arr)
 print("Sorted array is:", arr)
 Explanation: Merge sort is a divide and conquer algorithm that divides the input list into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge_sort function recursively splits the list into halves until the sublists have only one element each. Then, it merges those sorted sublists to produce the sorted answer.
-
-32) Write a Python function to implement the quicksort algorithm to sort a given list of integers.
-#Proposed solution by github.com/tushar2704
+```
+### 32) Write a Python function to implement the quicksort algorithm to sort a given list of integers.
+ Proposed solution by github.com/tushar2704
+ ```
 def quicksort(arr):
     if len(arr) <= 1:
         return arr
@@ -651,9 +656,10 @@ def quicksort(arr):
 arr = [3,6,8,10,1,2,1]
 print(quicksort(arr))
 Explanation: Quicksort is a divide and conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quicksort that pick pivot in different ways. This implementation uses the middle element as pivot.
-
-33) Write a Python function to implement the breadth-first search algorithm to traverse a given tree.
-#Proposed solution by github.com/tushar2704
+```
+### 33) Write a Python function to implement the breadth-first search algorithm to traverse a given tree.
+Proposed solution by github.com/tushar2704
+```
 from collections import deque
 
 def bfs(root):
@@ -671,13 +677,15 @@ def bfs(root):
     return result
 
 # Assuming a Node class with attributes 'value', 'left', and 'right'
+
 # Example usage:
 # root = Node(1, Node(2), Node(3))
 # print(bfs(root))  # Output: [1, 2, 3]
 Explanation: Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root and explores the neighbor nodes at the present depth prior to moving on to nodes at the next depth level.
-
-34) Write a Python function to implement the depth￾first search algorithm to traverse a given tree.
-#Proposed solution by github.com/tushar2704
+```
+### 34) Write a Python function to implement the depth￾first search algorithm to traverse a given tree.
+Proposed solution by github.com/tushar2704
+```
 def dfs(node):
     if not node:
         return []
@@ -688,8 +696,9 @@ def dfs(node):
 # root = Node(1, Node(2), Node(3))
 # print(dfs(root))  # Output: [1, 2, 3]
 Explanation: Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node and explores as far as possible along each branch before backtracking.
-
-35) What is the output of the following code?
+```
+### 35) What is the output of the following code?
+```
 a = [1, 2, 3]
 b = a
 a.append(4)
@@ -697,8 +706,9 @@ print(b)
 Output: [1][2][3][4]
 
 Explanation: Here, b is assigned the same list as a. When a.append(4) is called, it modifies the list a refers to, and since b refers to the same list, b also reflects this change.
-
-36) What is the output of the following code?
+```
+### 36) What is the output of the following code?
+```
 a = "hello"
 b = a
 a += " world"
@@ -706,8 +716,8 @@ print(b)
 Output: hello
 
 Explanation: Strings in Python are immutable. When a += " world" is executed, a new string is created and a is updated to refer to it, but b still refers to the original string.
-
-37) What is the output of the following code?
+```
+### 37) What is the output of the following code?
 a = [1, 2, 3]
 b = a[:]
 a.append(4)
@@ -716,7 +726,7 @@ Output: [1][2][3]
 
 Explanation: b = a[:] creates a new list that is a copy of a, so when a is modified, b remains unchanged.
 
-38) What is the output of the following code?
+### 38) What is the output of the following code?
 a = 5
 b = 10
 a, b = b, a
@@ -725,7 +735,7 @@ Output: 10 5
 
 Explanation: This is a Pythonic way to swap the values of a and b. After the swap, a becomes 10 and b becomes 5.
 
-39) What is the output of the following code?
+### 39) What is the output of the following code?
 a = [1, 2, 3]
 b = a.copy()
 a.append(4)
@@ -736,7 +746,7 @@ Output: [1][2][3]
 
 Explanation: b = a.copy() creates a shallow copy of a. Thus, when a is modified, b does not change.
 
-40) What is the output of the following code?
+### 40) What is the output of the following code?
 a = [1, 2, 3]
 b = a
 a = [4, 5, 6]
@@ -745,7 +755,7 @@ Output: [1][2][3]
 
 Explanation: b is assigned to refer to the same list as a. When a is assigned a new list [4][5][6], it does not affect b, which still refers to the original list.
 
-41) What is the output of the following code?
+### 41) What is the output of the following code?
 a = "hello"
 a[0] = "H"
 print(a)
@@ -753,7 +763,7 @@ Output: This code will result in a TypeError.
 
 Explanation: Strings in Python are immutable, which means you cannot change an existing string. The attempt to modify the string by assigning a new value to a will raise a TypeError.
 
-42) What is the output of the following code?
+### 42) What is the output of the following code?
 a = [1, 2, 3]
 b = [4, 5, 6]
 a + b
@@ -762,7 +772,7 @@ Output: [1][2][3]
 
 Explanation: The a + b operation creates a new list but does not modify a. The print(a) statement outputs the original list a.
 
-43) What is the output of the following code?
+### 43) What is the output of the following code?
 a = [1, 2, 3]
 b = a
 c = b
@@ -772,7 +782,7 @@ Output: [1,[2][3][4]
 
 Explanation: Since b and c are references to the same list as a, appending 4 to a also affects b and c. Thus, c shows the updated list.
 
-44) What is the output of the following code?
+### 44) What is the output of the following code?
 a = {"apple": 3, "banana": 2, "orange": 1}
 b = sorted(a)
 print(b)
@@ -780,7 +790,7 @@ Output: ['apple', 'banana', 'orange']
 
 Explanation: The sorted() function, when used on a dictionary, returns a list of keys sorted alphabetically.
 
-45) What is the output of the following code?
+### 45) What is the output of the following code?
 a = [1, 2, 3]
 b = [1, 2, 3]
 print(a == b)
@@ -791,7 +801,7 @@ True
 False
 Explanation: a == b checks for value equality and returns True because both lists have the same items in the same order. a is b checks for identity (i.e., whether both variables point to the same object), which is False because a and b are different list objects.
 
-46) What is the output of the following code?
+### 46) What is the output of the following code?
 a = "hello"
 b = a
 a = a.upper()
@@ -800,7 +810,7 @@ Output: hello
 
 Explanation: Strings are immutable, so a.upper() creates a new string and assigns it to a, but b still points to the original string.
 
-47) What is the output of the following code?
+### 47) What is the output of the following code?
 a = [1, 2, 3]
 a *= 2
 print(a)
@@ -808,7 +818,7 @@ Output: [1][2][3][1][2][3]
 
 Explanation: The *= 2 operation extends the list a by repeating its elements, effectively doubling the list.
 
-48) What is the output of the following code?
+### 48) What is the output of the following code?
 a = [1, 2, 3]
 b = [1, 2, 3]
 print(a == b)
@@ -819,14 +829,14 @@ True
 False
 Explanation: Similar to question 45, a == b returns True because the lists have the same elements in the same order, and a is b returns False because they are different objects.
 
-49) What is the output of the following code?
+### 49) What is the output of the following code?
 a = {"apple": 3, "banana": 2, "orange": 1}
 print(a["pear"])
 Output: This code will result in a KeyError.
 
 Explanation: The key "pear" does not exist in the dictionary a, so attempting to access it raises a KeyError.
 
-50) What is the output of the following code?
+### 50) What is the output of the following code?
 a = "hello"
 b = a
 a += " world"
@@ -842,7 +852,7 @@ Tushar Aggarwal
 Hey, If you gain something from my work, consider supporting me by buying me a beer!🍺🍻
 buymeacoffee.com
 
-51) What is the output of the following code?
+### 51) What is the output of the following code?
 a = [1, 2, 3]
 b = a[:]
 c = a
@@ -855,117 +865,50 @@ Output:
 [1, 2, 3, 4]
 Explanation: b is a copy of a at the time of assignment, so changes to a do not affect b. c is a reference to the same list as a, so changes to a also appear in c.
 
-52) What is the output of the following code?
+### 52) What is the output of the following code?
 a = {"apple": 3, "banana": 2, "orange": 1}
 print(sorted(a, key=lambda x: a[x]))
 Output: ['orange', 'banana', 'apple']
 
 Explanation: The sorted() function is used with a key function that sorts the dictionary keys based on their corresponding values in ascending order.
 
-53) What is an API in Python?
+### 53) What is an API in Python?
 Solution: An API (Application Programming Interface) in Python is a set of functions and methods that allows you to interact with a module or service. It defines the way software components should interact.
 
-54) What are the types of APIs in Python?
+### 54) What are the types of APIs in Python?
 Solution: Python supports several types of APIs, including Web APIs, local APIs, and program APIs. These can be further categorized into public, private, and partner APIs depending on their accessibility.
 
-55) What is the built-in Python API?
+### 55) What is the built-in Python API?
 Solution: The built-in Python API refers to the Python Standard Library, which includes a wide range of modules and functions that are directly accessible in Python without needing to install additional libraries.
 
-56) What are some examples of modules in the built￾in Python API?
+### 56) What are some examples of modules in the built￾in Python API?
 Solution: Some examples of modules in the built-in Python API include math for mathematical functions, datetime for handling dates and times, and json for parsing and generating JSON data.
 
-57) What are some examples of functions in the built￾in Python API?
+### 57) What are some examples of functions in the built￾in Python API?
 Solution: Examples of functions in the built-in Python API include print() for outputting data, len() for getting the length of a data structure, and range() for generating sequences of numbers.
 
-58) What is a third-party API in Python?
-Solution: A third-party API in Python refers to any API that is not part of the Python Standard Library and is provided by external sources. These APIs are often used to interact with external services and systems.
-
-59) What are some popular third-party APIs in Python?
-Solution: Popular third-party APIs in Python include the requests module for making HTTP requests, numpy for numerical operations, and pandas for data manipulation and analysis.
-
-60) What is the process for using a third-party API in Python?
-Solution: The process typically involves installing the API library using a package manager like pip, importing the necessary modules in your Python script, configuring access credentials if necessary, and making API calls to perform desired operations. This often requires handling the data returned from the API.
-
-61) What is an API wrapper in Python?
-Solution: An API wrapper in Python is a set of functions or a class that abstracts the complexities of making API calls. It provides a simplified way to interact with an API by handling low-level details like constructing URLs, making network requests, and parsing responses. This allows developers to work with API data using Python objects and methods rather than dealing directly with HTTP requests and JSON or XML data.
-
-62) What is an API client in Python?
-Solution: An API client in Python is a tool or library used to interact with web APIs. It simplifies the process of sending requests and handling responses from the API. API clients often include features like session management, connection pooling, and methods for different HTTP verbs (GET, POST, etc.). Libraries like requests and httpx are popular choices for creating API clients in Python.
-
-63) What is an API endpoint in Python?
-Solution: An API endpoint in Python refers to a specific URL where an API can be accessed. It represents a specific function of the API, such as retrieving user data or posting new content. Each endpoint has a defined HTTP method (GET, POST, DELETE, etc.) and often expects data in a specific format.
-
-64) What is SOAP API in Python?
-Solution: A SOAP API in Python is an interface that allows for the exchange of structured information using the Simple Object Access Protocol (SOAP) over the internet. SOAP is a protocol specification for exchanging structured information in the implementation of web services. Python libraries like zeep are used to interact with SOAP APIs.
-
-65) What is the difference between REST API and SOAP API in Python?
-Explanation: The main difference between REST and SOAP APIs in Python is the architectural style and data format. REST APIs (Representational State Transfer) are simpler, use standard HTTP methods, and can return data in multiple formats such as JSON or XML. SOAP APIs (Simple Object Access Protocol), on the other hand, are more structured, rely on XML for all messages, and are generally considered more verbose and rigid. REST is often preferred for web services due to its simplicity and flexibility.
-
-66) How do you authenticate with a REST API in Python?
-Solution: Authentication with a REST API in Python typically involves sending a token or credentials with your requests. This can be done using headers or query parameters. The requests library allows you to easily manage headers for authentication, such as Bearer tokens or Basic Auth credentials.
-
-67) How do you handle errors and exceptions when working with APIs in Python?
-Solution: When working with APIs in Python, errors and exceptions can be handled by checking the response status code and parsing error messages returned from the API. The requests library raises exceptions for certain types of HTTP errors, which you can catch and handle in your code to implement robust error handling.
-
-68) How do you rate limit requests to an API in Python?
-Solution: Rate limiting requests to an API in Python can be managed using sleep intervals or more sophisticated rate-limiting libraries like ratelimit or backoff. These libraries help ensure that your application adheres to the API's rate limits by delaying requests as needed.
-
-69) How do you cache API responses in Python?
-Solution: Caching API responses in Python can be achieved using libraries such as requests-cache, which provides a simple mechanism to cache responses locally. This can significantly improve performance by reducing the number of API calls needed.
-
-70) How do you test API integrations in Python?
-Solution: Testing API integrations in Python can be done using unit testing frameworks like unittest or pytest. Mocking libraries such as responses or httpretty allow you to simulate API responses. This enables you to test your integration logic without making actual API calls, ensuring your application behaves as expected under various conditions.
-
-71) How do you document your API integrations in Python?
-Solution: Documenting API integrations in Python can be done using docstrings and comments within the code to explain how the API is integrated and used. Tools like Sphinx can be used to generate beautiful, structured documentation from these docstrings, which can include details about functions, classes, and modules interacting with the API. Additionally, maintaining an external documentation guide that includes endpoint descriptions, usage examples, and common troubleshooting tips is also beneficial.
-
-72) What is metaprogramming in Python, and how is it useful?
-Solution: Metaprogramming in Python refers to techniques that allow for the dynamic modification or generation of code at runtime. It enables programmers to modify or generate code, which can lead to more flexible and adaptable code. Uses of metaprogramming include class decorators, metaclasses, and functions like getattr() and setattr(). This can be particularly useful in creating frameworks, reducing boilerplate code, or building domain-specific languages within Python.
-
-73) List some of the most commonly used Python libraries.
-Solution: Some of the most commonly used Python libraries include:
-
-NumPy: For numerical operations.
-Pandas: For data manipulation and analysis.
-Matplotlib and Seaborn: For data visualization.
-Scikit-learn: For machine learning.
-Requests: For making HTTP requests.
-BeautifulSoup and Scrapy: For web scraping.
-TensorFlow and PyTorch: For deep learning.
-74) What are some common design patterns used in Python, and can you explain how they are used?
-Solution: Common design patterns in Python include:
-
-Singleton: Ensures a class has only one instance and provides a global point of access to it.
-Factory Method: Provides an interface for creating objects in a superclass but allows subclasses to alter the type of objects that will be created.
-Decorator: Adds new functionality to an object without altering its structure.
-Observer: Allows a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
-These patterns help in solving common software design issues, making code more modular, reusable, and maintainable.
-75) Can you explain the difference between an abstract class and an interface in Python?
+###  75) Can you explain the difference between an abstract class and an interface in Python?
 Solution: In Python, an abstract class can have both abstract methods (which don’t have an implementation) and concrete methods (which do). It is used when you want to create a base class that defines a blueprint for derived classes. An interface in Python, often achieved using abstract base classes, strictly contains methods that have no implementation and must be implemented by derived classes. Python does not have explicit support for interfaces like some other languages but achieves similar functionality through abstract base classes.
 
-Support my work here:
-As this blog is open to all members, there is no paywall, so consider buying me a beer!
-
-Tushar Aggarwal
-Hey, If you gain something from my work, consider supporting me by buying me a beer!🍺🍻
-buymeacoffee.com
-
-76) Can you explain how Python’s garbage collection works, and what are some strategies for managing memory usage?
+###  76) Can you explain how Python’s garbage collection works, and what are some strategies for managing memory usage?
 Solution: Python uses a form of automatic memory management known as garbage collection. The primary mechanism is reference counting, where each object keeps track of how many references point to it. When references to an object drop to zero, the memory occupied by the object is reclaimed. Python also uses a generational garbage collector for cyclic references. Strategies for managing memory include minimizing reference cycles, using del to remove references, and employing libraries like gc for manual garbage collection control.
 
-77) Explain the Global Interpreter Lock (GIL) in Python and its implications for concurrency.
+### 77) Explain the Global Interpreter Lock (GIL) in Python and its implications for concurrency.
 Solution: The Global Interpreter Lock (GIL) is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes at once. This lock is necessary because Python’s memory management is not thread-safe. The GIL can be a bottleneck in CPU-bound and multi-threaded code, as it allows only one thread to execute at a time even on multi-core processors. For true parallelism, Python developers often use multiprocessing or switch to implementations like Jython or IronPython, which don’t have a GIL.
 
-78) What is the difference between deep and shallow copying in Python, and when would you use each?
+### 78) What is the difference between deep and shallow copying in Python, and when would you use each?
 Solution: Shallow copying in Python creates a new object but inserts references into it to the objects found in the original. Deep copying creates a new object and recursively adds copies of nested objects present in the original. Shallow copy is faster and sufficient when the copied object does not contain nested objects that might be modified. Deep copy is used when the new object needs to be fully independent of the original, including all nested objects.
 
-79) How do you count the number of occurrences of an element in a list in Python?
-Explanation: You can count the number of occurrences of an element in a list using the count method of the list. For example:
+### 79) How do you count the number of occurrences of an element in a list in Python?
+
 
 #Proposed solution by github.com/tushar2704
+```
 a = [1, 2, 3, 2, 1, 5, 6, 2]
 print(a.count(2))  # Output: 3
-80) How do you remove all whitespace from a string in Python?
+
+```
+### 80) How do you remove all whitespace from a string in Python?
 Explanation: To remove all whitespace from a string, you can use the replace method or a regular expression with the re module. Here's an example using replace:
 
 #Proposed solution by github.com/tushar2704
@@ -979,23 +922,27 @@ import re
 s = " a b c "
 s = re.sub(r"\s+", "", s)
 print(s)  # Output: "abc"
-81) How do you get the current working directory in Python?
+
+### 81) How do you get the current working directory in Python?
 #Proposed solution by github.com/tushar2704
 import os
 current_directory = os.getcwd()
 print("Current Working Directory:", current_directory)
 Explanation: You can obtain the current working directory in Python using the os.getcwd() method from the os module or the Path.cwd() method from the pathlib module.
 
-82) How do you flatten a nested list in Python?
+### 82) How do you flatten a nested list in Python?
 #Proposed solution by github.com/tushar2704
+
 def flatten_list(nested_list):
     return [item for sublist in nested_list for item in sublist]
 
 nested_list = [[1, 2, 3], [4, 5], [6]]
 print("Flattened list:", flatten_list(nested_list))
-Explanation: To flatten a nested list in Python, you can use a list comprehension, the itertools.chain() method, or a recursive approach. A simple list comprehension for one level of nesting would look like: [item for sublist in nested_list for item in sublist].
+Explanation: To flatten a nested list in Python, you can use a list comprehension, the itertools.chain() method, or a recursive approach. A simple list comprehension for one level of nesting would look like:
 
-83) How do you check if a number is prime in Python?
+[item for sublist in nested_list for item in sublist].
+
+### 83) How do you check if a number is prime in Python?
 #Proposed solution by github.com/tushar2704
 def is_prime(n):
     if n <= 1:
@@ -1009,7 +956,7 @@ print(is_prime(11))  # Output: True
 print(is_prime(4))   # Output: False
 Explanation: To check if a number is prime, you can iterate from 2 to the square root of the number and check if the number is divisible by any of those values. If it is divisible, it is not prime; otherwise, it is prime.
 
-84) How do you convert a string to a datetime object
+### 84) How do you convert a string to a datetime object
 in Python?
 #Proposed solution by github.com/tushar2704
 from datetime import datetime
@@ -1019,7 +966,7 @@ date_object = datetime.strptime(date_string, "%d/%m/%Y")
 print("Date Object:", date_object)
 Explanation: You can convert a string to a datetime object using the datetime.strptime() method from the datetime module. You need to specify the string and the format that matches the string.
 
-85) How do you merge two dictionaries in Python?
+### 85) How do you merge two dictionaries in Python?
 #Proposed solution by github.com/tushar2704
 dict1 = {'a': 1, 'b': 2}
 dict2 = {'c': 3, 'd': 4}
@@ -1028,7 +975,7 @@ merged_dict = {**dict1, **dict2}
 print("Merged Dictionary:", merged_dict)
 Explanation: To merge two dictionaries in Python, you can use the update() method, the unpacking operator **, or the merge operator | introduced in Python 3.9.
 
-86) How do you remove duplicates from a list in
+### 86) How do you remove duplicates from a list in
 Python?
 #Proposed solution by github.com/tushar2704
 def remove_duplicates(lst):
@@ -1038,7 +985,7 @@ original_list = [1, 2, 2, 3, 4, 4, 5]
 print("Without duplicates:", remove_duplicates(original_list))
 Explanation: To remove duplicates from a list, you can convert the list to a set and then back to a list, as sets automatically remove duplicates: list(set(my_list)).
 
-87) How do you check if a string is a palindrome in
+### 87) How do you check if a string is a palindrome in
 Python?
 #Proposed solution by github.com/tushar2704
 def is_palindrome(s):
@@ -1048,7 +995,7 @@ print(is_palindrome("radar"))  # Output: True
 print(is_palindrome("python")) # Output: False
 Explanation: This function checks if a string is a palindrome by comparing it to its reverse.
 
-88) How do you reverse a list in Python?
+### 88) How do you reverse a list in Python?
 #Proposed solution by github.com/tushar2704
 def reverse_list(lst):
     return lst[::-1]
@@ -1057,12 +1004,13 @@ original_list = [1, 2, 3, 4, 5]
 print("Reversed list:", reverse_list(original_list))
 Explanation: This function reverses a list using the slicing technique.
 
-89)How do you convert a string to a list of characters in Python?
+### 89)How do you convert a string to a list of characters in Python?
 s = "hello"
 a = list(s)
 print(a)
 #Output: ['h', 'e', 'l', 'l', 'o']
-90) How do you check if a string contains only digits
+
+### 90) How do you check if a string contains only digits
 in Python?
 #Proposed solution by github.com/tushar2704
 def contains_only_digits(s):
@@ -1072,16 +1020,16 @@ print(contains_only_digits("12345"))  # Output: True
 print(contains_only_digits("123a45")) # Output: False
 Explanation: This function checks if a string contains only digits using the isdigit() method.
 
-91) How do you sort a list of dictionaries in Python
-based on a specific key?
+### 91) How do you sort a list of dictionaries in Python based on a specific key?
 #Proposed solution by github.com/tushar2704
+
 from operator import itemgetter
 list_of_dicts = [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 20}, {'name': 'Charlie', 'age': 30}]
 sorted_list = sorted(list_of_dicts, key=itemgetter('age'))
 print(sorted_list)
 Explanation: This code sorts a list of dictionaries based on the ‘age’ key using the sorted() function and itemgetter from the operator module.
 
-92) How do you remove all duplicates from a list in
+### 92) How do you remove all duplicates from a list in
 Python?
 #Proposed solution by github.com/tushar2704
 def remove_duplicates(lst):
@@ -1091,7 +1039,7 @@ my_list = [1, 2, 2, 3, 4, 4, 5]
 print(remove_duplicates(my_list))
 Explanation: This function removes duplicates by converting the list to a set, which automatically removes duplicate elements, and then converting it back to a list.
 
-93) How do you check if a string contains a specific
+### 93) How do you check if a string contains a specific
 substring in Python?
 #Proposed solution by github.com/tushar2704
 def contains_substring(string, substring):
@@ -1100,7 +1048,7 @@ def contains_substring(string, substring):
 print(contains_substring("hello world", "world"))  # Output: True
 Explanation: This function checks if a substring exists within a string using the in keyword.
 
-94) How do you sort a list of strings in alphabetical
+### 94) How do you sort a list of strings in alphabetical
 order?
 #Proposed solution by github.com/tushar2704
 def sort_strings(lst):
@@ -1110,14 +1058,14 @@ my_list = ["banana", "apple", "cherry"]
 print(sort_strings(my_list))
 Explanation: This function sorts a list of strings in alphabetical order using the sorted() function.
 
-95) How do you iterate over a dictionary in Python?
+### 95) How do you iterate over a dictionary in Python?
 #Proposed solution by github.com/tushar2704
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 for key, value in my_dict.items():
     print(f"Key: {key}, Value: {value}")
 Explanation: This code iterates over a dictionary, accessing both keys and values using the .items() method.
 
-96) How do you remove duplicates from a list in
+### 96) How do you remove duplicates from a list in
 Python?
 #Proposed solution by github.com/tushar2704
 def remove_duplicates(lst):
@@ -1127,7 +1075,7 @@ my_list = [1, 2, 2, 3, 4, 4, 5]
 print(remove_duplicates(my_list))
 Explanation: This function removes duplicates using a dictionary to preserve order, as dictionary keys are unique.
 
-97) What is the output of the following code?
+### 97) What is the output of the following code?
 #Proposed solution by github.com/tushar2704
 a = [1, 2, 3]
 b = a
@@ -1137,7 +1085,7 @@ Output: [1][2][3][4]
 
 Explanation: Since b is a reference to the same list as a, changes to a will reflect in b.
 
-98) How do you reverse a string in Python?
+### 98) How do you reverse a string in Python?
 #Proposed solution by github.com/tushar2704
 def reverse_string(s):
     return s[::-1]
@@ -1145,13 +1093,13 @@ def reverse_string(s):
 print(reverse_string("hello"))  # Output: "olleh"
 Explanation: This function reverses a string using slicing.
 
-99) How do you find the length of a list in Python?
+### 99) How do you find the length of a list in Python?
 #Proposed solution by github.com/tushar2704
 my_list = [1, 2, 3, 4, 5]
 print(len(my_list))  # Output: 5
 Explanation: The len() function is used to find the number of items in a list.
 
-100) How do you check if a list is empty in Python?
+### 100) How do you check if a list is empty in Python?
 #Proposed solution by github.com/tushar2704
 def is_list_empty(lst):
     return not lst
