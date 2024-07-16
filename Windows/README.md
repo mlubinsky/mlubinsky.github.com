@@ -19,7 +19,27 @@ number of lines in file:
 
 find /v /c “” C:\Users\Martin\Desktop\sample.txt
 
-### Removing quotes
+### if statement in bat file
+```
+@echo off
+setlocal enabledelayedexpansion
+
+:: Set the variable A with quotes
+set A="G2"
+
+:: Remove the leading and trailing double quotes from A
+set A=%A:"=%
+
+:: Check if the value of A is "G2"
+if "%A%"=="G2" (
+    echo Variable A is G2
+    :: Place your code here that you want to execute when A is G2
+) else (
+    echo Variable A is not G2
+)
+```
+
+### Removing quotes in bat file
 CharGPT solution:
 ```
 @echo off
