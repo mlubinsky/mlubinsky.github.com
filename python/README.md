@@ -267,6 +267,25 @@ print(c)
 #Output: Counter({'a': 6, 'b': 2, 'c': 2, 'd': 1})
 ```
 
+#### Counter most_common
+```
+there is a very useful method in Counter called most_common().
+ to print the first two letters that are used most often, the most_common() method can help:
+
+from collections import Counter
+chars = Counter(title)
+print(chars.most_common(2))
+# [(' ', 9), ('a', 6)]
+ 
+to count how many times each letter is used in a piece of text
+
+from collections import Counter
+
+title = "3 Variants of Python Dictionaries That Make Your Coding Easier"
+chars = Counter(title)
+print(chars)
+# Counter({' ': 9, 'a': 6, 'i': 6, 'o': 5, 'r': 4, 'n': 4, 't': 4, 's': 3, 'e': 3, 'h': 2, '3': 1, 'V': 1, 'f': 1, 'P': 1, 'y': 1, 'D': 1, 'c': 1, 'T': 1, 'M': 1, 'k': 1, 'Y': 1, 'u': 1, 'C': 1, 'd': 1, 'g': 1, 'E': 1})
+```
 
 #### Square all numbers
 ```
@@ -505,26 +524,10 @@ nums = OrderedDict()
 if you are using Python 3.7+, the insertion-order preservation 
 applies to the normal dictionaries as well
 
-to count how many times each letter is used in a piece of text
 
-from collections import Counter
 
-title = "3 Variants of Python Dictionaries That Make Your Coding Easier"
-chars = Counter(title)
-print(chars)
-# Counter({' ': 9, 'a': 6, 'i': 6, 'o': 5, 'r': 4, 'n': 4, 't': 4, 's': 3, 'e': 3, 'h': 2, '3': 1, 'V': 1, 'f': 1, 'P': 1, 'y': 1, 'D': 1, 'c': 1, 'T': 1, 'M': 1, 'k': 1, 'Y': 1, 'u': 1, 'C': 1, 'd': 1, 'g': 1, 'E': 1})
-```
 
-#### Counter most_common
-```
-there is a very useful method in Counter called most_common().
- to print the first two letters that are used most often, the most_common() method can help:
 
-from collections import Counter
-chars = Counter(title)
-print(chars.most_common(2))
-# [(' ', 9), ('a', 6)]
-```
 
 
 Regexep to find leading 0 in month, just after year:
