@@ -19,6 +19,28 @@ number of lines in file:
 
 find /v /c “” C:\Users\Martin\Desktop\sample.txt
 
+### Removing quotes
+
+```
+@echo off
+setlocal enabledelayedexpansion
+
+:: Set variables
+set A=partA
+set B="xyz"
+
+:: Remove the leading and trailing double quotes from B
+set B=%B:"=%
+
+:: Concatenate A, -, and the modified B
+set C=%A%-%B%
+
+:: Display the result
+echo %C%
+
+endlocal
+pause
+```
 
 ###  Gemini my.bat
 
