@@ -336,9 +336,9 @@ print(dict(zip(number[0::2], number[1::2])))
 The list.sort() method is only defined for lists. In contrast, the sorted() function accepts any iterable.
 
 Note that both list.sort() and sorted() have a key parameter t
-
- Merging 2 dictionaries
- 
+```
+### Merging 2 dictionaries
+``` 
 dict1 = {'a':2 , 'b': 20}
 dict2 = {'c':15 , 'a': 40}
 merged_dict = {**dict1, **dict2}
@@ -347,7 +347,7 @@ print(merged_dict)
  
 
 ```
-dot poroduct:
+### dot product:
 ```
  def dotProduct(listA,listB): 
     return sum( [x*y] for x,y in zip(listA, listB)]
@@ -360,8 +360,9 @@ dot poroduct:
         for i, n in sparce_nums.items():
             result += n * vec2.nums.get(i, 0)
         return result
-	
-  ## Anagram 	
+```	
+### Anagram 	
+```
     from collections import Counter
 
     def anagram(first, second):
@@ -369,30 +370,33 @@ dot poroduct:
 	 
     def anagram(first, second):
          return first == second[::-1]	 
-
-    # size in bytes
+```
+### size in bytes
+```
     import sys 
     variable = 30 
     print(sys.getsizeof(variable))
-    
-   # check whether two lists contain the same elements or not,
+```    
+### check whether two lists contain the same elements or not,
+```
    def compare(l1, l2):
     if len(l1) != len(l2):
         return False
     else: 
          return l1.sort() == l2.sort()
-    
+```    
    
-   #  splits the list into smaller lists of the specified size:
+###  splits the list into smaller lists of the specified size:
+```
    def chunk(list, size):
     return [list[i:i+size] for i in range(0,len(list), size)]
     
    lstA = [1,2,3,4,5,6,7,8,9,10]
    lstSize = 3
    chunk(lstA, lstSize)
-   
-   ## flatten the nested arrays:
-
+```   
+### flatten the nested arrays:
+```
    def flatten(items):
     for item in items:
         if isinstance(item, list):
@@ -402,22 +406,22 @@ dot poroduct:
 
 items = [1, [2], [[3], 4], 5]
 assert list(flatten(items)) == [1, 2, 3, 4, 5]
-   
+```   
    # Removal of False Values
-
+```
    def compact(lst):
       return list(filter(bool, lst))
     
    compact([0, 1, False, 2, '',' ', 3, 'a', 's', 34])
-   
-   Convert a list of Strings to a single String, where each item from the list is separated by commas:
-   
+ ```  
+ ###  Convert a list of Strings to a single String, where each item from the list is separated by commas:
+ ```  
    hobbies = ["singing", "soccer", "swimming"]
    print("My hobbies are:") # My hobbies are:
    print(", ".join(hobbies)) # singing, soccer, swimming
-	
-  Return  the difference between the two lists after applying this function to each element of both lists:
-
+```	
+###  Return  the difference between the two lists after applying this function to each element of both lists:
+```
    def difference_by(a, b, fn):
       b = set(map(fn, b))
       return [item for item in a if fn(item) not in b]
@@ -425,14 +429,14 @@ assert list(flatten(items)) == [1, 2, 3, 4, 5]
   from math import floor
   print(difference_by([2.1, 1.2], [2.3, 3.4],floor)) # [1.2]
   print(difference_by([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], lambda v : v['x'])) # [ { x: 2 } ]
-  
+
   
   def has_duplicates(lst):
     return len(lst) != len(set(lst))
 	
-	
- ```
- String fuctions
+```  	
+ 
+ #### String fuctions
  ```
  s.find(pattern).  If a substring cannot be found, a -1 will be returned.
  
@@ -485,12 +489,6 @@ print(merge_dictionaries(a, b)) # {'y': 3, 'x': 1, 'z': 4}
 
 Convert Two Lists to a Dictionary
 
-def merge_dictionaries(a, b):
-    return {**a,**b}
-    
-a = { 'x': 1, 'y': 2}
-b = { 'y': 3, 'z': 4}
-print(merge_dictionaries(a, b)) # {'y': 3, 'x': 1, 'z': 4}
 
 def to_dictionary(keys, values):
     return dict(zip(keys, values))
@@ -515,10 +513,15 @@ title = "3 Variants of Python Dictionaries That Make Your Coding Easier"
 chars = Counter(title)
 print(chars)
 # Counter({' ': 9, 'a': 6, 'i': 6, 'o': 5, 'r': 4, 'n': 4, 't': 4, 's': 3, 'e': 3, 'h': 2, '3': 1, 'V': 1, 'f': 1, 'P': 1, 'y': 1, 'D': 1, 'c': 1, 'T': 1, 'M': 1, 'k': 1, 'Y': 1, 'u': 1, 'C': 1, 'd': 1, 'g': 1, 'E': 1})
+```
 
-
+#### Counter most_common
+```
 there is a very useful method in Counter called most_common().
  to print the first two letters that are used most often, the most_common() method can help:
+
+from collections import Counter
+chars = Counter(title)
 print(chars.most_common(2))
 # [(' ', 9), ('a', 6)]
 ```
@@ -561,9 +564,6 @@ https://medium.com/programming-for-beginners/how-to-use-python-generators-to-eff
 https://betterprogramming.pub/3-data-processing-pipelines-you-can-build-with-python-generators-dc0d2019b177
 
 https://towardsdatascience.com/python-pandas-data-pipelines-515bcc678570
-
-
-
 
 ### Download from youtube
 ```
@@ -619,12 +619,7 @@ https://habr.com/ru/post/559560/ . hex arhitecture in python
 https://luminousmen.com/post/python-interview-questions-senior
 
 
-
 https://awesome-python.com/
-
-
-
-
 
 
 https://habr.com/ru/company/skillfactory/blog/528232/  57 отборных репозиториев для всех разработчиков Python
@@ -785,16 +780,20 @@ https://djangocentral.com/classmethod-and-staticmethod-explained/
 https://djangocentral.com/property-decorator-explained/
 
 ```
-A @staticmethod is a method that knows nothing about the class or instance it was called on unless explicitly given. It just gets the arguments that were passed, no implicit first argument and It’s definition is immutable via inheritance.
+A @staticmethod is a method that knows nothing about the class or instance it was called on unless explicitly given.
+It just gets the arguments that were passed, no implicit first argument and It’s definition is immutable via inheritance.
 
-In simpler words a @staticmethod  is nothing more than a regular function defined inside a class that doesn’t have access to the instance therefore It is callable without instantiating the class.
+In simpler words a @staticmethod  is nothing more than a regular function defined inside a class that doesn’t have access to the instance therefore
+ It is callable without instantiating the class.
 
 Syntax:
 
 class ClassName:
     @staticmethod
     def method_name(arg1, arg2, ...): ...
-We use the @staticmethod decorator for defining a static method in Python, here you can observe that the static method is not taking self as an argument for the method.
+
+We use the @staticmethod decorator for defining a static method in Python,
+here you can observe that the static method is not taking self as an argument for the method.
 
 ```
 
