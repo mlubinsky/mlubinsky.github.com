@@ -262,13 +262,35 @@ print('[%s]' % '\n'.join(map(str, libraries))
 #### Counter
 ```
 from collections import Counter
-c = Counter(“aaabbccdaaa”)
+c = (“aaabbccdaaa”)
 print(c)
 #Output: Counter({'a': 6, 'b': 2, 'c': 2, 'd': 1})
 ```
-
-#### Counter most_common
+ 
 ```
+from collections import Counter
+text = 'and another long text but interesting and fun'
+
+c = Counter()
+for word in text.split(" "):
+  c[word] += 1
+print(c)
+```
+Actually we can do even better using the Counter’s constructor:
+```
+from collections import Counter
+text = 'and another long text but interesting and fun'
+c = Counter(text.split(" "))
+print(c)
+```
+
+
+#### Counter most_common()
+
+The most_common method: Print the 3 most common words, along with their count
+```
+print(c.most_common(3))
+ 
 there is a very useful method in Counter called most_common().
  to print the first two letters that are used most often, the most_common() method can help:
 
@@ -1160,28 +1182,7 @@ data = defaultdict(list)
 for word in text.split(" "):
     data[word[0]].append(word)
 ```
-## Counter
- count the number of occurrences of each word in a text. With the Counter class, this is easily accomplished:
-```
-from collections import Counter
-text = 'and another long text but interesting and fun'
 
-c = Counter()
-for word in text.split(" "):
-  c[word] += 1
-print(c)
-```
-Actually we can do even better using the Counter’s constructor:
-```
-from collections import Counter
-text = 'and another long text but interesting and fun'
-c = Counter(text.split(" "))
-print(c)
-```
-The most_common method: Print the 3 most common words, along with their count
-```
-print(c.most_common(3))
-```
 
 <https://gto76.github.io/python-cheatsheet/>
 
