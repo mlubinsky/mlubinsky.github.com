@@ -20,7 +20,7 @@ number of lines in file:
 find /v /c “” C:\Users\Martin\Desktop\sample.txt
 
 ### Removing quotes
-
+CharGPT solution:
 ```
 @echo off
 setlocal enabledelayedexpansion
@@ -40,6 +40,33 @@ echo %C%
 
 endlocal
 pause
+```
+Gemini solution:
+```
+Code snippet
+@echo off
+
+set "C=%A% - %B:~1,-1%"
+
+echo The new variable C is: %C%
+
+pause
+```
+
+Gemini Explanation:
+
+@echo off: This line hides the commands from being echoed on the screen when the script runs.
+set "C=%A% - %B:~1,-1%":
+set: This command is used to define a new environment variable.
+"C=: We set the name of the new variable to "C".
+%A%: This expands the value of the existing variable "A" and adds it to the string.
+-: This adds a literal hyphen (-) to the string.
+%B:~1,-1%: This is a substring expansion of the "B" variable.
+~: Tilde (~) is used for substring expansion.
+1: This specifies the starting position of the substring (excluding the first character).
+-1: This specifies the ending position of the substring (excluding the last character). This removes the leading and trailing double quotes.
+echo The new variable C is: %C%: This line displays a message with the value of the newly created variable "C".
+pause: This line pauses the execution of the script and waits for any key to be pressed before closing the command prompt window.
 ```
 
 ###  Gemini my.bat
