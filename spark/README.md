@@ -1,3 +1,5 @@
+https://habr.com/ru/articles/828984/  Spark Interview questions
+
 https://www.youtube.com/playlist?list=PLL7QpTxsA4se-mAKKoVOs3VcaP71X_LA-  Streaming systems
 
 https://habr.com/ru/articles/806287/ PySpark + Kafka
