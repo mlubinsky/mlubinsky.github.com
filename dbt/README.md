@@ -1,3 +1,5 @@
+https://www.certfun.com/databricks/databricks-certified-machine-learning-associate
+
 ### Data observbility
 https://www.montecarlodata.com/blog-introducing-the-5-pillars-of-data-observability/
 ```
