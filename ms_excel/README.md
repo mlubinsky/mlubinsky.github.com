@@ -1,5 +1,58 @@
 https://habr.com/ru/articles/824050/
 
+## Sort worksheets:
+ChatGPT
+```
+from openpyxl import load_workbook
+
+# Load the workbook
+workbook_path = 'your_excel_file.xlsx'  # Replace with your Excel file path
+wb = load_workbook(workbook_path)
+
+# Get the worksheets and their names
+ws_list = wb.worksheets
+ws_names = [(ws.title, ws) for ws in ws_list]
+
+# Sort the worksheets by their names
+sorted_ws_names = sorted(ws_names, key=lambda x: x[0])
+
+# Reorder the worksheets in the workbook
+wb._sheets = [ws for name, ws in sorted_ws_names]
+
+# Save the workbook
+wb.save(workbook_path)
+
+print("Worksheets sorted successfully!")
+```
+Gemini
+```
+from openpyxl import load_workbook
+
+def sort_worksheets(filename):
+  workbook = load_workbook(filename)
+
+  # Get a list of worksheet names
+  sheet_names = [sheet.title for sheet in workbook.worksheets]
+
+  # Sort the sheet names
+  sheet_names.sort()
+
+  # Create a new list to store the sorted worksheets
+  sorted_worksheets = []
+
+  # Iterate over the sorted sheet names and append corresponding worksheets to the new list
+  for name in sheet_names:
+    sorted_worksheets.append(workbook[name])
+
+  # Replace the original worksheets with the sorted ones
+  workbook.worksheets = sorted_worksheets
+
+  workbook.save(filename)
+
+# Example usage:
+sort_worksheets('your_workbook.xlsx')
+```
+
 ## openpyxl: update specific cells based on certain conditions
 ```
 Next code iterates over the rows of the active sheet
