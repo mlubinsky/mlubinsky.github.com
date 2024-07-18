@@ -2,6 +2,8 @@ https://techlibrary.ru/
 
 # download physics books
 
+https://kpfu.ru/physics/struktura/kafedry/kafedra-teoreticheskoj-fiziki/metodicheskie-materialy
+
 https://mechmath.ipmnet.ru/
 
 https://mechmath.ipmnet.ru/lib/?s=phlectures
