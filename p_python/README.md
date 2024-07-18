@@ -1,5 +1,9 @@
 https://www.pythonmorsels.com/time-complexities/
 
+https://habr.com/ru/companies/yandex/articles/828956/ What is new in Python
+
+https://habr.com/ru/articles/829760/ Python internals 
+
 high - quality python code:
 https://news.ycombinator.com/item?id=40085887
 
