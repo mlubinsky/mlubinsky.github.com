@@ -5,6 +5,172 @@ https://learn.microsoft.com/en-us/windows/powertoys/color-picker
 
 activate Color Picker (Win+Shift+C) 
 
+### Customize the background color of cmd.exe on Windows 10 programmatically
+ 
+ 
+
+#### Using a Batch File
+```
+ The color command uses a two-digit hexadecimal code:
+the first digit represents the background color,
+and the second digit represents the text color.
+
+Here's an example batch file to set the background to blue (1) and the text to white (F):
+
+batch
+Copy code
+@echo off
+color 1F
+
+Save this content to a file with a .bat extension, such as change_color.bat, and run it.
+```
+#### Using a Python Script
+
+For a Python script, you can use the os module to call the color command. Here's how to do it:
+``` 
+import os
+
+# Change the background color to blue (1) and text color to white (F)
+os.system('color 1F')
+
+
+This script executes the color command to change the cmd.exe background to blue and the text to white.
+
+List of Color Codes
+Here are some color codes you can use:
+
+0 = Black
+1 = Blue
+2 = Green
+3 = Aqua
+4 = Red
+5 = Purple
+6 = Yellow
+7 = White
+8 = Gray
+9 = Light Blue
+A = Light Green
+B = Light Aqua
+C = Light Red
+D = Light Purple
+E = Light Yellow
+F = Bright White
+```
+
+#### Example
+```
+If you want to set the background to red (4) and text to yellow (E), the code would be:
+
+Batch File:
+
+batch
+Copy code
+@echo off
+color 4E
+Python Script:
+
+python
+Copy code
+import os
+
+# Change the background color to red (4) and text color to yellow (E)
+
+
+os.system('color 4E')
+These methods will change the background color of the current cmd.exe session.
+If you want to make permanent changes, you'll need to modify the registry,
+which is more complex and not typically recommended for casual users.
+
+```
+
+### How to change the color of text programmatically?
+``` 
+To change the color of text programmatically in the Windows command prompt (cmd.exe),
+you can use escape sequences with the color command within a batch file or from a Python script.
+ The color command in cmd.exe changes both the background and text color,
+but you can adjust it dynamically within a script to change only the text color when needed.
+
+```
+
+#### Using a Batch File
+```
+You can change the color of text in a batch file using the color command followed by printing the text:
+ 
+@echo off
+:: Change background to black (0) and text to green (A)
+color 0A
+echo This text is green
+
+:: Change background to black (0) and text to red (C)
+color 0C
+echo This text is red
+
+:: Change background to black (0) and text to white (F)
+color 0F
+echo This text is white
+
+
+Save the above content to a file with a .bat extension (e.g., change_text_color.bat) and run it.
+```
+#### Using a Python Script
+
+In a Python script, you can use the os.system function to execute the color command and then print the text:
+
+``` 
+import os
+
+# Change background to black (0) and text to green (A)
+os.system('color 0A')
+print("This text is green")
+
+# Change background to black (0) and text to red (C)
+os.system('color 0C')
+print("This text is red")
+
+# Change background to black (0) and text to white (F)
+os.system('color 0F')
+print("This text is white")
+
+```
+#### Example of Dynamic Text Color Change
+```
+If you need to dynamically change the text color within the same script, 
+you can do it as shown in the examples above. 
+However, if you need more control over text coloring 
+(e.g., multiple colors in the same line or more complex text formatting), y
+ou would need to use libraries such as colorama in Python, which allows more advanced text styling:
+
+Using Colorama in Python
+First, install the colorama library:
+
+bash
+Copy code
+pip install colorama
+Then, use the following script:
+ 
+from colorama import init, Fore, Back, Style
+# Initialize colorama
+init()
+
+print(Fore.GREEN + 'This text is green')
+print(Fore.RED + 'This text is red')
+print(Fore.WHITE + 'This text is white')
+
+# Reset to default color
+print(Style.RESET_ALL + 'This text is default color')
+
+
+Explanation:
+
+Batch File: The color command sets both background and text colors. T
+he script changes the color and then prints the text.
+Python Script (os.system):
+Uses the os.system function to call the color command, changing the color and printing the text.
+Python Script (colorama): The colorama library provides more advanced control over text colors and styles, allowing multiple colors in the same script.
+These methods allow you to change text colors programmatically in cmd.exe on Windows.
+
+```
+
 ### Terminal
 
 https://github.com/microsoft/terminal
