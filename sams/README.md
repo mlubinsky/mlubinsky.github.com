@@ -1,3 +1,40 @@
+### subprocess
+
+```
+When you use subprocess.run() with capture_output=True, the output is captured and not immediately displayed in the console. If you want to see the output in real-time, you can use the subprocess.Popen method instead. This allows you to read the output line by line and print it to the console as it is generated.
+
+Here's how you can do it:
+
+python
+Copy code
+import subprocess
+
+with subprocess.Popen("a.bat", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True) as process:
+    while True:
+        output = process.stdout.readline()
+        if output == '' and process.poll() is not None:
+            break
+        if output:
+            print(output.strip())
+    rc = process.poll()
+This script will invoke a.bat and print each line of output to the console as it is produced. The while loop continuously reads from the stdout pipe until there is no more output and the process has finished.
+
+Here's a more detailed explanation of each part of the script:
+
+subprocess.Popen: This function is used to execute a subprocess and provides more flexibility than subprocess.run().
+stdout=subprocess.PIPE: This captures the standard output.
+stderr=subprocess.PIPE: This captures the standard error.
+text=True: This makes sure that the output is treated as text (str) instead of bytes.
+while True loop: This reads the output line by line.
+output = process.stdout.readline(): Reads a single line from the standard output.
+if output == '' and process.poll() is not None:: Checks if the process has finished.
+if output:: If there is output, it prints it to the console.
+process.poll(): This checks the return code of the process.
+This way, you can see the output of the .bat file in real-time in the console while it is being executed by Python.
+```
+
+
+
 ### Grafana - assign color to bar chart
 ```
 ooking for a solution that automatically assigns different colors to bars without manual configuration, especially since  data is dynamically extracted from a database table. Let's explore some options that might work better for your case:
