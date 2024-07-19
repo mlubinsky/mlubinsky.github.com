@@ -1,5 +1,5 @@
-### subprocess
-
+### subprocess.Popen()
+https://realpython.com/python-subprocess/
 Gemini
 ```
  Execute a long-running batch file from Python, capture its output in real-time,
