@@ -3,6 +3,8 @@ https://www.amazon.com/Electricity-Magnetism-Mathematicians-Thomas-Garrity-dp-11
 
 https://www.feynmanlectures.caltech.edu/II_21.html
 
+https://habr.com/ru/articles/825522/  Квантовая электродинамика в картинках
+
 https://ufn.ru/ru/articles/1988/9/e/ Специальная теория относительности и эффект Саньяка
 
 Classical Electrodynamics: A Tutorial on its Foundations∗
