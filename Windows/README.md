@@ -17,8 +17,8 @@ and the second digit represents the text color.
 
 Here's an example batch file to set the background to blue (1) and the text to white (F):
 
-batch
-Copy code
+File: change_color.bat
+
 @echo off
 color 1F
 
