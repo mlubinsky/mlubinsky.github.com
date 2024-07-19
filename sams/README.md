@@ -8,19 +8,22 @@ Gemini
  
 import subprocess
 
-def run_bat_and_print(bat_file):
-  """Runs a batch file and prints its output in real time."""
-  with subprocess.Popen(bat_file, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, universal_newlines=True) as process:
+def run_bat_and_get_returncode(bat_file):
+  """Runs a batch file and returns its return code."""
+  with subprocess.Popen(bat_file, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, universal_newlines=True,  cwd=cwd) as process:
     while True:
       output = process.stdout.readline()
       if output == '' and process.poll() is not None:
         break
       if output:
         print(output.strip())
+    return process.returncode
 
 # Example usage:
 bat_file = "path/to/your/a.bat"
-run_bat_and_print(bat_file)
+return_code = run_bat_and_get_returncode(bat_file)
+print("Return code:", return_code)
+
 ```
 ChatGPT
 
