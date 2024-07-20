@@ -1,5 +1,9 @@
 https://www.pythonmorsels.com/time-complexities/
 
+https://habr.com/ru/articles/830098/ msgspec. Библиотека для сериализации и десериализации чего угодно
+
+https://habr.com/ru/articles/830158/ Python. Внутреннее устройство множеств set и словарей dict. Часть 2 из 2
+
 https://habr.com/ru/companies/yandex/articles/828956/ What is new in Python
 
 https://habr.com/ru/articles/829760/ Python internals 
