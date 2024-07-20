@@ -20,7 +20,9 @@ def run_bat_and_get_returncode(bat_file):
       if output:
         print(output.strip())
         output_deque.append(output.strip())
-    return process.returncode
+
+  last_100_records = list(output_deque)
+  return process.returncode
 
 # Example usage:
 bat_file = "path/to/your/a.bat"
