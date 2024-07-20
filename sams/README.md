@@ -3,13 +3,15 @@ https://realpython.com/python-subprocess/
 Gemini
 ```
  Execute a long-running batch file from Python, capture its output in real-time,
- and display it to the console.
+ and display it to the console. keep last 100 records in queue
 
  
 import subprocess
-
+from collections import deque
+#-----------------------------------------
 def run_bat_and_get_returncode(bat_file):
-  """Runs a batch file and returns its return code."""
+#-----------------------------------------
+  output_deque = deque(maxlen=100)
   with subprocess.Popen(bat_file, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, universal_newlines=True,  cwd=cwd) as process:
     while True:
       output = process.stdout.readline()
@@ -17,6 +19,7 @@ def run_bat_and_get_returncode(bat_file):
         break
       if output:
         print(output.strip())
+        output_deque.append(output.strip())
     return process.returncode
 
 # Example usage:
