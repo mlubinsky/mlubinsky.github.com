@@ -1,5 +1,7 @@
 https://the-algorithms.com/
 
+https://photonlines.substack.com/p/algorithms-for-optimization-explained?triedRedirect=true
+
 https://www.youtube.com/watch?v=ugGT4T5HcsI  (rus, 4 hours)
 
 Data Structures for Data-Intensive apps:
