@@ -1,3 +1,6 @@
+
+echo %errorlevel%
+
 ### Power Toys
 Color picker:
 
