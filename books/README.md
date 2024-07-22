@@ -1,5 +1,7 @@
 https://techlibrary.ru/
 
+https://eqworld.ipmnet.ru/ru/library.htm
+
 # download physics books
 
 https://kpfu.ru/physics/struktura/kafedry/kafedra-teoreticheskoj-fiziki/metodicheskie-materialy
