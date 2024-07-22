@@ -263,6 +263,7 @@ https://www.physics.princeton.edu/~mcdonald/examples/ McDonald
 https://habr.com/ru/post/544030/ FermiNet
 
 ### Entropy
+http://philsci-archive.pitt.edu/8592/1/EntropyPaperFinal.pdf
 
 http://math.ucr.edu/home/baez/what_is_entropy.pdf
 
