@@ -264,6 +264,12 @@ https://habr.com/ru/post/544030/ FermiNet
 
 ### Entropy
 
+http://math.ucr.edu/home/baez/what_is_entropy.pdf
+
+https://johncarlosbaez.wordpress.com/2024/07/20/what-is-entropy/
+
+https://news.ycombinator.com/item?id=41037981
+
 https://www.cantorsparadise.com/it-took-me-10-years-to-understand-entropy-here-is-what-i-learned-b2d51e8ccd4c
 
 https://news.ycombinator.com/item?id=31164725
