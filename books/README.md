@@ -8,6 +8,8 @@ https://kpfu.ru/physics/struktura/kafedry/kafedra-teoreticheskoj-fiziki/metodich
 
 https://mechmath.ipmnet.ru/
 
+https://kpfu.ru/physics/struktura/kafedry/kafedra-teoreticheskoj-fiziki/metodicheskie-materialy
+
 https://mechmath.ipmnet.ru/lib/?s=phlectures
 
 https://phys.vsu.ru/thp/feed.html
