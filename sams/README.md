@@ -9,12 +9,58 @@ def find_files_in_subfolders(folder_name, file_suffix, subfolder_pattern):
     for root, dirs, files in os.walk(folder_name):
         # Check if the current directory matches the subfolder pattern
         if fnmatch.fnmatch(os.path.basename(root), subfolder_pattern):
-            # Filter files that match the file suffix
             for file in files:
                 if file.endswith(file_suffix):
                     matching_files.append(os.path.join(root, file))
                     
     return matching_files
+
+
+
+import os
+import fnmatch
+
+def find_files(folder_name, file_suffix, subfolder_pattern):
+
+
+  file_list = []
+  for root, _, files in os.walk(folder_name):
+    if fnmatch.fnmatchcase(root, os.path.join(folder_name, subfolder_pattern)):
+      for file in files:
+        if file.endswith(file_suffix):
+          file_list.append(os.path.join(root, file))
+  return file_list
+```
+
+
+### Parse csv 
+```
+import csv
+
+def get_unique_values_first_column(csv_file_name):
+    unique_values = set()
+    
+    with open(csv_file_name, mode='r', newline='') as file:
+        reader = csv.reader(file)
+        next(reader)  # Skip the header line
+        
+        for row in reader:
+            if row:  # Check if the row is not empty
+                unique_values.add(row[0])
+    
+    return list(unique_values)
+
+
+import csv
+
+def get_unique_values(csv_file):
+  unique_values = set()
+  with open(csv_file, 'r') as file:
+    reader = csv.reader(file)
+    next(reader)  # Skip header row
+    for row in reader:
+      unique_values.add(row[0])
+  return list(unique_values)
 ```
 
 ### subprocess.Popen()
