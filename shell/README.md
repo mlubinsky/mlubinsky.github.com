@@ -2,6 +2,22 @@ shellcheck -o all myshellscript.sh  : use shellcheck  to check any shell script
 
 https://news.ycombinator.com/item?id=41031112 	Eza: A modern, maintained replacement for ls 
 
+ task, a Makefile alternative
+
+- hyperfine, a benchmark tool
+
+- vegeta, a load testing tool
+
+- sd, a better, more intuitive sed
+
+There’s also the JSON trinity:
+
+- jq, the well know JSON processor
+
+- jc, convert the output of many CLI tools to JSON
+
+- gron, make JSON greppable
+
 https://www.bitsand.cloud/posts/terminal-tips/
 
 https://zellij.dev/
