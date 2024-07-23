@@ -1,3 +1,22 @@
+### Search in subfolder
+```
+import os
+import fnmatch
+
+def find_files_in_subfolders(folder_name, file_suffix, subfolder_pattern):
+    matching_files = []
+    
+    for root, dirs, files in os.walk(folder_name):
+        # Check if the current directory matches the subfolder pattern
+        if fnmatch.fnmatch(os.path.basename(root), subfolder_pattern):
+            # Filter files that match the file suffix
+            for file in files:
+                if file.endswith(file_suffix):
+                    matching_files.append(os.path.join(root, file))
+                    
+    return matching_files
+```
+
 ### subprocess.Popen()
 https://realpython.com/python-subprocess/
 Gemini
