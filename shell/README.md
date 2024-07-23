@@ -1,6 +1,13 @@
 shellcheck -o all myshellscript.sh  : use shellcheck  to check any shell script
 
-https://news.ycombinator.com/item?id=41031112 	Eza: A modern, maintained replacement for ls 
+in Bash you can also keep the history cleaner by adding ls (or other commands) to the HISTIGNORE env var:
+https://superuser.com/questions/232885/can-you-share-wisdom-on-using-histignore-in-bash
+
+https://news.ycombinator.com/item?id=41031112 	Eza: A modern, maintained replacement for ls and eza
+
+https://www.youtube.com/watch?v=mmqDYw9C30I
+
+https://github.com/johnalanwoods/maintained-modern-unix
 
 -  task, a Makefile alternative
 - hyperfine, a benchmark tool
@@ -9,7 +16,9 @@ https://news.ycombinator.com/item?id=41031112 	Eza: A modern, maintained replace
 - just
 - oha (Load Testing)
 - btop (better top)
--   `rmlint` (find duplicates)
+- `rmlint` (find duplicates)
+- du-dust, gdu
+- viddy, a replacement for watch that includes history
   
 There’s also the JSON trinity:
 
