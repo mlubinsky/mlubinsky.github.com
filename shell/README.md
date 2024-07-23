@@ -4,11 +4,13 @@ https://news.ycombinator.com/item?id=41031112 	Eza: A modern, maintained replace
 
 -  task, a Makefile alternative
 - hyperfine, a benchmark tool
-
 - vegeta, a load testing tool
-
 - sd, a better, more intuitive sed
-
+- just
+- oha (Load Testing)
+- btop (better top)
+-   `rmlint` (find duplicates)
+  
 There’s also the JSON trinity:
 
 - jq, the well know JSON processor
