@@ -2,8 +2,7 @@ shellcheck -o all myshellscript.sh  : use shellcheck  to check any shell script
 
 https://news.ycombinator.com/item?id=41031112 	Eza: A modern, maintained replacement for ls 
 
- task, a Makefile alternative
-
+-  task, a Makefile alternative
 - hyperfine, a benchmark tool
 
 - vegeta, a load testing tool
