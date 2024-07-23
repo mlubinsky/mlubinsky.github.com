@@ -1,5 +1,9 @@
 shellcheck -o all myshellscript.sh  : use shellcheck  to check any shell script
 
+https://news.ycombinator.com/item?id=41031112 	Eza: A modern, maintained replacement for ls 
+
+https://www.bitsand.cloud/posts/terminal-tips/
+
 https://zellij.dev/
 
 https://effective-shell.com/
