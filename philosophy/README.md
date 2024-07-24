@@ -168,6 +168,8 @@ https://azbyka.ru/otechnik/6/
 
 http://nodardjin.narod.ru/
 
+https://perevod.desnitsky.net/
+
 https://www.maimonides-guide.com/
 
 ### Philosophy 
