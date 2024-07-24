@@ -4,6 +4,7 @@ https://jaehyeon.me/blog/2024-03-28-beam-local-dev-1/
 
 
 ### Books
+https://habr.com/ru/companies/T1Holding/articles/830878/
 
 https://leanpub.com/streamprocessingwithapacheflink
 
