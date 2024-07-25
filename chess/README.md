@@ -67,6 +67,8 @@ https://www.youtube.com/watch?v=ZwAk2uDTNoc
 
 ###   Vienna Gambit
 
+https://lichess.org/study/Tu3OrBhm/JiGDaYUC
+
 ```
 1. e4 e5
 2. Nc3 Nf6
