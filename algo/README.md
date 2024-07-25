@@ -1,6 +1,20 @@
 https://the-algorithms.com/
 
-https://photonlines.substack.com/p/algorithms-for-optimization-explained?triedRedirect=true
+https://photonlines.substack.com/p/algorithms-for-optimization-explained 
+
+https://rcoh.me/posts/linear-time-median-finding/
+
+https://news.ycombinator.com/item?id=41066536
+
+https://danlark.org/2020/11/11/miniselect-practical-and-generic-selection-algorithms/
+
+https://www.geeksforgeeks.org/median-of-stream-of-running-integers-using-stl/
+
+https://www.stat.berkeley.edu/~ryantibs/papers/median.pdf
+ 
+
+
+
 
 https://www.youtube.com/watch?v=ugGT4T5HcsI  (rus, 4 hours)
 
