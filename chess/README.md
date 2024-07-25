@@ -1,5 +1,15 @@
 https://chessbook.com/  build your chess repertour
 
+
+- Improve Your Chess Pattern Recognition by IM Arthur van de Oudeweetering
+- How to Reassess Your Chess 4th Edition by IM Jeremy Silman 
+- Mastering Chess Strategy by GM Johan Hellsten (also available on Chessable) 
+- Mastering Positional Sacrifices by IM Merijn van Delft 
+- The Positional Chess Handbook by FM Israel Gelfer 
+- Practical Chess Exercises by Ray Cheng 
+- IM Jeremy Silman’s Reassess Your Chess Workbook 
+- Techniques of Positional Play by Valeri Bronznik and IM Anatoli Terekhin .
+
 Ian Tsybulkin:
 
 https://iantsybulkin.medium.com/clustering-openings-of-chess-games-7fe0e36a6fae
