@@ -1,5 +1,8 @@
 https://the-algorithms.com/
 
+compressing algos in python:
+https://habr.com/ru/companies/kts/articles/831440/
+
 https://photonlines.substack.com/p/algorithms-for-optimization-explained 
 
 https://rcoh.me/posts/linear-time-median-finding/
