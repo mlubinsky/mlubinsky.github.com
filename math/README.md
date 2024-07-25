@@ -173,6 +173,8 @@ https://www.youtube.com/watch?v=2G3PmEZI6n8&list=PLGmu4KtWiH6-F2JlLVvCTsMR91I4ix
 
 ### Linear Algebra
 
+https://drive.google.com/file/d/1nJVwdQV9zp-Q9VQenZF0-HOOG6L2lEOD/view  Linear Algebra for DataScience
+
 3Blue1Brown Linear Angebra (ru)
 https://www.youtube.com/playlist?list=PLVjLpKXnAGLXPaS7FRBjd5yZeXwJxZil2
 
