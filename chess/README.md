@@ -46,6 +46,18 @@ https://www.youtube.com/watch?v=fY3Ap3SJe80
 
 https://www.youtube.com/watch?v=LZQKIm2jIy8
 
+###   Vienna Gambit
+
+```
+1. e4 e5
+2. Nc3 Nf6
+3. f4  ef? (4. e5 Kg8 5. Kf3)
+        
+```
+https://www.youtube.com/watch?v=PTqapRG9cYI
+
+https://www.youtube.com/watch?v=-yRhn48blBc
+
 ### Scotch Gambit / гамбит Геринга / Шотландский гамбит
 
 https://www.youtube.com/watch?v=-MPQYtrGpR0
@@ -97,6 +109,9 @@ https://www.youtube.com/watch?v=d_hRppobNMU
 3    ... Cc5 or Kf6 ?
 4. d4 
 ```
+
+https://www.youtube.com/watch?v=O3fo30G38OE
+
 https://www.youtube.com/watch?v=foniOh5Mjv4
 
 https://www.youtube.com/watch?v=3Lr0OuCVS3M
@@ -239,13 +254,7 @@ https://en.wikipedia.org/wiki/Budapest_Gambit
 
 https://www.youtube.com/watch?v=o5isuh2DH1g
 
-###   Vienna Gambit
-```
-1. e4 e5
-2. Nc3 Nf6
-3. f4
-```
-https://www.youtube.com/watch?v=-yRhn48blBc
+
 
 ### Openings
 
