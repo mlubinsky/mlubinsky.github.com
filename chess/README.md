@@ -1,5 +1,6 @@
 https://chessbook.com/  build your chess repertour
 
+https://stepchess.ru/course/60/task/1043/puzzle/5654
 
 - Improve Your Chess Pattern Recognition by IM Arthur van de Oudeweetering
 - How to Reassess Your Chess 4th Edition by IM Jeremy Silman 
