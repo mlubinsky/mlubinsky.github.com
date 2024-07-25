@@ -42,6 +42,10 @@ https://www.youtube.com/watch?v=y4e2QKDPKgQ
 
 ### ВЕНСКАЯ ПАРТИЯ
 
+https://chess-boom.online/venskaya-partiya/
+
+https://chessmatenok.ru/venskaya-partiya/
+
 ```
 1. e2-e4 e7-e5
 2. Kb1-c3 ...
