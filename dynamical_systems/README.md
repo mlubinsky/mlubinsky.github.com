@@ -1,3 +1,5 @@
+https://habr.com/ru/articles/546540/
+
 https://www.complexityexplorer.org/
 
 https://arxiv.org/abs/2312.16815 Emergence and Causality in Complex Systems
