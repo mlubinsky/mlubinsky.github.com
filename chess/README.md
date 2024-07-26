@@ -89,6 +89,11 @@ https://en.wikipedia.org/wiki/Scotch_Game#Scotch_Gambit
 https://www.youtube.com/watch?v=KH-wT0l_Csk
 
 
+### Black against d4
+
+https://www.youtube.com/watch?v=mueefX3rgtg
+
+
 ### Гамбит  Инглунда-Чарлика for black
 
 https://en.wikipedia.org/wiki/Englund_Gambit
