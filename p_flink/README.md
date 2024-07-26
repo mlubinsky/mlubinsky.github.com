@@ -1,3 +1,10 @@
+### Введение в Apache Flink:
+
+https://habr.com/ru/companies/T1Holding/articles/830878/
+
+https://habr.com/ru/companies/T1Holding/articles/830886/
+
+
 ### Apache Beam
 
 https://jaehyeon.me/blog/2024-03-28-beam-local-dev-1/
@@ -20,7 +27,7 @@ https://www.kdnuggets.com/how-to-digest-15-billion-logs-per-day-and-keep-big-que
 https://habr.com/ru/companies/ru_mts/articles/772898/
 
 How to Digest 15 Billion Logs Per Day and Keep Big Queries Within 1 Second
-
+--------------------------------------------------------------------------
 
 https://www.youtube.com/@flinkforward
 
