@@ -1,5 +1,7 @@
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
+https://huyenchip.com/ml-interviews-book/
+
 https://arxiv.org/pdf/2207.10185.pdf Modern Stat Learning Book
 
 https://habr.com/ru/articles/814343/  What is Kernel
