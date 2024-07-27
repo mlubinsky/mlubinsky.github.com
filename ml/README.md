@@ -10,6 +10,8 @@ https://arxiv.org/pdf/2207.10185.pdf Modern Stat Learning Book
 
 https://habr.com/ru/articles/814343/  What is Kernel
 
+ML with tabular data: https://news.ycombinator.com/item?id=41072616
+
 https://habr.com/ru/articles/829336/  Bootstrap
 
 https://github.com/owainlewis/awesome-artificial-intelligence
