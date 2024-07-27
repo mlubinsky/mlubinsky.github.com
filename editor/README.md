@@ -546,6 +546,9 @@ https://neps.academy/blog/how-to-install-and-configure-python-and-vscode
 <https://habr.com/ru/post/469707/>
 
 ### Visual Studio Code + Java
+
+https://code.visualstudio.com/docs/java/java-tutorial
+
 <https://flaviocopes.com/vscode/>
 
 <https://www.youtube.com/watch?v=sVDizUZesZk>
