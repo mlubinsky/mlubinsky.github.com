@@ -1,5 +1,7 @@
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
+http://neuralnetworksanddeeplearning.com/
+
 https://huyenchip.com/ml-interviews-book/
 
 https://arxiv.org/abs/2201.00650  Deep Learning Interviews: Hundreds of fully solved job interview questions from a wide range of key topics in AI
