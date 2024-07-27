@@ -2,6 +2,8 @@ https://physicsbaseddeeplearning.org/intro.html . BOOK
 
 https://huyenchip.com/ml-interviews-book/
 
+https://arxiv.org/abs/2201.00650  Deep Learning Interviews: Hundreds of fully solved job interview questions from a wide range of key topics in AI
+
 https://arxiv.org/pdf/2207.10185.pdf Modern Stat Learning Book
 
 https://habr.com/ru/articles/814343/  What is Kernel
