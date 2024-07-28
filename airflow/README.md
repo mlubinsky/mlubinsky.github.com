@@ -1,5 +1,7 @@
 https://habr.com/ru/articles/811807/
 
+https://cloud.google.com/blog/products/data-analytics/airflow-dag-and-task-concurrency-in-cloud-composer/
+
 https://habr.com/ru/companies/ozonbank/articles/805011/ Мониторинг Apache Airflow. Оценка «прожорливости» тасок
 
 https://asrathore08.medium.com/airflow-interview-questions-iv-cef5100d44c5 
