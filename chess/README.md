@@ -1,5 +1,9 @@
 https://chessbook.com/  build your chess repertour
 
+https://www.jimmyrustles.com/chessopeningtheory/
+
+https://github.com/sgriffin53/openingexplorer_app
+
 https://stepchess.ru/course/60/task/1043/puzzle/5654
 
 - Improve Your Chess Pattern Recognition by IM Arthur van de Oudeweetering
