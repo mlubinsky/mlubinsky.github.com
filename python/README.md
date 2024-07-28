@@ -4,7 +4,9 @@ https://powerfulpython.com/ Vantive99!
 Good book to read: 
 cosmic_python https://www.cosmicpython.com/book/preface.html
 
-https://alessandromolina.substack.com/p/python-data-engineering-july-2024?subscribe_prompt=free
+https://alessandromolina.substack.com/p/python-data-engineering-july-2024
+
+https://github.com/igrek51/wat python object inspector
 
 https://habr.com/ru/articles/782266/   many good interview questions
 
