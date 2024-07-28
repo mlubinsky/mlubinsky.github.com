@@ -16,6 +16,13 @@
 
  https://archive.org/details/texts
 
+### Notes apps
+
+https://apps.apple.com/us/app/notability-notes-pdf/id360593530  Notabolity
+
+ https://github.com/notable/notable Notable
+ 
+
 ### The most counterintuitive facts in all of mathematics, computer science, and physics
 
 https://axisofordinary.substack.com/p/the-most-counterintuitive-facts-in
