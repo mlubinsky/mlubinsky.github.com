@@ -1,3 +1,5 @@
+https://mattblackwell.github.io/gov2002-book/
+
 https://habr.com/ru/companies/kuper/articles/827448/  Cтатистические критерии для начинающих
 
 ### DAU, CLV, etc
