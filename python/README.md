@@ -4,9 +4,11 @@ https://powerfulpython.com/ Vantive99!
 Good book to read: 
 cosmic_python https://www.cosmicpython.com/book/preface.html
 
+https://alessandromolina.substack.com/p/python-data-engineering-july-2024?subscribe_prompt=free
+
 https://habr.com/ru/articles/782266/   many good interview questions
 
-python -m py_compile yourfile.py   # chech what code is valid
+python -m py_compile yourfile.py   # check what python code is valid
 
 Serialization /desiarizatiom - very good article
 https://realpython.com/python-serialize-data/
