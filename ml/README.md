@@ -4,6 +4,8 @@ http://neuralnetworksanddeeplearning.com/
 
 https://huyenchip.com/ml-interviews-book/
 
+https://www.linkedin.com/groups/961087 Machine Learning Group
+
 https://arxiv.org/abs/2201.00650  Deep Learning Interviews: Hundreds of fully solved job interview questions from a wide range of key topics in AI
 
 https://arxiv.org/pdf/2207.10185.pdf Modern Stat Learning Book
