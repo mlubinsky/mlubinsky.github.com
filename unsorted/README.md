@@ -202,6 +202,8 @@ https://news.ycombinator.com/item?id=26911629
 
 ### YouTube downloaders
 
+https://news.ycombinator.com/item?id=41098974
+
 https://ytdl-org.github.io/youtube-dl/   available via brew install, but it not developing anymore
 
 https://github.com/yt-dlp/yt-dlp  - modern fork of link above
