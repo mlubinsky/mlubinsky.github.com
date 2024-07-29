@@ -8,6 +8,8 @@ https://habr.com/ru/companies/pvs-studio/articles/822911/ arrays and poiner prob
 
 https://habr.com/ru/companies/yandex_praktikum/articles/807387/  lot of cpp links
 
+https://habr.com/ru/articles/831754/  1000 C++ libs
+
 ## Macros
 
 while(0) in macro https://bowero.nl/blog/2020/10/25/defining-c-macros-the-right-way/
