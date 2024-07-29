@@ -1,4 +1,6 @@
 https://the-algorithms.com/
+quick select: 
+https://danlark.org/2020/11/11/miniselect-practical-and-generic-selection-algorithms/
 
 compressing algos in python:
 https://habr.com/ru/companies/kts/articles/831440/
