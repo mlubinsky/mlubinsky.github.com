@@ -11,6 +11,8 @@ https://habr.com/ru/articles/772940/  проверять сразу нескол
 
 https://habr.com/ru/companies/X5Tech/articles/768008/ 
 
+https://news.ycombinator.com/item?id=41099028 A/B test using Python
+
 https://posthog.com/blog/ab-testing-mistakes
 
 https://posthog.com/blog/ab-testing-mistakes
