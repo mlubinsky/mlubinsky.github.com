@@ -1,3 +1,6 @@
+
+Creating parquet in streaming env: https://estuary.dev/memory-efficient-streaming-parquet/
+
 https://habr.com/ru/articles/828984/  Spark Interview questions
 
 https://habr.com/ru/companies/alfa/articles/829622/ Spark optimization guide
