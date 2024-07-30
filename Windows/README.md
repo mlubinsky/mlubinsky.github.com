@@ -20,7 +20,7 @@ This method won't work unless the /P is included.
 ```
 
 ### Example of .bat file
-
+with _not defined_ and _not exists_
 
 
 ```
