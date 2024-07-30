@@ -1,5 +1,10 @@
 https://github.com/dot-agent/nextpy
 
+### FastHTML
+https://fastht.ml/
+https://news.ycombinator.com/item?id=41104305
+
+
 https://reflex.dev/
 
 niceGUI
