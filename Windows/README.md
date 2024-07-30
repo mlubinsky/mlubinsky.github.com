@@ -1,6 +1,45 @@
 
 echo %errorlevel%
 
+
+### Example of .bat file
+```
+@ECHO OFF
+
+::: The below line assigns the Directory path your Program is in to the variable
+::: for later use
+
+Set Program_DIR=%~dp0
+
+::: This creates the Directory for your User files
+
+IF NOT EXIST "%Program_DIR%\Users" MD "%Program_DIR%\Users"
+
+:login
+cls
+ECHO Welcome!
+Set /p name=[Enter your Username to continue:]
+
+IF not defined name GOTO login
+IF Exist "%Program_DIR%\Users\%name%.bat" (
+CALL "%Program_DIR%\Users\%name%.bat"
+    ) else (
+    GOTO New_User
+)
+
+:programMENU
+
+::: Your program
+
+:New_User
+
+::: Save the users Name, and Assign the file to Variable to CALL when you wish to
+::: store/Retrieve.
+
+ECHO 0>"%Program_DIR%\Users\%name%.bat"
+Set "LoadSave=%Program_DIR%\Users\%name%.bat"
+```
+
 ### Power Toys
 Color picker:
 
