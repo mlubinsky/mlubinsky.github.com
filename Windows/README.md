@@ -3,17 +3,20 @@ echo %errorlevel%
 
 ### SET /P
 ```
-The /P switch allows you to set the value of a variable to a line of input entered by the user. Displays the specified promptString before reading the line of input. The promptString can be empty.
+The /P switch allows you to set the value of a variable to a line of input entered by the user.
+Displays the specified promptString before reading the line of input. The promptString can be empty.
 
 Usage case 1:
 
 SET /P variable=
-When batch file reaches this point (when left blank) it will halt and wait for user input. Input then becomes variable.
+When batch file reaches this point (when left blank) it will halt and wait for user input.
+Input then becomes variable.
 
 Usage case 2:
 
 SET /P variable=<%temp%\filename.txt
-Will set variable to contents (the first line) of the txt file. This method won't work unless the /P is included.
+Will set variable to contents (the first line) of the txt file.
+This method won't work unless the /P is included.
 ```
 
 ### Example of .bat file
