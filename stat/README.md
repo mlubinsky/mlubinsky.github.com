@@ -2,8 +2,13 @@ https://mattblackwell.github.io/gov2002-book/
 
 https://habr.com/ru/companies/kuper/articles/827448/  Cтатистические критерии для начинающих
 
-Casual inference book: 
+### Casual inference 
+book: 
 https://matheusfacure.github.io/python-causality-handbook/landing-page.html
+
+pycausalimpact: https://pypi.org/project/pycausalimpact/
+
+https://habr.com/ru/articles/832466/
 
 ### DAU, CLV, etc
 https://habr.com/ru/companies/otus/articles/823490/
