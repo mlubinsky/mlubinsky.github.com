@@ -18,9 +18,13 @@
 
 ### Notes apps
 
-https://apps.apple.com/us/app/notability-notes-pdf/id360593530  Notabolity
+https://apps.apple.com/us/app/notability-notes-pdf/id360593530  Notability
 
  https://github.com/notable/notable Notable
+
+ https://www.stempad.io/ Online Scientific Writing
+
+ https://news.ycombinator.com/item?id=41096613 Online Scientific Writing
  
 
 ### The most counterintuitive facts in all of mathematics, computer science, and physics
