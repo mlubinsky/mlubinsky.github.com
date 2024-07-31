@@ -1,3 +1,56 @@
+### Delete folders
+
+Recursively deletes a folder and its contents, and then removes empty parent folders.
+
+Args:   folder_name (str): The name of the folder to delete.
+ 
+
+```
+import os
+import shutil
+
+def delete_folder(folder_path):
+    # Remove the folder and all its contents
+    if os.path.exists(folder_path):
+        shutil.rmtree(folder_path)
+    
+    # Move up the directory hierarchy, deleting empty directories
+    parent_path = os.path.dirname(folder_path)
+    while parent_path:
+        try:
+            os.rmdir(parent_path)  # Remove the directory if empty
+        except OSError:
+            break  # Stop if the directory is not empty or an error occurs
+        parent_path = os.path.dirname(parent_path)
+```
+Gemini
+```
+import os
+import shutil
+
+def delete_folder(folder_name):
+
+    full_path = os.path.abspath(folder_name)
+
+    try:
+        # Remove the specified folder and its contents
+        shutil.rmtree(full_path)
+
+        # Check if the parent folder is empty
+        parent_folder = os.path.dirname(full_path)
+        while os.path.exists(parent_folder) and not os.listdir(parent_folder):
+            os.rmdir(parent_folder)
+            parent_folder = os.path.dirname(parent_folder)
+
+    except OSError as e:
+        print(f"Error deleting folder: {e}")
+
+if __name__ == "__main__":
+    folder_to_delete = "path/to/your/folder"  # Replace with the actual folder path
+    delete_folder(folder_to_delete)
+```
+
+
 ### Search in subfolder
 ```
 import os
