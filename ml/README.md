@@ -1,3 +1,5 @@
+https://parlance-labs.com/education/
+
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
 http://neuralnetworksanddeeplearning.com/
