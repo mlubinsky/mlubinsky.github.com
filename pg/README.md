@@ -160,6 +160,8 @@ https://news.ycombinator.com/item?id=40417347
 
 https://tembo.io/blog/tembo-data-warehouse
 
+https://blog.sequinstream.com/build-your-own-sqs-or-kafka-with-postgres/
+
 ### Foreign data wrappers FDW
 
 https://habr.com/ru/companies/otus/articles/817063/ Интеграция PostgreSQL и Hadoop
@@ -431,6 +433,8 @@ DATE($__timeTo())
 
 
 ### Postgres queue
+
+https://blog.sequinstream.com/build-your-own-sqs-or-kafka-with-postgres/
 
 https://habr.com/ru/articles/763188/
 
