@@ -13,6 +13,9 @@ https://habr.com/ru/articles/831754/  1000 C++ libs
 comparing hash implementations
 https://jacksonallan.github.io/c_cpp_hash_tables_benchmark/
 
+good C++ codebase
+https://www.reddit.com/r/cpp/comments/1ef0yna/looking_for_examples_of_good_idiomatic_codelibs/
+
 ## Macros
 
 while(0) in macro https://bowero.nl/blog/2020/10/25/defining-c-macros-the-right-way/
