@@ -2,7 +2,9 @@ Pyotr is a Python library for serving and consuming REST APIs based on OpenAPI s
 
 https://pyotr.readthedocs.io/en/latest/
 
-https://testdriven.io/blog/flask-htmx-tailwind/
+https://testdriven.io/blog/flask-htmx-tailwind/  HTMX
+
+https://habr.com/ru/articles/833446/  Big Flask Project
 
 <https://www.youtube.com/watch?v=TG8xZV5YCI4>
 
