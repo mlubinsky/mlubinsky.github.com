@@ -1,3 +1,9 @@
+```
+for interactive queries, do not store Parquet in S3.
+S3 is high-throughput but also high-latency storage. It's good for bulk reads, but not random reads, and querying Parquet involves random reads. Parquet on S3 is ok for batch jobs (like Spark jobs) but it's very slow for interactive queries (Presto, Athena, DuckDB).
+
+The solution is to store Parquet on low-latency storage. S3 has something called S3 Express Zones (which is low-latency S3, costs slightly more). Or EBS, which is block storage that doesn't suffer from S3's high latency.
+```
 
 Creating parquet in streaming env: https://estuary.dev/memory-efficient-streaming-parquet/
 
