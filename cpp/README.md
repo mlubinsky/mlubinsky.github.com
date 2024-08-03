@@ -10,6 +10,9 @@ https://habr.com/ru/companies/yandex_praktikum/articles/807387/  lot of cpp link
 
 https://habr.com/ru/articles/831754/  1000 C++ libs
 
+comparing hash implementations
+https://jacksonallan.github.io/c_cpp_hash_tables_benchmark/
+
 ## Macros
 
 while(0) in macro https://bowero.nl/blog/2020/10/25/defining-c-macros-the-right-way/
