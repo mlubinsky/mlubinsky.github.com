@@ -1050,9 +1050,11 @@ https://habr.com/ru/companies/ruvds/articles/757336/ cProfile  / profile
 
 https://realpython.com/python-profiling/
 
-### Fast python
+### Fast python, multiprocessing
 
 https://habr.com/ru/articles/803607/  multiprocessing
+
+https://habr.com/ru/companies/sberbank/articles/829098/
 
 https://habr.com/ru/articles/804799/
 
