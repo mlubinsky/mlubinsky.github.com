@@ -5,6 +5,9 @@ S3 is high-throughput but also high-latency storage. It's good for bulk reads, b
 The solution is to store Parquet on low-latency storage. S3 has something called S3 Express Zones (which is low-latency S3, costs slightly more). Or EBS, which is block storage that doesn't suffer from S3's high latency.
 ```
 
+ASOF JOIN https://docs.snowflake.com/en/sql-reference/constructs/asof-join
+
+
 Creating parquet in streaming env: https://estuary.dev/memory-efficient-streaming-parquet/
 
 https://habr.com/ru/articles/828984/  Spark Interview questions
