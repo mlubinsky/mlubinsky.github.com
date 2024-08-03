@@ -548,8 +548,11 @@ https://datahubproject.io/ - instead Amundsen
 
 greatexpectations.io
 
+### Iceberg
+
  https://iceberg.apache.org/
 
+https://www.infoworld.com/article/3479001/why-apache-iceberg-is-on-fire-right-now.html
 
 
 ### DBT
