@@ -1,5 +1,8 @@
 https://piotrminkowski.com/2022/01/05/useful-unknown-java-features/
 
+Modern Java in Action
+https://www.youtube.com/watch?v=miUbs3mqPJE
+
 https://habr.com/ru/articles/806027/  Java for interview
  
  http://whichjdk.com/
