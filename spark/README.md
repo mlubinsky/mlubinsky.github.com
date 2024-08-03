@@ -11,6 +11,8 @@ https://www.youtube.com/playlist?list=PLL7QpTxsA4se-mAKKoVOs3VcaP71X_LA-  Stream
 
 https://habr.com/ru/articles/806287/ PySpark + Kafka
 
+https://www.youtube.com/watch?v=FdT5o7M35kU  Spark Out Fo Memory Explained
+
 ### Local Spark in Docker
 https://medium.com/programmers-journey/deadsimple-pyspark-docker-spark-cluster-on-your-laptop-9f12e915ecf4
 
