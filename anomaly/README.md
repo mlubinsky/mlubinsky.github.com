@@ -1,5 +1,7 @@
 https://github.com/yzhao062/anomaly-detection-resources
 
+https://www.youtube.com/watch?v=vpzmVj8HdhE Популярные ML-методы для поиска выбросов в данных  
+
 https://habr.com/ru/company/otus/blog/654767/
 
 https://towardsdatascience.com/a-complete-anomaly-detection-algorithm-from-scratch-in-python-step-by-step-guide-4c115e65d54e
