@@ -1,6 +1,26 @@
 I bought this:
 https://www.udemy.com/cart/success/1027511410/
 
+
+### ASOF JOIN
+https://docs.snowflake.com/en/sql-reference/constructs/asof-join
+
+```
+ASOF JOIN
+An ASOF JOIN operation combines rows from two tables based on timestamp values that follow each other, precede each other, or match exactly. For each row in the first (or left) table, the join finds a single row in the second (or right) table that has the closest timestamp value. The qualifying row on the right side is the closest match, which could be equal in time, earlier in time, or later in time, depending on the specified comparison operator.
+
+This topic describes how to use the ASOF JOIN construct in the FROM clause. For a more detailed conceptual explanation of ASOF joins, see Analyzing time-series data.
+
+See also JOIN, which covers the syntax for other standard join types, such as inner and outer joins.
+
+Syntax
+The following FROM clause syntax is specific to ASOF JOIN:
+
+FROM <left_table> ASOF JOIN <right_table>
+  MATCH_CONDITION ( <left_table.timecol> <comparison_operator> <right_table.timecol> )
+  [ ON <table.col> = <table.col> [ AND ... ] | USING ( <column_list> ) ]
+```
+
 ### Storage
 ```
 As data is loaded, Snowflake organizes data into 16MB variable length chunks called micro-partitions.
