@@ -242,6 +242,8 @@ https://news.ycombinator.com/item?id=16500998
 https://blog.chewxy.com/2017/11/02/go-for-data-science/
 
 ### Error Handling
+https://hayageek.com/golang-error-handling-techniques/#google_vignette
+
 https://habr.com/ru/articles/745876/   Обработка ошибок в go в 2023 г
 https://peter.bourgon.org/blog/2019/09/11/programming-with-errors.html
 https://blog.golang.org/go1.13-errors
