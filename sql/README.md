@@ -10,6 +10,11 @@ https://wisser.github.io/Jailer/
 
 https://news.ycombinator.com/item?id=36243926
 
+
+### AsOf Join
+
+https://duckdb.org/docs/guides/sql_features/asof_join.html
+
 ### Query optimizer
 
 https://howqueryengineswork.com/
