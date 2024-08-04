@@ -122,6 +122,20 @@ https://github.com/app-generator/flask-dashboard-dattaable
 
 <https://fastapi.tiangolo.com/>
 
+https://habr.com/ru/companies/amvera/articles/833588/
+
+```
+Сервис WebSim,   сгенерирует для нас фронтенд.
+Подробное описание этого бесплатного сервиса и то, как им пользоваться
+в этой статье: «WebSim AI: Бесплатный ИИ-помощник для быстрой веб-разработки»
+
+Библиотеку CurlFetch2Py, которая будет выполнять основную логику нашего приложения. Подробное описание библиотеки и того какие она проблемы решает - тут:
+«CurlFetch2Py –
+Эффективное преобразование CURL и FETCH команд в структурированные Python объекты»
+
+
+```
+
 <https://habr.com/ru/post/478620/>
 
 <http://www.uvicorn.org/>
