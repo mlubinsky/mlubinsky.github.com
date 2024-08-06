@@ -7,7 +7,44 @@ in this case  batch_file  should call the python script update_status.py.
 
 The final call in this Windows batch file  should be always the script named send_email.py
 The send_email.py should be always called as the last call.
+```
 
+### Solution 1
+```
+@echo off
+REM Run scripts and check for errors using a subroutine
+
+python 1.py
+CALL :checkrun
+
+python 2.py
+CALL :checkrun
+
+python 3.py
+CALL :checkrun
+
+python 4.py
+CALL :checkrun
+
+goto :always_run
+
+:checkrun
+if %errorlevel% neq 0 (
+    python update_status.py
+    goto :end
+)
+exit /b
+
+:always_run
+REM Always run send_email.py at the end
+python send_email.py
+
+:end
+```
+
+
+### Solution 2 - no subroutine
+```
 @echo off
 REM Run 1.py and check errorlevel
 python 1.py
