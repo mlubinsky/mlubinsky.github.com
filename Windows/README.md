@@ -1,7 +1,7 @@
 ```
-I have Windows batch file which calls seceral python scripts (1.py, 2,py, 3.py, 4.py, etc).
+I have Windows batch file which calls several python scripts (1.py, 2,py, 3.py, 4.py, etc).
 The batch file  checks the errorlevel - after calling every of these 3 python scripts.
-In case when errorlevel != 0  after calling any of this python scripts the rest of the scripts from the list (1.py, 2,py, 3.py, 4.py, etc).
+In case when errorlevel != 0  after calling any of these python scripts the rest of the scripts from the list above (1.py, 2,py, 3.py, 4.py, etc)
 should not be called;
 in this case  batch_file  should call the python script update_status.py.
 
