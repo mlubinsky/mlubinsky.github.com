@@ -8,6 +8,45 @@ in this case  batch_file  should call the python script update_status.py.
 The final call in this Windows batch file  should be always the script named send_email.py
 The send_email.py should be always called as the last call.
 ```
+GchatGPT:
+```
+@echo off
+REM Run scripts and check for errors using a subroutine
+
+python 1.py
+CALL :checkrun
+if %errorlevel% neq 0 goto error_handler
+
+python 2.py
+CALL :checkrun
+if %errorlevel% neq 0 goto error_handler
+
+python 3.py
+CALL :checkrun
+if %errorlevel% neq 0 goto error_handler
+
+python 4.py
+CALL :checkrun
+if %errorlevel% neq 0 goto error_handler
+
+goto always_run
+
+:error_handler
+python update_status.py
+
+:always_run
+REM Always run send_email.py at the end
+python send_email.py
+
+:end
+exit /b
+
+:checkrun
+if %errorlevel% neq 0 exit /b 1
+exit /b 0
+```
+
+
 
 ### Solution 0
 
