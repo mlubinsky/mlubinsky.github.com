@@ -10,6 +10,14 @@ The send_email.py should be always called as the last call.
 ```
 
 ### Solution 0
+
+```
+The || goto end part ensures that if the :checkrun subroutine sets an errorlevel
+(due to calling exit /b 1),
+the batch file will immediately jump to the :end label,
+skipping any subsequent script executions.
+```
+
 ```
 @echo off
 REM Run scripts and check for errors using a subroutine
