@@ -9,6 +9,40 @@ The final call in this Windows batch file  should be always the script named sen
 The send_email.py should be always called as the last call.
 ```
 
+### Solution 0
+```
+@echo off
+REM Run scripts and check for errors using a subroutine
+
+python 1.py
+CALL :checkrun || goto end
+
+python 2.py
+CALL :checkrun || goto end
+
+python 3.py
+CALL :checkrun || goto end
+
+python 4.py
+CALL :checkrun || goto end
+
+:always_run
+REM Always run send_email.py at the end
+python send_email.py
+
+:end
+exit /b
+
+:checkrun
+if %errorlevel% neq 0 (
+    python update_status.py
+    exit /b 1
+)
+exit /b 0
+```
+
+
+
 ### Solution 1
 ```
 @echo off
