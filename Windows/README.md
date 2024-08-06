@@ -1,3 +1,32 @@
+```
+@echo off
+
+SET PROGRAM=BEFORE_INDEXING
+python 1_before_indexing.py
+CALL :checkrun %ERRORLEVEL%
+
+SET PROGRAM=INDEXING
+python 2_indexing.py
+CALL :checkrun %ERRORLEVEL%
+SET PROGRAM=AFTER_INDEXING
+
+python 3_after_indexing.py
+CALL :checkrun %ERRORLEVEL%
+
+
+:checkrun
+echo checkrun entered. ERRORLEVEL: %ERRORLEVEL%
+echo param %1
+if %ERRORLEVEL% NEQ 0 (
+python  5_update_folderparser_task_ERROR.py %ERRORLEVEL%
+exit /B %ERRORLEVEL%
+GOTO :EOF
+)
+GOTO :EOF
+```
+
+
+
 
 echo %errorlevel%
 
