@@ -1,6 +1,10 @@
 https://habr.com/ru/articles/824050/
 
-## Sort worksheets:
+### Pandas Datafdame to MS Excel Worksheet (openpyxl)
+https://openpyxl.readthedocs.io/en/stable/pandas.html
+https://stackoverflow.com/questions/36657288/copy-pandas-dataframe-to-excel-using-openpyxl
+
+## Sort worksheets (openpyxl):
 ChatGPT
 ```
 from openpyxl import load_workbook
@@ -79,7 +83,7 @@ for row in sheet.iter_rows(min_row=2, values_only=True):
 workbook.save('updated_data.xlsx')
 ```
 
-### chat gpt submit_job.py
+###  requests.post() ChatGPT submit_job.py
 ```
 import requests
 import json
@@ -105,7 +109,7 @@ if __name__ == "__main__":
 
 ```
 
-### chat gpt  monitor_jobs.py
+### requests.get() ChatGPT  monitor_jobs.py
 ```
 import requests
 import time
@@ -166,7 +170,7 @@ if __name__ == "__main__":
 ```
 
 
-### gemini
+### requests.post() requests.get() gemini
 ```
 import requests
 import time
@@ -215,7 +219,7 @@ if __name__ == "__main__":
     monitor_jobs(job_ids)
 ```
 
-### submit_job.py
+### requests.post() submit_job.py
 ```
 import requests
 
@@ -237,7 +241,7 @@ if __name__ == "__main__":
 
 ```
 
-### check_job_status.py
+### requests.get(url) check_job_status.py
 ```
 import requests
 import time
@@ -281,7 +285,7 @@ if __name__ == "__main__":
 
 ```
 
-### check_job_status_2.py
+### requests.get(url) check_job_status_2.py
 ```
 import requests
 import time
