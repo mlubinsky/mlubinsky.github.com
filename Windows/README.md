@@ -1,3 +1,50 @@
+```
+I have Windows batch file which calls seceral python scripts (1.py, 2,py, 3.py, 4.py, etc).
+The batch file  checks the errorlevel - after calling every of these 3 python scripts.
+In case when errorlevel != 0  after calling any of this python scripts the rest of the scripts from the list (1.py, 2,py, 3.py, 4.py, etc).
+should not be called;
+in this case  batch_file  should call the python script update_status.py.
+
+The final call in this Windows batch file  should be always the script named send_email.py
+The send_email.py should be always called as the last call.
+
+@echo off
+REM Run 1.py and check errorlevel
+python 1.py
+if %errorlevel% neq 0 (
+    python update_status.py
+    goto end
+)
+
+REM Run 2.py and check errorlevel
+python 2.py
+if %errorlevel% neq 0 (
+    python update_status.py
+    goto end
+)
+
+REM Run 3.py and check errorlevel
+python 3.py
+if %errorlevel% neq 0 (
+    python update_status.py
+    goto end
+)
+
+REM Run 4.py and check errorlevel
+python 4.py
+if %errorlevel% neq 0 (
+    python update_status.py
+    goto end
+)
+
+:end
+REM Always run send_email.py at the end
+python send_email.py
+
+```
+
+
+
 ### batch script with termination on error
 ```
 Option 1: Using SETLOCAL EnableDelayedExpansion
