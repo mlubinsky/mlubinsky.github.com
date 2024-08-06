@@ -1,3 +1,96 @@
+### batch script with termination on error
+```
+Option 1: Using SETLOCAL EnableDelayedExpansion
+
+Add SETLOCAL EnableDelayedExpansion at the beginning of your script:
+Code snippet
+@echo off
+SETLOCAL EnableDelayedExpansion
+
+python 1.py
+CALL :checkrun
+
+IF !ERRORLEVEL! NEQ 0 GOTO :final_script
+
+python 2.py
+CALL :checkrun
+
+IF !ERRORLEVEL! NEQ 0 GOTO :final_script
+
+SET PROGRAM=AFTER_INDEXING (This line can be removed if not used)
+
+python 3.py
+CALL :checkrun
+
+IF !ERRORLEVEL! NEQ 0 GOTO :final_script
+
+GOTO :EOF
+
+:checkrun
+echo checkrun entered. ERRORLEVEL: !ERRORLEVEL!
+... (rest of :checkrun code)
+
+:final_script
+python final.py "!ERRORLEVEL!"
+exit /B !ERRORLEVEL!
+
+:EOF
+Use code with caution.
+
+Explanation:
+
+SETLOCAL EnableDelayedExpansion enables delayed expansion throughout the script.
+We added IF !ERRORLEVEL! NEQ 0 GOTO :final_script after each CALL :checkrun.
+This checks the error level and jumps to the :final_script label if non-zero,
+effectively skipping further Python script execution.
+Option 2: Using Subroutines
+
+Create a separate subroutine for script execution:
+Code snippet
+@echo off
+
+:run_script
+SETLOCAL EnableDelayedExpansion
+python %1
+CALL :checkrun
+IF !ERRORLEVEL! NEQ 0 GOTO :final_script
+
+GOTO :EOF
+
+:checkrun
+echo checkrun entered. ERRORLEVEL: !ERRORLEVEL!
+... (rest of :checkrun code)
+
+:final_script
+python final.py "!ERRORLEVEL!"
+exit /B !ERRORLEVEL!
+
+:EOF
+
+:main
+call :run_script 1.py
+call :run_script 2.py
+
+SET PROGRAM=AFTER_INDEXING (This line can be removed if not used)
+
+call :run_script 3.py
+
+GOTO :EOF
+Use code with caution.
+
+Explanation:
+
+We created a subroutine :run_script that takes the script name as an argument.
+Within :run_script, we use the same logic as Option 1 with SETLOCAL
+EnableDelayedExpansion and GOTO :final_script for early termination.
+In the :main section, we call :run_script with each Python script name.
+Both options achieve your goal of stopping after encountering an error while maintaining code readability.
+Choose whichever approach fits your script structure better.
+```
+
+
+
+xxx
 ```
 @echo off
 
