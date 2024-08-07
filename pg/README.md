@@ -10,6 +10,30 @@ https://habr.com/ru/companies/karuna/articles/809305/ pgvector
 
 https://habr.com/ru/companies/postgrespro/articles/819911/ Built-in replanning как способ корректировать огрехи оптимизатора PostgreSQL
 
+https://hakibenita.com/postgresql-get-or-create 
+
+```
+select * from (values \
+('S21', 'SM-G991N'), \
+('S21', 'SM-G996N'), \
+('S22', 'SM-S906U1'), \
+('S22', 'SM-S908U1'), \
+('S23', 'SM-S911N'), \
+('S23', 'SM-S916B'), \
+('S23', 'SM-S711U1'), \
+('S23', 'SM-S916N'), \
+('S23', 'SM-S918U1'), \
+('S23', 'SM-S918N'), \
+('S24', 'SM-S928N'), \
+('S24', 'SM-S921N'), \
+('S24', 'SM-S928B'), \
+('S24', 'SM-S921U1'), \
+('S24', 'SM-S926U1'), \
+('S24', 'SM-S928U1'), \
+('S24', 'SM-S9260') \
+)as t(device, dut_model))
+```
+
 
 ### В PostgreSQL есть следующие виды индексов:
 ```
