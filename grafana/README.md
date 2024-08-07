@@ -1,3 +1,5 @@
+https://community.grafana.com/t/how-to-add-extra-info-in-tooltips-on-grafana-time-series-dashboard-based-on-sql/114297
+
 https://grafana.com/go/webinar/building-advanced-grafana-dashboards/
 
 Wednesday, February 21, 2024 09:30 PST
