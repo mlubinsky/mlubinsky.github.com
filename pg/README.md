@@ -5,7 +5,7 @@ https://habr.com/ru/companies/otus/articles/817187/ Интеграция Postgre
 https://postgres.ai/blog/20220525-common-db-schema-change-mistakes
 
 https://news.ycombinator.com/item?id=40186752
-
+ 
 https://habr.com/ru/companies/karuna/articles/809305/ pgvector
 
 https://habr.com/ru/companies/postgrespro/articles/819911/ Built-in replanning как способ корректировать огрехи оптимизатора PostgreSQL
@@ -512,6 +512,8 @@ EXECUTE command-string [ INTO [STRICT] target ] [ USING expression [, ... ] ];
 https://stackoverflow.com/questions/11740256/refactor-a-pl-pgsql-function-to-return-the-output-of-various-select-queries/11751557#11751557
 
 ### Recursive SQL
+
+https://www.crunchydata.com/blog/six-degrees-of-kevin-bacon-postgres-style
 
 A Different Type of SQL Recursion with PostgreSQL
 
@@ -1354,6 +1356,8 @@ https://sql-info.de/postgresql/postgres-gotchas.html PG gotchas
 https://wiki.postgresql.org/wiki/Don't_Do_This   Do not do it in PG
 
 ## Graph and tree extensions for postgres
+
+https://www.crunchydata.com/blog/six-degrees-of-kevin-bacon-postgres-style
 
 https://hoverbear.org/blog/postgresql-hierarchical-structures/
 
