@@ -143,6 +143,8 @@ MERGE: https://habr.com/ru/companies/otus/articles/792396/
 
 locking https://leontrolski.github.io/pglockpy.html
 
+https://medium.com/redis-with-raphael-de-lio/can-postgres-replace-redis-as-a-cache-f6cba13386dc
+
 ### Postgres extensions:
 
 https://pgt.dev/
