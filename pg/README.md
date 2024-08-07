@@ -1357,6 +1357,8 @@ https://wiki.postgresql.org/wiki/Don't_Do_This   Do not do it in PG
 
 ## Graph and tree extensions for postgres
 
+https://www.sheshbabu.com/posts/graph-retrieval-using-postgres-recursive-ctes/
+
 https://www.crunchydata.com/blog/six-degrees-of-kevin-bacon-postgres-style
 
 https://hoverbear.org/blog/postgresql-hierarchical-structures/
@@ -1420,8 +1422,10 @@ https://pgdash.io/blog/postgres-tips-and-tricks.html?p
 
 
 ## Hierarhy
+https://www.sheshbabu.com/posts/graph-retrieval-using-postgres-recursive-ctes/
 
 <https://towardsdatascience.com/recursive-sql-queries-with-postgresql-87e2a453f1b> Recursive SQL
+
 <https://habr.com/ru/company/tensor/blog/501614/>.  how to manage the hierarhy of objects?
 
 ## Cube
@@ -1455,6 +1459,8 @@ Materialize is a streaming data warehouse. Materialize accepts input data from a
 <https://habr.com/ru/company/tensor/blog/492694/>
 
 <https://towardsdatascience.com/recursive-sql-queries-with-postgresql-87e2a453f1b> Recursive SQL
+
+https://www.sheshbabu.com/posts/graph-retrieval-using-postgres-recursive-ctes/
 
 <https://www.cybertec-postgresql.com/en/blog/>
 
@@ -2031,6 +2037,7 @@ INSERT INTO GEO(b) VALUES( BOX( '(1,2), (10,20)' ));
 INSERT INTO GEO(c) VALUES( CIRCLE('(1,10),20)' ));
 ```
 ## Recursive SQL
+https://www.sheshbabu.com/posts/graph-retrieval-using-postgres-recursive-ctes/
 ```
 WITH RECURSIVE t(n) AS (
   VALUES (1)
