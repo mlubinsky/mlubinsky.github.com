@@ -3,6 +3,23 @@ shellcheck -o all myshellscript.sh  : use shellcheck  to check any shell script
 in Bash you can also keep the history cleaner by adding ls (or other commands) to the HISTIGNORE env var:
 https://superuser.com/questions/232885/can-you-share-wisdom-on-using-histignore-in-bash
 
+https://habr.com/ru/articles/833602/
+```
+[ -e "$file" ] # файл существует
+[ -f "$file" ]  # файл существует и является обычным файлом
+[ -d "$directory" ]  # файл существует и является директорией
+[ -L "$symlink" ]  # файл существует и является символической ссылкой
+[ -r "$file" ]  # файл существует, и он доступен для чтения
+[ -w "$file" ] # для записи
+[ -x "$file" ] # для выполнения, соответственно
+[ -s "$file" ]  # файл существует, и он не пуст
+[ -z "$string" ] # истинно, если строка имеет нулевую длину
+[ -O "$file" ] # истинно, если текущий пользователь является владельцем файла
+[ -G "$file" ] # истинно, если группа текущего пользователя совпадает с группой файла
+[ -N "$file" ] # истинно, если с момента последнего чтения файл был модифицирован, работает не везде
+[ -t 1 ] # истинно, если файл является терминалом
+```
+
 https://news.ycombinator.com/item?id=41031112 	Eza: A modern, maintained replacement for ls and eza
 
 https://github.com/onceupon/Bash-Oneliner
