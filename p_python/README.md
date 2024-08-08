@@ -1,5 +1,7 @@
 https://www.pythonmorsels.com/time-complexities/
 
+https://www.gauge.sh/blog/how-to-visualize-your-python-projects-dependency-graph  Visualize Puthon dependency
+
 https://habr.com/ru/articles/830098/ msgspec. Библиотека для сериализации и десериализации чего угодно
 
 https://habr.com/ru/articles/830158/ Python. Внутреннее устройство множеств set и словарей dict. Часть 2 из 2
