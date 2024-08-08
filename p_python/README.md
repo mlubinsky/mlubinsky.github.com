@@ -2449,11 +2449,22 @@ ndarray_of_numbers = np.array(list_of_numbers)
 ```
 
 ### Others
-Billion rows challange
+
+https://www.reddit.com/r/Python/comments/1egg99j/what_are_some_unusual_but_useful_python_libraries/
+
+### Billion rows challange
 https://levelup.gitconnected.com/python-libraries-take-the-billion-row-challenge-7c108611a9ad
 
-file watcher
+###  file watcher
 https://github.com/samuelcolvin/watchfiles
+
+https://pypi.org/project/watchdog/
+
+### Litestar: ans ASGI web framework batteries included, faster and better than FastApi. It is well designed and supports a layered architecture.
+
+### Sortedcontainers: Sorted datastructures like set and dict, very fast for lookups
+
+### Diskcache: file based cache, very useful for heavy calculations and db results caching
 
 #### Task runners
 
