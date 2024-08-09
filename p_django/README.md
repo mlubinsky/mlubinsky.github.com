@@ -7,6 +7,8 @@ https://news.ycombinator.com/item?id=41104305
 
 https://reflex.dev/
 
+https://flet.dev/docs/
+
 niceGUI
 
 mckinsey’s vizro? I think its built on top of plotly. Considering it as alternative to Tableau. 
