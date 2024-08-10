@@ -1,3 +1,5 @@
+https://habr.com/ru/companies/otus/articles/833462/
+
 https://piotrminkowski.com/2022/01/05/useful-unknown-java-features/
 
 Modern Java in Action
