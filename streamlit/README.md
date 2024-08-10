@@ -4,6 +4,8 @@ https://metaperl.github.io/pure-python-web-development/class-a.html
 
 https://nicegui.io/
 
+https://getludic.dev/
+
 https://news.ycombinator.com/item?id=39566732
 
 https://reflex.dev/blog/2024-03-21-reflex-architecture/
