@@ -1,5 +1,7 @@
 ### DuckDB
 
+https://towardsdatascience.com/my-first-billion-of-rows-in-duckdb-11873e5edbb5
+
 https://www.nikolasgoebel.com/2024/05/28/duckdb-doesnt-need-data.html
 
 DuckDB Book https://www.manning.com/books/duckdb-in-action/
