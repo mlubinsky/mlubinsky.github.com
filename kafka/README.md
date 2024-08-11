@@ -4,6 +4,10 @@ https://github.com/pmoskovi/kafka-learning-resources
 
 https://habr.com/ru/articles/818007/
 
+Building a Real-Time Data Streaming Pipeline for Sentiment analysis using Kafka,Postgres and Streamlit
+
+https://kavitmht.medium.com/building-a-real-time-data-streaming-pipeline-for-sentiment-analysis-using-kafka-postgres-and-4f1c11ba51c9
+
 ### Schema Registry 
 
 https://habr.com/ru/articles/811283/
