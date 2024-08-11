@@ -557,6 +557,8 @@ https://www.infoworld.com/article/3479001/why-apache-iceberg-is-on-fire-right-no
 
 ### DBT
 
+https://blog.det.life/no-data-engineers-dont-need-dbt-30573eafa15e
+
 https://habr.com/ru/articles/821503/
 
 https://medium.com/apache-airflow/how-we-orchestrate-2000-dbt-models-in-apache-airflow-90901504032d
