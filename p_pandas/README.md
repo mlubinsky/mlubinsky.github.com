@@ -34,12 +34,12 @@ https://habr.com/ru/articles/795785/
 https://pypi.org/project/adix/ Data Exploration Made Easy & Colorful 
 
 ## Reading from DB to pandas dataframe
+https://levelup.gitconnected.com/integrating-python-with-sql-for-robust-data-solutions-8f43fedae944
 
 ```
 import pandas as pd
 import psycopg2
 
-# Define the connection parameters
 conn_params = {
     'dbname': 'your-db-name',
     'user': 'user-name',
@@ -48,11 +48,24 @@ conn_params = {
     'port': '5432'
 }
 
-# Establish the connection
 conn = psycopg2.connect(**conn_params)
 
 # Retrieve data into a Pandas DataFrame
 user_posts_df = pd.read_sql('SELECT * FROM user_posts', conn)
+friendships_df = pd.read_sql('SELECT * FROM friendships', conn)
+likes_df = pd.read_sql('SELECT * FROM likes', conn)
+conn.close()
+friendships_clean = friendships_df[['user_name1', 'user_name2']].drop_duplicates()
+friendships_expanded_1 = friendships_clean.rename(columns={'user_name1': 'user_name1', 'user_name2': 'user_name2'})
+friendships_expanded_2 = friendships_clean.rename(columns={'user_name1': 'user_name2', 'user_name2': 'user_name1'})
+friendships_expanded = pd.concat([friendships_expanded_1, friendships_expanded_2]).drop_duplicates()
+...
+...
+likes_posts_joined = likes_df.merge(user_posts_df, left_on='post_id', right_on='post_id', suffixes=('', '_post'))
+likes_posts_joined = likes_posts_joined[['user_name', 'post_id', 'date_liked', 'user_name_post']]
+likes_posts_joined = likes_posts_joined.rename(columns={'user_name_post': 'poster_name'})
+
+
 ```
 
 ### Working with parquet
