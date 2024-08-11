@@ -33,6 +33,28 @@ https://habr.com/ru/articles/795785/
 
 https://pypi.org/project/adix/ Data Exploration Made Easy & Colorful 
 
+## Reading from DB to pandas dataframe
+
+```
+import pandas as pd
+import psycopg2
+
+# Define the connection parameters
+conn_params = {
+    'dbname': 'your-db-name',
+    'user': 'user-name',
+    'password': 'password',
+    'host': 'localhost',
+    'port': '5432'
+}
+
+# Establish the connection
+conn = psycopg2.connect(**conn_params)
+
+# Retrieve data into a Pandas DataFrame
+user_posts_df = pd.read_sql('SELECT * FROM user_posts', conn)
+```
+
 ### Working with parquet
 ```
 import sys
