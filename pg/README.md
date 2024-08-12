@@ -5,12 +5,26 @@ https://habr.com/ru/companies/otus/articles/817187/ Интеграция Postgre
 https://postgres.ai/blog/20220525-common-db-schema-change-mistakes
 
 https://news.ycombinator.com/item?id=40186752
+
+### PgBouncer
 ```
 PgBouncer — это приложение из экосистемы PostgreSQL, которое управляет пулом соединений с базой данных,
 причем для клиента это происходит прозрачно, как будто соединение происходит с самим PostgreSQL-сервером.
 PgBouncer принимает подключения, передает их СУБД-серверу или ставит в очередь,
 когда все соединения в пуле (default_pool_size) заняты.
 При освобождении соединений из пула очередь обрабатывается.
+```
+### PgPool
+```
+Также к СУБД добавили четыре сервера и создали СУБД-кластер из пяти нод. Запросы по нодам распределялись с помощью PGPool — еще одного полезного приложения для PostgreSQL. PgPool был настроен на балансировку нагрузки, причем так, чтобы запросы на запись (INSERT, UPDATE, DELETE) направлялись только на master-ноду. 
+
+# Enabling load balancing for read queries
+load_balance_mode = on
+# Enabling master-slave mode with streaming replication
+master_slave_mode = on
+master_slave_sub_mode = 'stream' 
+
+Были также ограничены входящие запросы на самих PostgreSQL-нодах (max_connections).
 ```
  
 https://habr.com/ru/companies/karuna/articles/809305/ pgvector
