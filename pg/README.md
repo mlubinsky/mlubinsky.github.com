@@ -5,6 +5,13 @@ https://habr.com/ru/companies/otus/articles/817187/ Интеграция Postgre
 https://postgres.ai/blog/20220525-common-db-schema-change-mistakes
 
 https://news.ycombinator.com/item?id=40186752
+```
+PgBouncer — это приложение из экосистемы PostgreSQL, которое управляет пулом соединений с базой данных,
+причем для клиента это происходит прозрачно, как будто соединение происходит с самим PostgreSQL-сервером.
+PgBouncer принимает подключения, передает их СУБД-серверу или ставит в очередь,
+когда все соединения в пуле (default_pool_size) заняты.
+При освобождении соединений из пула очередь обрабатывается.
+```
  
 https://habr.com/ru/companies/karuna/articles/809305/ pgvector
 
