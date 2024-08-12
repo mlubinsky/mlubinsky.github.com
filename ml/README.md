@@ -4,7 +4,7 @@ https://physicsbaseddeeplearning.org/intro.html . BOOK
 
 http://neuralnetworksanddeeplearning.com/
 
-https://course.fast.ai/ Practical ML for coders
+https://course.fast.ai/ Practical Deep Learning for coders
 
 https://huyenchip.com/ml-interviews-book/
 
