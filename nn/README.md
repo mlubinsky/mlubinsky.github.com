@@ -1,5 +1,7 @@
 https://www.sscardapane.it/alice-book
 
+https://course.fast.ai/ Practical ML for coders
+
 https://arxiv.org/pdf/2404.17625
 
 https://vickiboykis.com/what_are_embeddings/
