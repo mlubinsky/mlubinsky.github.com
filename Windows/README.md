@@ -1,4 +1,92 @@
+### CMD
+```
+cmd.exe /?
+Starts a new instance of the Windows command interpreter
+
+CMD [/A | /U] [/Q] [/D] [/E:ON | /E:OFF] [/F:ON | /F:OFF] [/V:ON | /V:OFF]
+    [[/S] [/C | /K] string]
+
+/C      Carries out the command specified by string and then terminates
+/K      Carries out the command specified by string but remains
+/S      Modifies the treatment of string after /C or /K (see below)
+/Q      Turns echo off
+/D      Disable execution of AutoRun commands from registry (see below)
+/A      Causes the output of internal commands to a pipe or file to be ANSI
+/U      Causes the output of internal commands to a pipe or file to be
+        Unicode
+/T:fg   Sets the foreground/background colors (see COLOR /? for more info)
+/E:ON   Enable command extensions (see below)
+/E:OFF  Disable command extensions (see below)
+/F:ON   Enable file and directory name completion characters (see below)
+/F:OFF  Disable file and directory name completion characters (see below)
+/V:ON   Enable delayed environment variable expansion using ! as the
+        delimiter. For example, /V:ON would allow !var! to expand the
+        variable var at execution time.  The var syntax expands variables
+        at input time, which is quite a different thing when inside of a FOR
+        loop.
+/V:OFF  Disable delayed environment expansion.
+
+Note that multiple commands separated by the command separator '&&'
+are accepted for string if surrounded by quotes.  Also, for compatibility
+reasons, /X is the same as /E:ON, /Y is the same as /E:OFF and /R is the
+same as /C.  Any other switches are ignored.
+
+```
+
+
+### START
 start "" /wait cmd.exe /c
+```
+start /?
+Starts a separate window to run a specified program or command.
+
+START ["title"] [/D path] [/I] [/MIN] [/MAX] [/SEPARATE | /SHARED]
+      [/LOW | /NORMAL | /HIGH | /REALTIME | /ABOVENORMAL | /BELOWNORMAL]
+      [/NODE <NUMA node>] [/AFFINITY <hex affinity mask>] [/WAIT] [/B]
+      [command/program] [parameters]
+
+    "title"     Title to display in window title bar.
+    path        Starting directory.
+    B           Start application without creating a new window. The
+                application has ^C handling ignored. Unless the application
+                enables ^C processing, ^Break is the only way to interrupt
+                the application.
+    I           The new environment will be the original environment passed
+                to the cmd.exe and not the current environment.
+    MIN         Start window minimized.
+    MAX         Start window maximized.
+    SEPARATE    Start 16-bit Windows program in separate memory space.
+    SHARED      Start 16-bit Windows program in shared memory space.
+    LOW         Start application in the IDLE priority class.
+    NORMAL      Start application in the NORMAL priority class.
+    HIGH        Start application in the HIGH priority class.
+    REALTIME    Start application in the REALTIME priority class.
+    ABOVENORMAL Start application in the ABOVENORMAL priority class.
+    BELOWNORMAL Start application in the BELOWNORMAL priority class.
+    NODE        Specifies the preferred Non-Uniform Memory Architecture (NUMA)
+                node as a decimal integer.
+    AFFINITY    Specifies the processor affinity mask as a hexadecimal number.
+                The process is restricted to running on these processors.
+
+                The affinity mask is interpreted differently when /AFFINITY and
+                /NODE are combined.  Specify the affinity mask as if the NUMA
+                node's processor mask is right shifted to begin at bit zero.
+                The process is restricted to running on those processors in
+                common between the specified affinity mask and the NUMA node.
+                If no processors are in common, the process is restricted to
+                running on the specified NUMA node.
+    WAIT        Start application and wait for it to terminate.
+    command/program
+                If it is an internal cmd command or a batch file then
+                the command processor is run with the /K switch to cmd.exe.
+                This means that the window will remain after the command
+                has been run.
+
+                If it is not an internal cmd command or batch file then
+                it is a program and will run as either a windowed application
+                or a console application.
+```
+
 
 
 ```
