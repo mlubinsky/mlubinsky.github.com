@@ -1,3 +1,6 @@
+start "" /wait cmd.exe /c
+
+
 ```
 I have Windows batch file which calls several python scripts (1.py, 2,py, 3.py, 4.py, etc).
 The batch file  checks the errorlevel - after calling every of these 3 python scripts.
