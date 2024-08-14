@@ -1,3 +1,5 @@
+ %* in batch file mean all command line arguments
+ 
 ### CMD
 ```
 cmd.exe /?
