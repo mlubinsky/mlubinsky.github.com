@@ -6,6 +6,219 @@ https://postgres.ai/blog/20220525-common-db-schema-change-mistakes
 
 https://news.ycombinator.com/item?id=40186752
 
+https://habr.com/ru/companies/otus/articles/834314/
+
+```
+Фича №1: Массивы и работа с JSON
+***********************************
+Массивы в PostgreSQL позволяют хранить несколько значений одного типа данных в одной ячейке таблицы.
+
+CREATE TABLE products (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    tags TEXT[] -- массив текстовых значений для тегов
+);
+Вставка данных в таблицу с массивами:
+
+INSERT INTO products (name, tags)
+VALUES ('Продукт 1', ARRAY['новинка', 'распродажа']),
+       ('Продукт 2', ARRAY['популярное', 'скидка']);
+Извлечение данных из массива:
+
+-- найти все продукты, содержащие тег 'новинка'
+SELECT * FROM products
+WHERE 'новинка' = ANY(tags);
+JSON предоставляет возможность хранения и манипуляции полуструктурированными данными.
+
+Создание таблицы с JSON:
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    profile JSONB -- бинарное представление JSON
+);
+Вставка JSON-данных:
+
+INSERT INTO users (name, profile)
+VALUES ('Иван Иванов', '{"age": 30, "city": "Москва", "interests": ["футбол", "чтение"]}'),
+       ('Мария Смирнова', '{"age": 25, "city": "Санкт-Петербург", "interests": ["музыка", "путешествия"]}');
+Извлечение данных из JSON:
+
+-- извлечь возраст и город пользователя
+SELECT 
+    name,
+    profile->>'age' AS age,
+    profile->>'city' AS city
+FROM users;
+
+-- Найти пользователей с интересом "музыка"
+SELECT * FROM users
+WHERE 'музыка' = ANY(profile->'interests');
+Где использовать?
+
+Хранение списков предпочтений, например избранные продукты или метки.
+
+Хранение ответов API.
+
+Хранение агрегированных данных, таких как статистика и аналитика, в формате JSON для простоты обработки.
+
+Допустим, есть приложение для соц. сети.
+
+Каждый пользователь имеет профиль, который может включать различные атрибуты: имя, возраст, город и интересы.
+ Используя массивы и JSON в PostgreSQL, можно хранить и извлекать эти данные:
+
+-- создание таблицы
+CREATE TABLE user_profiles (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(100),
+    attributes JSONB,
+    tags TEXT[]
+);
+
+-- вставка данных
+INSERT INTO user_profiles (username, attributes, tags)
+VALUES ('user1', '{"age": 28, "location": "NY", "preferences": {"newsletter": true}}', ARRAY['active', 'premium']),
+       ('user2', '{"age": 34, "location": "LA", "preferences": {"newsletter": false}}', ARRAY['inactive']);
+
+-- запрос для извлечения данных
+SELECT 
+    username,
+    attributes->>'age' AS age,
+    attributes->>'location' AS location
+FROM user_profiles
+WHERE 'active' = ANY(tags);
+
+Фича №2: Расширения
+********************
+
+Одним из самых популярных расширений в PostgreSQL –pg_trgm, который позволяет реализовать полнотекстовый поиск.
+Также стоит отметить PostGIS, который добавляет поддержку географических данных и функций.
+
+Усановка и использование расширения pg_trgm:
+
+-- установка расширения
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+
+-- создание индекса для полнотекстового поиска
+CREATE INDEX trgm_idx ON articles USING gin (content gin_trgm_ops);
+
+-- поиск похожих записей
+SELECT * FROM articles
+WHERE content % 'поиск';
+Предположим, что есть база данных статей или блога, и хочется добавить возможность поиска по содержимому:
+
+-- установка расширения
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+
+-- создание таблицы статей
+CREATE TABLE articles (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255),
+    content TEXT
+);
+
+-- вставка данных
+INSERT INTO articles (title, content)
+VALUES ('Статья 1', 'Это пример текста для полнотекстового поиска.'),
+       ('Статья 2', 'Поиск похожих текстов в базе данных.');
+
+-- создание индекса
+CREATE INDEX content_trgm_idx ON articles USING gin (content gin_trgm_ops);
+
+-- поиск статьи с использованием триграммного поиска
+SELECT * FROM articles
+WHERE content % 'поиск';
+Установка расширения PostGIS:
+
+-- установка PostGIS
+CREATE EXTENSION IF NOT EXISTS postgis;
+
+-- создание таблицы с географическими данными
+CREATE TABLE locations (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    coordinates GEOGRAPHY(POINT)
+);
+
+-- вставка данных
+INSERT INTO locations (name, coordinates)
+VALUES ('Place 1', ST_GeographyFromText('SRID=4326;POINT(-122.4194 37.7749)')),
+       ('Place 2', ST_GeographyFromText('SRID=4326;POINT(-118.2437 34.0522)'));
+Со списком расширений можно ознакомиться здесь.
+
+Фича №3: CTE и рекурсивные запросы
+*************************************
+Общие табличные выражения и рекурсивные запросы в PostgreSQL дают возможность упрощать и организовывать сложные SQL-запросы.
+
+Преимущества:
+
+CTE позволяет разбить сложные запросы на более простые и понятные части.
+
+Возможность создавать временные результирующие наборы данных, которые могут использоваться в основном запросе.
+
+Позволяет сократить повторяющийся код и улучшить производительность за счет разбивки операций на подзапросы.
+
+Пример использования CTE для разбиения сложных запросов:
+
+WITH top_products AS (
+    SELECT id, name, sales
+    FROM products
+    WHERE sales > 1000
+),
+top_customers AS (
+    SELECT id, name, purchases
+    FROM customers
+    WHERE purchases > 500
+)
+SELECT tp.name AS product_name, tc.name AS customer_name
+FROM top_products tp
+JOIN top_customers tc ON tp.id = tc.id;
+Рекурсивные запросы позволяют работать с иерархическими структурами, например такими, как категории продуктов или организационная структура.
+
+Рекурсивный запрос для создания иерархии категорий:
+
+WITH RECURSIVE category_hierarchy AS (
+    SELECT id, name, parent_id
+    FROM categories
+    WHERE parent_id IS NULL
+    UNION ALL
+
+
+    SELECT c.id, c.name, c.parent_id
+    FROM categories c
+    INNER JOIN category_hierarchy ch ON c.parent_id = ch.id
+)
+SELECT * FROM category_hierarchy;
+Рассмотрим пример создания иерархической структуры для компании, где каждый сотрудник может иметь подчиненных:
+
+-- создание таблицы сотрудников
+CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    manager_id INT REFERENCES employees(id)
+);
+
+-- вставка данных
+INSERT INTO employees (name, manager_id)
+VALUES ('CEO', NULL),
+       ('Manager 1', 1),
+       ('Manager 2', 1),
+       ('Employee 1', 2),
+       ('Employee 2', 2),
+       ('Employee 3', 3);
+
+-- рекурсивный запрос для иерархии сотрудников
+WITH RECURSIVE employee_hierarchy AS (
+    SELECT id, name, manager_id
+    FROM employees
+    WHERE manager_id IS NULL
+    UNION ALL
+    SELECT e.id, e.name, e.manager_id
+    FROM employees e
+    INNER JOIN employee_hierarchy eh ON e.manager_id = eh.id
+)
+SELECT * FROM employee_hierarchy;
+```
 ### PgBouncer
 ```
 PgBouncer — это приложение из экосистемы PostgreSQL, которое управляет пулом соединений с базой данных,
