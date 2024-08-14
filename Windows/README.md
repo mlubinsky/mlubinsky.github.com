@@ -36,6 +36,7 @@ same as /C.  Any other switches are ignored.
 
 ### START
 start "" /wait cmd.exe /c
+start "" /wait cmd.exe /c runD_local.bat %*
 ```
 start /?
 Starts a separate window to run a specified program or command.
