@@ -1684,7 +1684,25 @@ https://www.youtube.com/watch?v=PJvpseiPACQ
 
 https://www.youtube.com/watch?v=_Ne27JcLnEc
 
+### Logical vs Physical Plan
+```
+park Internals have 4 kinds of Query Plans. Lets discuss about them in detail below:
 
+Parsed Logical Plan (Unresolved): This plan parses the query to check the correctness of the query syntax. It will throw a ParseException if there are any syntax errors.
+Why is this plan unresolved?
+Parsed logical plan only checks for the correctness of syntax and cannot identify if the entities like table name / column name used in the query exists or not. Therefore, it is unresolved.
+Analyzed Logical plan (Resolved): This plan analyses if all the entities like table names, column names, views, etc. used in the query exists or not. It will throw an AnalysisException if for instance a table with the name mentioned in the query doesn’t exist. After checking for the syntax correctness in the Parsed Logical Plan, the system then checks for any analysis exception by cross-checking with the Catalog leading to a Resolved Logical Plan. Hence this is a resolved plan.
+Optimized Logical Plan (Catalyst Optimizer): In this plan certain sets of predefined rules by the help of catalyst optimizer are used to optimize the query execution plan at the early stages.
+Example:
+a) Predicate Pushdown : In this case the filters are pushed down or applied at the very early stages. This ensures that operations are performed on only relevant data.
+b) Combining multiple projections (select columns) into a single projection.
+c) Combining multiple filters into a single operation.
+Physical Plan: This plan is used to identify / decide what kind of joins or aggregations strategies can be chosen for optimal query performance.
+Example :
+a) Whether to use Hash Aggregate or Sort Aggregate
+b) Which type of Join to be used — Broadcast Hash Join | Sort-Merge Join | Shuffle-Hash Join.
+
+```
 ### Cost and rule based optimizer
 
 https://habr.com/ru/company/neoflex/blog/417103/
