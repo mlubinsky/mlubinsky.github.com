@@ -1373,7 +1373,9 @@ spark.sql("""select t.*,
 
 YARN app master
 
-https://www.youtube.com/watch?v=sHqzmqppKXE&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg&index=5  EXECUTOR Tuning
+##  EXECUTOR Tuning
+
+https://www.youtube.com/watch?v=sHqzmqppKXE&list=PLtfmIPhU2DkNjQjL08kR3cd4kUzWqS0vg&index=5 
 
 
 #### Approach 1 - one executor per CORE is NOT good because
