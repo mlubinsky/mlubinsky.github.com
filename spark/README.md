@@ -1,3 +1,5 @@
+https://towardsdev.com/query-plans-in-spark-internals-performance-tuning-8393b6eb0972
+
 ### Architecture
 ```
 Components of Spark Architecture
