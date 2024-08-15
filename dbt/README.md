@@ -131,6 +131,9 @@ Note
 
 The Delta Live Tables distinction between live tables and streaming live tables is not enforced from the table perspective.
 
+Delta tables ensure that all data operations (insert, update, delete) adhere to ACID principles —
+atomicity, consistency, isolation, and durability.
+
 
 __Unmanaged__ tables will always specify a LOCATION during table creation;
  you can either register an existing directory of data files as a table or
