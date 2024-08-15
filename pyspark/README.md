@@ -592,6 +592,39 @@ df.select(df.name,map_keys(df.properties)).show()
 # Get only values:
 from pyspark.sql.functions import map_values
 df.select(df.name,map_values(df.properties)).show()
+
+
+data = [(1, "John",  ["shirt", "shoes", None]),
+        (2, "Alice", ["book", None])]
+df = spark.createDataFrame(data, ["id", "name", "purchases"])
+# Explode the "purchases" array
+df_exploded = df.select(df.id, df.name, explode(df.purchases))
+# Output
+df_exploded.show()
++---+-------+----------+
+| id| name  | purchases|
++---+-------+----------+
+| 1 | John  | shirt    |
+| 1 | John  | shoes    |
+| 1 | John  | null     |
+| 2 | Alice | book     |
+| 2 | Alice | null     |
++---+-------+----------+
+
+While PySpark explode() caters to all array elements, PySpark explode_outer() specifically focuses on non-null values. It ignores empty arrays and null elements within arrays, resulting in a potentially smaller dataset.
+
+from pyspark.sql.functions import explode_outer
+# Using explode_outer
+df_exploded_outer = df.select(df.id, df.name, explode_outer(df.purchases))
+# Output
+df_exploded_outer.show()
++---+-------+----------+
+| id| name  | purchases|
++---+-------+----------+
+| 1 | John  | shirt    |
+| 1 | John  | shoes    |
+| 2 | Alice | book     |
++---+-------+----------+
 ```
 
 ### JSON schema
