@@ -1,3 +1,5 @@
+https://medium.com/@lenonrodrigues/a-detailed-comparison-between-spark-structured-streaming-and-apache-flink-comparison-of-features-10ae6ce8aaaa
+
 ### Введение в Apache Flink:
 
 https://habr.com/ru/companies/T1Holding/articles/830878/
