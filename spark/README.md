@@ -1,5 +1,5 @@
 https://towardsdev.com/query-plans-in-spark-internals-performance-tuning-8393b6eb0972
-
+https://blog.det.life/memory-management-in-apache-spark-f6a3499c55e2
 ### Architecture
 ```
 Components of Spark Architecture
