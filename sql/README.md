@@ -73,6 +73,21 @@ FROM (
 WHERE rnk=1;
 ```
 
+### Filtering with not exists and noit in
+```
+SELECT s.name FROM students s
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM courses c
+    WHERE c.student_id = s.student_id
+
+SELECT name FROM students
+WHERE student_id NOT IN (
+    SELECT student_id
+    FROM courses
+);
+```
+
 ###   Interview questions
 
 
