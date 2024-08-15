@@ -1,3 +1,80 @@
+### Architecture
+```
+Components of Spark Architecture
+1. Driver Program:
+-----------------
+The driver program is the central piece of a Spark application. It runs the main function and is responsible for creating the Spark context, submitting jobs, and coordinating work across the cluster.
+It converts user code into a directed acyclic graph (DAG) of tasks and orchestrates their execution.
+2. Cluster Manager:
+---------------------
+The cluster manager handles the allocation of resources and scheduling of jobs across a Spark cluster.
+Spark supports several cluster managers, including Apache Mesos, Hadoop YARN, and Spark’s built-in standalone cluster manager.
+3. Executors:
+-------------------
+Executors are worker processes launched on each node of the cluster. They are responsible for executing the tasks and caching the data in memory.
+Executors communicate with the driver program and report the status and results of task execution.
+4. Tasks:
+--------------
+Tasks are the smallest unit of work in Spark. Each task represents a computation or transformation to be applied to a partition of data.
+Tasks are distributed across executors by the driver program, allowing for parallel processing.
+
+
+Spark Execution Workflow
+******************************
+When a Spark job is executed, the following steps occur:
+
+1. Job Submission:
+The driver program initiates the Spark context and submits a Spark job to the cluster manager.
+2. DAG Creation:
+-----------------
+The Spark driver converts the user code into a directed acyclic graph (DAG) of operations. This DAG represents the sequence of transformations and actions to be applied to the data.
+3. Stage Division:
+-----------------
+The DAG is divided into stages based on data dependencies. Each stage consists of tasks that can be executed concurrently without shuffling data.
+4. Task Scheduling:
+---------------------
+The driver program schedules tasks for each stage and distributes them across the executors. The cluster manager allocates resources and assigns executors to the driver program.
+5. Task Execution:
+---------------------
+Executors execute the tasks assigned to them and perform the necessary transformations and actions on the data partitions.
+6. Result Collection:
+----------------------
+Executors return the results of the task execution to the driver program. The driver aggregates the results and performs any final operations, such as writing output to a file.
+What Happens When You Execute a Script in PySpark
+
+
+When you execute a script in PySpark, the following sequence of events occurs:
+***********************************************************************************
+1. Initialization:
+The PySpark script initializes a SparkSession, which serves as the entry point to the Spark application.
+Example:
+from pyspark.sql import SparkSession spark = SparkSession.builder \ .appName("ExamplePySparkApp") \ .getOrCreate()
+2. Data Loading and Transformation:
+---------------------------------
+The script loads data into DataFrames or RDDs and applies a series of transformations and actions.
+Example:
+df = spark.read.csv("hdfs://path/to/file.csv", header=True) df_transformed = df.filter(df['age'] > 30)
+3. Job Submission:
+--------------------
+When an action (e.g., show(), collect(), write()) is called, the driver program creates a DAG of tasks and submits the job to the cluster manager.
+Example:
+df_transformed.write.parquet("hdfs://path/to/output.parquet")
+4. Execution:
+-----------------
+The cluster manager allocates resources and assigns executors to the driver program.
+The driver schedules tasks and distributes them across executors for execution.
+5. Result Handling:
+----------------
+Executors perform the tasks and return the results to the driver.
+The driver collects the results and outputs them as specified in the script.
+Understanding the Job Execution Using Spark UI
+The Spark UI is a web-based interface that provides detailed information about the execution of Spark jobs. It allows users to monitor and analyze the performance of their Spark applications. Here’s how you can use the Spark UI to understand what exactly is happening inside a Spark job:
+
+Accessing the Spark UI:
+The Spark UI is typically accessible at http://<driver-host>:4040. The exact URL may vary depending on your Spark cluster configuration.
+```
+
+
 ```
 for interactive queries, do not store Parquet in S3.
 S3 is high-throughput but also high-latency storage. It's good for bulk reads, but not random reads, and querying Parquet involves random reads. Parquet on S3 is ok for batch jobs (like Spark jobs) but it's very slow for interactive queries (Presto, Athena, DuckDB).
