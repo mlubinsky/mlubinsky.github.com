@@ -625,6 +625,10 @@ df_exploded_outer.show()
 | 1 | John  | shoes    |
 | 2 | Alice | book     |
 +---+-------+----------+
+
+split(): Split strings into lists based on delimiters.
+posexplode(): Explode arrays and add a column indicating the original position of each element.
+arrays_zip(): Combine multiple arrays into a single array of tuples.
 ```
 
 ### JSON schema
