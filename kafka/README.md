@@ -2,7 +2,14 @@ https://www.freecodecamp.org/news/apache-kafka-handbook/
 
 https://github.com/pmoskovi/kafka-learning-resources
 
-https://habr.com/ru/articles/818007/
+### Оптимизация настроек Kafka кластера. 
+
+https://habr.com/ru/articles/818007/ Часть 1.
+
+https://habr.com/ru/articles/819243/ Часть 2.
+
+https://habr.com/ru/articles/819677/ Часть 3.
+
 
 Building a Real-Time Data Streaming Pipeline for Sentiment analysis using Kafka,Postgres and Streamlit
 
