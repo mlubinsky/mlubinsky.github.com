@@ -18,6 +18,8 @@
 
 ### Notes apps
 
+https://xournalpp.github.io/
+
 https://apps.apple.com/us/app/notability-notes-pdf/id360593530  Notability
 
  https://github.com/notable/notable Notable
