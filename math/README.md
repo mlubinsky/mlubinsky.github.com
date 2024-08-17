@@ -1,3 +1,5 @@
+https://vk.com/mathhedgehog
+
 https://news.ycombinator.com/item?id=40329388
 
 https://www.dissercat.com/catalog/fiziko-matematicheskie-nauki
