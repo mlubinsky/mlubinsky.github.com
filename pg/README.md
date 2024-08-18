@@ -1,5 +1,7 @@
 https://habr.com/ru/articles/821993/ Статический анализ структуры базы данных 
 
+https://mccue.dev/pages/8-16-24-just-use-postgres
+
 https://habr.com/ru/companies/otus/articles/817187/ Интеграция PostgreSQL с другими СУБД через dblink
 
 https://postgres.ai/blog/20220525-common-db-schema-change-mistakes
