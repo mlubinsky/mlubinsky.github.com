@@ -1,5 +1,8 @@
 https://www.sscardapane.it/alice-book
 
+
+https://razinkov.ai/lectures
+
 https://dls.samcs.ru/
 
 Error backpropagation:
