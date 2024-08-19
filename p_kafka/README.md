@@ -2,6 +2,8 @@ Book
 
 https://www.amazon.com/Kafka-Definitive-Real-Time-Stream-Processing/dp/1492043087
 
+https://www.youtube.com/watch?v=-AZOi3kP9Js
+
 https://habr.com/ru/articles/747658/ Kafka Streaming (Python)
 
 https://habr.com/ru/articles/764582/ Kafka + Go
