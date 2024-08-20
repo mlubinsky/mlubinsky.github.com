@@ -1,5 +1,7 @@
 https://habr.com/ru/companies/spbifmo/articles/781710/ Sparkling: Открытая библиотека для автоматического решения задачи кластеризации табличных и мультимодальных данных
 
+https://habr.com/ru/companies/skillfactory/articles/714304/
+
 ### Clustering 
 
 https://habr.com/ru/articles/829202/ алгоритм K-means++
