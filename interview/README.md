@@ -123,6 +123,25 @@ class Solution:
 
         return len(stack) == 0
 ```
+### Length_of_longest_increasing_subsequence
+```
+import bisect
+
+def length_of_longest_increasing_subsequence(nums):
+    increasing_lst = []
+    for n in nums:
+        pos = bisect.bisect_left(increasing_lst, n)
+        if pos < len(increasing_lst):
+            increasing_lst[pos] = n
+        else:
+            increasing_lst.append(n)
+
+    return len(increasing_lst)
+
+# Test:
+nums = [11, 5, 2, 5, 3, 7, 101, 18]
+print(length_of_longest_increasing_subsequence(nums))  # Answer: 4
+```
 
 https://gaultier.github.io/blog/kahns_algorithm.html
 
