@@ -1,5 +1,11 @@
 https://mattblackwell.github.io/gov2002-book/
 
+The waiting time paradox: why is my bus always late? (2018)
+
+https://jakevdp.github.io/blog/2018/09/13/waiting-time-paradox/
+
+https://news.ycombinator.com/item?id=41300111
+
 https://habr.com/ru/companies/kuper/articles/827448/  Cтатистические критерии для начинающих
 
 ### Casual inference 
