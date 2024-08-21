@@ -2,6 +2,10 @@ https://towardsdev.com/query-plans-in-spark-internals-performance-tuning-8393b6e
 https://blog.det.life/memory-management-in-apache-spark-f6a3499c55e2
 
 https://medium.com/@evyamiz/whats-the-cache-084cd174ebba caching
+
+### Оптимизируем Shuffle в Spark
+https://habr.com/ru/companies/X5Tech/articles/837348/
+
 ### Architecture
 ```
 Components of Spark Architecture
