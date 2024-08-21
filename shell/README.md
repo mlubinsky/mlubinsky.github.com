@@ -20,6 +20,8 @@ https://habr.com/ru/articles/833602/
 [ -t 1 ] # истинно, если файл является терминалом
 ```
 
+https://notes.billmill.org/computer_usage/cli_tips_and_tools/modern_unix_tool_list.html
+
 https://news.ycombinator.com/item?id=41031112 	Eza: A modern, maintained replacement for ls and eza
 
 https://github.com/onceupon/Bash-Oneliner
