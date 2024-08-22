@@ -1,4 +1,11 @@
  %* in batch file mean all command line arguments
+
+### Run Windows program on another Windows box
+
+1)	Use OpenSSH https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui
+2)	Use PsExcec https://learn.microsoft.com/en-us/sysinternals/downloads/psexec
+3)	Use PowerShell https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/running-remote-commands?view=powershell-7.4
+
  
 ### CMD
 ```
