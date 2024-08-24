@@ -555,6 +555,8 @@ greatexpectations.io
 
  https://iceberg.apache.org/
 
+ https://seattledataguy.substack.com/p/apache-iceberg-what-is-it?utm_source=substack
+
 https://www.infoworld.com/article/3479001/why-apache-iceberg-is-on-fire-right-now.html
 
 
