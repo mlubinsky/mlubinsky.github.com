@@ -6,6 +6,9 @@ https://habr.com/ru/companies/ozonbank/articles/805011/ Мониторинг Apa
 
 https://asrathore08.medium.com/airflow-interview-questions-iv-cef5100d44c5 
 
+### Docker
+https://habr.com/ru/articles/831248/ Docker for airflow
+
 https://medium.com/@patricklowe33/etl-using-docker-python-postgres-airflow-ed3e9508bd2e
 
 https://medium.com/@anupamk36/airflow-best-practices-d982fabd61f6
