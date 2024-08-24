@@ -1,6 +1,9 @@
 https://habr.com/ru/articles/821993/ Статический анализ структуры базы данных 
 
+## Search
 https://anyblockers.com/posts/postgres-as-a-search-engine
+
+https://habr.com/ru/companies/karuna/articles/809305/
 
 https://mccue.dev/pages/8-16-24-just-use-postgres
 
