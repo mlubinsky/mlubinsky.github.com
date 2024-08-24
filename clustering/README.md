@@ -2,6 +2,8 @@ https://habr.com/ru/companies/spbifmo/articles/781710/ Sparkling: Открыта
 
 https://habr.com/ru/companies/skillfactory/articles/714304/
 
+https://habr.com/ru/articles/784868/
+
 ### Clustering 
 
 https://habr.com/ru/articles/829202/ алгоритм K-means++
