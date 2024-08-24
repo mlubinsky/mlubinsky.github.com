@@ -2,6 +2,8 @@ https://scastie.scala-lang.org/ Online Scala compiler
 
 <https://riiswa.github.io/Scala-CheatSheet/>
 
+https://github.com/LucDuponcheelAtGitHub/programming_course
+
 https://habr.com/ru/articles/799235/ Имплиситы и тайпклассы в Scala
 
 https://alvinalexander.com/scala/fp-book/how-write-functions-take-function-input-parameters/
