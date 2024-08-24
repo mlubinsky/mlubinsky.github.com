@@ -39,6 +39,10 @@ https://medium.com/swlh/lambda-internals-exploration-ae6c21d9521e
 
 https://towardsdatascience.com/aws-lambda-integration-with-snowflake-426debc9ec3a
 
+### STEP function
+
+https://juhache.substack.com/p/all-you-need-is-a-step-function?r=l9wvi
+
 https://asrathore08.medium.com/long-running-jobs-in-step-function-with-system-manager-and-lambda-f6b2543719f3
 
 ### AWS  cheatsheets
