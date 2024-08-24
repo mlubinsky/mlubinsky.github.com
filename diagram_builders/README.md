@@ -1,3 +1,5 @@
+https://www.freecodecamp.org/news/how-to-create-software-architecture-diagrams-using-the-c4-model/
+
 https://habr.com/ru/articles/803671/ Diagram buider
 
 https://mermaid.js.org/
