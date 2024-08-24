@@ -1,3 +1,13 @@
+### DB Diagrams 
+https://dbdiagram.io/home . DB schema diagrams
+
+https://habr.com/ru/post/456116/  yEd Graph Editor построить красивую схему базы данных
+
+ https://github.com/chartdb/chartdb
+ 
+https://schemaspy.org/ 
+
+
 ### django-sql-explorer
 https://github.com/explorerhq/django-sql-explorer
 https://news.ycombinator.com/item?id=40857589
