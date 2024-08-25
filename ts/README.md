@@ -10,6 +10,10 @@ https://habr.com/ru/companies/mvideo/articles/769756/ TS analysis with Python
 
 https://habr.com/ru/companies/mvideo/articles/771820/  
 
+https://stumpy.readthedocs.io/
+
+https://sysidentpy.org/ 
+
 ### Skforekast
 
 https://github.com/cerlymarco/tsmoothie
