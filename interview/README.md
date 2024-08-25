@@ -1,5 +1,7 @@
 https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions
 
+https://blog.chay.dev/things-that-make-your-application-stand-out/
+
 https://github.com/alex/what-happens-when
 
 https://habr.com/ru/companies/bothub/articles/812265/  System design interview
