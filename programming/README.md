@@ -1,3 +1,6 @@
+https://sourcegraph.com/blog/a-simpler-way-to-understand-legacy-code
+
+
 VPN https://p4pn.net/install/
 
 https://learnxinyminutes.com/
