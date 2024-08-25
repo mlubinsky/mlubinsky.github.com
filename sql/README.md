@@ -7,6 +7,10 @@ https://habr.com/ru/post/456116/  yEd Graph Editor построить краси
  
 https://schemaspy.org/ 
 
+### GROUP BY vs Window Function OVER (Partition By ..)
+
+https://stackoverflow.com/questions/2404565/what-is-the-difference-between-partition-by-and-group-by
+
 
 ### django-sql-explorer
 https://github.com/explorerhq/django-sql-explorer
