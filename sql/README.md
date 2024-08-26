@@ -12,6 +12,8 @@ https://schemaspy.org/
 https://stackoverflow.com/questions/2404565/what-is-the-difference-between-partition-by-and-group-by
 
 
+https://www.linkedin.com/pulse/select-statement-snowflake-databricks-vincent-rainardi-5ynle/ 
+
 ### django-sql-explorer
 https://github.com/explorerhq/django-sql-explorer
 https://news.ycombinator.com/item?id=40857589
