@@ -418,11 +418,27 @@ https://pythonrepo.com/repo/target-matrixprofile-ts-python-machine-learning
 https://pypi.org/project/matrixprofile-ts/
 
 ```
-The basics of Matrix Profile are simple: If I take a snippet of my data and slide it along the rest of the time series, how well does it overlap at each new position? More specifically, we can evaluate the Euclidean distance between a subsequence and every possible time series segment of the same length, building up what’s known as the snippet’s “Distance Profile.”
+The basics of Matrix Profile are simple:
+If I take a snippet of my data and slide it along the rest of the time series,
+how well does it overlap at each new position?
+More specifically, we can evaluate the Euclidean distance between a subsequence
+and every possible time series segment of the same length,
+building up what’s known as the snippet’s “Distance Profile.”
 
-If the subsequence repeats itself in the data, there will be at least one perfect match and the minimum Euclidean distance will be zero (or close to zero in the presence of noise). In contrast, if the subsequence is highly unique (say it contains a significant outlier), matches will be poor and all overlap scores will be high. Note that the type of data is irrelevant: We’re only looking at general pattern conservation.
+If the subsequence repeats itself in the data, there will be at least one perfect match
+and the minimum Euclidean distance will be zero (or close to zero in the presence of noise).
+In contrast, if the subsequence is highly unique (say it contains a significant outlier),
+matches will be poor and all overlap scores will be high.
+Note that the type of data is irrelevant:
+We’re only looking at general pattern conservation.
 
-We then slide every possible snippet across the time series, building up a collection of Distance Profiles. By taking the minimum value for each time step across all distance profiles, we can build the final Matrix Profile. Notice that both ends of the Matrix Profile value spectrum are useful. High values indicate uncommon patterns or anomalous events; in contrast, low values highlight repeatable motifs and provide valuable insight into your time series of interest.
+We then slide every possible snippet across the time series,
+building up a collection of Distance Profiles.
+By taking the minimum value for each time step across all distance profiles,
+we can build the final Matrix Profile.
+Notice that both ends of the Matrix Profile value spectrum are useful.
+High values indicate uncommon patterns or anomalous events; in contrast,
+low values highlight repeatable motifs and provide valuable insight into your time series of interest.
 
 ```
 
