@@ -1,5 +1,8 @@
 https://awesomecpp.com/
 
+
+https://habr.com/ru/articles/838392/
+
 https://habr.com/ru/post/538954/ chain of responsibility and command design pattern
 
 https://alexgaynor.net/2024/aug/18/safer-c-plus-plus/
