@@ -1,3 +1,8 @@
+You will frequently want to discard the NULL values in a PySpark array rather than write logic to deal with them. 
+
+array_compact makes getting rid of NULL values quite easy.
+![image](https://github.com/user-attachments/assets/311b2f0d-1cad-44f1-a643-a6bb56ce64f8)
+
 https://asrathore08.medium.com/pyspark-code-snippets-part-i-e2baf37a2e4
 
 https://asrathore08.medium.com/pyspark-code-snippets-part-ii-e24996ffff3c
