@@ -1,3 +1,9 @@
+https://books.japila.pl/
+
+https://hudi.apache.org/blog/2024/07/11/what-is-a-data-lakehouse/
+
+https://www.youtube.com/@nextgenlakehouse?app=desktop
+
 ```
 You can now query a PySpark DataFrame with SQL directly without creating a temporary table or view.
 
@@ -9,9 +15,24 @@ Before named parameter support, users had to manually register temporary views/t
 which was an annoying extra step.
 Now you can seamlessly run SQL on a DataFrame object.
 ```
+![image](https://github.com/user-attachments/assets/a3a96e7b-2b40-4f60-899e-011b0773500e)
+
+### DataFram equality
+
+https://www.databricks.com/blog/simplify-pyspark-testing-dataframe-equality-functions
+
+Exciting update for PySpark developers! Spark 3.5/4.0 and Databricks Runtime 14.3. introduce DataFrame equality functions. Highlights:
+
+✅ Simplifies comparing expected and actual DataFrames.
+✅ Provides detailed discrepancy insights.
+✅ Enhances error detection in early stages.
+
+### Max_By()
 ![Uploading image.png…]()
 
-How to to discard the NULL values in a PySpark array rather than write logic to deal with them:
+### How to to discard the NULL values in a PySpark array 
+
+rather than write logic to deal with them:
 
 array_compact makes getting rid of NULL values quite easy.
 ![image](https://github.com/user-attachments/assets/311b2f0d-1cad-44f1-a643-a6bb56ce64f8)
