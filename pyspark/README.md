@@ -16,6 +16,11 @@ which is an amazing quality-of-life improvement for hashtag#spark users.
 Before named parameter support, users had to manually register temporary views/tables
 which was an annoying extra step.
 Now you can seamlessly run SQL on a DataFrame object.
+
+![image](https://github.com/user-attachments/assets/90c1c5c9-6ab6-4a06-b474-36fb16640be8)
+
+
+
 ```
 ![image](https://github.com/user-attachments/assets/a3a96e7b-2b40-4f60-899e-011b0773500e)
 
