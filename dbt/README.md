@@ -1,5 +1,19 @@
 https://www.certfun.com/databricks/databricks-certified-machine-learning-associate
 
+👩‍💻Databricks has released 6 FREE self-paced courses to master Data & AI, including our new Generative AI course!🔥 🙌 No payments required 
+👉 Link to DB Academy: https://lnkd.in/gzkWqHMu
+
+🎊 📣 On the top of that, the Learning festival is back! 
+From the 10th July to the 24th July 2024, a 50% off Databricks certification voucher (worth US$100) and a 20% discount coupon for Databricks Academy Labs will be given to the users who complete at least one of the below 6 courses within the duration of the virtual festival (📅i.e. 10 July 2024 - 24 July 2024). 
+
+Here are the 6 courses that you don't want to miss in 2024:
+1️⃣ Data Engineer Learning Plan - Data Engineering with Databricks
+2️⃣ Data Engineer Learning Plan - Advanced Data Engineering with Databricks
+3️⃣ Data Analyst Learning Plan - Data Analysis with Databricks SQL
+4️⃣ Machine Learning Practitioner Learning Plan - ML with Databricks
+5️⃣ Machine Learning Practitioner Learning Plan - ML in Production
+7️⃣ Generative AI Engineering Pathway - Generative AI Engineer
+
 ### Data observbility
 https://www.montecarlodata.com/blog-introducing-the-5-pillars-of-data-observability/
 ```
