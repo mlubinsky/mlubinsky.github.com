@@ -1,4 +1,17 @@
-You will frequently want to discard the NULL values in a PySpark array rather than write logic to deal with them. 
+```
+You can now query a PySpark DataFrame with SQL directly without creating a temporary table or view.
+
+Just query the DataFrame with a named parameter and it automatically works.
+
+This makes it much easier to seamlessly switch from the PySpark DSL => SQL,
+which is an amazing quality-of-life improvement for hashtag#spark users.
+Before named parameter support, users had to manually register temporary views/tables
+which was an annoying extra step.
+Now you can seamlessly run SQL on a DataFrame object.
+```
+![Uploading image.png…]()
+
+How to to discard the NULL values in a PySpark array rather than write logic to deal with them:
 
 array_compact makes getting rid of NULL values quite easy.
 ![image](https://github.com/user-attachments/assets/311b2f0d-1cad-44f1-a643-a6bb56ce64f8)
