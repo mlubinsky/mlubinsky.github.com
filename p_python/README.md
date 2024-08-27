@@ -1,5 +1,7 @@
 https://www.pythonmorsels.com/time-complexities/
 
+https://www.mattlayman.com/blog/2024/layman-guide-python-built-in-functions/
+
 https://www.gauge.sh/blog/how-to-visualize-your-python-projects-dependency-graph  Visualize Puthon dependency
 
 https://habr.com/ru/articles/830098/ msgspec. Библиотека для сериализации и десериализации чего угодно
