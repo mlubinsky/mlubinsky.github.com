@@ -54,6 +54,99 @@ https://habr.com/ru/company/southbridge/blog/534334/.  Data /volumes inside Dock
 
 https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose
 
+
+```
+How I Reduced Docker Image Size from 588 MB to Only 47.7 MB 
+
+𝗔 𝘄𝗵𝗼𝗺𝗽𝗶𝗻𝗴 𝟵𝟭.𝟴𝟵 %
+
+To begin with, there is no secret here if you already know about the multi stage builds.
+
+We all know minimizing docker image sizes accelerates container deployment, and for large-scale operations, this can lead to substantial savings in storage space.
+
+
+1. For a flask app, I picked up 𝗣𝘆𝘁𝗵𝗼𝗻 𝟯.𝟵-𝗮𝗹𝗽𝗶𝗻𝗲 𝘄𝗵𝗶𝗰𝗵 𝗶𝘀 𝗮 𝘄𝗵𝗼𝗺𝗽𝗶𝗻𝗴 𝟵𝟱.𝟮% 𝘀𝗺𝗮𝗹𝗹𝗲𝗿 𝘁𝗵𝗮𝗻 𝗣𝘆𝘁𝗵𝗼𝗻 𝟯.𝟵
+
+This minimal images contain only the essentials, significantly reducing the image size.
+
+
+2. I minimized layers - every command in a Dockerfile (like RUN, COPY, etc.) generates a separate layer in the final image. 
+
+Grouping similar commands together into one step makes sense, which decreases the total number of layers, leading to a smaller overall image size.
+
+𝗜𝗻𝘀𝘁𝗲𝗮𝗱 𝗼𝗳 𝗱𝗼𝗶𝗻𝗴 𝘁𝗵𝗶𝘀:
+
+RUN apk update
+RUN apk add --no-cache git
+RUN rm -rf /var/cache/apk/RUN apk update
+RUN apk add --no-cache git
+RUN rm -rf /var/cache/apk/* *
+
+𝗗𝗼 𝘁𝗵𝗶𝘀:
+
+RUN apk update && apk add --no-cache git && rm -rf /var/cache/apk/*
+
+
+3. Used .𝗱𝗼𝗰𝗸𝗲𝗿𝗶𝗴𝗻𝗼𝗿𝗲 File - Docker transfers all the files from your project directory into the image by default. To avoid including unneeded files, used a .dockerignore file to exclude them.
+
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+venv/
+
+
+4. Multi-Stage Builds - Here all the magic happens !
+
+Dockerfile looks like:
+
+# Stage 1: Build
+FROM python:3.9-alpine AS builder
+
+# Install necessary build dependencies
+RUN apk add --no-cache build-base \
+ && apk add --no-cache gfortran musl-dev lapack-dev
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the requirements file and install dependencies
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application code to the working directory
+COPY . .
+
+# Uninstall unnecessary dependencies
+RUN pip uninstall -y pandas && apk del build-base gfortran musl-dev lapack-dev
+
+# Stage 2: Production
+FROM python:3.9-alpine
+
+# Set the working directory
+WORKDIR /app
+
+# Copy only the necessary files from the build stage
+COPY --from=builder /app /app
+
+# Expose the port the app will run on
+EXPOSE 5000
+
+# Run the Flask app
+CMD ["python", "app.py"]
+
+The new image size is: 𝗢𝗻𝗹𝘆 𝟰𝟳.𝟳 𝗠𝗕
+
+Single stage image size was: 𝟱𝟴𝟴 𝗠𝗕
+
+The application works exactly the same, but it spins up much faster in this version.
+
+That's an whomping -𝟵𝟭.𝟴𝟵 %
+
+Less the image size = Faster deployments + Quicker scaling + Lean infrastructure
+
+```
+
 ### Docker for Python
 
 https://testdriven.io/blog/docker-best-practices/
