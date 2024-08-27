@@ -1,5 +1,7 @@
 https://books.japila.pl/
 
+https://www.waitingforcode.com/apache-spark-sql/mapgroupswithstate-batch/read
+
 https://www.linkedin.com/company/apachespark/posts/
 
 https://hudi.apache.org/blog/2024/07/11/what-is-a-data-lakehouse/
