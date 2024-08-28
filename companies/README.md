@@ -2,6 +2,20 @@ https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
 Deloitte 
 
+www.xcalar.com/ San Jose
+huawei  Graph DB engine
+http://percipient.ai/
+
+https://deepsystems.ai   4690 Fortran Dr, 106C San Jose, CA 
+https://supervise.ly
+https://www.anatomage.com/
+
+https://www.eetimes.com/document.asp?doc_id=1333167   AI on chip
+
+san-jose.startups-list.com
+https://angel.co/san-jose/jobs
+https://angel.co/san-jose
+
 #AliveCor
 https://lnkd.in/gZAQFE7R
 
