@@ -1,5 +1,7 @@
 https://habr.com/ru/articles/809195/ certification
 
+https://aws.amazon.com/es/blogs/training-and-certification/inside-look-at-the-new-ai-and-ml-aws-certifications/
+
 ### AWS learning
 
 https://explore.skillbuilder.aws/learn/catalog
