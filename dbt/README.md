@@ -1,5 +1,10 @@
 https://www.certfun.com/databricks/databricks-certified-machine-learning-associate
 
+PySpark in 2023
+
+https://www.databricks.com/blog/pyspark-2023-year-review
+
+
 Databricks SQL:
 
 https://www.youtube.com/watch?v=yeV-dTX7QRo
