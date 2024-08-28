@@ -6,6 +6,8 @@ https://github.com/alex/what-happens-when
 
 https://habr.com/ru/companies/bothub/articles/812265/  System design interview
 
+https://habr.com/ru/companies/yandex_praktikum/articles/834230/ System design interview
+
 https://habr.com/ru/companies/ods/articles/828772/
 
 https://www.youtube.com/watch?v=_keHRxzx7as   Глеб Михайлов Новые задачи на LeetCode | Ща порешаем! #99  
