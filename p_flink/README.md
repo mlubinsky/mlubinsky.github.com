@@ -9,6 +9,8 @@ https://habr.com/ru/companies/T1Holding/articles/830878/
 
 https://habr.com/ru/companies/T1Holding/articles/830886/
 
+https://diptimanrc.medium.com/data-engineering-with-pyflink-table-api-kafka-flink-getting-started-part-2-685f75c3236c
+
 
 ### Apache Beam
 
