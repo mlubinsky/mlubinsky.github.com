@@ -8,6 +8,8 @@ https://hudi.apache.org/blog/2024/07/11/what-is-a-data-lakehouse/
 
 https://www.youtube.com/@nextgenlakehouse?app=desktop
 
+Data Cleaning using PySpark 
+https://www.linkedin.com/posts/shwetank-singh-68023283_data-engineering-101-data-cleaning-using-activity-7234225860797505536-xLad 
 
 PySpark in 2023
 
