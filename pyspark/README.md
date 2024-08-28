@@ -8,6 +8,11 @@ https://hudi.apache.org/blog/2024/07/11/what-is-a-data-lakehouse/
 
 https://www.youtube.com/@nextgenlakehouse?app=desktop
 
+
+PySpark in 2023
+
+https://www.databricks.com/blog/pyspark-2023-year-review
+
 ```
 You can now query a PySpark DataFrame with SQL directly without creating a temporary table or view.
 
