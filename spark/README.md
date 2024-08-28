@@ -405,7 +405,14 @@ https://stackoverflow.com/questions/43364432/spark-difference-between-reducebyke
 ```
 groupByKey() is just to group your dataset based on a key. It will result in data shuffling when RDD is not already partitioned.
 
+The groupByKey() operation groups all values associated with a specific key into a single collection, such as a list or an iterator.
+This operation does not perform any aggregation itself; it merely organizes the data by key.
+ All records with the same key need to be moved to the same node in the cluster. 
+
 reduceByKey() is something like grouping + aggregation. We can say reduceByKey() equivalent to dataset.group(...).reduce(...). It will shuffle less data unlike groupByKey().
+reduceByKey() applies a reduction function (e.g., sum, count) to the values associated with each key,
+merging them using the provided function.
+The key difference is that reduceByKey() performs a local reduction (map-side combine) before shuffling the data across the network
 
 aggregateByKey() is logically same as reduceByKey() but it lets you return result in different type.
 In another words, it lets you have an input as type x and aggregate result as type y.
