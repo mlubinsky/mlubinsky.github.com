@@ -1,5 +1,22 @@
 https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
+Deloitte 
+
+#AliveCor
+https://lnkd.in/gZAQFE7R
+
+hashtag#Visa
+https://lnkd.in/gCvHSK9V
+
+hashtag#EMR_India
+https://lnkd.in/g-XtGYKT
+
+hashtag#JLL\Technologies
+https://lnkd.in/gned9QtU
+
+hashtag#CommonBank
+https://lnkd.in/gZ27NtSn
+
 https://habr.com/ru/articles/797745/
 
 https://openai.com/careers/hwsw-co-design-engineer  
