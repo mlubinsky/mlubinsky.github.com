@@ -18,14 +18,15 @@ https://medium.com/@anupamk36/airflow-best-practices-d982fabd61f6
 Data Exchange Strategies between Airflow DAGs:  
 https://blog.det.life/data-exchange-strategies-between-airflow-dags-18cb0848c93c
 
-### Docker for airflow
+### Docker for Airflow
 https://habr.com/ru/articles/831248/ Docker for airflow
+
+https://medium.com/@harshalpagar/running-airflow-with-docker-on-developer-environment-9c1c9559668c
 
 https://medium.com/@patricklowe33/etl-using-docker-python-postgres-airflow-ed3e9508bd2e
 
 docker pull apache/airflow:2.10.0
 
-### Airflow in Docker:
 
 https://github.com/ntd284/personal_install_airflow_docker
 
