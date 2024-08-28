@@ -1,5 +1,8 @@
 https://towardsdev.com/query-plans-in-spark-internals-performance-tuning-8393b6eb0972  
+
 https://blog.det.life/memory-management-in-apache-spark-f6a3499c55e2
+
+https://www.waitingforcode.com/data-engineering/section
 
 https://medium.com/@evyamiz/whats-the-cache-084cd174ebba caching
 
