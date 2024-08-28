@@ -8,6 +8,8 @@ https://habr.com/ru/companies/ozonbank/articles/805011/ Мониторинг Apa
 
 https://asrathore08.medium.com/airflow-interview-questions-iv-cef5100d44c5 
 
+https://www.linkedin.com/posts/shwetank-singh-68023283_data-engineering-airflow-concepts-ugcPost-7229856597575970816-bC2r 
+
 
 https://medium.com/@anupamk36/airflow-best-practices-d982fabd61f6
 
