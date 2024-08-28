@@ -1,3 +1,25 @@
+1. Snowflake vs Databricks - And the Battle For Iceberg
+https://lnkd.in/gq-KCFsK
+
+2. Common Pitfalls in Deploying Airflow for Data Teams
+https://lnkd.in/gGepn-K5
+
+3. Memory Efficient Data Streaming To Parquet Files
+https://lnkd.in/gpVwKhEK
+
+4. Why is Polars All The Rage? by Daniel Beach
+https://lnkd.in/gUVATCj5
+
+5. Apache Iceberg - What Is It by Julien Hurault
+https://lnkd.in/gfntMYZX
+
+6. The Data Engineer’s Guide to CDC for Analytics, Ops, and AI Pipelines
+https://lnkd.in/esbcDi_q
+
+7. Data Modeling Where Theory Meets Reality
+https://lnkd.in/g_8FCpuA
+
+
 https://www.certfun.com/databricks/databricks-certified-machine-learning-associate
 
 PySpark in 2023
