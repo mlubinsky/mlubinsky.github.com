@@ -19,6 +19,8 @@ https://habr.com/ru/articles/831248/ Docker for airflow
 
 https://medium.com/@patricklowe33/etl-using-docker-python-postgres-airflow-ed3e9508bd2e
 
+docker pull apache/airflow:2.10.0
+
 ### Airflow in Docker:
 
 https://github.com/ntd284/personal_install_airflow_docker
