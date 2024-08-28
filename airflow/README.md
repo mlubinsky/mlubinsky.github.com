@@ -6,15 +6,24 @@ https://habr.com/ru/companies/ozonbank/articles/805011/ Мониторинг Apa
 
 https://asrathore08.medium.com/airflow-interview-questions-iv-cef5100d44c5 
 
-### Docker
-https://habr.com/ru/articles/831248/ Docker for airflow
-
-https://medium.com/@patricklowe33/etl-using-docker-python-postgres-airflow-ed3e9508bd2e
 
 https://medium.com/@anupamk36/airflow-best-practices-d982fabd61f6
 
 Data Exchange Strategies between Airflow DAGs:  
 https://blog.det.life/data-exchange-strategies-between-airflow-dags-18cb0848c93c
+
+### Docker for airflow
+https://habr.com/ru/articles/831248/ Docker for airflow
+
+https://medium.com/@patricklowe33/etl-using-docker-python-postgres-airflow-ed3e9508bd2e
+
+### Airflow in Docker:
+
+https://github.com/ntd284/personal_install_airflow_docker
+
+https://www.linkedin.com/pulse/how-can-install-airflow-docker-minutes-duong-nguyen-tuan-wkddc/?trackingId=0K0AgWo0iNYvHboc%2FIM4cQ%3D%3D
+
+https://stackabuse.com/running-airflow-locally-with-docker-a-technical-guide/
 
 ### Airflowctl
 https://airflowsummit.org/sessions/2023/introducing-airflowctl/
@@ -67,13 +76,7 @@ https://www.youtube.com/watch?v=uB7zweaF8EA What is new in Airflow 2.7 ?
 
 https://blog.devgenius.io/airflow-task-parallelism-6360e60ab942
 
-### Airflow in Docker:
 
-https://github.com/ntd284/personal_install_airflow_docker
-
-https://www.linkedin.com/pulse/how-can-install-airflow-docker-minutes-duong-nguyen-tuan-wkddc/?trackingId=0K0AgWo0iNYvHboc%2FIM4cQ%3D%3D
-
-https://stackabuse.com/running-airflow-locally-with-docker-a-technical-guide/
 
 
 https://www.youtube.com/watch?v=JJ_nnGkZjBc&list=PL2Uw4_HvXqvY2zhJ9AMUa_Z6dtMGF3gtb&index=126
