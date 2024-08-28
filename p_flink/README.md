@@ -1,5 +1,6 @@
 https://www.waitingforcode.com/apache-flink
 
+https://www.confluent.io/blog/exploring-apache-flink-1-20-features-improvements-and-more/
 
 https://medium.com/@lenonrodrigues/a-detailed-comparison-between-spark-structured-streaming-and-apache-flink-comparison-of-features-10ae6ce8aaaa
 
