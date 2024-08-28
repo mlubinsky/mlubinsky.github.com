@@ -1,3 +1,5 @@
+https://www.waitingforcode.com/apache-airflow
+
 https://habr.com/ru/articles/811807/
 
 https://cloud.google.com/blog/products/data-analytics/airflow-dag-and-task-concurrency-in-cloud-composer/
