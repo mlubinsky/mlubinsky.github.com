@@ -1,3 +1,5 @@
+https://www.waitingforcode.com/general-data-engineering/data-ai--summit-2024-retrospective-apache-spark/read
+
 https://towardsdev.com/query-plans-in-spark-internals-performance-tuning-8393b6eb0972  
 
 https://blog.det.life/memory-management-in-apache-spark-f6a3499c55e2
