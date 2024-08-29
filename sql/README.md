@@ -41,6 +41,31 @@ https://xuanwo.io/2024/02-what-i-talk-about-when-i-talk-about-query-optimizer-pa
 
 https://news.ycombinator.com/item?id=39176797
 
+
+### 5 Challenging SQL Interview questions you must try before your interviews
+
+Difficulty level - FAANG
+
+1) Users By Average Session Time (Facebook ,Medium)
+
+https://lnkd.in/gKneV29k
+
+2) Videos Removed on Latest Date ( Google , Hard)
+
+https://lnkd.in/gG3b4hXi
+
+3) Employed at Google ( Company — linkedln ,Medium)
+
+https://lnkd.in/g6jAGyRb
+
+4) Recommendation System (Meta/Facebook, Medium)
+
+https://lnkd.in/gPEfkEJx
+
+5) Rank Variance Per Country (Facebook,Hard)
+
+https://lnkd.in/gv753AiD
+
 ### Time series SQL
 
 https://questdb.io/blog/olap-vs-time-series-databases-the-sql-perspective/
