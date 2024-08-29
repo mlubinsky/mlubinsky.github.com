@@ -4,6 +4,8 @@ https://www.justinmath.com/books/
 
 https://physicsbaseddeeplearning.org/intro.html . BOOK
 
+https://github.com/graviraja/MLOps-Basics
+
 http://neuralnetworksanddeeplearning.com/
 
 https://course.fast.ai/ Practical Deep Learning for coders
