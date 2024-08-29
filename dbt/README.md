@@ -1,3 +1,5 @@
+https://blog.det.life/exploring-advanced-open-data-formats-apache-hudi-apache-iceberg-and-delta-lake-eb764c161159
+
 1. Snowflake vs Databricks - And the Battle For Iceberg
 https://lnkd.in/gq-KCFsK
 
@@ -603,6 +605,8 @@ greatexpectations.io
 ### Iceberg
 
  https://iceberg.apache.org/
+
+ https://blog.det.life/exploring-advanced-open-data-formats-apache-hudi-apache-iceberg-and-delta-lake-eb764c161159
 
  https://seattledataguy.substack.com/p/apache-iceberg-what-is-it?utm_source=substack
 
