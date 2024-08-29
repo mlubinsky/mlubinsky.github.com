@@ -1,5 +1,7 @@
 https://habr.com/ru/company/southbridge/blog/716022/. Kafka, BigQuery & Looker Studio
 
+https://vutr.substack.com/p/how-did-facebook-design-their-real
+
 https://habr.com/ru/companies/southbridge/articles/731526/ Streaming
 
 https://habr.com/ru/companies/southbridge/articles/730380/
