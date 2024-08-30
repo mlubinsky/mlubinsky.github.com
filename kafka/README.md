@@ -2,6 +2,8 @@ https://www.freecodecamp.org/news/apache-kafka-handbook/
 
 https://github.com/pmoskovi/kafka-learning-resources
 
+https://www.linkedin.com/posts/loveekumar-006_kafka-activity-7235323214782947329-D2i4
+
 https://vutr.substack.com/p/how-did-linkedin-handle-7-trillion
 
 ### Оптимизация настроек Kafka кластера. 
