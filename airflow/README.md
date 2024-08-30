@@ -10,8 +10,21 @@ https://asrathore08.medium.com/airflow-interview-questions-iv-cef5100d44c5
 
 https://www.linkedin.com/posts/shwetank-singh-68023283_data-engineering-airflow-concepts-ugcPost-7229856597575970816-bC2r 
 
-Running Databricks Notebook with Airflow
+### Running Databricks Notebook with Airflow
 https://medium.com/apache-airflow/running-databricks-notebook-with-airflow-9b38bcfb8740
+```
+The Databricks provider was recently updated to include something like 'DatabricksWorkflowOperator',
+which acts as an Airflow task group, and combines all tasks (run notebook, execute jar,..) in 1 job.
+Upon running the Dag, Airflow uses the job create/update API to create/update the exact job definition, and triggers it.
+Very useful because you can (re)use job compute, follow progress in both Airflow and Databricks,
+ your engineers can look at logs in the regular Databricks workflows menu like before while the orchestration/triggering stays in Airflow
+ (useful if you need to orchestrate with other processes outside of Databricks).
+
+ It takes some time to get started with it because there are not too many examples/documentation,
+ but we've build a config (yaml) driven framework that renders the dags.
+The yaml definition almost (on purpose) matches 1-1 with the DAB workflow definitions,
+so conversion of existing dabs/workflows is easy.
+```
 
 https://medium.com/@anupamk36/airflow-best-practices-d982fabd61f6
 
