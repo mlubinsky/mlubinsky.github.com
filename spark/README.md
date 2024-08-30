@@ -12,6 +12,21 @@ https://www.waitingforcode.com/data-engineering/section
 
 https://medium.com/@evyamiz/whats-the-cache-084cd174ebba caching
 
+### Get number of partitions in df
+```
+With sparkContext deprecated, was wondering is there any way to actually run
+getNumPartitions as the former used to run on rdds.
+ 
+df.rdd.getNumPartitions
+
+df.withColumn("partitions", spark_partition_id()).select("partitions").distinct().count()
+
+or
+
+df.withColumn("partitions", spark_partition_id()).groupBy("partitions").count()
+
+```
+
 ### Оптимизируем Shuffle в Spark
 https://habr.com/ru/companies/X5Tech/articles/837348/
 
