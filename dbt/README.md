@@ -1,3 +1,7 @@
+
+
+https://www.linkedin.com/posts/abhisek-sahu-84a404b1_lakehouse-architecture-lakehouse-datawarehouse-activity-7225743778840506368-zaV5 
+
 https://blog.det.life/exploring-advanced-open-data-formats-apache-hudi-apache-iceberg-and-delta-lake-eb764c161159
 
 1. Snowflake vs Databricks - And the Battle For Iceberg
