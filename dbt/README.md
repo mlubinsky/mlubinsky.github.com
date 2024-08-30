@@ -25,15 +25,17 @@ https://lnkd.in/esbcDi_q
 7. Data Modeling Where Theory Meets Reality
 https://lnkd.in/g_8FCpuA
 
+### Databricks  Certifications
+https://docs.google.com/spreadsheets/d/1X0bUPGZFap1UWQsQRK4rdMDdANzRp0oVIssV6KRLkxI/edit?pli=1&gid=0#gid=0
 
 https://www.certfun.com/databricks/databricks-certified-machine-learning-associate
 
-PySpark in 2023
+### PySpark in 2023
 
 https://www.databricks.com/blog/pyspark-2023-year-review
 
 
-Databricks SQL:
+### Databricks SQL:
 
 https://www.youtube.com/watch?v=yeV-dTX7QRo
 
