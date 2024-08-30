@@ -94,7 +94,7 @@ https://news.ycombinator.com/item?id=38942892
 https://news.ycombinator.com/item?id=36768334
 
 ### Pre-commit
-``
+```
 Git-хуки — скрипты, которые автоматически запускаются при наступлении определённых событий в жизненном цикле репозитория, 
 таких как commit, push, merge, rebase и другие операции. 
 
