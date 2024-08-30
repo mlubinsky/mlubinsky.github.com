@@ -10,6 +10,9 @@ https://habr.com/ru/articles/764582/ Kafka + Go
 
 https://dev.to/miguelaeh/handling-computer-vision-events-in-real-time-with-python-kafka-and-pipeless-4pno 
 
+
+https://www.linkedin.com/posts/loveekumar-006_kafka-activity-7235323214782947329-D2i4 
+
 https://www.youtube.com/watch?v=4HV2N0GKhd8
 
 https://www.youtube.com/watch?v=wP-FMNuO3D0
