@@ -34,6 +34,8 @@ https://www.certfun.com/databricks/databricks-certified-machine-learning-associa
 
 https://www.databricks.com/blog/pyspark-2023-year-review
 
+### Databricks technical blogs
+https://community.databricks.com/t5/technical-blog/bg-p/technical-blog
 
 ### Databricks SQL:
 
