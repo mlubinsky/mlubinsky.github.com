@@ -239,10 +239,13 @@ wdiff = diff --word-diff --word-diff-regex='\\w+'
 
 https://ghapi.fast.ai/tutorial_actions.html  Git Actions
 
+
+
+
 ## Git precommit hooks
 https://iafisher.com/blog/2020/06/precommit
 
-
+https://habr.com/ru/companies/2gis/articles/838966/
 
 https://blog.isquaredsoftware.com/2021/01/coding-career-git-usage/
 
