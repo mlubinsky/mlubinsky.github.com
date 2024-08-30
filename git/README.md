@@ -94,6 +94,9 @@ https://news.ycombinator.com/item?id=38942892
 https://news.ycombinator.com/item?id=36768334
 
 ### Pre-commit
+``
+Git-хуки — скрипты, которые автоматически запускаются при наступлении определённых событий в жизненном цикле репозитория, таких как commit, push, merge, rebase и другие операции. С их помощью можно автоматизировать различные аспекты рабочего процесса и выполнять необходимые проверки и действия на каждом этапе разработки.
+```
 https://www.elliotjordan.com/posts/pre-commit-01-intro/
 
 https://pre-commit.com/
@@ -243,6 +246,11 @@ https://ghapi.fast.ai/tutorial_actions.html  Git Actions
 
 
 ## Git precommit hooks
+```
+Git-хуки — скрипты, которые автоматически запускаются при наступлении определённых событий в жизненном цикле репозитория, 
+таких как commit, push, merge, rebase и другие операции. 
+С их помощью можно автоматизировать различные аспекты рабочего процесса и выполнять необходимые проверки и действия на каждом этапе разработки.
+```
 https://iafisher.com/blog/2020/06/precommit
 
 https://habr.com/ru/companies/2gis/articles/838966/
