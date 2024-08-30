@@ -1,5 +1,7 @@
 https://books.japila.pl/
 
+https://www.linkedin.com/posts/riyakhandelwal_functions-in-databricks-activity-7231638740463411200-SrwX 
+
 https://www.waitingforcode.com/apache-spark-sql/mapgroupswithstate-batch/read
 
 https://www.linkedin.com/company/apachespark/posts/
