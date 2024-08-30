@@ -100,6 +100,20 @@ WHEN NOT MATCHED THEN
   )
 ```  
 ## Databricks
+https://overcast.blog/databricks-cost-optimization-a-practical-guide-d609a9cee9ec
+```
+DBUs (Databricks Units)
+
+A Databricks Unit (DBU) is the billing unit used to measure compute power per hour.
+Its cost depends on factors like the workload type, instance, and runtime used.
+For example, an All-Purpose Compute cluster typically costs around $0.40 per DBU per hour for a standard runtime.
+
+What is a DBU?
+A DBU measures resources consumed by a workload in seconds.
+The number of DBUs varies based on cluster type (e.g., All-Purpose, Jobs Light, SQL) and premium options like Photon or GPU instances. Databricks charges DBUs from the moment a cluster starts, even when idle.
+Configuring auto-termination settings helps avoid paying for unused resources.
+```
+
 https://www.youtube.com/@Databricks
 
 https://habr.com/ru/companies/slurm/articles/754464/ Apache Spark 3.4 для Databricks Runtime 13.0
