@@ -23,7 +23,11 @@ https://lobste.rs/s/x0b8wo/practical_parsing_with_flex_bison
 
 https://begriffs.com/posts/2021-11-28-practical-parsing.html  bison flex
 
-lark . http://blog.erezsh.com/5-lark-features-you-probably-didnt-know-about/
+### Lark - python parser
+
+https://jamesg.blog/2024/08/17/build-a-query-language/
+
+ http://blog.erezsh.com/5-lark-features-you-probably-didnt-know-about/
 
 https://tomassetti.me/parsing-in-python/ python
 
