@@ -1,4 +1,10 @@
+https://medium.com/@lminhkhoa/speed-up-databricks-jobs-with-multi-threading-899a983c611a
 
+```
+dbldatagen, which is a Python Databricks Lab Project that allows us to generate dummy data inside Databricks for simulating, testing or building demos. Create some notebook cells:
+
+%pip install dbldatagen
+```
 
 https://www.linkedin.com/posts/abhisek-sahu-84a404b1_lakehouse-architecture-lakehouse-datawarehouse-activity-7225743778840506368-zaV5 
 
