@@ -317,6 +317,12 @@ SQL
 
 https://www.youtube.com/watch?v=A1aR1A8OwOU Z-Order
 
+### Databricks supports parameterized queries
+
+https://www.reddit.com/r/databricks/comments/1eg59uq/databricks_supports_parameterized_queries/#lightbox
+
+df.createOrReplaceTempView('t1') and using t1 when apparently it's not required
+
 ### Datalake
 
 https://docs.databricks.com/en/delta/table-properties.html Delta table properties
