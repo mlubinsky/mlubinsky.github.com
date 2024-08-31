@@ -27,6 +27,8 @@ https://lnkd.in/g_8FCpuA
 
 ### Databricks  Certifications
 
+https://www.coursera.org/specializations/data-science-with-databricks-for-data-analysts
+
 https://www.reddit.com/r/databricks/comments/1eketdw/i_created_a_free_databricks_certificate_questions/
 
 https://docs.google.com/spreadsheets/d/1X0bUPGZFap1UWQsQRK4rdMDdANzRp0oVIssV6KRLkxI/edit?pli=1&gid=0#gid=0
