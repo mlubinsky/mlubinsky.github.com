@@ -2,6 +2,8 @@ https://www.freecodecamp.org/news/how-to-create-software-architecture-diagrams-u
 
 https://habr.com/ru/articles/803671/ Diagram buider
 
+http://magjac.com/graphviz-visual-editor/
+
 https://mermaid.js.org/
 
 https://pikchr.org/home/pikchrshow
