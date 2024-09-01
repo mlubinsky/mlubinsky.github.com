@@ -18,6 +18,8 @@ https://habr.com/ru/companies/epam_systems/articles/538018/
 
 https://github.com/jgraph/drawio-desktop
 
+https://www.ilograph.com/
+
 https://www.ilograph.com/blog/posts/concrete-diagramming-models/
 
 ### C4
