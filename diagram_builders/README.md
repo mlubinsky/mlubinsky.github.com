@@ -39,6 +39,8 @@ https://kroki.io/
 https://d2lang.com/
 
 https://d2-lang.com/
+
+https://play.d2lang.com/?script=qlDQtVOo5AIEAAD__w%3D%3D&
 ```
 D2 — это новый декларативный язык диаграмм, позволяющий легко создавать технические диаграммы.
 Он входит в состав Terrastruct, который можно использовать бесплатно.
