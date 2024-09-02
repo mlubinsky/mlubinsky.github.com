@@ -33,6 +33,49 @@ https://lnkd.in/g_8FCpuA
 
 ### Databricks  Certifications
 
+https://www.linkedin.com/in/abhisek-sahu-84a404b1/
+
+```
+Databricks 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐞𝐝 𝐃𝐚𝐭𝐚 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐀𝐬𝐬𝐨𝐜𝐢𝐚𝐭𝐞 𝐄𝐱𝐚𝐦 :
+
+
+1. The Databricks Certified Data Engineer Associate certification exam assesses an individual’s ability to use the Databricks Lakehouse Platform to complete introductory data engineering tasks. 
+
+2. This includes an understanding of the Lakehouse Platform and its workspace, its architecture, and its capabilities.
+
+3. It also assesses the ability to perform multi-hop architecture ETL tasks using Apache Spark™ SQL and Python in both batch and incrementally processed paradigms. 
+
+4. Finally, the exam assesses the tester’s ability to put basic ETL pipelines and Databricks SQL queries and dashboards into production while maintaining entity permissions. 
+
+𝐄𝐱𝐚𝐦 𝐂𝐨𝐯𝐞𝐫𝐬:
+
+Databricks Lakehouse Platform – 24%
+ELT With Spark SQL and Python – 29%
+Incremental Data Processing – 22%
+Production Pipelines – 16%
+Data Governance – 9%
+
+𝐀𝐬𝐬𝐞𝐬𝐬𝐦𝐞𝐧𝐭 𝐃𝐞𝐭𝐚𝐢𝐥𝐬
+
+Type: Proctored certification
+Total number of questions: 45
+Time limit: 90 minutes
+Validity period: 2 years
+
+𝐏𝐫𝐞𝐩𝐚𝐫𝐚𝐭𝐢𝐨𝐧 :
+
+1. Data Engineer Associate Exam Guide: https://lnkd.in/gKwVZHiA
+2. Databricks Certified Data Engineer Associate - Preparation
+https://lnkd.in/gyz3Fdhi
+3. Practice Exams: Databricks Certified Data Engineer Associate
+https://lnkd.in/gB9FYqbP
+4. Instructor-led Training : https://lnkd.in/gu8uzk5b
+
+You can consider following Derar Alhussein who teaches databricks examinations .
+
+Here I am sharing Data Engineering Cert Prep - Notes, that should help you in your preparation.
+
+```
 https://www.coursera.org/specializations/data-science-with-databricks-for-data-analysts
 
 https://www.reddit.com/r/databricks/comments/1eketdw/i_created_a_free_databricks_certificate_questions/
