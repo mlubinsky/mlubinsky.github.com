@@ -14,7 +14,7 @@ https://habr.com/ru/articles/806027/  Java for interview
  What is a modern Java environment?
  https://news.ycombinator.com/item?id=30841581
 
-
+https://www.ej-technologies.com/jprofiler 
 
 https://nipafx.dev/java-visitor-pattern-pointless/
 
