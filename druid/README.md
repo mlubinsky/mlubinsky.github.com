@@ -1,10 +1,24 @@
+# Druid and Pinot
+
 https://habr.com/ru/articles/809751/
+
+https://medium.com/@Tom1212121/clickhouse-vs-druid-vs-pinot-complex-sql-joins-and-storage-e41c5cc04061
+
+https://startree.ai/blog/a-tale-of-three-real-time-olap-databases
+
+https://rockset.com/comparison/apache-druid-vs-apache-pinot/
+
+https://imply.io/blog/choosing-a-database-for-real-time-analytics-druid-and-pinot/
+
 ```
-Apache Druid and Apache Pinot are both fundamentally similar because they store data and process queries on the same nodes,
+Apache Druid and Apache Pinot are both fundamentally similar because
+they store data and process queries on the same nodes,
 deviating from the decoupled architecture of BigQuery. 
-Druid and Pinot both have their data storing format with indexes, are tightly coupled with their query processing engines, 
+Druid and Pinot both have their data storing format with indexes,
+are tightly coupled with their query processing engines, 
 and unsupportiveness of large data volumes between nodes,
-so the queries run faster in both than Big Data processing systems like Presto, Hive, Spark, Kudu and Parquet.
+so the queries run faster in both
+than Big Data processing systems like Presto, Hive, Spark, Kudu and Parquet.
 ```
 
 ### Druid Ingestion
@@ -150,7 +164,7 @@ https://medium.com/@knoldus/sql-on-apache-druid-part-ii-which-sql-workload-will-
 ```
 ls -ltr  /usr/local/bin/ | grep druid | cut -b 53-200
 
-druid-broker.sh -> ../Cellar/druid/0.22.0/bin/druid-broker.sh
+ druid-broker.sh -> ../Cellar/druid/0.22.0/bin/druid-broker.sh
  druid-coordinator.sh -> ../Cellar/druid/0.22.0/bin/druid-coordinator.sh
  druid-historical.sh -> ../Cellar/druid/0.22.0/bin/druid-historical.sh
  druid-jconsole.sh -> ../Cellar/druid/0.22.0/bin/druid-jconsole.sh
