@@ -1,5 +1,7 @@
 ### DuckDB
 
+https://www.youtube.com/watch?v=JoVHITW_WeE
+
 https://duckdb.org/2024/08/19/duckdb-tricks-part-1
 
 https://towardsdatascience.com/my-first-billion-of-rows-in-duckdb-11873e5edbb5
