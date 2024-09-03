@@ -1,5 +1,8 @@
 https://parlance-labs.com/education/
 
+Book: Essential Math for AI: Next‑Level Mathematics for Efficient and Successful AI Systems
+https://dokumen.pub/essential-math-for-ai-next-level-mathematics-for-efficient-and-successful-ai-systems-1nbsped-1098107632-9781098107635.html
+
 https://www.justinmath.com/books/
 
 https://physicsbaseddeeplearning.org/intro.html . BOOK
