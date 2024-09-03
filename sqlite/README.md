@@ -1,4 +1,7 @@
 ### DuckDB
+
+https://habr.com/ru/articles/829502/
+
 https://habr.com/ru/companies/yoomoney/articles/840624/
 
 https://www.youtube.com/watch?v=JoVHITW_WeE
