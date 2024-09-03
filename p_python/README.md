@@ -2520,8 +2520,17 @@ https://realpython.com/pandas-plot-python/
  https://github.com/man-group/dtale
  
 
-### Pipeline
+### Pipeline tools
+
+https://hamilton.dagworks.io/en/latest/
+
+https://pipefunc.readthedocs.io/en/latest/
+
 https://pathway.com/
+
+### Tree algo 
+
+https://queelius.github.io/AlgoTree/introduction.html
 
 ### Query CSV, JSON and Parquet files
 
