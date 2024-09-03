@@ -3,6 +3,8 @@ https://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/
 
 https://habr.com/ru/articles/805271/   Pandas
 
+https://github.com/adamerose/pandasgui
+
 https://habr.com/ru/companies/otus/articles/805801/ Time series
 
 https://arrow.apache.org/datafusion/user-guide/introduction.html  Apache DataFusion 
