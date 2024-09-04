@@ -18,7 +18,7 @@ dbldatagen, which is a Python Databricks Lab Project that allows us to generate 
 
 No Payment requied ✅
 
-🔗 7000+ Course Free Access : https://lnkd.in/grzQeaZa
+🔗 7000+ Course Free Access : https://lnkd.in/grzQeaZa   https://lnkd.in/efnsEvpF 
 
 🔗 Google Data Analytics
 https://lnkd.in/g6zmN3C3
