@@ -1,3 +1,9 @@
+Databricks System tables
+
+https://www.youtube.com/watch?v=LcRWHzk8Wm4
+
+
+
 https://medium.com/@lminhkhoa/speed-up-databricks-jobs-with-multi-threading-899a983c611a
 
 ```
