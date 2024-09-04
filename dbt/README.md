@@ -1,4 +1,16 @@
-Databricks System tables
+### SQLFrame  
+
+https://github.com/eakmanrq/sqlframe
+```
+from sqlframe import activate
+activate("duckdb")
+
+from pyspark.sql import SparkSession
+spark=SparkSession.builder.getOrCreate()
+# spark is actually an SQLFrame DucDBSession
+```
+
+### Databricks System tables
 
 https://www.youtube.com/watch?v=LcRWHzk8Wm4
 
