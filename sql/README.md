@@ -1,3 +1,29 @@
+```
+The isolation levels mentioned in the SQL standard are:
+
+1. Serializable (most strict, expensive):
+-------------------------------------------
+A serializable execution produces the same effect as some serial execution of those transactions.
+A serial execution is one in which each transaction executes to completion before the next transaction begins.
+One note about Serializable level is that it is often implemented as “snapshot isolation” (e.g. Oracle)
+ due to differences in interpretation and “snapshot isolation” is not represented in the SQL standard.
+
+2. Repeatable reads:
+----------------------
+Uncommitted reads in the current transaction are visible to the current transaction
+ but changes made by other transactions (such as newly inserted rows) won’t be visible.
+
+3. Read committed:
+-------------------------
+ Uncommitted reads are not visible to the transactions. Only committed writes are visible but the phantom reads may happen.
+If another transaction inserts and commits new rows, the current transaction can see them when querying.
+
+4. Read uncommitted (least strict, cheap):
+--------------------------------------------
+Dirty reads are allowed, transactions can see not-yet-committed changes made by other transactions.
+In practice, this level could be useful to return approximate aggregates, such as COUNT(*) queries on a table.
+```
+
 ### DB Diagrams 
 https://dbdiagram.io/home . DB schema diagrams
 
