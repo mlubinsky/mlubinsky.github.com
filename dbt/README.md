@@ -10,7 +10,59 @@ https://medium.com/@lminhkhoa/speed-up-databricks-jobs-with-multi-threading-899a
 dbldatagen, which is a Python Databricks Lab Project that allows us to generate dummy data inside Databricks for simulating, testing or building demos. Create some notebook cells:
 
 %pip install dbldatagen
+
 ```
+
+
+✨They're all free! Whether you're new to AI or an experienced pro, these courses are a great way to master AI in 2024
+
+No Payment requied ✅
+
+🔗 7000+ Course Free Access : https://lnkd.in/grzQeaZa
+
+🔗 Google Data Analytics
+https://lnkd.in/g6zmN3C3
+
+🪢 Google Project Management
+https://lnkd.in/gfeFvw2J
+
+🔗 Google IT Support
+https://lnkd.in/gCSYYfba
+
+🪢 Google Digital Marketing & E-commerce
+https://lnkd.in/gQj3s9WM
+
+🔗 Google IT Automation with Python
+https://lnkd.in/gBGZV9WT
+
+🪢 Google Business Intelligence
+https://lnkd.in/g7UVQFSR
+
+🔗 Google Advanced Data Analytics
+https://lnkd.in/ghMiGXKV
+
+🪢 Google Cybersecurity
+https://lnkd.in/gGMnr-BQ
+
+🔗 Meta Database Engineer
+https://lnkd.in/gpPtb5Dv
+
+🪢 IBM Data Science
+https://lnkd.in/g3jMW-fQ
+
+🔗Indigenous Canada
+https://lnkd.in/gZqVeGtx
+
+🪢 Machine Learning
+https://lnkd.in/gShaPZQX
+
+🔗 IBM Data Analyst
+https://lnkd.in/gtJ5Vn3S
+
+🪢 Deep Learning
+https://lnkd.in/gSj38xxC
+
+
 
 https://www.linkedin.com/posts/abhisek-sahu-84a404b1_lakehouse-architecture-lakehouse-datawarehouse-activity-7225743778840506368-zaV5 
 
