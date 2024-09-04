@@ -27,7 +27,57 @@ or
 
 df.withColumn("partitions", spark_partition_id()).groupBy("partitions").count()
 
+
+
+➤ RDD vs DataFrame:
+- RDD: Low-level API, unstructured data, more control.
+- DataFrame: High-level API, optimized, structured data.
+
+➤ DataFrame vs Dataset:
+- DataFrame: Untyped API, ease of use, suitable for Python.
+- Dataset: Typed API, compile-time safety, best with Scala/Java.
+
+➤ map() vs flatMap():
+- map(): Transforms each element, returns a new RDD with the same number of elements.
+- flatMap(): Transforms each element and flattens the result, can return a different number of elements.
+
+➤ filter() vs where():
+- filter(): Filters rows based on a condition, commonly used in RDDs.
+- where(): SQL-like filtering, more intuitive in DataFrames.
+
+➤ collect() vs take():
+- collect(): Retrieves the entire dataset to the driver.
+- take(): Retrieves a specified number of rows, safer for large datasets.
+
+➤ cache() vs persist():
+- cache(): Stores data in memory only.
+- persist(): Stores data with a specified storage level (memory, disk, etc.).
+
+➤ select() vs selectExpr():
+- select(): Selects columns with standard column expressions.
+- selectExpr(): Selects columns using SQL expressions.
+
+➤ join() vs union():
+- join(): Combines rows from different DataFrames based on keys.
+- union(): Combines rows from DataFrames with the same schema.
+
+➤ withColumn() vs withColumnRenamed():
+- withColumn(): Creates or replaces a column.
+- withColumnRenamed(): Renames an existing column.
+
+➤ groupBy() vs agg():
+- groupBy(): Groups rows by a column or columns.
+- agg(): Performs aggregate functions on grouped data.
+
+➤repartition() vs coalesce():
+- repartition(): Increases or decreases the number of partitions, performs a full shuffle.
+- coalesce(): Reduces the number of partitions without a full shuffle, more efficient for reducing partitions.
+
 ```
+
+
+
+
 
 ### Оптимизируем Shuffle в Spark
 https://habr.com/ru/companies/X5Tech/articles/837348/
