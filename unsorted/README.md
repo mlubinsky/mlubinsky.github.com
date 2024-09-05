@@ -18,6 +18,9 @@
 
 
  ### LLM code assistent
+https://lmstudio.ai/
+
+https://localai.io/
 
 ```
  You can run this LLM on Ollama [0] and then use Continue [1] on VS Code.
