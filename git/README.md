@@ -104,6 +104,8 @@ https://www.elliotjordan.com/posts/pre-commit-01-intro/
 
 https://pre-commit.com/
 
+https://stefaniemolin.com/articles/devx/pre-commit/hook-creation-guide/
+
 https://builtwithdjango.com/blog/improve-your-code-with-pre-commit
 
 Create file in the root of your repo: 
