@@ -16,6 +16,24 @@
 
  https://archive.org/details/texts
 
+
+ ### LLM code assistent
+
+```
+ You can run this LLM on Ollama [0] and then use Continue [1] on VS Code.
+The setup is pretty simple:
+
+* Install Ollama (instructions for your OS on their website - for macOS, `brew install ollama`)
+
+* Download the model: `ollama pull yi-coder`
+
+* Install and configure Continue on VS Code (https://docs.continue.dev/walkthroughs/llama3.1 <- this is for Llama 3.1 but it should work by replacing the relevant bits)
+```
+[0] https://ollama.com/
+
+[1] https://www.continue.dev/
+
+
 ### Notes apps
 
 https://xournalpp.github.io/
