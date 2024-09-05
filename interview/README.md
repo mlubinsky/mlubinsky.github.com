@@ -1,3 +1,5 @@
+https://vurt.org/articles/twelve-rules/
+
 https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions
 
 https://blog.chay.dev/things-that-make-your-application-stand-out/
