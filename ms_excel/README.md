@@ -1,5 +1,48 @@
 https://habr.com/ru/articles/824050/
 
+### Column with Subcolumns
+```
+
+from openpyxl import Workbook
+from openpyxl.utils import get_column_letter
+from openpyxl.styles import Alignment
+
+# Create a new workbook and select the active worksheet
+wb = Workbook()
+ws = wb.active
+
+# Define the main header and sub-columns
+main_header = "Main Header"
+sub_columns = ["Sub-Column 1", "Sub-Column 2"]
+
+# Write the main header in cell B1 and merge it across B1 and C1
+ws.merge_cells('B1:C1')
+ws['B1'] = main_header
+
+# Center the merged main header text
+ws['B1'].alignment = Alignment(horizontal='center', vertical='center')
+
+# Write the sub-column headers in B2 and C2
+ws['B2'] = sub_columns[0]
+ws['C2'] = sub_columns[1]
+
+# Optionally, you can set the width of columns B and C for better readability
+ws.column_dimensions['B'].width = 15
+ws.column_dimensions['C'].width = 15
+
+# Save the workbook
+wb.save('excel_with_sub_columns.xlsx')
+Explanation:
+ws.merge_cells('B1:C1'): This merges cells B1 and C1 to create the main header that spans two columns.
+ws['B1'].alignment = Alignment(horizontal='center', vertical='center'): This centers the text inside the merged cell.
+ws['B2'] and ws['C2']: These lines set the sub-column headers in row 2.
+ws.column_dimensions['B'].width: This sets the width of the columns for readability (optional).
+Result:
+Cell B1 and C1 will be merged into a single "Main Header".
+Cells B2 and C2 will contain "Sub-Column 1" and "Sub-Column 2", respectively.
+This creates an Excel file where you have a merged main header with two sub-columns programmatically.
+```
+
 ### Pandas Datafdame to MS Excel Worksheet (openpyxl)
 https://openpyxl.readthedocs.io/en/stable/pandas.html
 
