@@ -2,6 +2,8 @@ https://www.pythonmorsels.com/time-complexities/
 
 https://www.mattlayman.com/blog/2024/layman-guide-python-built-in-functions/
 
+https://news.ycombinator.com/item?id=41450824 obscure Python standard libs
+
 https://www.gauge.sh/blog/how-to-visualize-your-python-projects-dependency-graph  Visualize Puthon dependency
 
 https://www.trickster.dev/post/lesser-known-parts-of-python-standard-library/
