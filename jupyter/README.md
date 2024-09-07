@@ -1,3 +1,19 @@
+```
+import pandas as pd
+columns=['A','B']
+data=[['tom',10], ['mike',20]]
+df=pd.DataFrame(data, columns=columns)
+d={}
+d['tom']='A'
+d['mike']='B'
+df['x'] = df['A'].map(d).fillna('default')
+```
+>>> df
+      A   B  x
+0   tom  10  A
+1  mike  20  B
+
+
 
 https://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/
 
