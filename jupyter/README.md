@@ -1,4 +1,68 @@
 ```
+There is Python pandas dataframe with columns A,B, C, D, E, F, G
+Values in column A  are not unique;  the records are sorted by value in A, the repeated values are in adjusted rows.
+ 
+Values in columns  C ,  E and G are numeric.
+We need to calculate the average in column C per value in column A.
+The same average calculation should be done for columns E and G.
+
+We need to create new row in dataframe after every group in A and put 
+In column A the word “Average” and populate in this row the columns C, E and G with calculated average value.
+
+import pandas as pd
+
+ 
+data = {
+    'A': ['X', 'X', 'Y', 'Y', 'Z', 'Z', 'Z'],
+    'B': [1, 2, 3, 4, 5, 6, 7],
+    'C': [10, 20, 30, 40, 50, 60, 70],
+    'D': [15, 25, 35, 45, 55, 65, 75],
+    'E': [100, 200, 300, 400, 500, 600, 700],
+    'F': [150, 250, 350, 450, 550, 650, 750],
+    'G': [1000, 2000, 3000, 4000, 5000, 6000, 7000]
+}
+
+df = pd.DataFrame(data)
+
+def add_average_rows(df):
+    # Create an empty list to store the new DataFrame rows
+    new_rows = []
+    
+    # Group by column 'A'
+    for key, group in df.groupby('A'):
+        # Append the original rows to new_rows
+        new_rows.append(group)
+        
+        # Calculate the averages for columns C, E, and G
+        avg_c = group['C'].mean()
+        avg_e = group['E'].mean()
+        avg_g = group['G'].mean()
+        
+        # Create a new row with 'Average' in column 'A' and the calculated averages
+        average_row = {
+            'A': 'Average',
+            'B': None,
+            'C': avg_c,
+            'D': None,
+            'E': avg_e,
+            'F': None,
+            'G': avg_g
+        }
+        
+        # Append the average row to new_rows
+        new_rows.append(pd.DataFrame([average_row]))
+    
+    # Concatenate all the rows (including the new average rows) into a new DataFrame
+    new_df = pd.concat(new_rows, ignore_index=True)
+    
+    return new_df
+
+# Apply the function to the DataFrame
+new_df = add_average_rows(df)
+print(new_df)
+```
+
+```
 import pandas as pd
 columns=['A','B']
 data=[['tom',10], ['mike',20]]
