@@ -10,24 +10,27 @@ We need to create new row in dataframe after every group in A and put
 In column A the word “Average” and populate in this row the columns C, E and G with calculated average value.
 
 Gemini
-------
-import pandas as pd
 
-# Assuming you have your DataFrame named 'df'
-
+#------------------------
+def add_average_gemini(df):
+#------------------------
 # Group by column A and calculate averages for columns C, E, and G
-grouped_df = df.groupby('A')[['C', 'E', 'G']].mean().reset_index()
+ grouped_df = df.groupby('A')[['C', 'E', 'G']].mean().reset_index()
 
-# Create a new DataFrame with the calculated averages and a label for column A
-average_rows = pd.DataFrame({'A': 'Average', 'C': grouped_df['C'], 'E': grouped_df['E'], 'G': grouped_df['G']})
+# Add a new column to indicate the group for the average rows
+ grouped_df['A'] = grouped_df['A'] + '_Average'
 
-# Concatenate the original DataFrame with the average rows
-result_df = pd.concat([df, average_rows], ignore_index=True)
+# Combine the original DataFrame with the averaged rows
+ result_df = pd.concat([df, grouped_df], sort=False)
 
-# Sort the result DataFrame by column A to maintain the original order
-result_df.sort_values('A', inplace=True)
+# Sort the result DataFrame by column A and a new column indicating if it's an average row
+ result_df['IsAverage'] = result_df['A'].str.endswith('_Average')
+ result_df.sort_values(['A', 'IsAverage'], inplace=True)
 
-print(result_df)
+# Drop the temporary 'IsAverage' column
+ result_df.drop(columns=['IsAverage'], inplace=True)
+
+ print(result_df)
 
 GhatGPT
 --------
