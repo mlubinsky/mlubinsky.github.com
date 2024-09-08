@@ -1,4 +1,5 @@
-https://habr.com/ru/articles/821993/ Статический анализ структуры базы данных 
+https://habr.com/ru/articles/821993/ Статический анализ структуры базы данных  
+https://habr.com/ru/articles/839402/ Статический анализ структуры базы данных  
 
 ## Search
 https://anyblockers.com/posts/postgres-as-a-search-engine
