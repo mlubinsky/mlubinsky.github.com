@@ -1,3 +1,48 @@
+### Different ways to read data into hashtag#PySpark:
+```
+1.Reading from CSV Files:
+ df = spark.read.csv("path/to/file.csv", header=True, inferSchema=True)
+
+2. Reading from JSON Files:
+ df = spark.read.json("path/to/file.json")
+
+3. Reading from Parquet Files:
+ df = spark.read.parquet("path/to/file.parquet")
+
+4. Reading from Text Files:
+ df = spark.read.text("path/to/file.txt")
+
+5. Reading from Database:
+ You can read from databases using JDBC:
+ ```python
+ df = spark.read.format("jdbc").options(
+ url="jdbc:postgresql://host:port/dbname",
+ driver="org.postgresql.Driver",
+ dbtable="table_name",
+ user="username",
+ password="password"
+ ).load()
+
+6.Reading from Hive Tables:
+ If you have a Hive context set up:
+ df = spark.sql("SELECT * FROM hive_table_name")
+
+7. Reading from ORC Files:
+ df = spark.read.orc("path/to/file.orc")
+
+8. Reading from Avro Files** (requires the Avro package):
+ df = spark.read.format("avro").load("path/to/file.avro")
+
+9. Reading from Kafka:
+ To read streaming data from Kafka:
+ df = spark.readStream.format("kafka").option("kafka.bootstrap.servers", "server:port").option("subscribe", "topic").load()
+
+10. Reading from Delta Lake:
+ If using Delta Lake:
+ df = spark.read.format("delta").load("path/to/delta_table")
+```
+
+
 https://books.japila.pl/
 
 https://www.linkedin.com/posts/riyakhandelwal_functions-in-databricks-activity-7231638740463411200-SrwX 
