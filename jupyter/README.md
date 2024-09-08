@@ -81,7 +81,7 @@ def add_average_rows(df):
 new_df = add_average_rows(df)
 print(new_df)
 ```
-
+### pandas map()
 ```
 import pandas as pd
 columns=['A','B']
