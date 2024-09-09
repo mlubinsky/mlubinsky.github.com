@@ -17,7 +17,6 @@ print(f"Number of columns: {number_of_columns}")
 
 ### Column with Subcolumns
 ```
-
 from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment
