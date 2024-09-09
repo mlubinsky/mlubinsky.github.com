@@ -1,5 +1,20 @@
 https://habr.com/ru/articles/824050/
 
+### Number of rows and columns
+```
+from openpyxl import load_workbook
+
+wb = load_workbook('your_excel_file.xlsx')
+ws = wb.active  # or specify a sheet by name: wb['Sheet1']
+
+# Get the number of rows and columns
+number_of_rows = ws.max_row
+number_of_columns = ws.max_column
+
+print(f"Number of rows: {number_of_rows}")
+print(f"Number of columns: {number_of_columns}")
+```
+
 ### Column with Subcolumns
 ```
 
