@@ -47,11 +47,14 @@ ws.column_dimensions['C'].width = 15
 
 # Save the workbook
 wb.save('excel_with_sub_columns.xlsx')
+
+
 Explanation:
 ws.merge_cells('B1:C1'): This merges cells B1 and C1 to create the main header that spans two columns.
 ws['B1'].alignment = Alignment(horizontal='center', vertical='center'): This centers the text inside the merged cell.
 ws['B2'] and ws['C2']: These lines set the sub-column headers in row 2.
 ws.column_dimensions['B'].width: This sets the width of the columns for readability (optional).
+
 Result:
 Cell B1 and C1 will be merged into a single "Main Header".
 Cells B2 and C2 will contain "Sub-Column 1" and "Sub-Column 2", respectively.
