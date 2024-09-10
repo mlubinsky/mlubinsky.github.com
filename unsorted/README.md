@@ -1,3 +1,5 @@
+https://www.linkedin.com/my-items/saved-posts/
+
 - ChatGPT 
 - gemini.google.com
 - https://claude.ai/
