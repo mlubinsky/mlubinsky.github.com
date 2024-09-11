@@ -1,19 +1,23 @@
 Casual inference:
 https://matheusfacure.github.io/python-causality-handbook/landing-page.html
 
-https://habr.com/ru/companies/otus/articles/839922/
+https://habr.com/ru/companies/otus/articles/839922/ Как ускорить A/B тесты: несколько способов
 
 https://habr.com/ru/post/653363/ . [Часть 1] Математика в АБ-тестах. Что такое z-score и p-value?
 
-https://habr.com/ru/companies/otus/articles/815769/
+https://habr.com/ru/companies/otus/articles/815769/ Основные алгоритмы многоруких бандитов в рекомендательных системах
 
-https://habr.com/ru/articles/781060/
+https://habr.com/ru/companies/X5Tech/articles/842426/ Проверка большого количество гипотез 
 
-https://habr.com/ru/companies/sbermarket/articles/774608/
+https://habr.com/ru/companies/ods/articles/325416/ Байесовские многорукие бандиты против A/B тестов
+
+https://habr.com/ru/articles/781060/ АБ тесты и подводные камни при их автоматизации
+
+https://habr.com/ru/companies/sbermarket/articles/774608/ База: айсберг A/B-тестов
 
 https://habr.com/ru/articles/772940/  проверять сразу несколько гипотез на одном и том же наборе данных
 
-https://habr.com/ru/companies/X5Tech/articles/768008/ 
+https://habr.com/ru/companies/X5Tech/articles/768008/  От A/B-тестирования к Causal Inference в офлайн ритейле
 
 https://news.ycombinator.com/item?id=41099028 A/B test using Python
 
@@ -25,17 +29,17 @@ https://habr.com/ru/companies/ozontech/articles/738318/ bandits
 
 https://habr.com/ru/company/vk/blog/673914/ bandits
 
-https://habr.com/ru/post/558836/ Мир статистических гипотез
+https://habr.com/ru/post/558836/ __Мир статистических гипотез_
 
 https://habr.com/ru/company/mygames/blog/677074/ x2 text
 
 https://vkteam.medium.com/practitioners-guide-to-statistical-tests-ed2d580ef04f
 
-https://habr.com/ru/company/plarium/blog/526706/
+https://habr.com/ru/company/plarium/blog/526706/ Проведение A/B-тестирования: пошаговый разбор
 
-https://habr.com/ru/company/mailru/blog/557308/
+https://habr.com/ru/company/mailru/blog/557308/ Время — деньги: анализируй А/В-тесты разумно
 
-https://habr.com/ru/post/554194/
+https://habr.com/ru/post/554194/ Как выбрать уровень статистической значимости для AB-теста
 
 https://news.ycombinator.com/item?id=25014901 Bayes vs. Freq
 
@@ -45,9 +49,9 @@ https://rpsychologist.com/d3/nhst/
 
 <http://bytepawn.com/tag/ab-testing.html>
 
-<https://habr.com/ru/company/boodet_online/blog/498688/>  
+<https://habr.com/ru/company/boodet_online/blog/498688/>   Большой гайд по A/B-тестированию
 
-https://habr.com/ru/company/X5Group/blog/596279/
+https://habr.com/ru/company/X5Group/blog/596279/ Стратификация. Как разбиение выборки повышает чувствительность A/B теста
 
 ## Churn rate + Retention = 100 %
 https://www.sisense.com/blog/how-to-calculate-cohort-retention-in-sql/
