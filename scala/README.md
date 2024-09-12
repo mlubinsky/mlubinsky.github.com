@@ -1,3 +1,5 @@
+https://scala-cli.virtuslab.org/ CLI
+
 https://scastie.scala-lang.org/ Online Scala compiler
 
 <https://riiswa.github.io/Scala-CheatSheet/>
