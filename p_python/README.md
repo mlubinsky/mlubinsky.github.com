@@ -8,6 +8,8 @@ https://www.gauge.sh/blog/how-to-visualize-your-python-projects-dependency-graph
 
 https://www.trickster.dev/post/lesser-known-parts-of-python-standard-library/
 
+https://habr.com/ru/articles/842792/ working with big files
+
 https://habr.com/ru/articles/830098/ msgspec. Библиотека для сериализации и десериализации чего угодно
 
 https://habr.com/ru/articles/830158/ Python. Внутреннее устройство множеств set и словарей dict. Часть 2 из 2
