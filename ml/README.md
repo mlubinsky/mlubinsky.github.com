@@ -1,5 +1,7 @@
 https://parlance-labs.com/education/
 
+https://www.kdnuggets.com/7-free-cloud-ide-for-data-science-that-you-are-missing-out
+
 Book: Essential Math for AI: Next‑Level Mathematics for Efficient and Successful AI Systems
 
 https://dokumen.pub/essential-math-for-ai-next-level-mathematics-for-efficient-and-successful-ai-systems-1nbsped-1098107632-9781098107635.html
