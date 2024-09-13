@@ -2364,6 +2364,9 @@ func_name(f)
 
  
 ### Enumeration
+
+https://roarepally.com/blog/python-311-enums
+
 https://florian-dahlitz.de/articles/why-you-should-use-more-enums-in-python
 
 ```
