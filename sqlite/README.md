@@ -108,6 +108,8 @@ https://sqlpkg.org/
 
 https://sqlite-utils.datasette.io/en/stable/cli.html 
 
+https://antonz.org/sqlite-is-not-a-toy-database/
+
 https://antonz.org/sqlean-py/
  
 https://www.joseferben.com/posts/3-things-that-surprised-me-while-running-sqlite-in-production/
