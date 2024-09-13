@@ -14,6 +14,8 @@ https://stumpy.readthedocs.io/
 
 https://sysidentpy.org/ 
 
+https://www.reddit.com/r/Python/comments/1fexk8e/which_python_libraries_would_be_most_suitable_for/
+
 ### Skforekast
 
 https://github.com/cerlymarco/tsmoothie
