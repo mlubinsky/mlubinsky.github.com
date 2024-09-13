@@ -1,4 +1,4 @@
-### Different ways to read data into hashtag#PySpark:
+### Different ways to read data into PySpark:
 ```
 1.Reading from CSV Files:
  df = spark.read.csv("path/to/file.csv", header=True, inferSchema=True)
@@ -41,6 +41,51 @@
  If using Delta Lake:
  df = spark.read.format("delta").load("path/to/delta_table")
 ```
+
+### Find the median salary for each department?
+```
+
+from pyspark.sql import functions as F
+from pyspark.sql.window import Window
+ 
+Sample Data
+
+emp_data = [
+ (1, 101, 60000),
+ (2, 101, 65000),
+ (3, 101, 70000),
+ (4, 102, 55000),
+ (5, 102, 60000),
+ (6, 102, 62000),
+ (7, 103, 70000),
+ (8, 103, 75000),
+ (9, 103, 80000),
+]
+
+department_data = [
+ (101, 'Sales'),
+ (102, 'HR'),
+ (103, 'IT'),
+]
+
+emp_df = spark.createDataFrame(emp_data, ['emp_id', 'dept_id', 'salary'])
+dept_df = spark.createDataFrame(department_data, ['dept_id', 'dept_name'])
+
+windowSpec = Window.partitionBy('dept_id').orderBy('salary')
+
+# Add row number and total count for each department
+emp_with_rank = emp_df.withColumn('row', F.row_number().over(windowSpec))\
+ .withColumn('row_desc', F.count('salary').over(windowSpec.rowsBetween(Window.unboundedPreceding, Window.unboundedFollowing)) - F.row_number().over(windowSpec))
+
+median_df = emp_with_rank.groupBy('dept_id')\
+ .agg(F.expr("percentile_approx(salary, 0.5)").alias('median_salary'))
+
+result_df = median_df.join(dept_df, 'dept_id').select('dept_name', 'median_salary')
+
+result_df.show()
+
+```
+
 
 
 https://books.japila.pl/
