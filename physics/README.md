@@ -1,6 +1,6 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
-
+https://vk.com/quantpublic
 
 https://www.feynmanlectures.caltech.edu/
 
