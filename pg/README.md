@@ -14,6 +14,7 @@ https://mccue.dev/pages/8-16-24-just-use-postgres
 
 https://spin.atomicobject.com/redis-postgresql/
 
+https://habr.com/ru/articles/843324/
 
 https://habr.com/ru/companies/otus/articles/817187/ Интеграция PostgreSQL с другими СУБД через dblink
 
