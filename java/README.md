@@ -6,6 +6,8 @@ Modern Java in Action
 https://www.youtube.com/watch?v=miUbs3mqPJE
 
 https://habr.com/ru/articles/806027/  Java for interview
+
+https://habr.com/ru/companies/otus/articles/843394/ Memory Fences и volatile в Java: низкоуровневые гарантии порядка памяти
  
  http://whichjdk.com/
 
