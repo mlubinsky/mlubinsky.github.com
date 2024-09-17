@@ -23,6 +23,8 @@ If another transaction inserts and commits new rows, the current transaction can
 Dirty reads are allowed, transactions can see not-yet-committed changes made by other transactions.
 In practice, this level could be useful to return approximate aggregates, such as COUNT(*) queries on a table.
 ```
+Why not SQL?
+https://habr.com/ru/companies/lsfusion/articles/463095/
 
 ### DB Diagrams 
 https://dbdiagram.io/home . DB schema diagrams
