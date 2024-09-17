@@ -26,6 +26,8 @@ In practice, this level could be useful to return approximate aggregates, such a
 Why not SQL?
 https://habr.com/ru/companies/lsfusion/articles/463095/
 
+https://habr.com/ru/companies/cedrusdata/articles/843882/
+
 ### DB Diagrams 
 https://dbdiagram.io/home . DB schema diagrams
 
