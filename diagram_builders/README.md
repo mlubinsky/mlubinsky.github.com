@@ -1,3 +1,7 @@
+BPMN 2.0 универсальный подход при построении диаграмм
+https://habr.com/ru/articles/843942/
+
+
 https://www.freecodecamp.org/news/how-to-create-software-architecture-diagrams-using-the-c4-model/
 
 https://habr.com/ru/articles/803671/ Diagram buider
