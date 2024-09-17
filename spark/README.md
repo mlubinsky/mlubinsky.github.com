@@ -466,6 +466,10 @@ df.pandas_api().isna().sum()
 ```
 
 ### groupByKey() reduceByKey() aggregateByKey()
+```
+Spark provides two ways to group and process data. Grouping can be done via groupBy and groupByKey. These functions return a RelationalGroupedDataset and a KeyValueGroupedDataset[K, V], respectively.
+```
+https://www.gresearch.com/news/sparks-groupbykey-should-be-avoided-and-heres-why
 
 https://stackoverflow.com/questions/43364432/spark-difference-between-reducebykey-vs-groupbykey-vs-aggregatebykey-vs-combi
 
