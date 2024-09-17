@@ -1,5 +1,7 @@
 https://awesomecpp.com/
 
+https://habr.com/ru/companies/timeweb/articles/842878/
+
 https://www.thephysicsmill.com/2024/08/30/multi-dimensional-dynamically-sized-arrays-in-c-and-c-the-right-way/
 
 https://habr.com/ru/articles/838392/
