@@ -1853,6 +1853,8 @@ https://towardsdatascience.com/python-for-data-engineers-f3d5db59b6dd
 
 https://www.dabeaz.com/generators/Generators.pdf
 
+https://www.speakeasy.com/post/python-http-clients-requests-vs-httpx-vs-aiohttp
+
 https://andrewodendaal.com/mastering-pythons-yield-a-comprehensive-guide-to-advanced-usage/
 
 A function is a generator function if and only if it uses "yield" instead of "return"
