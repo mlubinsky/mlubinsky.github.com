@@ -37,6 +37,8 @@ https://habr.com/ru/post/456116/  yEd Graph Editor построить краси
  
 https://schemaspy.org/ 
 
+https://www.crunchydata.com/blog/window-functions-for-data-analysis-with-postgres
+
 ### GROUP BY vs Window Function OVER (Partition By ..)
 
 https://stackoverflow.com/questions/2404565/what-is-the-difference-between-partition-by-and-group-by
@@ -107,7 +109,7 @@ https://lnkd.in/gpMbU-dF
 3. Adobe Interesting SQL Interview Question | Solving Using 2 Approaches | Data Analytics
 https://lnkd.in/g_-_9ymd
 
-4. Spotify SQL Interview Problem | Top 5 Artists | Aggregation and Window Functions in SQL
+4. Spotify SQL Interview Problem | Top 5 Artists | Aggregation and  Functions in SQL
 https://lnkd.in/gtfaugd3
 
 5. L&T SQL Interview Problem | Print Highest and Lowest Salary Employees in Each Department
@@ -448,6 +450,8 @@ order by product;
 
 
 ### Window functions
+
+https://www.crunchydata.com/blog/window-functions-for-data-analysis-with-postgres
 
 https://towardsdatascience.com/understand-sql-window-functions-once-and-for-all-4447824c1cb4
 
