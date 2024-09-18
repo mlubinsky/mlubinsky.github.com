@@ -2492,6 +2492,18 @@ https://github.com/TekWizely/run
 
 ### Data Quality check
 
+https://habr.com/ru/articles/743794/
+
+https://habr.com/ru/companies/unidata/articles/667636/
+
+https://habr.com/ru/companies/ssp-soft/articles/820829/
+
+https://habr.com/ru/companies/datafold/articles/567712/
+
+https://habr.com/ru/companies/ru_mts/articles/817483/
+
+https://docs.soda.io/
+
 https://pypi.org/project/data-quality-check/
 
 https://www.kdnuggets.com/7-essential-data-quality-checks-with-pandas
