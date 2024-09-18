@@ -1043,7 +1043,7 @@ https://github.com/prabhupant/python-ds
 
 https://itnext.io/dependency-injection-in-python-a1e56ab8bdd0
 
-https://medium.com/@fareedkhandev/best-data-analysis-library-in-python-ad2572288017 PyGWalker
+
 
 
 ### Profiling
@@ -2490,7 +2490,17 @@ https://pydoit.org/
 https://github.com/TekWizely/run
 
 
+### Data Quality check
+
+https://pypi.org/project/data-quality-check/
+
+https://www.kdnuggets.com/7-essential-data-quality-checks-with-pandas
+
+https://www.telm.ai/blog/8-essential-python-libraries-for-mastering-data-quality-checks/
+
 ### Data Tools
+
+https://medium.com/@fareedkhandev/best-data-analysis-library-in-python-ad2572288017 PyGWalker
 
 https://datatable.readthedocs.io/en/latest/
 
