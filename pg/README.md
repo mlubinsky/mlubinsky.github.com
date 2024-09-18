@@ -3,6 +3,8 @@ https://habr.com/ru/articles/839402/ Статический анализ стр�
 
 https://habr.com/ru/companies/tensor/articles/842158/ query plan builder
 
+https://www.naiyerasif.com/post/2024/09/04/stop-using-serial-in-postgres/
+
 ## Search
 https://anyblockers.com/posts/postgres-as-a-search-engine
 
