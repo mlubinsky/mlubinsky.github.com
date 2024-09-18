@@ -2494,6 +2494,8 @@ https://github.com/TekWizely/run
 
 https://habr.com/ru/articles/743794/
 
+https://habr.com/ru/companies/ruvds/articles/451478/ pandas-profiling
+
 https://habr.com/ru/companies/unidata/articles/667636/
 
 https://habr.com/ru/companies/ssp-soft/articles/820829/
