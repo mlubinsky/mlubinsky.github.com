@@ -2,6 +2,9 @@ I bought this:
 https://www.udemy.com/cart/success/1027511410/
 
 
+
+https://habr.com/ru/companies/otus/articles/843522/
+
 Snowflake vs Databricks
 https://medium.com/@hugolu87/snowflake-vs-databricks-2024-actually-useful-5f2506e5d0e2
 
