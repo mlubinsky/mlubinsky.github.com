@@ -1,5 +1,5 @@
 Dataframe with following columns:
- - date (in format YYYY-MM-DD)
+ - date ( string in format YYYY-MM-DD)
  - device (string)
  - build (string)
  - metric (string)
