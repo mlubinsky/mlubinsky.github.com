@@ -1,3 +1,28 @@
+Dataframe with following columns:
+ - date (in format YYYY-MM-DD)
+ - device (string)
+ - build (string)
+ - metric (string)
+ - number (float)
+
+For every date in dataframe there are many builds, metrics and devices.
+
+Input: date range
+
+TODO:
+Bar chart #1 (per metric): 
+Title: date range
+x-axis: date
+y-axis: avg(number) per build 
+
+
+Bar chart #1 (per metric):
+x-axis: build
+y-axis: avg(number) per build 
+
+
+
+
 https://pyvista.org/  (on top of VTK)
 
 https://python-graph-gallery.com/
