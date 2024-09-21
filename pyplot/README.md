@@ -53,6 +53,67 @@ for metric in unique_metrics:
     plt.show()
 
 ```
+### Save for png or jpeg :
+```
+Please also save all bar charts created in code above in one  image file in jpeg or png format.
+
+The image dimensions  should be a configurable parameters.
+
+Using a Subplot Grid:
+
+To efficiently combine multiple charts into a single image, we can use a subplot grid. This allows us to arrange the charts in a specified layout.
+
+Updated Code:
+
+Python
+import matplotlib.pyplot as plt
+
+# ... (rest of your code)
+
+# Set image dimensions (adjust as needed)
+image_width = 12
+image_height = 8
+
+# Calculate number of rows and columns based on number of metrics
+num_metrics = len(unique_metrics)
+num_rows = int(num_metrics / 3) + 1
+num_cols = 3
+
+# Create a subplot grid
+fig, axs = plt.subplots(num_rows, num_cols, figsize=(image_width, image_height))
+
+# Iterate over metrics and plot
+for i, metric in enumerate(unique_metrics):
+    row = i // num_cols
+    col = i % num_cols
+
+    filtered_data = grouped_data[grouped_data['metric'] == metric]
+
+    axs[row, col].bar(filtered_data['build'], filtered_data['number'], color=plt.cm.tab20(range(len(filtered_data))))
+    axs[row, col].set_title(f"Average Number per Build for Metric: {metric}")
+    axs[row, col].set_xlabel("Build")
+    axs[row, col].set_ylabel("Average Number")
+
+    # Create a legend
+    legend_labels = [f"{build}: {color}" for build, color in zip(filtered_data['build'], plt.cm.tab20(range(len(filtered_data))))]
+    axs[row, col].legend(legend_labels, title="Build Legend")
+
+# Adjust spacing between subplots
+plt.tight_layout()
+
+# Save the figure as an image
+plt.savefig("combined_charts.png")  # Replace 'combined_charts.png' with your desired filename
+Use code with caution.
+
+Explanation:
+
+Image Dimensions: Set image_width and image_height to control the size of the combined image.
+Subplot Grid: Create a subplot grid using plt.subplots(). The number of rows and columns is calculated based on the number of metrics.
+Iterating and Plotting: Iterate over metrics, plot each chart on the corresponding subplot using axs[row, col].
+Layout Adjustment: Use plt.tight_layout() to adjust spacing between subplots.
+Saving: Save the figure as an image using plt.savefig().
+This code will create a single image containing all the bar charts, arranged in a grid, with adjustable dimensions. You can customize the filename and image format as needed.
+```
 
 Dataframe with following columns:
  - date ( string in format YYYY-MM-DD)
