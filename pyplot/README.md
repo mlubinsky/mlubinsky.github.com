@@ -139,6 +139,68 @@ y-axis: avg(number) per build
 ```
 
 
+### ChatGPT
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import math
+
+# Function to generate bar charts for each metric
+def plot_metrics(df, image_size=(10, 10), output_file="metrics_plots.png"):
+    # Set the style of seaborn for better visualizations
+    sns.set(style="whitegrid")
+    
+    # Get unique metrics
+    metrics = df['metric'].unique()
+    
+    # Calculate the number of rows and columns for subplots
+    num_metrics = len(metrics)
+    ncols = 2  # We fix the number of columns to 2
+    nrows = math.ceil(num_metrics / ncols)
+
+    # Create subplots
+    fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=image_size)
+    axes = axes.flatten()  # Flatten the axes for easier indexing
+    
+    # Loop over each metric
+    for i, metric in enumerate(metrics):
+        ax = axes[i]
+        
+        # Filter dataframe for the current metric
+        metric_df = df[df['metric'] == metric]
+        
+        # Group by build and calculate the average of the number column
+        avg_df = metric_df.groupby('build')['number'].mean().reset_index()
+        
+        # Plot the bar chart
+        sns.barplot(x='build', y='number', data=avg_df, ax=ax, palette="husl")
+
+        # Set title and labels
+        ax.set_title(f"Metric: {metric}")
+        ax.set_xlabel('Build')
+        ax.set_ylabel('Average Number')
+        ax.legend(title="Build", loc='best')
+        
+        # Rotate x labels for better readability
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')
+    
+    # Adjust layout
+    plt.tight_layout()
+    
+    # Save the plot as a file
+    fig.savefig(output_file, format=output_file.split('.')[-1])
+    plt.close()
+
+# Example usage
+# Assuming df is your pandas dataframe
+# df = pd.read_csv("your_dataframe.csv")
+# plot_metrics(df, image_size=(20, 10), output_file="metrics_plots.png")
+```
+
+
+
+
 
 https://pyvista.org/  (on top of VTK)
 
