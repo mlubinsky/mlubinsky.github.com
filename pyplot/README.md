@@ -10,16 +10,16 @@ For every date in dataframe there are many builds, metrics and devices.
 Input: date range
 
 TODO:
+```
 Bar chart #1 (per metric): 
 Title: date range
 x-axis: date
 y-axis: avg(number) per build 
 
-
-Bar chart #1 (per metric):
+Bar chart #2 (per metric):
 x-axis: build
 y-axis: avg(number) per build 
-
+```
 
 
 
