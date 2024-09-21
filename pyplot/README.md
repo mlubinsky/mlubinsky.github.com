@@ -1,3 +1,59 @@
+```
+There is Python pandas dataframe with following columns:
+
+- date ( string in format YYYY-MM-DD)
+
+- device (string)
+
+- build (string)
+
+- metric (string)
+
+- number (float).
+
+For every date in dataframe there are many builds, metrics and devices.
+
+Please create separate bar chart for every metric value in dataframe.
+
+The x-axis should be the build column and the y-axis is average(number) per build.
+
+All bars should have a different colors  per build and the legend should provide the mapping between the
+
+build and the bar color  
+```
+Gemini:
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming you have your DataFrame named 'df'
+# Replace 'your_data.csv' with your actual file path if using a CSV
+# df = pd.read_csv('your_data.csv')
+
+# Group by metric and build, calculate average number
+grouped_data = df.groupby(['metric', 'build'])['number'].mean().reset_index()
+
+# Unique metrics for iteration
+unique_metrics = grouped_data['metric'].unique()
+
+# Create a separate bar chart for each metric
+for metric in unique_metrics:
+    filtered_data = grouped_data[grouped_data['metric'] == metric]
+
+    plt.figure(figsize=(10, 6))
+    plt.bar(filtered_data['build'], filtered_data['number'], color=plt.cm.tab20(range(len(filtered_data))))
+    plt.title(f"Average Number per Build for Metric: {metric}")
+    plt.xlabel("Build")
+    plt.ylabel("Average Number")
+
+    # Create a legend
+    legend_labels = [f"{build}: {color}" for build, color in zip(filtered_data['build'], plt.cm.tab20(range(len(filtered_data))))]
+    plt.legend(legend_labels, title="Build Legend")
+
+    plt.show()
+
+```
+
 Dataframe with following columns:
  - date ( string in format YYYY-MM-DD)
  - device (string)
