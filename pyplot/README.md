@@ -2,13 +2,9 @@
 There is Python pandas dataframe with following columns:
 
 - date ( string in format YYYY-MM-DD)
-
 - device (string)
-
 - build (string)
-
 - metric (string)
-
 - number (float).
 
 For every date in dataframe there are many builds, metrics and devices.
@@ -21,7 +17,7 @@ All bars should have a different colors  per build and the legend should provide
 
 build and the bar color  
 ```
-Gemini:
+### Gemini:
 ```
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -53,7 +49,7 @@ for metric in unique_metrics:
     plt.show()
 
 ```
-### Save for png or jpeg :
+### Gemini  - save for png or jpeg :
 ```
 Please also save all bar charts created in code above in one  image file in jpeg or png format.
 
@@ -114,28 +110,46 @@ Layout Adjustment: Use plt.tight_layout() to adjust spacing between subplots.
 Saving: Save the figure as an image using plt.savefig().
 This code will create a single image containing all the bar charts, arranged in a grid, with adjustable dimensions. You can customize the filename and image format as needed.
 ```
+### Gemini: On x-axis should be the date and for every date calculate and plot avg(number) per build;so it should be several bars per date.
 
-Dataframe with following columns:
- - date ( string in format YYYY-MM-DD)
- - device (string)
- - build (string)
- - metric (string)
- - number (float)
 
-For every date in dataframe there are many builds, metrics and devices.
-
-Input: date range
-
-TODO:
 ```
-Bar chart #1 (per metric): 
-Title: date range
-x-axis: date
-y-axis: avg(number) per build 
 
-Bar chart #2 (per metric):
-x-axis: build
-y-axis: avg(number) per build 
+On x-axis should be the date and for every date calculate and plot avg(number) per build;so it should be several bars per date.
+
+Creating Bar Charts with Average Number per Build per Date
+Understanding the Task:
+
+We need to:
+
+- Group the data by date and build.
+- Calculate the average number for each combination.
+- Create a bar chart with date on the x-axis and average number on the y-axis.
+- Group bars by build and color-code them accordingly.
+
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# ... (rest of your code)
+
+# Group by date and build, calculate average number
+grouped_data = df.groupby(['date', 'build'])['number'].mean().reset_index()
+
+# Create a bar chart
+plt.figure(figsize=(12, 6))
+plt.bar(grouped_data['date'], grouped_data['number'], color=plt.cm.tab20(grouped_data['build'].astype(int)))
+plt.title("Average Number per Build per Date")
+plt.xlabel("Date")
+plt.ylabel("Average Number")
+
+# Create a legend
+legend_labels = [f"Build {build}" for build in grouped_data['build'].unique()]
+plt.legend(legend_labels, title="Build Legend")
+
+plt.xticks(rotation=45)  # Rotate x-axis labels for better readability
+plt.show()
 ```
 
 
@@ -198,8 +212,46 @@ def plot_metrics(df, image_size=(10, 10), output_file="metrics_plots.png"):
 # plot_metrics(df, image_size=(20, 10), output_file="metrics_plots.png")
 ```
 
+### ChatGPT: plot bar charts where the x-axis is the date, and for each date, it shows the average number for each build. Multiple bars will be plotted per date, one for each build.
 
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+# Function to generate bar charts with x-axis as dates and multiple bars for builds
+def plot_avg_per_build_per_date(df, image_size=(12, 8), output_file="avg_build_per_date.png"):
+    # Set the style of seaborn for better visualizations
+    sns.set(style="whitegrid")
+    
+    # Group by date and build, calculate the average of 'number'
+    avg_df = df.groupby(['date', 'build'])['number'].mean().reset_index()
+
+    # Create the barplot
+    plt.figure(figsize=image_size)
+    sns.barplot(x='date', y='number', hue='build', data=avg_df, palette="husl")
+    
+    # Set title and labels
+    plt.title('Average Number per Build per Date')
+    plt.xlabel('Date')
+    plt.ylabel('Average Number')
+
+    # Rotate x labels for better readability
+    plt.xticks(rotation=45, ha='right')
+
+    # Adjust the layout
+    plt.tight_layout()
+
+    # Save the plot to file
+    plt.savefig(output_file, format=output_file.split('.')[-1])
+    plt.close()
+
+# Example usage
+# Assuming df is your pandas dataframe
+# df = pd.read_csv("your_dataframe.csv")
+# plot_avg_per_build_per_date(df, image_size=(15, 10), output_file="avg_build_per_date.png")
+
+```
 
 
 https://pyvista.org/  (on top of VTK)
