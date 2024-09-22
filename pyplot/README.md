@@ -1,3 +1,19 @@
+### Horizontal line
+```
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Create your Seaborn plot (replace with your actual plot)
+sns.lineplot(x='x_values', y='y_values', data=your_data)
+
+# Add a horizontal dotted line at y = 3 (adjust the y-value as needed)
+plt.axhline(y=3, color='gray', linestyle='dotted')
+
+plt.show()
+
+```
+
+
 ```
 There is Python pandas dataframe with following columns:
 
