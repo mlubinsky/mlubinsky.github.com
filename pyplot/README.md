@@ -1,3 +1,5 @@
+scientific visualization book
+https://github.com/rougier/scientific-visualization-book
 
 ### Image size
 ```
