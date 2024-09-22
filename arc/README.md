@@ -1,4 +1,6 @@
- 
+Системный аналитик. Краткий гайд по профессии. Часть 4. Синхронные и асинхронные интеграции. REST, gRPC, Kafka, RabbitMQ
+
+https://habr.com/ru/articles/844950/ 
 
 ### API book (ru)
 
