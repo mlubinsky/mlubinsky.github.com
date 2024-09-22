@@ -1,6 +1,7 @@
 
 ### Image size
 ```
+figsize=(8, 6) # width = 8 inches and the height = 6 inches. 
 
 import matplotlib.pyplot as plt
 import seaborn as sns
