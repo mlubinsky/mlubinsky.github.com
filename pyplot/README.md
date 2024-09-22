@@ -1,3 +1,49 @@
+
+### Image size
+```
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+#Create  a figure with 2 rows and 2 columns of subplots.
+# Adjust the figsize tuple to control the overall size of the figure.
+fig, axs = plt.subplots(nrows=2, ncols=2, figsize=(10, 8))
+
+#Replace 'x_values', 'y_values', and data1, data2, data3, data4 with your actual data.
+
+# Plot 1
+sns.barplot(x='x_values', y='y_values', data=data1, ax=axs[0, 0])
+# Plot 2
+sns.lineplot(x='x_values', y='y_values', data=data2, ax=axs[0, 1])
+# Plot 3
+sns.scatterplot(x='x_values', y='y_values', data=data3, ax=axs[1, 0])
+# Plot 4
+sns.histplot(x='x_values', data=data4, ax=axs[1, 1])
+
+# Adjust figure and subplot parameters:
+
+plt.tight_layout()  # Adjust spacing between subplots
+# Customize subplot sizes (optional)
+axs[0, 0].set_size_inches(3, 2)
+axs[0, 1].set_size_inches(3, 2)
+# ... adjust other subplot sizes as needed
+
+#This saves the plot as a PNG image with a resolution of 150 dots per inch (dpi).
+#The bbox_inches='tight' argument ensures the image is saved with the minimum #necessary dimensions to contain the plot.
+
+plt.savefig('my_plot.png', dpi=150, bbox_inches='tight')
+
+
+
+Additional tips:
+
+Experiment with different figsize values to find the optimal size for your notebook screen.
+Consider using plt.subplots_adjust() for finer control over subplot spacing.
+Explore other image formats like JPEG or SVG if needed.
+For larger plots, you might need to adjust the DPI or consider using a higher-resolution display.
+By following these steps and adjusting the parameters as needed, you can create a visually appealing plot with subplots that is optimized for notebook screens.
+
+
 ### Horizontal line
 ```
 import seaborn as sns
