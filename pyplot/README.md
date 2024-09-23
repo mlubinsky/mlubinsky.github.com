@@ -4,26 +4,37 @@ https://github.com/rougier/scientific-visualization-book
 ### There are 2 pandas data frames
 ```
 There are 2 python pandas data frames
-1-st dataframe has 2 columns: dut_num (string), build_num (string). 
+1-st dataframe df1 has 2 columns: dut_num (string), build_num (string). 
 The values in  dut_num  column are unique.
-The values in  build_num are not unique.
-The build_num may be empty. 
+The values in  build_num are not unique. The examle of values in build_num are:
+  b_1, b_2, b_3, b_2, 
 
-2-nd dataframe has columns: 
+The build_num may be empty. None
+
+2-nd dataframe df2 has columns: 
    criteria(string), 
-   dut_num_1(string), 
-   dut_num_2(string), 
-   dut_num_3(string), 
+   dut1(float), 
+   dut2(float), 
+   dut3(float), 
    ...,
-   val1 (float) , 
-   val2(float), 
-   val3(float). 
+Number of columns in second dataframe is not fixed, for every value in dut_num column in 1st dataframe there is corresponding column in 2nd dataframe.
 
 The some column names in 2nd dataframe  are present as values in 1st dataframe column "dut_num"
 
-Goal: Create new dataframe with columns: criteria, build, avg_val1, avg_val2, avg_val3.
+Goal: Create   dataframe df3 with columns: 
+    criteria,
+    for every build value  should be the separate column in df3, for example: b_1 (float), b_2 (float), b_3 (float)
  
-The columns avg_val1, avg_val2, avg_val3 in new  dataframe should be calculated as average from 2-nd dataframe across all columns dut_num with the same build value.
+The columns b_1, b_2, b_3, etc in d3 dataframe should be calculated as average from 2-nd dataframe across all columns dut* with the same build value (extracted from 1st dataframe).
+Example of input:
+
+df1 = pd.DataFrame({'dut_num': ['dut1', 'dut2', 'dut3', 'dut3'], 'build_num': ['b_1', 'b_2', 'b_1', None]})
+df2 = pd.DataFrame({
+    'criteria': ['c_1', 'c_2'],
+    'dut1': [10, 20],
+    'dut2': [30, 40],
+    'dut3': [100, 200]
+})
 ```
 ### Chat GPT
 ```
