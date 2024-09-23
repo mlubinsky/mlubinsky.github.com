@@ -70,6 +70,10 @@ df_grouped = df2_melted.dropna(subset=['build_num']).groupby(['criteria', 'build
 # Step 5: Pivot the dataframe to have a column for each 'build_num'
 df3 = df_grouped.pivot(index='criteria', columns='build_num', values='avg_value').reset_index()
 
+# Step 6: Sort the build columns alphabetically
+df3 = df3[['criteria'] + sorted(df3.columns.drop('criteria'))]
+
+
 # Optional: Rename columns for clarity (e.g., 'b_1', 'b_2', etc.)
 df3.columns.name = None  # Remove the hierarchical index name
 
