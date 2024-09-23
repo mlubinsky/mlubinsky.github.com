@@ -24,6 +24,52 @@ The some column names in 2nd dataframe  are present as values in 1st dataframe c
 Goal: Create new dataframe with columns: criteria, build, avg_val1, avg_val2, avg_val3.
  
 The columns avg_val1, avg_val2, avg_val3 in new  dataframe should be calculated as average from 2-nd dataframe across all columns dut_num with the same build value.
+
+
+
+import pandas as pd
+
+# Sample data for both dataframes
+df1 = pd.DataFrame({
+    'dut_num': ['dut1', 'dut2', 'dut3', 'dut4'],
+    'build_num': ['build1', 'build1', 'build2', 'build2']
+})
+
+df2 = pd.DataFrame({
+    'criteria': ['test1', 'test2', 'test3'],
+    'dut1': [1.1, 2.1, 3.1],
+    'dut2': [1.2, 2.2, 3.2],
+    'dut3': [1.3, 2.3, 3.3],
+    'dut4': [1.4, 2.4, 3.4],
+    'val1': [0.5, 0.6, 0.7],
+    'val2': [0.1, 0.2, 0.3],
+    'val3': [0.05, 0.06, 0.07]
+})
+
+# Step 1: Filter the dut columns from df2 that are in df1
+dut_columns = df1['dut_num'].tolist()
+df_filtered = df2[['criteria'] + dut_columns + ['val1', 'val2', 'val3']]
+
+# Step 2: Melt df_filtered to have a long format for the DUT columns
+df_melted = df_filtered.melt(id_vars=['criteria', 'val1', 'val2', 'val3'], 
+                             value_vars=dut_columns, 
+                             var_name='dut_num', 
+                             value_name='dut_value')
+
+# Step 3: Merge the melted dataframe with df1 on the 'dut_num' column
+df_merged = pd.merge(df_melted, df1, on='dut_num')
+
+# Step 4: Group by 'criteria' and 'build_num' and calculate the mean for val1, val2, and val3
+df_result = df_merged.groupby(['criteria', 'build_num']).agg(
+    avg_val1=('val1', 'mean'),
+    avg_val2=('val2', 'mean'),
+    avg_val3=('val3', 'mean')
+).reset_index()
+
+# Step 5: Rename columns for clarity
+df_result.rename(columns={'build_num': 'build'}, inplace=True)
+
+print(df_result)
 ```
 
 ### Image size
