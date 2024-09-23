@@ -24,9 +24,9 @@ The some column names in 2nd dataframe  are present as values in 1st dataframe c
 Goal: Create new dataframe with columns: criteria, build, avg_val1, avg_val2, avg_val3.
  
 The columns avg_val1, avg_val2, avg_val3 in new  dataframe should be calculated as average from 2-nd dataframe across all columns dut_num with the same build value.
-
-
-
+```
+### Chat GPT
+```
 import pandas as pd
 
 # Sample data for both dataframes
@@ -70,6 +70,52 @@ df_result = df_merged.groupby(['criteria', 'build_num']).agg(
 df_result.rename(columns={'build_num': 'build'}, inplace=True)
 
 print(df_result)
+```
+### Gemini
+```
+import pandas as pd
+
+# Assuming the two dataframes are named df1 and df2
+def create_new_dataframe(df1, df2):
+  """
+  Creates a new dataframe with criteria, build, avg_val1, avg_val2, avg_val3 columns.
+
+  Args:
+    df1: A pandas DataFrame with columns dut_num and build_num.
+    df2: A pandas DataFrame with columns criteria, dut_num_1, dut_num_2, ..., val1, val2, val3.
+
+  Returns:
+    A pandas DataFrame with columns criteria, build, avg_val1, avg_val2, avg_val3.
+  """
+
+  # Merge df1 with df2 on the dut_num columns
+  merged_df = pd.merge(df1, df2, left_on='dut_num', right_on='dut_num_1', how='left')
+  merged_df = merged_df.drop(columns=['dut_num_1'])
+
+  # Create a new column to identify the build for each row
+  merged_df['build'] = merged_df['build_num'].fillna('Unknown')
+
+  # Group by criteria and build, and calculate the average of val1, val2, and val3
+  grouped_df = merged_df.groupby(['criteria', 'build']).agg(
+      avg_val1=('val1', 'mean'),
+      avg_val2=('val2', 'mean'),
+      avg_val3=('val3', 'mean')
+  ).reset_index()
+
+  return grouped_df
+
+# Example usage
+df1 = pd.DataFrame({'dut_num': ['dut1', 'dut2', 'dut3'], 'build_num': ['build1', 'build2', 'build1']})
+df2 = pd.DataFrame({
+    'criteria': ['criteria1', 'criteria2'],
+    'dut_num_1': ['dut1', 'dut2'],
+    'dut_num_2': ['dut2', 'dut3'],
+    'val1': [10, 20],
+    'val2': [30, 40]
+})
+
+new_df = create_new_dataframe(df1, df2)
+print(new_df)
 ```
 
 ### Image size
