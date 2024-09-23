@@ -38,49 +38,78 @@ df2 = pd.DataFrame({
 ```
 ### Chat GPT
 ```
-import pandas as pd
+ import pandas as pd
 
-# Sample data for both dataframes
+# Input DataFrames
 df1 = pd.DataFrame({
-    'dut_num': ['dut1', 'dut2', 'dut3', 'dut4'],
-    'build_num': ['build1', 'build1', 'build2', 'build2']
+    'dut_num': ['dut1', 'dut2', 'dut3', 'dut3'],
+    'build_num': ['b_1', 'b_2', 'b_1', None]
 })
 
 df2 = pd.DataFrame({
-    'criteria': ['test1', 'test2', 'test3'],
-    'dut1': [1.1, 2.1, 3.1],
-    'dut2': [1.2, 2.2, 3.2],
-    'dut3': [1.3, 2.3, 3.3],
-    'dut4': [1.4, 2.4, 3.4],
-    'val1': [0.5, 0.6, 0.7],
-    'val2': [0.1, 0.2, 0.3],
-    'val3': [0.05, 0.06, 0.07]
+    'criteria': ['c_1', 'c_2'],
+    'dut1': [10, 20],
+    'dut2': [30, 40],
+    'dut3': [100, 200]
 })
 
-# Step 1: Filter the dut columns from df2 that are in df1
-dut_columns = df1['dut_num'].tolist()
-df_filtered = df2[['criteria'] + dut_columns + ['val1', 'val2', 'val3']]
+# Step 1: Create a mapping of 'dut_num' to 'build_num' from df1
+build_map = df1.set_index('dut_num')['build_num'].to_dict()
 
-# Step 2: Melt df_filtered to have a long format for the DUT columns
-df_melted = df_filtered.melt(id_vars=['criteria', 'val1', 'val2', 'val3'], 
-                             value_vars=dut_columns, 
-                             var_name='dut_num', 
-                             value_name='dut_value')
+# Step 2: Melt df2 to make it long format for easier processing
+df2_melted = df2.melt(id_vars=['criteria'], var_name='dut_num', value_name='dut_value')
 
-# Step 3: Merge the melted dataframe with df1 on the 'dut_num' column
-df_merged = pd.merge(df_melted, df1, on='dut_num')
+# Step 3: Map the 'dut_num' to the corresponding 'build_num' from the build_map
+df2_melted['build_num'] = df2_melted['dut_num'].map(build_map)
 
-# Step 4: Group by 'criteria' and 'build_num' and calculate the mean for val1, val2, and val3
-df_result = df_merged.groupby(['criteria', 'build_num']).agg(
-    avg_val1=('val1', 'mean'),
-    avg_val2=('val2', 'mean'),
-    avg_val3=('val3', 'mean')
+# Step 4: Group by 'criteria' and 'build_num', and calculate the mean for each group
+df_grouped = df2_melted.dropna(subset=['build_num']).groupby(['criteria', 'build_num']).agg(
+    avg_value=('dut_value', 'mean')
 ).reset_index()
 
-# Step 5: Rename columns for clarity
-df_result.rename(columns={'build_num': 'build'}, inplace=True)
+# Step 5: Pivot the dataframe to have a column for each 'build_num'
+df3 = df_grouped.pivot(index='criteria', columns='build_num', values='avg_value').reset_index()
 
-print(df_result)
+# Optional: Rename columns for clarity (e.g., 'b_1', 'b_2', etc.)
+df3.columns.name = None  # Remove the hierarchical index name
+
+print(df3)
+
+  criteria    b_1   b_2
+0      c_1   55.0   30.0
+1      c_2  110.0   40.0
+
+In the current implementation, the rows where the build_num is None are excluded when calculating the averages, because of the dropna() step:
+
+python
+Copy code
+df2_melted.dropna(subset=['build_num'])
+This ensures that any DUT values corresponding to a None build in df1 will not be considered in the final result. If there are None values in the build_num, they will not appear in the final dataframe (df3), and their corresponding DUT values will not be averaged.
+
+If you want to include DUTs with None build values:
+You could handle the None values differently depending on your desired behavior. For example, you could:
+Treat None as a separate "build" and include it in the final dataframe.
+Fill the None values with some default or placeholder build value (e.g., 'unknown').
+Here’s how you can modify the code to include rows where build_num is None and treat it as a separate build:
+
+Modified Code to Include None Builds as 'unknown':
+python
+Copy code
+# Step 3 (modified): Map 'dut_num' to 'build_num', filling None values with 'unknown'
+df2_melted['build_num'] = df2_melted['dut_num'].map(build_map).fillna('unknown')
+
+# The rest of the steps remain the same
+df_grouped = df2_melted.groupby(['criteria', 'build_num']).agg(
+    avg_value=('dut_value', 'mean')
+).reset_index()
+
+df3 = df_grouped.pivot(index='criteria', columns='build_num', values='avg_value').reset_index()
+
+df3.columns.name = None
+
+print(df3)
+
+
 ```
 ### Gemini
 ```
@@ -120,6 +149,19 @@ df2 = pd.DataFrame({
 
 df3 = gemini(df1, df2)
 print(df3)
+
+he provided code handles the case where the build_num is None by filling the missing values with a default value of 0. This is done in the line:
+
+Python
+pivoted_df = pivoted_df.fillna(0)
+Use code with caution.
+
+When the pivot table is created, any rows where the build_num is None will have missing values. By filling these missing values with 0, we ensure that the resulting DataFrame df3 has a column for every unique build_num and that the average calculations are performed correctly, even if some build_num values are missing in the original data.
+
+If you prefer a different default value, you can replace 0 with the desired value in the fillna function. For example, to use -1 as the default value, you would write:
+
+Python
+pivoted_df = pivoted_df.fillna(-1)
 ```
 
 ### Image size
