@@ -86,47 +86,40 @@ print(df_result)
 ```
 import pandas as pd
 
-# Assuming the two dataframes are named df1 and df2
-def create_new_dataframe(df1, df2):
+def gemini( df1, df2):
   """
-  Creates a new dataframe with criteria, build, avg_val1, avg_val2, avg_val3 columns.
+  Creates a new dataframe with criteria and build-specific columns.
 
   Args:
     df1: A pandas DataFrame with columns dut_num and build_num.
-    df2: A pandas DataFrame with columns criteria, dut_num_1, dut_num_2, ..., val1, val2, val3.
+    df2: A pandas DataFrame with columns criteria, dut1, dut2, ...
 
   Returns:
-    A pandas DataFrame with columns criteria, build, avg_val1, avg_val2, avg_val3.
+    A pandas DataFrame with columns criteria, b_1, b_2, ...
   """
 
-  # Merge df1 with df2 on the dut_num columns
-  merged_df = pd.merge(df1, df2, left_on='dut_num', right_on='dut_num_1', how='left')
-  merged_df = merged_df.drop(columns=['dut_num_1'])
+  # Merge df1 and df2 based on dut_num and corresponding dutN columns
+  merged_df = pd.merge(df1, df2, left_on='dut_num', right_on=df2.columns[1:], how='left')
 
-  # Create a new column to identify the build for each row
-  merged_df['build'] = merged_df['build_num'].fillna('Unknown')
+  # Pivot the merged dataframe
+  pivoted_df = merged_df.pivot_table(index='criteria', columns='build_num', values=df2.columns[1:])
 
-  # Group by criteria and build, and calculate the average of val1, val2, and val3
-  grouped_df = merged_df.groupby(['criteria', 'build']).agg(
-      avg_val1=('val1', 'mean'),
-      avg_val2=('val2', 'mean'),
-      avg_val3=('val3', 'mean')
-  ).reset_index()
+  # Fill missing values with a default value (e.g., 0)
+  pivoted_df = pivoted_df.fillna(0)
 
-  return grouped_df
+  return pivoted_df
 
 # Example usage
-df1 = pd.DataFrame({'dut_num': ['dut1', 'dut2', 'dut3'], 'build_num': ['build1', 'build2', 'build1']})
+df1 = pd.DataFrame({'dut_num': ['dut1', 'dut2', 'dut3', 'dut3'], 'build_num': ['b_1', 'b_2', 'b_1', None]})
 df2 = pd.DataFrame({
-    'criteria': ['criteria1', 'criteria2'],
-    'dut_num_1': ['dut1', 'dut2'],
-    'dut_num_2': ['dut2', 'dut3'],
-    'val1': [10, 20],
-    'val2': [30, 40]
+    'criteria': ['c_1', 'c_2'],
+    'dut1': [10, 20],
+    'dut2': [30, 40],
+    'dut3': [100, 200]
 })
 
-new_df = create_new_dataframe(df1, df2)
-print(new_df)
+df3 = gemini(df1, df2)
+print(df3)
 ```
 
 ### Image size
