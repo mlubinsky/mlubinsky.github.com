@@ -1,6 +1,17 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+### There are 2 pandas data frames
+1-st dataframe has 2  columns: dut_num (string), build_num (string).  The build_num may be empty.
+2-nd dataframe has columns: criteria(string), dut_num(string), val1 (float) , val2(float), val3(float) 
+The column dut_num is present in both dataframes. 
+
+Goal:
+   Create new dataframe with columns:  criteria, build, avg_val1, avg_val2, avg_val3
+   Use the fact that the columns dut_num is present in both dataframes.
+   Thee columns avg_val1, avg_val2, avg_val3 in final dataframe should be calculated as average from 2-nd dataframe across all dut_num with the same build value (which can be None)
+
+
 ### Image size
 ```
 figsize=(8, 6) # width = 8 inches and the height = 6 inches. 
