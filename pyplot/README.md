@@ -2,15 +2,29 @@ scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
 ### There are 2 pandas data frames
-1-st dataframe has 2  columns: dut_num (string), build_num (string).  The build_num may be empty.
-2-nd dataframe has columns: criteria(string), dut_num(string), val1 (float) , val2(float), val3(float) 
-The column dut_num is present in both dataframes. 
+```
+There are 2 python pandas data frames
+1-st dataframe has 2 columns: dut_num (string), build_num (string). 
+The values in  dut_num  column are unique.
+The values in  build_num are not unique.
+The build_num may be empty. 
 
-Goal:
-   Create new dataframe with columns:  criteria, build, avg_val1, avg_val2, avg_val3
-   Use the fact that the columns dut_num is present in both dataframes.
-   Thee columns avg_val1, avg_val2, avg_val3 in final dataframe should be calculated as average from 2-nd dataframe across all dut_num with the same build value (which can be None)
+2-nd dataframe has columns: 
+   criteria(string), 
+   dut_num_1(string), 
+   dut_num_2(string), 
+   dut_num_3(string), 
+   ...,
+   val1 (float) , 
+   val2(float), 
+   val3(float). 
 
+The some column names in 2nd dataframe  are present as values in 1st dataframe column "dut_num"
+
+Goal: Create new dataframe with columns: criteria, build, avg_val1, avg_val2, avg_val3.
+ 
+The columns avg_val1, avg_val2, avg_val3 in new  dataframe should be calculated as average from 2-nd dataframe across all columns dut_num with the same build value.
+```
 
 ### Image size
 ```
