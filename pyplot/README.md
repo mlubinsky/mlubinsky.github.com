@@ -81,10 +81,11 @@ print(df3)
 
 In the current implementation, the rows where the build_num is None are excluded when calculating the averages, because of the dropna() step:
 
-python
-Copy code
+
 df2_melted.dropna(subset=['build_num'])
-This ensures that any DUT values corresponding to a None build in df1 will not be considered in the final result. If there are None values in the build_num, they will not appear in the final dataframe (df3), and their corresponding DUT values will not be averaged.
+This ensures that any DUT values corresponding to a None build in df1 will not be considered in the final result.
+ If there are None values in the build_num, they will not appear in the final dataframe (df3),
+and their corresponding DUT values will not be averaged.
 
 If you want to include DUTs with None build values:
 You could handle the None values differently depending on your desired behavior. For example, you could:
@@ -150,15 +151,18 @@ df2 = pd.DataFrame({
 df3 = gemini(df1, df2)
 print(df3)
 
-he provided code handles the case where the build_num is None by filling the missing values with a default value of 0. This is done in the line:
+The provided code handles the case where the build_num is None by filling the missing values with a default value of 0.
+This is done in the line:
 
-Python
 pivoted_df = pivoted_df.fillna(0)
-Use code with caution.
 
-When the pivot table is created, any rows where the build_num is None will have missing values. By filling these missing values with 0, we ensure that the resulting DataFrame df3 has a column for every unique build_num and that the average calculations are performed correctly, even if some build_num values are missing in the original data.
+When the pivot table is created, any rows where the build_num is None will have missing values.
+By filling these missing values with 0, we ensure that the resulting DataFrame df3 has a column
+for every unique build_num and that the average calculations are performed correctly,
+even if some build_num values are missing in the original data.
 
-If you prefer a different default value, you can replace 0 with the desired value in the fillna function. For example, to use -1 as the default value, you would write:
+If you prefer a different default value, you can replace 0 with the desired value in the fillna function.
+For example, to use -1 as the default value, you would write:
 
 Python
 pivoted_df = pivoted_df.fillna(-1)
