@@ -1,6 +1,80 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+###  pivot_table() vs pivot()
+
+```
+
+ChatGPT said:
+ChatGPT
+pivot() and pivot_table() in pandas are similar, but there are key differences in when you should use each.
+
+Use pivot() when:
+There is exactly one value per group. If your data is already in a format where each combination of index and columns
+has only one unique value, then pivot() works perfectly.
+You want to create a simple reshaped dataframe without aggregating the data.
+Example:
+
+ 
+df.pivot(index=['Test', 'Criteria'], columns='build_num', values='avg_value')
+This works fine if there's exactly one value of avg_value for each combination of Test, Criteria, and build_num.
+
+Use pivot_table() when:
+There are multiple values for a combination of index and columns. If there are duplicate entries for a combination
+of Test, Criteria, and build_num, then pivot() will raise an error, while pivot_table() will allow you to handle
+the duplicates by applying an aggregation function (e.g., mean, sum, count, etc.).
+You want to apply an aggregation function during the reshaping process (e.g., calculating averages, sums, etc.).
+You want to fill missing values (using the fill_value parameter).
+You want to aggregate multiple columns at once (using the aggfunc parameter).
+Example:
+Let’s assume that there are duplicate entries in the data for a given combination of Test, Criteria, and build_num:
+
+ 
+import pandas as pd
+
+# Example dataframe with duplicate values
+df = pd.DataFrame({
+    'Test': ['T1', 'T1', 'T1', 'T2', 'T2', 'T2'],
+    'Criteria': ['C1', 'C1', 'C1', 'C2', 'C2', 'C2'],
+    'build_num': ['build_1', 'build_1', 'build_2', 'build_1', 'build_2', 'build_2'],
+    'avg_value': [10, 15, 20, 30, 35, 40],
+    'cnt': [100, 150, 200, 300, 350, 400]
+})
+
+# Using pivot_table to calculate the average avg_value and sum of cnt for each combination
+df_pivot_table = df.pivot_table(index=['Test', 'Criteria'], columns='build_num',
+                                values=['avg_value', 'cnt'], aggfunc={'avg_value': 'mean', 'cnt': 'sum'})
+
+# Reset the index
+df_pivot_table = df_pivot_table.reset_index()
+
+# Show the result
+print(df_pivot_table)
+Explanation:
+pivot_table() allows you to specify an aggregation function. In this case, we calculate the average of avg_value
+and the sum of cnt for each combination of Test, Criteria, and build_num.
+aggfunc allows specifying which aggregation function to apply (e.g., mean for avg_value and sum for cnt).
+Output:
+plaintext
+ 
+build_num Test Criteria avg_value         cnt      
+                         build_1 build_2 build_1 build_2
+0           T1      C1      12.5    20.0     250     200
+1           T2      C2      30.0    37.5     300     750
+Summary:
+Use pivot() when you know that each combination of the index and columns has only one value (i.e., no duplicates).
+Use pivot_table() when there might be duplicate values and you need to apply an aggregation function,
+or if you want additional flexibility like filling missing values or aggregating multiple columns at once.
+
+
+
+
+
+
+
+```
+
+
 ### Generate list of dates in the range
 ```
 from datetime import datetime, timedelta
