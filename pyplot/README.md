@@ -85,6 +85,8 @@ plt.show()
 
 ```
 
+import matplotlib.patches as mpatches
+
 # Step 2: Create a new dataframe for aggregation
 results = []
 
