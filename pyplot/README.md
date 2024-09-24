@@ -80,8 +80,45 @@ plt.tight_layout()
 plt.show()
 
  
-``` 
-### Multti-index issue
+```
+#### Customize bar chart
+
+```
+# Step 3: Sort by build name, with 'REF' always being the first if it exists
+df_result = df_result.sort_values('build')
+if 'REF' in df_result['build'].values:
+    ref_row = df_result[df_result['build'] == 'REF']
+    df_result = pd.concat([ref_row, df_result[df_result['build'] != 'REF']])
+
+# Step 4: Assign a unique color to each build
+unique_colors = sns.color_palette('husl', len(df_result))  # Generates unique colors for each build
+colors_dict = {build: ('red' if build == 'REF' else unique_colors[i]) for i, build in enumerate(df_result['build'])}
+colors = [colors_dict[build] for build in df_result['build']]
+
+# Step 5: Plot the bar chart using matplotlib and seaborn
+plt.figure(figsize=(8, 6))
+sns.barplot(x='build', y='value', data=df_result, palette=colors)
+
+# Step 6: Add a legend for the colors
+legend_patches = [mpatches.Patch(color=colors_dict[build], label=build) for build in df_result['build']]
+plt.legend(handles=legend_patches, title='Build')
+
+# Set labels and title
+plt.xlabel('Build')
+plt.ylabel('Weighted Avg Value')
+plt.title('Weighted Average of avg_value by Build')
+
+# Show the plot
+plt.xticks(rotation=45)  # Rotate x-axis labels if needed
+plt.tight_layout()
+plt.show()
+
+
+``
+
+
+
+### Multi-index issue
 
 
 
