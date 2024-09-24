@@ -1,6 +1,65 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+### Multti-index issue
+```
+i=0 metric =  "1. Horizontal Error"
+group len= 1
+
+--------------------------------
+0 1. Horizontal Error
+print(group)
+                          Test Criteria  avg_value         dut_count            date
+build_num                               4.14.17_7o    REF 4.14.17_7o REF
+0          1. Horizontal Error  Average      83.59  91.85          6   3  2024-09-12
+
+group.info()=
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 1 entries, 0 to 0
+Data columns (total 7 columns):
+ #   Column                   Non-Null Count  Dtype
+---  ------                   --------------  -----
+ 0   (Test, )                 1 non-null      object
+ 1   (Criteria, )             1 non-null      object
+ 2   (avg_value, 4.14.17_7o)  1 non-null      float64
+ 3   (avg_value, REF)         1 non-null      float64
+ 4   (dut_count, 4.14.17_7o)  1 non-null      int64
+ 5   (dut_count, REF)         1 non-null      int64
+ 6   (date, )                 1 non-null      object
+dtypes: float64(2), int64(2), object(3)
+memory usage: 64.0+ bytes
+None
+group.index=
+Int64Index([0], dtype='int64')
+group.dtypes=
+           build_num
+Test                      object
+Criteria                  object
+avg_value  4.14.17_7o    float64
+           REF           float64
+dut_count  4.14.17_7o      int64
+           REF             int64
+date                      object
+dtype: object
+0 col= ('Test', '')
+1 col= ('Criteria', '')
+2 col= ('avg_value', '4.14.17_7o')
+3 col= ('avg_value', 'REF')
+4 col= ('dut_count', '4.14.17_7o')
+5 col= ('dut_count', 'REF')
+6 col= ('date', '')
+DEBUG EXIT 10
+
+build_columns = [col for col in df_per_location.columns if col not in ['Test', 'Criteria', 'date']]
+build_columns=
+[('Test', ''), ('Criteria', ''), ('avg_value', '4.14.17_7o'), ('avg_value', 'REF'), ('dut_count', '4.14.17_7o'), ('dut_count', 'REF'), ('date', '')]
+
+
+group_avg = group[build_columns].mean()  # TODO ???
+NotImplementedError: isna is not defined for MultiIndex
+```
+
+
 ###  pivot_table() vs pivot()
 
 ```
