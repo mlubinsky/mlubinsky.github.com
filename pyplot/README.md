@@ -3,7 +3,7 @@ https://github.com/rougier/scientific-visualization-book
 
 
 
-### Question
+### Question - weithed average bar chart
 
 ```
  I have Python pandas datafrane with  columns like this:
@@ -81,7 +81,7 @@ plt.show()
 
  
 ```
-#### Customize bar chart
+#### Customize bar chart colors and orders
 
 ```
 # Step 3: Sort by build name, with 'REF' always being the first if it exists
