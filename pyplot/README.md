@@ -6,7 +6,7 @@ https://github.com/rougier/scientific-visualization-book
 ```
 
 ChatGPT said:
-ChatGPT
+
 pivot() and pivot_table() in pandas are similar, but there are key differences in when you should use each.
 
 Use pivot() when:
@@ -18,6 +18,38 @@ Example:
  
 df.pivot(index=['Test', 'Criteria'], columns='build_num', values='avg_value')
 This works fine if there's exactly one value of avg_value for each combination of Test, Criteria, and build_num.
+
+
+df = pd.DataFrame({
+    'Test': ['T1', 'T2'],
+    'Criteria': ['Average', 'Average'],
+    'build_num': ['build_1', 'build_2'],
+    'avg_value': [10, 15],
+    'cnt': [100, 200]
+})
+
+print(df)
+
+  Test Criteria build_num  avg_value  cnt
+0   T1  Average   build_1         10  100
+1   T2  Average   build_2         15  200
+
+df_pivoted = df.pivot(index=['Test', 'Criteria'], columns='build_num', values='avg_value')
+
+for i, col in enumerate(df_pivoted.columns):
+    print (i, col)
+
+
+0 build_1
+1 build_2
+
+print(df_pivoted)
+
+build_num      build_1  build_2
+Test Criteria
+T1   Average      10.0      NaN
+T2   Average       NaN     15.0
+
 
 Use pivot_table() when:
 There are multiple values for a combination of index and columns. If there are duplicate entries for a combination
