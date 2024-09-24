@@ -1,6 +1,26 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+### Generate list of dates in the range
+```
+from datetime import datetime, timedelta
+
+def f1(start, end):
+    # Convert the input strings to datetime objects
+    start_date = datetime.strptime(start, '%Y-%m-%d')
+    end_date = datetime.strptime(end, '%Y-%m-%d')
+    
+    # Create an empty list to store the dates
+    date_list = []
+    
+    # Generate the list of dates between start and end, excluding the end date
+    current_date = start_date + timedelta(days=1)
+    while current_date < end_date:
+        date_list.append(current_date.strftime('%Y-%m-%d'))
+        current_date += timedelta(days=1)
+    
+    return date_list
+```
 ### There are 2 pandas data frames
 ```
 There are 2 python pandas data frames
