@@ -39,7 +39,6 @@ df_pivoted = df.pivot(index=['Test', 'Criteria'], columns='build_num', values='a
 for i, col in enumerate(df_pivoted.columns):
     print (i, col)
 
-
 0 build_1
 1 build_2
 
@@ -49,6 +48,26 @@ build_num      build_1  build_2
 Test Criteria
 T1   Average      10.0      NaN
 T2   Average       NaN     15.0
+
+But following fails:
+import pandas as pd
+df = pd.DataFrame({
+    'Test': ['T1', 'T1', 'T2'],
+    'Criteria': ['Average', 'Average', 'Average'],
+    'build_num': ['build_1', 'build_2', 'build_1'],
+    'avg_value': [10, 15, 20],
+    'cnt': [100, 200,30]
+})
+print(df)
+#0   T1  Average   build_1         10  100
+#1   T1  Average   build_2         15  200
+#2   T2  Average   build_1         20   30
+
+df_pivoted = df.pivot(index=['Test', 'Criteria'], columns='build_num', values='avg_value')
+
+ValueError: Length of passed values is 3, index implies 2.
+print(df_pivoted)
+
 
 
 Use pivot_table() when:
