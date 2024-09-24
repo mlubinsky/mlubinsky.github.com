@@ -1,7 +1,90 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+
+
+### Question
+
+```
+ I have Python pandas datafrane with  columns like this:
+
+ (avg_value, 4.14.17_7o)  float64
+ (avg_value, REF)         float64
+ (dut_count, 4.14.17_7o)  int64
+ (dut_count, REF)         int64
+ etc
+ (date, )
+ 
+
+Every column is a tuple with 2 elements.
+The second element in tuple is not unique, For any  value in column (date, '') there is only one pair of (ag_value, build) , (dut_count, build)
+where variable "build"  above is an arbitrary string.
+
+I need to agregate it based on the matching the second element in the tuple:
+New dataframe should  have 2 columns:
+1-st column named "build": should be populated as unique second element in the tuple where 1st element is 'avg_value'
+2nd column named "value": please calculate it as weighted average: 
+ value =   sum ( dut_count * avg_value) / sum(dut_count)
+
+Then please plot the barchart using matplotlib and seaborn
+The x-axis on barchart is the "build" columns
+The Y-axis  is "value" column
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Sample dataframe for illustration
+data = {
+    ('avg_value', '4.14.17_7o'): [10, 15],
+    ('avg_value', 'REF'): [20, 25],
+    ('dut_count', '4.14.17_7o'): [100, 150],
+    ('dut_count', 'REF'): [200, 250],
+    ('date', ''): ['2024-09-23', '2024-09-24']
+}
+
+df = pd.DataFrame(data)
+
+# Step 1: Extract unique builds from the second element in the column tuples where the first element is 'avg_value'
+builds = [col[1] for col in df.columns if col[0] == 'avg_value']
+
+# Step 2: Create a new dataframe for aggregation
+results = []
+
+for build in builds:
+    # Calculate weighted average for each build
+    avg_value_col = ('avg_value', build)
+    dut_count_col = ('dut_count', build)
+    
+    # Ensure both columns exist to avoid key errors
+    if avg_value_col in df.columns and dut_count_col in df.columns:
+        # Weighted average: sum(dut_count * avg_value) / sum(dut_count)
+        weighted_avg = (df[dut_count_col] * df[avg_value_col]).sum() / df[dut_count_col].sum()
+        results.append({'build': build, 'value': weighted_avg})
+
+# Convert results to a DataFrame
+df_result = pd.DataFrame(results)
+
+# Step 3: Plot the bar chart using matplotlib and seaborn
+plt.figure(figsize=(8, 6))
+sns.barplot(x='build', y='value', data=df_result)
+
+# Set labels and title
+plt.xlabel('Build')
+plt.ylabel('Weighted Avg Value')
+plt.title('Weighted Average of avg_value by Build')
+
+# Show the plot
+plt.xticks(rotation=45)  # Rotate x-axis labels if needed
+plt.tight_layout()
+plt.show()
+
+ 
+``` 
 ### Multti-index issue
+
+
+
 ```
 i=0 metric =  "1. Horizontal Error"
 group len= 1
