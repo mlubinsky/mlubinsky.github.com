@@ -3,7 +3,7 @@ https://github.com/rougier/scientific-visualization-book
 
 
 
-### Question - weithed average bar chart
+### Question - weighted average bar chart
 
 ```
  I have Python pandas datafrane with  columns like this:
@@ -84,6 +84,25 @@ plt.show()
 #### Customize bar chart colors and orders
 
 ```
+
+# Step 2: Create a new dataframe for aggregation
+results = []
+
+for build in builds:
+    # Calculate weighted average for each build
+    avg_value_col = ('avg_value', build)
+    dut_count_col = ('dut_count', build)
+    
+    # Ensure both columns exist to avoid key errors
+    if avg_value_col in df.columns and dut_count_col in df.columns:
+        # Weighted average: sum(dut_count * avg_value) / sum(dut_count)
+        weighted_avg = (df[dut_count_col] * df[avg_value_col]).sum() / df[dut_count_col].sum()
+        results.append({'build': build, 'value': weighted_avg})
+
+# Convert results to a DataFrame
+df_result = pd.DataFrame(results)
+
+
 # Step 3: Sort by build name, with 'REF' always being the first if it exists
 df_result = df_result.sort_values('build')
 if 'REF' in df_result['build'].values:
