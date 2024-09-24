@@ -90,16 +90,25 @@ if 'REF' in df_result['build'].values:
     ref_row = df_result[df_result['build'] == 'REF']
     df_result = pd.concat([ref_row, df_result[df_result['build'] != 'REF']])
 
-# Step 4: Assign a unique color to each build
-unique_colors = sns.color_palette('husl', len(df_result))  # Generates unique colors for each build
-colors_dict = {build: ('red' if build == 'REF' else unique_colors[i]) for i, build in enumerate(df_result['build'])}
+# Step 4: Generate colors excluding 'red'
+n_colors = len(df_result) - 1  # Exclude 'REF' which will be assigned red
+unique_colors = sns.color_palette('husl', n_colors)  # Generate unique colors for all other builds
+
+# Create color mapping where 'REF' gets red
+colors_dict = {}
+colors_dict['REF'] = 'red'
+non_ref_builds = df_result['build'][df_result['build'] != 'REF']
+for i, build in enumerate(non_ref_builds):
+    colors_dict[build] = unique_colors[i]  # Assign the unique colors to other builds
+
+# Step 5: Generate the list of colors for plotting
 colors = [colors_dict[build] for build in df_result['build']]
 
-# Step 5: Plot the bar chart using matplotlib and seaborn
+# Step 6: Plot the bar chart using matplotlib and seaborn
 plt.figure(figsize=(8, 6))
 sns.barplot(x='build', y='value', data=df_result, palette=colors)
 
-# Step 6: Add a legend for the colors
+# Step 7: Add a legend for the colors
 legend_patches = [mpatches.Patch(color=colors_dict[build], label=build) for build in df_result['build']]
 plt.legend(handles=legend_patches, title='Build')
 
@@ -114,7 +123,8 @@ plt.tight_layout()
 plt.show()
 
 
-``
+
+```
 
 
 
