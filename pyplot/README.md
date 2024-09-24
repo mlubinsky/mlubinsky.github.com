@@ -54,9 +54,9 @@ build_columns = [col for col in df_per_location.columns if col not in ['Test', '
 build_columns=
 [('Test', ''), ('Criteria', ''), ('avg_value', '4.14.17_7o'), ('avg_value', 'REF'), ('dut_count', '4.14.17_7o'), ('dut_count', 'REF'), ('date', '')]
 
-
-group_avg = group[build_columns].mean()  # TODO ???
-NotImplementedError: isna is not defined for MultiIndex
+for i, (metric, group) in enumerate(metric_groups):
+   group_avg = group[build_columns].mean()  # NotImplementedError: isna is not defined for MultiIndex
+   
 ```
 
 
