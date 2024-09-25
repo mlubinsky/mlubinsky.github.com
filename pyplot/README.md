@@ -1,7 +1,24 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+### Subplots question
+```
+ How to assign vertical padding between subplots?
+ How to convert this code to use
+ fig, axs = plt.subplots(nrows=2, ncols=2, figsize=(10, 8))
+?
 
+for i, (metric, df) in enumerate(metric_groups):
+        plt.subplot(len(metric_groups), 1, i + 1)
+        sns.barplot(x='build', y='value', data=df)
+        plt.axhline(y=90, color='black', linestyle='dashed')
+        plt.title(metric + " score", fontweight='bold', fontsize="20")
+        plt.ylabel("Score", fontweight='bold', fontsize="15")
+        plt.xticks(rotation=45, fontweight='bold', fontsize="15")
+        plt.yticks(fontweight='bold', fontsize="15")
+        plt.xlabel("")
+plt.tight_layout()
+```
 
 ### Question - weighted average bar chart
 
