@@ -571,14 +571,14 @@ Consider using plt.subplots_adjust() for finer control over subplot spacing.
 Explore other image formats like JPEG or SVG if needed.
 For larger plots, you might need to adjust the DPI or consider using a higher-resolution display.
 By following these steps and adjusting the parameters as needed, you can create a visually appealing plot with subplots that is optimized for notebook screens.
+```
 
-
-### Horizontal line
+### Make Horizontal line
 ```
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Create your Seaborn plot (replace with your actual plot)
+# Seaborn plot (replace with your actual plot)
 sns.lineplot(x='x_values', y='y_values', data=your_data)
 
 # Add a horizontal dotted line at y = 3 (adjust the y-value as needed)
