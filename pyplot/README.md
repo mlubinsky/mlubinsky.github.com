@@ -53,6 +53,70 @@ plt.tight_layout()
 plt.show()
 ```
 
+### Question
+```
+
+Using fig, axs = plt.subplots() is generally a better approach compared to manually creating subplots with plt.subplot() in a loop. Here are some key reasons why:
+
+Advantages of plt.subplots() with axs:
+Cleaner and More Readable Code: plt.subplots() returns both a Figure object (fig) and an array of Axes objects (axs), making it easier to manage and control individual subplots. This allows you to access each subplot directly and apply settings (ticks, labels, etc.) in a more explicit and clear manner.
+
+Easier Control: With axs, you can loop through the axes and customize each one individually. You don’t need to worry about subplot indexing manually, as you get a structured way to handle each plot.
+
+Avoids Overlapping Issues: When using plt.subplot(), overlapping subplots can sometimes be an issue. Using plt.subplots() with fig.tight_layout() or plt.subplots_adjust() tends to handle layout issues more effectively.
+
+Easier to Scale: As the number of subplots grows, managing them with plt.subplots() is more scalable than manually specifying the subplot indices.
+
+Refactored Code with plt.subplots():
+ 
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Sample metric_groups for illustration (replace with your actual data)
+metric_groups = [
+    ('Metric 1', pd.DataFrame({'build': ['A', 'B', 'C'], 'value': [85, 92, 88]})),
+    ('Metric 2', pd.DataFrame({'build': ['A', 'B', 'C'], 'value': [70, 80, 75]})),
+    ('Metric 3', pd.DataFrame({'build': ['A', 'B', 'C'], 'value': [60, 65, 68]}))
+]
+
+# Create subplots using plt.subplots()
+fig, axs = plt.subplots(nrows=len(metric_groups), ncols=1, figsize=(10, 8))
+
+for i, (metric, df) in enumerate(metric_groups):
+    sns.barplot(x='build', y='value', data=df, ax=axs[i])  # Use axs[i] to assign to the subplot
+    axs[i].axhline(y=90, color='black', linestyle='dashed')
+    axs[i].set_title(metric + " score", fontweight='bold', fontsize=20)
+    axs[i].set_ylabel("Score", fontweight='bold', fontsize=15)
+    axs[i].set_xticklabels(axs[i].get_xticklabels(), rotation=45, fontweight='bold', fontsize=15)
+    axs[i].tick_params(axis='y', labelsize=15, width=1.5)  # Adjust y-ticks font size and weight
+    axs[i].set_xlabel("")
+
+# Adjust the vertical spacing (pad value between subplots)
+plt.subplots_adjust(hspace=0.4)  # Control vertical space between subplots
+
+# Apply tight layout to prevent overlap
+plt.tight_layout()
+
+# Show the plot
+plt.show()
+
+Key Benefits of the Updated Code:
+Access to axs Array: Each subplot is explicitly referenced through axs[i], making it easier to apply labels, titles, and other formatting.
+
+Automatic Layout Management: Using fig.tight_layout() and plt.subplots_adjust() helps manage the layout more effectively,
+reducing the chances of overlapping elements like axis labels and titles.
+
+Scalability: If the number of subplots grows or changes dynamically, managing them with axs will be easier than using plt.subplot().
+
+Conclusion:
+Yes, using plt.subplots() is better than the current approach. It leads to more readable and maintainable code,
+makes it easier to control each subplot individually, and handles layout management more gracefully.
+
+```
+
+
+
 
 
 ### Question - weighted average bar chart
