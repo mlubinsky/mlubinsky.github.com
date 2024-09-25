@@ -19,9 +19,12 @@ for i, (metric, df) in enumerate(metric_groups):
         plt.xlabel("")
 plt.tight_layout()
 ```
- #### How to control vertical padding: subplots_adjust
-
+ #### How to control vertical padding: use subplots_adjust
 ```
+wspace: Controls the horizontal spacing between subplots.
+top, bottom, left, right: These control the margins around the figure.
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
