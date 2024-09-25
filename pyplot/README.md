@@ -19,6 +19,38 @@ for i, (metric, df) in enumerate(metric_groups):
         plt.xlabel("")
 plt.tight_layout()
 ```
+ #### How to control vertical padding: subplots_adjust
+
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Sample metric_groups for illustration (replace with your actual data)
+metric_groups = [
+    ('Metric 1', pd.DataFrame({'build': ['A', 'B', 'C'], 'value': [85, 92, 88]})),
+    ('Metric 2', pd.DataFrame({'build': ['A', 'B', 'C'], 'value': [70, 80, 75]})),
+    ('Metric 3', pd.DataFrame({'build': ['A', 'B', 'C'], 'value': [60, 65, 68]}))
+]
+
+for i, (metric, df) in enumerate(metric_groups):
+    plt.subplot(len(metric_groups), 1, i + 1)
+    sns.barplot(x='build', y='value', data=df)
+    plt.axhline(y=90, color='black', linestyle='dashed')
+    plt.title(metric + " score", fontweight='bold', fontsize="20")
+    plt.ylabel("Score", fontweight='bold', fontsize="15")
+    plt.xticks(rotation=45, fontweight='bold', fontsize="15")
+    plt.yticks(fontweight='bold', fontsize="15")
+    plt.xlabel("")
+
+# Adjust the vertical spacing (pad value between subplots)
+plt.subplots_adjust(hspace=0.4)  # Increase/decrease 0.4 to control vertical space
+
+plt.tight_layout()
+plt.show()
+```
+
+
 
 ### Question - weighted average bar chart
 
