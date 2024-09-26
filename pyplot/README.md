@@ -1,7 +1,78 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
-Issue
+### ReportLab example
+```
+from reportlab.lib.pagesizes import letter, landscape, portrait
+from reportlab.pdfgen import canvas
+from reportlab.lib.units import inch
+from PIL import Image
+
+def create_pdf_with_image(image_path, output_pdf):
+    # Open the image using Pillow to get the image dimensions
+    img = Image.open(image_path)
+    img_width, img_height = img.size
+
+    # Create a canvas for the PDF
+    c = canvas.Canvas(output_pdf)
+
+    # ---------- First Page (Landscape Orientation) ----------
+    # Set page size to landscape letter
+    c.setPageSize(landscape(letter))
+
+    # Add header text
+    c.setFont("Helvetica-Bold", 14)
+    c.drawString(30, 550, "This is the header text on the first page (landscape orientation)")
+
+    # Get the dimensions of the page
+    page_width, page_height = landscape(letter)
+
+    # Calculate the image dimensions to fit 90% of the page width
+    scale = (0.90 * page_width) / img_width
+    new_width = img_width * scale
+    new_height = img_height * scale
+
+    # Draw the image centered horizontally and slightly lower than the header
+    c.drawImage(image_path, x=(page_width - new_width) / 2, y=(page_height - new_height) / 2 - 50, 
+                width=new_width, height=new_height)
+
+    # Finish the first page
+    c.showPage()
+
+    # ---------- Second Page (Portrait Orientation) ----------
+    # Set page size to portrait letter
+    c.setPageSize(portrait(letter))
+
+    # Add header text
+    c.setFont("Helvetica-Bold", 14)
+    c.drawString(30, 750, "This is the header text on the second page (portrait orientation)")
+
+    # Get the dimensions of the page
+    page_width, page_height = portrait(letter)
+
+    # Recalculate the image dimensions to fit 90% of the portrait page width
+    scale = (0.90 * page_width) / img_width
+    new_width = img_width * scale
+    new_height = img_height * scale
+
+    # Draw the image centered horizontally
+    c.drawImage(image_path, x=(page_width - new_width) / 2, y=(page_height - new_height) / 2 - 100, 
+                width=new_width, height=new_height)
+
+    # Finish the second page
+    c.showPage()
+
+    # Save the PDF
+    c.save()
+
+# Example usage:
+image_path = 'image1.png'
+output_pdf = 'output.pdf'
+create_pdf_with_image(image_path, output_pdf)
+
+```
+
+### Issue
 ```
   File "C:\Users\m.lubinsky\AppData\Local\Programs\Python\Python38\lib\site-packages\fpdf\fpdf.py", line 971, in image
     info=self._parsepng(name)
