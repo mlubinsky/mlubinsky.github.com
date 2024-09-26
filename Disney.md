@@ -1,6 +1,10 @@
 
 ### Authenticate with GitHub using a PAT - personal access token
 
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+
+https://stackoverflow.com/questions/18935539/authenticate-with-github-using-a-token
+
 
 ### SSH
 https://medium.com/@Mikolaj_Maslanka/github-ssh-9b3bb20192b8
