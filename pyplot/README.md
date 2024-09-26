@@ -1,7 +1,11 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
-### ReportLab example
+### ReportLab example - put centered text on the top
+
+The x and y positions define the location of the __bottom-left__ corner of the text or image in the PDF.
+
+As with all positioning in ReportLab, these coordinates are measured in points, with 1 point = 1/72 of an inch.
 ```
 
 from reportlab.lib.pagesizes import letter, landscape
@@ -43,8 +47,10 @@ def create_pdf_with_centered_text(output_pdf):
 output_pdf = "centered_text_output.pdf"
 create_pdf_with_centered_text(output_pdf)
 
+```
 
-
+### ReportLab example put text on the top
+```
 
 from reportlab.lib.pagesizes import letter, landscape, portrait
 from reportlab.pdfgen import canvas
