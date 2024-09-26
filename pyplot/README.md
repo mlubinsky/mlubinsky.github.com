@@ -3,6 +3,11 @@ https://github.com/rougier/scientific-visualization-book
 
 
 ```
+  File "C:\Users\m.lubinsky\AppData\Local\Programs\Python\Python38\lib\site-packages\fpdf\fpdf.py", line 971, in image
+    info=self._parsepng(name)
+  File "C:\Users\m.lubinsky\AppData\Local\Programs\Python\Python38\lib\site-packages\fpdf\fpdf.py", line 1876, in _parsepng
+    color += re_c.sub(lambda m: m.group(1), line)
+
 from fpdf import FPDF
 
 #f1 = 'a.png'
