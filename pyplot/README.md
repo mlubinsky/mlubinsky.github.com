@@ -2,6 +2,65 @@ scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
 
+### How to add number to the barchart
+
+#### Adding Y-Values on Top of the Bars
+```
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Example dataframe
+df = pd.DataFrame({
+    'category': ['A', 'B', 'C', 'D'],
+    'value': [10, 20, 15, 25]
+})
+
+# Create the barplot
+plt.figure(figsize=(8, 6))
+ax = sns.barplot(x='category', y='value', data=df, palette='Blues_d')
+
+# Add value labels on top of bars
+for p in ax.patches:
+    ax.text(p.get_x() + p.get_width() / 2,  # X position of the text
+            p.get_height() + 0.5,           # Y position of the text (slightly above the bar)
+            f'{p.get_height():.0f}',        # The label (Y value)
+            ha='center')                    # Center the text horizontally
+
+plt.title('Bar Chart with Y-Values on Top')
+plt.xlabel('Category')
+plt.ylabel('Value')
+plt.show()
+
+Explanation:
+p.get_x() + p.get_width() / 2: Centers the text horizontally on each bar.
+p.get_height() + 0.5: Positions the text just above the bar. You can adjust the + 0.5 to move it further away or closer to the top.
+
+
+f'{p.get_height():.0f}': Formats the Y-value as an integer without decimals.
+```
+#### Adding Y-Values in the Middle of the Bars
+```
+
+plt.figure(figsize=(8, 6))
+ax = sns.barplot(x='category', y='value', data=df, palette='Blues_d')
+
+# Add value labels in the middle of bars
+for p in ax.patches:
+    ax.text(p.get_x() + p.get_width() / 2,  # X position of the text
+            p.get_height() / 2,             # Y position of the text (middle of the bar)
+            f'{p.get_height():.0f}',        # The label (Y value)
+            ha='center',                    # Center the text horizontally
+            va='center',                    # Center the text vertically
+            color='white',                  # Change text color to make it stand out
+            fontsize=12)                    # Adjust the font size
+
+plt.title('Bar Chart with Y-Values in the Middle')
+plt.xlabel('Category')
+plt.ylabel('Value')
+plt.show()
+```
 
  #### How to control vertical padding: use subplots_adjust ?
 ```
