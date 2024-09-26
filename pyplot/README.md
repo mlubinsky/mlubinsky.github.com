@@ -1,25 +1,9 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
-### Subplots question
-```
- How to assign vertical padding between subplots?
- How to convert this code to use
- fig, axs = plt.subplots(nrows=2, ncols=2, figsize=(10, 8))
-?
 
-for i, (metric, df) in enumerate(metric_groups):
-        plt.subplot(len(metric_groups), 1, i + 1)
-        sns.barplot(x='build', y='value', data=df)
-        plt.axhline(y=90, color='black', linestyle='dashed')
-        plt.title(metric + " score", fontweight='bold', fontsize="20")
-        plt.ylabel("Score", fontweight='bold', fontsize="15")
-        plt.xticks(rotation=45, fontweight='bold', fontsize="15")
-        plt.yticks(fontweight='bold', fontsize="15")
-        plt.xlabel("")
-plt.tight_layout()
-```
- #### How to control vertical padding: use subplots_adjust
+
+ #### How to control vertical padding: use subplots_adjust ?
 ```
 wspace: Controls the horizontal spacing between subplots.
 top, bottom, left, right: These control the margins around the figure.
@@ -53,7 +37,67 @@ plt.tight_layout()
 plt.show()
 ```
 
-### Question
+### Build HTML with images
+```
+import base64
+
+def image_to_base64(image_path):
+    with open(image_path, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
+    return encoded_string
+
+# HTML structure
+html_template = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Images in HTML</title>
+    <style>
+        body {{ font-family: Arial, sans-serif; }}
+        h1 {{ font-size: 24px; font-weight: bold; }}
+        p {{ font-size: 18px; }}
+        img {{ width: 100%; height: auto; }}
+    </style>
+</head>
+<body>
+    <h1>Document Title</h1>
+    <p>This is some text that goes above the image.</p>
+    <img src="data:image/png;base64,{image1}" alt="Image 1">
+    <p>Text below the first image.</p>
+    <img src="data:image/png;base64,{image2}" alt="Image 2">
+    <p>Text below the second image.</p>
+</body>
+</html>
+"""
+
+# Convert your PNG files to base64
+image1_base64 = image_to_base64("image1.png")
+image2_base64 = image_to_base64("image2.png")
+
+# Generate the final HTML with embedded images
+final_html = html_template.format(image1=image1_base64, image2=image2_base64)
+
+# Write the HTML to a file
+with open("output.html", "w") as html_file:
+    html_file.write(final_html)
+
+print("HTML file with embedded images created as 'output.html'")
+
+
+Key Points:
+Base64 Encoding: The function image_to_base64 reads the image file in binary mode, converts it into a base64 string, and decodes it for embedding.
+Embedding Images: The HTML <img> tags contain the images as base64 data URIs in the src attribute (src="data:image/png;base64,{image_data}").
+Single HTML File: All the images are embedded directly into the HTML file, so there are no external links.
+The file is fully self-contained.
+Final HTML File:
+The generated output.html will contain all the text and images inline. You can easily share this file via email,
+and recipients can open it in any modern browser without needing to access external resources.
+
+```
+
+###  axs = plt.subplots()  vs plt.subplot()
 ```
 
 Using fig, axs = plt.subplots() is generally a better approach compared to manually creating subplots with plt.subplot() in a loop. Here are some key reasons why:
@@ -67,8 +111,26 @@ Avoids Overlapping Issues: When using plt.subplot(), overlapping subplots can so
 
 Easier to Scale: As the number of subplots grows, managing them with plt.subplots() is more scalable than manually specifying the subplot indices.
 
-Refactored Code with plt.subplots():
- 
+```
+
+### Code with plt.subplot()
+
+```
+for i, (metric, df) in enumerate(metric_groups):
+        plt.subplot(len(metric_groups), 1, i + 1)
+        sns.barplot(x='build', y='value', data=df)
+        plt.axhline(y=90, color='black', linestyle='dashed')
+        plt.title(metric + " score", fontweight='bold', fontsize="20")
+        plt.ylabel("Score", fontweight='bold', fontsize="15")
+        plt.xticks(rotation=45, fontweight='bold', fontsize="15")
+        plt.yticks(fontweight='bold', fontsize="15")
+        plt.xlabel("")
+plt.tight_layout()
+```
+
+
+### Refactored Code with plt.subplots():
+``` 
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -100,8 +162,9 @@ plt.tight_layout()
 
 # Show the plot
 plt.show()
-
-Key Benefits of the Updated Code:
+```
+#### Key Benefits of the plt.subplots() vs plt.subplot():
+```
 Access to axs Array: Each subplot is explicitly referenced through axs[i], making it easier to apply labels, titles, and other formatting.
 
 Automatic Layout Management: Using fig.tight_layout() and plt.subplots_adjust() helps manage the layout more effectively,
@@ -114,9 +177,6 @@ Yes, using plt.subplots() is better than the current approach. It leads to more 
 makes it easier to control each subplot individually, and handles layout management more gracefully.
 
 ```
-
-
-
 
 
 ### Question - weighted average bar chart
