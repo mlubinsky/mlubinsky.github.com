@@ -3,6 +3,49 @@ https://github.com/rougier/scientific-visualization-book
 
 ### ReportLab example
 ```
+
+from reportlab.lib.pagesizes import letter, landscape
+from reportlab.pdfgen import canvas
+
+def create_pdf_with_centered_text(output_pdf):
+    # Create a canvas for the PDF
+    c = canvas.Canvas(output_pdf)
+
+    # Set the page size (landscape letter in this case)
+    c.setPageSize(landscape(letter))
+
+    # Set the font and size for the text
+    c.setFont("Helvetica-Bold", 14)
+
+    # Define the text to be centered
+    header_text = "Centered Header Text"
+
+    # Get the page width and height
+    page_width, page_height = landscape(letter)
+
+    # Get the width of the text in points
+    text_width = c.stringWidth(header_text, "Helvetica-Bold", 14)
+
+    # Calculate the x position to center the text horizontally
+    x_position = (page_width - text_width) / 2
+
+    # Set the y position for the top of the page (near the top margin)
+    y_position = page_height - 50  # 50 points from the top
+
+    # Draw the centered text at the calculated position
+    c.drawString(x_position, y_position, header_text)
+
+    # Save the PDF
+    c.showPage()
+    c.save()
+
+# Example usage
+output_pdf = "centered_text_output.pdf"
+create_pdf_with_centered_text(output_pdf)
+
+
+
+
 from reportlab.lib.pagesizes import letter, landscape, portrait
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
