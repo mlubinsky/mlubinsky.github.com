@@ -20,6 +20,63 @@ pdf.ln(85)  # Move to a new line
 pdf.cell(10, 10, txt="This is an example of a landscape page with a wide image.", ln=True)
 pdf.output("output.pdf")
 
+
+Explanation of Your Code:
+First Cell (Title):
+
+pdf.cell(80) adds an 80-unit wide empty cell to the left, which moves the position to the right.
+pdf.cell(20, 10, 'Title', 1, 1, 'C') creates a 20x10mm cell with the text "Title", centered ('C'), and framed (1 creates a border). After this cell, a line break occurs (ln=True or 1).
+Line Break (ln(85)):
+
+The line break ln(85) moves the cursor 85 units down from its current vertical position (below the "Title").
+Second Line:
+
+pdf.cell(10, 10, txt="This is the second line.", ln=True) adds a 10x10 cell with the text "This is the second line." and breaks the line again.
+How to Control the Text Positioning
+You can either use relative positioning with ln() (as you did) or absolute positioning using set_xy().
+
+1. Relative Positioning with ln() (as you’re doing)
+You control the vertical spacing between text lines by adjusting the argument in ln().
+Example:
+python
+Copy code
+pdf.cell(20, 10, 'Title', 1, 1, 'C')  # Title with a line break
+pdf.ln(10)  # Move down by 10 units (instead of 85)
+pdf.cell(0, 10, txt="This is the second line.", ln=True)  # Second line
+2. Absolute Positioning with set_xy()
+If you want more control over exactly where the text appears, you can use set_xy() to move the cursor to a specific position on the page (measured in mm).
+Example:
+python
+Copy code
+pdf.set_xy(10, 20)  # Set cursor at x=10mm, y=20mm
+pdf.cell(20, 10, 'Title', 1, 1, 'C')  # Title cell
+
+pdf.set_xy(10, 40)  # Set cursor at x=10mm, y=40mm
+pdf.cell(0, 10, txt="This is the second line.")  # Second line at the new position
+Complete Example with Absolute Positioning:
+python
+Copy code
+from fpdf import FPDF
+
+pdf = FPDF(orientation='L')
+pdf.set_auto_page_break(auto=True, margin=15)
+pdf.add_page()
+pdf.set_font("Arial", size=12)
+
+# First line: 'Title' at position (x=10, y=20)
+pdf.set_xy(10, 20)
+pdf.cell(20, 10, 'Title', 1, 1, 'C')
+
+# Second line: 'This is the second line.' at position (x=10, y=40)
+pdf.set_xy(10, 40)
+pdf.cell(0, 10, txt="This is the second line.")
+
+pdf.output("output.pdf")
+Key Points:
+ln() moves the cursor down a specified number of units relative to its current position.
+set_xy(x, y) allows you to set the cursor to a specific position on the page, giving you full control over text placement.
+cell(width, height, text) positions the text relative to the current cursor position and can be combined with ln() or set_xy() for custom layouts.
+You can adjust the vertical and horizontal positions using ln() or set_xy() based on your layout needs.
 ```
 
 
