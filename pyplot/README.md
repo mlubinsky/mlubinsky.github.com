@@ -1,7 +1,148 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
-### PDF generation
+
+### PDF tools
+####  1. ReportLab
+```
+Best for: Complex, highly customized PDFs with support for graphics, tables, and layouts.
+
+Key Features:
+
+Full control over the layout (fonts, styles, images, shapes, charts).
+Supports vector graphics and sophisticated drawing.
+Can handle multiple pages, with both portrait and landscape orientations.
+Ability to add watermarks, page numbers, etc.
+Limitations: Steeper learning curve if you need detailed control over layout.
+
+pip install reportlab
+ 
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+
+c = canvas.Canvas("output.pdf", pagesize=letter)
+c.drawString(100, 750, "Hello, this is a PDF created with ReportLab!")
+c.drawImage("image.png", 100, 600, width=200, height=100)
+c.showPage()
+c.save()
+```
+
+#### 2. FPDF
+```
+Best for: Simpler PDF creation, especially when you need quick layouts with text and images.
+
+Key Features:
+
+Simple and intuitive to use.
+Lightweight and good for basic reports (text, tables, images).
+Allows text alignment, multi-cell layouts, headers, and footers.
+Supports custom page sizes and page orientations.
+Limitations: Limited support for advanced features like vector graphics or complex layouts.
+
+pip install fpdf
+
+from fpdf import FPDF
+
+pdf = FPDF()
+pdf.add_page()
+pdf.set_font('Arial', 'B', 16)
+pdf.cell(40, 10, 'Hello World!')
+pdf.image('image.png', x=10, y=20, w=100)
+pdf.output('output.pdf')
+```
+
+#### 3. WeasyPrint
+```
+Best for: Converting HTML and CSS to PDF, great if you have existing HTML content.
+
+Key Features:
+
+Converts HTML/CSS to high-quality PDFs (including support for modern CSS features).
+Great for generating PDFs from web content or reports with an HTML structure.
+Allows complex layouts using CSS, making it easier to design.
+Limitations: Depends on HTML/CSS knowledge and may require adjustments for complex layouts.
+ 
+pip install weasyprint
+ 
+from weasyprint import HTML
+
+html = """
+<h1>Hello, World!</h1>
+<p>This is a PDF generated from HTML.</p>
+<img src='image.png' width='200'>
+"""
+HTML(string=html).write_pdf("output.pdf")
+```
+
+#### 4. PyPDF2 (for PDF manipulation)
+```
+Best for: Manipulating existing PDFs (merging, splitting, rotating, etc.).
+
+Key Features:
+
+Supports merging, splitting, and rotating pages.
+Can extract text and metadata from existing PDFs.
+Not for generating PDFs from scratch, but excellent for post-processing PDFs.
+Example (merging two PDFs):
+
+pip install pypdf2
+ 
+from PyPDF2 import PdfMerger
+
+merger = PdfMerger()
+merger.append("file1.pdf")
+merger.append("file2.pdf")
+merger.write("merged.pdf")
+merger.close()
+ 
+```
+ 
+
+#### 5. pdfkit (HTML to PDF via wkhtmltopdf)
+```
+Best for: Converting existing HTML content to PDF using the wkhtmltopdf tool.
+Key Features:
+Converts HTML files or web pages to PDF with high accuracy.
+Supports advanced CSS, headers, footers, page numbers, and complex layouts.
+Limitations: Requires wkhtmltopdf to be installed separately.
+
+pip install pdfkit
+# You also need wkhtmltopdf installed separately
+
+
+import pdfkit
+
+pdfkit.from_url('https://www.example.com', 'output.pdf')
+
+```
+
+#### 6.  Pillow (for image manipulation before generating PDFs)
+```
+Best for: Working with images before placing them in PDFs.
+
+Key Features:
+
+Great for resizing, cropping, or modifying images before embedding in PDFs.
+Can convert multiple image files into a PDF.
+
+pip install pillow
+
+from PIL import Image
+
+image_list = [Image.open('image1.png'), Image.open('image2.png')]
+image_list[0].save('output.pdf', save_all=True, append_images=image_list[1:])
+``` 
+ 
+
+#### Summary of Recommendations:
+```
+For simple PDFs with text and images: Use FPDF.
+For complex, custom layouts: Use ReportLab.
+For converting HTML/CSS to PDF: Use WeasyPrint or pdfkit.
+For post-processing PDFs: Use PyPDF2.
+For working with images: Use Pillow before converting them into PDF.
+```
+### PDF generation using fpdf
 ```
 from fpdf import FPDF
 
