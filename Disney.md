@@ -17,26 +17,38 @@ Automatically at System Startup: On macOS, ssh-agent runs automatically in the b
 You don’t usually need to start it manually.
 If you add your SSH keys to the macOS Keychain, ssh-agent will use these without any additional configuration.
 Manually Starting ssh-agent: Although not typically necessary, you can start the ssh-agent manually by running
+
 eval "$(ssh-agent -s)"
- it in your terminal.
+
 This command starts ssh-agent and sets the necessary environment variables for the current terminal session.
 Adding SSH Keys to ssh-agent
 To add your SSH private key to ssh-agent ensure you don’t have to type your passphrase every time you use the key,
 you can use the ssh-agent command.
-Here’s how:
+ 
 ```
 #### Basic Usage ssh-agent
 ```
-Run ssh-add ~/.ssh/id_rsa to add your default SSH private key to ssh-agent. 
+Run
+
+ssh-add ~/.ssh/id_rsa
+
+to add your default SSH private key to ssh-agent. 
 Replace ~/.ssh/id_rsa with the path to your actual SSH private key file if it’s different.
 Adding Keys to macOS Keychain: On macOS, you can add your SSH key to the Keychain to automatically load it on startup.
-Use ssh-add -K ~/.ssh/id_rsa for this purpose. 
-Note: In newer versions of macOS, you might use ssh-add -apple-use-keychain ~/.ssh/id_rsa.
+Use
+
+ssh-add -K ~/.ssh/id_rsa for this purpose. 
+
+Note: In newer versions of macOS, you might use
+
+ssh-add -apple-use-keychain ~/.ssh/id_rsa.
 ```
 ### Checking Loaded Keys
 ```
-To see which keys are currently managed by ssh-agent, run 
+To see which keys are currently managed by ssh-agent, run
+
 ssh-add -l
+
 This command lists all the keys that ssh-agent has in memory.
 ```
 #### Configuring ssh-agent with .ssh/config
@@ -75,9 +87,13 @@ Method 2
 Using the ps Command
 
 1. Open your terminal.
-2. Run the command ps -ax | grep ssh-agent
+2. Run the command
 
-This command searches for ssh-agent processes across all user sessions on your system. If ssh-agent is running, you’ll see one or more lines of output showing the process ID and other details about the ssh-agent process. If you see no relevant lines, it means ssh-agent is not running.
+ ps -ax | grep ssh-agent
+
+This command searches for ssh-agent processes across all user sessions on your system.
+If ssh-agent is running, you’ll see one or more lines of output showing the process ID and other details about the ssh-agent process.
+If you see no relevant lines, it means ssh-agent is not running.
 
 Method 3
 Checking for SSH_AUTH_SOCK Environment Variable
@@ -87,7 +103,8 @@ Checking for SSH_AUTH_SOCK Environment Variable
 
 This command checks for the presence of the SSH_AUTH_SOCK environment variable,
 which is set by ssh-agent and points to the socket used to communicate with the agent.
-If this command prints a path to a socket, it indicates that ssh-agent is running and has set up the environment variable for SSH authentication.
+If this command prints a path to a socket, it indicates that ssh-agent is running
+and has set up the environment variable for SSH authentication.
 If it prints nothing or returns an empty line, ssh-agent might not be running in your current session.
 ```
 
@@ -98,7 +115,8 @@ enabling you to perform Git operations like clone, push, and pull securely.
 Here’s a step-by-step guide based on the information from GitHub Docs:
 
 Step 1
-Check for Existing SSH Keys. Before generating a new SSH key, it’s important to check if you already have any existing SSH keys on your computer.
+Check for Existing SSH Keys. Before generating a new SSH key,
+it’s important to check if you already have any existing SSH keys on your computer.
 You can do this by searching your ~/.ssh directory for existing keys or
 by using the ls command in your terminal (e.g., ls -al ~/.ssh).
 
@@ -108,9 +126,11 @@ You’ll be asked to provide an email address, which acts as a label for the key
 For modern systems, it’s recommended to use the Ed25519 algorithm:
 
 ssh-keygen -t ed25519 -C "your_email@example.com"
+
 If your system does not support Ed25519, you can use RSA:
 
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
 During this process, you’ll choose where to save the new SSH key and whether to protect it with a passphrase.
 
 Step 3
