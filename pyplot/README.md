@@ -1,13 +1,89 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
-
+Issue
 ```
   File "C:\Users\m.lubinsky\AppData\Local\Programs\Python\Python38\lib\site-packages\fpdf\fpdf.py", line 971, in image
     info=self._parsepng(name)
   File "C:\Users\m.lubinsky\AppData\Local\Programs\Python\Python38\lib\site-packages\fpdf\fpdf.py", line 1876, in _parsepng
     color += re_c.sub(lambda m: m.group(1), line)
 
+
+The issue you're encountering is likely due to the specific way that FPDF handles PNG images. FPDF can sometimes have trouble parsing certain PNG files, especially if the image contains unsupported features (like transparency or specific color profiles).
+
+Here are a few things you can try to resolve the issue:
+
+1. Convert the PNG to a Simpler Format
+Some PNG files may contain transparency or complex metadata that FPDF struggles to handle. You can convert the PNG to a simpler format using the Pillow library, which will strip unnecessary information and ensure FPDF can read it properly.
+Here's how you can do it:
+
+python
+Copy code
+from PIL import Image
+
+# Open the PNG image and save it as a new file
+img = Image.open('image1.png')
+img = img.convert("RGB")  # Convert to RGB to remove transparency
+img.save('image1_converted.png')
+
+# Now try adding it to the PDF
+from fpdf import FPDF
+pdf = FPDF(orientation='L')
+pdf.set_auto_page_break(auto=True, margin=15)
+pdf.add_page()
+pdf.image('image1_converted.png', x=10, y=10, w=190)
+pdf.output("output.pdf")
+This code converts the PNG image to a simpler RGB format and saves it as a new file. Then you can use that file in FPDF.
+
+2. Check the PNG File Properties
+Verify if the PNG has transparency (alpha channel), as FPDF may not support it properly. You can check the image properties using Pillow:
+python
+Copy code
+from PIL import Image
+
+img = Image.open('image1.png')
+print(img.mode)  # Check if it has 'RGBA' (indicating transparency)
+If the image is in RGBA mode (with transparency), convert it to RGB as in the previous step.
+
+3. Use a Different Image Format (e.g., JPEG)
+If the issue persists, try converting the image to JPEG format, which FPDF handles more consistently:
+python
+Copy code
+img = Image.open('image1.png')
+img.convert('RGB').save('image1.jpg')  # Save as JPEG
+
+pdf = FPDF(orientation='L')
+pdf.set_auto_page_break(auto=True, margin=15)
+pdf.add_page()
+pdf.image('image1.jpg', x=10, y=10, w=190)
+pdf.output("output.pdf")
+4. Upgrade or Reinstall FPDF
+Ensure that you're using the latest version of FPDF. You can upgrade it using:
+bash
+Copy code
+pip install --upgrade fpdf
+Sometimes reinstalling FPDF helps clear issues related to corrupted installations.
+
+5. Use a Different PDF Library for Image Embedding
+If FPDF continues to give trouble, you might want to consider a different PDF generation library, like ReportLab, which generally handles images more robustly:
+python
+Copy code
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+
+c = canvas.Canvas("output.pdf", pagesize=letter)
+c.drawImage("image1.png", 10, 750, width=190, height=150)
+c.showPage()
+c.save()
+
+Conclusion:
+The issue is likely due to the format or properties of the PNG image. Try converting it to a simpler format (RGB) or using JPEG.
+Ensure your FPDF library is up to date.
+If FPDF cannot handle the image, consider using ReportLab, which has more robust image handling capabilities.
+
+```
+
+```
 from fpdf import FPDF
 
 #f1 = 'a.png'
