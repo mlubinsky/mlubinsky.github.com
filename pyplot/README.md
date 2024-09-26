@@ -1,6 +1,33 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+### PDF generation
+```
+from fpdf import FPDF
+
+# Create a PDF document
+pdf = FPDF(orientation='L')  # 'L' is for landscape orientation
+pdf.set_auto_page_break(auto=True, margin=15)
+
+# Add a page
+pdf.add_page()
+
+# Insert an image
+pdf.image('image1.png', x=10, y=10, w=190)
+
+# Add some text
+pdf.set_font("Arial", size=12)
+pdf.ln(85)  # Move to a new line
+pdf.cell(200, 10, txt="This is an example of a landscape page with a wide image.", ln=True)
+
+# Add another image
+pdf.add_page()
+pdf.image('image2.png', x=10, y=10, w=190)
+
+# Save the PDF
+pdf.output("output.pdf")
+
+```
 
 ### How to add number to the barchart
 
