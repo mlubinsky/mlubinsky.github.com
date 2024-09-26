@@ -2,6 +2,27 @@ scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
 
+```
+from fpdf import FPDF
+
+#f1 = 'a.png'
+#f2 = 'b.png'
+# Create a PDF document
+pdf = FPDF(orientation='L')  # 'L' is for landscape orientation
+pdf.set_auto_page_break(auto=True, margin=15)
+pdf.add_page()
+pdf.set_font("Arial", size=12)
+# Move to 8 cm to the right
+pdf.cell(80)
+# Centered text in a framed 20*10 mm cell and line break
+pdf.cell(20, 10, 'Title', 1, 1, 'C')
+pdf.ln(85)  # Move to a new line
+pdf.cell(10, 10, txt="This is an example of a landscape page with a wide image.", ln=True)
+pdf.output("output.pdf")
+
+```
+
+
 ### PDF tools
 ####  1. ReportLab
 ```
