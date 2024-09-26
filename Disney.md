@@ -126,8 +126,10 @@ You can find the public key file in the directory specified during key generatio
 copy its contents, and paste them into GitHub.
 
 Step 5
-Test Your SSH Connection. To ensure everything is set up correctly,
-you can test your SSH connection to GitHub by executing a command like ssh -T git@github.com.
+Test your SSH Connection
+
+ssh -vT git@github.com
+
 If the connection is successful, you’ll receive a message from GitHub.
 ```
 
