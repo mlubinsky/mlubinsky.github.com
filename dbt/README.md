@@ -10,6 +10,12 @@ spark=SparkSession.builder.getOrCreate()
 # spark is actually an SQLFrame DucDBSession
 ```
 
+### Databricks community
+
+https://community.databricks.com/
+
+https://community.databricks.com/t5/events/databricks-learning-festival-virtual-10-october-31-october/ev-p/90710
+
 ### Databricks System tables
 
 https://www.youtube.com/watch?v=LcRWHzk8Wm4
@@ -27,7 +33,7 @@ dbldatagen, which is a Python Databricks Lab Project that allows us to generate 
 ```
 
 
-https://community.databricks.com/t5/events/databricks-learning-festival-virtual-10-october-31-october/ev-p/90710
+
 
 
 ✨They're all free! Whether you're new to AI or an experienced pro, these courses are a great way to master AI in 2024
