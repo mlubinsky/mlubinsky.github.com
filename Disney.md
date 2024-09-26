@@ -118,7 +118,9 @@ Step 1
 Check for Existing SSH Keys. Before generating a new SSH key,
 it’s important to check if you already have any existing SSH keys on your computer.
 You can do this by searching your ~/.ssh directory for existing keys or
-by using the ls command in your terminal (e.g., ls -al ~/.ssh).
+by using the ls command in your terminal  
+
+ls -al ~/.ssh
 
 Step 2
 Generate a New SSH Key. If you don’t have an SSH key or want to generate a new one, you can create it using the ssh-keygen command.
@@ -150,6 +152,14 @@ Test your SSH Connection
 
 ssh -vT git@github.com
 
+ssh -vT LUBIM016@github.com
+
 If the connection is successful, you’ll receive a message from GitHub.
 ```
-
+### Git commands
+```
+git --version  # git version 2.39.5 (Apple Git-154)
+git config --global user.email "your email id"
+git config --global user.name "your name"
+git config --list 
+```
