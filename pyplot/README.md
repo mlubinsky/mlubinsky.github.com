@@ -49,6 +49,57 @@ create_pdf_with_centered_text(output_pdf)
 
 ```
 
+### Reportlab - set page orientation based on image size:
+```
+from reportlab.lib.pagesizes import letter, landscape, portrait
+from reportlab.pdfgen import canvas
+from PIL import Image
+
+def create_pdf_with_images(image_paths, output_pdf):
+    # Create a canvas for the PDF
+    c = canvas.Canvas(output_pdf)
+
+    # Loop through all the images
+    for image_path in image_paths:
+        # Open the image using Pillow to get the image dimensions
+        img = Image.open(image_path)
+        img_width, img_height = img.size
+
+        # Determine orientation: landscape if width > height, otherwise portrait
+        if img_width > img_height:
+            c.setPageSize(landscape(letter))
+        else:
+            c.setPageSize(portrait(letter))
+
+        # Get the dimensions of the current page
+        page_width, page_height = c._pagesize
+
+        # Scale the image to fit the page width (keeping the aspect ratio)
+        scale = min(page_width / img_width, page_height / img_height)
+        new_width = img_width * scale
+        new_height = img_height * scale
+
+        # Center the image on the page
+        x_position = (page_width - new_width) / 2
+        y_position = (page_height - new_height) / 2
+
+        # Add the image to the PDF
+        c.drawImage(image_path, x_position, y_position, new_width, new_height)
+
+        # Move to the next page
+        c.showPage()
+
+    # Save the PDF
+    c.save()
+
+# Example usage
+image_paths = ['image1.png', 'image2.png', 'image3.png']
+output_pdf = "output_images.pdf"
+create_pdf_with_images(image_paths, output_pdf)
+```
+
+
+
 ### ReportLab example put text on the top
 ```
 from reportlab.lib.pagesizes import letter, landscape, portrait
