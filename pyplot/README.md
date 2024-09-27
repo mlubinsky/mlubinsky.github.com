@@ -27,7 +27,9 @@ import matplotlib.colors as mcolors
 def plot_df(df):
     # Define a list of available colors excluding red
     available_colors = list(mcolors.TABLEAU_COLORS.values())
-    available_colors.remove('tab:red')  # Remove red from the available colors
+    # Remove red from the available colors
+    red = mcolors.TABLEAU_COLORS['tab:red']
+    available_colors.remove(red)
 
     # Get the list of columns without the 'date' column
     numeric_columns = df.columns.drop('date')
