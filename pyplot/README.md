@@ -1,6 +1,77 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+
+### Latest code
+
+```
+import os
+from reportlab.lib.pagesizes import letter, landscape, portrait
+from reportlab.pdfgen import canvas
+from PIL import Image
+
+
+def create_pdf_with_images_from_folder(folder_path, output_pdf):
+    # Create a canvas for the PDF
+    c = canvas.Canvas(output_pdf)
+
+    # Traverse the folder and its subfolders
+    for subfolder, dirs, files in os.walk(folder_path):
+        # Filter files starting with "line" or "bar"
+        line_files = sorted([f for f in files if f.startswith("line")])
+        bar_files = sorted([f for f in files if f.startswith("bar")])
+
+        # Combine line files followed by bar files
+        image_files = line_files + bar_files
+
+        # Process files in order
+        for image_file in image_files:
+            image_path = os.path.join(subfolder, image_file)
+
+            # Open the image using Pillow to get the image dimensions
+            img = Image.open(image_path)
+            img_width, img_height = img.size
+
+            # Determine orientation: landscape if width > height, otherwise portrait
+            if img_width > img_height:
+                c.setPageSize(landscape(letter))
+            else:
+                c.setPageSize(portrait(letter))
+
+            # Get the dimensions of the current page
+            page_width, page_height = c._pagesize
+
+            # Scale the image to fit the page width (keeping the aspect ratio)
+            scale = min(page_width / img_width, page_height / img_height)
+            new_width = img_width * scale
+            new_height = img_height * scale
+
+            # Add the text above the image (file name)
+            text_above_image = f"Image: {image_file}"
+            c.setFont("Helvetica-Bold", 12)
+            c.drawString(10, page_height - 30, text_above_image)
+
+            # Center the image on the page
+            x_position = (page_width - new_width) / 2
+            y_position = (page_height - new_height) / 2
+
+            # Add the image to the PDF
+            c.drawImage(image_path, x_position, y_position, new_width, new_height)
+
+            # Move to the next page
+            c.showPage()
+
+    # Save the PDF
+    c.save()
+
+
+# Example usage
+folder_path = "path/to/your/folder"  # Replace with the folder path containing subfolders with images
+output_pdf = "output_images_from_folders.pdf"
+create_pdf_with_images_from_folder(folder_path, output_pdf)
+
+```
+
 ### create a PDF where multiple images are placed on each page
 ```
 create a PDF where multiple images are placed on each page
