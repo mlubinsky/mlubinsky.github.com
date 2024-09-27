@@ -67,6 +67,14 @@ def create_pdf_with_images_from_folder(folder_path, output_pdf):
                 page_number += 1
                 x_position, y_position = margin_x, margin_y
 
+                # Re-set the page size to get new page width and height
+                if img_width > img_height:
+                    c.setPageSize(landscape(letter))
+                    page_width, page_height = landscape(letter)
+                else:
+                    c.setPageSize(portrait(letter))
+                    page_width, page_height = portrait(letter)
+
             # Add the text above the image (file name)
             text_above_image = f"Image: {image_file}"
             c.setFont("Helvetica-Bold", 12)
@@ -90,6 +98,7 @@ def create_pdf_with_images_from_folder(folder_path, output_pdf):
 
     # Save the PDF
     c.save()
+
 
 
 # Example usage
