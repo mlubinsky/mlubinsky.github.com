@@ -49,8 +49,51 @@ def plot_df(df):
     plt.tight_layout()
     plt.show()
 
-  
 ```
+
+### RED color with seaborn lineplot
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+def plot_df(df):
+    # Set the style of seaborn
+    sns.set(style="whitegrid")
+
+    # Melt the dataframe so that we can plot it using seaborn
+    df_melted = pd.melt(df, id_vars='date', var_name='variable', value_name='value')
+
+    # Create a color palette for the variables, ensuring REF gets red
+    unique_columns = df_melted['variable'].unique()
+    palette = sns.color_palette("husl", len(unique_columns))
+    colors = {col: palette[i] for i, col in enumerate(unique_columns)}
+
+    # If 'REF' exists in the columns, set its color to red
+    if 'REF' in unique_columns:
+        colors['REF'] = 'red'
+
+    # Create a list of colors for the lineplot (seaborn accepts a color dictionary)
+    plt.figure(figsize=(10, 6))
+    sns.lineplot(data=df_melted, x='date', y='value', hue='variable', palette=colors)
+
+    # Customize the plot
+    plt.xlabel('Date', fontsize=12, fontweight='bold')
+    plt.ylabel('Values', fontsize=12, fontweight='bold')
+    plt.title('Line Plot of Numeric Columns', fontsize=16, fontweight='bold')
+    plt.xticks(rotation=45, ha='right')
+    
+    # Add legend to the plot
+    plt.legend(title="Columns")
+    
+    # Display the plot
+    plt.tight_layout()
+    plt.show()
+
+
+```
+
+
 ### Many images per page with page number on top and bottom of every page:
 ```
 import os
