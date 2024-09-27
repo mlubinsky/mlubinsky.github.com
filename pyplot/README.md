@@ -1,6 +1,90 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+#### Code with page number on top and bottom of evety page:
+```
+import os
+from reportlab.lib.pagesizes import letter, landscape, portrait
+from reportlab.pdfgen import canvas
+from PIL import Image
+
+
+def create_pdf_with_images_from_folder(folder_path, output_pdf):
+    # Create a canvas for the PDF
+    c = canvas.Canvas(output_pdf)
+
+    # Initialize the page number
+    page_number = 1
+
+    # Traverse the folder and its subfolders
+    for subfolder, dirs, files in os.walk(folder_path):
+        # Filter files starting with "line" or "bar"
+        line_files = sorted([f for f in files if f.startswith("line")])
+        bar_files = sorted([f for f in files if f.startswith("bar")])
+
+        # Combine line files followed by bar files
+        image_files = line_files + bar_files
+
+        # Process files in order
+        for image_file in image_files:
+            image_path = os.path.join(subfolder, image_file)
+
+            # Open the image using Pillow to get the image dimensions
+            img = Image.open(image_path)
+            img_width, img_height = img.size
+
+            # Determine orientation: landscape if width > height, otherwise portrait
+            if img_width > img_height:
+                c.setPageSize(landscape(letter))
+            else:
+                c.setPageSize(portrait(letter))
+
+            # Get the dimensions of the current page
+            page_width, page_height = c._pagesize
+
+            # Add header with page number (at the top of the page)
+            c.setFont("Helvetica", 10)
+            header_text = f"Page {page_number}"
+            c.drawString(page_width - 100, page_height - 20, header_text)  # Header at top-right
+
+            # Add footer with page number (at the bottom of the page)
+            footer_text = f"Page {page_number}"
+            c.drawString(page_width - 100, 20, footer_text)  # Footer at bottom-right
+
+            # Scale the image to fit the page width (keeping the aspect ratio)
+            scale = min(page_width / img_width, page_height / img_height)
+            new_width = img_width * scale
+            new_height = img_height * scale
+
+            # Add the text above the image (file name)
+            text_above_image = f"Image: {image_file}"
+            c.setFont("Helvetica-Bold", 12)
+            c.drawString(10, page_height - 50, text_above_image)  # Slightly below the header
+
+            # Center the image on the page
+            x_position = (page_width - new_width) / 2
+            y_position = (page_height - new_height) / 2
+
+            # Add the image to the PDF
+            c.drawImage(image_path, x_position, y_position, new_width, new_height)
+
+            # Move to the next page
+            c.showPage()
+
+            # Increment the page number
+            page_number += 1
+
+    # Save the PDF
+    c.save()
+
+
+# Example usage
+folder_path = "path/to/your/folder"  # Replace with the folder path containing subfolders with images
+output_pdf = "output_images_with_page_numbers.pdf"
+create_pdf_with_images_from_folder(folder_path, output_pdf)
+
+
+```
 
 ### Latest code
 
