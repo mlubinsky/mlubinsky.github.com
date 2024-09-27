@@ -1,6 +1,16 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+### Q
+```
+There is pandas dataframe df with  column date and other numeric columns with arbitrary names,
+we want to make lineplot using matplotlib seaborn.
+x-axis is   df['date']
+y-axis - other df columns, seperate line per column; with unique color per column.
+if one of df columns is named 'REF' then it should be plotted using red color.
+
+  
+```
 ### Many images per page with page number on top and bottom of every page:
 ```
 import os
