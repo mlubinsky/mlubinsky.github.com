@@ -1,4 +1,4 @@
-### 2 images per pdf page
+### 2 images per pdf page: ChatGPT
 ```
 import os
 from reportlab.lib.pagesizes import letter, landscape
@@ -54,4 +54,87 @@ output_pdf = 'output_images.pdf'
 create_pdf_with_images(folder_path, output_pdf)
 
 
+```
+### 2 images per pdf page: Gemini
+```
+No, the code does not resize the images to fit the PDF horizontally and vertically. 
+The images are set to a fixed width and height of 4 inches. 
+If the images are larger than this size, they will be cropped. 
+If they are smaller, they will be displayed at their original size.
+ 
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.units import inch
+from reportlab.platypus import SimpleDocTemplate, Image, Paragraph, Spacer
+from reportlab.lib.styles import getSampleStyleSheet
+
+def create_pdf(images_folder, output_pdf):
+    doc = SimpleDocTemplate(output_pdf, pagesize=A4)
+    styles = getSampleStyleSheet()
+    story = []
+
+    images = [f for f in os.listdir(images_folder) if f.endswith('.png')]
+
+    for i in range(0, len(images), 2):
+        img1 = Image(images[i], width=inch * 4, height=inch * 4)
+        img2 = Image(images[i+1], width=inch * 4, height=inch * 4)
+
+        story.append(Paragraph(images[i], styles['Heading3']))
+        story.append(img1)
+        story.append(Spacer(1, inch * 0.5))
+
+        story.append(Paragraph(images[i+1], styles['Heading3']))
+        story.append(img2)
+        story.append(Spacer(1, inch * 0.5))
+
+        story.append(PageBreak())
+
+    doc.build(story)
+
+if __name__ == '__main__':
+    images_folder = 'images'
+    output_pdf = 'images.pdf'
+    create_pdf(images_folder, output_pdf)
+
+
+Here is an example of how to resize the images to fit the PDF:
+
+Python
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.units import inch
+from reportlab.platypus import SimpleDocTemplate,   
+ Image, Paragraph, Spacer
+from reportlab.lib.styles import getSampleStyleSheet   
+
+
+def create_pdf(images_folder, output_pdf):
+    doc = SimpleDocTemplate(output_pdf, pagesize=A4)
+    styles = getSampleStyleSheet()
+    story = []
+
+    images = [f for f in os.listdir(images_folder) if f.endswith('.png')]
+
+    for i in range(0, len(images), 2):
+        img1 = Image(images[i], width=inch * 4, height=inch * 4)
+        img2 = Image(images[i+1], width=inch * 4, height=inch * 4)
+
+        # Resize the images to fit the PDF horizontally and vertically
+        img1.wrap(inch * 4, inch * 4)
+        img2.wrap(inch * 4, inch * 4)
+
+        story.append(Paragraph(images[i], styles['Heading3']))
+        story.append(img1)
+        story.append(Spacer(1, inch * 0.5))
+
+        story.append(Paragraph(images[i+1], styles['Heading3']))
+        story.append(img2)
+        story.append(Spacer(1, inch * 0.5))
+
+        story.append(PageBreak())
+
+    doc.build(story)
+
+if __name__ == '__main__':
+    images_folder = 'images'
+    output_pdf = 'images.pdf'
+    create_pdf(images_folder, output_pdf)
 ```
