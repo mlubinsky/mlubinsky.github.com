@@ -51,7 +51,6 @@ create_pdf_with_centered_text(output_pdf)
 
 ### ReportLab example put text on the top
 ```
-
 from reportlab.lib.pagesizes import letter, landscape, portrait
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
@@ -71,7 +70,8 @@ def create_pdf_with_image(image_path, output_pdf):
 
     # Add header text
     c.setFont("Helvetica-Bold", 14)
-    c.drawString(30, 550, "This is the header text on the first page (landscape orientation)")
+    header_text = "This is the header text on the first page (landscape orientation)"
+    c.drawString(30, 550, header_text)
 
     # Get the dimensions of the page
     page_width, page_height = landscape(letter)
@@ -81,8 +81,11 @@ def create_pdf_with_image(image_path, output_pdf):
     new_width = img_width * scale
     new_height = img_height * scale
 
-    # Draw the image centered horizontally and slightly lower than the header
-    c.drawImage(image_path, x=(page_width - new_width) / 2, y=(page_height - new_height) / 2 - 50, 
+    # Adjust the y-position of the image to leave enough space for the header
+    image_y_position = 400  # Set a lower y-position for the image
+
+    # Draw the image centered horizontally and below the header
+    c.drawImage(image_path, x=(page_width - new_width) / 2, y=image_y_position, 
                 width=new_width, height=new_height)
 
     # Finish the first page
@@ -94,7 +97,8 @@ def create_pdf_with_image(image_path, output_pdf):
 
     # Add header text
     c.setFont("Helvetica-Bold", 14)
-    c.drawString(30, 750, "This is the header text on the second page (portrait orientation)")
+    header_text = "This is the header text on the second page (portrait orientation)"
+    c.drawString(30, 750, header_text)
 
     # Get the dimensions of the page
     page_width, page_height = portrait(letter)
@@ -104,8 +108,11 @@ def create_pdf_with_image(image_path, output_pdf):
     new_width = img_width * scale
     new_height = img_height * scale
 
+    # Adjust the y-position for the image on the second page to leave space for the header
+    image_y_position = 500  # Set a lower y-position for the image
+
     # Draw the image centered horizontally
-    c.drawImage(image_path, x=(page_width - new_width) / 2, y=(page_height - new_height) / 2 - 100, 
+    c.drawImage(image_path, x=(page_width - new_width) / 2, y=image_y_position, 
                 width=new_width, height=new_height)
 
     # Finish the second page
@@ -118,6 +125,7 @@ def create_pdf_with_image(image_path, output_pdf):
 image_path = 'image1.png'
 output_pdf = 'output.pdf'
 create_pdf_with_image(image_path, output_pdf)
+
 
 ```
 
