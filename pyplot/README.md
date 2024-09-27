@@ -118,9 +118,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def plot_df(df):
+def plot_df(df, , width=10, height=6):
     # Set the style of seaborn
-    sns.set(style="whitegrid")
+    sns.set_style("whitegrid")
 
     # Melt the dataframe so that we can plot it using seaborn
     df_melted = pd.melt(df, id_vars='date', var_name='variable', value_name='value')
@@ -145,7 +145,7 @@ def plot_df(df):
     # Customize the plot
     plt.xlabel('Date', fontsize=12, fontweight='bold')
     plt.ylabel('Values', fontsize=12, fontweight='bold')
-    plt.title('Line Plot of Numeric Columns', fontsize=16, fontweight='bold')
+    plt.title('Line Plot using seaborn.  width='+str(width) + " height="+str(height), fontsize=16, fontweight='bold')
     plt.xticks(rotation=45, ha='right')
     
     # Add legend to the plot
