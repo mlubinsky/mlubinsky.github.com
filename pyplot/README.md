@@ -65,15 +65,18 @@ def create_pdf_with_images_from_folder(folder_path, output_pdf):
                 # Move to the next page and reset positions
                 c.showPage()
                 page_number += 1
+
+                # Reset positions for the new page
                 x_position, y_position = margin_x, margin_y
 
                 # Re-set the page size to get new page width and height
                 if img_width > img_height:
                     c.setPageSize(landscape(letter))
-                    page_width, page_height = landscape(letter)
                 else:
                     c.setPageSize(portrait(letter))
-                    page_width, page_height = portrait(letter)
+
+                # Assign the correct page dimensions after setting the page size
+                page_width, page_height = c._pagesize
 
             # Add the text above the image (file name)
             text_above_image = f"Image: {image_file}"
@@ -100,11 +103,11 @@ def create_pdf_with_images_from_folder(folder_path, output_pdf):
     c.save()
 
 
-
 # Example usage
 folder_path = "path/to/your/folder"  # Replace with the folder path containing subfolders with images
 output_pdf = "output_images_multiple_per_page.pdf"
 create_pdf_with_images_from_folder(folder_path, output_pdf)
+
 
 ```
 
