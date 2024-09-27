@@ -1,13 +1,53 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
-### Q
+### Custom RED color for REF
 ```
 There is pandas dataframe df with  column date and other numeric columns with arbitrary names,
 we want to make lineplot using matplotlib seaborn.
 x-axis is   df['date']
 y-axis - other df columns, seperate line per column; with unique color per column.
 if one of df columns is named 'REF' then it should be plotted using red color.
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+def plot_df(df):
+    # Set the style of seaborn
+    sns.set(style="whitegrid")
+
+    # Prepare the plot
+    plt.figure(figsize=(10, 6))
+
+    # Get the list of columns except for 'date'
+    numeric_columns = df.columns.difference(['date'])
+    
+    # Create a color palette for the columns, ensuring REF gets red
+    palette = sns.color_palette("husl", len(numeric_columns))
+    colors = {col: palette[i] for i, col in enumerate(numeric_columns)}
+
+    # If 'REF' exists in columns, set its color to red
+    if 'REF' in numeric_columns:
+        colors['REF'] = 'red'
+    
+    # Plot each column
+    for col in numeric_columns:
+        plt.plot(df['date'], df[col], label=col, color=colors[col])
+
+    # Customize the plot
+    plt.xlabel('Date', fontsize=12, fontweight='bold')
+    plt.ylabel('Values', fontsize=12, fontweight='bold')
+    plt.title('Line Plot of Numeric Columns', fontsize=16, fontweight='bold')
+    plt.xticks(rotation=45, ha='right')
+    
+    # Add legend to the plot
+    plt.legend(title="Columns")
+    
+    # Display the plot
+    plt.tight_layout()
+    plt.show()
 
   
 ```
