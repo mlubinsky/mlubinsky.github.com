@@ -1,7 +1,105 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
-#### Code with page number on top and bottom of evety page:
+### Many images per page with page number on top and bottom of every page:
+```
+import os
+from reportlab.lib.pagesizes import letter, landscape, portrait
+from reportlab.pdfgen import canvas
+from PIL import Image
+
+
+def create_pdf_with_images_from_folder(folder_path, output_pdf):
+    # Create a canvas for the PDF
+    c = canvas.Canvas(output_pdf)
+
+    # Initialize the page number
+    page_number = 1
+
+    # Set margins
+    margin_x, margin_y = 20, 40
+    spacing_x, spacing_y = 10, 20  # Space between images
+    max_image_height = 300  # Maximum height for any image to ensure multiple images fit
+
+    # Traverse the folder and its subfolders
+    for subfolder, dirs, files in os.walk(folder_path):
+        # Filter files starting with "line" or "bar"
+        line_files = sorted([f for f in files if f.startswith("line")])
+        bar_files = sorted([f for f in files if f.startswith("bar")])
+
+        # Combine line files followed by bar files
+        image_files = line_files + bar_files
+
+        # Initialize variables for image placement
+        x_position = margin_x
+        y_position = margin_y
+
+        # Process files in order
+        for image_file in image_files:
+            image_path = os.path.join(subfolder, image_file)
+
+            # Open the image using Pillow to get the image dimensions
+            img = Image.open(image_path)
+            img_width, img_height = img.size
+
+            # Adjust image size to fit within the maximum allowed height
+            aspect_ratio = img_width / img_height
+            new_image_height = min(max_image_height, img_height)
+            new_image_width = new_image_height * aspect_ratio
+
+            # Determine orientation based on aspect ratio
+            if img_width > img_height:
+                c.setPageSize(landscape(letter))
+                page_width, page_height = landscape(letter)
+            else:
+                c.setPageSize(portrait(letter))
+                page_width, page_height = portrait(letter)
+
+            # Check if the next image fits on the current page, otherwise add a new page
+            if x_position + new_image_width + margin_x > page_width or y_position + new_image_height + margin_y > page_height:
+                # Add page number footer before switching to a new page
+                c.setFont("Helvetica", 10)
+                footer_text = f"Page {page_number}"
+                c.drawString(page_width - 100, 20, footer_text)
+
+                # Move to the next page and reset positions
+                c.showPage()
+                page_number += 1
+                x_position, y_position = margin_x, margin_y
+
+            # Add the text above the image (file name)
+            text_above_image = f"Image: {image_file}"
+            c.setFont("Helvetica-Bold", 12)
+            c.drawString(x_position, page_height - y_position - 20, text_above_image)  # Slightly above the image
+
+            # Add the image to the PDF
+            c.drawImage(image_path, x_position, page_height - y_position - new_image_height - 40, new_image_width, new_image_height)
+
+            # Update x and y positions for the next image
+            x_position += new_image_width + spacing_x
+            if x_position + new_image_width + margin_x > page_width:
+                # Move to the next row if the current row is full
+                x_position = margin_x
+                y_position += new_image_height + spacing_y
+
+        # Add page number footer on the last page
+        c.setFont("Helvetica", 10)
+        footer_text = f"Page {page_number}"
+        c.drawString(page_width - 100, 20, footer_text)
+        c.showPage()
+
+    # Save the PDF
+    c.save()
+
+
+# Example usage
+folder_path = "path/to/your/folder"  # Replace with the folder path containing subfolders with images
+output_pdf = "output_images_multiple_per_page.pdf"
+create_pdf_with_images_from_folder(folder_path, output_pdf)
+
+```
+
+#### One image per page with page number on top and bottom of every page:
 ```
 import os
 from reportlab.lib.pagesizes import letter, landscape, portrait
