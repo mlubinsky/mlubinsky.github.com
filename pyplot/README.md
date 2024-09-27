@@ -1,6 +1,75 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+### create a PDF where multiple images are placed on each page
+```
+create a PDF where multiple images are placed on each page
+(since the images share the same aspect ratio)
+and have a text line above each image, you can:
+
+Set the layout to fit multiple images per page.
+Add a text line above each image.
+Dynamically manage positioning so that the images are added one after the other, potentially on the same page.
+
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+from reportlab.lib.units import inch
+from PIL import Image
+
+def create_pdf_with_multiple_images(image_paths, output_pdf, images_per_page=2):
+    # Create a canvas for the PDF
+    c = canvas.Canvas(output_pdf, pagesize=letter)
+    
+    # Set font for the header text
+    c.setFont("Helvetica-Bold", 12)
+    
+    # Get the page dimensions
+    page_width, page_height = letter
+
+    # Variables to control positioning
+    image_counter = 0
+    margin = 0.5 * inch  # margin from the edges
+    available_height = page_height - 2 * margin  # Exclude top and bottom margins
+    space_between_images = 0.5 * inch  # Vertical space between images
+
+    for image_path in image_paths:
+        img = Image.open(image_path)
+        img_width, img_height = img.size
+        aspect_ratio = img_width / img_height
+
+        # Calculate the size of the image that fits within the page width and available height
+        image_height = (available_height - (images_per_page - 1) * space_between_images) / images_per_page
+        image_width = image_height * aspect_ratio
+
+        # If image_counter exceeds the number of images per page, create a new page
+        if image_counter >= images_per_page:
+            c.showPage()  # Create a new page
+            c.setFont("Helvetica-Bold", 12)  # Reset the font for the new page
+            image_counter = 0  # Reset the image counter for the new page
+
+        # Calculate the y-position for each image and text based on the image index
+        y_position = page_height - margin - image_counter * (image_height + space_between_images)
+
+        # Add the text above the image
+        text_above_image = f"Image {image_counter + 1}: {image_path}"
+        c.drawString(margin, y_position, text_above_image)
+
+        # Add the image below the text
+        c.drawImage(image_path, margin, y_position - image_height - 10, width=image_width, height=image_height)
+
+        # Increment the image counter
+        image_counter += 1
+
+    # Save the PDF
+    c.save()
+
+# Example usage
+image_paths = ['image1.png', 'image2.png', 'image3.png', 'image4.png']
+output_pdf = "output_multiple_images.pdf"
+create_pdf_with_multiple_images(image_paths, output_pdf, images_per_page=2)
+
+```
+
 ### ReportLab example - put centered text on the top
 
 The x and y positions define the location of the __bottom-left__ corner of the text or image in the PDF.
