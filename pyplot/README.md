@@ -1,6 +1,24 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+### Dataframe for plotting
+```
+import pandas as pd
+
+# Create the DataFrame
+data = {
+    'date': ['2024-09-01', '2024-09-02', '2024-09-03', '2024-09-04'],
+    'A': [1.2, 2.4, 3.1, 4.6],
+    'B': [2.3, 3.8, 1.5, 4.2],
+    'REF': [3.0, 2.7, 4.1, 5.0]
+}
+
+df = pd.DataFrame(data)
+
+# Display the DataFrame
+print(df)
+```
+
 ### Custom RED color for REF
 ```
 There is pandas dataframe df with  column date and other numeric columns with arbitrary names,
