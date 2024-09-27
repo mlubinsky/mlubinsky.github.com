@@ -46,10 +46,9 @@ Recommended Image Size: 6 inches (width) x 4.25 inches (height)
 
 
 4. Implementing in ReportLab
-Below is the updated Python code using ReportLab to place two images per page, with each image having its filename above it. The code dynamically sets the page orientation based on each image's aspect ratio and ensures that images fit within the recommended dimensions.
+Below is the updated Python code using ReportLab to place two images per page, with each image having its filename above it.
+The code dynamically sets the page orientation based on each image's aspect ratio and ensures that images fit within the recommended dimensions.
 
-python
-Copy code
 import os
 from reportlab.lib.pagesizes import letter, landscape, portrait
 from reportlab.pdfgen import canvas
@@ -227,11 +226,13 @@ Font Sizes and Styles:
 Adjust the font sizes (Helvetica-Bold, size 12) as needed to fit your design preferences.
 Image Positioning:
 
-The drawImage method uses the bottom-left corner as the reference point. Ensure that your y_position calculations account for the image height and the space needed for the filename.
+The drawImage method uses the bottom-left corner as the reference point.
+Ensure that your y_position calculations account for the image height and the space needed for the filename.
 Error Handling:
 
 For robustness, consider adding error handling to manage cases where images might not load correctly or folders might be empty.
-By following this guide and adjusting the dimensions as per your specific requirements, you can create a well-organized PDF with multiple images per page, each accompanied by its filename.
+By following this guide and adjusting the dimensions as per your specific requirements,
+you can create a well-organized PDF with multiple images per page, each accompanied by its filename.
 
 -----
 To avoid resizing an image on a landscape-oriented page in a PDF, you need to know the exact dimensions of the page and how much space you want the image to occupy (accounting for margins or other elements). In this case, we are working with a landscape letter-sized page, which has the following dimensions:
@@ -250,21 +251,16 @@ Height: 6.5 inches
 If your image has exactly these dimensions (9 × 6.5 inches), it will fit perfectly on a landscape page without any resizing.
 
 Avoiding Resizing:
-Aspect Ratio: The aspect ratio of the image should be 9:6.5 (or approximately 1.385:1). If your image matches this ratio, it will fit into the available space without distortion.
+Aspect Ratio: The aspect ratio of the image should be 9:6.5 (or approximately 1.385:1).
+If your image matches this ratio, it will fit into the available space without distortion.
 Exact Size: If your image is 9 inches wide and 6.5 inches tall, it will not be resized when inserted into the PDF with these settings.
 Applying to the Code:
 In the drawImage() function in ReportLab, if the image is already 9 × 6.5 inches, you can use those dimensions directly without worrying about scaling:
 
-python
-Copy code
+
 # No scaling needed if the image is 9x6.5 inches
 c.drawImage(img_path, x_offset, y_offset, width=9*inch, height=6.5*inch)
 This ensures the image fits the available space on a landscape page without resizing.
-
-
-
-
-
 
 To modify the PDF layout for landscape orientation so that the images are aligned vertically
 (i.e., stacked one below the other on the same page), you will need to adjust the code to position the images vertically instead of side by side.
@@ -272,6 +268,7 @@ To modify the PDF layout for landscape orientation so that the images are aligne
 Here’s how you can do it:
 
 Updated Logic for Landscape Orientation
+-------------------------------------------------
 Page Layout: In landscape orientation, each page should still have two images per page,
 but stacked vertically (one image above the other).
 
@@ -282,8 +279,7 @@ Positioning:
 The first image will be placed at the top of the page, under the margin.
 The second image will be placed below the first, with a margin or spacing between them.
 Updated Code for Stacked Images on Landscape Pages
-python
-Copy code
+
 import os
 from reportlab.lib.pagesizes import letter, landscape, portrait
 from reportlab.pdfgen import canvas
@@ -415,7 +411,7 @@ The resulting PDF will have two images per page, stacked vertically, with filena
 You said:
 What should be the size of image to avoid scaling ?
 ChatGPT said:
-ChatGPT
+
 To avoid scaling of images when placing them on a landscape-oriented PDF page with two images per page (stacked vertically), you need to match the image dimensions to the available space on the PDF page.
 
 Page Dimensions
