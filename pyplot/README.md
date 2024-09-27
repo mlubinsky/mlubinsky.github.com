@@ -18,6 +18,47 @@ df = pd.DataFrame(data)
 # Display the DataFrame
 print(df)
 ```
+#### Better Custom color without seaborn
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.colors as mcolors
+
+def plot_df(df):
+    # Define a list of available colors excluding red
+    available_colors = list(mcolors.TABLEAU_COLORS.values())
+    available_colors.remove('tab:red')  # Remove red from the available colors
+
+    # Get the list of columns without the 'date' column
+    numeric_columns = df.columns.drop('date')
+
+    # Create the figure and axis for the plot
+    plt.figure(figsize=(10, 6))
+
+    # Plot each column with appropriate color
+    for i, column in enumerate(numeric_columns):
+        if column == 'REF':
+            plt.plot(df['date'], df[column], label=column, color='red', linewidth=2)
+        else:
+            # Assign non-red colors from the available color list
+            color = available_colors[i % len(available_colors)]
+            plt.plot(df['date'], df[column], label=column, color=color, linewidth=2)
+
+    # Customize the plot
+    plt.xlabel('Date', fontsize=12, fontweight='bold')
+    plt.ylabel('Values', fontsize=12, fontweight='bold')
+    plt.title('Line Plot of Numeric Columns', fontsize=16, fontweight='bold')
+    plt.xticks(rotation=45, ha='right')
+
+    # Add a legend
+    plt.legend(title="Columns")
+
+    # Display the plot
+    plt.tight_layout()
+    plt.show()
+
+```
+
 
 ### Custom RED color for REF
 ```
@@ -69,6 +110,51 @@ def plot_df(df):
 
 ```
 
+#### Better custom color using seaborn lineplot
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+def plot_df(df):
+    # Set the style of seaborn
+    sns.set(style="whitegrid")
+
+    # Melt the dataframe so that we can plot it using seaborn
+    df_melted = pd.melt(df, id_vars='date', var_name='variable', value_name='value')
+
+    # Get unique columns (without 'date')
+    unique_columns = df_melted['variable'].unique()
+
+    # Create a color palette for the variables excluding red
+    palette = sns.color_palette("husl", len(unique_columns) - 1)
+
+    # Assign colors to each column
+    colors = {col: palette[i] for i, col in enumerate(unique_columns) if col != 'REF'}
+
+    # If 'REF' exists, set its color explicitly to red
+    if 'REF' in unique_columns:
+        colors['REF'] = 'red'
+
+    # Create a list of colors for the lineplot (seaborn accepts a color dictionary)
+    plt.figure(figsize=(10, 6))
+    sns.lineplot(data=df_melted, x='date', y='value', hue='variable', palette=colors)
+
+    # Customize the plot
+    plt.xlabel('Date', fontsize=12, fontweight='bold')
+    plt.ylabel('Values', fontsize=12, fontweight='bold')
+    plt.title('Line Plot of Numeric Columns', fontsize=16, fontweight='bold')
+    plt.xticks(rotation=45, ha='right')
+    
+    # Add legend to the plot
+    plt.legend(title="Columns")
+    
+    # Display the plot
+    plt.tight_layout()
+    plt.show()
+
+
+```
 ### RED color with seaborn lineplot
 ```
 import pandas as pd
