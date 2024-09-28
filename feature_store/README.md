@@ -9,6 +9,8 @@ https://habr.com/ru/companies/ru_mts/articles/677516/
 
 https://habr.com/ru/articles/534068/
 
+https://www.youtube.com/watch?v=9BwEms8y8eU
+
 ## ML OPS
 
 https://habr.com/ru/companies/selectel/articles/703460/
