@@ -1,7 +1,47 @@
 Portrait Orientation: 8.5 inches (width) x 11 inches (height)
+
 Landscape Orientation: 11 inches (width) x 8.5 inches (height)
 
 ```
+I am creating  png files using python library matplotlib. 
+I can  specify the height and width of the image as parameters of figure.
+Then I want to create pdf file with all images, 2 files per one pdf page, aligned vertically.
+Pdf page is a Letter, portrait location.
+What should be the png file height and width in order to be placed into pdf without resizing ?
+
+
+The exact dimensions of the PNG files you create will depend on the specific layout and content of your PDF.
+However, here are some general guidelines:
+
+PDF Page Size: A Letter size PDF page is 8.5 inches wide by 11 inches tall.
+Image Alignment: You want to place two images vertically on each page.
+ This means that the total height of the two images should be less than or equal to 11 inches, minus any spacing you want to add between the images.
+Image Aspect Ratio: The aspect ratio of your images should be such that they fit comfortably within the available space on the PDF page.
+If the images are too wide, they will be cropped or resized. If they are too narrow, there will be extra space on the page.
+Here is an example of how you could set the height and width of your PNG files to ensure that they fit on a Letter size PDF page without resizing:
+
+ 
+import matplotlib.pyplot as plt
+
+# Set the desired height and width of the PDF page in inches
+pdf_page_width = 8.5
+pdf_page_height = 11
+
+# Set the height and width of the PNG files in inches, taking into account the PDF page size and desired layout
+png_file_width = 4.0
+png_file_height = (pdf_page_height - 1.0) / 2.0  # Subtract 1 inch for spacing between images
+
+# Create the figure with the desired dimensions
+fig = plt.figure(figsize=(png_file_width, png_file_height))
+
+# ... (your plotting code here)
+
+# Save the figure as a PNG file
+plt.savefig('image.png')
+Use code with caution.
+
+With these dimensions, two PNG files should fit comfortably on a Letter size PDF page without resizing. You can adjust the png_file_width and png_file_height variables to fit your specific needs.
+
 1. Understanding Page Dimensions
 Standard Page Size: We'll use the Letter size as an example, which is commonly used in the United States.
 
@@ -40,8 +80,6 @@ Available Height for Images: 9 inches (total available) - 0.5 inches (spacing) =
 Height per Image: 8.5 / 2 = 4.25 inches
 Width per Image: 6.5 inches (available width)
 Recommended Image Size: 6 inches (width) x 4.25 inches (height)
-
-
 
 
 
