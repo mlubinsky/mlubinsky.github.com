@@ -15,10 +15,12 @@ However, here are some general guidelines:
 
 PDF Page Size: A Letter size PDF page is 8.5 inches wide by 11 inches tall.
 Image Alignment: You want to place two images vertically on each page.
- This means that the total height of the two images should be less than or equal to 11 inches, minus any spacing you want to add between the images.
+ This means that the total height of the two images should be less than or equal to 11 inches, minus any spacing
+you want to add between the images.
 Image Aspect Ratio: The aspect ratio of your images should be such that they fit comfortably within the available space on the PDF page.
 If the images are too wide, they will be cropped or resized. If they are too narrow, there will be extra space on the page.
-Here is an example of how you could set the height and width of your PNG files to ensure that they fit on a Letter size PDF page without resizing:
+Here is an example of how you could set the height and width of your PNG files to ensure that
+they fit on a Letter size PDF page without resizing:
 
  
 import matplotlib.pyplot as plt
@@ -38,9 +40,13 @@ fig = plt.figure(figsize=(png_file_width, png_file_height))
 
 # Save the figure as a PNG file
 plt.savefig('image.png')
-Use code with caution.
+ 
 
-With these dimensions, two PNG files should fit comfortably on a Letter size PDF page without resizing. You can adjust the png_file_width and png_file_height variables to fit your specific needs.
+With these dimensions, two PNG files should fit comfortably on a Letter size PDF page without resizing.
+You can adjust the png_file_width and png_file_height variables to fit your specific needs.
+
+
+
 
 1. Understanding Page Dimensions
 Standard Page Size: We'll use the Letter size as an example, which is commonly used in the United States.
