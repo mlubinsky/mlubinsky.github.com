@@ -1,6 +1,8 @@
 Casual inference:
 https://matheusfacure.github.io/python-causality-handbook/landing-page.html
 
+https://habr.com/ru/companies/X5Tech/articles/846298/
+
 https://habr.com/ru/companies/otus/articles/839922/ Как ускорить A/B тесты: несколько способов
 
 https://habr.com/ru/post/653363/ . [Часть 1] Математика в АБ-тестах. Что такое z-score и p-value?
