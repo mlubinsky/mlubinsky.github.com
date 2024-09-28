@@ -10,6 +10,90 @@ Pdf page is a Letter, portrait location.
 What should be the png file height and width in order to be placed into pdf without resizing ?
 
 
+ChatGPT
+--------
+To place two PNG files vertically on a Letter-sized PDF page (portrait orientation) without resizing, we first need to understand the dimensions of a Letter page and how to divide it for two images.
+
+Step-by-Step Calculation:
+PDF Page Size (Letter - Portrait):
+
+A Letter page in portrait orientation is 8.5 inches wide and 11 inches tall.
+Dividing for Two Images:
+
+Since you're placing two images vertically on one page, the height available for each image is half of the page height: 
+11
+2
+=
+5.5
+2
+11
+​
+ =5.5 inches.
+The full width of each image can be 8.5 inches.
+Matplotlib DPI (Dots Per Inch):
+
+Typically, PDF files are created with a resolution of 72 DPI, though you can choose a higher DPI for better quality (e.g., 300 DPI).
+Image Dimensions in Pixels: To avoid resizing, we need to create PNG files that match the physical size (in inches) of the space available for each image on the PDF page.
+
+If you're using 72 DPI:
+
+Width in pixels: 
+8.5
+×
+72
+=
+612
+8.5×72=612 pixels
+Height in pixels: 
+5.5
+×
+72
+=
+396
+5.5×72=396 pixels
+If you're using 300 DPI for higher quality:
+
+Width in pixels: 
+8.5
+×
+300
+=
+2550
+8.5×300=2550 pixels
+Height in pixels: 
+5.5
+×
+300
+=
+1650
+5.5×300=1650 pixels
+Matplotlib Figure Size:
+To specify the figure size in inches for Matplotlib, you should use the following settings:
+
+Width: 8.5 inches
+Height: 5.5 inches (for each image, since two will be placed vertically).
+Here’s how you can set the figure size in Matplotlib:
+
+python
+Copy code
+import matplotlib.pyplot as plt
+
+# Set DPI (72 or 300 as needed)
+dpi = 300
+
+# Create figure with desired size
+fig, ax = plt.subplots(figsize=(8.5, 5.5), dpi=dpi)
+
+# Your plotting code here
+plt.plot([0, 1], [0, 1])
+
+# Save as PNG
+plt.savefig("image.png", dpi=dpi)
+plt.close()
+
+
+Gemini
+--------
 The exact dimensions of the PNG files you create will depend on the specific layout and content of your PDF.
 However, here are some general guidelines:
 
