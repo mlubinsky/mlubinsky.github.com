@@ -38,6 +38,11 @@ https://geish-a.livejournal.com/1445327.html?view=comments#comments
 
 https://avva.livejournal.com/3519039.html?view=comments#comments
 ```
+Action movies
+Saving the Private Ryan,
+Full Metal Jacket  
+Apocalypses Now,
+The day of the Jackal.
 
 1. Die Hard (1988)
 2. Aliens (1986)
