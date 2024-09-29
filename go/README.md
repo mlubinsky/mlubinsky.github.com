@@ -17,7 +17,13 @@ https://news.ycombinator.com/item?id=39318867
 
 https://bitfieldconsulting.com/golang/tao-of-go
 
-Build web site with go:
+### Build web site with go:
+
+https://htmgo.dev/  htmx + go
+
+https://jvns.ca/blog/2024/09/27/some-go-web-dev-notes/
+
+https://news.ycombinator.com/item?id=41687707
 
 https://lets-go-further.alexedwards.net/
 
