@@ -1,3 +1,16 @@
+
+Here are 6 Python libraries you can use to make the EDA process easier:
+```
+- 𝗦𝘄𝗲𝗲𝘁𝘃𝗶𝘇: Generates comparative reports that visually analyze data and target features.
+- 𝗣𝗮𝗻𝗱𝗮𝘀 𝗣𝗿𝗼𝗳𝗶𝗹𝗶𝗻𝗴: Creates comprehensive reports on datasets with detailed analyses of each column.
+- 𝗔𝘂𝘁𝗼𝗩𝗶𝘇: Automatically visualizes data with minimal coding required, making it easier to identify trends and patterns.
+- 𝗗-𝗧𝗮𝗹𝗲: Offers a web-based interface for detailed analysis, visualization, and diagnosis of data.
+- 𝘆𝗱𝗮𝘁𝗮_𝗽𝗿𝗼𝗳𝗶𝗹𝗶𝗻𝗴: Focuses on data quality and profiling to ensure that your data is clean and ready for analysis.
+- 𝗗𝗮𝘁𝗮𝗽𝗿𝗲𝗽: Simplifies the process of cleaning and preparing data for analysis, helping you to quickly get to the insights.
+```
+
+https://github.com/ydataai/ydata-profiling
+
 ### Different ways to read data into PySpark:
 ```
 1.Reading from CSV Files:
