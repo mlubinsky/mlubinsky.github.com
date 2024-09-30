@@ -82,6 +82,32 @@ df.withColumn("partitions", spark_partition_id()).groupBy("partitions").count()
 ### Оптимизируем Shuffle в Spark
 https://habr.com/ru/companies/X5Tech/articles/837348/
 
+
+### Errors
+```
+Caused by: org.apache.spark.SparkException: Job aborted due to stage failure: Total size of serialized results of 47 tasks (1043.6 MiB) is bigger than spark.driver.maxResultSize (1024.0 MiB) at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2863)
+
+𝐌𝐞𝐚𝐧𝐢𝐧𝐠:
+The error we are encountering is due to the total size of the serialized results of your Spark job exceeding the spark.driver.maxResultSize configuration parameter. This parameter sets the maximum size of results that can be fetched to the driver. When the results exceed this limit, the job is aborted to prevent the driver from running out of memory.
+
+𝐏𝐨𝐬𝐬𝐢𝐛𝐥𝐞 𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧𝐬:
+1. Increase spark.driver.maxResultSize
+spark.driver.maxResultSize: "2G"
+
+2. 𝐑𝐞𝐝𝐮𝐜𝐞 𝐭𝐡𝐞 𝐒𝐢𝐳𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐑𝐞𝐬𝐮𝐥𝐭𝐬
+If increasing the spark.driver.maxResultSize is not feasible or desirable, you can try to reduce the size of the results being collected. This can be done by:
+Filtering the data to include only necessary columns.
+
+
+3. 𝐔𝐬𝐞 𝐟𝐨𝐫𝐞𝐚𝐜𝐡 𝐨𝐫 𝐟𝐨𝐫𝐞𝐚𝐜𝐡𝐏𝐚𝐫𝐭𝐢𝐭𝐢𝐨𝐧 𝐈𝐧𝐬𝐭𝐞𝐚𝐝 𝐨𝐟 𝐜𝐨𝐥𝐥𝐞𝐜𝐭
+3.1 If you need to perform some action on each element of the RDD or DataFrame, consider using foreach or foreachPartition instead of collect. These methods perform the action on the worker nodes, avoiding the need to bring all the data to the driver.
+3.2 Aggregating the data to reduce its size.
+3.3 Writing the results to an external storage system (like S3, HDFS, or a database) instead of collecting them to the driver.
+
+4. 𝐔𝐬𝐞 𝐭𝐚𝐤𝐞 𝐈𝐧𝐬𝐭𝐞𝐚𝐝 𝐨𝐟 𝐜𝐨𝐥𝐥𝐞𝐜𝐭
+If you only need a sample of the data, you can use the take method instead of collect. This method retrieves only the specified number of elements.
+
+```
 ### Architecture
 ```
 Components of Spark Architecture
