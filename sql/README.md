@@ -37,6 +37,10 @@ https://habr.com/ru/post/456116/  yEd Graph Editor построить краси
  
 https://schemaspy.org/ 
 
+### Window functions
+
+https://habr.com/ru/articles/846712/
+
 https://www.crunchydata.com/blog/window-functions-for-data-analysis-with-postgres
 
 ### GROUP BY vs Window Function OVER (Partition By ..)
