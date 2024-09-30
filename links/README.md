@@ -1,3 +1,5 @@
+https://lobste.rs/s/rrs30d/any_interesting_tech_blogs_outside_usual
+
 https://news.ycombinator.com/item?id=40269945 What's the most life-changing blog post you've ever read?
 
 https://lobste.rs/s/krkuc9/who_are_your_favorite_tech_youtubers
