@@ -9,6 +9,9 @@ from pyspark.sql import SparkSession
 spark=SparkSession.builder.getOrCreate()
 # spark is actually an SQLFrame DucDBSession
 ```
+### Databricks exceptions
+
+https://docs.databricks.com/en/error-messages/index.html
 
 ### Databricks community
 
