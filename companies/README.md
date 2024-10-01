@@ -2,6 +2,10 @@ https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
 https://www.stellarscience.com/
 
+https://ae.studio/join-us
+
+https://wundergraph.com/jobs#open-positions
+
 Deloitte 
 
 “Fastest Growing AI Chip Startups to Watch in U.S 2024"
