@@ -10,7 +10,7 @@ https://www.linkedin.com/my-items/saved-posts/
 
 Были бы мозги - было бы сотрясение.
 
-
+https://www.stellarscience.com/careers/
 
  https://web.whatsapp.com/  WhatsUp on web
 
