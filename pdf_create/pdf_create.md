@@ -1,3 +1,6 @@
+Проверка содержимого PDF-файлов средствами Python и pdfminer.  
+https://habr.com/ru/companies/auriga/articles/845926/
+
 Portrait Orientation: 8.5 inches (width) x 11 inches (height)
 
 Landscape Orientation: 11 inches (width) x 8.5 inches (height)
