@@ -14,6 +14,32 @@ https://www.waitingforcode.com/data-engineering/section
 
 https://medium.com/@evyamiz/whats-the-cache-084cd174ebba caching
 
+
+1. Spark Query Plans: https://lnkd.in/gspmeQ-U
+
+2. Spark DAGs: https://lnkd.in/gT63KYSn
+
+3. Spark Memory Management: https://lnkd.in/g_Duijqw
+
+4. Spark Executor Tuning: https://lnkd.in/ggRS8b7u
+
+5. Shuffle Partitions: https://lnkd.in/gb4ccdje
+
+6. Data Partitioning: https://lnkd.in/gCQHqWac
+
+7. Bucketing: https://lnkd.in/gKMbwrbf
+
+8. Caching: https://lnkd.in/gJPKpPF4
+
+9. Data Skew: https://lnkd.in/geb4cFcp
+
+10. Salting: https://lnkd.in/gRquuyZf
+
+11. AQE & Broadcast Joins: https://lnkd.in/gM3es6xe
+
+12. Dynamic Partition Pruning: https://lnkd.in/gD4be_5F
+
+
 ### Get number of partitions in df
 ```
 With sparkContext deprecated, was wondering is there any way to actually run
