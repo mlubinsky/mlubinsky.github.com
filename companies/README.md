@@ -1,5 +1,7 @@
 https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
+https://www.stellarscience.com/
+
 Deloitte 
 
 “Fastest Growing AI Chip Startups to Watch in U.S 2024"
@@ -7,11 +9,17 @@ Deloitte
 https://aimresearch.co/market-industry/fastest-growing-ai-chip-startups-to-watch-in-u-s-2024
 
 •⁠  ⁠Groq: AI inference chips optimized for speed and executing commands of pre-trained models.
+
 •⁠  ⁠Cerebras Systems: Wafer-Scale Engine (WSE), the largest chip ever built, designed to accelerate deep learning models
+
 •⁠  ⁠Skild AI: General-purpose AI models for robots
+
 •⁠  ⁠Celestial AI: Photonic Fabric optical interconnect technology to enhance AI computing and memory infrastructure
+
 •⁠  ⁠SiMa.ai: High-performance, low-power AI chips for edge computing applications
+
 •⁠  ⁠Etched: Developing specialized processors optimized for specific AI models, particularly transformers, which are widely used by OpenAI’s ChatGPT and Google’s Gemini.
+
 •⁠  ⁠Blaize: AI computing platforms for edge and automotive applications
 
 - sima.ai  San Jose
