@@ -1,3 +1,9 @@
+
+Event driving arhitecture:
+
+https://www.reactivesystems.eu/2024/09/30/five-common-misconceptions-about-eda.html
+
+
 Системный аналитик. Краткий гайд по профессии. Часть 4. Синхронные и асинхронные интеграции. REST, gRPC, Kafka, RabbitMQ
 
 https://habr.com/ru/articles/844950/ 
