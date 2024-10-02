@@ -10,8 +10,16 @@ This will output:
 
 WHERE col IN ('a', 'b')
 ```
+
+### Defaults in command line help:
+
+https://stackoverflow.com/questions/12151306/argparse-way-to-include-default-values-in-help
+
+parser.add_argument('-o', '--output_dir',  required=False, default=OUTPUT_DIR, help = " default: %(default)s")
+
+parser.add_argument("--type", default="toto", choices=["toto","titi"],  help = "type (default: %(default)s)")
  
- ### Python command line
+### Python command line parsing  and read from SQLite
 ```
 There is SQLite table T with 3 string columns: date, build, value.
 Python program should fetch records from table T based on command line arguments.
