@@ -2,7 +2,13 @@ https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
 https://www.stellarscience.com/
 
+https://app.dover.com/jobs/mixrank
+
 https://ae.studio/join-us
+
+https://ae.studio/join-us
+
+https://temporal.io/careers
 
 https://wundergraph.com/jobs#open-positions
 
