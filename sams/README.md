@@ -10,7 +10,19 @@ This will output:
 
 WHERE col IN ('a', 'b')
 ```
+### Read SQL to pandas dataframe: pd.read_sql_query
 
+```
+from sqlalchemy import create_engine
+import psycopg2, os
+import pandas as pd
+import configparser
+
+    def dbFetchAllDF(self, sql):
+        engine = create_engine('postgresql://{}:{}@{}:{}/{}'.format(self.username, self.password, self.host, self.port, self.dbname))
+        df = pd.read_sql_query(sql, con=engine)
+        return df
+```
 ### Defaults in command line help:
 
 https://stackoverflow.com/questions/12151306/argparse-way-to-include-default-values-in-help
