@@ -26,7 +26,7 @@ If --date is provided then --build should not be provided and vice versa.
 If --back is provided then --end_date should not be provided and vice versa.
 
 ```
-### Solution
+### Solution for SQLite
 ```
 import argparse
 import sqlite3
@@ -130,7 +130,128 @@ if __name__ == "__main__":
 
 ```
 
+### Solution for Postgres
+```
+Parameterized Queries:
+
+The placeholder for parameters in PostgreSQL queries uses %s instead of ? as in SQLite.
+This applies both to fetch_start_date_from_build() and fetch_records().
  
+Cursor and Execution:
+
+The PostgreSQL adapter uses a similar method for executing SQL queries but with cursor.execute(query,
+params) where params is a list of parameters to be safely injected into the query.
+
+
+
+import argparse
+import psycopg2
+from datetime import datetime, timedelta
+import sys
+
+def valid_date(date_str):
+    """Validate the date format is YYYY-MM-DD."""
+    try:
+        return datetime.strptime(date_str, '%Y-%m-%d').date()
+    except ValueError:
+        raise argparse.ArgumentTypeError(f"Invalid date format: '{date_str}'. Expected format: YYYY-MM-DD.")
+
+def parse_arguments():
+    parser = argparse.ArgumentParser(description="Fetch records from PostgreSQL table T.")
+    
+    # Adding command line arguments
+    parser.add_argument('--date', type=valid_date, help='Start date in format YYYY-MM-DD.')
+    parser.add_argument('--end_date', type=valid_date, help='End date in format YYYY-MM-DD.')
+    parser.add_argument('--back', type=int, help='Number of days back from --date.')
+    parser.add_argument('--build', type=str, help='Build name to detect the start date.')
+    parser.add_argument('--ignore_builds', nargs='*', help='List of builds to ignore.')
+    parser.add_argument('--only_builds', nargs='*', help='List of builds to process.')
+    
+    args = parser.parse_args()
+
+    # Validations
+    if args.date and args.build:
+        print("Error: --date and --build cannot be provided together.")
+        sys.exit(1)
+    
+    if args.back and args.end_date:
+        print("Error: --back and --end_date cannot be provided together.")
+        sys.exit(1)
+    
+    return args
+
+def fetch_start_date_from_build(conn, build):
+    """Fetch the minimum date for a given build from PostgreSQL."""
+    cursor = conn.cursor()
+    cursor.execute("SELECT MIN(date) FROM T WHERE build = %s", (build,))
+    result = cursor.fetchone()
+    if result and result[0]:
+        return result[0]
+    else:
+        print(f"No records found for build '{build}'.")
+        sys.exit(1)
+
+def fetch_records(conn, start_date, end_date, only_builds, ignore_builds):
+    """Fetch records based on the start date, end date, and build filters."""
+    query = "SELECT * FROM T WHERE date >= %s AND date <= %s"
+    params = [start_date, end_date]
+    
+    if only_builds:
+        query += " AND build IN ({})".format(','.join(['%s'] * len(only_builds)))
+        params.extend(only_builds)
+    
+    if ignore_builds:
+        query += " AND build NOT IN ({})".format(','.join(['%s'] * len(ignore_builds)))
+        params.extend(ignore_builds)
+    
+    cursor = conn.cursor()
+    cursor.execute(query, params)
+    return cursor.fetchall()
+
+def main():
+    args = parse_arguments()
+    
+    # Connect to PostgreSQL database
+    conn = psycopg2.connect(
+        dbname="your_database",
+        user="your_user",
+        password="your_password",
+        host="your_host",
+        port="your_port"
+    )
+
+    # Determine the start date
+    if args.build:
+        start_date = fetch_start_date_from_build(conn, args.build)
+    elif args.date:
+        start_date = args.date.strftime('%Y-%m-%d')
+    elif args.back and not args.date:
+        start_date = (datetime.now() - timedelta(days=args.back)).strftime('%Y-%m-%d')
+    else:
+        print("Error: Either --date or --build must be provided.")
+        sys.exit(1)
+
+    # Determine the end date
+    if args.end_date:
+        end_date = args.end_date.strftime('%Y-%m-%d')
+    elif args.back:
+        end_date = (datetime.strptime(start_date, '%Y-%m-%d') - timedelta(days=args.back)).strftime('%Y-%m-%d')
+    else:
+        end_date = start_date
+
+    # Fetch records from the table
+    records = fetch_records(conn, start_date, end_date, args.only_builds, args.ignore_builds)
+    
+    for record in records:
+        print(record)
+
+    conn.close()
+
+if __name__ == "__main__":
+    main()
+
+
+```
 
 
 ### Delete folders
