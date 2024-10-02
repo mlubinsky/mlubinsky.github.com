@@ -1,3 +1,16 @@
+
+### Construct the SQL WHERE clause with the values from your Python list 
+
+```
+x = ['a', 'b']
+sql_string = "WHERE col IN ({})".format(', '.join(f"'{item}'" for item in x))
+print(sql_string)
+
+This will output:
+
+WHERE col IN ('a', 'b')
+```
+ 
  ### Python command line
 ```
 There is SQLite table T with 3 string columns: date, build, value.
