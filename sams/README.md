@@ -1,3 +1,36 @@
+ ### Python command line
+```
+There is SQLite table T with 3 string columns: date, build, value.
+Python program should fetch records from table T based on command line arguments.
+
+Please create python program which will accept the following command line parameters
+
+--date  (string in format YYYY-MM-DD)
+--end_date (string in format YYYY-MM-DD)
+-–back (number of days back from --date
+--build (string, it is used to detect the start date as min(date) in table T where this build exists
+--ignore_builds (list of build to ignore)
+--only_builds (list of builds to process)
+
+If --date  and --and_date are provided then filter records in the range
+[ --date ,  --and_date]
+
+If --date  and --back are provided then filter records in the range
+[ --date ,  --date -  -- back]
+
+If --back_date is provided and --date is not provided then use current date for --date.
+
+If --build is provided then start date should be detected as min(date) in table T where this build exists
+
+If --date is provided then --build should not be provided and vice versa.
+If --back is provided then --end_date should not be provided and vice versa.
+
+```
+
+
+ 
+
+
 ### Delete folders
 
 Recursively deletes a folder and its contents, and then removes empty parent folders.
