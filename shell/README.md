@@ -24,6 +24,8 @@ https://habr.com/ru/articles/833602/
 
 https://notes.billmill.org/computer_usage/cli_tips_and_tools/modern_unix_tool_list.html
 
+https://www.otto.de/jobs/en/technology/techblog/blogpost/developer-hacks-modern-command-line-tools-and-advanced-git-commands.php
+
 https://news.ycombinator.com/item?id=41031112 	Eza: A modern, maintained replacement for ls and eza
 
 https://github.com/onceupon/Bash-Oneliner
