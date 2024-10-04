@@ -1,5 +1,7 @@
 https://www.reddit.com/r/apachespark/
 
+https://github.com/awesome-spark/awesome-spark?tab=readme-ov-file
+
 https://www.reddit.com/r/databricks/
 
 https://www.waitingforcode.com/general-data-engineering/data-ai--summit-2024-retrospective-apache-spark/read
