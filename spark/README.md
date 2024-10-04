@@ -1,3 +1,5 @@
+https://www.reddit.com/r/apachespark/
+
 https://www.waitingforcode.com/general-data-engineering/data-ai--summit-2024-retrospective-apache-spark/read
 
 https://habr.com/ru/companies/otus/articles/840362/ Scala Spark
