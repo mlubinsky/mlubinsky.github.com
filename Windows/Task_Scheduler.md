@@ -39,16 +39,17 @@ Click OK.
 ```
 Optional Settings (Conditions and Settings):
 
-In the Conditions tab, you can set conditions like running the task only if the computer is idle or if it’s on AC power (optional).
+In the Conditions tab, you can set conditions like running the task only
+if the computer is idle or if it’s on AC power (optional).
 ```
 ### Settings tab
 ```
-In the Settings tab, you can configure additional settings such as stopping the task if it runs too long or restarting it if it fails.
-Save the Task:
-
+In the Settings tab, you can configure additional settings such as stopping the task
+ if it runs too long or restarting it if it fails.
+```
+### Save the Task
 Click OK to save the task.
 If prompted, enter your user credentials.
-```
 
 ### Testing the Task:
 To test your task immediately, you can right-click the task in the Task Scheduler Library and select Run.
