@@ -28,6 +28,27 @@ https://www.otto.de/jobs/en/technology/techblog/blogpost/developer-hacks-modern-
 
 https://news.ycombinator.com/item?id=41031112 	Eza: A modern, maintained replacement for ls and eza
 
+
+### Customizing zsh prompt to add git branch
+cat ~/.zshrc
+
+```
+setopt PROMPT_SUBST
+
+function git_br() {
+
+    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+
+}
+
+COLOR_DEF=$'%f'
+COLOR_GIT=$'%F{39}'
+export PROMPT='%1~ ${COLOR_GIT}$(git_br)${COLOR_DEF} $ '
+alias python='python3'
+source ~/VENV/1st_env/bin/activate
+export PATH="/opt/homebrew/opt/git/bin:$PATH"
+```
+
 https://github.com/onceupon/Bash-Oneliner
 
 https://www.youtube.com/watch?v=mmqDYw9C30I
