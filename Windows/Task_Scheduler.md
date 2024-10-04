@@ -40,6 +40,9 @@ Click OK.
 Optional Settings (Conditions and Settings):
 
 In the Conditions tab, you can set conditions like running the task only if the computer is idle or if it’s on AC power (optional).
+```
+### Settings tab
+```
 In the Settings tab, you can configure additional settings such as stopping the task if it runs too long or restarting it if it fails.
 Save the Task:
 
