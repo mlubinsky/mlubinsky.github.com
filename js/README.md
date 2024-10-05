@@ -37,7 +37,9 @@ https://news.ycombinator.com/item?id=25200702
 https://news.ycombinator.com/item?id=25167928
 
 ### HTMX
- 
+
+https://lobste.rs/s/1uv7e4/less_htmx_is_more
+
 https://refine.dev/blog/what-is-htmx/
 
 https://hypermedia.systems/hypermedia-systems/
