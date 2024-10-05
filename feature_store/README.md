@@ -1,6 +1,8 @@
 ## Feature store
 https://habr.com/ru/companies/selectel/articles/702416/
 
+https://habr.com/ru/companies/selectel/articles/848266/
+
 https://habr.com/ru/companies/alfa/articles/808711/
 
 CLTV (Customer LifeTime Value)
