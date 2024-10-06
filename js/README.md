@@ -38,7 +38,11 @@ https://news.ycombinator.com/item?id=25167928
 
 ### HTMX
 
+htmgo.dev
+
 https://lobste.rs/s/1uv7e4/less_htmx_is_more
+
+https://news.ycombinator.com/item?id=41683144
 
 https://refine.dev/blog/what-is-htmx/
 
