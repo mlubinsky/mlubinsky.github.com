@@ -1,3 +1,4 @@
+https://habr.com/ru/articles/843794/  ACID explained
 
 ### The SQL isolation levels 
 ```
