@@ -11,9 +11,17 @@ https://lobste.rs/s/d5qwzs/what_is_your_mac_os_setup
 
 brew list --versions
 
-### Far for Mac
+### Far and mc (Midnight commander)  for Mac
 
 brew install --cask far2l
+
+https://github.com/spvkgn/far2l-portable/releases
+
+https://github.com/elfmz/far2l
+
+https://github.com/akruphi/far2l/wiki
+
+https://github.com/akruphi/far2l/wiki/far2l-vs-mc
  
 ### Command-line utils in MacOS:
 
