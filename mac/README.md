@@ -10,6 +10,10 @@ https://lobste.rs/s/d5qwzs/what_is_your_mac_os_setup
 ### See versions of brew-installed packages:
 
 brew list --versions
+
+### Far for Mac
+
+brew install --cask far2l
  
 ### Command-line utils in MacOS:
 
