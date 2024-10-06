@@ -127,6 +127,8 @@ System.out.print(s.charAt(i-1));            //printing the character at index i-
  
  https://medium.com/javarevisited/java-concurrency-java-memory-model-96e3ac36ec6b Java Memory Model
  
+https://habr.com/ru/companies/otus/articles/843394/  Memory Fences и volatile в Java: низкоуровневые гарантии порядка памяти
+
  
  <https://www.youtube.com/watch?v=yhguOt863nw>. Java concurrency
  
