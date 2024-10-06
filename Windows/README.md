@@ -673,6 +673,8 @@ https://www.reddit.com/r/PowerShell/comments/q9e887/tldr_of_how_to_run_commands_
 
 #### OpenSSH
 
+https://learn.microsoft.com/ru-ru/windows/terminal/tutorials/ssh
+
 https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui
 
 https://medium.com/geekculture/setup-ssh-server-on-windows-10-11-34c7f096eaff
