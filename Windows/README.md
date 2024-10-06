@@ -102,8 +102,9 @@ START ["title"] [/D path] [/I] [/MIN] [/MAX] [/SEPARATE | /SHARED]
 ```
 I have Windows batch file which calls several python scripts (1.py, 2,py, 3.py, 4.py, etc).
 The batch file  checks the errorlevel - after calling every of these 3 python scripts.
-In case when errorlevel != 0  after calling any of these python scripts the rest of the scripts from the list above (1.py, 2,py, 3.py, 4.py, etc)
-should not be called;
+In case when errorlevel != 0
+after calling any of these python scripts the rest of the scripts
+from the list above (1.py, 2,py, 3.py, 4.py, etc) should not be called;
 in this case  batch_file  should call the python script update_status.py.
 
 The final call in this Windows batch file  should be always the script named send_email.py
@@ -182,9 +183,14 @@ exit /b 0
 ```
 Gemini:
 ```
-Delayed Expansion: You're currently checking the %errorlevel% variable directly within the if statements. This might not capture the actual error level after each script execution. To ensure accurate capture, consider using delayed expansion with exclamation marks (!errorlevel!).
+Delayed Expansion: You're currently checking the %errorlevel% variable directly within the if statements.
+This might not capture the actual error level after each script execution.
+ To ensure accurate capture, consider using delayed expansion with exclamation marks (!errorlevel!).
 
-Error Handling Consistency: Currently, the :checkrun subroutine exits with code 1 upon encountering an error. However, the if statements outside the subroutine check for neq 0. For consistency, you can either update the if statements to check for neq 1 or change the exit code in :checkrun to 0 and directly check for non-zero error levels in the if statements.
+Error Handling Consistency: Currently, the :checkrun subroutine exits with code 1 upon encountering an error. However, the if statements outside the subroutine check for neq 0. For consistency,
+ you can either update the if statements to check for neq 1
+or change the exit code in :checkrun to 0
+and directly check for non-zero error levels in the if statements.
 
 Here's the improved version with both options:
 
@@ -413,7 +419,7 @@ but you can adjust it dynamically within a script to change only the text color 
 
 ```
 
-#### Using a Batch File
+#### Change the color of text iusing a Batch File
 ```
 You can change the color of text in a batch file using the color command followed by printing the text:
  
@@ -496,6 +502,8 @@ These methods allow you to change text colors programmatically in cmd.exe on Win
 
 https://github.com/microsoft/terminal
 
+https://sysprogs.com/SmarTTY/  SSH client
+
 ### .bat file to invoke ruff
 ```
 ruff check %* --ignore E501
@@ -546,11 +554,18 @@ pause
 
 Gemini Explanation:
 ```
-@echo off: This line hides the commands from being echoed on the screen.
-setlocal enabledelayedexpansion: This line enables delayed variable expansion within a block scope.
+@echo off:
+This line hides the commands from being echoed on the screen.
+
+setlocal enabledelayedexpansion:
+This line enables delayed variable expansion within a block scope.
+
 This allows us to use the exclamation mark (!) for variable expansion even within quotes.
-if "!A!"=="G2" ( ... ) else ( ... ): This if-else statement remains the same, but we use !A! for variable expansion.
+if "!A!"=="G2" ( ... ) else ( ... ):
+
+This if-else statement remains the same, but we use !A! for variable expansion.
 !: This exclamation mark allows delayed variable expansion within double quotes.
+
 This ensures the actual value of A is compared, including any surrounding quotes.
 ```
 
@@ -589,7 +604,7 @@ pause
 ```
 
 Gemini Explanation:
-
+```
 @echo off: This line hides the commands from being echoed on the screen when the script runs.
 set "C=%A% - %B:~1,-1%":
 set: This command is used to define a new environment variable.
@@ -598,10 +613,14 @@ set: This command is used to define a new environment variable.
 -: This adds a literal hyphen (-) to the string.
 %B:~1,-1%: This is a substring expansion of the "B" variable.
 ~: Tilde (~) is used for substring expansion.
+
 1: This specifies the starting position of the substring (excluding the first character).
--1: This specifies the ending position of the substring (excluding the last character). This removes the leading and trailing double quotes.
-echo The new variable C is: %C%: This line displays a message with the value of the newly created variable "C".
-pause: This line pauses the execution of the script and waits for any key to be pressed before closing the command prompt window.
+-1: This specifies the ending position of the substring (excluding the last character).
+This removes the leading and trailing double quotes.
+echo The new variable C is: %C%:
+This line displays a message with the value of the newly created variable "C".
+pause:
+This line pauses the execution of the script and waits for any key to be pressed before closing the command prompt window.
 ```
 
 ###  Gemini my.bat
@@ -678,6 +697,8 @@ https://learn.microsoft.com/ru-ru/windows/terminal/tutorials/ssh
 https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui
 
 https://medium.com/geekculture/setup-ssh-server-on-windows-10-11-34c7f096eaff
+
+https://sysprogs.com/SmarTTY/
 
 #### PowerShell
 https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/running-remote-commands?view=powershell-7.4
