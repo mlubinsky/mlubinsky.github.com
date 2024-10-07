@@ -43,8 +43,8 @@ Polars is for when you want to do something with that data, like visualize it.
 
 https://levelup.gitconnected.com/duckdb-vs-polars-2ff19cc7af41
 
-
-
+### SQLite
+https://www.youtube.com/watch?v=ZSKLA81tBis
 
 
 https://antonz.org/sqlite-3-44/
