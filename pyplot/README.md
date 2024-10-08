@@ -28,8 +28,6 @@ You can use matplotlib.cm to access color maps with many more colors.
 
 Example:
 
-python
-Copy code
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.cm as cm
@@ -51,8 +49,6 @@ This uses tab20, which is a color map with 20 distinct colors. There are others 
 2. Other Visual Attributes (Line Styles):
 You can also differentiate the lines by using different line styles or markers:
 
-python
-Copy code
 import itertools
 
 # Line styles
