@@ -66,6 +66,15 @@ plt.show()
 This way, you can have more distinct plots by combining both color maps and line styles.
 
 
+Qualitative Color Maps
+These are discrete and have a set number of distinct colors.
+They are best for categorical data with a limited number of distinct groups.
+
+tab10: Ten distinct colors, great for categorically separating 10 groups.
+tab20: 20 colors, a broader version of tab10. Excellent for categorical plots with many distinct groups.
+Set1, Set2, Set3: Color sets used for qualitative data, part of the ColorBrewer maps.
+Pastel1, Pastel2: Lighter pastel versions of Set1 and Set2.
+
 ```
 #### Better Custom color with matplotlib : only 10 distinct colors (without seaborn)
 ```
