@@ -17,8 +17,61 @@ df = pd.DataFrame(data)
 
 # Display the DataFrame
 print(df)
+
 ```
-#### Better Custom color without seaborn
+### Custom colors
+```
+ matplotlib's default color cycle has around 10 distinct colors, which can seem limited when plotting many lines. To get more colors or other distinct visual attributes for multiple lines, you have a few options:
+
+1. Expanding the Color Palette:
+You can use matplotlib.cm to access color maps with many more colors.
+
+Example:
+
+python
+Copy code
+import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.cm as cm
+
+# Number of lines
+num_lines = 20
+
+# Generate a color map with enough colors
+colors = cm.get_cmap('tab20', num_lines)
+
+x = np.linspace(0, 10, 100)
+for i in range(num_lines):
+    plt.plot(x, np.sin(x + i), color=colors(i), label=f'Line {i}')
+
+plt.legend()
+plt.show()
+This uses tab20, which is a color map with 20 distinct colors. There are others like viridis, plasma, inferno, etc.
+
+2. Other Visual Attributes (Line Styles):
+You can also differentiate the lines by using different line styles or markers:
+
+python
+Copy code
+import itertools
+
+# Line styles
+linestyles = ['-', '--', '-.', ':']
+markers = ['o', 'v', '^', '<', '>', 's', 'p', '*']
+
+# Combine markers and styles for unique lines
+styles = itertools.product(linestyles, markers)
+
+for i, (linestyle, marker) in zip(range(num_lines), styles):
+    plt.plot(x, np.sin(x + i), linestyle=linestyle, marker=marker, label=f'Line {i}')
+
+plt.legend()
+plt.show()
+This way, you can have more distinct plots by combining both color maps and line styles.
+
+
+```
+#### Better Custom color with matplotlib : only 10 distinct colors (without seaborn)
 ```
 import pandas as pd
 import matplotlib.pyplot as plt
