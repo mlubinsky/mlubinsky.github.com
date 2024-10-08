@@ -1,6 +1,59 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+
+### Custom
+```
+import matplotlib.pyplot as plt
+import pandas as pd
+import matplotlib.cm as cm
+
+# Example DataFrame
+data = {
+    'date': ['2024-10-01', '2024-10-02', '2024-10-03', '2024-10-01', '2024-10-02', '2024-10-03'],
+    'name': ['A', 'A', 'A', 'REF', 'REF', 'REF'],
+    'value': [10, 15, 13, 20, 25, 23]
+}
+
+df = pd.DataFrame(data)
+
+# Convert 'date' to datetime for better handling in the plot
+df['date'] = pd.to_datetime(df['date'])
+
+# Get the unique names in the DataFrame, excluding 'REF' for the colormap
+unique_names = df['name'].unique()
+non_ref_names = [name for name in unique_names if name != 'REF']
+
+# Set up the colormap, excluding 'REF' from the color cycle
+tab20 = cm.get_cmap('tab20', len(non_ref_names))
+
+# Create a dictionary to store colors for each name
+name_colors = {}
+
+# Assign red to 'REF'
+name_colors['REF'] = 'red'
+
+# Assign other colors from tab20 to non-'REF' names
+for i, name in enumerate(non_ref_names):
+    name_colors[name] = tab20(i)
+
+# Plotting
+fig, ax = plt.subplots()
+
+# Plot each group
+for name, group in df.groupby('name'):
+    ax.plot(group['date'], group['value'], label=name, color=name_colors[name])
+
+# Add legend and labels
+ax.set_xlabel('Date')
+ax.set_ylabel('Value')
+ax.legend()
+
+plt.show()
+```
+
+
+
 ### Dataframe for plotting
 ```
 import pandas as pd
