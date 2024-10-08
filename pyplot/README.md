@@ -2,7 +2,7 @@ scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
 
-### Custom
+### Custom tab20 (20 colors)
 ```
 import matplotlib.pyplot as plt
 import pandas as pd
