@@ -2,64 +2,68 @@ scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
 
-###  overlapping colors
-
+###  Overlapping plots issue
 ```
-When lines or dots overlap in a line plot, it can indeed make one line or its markers difficult to see. There are a few approaches to resolve this issue in matplotlib:
-
-1. Use Transparency (Alpha):
+When lines or dots overlap in a line plot, it can indeed make one line or its markers difficult to see.
+There are a few approaches to resolve this issue in matplotlib:
+```
+#### 1. Use Transparency (Alpha):
+```
 Adding transparency to the markers will allow overlapped lines to remain partially visible.
 
-python
-Copy code
 ax.plot(group['date'], group['value'], color=name_colors[name], 
         marker='o', markersize=6, linestyle='-', alpha=0.7)
+
 This sets an alpha value for transparency. You can adjust the alpha value (between 0 and 1) to suit your needs.
-
-2. Use Different Marker Styles:
-You can differentiate lines further by using unique marker styles for each line. This will help distinguish between overlapping lines even when the colors are the same.
-
-python
-Copy code
+```
+#### 2. Use Different Marker Styles
+```
+You can differentiate lines further by using unique marker styles for each line.
+This will help distinguish between overlapping lines even when the colors are the same.
+ 
 markers = ['o', 's', 'D', '^', 'v', '<', '>']  # List of different markers
 for i, (name, group) in enumerate(df.groupby('name')):
     ax.plot(group['date'], group['value'], 
             color=name_colors[name], 
             marker=markers[i % len(markers)], markersize=6, linestyle='-')
-3. Add a Small Vertical Offset (Jittering):
-You can slightly adjust the y values of overlapping lines to avoid exact overlap by adding a small "jitter". This will visually separate lines with the same data points.
+```
+#### 3. Add a Small Vertical Offset (Jittering):
+```
+You can slightly adjust the y values of overlapping lines to avoid exact overlap by adding a small "jitter".
+This will visually separate lines with the same data points.
 
-python
-Copy code
+
 for i, (name, group) in enumerate(df.groupby('name')):
     jitter = i * 0.1  # Adjust this value based on your data
     ax.plot(group['date'], group['value'] + jitter, 
             color=name_colors[name], marker='o', markersize=6, linestyle='-')
 The jitter value adds a slight vertical shift to each line, preventing complete overlap.
+```
+#### 4. Increase Marker Size and Use Edge Color:
+```
+You can make markers more prominent by increasing their size and adding a distinct edge color (markeredgecolor).
+This way, even if two markers overlap, the edges will still be visible.
 
-4. Increase Marker Size and Use Edge Color:
-You can make markers more prominent by increasing their size and adding a distinct edge color (markeredgecolor). This way, even if two markers overlap, the edges will still be visible.
 
-python
-Copy code
 ax.plot(group['date'], group['value'], 
         color=name_colors[name], marker='o', markersize=8, 
         markeredgewidth=2, markeredgecolor='black', linestyle='-')
-5. Change Z-order (Stacking Order):
-You can control the order in which lines are drawn using the zorder attribute. For example, you can force certain lines to be drawn on top of others.
+```
+#### 5. Change Z-order (Stacking Order):
+```
+You can control the order in which lines are drawn using the zorder attribute.
+ For example, you can force certain lines to be drawn on top of others.
 
-python
-Copy code
 ax.plot(group['date'], group['value'], 
         color=name_colors[name], marker='o', markersize=6, 
         linestyle='-', zorder=10 if name == 'REF' else 1)
 This ensures that 'REF' (or any other important line) is always drawn on top of the others.
+```
+#### 6. Interactive Legends:
+```
+You can create an interactive legend where the user can click to hide/show lines. 
+While this doesn't prevent overlap, it allows the viewer to isolate lines easily.
 
-6. Interactive Legends:
-You can create an interactive legend where the user can click to hide/show lines. While this doesn't prevent overlap, it allows the viewer to isolate lines easily.
-
-python
-Copy code
 from matplotlib.legend_handler import HandlerLine2D
 
 fig, ax = plt.subplots()
