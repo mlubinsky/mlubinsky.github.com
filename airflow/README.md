@@ -31,6 +31,13 @@ https://medium.com/@anupamk36/airflow-best-practices-d982fabd61f6
 Data Exchange Strategies between Airflow DAGs:  
 https://blog.det.life/data-exchange-strategies-between-airflow-dags-18cb0848c93c
 
+### BREW
+```
+brew search airflow
+brew info airflow
+```
+
+
 ### Docker for Airflow
 
 https://airflow.apache.org/docs/docker-stack/index.html
