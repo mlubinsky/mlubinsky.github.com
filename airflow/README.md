@@ -32,6 +32,11 @@ Data Exchange Strategies between Airflow DAGs:
 https://blog.det.life/data-exchange-strategies-between-airflow-dags-18cb0848c93c
 
 ### Docker for Airflow
+
+https://airflow.apache.org/docs/docker-stack/index.html
+
+https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html#using-production-docker-images
+
 https://habr.com/ru/articles/831248/ Docker for airflow
 
 https://medium.com/@harshalpagar/running-airflow-with-docker-on-developer-environment-9c1c9559668c
