@@ -261,8 +261,7 @@ $ virtualenv env
 
 ### venv + pip (Python 3)
 ```
-
-$ python3 -m venv venv_name
+python3 -m venv venv_name
 echo $PATH
 source path_to_venv_name/bin/activate (or . venv_name/bin/activate)
 echo $PATH
@@ -270,6 +269,23 @@ echo $PATH
 pip install ...
 ...
 deactivate
+
+Airflow
+
+https://medium.com/accredian/setting-up-apache-airflow-in-macos-57ab9e8edb8a
+
+python3 -m venv airflow_env
+source airflow_env/bin/activate
+pip3 install apache-airflow[gcp,sentry,statsd]
+pip3 install pyspark
+airflow db init
+mkdir dags
+airflow users create --username admin --password your_password --firstname your_first_name --lastname your_last_name --role Admin --email your_email@some.com
+airflow users list
+airflow scheduler
+airflow webserver
+Once the scheduler and webserver get initialized, open any browser and go to http://localhost:8080/.
+airflow.cfg file 
 ```
 
 
