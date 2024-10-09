@@ -24,6 +24,20 @@ https://news.ycombinator.com/item?id=40085887
 working with parquet files:
 https://www.blog.pythonlibrary.org/2024/05/06/how-to-read-and-write-parquet-files-with-python/
 
+### List of installed packages
+```
+import importlib.metadata
+
+def list_installed_packages():
+    distributions = importlib.metadata.distributions()
+    installed_packages = []
+    for dist in distributions:
+        args = (dist.metadata['Name'], dist.version)
+        installed_packages.append(args)
+    installed_packages.sort()  # Sort the packages by name
+    for i, (package_name, version) in enumerate(installed_packages):
+        print(i, f"{package_name}=={version}")
+```
 
 ### Build a dictionary with list elements as keys and their indices as values
 
