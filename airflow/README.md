@@ -54,8 +54,21 @@ https://stackabuse.com/running-airflow-locally-with-docker-a-technical-guide/
 
 ### Airflowctl
 https://airflowsummit.org/sessions/2023/introducing-airflowctl/
+```
 pip install airflow ctl
 https://github.com/kaxil/airflowctl
+```
+
+
+https://www.restack.io/docs/airflow-knowledge-apache-mac-m1-install
+```
+python3 -m venv airflow_venv
+source airflow_venv/bin/activate
+pip install apache-airflow==2.2.3 --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.2.3/constraints-3.8.txt
+airflow db init
+airflow webserver -p 8080 &
+airflow scheduler &
+```
 
  Airflow: как повысить стабильность загрузки данных в 5 раз
 https://habr.com/ru/articles/792872/
