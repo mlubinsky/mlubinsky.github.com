@@ -55,6 +55,40 @@ https://github.com/ydataai/ydata-profiling
  df = spark.read.format("delta").load("path/to/delta_table")
 ```
 
+
+
+### Generate dataframe
+
+```
+from pyspark.sql import SparkSession
+from pyspark.sql.types import StructType, StructField, StringType, ArrayType, LongType
+from pyspark.sql import Row
+
+# Initialize Spark session
+spark = SparkSession.builder.appName("Create DataFrame").getOrCreate()
+
+# Define the schema
+schema = StructType([
+    StructField("profile_id", StringType(), nullable=True),
+    StructField("watched_media_ids", ArrayType(StringType(), containsNull=False), nullable=False),
+    StructField("sum_runtime_ms", LongType(), nullable=True),
+    StructField("max_bitrate", LongType(), nullable=True)
+])
+
+# Create some sample data
+data = [
+    ("user_1", ["media_1", "media_2"], 5000000, 3000),
+    ("user_2", ["media_3"], 1500000, 2500),
+    ("user_3", ["media_4", "media_5", "media_6"], None, 4000),
+]
+
+# Create DataFrame using the defined schema
+df = spark.createDataFrame([Row(*row) for row in data], schema)
+
+# Show the DataFrame
+df.show(truncate=False)
+df.printSchema()
+```
 ### Find the median salary for each department?
 ```
 
