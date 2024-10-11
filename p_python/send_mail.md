@@ -1,4 +1,26 @@
 ```
+I am using Python   to send e-mail with html body.
+There are images which need to be inside html body.
+My current code creates html body 
+and send e-mail with attached images, but the images are not displayed inside the html body
+
+            for f in files:
+                print(f'attaching {os.path.normpath(f)}')
+                with open(f, "rb") as fil:
+                    part = MIMEApplication(
+                        fil.read(),
+                        Name=os.path.basename(f)
+                    )
+                part['Content-Disposition'] = 'attachment; filename="%s"' % os.path.basename(f)
+                part['Content-ID'] = os.path.basename(f)
+                msg.attach(part)
+
+            html_added = f'<pre>{text}<br></pre>{html}'
+            part_html = MIMEText(html_added, 'html')
+            msg.attach(part_html)
+```
+
+```
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
