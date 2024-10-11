@@ -1,4 +1,11 @@
 ```
+                body_html = f'<p><img src="cid:{fname}" alt="{fname}" style="max-width:500px;"></p>'
+<p><img src=3D"cid:lineplot_1. Horizontal Error_2024-09-11_2024-10-08.png" =\nalt=3D"lineplot_1. Horizontal Error_2024-09-11_2024-10-08.png" style=3D"max-w=\nidth:500px;"></p><p>
+                </p><p><img src=3D=\n"cid:barchart_1. Horizontal Error_2024-09-11_2024-10-08.png" alt=3D"barchart_=\n1. Horizontal Error_2024-09-11_2024-10-08.png" style=3D"max-width:500px;"></p=\n
+```
+
+### Issue: image in html body
+```
 I am using Python   to send e-mail with html body.
 There are images which need to be inside html body.
 My current code creates html body 
