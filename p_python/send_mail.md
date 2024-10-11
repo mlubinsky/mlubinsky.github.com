@@ -109,3 +109,61 @@ except Exception as e:
     print(f'Error: {e}')
 
 ```
+
+### FIX
+```
+import os
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
+
+# Create the main message container
+msg = MIMEMultipart('related')
+
+# Create the HTML body with image references
+html = '<html><body>'
+for f in image_files:
+    fname = os.path.basename(f)
+    html += f'<p><img src="cid:{fname}" alt="{fname}" style="max-width:500px;"></p>'
+html += '</body></html>'
+
+# Attach the HTML part to the message
+html_added = f'<pre>{text}<br></pre>{html}'
+part_html = MIMEText(html_added, 'html')
+msg.attach(part_html)
+
+# Attach the images as inline content
+for f in image_files:
+    fname = os.path.basename(f)
+    print(f'attaching {os.path.normpath(f)}')
+    with open(f, "rb") as fil:
+        img_data = fil.read()
+    
+    # Create the image MIME part
+    image_part = MIMEImage(img_data, name=fname)
+    
+    # Set the Content-ID to reference it in the HTML (cid)
+    image_part.add_header('Content-ID', f'<{fname}>')
+    image_part.add_header('Content-Disposition', 'inline', filename=fname)
+    
+    # Attach the image to the email
+    msg.attach(image_part)
+
+
+
+Key Changes:
+-------------
+MIMEImage is used instead of MIMEApplication for image files.
+This is necessary to ensure the images are recognized as inline content.
+Content-ID and Content-Disposition** headers**:
+Content-ID is used to embed the images in the HTML by using the cid: reference.
+Content-Disposition is set to 'inline' to ensure the image is displayed in the body rather than as an attachment.
+Order of attaching:
+The HTML part is attached first, and the images are attached after to ensure the references match.
+
+Example:
+If you have an image called image1.jpg, the HTML will include:
+
+ 
+<img src="cid:image1.jpg" alt="image1.jpg" style="max-width:500px;">
+```
