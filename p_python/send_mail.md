@@ -7,6 +7,71 @@
      msg.add_attachment(fil.read(), maintype='image', subtype='png', filename=filename)
 ```
 
+#### Space in file name
+```
+If the image file name contains spaces, it can cause issues with embedding images in HTML emails, as spaces in cid references or URLs aren't properly handled. To fix this, you need to replace spaces in file names with characters that HTML can interpret correctly, such as %20 (the URL encoding for a space), or simply remove the spaces.
+
+Solution:
+Replace spaces in file names with underscores or another suitable character before using them in the HTML body and Content-ID.
+Here’s how you can update the code to handle file names with spaces:
+
+Updated Code:
+python
+Copy code
+import os
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
+
+# Create the main message container
+msg = MIMEMultipart('related')
+
+# Create the HTML body with image references
+html = '<html><body>'
+for f in image_files:
+    fname = os.path.basename(f)
+    # Replace spaces with underscores or URL encoding (%20)
+    fname_clean = fname.replace(' ', '_')
+    html += f'<p><img src="cid:{fname_clean}" alt="{fname_clean}" style="max-width:500px;"></p>'
+html += '</body></html>'
+
+# Attach the HTML part to the message
+html_added = f'<pre>{text}<br></pre>{html}'
+part_html = MIMEText(html_added, 'html')
+msg.attach(part_html)
+
+# Attach the images as inline content
+for f in image_files:
+    fname = os.path.basename(f)
+    fname_clean = fname.replace(' ', '_')  # Clean the file name (replace spaces)
+    
+    print(f'attaching {os.path.normpath(f)}')
+    with open(f, "rb") as fil:
+        img_data = fil.read()
+    
+    # Create the image MIME part
+    image_part = MIMEImage(img_data, name=fname_clean)
+    
+    # Set the Content-ID to reference it in the HTML (use cleaned file name)
+    image_part.add_header('Content-ID', f'<{fname_clean}>')
+    
+    # Set Content-Disposition to inline (optional, but clarifies intent)
+    image_part.add_header('Content-Disposition', 'inline', filename=fname_clean)
+    
+    # Attach the image to the email
+    msg.attach(image_part)
+Key Adjustments:
+Replace spaces in the file name using fname_clean = fname.replace(' ', '_') (or you can use %20 for URL encoding).
+This avoids issues with spaces in cid references.
+Use the cleaned file name both in the src of the HTML and the Content-ID header.
+Explanation:
+Spaces in the cid: references need to be replaced or escaped because they break the URL-like format required by HTML.
+By replacing spaces with underscores (or another character), you ensure the image reference works correctly without spaces causing broken links.
+This should resolve the issue with spaces in file names causing broken image links in your email. Let me know how it works!
+```
+
+
+
 ### Issue: image in html body
 ```
 I am using Python   to send e-mail with html body.
