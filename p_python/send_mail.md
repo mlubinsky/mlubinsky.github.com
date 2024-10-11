@@ -1,10 +1,17 @@
-```
-                body_html = f'<p><img src="cid:{fname}" alt="{fname}" style="max-width:500px;"></p>'
-<p><img src=3D"cid:lineplot_1. Horizontal Error_2024-09-11_2024-10-08.png" =\nalt=3D"lineplot_1. Horizontal Error_2024-09-11_2024-10-08.png" style=3D"max-w=\nidth:500px;"></p><p>
-                </p><p><img src=3D=\n"cid:barchart_1. Horizontal Error_2024-09-11_2024-10-08.png" alt=3D"barchart_=\n1. Horizontal Error_2024-09-11_2024-10-08.png" style=3D"max-width:500px;"></p=\n
+### Find the folder, where script is located
+``` 
+import os
 
+# Get the directory where the script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
-     msg.add_attachment(fil.read(), maintype='image', subtype='png', filename=filename)
+# Create the folder under the script's location
+d = "IMG"
+folder_path = os.path.join(script_dir, d)
+os.makedirs(folder_path)
+
+# Print the full path of the created folder
+print(f'Folder created at: {folder_path}')
 ```
 
 #### Space in file name
