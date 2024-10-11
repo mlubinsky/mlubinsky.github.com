@@ -2,9 +2,16 @@
 I am using Python   to send e-mail with html body.
 There are images which need to be inside html body.
 My current code creates html body 
-and send e-mail with attached images, but the images are not displayed inside the html body
+and it send e-mail with attached images, but the images are not displayed inside the html body,
+Please fix it.
 
-            for f in files:
+           html = '<html><body>'
+           for f in image_files:
+                fname = os.path.basename(f)
+                html += f'<p><img src="cid:{fname}" alt="{fname}" style="max-width:500px;"></p>'
+           html += '</body></html>'
+
+            for f in image_files:
                 print(f'attaching {os.path.normpath(f)}')
                 with open(f, "rb") as fil:
                     part = MIMEApplication(
