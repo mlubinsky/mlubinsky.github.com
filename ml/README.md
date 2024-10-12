@@ -582,6 +582,8 @@ https://habr.com/ru/company/otus/blog/555980/  stat paradox
 
 https://www.youtube.com/watch?v=EMIyRmrPWJQ
 
+https://habr.com/ru/articles/850168/
+
 https://aegis4048.github.io/mutiple_linear_regression_and_visualization_in_python . Linear regression
 
 ### Fourier
