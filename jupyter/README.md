@@ -15,6 +15,43 @@ The second element of tuple is a string which stores 2 numbers described above i
 The 1 element of tuple is a string which should be assigned to "Fail" if N1 > 0 or "Pass"  if  N_1 = 0.
 
 
+import pandas as pd
+
+# Sample DataFrame
+# Assuming `df` is the DataFrame with the structure as described
+# and columns ['Test', 'Criteria', ...] with float columns like 'abc_score', 'REF_something', etc.
+
+# Define the threshold T
+T = 90.0
+
+# Filter float columns that do not start with 'REF' and end with 'score'
+columns_of_interest = [col for col in df.columns if col.endswith('score') and not col.startswith('REF')]
+
+# Initialize the result dictionary
+result = {}
+
+# Iterate over each row
+for index, row in df.iterrows():
+    # Extract the unique value in the 'Test' column
+    test_value = row['Test']
+    
+    # N_1: The number of columns of interest where the value is below the threshold T
+    N_1 = sum(row[col] < T for col in columns_of_interest)
+    
+    # N_2: The total number of columns of interest
+    N_2 = len(columns_of_interest)
+    
+    # Determine the status: 'Pass' if N_1 == 0, else 'Fail'
+    status = 'Pass' if N_1 == 0 else 'Fail'
+    
+    # Format the second element as "N_1 / N_2"
+    ratio = f"{N_1} / {N_2}"
+    
+    # Assign the result in the dictionary
+    result[test_value] = (status, ratio)
+
+# Print or use the result dictionary
+print(result)
 ```
 
 
