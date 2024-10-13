@@ -1,4 +1,24 @@
 ```
+There is Pandas dataframe df with columns 
+- Test (string type, unique in dataframe )
+- Criteria(string) - should be ignored 
+All other columns are having datatype float.
+
+Between all float columns we are interested only with columns which names do not start from "REF" and the names ends with "score" 
+For every value  in Test column (which is unique)   we need to calculate 2 numbers :
+N_1 : The number of  float  columns  of interest where value in below  given threshold T=90.0
+N_2 : The total number of  float  columns  of interest
+
+The result should be a python dictionary where key is the value of Test column
+and the value of disctionary is a tuple of 2 elements:
+The second element of tuple is a string which stores 2 numbers described above in format "N_1 / N2 "
+The 1 element of tuple is a string which should be assigned to "Fail" if N1 > 0 or "Pass"  if  N_1 = 0.
+
+
+```
+
+
+```
 There is Python pandas dataframe with columns A,B, C, D, E, F, G
 Values in column A  are not unique;  the records are sorted by value in A, the repeated values are in adjusted rows.
  
