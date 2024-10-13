@@ -1,5 +1,7 @@
 https://www.reddit.com/r/apachespark/
 
+https://books.japila.pl/
+
 https://github.com/awesome-spark/awesome-spark?tab=readme-ov-file
 
 https://github.com/OBenner/data-engineering-interview-questions?tab=readme-ov-file
