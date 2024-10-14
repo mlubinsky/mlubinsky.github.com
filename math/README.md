@@ -1,3 +1,6 @@
+
+
+
 https://vk.com/mathhedgehog
 
 https://m.vk.com/mathematics_for_physicists?from=post
@@ -10,6 +13,11 @@ https://nicf.net/articles/
 
 ### Семинар  по математическим методам в физике 
 https://www.youtube.com/watch?v=uhtb8FD_GAI&list=PLPFUq1zn8x35_0NTQqHNKwCjb9CVhS7MX
+
+
+### Properties of hight-dimentional spaces
+
+https://people.eecs.berkeley.edu/~jrs/highd/
 
 ### Series of math topics
 
