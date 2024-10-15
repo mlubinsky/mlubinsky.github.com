@@ -1,5 +1,7 @@
 https://parlance-labs.com/education/
 
+Book: https://mml-book.github.io/
+
 https://www.kdnuggets.com/7-free-cloud-ide-for-data-science-that-you-are-missing-out
 
 Book: Essential Math for AI: Next‑Level Mathematics for Efficient and Successful AI Systems
