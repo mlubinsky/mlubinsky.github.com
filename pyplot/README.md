@@ -55,6 +55,34 @@ if (df['y'] < -100).any():
 
 GEMINI 
 *******
+
+To set the top limit based on the actual data, you can use the max function to find the maximum value in your data and then set the top limit to that value. Here's the modified code:
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(width, height))
+
+# Check for negative values in all columns before plotting
+cutoff_negative_y_vals = any(df[column] < -10 for column in build_columns)
+
+# Find the maximum value in all columns
+max_y_value = max(df[column].max() for column in build_columns)
+
+for j, column in enumerate(build_columns):
+    plt.plot(group['date'], df[column], label=column[1], linewidth=1, marker='o', markersize=6, linestyle='-')
+
+# Disable autoscaling after plotting
+plt.autoscale(enable=False, axis='y')
+
+# Set y-axis limits
+if cutoff_negative_y_vals:
+    plt.ylim(bottom=-10)
+plt.ylim(top=max_y_value)
+
+plt.legend()
+plt.show()
+
+-----
 import matplotlib.pyplot as plt
 
 plt.figure(figsize=(width, height))
