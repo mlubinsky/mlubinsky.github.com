@@ -45,6 +45,14 @@ plt.legend()
 plt.show()
 
 
+
+ymin, ymax = plt.gca().get_ylim()
+
+# Check if any y values are below -100
+if (df['y'] < -100).any():
+    plt.ylim(bottom=-100, top=ymax)  # Set the minimum y-axis limit to -100 and keep the current top limit
+
+
 GEMINI 
 *******
 import matplotlib.pyplot as plt
