@@ -21,6 +21,28 @@ https://github.com/rougier/scientific-visualization-book
 
 
 
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(width, height))
+cutoff_negative_y_vals = False
+
+# Iterate over columns and plot the data
+for j, column in enumerate(build_columns):
+    plt.plot(group['date'], df[column], label=column[1], linewidth=1, marker='o', markersize=6, linestyle='-')
+    
+    # Check if any value in the current column is below -10
+    if (df[column] < -10).any():
+        cutoff_negative_y_vals = True
+
+# Disable autoscaling after plotting, so custom y-limits are respected
+plt.autoscale(enable=False, axis='y')
+
+# Set y-axis limit only once after checking all columns
+if cutoff_negative_y_vals:
+    plt.ylim(bottom=-10)
+
+plt.legend()
+plt.show()
 
 ```
 ### Set the y-axis limit (e.g., minimum y value to -100)
