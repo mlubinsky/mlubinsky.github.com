@@ -44,6 +44,51 @@ if cutoff_negative_y_vals:
 plt.legend()
 plt.show()
 
+
+GEMINI 
+*******
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(width, height))
+
+# Check for negative values in all columns before plotting
+cutoff_negative_y_vals = any(df[column] < -10 for column in build_columns)
+
+for j, column in enumerate(build_columns):
+    plt.plot(group['date'], df[column], label=column[1], linewidth=1, marker='o', markersize=6, linestyle='-')
+
+# Disable autoscaling after plotting
+plt.autoscale(enable=False, axis='y')
+
+# Set y-axis limit only if negative values were found
+if cutoff_negative_y_vals:
+    plt.ylim(bottom=-10)
+
+plt.legend()
+plt.show()
+
+
+GEMINI to store the minimum value encountered in all columns and use that to set the limit:
+**************
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(width, height))
+min_y_value = float('inf')  # Initialize with a high value
+
+for j, column in enumerate(build_columns):
+    plt.plot(group['date'], df[column], label=column[1], linewidth=1, marker='o', markersize=6, linestyle='-')
+    min_y_value = min(min_y_value, df[column].min())  # Update minimum value
+
+# Disable autoscaling after plotting
+plt.autoscale(enable=False, axis='y')
+
+# Set y-axis limit if minimum is below -10
+if min_y_value < -10:
+    plt.ylim(bottom=-10)
+
+plt.legend()
+plt.show()
+
 ```
 ### Set the y-axis limit (e.g., minimum y value to -100)
 
