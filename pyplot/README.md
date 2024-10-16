@@ -2,6 +2,10 @@ scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
 
+# Set the y-axis limit (e.g., minimum y value to -100)
+
+plt.ylim(bottom=-100)
+
 ###  Overlapping plots issue
 ```
 When lines or dots overlap in a line plot, it can indeed make one line or its markers difficult to see.
