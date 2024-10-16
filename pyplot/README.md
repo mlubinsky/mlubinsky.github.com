@@ -1,7 +1,28 @@
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+###
+```
+   #-----------
+    # x-axis: date
+    #-----------
 
+    for i, (metric, group) in enumerate(metric_groups):
+        plt.figure(figsize=(width, height))
+        cutoff_negative_y_vals=False
+        for j, column in enumerate(build_columns):
+              plt.plot(group['date'], group[column], label=column[1],  linewidth=1, marker = 'o', markersize=6, linestyle='-') 
+              if (group[column] < -10).any():
+                  plt.ylim(bottom=-10)
+                  cutoff_negative_y_vals = True
+
+        if cutoff_negative_y_vals:
+            plt.ylim(bottom=-10)
+
+
+
+
+```
 ### Set the y-axis limit (e.g., minimum y value to -100)
 
 plt.ylim(bottom=-100)
