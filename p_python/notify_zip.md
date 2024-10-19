@@ -1,3 +1,4 @@
+### CharGPT
 pip install watchdog py7zr
 
 ```
@@ -71,5 +72,75 @@ if __name__ == "__main__":
         observer.stop()
     observer.join()
 
+```
 
+### Gemini
+```
+import os
+import zipfile
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+
+
+def handle_new_file(event):
+  """Handles new file events in the shared folder."""
+  if not event.is_file:
+    return
+
+  # Check if filename follows multi-volume archive format (a-001.zip)
+  filename = os.path.basename(event.src_path)
+  if not filename.startswith("a-") or not filename.endswith(".zip"):
+    return
+
+  # Extract volume number from filename
+  volume_number = int(filename.split("-")[1][:3])
+
+  # Check if other volumes exist (search for next volume)
+  next_volume = f"a-{volume_number+1:03}.zip"
+  if not os.path.exists(os.path.join(event.src_path, next_volume)):
+    print(f"Skipping incomplete archive: {filename}")
+    return
+
+  # Combine all volumes into a single archive
+  combined_archive = f"combined.zip"
+  try:
+    with zipfile.ZipFile(combined_archive, 'w') as combined_zip:
+      for i in range(1, volume_number + 1):
+        volume_file = f"a-{i:03}.zip"
+        with zipfile.ZipFile(os.path.join(event.src_path, volume_file), 'r') as volume_zip:
+          for info in volume_zip.infolist():
+            combined_zip.writestr(info, volume_zip.read(info))
+    print(f"Successfully combined archives: {filename} (and following volumes)")
+  except zipfile.BadZipFile:
+    print(f"Error: Invalid archive found: {filename}")
+  except Exception as e:
+    print(f"Error uncompressing archives: {e}")
+  finally:
+    # Cleanup temporary combined archive
+    if os.path.exists(combined_archive):
+      os.remove(combined_archive)
+    # Remove processed volumes (optional)
+    # for i in range(1, volume_number + 1):
+    #   volume_file = f"a-{i:03}.zip"
+    #   os.remove(os.path.join(event.src_path, volume_file))
+
+
+def monitor_folder(folder_path):
+  """Monitors the specified folder for new files."""
+  event_handler = FileSystemEventHandler()
+  event_handler.on_created = handle_new_file
+  observer = Observer()
+  observer.schedule(event_handler, folder_path, recursive=False)
+  observer.start()
+  try:
+    print(f"Monitoring folder: {folder_path}")
+    observer.join()
+  except KeyboardInterrupt:
+    observer.stop()
+  observer.join()
+
+
+# Replace with the actual path of your shared folder
+shared_folder_path = r"\\server\shared\folder"
+monitor_folder(shared_folder_path)
 ```
