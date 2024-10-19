@@ -252,6 +252,8 @@ https://blog.chewxy.com/2017/11/02/go-for-data-science/
 
 ### Error Handling
 
+https://habr.com/ru/articles/850464/
+
 https://www.sohamkamani.com/golang/error-handling/
 
 https://hayageek.com/golang-error-handling-techniques/#google_vignette
