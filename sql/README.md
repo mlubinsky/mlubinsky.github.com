@@ -1,5 +1,8 @@
 https://habr.com/ru/articles/843794/  ACID explained
 
+Regular expressions in SQL
+https://habr.com/ru/companies/otus/articles/851942/
+
 ### The SQL isolation levels 
 ```
 1. Serializable (most strict, expensive):
