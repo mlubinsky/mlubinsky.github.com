@@ -61,6 +61,8 @@ https://habr.com/ru/company/southbridge/blog/683168/
 
 #### Stream 
 
+https://habr.com/ru/articles/850832/
+
 https://towardsdatascience.com/master-the-kafka-shell-in-5-minutes-topics-producers-and-consumers-explained-442a15f1dac1
 
 https://www.vultr.com/docs/how-to-use-kafka-streams-for-stateful-and-stateless-data-processing/
