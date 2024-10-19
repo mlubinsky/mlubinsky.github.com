@@ -773,6 +773,8 @@ greatexpectations.io
 
  https://iceberg.apache.org/
 
+ https://habr.com/ru/articles/850674/
+
  https://blog.det.life/exploring-advanced-open-data-formats-apache-hudi-apache-iceberg-and-delta-lake-eb764c161159
 
  https://seattledataguy.substack.com/p/apache-iceberg-what-is-it?utm_source=substack
