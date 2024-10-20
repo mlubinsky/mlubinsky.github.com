@@ -1,3 +1,69 @@
+### Analyze dataframe
+```
+from pyspark.sql import functions as F
+
+def analyze_dataframe(df, cols_of_interest, combinations_of_columns):
+    # Total number of rows in the dataframe
+    total_rows = df.count()
+    print(f"Total number of rows: {total_rows}")
+    
+    # Analysis for each column in cols_of_interest
+    for col in cols_of_interest:
+        # Count of null values
+        null_count = df.filter(F.col(col).isNull()).count()
+        print(f"\nColumn: {col}")
+        print(f"  Null values: {null_count}")
+        
+        # Count of unique values
+        unique_count = df.select(col).distinct().count()
+        print(f"  Unique values: {unique_count}")
+        
+        # Count of records per value (GROUP BY)
+        value_counts = df.groupBy(col).count().orderBy(F.col("count").desc())
+        print(f"  Records per value:")
+        value_counts.show(truncate=False)
+        
+        # Min and max values
+        min_val = df.agg(F.min(col)).collect()[0][0]
+        max_val = df.agg(F.max(col)).collect()[0][0]
+        print(f"  Min value: {min_val}")
+        print(f"  Max value: {max_val}")
+    
+    # Analysis for each list of columns in combinations_of_columns
+    for cols_combo in combinations_of_columns:
+        # Count of unique combinations
+        unique_combo_count = df.select(cols_combo).distinct().count()
+        print(f"\nCombination of columns: {cols_combo}")
+        print(f"  Unique combinations: {unique_combo_count}")
+        
+        # Count of records per combination (GROUP BY)
+        combo_counts = df.groupBy(cols_combo).count().orderBy(F.col("count").desc())
+        print(f"  Records per combination:")
+        combo_counts.show(truncate=False)
+
+
+```
+### Example of usage:
+```
+# Example DataFrame
+data = [
+    ("A", 1, None), 
+    ("B", 2, 10), 
+    ("A", 3, 30), 
+    ("B", 2, 20), 
+    (None, 1, None)
+]
+df = spark.createDataFrame(data, ["col1", "col2", "col3"])
+
+# Define columns of interest and combinations of columns
+cols_of_interest = ["col1", "col2"]
+combinations_of_columns = [["col1", "col2"], ["col1", "col3"]]
+
+# Call the function
+analyze_dataframe(df, cols_of_interest, combinations_of_columns)
+
+
+```
 
 Here are 6 Python libraries you can use to make the EDA process easier:
 ```
