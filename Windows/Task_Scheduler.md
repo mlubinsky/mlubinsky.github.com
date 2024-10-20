@@ -2,40 +2,45 @@
 ```
 To automatically start a Python script (a.py) when your Windows computer reboots,
  you can use Task Scheduler.
-
-Open Task Scheduler:
+```
+#### 1. Open Task Scheduler:
 
 Press Windows + R, type taskschd.msc, and hit Enter.
-Create a New Task:
+
+#### 2. Create a New Task:
 
 In Task Scheduler, click on Action > Create Task.
-General Settings:
 
+#### 3. General Settings:
+```
 In the General tab, give your task a name (e.g., "Run Python Script").
 Select Run whether user is logged on or not.
 Check Run with highest privileges if needed.
-Trigger:
+```
 
+#### 4. Trigger:
+```
 Go to the Triggers tab and click New.
 Set the trigger to At startup.
 Click OK.
-
-Action:
-
+```
+#### 5. Action:
+```
 Go to the Actions tab and click New.
 In the Action dropdown, select Start a program.
 In the Program/script field, enter the path to the Python interpreter (e.g., C:\Python39\python.exe).
 In the Add arguments field, enter the path to your a.py script (e.g., C:\path\to\a.py).
 Click OK.
-Save the Task:
-
+```
+#### 6. Save the Task:
+```
 Click OK in the main task window.
 Enter your password if prompted.
 Now, your Python script will automatically start each time your computer reboots.
 ```
 
 
-###  taskschd.msc
+### Steps to Set Up an Hourly Task in Task Scheduler:  taskschd.msc
 ```
 Steps to Set Up an Hourly Task in Task Scheduler:
 Open Task Scheduler:
