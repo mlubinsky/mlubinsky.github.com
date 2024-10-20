@@ -41,7 +41,6 @@ def analyze_dataframe(df, cols_of_interest, combinations_of_columns):
         print(f"  Records per combination:")
         combo_counts.show(truncate=False)
 
-
 ```
 ### Example of usage:
 ```
@@ -62,8 +61,67 @@ combinations_of_columns = [["col1", "col2"], ["col1", "col3"]]
 # Call the function
 analyze_dataframe(df, cols_of_interest, combinations_of_columns)
 
-
 ```
+
+### Gemini
+```
+import pyspark.sql.functions as F
+
+def data_quality_analysis(df, cols_of_interest, list_of_cols_combinations):
+  """
+  Performs data quality analysis on a given DataFrame.
+
+  Args:
+    df: The DataFrame to analyze.
+    cols_of_interest: A list of columns to analyze individually.
+    list_of_cols_combinations: A list of lists, where each inner list represents a combination of columns to analyze together.
+
+  Returns:
+    None
+  """
+
+  # Print total number of rows
+  print("Total number of rows:", df.count())
+
+  # Analyze individual columns
+  for col in cols_of_interest:
+    print(f"\nColumn: {col}")
+    print("Number of null values:", df.filter(F.col(col).isNull()).count())
+    print("Number of unique values:", df.select(F.col(col)).distinct().count())
+    print("Value counts:")
+    df.groupBy(F.col(col)).count().show()
+    print("Minimum value:", df.agg(F.min(col)).collect()[0][0])
+    print("Maximum value:", df.agg(F.max(col)).collect()[0][0])
+
+  # Analyze column combinations
+  for cols_comb in list_of_cols_combinations:
+    print(f"\nColumn combination: {cols_comb}")
+    print("Number of unique combinations:", df.select(*cols_comb).distinct().count())
+    print("Combination counts:")
+    df.groupBy(*cols_comb).count().show()
+```
+### Gemini usage
+```
+# Create a DataFrame
+df = spark.createDataFrame(
+    [
+        (1, "A", "X"),
+        (2, "B", "Y"),
+        (3, "A", "X"),
+        (4, "C", "Z"),
+        (5, None, "X"),
+    ],
+    ["col1", "col2", "col3"]
+)
+
+# Define columns of interest and column combinations
+cols_of_interest = ["col1", "col2", "col3"]
+list_of_cols_combinations = [["col1", "col2"], ["col2", "col3"]]
+
+# Call the function
+data_quality_analysis(df, cols_of_interest, list_of_cols_combinations)
+```
+
 
 Here are 6 Python libraries you can use to make the EDA process easier:
 ```
