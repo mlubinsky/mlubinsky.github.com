@@ -69,6 +69,80 @@ check_archive_integrity(archive_path)
 
 ```
 
+#### Move archived files and uncompress them
+```
+import os
+import shutil
+import subprocess
+from datetime import datetime
+
+# Path to 7z executable (adjust if not in your PATH)
+seven_zip_path = r'C:\Program Files\7-Zip\7z.exe'
+
+def get_creation_date(filepath):
+    """ Get the creation date of the file """
+    stat = os.stat(filepath)
+    return datetime.fromtimestamp(stat.st_ctime)  # Creation time
+
+def check_archive_integrity(archive_path):
+    """ Check if the archive is valid using 7z test command """
+    try:
+        result = subprocess.run([seven_zip_path, 't', archive_path], capture_output=True, text=True)
+        if result.returncode == 0 and "Everything is OK" in result.stdout:
+            return True
+        else:
+            return False, result.stdout + result.stderr
+    except Exception as e:
+        return False, str(e)
+
+def uncompress_archive(archive_path, destination_folder):
+    """ Uncompress the archive to the destination folder using 7z """
+    try:
+        subprocess.run([seven_zip_path, 'x', archive_path, f'-o{destination_folder}', '-y'], check=True)
+        print(f"Successfully uncompressed: {archive_path}")
+    except subprocess.CalledProcessError as e:
+        print(f"Error while uncompressing {archive_path}: {e}")
+
+def process_archives(input_folder, output_folder):
+    """ Process all archives in the input folder and organize by creation date """
+    # List all files in the input folder
+    for file_name in os.listdir(input_folder):
+        file_path = os.path.join(input_folder, file_name)
+        
+        # Check if the file is an archive (modify this based on your archive types)
+        if file_name.endswith(('.zip', '.rar', '.7z')):
+            try:
+                # 1. Detect the creation date of the archive
+                creation_date = get_creation_date(file_path)
+                date_str = creation_date.strftime('%Y-%m-%d')
+                
+                # 2. Create the subfolder under the output folder
+                destination_folder = os.path.join(output_folder, date_str)
+                os.makedirs(destination_folder, exist_ok=True)
+                
+                # 3. Move the archive to the destination folder
+                new_file_path = shutil.move(file_path, destination_folder)
+                print(f"Moved {file_name} to {destination_folder}")
+                
+                # 4. Check the integrity of the archive
+                is_valid = check_archive_integrity(new_file_path)
+                if isinstance(is_valid, tuple) and not is_valid[0]:
+                    print(f"Archive {file_name} is corrupted: {is_valid[1]}")
+                else:
+                    # Uncompress the archive
+                    uncompress_archive(new_file_path, destination_folder)
+                    
+            except Exception as e:
+                print(f"Error processing {file_name}: {e}")
+
+# Example usage
+input_folder = r'C:\path\to\input\folder'
+output_folder = r'C:\path\to\output\folder'
+process_archives(input_folder, output_folder)
+
+```
+
+
 
 ### Start program automatically when computer restart
 ```
