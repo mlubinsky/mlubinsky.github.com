@@ -1,3 +1,15 @@
+### Numeric value counh by range
+```
+counts = one_day_df.agg(
+    F.count(F.when(F.col("percent_completed") > 1000, True)).alias("count_greater_than_1000"),
+    F.count(F.when((F.col("percent_completed") >= 100) & (F.col("percent_completed") <= 1000), True)).alias("count_between_100_and_1000"),
+    F.count(F.when((F.col("percent_completed") >= 50) & (F.col("percent_completed") <= 100), True)).alias("count_between_50_and_100"),
+    F.count(F.when(F.col("percent_completed") < 50, True)).alias("count_less_than_50")
+)
+
+counts.show()
+```
+
 ### Analyze dataframe
 ```
 from pyspark.sql import functions as F
