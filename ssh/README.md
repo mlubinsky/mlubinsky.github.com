@@ -118,7 +118,11 @@ This will output the HTTP status code for a given URL.
 <https://habr.com/ru/company/microsoft/blog/472274/>
  Remote — SSH позволяет подключаться к удаленной машине или виртуальной машине с использованием SSH, 
  и все изнутри VS Code.
- 
+
+
+Fabric and expect
+
+ https://www.blog.pythonlibrary.org/2024/10/16/ssh-scripting-with-fabric-and-python/
  
 Pexpect is a pure Python module for spawning child applications; controlling them; and responding to expected patterns in their output. Pexpect works like Don Libes’ Expect. 
 Pexpect allows your script to spawn a child application and control it as if a human were typing commands. 
