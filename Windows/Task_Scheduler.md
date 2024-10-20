@@ -1,3 +1,75 @@
+### Multi-volume archive 7-zip
+```
+To check the integrity of a multi-volume compressed archive without uncompressing it, you can use 7-Zip. Here's how you can verify the archive on Windows:
+
+Using the 7-Zip GUI:
+Open 7-Zip File Manager:
+
+Launch 7-Zip from the Start menu or by searching for it.
+Locate Your Archive:
+
+Navigate to the folder containing the multi-volume archive (e.g., a-001.zip, a-002.zip, etc.).
+Verify the Archive:
+
+Select the first file in the multi-volume archive (a-001.zip).
+Click File > Test Archive or simply press Alt + T.
+Check Results:
+
+7-Zip will check the integrity of all volumes without extracting them. If everything is intact, it will show a message like "Everything is OK".
+Using the Command Line (7z):
+You can also use the command line for verification, which is especially useful if you want to automate the process.
+
+Open Command Prompt:
+
+Press Windows + R, type cmd, and press Enter.
+Run the Test Command:
+
+Navigate to the folder containing the archive:
+bash
+Copy code
+cd C:\path\to\your\archive
+Run the following command using 7z:
+bash
+Copy code
+"C:\Program Files\7-Zip\7z.exe" t a-001.zip
+This will test the integrity of the entire multi-volume archive.
+Result:
+If the archive is intact, the output will show "Everything is OK". If there are any issues with the files or their integrity, 7-Zip will display an error message.
+```
+
+#### Check archive integrity from python
+```
+import subprocess
+
+# Path to the first file of the multi-volume archive
+archive_path = r'C:\path\to\your\archive\a-001.zip'
+
+# Path to the 7z executable (adjust if 7-Zip is not in your PATH)
+seven_zip_path = r'C:\Program Files\7-Zip\7z.exe'
+
+def check_archive_integrity(archive_path):
+    try:
+        # Run the 7z test command to check archive integrity
+        result = subprocess.run([seven_zip_path, 't', archive_path],
+                                capture_output=True, text=True)
+        
+        # Output the result of the test
+        if result.returncode == 0 and "Everything is OK" in result.stdout:
+            print("Archive integrity check passed: Everything is OK")
+        else:
+            print("Archive integrity check failed.")
+            print(result.stdout)
+            print(result.stderr)
+    
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Call the function to check the archive
+check_archive_integrity(archive_path)
+
+```
+
+
 ### Start program automatically when computer restart
 ```
 To automatically start a Python script (a.py) when your Windows computer reboots,
