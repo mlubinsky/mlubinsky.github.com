@@ -38,8 +38,19 @@ check=True: If the command fails, it raises a CalledProcessError, which you can 
 
 ### ChatGPT
 pip install watchdog py7zr
-
 ```
+Unfortunately, py7zr doesn't natively support extracting multi-volume 7z archives described (a-001.zip, a-002.zip, etc.).
+This is because py7zr expects a single, valid 7z archive file.
+
+Here are two approaches you can consider:
+
+1. Using External Tools (Recommended):
+
+This is the more robust and recommended approach. You can use a command-line tool like 7z (part of the p7zip package) or other tools like peazip to extract the multi-volume archive:
+
+Bash
+7z x a-001.zip a-002.zip  # Replace with your actual filenames
+ 
 import time
 import os
 import py7zr
