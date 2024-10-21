@@ -1,7 +1,8 @@
 
 ### subprocess.run()  check=True
 ```
-In Python's subprocess.run(), the parameter check=True is used to ensure that the program being called exits successfully. Here's what it does:
+In Python's subprocess.run(), the parameter check=True is used to ensure that the program being called exits successfully.
+ Here's what it does:
 
 Without check=True: The subprocess.run() function will execute the command,
  and regardless of whether the command succeeds or fails (i.e., returns a non-zero exit code),
