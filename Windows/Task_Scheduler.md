@@ -26,17 +26,47 @@ Press Windows + R, type cmd, and press Enter.
 Run the Test Command:
 
 Navigate to the folder containing the archive:
-bash
-Copy code
+ 
+ 
 cd C:\path\to\your\archive
 Run the following command using 7z:
-bash
-Copy code
+ 
+ 
 "C:\Program Files\7-Zip\7z.exe" t a-001.zip
 This will test the integrity of the entire multi-volume archive.
 Result:
 If the archive is intact, the output will show "Everything is OK". If there are any issues with the files or their integrity, 7-Zip will display an error message.
 ```
+
+### Get list of folders created by 7z
+```
+import subprocess
+import os
+
+def unpack_7z_archive(archive_path, destination_folder):
+    # Step 1: Run the 7z command to unpack the archive
+    result = subprocess.run(['7z', 'x', archive_path, f'-o{destination_folder}'], 
+                            capture_output=True, text=True)
+
+    if result.returncode != 0:
+        raise Exception(f"7z extraction failed: {result.stderr}")
+    
+    # Step 2: List folders created after unpacking
+    created_folders = [f for f in os.listdir(destination_folder) if os.path.isdir(os.path.join(destination_folder, f))]
+
+    return created_folders
+
+# Example usage
+archive = 'example.7z'  # Replace with your archive path
+destination = 'output_folder'  # Replace with your destination folder path
+created_folders = unpack_7z_archive(archive, destination)
+
+print("Created folders:", created_folders)
+
+```
+
+
+
 
 #### Check archive integrity from python
 ```
