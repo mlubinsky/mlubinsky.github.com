@@ -1,4 +1,41 @@
-### CharGPT
+
+### subprocess.run()  check=True
+```
+In Python's subprocess.run(), the parameter check=True is used to ensure that the program being called exits successfully. Here's what it does:
+
+Without check=True: The subprocess.run() function will execute the command,
+ and regardless of whether the command succeeds or fails (i.e., returns a non-zero exit code),
+no exception will be raised.
+You would need to manually check the return code (result.returncode) to detect failure.
+
+With check=True: If the command returns a non-zero exit code (which indicates failure),
+ Python will raise a subprocess.CalledProcessError exception.
+ This allows you to handle failures more explicitly, for example, by adding try-except blocks.
+
+Example:
+
+import subprocess
+
+# Without check=True
+result = subprocess.run(['ls', 'non_existent_directory'], capture_output=True, text=True)
+print("Without check=True:", result.returncode)  # Returns a non-zero code if 'ls' fails
+
+# With check=True
+try:
+    subprocess.run(['ls', 'non_existent_directory'], check=True, capture_output=True, text=True)
+except subprocess.CalledProcessError as e:
+    print(f"With check=True: Command failed with error: {e}")
+
+Key Points:
+check=False (default): The command can fail without raising an exception.
+ You need to check the returncode manually.
+
+check=True: If the command fails, it raises a CalledProcessError, which you can catch to handle the failure.
+ This is useful when you want to enforce that the command must succeed for the program to continue.
+```
+
+
+### ChatGPT
 pip install watchdog py7zr
 
 ```
