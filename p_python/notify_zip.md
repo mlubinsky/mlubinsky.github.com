@@ -172,9 +172,11 @@ def monitor_folder(folder_path):
   observer.start()
   try:
     print(f"Monitoring folder: {folder_path}")
-    observer.join()
+    while observer.is_alive():
+           observer.join(1)
   except KeyboardInterrupt:
     observer.stop()
+
   observer.join()
 
 
