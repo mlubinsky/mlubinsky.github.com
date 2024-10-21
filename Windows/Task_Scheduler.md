@@ -1,6 +1,32 @@
 ```
     trigger=r"C:\SPOT-ACE\folderparser\AUTOMATION\trigger_folderParser.py"
     subprocess.run(['python', trigger, '-p', folder], check=True)
+
+GhatGPT:
+import subprocess
+#-----------------------------
+def call_a_py(parameter_value):
+#-----------------------------
+    # Call a.py with the -p flag and the provided parameter
+    result = subprocess.run(['python', 'a.py', '-p', str(parameter_value)], check=True, capture_output=True, text=True)
+    
+    # Print the output and return code
+    print("STDOUT:", result.stdout)
+    print("STDERR:", result.stderr)
+    print("Return code:", result.returncode)
+
+# Example usage
+param = "your_parameter"  # Replace with the actual parameter value
+call_a_py(param)
+
+
+Explanation:
+['python', 'a.py', '-p', str(parameter_value)]:
+This calls a.py with the -p flag followed by the value of parameter_value.
+check=True: Ensures that an exception is raised if a.py exits with a non-zero status (indicating failure).
+capture_output=True: Captures both standard output (stdout) and error output (stderr) from the a.py execution.
+text=True: Decodes the output into a string instead of returning it as raw bytes.
+
 ```
 ### Multi-volume archive 7-zip
 https://www.7-zip.org/
