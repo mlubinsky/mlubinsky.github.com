@@ -1,3 +1,7 @@
+```
+    trigger=r"C:\SPOT-ACE\folderparser\AUTOMATION\trigger_folderParser.py"
+    subprocess.run(['python', trigger, '-p', folder], check=True)
+```
 ### Multi-volume archive 7-zip
 https://www.7-zip.org/
 ```
