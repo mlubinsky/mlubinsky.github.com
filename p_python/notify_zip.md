@@ -108,7 +108,8 @@ if __name__ == "__main__":
             time.sleep(1)  # Keep the program running
     except KeyboardInterrupt:
         observer.stop()
-    observer.join()
+    finally:
+        observer.join()
 
 ```
 
