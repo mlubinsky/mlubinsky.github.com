@@ -50,12 +50,6 @@ Check Results:
 Using the Command Line (7z):
 You can also use the command line for verification, which is especially useful if you want to automate the process.
 
-Open Command Prompt:
-
-Press Windows + R, type cmd, and press Enter.
-Run the Test Command:
-
-Navigate to the folder containing the archive:
  
  
 cd C:\path\to\your\archive
@@ -67,6 +61,22 @@ This will test the integrity of the entire multi-volume archive.
 Result:
 If the archive is intact, the output will show "Everything is OK". If there are any issues with the files or their integrity, 7-Zip will display an error message.
 ```
+
+### Extract multivolume archive:
+
+```
+import subprocess
+
+archive_prefix = "a-"  # Replace with your actual prefix
+num_volumes = 2  # Replace with the actual number of volumes
+
+for i in range(1, num_volumes + 1):
+    filename = f"{archive_prefix}{i:03d}.zip"
+    subprocess.run(["7z", "x", filename])  # Extract each volume
+
+print("Extraction completed.")
+```
+
 
 ### Get list of folders created by 7z
 ```
