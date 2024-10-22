@@ -1,6 +1,55 @@
 https://habr.com/ru/articles/824050/
 
+### Add summary line after every group
+```
+import pandas as pd
 
+# Sample dataframe (assuming you have a similar structure)
+# df = pd.DataFrame({
+#     'Location': ['A', 'A', 'A', 'B', 'B'],
+#     'Metric': ['metric1', 'metric2', 'metric3', 'metric1', 'metric2'],
+#     'Col1': ['(1/3)', '(2/3)', '(3/4)', '(1/5)', '(2/6)'],
+#     'Col2': ['(4/8)', '(3/9)', '(2/5)', '(3/6)', '(4/10)']
+# })
+
+def process_ratio_string(value):
+    # Remove parentheses and split the ratio into x and y
+    try:
+        x, y = map(int, value.strip('()').split('/'))
+        return x / y
+    except:
+        return None
+
+def add_summary_row(df):
+    # List of columns with "(x/y)" format
+    ratio_columns = [col for col in df.columns if df[col].str.contains(r'^\(\d+/\d+\)').any()]
+    
+    # Group by 'Location' and iterate through the groups
+    new_rows = []
+    for location, group in df.groupby('Location'):
+        # For each group, calculate summary row
+        summary_row = {'Location': 'Summary'}
+        
+        for col in ratio_columns:
+            # Count rows where x/y < 0.5
+            count = group[col].apply(lambda x: process_ratio_string(x)).lt(0.5).sum()
+            summary_row[col] = f'Count: {count}'
+        
+        # Add 'Summary' to all other columns
+        summary_row.update({col: None for col in df.columns if col not in summary_row})
+        
+        # Append the group and its summary row
+        new_rows.append(group)
+        new_rows.append(pd.DataFrame([summary_row]))
+    
+    # Concatenate the original dataframe with the summary rows
+    result_df = pd.concat(new_rows).reset_index(drop=True)
+    return result_df
+
+# Apply the function
+df_with_summary = add_summary_row(df)
+print(df_with_summary)
+```
 
 #### Combine several excel files
 ```
