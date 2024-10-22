@@ -20,7 +20,65 @@ Every  sheet should be constructed as below:
   - it has a header line which is "A", "B", "C", other columns are the sorted dates in format YYYY-MM-DD extracted from the names of input files
   - it has columns A, B, C with the same values as in input files.
   - it has extra colums, 1 column per file, 
-the values in these extra columns should be extracted from column "D" of corresponding files.  
+the values in these extra columns should be extracted from column "D" of corresponding files.
+
+
+import pandas as pd
+import os
+import re
+from glob import glob
+
+# Folder containing Excel files
+folder_path = 'your_folder_path'  # Replace with the actual folder path
+
+# Get all Excel files with date in their names
+excel_files = glob(os.path.join(folder_path, "*.xlsx"))
+
+# Regex to extract date from file names (assumes the date format YYYY-MM-DD)
+date_pattern = re.compile(r'\d{4}-\d{2}-\d{2}')
+
+# Initialize a dictionary to hold data for each sheet
+sheets_data = {sheet: [] for sheet in ["sheet1", "sheet2", "sheet3", "sheet4"]}
+
+# Loop through each file and process each sheet
+for file in excel_files:
+    # Extract date from the filename
+    file_date = date_pattern.search(os.path.basename(file)).group(0)
+    
+    # Open the Excel file
+    xls = pd.ExcelFile(file)
+    
+    for sheet in ["sheet1", "sheet2", "sheet3", "sheet4"]:
+        # Read the sheet into a DataFrame
+        df = pd.read_excel(xls, sheet_name=sheet)
+        
+        # Filter rows where column B contains "50%" or "95%"
+        filtered_df = df[df['B'].str.contains('50%|95%', regex=True)]
+        
+        # Select columns A, B, C and D
+        relevant_columns = filtered_df[['A', 'B', 'C', 'D']].copy()
+        relevant_columns.rename(columns={'D': file_date}, inplace=True)
+        
+        # Store the data in the dictionary for later merging
+        sheets_data[sheet].append(relevant_columns)
+
+# Now merge all data for each sheet and save it to a new Excel file
+output_writer = pd.ExcelWriter('output_file.xlsx', engine='openpyxl')
+
+for sheet, data_frames in sheets_data.items():
+    # Merge data on columns A, B, C, keeping those columns intact
+    merged_df = pd.concat(data_frames, axis=1)
+    
+    # Remove duplicate A, B, C columns from concatenation
+    merged_df = merged_df.loc[:, ~merged_df.columns.duplicated()]
+    
+    # Write to the output Excel file
+    merged_df.to_excel(output_writer, sheet_name=sheet, index=False)
+
+# Save the output file
+output_writer.save()
+print("Excel file created successfully.")
+
 ```
 
 ### Number of rows and columns
