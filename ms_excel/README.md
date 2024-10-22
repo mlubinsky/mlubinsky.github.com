@@ -2,7 +2,7 @@ https://habr.com/ru/articles/824050/
 
 
 
-####
+#### Combine several excel files
 ```
 There are several MS Excel files in the folder.
 The file  names are having the date in format YYY-MM-DD as a part of the name.
@@ -21,8 +21,10 @@ Every  sheet should be constructed as below:
   - it has columns A, B, C with the same values as in input files.
   - it has extra colums, 1 column per file, 
 the values in these extra columns should be extracted from column "D" of corresponding files.
+```
 
-
+#### ChatGPT
+```
 import pandas as pd
 import os
 import re
@@ -130,7 +132,36 @@ folder_path = 'your_folder_path'
 data = {}
 process_excel_files(folder_path)
 ```
+### Apply colors:
+```
+import openpyxl
 
+# Replace 'sheet_name_combined.xlsx' with your actual file name
+filename = 'sheet_name_combined.xlsx'
+
+# Load the workbook
+wb = openpyxl.load_workbook(filename)
+
+# Get the sheet you want to work on
+sheet = wb['Sheet1']  # Replace 'Sheet1' with your actual sheet name
+
+# Color the header row green
+for cell in sheet[1]:  # Assuming the header is in the first row
+    cell.fill = openpyxl.styles.fills.PatternFill(start_color='00FF00',
+                                                 end_color='00FF00',
+                                                 fill_type='solid')
+
+# Color cells in column C red if value is less than 10
+for row in sheet.iter_rows(min_row=2, max_col=3):  # Assuming data starts in row 2
+    cell = row[2]  # Column C is the third column (index 2)
+    if cell.value < 10:
+        cell.fill = openpyxl.styles.fills.PatternFill(start_color='FF0000',
+                                                     end_color='FF0000',
+                                                     fill_type='solid')
+
+# Save the workbook
+wb.save(filename)
+```
 
 
 ### Number of rows and columns
