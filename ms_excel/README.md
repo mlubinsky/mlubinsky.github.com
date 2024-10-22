@@ -80,6 +80,58 @@ output_writer.save()
 print("Excel file created successfully.")
 
 ```
+### Gemini
+```
+
+import pandas as pd
+import os
+
+def process_excel_files(folder_path):
+    """Processes Excel files in the specified folder.
+
+    Args:
+        folder_path (str): The path to the folder containing the Excel files.
+    """
+
+    for file_name in os.listdir(folder_path):
+        if file_name.endswith('.xlsx'):
+            file_path = os.path.join(folder_path, file_name)   
+
+
+            # Read the Excel file into a DataFrame
+            df = pd.read_excel(file_path,   
+ sheet_name=None)
+
+            # Process each sheet
+            for sheet_name, sheet_data in df.items():
+                # Extract the date from the file name
+                date = file_name.split('-')[0]
+
+                # Create a new DataFrame with columns A, B, and C
+                new_df = sheet_data[['A', 'B', 'C']]
+
+                # Add a new column for the date
+                new_df['Date'] = date
+
+                # Append the new DataFrame to a list
+                if sheet_name not in data:
+                    data[sheet_name] = []
+                data[sheet_name].append(new_df)
+
+    # Concatenate the DataFrames for each sheet
+    for sheet_name, sheet_data in data.items():
+        combined_df = pd.concat(sheet_data, ignore_index=True)
+
+        # Save the combined DataFrame to a new Excel file
+        combined_df.to_excel(f"{sheet_name}_combined.xlsx", index=False)
+
+# Replace 'your_folder_path' with the actual path to your folder
+folder_path = 'your_folder_path'
+data = {}
+process_excel_files(folder_path)
+```
+
+
 
 ### Number of rows and columns
 ```
