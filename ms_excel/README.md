@@ -1,5 +1,28 @@
 https://habr.com/ru/articles/824050/
 
+
+
+####
+```
+There are several MS Excel files in the folder.
+The file  names are having the date in format YYY-MM-DDas a part of the name.
+All files have several sheets which are the same for all files.
+Name of the sheets are: sheet1, sheet2, sheet3.
+On every sheet with the same name
+the columns A, B and C are having the same values across all files. 
+Number of rows on the sheets with the same name is equel across all files.
+Using Python please build new MS Excel file which will use these files as input.
+This file will have  the same sheet names as in input files.
+Every  sheet should be constructed as below:
+  - it is based on sheet with same name in input files  
+  - it only uses rows from input files there value in column B has a pattern "50%' or '95%'
+
+  - it has a header line which is "A", "B", "C", other columns are the sorted dates in format YYYY-MM-DD extracted from the names of input files
+  - it has columns A, B, C with the same values as in input files.
+  - it has extra colums, 1 column per file, 
+the value in thess exrra columns are extracted from column "D" of corresponding files.  
+```
+
 ### Number of rows and columns
 ```
 from openpyxl import load_workbook
