@@ -5,14 +5,14 @@ https://habr.com/ru/articles/824050/
 ####
 ```
 There are several MS Excel files in the folder.
-The file  names are having the date in format YYY-MM-DDas a part of the name.
-All files have several sheets which are the same for all files.
-Name of the sheets are: sheet1, sheet2, sheet3.
+The file  names are having the date in format YYY-MM-DD as a part of the name.
+All files have several sheets , the sheet names are the same for all files.
+Name of the sheets are: sheet1, sheet2, sheet3, sheet4.
 On every sheet with the same name
 the columns A, B and C are having the same values across all files. 
 Number of rows on the sheets with the same name is equel across all files.
 Using Python please build new MS Excel file which will use these files as input.
-This file will have  the same sheet names as in input files.
+This MS Excel file should have  the same sheet names as in input files.
 Every  sheet should be constructed as below:
   - it is based on sheet with same name in input files  
   - it only uses rows from input files there value in column B has a pattern "50%' or '95%'
