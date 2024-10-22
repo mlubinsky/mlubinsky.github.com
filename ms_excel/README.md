@@ -20,7 +20,7 @@ Every  sheet should be constructed as below:
   - it has a header line which is "A", "B", "C", other columns are the sorted dates in format YYYY-MM-DD extracted from the names of input files
   - it has columns A, B, C with the same values as in input files.
   - it has extra colums, 1 column per file, 
-the value in thess exrra columns are extracted from column "D" of corresponding files.  
+the values in these extra columns should be extracted from column "D" of corresponding files.  
 ```
 
 ### Number of rows and columns
