@@ -1,3 +1,9 @@
+
+### Filter out rows where column 'B' starts with 'abc'
+
+df_filtered = df[~df['B'].str.startswith('abc')]
+
+
 ```
 There is Pandas dataframe df with columns 
 - Test (string type, unique in dataframe )
