@@ -1,5 +1,16 @@
  %* in batch file mean all command line arguments
 
+
+## FOR LOOP
+```
+@echo off
+echo START
+FOR %%G IN (a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z)  ^
+DO (
+      echo %%G
+)
+```
+
 ### Run Windows program on another Windows box
 
 1)	Use OpenSSH https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui
