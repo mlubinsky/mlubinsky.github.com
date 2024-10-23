@@ -1,5 +1,55 @@
 https://habr.com/ru/articles/824050/
 
+### Adjust header and column widht
+
+```
+import pandas as pd
+from openpyxl import load_workbook
+
+# Create a sample dataframe
+data = {
+    'A': [1, 2, 3], 
+    'B': [4, 5, 6], 
+    'C': [7, 8, 9]
+}
+df = pd.DataFrame(data)
+
+# Define multi-line headers (with \n for line breaks)
+df.columns = ['Column A\nFirst Line', 'Column B\nFirst Line', 'Column C\nFirst Line']
+
+# Specify the filename
+filename = 'output_with_multiline_header.xlsx'
+
+# Save the dataframe to Excel using openpyxl engine
+with pd.ExcelWriter(filename, engine='openpyxl') as writer:
+    df.to_excel(writer, sheet_name='Sheet1', index=False)
+
+# Load the workbook and access the sheet
+wb = load_workbook(filename)
+ws = wb['Sheet1']
+
+# Enable text wrapping for the header row (first row)
+for cell in ws[1]:  # First row is the header row
+    cell.alignment = cell.alignment.copy(wrapText=True)
+
+# Adjust the column widths programmatically
+column_widths = {
+    'A': 20,  # Adjust width for column A
+    'B': 25,  # Adjust width for column B
+    'C': 30   # Adjust width for column C
+}
+
+for col, width in column_widths.items():
+    ws.column_dimensions[col].width = width
+
+# Save the changes to the workbook
+wb.save(filename)
+
+print(f"DataFrame with multi-line headers saved to {filename}")
+
+```
+
+
 ### Add summary line after every group
 ```
 import pandas as pd
