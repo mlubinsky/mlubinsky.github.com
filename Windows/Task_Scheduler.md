@@ -1,8 +1,48 @@
+### Watchdog
+```
+import time
+import os
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+
+class ZipFileHandler(FileSystemEventHandler):
+    def on_created(self, event):
+        # Check if the new file has a .zip extension
+        if event.is_directory:
+            return
+        if event.src_path.endswith(".zip"):
+            print(f"New .zip file detected: {os.path.basename(event.src_path)}")
+
+def monitor_folder(folder_to_watch):
+    event_handler = ZipFileHandler()
+    observer = Observer()
+    observer.schedule(event_handler, folder_to_watch, recursive=False)
+
+    # Start monitoring
+    observer.start()
+    print(f"Monitoring folder: {folder_to_watch} for new .zip files...")
+    
+    try:
+        # Keep the script running until interrupted by Ctrl-C
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        # Handle Ctrl-C gracefully
+        print("Monitoring interrupted. Exiting...")
+        observer.stop()
+    
+    observer.join()
+
+if __name__ == "__main__":
+    folder_to_watch = r"C:\path\to\your\folder"  # Replace with your folder path
+    monitor_folder(folder_to_watch)
+```
+#### Subprocess.run()
 ```
     trigger=r"C:\SPOT-ACE\folderparser\AUTOMATION\trigger_folderParser.py"
     subprocess.run(['python', trigger, '-p', folder], check=True)
 
-GhatGPT:
+
 import subprocess
 #-----------------------------
 def call_a_py(parameter_value):
