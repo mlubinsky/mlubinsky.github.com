@@ -2974,6 +2974,8 @@ peer authentication on the other hand, is used for local connections and verifie
 
 ## Explain plan
 
+https://news.ycombinator.com/item?id=41903425
+
 <https://fosdem.org/2020/schedule/event/postgresql_find_your_slow_queries_and_fix_them/>
 
 <https://habr.com/ru/post/477624/>
