@@ -1,5 +1,7 @@
 https://towardsdatascience.com/setting-a-dockerized-python-environment-the-elegant-way-f716ef85571d
 
+https://danielquinn.org/blog/developing-with-docker/
+
 https://habr.com/ru/articles/822707/ 
 
 https://taylormadetech.dev/docker/developer-experience/ruby/2024/10/03/developer-experience.html
