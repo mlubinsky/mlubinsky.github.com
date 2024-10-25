@@ -1,5 +1,5 @@
 
-### subprocess.run()  check=True
+### subprocess.run() what check=True means?
 ```
 In Python's subprocess.run(), the parameter check=True is used to ensure that the program being called exits successfully.
  Here's what it does:
@@ -36,7 +36,106 @@ check=True: If the command fails, it raises a CalledProcessError, which you can 
 ```
 
 
-### ChatGPT
+### Watchdog with muli-volume archive support
+```
+import os
+import time
+import subprocess
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+from threading import Timer
+
+class ArchiveHandler(FileSystemEventHandler):
+    def __init__(self, folder_to_monitor, process_file_callback):
+        self.folder_to_monitor = folder_to_monitor
+        self.process_file_callback = process_file_callback
+        self.pending_archives = {}
+
+    def on_created(self, event):
+        if event.is_directory:
+            return
+        
+        filepath = event.src_path
+        if filepath.endswith(".zip"):
+            # Extract the base filename and volume number
+            basename = os.path.basename(filepath)
+            base, ext = os.path.splitext(basename)
+            # Detect multi-volume archives based on the suffix pattern (xx-001.zip, etc.)
+            if '-' in base and base.split('-')[-1].isdigit():
+                volume_id = int(base.split('-')[-1])
+                archive_base = '-'.join(base.split('-')[:-1])
+                self.handle_multivolume(archive_base, volume_id, filepath)
+            else:
+                # Single-volume archive, process immediately
+                self.process_file_callback(filepath)
+
+    def handle_multivolume(self, archive_base, volume_id, filepath):
+        # Add volume part to the pending archive set
+        if archive_base not in self.pending_archives:
+            self.pending_archives[archive_base] = {
+                "files": {},
+                "timer": Timer(1800, self.process_multivolume, [archive_base])
+            }
+            self.pending_archives[archive_base]["timer"].start()
+
+        self.pending_archives[archive_base]["files"][volume_id] = filepath
+        
+        # Check if all parts are present (for this example, assume up to xx-003.zip for simplicity)
+        if len(self.pending_archives[archive_base]["files"]) == 3:  # Adjust as necessary for your use case
+            self.pending_archives[archive_base]["timer"].cancel()
+            self.process_multivolume(archive_base)
+
+    def process_multivolume(self, archive_base):
+        # Get all volume parts and sort them
+        volumes = sorted(self.pending_archives[archive_base]["files"].items())
+        volume_paths = [v[1] for v in volumes]
+
+        # Unzip all parts together using 7z
+        self.unzip_files(volume_paths)
+
+        # After unzipping, call external program to process unzipped files
+        # (implement this function to call your external program)
+        self.process_unzipped_files(volume_paths)
+
+        # Clean up
+        del self.pending_archives[archive_base]
+
+    def unzip_files(self, file_paths):
+        try:
+            # Unzip using subprocess and 7z
+            subprocess.run(["7z", "x"] + file_paths, check=True)
+        except subprocess.CalledProcessError as e:
+            print(f"Error unzipping files: {e}")
+
+    def process_unzipped_files(self, file_paths):
+        # Call external program to process unzipped files
+        print(f"Processing unzipped files from: {file_paths}")
+        # Replace with your external program call
+        # subprocess.run([...])
+
+def monitor_folder(folder_to_monitor):
+    event_handler = ArchiveHandler(folder_to_monitor, lambda f: print(f"Processing single-volume file: {f}"))
+    observer = Observer()
+    observer.schedule(event_handler, folder_to_monitor, recursive=False)
+    observer.start()
+    print(f"Monitoring folder: {folder_to_monitor}")
+
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+    observer.join()
+
+if __name__ == "__main__":
+    folder_to_monitor = "/path/to/monitored/folder"
+    monitor_folder(folder_to_monitor)
+
+
+```
+
+
+### ChatGPT  watchdog
 pip install watchdog py7zr
 ```
 Unfortunately, py7zr doesn't natively support extracting multi-volume 7z archives described (a-001.zip, a-002.zip, etc.).
@@ -124,7 +223,7 @@ if __name__ == "__main__":
 
 ```
 
-### Gemini
+### Gemini watchdog
 ```
 import os
 import zipfile
