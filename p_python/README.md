@@ -1,3 +1,31 @@
+### Logging to file and print to terminal as well
+```
+import logging
+import sys
+
+# Set up the logger
+logging.basicConfig(
+    level=logging.INFO,  # Log level
+    format='%(asctime)s - %(message)s',  # Log format
+    handlers=[
+        logging.FileHandler("logfile.log"),  # Log to a file
+        logging.StreamHandler(sys.stdout)    # Log to the console
+    ]
+)
+
+# Wrapper function for logging instead of print
+def log_message(message):
+    logging.info(message)
+
+# Example print statements modified to use log_message
+log_message("This is a test message.")
+log_message("Another message that will be logged to both the console and the log file.")
+log_message("Program execution finished.")
+
+
+```
+
+
 https://www.pythonmorsels.com/time-complexities/
 
 https://www.mattlayman.com/blog/2024/layman-guide-python-built-in-functions/
