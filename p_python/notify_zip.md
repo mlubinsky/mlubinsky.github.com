@@ -36,7 +36,117 @@ check=True: If the command fails, it raises a CalledProcessError, which you can 
 ```
 
 
-### Watchdog with muli-volume archive support
+
+### Watchdog with multi volume support without classes
+```
+import os
+import time
+import subprocess
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+from threading import Timer
+
+# Global dictionary to store pending multi-volume archives
+pending_archives = {}
+
+def on_created(event, folder_to_monitor, process_file_callback):
+    if event.is_directory:
+        return
+    
+    filepath = event.src_path
+    if filepath.endswith(".zip"):
+        # Extract the base filename and volume number
+        basename = os.path.basename(filepath)
+        base, ext = os.path.splitext(basename)
+        # Detect multi-volume archives based on the suffix pattern (xx-001.zip, etc.)
+        if '-' in base and base.split('-')[-1].isdigit():
+            volume_id = int(base.split('-')[-1])
+            archive_base = '-'.join(base.split('-')[:-1])
+            handle_multivolume(archive_base, volume_id, filepath)
+        else:
+            # Single-volume archive, process immediately
+            process_file_callback(filepath)
+
+def handle_multivolume(archive_base, volume_id, filepath):
+    global pending_archives
+    
+    # Add volume part to the pending archive set
+    if archive_base not in pending_archives:
+        pending_archives[archive_base] = {
+            "files": {},
+            "timer": Timer(1800, process_multivolume, [archive_base])
+        }
+        pending_archives[archive_base]["timer"].start()
+
+    pending_archives[archive_base]["files"][volume_id] = filepath
+    
+    # Check if all parts are present (for this example, assume up to xx-003.zip)
+    if len(pending_archives[archive_base]["files"]) == 3:  # Adjust as necessary for your use case
+        pending_archives[archive_base]["timer"].cancel()
+        process_multivolume(archive_base)
+
+def process_multivolume(archive_base):
+    global pending_archives
+    
+    # Get all volume parts and sort them
+    volumes = sorted(pending_archives[archive_base]["files"].items())
+    volume_paths = [v[1] for v in volumes]
+
+    # Unzip all parts together using 7z
+    unzip_files(volume_paths)
+
+    # After unzipping, call external program to process unzipped files
+    process_unzipped_files(volume_paths)
+
+    # Clean up
+    del pending_archives[archive_base]
+
+def unzip_files(file_paths):
+    try:
+        # Unzip using subprocess and 7z
+        subprocess.run(["7z", "x"] + file_paths, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error unzipping files: {e}")
+
+def process_unzipped_files(file_paths):
+    # Call external program to process unzipped files
+    print(f"Processing unzipped files from: {file_paths}")
+    # Replace with your external program call
+    # subprocess.run([...])
+
+def monitor_folder(folder_to_monitor):
+    def process_file_callback(filepath):
+        print(f"Processing single-volume file: {filepath}")
+        # Unzip single-volume archive
+        unzip_files([filepath])
+        # Call external program to process unzipped files
+        process_unzipped_files([filepath])
+
+    def on_created_event(event):
+        on_created(event, folder_to_monitor, process_file_callback)
+    
+    # Create watchdog observer
+    event_handler = FileSystemEventHandler()
+    event_handler.on_created = on_created_event
+    observer = Observer()
+    observer.schedule(event_handler, folder_to_monitor, recursive=False)
+    observer.start()
+    print(f"Monitoring folder: {folder_to_monitor}")
+
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+    observer.join()
+
+if __name__ == "__main__":
+    folder_to_monitor = "/path/to/monitored/folder"
+    monitor_folder(folder_to_monitor)
+
+
+```
+### Watchdog with muli-volume archive support with class
 ```
 import os
 import time
