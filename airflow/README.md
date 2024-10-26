@@ -6,6 +6,9 @@ https://cloud.google.com/blog/products/data-analytics/airflow-dag-and-task-concu
 
 https://habr.com/ru/companies/ozonbank/articles/805011/ Мониторинг Apache Airflow. Оценка «прожорливости» тасок
 
+DAG linting 
+https://medium.com/@snir.isl/mastering-airflow-dag-standardization-with-pythons-ast-a-deep-dive-into-linting-at-scale-1396771a9b90
+
 https://asrathore08.medium.com/airflow-interview-questions-iv-cef5100d44c5 
 
 https://www.linkedin.com/posts/shwetank-singh-68023283_data-engineering-airflow-concepts-ugcPost-7229856597575970816-bC2r 
