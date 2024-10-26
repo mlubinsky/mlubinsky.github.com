@@ -1,5 +1,9 @@
 https://towardsdatascience.com/setting-a-dockerized-python-environment-the-elegant-way-f716ef85571d
 
+### OrbStack
+https://habr.com/ru/articles/853720/  
+https://orbstack.dev/
+
 https://danielquinn.org/blog/developing-with-docker/
 
 https://habr.com/ru/articles/822707/ 
