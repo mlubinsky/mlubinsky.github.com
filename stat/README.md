@@ -103,6 +103,8 @@ https://jasp-stats.org/
 
 ### Bayes
 
+https://habr.com/ru/articles/853560/
+
 https://habr.com/ru/articles/802435/
  
 https://xcelab.net/rm/statistical-rethinking/  A Bayesian Course with Examples in R and Stan (& PyMC3 & brms & Julia too
