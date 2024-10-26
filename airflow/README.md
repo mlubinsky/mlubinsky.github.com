@@ -1,6 +1,5 @@
 https://www.waitingforcode.com/apache-airflow
 
-https://docs.databricks.com/en/jobs/how-to/use-airflow-with-jobs.html Airflow  + Databricks
 
 https://habr.com/ru/articles/811807/
 
@@ -16,6 +15,9 @@ https://asrathore08.medium.com/airflow-interview-questions-iv-cef5100d44c5
 https://www.linkedin.com/posts/shwetank-singh-68023283_data-engineering-airflow-concepts-ugcPost-7229856597575970816-bC2r 
 
 ### Running Databricks Notebook with Airflow
+
+https://docs.databricks.com/en/jobs/how-to/use-airflow-with-jobs.html Airflow  + Databricks
+
 https://medium.com/apache-airflow/running-databricks-notebook-with-airflow-9b38bcfb8740
 ```
 The Databricks provider was recently updated to include something like 'DatabricksWorkflowOperator',
