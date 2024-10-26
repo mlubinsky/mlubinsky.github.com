@@ -8,6 +8,8 @@ https://vutr.substack.com/p/how-did-linkedin-handle-7-trillion
 
 ### Оптимизация настроек Kafka кластера. 
 
+https://habr.com/ru/articles/853652/
+
 https://habr.com/ru/articles/818007/ Часть 1.
 
 https://habr.com/ru/articles/819243/ Часть 2.
