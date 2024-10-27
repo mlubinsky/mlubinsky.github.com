@@ -25,6 +25,16 @@ https://vak.dreamwidth.org/891889.html  PlantUML - generate sequence diagrams SV
 
 https://memo.barrucadu.co.uk/scheduling-problems.html . Solving Scheduling Problems with Integer Linear Programming with Python
 
+
+### Markup
+
+https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-chrome/
+
+https://casual-effects.com/markdeep/
+
+https://ndossougbe.github.io/strapdown/
+
+
 ### Shen
 
 https://shenlanguage.org/
