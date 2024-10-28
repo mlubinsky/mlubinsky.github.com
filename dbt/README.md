@@ -1,5 +1,35 @@
 https://books.japila.pl/
 
+
+
+### Question : Why is print() not appearing in the Airflow task log, and how to fix it?
+```
+Databricks notebooks execute in their environment,
+and print() statements in PySpark cells by default output to the Databricks console,
+not directly to the Airflow log. To capture these print() statements in the Airflow log, you can try the following approaches:
+```
+#### 1. Use dbutils.notebook.exit() to return messages:
+```
+At the end of the notebook, use dbutils.notebook.exit("Your final message or result"). 
+This message will appear in the Airflow task log since it is treated as the notebook’s return value.
+
+```
+#### 2. Log using logger instead of print():
+```
+  Databricks supports logging via Spark. To log messages in a way that they appear in Airflow’s logs, use logging in PySpark:
+ 
+import logging
+logger = logging.getLogger("py4j")  # Use the Spark gateway logger
+logger.info("Your log message")
+
+These logger messages should flow to the Airflow log via the Databricks API connection.
+```
+#### 3. Configure Spark Logs for More Output (if needed):
+```
+Another option is to set the spark.databricks.driver.log4j.appender.DATABRICKS properties
+to ensure Spark logs in detail, which Airflow can capture.
+These steps should allow you to see more detailed logging from Databricks notebooks directly in your Airflow logs.
+```
 ### SQLFrame  
 
 https://github.com/eakmanrq/sqlframe
