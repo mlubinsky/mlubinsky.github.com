@@ -1,3 +1,10 @@
+### Generate dates in range
+```
+from datetime import date, timedelta
+sdate = date(2024,7,19)   # start date
+edate = date(2024,10,29)
+dates = [sdate+timedelta(days=x) for x in range((edate-sdate).days)]
+```
 ### Logging to file and print to terminal as well
 ```
 import logging
