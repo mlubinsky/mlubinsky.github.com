@@ -11,6 +11,17 @@ DO (
 )
 ```
 
+### Comparison
+```
+In Windows batch scripting, LSS is a comparison operator that stands for "less than." It’s part of a set of comparison operators used with the if command to compare numerical values:
+
+LSS: Less than
+LEQ: Less than or equal to
+GTR: Greater than
+GEQ: Greater than or equal to
+EQU: Equal to
+NEQ: Not equal to
+```
 ### Run Windows program on another Windows box
 
 1)	Use OpenSSH https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui
@@ -26,6 +37,9 @@ set DD=29
 rem Extract year and month from YYYYMM
 set YYYY=%YYYYMM:~0,4%
 set MM=%YYYYMM:~4,2%
+
+rem Add leading zero to DD if needed
+if %DD% LSS 10 set DD=0%DD%
 
 rem Combine with dash separators
 set DATE_WITH_DASHES=%YYYY%-%MM%-%DD%
