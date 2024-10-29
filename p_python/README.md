@@ -1,3 +1,17 @@
+### Find files in subfolders
+```
+import os
+
+def find_files(folder, file_name):
+    matching_files = []
+    for root, _, files in os.walk(folder):
+        for f in files:
+            if f == file_name:
+                full_path = os.path.join(root, f)
+                matching_files.append(full_path)
+    return matching_files
+```
+
 ### Generate dates in range
 ```
 from datetime import date, timedelta
