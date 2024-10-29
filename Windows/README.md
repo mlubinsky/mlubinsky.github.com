@@ -17,6 +17,21 @@ DO (
 2)	Use PsExcec https://learn.microsoft.com/en-us/sysinternals/downloads/psexec
 3)	Use PowerShell https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/running-remote-commands?view=powershell-7.4
 
+### Extract substring
+```
+@echo off
+set YYYYMM=202410
+set DD=29
+
+rem Extract year and month from YYYYMM
+set YYYY=%YYYYMM:~0,4%
+set MM=%YYYYMM:~4,2%
+
+rem Combine with dash separators
+set DATE_WITH_DASHES=%YYYY%-%MM%-%DD%
+
+echo %DATE_WITH_DASHES%
+```
  
 ### CMD
 ```
