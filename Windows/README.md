@@ -38,6 +38,9 @@ rem Extract year and month from YYYYMM
 set YYYY=%YYYYMM:~0,4%
 set MM=%YYYYMM:~4,2%
 
+rem Remove leading zero from DD if present
+set /A DD=10%DD% %% 100
+
 rem Add leading zero to DD if needed
 if %DD% LSS 10 set DD=0%DD%
 
