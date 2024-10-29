@@ -25,6 +25,7 @@ log_message("Program execution finished.")
 
 ```
 
+https://realpython.com/syntactic-sugar-python/
 
 https://www.pythonmorsels.com/time-complexities/
 
