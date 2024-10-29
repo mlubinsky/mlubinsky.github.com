@@ -20,6 +20,17 @@ https://www.youtube.com/watch?v=f4Lq3EZv7xI  Audiobooks Земля. Часть 1
 
 https://joe-alex.livejournal.com/610005.html
 
+1.  Родина ( Homeland) США
+2. Родственные узы ( Bloodline) США
+3. Любовники ( The Affair) США
+4. Прощай любимая ( Россия)
+5. Убийства во Фьелльбакке( Убийства у моря) Швеция 
+6. Игра престолов США ( за десять дней все сезоны)
+7. Гранчестер( Великобритания)
+8. Аббатство Даунтон ( Великобритания)
+9. Бродчерч ( Великобритания)
+10. Тегеран( Израиль)
+
 
 ## Detectives
 https://collider.com/best-movie-detectives-like-glass-onion/#philip-marlowe---lsquo-the-big-sleep-rsquo-1946
