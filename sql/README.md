@@ -4,6 +4,9 @@ Regular expressions in SQL
 https://habr.com/ru/companies/otus/articles/851942/
 
 ### The SQL isolation levels 
+
+https://www.thenile.dev/blog/transaction-isolation-postgres
+
 ```
 1. Serializable (most strict, expensive):
 -------------------------------------------
