@@ -31,10 +31,7 @@ Option 1:
 Set the Log Level to Higher than INFO
 If you still want to keep error logs but ignore regular request logs, you can set the Flask log level to a higher level like WARNING or ERROR.
 
- 
-import logging
-import werkzeug
-werkzeug.logger.setLevel(logging.WARNING)
+  
 
 Updated Solution:
 Use the following code to adjust the werkzeug logger level:
@@ -66,6 +63,38 @@ app = Flask(__name__)
 log = logging.getLogger('werkzeug')
 log.disabled = True
 
+
+
+To make the Flask server print a timestamp to the console every 30 seconds,
+you can create a background thread that runs alongside the Flask server.
+This thread will periodically print the timestamp to the console, signaling that the server is still active.
+
+Here’s how to do it:
+
+python
+Copy code
+from flask import Flask
+import threading
+import time
+from datetime import datetime
+
+app = Flask(__name__)
+
+def print_timestamp():
+    while True:
+        print(f"Flask is running - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        time.sleep(30)  # Wait for 30 seconds before printing the next timestamp
+
+# Start the background thread
+timestamp_thread = threading.Thread(target=print_timestamp, daemon=True)
+timestamp_thread.start()
+
+@app.route('/')
+def home():
+    return "Hello, Flask is running!"
+
+if __name__ == "__main__":
+    app.run()
 ```
 
  
