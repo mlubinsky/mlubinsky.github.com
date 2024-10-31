@@ -1,9 +1,43 @@
-
+### Flask console output
 ```
+The lines you’re seeing are Flask’s built-in logging for incoming requests, which is handled by the werkzeug library.
+These logs appear every time your Flask server handles a request, in this case, showing an HTTP DELETE request.
+
+To suppress these logs, you can adjust the log level or disable them entirely:
+
+Option 1:
+Set the Log Level to Higher than INFO
+If you still want to keep error logs but ignore regular request logs, you can set the Flask log level to a higher level like WARNING or ERROR.
+
+ 
 import logging
 import werkzeug
 werkzeug.logger.setLevel(logging.WARNING)
+
+Option 2: Run Flask in Production Mode
+If you’re running Flask in development mode, werkzeug will log requests by default.
+Running in production mode (e.g., with a production server like gunicorn) will suppress these logs by default:
+
+ 
+export FLASK_ENV=production
+flask run
+
+Option 3: Disable the Access Log in the Flask Embedded Server
+If you only want to disable the access log without changing the log level, try:
+
+ 
+from flask import Flask
+import logging
+
+app = Flask(__name__)
+
+# Disable Werkzeug request logging
+log = logging.getLogger('werkzeug')
+log.disabled = True
+
 ```
+
+ 
 ### Flask issues
 ```
 The fact that refreshing your browser (making a GET request) allows the POST request from your Python program to work suggests that there might be a few underlying issues that involve network behavior, threading in Flask’s development server, or a blocking operation. Here are some possible causes and solutions:
