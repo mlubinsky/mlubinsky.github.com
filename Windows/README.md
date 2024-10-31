@@ -1,6 +1,36 @@
  %* in batch file mean all command line arguments
 
 
+### WinRaR
+```
+"C:\Program Files\WinRAR\WinRAR.exe" t filename.part1.rar
+
+Replace filename.part1.rar with the actual name of the first part of your archive.
+
+WinRAR will test the integrity of all parts of the archive. If everything is correct, it will output a message like "All OK".
+If any part is corrupted, it will show an error message.
+
+Explanation of the Command
+t: Tests the archive without extracting it.
+filename.part1.rar: Use the name of the first part to automatically include all additional parts in the test.
+  
+How to extract multi-volume WinRaR archive from command line?
+ 
+To extract a multi-volume RAR archive from the command line, you can use the WinRAR x command.  
+ 
+ 
+"C:\Program Files\WinRAR\WinRAR.exe" x filename.part1.rar -o+ -ibck
+Replace filename.part1.rar with the actual name of the first part of your archive.
+
+Explanation of the Command
+x: Extracts files with full paths, creating folders as needed.
+filename.part1.rar: Use the first part of the archive to start extracting the full multi-volume archive.
+-o+: Overwrites existing files without prompting (optional).
+-ibck: Runs the extraction in the background (optional).
+
+
+```
+
 ## FOR LOOP
 ```
 @echo off
