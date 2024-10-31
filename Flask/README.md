@@ -1,4 +1,9 @@
 
+```
+import logging
+import werkzeug
+werkzeug.logger.setLevel(logging.WARNING)
+```
 ### Flask issues
 ```
 The fact that refreshing your browser (making a GET request) allows the POST request from your Python program to work suggests that there might be a few underlying issues that involve network behavior, threading in Flask’s development server, or a blocking operation. Here are some possible causes and solutions:
