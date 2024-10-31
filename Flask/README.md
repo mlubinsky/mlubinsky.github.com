@@ -36,6 +36,15 @@ import logging
 import werkzeug
 werkzeug.logger.setLevel(logging.WARNING)
 
+Updated Solution:
+Use the following code to adjust the werkzeug logger level:
+
+ 
+import logging
+
+# Set Flask/Werkzeug request logging level to WARNING or higher
+logging.getLogger("werkzeug").setLevel(logging.WARNING)
+
 Option 2: Run Flask in Production Mode
 If you’re running Flask in development mode, werkzeug will log requests by default.
 Running in production mode (e.g., with a production server like gunicorn) will suppress these logs by default:
