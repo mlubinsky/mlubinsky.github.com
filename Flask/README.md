@@ -69,10 +69,6 @@ To make the Flask server print a timestamp to the console every 30 seconds,
 you can create a background thread that runs alongside the Flask server.
 This thread will periodically print the timestamp to the console, signaling that the server is still active.
 
-Here’s how to do it:
-
-python
-Copy code
 from flask import Flask
 import threading
 import time
