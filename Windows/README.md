@@ -1,5 +1,9 @@
  %* in batch file mean all command line arguments
 
+Folders with pttern
+```
+ for /d %%d in (*) do @echo %%d | findstr /i "AAA"
+```
 
 ### WinRaR
 ```
