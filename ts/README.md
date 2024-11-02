@@ -4,6 +4,8 @@ https://www.amazon.com/Time-Series-Forecasting-in-Python/dp/B0C3WSDLJL/
 
 https://habr.com/ru/articles/855446/
 
+https://habr.com/ru/companies/otus/articles/853300/  Tribuo (Java)
+
 https://habr.com/ru/companies/otus/articles/805801/
 
 https://www.youtube.com/hashtag/timeseries
