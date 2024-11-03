@@ -19,6 +19,10 @@ https://www.stellarscience.com/careers/
  https://archive.org/details/texts
 
 
+### Tab managers
+https://www.reddit.com/r/browsers/comments/yge87s/best_tab_and_tab_group_manager_for_chrome/
+
+
  ### LLM code assistent
 https://lmstudio.ai/
 
