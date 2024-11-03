@@ -19,8 +19,66 @@ https://www.stellarscience.com/careers/
  https://archive.org/details/texts
 
 
-### Tab managers
+### Chrome Tab managers
+
 https://www.reddit.com/r/browsers/comments/yge87s/best_tab_and_tab_group_manager_for_chrome/
+```
+1. Built-in Chrome Features
+Tab Groups: Right-click on a tab and select “Add tab to new group.” You can color-code groups and label them to quickly find related tabs. This is especially useful for categorizing by task, project, or priority.
+
+Pin Tabs: Right-click on a tab and select “Pin” to shrink it to just the icon, which saves space for tabs you access frequently, like email or project management tools.
+
+Tab Search: If you have too many tabs open, use the tab search feature (click the downward arrow in the top right of Chrome or press Shift + Command + A on Mac or Shift + Ctrl + A on Windows) to find the one you need without scrolling through.
+
+2. Tab Management Extensions
+Workona: This extension lets you create workspaces, which are groups of tabs saved by topic or project. You can quickly switch between workspaces and even sync them across devices. It’s excellent for people who work on multiple projects.
+
+OneTab: When you find yourself with too many open tabs, OneTab allows you to collapse them into a single list. You can restore individual tabs or the whole group as needed, which helps reduce memory usage and visual clutter.
+
+Toby: Toby replaces your new tab page with a visual organization of saved tabs and collections. You can organize tabs into specific groups for easy retrieval, which is great for people who revisit similar tabs often.
+
+Session Buddy: This tool helps you save your browsing sessions so you can restore them later. You can use it to organize tabs by session, which is helpful if you work on different tasks at different times.
+
+The Great Suspender (No Tracking): To keep Chrome running smoothly with many tabs open, use a tab suspender. This one automatically suspends inactive tabs, freeing up memory without losing your place.
+
+3. Keyboard Shortcuts
+Learning a few shortcuts can help you quickly navigate and manage tabs:
+
+Switch between tabs: Ctrl + Tab or Ctrl + Shift + Tab
+Jump to a specific tab: Ctrl + 1, Ctrl + 2, etc. (up to Ctrl + 8)
+Reopen a closed tab: Ctrl + Shift + T
+Open a new tab: Ctrl + T
+4. Bookmark Folders
+If there are tabs you don’t need open all the time, you can save them in bookmark folders:
+
+Right-click on the bookmarks bar and choose “Add folder.”
+Drag your favorite or frequently used tabs into these folders for easy access, without cluttering your tab bar.
+5. Vertical Tab Managers
+Extensions like Tree Style Tab (for Chrome) display your tabs in a vertical sidebar, which can make it easier to manage a large number of tabs. It’s particularly helpful if you’re using a widescreen monitor.
+
+6. Using Profiles
+If you work on multiple projects or contexts, create multiple Chrome profiles (Settings > Manage People). Each profile has its own set of tabs, bookmarks, and extensions, so you can switch between them without cluttering a single browser window.
+
+Combining some of these methods can give you a highly organized, uncluttered browsing experience in Chrome!
+
+```
+
+
+#### Safari Tab managers:
+
+- Safari's Built-in Tab Groups: If you’re on macOS Monterey or later, Safari has built-in tab groups. You can save groups of tabs by project or topic and easily switch between them, making this feature quite powerful for casual tab management.
+  
+- Workona Tab Manager: Workona is known for its workspaces, which let you organize tabs by projects. It’s a full-featured tool available as a Safari extension that can help you reduce tab overload by grouping and saving sessions for later.
+
+- Tab Suspender for Safari: This is useful if you’re looking to reduce memory usage rather than organize tabs. It suspends inactive tabs to free up memory and can help Safari run more smoothly.
+
+
+
+- Tab Manager Plus
+- 
+- Safari Tab Switcher
+- 
+- Tab Space 
 
 
  ### LLM code assistent
