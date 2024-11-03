@@ -477,9 +477,10 @@ Shift code block left: Shift+ Tab
 Shift code block left: Tab
 
 Markdown viewer plugin
+
 https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
 
-
+https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-chrome/ 
 
 To invoke from command line
 ```
