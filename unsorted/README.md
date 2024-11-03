@@ -72,12 +72,8 @@ Combining some of these methods can give you a highly organized, uncluttered bro
 
 - Tab Suspender for Safari: This is useful if you’re looking to reduce memory usage rather than organize tabs. It suspends inactive tabs to free up memory and can help Safari run more smoothly.
 
-
-
 - Tab Manager Plus
-- 
 - Safari Tab Switcher
-- 
 - Tab Space 
 
 
