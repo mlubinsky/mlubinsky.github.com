@@ -1,14 +1,21 @@
 ### Useful embedded in MacOS   utils
 https://ss64.com/mac/  
 https://notes.billmill.org/computer_usage/mac_os/mac_os_command_line_programs.html  
-https://github.com/newmarcel/KeepingYouAwake  
-https://apps.apple.com/us/app/amphetamine/id937984704  
+https://terminaltrove.com/categories/macos/  
+
 https://news.ycombinator.com/item?id=42057431 
 https://news.ycombinator.com/item?id=36491704 
 
+### Keeping Mac awake
+https://ss64.com/mac/caffeinate.html
+
+https://github.com/newmarcel/KeepingYouAwake  
+https://apps.apple.com/us/app/amphetamine/id937984704  
+
+
 caffeinate -disu
 
-https://terminaltrove.com/categories/macos/
+
 
 
 $ sw_vers
