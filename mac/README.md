@@ -1,3 +1,7 @@
+### Useful embedded in MacOS command - line utils
+https://news.ycombinator.com/item?id=42057431
+
+
 $ sw_vers
 ```
 ProductName:	Mac OS X
