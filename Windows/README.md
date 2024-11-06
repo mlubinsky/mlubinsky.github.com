@@ -1,6 +1,14 @@
  %* in batch file mean all command line arguments
 
-Folders with pttern
+Accessing env variables:
+```
+echo %date% %time%
+
+but inside .bat file use %%
+echo %%date%% %%time%%
+
+```
+Folders with pattern
 ```
  for /d %%d in (*) do @echo %%d | findstr /i "AAA"
 ```
