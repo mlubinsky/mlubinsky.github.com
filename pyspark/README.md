@@ -1,4 +1,4 @@
-### Numeric value counh by range
+### Numeric value count() by range
 ```
 counts = one_day_df.agg(
     F.count(F.when(F.col("percent_completed") > 1000, True)).alias("count_greater_than_1000"),
@@ -8,6 +8,27 @@ counts = one_day_df.agg(
 )
 
 counts.show()
+```
+
+
+### Diff
+
+```
+
+1) exceptALL :
+df1.exceptAll(df2).isEmpty() and df2.exceptAll(df1).isEmpty()
+ 
+If the exceptAll operation on both DataFrames results in empty DataFrames, it suggests that they might be equal.
+
+2) diff:
+df1.diff(df2).isEmpty() and df2.diff(df1).isEmpty()
+
+If the diff operation on both DataFrames results in empty DataFrames, it's a strong indication that they are equal
+
+3) substract:
+
+df1.substract(df2).isEmpty() and df2.substract(df1).isEmpty()
+
 ```
 
 ### Analyze dataframe
