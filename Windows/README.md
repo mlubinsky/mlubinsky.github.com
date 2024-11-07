@@ -11,6 +11,8 @@ echo %%date%% %%time%%
 Folders with pattern
 ```
  for /d %%d in (*) do @echo %%d | findstr /i "AAA"
+
+for /r %i in (<file_pattern>) do @echo %~fi %~zi
 ```
 
 ### WinRaR
