@@ -13,6 +13,28 @@ Folders with pattern
  for /d %%d in (*) do @echo %%d | findstr /i "AAA"
 
 for /r %i in (<file_pattern>) do @echo %~fi %~zi
+
+
+
+In the Windows Command Prompt for command:
+
+/r: Specifies recursive processing. It tells the for loop to go through all directories and subdirectories starting
+from the current directory (or a specified directory).
+This is useful when you want to process files in all subdirectories.
+
+Example: for /r %i in (*.txt) do echo %i
+This command will find and process all .txt files in the current directory and all subdirectories.
+/d: Tells the for loop to iterate over directories instead of files.
+You can use it to perform actions on directories that match a given pattern.
+
+Example: for /d %i in (C:\path\*) do echo %i
+This command will list all directories within C:\path that match the specified pattern (* for all directories).
+Combining /r and /d
+You can also combine /d with /r to recursively iterate through directories. For example:
+
+ 
+for /r /d %i in (*) do echo %i
+This command will list all directories in the current directory and its subdirectories.
 ```
 
 ### WinRaR
