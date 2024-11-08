@@ -1,4 +1,30 @@
 
+### Search subfolders in folder
+```
+import os
+
+def find_nested_folder(target_folder, prefix, pattern):
+  """
+  Searches for a nested folder within the target folder based on the given prefix and pattern.
+
+  Args:
+    target_folder: The root folder to search.
+    prefix: The prefix of the first-level folders to consider (SF or G2).
+    pattern: The pattern to search for in the nested folder names.
+
+  Returns:
+    The full path of the found nested folder, or None if not found.
+  """
+
+  for root, dirs, files in os.walk(target_folder):
+    if root.startswith(os.path.join(target_folder, prefix)):
+      for dir in dirs:
+        if pattern in dir:
+          return os.path.join(root, dir)
+
+  return None
+```
+
 ### Construct the SQL WHERE clause with the values from your Python list 
 
 ```
