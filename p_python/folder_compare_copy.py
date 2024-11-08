@@ -8,6 +8,7 @@ source_dir = r'\\tsclient\c\workspace\obs\spotlight'
 dest_dir = r'C:\workspace\obs\spotlight_dev'
 
 diff_files = []
+new_files = []
 suffixes=(".php", "sql", ".kml", ".py", ".js")
 for dirpath, dirnames, filenames in os.walk(source_dir):
     for filename in filenames:
@@ -20,16 +21,22 @@ for dirpath, dirnames, filenames in os.walk(source_dir):
             if not filecmp.cmp(source_file, dest_file, shallow=False):
                 diff_files.append(source_file)
         else:
-            diff_files.append(source_file)
+            new_files.append(source_file)
 
 print("Different files:")
 for file_path in diff_files:
     print(file_path)
 
+print("New files:")
+for file_path in new_files:
+    print(file_path)
 
 print("\n generate copy commands :")
 print("****************") 
   
 i=len(source_dir)    
 for file_path in diff_files:
+    print(" copy ", file_path, dest_dir + file_path[i:]) 
+
+for file_path in new_files:
     print(" copy ", file_path, dest_dir + file_path[i:]) 
