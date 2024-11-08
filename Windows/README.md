@@ -1,4 +1,4 @@
- %* in batch file mean all command line arguments
+ %* in batch file means:  all command line arguments
 
 Accessing env variables:
 ```
@@ -8,7 +8,34 @@ but inside .bat file use %%
 echo %%date%% %%time%%
 
 ```
-Folders with pattern
+
+### Fild file size:
+```
+To find all files with the prefix 1.gps in all subdirectories and print their names and sizes,
+you can use the dir command with a search pattern and filter out the lines that contain the file size.
+
+ 
+dir /s /a:-d /b 1.gps* | for /f "tokens=*" %i in ('more') do @echo %i & for %j in ("%i") do @echo Size: %~zj bytes
+
+Explanation
+dir /s /a:-d /b 1.gps*: Searches for files that start with 1.gps (1.gps*) in all subdirectories (/s),
+excluding directories (/a:-d), and in bare format (/b), which outputs only the full path of matching files.
+
+for /f "tokens=*" %i in ('more'): Loops through each file path output from the dir command.
+
+echo %i: Prints the file path.
+for %j in ("%i") do @echo Size: %~zj bytes: Prints the file size in bytes.
+
+
+Running This in a Batch File
+If you’re running this command in a .bat file, double the % signs:
+
+ 
+dir /s /a:-d /b 1.gps* | for /f "tokens=*" %%i in ('more') do @echo %%i & for %%j in ("%%i") do @echo Size: %%~zj bytes
+
+
+```
+### Folders with pattern
 ```
  for /d %%d in (*) do @echo %%d | findstr /i "AAA"
 
