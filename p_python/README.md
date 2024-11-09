@@ -1,3 +1,22 @@
+### Python -O flag
+```
+1. Removes assert Statements
+
+The -O flag will remove assert statements from the code.
+Assertions are typically used for debugging purposes, and in optimized mode,
+Python treats them as unnecessary, so they are removed to improve runtime performance.
+
+2. Sets the __debug__ Variable to False
+
+In regular Python execution, the special __debug__ variable is set to True.
+When -O is used, it is set to False.
+Code that checks if __debug__: will not execute under optimization.
+
+ 
+
+```
+
+
 ### Find files in subfolders
 ```
 import os
