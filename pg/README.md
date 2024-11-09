@@ -1,3 +1,42 @@
+### Compare schemas 
+```
+Method 1
+
+pg_dump -h host1 -U user1 -d db1 --schema-only > schema1.sql
+pg_dump -h host2 -U user2 -d db2 --schema-only > schema2.sql
+diff schema1.sql schema2.sql
+
+Method 2
+
+pip install pg-schema-diff
+pg_schema_diff --source postgresql://user1:password@host1/db1 --target postgresql://user2:password@host2/db2
+
+Method 3:
+
+Use pgdiff or apgdiff Tools
+pgdiff and apgdiff are third-party tools specifically for PostgreSQL schema comparison. You can run them on the SQL dumps created by pg_dump.
+
+Method 4:
+   
+SELECT 
+    table_schema,
+    table_name,
+    column_name,
+    data_type,
+    is_nullable,
+    character_maximum_length,
+    numeric_precision,
+    numeric_scale
+FROM 
+    information_schema.columns
+WHERE 
+    table_schema NOT IN ('information_schema', 'pg_catalog')
+ORDER BY 
+    table_schema, table_name, ordinal_position;
+
+```
+
+
 https://habr.com/ru/articles/821993/ Статический анализ структуры базы данных  
 https://habr.com/ru/articles/839402/ Статический анализ структуры базы данных  
 
