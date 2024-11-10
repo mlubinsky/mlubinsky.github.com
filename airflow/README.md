@@ -1,3 +1,25 @@
+```
+If you are using Apache Airflow, avoid the common mistake of using {{ 𝗺𝗮𝗰𝗿𝗼𝘀.𝗱𝘀_𝗮𝗱𝗱(𝗱𝘀, 𝟭) }} in your DAGs! ❌
+
+🔄 Instead, use {{ 𝗱𝗮𝘁𝗮_𝗶𝗻𝘁𝗲𝗿𝘃𝗮𝗹_𝗲𝗻𝗱 | 𝗱𝘀 }}. Both of these templates return the same date for daily scheduled DAGs, but there are key differences you should be aware of.
+
+📌 Why?
+The {{ 𝗺𝗮𝗰𝗿𝗼𝘀.𝗱𝘀_𝗮𝗱𝗱(𝗱𝘀, 𝟭) }} approach can lead to confusion in several scenarios:
+• When you manually trigger a DAG run.
+• When you have multiple DAG runs within a single day.
+• When you schedule your DAGs less frequently than daily, such as weekly or monthly intervals.
+
+💡 Understanding Data Intervals in Airflow:
+Every DAG run in Airflow is associated with a "Data Interval", which indicates the time range that the DAG run operates on. For example, take a DAG scheduled to run daily:
+1️⃣ On January 1st, the first run of the DAG will operate over the interval starting from 00:00 on January 1st and ending at 00:00 on January 2nd.
+2️⃣ The second run of the DAG starts at 00:00 on January 2nd and ends at 00:00 on January 3rd, and so on.
+3️⃣ This pattern continues, with each run operating on its assigned interval, defined by a specific start and end time.
+
+Switching to {{ 𝗱𝗮𝘁𝗮_𝗶𝗻𝘁𝗲𝗿𝘃𝗮𝗹_𝗲𝗻𝗱 | 𝗱𝘀 }} ensures your DAGs remain aligned with their defined intervals, especially if your schedule includes non-daily intervals like weekly or monthly runs. This approach makes your pipelines more consistent and reliable. ✅
+
+```
+
+
 https://www.waitingforcode.com/apache-airflow
 
 
