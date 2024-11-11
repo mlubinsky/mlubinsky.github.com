@@ -2,6 +2,8 @@ https://mpmath.org/ Python math library
 
 https://nanohub.org/
 
+https://www.quantum-espresso.org
+
 https://news.ycombinator.com/item?id=11985143
 Good software for interactive exploration of quantum/particle physics?
 
