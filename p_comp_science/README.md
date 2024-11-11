@@ -1,5 +1,8 @@
 https://mpmath.org/ Python math library
 
+https://news.ycombinator.com/item?id=11985143
+Good software for interactive exploration of quantum/particle physics?
+
 https://github.com/osscar-org/quantum-mechanics
 
 https://medium.com/@natsunoyuki/quantum-mechanics-with-python-de2a7f8edd1f
