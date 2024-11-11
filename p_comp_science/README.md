@@ -12,6 +12,8 @@ https://www.st-andrews.ac.uk/physics/quvis/
 
 https://www.spiedigitallibrary.org/journals/optical-engineering/volume-61/issue-08/081808/Visualizing-quantum-mechanics-in-an-interactive-simulation--Virtual-Lab/10.1117/1.OE.61.8.081808.full
 
+https://www.spiedigitallibrary.org/journals/optical-engineering/volume-61/issue-08/081808/Visualizing-quantum-mechanics-in-an-interactive-simulation--Virtual-Lab/10.1117/1.OE.61.8.081808.full?SSO=1&tab=ArticleLink
+
 https://news.ycombinator.com/item?id=11985143
 Good software for interactive exploration of quantum/particle physics?
 
