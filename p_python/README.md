@@ -1,3 +1,31 @@
+import os
+
+```
+def delete_empty_folders(folder_path):
+    """
+    Recursively delete empty folders starting from the specified folder and moving up 
+    the directory hierarchy if each parent folder is also empty.
+    
+    Parameters:
+        folder_path (str): Path to the folder to start checking.
+    """
+    # Check if the folder exists and is empty
+    if not os.path.exists(folder_path):
+        print(f"Folder '{folder_path}' does not exist.")
+        return
+
+    # Delete the folder if it's empty
+    if os.path.isdir(folder_path) and not os.listdir(folder_path):
+        print(f"Deleting empty folder: {folder_path}")
+        os.rmdir(folder_path)
+        
+        # Get the parent directory and recursively apply the same logic
+        parent_folder = os.path.dirname(folder_path)
+        if parent_folder and parent_folder != folder_path:  # Avoid infinite loop
+            delete_empty_folders(parent_folder)
+    else:
+        print(f"Folder '{folder_path}' is not empty or is not a directory.")
+```
 ### Python -O flag
 ```
 1. Removes assert Statements
