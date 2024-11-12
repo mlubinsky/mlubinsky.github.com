@@ -9,7 +9,7 @@ df_event = spark.read.json(s3_event).limit(100)
 columns_to_drop=["artworks","brands","credits","descriptions"]
 
 # 1a: Drop the nested columns in one statement
-df_event = df_event.withColumn("entity", col("entity").dropFields(columns_to_drop))
+df_event = df_event.withColumn("entity", col("entity").dropFields(*columns_to_drop))
 
 # 1b: Drop the nested columns   one by one 
 for col_name in columns_to_drop:
