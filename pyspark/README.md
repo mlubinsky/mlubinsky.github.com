@@ -5,7 +5,13 @@ from pyspark.sql.types import StructType
 
 columns_to_drop=["genres","names","artworks","credits","descriptions","entitled_artworks"]
 
-# Drop the nested columns by modifying the schema of the nested struct
+df_event = spark.read.json(s3_event).limit(100)
+columns_to_drop=["artworks","brands","credits","descriptions"]
+
+# 1a: Drop the nested columns in one statement
+df_event = df_event.withColumn("entity", col("entity").dropFields(columns_to_drop))
+
+# 1b: Drop the nested columns   one by one 
 for col_name in columns_to_drop:
      df_extra = df_extra.withColumn("entity", col("entity").dropFields(col_name))
      
