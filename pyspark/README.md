@@ -1,3 +1,16 @@
+## DROP NESTED COLUMNS
+```
+from pyspark.sql.functions import col
+from pyspark.sql.types import StructType
+
+columns_to_drop=["genres","names","artworks","credits","descriptions","entitled_artworks"]
+
+# Drop the nested columns by modifying the schema of the nested struct
+for col_name in columns_to_drop:
+     df_extra = df_extra.withColumn("entity", col("entity").dropFields(col_name))
+     
+```
+
 ### Catalyst
 ```
 
