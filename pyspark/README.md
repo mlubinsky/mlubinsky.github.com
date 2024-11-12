@@ -16,6 +16,38 @@ for col_name in columns_to_drop:
      df_extra = df_extra.withColumn("entity", col("entity").dropFields(col_name))
      
 ```
+What is PySpark code does:
+```
+
+merged_df.select(
+    [F.coalesce(df_unique[col], prev_snapshot[col]).alias(col) for col in prev_snapshot.columns]
+).distinct()
+?
+ChatGPT said:
+ChatGPT
+This PySpark code performs the following operations on merged_df:
+
+Column Selection with Coalescing:
+
+python
+Copy code
+[F.coalesce(df_unique[col], prev_snapshot[col]).alias(col) for col in prev_snapshot.columns]
+This list comprehension iterates over each column in prev_snapshot.columns.
+For each column, it creates a new column using F.coalesce() between df_unique[col] and prev_snapshot[col].
+F.coalesce() returns the first non-null value from the two columns: if df_unique[col] is null, it will take the value from prev_snapshot[col].
+The result of F.coalesce() is given an alias matching the column name (col) so that the final DataFrame has the same column names as prev_snapshot.
+Select and Distinct:
+
+python
+Copy code
+merged_df.select(...).distinct()
+The .select(...) statement selects all the coalesced columns created in the list comprehension, generating a new DataFrame where each column contains either the non-null value from df_unique or prev_snapshot.
+.distinct() removes any duplicate rows from the selected DataFrame.
+Summary
+This code creates a DataFrame that combines values from df_unique and prev_snapshot by filling in nulls in df_unique with corresponding values from prev_snapshot. It then removes duplicate rows from the result.
+
+In essence, it’s merging the two DataFrames on a column-by-column basis, preferring values from df_unique while filling in any gaps with values from prev_snapshot, and ensuring no duplicate rows in the final output.
+```
 
 ### Catalyst
 ```
