@@ -1,4 +1,26 @@
 
+Find files in all subfolders
+```
+import os
+
+def find_subfolders_with_file(folder_name, file_name, short_subfolder_name):
+    matching_folders = []
+    
+    # Use os.scandir to iterate efficiently through the main folder
+    with os.scandir(folder_name) as entries:
+        for entry in entries:
+            # Only process directories and skip non-matching names early
+            if entry.is_dir() and entry.name == short_subfolder_name:
+                subfolder_path = os.path.join(folder_name, entry.name)
+                
+                # Check if the target file exists in the subfolder
+                if file_name in os.listdir(subfolder_path):
+                    matching_folders.append(subfolder_path)
+    
+    return matching_folders
+```    
+
+
 ```
 import os
 
