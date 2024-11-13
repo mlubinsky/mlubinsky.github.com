@@ -9,19 +9,16 @@ def find_subfolders_with_file(folder_name, file_name, short_subfolder_name, igno
     
     matching_folders = []
     
-    # Use os.scandir to iterate efficiently through the main folder
-    with os.scandir(folder_name) as entries:
-        for entry in entries:
-            # Only process directories that are not in the ignore list and match the desired subfolder name
-            if entry.is_dir() and entry.name == short_subfolder_name and entry.name not in ignore_subfolders:
-                subfolder_path = os.path.join(folder_name, entry.name)
-                
-                # Check if the target file exists in the subfolder
-                if file_name in os.listdir(subfolder_path):
-                    matching_folders.append(subfolder_path)
+    # Walk through the directory structure
+    for root, dirs, files in os.walk(folder_name):
+        # Modify dirs in-place to skip ignored subfolders
+        dirs[:] = [d for d in dirs if d not in ignore_subfolders]
+        
+        # Check if the current directory matches the target subfolder name
+        if os.path.basename(root) == short_subfolder_name and file_name in files:
+            matching_folders.append(root)
     
     return matching_folders
-
 ```
 
 #### Find files in all subfolders
