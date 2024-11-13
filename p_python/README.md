@@ -1,4 +1,22 @@
+
+```
 import os
+
+def find_subfolders_with_file(folder_name, file_name, short_subfolder_name):
+    matching_folders = []
+    
+    # Walk through the directory structure
+    for root, dirs, files in os.walk(folder_name):
+        # Check if the current folder name matches the short subfolder name and contains the target file
+        if os.path.basename(root) == short_subfolder_name and file_name in files:
+            matching_folders.append(root)
+    
+    return matching_folders
+
+```
+
+
+### Delete empty subfolders
 
 ```
 def delete_empty_folders(folder_path):
