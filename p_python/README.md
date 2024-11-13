@@ -1,5 +1,30 @@
 
-Find files in all subfolders
+### Find files in all subfolders and avoid some fubfolders
+```
+import os
+
+def find_subfolders_with_file(folder_name, file_name, short_subfolder_name, ignore_subfolders=None):
+    if ignore_subfolders is None:
+        ignore_subfolders = []
+    
+    matching_folders = []
+    
+    # Use os.scandir to iterate efficiently through the main folder
+    with os.scandir(folder_name) as entries:
+        for entry in entries:
+            # Only process directories that are not in the ignore list and match the desired subfolder name
+            if entry.is_dir() and entry.name == short_subfolder_name and entry.name not in ignore_subfolders:
+                subfolder_path = os.path.join(folder_name, entry.name)
+                
+                # Check if the target file exists in the subfolder
+                if file_name in os.listdir(subfolder_path):
+                    matching_folders.append(subfolder_path)
+    
+    return matching_folders
+
+```
+
+#### Find files in all subfolders
 ```
 import os
 
