@@ -1,5 +1,5 @@
 
-### Find files in all subfolders and avoid some fubfolders
+### Find files in all subfolders and avoid some subfolders
 ```
 import os
 
