@@ -1,3 +1,6 @@
+do not use 'if len(list) == 0',   
+use 'if not list' 
+
 https://blog.codingconfessions.com/p/the-pythonic-emptiness
 
 ### Find files in all subfolders and avoid some subfolders
