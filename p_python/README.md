@@ -1,3 +1,4 @@
+https://blog.codingconfessions.com/p/the-pythonic-emptiness
 
 ### Find files in all subfolders and avoid some subfolders
 ```
