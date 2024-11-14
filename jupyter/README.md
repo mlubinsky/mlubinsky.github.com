@@ -1,3 +1,23 @@
+###  PyArrow
+https://arrow.apache.org/docs/python/index.html
+
+ PyArrow library provides pandas with its own optimized data types, which are faster and less memory-intensive than the traditional NumPy types that pandas uses by default.
+
+### Reset pandas index
+
+https://realpython.com/pandas-reset-index/
+
+https://pandas.pydata.org/docs/reference/api/pandas.Index.html#pandas-index
+```
+DataFrames are two-dimensional data structures similar to spreadsheets or database tables.
+A pandas DataFrame can be considered a set of columns, with each column being a pandas Series.
+Each column also has a heading, which is the name property of the Series,
+and each row has a label, which is referred to as an element of its associated index object.
+
+ The default index labels are a sequence of integers, but you can use strings to make them more meaningful.
+You can actually use any hashable type for your index, but integers, strings, and timestamps are the most common.
+```
+
 
 ### Filter out rows where column 'B' starts with 'abc'
 
