@@ -1,3 +1,10 @@
+### What I wish someone told me about Postgres
+
+https://challahscript.com/what_i_wish_someone_told_me_about_postgres
+
+https://news.ycombinator.com/item?id=42111896
+
+
 ### Compare schemas 
 ```
 Method 1
