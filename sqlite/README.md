@@ -46,7 +46,7 @@ https://levelup.gitconnected.com/duckdb-vs-polars-2ff19cc7af41
 ### SQLite
 https://www.youtube.com/watch?v=ZSKLA81tBis
 
-
+https://mrsuh.com/articles/2024/sqlite-index-visualization-structure/ 
 https://antonz.org/sqlite-3-44/
 
 https://antonz.org/tags/modern-sqlite/
