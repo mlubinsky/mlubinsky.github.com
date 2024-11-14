@@ -58,6 +58,8 @@ https://mccue.dev/pages/8-16-24-just-use-postgres
 
 https://spin.atomicobject.com/redis-postgresql/
 
+https://event-driven.io/en/postgres_superpowers/
+
 https://habr.com/ru/articles/843324/
 
 https://habr.com/ru/companies/otus/articles/817187/ Интеграция PostgreSQL с другими СУБД через dblink
@@ -67,6 +69,8 @@ https://postgres.ai/blog/20220525-common-db-schema-change-mistakes
 https://news.ycombinator.com/item?id=40186752
 
 https://habr.com/ru/companies/otus/articles/834314/
+
+https://www.crunchydata.com/blog/postgres-constraints-for-newbies 
 
 ```
 Фича №1: Массивы и работа с JSON
