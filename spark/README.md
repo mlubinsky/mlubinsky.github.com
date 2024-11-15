@@ -1,3 +1,24 @@
+
+1. 8 optimization techniques for DE beginners
+https://lnkd.in/geskgY8Z
+
+2. Optimization techniques every DE should know
+https://lnkd.in/gfDuHT5t
+
+3. Spark performance tuning and optimization techniques
+https://lnkd.in/g9HTQxHn
+
+4. Addressing common spark performance problems
+https://lnkd.in/gECJy9cs
+
+5. How to optimize your spark pipelines
+https://lnkd.in/g6zaZRMJ
+
+6. Performance optimization techniques in spark
+https://lnkd.in/gimv4-NJ
+
+
+
 https://www.reddit.com/r/apachespark/
 
 https://books.japila.pl/
