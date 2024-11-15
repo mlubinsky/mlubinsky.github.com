@@ -1,3 +1,5 @@
+https://www.pythonmorsels.com/inspecting-python-objects/
+
 do not use 'if len(list) == 0',   
 use 'if not list' 
 
