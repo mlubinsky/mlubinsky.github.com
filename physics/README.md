@@ -9,6 +9,8 @@ https://www.feynmanlectures.caltech.edu/
 David Tong: Lectures on Theoretical Physics
 https://www.damtp.cam.ac.uk/user/tong/teaching.html
 
+https://eduardo.physics.illinois.edu/homepage/
+
 Cambridge Notes
 https://dec41.user.srcf.net/notes/
 
