@@ -5,6 +5,11 @@ use 'if not list'
 
 https://blog.codingconfessions.com/p/the-pythonic-emptiness
 
+
+### Build python executable for easy distribution
+
+https://news.ycombinator.com/item?id=42148220
+
 ### Find files in all subfolders and avoid some subfolders
 ```
 import os
