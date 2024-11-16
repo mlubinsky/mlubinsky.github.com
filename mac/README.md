@@ -2,7 +2,7 @@
 https://ss64.com/mac/  
 https://notes.billmill.org/computer_usage/mac_os/mac_os_command_line_programs.html  
 https://terminaltrove.com/categories/macos/  
-
+https://blog.xoria.org/macos-tips/  
 https://news.ycombinator.com/item?id=42057431 
 https://news.ycombinator.com/item?id=36491704 
 
