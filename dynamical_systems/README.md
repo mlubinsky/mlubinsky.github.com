@@ -52,6 +52,8 @@ https://www.youtube.com/playlist?list=PLbN57C5Zdl6j_qJA-pARJnKsmROzPnO9V
 https://www.youtube.com/watch?v=HKsyGrp7fPg&list=PLLi3bLYwJwuMBvrTC64AaNEUJp2tcnlmb Динамические системы и бифуркации // Виктор Клепцын
 
 
+https://github.com/rudyrucker/chaos/ James Gleick's CHAOS: The Software
+
 ## Dynamic systems
 
 https://galileo-unbound.blog/2021/07/19/random-walks-with-paul-langevin-stochastic-dynamics/
