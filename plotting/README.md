@@ -44,6 +44,9 @@ https://habr.com/ru/articles/773296/  Superset
 
 https://habr.com/ru/companies/rostelecom/articles/772118/ Superset
 
+https://habr.com/ru/companies/okko/articles/859140/ Как создать дашборд в Superset:
+
+ 
 <https://github.com/shzlw/poli>
 
 <https://news.ycombinator.com/item?id=20507592> 
