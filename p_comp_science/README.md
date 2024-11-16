@@ -12,6 +12,8 @@ https://www.physport.org/curricula/Quilts/
 
 https://www.st-andrews.ac.uk/physics/quvis/
 
+https://www.reddit.com/r/Physics/comments/1gjkh30/interactive_web_simulations_of_classic_models_in/
+
 https://www.spiedigitallibrary.org/journals/optical-engineering/volume-61/issue-08/081808/Visualizing-quantum-mechanics-in-an-interactive-simulation--Virtual-Lab/10.1117/1.OE.61.8.081808.full
 
 https://www.spiedigitallibrary.org/journals/optical-engineering/volume-61/issue-08/081808/Visualizing-quantum-mechanics-in-an-interactive-simulation--Virtual-Lab/10.1117/1.OE.61.8.081808.full?SSO=1&tab=ArticleLink
