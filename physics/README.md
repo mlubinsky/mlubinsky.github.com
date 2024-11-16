@@ -12,6 +12,8 @@ https://www.damtp.cam.ac.uk/user/tong/teaching.html
 Cambridge Notes
 https://dec41.user.srcf.net/notes/
 
+https://arxiv.org/abs/2409.09211 Cambridge Lectures on The Standard Model
+
 "There is no God and Dirac is his Prophet." 
 — W. Pauli
 
