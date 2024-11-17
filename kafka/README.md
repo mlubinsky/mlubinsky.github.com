@@ -8,6 +8,8 @@ https://habr.com/ru/companies/maxilect/articles/840972/
 
 https://github.com/pmoskovi/kafka-learning-resources
 
+https://blog.det.life/kafka-has-reached-a-turning-point-649bd18b967f
+
 https://www.linkedin.com/posts/loveekumar-006_kafka-activity-7235323214782947329-D2i4
 
 https://vutr.substack.com/p/how-did-linkedin-handle-7-trillion
