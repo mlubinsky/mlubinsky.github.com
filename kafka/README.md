@@ -2,6 +2,10 @@ https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023
 
 https://www.freecodecamp.org/news/apache-kafka-handbook/
 
+https://habr.com/ru/companies/maxilect/articles/858698/
+
+https://habr.com/ru/companies/maxilect/articles/840972/
+
 https://github.com/pmoskovi/kafka-learning-resources
 
 https://www.linkedin.com/posts/loveekumar-006_kafka-activity-7235323214782947329-D2i4
