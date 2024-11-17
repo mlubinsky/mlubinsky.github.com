@@ -1,5 +1,7 @@
 https://habr.com/ru/articles/809195/ certification
 
+https://aws.plainenglish.io/i-have-asked-this-ssh-question-in-every-aws-interview-and-heres-the-catch-ee2013a83e99
+
 https://aws.amazon.com/es/blogs/training-and-certification/inside-look-at-the-new-ai-and-ml-aws-certifications/
 
 ### AWS learning
