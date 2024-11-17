@@ -19,6 +19,8 @@ https://arxiv.org/abs/2409.09211 Cambridge Lectures on The Standard Model
 "There is no God and Dirac is his Prophet." 
 — W. Pauli
 
+https://einsteinpapers.press.princeton.edu/
+
 https://www.coursera.org/learn/quantum-physics/ Galitsky
 
 https://www.doctorphys.com/theoretical/index.html
