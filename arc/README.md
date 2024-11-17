@@ -1,4 +1,6 @@
 
+https://levelup.gitconnected.com/my-favourite-software-architecture-patterns-0e57073b4be1
+
 Event driving arhitecture:
 
 https://www.reactivesystems.eu/2024/09/30/five-common-misconceptions-about-eda.html
