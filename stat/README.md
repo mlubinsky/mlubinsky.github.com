@@ -1,5 +1,7 @@
 https://mattblackwell.github.io/gov2002-book/
 
+https://medium.com/@lucassamba/3-probability-questions-i-was-asked-in-walmart-data-scientist-interview-f3cddba746d1
+
 The waiting time paradox: why is my bus always late? (2018)
 
 https://jakevdp.github.io/blog/2018/09/13/waiting-time-paradox/
