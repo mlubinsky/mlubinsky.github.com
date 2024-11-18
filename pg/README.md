@@ -6,6 +6,7 @@ https://challahscript.com/what_i_wish_someone_told_me_about_postgres
 
 https://news.ycombinator.com/item?id=42111896
 
+https://habr.com/ru/companies/Linx/articles/859460/
 
 ### Compare schemas 
 ```
