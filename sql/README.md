@@ -3,6 +3,13 @@ https://habr.com/ru/articles/843794/  ACID explained
 Regular expressions in SQL
 https://habr.com/ru/companies/otus/articles/851942/
 
+
+### NULL 
+```
+SELECT * FROM users WHERE title != 'manager' 
+```
+не вернёт строки, в которых title равен NULL, потому что NULL != 'manager' — это NULL.
+
 ### The SQL isolation levels 
 
 https://www.thenile.dev/blog/transaction-isolation-postgres
