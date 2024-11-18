@@ -5,6 +5,15 @@ use 'if not list'
 
 https://blog.codingconfessions.com/p/the-pythonic-emptiness
 
+### Zip
+
+https://realpython.com/python-zip-function/
+
+```
+Returns an iterator of tuples, where the i-th tuple contains the i-th element
+from each of the argument sequences or iterables.
+The iterator stops when the shortest input iterable is exhausted.
+```
 
 ### Build python executable for easy distribution
 
