@@ -107,7 +107,7 @@ https://www.kdnuggets.com/10-github-repositories-to-master-data-engineering
 4. DS Questions and Answers by Youssef Hosni : https://lnkd.in/gA5ihxs5
 5. Coding and ML System Design by Alireza Dirafzoon: https://lnkd.in/gXFaaaQR
 
-
+https://habr.com/ru/articles/859478/ not only transformers
 ### Vector DB 
 
 https://habr.com/ru/articles/817173/
