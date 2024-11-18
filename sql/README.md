@@ -232,7 +232,7 @@ FROM (
 WHERE rnk=1;
 ```
 
-### Filtering with not exists and noit in
+### Filtering with NOT EXISTS and NOT IN
 ```
 SELECT s.name FROM students s
 WHERE NOT EXISTS (
