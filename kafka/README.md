@@ -6,6 +6,8 @@ https://www.manning.com/books/kafka-streams-in-action-second-edition
 
 https://medium.com/confluent/mastering-stream-processing-testing-flink-sql-windowed-applications-ce6e22412879
 
+https://blog.devgenius.io/kafka-streams-how-to-calculate-moving-average-for-stock-price-data-stream-in-real-time-9429617d5108
+
 https://www.freecodecamp.org/news/apache-kafka-handbook/
 
 https://docs.google.com/presentation/d/11YgRsOTtJDzLA5FBsJ4fhx_t_PgTUwNWUvZgx7ZMpO4/edit#slide=id.g2489f38efa9_0_74
