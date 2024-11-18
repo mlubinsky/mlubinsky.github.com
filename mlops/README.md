@@ -1,5 +1,7 @@
 https://www.youtube.com/playlist?list=PLfFghEzKVmjttkxVtVIvNZRuoSUuWtsFN  Deploying ML
 
+https://seattledataguy.substack.com/p/the-state-of-data-engineering-part-b61
+
 https://github.com/graviraja/MLOps-Basics
 
 https://www.evidentlyai.com/ml-system-design
