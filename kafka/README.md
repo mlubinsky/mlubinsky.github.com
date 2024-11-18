@@ -4,6 +4,8 @@ https://www.linkedin.com/pulse/windowing-event-streams-bill-bejeck-jruye/
 
 https://www.manning.com/books/kafka-streams-in-action-second-edition
 
+https://medium.com/confluent/mastering-stream-processing-testing-flink-sql-windowed-applications-ce6e22412879
+
 https://www.freecodecamp.org/news/apache-kafka-handbook/
 
 https://habr.com/ru/companies/maxilect/articles/858698/
