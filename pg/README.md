@@ -1,5 +1,7 @@
 ### What I wish someone told me about Postgres
 
+https://habr.com/ru/companies/ruvds/articles/859422/
+
 https://challahscript.com/what_i_wish_someone_told_me_about_postgres
 
 https://news.ycombinator.com/item?id=42111896
