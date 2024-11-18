@@ -1,5 +1,9 @@
 https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023
 
+https://www.linkedin.com/pulse/windowing-event-streams-bill-bejeck-jruye/
+
+https://www.manning.com/books/kafka-streams-in-action-second-edition
+
 https://www.freecodecamp.org/news/apache-kafka-handbook/
 
 https://habr.com/ru/companies/maxilect/articles/858698/
