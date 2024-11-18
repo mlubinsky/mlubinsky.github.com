@@ -8,6 +8,8 @@ https://medium.com/confluent/mastering-stream-processing-testing-flink-sql-windo
 
 https://www.freecodecamp.org/news/apache-kafka-handbook/
 
+https://docs.google.com/presentation/d/11YgRsOTtJDzLA5FBsJ4fhx_t_PgTUwNWUvZgx7ZMpO4/edit#slide=id.g2489f38efa9_0_74
+
 https://habr.com/ru/companies/maxilect/articles/858698/
 
 https://habr.com/ru/companies/maxilect/articles/840972/
