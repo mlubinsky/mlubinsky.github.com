@@ -259,6 +259,9 @@ https://blog.devgenius.io/sql-practice-questions-5-456cfb41757a
 
 https://medium.com/towards-data-engineering/most-asked-complex-sql-queries-in-data-engineering-interviews-9fde381d23f8
 
+###  Древовидные структуры в SQL
+https://www.slideshare.net/slideshow/models-for-hierarchical-data/4179181#18
+
 https://www.databasestar.com/hierarchical-data-sql/
 
 https://habr.com/ru/articles/812601/ Древовидные структуры в SQL
