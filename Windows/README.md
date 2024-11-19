@@ -1,3 +1,8 @@
+
+ rg "search_string" --type-add "bat:*.bat" --type bat --max-depth 1
+
+ 
+ 
  %* in batch file means:  all command line arguments
 
 Accessing env variables:
