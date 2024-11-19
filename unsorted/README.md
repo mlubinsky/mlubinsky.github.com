@@ -97,6 +97,46 @@ Combining some of these methods can give you a highly organized, uncluttered bro
 - Tab Space 
 
 
+```
+To insert the output of the DESCRIBE table command from a Databricks notebook into a Confluence page as a table, follow these steps:
+
+1. Export the Output as a Table
+   If Output is Small:
+       Copy the table directly from the Databricks notebook output.
+
+   If Output is Large:
+      Use the following command to save it as a CSV file:
+         df = spark.sql("DESCRIBE table_name")
+         df.toPandas().to_csv("describe_output.csv", index=False)
+
+      Download the describe_output.csv file and open it in a spreadsheet application like Excel.
+
+2. Format the Table for Confluence
+
+If Pasting Directly:
+   Paste the copied content into Confluence while editing the page.
+   Select the content and click Insert Table in the toolbar to format it into a Confluence table.
+
+If Using CSV or Excel:
+   Open the describe_output.csv file in Excel.
+   Copy the table content.
+
+In Confluence:
+  Click on the Table button in the toolbar (or type /table).
+  Paste the content into the table, ensuring proper alignment.
+
+3. Insert the Table into Confluence
+
+Save and publish the Confluence page after adding the table.
+Example Confluence Table:
+col_name	data_type	comment
+id	int	Primary key column
+name	string	Name of the entity
+created_at	timestamp	Creation timestamp
+This approach creates a clean and well-formatted table in Confluence based on the DESCRIBE table output.
+
+```
+
  ### LLM code assistent
 https://lmstudio.ai/
 
