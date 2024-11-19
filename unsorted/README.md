@@ -71,10 +71,13 @@ Right-click on the bookmarks bar and choose “Add folder.”
 Drag your favorite or frequently used tabs into these folders for easy access, without cluttering your tab bar.
 
 5. Vertical Tab Managers
-Extensions like Tree Style Tab (for Chrome) display your tabs in a vertical sidebar, which can make it easier to manage a large number of tabs. It’s particularly helpful if you’re using a widescreen monitor.
+Extensions like Tree Style Tab (for Chrome) display your tabs in a vertical sidebar,
+which can make it easier to manage a large number of tabs. It’s particularly helpful if you’re using a widescreen monitor.
 
 6. Using Profiles
-If you work on multiple projects or contexts, create multiple Chrome profiles (Settings > Manage People). Each profile has its own set of tabs, bookmarks, and extensions, so you can switch between them without cluttering a single browser window.
+If you work on multiple projects or contexts, create multiple Chrome profiles (Settings > Manage People).
+Each profile has its own set of tabs, bookmarks, and extensions,
+so you can switch between them without cluttering a single browser window.
 
 Combining some of these methods can give you a highly organized, uncluttered browsing experience in Chrome!
 
@@ -82,7 +85,7 @@ Combining some of these methods can give you a highly organized, uncluttered bro
 
 
 #### Safari Tab managers:
-
+```
 - Safari's Built-in Tab Groups: If you’re on macOS Monterey or later, Safari has built-in tab groups.  
   You can save groups of tabs by project or topic and easily switch between them,  
   making this feature quite powerful for casual tab management.
@@ -95,11 +98,10 @@ Combining some of these methods can give you a highly organized, uncluttered bro
 - Tab Manager Plus
 - Safari Tab Switcher
 - Tab Space 
-
-
 ```
-To insert the output of the DESCRIBE table command from a Databricks notebook into a Confluence page as a table, follow these steps:
 
+### How To insert the output of the DESCRIBE table command from a Databricks notebook into a Confluence page as a table, 
+```
 1. Export the Output as a Table
    If Output is Small:
        Copy the table directly from the Databricks notebook output.
@@ -121,18 +123,21 @@ If Using CSV or Excel:
    Open the describe_output.csv file in Excel.
    Copy the table content.
 
-In Confluence:
-  Click on the Table button in the toolbar (or type /table).
-  Paste the content into the table, ensuring proper alignment.
+   In Confluence:
+       Click on the Table button in the toolbar (or type /table).
+       Paste the content into the table, ensuring proper alignment.
 
 3. Insert the Table into Confluence
 
 Save and publish the Confluence page after adding the table.
+
 Example Confluence Table:
-col_name	data_type	comment
-id	int	Primary key column
-name	string	Name of the entity
-created_at	timestamp	Creation timestamp
+
+    col_name	data_type	comment
+    id	int	Primary key column
+    name	string	Name of the entity
+    created_at	timestamp	Creation timestamp
+
 This approach creates a clean and well-formatted table in Confluence based on the DESCRIBE table output.
 
 ```
