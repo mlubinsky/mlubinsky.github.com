@@ -16,6 +16,35 @@ https://habr.com/ru/articles/750380/
 
 https://habr.com/ru/articles/761426/
 
+### Чириков "критерий перекрытия резонансов"
+
+https://www.quantware.ups-tlse.fr/chirikov/
+
+https://ikfia.ysn.ru/wp-content/uploads/2018/01/Zaslavskij1984ru.pdf
+
+https://www.mathnet.ru/links/9ced1539c756ad2f1a9117f4eedf5ee7/nd40.pdf
+
+https://urss.ru/cgi-bin/db.pl?lang=Ru&blang=ru&page=Book&id=118708
+
+https://urss.ru/cgi-bin/db.pl?lang=Ru&blang=ru&page=Book&id=16138
+
+http://booksshare.net/index.php?id1=4&category=physics&author=holodniok-m&book=1991
+
+https://www.researchgate.net/profile/Rr-Mukhin/publication/268999111_Chaos_and_nonintegrability_in_Hamiltonian_systems/links/5b1ac132aca272021cf34dc4/Chaos-and-nonintegrability-in-Hamiltonian-systems.pdf
+
+https://www.quantware.ups-tlse.fr/chirikov/aboutchirikov/tlse1998ru.pdf
+
+https://www.quantware.ups-tlse.fr/chirikov/reminis/shuryak2010.pdf
+
+https://inis.iaea.org/collection/NCLCollectionStore/_Public/20/019/20019789.pdf
+
+https://www.mathnet.ru/links/555b7d0555751468ab2d45375eca6afe/dan47841.pdf
+
+https://www.inp.nsk.su/~dep_plasma/sk/dgtp/part1.pdf  ДОПОЛНИТЕЛЬНЫЕ ГЛАВЫ ТЕОРИИ ПЛАЗМЫ
+
+https://journals.ioffe.ru/articles/viewPDF/8247 Хаотический слой маятника при низких и средних частотах
+возмущений
+
 ### Steven H.Strogatz
 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering 
 https://www.amazon.com/Nonlinear-Dynamics-Chaos-Applications-Nonlinearity-ebook-dp-B07BMB5P15/dp/B07BMB5P15
