@@ -6,6 +6,8 @@ https://topocondmat.org/ Online course on topology in condensed matter
 
 https://www.aps.org/apsnews/2024/11/mathematical-intuition-dirac-quantum-mechanics Dirac equation
 
+https://iopscience.iop.org/article/10.1088/2058-7058/15/9/22   Most beatiful experiment in physics (double-slit)
+
 https://www.feynmanlectures.caltech.edu/
 
 David Tong: Lectures on Theoretical Physics
