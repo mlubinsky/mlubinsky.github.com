@@ -20,6 +20,8 @@ https://twirl.github.io/The-API-Book/index.ru.html
 
 https://www.amazon.com/gp/product/B09RHH44S5/
 
+https://habr.com/ru/companies/ozontech/articles/859936/ REST vs gRPC
+
 ### DATA SHARDING
 
 https://habr.com/ru/articles/807931/
