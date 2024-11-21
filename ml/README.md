@@ -332,6 +332,12 @@ https://www.youtube.com/watch?v=IIvfqfKkiio
 
 PCA https://news.ycombinator.com/item?id=30876293
 
+### UMAP
+
+https://github.com/kmkolasinski/nano-umap
+
+https://www.reddit.com/r/MachineLearning/comments/1gsjfq9/p_analysis_of_why_umap_is_so_fast/
+
 https://habr.com/ru/articles/811437/ отличия PCA от UMAP и t-SNE
 
 ### Automatic differentiation JAX
