@@ -23,6 +23,7 @@ https://www.reddit.com/r/Python/comments/1fexk8e/which_python_libraries_would_be
 
 https://habr.com/ru/articles/854414/  Chronos от Amazon
 
+https://habr.com/ru/companies/skillfactory/articles/860660/ Анализ временных рядов: полное руководство для начинающих
 
 https://www.youtube.com/watch?v=vQ3ATVwx6Mo AIOps — обнаружение аномалий в логах и метриках 
 
