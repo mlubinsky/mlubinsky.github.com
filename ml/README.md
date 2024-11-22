@@ -81,6 +81,30 @@ https://habr.com/ru/companies/alfa/articles/821447/
 
 ### Links - become a Machine Learning Engineer: 👇
 
+All the FREE Stanford University Machine Learning Lectures 👇
+
+Learn about Probability, NLP, LLMs, Transformers, and more ...
+
+1. Probability for Computer Scientists - https://lnkd.in/e6sCyZGj
+
+2. Machine Learning Full Course taught by Andrew Ng - https://lnkd.in/eWs74qyR
+
+3. NLP with Deep Learning - https://lnkd.in/eazqcvmk
+
+4. Machine Learning Explainability - https://lnkd.in/evimZ5Za
+
+5. Reinforcement Learning - https://lnkd.in/eEf5PETJ
+
+6. Deep Generative Models - https://lnkd.in/euZ2e3xU
+
+7. Building Large Language Models (LLMs) - https://lnkd.in/eVUkaJuF
+
+8. Machine Learning with Graphs - https://lnkd.in/eF_d3iwq
+
+9. Transformers United - https://lnkd.in/eXdGBqQq
+
+👉 Get free resources, curated articles, and expert tips on Data and AI: https://lnkd.in/e7EunZck
+
 https://www.kdnuggets.com/10-github-repositories-to-master-data-engineering
 
 1. Airbnb AI & Machine Learning - https://lnkd.in/gzAXfQg5
