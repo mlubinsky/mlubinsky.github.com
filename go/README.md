@@ -1,6 +1,8 @@
 https://100go.co/
 https://jvns.ca/blog/2024/08/06/go-structs-copied-on-assignment/
 
+https://github.com/grishy/gopkgview 
+
 Best book: Learning Go: An Idiomatic Approach to Real-world Go Programming 2nd Edition
 by Jon Bodner 
 https://www.amazon.com/_/dp/1098139291
