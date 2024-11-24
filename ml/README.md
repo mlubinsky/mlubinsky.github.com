@@ -1,5 +1,9 @@
 https://parlance-labs.com/education/
 
+https://www.reddit.com/r/MachineLearning/comments/1gwbhxq/d_next_big_thing_in_time_series/
+
+https://github.com/thuml/Time-Series-Library
+
 https://sites.google.com/view/datascience-cheat-sheets
 
 Book: https://mml-book.github.io/
