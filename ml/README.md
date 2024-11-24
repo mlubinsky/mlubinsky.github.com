@@ -4,6 +4,8 @@ https://www.reddit.com/r/MachineLearning/comments/1gwbhxq/d_next_big_thing_in_ti
 
 https://github.com/thuml/Time-Series-Library
 
+https://www.reddit.com/r/MachineLearning/comments/1gujfj2/d_whats_the_most_surprising_or_counterintuitive/
+
 https://sites.google.com/view/datascience-cheat-sheets
 
 Book: https://mml-book.github.io/
