@@ -1,6 +1,9 @@
 BOOK
 https://www.amazon.com/Time-Series-Forecasting-in-Python/dp/B0C3WSDLJL/
 
+https://www.reddit.com/r/MachineLearning/comments/1gwbhxq/d_next_big_thing_in_time_series/
+
+https://github.com/thuml/Time-Series-Library
 
 https://habr.com/ru/articles/855446/
 
