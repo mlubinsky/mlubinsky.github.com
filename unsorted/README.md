@@ -188,7 +188,7 @@ https://hypermedia.systems/
 
 ### GetPocket
 
- getpocket.com.  
+ getpocket.com   mlu..@hotmail..
  User : vantive98
 
 ### The Base16, Base32, and Base64 Data Encodings
