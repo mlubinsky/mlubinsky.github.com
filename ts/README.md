@@ -20,6 +20,7 @@ https://sysidentpy.org/
 
 https://www.reddit.com/r/Python/comments/1fexk8e/which_python_libraries_would_be_most_suitable_for/
 
+https://news.ycombinator.com/item?id=42222431
 
 https://habr.com/ru/articles/854414/  Chronos от Amazon
 
