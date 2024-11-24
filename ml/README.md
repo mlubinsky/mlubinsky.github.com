@@ -1,5 +1,7 @@
 https://parlance-labs.com/education/
 
+https://sites.google.com/view/datascience-cheat-sheets
+
 Book: https://mml-book.github.io/
 
 https://www.kdnuggets.com/7-free-cloud-ide-for-data-science-that-you-are-missing-out
