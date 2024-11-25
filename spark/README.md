@@ -1,5 +1,7 @@
 https://medium.com/@suffyan.asad1/beginners-guide-to-spark-ui-how-to-monitor-and-analyze-spark-jobs-b2ada58a85f7
 
+https://medium.com/@pradoshkumar.jena/understanding-apache-spark-memory-management-in-local-mode-a-deep-dive-with-pyspark-70649b3ddde0
+
 
 1. 8 optimization techniques for DE beginners
 https://lnkd.in/geskgY8Z
