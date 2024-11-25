@@ -1,3 +1,5 @@
+https://medium.com/@suffyan.asad1/beginners-guide-to-spark-ui-how-to-monitor-and-analyze-spark-jobs-b2ada58a85f7
+
 
 1. 8 optimization techniques for DE beginners
 https://lnkd.in/geskgY8Z
