@@ -10,6 +10,7 @@ https://habr.com/ru/articles/764582/ Kafka + Go
 
 https://dev.to/miguelaeh/handling-computer-vision-events-in-real-time-with-python-kafka-and-pipeless-4pno 
 
+https://dev.to/renukapatil/mastering-apache-kafka-a-complete-guide-to-the-heart-of-real-time-data-streaming-3456
 
 https://www.linkedin.com/posts/loveekumar-006_kafka-activity-7235323214782947329-D2i4 
 
