@@ -21,6 +21,8 @@ https://stumpy.readthedocs.io/
 
 https://sysidentpy.org/ 
 
+https://medium.com/@suffyan.asad1/spark-leveraging-window-functions-for-time-series-analysis-in-pyspark-03aa735f1bdf
+
 https://www.reddit.com/r/Python/comments/1fexk8e/which_python_libraries_would_be_most_suitable_for/
 
 https://news.ycombinator.com/item?id=42222431
