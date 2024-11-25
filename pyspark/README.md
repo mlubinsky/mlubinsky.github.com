@@ -1,3 +1,5 @@
+https://medium.com/@suffyan.asad1/introduction-to-aggregate-and-transform-functions-in-apache-spark-cfbdb0c57aa8
+
 ## DROP NESTED COLUMNS
 ```
 from pyspark.sql.functions import col
