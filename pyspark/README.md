@@ -1,5 +1,7 @@
 https://medium.com/@suffyan.asad1/introduction-to-aggregate-and-transform-functions-in-apache-spark-cfbdb0c57aa8
 
+https://medium.com/@suffyan.asad1/spark-leveraging-window-functions-for-time-series-analysis-in-pyspark-03aa735f1bdf
+
 ## DROP NESTED COLUMNS
 ```
 from pyspark.sql.functions import col
