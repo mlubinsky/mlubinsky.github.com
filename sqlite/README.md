@@ -148,6 +148,8 @@ https://sqlitebrowser.org/
 
 https://github.com/sqlitebrowser/sqlitebrowser
 
+https://sqlitestudio.pl/
+
 https://github.com/little-brother/sqlite-gui
 
 https://lobste.rs/s/k9hzrj/db_browser_for_sqlite
