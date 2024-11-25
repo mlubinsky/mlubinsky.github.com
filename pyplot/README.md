@@ -2499,6 +2499,9 @@ https://medium.com/@kbrook10/day-4-data-visualization-how-to-use-seaborn-for-hea
 
 ### Heatmaps in plotnine
 
+
+https://www.youtube.com/watch?v=tmw_aF1rRuQ  plotnine
+
 https://plotnine.readthedocs.io/en/stable/generated/plotnine.geoms.geom_tile.html
 
 https://plotnine.readthedocs.io/en/stable/generated/plotnine.geoms.geom_bin2d.html
