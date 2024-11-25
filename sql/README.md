@@ -1,4 +1,4 @@
-https://habr.com/ru/articles/843794/  ACID explained
+
 
 Regular expressions in SQL
 https://habr.com/ru/companies/otus/articles/851942/
@@ -12,6 +12,8 @@ SELECT * FROM users WHERE title != 'manager'
 
 
 ### ACID
+
+https://habr.com/ru/articles/843794/   
 https://habr.com/ru/articles/860982/
 ```
 1. Атомарность (atomicity). Транзакция фиксируется либо полностью, либо ни одна ее часть не фиксируется
