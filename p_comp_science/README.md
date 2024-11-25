@@ -2,6 +2,8 @@ https://mpmath.org/ Python math library
 
 https://nanohub.org/
 
+https://scicomp.stackexchange.com/questions/1207/on-finding-open-source-projects-to-contribute-to
+
 https://sourceforge.net/directory/physics/mac/
 
 https://github.com/wbierbower/awesome-physics
