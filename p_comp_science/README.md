@@ -2,6 +2,8 @@ https://mpmath.org/ Python math library
 
 https://nanohub.org/
 
+https://github.com/wbierbower/awesome-physics
+
 https://www.quatomic.com/composer/
 
 https://kthpanor.github.io/cb2070/docs/intro.html
