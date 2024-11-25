@@ -2,6 +2,8 @@ https://mpmath.org/ Python math library
 
 https://nanohub.org/
 
+https://sourceforge.net/directory/physics/mac/
+
 https://github.com/wbierbower/awesome-physics
 
 https://www.quatomic.com/composer/
