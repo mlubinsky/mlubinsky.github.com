@@ -1517,10 +1517,21 @@ over ntile_window as thirds, ntile(4) over ntile_window as quart
 from cats window ntile_window AS ( ORDER BY weight)
 ```
 
+### Visidata
 
+VisiData can read sqlite:  
+
+    vd test.sqlite3
+    
 ### SQL UI client tools
 
+https://dbgate.org/
+
+https://www.dbcli.com/
+
 https://datastation.multiprocess.io/docs/installation.html
+
+HeidiSQL 
 
 https://news.ycombinator.com/item?id=28489165
 
