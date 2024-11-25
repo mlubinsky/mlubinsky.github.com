@@ -2656,9 +2656,11 @@ ndarray_of_numbers = np.array(list_of_numbers)
 %timeit np.sum(ndarray_of_numbers)
 ```
 
-### Others
+### Python 3rd party libraries
 
 https://www.reddit.com/r/Python/comments/1egg99j/what_are_some_unusual_but_useful_python_libraries/
+
+https://simulation.teachem.digital/free-simulation-in-python-guide
 
 ### Billion rows challange
 https://levelup.gitconnected.com/python-libraries-take-the-billion-row-challenge-7c108611a9ad
