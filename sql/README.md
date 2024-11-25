@@ -1215,6 +1215,8 @@ HAVING COUNT(person_id) >1
 
 ## Hierarhy and  Recursive SQL
 
+https://news.ycombinator.com/item?id=42230384
+
 https://www.ibase.ru/treedb/
 
 https://habr.com/ru/articles/812601/ Древовидные структуры в SQL 
