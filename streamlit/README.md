@@ -26,6 +26,8 @@ https://github.com/widgetti/solara
 
 https://solara.dev/
 
+https://www.youtube.com/watch?v=c0EaM17J78o
+
 ### LiteStar
 
 https://betterprogramming.pub/introducing-litestar-a-new-python-web-framework-part-2-0bf2564f9f07
