@@ -2,6 +2,8 @@ https://nononsensebooks.com/
 
 https://jakobschwichtenberg.com/
 
+https://theoreticalminimum.com/references   Leonard Susskind
+
 https://techlibrary.ru/
 
 https://eqworld.ipmnet.ru/ru/library.htm
