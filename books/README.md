@@ -1,3 +1,7 @@
+https://nononsensebooks.com/
+
+https://jakobschwichtenberg.com/
+
 https://techlibrary.ru/
 
 https://eqworld.ipmnet.ru/ru/library.htm
