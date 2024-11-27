@@ -1,4 +1,4 @@
-### Marimoto
+### Marimo
 
 https://github.com/marimo-team/marimo
 
