@@ -8,6 +8,11 @@ https://news.ycombinator.com/item?id=42111896
 
 https://habr.com/ru/companies/Linx/articles/859460/
 
+### Dynamic SQL
+
+https://habr.com/ru/companies/otus/articles/861240/
+
+
 ### Compare schemas 
 ```
 Method 1
