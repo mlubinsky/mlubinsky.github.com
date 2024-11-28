@@ -19,6 +19,42 @@ Switching to {{ 𝗱𝗮𝘁𝗮_𝗶𝗻𝘁𝗲𝗿𝘃𝗮𝗹_𝗲𝗻𝗱 |
 
 ```
 
+### Trigger rules
+
+https://habr.com/ru/companies/dbraincloud/articles/861842/
+
+https://airflow.apache.org/docs/apache-airflow/1.10.9/concepts.html#trigger-rules
+
+```
+В стандартных настройках Airflow при прерывании одной из задач работа DAG полностью останавливается,
+но эту последовательность можно перенастроить с помощью тега Trigger Rule.
+
+Как это выглядит в коде:
+
+@task.virtualenv(task_id='delete_rbd', trigger_rule=TriggerRule.ALWAYS, requirements=["requests==2.32.3"])
+
+Примеры других значений Trigger Rule для определения последовательности выполнения task:
+
+all_success : (default) all parents have succeeded
+
+all_failed : all parents are in a failed or upstream_failed state
+
+all_done : all parents are done with their execution
+
+one_failed : fires as soon as at least one parent has failed,
+             it does not wait for all parents to be done
+
+one_success : fires as soon as at least one parent succeeds,
+              it does not wait for all parents to be done
+
+none_failed : all parents have not failed (failed or upstream_failed)
+              i.e. all parents have succeeded or been skipped
+
+none_skipped : no parent is in a skipped state,
+                i.e. all parents are in a success , failed , or upstream_failed state
+
+dummy : dependencies are just for show, trigger at will
+```
 
 https://www.waitingforcode.com/apache-airflow
 
