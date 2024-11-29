@@ -136,11 +136,13 @@ https://www.lunarvim.org/01-installing.html
 
 <https://codefaster.substack.com/p/look-ma-no-mouse-vimium>
 
-##  Latex  MathJax
+##  Latex  MathJax Typst
 
 https://www.youtube.com/watch?v=u9tqwIzRZ8I Latex
 
+https://www.reddit.com/r/math/comments/1go0knl/looking_for_good_math_typing_software/
 
+https://typst.app/docs/guides/guide-for-latex-users/
 
 ### Lyx https://www.lyx.org/
 
