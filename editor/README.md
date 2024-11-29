@@ -138,6 +138,8 @@ https://www.lunarvim.org/01-installing.html
 
 ##  Latex  MathJax Typst
 
+https://www.texifier.com/mac
+
 https://www.youtube.com/watch?v=u9tqwIzRZ8I Latex
 
 https://www.reddit.com/r/math/comments/1go0knl/looking_for_good_math_typing_software/
