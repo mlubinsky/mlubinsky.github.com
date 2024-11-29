@@ -14,6 +14,8 @@ https://kthpanor.github.io/cb2070/docs/intro.html
 
 https://www.quantum-espresso.org
 
+https://sourceforge.net/directory/physics/
+
 https://www.sandia.gov/ccr/ccr-software/
 
 https://www.physport.org/curricula/Quilts/
