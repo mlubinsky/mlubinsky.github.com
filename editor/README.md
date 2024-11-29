@@ -140,7 +140,11 @@ https://www.lunarvim.org/01-installing.html
 
 https://www.youtube.com/watch?v=u9tqwIzRZ8I Latex
 
-Lyx
+
+
+### Lyx https://www.lyx.org/
+
+LyX combines the power and flexibility of TeX/LaTeX with the ease of use of a graphical interface. 
 
 https://latex-cookbook.net/
 
@@ -161,6 +165,18 @@ https://www.texstudio.org/
 https://www.youtube.com/watch?v=331YxgOJUGw
 
 https://medium.com/@mathcube7
+
+TexMacs https://www.texmacs.org/tmweb/home/welcome.en.html
+```
+GNU TeXmacs is a free scientific editing platform designed to create beautiful technical documents using a wysiwyg interface.
+
+It provides a unified and user friendly framework for editing structured documents with different types of content: text, mathematics, graphics, interactive content, slides, etc.
+
+TeXmacs can be used as a graphical front-end for many systems in computer algebra, numerical analysis, statistics, etc.
+```
+
+
+https://www.texmacs.org/tmweb/home/welcome.en.html
 
 
 ## Julia + Pluto
