@@ -8,6 +8,10 @@ https://techlibrary.ru/
 
 https://eqworld.ipmnet.ru/ru/library.htm
 
+### Get it:
+
+http://103.203.175.90:81/fdScript/RootOfEBooks/
+
 https://drive.google.com/drive/folders/1jkFnVo72R81BS5LZmVS1JAzmfw1QpJA6
 
 # download physics books
