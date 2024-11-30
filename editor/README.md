@@ -146,6 +146,10 @@ https://www.reddit.com/r/math/comments/1go0knl/looking_for_good_math_typing_soft
 
 https://typst.app/docs/guides/guide-for-latex-users/
 
+https://github.com/typst/typst
+
+https://imaginarytext.ca/posts/2024/pandoc-typst-tutorial/
+
 ### Lyx https://www.lyx.org/
 
 LyX combines the power and flexibility of TeX/LaTeX with the ease of use of a graphical interface. 
