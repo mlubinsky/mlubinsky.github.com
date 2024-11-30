@@ -372,6 +372,8 @@ https://www.crosstab.io/articles/survival-analysis-applications
 
 ### Z-score
 
+https://www.codingthepast.com/2024/11/28/Python-z-score.html
+
 https://habr.com/ru/companies/otus/articles/793678/
 
 https://statisticsbyjim.com/basics/z-score
