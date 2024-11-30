@@ -1,3 +1,6 @@
+https://encore.dev/blog/queueing
+
+
 https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023
 
 https://www.linkedin.com/pulse/windowing-event-streams-bill-bejeck-jruye/
