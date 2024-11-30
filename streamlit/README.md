@@ -1,6 +1,8 @@
 
 
 https://metaperl.github.io/pure-python-web-development/class-a.html
+### Taipy
+https://www.youtube.com/watch?v=4F-266YnTkM
 
 https://nicegui.io/
 
@@ -62,6 +64,9 @@ https://explainerdashboard.readthedocs.io/en/latest/#
 https://github.com/oegedijk/explainerdashboard
 
 https://towardsdatascience.com/build-dashboards-in-less-than-10-lines-of-code-835e9abeae4b
+
+### Taipy
+https://www.youtube.com/watch?v=4F-266YnTkM
 
 ## StreamIt
 
