@@ -1,5 +1,9 @@
 https://mpmath.org/ Python math library
 
+https://qham.readthedocs.io/en/latest/introduction.html
+
+https://docs.einsteinpy.org/en/latest/index.html
+
 https://apmonitor.com/pdc/index.php/Main/ModelSimulation
 
 https://www.youtube.com/watch?v=8kx6vC9gTLo
