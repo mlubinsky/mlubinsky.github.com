@@ -4,6 +4,8 @@ https://apmonitor.com/pdc/index.php/Main/ModelSimulation
 
 https://www.youtube.com/watch?v=8kx6vC9gTLo
 
+https://dynpy.readthedocs.io/
+
 https://nanohub.org/
 
 https://scicomp.stackexchange.com/questions/1207/on-finding-open-source-projects-to-contribute-to
