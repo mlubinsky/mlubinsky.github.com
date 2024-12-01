@@ -10,6 +10,8 @@ https://habr.com/ru/companies/Linx/articles/859460/
 
 https://philbooth.me/blog/nine-ways-to-shoot-yourself-in-the-foot-with-postgresql
 
+https://notso.boringsql.com/
+
 ### Dynamic SQL
 
 https://habr.com/ru/companies/otus/articles/861240/
