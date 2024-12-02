@@ -1,5 +1,7 @@
 https://mpmath.org/ Python math library
 
+https://pysd.readthedocs.io/en/master/
+
 https://qham.readthedocs.io/en/latest/introduction.html
 
 https://docs.einsteinpy.org/en/latest/index.html
