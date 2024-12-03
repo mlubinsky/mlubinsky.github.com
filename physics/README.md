@@ -1,5 +1,7 @@
 ![look](Romain_Langlois_FTT.jpeg)
 
+https://www.theoretical-physics.com/dev/index.html
+
 https://vk.com/quantpublic
 
 https://libguides.wpi.edu/oer/physics
