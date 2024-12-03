@@ -2,6 +2,8 @@
 
 https://www.theoretical-physics.com/dev/index.html
 
+https://github.com/certik/theoretical-physics
+
 https://vk.com/quantpublic
 
 https://libguides.wpi.edu/oer/physics
