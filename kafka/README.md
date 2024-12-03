@@ -9,6 +9,9 @@ https://www.manning.com/books/kafka-streams-in-action-second-edition
 
 https://medium.com/confluent/mastering-stream-processing-testing-flink-sql-windowed-applications-ce6e22412879
 
+### Kafka Stream
+https://habr.com/ru/articles/862976/
+
 https://blog.devgenius.io/kafka-streams-how-to-calculate-moving-average-for-stock-price-data-stream-in-real-time-9429617d5108
 
 https://www.freecodecamp.org/news/apache-kafka-handbook/
