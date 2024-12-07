@@ -49,13 +49,21 @@ source ~/VENV/1st_env/bin/activate
 export PATH="/opt/homebrew/opt/git/bin:$PATH"
 ```
 
+### Just, Task, a Makefile alternative
+https://news.ycombinator.com/item?id=30137254
+https://just.systems   
+https://taskfile.dev  
+https://news.ycombinator.com/item?id=42351101
+
+
 https://github.com/onceupon/Bash-Oneliner
 
 https://www.youtube.com/watch?v=mmqDYw9C30I
 
 https://github.com/johnalanwoods/maintained-modern-unix
 
--  task, a Makefile alternative
+
+  
 - hyperfine, a benchmark tool
 - vegeta, a load testing tool
 - sd, a better, more intuitive sed
