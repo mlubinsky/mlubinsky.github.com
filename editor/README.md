@@ -1,5 +1,7 @@
 https://penrose.ink/siggraph20.html   Math visualization
 
+https://www.stempad.com/ math notes
+
 https://jupyterbook.org/
 
 https://quarto.org/  open-source scientific and technical publishing system
