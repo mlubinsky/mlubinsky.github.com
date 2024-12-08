@@ -18,7 +18,11 @@ https://apps.apple.com/us/app/amphetamine/id937984704
 
 caffeinate -disu
 
+### keyboard shortcats
 
+https://shortcat.app/
+
+https://www.homerow.app/
 
 
 $ sw_vers
