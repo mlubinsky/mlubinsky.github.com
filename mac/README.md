@@ -20,6 +20,8 @@ caffeinate -disu
 
 ### keyboard shortcats
 
+Chrome has tab search. In MacOS: Shift+Cmd+A
+
 https://shortcat.app/
 
 https://www.homerow.app/
