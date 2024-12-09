@@ -107,6 +107,8 @@ https://chatuml.com/
 
 ### PlantUML
 
+https://habr.com/ru/articles/865140/
+
 https://habr.com/ru/articles/860952/
 
 https://habr.com/ru/companies/X5Tech/articles/821687/
