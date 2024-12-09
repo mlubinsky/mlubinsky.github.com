@@ -1,3 +1,5 @@
+https://www.linkedin.com/my-items/saved-posts/
+
 https://lobste.rs/s/rrs30d/any_interesting_tech_blogs_outside_usual
 
 https://danluu.com/programming-blogs/
