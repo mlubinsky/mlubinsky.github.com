@@ -1,5 +1,6 @@
 https://encore.dev/blog/queueing
 
+https://habr.com/ru/articles/865120/  Kafka visualization
 
 https://levelup.gitconnected.com/message-queues-in-system-design-0440a1221023
 
