@@ -63,6 +63,8 @@ https://www.youtube.com/watch?v=mmqDYw9C30I
 https://github.com/johnalanwoods/maintained-modern-unix
 
 https://lobste.rs/s/xyvwux/what_are_your_favorite_non_standard_cli
+
+https://github.com/sixarm/cargo-install-favorites
   
 - hyperfine, a benchmark tool
 - vegeta, a load testing tool
