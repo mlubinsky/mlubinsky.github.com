@@ -1,3 +1,9 @@
+https://www.youtube.com/watch?v=J1wze8tUvw0
+
+создание шаблонных DAG на основе конфигурационных и коллективных файлов для повышения эффективности работы с AirFlow.  
+
+значение генерации автоматических сущностей AirFlow и создания событийных пайплайнов AirFlow.  
+
 ```
 If you are using Apache Airflow, avoid the common mistake of using {{ 𝗺𝗮𝗰𝗿𝗼𝘀.𝗱𝘀_𝗮𝗱𝗱(𝗱𝘀, 𝟭) }} in your DAGs! ❌
 
