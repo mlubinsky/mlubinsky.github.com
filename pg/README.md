@@ -374,6 +374,10 @@ select * from (values \
 особенно когда значения в таблице расположены в определенном порядке;
 эффективны для хранения и обработки временных рядов и географических данных). 
 ```
+
+### BRIN index
+https://habr.com/ru/companies/otus/articles/864896/
+
 ### SQL question
  
 The content of  column A is the comma-separated numbers.
