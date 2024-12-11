@@ -6,6 +6,8 @@ https://www.freecodecamp.org/news/how-to-create-software-architecture-diagrams-u
 
 https://habr.com/ru/articles/803671/ Diagram buider
 
+https://virtual-graph-paper.com/
+
 https://news.ycombinator.com/item?id=42044771
 
 http://magjac.com/graphviz-visual-editor/
