@@ -1,5 +1,7 @@
 https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
+https://hackernewsletter.com/
+
 https://www.usecanyon.com/
 
 https://www.unlistedjobs.com/
