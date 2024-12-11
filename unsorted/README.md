@@ -1,3 +1,8 @@
+Udemy: data  integration patterns
+
+https://www.udemy.com/course/data-integration-guide/?couponCode=FA75E6490059715C82E3
+
+
 https://www.linkedin.com/my-items/saved-posts/
 
 - ChatGPT 
