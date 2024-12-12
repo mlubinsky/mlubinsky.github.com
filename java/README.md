@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=fPns2O-cnYQ Путеводитель по анализу памяти JVM-приложений
+
 https://habr.com/ru/companies/otus/articles/833462/
 
 https://habr.com/ru/companies/wunderfund/articles/843618/
