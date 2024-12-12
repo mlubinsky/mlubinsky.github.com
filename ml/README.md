@@ -2,6 +2,10 @@ https://parlance-labs.com/education/
 
 Как на самом деле работает Attention https://habr.com/ru/companies/oleg-bunin/articles/865856/
 
+5 способов установить и нативно использовать ChatGPT на компьютерах Mac:
+https://habr.com/ru/companies/x-com/articles/865858/
+
+
 https://www.reddit.com/r/MachineLearning/comments/1gwbhxq/d_next_big_thing_in_time_series/
 
 https://github.com/thuml/Time-Series-Library
