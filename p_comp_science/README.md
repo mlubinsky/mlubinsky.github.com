@@ -82,7 +82,9 @@ https://news.ycombinator.com/item?id=37391161
 
 ## Kuramoto
 
- (https://arxiv.org/abs/2402.12481
+Towards a Theory for the Formation of Chimera Patterns in Complex Networks https://arxiv.org/pdf/2412.05504
+
+ https://arxiv.org/abs/2402.12481
 
 https://arxiv.org/pdf/2402.06442.pdf
 
