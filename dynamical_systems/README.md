@@ -87,6 +87,9 @@ https://github.com/rudyrucker/chaos/ James Gleick's CHAOS: The Software
 
 ## Dynamic systems
 
+Towards a Theory for the Formation of Chimera Patterns in Complex Networks
+https://arxiv.org/pdf/2412.05504
+
 https://galileo-unbound.blog/2021/07/19/random-walks-with-paul-langevin-stochastic-dynamics/
 
 https://github.com/hsayama/PyCX
