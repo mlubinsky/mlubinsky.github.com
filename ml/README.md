@@ -1,5 +1,7 @@
 https://parlance-labs.com/education/
 
+Как на самом деле работает Attention https://habr.com/ru/companies/oleg-bunin/articles/865856/
+
 https://www.reddit.com/r/MachineLearning/comments/1gwbhxq/d_next_big_thing_in_time_series/
 
 https://github.com/thuml/Time-Series-Library
