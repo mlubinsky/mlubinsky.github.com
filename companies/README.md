@@ -1,5 +1,9 @@
 https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
+Как построить карьеру в области искусственного интеллекта. Советы от Эндрю Ына
+
+https://habr.com/ru/companies/sravni/articles/865646/
+
 https://hackernewsletter.com/
 
 https://www.usecanyon.com/
