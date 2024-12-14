@@ -283,6 +283,10 @@ https://www.physics.princeton.edu/~mcdonald/examples/ McDonald
 https://habr.com/ru/post/544030/ FermiNet
 
 ### Entropy
+https://www.quantamagazine.org/what-is-entropy-a-measure-of-just-how-little-we-really-know-20241213/
+
+https://news.ycombinator.com/item?id=42415386
+
 http://philsci-archive.pitt.edu/8592/1/EntropyPaperFinal.pdf
 
 http://math.ucr.edu/home/baez/what_is_entropy.pdf
