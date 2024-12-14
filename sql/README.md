@@ -1,4 +1,4 @@
-
+https://www.edgedb.com/  Юрием Селивановым, CEO и co-founder Edgedb,
 
 Regular expressions in SQL
 https://habr.com/ru/companies/otus/articles/851942/
