@@ -287,6 +287,8 @@ https://www.quantamagazine.org/what-is-entropy-a-measure-of-just-how-little-we-r
 
 https://news.ycombinator.com/item?id=42415386
 
+https://www.youtube.com/watch?v=DxL2HoqLbyA
+
 http://philsci-archive.pitt.edu/8592/1/EntropyPaperFinal.pdf
 
 http://math.ucr.edu/home/baez/what_is_entropy.pdf
