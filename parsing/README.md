@@ -23,6 +23,9 @@ https://lobste.rs/s/x0b8wo/practical_parsing_with_flex_bison
 
 https://begriffs.com/posts/2021-11-28-practical-parsing.html  bison flex
 
+### Python парсер-комбинатор peco
+https://habr.com/ru/articles/866646/
+
 ### Lark - python parser
 
 https://jamesg.blog/2024/08/17/build-a-query-language/
