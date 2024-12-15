@@ -1,3 +1,6 @@
+https://habr.com/ru/articles/866542/
+
+
 https://www.youtube.com/watch?v=J1wze8tUvw0
 
 создание шаблонных DAG на основе конфигурационных и коллективных файлов для повышения эффективности работы с AirFlow.  
