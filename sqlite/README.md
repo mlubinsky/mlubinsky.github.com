@@ -1,5 +1,7 @@
 ### DuckDB
 
+https://milescole.dev/data-engineering/2024/12/12/Should-You-Ditch-Spark-DuckDB-Polars.html
+
 https://habr.com/ru/articles/829502/
 
 https://habr.com/ru/companies/yoomoney/articles/840624/
