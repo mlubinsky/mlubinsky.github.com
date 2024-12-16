@@ -1,4 +1,16 @@
-Udemy: data  integration patterns
+
+### Ask HN: What open source projects need help?
+
+https://github.com/topics/help-wanted
+
+https://www.codetriage.com/
+
+https://www.codetriage.com/university/picking_a_repo
+
+https://news.ycombinator.com/item?id=42157556
+
+
+### Udemy: data  integration patterns
 
 https://www.udemy.com/course/data-integration-guide/?couponCode=FA75E6490059715C82E3
 
