@@ -1,5 +1,7 @@
 https://parlance-labs.com/education/
 
+https://rish-01.github.io/blog/posts/ml_estimation/ Loss function
+
 Как на самом деле работает Attention https://habr.com/ru/companies/oleg-bunin/articles/865856/
 
 5 способов установить и нативно использовать ChatGPT на компьютерах Mac:
