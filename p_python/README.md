@@ -2562,6 +2562,8 @@ func_name(f)
  
 ### Enumeration
 
+https://realpython.com/python-enum/?utm_source=realpython&utm_medium=rss
+
 https://roarepally.com/blog/python-311-enums
 
 https://florian-dahlitz.de/articles/why-you-should-use-more-enums-in-python
