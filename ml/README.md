@@ -1,5 +1,7 @@
 https://parlance-labs.com/education/
 
+https://github.com/chiphuyen/aie-book/blob/main/resources.md
+
 https://rish-01.github.io/blog/posts/ml_estimation/ Loss function
 
 https://stats.stackexchange.com/questions/357963/what-is-the-difference-between-cross-entropy-and-kl-divergence
