@@ -28,7 +28,8 @@ def is_prime(n):
 print(is_prime(17))  # Output: True
 print(is_prime(4))   # Output: False
 ```
-Explanation: This function checks if a number is prime by attempting to divide it by all numbers up to its square root. If any divisor is found, it returns False; otherwise, it returns True.
+Explanation: This function checks if a number is prime by attempting to divide it by all numbers up to its square root. 
+If any divisor is found, it returns False; otherwise, it returns True.
 
 ### 2) Write a Python function to find the largest continuous sum in a given list of integers.
 ```
@@ -74,7 +75,10 @@ for index, fruit in enumerate(fruits):
 # 0 apple
 # 1 banana
 # 2 cherry
-Explanation: enumerate provides a convenient way to access both the index and the value of items in a list, making it useful for loops where you need both.
+
+Explanation:
+enumerate provides a convenient way to access both the index and the value of items in a list,
+making it useful for loops where you need both.
 ```
 
 ### 5) What is the purpose of the ‘zip’ function in Python? Provide an example.
@@ -89,7 +93,9 @@ for name, age in zip(names, ages):
 # Alice is 25 years old
 # Bob is 30 years old
 # Charlie is 35 years old
-Explanation: zip combines elements from multiple lists into a single iterable of tuples, pairing elements based on their position.
+
+Explanation: zip combines elements from multiple lists into a single iterable of tuples,
+pairing elements based on their position.
 ```
 
 ### 6) What is the purpose of the ‘yield’ keyword in Python? Provide an example.
@@ -109,7 +115,8 @@ for number in count_down(3):
 # 3
 # 2
 # 1
-Explanation: yield allows a function to return values one at a time as they are needed, creating a generator that can be iterated over.
+Explanation: yield allows a function to return values one at a time as they are needed,
+creating a generator that can be iterated over.
 ```
 ### 7) What is the difference between a list comprehension and a generator expression in Python? Provide an example of each.
 ```
@@ -125,7 +132,9 @@ Generator Expression Example:
 squares_gen = (x**2 for x in range(10))
 print(list(squares_gen))
 # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-Explanation: List comprehensions generate lists, while generator expressions create generators. Generators are more memory-efficient as they yield items one at a time.
+
+Explanation: List comprehensions generate lists, while generator expressions create generators.
+ Generators are more memory-efficient as they yield items one at a time.
 ```
 ### 8) Write a Python function to check whether a given string is a palindrome or not.
 ```
@@ -159,7 +168,9 @@ def count_vowels(s):
 
 # Example usage:
 print(count_vowels("hello world"))  # Output: 3
-Explanation: This function counts vowels in a string using a generator expression, checking each character against a set of vowels.
+
+Explanation: This function counts vowels in a string using a generator expression,
+checking each character against a set of vowels.
 ```
 ### 11) Write a Python function to find the common elements between two lists.
 ```
@@ -169,6 +180,7 @@ def find_common_elements(list1, list2):
 
 # Example usage:
 print(find_common_elements([1, 2, 3, 4], [3, 4, 5, 6]))  # Output: [3, 4]
+
 Explanation: This function uses set intersection to find common elements between two lists, which is efficient and concise.
 ```
 ### 12) Write a Python function to reverse a linked list.
@@ -196,6 +208,7 @@ reversed_head = reverse_linked_list(head)
 while reversed_head:
     print(reversed_head.value, end=" ")
     reversed_head = reversed_head.next  # Output: 3 2 1
+
 Explanation: This function reverses a singly linked list by changing the direction of the links between nodes.
 ```
 
@@ -235,7 +248,9 @@ graph = {
     'D': []
 }
 print(shortest_path(graph, 'A', 'D'))  # Output: 4
-Explanation: This function implements Dijkstra’s algorithm using a priority queue to find the shortest path in a weighted graph.
+
+Explanation:
+This function implements Dijkstra’s algorithm using a priority queue to find the shortest path in a weighted graph.
 ```
 
 ### 14) Write a Python function to fi nd the intersection of two sorted lists.
@@ -257,6 +272,7 @@ def intersection_of_sorted_lists(list1, list2):
 
 # Example usage:
 print(intersection_of_sorted_lists([1, 2, 4, 5, 6], [2, 3, 5, 7]))  # Output: [2, 5]
+
 Explanation: This function finds the intersection of two sorted lists by using two pointers, efficiently comparing elements.
 ```
 ### 15) Write a Python function to fi nd the longest common prefix among a list of strings.
@@ -274,7 +290,9 @@ def longest_common_prefix(strs):
 
 # Example usage:
 print(longest_common_prefix(["flower", "flow", "flight"]))  # Output: "fl"
-Explanation: This function finds the longest common prefix by comparing characters of the shortest string with all other strings.
+
+Explanation:
+This function finds the longest common prefix by comparing characters of the shortest string with all other strings.
 ```
 ### 16) Write a Python function to perform a binary search on a sorted list.
 ```
@@ -293,6 +311,7 @@ def binary_search(arr, target):
 
 # Example usage:
 print(binary_search([1, 2, 3, 4, 5, 6], 4))  # Output: 3
+
 Explanation: This function performs a binary search to find the index of a target value within a sorted array,
 returning -1 if the target is not found.
 ```
@@ -343,6 +362,7 @@ stack.push(2)
 stack.push(3)
 print(stack.pop())  # Output: 3
 print(stack.pop())  # Output: 2
+
 Explanation: This function implements a stack using a linked list where each node contains a value and a reference to the next node.
 ```
 ### 19) Write a Python function to implement a queue using two stacks.
@@ -369,6 +389,7 @@ queue.enqueue(2)
 queue.enqueue(3)
 print(queue.dequeue())  # Output: 1
 print(queue.dequeue())  # Output: 2
+
 Explanation: This function implements a queue using two stacks. One stack is used for enqueuing, and the other for dequeuing.
 ```
 ### 20) Write a Python function to find the longest increasing subsequence in a given list of integers.
@@ -386,7 +407,10 @@ def longest_increasing_subsequence(nums):
 
 # Example usage:
 print(longest_increasing_subsequence([10, 9, 2, 5, 3, 7, 101, 18]))  # Output: 4
-Explanation: This function uses dynamic programming to find the length of the longest increasing subsequence in a list of integers. Each element in the dp array keeps track of the longest subsequence ending at that index.
+
+Explanation:
+This function uses dynamic programming to find the length of the longest increasing subsequence in a list of integers.
+ Each element in the dp array keeps track of the longest subsequence ending at that index.
 ```
 ### 21) Write a Python function to find the shortest path between two nodes in a graph using Dijkstra’s algorithm.
 ```
@@ -420,7 +444,9 @@ graph = {
     'D': {}
 }
 print(dijkstra_algorithm(graph, 'A'))  # Output: {'A': 0, 'B': 1, 'C': 2, 'D': 3}
-Explanation: This function implements Dijkstra’s algorithm to find the shortest path from a start node to all other nodes in a weighted graph.
+
+Explanation:
+ This function implements Dijkstra’s algorithm to find the shortest path from a start node to all other nodes in a weighted graph.
  It uses a priority queue to always process the nearest available node.
 ```
 
@@ -447,7 +473,9 @@ def longest_common_substring(str1, str2):
 
 # Example usage:
 print(longest_common_substring("abcde", "abfce"))  # Output: "ab"
-Explanation: This function uses dynamic programming to find the longest common substring between two strings. It maintains a table dp where dp[i][j] is the length of the longest common substring ending at str1[i-1] and str2[j-1].
+
+Explanation: This function uses dynamic programming to find the longest common substring between two strings.
+ It maintains a table dp where dp[i][j] is the length of the longest common substring ending at str1[i-1] and str2[j-1].
 ```
 ### 23) Write a Python function to check if a given string is a palindrome.
 ```
@@ -475,7 +503,9 @@ def quicksort(arr):
 
 # Example usage:
 print(quicksort([3,6,8,10,1,2,1]))  # Output: [1, 1, 2, 3, 6, 8, 10]
+
 Explanation: This function implements the quicksort algorithm, a divide-and-conquer sorting algorithm.
+
 It selects a pivot and partitions the list into elements less than, equal to, and greater than the pivot,
 and recursively sorts the partitions.
 ```
@@ -489,14 +519,11 @@ def generate_permutations(lst):
 
 # Example usage:
 print(generate_permutations([1, 2, 3]))  # Output: [(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)]
-Explanation: This function uses the permutations function from the itertools module to generate all possible permutations of the input list.
 
-Support my work here:
-As this blog is open to all members, there is no paywall, so consider buying me a beer!
+Explanation:
+This function uses the permutations function from the itertools module to generate all possible permutations of the input list.
 
-Tushar Aggarwal
-Hey, If you gain something from my work, consider supporting me by buying me a beer!🍺🍻
-buymeacoffee.com
+  
 ```
 
 ### 26) Write a Python function to merge two sorted arrays into a single sorted array.
@@ -518,7 +545,10 @@ def merge_sorted_arrays(arr1, arr2):
 
 # Example usage:
 print(merge_sorted_arrays([1, 3, 5], [2, 4, 6]))  # Output: [1, 2, 3, 4, 5, 6]
-Explanation: This function merges two sorted arrays into a single sorted array by comparing elements from both arrays and appending the smaller one to the result list.
+
+Explanation:
+This function merges two sorted arrays into a single sorted array by comparing elements from both arrays
+and appending the smaller one to the result list.
 ```
 ### 27) Write a Python function to find the maximum subarray sum in a given array of integers.
 ```
@@ -532,7 +562,9 @@ def max_subarray_sum(arr):
 
 # Example usage:
 print(max_subarray_sum([-2, -3, 4, -1, -2, 1, 5, -3]))  # Output: 7
-Explanation: This function uses Kadane’s algorithm to find the maximum sum of a contiguous subarray within a one-dimensional array of numbers.
+
+Explanation:
+This function uses Kadane’s algorithm to find the maximum sum of a contiguous subarray within a one-dimensional array of numbers.
 ```
 ### 28) Write a Python function to find the first non￾repeating character in a given string.
 ```
@@ -551,7 +583,10 @@ def first_non_repeating_character(s):
 
 # Example usage:
 print(first_non_repeating_character("alphabet"))  # Output: 'l'
-Explanation: This function finds the first non-repeating character in a string by creating a frequency dictionary and then checking which character has a frequency of one.
+
+Explanation:
+This function finds the first non-repeating character in a string by creating a frequency dictionary
+ and then checking which character has a frequency of one.
 ```
 ### 29) Write a Python function to reverse a given linked list.
 ```
@@ -577,6 +612,7 @@ head = ListNode(1, ListNode(2, ListNode(3)))
 reversed_head = reverse_linked_list(head)
 while reversed_head:
     print(reversed_head.value, end=" ")  # Output: 3 2 1
+
 Explanation: This function reverses a singly linked list by changing the direction of the links between nodes.
 ```
 ### 30) Write a Python function to implement binary search on a given sorted array of integers.
@@ -597,7 +633,9 @@ def binary_search(arr, target):
 
 # Example usage:
 print(binary_search([1, 2, 3, 4, 5, 6], 4))  # Output: 3
-Explanation: This function performs a binary search to find the index of a target value within a sorted array, returning -1 if the target is not found.
+
+Explanation:
+This function performs a binary search to find the index of a target value within a sorted array, returning -1 if the target is not found.
 ```
 
 ### 31) Write a Python function to implement the merge sort algorithm to sort a given list of integers.
@@ -637,7 +675,12 @@ def merge_sort(arr):
 arr = [12, 11, 13, 5, 6, 7]
 merge_sort(arr)
 print("Sorted array is:", arr)
-Explanation: Merge sort is a divide and conquer algorithm that divides the input list into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge_sort function recursively splits the list into halves until the sublists have only one element each. Then, it merges those sorted sublists to produce the sorted answer.
+
+Explanation:
+ Merge sort is a divide and conquer algorithm that divides the input list into two halves,
+calls itself for the two halves, and then merges the two sorted halves.
+The merge_sort function recursively splits the list into halves until the sublists have only one element each.
+Then, it merges those sorted sublists to produce the sorted answer.
 ```
 ### 32) Write a Python function to implement the quicksort algorithm to sort a given list of integers.
  Proposed solution by github.com/tushar2704
@@ -655,7 +698,10 @@ def quicksort(arr):
 # Example usage:
 arr = [3,6,8,10,1,2,1]
 print(quicksort(arr))
-Explanation: Quicksort is a divide and conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quicksort that pick pivot in different ways. This implementation uses the middle element as pivot.
+
+Explanation: Quicksort is a divide and conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot.
+There are many different versions of quicksort that pick pivot in different ways.
+This implementation uses the middle element as pivot.
 ```
 ### 33) Write a Python function to implement the breadth-first search algorithm to traverse a given tree.
 Proposed solution by github.com/tushar2704
@@ -681,7 +727,10 @@ def bfs(root):
 # Example usage:
 # root = Node(1, Node(2), Node(3))
 # print(bfs(root))  # Output: [1, 2, 3]
-Explanation: Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root and explores the neighbor nodes at the present depth prior to moving on to nodes at the next depth level.
+
+Explanation:
+Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures.
+It starts at the tree root and explores the neighbor nodes at the present depth prior to moving on to nodes at the next depth level.
 ```
 ### 34) Write a Python function to implement the depth￾first search algorithm to traverse a given tree.
 Proposed solution by github.com/tushar2704
@@ -695,7 +744,10 @@ def dfs(node):
 # Example usage:
 # root = Node(1, Node(2), Node(3))
 # print(dfs(root))  # Output: [1, 2, 3]
-Explanation: Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node and explores as far as possible along each branch before backtracking.
+
+Explanation:
+Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures.
+The algorithm starts at the root node and explores as far as possible along each branch before backtracking.
 ```
 ### 35) What is the output of the following code?
 ```
@@ -705,7 +757,9 @@ a.append(4)
 print(b)
 Output: [1][2][3][4]
 
-Explanation: Here, b is assigned the same list as a. When a.append(4) is called, it modifies the list a refers to, and since b refers to the same list, b also reflects this change.
+Explanation: Here, b is assigned the same list as a.
+When a.append(4) is called, it modifies the list a refers to,
+and since b refers to the same list, b also reflects this change.
 ```
 ### 36) What is the output of the following code?
 ```
@@ -715,27 +769,34 @@ a += " world"
 print(b)
 Output: hello
 
-Explanation: Strings in Python are immutable. When a += " world" is executed, a new string is created and a is updated to refer to it, but b still refers to the original string.
+Explanation: Strings in Python are immutable.
+When a += " world" is executed, a new string is created and a is updated to refer to it,
+but b still refers to the original string.
 ```
 ### 37) What is the output of the following code?
+```
 a = [1, 2, 3]
 b = a[:]
 a.append(4)
 print(b)
 Output: [1][2][3]
 
-Explanation: b = a[:] creates a new list that is a copy of a, so when a is modified, b remains unchanged.
-
+Explanation: b = a[:] creates a new list that is a copy of a, 
+so when a is modified, b remains unchanged.
+```
 ### 38) What is the output of the following code?
+```
 a = 5
 b = 10
 a, b = b, a
 print(a, b)
 Output: 10 5
 
-Explanation: This is a Pythonic way to swap the values of a and b. After the swap, a becomes 10 and b becomes 5.
-
+Explanation: This is a Pythonic way to swap the values of a and b. 
+After the swap, a becomes 10 and b becomes 5.
+```
 ### 39) What is the output of the following code?
+```
 a = [1, 2, 3]
 b = a.copy()
 a.append(4)
@@ -744,35 +805,45 @@ print(b)
 InterviewBible.com
 Output: [1][2][3]
 
-Explanation: b = a.copy() creates a shallow copy of a. Thus, when a is modified, b does not change.
-
+Explanation: b = a.copy() creates a shallow copy of a. 
+Thus, when a is modified, b does not change.
+```
 ### 40) What is the output of the following code?
+```
 a = [1, 2, 3]
 b = a
 a = [4, 5, 6]
 print(b)
 Output: [1][2][3]
 
-Explanation: b is assigned to refer to the same list as a. When a is assigned a new list [4][5][6], it does not affect b, which still refers to the original list.
-
+Explanation: b is assigned to refer to the same list as a.
+When a is assigned a new list [4][5][6], 
+it does not affect b, which still refers to the original list.
+```
 ### 41) What is the output of the following code?
+```
 a = "hello"
 a[0] = "H"
 print(a)
 Output: This code will result in a TypeError.
 
-Explanation: Strings in Python are immutable, which means you cannot change an existing string. The attempt to modify the string by assigning a new value to a will raise a TypeError.
-
+Explanation: 
+Strings in Python are immutable, which means you cannot change an existing string. 
+The attempt to modify the string by assigning a new value to a will raise a TypeError.
+```
 ### 42) What is the output of the following code?
+```
 a = [1, 2, 3]
 b = [4, 5, 6]
 a + b
 print(a)
 Output: [1][2][3]
 
-Explanation: The a + b operation creates a new list but does not modify a. The print(a) statement outputs the original list a.
-
+Explanation: The a + b operation creates a new list but does not modify a. 
+The print(a) statement outputs the original list a.
+```
 ### 43) What is the output of the following code?
+```
 a = [1, 2, 3]
 b = a
 c = b
@@ -780,17 +851,21 @@ a.append(4)
 print(c)
 Output: [1,[2][3][4]
 
-Explanation: Since b and c are references to the same list as a, appending 4 to a also affects b and c. Thus, c shows the updated list.
-
+Explanation: Since b and c are references to the same list as a, appending 4 to a also affects b and c.
+Thus, c shows the updated list.
+```
 ### 44) What is the output of the following code?
+```
 a = {"apple": 3, "banana": 2, "orange": 1}
 b = sorted(a)
 print(b)
 Output: ['apple', 'banana', 'orange']
 
-Explanation: The sorted() function, when used on a dictionary, returns a list of keys sorted alphabetically.
-
+Explanation:
+The sorted() function, when used on a dictionary, returns a list of keys sorted alphabetically.
+```
 ### 45) What is the output of the following code?
+```
 a = [1, 2, 3]
 b = [1, 2, 3]
 print(a == b)
@@ -799,8 +874,12 @@ Output:
 
 True
 False
-Explanation: a == b checks for value equality and returns True because both lists have the same items in the same order. a is b checks for identity (i.e., whether both variables point to the same object), which is False because a and b are different list objects.
 
+Explanation: 
+a == b checks for value equality and returns True because both lists have the same items in the same order.
+a is b checks for identity (i.e., whether both variables point to the same object), 
+which is False because a and b are different list objects.
+```
 ### 46) What is the output of the following code?
 a = "hello"
 b = a
