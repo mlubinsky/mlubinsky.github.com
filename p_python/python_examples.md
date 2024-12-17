@@ -13,8 +13,6 @@ https://python.plainenglish.io/
 Now lets start with #1–100 of 501
 
 ### 1) Write a Python function to check whether a given number is prime or not.
- 
- Proposed solution by github.com/tushar2704
 ```
 def is_prime(n):
     if n < 2:
@@ -34,7 +32,6 @@ If any divisor is found, it returns False; otherwise, it returns True.
 
 ### 2) Write a Python function to find the largest continuous sum in a given list of integers.
 ```
-#Proposed solution by github.com/tushar2704
 def max_subarray_sum(arr):
     max_sum = current_sum = arr[0]
     for num in arr[1:]:
@@ -54,8 +51,9 @@ It iterates through the list, updating the current sum and maximum sum as needed
 ```
 '==' checks for equality, meaning it checks whether the values of two variables are the same.
 'is' checks for identity, meaning it checks whether two variables point to the same object in memory.
-#Proposed solution by github.com/tushar2704
+ 
 # 'is' checks for identity, '==' checks for equality
+
 a = [1, 2, 3]
 b = a
 c = list(a)
@@ -67,7 +65,6 @@ print(a is c)  # Output: False
 
 ### 4) What is the purpose of the ‘enumerate’ function in Python? Provide an example.
 ```
-#Proposed solution by github.com/tushar2704
 fruits = ['apple', 'banana', 'cherry']
 for index, fruit in enumerate(fruits):
     print(index, fruit)
@@ -84,7 +81,6 @@ making it useful for loops where you need both.
 
 ### 5) What is the purpose of the ‘zip’ function in Python? Provide an example.
 ```
-#Proposed solution by github.com/tushar2704
 names = ['Alice', 'Bob', 'Charlie']
 ages = [25, 30, 35]
 for name, age in zip(names, ages):
@@ -102,8 +98,6 @@ pairing elements based on their position.
 
 ### 6) What is the purpose of the ‘yield’ keyword in Python? Provide an example.
 ```
-#Proposed solution by github.com/tushar2704
-
 def count_down(num):
     while num > 0:
         yield num
@@ -121,28 +115,27 @@ Explanation:
 yield allows a function to return values one at a time as they are needed,
 creating a generator that can be iterated over.
 ```
-### 7) What is the difference between a list comprehension and a generator expression in Python? Provide an example of each.
+### 7) What is the difference between a list comprehension and a generator expression in Python? 
 ```
 List Comprehension Example:
 
-#Proposed solution by github.com/tushar2704
 squares = [x**2 for x in range(10)]
 print(squares)
 # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
 Generator Expression Example:
 
-#Proposed solution by github.com/tushar2704
 squares_gen = (x**2 for x in range(10))
 print(list(squares_gen))
 # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 Explanation:
-List comprehensions generate lists, while generator expressions create generators.
+ List comprehensions generate lists, while generator expressions create generators.
  Generators are more memory-efficient as they yield items one at a time.
 ```
 ### 8) Write a Python function to check whether a given string is a palindrome or not.
 ```
-#Proposed solution by github.com/tushar2704
+
 def is_palindrome(s):
     return s == s[::-1]
 
@@ -154,7 +147,6 @@ Explanation: This function checks if a string is the same forwards and backwards
 ```
 ### 9) Write a Python function to find the second highest number in a list.
 ```
-#Proposed solution by github.com/tushar2704
 def second_highest(lst):
     unique_sorted = sorted(set(lst), reverse=True)
     return unique_sorted[1] if len(unique_sorted) > 1 else None
@@ -169,7 +161,6 @@ This function removes duplicates with set, sorts the list, and returns the secon
 
 ### 10) Write a Python function to count the number of vowels in a given string.
 ```
-#Proposed solution by github.com/tushar2704
 def count_vowels(s):
     return sum(1 for char in s if char.lower() in 'aeiou')
 
@@ -181,7 +172,6 @@ checking each character against a set of vowels.
 ```
 ### 11) Write a Python function to find the common elements between two lists.
 ```
-#Proposed solution by github.com/tushar2704
 def find_common_elements(list1, list2):
     return list(set(list1) & set(list2))
 
@@ -193,7 +183,6 @@ This function uses set intersection to find common elements between two lists, w
 ```
 ### 12) Write a Python function to reverse a linked list.
 ```
-#Proposed solution by github.com/tushar2704
 class ListNode:
     def __init__(self, value=0, next=None):
         self.value = value
@@ -222,7 +211,6 @@ Explanation: This function reverses a singly linked list by changing the directi
 
 ### 13) Write a Python function to find the shortest path between two nodes in a graph.
 ```
-#Proposed solution by github.com/tushar2704
 import heapq
 
 def shortest_path(graph, start, end):
@@ -263,7 +251,6 @@ This function implements Dijkstra’s algorithm using a priority queue to find t
 
 ### 14) Write a Python function to fi nd the intersection of two sorted lists.
 ```
-#Proposed solution by github.com/tushar2704
 def intersection_of_sorted_lists(list1, list2):
     i, j = 0, 0
     intersection = []
@@ -286,7 +273,6 @@ This function finds the intersection of two sorted lists by using two pointers, 
 ```
 ### 15) Write a Python function to fi nd the longest common prefix among a list of strings.
 ```
-#Proposed solution by github.com/tushar2704
 def longest_common_prefix(strs):
     if not strs:
         return ""
@@ -305,7 +291,6 @@ This function finds the longest common prefix by comparing characters of the sho
 ```
 ### 16) Write a Python function to perform a binary search on a sorted list.
 ```
-#Proposed solution by github.com/tushar2704
 def binary_search(arr, target):
     low, high = 0, len(arr) - 1
     while low <= high:
@@ -328,7 +313,6 @@ returning -1 if the target is not found.
 
 ### 17) Write a Python function to find the maximum sum of a contiguous subarray with a size of k in a given list of integers.
 ```
-#Proposed solution by github.com/tushar2704
 def max_sum_subarray_k(arr, k):
     max_sum = sum(arr[:k])
     current_sum = max_sum
@@ -345,7 +329,6 @@ This function calculates the maximum sum of any contiguous subarray of size k us
 ```
 ### 18) Write a Python function to implement a stack using a linked list.
 ```
-#Proposed solution by github.com/tushar2704
 class StackNode:
     def __init__(self, value):
         self.value = value
@@ -380,7 +363,6 @@ This function implements a stack using a linked list where each node contains a 
 ```
 ### 19) Write a Python function to implement a queue using two stacks.
 ```
-#Proposed solution by github.com/tushar2704
 class Queue:
     def __init__(self):
         self.in_stack = []
@@ -408,7 +390,6 @@ This function implements a queue using two stacks. One stack is used for enqueui
 ```
 ### 20) Write a Python function to find the longest increasing subsequence in a given list of integers.
 ```
-#Proposed solution by github.com/tushar2704
 def longest_increasing_subsequence(nums):
     if not nums:
         return 0
@@ -466,7 +447,6 @@ Explanation:
 
 ### 22) Write a Python function to find the longest common substring between two given strings.
 ```
-#Proposed solution by github.com/tushar2704
 def longest_common_substring(str1, str2):
     m, n = len(str1), len(str2)
     max_len = 0
@@ -494,7 +474,6 @@ This function uses dynamic programming to find the longest common substring betw
 ```
 ### 23) Write a Python function to check if a given string is a palindrome.
 ```
-#Proposed solution by github.com/tushar2704
 def is_palindrome(s):
     return s == s[::-1]
 
@@ -507,7 +486,6 @@ This function checks if a string is the same forwards and backwards, which defin
 ```
 ### 24) Write a Python function to sort a given list of integers using the quicksort algorithm.
 ```
-#Proposed solution by github.com/tushar2704
 def quicksort(arr):
     if len(arr) <= 1:
         return arr
@@ -527,7 +505,6 @@ and recursively sorts the partitions.
 ```
 ### 25) Write a Python function to generate all permutations of a given list of integers.
 ```
-#Proposed solution by github.com/tushar2704
 from itertools import permutations
 
 def generate_permutations(lst):
@@ -543,7 +520,6 @@ This function uses the permutations function from the itertools module to genera
 
 ### 26) Write a Python function to merge two sorted arrays into a single sorted array.
 ```
-#Proposed solution by github.com/tushar2704
 def merge_sorted_arrays(arr1, arr2):
     result = []
     i, j = 0, 0
@@ -567,7 +543,6 @@ and appending the smaller one to the result list.
 ```
 ### 27) Write a Python function to find the maximum subarray sum in a given array of integers.
 ```
-#Proposed solution by github.com/tushar2704
 def max_subarray_sum(arr):
     max_sum = current_sum = arr[0]
     for num in arr[1:]:
@@ -583,7 +558,6 @@ This function uses Kadane’s algorithm to find the maximum sum of a contiguous 
 ```
 ### 28) Write a Python function to find the first non￾repeating character in a given string.
 ```
-#Proposed solution by github.com/tushar2704
 def first_non_repeating_character(s):
     frequency = {}
     for char in s:
@@ -605,7 +579,6 @@ This function finds the first non-repeating character in a string by creating a 
 ```
 ### 29) Write a Python function to reverse a given linked list.
 ```
-#Proposed solution by github.com/tushar2704
 class ListNode:
     def __init__(self, value=0, next=None):
         self.value = value
@@ -632,7 +605,6 @@ Explanation: This function reverses a singly linked list by changing the directi
 ```
 ### 30) Write a Python function to implement binary search on a given sorted array of integers.
 
- Proposed solution by github.com/tushar2704
 ```
 def binary_search(arr, target):
     low, high = 0, len(arr) - 1
@@ -655,7 +627,6 @@ returning -1 if the target is not found.
 ```
 
 ### 31) Write a Python function to implement the merge sort algorithm to sort a given list of integers.
-Proposed solution by github.com/tushar2704
 ```
 def merge_sort(arr):
     if len(arr) > 1:
@@ -699,7 +670,6 @@ The merge_sort function recursively splits the list into halves until the sublis
 Then, it merges those sorted sublists to produce the sorted answer.
 ```
 ### 32) Write a Python function to implement the quicksort algorithm to sort a given list of integers.
- Proposed solution by github.com/tushar2704
  ```
 def quicksort(arr):
     if len(arr) <= 1:
@@ -721,7 +691,6 @@ There are many different versions of quicksort that pick pivot in different ways
 This implementation uses the middle element as pivot.
 ```
 ### 33) Write a Python function to implement the breadth-first search algorithm to traverse a given tree.
-Proposed solution by github.com/tushar2704
 ```
 from collections import deque
 
@@ -750,7 +719,6 @@ Breadth-first search (BFS) is an algorithm for traversing or searching tree or g
 It starts at the tree root and explores the neighbor nodes at the present depth prior to moving on to nodes at the next depth level.
 ```
 ### 34) Write a Python function to implement the depth￾first search algorithm to traverse a given tree.
-Proposed solution by github.com/tushar2704
 ```
 def dfs(node):
     if not node:
@@ -994,14 +962,16 @@ Python does not have explicit support for interfaces like some other languages b
   Python uses a form of automatic memory management known as garbage collection.
 The primary mechanism is reference counting, where each object keeps track of how many references point to it.
 When references to an object drop to zero, the memory occupied by the object is reclaimed.
-Python also uses a generational garbage collector for cyclic references. Strategies for managing memory include minimizing reference cycles, using del to remove references, and employing libraries like gc for manual garbage collection control.
+Python also uses a generational garbage collector for cyclic references.
+Strategies for managing memory include minimizing reference cycles, using del to remove references, and employing libraries like gc for manual garbage collection control.
 ```
 ### 77) Explain the Global Interpreter Lock (GIL) in Python and its implications for concurrency.
 ```
  The Global Interpreter Lock (GIL) is a mutex that protects access to Python objects,
 preventing multiple native threads from executing Python bytecodes at once.
 This lock is necessary because Python’s memory management is not thread-safe.
-The GIL can be a bottleneck in CPU-bound and multi-threaded code, as it allows only one thread to execute at a time even on multi-core processors.
+The GIL can be a bottleneck in CPU-bound and multi-threaded code,
+as it allows only one thread to execute at a time even on multi-core processors.
  For true parallelism, Python developers often use multiprocessing or switch to implementations like Jython or IronPython, which don’t have a GIL.
 ```
 
@@ -1026,7 +996,6 @@ s = s.replace(" ", "")
 print(s)  # Output: "abc"
 Alternatively, using regular expressions:
 
-#Proposed solution by github.com/tushar2704
 import re
 s = " a b c "
 s = re.sub(r"\s+", "", s)
@@ -1071,8 +1040,9 @@ def is_prime(n):
 print(is_prime(11))  # Output: True
 print(is_prime(4))   # Output: False
 
-  To check if a number is prime, you can iterate from 2 to the square root of the number
-and check if the number is divisible by any of those values. If it is divisible, it is not prime; otherwise, it is prime.
+To check if a number is prime, you can iterate from 2 to the square root of the number
+and check if the number is divisible by any of those values.
+ If it is divisible, it is not prime; otherwise, it is prime.
 ```
 ### 84) How do you convert a string to a datetime object in Python?
 ```
@@ -1105,7 +1075,9 @@ def remove_duplicates(lst):
 
 original_list = [1, 2, 2, 3, 4, 4, 5]
 print("Without duplicates:", remove_duplicates(original_list))
-Explanation: To remove duplicates from a list, you can convert the list to a set and then back to a list, as sets automatically remove duplicates: list(set(my_list)).
+
+Explanation: To remove duplicates from a list, you can convert the list to a set and then back to a list,
+ as sets automatically remove duplicates: list(set(my_list)).
 ```
 
 ### 87) How do you check if a string is a palindrome in Python?
