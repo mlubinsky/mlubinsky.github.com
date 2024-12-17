@@ -1,6 +1,12 @@
 FDTool: a Python application to mine for functional dependencies and candidate keys in tabular data" Matt Buranosky
 https://habr.com/ru/articles/866718/
 
+https://pypi.org/project/fdtool/
+
+https://hpi.de/naumann/projects/repeatability/data-profiling/fds.html
+
+https://hpi.de/naumann/projects/repeatability/data-profiling.html
+
 
 https://parlance-labs.com/education/
 
