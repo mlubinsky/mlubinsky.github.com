@@ -28,7 +28,8 @@ def is_prime(n):
 print(is_prime(17))  # Output: True
 print(is_prime(4))   # Output: False
 ```
-Explanation: This function checks if a number is prime by attempting to divide it by all numbers up to its square root. 
+Explanation: 
+This function checks if a number is prime by attempting to divide it by all numbers up to its square root. 
 If any divisor is found, it returns False; otherwise, it returns True.
 
 ### 2) Write a Python function to find the largest continuous sum in a given list of integers.
@@ -94,7 +95,8 @@ for name, age in zip(names, ages):
 # Bob is 30 years old
 # Charlie is 35 years old
 
-Explanation: zip combines elements from multiple lists into a single iterable of tuples,
+Explanation:
+zip combines elements from multiple lists into a single iterable of tuples,
 pairing elements based on their position.
 ```
 
@@ -115,7 +117,8 @@ for number in count_down(3):
 # 3
 # 2
 # 1
-Explanation: yield allows a function to return values one at a time as they are needed,
+Explanation:
+yield allows a function to return values one at a time as they are needed,
 creating a generator that can be iterated over.
 ```
 ### 7) What is the difference between a list comprehension and a generator expression in Python? Provide an example of each.
@@ -133,7 +136,8 @@ squares_gen = (x**2 for x in range(10))
 print(list(squares_gen))
 # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
-Explanation: List comprehensions generate lists, while generator expressions create generators.
+Explanation:
+List comprehensions generate lists, while generator expressions create generators.
  Generators are more memory-efficient as they yield items one at a time.
 ```
 ### 8) Write a Python function to check whether a given string is a palindrome or not.
@@ -145,6 +149,7 @@ def is_palindrome(s):
 # Example usage:
 print(is_palindrome("radar"))  # Output: True
 print(is_palindrome("hello"))  # Output: False
+
 Explanation: This function checks if a string is the same forwards and backwards, which defines a palindrome.
 ```
 ### 9) Write a Python function to find the second highest number in a list.
@@ -157,7 +162,9 @@ def second_highest(lst):
 # Example usage:
 print(second_highest([1, 2, 3, 4, 5]))  # Output: 4
 print(second_highest([5, 5, 5, 5]))     # Output: None
-Explanation: This function removes duplicates with set, sorts the list, and returns the second highest number if it exists.
+
+Explanation:
+This function removes duplicates with set, sorts the list, and returns the second highest number if it exists.
 ```
 
 ### 10) Write a Python function to count the number of vowels in a given string.
@@ -181,7 +188,8 @@ def find_common_elements(list1, list2):
 # Example usage:
 print(find_common_elements([1, 2, 3, 4], [3, 4, 5, 6]))  # Output: [3, 4]
 
-Explanation: This function uses set intersection to find common elements between two lists, which is efficient and concise.
+Explanation:
+This function uses set intersection to find common elements between two lists, which is efficient and concise.
 ```
 ### 12) Write a Python function to reverse a linked list.
 ```
@@ -273,7 +281,8 @@ def intersection_of_sorted_lists(list1, list2):
 # Example usage:
 print(intersection_of_sorted_lists([1, 2, 4, 5, 6], [2, 3, 5, 7]))  # Output: [2, 5]
 
-Explanation: This function finds the intersection of two sorted lists by using two pointers, efficiently comparing elements.
+Explanation:
+This function finds the intersection of two sorted lists by using two pointers, efficiently comparing elements.
 ```
 ### 15) Write a Python function to fi nd the longest common prefix among a list of strings.
 ```
@@ -312,7 +321,8 @@ def binary_search(arr, target):
 # Example usage:
 print(binary_search([1, 2, 3, 4, 5, 6], 4))  # Output: 3
 
-Explanation: This function performs a binary search to find the index of a target value within a sorted array,
+Explanation:
+This function performs a binary search to find the index of a target value within a sorted array,
 returning -1 if the target is not found.
 ```
 
@@ -329,7 +339,9 @@ def max_sum_subarray_k(arr, k):
 
 # Example usage:
 print(max_sum_subarray_k([1, 2, 3, 4, 5, 6], 3))  # Output: 15
-Explanation: This function calculates the maximum sum of any contiguous subarray of size k using a sliding window approach.
+
+Explanation:
+This function calculates the maximum sum of any contiguous subarray of size k using a sliding window approach.
 ```
 ### 18) Write a Python function to implement a stack using a linked list.
 ```
@@ -363,7 +375,8 @@ stack.push(3)
 print(stack.pop())  # Output: 3
 print(stack.pop())  # Output: 2
 
-Explanation: This function implements a stack using a linked list where each node contains a value and a reference to the next node.
+Explanation:
+This function implements a stack using a linked list where each node contains a value and a reference to the next node.
 ```
 ### 19) Write a Python function to implement a queue using two stacks.
 ```
@@ -390,7 +403,8 @@ queue.enqueue(3)
 print(queue.dequeue())  # Output: 1
 print(queue.dequeue())  # Output: 2
 
-Explanation: This function implements a queue using two stacks. One stack is used for enqueuing, and the other for dequeuing.
+Explanation:
+This function implements a queue using two stacks. One stack is used for enqueuing, and the other for dequeuing.
 ```
 ### 20) Write a Python function to find the longest increasing subsequence in a given list of integers.
 ```
@@ -474,7 +488,8 @@ def longest_common_substring(str1, str2):
 # Example usage:
 print(longest_common_substring("abcde", "abfce"))  # Output: "ab"
 
-Explanation: This function uses dynamic programming to find the longest common substring between two strings.
+Explanation:
+This function uses dynamic programming to find the longest common substring between two strings.
  It maintains a table dp where dp[i][j] is the length of the longest common substring ending at str1[i-1] and str2[j-1].
 ```
 ### 23) Write a Python function to check if a given string is a palindrome.
@@ -487,7 +502,8 @@ def is_palindrome(s):
 print(is_palindrome("radar"))  # Output: True
 print(is_palindrome("hello"))  # Output: False
 
-Explanation: This function checks if a string is the same forwards and backwards, which defines a palindrome.
+Explanation:
+This function checks if a string is the same forwards and backwards, which defines a palindrome.
 ```
 ### 24) Write a Python function to sort a given list of integers using the quicksort algorithm.
 ```
@@ -523,7 +539,6 @@ print(generate_permutations([1, 2, 3]))  # Output: [(1, 2, 3), (1, 3, 2), (2, 1,
 Explanation:
 This function uses the permutations function from the itertools module to generate all possible permutations of the input list.
 
-  
 ```
 
 ### 26) Write a Python function to merge two sorted arrays into a single sorted array.
@@ -635,7 +650,8 @@ def binary_search(arr, target):
 print(binary_search([1, 2, 3, 4, 5, 6], 4))  # Output: 3
 
 Explanation:
-This function performs a binary search to find the index of a target value within a sorted array, returning -1 if the target is not found.
+This function performs a binary search to find the index of a target value within a sorted array,
+returning -1 if the target is not found.
 ```
 
 ### 31) Write a Python function to implement the merge sort algorithm to sort a given list of integers.
@@ -699,7 +715,8 @@ def quicksort(arr):
 arr = [3,6,8,10,1,2,1]
 print(quicksort(arr))
 
-Explanation: Quicksort is a divide and conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot.
+Explanation:
+Quicksort is a divide and conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot.
 There are many different versions of quicksort that pick pivot in different ways.
 This implementation uses the middle element as pivot.
 ```
@@ -881,23 +898,29 @@ a is b checks for identity (i.e., whether both variables point to the same objec
 which is False because a and b are different list objects.
 ```
 ### 46) What is the output of the following code?
+```
 a = "hello"
 b = a
 a = a.upper()
 print(b)
 Output: hello
 
-Explanation: Strings are immutable, so a.upper() creates a new string and assigns it to a, but b still points to the original string.
-
+Explanation:
+Strings are immutable, so a.upper() creates a new string and assigns it to a, but b still points to the original string.
+```
 ### 47) What is the output of the following code?
+```
 a = [1, 2, 3]
 a *= 2
 print(a)
 Output: [1][2][3][1][2][3]
 
-Explanation: The *= 2 operation extends the list a by repeating its elements, effectively doubling the list.
+Explanation:
+The *= 2 operation extends the list a by repeating its elements, effectively doubling the list.
+```
 
 ### 48) What is the output of the following code?
+```
 a = [1, 2, 3]
 b = [1, 2, 3]
 print(a == b)
@@ -906,32 +929,32 @@ Output:
 
 True
 False
-Explanation: Similar to question 45, a == b returns True because the lists have the same elements in the same order, and a is b returns False because they are different objects.
-
+Explanation:
+Similar to question 45, a == b returns True because the lists have the same elements in the same order, and a is b returns False because they are different objects.
+```
 ### 49) What is the output of the following code?
+```
 a = {"apple": 3, "banana": 2, "orange": 1}
 print(a["pear"])
 Output: This code will result in a KeyError.
 
 Explanation: The key "pear" does not exist in the dictionary a, so attempting to access it raises a KeyError.
-
+```
 ### 50) What is the output of the following code?
+```
 a = "hello"
 b = a
 a += " world"
 print(a is b)
 Output: False
 
-Explanation: Initially, b is the same object as a. However, when a is modified with +=, a new string is created and assigned to a. Thus, a is no longer the same object as b, resulting in a is b being False.
-
-Support my work here:
-As this blog is open to all members, there is no paywall, so consider buying me a beer!
-
-Tushar Aggarwal
-Hey, If you gain something from my work, consider supporting me by buying me a beer!🍺🍻
-buymeacoffee.com
-
+Explanation:
+Initially, b is the same object as a.
+However, when a is modified with +=, a new string is created and assigned to a.
+Thus, a is no longer the same object as b, resulting in a is b being False.
+```
 ### 51) What is the output of the following code?
+```
 a = [1, 2, 3]
 b = a[:]
 c = a
@@ -942,55 +965,62 @@ Output:
 
 [1, 2, 3]
 [1, 2, 3, 4]
-Explanation: b is a copy of a at the time of assignment, so changes to a do not affect b. c is a reference to the same list as a, so changes to a also appear in c.
 
+Explanation:
+ b is a copy of a at the time of assignment, so changes to a do not affect b. c is a reference to the same list as a,
+so changes to a also appear in c.
+```
 ### 52) What is the output of the following code?
+```
 a = {"apple": 3, "banana": 2, "orange": 1}
 print(sorted(a, key=lambda x: a[x]))
 Output: ['orange', 'banana', 'apple']
 
-Explanation: The sorted() function is used with a key function that sorts the dictionary keys based on their corresponding values in ascending order.
-
-### 53) What is an API in Python?
-Solution: An API (Application Programming Interface) in Python is a set of functions and methods that allows you to interact with a module or service. It defines the way software components should interact.
-
-### 54) What are the types of APIs in Python?
-Solution: Python supports several types of APIs, including Web APIs, local APIs, and program APIs. These can be further categorized into public, private, and partner APIs depending on their accessibility.
-
-### 55) What is the built-in Python API?
-Solution: The built-in Python API refers to the Python Standard Library, which includes a wide range of modules and functions that are directly accessible in Python without needing to install additional libraries.
-
-### 56) What are some examples of modules in the built￾in Python API?
-Solution: Some examples of modules in the built-in Python API include math for mathematical functions, datetime for handling dates and times, and json for parsing and generating JSON data.
-
-### 57) What are some examples of functions in the built￾in Python API?
-Solution: Examples of functions in the built-in Python API include print() for outputting data, len() for getting the length of a data structure, and range() for generating sequences of numbers.
+Explanation:
+The sorted() function is used with a key function that sorts the dictionary keys based on their corresponding values in ascending order.
+```
+ 
 
 ###  75) Can you explain the difference between an abstract class and an interface in Python?
-Solution: In Python, an abstract class can have both abstract methods (which don’t have an implementation) and concrete methods (which do). It is used when you want to create a base class that defines a blueprint for derived classes. An interface in Python, often achieved using abstract base classes, strictly contains methods that have no implementation and must be implemented by derived classes. Python does not have explicit support for interfaces like some other languages but achieves similar functionality through abstract base classes.
-
+```
+  In Python, an abstract class can have both abstract methods (which don’t have an implementation) and concrete methods (which do).
+It is used when you want to create a base class that defines a blueprint for derived classes.
+ An interface in Python, often achieved using abstract base classes,
+strictly contains methods that have no implementation and must be implemented by derived classes.
+Python does not have explicit support for interfaces like some other languages but achieves similar functionality through abstract base classes.
+```
 ###  76) Can you explain how Python’s garbage collection works, and what are some strategies for managing memory usage?
-Solution: Python uses a form of automatic memory management known as garbage collection. The primary mechanism is reference counting, where each object keeps track of how many references point to it. When references to an object drop to zero, the memory occupied by the object is reclaimed. Python also uses a generational garbage collector for cyclic references. Strategies for managing memory include minimizing reference cycles, using del to remove references, and employing libraries like gc for manual garbage collection control.
-
+```
+  Python uses a form of automatic memory management known as garbage collection.
+The primary mechanism is reference counting, where each object keeps track of how many references point to it.
+When references to an object drop to zero, the memory occupied by the object is reclaimed.
+Python also uses a generational garbage collector for cyclic references. Strategies for managing memory include minimizing reference cycles, using del to remove references, and employing libraries like gc for manual garbage collection control.
+```
 ### 77) Explain the Global Interpreter Lock (GIL) in Python and its implications for concurrency.
-Solution: The Global Interpreter Lock (GIL) is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes at once. This lock is necessary because Python’s memory management is not thread-safe. The GIL can be a bottleneck in CPU-bound and multi-threaded code, as it allows only one thread to execute at a time even on multi-core processors. For true parallelism, Python developers often use multiprocessing or switch to implementations like Jython or IronPython, which don’t have a GIL.
+```
+ The Global Interpreter Lock (GIL) is a mutex that protects access to Python objects,
+preventing multiple native threads from executing Python bytecodes at once.
+This lock is necessary because Python’s memory management is not thread-safe.
+The GIL can be a bottleneck in CPU-bound and multi-threaded code, as it allows only one thread to execute at a time even on multi-core processors.
+ For true parallelism, Python developers often use multiprocessing or switch to implementations like Jython or IronPython, which don’t have a GIL.
+```
 
 ### 78) What is the difference between deep and shallow copying in Python, and when would you use each?
-Solution: Shallow copying in Python creates a new object but inserts references into it to the objects found in the original. Deep copying creates a new object and recursively adds copies of nested objects present in the original. Shallow copy is faster and sufficient when the copied object does not contain nested objects that might be modified. Deep copy is used when the new object needs to be fully independent of the original, including all nested objects.
-
+```
+ Shallow copying in Python creates a new object but inserts references into it to the objects found in the original.
+Deep copying creates a new object and recursively adds copies of nested objects present in the original.
+Shallow copy is faster and sufficient when the copied object does not contain nested objects that might be modified.
+Deep copy is used when the new object needs to be fully independent of the original, including all nested objects.
+```
 ### 79) How do you count the number of occurrences of an element in a list in Python?
-
-
-#Proposed solution by github.com/tushar2704
+ 
 ```
 a = [1, 2, 3, 2, 1, 5, 6, 2]
 print(a.count(2))  # Output: 3
 
 ```
 ### 80) How do you remove all whitespace from a string in Python?
-Explanation: To remove all whitespace from a string, you can use the replace method or a regular expression with the re module. Here's an example using replace:
-
-#Proposed solution by github.com/tushar2704
+```
 s = " a b c "
 s = s.replace(" ", "")
 print(s)  # Output: "abc"
@@ -1001,28 +1031,35 @@ import re
 s = " a b c "
 s = re.sub(r"\s+", "", s)
 print(s)  # Output: "abc"
-
+```
 ### 81) How do you get the current working directory in Python?
-#Proposed solution by github.com/tushar2704
+```
 import os
 current_directory = os.getcwd()
 print("Current Working Directory:", current_directory)
-Explanation: You can obtain the current working directory in Python using the os.getcwd() method from the os module or the Path.cwd() method from the pathlib module.
 
+You can obtain the current working directory in Python using the os.getcwd() method from the os module
+ or the Path.cwd() method from the pathlib module.
+```
 ### 82) How do you flatten a nested list in Python?
-#Proposed solution by github.com/tushar2704
+```
 
 def flatten_list(nested_list):
     return [item for sublist in nested_list for item in sublist]
 
 nested_list = [[1, 2, 3], [4, 5], [6]]
 print("Flattened list:", flatten_list(nested_list))
-Explanation: To flatten a nested list in Python, you can use a list comprehension, the itertools.chain() method, or a recursive approach. A simple list comprehension for one level of nesting would look like:
+
+To flatten a nested list in Python, you can use a list comprehension, the itertools.chain() method,
+or a recursive approach.
+A simple list comprehension for one level of nesting would look like:
 
 [item for sublist in nested_list for item in sublist].
 
+```
+
 ### 83) How do you check if a number is prime in Python?
-#Proposed solution by github.com/tushar2704
+```
 def is_prime(n):
     if n <= 1:
         return False
@@ -1033,129 +1070,144 @@ def is_prime(n):
 
 print(is_prime(11))  # Output: True
 print(is_prime(4))   # Output: False
-Explanation: To check if a number is prime, you can iterate from 2 to the square root of the number and check if the number is divisible by any of those values. If it is divisible, it is not prime; otherwise, it is prime.
 
-### 84) How do you convert a string to a datetime object
-in Python?
-#Proposed solution by github.com/tushar2704
+  To check if a number is prime, you can iterate from 2 to the square root of the number
+and check if the number is divisible by any of those values. If it is divisible, it is not prime; otherwise, it is prime.
+```
+### 84) How do you convert a string to a datetime object in Python?
+```
 from datetime import datetime
 
 date_string = "01/01/2020"
 date_object = datetime.strptime(date_string, "%d/%m/%Y")
 print("Date Object:", date_object)
-Explanation: You can convert a string to a datetime object using the datetime.strptime() method from the datetime module. You need to specify the string and the format that matches the string.
 
+ You can convert a string to a datetime object using the datetime.strptime() method from the datetime module.
+You need to specify the string and the format that matches the string.
+```
 ### 85) How do you merge two dictionaries in Python?
-#Proposed solution by github.com/tushar2704
+
+```
 dict1 = {'a': 1, 'b': 2}
 dict2 = {'c': 3, 'd': 4}
 
 merged_dict = {**dict1, **dict2}
 print("Merged Dictionary:", merged_dict)
-Explanation: To merge two dictionaries in Python, you can use the update() method, the unpacking operator **, or the merge operator | introduced in Python 3.9.
 
-### 86) How do you remove duplicates from a list in
-Python?
-#Proposed solution by github.com/tushar2704
+Explanation:
+To merge two dictionaries in Python, you can use
+ the update() method, the unpacking operator **, or the merge operator | introduced in Python 3.9.
+```
+### 86) How do you remove duplicates from a list in Python?
+```
 def remove_duplicates(lst):
     return list(set(lst))
 
 original_list = [1, 2, 2, 3, 4, 4, 5]
 print("Without duplicates:", remove_duplicates(original_list))
 Explanation: To remove duplicates from a list, you can convert the list to a set and then back to a list, as sets automatically remove duplicates: list(set(my_list)).
+```
 
-### 87) How do you check if a string is a palindrome in
-Python?
-#Proposed solution by github.com/tushar2704
+### 87) How do you check if a string is a palindrome in Python?
+```
 def is_palindrome(s):
     return s == s[::-1]
 
 print(is_palindrome("radar"))  # Output: True
 print(is_palindrome("python")) # Output: False
-Explanation: This function checks if a string is a palindrome by comparing it to its reverse.
 
+Explanation: This function checks if a string is a palindrome by comparing it to its reverse.
+```
 ### 88) How do you reverse a list in Python?
-#Proposed solution by github.com/tushar2704
+
+```
 def reverse_list(lst):
     return lst[::-1]
 
 original_list = [1, 2, 3, 4, 5]
 print("Reversed list:", reverse_list(original_list))
-Explanation: This function reverses a list using the slicing technique.
 
+Explanation: This function reverses a list using the slicing technique.
+```
 ### 89)How do you convert a string to a list of characters in Python?
+```
 s = "hello"
 a = list(s)
 print(a)
-#Output: ['h', 'e', 'l', 'l', 'o']
 
-### 90) How do you check if a string contains only digits
-in Python?
-#Proposed solution by github.com/tushar2704
+#Output: ['h', 'e', 'l', 'l', 'o']
+```
+### 90) How do you check if a string contains only digits?
+```
 def contains_only_digits(s):
     return s.isdigit()
 
 print(contains_only_digits("12345"))  # Output: True
 print(contains_only_digits("123a45")) # Output: False
-Explanation: This function checks if a string contains only digits using the isdigit() method.
 
+```
 ### 91) How do you sort a list of dictionaries in Python based on a specific key?
-#Proposed solution by github.com/tushar2704
+```
 
 from operator import itemgetter
 list_of_dicts = [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 20}, {'name': 'Charlie', 'age': 30}]
 sorted_list = sorted(list_of_dicts, key=itemgetter('age'))
 print(sorted_list)
-Explanation: This code sorts a list of dictionaries based on the ‘age’ key using the sorted() function and itemgetter from the operator module.
 
-### 92) How do you remove all duplicates from a list in
-Python?
-#Proposed solution by github.com/tushar2704
+Explanation: This code sorts a list of dictionaries based on the ‘age’ key using the sorted() function and itemgetter from the operator module.
+```
+### 92) How do you remove all duplicates from a list ?
+```
 def remove_duplicates(lst):
     return list(set(lst))
 
 my_list = [1, 2, 2, 3, 4, 4, 5]
 print(remove_duplicates(my_list))
-Explanation: This function removes duplicates by converting the list to a set, which automatically removes duplicate elements, and then converting it back to a list.
 
-### 93) How do you check if a string contains a specific
-substring in Python?
-#Proposed solution by github.com/tushar2704
+Explanation: This function removes duplicates by converting the list to a set,
+which automatically removes duplicate elements, and then converting it back to a list.
+```
+### 93) How do you check if a string contains a specific substring in Python?
+
+```
 def contains_substring(string, substring):
     return substring in string
 
 print(contains_substring("hello world", "world"))  # Output: True
-Explanation: This function checks if a substring exists within a string using the in keyword.
 
-### 94) How do you sort a list of strings in alphabetical
-order?
-#Proposed solution by github.com/tushar2704
+Explanation: This function checks if a substring exists within a string using the in keyword.
+```
+### 94) How do you sort a list of strings in alphabetical order?
+```
 def sort_strings(lst):
     return sorted(lst)
 
 my_list = ["banana", "apple", "cherry"]
 print(sort_strings(my_list))
-Explanation: This function sorts a list of strings in alphabetical order using the sorted() function.
 
+Explanation: This function sorts a list of strings in alphabetical order using the sorted() function.
+```
 ### 95) How do you iterate over a dictionary in Python?
-#Proposed solution by github.com/tushar2704
+```
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 for key, value in my_dict.items():
     print(f"Key: {key}, Value: {value}")
-Explanation: This code iterates over a dictionary, accessing both keys and values using the .items() method.
+Explanation:
+This code iterates over a dictionary, accessing both keys and values using the .items() method.
+```
 
-### 96) How do you remove duplicates from a list in
-Python?
-#Proposed solution by github.com/tushar2704
+### 96) How do you remove duplicates from a list in Python?
+```
 def remove_duplicates(lst):
     return list(dict.fromkeys(lst))
 
 my_list = [1, 2, 2, 3, 4, 4, 5]
 print(remove_duplicates(my_list))
-Explanation: This function removes duplicates using a dictionary to preserve order, as dictionary keys are unique.
 
+Explanation: This function removes duplicates using a dictionary to preserve order, as dictionary keys are unique.
+```
 ### 97) What is the output of the following code?
-#Proposed solution by github.com/tushar2704
+```
 a = [1, 2, 3]
 b = a
 a.append(4)
@@ -1163,27 +1215,30 @@ print(b)
 Output: [1][2][3][4]
 
 Explanation: Since b is a reference to the same list as a, changes to a will reflect in b.
-
+```
 ### 98) How do you reverse a string in Python?
-#Proposed solution by github.com/tushar2704
+```
 def reverse_string(s):
     return s[::-1]
 
 print(reverse_string("hello"))  # Output: "olleh"
 Explanation: This function reverses a string using slicing.
-
+```
 ### 99) How do you find the length of a list in Python?
-#Proposed solution by github.com/tushar2704
+```
 my_list = [1, 2, 3, 4, 5]
 print(len(my_list))  # Output: 5
-Explanation: The len() function is used to find the number of items in a list.
 
+Explanation: The len() function is used to find the number of items in a list.
+```
 ### 100) How do you check if a list is empty in Python?
-#Proposed solution by github.com/tushar2704
+```
 def is_list_empty(lst):
     return not lst
 
 print(is_list_empty([]))  # Output: True
 print(is_list_empty([1, 2, 3]))  # Output: False
-Explanation: This function checks if a list is empty by evaluating the truthiness of the list. An empty list evaluates to False, so not lst returns True for an empty list.
 
+Explanation: This function checks if a list is empty by evaluating the truthiness of the list.
+An empty list evaluates to False, so not lst returns True for an empty list.
+```
