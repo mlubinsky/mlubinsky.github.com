@@ -1,5 +1,31 @@
 https://proproprogs.ru/
 
+###pip index versions torch
+```
+
+WARNING: pip index is currently an experimental command. It may be removed/changed in a future release without prior warning.
+torch (2.5.1)
+Available versions: 2.5.1, 2.5.0, 2.4.1, 2.4.0, 2.3.1, 2.3.0, 2.2.2, 2.2.1, 2.2.0, 2.1.2, 2.1.1, 2.1.0, 2.0.1, 2.0.0, 1.13.1, 1.13.0, 1.12.1, 1.12.0, 1.11.0
+  INSTALLED: 1.12.1
+  LATEST:    2.5.1
+```
+
+### brew info pytorch
+```
+==> pytorch: stable 2.5.1 (bottled)
+Tensors and dynamic neural networks
+https://pytorch.org/
+Not installed
+From: https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/p/pytorch.rb
+License: BSD-3-Clause
+==> Dependencies
+Build: cmake ✘, ninja ✘, python@3.13 ✘
+Required: abseil ✘, eigen ✘, libuv ✘, libyaml ✔, numpy ✘, openblas ✘, protobuf ✘, pybind11 ✘, sleef ✘, libomp ✘
+==> Requirements
+Build: Xcode (on macOS) ✘
+Required: macOS >= 12 (or Linux) ✔
+```
+
 ## ML Book
 
 http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf 
