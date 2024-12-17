@@ -10,6 +10,8 @@ https://www.manning.com/books/deep-learning-with-python-second-edition François
 
 ## PyTorch
 
+https://www.youtube.com/playlist?list=PLA0M1Bcd0w8xUIMIPSoiW05lDyPNPt4tf (ru)
+
 https://leanpub.com/pytorch
 
 Book https://sebastianraschka.com/blog/2022/ml-pytorch-book.html
