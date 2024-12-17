@@ -991,7 +991,16 @@ ALTER TABLE dbname.table_name ADD columns (column1 string,column2 string) CASCAD
 This changes the columns of a table's metadata and cascades the same change to all the partition metadata.  
 RESTRICT is the default, limiting column change only to table metadata.
 
+
+### Trino / Presto
+
+https://www.theseattledataguy.com/what-is-trino-and-why-is-it-great-at-processing-big-data/#page-content
+
+https://habr.com/ru/articles/863854/
+
+
 ### Presto  Druid Pinot Kudu
+
 Presto  query execution rate that is three times faster than Hive.
 
 <https://support.treasuredata.com/hc/en-us/articles/360001450928-Presto-Known-Limitations>
