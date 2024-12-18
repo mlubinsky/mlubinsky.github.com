@@ -1,5 +1,7 @@
 https://www.youtube.com/playlist?list=PL4_hYwCyhAvaprlx_MnGC5xyKR1qb7Y7L Математика больших данных 
 
+https://poloclub.github.io/transformer-explainer/ Transformer explained
+
 FDTool: a Python application to mine for functional dependencies and candidate keys in tabular data" Matt Buranosky
 https://habr.com/ru/articles/866718/
 
