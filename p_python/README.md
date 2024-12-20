@@ -2,6 +2,8 @@ https://www.pythonmorsels.com/inspecting-python-objects/
 
 https://realpython.com/python-dicts/
 
+https://docs.python.org/3/howto/logging.html  Logging
+
 
 do not use 'if len(list) == 0',   
 use 'if not list' 
