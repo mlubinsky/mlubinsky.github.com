@@ -1,5 +1,7 @@
 https://mpmath.org/ Python math library
 
+https://docs.sympy.org/latest/modules/physics/quantum/index.html
+
 https://pysd.readthedocs.io/en/master/
 
 https://qham.readthedocs.io/en/latest/introduction.html
