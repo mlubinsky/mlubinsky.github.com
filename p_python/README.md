@@ -4,6 +4,7 @@ https://realpython.com/python-dicts/
 
 https://docs.python.org/3/howto/logging.html  Logging
 
+https://mesa.readthedocs.io/stable/ Discrete simulation
 
 do not use 'if len(list) == 0',   
 use 'if not list' 
