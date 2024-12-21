@@ -1,5 +1,7 @@
 https://mpmath.org/ Python math library
 
+https://mesa.readthedocs.io/stable/ Discrete simulation
+
 https://docs.sympy.org/latest/modules/physics/quantum/index.html
 
 https://www.youtube.com/watch?v=EkmBHs5Uo4c Tunneling Calculation with SageMath
