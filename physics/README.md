@@ -49,7 +49,11 @@ https://nicf.net/articles/physics-for-mathematicians/
 
 https://www.youtube.com/@bogolyubovinstitutefortheo9998
 
-https://scienceworld.wolfram.com/physics/DoublePendulum.html   Double Pendulum
+### Double Pendulum
+
+https://scienceworld.wolfram.com/physics/DoublePendulum.html   
+
+https://gereshes.com/2018/11/19/chaos-and-the-double-pendulum/
 
 ### Special relativity
 
