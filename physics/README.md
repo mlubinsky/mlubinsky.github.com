@@ -49,6 +49,14 @@ https://nicf.net/articles/physics-for-mathematicians/
 
 https://www.youtube.com/@bogolyubovinstitutefortheo9998
 
+### Михаил Иванов
+Геометрический взгляд на специальную теорию относительности:
+https://intuit.ru/studies/courses/488/344/info
+
+Геометрические методы в классической теории поля
+https://intuit.ru/studies/courses/512/368/lecture/8704
+
+
 ### Double Pendulum
 
 https://scienceworld.wolfram.com/physics/DoublePendulum.html   
