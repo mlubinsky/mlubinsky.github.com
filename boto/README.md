@@ -1,3 +1,6 @@
+https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+
+
 https://stackoverflow.com/questions/30249069/listing-contents-of-a-bucket-with-boto3
 
 https://stackoverflow.com/questions/27292145/python-boto-list-contents-of-specific-dir-in-bucket
