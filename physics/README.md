@@ -54,6 +54,8 @@ https://www.youtube.com/@bogolyubovinstitutefortheo9998
 https://intuit.ru/studies/courses/488/344/info
 
 Геометрические методы в классической теории поля
+https://intuit.ru/studies/courses/512/368/info
+
 https://intuit.ru/studies/courses/512/368/lecture/8704
 
 
