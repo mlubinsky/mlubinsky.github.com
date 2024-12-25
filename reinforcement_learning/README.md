@@ -1,5 +1,10 @@
 https://habr.com/ru/companies/otus/articles/803041/
 
+Reinforcement Learning: An Overview1
+Kevin P. Murphy
+December 9, 2024
+https://arxiv.org/pdf/2412.05265
+
 https://arxiv.org/abs/2311.07315
 
 https://discord.com/invite/BCfHWaSMkr Aleksei Petrenko
