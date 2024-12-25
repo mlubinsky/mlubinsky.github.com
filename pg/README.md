@@ -55,7 +55,6 @@ ORDER BY
 
 ```
 
-
 https://habr.com/ru/articles/821993/ Статический анализ структуры базы данных  
 https://habr.com/ru/articles/839402/ Статический анализ структуры базы данных  
 
@@ -440,6 +439,8 @@ GROUP BY t.id;
 https://habr.com/ru/companies/otus/articles/819043/
 
 ### Config
+
+https://habr.com/ru/companies/softpoint/articles/869446/
 
 https://tembo.io/blog/optimizing-memory-usage
 
@@ -3039,6 +3040,8 @@ peer authentication on the other hand, is used for local connections and verifie
 <https://habr.com/ru/post/461071/>
 
 ## Explain plan
+
+https://habr.com/ru/companies/spectr/articles/869472/
 
 https://explain.dalibo.com/ 
 
