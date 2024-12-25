@@ -1,7 +1,36 @@
 I bought this:
 https://www.udemy.com/cart/success/1027511410/
 
+For those of you who want to learn Snowflake, I'd recommend these trainings. They are all from Snowflake and they are all free. At the end of the training you get a badge that you can display on your LinkedIn profile.
+1. Snowflake Data Engineering workshop: 
+https://lnkd.in/exZrHjti
+2. Snowflake Data Warehousing workshop: https://lnkd.in/gkHfmT6i
+3. Snowflake Data Lake workshop:
+https://lnkd.in/eFVkXgcW
 
+For a book on Snowflake I recommend Joy Avila's:
+https://lnkd.in/ewuhycqK
+
+If you want to take a certification, I recommend SnowPro Core certification:
+https://lnkd.in/eBWFeMjy
+
+To prepare for the Snowpro Core certification I recommend Tom Bailey's course:
+https://lnkd.in/ePuJEFYx
+
+To learn dbt I recommend this quickstart tutorial, it's free:
+https://lnkd.in/e6mCYPcp
+It shows you how to use dbt and it only takes an hour or two.
+
+And then this mini dbt training: (it's free)
+https://lnkd.in/en8R_T9t
+It teaches you how to build data transformation pipeline on Snowflake, how to create unit test, how to create dbt workflow and how to create visualisation.
+
+If you want a more comprehensive course, check this one: (also free)
+https://lnkd.in/e_D5XapS
+It teaches you about all the basics.
+
+For a book on dbt, I recommend Rui Machado's:
+https://lnkd.in/eCeD4c6i
 
 https://habr.com/ru/companies/otus/articles/843522/
 
