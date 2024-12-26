@@ -1,3 +1,5 @@
+https://lectures.mephi.ru/
+
 https://parlance-labs.com/education/
 
 
