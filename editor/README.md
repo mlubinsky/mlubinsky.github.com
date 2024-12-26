@@ -85,6 +85,9 @@ VS Code: whitespace trimming at file save time from settings:
 
 https://github.com/mhinz/vim-galore
 
+https://www.youtube.com/watch?v=XA2WjJbmmoM
+
+https://www.youtube.com/watch?v=wlR5gYd6um0
 
  
  ### csv plugin
