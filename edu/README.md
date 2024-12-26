@@ -2,6 +2,7 @@ https://lectures.mephi.ru/
 
 https://parlance-labs.com/education/
 
+https://www.mltut.com/mathematics-for-data-science-free-courses
 
 http://coursecatalog.web.cmu.edu/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/#bscurriculumtextcontainer
 
