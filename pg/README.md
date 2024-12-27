@@ -12,6 +12,8 @@ https://philbooth.me/blog/nine-ways-to-shoot-yourself-in-the-foot-with-postgresq
 
 https://notso.boringsql.com/
 
+https://habr.com/ru/companies/tensor/articles/870222/
+
 ### Dynamic SQL
 
 https://habr.com/ru/companies/otus/articles/861240/
