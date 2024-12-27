@@ -1,7 +1,10 @@
 https://www.youtube.com/playlist?list=PL4_hYwCyhAvaprlx_MnGC5xyKR1qb7Y7L Математика больших данных 
 
+100+ LLM Interview Questions for Top Companies
+https://github.com/llmgenai/LLMInterviewQuestions/tree/main  
+
 #### Sklearn; XGBoost; LightGBM; Catboost;
-https://habr.com/ru/companies/otus/articles/869372/
+https://habr.com/ru/companies/otus/articles/869372/  
 
 Компиляторы для глубоких нейросетевых моделей:
 
