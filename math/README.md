@@ -71,6 +71,8 @@ https://news.ycombinator.com/item?id=36921446
 
 ### Latex, Oerleaf, Typst
 
+https://latexeditor.lagrida.com/
+
 https://news.ycombinator.com/item?id=38354422
 
 https://news.ycombinator.com/item?id=39452356
