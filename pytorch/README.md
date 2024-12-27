@@ -1,5 +1,7 @@
 https://proproprogs.ru/
 
+https://habr.com/ru/articles/870426/
+
 ### pip index versions torch
 ```
 
