@@ -1,5 +1,7 @@
 https://www.youtube.com/playlist?list=PL4_hYwCyhAvaprlx_MnGC5xyKR1qb7Y7L Математика больших данных 
 
+https://habr.com/ru/articles/870718/  Наивный байесовский классификатор. Теория и реализация. С нуля
+
 100+ LLM Interview Questions for Top Companies
 https://github.com/llmgenai/LLMInterviewQuestions/tree/main  
 
