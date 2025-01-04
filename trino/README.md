@@ -37,6 +37,27 @@ WITH (
 );
 
 
+Handling Partitioned Data
+For partitioned datasets (e.g., organized by year and month), you can register all partitions under the same table.
+
+Example: Partitioned Data Registration
+Directory structure:
+
+s3a://my-bucket/sales_data/year=2023/month=12/
+Define the table with partitioning:
+
+CREATE TABLE hive.schema_name.sales_data (  
+    id INT,  
+    amount DOUBLE,  
+    sale_date DATE  
+)  
+WITH (  
+    external_location = 's3a://my-bucket/sales_data/',  
+    format = 'PARQUET',  
+    partitioned_by = ARRAY['year', 'month']  
+);
+
+
 No Data Storage:
 Trino acts purely as a query engine and does not manage data storage.
 This requires an additional layer of data management, as you need to maintain other systems for actual data storage,
