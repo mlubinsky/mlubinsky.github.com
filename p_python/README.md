@@ -13,6 +13,10 @@ https://blog.codingconfessions.com/p/the-pythonic-emptiness
 
 https://realpython.com/sort-python-dictionary/  Sort python Dictionary
 
+### Finite State Machine (FSM)
+
+https://habr.com/ru/articles/871544/
+
 ### Zip
 
 https://realpython.com/python-zip-function/
