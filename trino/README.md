@@ -17,4 +17,12 @@ Resource Intensive:
 Trino can be quite resource-intensive, especially in terms of memory usage.
 Because it holds data in memory during query execution, large queries can require significant amounts of RAM, 
 which might not be ideal for smaller setups or environments with limited resources.
+
+Trino and Apache Iceberg
+Trino offers robust support for Apache Iceberg. Trino’s integration with Iceberg allows users to leverage Iceberg’s features, including:
+
+Time Travel: Access data snapshots at specific points in time.
+Schema Evolution: Safely evolve table schema without affecting existing data.
+Efficient Query Execution: Optimised execution plans using Iceberg’s table metadata.
+
 ```
