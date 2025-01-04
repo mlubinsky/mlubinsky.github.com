@@ -27,6 +27,15 @@ WITH (
     format = 'PARQUET'  
 );
 
+CREATE TABLE hive.schema_name.customer_data (  
+    id INT,  
+    name STRING  
+)  
+WITH (  
+    external_location = 's3a://my-bucket/customer_data/',  
+    format = 'PARQUET'  
+);
+
 
 No Data Storage:
 Trino acts purely as a query engine and does not manage data storage.
