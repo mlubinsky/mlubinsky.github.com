@@ -36,6 +36,15 @@ WITH (
     format = 'PARQUET'  
 );
 
+Structured Databases (e.g., Oracle, PostgreSQL):
+--------
+Trino queries them directly without additional setup.
+
+File-Based Systems (e.g., Parquet in MinIO):
+--------
+Trino requires metadata (via Hive or Iceberg) to understand schema and structure.
+A single table can point to a directory with multiple files.
+
 
 Handling Partitioned Data
 For partitioned datasets (e.g., organized by year and month), you can register all partitions under the same table.
