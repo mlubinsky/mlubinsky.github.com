@@ -1,5 +1,8 @@
 ### Trino
 
+https://www.youtube.com/@TrinoDB
+
+
 https://aws.amazon.com/blogs/big-data/top-9-performance-tuning-tips-for-prestodb-on-amazon-emr/
 
 ```
