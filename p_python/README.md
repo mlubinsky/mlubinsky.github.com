@@ -13,6 +13,23 @@ https://blog.codingconfessions.com/p/the-pythonic-emptiness
 
 https://realpython.com/sort-python-dictionary/  Sort python Dictionary
 
+### yeld
+
+Lets create a function that uses yield to deliver a generator.
+```
+def row_fetcher(rows=5):
+    for x in range(rows):
+        yield x
+
+row_fetcher()
+<generator object row_fetcher at 0x105da6380>
+
+
+cursor = row_fetcher()
+print(next(cursor))
+for x in cursor: 
+    print(x)
+```
 ### Finite State Machine (FSM)
 
 https://habr.com/ru/articles/871544/
