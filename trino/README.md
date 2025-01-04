@@ -1,4 +1,7 @@
 ### Trino
+
+https://aws.amazon.com/blogs/big-data/top-9-performance-tuning-tips-for-prestodb-on-amazon-emr/
+
 ```
 
 No Data Storage:
@@ -24,5 +27,12 @@ Trino offers robust support for Apache Iceberg. Trino’s integration with Icebe
 Time Travel: Access data snapshots at specific points in time.
 Schema Evolution: Safely evolve table schema without affecting existing data.
 Efficient Query Execution: Optimised execution plans using Iceberg’s table metadata.
+
+Trino Arhitecture:
+Like many other big data engines there is a form of a coordinator node that then manages
+ multiple worker nodes to process all the work that needs to be done.
+
+An analyst or general user would run their SQL which gets pushed to the coordinator.
+In turn the coordinator then parses, plans, and schedules a distributed query.
 
 ```
