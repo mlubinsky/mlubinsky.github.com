@@ -6,6 +6,27 @@ https://www.youtube.com/@TrinoDB
 https://aws.amazon.com/blogs/big-data/top-9-performance-tuning-tips-for-prestodb-on-amazon-emr/
 
 ```
+Example Metadata Registration with Hive
+CREATE TABLE hive.schema_name.table_name (  
+    id INT,  
+    name STRING  
+)  
+WITH (  
+    external_location = 's3a://my-bucket/path/',  
+    format = 'PARQUET'  
+);
+
+Example Metadata Registration with Iceberg
+
+CREATE TABLE iceberg.schema_name.table_name (  
+    id INT,  
+    name STRING  
+)  
+WITH (  
+    location = 's3a://my-bucket/path/',  
+    format = 'PARQUET'  
+);
+
 
 No Data Storage:
 Trino acts purely as a query engine and does not manage data storage.
