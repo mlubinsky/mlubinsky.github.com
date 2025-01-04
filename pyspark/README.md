@@ -2,6 +2,22 @@ https://medium.com/@suffyan.asad1/introduction-to-aggregate-and-transform-functi
 
 https://medium.com/@suffyan.asad1/spark-leveraging-window-functions-for-time-series-analysis-in-pyspark-03aa735f1bdf
 
+
+### Use ThreadPoolExecutor with PySpark
+```
+def get_count(table):
+    count =spark.read.format("delta").load(table).count()
+    return (table,count)
+
+# Code implementation using ThreadPoolExecutor
+with ThreadPoolExecutor(max_workers=4) as executor:
+    result = list(executor.map(get_count, table_paths))
+
+# creating a dataframe
+results_df = spark.createDataFrame(result, ["table_name", "row_count"])
+results_df.display()
+```
+
 ## DROP NESTED COLUMNS
 ```
 from pyspark.sql.functions import col
