@@ -1,5 +1,7 @@
 ### Trino
 
+https://habr.com/ru/articles/863854/
+
 https://www.youtube.com/@TrinoDB
 
 
