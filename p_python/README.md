@@ -1272,6 +1272,8 @@ https://itnext.io/dependency-injection-in-python-a1e56ab8bdd0
 
 ### Profiling
 
+https://habr.com/ru/articles/871318/
+
 https://github.com/pyutils/line_profiler
 
 https://docs.python.org/3/library/profile.html
