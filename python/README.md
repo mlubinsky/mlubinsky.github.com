@@ -503,7 +503,7 @@ transpose_matrix = [list(item) for item in zip(*mat)]
 print(transpose_matrix)
 ```
 
-Swap Keys and Values in a dictionary
+#### Swap Keys and Values in a dictionary
 
 ```
 dict = {'Name': 'Joy', 'Age': 25, 'Language':'Python'}
@@ -519,21 +519,21 @@ One solution to avoid the above issue is using the get() function to require a v
 city = {'UK':'London','Japan':'Tokyo'}
 print(city.get('Italy'))  get() function can return a None instead of raising an exception when a key doesn’t exist.
   None
-  
+```  
 
 
-to combine two dictionaries:
-
+####  combine two dictionaries:
+```
 def merge_dictionaries(a, b):
     return {**a,**b}
     
 a = { 'x': 1, 'y': 2}
 b = { 'y': 3, 'z': 4}
 print(merge_dictionaries(a, b)) # {'y': 3, 'x': 1, 'z': 4}
+```
 
-
-Convert Two Lists to a Dictionary
-
+#### Convert Two Lists to a Dictionary
+```
 
 def to_dictionary(keys, values):
     return dict(zip(keys, values))
@@ -549,14 +549,9 @@ nums = OrderedDict()
 
 if you are using Python 3.7+, the insertion-order preservation 
 applies to the normal dictionaries as well
+```
 
-
-
-
-
-
-
-Regexep to find leading 0 in month, just after year:
+#### Regexep to find leading 0 in month, just after year:
 ```
 grep -E 'datetime\([[:space:]]*2\d{3}[[:space:]]*,[[:space:]]*0' datetime.txt
 ```
@@ -567,6 +562,7 @@ grep -E 'datetime\([[:space:]]*2\d{3}[[:space:]]*,[[:space:]]*\d+,[[:space:]]*0'
 ```
 
 ### Data structures 
+
 https://betterprogramming.pub/stop-using-python-lists-everywhere-consider-using-deques-instead-74d37441be4e
 
 https://mymasterdesigner.com/2021/07/06/data-structures-with-python-big-guide/
@@ -605,7 +601,7 @@ print('downloaded', link)
 ```
 
 ```
-Now, Python is usually considered to be an interpreted language. 
+Python is usually considered to be an interpreted language. 
 When you run a Python code, the Python interpreter reads the file line-by-line and runs it.
 
 But behind-the-scenes, the source code is compiled into bytecode. 
@@ -805,6 +801,7 @@ https://habr.com/ru/post/648967/
 
 
 ## Static Method in Python: @staticmethod @classmethod @property
+
 https://djangocentral.com/classmethod-and-staticmethod-explained/
 https://djangocentral.com/property-decorator-explained/
 
