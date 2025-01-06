@@ -6,6 +6,8 @@ https://www.mathnet.ru/conf2392
 
 https://www.nobelprize.org/uploads/2018/06/vleck-lecture.pdf QM and magnetism
 
+https://quantum-ods.github.io/qmlcourse/book/linalg/ru/bra-ket.html 
+
 https://www.scottaaronson.com/democritus/lec9.html
 
 https://www.scottaaronson.com/democritus/default.html
