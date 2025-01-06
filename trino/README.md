@@ -5,6 +5,8 @@ https://www.youtube.com/@TrinoDB
 
 https://aws.amazon.com/blogs/big-data/top-9-performance-tuning-tips-for-prestodb-on-amazon-emr/
 
+Config 
+https://trino.io/docs/current/installation/deployment.html
 ```
 Example Metadata Registration with Hive
 CREATE TABLE hive.schema_name.table_name (  
