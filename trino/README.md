@@ -2,6 +2,33 @@
 
 https://habr.com/ru/articles/863854/
 
+```
+тюнинг java virtual machine:
+
+
+-server
+-Xmx96G
+-XX:InitialRAMPercentage=80
+-XX:MaxRAMPercentage=80
+-XX:G1HeapRegionSize=32M
+-XX:+ExplicitGCInvokesConcurrent
+-XX:+ExitOnOutOfMemoryError
+-XX:-OmitStackTraceInFastThrow
+-XX:ReservedCodeCacheSize=1024M
+-XX:PerMethodRecompilationCutoff=10000
+-XX:PerBytecodeRecompilationCutoff=10000
+-Djdk.attach.allowAttachSelf=true
+-Djdk.nio.maxCachedBufferSize=2000000
+-XX:+UnlockDiagnosticVMOptions
+-XX:+UseAESCTRIntrinsics
+-Dfile.encoding=UTF-8
+# Disable Preventive GC for performance reasons (JDK-8293861)
+-XX:-G1UsePreventiveGC  
+# Reduce starvation of threads by GClocker, recommend to set about the number of cpu cores (JDK-8192647)
+-XX:GCLockerRetryAllocationCount=32
+
+```
+
 https://www.youtube.com/@TrinoDB
 
 
