@@ -56,6 +56,52 @@ https://cloudirregular.substack.com/p/the-greatest-resume-ive-ever-seen
 
 https://news.ycombinator.com/item?id=36901303
 
+
+```
+def num_islands(grid):
+    # Function to perform DFS to mark all connected cells as visited
+    def dfs(x, y):
+        # Check if the current cell is within bounds and is a 1
+        if x < 0 or x >= len(grid) or y < 0 or y >= len(grid[0]) or grid[x][y] == 0:
+            return
+
+        # Mark the current cell as visited (change 1 to 0)
+        grid[x][y] = 0
+
+        # Visit all neighboring cells
+        dfs(x + 1, y)  # Down
+        dfs(x - 1, y)  # Up
+        dfs(x, y + 1)  # Right
+        dfs(x, y - 1)  # Left
+
+    if not grid or not grid[0]:
+        return 0
+
+    num_islands = 0
+
+    # Iterate over each cell in the grid
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            # If the cell is a 1, it's part of an island
+            if grid[i][j] == 1:
+                num_islands += 1  # Increment the island count
+                dfs(i, j)  # Perform DFS to mark the entire island as visited
+
+    return num_islands
+
+# Example usage
+grid = [
+    [1, 1, 0, 0, 0],
+    [1, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0],
+    [0, 0, 0, 1, 1]
+]
+
+print("Number of islands:", num_islands(grid))
+
+```
+
+
 ### Problems
 
 https://allaboutalgorithms.com/finding-closest-points-faster-than-o-n%C2%B2-ea5d005bc911
