@@ -24,3 +24,5 @@ https://www.cis.upenn.edu/~cis5150/linalg-I-f.pdf
 https://calnewport.com/mastering-linear-algebra-in-10-days-astounding-experiments-in-ultra-learning/
 
 https://news.ycombinator.com/item?id=42633805
+
+https://mathacademy.com/courses/linear-algebra
