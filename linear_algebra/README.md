@@ -28,3 +28,7 @@ https://news.ycombinator.com/item?id=42633805
 https://mathacademy.com/courses/linear-algebra
 
 https://mathacademy.com/courses/mathematics-for-machine-learning
+
+ https://www2.math.upenn.edu/~ghrist/preprints/LAEF.pdf
+
+https://x.com/robertghrist/status/1874105560641220830
