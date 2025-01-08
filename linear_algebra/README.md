@@ -20,3 +20,5 @@ Linear Algebra for Computer Vision,
 Robotics, and Machine Learning
 
 https://www.cis.upenn.edu/~cis5150/linalg-I-f.pdf
+
+https://calnewport.com/mastering-linear-algebra-in-10-days-astounding-experiments-in-ultra-learning/
