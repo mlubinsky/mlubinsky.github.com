@@ -271,7 +271,12 @@ https://habr.com/ru/post/681940/
 
 <https://humanreadablemag.com/issues/0/articles/the-wonders-of-the-suffix-tree-through-the-lens-of-ukkonen%E2%80%99s-algorithm/>
 
+### B-trees
+
 https://benjamincongdon.me/blog/2021/08/17/B-Trees-More-Than-I-Thought-Id-Want-to-Know/
+
+https://newvick.com/b-trees-database-indexes/
+
 
 https://erthalion.info/2020/11/28/evolution-of-btree-index-am/
 
