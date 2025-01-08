@@ -5,7 +5,7 @@ https://habr.com/ru/articles/870718/  Наивный байесовский кл
 100+ LLM Interview Questions for Top Companies
 https://github.com/llmgenai/LLMInterviewQuestions/tree/main  
 
-Mathematics for machine learning book
+Mathematics for machine learning book  https://mml-book.github.io/
 https://course.ccs.neu.edu/ds4420sp20/readings/mml-book.pdf
 
 Book
