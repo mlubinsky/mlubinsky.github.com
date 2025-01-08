@@ -6,3 +6,5 @@ https://textbooks.math.gatech.edu/ila/
 http://immersivemath.com/ila/index.html
 
 https://betterexplained.com/articles/linear-algebra-guide/
+
+https://www.fast.ai/posts/2017-07-17-num-lin-alg.html
