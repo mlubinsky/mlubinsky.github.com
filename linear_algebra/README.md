@@ -26,3 +26,5 @@ https://calnewport.com/mastering-linear-algebra-in-10-days-astounding-experiment
 https://news.ycombinator.com/item?id=42633805
 
 https://mathacademy.com/courses/linear-algebra
+
+https://mathacademy.com/courses/mathematics-for-machine-learning
