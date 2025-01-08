@@ -5,6 +5,9 @@ https://habr.com/ru/articles/870718/  Наивный байесовский кл
 100+ LLM Interview Questions for Top Companies
 https://github.com/llmgenai/LLMInterviewQuestions/tree/main  
 
+Book
+https://github.com/abhishekkrthakur/approachingalmost/blob/master/AAAMLP.pdf
+
 #### Sklearn; XGBoost; LightGBM; Catboost;
 https://habr.com/ru/companies/otus/articles/869372/  
 
