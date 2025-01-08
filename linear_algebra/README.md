@@ -22,6 +22,8 @@ https://www.cis.upenn.edu/~cis5150/linalg-I-f.pdf
 https://calnewport.com/mastering-linear-algebra-in-10-days-astounding-experiments-in-ultra-learning/
 
 Demo code in the Julia language to accompany the book "Linear Algebra for Data Science, Machine Learning, and Signal Processing" 
+https://www.cambridge.org/highereducation/books/linear-algebra-for-data-science-machine-learning-and-signal-processing/1D558680AF26ED577DBD9C4B5F1D0FED#overview
+
 https://github.com/JeffFessler/book-la-demo
 
 https://news.ycombinator.com/item?id=42633805
