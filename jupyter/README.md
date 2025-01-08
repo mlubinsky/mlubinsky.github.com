@@ -1,3 +1,7 @@
+### Book
+Python for Data Analysis, 3E
+https://wesmckinney.com/book/
+
 ### Marimo
 
 https://github.com/marimo-team/marimo
