@@ -16,12 +16,13 @@ https://pabloinsente.github.io/intro-linear-algebra
 
 https://hefferon.net/linearalgebra/
 
-Linear Algebra for Computer Vision,
-Robotics, and Machine Learning
-
+Linear Algebra for Computer Vision, Robotics, and Machine Learning  
 https://www.cis.upenn.edu/~cis5150/linalg-I-f.pdf
 
 https://calnewport.com/mastering-linear-algebra-in-10-days-astounding-experiments-in-ultra-learning/
+
+Demo code in the Julia language to accompany the book "Linear Algebra for Data Science, Machine Learning, and Signal Processing" 
+https://github.com/JeffFessler/book-la-demo
 
 https://news.ycombinator.com/item?id=42633805
 
