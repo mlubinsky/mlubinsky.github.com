@@ -8,6 +8,10 @@ https://github.com/llmgenai/LLMInterviewQuestions/tree/main
 Mathematics for machine learning book  https://mml-book.github.io/
 https://course.ccs.neu.edu/ds4420sp20/readings/mml-book.pdf
 
+Machine learning in production
+https://mlip-cmu.github.io/book/
+
+
 Book
 https://github.com/abhishekkrthakur/approachingalmost/blob/master/AAAMLP.pdf
 
