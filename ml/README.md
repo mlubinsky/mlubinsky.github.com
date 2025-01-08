@@ -8,6 +8,8 @@ https://github.com/llmgenai/LLMInterviewQuestions/tree/main
 Book
 https://github.com/abhishekkrthakur/approachingalmost/blob/master/AAAMLP.pdf
 
+https://www.youtube.com/@abhishekkrthakur
+
 #### Sklearn; XGBoost; LightGBM; Catboost;
 https://habr.com/ru/companies/otus/articles/869372/  
 
