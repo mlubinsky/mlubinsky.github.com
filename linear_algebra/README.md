@@ -1,5 +1,8 @@
 https://hn.algolia.com/?dateRange=all&page=0&prefix=false&query=linear%20algebra&sort=byPopularity&type=story
 
+гельфанд линейная алгебра  
+https://ikfia.ysn.ru/wp-content/uploads/2018/01/Gelfand1971ru.pdf
+
 https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
 
 https://linear.axler.net/ Linear Algebra done right 4ed  
