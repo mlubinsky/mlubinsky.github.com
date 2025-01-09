@@ -75,6 +75,8 @@ This command will list all directories in the current directory and its subdirec
 
 https://mh-nexus.de/en/hxd/
 
+https://mark0.net/soft-trid-e.html
+
 ```
 1. Check File Extensions
 7-Zip: Multi-volume archives created by 7-Zip usually have extensions like:
@@ -120,11 +122,10 @@ ZIP Tools (for .zip files):
  
 unzip -l <file.zip>
 If it’s a standard ZIP archive, the tool will process it.
-5. Look for Comments or Logs
-Sometimes, compression utilities add comments or metadata about the creator. To view these:
 
-Open the archive with a compatible utility and look for comments or embedded metadata.
-6. Use File Analysis Tools
+ 
+ 
+5. Use File Analysis Tools
 If you’re still unsure:
 
 Use TrID (a file identifier tool) to detect the file type and utility:
