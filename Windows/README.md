@@ -13,7 +13,7 @@ echo %%date%% %%time%%
 
 ```
 
-### Fild file size:
+### Find file size:
 ```
 To find all files with the prefix 1.gps in all subdirectories and print their names and sizes,
 you can use the dir command with a search pattern and filter out the lines that contain the file size.
@@ -66,6 +66,72 @@ You can also combine /d with /r to recursively iterate through directories. For 
  
 for /r /d %i in (*) do echo %i
 This command will list all directories in the current directory and its subdirectories.
+```
+
+
+
+ 
+### Detect which compression utility was used to create a multi-volume ZIP archive downloaded to a Windows machine, follow these steps:
+
+https://mh-nexus.de/en/hxd/
+
+```
+1. Check File Extensions
+7-Zip: Multi-volume archives created by 7-Zip usually have extensions like:
+.7z.001, .7z.002, etc.
+WinRAR: Multi-volume archives created by WinRAR usually have extensions like:
+.part1.rar, .part2.rar, etc., or
+.rar, .r01, .r02, etc. (older format).
+Standard ZIP Tools: If the archive has extensions like .zip, .z01, .z02, etc.,
+it might be created by tools that adhere to the ZIP specification (e.g., WinZip or similar).
+
+2. Inspect the File Headers
+The file header (the first few bytes of a file) contains information about the archive format.
+
+Open the first part of the archive (.001, .part1.rar, .z01, etc.) in a hex editor (e.g., HxD) and look for the file signature:
+7-Zip: Signature starts with 37 7A BC AF 27 1C (ASCII: 7z....).
+WinRAR: Signature starts with 52 61 72 21 1A 07 00 (ASCII: Rar!...).
+ZIP: Signature starts with 50 4B 03 04 (ASCII: PK..).
+
+
+3. Check Metadata with Tools
+Use archive utilities to inspect the metadata and structure of the first file:
+
+7-Zip: Open the first part of the archive with 7-Zip File Manager.
+ It will usually recognize the format and may show details of the creator utility in the properties.
+WinRAR: Open the archive with WinRAR and check its properties (Alt+Enter).
+ZIP Tools: Tools like WinZip or PeaZip can analyze ZIP files.
+
+
+4. Use Command-Line Tools
+Run the appropriate command for each utility to analyze the file:
+
+7-Zip:
+ 
+7z l <file.7z.001>
+If it was created by 7-Zip, the tool will list its contents successfully.
+WinRAR:
+
+ 
+rar l <file.part1.rar>
+If it was created by WinRAR, the command will list its contents.
+ZIP Tools (for .zip files):
+
+ 
+unzip -l <file.zip>
+If it’s a standard ZIP archive, the tool will process it.
+5. Look for Comments or Logs
+Sometimes, compression utilities add comments or metadata about the creator. To view these:
+
+Open the archive with a compatible utility and look for comments or embedded metadata.
+6. Use File Analysis Tools
+If you’re still unsure:
+
+Use TrID (a file identifier tool) to detect the file type and utility:
+bash
+Copy code
+trid <file.001>
+Use Binwalk (for advanced analysis of file structures).
 ```
 
 ### WinRaR
