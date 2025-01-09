@@ -68,8 +68,9 @@ for /r /d %i in (*) do echo %i
 This command will list all directories in the current directory and its subdirectories.
 ```
 
+### 7z
 
-
+7z x archive.7z.001 -oC:\path\to\output
  
 ### Detect which compression utility was used to create a multi-volume ZIP archive downloaded to a Windows machine, follow these steps:
 
