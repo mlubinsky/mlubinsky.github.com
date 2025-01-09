@@ -34,6 +34,11 @@ https://habr.com/ru/post/546946/
 
 ## C
 
+Book: C Interfaces and implementation
+https://github.com/drh/cii
+
+https://news.ycombinator.com/item?id=42605848 Pull Allocator , Aren
+
 https://accu.org/bookreviews/2020/glassborow_1952/ Book "Effective C" Robert C. Seacord
 
 https://modernc.gforge.inria.fr/   Book "Modern C" Jens Gustedt
