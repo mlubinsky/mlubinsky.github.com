@@ -74,6 +74,9 @@ This command will list all directories in the current directory and its subdirec
  
 ### Detect which compression utility was used to create a multi-volume ZIP archive downloaded to a Windows machine, follow these steps:
 
+PKETX    
+PK
+
 https://mh-nexus.de/en/hxd/
 
 https://mark0.net/soft-trid-e.html
