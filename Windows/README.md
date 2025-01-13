@@ -70,6 +70,23 @@ This command will list all directories in the current directory and its subdirec
 
 ### 7z
 
+7z t ArchiveName.zip.001
+Explanation:
+
+t stands for "test archive" and checks the integrity of the files without extracting them.
+ArchiveName.zip.001 is the first file in the multi-volume archive. 7-Zip will automatically process the rest of the parts.
+Check the Output:
+
+If the archive is intact, you'll see a message like:
+csharp
+
+Everything is OK
+If the archive is corrupted, you'll see error messages such as:
+vbnet
+Copy code
+ERROR: Data error in 'filename'
+
+
 7z x archive.7z.001 -oC:\path\to\output
  
 ### Detect which compression utility was used to create a multi-volume ZIP archive downloaded to a Windows machine, follow these steps:
