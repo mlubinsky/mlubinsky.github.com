@@ -141,6 +141,17 @@ Use Binwalk (for advanced analysis of file structures).
 
 ### WinRaR
 ```
+
+
+WinRAR t -v ArchiveName.part1.zip
+Replace ArchiveName.part1.zip with the name of the first file in the multi-volume archive.
+
+Explanation:
+
+t tells WinRAR to test the archive.
+-v enables volume processing (necessary for multi-volume archives).
+The .part1.zip file is the starting point for multi-volume archives. WinRAR will automatically process all parts.
+
 "C:\Program Files\WinRAR\WinRAR.exe" t filename.part1.rar
 
 Replace filename.part1.rar with the actual name of the first part of your archive.
