@@ -47,8 +47,8 @@ pip install numpy tensorflow
 
 3. Download LiteRT Source Code
 Clone the LiteRT repository:
- 
-git clone https://github.com/google/litert.git
+git clone https://github.com/RT-Thread/rt-thread.git 
+wrong: git clone https://github.com/google/litert.git
 cd litert
 
 4. Build LiteRT for Testing
