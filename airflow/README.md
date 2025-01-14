@@ -1,5 +1,6 @@
 https://habr.com/ru/articles/866542/
 
+https://habr.com/ru/articles/873668/  Airflow in Docker on Mac
 
 https://www.youtube.com/watch?v=J1wze8tUvw0
 
