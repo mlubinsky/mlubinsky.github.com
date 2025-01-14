@@ -10,7 +10,7 @@ https://ai.google.dev/edge/litert
 ```
 
 ChatGPT said:
-ChatGPT
+
 To use LiteRT on your MacBook or Windows machine with the goal of deploying it to embedded firmware, you’ll need to follow these steps to set up, configure, and adapt LiteRT for your target environment.
 
 1. Understand LiteRT and Its Purpose
@@ -34,7 +34,7 @@ pip install numpy tensorflow
 On Windows
 ----------
 Install Bazel:
-Download and install from Bazel's website.
+Download and install from Bazel's website. https://bazel.build/
 Add Bazel to your system PATH during installation.
 Install CMake and Ninja:
 Install from CMake and Ninja.
