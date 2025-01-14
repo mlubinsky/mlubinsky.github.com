@@ -7,6 +7,12 @@
 
 <https://github.com/margaretmz/awesome-tflite>
 
+https://blog.tensorflow.org/2023/03/tensorflow-with-matlab.html
+
+https://ai.google.dev/edge/litert/microcontrollers/overview
+
+http://rnd-jira.ssi.samsung.com:8080/browse/LOCSW-23824
+
 ## Sound
 
 https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/micro/examples/micro_speech/train 
