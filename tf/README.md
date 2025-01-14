@@ -8,6 +8,69 @@
 https://ai.google.dev/edge/litert
 
 ```
+LiteRT, formerly known as TensorFlow Lite, is Google's high-performance runtime for on-device AI. The project's source code is available on GitHub:
+
+https://github.com/google-ai-edge/LiteRT
+
+This repository includes the core runtime and tools for deploying machine learning models on various devices.
+For comprehensive documentation and additional resources, visit the official LiteRT page:
+
+https://ai.google.dev/edge/litert
+
+Please note that, as of now, the LiteRT repository is not intended for open-source development because it pulls in existing TensorFlow code via a git submodule.
+The development team plans to evolve the repository to a point where developers can directly build and contribute. Until then, contributions should be directed to the existing TensorFlow Lite repository. 
+GITHUB
+
+For installation, LiteRT supports Python versions 3.9, 3.10, and 3.11 on Linux and macOS.
+Ensure you have the appropriate environment set up before integrating LiteRT into your projects. 
+GITHUB
+
+For building LiteRT with CMake, detailed instructions are available here:
+
+https://ai.google.dev/edge/litert/build/cmake
+
+This guide provides step-by-step instructions for building the LiteRT library using the CMake tool on various operating systems. 
+GOOGLE AI FOR DEVELOPERS
+
+For building LiteRT for ARM-based computers, refer to:
+
+https://ai.google.dev/edge/litert/build/arm
+
+This page describes how to build the LiteRT libraries for ARM-based computers, supporting two build systems and their respective features. 
+GOOGLE AI FOR DEVELOPERS
+
+For understanding the C++ library for microcontrollers, visit:
+
+https://ai.google.dev/edge/litert/microcontrollers/library
+
+This document outlines the basic structure of the C++ library and provides information about creating your own project. 
+GOOGLE AI FOR DEVELOPERS
+
+For an overview of LiteRT for Microcontrollers, see:
+
+https://ai.google.dev/edge/litert/microcontrollers/overview
+
+This page provides an overview of LiteRT for Microcontrollers, designed to run machine learning models on devices with limited memory. 
+GOOGLE AI FOR DEVELOPERS
+
+For information on TensorFlow Lite Model Maker, refer to:
+
+https://ai.google.dev/edge/litert/libraries/modify
+
+Model Maker allows you to train a TensorFlow Lite model using custom datasets in just a few lines of code. 
+GOOGLE AI FOR DEVELOPERS
+
+For Maven Central repository information, see:
+
+https://central.sonatype.com/artifact/io.github.google-ai-edge/litert
+
+This page provides information about the LiteRT library artifact available in the Maven Central repository. 
+MAVEN CENTRAL
+
+For more details and updates, keep an eye on the official LiteRT documentation and the GitHub repository.
+
+
+
 
 ChatGPT said:
 
