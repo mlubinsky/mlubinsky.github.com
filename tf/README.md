@@ -5,6 +5,8 @@
 
 ## TFLite
 
+https://ai.google.dev/edge/litert
+
 <https://github.com/margaretmz/awesome-tflite>
 
 https://blog.tensorflow.org/2023/03/tensorflow-with-matlab.html
