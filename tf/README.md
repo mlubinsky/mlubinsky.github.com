@@ -7,6 +7,81 @@
 
 https://ai.google.dev/edge/litert
 
+```
+How to compile and run Google's LiteRT on firmware?
+
+ChatGPT said:
+ 
+To compile and run Google's LiteRT (a lightweight runtime often used for neural networks or embedded systems) on firmware, follow these general steps. The exact process may vary based on the specific hardware platform, toolchain, and firmware environment you are using.
+
+1. Understand LiteRT and Your Target Hardware
+
+LiteRT is typically designed for deployment on embedded systems with constrained resources.
+Confirm your target hardware supports the requirements for LiteRT:
+Processor architecture (e.g., ARM Cortex-M, RISC-V, etc.).
+Memory and storage constraints.
+Peripheral or OS capabilities (if any).
+
+2. Set Up the Development Environment
+Install Required Tools
+Install a suitable cross-compilation toolchain for your hardware:
+For ARM: Use the GNU Arm Embedded Toolchain (download).
+For RISC-V: Use the RISC-V GCC Toolchain.
+Install CMake and Ninja (if required for LiteRT's build system).
+Install any SDK or board support package (BSP) provided by your hardware vendor.
+Download LiteRT
+Clone or download the LiteRT source code:
+ 
+git clone https://github.com/google/litert.git
+cd litert
+
+3. Configure LiteRT for Firmware
+Check the README.md or documentation provided with LiteRT to identify any specific build options for embedded platforms.
+Modify LiteRT's configuration files as necessary:
+Specify the target platform, architecture, and toolchain.
+Configure memory allocation and optimization settings.
+Example (if LiteRT uses CMake):
+
+mkdir build && cd build
+cmake .. -DCMAKE_TOOLCHAIN_FILE=path_to_toolchain.cmake -DLITERT_TARGET=embedded
+Replace path_to_toolchain.cmake with the path to your toolchain file (specific to your hardware architecture).
+
+4. Build LiteRT
+Run the build command:
+
+make
+Or, if using Ninja:
+
+ninja
+
+The output will include a compiled LiteRT binary or library (e.g., .a or .elf file).
+
+5. Integrate LiteRT with Firmware
+Standalone LiteRT: If LiteRT runs directly on bare metal, link the LiteRT binary with your firmware application.
+RTOS or OS Integration:
+If your firmware uses an RTOS (e.g., FreeRTOS or Zephyr), integrate LiteRT into the RTOS project by adding it as a module or task.
+Ensure LiteRT initialization code is called during the firmware startup.
+
+6. Flash LiteRT Firmware to the Device
+Connect your target hardware to your development machine.
+Use the appropriate flashing tool:
+For ARM Cortex-M devices: Use OpenOCD, ST-Link, or the vendor-provided flashing tool.
+For RISC-V: Use J-Link or a similar debugger.
+Example:
+ 
+Copy code
+openocd -f interface/stlink.cfg -f target/stm32f4x.cfg -c "program build/output.elf verify reset exit"
+
+7. Run and Test LiteRT
+Power on the hardware and monitor the output using a serial terminal (e.g., PuTTY, Tera Term) connected to the device's UART port.
+Test LiteRT functionality by running example models or workloads provided in the LiteRT repository.
+
+8. Debugging and Optimization
+If the firmware does not work as expected, use debugging tools like GDB to identify issues.
+Optimize LiteRT's performance and memory usage to suit your hardware's constraints.
+
+```
+
 <https://github.com/margaretmz/awesome-tflite>
 
 https://blog.tensorflow.org/2023/03/tensorflow-with-matlab.html
