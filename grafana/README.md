@@ -1,3 +1,46 @@
+### Grafana + Jira integration
+https://jira.readthedocs.io/
+https://pypi.org/project/jira/
+
+```
+import jira
+from jira import exceptions
+#---------------------------------
+def jiraLogin(username, password):
+#----------------------------------
+    input = {"jira_host": "http://105.128.81.140:8080", "jira_user": "{}".format(username),"jira_password": "{}".format(password)}
+    jira_host_url = input["jira_host"]
+    try:
+          jiraRes = jira.JIRA(server=jira_host_url, basic_auth=(input["jira_user"], input["jira_password"]), max_retries=0)
+    except exceptions.JIRAError as e:
+        output["jira_operation_success"] = False
+        output["exception_type"] = "JIRAError"
+        output["failure_exception_url"] = str(e.url)
+        output["failure_exception_sent_headers"] = str(e.response.request.headers)
+        output["failure_exception_response_headers"] = str(e.response.headers)
+    except Exception as e:
+        output["jira_operation_success"] = False
+        output["exception_type"] = "Exception"
+        output["failure_exception"] = str(e)
+    if jiraRes:
+        print("Jira login successful.")
+        return jiraRes.user(input["jira_user"]).emailAddress
+    else:
+        return ""
+#---------------------------------------
+def loginhandler(user, directory=None):
+#---------------------------------------
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        directory = request.form['scanresultdirectory']
+        ssi = 'ssi' in request.form and request.form['ssi'] == 'on'
+        if ssi:
+            try:
+                user = jiraLogin(username, password)
+```
+
+
 https://habr.com/ru/articles/857258/  Вышла Grafana 11.3
 
 https://community.grafana.com/t/how-to-add-extra-info-in-tooltips-on-grafana-time-series-dashboard-based-on-sql/114297
