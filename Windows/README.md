@@ -1,3 +1,56 @@
+# Add strings to csv
+```
+import csv
+
+def add_strings_to_csv(strings, file_name):
+    """
+    Adds strings to a CSV file if the part of the string before the first comma 
+    does not already exist in the first column of the file.
+    
+    Args:
+        strings (list): List of strings to add to the file.
+        file_name (str): The name of the CSV file (with .csv extension).
+    """
+    # Read existing rows from the file to check the first column
+    existing_values = set()
+    try:
+        with open(file_name, mode='r', newline='', encoding='utf-8') as csv_file:
+            reader = csv.reader(csv_file)
+            # Skip the header
+            next(reader, None)
+            # Collect the first column values
+            for row in reader:
+                if row:  # Ensure the row is not empty
+                    existing_values.add(row[0])
+    except FileNotFoundError:
+        # If file doesn't exist, we assume it's empty
+        pass
+
+    # Prepare new rows to add
+    rows_to_add = []
+    for string in strings:
+        # Get the part before the first comma
+        part_before_comma = string.split(',', 1)[0]
+        if part_before_comma not in existing_values:
+            rows_to_add.append(string.split(','))  # Split into columns
+
+    # Append the new rows to the file
+    with open(file_name, mode='a', newline='', encoding='utf-8') as csv_file:
+        writer = csv.writer(csv_file)
+        for row in rows_to_add:
+            writer.writerow(row)
+
+# Example usage:
+strings = [
+    "abc,123,xyz",
+    "def,456,uvw",
+    "abc,789,pqr"  # This will not be added if "abc" is already in the first column
+]
+file_name = "example.csv"
+add_strings_to_csv(strings, file_name)
+```
+
+
 ### findstr
 
 ### Rigrep for non-standard extension
