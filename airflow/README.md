@@ -2,6 +2,8 @@ https://habr.com/ru/articles/866542/
 
 https://habr.com/ru/articles/873668/  Airflow in Docker on Mac
 
+https://towardsdatascience.com/airflow-data-intervals-a-deep-dive-15d0ccfb0661
+
 https://www.youtube.com/watch?v=J1wze8tUvw0
 
 создание шаблонных DAG на основе конфигурационных и коллективных файлов для повышения эффективности работы с AirFlow.  
