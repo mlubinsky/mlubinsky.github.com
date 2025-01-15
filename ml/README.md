@@ -2,6 +2,8 @@ https://www.youtube.com/playlist?list=PL4_hYwCyhAvaprlx_MnGC5xyKR1qb7Y7L Мат�
 
 https://habr.com/ru/articles/870718/  Наивный байесовский классификатор. Теория и реализация. С нуля
 
+https://p.migdal.pl/blog/2025/01/dont-use-cosine-similarity   
+
 100+ LLM Interview Questions for Top Companies
 https://github.com/llmgenai/LLMInterviewQuestions/tree/main  
 
