@@ -1,3 +1,16 @@
+http://localhost:3000
+
+```
+The default settings for a Grafana instance are stored in the $WORKING_DIR/conf/defaults.ini file. 
+Do not change this file.
+
+Depending on your OS, your custom configuration file is either the $WORKING_DIR/conf/custom.ini file or the /usr/local/etc/grafana/grafana.ini file. 
+The custom configuration file path can be overridden using the --config parameter.
+```
+https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/
+
+Grafana's default login credentials are username: "admin" and password: "admin"
+
 ### Grafana + Jira integration
 https://jira.readthedocs.io/
 https://pypi.org/project/jira/
