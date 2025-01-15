@@ -1,5 +1,11 @@
 https://www.youtube.com/feed/playlists
 
+
+### Unified System Interface, framework, server, GUI and Remote API
+https://unisi.tech/
+
+https://github.com/unisi-tech/unisi
+
 ### Ask HN: What open source projects need help?
 
 https://github.com/topics/help-wanted
