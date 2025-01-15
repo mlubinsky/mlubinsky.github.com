@@ -3,6 +3,8 @@ https://hn.algolia.com/?dateRange=all&page=0&prefix=false&query=linear%20algebra
 
 https://terrytao.wordpress.com/wp-content/uploads/2016/12/linear-algebra-notes.pdf
 
+https://setosa.io/ev/eigenvectors-and-eigenvalues/
+
 
 ### гельфанд линейная алгебра  
 https://ikfia.ysn.ru/wp-content/uploads/2018/01/Gelfand1971ru.pdf
