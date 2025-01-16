@@ -15,6 +15,9 @@ https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/
 Grafana's default login credentials are username: "admin" and password: "admin"
 
 ### Grafana + Jira integration
+
+https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/generic-oauth 
+
 https://jira.readthedocs.io/
 https://pypi.org/project/jira/
 
