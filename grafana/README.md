@@ -100,15 +100,19 @@ def loginhandler(user, directory=None):
             try:
                 user = jiraLogin(username, password)
 
-
+```
+### How to configure Grafana to accept my Jira credentials?
+```
 I am using Grafana. Also I am using Jira.
 Grafana login page asks for user and password.
-How to configure Grafana to accept my Jira credentials?
 I know HTTP end point for Jira login.
 
 ChatGPT said:
  
-To configure Grafana to accept your Jira credentials, you can use Jira as an authentication provider for Grafana via Generic OAuth2 or HTTP-based authentication. Here's how you can set it up using the Jira login HTTP endpoint:
+To configure Grafana to accept your Jira credentials, you can use Jira as an authentication provider for Grafana
+via Generic OAuth2 or HTTP-based authentication.
+
+Here's how you can set it up using the Jira login HTTP endpoint:
 
 Steps to Configure Grafana for Jira Authentication:
 Enable OAuth2 in Grafana Configuration:
