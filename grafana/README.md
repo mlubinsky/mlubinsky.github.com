@@ -20,7 +20,8 @@ https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configu
 
 ```
 
-http://localhost:3000/connections/datasources/new - add Jira as datasource
+http://localhost:3000/connections/datasources/new - add Jira as datasource: No valid Grafana Enterprise license detected.
+
 
 1. Verify Jira OAuth 2.0 Support
 
