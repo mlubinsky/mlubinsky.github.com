@@ -54,6 +54,63 @@ def loginhandler(user, directory=None):
         if ssi:
             try:
                 user = jiraLogin(username, password)
+
+
+I am using Grafana. Also I am using Jira.
+Grafana login page asks for user and password.
+How to configure Grafana to accept my Jira credentials?
+I know HTTP end point for Jira login.
+
+ChatGPT said:
+ 
+To configure Grafana to accept your Jira credentials, you can use Jira as an authentication provider for Grafana via Generic OAuth2 or HTTP-based authentication. Here's how you can set it up using the Jira login HTTP endpoint:
+
+Steps to Configure Grafana for Jira Authentication:
+Enable OAuth2 in Grafana Configuration:
+
+Open Grafana's configuration file (grafana.ini).
+
+Navigate to the [auth.generic_oauth] section.
+
+Add the following configuration details:
+
+[auth.generic_oauth]
+enabled = true
+name = Jira
+allow_sign_up = true
+client_id = <your_client_id>
+client_secret = <your_client_secret>
+auth_url = <jira_auth_endpoint>
+token_url = <jira_token_endpoint>
+api_url = <jira_user_info_endpoint>
+scopes = openid profile email
+
+Replace the <jira_auth_endpoint>, <jira_token_endpoint>, and <jira_user_info_endpoint> with the corresponding Jira OAuth2 endpoints.
+
+Set Up OAuth2 App in Jira:
+
+Log in to Jira as an admin.
+Navigate to the OAuth2 settings in your Jira admin panel.
+Create a new OAuth2 application:
+Provide a name.
+Specify the redirect URL as http://<grafana-url>/login/generic_oauth.
+Jira will generate a Client ID and Client Secret. Copy these and use them in the grafana.ini file.
+Restart Grafana:
+
+Save your changes in grafana.ini.
+Restart the Grafana service:
+
+ 
+sudo systemctl restart grafana-server
+Test the Configuration:
+
+Open the Grafana login page.
+You should now see the "Sign in with Jira" option.
+Clicking it will redirect you to Jira for authentication. Once authenticated, you will be redirected back to Grafana.
+Troubleshoot:
+
+If there are issues, check the Grafana server logs (/var/log/grafana/grafana.log) for errors.
+
 ```
 
 
