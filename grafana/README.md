@@ -19,6 +19,9 @@ Grafana's default login credentials are username: "admin" and password: "admin"
 https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/generic-oauth 
 
 ```
+
+http://localhost:3000/connections/datasources/new - add Jira as datasource
+
 1. Verify Jira OAuth 2.0 Support
 
 Check Jira Version: Ensure your Jira version supports OAuth 2.0.
