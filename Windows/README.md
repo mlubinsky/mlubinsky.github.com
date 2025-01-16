@@ -1,4 +1,4 @@
-# Add strings to csv
+# Add records to csv if they do s not exist 
 ```
 import csv
 
