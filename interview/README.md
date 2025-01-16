@@ -1,3 +1,11 @@
+###
+
+<https://www.algoexpert.io/systems/product>
+
+<https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
+
+
+
 https://www.linkedin.com/my-items/saved-posts/
 
 https://vurt.org/articles/twelve-rules/
