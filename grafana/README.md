@@ -18,6 +18,48 @@ Grafana's default login credentials are username: "admin" and password: "admin"
 
 https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/generic-oauth 
 
+```
+. Verify Jira OAuth 2.0 Support
+
+Check Jira Version: Ensure your Jira version supports OAuth 2.0.
+Jira Documentation: Refer to the official Jira documentation for specific instructions on enabling and configuring OAuth 2.0.
+
+2. Create a Jira Application
+
+Jira Administration: Access Jira's administration panel.   
+Create Application: Create a new application within Jira specifically for Grafana.
+This process will generate a Client ID and Client Secret.
+Carefully store these credentials securely.
+
+3. Configure Grafana for OAuth 2.0
+
+Access Grafana: Log in to your Grafana instance as an administrator.
+Navigate to Authentication: Go to Configuration > Data Sources > Authentication.
+Select "Generic OAuth 2.0": Choose the "Generic OAuth 2.0" option.
+Fill in the Form:
+
+   Name: Give your configuration a descriptive name (e.g., "Jira OAuth").
+   Enabled: Toggle the "Enabled" switch to "On."
+   Client ID: Enter the Client ID obtained from Jira.
+   Client Secret: Enter the Client Secret obtained from Jira.
+   Authorization Endpoint: The URL for Jira's OAuth 2.0 authorization endpoint (usually something like 
+      https://<your_jira_domain>/plugins/servlet/oauth/authorize).
+   Token Endpoint: The URL for Jira's OAuth 2.0 token endpoint (usually something like 
+         https://<your_jira_domain>/plugins/servlet/oauth/accessToken).
+   Scopes (optional): If Jira requires specific scopes for the application, enter them here.
+    Allowed Domains (optional): If you want to restrict logins to specific domains, enter them here.
+
+Save the Configuration: Click "Save" to apply the changes.
+
+4. Test the Integration
+
+Log Out and Log In: Log out of Grafana and try logging in again.
+Jira Authorization: You should be redirected to the Jira authorization page.
+Grant Permissions: Grant the necessary permissions to the Grafana application.
+Return to Grafana: You should be redirected back to Grafana and successfully logged in.
+
+```
+
 https://jira.readthedocs.io/
 https://pypi.org/project/jira/
 
