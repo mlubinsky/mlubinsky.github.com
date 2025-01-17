@@ -1,3 +1,5 @@
+https://www.db-fiddle.com/
+
 https://www.edgedb.com/  Юрием Селивановым, CEO и co-founder Edgedb,
 
 Regular expressions in SQL
