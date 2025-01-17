@@ -1,3 +1,5 @@
+https://pyviz.org/overviews/index.html
+
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
