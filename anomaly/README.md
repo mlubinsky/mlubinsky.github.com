@@ -1,3 +1,5 @@
+https://blog.jetbrains.com/pycharm/2025/01/anomaly-detection-in-machine-learning/
+
 https://github.com/yzhao062/anomaly-detection-resources
 
 https://www.youtube.com/watch?v=vpzmVj8HdhE Популярные ML-методы для поиска выбросов в данных  
