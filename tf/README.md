@@ -9,7 +9,24 @@ https://ai.google.dev/edge/litert
 
 https://github.com/google-ai-edge/LiteRT
 
+
+git clone https://github.com/google-ai-edge/LiteRT
 ```
+cd ci
+
+/run_bazel_build.sh
+
+ERROR: The project you're trying to build requires Bazel 6.5.0 (specified in /Users/mlubinsky/CODE/LiteRT_2/LiteRT/.bazelversion),
+but it wasn't found in /opt/homebrew/Cellar/bazel/7.4.1/libexec/bin.
+
+Bazel binaries for all official releases can be downloaded from here:
+  https://github.com/bazelbuild/bazel/releases
+
+
+You can download the required version directly using this command:
+  (cd "/opt/homebrew/Cellar/bazel/7.4.1/libexec/bin" && curl -fLO https://releases.bazel.build/6.5.0/release/bazel-6.5.0-darwin-arm64 && chmod +x bazel-6.5.0-darwin-arm64)
+
+
 LiteRT, formerly known as TensorFlow Lite, is Google's high-performance runtime for on-device AI.
 The project's source code is available on GitHub:
 
