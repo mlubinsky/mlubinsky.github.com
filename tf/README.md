@@ -115,10 +115,7 @@ I tried:
 
 cat .bazelversion
 6.5.0
- $ cp .bazelversion .baselversion_original_6.5.0
- $ echo 7.4.1 > .bazelversion
- $ cat .bazelversion
-7.4.1
+ 
 
 /run_bazel_build.sh
 
@@ -164,25 +161,12 @@ The project's source code is available on GitHub:
 
 https://github.com/google-ai-edge/LiteRT
 
-c:\GIT\LiteRT>C:\Users\m.lubinsky\Downloads\bazel-8.0.0-windows-x86_64.exe build LiteRT:litert
-INFO: Reading 'startup' options from c:\git\litert\.bazelrc: --windows_enable_symlinks
-INFO: Options provided by the client:
-  Inherited 'common' options: --isatty=1 --terminal_columns=142
-INFO: Reading rc options for 'build' from c:\git\litert\.bazelrc:
-  Inherited 'common' options: --experimental_repo_remote_exec --experimental_repo_remote_exec
-INFO: Options provided by the client:
-  'build' options: --python_path=C:/Users/m.lubinsky/AppData/Local/Programs/Python/Python38/python.exe
-INFO: Reading rc options for 'build' from c:\git\litert\.bazelrc:
-  'build' options: --define framework_shared_object=true --define tsl_protobuf_header_only=true --define=use_fast_cpp_protos=true --define=allow_oversize_protos=true --spawn_strategy=standalone -c opt --announce_rc --define=grpc_no_ares=true --noincompatible_remove_legacy_whole_archive --features=-force_no_whole_archive --enable_platform_specific_config --define=with_xla_support=true --config=short_logs --experimental_cc_shared_library --experimental_link_static_libraries_once=false --incompatible_enforce_config_setting_visibility --config=v2 --config=litert_prefixes
-INFO: Found applicable config definition build:short_logs in file c:\git\litert\.bazelrc: --output_filter=DONT_MATCH_ANYTHING
-INFO: Found applicable config definition build:v2 in file c:\git\litert\.bazelrc: --define=tf_api_version=2 --action_env=TF2_BEHAVIOR=1
-INFO: Found applicable config definition build:litert_prefixes in file c:\git\litert\.bazelrc: --define=litert_prefixes=external/org_tensorflow/
-INFO: Found applicable config definition build:windows in file c:\git\litert\.bazelrc: --copt=/W0 --host_copt=/W0 --copt=/Zc:__cplusplus --host_copt=/Zc:__cplusplus --copt=/D_USE_MATH_DEFINES --host_copt=/D_USE_MATH_DEFINES --features=compiler_param_file --features=archive_param_file --copt=/d2ReducedOptimizeHugeFunctions --host_copt=/d2ReducedOptimizeHugeFunctions --copt=-D_ENABLE_EXTENDED_ALIGNED_STORAGE --host_copt=-D_ENABLE_EXTENDED_ALIGNED_STORAGE --enable_runfiles --cxxopt=/std:c++17 --host_cxxopt=/std:c++17 --config=monolithic --copt=-DWIN32_LEAN_AND_MEAN --host_copt=-DWIN32_LEAN_AND_MEAN --copt=-DNOGDI --host_copt=-DNOGDI --copt=/Zc:preprocessor --host_copt=/Zc:preprocessor --linkopt=/DEBUG --host_linkopt=/DEBUG --linkopt=/OPT:REF --host_linkopt=/OPT:REF --linkopt=/OPT:ICF --host_linkopt=/OPT:ICF --verbose_failures --features=compiler_param_file
-INFO: Found applicable config definition build:monolithic in file c:\git\litert\.bazelrc: --define framework_shared_object=false --define tsl_protobuf_header_only=false --experimental_link_static_libraries_once=false
-WARNING: --enable_bzlmod is set, but no MODULE.bazel file was found at the workspace root. Bazel will create an empty MODULE.bazel file. Please consider migrating your external dependencies from WORKSPACE to MODULE.bazel. For more details, please refer to https://github.com/bazelbuild/bazel/issues/18958.
-ERROR: Error computing the main repository mapping: Error accessing registry https://bcr.bazel.build/: Failed to fetch registry file https://bcr.bazel.build/modules/rules_shell/0.2.0/MODULE.bazel: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-ERROR: Error while writing profile file: Cannot create symlink (name=C:\users\m.lubinsky\_bazel_m.lubinsky\7ry3bayt\command.profile.gz, target=C:\users\m.lubinsky\_bazel_m.lubinsky\7ry3bayt\command-c77bf3a2-5af7-4775-8433-4014f9c5cf00.profile.gz): ERROR: src/main/native/windows/file-jni.cc(140): nativeCreateSymlink(\\?\C:\users\m.lubinsky\_bazel_m.lubinsky\7ry3bayt\command.profile.gz, \\?\C:\users\m.lubinsky\_bazel_m.lubinsky\7ry3bayt\command-c77bf3a2-5af7-4775-8433-4014f9c5cf00.profile.gz): ERROR: src/main/native/windows/file.cc(524): CreateSymlink(\\?\C:\users\m.lubinsky\_bazel_m.lubinsky\7ry3bayt\command-c77bf3a2-5af7-4775-8433-4014f9c5cf00.profile.gz): createSymbolicLinkW failed (permission denied). Either Windows developer mode or admin privileges are required.
-Computing main repo mapping:
+cd /Users/mlubinsky/CODE/LiteRT_2/LiteRT/ci
+./michael_run_bazel_build.sh
+
+(15:30:04) ERROR: Skipping '//tflite/...': error loading package under directory 'tflite': error loading package 'tflite/acceleration/configuration': Label '@local_xla//xla/tsl/platform/default:build_config.bzl' is invalid because 'xla/tsl/platform/default' is not a package; perhaps you meant to put the colon here: '@local_xla//xla/tsl:platform/default/build_config.bzl'?
+(15:30:04) ERROR: error loading package under directory 'tflite': error loading package 'tflite/acceleration/configuration': Label '@local_xla//xla/tsl/platform/default:build_config.bzl' is invalid because 'xla/tsl/platform/default' is not a package; perhaps you meant to put the colon here: '@local_xla//xla/tsl:platform/default/build_config.bzl'?
+
 
 This repository includes the core runtime and tools for deploying machine learning models on various devices.
 For comprehensive documentation and additional resources, visit the official LiteRT page:
