@@ -69,7 +69,7 @@ For understanding the C++ library for microcontrollers, visit:
 https://ai.google.dev/edge/litert/microcontrollers/library
 ```
 This document outlines the basic structure of the C++ library and provides information about creating your own project. 
-```
+
 For an overview of LiteRT for Microcontrollers, see:
 ```
 https://ai.google.dev/edge/litert/microcontrollers/overview
@@ -84,19 +84,18 @@ https://ai.google.dev/edge/litert/libraries/modify
 
 ```
 Model Maker allows you to train a TensorFlow Lite model using custom datasets in just a few lines of code. 
-GOOGLE AI FOR DEVELOPERS
 
 For Maven Central repository information, see:
 ```
 https://central.sonatype.com/artifact/io.github.google-ai-edge/litert
 ```
 This page provides information about the LiteRT library artifact available in the Maven Central repository. 
-MAVEN CENTRAL
 
 
 To use LiteRT on your MacBook or Windows machine with the goal of deploying it to embedded firmware, you’ll need to follow these steps to set up, configure, and adapt LiteRT for your target environment.
 
 1. Understand LiteRT and Its Purpose
+-----------------------------------
 LiteRT (Lightweight Runtime) is designed to execute neural network models efficiently in resource-constrained environments.
 It can be used for deploying AI models to embedded firmware running on MCUs, DSPs, or other low-power hardware.
 
@@ -179,7 +178,7 @@ with open("model.tflite", "wb") as f:
 Use the model.tflite file as input for LiteRT.
 
 7. Deploy LiteRT to Firmware
-   ---------------------------
+---------------------------
 Link LiteRT with Your Firmware:
 
 Add the LiteRT library to your firmware project (e.g., .a or .lib file from Bazel build).
@@ -189,6 +188,7 @@ Flash to the Device:
 Use a suitable tool (e.g., OpenOCD, ST-Link, J-Link) to flash the firmware to your embedded device.
 
 8. Test and Debug
+------------------
 Run tests on your embedded device to verify that LiteRT and the AI models function as expected.
 Debug issues using a hardware debugger or by logging output to a serial console.
 Optional: Optimize for Embedded Systems
