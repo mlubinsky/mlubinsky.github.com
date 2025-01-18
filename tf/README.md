@@ -165,12 +165,31 @@ cd /Users/mlubinsky/CODE/LiteRT_2/LiteRT/ci
 ./michael_run_bazel_build.sh
 
 (15:30:04) ERROR: Skipping '//tflite/...': error loading package under directory 'tflite':
-error loading package 'tflite/acceleration/configuration': Label '@local_xla//xla/tsl/platform/default:build_config.bzl' is invalid because 'xla/tsl/platform/default' is not a package; perhaps you meant to put the colon here: '@local_xla//xla/tsl:platform/default/build_config.bzl'?
+error loading package 'tflite/acceleration/configuration': Label '@local_xla//xla/tsl/platform/default:build_config.bzl' is invalid
+because 'xla/tsl/platform/default' is not a package;
+perhaps you meant to put the colon here: '@local_xla//xla/tsl:platform/default/build_config.bzl'?
 
 (15:30:04) ERROR: error loading package under directory 'tflite':
-error loading package 'tflite/acceleration/configuration': Label '@local_xla//xla/tsl/platform/default:build_config.bzl' is invalid because 'xla/tsl/platform/default' is not a package; perhaps you meant to put the colon here: '@local_xla//xla/tsl:platform/default/build_config.bzl'?
+error loading package 'tflite/acceleration/configuration': Label '@local_xla//xla/tsl/platform/default:build_config.bzl' is invalid
+because 'xla/tsl/platform/default' is not a package;
+perhaps you meant to put the colon here: '@local_xla//xla/tsl:platform/default/build_config.bzl'?
 
+I tried:
+cd tflite
 
+rg 'local_xla//xla/tsl/platform/default:build_config.bzl'
+
+experimental/acceleration/configuration/BUILD
+22:load("@local_xla//xla/tsl/platform/default:build_config.bzl", "tf_proto_library_py")
+
+acceleration/configuration/BUILD
+23:load("@local_xla//xla/tsl/platform/default:build_config.bzl", "tf_proto_library_py")
+```
+git submodule update --init --recursive  
+
+bazel sync
+
+```
 This repository includes the core runtime and tools for deploying machine learning models on various devices.
 For comprehensive documentation and additional resources, visit the official LiteRT page:
 
