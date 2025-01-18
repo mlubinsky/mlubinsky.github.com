@@ -54,7 +54,7 @@ For building LiteRT with CMake, detailed instructions are available here:
 https://ai.google.dev/edge/litert/build/cmake
 ```
 This guide provides step-by-step instructions for building the LiteRT library using the CMake tool on various operating systems. 
-GOOGLE AI FOR DEVELOPERS
+
 ```
 
 For building LiteRT for ARM-based computers, refer to:
@@ -62,43 +62,37 @@ For building LiteRT for ARM-based computers, refer to:
 https://ai.google.dev/edge/litert/build/arm
 
 ```
-This page describes how to build the LiteRT libraries for ARM-based computers, supporting two build systems and their respective features. 
-GOOGLE AI FOR DEVELOPERS
-
+This page describes how to build the LiteRT libraries for ARM-based computers,
+supporting two build systems and their respective features. 
 For understanding the C++ library for microcontrollers, visit:
-
+```
 https://ai.google.dev/edge/litert/microcontrollers/library
-
+```
 This document outlines the basic structure of the C++ library and provides information about creating your own project. 
-GOOGLE AI FOR DEVELOPERS
-
+```
 For an overview of LiteRT for Microcontrollers, see:
-
+```
 https://ai.google.dev/edge/litert/microcontrollers/overview
-
+```
 This page provides an overview of LiteRT for Microcontrollers, designed to run machine learning models on devices with limited memory. 
-GOOGLE AI FOR DEVELOPERS
+
 
 For information on TensorFlow Lite Model Maker, refer to:
+```
 
 https://ai.google.dev/edge/litert/libraries/modify
 
+```
 Model Maker allows you to train a TensorFlow Lite model using custom datasets in just a few lines of code. 
 GOOGLE AI FOR DEVELOPERS
 
 For Maven Central repository information, see:
-
+```
 https://central.sonatype.com/artifact/io.github.google-ai-edge/litert
-
+```
 This page provides information about the LiteRT library artifact available in the Maven Central repository. 
 MAVEN CENTRAL
 
-For more details and updates, keep an eye on the official LiteRT documentation and the GitHub repository.
-
-
-
-
-ChatGPT said:
 
 To use LiteRT on your MacBook or Windows machine with the goal of deploying it to embedded firmware, you’ll need to follow these steps to set up, configure, and adapt LiteRT for your target environment.
 
@@ -135,12 +129,14 @@ Install TensorFlow tools:
 pip install numpy tensorflow
 
 3. Download LiteRT Source Code
+---------------------------------
 Clone the LiteRT repository:
 git clone https://github.com/RT-Thread/rt-thread.git 
-wrong: git clone https://github.com/google/litert.git
+ 
 cd litert
 
 4. Build LiteRT for Testing
+-----------------------------
 Build on MacBook or Windows:
 Use Bazel to build the runtime:
 
@@ -155,6 +151,7 @@ Check for CMakeLists.txt in the repository to see if LiteRT supports CMake or Ma
 If supported, follow the repository-specific instructions for these tools.
 
 5. Prepare LiteRT for Embedded Firmware
+----------------------------------------
 Cross-Compiling for Your Target Platform
 Identify the target embedded platform (e.g., ARM Cortex-M, RISC-V).
 Install the appropriate cross-compilation toolchain:
@@ -167,6 +164,7 @@ bazel build --config=<target_architecture> //path/to/litert:litert
 Replace <target_architecture> with your platform-specific configuration (e.g., arm, riscv).
 
 6. Convert AI Models for LiteRT
+------------------------------   
 If deploying neural network models, convert them into a format suitable for LiteRT:
 Use TensorFlow Lite Converter:
 
@@ -181,6 +179,7 @@ with open("model.tflite", "wb") as f:
 Use the model.tflite file as input for LiteRT.
 
 7. Deploy LiteRT to Firmware
+   ---------------------------
 Link LiteRT with Your Firmware:
 
 Add the LiteRT library to your firmware project (e.g., .a or .lib file from Bazel build).
@@ -209,7 +208,7 @@ follow these general steps.
 The exact process may vary based on the specific hardware platform, toolchain, and firmware environment you are using.
 
 1. Understand LiteRT and Your Target Hardware
-
+-----------------------------------------------
 LiteRT is typically designed for deployment on embedded systems with constrained resources.
 Confirm your target hardware supports the requirements for LiteRT:
 Processor architecture (e.g., ARM Cortex-M, RISC-V, etc.).
@@ -217,6 +216,7 @@ Memory and storage constraints.
 Peripheral or OS capabilities (if any).
 
 2. Set Up the Development Environment
+-------------------------------
 Install Required Tools
 Install a suitable cross-compilation toolchain for your hardware:
 For ARM: Use the GNU Arm Embedded Toolchain (download).
@@ -230,6 +230,7 @@ git clone https://github.com/google/litert.git
 cd litert
 
 3. Configure LiteRT for Firmware
+---------------------
 Check the README.md or documentation provided with LiteRT to identify any specific build options for embedded platforms.
 Modify LiteRT's configuration files as necessary:
 Specify the target platform, architecture, and toolchain.
@@ -241,6 +242,7 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=path_to_toolchain.cmake -DLITERT_TARGET=embedded
 Replace path_to_toolchain.cmake with the path to your toolchain file (specific to your hardware architecture).
 
 4. Build LiteRT
+-------------
 Run the build command:
 
 make
@@ -251,12 +253,14 @@ ninja
 The output will include a compiled LiteRT binary or library (e.g., .a or .elf file).
 
 5. Integrate LiteRT with Firmware
+-----------------------
 Standalone LiteRT: If LiteRT runs directly on bare metal, link the LiteRT binary with your firmware application.
 RTOS or OS Integration:
 If your firmware uses an RTOS (e.g., FreeRTOS or Zephyr), integrate LiteRT into the RTOS project by adding it as a module or task.
 Ensure LiteRT initialization code is called during the firmware startup.
 
 6. Flash LiteRT Firmware to the Device
+--------------------------------------
 Connect your target hardware to your development machine.
 Use the appropriate flashing tool:
 For ARM Cortex-M devices: Use OpenOCD, ST-Link, or the vendor-provided flashing tool.
@@ -266,10 +270,11 @@ Example:
 openocd -f interface/stlink.cfg -f target/stm32f4x.cfg -c "program build/output.elf verify reset exit"
 
 7. Run and Test LiteRT
+---------------------
 Power on the hardware and monitor the output using a serial terminal (e.g., PuTTY, Tera Term) connected to the device's UART port.
 Test LiteRT functionality by running example models or workloads provided in the LiteRT repository.
 
-8. Debugging and Optimization
+9. Debugging and Optimization
 If the firmware does not work as expected, use debugging tools like GDB to identify issues.
 Optimize LiteRT's performance and memory usage to suit your hardware's constraints.
 
