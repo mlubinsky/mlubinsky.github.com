@@ -49,7 +49,12 @@ For more details, please refer to https://github.com/bazelbuild/bazel/issues/189
 No MODULE.bazel, REPO.bazel, or WORKSPACE file found in
 /Users/mlubinsky/CODE/LiteRT_2/LiteRT/third_party/tensorflow
 
+https://github.com/google-ai-edge/LiteRT/blob/main/.gitmodules
 
+[submodule "third_party/tensorflow"]
+	path = third_party/tensorflow
+	url = https://github.com/tensorflow/tensorflow
+	branch = master
 
 
 
