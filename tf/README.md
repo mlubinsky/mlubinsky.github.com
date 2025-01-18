@@ -16,8 +16,10 @@ cd ci
 
 /run_bazel_build.sh
 
-ERROR: The project you're trying to build requires Bazel 6.5.0 (specified in /Users/mlubinsky/CODE/LiteRT_2/LiteRT/.bazelversion),
-but it wasn't found in /opt/homebrew/Cellar/bazel/7.4.1/libexec/bin.
+ERROR: The project you're trying to build requires Bazel 6.5.0
+ (specified in /Users/mlubinsky/CODE/LiteRT_2/LiteRT/.bazelversion),
+but it wasn't found in
+/opt/homebrew/Cellar/bazel/7.4.1/libexec/bin.
 
 Bazel binaries for all official releases can be downloaded from here:
   https://github.com/bazelbuild/bazel/releases
