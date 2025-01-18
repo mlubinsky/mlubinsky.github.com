@@ -2,6 +2,90 @@
 
 <https://habr.com/ru/post/500788/>
 
+### Bazel 6.5.0
+
+https://github.com/bazelbuild/bazel/releases
+
+https://github.com/bazelbuild/bazel/releases/download/6.5.0/bazel-6.5.0-installer-darwin-x86_64.sh
+
+```
+Homebrew does not allow you to directly install arbitrary versions of Bazel, such as bazel@6.5.0, 
+unless the specific version is available as a formula in Homebrew. However, 
+you can install a specific version of Bazel using alternative methods.
+
+Here’s how you can install Bazel version 6.5.0 or any other version:
+
+1. Use the Official Bazel Installer
+-----------------------------------
+The Bazel team provides official installers for specific versions of Bazel.
+
+Visit the Bazel Releases Page
+https://github.com/bazelbuild/bazel/releases
+
+Find version 6.5.0 (or the version you need).
+Download the installer for macOS (bazel-<version>-installer-darwin-x86_64.sh).
+
+For Bazel 6.5.0, the direct link is:
+
+https://github.com/bazelbuild/bazel/releases/download/6.5.0/bazel-6.5.0-installer-darwin-x86_64.sh
+
+Run the installer:
+
+chmod +x bazel-6.5.0-installer-darwin-x86_64.sh
+./bazel-6.5.0-installer-darwin-x86_64.sh --user
+
+Add Bazel to your PATH:
+
+export PATH="$HOME/bin:$PATH"
+
+Verify the version:
+
+bazel --version
+
+2. Use Bazelisk (Recommended)
+--------------------------------
+Bazelisk is a tool that automatically downloads and runs the appropriate version of Bazel for your project.
+It respects the .bazelversion file in your repository.
+
+Install Bazelisk using Homebrew:
+
+brew install bazelisk
+Create a .bazelversion file in your repository with the desired version:
+
+echo "6.5.0" > .bazelversion
+Run Bazel commands as usual:
+
+bazelisk build //...
+Bazelisk will automatically download and use Bazel 6.5.0.
+
+3. Use Homebrew for Available Versions
+---------------------------------------
+Homebrew provides formulas for some older Bazel versions,
+but these are typically named bazel@<major_version> (e.g., bazel@5).
+To see which versions are available:
+
+brew search bazel
+If version 6.x is available, install it:
+
+brew install bazel@6
+
+4. Manually Build Bazel from Source
+--------------------------------------
+If the above options don’t work, you can build Bazel 6.5.0 from source:
+
+Clone the Bazel repository:
+
+git clone https://github.com/bazelbuild/bazel.git
+cd bazel
+git checkout 6.5.0
+
+Build Bazel:
+
+bash compile.sh
+Use the generated bazel binary:
+
+./output/bazel --version
+```
 
 ## TFLite   LiteRT
 
