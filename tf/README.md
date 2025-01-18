@@ -28,6 +28,16 @@ Bazel binaries for all official releases can be downloaded from here:
 You can download the required version directly using this command:
   (cd "/opt/homebrew/Cellar/bazel/7.4.1/libexec/bin" && curl -fLO https://releases.bazel.build/6.5.0/release/bazel-6.5.0-darwin-arm64 && chmod +x bazel-6.5.0-darwin-arm64)
 
+I tried:
+
+cat .bazelversion
+6.5.0
+ $ cp .bazelversion .baselversion_original_6.5.0
+ $ echo 7.4.1 > .bazelversion
+ $ cat .bazelversion
+7.4.1
+
+
 
 LiteRT, formerly known as TensorFlow Lite, is Google's high-performance runtime for on-device AI.
 The project's source code is available on GitHub:
