@@ -7,6 +7,8 @@
 
 https://ai.google.dev/edge/litert
 
+https://github.com/google-ai-edge/LiteRT
+
 ```
 LiteRT, formerly known as TensorFlow Lite, is Google's high-performance runtime for on-device AI. The project's source code is available on GitHub:
 
