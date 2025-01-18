@@ -13,7 +13,6 @@ https://github.com/google-ai-edge/LiteRT
 git clone https://github.com/google-ai-edge/LiteRT
 ```
 cd ci
-
 /run_bazel_build.sh
 
 ERROR: The project you're trying to build requires Bazel 6.5.0
@@ -36,6 +35,23 @@ cat .bazelversion
  $ echo 7.4.1 > .bazelversion
  $ cat .bazelversion
 7.4.1
+
+/run_bazel_build.sh
+
+(13:23:10) WARNING: --enable_bzlmod is set, but no MODULE.bazel file was found at the workspace root.
+Bazel will create an empty MODULE.bazel file. Please consider migrating your external dependencies from WORKSPACE to MODULE.bazel.
+For more details, please refer to https://github.com/bazelbuild/bazel/issues/18958.
+
+(13:23:12) ERROR: /Users/mlubinsky/CODE/LiteRT_2/LiteRT/WORKSPACE:15:17: fetching local_repository rule //external:org_tensorflow: java.io.IOException: No MODULE.bazel, REPO.bazel, or WORKSPACE file found in
+/Users/mlubinsky/CODE/LiteRT_2/LiteRT/third_party/tensorflow
+
+(13:23:12) ERROR: Error computing the main repository mapping: no such package '@@org_tensorflow//tensorflow':
+No MODULE.bazel, REPO.bazel, or WORKSPACE file found in
+/Users/mlubinsky/CODE/LiteRT_2/LiteRT/third_party/tensorflow
+
+
+
+
 
 
 
