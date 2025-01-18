@@ -130,7 +130,7 @@ pip install numpy tensorflow
 3. Download LiteRT Source Code
 ---------------------------------
 Clone the LiteRT repository:
-git clone https://github.com/RT-Thread/rt-thread.git 
+git clone  https://github.com/google-ai-edge/LiteRT
  
 cd litert
 
