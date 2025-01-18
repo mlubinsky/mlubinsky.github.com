@@ -57,8 +57,23 @@ https://github.com/google-ai-edge/LiteRT/blob/main/.gitmodules
 	branch = master
 
 
+ Check for Submodules in the Repository
+The repository may use git submodules for external dependencies like TensorFlow. Run the following commands to confirm and fetch missing submodules:
 
+ 
+# Check for submodule configuration
+cat .gitmodules
+If third_party/tensorflow is listed in the .gitmodules file, it is a submodule.
 
+2. Clone the Repository with Submodules
+If you didn’t clone the repository with submodules initially, you can fix it like this:
+
+ 
+# Initialize and fetch all submodules
+git submodule update --init --recursive
+If you need to re-clone the repository, use this command to include submodules from the start:
+ 
+git clone --recurse-submodules https://github.com/google-ai-edge/LiteRT.git
 
 LiteRT, formerly known as TensorFlow Lite, is Google's high-performance runtime for on-device AI.
 The project's source code is available on GitHub:
