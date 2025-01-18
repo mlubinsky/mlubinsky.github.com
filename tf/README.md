@@ -10,7 +10,8 @@ https://ai.google.dev/edge/litert
 https://github.com/google-ai-edge/LiteRT
 
 ```
-LiteRT, formerly known as TensorFlow Lite, is Google's high-performance runtime for on-device AI. The project's source code is available on GitHub:
+LiteRT, formerly known as TensorFlow Lite, is Google's high-performance runtime for on-device AI.
+The project's source code is available on GitHub:
 
 https://github.com/google-ai-edge/LiteRT
 
@@ -40,24 +41,27 @@ For comprehensive documentation and additional resources, visit the official Lit
 https://ai.google.dev/edge/litert
 
 Please note that, as of now, the LiteRT repository is not intended for open-source development because it pulls in existing TensorFlow code via a git submodule.
-The development team plans to evolve the repository to a point where developers can directly build and contribute. Until then, contributions should be directed to the existing TensorFlow Lite repository. 
+The development team plans to evolve the repository to a point where developers can directly build and contribute.
+Until then, contributions should be directed to the existing TensorFlow Lite repository. 
 GITHUB
 
 For installation, LiteRT supports Python versions 3.9, 3.10, and 3.11 on Linux and macOS.
 Ensure you have the appropriate environment set up before integrating LiteRT into your projects. 
 GITHUB
-
+```
 For building LiteRT with CMake, detailed instructions are available here:
 
 https://ai.google.dev/edge/litert/build/cmake
-
+```
 This guide provides step-by-step instructions for building the LiteRT library using the CMake tool on various operating systems. 
 GOOGLE AI FOR DEVELOPERS
+```
 
 For building LiteRT for ARM-based computers, refer to:
 
 https://ai.google.dev/edge/litert/build/arm
 
+```
 This page describes how to build the LiteRT libraries for ARM-based computers, supporting two build systems and their respective features. 
 GOOGLE AI FOR DEVELOPERS
 
