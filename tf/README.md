@@ -185,6 +185,52 @@ experimental/acceleration/configuration/BUILD
 acceleration/configuration/BUILD
 23:load("@local_xla//xla/tsl/platform/default:build_config.bzl", "tf_proto_library_py")
 ```
+
+### Trying to solve issue above
+```
+rg '@local_xla//xla/tsl:platform/default/build_config.bzl'
+
+tflite/experimental/acceleration/configuration/BUILD
+22:load("@local_xla//xla/tsl:platform/default/build_config.bzl", "tf_proto_library_py")
+
+tflite/acceleration/configuration/BUILD
+24:load("@local_xla//xla/tsl:platform/default/build_config.bzl", "tf_proto_library_py")
+
+@local_xla: This refers to an external workspace defined in the WORKSPACE or MODULE.bazel file.
+Bazel uses this to reference an external repository or local directory.
+The name local_xla is an alias for this external repository.
+
+//xla/tsl: This specifies the path within the local_xla workspace to the directory xla/tsl.
+
+platform/default/build_config.bzl:
+This is the relative path to the build_config.bzl file from the xla/tsl directory.
+
+To find the fully qualified file path, do the following:
+
+Locate the @local_xla Repository:
+
+Check the WORKSPACE or MODULE.bazel file for the definition of local_xla. For example:
+ 
+local_repository(
+    name = "local_xla",
+    path = "third_party/local_xla",
+)
+This indicates that @local_xla corresponds to the directory third_party/local_xla in your project.
+Combine the Paths:
+
+
+Append xla/tsl/platform/default/build_config.bzl to the path of local_xla.
+Using the example above, the full-qualified file path would be:
+ 
+third_party/local_xla/xla/tsl/platform/default/build_config.bzl
+Verify the File Exists: Navigate to the directory and check if the file exists:
+ 
+cd third_party/local_xla/xla/tsl/platform/default
+ls build_config.bzl
+
+
+```
+
 git submodule update --init --recursive  
 
 bazel sync
