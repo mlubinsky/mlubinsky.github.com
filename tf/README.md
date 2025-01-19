@@ -188,6 +188,16 @@ acceleration/configuration/BUILD
 
 ### Trying to solve issue above
 ```
+Repository rule _tf_http_archive defined at:
+  /private/var/tmp/_bazel_mlubinsky/b633d606e7c902200e15d1493749dfca/external/org_tensorflow/third_party/repo.bzl:89:35: in <toplevel>
+(18:14:55) ERROR: Skipping '//tflite/...': 
+error loading package under directory 'tflite': error loading package 'tflite/acceleration/configuration': 
+cannot load '@local_xla//xla/tsl:platform/default/build_config.bzl': no such file
+
+(18:14:55) ERROR: error loading package under directory 'tflite': 
+error loading package 'tflite/acceleration/configuration': 
+cannot load '@local_xla//xla/tsl:platform/default/build_config.bzl': no such file
+
 rg '@local_xla//xla/tsl:platform/default/build_config.bzl'
 
 tflite/experimental/acceleration/configuration/BUILD
@@ -195,6 +205,11 @@ tflite/experimental/acceleration/configuration/BUILD
 
 tflite/acceleration/configuration/BUILD
 24:load("@local_xla//xla/tsl:platform/default/build_config.bzl", "tf_proto_library_py")
+
+May be problem is that in path below /tsl/tsl/  two times? 
+$ pwd
+/Users/mlubinsky/CODE/LiteRT_2/LiteRT/third_party/tensorflow/third_party/xla/third_party/tsl/tsl/platform
+
 
 @local_xla: This refers to an external workspace defined in the WORKSPACE or MODULE.bazel file.
 Bazel uses this to reference an external repository or local directory.
