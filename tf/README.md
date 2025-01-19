@@ -218,7 +218,6 @@ local_repository(
 This indicates that @local_xla corresponds to the directory third_party/local_xla in your project.
 Combine the Paths:
 
-
 Append xla/tsl/platform/default/build_config.bzl to the path of local_xla.
 Using the example above, the full-qualified file path would be:
  
@@ -228,7 +227,19 @@ Verify the File Exists: Navigate to the directory and check if the file exists:
 cd third_party/local_xla/xla/tsl/platform/default
 ls build_config.bzl
 
+pwd
+/Users/mlubinsky/CODE/LiteRT_2/LiteRT
 
+find . -name WORKSPACE
+./WORKSPACE
+./third_party/tensorflow/ci/official/wheel_test/WORKSPACE
+./third_party/tensorflow/WORKSPACE
+./third_party/tensorflow/third_party/xla/xla/mlir_hlo/WORKSPACE
+./third_party/tensorflow/third_party/xla/WORKSPACE
+./third_party/tensorflow/third_party/xla/third_party/tsl/WORKSPACE
+
+find . -name MODULE.bazel
+./MODULE.bazel
 ```
 
 git submodule update --init --recursive  
