@@ -1,3 +1,8 @@
+Flask app to play against chess engines  
+https://github.com/sgriffin53/ccrl_challenger_flask_app  
+https://www.jimmyrustles.com/ccrlchallenger
+
+
 https://chessbook.com/  build your chess repertour
 
 https://www.jimmyrustles.com/chessopeningtheory/
