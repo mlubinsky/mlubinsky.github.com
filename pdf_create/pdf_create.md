@@ -1,3 +1,5 @@
+https://realpython.com/creating-modifying-pdf/
+
 Проверка содержимого PDF-файлов средствами Python и pdfminer.  
 https://habr.com/ru/companies/auriga/articles/845926/
 
