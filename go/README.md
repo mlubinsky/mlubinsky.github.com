@@ -1,6 +1,8 @@
 https://100go.co/
 https://jvns.ca/blog/2024/08/06/go-structs-copied-on-assignment/
 
+https://build-your-own.org/blog/20251015_db_in_3000/ build your database in GO
+
 https://github.com/grishy/gopkgview 
 
 https://habr.com/ru/companies/beget/articles/870138/
