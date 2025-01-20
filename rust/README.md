@@ -1,3 +1,5 @@
+https://www.reddit.com/r/rust/comments/1i4wv95/what_are_some_lesserknown_rust_books_worth_reading/
+
 https://google.github.io/comprehensive-rust/
 
 <https://doc.rust-lang.org/stable/book/foreword.html>
