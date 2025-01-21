@@ -9,6 +9,19 @@ https://medium.com/@suffyan.asad1/beginners-guide-to-spark-ui-how-to-monitor-and
 
 https://medium.com/@pradoshkumar.jena/understanding-apache-spark-memory-management-in-local-mode-a-deep-dive-with-pyspark-70649b3ddde0
 
+https://blog.det.life/spark-approaches-to-debug-and-tune-performance-a884311ca3b7
+
+```
+Cache Data: Use DataFrame.cache() or dataframe.persist()to keep frequently used data in memory and disk.
+df.cache()
+df.persist()
+The difference between cache and persist is persist allows you to choose memory or disk to cache data to.
+
+On the other hand, use unpersist() to free up memory when the data is no longer needed.
+
+df.unpersist()
+```
+
 
 1. 8 optimization techniques for DE beginners
 https://lnkd.in/geskgY8Z
