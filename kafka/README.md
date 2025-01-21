@@ -1,3 +1,5 @@
+https://habr.com/ru/articles/875330/  NATS, RabbitMQ and KAFKA
+
 https://encore.dev/blog/queueing
 
 https://habr.com/ru/articles/865120/  Kafka visualization
