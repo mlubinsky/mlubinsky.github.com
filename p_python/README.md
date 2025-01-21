@@ -599,6 +599,10 @@ letter_counts.most_common(1)[0][0] # tale 1st element from array of tuples and t
 ```
 
 
+Reading files in python:  
+https://blog.devgenius.io/10-ways-to-work-with-large-files-in-python-effortlessly-handle-gigabytes-of-data-aeef19bc0429
+
+
 
 ### List comprehention  [expression for item in list if conditional]
 
