@@ -1,5 +1,8 @@
 https://proproprogs.ru/
 
+JAX for PyTorch users
+https://cloud.google.com/blog/products/ai-machine-learning/guide-to-jax-for-pytorch-developers
+
 https://pytorchstepbystep.com/
 
 https://habr.com/ru/articles/870426/
