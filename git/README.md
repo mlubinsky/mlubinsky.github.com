@@ -2,6 +2,8 @@ https://news.ycombinator.com/item?id=42728916
 
 https://habr.com/ru/articles/813399/ How to make useful github front page
 
+ohshitgit.com
+
 https://news.ycombinator.com/item?id=42728916 OH SHIEET GIT
 
 https://habr.com/ru/articles/813513/ Git notes
