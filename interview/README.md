@@ -609,15 +609,14 @@ class Solution:
         return min_heap[0]
 ```	
 
-#### Given a string s, find the longest palindromic subsequence’s length in s. 
-
-Let assume that the maximum length of s is 1000.
+###  Given a string s, find the longest palindromic subsequence’s length in s. 
 
 https://emre.me/coding-patterns/palindromes/
-```
 
-Top-down Dynamic Programming with MemoizationPermalink
-start and end are two changing values of our recursive function in the Brute Force Solution. So, we can store the results of all subsequences in a two-dimensional array to memoize them.
+##### Top-down Dynamic Programming with Memoization 
+```
+start and end are two changing values of our recursive function in the Brute Force Solution.
+So, we can store the results of all subsequences in a two-dimensional array to memoize them.
 
 class Solution:
     def longestPalindromeSubseq(self, s: str) -> int:
@@ -643,15 +642,20 @@ class Solution:
                 memo[start][end] = max(subseq1, subseq2)
 
         return memo[start][end]
-Time Complexity: O(N2) because memoization array, memo[len(s)][len(s)]. We will not have more than N*N subsequences.
+
+Time Complexity: O(N2) because memoization array, memo[len(s)][len(s)].
+ We will not have more than N*N subsequences.
 
 Space Complexity: O(N2 + N) == O(N2) because we used N2 for memoization array and N for recursive stack.
-
-Bottom-up Dynamic Programming with TabulationPermalink
+```
+#### Bottom-up Dynamic Programming with Tabulation 
+```
 We can build our two-dimensional memoization array in a bottom-up fashion, adding one element at a time.
 
-if the element at the start and the end is matching, the length of Longest Palindromic Substring (LPS) is 2 plus the length of LPS till start+1 and end-1.
-if the element at the start does not match the element at the end, we will take the max of LPS by either skipping the element at start or end
+if the element at the start and the end is matching,
+the length of Longest Palindromic Substring (LPS) is 2 plus the length of LPS till start+1 and end-1.
+if the element at the start does not match the element at the end,
+ we will take the max of LPS by either skipping the element at start or end
 So the overall algorith will be;
 
 if s[start] == s[end]:
@@ -677,16 +681,17 @@ class Solution:
                     memo[start][end] = max(memo[start + 1][end], memo[start][end - 1])
 
         return memo[0][len(s) - 1]
-Time Complexity: O(N2)
 
+Time Complexity: O(N2)
 Space Complexity: O(N2) where N is the input sequence.
 ```
 
-#### Longest common substr
+###  Longest common substr
 
 https://emre.me/coding-patterns/longest-common-substring-subsequence/
+ 
+#### Top-down Dynamic Programming with Memoization
 ```
-### Top-down Dynamic Programming with Memoization
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         memo = [[-1 for _ in range(len(text2))] for _ in range(len(text1))]
@@ -702,9 +707,10 @@ class Solution:
                 memo[i][j] = max(self.longestCommonSubsequence_recursive(memo, text1, text2, i + 1, j),
                                  self.longestCommonSubsequence_recursive(memo, text1, text2, i, j + 1))
         return memo[i][j]
+```
 
-
-Bottom-up Dynamic Programming with TabulationPermalink
+#### Bottom-up Dynamic Programming with Tabulation 
+```
 Lets create our two dimensional array in a bottom-up fashion.
 
 if the characters text1[i] matches text2[j], the length of the common subsequence would be one plus the length of the common subsequence until the i-1 and j-1 indexes.
