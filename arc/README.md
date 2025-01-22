@@ -1,3 +1,23 @@
+### Functional requirements 
+```
+Functional requirements are your "Users/Clients should be able to..." statements.
+Users should be able to post tweets
+Users should be able to follow other users
+Users should be able to see tweets from users they follow
+```
+### Non-functional requirements
+```
+Non-functional requirements are statements about the system qualities that are important to your users. 
+These can be phrased as "The system should be able to..." or "The system should be..." statements.
+
+The system should be highly availability, prioritizing availability over consistency
+The system should be able to scale to support 100M+ DAUs
+The system should be low latency, rendering feeds in under 200ms
+```
+https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator
+
+https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery
+
 https://mastersoftwarearchitecturebook.com/
 
 https://levelup.gitconnected.com/my-favourite-software-architecture-patterns-0e57073b4be1
