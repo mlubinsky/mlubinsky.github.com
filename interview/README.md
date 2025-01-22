@@ -189,6 +189,19 @@ class Solution:
 
         return len(stack) == 0
 ```
+### Longest increasing subsequence
+```
+def findLISLength(arr):
+
+  LIS = [1 for _ in range(len(arr))]
+
+  for i in range(1, len(arr)):
+    for j in range(i):
+      if arr[i] > arr[j]:
+        LIS[i] = max(LIS[i], LIS[j] + 1)
+
+  return max(LIS)
+```
 ### Length_of_longest_increasing_subsequence
 ```
 import bisect
