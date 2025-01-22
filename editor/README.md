@@ -498,6 +498,8 @@ https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spel
 
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit   Remote SSH
 
+https://github.com/Microsoft/vscode-remote-release
+
 https://marketplace.visualstudio.com/items?itemName=formulahendry.docker-explorer   Docker Explorer
 
 
