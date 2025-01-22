@@ -190,6 +190,8 @@ class Solution:
         return len(stack) == 0
 ```
 ### Longest increasing subsequence
+https://llego.dev/posts/python-solving-longest-increasing-subsequence/
+
 ```
 def findLISLength(arr):
 
@@ -201,6 +203,38 @@ def findLISLength(arr):
         LIS[i] = max(LIS[i], LIS[j] + 1)
 
   return max(LIS)
+
+O(n**2)
+```
+#### Better solution:
+```
+Initialize with stack containing first array element
+For each subsequent element, try to append to existing stacks if order is maintained
+If no stack append is possible, make new stack with that element
+Track longest stack found to get LIS length
+This leverages Python’s deque to simulate the stacks in an efficient way.
+By greedily extending stacks that maintain order, we build up the LIS with just one array pass.
+
+The time complexity is O(n log n) due to the stack manipulations, making this a fast optimization over the dynamic programming approach.
+
+from collections import deque
+
+def findLISLength(arr):
+
+  stacks = [deque([arr[0]])]
+  longest = 1
+
+  for i in range(1, len(arr)):
+    item = arr[i]
+
+    for stack in stacks:
+      if stack[-1] < item:
+        stack.append(item)
+        longest = max(longest, len(stack))
+    else:
+      stacks.append(deque([item]))
+
+  return longest
 ```
 ### Length_of_longest_increasing_subsequence
 ```
