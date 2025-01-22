@@ -14,6 +14,15 @@ The system should be highly availability, prioritizing availability over consist
 The system should be able to scale to support 100M+ DAUs
 The system should be low latency, rendering feeds in under 200ms
 ```
+
+### Ad Clicks Aggregator Design
+
+https://www.youtube.com/watch?v=Zcv_899yqhI
+
+https://medium.com/@tahir.rauf/system-design-ad-click-aggregator-df16f0509cde
+
+https://medium.com/@nvedansh/system-design-ad-click-event-aggregation-8fb6aa7817fc
+
 https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator
 
 https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery
