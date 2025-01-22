@@ -4,6 +4,8 @@
 
 ### Bazel 6.5.0
 
+sudo apt install bazel-1.0.0
+
 https://github.com/bazelbuild/bazel/releases
 
 https://github.com/bazelbuild/bazel/releases/download/6.5.0/bazel-6.5.0-installer-darwin-x86_64.sh
