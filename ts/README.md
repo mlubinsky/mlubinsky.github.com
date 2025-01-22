@@ -3,6 +3,8 @@ https://www.amazon.com/Time-Series-Forecasting-in-Python/dp/B0C3WSDLJL/
 
 https://arxiv.org/abs/2412.20512
 
+https://habr.com/ru/companies/bothub/articles/875738/ Nixtla представила TimeGPT
+
 https://news.ycombinator.com/item?id=42609595
 
 https://www.reddit.com/r/MachineLearning/comments/1gwbhxq/d_next_big_thing_in_time_series/
