@@ -1,3 +1,6 @@
+MacOS:  
+You can change TextEdit to handle plain text: Format > Convert to plain text, or Shift + Command + T.
+
 https://penrose.ink/siggraph20.html   Math visualization
 
 https://www.stempad.com/ math notes
