@@ -4,7 +4,7 @@
 
 ### Bazel 6.5.0
 
-sudo apt install bazel-1.0.0
+sudo apt install bazel-6.5.0
 
 https://github.com/bazelbuild/bazel/releases
 
