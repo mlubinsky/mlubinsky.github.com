@@ -1,3 +1,5 @@
+https://kubernetes.io/docs/home/
+
 https://selectel.ru/blog/what-is-kubelet/
 
 https://selectel.ru/blog/courses/dive-into-kubernetes/
