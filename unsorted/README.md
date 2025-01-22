@@ -1,5 +1,8 @@
 https://www.youtube.com/feed/playlists
 
+Code assistant comparison:  
+https://habr.com/ru/companies/timeweb/articles/873430/
+
 
 ### Unified System Interface, framework, server, GUI and Remote API
 https://unisi.tech/
