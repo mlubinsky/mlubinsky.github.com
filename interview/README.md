@@ -4,7 +4,7 @@
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
 
-
+https://llego.dev/tags/technical-coding-interview/
 
 https://www.linkedin.com/my-items/saved-posts/
 
