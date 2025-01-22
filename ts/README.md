@@ -1,7 +1,7 @@
 BOOK
 https://www.amazon.com/Time-Series-Forecasting-in-Python/dp/B0C3WSDLJL/
 
-https://arxiv.org/abs/2412.20512
+https://arxiv.org/abs/2412.20512 Dive into Time-Series Anomaly Detection: A Decade Review
 
 https://habr.com/ru/companies/bothub/articles/875738/ Nixtla представила TimeGPT
 
