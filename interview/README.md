@@ -260,7 +260,7 @@ https://github.com/heineman
 
 https://www.youtube.com/@Power_Couple/videos
 
-FAANG interview questions
+FAANG interview questions  
 https://media.licdn.com/dms/document/media/D4D1FAQH_q662e7ciYg/feedshare-document-pdf-analyzed/0/1686549764622?e=1687392000&v=beta&t=t3ZlZ6w4CMjYMfIDEg8DKA15ecgVSqrX5XNwo2pcBd0
 
 URL shortener: https://habr.com/ru/articles/746602/
@@ -294,7 +294,42 @@ class Solution:
 
         return len(stack) == 0
 ```
+
+```
+def longest_increasing_subsequence(nums):
+    """
+    Finds the longest strictly increasing subsequence in a list of numbers.
+
+    Args:
+        nums (list): A list of integers or floats.
+
+    Returns:
+        list: The longest strictly increasing subsequence.
+    """
+    if not nums:
+        return []
+
+    # Initialize variables to track sequences
+    longest_seq = []
+    current_seq = [nums[0]]
+
+    for i in range(1, len(nums)):
+        if nums[i] > nums[i - 1]:
+            current_seq.append(nums[i])  # Continue the increasing sequence
+        else:
+            if len(current_seq) > len(longest_seq):
+                longest_seq = current_seq  # Update the longest sequence
+            current_seq = [nums[i]]  # Start a new sequence
+
+    # Final check after the loop
+    if len(current_seq) > len(longest_seq):
+        longest_seq = current_seq
+
+    return longest_seq
+```
+
 ### Longest increasing subsequence
+
 https://llego.dev/posts/python-solving-longest-increasing-subsequence/
 
 ```
