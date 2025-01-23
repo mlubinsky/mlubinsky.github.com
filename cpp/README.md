@@ -9,7 +9,7 @@ https://github.com/stclib/STC
 https://nullprogram.com/blog/2025/01/19/
 
 
-Book: C Interfaces and implementation
+Book: C Interfaces and implementation  https://www.amazon.com/Interfaces-Implementations-Techniques-Creating-Reusable/dp/0201498413  
 https://github.com/drh/cii
 
 https://news.ycombinator.com/item?id=42605848 Pull Allocator , Aren
