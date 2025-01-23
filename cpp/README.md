@@ -1,10 +1,29 @@
-https://awesomecpp.com/
+### C
 
 https://www.youtube.com/watch?v=9UIIMBqq1D4   : C tips
 
 https://github.com/oz123/awesome-c
 
 https://github.com/stclib/STC
+
+https://nullprogram.com/blog/2025/01/19/
+
+
+Book: C Interfaces and implementation
+https://github.com/drh/cii
+
+https://news.ycombinator.com/item?id=42605848 Pull Allocator , Aren
+
+https://accu.org/bookreviews/2020/glassborow_1952/ Book "Effective C" Robert C. Seacord
+
+https://modernc.gforge.inria.fr/   Book "Modern C" Jens Gustedt
+
+https://news.ycombinator.com/item?id=25176531 favorits C tricks
+
+https://github.com/tezc/sc.  common C libraries
+
+### CPP
+https://awesomecpp.com/
 
 https://habr.com/ru/companies/timeweb/articles/842878/
 
@@ -38,25 +57,13 @@ while(0) in macro https://bowero.nl/blog/2020/10/25/defining-c-macros-the-right-
 
 https://habr.com/ru/post/546946/
 
-## C
-
-Book: C Interfaces and implementation
-https://github.com/drh/cii
-
-https://news.ycombinator.com/item?id=42605848 Pull Allocator , Aren
-
-https://accu.org/bookreviews/2020/glassborow_1952/ Book "Effective C" Robert C. Seacord
-
-https://modernc.gforge.inria.fr/   Book "Modern C" Jens Gustedt
-
-
-https://github.com/tezc/sc.  common C libraries
 
 
 
 
 
-https://news.ycombinator.com/item?id=25176531 favorits C tricks
+
+
 
 https://github.com/nothings/single_file_libs
 
@@ -131,7 +138,7 @@ https://news.ycombinator.com/item?id=24901244
 
 <https://github.com/ocornut/imgui>  Dear ImGui 
 
-<https://awesomecpp.com/>
+
 
 <https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md>
 
