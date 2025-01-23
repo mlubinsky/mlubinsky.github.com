@@ -1,3 +1,5 @@
+https://stackoverflow.com/questions/74729503/how-to-configure-https-for-grafana-on-windows-server-2022
+
 http://localhost:3000
 
 ```
