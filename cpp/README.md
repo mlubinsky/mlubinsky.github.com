@@ -22,6 +22,12 @@ https://news.ycombinator.com/item?id=25176531 favorits C tricks
 
 https://github.com/tezc/sc.  common C libraries
 
+<https://codeplea.com/embedding-files-in-c-programs>
+
+<https://wordsandbuttons.online/SYTYKC.pdf> C
+
+https://news.ycombinator.com/item?id=24361469 . Modern C
+
 ### CPP
 https://awesomecpp.com/
 
@@ -58,13 +64,6 @@ while(0) in macro https://bowero.nl/blog/2020/10/25/defining-c-macros-the-right-
 https://habr.com/ru/post/546946/
 
 
-
-
-
-
-
-
-
 https://github.com/nothings/single_file_libs
 
 https://github.com/p-ranav/awesome-hpp
@@ -75,11 +74,7 @@ https://habr.com/ru/company/pvs-studio/blog/524568/
 
 <https://github.com/nothings/single_file_libs>
 
-<https://codeplea.com/embedding-files-in-c-programs>
 
-<https://wordsandbuttons.online/SYTYKC.pdf> C
-
-https://news.ycombinator.com/item?id=24361469 . Modern C
 
 <https://johnysswlab.com/the-price-of-dynamic-memory-allocation/> memory allocators
 
