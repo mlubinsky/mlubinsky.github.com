@@ -1,3 +1,5 @@
+https://apps.kde.org/kwrite/ cross platform IDE
+
 MacOS:  
 You can change TextEdit to handle plain text: Format > Convert to plain text, or Shift + Command + T.
 
