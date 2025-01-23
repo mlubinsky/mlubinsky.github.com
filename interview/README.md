@@ -169,7 +169,7 @@ elif comp == 0:
 
 ```
 
-### Find islands on gdid
+### Find islands on 2D grid
 ```
 def num_islands(grid):
     # Function to perform DFS to mark all connected cells as visited
