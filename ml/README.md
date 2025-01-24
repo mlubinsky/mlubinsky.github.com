@@ -15,6 +15,8 @@ https://mlip-cmu.github.io/book/
 
 https://www.manning.com/books/machine-learning-system-design  Valerii Babushkin and Arseny Kravchenko
 
+https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969?source=ps-sl-shoppingads-lpcontext
+
 Book
 https://github.com/abhishekkrthakur/approachingalmost/blob/master/AAAMLP.pdf
 
