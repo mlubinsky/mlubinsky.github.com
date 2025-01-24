@@ -13,6 +13,8 @@ https://course.ccs.neu.edu/ds4420sp20/readings/mml-book.pdf
 Machine learning in production
 https://mlip-cmu.github.io/book/
 
+https://karpov.courses/ml-hard  ХАРДКОРНЫЙ MACHINE LEARNING
+
 Book  
 https://www.manning.com/books/machine-learning-system-design  Valerii Babushkin and Arseny Kravchenko
 
