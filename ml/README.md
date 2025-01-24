@@ -13,9 +13,12 @@ https://course.ccs.neu.edu/ds4420sp20/readings/mml-book.pdf
 Machine learning in production
 https://mlip-cmu.github.io/book/
 
+Book  
 https://www.manning.com/books/machine-learning-system-design  Valerii Babushkin and Arseny Kravchenko
 
+Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications. Chip Huyen
 https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969 
+
 Book
 https://github.com/abhishekkrthakur/approachingalmost/blob/master/AAAMLP.pdf
 
