@@ -11,10 +11,53 @@ $WORKING_DIR/conf/custom.ini file or the
 /usr/local/etc/grafana/grafana.ini file.
 
 The custom configuration file path can be overridden using the --config parameter.
+
+Default Behavior When Uninstalling Grafana on Windows
+Dashboards Stored in the Database:
+
+By default, Grafana stores dashboards and settings in its database:
+SQLite (grafana.db) – located in the data folder of the installation directory.
+MySQL or PostgreSQL – if configured to use an external database.
+Uninstalling Grafana does not delete the database file or external databases unless you explicitly delete them.
+
+Dashboards Stored as JSON Files:
+
+If you exported or saved your dashboards as JSON files, those files remain unaffected by uninstalling Grafana.
+Configuration and Plugins:
+
+The conf, data, and plugins folders may also remain on your system after uninstallation. 
+However, some uninstallers offer an option to delete these directories, which could erase your data.
+How to Prevent Dashboard Loss
+
+To ensure your dashboards and other data are preserved:
+
+Back Up Important Files:
+
+Database: If using SQLite, back up the grafana.db file (located in the data folder of your installation directory).
+Configuration: Back up grafana.ini (in the conf folder) if you’ve made custom changes.
+Plugins: If you installed plugins, back up the plugins folder.
+
+Use an External Database:
+
+If you configured Grafana to use MySQL or PostgreSQL,
+the dashboards and settings are stored in the external database and will remain intact after uninstalling Grafana.
+Reinstalling Grafana After Uninstallation
+
+If you uninstall Grafana and reinstall it later:
+
+Place the backed-up grafana.db file or connect to your existing external database during setup.
+Grafana will automatically detect and load your saved dashboards.
+
+Summary
+Uninstalling Grafana 10 does not automatically delete your dashboards unless you manually delete the database or the data folder.
+To be safe, back up the data folder (or your external database) before uninstalling.
+
 ```
 https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/
 
 Grafana's default login credentials are username: "admin" and password: "admin"
+
+
 
 ### Grafana + Jira integration
 
