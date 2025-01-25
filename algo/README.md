@@ -1,4 +1,7 @@
 https://the-algorithms.com/
+
+https://cp-algorithms.com/
+
 quick select: 
 https://danlark.org/2020/11/11/miniselect-practical-and-generic-selection-algorithms/
 
