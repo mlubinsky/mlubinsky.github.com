@@ -1,5 +1,7 @@
 https://habr.com/ru/articles/875330/  NATS, RabbitMQ and KAFKA
 
+https://newsletter.scalablethread.com/p/how-message-queues-work
+
 https://encore.dev/blog/queueing
 
 https://habr.com/ru/articles/865120/  Kafka visualization
