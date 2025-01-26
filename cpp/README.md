@@ -57,12 +57,13 @@ https://jacksonallan.github.io/c_cpp_hash_tables_benchmark/
 good C++ codebase
 https://www.reddit.com/r/cpp/comments/1ef0yna/looking_for_examples_of_good_idiomatic_codelibs/
 
-## Macros
+### Macros
 
 while(0) in macro https://bowero.nl/blog/2020/10/25/defining-c-macros-the-right-way/
 
 https://habr.com/ru/post/546946/
 
+### Single file libraries
 
 https://github.com/nothings/single_file_libs
 
