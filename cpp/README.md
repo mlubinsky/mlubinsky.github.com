@@ -16,6 +16,8 @@ https://news.ycombinator.com/item?id=42605848 Pull Allocator , Arena
 
 https://habr.com/ru/articles/505632/ Аллокаторы памяти
 
+https://habr.com/ru/companies/pvs-studio/articles/875922/
+
 https://accu.org/bookreviews/2020/glassborow_1952/ Book "Effective C" Robert C. Seacord
 
 https://modernc.gforge.inria.fr/   Book "Modern C" Jens Gustedt
