@@ -12,11 +12,7 @@ https://nullprogram.com/blog/2025/01/19/
 Book: C Interfaces and implementation  https://www.amazon.com/Interfaces-Implementations-Techniques-Creating-Reusable/dp/0201498413  
 https://github.com/drh/cii
 
-https://news.ycombinator.com/item?id=42605848 Pull Allocator , Arena
 
-https://habr.com/ru/articles/505632/ Аллокаторы памяти
-
-https://habr.com/ru/companies/pvs-studio/articles/875922/
 
 https://accu.org/bookreviews/2020/glassborow_1952/ Book "Effective C" Robert C. Seacord
 
@@ -79,10 +75,18 @@ https://habr.com/ru/company/pvs-studio/blog/524568/
 <https://github.com/nothings/single_file_libs>
 
 
+### Memory allocators 
 
 <https://johnysswlab.com/the-price-of-dynamic-memory-allocation/> memory allocators
 
 https://habr.com/ru/company/mailru/blog/525484/ memory allocators
+
+https://news.ycombinator.com/item?id=42605848 Pull Allocator , Arena
+
+https://habr.com/ru/articles/505632/ Аллокаторы памяти
+
+https://habr.com/ru/companies/pvs-studio/articles/875922/
+
 
 https://www.reddit.com/r/cpp/comments/ffx95k/static_analysis_tools_you_use_in_ci_for_your_cpp/   cpp static analysis
 
