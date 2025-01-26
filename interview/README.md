@@ -18,6 +18,8 @@ https://github.com/alex/what-happens-when when you press button on keyboard
 
 ### System design interview
 
+https://www.youtube.com/watch?v=cr6p0n0N-VA  design / build Whats-UP
+
 https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator
 
 https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery
