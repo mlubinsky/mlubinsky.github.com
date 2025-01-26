@@ -18,7 +18,7 @@ https://github.com/alex/what-happens-when when you press button on keyboard
 
 ### System design interview
 
-https://www.youtube.com/watch?v=kIcq1_pBQSY
+https://www.youtube.com/watch?v=kIcq1_pBQSY Facebook System Design Interview: Design an Analytics Platform (Metrics & Logging)
 
 https://habr.com/ru/articles/840116/   How internet works
 
