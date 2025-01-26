@@ -18,6 +18,10 @@ https://github.com/alex/what-happens-when when you press button on keyboard
 
 ### System design interview
 
+https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator
+
+https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery
+
 https://www.youtube.com/watch?v=kIcq1_pBQSY Facebook System Design Interview: Design an Analytics Platform (Metrics & Logging)
 
 https://habr.com/ru/articles/840116/   How internet works
