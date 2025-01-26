@@ -12,7 +12,9 @@ https://nullprogram.com/blog/2025/01/19/
 Book: C Interfaces and implementation  https://www.amazon.com/Interfaces-Implementations-Techniques-Creating-Reusable/dp/0201498413  
 https://github.com/drh/cii
 
-https://news.ycombinator.com/item?id=42605848 Pull Allocator , Aren
+https://news.ycombinator.com/item?id=42605848 Pull Allocator , Arena
+
+https://habr.com/ru/articles/505632/ Аллокаторы памяти
 
 https://accu.org/bookreviews/2020/glassborow_1952/ Book "Effective C" Robert C. Seacord
 
