@@ -6,7 +6,7 @@ https://github.com/oz123/awesome-c
 
 https://github.com/stclib/STC
 
-https://nullprogram.com/blog/2025/01/19/
+https://nullprogram.com/blog/2025/01/19/ Examples of quick hash tables and dynamic arrays in C
 
 
 Book: C Interfaces and implementation  https://www.amazon.com/Interfaces-Implementations-Techniques-Creating-Reusable/dp/0201498413  
