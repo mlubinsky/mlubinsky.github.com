@@ -1,5 +1,7 @@
 https://www.youtube.com/feed/playlists
 
+https://lj.rossia.org/~tiphareth/
+
 Code assistant comparison:  
 https://habr.com/ru/companies/timeweb/articles/873430/
 
