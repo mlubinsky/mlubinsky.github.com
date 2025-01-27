@@ -2,6 +2,8 @@ https://the-algorithms.com/
 
 https://cp-algorithms.com/
 
+https://arxiv.org/pdf/2301.10191  Distinct elements in stream
+
 quick select: 
 https://danlark.org/2020/11/11/miniselect-practical-and-generic-selection-algorithms/
 
