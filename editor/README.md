@@ -1,5 +1,6 @@
-trae.ai   
-https://habr.com/ru/articles/876952/  Trae from ByteDance - Cursor competitor
+trae.ai  
+https://habr.com/ru/articles/876952/  Trae from ByteDance - Cursor competitor  
+https://www.cursor.com/
 
 
 https://apps.kde.org/kwrite/ cross platform IDE
