@@ -1,5 +1,7 @@
 https://www.youtube.com/playlist?list=PL4_hYwCyhAvaprlx_MnGC5xyKR1qb7Y7L Математика больших данных 
 
+https://news.ycombinator.com/item?id=42827913 Good links!
+
 https://habr.com/ru/articles/870718/  Наивный байесовский классификатор. Теория и реализация. С нуля
 
 https://p.migdal.pl/blog/2025/01/dont-use-cosine-similarity   
