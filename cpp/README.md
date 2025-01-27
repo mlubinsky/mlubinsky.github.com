@@ -92,6 +92,9 @@ https://nullprogram.com/blog/2023/09/27/ arena memory allocator
 
 https://nullprogram.com/blog/2024/05/25/
 
+https://habr.com/ru/articles/876958/
+
+### C++ static analysis
 
 https://www.reddit.com/r/cpp/comments/ffx95k/static_analysis_tools_you_use_in_ci_for_your_cpp/   cpp static analysis
 
