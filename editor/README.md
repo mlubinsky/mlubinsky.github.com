@@ -1,3 +1,6 @@
+https://habr.com/ru/articles/876952/  Trae from ByteDance - Cursor competitor
+
+
 https://apps.kde.org/kwrite/ cross platform IDE
 
 MacOS:  
