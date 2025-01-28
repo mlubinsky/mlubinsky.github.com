@@ -1,3 +1,5 @@
+https://www.bytesizego.com/courses/
+
 https://100go.co/
 https://jvns.ca/blog/2024/08/06/go-structs-copied-on-assignment/
 
