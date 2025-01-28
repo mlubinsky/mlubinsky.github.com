@@ -1,3 +1,5 @@
+https://mlip-cmu.github.io/book/
+
 https://www.youtube.com/playlist?list=PLfFghEzKVmjttkxVtVIvNZRuoSUuWtsFN  Deploying ML
 
 https://seattledataguy.substack.com/p/the-state-of-data-engineering-part-b61
