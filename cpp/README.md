@@ -1,3 +1,5 @@
+https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
+
 ### C
 
 https://www.youtube.com/watch?v=9UIIMBqq1D4   : C tips
