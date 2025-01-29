@@ -45,6 +45,20 @@ def generate_dates_in_range(start_date, end_date, range="DAY"):
   return all_dates
 ```
 
+### find_file_entries  -  Walk through the folder and its subfolders
+```
+import os
+def find_file_entries(file_name, folder):
+    result = []
+    
+   
+    for root, dirs, files in os.walk(folder):
+        if file_name in files:  # Check if the file exists in the current directory
+            full_path = os.path.join(root, file_name)
+            result.append(full_path)
+
+    return result
+ ```   
 ### env var
 
 ```
