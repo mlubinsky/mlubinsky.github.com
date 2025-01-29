@@ -15,8 +15,8 @@ def get_dates(sdate, edate):
  return dates
 
 def dates_diff(str_date): #  current date minus given date as YYYY-MM-DD
-      if str_date.startswith('202') and len(w) == 10:  
-        d = datetime.strptime(w, '%Y-%m-%d').date()
+      if str_date.startswith('202') and len(str_date) == 10:  
+        d = datetime.strptime(str_date, '%Y-%m-%d').date()
         now = datetime.now().date()
         if (now-d).days > max_days:
            return True
