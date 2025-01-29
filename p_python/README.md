@@ -6,6 +6,20 @@ https://docs.python.org/3/howto/logging.html  Logging
 
 https://mesa.readthedocs.io/stable/ Discrete simulation
 
+```
+#----------------------------
+def get_dates(sdate, edate):
+#----------------------------
+ dates = [sdate+timedelta(days=x) for x in range((edate-sdate).days)]
+ return dates
+
+def dates_diff(str_date): #  current date minus given date as YYYY-MM-DD
+      if str_date.startswith('202') and len(w) == 10:  
+        d = datetime.strptime(w, '%Y-%m-%d').date()
+        now = datetime.now().date()
+        if (now-d).days > max_days:
+           return True
+```
 do not use 'if len(list) == 0',   
 use 'if not list' 
 
