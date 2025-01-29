@@ -43,6 +43,10 @@ https://news.ycombinator.com/item?id=37110628
  
 https://smallpdf.com/ru
 
+## Sublime
+
+https://ohdoylerules.com/workflows/why-i-still-like-sublime-text-in-2025/
+
 ### To invoke Sublime from command line (as subl)  create symbolic link
 
 ```
