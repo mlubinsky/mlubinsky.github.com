@@ -8,6 +8,8 @@ https://habr.com/ru/articles/784868/
 
 https://habr.com/ru/articles/829202/ алгоритм K-means++
 
+https://habr.com/ru/companies/skillfactory/articles/877684/
+
 https://en.wikipedia.org/wiki/Determining_the_number_of_clusters_in_a_data_set
 
 https://arxiv.org/pdf/2006.04916.pdf
