@@ -301,6 +301,8 @@ https://www.physics.princeton.edu/~mcdonald/examples/ McDonald
 https://habr.com/ru/post/544030/ FermiNet
 
 ### Entropy
+https://www.youtube.com/watch?v=ScX2aBFyrVU Information Theory: Defining Entropy and Information - Oxford Mathematics 3rd Year Student Lecture
+
 https://www.quantamagazine.org/what-is-entropy-a-measure-of-just-how-little-we-really-know-20241213/
 
 https://habr.com/ru/articles/871356/
