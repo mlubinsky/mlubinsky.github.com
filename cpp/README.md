@@ -80,6 +80,8 @@ https://habr.com/ru/company/pvs-studio/blog/524568/
 
 ### Memory allocators 
 
+https://habr.com/ru/articles/876804/
+
 <https://johnysswlab.com/the-price-of-dynamic-memory-allocation/> memory allocators
 
 https://habr.com/ru/company/mailru/blog/525484/ memory allocators
