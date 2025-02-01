@@ -95,6 +95,8 @@ https://ai.google.dev/edge/litert
 
 https://github.com/google-ai-edge/LiteRT
 
+https://github.com/google-ai-edge/litert-samples/tree/main/examples
+
 
 git clone https://github.com/google-ai-edge/LiteRT
 ```
