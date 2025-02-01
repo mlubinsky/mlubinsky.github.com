@@ -2,8 +2,10 @@ https://www.youtube.com/feed/playlists
 
 https://lj.rossia.org/~tiphareth/
 
-Code assistant comparison:  
+### Code assistant comparison:  
 https://habr.com/ru/companies/timeweb/articles/873430/
+
+http://lucumr.pocoo.org/2025/1/30/how-i-ai
 
 
 ### Unified System Interface, framework, server, GUI and Remote API
