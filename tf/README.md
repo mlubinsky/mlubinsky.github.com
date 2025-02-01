@@ -91,6 +91,8 @@ Use the generated bazel binary:
 
 ## TFLite   LiteRT
 
+Normally, you do not need to locally build LiteRT Android library.
+
 https://ai.google.dev/edge/litert
 
 https://github.com/google-ai-edge/LiteRT
