@@ -903,6 +903,8 @@ Connecting to Prometeus: https://prometheus.io/docs/visualization/grafana/
 
 ## Prometheus
 
+https://habr.com/ru/companies/sportmaster_lab/articles/872204/
+
 https://blog.pvincent.io/tags/prometheus/
 
 
