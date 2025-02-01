@@ -18,6 +18,9 @@ https://apps.apple.com/us/app/amphetamine/id937984704
 
 caffeinate -disu
 
+### choose-an-app-to-open-a-file-on-mac
+https://support.apple.com/guide/mac-help/choose-an-app-to-open-a-file-on-mac-mh35597/mac
+
 ### keyboard shortcats
 
 Chrome has tab search. In MacOS: Shift+Cmd+A
