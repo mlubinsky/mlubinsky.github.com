@@ -11,6 +11,40 @@ https://github.com/bazelbuild/bazel/releases
 https://github.com/bazelbuild/bazel/releases/download/6.5.0/bazel-6.5.0-installer-darwin-x86_64.sh
 
 ```
+
+In Bazel, the notation //tflite:interpreter_test refers to a target within a Bazel workspace.
+
+Breakdown of //tflite:interpreter_test:
+// → The root of the Bazel workspace.
+tflite → A subdirectory (or package) within the repository.
+interpreter_test → The target name, which is likely a test executable defined in a BUILD file.
+Where is the test file located?
+To find the actual test file:
+
+Check the tflite/ directory
+Since the target is //tflite:interpreter_test, the corresponding BUILD file should be in:
+
+ 
+LiteRT/tflite/BUILD
+This file will define how interpreter_test is built and which source files it includes.
+
+Look for the test source file
+
+Typically, the test file will be a .cc or .cpp file inside tflite/ with interpreter_test in its name.
+Try searching for files like:
+ 
+LiteRT/tflite/interpreter_test.cc
+LiteRT/tflite/interpreter_test.cpp
+If you are using the terminal, navigate to the LiteRT repository root and run:
+ 
+find tflite -name "interpreter_test*"
+Or, if using GitHub, check the tflite directory for relevant files.
+```
+https://github.com/google-ai-edge/LiteRT/tree/main/tflite
+
+```
+
+
 Homebrew does not allow you to directly install arbitrary versions of Bazel, such as bazel@6.5.0, 
 unless the specific version is available as a formula in Homebrew. However, 
 you can install a specific version of Bazel using alternative methods.
