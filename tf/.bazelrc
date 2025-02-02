@@ -1,3 +1,8 @@
+cat ~/.bazelrc
+startup --host_jvm_args=-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts --host_jvm_args=-Djavax.net.ssl.trust
+
+
+
 root@spotace:~/MICHAEL/LiteRT# cat .bazelrc
 
 # LiteRT Bazel configuration file.
