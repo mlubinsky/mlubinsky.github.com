@@ -1,3 +1,5 @@
+https://marketplace.visualstudio.com/items?itemName=golang.go   VS Code extension
+
 https://www.bytesizego.com/courses/
 
 https://100go.co/
