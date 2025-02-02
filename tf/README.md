@@ -14,7 +14,6 @@ XNNPACK is a highly optimized solution for neural network inference on ARM, x86,
 instead it provides low-level performance primitives for accelerating high-level machine learning frameworks,
 such as TensorFlow Lite, TensorFlow.js, PyTorch, ONNX Runtime, and MediaPipe.
 
-
 ```
 ### Build LiteRT with CMake
 https://ai.google.dev/edge/litert/build/cmake?hl=en
@@ -112,10 +111,51 @@ Install it:
 
 sudo bash cmake-linux-x86_64.sh --prefix=/usr/local --skip-license
 
-
 Verify the installation:
 
 cmake --version
+
+Input for the CMake Build Tool
+CMake takes CMakeLists.txt as its main input file.
+This file defines how the project should be configured, built, and installed.
+
+Common Inputs for CMake:
+CMakeLists.txt (Main Input)
+
+This file is placed in the root of the project and contains build instructions.
+Example content:
+
+
+cmake_minimum_required(VERSION 3.10)
+project(MyProject)
+
+add_executable(my_program main.cpp)
+Source Files (e.g., .cpp, .c, .h)
+
+CMake processes these source files based on the instructions in CMakeLists.txt.
+Configuration Options (Passed via CLI or -D flags)
+
+Example: Specify the build type:
+
+cmake -DCMAKE_BUILD_TYPE=Release ..
+Toolchain Files (For cross-compilation)
+
+Example: toolchain.cmake for compiling on ARM.
+Additional CMake Modules (e.g., FindPackage.cmake)
+
+Used for finding dependencies like OpenCV, Boost, etc.
+How CMake Uses These Inputs
+Configure the Build System
+
+Run CMake in the project directory:
+
+cmake -S . -B build
+This reads CMakeLists.txt and generates build files (like Makefile or ninja.build).
+Build the Project
+
+Once configured, compile the project:
+
+cmake --build build
 
 ```
 ### Bazel 6.5.0
