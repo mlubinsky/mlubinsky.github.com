@@ -5,6 +5,9 @@
 ### XNNPACK
 https://github.com/google/XNNPACK
 
+https://developers.googleblog.com/en/streamlining-llm-inference-at-the-edge-with-tflite
+
+https://onnxruntime.ai/docs/execution-providers/Xnnpack-ExecutionProvider.html
 ```
 XNNPACK is a highly optimized solution for neural network inference on ARM, x86, WebAssembly, and RISC-V platforms.
  XNNPACK is not intended for direct use by deep learning practitioners and researchers;
