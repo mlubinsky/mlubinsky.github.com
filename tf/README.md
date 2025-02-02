@@ -25,27 +25,30 @@ mkdir tflite_build
 cd tflite_build
 cmake ../tensorflow_src/tensorflow/lite
 
-ross-compilation
+Cross-compilation
 You can use CMake to build binaries for ARM64 or Android target architectures.
 
 In order to cross-compile the LiteRT, you namely need to provide the path to the SDK (e.g. ARM64 SDK or NDK in Android's case) with -DCMAKE_TOOLCHAIN_FILE flag.
 
-
 cmake -DCMAKE_TOOLCHAIN_FILE=<CMakeToolchainFileLoc> ../tensorflow/lite/
 Specifics of Android cross-compilation
-For Android cross-compilation, you need to install Android NDK and provide the NDK path with -DCMAKE_TOOLCHAIN_FILE flag mentioned above. You also need to set target ABI with-DANDROID_ABI flag.
+For Android cross-compilation, you need to install Android NDK and provide the NDK path with -DCMAKE_TOOLCHAIN_FILE flag mentioned above.
+You also need to set target ABI with-DANDROID_ABI flag.
 
 
 cmake -DCMAKE_TOOLCHAIN_FILE=<NDK path>/build/cmake/android.toolchain.cmake \
   -DANDROID_ABI=arm64-v8a ../tensorflow_src/tensorflow/lite
 Specifics of kernel (unit) tests cross-compilation
-Cross-compilation of the unit tests requires flatc compiler for the host architecture. For this purpose, there is a CMakeLists located in tensorflow/lite/tools/cmake/native_tools/flatbuffers to build the flatc compiler with CMake in advance in a separate build directory using the host toolchain.
+Cross-compilation of the unit tests requires flatc compiler for the host architecture. For this purpose,
+there is a CMakeLists located in tensorflow/lite/tools/cmake/native_tools/flatbuffers
+to build the flatc compiler with CMake in advance in a separate build directory using the host toolchain.
 
 
 mkdir flatc-native-build && cd flatc-native-build
 cmake ../tensorflow_src/tensorflow/lite/tools/cmake/native_tools/flatbuffers
 cmake --build .
-It is also possible to install the flatc to a custom installation location (e.g. to a directory containing other natively-built tools instead of the CMake build directory):
+It is also possible to install the flatc to a custom installation location
+(e.g. to a directory containing other natively-built tools instead of the CMake build directory):
 
 
 cmake -DCMAKE_INSTALL_PREFIX=<native_tools_dir> ../tensorflow_src/tensorflow/lite/tools/cmake/native_tools/flatbuffers
@@ -70,6 +73,29 @@ cmake -E env TESTS_ARGUMENTS=--use_xnnpack=true ctest -L delegate
 cmake -E env TESTS_ARGUMENTS=--external_delegate_path=<PATH> ctest -L delegate
 A known limitation of this way of providing additional delegate-related launch arguments to unit tests is that it effectively supports only those with an expected return value of 0. Different return values will be reported as a test failure.
 
+find . -name CMakeLists.txt
+./tflite/kernels/CMakeLists.txt
+./tflite/tools/benchmark/CMakeLists.txt
+./tflite/tools/cmake/native_tools/flatbuffers/CMakeLists.txt
+./tflite/tools/cmake/modules/farmhash/CMakeLists.txt
+./tflite/tools/cmake/modules/xnnpack/CMakeLists.txt
+./tflite/tools/cmake/modules/fft2d/CMakeLists.txt
+./tflite/tools/cmake/modules/ml_dtypes/CMakeLists.txt
+./tflite/CMakeLists.txt
+./tflite/profiling/proto/CMakeLists.txt
+./tflite/examples/minimal/CMakeLists.txt
+./tflite/examples/label_image/CMakeLists.txt
+./tflite/c/CMakeLists.txt
+./third_party/tensorflow/third_party/xla/xla/mlir_hlo/mhlo/CMakeLists.txt
+./third_party/tensorflow/third_party/xla/xla/mlir_hlo/mhlo/analysis/CMakeLists.txt
+./third_party/tensorflow/third_party/xla/xla/mlir_hlo/mhlo/IR/CMakeLists.txt
+...
+...
+./third_party/tensorflow/tensorflow/lite/CMakeLists.txt
+./third_party/tensorflow/tensorflow/lite/profiling/proto/CMakeLists.txt
+./third_party/tensorflow/tensorflow/lite/examples/minimal/CMakeLists.txt
+./third_party/tensorflow/tensorflow/lite/examples/label_image/CMakeLists.txt
+./third_party/tensorflow/tensorflow/lite/c/CMakeLists.txt
 
 ```
 
