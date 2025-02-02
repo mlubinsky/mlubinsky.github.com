@@ -2,6 +2,68 @@
 
 <https://habr.com/ru/post/500788/>
 
+### CMake for Ubuntu
+
+```
+Method 1: Install from Ubuntu Repositories (Easy but May Be Outdated)
+sh
+Copy
+Edit
+sudo apt update
+sudo apt install cmake -y
+After installation, check the version:
+
+sh
+Copy
+Edit
+cmake --version
+If you need a newer version, use Method 2.
+
+Method 2: Install Latest CMake from Kitware APT Repository
+Kitware provides the latest CMake versions officially.
+
+Add the Kitware APT Repository:
+
+sh
+Copy
+Edit
+sudo apt update
+sudo apt install -y software-properties-common
+sudo add-apt-repository -y ppa:deadsnakes/ppa
+sudo apt update
+Install the latest CMake:
+
+sh
+Copy
+Edit
+sudo apt install cmake -y
+Method 3: Install Latest CMake from Source (Most Up-to-Date)
+Remove old CMake (if installed):
+
+sh
+Copy
+Edit
+sudo apt remove cmake -y
+Download the latest CMake:
+
+sh
+Copy
+Edit
+wget https://github.com/Kitware/CMake/releases/latest/download/cmake-linux-x86_64.sh
+Install it:
+
+sh
+Copy
+Edit
+sudo bash cmake-linux-x86_64.sh --prefix=/usr/local --skip-license
+Verify the installation:
+
+sh
+Copy
+Edit
+cmake --version
+
+```
 ### Bazel 6.5.0
 
 sudo apt install bazel-6.5.0
