@@ -1,4 +1,9 @@
-# Add records to csv if they do s not exist 
+### File manager
+https://multicommander.com/
+
+### Rigrep for non-standard extension
+ rg "search_string" --type-add "bat:*.bat" --type bat --max-depth 1
+# Add records to csv if they do not exist 
 ```
 import csv
 
@@ -53,8 +58,9 @@ add_strings_to_csv(strings, file_name)
 
 ### findstr
 
-### Rigrep for non-standard extension
- rg "search_string" --type-add "bat:*.bat" --type bat --max-depth 1
+
+
+ 
  %* in batch file means:  all command line arguments
 
 ### Accessing env variables:
