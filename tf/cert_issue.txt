@@ -93,3 +93,6 @@ This could either mean you have to add the '@bazel_gazelle' repository with a st
 ERROR: Error computing the main repository mapping: cycles detected during computation of main repo mapping
 Loading:
 root@spotace:~/MICHAEL/LiteRT#
+
+bazel test  --define xnn_enable_avxvnni=false --define xnn_enable_avx512amx=false  --define xnn_enable_avx512fp16=false   --define xnn_enable_avxvnniint8=false  //tflite:interpreter_test
+
