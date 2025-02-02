@@ -2,6 +2,17 @@
 
 <https://habr.com/ru/post/500788/>
 
+### XNNPACK
+https://github.com/google/XNNPACK
+
+```
+XNNPACK is a highly optimized solution for neural network inference on ARM, x86, WebAssembly, and RISC-V platforms.
+ XNNPACK is not intended for direct use by deep learning practitioners and researchers;
+instead it provides low-level performance primitives for accelerating high-level machine learning frameworks,
+such as TensorFlow Lite, TensorFlow.js, PyTorch, ONNX Runtime, and MediaPipe.
+
+
+```
 ### Build LiteRT with CMake
 https://ai.google.dev/edge/litert/build/cmake?hl=en
 
