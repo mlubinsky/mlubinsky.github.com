@@ -1,5 +1,12 @@
 https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
 
+### Telegram
+https://t.me/s/bfbook  https://t.me/s/bfbook?before=4869  
+https://t.me/s/cpp_lib  
+
+
+https://www.youtube.com/watch?v=Zb57p6KfN3M Работа с файлами, в десятки раз превышающими размер оперативки
+
 ### C
 
 https://www.youtube.com/watch?v=9UIIMBqq1D4   : C tips
