@@ -186,29 +186,34 @@ Once configured, compile the project:
 cmake --build build
 
 ```
-### Bazel 6.5.0
 
-sudo apt install bazel-6.5.0
 
-https://github.com/bazelbuild/bazel/releases
-
-https://github.com/bazelbuild/bazel/releases/download/6.5.0/bazel-6.5.0-installer-darwin-x86_64.sh
-
+### Explanation of bazel test //tflite:interpreter_test
 ```
+bazel test  //tflite:interpreter_test
+is used to run tests using Bazel. Let's break down its arguments:
 
+bazel test
+
+This is the Bazel command for running tests instead of just building targets.
+It ensures that test rules specified in the BUILD files are executed.
+ 
+This is the Bazel target you are running the test for.
+//tflite refers to the tflite package, which is located in the tflite/ directory of the workspace.
+interpreter_test is the test rule defined in the BUILD file inside tflite/.
 In Bazel, the notation //tflite:interpreter_test refers to a target within a Bazel workspace.
 
 Breakdown of //tflite:interpreter_test:
 // → The root of the Bazel workspace.
 tflite → A subdirectory (or package) within the repository.
 interpreter_test → The target name, which is likely a test executable defined in a BUILD file.
+
 Where is the test file located?
 To find the actual test file:
 
 Check the tflite/ directory
 Since the target is //tflite:interpreter_test, the corresponding BUILD file should be in:
 
- 
 LiteRT/tflite/BUILD
 This file will define how interpreter_test is built and which source files it includes.
 
@@ -226,26 +231,14 @@ Or, if using GitHub, check the tflite directory for relevant files.
 ```
 https://github.com/google-ai-edge/LiteRT/tree/main/tflite
 
+
+
+### LiteRT uses Bazel 6.5.0
 ```
 
+sudo apt install bazel-6.5.0
 
-Homebrew does not allow you to directly install arbitrary versions of Bazel, such as bazel@6.5.0, 
-unless the specific version is available as a formula in Homebrew. However, 
-you can install a specific version of Bazel using alternative methods.
-
-Here’s how you can install Bazel version 6.5.0 or any other version:
-
-1. Use the Official Bazel Installer
------------------------------------
-The Bazel team provides official installers for specific versions of Bazel.
-
-Visit the Bazel Releases Page
 https://github.com/bazelbuild/bazel/releases
-
-Find version 6.5.0 (or the version you need).
-Download the installer for macOS (bazel-<version>-installer-darwin-x86_64.sh).
-
-For Bazel 6.5.0, the direct link is:
 
 https://github.com/bazelbuild/bazel/releases/download/6.5.0/bazel-6.5.0-installer-darwin-x86_64.sh
 
