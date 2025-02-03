@@ -214,6 +214,8 @@ cmake --build build
 
 ### Explanation of bazel test //tflite:interpreter_test
 ```
+rm -rf  ~/.cache/bazel
+
 bazel test  //tflite:interpreter_test
 is used to run tests using Bazel. Let's break down its arguments:
 
@@ -233,12 +235,11 @@ tflite → A subdirectory (or package) within the repository.
 interpreter_test → The target name, which is likely a test executable defined in a BUILD file.
 
 Where is the test file located?
-To find the actual test file:
-
-Check the tflite/ directory
+To find the actual test file check the tflite/ directory
 Since the target is //tflite:interpreter_test, the corresponding BUILD file should be in:
 
 LiteRT/tflite/BUILD
+
 This file will define how interpreter_test is built and which source files it includes.
 
 ```
@@ -255,17 +256,16 @@ cc_test(
     tags = [
         "tflite_smoke_test",
     ],
-
-Look for the test source file
+...
 
 Typically, the test file will be a .cc or .cpp file inside tflite/ with interpreter_test in its name.
 Try searching for files like:
  
 LiteRT/tflite/interpreter_test.cc
 LiteRT/tflite/interpreter_test.cpp
-If you are using the terminal, navigate to the LiteRT repository root and run:
- 
+
 find tflite -name "interpreter_test*"
+
 Or, if using GitHub, check the tflite directory for relevant files.
 ```
 https://github.com/google-ai-edge/LiteRT/tree/main/tflite
