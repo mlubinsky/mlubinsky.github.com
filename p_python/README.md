@@ -1335,6 +1335,9 @@ https://pythonspeed.com/
 
 https://coderslegacy.com/cython-vs-cpython-comparing-speed/  Cython
 
+Calling C from python: 
+https://habr.com/ru/companies/timeweb/articles/875420/
+
 ### Multiprocessing 
 
 https://habr.com/ru/articles/789904/
