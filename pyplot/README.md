@@ -6,7 +6,18 @@ https://habr.com/ru/articles/878002/
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
+### Perspective 
+https://perspective.finos.org/
+```
+is an interactive analytics and data visualization component, which is especially well-suited for large and/or streaming datasets. Use it to create user-configurable reports, dashboards, notebooks and applications.
 
+Features
+A fast, memory efficient streaming query engine, written in C++ and compiled for WebAssembly, Python and Rust, with read/write/streaming for Apache Arrow, and a high-performance columnar expression language based on ExprTK.
+
+A framework-agnostic User Interface packaged as a Custom Element, powered either in-browser via WebAssembly or virtually via WebSocket server (Python/Node/Rust).
+
+A JupyterLab widget and Python client library, for interactive data analysis in a notebook, as well as scalable production applicati
+```
 https://github.com/finos/perspective
 
 VTK+
