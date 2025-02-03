@@ -4,7 +4,9 @@ https://compilerbook.com/
 
 Book: craftinginterpreters.com/
 
-http://venge.net/graydon/talks/CompilerTalk-2019.pdf?utm_source=thenewstack&utm_medium=website&utm_campaign=platform
+https://github.com/true-grue/Compiler-Development  Russian
+
+http://venge.net/graydon/talks/CompilerTalk-2019.pdf 
 
 https://news.ycombinator.com/item?id=32780472
 
