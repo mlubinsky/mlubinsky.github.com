@@ -1,5 +1,8 @@
 https://pyviz.org/overviews/index.html
 
+Python 2D графика. Визуализация данных в реальном времени. Matplotlib, PyQTGraph, pyOpenGL, VisPy, Bokeh и др. FPS 200?  
+https://habr.com/ru/articles/878002/
+
 scientific visualization book
 https://github.com/rougier/scientific-visualization-book
 
