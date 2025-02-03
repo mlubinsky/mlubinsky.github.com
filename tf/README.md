@@ -408,47 +408,7 @@ acceleration/configuration/BUILD
 23:load("@local_xla//xla/tsl/platform/default:build_config.bzl", "tf_proto_library_py")
 ```
 
-### Trying to solve issue above
-```
-Repository rule _tf_http_archive defined at:
-  /private/var/tmp/_bazel_mlubinsky/b633d606e7c902200e15d1493749dfca/external/org_tensorflow/third_party/repo.bzl:89:35: in <toplevel>
-(18:14:55) ERROR: Skipping '//tflite/...': 
-error loading package under directory 'tflite': error loading package 'tflite/acceleration/configuration': 
-cannot load '@local_xla//xla/tsl:platform/default/build_config.bzl': no such file
 
-(18:14:55) ERROR: error loading package under directory 'tflite': 
-error loading package 'tflite/acceleration/configuration': 
-cannot load '@local_xla//xla/tsl:platform/default/build_config.bzl': no such file
-
-rg '@local_xla//xla/tsl:platform/default/build_config.bzl'
-
-tflite/experimental/acceleration/configuration/BUILD
-22:load("@local_xla//xla/tsl:platform/default/build_config.bzl", "tf_proto_library_py")
-
-tflite/acceleration/configuration/BUILD
-24:load("@local_xla//xla/tsl:platform/default/build_config.bzl", "tf_proto_library_py")
-
-May be problem is that in path below /tsl/tsl/  two times? 
-$ pwd
-/Users/mlubinsky/CODE/LiteRT_2/LiteRT/third_party/tensorflow/third_party/xla/third_party/tsl/tsl/platform
-
-cd /Users/mlubinsky/CODE/LiteRT_2/LiteRT/third_party/tensorflow/third_party/xla/third_party/tsl
-
-bazel build
-...
-DEBUG: /Users/mlubinsky/CODE/LiteRT_2/LiteRT/third_party/tensorflow/third_party/xla/third_party/tsl/third_party/py/python_repo.bzl:98:14:
-HERMETIC_PYTHON_VERSION variable was not set correctly, using default version.
-Python 3.11 will be used.
-To select Python version, either set HERMETIC_PYTHON_VERSION env variable in
-your shell:
-  export HERMETIC_PYTHON_VERSION=3.12
-OR pass it as an argument to bazel command directly or inside your .bazelrc
-file:
-  --repo_env=HERMETIC_PYTHON_VERSION=3.12
-DEBUG: /Users/mlubinsky/CODE/LiteRT_2/LiteRT/third_party/tensorflow/third_party/xla/third_party/tsl/third_party/py/python_repo.bzl:109:10: Using hermetic Python 3.11
-ERROR: Error computing the main repository mapping: at /Users/mlubinsky/CODE/LiteRT_2/LiteRT/third_party/tensorflow/third_party/xla/third_party/tsl/workspace3.bzl:4:6: Label '//third_party/llvm:workspace.bzl' is invalid because 'third_party/llvm' is not a package; perhaps you meant to put the colon here: '//third_party:llvm/workspace.bzl'?
-Loading:
-```
 ### ChatGPT 
 ```
 @local_xla: This refers to an external workspace defined in the WORKSPACE or MODULE.bazel file.
