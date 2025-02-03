@@ -1,5 +1,7 @@
 https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
 
+https://www.youtube.com/watch?v=gqczXq-faAg   CMake
+
 ### Telegram
 https://t.me/s/bfbook  https://t.me/s/bfbook?before=4869  
 https://t.me/s/cpp_lib  
