@@ -16,7 +16,9 @@ such as TensorFlow Lite, TensorFlow.js, PyTorch, ONNX Runtime, and MediaPipe.
 
 ```
 ### Build LiteRT with CMake
-https://ai.google.dev/edge/litert/build/cmake?hl=en
+
+https://ai.google.dev/edge/litert/build/cmake
+
 
 https://developer.android.com/ndk
 ```
