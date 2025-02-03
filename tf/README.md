@@ -2,6 +2,8 @@
 
 <https://habr.com/ru/post/500788/>
 
+https://github.com/tensorflow/tflite-support
+
 ### XNNPACK
 https://github.com/google/XNNPACK
 
