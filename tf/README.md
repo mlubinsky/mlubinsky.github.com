@@ -2,7 +2,16 @@
 
 <https://habr.com/ru/post/500788/>
 
+
+### LiteRT
+
+https://github.com/tensorflow/tensorflow/tree/v2.16.1/tensorflow/lite
+
 https://github.com/tensorflow/tflite-support
+
+https://www.kaggle.com/models?framework=tfLite
+
+
 
 ### XNNPACK
 https://github.com/google/XNNPACK
