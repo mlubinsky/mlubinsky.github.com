@@ -230,6 +230,19 @@ Since the target is //tflite:interpreter_test, the corresponding BUILD file shou
 LiteRT/tflite/BUILD
 This file will define how interpreter_test is built and which source files it includes.
 
+
+# Test main interpreter
+cc_test(
+    name = "interpreter_test",
+    size = "small",
+    srcs = [
+        "interpreter_test.cc",
+    ],
+    features = ["-dynamic_link_test_srcs"],  # see go/dynamic_link_test_srcs
+    tags = [
+        "tflite_smoke_test",
+    ],
+
 Look for the test source file
 
 Typically, the test file will be a .cc or .cpp file inside tflite/ with interpreter_test in its name.
