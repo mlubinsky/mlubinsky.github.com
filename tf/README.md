@@ -37,27 +37,32 @@ git clone https://github.com/tensorflow/tensorflow.git tensorflow_src
 mkdir tflite_build
 cd tflite_build
 cmake ../tensorflow_src/tensorflow/lite
-
-Cross-compilation
+```
+### Cross-compilation
+```
 You can use CMake to build binaries for ARM64 or Android target architectures.
 
 In order to cross-compile the LiteRT, you namely need to provide the path to the SDK
 (e.g. ARM64 SDK or NDK in Android's case) with -DCMAKE_TOOLCHAIN_FILE flag.
 
 cmake -DCMAKE_TOOLCHAIN_FILE=<CMakeToolchainFileLoc> ../tensorflow/lite/
-Specifics of Android cross-compilation
+```
+
+#### Specifics of Android cross-compilation
+```
 For Android cross-compilation, you need to install Android NDK and provide the NDK path
 with -DCMAKE_TOOLCHAIN_FILE flag mentioned above.
-You also need to set target ABI with-DANDROID_ABI flag.
 
+You also need to set target ABI with-DANDROID_ABI flag.
 
 cmake -DCMAKE_TOOLCHAIN_FILE=<NDK path>/build/cmake/android.toolchain.cmake \
   -DANDROID_ABI=arm64-v8a ../tensorflow_src/tensorflow/lite
-Specifics of kernel (unit) tests cross-compilation
-Cross-compilation of the unit tests requires flatc compiler for the host architecture. For this purpose,
-there is a CMakeLists located in tensorflow/lite/tools/cmake/native_tools/flatbuffers
+```
+#### Specifics of kernel (unit) tests cross-compilation
+```
+Cross-compilation of the unit tests requires flatc compiler for the host architecture.
+For this purpose, there is a CMakeLists located in tensorflow/lite/tools/cmake/native_tools/flatbuffers
 to build the flatc compiler with CMake in advance in a separate build directory using the host toolchain.
-
 
 mkdir flatc-native-build && cd flatc-native-build
 cmake ../tensorflow_src/tensorflow/lite/tools/cmake/native_tools/flatbuffers
@@ -68,13 +73,17 @@ It is also possible to install the flatc to a custom installation location
 
 cmake -DCMAKE_INSTALL_PREFIX=<native_tools_dir> ../tensorflow_src/tensorflow/lite/tools/cmake/native_tools/flatbuffers
 cmake --build .
+
 For the LiteRT cross-compilation itself, additional parameter
  -DTFLITE_HOST_TOOLS_DIR=<flatc_dir_path> pointing to the directory containing
  the native flatc binary needs to be provided along with the -DTFLITE_KERNEL_TEST=on flag mentioned above.
 
 
 cmake -DCMAKE_TOOLCHAIN_FILE=${OE_CMAKE_TOOLCHAIN_FILE} -DTFLITE_KERNEL_TEST=on -DTFLITE_HOST_TOOLS_DIR=<flatc_dir_path> ../tensorflow/lite/
-Cross-compiled kernel (unit) tests launch on target
+```
+
+### Cross-compiled kernel (unit) tests launch on target
+```
 Unit tests can be run as separate executables or using the CTest utility.
 As far as CTest is concerned,
 if at least one of the parameters TFLITE_ENABLE_XNNPACKorTFLITE_EXTERNAL_DELEGATE` is enabled for the
@@ -95,6 +104,7 @@ as well as run-tests.cmake file are present on target in the current directory):
 
 cmake -E env TESTS_ARGUMENTS=--use_xnnpack=true ctest -L delegate
 cmake -E env TESTS_ARGUMENTS=--external_delegate_path=<PATH> ctest -L delegate
+
 A known limitation of this way of providing additional delegate-related launch arguments to unit tests is
 that it effectively supports only those with an expected return value of 0.
 Different return values will be reported as a test failure.
