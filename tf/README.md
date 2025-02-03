@@ -230,7 +230,9 @@ Since the target is //tflite:interpreter_test, the corresponding BUILD file shou
 LiteRT/tflite/BUILD
 This file will define how interpreter_test is built and which source files it includes.
 
-
+```
+https://github.com/google-ai-edge/LiteRT/blob/main/tflite/BUILD
+```
 # Test main interpreter
 cc_test(
     name = "interpreter_test",
