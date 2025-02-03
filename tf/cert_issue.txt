@@ -47,7 +47,7 @@ S4zDcReQBFJIsTJOWZneNZs3jmUvQvhC2UikIdSR
 -----END CERTIFICATE-----
 
 root@57bfe2e58cab:~# update-ca-certificates -f 
-…
+=================================================
 
 root@57bfe2e58cab:~# wget https://releases.bazel.build/6.5.0/release/bazel-6.5.0-linux-x86_64
 --2025-01-31 23:00:38--  https://releases.bazel.build/6.5.0/release/bazel-6.5.0-linux-x86_64
@@ -59,43 +59,12 @@ Saving to: 'bazel-6.5.0-linux-x86_64'
 
 
 
-I have create .bazelrc and tried. Certificate (SunCertPathBuilder) error is gone. You need to check for other errors 
+I have create .bazelrc and tried. Certificate (SunCertPathBuilder) error is gone 
 
 root@spotace:~# cd ~/MICHAEL/LiteRT
-root@spotace:~/MICHAEL/LiteRT# bazel  test //tflite:interpreter_test
-Extracting Bazel installation...
-Starting local Bazel server and connecting to it...
-INFO: Reading 'startup' options from /root/MICHAEL/LiteRT/.bazelrc: --windows_enable_symlinks
-INFO: Reading 'startup' options from /root/.bazelrc: --host_jvm_args=-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts, --host_jvm_args=-Djavax.net.ssl.trust
-INFO: Options provided by the client:
-  Inherited 'common' options: --isatty=1 --terminal_columns=157
-INFO: Reading rc options for 'test' from /root/MICHAEL/LiteRT/.bazelrc:
-  Inherited 'common' options: --experimental_repo_remote_exec --experimental_repo_remote_exec
-INFO: Reading rc options for 'test' from /root/MICHAEL/LiteRT/.bazelrc:
-  Inherited 'build' options: --define framework_shared_object=true --define tsl_protobuf_header_only=true --define=use_fast_cpp_protos=true --define=allow_oversize_protos=true --spawn_strategy=standalone -c opt --announce_rc --define=grpc_no_ares=true --noincompatible_remove_legacy_whole_archive --features=-force_no_whole_archive --enable_platform_specific_config --define=with_xla_support=true --config=short_logs --experimental_cc_shared_library --experimental_link_static_libraries_once=false --incompatible_enforce_config_setting_visibility
-INFO: Reading rc options for 'test' from /root/MICHAEL/LiteRT/.tf_configure.bazelrc:
-  Inherited 'build' options: --action_env PYTHON_BIN_PATH=/usr/bin/python3 --action_env PYTHON_LIB_PATH=/usr/lib/python3/dist-packages --python_path=/usr/bin/python3
-INFO: Reading rc options for 'test' from /root/MICHAEL/LiteRT/.bazelrc:
-  Inherited 'build' options: --config=v2 --config=litert_prefixes
-INFO: Reading rc options for 'test' from /root/MICHAEL/LiteRT/.tf_configure.bazelrc:
-  'test' options: --test_size_filters=small,medium
-INFO: Found applicable config definition build:short_logs in file /root/MICHAEL/LiteRT/.bazelrc: --output_filter=DONT_MATCH_ANYTHING
-INFO: Found applicable config definition build:v2 in file /root/MICHAEL/LiteRT/.bazelrc: --define=tf_api_version=2 --action_env=TF2_BEHAVIOR=1
-INFO: Found applicable config definition test:v2 in file /root/MICHAEL/LiteRT/.tf_configure.bazelrc: --test_tag_filters=-benchmark-test,-no_oss,-oss_excluded,-gpu,-oss_serial,-v1only --build_tag_filters=-benchmark-test,-no_oss,-oss_excluded,-gpu,-v1only
-INFO: Found applicable config definition build:litert_prefixes in file /root/MICHAEL/LiteRT/.bazelrc: --define=litert_prefixes=external/org_tensorflow/
-INFO: Found applicable config definition build:linux in file /root/MICHAEL/LiteRT/.bazelrc: --host_copt=-w --copt=-Wno-all --copt=-Wno-extra --copt=-Wno-deprecated --copt=-Wno-deprecated-declarations --copt=-Wno-ignored-attributes --copt=-Wno-array-bounds --copt=-Wunused-result --copt=-Werror=unused-result --copt=-Wswitch --copt=-Werror=switch --copt=-Wno-gnu-offsetof-extensions --define=PREFIX=/usr --define=LIBDIR=$(PREFIX)/lib --define=INCLUDEDIR=$(PREFIX)/include --define=PROTOBUF_INCLUDE_PATH=$(PREFIX)/include --cxxopt=-std=c++17 --host_cxxopt=-std=c++17 --config=dynamic_kernels --experimental_guard_against_concurrent_changes
-INFO: Found applicable config definition build:dynamic_kernels in file /root/MICHAEL/LiteRT/.bazelrc: --define=dynamic_loaded_kernels=true --copt=-DAUTOLOAD_DYNAMIC_KERNELS
-ERROR: Failed to load Starlark extension '@bazel_gazelle//:deps.bzl'.
-Cycle in the workspace file detected. This indicates that a repository is used prior to being defined.
-The following chain of repository dependencies lead to the missing definition.
-- @bazel_gazelle
-This could either mean you have to add the '@bazel_gazelle' repository with a statement like `http_archive` in your WORKSPACE file (note that transitive dependencies are not added automatically), or move an existing definition earlier in your WORKSPACE file.
-ERROR: Error computing the main repository mapping: cycles detected during computation of main repo mapping
-Loading:
-root@spotace:~/MICHAEL/LiteRT#
 
 bazel test  --define xnn_enable_avxvnni=false --define xnn_enable_avx512amx=false  --define xnn_enable_avx512fp16=false   --define xnn_enable_avxvnniint8=false  //tflite:interpreter_test
-
+===========================================================================
 INFO: Reading 'startup' options from /root/MICHAEL/LiteRT/.bazelrc: --windows_enable_symlinks
 INFO: Reading 'startup' options from /root/.bazelrc: --host_jvm_args=-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts, --host_jvm_args=-Djavax.net.ssl.trust
 INFO: Options provided by the client:
