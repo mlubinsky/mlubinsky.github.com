@@ -6,6 +6,8 @@ https://docs.python.org/3/howto/logging.html  Logging
 
 https://mesa.readthedocs.io/stable/ Discrete simulation
 
+https://github.com/true-grue/python-dsls DSLs
+
 ```
 from datetime import date, datetime, timedelta
 #----------------------------
