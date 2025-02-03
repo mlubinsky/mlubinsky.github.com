@@ -2,6 +2,8 @@ https://www.youtube.com/playlist?list=PL4_hYwCyhAvaprlx_MnGC5xyKR1qb7Y7L Мат�
 
 https://www.llm-book.com/ Book
 
+mlcourse.ai/
+
 https://news.ycombinator.com/item?id=42827913 Good links!
 
 https://habr.com/ru/articles/870718/  Наивный байесовский классификатор. Теория и реализация. С нуля
