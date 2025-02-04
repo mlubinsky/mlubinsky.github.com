@@ -7,6 +7,9 @@ https://www.vldb.org/pvldb/vol15/p1779-wenig.pdf Anomaly Detection in Time Serie
 
 https://blog.jetbrains.com/pycharm/2025/01/anomaly-detection-in-time-series/
 
+https://arxiv.org/abs/2501.18737 Complex network approaches to nonlinear time series analysis
+
+****
 https://habr.com/ru/companies/bothub/articles/875738/ Nixtla представила TimeGPT
 
 https://news.ycombinator.com/item?id=42609595
