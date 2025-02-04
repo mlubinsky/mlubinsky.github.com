@@ -1,3 +1,5 @@
+https://ai.google.dev/edge/litert/models/trained
+
 https://github.com/tensorflow/examples/tree/master/lite/examples/
 
 https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android
