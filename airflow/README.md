@@ -4,6 +4,12 @@ https://habr.com/ru/articles/873668/  Airflow in Docker on Mac
 
 https://towardsdatascience.com/airflow-data-intervals-a-deep-dive-15d0ccfb0661
 
+```
+Airflow uses SequentialExecutor by default. However, by its nature, the user is limited to executing at most one task at a time.
+Sequential Executor also pauses the scheduler when it runs a task, hence it is not recommended in a production setup.
+You should use the LocalExecutor for a single machine.
+For a multi-node setup, you should use the Kubernetes executor or the Celery executor.
+```
 https://www.youtube.com/watch?v=J1wze8tUvw0
 
 создание шаблонных DAG на основе конфигурационных и коллективных файлов для повышения эффективности работы с AirFlow.  
@@ -31,6 +37,49 @@ Switching to {{ 𝗱𝗮𝘁𝗮_𝗶𝗻𝘁𝗲𝗿𝘃𝗮𝗹_𝗲𝗻𝗱 |
 
 ```
 
+### Event-Driven DAGs
+```
+These DAGs are triggered by external events rather than a predefined schedule.
+
+Triggers include:
+
+File Sensor: A DAG runs when a file arrives in a specific directory.
+API Trigger: A DAG runs when an external system sends an API request.
+Task Dependency: A DAG runs when another DAG completes.
+Custom Event Trigger: Using Airflow's event-driven capabilities like TriggerDagRunOperator.
+Example: Triggering a DAG when a file arrives in a directory
+
+from airflow import DAG
+from airflow.operators.dummy_operator import DummyOperator
+from airflow.sensors.filesystem import FileSensor
+from datetime import datetime
+
+default_args = {
+    'owner': 'airflow',
+    'start_date': datetime(2024, 1, 1),
+}
+
+dag = DAG(
+    'event_based_dag',
+    default_args=default_args,
+    schedule_interval=None,  # No predefined schedule
+    catchup=False
+)
+
+file_sensor = FileSensor(
+    task_id='wait_for_file',
+    filepath='/path/to/trigger_file.csv',
+    poke_interval=60,  # Check every 60 seconds
+    timeout=600,  # Timeout after 10 minutes
+    mode='poke',
+    dag=dag
+)
+
+task = DummyOperator(task_id='dummy_task', dag=dag)
+
+file_sensor >> task  # Execute task after file detection
+
+```
 ### Trigger rules
 
 https://habr.com/ru/companies/dbraincloud/articles/861842/
