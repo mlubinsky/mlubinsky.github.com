@@ -5,6 +5,8 @@
 
 ### LiteRT
 
+The TensorFlow framework provides tools and APIs to convert a standard pretrained TensorFlow model from the SavedModel or Keras format into a LiteRT format.
+
 https://docs.qualcomm.com/bundle/publicresource/topics/80-70017-54/tensorflow-lite-developer-workflow.html
 
 https://docs.qualcomm.com/bundle/publicresource/topics/80-70017-54/sample-applications.html
