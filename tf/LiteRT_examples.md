@@ -1,5 +1,7 @@
 https://ai.google.dev/edge/litert/models/trained
 
+https://medium.com/walmartglobaltech/custom-tensorflow-lite-model-implementation-in-android-5c1c65bd9f97
+
 https://github.com/tensorflow/examples/tree/master/lite/examples/
 
 https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android
