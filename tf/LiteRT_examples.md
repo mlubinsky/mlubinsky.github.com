@@ -1,7 +1,7 @@
+https://github.com/google-ai-edge/LiteRT/tree/main/tflite/examples/minimal
+```
 root@spotace:~/MICHAEL/TF# cd minimal_build
-root@spotace:~/MICHAEL/TF/minimal_build# cmake ../tensorflow_src/tensorflow/lite/examples/minimal
-CMake Error: The source directory "/root/MICHAEL/TF/tensorflow_src/tensorflow/lite/examples/minimal" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.
+
 root@spotace:~/MICHAEL/TF/minimal_build# cmake ../tensorflow/tensorflow/lite/examples/minimal
 -- The C compiler identification is GNU 9.4.0
 -- The CXX compiler identification is GNU 9.4.0
@@ -151,4 +151,4 @@ No microkernel found in src/reference/binary-elementwise.cc
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /root/MICHAEL/TF/minimal_build
-root@spotace:~/MICHAEL/TF/minimal_build#
+```
