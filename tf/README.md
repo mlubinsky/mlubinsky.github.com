@@ -5,6 +5,10 @@
 
 ### LiteRT
 
+https://docs.qualcomm.com/bundle/publicresource/topics/80-70017-54/tensorflow-lite-developer-workflow.html
+
+https://docs.qualcomm.com/bundle/publicresource/topics/80-70017-54/sample-applications.html
+
 https://github.com/tensorflow/tensorflow/tree/v2.16.1/tensorflow/lite
 
 https://github.com/tensorflow/tflite-support
