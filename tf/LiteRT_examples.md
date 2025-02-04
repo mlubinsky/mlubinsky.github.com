@@ -1,3 +1,10 @@
+https://github.com/tensorflow/examples/tree/master/lite/examples/
+
+https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android
+
+https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/android
+
+
 https://github.com/google-ai-edge/LiteRT/tree/main/tflite/examples/minimal
 ```
 root@spotace:~/MICHAEL/TF# cd minimal_build
