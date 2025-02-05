@@ -36,8 +36,11 @@ such as TensorFlow Lite, TensorFlow.js, PyTorch, ONNX Runtime, and MediaPipe.
 
 https://ai.google.dev/edge/litert/build/cmake
 
+### Android 
 
 https://developer.android.com/ndk
+
+https://dl.google.com/android/repository/android-ndk-r27c-linux.zip
 ```
 git clone https://github.com/tensorflow/tensorflow.git tensorflow_src
 mkdir tflite_build
