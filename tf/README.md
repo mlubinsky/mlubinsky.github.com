@@ -36,6 +36,7 @@ such as TensorFlow Lite, TensorFlow.js, PyTorch, ONNX Runtime, and MediaPipe.
 ### TensorFlow Lite C++ image classification demo
 https://github.com/google-ai-edge/LiteRT/tree/main/tflite/examples/label_image
 
+root@spotace:~/MICHAEL/LiteRT# bazel build -c opt //tflite/examples/label_image:label_image
 
 
 ### Install CMake
