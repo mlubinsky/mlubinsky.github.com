@@ -40,7 +40,9 @@ root@spotace:~/MICHAEL/LiteRT# bazel build -c opt //tflite/examples/label_image:
 
 ```
 INFO: Found 1 target...
-ERROR: /root/.cache/bazel/_bazel_root/f52f4cfffd1f0610b8c20da624b0b2f6/external/XNNPACK/BUILD.bazel:670:36: Compiling src/f16-vbinary/gen/f16-vsubc-avx512fp16-u64.c failed: (Exit 1): gcc failed: error executing command (from target @XNNPACK//:avx512fp16_prod_microkernels) /usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer -g0 -O2 '-D_FORTIFY_SOURCE=1' -DNDEBUG -ffunction-sections ... (remaining 120 arguments skipped)
+ERROR: /root/.cache/bazel/_bazel_root/f52f4cfffd1f0610b8c20da624b0b2f6/external/XNNPACK/BUILD.bazel:670:36: Compiling src/f16-vbinary/gen/f16-vsubc-avx512fp16-u64.c failed: (Exit 1):
+gcc failed: error executing command (from target @XNNPACK//:avx512fp16_prod_microkernels)
+/usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer -g0 -O2 '-D_FORTIFY_SOURCE=1' -DNDEBUG -ffunction-sections ... (remaining 120 arguments skipped)
 gcc: error: unrecognized command line option '-mavx512fp16'; did you mean '-mavx512f'?
 Target //tflite/examples/label_image:label_image failed to build
 Use --verbose_failures to see the command lines of failed build steps.
@@ -48,8 +50,11 @@ INFO: Elapsed time: 41.675s, Critical Path: 18.71s
 INFO: 163 processes: 9 internal, 154 local.
 FAILED: Build did NOT complete successfully
 
-```
 
+cd ~/MICHAEL/LiteRT
+bazel test  --define xnn_enable_avxvnni=false --define xnn_enable_avx512amx=false  --define xnn_enable_avx512fp16=false   --define xnn_enable_avxvnniint8=false  //tflite:interpreter_test
+
+```
 ### Install CMake
 ```
 1. Check Current Version
