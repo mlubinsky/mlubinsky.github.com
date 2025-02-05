@@ -123,6 +123,26 @@ cmake -DCMAKE_TOOLCHAIN_FILE=/root/MICHAEL/NDK/android-ndk-r27c/build/cmake/andr
 
 root@spotace:~/MICHAEL# ./android.sh
 
+ERROR:
+CMake Error at CMakeLists.txt:83 (message):
+  When cross-compiling, some tools need to be available to run on the host
+  (current required tools: flatc).  Please specify where those binaries can
+  be found by using -DTFLITE_HOST_TOOLS_DIR=<flatc_dir_path>.
+
+
+root@spotace:~/MICHAEL/TF/flatc-native-build# ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  compile_commands.json  _deps  flatbuffers  flatbuffers-flatc  Makefile
+
+cmake -DCMAKE_TOOLCHAIN_FILE=/root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake \
+  -DANDROID_ABI=arm64-v8a  -DTFLITE_HOST_TOOLS_DIR=/root/MICHAEL/TF/flatc-native-build/flatbuffers  /root/MICHAEL/TF/tensorflow/tensorflow/lite/
+
+
+CMake Error at CMakeLists.txt:94 (message):
+  Host 'flatc' compiler has not been found in the following locations:
+  /root/MICHAEL/TF/flatc-native-build/flatbuffers;/root/MICHAEL/TF/flatc-native-build/flatbuffers/bin;/root/MICHAEL/TF/flatc-native-build/flatbuffers/flatbuffers-flatc/bin
+
+
+
 ```
 
 ### Cross-compilation
