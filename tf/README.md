@@ -32,6 +32,67 @@ instead it provides low-level performance primitives for accelerating high-level
 such as TensorFlow Lite, TensorFlow.js, PyTorch, ONNX Runtime, and MediaPipe.
 
 ```
+### Install CMake
+```
+1. Check Current Version
+
+cmake --version
+Your output shows 3.16.3, which is an older version.
+
+2. Remove Old CMake (Optional)
+If you installed CMake using apt, remove it first:
+
+
+sudo apt remove --purge cmake
+This ensures no conflicts with the newer version.
+
+3. Install CMake 3.19 from Official Binary (Recommended)
+Since Ubuntu’s repositories often do not include the latest CMake versions, it’s best to download the official release.
+
+Download CMake 3.19 (Precompiled Binary)
+
+wget https://github.com/Kitware/CMake/releases/download/v3.19.0/cmake-3.19.0-linux-x86_64.sh
+Make the Script Executable
+
+chmod +x cmake-3.19.0-linux-x86_64.sh
+Run the Installer
+
+sudo ./cmake-3.19.0-linux-x86_64.sh --prefix=/opt/cmake --skip-license
+This installs CMake into /opt/cmake.
+
+Update PATH Add CMake to your system’s PATH:
+
+echo 'export PATH=/opt/cmake/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+Verify Installation
+
+cmake --version
+It should now show 3.19.0.
+
+Alternative: Build from Source
+If you prefer to build from source:
+
+Install Dependencies
+
+sudo apt update
+sudo apt install -y build-essential libssl-dev
+Download Source Code
+
+ 
+wget https://github.com/Kitware/CMake/releases/download/v3.19.0/cmake-3.19.0.tar.gz
+tar -xvzf cmake-3.19.0.tar.gz
+cd cmake-3.19.0
+Compile and Install
+
+./bootstrap
+make -j$(nproc)
+sudo make install
+Verify Installation
+
+cmake --version
+
+```
+
 ### Build LiteRT with CMake
 
 cmake --version  
