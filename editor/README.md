@@ -30,6 +30,11 @@ https://github.com/Eugene-Mark/bigdata-file-viewer
 
 https://github.com/DaveJarvis/keenwrite/blob/main/docs/screenshots.md
 
+
+### Zed
+
+https://www.youtube.com/watch?v=q6jACvO3L5A&pp=ygUJemVkIGhlbGl4
+
 ### Lapce 
 https://lapce.dev/
 
