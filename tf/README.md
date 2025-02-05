@@ -42,7 +42,6 @@ Your output shows 3.16.3, which is an older version.
 2. Remove Old CMake (Optional)
 If you installed CMake using apt, remove it first:
 
-
 sudo apt remove --purge cmake
 This ensures no conflicts with the newer version.
 
@@ -51,7 +50,8 @@ Since Ubuntu’s repositories often do not include the latest CMake versions, it
 
 Download CMake 3.19 (Precompiled Binary)
 
-wget https://github.com/Kitware/CMake/releases/download/v3.19.0/cmake-3.19.0-linux-x86_64.sh
+wget https://github.com/Kitware/CMake/releases/download/v3.31.5/cmake-3.31.5-linux-x86_64.sh
+
 Make the Script Executable
 
 chmod +x cmake-3.19.0-linux-x86_64.sh
