@@ -34,7 +34,16 @@ such as TensorFlow Lite, TensorFlow.js, PyTorch, ONNX Runtime, and MediaPipe.
 ```
 ### Build LiteRT with CMake
 
-https://ai.google.dev/edge/litert/build/cmake
+cmake --version  
+cmake version 3.16.3  
+
+https://ai.google.dev/edge/litert/build/cmake  
+```
+git clone https://github.com/tensorflow/tensorflow.git 
+mkdir tflite_build  
+cd tflite_build  
+cmake ../tensorflow/tensorflow/lite  
+```
 
 ### Android 
 
@@ -44,17 +53,95 @@ https://dl.google.com/android/repository/android-ndk-r27c-linux.zip
 
 Suggested here: https://ai.google.dev/edge/litert/build/cmake
 to build TFLite for Android :
+```
+cat ./android.sh
 
 cmake -DCMAKE_TOOLCHAIN_FILE=/root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake \
   -DANDROID_ABI=arm64-v8a   /root/MICHAEL/TF/tensorflow/tensorflow/lite/
-r
+
+root@spotace:~/MICHAEL# ./android.sh
+-- Setting build type to Release, for debug builds use'-DCMAKE_BUILD_TYPE=Debug'.
+-- ANDROID_PLATFORM not set. Defaulting to minimum supported version
+21.
+CMake Warning at ../../../../NDK/android-ndk-r27c/build/cmake/android-legacy.toolchain.cmake:431 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  ../../../../NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake:55 (include)
+  /usr/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake:93 (include)
+  CMakeLists.txt:40 (project)
+
+
+-- Check for working C compiler: /root/MICHAEL/NDK/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+CMake Warning at /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android-legacy.toolchain.cmake:431 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake:55 (include)
+  /root/MICHAEL/CMakeFiles/3.16.3/CMakeSystem.cmake:6 (include)
+  /root/MICHAEL/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+-- Check for working C compiler: /root/MICHAEL/NDK/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+CMake Warning at /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android-legacy.toolchain.cmake:431 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake:55 (include)
+  /root/MICHAEL/CMakeFiles/3.16.3/CMakeSystem.cmake:6 (include)
+  /root/MICHAEL/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/MICHAEL/NDK/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+CMake Warning at /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android-legacy.toolchain.cmake:431 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake:55 (include)
+  /root/MICHAEL/CMakeFiles/3.16.3/CMakeSystem.cmake:6 (include)
+  /root/MICHAEL/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+-- Check for working CXX compiler: /root/MICHAEL/NDK/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+CMake Warning at /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android-legacy.toolchain.cmake:431 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake:55 (include)
+  /root/MICHAEL/CMakeFiles/3.16.3/CMakeSystem.cmake:6 (include)
+  /root/MICHAEL/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at CMakeLists.txt:83 (message):
+  When cross-compiling, some tools need to be available to run on the host
+  (current required tools: flatc).  Please specify where those binaries can
+  be found by using -DTFLITE_HOST_TOOLS_DIR=<flatc_dir_path>.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/root/MICHAEL/CMakeFiles/CMakeOutput.log".
+
 
 ```
-git clone https://github.com/tensorflow/tensorflow.git tensorflow_src
-mkdir tflite_build
-cd tflite_build
-cmake ../tensorflow_src/tensorflow/lite
-```
+
 ### Cross-compilation
 ```
 You can use CMake to build binaries for ARM64 or Android target architectures.
