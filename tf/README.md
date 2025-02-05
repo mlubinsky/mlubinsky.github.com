@@ -45,10 +45,10 @@ If you installed CMake using apt, remove it first:
 sudo apt remove --purge cmake
 This ensures no conflicts with the newer version.
 
-3. Install CMake 3.19 from Official Binary (Recommended)
+3. Install CMake 3.31.5 from Official Binary (Recommended)
 Since Ubuntu’s repositories often do not include the latest CMake versions, it’s best to download the official release.
 
-Download CMake 3.19 (Precompiled Binary)
+Download CMake 3.31.5 (Precompiled Binary)
 
 wget https://github.com/Kitware/CMake/releases/download/v3.31.5/cmake-3.31.5-linux-x86_64.sh
 
@@ -80,9 +80,9 @@ sudo apt install -y build-essential libssl-dev
 Download Source Code
 
  
-wget https://github.com/Kitware/CMake/releases/download/v3.19.0/cmake-3.19.0.tar.gz
-tar -xvzf cmake-3.19.0.tar.gz
-cd cmake-3.19.0
+wget https://github.com/Kitware/CMake/releases/download/v3.31.5/cmake-3.31.5.tar.gz
+tar -xvzf cmake-3.31.5.tar.gz
+cd cmake-3.31.5
 Compile and Install
 
 ./bootstrap
