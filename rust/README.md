@@ -14,6 +14,10 @@ https://www.lurklurk.org/effective-rust/intro.html
 
 https://github.com/TheAlgorithms/Rust
 
+
+Build SQL database in Rust
+
+https://blog.sylver.dev/build-your-own-sqlite-part-4-reading-tables-metadata
 ```
 curl https://sh.rustup.rs -sSf | sh
 info: downloading installer
