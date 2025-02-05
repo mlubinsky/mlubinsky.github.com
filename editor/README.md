@@ -56,6 +56,8 @@ sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/
 ### Helix 
 https://helix-editor.com/ 
 
+https://www.youtube.com/watch?v=HcuDmSb-JBU
+
 https://github.com/helix-editor/helix/releases
 
 https://www.youtube.com/watch?v=9Zj-wiQ9_Xw
