@@ -121,85 +121,6 @@ cmake -DCMAKE_TOOLCHAIN_FILE=/root/MICHAEL/NDK/android-ndk-r27c/build/cmake/andr
   -DANDROID_ABI=arm64-v8a   /root/MICHAEL/TF/tensorflow/tensorflow/lite/
 
 root@spotace:~/MICHAEL# ./android.sh
--- Setting build type to Release, for debug builds use'-DCMAKE_BUILD_TYPE=Debug'.
--- ANDROID_PLATFORM not set. Defaulting to minimum supported version
-21.
-CMake Warning at ../../../../NDK/android-ndk-r27c/build/cmake/android-legacy.toolchain.cmake:431 (message):
-  An old version of CMake is being used that cannot automatically detect
-  compiler attributes.  Compiler identification is being bypassed.  Some
-  values may be wrong or missing.  Update to CMake 3.19 or newer to use
-  CMake's built-in compiler identification.
-Call Stack (most recent call first):
-  ../../../../NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake:55 (include)
-  /usr/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake:93 (include)
-  CMakeLists.txt:40 (project)
-
-
--- Check for working C compiler: /root/MICHAEL/NDK/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
-CMake Warning at /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android-legacy.toolchain.cmake:431 (message):
-  An old version of CMake is being used that cannot automatically detect
-  compiler attributes.  Compiler identification is being bypassed.  Some
-  values may be wrong or missing.  Update to CMake 3.19 or newer to use
-  CMake's built-in compiler identification.
-Call Stack (most recent call first):
-  /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake:55 (include)
-  /root/MICHAEL/CMakeFiles/3.16.3/CMakeSystem.cmake:6 (include)
-  /root/MICHAEL/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
-
--- Check for working C compiler: /root/MICHAEL/NDK/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
--- Detecting C compiler ABI info
-CMake Warning at /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android-legacy.toolchain.cmake:431 (message):
-  An old version of CMake is being used that cannot automatically detect
-  compiler attributes.  Compiler identification is being bypassed.  Some
-  values may be wrong or missing.  Update to CMake 3.19 or newer to use
-  CMake's built-in compiler identification.
-Call Stack (most recent call first):
-  /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake:55 (include)
-  /root/MICHAEL/CMakeFiles/3.16.3/CMakeSystem.cmake:6 (include)
-  /root/MICHAEL/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
-
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /root/MICHAEL/NDK/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
-CMake Warning at /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android-legacy.toolchain.cmake:431 (message):
-  An old version of CMake is being used that cannot automatically detect
-  compiler attributes.  Compiler identification is being bypassed.  Some
-  values may be wrong or missing.  Update to CMake 3.19 or newer to use
-  CMake's built-in compiler identification.
-Call Stack (most recent call first):
-  /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake:55 (include)
-  /root/MICHAEL/CMakeFiles/3.16.3/CMakeSystem.cmake:6 (include)
-  /root/MICHAEL/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
-
--- Check for working CXX compiler: /root/MICHAEL/NDK/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
--- Detecting CXX compiler ABI info
-CMake Warning at /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android-legacy.toolchain.cmake:431 (message):
-  An old version of CMake is being used that cannot automatically detect
-  compiler attributes.  Compiler identification is being bypassed.  Some
-  values may be wrong or missing.  Update to CMake 3.19 or newer to use
-  CMake's built-in compiler identification.
-Call Stack (most recent call first):
-  /root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake:55 (include)
-  /root/MICHAEL/CMakeFiles/3.16.3/CMakeSystem.cmake:6 (include)
-  /root/MICHAEL/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
-
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
-CMake Error at CMakeLists.txt:83 (message):
-  When cross-compiling, some tools need to be available to run on the host
-  (current required tools: flatc).  Please specify where those binaries can
-  be found by using -DTFLITE_HOST_TOOLS_DIR=<flatc_dir_path>.
-
-
--- Configuring incomplete, errors occurred!
-See also "/root/MICHAEL/CMakeFiles/CMakeOutput.log".
-
 
 ```
 
@@ -231,6 +152,48 @@ to build the flatc compiler with CMake in advance in a separate build directory 
 
 mkdir flatc-native-build && cd flatc-native-build
 cmake ../tensorflow_src/tensorflow/lite/tools/cmake/native_tools/flatbuffers
+
+root@spotace:~/MICHAEL/TF# mkdir flatc-native-build && cd flatc-native-build
+root@spotace:~/MICHAEL/TF/flatc-native-build# cmake ../tensorflow/tensorflow/lite/tools/cmake/native_tools/flatbuffers
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at /opt/cmake/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(flatbuffers) is deprecated, call
+  FetchContent_MakeAvailable(flatbuffers) instead.  Policy CMP0169 can be set
+  to OLD to allow FetchContent_Populate(flatbuffers) to be called directly
+  for now, but the ability to call it with declared details will be removed
+  completely in a future version.
+Call Stack (most recent call first):
+  /root/MICHAEL/TF/tensorflow/tensorflow/lite/tools/cmake/modules/OverridableFetchContent.cmake:537 (FetchContent_Populate)
+  /root/MICHAEL/TF/tensorflow/tensorflow/lite/tools/cmake/modules/flatbuffers.cmake:35 (OverridableFetchContent_Populate)
+  /root/MICHAEL/TF/tensorflow/tensorflow/lite/tools/cmake/modules/FindFlatBuffers.cmake:18 (include)
+  CMakeLists.txt:43 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Proceeding with version: 24.3.25.4
+-- Looking for strtof_l
+-- Looking for strtof_l - found
+-- Looking for strtoull_l
+-- Looking for strtoull_l - found
+-- Looking for realpath
+-- Looking for realpath - found
+-- CMAKE_CXX_FLAGS:
+-- Configuring done (3.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /root/MICHAEL/TF/flatc-native-build
+
+
+
 cmake --build .
 It is also possible to install the flatc to a custom installation location
 (e.g. to a directory containing other natively-built tools instead of the CMake build directory):
