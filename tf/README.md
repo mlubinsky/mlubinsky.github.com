@@ -54,22 +54,23 @@ wget https://github.com/Kitware/CMake/releases/download/v3.31.5/cmake-3.31.5-lin
 
 Make the Script Executable
 
-chmod +x cmake-3.19.0-linux-x86_64.sh
+chmod +x cmake-3.31.5-linux-x86_64.sh
 Run the Installer
 
-sudo ./cmake-3.19.0-linux-x86_64.sh --prefix=/opt/cmake --skip-license
+sudo ./cmake-3.31.5-linux-x86_64.sh --prefix=/opt/cmake --skip-license
 This installs CMake into /opt/cmake.
 
 Update PATH Add CMake to your system’s PATH:
 
 echo 'export PATH=/opt/cmake/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
-Verify Installation
 
+Verify Installation: 
 cmake --version
-It should now show 3.19.0.
 
-Alternative: Build from Source
+
+Alternative: Build CMake from Source
+--------------------------------
 If you prefer to build from source:
 
 Install Dependencies
