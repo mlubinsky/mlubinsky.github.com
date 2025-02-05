@@ -135,7 +135,7 @@ CMakeCache.txt  CMakeFiles  cmake_install.cmake  compile_commands.json  _deps  f
 
 cmake -DCMAKE_TOOLCHAIN_FILE=/root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake \
   -DANDROID_ABI=arm64-v8a  -DTFLITE_HOST_TOOLS_DIR=/root/MICHAEL/TF/flatc-native-build/flatbuffers  /root/MICHAEL/TF/tensorflow/tensorflow/lite/
-
+                                                   /root/MICHAEL/TF/flatc-native-build/flatbuffers-flatc/bin/
 
 CMake Error at CMakeLists.txt:94 (message):
   Host 'flatc' compiler has not been found in the following locations:
