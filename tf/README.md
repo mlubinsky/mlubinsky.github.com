@@ -41,6 +41,14 @@ https://ai.google.dev/edge/litert/build/cmake
 https://developer.android.com/ndk
 
 https://dl.google.com/android/repository/android-ndk-r27c-linux.zip
+
+Suggested here: https://ai.google.dev/edge/litert/build/cmake
+to build TFLite for Android :
+
+cmake -DCMAKE_TOOLCHAIN_FILE=/root/MICHAEL/NDK/android-ndk-r27c/build/cmake/android.toolchain.cmake \
+  -DANDROID_ABI=arm64-v8a   /root/MICHAEL/TF/tensorflow/tensorflow/lite/
+r
+
 ```
 git clone https://github.com/tensorflow/tensorflow.git tensorflow_src
 mkdir tflite_build
