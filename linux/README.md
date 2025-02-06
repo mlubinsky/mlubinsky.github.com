@@ -24,7 +24,12 @@ Replace <version> with the specific version you want (e.g., gcc-11, g++-11, gcc-
 
 Using PPAs (for newer or specific versions):
 
-Add the appropriate PPA (e.g., ubuntu-toolchain-r/test) and then use apt as described above.  Be very careful with PPAs and understand the risks before using them.
+Add the appropriate PPA (e.g., ubuntu-toolchain-r/test) and then use apt as described above.
+
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt update
+
+Be very careful with PPAs and understand the risks before using them.
 
 Building from source (for maximum control):
 
