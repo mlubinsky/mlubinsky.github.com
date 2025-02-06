@@ -12,6 +12,88 @@
 
 ## GCC
 ```
+
+Installing GCC 14 on Ubuntu can be done in a couple of ways, but the most common and generally recommended approach is building from source.  PPAs might have GCC 14 at some point, but building from source gives you the most control. Here's a comprehensive guide:
+
+1. Prerequisites:
+
+Essential build tools:
+Bash
+
+sudo apt update
+sudo apt install build-essential
+Required libraries (may vary slightly depending on your system):
+Bash
+
+sudo apt install libmpfr-dev libgmp-dev libmpc-dev
+Download the GCC source code: Go to the official GNU GCC website (https://gcc.gnu.org/) and find the link to the GCC 14 source code (likely a .tar.gz or .tar.xz file). Download it. Let's assume you download it to your ~/Downloads directory.
+2. Extract the Source Code:
+
+Bash
+
+cd ~/Downloads
+tar -xf gcc-14.*.tar.gz  # Replace with the actual filename
+cd gcc-14.*            # Go into the extracted directory
+3. Create a Build Directory:
+
+It's crucial to build GCC outside the source directory. This keeps things organized.
+
+Bash
+
+mkdir build-gcc-14
+cd build-gcc-14
+4. Configure GCC:
+
+This is the most important step.  The --prefix option specifies where GCC will be installed.  Do not install it in a system directory like /usr or /usr/local directly unless you really know what you're doing.  It's best to keep it separate.
+
+Bash
+
+../gcc-14.*/configure --prefix=/usr/local/gcc-14 --enable-languages=c,c++ --disable-multilib
+--prefix=/usr/local/gcc-14: This tells the build system to install GCC in /usr/local/gcc-14. You can choose any directory you want.
+--enable-languages=c,c++: This enables support for C and C++. You can add other languages if needed (e.g., fortran, go).
+--disable-multilib: This disables support for building 32-bit code on a 64-bit system. If you need multilib, omit this option. However, it can simplify the build process if you don't need it.
+5. Build GCC:
+
+This step takes a significant amount of time, depending on your system's resources.
+
+Bash
+
+make -j$(nproc)  # Use all available cores for faster compilation
+6. Install GCC:
+
+Bash
+
+sudo make install
+7. Add GCC to your PATH:
+
+To use the newly installed GCC, you need to add its directory to your PATH environment variable.  Add the following lines to your ~/.bashrc file (or ~/.zshrc if you use Zsh):
+
+Bash
+
+export PATH=/usr/local/gcc-14/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/gcc-14/lib:$LD_LIBRARY_PATH
+Then, source the file to apply the changes:
+
+Bash
+
+source ~/.bashrc  # Or source ~/.zshrc for Zsh
+8. Verify the Installation:
+
+Bash
+
+gcc --version
+g++ --version
+You should now see that GCC 14 is the active compiler.
+
+Important Considerations:
+
+Build time: Building GCC can take a long time (several hours).   
+Disk space: The build process and installation will require a significant amount of disk space.   
+Dependencies: Make sure you have all the necessary dependencies installed. The configuration step will usually tell you if anything is missing.
+update-alternatives: If you want to switch between different GCC versions easily, you can use update-alternatives (as described in the previous response) after installing. This is a good idea, as it makes managing multiple GCC versions much cleaner.
+This detailed guide should help you install GCC 14 successfully. Remember to carefully follow the instructions and adjust them as needed for your specific system. If you encounter errors, check the GCC documentation or online forums for solutions.
+
+
 Yes, it's  y possible  to have multiple versions of GCC installed on Ubuntu.  Here's how and why you might do it:
 
 How to Install Multiple GCC Versions:
