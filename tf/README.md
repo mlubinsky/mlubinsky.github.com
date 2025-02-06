@@ -18,6 +18,8 @@ https://github.com/tensorflow/tflite-support
 https://www.kaggle.com/models?framework=tfLite
 
 ### GPS on Android
+
+https://stackoverflow.com/questions/30928279/access-gps-on-android-from-c 
 ```
 I am using https://github.com/google-ai-edge/LiteRT to build app for Android.
 
