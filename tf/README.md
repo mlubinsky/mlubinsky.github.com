@@ -51,6 +51,37 @@ INFO: 163 processes: 9 internal, 154 local.
 FAILED: Build did NOT complete successfully
 
 
+his error occurs because your version of GCC does not support the -mavx512fp16 option.
+This flag enables AVX-512 FP16 (16-bit floating point) instructions,
+which were introduced in Intel's Sapphire Rapids processors and are only supported in GCC 12+.
+
+The suggestion "-mavx512f" refers to the base AVX-512 feature set,
+ which is supported by earlier processors and compilers.
+
+
+2. Upgrade GCC (If Needed)
+On macOS (Homebrew):
+-------------------
+brew upgrade gcc
+
+On Ubuntu/Debian:
+------------------
+sudo apt update
+sudo apt install gcc-12 g++-12
+Then, use gcc-12 explicitly:
+
+ 
+3. Use a Compatible Flag
+If you cannot upgrade GCC, replace -mavx512fp16 with -mavx512f, which is supported in older GCC versions:
+
+
+gcc my_program.c -o my_program -mavx512f
+
+However, this will disable FP16 support. If your code depends on FP16 operations, you must upgrade to GCC 12+.
+```
+
+### bazel test
+```
 cd ~/MICHAEL/LiteRT
 bazel test  --define xnn_enable_avxvnni=false --define xnn_enable_avx512amx=false  --define xnn_enable_avx512fp16=false   --define xnn_enable_avxvnniint8=false  //tflite:interpreter_test
 
