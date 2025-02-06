@@ -1,3 +1,5 @@
+https://habr.com/ru/articles/879274/
+
 https://dmitriysh.livejournal.com/
 
 https://news.ycombinator.com/item?id=38839088
