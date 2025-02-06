@@ -20,10 +20,15 @@ https://www.kaggle.com/models?framework=tfLite
 ### GPS on Android
 
 https://stackoverflow.com/questions/30928279/access-gps-on-android-from-c 
+
+https://forum.qt.io/topic/73575/getting-location-data-from-gps-in-android-and-ios?utm_source=chatgpt.com
+
 ```
 I am using https://github.com/google-ai-edge/LiteRT to build app for Android.
 
 Where I can find LiteRT C/C++ example which uses GPS sensors data on Android ?
+
+Additionally, frameworks like Qt offer modules such as QNmeaPositionInfoSource that facilitate access to GPS data across multiple platforms, including Android and iOS. This can simplify the process of obtaining location data in C++ applications. A discussion on the Qt Forum elaborates on this approach:
 
 Unfortunately, there isn't a specific, readily available C/C++ example within the LiteRT repository itself that directly demonstrates using GPS sensor data on Android.
 LiteRT focuses on efficient on-device inference and doesn't provide built-in sensor access functionality.
