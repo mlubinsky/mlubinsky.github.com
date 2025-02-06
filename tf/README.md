@@ -17,7 +17,7 @@ https://github.com/tensorflow/tflite-support
 
 https://www.kaggle.com/models?framework=tfLite
 
-### GPS on Android
+### Accessing GPS sensors on Android
 
 https://stackoverflow.com/questions/30928279/access-gps-on-android-from-c 
 
@@ -28,7 +28,8 @@ I am using https://github.com/google-ai-edge/LiteRT to build app for Android.
 
 Where I can find LiteRT C/C++ example which uses GPS sensors data on Android ?
 
-Additionally, frameworks like Qt offer modules such as QNmeaPositionInfoSource that facilitate access to GPS data across multiple platforms, including Android and iOS. This can simplify the process of obtaining location data in C++ applications. A discussion on the Qt Forum elaborates on this approach:
+Additionally, frameworks like Qt offer modules such as QNmeaPositionInfoSource that facilitate access to GPS data across multiple platforms, including Android and iOS.
+This can simplify the process of obtaining location data in C++ applications. A discussion on the Qt Forum elaborates on this approach:
 
 Unfortunately, there isn't a specific, readily available C/C++ example within the LiteRT repository itself that directly demonstrates using GPS sensor data on Android.
 LiteRT focuses on efficient on-device inference and doesn't provide built-in sensor access functionality.
@@ -44,15 +45,17 @@ You'll need to use the Android NDK to access the GPS sensor.
 This involves interacting with the Android framework through JNI (Java Native Interface).
 While you'll be writing C/C++ code, you'll still need to interact with Java classes and APIs to get sensor data.
 
-Key Android Classes: Look into the android.hardware.SensorManager and android.hardware.Sensor classes, specifically the Sensor.TYPE_GPS sensor type.
+Key Android Classes: Look into the android.hardware.SensorManager and android.hardware.Sensor classes,
+specifically the Sensor.TYPE_GPS sensor type.
 You'll also need android.location.LocationManager and android.location.LocationListener.
 
-NDK JNI Interaction: You'll use JNI functions to call Java methods that manage the sensors.  This involves getting the Java environment, finding the necessary classes and methods, and making the calls.
+NDK JNI Interaction: You'll use JNI functions to call Java methods that manage the sensors.
+This involves getting the Java environment, finding the necessary classes and methods, and making the calls.
 
 Example Code Guidance:
 Search for examples of "Android NDK GPS sensor" or "Android JNI GPS location."
 There are many tutorials and Stack Overflow answers that demonstrate how to access location data from C/C++ using the NDK.
-Focus on examples that use LocationManager as Sensor.TYPE_GPS is deprecated.
+Focus on examples that use LocationManager (as Sensor.TYPE_GPS is deprecated !).
 
 Integrating with LiteRT:
 
@@ -100,7 +103,9 @@ Key Search Terms:
 "Android JNI GPS sensor"
 "TensorFlow Lite Android input data"
 "LiteRT inference C++"
-Remember that accessing sensors on Android requires appropriate permissions in your AndroidManifest.xml file.  You'll need the ACCESS_FINE_LOCATION permission for GPS.
+
+Remember that accessing sensors on Android requires appropriate permissions in your AndroidManifest.xml file.
+You'll need the ACCESS_FINE_LOCATION permission for GPS.
 
 While there's no single, perfect example for your exact use case, by combining the information above and searching for the suggested terms,
 you should be able to create the necessary integration.
@@ -115,7 +120,7 @@ https://developers.googleblog.com/en/streamlining-llm-inference-at-the-edge-with
 https://onnxruntime.ai/docs/execution-providers/Xnnpack-ExecutionProvider.html
 ```
 XNNPACK is a highly optimized solution for neural network inference on ARM, x86, WebAssembly, and RISC-V platforms.
- XNNPACK is not intended for direct use by deep learning practitioners and researchers;
+XNNPACK is not intended for direct use by deep learning practitioners and researchers;
 instead it provides low-level performance primitives for accelerating high-level machine learning frameworks,
 such as TensorFlow Lite, TensorFlow.js, PyTorch, ONNX Runtime, and MediaPipe.
 
