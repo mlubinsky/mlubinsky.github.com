@@ -285,6 +285,12 @@ For the LiteRT cross-compilation itself, additional parameter
 
 
 cmake -DCMAKE_TOOLCHAIN_FILE=${OE_CMAKE_TOOLCHAIN_FILE} -DTFLITE_KERNEL_TEST=on -DTFLITE_HOST_TOOLS_DIR=<flatc_dir_path> ../tensorflow/lite/
+
+The successful execution of this command will result in CMake generating build files
+ (e.g., Makefiles or Ninja files) in the current directory
+ (where you ran the command from).
+ These generated files will be configured to build TensorFlow Lite for Android, targeting the arm64-v8a architecture, using the tools and settings specified in the Android NDK's toolchain file.
+ You would then use a build tool (like make or ninja) in that directory to actually compile the code.
 ```
 
 ### Cross-compiled kernel (unit) tests launch on target
