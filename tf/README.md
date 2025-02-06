@@ -19,11 +19,40 @@ https://www.kaggle.com/models?framework=tfLite
 
 ### Accessing GPS sensors on Android
 
+
+https://developers.google.com/location-context/fused-location-provider 
+
 https://stackoverflow.com/questions/30928279/access-gps-on-android-from-c 
 
 https://forum.qt.io/topic/73575/getting-location-data-from-gps-in-android-and-ios?utm_source=chatgpt.com
 
+
+
 ```
+Question about Android NDK. Sensor.TYPE_GPS - is it obsolete?
+
+
+You're asking a great question about the Android NDK and sensor types, specifically Sensor.TYPE_GPS. While it's not exactly "obsolete" in the sense that it will cause your code to break, it's definitely not the recommended way to get GPS location data in modern Android development.
+
+Here's why:
+
+Sensor.TYPE_GPS is not a true sensor: It doesn't represent a physical sensor on the device. Instead, it's a software-derived sensor that provides location data from the GPS provider.
+Location APIs are preferred: Android provides dedicated Location APIs (like Fused Location Provider) that are much more powerful and flexible for handling location data. These APIs offer features like:
+Power efficiency: They intelligently manage GPS usage to minimize battery drain.
+Accuracy: They can fuse data from multiple sources (GPS, Wi-Fi, cell towers) to provide the best possible accuracy.   
+Easy integration: They offer simpler and more structured ways to request and receive location updates.
+  
+What should you use instead?
+
+If you're working with the Android NDK and need GPS location, you should use the Location APIs through the Android Native Interface (JNI). This involves:
+
+Accessing the Location Manager in Java: Use Java code to get an instance of the LocationManager and request location updates.
+Passing data to native code: Use JNI to pass the location data (latitude, longitude, etc.) from Java to your native C/C++ code.
+Key takeaway:
+
+While Sensor.TYPE_GPS might still technically work in some cases, it's strongly discouraged for new development. Embrace the modern Location APIs for a more robust, efficient, and feature-rich way to handle GPS data in your Android NDK applications.
+
+
 I am using https://github.com/google-ai-edge/LiteRT to build app for Android.
 
 Where I can find LiteRT C/C++ example which uses GPS sensors data on Android ?
