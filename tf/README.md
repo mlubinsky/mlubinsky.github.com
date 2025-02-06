@@ -51,7 +51,7 @@ INFO: 163 processes: 9 internal, 154 local.
 FAILED: Build did NOT complete successfully
 
 
-his error occurs because your version of GCC does not support the -mavx512fp16 option.
+This error occurs because your version of GCC does not support the -mavx512fp16 option.
 This flag enables AVX-512 FP16 (16-bit floating point) instructions,
 which were introduced in Intel's Sapphire Rapids processors and are only supported in GCC 12+.
 
@@ -164,6 +164,8 @@ cmake ../tensorflow/tensorflow/lite
 ### Android 
 
 https://developer.android.com/ndk
+
+The recommended Android NDK version for building LiteRT is 25b. This can be found here: https://ai.google.dev/edge/litert/android/lite_build
 
 https://dl.google.com/android/repository/android-ndk-r27c-linux.zip
 
