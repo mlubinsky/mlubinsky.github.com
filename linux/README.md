@@ -30,14 +30,14 @@ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt update
 
 Be very careful with PPAs and understand the risks before using them.
-
-Building from source (for maximum control):
-
-This is more advanced but gives you the most control.  You download the GCC source code, configure it with a different installation prefix (e.g., /usr/local/gcc-13), compile, and install it. This keeps it entirely separate from the system's default GCC.
+ 
 
 Switching Between GCC Versions:
 
 The update-alternatives command is the standard way to manage multiple versions of commands like gcc and g++:
+
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 13 --slave /usr/bin/g++ g++ /usr/bin/g++-13
+ 
 
 Check available alternatives:
 
