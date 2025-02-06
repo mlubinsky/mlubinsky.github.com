@@ -1,3 +1,5 @@
+Book: https://mltechniques.com/product/ebook-gentle-introduction-to-chaotic-dynamical-systems/
+
 https://habr.com/ru/articles/546540/
 
 https://arxiv.org/pdf/2407.01762
