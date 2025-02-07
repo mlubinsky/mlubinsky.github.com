@@ -6,6 +6,9 @@ https://cloud.google.com/blog/products/ai-machine-learning/guide-to-jax-for-pyto
 https://pytorchstepbystep.com/
 
 https://habr.com/ru/articles/870426/
+
+### GyroNet
+https://github.com/mbrossar/denoise-imu-gyro/blob/master/src/networks.py
 ```
 #$ file net_params.p
 # net_params.p: data
