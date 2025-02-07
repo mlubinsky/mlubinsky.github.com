@@ -60,9 +60,14 @@ all_skipped, one_success, one_done и другие — существует мн
 
 ```
 
-### DataSet
-```
+### DataSet (New in version 2.4)
+https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/datasets.html
 
+https://stackoverflow.com/questions/75869048/how-to-use-a-table-as-dataset-for-airflow-in-data-aware-scheduling
+
+https://www.youtube.com/watch?v=qkMSarl7BVE  Mastering Advanced Dataset Scheduling in Apache Airflow
+
+```
 Airflow поддерживает концепцию датасетов — групп данных.
 Если задачи графа обновляют определённые данные (например, таблицу в базе), можно указать флаг об обновлении датасета.
 Граф, выполняющий расчёты, считается поставщиком данных, а любой граф, использующий этот датасет, — потребителем.
