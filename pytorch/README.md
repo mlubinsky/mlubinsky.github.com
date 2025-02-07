@@ -33,6 +33,12 @@ ZIP Archive (for weights.pt):
 List contents: You can use the unzip command to see what's inside the ZIP archive:
 unzip -l weights.pt
 
+.data - folder
+data   - folder
+byteorder - file (little
+data.pkl - file
+version   - file  (3)
+
 Extract (if needed): If you want to examine the individual files, you can extract them:
 unzip weights.pt
 This will extract the contents into the current directory.  Look for files with extensions like .pth, .bin, or other model-related files.
