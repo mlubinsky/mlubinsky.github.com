@@ -60,6 +60,63 @@ you should be able to determine the exact nature of both files.
 The PyTorch approach for weights.pt is the most likely to succeed if it's indeed a PyTorch model file.
 ```
 
+### Model viewer
+```
+While there isn't a single, dedicated "PyTorch model viewer" that directly opens .ph files,
+there are several excellent tools and techniques you can use
+to visualize and inspect your PyTorch models:
+
+1. Netron:
+
+Versatile and widely used: Netron is a free, open-source viewer that supports a wide variety of model formats, including ONNX (Open Neural Network Exchange).   
+Convert to ONNX: PyTorch models can be easily exported to the ONNX format.
+Once you have the ONNX file, you can open it in Netron to visualize the model's
+architecture, layers, connections, and even see the weights and biases (if included).   
+How to use it:
+Install Netron: Download and install Netron from their website (https://netron.app/).
+Export to ONNX: In your PyTorch code, use torch.onnx.export() to export your model to an ONNX file.
+Open in Netron: Open the ONNX file in Netron.
+
+2. TensorBoard:
+
+Part of the TensorFlow ecosystem: While primarily associated with TensorFlow, TensorBoard
+can also be used with PyTorch.   
+Visualize graphs: TensorBoard can visualize the structure of your PyTorch model,
+showing the flow of data through the different layers.   
+How to use it:
+Install TensorBoard: pip install tensorboard
+Use SummaryWriter:
+In your PyTorch code, use torch.utils.tensorboard.SummaryWriter to add the model graph to a log directory.
+Launch TensorBoard: Run tensorboard --logdir <log_directory> to start TensorBoard and view the visualization in your browser.
+
+3. Torchviz:
+
+PyTorch-specific: Torchviz is a Python library specifically designed for visualizing PyTorch models.   
+Generate graph visualizations:
+It can create visualizations of the computational graph of your model, showing the operations and tensors involved.
+How to use it:
+Install Torchviz: pip install torchviz graphviz (you'll also need Graphviz)
+Use make_dot(): In your PyTorch code, import make_dot() from torchviz and use it to generate a visualization of your model.
+
+4. print(model):
+
+Simple but effective: In many cases, simply printing your model object (print(model)) will give you a decent overview of its architecture.
+Limitations: This method might not be ideal for very complex models, as the output can be quite long and difficult to read.
+
+Which tool to choose?
+
+Netron: A good general-purpose viewer for various model formats, including ONNX. It's great for getting a quick understanding of the model's structure.   
+TensorBoard: Useful for visualizing the model graph and also offers other features for monitoring training progress.
+
+Torchviz: Specifically designed for PyTorch, can be helpful for understanding the computational graph.   
+print(model): A quick and easy way to see the basic structure of the model.
+Important Note:
+
+The .ph extension is not a standard PyTorch extension. It's likely that the file was saved with a custom extension.
+However, if it's a saved PyTorch model, you should still be able to load it using torch.load() and then use the visualization tools mentioned above to inspect it.
+
+```
+
 ### pip index versions torch
 ```
 
