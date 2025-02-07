@@ -281,7 +281,10 @@ with open("model.tflite", "wb") as f:
 
 ```
 
-### How to Convert the Model to LiteRT Format (.tflite)?
+### How to convert a PyTorch model to LiteRT Format (.tflite)?
+
+https://medium.com/@zergtant/convert-pytorch-model-to-tf-lite-with-onnx-tf-232a3894657c
+
 ```
 To convert a PyTorch model to TFLite (LiteRT format), follow these steps:
 
