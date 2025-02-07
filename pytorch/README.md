@@ -11,6 +11,53 @@ https://habr.com/ru/articles/870426/
 # net_params.p: data
 # $ file weights_combination_epoch_3380.pt
 # weights_combination_epoch_3380.pt: Zip archive data, at least v?[0] to extract
+
+Python pickle (for net_params.p):
+Since the .p extension is common for pickle files, try this in a Python interpreter:
+
+import pickle
+try:
+    with open("net_params.p", "rb") as f:  # "rb" for read binary
+        data = pickle.load(f)
+        print(type(data))  # See what kind of Python object it is
+        # print(data)       # If it's not too large, you can try printing it
+except pickle.UnpicklingError as e:
+    print(f"Error unpickling: {e}")
+except Exception as e:
+    print(f"Other error: {e}")
+
+If this works without errors, you've likely confirmed it's a pickle file. The print(type(data)) will tell you what kind of Python object is stored (e.g., a dictionary, a list, etc.).
+
+ZIP Archive (for weights.pt):
+
+List contents: You can use the unzip command to see what's inside the ZIP archive:
+unzip -l weights.pt
+
+Extract (if needed): If you want to examine the individual files, you can extract them:
+unzip weights.pt
+This will extract the contents into the current directory.  Look for files with extensions like .pth, .bin, or other model-related files.
+
+PyTorch Specific (for weights.pt):
+
+Even though it's a ZIP, it's very likely a PyTorch save file.  Try loading it directly in PyTorch:
+
+import torch
+try:
+    model = torch.load("weights.pt")  # PyTorch will handle the ZIP automatically
+    print(type(model))  # This should tell you the type of saved object (e.g., a model)
+    # print(model.keys()) # If it's a state_dict, this will list the layers
+except Exception as e:
+    print(f"Error loading PyTorch model: {e}")
+
+
+This is the most direct way to confirm if it's a PyTorch model.
+ 
+PyTorch save format: PyTorch often uses ZIP archives to store multiple components of a model
+(weights, architecture, optimizer state, etc.).
+The torch.load() function handles these ZIP files transparently.
+By combining the file command with the Python code snippets above,
+you should be able to determine the exact nature of both files.
+The PyTorch approach for weights.pt is the most likely to succeed if it's indeed a PyTorch model file.
 ```
 
 ### pip index versions torch
