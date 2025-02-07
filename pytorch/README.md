@@ -144,14 +144,14 @@ Example:
 }
 Since it only contains parameters, PyTorch cannot reconstruct the model without separately defining its architecture.
 
-3) Why Isn’t It a Full Model Object?
+ Why Isn’t It a Full Model Object?
 A full model object (i.e., an nn.Module) includes:
 
 Model architecture: The layers (nn.Conv2d, nn.Linear, nn.LSTM, etc.)
 Model parameters: The trained weights and biases
 Your file only contains the parameters, not the architecture.
 
-4) How to Convert It Back to a Full Model Object?
+ How to Convert It Back to a Full Model Object?
 To use the model, you need to define the architecture and load the state_dict into it.
 
 Example:
@@ -206,7 +206,7 @@ Export the full model to ONNX.
 Convert ONNX to TFLite.
 
 Step 1: Define the Model Class
-
++++++++++++++++++++++++++++++++
 Since your model.pt does not contain the model architecture, you must define it manually.
 Example (modify this to match your actual model):
 
@@ -233,15 +233,18 @@ class MyModel(nn.Module):
 
 # Create model instance
 model = MyModel()
+
 Step 2: Load the state_dict
++++++++++++++++++++++++++++
 Now, load the weights from model.pt:
 
 state_dict = torch.load("model.pt")
 model.load_state_dict(state_dict)
 model.eval()  # Set model to evaluation mode
-Step 3: Convert to ONNX
-Now that you have a complete model, export it to ONNX:
 
+Step 3: Convert to ONNX
++++++++++++++++++++++++++++++++
+Now that you have a complete model, export it to ONNX:
 
 dummy_input = torch.randn(1, 3, 224, 224)  # Adjust input shape as needed
 
@@ -255,12 +258,12 @@ torch.onnx.export(
     output_names=["output"]
 )
 Step 4: Convert ONNX to TensorFlow SavedModel
++++++++++++++++++++++++++++++++++++++++++++++
 To convert the ONNX model to TensorFlow format, install onnx2tf:
 
 pip install onnx2tf
 
 Then, convert:
-
 
 onnx2tf -i model.onnx -o model_tf
 
