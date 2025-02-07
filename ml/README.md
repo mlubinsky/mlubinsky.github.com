@@ -2,7 +2,9 @@ https://www.youtube.com/playlist?list=PL4_hYwCyhAvaprlx_MnGC5xyKR1qb7Y7L Мат�
 
 https://www.llm-book.com/ Book
 
-https://www.amazon.com/_/dp/149204552 Book Deep Learning for Coders with fastai and PyTorch:
+https://www.amazon.com/_/dp/149204552 Book Deep Learning for Coders with fastai and PyTorch
+
+https://www.amazon.com/dp/1108415199/ref=sspa_dk_detail_1  Roman Vershinin. High-Dimensional Probability: An Introduction with Applications in Data Science
 
 mlcourse.ai/
 
