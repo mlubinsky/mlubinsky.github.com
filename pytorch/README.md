@@ -280,49 +280,7 @@ with open("model.tflite", "wb") as f:
     f.write(tflite_model)
 
 ```
-#### You can visualize it in a few ways:
-```
-A. Print Model Structure and Weights
-Since your model file is a state_dict, you can inspect the shape of each parameter:
 
-import torch
-
-fname = "model.pt"
-state_dict = torch.load(fname)
-
-# Print details of model weights
-for k, v in state_dict.items():
-    print(f"{k}: {v.shape}")
-
-B. Load It into a PyTorch Model (If You Have the Model Class)
-If you have access to the original PyTorch model class, you can load the state_dict:
-
-import torch
-from my_model_definition import MyModel  # Replace with your actual model class
-
-model = MyModel()
-model.load_state_dict(torch.load("model.pt"))
-model.eval()
-
-print(model)  # View model architecture
-
-C. Visualize with torchsummary
-If you have the model class, install torchsummary and run:
-
-from torchsummary import summary
-
-summary(model, input_size=(C, H, W))  # Replace C, H, W with actual input shape
-
-D. Visualize Model Graph Using torchviz
-If you can pass a sample input, use torchviz:
-
-from torchviz import make_dot
-
-x = torch.randn(1, C, H, W)  # Replace with actual input shape
-y = model(x)
-
-make_dot(y, params=dict(model.named_parameters())).render("model_graph", format="png")
-```
 ### How to Convert the Model to LiteRT Format (.tflite)?
 ```
 To convert a PyTorch model to TFLite (LiteRT format), follow these steps:
@@ -372,7 +330,9 @@ tflite_model = converter.convert()
 # Save the TFLite model
 with open("model.tflite", "wb") as f:
     f.write(tflite_model)
+
 Step 4: Verify the TFLite Model
+--------------------------------
 Run inference on the converted model:
 
 interpreter = tf.lite.Interpreter(model_path="model.tflite")
@@ -410,7 +370,49 @@ By combining the file command with the Python code snippets above,
 you should be able to determine the exact nature of both files.
 The PyTorch approach for weights.pt is the most likely to succeed if it's indeed a PyTorch model file.
 ```
+#### You can visualize it in a few ways:
+```
+A. Print Model Structure and Weights
+Since your model file is a state_dict, you can inspect the shape of each parameter:
 
+import torch
+
+fname = "model.pt"
+state_dict = torch.load(fname)
+
+# Print details of model weights
+for k, v in state_dict.items():
+    print(f"{k}: {v.shape}")
+
+B. Load It into a PyTorch Model (If You Have the Model Class)
+If you have access to the original PyTorch model class, you can load the state_dict:
+
+import torch
+from my_model_definition import MyModel  # Replace with your actual model class
+
+model = MyModel()
+model.load_state_dict(torch.load("model.pt"))
+model.eval()
+
+print(model)  # View model architecture
+
+C. Visualize with torchsummary
+If you have the model class, install torchsummary and run:
+
+from torchsummary import summary
+
+summary(model, input_size=(C, H, W))  # Replace C, H, W with actual input shape
+
+D. Visualize Model Graph Using torchviz
+If you can pass a sample input, use torchviz:
+
+from torchviz import make_dot
+
+x = torch.randn(1, C, H, W)  # Replace with actual input shape
+y = model(x)
+
+make_dot(y, params=dict(model.named_parameters())).render("model_graph", format="png")
+```
 ### Model viewer
 
 https://netron.app/
@@ -422,7 +424,8 @@ to visualize and inspect your PyTorch models:
 
 1. Netron:
 
-Versatile and widely used: Netron is a free, open-source viewer that supports a wide variety of model formats, including ONNX (Open Neural Network Exchange).   
+Versatile and widely used: Netron is a free, open-source viewer that supports a wide variety of model formats,
+including ONNX (Open Neural Network Exchange).   
 Convert to ONNX: PyTorch models can be easily exported to the ONNX format.
 Once you have the ONNX file, you can open it in Netron to visualize the model's
 architecture, layers, connections, and even see the weights and biases (if included).   
