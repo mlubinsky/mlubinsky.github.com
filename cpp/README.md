@@ -1,5 +1,6 @@
 https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
 
+### Make, CMAke, etc
 https://habr.com/ru/companies/ruvds/articles/875620/ Сборка проектов Си и Си++: от простого к сложному. Часть II
 
 https://www.youtube.com/watch?v=gqczXq-faAg   CMake
@@ -46,6 +47,8 @@ https://news.ycombinator.com/item?id=24361469 . Modern C
 ### CPP
 https://awesomecpp.com/
 
+https://cacm.acm.org/blogcacm/21st-century-c/ Straustrup
+ 
 https://habr.com/ru/companies/timeweb/articles/842878/
 
 https://www.thephysicsmill.com/2024/08/30/multi-dimensional-dynamically-sized-arrays-in-c-and-c-the-right-way/
