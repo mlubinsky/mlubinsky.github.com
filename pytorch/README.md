@@ -6,6 +6,12 @@ https://cloud.google.com/blog/products/ai-machine-learning/guide-to-jax-for-pyto
 https://pytorchstepbystep.com/
 
 https://habr.com/ru/articles/870426/
+```
+#$ file net_params.p
+# net_params.p: data
+# $ file weights_combination_epoch_3380.pt
+# weights_combination_epoch_3380.pt: Zip archive data, at least v?[0] to extract
+```
 
 ### pip index versions torch
 ```
