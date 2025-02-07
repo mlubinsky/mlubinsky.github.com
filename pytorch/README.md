@@ -39,6 +39,66 @@ byteorder - file (little
 data.pkl - file
 version   - file  (3)
 
+
+
+cat extract_pt.py
+import torch
+fname="/home/spotbot/denoising_inference_Oct072024/results/MEMS/2024_09_25_14_29_26/weights_combination_epoch_3380.pt"
+try:
+   model = torch.load(fname)  # PyTorch will handle the ZIP automatically
+   print(type(model))  # This should tell you the type of saved object (e.g., a model)
+   print(model.keys()) # If it's a state_dict, this will list the layers
+   for k, v in model.items():
+       print(k)
+except Exception as e:
+        print(f"Error loading PyTorch model: {e}")
+
+mean_u
+std_u
+gyro_std
+cnn.1.weight
+cnn.1.bias
+cnn.2.weight
+cnn.2.bias
+cnn.2.running_mean
+cnn.2.running_var
+cnn.2.num_batches_tracked
+cnn.5.weight
+cnn.5.bias
+cnn.6.weight
+cnn.6.bias
+cnn.6.running_mean
+cnn.6.running_var
+cnn.6.num_batches_tracked
+cnn.9.weight
+cnn.9.bias
+cnn.10.weight
+cnn.10.bias
+cnn.10.running_mean
+cnn.10.running_var
+cnn.10.num_batches_tracked
+cnn.13.weight
+cnn.13.bias
+cnn.14.weight
+cnn.14.bias
+cnn.14.running_mean
+cnn.14.running_var
+cnn.14.num_batches_tracked
+rnn.weight_ih_l0
+rnn.weight_hh_l0
+rnn.bias_ih_l0
+rnn.bias_hh_l0
+rnn.weight_ih_l1
+rnn.weight_hh_l1
+rnn.bias_ih_l1
+rnn.bias_hh_l1
+lin.0.weight
+lin.0.bias
+
+
+
+
+
 Extract (if needed): If you want to examine the individual files, you can extract them:
 unzip weights.pt
 This will extract the contents into the current directory.  Look for files with extensions like .pth, .bin, or other model-related files.
