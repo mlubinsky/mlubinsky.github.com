@@ -1,5 +1,7 @@
 https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
 
+https://habr.com/ru/companies/ruvds/articles/875620/ Сборка проектов Си и Си++: от простого к сложному. Часть II
+
 https://www.youtube.com/watch?v=gqczXq-faAg   CMake
 
 https://coderefinery.github.io/cmake-workshop/motivation/ CMake
