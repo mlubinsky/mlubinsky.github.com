@@ -2,6 +2,8 @@ https://www.youtube.com/playlist?list=PL4_hYwCyhAvaprlx_MnGC5xyKR1qb7Y7L Мат�
 
 https://www.llm-book.com/ Book
 
+https://www.amazon.com/_/dp/149204552 Book Deep Learning for Coders with fastai and PyTorch:
+
 mlcourse.ai/
 
 https://news.ycombinator.com/item?id=42827913 Good links!
