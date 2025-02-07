@@ -53,6 +53,8 @@ https://antonz.org/sqlite-3-44/
 
 https://antonz.org/tags/modern-sqlite/
 
+https://tenthousandmeters.com/blog/sqlite-concurrent-writes-and-database-is-locked-errors/
+
 https://docs.python.org/3/library/sqlite3.html#command-line-interface
 
 https://habr.com/ru/articles/792630/
