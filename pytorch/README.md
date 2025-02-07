@@ -96,9 +96,110 @@ lin.0.weight
 lin.0.bias
 
 
+Your PyTorch model file appears to be a dictionary of tensors and parameters rather than a full model object. You can visualize it in a few ways:
 
+A. Print Model Structure and Weights
+Since your model file is a state_dict, you can inspect the shape of each parameter:
 
+import torch
 
+fname = "model.pt"
+state_dict = torch.load(fname)
+
+# Print details of model weights
+for k, v in state_dict.items():
+    print(f"{k}: {v.shape}")
+
+B. Load It into a PyTorch Model (If You Have the Model Class)
+If you have access to the original PyTorch model class, you can load the state_dict:
+
+import torch
+from my_model_definition import MyModel  # Replace with your actual model class
+
+model = MyModel()
+model.load_state_dict(torch.load("model.pt"))
+model.eval()
+
+print(model)  # View model architecture
+
+C. Visualize with torchsummary
+If you have the model class, install torchsummary and run:
+
+from torchsummary import summary
+
+summary(model, input_size=(C, H, W))  # Replace C, H, W with actual input shape
+
+D. Visualize Model Graph Using torchviz
+If you can pass a sample input, use torchviz:
+
+from torchviz import make_dot
+
+x = torch.randn(1, C, H, W)  # Replace with actual input shape
+y = model(x)
+
+make_dot(y, params=dict(model.named_parameters())).render("model_graph", format="png")
+```
+### How to Convert the Model to LiteRT Format (.tflite)?
+```
+To convert a PyTorch model to TFLite (LiteRT format), follow these steps:
+
+Step 1: Convert to TorchScript
+-------------------------------
+Convert the model to TorchScript (either tracing or scripting):
+
+import torch
+model = MyModel()  # Load the model class
+model.load_state_dict(torch.load("model.pt"))
+model.eval()
+
+# Convert to TorchScript
+scripted_model = torch.jit.trace(model, torch.randn(1, C, H, W))  # Adjust input size
+scripted_model.save("model_scripted.pt")
+
+Step 2: Convert to ONNX
+------------------------
+Export the scripted model to ONNX format:
+
+torch.onnx.export(
+    scripted_model,
+    torch.randn(1, C, H, W),  # Adjust input shape
+    "model.onnx",
+    export_params=True,
+    opset_version=11,
+    input_names=["input"],
+    output_names=["output"]
+)
+
+Step 3: Convert ONNX to TFLite
+------------------------------
+Use TensorFlow’s tf.lite.TFLiteConverter:
+
+import tensorflow as tf
+import onnx
+import tf2onnx
+
+# Load ONNX model
+onnx_model = onnx.load("model.onnx")
+
+# Convert ONNX to TFLite
+converter = tf.lite.TFLiteConverter.from_saved_model("model.onnx")
+tflite_model = converter.convert()
+
+# Save the TFLite model
+with open("model.tflite", "wb") as f:
+    f.write(tflite_model)
+Step 4: Verify the TFLite Model
+Run inference on the converted model:
+
+interpreter = tf.lite.Interpreter(model_path="model.tflite")
+interpreter.allocate_tensors()
+
+input_details = interpreter.get_input_details()
+output_details = interpreter.get_output_details()
+
+print(f"Input details: {input_details}")
+print(f"Output details: {output_details}")
+--------
 Extract (if needed): If you want to examine the individual files, you can extract them:
 unzip weights.pt
 This will extract the contents into the current directory.  Look for files with extensions like .pth, .bin, or other model-related files.
@@ -127,6 +228,9 @@ The PyTorch approach for weights.pt is the most likely to succeed if it's indeed
 ```
 
 ### Model viewer
+
+https://netron.app/
+
 ```
 While there isn't a single, dedicated "PyTorch model viewer" that directly opens .ph files,
 there are several excellent tools and techniques you can use
