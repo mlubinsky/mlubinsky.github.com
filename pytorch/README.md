@@ -114,9 +114,7 @@ for k, v in model.items():
        print(k)
 prints a list of parameter names like:
 
-python-repl
-Copy
-Edit
+
 mean_u
 std_u
 gyro_std
@@ -190,8 +188,91 @@ model.eval()
 print(model)  # Now you have a full model object!
 
 ```
+### How to Make full model
+```
+Yes, you cannot directly convert your model.pt (which is just a state_dict) to .tflite (LiteRT format)
+ because TFLite requires the full model architecture and weights, not just the weights.
+However, you can still convert it to .tflite by following these steps:
+
+Steps to Convert model.pt (state_dict) to .tflite
+Since your model.pt only contains weights, you need to:
+
+Define the original PyTorch model architecture.
+Load the state_dict into the model.
+Export the full model to ONNX.
+Convert ONNX to TFLite.
+
+Step 1: Define the Model Class
+
+Since your model.pt does not contain the model architecture, you must define it manually.
+Example (modify this to match your actual model):
+
+import torch
+import torch.nn as nn
+
+class MyModel(nn.Module):
+    def __init__(self):
+        super(MyModel, self).__init__()
+        self.cnn = nn.Sequential(
+            nn.Conv2d(3, 16, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.Conv2d(16, 32, kernel_size=3, padding=1),
+            nn.ReLU(),
+        )
+        self.rnn = nn.LSTM(32, 64, num_layers=2, batch_first=True)
+        self.lin = nn.Linear(64, 10)
+
+    def forward(self, x):
+        x = self.cnn(x)
+        x, _ = self.rnn(x)
+        x = self.lin(x)
+        return x
+
+# Create model instance
+model = MyModel()
+Step 2: Load the state_dict
+Now, load the weights from model.pt:
+
+state_dict = torch.load("model.pt")
+model.load_state_dict(state_dict)
+model.eval()  # Set model to evaluation mode
+Step 3: Convert to ONNX
+Now that you have a complete model, export it to ONNX:
 
 
+dummy_input = torch.randn(1, 3, 224, 224)  # Adjust input shape as needed
+
+torch.onnx.export(
+    model,
+    dummy_input,
+    "model.onnx",
+    export_params=True,
+    opset_version=11,
+    input_names=["input"],
+    output_names=["output"]
+)
+Step 4: Convert ONNX to TensorFlow SavedModel
+To convert the ONNX model to TensorFlow format, install onnx2tf:
+
+pip install onnx2tf
+
+Then, convert:
+
+
+onnx2tf -i model.onnx -o model_tf
+
+Step 5: Convert to TFLite
+Use TensorFlow’s TFLite Converter:
+
+import tensorflow as tf
+
+converter = tf.lite.TFLiteConverter.from_saved_model("model_tf")
+tflite_model = converter.convert()
+
+with open("model.tflite", "wb") as f:
+    f.write(tflite_model)
+
+```
 #### You can visualize it in a few ways:
 ```
 A. Print Model Structure and Weights
