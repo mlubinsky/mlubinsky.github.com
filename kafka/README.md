@@ -6,6 +6,8 @@ https://encore.dev/blog/queueing
 
 ### Kafka
 
+https://habr.com/ru/articles/880700/ Kafka на Python
+
 https://habr.com/ru/articles/880094/ Kafka C++
 
 https://www.youtube.com/watch?v=DU8o-OTeoCc
