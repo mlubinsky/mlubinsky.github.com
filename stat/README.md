@@ -382,6 +382,8 @@ https://statisticsbyjim.com/basics/z-score
 
 https://towardsdatascience.com/a-new-coefficient-of-correlation-64ae4f260310
 
+https://gwern.net/doc/statistics/order/2020-chatterjee.pdf
+
 https://habr.com/ru/post/683442/
 
 ### Casual inference
