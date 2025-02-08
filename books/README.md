@@ -8,6 +8,8 @@ https://techlibrary.ru/
 
 https://eqworld.ipmnet.ru/ru/library.htm
 
+https://web.aflia.net/springer-makes-freely-available-over-400-of-its-scientific-books-during-the-global-lockdown/
+
 ### Get it:
 
 http://103.203.175.90:81/fdScript/RootOfEBooks/
