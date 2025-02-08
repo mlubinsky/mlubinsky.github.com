@@ -1,5 +1,6 @@
 https://github.com/aimclub/open-source-ops/blob/master/examples/academic-repositories.md
 
+https://juliapackages.com/c/quantum-mechanics
 
 https://www.reddit.com/r/Physics/comments/1hr8r5o/what_are_some_of_the_more_popular_cc_software/
 
