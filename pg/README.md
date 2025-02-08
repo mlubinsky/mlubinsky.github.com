@@ -21,9 +21,11 @@ https://habr.com/ru/companies/tensor/articles/870222/
 https://habr.com/ru/companies/otus/articles/861240/
 
 
-### Correlation coeff extension
+### Non-standard Correlation coeff extension
 
 https://github.com/Florents-Tselai/pgxicor
+
+https://github.com/Florents-Tselai/vasco
 
 
 ### Compare schemas 
