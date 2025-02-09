@@ -12,6 +12,8 @@ https://libguides.wpi.edu/oer/physics
 
 https://physicspages.com/
 
+https://johncarlosbaez.wordpress.com/
+
 https://topocondmat.org/ Online course on topology in condensed matter
 
 https://www.aps.org/apsnews/2024/11/mathematical-intuition-dirac-quantum-mechanics Dirac equation
