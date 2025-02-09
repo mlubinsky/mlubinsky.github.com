@@ -24,6 +24,8 @@ https://github.com/alex/what-happens-when when you press button on keyboard
 
 ### System design interview
 
+https://betterengineers.substack.com/p/data-partitioning-and-sharding
+
 https://www.youtube.com/watch?v=cr6p0n0N-VA  design / build Whats-UP
 
 https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator
