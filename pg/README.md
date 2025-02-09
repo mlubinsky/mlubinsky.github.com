@@ -1,5 +1,7 @@
 ### What I wish someone told me about Postgres
 
+https://www.shayon.dev/post/2025/40/scaling-with-postgresql-without-boiling-the-ocean/
+
 https://habr.com/ru/articles/878574/ Join 2 tables to get not matching recods (NOT IN, NOT EXISTS, LEFT JOIN)
 
 https://habr.com/ru/companies/ruvds/articles/859422/
