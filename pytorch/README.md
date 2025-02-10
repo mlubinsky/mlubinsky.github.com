@@ -16,9 +16,11 @@ https://github.com/mbrossar/denoise-imu-gyro/blob/master/src/networks.py
 # weights_combination_epoch_3380.pt: Zip archive data, at least v?[0] to extract
 
 # conda activate Model-Based-Deep-Learning-IMU  
-(Model-Based-Deep-Learning-IMU) spotbot@spotbot-149:~/denoising_inference_Oct072024$ cat README
-How to run denosing inference:
+(Model-Based-Deep-Learning-IMU) spotbot@spotbot-149:~/denoising_inference_Oct072024$
 
+cat README
+************
+How to run denosing inference:
 within denoising_inference folder:
 
 1. install anaconda environment following
@@ -27,12 +29,13 @@ within denoising_inference folder:
 2. with the created anaconda environment activated, run
    python3 denoising_inference.py
 
-
 More information:
 
-1. By default, the inputs, i.e. raw MEMS readings, are loaded from .p file. One exmaple is provided as inference_example_inputs.p.
-   The input loading format could be changed per need, as long as, 'us' is a torch tensor with size [1, length, 6], where 'length' is the length of input sequence (the number
-   of timestamps), and 6 is the dimension per input in a format of [gyro_x, gyro_y, gyro_z, accl_x, accl_y, accl_z].
+1. By default, the inputs, i.e. raw MEMS readings, are loaded from .p file.
+   One exmaple is provided as inference_example_inputs.p.
+   The input loading format could be changed per need, as long as, 'us' is a torch tensor with size [1, length, 6],
+   where 'length' is the length of input sequence (the number   of timestamps),
+   and 6 is the dimension per input in a format of [gyro_x, gyro_y, gyro_z, accl_x, accl_y, accl_z].
    The model with weights loading from 2024_09_25_14_29_26/weights_combination_epoch_3380.pt is trained for MEMS with 62.5Hz.
 
 2. 'net_outputs = network(us)' is the command to run network inference.
