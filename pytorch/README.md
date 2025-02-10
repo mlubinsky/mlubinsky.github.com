@@ -29,7 +29,8 @@ except pickle.UnpicklingError as e:
 except Exception as e:
     print(f"Other error: {e}")
 
-If this works without errors, you've likely confirmed it's a pickle file. The print(type(data)) will tell you what kind of Python object is stored (e.g., a dictionary, a list, etc.).
+If this works without errors, you've likely confirmed it's a pickle file.  
+The print(type(data)) will tell you what kind of Python object is stored (e.g., a dictionary, a list, etc.).
 
 ZIP Archive (for weights.pt):
 
@@ -132,7 +133,8 @@ The output contains parameter names (cnn.1.weight, rnn.weight_ih_l0, etc.), whic
 A full model object would allow calling model.forward(input_tensor), but your model.pt does not.
 
 2) What is a state_dict?
-A state_dict is a dictionary mapping layer names to their learned parameters (weights and biases). It does not include the model architecture itself.
+A state_dict is a dictionary mapping layer names to their learned parameters (weights and biases).  
+It does not include the model architecture itself.
 
 Example:
 
