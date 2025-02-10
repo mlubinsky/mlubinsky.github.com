@@ -283,9 +283,20 @@ with open("model.tflite", "wb") as f:
 
 ```
 
-### How to convert a PyTorch model to LiteRT Format (.tflite)
+### Convert a PyTorch model to LiteRT Format (.tflite) using AI Edge Torch
+
+AI Edge Torch is a toolkit  for converting models from Pytorch to TFLite.
+(developed by Google and released in May 2024)  
+
+https://developers.googleblog.com/en/ai-edge-torch-high-performance-inference-of-pytorch-models-on-mobile-devices/  
+https://ai.google.dev/edge/litert/models/convert_pytorch  
+https://ai.google.dev/edge/litert/models/pytorch_to_tflite  
+https://github.com/google-ai-edge/ai-edge-torch/  
+https://pypi.org/project/ai-edge-torch/
 
 https://medium.com/axinc-ai/convert-models-from-pytorch-to-tflite-with-ai-edge-torch-0e85623f8d56
+
+### Convert a PyTorch model to LiteRT Format (.tflite) using ONNX
 
 https://www.geeksforgeeks.org/convert-pytorch-model-to-tf-lite-with-onnx-tf/
 
