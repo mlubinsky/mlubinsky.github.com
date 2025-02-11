@@ -9,6 +9,17 @@ https://mesa.readthedocs.io/stable/ Discrete simulation
 https://github.com/true-grue/python-dsls DSLs
 
 ```
+#------------------------
+def valid_date(date_str):
+#------------------------
+    """Validate the date format is YYYY-MM-DD."""
+
+    try:
+        return datetime.strptime(date_str, '%Y-%m-%d').date()
+    except ValueError:
+        log("Error in input date: "+ date_str)
+        raise argparse.ArgumentTypeError(f"Invalid date format: '{date_str}'. Expected format: YYYY-MM-DD.")
+
 from datetime import date, datetime, timedelta
 #----------------------------
 def get_dates(sdate, edate):
