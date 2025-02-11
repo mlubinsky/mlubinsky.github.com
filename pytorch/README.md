@@ -3,9 +3,35 @@ https://proproprogs.ru/
 JAX for PyTorch users
 https://cloud.google.com/blog/products/ai-machine-learning/guide-to-jax-for-pytorch-developers
 
+
+### PyTorch
+
 https://pytorchstepbystep.com/
 
-https://habr.com/ru/articles/870426/
+https://habr.com/ru/articles/870426/ Пишем свой PyTorch на NumPy. Часть 3. Строим граф вычислений
+
+
+### Install PyTorch
+```
+check if pip and venv installed:
+
+python3 -m ensurepip --default-pip
+python3 -m venv --help
+
+if not installed then install it:
+sudo apt update && sudo apt upgrade -y
+sudo apt install python3-venv python3-pip -y
+
+create venv
+
+python3 -m venv pytorch-venv
+source pytorch-venv/bin/activate
+
+pip install torch torchvision torchaudio
+python -c "import torch; print(torch.__version__)"
+deactivate
+```
+
 
 ### GyroNet
 https://github.com/mbrossar/denoise-imu-gyro/blob/master/src/networks.py
