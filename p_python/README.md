@@ -8,6 +8,7 @@ https://mesa.readthedocs.io/stable/ Discrete simulation
 
 https://github.com/true-grue/python-dsls DSLs
 
+https://pydong.org/posts/PythonsPreprocessor/
 ```
 #------------------------
 def valid_date(date_str):
