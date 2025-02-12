@@ -1,3 +1,5 @@
+Automatic EDA https://habr.com/ru/companies/gazprombank/articles/881386/
+
 https://www.youtube.com/playlist?list=PL4_hYwCyhAvaprlx_MnGC5xyKR1qb7Y7L Математика больших данных 
 
 https://www.llm-book.com/ Book
