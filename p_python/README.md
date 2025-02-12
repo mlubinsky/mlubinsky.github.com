@@ -1947,6 +1947,29 @@ class RegularCard:
 
 @dataclass(slots=True, frozen=True)
 
+https://habr.com/ru/companies/ru_mts/articles/881514/  dataclasses vs Msgspec
+
+Example of  __post_init__:
+```
+from dataclasses import dataclass
+@dataclass(frozen=True)
+class User:
+  first_name: str
+  last_name: str
+  email: str
+  age: int
+
+  def __post_init__(self):
+     if not isinstance(self.age, int):
+        raise Exception("Age must be an integer")
+Usage:
+User("Alyosha", "Popovich", "aleshap@something.com", "16")
+Traceback (most recent call last):
+  File "<python-input-13>", line 1, in <module>
+    User("Alyosha", "Popovich", "aleshap@something.com", "16")
+```
+
+
 ### itertools
 https://realpython.com/python-itertools/
 
