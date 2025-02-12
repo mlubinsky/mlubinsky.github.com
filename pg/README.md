@@ -2,6 +2,8 @@
 
 https://www.shayon.dev/post/2025/40/scaling-with-postgresql-without-boiling-the-ocean/
 
+https://github.com/Olshansk/postgres_for_everything?tab=readme-ov-file 
+
 https://habr.com/ru/articles/878574/ Join 2 tables to get not matching recods (NOT IN, NOT EXISTS, LEFT JOIN)
 
 https://habr.com/ru/companies/ruvds/articles/859422/
@@ -20,9 +22,9 @@ https://habr.com/ru/companies/tensor/articles/870222/
 
 ### Postgres is enough:
 
+https://github.com/Olshansk/postgres_for_everything?tab=readme-ov-file 
+
 https://habr.com/ru/articles/794839/
-
-
 
 https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb
 
