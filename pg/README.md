@@ -18,6 +18,20 @@ https://notso.boringsql.com/
 
 https://habr.com/ru/companies/tensor/articles/870222/
 
+### Postgres is enough:
+
+https://habr.com/ru/articles/794839/
+
+
+
+https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb
+
+MERGE: https://habr.com/ru/companies/otus/articles/792396/
+
+locking https://leontrolski.github.io/pglockpy.html
+
+https://medium.com/redis-with-raphael-de-lio/can-postgres-replace-redis-as-a-cache-f6cba13386dc
+
 ### Dynamic SQL
 
 https://habr.com/ru/companies/otus/articles/861240/
@@ -471,17 +485,7 @@ https://news.ycombinator.com/item?id=40077233
 Ten years of improvements in PostgreSQL's optimizer (rmarcus.info)
 https://news.ycombinator.com/item?id=40060123
 
-### Postgres is enough:
 
-https://habr.com/ru/articles/794839/
-
-https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb
-
-MERGE: https://habr.com/ru/companies/otus/articles/792396/
-
-locking https://leontrolski.github.io/pglockpy.html
-
-https://medium.com/redis-with-raphael-de-lio/can-postgres-replace-redis-as-a-cache-f6cba13386dc
 
 ### Postgres extensions:
 
@@ -1145,6 +1149,9 @@ RAISE NOTICE 'STEP X  timeofday= %',  timeofday();
 https://stackoverflow.com/questions/76734370/is-it-guaranteed-that-bigserial-column-is-unique-across-all-partitions-in-postgr
 
 
+## Performance tuning
+https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb#performance-tuning
+
 https://luis-sena.medium.com/tuning-your-postgresql-for-high-performance-5580abed193d
 
 ### All constraints for given table:
@@ -1248,9 +1255,7 @@ Note that sometimes pg_cancel_backend doesn’t work. In such cases, you will ne
 
 ```
 
-
-
-
+Killing a query:
 
 ```
 SELECT * FROM pg_stat_activity WHERE state = 'active';
@@ -1261,7 +1266,6 @@ This query might take a while to kill the query, so if you want to kill it the h
 
 SELECT pg_terminate_backend(PID);
 ```
-
 
 
 
@@ -1509,6 +1513,8 @@ https://pgtune.leopard.in.ua/
  https://philbooth.me/blog/nine-ways-to-shoot-yourself-in-the-foot-with-postgresql
  
  https://news.ycombinator.com/item?id=35684220
+
+ https://github.com/nexsol-technologies/pgassistant
  
 ### PgAdmin
  right click on database:
@@ -1704,7 +1710,7 @@ https://spin.atomicobject.com/2021/02/04/redis-postgresql/
 
 https://news.ycombinator.com/item?id=27482243
 
-### Posthres Aggregator
+### Postgres Aggregator
 https://planet.postgresql.org/
 
 ### PG and Python
@@ -1780,7 +1786,11 @@ https://pgdash.io/blog/postgres-tips-and-tricks.html?p
 
 <https://news.ycombinator.com/item?id=22775330>   What is wrong with Postgres?
 
+## Postgres performance
+
 <https://www.youtube.com/watch?v=xqTNceHxkIo> Postgres performance
+
+https://github.com/nexsol-technologies/pgassistant  pgAssistance
 
 <https://habr.com/ru/company/tensor/blog/498740/> SQL
 
@@ -3105,9 +3115,16 @@ https://pgdash.io/blog/postgres-features.html
 
 http://www.databasesoup.com/2018/04/new-annotated-config-files-for.html    configs
 
+## Performance tuning
+https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb#performance-tuning
+
+https://luis-sena.medium.com/tuning-your-postgresql-for-high-performance-5580abed193d
+
 https://severalnines.com/blog/postgresql-tuning-key-things-drive-performance
 
-https://blog.2ndquadrant.com/scaling-iot-time-series-data-postgres-bdr/ **time based partitioning**
+
+
+
 
 https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546
 
@@ -3132,6 +3149,10 @@ https://severalnines.com/blog/my-favorite-postgresql-queries-and-why-they-matter
 https://pgdash.io/blog/postgres-features.html
 
 https://news.ycombinator.com/item?id=17356960
+
+### Time series
+
+https://blog.2ndquadrant.com/scaling-iot-time-series-data-postgres-bdr/ **time based partitioning**
 
 https://www.citusdata.com/blog/2018/01/24/citus-and-pg-partman-creating-a-scalable-time-series-database-on-PostgreSQL/
 
