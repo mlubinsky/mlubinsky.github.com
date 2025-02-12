@@ -10,6 +10,70 @@
 
 <https://natanyellin.com/posts/tracking-running-processes-on-linux/>
 
+
+### No space left on device
+```
+ Check Disk Space Usage
+
+df -h:
+
+This command shows disk space usage in a human-readable format.
+Look for the partition that's at 100% (or very close). This is the one you need to focus on.
+2. Identify Space Hogs
+
+du -sh *:
+
+In the directory you suspect is full (often / or /home), this command shows the size of each file and directory.
+The -s option summarizes the size of each directory, and -h makes the output human-readable.
+
+du -a / | sort -rh | head -n 20
+: This command will show the 20 largest files and directories on your entire system.
+
+3. Common Culprits and How to Clean Them
+
+Temporary Files:
+
+sudo rm -rf /tmp/*
+: Clears temporary files (use with caution, as some applications might be using them).   
+sudo rm -rf ~/.cache/*
+: Clears application caches in your home directory.
+
+Log Files:
+
+sudo truncate -s 0 /var/log/*
+: Empties log files (useful for troubleshooting, but be aware you'll lose recent logs).
+
+Package Cache:
+
+sudo apt-get clean: Removes downloaded package files that are no longer needed.   
+sudo apt-get autoclean: Removes old downloaded package files.   
+Old Kernels:
+
+dpkg -l | grep linux-image
+: Lists installed kernels.
+sudo apt-get remove linux-image-old-kernel-version
+: Removes old kernels (make sure you're not removing the one you're currently using!).
+
+Unused Applications:
+
+sudo apt-get remove package-name: Removes unused applications.
+Browser Cache:
+
+Clear your browser's cache and download history.
+Large Files:
+
+Use the du command to find large files you no longer need and delete them.
+Important Notes:
+
+Be Careful: When deleting files, especially with sudo, double-check what you're removing.
+System Files: Avoid deleting system files unless you know what you're doing.
+find Command: The find command can be very powerful for locating specific types of files.
+For example,
+
+find . -name "*.log" will find all files ending in ".log"  
+
+```
+
 ## GCC
 ```
 
