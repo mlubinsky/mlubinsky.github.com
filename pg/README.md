@@ -1,3 +1,5 @@
+Book https://edu.postgrespro.com/postgresql_internals-14_en.pdf    Egor Rogov
+
 ### What I wish someone told me about Postgres
 
 https://www.shayon.dev/post/2025/40/scaling-with-postgresql-without-boiling-the-ocean/
