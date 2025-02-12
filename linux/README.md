@@ -1,3 +1,6 @@
+sudo ln -s /usr/bin/python3 /usr/bin/python
+
+
 <https://zaiste.net/posts/shell-commands-rust/> many command line tools in Rust (procs!, fd)
 
 <http://cb.vu/unixtoolbox.xhtml>
