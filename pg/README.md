@@ -536,6 +536,8 @@ https://blog.sequinstream.com/build-your-own-sqs-or-kafka-with-postgres/
 
 ### Foreign data wrappers FDW
 
+https://packagemain.tech/p/mastering-cross-database-operations-with-postgres-fdw
+
 https://habr.com/ru/companies/otus/articles/817063/ Интеграция PostgreSQL и Hadoop
 
 ```
