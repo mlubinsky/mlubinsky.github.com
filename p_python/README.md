@@ -4,6 +4,8 @@ https://realpython.com/python-dicts/
 
 https://docs.python.org/3/howto/logging.html  Logging
 
+https://timefold.ai/blog/java-vs-python-speed
+
 https://mesa.readthedocs.io/stable/ Discrete simulation
 
 https://github.com/true-grue/python-dsls DSLs
