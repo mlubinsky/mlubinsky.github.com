@@ -1,5 +1,7 @@
 https://thekalmanfilter.com/kalman-filter-explained-simply/
 
+https://news.ycombinator.com/item?id=43029314
+
 https://www.kalmanfilter.net/default.aspx
 
 https://news.ycombinator.com/item?id=42751690
