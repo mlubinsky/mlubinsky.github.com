@@ -327,3 +327,4 @@ df_filtered = df[(df["col"] < q_hi) & (df["col"] > q_low)]
 
 <https://lambda.grofers.com/anomaly-detection-using-isolation-forest-80b3a3d1a9d8>
 
+https://habr.com/ru/companies/otus/articles/881086/
