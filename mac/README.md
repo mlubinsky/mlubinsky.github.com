@@ -67,6 +67,8 @@ sample PROCESS SECS spends SECS seconds watching the process (name or pid) PROCE
 
 ### Setup
 
+https://navendu.me/posts/development-environment/
+
 https://blog.scriptmint.com/my-macbook-setup-for-development-2024-caefe65d8bfb
 
 https://blog.scriptmint.com/the-5-macos-apps-that-improved-my-productivity-f5b687269222
