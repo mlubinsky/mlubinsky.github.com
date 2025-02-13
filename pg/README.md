@@ -30,6 +30,13 @@ https://habr.com/ru/articles/794839/
 
 https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb
 
+https://mccue.dev/pages/8-16-24-just-use-postgres
+
+https://spin.atomicobject.com/redis-postgresql/
+
+https://event-driven.io/en/postgres_superpowers/
+
+
 MERGE: https://habr.com/ru/companies/otus/articles/792396/
 
 locking https://leontrolski.github.io/pglockpy.html
@@ -103,11 +110,7 @@ https://habr.com/ru/companies/karuna/articles/809305/
 
 ### Just use Postgres
 
-https://mccue.dev/pages/8-16-24-just-use-postgres
 
-https://spin.atomicobject.com/redis-postgresql/
-
-https://event-driven.io/en/postgres_superpowers/
 
 https://habr.com/ru/articles/843324/
 
@@ -489,7 +492,7 @@ https://news.ycombinator.com/item?id=40077233
 Ten years of improvements in PostgreSQL's optimizer (rmarcus.info)
 https://news.ycombinator.com/item?id=40060123
 
-
+https://habr.com/ru/companies/otus/articles/881556/ мониторинг логов PostgreSQL
 
 ### Postgres extensions:
 
