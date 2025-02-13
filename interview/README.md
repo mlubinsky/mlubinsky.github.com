@@ -10,6 +10,9 @@ https://www.youtube.com/watch?v=1lfktgZ9Eeo Top K Problem Again
 
 https://www.youtube.com/watch?v=nQpkRONzEQI Top K Problem Again Again
 
+Design a system that can show the top 10 most popular songs over the last 10 seconds on the homepage of a music streaming service:
+https://zknill.io/posts/streaming-data-aggregation/
+
 https://llego.dev/tags/technical-coding-interview/
 
 https://www.linkedin.com/my-items/saved-posts/
