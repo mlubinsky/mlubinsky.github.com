@@ -366,6 +366,45 @@ W0000 00:00:1739564414.203059  957701 computation_placer.cc:177] computation pla
 To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
 /usr/local/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:354: UserWarning: Device capability of jax unspecified, assuming `cpu` and `cuda`. Please specify it via the `devices` argument of `register_backend`.
   warnings.warn(
+{'us': tensor([[ 1.7578e-01, -7.7148e-02, -6.8359e-02,  1.1914e-01,  7.8535e+00,
+          2.9727e+00],
+        [-1.1133e-01,  6.0059e-02, -5.0293e-02, -5.2734e-01,  7.9297e+00,
+          4.9551e+00],
+        [-8.7891e-03,  0.0000e+00, -3.0762e-02, -6.5039e-01,  9.0547e+00,
+          6.0195e+00],
+        ...,
+        [ 8.7891e-03,  4.8828e-03,  1.6113e-02, -1.0547e-01,  7.5898e+00,
+          6.4844e+00],
+        [-2.1973e-02, -1.4648e-03,  1.4648e-03, -2.2070e-01,  7.7773e+00,
+          6.0957e+00],
+        [-3.0762e-02, -2.4414e-03, -1.4648e-03,  3.9062e-02,  7.3652e+00,
+          6.8672e+00]], dtype=torch.float64)}
+Traceback (most recent call last):
+  File "/root/MICHAEL/SPOTBOT/convert.py", line 94, in <module>
+    result = run_sequence(
+             ^^^^^^^^^^^^^
+  File "/root/MICHAEL/SPOTBOT/convert.py", line 58, in run_sequence
+    edge_model = ai_edge_torch.convert(network.eval(),us)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/converter.py", line 261, in convert
+    return Converter().convert(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/converter.py", line 172, in convert
+    return conversion.convert_signatures(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/conversion.py", line 134, in convert_signatures
+    exported_programs: torch.export.ExportedProgram = [
+                                                      ^
+  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/conversion.py", line 137, in <listcomp>
+    args=sig.args,
+         ^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/signature.py", line 70, in args
+    args, _ = self._normalized_sample_args_kwargs
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/signature.py", line 38, in _normalized_sample_args_kwargs
+    raise ValueError("sample_args must be a tuple of torch tensors.")
+ValueError: sample_args must be a tuple of torch tensors.
+
 ```
 
 
