@@ -405,6 +405,27 @@ Traceback (most recent call last):
     raise ValueError("sample_args must be a tuple of torch tensors.")
 ValueError: sample_args must be a tuple of torch tensors.
 
+
+
+    sample_inputs = (torch.randn(1, 3, 224, 224),)
+    edge_model = ai_edge_torch.convert(network.eval(),sample_inputs)
+    edge_model.export('michael.tflite')
+    return None
+
+torch._dynamo.exc.TorchRuntimeError: Failed running call_function <built-in function sub>
+(*(FakeTensor(..., size=(1, 3, 224, 224)), Parameter(FakeTensor(..., size=(6,)))), **{}):
+Attempting to broadcast a dimension of length 6 at -1! 
+Mismatching argument at index 1 had torch.Size([6]); 
+but expected shape should be broadcastable to [1, 3, 224, 224]
+
+from user code:
+   File "/root/MICHAEL/SPOTBOT/src/networks.py", line 98, in forward
+    ys_temp = super().forward(us.float())
+  File "/root/MICHAEL/SPOTBOT/src/networks.py", line 70, in forward
+    u = self.norm(us).transpose(1, 2)
+  File "/root/MICHAEL/SPOTBOT/src/networks.py", line 77, in norm
+    return (us - self.mean_u) / self.std_u
+
 ```
 
 
