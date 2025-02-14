@@ -1,7 +1,7 @@
 Free online book: Python for data analysis:
 https://wesmckinney.com/book/
 
-
+https://habr.com/ru/articles/882588/ EDA 
 
 https://habr.com/ru/companies/ru_mts/articles/738208/  Plotting 
 
