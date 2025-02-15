@@ -7,6 +7,8 @@ https://sites.google.com/view/qft2023/
 
 https://homepages.itp.ac.ru/~lashkevi/
 
+https://parfenyev.itp.ac.ru/teaching/
+
 Введение в квантовую теорию поля Московский Физико-Технический Институт, 
 Весна 2017 https://poboiko.bitbucket.io/qft/fall17/
 
