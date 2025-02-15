@@ -10,7 +10,20 @@ https://pytorchstepbystep.com/
 
 https://habr.com/ru/articles/870426/ Пишем свой PyTorch на NumPy. Часть 3. Строим граф вычислений
 
+### Tensor
 
+```
+tensor = torch.rand(3,4)
+
+print(f"Shape of tensor: {tensor.shape}")
+print(f"Datatype of tensor: {tensor.dtype}")
+print(f"Device tensor is stored on: {tensor.device}")
+
+print(f"First row: {tensor[0]}")
+print(f"First column: {tensor[:, 0]}")
+print(f"Last column: {tensor[..., -1]}")
+
+```
 ### Install PyTorch
 ```
 check if pip and venv installed:
