@@ -1,3 +1,4 @@
+https://arxiv.org/abs/1602.04182 Feinman Diagrams
 
 Квантовая теория поля 2022-2023
 https://sites.google.com/view/qft2023/
