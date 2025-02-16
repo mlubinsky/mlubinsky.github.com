@@ -2,6 +2,8 @@
 
 https://www.theoretical-physics.com/dev/index.html
 
+https://chembaby.ru/uchebnye-materialy/fiz
+
 https://github.com/certik/theoretical-physics
 
 https://arxiv.org/abs/2502.02654 Theory of resonances
