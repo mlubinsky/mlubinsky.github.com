@@ -1,4 +1,6 @@
 set nu
+set list
+set listchars=tab:!·,trail:·
 set ts=4
 set visualbell
 set t_vb=
