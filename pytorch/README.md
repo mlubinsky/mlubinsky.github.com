@@ -269,6 +269,75 @@ print(model)  # Now you have a full model object!
 ```
 ### How to Make full model using ONNX
 ```
+
+1. Export PyTorch Model to ONNX
+First, you'll need to export your PyTorch model to the ONNX format.
+
+ 
+import torch
+import onnx
+
+# Assuming your model is defined as 'model'
+model.eval()
+
+# Create a sample input tensor matching your model's input shape
+sample_input = torch.randn(1, 4200, 6, dtype=torch.float32)  # Modify shape and dtype as needed
+
+# Export the model to an ONNX file
+onnx_file_path = "model.onnx"
+torch.onnx.export(model, sample_input, onnx_file_path, 
+                  input_names=["input"], output_names=["output"],
+                  dynamic_axes={"input": {0: "batch_size"}, "output": {0: "batch_size"}})
+sample_input: A tensor with the appropriate shape and data type.
+onnx_file_path: The path where the ONNX model will be saved.
+2. Convert ONNX Model to TensorFlow Format
+Now, you can use the ONNX-TF converter to convert the ONNX model to TensorFlow.
+
+First, install the necessary tool:
+
+ 
+pip install onnx-tf
+Then, convert the ONNX model to TensorFlow format:
+
+ 
+import onnx
+from onnx_tf.backend import prepare
+
+# Load the ONNX model
+onnx_model = onnx.load("model.onnx")
+
+# Convert it to a TensorFlow model
+tf_rep = prepare(onnx_model)
+
+# Export the TensorFlow model
+tf_rep.export_graph("model_tf")
+3. Convert TensorFlow Model to TFLite
+Finally, convert the TensorFlow model to the TensorFlow Lite (TFLite) format using TensorFlow's TFLite Converter:
+
+ 
+import tensorflow as tf
+
+# Load the TensorFlow model (saved previously)
+saved_model_dir = "model_tf"  # The directory where your TensorFlow model is saved
+converter = tf.lite.TFLiteConverter.from_saved_model(saved_model_dir)
+
+# Convert to TFLite format
+tflite_model = converter.convert()
+
+# Save the TFLite model to a file
+with open("model.tflite", "wb") as f:
+    f.write(tflite_model)
+Summary of Steps:
+PyTorch → ONNX: Use torch.onnx.export() to export the PyTorch model to ONNX.
+ONNX → TensorFlow: Use ONNX-TF to convert the ONNX model to a TensorFlow model.
+TensorFlow → TFLite: Use TensorFlow's TFLiteConverter to convert the TensorFlow model to TFLite.
+This method can help if you're facing issues directly exporting from PyTorch to TFLite,
+and provides a clear path for converting models between frameworks.
+
+Let me know if you'd like further clarification or run into any issues! 🚀
+
+
+
 Yes, you cannot directly convert your model.pt (which is just a state_dict) to .tflite (LiteRT format)
  because TFLite requires the full model architecture and weights, not just the weights.
 However, you can still convert it to .tflite by following these steps:
