@@ -32,6 +32,43 @@ It ensures compatibility and avoids potential issues arising from different Kera
 
 pip install tensorflow-probability==0.18.0
 
+Failed to import TF-Keras. Please note that TF-Keras is not installed by default when you install TensorFlow Probability. This is so that JAX-only users do not have to install TensorFlow or TF-Keras. To use TensorFlow Probability with TensorFlow, please install the tf-keras or tf-keras-nightly package.
+This can be be done through installing the tensorflow-probability[tf] extra.
+
+
+Traceback (most recent call last):
+  File "/root/MICHAEL/SPOTBOT/convert.py", line 15, in <module>
+    from onnx_tf.backend import prepare
+  File "/usr/local/lib/python3.11/site-packages/onnx_tf/__init__.py", line 1, in <module>
+    from . import backend
+  File "/usr/local/lib/python3.11/site-packages/onnx_tf/backend.py", line 28, in <module>
+    from onnx_tf.common.handler_helper import get_all_backend_handlers
+  File "/usr/local/lib/python3.11/site-packages/onnx_tf/common/handler_helper.py", line 3, in <module>
+    from onnx_tf.handlers.backend import *  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/onnx_tf/handlers/backend/bernoulli.py", line 2, in <module>
+    from tensorflow_probability import distributions as tfd
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/__init__.py", line 22, in <module>
+    from tensorflow_probability.python import *  # pylint: disable=wildcard-import
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/__init__.py", line 152, in <module>
+    dir(globals()[pkg_name])  # Forces loading the package from its lazy loader.
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/internal/lazy_loader.py", line 60, in __dir__
+    module = self._load()
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/internal/lazy_loader.py", line 40, in _load
+    self._on_first_access()
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/__init__.py", line 79, in _validate_tf_environment
+    import tf_keras  # pylint: disable=unused-import
+    ^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
 Traceback (most recent call last):
   File "/root/MICHAEL/SPOTBOT/convert.py", line 15, in <module>
     from onnx_tf.backend import prepare
