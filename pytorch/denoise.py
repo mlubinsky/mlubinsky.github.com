@@ -46,9 +46,78 @@ def run_sequence(
         return None
 
     print(mondict)
+"""
+{'us': tensor([[ 1.7578e-01, -7.7148e-02, -6.8359e-02,  1.1914e-01,  7.8535e+00,
+          2.9727e+00],
+        [-1.1133e-01,  6.0059e-02, -5.0293e-02, -5.2734e-01,  7.9297e+00,
+          4.9551e+00],
+        [-8.7891e-03,  0.0000e+00, -3.0762e-02, -6.5039e-01,  9.0547e+00,
+          6.0195e+00],
+        ...,
+        [ 8.7891e-03,  4.8828e-03,  1.6113e-02, -1.0547e-01,  7.5898e+00,
+          6.4844e+00],
+        [-2.1973e-02, -1.4648e-03,  1.4648e-03, -2.2070e-01,  7.7773e+00,
+          6.0957e+00],
+        [-3.0762e-02, -2.4414e-03, -1.4648e-03,  3.9062e-02,  7.3652e+00,
+          6.8672e+00]], dtype=torch.float64)}
+"""          
     us = mondict['us']    #raw MEMS readings [gyro, accl]
-    us = us.clone().unsqueeze(0)  #raw MEMS readings, for instance torch.Size([1, 4200, 6])
+    us = us.clone().unsqueeze(0)  #raw MEMS readings, for instance torch.Size([1, 4200, 6]) 
+    print('type of us:', type(us))          
+    # type of us: <class 'torch.Tensor'>
 
+    print(us)
+"""    
+tensor([[[ 1.7578e-01, -7.7148e-02, -6.8359e-02,  1.1914e-01,  7.8535e+00,
+           2.9727e+00],
+         [-1.1133e-01,  6.0059e-02, -5.0293e-02, -5.2734e-01,  7.9297e+00,
+           4.9551e+00],
+         [-8.7891e-03,  0.0000e+00, -3.0762e-02, -6.5039e-01,  9.0547e+00,
+           6.0195e+00],
+         ...,
+         [ 8.7891e-03,  4.8828e-03,  1.6113e-02, -1.0547e-01,  7.5898e+00,
+           6.4844e+00],
+         [-2.1973e-02, -1.4648e-03,  1.4648e-03, -2.2070e-01,  7.7773e+00,
+           6.0957e+00],
+         [-3.0762e-02, -2.4414e-03, -1.4648e-03,  3.9062e-02,  7.3652e+00,
+           6.8672e+00]]], dtype=torch.float64)
+"""
+
+print(network.eval())
+"""
+GyroNet_v1(
+  (cnn): Sequential(
+    (0): ReplicationPad1d((78, 0))
+    (1): Conv1d(6, 16, kernel_size=(7,), stride=(1,))
+    (2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): GELU(approximate='none')
+    (4): Dropout(p=0.2, inplace=False)
+    (5): Conv1d(16, 32, kernel_size=(7,), stride=(1,), dilation=(4,))
+    (6): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (7): GELU(approximate='none')
+    (8): Dropout(p=0.2, inplace=False)
+    (9): Conv1d(32, 64, kernel_size=(7,), stride=(1,), dilation=(4,))
+    (10): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (11): GELU(approximate='none')
+    (12): Dropout(p=0.2, inplace=False)
+    (13): Conv1d(64, 128, kernel_size=(7,), stride=(1,), dilation=(4,))
+    (14): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (15): GELU(approximate='none')
+    (16): Dropout(p=0.2, inplace=False)
+  )
+  (rnn): LSTM(128, 14, num_layers=2, batch_first=True, dropout=0.2)
+  (lin): Sequential(
+    (0): Linear(in_features=14, out_features=14, bias=True)
+    (1): Tanh()
+  )
+  (initprocesscov_net): InitProcessCovNet(
+    (factor_initial_covariance): Linear(in_features=1, out_features=6, bias=False)
+    (factor_process_covariance): Linear(in_features=1, out_features=6, bias=False)
+    (tanh): Tanh()
+  )
+)
+"""
+        
     with torch.no_grad():
         net_outputs = network(us)
         if len(net_outputs) == 1:
