@@ -45,29 +45,16 @@ def run_sequence(
         print("Error unsupported input filetype {}".format(input_suffix))
         return None
 
-    print(mondict)
-"""
-{'us': tensor([[ 1.7578e-01, -7.7148e-02, -6.8359e-02,  1.1914e-01,  7.8535e+00,
-          2.9727e+00],
-        [-1.1133e-01,  6.0059e-02, -5.0293e-02, -5.2734e-01,  7.9297e+00,
-          4.9551e+00],
-        [-8.7891e-03,  0.0000e+00, -3.0762e-02, -6.5039e-01,  9.0547e+00,
-          6.0195e+00],
-        ...,
-        [ 8.7891e-03,  4.8828e-03,  1.6113e-02, -1.0547e-01,  7.5898e+00,
-          6.4844e+00],
-        [-2.1973e-02, -1.4648e-03,  1.4648e-03, -2.2070e-01,  7.7773e+00,
-          6.0957e+00],
-        [-3.0762e-02, -2.4414e-03, -1.4648e-03,  3.9062e-02,  7.3652e+00,
-          6.8672e+00]], dtype=torch.float64)}
-"""          
+         
     us = mondict['us']    #raw MEMS readings [gyro, accl]
     us = us.clone().unsqueeze(0)  #raw MEMS readings, for instance torch.Size([1, 4200, 6]) 
-    print('type of us:', type(us))          
-    # type of us: <class 'torch.Tensor'>
+    print('type of us:', type(us), "shape=", us.shape, "dtype=", us.dtype )        
+    # type of us: <class 'torch.Tensor'> shape= torch.Size([1, 4200, 6]) dtype= torch.float64
 
     print(us)
 """    
+
+
 tensor([[[ 1.7578e-01, -7.7148e-02, -6.8359e-02,  1.1914e-01,  7.8535e+00,
            2.9727e+00],
          [-1.1133e-01,  6.0059e-02, -5.0293e-02, -5.2734e-01,  7.9297e+00,
