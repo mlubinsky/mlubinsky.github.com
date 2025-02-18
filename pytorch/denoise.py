@@ -117,33 +117,7 @@ GyroNet_v1(
 
 
     edge_model.export('michael.tflite')
-"""
-Traceback (most recent call last):
-  File "/root/MICHAEL/SPOTBOT/convert.py", line 105, in <module>
-    result = run_sequence(
-             ^^^^^^^^^^^^^
-  File "/root/MICHAEL/SPOTBOT/convert.py", line 69, in run_sequence
-    edge_model = ai_edge_torch.convert(network.eval(),sample_inputs)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/converter.py", line 261, in convert
-    return Converter().convert(
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/converter.py", line 172, in convert
-    return conversion.convert_signatures(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/conversion.py", line 134, in convert_signatures
-    exported_programs: torch.export.ExportedProgram = [
-                                                      ^
-  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/conversion.py", line 137, in <listcomp>
-    args=sig.args,
-         ^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/signature.py", line 70, in args
-    args, _ = self._normalized_sample_args_kwargs
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/signature.py", line 38, in _normalized_sample_args_kwargs
-    raise ValueError("sample_args must be a tuple of torch tensors.")
-ValueError: sample_args must be a tuple of torch tensors.
-"""
+    exit(0) ### EXIT
         
     with torch.no_grad():
         net_outputs = network(us)
