@@ -260,6 +260,12 @@ model.eval()
 
 print(model)  # Now you have a full model object!
 
+#  MyModel(
+#  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1))
+#  (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+#  (fc1): Linear(in_features=1600, out_features=1200, bias=True)
+#  (fc2): Linear(in_features=1200, out_features=10, bias=True)
+# )
 ```
 ### How to Make full model using ONNX
 ```
@@ -363,19 +369,46 @@ https://github.com/google-ai-edge/ai-edge-torch/
 https://pypi.org/project/ai-edge-torch/
 
 https://medium.com/axinc-ai/convert-models-from-pytorch-to-tflite-with-ai-edge-torch-0e85623f8d56
-
+```
 Why is sample_inputs needed?
 Tracing Model Execution (Graph Tracing)
-PyTorch models define computations dynamically using Python operations. However, when exporting to a static format like TensorFlow Lite (TFLite), the model's computation graph needs to be traced and serialized. sample_inputs provides a concrete example of input data to help trace the execution path.
+PyTorch models define computations dynamically using Python operations. 
+However, when exporting to a static format like TensorFlow Lite (TFLite), 
+the model's computation graph needs to be traced and serialized. s
+ample_inputs provides a concrete example of input data to help trace the execution path.
 
 Determining Input/Output Shapes
-Unlike TensorFlow, where model input/output shapes are explicitly defined, PyTorch allows dynamic shapes. By passing sample_inputs, the exporter knows:
+Unlike TensorFlow, where model input/output shapes are explicitly defined, PyTorch allows dynamic shapes. 
+By passing sample_inputs, the exporter knows:
 
-What the expected input dimensions are.
-What the expected output shape is.
+- What the expected input dimensions are.
+- What the expected output shape is.
+
 Resolving Dynamic Behaviors (Control Flow, Shape Transformations, etc.)
-If your model contains conditional branches or loops, they may behave differently depending on input data. Providing sample_inputs ensures the exporter captures the correct computational graph.
-```
+If your model contains conditional branches or loops, they may behave differently depending on input data. 
+Providing sample_inputs ensures the exporter captures the correct computational graph.
+
+Can’t the Model Serialize Itself Without This?
+----------------------------------------------
+No, because PyTorch does not store a static graph inside the model definition.
+The model only describes operations but does not automatically record an execution graph.
+Without sample_inputs, the exporter would not know:
+
+- What input tensor shape the model expects.
+- How tensors flow through the network.
+
+
+Alternative Without sample_inputs?
+If your model has fixed input shapes, you can try torch.jit.script(model),
+but for TFLite conversion, sample_inputs is still required.
+
+
+# Example input: 1 sample, 1 channel, 28x28 image
+sample_inputs = torch.randn(1, 1, 28, 28)  # (batch_size, channels, height, width)
+
+edge_model = ai_edge_torch.convert(model, sample_inputs)
+edge_model.export('michael.tflite')
+ 
 >>> import ai_edge_torch
 2025-02-14 12:20:14.122097: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
