@@ -261,7 +261,7 @@ model.eval()
 print(model)  # Now you have a full model object!
 
 ```
-### How to Make full model
+### How to Make full model using ONNX
 ```
 Yes, you cannot directly convert your model.pt (which is just a state_dict) to .tflite (LiteRT format)
  because TFLite requires the full model architecture and weights, not just the weights.
@@ -364,7 +364,17 @@ https://pypi.org/project/ai-edge-torch/
 
 https://medium.com/axinc-ai/convert-models-from-pytorch-to-tflite-with-ai-edge-torch-0e85623f8d56
 
+Why is sample_inputs needed?
+Tracing Model Execution (Graph Tracing)
+PyTorch models define computations dynamically using Python operations. However, when exporting to a static format like TensorFlow Lite (TFLite), the model's computation graph needs to be traced and serialized. sample_inputs provides a concrete example of input data to help trace the execution path.
 
+Determining Input/Output Shapes
+Unlike TensorFlow, where model input/output shapes are explicitly defined, PyTorch allows dynamic shapes. By passing sample_inputs, the exporter knows:
+
+What the expected input dimensions are.
+What the expected output shape is.
+Resolving Dynamic Behaviors (Control Flow, Shape Transformations, etc.)
+If your model contains conditional branches or loops, they may behave differently depending on input data. Providing sample_inputs ensures the exporter captures the correct computational graph.
 ```
 >>> import ai_edge_torch
 2025-02-14 12:20:14.122097: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
