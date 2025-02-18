@@ -104,9 +104,18 @@ GyroNet_v1(
   )
 )
 """
+   sample_inputs = torch.randn(1, 4200, 6, dtype=torch.float64)
+   sample_inputs = (sample_inputs,)
 
    print("before convert")
-    edge_model = ai_edge_torch.convert(network.eval(),sample_inputs)
+   edge_model = ai_edge_torch.convert(network.eval(),sample_inputs)
+
+/usr/local/lib/python3.11/site-packages/torch/export/_unlift.py:75: UserWarning: Attempted to insert a get_attr Node with no underlying reference in the owni                              ng GraphModule! Call GraphModule.add_submodule to add the necessary submodule, GraphModule.add_parameter to add the necessary Parameter, or nn.Module.registe                              r_buffer to add the necessary buffer
+  getattr_node = gm.graph.get_attr(lifted_node)
+/usr/local/lib/python3.11/site-packages/torch/fx/graph.py:1801: UserWarning: Node lifted_tensor_0 target lifted_tensor_0 lifted_tensor_0 of  does not referen                              ce an nn.Module, nn.Parameter, or buffer, which is what 'get_attr' Nodes typically target
+  warnings.warn(
+
+
     edge_model.export('michael.tflite')
 """
 Traceback (most recent call last):
