@@ -18,6 +18,10 @@ https://news.ycombinator.com/item?id=32780472
 <https://news.ycombinator.com/item?id=18821475>
 
 
+
+https://habr.com/ru/articles/page2/ синтаксический анализатор Уорли (Earley Parsing)
+
+
 Recursive descent parsing library for Python based on functional combinators
 https://github.com/vlasovskikh/funcparserlib
 
