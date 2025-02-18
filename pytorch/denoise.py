@@ -109,12 +109,42 @@ GyroNet_v1(
 
    print("before convert")
    edge_model = ai_edge_torch.convert(network.eval(),sample_inputs)
-
+"""
 /usr/local/lib/python3.11/site-packages/torch/export/_unlift.py:75: UserWarning: Attempted to insert a get_attr Node with no underlying reference in the owni                              ng GraphModule! Call GraphModule.add_submodule to add the necessary submodule, GraphModule.add_parameter to add the necessary Parameter, or nn.Module.registe                              r_buffer to add the necessary buffer
   getattr_node = gm.graph.get_attr(lifted_node)
 /usr/local/lib/python3.11/site-packages/torch/fx/graph.py:1801: UserWarning: Node lifted_tensor_0 target lifted_tensor_0 lifted_tensor_0 of  does not referen                              ce an nn.Module, nn.Parameter, or buffer, which is what 'get_attr' Nodes typically target
   warnings.warn(
 
+The error message suggests that Torch Export (FX-based tracing) is having trouble handling a tensor reference inside your model. This often happens when:
+
+A tensor inside your model is not properly registered as a buffer (register_buffer) or parameter (nn.Parameter).
+Your model contains in-place operations or non-traceable Python logic that torch.export cannot capture correctly.
+Possible Fixes
+1️⃣ Check if Any Constants Should Be Registered as Buffers
+If your model has tensors created as attributes (e.g., self.some_tensor = torch.tensor([...])), you need to register them as a buffer:
+
+class MyModel(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.some_tensor = torch.tensor([1.0, 2.0, 3.0])  # ⚠️ This causes issues
+        self.register_buffer("some_tensor", self.some_tensor)  # ✅ Fix by registering it as a buffer
+👉 Fix: Look inside your model and replace such tensor assignments with self.register_buffer(name, tensor).
+
+2️⃣ Convert Any Constants to nn.Parameter (if Trainable)
+If the tensor should be trainable, use nn.Parameter:
+
+self.some_tensor = nn.Parameter(torch.tensor([1.0, 2.0, 3.0]))
+3️⃣ Ensure sample_inputs Has the Correct Type
+Before conversion, make sure sample_inputs is in a tuple and has requires_grad=False:
+
+sample_inputs = (torch.randn(1, 4200, 6, dtype=torch.float64, requires_grad=False),)
+4️⃣ Convert Model to float32 (Some Exporters Don't Support float64)
+If your model was trained in float64 (double precision), try converting it to float32 before exporting:
+
+model = model.to(torch.float32)
+sample_inputs = (sample_inputs[0].to(torch.float32),)  # Ensure inputs match
+edge_model = ai_edge_torch.convert(model.eval(), sample_inputs)
+"""
 
     edge_model.export('michael.tflite')
     exit(0) ### EXIT
