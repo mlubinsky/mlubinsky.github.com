@@ -1,3 +1,35 @@
+Is tensorflow-probability uses tf_keras or tensorflow.keras?
+
+
+This is a great question that gets at the heart of how TensorFlow Probability integrates with Keras!
+
+TensorFlow Probability (TFP) primarily uses tf_keras under the hood.   
+
+Here's a breakdown of why and what it means:
+
+tf_keras: This is the Keras implementation that's tightly integrated with TensorFlow. It's the version of Keras that you get when you install TensorFlow.   
+tensorflow.keras: This is also a valid way to import Keras, and it often points to the same underlying implementation as tf_keras. 
+However, tf_keras is generally preferred within the TensorFlow ecosystem, especially when working with TFP.
+
+Why tf_keras is important for TFP:
+
+Compatibility: TFP is built on top of TensorFlow, and tf_keras is the most natural way to use Keras within that context. 
+It ensures that TFP components work seamlessly with Keras layers and models.
+Internal Dependencies: As you saw in the error message you encountered, TFP has internal dependencies on tf_keras. 
+It relies on specific functionalities and structures within tf_keras to implement its probabilistic layers and other features.
+What this means for you:
+
+Import Keras correctly: When working with TFP, it's best to import Keras using import tf_keras as keras or from tf_keras import layers, etc.
+  This makes it clear that you're using the TensorFlow-integrated Keras.
+Version Compatibility: Ensure that your tf_keras version is compatible with both your TensorFlow and TensorFlow Probability versions. 
+  This is crucial to avoid the kind of "Arg specs do not match" errors you encountered.
+In summary:
+
+While tensorflow.keras might work in some cases, 
+sticking with tf_keras is the recommended and more reliable approach when using TensorFlow Probability. 
+It ensures compatibility and avoids potential issues arising from different Keras implementations.
+
+
 pip install tensorflow-probability==0.18.0
 
 Traceback (most recent call last):
