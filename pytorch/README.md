@@ -413,17 +413,38 @@ edge_model = ai_edge_torch.convert(model, sample_inputs)
 edge_model.export('michael.tflite')
  
 >>> import ai_edge_torch
-2025-02-14 12:20:14.122097: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-02-14 12:20:14.122097: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467]
+Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-E0000 00:00:1739564414.161702  957701 cuda_dnn.cc:8670] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-E0000 00:00:1739564414.173589  957701 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-W0000 00:00:1739564414.202979  957701 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1739564414.203049  957701 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1739564414.203054  957701 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1739564414.203059  957701 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-2025-02-14 12:20:14.211404: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+E0000 00:00:1739564414.161702  957701 cuda_dnn.cc:8670] Unable to register cuDNN factory:
+Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1739564414.173589  957701 cuda_blas.cc:1407] Unable to register cuBLAS factory:
+ Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1739564414.202979  957701 computation_placer.cc:177] computation placer already registered.
+Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1739564414.203049  957701 computation_placer.cc:177] computation placer already registered.
+Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1739564414.203054  957701 computation_placer.cc:177] computation placer already registered.
+Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1739564414.203059  957701 computation_placer.cc:177] computation placer already registered.
+Please check linkage and avoid linking the same target more than once.
+2025-02-14 12:20:14.211404: I tensorflow/core/platform/cpu_feature_guard.cc:210]
+This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-/usr/local/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:354: UserWarning: Device capability of jax unspecified, assuming `cpu` and `cuda`. Please specify it via the `devices` argument of `register_backend`.
+/usr/local/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:354: UserWarning:
+Device capability of jax unspecified, assuming `cpu` and `cuda`. Please specify it via the `devices` argument of `register_backend`.
+
+pip list | grep -E "torch|tensorflow|jax"
+ai-edge-torch                0.3.0
+jax                          0.5.0
+jaxlib                       0.5.0
+tensorflow-io-gcs-filesystem 0.37.1
+torch                        2.6.0
+torch_xla2                   0.0.1.dev202412041639
+
+
+
+
   warnings.warn(
 {'us': tensor([[ 1.7578e-01, -7.7148e-02, -6.8359e-02,  1.1914e-01,  7.8535e+00,
           2.9727e+00],
