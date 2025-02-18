@@ -1742,6 +1742,10 @@ https://wiki.postgresql.org/wiki/Don't_Do_This   Do not do it in PG
 
 ## Graph and tree extensions for postgres
 
+https://www.richard-towers.com/2025/02/16/representing-graphs-in-postgres.html
+
+https://news.ycombinator.com/item?id=43078100
+
 https://www.sheshbabu.com/posts/graph-retrieval-using-postgres-recursive-ctes/
 
 https://www.crunchydata.com/blog/six-degrees-of-kevin-bacon-postgres-style
