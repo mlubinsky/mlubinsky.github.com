@@ -1,3 +1,20 @@
+pip install tensorflow-probability
+pip install tf-keras
+Installing collected packages: numpy, tensorboard, ml-dtypes, keras, tensorflow, tf-keras
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.1.3
+    Uninstalling numpy-2.1.3:
+      Successfully uninstalled numpy-2.1.3
+  Attempting uninstall: ml-dtypes
+    Found existing installation: ml_dtypes 0.5.1
+    Uninstalling ml_dtypes-0.5.1:
+      Successfully uninstalled ml_dtypes-0.5.1
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tf-nightly 2.19.0.dev20250207 requires ml-dtypes<1.0.0,>=0.5.1, but you have ml-dtypes 0.4.1 which is incompatible.
+Successfully installed keras-3.8.0 ml-dtypes-0.4.1 numpy-2.0.2 tensorboard-2.18.0 tensorflow-2.18.0 tf-keras-2.18.0
+
+
+
 # cd /home/spotbot/denoising_inference_Oct072024/
 #  cat denoising_inference.py
 """ Module to run sequences for testing """
