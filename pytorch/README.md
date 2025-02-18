@@ -398,6 +398,9 @@ Without sample_inputs, the exporter would not know:
 - How tensors flow through the network.
 
 
+Ensure sample_inputs is a correctly shaped torch.Tensor
+(or a tuple of tensors) that represents a typical input to your model.
+
 Alternative Without sample_inputs?
 If your model has fixed input shapes, you can try torch.jit.script(model),
 but for TFLite conversion, sample_inputs is still required.
