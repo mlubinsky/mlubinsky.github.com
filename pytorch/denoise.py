@@ -1,4 +1,56 @@
-pip install tensorflow-probability
+pip install tensorflow-probability==0.18.0
+
+Traceback (most recent call last):
+  File "/root/MICHAEL/SPOTBOT/convert.py", line 15, in <module>
+    from onnx_tf.backend import prepare
+  File "/usr/local/lib/python3.11/site-packages/onnx_tf/__init__.py", line 1, in <module>
+    from . import backend
+  File "/usr/local/lib/python3.11/site-packages/onnx_tf/backend.py", line 28, in <module>
+    from onnx_tf.common.handler_helper import get_all_backend_handlers
+  File "/usr/local/lib/python3.11/site-packages/onnx_tf/common/handler_helper.py", line 3, in <module>
+    from onnx_tf.handlers.backend import *  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/onnx_tf/handlers/backend/bernoulli.py", line 2, in <module>
+    from tensorflow_probability import distributions as tfd
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/__init__.py", line 20, in <module>
+    from tensorflow_probability import substrates
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/substrates/__init__.py", line 17, in <module>
+    from tensorflow_probability.python.internal import all_util
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/__init__.py", line 138, in <module>
+    dir(globals()[pkg_name])  # Forces loading the package from its lazy loader.
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/internal/lazy_loader.py", line 57, in __dir__
+    module = self._load()
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/internal/lazy_loader.py", line 40, in _load
+    module = importlib.import_module(self.__name__)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/experimental/__init__.py", line 31, in <module>
+    from tensorflow_probability.python.experimental import bijectors
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/experimental/bijectors/__init__.py", line 17, in <module>
+    from tensorflow_probability.python.bijectors.ldj_ratio import forward_log_det_jacobian_ratio
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/bijectors/__init__.py", line 19, in <module>
+    from tensorflow_probability.python.bijectors.absolute_value import AbsoluteValue
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/bijectors/absolute_value.py", line 19, in <module>
+    from tensorflow_probability.python.bijectors import bijector
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/bijectors/bijector.py", line 26, in <module>
+    from tensorflow_probability.python.internal import batch_shape_lib
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/internal/batch_shape_lib.py", line 23, in <module>
+    from tensorflow_probability.python.internal import prefer_static as ps
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/internal/prefer_static.py", line 368, in <module>
+    ones_like = _copy_docstring(tf.ones_like, _ones_like)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/tensorflow_probability/python/internal/prefer_static.py", line 85, in _copy_docstring
+    raise ValueError(
+ValueError: Arg specs do not match: original=FullArgSpec(args=['input', 'dtype', 'name', 'layout'], varargs=None, varkw=None, defaults=(None, None, None), kwonlyargs=[], kwonlydefaults=Nne, annotations={}), new=FullArgSpec(args=['input', 'dtype', 'name'], varargs=None, varkw=None, defaults=(None, None), kwonlyargs=[], kwonlydefaults=None, annotations={}), fn=<function oes_like_v2 at 0x7f71264fb880>
+
+
+
+
+
 pip install tf-keras
 Installing collected packages: numpy, tensorboard, ml-dtypes, keras, tensorflow, tf-keras
   Attempting uninstall: numpy
@@ -13,6 +65,18 @@ ERROR: pip's dependency resolver does not currently take into account all the pa
 tf-nightly 2.19.0.dev20250207 requires ml-dtypes<1.0.0,>=0.5.1, but you have ml-dtypes 0.4.1 which is incompatible.
 Successfully installed keras-3.8.0 ml-dtypes-0.4.1 numpy-2.0.2 tensorboard-2.18.0 tensorflow-2.18.0 tf-keras-2.18.0
 
+root@spotace:~/MICHAEL/SPOTBOT/src# pip list | grep keras
+keras                        3.8.0
+keras-nightly                3.8.0.dev2025021403
+tf_keras                     2.18.0
+root@spotace:~/MICHAEL/SPOTBOT/src# pip list | grep tensor
+safetensors                  0.5.2
+tensorboard                  2.18.0
+tensorboard-data-server      0.7.2
+tensorflow                   2.18.0
+tensorflow-addons            0.23.0
+tensorflow-io-gcs-filesystem 0.37.1
+tensorflow-probability       0.25.0
 
 
 # cd /home/spotbot/denoising_inference_Oct072024/
