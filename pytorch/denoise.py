@@ -14,6 +14,39 @@ from src.networks import GyroNet_v1
 from src.utils import pload, pdump
 
 
+import onnx
+from onnx_tf.backend import prepare
+#exit(0)
+import tensorflow as tf
+
+"""
+2025-02-17 20:55:46.526763: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1739854546.550773  830338 cuda_dnn.cc:8670] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1739854546.557949  830338 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1739854546.576786  830338 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1739854546.576839  830338 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1739854546.576844  830338 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1739854546.576847  830338 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-02-17 20:55:46.582478: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/root/MICHAEL/SPOTBOT/convert.py", line 15, in <module>
+    from onnx_tf.backend import prepare
+  File "/usr/local/lib/python3.11/site-packages/onnx_tf/__init__.py", line 1, in <module>
+    from . import backend
+  File "/usr/local/lib/python3.11/site-packages/onnx_tf/backend.py", line 28, in <module>
+    from onnx_tf.common.handler_helper import get_all_backend_handlers
+  File "/usr/local/lib/python3.11/site-packages/onnx_tf/common/handler_helper.py", line 3, in <module>
+    from onnx_tf.handlers.backend import *  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/onnx_tf/handlers/backend/bernoulli.py", line 2, in <module>
+    from tensorflow_probability import distributions as tfd
+ModuleNotFoundError: No module named 'tensorflow_probability'
+"""
+
+
+
 base_dir = os.path.dirname(os.path.realpath(__file__))
 
 def run_sequence(
