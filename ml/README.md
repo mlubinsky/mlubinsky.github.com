@@ -1,5 +1,7 @@
 Automatic EDA https://habr.com/ru/companies/gazprombank/articles/881386/
 
+https://habr.com/ru/companies/yandex_praktikum/articles/879316/ EDA
+
 https://github.com/NeKonnnn/Exploratory_Data_Analysis
 
 
