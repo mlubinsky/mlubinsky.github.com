@@ -480,7 +480,8 @@ sample_inputs = torch.randn(1, 1, 28, 28)  # (batch_size, channels, height, widt
 
 edge_model = ai_edge_torch.convert(model, sample_inputs)
 edge_model.export('michael.tflite')
- 
+
+
 >>> import ai_edge_torch
 2025-02-14 12:20:14.122097: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467]
 Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
@@ -510,73 +511,36 @@ jaxlib                       0.5.0
 tensorflow-io-gcs-filesystem 0.37.1
 torch                        2.6.0
 torch_xla2                   0.0.1.dev202412041639
-
-
-
-
-  warnings.warn(
-{'us': tensor([[ 1.7578e-01, -7.7148e-02, -6.8359e-02,  1.1914e-01,  7.8535e+00,
-          2.9727e+00],
-        [-1.1133e-01,  6.0059e-02, -5.0293e-02, -5.2734e-01,  7.9297e+00,
-          4.9551e+00],
-        [-8.7891e-03,  0.0000e+00, -3.0762e-02, -6.5039e-01,  9.0547e+00,
-          6.0195e+00],
-        ...,
-        [ 8.7891e-03,  4.8828e-03,  1.6113e-02, -1.0547e-01,  7.5898e+00,
-          6.4844e+00],
-        [-2.1973e-02, -1.4648e-03,  1.4648e-03, -2.2070e-01,  7.7773e+00,
-          6.0957e+00],
-        [-3.0762e-02, -2.4414e-03, -1.4648e-03,  3.9062e-02,  7.3652e+00,
-          6.8672e+00]], dtype=torch.float64)}
-Traceback (most recent call last):
-  File "/root/MICHAEL/SPOTBOT/convert.py", line 94, in <module>
-    result = run_sequence(
-             ^^^^^^^^^^^^^
-  File "/root/MICHAEL/SPOTBOT/convert.py", line 58, in run_sequence
-    edge_model = ai_edge_torch.convert(network.eval(),us)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/converter.py", line 261, in convert
-    return Converter().convert(
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/converter.py", line 172, in convert
-    return conversion.convert_signatures(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/conversion.py", line 134, in convert_signatures
-    exported_programs: torch.export.ExportedProgram = [
-                                                      ^
-  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/conversion.py", line 137, in <listcomp>
-    args=sig.args,
-         ^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/signature.py", line 70, in args
-    args, _ = self._normalized_sample_args_kwargs
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/ai_edge_torch/_convert/signature.py", line 38, in _normalized_sample_args_kwargs
-    raise ValueError("sample_args must be a tuple of torch tensors.")
-ValueError: sample_args must be a tuple of torch tensors.
-
-
-
-    sample_inputs = (torch.randn(1, 3, 224, 224),)
-    edge_model = ai_edge_torch.convert(network.eval(),sample_inputs)
-    edge_model.export('michael.tflite')
-    return None
-
-torch._dynamo.exc.TorchRuntimeError: Failed running call_function <built-in function sub>
-(*(FakeTensor(..., size=(1, 3, 224, 224)), Parameter(FakeTensor(..., size=(6,)))), **{}):
-Attempting to broadcast a dimension of length 6 at -1! 
-Mismatching argument at index 1 had torch.Size([6]); 
-but expected shape should be broadcastable to [1, 3, 224, 224]
-
-from user code:
-   File "/root/MICHAEL/SPOTBOT/src/networks.py", line 98, in forward
-    ys_temp = super().forward(us.float())
-  File "/root/MICHAEL/SPOTBOT/src/networks.py", line 70, in forward
-    u = self.norm(us).transpose(1, 2)
-  File "/root/MICHAEL/SPOTBOT/src/networks.py", line 77, in norm
-    return (us - self.mean_u) / self.std_u
-
 ```
 
+### pip install ai-edge-torch
+```
+Installing collected packages: ml-dtypes, ai-edge-litert-nightly, ai-edge-litert, tb-nightly, keras-nightly, jax, tf-nightly, ai-edge-quantizer-nightly, ai-edge-torch
+  Attempting uninstall: ml-dtypes
+    Found existing installation: ml-dtypes 0.3.2
+    Uninstalling ml-dtypes-0.3.2:
+      Successfully uninstalled ml-dtypes-0.3.2
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tensorflow 2.15.1 requires ml-dtypes~=0.3.1, 
+but you have ml-dtypes 0.5.1 which is incompatible.
+
+Successfully installed 
+ai-edge-litert-1.1.1 
+ai-edge-litert-nightly-1.1.2.dev20250217 
+ai-edge-quantizer-nightly-0.0.1.dev20250208 
+ai-edge-torch-0.3.0 
+jax-0.5.0 
+keras-nightly-3.8.0.dev2025021903 
+ml-dtypes-0.5.1 
+tb-nightly-2.19.0a20250218 
+tf-nightly-2.19.0.dev20250207
+
+pip check
+
+tf-keras 2.18.0 has requirement tensorflow<2.19,>=2.18, but you have tensorflow 2.15.1.
+tensorflow 2.15.1 has requirement ml-dtypes~=0.3.1, but you have ml-dtypes 0.5.1.
+
+```
 
 ### Convert a PyTorch model to LiteRT Format (.tflite) using ONNX
 
