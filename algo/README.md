@@ -125,8 +125,6 @@ https://www.thedigitalcatonline.com/blog/2022/08/23/data-partitioning-and-consis
 
 https://www.manning.com/books/algorithms-and-data-structures-for-massive-datasets
 
-
-
 http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big data
 
 <http://csc.kth.se/~jsannemo/slask/main.pdf> Book
@@ -139,21 +137,15 @@ http://dimacs.rutgers.edu/~graham/ssbd.html . Book - Small summaries for big dat
 
 <https://www.amazon.com/dp/1793296634> Algo Book
 
-
 <http://www.cs.sjtu.edu.cn/~jiangli/teaching/CS222/files/materials/Algorithm%20Design.pdf> Algo book
 
-
-
 <https://www.reddit.com/r/algorithms/comments/g7qc13/is_there_a_cookbook_for_algorithms_a_collection/>
-
 
 <http://opendatastructures.org/>
 
 <https://algs4.cs.princeton.edu/home/>
 
 http://www.dspguide.com/pdfbook.htm DSP book
-
-
 
 ### Not books
 
@@ -277,13 +269,33 @@ https://habr.com/ru/post/681940/
 <https://humanreadablemag.com/issues/0/articles/the-wonders-of-the-suffix-tree-through-the-lens-of-ukkonen%E2%80%99s-algorithm/>
 
 ### B-trees
+```
+В B-Tree у каждого узла вместо 1 ключа (value) и 2 потомков (child nodes) есть множество ключей и потомков.
+B-Tree характеризуется таким параметром как factor: 
+корень содержит от 0 до factor * 2ключей, 
+а любой другой узел - от factorдо factor*2; у 
+любого узла либо 0 потомков (тогда это лист), либо n+1где n- количество ключей в этом узле.
 
+Именно за счёт малой высоты B-Tree с большими значениями factor находит применение в базах данных:
+при высоте дерева в L уровней на первых L-1 уровнях содержится не более N/factor узлов.
+Это позволяет умещать первые уровни дерева в памяти
+и делать всего один запрос к файловой системе уже на последнем этапе поиска.
+
+
+```
 https://benjamincongdon.me/blog/2021/08/17/B-Trees-More-Than-I-Thought-Id-Want-to-Know/
 
 https://newvick.com/b-trees-database-indexes/
 
+https://habr.com/ru/articles/884232/
 
 https://erthalion.info/2020/11/28/evolution-of-btree-index-am/
+
+https://neerc.ifmo.ru/wiki/index.php?title=B-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE
+
+https://habr.com/ru/companies/postgrespro/articles/330544/
+
+### Fenwik tree
 
 <https://medium.com/@adityakumar_98609/fenwick-tree-binary-index-tree-aca7824d9c2a> fenwick
 
