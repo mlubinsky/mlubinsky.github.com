@@ -20,7 +20,9 @@ https://www.youtube.com/watch?v=9UIIMBqq1D4   : C tips
 
 https://github.com/oz123/awesome-c
 
-https://github.com/stclib/STC
+https://github.com/stclib/STC  containers for C
+
+https://github.com/rurban/ctl containers for C
 
 https://nullprogram.com/blog/2025/01/19/ Examples of quick hash tables and dynamic arrays in C
 
