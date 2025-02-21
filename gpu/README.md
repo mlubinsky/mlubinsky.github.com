@@ -1,5 +1,9 @@
 https://medium.com/@muhammedashraf2661/cuda-programming-an-introduction-to-gpu-architecture-dfd8dfffa13f
 
+https://www.pyspur.dev/blog/introduction_cuda_programming
+
+https://news.ycombinator.com/item?id=43121059
+
 https://www.i-programmer.info/news/91-hardware/17763-demystifying-gpu-terminology.html
 
 https://www.youtube.com/watch?v=v_q2JTIqE20
