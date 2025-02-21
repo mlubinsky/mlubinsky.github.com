@@ -11,7 +11,7 @@ http://venge.net/graydon/talks/CompilerTalk-2019.pdf
 https://news.ycombinator.com/item?id=32780472
 
 
- 
+ https://news.ycombinator.com/item?id=43120873 Tiny Compiler
 
 <https://bernsteinbear.com/blog/bytecode-interpreters/>
 
