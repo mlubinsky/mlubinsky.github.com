@@ -1,5 +1,7 @@
 ### DuckDB
 
+https://labs.quansight.org/blog/duckdb-when-used-to-frames
+
 https://milescole.dev/data-engineering/2024/12/12/Should-You-Ditch-Spark-DuckDB-Polars.html
 
 https://habr.com/ru/articles/829502/
