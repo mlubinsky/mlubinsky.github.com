@@ -1,5 +1,9 @@
 https://nononsensebooks.com/
 
+https://ru.annas–archive.org/
+
+https://annas–archive.se/
+
 https://jakobschwichtenberg.com/
 
 https://theoreticalminimum.com/references   Leonard Susskind
