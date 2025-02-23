@@ -10,9 +10,14 @@ https://news.ycombinator.com/item?id=36491704
 https://lobste.rs/s/qgfqw3/macos_tips
 
 ### Keeping Mac awake
+
+Управление засыпанием MacBook – KeepingYouAwake   
+https://keepingyouawake.app/  
+https://github.com/newmarcel/KeepingYouAwake    
+
 https://ss64.com/mac/caffeinate.html
 
-https://github.com/newmarcel/KeepingYouAwake  
+
 https://apps.apple.com/us/app/amphetamine/id937984704  
 
 
