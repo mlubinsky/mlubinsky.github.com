@@ -65,6 +65,14 @@ open -e opens the file in TextEdit, in plain-text mode by default.
 
 sample PROCESS SECS spends SECS seconds watching the process (name or pid) PROCESS, then outputs a stack-based profile. You can do this from Activity Monitor, but I often find it faster to do from the CLI.
 
+https://www.youtube.com/watch?v=YXWootrynKg
+
+yazi: https://github.com/sxyazi/yazi
+fzf: https://github.com/junegunn/fzf
+bat: https://github.com/sharkdp/bat
+lazygit: https://github.com/jesseduffield/lazygit
+lazydocker: https://github.com/jesseduffield/lazydocker
+
 ### Setup
 
 https://navendu.me/posts/development-environment/
