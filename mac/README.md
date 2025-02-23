@@ -78,6 +78,9 @@ bat: https://github.com/sharkdp/bat
 lazygit: https://github.com/jesseduffield/lazygit
 lazydocker: https://github.com/jesseduffield/lazydocker
 
+Image Optim: https://imageoptim.com/mac
+ 
+Shottr: https://shottr.cc/ screen cupture
 
 ### Editor: ForkLift
 
