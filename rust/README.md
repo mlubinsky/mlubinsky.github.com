@@ -1,3 +1,7 @@
+https://habr.com/ru/companies/ruvds/articles/884262/ Парсер JSON в 500 строках Rust
+
+https://www.krish.gg/blog/json-parser-in-rust Парсер JSON в 500 строках Rust
+
 https://habr.com/ru/companies/bitrix/articles/878912/
 
 https://www.reddit.com/r/rust/comments/1i4wv95/what_are_some_lesserknown_rust_books_worth_reading/
