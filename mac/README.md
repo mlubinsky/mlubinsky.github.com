@@ -78,6 +78,11 @@ bat: https://github.com/sharkdp/bat
 lazygit: https://github.com/jesseduffield/lazygit
 lazydocker: https://github.com/jesseduffield/lazydocker
 
+
+### Editor: ForkLift
+
+https://binarynights.com/
+
 ### Setup
 
 https://navendu.me/posts/development-environment/
