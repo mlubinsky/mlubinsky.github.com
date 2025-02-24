@@ -2,6 +2,12 @@
 
 https://arxiv.org/pdf/1907.01060.pdf . (ru)
 
+https://jiha-kim.github.io/posts/introduction-to-stochastic-calculus/
+
+https://news.ycombinator.com/item?id=43160779
+
+
+
 https://vk.com/stochastic_processes
 
 https://arxiv.org/pdf/2402.02119 An Introduction to Stochastic Partial Differential Equations: Part I
