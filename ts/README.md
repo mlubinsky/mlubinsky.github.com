@@ -9,6 +9,11 @@ https://blog.jetbrains.com/pycharm/2025/01/anomaly-detection-in-time-series/
 
 https://arxiv.org/abs/2501.18737 Complex network approaches to nonlinear time series analysis
 
+
+Casual TS analysis
+https://github.com/alecrimi/effconnpy
+
+
 ****
 https://habr.com/ru/companies/bothub/articles/875738/ Nixtla представила TimeGPT
 
