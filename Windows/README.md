@@ -62,7 +62,7 @@ add_strings_to_csv(strings, file_name)
  %* in batch file means:  all command line arguments
 
 ### Calculate the total number of lines in all csv files
-
+```
 Count the total number of lines in all .csv files located in subfolders named AAA:
 
  
@@ -81,7 +81,7 @@ Alternative: Getting Just the Total Line Count
 (for /r %F in (AAA\*.csv) do @find /c /v "" "%F") > temp.txt && for /f "tokens=2 delims=:" %G in (temp.txt) do @set /a total+=%G && echo Total lines: %total%
 
 This will store the line counts in a temporary file, sum them up, and display the total. 
-
+```
 ### Accessing env variables:
 ```
 echo %date% %time%
