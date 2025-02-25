@@ -97,10 +97,10 @@ def count_lines_in_csv(directory):
 
     print(f"Total lines: {total_lines}")
 
-# Run the function with the current directory
+# Run the function above
 if __name__ == "__main__":
-    parent_directory = os.getcwd()  # Get current working directory
-    count_lines_in_csv(parent_directory)
+    directory = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
+    count_lines_in_csv(directory)
 
 
 
