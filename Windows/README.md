@@ -76,6 +76,37 @@ find /c /v "" "%F" counts the number of lines in each file (/v "" ensures all li
 ``` 
 ####  Getting Just the Total Line Count for all .csv in all subfolders under AAA
 ```
+import os
+
+def count_lines_in_csv(directory):
+    total_lines = 0
+
+    # Walk through all subdirectories of the given directory
+    for root, dirs, files in os.walk(directory):
+        # Check if the current folder is named 'AAA'
+        if os.path.basename(root) == "AAA":
+            for file in files:
+                if file.endswith(".csv"):
+                    file_path = os.path.join(root, file)
+                    try:
+                        with open(file_path, 'r', encoding='utf-8') as f:
+                            line_count = sum(1 for _ in f)
+                            total_lines += line_count
+                    except Exception as e:
+                        print(f"Error reading {file_path}: {e}")
+
+    print(f"Total lines: {total_lines}")
+
+# Run the function with the current directory
+if __name__ == "__main__":
+    parent_directory = os.getcwd()  # Get current working directory
+    count_lines_in_csv(parent_directory)
+
+
+
+
+
+
 @echo off
 setlocal enabledelayedexpansion
 set total=0
