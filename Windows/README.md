@@ -64,7 +64,7 @@ add_strings_to_csv(strings, file_name)
 ### Calculate the total number of lines in all csv files
  
 
-#### counts the number of lines in each file separately
+#### counts the number of lines in each .csv file separately
 ```
 for /r %F in (AAA\*.csv) do @find /c /v "" "%F"
 
@@ -74,7 +74,7 @@ This recursively searches for .csv files inside any AAA subfolder.
 
 find /c /v "" "%F" counts the number of lines in each file (/v "" ensures all lines are counted).
 ``` 
-####  Getting Just the Total Line Count
+####  Getting Just the Total Line Count for all .csv in all subfolders under AAA
 ```
 @echo off
 setlocal enabledelayedexpansion
@@ -86,13 +86,35 @@ for /r %%F in (AAA\*.csv) do (
 )
 echo Total lines: !total!
 
-
-
-
-(for /r %F in (AAA\*.csv) do @find /c /v "" "%F") > temp.txt && for /f "tokens=2 delims=:" %G in (temp.txt) do @set /a total+=%G && echo Total lines: %total%
-
-This will store the line counts in a temporary file, sum them up, and display the total. 
 ```
+####  Getting Just the Total Line Count for all .csv in  under AAA, skipping subfolders
+```
+@echo off
+setlocal enabledelayedexpansion
+set total=0
+for /d /r %%D in (AAA) do (
+    if exist "%%D\*.csv" (
+        for %%F in ("%%D\*.csv") do (
+            for /f "tokens=2 delims=:" %%G in ('find /c /v "" "%%F"') do (
+                set /a total+=%%G
+            )
+        )
+    )
+)
+echo Total lines: !total!
+
+
+Explanation:
+for /d /r %%D in (AAA) finds only directories named AAA, skipping deeper levels.
+if exist "%%D\*.csv" ensures we only process AAA folders containing .csv files.
+for %%F in ("%%D\*.csv") iterates over .csv files directly in AAA (not subfolders).
+find /c /v "" "%%F" counts lines in each file.
+set /a total+=%%G accumulates the total line count.
+Finally, echo Total lines: !total! prints the total.
+
+```
+
+
 ### Accessing env variables:
 ```
 echo %date% %time%
