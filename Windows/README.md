@@ -75,7 +75,20 @@ This recursively searches for .csv files inside any AAA subfolder.
 find /c /v "" "%F" counts the number of lines in each file (/v "" ensures all lines are counted).
 ``` 
 ####  Getting Just the Total Line Count
-``` 
+```
+@echo off
+setlocal enabledelayedexpansion
+set total=0
+for /r %%F in (AAA\*.csv) do (
+    for /f "tokens=2 delims=:" %%G in ('find /c /v "" "%%F"') do (
+        set /a total+=%%G
+    )
+)
+echo Total lines: !total!
+
+
+
+
 (for /r %F in (AAA\*.csv) do @find /c /v "" "%F") > temp.txt && for /f "tokens=2 delims=:" %G in (temp.txt) do @set /a total+=%G && echo Total lines: %total%
 
 This will store the line counts in a temporary file, sum them up, and display the total. 
