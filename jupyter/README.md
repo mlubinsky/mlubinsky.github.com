@@ -45,6 +45,49 @@ I need to add records to d1 from d2 based on matching of column A:
    add columns score and value to d1 from d2
    for rec in df2.iterrows():
        # add  rec['dut], red['score], rec['value'] to df1
+
+import pandas as pd
+
+# Example function for computing score
+def func(c_value):
+    return c_value * 2  # Replace this with your actual function
+
+# Sample DataFrames
+d1 = pd.DataFrame({'A': [1, 2, 3]})
+d2 = pd.DataFrame({'A': [1, 2, 3, 4], 'b': ['x', 'y', 'z', 'w'], 'c': [10, 20, 30, 40]})
+
+# Iterate over rows in d2 and update d1
+for _, rec in d2.iterrows():
+    score = func(rec['c'])
+    d1.loc[d1['A'] == rec['A'], ['b', 'score']] = rec['b'], score
+
+print(d1)
+
+Explanation:
+Define func(c_value) → This calculates the score based on column c in d2.
+Iterate over d2 using iterrows().
+For each row in d2, find the matching A value in d1.
+Update d1 with:
+b from d2
+score calculated from func(d2['c'])
+
+Alternative (Vectorized Approach - Faster)
+Instead of iterrows(), you can use merge and apply the function more efficiently:
+
+ 
+# Merge d1 with d2 on column A
+d1 = d1.merge(d2[['A', 'b', 'c']], on='A', how='left')
+
+# Apply function to compute score
+d1['score'] = d1['c'].apply(func)
+
+# Drop 'c' since it's not needed in d1
+d1.drop(columns=['c'], inplace=True)
+
+print(d1)
+✅ This is much faster than using iterrows(), especially for large datasets.
+
+
 ```
 ### Filter out rows where column 'B' starts with 'abc'
 
