@@ -11,6 +11,17 @@ https://arrow.apache.org/docs/python/index.html
 
  PyArrow library provides pandas with its own optimized data types, which are faster and less memory-intensive than the traditional NumPy types that pandas uses by default.
 
+
+### Pandas to_sql()
+```
+Indexes & Primary Keys:
+to_sql() does not automatically create primary keys or indexes.
+You need to define them manually when creating the table.
+
+Performance Tip: Use method='multi' for batch inserts.
+ 
+df.to_sql('my_table', engine, if_exists='append', index=False, method='multi')
+```
 ### Reset pandas index
 
 https://realpython.com/pandas-reset-index/
