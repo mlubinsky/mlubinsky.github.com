@@ -26,7 +26,15 @@ and each row has a label, which is referred to as an element of its associated i
 You can actually use any hashable type for your index, but integers, strings, and timestamps are the most common.
 ```
 
-
+### There is Python pandas dataframe d1 with columns: A 
+```
+I need to add to d1 new columns dut, score, value and I need to populate it 
+from another pandas dataframe d2 with columns A, dut, score, value
+I need to add records to d1 from d2 based on matching of column A:
+   add columns score and value to d1 from d2
+   for rec in df2.iterrows():
+       # add  rec['dut], red['score], rec['value'] to df1
+```
 ### Filter out rows where column 'B' starts with 'abc'
 
 df_filtered = df[~df['B'].str.startswith('abc')]
