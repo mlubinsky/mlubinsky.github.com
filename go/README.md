@@ -27,6 +27,9 @@ https://news.ycombinator.com/item?id=39318867
 
 https://bitfieldconsulting.com/golang/tao-of-go
 
+### Build database with GO
+https://news.ycombinator.com/item?id=43183891
+
 ### Build web site with go:
 
 https://htmgo.dev/  htmx + go
