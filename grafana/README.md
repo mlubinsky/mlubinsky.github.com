@@ -797,6 +797,27 @@ we want to transform it to table
 
 test, criteria,  val_(for_is_ref=TRUE), score_(for_is_ref=TRUE), val_(for_is_ref=FALSE), score_(for_is_ref=FALSE) 
 
+
+SELECT 
+    test,
+    criteria,
+    MAX(CASE WHEN is_ref = TRUE THEN val END) AS val_true,
+    MAX(CASE WHEN is_ref = TRUE THEN score END) AS score_true,
+    MAX(CASE WHEN is_ref = FALSE THEN val END) AS val_false,
+    MAX(CASE WHEN is_ref = FALSE THEN score END) AS score_false
+FROM your_table
+GROUP BY test, criteria;
+
+Postgres specific implementation using filter
+SELECT 
+    test,
+    criteria,
+    MAX(val) FILTER (WHERE is_ref = TRUE) AS val_true,
+    MAX(score) FILTER (WHERE is_ref = TRUE) AS score_true,
+    MAX(val) FILTER (WHERE is_ref = FALSE) AS val_false,
+    MAX(score) FILTER (WHERE is_ref = FALSE) AS score_false
+FROM your_table
+GROUP BY test, criteria;
  
 ```
 
