@@ -57,7 +57,22 @@ https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/
 
 Grafana's default login credentials are username: "admin" and password: "admin"
 
+### Hide date-range selector
 
+```
+In Grafana, the date range selector is part of the top navigation bar and is enabled by default.
+However, you can hide it by adjusting the dashboard settings.
+
+How to Hide the Date Range Selector in Grafana
+
+Option 1: Use "Time Range Controls" in Dashboard Settings
+Open your Grafana Dashboard.
+Click the gear icon (⚙️) → "Settings".
+Scroll down to the "Time range controls" section.
+Disable the toggle "Show time picker".
+Click "Save".
+🚀 Result: The date range selector will no longer be visible in the UI.
+```
 
 ### Grafana + Jira integration
 
