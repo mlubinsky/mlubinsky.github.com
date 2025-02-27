@@ -808,11 +808,28 @@ Configure it as follows:
 Rows: Set to test.
 
 Columns: Set to (build + is_ref) (you may need to combine them using a CONCAT() function in SQL).
+
 Values: Use val and score (aggregated as MAX or SUM).
-Grafana will dynamically pivot the criteria and is_ref columns into separate columns.
+Grafana will dynamically pivot the build and is_ref columns into separate columns.
+
+When using the "Grouping to Matrix" transformation in Grafana, you need to define how multiple values should be aggregated when they belong to the same test and build combination.
+
+Choosing Aggregation for val and score
+Since there can be multiple rows for the same (test, build, is_ref) combination,
+Grafana needs a way to merge them into a single value per cell.
+This is where you choose an aggregation function (e.g., MAX, SUM, AVG, etc.).
+
+Options for Aggregation:
+
+MAX(val) → Takes the highest value for val per (test, build, is_ref).
+SUM(val) → Adds up all val values for (test, build, is_ref).
+AVG(val) → Computes the average value.
+FIRST(val) or LAST(val) → Takes the first or last encountered value.
+
+Similarly, you can choose the aggregation method for score.
 
 
-Pure SQL solution, not Grafana (no build column):
+Pure SQL solution, not Grafana (and no build column!!!):
 
 SELECT 
     test,
