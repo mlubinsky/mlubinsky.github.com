@@ -773,13 +773,23 @@ There is table T with columns :  test, criteria, val, score, build, is_ref
 Calculate avg(score) per A / per is_ref / (and per build?):
 
 WITH A as (
-SELECT test, avg/max (value) as value,  avg/max (score) as score , build, is_ref
-FROM T  GROUP BY  test, build, is_ref
-),
-B as (
-SELECT test, 'Average' as criteria, NULL as value,  avg(score) as score, is_ref
-FROM A
+SELECT "Test" as test, "Criteria" as criteria, avg(val) as val,  avg(score) as score ,  is_ref  --, build,
+FROM kpi_score  GROUP BY  test, criteria, is_ref -- , build
 )
+,
+B as (
+SELECT test, 'Average' as criteria, cast ( null as double precision) as val,  avg(score) as score, is_ref --, build,
+FROM A
+group by test, is_ref
+)
+,
+C as (
+select * from A 
+union
+select * from B
+)
+select * from C
+order by test
 ``
 
 ### Grafana as  a code
