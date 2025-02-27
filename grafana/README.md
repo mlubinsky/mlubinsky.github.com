@@ -32,10 +32,11 @@ SELECT "Test" as test, "Criteria" as criteria,
 avg(val) as val,  -- may be max() for some criteria 
 avg(score) as score, 
 is_ref 
--- CASE    WHNE is_ref THEN 'REF' ELSE 'DUT' END as is_ref   
+-- CASE    WHEN is_ref THEN 'REF' ELSE 'DUT' END as is_ref   
 --, build,
 FROM kpi_score  
 WHERE date='$date' -- '2025-02-20'
+and 
 GROUP BY  test, criteria, is_ref 
 -- , build
 )
@@ -45,7 +46,7 @@ SELECT test, 'Average' as criteria,
 cast ( null as double precision) as val,  
 avg(score) as score, 
 is_ref 
---, build,
+--, build,build in ($build)
 FROM A
 group by test, is_ref
 )
