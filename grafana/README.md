@@ -818,7 +818,112 @@ SELECT
     MAX(score) FILTER (WHERE is_ref = FALSE) AS score_false
 FROM your_table
 GROUP BY test, criteria;
- 
+
+
+DO $$
+DECLARE
+    sql_query TEXT;
+BEGIN
+    -- Generate dynamic column names for each unique criteria
+    SELECT STRING_AGG(
+        format(
+            'MAX(CASE WHEN criteria = %L AND is_ref = TRUE THEN val END) AS val_true_%I,
+             MAX(CASE WHEN criteria = %L AND is_ref = TRUE THEN score END) AS score_true_%I,
+             MAX(CASE WHEN criteria = %L AND is_ref = FALSE THEN val END) AS val_false_%I,
+             MAX(CASE WHEN criteria = %L AND is_ref = FALSE THEN score END) AS score_false_%I',
+            criteria, criteria, criteria, criteria, criteria, criteria, criteria, criteria
+        ), ', ')
+    INTO sql_query
+    FROM (SELECT DISTINCT criteria FROM your_table) sub;
+
+    -- Construct and execute the full query
+    sql_query := format(
+        'SELECT test, %s FROM your_table GROUP BY test', sql_query
+    );
+
+    EXECUTE sql_query;
+END $$;
+
+
+Grafana does not support executing dynamic SQL directly in its query editor,
+especially when using PostgreSQL as the data source.
+However, you can work around this limitation in one of the following ways:
+
+Option 1: Create a Materialized View in PostgreSQL
+-----------------------------------------------------
+Since Grafana queries are usually static,
+you can store the dynamic pivot as a materialized view and query it from Grafana.
+
+Step 1: Create a Materialized View
+--------------------------------------
+Modify the PL/pgSQL script to store the results in a materialized view:
+
+DROP MATERIALIZED VIEW IF EXISTS pivoted_table;
+DO $$
+DECLARE
+    sql_query TEXT;
+BEGIN
+    -- Generate dynamic column names for each unique criteria
+    SELECT STRING_AGG(
+        format(
+            'MAX(CASE WHEN criteria = %L AND is_ref = TRUE THEN val END) AS val_true_%I,
+             MAX(CASE WHEN criteria = %L AND is_ref = TRUE THEN score END) AS score_true_%I,
+             MAX(CASE WHEN criteria = %L AND is_ref = FALSE THEN val END) AS val_false_%I,
+             MAX(CASE WHEN criteria = %L AND is_ref = FALSE THEN score END) AS score_false_%I',
+            criteria, criteria, criteria, criteria, criteria, criteria, criteria, criteria
+        ), ', ')
+    INTO sql_query
+    FROM (SELECT DISTINCT criteria FROM your_table) sub;
+
+    -- Create materialized view
+    sql_query := format(
+        'CREATE MATERIALIZED VIEW pivoted_table AS 
+         SELECT test, %s FROM your_table GROUP BY test', sql_query
+    );
+
+    EXECUTE sql_query;
+END $$;
+
+Step 2: Refresh the Materialized View
+----------------------------------------
+Since the view is materialized, you need to refresh it when new data arrives:
+
+REFRESH MATERIALIZED VIEW pivoted_table;
+
+Step 3: Query from Grafana
+---------------------------
+Now, in Grafana, use:
+
+SELECT * FROM pivoted_table WHERE test = $__variable;
+You can add filters using Grafana variables ($__variable).
+
+Option 2: Use a Fixed Pivot Query
+###################################
+If the number of criteria values is small and known,
+you can manually create the pivoted SQL query in Grafana without dynamic SQL.
+
+Example:
+
+SELECT 
+    test,
+    MAX(CASE WHEN criteria = 'criteria_1' AND is_ref = TRUE THEN val END) AS val_true_criteria_1,
+    MAX(CASE WHEN criteria = 'criteria_1' AND is_ref = TRUE THEN score END) AS score_true_criteria_1,
+    MAX(CASE WHEN criteria = 'criteria_1' AND is_ref = FALSE THEN val END) AS val_false_criteria_1,
+    MAX(CASE WHEN criteria = 'criteria_1' AND is_ref = FALSE THEN score END) AS score_false_criteria_1,
+    MAX(CASE WHEN criteria = 'criteria_2' AND is_ref = TRUE THEN val END) AS val_true_criteria_2,
+    MAX(CASE WHEN criteria = 'criteria_2' AND is_ref = TRUE THEN score END) AS score_true_criteria_2,
+    MAX(CASE WHEN criteria = 'criteria_2' AND is_ref = FALSE THEN val END) AS val_false_criteria_2,
+    MAX(CASE WHEN criteria = 'criteria_2' AND is_ref = FALSE THEN score END) AS score_false_criteria_2
+FROM your_table
+GROUP BY test;
+
+Replace 'criteria_1', 'criteria_2', etc., with actual values from your data.
+Use this query directly in Grafana.
+Which Option is Best?
+If criteria values change frequently → Use Option 1 (Materialized View).
+If criteria values are fixed → Use Option 2 (Fixed Pivot Query).
+
+
 ```
 
 ### Grafana as  a code
