@@ -752,7 +752,7 @@ order by report_date, description;
 
 ```
 
-#### Grouping to matrix (pivoting) - for Table Pallete
+## Grouping to matrix (pivoting) - for Table Pallete
 
 For Table panel to get 1 row and many columns (as many columns ar many unique descriptions in following SQL
 ```
@@ -768,6 +768,19 @@ https://grafana.com/docs/grafana/latest/panels-visualizations/query-transform-da
 
 https://www.youtube.com/watch?v=aoAmRHq3vhU
 
+```
+There is table T with columns :  test, criteria, val, score, build, is_ref
+Calculate avg(score) per A / per is_ref / (and per build?):
+
+WITH A as (
+SELECT test, avg/max (value) as value,  avg/max (score) as score , build, is_ref
+FROM T  GROUP BY  test, build, is_ref
+),
+B as (
+SELECT test, 'Average' as criteria, NULL as value,  avg(score) as score, is_ref
+FROM A
+)
+``
 
 ### Grafana as  a code
 
