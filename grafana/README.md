@@ -3,6 +3,29 @@ https://stackoverflow.com/questions/74729503/how-to-configure-https-for-grafana-
 http://localhost:3000
 
 ```
+Using variables is SQL
+single choice:
+
+SELECT * 
+FROM your_table
+WHERE column_name =
+CASE
+    WHEN '$X' = 'ALL' THEN column_name
+    ELSE '$X'
+END;
+
+Multiple choise:
+-------------------
+SELECT * 
+FROM your_table
+WHERE column_name IN ($X);
+
+
+
+SELECT * FROM your_table
+WHERE ($X = 'all' OR your_column IN ($X));
+
+
 
 WITH A as (
 SELECT "Test" as test, "Criteria" as criteria, 
