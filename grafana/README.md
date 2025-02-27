@@ -789,8 +789,16 @@ union
 select * from B
 )
 select * from C
-order by test
-``
+order by test, criteria DESC
+
+How we have table with columns:
+test, criteria, val, score, is_ref
+we want to transform it to table
+
+test, criteria,  val_(for_is_ref=TRUE), score_(for_is_ref=TRUE), val_(for_is_ref=FALSE), score_(for_is_ref=FALSE) 
+
+ 
+```
 
 ### Grafana as  a code
 
