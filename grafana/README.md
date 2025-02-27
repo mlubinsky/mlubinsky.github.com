@@ -792,11 +792,27 @@ select * from C
 order by test, criteria DESC
 
 How we have table with columns:
-test, criteria, val, score, is_ref
+test, criteria, val, score, is_ref, (-- build)
 we want to transform it to table
 
-test, criteria,  val_(for_is_ref=TRUE), score_(for_is_ref=TRUE), val_(for_is_ref=FALSE), score_(for_is_ref=FALSE) 
+test, criteria,  val_(for_is_ref=TRUE), score_(for_is_ref=TRUE), val_(for_is_ref=FALSE), score_(for_is_ref=FALSE)   -- per build
 
+
+Apply "Grouping to Matrix" Transformation
+After running the query in Grafana, follow these steps:
+
+Go to the "Transform" tab in Grafana.
+Click "Add transformation" and select "Grouping to matrix".
+Configure it as follows:
+
+Rows: Set to test.
+
+Columns: Set to (build + is_ref) (you may need to combine them using a CONCAT() function in SQL).
+Values: Use val and score (aggregated as MAX or SUM).
+Grafana will dynamically pivot the criteria and is_ref columns into separate columns.
+
+
+Pure SQL solution, not Grafana (no build column):
 
 SELECT 
     test,
