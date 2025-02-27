@@ -849,11 +849,12 @@ Pure SQL solution, not Grafana (and no build column!!!):
 SELECT 
     test,
     criteria,
-    MAX(CASE WHEN is_ref = TRUE THEN val END) AS val_true,
-    MAX(CASE WHEN is_ref = TRUE THEN score END) AS score_true,
     MAX(CASE WHEN is_ref = FALSE THEN val END) AS val_false,
-    MAX(CASE WHEN is_ref = FALSE THEN score END) AS score_false
-FROM your_table
+    MAX(CASE WHEN is_ref = FALSE THEN score END) AS score_false,
+    MAX(CASE WHEN is_ref = TRUE THEN val END) AS val_true,
+    MAX(CASE WHEN is_ref = TRUE THEN score END) AS score_true
+
+FROM kpi_score
 GROUP BY test, criteria;
 
 Postgres specific implementation using filter
@@ -864,7 +865,7 @@ SELECT
     MAX(score) FILTER (WHERE is_ref = TRUE) AS score_true,
     MAX(val) FILTER (WHERE is_ref = FALSE) AS val_false,
     MAX(score) FILTER (WHERE is_ref = FALSE) AS score_false
-FROM your_table
+FROM kpi_score
 GROUP BY test, criteria;
 
 
