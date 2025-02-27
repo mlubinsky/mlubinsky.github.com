@@ -1,3 +1,7 @@
+STOHASTIC GRADIENT EXPLAINED
+https://habr.com/ru/companies/airi/articles/883266/
+
+
 Automatic EDA https://habr.com/ru/companies/gazprombank/articles/881386/
 
 https://habr.com/ru/companies/yandex_praktikum/articles/879316/ EDA
