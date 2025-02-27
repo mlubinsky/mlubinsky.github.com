@@ -3,6 +3,48 @@ https://stackoverflow.com/questions/74729503/how-to-configure-https-for-grafana-
 http://localhost:3000
 
 ```
+
+WITH A as (
+SELECT "Test" as test, "Criteria" as criteria, 
+avg(val) as val,  -- may be max() for some criteria 
+avg(score) as score, 
+is_ref 
+-- CASE    WHNE is_ref THEN 'REF' ELSE 'DUT' END as is_ref   
+--, build,
+FROM kpi_score  
+WHERE date='$date' -- '2025-02-20'
+GROUP BY  test, criteria, is_ref 
+-- , build
+)
+,
+B as (
+SELECT test, 'Average' as criteria, 
+cast ( null as double precision) as val,  
+avg(score) as score, 
+is_ref 
+--, build,
+FROM A
+group by test, is_ref
+)
+,
+C as (
+select * from A 
+union
+select * from B
+)
+--select * from C order by test, criteria DESC -- to keep Average at the bottom of group
+SELECT 
+    test as "Test",
+    criteria as "Criteria",
+    MAX(CASE WHEN is_ref = FALSE THEN val END) AS "REF_val",
+    MAX(CASE WHEN is_ref = FALSE THEN score END) AS "REF_score",
+    MAX(CASE WHEN is_ref = TRUE THEN val END) AS "DUT_val",
+    MAX(CASE WHEN is_ref = TRUE THEN score END) AS "DUT_score"
+
+FROM C
+GROUP BY test, criteria
+ORDER BY test, criteria DESC;
+
 The default settings for a Grafana instance are stored in the $WORKING_DIR/conf/defaults.ini file. 
 Do not change this file.
 
