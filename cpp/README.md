@@ -31,8 +31,9 @@ Book: C Interfaces and implementation  https://www.amazon.com/Interfaces-Impleme
 https://github.com/drh/cii
 
 
+https://habr.com/ru/articles/829334/ Эффективное межпроцессное взаимодействие с использованием IPC и Shared Memory
 
-https://accu.org/bookreviews/2020/glassborow_1952/ Book "Effective C" Robert C. Seacord
+https://accu.org/bookreviews/2020/glassborow_1952/ Book "Effective C" Robert C. Seacord 2nd edition
 
 https://modernc.gforge.inria.fr/   Book "Modern C" Jens Gustedt
 
