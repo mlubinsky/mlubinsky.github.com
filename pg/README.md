@@ -43,6 +43,8 @@ locking https://leontrolski.github.io/pglockpy.html
 
 https://medium.com/redis-with-raphael-de-lio/can-postgres-replace-redis-as-a-cache-f6cba13386dc
 
+Range column for time intervals:
+https://supabase.com/blog/range-columns
 
 ### Graphs in Postgres
 
