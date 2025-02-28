@@ -11,6 +11,8 @@ https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BE%D0%B1%D1%80%
 
 https://course.fast.ai/ Practical ML for coders
 
+https://habr.com/ru/companies/otus/articles/886816/ RNN explained
+
 https://arxiv.org/pdf/2404.17625
 
 https://vickiboykis.com/what_are_embeddings/
