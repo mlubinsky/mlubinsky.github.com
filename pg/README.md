@@ -43,6 +43,12 @@ locking https://leontrolski.github.io/pglockpy.html
 
 https://medium.com/redis-with-raphael-de-lio/can-postgres-replace-redis-as-a-cache-f6cba13386dc
 
+
+### Graphs in Postgres
+
+Graph in Postgres
+https://news.ycombinator.com/item?id=43198520
+
 ### Dynamic SQL
 
 https://habr.com/ru/companies/otus/articles/861240/
