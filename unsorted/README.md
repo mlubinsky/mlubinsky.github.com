@@ -1,3 +1,5 @@
+https://kodekloud.com/   DevOps training
+
 https://www.youtube.com/feed/playlists
 
 https://lj.rossia.org/~tiphareth/
