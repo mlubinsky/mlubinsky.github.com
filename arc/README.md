@@ -46,6 +46,11 @@ https://www.reactivesystems.eu/2024/09/30/five-common-misconceptions-about-eda.h
 
 https://habr.com/ru/articles/844950/ 
 
+### Slowly changing dimentions
+
+https://habr.com/ru/articles/886918/
+
+
 ### API book (ru)
 
 https://habr.com/ru/companies/domclick/articles/802833/
