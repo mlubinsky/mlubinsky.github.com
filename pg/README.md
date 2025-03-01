@@ -1310,6 +1310,9 @@ https://postgis.net/workshops/postgis-intro/installation.html PostGIS
 https://www.yugabyte.com/postgresql/postgresql-high-availability/ High Availability
 
 ### Partitioning
+
+https://supabase.com/blog/postgres-dynamic-table-partitioning
+
 https://www.postgresql.org/docs/current/ddl-partitioning.html
 
 https://engineering.workable.com/postgres-live-partitioning-of-existing-tables-15a99c16b291
