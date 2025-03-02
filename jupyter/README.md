@@ -12,6 +12,9 @@ https://arrow.apache.org/docs/python/index.html
  PyArrow library provides pandas with its own optimized data types, which are faster and less memory-intensive than the traditional NumPy types that pandas uses by default.
 
 
+df = pd.DataFrame(columns=['A', 'B', 'C']).astype({'A': int, 'B': float, 'C': str})
+
+print(df.dtypes)
 ### Pandas to_sql()
 ```
 Indexes & Primary Keys:
