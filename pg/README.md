@@ -848,7 +848,9 @@ https://news.ycombinator.com/item?id=37636841
 
 https://lobste.rs/s/rk3eft/choose_postgres_queue_technology
 
-## Pub/Subscribe, queue, notify
+## Pub/Subscribe, queue, LISTEN / NOTIFY
+
+https://dimitarg.github.io/joys-of-messaging/
 
 https://news.ycombinator.com/item?id=37636841
 
