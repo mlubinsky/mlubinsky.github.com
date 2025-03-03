@@ -11,6 +11,8 @@ https://mesa.readthedocs.io/stable/ Discrete simulation
 https://github.com/true-grue/python-dsls DSLs
 
 https://pydong.org/posts/PythonsPreprocessor/
+
+https://habr.com/ru/companies/raiffeisenbank/articles/885792/ архитектурный подход к Python приложениям
 ```
 #------------------------
 def valid_date(date_str):
