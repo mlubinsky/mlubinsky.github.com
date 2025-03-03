@@ -13,6 +13,9 @@ https://github.com/true-grue/python-dsls DSLs
 https://pydong.org/posts/PythonsPreprocessor/
 
 https://habr.com/ru/companies/raiffeisenbank/articles/885792/ архитектурный подход к Python приложениям
+
+https://github.com/airtai/faststream provides a unified API to work across multiple message brokers (Kafka, RabbitMQ, NATS, Redis support)
+
 ```
 #------------------------
 def valid_date(date_str):
