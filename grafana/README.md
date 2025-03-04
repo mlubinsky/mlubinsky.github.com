@@ -2,7 +2,9 @@ https://stackoverflow.com/questions/74729503/how-to-configure-https-for-grafana-
 
 http://localhost:3000
 
-### Axis -> Tieme Zone
+### How to eliminate date conversion to local time zone: 
+
+Axis -> Time Zone
 
 In dropdown select : 
 
