@@ -2,8 +2,15 @@ https://stackoverflow.com/questions/74729503/how-to-configure-https-for-grafana-
 
 http://localhost:3000
 
+### Axis -> Tieme Zone
+
+In dropdown select : 
+
+Coordinated Universal Time
+
+### Using variables is SQL
 ```
-Using variables is SQL
+
 single choice:
 
 SELECT * 
@@ -60,15 +67,18 @@ select * from B
 SELECT 
     test as "Test",
     criteria as "Criteria",
-    MAX(CASE WHEN is_ref = FALSE THEN val END) AS "REF_val",
-    MAX(CASE WHEN is_ref = FALSE THEN score END) AS "REF_score",
-    MAX(CASE WHEN is_ref = TRUE THEN val END) AS "DUT_val",
-    MAX(CASE WHEN is_ref = TRUE THEN score END) AS "DUT_score"
+    MAX(CASE WHEN is_ref   THEN val END) AS "REF_val",
+    MAX(CASE WHEN is_ref   THEN score END) AS "REF_score",
+    MAX(CASE WHEN not is_ref THEN val END) AS "DUT_val",
+    MAX(CASE WHEN not is_ref THEN score END) AS "DUT_score"
 
 FROM C
 GROUP BY test, criteria
 ORDER BY test, criteria DESC;
 
+```
+### Config
+```
 The default settings for a Grafana instance are stored in the $WORKING_DIR/conf/defaults.ini file. 
 Do not change this file.
 
