@@ -1,5 +1,6 @@
 ### Change the background color of a panel title in Grafana 
 ```
+Grok answer:
 To change the background color of a panel title in Grafana from black to blue while keeping the text white,
 you can use custom styling options.
 Grafana allows some customization through its UI or by applying CSS overrides (depending on your version and setup). Here's how you can achieve this:
@@ -55,4 +56,72 @@ Notes:
 Grafana Version: The exact steps might vary slightly based on your Grafana version (e.g., 9.x, 10.x as of March 2025). Check the documentation for your version if the above doesn’t match.
 Permissions: Custom CSS requires admin access. If you’re on a hosted Grafana (e.g., Grafana Cloud) without CSS control, you’re limited to UI options.
 Fallback: If neither works, consider using a "Text" panel with HTML/CSS styling as a workaround to mimic a title with your desired colors.
+```
+### Gemini answer
+```
+To change the background color of a panel title in Grafana from black to blue, you'll need to use custom CSS. Grafana allows you to inject custom CSS to style your dashboards. Here's how you can do it:
+
+Steps:
+
+Enable allow_embedding and enable_unsigned_plugins (If needed):
+
+If you are using a recent version of Grafana, you might need to enable these options in your Grafana configuration file (grafana.ini).
+This is sometimes necessary for custom CSS to apply correctly.
+Caution: Enabling unsigned plugins can introduce security risks. Only do this if you understand the implications and trust the source of your custom CSS.
+Open your grafana.ini file (usually located in /etc/grafana/grafana.ini).
+Under the [security] section, add or modify the following lines:
+Ini, TOML
+
+[security]
+allow_embedding = true
+enable_unsigned_plugins = true
+Restart your Grafana server after making these changes.
+Use a Text Panel with Custom CSS:
+
+Add a new "Text" panel to your dashboard.
+In the Text panel's edit mode, switch to "Text" mode (not HTML or Markdown).
+Paste the following CSS code into the panel:
+CSS
+
+<style>
+.panel-title {
+    background-color: blue !important;
+}
+</style>
+Explanation:
+.panel-title targets the CSS class that Grafana uses for panel titles.
+background-color: blue; sets the background color to blue.
+!important ensures that your custom style overrides any existing styles. Use !important with caution because it can make your CSS harder to maintain.
+Position the Text Panel (Optional):
+
+The Text panel itself might be visible. If you don't want it to be, you can:
+
+Make the Text panel very small and place it in an inconspicuous corner of your dashboard.
+Alternatively, you can add more CSS to hide the Text panel's content:
+CSS
+
+<style>
+.panel-title {
+    background-color: blue !important;
+}
+
+.panel-content {
+  display:none;
+}
+
+.panel-header{
+  padding-bottom: 0px;
+}
+
+</style>
+Save and Apply:
+
+Save the Text panel and your dashboard.
+The panel titles should now have a blue background.
+Important Considerations:
+
+CSS Specificity: If the background color doesn't change, it might be due to another CSS rule with higher specificity. You might need to adjust the CSS selector or use !important more carefully.
+Grafana Versions: The CSS classes and structure of Grafana might change between versions. If this method doesn't work, inspect the HTML of your dashboard using your browser's developer tools to find the correct CSS selectors.
+Theme Consistency: Changing the panel title background color might affect the overall theme consistency of your dashboard. Consider whether this change aligns with your desired aesthetic.
+Global CSS (Advanced): For more complex styling or if you want to apply the change to all dashboards, you can explore adding custom CSS to your Grafana theme or using a plugin that allows global CSS injection. This is more advanced and requires a deeper understanding of Grafana's theming.
 ```
