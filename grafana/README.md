@@ -11,9 +11,29 @@ Select "Coordinated Universal Time"
 On Panel -> Edit -> Panel Options  
 Axis -> Time Zone
 
-In dropdown select : 
+In dropdown select : Coordinated Universal Time
 
-Coordinated Universal Time
+Ensure PostgreSQL Dates are Stored as DATE or TIMESTAMP WITHOUT TIME ZONE
+If your column B is of type TIMESTAMP WITH TIME ZONE, PostgreSQL applies time zone conversions. 
+To prevent this, explicitly cast it in your query:
+
+ 
+SELECT A, B::DATE AS B FROM T;
+
+ or 
+ 
+SELECT A, B::TIMESTAMP WITHOUT TIME ZONE AS B FROM T;
+✅ This ensures PostgreSQL does not store or apply unwanted timezone conversions.
+
+4️⃣ Set the Grafana Data Source Time Zone
+Open Grafana → Configuration (⚙️) → Data Sources.
+Select your PostgreSQL data source.
+Find the "Time zone" setting.
+Set it to "UTC".
+✅ This prevents time conversion at the data source level.
+
+Final Check
+If your tooltip still shows the wrong time, try changing the tooltip time format under Panel settings → Tooltip → Custom Format and set it to "MM/DD".
 
 ### Using variables is SQL
 ```
