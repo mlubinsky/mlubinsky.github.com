@@ -4,6 +4,11 @@ http://localhost:3000
 
 ### How to eliminate date conversion to local time zone: 
 
+On Dashboard -> Settings
+for  "Time zone"
+Select "Coordinated Universal Time"
+
+On Panel -> Edit -> Panel Options  
 Axis -> Time Zone
 
 In dropdown select : 
