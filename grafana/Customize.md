@@ -1,3 +1,28 @@
+### Threshold line
+```
+To add a horizontal threshold line to a Grafana panel with a time series visualization,
+you can use the Thresholds feature in the panel settings.
+This allows you to define a static value (e.g., a horizontal line) that will appear on your graph. Here’s how to do it step-by-step:
+
+Steps to Add a Horizontal Threshold Line in Grafana
+Open the Panel Editor:
+Go to your Grafana dashboard.
+Click on the title of the time series panel you want to edit.
+Select "Edit" from the dropdown menu.
+Navigate to the Field Tab:
+In the panel editor, switch to the "Field" tab (usually located below the query editor, on the right-hand side in newer Grafana versions like 9.x or 10.x as of March 2025).
+Add a Threshold:
+Scroll down to the "Thresholds" section in the Field tab.
+Click "Add threshold" (or a similar button, depending on your version).
+Configure the Threshold:
+Value: Enter the numeric value where you want the horizontal line to appear (e.g., 100 if you want a line at 100 on the Y-axis).
+Color: Choose a color for the threshold line (e.g., red, blue, etc.) by clicking the color box next to the value.
+Style: By default, it will draw a horizontal line across the graph. Ensure it’s set to "Line" (some versions allow "Area" or "Dashed" options—select "Line" or "Solid Line" for a simple horizontal line).
+Optional Settings:
+Show Thresholds: Make sure the "Show thresholds" option is enabled (usually checked by default).
+Mode: Use "Absolute" mode for a fixed value (most common for a static horizontal line). "Percentage" mode is relative to the Y-axis scale, which might not suit your need.
+
+```
 ### Change the background color of a panel title in Grafana 
 ```
 Grok answer:
