@@ -1,3 +1,37 @@
+###
+```
+To make the cells in a numeric column turn red if they exceed a certain threshold in a Grafana Dashboard table, follow these steps:
+
+Steps:
+Open Grafana Dashboard
+
+Navigate to the dashboard containing the table panel.
+Edit the Table Panel
+
+Click on the panel title and select "Edit".
+Navigate to the "Overrides" Tab
+
+Go to the "Overrides" tab in the panel editor.
+Add Field Override for the Numeric Column
+
+Click "Add field override".
+In "Fields with name", select the column with numeric data.
+Apply Conditional Coloring
+
+Click "Add override property" → Choose "Cell display mode" → Set it to "Color text" or "Color background".
+Click "Add override property" → Choose "Value mappings" → Set up conditions:
+Select "Thresholds".
+Click "Set threshold" and define a threshold value.
+For values above the threshold, choose the red color.
+Save and Apply Changes
+
+Click "Apply" and "Save dashboard".
+Additional Notes:
+You can use "Cell display mode" for either text color or background color.
+You can set multiple thresholds with different colors.
+Ensure that the data type of the column is numeric to apply thresholds properly.
+```
+
 ### Threshold line
 ```
 To add a horizontal threshold line to a Grafana panel with a time series visualization,
