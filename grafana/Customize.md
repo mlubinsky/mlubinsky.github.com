@@ -32,6 +32,45 @@ You can set multiple thresholds with different colors.
 Ensure that the data type of the column is numeric to apply thresholds properly.
 ```
 
+### Grok
+```
+To make cells in a numeric column turn red if they exceed a certain threshold in a Grafana Dashboard table, you can use the Thresholds and Overrides features in the Grafana table panel. Here’s a step-by-step guide:
+
+Access the Panel Editor:
+Navigate to your Grafana dashboard and locate the table panel you want to modify.
+Hover over the panel, click the dropdown menu (usually in the top-right corner), and select Edit.
+Set Up the Table Visualization:
+Ensure your panel is using the Table visualization. If it’s not already set, go to the Panel tab and select "Table" from the visualization options.
+Configure the Query:
+In the Query tab, ensure your data source is returning the numeric column you want to apply the threshold to. The query should return data in a table-compatible format (e.g., a time series or raw table data).
+Apply a Field Override for the Numeric Column:
+Go to the Field tab in the panel editor.
+Scroll down to the Field options section.
+Under Overrides, click + Add field override.
+In the override settings, select Fields with name and choose the specific numeric column you want to apply the threshold to (e.g., "Value" or the column name from your query).
+Add a Threshold:
+With the override selected, click + Add override property.
+Choose Thresholds from the list of properties.
+Click Add threshold and set the threshold value where you want the color change to occur (e.g., 100 if you want values above 100 to turn red).
+Set the color to red for values exceeding this threshold:
+Click the color box next to the threshold value and select red (or use a custom hex code like #FF0000).
+By default, Grafana assumes the threshold applies to values greater than the specified number. You can adjust this behavior if needed (e.g., for "less than") in some visualizations, though for tables it typically colors based on exceeding the value.
+Set the Cell Display Mode (Optional):
+To ensure the threshold applies visually to the cell, you may need to configure the cell display mode:
+In the same override, click + Add override property again.
+Select Cell display mode and choose Color background (solid) or Color text, depending on whether you want the entire cell background or just the text to turn red.
+If you choose Color background, the threshold color (red) will fill the cell background when the value exceeds the threshold. If you choose Color text, the numeric value itself will turn red.
+Save and Verify:
+Click Apply or Save to update the dashboard.
+Check the table to ensure that cells in the specified numeric column turn red when their values exceed the threshold you set.
+Additional Notes:
+Multiple Thresholds: You can add multiple thresholds (e.g., green below 50, yellow between 50 and 100, red above 100) by adding more threshold values in the same override. Grafana will apply the colors based on the ranges you define.
+Global Thresholds (Optional): If you want the threshold to apply to all numeric columns (not just one), you can set it in the Field tab under Thresholds without using an override. However, for column-specific formatting, stick to the override method.
+Dynamic Thresholds: If your threshold value needs to be dynamic (e.g., based on a variable), you’ll need to use Grafana’s value mappings or a plugin like "Dynamic Thresholds," as the standard threshold feature uses static values.
+
+```
+
+
 ### Threshold line
 ```
 To add a horizontal threshold line to a Grafana panel with a time series visualization,
