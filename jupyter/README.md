@@ -11,11 +11,37 @@ https://arrow.apache.org/docs/python/index.html
 
  PyArrow library provides pandas with its own optimized data types, which are faster and less memory-intensive than the traditional NumPy types that pandas uses by default.
 
+### DF with types
+```
+for col in df.columns:
+    print(f"name = {col}, type = {df[col].dtype}")
 
 df = pd.DataFrame(columns=['A', 'B', 'C']).astype({'A': int, 'B': float, 'C': str})
 
 print(df.dtypes)
 
+You can convert a Pandas DataFrame column from object (string) to float using the .astype() method or pd.to_numeric().
+
+Method 1: Using .astype(float)
+ 
+df["column_name"] = df["column_name"].astype(float)
+
+Method 2: Using pd.to_numeric() (Handles Errors)
+If your column contains non-numeric values, use pd.to_numeric() to handle errors:
+
+df["column_name"] = pd.to_numeric(df["column_name"], errors="coerce")
+"coerce": Converts invalid values to NaN instead of raising an error.
+
+Convert Multiple Columns
+To convert multiple object columns to float:
+
+df[["col1", "col2"]] = df[["col1", "col2"]].astype(float)
+Or, for all object columns:
+
+df = df.astype({col: float for col in df.select_dtypes(include=["object"]).columns})
+
+```
+### Rename columns
 ```
 import pandas as pd
 
@@ -24,22 +50,15 @@ def rename_empty_columns(df, prefix="Unnamed"):
     df.columns = [f"{prefix}_{i}" if not col or str(col).startswith("Unnamed") else col 
                   for i, col in enumerate(df.columns)]
     return df
-
+```
+### Read  CSV top and bottom:
+```
 def load_csv_top_part(filename, end_row):
-    """Load only the top section of the CSV file (first `end_row` rows)."""
     return pd.read_csv(filename, nrows=end_row, header=None)
 
-def load_csv_from_row(file_name: str, start_row: int) -> pd.DataFrame:
-    """
-    Reads a CSV file and loads all rows starting from the given row number into a Pandas DataFrame.
-    
-    :param file_name: Path to the CSV file.
-    :param start_row: Row number to start reading from (1-based index).
-    :return: Pandas DataFrame containing the data from the specified start row onward.
-    """
+def load_csv_from_row(file_name , start_row )  :
     return pd.read_csv(file_name, skiprows=start_row-1, header=None)
 ```
-
 
 ### Pandas to_sql()
 ```
