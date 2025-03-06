@@ -47,7 +47,7 @@ import pandas as pd
 
 def rename_empty_columns(df, prefix="Unnamed"):
     """Rename empty or unnamed columns in a DataFrame with a specified prefix."""
-    df.columns = [f"{prefix}_{i}" if not col or str(col).startswith("Unnamed") else col 
+    df.columns = [f"{prefix}_{i}" if not col.strip() or str(col).startswith("Unnamed") else col 
                   for i, col in enumerate(df.columns)]
     return df
 ```
