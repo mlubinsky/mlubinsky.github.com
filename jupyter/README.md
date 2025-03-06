@@ -15,6 +15,22 @@ https://arrow.apache.org/docs/python/index.html
 df = pd.DataFrame(columns=['A', 'B', 'C']).astype({'A': int, 'B': float, 'C': str})
 
 print(df.dtypes)
+
+```
+import pandas as pd
+
+def load_csv_from_row(file_name: str, start_row: int) -> pd.DataFrame:
+    """
+    Reads a CSV file and loads all rows starting from the given row number into a Pandas DataFrame.
+    
+    :param file_name: Path to the CSV file.
+    :param start_row: Row number to start reading from (1-based index).
+    :return: Pandas DataFrame containing the data from the specified start row onward.
+    """
+    return pd.read_csv(file_name, skiprows=start_row-1, header=None)
+```
+
+
 ### Pandas to_sql()
 ```
 Indexes & Primary Keys:
