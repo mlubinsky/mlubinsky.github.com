@@ -19,6 +19,10 @@ print(df.dtypes)
 ```
 import pandas as pd
 
+def load_csv_top_part(filename, end_row):
+    """Load only the top section of the CSV file (first `end_row` rows)."""
+    return pd.read_csv(filename, nrows=end_row, header=None)
+
 def load_csv_from_row(file_name: str, start_row: int) -> pd.DataFrame:
     """
     Reads a CSV file and loads all rows starting from the given row number into a Pandas DataFrame.
