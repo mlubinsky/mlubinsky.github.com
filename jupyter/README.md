@@ -19,6 +19,12 @@ print(df.dtypes)
 ```
 import pandas as pd
 
+def rename_empty_columns(df, prefix="Unnamed"):
+    """Rename empty or unnamed columns in a DataFrame with a specified prefix."""
+    df.columns = [f"{prefix}_{i}" if not col or str(col).startswith("Unnamed") else col 
+                  for i, col in enumerate(df.columns)]
+    return df
+
 def load_csv_top_part(filename, end_row):
     """Load only the top section of the CSV file (first `end_row` rows)."""
     return pd.read_csv(filename, nrows=end_row, header=None)
