@@ -127,6 +127,47 @@ Please create dataframe from previous one with the following columns:
 5. score - should take value from corresponding A* pr B* column where  column TYPE=score
 6. val - should take value from corresponding A* pr B* col where  column TYPE=val
 7. avg - should take value from corresponding A* pr B* col where  column TYPE=avg
+
+import pandas as pd
+
+def transform_dataframe(df):
+    # Identify columns starting with 'A' or 'B'
+    ab_columns = [col for col in df.columns if col.startswith(('A', 'B'))]
+
+    # Melt the DataFrame to bring A* and B* columns into rows
+    df_melted = df.melt(id_vars=['TEST', 'ITEM', 'TYPE'], value_vars=ab_columns, var_name='AB_col', value_name='Value')
+
+    # Extract the suffix from column names (A* or B*)
+    df_melted['suffix'] = df_melted['AB_col'].str[2:]  # Extract after 'A_' or 'B_'
+
+    # Determine if the first letter is A (True) or B (False)
+    df_melted['is_start_from_A'] = df_melted['AB_col'].str.startswith('A')
+
+    # Pivot to get 'score', 'val', and 'avg' values in separate columns
+    df_final = df_melted.pivot_table(index=['TEST', 'ITEM', 'is_start_from_A', 'suffix'],
+                                     columns='TYPE', values='Value', aggfunc='first').reset_index()
+
+    # Rename TYPE columns properly
+    df_final.columns.name = None  # Remove multi-index
+    df_final = df_final.rename(columns={'score': 'score', 'val': 'val', 'avg': 'avg'})
+
+    return df_final
+
+# Example Usage
+data = {
+    "TEST": ["T1", "T2", "T3"],
+    "ITEM": ["I1", "I2", "I3"],
+    "TYPE": ["score", "val", "avg"],
+    "A_1": [10, 20, 30],
+    "A_2": [40, 50, 60],
+    "B_1": [15, 25, 35],
+    "B_2": [45, 55, 65]
+}
+
+df = pd.DataFrame(data)
+df_transformed = transform_dataframe(df)
+print(df_transformed)
+
 ```
 
 ### Melt
