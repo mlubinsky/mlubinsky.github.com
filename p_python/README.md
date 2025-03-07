@@ -302,6 +302,8 @@ negative_infinity = float('-inf')
 
 ### Bytes 
 
+https://realpython.com/python-bytes/
+
 https://www.thepythoncodingstack.com/p/bytes-python-built-in-unicode-utf-8-encoding
 ```
 A bytes object is an immutable sequence of integers. But not just any integers. 
