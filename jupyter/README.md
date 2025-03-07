@@ -41,6 +41,17 @@ Or, for all object columns:
 df = df.astype({col: float for col in df.select_dtypes(include=["object"]).columns})
 
 ```
+
+### Handling NaN
+NaN can appear in object (string) columns as well, not just in numeric (float64) columns.  
+This typically happens when Pandas encounters missing values in text-based columns.  
+ If you manually convert a column type (astype(str)), missing values remain NaN
+```
+df["column_name"].fillna("", inplace=True)
+
+df.fillna(0, inplace=True) 
+
+```
 ### Rename columns
 ```
 import pandas as pd
