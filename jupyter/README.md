@@ -71,6 +71,39 @@ def load_csv_from_row(file_name , start_row )  :
     return pd.read_csv(file_name, skiprows=start_row-1, header=None)
 ```
 
+###  
+```
+There is pandas dataframe with columns
+TEST
+ITEM
+TYPE
+A_1
+A_2
+A_..
+B_1
+B2_..
+ 
+If value in column TEXT if empty or NaN then it should be populated with non-empty value in row above.
+The same logic should be implemented for column ITEM 
+
+import pandas as pd
+
+# Sample DataFrame
+data = {
+    "TEST": ["A", None, None, "B", None, "C"],
+    "ITEM": [None, "X", None, None, "Y", None],
+    "TYPE": ["T1", "T2", "T3", "T4", "T5", "T6"]
+}
+
+df = pd.DataFrame(data)
+
+# Fill NaN values with the last non-null value above
+df[['TEST', 'ITEM']] = df[['TEST', 'ITEM']].fillna(method='ffill')
+
+# Display the updated DataFrame
+print(df)
+```
+
 ### Melt
 ```
 import pandas as pd
