@@ -335,10 +335,15 @@ https://pypi.org/project/circuitbreaker/
 
 https://news.ycombinator.com/item?id=23841491
 
-### Succinct
+### Succinct data struct
+
 https://github.com/miiohio/succinct
 
 <https://habr.com/ru/company/mailru/blog/479822/> Succinct data structures
+
+https://blog.startifact.com/posts/succinct/
+
+https://news.ycombinator.com/item?id=43282995
 
 https://habr.com/ru/post/511646/. how to effectively store integer array
 
