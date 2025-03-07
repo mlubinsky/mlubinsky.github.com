@@ -102,6 +102,31 @@ df[['TEST', 'ITEM']] = df[['TEST', 'ITEM']].fillna(method='ffill')
 
 # Display the updated DataFrame
 print(df)
+
+
+There is pandas dataframe with columns
+TEST
+ITEM
+TYPE
+A_1
+A_2
+A_..
+B_1
+B_2_..
+
+The possible values in TYPE column are: score, val, avg
+The name of rest of the columns after TYPE colums starts from A or from B
+The number of A* and B* columns is not fixed.
+
+Please create dataframe from previous one with the following columns:
+
+1. TEST
+2. ITEM
+3. is start_from_A (boolean) -  based on 1st letter of columns which starts from A or B
+4. suffix (extract the part of column name which starts from A or B)
+5. score - should take value from corresponding A* pr B* column where  column TYPE=score
+6. val - should take value from corresponding A* pr B* col where  column TYPE=val
+7. avg - should take value from corresponding A* pr B* col where  column TYPE=avg
 ```
 
 ### Melt
