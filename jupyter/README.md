@@ -71,6 +71,43 @@ def load_csv_from_row(file_name , start_row )  :
     return pd.read_csv(file_name, skiprows=start_row-1, header=None)
 ```
 
+### Melt
+```
+import pandas as pd
+
+def transform_csv(file_path):
+    # Read the CSV file
+    df = pd.read_csv(file_path)
+
+    # Identify columns with prefix 'A' or 'B'
+    value_columns = [col for col in df.columns if col.startswith('A') or col.startswith('B')]
+
+    # Melt the DataFrame
+    df_melted = df.melt(id_vars=['DATE', 'TEST'], value_vars=value_columns, 
+                         var_name='full_col_name', value_name='value')
+
+    # Extract prefix and suffix
+    df_melted['is_prefix_A'] = df_melted['full_col_name'].str.startswith('A')
+    df_melted['suffix'] = df_melted['full_col_name'].str[1:]  # Extract suffix
+
+    # Select final columns
+    df_result = df_melted[['DATE', 'TEST', 'is_prefix_A', 'suffix', 'value']]
+
+    return df_result
+
+# Example usage
+file_path = "your_file.csv"  # Update with the actual file path
+df_transformed = transform_csv(file_path)
+print(df_transformed)
+
+
+melt() reshapes the DataFrame, moving A* and B* columns into two new columns:
+full_col_name → contains original column names.
+value → contains corresponding values.
+```
+
+
+
 ### Pandas to_sql()
 ```
 Indexes & Primary Keys:
