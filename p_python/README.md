@@ -12,6 +12,8 @@ https://github.com/true-grue/python-dsls DSLs
 
 https://pydong.org/posts/PythonsPreprocessor/
 
+https://github.com/igrek51/wat Deep inspection of Python Objects
+
 https://www.reddit.com/r/Python/comments/1j2ev5f/what_are_your_favorite_python_repositories/
 
 https://habr.com/ru/companies/raiffeisenbank/articles/885792/ архитектурный подход к Python приложениям
