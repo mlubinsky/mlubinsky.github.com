@@ -4,6 +4,8 @@ https://dmitriysh.livejournal.com/
 
 https://news.ycombinator.com/item?id=38839088
 
+https://www.amazon.com/Olivirex-Potency-Extract-Capsules-Biocidin/dp/B0058ABKN8 
+
 ###	Age and cognitive skills: Use it or lose it
 
 https://www.science.org/doi/full/10.1126/sciadv.ads1560?af=R
