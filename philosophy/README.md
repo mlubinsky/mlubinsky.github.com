@@ -2,7 +2,7 @@ https://aeon.co/essays/why-reading-martha-c-nussbaums-philosophy-is-pure-pleasur
 
 https://news.ycombinator.com/item?id=43291541
 
-https://news.ycombinator.com/item?id=42792718
+https://news.ycombinator.com/item?id=42792718 	Open Socrates by Agnes Callard review – a design for life
 
 ```
 https://www.facebook.com/mikhail.katsnelson.1/posts/pfbid02Q3bYiNj9VEsZCUrS3Hn83fs91pjKqAXatdsEZgE6NxzbtXzcsQFwATw8VY2KW16Fl?__cft__[0]=AZUfkHcepk18l1_0l6LpmwADBOVdY8y6Glu6NTiIzxtA-wWafPzvQvoUArkuhwQjgNUYR3mDXhnl5ia9tKbwnyYRqlwS8xOewiystqSPipYMsMgLhec1C9MfGtEdvE3IlYw2J4GCJFayORxMPcaajMCm&__tn__=%2CO%2CP-R
