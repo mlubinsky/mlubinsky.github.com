@@ -77,9 +77,13 @@ https://www.youtube.com/watch?v=FzH6prtnOF0 Упражнения для мышц
 
 https://www.youtube.com/watch?v=MqJJyl1RmFk Упражнения для тазобедренного сустава. Растяжка при коксартрозе.
 
-### Prost
+### Prostatite
 
-Exersise: https://www.youtube.com/watch?v=s9YFFif2zfo
+https://habr.com/ru/companies/smclinic/articles/878008/
+
+https://habr.com/ru/companies/smclinic/articles/888848/
+
+Exercise: https://www.youtube.com/watch?v=s9YFFif2zfo
 
 https://www.youtube.com/watch?v=J5z3qkIpCEM
 
