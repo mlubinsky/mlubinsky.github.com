@@ -110,6 +110,8 @@ https://www.naiyerasif.com/post/2024/09/04/stop-using-serial-in-postgres/
 
 ## Search
 
+https://habr.com/ru/companies/sravni/articles/888534/ Postgres как поисковый движок
+
 https://habr.com/ru/companies/rostelecom/articles/853124/
 
 https://anyblockers.com/posts/postgres-as-a-search-engine
