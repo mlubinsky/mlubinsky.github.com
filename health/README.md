@@ -2,7 +2,7 @@ https://habr.com/ru/articles/879274/
 
 https://dmitriysh.livejournal.com/
 
-https://news.ycombinator.com/item?id=38839088
+https://news.ycombinator.com/item?id=38839088 Eating fewer calories can ward off ageing
 
 ### Oleuropein
 
