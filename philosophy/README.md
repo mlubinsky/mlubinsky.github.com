@@ -1,3 +1,6 @@
+https://aeon.co/essays/why-reading-martha-c-nussbaums-philosophy-is-pure-pleasure
+
+
 https://news.ycombinator.com/item?id=42792718
 
 ```
