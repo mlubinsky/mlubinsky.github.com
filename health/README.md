@@ -4,6 +4,9 @@ https://dmitriysh.livejournal.com/
 
 https://news.ycombinator.com/item?id=38839088 Eating fewer calories can ward off ageing
 
+###  TUDCA
+https://www.drberg.com/blog/the-benefits-of-tudca
+
 ### Oleuropein
 
 https://www.youtube.com/watch?v=KZldEUoAErc Dr. Petrik
