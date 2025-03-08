@@ -203,6 +203,8 @@ https://www.youtube.com/playlist?list=PLX8K3P2dGCECIs4h8KQYz1L190I_IFDcw
 
 ### Hair loss treatment
 
+https://www.dermatologist-reviews.com/hair-products/best-hair-growth-products-2025
+
 https://archive.ph/GVAKt
 
 https://news.ycombinator.com/item?id=32533673
