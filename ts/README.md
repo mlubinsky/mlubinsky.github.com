@@ -9,6 +9,8 @@ https://blog.jetbrains.com/pycharm/2025/01/anomaly-detection-in-time-series/
 
 https://arxiv.org/abs/2501.18737 Complex network approaches to nonlinear time series analysis
 
+LLM во временных рядах:
+https://habr.com/ru/companies/raft/articles/887486/
 
 Casual TS analysis
 https://github.com/alecrimi/effconnpy
