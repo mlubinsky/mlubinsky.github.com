@@ -1,5 +1,8 @@
 https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
 
+CPP exersizes
+
+
 ### Make, CMAke, etc
 https://habr.com/ru/companies/ruvds/articles/875620/ Сборка проектов Си и Си++: от простого к сложному. Часть II
 
