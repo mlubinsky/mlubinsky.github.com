@@ -1,3 +1,5 @@
+https://www.lektorium.tv/node/38965
+
 https://arxiv.org/abs/1602.04182 Feinman Diagrams
 
 Квантовая теория поля 2022-2023
