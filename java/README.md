@@ -10,6 +10,8 @@ https://habr.com/ru/companies/wunderfund/articles/843618/
 
 https://piotrminkowski.com/2022/01/05/useful-unknown-java-features/
 
+https://www.youtube.com/watch?v=RlCpgSoOX6I&
+
 https://www.youtube.com/watch?v=t03DOhiTPkc 2024
 
 https://www.youtube.com/watch?v=aj6E0KF6sd4  2024
