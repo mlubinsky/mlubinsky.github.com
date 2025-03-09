@@ -99,6 +99,12 @@ https://habr.com/ru/company/pvs-studio/blog/524568/
 
 ### Memory allocators 
 
+https://educatedguesswork.org/posts/memory-management-1/
+
+https://educatedguesswork.org/posts/memory-management-2/
+
+https://news.ycombinator.com/item?id=43307659
+
 https://habr.com/ru/articles/876804/
 
 <https://johnysswlab.com/the-price-of-dynamic-memory-allocation/> memory allocators
