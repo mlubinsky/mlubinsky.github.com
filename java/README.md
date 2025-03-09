@@ -34,6 +34,9 @@ https://www.ej-technologies.com/jprofiler
 
 https://nipafx.dev/java-visitor-pattern-pointless/
 
+https://www.youtube.com/watch?v=2NTyzL-9Bfo Java 24
+
+https://youtu.be/z4qsidg261E?si=SoyHKLZY-oth8FQm  Modern Java Deed Dive
 
  ### Modern Java/JVM build practises
 
