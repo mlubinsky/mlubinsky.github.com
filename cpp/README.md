@@ -11,6 +11,8 @@ https://www.reddit.com/r/cpp/comments/1j7eiqo/recommended_thirdparty_libraries/
 
 https://www.reddit.com/r/cpp/comments/1i8a5lm/mustknow_librariesframeworkstechnologies_for_c/
 
+https://www.reddit.com/r/cpp/comments/1j33fkq/well_worth_a_look/
+
 
 ### Flamegraph
 
