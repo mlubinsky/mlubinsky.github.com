@@ -4,6 +4,11 @@ https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building
 
 https://www.reddit.com/r/cpp/comments/1i8a5lm/mustknow_librariesframeworkstechnologies_for_c/
 
+
+### Flamegraph
+
+https://johnnysswlab.com/fiya-flamegraphs-in-your-app/
+
 ### Dataframe
 https://github.com/hosseinmoein/DataFrame
 
