@@ -5,6 +5,9 @@ https://www.reddit.com/r/cpp/comments/1i8a5lm/mustknow_librariesframeworkstechno
 ### Dataframe
 https://github.com/hosseinmoein/DataFrame
 
+### LibCat
+https://github.com/Cons-Cat/libCat
+
 ### Slint - cross platform and cross lang UI libs
 
 https://slint.dev/
