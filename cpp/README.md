@@ -81,6 +81,7 @@ https://github.com/rurban/ctl containers for C
 
 https://nullprogram.com/blog/2025/01/19/ Examples of quick hash tables and dynamic arrays in C
 
+https://github.com/jamesnolanverran/dmap Hash map
 
 Book: C Interfaces and implementation  https://www.amazon.com/Interfaces-Implementations-Techniques-Creating-Reusable/dp/0201498413  
 https://github.com/drh/cii
