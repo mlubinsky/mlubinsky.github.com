@@ -1,6 +1,8 @@
 STOHASTIC GRADIENT EXPLAINED
 https://habr.com/ru/companies/airi/articles/883266/
 
+https://www.bishopbook.com/
+
 Free book: introduction to statistical Learning with Python:
 https://www.statlearning.com/
 
