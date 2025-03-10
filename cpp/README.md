@@ -130,6 +130,8 @@ https://nullprogram.com/blog/2024/05/25/
 
 https://habr.com/ru/articles/876958/
 
+https://thenewstack.io/secure-coding-in-c-avoid-buffer-overflows-and-memory-leaks/
+
 ### C++ static analysis
 
 https://www.reddit.com/r/cpp/comments/ffx95k/static_analysis_tools_you_use_in_ci_for_your_cpp/   cpp static analysis
