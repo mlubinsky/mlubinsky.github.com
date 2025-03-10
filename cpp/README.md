@@ -110,6 +110,8 @@ https://educatedguesswork.org/posts/memory-management-2/
 
 https://news.ycombinator.com/item?id=43307659
 
+https://www.youtube.com/watch?v=x6fU8C0kLBw
+
 https://habr.com/ru/articles/876804/
 
 <https://johnysswlab.com/the-price-of-dynamic-memory-allocation/> memory allocators
