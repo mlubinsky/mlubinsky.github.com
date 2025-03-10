@@ -16,7 +16,11 @@ https://www.scottaaronson.com/democritus/default.html
 
 https://news.ycombinator.com/item?id=40063795
 
-https://www.youtube.com/watch?v=qJZ1Ez28C-A
+https://en.wikipedia.org/wiki/Double-slit_experiment#Path-integral_formulation
+
+https://www.youtube.com/watch?v=ss0HABVUkeQ
+
+https://www.youtube.com/watch?v=qJZ1Ez28C-A - probably not good video
 
 https://www.youtube.com/watch?v=UWuhMJZaiZM Feynman's (almost) impossible sum over infinite quantum paths
 
