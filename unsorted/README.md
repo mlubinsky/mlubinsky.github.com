@@ -10,6 +10,14 @@ https://habr.com/ru/companies/timeweb/articles/873430/
 http://lucumr.pocoo.org/2025/1/30/how-i-ai
 
 
+### EDA
+https://woset-workshop.github.io/
+
+https://github.com/nturley/netlistsvg
+
+https://www.concept.de/
+
+
 ### Unified System Interface, framework, server, GUI and Remote API
 https://unisi.tech/
 
