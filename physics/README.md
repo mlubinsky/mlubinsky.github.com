@@ -14,6 +14,8 @@ https://libguides.wpi.edu/oer/physics
 
 https://physicspages.com/
 
+https://www.physicslog.com/
+
 https://johncarlosbaez.wordpress.com/
 
 https://topocondmat.org/ Online course on topology in condensed matter
