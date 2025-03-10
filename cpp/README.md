@@ -6,6 +6,9 @@ https://www.amazon.com/dp/0136905692 Book
 
 https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
 
+### 3rd party libs
+https://www.reddit.com/r/cpp/comments/1j7eiqo/recommended_thirdparty_libraries/
+
 https://www.reddit.com/r/cpp/comments/1i8a5lm/mustknow_librariesframeworkstechnologies_for_c/
 
 
