@@ -1,5 +1,7 @@
 https://habr.com/ru/articles/866542/
 
+https://www.astronomer.io/ebooks/apache-airflow-best-practices-etl-elt-pipelines/
+
 https://habr.com/ru/articles/873668/  Airflow in Docker on Mac
 
 https://towardsdatascience.com/airflow-data-intervals-a-deep-dive-15d0ccfb0661
