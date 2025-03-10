@@ -14,6 +14,10 @@ https://github.com/facebook/folly
 ### LibCat
 https://github.com/Cons-Cat/libCat
 
+### JSON cpp
+
+https://ashvardanian.com/posts/parsing-json-with-allocators-cpp/
+
 ### Slint - cross platform and cross lang UI libs
 
 https://slint.dev/
