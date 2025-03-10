@@ -1,3 +1,5 @@
+https://www.learncpp.com/
+
 https://www.reddit.com/r/cpp/comments/1hwr6bo/learning_c_efficiently_in_2025/
 
 https://www.amazon.com/dp/0136905692 Book
