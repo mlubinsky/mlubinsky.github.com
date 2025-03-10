@@ -11,6 +11,8 @@ https://discord.com/invite/BCfHWaSMkr Aleksei Petrenko
 
 https://arxiv.org/pdf/2304.00803.pdf A Tutorial Introduction to Reinforcement Learning
 
+https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning
+
 https://arxiv.org/pdf/2211.17217.pdf Tutorial on Neural Networks and Gradient-free Training
 
 Tutorial on the Spectral Theory of Markov Chains https://arxiv.org/pdf/2207.02296.pdf
