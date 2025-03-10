@@ -1,6 +1,7 @@
 STOHASTIC GRADIENT EXPLAINED
 https://habr.com/ru/companies/airi/articles/883266/
 
+https://arxiv.org/abs/2502.05244 Probabilistic Artificial Intelligence
 
 Automatic EDA https://habr.com/ru/companies/gazprombank/articles/881386/
 
