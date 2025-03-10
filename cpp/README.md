@@ -2,6 +2,8 @@ https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building
 
 CPP exersizes
 
+https://www.youtube.com/watch?v=fBb4cKbHbmI  C++ and ML
+
 
 ### Make, CMAke, etc
 https://habr.com/ru/companies/ruvds/articles/875620/ Сборка проектов Си и Си++: от простого к сложному. Часть II
