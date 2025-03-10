@@ -5,6 +5,10 @@ https://www.reddit.com/r/cpp/comments/1i8a5lm/mustknow_librariesframeworkstechno
 ### Dataframe
 https://github.com/hosseinmoein/DataFrame
 
+### Folly
+
+https://github.com/facebook/folly
+
 ### LibCat
 https://github.com/Cons-Cat/libCat
 
