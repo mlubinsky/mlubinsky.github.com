@@ -18,6 +18,8 @@ https://news.ycombinator.com/item?id=40063795
 
 https://www.youtube.com/watch?v=qJZ1Ez28C-A
 
+https://www.youtube.com/watch?v=UWuhMJZaiZM Feynman's (almost) impossible sum over infinite quantum paths
+
 ```
 From a general point of view, we need three ingredients:
 • a space of states, that we denote as S,
