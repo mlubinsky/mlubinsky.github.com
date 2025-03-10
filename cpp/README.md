@@ -326,6 +326,8 @@ https://habr.com/ru/post/490640/
 
 <https://qualapps.blogspot.com/2010/07/safely-using-erase-in-stl.html>
 
+https://devblogs.microsoft.com/oldnewthing/20250113-00/?p=110757  std::map
+
 ### STL container: How to avoid the temporary object creation
 
 https://stackoverflow.com/questions/20487801/how-to-store-objects-without-copy-or-move-constructor-in-stdvector
