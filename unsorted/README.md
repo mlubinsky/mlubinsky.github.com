@@ -17,6 +17,10 @@ https://github.com/nturley/netlistsvg
 
 https://www.concept.de/
 
+https://www.intel.com/content/www/us/en/docs/programmable/683230/18-1/netlist-viewer-user-interface.html
+
+https://web.open-source-silicon.dev/t/5017868/does-anyone-know-a-good-way-to-view-netlists-as-schematics
+
 
 ### Unified System Interface, framework, server, GUI and Remote API
 https://unisi.tech/
