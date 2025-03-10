@@ -3,6 +3,10 @@ https://habr.com/ru/companies/airi/articles/883266/
 
 https://arxiv.org/abs/2502.05244 Probabilistic Artificial Intelligence
 
+https://www.amazon.com/Probabilistic-Robotics-INTELLIGENT-ROBOTICS-AUTONOMOUS/dp/0262201623
+
+https://www.amazon.com/dp/3031064682/ Robotics Visin and Control with Python
+
 Automatic EDA https://habr.com/ru/companies/gazprombank/articles/881386/
 
 https://habr.com/ru/companies/yandex_praktikum/articles/879316/ EDA
