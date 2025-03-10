@@ -1,10 +1,16 @@
 https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
 
+### Slint - cross platform and cross lang UI libs
+
+https://slint.dev/
+
 ### Best C++ talk
 https://www.reddit.com/r/cpp/comments/1ir2x5y/your_favorite_cppcon_talks/
 
 
-CPP exersizes:
+https://www.reddit.com/r/cpp/comments/1ijwb7d/reignite_my_love_for_c/
+
+### CPP exersizes:
 
 https://www.youtube.com/watch?v=fBb4cKbHbmI  C++ and ML
 
