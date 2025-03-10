@@ -1,6 +1,9 @@
 STOHASTIC GRADIENT EXPLAINED
 https://habr.com/ru/companies/airi/articles/883266/
 
+Free book: introduction to statistical Learning with Python:
+https://www.statlearning.com/
+
 https://arxiv.org/abs/2502.05244 Probabilistic Artificial Intelligence
 
 https://www.amazon.com/Probabilistic-Robotics-INTELLIGENT-ROBOTICS-AUTONOMOUS/dp/0262201623
