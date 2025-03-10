@@ -13,6 +13,8 @@ https://nicf.net/articles/
 
 https://habr.com/ru/articles/859324/
 
+https://alexkritchevsky.com/math
+
 ### Семинар  по математическим методам в физике 
 https://www.youtube.com/watch?v=uhtb8FD_GAI&list=PLPFUq1zn8x35_0NTQqHNKwCjb9CVhS7MX
 
