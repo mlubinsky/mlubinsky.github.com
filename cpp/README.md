@@ -1,3 +1,5 @@
+https://www.reddit.com/r/cpp/comments/1hwr6bo/learning_c_efficiently_in_2025/
+
 https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
 
 https://www.reddit.com/r/cpp/comments/1i8a5lm/mustknow_librariesframeworkstechnologies_for_c/
