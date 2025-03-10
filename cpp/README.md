@@ -1,5 +1,9 @@
 https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
 
+
+### Dataframe
+https://github.com/hosseinmoein/DataFrame
+
 ### Slint - cross platform and cross lang UI libs
 
 https://slint.dev/
@@ -14,7 +18,7 @@ https://www.reddit.com/r/cpp/comments/1ir2x5y/your_favorite_cppcon_talks/
 
 https://www.reddit.com/r/cpp/comments/1ijwb7d/reignite_my_love_for_c/
 
-### CPP exersizes:
+### CPP exercices:
 
 https://www.youtube.com/watch?v=fBb4cKbHbmI  C++ and ML
 
