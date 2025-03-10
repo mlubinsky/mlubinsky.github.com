@@ -1,6 +1,10 @@
 https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
 
-CPP exersizes
+### Best C++ talk
+https://www.reddit.com/r/cpp/comments/1ir2x5y/your_favorite_cppcon_talks/
+
+
+CPP exersizes:
 
 https://www.youtube.com/watch?v=fBb4cKbHbmI  C++ and ML
 
