@@ -265,6 +265,8 @@ https://blog.chewxy.com/2017/11/02/go-for-data-science/
 
 ### Error Handling
 
+https://rauljordan.com/why-go-error-handling-is-awesome/
+
 https://habr.com/ru/articles/850464/
 
 https://www.sohamkamani.com/golang/error-handling/
