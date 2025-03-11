@@ -11,8 +11,16 @@ https://www.amazon.com/dp/0136905692 Book
 https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
 
 
-### Использование неполных объявлений в C++
-https://habr.com/ru/articles/889808/
+### Список статей серии «C++, копаем вглубь»
+
+Перегрузка в C++. Часть I. Перегрузка функций и шаблонов.
+Перегрузка в C++. Часть II. Перегрузка операторов.
+Перегрузка в C++. Часть III. Перегрузка операторов new/delete.
+Массивы в C++.
+Ссылки и ссылочные типы в C++.
+Объявление и инициализация переменных в C++.
+Константность в C++.
+ Использование неполных объявлений в C++ https://habr.com/ru/articles/889808/
 
 ### 3rd party libs
 https://www.reddit.com/r/cpp/comments/1j7eiqo/recommended_thirdparty_libraries/
