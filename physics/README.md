@@ -29,7 +29,9 @@ https://www.feynmanlectures.caltech.edu/
 David Tong: Lectures on Theoretical Physics
 https://www.damtp.cam.ac.uk/user/tong/teaching.html
 
-https://knzhou.github.io/
+https://knzhou.github.io lectures and more
+
+https://news.ycombinator.com/item?id=43335695  perlocation and related topics
 
 https://eduardo.physics.illinois.edu/homepage/
 
