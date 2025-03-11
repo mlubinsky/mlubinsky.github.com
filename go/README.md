@@ -3,6 +3,9 @@ https://marketplace.visualstudio.com/items?itemName=golang.go   VS Code extensio
 https://www.bytesizego.com/courses/
 
 https://100go.co/
+
+https://dmitri.shuralyov.com/idiomatic-go
+
 https://jvns.ca/blog/2024/08/06/go-structs-copied-on-assignment/
 
 https://build-your-own.org/blog/20251015_db_in_3000/ build your database in GO
