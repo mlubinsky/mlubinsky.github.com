@@ -2,6 +2,8 @@ Book https://edu.postgrespro.com/postgresql_internals-14_en.pdf    Egor Rogov
 
 ### What I wish someone told me about Postgres
 
+https://mccue.dev/pages/3-11-25-life-altering-postgresql-patterns
+
 https://www.shayon.dev/post/2025/40/scaling-with-postgresql-without-boiling-the-ocean/
 
 https://github.com/Olshansk/postgres_for_everything?tab=readme-ov-file 
