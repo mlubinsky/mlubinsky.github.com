@@ -1,3 +1,11 @@
+### Tiling
+
+Window tiling icons are shown in the menu that appears when you hold the pointer over the green button in the upper-left corner of a window.
+
+They’re also shown next to the menu items you see when you choose Window > Move & Resize (or Window > Full Screen Tile) from the menu bar at the top of the screen.
+
+https://support.apple.com/guide/mac-help/mac-window-tiling-icons-keyboard-shortcuts-mchl9674d0b0/mac
+
 ### Useful embedded in MacOS   utils
 https://ss64.com/mac/  
 https://notes.billmill.org/computer_usage/mac_os/mac_os_command_line_programs.html  
