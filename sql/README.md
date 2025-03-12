@@ -7,8 +7,8 @@ https://www.edgedb.com/  Юрием Селивановым, CEO и co-founder Ed
 Regular expressions in SQL
 https://habr.com/ru/companies/otus/articles/851942/
 
-https://coffingdw.com/analytic-and-window-functions-for-all-systems-over-100-blogs/
-
+https://coffingdw.com/analytic-and-window-functions-for-all-systems-over-100-blogs/  
+https://coffingdw.com/date-functions-date-formats-and-timestamp-formats-for-all-databases-45-blogs-in-one/
 
 ### NULL 
 ```
