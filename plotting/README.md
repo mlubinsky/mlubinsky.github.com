@@ -7,6 +7,13 @@ https://habr.com/ru/companies/mws/articles/820959/
 Hippotable
 https://habr.com/ru/articles/823502/
 
+https://github.com/WW92030-STORAGE/VSC
+
+### Fastplotlib: GPU-accelerated, fast, and interactive plotting library
+ 
+https://medium.com/@caitlin9165/fastplotlib-driving-scientific-discovery-through-data-visualization-418f8bff094c
+
+https://news.ycombinator.com/item?id=43334190
 
 https://datoviz.org/ cross-platform, open-source, high-performance GPU scientific data visualization library written in C/C++ on top of the Khronos Vulkan graphics API and the glfw window library. It provides raw ctypes bindings in Python 🐍. In the long term, Datoviz will mostly be used as a VisPy 2.0 backend.
 
