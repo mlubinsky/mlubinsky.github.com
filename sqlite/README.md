@@ -3,6 +3,8 @@ https://github.com/manzt/quak  quak is a scalable data profiler for quickly scan
 
 https://github.com/uwdata/mosaic  framework for linking databases and interactive views.  https://idl.uw.edu/mosaic/
 
+https://yeet.cx/play
+
 ### DuckDB
 
 https://labs.quansight.org/blog/duckdb-when-used-to-frames
