@@ -1,6 +1,19 @@
 ### Install Python on Mac
 https://lobste.rs/s/rchiux/how_install_python_on_mac
 
+### UV
+https://bluesock.org/~willkg/blog/dev/switch_pyenv_to_uv.html
+
+https://news.ycombinator.com/item?id=43307563
+
+- uv python install <version> if you want a particular version of python to be installed
+
+- uv init --vcs none in each directory to initialize the python project
+
+- uv add [--dev] to add libraries to your venv
+
+- uv run <cmd> when you want to run a command in the venv
+
 ### PyInstaller
 https://lobste.rs/s/szslrx/how_convert_python_applications
 
