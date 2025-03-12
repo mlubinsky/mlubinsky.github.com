@@ -1,3 +1,8 @@
+
+https://github.com/manzt/quak  quak is a scalable data profiler for quickly scanning large tables, capturing interactions as executable SQL queries.
+
+https://github.com/uwdata/mosaic  framework for linking databases and interactive views.  https://idl.uw.edu/mosaic/
+
 ### DuckDB
 
 https://labs.quansight.org/blog/duckdb-when-used-to-frames
