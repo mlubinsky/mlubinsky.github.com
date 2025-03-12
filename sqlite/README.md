@@ -5,9 +5,25 @@ https://github.com/uwdata/mosaic  framework for linking databases and interactiv
 
 https://yeet.cx/play
 
+https://perspective.finos.org/
+
+https://prospective.co/
+
+https://sql-workbench.com/
+
+https://github.com/manifold-systems/manifold/blob/master/docs/articles/duckdb_info.md
+
+https://www.duckplot.com/
+
+https://motherduck.com/blog/introducing-column-explorer/
+
 ### DuckDB
 
+https://duckdb.org/2025/03/12/duckdb-ui.html
+
 https://labs.quansight.org/blog/duckdb-when-used-to-frames
+
+https://news.ycombinator.com/item?id=43342712
 
 https://milescole.dev/data-engineering/2024/12/12/Should-You-Ditch-Spark-DuckDB-Polars.html
 
