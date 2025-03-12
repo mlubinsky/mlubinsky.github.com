@@ -89,6 +89,8 @@ https://www.youtube.com/watch?v=9UIIMBqq1D4   : C tips
 
 https://github.com/oz123/awesome-c
 
+https://github.com/fragglet/c-algorithms
+
 https://github.com/stclib/STC  containers for C
 
 https://github.com/rurban/ctl containers for C
