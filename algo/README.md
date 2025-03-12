@@ -41,7 +41,7 @@ https://habr.com/ru/companies/ruvds/articles/885830/ Bloom filters for SQLite da
 
 https://justinjaffray.com/a-charming-algorithm-for-count-distinct/
  
-https://towardsdatascience.com/how-to-store-and-query-100-million-items-using-just-77mb-with-python-bloom-filters-6b3e8549f032
+https://towardsdatascience.com/how-to-store-and-query-100-million-items-ug-just-77mb-with-python-bloom-filters-6b3e8549f032
 
 https://boyter.org/posts/bloom-filter/ Bloom filter:  NO means NO
 
@@ -188,7 +188,8 @@ https://habr.com/ru/company/otus/blog/676692/
 ### Tree
 Breadth-first traversal (aka  level order traversal)  and Depth-first traversals
 
-Breadth-first traversal: This involves traversing the tree level by level, visiting all the nodes at a given level before moving on to the next level. Breadth-first traversal is also known as level order traversal.
+Breadth-first traversal: This involves traversing the tree level by level, visiting all the nodes at a given level before moving on to the next level.  
+Breadth-first traversal is also known as level order traversal.
 ```
 from collections import deque
 
@@ -336,6 +337,8 @@ https://pypi.org/project/circuitbreaker/
 https://news.ycombinator.com/item?id=23841491
 
 ### Succinct data struct
+
+https://habr.com/ru/companies/ruvds/articles/890232/
 
 https://github.com/miiohio/succinct
 
