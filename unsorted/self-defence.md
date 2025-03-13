@@ -121,36 +121,45 @@ Quantity: A 10- or 25-count pack is enough for occasional training.
 Recommendations for Carry and Use
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 For Everyday Carry (EDC):
-Primary: Load your Byrna with Byrna Pepper Projectiles (5-round magazine). They’re effective and legal in most U.S. states for self-defense, offering a balance of power and practicality.
-Backup: Carry a spare 5-round tube of Byrna Kinetic Projectiles. They’re less restricted, reusable, and still deliver a solid deterrent if you run out of Pepper rounds or face legal limits on chemicals.
+Primary: Load your Byrna with Byrna Pepper Projectiles (5-round magazine).
+They’re effective and legal in most U.S. states for self-defense, offering a balance of power and practicality.
+Backup: Carry a spare 5-round tube of Byrna Kinetic Projectiles. They’re less restricted, reusable,
+and still deliver a solid deterrent if you run out of Pepper rounds or face legal limits on chemicals.
 
-CO2: You’ll need 8g CO2 cartridges for the SD or 12g for the LE (with the Boost adapter). Carry at least one spare cartridge—each provides 20-30 shots depending on the model.
+CO2: You’ll need 8g CO2 cartridges for the SD or 12g for the LE (with the Boost adapter).
+Carry at least one spare cartridge—each provides 20-30 shots depending on the model.
 
 For Home Defense:
 ------------------
 Primary: Load Byrna Max Projectiles for the strongest effect against intruders. Keep a 5-count tube ready in your launcher.
-Backup: Have Kinetic Projectiles (e.g., 25-count) nearby for follow-up shots or if you need a non-chemical option (e.g., for pets or family in the vicinity).
+Backup: Have Kinetic Projectiles (e.g., 25-count) nearby for follow-up shots or if you need a non-chemical option
+(e.g., for pets or family in the vicinity).
 CO2: Keep a few extra cartridges (8g for SD, 12g for LE) stored with your launcher.
 
 For Training:
 --------------
-Buy a larger pack of Kinetic Projectiles (95-count) for regular practice—they’re durable and cost-effective. Add a small pack of Eco-Kinetic (50-count) if you shoot outdoors and want easy cleanup.
+Buy a larger pack of Kinetic Projectiles (95-count) for regular practice—they’re durable and cost-effective.
+Add a small pack of Eco-Kinetic (50-count) if you shoot outdoors and want easy cleanup.
 Optionally, grab a 10-count of Pro-Training Projectiles to simulate chemical rounds once or twice.
 Practical Tips
 
-Mix and Match: For carry, load a mix of Kinetic and Pepper rounds (e.g., 3 Kinetic, 2 Pepper) to cover different scenarios—impact for close range, chemical for distance.
+Mix and Match:
+For carry, load a mix of Kinetic and Pepper rounds (e.g., 3 Kinetic, 2 Pepper) to cover different scenarios—impact for close range, chemical for distance.
 
-Storage: Keep ammo in a cool, dry place (20-120°F) to avoid CO2 ruptures or chemical degradation. Projectiles are potent for 5 years but cycle them every 18 months for reliability.
+Storage:
+Keep ammo in a cool, dry place (20-120°F) to avoid CO2 ruptures or chemical degradation.
+Projectiles are potent for 5 years but cycle them every 18 months for reliability.
 
 Legal Check: Before carrying chemical rounds (Pepper or Max), confirm your local regulations. Kinetic rounds are the safest bet for universal carry.
 
 Where to Buy
 ----------------
-You can purchase these directly from Byrna’s website (byrna.com), authorized dealers like Atomic Defense, or retailers like Amazon. Prices vary: Kinetic rounds are around $25-$50 for 95, Pepper/Max are $25-$30 for 5, and Eco-Kinetic are $40-$50 for 50.
+You can purchase these directly from Byrna’s website (byrna.com),
+authorized dealers like Atomic Defense, or retailers like Amazon.
+Prices vary:
+Kinetic rounds are around $25-$50 for 95, Pepper/Max are $25-$30 for 5, and Eco-Kinetic are $40-$50 for 50.
 
-For a well-rounded setup, start with a 95-count Kinetic pack for practice and a 5-count Pepper or Max tube for carry. Adjust based on your needs and local laws. What’s your primary use case—self-defense, training, or both? That’ll help narrow it down further!
-
-
+For a well-rounded setup, start with a 95-count Kinetic pack for practice and a 5-count Pepper or Max tube for carry.
 
 ```
 
