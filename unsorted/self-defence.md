@@ -19,6 +19,14 @@ These devices shoot pepper-filled projectiles or spray a pepper mist, providing 
 Top Picks:
 #### Byrna SD / Byrna LE
 
+```
+The main difference between a Byrna SD and a Byrna LE is that the LE model is significantly more powerful,
+with a higher projectile velocity and greater shot capacity compared to the SD,
+making it primarily designed for law enforcement use while the SD is considered a more general self-defense option for civilians;
+the SD is also generally more affordable than the LE. 
+```
+
+
 https://byrna.com/products/byrna-kinetic-projectiles-95ct
 
 Shoots pepper ball projectiles up to 60 feet.
