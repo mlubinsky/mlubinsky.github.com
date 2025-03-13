@@ -10,6 +10,10 @@ https://habr.com/ru/companies/timeweb/articles/873430/
 http://lucumr.pocoo.org/2025/1/30/how-i-ai
 
 
+### GTD getting things done
+
+https://habr.com/ru/articles/890522/
+
 ### EDA
 https://woset-workshop.github.io/
 
