@@ -4,6 +4,32 @@ https://newsletter.scalablethread.com/p/how-message-queues-work
 
 https://encore.dev/blog/queueing
 
+### Offset Explorer (formerly Kafka Tool) 
+
+https://www.kafkatool.com/download.html
+
+https://habr.com/ru/companies/idaproject/articles/889600/
+```
+приложение с графическим интерфейсом для работы с Kafka.
+
+ОЕ позволяет быстро просматривать объекты в кластере Kafka, а также работать с сообщениями в топиках кластера.
+
+Что позволяет делать OE:
+
+просматривать содержимое кластеров Kafka, включая брокеров, топики и consumer’ов
+
+просматривать и добавлять сообщения в партиции
+
+просматривать и выставлять offset у consumer
+
+выводить сообщения в JSON, XML и Avro формате с возможностью их локального сохранения
+
+управлять топиками, их конфигурациями
+
+обеспечить поддержку протоколов и механизмов аутентификации и шифрования для Apache Kafka
+
+писать свои собственные плагины для вывода кастомных форматов данных и т.д.
+```
 ### Kafka
 
 https://habr.com/ru/articles/880700/ Kafka на Python
