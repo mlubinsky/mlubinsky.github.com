@@ -7,16 +7,19 @@ by causing irritation to the eyes, skin, and respiratory system.
 
 Other aerosol-based self-defense options include:
 
-Tear gas sprays (CS gas, CN gas) – Used for personal protection but can be restricted in some areas.
-Dye sprays – Non-irritant sprays that mark an attacker for later identification.
+-  Tear gas sprays (CS gas, CN gas) – Used for personal protection but can be restricted in some areas.  
+-  Dye sprays – Non-irritant sprays that mark an attacker for later identification.
+  
 However, using aerosol sprays for self-defense depends on local laws—some countries or states regulate or prohibit certain sprays.
-Would you like guidance on legal aspects in your region?
+ 
 
 #### 1. Pepper Ball / Pepper Spray Guns
 These devices shoot pepper-filled projectiles or spray a pepper mist, providing non-lethal defense at a distance.
 
 Top Picks:
 #### Byrna SD / Byrna LE
+
+https://byrna.com/products/byrna-kinetic-projectiles-95ct
 
 Shoots pepper ball projectiles up to 60 feet.
 CO₂-powered, no firearm license needed in most areas.
