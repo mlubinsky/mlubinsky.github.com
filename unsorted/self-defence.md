@@ -30,6 +30,7 @@ the SD is also generally more affordable than the LE.
 If you plan to carry a Byrna SD or Byrna LE for self-defense, you should get additional ammunition types based on your needs:
 
 1. Self-Defense Ammunition (Best for Personal Protection)
+********************************************************
 Byrna Pepper (OC/CS) Projectiles 🟠🔥
 
 Contains Oleoresin Capsicum (OC) + Tear Gas (CS).
@@ -40,7 +41,9 @@ Byrna Max Projectiles 🟠🔥🔥 (Most Potent)
 Strongest pepper + tear gas formula.
 Effects last longer than regular Byrna Pepper rounds.
 Best for high-threat situations.
+
 2. Less-Lethal Impact Ammo (Non-Chemical Defense)
+************************************************
 Byrna Kinetic Projectiles ⚪️🥊
 
 Hard plastic rounds for pain compliance.
@@ -50,11 +53,14 @@ Byrna Eco-Kinetic Projectiles ♻️⚪️
 
 Biodegradable, training-friendly alternative to Kinetic rounds.
 Less impact force but good for practice and deterrence.
+
 3. Training & Practice Rounds (For Accuracy & Familiarization)
+************************************************************
 Byrna Inert Projectiles ⚫️🔵
 No chemical or impact effects.
 Same weight & flight characteristics as defense rounds.
 Ideal for practice shooting without wasting expensive ammo.
+
 Recommended Carry Loadout
 If carrying the Byrna SD / LE for self-defense:
 ✅ 1 magazine loaded with Byrna Max or Pepper rounds (for threats).
