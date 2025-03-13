@@ -19,7 +19,7 @@ These devices shoot pepper-filled projectiles or spray a pepper mist, providing 
 Top Picks:
 #### Byrna SD / Byrna LE
 
-https://nwsafe.com/pages/byrna-launcher-comparison?srsltid=AfmBOoriCNCGK8Ba0bo8m_BILQkeX-BluyQkE4BrPuMLODNLpEwQ5L1T
+https://nwsafe.com/pages/byrna-launcher-comparison
 ```
 The main difference between a Byrna SD and a Byrna LE is that the LE model is significantly more powerful,
 with a higher projectile velocity and greater shot capacity compared to the SD,
