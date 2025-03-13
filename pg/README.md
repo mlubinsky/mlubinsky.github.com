@@ -24,6 +24,14 @@ https://notso.boringsql.com/
 
 https://habr.com/ru/companies/tensor/articles/870222/
 
+#### Composite index
+
+To speed up SELECT queries that always use columns A and B in the WHERE clause, the best approach is to create a composite (multi-column) index on (A, B).
+
+Recommended Index:
+
+CREATE INDEX idx_t_a_b ON T (A, B);
+
 ### Postgres is enough:
 
 https://github.com/Olshansk/postgres_for_everything?tab=readme-ov-file 
