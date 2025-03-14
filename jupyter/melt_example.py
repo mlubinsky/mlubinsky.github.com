@@ -11,6 +11,9 @@ df1.drop(columns=['DUT_NUM'], inplace=True)
 #pandas automatically suffixes the overlapping column names with
 #_x  (for df1) and _y (for df2).
 
+### DROP SEVERAL COLUMNS
+columns_to_drop = ['B', 'D']
+df_dropped = df.drop(columns=columns_to_drop)
 
 import pandas as pd
 
@@ -72,7 +75,34 @@ try:
 except ValueError as e:
   print(f"\nError: {e}")
 
+### CASE-INSENITIVE JOIN
+#--------------------------
+import pandas as pd
 
+# Sample DataFrames
+df1 = pd.DataFrame({
+    'key': ['Apple', 'BANANA', 'Cherry'],
+    'value1': [1, 2, 3]
+})
+
+df2 = pd.DataFrame({
+    'key': ['apple', 'Banana', 'CHERRY'],
+    'value2': [10, 20, 30]
+})
+
+# Perform case-insensitive join by converting 'key' columns to lowercase
+df_merged = pd.merge(
+    df1,
+    df2,
+    left_on=df1['key'].str.lower(),
+    right_on=df2['key'].str.lower(),
+    how='inner'  # or 'left', 'right', 'outer' depending on your needs
+)
+
+# Drop the duplicate 'key' column from df2 if needed
+df_merged = df_merged.drop(columns=['key_y']).rename(columns={'key_x': 'key'})
+
+print(df_merged)
 
 
 import pandas as pd
