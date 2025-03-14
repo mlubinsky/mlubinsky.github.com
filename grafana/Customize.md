@@ -1,5 +1,33 @@
 ###
 ```
+In Grafana dashboard  there is a table.
+I know how to assign the  background colors to every cell for specific column: 
+I use Override, select field with name, add thresholds and add the Color Scheme Cell options -> cell type -> colored background.
+
+What I need is to apply this Override not to the entire column but only  for cells in this column where value in another column is equal to "A" 
+
+ChatGPT said:
+Grafana's built-in table visualization does not directly support conditional formatting based on values in another column. However, you can achieve this using Transformations and Overrides together:
+
+Steps:
+Add a "Calculate field" Transformation
+
+Go to Transform → Add transformation → Add field from calculation.
+Use the expression if($Your_Condition_Column == "A", $Your_Target_Column, null).
+This creates a new column that contains values from the target column only when the condition is met.
+Apply Overrides to the New Column
+
+Go to Overrides → Add override → Select the new calculated column.
+Add Thresholds and Color Scheme (same as you did for the full column before).
+Set Cell display mode to Colored background.
+Hide the New Column (Optional)
+
+If you only need the formatting effect, hide the new column by setting Display mode to Hidden.
+This way, only the cells in your target column where another column equals "A" will be colored, while the rest remain unaffected.
+```
+
+### Override cell color background
+```
 To make the cells in a numeric column turn red if they exceed a certain threshold in a Grafana Dashboard table, follow these steps:
 
 Steps:
