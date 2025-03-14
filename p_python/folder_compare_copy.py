@@ -1,3 +1,10 @@
+def get_parent_folder(path: str) -> str:
+    return os.path.dirname(path)
+
+def get_two_levels_up(path: str) -> str:
+    return os.path.dirname(os.path.dirname(path))
+
+
 def find_score_files(folder: str) -> dict:
     result = {}
     
