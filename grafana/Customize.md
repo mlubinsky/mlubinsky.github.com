@@ -2,12 +2,16 @@
 ```
 In Grafana dashboard  there is a table.
 I know how to assign the  background colors to every cell for specific column: 
-I use Override, select field with name, add thresholds and add the Color Scheme Cell options -> cell type -> colored background.
+I use Override, select field with name, add thresholds and
+add the Color Scheme Cell options -> cell type -> colored background.
 
-What I need is to apply this Override not to the entire column but only  for cells in this column where value in another column is equal to "A" 
+What I need is to apply this Override not to the entire column
+but only  for cells in this column where value in another column is equal to "A" 
 
 ChatGPT said:
-Grafana's built-in table visualization does not directly support conditional formatting based on values in another column. However, you can achieve this using Transformations and Overrides together:
+
+Grafana's built-in table visualization does not directly support conditional formatting based on values in another column.
+However, you can achieve this using Transformations and Overrides together:
 
 Steps:
 Add a "Calculate field" Transformation
