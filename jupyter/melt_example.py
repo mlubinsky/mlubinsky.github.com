@@ -12,6 +12,68 @@ df1.drop(columns=['DUT_NUM'], inplace=True)
 #_x  (for df1) and _y (for df2).
 
 
+import pandas as pd
+
+def reorder_columns(df, new_order):
+    """
+    Reorders the columns of a pandas DataFrame.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to reorder.
+        new_order (list): A list of column names in the desired order.
+
+    Returns:
+        pd.DataFrame: The DataFrame with reordered columns.
+    """
+
+    # Check if all columns in new_order exist in the DataFrame
+    if not all(col in df.columns for col in new_order):
+        raise ValueError("One or more columns in 'new_order' not found in the DataFrame.")
+
+    # Check for duplicate column names in new_order.
+    if len(new_order) != len(set(new_order)):
+        raise ValueError("Duplicate column names found in 'new_order'.")
+
+    # Check if all original columns are included in new_order.
+    if len(new_order) != len(df.columns):
+        raise ValueError("Not all original columns are included in 'new_order'.")
+
+    return df[new_order]
+
+# Example usage:
+data = {'col1': [1, 2, 3], 'col2': ['a', 'b', 'c'], 'col3': [True, False, True]}
+df = pd.DataFrame(data)
+
+new_order = ['col3', 'col1', 'col2']
+reordered_df = reorder_columns(df, new_order)
+
+print("Original DataFrame:")
+print(df)
+
+print("\nReordered DataFrame:")
+print(reordered_df)
+
+#Example of an error being raised.
+try:
+  bad_order = ['col3', 'col1', 'col4']
+  reordered_df = reorder_columns(df, bad_order)
+except ValueError as e:
+  print(f"\nError: {e}")
+
+try:
+  bad_order = ['col3', 'col1', 'col1']
+  reordered_df = reorder_columns(df, bad_order)
+except ValueError as e:
+  print(f"\nError: {e}")
+
+try:
+  bad_order = ['col3', 'col1']
+  reordered_df = reorder_columns(df, bad_order)
+except ValueError as e:
+  print(f"\nError: {e}")
+
+
+
 
 import pandas as pd
 
