@@ -1,3 +1,10 @@
+# There are 2 pandas dataframes: df1 and df2. There is column DUT in df1 and there columns DUT_NUM, date, test_loc, chipset, dut_model   in df2.
+I need to do left join between df1 and d2 based on matching DUT and DUT_NUM column.
+I need to add columns date, test_loc, chipset, dut_model  to df1 and populate it from df2
+  
+
+
+
 import csv
 import numpy as np
 import pandas as pd
