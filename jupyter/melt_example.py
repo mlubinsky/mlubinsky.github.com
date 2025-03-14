@@ -13,6 +13,42 @@ df1.drop(columns=['DUT_NUM'], inplace=True)
 
 
 
+import pandas as pd
+
+def case_insensitive_join(df1, df2, left_on, right_on, how='left'):
+    """
+    Performs a case-insensitive join of two pandas DataFrames.
+
+    Args:
+        df1 (pd.DataFrame): The left DataFrame.
+        df2 (pd.DataFrame): The right DataFrame.
+        left_on (str): The column name in df1 to join on.
+        right_on (str): The column name in df2 to join on.
+        how (str, optional): The type of join to perform. Defaults to 'left'.
+
+    Returns:
+        pd.DataFrame: The joined DataFrame.
+    """
+
+    df1_copy = df1.copy()
+    df2_copy = df2.copy()
+
+    df1_copy[left_on + '_lower'] = df1_copy[left_on].str.lower()
+    df2_copy[right_on + '_lower'] = df2_copy[right_on].str.lower()
+
+    merged_df = pd.merge(df1_copy, df2_copy, left_on=left_on + '_lower', right_on=right_on + '_lower', how=how, suffixes=('_df1', '_df2'))
+
+    merged_df.drop([left_on + '_lower', right_on + '_lower'], axis=1, inplace=True)
+
+    return merged_df
+
+# Example usage:
+data1 = {'A': ['Apple', 'banana', 'Cherry', 'dATE'], 'Value1': [1, 2, 3, 4]}
+df1 = pd.DataFrame(data1)
+
+
+
+
 import csv
 import numpy as np
 import pandas as pd
