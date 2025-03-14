@@ -7,6 +7,11 @@ df1 = df1.merge(df2, left_on='DUT', right_on='DUT_NUM', how='left')
 # Drop DUT_NUM since it's redundant after merging
 df1.drop(columns=['DUT_NUM'], inplace=True)
 
+#  if df1 and df2 have common column names (other than the join keys), 
+#pandas automatically suffixes the overlapping column names with
+#_x  (for df1) and _y (for df2).
+
+
 
 import csv
 import numpy as np
