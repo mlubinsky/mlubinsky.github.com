@@ -1,3 +1,19 @@
+def find_score_files(folder: str) -> dict:
+    result = {}
+    
+    for root, dirs, files in os.walk(folder):
+        if os.path.basename(root) == "GDC_Output":
+            score_files = [f for f in files if f.endswith("_score.csv")]
+            for score_file in score_files:
+                score_path = os.path.join(root, score_file)
+                a_csv_path = os.path.join(root, "a.csv")
+                result[score_path] = a_csv_path if os.path.exists(a_csv_path) else None
+    
+    return result
+
+
+
+################
 import filecmp
 import os
 
