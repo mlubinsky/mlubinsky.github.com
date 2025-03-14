@@ -15,6 +15,23 @@ df1.drop(columns=['DUT_NUM'], inplace=True)
 columns_to_drop = ['B', 'D']
 df_dropped = df.drop(columns=columns_to_drop)
 
+### REORDER COLUMNS
+#------------------
+
+df = pd.DataFrame({
+    'A': [1, 2, 3],
+    'B': [4, 5, 6],
+    'C': [7, 8, 9]
+})
+
+# Define the new column order
+new_order = ['C', 'A', 'B']
+
+# Reorder columns
+df = df[new_order]
+
+print(df)
+
 import pandas as pd
 
 def reorder_columns(df, new_order):
