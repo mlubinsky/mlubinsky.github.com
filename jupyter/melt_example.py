@@ -102,6 +102,71 @@ and the corresponding values in REF, DUT column need to be stored into new colum
 2)
 The rows with "AVG" value in V_S_A  column need to be preserved; the values of  REF, DUT column for such rows  need to be in REF_Score, DUT_score columns.
 #-----
+ 
+import pandas as pd
+
+# Assuming your original dataframe is called 'df'
+def transform_dataframe(df):
+    # First, let's separate the AVG rows from Value/Score rows
+    df_avg = df[df['V_S_A'] == 'AVG'].copy()
+    df_vs = df[df['V_S_A'].isin(['Value', 'Score'])].copy()
+    
+    # Pivot the Value/Score rows
+    df_pivot = df_vs.pivot_table(
+        index=['Category', 'ITEM'],
+        columns='V_S_A',
+        values=['REF', 'DUT'],
+        aggfunc='first'  # Take first value if duplicates exist
+    )
+    
+    # Flatten the multi-level column names
+    df_pivot.columns = [f'{col[0]}_{col[1]}' for col in df_pivot.columns]
+    df_pivot = df_pivot.reset_index()
+    
+    # Rename columns to match exact requirement
+    df_pivot = df_pivot.rename(columns={
+        'REF_Value': 'REF_value',
+        'REF_Score': 'REF_Score',
+        'DUT_Value': 'DUT_value',
+        'DUT_Score': 'DUT_score'
+    })
+    
+    # Prepare AVG rows with required column names
+    df_avg = df_avg[['Category', 'ITEM', 'REF', 'DUT']]
+    df_avg = df_avg.rename(columns={
+        'REF': 'REF_Score',
+        'DUT': 'DUT_score'
+    })
+    
+    # Add missing columns to AVG rows with NaN
+    for col in ['REF_value', 'DUT_value']:
+        df_avg[col] = pd.NA
+    
+    # Combine both dataframes
+    result_df = pd.concat([df_pivot, df_avg], ignore_index=True)
+    
+    # Order columns as per requirement
+    column_order = ['Category', 'ITEM', 'REF_value', 'REF_Score', 'DUT_value', 'DUT_score']
+    result_df = result_df[column_order]
+    
+    return result_df
+
+# Example usage:
+# Create sample dataframe
+data = {
+    'Category': ['A', 'A', 'A', 'B', 'B'],
+    'ITEM': ['X', 'X', 'X', 'Y', 'Y'],
+    'V_S_A': ['Value', 'Score', 'AVG', 'Value', 'AVG'],
+    'REF': [1, 2, 3, 4, 5],
+    'DUT': [10, 20, 30, 40, 50]
+}
+df = pd.DataFrame(data)
+
+# Transform the dataframe
+result = transform_dataframe(df)
+print(result)
+
+#---------
 
 def transform_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     # Filter out rows where V_S_A is "Value" or "Score" and keep only "AVG" rows
