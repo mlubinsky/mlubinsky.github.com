@@ -37,6 +37,18 @@ pandas                 1.0.5   # pandas                 1.0.5  ValueError: Shape
 
 pandas                 1.3.4 STEP 0001 df.shape= (53, 6)
 
+
+#-----
+There is pandas dataframe with columns TEST, Category, ITEM, V_S_A, REF, DUT
+In column V_S_A only 3 values are possible: Value, Score, AVG.
+Please transform it: 
+1)
+The rows with values "Value", "Score" in V_S_A column  for the same (Category, ITEM) need to be collupsed in single row and the corresponding values in REF, DUT column need to be stored into new columns:
+ REF_value, REF_Score, DUT_value, DUT_score.
+2)
+The REF, DUT column values for rows with values "AVG" in V_S_A column  need to be in REF_Score, DUT_score.
+#-----
+
 def transform_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     # Filter out rows where V_S_A is "Value" or "Score" and keep only "AVG" rows
     df_avg = df[df["V_S_A"] == "AVG"].copy()
