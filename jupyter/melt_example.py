@@ -1,3 +1,9 @@
+import numpy as np
+
+def replace_dash_with_nan(df: pd.DataFrame) -> None:
+    df[['A', 'B']] = df[['A', 'B']].replace('-', np.nan)
+
+
 RangeIndex: 53 entries, 0 to 52
 Data columns (total 6 columns):
  #   Column         Non-Null Count  Dtype
