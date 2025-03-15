@@ -56,7 +56,8 @@ df_ref = df_filtered.pivot(
     columns="VAL_SCORE_AVG", 
     values="REF"
 )
-
+ValueError: Length of passed values is 46, index implies 3.
+ 
 # Pivot for DUT
 df_dut = df_filtered.pivot(
     index=["TEST", "Category", "ITEM"], 
