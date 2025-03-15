@@ -1,3 +1,10 @@
+STEP 00001 df.shape= (37, 6)
+df_value_score = df[df["VAL_SCORE_AVG"].isin(["Value", "Score"])].pivot(index=["TEST", "Category", "ITEM"], columns="VAL_SCORE_AVG", values=["REF", "DUT"])
+pandas                 1.0.5   # pandas                 1.0.5  ValueError: Shape of passed values is (46, 2), indices imply (3, 2)
+
+
+pandas                 1.3.4 STEP 0001 df.shape= (53, 6)
+
 def transform_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     # Filter out rows where V_S_A is "Value" or "Score" and keep only "AVG" rows
     df_avg = df[df["V_S_A"] == "AVG"].copy()
@@ -20,9 +27,12 @@ def transform_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
 
 #---------
-To transform your Pandas DataFrame according to the specified requirements, we’ll need to reshape the data by pivoting or filtering rows based on the V_S_A column and then creating new columns (REF_value, REF_Score, DUT_value, DUT_score) with the appropriate values from REF and DUT. Here's how we can do it step-by-step:
+To transform your Pandas DataFrame according to the specified requirements,
+we’ll need to reshape the data by pivoting or filtering rows based on the V_S_A column and then creating new columns (REF_value, REF_Score, DUT_value, DUT_score) 
+with the appropriate values from REF and DUT. Here's how we can do it step-by-step:
 
 Problem Breakdown
+
 For rows where V_S_A is "Value" or "Score":
 Eliminate these rows from the final DataFrame.
 Store their REF values in new columns: REF_value (for "Value") and REF_Score (for "Score").
@@ -57,6 +67,7 @@ df_score = df[df['V_S_A'] == 'Score'][['TEST', 'Category', 'ITEM', 'REF', 'DUT']
 df_avg = df[df['V_S_A'] == 'AVG'][['TEST', 'Category', 'ITEM', 'REF', 'DUT']].rename(columns={'REF': 'REF_Score', 'DUT': 'DUT_score'})
 
 # Step 2: Merge the "Value" and "Score" data into the "AVG" DataFrame
+
 result = df_avg.merge(df_value[['TEST', 'Category', 'ITEM', 'REF_value', 'DUT_value']],
                       on=['TEST', 'Category', 'ITEM'],
                       how='left')\
