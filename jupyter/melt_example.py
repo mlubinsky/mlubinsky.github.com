@@ -1,3 +1,35 @@
+RangeIndex: 53 entries, 0 to 52
+Data columns (total 6 columns):
+ #   Column         Non-Null Count  Dtype
+---  ------         --------------  -----
+ 0   TEST           53 non-null     object
+ 1   Category       53 non-null     object
+ 2   ITEM           53 non-null     object
+ 3   VAL_SCORE_AVG  53 non-null     object
+ 4   REF            53 non-null     object
+ 5   DUT            53 non-null     object
+dtypes: object(6)
+memory usage: 2.6+ KB
+None
+STEP 0001 df.shape= (53, 6)  len(df)= 53
+
+
+
+RangeIndex: 53 entries, 0 to 52
+Data columns (total 6 columns):
+ #   Column         Non-Null Count  Dtype
+---  ------         --------------  -----
+ 0   TEST           53 non-null     object
+ 1   Category       53 non-null     object
+ 2   ITEM           53 non-null     object
+ 3   VAL_SCORE_AVG  53 non-null     object
+ 4   REF            53 non-null     object
+ 5   DUT            53 non-null     object
+dtypes: object(6)
+memory usage: 2.6+ KB
+None
+STEP 0001 df.shape= (53, 6)  len(df)= 53
+
 STEP 00001 df.shape= (37, 6)
 df_value_score = df[df["VAL_SCORE_AVG"].isin(["Value", "Score"])].pivot(index=["TEST", "Category", "ITEM"], columns="VAL_SCORE_AVG", values=["REF", "DUT"])
 pandas                 1.0.5   # pandas                 1.0.5  ValueError: Shape of passed values is (46, 2), indices imply (3, 2)
