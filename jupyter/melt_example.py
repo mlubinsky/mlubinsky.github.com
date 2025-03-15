@@ -39,7 +39,76 @@ pandas                 1.3.4 STEP 0001 df.shape= (53, 6)
 
 GROK
 #-----
+Duplicate Entries: In pandas 1.0.5, pivot doesn't handle duplicate index/column combinations well 
+(later versions introduced pivot_table for aggregation). 
+Check if your data has duplicates for the combination of index=["TEST", "Category", "ITEM"] 
+and columns="VAL_SCORE_AVG".
 
+Solution: Use pivot_table instead of pivot, which allows aggregation (e.g., mean, sum) for duplicates:
+
+df_value_score = df[df["VAL_SCORE_AVG"].isin(["Value", "Score"])].pivot_table(
+    index=["TEST", "Category", "ITEM"],
+    columns="VAL_SCORE_AVG",
+    values=["REF", "DUT"],
+    aggfunc="mean"  # or another aggregation function like "first"
+)
+Data Shape Mismatch: 
+The error indicates a mismatch between the number of rows in the index (46) a
+nd what pandas expects based on unique combinations (3). 
+This could be due to how multi-column values=["REF", "DUT"] is handled in the older version.
+
+Solution: Ensure the filtered DataFrame has the expected structure by inspecting it:
+ 
+filtered_df = df[df["VAL_SCORE_AVG"].isin(["Value", "Score"])]
+print(filtered_df.head())
+print(filtered_df.shape)
+print(filtered_df.duplicated(subset=["TEST", "Category", "ITEM", "VAL_SCORE_AVG"]).sum())
+If duplicates exist, pivot_table (as above) is the way to go.
+
+Version-Specific Behavior: 
+ Pandas 1.0.5 might not support multi-column values in pivot as seamlessly as 1.3.4. 
+ You could try pivoting one value at a time and then merging the results.
+
+Solution: Split the pivot operation:
+
+df_ref = df[df["VAL_SCORE_AVG"].isin(["Value", "Score"])].pivot(
+    index=["TEST", "Category", "ITEM"],
+    columns="VAL_SCORE_AVG",
+    values="REF"
+)
+df_dut = df[df["VAL_SCORE_AVG"].isin(["Value", "Score"])].pivot(
+    index=["TEST", "Category", "ITEM"],
+    columns="VAL_SCORE_AVG",
+    values="DUT"
+)
+df_value_score = pd.concat([df_ref, df_dut], axis=1)
+Recommended Fix
+Since you’re working with pandas 1.0.5 and need a robust solution, 
+I recommend using pivot_table as it’s more flexible and handles edge cases better across versions. 
+Here’s the adjusted code:
+
+ 
+import pandas as pd
+
+df_value_score = df[df["VAL_SCORE_AVG"].isin(["Value", "Score"])].pivot_table(
+    index=["TEST", "Category", "ITEM"],
+    columns="VAL_SCORE_AVG",
+    values=["REF", "DUT"],
+    aggfunc="first"  # Use "first" to mimic pivot behavior, or "mean" if aggregation is desired
+)
+aggfunc="first": Mimics the behavior of pivot by taking the first occurrence if there are duplicates.
+If your data requires aggregation (e.g., averaging duplicate entries), 
+you can replace "first" with "mean", "sum", etc.
+Next Steps
+Test the pivot_table solution with your data in pandas 1.0.5.
+ 
+
+
+
+
+
+
+*******************
 Solution for Pandas 1.0.5
 To make this work in pandas 1.0.5, you can try one of the following approaches:
 
