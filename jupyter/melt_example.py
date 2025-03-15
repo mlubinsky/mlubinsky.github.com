@@ -90,15 +90,17 @@ Use Approach 1 if you need an exact match to pivot behavior and your data has no
 Use Approach 2 if your data might have duplicates and you’re okay with aggregation (or can ensure uniqueness).
  
 #-----
-There is pandas dataframe with columns TEST, Category, ITEM, V_S_A, REF, DUT
-In column V_S_A only 3 values are possible: Value, Score, AVG.
-Please transform it: 
+There is pandas dataframe with columns  Category, ITEM, V_S_A, REF, DUT
+The every combination of  (Category, ITEM) may exist up to 3 rows with different values in V_S_A column                                  
+"Value", "Score", "AVG".
+Please transform this dataframe into new dataframe as below
+ using  pandas 1.0.5
 1)
-The rows with values "Value", "Score" in V_S_A column  for the same (Category, ITEM) need to be collupsed into single row 
+The rows with values "Value", "Score" in V_S_A column  for the same (Category, ITEM) need to be collapsed into the single row 
 and the corresponding values in REF, DUT column need to be stored into new columns:
  REF_value, REF_Score, DUT_value, DUT_score.
 2)
-The REF, DUT column values for rows with values "AVG" in V_S_A column  need to be in REF_Score, DUT_score.
+The rows with "AVG" value in V_S_A  column need to be preserved; the values of  REF, DUT column for such rows  need to be in REF_Score, DUT_score columns.
 #-----
 
 def transform_dataframe(df: pd.DataFrame) -> pd.DataFrame:
