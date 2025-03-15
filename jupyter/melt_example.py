@@ -1,12 +1,23 @@
-
 def transform_dataframe(df: pd.DataFrame) -> pd.DataFrame:
-    df_pivot = df.pivot(index=["TEST", "Category", "ITEM"], columns="V_S_A", values=["REF", "DUT"])
+    # Filter out rows where V_S_A is "Value" or "Score" and keep only "AVG" rows
+    df_avg = df[df["V_S_A"] == "AVG"].copy()
     
-    df_pivot.columns = [f"{col[0]}_{col[1].lower()}" for col in df_pivot.columns]
+    # Create pivoted columns for Value and Score
+    df_value_score = df[df["V_S_A"].isin(["Value", "Score"])].pivot(index=["TEST", "Category", "ITEM"], columns="V_S_A", values=["REF", "DUT"])
     
-    df_pivot.reset_index(inplace=True)
+    # Flatten the column names
+    df_value_score.columns = [f"{col[0]}_{col[1].lower()}" for col in df_value_score.columns]
+    df_value_score.reset_index(inplace=True)
     
-    return df_pivot
+    # Merge with AVG data, placing REF and DUT values into REF_Score and DUT_Score
+    df_avg.rename(columns={"REF": "REF_Score", "DUT": "DUT_Score"}, inplace=True)
+    df_avg.drop(columns=["V_S_A"], inplace=True)
+    
+    # Merge both dataframes
+    df_transformed = pd.merge(df_avg, df_value_score, on=["TEST", "Category", "ITEM"], how="left")
+    
+    return df_transformed
+
 
 #---------
 To transform your Pandas DataFrame according to the specified requirements, we’ll need to reshape the data by pivoting or filtering rows based on the V_S_A column and then creating new columns (REF_value, REF_Score, DUT_value, DUT_score) with the appropriate values from REF and DUT. Here's how we can do it step-by-step:
