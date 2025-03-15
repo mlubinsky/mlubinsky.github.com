@@ -1,3 +1,116 @@
+
+def transform_dataframe(df: pd.DataFrame) -> pd.DataFrame:
+    df_pivot = df.pivot(index=["TEST", "Category", "ITEM"], columns="V_S_A", values=["REF", "DUT"])
+    
+    df_pivot.columns = [f"{col[0]}_{col[1].lower()}" for col in df_pivot.columns]
+    
+    df_pivot.reset_index(inplace=True)
+    
+    return df_pivot
+
+#---------
+To transform your Pandas DataFrame according to the specified requirements, we’ll need to reshape the data by pivoting or filtering rows based on the V_S_A column and then creating new columns (REF_value, REF_Score, DUT_value, DUT_score) with the appropriate values from REF and DUT. Here's how we can do it step-by-step:
+
+Problem Breakdown
+For rows where V_S_A is "Value" or "Score":
+Eliminate these rows from the final DataFrame.
+Store their REF values in new columns: REF_value (for "Value") and REF_Score (for "Score").
+Store their DUT values in new columns: DUT_value (for "Value") and DUT_score (for "Score").
+For rows where V_S_A is "AVG":
+Keep these rows as the base of the final DataFrame.
+Move their REF values to REF_Score and DUT values to DUT_score.
+
+Assumptions
+The DataFrame has unique combinations of TEST, Category, and ITEM that can be used to align the "Value", "Score", and "AVG" rows.
+The transformation should result in a DataFrame where each row corresponds to the "AVG" case, augmented with new columns from "Value" and "Score" rows.
+
+Here’s the code to achieve this transformation:
+
+ 
+import pandas as pd
+
+# Example DataFrame (replace this with your actual DataFrame)
+data = {
+    'TEST': ['T1', 'T1', 'T1', 'T2', 'T2', 'T2'],
+    'Category': ['C1', 'C1', 'C1', 'C2', 'C2', 'C2'],
+    'ITEM': ['I1', 'I1', 'I1', 'I2', 'I2', 'I2'],
+    'V_S_A': ['Value', 'Score', 'AVG', 'Value', 'Score', 'AVG'],
+    'REF': [10, 20, 30, 40, 50, 60],
+    'DUT': [15, 25, 35, 45, 55, 65]
+}
+df = pd.DataFrame(data)
+
+# Step 1: Split the DataFrame based on V_S_A values
+df_value = df[df['V_S_A'] == 'Value'][['TEST', 'Category', 'ITEM', 'REF', 'DUT']].rename(columns={'REF': 'REF_value', 'DUT': 'DUT_value'})
+df_score = df[df['V_S_A'] == 'Score'][['TEST', 'Category', 'ITEM', 'REF', 'DUT']].rename(columns={'REF': 'REF_Score', 'DUT': 'DUT_score'})
+df_avg = df[df['V_S_A'] == 'AVG'][['TEST', 'Category', 'ITEM', 'REF', 'DUT']].rename(columns={'REF': 'REF_Score', 'DUT': 'DUT_score'})
+
+# Step 2: Merge the "Value" and "Score" data into the "AVG" DataFrame
+result = df_avg.merge(df_value[['TEST', 'Category', 'ITEM', 'REF_value', 'DUT_value']],
+                      on=['TEST', 'Category', 'ITEM'],
+                      how='left')\
+               .merge(df_score[['TEST', 'Category', 'ITEM', 'REF_Score', 'DUT_score']],
+                      on=['TEST', 'Category', 'ITEM'],
+                      how='left',
+                      suffixes=('_avg', '_score'))
+
+# Step 3: Combine REF_Score and DUT_score from "AVG" and "Score" rows
+# If there's a conflict, prioritize "AVG" values for REF_Score and DUT_score (as per requirement 2)
+result['REF_Score'] = result['REF_Score_avg'].combine_first(result['REF_Score_score'])
+result['DUT_score'] = result['DUT_score_avg'].combine_first(result['DUT_score_score'])
+
+# Step 4: Drop temporary columns and clean up
+result = result.drop(columns=['REF_Score_avg', 'REF_Score_score', 'DUT_score_avg', 'DUT_score_score'])
+
+# Final result
+print(result)
+
+
+Explanation
+------------
+Filtering Rows:
+
+df_value: Contains rows where V_S_A == "Value", with REF and DUT renamed to REF_value and DUT_value.
+df_score: Contains rows where V_S_A == "Score", with REF and DUT renamed to REF_Score and DUT_score.
+df_avg: Contains rows where V_S_A == "AVG", with REF and DUT renamed to REF_Score and DUT_score.
+
+Merging:
+---------
+Merge df_avg with df_value and df_score using TEST, Category, and ITEM as keys to align the data.
+Use how='left' to keep all rows from df_avg (the base DataFrame).
+Handling REF_Score and DUT_score:
+After merging, there are two sets of REF_Score and DUT_score columns (from "AVG" and "Score" rows).
+Use combine_first() to prioritize the "AVG" values (REF_Score_avg, DUT_score_avg) over the "Score" values (REF_Score_score, DUT_score_score), as per requirement 2.
+
+Cleanup:
+--------------
+Drop temporary columns created during the merge to get the final structure.
+Example Output
+For the example DataFrame:
+
+   TEST Category ITEM V_S_A  REF  DUT
+0    T1       C1   I1 Value   10   15
+1    T1       C1   I1 Score   20   25
+2    T1       C1   I1   AVG   30   35
+3    T2       C2   I2 Value   40   45
+4    T2       C2   I2 Score   50   55
+5    T2       C2   I2   AVG   60   65
+
+The result will be:
+
+  TEST Category ITEM  REF_Score  DUT_score  REF_value  DUT_value
+0   T1       C1   I1         30         35         10         15
+1   T2       C2   I2         60         65         40         45
+
+Notes
+Uniqueness: This assumes that TEST, Category, and ITEM uniquely identify groups of "Value", "Score", and "AVG" rows. If there are duplicates, you might need to adjust the merge logic (e.g., using aggregation or additional keys).
+Missing Data: If some groups lack "Value" or "Score" rows, the corresponding new columns will contain NaN.
+Requirement Interpretation: I interpreted "REF, DUT column values for rows with 'AVG' need to be in REF_Score, DUT_score" as meaning these values take precedence in the final REF_Score and DUT_score columns.
+
+
+### JOIN
+
+
 # There are 2 pandas dataframes: df1 and df2. There is column DUT in df1 and there columns DUT_NUM, date, test_loc, chipset, dut_model   in df2.
 # Do left join between df1 and d2 based on matching DUT and DUT_NUM column.
 # Add columns date, test_loc, chipset, dut_model  to df1 and populate it from df2
