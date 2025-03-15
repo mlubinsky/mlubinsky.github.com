@@ -37,13 +37,65 @@ pandas                 1.0.5   # pandas                 1.0.5  ValueError: Shape
 
 pandas                 1.3.4 STEP 0001 df.shape= (53, 6)
 
+GROK
+#-----
 
+Solution for Pandas 1.0.5
+To make this work in pandas 1.0.5, you can try one of the following approaches:
+
+Approach 1: Pivot for Each Value Column Separately
+Instead of passing multiple values to a single pivot call, perform the pivot operation separately for "REF" and "DUT", 
+then combine the results. This avoids the multi-value reshaping issue:
+ 
+# Filter the dataframe
+df_filtered = df[df["VAL_SCORE_AVG"].isin(["Value", "Score"])]
+
+# Pivot for REF
+df_ref = df_filtered.pivot(
+    index=["TEST", "Category", "ITEM"], 
+    columns="VAL_SCORE_AVG", 
+    values="REF"
+)
+
+# Pivot for DUT
+df_dut = df_filtered.pivot(
+    index=["TEST", "Category", "ITEM"], 
+    columns="VAL_SCORE_AVG", 
+    values="DUT"
+)
+
+# Combine the results
+df_value_score = pd.concat([df_ref, df_dut], axis=1, keys=["REF", "DUT"])
+This approach ensures compatibility with pandas 1.0.5 by breaking the problem into simpler steps that the older version can handle.
+
+Approach 2: Use pivot_table Instead of pivot
+The pivot_table function is more flexible than pivot and often handles multi-value cases better in older pandas versions.
+It also allows aggregation (e.g., mean by default), but if your data has unique combinations of index and columns, it will behave similarly to pivot. Try this:
+ 
+df_value_score = pd.pivot_table(
+    df[df["VAL_SCORE_AVG"].isin(["Value", "Score"])],
+    index=["TEST", "Category", "ITEM"],
+    columns="VAL_SCORE_AVG",
+    values=["REF", "DUT"]
+)
+If your data has duplicate entries for the same index and columns combination, pivot_table will aggregate them (e.g., by taking the mean). If you need to avoid aggregation and ensure the behavior matches pivot, you’ll need to confirm your data has no duplicates, or use Approach 1.
+
+Why This Happens
+In pandas 1.0.5, the pivot function was less robust when dealing with multiple values columns compared to later versions like 1.3.4. 
+The shape mismatch error indicates that the reshaping logic couldn’t reconcile the number of rows in the resulting pivot table with the expected structure.
+By pandas 1.3.4, this behavior was improved, which is why your original code works fine there.
+
+Recommendation
+Use Approach 1 if you need an exact match to pivot behavior and your data has no duplicate index-column combinations.
+Use Approach 2 if your data might have duplicates and you’re okay with aggregation (or can ensure uniqueness).
+ 
 #-----
 There is pandas dataframe with columns TEST, Category, ITEM, V_S_A, REF, DUT
 In column V_S_A only 3 values are possible: Value, Score, AVG.
 Please transform it: 
 1)
-The rows with values "Value", "Score" in V_S_A column  for the same (Category, ITEM) need to be collupsed in single row and the corresponding values in REF, DUT column need to be stored into new columns:
+The rows with values "Value", "Score" in V_S_A column  for the same (Category, ITEM) need to be collupsed into single row 
+and the corresponding values in REF, DUT column need to be stored into new columns:
  REF_value, REF_Score, DUT_value, DUT_score.
 2)
 The REF, DUT column values for rows with values "AVG" in V_S_A column  need to be in REF_Score, DUT_score.
