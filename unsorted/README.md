@@ -21,6 +21,9 @@ https://github.com/nturley/netlistsvg
 
 https://www.concept.de/
 
+https://www.kicad.org/  
+https://librepcb.org/ electronic design automation suite to draw schematics and design printed circuit boards 
+
 https://www.intel.com/content/www/us/en/docs/programmable/683230/18-1/netlist-viewer-user-interface.html
 
 https://web.open-source-silicon.dev/t/5017868/does-anyone-know-a-good-way-to-view-netlists-as-schematics
