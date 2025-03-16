@@ -1,5 +1,7 @@
 https://blog.codingconfessions.com/p/gpu-computing
 
+https://www.youtube.com/watch?v=h9Z4oGN89MU
+
 https://medium.com/@muhammedashraf2661/cuda-programming-an-introduction-to-gpu-architecture-dfd8dfffa13f
 
 https://blog.codingconfessions.com/p/gpu-computing
