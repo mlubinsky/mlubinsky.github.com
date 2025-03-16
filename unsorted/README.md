@@ -15,6 +15,13 @@ http://lucumr.pocoo.org/2025/1/30/how-i-ai
 https://habr.com/ru/articles/890522/
 
 ### EDA
+
+https://habr.com/ru/companies/ruvds/articles/832252/ свойства биполярных транзисторов
+
+https://habr.com/ru/companies/ruvds/articles/889106/ усилительный каскад на биполярном транзисторе
+
+https://habr.com/ru/companies/baikalelectron/articles/863664/ Разработка современного микропроцессора 
+
 https://woset-workshop.github.io/
 
 https://github.com/nturley/netlistsvg
