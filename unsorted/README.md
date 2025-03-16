@@ -16,11 +16,15 @@ https://habr.com/ru/articles/890522/
 
 ### EDA
 
+https://habr.com/ru/companies/yadro/articles/870068/ подкаст «Битовые маски»
+
 https://habr.com/ru/companies/ruvds/articles/832252/ свойства биполярных транзисторов
 
 https://habr.com/ru/companies/ruvds/articles/889106/ усилительный каскад на биполярном транзисторе
 
 https://habr.com/ru/articles/890736/ основы  аналоговой электроники 
+
+https://habr.com/ru/companies/timeweb/articles/876798/ экзаменационное задание по схемотехнике
 
 https://habr.com/ru/companies/baikalelectron/articles/863664/ Разработка современного микропроцессора 
 
