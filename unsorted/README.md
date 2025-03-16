@@ -18,6 +18,8 @@ https://habr.com/ru/articles/890522/
 
 https://www.youtube.com/watch?v=h3HWUPoFghk Разработка электроники в эпоху перемен 
 
+https://habr.com/ru/companies/yadro/articles/868788/  МИЭТ магистратура, где студенты разрабатывают чипы
+
 https://habr.com/ru/companies/yadro/articles/870068/ подкаст «Битовые маски»
 
 https://habr.com/ru/articles/868992/ Электроника в вопросах и ответах
