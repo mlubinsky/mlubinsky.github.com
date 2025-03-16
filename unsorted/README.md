@@ -16,6 +16,8 @@ https://habr.com/ru/articles/890522/
 
 ### EDA
 
+https://www.youtube.com/watch?v=h3HWUPoFghk Разработка электроники в эпоху перемен 
+
 https://habr.com/ru/companies/yadro/articles/870068/ подкаст «Битовые маски»
 
 https://habr.com/ru/companies/ruvds/articles/832252/ свойства биполярных транзисторов
