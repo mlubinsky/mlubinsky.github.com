@@ -15,6 +15,25 @@ http://lucumr.pocoo.org/2025/1/30/how-i-ai
 https://habr.com/ru/articles/890522/
 
 ### EDA
+Основы радиотехники, Григорьев А. А., 04.02.2021
+https://www.youtube.com/watch?v=7KjJ26nVc9o&list=PLthfp5exSWEphKXCieHltL9mvY5CiUtnZ
+
+https://www.youtube.com/playlist?list=PLthfp5exSWEphKXCieHltL9mvY5CiUtnZ
+
+https://www.youtube.com/@818galitskiykirilldanilovi4  Основы радиотехники, Григорьев А.А.
+
+Методы обработки радиотехнических сигналов, Григорьев А. А., 01.02.2022г.
+https://www.youtube.com/watch?v=p3unG0UYtLI&list=PLthfp5exSWEruGYdNx0UppUK8X2TLTxT0
+
+Методы обработки радиотехнических сигналов, Григорьев. А. А. 02.02.2021г.
+https://www.youtube.com/watch?v=l3XP7bLAtt4&list=PLthfp5exSWEoCVkqVTIiWPtXa7pm8wiaN
+
+Нелинейные преобразования и прием радиосигналов, Григорьев. А. А., 02.02.2021
+https://www.youtube.com/watch?v=vTAfuwSPQqo&list=PLthfp5exSWEowmdL5y-y3x_7e1iD8jr5Y
+
+Теория информации, Григорьев А.А., Лекция 01, 05.09.20
+https://www.youtube.com/playlist?list=PLthfp5exSWEpUcha2Lb-64Ty6JRBiS9wK
+
 
 https://www.youtube.com/watch?v=h3HWUPoFghk Разработка электроники в эпоху перемен 
 
