@@ -20,9 +20,15 @@ https://habr.com/ru/companies/ruvds/articles/832252/ свойства бипол
 
 https://habr.com/ru/companies/ruvds/articles/889106/ усилительный каскад на биполярном транзисторе
 
+https://habr.com/ru/articles/890736/ основы  аналоговой электроники 
+
 https://habr.com/ru/companies/baikalelectron/articles/863664/ Разработка современного микропроцессора 
 
 https://habr.com/ru/companies/yadro/articles/883322/ Разработка и производство современных ASIC/SoC глазами тополога
+
+https://electronix.ru/forum/
+
+https://habr.com/ru/articles/883124/ Keysight ADS
 
 https://woset-workshop.github.io/
 
