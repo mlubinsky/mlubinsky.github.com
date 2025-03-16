@@ -22,6 +22,8 @@ https://habr.com/ru/companies/ruvds/articles/889106/ усилительный к
 
 https://habr.com/ru/companies/baikalelectron/articles/863664/ Разработка современного микропроцессора 
 
+https://habr.com/ru/companies/yadro/articles/883322/ Разработка и производство современных ASIC/SoC глазами тополога
+
 https://woset-workshop.github.io/
 
 https://github.com/nturley/netlistsvg
