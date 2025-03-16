@@ -1,5 +1,9 @@
 sudo ln -s /usr/bin/python3 /usr/bin/python
 
+https://dabeaz.com/
+
+https://github.com/dabeaz-course/python-mastery/tree/main/Exercises
+
 https://www.pythonmorsels.com/inspecting-python-objects/
 
 https://realpython.com/python-dicts/
