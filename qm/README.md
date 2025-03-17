@@ -14,6 +14,8 @@ https://chembaby.ru/predmety/kvantovaya-teoriya
 
 https://iopscience.iop.org/article/10.1088/1367-2630/15/3/033018
 
+https://en.wikipedia.org/wiki/Double-slit_experiment#Path-integral_formulation
+
 https://profmattstrassler.com/2025/03/13/did-the-particle-go-through-the-two-slits-or-did-the-wave-function/
 
 https://news.ycombinator.com/item?id=43353947
@@ -25,7 +27,7 @@ https://www.scottaaronson.com/democritus/default.html
 
 https://news.ycombinator.com/item?id=40063795
 
-https://en.wikipedia.org/wiki/Double-slit_experiment#Path-integral_formulation
+
 
 https://www.youtube.com/watch?v=ss0HABVUkeQ
 
