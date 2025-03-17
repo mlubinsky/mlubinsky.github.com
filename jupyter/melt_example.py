@@ -1,3 +1,34 @@
+def left_join_startswith(df1, df2):
+    # Create an empty result dataframe
+    result = df1.copy()
+    
+    # For each row in df1, find matching rows in df2
+    for col in df2.columns:
+        if col != 'B':
+            result[col] = None
+    
+    # Iterate through and match
+    for i, row in df1.iterrows():
+        matches = df2[df2['B'].apply(lambda x: row['A'].startswith(x))]
+        if not matches.empty:
+            for col in matches.columns:
+                if col != 'B':
+                    result.loc[i, col] = matches.iloc[0][col]
+                result.loc[i, 'B'] = matches.iloc[0]['B']
+    
+    return result
+    
+# Example usage:
+ import pandas as pd
+
+ 
+df1 = pd.DataFrame({'A': ['apple', 'banana', 'cherry']})
+df2 = pd.DataFrame({'B': ['app', 'ban', 'xyz']})
+
+result = left_join_startswith(df1, df2)
+
+
+
 import numpy as np
 
 def replace_dash_with_nan(df: pd.DataFrame) -> None:
