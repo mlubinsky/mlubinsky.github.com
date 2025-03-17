@@ -69,25 +69,24 @@ Use Field Overrides: Set up thresholds and colored backgrounds on the derived fi
 Here’s how you can do it step-by-step:
 
 Step 1: Prepare Your Data
-You’ll need a way to isolate the values in Column B that correspond to "A" in Column A. This can be done either in your data source query or using Grafana’s transformations.
+You’ll need a way to isolate the values in Column B that correspond to "A" in Column A.
+This can be done either in your data source query or using Grafana’s transformations.
 
 Option 1: Modify the Query (Preferred if Possible)
-If you have control over your data source (e.g., SQL, Prometheus, etc.), modify your query to return an additional field that represents Column B’s values only when Column A is "A". For example:
-SQL Example:
-sql
-
-Collapse
-
-Wrap
-
-Copy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+If you have control over your data source (e.g., SQL, Prometheus, etc.),
+modify your query to return an additional field that represents Column B’s values only when Column A is "A". For example:
+ 
 SELECT
   ColumnA,
   ColumnB,
   CASE WHEN ColumnA = 'A' THEN ColumnB ELSE NULL END AS ColumnB_Conditional
 FROM your_table
+
 This creates a new field (ColumnB_Conditional) that has the value of ColumnB when ColumnA is "A" and NULL otherwise.
+
 Option 2: Use Grafana Transformations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 If you can’t modify the query, use Grafana’s transformation feature:
 Go to the Transform tab in your panel editor.
 Add a Filter by Value transformation:
@@ -99,6 +98,7 @@ Name this new field something like ColumnB_Conditional.
 The result is a new column (ColumnB_Conditional) that contains values from ColumnB only where ColumnA equals "A", and NULL elsewhere.
 
 Step 2: Apply the Override
+^^^^^^^
 Now that you have a field (ColumnB_Conditional) with the filtered values, apply the background color override to this field:
 
 In the panel editor, go to the Field tab.
@@ -110,17 +110,28 @@ Add another override property:
 Select Thresholds.
 Set thresholds for your desired ranges (e.g., 0–50: yellow, 50–100: red, etc.) and assign colors.
 Save your dashboard.
+
 Step 3: Display the Original Table
-Since ColumnB_Conditional is a derived field, you can keep the original ColumnB in the table for display purposes. The colored background will only apply to ColumnB_Conditional. You can:
+^^^^^^^
+Since ColumnB_Conditional is a derived field, you can keep the original ColumnB in the table for display purposes.
+The colored background will only apply to ColumnB_Conditional. You can:
 
 Hide ColumnB_Conditional and rely on ColumnB for display (though the colors won’t show).
 Or, style the table to visually align the conditional column with the original data.
-If you want the colors directly on ColumnB, you’d need to ensure your data source or transformation aligns the conditional logic perfectly with ColumnB, but this is trickier without direct cross-column support.
+If you want the colors directly on ColumnB, you’d need to ensure your data source or transformation aligns
+the conditional logic perfectly with ColumnB, but this is trickier without direct cross-column support.
 
 Limitations and Workarounds
-No Direct Cross-Column Conditions in UI: Grafana’s override system doesn’t natively support "if ColumnA = 'A' then color ColumnB" without a derived field.
-Visualization Trade-Off: If you show both ColumnB and ColumnB_Conditional, the table might look cluttered. You could use a transformation like Join by Field or Merge to recombine the data cleanly, but this depends on your data structure.
-Alternative: If your use case allows, consider using a Stat panel or custom plugin where conditional formatting might be more flexible, though this moves away from a table.
+
+No Direct Cross-Column Conditions in UI: Grafana’s override system doesn’t natively support "if ColumnA = 'A'
+then color ColumnB" without a derived field.
+Visualization Trade-Off: If you show both ColumnB and ColumnB_Conditional, the table might look cluttered.
+You could use a transformation like Join by Field or Merge to recombine the data cleanly, but this depends on your data structure.
+
+Alternative:
+If your use case allows, consider using a Stat panel or custom plugin where conditional formatting might be more flexible,
+though this moves away from a table.
+
 Example Result
 Assume your original table looks like this:
 
@@ -136,12 +147,15 @@ A	45	45
 B	72	NULL
 A	19	19
 C	88	NULL
-With an override on ColumnB_Conditional (e.g., threshold 0–30: red, 30–100: yellow), only the 45 and 19 cells in ColumnB_Conditional get colored based on their values, effectively highlighting ColumnB cells where ColumnA is "A".
+With an override on ColumnB_Conditional (e.g., threshold 0–30: red, 30–100: yellow),
+only the 45 and 19 cells in ColumnB_Conditional get colored based on their values,
+ effectively highlighting ColumnB cells where ColumnA is "A".
 
 Future Consideration
-Grafana’s table visualization is evolving, and conditional formatting based on other columns has been a requested feature (e.g., GitHub issues like #11418). Check the latest Grafana release notes or community forums for updates, as this might become natively supported in future versions.
+Grafana’s table visualization is evolving, and conditional formatting based on other columns has been a requested feature
+(e.g., GitHub issues like #11418).
+Check the latest Grafana release notes or community forums for updates, as this might become natively supported in future versions.
 
-If this solution doesn’t fully meet your needs, let me know your data source or specific table structure, and I can refine the approach!
 ```
 
 ### Override cell color background
