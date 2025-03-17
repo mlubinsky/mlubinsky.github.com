@@ -1,4 +1,34 @@
-###
+### How to assign a background color to a specific cell or an entire row based on a string value 
+```
+Since the values in the cell are strings, you need to use Value Mappings in Grafana instead of Thresholds.
+Here’s how you can assign a background color to a specific cell or an entire row based on a string value in a particular column.
+
+1. Assign Background Color to a Specific Cell (Based on a String Value)
+If you want to color only one specific column based on its string values:
+
+Steps:
+Edit the Table Panel in Grafana.
+Go to the Overrides tab.
+Click "Add field override" and select the specific column (e.g., Status).
+Click "Add override property" → Select Cell display mode → Choose Color background.
+Click "Add override property" → Select Value mappings.
+Define value mappings:
+"Error" → Red (#FF0000)
+"Warning" → Yellow (#FFFF00)
+"Success" → Green (#00FF00)
+Save and Apply changes.
+2. Assign Background Color to an Entire Row (Based on a String Value in One Column)
+Grafana doesn’t support direct row coloring, but you can simulate it by applying the same Value Mappings to all columns.
+
+Steps:
+Follow steps 1–6 above for a specific column (e.g., Status).
+Instead of applying overrides to just one column, apply it to all columns:
+Click "Add field override" → Select All fields.
+Save and Apply changes.
+Now, when the Status column contains "Error", the entire row will have a red background.
+```
+
+### Assign background colors to every cell for specific column based on numeric threshold
 ```
 In Grafana dashboard  there is a table.
 I know how to assign the  background colors to every cell for specific column: 
