@@ -10,6 +10,13 @@ https://quantum-ods.github.io/qmlcourse/book/linalg/ru/bra-ket.html
 
 https://chembaby.ru/predmety/kvantovaya-teoriya
 
+### Double-slit experiment
+
+https://profmattstrassler.com/2025/03/13/did-the-particle-go-through-the-two-slits-or-did-the-wave-function/
+
+https://news.ycombinator.com/item?id=43353947
+
+
 https://www.scottaaronson.com/democritus/lec9.html
 
 https://www.scottaaronson.com/democritus/default.html
