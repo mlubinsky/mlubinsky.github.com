@@ -12,6 +12,8 @@ https://chembaby.ru/predmety/kvantovaya-teoriya
 
 ### Double-slit experiment
 
+https://iopscience.iop.org/article/10.1088/1367-2630/15/3/033018
+
 https://profmattstrassler.com/2025/03/13/did-the-particle-go-through-the-two-slits-or-did-the-wave-function/
 
 https://news.ycombinator.com/item?id=43353947
@@ -27,7 +29,8 @@ https://en.wikipedia.org/wiki/Double-slit_experiment#Path-integral_formulation
 
 https://www.youtube.com/watch?v=ss0HABVUkeQ
 
-https://www.youtube.com/watch?v=qJZ1Ez28C-A - probably not good video
+ 
+https://www.youtube.com/watch?v=qJZ1Ez28C-A - Veritasium (probably not good video)
 
 https://www.youtube.com/watch?v=UWuhMJZaiZM Feynman's (almost) impossible sum over infinite quantum paths
 
