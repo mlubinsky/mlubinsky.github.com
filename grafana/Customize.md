@@ -17,8 +17,10 @@ Define value mappings:
 "Warning" → Yellow (#FFFF00)
 "Success" → Green (#00FF00)
 Save and Apply changes.
+
 2. Assign Background Color to an Entire Row (Based on a String Value in One Column)
-Grafana doesn’t support direct row coloring, but you can simulate it by applying the same Value Mappings to all columns.
+Grafana doesn’t support direct row coloring,
+but you can simulate it by applying the same Value Mappings to all columns.
 
 Steps:
 Follow steps 1–6 above for a specific column (e.g., Status).
