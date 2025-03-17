@@ -1,3 +1,48 @@
+### How to Alternate Row Colors When Value Changes
+
+```
+Steps to Implement:
+Open Your Table Panel in Grafana and click Edit.
+
+Apply a "Row Number" Transformation (to track changes in the target column):
+
+Go to the Transform tab.
+Click "Add transformation" → Select "Add field from calculation".
+Set Mode = Reduce row
+Set Calculation = Row number
+Use the "Difference" Transformation to Detect Changes in the Column:
+
+Add another "Add field from calculation" transformation.
+Select Mode = Difference
+Choose the column where changes should trigger row coloring (e.g., "Category" or "Status").
+This helps identify where the value changes.
+Create a Custom Field to Assign Alternating Colors:
+
+Add a new "Add field from calculation" transformation.
+Choose Mode = Cumulative sum over the "Difference" column.
+This creates a column that toggles between values (0,1,2...) when the string value changes.
+Apply Conditional Background Colors Using Overrides:
+
+Go to the Overrides tab.
+Click "Add field override" → Select the calculated field (from step 4).
+Click "Add override property" → Choose Cell display mode → Set to Color background.
+Define a Value Mapping:
+Even values (0, 2, 4…) → Set to Light Blue (#E3F2FD)
+Odd values (1, 3, 5…) → Set to Light Gray (#F5F5F5)
+Apply the Same Color to All Columns:
+
+Click "Add field override" → Select All fields.
+Apply the same background color mapping.
+Save & Apply Changes.
+
+How It Works
+This method ensures that:
+
+Whenever the string value changes in the chosen column, the row color alternates.
+The background color applies to the entire row, not just one column.
+```
+
+
 ### How to assign a background color to a specific cell or an entire row based on a string value 
 ```
 Since the values in the cell are strings, you need to use Value Mappings in Grafana instead of Thresholds.
