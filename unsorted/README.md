@@ -15,6 +15,15 @@ Kindle Paperwhite – идеальный баланс цены и качеств
 PocketBook 740 – лучшее по функциональности, поддержка всех форматов.
 Kobo Aura One – хороший экран, поддержка EPUB, водонепроницаемость.
 Onyx Boox Monte Cristo – мощная, поддержка всех форматов, но дороже.
+
+- Onyx Boox Note Air 3 – 10.3" e-ink screen, excellent PDF handling, supports stylus for annotations.
+- Onyx Boox Tab Ultra C – 10.3" color e-ink screen, powerful processor, Android-based for installing apps.
+- Kobo Elipsa 2E – 10.3" screen, good for PDFs, comes with a stylus for note-taking.
+- Kindle Scribe – 10.2" screen, good for PDFs but limited in flexibility compared to Onyx.
+
+If you want the best PDF experience,
+Onyx Boox devices are the top choice since they run Android
+and allow third-party apps like Kindle, Adobe Acrobat, etc.  
 ```
 https://library.d3.ru/posovetuite-elektronnuiu-knigu-2492579/?sorting=rating
 
