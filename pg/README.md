@@ -1,5 +1,10 @@
 Book https://edu.postgrespro.com/postgresql_internals-14_en.pdf    Egor Rogov
 
+### Scale postgres
+https://pgdog.dev/blog/you-can-make-postgres-scale
+
+https://news.ycombinator.com/item?id=43364668
+
 ### What I wish someone told me about Postgres
 
 https://mccue.dev/pages/3-11-25-life-altering-postgresql-patterns
