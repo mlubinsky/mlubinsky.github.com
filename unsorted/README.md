@@ -9,6 +9,15 @@ https://habr.com/ru/companies/timeweb/articles/873430/
 
 http://lucumr.pocoo.org/2025/1/30/how-i-ai
 
+### E-Book readers
+```
+Kindle Paperwhite – идеальный баланс цены и качества.
+PocketBook 740 – лучшее по функциональности, поддержка всех форматов.
+Kobo Aura One – хороший экран, поддержка EPUB, водонепроницаемость.
+Onyx Boox Monte Cristo – мощная, поддержка всех форматов, но дороже.
+```
+https://library.d3.ru/posovetuite-elektronnuiu-knigu-2492579/?sorting=rating
+
 
 ### GTD getting things done
 
