@@ -21,6 +21,8 @@ Onyx Boox Monte Cristo – мощная, поддержка всех форма�
 - Kobo Elipsa 2E – 10.3" screen, good for PDFs, comes with a stylus for note-taking.
 - Kindle Scribe – 10.2" screen, good for PDFs but limited in flexibility compared to Onyx.
 
+- Onyx Boox Tab X (Best for Large PDFs) – 13.3" e-ink screen, excellent PDF handling, fast performance.
+
 If you want the best PDF experience,
 Onyx Boox devices are the top choice since they run Android
 and allow third-party apps like Kindle, Adobe Acrobat, etc.  
