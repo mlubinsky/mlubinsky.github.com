@@ -2,6 +2,8 @@ shellcheck -o all myshellscript.sh  : use shellcheck  to check any shell script
 
 https://nochlin.com/blog/6-techniques-i-use-to-create-a-great-user-experience-for-shell-scripts
 
+https://news.ycombinator.com/item?id=43410692 bat, fd and others 
+
 in Bash you can also keep the history cleaner by adding ls (or other commands) to the HISTIGNORE env var:
 https://superuser.com/questions/232885/can-you-share-wisdom-on-using-histignore-in-bash
 
