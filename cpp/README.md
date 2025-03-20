@@ -10,7 +10,7 @@ https://www.amazon.com/dp/0136905692 Book
 
 https://habr.com/ru/companies/ruvds/articles/871940/  .a .so, linking / building C/C++  
 
-
+https://habr.com/ru/articles/891700/ C++ memory and containers
 ### Список статей серии «C++, копаем вглубь»
 
 Перегрузка в C++. Часть I. Перегрузка функций и шаблонов.  
