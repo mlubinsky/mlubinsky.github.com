@@ -73,3 +73,40 @@ code {
 4. Use a Custom Jekyll Theme (Optional)  
 ^^^^^^^^^^^  
 If you want more customization, consider using Minimal Mistakes or Just the Docs, which support enhanced code formatting.
+
+
+
+### Which language identifiers are supported after tripple backquaters?
+https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers  
+
+```
+
+Commonly Supported Languages
+Language	Identifier
+Bash/Shell	bash, sh
+C	c
+C++	cpp, c++
+C#	csharp, cs
+CSS	css
+Dockerfile	dockerfile
+Go	go
+HTML	html
+Java	java
+JavaScript	javascript, js
+JSON	json
+Julia	julia
+Kotlin	kotlin
+LaTeX	latex, tex
+Markdown	markdown, md
+Perl	perl, pl
+PHP	php
+PowerShell	powershell, ps1
+Python	python, py
+Ruby	ruby, rb
+Rust	rust
+SQL	sql
+Swift	swift
+TypeScript	typescript, ts
+XML	xml
+YAML	yaml, yml
+```
