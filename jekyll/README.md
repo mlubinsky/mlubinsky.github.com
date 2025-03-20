@@ -18,7 +18,58 @@ Your site will be available at:
 https://your-username.github.io/repo-name/    
 or https://your-username.github.io/ if it's a user/organization site.  
 
-### Make code in your Markdown files appears as properly formatted code on your GitHub Pages site
+
+### Links
+
+```
+To make plain URLs automatically clickable in your Markdown files when rendered by Jekyll, you have a few options:
+
+1. Use Proper Markdown Link Formatting
+Markdown does not automatically convert URLs into links unless they are formatted correctly. Use one of these methods:
+
+Option 1: Enclose the URL in Angle Brackets (<>)
+^^^^^^^^^
+<http://google.com>
+This will render as:
+👉 http://google.com
+
+Option 2: Use Markdown Link Syntax
+^^^^^^^^^^ 
+[Google](http://google.com)
+This will render as:
+👉 Google
+
+2. Enable Jekyll's Automatic URL Linking (Kramdown)
+^^^^^^^^^^^^^^^^^^^^^^
+If you want Jekyll to automatically convert plain URLs into clickable links, make sure you are using the Kramdown Markdown processor with the auto_links option enabled.
+
+Open your _config.yml file and add:
+ 
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+  auto_links: true
+Save and push your changes.
+This will automatically convert http://google.com into a clickable link.
+
+3. Convert Plain URLs Using Liquid (Alternative)
+^^^^^^^^^^^^^^^^^^^^^^^
+If you don't want to modify every Markdown file, you can use a Liquid filter inside your Jekyll templates to auto-convert URLs.
+
+In your _layouts/default.html (or relevant layout file), wrap the content with this filter:
+
+{{ content | markdownify }}
+This ensures Markdown is correctly processed before being rendered.
+
+Final Step: Test Your Site
+Commit and push your changes.
+Wait for GitHub Pages to rebuild your site.
+Visit your site and check if the links are now clickable.
+
+```
+
+
+### Make code in your Markdown files appears as properly formatted code with syntax highlighting on your GitHub Pages site
 
 1. Use Proper Code Blocks in Markdown  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  
