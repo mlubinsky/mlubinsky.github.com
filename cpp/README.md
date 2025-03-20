@@ -83,6 +83,8 @@ https://www.youtube.com/watch?v=Zb57p6KfN3M Работа с файлами, в �
 
 ### C
 
+Chris Hanson's book "C: Interfaces and Implementations."
+
 https://www.c-language.org/
 
 https://www.youtube.com/watch?v=9UIIMBqq1D4   : C tips
