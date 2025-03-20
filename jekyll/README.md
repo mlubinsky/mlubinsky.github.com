@@ -110,3 +110,27 @@ TypeScript	typescript, ts
 XML	xml
 YAML	yaml, yml
 ```
+
+### Math formula on Jekyll
+To render math formulas in your Markdown files on GitHub Pages (with Jekyll), you can use MathJax, which supports LaTeX-style math notation. Here's how to do it:
+
+1. Use MathJax in Your Markdown Files
+MathJax allows you to write math formulas using LaTeX syntax.
+```
+1a. Inline Math (For Small Formulas Within Text)
+Use single dollar signs $...$:
+
+Euler's formula: $e^{i\pi} + 1 = 0$
+This will render as:
+ 
+
+2a. Block Math (For Larger Equations)
+Use double dollar signs $$...$$ on separate lines:
+
+$$
+\int_0^1 x^2 \,dx = \frac{1}{3}
+$$
+This will render as:
+
+ ```
+
