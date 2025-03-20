@@ -19,6 +19,67 @@ https://your-username.github.io/repo-name/
 or https://your-username.github.io/ if it's a user/organization site.  
 
 
+### _config.yml
+```
+In your Jekyll _config.yml file, this line:
+
+
+kramdown:
+  input: GFM
+means that Kramdown (the default Markdown processor for Jekyll) is configured to use GitHub Flavored Markdown (GFM) as its input syntax.
+
+What is GFM?
+GFM stands for GitHub Flavored Markdown, which is an extended version of standard Markdown with additional features.
+It is the same Markdown syntax used in GitHub README files and issues.
+
+Features of GFM
+By setting input: GFM, Jekyll enables the following enhancements:
+
+Automatic URL Linking
+
+Plain URLs like http://google.com are automatically converted into clickable links.
+Example:
+ 
+http://google.com
+✅ Becomes: http://google.com
+
+Fenced Code Blocks
+^^^^^^^^^^^^^^^^^^^^^
+Allows triple backticks (```) for defining code blocks instead of needing indentation.
+ 
+```python
+def hello():
+    print("Hello, World!")
+ 
+Strikethrough Text
+^^^^^^^^^^^^^^^^^^
+Supports ~~strikethrough~~ text.
+ 
+~~This text is crossed out~~
+✅ Becomes: This text is crossed out
+
+Task Lists
+^^^^^^^^^^^
+Supports [ ] for incomplete tasks and [x] for completed tasks.
+ 
+- [x] Task 1
+- [ ] Task 2
+
+Supports Markdown tables.
+^^^^^^^^^^^^^^^^^^^^^^^
+| Name  | Age |
+|-------|-----|
+| Alice | 25  |
+| Bob   | 30  |
+
+Inline HTML
+^^^^^^^^^^^^
+Allows embedding raw HTML inside Markdown.
+
+Should You Keep input: GFM?
+Yes! If you're writing Markdown files and want them to behave the same way as on GitHub (e.g., in README.md files),
+keeping GFM enabled ensures consistency.
+```
 ### Links
 
 ```
