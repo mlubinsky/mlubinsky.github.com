@@ -134,3 +134,43 @@ This will render as:
 
  ```
 
+2. Enable MathJax in Jekyll
+By default, Jekyll does not automatically include MathJax.  
+You need to manually enable it by adding MathJax support to your _layouts/default.html or head.html.  
+
+Option 1: Add MathJax to Your Jekyll Layout 
+```
+Edit _layouts/default.html (or create it if it doesn’t exist), and add this inside the <head> section:
+
+ 
+<script type="text/javascript" async
+  src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+</script>
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+This will load MathJax for all pages.
+```
+Option 2: Load MathJax Only for Specific Pages
+
+Instead of adding it globally, include the script only in specific Markdown files:
+```
+ 
+---
+layout: default
+title: Math Example
+---
+
+<script type="text/javascript" async
+  src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+</script>
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+Euler's formula: $e^{i\pi} + 1 = 0$
+
+$$
+\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
+$$
+```
