@@ -13,6 +13,8 @@ https://news.ycombinator.com/item?id=43364668
 
 https://mccue.dev/pages/3-11-25-life-altering-postgresql-patterns
 
+https://mccue.dev/pages/3-11-25-life-altering-postgresql-patterns
+
 https://www.shayon.dev/post/2025/40/scaling-with-postgresql-without-boiling-the-ocean/
 
 https://github.com/Olshansk/postgres_for_everything?tab=readme-ov-file 
