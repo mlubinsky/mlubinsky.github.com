@@ -1,5 +1,13 @@
 https://the-algorithms.com/
 
+https://github.com/aforarup/interview/blob/master/README.md
+
+https://github.com/aforarup/interview/tree/master/Interview%20Books 
+
+https://github.com/aforarup/interview/tree/master/Data%20Structures%20and%20Algorithm/Algorithm%20Books
+
+https://github.com/aforarup/interview/blob/master/Data%20Structures%20and%20Algorithm/Algorithm%20Books/Algorithm%20Design%20by%20Jon%20Kleinberg,%20Eva%20Tardos.pdf
+
 https://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0
 
 https://cp-algorithms.com/
