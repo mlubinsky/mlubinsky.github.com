@@ -6,6 +6,8 @@ https://medium.com/@muhammedashraf2661/cuda-programming-an-introduction-to-gpu-a
 
 https://blog.codingconfessions.com/p/gpu-computing
 
+https://github.com/srush/GPU-Puzzles
+
 https://www.pyspur.dev/blog/introduction_cuda_programming
 
 https://news.ycombinator.com/item?id=43121059
