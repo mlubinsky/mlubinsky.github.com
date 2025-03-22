@@ -2,6 +2,11 @@ https://stackoverflow.com/questions/74729503/how-to-configure-https-for-grafana-
 
 http://localhost:3000
 
+### Prometheus HTTP API compatible server Python server 
+designed to statelessly connect Grafana to almost anything by implementing simple plugins.
+https://pages.fscherf.de/prometheus-virtual-metrics/  
+https://github.com/fscherf/prometheus-virtual-metrics  
+
 ### How to eliminate date conversion to local time zone: 
 
 On Dashboard -> Settings
