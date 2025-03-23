@@ -69,6 +69,8 @@ https://habr.com/ru/articles/807931/
 
 ### System design interview
 
+https://habr.com/ru/articles/893548/
+
 https://habr.com/ru/articles/885054/
 
 https://medium.com/@shivambhadani_/system-design-for-beginners-everything-you-need-in-one-article-c74eb702540b#cf4c
