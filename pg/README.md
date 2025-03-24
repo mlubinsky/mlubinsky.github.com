@@ -9,7 +9,29 @@ https://pgdog.dev/blog
 
 https://news.ycombinator.com/item?id=43364668
 
-### SELECT DISTINCT ON
+
+### GREATEST n per group
+https://stackoverflow.com/a/123481/684229
+
+### array_agg
+
+### SELECT DISTINCT ON (Postgres ONLY)
+
+it is equvalent to
+```
+WITH summary AS (
+    SELECT p.id, 
+           p.customer, 
+           p.total, 
+           ROW_NUMBER() OVER(PARTITION BY p.customer 
+                                 ORDER BY p.total DESC) AS rank
+      FROM PURCHASES p)
+ SELECT *
+   FROM summary
+ WHERE rank = 1
+``
+
+https://stackoverflow.com/questions/3800551/select-first-row-in-each-group-by-group/7630564#7630564
 
 https://stackoverflow.com/questions/46566602/what-does-distinct-on-expression-do
 
