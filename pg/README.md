@@ -9,6 +9,31 @@ https://pgdog.dev/blog
 
 https://news.ycombinator.com/item?id=43364668
 
+### SELECT DISTINCT ON
+https://www.geekytidbits.com/postgres-distinct-on/
+```
+SELECT DISTINCT ON (url) url, request_duration
+FROM logs
+ORDER BY url, timestamp DESC
+
+That’s it! We’re telling PostgreSQL to “put the logs into groups unique by url (ON (url)), sort each of these groups by most recent (ORDER BY url, timestamp DESC) and then return fields for the first record in each of these groups (url, request_duration).
+```
+
+### DELETING IN BATCHES
+
+https://www.geekytidbits.com/batch-deletes-in-postgres/
+```
+DELETE FROM my_table
+WHERE id IN (
+  SELECT id
+  FROM my_table
+  WHERE created_at < now() - interval '30 days'
+  -- Delete only 1000 rows at a time
+  LIMIT 1000
+);
+```
+
+
 ### What I wish someone told me about Postgres
 
 https://mccue.dev/pages/3-11-25-life-altering-postgresql-patterns
