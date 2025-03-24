@@ -2,6 +2,12 @@ https://www.db-fiddle.com/
 
 https://sqlize.online/
 
+### LATERAL JOIN 
+
+https://www.geeksforgeeks.org/lateral-keyword-in-sql/
+
+https://medium.com/@goldengrisha/a-deep-dive-into-sql-lateral-join-7b09fcb3b745
+
 https://www.crunchydata.com/developers/playground/lateral-join
 
 https://www.edgedb.com/  Юрием Селивановым, CEO и co-founder Edgedb,
