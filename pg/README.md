@@ -10,6 +10,9 @@ https://pgdog.dev/blog
 https://news.ycombinator.com/item?id=43364668
 
 ### SELECT DISTINCT ON
+
+https://stackoverflow.com/questions/46566602/what-does-distinct-on-expression-do
+
 https://www.geekytidbits.com/postgres-distinct-on/
 ```
 SELECT DISTINCT ON (url) url, request_duration
