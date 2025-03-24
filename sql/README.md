@@ -2,6 +2,8 @@ https://www.db-fiddle.com/
 
 https://sqlize.online/
 
+https://www.crunchydata.com/developers/playground/lateral-join
+
 https://www.edgedb.com/  Юрием Селивановым, CEO и co-founder Edgedb,
 
 Regular expressions in SQL
@@ -358,6 +360,8 @@ https://www.youtube.com/watch?v=NKXH7o8m2x4
 
 https://habr.com/ru/articles/588859/
 
+### SELECT ROW IN EACH GROUP BY GROUP
+https://stackoverflow.com/questions/3800551/select-first-row-in-each-group-by-group/7630564#7630564
 
 ### Qualify
 https://medium.com/snowflake/how-qualify-works-with-in-depth-explanation-and-examples-bbde9fc742db
