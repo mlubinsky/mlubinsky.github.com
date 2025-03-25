@@ -73,6 +73,8 @@ https://habr.com/ru/articles/893548/
 
 https://habr.com/ru/articles/885054/
 
+https://animeshgaitonde.medium.com/what-i-wish-i-knew-before-system-design-interviews-20376f8deafa
+
 https://medium.com/@shivambhadani_/system-design-for-beginners-everything-you-need-in-one-article-c74eb702540b#cf4c
 
 https://www.youtube.com/@CodeWithYu
