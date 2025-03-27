@@ -1,4 +1,45 @@
+```
+I am getting 10+ calls weekly (in 2025!!!) directly from recruiters after using these two tricks.
 
+➤ 𝗧𝗿𝗶𝗰𝗸𝘀 𝘁𝗼 𝗚𝗲𝘁 𝗺𝗼𝗿𝗲 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗖𝗮𝗹𝗹𝘀 𝗼𝗻 𝗟𝗶𝗻𝗸𝗲𝗱𝗜𝗻:
+
+ - Go to the LinkedIn search bar at the top.
+ - Type a query using the format: {job role} AND ("hiring" OR "requirement")
+ - Example: Software Developer hiring (according to the designation)
+ - Hit enter.
+ - Select the Posts filter from the result page.
+ - Sort it by Latest.
+
+Now, you will see job requirements that have been posted recently.
+
+These are opportunities that are NOT listed as formal job postings and often go unnoticed.
+
+But with this method, you can tap into hidden opportunities and connect with recruiters directly.
+
+➤ 𝗡𝗮𝘂𝗸𝗿𝗶 𝗧𝗿𝗶𝗰𝗸𝘀 𝗧𝗵𝗮𝘁 𝗪𝗼𝗿𝗸 𝗶𝗻 𝟮𝟬𝟮𝟱:
+
+ - Create multiple Naukri profiles targeting different locations.
+ - Use a different phone number and email address for each account.
+ - Update your job profile every morning.
+ - Include all relevant keywords for your job role in your resume.
+ - Add those same keywords in the resume headline section.
+ - Set your notice period to 15 days or less.
+ - Use 6-7 bullet points to describe your projects.
+ - Follow a similar bullet-point format for the Employment section.
+ - Add your LinkedIn profile link.
+ - Include all job locations in the Preferred Work Location field.
+ - Add any relevant certifications you have.
+ - Replace career gaps with freelance work in your resume.
+
+➤ 𝗞𝗲𝘆 𝗣𝗼𝗶𝗻𝘁𝘀 𝘁𝗼 𝗥𝗲𝗺𝗲𝗺𝗯𝗲𝗿 𝗶𝗻 𝗯𝗼𝘁𝗵:
+
+ - Apply for as many job openings as possible every day.
+ - Review job descriptions to identify important keywords.
+ - Example for a Software Engineer: keywords like Java, Javascript, Kafka.
+ - Reach out directly to HR managers via LinkedIn messages or emails.
+
+Try these hacks, and you'll significantly increase your chances of getting better interview calls.
+```
 <https://www.algoexpert.io/systems/product>
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
