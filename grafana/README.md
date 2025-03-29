@@ -7,7 +7,11 @@ designed to statelessly connect Grafana to almost anything by implementing simpl
 https://pages.fscherf.de/prometheus-virtual-metrics/  
 https://github.com/fscherf/prometheus-virtual-metrics  
 
-### How to eliminate date conversion to local time zone: 
+### How to pass date range picker to SQL
+```
+WHERE timestamp_column BETWEEN TO_TIMESTAMP($__timeFrom) AND TO_TIMESTAMP($__timeTo)
+```
+### How to eliminate the date conversion to local time zone: 
 
 On Dashboard -> Settings for  "Time zone" -> Select "Coordinated Universal Time"
 
