@@ -9,9 +9,7 @@ https://github.com/fscherf/prometheus-virtual-metrics
 
 ### How to eliminate date conversion to local time zone: 
 
-On Dashboard -> Settings
-for  "Time zone"
-Select "Coordinated Universal Time"
+On Dashboard -> Settings for  "Time zone" -> Select "Coordinated Universal Time"
 
 On Panel -> Edit -> Panel Options  
 Axis -> Time Zone
@@ -37,23 +35,21 @@ Find the "Time zone" setting.
 Set it to "UTC".
 ✅ This prevents time conversion at the data source level.
 
+###  Modify  tooltip in Grafana Time Series to display only the month and date
 To modify the tooltip in a Grafana Time Series panel to display only the month and date (without hours, minutes, and seconds), 
 Grafana itself does not provide a direct built-in option to customize the tooltip date format granularly through the UI as of the latest versions. 
 However, you can achieve this by adjusting how your data is queried or processed before it reaches the visualization.
-
+```
 SELECT DATE_FORMAT(time_column, '%Y-%m-%d') AS time, value_column
 FROM your_table
 WHERE $__timeFilter(time_column)
-
-
-Final Check
-If your tooltip still shows the wrong time, try changing the tooltip time format under Panel settings → Tooltip → Custom Format and set it to "MM/DD".
-
-### Using variables is SQL
 ```
 
-single choice:
 
+### Using variables is SQL
+
+#### single choice:
+```
 SELECT * 
 FROM your_table
 WHERE column_name =
@@ -61,20 +57,18 @@ CASE
     WHEN '$X' = 'ALL' THEN column_name
     ELSE '$X'
 END;
-
-Multiple choise:
--------------------
+```
+#### Multiple choise:
+```
 SELECT * 
 FROM your_table
 WHERE column_name IN ($X);
 
-
-
 SELECT * FROM your_table
 WHERE ($X = 'all' OR your_column IN ($X));
-
-
-
+```
+### SQL example
+```
 WITH A as (
 SELECT "Test" as test, "Criteria" as criteria, 
 avg(val) as val,  -- may be max() for some criteria 
