@@ -37,6 +37,15 @@ Find the "Time zone" setting.
 Set it to "UTC".
 ✅ This prevents time conversion at the data source level.
 
+To modify the tooltip in a Grafana Time Series panel to display only the month and date (without hours, minutes, and seconds), 
+Grafana itself does not provide a direct built-in option to customize the tooltip date format granularly through the UI as of the latest versions. 
+However, you can achieve this by adjusting how your data is queried or processed before it reaches the visualization.
+
+SELECT DATE_FORMAT(time_column, '%Y-%m-%d') AS time, value_column
+FROM your_table
+WHERE $__timeFilter(time_column)
+
+
 Final Check
 If your tooltip still shows the wrong time, try changing the tooltip time format under Panel settings → Tooltip → Custom Format and set it to "MM/DD".
 
