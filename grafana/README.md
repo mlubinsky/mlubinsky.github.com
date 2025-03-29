@@ -8,6 +8,8 @@ https://pages.fscherf.de/prometheus-virtual-metrics/
 https://github.com/fscherf/prometheus-virtual-metrics  
 
 ### How to pass date range picker to SQL
+If your database uses a DATETIME or DATE format, 
+you can convert Grafana's UNIX timestamps using specific SQL functions:
 ```
 WHERE timestamp_column BETWEEN TO_TIMESTAMP($__timeFrom) AND TO_TIMESTAMP($__timeTo)
 ```
