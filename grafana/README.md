@@ -41,6 +41,22 @@ Find the "Time zone" setting.
 Set it to "UTC".
 ✅ This prevents time conversion at the data source level.
 
+C:\Program Files\GrafanaLabs\grafana\conf\defaults.ini
+```
+[date_formats]
+# For information on what formatting patterns that are supported https://momentjs.com/docs/#/displa$
+
+# Default system date format used in time range picker and other places where full time is displayed
+full_date = DD-MM-YYYY HH:mm:ss
+
+# Used by graph and other places where we only show small intervals
+interval_second = HH:mm:ss
+interval_minute = HH:mm
+interval_hour = DD/MM HH:mm
+interval_day = DD/MM
+interval_month = MM-YYYY
+interval_year = YYYY
+```
 ###  Modify  tooltip in Grafana Time Series to display only the month and date
 To modify the tooltip in a Grafana Time Series panel to display only the month and date (without hours, minutes, and seconds), 
 Grafana itself does not provide a direct built-in option to customize the tooltip date format granularly through the UI as of the latest versions. 
