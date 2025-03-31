@@ -40,6 +40,42 @@ But with this method, you can tap into hidden opportunities and connect with rec
 
 Try these hacks, and you'll significantly increase your chances of getting better interview calls.
 ```
+
+1. Kickresume
+ Kickresume helps you create a resume and an AI-generated cover letter for international job applications. 
+ 📎 https://lnkd.in/gqd5WxVF
+
+2. Job Hunt 
+ This tool uses AI to help you apply for jobs faster. It also has a resume builder for creating an AI-generated resume. 
+ 📎 https://www.job-hunt.org/
+
+3. Wellfound
+ Wellfound connects startups with job seekers, listing 130,000 tech jobs from 27,000 companies. 
+ 📎 https://wellfound.com/
+
+4. Remotive
+ Remotive offers access to remote job opportunities from trustworthy tech companies. 
+ 📎 https://remotive.com/
+
+5. JS Remotely 
+ This site lists jobs for JavaScript, React, Vue, Node.js, and Angular. 
+ 📎 https://jsremotely.com/
+
+6. Remote OK
+ Find remote jobs and work from anywhere. 
+ 📎 https://remoteok.com/
+
+7. Working Nomads
+ This platform is for digital nomads looking for remote job opportunities. 
+ 📎 https://lnkd.in/giHGeCCw
+
+
+
+
+
+
+
+
 <https://www.algoexpert.io/systems/product>
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
