@@ -4,7 +4,8 @@ https://medium.com/towards-data-engineering/array-problems-you-cant-miss-for-dat
  
 https://python.plainenglish.io/top-string-manipulation-interview-questions-for-data-engineer-roles-with-comprehensive-solutions-13845eb5971b
  
- 
+https://python.plainenglish.io/coding-problems-every-data-engineer-should-know-lessons-from-multiple-interviews-faa1ceffc5b5
+
 1. Second Largest
 Write a Python program to find the second largest element in an array. You should solve this problem without sorting the array. If there are duplicate elements, they should be treated as individual values.
 
