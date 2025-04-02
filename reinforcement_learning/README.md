@@ -1,5 +1,7 @@
 https://habr.com/ru/companies/otus/articles/803041/
 
+https://github.com/FareedKhan-dev/all-rl-algorithms   Python Code
+
 Reinforcement Learning: An Overview1
 Kevin P. Murphy
 December 9, 2024
