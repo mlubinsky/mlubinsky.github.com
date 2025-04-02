@@ -24,6 +24,8 @@ https://www.reddit.com/r/Python/comments/1j2ev5f/what_are_your_favorite_python_r
 
 https://habr.com/ru/companies/raiffeisenbank/articles/885792/ архитектурный подход к Python приложениям
 
+https://pattern-kit.readthedocs.io/en/latest/  implementations of common software design patterns
+
 https://github.com/airtai/faststream provides a unified API to work across multiple message brokers (Kafka, RabbitMQ, NATS, Redis support)
 
 ```
