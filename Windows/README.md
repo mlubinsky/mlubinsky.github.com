@@ -2,6 +2,9 @@ for /d /r C:\YourFolder %d in (GDC_DEV) do @dir "%d\for_mx_dashboard.csv" /s /b 
 
 for /d /r C:\YourFolder %d in (GDC_DEV) do @for /d /r "%d" %s in (G2_Filip7) do @if exist "%s\for_mx_dashboard.csv" echo "%s\for_mx_dashboard.csv"
 
+for /d /r C:\YourFolder %d in (GDC_DEV) do @for /d /r "%d" %s in (G2_Filip7) do @if exist "%s\for_mx_dashboard.csv" echo "%s\for_mx_dashboard.csv" 2>nul
+
+
 
 ### File manager
 https://multicommander.com/
