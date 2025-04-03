@@ -1,8 +1,10 @@
+rg --files --glob "**GDC_DEV**G2_Flip7**for_mx_dashboard.csv" -i
+
 for /d /r C:\YourFolder %d in (GDC_DEV) do @dir "%d\for_mx_dashboard.csv" /s /b 2>nul
 
-for /d /r C:\YourFolder %d in (GDC_DEV) do @for /d /r "%d" %s in (G2_Filip7) do @if exist "%s\for_mx_dashboard.csv" echo "%s\for_mx_dashboard.csv"
+for /d /r C:\YourFolder %d in (GDC_DEV) do @for /d /r "%d" %s in (G2_Flip7) do @if exist "%s\for_mx_dashboard.csv" echo "%s\for_mx_dashboard.csv"
 
-for /d /r C:\YourFolder %d in (GDC_DEV) do @for /d /r "%d" %s in (G2_Filip7) do @if exist "%s\for_mx_dashboard.csv" echo "%s\for_mx_dashboard.csv" 2>nul
+for /d /r C:\YourFolder %d in (GDC_DEV) do @for /d /r "%d" %s in (G2_Flip7) do @if exist "%s\for_mx_dashboard.csv" echo "%s\for_mx_dashboard.csv" 2>nul
 
 
 
