@@ -1,3 +1,6 @@
+for /d /r C:\YourFolder %d in (GDC_DEV) do @dir "%d\for_mx_dashboard.csv" /s /b
+
+
 ### File manager
 https://multicommander.com/
 
