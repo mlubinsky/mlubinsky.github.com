@@ -199,6 +199,8 @@ https://habr.com/ru/companies/pvs-studio/articles/875922/
 
 https://nullprogram.com/blog/2023/09/27/ arena memory allocator
 
+https://github.com/tsoding/arena
+
 https://nullprogram.com/blog/2024/05/25/
 
 https://habr.com/ru/articles/876958/
