@@ -1,6 +1,7 @@
 ```
 The ** (double star) in the --glob pattern is used to match across multiple directory levels.
-rg --files --glob "**GDC_DEV**G2_Flip7**for_mx_dashboard.csv" -i
+
+rg --files --glob "/**/GDC_DEV/**/G2_Flip7/**/for_mx_dashboard.csv"
 ```
 for /d /r C:\YourFolder %d in (GDC_DEV) do @dir "%d\for_mx_dashboard.csv" /s /b 2>nul
 
