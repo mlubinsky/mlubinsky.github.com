@@ -70,8 +70,9 @@ Try these hacks, and you'll significantly increase your chances of getting bette
  This platform is for digital nomads looking for remote job opportunities. 
  📎 https://lnkd.in/giHGeCCw
 
-
-
+Upwork
+Trusted by Microsoft, GoDaddy, and more. Freelance projects for all skills.
+📎 https://www.upwork.com/
 
 
 
