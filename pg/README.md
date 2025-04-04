@@ -29,7 +29,7 @@ WITH summary AS (
  SELECT *
    FROM summary
  WHERE rank = 1
-``
+```
 
 https://stackoverflow.com/questions/3800551/select-first-row-in-each-group-by-group/7630564#7630564
 
