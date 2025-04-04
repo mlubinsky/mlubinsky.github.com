@@ -506,3 +506,291 @@ nums = [100, 4, 200, 1, 3, 2]
 output = longest_consecutive(nums)
 print(f"Longest Consecutive Sequence Length: {output}")
 # Longest Consecutive Sequence Length: 4
+
+
+### Part 3 
+
+1. Remove Outermost Parentheses
+Write a function to remove the outermost parentheses from a valid string containing only parentheses. The input will always be a valid string of parentheses, with no extra characters or spaces.
+
+def remove_outer_parentheses(s: str) -> str:
+    # Initialize an empty stack and an empty result list
+    stack = []
+    result = []
+
+    for char in s:
+        if char == '(':
+            # Only add '(' to result if stack is not empty, which means it is not the outermost '('
+            if stack:
+                result.append(char)
+            stack.append(char)  # Push '(' to stack
+        elif char == ')':
+            stack.pop()  # Pop the last '(' from stack
+            # Only add ')' to result if stack is not empty after popping, which means it is not the outermost ')'
+            if stack:
+                result.append(char)
+
+    # Join result list to form the output string
+    return ''.join(result)
+
+# Test cases
+print(remove_outer_parentheses("(()())(())"))       # Expected output: "()()()"
+print(remove_outer_parentheses("(()())(())(()(()))")) # Expected output: "()()()()(())"
+print(remove_outer_parentheses("()()"))             # Expected output: ""
+2. Reverse Words in a String
+Function to reverse the order of words in a given string.
+
+def reverse_words_in_string(s):
+    """
+    This function takes a string input and returns the string with the order of words reversed.
+
+    """
+    # Step 1: Split the string into words
+    words = s.split()
+    
+    # Step 2: Reverse the list of words
+    reversed_words = words[::-1]
+    
+    # Step 3: Join the reversed list back into a single string
+    reversed_string = " ".join(reversed_words)
+    
+    return reversed_string
+
+# Example usage
+input_string = "Hello World"
+output_string = reverse_words_in_string(input_string)
+print("Reversed String:", output_string)
+# Reversed String: World Hello
+3. Longest Common Prefix
+Given an array of strings, find the longest common prefix among all strings. If there is no common prefix, return an empty string ‘ ’.
+
+def longest_common_prefix(strs):
+    """
+    Function to find the longest common prefix among a list of strings.
+    
+    """
+    # if the list is empty, return an empty string
+    if not strs:
+        return ""
+
+    prefix = ""
+    
+    # Use zip to pair characters at the same position in each string
+    for chars in zip(*strs):
+        # Use a set to identify unique characters at this position
+        if len(set(chars)) == 1:
+            # All characters match, add it to the prefix
+            prefix += chars[0]
+        else:
+    
+            break
+
+    return prefix
+
+# Test cases
+print(longest_common_prefix(["flower", "flow", "flight"]))  # Expected output: "fl"
+print(longest_common_prefix(["dog", "racecar", "car"]))    # Expected output: ""
+print(longest_common_prefix(["apple", "ape", "april"]))    # Expected output: "ap"
+4. Rotate String
+Given two strings, A and B, write a function that returns True if and only if B is a rotation of A. A string B is a rotation of A if we can shift the characters in A to get B.
+
+def is_rotation(A: str, B: str) -> bool:
+    """
+    Checks if string B is a rotation of string A.
+    
+    """
+    # Step 1: Check if lengths of A and B are the same
+    if len(A) != len(B):
+        return False
+
+    # Step 2: Concatenate A with itself to capture all possible rotations
+    double_A = A + A
+
+    # Step 3: Check if B is a substring of the concatenated string
+    return B in double_A
+
+# Example Usage
+A = "abcde"
+B1 = "cdeab"  # Expected output: True
+B2 = "abced"  # Expected output: False
+
+# Test cases
+print(f"Is '{B1}' a rotation of '{A}'? -> {is_rotation(A, B1)}")  # True
+print(f"Is '{B2}' a rotation of '{A}'? -> {is_rotation(A, B2)}")  # False
+5. Valid Anagram
+Given two strings s and t, write a function to determine if t is an anagram of s. An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once. For example, `anagram` and `nagaram` are anagrams.
+
+def is_anagram(s: str, t: str) -> bool:
+    """
+    Function to check if string t is an anagram of string s.
+
+    """
+
+    # Check if the lengths of both strings are equal.
+    # If not, they cannot be anagrams.
+    if len(s) != len(t):
+        return False
+
+    # Create dictionaries to count the frequency of each character in both strings.
+    char_count_s = {}
+    char_count_t = {}
+
+    # Count each character in string s
+    for char in s:
+        char_count_s[char] = char_count_s.get(char, 0) + 1
+
+    # Count each character in string t
+    for char in t:
+        char_count_t[char] = char_count_t.get(char, 0) + 1
+
+    # Compare the character counts; if they are the same, s and t are anagrams
+    return char_count_s == char_count_t
+
+# Test cases
+s1 = "anagram"
+t1 = "nagaram"
+print(f"Is '{t1}' an anagram of '{s1}'? : {is_anagram(s1, t1)}")  # Output: True
+
+s2 = "rat"
+t2 = "car"
+print(f"Is '{t2}' an anagram of '{s2}'? : {is_anagram(s2, t2)}")  # Output: False
+6. Sort Characters By Frequency:
+Write a function that takes a string s and returns a new string with the characters sorted in descending order based on their frequency in the original string. If two characters have the same frequency, their order in the output does not matter.
+
+from collections import Counter
+
+def sort_characters_by_frequency(s: str) -> str:
+    # Step 1: Count the frequency of each character in the input string.
+    # Gives us a dictionary-like object
+    freq_counter = Counter(s)
+
+    # Step 2: Sort characters by frequency in descending order.
+    # - key=lambda x: x[1] sorts these pairs by frequency (x[1]) in descending order
+    sorted_characters = sorted(freq_counter.items(), key=lambda x: x[1], reverse=True)
+
+    # Step 3: Build the result string by repeating each character according to its frequency.
+    result = ''.join(char * freq for char, freq in sorted_characters)
+
+    return result
+
+# Test the function with example input
+s = "tree"
+output = sort_characters_by_frequency(s)
+print(f"Input: {s}")
+print(f"Output: {output}")
+7. Maximum Nesting Depth of the Parentheses
+Finding the Maximum Nesting Depth of Parentheses.
+
+def maxDepth(s: str) -> int:
+    current_depth = 0
+    max_depth = 0
+
+    for char in s:
+        # If we encounter an opening parenthesis, increase the current depth
+        if char == '(':
+            current_depth += 1
+            # Update the maximum depth if the current depth exceeds it
+            max_depth = max(max_depth, current_depth)
+        
+        # If we encounter a closing parenthesis, decrease the current depth
+        elif char == ')':
+            current_depth -= 1
+
+    return max_depth
+
+# Test the function with a sample input
+input_str = "(1+(2*3)+((8)/4))+1"
+output = maxDepth(input_str)
+print(f"Output: {output}")
+# Output: 3
+8. String Compression
+Given a string s, write a function that compresses the string based on the counts of consecutive characters. For instance, the string “aaabbcc” would become “a3b2c2”.
+
+def compress_string(s):
+    # Check for an empty string
+    if not s:
+        return s
+    
+    # Initialize variables
+    compressed = [] 
+    count = 1
+
+    for i in range(1, len(s)):
+        if s[i] == s[i - 1]:  # If current character is same as previous
+            count += 1
+        else:
+            # Append the character and its count to compressed list
+            compressed.append(s[i - 1] + str(count))
+            count = 1  # Reset count for new character
+
+    # Append the last character and its count
+    compressed.append(s[-1] + str(count))
+
+    # Join the list into a compressed string
+    compressed_str = ''.join(compressed)
+
+    return compressed_str 
+
+# Example usage
+input_str = "aabcccccaaa"
+output_str = compress_string(input_str)
+print(f"Input: {input_str}\nCompressed Output: {output_str}")
+
+# Input: aabcccccaaa
+# Compressed Output: a2b1c5a3
+9. Count the number of substrings
+Write a function that takes a string as input and counts the total number of possible substrings.
+
+def count_substrings(s):
+    # Initialize the count of substrings to zero
+    count = 0
+    n = len(s)
+
+    for i in range(n):
+        # For each starting point, iterate over all possible ending points
+        for j in range(i, n):
+            # A substring exists from index i to index j
+            count += 1
+
+    return count
+
+# Test the function with an example input
+input_str = "abc"
+print(f"The total number of substrings in '{input_str}' is: {count_substrings(input_str)}")
+
+# The total number of substrings in 'abc' is: 6
+10. Next higher palindromic number using the same set of digits
+Given a positive integer, find the next higher palindromic number that can be formed using the same digits as the input number. If no such palindrome exists, return -1.
+
+from itertools import permutations
+
+def is_palindrome(num_str):
+    """Check if a string is a palindrome."""
+    return num_str == num_str[::-1]
+
+def next_palindromic_number(num):
+    """
+    Find the next higher palindromic number using the same set of digits.
+    
+    """
+    # Convert number to list of digits and sort them
+    digits = sorted(str(num))
+    
+    # Generate all unique permutations that are higher than the current number
+    for perm in sorted(set(permutations(digits))):
+        candidate = ''.join(perm)
+        
+        # Skip numbers that are not greater than the original number
+        if int(candidate) <= num:
+            continue
+        
+        # Check if the permutation is a palindrome
+        if is_palindrome(candidate):
+            return int(candidate)
+
+    return -1
+
+# Example usage
+number = 12321
+result = next_palindromic_number(number)
+print(f"Next palindromic number using the same digits as {number} is: {result}")
