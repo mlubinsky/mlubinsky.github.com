@@ -6,6 +6,8 @@ https://python.plainenglish.io/top-string-manipulation-interview-questions-for-d
  
 https://python.plainenglish.io/coding-problems-every-data-engineer-should-know-lessons-from-multiple-interviews-faa1ceffc5b5
 
+https://python.plainenglish.io/frequently-asked-binary-search-questions-for-data-engineering-interviews-top-questions-to-know-8321e10bb8b8
+
 1. Second Largest
 Write a Python program to find the second largest element in an array. You should solve this problem without sorting the array. If there are duplicate elements, they should be treated as individual values.
 
@@ -1059,6 +1061,314 @@ def longest_substring(s):
 s = "abcabcbb"
 print(longest_substring(s))  # Output: 3 ("abc")
 
+### Part 5 
+1. Search Insert Position
+Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if inserted in order.
 
+def search_insert_position(nums, target):
+    """
+    Find the index at which a target should be inserted in a sorted array.
+    
+    """
+    left, right = 0, len(nums) - 1
+    
+    # Perform binary search to find the correct position
+    while left <= right:
+        mid = (left + right) // 2
+        
+        # Check if target is equal to the middle element
+        if nums[mid] == target:
+            return mid  # Target found, return its position
+        
+        # If target is greater than middle element, search in the right half
+        elif nums[mid] < target:
+            left = mid + 1
+        
+        # If target is smaller than middle element, search in the left half
+        else:
+            right = mid - 1
+    
+    # If target is not found, return the insertion position
+    return left
+
+
+Example:
+  >>> search_insert_position([1, 3, 5, 6], 5)
+        2
+  >>> search_insert_position([1, 3, 5, 6], 2)
+        1
+  >>> search_insert_position([1, 3, 5, 6], 7)
+        4
+  >>> search_insert_position([1, 3, 5, 6], 0)
+        0
+
+Time Complexity:
+O(log n), where 'n' is the number of elements in the array.
+    
+Space Complexity:
+O(1) since no extra space is used apart from variables.
+2. Floor & Celi in a Sorted Array
+Given a sorted array arr of n integers and a target integer x, your task is to find the floor and ceiling of x in the array. The floor of x is the greatest element in arr that is less than or equal to x, and the ceiling of x is the smallest element in arr that is greater than or equal to x
+
+def find_floor_ceil(arr, target):
+    """
+    The floor is the greatest element in the array that is less than or 
+    equal to the target.
+
+    The ceil is the smallest element in the array that is greater than or 
+    equal to the target.
+    
+    """
+    
+    # Initialize floor and ceil values as None
+    floor, ceil = None, None
+    low, high = 0, len(arr) - 1
+    
+    while low <= high:
+        mid = (low + high) // 2
+        
+        if arr[mid] == target:
+            # If the target is exactly found, it's both the floor and ceil
+            return arr[mid], arr[mid]
+        
+        if arr[mid] < target:
+            # If the middle element is less than the target, it's a candidate for the floor
+            floor = arr[mid]
+            low = mid + 1  # Move right to search for closer floor
+        else:
+            # If the middle element is greater than the target, it's a candidate for the ceil
+            ceil = arr[mid]
+            high = mid - 1  # Move left to search for closer ceil
+    
+    return floor, ceil
+
+
+
+Example:
+    >>> find_floor_ceil([1, 2, 4, 6, 10], 5)
+    (4, 6)
+    >>> find_floor_ceil([1, 2, 4, 6, 10], 6)
+    (6, 6)
+    >>> find_floor_ceil([1, 2, 4, 6, 10], 11)
+    (10, None)
+    >>> find_floor_ceil([1, 2, 4, 6, 10], 0)
+    (None, 1)
+3. Find the First and Last Position of the Element in Sorted Array
+Find a given target value's starting and ending position in an array of integer numbers sorted in non-decreasing order.
+
+def find_first_and_last_position(nums: List[int], target: int) -> List[int]:
+    """
+    This function finds the first and last position of a target element in a 
+    sorted array.
+  
+    """
+    
+    # Helper function to find the first occurrence of the target
+    def find_first(nums, target):
+        low, high = 0, len(nums) - 1
+        first_pos = -1
+        while low <= high:
+            mid = (low + high) // 2
+            if nums[mid] == target:
+                first_pos = mid  # Found target, but continue searching in the left half
+                high = mid - 1
+            elif nums[mid] < target:
+                low = mid + 1
+            else:
+                high = mid - 1
+        return first_pos
+    
+    # Helper function to find the last occurrence of the target
+    def find_last(nums, target):
+        low, high = 0, len(nums) - 1
+        last_pos = -1
+        while low <= high:
+            mid = (low + high) // 2
+            if nums[mid] == target:
+                last_pos = mid  # Found target, but continue searching in the right half
+                low = mid + 1
+            elif nums[mid] < target:
+                low = mid + 1
+            else:
+                high = mid - 1
+        return last_pos
+
+    # Find the first and last occurrence of the target
+    first_pos = find_first(nums, target)
+    last_pos = find_last(nums, target)
+
+    # If the target is not found, return [-1, -1]
+    if first_pos == -1:
+        return [-1, -1]
+
+    return [first_pos, last_pos]
+
+
+# Example usage:
+nums = [5, 7, 7, 8, 8, 10]
+target = 8
+print(find_first_and_last_position(nums, target))  # Output: [3, 4]
+4. Search in Rotated Sorted Array
+You are given a sorted integer array, which contains distinct values. However, the array has been rotated at an unknown pivot point, meaning that some portions of the array are shifted to the beginning while the rest remain in sorted order. Given a target value of k, your task is to find the index of k in the rotated array. If k is not present, return -1.
+
+def search_in_rotated_array(nums, target):
+    """
+    Searches for a target value in a rotated sorted array using binary search.
+
+    """
+    # Initialize the start and end pointers for the binary search
+    start, end = 0, len(nums) - 1
+    
+    while start <= end:
+        # Find the middle index
+        mid = (start + end) // 2
+        
+        # Check if the middle element is the target
+        if nums[mid] == target:
+            return mid
+        
+        # Determine if the left half is sorted
+        if nums[start] <= nums[mid]:
+            # If target is in the left sorted portion, narrow the search to that half
+            if nums[start] <= target < nums[mid]:
+                end = mid - 1
+            else:
+                start = mid + 1
+        # Otherwise, the right half must be sorted
+        else:
+            # If target is in the right sorted portion, narrow the search to that half
+            if nums[mid] < target <= nums[end]:
+                start = mid + 1
+            else:
+                end = mid - 1
+    
+    # If the target is not found, return -1
+    return -1
+
+# Example usage:
+nums = [4, 5, 6, 7, 0, 1, 2]
+target = 0
+result = search_in_rotated_array(nums, target)
+print(f"Target found at index: {result}")  
+# Output: 4
+5. Determine how many times a sorted array has been rotated
+You are given a sorted array that has been rotated k times. You need to find k, the number of rotations
+
+def find_rotation_count(arr):
+    low, high = 0, len(arr) - 1
+
+    # If the array is not rotated at all
+    if arr[low] <= arr[high]:
+        return 0
+
+    while low <= high:
+        mid = (low + high) // 2
+
+        # Check if mid is the minimum (pivot) element
+        if arr[mid] < arr[mid - 1] and arr[mid] <= arr[mid + 1]:
+            return mid
+
+        # Decide whether to search in the left or right half
+        if arr[mid] <= arr[high]:
+            high = mid - 1  # Search in the left half
+        else:
+            low = mid + 1   # Search in the right half
+
+    return -1
+
+# Test the function
+arr = [15, 18, 2, 3, 6, 12]
+rotation_count = find_rotation_count(arr)
+print(f"The array has been rotated {rotation_count} times.") 
+# Output: 2
+6. Row with max 1s:
+You are given a 2D binary matrix, where each row contains only 0s and 1s, sorted in non-decreasing order (all 0s appear before any 1s in each row). Your task is to find the index of the row with the highest number of 1s. If multiple rows have the same maximum count of 1s, return the index of the first such row. If no rows contain a 1, return -1.
+
+# Define the matrix (each row is sorted)
+matrix = [
+    [0, 0, 1, 1],
+    [0, 1, 1, 1],
+    [1, 1, 1, 1],
+    [0, 0, 0, 1]
+]
+
+# Initialize variables to track the maximum count of 1s and the row index
+max_count = 0
+row_index = -1
+
+# Loop through each row to count the number of 1s
+for i, row in enumerate(matrix):
+    count_1s = row.count(1)  # Count 1s in the current row
+    if count_1s > max_count:  # Update max_count and row_index if current row has more 1s
+        max_count = count_1s
+        row_index = i
+
+
+# Output the row with the maximum number of 1s
+print(f"Row with the maximum number of 1's is: Row {row_index} with {max_count} ones.")
+# Output: Row with the maximum number of 1's is: Row 2 with 4 ones.
+7. Search a 2D Matrix:
+Given a 2D matrix with the following properties:
+
+1. Each row is sorted in ascending order.
+2. The first element of each row is greater than the last element of the previous row.
+
+Write an efficient algorithm to search for a target integer in the matrix. Return `True` if the target exists, and `False` otherwise.
+
+from typing import List
+
+def search_matrix(matrix: List[List[int]], target: int) -> bool:
+    if not matrix or not matrix[0]:  # Check for an empty matrix
+        return False
+
+    m, n = len(matrix), len(matrix[0])
+    left, right = 0, m * n - 1
+
+    while left <= right:
+        mid = (left + right) // 2
+        mid_element = matrix[mid // n][mid % n]
+
+        if mid_element == target:
+            return True
+        elif mid_element < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+
+    return False
+    
+matrix = [
+    [1, 3, 5, 7],
+    [10, 11, 16, 20],
+    [23, 30, 34, 50]
+]
+target = 3
+
+
+print(search_matrix(matrix, target))  # Output: True
+8. Find Peak Element
+Given an array `nums`, find a peak element and return its index. An element is considered a peak if it is greater than or equal to its neighbors. We only need to compare corner elements with one neighbor.
+
+def find_peak_element(nums):
+    # Initialize the left and right pointers
+    left, right = 0, len(nums) - 1
+
+    while left < right:
+        mid = (left + right) // 2  # Calculate the mid index
+
+        # Check if mid element is a peak
+        if nums[mid] > nums[mid + 1]:
+            # Peak is on the left side (including mid)
+            right = mid
+        else:
+            # Peak is on the right side
+            left = mid + 1
+
+    # When left == right, we have found a peak
+    return left
+
+# Example usage:
+nums = [1, 2, 3, 1]
+print("Peak element index:", find_peak_element(nums))  # Output: 2
 
 
