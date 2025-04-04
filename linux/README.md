@@ -4,6 +4,8 @@ https://www.linux.org.ru/
 
 <https://zaiste.net/posts/shell-commands-rust/> many command line tools in Rust (procs!, fd)
 
+https://habr.com/ru/articles/897042/  memory monitoring 
+
 <http://cb.vu/unixtoolbox.xhtml>
 
 <https://neilkakkar.com/unix.html>
