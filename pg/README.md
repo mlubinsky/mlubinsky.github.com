@@ -584,8 +584,12 @@ https://habr.com/ru/companies/selectel/articles/807259/ Выжимаем мак�
 
 https://habr.com/ru/companies/otus/articles/815893/
 
-queues in postgres https://docs.hatchet.run/blog/multi-tenant-queues
+### queues in postgres
+https://docs.hatchet.run/blog/multi-tenant-queues
 https://news.ycombinator.com/item?id=40077233
+
+https://news.ycombinator.com/item?id=43572733
+
 
 Ten years of improvements in PostgreSQL's optimizer (rmarcus.info)
 https://news.ycombinator.com/item?id=40060123
