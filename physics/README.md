@@ -429,9 +429,12 @@ https://www.youtube.com/watch?v=Teb28OFMVFc SciPy
 https://www.youtube.com/watch?v=cXHvC_FGx24 SciPy Optimization
  
  
-### Chaos , Solitons, Dynamical systems
+### Solitons
+https://habr.com/ru/articles/816193/
 
-https://habr.com/ru/articles/816193/ Solitons
+https://habr.com/ru/articles/878678/
+
+### Chaos  Dynamical systems
 
 https://www.youtube.com/playlist?list=PLbMVogVj5nJQKk1E7OUQs_TcW_zQoaO4t
 
