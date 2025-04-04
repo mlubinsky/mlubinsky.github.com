@@ -794,3 +794,271 @@ def next_palindromic_number(num):
 number = 12321
 result = next_palindromic_number(number)
 print(f"Next palindromic number using the same digits as {number} is: {result}")
+
+#### Part 4
+
+
+1. Find the Most Frequent Element in a List
+Given a list of integers, find the element that appears the most frequently.
+
+def most_frequent(arr):
+   """
+
+    The function uses a dictionary to store the frequency of each element and 
+    then finds the element with the maximum frequency.
+
+    """
+       freq_dict = {}
+       for num in arr:
+           if num in freq_dict:
+              # If the number is already in the dictionary, increment its frequency by 1
+               freq_dict[num] += 1
+           else:
+              # If the number is not in the dictionary, add it with an initial frequency of 1
+               freq_dict[num] = 1
+       # Use the max function to find the key with the maximum value in the dictionary
+       return max(freq_dict, key=freq_dict.get)
+
+
+arr = [1, 3, 2, 1, 2, 2, 3, 3, 3, 1]
+print(most_frequent(arr))  # Output: 3
+2. Find the Missing Number in an Array
+Find the missing number in an array containing `n` distinct numbers from 0 to `n`.
+
+def missing_number(arr):
+   """
+    
+    The function assumes that the array contains unique integers from 0 to n, 
+    with one number missing, and finds the missing number using the formula 
+    for the sum of the first n natural numbers.
+
+    """
+       n = len(arr)
+       # Calculate the sum of numbers from 0 to n using the formula n * (n + 1) // 2
+       total_sum = n * (n + 1) // 2
+       return total_sum - sum(arr)
+
+
+arr = [3, 0, 1]
+print(missing_number(arr))  # Output: 2
+3. Find Duplicates in an Array
+Given an array of integers, find all duplicates in the array.
+
+def find_duplicates(arr):
+    """
+    This function finds and returns all duplicate elements from the input array.
+
+    """
+       seen = set()
+       duplicates = set()
+       for num in arr:
+           # If the number has been seen before, it's a duplicate
+           if num in seen:
+               duplicates.add(num)
+           else:
+              # If the number is new, add it to the 'seen' set
+               seen.add(num)
+       return list(duplicates)
+
+
+   arr = [4, 3, 2, 7, 8, 2, 3, 1]
+   print(find_duplicates(arr))  # Output: [2, 3]
+4. Group Anagrams
+Given an array of strings, group the anagrams together.
+
+def group_anagrams(strs):
+    """
+
+    Anagrams are words that contain the same characters but in a different 
+    order. This function sorts each word in the list, uses the sorted word 
+    as a key, and groups all the words that share the same sorted characters 
+    into sublists.
+
+    """
+    
+    anagram_map = {}
+
+    for s in strs:
+        # Sort the characters in the string to get the key
+        sorted_str = ''.join(sorted(s))
+        
+        # If the sorted string is already a key, append the word to its list
+        if sorted_str in anagram_map:
+            anagram_map[sorted_str].append(s)
+        else:
+            # Otherwise, create a new key with the word as the first entry
+            anagram_map[sorted_str] = [s]
+
+    # Return the values of the dictionary, which are lists of anagrams
+    return list(anagram_map.values())
+
+# Example usage
+strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+print(group_anagrams(strs))
+
+# Output: [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
+5. Binary Search
+Implement binary search to find an element in a sorted array.
+
+def binary_search(arr, target):
+    """
+    Performs binary search on a sorted array to find the target element.
+
+    """
+       # Initialize left and right pointers
+       left, right = 0, len(arr) - 1
+       while left <= right:
+           mid = (left + right) // 2
+           # Check if the middle element is the target
+           if arr[mid] == target:
+               return mid
+           # If target is greater, ignore the left half
+           elif arr[mid] < target:
+               left = mid + 1
+           # If target is smaller, ignore the right half
+           else:
+               right = mid - 1
+       return -1 # Target not found in the array
+
+
+arr = [1, 2, 3, 4, 5, 6, 7]
+target = 5
+print(binary_search(arr, target))  # Output: 4 (index of 5)
+6. Move Zeroes
+Given an array `nums`, write a function to move all `0`s to the end of it while maintaining the relative order of the non-zero elements.
+
+def move_zeroes(nums):
+    """
+    Moves all zeroes in the input list to the end while maintaining the 
+    relative order of the non-zero elements.
+
+    """
+    zero_idx = 0
+    
+    for i in range(len(nums)):
+        # If current element is non-zero, swap it with the element at zero_idx
+        if nums[i] != 0:
+            nums[i], nums[zero_idx] = nums[zero_idx], nums[i]
+            zero_idx += 1
+
+
+# Example usage
+nums = [0, 1, 0, 3, 12]
+move_zeroes(nums)
+print(nums)  # Output: [1, 3, 12, 0, 0]
+7. Reverse a Linked List
+Given the `head` of a singly linked list, reverse the list, and return the reversed list.
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def reverse_list(head):
+    prev = None
+    curr = head
+    
+    while curr:
+        next_node = curr.next # Store the next node
+        curr.next = prev # Reverse the link by pointing the current node to the previous one
+        prev = curr # Move the previous pointer to the current node
+        curr = next_node # Move the current pointer to the next node in the original list
+    
+    return prev
+
+
+# Example usage:
+# Creating a linked list: 1 -> 2 -> 3 -> None
+head = ListNode(1, ListNode(2, ListNode(3)))
+new_head = reverse_list(head)
+# Output should be 3 -> 2 -> 1 -> None
+8. Kth Largest Element in an Array
+Find the kth largest element in an unsorted array. It is the kth largest element in sorted order, not the kth distinct element.
+
+def find_kth_largest(nums, k):
+    """
+    Find the k-th largest element in an unsorted list.
+
+    """
+    # Sort the list in descending order
+    sorted_nums = sorted(nums, reverse=True)
+
+    # Return the k-th largest element
+    return sorted_nums[k-1]
+
+# Example usage:
+nums = [3, 2, 1, 5, 6, 4]
+k = 2
+print(find_kth_largest(nums, k))  # Output: 5
+9. Subarray Sum Equals K
+Given an array of integers `nums` and an integer `k`, return the total number of continuous subarrays whose sum equals to `k`.
+
+def subarray_sum(a, K):
+    """
+    This function counts the number of subarrays in a given array 'a' that have a sum equal to 'K'.
+
+    """
+    
+    n = len(a)
+
+    hash = {}
+    
+    count, sum = 0, 0
+    
+    for i in range(n):
+        # Add the current element to the cumulative sum
+        sum += a[i]
+        
+        # If the cumulative sum equals K, increment the count
+        if sum == K:
+            count += 1
+        
+        # If (sum - K) exists in the hash, it means there's a subarray
+        # that sums to K, so we add the frequency of that sum to the count
+        if (sum - K) in hash:
+            count += hash[sum - K]
+        
+        # Update the frequency of the current cumulative sum in the hash
+        if sum in hash:
+            hash[sum] += 1
+        else:
+            hash[sum] = 1
+    
+    return count
+
+
+# Example usage:
+nums = [1, 1, 1, -1]
+k = 2
+print(subarray_sum(nums, k))  # Output: 3
+10. Longest Substring Without Repeating Characters
+Given a string, find the length of the longest substring without repeating characters.
+
+def longest_substring(s):
+   """
+    This function takes a string `s` as input and returns the length of the longest
+    substring without repeating characters.
+
+    """
+       char_index_map = {}
+       start = 0
+       max_len = 0
+
+       for i, char in enumerate(s):
+            # If the character is already in the map and its index is greater than or equal to start,
+            # move the start pointer to the right of the previous occurrence of the character
+           if char in char_index_map and char_index_map[char] >= start:
+               start = char_index_map[char] + 1
+           char_index_map[char] = i
+           # Calculate the length of the current substring and update the maximum length if necessary
+           max_len = max(max_len, i - start + 1)
+
+       return max_len
+
+
+s = "abcabcbb"
+print(longest_substring(s))  # Output: 3 ("abc")
+
+
+
+
