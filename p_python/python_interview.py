@@ -284,4 +284,225 @@ print("\nInput:", nums2)
 print("Output:", majorityElement(nums2))  # Output: [1, 2]
 
 python.plainenglish.io
- 
+
+
+###  PArt 2 
+
+1. 3Sum:
+Given an arr[] and an integer sum. Find if a triplet in the array sums up the given integer sum.
+
+def three_sum(arr, sum):
+    n = len(arr)
+
+    # Sort the elements
+    arr.sort()
+
+    # Fix the first element one by one
+    # and find the other two elements
+    for i in range(n - 2):
+        l = i + 1  # index of the first element
+        r = n - 1  # index of the last element
+
+        while l < r:
+            curr_sum = arr[i] + arr[l] + arr[r]
+            if curr_sum == sum:
+                print(f"Triplet is {arr[i]}, {arr[l]}, {arr[r]}")
+                return True
+            elif curr_sum < sum:
+                l += 1
+            else:
+                r -= 1
+
+    return False
+
+# Example usage
+nums = [-1, 0, 1, 2, -1, -4]
+print("3Sum Result:", three_sum(nums, 3))
+
+# Triplet is 0, 1, 2
+# 3Sum Result: True
+2. Array Leaders
+Given an array, a leader is an element greater than all elements to its right.
+
+def find_leaders(arr):
+    """
+    Function to find leaders in the given array.
+
+    """
+    n = len(arr)
+    leaders = []       
+    max_from_right = arr[-1]  # Start with the last element as the initial leader
+
+    # Rightmost element is always a leader
+    leaders.append(max_from_right)
+
+    # Traverse the array from right to left
+    for i in range(n - 2, -1, -1):
+        # If the current element is greater than the max_from_right
+        if arr[i] > max_from_right:
+            max_from_right = arr[i]  # Update the max_from_right
+            leaders.append(max_from_right)
+
+    leaders.reverse()
+    return leaders
+
+# Test the function with example input
+arr = [16, 17, 4, 3, 5, 2]
+leaders = find_leaders(arr)
+print("Leaders:", leaders) # [17, 5, 2]
+3. Rearrange Array Elements by Sign
+Given an array nums containing both positive and negative integers, rearrange the elements so that the positives and negatives alternate.
+
+def rearrange_by_sign(nums):
+    # Separate positive and negative numbers while keeping their original order
+    positives = [num for num in nums if num > 0]
+    negatives = [num for num in nums if num < 0]
+    
+    # Initialize an empty list for the rearranged array
+    rearranged = []
+    
+    # Iterate over both lists to append elements in an alternating order
+    for pos, neg in zip(positives, negatives):
+        rearranged.append(pos)  # Add positive number
+        rearranged.append(neg)  # Add negative number
+    
+    return rearranged
+
+# Test case
+nums = [3, -1, 2, -2, -3, 1]
+output = rearrange_by_sign(nums)
+print("Output:", output) # [3, -1, 2, -2, 1, -3]
+4. Maximum Product Subarray
+You are given an integer array nums. Find the contiguous subarray within an array that has the largest product and return its product.
+
+def max_product_subarray(nums):
+    """
+    Function to find the maximum product subarray.
+    
+    """
+    if not nums:
+        return 0 
+
+    max_product = nums[0] 
+    min_product = nums[0]
+    result = nums[0]       
+
+    for i in range(1, len(nums)):
+        num = nums[i]
+        
+        # Since num can be negative, calculate temporary max before updating min_product
+        temp_max = max(num, max_product * num, min_product * num)
+        min_product = min(num, max_product * num, min_product * num)
+        
+        # Update max_product using the temporary value
+        max_product = temp_max
+        
+        # Update the global maximum result
+        result = max(result, max_product)
+    
+    return result
+
+
+# Test cases and expected outputs
+nums1 = [2, 3, -2, 4]  # Expected output: 6 (subarray: [2, 3])
+nums2 = [-2, 0, -1]    # Expected output: 0 (subarray: [0])
+nums3 = [-2, 3, -4]    # Expected output: 24 (subarray: [-2, 3, -4])
+nums4 = [0, 2, -1, -3, 4]  # Expected output: 12 (subarray: [-1, -3, 4])
+5. Best Time to Buy and Sell Stock
+You are given an array of prices where prices[i] represent the price of a stock on the i-th day. Your task is to maximize your profit by choosing a single day to buy one stock and a different day to sell that stock in the future. If no profit can be achieved, return 0
+
+def maxProfit(prices):
+    """
+    Function to calculate the maximum profit from a given list of stock prices.
+
+    """
+
+    min_price = float('inf')
+    max_profit = 0            
+
+    for price in prices:
+        # Update the minimum price
+        if price < min_price:
+            min_price = price
+        # Calculate profit for the current price and update max_profit
+        elif price - min_price > max_profit:
+            max_profit = price - min_price
+
+    return max_profit
+
+# Example Input
+prices = [7, 1, 5, 3, 6, 4]
+
+# Function Call and Output
+result = maxProfit(prices)
+print("Maximum Profit:", result) # Maximum Profit: 5
+6. Count subarrays with the given sum
+You are given an array of integer numbers and an integer target. Write a function to count the subarrays that sum up to the given target.
+
+def count_subarrays_with_sum(nums, target):
+    """
+    Count the number of subarrays with a given sum.
+
+    """
+    # Initialize with 0 for the case when the prefix sum itself equals the target
+    prefix_sum_freq = {0: 1}  
+    prefix_sum = 0 
+    count = 0 
+
+    for num in nums:
+        # Add the current number to the running prefix sum
+        prefix_sum += num
+
+        # Check if there is a prefix sum that would form the required sum with the current prefix
+        if prefix_sum - target in prefix_sum_freq:
+            count += prefix_sum_freq[prefix_sum - target]
+
+        # Update the prefix sum frequency map
+        if prefix_sum in prefix_sum_freq:
+            prefix_sum_freq[prefix_sum] += 1
+        else:
+            prefix_sum_freq[prefix_sum] = 1
+
+    return count
+
+
+# Example usage
+nums = [1, 1, 1]
+target = 2
+result = count_subarrays_with_sum(nums, target)
+
+# Display the result with input details
+print("Number of Subarrays with Target Sum:", result) 
+# Number of Subarrays with Target Sum: 2
+7. Longest Consecutive Sequence
+Given an unsorted array of integers, find the length of the longest consecutive element sequence.
+
+def longest_consecutive(nums):
+    """
+    Function to find the length of the longest consecutive sequence in an unsorted array.
+
+    """
+    num_set = set(nums)
+    longest_sequence = 0
+
+    for num in num_set:
+        # Check if it is the start of a sequence
+        if num - 1 not in num_set:
+            current_num = num
+            current_sequence = 1
+
+            # Count consecutive numbers
+            while current_num + 1 in num_set:
+                current_num += 1
+                current_sequence += 1
+
+            # Update the longest sequence
+            longest_sequence = max(longest_sequence, current_sequence)
+
+    return longest_sequence
+
+# Test the function with an example input
+nums = [100, 4, 200, 1, 3, 2]
+output = longest_consecutive(nums)
+print(f"Longest Consecutive Sequence Length: {output}")
+# Longest Consecutive Sequence Length: 4
