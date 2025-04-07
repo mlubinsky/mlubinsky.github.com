@@ -202,7 +202,24 @@ Use Spark UI to track memory usage and job execution.
 Write partitioned data:
 df.write.partitionBy("partition_column").parquet("path_to_data")
 
+### Partitioning vs Bucketing
 
+🚪 Partitioning
+ Divides data into folders based on column values (like year or country).
+ ✅ Great for filtering queries
+ ✅ Reduces data scanned
+ 👉 df.write.partitionBy("year").parquet("path")
+
+🪣 Bucketing
+ Divides data into a fixed number of files (buckets) based on a hash of column values (like user_id).
+ ✅ Ideal for joins and groupBy operations
+ ✅ Ensures even data distribution
+ 👉 df.write.bucketBy(10, "user_id").sortBy("user_id").saveAsTable("bucketed_users")
+
+💡 When to use what?
+Use partitioning for frequent filter-based queries.
+Use bucketing when you're dealing with large joins or aggregations.
+Combine both when needed!
 
 ### Оптимизируем Shuffle в Spark
 https://habr.com/ru/companies/X5Tech/articles/837348/
