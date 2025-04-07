@@ -2,6 +2,49 @@ https://medium.com/@suffyan.asad1/introduction-to-aggregate-and-transform-functi
 
 https://medium.com/@suffyan.asad1/spark-leveraging-window-functions-for-time-series-analysis-in-pyspark-03aa735f1bdf
 
+Instead of using multiple withColumn, use selectExpr forinline transformations.
+
+df = df.selectExpr("id", "upper(name) as name","salary * 1.1 as updated_salary")
+
+ To remove duplicates based on certain columns, use
+ 
+ dropDuplicates.df = df.dropDuplicates(["name", "age"])
+
+When performing aggregations, always use agg insteadof multiple groupBy calls.
+
+df.groupBy("department").agg({"salary": "avg","bonus": "sum"}).show()
+
+Instead of adding multiple columns one by one, use selector selectExpr for better performance.
+
+df = df.withColumn("new_column",df["existing_column"] * 10)
+
+df.cache() # Stores the DataFrame in memory
+
+df.persist() # Default stores in memory, can specifydifferent storage levels 
+
+If a column contains arrays, use explode to flatten them.
+
+from pyspark.sql.functions import explode
+
+df_exploded = df.withColumn("exploded_column",explode(df["array_column"]))
+
+
+Use coalesce for Efficient Repartitioning If you have too many small partitions, use coalesce toreduce them efficiently.
+
+df = df.coalesce(5) # Reduces partitions but avoids full shuffle
+
+Use repartition for Evenly DistributedDataWhen dealing with skewed data, use repartition tobalance partitions.
+
+df = df.repartition(10, "department")
+ 
+Use rdd.mapPartitions for Efficient Row-Level Operations   
+When working with large datasets, use mapPartitionsinstead of map for better performance.
+
+df.rdd.mapPartitions(lambda partition:some_function(partition))
+
+Optimize Writing with partitionByWhen writing large datasets, partition them to improve query performance.
+
+ df.write.mode("overwrite").partitionBy("year","month").parquet("output_path")
 
 ### Use ThreadPoolExecutor with PySpark
 ```
