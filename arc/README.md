@@ -1,5 +1,7 @@
 https://kodekloud.com/sales
 
+https://habr.com/ru/articles/896848/  Modeling
+
 ### Functional requirements 
 ```
 Functional requirements are your "Users/Clients should be able to..." statements.
