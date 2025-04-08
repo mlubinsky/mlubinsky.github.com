@@ -2,6 +2,8 @@ https://www.lektorium.tv/node/38965
 
 https://arxiv.org/abs/1602.04182 Feinman Diagrams
 
+https://landau.gitlab.io/qft/spring25/
+
 Квантовая теория поля 2022-2023
 https://sites.google.com/view/qft2023/
 
