@@ -8,6 +8,8 @@ https://github.com/certik/theoretical-physics
 
 https://arxiv.org/abs/2502.02654 Theory of resonances
 
+https://alexandr4784.narod.ru/
+
 https://vk.com/quantpublic
 
 https://libguides.wpi.edu/oer/physics
