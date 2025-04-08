@@ -10,6 +10,8 @@ https://arxiv.org/abs/2502.02654 Theory of resonances
 
 https://alexandr4784.narod.ru/
 
+http://jetp.ras.ru/cgi-bin/r/index Журнал Экспериментальной и Теоретической Физики
+
 https://vk.com/quantpublic
 
 https://libguides.wpi.edu/oer/physics
