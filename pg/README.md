@@ -9,6 +9,7 @@ https://pgdog.dev/blog
 
 https://news.ycombinator.com/item?id=43364668
 
+https://habr.com/ru/companies/otus/articles/898114/  FILTER IFNULL A/B test
 
 ### GREATEST n per group
 https://stackoverflow.com/a/123481/684229
