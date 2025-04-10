@@ -17,3 +17,4 @@ Microsoft is giving away 50,000 FREE certification exam vouchers for certificati
 🔗 https://lnkd.in/gXW3WB8R
 
   
+https://community.fabric.microsoft.com/t5/custom/page/page-id/campaign_form?campaignID=Q0FNUEFJR05fMTc0NDE0MjkwMDc0NQ==
