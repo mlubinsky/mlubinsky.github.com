@@ -1,3 +1,16 @@
+### \n in SQL column names
+If you want to generate column names like "2025-04-01\nMonday" dynamically in your SQL:
+
+```
+SELECT 
+  name,
+  to_char(date, 'YYYY-MM-DD') || E'\n' || to_char(date, 'Day') as date_label,
+  value
+FROM your_table
+WHERE $__timeFilter(date)
+```
+The E'\n' syntax allows you to insert a real newline in PostgreSQL string literals.
+
 ### build the Grafana dashboard with table.
 ```
 The data source is SQL statement which returns columns named as number from 1 till 31.
