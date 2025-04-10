@@ -19,17 +19,23 @@ How to do it?
  
 
 To achieve this in Grafana with a PostgreSQL datasource,
- where you want to pivot a table based on a date range selected by the user into a format
+where you want to pivot a table based on a date range selected by the user into a format
 with individual columns per date (e.g., Name, date_1, date_2, date_3, etc.),
-you’ll need to use a combination of PostgreSQL’s crosstab function (from the tablefunc extension) and Grafana’s query builder with variables. Here’s a step-by-step solution:
+you’ll need to use a combination of PostgreSQL’s crosstab function
+(from the tablefunc extension) and Grafana’s query builder with variables.
+
+ Here’s a step-by-step solution:
 
 1. Enable the tablefunc Extension in PostgreSQL
-The crosstab function is part of the tablefunc module, which is not enabled by default in PostgreSQL. Run the following SQL command in your PostgreSQL database to enable it:
+*************
+The crosstab function is part of the tablefunc module, which is not enabled by default in PostgreSQL.
+Run the following SQL command in your PostgreSQL database to enable it:
 
 sql
 CREATE EXTENSION IF NOT EXISTS tablefunc;
 
 2. Understand the Data and Desired Output
+************
 Your table has:
 
 Date (e.g., '2025-04-01', '2025-04-02', etc.)
@@ -42,6 +48,7 @@ Alice	10	15	20
 Bob	5	8	12
 
 3. Set Up Grafana Variables for Date Range
+***************
 Grafana will pass the selected date range to your query via variables like $timeFilter,
  or you can use custom variables for the start and end dates:
 
@@ -54,6 +61,7 @@ end_date: Similarly, set it to $__to:date:YYYY-MM-DD.
 These variables will dynamically capture the date range selected by the user.
 
 4. Write the PostgreSQL Query with crosstab
+****************
 The crosstab function pivots rows into columns. It requires two SQL queries:
 
 A source query that provides the data in a "row_name, column_name, value" format.
@@ -99,8 +107,8 @@ Option 2: Use a Dynamic SQL Query with a Script
 -------------------------------------------------
 Since Grafana’s basic query editor doesn’t handle dynamic column names well, you can:
 
-Write a server-side script (e.g., in Python or Node.js) t
-hat generates the SQL query dynamically based on the date range.
+Write a server-side script (e.g., in Python or Node.js) 
+that generates the SQL query dynamically based on the date range.
 Use a PostgreSQL function to handle the pivoting.
 Here’s an example of a PostgreSQL function:
 
@@ -142,7 +150,7 @@ This approach still requires the client (Grafana) to handle dynamic column names
 which Grafana’s table panel can interpret if the query returns consistent results.
 
 5. Configure the Grafana Table Panel
-
+*******************
 In the Grafana query editor, paste your SQL query (either the static crosstab or the function-based one).
 Set the query format to “Table” in the query options.
 In the “Panel” tab:
@@ -150,9 +158,10 @@ Choose the “Table” visualization.
 Grafana will automatically display the columns returned by your query (Name, date_1, date_2, etc.).
 
 6. Final Notes
-
+***************
 Dynamic Columns Limitation: Grafana’s table panel works best with a predictable set of columns.
-If the number of dates varies significantly, you might need a custom plugin or a different visualization (e.g., a heatmap).
+If the number of dates varies significantly,
+you might need a custom plugin or a different visualization (e.g., a heatmap).
 Performance: For large datasets, ensure your table is indexed on Date and Name.
-Testing: Test with a small date range first (e.g., 2-3 days) to verify the pivoting works.
-
+ 
+```
