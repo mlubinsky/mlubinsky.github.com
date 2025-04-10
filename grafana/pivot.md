@@ -76,6 +76,7 @@ Users might not expect the first row to be non-data
 Exported CSV will include the description as a normal row
 
 🛠 Alternate Workaround: Display descriptions separately
+-----------------------
 If putting the description in-row doesn't work well:
 
 Add a second table panel that shows the one-row table B
@@ -83,6 +84,629 @@ Add a second table panel that shows the one-row table B
 Place it above or below the main table using a dashboard grid layout
 
 This separates concerns: one table for data, one for header descriptions.
+
+Grok.ai says:
+******************
+Unpivot B:
+Convert B’s columns into a key-value pair for easier reference:
+
+ 
+SELECT column_name, value
+FROM B
+CROSS JOIN LATERAL (
+    SELECT column_name, value
+    FROM jsonb_each_text(to_jsonb(B))
+) AS descriptions
+WHERE column_name LIKE '2025%'; -- Adjust to match date columns
+
+This gives you a result like:
+ 
+column_name  | value
+-------------+--------------------
+2025-04-01   | Description for 01
+2025-04-02   | Description for 02
+
+Use the unpivoted B query in a separate query (e.g., Query B) to fetch descriptions.
+In Grafana, you can’t directly merge these in the table headers, but you can use the Transform tab to reference descriptions (e.g., via a lookup, though Grafana’s transform features are limited).
+
+Transform Options to Try:
+Join by Field:
+Goal: Link Query A’s columns to Query B’s descriptions.
+Steps:
+In the Transform tab, select Join by field.
+This transformation is typically used to merge two queries based on a common field (e.g., merging rows).
+
+Problem: Query A’s data is in a wide format (columns like 2025-04-01), while Query B has rows with date_column. There’s no direct field in Query A’s result to join with date_column because Grafana treats 2025-04-01 as a column name, not a value in a field.
+Result: Joining doesn’t work here because the data structures don’t align (column names in A vs. row values in B).
+
+Sign up
+
+Sign in
+There is postgres table T with many numeric columns. Numeric columns are named like "2025-04-01", "2025-04-02", "2025-04-03", etc. For every such column there is text description, stored in another table B which has a single row and the same column names as above. How to display in Grafana the table T with text description from table B placed just below the header of T? I cannot make union of tables T and B because the datatypes of columns is different (numeric vs text).
+
+
+
+
+To display a table in Grafana that combines data from table T (with numeric columns named like 2025-04-01, 2025-04-02, etc.) and shows text descriptions from table B (with a single row and matching column names) just below the headers of T, you need to work around the datatype mismatch between the numeric columns in T and the text columns in B. Since a direct UNION isn’t feasible due to differing datatypes, you can achieve this by structuring your SQL query and leveraging Grafana’s table visualization features. Below is a step-by-step solution assuming you’re using PostgreSQL as your data source in Grafana.
+
+Solution
+The idea is to query table T to get the numeric data and use a subquery or a separate query to fetch the descriptions from table B, then rely on Grafana’s table visualization to display the descriptions below the column headers. Since Grafana doesn’t natively support injecting a description row directly below headers in a straightforward way, you may need to use a combination of query design and Grafana’s column styling or consider a plugin like the Dynamic Text panel if the default table panel doesn’t suffice. Here’s how to approach it:
+
+Step 1: Understand the Schema
+Table T:
+Columns: id (or some identifier, optional), 2025-04-01 (numeric), 2025-04-02 (numeric), 2025-04-03 (numeric), etc.
+Contains multiple rows of numeric data.
+Table B:
+Single row with columns: 2025-04-01 (text), 2025-04-02 (text), 2025-04-03 (text), etc.
+Each column name matches a column in T, and the value is the text description.
+Step 2: Write the SQL Query
+Since you can’t union T and B directly, focus on querying T for the data and fetch B’s descriptions separately or within the query context. The table visualization in Grafana will display the numeric data, and you’ll use column aliases or Grafana’s column settings to incorporate descriptions.
+
+Here’s a sample query to get data from T:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT *
+FROM T;
+This retrieves all rows and columns from T, with headers like 2025-04-01, 2025-04-02, etc.
+
+To get descriptions from B, you can write a separate query:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT *
+FROM B;
+Since B has one row, this returns a single row with text values for each column.
+
+Step 3: Display in Grafana Table
+Grafana’s default table panel displays query results as-is, with column names as headers. To show descriptions from B just below the headers, you have a few options:
+
+Option 1: Use Grafana Column Aliases with Manual Description Mapping
+Grafana doesn’t directly support a “description row” below headers, but you can use the column names and override their display names to include descriptions.
+
+Query Setup:
+Use the query for T:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT *
+FROM T;
+Fetch Descriptions:
+Since B has one row, you could theoretically join or reference it, but the datatype mismatch prevents direct row combination. Instead, fetch B’s data in a second query for reference:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT *
+FROM B;
+Table Visualization:
+
+Add the query for T to your Grafana panel.
+In the Grafana table panel, go to the Field tab.
+For each column (e.g., 2025-04-01), set a Display Name that includes the description. For example:
+Column: 2025-04-01
+Display Name: 2025-04-01: ${description}.
+You’ll need to manually map descriptions from B’s query result (since Grafana can’t dynamically inject B’s row into headers).
+Alternatively, use Grafana’s Value Mappings or Overrides to add tooltips or custom styling, though this won’t place text directly below headers.
+Limitation: Grafana’s table panel doesn’t natively allow a separate description row below headers. Manually adding descriptions to display names can make headers verbose, and you’d need to update them if column names change.
+
+Option 2: Pivot Table B and Join with Metadata
+To make descriptions more dynamic, you can transform B’s columns into rows using PostgreSQL’s UNPIVOT or a JSON-based approach, then use Grafana’s table styling. However, joining directly with T is tricky due to datatype issues, so focus on displaying T and styling headers.
+
+Unpivot B:
+Convert B’s columns into a key-value pair for easier reference:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT column_name, value
+FROM B
+CROSS JOIN LATERAL (
+    SELECT column_name, value
+    FROM jsonb_each_text(to_jsonb(B))
+) AS descriptions
+WHERE column_name LIKE '2025%'; -- Adjust to match date columns
+This gives you a result like:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
+column_name  | value
+-------------+--------------------
+2025-04-01   | Description for 01
+2025-04-02   | Description for 02
+...
+Query T:
+Keep the query for T simple:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT *
+FROM T;
+Grafana Setup:
+
+Use the query for T in the main table panel.
+Use the unpivoted B query in a separate query (e.g., Query B) to fetch descriptions.
+In Grafana, you can’t directly merge these in the table headers, but you can use the Transform tab to reference descriptions (e.g., via a lookup, though Grafana’s transform features are limited).
+Alternatively, export the descriptions自主地选择性地显示或隐藏详细信息。
+Limitations: Grafana’s table panel doesn’t support injecting a row of descriptions directly below headers. You’d need to manually configure column display names or use tooltips.
+
+Option 3: Use a Custom Plugin
+The default Grafana table panel is limited for complex layouts like adding a description row below headers. Consider using a plugin like Dynamic Text or Canvas Panel:
+
+Dynamic Text Plugin:
+
+Install the Dynamic Text panel plugin in Grafana.
+
+Write a query to fetch both T and B data.
+
+Use HTML/Markdown in the Dynamic Text panel to render a custom table.
+
+Example query to get data:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT *
+FROM T;
+For descriptions:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT *
+FROM B;
+In the Dynamic Text panel, write HTML to create a table:
+
+Loop through T’s columns to create headers.
+Use B’s single row to add a <tr> below headers with descriptions.
+Add T’s data rows below.
+Example Pseudo-Code (Dynamic Text content):
+
+html
+
+Collapse
+
+Wrap
+
+Copy
+<table>
+  <thead>
+    <tr>
+      {% for column in query_A.fields %}
+        <th>{{ column.name }}</th>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for column in query_B.fields %}
+        <td>{{ column.values[0] }}</td>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in query_A.rows %}
+      <tr>
+        {% for value in row %}
+          <td>{{ value }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+query_A is the query for T.
+query_B is the query for B.
+This assumes the plugin can access both query results and render them.
+Pros: Fully customizable layout, can place descriptions exactly below headers.
+Cons: Requires plugin installation and HTML knowledge. Dynamic Text may need configuration to handle dynamic column names.
+
+Option 4: Transpose Columns to Rows
+Instead of displaying columns as-is, transpose T’s date columns into rows, which allows easier combination with B’s descriptions.
+
+Unpivot T:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT id, column_name AS date, value::numeric AS value
+FROM T
+CROSS JOIN LATERAL (
+    SELECT column_name, value
+    FROM jsonb_each_text(to_jsonb(T))
+    WHERE column_name LIKE '2025%'
+) AS unpivoted
+This turns T into:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
+id | date       | value
+---+------------+-------
+1  | 2025-04-01 | 100
+1  | 2025-04-02 | 200
+...
+Unpivot B (as shown earlier):
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT column_name AS date, value AS description
+FROM B
+CROSS JOIN LATERAL (
+    SELECT column_name, value
+    FROM jsonb_each_text(to_jsonb(B))
+    WHERE column_name LIKE '2025%'
+) AS descriptions;
+Result:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
+date       | description
+-----------+--------------------
+2025-04-01 | Description for 01
+2025-04-02 | Description for 02
+...
+Join the Data:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT t.id, t.date, t.value, b.description
+FROM (
+    SELECT id, column_name AS date, value::numeric AS value
+    FROM T
+    CROSS JOIN LATERAL (
+        SELECT column_name, value
+        FROM jsonb_each_text(to_jsonb(T))
+        WHERE column_name LIKE '2025%'
+    ) AS unpivoted
+) t
+LEFT JOIN (
+    SELECT column_name AS date, value AS description
+    FROM B
+    CROSS JOIN LATERAL (
+        SELECT column_name, value
+        FROM jsonb_each_text(to_jsonb(B))
+        WHERE column_name LIKE '2025%'
+    ) AS descriptions
+) b ON t.date = b.date;
+Result:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
+id | date       | value | description
+---+------------+-------+--------------------
+1  | 2025-04-01 | 100   | Description for 01
+1  | 2025-04-02 | 200   | Description for 02
+...
+Grafana Setup:
+
+Use this query in a table panel.
+Columns will be id, date, value, description.
+The description is now a column, not below headers, but it’s associated with each date.
+Pros: Avoids datatype issues, clean data structure, dynamic column handling.
+Cons: Changes the table structure significantly (columns become rows), which may not match the desired wide-table format. Grafana still won’t place descriptions below headers.
+
+Step 4: Choose the Best Option
+If you must keep the exact table format with descriptions below headers:
+Dynamic Text Plugin (Option 3) is the most flexible, as it allows custom HTML to place descriptions exactly where you want. However, it requires setup and comfort with HTML templating.
+If you’re okay with descriptions in tooltips or display names:
+Option 1 (manual column overrides) is simplest but requires manual updates for new columns.
+If you can accept a different structure:
+Option 4 (transpose) is robust and dynamic, handling datatype differences cleanly, but it changes the table to a long format (date as rows, not columns).
+Option 2 (pivoting B for metadata) is useful for dynamic descriptions but doesn’t solve the header placement issue without custom rendering.
+Step 5: Practical Recommendation
+Given Grafana’s limitations with the default table panel, I recommend:
+
+Start with Option 4 (Transpose):
+It’s dynamic, handles new columns automatically, and avoids datatype issues.
+
+Use the query:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT t.id, t.date, t.value, b.description
+FROM (
+    SELECT id, column_name AS date, value::numeric AS value
+    FROM T
+    CROSS JOIN LATERAL (
+        SELECT column_name, value
+        FROM jsonb_each_text(to_jsonb(T))
+        WHERE column_name LIKE '2025%'
+    ) AS unpivoted
+) t
+LEFT JOIN (
+    SELECT column_name AS date, value AS description
+    FROM B
+    CROSS JOIN LATERAL (
+        SELECT column_name, value
+        FROM jsonb_each_text(to_jsonb(B))
+        WHERE column_name LIKE '2025%'
+    ) AS descriptions
+) b ON t.date = b.date;
+In Grafana, display as a table with columns id, date, value, description.
+
+If the long format works for your use case, this is maintainable and scalable.
+
+If the wide format is mandatory:
+Use Option 3 (Dynamic Text Plugin):
+Install the plugin.
+Query T and B separately.
+Write an HTML template to render the table with descriptions below headers (as shown in the pseudo-code).
+This gives you full control over the layout.
+Fallback:
+If plugins aren’t an option and transposing doesn’t fit, use Option 1 and manually set display names with descriptions (e.g., 2025-04-01: Desc for 01). It’s not ideal for dynamic columns but works with minimal setup.
+Additional Notes
+Dynamic Columns: If the date columns (e.g., 2025-04-01, etc.) change frequently (new dates added), Options 3 and 4 handle this automatically. Option 1 requires updating Grafana’s field overrides for new columns.
+Performance: Unpivoting large tables (T or B) can be slow. Ensure indexes on relevant columns if performance is an issue, though with B having one row, its impact is minimal.
+Grafana Version: Ensure you’re using a recent Grafana version (e.g., 10.x or 11.x as of 2025) for the latest table features and plugin support.
+Alternative Tools: If Grafana’s limitations are too restrictive, tools like Apache Superset or Metabase might offer more flexible table rendering for this use case, though they require separate setup.
+Example Grafana Setup (for Option 4)
+Add a PostgreSQL data source in Grafana.
+Create a new dashboard and add a table panel.
+Set the query to the transposed SQL above.
+In the Panel tab:
+Set Table as the visualization.
+Map columns:
+id → Display as “ID”.
+date → Display as “Date”.
+value → Display as “Value”.
+description → Display as “Description”.
+Optionally, use Value Mappings to style values (e.g., color-code value).
+Adjust sorting or filters (e.g., order by date) as needed.
+This displays a table with descriptions in a column, not below headers, but it’s dynamic and clean.
+
+If You Need the Exact Layout
+If placing descriptions directly below headers is non-negotiable and the transposed format won’t do, the Dynamic Text plugin (Option 3) is your best bet. You’d need to:
+
+Install it via Grafana’s plugin manager (grafana-cli plugins install ... or UI).
+Write the HTML table structure, referencing T and B query results.
+Test with a small dataset to ensure the template renders correctly.
+Would you like me to elaborate on setting up the Dynamic Text plugin, provide more SQL optimizations, or explore another visualization approach (e.g., pivoting back to wide format in Grafana)? Alternatively, if you can share more about your Grafana setup (version, plugins available) or whether transposing is acceptable, I can tailor the solution further.
+
+
+
+
+
+
+
+Please elaborate on this (you said it above):
+Use the unpivoted B query in a separate query (e.g., Query B) to fetch descriptions.
+In Grafana, you can’t directly merge these in the table headers, but you can use the Transform tab to reference descriptions (e.g., via a lookup, though Grafana’s transform features are limited).
+
+
+
+
+Let’s dive deeper into the approach of using the unpivoted B query as a separate query in Grafana and leveraging the Transform tab to reference descriptions from table B for displaying them in the context of table T. The goal is to display table T’s numeric data (with columns like 2025-04-01, 2025-04-02, etc.) in a Grafana table while incorporating the text descriptions from table B (which has a single row with matching column names) ideally below the headers. Since you highlighted my mention of the Transform tab, I’ll focus on explaining how to unpivot B, set up the queries, and use Grafana’s transformation features to attempt to associate B’s descriptions with T’s columns, while addressing the limitations you’ve noted (e.g., no direct UNION due to datatype mismatches). I’ll also clarify why the Transform tab’s capabilities may fall short for placing descriptions directly below headers and suggest practical workarounds.
+
+Context and Challenges
+Table T: Contains numeric columns named like 2025-04-01, 2025-04-02, etc., with multiple rows of data.
+Table B: Has one row, with text columns matching T’s column names (e.g., 2025-04-01 has a text description).
+Goal: Display T in a Grafana table with B’s descriptions appearing just below the column headers (e.g., 2025-04-01, 2025-04-02).
+Constraints:
+Numeric (in T) vs. text (in B) datatypes prevent direct UNION or row concatenation.
+Grafana’s default table panel uses column names as headers and doesn’t natively support a “description row” below headers.
+You want descriptions integrated dynamically, ideally without manually updating column names for every date.
+In the earlier response, I mentioned unpivoting B to create a query (e.g., “Query B”) that transforms B’s columns into rows (e.g., column_name, description pairs) and using Grafana’s Transform tab to reference these descriptions. Let’s break this down step-by-step, focusing on the unpivot process, query setup, and Transform tab usage, while acknowledging Grafana’s limitations and offering a clear path forward.
+
+Step 1: Unpivot Table B
+Table B has a single row with columns like 2025-04-01, 2025-04-02, etc., where each column’s value is a text description. To make these descriptions usable in Grafana, we can unpivot B to convert its columns into rows, creating a key-value structure (e.g., column name and description). This makes it easier to reference descriptions programmatically.
+
+Here’s the SQL query to unpivot B in PostgreSQL:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT column_name AS date_column, value AS description
+FROM B
+CROSS JOIN LATERAL (
+    SELECT column_name, value
+    FROM jsonb_each_text(to_jsonb(B))
+    WHERE column_name LIKE '2025%' -- Adjust to match your date columns
+) AS descriptions;
+Explanation:
+to_jsonb(B): Converts the row of B into a JSON object where keys are column names (e.g., 2025-04-01) and values are the text descriptions.
+jsonb_each_text: Expands the JSON object into a set of key-value pairs (column_name, value).
+WHERE column_name LIKE '2025%': Filters to include only date columns (adjust the pattern if your column names differ, e.g., include other years).
+CROSS JOIN LATERAL: Allows the subquery to reference the outer table B.
+Output columns:
+date_column: The column name (e.g., 2025-04-01).
+description: The text value for that column.
+Example Output:
+Assuming B has one row like:
+
+2025-04-01	2025-04-02	2025-04-03
+Sales for April 1	Sales for April 2	Sales for April 3
+The unpivoted query returns:
+
+date_column	description
+2025-04-01	Sales for April 1
+2025-04-02	Sales for April 2
+2025-04-03	Sales for April 3
+This format is easier to work with in Grafana, as it associates each column name with its description in a row-based structure.
+
+Step 2: Query for Table T
+For table T, which contains the numeric data you want to display, use a straightforward query to fetch all relevant columns:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT *
+FROM T;
+Example Output:
+Assuming T has an id column and date columns:
+
+id	2025-04-01	2025-04-02	2025-04-03
+1	100	200	150
+2	120	180	170
+This query retrieves the data you want in the table, with column names (2025-04-01, etc.) becoming headers in Grafana’s table panel.
+
+Step 3: Set Up Queries in Grafana
+In Grafana, you’ll create a panel (preferably a Table panel) and configure two queries:
+
+Query A: For table T’s data.
+Query B: For table B’s unpivoted descriptions.
+Grafana Query Configuration:
+Add a Table Panel:
+Create a new dashboard or edit an existing one.
+Add a Table panel and select your PostgreSQL data source.
+Query A (Table T):
+In the Query tab, add the first query (label it “A” for clarity):
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT *
+FROM T;
+This fetches all rows and columns from T, including the date columns (2025-04-01, etc.).
+Grafana will display these as columns in the table, with headers matching the column names.
+Query B (Table B Unpivoted):
+Add a second query (label it “B”):
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT column_name AS date_column, value AS description
+FROM B
+CROSS JOIN LATERAL (
+    SELECT column_name, value
+    FROM jsonb_each_text(to_jsonb(B))
+    WHERE column_name LIKE '2025%'
+) AS descriptions;
+This fetches the unpivoted descriptions, with date_column (e.g., 2025-04-01) and description (e.g., “Sales for April 1”).
+Query Inspector (Optional):
+Use Grafana’s Query Inspector to verify the results:
+Query A returns rows with columns id, 2025-04-01, 2025-04-02, etc., and numeric values.
+Query B returns rows with date_column and description.
+Step 4: Using the Transform Tab
+Grafana’s Transform tab allows you to manipulate query results before rendering them in the panel. The idea is to use Query B’s descriptions to enhance Query A’s display, ideally associating each column name in T (e.g., 2025-04-01) with its description from B. However, as I noted earlier, Grafana’s transform features are limited for this specific use case (placing descriptions below headers). Let’s explore how to use the Transform tab and why it may not fully achieve the goal.
+
+Transform Options to Try:
+Join by Field:
+Goal: Link Query A’s columns to Query B’s descriptions.
+Steps:
+In the Transform tab, select Join by field.
+This transformation is typically used to merge two queries based on a common field (e.g., merging rows).
+Problem: Query A’s data is in a wide format (columns like 2025-04-01), while Query B has rows with date_column. There’s no direct field in Query A’s result to join with date_column because Grafana treats 2025-04-01 as a column name, not a value in a field.
+Result: Joining doesn’t work here because the data structures don’t align (column names in A vs. row values in B).
+Add Field from Calculation:
+Goal: Dynamically rename or annotate columns using descriptions.
+Steps:
+Select Add field from calculation.
+This transformation lets you create new fields based on existing ones, but it operates on row values, not column metadata (like column names).
+Problem: You want to associate descriptions with column headers (e.g., 2025-04-01), but transformations like this can’t modify header metadata or inject a description row below headers.
+Result: This doesn’t help place descriptions below headers.
+Organize Fields:
+Goal: Rename columns to include descriptions.
+Steps:
+Select Organize fields.
+Manually rename columns from Query A (e.g., change 2025-04-01 to 2025-04-01: Sales for April 1).
+To make this dynamic, you’d need Query B’s data to inform the renaming, but Organize fields doesn’t support referencing another query’s results for renaming.
+Problem: Renaming is static and manual. If B’s descriptions change or new columns are added, you’d need to update the transformation manually.
+Result: Feasible but not dynamic; doesn’t place descriptions below headers, only in header names.
+Merge:
+Goal: Combine Query A and Query B into a single dataset.
+Steps:
+Select Merge.
+This transformation appends results from multiple queries into a single table, but it expects similar structures.
+Problem: Query A has columns id, 2025-04-01, etc., with numeric values, while Query B has date_column, description with text. Merging them creates a table with unrelated columns (e.g., id, 2025-04-01, ..., date_column, description), not a description row below headers.
+Result: Merge doesn’t align the data meaningfully for your goal.
+Lookup or External Data Source (Hypothetical):
+Grafana doesn’t have a direct “lookup” transformation to map column names to another query’s values, but some advanced plugins or data sources might simulate this.
+Steps: You’d need a plugin or custom logic to map Query A’s column names to Query B’s date_column and description.
+Problem: No native transformation in Grafana (as of my knowledge up to April 2025) supports dynamic column header annotation using another query.
+Result: Not viable without custom development.
+Key Limitation of Transform Tab:
+Grafana’s transformations operate on row data (values in fields) or simple column renaming, not on column metadata (like dynamically annotating headers with data from another query). Your goal requires associating each column name in Query A (e.g., 2025-04-01) with a description from Query B’s rows, then rendering those descriptions below headers. The Transform tab can’t:
+
+Inject a row of descriptions below headers.
+Dynamically rename headers using another query’s data.
+Restructure Query A’s wide format to incorporate Query B’s descriptions as metadata.
+This is why I noted that “Grafana’s transform features are limited” for this use case. The unpivoted Query B gives you a clean dataset of descriptions, but Grafana lacks a native way to map those to Query A’s column headers in the table panel.
 
 ```
 ### Pivoting in Postgres
