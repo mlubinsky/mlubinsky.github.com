@@ -29,6 +29,18 @@ https://pattern-kit.readthedocs.io/en/latest/  implementations of common softwar
 https://github.com/airtai/faststream provides a unified API to work across multiple message brokers (Kafka, RabbitMQ, NATS, Redis support)
 
 ```
+There are 2 python dictionaries:
+group2dut: keys is a string and value is a list of strings
+dut2build: key and value are strings.
+Task:
+for every key in group2dut traverse across all list values:
+   for every value find the matching key in dut2build based on startwith match:
+     value.startswith(dut2build.key)
+     if match was found then take value from dut2build.
+
+Build new dictionary with keys from  group2dut and the value is the most frequent value from dut2build      
+
+
 #------------------------
 def valid_date(date_str):
 #------------------------
