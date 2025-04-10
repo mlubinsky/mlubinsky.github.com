@@ -82,14 +82,21 @@ FROM crosstab(
   "2025-04-03" numeric
   -- These column names must match the dates in your range
 );
+
 Problem: Dynamic Column Names
-The crosstab function requires you to explicitly define the column names in the AS ct (...) clause. However, since the date range is dynamic (based on user input), you can’t hardcode the dates like "2025-04-01". To solve this, you have two options:
+The crosstab function requires you to explicitly define the column names in the AS ct (...) clause.
+However, since the date range is dynamic (based on user input),
+you can’t hardcode the dates like "2025-04-01".
+To solve this, you have two options:
 
 Option 1: Use a Fixed Number of Columns
 --------------------------------------
-If the date range is predictable (e.g., always 7 days), you can predefine a fixed number of columns and use Grafana’s $__timeFrom and $__timeTo to shift the dates. However, this isn’t ideal for variable ranges.
+If the date range is predictable (e.g., always 7 days),
+you can predefine a fixed number of columns and use Grafana’s $__timeFrom and $__timeTo to shift the dates.
+However, this isn’t ideal for variable ranges.
 
 Option 2: Use a Dynamic SQL Query with a Script
+-------------------------------------------------
 Since Grafana’s basic query editor doesn’t handle dynamic column names well, you can:
 
 Write a server-side script (e.g., in Python or Node.js) t
@@ -135,13 +142,17 @@ This approach still requires the client (Grafana) to handle dynamic column names
 which Grafana’s table panel can interpret if the query returns consistent results.
 
 5. Configure the Grafana Table Panel
+
 In the Grafana query editor, paste your SQL query (either the static crosstab or the function-based one).
 Set the query format to “Table” in the query options.
 In the “Panel” tab:
 Choose the “Table” visualization.
 Grafana will automatically display the columns returned by your query (Name, date_1, date_2, etc.).
+
 6. Final Notes
-Dynamic Columns Limitation: Grafana’s table panel works best with a predictable set of columns. If the number of dates varies significantly, you might need a custom plugin or a different visualization (e.g., a heatmap).
+
+Dynamic Columns Limitation: Grafana’s table panel works best with a predictable set of columns.
+If the number of dates varies significantly, you might need a custom plugin or a different visualization (e.g., a heatmap).
 Performance: For large datasets, ensure your table is indexed on Date and Name.
 Testing: Test with a small date range first (e.g., 2-3 days) to verify the pivoting works.
-If you’re still stuck, let me know your exact table name and a sample of the data, and I can refine the query further!
+
