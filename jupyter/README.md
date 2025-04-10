@@ -11,6 +11,20 @@ https://arrow.apache.org/docs/python/index.html
 
  PyArrow library provides pandas with its own optimized data types, which are faster and less memory-intensive than the traditional NumPy types that pandas uses by default.
 
+
+### Convert two columns A and B from a pandas DataFrame into a Python dictionary 
+
+use the zip() function or Series.to_dict() method:
+
+✅ Method 1: Using zip() + dict()
+ 
+my_dict = dict(zip(df['A'], df['B']))
+This creates a dictionary where keys are from column A, and values are from column B.
+
+✅ Method 2: Using Series.to_dict()
+ 
+my_dict = df.set_index('A')['B'].to_dict()
+
 ### DF with types
 ```
 for col in df.columns:
