@@ -21,6 +21,43 @@ SELECT
   SUM(value) FILTER (WHERE date = '2025-04-03') AS "2025-04-03"
 FROM your_table
 GROUP BY name;
+
+
+
+with K as( 
+select distinct date, build from kpi_score_gdc_summary
+where not is_ref  and criteria = '_Average' 
+and test_loc = 'DSK_SuwonStation'
+and folder_up like '%DEV%' and folder like '%Flip%'
+),
+T as ( 
+select   
+date, test, group_name , score, is_ref
+from kpi_score_gdc_summary 
+where criteria = '_Average' 
+and test_loc = 'DSK_SuwonStation'
+and folder_up like '%DEV%' and folder like '%Flip%'
+),
+C as ( 
+select concat_ws(' ', test, group_name) as test, score, date from T where not is_ref
+union all 
+select concat_ws(' ', test, group_name) as test, score, date from T where   is_ref and group_name not ilike '%Ultra%'
+)
+--select '        ' as " ",
+--  MAX(build) FILTER (WHERE date = '2025-04-01') AS "2025-04-01",
+--  MAX(build) FILTER (WHERE date = '2025-04-02') AS "2025-04-02",
+--  MAX(build) FILTER (WHERE date = '2025-04-08') AS "2025-04-08",
+--  MAX(build) FILTER (WHERE date = '2025-04-10') AS "2025-04-10"
+--FROM K
+--union all
+SELECT
+  test,
+  MAX(score) FILTER (WHERE date = '2025-04-01') AS "2025-04-01",
+  MAX(score) FILTER (WHERE date = '2025-04-02') AS "2025-04-02",
+  MAX(score) FILTER (WHERE date = '2025-04-08') AS "2025-04-08",
+  MAX(score) FILTER (WHERE date = '2025-04-10') AS "2025-04-10"
+FROM C
+GROUP BY test;
 ```
 
 ### build the Grafana dashboard with table.
