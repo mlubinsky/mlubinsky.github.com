@@ -54,7 +54,57 @@ date_3,
 etc
 
 How to do it?
- 
+``` 
+### ChatGPT Answer
+```
+Step 1: Write the SQL Query
+Use a crosstab() query in PostgreSQL to pivot your data OR use a standard query and let Grafana do the pivot via Transformations.
+
+We’ll go with the easier + dynamic method using Grafana Transformations.
+
+✅ Recommended SQL (No Pivot — Let Grafana Do It)
+sql
+Copy
+Edit
+SELECT
+  name,
+  to_char(date, 'YYYY-MM-DD') as date,
+  value
+FROM your_table
+WHERE $__timeFilter(date)
+
+This query returns 3 columns: name, date, and value,
+and it respects the time range selected in Grafana UI using WHERE $__timeFilter(date).
+
+Step 2: In Grafana Table Panel – Apply Transformations
+After running the query:
+
+Go to the “Transform” tab in the panel editor.
+
+Click “Add transformation” → “Pivot”.
+
+Configure Pivot:
+
+Group by: name
+
+Pivot fields: date
+
+Values: value
+
+Calculation: usually "Last" or "Sum" (pick what makes sense)
+
+✅ This will reshape your data as:
+
+Name	2025-04-01	2025-04-02	...
+Alice	10	20	...
+Optional: Sorting or Formatting
+Add an “Organize fields” transformation to rename or reorder columns.
+
+You can use “Sort by” to order by Name or any date column.
+
+```
+
+### Grok Answer
 
 To achieve this in Grafana with a PostgreSQL datasource,
 where you want to pivot a table based on a date range selected by the user into a format
