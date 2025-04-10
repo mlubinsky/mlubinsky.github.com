@@ -11,7 +11,80 @@ WHERE $__timeFilter(date)
 ```
 The E'\n' syntax allows you to insert a real newline in PostgreSQL string literals.
 
+###  Combining 2 tables
+```
+There is postgres table T with many numeric columns.
+Numeric columns are named like "2025-04-01", "2025-04-02", "2025-04-03", etc.
+For every such column there is text description, stored in another table B which has a single row and the same column names as above.
+How to display in Grafana the table T with text description from table B placed just below the header of T?
+I cannot make union of tables T and B because the datatypes of columns is different (numeric vs text).
 
+ChatGPT said:
+Grafana doesn't support multi-row table headers or stacked headers (like Excel) out-of-the-box, but there are a few creative workarounds you can use to display text descriptions from table B directly below the headers of table T, even though the datatypes differ.
+
+🧠 Your Setup Recap
+Table T: contains rows of data, columns like 2025-04-01, 2025-04-02, etc. (type: numeric)
+
+Table B: contains one row, same columns, with text values describing each date (type: text)
+
+Your goal is to render:
+ 
++------+------------+------------+------------+
+| Name | 2025-04-01 | 2025-04-02 | 2025-04-03 |
+|      | "Monday"   | "Tuesday"  | "Wednesday"|
+|------|------------|------------|------------|
+| A    | 10         | 20         | 30         |
+| B    | 5          | 8          | 15         |
+✅ Option 1: Use Grafana Table Panel + Transformations
+You can't do this in SQL via UNION since types conflict — but you can simulate it in Grafana like this:
+
+1. Create two queries in the same panel
+Query A: Select from T (your numeric data)
+
+Query B: Select from B, cast all text values to match Query A's structure
+ 
+-- Query A
+SELECT * FROM T WHERE ...
+
+-- Query B
+SELECT
+  NULL AS name,  -- match the "name" column in T
+  'Monday' AS "2025-04-01",
+  'Tuesday' AS "2025-04-02",
+  'Wednesday' AS "2025-04-03"
+Or dynamically:
+
+ 
+SELECT * FROM B  -- assuming B has only 1 row
+You might need to CAST or NULL non-numeric columns to make Grafana happy.
+
+2. Use "Transform → Merge rows" or "Outer join" transformation
+Add "Merge" transformation (combine both queries into one table)
+
+Sort so that Query B's row (with descriptions) comes first
+
+3. Style the panel (Optional)
+Use value mappings or row coloring to visually separate the description row
+
+Add a text panel above with labels if needed
+
+⚠️ Limitations
+Grafana treats all rows the same — you’re faking a “description row”
+
+Users might not expect the first row to be non-data
+
+Exported CSV will include the description as a normal row
+
+🛠 Alternate Workaround: Display descriptions separately
+If putting the description in-row doesn't work well:
+
+Add a second table panel that shows the one-row table B
+
+Place it above or below the main table using a dashboard grid layout
+
+This separates concerns: one table for data, one for header descriptions.
+
+```
 ### Pivoting in Postgres
 ```
 SELECT
