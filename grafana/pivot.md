@@ -86,9 +86,7 @@ Use a crosstab() query in PostgreSQL to pivot your data OR use a standard query 
 We’ll go with the easier + dynamic method using Grafana Transformations.
 
 ✅ Recommended SQL (No Pivot — Let Grafana Do It)
-sql
-Copy
-Edit
+
 SELECT
   name,
   to_char(date, 'YYYY-MM-DD') as date,
@@ -120,11 +118,16 @@ Calculation: usually "Last" or "Sum" (pick what makes sense)
 
 Name	2025-04-01	2025-04-02	...
 Alice	10	20	...
+
 Optional: Sorting or Formatting
 Add an “Organize fields” transformation to rename or reorder columns.
 
 You can use “Sort by” to order by Name or any date column.
 
+Notes
+Pivot columns (date) will match exactly what’s returned by SQL.
+If you use to_char(date, 'YYYY-MM-DD') in SQL, it becomes a static text label (recommended).
+If you leave date as a timestamp, Grafana may group or format it oddly.
 ```
 
 ### Grok Answer
