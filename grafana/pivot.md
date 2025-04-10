@@ -34,9 +34,7 @@ Filter out rows with day > current_day.
 Pivot back inside Grafana.
 
 Example (PostgreSQL-style):
-sql
-Copy
-Edit
+
 SELECT category, day, value
 FROM your_table
 UNPIVOT (
