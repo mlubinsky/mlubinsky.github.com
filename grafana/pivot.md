@@ -11,6 +11,18 @@ WHERE $__timeFilter(date)
 ```
 The E'\n' syntax allows you to insert a real newline in PostgreSQL string literals.
 
+
+### Pivoting in Postgres
+```
+SELECT
+  name,
+  SUM(value) FILTER (WHERE date = '2025-04-01') AS "2025-04-01",
+  SUM(value) FILTER (WHERE date = '2025-04-02') AS "2025-04-02",
+  SUM(value) FILTER (WHERE date = '2025-04-03') AS "2025-04-03"
+FROM your_table
+GROUP BY name;
+```
+
 ### build the Grafana dashboard with table.
 ```
 The data source is SQL statement which returns columns named as number from 1 till 31.
