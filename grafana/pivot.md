@@ -18,7 +18,10 @@ etc
 How to do it?
  
 
-To achieve this in Grafana with a PostgreSQL datasource, where you want to pivot a table based on a date range selected by the user into a format with individual columns per date (e.g., Name, date_1, date_2, date_3, etc.), you’ll need to use a combination of PostgreSQL’s crosstab function (from the tablefunc extension) and Grafana’s query builder with variables. Here’s a step-by-step solution:
+To achieve this in Grafana with a PostgreSQL datasource,
+ where you want to pivot a table based on a date range selected by the user into a format
+with individual columns per date (e.g., Name, date_1, date_2, date_3, etc.),
+you’ll need to use a combination of PostgreSQL’s crosstab function (from the tablefunc extension) and Grafana’s query builder with variables. Here’s a step-by-step solution:
 
 1. Enable the tablefunc Extension in PostgreSQL
 The crosstab function is part of the tablefunc module, which is not enabled by default in PostgreSQL. Run the following SQL command in your PostgreSQL database to enable it:
@@ -39,11 +42,13 @@ Alice	10	15	20
 Bob	5	8	12
 
 3. Set Up Grafana Variables for Date Range
-Grafana will pass the selected date range to your query via variables like $timeFilter, or you can use custom variables for the start and end dates:
+Grafana will pass the selected date range to your query via variables like $timeFilter,
+ or you can use custom variables for the start and end dates:
 
 Go to your Grafana dashboard settings.
 Add two variables:
-start_date: Set it as a "Custom" or "Query" type, tied to your time range (e.g., $__from:date:YYYY-MM-DD).
+start_date: Set it as a "Custom" or "Query" type, tied to your time range
+(e.g., $__from:date:YYYY-MM-DD).
 end_date: Similarly, set it to $__to:date:YYYY-MM-DD.
 
 These variables will dynamically capture the date range selected by the user.
@@ -81,17 +86,18 @@ Problem: Dynamic Column Names
 The crosstab function requires you to explicitly define the column names in the AS ct (...) clause. However, since the date range is dynamic (based on user input), you can’t hardcode the dates like "2025-04-01". To solve this, you have two options:
 
 Option 1: Use a Fixed Number of Columns
+--------------------------------------
 If the date range is predictable (e.g., always 7 days), you can predefine a fixed number of columns and use Grafana’s $__timeFrom and $__timeTo to shift the dates. However, this isn’t ideal for variable ranges.
 
 Option 2: Use a Dynamic SQL Query with a Script
 Since Grafana’s basic query editor doesn’t handle dynamic column names well, you can:
 
-Write a server-side script (e.g., in Python or Node.js) that generates the SQL query dynamically based on the date range.
+Write a server-side script (e.g., in Python or Node.js) t
+hat generates the SQL query dynamically based on the date range.
 Use a PostgreSQL function to handle the pivoting.
 Here’s an example of a PostgreSQL function:
 
 sql
-
 
 
 CREATE OR REPLACE FUNCTION pivot_table(start_date date, end_date date)
@@ -124,9 +130,9 @@ Then, in Grafana, use:
 sql
 
 
-
 SELECT * FROM pivot_table('$start_date'::date, '$end_date'::date);
-This approach still requires the client (Grafana) to handle dynamic column names, which Grafana’s table panel can interpret if the query returns consistent results.
+This approach still requires the client (Grafana) to handle dynamic column names,
+which Grafana’s table panel can interpret if the query returns consistent results.
 
 5. Configure the Grafana Table Panel
 In the Grafana query editor, paste your SQL query (either the static crosstab or the function-based one).
