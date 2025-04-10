@@ -1,3 +1,41 @@
+### build the Grafana dashboard with table.
+```
+The data source is SQL statement which returns columns named as number from 1 till 31.
+These numbers are representing the date of current  month.
+On Grafana  UI how to show the table with columns from 1 till the current day of month only?
+
+To build a Grafana dashboard with a table panel that displays only the columns from 1 to the current day of the month, when your SQL data source returns columns named 1 to 31, follow these steps:
+
+SELECT 
+  category, -- or any other dimension
+  [1], [2], [3], ..., [31]
+FROM your_table
+WHERE some_condition;
+
+Most SQL engines don't support dynamic selection of columns based on the date. If you can pivot rows instead of columns, you could:
+
+Unpivot your data (e.g., column 1 to 31 into day and value rows).
+
+Filter out rows with day > current_day.
+
+Pivot back inside Grafana.
+
+Example (PostgreSQL-style):
+sql
+Copy
+Edit
+SELECT category, day, value
+FROM your_table
+UNPIVOT (
+  value FOR day IN ([1], [2], ..., [31])
+)
+WHERE day <= EXTRACT(DAY FROM CURRENT_DATE)
+Then use Transform → Pivot in Grafana to reshape it back to columns if needed.
+
+```
+
+
+### Pivot
 ```
 There is Postgres table with following 3 columns:
 Date
