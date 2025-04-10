@@ -40,6 +40,42 @@ for every key in group2dut traverse across all list values:
 
 Build new dictionary with keys from  group2dut and the value is the most frequent value from dut2build      
 
+from collections import Counter
+
+# Sample data
+group2dut = {
+    'group1': ['dutA1', 'dutA2', 'dutA3'],
+    'group2': ['dutB1', 'dutB2'],
+    'group3': ['dutC1']
+}
+
+dut2build = {
+    'dutA': 'buildX',
+    'dutB': 'buildY',
+    'dutC': 'buildX',
+    'dutA2': 'buildZ'  # This key will override the generic 'dutA' for 'dutA2'
+}
+
+# Output dictionary
+group2build = {}
+
+for group, duts in group2dut.items():
+    matched_builds = []
+
+    for dut in duts:
+        for prefix in dut2build:
+            if dut.startswith(prefix):
+                matched_builds.append(dut2build[prefix])
+                break  # stop at the first match
+
+    # Get most common build (if any match found)
+    if matched_builds:
+        most_common_build = Counter(matched_builds).most_common(1)[0][0]
+        group2build[group] = most_common_build
+
+print(group2build)
+
+
 
 #------------------------
 def valid_date(date_str):
