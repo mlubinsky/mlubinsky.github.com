@@ -103,6 +103,8 @@ https://github.com/stclib/STC  containers for C
 
 https://github.com/rurban/ctl containers for C
 
+https://github.com/s-hironobu/AlgorithmCollection 
+
 https://nullprogram.com/blog/2025/01/19/ Examples of quick hash tables and dynamic arrays in C
 
 https://github.com/jamesnolanverran/dmap Hash map
