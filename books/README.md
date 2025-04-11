@@ -1,5 +1,7 @@
 https://nononsensebooks.com/
 
+https://www.eruditor.io/
+
 https://ru.annas–archive.org/
 
 https://annas–archive.se/
