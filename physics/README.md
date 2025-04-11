@@ -8,7 +8,9 @@ https://github.com/certik/theoretical-physics
 
 https://arxiv.org/abs/2502.02654 Theory of resonances
 
-https://alexandr4784.narod.ru/
+http://stat.phys.spbu.ru/Metod/index.html 
+
+https://alexandr4784.narod.ru/ books
 
 http://jetp.ras.ru/cgi-bin/r/index Журнал Экспериментальной и Теоретической Физики
 
