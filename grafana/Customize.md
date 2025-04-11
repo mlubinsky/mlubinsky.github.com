@@ -1,3 +1,16 @@
+### To set a specific width for the first column
+```
+Access Field Options:
+In the panel editor, go to the Field tab (below the query editor).
+Locate the Field Options section for standard settings.
+
+Under Field Options, find the first column (e.g., id).
+If it’s not listed individually, add a Field Override:
+Click Add field override.
+Select Fields with name and choose the first column’s name (e.g., id or 2025-04-01).
+Add a property: Width (or Custom width in some Grafana versions).
+Enter a pixel value, e.g., 100 for 100px, or a percentage like 10% (though pixels are more reliable for fixed widths).
+```
 ### How to Alternate Row Colors When Value Changes
 
 ```
