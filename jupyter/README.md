@@ -2,6 +2,9 @@
 Python for Data Analysis, 3E
 https://wesmckinney.com/book/
 
+visualizing-multicollinearity-in-python 
+https://medium.com/@kenanekici/visualizing-multicollinearity-in-python-b5feedc9b3f1
+
 ### Marimo
 
 https://github.com/marimo-team/marimo
