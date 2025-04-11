@@ -1,5 +1,7 @@
 https://habr.com/ru/articles/875330/  NATS, RabbitMQ and KAFKA
 
+https://habr.com/ru/articles/899670/ NATS, RabbitMQ and KAFKA
+
 https://newsletter.scalablethread.com/p/how-message-queues-work
 
 https://encore.dev/blog/queueing
