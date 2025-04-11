@@ -1,3 +1,7 @@
+How C code becomes assembly
+https://www.xta0.me/2021/07/13/MIT-6172-5.html
+
+
 https://www.learncpp.com/
 
 https://best.openssf.org/Compiler-Hardening-Guides/Compiler-Options-Hardening-Guide-for-C-and-C++.html
