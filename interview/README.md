@@ -77,11 +77,12 @@ Trusted by Microsoft, GoDaddy, and more. Freelance projects for all skills.
 
 
 
-
+### MAIN links
 <https://www.algoexpert.io/systems/product>
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
 
+### TOP K problem
 
 https://www.youtube.com/watch?v=kx-XDoPjoHw Top K Problem (Heavy Hitters)
 
@@ -103,6 +104,35 @@ https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-que
 https://blog.chay.dev/things-that-make-your-application-stand-out/
 
 https://github.com/alex/what-happens-when when you press button on keyboard
+
+
+### ALGO 
+
+16 problem solving patterns that will help you learn DSA faster:
+
+1) https://lnkd.in/giASrwds
+2) https://lnkd.in/gjatQ5pK
+3) https://lnkd.in/gBfWgHYe
+4) https://lnkd.in/g9csxVa4
+5) https://lnkd.in/gbpRU46g
+6) https://lnkd.in/gcnBActT
+7) https://lnkd.in/gKEm_qUK
+8) https://lnkd.in/gVkQX5vA
+9) https://lnkd.in/gKja_D5H
+10) https://lnkd.in/gKE6w7Jb
+11) https://lnkd.in/gdYahWVN
+12) https://lnkd.in/gmMMST5J
+13) https://lnkd.in/gkNvEi8j
+14) https://lnkd.in/gPgpsgaQ
+15) https://lnkd.in/gd4ekfQe
+16) https://lnkd.in/gMZJVkFf
+
+ roadmap for campus placements in 2025   https://lnkd.in/eevgakTB
+
+ one-stop resource guide on Topmate:
+→ https://lnkd.in/eYHSjbys  
+
+
 
 ### System design interview
 
