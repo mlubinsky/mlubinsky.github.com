@@ -1,5 +1,5 @@
 https://kubernetes.io/docs/home/
-
+ 
 https://selectel.ru/blog/what-is-kubelet/
 
 https://selectel.ru/blog/courses/dive-into-kubernetes/
@@ -52,12 +52,16 @@ Control plane состоит из компонентов:
 ```
 ### Pods
 ```
-Pod (под) — один или несколько контейнеров, которые собраны в одну сущность и могут быть запущены как одно приложение.'
+Pod (под) — один или несколько контейнеров, которые собраны в одну сущность
+и могут быть запущены как одно приложение.'
  Поды — это минимальная единица развертывания в Kubernetes.
- это абстрактный объект в кластере K8S, который состоит из одного или нескольких контейнеров с общим хранилищем и сетевыми ресурсами, а также спецификации для запуска контейнеров.
+ это абстрактный объект в кластере K8S,
+который состоит из одного или нескольких контейнеров
+с общим хранилищем и сетевыми ресурсами, а также спецификации для запуска контейнеров.
 
 Это главный объект в кластере, в нем прописаны, какие контейнеры должны быть запущены,
-количество экземпляров или реплик, политика перезапуска, лимиты, подключаемые ресурсы, узел кластера для размещения.
+количество экземпляров или реплик, политика перезапуска, лимиты, подключаемые ресурсы,
+узел кластера для размещения.
 
 ```
 Container (контейнер) — изолированный экземпляр приложения или его части, работающий внутри пода.
@@ -171,6 +175,125 @@ spec:
 <https://www.infoq.com/presentations/serverless-containers-cloud-apps>
 
 <https://www.infoq.com/presentations/serverless-patterns-antipatterns>
+
+
+
+
+You can find the official Kubernetes documentation in Russian at the following link:
+
+🔗 https://kubernetes.io/ru/docs/
+
+This is the Russian localization of the official Kubernetes website. It includes translated versions of key documents such as:
+
+Основы Kubernetes (Kubernetes Basics)
+
+Руководства по установке и конфигурации (Setup & Configuration Guides)
+
+Справочник по kubectl
+
+Архитектура и концепции Kubernetes
+
+...and more.
+
+Keep in mind that not all content is always fully up to date in the Russian version, so for the most recent details, you might occasionally need to refer to the English version at https://kubernetes.io/docs/.
+
+Need help navigating it or want a quick translation of a specific section?
+
+
+2/2
+
+
+
+
+
+
+You said:
+How to find information on youtube about Kubernetes in russian language?
+
+
+ChatGPT said:
+To find Kubernetes content in Russian on YouTube, you can use search keywords in Russian to filter results. Here's how to go about it:
+
+🔍 Search Phrases to Use
+Try these Russian search phrases directly in the YouTube search bar:
+
+Kubernetes на русском (Kubernetes in Russian)
+
+Обучение Kubernetes (Kubernetes training)
+
+Kubernetes для начинающих (Kubernetes for beginners)
+
+Kubernetes уроки (Kubernetes tutorials)
+
+Kubernetes курс (Kubernetes course)
+
+Kubernetes кластер настройка (Kubernetes cluster setup)
+
+📺 Channels You Might Find Useful
+Some Russian-speaking YouTube channels often cover DevOps and Kubernetes topics:
+
+Уголок Задрота — DevOps and cloud-related tutorials in Russian.
+
+Otus Online Education — Offers courses and webinars, often with Kubernetes content.
+
+Флант / flant.ru — A Russian DevOps company that shares Kubernetes content.
+
+Academy DevOps — Focuses on Kubernetes, Docker, and CI/CD in Russian.
+
+🛠️ Tips
+Use YouTube’s Filters > Language (if available) to try narrowing results by language.
+
+Set your YouTube interface language to Russian in account settings for more relevant recommendations.
+
+Use Subtitles/CC filter if you’re open to watching English videos with Russian subtitles.
+
+Would you like me to pull up a few recent videos in Russian about Kubernetes?
+
+
+
+
+
+
+You said:
+Please pull up a few recent videos in Russian about Kubernetes
+
+
+ChatGPT said:
+
+Slach/k8s-russian.video: Kubernetes по русски
+github.com
+​Here are some recent Russian-language YouTube resources to help you learn Kubernetes:​
+
+📺 YouTube Playlists
+Kubernetes на Русском Языке
+A beginner-friendly series explaining Kubernetes concepts in simple terms, including local cluster setup on Windows and AWS deployment.
+
+Кубернетес на русском: практика + теория
+A comprehensive free course covering both theoretical and practical aspects of Kubernetes.
+
+🎥 Individual Videos
+Основы Kubernetes: что такое кластер (2024)
+An introductory video explaining the concept of Kubernetes clusters.​
+YouTube
+YouTube
+YouTube
++1
+YouTube
++1
+
+Что такое Kubernetes? Для чего используют k8s
+A brief history and real-world applications of Kubernetes.​
+YouTube
+
+Как запустить проект в Kubernetes за 60 минут
+A practical guide to deploying a project in Kubernetes within an hour.​
+YouTube
+
+🧰 Additional Resource
+Slach/k8s-russian.video GitHub Repository
+A curated collection of Russian-language Kubernetes video tutorials and resources.​
+
+
 
 
 
