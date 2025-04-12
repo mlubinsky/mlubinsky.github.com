@@ -81,7 +81,8 @@ API-сервер — центральный интерфейс для взаим
 
 И вот теперь мы подошли к одному из важнейших элементов этой сложной системы — Kubelet.
  Это незаменимый компонент Kubernetes, который можно сравнить с «исполнителем».
- Он трудится на каждом рабочем узле (Node) и выполняет команды управляющего центра K8s, чтобы приложения в вашем кластере работали так, как задумано.
+ Он трудится на каждом рабочем узле (Node) и выполняет команды управляющего центра K8s,
+чтобы приложения в вашем кластере работали так, как задумано.
  Кроме запуска и остановки, Kubelet отслеживает здоровье контейнеров и подов и сообщает об изменениях управляющему компоненту.
 ```
 
@@ -114,7 +115,9 @@ One server (or a small group in highly available deployments) functions as the m
 This server acts as a gateway   for the cluster by exposing an API for users and clients,
 health checking other servers, deciding how best to split up and assign work (known as “scheduling”),
 and orchestrating communication between other components.
-The master server acts as the primary point of contact with the cluster and is responsible for most of the centralized logic Kubernetes provides. The other machines in the cluster are designated as nodes.
+The master server acts as the primary point of contact with the cluster
+and is responsible for most of the centralized logic Kubernetes provides.
+ The other machines in the cluster are designated as nodes.
 ```
 <https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-interactive/>
 ```
@@ -190,8 +193,78 @@ spec:
 <https://www.infoq.com/presentations/serverless-patterns-antipatterns>
 
 
+### Install on Mac
+
+You can install Kubernetes on your MacBook in a few different ways — depending on your goals
+(e.g., learning kubectl, testing clusters, building manifests, etc.). Here's a breakdown:
+
+✅ Easiest Way: Use Docker Desktop (with Kubernetes)
+🧰 What you need:
+Docker Desktop (includes a single-node Kubernetes cluster)
+
+🪛 Steps:
+Download Docker Desktop
+👉 https://www.docker.com/products/docker-desktop
+
+Install Docker Desktop and start the app.
+
+Enable Kubernetes:
+
+Go to Settings → Kubernetes → Check “Enable Kubernetes”
+
+Click “Apply & Restart”
+
+Wait a bit — Docker will install and start a local Kubernetes cluster.
+
+Once it’s ready, test it:
+
+kubectl get nodes
+
+✅ Alternative: Use Minikube (also very popular)
+📦 What is it?
+Minikube creates a local Kubernetes cluster using a VM or container runtime.
+
+🪛 Install Steps:
+Install Homebrew (if not installed):
+ 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Install Minikube:
 
  
+brew install minikube
+Start a cluster:
+
+ 
+minikube start
+Check cluster:
+
+kubectl get nodes
+Optional: Access Kubernetes dashboard:
+
+ 
+minikube dashboard
+✅ Bonus: Install kubectl (if not already)
+ 
+brew install kubectl
+🧪 Other options for advanced users:
+Kind (Kubernetes IN Docker) — lightweight clusters for testing
+
+k3s — minimal Kubernetes distribution
+
+Rancher Desktop — GUI alternative to Docker Desktop with Kubernetes
+
+🤔 Which one should you choose?
+Tool	                         Good for	GUI?	Notes
+Docker Desktop  - 	Easiest setup            	✅ Yes	Great for beginners
+Minikube	       - More control & flexibility	❌ CLI	Lightweight & widely used
+Kind	 - Advanced testing/dev workflows	      ❌ CLI	Good for CI/CD-style dev use
+Rancher - Desktop	GUI alternative to Docker  	✅ Yes	Uses k3s internally
+
+
+
+
+#### Russian Links 
 
 🔗 https://kubernetes.io/ru/docs/
 
