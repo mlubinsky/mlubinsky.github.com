@@ -6,23 +6,31 @@ https://selectel.ru/blog/courses/dive-into-kubernetes/
 ```
 1. A Node is a worker machine provisioned to run Kubernetes. Each Node is managed by the Kubernetes master.
 
-2. A Pod is a logical, tightly-coupled group of application containers that run on a Node. Containers in a Pod are deployed together and share resources (like data volumes and network addresses). Multiple Pods can run on a single Node.
+2. A Pod is a logical, tightly-coupled group of application containers that run on a Node.
+Containers in a Pod are deployed together and share resources (like data volumes and network addresses). Multiple Pods can run on a single Node.
 
-3. A Service is a logical set of Pods that perform a similar function. It enables load balancing and service discovery. It's an abstraction layer over the Pods; Pods are meant to be ephemeral while services are much more persistent.
+3. A Service is a logical set of Pods that perform a similar function.
+It enables load balancing and service discovery.
+It's an abstraction layer over the Pods; Pods are meant to be ephemeral while services are much more persistent.
 
-4. Deployments are used to describe the desired state of Kubernetes. They dictate how Pods are created, deployed, and replicated.
+4. Deployments are used to describe the desired state of Kubernetes.
+They dictate how Pods are created, deployed, and replicated.
 
-5. Labels are key/value pairs that are attached to resources (like Pods) which are used to organize related resources. You can think of them like CSS selectors. For example:
+5. Labels are key/value pairs that are attached to resources (like Pods)
+which are used to organize related resources. You can think of them like CSS selectors.
+For example:
 Environment - dev, test, prod
 App version - beta, 1.2.1
 Type - client, server, db
 
 6. Ingress is a set of routing rules used to control the external access to Services based on the request host or path.
 
-7. Volumes are used to persist data beyond the life of a container. They are especially important for stateful applications like Redis and Postgres.
-A PersistentVolume defines a storage volume independent of the normal Pod-lifecycle. It's managed outside of the particular Pod that it resides in.
+7. Volumes are used to persist data beyond the life of a container.
+They are especially important for stateful applications like Redis and Postgres.
+A PersistentVolume defines a storage volume independent of the normal Pod-lifecycle.
+It's managed outside of the particular Pod that it resides in.
 A PersistentVolumeClaim is a request to use the PersistentVolume by a user.
-For mor
+
 
 Oсновные понятия Kubernetes.
 ***************************
@@ -63,7 +71,7 @@ Pod (под) — один или несколько контейнеров, ко
 количество экземпляров или реплик, политика перезапуска, лимиты, подключаемые ресурсы,
 узел кластера для размещения.
 
-```
+
 Container (контейнер) — изолированный экземпляр приложения или его части, работающий внутри пода.
 Контейнеры содержат все необходимое для работы приложения: код, зависимости, библиотеки и настройки среды.
 
@@ -100,11 +108,16 @@ https://buttondown.email/nelhage/archive/two-reasons-kubernetes-is-so-complex/
 <https://medium.com/containermind/a-beginners-guide-to-kubernetes-7e8ca56420b6>
 
 <https://habr.com/company/otus/blog/422179/>
-
-The machines in the Kubernetes cluster are each given a role within the Kubernetes ecosystem. One server (or a small group in highly available deployments) functions as the master server. This server acts as a gateway   for the cluster by exposing an API for users and clients, health checking other servers, deciding how best to split up and assign work (known as “scheduling”), and orchestrating communication between other components. The master server acts as the primary point of contact with the cluster and is responsible for most of the centralized logic Kubernetes provides. The other machines in the cluster are designated as nodes.
-
+```
+The machines in the Kubernetes cluster are each given a role within the Kubernetes ecosystem.
+One server (or a small group in highly available deployments) functions as the master server.
+This server acts as a gateway   for the cluster by exposing an API for users and clients,
+health checking other servers, deciding how best to split up and assign work (known as “scheduling”),
+and orchestrating communication between other components.
+The master server acts as the primary point of contact with the cluster and is responsible for most of the centralized logic Kubernetes provides. The other machines in the cluster are designated as nodes.
+```
 <https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-interactive/>
-
+```
 [KUB]$ kubectl get nodes \
 NAME STATUS ROLES AGE VERSION \
 minikube Ready master 1d v1.10.0
@@ -125,7 +138,7 @@ etcd-0 Healthy {“health”: “true”}
 NAME READY STATUS RESTARTS AGE \
 first-deployment-59f6bb4956-hpgcs 1/1 Running 0 1d
 
-
+```
 <https://www.youtube.com/watch?v=zeS6OyDoy78>
 
 <https://habr.com/company/flant/blog/420813/>
@@ -178,8 +191,57 @@ spec:
 
 
 
+ 
 
-You can find the official Kubernetes documentation in Russian at the following link:
+🔗 https://kubernetes.io/ru/docs/
+
+
+📺 Channels You Might Find Useful
+Some Russian-speaking YouTube channels often cover DevOps and Kubernetes topics:
+
+Уголок Задрота — DevOps and cloud-related tutorials in Russian.
+
+Otus Online Education — Offers courses and webinars, often with Kubernetes content.
+
+Флант / flant.ru — A Russian DevOps company that shares Kubernetes content.
+
+Academy DevOps — Focuses on Kubernetes, Docker, and CI/CD in Russian.
+
+🛠️ Tips
+Use YouTube’s Filters > Language (if available) to try narrowing results by language.
+
+Set your YouTube interface language to Russian in account settings for more relevant recommendations.
+
+Use Subtitles/CC filter if you’re open to watching English videos with Russian subtitles.
+
+Would you like me to pull up a few recent videos in Russian about Kubernetes?
+
+Slach/k8s-russian.video: Kubernetes по русски
+github.com
+​Here are some recent Russian-language YouTube resources to help you learn Kubernetes:​
+
+📺 YouTube Playlists
+Kubernetes на Русском Языке
+A beginner-friendly series explaining Kubernetes concepts in simple terms, including local cluster setup on Windows and AWS deployment.
+
+Кубернетес на русском: практика + теория
+A comprehensive free course covering both theoretical and practical aspects of Kubernetes.
+
+🎥 Individual Videos
+Основы Kubernetes: что такое кластер (2024)
+
+Что такое Kubernetes? Для чего используют k8s
+A brief history and real-world applications of Kubernetes.​
+YouTube
+
+Как запустить проект в Kubernetes за 60 минут
+A practical guide to deploying a project in Kubernetes within an hour.​
+YouTube
+
+🧰 Additional Resource
+Slach/k8s-russian.video GitHub Repository
+A curated collection of Russian-language Kubernetes video tutorials and resources.​
+
 
 🔗 https://kubernetes.io/ru/docs/
 
@@ -198,21 +260,6 @@ This is the Russian localization of the official Kubernetes website. It includes
 Keep in mind that not all content is always fully up to date in the Russian version, so for the most recent details, you might occasionally need to refer to the English version at https://kubernetes.io/docs/.
 
 Need help navigating it or want a quick translation of a specific section?
-
-
-2/2
-
-
-
-
-
-
-You said:
-How to find information on youtube about Kubernetes in russian language?
-
-
-ChatGPT said:
-To find Kubernetes content in Russian on YouTube, you can use search keywords in Russian to filter results. Here's how to go about it:
 
 🔍 Search Phrases to Use
 Try these Russian search phrases directly in the YouTube search bar:
@@ -249,17 +296,10 @@ Use Subtitles/CC filter if you’re open to watching English videos with Russian
 
 Would you like me to pull up a few recent videos in Russian about Kubernetes?
 
-
-
-
-
-
 You said:
 Please pull up a few recent videos in Russian about Kubernetes
-
-
 ChatGPT said:
-
+Favicon
 Slach/k8s-russian.video: Kubernetes по русски
 github.com
 ​Here are some recent Russian-language YouTube resources to help you learn Kubernetes:​
@@ -293,9 +333,130 @@ YouTube
 Slach/k8s-russian.video GitHub Repository
 A curated collection of Russian-language Kubernetes video tutorials and resources.​
 
+If you're interested in specific topics like Helm, CI/CD integration, or Kubernetes security, feel free to ask for more targeted resources!
+
+
+Favicon
+Источники
 
 
 
+
+
+Search
+
+Reason
+
+
+
+ChatGPT can make mistakes. Check important info.
+?
+
+Links
+Favicongithub
+Slach/k8s-russian.video: Kubernetes по русски
+github.com
+Citations
+FaviconYouTube
+Kubernetes на Русском Языке - YouTube
+1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке · 2-K8s - Поднятие простого Локального K8s Cluster на Windows · 3-K8s - Поднятие Кластера в AWS ...
+FaviconYouTube
+Кубернетес (kubernetes) на русском: практика + то что ... - YouTube
+Курс лекций по kubernetes на русском языке. Курс полностью бесплатный и выложен полностью на youtube. В курсе мы разбираем практическое применение k8s ...
+FaviconYouTube
+1. Основы Kubernetes: что такое кластер (2024) - YouTube
+May 29, 2024 — 2. Основы Kubernetes: для чего создан Kubernetes (2024). javabegin · 863 views ; 1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке.
+FaviconYouTube
+Что такое Kubernetes? Для чего используют k8s - YouTube
+February 11, 2022 — в этом ролике краткая предыстория о том, как появился Kubernetes и пример из жизни, где применяется k8s. А в конце -- объяснение, ...
+FaviconYouTube
+Как запустить проект в Kubernetes за 60 минут - YouTube
+April 29, 2021 — Kubernetes - https://vk.cc/c28HLk Kubernetes — сложная для внедрения технология ... 1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке.
+More
+FaviconYouTube
+1. Основы Kubernetes: что такое кластер (2024) - YouTube
+May 29, 2024 — 2. Основы Kubernetes: для чего создан Kubernetes (2024). javabegin · 863 views ; 1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке.
+FaviconYouTube
+6. Основы Kubernetes: понятия Pod и Node (2024) - YouTube
+May 29, 2024 — Comments1 ; 7. Основы Kubernetes: установка minikube (2024). javabegin · 896 views ; Kubernetes для разработчиков | Илья Бочаров. Yappi Days · 10K ...
+FaviconYouTube
+Курс по Kubernetes для Начинающих - YouTube
+December 27, 2023 — Полный курс Kubernetes [6 ЧАСОВ] https://sale.stashchuk.com/k8s Полный курс Docker [7 ЧАСОВ] https://sale.stashchuk.com/docker Полный ...
+FaviconYouTube
+Что такое Kubernetes? Для чего используют k8s - YouTube
+February 11, 2022 — в этом ролике краткая предыстория о том, как появился Kubernetes и пример из жизни, где применяется k8s. А в конце -- объяснение, ...
+FaviconYouTube
+Урок 1: Введение в Kubernetes. Вечерняя школа - YouTube
+September 30, 2021 — Курс одинаково полезен независимо от платформы, где работает ваш Kubernetes. Kubernetes База — https://to.slurm.io/-SXDlQ Kubernetes Мега ...
+FaviconYouTube
+Как запустить проект в Kubernetes за 60 минут - YouTube
+April 29, 2021 — Kubernetes - https://vk.cc/c28HLk Kubernetes — сложная для внедрения технология ... 1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке.
+FaviconYouTube
+1-kuberentes. Введение. Кубернетес на русском ( Практический ...
+October 5, 2020 — Comments3 · 2-kuberentes. · Complete Kubernetes Course - From BEGINNER to PRO · Наш опыт с Kubernetes в небольших проектах / Дмитрий Столяров ( ...
+FaviconYouTube
+1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке
+January 17, 2020 — devops #девопс #kubernetes #ityoutubersru 1-K8s - Основы Kubernetes Если помог, поддержите парой баксов, хотябы Канадских ...
+FaviconYouTube
+Kubernetes на Русском Языке - YouTube
+1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке · 2-K8s - Поднятие простого Локального K8s Cluster на Windows · 3-K8s - Поднятие Кластера в AWS ...
+FaviconYouTube
+Кубернетес (kubernetes) на русском: практика + то что ... - YouTube
+Курс лекций по kubernetes на русском языке. Курс полностью бесплатный и выложен полностью на youtube. В курсе мы разбираем практическое применение k8s ...
+Links
+Links
+
+Links
+Favicongithub
+Slach/k8s-russian.video: Kubernetes по русски
+github.com
+Citations
+FaviconYouTube
+Kubernetes на Русском Языке - YouTube
+1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке · 2-K8s - Поднятие простого Локального K8s Cluster на Windows · 3-K8s - Поднятие Кластера в AWS ...
+FaviconYouTube
+Кубернетес (kubernetes) на русском: практика + то что ... - YouTube
+Курс лекций по kubernetes на русском языке. Курс полностью бесплатный и выложен полностью на youtube. В курсе мы разбираем практическое применение k8s ...
+FaviconYouTube
+1. Основы Kubernetes: что такое кластер (2024) - YouTube
+May 29, 2024 — 2. Основы Kubernetes: для чего создан Kubernetes (2024). javabegin · 863 views ; 1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке.
+FaviconYouTube
+Что такое Kubernetes? Для чего используют k8s - YouTube
+February 11, 2022 — в этом ролике краткая предыстория о том, как появился Kubernetes и пример из жизни, где применяется k8s. А в конце -- объяснение, ...
+FaviconYouTube
+Как запустить проект в Kubernetes за 60 минут - YouTube
+April 29, 2021 — Kubernetes - https://vk.cc/c28HLk Kubernetes — сложная для внедрения технология ... 1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке.
+More
+FaviconYouTube
+1. Основы Kubernetes: что такое кластер (2024) - YouTube
+May 29, 2024 — 2. Основы Kubernetes: для чего создан Kubernetes (2024). javabegin · 863 views ; 1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке.
+FaviconYouTube
+6. Основы Kubernetes: понятия Pod и Node (2024) - YouTube
+May 29, 2024 — Comments1 ; 7. Основы Kubernetes: установка minikube (2024). javabegin · 896 views ; Kubernetes для разработчиков | Илья Бочаров. Yappi Days · 10K ...
+FaviconYouTube
+Курс по Kubernetes для Начинающих - YouTube
+December 27, 2023 — Полный курс Kubernetes [6 ЧАСОВ] https://sale.stashchuk.com/k8s Полный курс Docker [7 ЧАСОВ] https://sale.stashchuk.com/docker Полный ...
+FaviconYouTube
+Что такое Kubernetes? Для чего используют k8s - YouTube
+February 11, 2022 — в этом ролике краткая предыстория о том, как появился Kubernetes и пример из жизни, где применяется k8s. А в конце -- объяснение, ...
+FaviconYouTube
+Урок 1: Введение в Kubernetes. Вечерняя школа - YouTube
+September 30, 2021 — Курс одинаково полезен независимо от платформы, где работает ваш Kubernetes. Kubernetes База — https://to.slurm.io/-SXDlQ Kubernetes Мега ...
+FaviconYouTube
+Как запустить проект в Kubernetes за 60 минут - YouTube
+April 29, 2021 — Kubernetes - https://vk.cc/c28HLk Kubernetes — сложная для внедрения технология ... 1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке.
+FaviconYouTube
+1-kuberentes. Введение. Кубернетес на русском ( Практический ...
+October 5, 2020 — Comments3 · 2-kuberentes. · Complete Kubernetes Course - From BEGINNER to PRO · Наш опыт с Kubernetes в небольших проектах / Дмитрий Столяров ( ...
+FaviconYouTube
+1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке
+January 17, 2020 — devops #девопс #kubernetes #ityoutubersru 1-K8s - Основы Kubernetes Если помог, поддержите парой баксов, хотябы Канадских ...
+FaviconYouTube
+Kubernetes на Русском Языке - YouTube
+1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке · 2-K8s - Поднятие простого Локального K8s Cluster на Windows · 3-K8s - Поднятие Кластера в AWS ...
+FaviconYouTube
+Кубернетес (kubernetes) на русском: практика + то что ... - YouTube
+Курс лекций по kubernetes на русском языке. Курс полностью бесплатный и выложен полностью на youtube. В курсе мы разбираем практическое применение k8s ...
 
 <http://okigiveup.net/a-tutorial-introduction-to-kubernetes/>
 
