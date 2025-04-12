@@ -220,7 +220,7 @@ Once it’s ready, test it:
 
 kubectl get nodes
 
-✅ Alternative: Use Minikube (also very popular)
+✅ Alternative: Use Minikube (also very popular)  
 📦 What is it?
 Minikube creates a local Kubernetes cluster using a VM or container runtime.
 
@@ -230,24 +230,24 @@ Install Homebrew (if not installed):
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 Install Minikube:
-
  
 brew install minikube
-Start a cluster:
 
+Start a cluster:
  
 minikube start
+
 Check cluster:
 
 kubectl get nodes
 Optional: Access Kubernetes dashboard:
 
  
-minikube dashboard
+minikube dashboard  
 ✅ Bonus: Install kubectl (if not already)
  
 brew install kubectl
-🧪 Other options for advanced users:
+🧪 Other options for advanced users:  
 Kind (Kubernetes IN Docker) — lightweight clusters for testing
 
 k3s — minimal Kubernetes distribution
@@ -255,12 +255,13 @@ k3s — minimal Kubernetes distribution
 Rancher Desktop — GUI alternative to Docker Desktop with Kubernetes
 
 🤔 Which one should you choose?
-Tool	                         Good for	GUI?	Notes
-Docker Desktop  - 	Easiest setup            	✅ Yes	Great for beginners
-Minikube	       - More control & flexibility	❌ CLI	Lightweight & widely used
-Kind	 - Advanced testing/dev workflows	      ❌ CLI	Good for CI/CD-style dev use
-Rancher - Desktop	GUI alternative to Docker  	✅ Yes	Uses k3s internally
-
+```
+Tool	                                 Good for	GUI?	             Notes
+Docker Desktop  - 	Easiest setup            	✅ Yes	    Great for beginners  
+Minikube	       - More control & flexibility	❌ CLI	     Lightweight & widely used  
+Kind	 - Advanced testing/dev workflows	      ❌ CLI	     Good for CI/CD-style dev use  
+Rancher - Desktop	GUI alternative to Docker 	✅ Yes	    Uses k3s internally
+```
 
 
 
@@ -387,18 +388,13 @@ A comprehensive free course covering both theoretical and practical aspects of K
 🎥 Individual Videos
 Основы Kubernetes: что такое кластер (2024)
 An introductory video explaining the concept of Kubernetes clusters.​
-YouTube
-YouTube
-YouTube
-+1
-YouTube
-+1
+ 
 
 Что такое Kubernetes? Для чего используют k8s
 A brief history and real-world applications of Kubernetes.​
 YouTube
 
-Как запустить проект в Kubernetes за 60 минут
+Как запустить проект в Kubernetes за 60 минут  
 A practical guide to deploying a project in Kubernetes within an hour.​
 YouTube
 
@@ -406,27 +402,9 @@ YouTube
 Slach/k8s-russian.video GitHub Repository
 A curated collection of Russian-language Kubernetes video tutorials and resources.​
 
-If you're interested in specific topics like Helm, CI/CD integration, or Kubernetes security, feel free to ask for more targeted resources!
-
-
-Favicon
-Источники
-
-
-
-
-
-Search
-
-Reason
-
-
-
-ChatGPT can make mistakes. Check important info.
-?
-
+ 
 Links
-Favicongithub
+ ```
 Slach/k8s-russian.video: Kubernetes по русски
 github.com
 Citations
@@ -476,15 +454,11 @@ Kubernetes на Русском Языке - YouTube
 FaviconYouTube
 Кубернетес (kubernetes) на русском: практика + то что ... - YouTube
 Курс лекций по kubernetes на русском языке. Курс полностью бесплатный и выложен полностью на youtube. В курсе мы разбираем практическое применение k8s ...
-Links
-Links
-
-Links
-Favicongithub
+ 
 Slach/k8s-russian.video: Kubernetes по русски
 github.com
 Citations
-FaviconYouTube
+ 
 Kubernetes на Русском Языке - YouTube
 1-K8s - Основы Kubernetes - Кубернетес на ОЧЕНЬ простом языке · 2-K8s - Поднятие простого Локального K8s Cluster на Windows · 3-K8s - Поднятие Кластера в AWS ...
 FaviconYouTube
@@ -530,7 +504,7 @@ Kubernetes на Русском Языке - YouTube
 FaviconYouTube
 Кубернетес (kubernetes) на русском: практика + то что ... - YouTube
 Курс лекций по kubernetes на русском языке. Курс полностью бесплатный и выложен полностью на youtube. В курсе мы разбираем практическое применение k8s ...
-
+```
 <http://okigiveup.net/a-tutorial-introduction-to-kubernetes/>
 
 <https://news.ycombinator.com/item?id=17462043>
