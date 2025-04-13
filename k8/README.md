@@ -4,6 +4,8 @@ https://www.youtube.com/watch?v=hNLQ3tCP8jQ  Kubernetes - Курс по Kubernet
 
 https://www.youtube.com/watch?v=q_nj340pkQo Основы Kubernetes 
 
+https://www.youtube.com/watch?v=q_nj340pkQo&list=PLg5SS_4L6LYvN1RqaVesof8KAf-02fJSi
+
 https://selectel.ru/blog/what-is-kubelet/
 
 https://selectel.ru/blog/courses/dive-into-kubernetes/
