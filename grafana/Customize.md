@@ -1,3 +1,24 @@
+### To avoid changing the background color for empty cells in a Grafana table
+```
+while using cell override properties with "Cell Type - Colored Background" and "Threshold,"
+you can use value mappings to explicitly handle empty or null values. Grafana's threshold settings apply to numeric values,
+ but empty cells (null or undefined) can sometimes inherit colors unexpectedly. Here’s how to address this:
+
+Go to the Field Options:
+In your Grafana table panel, navigate to the Field tab in the panel editor.
+Select the field (column) where you’re applying the colored background.
+Set Up Value Mappings for Empty Cells:
+Under Value mappings, click Add value mapping.
+Choose the Special mapping type.
+Select Null (or "Empty" if applicable) from the dropdown.
+Set the Color to "Transparent" or a specific color like white (#FFFFFF) to indicate no background change.
+Optionally, set the Text to something like "N/A" if you want to display text in empty cells.
+Verify Threshold Settings:
+Ensure your thresholds (under Thresholds) are set only for numeric ranges (e.g., 0–30 for red, 30–60 for yellow).
+Thresholds typically don’t apply to null values, but confirming this prevents unintended behavior.
+```
+
+
 ### To set a specific width for the first column
 ```
 Access Field Options:
