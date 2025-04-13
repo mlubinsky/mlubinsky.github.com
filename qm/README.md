@@ -1,8 +1,11 @@
  https://habr.com/ru/articles/813885/ о движении частиц в квантовом мире
 
-https://arxiv.org/pdf/quant-ph/0007045.pdf
+https://arxiv.org/pdf/quant-ph/0007045.pdf ROSETTA STONE FOR QUANTUM MECHANICS WITH
+AN INTRODUCTION TO QUANTUM COMPUTATION
 
-https://www.mathnet.ru/conf2392
+https://arxiv.org/abs/2304.03962 Einstein-Podolsky-Rosen-Bohm experiments 
+
+https://www.mathnet.ru/conf2392 Открытые лекции по теме «Функциональные интегралы и их приложения в квантовой теории и статистической механике»
 
 https://www.nobelprize.org/uploads/2018/06/vleck-lecture.pdf QM and magnetism
 
