@@ -626,11 +626,85 @@ select dut, 'm2' as metric, m2  as value from daily
 
 
 How to build barchart: date, build, group, score
-
+----------------------------------------------
 Transformation: Grouping to Matrix
 Column: group name
 Row: (X-axis)  CONCAT(date, build)
 Cell value: (Y-axis) score
+
+Rows in SQL are sorted by CONCAT_WS(n,build)
+How I build barchart: 
+I am using Grafana's Transformation "Grouping to Matrix"
+- Row (x-axis)  shows  CONCAT_WS(' ', n, build)
+- Column: group_name
+- Cell value: score
+
+The problem is:
+I  need all bars with the same n (which are numbers from 1 till 31 in string format)
+to be displayed next to each other in the same bin, which is not the case with my solution. 
+
+
+To group bars with the same n (numbers 1 to 31) next to each other in the same bin on your Grafana bar chart, you need to adjust how the X-axis is defined so that it uses only n for binning, while still displaying the concatenated CONCAT_WS(' ', n, build) as labels or tooltips. The current setup with Grouping to Matrix is treating the concatenated string as the X-axis value, which creates separate bins for each unique n + build combination. Here's how to fix it:
+
+Solution
+Modify the SQL Query:
+
+Add n as a separate column in the query output so it can be used for binning.
+Keep the concatenated string for display purposes.
+Updated SQL query:
+
+sql
+
+Collapse
+
+Wrap
+
+Copy
+SELECT
+    n,  -- Keep n as a separate column for binning
+    build,
+    group_name,
+    value,
+    CONCAT_WS(' ', n, build) AS x
+FROM your_table
+ORDER BY n, build;
+Configure the Bar Chart in Grafana:
+
+Go to the Panel settings in Grafana.
+Use the Grouping to Matrix transformation:
+Row (X-axis): Set to n (this ensures bars are binned by n, so all bars with the same n are grouped together).
+Column: Set to group_name (this creates separate bars for each group within the same n bin).
+Cell value: Set to value (this determines the height of the bars).
+This setup groups bars by n on the X-axis, placing all bars with the same n next to each other.
+Display the Concatenated Label:
+
+To show CONCAT_WS(' ', n, build) in the chart (e.g., as a label or tooltip):
+Go to the Field tab > Standard options > Value mappings or Tooltip settings.
+Map the x field to display in tooltips or use it in a custom label format if needed.
+Alternatively, you can use a Value override to display x as a custom label for each bar, though this depends on your Grafana version.
+If you want the X-axis labels to show only n, they’re already set correctly by using n as the row.
+Optional: Adjust Bar Chart Settings:
+
+In the Panel settings, go to the Bar chart options:
+Enable Show values or Stacking if you want to differentiate bars within the same n bin by group_name.
+Adjust Bar width or Group width to ensure bars are visually distinct within each n bin.
+If bars are still not grouping as expected, ensure Sort by in the transformation is set to n (ascending).
+Set Y-Axis Max (from Your Previous Question):
+
+Since you mentioned wanting a specific Y-axis max, go to Field tab > Standard options > Max and set your desired number (e.g., 100).
+Save and Test:
+
+Apply the changes and verify that bars with the same n are now grouped together in the same X-axis bin, with different group_name values displayed as adjacent bars.
+Why This Works
+By using n as the Row in the matrix transformation, Grafana bins the X-axis by n, ensuring all bars with the same n (e.g., 1) are grouped together.
+The group_name as the Column creates separate bars within each n bin, colored differently for clarity.
+The x field (CONCAT_WS(' ', n, build)) can still be used for labels or tooltips without affecting the binning.
+If It Still Doesn’t Work
+Check Data Types: Ensure n is consistently formatted (e.g., no leading zeros or spaces) in the SQL output, as Grafana treats strings literally.
+Transformation Order: If you have multiple transformations, ensure Grouping to Matrix is applied after any filtering or sorting transformations.
+Debug Data: Use Grafana’s Inspect feature (Panel > Inspect > Data) to verify the transformed data has n as the row key and group_name as columns.
+Alternative Approach: If the matrix transformation still causes issues, consider pivoting the data directly in SQL (using CASE or PIVOT if your database supports it) to pre-format the matrix, then use a standard bar chart without transformations.
+
 ```
 
 https://www.youtube.com/watch?v=Bu-MxNJT44c
