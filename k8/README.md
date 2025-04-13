@@ -2,7 +2,8 @@ https://kubernetes.io/docs/home/
 
 https://www.youtube.com/watch?v=hNLQ3tCP8jQ  Kubernetes - Курс по Kubernetes для Начинающих (Bogdan Stashchuk)
 
- 
+https://www.youtube.com/watch?v=q_nj340pkQo Основы Kubernetes 
+
 https://selectel.ru/blog/what-is-kubelet/
 
 https://selectel.ru/blog/courses/dive-into-kubernetes/
