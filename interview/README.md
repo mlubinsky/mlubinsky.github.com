@@ -136,6 +136,8 @@ https://github.com/alex/what-happens-when when you press button on keyboard
 
 ### System design interview
 
+https://habr.com/ru/articles/900396/ System design interview PArt 5 
+
 https://betterengineers.substack.com/p/data-partitioning-and-sharding
 
 https://www.youtube.com/watch?v=cr6p0n0N-VA  design / build Whats-UP
