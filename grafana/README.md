@@ -464,7 +464,7 @@ Here's how a Grafana user can export the data from your barchart and table to a 
 * By default, the downloaded CSV will include all data series in the panel and a timestamp column.
 * Users can configure export options within the "Data" tab that appears after selecting "Inspect" > "Data".
  This allows them to:
-    * Enable "Apply panel transformation" to utilize any transformations applied within the panel before export.
+    * Enable "Apply panel ation" to utilize any ations applied within the panel before export.
     * Choose between "Formatted data" (including labels) or "Raw data" (numerical values).
 
 While this method doesn't provide a direct export of the chart image,
@@ -560,7 +560,7 @@ https://stackoverflow.com/questions/77304277/grafana-does-not-update-the-variabl
 
 https://community.grafana.com/t/grafana-does-not-update-the-variable-which-depends-on-datetime-picker/105690
 
-https://community.grafana.com/t/issue-with-transformation-prepare-time-series-multi-frame-time-series/105397
+https://community.grafana.com/t/issue-with-ation-prepare-time-series-multi-frame-time-series/105397
 
 https://stackoverflow.com/questions/77276225/grafana-dashboard-bar-chart-for-time-series
 
@@ -623,6 +623,14 @@ select dut, 'm1' as metric, m1  as value from daily
 union all
 select dut, 'm2' as metric, m2  as value from daily 
 
+
+
+How to build barchart: date, build, group, score
+
+Transformation: Grouping to Matrix
+Column: group name
+Row: (X-axis)  CONCAT(date, build)
+Cell value: (Y-axis) score
 ```
 
 https://www.youtube.com/watch?v=Bu-MxNJT44c
