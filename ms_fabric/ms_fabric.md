@@ -1,3 +1,5 @@
+https://rihab-feki.medium.com/microsoft-fabric-hands-on-project-b4323b6ac550
+
 Aleksi PartanenAleksi Partanen
  
 Solution Architect & Team Lead @ Cloud1 Oy | Microsoft Data Platform Content CreatorSolution Architect & Team Lead @ Cloud1 Oy | Microsoft Data Platform Content Creator
