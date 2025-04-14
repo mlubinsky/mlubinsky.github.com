@@ -337,6 +337,10 @@ http://math.ucr.edu/home/baez/what_is_entropy.pdf
 
 https://johncarlosbaez.wordpress.com/2024/07/20/what-is-entropy/
 
+https://jasonfantl.com/posts/What-is-Entropy/
+
+https://news.ycombinator.com/item?id=43684560
+
 https://news.ycombinator.com/item?id=41037981
 
 https://www.cantorsparadise.com/it-took-me-10-years-to-understand-entropy-here-is-what-i-learned-b2d51e8ccd4c
