@@ -45,6 +45,13 @@ ORDER BY url, timestamp DESC
 That’s it! We’re telling PostgreSQL to “put the logs into groups unique by url (ON (url)), sort each of these groups by most recent (ORDER BY url, timestamp DESC) and then return fields for the first record in each of these groups (url, request_duration).
 ```
 
+
+### Partial Index
+https://habr.com/ru/companies/otus/articles/900280/
+```
+CREATE INDEX idx_users_active_only ON users(id)
+WHERE deleted_at IS NULL;
+```
 ### DELETING IN BATCHES
 
 https://www.geekytidbits.com/batch-deletes-in-postgres/
