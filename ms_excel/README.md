@@ -1,6 +1,6 @@
 https://habr.com/ru/articles/824050/
 
-### Adjust header and column widht
+### Adjust header and column width
 
 ```
 import pandas as pd
@@ -232,6 +232,57 @@ data = {}
 process_excel_files(folder_path)
 ```
 ### Apply colors:
+
+```
+When I assign the background color to cell using fill() method
+the vertical and horizontal borders of the cell become invisible. How to fix it?
+
+
+When you apply a background color to a cell in openpyxl using a PatternFill,
+it can overwrite the cell's borders, making them appear invisible.
+To fix this, you need to explicitly set the cell's borders after applying the fill.
+Here's how you can do it:
+
+
+from openpyxl import Workbook
+from openpyxl.styles import PatternFill, Border, Side
+
+# Create a workbook and select the active sheet
+wb = Workbook()
+ws = wb.active
+
+# Define a fill color (e.g., light yellow)
+fill = PatternFill(start_color="FFFF00", end_color="FFFF00", fill_type="solid")
+
+# Define a border style (thin black border)
+side = Side(style="thin", color="000000")
+border = Border(left=side, right=side, top=side, bottom=side)
+
+# Assign data and apply styles to a cell
+cell = ws['A1']
+cell.value = "Test"
+cell.fill = fill  # Apply background color
+cell.border = border  # Apply borders
+
+# Save the workbook
+wb.save("example.xlsx")
+
+Explanation
+PatternFill: Sets the background color of the cell.
+The start_color and end_color define the color (in RRGGBB format), and fill_type="solid" ensures a solid fill.
+Border and Side: The Side object defines the border style (e.g., thin) and color.
+ The Border object applies this style to all four sides of the cell.
+Order Matters: Apply the fill first, then the border, as setting the fill can reset other styles like borders.
+Notes
+You can customize the border style (thin, medium, thick, etc.) and color as needed.
+If you're applying this to multiple cells, loop through them and set both fill and border for each.
+
+If you only want specific borders (e.g., only top and bottom), adjust the Border object like this:
+
+border = Border(top=side, bottom=side)
+
+```
+
 ```
 import openpyxl
 
