@@ -93,9 +93,14 @@ Toss the unbiased coin thrice. Given the outcome is not both tails ( T T) ,
  then the outcome of both heads (H H) has probability 1/3.
 ```
 ### Markov chain
-https://arxiv.org/pdf/2207.02296.pdf
-###
-https://www.statlearning.com/
+https://arxiv.org/pdf/2207.02296.pdf A Tutorial on the Spectral Theory of Markov Chains
+
+
+https://www.jeremykun.com/2015/04/06/markov-chain-monte-carlo-without-all-the-bullshit/
+
+https://news.ycombinator.com/item?id=43700633 	Markov Chain Monte Carlo Without All the Bullshit (2015) (jeremykun.com)
+### Book
+https://www.statlearning.com/ An Introduction to Statistical Learning with Pyton
 
 https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/edit?pli=1  Introduction to probability 2nd edition
 
