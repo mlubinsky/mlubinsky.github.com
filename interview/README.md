@@ -371,10 +371,13 @@ Priority queue
 https://faun.pub/priority-queue-using-heapq-9d8fccc49d51
 
 
-Prefix SUM
+#### Prefix SUM
+
+https://habr.com/ru/articles/901190/  "Largest Square Submatrix of all 1's"
+
 https://blog.devgenius.io/array-coding-pattern-prefix-sum-a83d313c7e5a
 
-Longest common prefix; https://python.plainenglish.io/longest-common-prefix-2d237c52e11d
+Longest common prefix:  https://python.plainenglish.io/longest-common-prefix-2d237c52e11d
 
 Matrix in python: 
  https://blog.devgenius.io/working-with-matrix-in-python-cheatsheet-2654835d9dc7
