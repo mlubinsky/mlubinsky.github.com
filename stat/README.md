@@ -13,6 +13,11 @@ https://news.ycombinator.com/item?id=41300111
 
 https://habr.com/ru/companies/kuper/articles/827448/  Cтатистические критерии для начинающих
 
+
+https://stats.stackexchange.com/questions/357963/what-is-the-difference-between-cross-entropy-and-kl-divergence
+
+https://news.ycombinator.com/item?id=42419224
+
 ### Casual inference 
 book: 
 https://matheusfacure.github.io/python-causality-handbook/landing-page.html
