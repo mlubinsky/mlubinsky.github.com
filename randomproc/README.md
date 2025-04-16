@@ -6,7 +6,9 @@ https://jiha-kim.github.io/posts/introduction-to-stochastic-calculus/
 
 https://news.ycombinator.com/item?id=43160779
 
+https://bjlkeng.io/posts/an-introduction-to-stochastic-calculus/
 
+https://news.ycombinator.com/item?id=43703623
 
 https://vk.com/stochastic_processes
 
