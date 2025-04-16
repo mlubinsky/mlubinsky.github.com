@@ -5,6 +5,11 @@ https://milescole.dev/data-engineering/2024/12/12/Should-You-Ditch-Spark-DuckDB-
 
 https://stats.stackexchange.com/questions/357963/what-is-the-difference-between-cross-entropy-and-kl-divergence](https://news.ycombinator.com/item?id=42419224
 
+
+### Spark 
+
+https://habr.com/ru/articles/901078/ Catalyst Optimizer
+
 https://medium.com/@suffyan.asad1/beginners-guide-to-spark-ui-how-to-monitor-and-analyze-spark-jobs-b2ada58a85f7
 
 https://medium.com/@pradoshkumar.jena/understanding-apache-spark-memory-management-in-local-mode-a-deep-dive-with-pyspark-70649b3ddde0
