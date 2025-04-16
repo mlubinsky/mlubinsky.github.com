@@ -1634,5 +1634,9 @@ https://mathoverflow.net/questions/372543/new-k-samples-added-to-set-calculate-n
 
 https://math.stackexchange.com/questions/3839472/new-k-samples-added-calculate-new-stddev-given-old-avg-stddev-and-sample-size
 
-##  SQL + Jinja
+##  SQL + Jinja   (also there is jinjax)
 https://geoffruddock.com/sql-jinja-templating/
+
+
+### Когортный анализ, LTV и RFM в SQL 
+https://habr.com/ru/companies/otus/articles/901114/
