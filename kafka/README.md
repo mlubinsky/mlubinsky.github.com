@@ -28,6 +28,8 @@ https://habr.com/ru/companies/idaproject/articles/889600/
 ```
 ### Kafka
 
+https://habr.com/ru/articles/901200/ Настройка Apache Kafka для высоконагруженных систем
+
 https://habr.com/ru/articles/880700/ Kafka на Python
 
 https://habr.com/ru/companies/samolet/articles/880684/
