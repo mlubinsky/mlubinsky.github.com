@@ -106,6 +106,8 @@ https://github.com/oz123/awesome-c
 
 https://github.com/fragglet/c-algorithms
 
+https://github.com/codr7/hacktical-c  Book with code
+
 https://crocidb.com/post/simple-vector-implementation-in-c/ Vector in C
 
 https://github.com/stclib/STC  containers for C
