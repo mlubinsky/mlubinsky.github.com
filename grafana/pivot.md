@@ -61,8 +61,8 @@ Column: A_name
 Row: X 
 Cell Value: A_value
 
-But in addition to it I also need to add the columns from B_names for the same Row: X 
-and to populate B_name columns from B_value
+But in addition to it how to to add the columns from B_names for the same Row: X 
+and to populate B_name columns from B_value?
 
 
 
