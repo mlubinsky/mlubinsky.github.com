@@ -41,6 +41,46 @@ Merging should transfer all columns values (except date_with_build column) from 
 
 ###  Solution: 
 ```
+SELECT
+    COALESCE(
+        concat_ws(' ', to_char(t1.date, 'DD'), t2.build),
+        concat_ws(' ', to_char(t1.date, 'DD'), 'REF')
+    ) AS date_with_build,
+    COALESCE(t2.name, t1.name) AS name,
+    COALESCE(t2.score, t1.score) AS score
+FROM
+    T t1
+LEFT JOIN
+    T t2
+ON
+    t1.date = t2.date
+    AND t1.name = t2.name
+    AND t1.build = 'REF'
+    AND t2.build != 'REF'
+WHERE
+    t1.build = 'REF';
+
+
+Why This Works
+Single Score Column: The COALESCE(t2.score, t1.score) ensures only one score column is output,
+prioritizing non-REF scores and falling back to REF scores when necessary.
+Merging REF Rows: The LEFT JOIN and COALESCE logic effectively "merges" REF rows into non-REF rows for the same date and name, or retains REF rows only when no non-REF build exists.
+
+Compatibility: The date_with_build column matches your original query’s format,
+ensuring the matrix transformation works as intended.
+No Empty Cells: Since (date, build, name) is unique, the query avoids duplicate or ambiguous mappings,
+and the matrix transformation fills cells appropriately without excessive sparsity.
+
+Handling Edge Cases
+No Non-REF Builds:
+If only a REF build exists for a date and name,
+the query outputs a row with date_with_build as "DD REF" and the REF score, ensuring all data is represented.
+Multiple Non-REF Builds:
+Each non-REF build generates a row with its own date_with_build (e.g., "01 X", "01 Y"), preserving all scores.
+
+
+wrong :
+
 Modify the PostgreSQL Query
 Instead of relying solely on Grafana transformations,
 modify the query to pivot the data so that for each date and name,
