@@ -66,6 +66,71 @@ and to populate B_name columns from B_value
 
 
 
+1. Start with your original table:
+ 
+X | A_name | A_value | B_name | B_value
+Use Transform > "Organize fields" (optional, but makes the next step easier):
+
+Keep: X, A_name, A_value
+
+2. Duplicate the table as a second copy:
+
+Keep: X, B_name (rename to A_name), B_value (rename to A_value)
+
+Now both tables are in the same format.
+
+3. Use Transform > "Rename fields":
+
+In the second copy, rename B_name → A_name, and B_value → A_value
+
+4. Use Transform > "Outer join":
+
+Join the two tables (A side and B side) on X, A_name, and A_value combined.
+
+Or simply append both tables vertically (they now share column names).
+
+5. Use Transform > "Merge" or "Concatenate rows":
+
+Combine both versions into one dataset with columns: X, A_name, A_value
+
+6. Use Transform > "Pivot" (aka Grouping to Matrix):
+
+Row: X
+
+Column: A_name (now includes both original A_name and B_name)
+
+Value: A_value
+
+
+========
+How to “Duplicate” a Table in Grafana:
+🔹 Option 1: Use "Transform → Extract Fields" / "Organize Fields" twice
+You can split the original table into two "logical copies" by:
+
+Apply a "Organize fields" transform:
+
+Keep only: X, A_name, A_value (this is your A-side)
+
+Then, click "Add transformation" again (not inside the same chain).
+
+On the same query result, apply another "Organize fields":
+
+Keep: X, B_name, B_value
+
+Rename B_name → A_name, B_value → A_value (to match structure of A-side)
+
+At this point, you have:
+
+One transformed table with X, A_name, A_value
+
+One transformed table with X, B_name (renamed to A_name), B_value (renamed to A_value)
+
+These two tables behave like two "copies" of the original, each focusing on one side (A or B).
+
+
+=========
+
+
 I concatenated date and build columns to date_with_build:
 concat_ws(' ', to_char(date,'DD'), build) as date_with_build
 
