@@ -64,7 +64,7 @@ Cell Value: A_value
 But in addition to it how to to add the columns from B_names for the same Row: X 
 and to populate B_name columns from B_value?
 
-
+###   ChatGPT answer
 
 1. Start with your original table:
  
@@ -128,7 +128,7 @@ One transformed table with X, B_name (renamed to A_name), B_value (renamed to A_
 These two tables behave like two "copies" of the original, each focusing on one side (A or B).
 
 
-========= Gemini
+========= Gemini ANSWER
 However, you can achieve the desired result by using a combination of Grafana transformations.
 Here's a step-by-step approach:
 
@@ -216,6 +216,91 @@ more complex query if that were possible within Grafana's transformations.
 This multi-step transformation process in Grafana will allow you to achieve the desired matrix layout
  with columns derived from both the A_name/A_value and B_name/B_value pairs,
 all grouped by the X column.  
+
+
+--- GROK ANSWER
+
+split the data into two queries: one for A_name/A_value and one for B_name/B_value.
+This ensures each query can be transformed into its own matrix, which you can then merge.
+
+Query A (for A_name and A_value):
+
+SELECT
+  X,
+  A_name,
+  A_value
+FROM your_table
+Query B (for B_name and B_value):
+
+ 
+SELECT
+  X,
+  B_name,
+  B_value
+FROM your_table
+In Grafana’s query editor:
+
+Add Query A (label it as A) to select X, A_name, and A_value.
+Add Query B (label it as B) to select X, B_name, and B_value.
+Ensure both queries are set to return data in a table format (Grafana’s default for PostgreSQL queries).
+
+Step 2: Apply "Grouping to Matrix" Transformation for Each Query
+^^^^^^^^
+You’ll apply the "Grouping to matrix" transformation separately to each query to create two matrices,
+ then merge them.
+
+For Query A:
+Go to the "Transform" tab in the Grafana panel.
+Add a "Grouping to matrix" transformation for Query A.
+Configure it as:
+Column: A_name
+Row: X
+Cell Value: A_value
+This creates a matrix where rows are X, columns are unique A_name values, and cells contain A_value.
+For Query B:
+Add another "Grouping to matrix" transformation for Query B.
+Configure it as:
+Column: B_name
+Row: X
+Cell Value: B_value
+This creates a matrix where rows are X, columns are unique B_name values, and cells contain B_value.
+At this point, Grafana will process each query into its own matrix. For the example data:
+
+Query A’s matrix:
+X	A1	A2
+x1	10	15
+x2	12	
+Query B’s matrix:
+X	B1	B2
+x1	20	25
+x2	22
+
+Step 3: Merge the Matrices
+^^^^^^^^^
+To combine the two matrices into a single table with all columns (A1, A2, B1, B2), use the "Merge" transformation.
+
+In the "Transform" tab, add a "Merge" transformation.
+Configure it to merge the results of Query A and Query B, using X as the common field to join on.
+The "Merge" transformation combines the two matrices by matching rows based on the X field, resulting in a single table:
+X	  A1	A2	B1	B2
+x1	10	15	20	25
+x2	12		22
+
+Step 4: Organize and Clean Up (Optional)
+^^^^
+If needed, you can add additional transformations to refine the output:
+
+Organize fields: Use the "Organize fields by name" transformation to reorder columns
+ (e.g., place A_name columns before B_name columns) or rename columns for clarity.
+Filter fields:
+If some columns are unnecessary, use the "Filter fields by name" transformation to include only the desired columns.
+Sort by: Use the "Sort by" transformation to sort rows by X or another field if needed.
+
+Step 5: Configure the Table Panel
+^^^^
+Set the panel type to "Table" in Grafana.
+Ensure the table displays all columns (X, A1, A2, B1, B2, etc.).
+Adjust column styles, widths, or formatting as needed (e.g., set numeric formatting for A_value and B_value).
 
 
 ------
