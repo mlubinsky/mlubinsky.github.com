@@ -18,6 +18,41 @@ There is table with columns: date, build, group, score.
 The values in build column are not fixed, but there is build='REF' for every date
 The values in date, build, group are not known in advance.
 ```
+
+D as (
+select date, build,
+-- concat_ws(' ', to_char(date,'DD'), build) as date_with_build, 
+group_name, score 
+from T where not is_ref
+),
+E as (
+select date, 'REF' as build,
+-- concat_ws(' ', to_char(date,'DD'), 'REF') as date_with_build,
+group_name, score 
+from T where is_ref and group_name  ilike 'REF%B6%'
+)
+select d.date, d.build, d.group_name,d.score,
+e.group_name as ref_group, e.score as ref_score 
+from D
+join E on D.date = E.date
+
+------------------
+|date      |build         |group_name|score |ref_group  |ref_score|
+|----------|--------------|----------|------|-----------|---------|
+|2025-04-08|4.17.8_263897 |B7S_Open  |67.72 |REF_B6_Open|90.55    |
+|2025-04-10|4.17.10_265085|B7R_Open  |93.31 |REF_B6_Open|37.5     |
+|2025-04-11|4.17.10_265085|B7R_Closed|42.145|REF_B6_Open|43.875   |
+
+Columns I want using Grafana Transformation
+ 1) date_build
+ 2) several group columns: (distinct from ref_group  and group_name columns) 
+ 3) score as a cell value for the given group name or ref_group
+ 
+
+
+
+
+
 I concatenated date and build columns to date_with_build:
 concat_ws(' ', to_char(date,'DD'), build) as date_with_build
 
