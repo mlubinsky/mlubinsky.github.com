@@ -4,6 +4,8 @@ https://habr.com/ru/articles/899670/ NATS, RabbitMQ and KAFKA
 
 https://newsletter.scalablethread.com/p/how-message-queues-work
 
+https://habr.com/ru/companies/otus/articles/901708/ Практическое руководство по выбору брокера сообщений
+
 https://encore.dev/blog/queueing
 
 ### Offset Explorer (formerly Kafka Tool) 
