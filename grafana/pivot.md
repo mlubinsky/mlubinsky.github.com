@@ -25,7 +25,7 @@ Then applied Grafana Transormation
 
 Important: this is unique  per table: (date_with_build, group)
 
-```
+ 
 Transformation: Grouping to matrix
 Column:  group_name
 Row: date_with_build
@@ -37,7 +37,101 @@ Since this is unique  per table: (date_with_build, group), the result of transfo
 Goal: add one more transformation, which will o the following:
 Eliminate rows where build = 'REF' by merging  such rows with other  rows with the same date.
 Merging should transfer all columns values (except date_with_build column) from build = REF row to other columns  with the same date.
+```
+
+###  Solution: 
+```
+Modify the PostgreSQL Query
+Instead of relying solely on Grafana transformations,
+modify the query to pivot the data so that for each date and name,
+the score for build = 'REF' and other builds are presented as columns.
+This effectively "merges" the REF build values into the same row as other builds for the same date,
+eliminating the need for a separate REF row.
+
+Here’s the PostgreSQL query:
  
+SELECT
+    to_char(t1.date, 'DD') AS date,
+    t1.name,
+    t1.score AS score_ref,
+    t2.build AS build,
+    t2.score AS score_build
+FROM
+    T t1
+LEFT JOIN
+    T t2
+ON
+    t1.date = t2.date
+    AND t1.name = t2.name
+    AND t1.build = 'REF'
+    AND t2.build != 'REF'
+WHERE
+    t1.build = 'REF';
+
+
+Explanation of the Query
+Self-Join:
+The table T is joined with itself (t1 and t2).
+t1 filters for rows where build = 'REF'.
+t2 includes rows where build != 'REF' and matches t1 on date and name.
+
+The LEFT JOIN ensures that even if there are no non-REF builds for a given date and name,
+ the REF build data is still included.
+
+Columns Selected:
+to_char(t1.date, 'DD') AS date: Formats the date as a day string (e.g., "01" for the first day).
+t1.name: The name column, common across builds.
+t1.score AS score_ref: The score for the REF build.
+t2.build AS build: The non-REF build identifier.
+t2.score AS score_build: The score for the non-REF build.
+
+Result Structure:
+Each row represents a unique combination of date and name.
+For each name on a given date, the score_ref column holds the score for build = 'REF',
+ and build and score_build hold the non-REF build and its score, respectively.
+
+If multiple non-REF builds exist for the same date and name, multiple rows are generated,
+each with the same score_ref.
+
+Grafana Configuration
+Query in Grafana:
+Use the above SQL query as your data source query in Grafana's PostgreSQL data source.
+
+Grouping to Matrix Transformation:
+Column: name (group_name)
+Row: date
+Cell Value: Use score_ref for the REF build scores and score_build for non-REF build scores.
+
+You may need to create separate panels or use Grafana's field overrides to display score_ref and score_build appropriately.
+
+Alternatively, to display non-REF builds as columns,
+modify the transformation:
+Column: build (for non-REF builds).
+Row: date.
+Cell Value: score_build.
+
+For score_ref, you might need a separate transformation or panel,
+as it doesn’t depend on build.
+
+Optional: Concatenate Build in Visualization:
+If you want to retain the date_with_build format for non-REF builds,
+you can modify the query to include a concatenated column:
+
+concat_ws(' ', to_char(t1.date, 'DD'), t2.build) AS date_with_build
+
+Then, use date_with_build as the Row field in the matrix transformation for non-REF builds.
+
+Handling Edge Cases
+No Non-REF Builds:
+The LEFT JOIN ensures that rows with only REF builds are included, with build and score_build as NULL.
+In Grafana, you can filter out or handle NULL values in the visualization using field options
+or transformations like "Filter by value."
+
+Multiple Non-REF Builds:
+The query generates one row per non-REF build for each date and name, with the REF score repeated. This is compatible with the matrix transformation, as each build can become a column.
+
+Uniqueness:
+The uniqueness of (date, build, name) in the table ensures that the join produces correct pairings without duplicates.
 ```
 
 
