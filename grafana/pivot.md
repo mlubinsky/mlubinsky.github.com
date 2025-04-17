@@ -128,7 +128,97 @@ One transformed table with X, B_name (renamed to A_name), B_value (renamed to A_
 These two tables behave like two "copies" of the original, each focusing on one side (A or B).
 
 
-=========
+========= Gemini
+However, you can achieve the desired result by using a combination of Grafana transformations.
+Here's a step-by-step approach:
+
+Step 1: Duplicate and Transform for 'B' Columns
+
+Duplicate the Query: In your Grafana panel editor,
+duplicate the Postgres query that fetches the X, A_name, A_value, B_name, and B_value columns.
+You should now have two identical queries.
+
+Transform the Second Query for 'B' Columns:
+Select the duplicated query.
+Add a "Rename fields by regex" transformation.
+Find: B_(.*)
+Replace: $1
+
+Add another "Rename fields by regex" transformation.
+Find: A_(.*)
+Replace: old_$1 (This is to avoid naming conflicts with the 'A' columns from the first query after the matrix transformation).
+
+Add the "Grouping to matrix" transformation.
+Column: B_name
+Row: X
+Cell value: B_value
+Step 2: Join the Transformed Data
+
+Add a "Merge" Transformation: Add a "Merge" transformation after the "Grouping to matrix"
+transformation of the first query (the one you initially set up for 'A' columns).
+Configure the "Merge" Transformation:
+Join: Choose the second query (the one you transformed for 'B' columns).
+Join on fields: Select X for both queries. This will join the rows based on matching values in the X column.
+
+Explanation:
+
+We first transform the second query to pivot the B_name and B_value columns into a matrix,
+similar to how you did for the 'A' columns. We also rename the 'B' columns
+to their actual names and prefix the 'A' columns with "old_" to avoid conflicts during the merge.
+Then, the "Merge" transformation combines the results of the two pivoted tables based on the common X column.
+This effectively adds the 'B' name columns alongside the 'A' name columns for each X value.
+
+Example:
+
+Let's say your initial table looks like this:
+
+X	A_name	A_value	B_name	B_value
+1	count	10	min	2
+1	max	25	average	13
+2	count	5	min	7
+2	average	12	max	30
+After applying the transformations:
+
+First Query (after "Grouping to matrix"):
+
+| X  | count | max  |
+|--- | :---- | :--- |
+| 1  | 10    | 25   |
+| 2  | 5     | 12   |
+
+Second Query (after renaming and "Grouping to matrix"):
+
+| X  | min | average | max  |
+|--- | :-- | :------ | :--- |
+| 1  | 2   | 13      |      |
+| 2  | 7   |         | 30   |
+
+After the "Merge" transformation:
+
+| X  | count | max  | min | average | max  |
+|--- | :---- | :--- | :-- | :------ | :--- |
+| 1  | 10    | 25   | 2   | 13      |      |
+| 2  | 5     | 12   | 7   |         | 30   |
+
+Important Considerations:
+
+Column Name Conflicts: Ensure that the A_name and B_name values don't have any overlapping names.
+If they do, you might need to add a prefix or suffix in the "Rename fields by regex"
+transformation to differentiate them after the merge.
+
+Data Alignment: This approach assumes that for each X value, the corresponding A_name/A_value
+and B_name/B_value pairs are related and should appear on the same row after pivoting.
+
+Performance: While this method works, keep in mind that executing two separate queries and
+then merging the results might have a slight performance impact compared to a single,
+more complex query if that were possible within Grafana's transformations.
+
+This multi-step transformation process in Grafana will allow you to achieve the desired matrix layout
+ with columns derived from both the A_name/A_value and B_name/B_value pairs,
+all grouped by the X column.  
+
+
+------
 
 
 I concatenated date and build columns to date_with_build:
