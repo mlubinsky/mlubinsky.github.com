@@ -11,6 +11,37 @@ WHERE $__timeFilter(date)
 ```
 The E'\n' syntax allows you to insert a real newline in PostgreSQL string literals.
 
+
+### Pivoting
+
+There is table with columns: date, build, group, score.
+The values in build column are not fixed, but there is build='REF' for every date
+The values in date, build, group are not known in advance.
+```
+I concatenated date and build columns to date_with_build:
+concat_ws(' ', to_char(date,'DD'), build) as date_with_build
+
+Then applied Grafana Transormation
+
+Important: this is unique  per table: (date_with_build, group)
+
+```
+Transformation: Grouping to matrix
+Column:  group_name
+Row: date_with_build
+Cell Value: score
+Empty Value: Choose
+
+Since this is unique  per table: (date_with_build, group), the result of transformation is having many empty cells.
+
+Goal: add one more transformation, which will o the following:
+Eliminate rows where build = 'REF' by merging  such rows with other  rows with the same date.
+Merging should transfer all columns values (except date_with_build column) from build = REF row to other columns  with the same date.
+ 
+```
+
+
+
 ###  Combining 2 tables
 ```
 There is postgres table T with many numeric columns.
