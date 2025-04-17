@@ -224,15 +224,15 @@ split the data into two queries: one for A_name/A_value and one for B_name/B_val
 This ensures each query can be transformed into its own matrix, which you can then merge.
 
 Query A (for A_name and A_value):
-
+--------------------------------
 SELECT
   X,
   A_name,
   A_value
-FROM your_table
-Query B (for B_name and B_value):
+FROM your_table;
 
- 
+Query B (for B_name and B_value):
+---------------------------------
 SELECT
   X,
   B_name,
@@ -250,6 +250,7 @@ You’ll apply the "Grouping to matrix" transformation separately to each query 
  then merge them.
 
 For Query A:
+*************
 Go to the "Transform" tab in the Grafana panel.
 Add a "Grouping to matrix" transformation for Query A.
 Configure it as:
@@ -257,7 +258,9 @@ Column: A_name
 Row: X
 Cell Value: A_value
 This creates a matrix where rows are X, columns are unique A_name values, and cells contain A_value.
+
 For Query B:
+************
 Add another "Grouping to matrix" transformation for Query B.
 Configure it as:
 Column: B_name
