@@ -49,7 +49,20 @@ Columns I want using Grafana Transformation
  3) score as a cell value for the given group name or ref_group
  
 
+There is Postgres table with columns
+  X
+  A_name
+  A_value
+  B_name
+  B_value
 
+I applied Grafana's Transformation: Grouping to matrix 
+Column: A_name 
+Row: X 
+Cell Value: A_value
+
+But in addition to it I also need to add the columns from B_names for the same Row: X 
+and to populate B_name columns from B_value
 
 
 
