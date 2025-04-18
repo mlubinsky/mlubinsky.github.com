@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=Zz70rcguxwk 68 Bits of Unsolicited Advice
+
 ```
 The reasonable man adapts himself to the world:
 the unreasonable one persists in trying to adapt the world to himself.
