@@ -42,6 +42,18 @@ https://www.reddit.com/r/cpp/comments/1i8a5lm/mustknow_librariesframeworkstechno
 
 https://www.reddit.com/r/cpp/comments/1j33fkq/well_worth_a_look/
 
+### Less slow CPP
+
+https://github.com/ashvardanian/less_slow.cpp
+
+https://news.ycombinator.com/item?id=43727743
+
+https://ashvardanian.com/
+
+https://news.ycombinator.com/item?id=38684461
+
+https://www.unum.cloud/
+
 
 ### Flamegraph
 
