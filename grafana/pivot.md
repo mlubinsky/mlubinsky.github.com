@@ -20,6 +20,23 @@ Transformation: Rows to fields
 Field    | Use as
 date: field name
 build: field value
+
+with K as( 
+select distinct 
+to_char(date,'DD') as date, build 
+from kpi_score_gdc_summary
+where not is_ref  and criteria = '_Average' 
+and test_loc = '$location'
+and (folder_up like '%DEV%' or test_loc not like 'DSK%')
+and folder like '%Flip%'
+and to_char(date,'YYYY-MM') = '$month'
+),
+D as (    -- leading empty column
+select ' ' as date, ' ' as build 
+union all
+select * from K
+)
+select  date, build from D order by date, build
 ```
 ### Sorting columns
 ```
