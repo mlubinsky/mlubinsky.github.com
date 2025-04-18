@@ -11,6 +11,16 @@ WHERE $__timeFilter(date)
 ```
 The E'\n' syntax allows you to insert a real newline in PostgreSQL string literals.
 
+
+### Grafana transformation: rows to fields
+Input SQL: select date, build from T
+
+Transformation: Rows to fields
+```
+Field    | Use as
+date: field name
+build: field value
+```
 ### Sorting columns
 ```
 To sort the columns (values from field A) alphabetically in a Grafana table
