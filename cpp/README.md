@@ -87,10 +87,12 @@ https://www.reddit.com/r/cpp/comments/1ir2x5y/your_favorite_cppcon_talks/
 
 https://www.reddit.com/r/cpp/comments/1ijwb7d/reignite_my_love_for_c/
 
-### CPP exercices:
+### CPP exersizes:
 
 https://www.youtube.com/watch?v=fBb4cKbHbmI  C++ and ML
 
+### Algorithms for Modern Hardware
+https://en.algorithmica.org/hpc/
 
 ### Make, CMAke, etc
 https://habr.com/ru/companies/ruvds/articles/875620/ Сборка проектов Си и Си++: от простого к сложному. Часть II
