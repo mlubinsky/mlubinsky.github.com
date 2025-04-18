@@ -1,5 +1,9 @@
 https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
+https://dataengjobs.com/
+
+https://neon.tech/careers
+
 How to make Resume: https://habr.com/ru/articles/868344/
 
 Как построить карьеру в области искусственного интеллекта. Советы от Эндрю Ына
