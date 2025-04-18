@@ -42,6 +42,8 @@ https://www.reddit.com/r/cpp/comments/1i8a5lm/mustknow_librariesframeworkstechno
 
 https://www.reddit.com/r/cpp/comments/1j33fkq/well_worth_a_look/
 
+https://github.com/qlibs/
+
 ### Less slow CPP
 
 https://github.com/ashvardanian/less_slow.cpp
@@ -273,6 +275,7 @@ char buf[100] = {0};   # same as memset(buf, 0, (sizeof(buf)/sizeof(buf[0])))
 
 https://news.ycombinator.com/item?id=24901244
 
+https://github.com/qlibs/
 
 ### ZigLang
 
