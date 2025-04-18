@@ -11,7 +11,56 @@ WHERE $__timeFilter(date)
 ```
 The E'\n' syntax allows you to insert a real newline in PostgreSQL string literals.
 
+### Sorting columns
+```
+To sort the columns (values from field A) alphabetically in a Grafana table
+when using the Grouping to Matrix transformation,
+you need to apply an additional transformation after the Grouping to Matrix transformation.
+Specifically, you can use the Sort By transformation or the Organize Fields transformation to control the column order.
 
+Here’s how you can achieve this:
+
+Steps to Sort Columns Alphabetically:
+
+1. Set Up Your Grouping to Matrix Transformation:
+Ensure your query (SELECT A, X, V FROM T) is correctly returning the data.
+In the Grafana panel editor, go to the Transform tab.
+Add the Grouping to Matrix transformation with:
+Column: A (this creates columns based on unique values in A).
+Row: X (this defines the row headers).
+Cell Value: V (this populates the matrix cells).
+
+2. Add a Sort By Transformation:
+In the Transform tab, click Add transformation and select Sort By.
+
+In the Sort By options:
+Select the field corresponding to the column headers (values from A). This is typically the field name used as the Column in the matrix (e.g., A or the generated column names).
+Choose Sort order: Ascending to sort alphabetically (A to Z).
+Note: The Sort By transformation may not always directly sort column headers in a matrix, as it primarily sorts rows based on a field. If this doesn’t work as expected, proceed to the next step.
+
+3. Use Organize Fields Transformation (Recommended):
+If the Sort By transformation doesn’t sort the column headers as desired, add the Organize Fields transformation instead (available since Grafana 7.0).
+In the Transform tab, click Add transformation and select Organize Fields.
+In the Organize Fields options:
+You’ll see a list of fields (columns) in the table, including the column headers generated from A.
+Grafana often displays columns in the order returned by the data source, but you can manually reorder them.
+To sort alphabetically, you can drag and drop the fields to arrange them in the desired order.
+However, for automatic alphabetical sorting, Grafana doesn’t natively sort fields in this
+transformation, so you may need to rely on the data source or manual arrangement.
+Alternatively, rename or hide fields if needed by clicking the eye icon to hide unwanted columns or editing field names.
+
+4. Modify the Data Source Query (Optional):
+If the above transformations don’t fully achieve alphabetical sorting of columns, you can modify the query to sort the values of A in the data source. For example:
+ 
+SELECT A, X, V FROM T ORDER BY A ASC
+This ensures the values in A are returned in alphabetical order, which Grafana’s Grouping to Matrix transformation will respect when creating columns.
+However, some data sources (e.g., InfluxDB, Prometheus) may not preserve this order in Grafana tables, as noted in community discussions.
+
+5. Check Grafana Version:
+Ensure you’re using a recent version of Grafana (e.g., v7.0 or later) where the Organize Fields transformation is available. Older versions may not support flexible column reordering.
+If you’re using Grafana v11.2 or later, check for the Transpose transformation, which might offer additional flexibility for pivoting and sorting data, though it’s not directly related to alphabetical sorting.
+
+```
 ### Pivoting
 
 There is table with columns: date, build, group, score.
