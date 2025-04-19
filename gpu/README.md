@@ -18,6 +18,8 @@ https://www.youtube.com/watch?v=v_q2JTIqE20
 
 https://github.com/cuda-mode/lectures
 
+https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html
+
 https://thechipletter.substack.com/p/demystifying-gpu-compute-architectures
 
 https://news.ycombinator.com/item?id=39279163
