@@ -2,6 +2,7 @@ https://dataengjobs.com/
 
 https://join.zerotomastery.io/free-week/
 
+https://medium.com/@riteshgupta.ai/stop-applying-for-jobs-let-recruiters-find-you-on-linkedin-4dc047c631b2
 ```
 I am getting 10+ calls weekly (in 2025!!!) directly from recruiters after using these two tricks.
 
