@@ -1,4 +1,7 @@
 https://dataengjobs.com/
+
+https://join.zerotomastery.io/free-week/
+
 ```
 I am getting 10+ calls weekly (in 2025!!!) directly from recruiters after using these two tricks.
 
