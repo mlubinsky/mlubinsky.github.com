@@ -57,6 +57,9 @@ https://news.ycombinator.com/item?id=38684461
 https://www.unum.cloud/
 
 
+### Linking: names collision
+https://habr.com/ru/articles/902448/
+
 ### Flamegraph
 
 https://johnnysswlab.com/fiya-flamegraphs-in-your-app/
