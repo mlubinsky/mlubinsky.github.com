@@ -224,9 +224,11 @@ kafka_query = fraud_alerts \
 spark.streams.awaitAnyTermination()
 ```
 Explanation
-This script implements a real-time fraud detection system using structured streaming in PySpark. It ingests transaction data from Kafka, enriches it with historical customer behavior patterns, and applies a pre-trained machine learning model to identify potentially fraudulent transactions.
+This script implements a real-time fraud detection system using structured streaming in PySpark. 
+It ingests transaction data from Kafka, enriches it with historical customer behavior patterns, and applies a pre-trained machine learning model to identify potentially fraudulent transactions.
 
-The system calculates z-scores for transaction amounts to detect anomalies and uses time-windowed aggregations to identify unusual transaction patterns within short time periods. Detected fraud alerts are written to both a Delta table for investigation and a Kafka topic for immediate action by the security team.
+The system calculates z-scores for transaction amounts to detect anomalies and uses time-windowed aggregations to identify unusual transaction patterns within short time periods. 
+Detected fraud alerts are written to both a Delta table for investigation and a Kafka topic for immediate action by the security team.
 
 The streaming job uses checkpointing for fault tolerance and watermarking to handle late-arriving data, making it robust for production environments.
 
@@ -235,7 +237,7 @@ Business Scenario
 IT operations teams need to analyze application logs to identify errors, performance bottlenecks, and security issues across distributed systems.
 
 Production-Grade PySpark Script
-```
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, regexp_extract, window, count, when, expr, from_json
 from pyspark.sql.types import StructType, StructField, StringType, TimestampType, IntegerType
@@ -482,8 +484,8 @@ By understanding which products are frequently purchased together, e-commerce co
 Business Scenario
 Manufacturing companies need to process and analyze data from thousands of IoT sensors to monitor equipment health, predict maintenance needs, and optimize production.
 
-Production-Grade PySpark Script
-```
+
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, window, avg, stddev, min, max, count, expr, when
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType, TimestampType
@@ -668,11 +670,14 @@ spark.streams.awaitAnyTermination()
 ```
 
 Explanation
-This script implements a comprehensive IoT sensor data processing pipeline for manufacturing equipment monitoring. It ingests streaming sensor data from Kafka, enriches it with machine metadata, and performs real-time anomaly detection by comparing sensor readings against predefined thresholds.
+This script implements a comprehensive IoT sensor data processing pipeline for manufacturing equipment monitoring. 
+It ingests streaming sensor data from Kafka, enriches it with machine metadata, and performs real-time anomaly detection by comparing sensor readings against predefined thresholds.
 
-The system generates alerts for potential equipment issues based on multiple sensor readings, enabling proactive maintenance. The script also aggregates data for long-term storage and analysis, reducing storage costs while preserving valuable insights.
+The system generates alerts for potential equipment issues based on multiple sensor readings, enabling proactive maintenance. 
+The script also aggregates data for long-term storage and analysis, reducing storage costs while preserving valuable insights.
 
-Additionally, it trains a predictive maintenance model using historical sensor data and maintenance events, which can predict when equipment is likely to need maintenance. This end-to-end solution helps manufacturing companies reduce downtime, optimize maintenance schedules, and extend equipment life.
+Additionally, it trains a predictive maintenance model using historical sensor data and maintenance events, which can predict when equipment is likely to need maintenance. 
+This end-to-end solution helps manufacturing companies reduce downtime, optimize maintenance schedules, and extend equipment life.
 
 ### 6. Social Media Sentiment Analysis
 Business Scenario
@@ -1064,7 +1069,8 @@ reorder_recommendations.write.format("delta").mode("overwrite").save("/mnt/recom
 Explanation
 This script implements a comprehensive supply chain optimization solution for retail and manufacturing companies. 
 It analyzes inventory levels across warehouses, calculates key metrics like days of supply and reorder points, 
-and identifies products that need replenishment. The system evaluates supplier performance based on delivery timeliness, quality ratings, and other factors, then ranks suppliers by product category to identify the best options for each product type.
+and identifies products that need replenishment. 
+The system evaluates supplier performance based on delivery timeliness, quality ratings, and other factors, then ranks suppliers by product category to identify the best options for each product type.
 
 It also analyzes historical demand patterns, calculates month-over-month growth, 
 and uses machine learning to forecast future demand for the next six months. 
@@ -2259,11 +2265,11 @@ For new records, it simply inserts them with appropriate metadata. The script us
 
 The modular design allows for easy adaptation to different dimension tables by simply changing the configuration parameters.
 
-13. ETL Pipeline with Delta Lake
+### 13. ETL Pipeline with Delta Lake
 Business Scenario
 Organizations need to build reliable, scalable ETL (Extract, Transform, Load) pipelines to integrate data from multiple sources into a unified data warehouse for analytics and reporting.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, current_timestamp, date_format, to_date, when, coalesce, lit, expr
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DoubleType, TimestampType, DateType
@@ -2701,18 +2707,22 @@ except Exception as e:
         str(e)
     )
     raise
+```
 Explanation
-This script implements a flexible, configuration-driven ETL pipeline using Delta Lake for reliable data integration. It reads a JSON configuration file that defines sources, transformations, and targets, allowing for easy modification without changing the code.
+This script implements a flexible, configuration-driven ETL pipeline using Delta Lake for reliable data integration.  
+It reads a JSON configuration file that defines sources, transformations, and targets, allowing for easy modification without changing the code.
 
-The pipeline has three main stages: Extract (loading data from various sources like JDBC, CSV, JSON, Delta, or Parquet), Transform (applying operations like joins, filters, aggregations, and custom SQL), and Load (writing data to targets like Delta tables, JDBC databases, or Parquet files).
+The pipeline has three main stages: Extract (loading data from various sources like JDBC, CSV, JSON, Delta, or Parquet),  
+ Transform (applying operations like joins, filters, aggregations, and custom SQL), 
+ and Load (writing data to targets like Delta tables, JDBC databases, or Parquet files).
 
 The script includes comprehensive logging at each stage, recording start and end times, record counts, and any errors. It also adds metadata columns to track data lineage through the pipeline. Delta Lake features like OPTIMIZE and VACUUM are used to maintain performance and manage storage. This solution provides a robust foundation for building scalable data pipelines that can handle diverse data sources and complex transformations while maintaining reliability and auditability.
 
-14. Streaming Data Processing
+### 14. Streaming Data Processing
 Business Scenario
 Organizations need to process streaming data in real-time to enable immediate insights, alerts, and actions based on incoming data.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, window, explode, split, from_json, to_json, struct, current_timestamp
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType, TimestampType, IntegerType
@@ -2913,18 +2923,23 @@ ON d.device_id = a.device_id AND d.sensor_type = a.sensor_type AND d.window.end 
 
 # Wait for termination
 spark.streams.awaitAnyTermination()
+```
 Explanation
-This script implements a comprehensive streaming data processing pipeline for IoT sensor data. It ingests data from Kafka, parses the JSON payload, and enriches it with processing timestamps. The pipeline has multiple branches: one writes raw data to a Delta table for archival, another calculates real-time aggregations in 5-minute windows, and a third detects anomalies by comparing sensor values against predefined thresholds.
+This script implements a comprehensive streaming data processing pipeline for IoT sensor data. 
+It ingests data from Kafka, parses the JSON payload, and enriches it with processing timestamps. 
+The pipeline has multiple branches: one writes raw data to a Delta table for archival, 
+another calculates real-time aggregations in 5-minute windows, and a third detects anomalies by comparing sensor values against predefined thresholds.
 
-High-priority anomalies are sent to a Kafka topic for immediate alerting, while all anomalies are stored in a Delta table for analysis. The script also calculates device status based on error rates and creates a real-time dashboard view that combines aggregations, device status, and anomaly counts. The use of watermarking and windowing ensures that late-arriving data is handled correctly, while checkpointing provides fault tolerance.
+High-priority anomalies are sent to a Kafka topic for immediate alerting, while all anomalies are stored in a Delta table for analysis. 
+The script also calculates device status based on error rates and creates a real-time dashboard view that combines aggregations, device status, and anomaly counts. The use of watermarking and windowing ensures that late-arriving data is handled correctly, while checkpointing provides fault tolerance.
 
 This solution enables organizations to monitor IoT devices in real-time, detect issues immediately, and maintain a complete history of sensor data for long-term analysis.
 
-15. Recommendation Engine
+### 15. Recommendation Engine
 Business Scenario
 E-commerce and content platforms need to provide personalized recommendations to users based on their behavior and preferences to increase engagement and conversions.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, explode, split, count, when, rank, row_number, desc, array
 from pyspark.sql.window import Window
@@ -3263,18 +3278,21 @@ spark.createDataFrame(model_metrics).write \
     .save("/mnt/data/recommendation_model_metrics")
 
 print("Recommendation engine processing complete")
+```
 Explanation
 This script implements a comprehensive recommendation engine using collaborative filtering with Alternating Least Squares (ALS). It processes user interaction data to build a model that captures latent factors influencing user preferences.
 
-The system generates three types of recommendations: user-based recommendations (items a user might like based on their past behavior), item-based recommendations (similar products to ones a user has viewed or purchased), and category-based recommendations (top products in categories a user has shown interest in). The script includes data preparation with StringIndexers to convert IDs to numeric indices, model training and evaluation, and mapping the results back to original IDs. It also incorporates real-time personalization by considering users’ recent activity.
+The system generates three types of recommendations: user-based recommendations (items a user might like based on their past behavior), item-based recommendations (similar products to ones a user has viewed or purchased), and category-based recommendations (top products in categories a user has shown interest in). 
+The script includes data preparation with StringIndexers to convert IDs to numeric indices, model training and evaluation, and mapping the results back to original IDs. It also incorporates real-time personalization by considering users’ recent activity.
 
-All recommendations are stored in Delta tables and unified in a view that can be queried by applications. The solution helps e-commerce and content platforms increase user engagement and conversions by providing personalized recommendations through multiple complementary approaches.
+All recommendations are stored in Delta tables and unified in a view that can be queried by applications. 
+The solution helps e-commerce and content platforms increase user engagement and conversions by providing personalized recommendations through multiple complementary approaches.
 
-16. Machine Learning Pipeline
+### 16. Machine Learning Pipeline
 Business Scenario
 Organizations need to build end-to-end machine learning pipelines that handle data preparation, model training, evaluation, and deployment for predictive analytics.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, when, count, isnan, isnull, mean, stddev, min, max
 from pyspark.ml.feature import VectorAssembler, StandardScaler, StringIndexer, OneHotEncoder, Imputer
@@ -3557,18 +3575,23 @@ if config.get("run_batch_scoring", False):
     score_new_data(config["scoring_data_path"], config["scoring_output_path"])
 
 print("Machine Learning Pipeline completed successfully")
+```
 Explanation
-This script implements a comprehensive machine learning pipeline for customer churn prediction. It handles the entire ML lifecycle, from data preparation to model deployment. The pipeline begins with exploratory data analysis to understand the dataset’s characteristics, including missing values and class distribution. It then prepares the data by handling categorical features through indexing and one-hot encoding, imputing missing values in numeric features, assembling all features into a vector, and scaling them.
+This script implements a comprehensive machine learning pipeline for customer churn prediction. It handles the entire ML lifecycle, from data preparation to model deployment.   
+The pipeline begins with exploratory data analysis to understand the dataset’s characteristics, including missing values and class distribution.   
+It then prepares the data by handling categorical features through indexing and one-hot encoding, imputing missing values in numeric features, assembling all features into a vector, and scaling them.
 
-The script evaluates multiple models (Random Forest, Logistic Regression, and Gradient Boosted Trees) to identify the best performer based on AUC. For the best model, it performs hyperparameter tuning using cross-validation to further improve performance. The pipeline integrates with MLflow for experiment tracking, logging parameters, metrics, and the model itself. It also registers the model in the MLflow Model Registry for versioning and deployment.
+The script evaluates multiple models (Random Forest, Logistic Regression, and Gradient Boosted Trees) to identify the best performer based on AUC. For the best model, it performs hyperparameter tuning using cross-validation to further improve performance.   
+The pipeline integrates with MLflow for experiment tracking, logging parameters, metrics, and the model itself. It also registers the model in the MLflow Model Registry for versioning and deployment.
 
-The script saves the model for batch scoring and creates a function to score new data. Additionally, it generates feature importance analysis for tree-based models and stores model metadata for governance and auditing. This solution enables organizations to build, evaluate, and deploy machine learning models in a reproducible and scalable way.
+The script saves the model for batch scoring and creates a function to score new data. Additionally, it generates feature importance analysis for tree-based models and stores model metadata for governance and auditing.   
+This solution enables organizations to build, evaluate, and deploy machine learning models in a reproducible and scalable way.
 
-17. Graph Analysis
+### 17. Graph Analysis
 Business Scenario
 Organizations need to analyze complex relationships in their data to identify patterns, communities, and influential entities.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, explode, count, sum as spark_sum, desc, row_number, collect_list
 from pyspark.sql.window import Window
@@ -3782,18 +3805,22 @@ LEFT JOIN (
 """)
 
 print("Graph analysis completed successfully")
+```
 Explanation
-This script implements a comprehensive graph analysis pipeline using GraphFrames, a powerful library for graph processing on top of Apache Spark. It loads entity and relationship data to create a graph representation, then performs various analyses to extract insights about the network structure. The pipeline calculates basic graph statistics, degree distributions, and identifies the most connected entities.
+This script implements a comprehensive graph analysis pipeline using GraphFrames, a powerful library for graph processing on top of Apache Spark. 
+It loads entity and relationship data to create a graph representation, then performs various analyses to extract insights about the network structure. 
+The pipeline calculates basic graph statistics, degree distributions, and identifies the most connected entities.
 
-It uses PageRank to find influential entities in the network and applies community detection algorithms to identify groups of closely connected entities. The script also analyzes connected components, triangle counts (which indicate clustering), and shortest paths between important entities. It performs pattern matching to find specific motifs like triangles and hub patterns, and calculates entity similarity based on common neighbors. All analysis results are stored in Delta tables for further exploration and visualization.
+It uses PageRank to find influential entities in the network and applies community detection algorithms to identify groups of closely connected entities. The script also analyzes connected components, triangle counts (which indicate clustering), and shortest paths between important entities. 
+It performs pattern matching to find specific motifs like triangles and hub patterns, and calculates entity similarity based on common neighbors. All analysis results are stored in Delta tables for further exploration and visualization.
 
 This solution helps organizations understand complex relationships in their data, identify key entities and communities, and discover hidden patterns that might not be apparent through traditional analysis methods.
 
-18. Time Series Analysis
+### 18. Time Series Analysis
 Business Scenario
 Organizations need to analyze time series data to identify trends, seasonality, and anomalies for forecasting and monitoring.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, window, avg, min, max, count, stddev, lag, lead, expr
 from pyspark.sql.functions import year, month, dayofmonth, hour, minute, date_format, to_timestamp
@@ -4056,18 +4083,20 @@ LEFT JOIN (
 """)
 
 print("Time series analysis completed successfully")
+```
 Explanation
-This script implements a comprehensive time series analysis pipeline for monitoring, anomaly detection, and forecasting. It processes time series data by extracting temporal components (year, month, day, hour) and calculating basic statistics. The pipeline computes moving averages at different time scales (1 hour, 6 hours, 1 day, 7 days, 30 days) to identify trends and smooth out noise. It calculates rate of change metrics to understand how quickly values are changing over time.
+This script implements a comprehensive time series analysis pipeline for monitoring, anomaly detection, and forecasting. It processes time series data by extracting temporal components (year, month, day, hour) and calculating basic statistics. 
+The pipeline computes moving averages at different time scales (1 hour, 6 hours, 1 day, 7 days, 30 days) to identify trends and smooth out noise. It calculates rate of change metrics to understand how quickly values are changing over time.
 
 The script detects anomalies using Z-scores, flagging values that deviate significantly from the rolling mean. It performs seasonal decomposition by analyzing patterns at hourly, daily, and monthly levels to identify recurring cycles in the data. For forecasting, the pipeline builds a Random Forest regression model for each time series, using lag features and temporal components as predictors.
 
 It evaluates model performance using RMSE, MAE, and R² metrics, and generates future forecasts for the next month. All analysis results are stored in Delta tables and unified in a dashboard view for visualization. This solution helps organizations understand patterns in their time series data, detect anomalies in real-time, and make data-driven forecasts for future planning.
 
-19. Natural Language Processing
+### 19. Natural Language Processing
 Business Scenario
 Organizations need to analyze text data from customer feedback, social media, and other sources to extract insights, sentiment, and topics.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, udf, explode, split, count, desc, array_contains, regexp_replace, lower
 from pyspark.sql.types import ArrayType, StringType, FloatType, StructType, StructField
@@ -4413,18 +4442,22 @@ LEFT JOIN (
 """)
 
 print("Natural Language Processing completed successfully")
+```
 Explanation
 This script implements a comprehensive natural language processing pipeline for analyzing text data. It begins with text preprocessing, including cleaning, tokenization, stop word removal, stemming, and lemmatization to prepare the text for analysis.
 
-The pipeline then performs sentiment analysis using VADER, assigning positive, negative, or neutral labels to each document and calculating sentiment scores. It aggregates sentiment by category to identify trends across different segments. The script creates TF-IDF vectors to identify important terms in each document and implements topic modeling using Latent Dirichlet Allocation (LDA) to discover hidden themes in the corpus.
+The pipeline then performs sentiment analysis using VADER, assigning positive, negative, or neutral labels to each document and calculating sentiment scores. 
+It aggregates sentiment by category to identify trends across different segments. The script creates TF-IDF vectors to identify important terms in each document and implements topic modeling using Latent Dirichlet Allocation (LDA) to discover hidden themes in the corpus.
 
-It generates word embeddings using Word2Vec, enabling semantic similarity analysis between words. The pipeline also performs named entity recognition to extract and categorize entities like people, organizations, and locations. Additionally, it builds a text classification model using Random Forest to categorize documents based on their content. All analysis results are stored in Delta tables and unified in a dashboard view for exploration. This solution helps organizations extract valuable insights from unstructured text data, understand customer sentiment, identify important topics, and classify documents automatically.
+It generates word embeddings using Word2Vec, enabling semantic similarity analysis between words. 
+The pipeline also performs named entity recognition to extract and categorize entities like people, organizations, and locations. Additionally, it builds a text classification model using Random Forest to categorize documents based on their content. All analysis results are stored in Delta tables and unified in a dashboard view for exploration. 
+This solution helps organizations extract valuable insights from unstructured text data, understand customer sentiment, identify important topics, and classify documents automatically.
 
-20. Image Processing Pipeline
+### 20. Image Processing Pipeline
 Business Scenario
 Organizations need to process and analyze large volumes of images for tasks like classification, object detection, and feature extraction.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, udf, lit, array, struct, explode
 from pyspark.sql.types import StringType, ArrayType, StructType, StructField, FloatType, IntegerType, BinaryType
@@ -4781,10 +4814,18 @@ LEFT JOIN (
 """)
 
 print("Image Processing Pipeline completed successfully")
+```
 Explanation
-This script implements a comprehensive image processing pipeline for analyzing large volumes of images. It loads image data and metadata, then performs multiple types of analysis in parallel. The pipeline resizes images for consistent processing and extracts features using pre-trained deep learning models (ResNet50 and MobileNetV2), which capture high-level visual characteristics. It calculates color statistics to understand the visual composition of each image and performs object detection to identify and locate objects within images.
+This script implements a comprehensive image processing pipeline for analyzing large volumes of images. It loads image data and metadata, then performs multiple types of analysis in parallel.
 
-The script builds an image classification model using the extracted features, enabling automatic categorization of images. It also implements image similarity analysis using locality-sensitive hashing (LSH) to find visually similar images efficiently. All processing results are stored in Delta tables and unified in a dashboard view for exploration.
+The pipeline resizes images for consistent processing and extracts features using pre-trained deep learning models (ResNet50 and MobileNetV2), which capture high-level visual characteristics. 
 
-This solution helps organizations extract valuable insights from image data, automate image categorization, detect objects, and find similar images across large collections. The use of pre-trained models enables high-quality analysis without requiring extensive labeled training data.
+It calculates color statistics to understand the visual composition of each image and performs object detection to identify and locate objects within images.
+
+The script builds an image classification model using the extracted features, enabling automatic categorization of images.  
+It also implements image similarity analysis using locality-sensitive hashing (LSH) to find visually similar images efficiently. All processing results are stored in Delta tables and unified in a dashboard view for exploration.
+
+This solution helps organizations extract valuable insights from image data, automate image categorization, detect objects, and find similar images across large collections. 
+
+The use of pre-trained models enables high-quality analysis without requiring extensive labeled training data.
 
