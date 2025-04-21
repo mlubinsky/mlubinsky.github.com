@@ -2599,6 +2599,8 @@ SELECT ROW_TO_JSON(table_name) FROM table_name
 
  <https://habr.com/ru/post/475178/>
 
+ https://www.architecture-weekly.com/p/postgresql-jsonb-powerful-storage
+
 <https://vsevolod.net/postgresql-jsonb-index/>
 
 <https://www.w3resource.com/PostgreSQL/postgresql-json-functions-and-operators.php>
