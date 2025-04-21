@@ -1,8 +1,36 @@
-1. Customer Segmentation Analysis
+https://mayursurani.medium.com/comprehensive-guide-to-production-grade-databricks-pyspark-applications-edba1cefb362
+
+Table of Contents
+```
+Customer Segmentation Analysis
+Real-time Fraud Detection
+Log File Processing and Analysis
+E-commerce Purchase Pattern Analysis
+IoT Sensor Data Processing
+Social Media Sentiment Analysis
+Supply Chain Optimization
+Healthcare Patient Data Analysis
+Financial Transaction Processing
+Website User Behavior Analysis
+Data Quality Monitoring
+SCD Type 2 Implementation
+ETL Pipeline with Delta Lake
+Streaming Data Processing
+Recommendation Engine
+Churn Prediction Model
+Data Skew Handling
+Incremental Data Processing
+Multi-source Data Integration
+Automated Data Catalog Generation
+```
+
+### 1. Customer Segmentation Analysis
+```
 Business Scenario
 Retail companies need to segment customers based on purchasing behavior, demographics, and engagement patterns to create targeted marketing campaigns.
 
 Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, datediff, current_date, sum as spark_sum, avg, count
 from pyspark.ml.feature import VectorAssembler
@@ -66,18 +94,23 @@ clustered_customers.write.format("delta").mode("overwrite").save("/mnt/data/cust
 
 # Display cluster analysis
 display(cluster_analysis)
+```
+
 Explanation
-This script implements RFM (Recency, Frequency, Monetary) analysis combined with K-means clustering to segment customers. It first calculates how recently customers purchased (recency), how often they purchase (frequency), and how much they spend (monetary value).
+This script implements RFM (Recency, Frequency, Monetary) analysis combined with K-means clustering to segment customers.   
+It first calculates how recently customers purchased (recency), how often they purchase (frequency),   
+and how much they spend (monetary value).
 
 These metrics, along with demographic data, are used as features for K-means clustering. The script determines the optimal number of clusters using the Elbow method, then applies the final model to segment customers.
 
-The results are saved to a Delta table for downstream marketing applications. This approach enables personalized marketing strategies based on customer behavior patterns.
+The results are saved to a Delta table for downstream marketing applications. 
+This approach enables personalized marketing strategies based on customer behavior patterns.  
 
-2. Real-time Fraud Detection
+### 2. Real-time Fraud Detection
 Business Scenario
 Financial institutions need to detect fraudulent transactions in real-time to prevent financial losses and protect customers.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, window, expr, when, count, avg, stddev
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType, TimestampType
@@ -188,6 +221,7 @@ kafka_query = fraud_alerts \
 
 # Wait for termination
 spark.streams.awaitAnyTermination()
+```
 Explanation
 This script implements a real-time fraud detection system using structured streaming in PySpark. It ingests transaction data from Kafka, enriches it with historical customer behavior patterns, and applies a pre-trained machine learning model to identify potentially fraudulent transactions.
 
@@ -195,11 +229,12 @@ The system calculates z-scores for transaction amounts to detect anomalies and u
 
 The streaming job uses checkpointing for fault tolerance and watermarking to handle late-arriving data, making it robust for production environments.
 
-3. Log File Processing and Analysis
+### 3. Log File Processing and Analysis
 Business Scenario
 IT operations teams need to analyze application logs to identify errors, performance bottlenecks, and security issues across distributed systems.
 
 Production-Grade PySpark Script
+```
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, regexp_extract, window, count, when, expr, from_json
 from pyspark.sql.types import StructType, StructField, StringType, TimestampType, IntegerType
@@ -308,12 +343,20 @@ anomalies = error_trends \
 
 # Write anomalies to alerting system
 anomalies.write.format("delta").mode("overwrite").save("/mnt/alerts/error_anomalies")
+```
+
 Explanation
-This script processes application logs to identify patterns, errors, and anomalies across distributed systems. It first loads JSON-formatted logs, cleans the data, and extracts key information like error codes using regular expressions. The script then performs multiple analyses: error rates by service, error trends over time, common error patterns, and correlated errors across services that might indicate cascading failures.
+This script processes application logs to identify patterns, errors, and anomalies across distributed systems.  
+It first loads JSON-formatted logs, cleans the data, and extracts key information like error codes using regular expressions.  
+The script then performs multiple analyses: error rates by service, error trends over time, common error patterns,  
+and correlated errors across services that might indicate cascading failures.
 
-It uses both DataFrame operations and SQL queries to demonstrate different approaches to log analysis. The results are saved to Delta tables for visualization and reporting. Finally, it identifies anomalous error rates that exceed a threshold (5% in this example) and writes them to an alerting system for immediate investigation. This comprehensive log analysis helps IT teams proactively identify and resolve issues before they impact users.
+It uses both DataFrame operations and SQL queries to demonstrate different approaches to log analysis.  
+The results are saved to Delta tables for visualization and reporting.   
+Finally, it identifies anomalous error rates that exceed a threshold (5% in this example) and writes them to an alerting system for immediate investigation. 
+This comprehensive log analysis helps IT teams proactively identify and resolve issues before they impact users.
 
-4. E-commerce Purchase Pattern Analysis
+### 4. E-commerce Purchase Pattern Analysis
 Business Scenario
 E-commerce companies need to analyze customer purchase patterns to optimize inventory, improve product recommendations, and increase sales.
 
