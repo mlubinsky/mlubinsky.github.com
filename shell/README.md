@@ -1,5 +1,7 @@
 shellcheck -o all myshellscript.sh  : use shellcheck  to check any shell script
 
+https://www.reddit.com/r/bash/comments/1jtsqhr/can_anyone_suggest_me_good_bash_book_filled_with/
+
 https://nochlin.com/blog/6-techniques-i-use-to-create-a-great-user-experience-for-shell-scripts
 
 https://news.ycombinator.com/item?id=43410692 bat, fd and others 
