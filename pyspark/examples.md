@@ -1,28 +1,28 @@
 https://mayursurani.medium.com/comprehensive-guide-to-production-grade-databricks-pyspark-applications-edba1cefb362
 
 Table of Contents
-```
-Customer Segmentation Analysis
-Real-time Fraud Detection
-Log File Processing and Analysis
-E-commerce Purchase Pattern Analysis
-IoT Sensor Data Processing
-Social Media Sentiment Analysis
-Supply Chain Optimization
-Healthcare Patient Data Analysis
-Financial Transaction Processing
-Website User Behavior Analysis
-Data Quality Monitoring
-SCD Type 2 Implementation
-ETL Pipeline with Delta Lake
-Streaming Data Processing
-Recommendation Engine
-Churn Prediction Model
-Data Skew Handling
-Incremental Data Processing
-Multi-source Data Integration
-Automated Data Catalog Generation
-```
+ 
+1. Customer Segmentation Analysis
+2. Real-time Fraud Detection
+3. Log File Processing and Analysis
+4. E-commerce Purchase Pattern Analysis
+5. IoT Sensor Data Processing
+6. Social Media Sentiment Analysis
+7. Supply Chain Optimization
+8. Healthcare Patient Data Analysis
+9. Financial Transaction Processing
+10. Website User Behavior Analysis
+11. Data Quality Monitoring
+12. SCD Type 2 Implementation
+13. ETL Pipeline with Delta Lake
+14. Streaming Data Processing
+15. Recommendation Engine
+16. Churn Prediction Model
+17. Data Skew Handling
+18. Incremental Data Processing
+19. Multi-source Data Integration
+20. Automated Data Catalog Generation
+ 
 
 ### 1. Customer Segmentation Analysis
  
@@ -362,6 +362,7 @@ Business Scenario
 E-commerce companies need to analyze customer purchase patterns to optimize inventory, improve product recommendations, and increase sales.
 
 Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, explode, split, count, sum as spark_sum, desc, datediff, current_date
 from pyspark.sql.window import Window
@@ -469,6 +470,7 @@ seasonal_trends.write.format("delta").mode("overwrite").save("/mnt/analysis/seas
 association_rules.write.format("delta").mode("overwrite").save("/mnt/analysis/association_rules")
 customer_patterns.write.format("delta").mode("overwrite").save("/mnt/analysis/customer_patterns")
 high_value_customers.write.format("delta").mode("overwrite").save("/mnt/analysis/high_value_customers")
+```
 Explanation
 This script performs comprehensive e-commerce purchase pattern analysis to drive business decisions. It calculates product and category performance metrics, identifies seasonal trends, and performs market basket analysis using the FP-Growth algorithm to find products frequently purchased together.
 
@@ -476,11 +478,12 @@ The script also analyzes customer purchase patterns to identify high-value custo
 
 By understanding which products are frequently purchased together, e-commerce companies can increase average order value and improve customer satisfaction.
 
-5. IoT Sensor Data Processing
+### 5. IoT Sensor Data Processing
 Business Scenario
 Manufacturing companies need to process and analyze data from thousands of IoT sensors to monitor equipment health, predict maintenance needs, and optimize production.
 
 Production-Grade PySpark Script
+```
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, window, avg, stddev, min, max, count, expr, when
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType, TimestampType
@@ -662,6 +665,8 @@ model.write().overwrite().save("/mnt/models/maintenance_prediction_model")
 
 # Wait for termination
 spark.streams.awaitAnyTermination()
+```
+
 Explanation
 This script implements a comprehensive IoT sensor data processing pipeline for manufacturing equipment monitoring. It ingests streaming sensor data from Kafka, enriches it with machine metadata, and performs real-time anomaly detection by comparing sensor readings against predefined thresholds.
 
@@ -669,11 +674,12 @@ The system generates alerts for potential equipment issues based on multiple sen
 
 Additionally, it trains a predictive maintenance model using historical sensor data and maintenance events, which can predict when equipment is likely to need maintenance. This end-to-end solution helps manufacturing companies reduce downtime, optimize maintenance schedules, and extend equipment life.
 
-6. Social Media Sentiment Analysis
+### 6. Social Media Sentiment Analysis
 Business Scenario
 Marketing teams need to analyze social media mentions to understand brand perception, track campaign performance, and identify emerging issues.
 
 Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, udf, explode, split, count, sum as spark_sum, when, window
 from pyspark.sql.types import StringType, ArrayType, StructType, StructField, TimestampType
@@ -847,18 +853,23 @@ query4 = influential_posts \
 
 # Wait for termination
 spark.streams.awaitAnyTermination()
+```
 Explanation
-This script implements a real-time social media sentiment analysis pipeline for brand monitoring. It ingests streaming social media posts from Kafka and applies a pre-trained sentiment analysis model to classify posts as positive, negative, or neutral.
+This script implements a real-time social media sentiment analysis pipeline for brand monitoring. 
+It ingests streaming social media posts from Kafka and applies a pre-trained sentiment analysis model to classify posts as positive, negative, or neutral.
 
-The system identifies mentions of brands, products, and campaigns using keyword matching, and calculates engagement potential based on follower count. It analyzes sentiment by hashtag, tracks sentiment trends over time, and monitors brand mentions across platforms.
+The system identifies mentions of brands, products, and campaigns using keyword matching, and calculates engagement potential based on follower count. 
+It analyzes sentiment by hashtag, tracks sentiment trends over time, and monitors brand mentions across platforms.
 
-The script also identifies influential posts with high engagement potential and strong sentiment, which may require immediate attention from the marketing team. The results are written to Delta tables for real-time dashboards and alerts. This comprehensive social media monitoring solution helps marketing teams understand brand perception, track campaign performance, and quickly respond to emerging issues or opportunities.
+The script also identifies influential posts with high engagement potential and strong sentiment, which may require immediate attention from the marketing team. 
+The results are written to Delta tables for real-time dashboards and alerts. 
+This comprehensive social media monitoring solution helps marketing teams understand brand perception, track campaign performance, and quickly respond to emerging issues or opportunities.
 
-7. Supply Chain Optimization
+### 7. Supply Chain Optimization
 Business Scenario
 Retail and manufacturing companies need to optimize their supply chain by analyzing inventory levels, demand patterns, and supplier performance.
 
-Production-Grade PySpark Scrip
+```
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, datediff, current_date, lag, avg, stddev, sum as spark_sum, when, rank
 from pyspark.sql.window import Window
@@ -1049,6 +1060,7 @@ reorder_recommendations = inventory_analysis \
     )
 
 reorder_recommendations.write.format("delta").mode("overwrite").save("/mnt/recommendations/reorder_recommendations")
+```
 Explanation
 This script implements a comprehensive supply chain optimization solution for retail and manufacturing companies. It analyzes inventory levels across warehouses, calculates key metrics like days of supply and reorder points, and identifies products that need replenishment. The system evaluates supplier performance based on delivery timeliness, quality ratings, and other factors, then ranks suppliers by product category to identify the best options for each product type.
 
@@ -1056,7 +1068,7 @@ It also analyzes historical demand patterns, calculates month-over-month growth,
 
 This end-to-end solution helps companies optimize inventory levels, reduce stockouts, improve supplier relationships, and ultimately enhance customer satisfaction while minimizing costs.
 
-8. Healthcare Patient Data Analysis
+### 8. Healthcare Patient Data Analysis
 Business Scenario
 Healthcare providers need to analyze patient data to identify high-risk patients, optimize treatment plans, and improve outcomes while reducing costs.
 
