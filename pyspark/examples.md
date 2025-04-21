@@ -25,11 +25,12 @@ Automated Data Catalog Generation
 ```
 
 ### 1. Customer Segmentation Analysis
-```
+ 
 Business Scenario
 Retail companies need to segment customers based on purchasing behavior, demographics, and engagement patterns to create targeted marketing campaigns.
 
 Production-Grade PySpark Script
+
 ```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, datediff, current_date, sum as spark_sum, avg, count
