@@ -2,8 +2,10 @@ trae.ai
 https://habr.com/ru/articles/876952/  Trae from ByteDance - Cursor competitor  
 https://www.cursor.com/
 
-
-https://apps.kde.org/kwrite/ cross platform IDE
+### Kate Editor
+brew install kate  
+https://akselmo.dev/posts/how-i-use-kate-editor/  
+https://apps.kde.org/kwrite/ cross platform IDE  
 
 MacOS:  
 You can change TextEdit to handle plain text: Format > Convert to plain text, or Shift + Command + T.
