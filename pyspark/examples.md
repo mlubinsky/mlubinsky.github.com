@@ -869,7 +869,7 @@ This comprehensive social media monitoring solution helps marketing teams unders
 Business Scenario
 Retail and manufacturing companies need to optimize their supply chain by analyzing inventory levels, demand patterns, and supplier performance.
 
-```
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, datediff, current_date, lag, avg, stddev, sum as spark_sum, when, rank
 from pyspark.sql.window import Window
@@ -1062,17 +1062,22 @@ reorder_recommendations = inventory_analysis \
 reorder_recommendations.write.format("delta").mode("overwrite").save("/mnt/recommendations/reorder_recommendations")
 ```
 Explanation
-This script implements a comprehensive supply chain optimization solution for retail and manufacturing companies. It analyzes inventory levels across warehouses, calculates key metrics like days of supply and reorder points, and identifies products that need replenishment. The system evaluates supplier performance based on delivery timeliness, quality ratings, and other factors, then ranks suppliers by product category to identify the best options for each product type.
+This script implements a comprehensive supply chain optimization solution for retail and manufacturing companies. 
+It analyzes inventory levels across warehouses, calculates key metrics like days of supply and reorder points, 
+and identifies products that need replenishment. The system evaluates supplier performance based on delivery timeliness, quality ratings, and other factors, then ranks suppliers by product category to identify the best options for each product type.
 
-It also analyzes historical demand patterns, calculates month-over-month growth, and uses machine learning to forecast future demand for the next six months. The script generates specific reorder recommendations, including the recommended order quantity and preferred supplier for each product that needs replenishment.
+It also analyzes historical demand patterns, calculates month-over-month growth, 
+and uses machine learning to forecast future demand for the next six months. 
+The script generates specific reorder recommendations, including the recommended order quantity and preferred supplier for each product that needs replenishment.
 
-This end-to-end solution helps companies optimize inventory levels, reduce stockouts, improve supplier relationships, and ultimately enhance customer satisfaction while minimizing costs.
+This end-to-end solution helps companies optimize inventory levels, reduce stockouts, improve supplier relationships, 
+and ultimately enhance customer satisfaction while minimizing costs.
 
 ### 8. Healthcare Patient Data Analysis
 Business Scenario
 Healthcare providers need to analyze patient data to identify high-risk patients, optimize treatment plans, and improve outcomes while reducing costs.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, datediff, current_date, when, sum as spark_sum, avg, count, explode
 from pyspark.sql.window import Window
@@ -1328,18 +1333,23 @@ high_risk_patients.write.format("delta").mode("overwrite").save("/mnt/analysis/h
 
 # Save model for future predictions
 model.write().overwrite().save("/mnt/models/readmission_risk_model")
+```
 Explanation
-This script implements a comprehensive healthcare patient data analysis solution that helps providers identify high-risk patients and improve outcomes. It analyzes patient demographics, diagnosis patterns, and comorbidities to understand the patient population.
+This script implements a comprehensive healthcare patient data analysis solution that helps providers identify high-risk patients and improve outcomes. 
+It analyzes patient demographics, diagnosis patterns, and comorbidities to understand the patient population.
 
-The system calculates readmission rates by department to identify areas for improvement and analyzes medication patterns and potential interactions to optimize treatment plans. The script also builds a machine learning model to predict readmission risk based on patient characteristics, diagnoses, medications, and lab results. It identifies high-risk patients who may benefit from additional interventions, enabling proactive care management.
+The system calculates readmission rates by department to identify areas for improvement and analyzes medication patterns and potential interactions to optimize treatment plans. 
+The script also builds a machine learning model to predict readmission risk based on patient characteristics, diagnoses, medications, and lab results. 
+It identifies high-risk patients who may benefit from additional interventions, enabling proactive care management.
 
-The results are saved to Delta tables for integration with clinical decision support systems and population health management tools. This solution helps healthcare providers reduce readmissions, improve patient outcomes, and optimize resource allocation while maintaining patient privacy and data security.
+The results are saved to Delta tables for integration with clinical decision support systems and population health management tools. 
+This solution helps healthcare providers reduce readmissions, improve patient outcomes, and optimize resource allocation while maintaining patient privacy and data security.
 
-9. Financial Transaction Processing
+### 9. Financial Transaction Processing
 Business Scenario
 Financial institutions need to process and analyze millions of transactions daily to detect fraud, ensure compliance, and provide insights to customers.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, window, count, sum as spark_sum, avg, stddev, when, expr, from_json
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType, TimestampType, IntegerType
@@ -1539,18 +1549,23 @@ category_query = top_categories \
 
 # Wait for termination
 spark.streams.awaitAnyTermination()
+```
 Explanation
-This script implements a comprehensive financial transaction processing system that handles millions of transactions in real-time. It ingests transaction data from Kafka, enriches it with account information, and converts all amounts to USD for consistent analysis.
+This script implements a comprehensive financial transaction processing system that handles millions of transactions in real-time. 
+It ingests transaction data from Kafka, enriches it with account information, and converts all amounts to USD for consistent analysis.
 
-The system calculates real-time account balances, tracks spending patterns by category, and detects anomalous transactions that may indicate fraud. It also generates customer insights, including monthly spending summaries and top spending categories, which can be used for personalized financial advice and marketing. The results are written to Delta tables for integration with banking applications, fraud investigation systems, and customer-facing dashboards.
+The system calculates real-time account balances, tracks spending patterns by category, and detects anomalous transactions that may indicate fraud. 
+It also generates customer insights, including monthly spending summaries and top spending categories, which can be used for personalized financial advice and marketing. 
+The results are written to Delta tables for integration with banking applications, fraud investigation systems, and customer-facing dashboards.
 
-The streaming architecture ensures that transactions are processed as they occur, enabling real-time fraud detection and up-to-date account information. This solution helps financial institutions improve security, enhance customer experience, and gain valuable insights from transaction data.
+The streaming architecture ensures that transactions are processed as they occur, enabling real-time fraud detection and up-to-date account information. 
+This solution helps financial institutions improve security, enhance customer experience, and gain valuable insights from transaction data.
 
-10. Website User Behavior Analysis
+### 10. Website User Behavior Analysis
 Business Scenario
 E-commerce and content websites need to analyze user behavior to optimize the user experience, increase conversions, and personalize content.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, explode, split, count, sum as spark_sum, avg, when, window, expr, from_json
 from pyspark.sql.types import StructType, StructField, StringType, TimestampType, IntegerType, ArrayType
@@ -1770,14 +1785,18 @@ behavior_query = user_behavior \
 
 # Wait for termination
 spark.streams.awaitAnyTermination()
+```
 Explanation
-This script implements a comprehensive website user behavior analysis system that processes clickstream data in real-time. It ingests user interactions from Kafka, enriches them with product and user information, and performs multiple analyses to understand user behavior. The system analyzes page views and engagement metrics, tracks user journeys through the website, and evaluates the conversion funnel to identify drop-off points.
+This script implements a comprehensive website user behavior analysis system that processes clickstream data in real-time. It ingests user interactions from Kafka, enriches them with product and user information, and performs multiple analyses to understand user behavior. 
+The system analyzes page views and engagement metrics, tracks user journeys through the website, and evaluates the conversion funnel to identify drop-off points.
 
-It also analyzes product interactions, calculating key metrics like cart rate and conversion rate for each product. The script identifies user segments based on behavior patterns, which can be used for personalized marketing and content recommendations.
+It also analyzes product interactions, calculating key metrics like cart rate and conversion rate for each product. 
+The script identifies user segments based on behavior patterns, which can be used for personalized marketing and content recommendations.
 
-The results are written to Delta tables for integration with analytics dashboards, personalization engines, and marketing automation systems. This solution helps e-commerce and content websites optimize the user experience, increase conversions, and deliver personalized content to different user segments.
+The results are written to Delta tables for integration with analytics dashboards, personalization engines, and marketing automation systems. 
+This solution helps e-commerce and content websites optimize the user experience, increase conversions, and deliver personalized content to different user segments.
 
-11. Data Quality Monitoring
+### 11. Data Quality Monitoring
 Business Scenario
 Organizations need to continuously monitor data quality across their data pipelines to ensure accuracy, completeness, and consistency of data used for business decisions.
 
