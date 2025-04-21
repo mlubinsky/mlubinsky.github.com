@@ -1806,7 +1806,7 @@ This solution helps e-commerce and content websites optimize the user experience
 Business Scenario
 Organizations need to continuously monitor data quality across their data pipelines to ensure accuracy, completeness, and consistency of data used for business decisions.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, count, when, isnan, isnull, length, expr, to_date, current_timestamp
 from pyspark.sql.types import StructType, StringType, IntegerType, DoubleType, DateType, TimestampType
@@ -2039,17 +2039,24 @@ if failed_checks.count() > 0:
 
     # Send alert notifications (example)
     critical_failures = failed_checks.filter(col("failure_percentage") > 50)
+```
    Explanation
-This script implements a comprehensive data quality monitoring system that continuously checks data across multiple tables. It loads data quality rules from a configuration file, which defines various checks like null value detection, uniqueness constraints, value range validation, pattern matching, and referential integrity. For each table, the script applies the relevant checks and calculates failure percentages, comparing them against defined thresholds. The results are stored in a Delta table for historical tracking and trend analysis. The script also generates a summary report and alerts for failed checks, with special handling for critical failures that might require immediate attention. This solution helps organizations maintain high data quality by proactively identifying issues before they impact business decisions. The modular design allows for easy addition of new quality checks and tables without modifying the core logic.
+This script implements a comprehensive data quality monitoring system that continuously checks data across multiple tables. 
+It loads data quality rules from a configuration file, which defines various checks like null value detection, uniqueness constraints, value range validation, pattern matching, and referential integrity. 
+For each table, the script applies the relevant checks and calculates failure percentages, comparing them against defined thresholds. The results are stored in a Delta table for historical tracking and trend analysis. 
+The script also generates a summary report and alerts for failed checks, with special handling for critical failures that might require immediate attention. This solution helps organizations maintain high data quality by proactively identifying issues before they impact business decisions. 
+The modular design allows for easy addition of new quality checks and tables without modifying the core logic.
 
-12. SCD Type 2 Implementation
+### 12. SCD Type 2 Implementation
 Business Scenario
 Organizations need to track historical changes to dimension data (like customer or product information) while maintaining current values for reporting and analysis.
 
-Production-Grade PySpark Script if critical_failures.count() > 0:
+```python
+if critical_failures.count() > 0:
         # In a real system, this would trigger an alert via email, Slack, etc.
         critical_tables = critical_failures.select("table_name").distinct().collect()
         print(f"CRITICAL DATA QUALITY ALERT: Tables with severe issues: {[row.table_name for row in critical_tables]}")
+```
 Explanation
 This script implements a comprehensive data quality monitoring system that continuously checks data across multiple tables. It loads data quality rules from a configuration file, which defines various checks like null value detection, uniqueness constraints, value range validation, pattern matching, and referential integrity.
 
@@ -2057,11 +2064,11 @@ For each table, the script applies the relevant checks and calculates failure pe
 
 This solution helps organizations maintain high data quality by proactively identifying issues before they impact business decisions. The modular design allows for easy addition of new quality checks and tables without modifying the core logic.
 
-12. SCD Type 2 Implementation
+### 12. SCD Type 2 Implementation
 Business Scenario
 Organizations need to track historical changes to dimension data (like customer or product information) while maintaining current values for reporting and analysis.
 
-Production-Grade PySpark Script
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, current_timestamp, lit, when, row_number
 from pyspark.sql.window import Window
@@ -2258,10 +2265,14 @@ print(f"  Total records in dimension table: {dim_df.count() + records_to_insert.
 
 # Optimize the table
 spark.sql(f"OPTIMIZE delta.`/mnt/data/{dimension_table}`")
+```
 Explanation
-This script implements a Slowly Changing Dimension (SCD) Type 2 pattern for tracking historical changes to dimension data. It loads the current dimension table and source data with updates, then identifies new records, changed records, and unchanged records by comparing business keys and tracked columns. For changed records, it expires the current records by setting an end date and changing the current flag to false, then inserts new records with updated values and a new effective date.
+This script implements a Slowly Changing Dimension (SCD) Type 2 pattern for tracking historical changes to dimension data. It loads the current dimension table and source data with updates, then identifies new records, changed records, and unchanged records by comparing business keys and tracked columns. 
+For changed records, it expires the current records by setting an end date and changing the current flag to false, then inserts new records with updated values and a new effective date.
 
-For new records, it simply inserts them with appropriate metadata. The script uses Delta Lake’s MERGE operation for atomic updates to expired records, ensuring data consistency even if the job fails midway. It also optimizes the table after processing to improve query performance. This solution enables point-in-time analysis and historical tracking of dimension data changes, which is essential for accurate reporting and compliance requirements.
+For new records, it simply inserts them with appropriate metadata. 
+The script uses Delta Lake’s MERGE operation for atomic updates to expired records, ensuring data consistency even if the job fails midway. It also optimizes the table after processing to improve query performance. 
+This solution enables point-in-time analysis and historical tracking of dimension data changes, which is essential for accurate reporting and compliance requirements.
 
 The modular design allows for easy adaptation to different dimension tables by simply changing the configuration parameters.
 
