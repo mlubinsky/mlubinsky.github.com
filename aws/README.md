@@ -4,6 +4,9 @@ https://aws.plainenglish.io/i-have-asked-this-ssh-question-in-every-aws-intervie
 
 https://aws.amazon.com/es/blogs/training-and-certification/inside-look-at-the-new-ai-and-ml-aws-certifications/
 
+
+https://www.reddit.com/r/databricks/
+
 ### AWS learning
 
 https://explore.skillbuilder.aws/learn/catalog
