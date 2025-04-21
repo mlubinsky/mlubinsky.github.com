@@ -7,6 +7,10 @@ brew install kate
 https://akselmo.dev/posts/how-i-use-kate-editor/  
 https://apps.kde.org/kwrite/ cross platform IDE  
 
+Kwrite is basically Kate without any plugins. Both applications are hosted in the same repo and developed at the same time.
+
+
+
 MacOS:  
 You can change TextEdit to handle plain text: Format > Convert to plain text, or Shift + Command + T.
 
