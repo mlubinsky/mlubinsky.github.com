@@ -106,7 +106,7 @@ def parse_arguments():
 def send_mail(list_of_attachments, title, body, html_body=None):
 #-----------------------------------
     print(" send_mail() start")
-    RECIPIENTS_DEVELOPER_MODE = 'mlubinsky@hotmail.com'
+    RECIPIENTS_DEVELOPER_MODE = 'xyz@gmail.com'
 
     print('list_of_attachments=')
     print(list_of_attachments)
