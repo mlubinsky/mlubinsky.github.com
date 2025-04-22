@@ -239,6 +239,68 @@ https://ruddra.com/fix-python-after-brew-upgrade/
 <https://gist.github.com/chris-zen/9e61db6924bd37fbe414f648614ca4c5>
 
 
+### Screenshots
+
+####  macOS Built-in Screenshot Tweak
+
+By default, screenshots are saved to your Desktop as Screenshot YYYY-MM-DD at HH.MM.SS.png.
+```
+Command + Shift + 3 (full screen)
+Command + Shift + 4 (selection)
+Command + Shift + 5 (menu)
+```
+#### One-button screenshot with auto-naming and saving to file 
+here are some excellent utilities that can do exactly that (or be configured to):
+
+✅ 1. Shottr
+Best overall for speed, simplicity, and customization.
+
+One-click screenshot: You can assign a global shortcut or even trigger with one click from the menu bar.
+
+Auto-save with auto-incremented names: Shottr automatically saves files with names like Shot 1.png, Shot 2.png, etc.
+
+Lightweight and fast (native Apple Silicon support).
+
+Free for personal use.
+
+Website: https://shottr.cc
+
+✅ 2. Snappy
+Great if you want speed + some cloud sync features.
+
+Press one button to capture screen.
+
+Automatically saves without asking for a filename.
+
+Can be customized for folder and naming format.
+
+Note: Not as actively developed now, but still works well for most users.
+
+Website: https://snappy-app.com
+
+✅ 3. CleanShot X (Paid, but powerful)
+If you want premium features, this is best-in-class.
+
+One-click screenshots possible (custom shortcut or menu bar).
+
+Auto-saving with smart names (you can configure it to increment numbers).
+
+Tons of extras: annotations, cloud uploads, video capture.
+
+Website: https://cleanshot.com
+
+
+
+By default, screenshots are saved to your Desktop as Screenshot YYYY-MM-DD at HH.MM.SS.png.
+
+If you want to change this to use incrementing numbers, you'd need to write an AppleScript or use a 3rd party app like the ones above.
+
+🏆 Recommendation
+If you're after the quickest, one-button screenshot with auto-saving, go with Shottr. It’s lightweight, free, and works like a charm.
+
+Would you like help setting one of these up with a custom shortcut or a launcher button?
+
+
 ### brew  
 
 
