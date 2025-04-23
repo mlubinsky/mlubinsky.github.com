@@ -6,6 +6,78 @@ https://neon.tech/careers
 
 How to make Resume: https://habr.com/ru/articles/868344/
 
+
+Companies that are HIRING for 100% REMOTE
+
+Aurora-solar - https://lnkd.in/g6Fbm3DS
+Renaissanc - https://lnkd.in/gesiM_Dw
+Rec Room - https://lnkd.in/gErDuTNa
+VGS-https - ://lnkd.in/g7Ajb77F
+Patreon - https://lnkd.in/gzQptMcQ
+Beekeeper - https://lnkd.in/gxd7rs7Q
+GitHub - https://lnkd.in/gSY5d6Eu
+Upwork - https://lnkd.in/gt4HYmd6
+TestGorilla - https://lnkd.in/gC9mdCtB
+airspace-link - https://lnkd.in/gVfvwi5f
+Pearson - https://pearson.jobs/jobs/
+Confluent - https://lnkd.in/dNSTmUeH
+Cengage Group -https://lnkd.in/gGkT6jRZ
+Quest Software - https://lnkd.in/dkHSNGmM
+Kforce - https://lnkd.in/gYKxQXT3
+Upstart - https://lnkd.in/dGR4DJ52
+hims & hers - https://lnkd.in/gr_SdVdE
+UserGems - https://lnkd.in/gXi3mNf6
+blackbaud - https://lnkd.in/gb-bCTtJ
+Abnormal Security - https://lnkd.in/gn5M4VDF
+Cash App - https://lnkd.in/gdp8yUm8
+LogicGate - https://lnkd.in/gjgX27Bc
+Faire - https://lnkd.in/gYRNr9VM
+DocuSign - https://lnkd.in/ggfUncZf
+DealHub.io - https://lnkd.in/gyNED4yp
+Census - https://lnkd.in/gAq7PGzc
+Intrado - https://lnkd.in/gH3wuNWZ
+Cloudflare - https://lnkd.in/g9JPXp2F
+Funded. club - https://lnkd.in/gpH4FazA
+Workiva - https://lnkd.in/g-FUYYdR
+MissionWired - https://lnkd.in/gMA6AVdG
+Workera - https://lnkd.in/g2YzZu-H
+Jenius Bank - https://lnkd.in/gxGqHGkH
+Goinstacare - https://lnkd.in/d6ZN5FVD
+Uplers - https://www.uplers.com
+Quantum - https://lnkd.in/d8jFCeuU
+Canonical - https://lnkd.in/d9mf5Rr3
+Kemecon - http://kemecon.com
+DigitalOcean - https://lnkd.in/dYgDZ-WF
+Gitlab - https://lnkd.in/d2eGyKRv
+Atlassian - https://Inkd.in/dp-SFzfT
+AngelOne - https://lnkd.in/dk3NwDn6
+Help Scout - https://lnkd.in/gW9akVhd
+Appcues - https://lnkd.in/dp2Jiupp
+Arkency - https://lnkd.in/dBB_wZaR
+Automattic - https://lnkd.in/ddSBdusv
+Awesomemotive - https://lnkd.in/diZZjb4J
+Buffer - https://lnkd.in/d7ihgxkA
+apartment-list - https://lnkd.in/ghw3h5dt
+Constructor - https://lnkd.in/daBzMdxM
+Fleetio - https://lnkd.in/gUQNDVNb
+Agency Analytics - https://lnkd.in/gD24k2ns
+Contra - https://contra.com/careers
+Doist - https://doist.com/careers/
+Taskrabbit - https://lnkd.in/gjsHn3uP
+DuckDuckGo - https://lnkd.in/d_Kv9dM6
+aquia-inc - https://lnkd.in/gTbs8YrZ
+Bold - https://lnkd.in/dZQ8dQnq
+Akamai Technologies - https://lnkd.in/dpTN5nPT
+iVisa - https://ivisa.breezy.hr/
+Affordmate - http://www.affordmate.com
+Xapobank - http://www.xapobank.com
+Symetra - http://www.symetra.com
+pagerduty - https://lnkd.in/gerC6Frs
+Docker, Inc - https://lnkd.in/gfX5-pQG
+Citizens Bank - https://lnkd.in/g4s3qnaS
+
+
+
 Как построить карьеру в области искусственного интеллекта. Советы от Эндрю Ына
 
 https://habr.com/ru/companies/sravni/articles/865646/
