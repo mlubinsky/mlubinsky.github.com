@@ -45,7 +45,7 @@ https://habr.com/ru/articles/808511/ Дерево отрезков
 
 ### Probabilistic data structures: Bloom filter  Hyperloglog
 
- Bloom filter: _No means No_ 
+ Bloom filter: _No means No_   
  (фильтр может ошибочно сообщить, что элемент присутствует)
  https://www.thecoder.cafe/p/bloom-filters
 ```
