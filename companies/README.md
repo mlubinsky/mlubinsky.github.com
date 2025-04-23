@@ -76,6 +76,89 @@ pagerduty - https://lnkd.in/gerC6Frs
 Docker, Inc - https://lnkd.in/gfX5-pQG
 Citizens Bank - https://lnkd.in/g4s3qnaS
 
+ 16 websites that pay in USD for remote work:
+
+1. We Work Remotely 
+- Largest remote work community with 4.5M+ visitors 
+- Offers a wide range of remote job opportunities 
+- Link: https://weworkremotely.com 
+
+2. Hubstaff Talent
+- Free resource for companies looking for remote talent
+- Connects businesses with freelancers and agencies worldwide
+- Link: https://hubstafftalent.net
+
+3. Wellfound 
+- Connects job seekers with startups 
+- 130K+ tech jobs from 27K companies 
+- Link: https://wellfound.com/ 
+
+4. Remotive 
+- Curates active, fully remote tech jobs 
+- Trusted by top global tech companies 
+- Link: https://remotive.io/ 
+
+5. WorkWave 
+- Remote job listings for various industries 
+- Known for flexible work opportunities 
+- Link: https://www.workwave.com/ 
+
+6. AI Jobs 
+- Focuses on AI-related remote job listings 
+- Features top 1% of AI companies 
+- Link: https://theaijobboard.com 
+
+7. Remote Woman 
+- Remote job board tailored for women 
+- Promotes flexibility and career growth 
+- Link: https://remotewoman.com/ 
+
+8. Toptal 
+- Exclusive network for top freelancers 
+- Covers software development, design, finance & more 
+- Link: https://www.toptal.com/ 
+
+9. FlexJobs 
+- Find remote jobs globally or near you 
+- Offers career coaching and resume help 
+- Link: https://www.flexjobs.com/ 
+
+10. JS Remotely 
+- Specializes in JavaScript-related remote jobs 
+- Includes React, Vue, Node.js, and Angular roles 
+- Link: https://jsremotely.com/ 
+
+11. RemoteOK 
+- Aggregates remote jobs from across industries 
+- Allows filtering jobs by category and salary 
+- Link: https://remoteok.com/ 
+
+12. Working Nomads 
+- Remote jobs tailored for digital nomads 
+- Handpicks opportunities across industries 
+- Link: https://lnkd.in/gY74eP7k
+
+13. JustRemote 
+- Jobs that fit your lifestyle 
+- Offers fully and partially remote options 
+- Link: https://justremote.co/ 
+
+14. Remote.co 
+- Hand-curated list of remote jobs 
+- Features 146+ remote-first companies 
+- Link: https://remote.co/ 
+
+15. Remote Circle 
+- Helps find remote jobs in your timezone 
+- Covers a variety of industries and roles 
+- Link: https://remotecircle.com/ 
+
+16. Job Hunt
+
+- Al-powered Job Application Assistant to get hired faster.
+- You can also build an Al Resume with Job Hunt resume builder.
+
+https://www.job-hunt.org/
 
 
 Как построить карьеру в области искусственного интеллекта. Советы от Эндрю Ына
