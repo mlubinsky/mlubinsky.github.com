@@ -47,6 +47,12 @@ https://docs.databricks.com/en/error-messages/index.html
 
 ### Databricks community
 
+https://community.cloud.databricks.com/login.html. - playground
+
+https://docs.databricks.com/data/databricks-datasets.html
+
+https://www.reddit.com/r/databricks/comments/1k5v18v/about_the_databricks_certified_data_engineer/
+
 https://community.databricks.com/
 
 https://community.databricks.com/t5/events/databricks-learning-festival-virtual-10-october-31-october/ev-p/90710
@@ -149,6 +155,8 @@ https://lnkd.in/g_8FCpuA
 ### Databricks  Certifications
 
 https://www.linkedin.com/in/abhisek-sahu-84a404b1/
+
+https://www.reddit.com/r/databricks/comments/1k5v18v/about_the_databricks_certified_data_engineer/
 
 ```
 Databricks 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐞𝐝 𝐃𝐚𝐭𝐚 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐀𝐬𝐬𝐨𝐜𝐢𝐚𝐭𝐞 𝐄𝐱𝐚𝐦 :
