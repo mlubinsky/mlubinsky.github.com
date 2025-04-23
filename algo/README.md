@@ -45,7 +45,9 @@ https://habr.com/ru/articles/808511/ Дерево отрезков
 
 ### Probabilistic data structures: Bloom filter  Hyperloglog
 
- Bloom filter: No means No (фильтр может ошибочно сообщить, что элемент присутствует)
+ Bloom filter: _No means No_ 
+ (фильтр может ошибочно сообщить, что элемент присутствует)
+ https://www.thecoder.cafe/p/bloom-filters
 ```
 Добавление элемента: при добавлении элемента Bloom-фильтр вычисляет несколько хеш-функций, каждая из которых возвращает позицию в битовом массиве.
 Эти позиции устанавливаются в значение «1».
