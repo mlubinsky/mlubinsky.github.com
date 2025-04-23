@@ -165,6 +165,24 @@ https://www.udemy.com/course/databricks-certified-data-engineer-associate/?coupo
 https://www.udemy.com/course/practice-exams-databricks-data-engineer-professional-k
 
 https://www.udemy.com/user/derar-alhussein/?srsltid=AfmBOorwr12XnULhT6kExhXoaby7qaH1pQZcqXrfeovLkS0bLrPyAqRh
+
+
+
+Topic-Level Scoring:
+
+Databricks Lakehouse Platform: 100%
+ELT with Spark SQL and Python: 92% 
+Incremental Data Processing: 83% Production Pipelines: 100% 
+Data Governance: 100%
+
+Preparation Strategy:( Roughly 2hrs a week for 2 weeks is enough)
+
+Databricks Data Engineering course on Databricks Academy
+
+Udemy Course: Databricks Certified Data Engineer Associate - Preparation by Derar Alhussein
+
+Practice Exams: Official practice exams by Databricks Databricks Certified Data Engineer Associate Practice Exams by Derar Alhussein (Udemy) 
+Databricks Certified Data Engineer Associate Practice Exams by Akhil R (Udemy)
 ```
 Databricks 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐞𝐝 𝐃𝐚𝐭𝐚 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐀𝐬𝐬𝐨𝐜𝐢𝐚𝐭𝐞 𝐄𝐱𝐚𝐦 :
 
