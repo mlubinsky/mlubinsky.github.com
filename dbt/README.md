@@ -154,6 +154,8 @@ https://lnkd.in/g_8FCpuA
 
 ### Databricks  Certifications
 
+https://www.youtube.com/watch?v=njE89SwtPYI
+
 https://www.linkedin.com/in/abhisek-sahu-84a404b1/
 
 https://www.reddit.com/r/databricks/comments/1k5v18v/about_the_databricks_certified_data_engineer/
