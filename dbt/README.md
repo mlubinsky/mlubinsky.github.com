@@ -166,7 +166,9 @@ https://www.udemy.com/course/practice-exams-databricks-data-engineer-professiona
 
 https://www.udemy.com/user/derar-alhussein/?srsltid=AfmBOorwr12XnULhT6kExhXoaby7qaH1pQZcqXrfeovLkS0bLrPyAqRh
 
+https://medium.com/@silvio.saglimbeni/delta-lake-all-you-need-to-know-1affcb257eff
 
+https://www.reddit.com/r/databricks/comments/1e5kgak/preparing_for_databricks_certified_data_engineer/
 
 Topic-Level Scoring:
 
@@ -183,7 +185,16 @@ Udemy Course: Databricks Certified Data Engineer Associate - Preparation by Dera
 
 Practice Exams: Official practice exams by Databricks Databricks Certified Data Engineer Associate Practice Exams by Derar Alhussein (Udemy) 
 Databricks Certified Data Engineer Associate Practice Exams by Akhil R (Udemy)
+
+
+I did Ramesh Renasamy trainings on Coursera (one for the associate level and one for the professional),
+then I checked exam questions on youtube. They were very relevant and helped me a lot. Check this channel: sthithapragna
 ```
+
+https://youtu.be/nFumDz3xrB4
+
+https://youtu.be/iXVIPQEGZ9Y
+
 Databricks 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐞𝐝 𝐃𝐚𝐭𝐚 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐀𝐬𝐬𝐨𝐜𝐢𝐚𝐭𝐞 𝐄𝐱𝐚𝐦 :
 
 
