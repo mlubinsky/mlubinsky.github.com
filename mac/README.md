@@ -290,17 +290,6 @@ Tons of extras: annotations, cloud uploads, video capture.
 Website: https://cleanshot.com
 
 
-
-By default, screenshots are saved to your Desktop as Screenshot YYYY-MM-DD at HH.MM.SS.png.
-
-If you want to change this to use incrementing numbers, you'd need to write an AppleScript or use a 3rd party app like the ones above.
-
-🏆 Recommendation
-If you're after the quickest, one-button screenshot with auto-saving, go with Shottr. It’s lightweight, free, and works like a charm.
-
-Would you like help setting one of these up with a custom shortcut or a launcher button?
-
-
 ### brew  
 
 
