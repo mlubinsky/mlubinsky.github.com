@@ -158,6 +158,13 @@ https://www.linkedin.com/in/abhisek-sahu-84a404b1/
 
 https://www.reddit.com/r/databricks/comments/1k5v18v/about_the_databricks_certified_data_engineer/
 
+https://www.udemy.com/course/practice-exams-databricks-certified-data-engineer-associate
+
+https://www.udemy.com/course/databricks-certified-data-engineer-associate/?couponCode=ST8MT220425G3
+
+https://www.udemy.com/course/practice-exams-databricks-data-engineer-professional-k
+
+https://www.udemy.com/user/derar-alhussein/?srsltid=AfmBOorwr12XnULhT6kExhXoaby7qaH1pQZcqXrfeovLkS0bLrPyAqRh
 ```
 Databricks 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐞𝐝 𝐃𝐚𝐭𝐚 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐀𝐬𝐬𝐨𝐜𝐢𝐚𝐭𝐞 𝐄𝐱𝐚𝐦 :
 
