@@ -860,6 +860,8 @@ https://www.infoworld.com/article/3479001/why-apache-iceberg-is-on-fire-right-no
 
 ### DBT
 
+https://awstip.com/day-3-understanding-dbt-core-concepts-models-seeds-snapshots-and-tests-5e4d0c67922f
+
 https://blog.det.life/no-data-engineers-dont-need-dbt-30573eafa15e
 
 https://blog.det.life/no-data-engineers-dont-need-dbt-30573eafa15e
