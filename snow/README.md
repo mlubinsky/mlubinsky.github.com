@@ -1,3 +1,5 @@
+https://learn.snowflake.com/en/courses/OD-ESS-DNGW/  Data Engineering Workshop (Badge 5)
+
 I bought this:
 https://www.udemy.com/cart/success/1027511410/
 
