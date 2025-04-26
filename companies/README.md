@@ -1,3 +1,11 @@
+https://careers.arm.com/job/san-jose/staff-performance-engineer/33099/79329047664
+```
+Benchmarking workloads on various server platforms, collecting and analyzing telemetry data
+Developing and enhancing innovative tools for performance analysis/performance regressions
+Build on you existing knowledge of computer architecture and micro-architecture, and leveraging it to root cause performance issues
+Familiarity with industry standard benchmarks and cloud native applications
+```
+
 https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
 https://dataengjobs.com/
