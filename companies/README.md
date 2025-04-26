@@ -5,6 +5,13 @@ Developing and enhancing innovative tools for performance analysis/performance r
 Build on you existing knowledge of computer architecture and micro-architecture, and leveraging it to root cause performance issues
 Familiarity with industry standard benchmarks and cloud native applications
 ```
+https://dataengjobs.com/job/1720660-senior-data-engineer-mainstay
+
+https://dataengjobs.com/job/1719526-senior-data-engineer-handshake
+
+https://dataengjobs.com/job/1719522-senior-data-engineer-samsara
+
+
 
 https://dataengjobs.com/job/1434354-lead-data-engineer-machine-learning
 
