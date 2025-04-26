@@ -1,3 +1,10 @@
+NVidia
+Adobe
+Facebook
+Google
+Netflix
+ARM
+
 https://careers.arm.com/job/san-jose/staff-performance-engineer/33099/79329047664
 ```
 Benchmarking workloads on various server platforms, collecting and analyzing telemetry data
