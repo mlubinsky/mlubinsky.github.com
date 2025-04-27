@@ -1,9 +1,11 @@
-NVidia
-Adobe
-Facebook
-Google
-Netflix
-ARM
+- NVidia
+- Adobe
+- Amazon
+- Facebook
+- Google
+- Netflix
+- ARM
+- LinkedIn
 
 https://careers.arm.com/job/san-jose/staff-performance-engineer/33099/79329047664
 ```
