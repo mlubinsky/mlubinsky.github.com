@@ -45,6 +45,8 @@ https://habr.com/ru/companies/cloudera/articles/560246/ Apache Spark 3 performan
 
 https://habr.com/ru/articles/243045/ NetApp
 
+https://habr.com/ru/companies/intel/articles/165903/ NUMA
+
 ### Go performance
 https://habr.com/ru/companies/vk/articles/902820/
 
