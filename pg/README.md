@@ -4,7 +4,7 @@ https://edu.postgrespro.com/postgresql_internals-14_en.pdf    Egor Rogov
 
 https://habr.com/ru/articles/76309/ Распараллеливание длительных операций
 
-https://habr.com/ru/articles/444018/ Как одно изменение конфигурации PostgreSQL улучшило производительность медленных запросов в 50 раз
+https://habr.com/ru/articles/444018/ Как одно изменение конфигурации PostgreSQL улучшило производительность медленных запросов в 50 раз ( random_page_cost и seq_page_cost )
 
 https://www.youtube.com/watch?v=2oUow8SWVaI Postgres Super Power on Practice
 
