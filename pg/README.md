@@ -5,6 +5,8 @@ https://edu.postgrespro.com/postgresql_internals-14_en.pdf    Egor Rogov
 
 https://www.youtube.com/watch?v=2oUow8SWVaI Postgres Super Power on Practice
 
+https://pgmodeler.io
+
 ### Scale Postgres
 https://pgdog.dev/blog/you-can-make-postgres-scale
 
