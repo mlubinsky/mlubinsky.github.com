@@ -94,6 +94,22 @@ https://habr.com/ru/articles/846712/
 
 https://www.crunchydata.com/blog/window-functions-for-data-analysis-with-postgres
 
+### find the whole data for the row with some max value in a column per some group identifier. 
+```sql
+SELECT a.id, a.rev, a.contents
+FROM YourTable a
+INNER JOIN (
+    SELECT id, MAX(rev) rev
+    FROM YourTable
+    GROUP BY id
+) b ON a.id = b.id AND a.rev = b.rev
+
+SELECT a.*
+FROM YourTable a
+LEFT OUTER JOIN YourTable b
+    ON a.id = b.id AND a.rev < b.rev
+WHERE b.id IS NULL;
+```
 
 ### SELECT Top N Rows For Each Group
 
