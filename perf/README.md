@@ -496,6 +496,7 @@ Reactor pattern
 Proactor pattern
 There is no thread
 
+https://habr.com/ru/companies/oleg-bunin/articles/571116/
 
 https://habr.com/ru/articles/328170/
 ```python
