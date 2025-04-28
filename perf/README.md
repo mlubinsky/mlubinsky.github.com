@@ -103,22 +103,24 @@ In privileged mode, the CPU is performing operating system kernel-level function
 
 
 
-https://medium.com/netflix-techblog/linux-performance-analysis-in-60-000-milliseconds-accc10403c55
-https://speakerdeck.com/kaushik/tracing-and-profiling-java-and-native-applications-in-production
-https://habrahabr.ru/company/jugru/blog/337928/
-https://habrahabr.ru/post/171475/ How to test performance
-https://habrahabr.ru/company/airbnb/blog/239829/
+https://medium.com/netflix-techblog/linux-performance-analysis-in-60-000-milliseconds-accc10403c55  
+https://speakerdeck.com/kaushik/tracing-and-profiling-java-and-native-applications-in-production  
+https://habrahabr.ru/company/jugru/blog/337928/  
+https://habrahabr.ru/post/171475/ How to test performance  
+https://habrahabr.ru/company/airbnb/blog/239829/  
 
-http://www.brendangregg.com/usemethod.html
-http://www.brendangregg.com/perf.html
-http://www.brendangregg.com/blog/2016-10-21/linux-efficient-profiler.html
-http://www.brendangregg.com/flamegraphs.html
-https://medium.com/netflix-techblog/java-in-flames-e763b3d32166
-http://psy-lob-saw.blogspot.co.za/2017/02/flamegraphs-intro-fire-for-everyone.html
+http://www.brendangregg.com/usemethod.html  
+http://www.brendangregg.com/perf.html   
+http://www.brendangregg.com/blog/2016-10-21/linux-efficient-profiler.html  
+http://www.brendangregg.com/flamegraphs.html  
+https://medium.com/netflix-techblog/java-in-flames-e763b3d32166  
+http://psy-lob-saw.blogspot.co.za/2017/02/flamegraphs-intro-fire-for-everyone.html  
  new option in the JVM: -XX:+PreserveFramePointer, a
 
 Linux: perf, eBPF, SystemTap, and ktap   https://perf.wiki.kernel.org/index.php/Tutorial
+
 Solaris, illumos, FreeBSD: DTrace
+
 Mac OS X: DTrace and Instruments
 
 http://queue.acm.org/detail.cfm?id=2513149   NUMA
@@ -180,41 +182,41 @@ https://habrahabr.ru/company/yandex/blog/250753/
 https://yakking.branchable.com/posts/daemons/
 
 ###  Disk I/O 
-https://medium.com/@ifesdjeen/on-disk-io-part-1-flavours-of-io-8e1ace1de017
-https://medium.com/@ifesdjeen/on-disk-io-part-2-more-flavours-of-io-c945db3edb13 
-http://www.scylladb.com/2017/10/05/io-access-methods-scylla/
+https://medium.com/@ifesdjeen/on-disk-io-part-1-flavours-of-io-8e1ace1de017  
+https://medium.com/@ifesdjeen/on-disk-io-part-2-more-flavours-of-io-c945db3edb13   
+http://www.scylladb.com/2017/10/05/io-access-methods-scylla/  
 
 
 ### GDB  
-http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html
-http://rr-project.org/
+http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html  
+http://rr-project.org/  
 
 ### Python 
 
 https://yakking.branchable.com/posts/fast-python/
 
 ### C++  
-https://habrahabr.ru/company/oleg-bunin/blog/340394/   Profiling C++
-https://habrahabr.ru/post/313686/ Logging in C++
-http://www.baical.net/
-gcc  optimization flags -O1	With -O2	With -O3
-http://agner.org/optimize/optimizing_cpp.pdf?10142017 (PDF)
-https://news.ycombinator.com/item?id=15400396
-https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis
-cppcheck
-http://oclint.org/
-https://www.reddit.com/r/cpp/comments/728xfs/orbit_cc_performance_profiler/
-https://github.com/namhyung/uftrace
-https://www.kdab.com/hotspot-v1-1-0-adds-timeline-recording-features/
+https://habrahabr.ru/company/oleg-bunin/blog/340394/   Profiling C++  
+https://habrahabr.ru/post/313686/ Logging in C++  
+http://www.baical.net/  
+gcc  optimization flags -O1	With -O2	With -O3  
+http://agner.org/optimize/optimizing_cpp.pdf?10142017 (PDF)  
+https://news.ycombinator.com/item?id=15400396  
+https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis  
+cppcheck  
+http://oclint.org/  
+https://www.reddit.com/r/cpp/comments/728xfs/orbit_cc_performance_profiler/  
+https://github.com/namhyung/uftrace  
+https://www.kdab.com/hotspot-v1-1-0-adds-timeline-recording-features/  
 
-http://cs.yale.edu/homes/aspnes/classes/223/notes.html#performanceTuning
-http://agner.org/optimize/optimizing_cpp.pdf?10142017
-https://habrahabr.ru/post/276607/
-https://habrahabr.ru/company/xakep/blog/258961/
-https://habrahabr.ru/company/intel/blog/279669/
-https://habrahabr.ru/company/intel/blog/277407/
+http://cs.yale.edu/homes/aspnes/classes/223/notes.html#performanceTuning  
+http://agner.org/optimize/optimizing_cpp.pdf?10142017  
+https://habrahabr.ru/post/276607/  
+https://habrahabr.ru/company/xakep/blog/258961/  
+https://habrahabr.ru/company/intel/blog/279669/  
+https://habrahabr.ru/company/intel/blog/277407/  
 
-http://apolukhin.github.io/Boost-Cookbook/
+http://apolukhin.github.io/Boost-Cookbook/  
 
 ###  Networking 
 https://yakking.branchable.com/posts/basic-networking/
@@ -258,10 +260,10 @@ Then there’s an HTML parsing algorithm that tells the browser how to parse the
 https://medium.com/@christophelimpalair/developers-what-you-should-know-about-web-performance-550cef1040d8
 https://medium.com/gitconnected/debounce-in-javascript-improve-your-applications-performance-5b01855e086
 
-https://github.com/codesenberg/bombardier
-https://github.com/tsenart/vegeta
-https://github.com/wg/wrk
-https://github.com/giltene/wrk2
+https://github.com/codesenberg/bombardier  
+https://github.com/tsenart/vegeta  
+https://github.com/wg/wrk  
+https://github.com/giltene/wrk2  
 
 Time to complete the 5000000 requests - smaller is better.
 Reqs/sec — bigger is better.
@@ -352,25 +354,25 @@ G1
  Flight Recorder
  http://javapapers.com/java/java-garbage-collection-monitoring-and-analysis/
 
-https://habrahabr.ru/post/270059/
-https://habrahabr.ru/company/jugru/blog/280420/
-https://habrahabr.ru/company/getintent/blog/302910/ Garbage collector
-https://www.youtube.com/user/profyclub/
-https://habrahabr.ru/company/wunderfund/blog/325634/ Google Benchmark Library
-https://habrahabr.ru/post/323010/  REST API for high performance
+https://habrahabr.ru/post/270059/  
+https://habrahabr.ru/company/jugru/blog/280420/  
+https://habrahabr.ru/company/getintent/blog/302910/ Garbage collector  
+https://www.youtube.com/user/profyclub/  
+https://habrahabr.ru/company/wunderfund/blog/325634/ Google Benchmark Library  
+https://habrahabr.ru/post/323010/  REST API for high performance  
 
-https://habrahabr.ru/company/jugru/blog/320620/
-https://habrahabr.ru/company/jugru/blog/338928/
-https://habrahabr.ru/company/jugru/blog/338732/
-https://habrahabr.ru/company/netologyru/blog/337842/
-https://habrahabr.ru/post/336104/
-https://habrahabr.ru/post/185010/
-https://habrahabr.ru/company/jugru/blog/335852/
-https://habrahabr.ru/company/oleg-bunin/blog/335260/
-https://habrahabr.ru/company/mailru/blog/109916/s
-https://habrahabr.ru/company/jugru/blog/280420/
-https://habrahabr.ru/post/326242/
-https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/
+https://habrahabr.ru/company/jugru/blog/320620/  
+https://habrahabr.ru/company/jugru/blog/338928/  
+https://habrahabr.ru/company/jugru/blog/338732/  
+https://habrahabr.ru/company/netologyru/blog/337842/  
+https://habrahabr.ru/post/336104/  
+https://habrahabr.ru/post/185010/  
+https://habrahabr.ru/company/jugru/blog/335852/  
+https://habrahabr.ru/company/oleg-bunin/blog/335260/  
+https://habrahabr.ru/company/mailru/blog/109916/s  
+https://habrahabr.ru/company/jugru/blog/280420/  
+https://habrahabr.ru/post/326242/  
+https://codeahoy.com/2017/08/06/basics-of-java-garbage-collection/  
 
 
 https://www.excelsiorjet.com/blog/articles/portable-profilers-and-where-to-find-them/
@@ -493,5 +495,41 @@ Multiplexed I/O
 Reactor pattern
 Proactor pattern
 There is no thread
-Disclaimer
+
+
+https://habr.com/ru/articles/328170/
+```python
+class Profiler(object): #профилировщик времени
+    def __init__(self,info=''):
+        self.info = info
+    def __enter__(self):
+        self._startTime = time()
+    def __exit__(self, type, value, traceback):
+        print(self.info, "Elapsed time: {:.3f} sec".format(time() - self._startTime))
+
+Поехали… Для чистоты эксперимента введем num_iter = 1000 — число испытаний.
+
+Протестируем профилировщик на чтении формулы-строки из файла:
+
+with Profiler('read (' + str(num_iter) + '): cycle'):
+    for i in range(num_iter):
+        f = open('expr.txt')
+        expr_txt = f.read()
+        f.close()
+```
+        
+
+
+https://habr.com/ru/companies/vk/articles/109916/  Видео с HighLoad++: Joe Damato — Performance tweaks and tools for Linux
+https://habr.com/ru/companies/galssoftware/articles/543314/  Appdynamics, Dynatrace и New Relic 
+https://habr.com/ru/articles/505108/ Linux tuning to improve PostgreSQL performance. Илья Космодемьянский 
+https://habr.com/ru/articles/600123/ Kernel Queue: The Complete Guide On The Most Essential Technology For High-Performance I/O
+https://habr.com/ru/articles/469409/ Профилирование под Linux с помощью Performance Analyzer
+https://habr.com/ru/companies/postgrespro/articles/902088/  Профессия performance инженер: детектив с лицензией на производительность  
+https://habr.com/ru/companies/microsoft/articles/276549/  Query Performance Insight: кто ест ресурсы вашей базы данных? Azure SQL Database
+
+https://habr.com/ru/articles/157997/  О тонкостях повышения performance на С++, или как делать не надо
+ https://habr.com/ru/articles/326242/ Java
+
+ https://habr.com/ru/articles/412767/ кэшей, CDN, настройки правильного разрешения изображений, использования компрессии. А главное тестирования того, что получилось, как оказалось многие думают, что используют кэш, но порядка 70% контента при этом может не кэшироваться из-за неверных настроек.
  
