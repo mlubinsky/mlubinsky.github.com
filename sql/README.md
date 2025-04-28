@@ -92,6 +92,21 @@ https://habr.com/ru/articles/846712/
 
 https://www.crunchydata.com/blog/window-functions-for-data-analysis-with-postgres
 
+
+### SELECT Top N Rows For Each Group
+
+```sql
+WITH CTE AS (
+  SELECT
+    <group_column>,
+    <value_column>,
+    ROW_NUMBER() OVER (PARTITION BY <group_column> ORDER BY <value_column> DESC) AS row_num
+  FROM
+    <Table>
+)
+SELECT * FROM CTE WHERE row_num <= N;
+```
+
 ### GROUP BY vs Window Function OVER (Partition By ..)
 
 https://stackoverflow.com/questions/2404565/what-is-the-difference-between-partition-by-and-group-by
