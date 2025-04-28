@@ -519,18 +519,30 @@ with Profiler('read (' + str(num_iter) + '): cycle'):
         f.close()
 ```
         
+https://habr.com/ru/companies/microsoft/articles/271547/ Анализ ключевых показателей производительности — часть 1
 
+https://habr.com/ru/companies/vk/articles/109916/  Видео с HighLoad++: Joe Damato — Performance tweaks and tools for Linux  
+https://habr.com/ru/companies/galssoftware/articles/543314/  Appdynamics, Dynatrace и New Relic   
+https://habr.com/ru/articles/505108/ Linux tuning to improve PostgreSQL performance. Илья Космодемьянский  
+https://habr.com/ru/articles/600123/ Kernel Queue: The Complete Guide On The Most Essential Technology For High-Performance I/O  
+https://habr.com/ru/articles/469409/ Профилирование под Linux с помощью Performance Analyzer  
+https://habr.com/ru/companies/postgrespro/articles/902088/  Профессия performance инженер: детектив с лицензией на производительность   
+https://habr.com/ru/companies/microsoft/articles/276549/  Query Performance Insight: кто ест ресурсы вашей базы данных? Azure SQL Database  
 
-https://habr.com/ru/companies/vk/articles/109916/  Видео с HighLoad++: Joe Damato — Performance tweaks and tools for Linux
-https://habr.com/ru/companies/galssoftware/articles/543314/  Appdynamics, Dynatrace и New Relic 
-https://habr.com/ru/articles/505108/ Linux tuning to improve PostgreSQL performance. Илья Космодемьянский 
-https://habr.com/ru/articles/600123/ Kernel Queue: The Complete Guide On The Most Essential Technology For High-Performance I/O
-https://habr.com/ru/articles/469409/ Профилирование под Linux с помощью Performance Analyzer
-https://habr.com/ru/companies/postgrespro/articles/902088/  Профессия performance инженер: детектив с лицензией на производительность  
-https://habr.com/ru/companies/microsoft/articles/276549/  Query Performance Insight: кто ест ресурсы вашей базы данных? Azure SQL Database
-
-https://habr.com/ru/articles/157997/  О тонкостях повышения performance на С++, или как делать не надо
- https://habr.com/ru/articles/326242/ Java
+https://habr.com/ru/articles/157997/  О тонкостях повышения performance на С++, или как делать не надо  
+ https://habr.com/ru/articles/326242/ Java  
+ https://habr.com/ru/companies/jugru/articles/320620/  мониторинг производительности JVM под Linux при помощи BPF
+ https://habr.com/ru/companies/jugru/articles/338928/ В поисках перформанса, часть 2: Профилирование Java под Linux
 
  https://habr.com/ru/articles/412767/ кэшей, CDN, настройки правильного разрешения изображений, использования компрессии. А главное тестирования того, что получилось, как оказалось многие думают, что используют кэш, но порядка 70% контента при этом может не кэшироваться из-за неверных настроек.
- 
+
+https://habr.com/ru/companies/microsoft/articles/282740/ Анализ производительности Windows
+ https://habr.com/ru/articles/564020/  Подводные камни сбора метрик в Windows (часть 1)
+
+ https://habr.com/ru/companies/tbank/articles/670768/ Gatling работу с HTTP, JDBC, gRPC и Kafka  
+
+http://www.brendangregg.com/sysperfbook.html
+
+ https://habr.com/ru/articles/328362/ memory barriers, atomic operations
+
+ https://www.drdobbs.com/parallel/volatile-vs-volatile/212701484  volatile vs. volatile
