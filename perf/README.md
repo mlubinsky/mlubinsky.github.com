@@ -1,4 +1,5 @@
 https://habr.com/ru/companies/jugru/articles/486712/ 
+https://habr.com/ru/companies/jugru/articles/527186/ Поговорим про перформанс-анализ
 CPU-bound бенчмарки и   memory-bound бенчмарки
 
 https://habr.com/ru/articles/43905/
@@ -36,13 +37,25 @@ https://habr.com/ru/companies/ydb/articles/763938/  TPC-C  измеряющая 
 
 https://habr.com/ru/companies/otus/articles/523148/  FlameGraph
 
+https://habr.com/ru/companies/postgrespro/articles/720272/ Postgres 
+
+https://habr.com/ru/articles/151560/ mySQL
+
 https://habr.com/ru/companies/cloudera/articles/560246/ Apache Spark 3 performance
+
+https://habr.com/ru/articles/243045/ NetApp
+
+### Go performance
+https://habr.com/ru/companies/vk/articles/902820/
 
 https://habr.com/ru/articles/596755/ Если объединить структурный поиск по коду через gogrep и фильтрацию результатов через perf-heatmap, то мы получим profile-guided поиск по коду.
 
 https://github.com/quasilyte/perf-heatmap
 
 https://github.com/google/pprof
+
+https://habr.com/ru/companies/kaspersky/articles/591725/
+
 
 ### Performance 
  
@@ -230,6 +243,10 @@ https://yakking.branchable.com/posts/daemons/
 https://medium.com/@ifesdjeen/on-disk-io-part-1-flavours-of-io-8e1ace1de017  
 https://medium.com/@ifesdjeen/on-disk-io-part-2-more-flavours-of-io-c945db3edb13   
 http://www.scylladb.com/2017/10/05/io-access-methods-scylla/  
+
+https://habr.com/ru/articles/154235/ Как правильно мерять производительность диска
+
+https://habr.com/ru/articles/168711/
 
 
 ### GDB  
