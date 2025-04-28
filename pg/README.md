@@ -14,6 +14,22 @@ https://news.ycombinator.com/item?id=43364668
 
 https://habr.com/ru/companies/otus/articles/898114/  FILTER IFNULL A/B test
 
+
+### FETCH FIRST 3 ROWS WITH TIES
+```
+ SELECT * 
+           FROM  t_test 
+           ORDER BY id 
+           FETCH FIRST 3 ROWS WITH TIES;
+
+select *  from employees
+order by salary desc
+fetch first 1 rows with ties;
+
+it is the same as: 
+select *  from employees
+where salary = (select max(salary) from employees);
+```
 ### GREATEST n per group
 https://stackoverflow.com/a/123481/684229
 
