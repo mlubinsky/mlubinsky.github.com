@@ -1,8 +1,52 @@
+https://habr.com/ru/companies/jugru/articles/486712/ 
+CPU-bound бенчмарки и   memory-bound бенчмарки
+
+https://habr.com/ru/articles/43905/
+```
+Режим минимизации времени выполнения одного запроса (Latency mode).  
+Предполагает создание и выполнение одного запроса для вывода модели на выбранном устройстве. Следующий запрос на вывод создается по завершении предыдущего.  
+Количество сгенерированных запросов определяется числом итераций цикла тестирования модели.
  
+Режим минимизации времени выполнения набора запросов (Throughput mode). 
+
+Bandwidth — это ширина канала. Сколько можно прокачать данных за секунду, сколько можно пустить инструкций чтобы полностью загрузить ALU и так далее.
+Latency — это длина канала, то есть через какое время к тебе придут данные, которые ты попросил.
+ Через сколько тактов к тебе придет запрошенный бит из памяти, через сколько тактов будет готов результат инструкции, когда команда пройдет до конца пайплайна и так далее.
+И они, разумеется, друг на друга влияют. Как только нужен результат, а делать больше нечего — весь bandwidth простаивает из-за latency.
+Запросили память, которой нет в кеше — сидим, ждем память. Захотели выполнить инструкцию, которой необходим результат предыдущей — ждем ее выполнения. Это создает «пузыри» в канале и соответственно уменьшает загрузку.
+
+Херб в презентации использует пример нефтепровода, он вполне наглядный.
+Можно прокачивать дикое количество баррелей в минуту, но каждый баррель идет до места назначения несколько дней.
+В чистом виде bandwidth и latency.
+
+Практически важный момент в том, что bandwidth всегда легко покупать.
+Поставить два процессора, брать из памяти за раз в два раза больше данных, поставить два компьютера в конце концов.
+ Latency же гораздо дороже — две женщины не родят ребенка за 4.5 месяцев, и продвигается оно только прогрессом — увеличивать частоты, уменьшать размеры элементов, менять технологию и так далее.
+```
+
+https://habr.com/ru/articles/497290/ Повышение производительности с использованием uop-кэша на Sandy Bridge+
+
+https://habr.com/ru/articles/107621/ Поиск и решение проблем масштабируемости на примере многоядерных процессоров Intel Core 2 (часть 2)
+
+https://habr.com/ru/companies/intel/articles/171079/ 
+
+https://habr.com/ru/companies/tbank/articles/514314/ Load Testing:  LoadRunner, JMEter, Gatling
+
+https://habr.com/ru/companies/ydb/articles/763938/  TPC-C  измеряющая количество обработанных заказов в минуту. Используется несколько транзакций для имитации бизнес-активности обработки заказа, и каждая транзакция должна укладываться в заданное время ответа. Метрика производительности выражается в транзакциях-в-минуту-C (tpmC)».
+
+https://habr.com/ru/companies/otus/articles/523148/  FlameGraph
+
+https://habr.com/ru/companies/cloudera/articles/560246/ Apache Spark 3 performance
+
+https://habr.com/ru/articles/596755/ Если объединить структурный поиск по коду через gogrep и фильтрацию результатов через perf-heatmap, то мы получим profile-guided поиск по коду.
+
+https://github.com/quasilyte/perf-heatmap
+
+https://github.com/google/pprof
 
 ### Performance 
  
-https://www.infoq.com/articles/lessons-learned-performance-testing/
+https://www.infoq.com/articles/lessons-learned-performance-testing/ О правильном использовании памяти в NUMA-системах под управлением ОС Linux
 
 https://habrahabr.ru/company/mailru/blog/254843/ Проектирование высоконагруженных систем
 
@@ -22,6 +66,7 @@ http://dockerlabs.collabnix.com/play-with-docker/jmeter-docker/
 https://softwaretester.info/apache-jmeter-and-docker/
 https://hub.docker.com/r/justb4/jmeter/
 
+https://habr.com/ru/articles/582632/ JDK Flight Recorder
  
 https://www.blazemeter.com/blog/make-use-of-docker-with-jmeter-learn-how/
  
@@ -518,6 +563,11 @@ with Profiler('read (' + str(num_iter) + '): cycle'):
         expr_txt = f.read()
         f.close()
 ```
+
+https://habr.com/ru/companies/selectel/articles/450818/
+There are a lot of tools for debugging kernel and userspace programs in Linux. Most of them have performance impact and cannot easily be run in production environments. 
+A few years ago, eBPF was developed, https://lwn.net/Articles/740157/
+which provides the ability to trace the kernel and userspace with low overhead
         
 https://habr.com/ru/companies/microsoft/articles/271547/ Анализ ключевых показателей производительности — часть 1
 
@@ -530,9 +580,11 @@ https://habr.com/ru/companies/postgrespro/articles/902088/  Профессия p
 https://habr.com/ru/companies/microsoft/articles/276549/  Query Performance Insight: кто ест ресурсы вашей базы данных? Azure SQL Database  
 
 https://habr.com/ru/articles/157997/  О тонкостях повышения performance на С++, или как делать не надо  
+
  https://habr.com/ru/articles/326242/ Java  
- https://habr.com/ru/companies/jugru/articles/320620/  мониторинг производительности JVM под Linux при помощи BPF
- https://habr.com/ru/companies/jugru/articles/338928/ В поисках перформанса, часть 2: Профилирование Java под Linux
+ https://habr.com/ru/companies/jugru/articles/320620/  мониторинг производительности JVM под Linux при помощи BPF  
+ https://habr.com/ru/companies/jugru/articles/338928/ В поисках перформанса, часть 2: Профилирование Java под Linux  
+ https://habr.com/ru/articles/542156/  
 
  https://habr.com/ru/articles/412767/ кэшей, CDN, настройки правильного разрешения изображений, использования компрессии. А главное тестирования того, что получилось, как оказалось многие думают, что используют кэш, но порядка 70% контента при этом может не кэшироваться из-за неверных настроек.
 
