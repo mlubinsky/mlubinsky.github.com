@@ -1,4 +1,8 @@
-https://habr.com/ru/companies/jugru/articles/486712/ 
+https://sites.google.com/site/mlubinsky/performance
+
+https://sites.google.com/site/mikelubinsky/performance
+
+https://habr.com/ru/companies/jugru/articles/486712/    
 https://habr.com/ru/companies/jugru/articles/527186/ Поговорим про перформанс-анализ
 CPU-bound бенчмарки и   memory-bound бенчмарки
 
