@@ -1,3 +1,6 @@
+https://yarchive.net/blog/prostate/  An end to all this prostate trouble?  
+https://news.ycombinator.com/item?id=43801906
+
 https://habr.com/ru/articles/879274/ Приключение серотонина в бесконечном цикле боли. ч.4 
 
 https://habr.com/ru/articles/806745/
