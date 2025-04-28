@@ -105,6 +105,14 @@ WITH CTE AS (
     <Table>
 )
 SELECT * FROM CTE WHERE row_num <= N;
+
+-- Retrieve top 2 salespersons per region
+WITH  CTE  AS (
+  SELECT *, ROW_NUMBER()  OVER (PARTITION BY  Region  ORDER BY  Revenue DESC)  AS  row_num
+  FROM
+    Sales
+)
+SELECT * FROM CTE WHERE row_num <= 2;
 ```
 
 ### GROUP BY vs Window Function OVER (Partition By ..)
