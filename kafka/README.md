@@ -6,6 +6,8 @@ https://newsletter.scalablethread.com/p/how-message-queues-work
 
 https://habr.com/ru/companies/otus/articles/901708/ Практическое руководство по выбору брокера сообщений
 
+https://habr.com/ru/companies/innotech/articles/699598/ Understanding the Differences Between Kafka and RabbitMQ
+
 https://encore.dev/blog/queueing
 
 ### Offset Explorer (formerly Kafka Tool) 
