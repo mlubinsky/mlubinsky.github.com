@@ -7,6 +7,11 @@
 - ARM
 - LinkedIn
 
+https://careers.qualcomm.com/
+Lead CPU Performance Analysis Engineer Santa Clara, California,  
+
+ID: 3069421
+
 https://careers.arm.com/job/san-jose/staff-performance-engineer/33099/79329047664
 ```
 Benchmarking workloads on various server platforms, collecting and analyzing telemetry data
