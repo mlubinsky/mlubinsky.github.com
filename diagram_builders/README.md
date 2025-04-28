@@ -2,6 +2,22 @@ BPMN 2.0 универсальный подход при построении д�
 https://habr.com/ru/articles/843942/
 
 
+https://news.ycombinator.com/item?id=43808803 text to diagram tools
+
+ https://databasediagram.com/app
+
+2. QuickDBD https://app.quickdatabasediagrams.com/#/
+
+3. ERD Lab https://app.erdlab.io/designer/guest (Requires Login to Export)
+
+[1]: https://xosh.org/text-to-diagram/
+
+  https://wiki.postgresql.org/wiki/Design_Tools
+ 
+https://mermaid.js.org/syntax/entityRelationshipDiagram.html
+
+ https://schemaspy.org/samples/chinook/relationships.html
+
 https://www.freecodecamp.org/news/how-to-create-software-architecture-diagrams-using-the-c4-model/
 
 https://habr.com/ru/articles/803671/ Diagram buider
