@@ -80,6 +80,8 @@ https://habr.com/ru/companies/cedrusdata/articles/843882/
 ### DB Diagrams 
 https://dbdiagram.io/home . DB schema diagrams
 
+https://news.ycombinator.com/item?id=43808803
+
 https://habr.com/ru/post/456116/  yEd Graph Editor построить красивую схему базы данных
 
  https://github.com/chartdb/chartdb
