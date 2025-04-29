@@ -109,7 +109,7 @@ https://blog.codingconfessions.com/p/the-pythonic-emptiness
 
 https://realpython.com/sort-python-dictionary/  Sort python Dictionary
 
-### yeld
+### yield
 
 Lets create a function that uses yield to deliver a generator.
 ```
@@ -129,6 +129,40 @@ for x in cursor:
 ### Finite State Machine (FSM)
 
 https://habr.com/ru/articles/871544/
+
+
+### Iterate the tree
+```python
+    # Expects:
+    # Tuple of iterateOn where iterateOn can be None
+    def fancyIt(init, *options):
+        if init != None:
+            yield(init)
+            for f in options:
+                newVal = f(init)
+                yield from fancyIt(newVal, *options)
+
+    class Tree:
+        def __init__(self, val, left = None, right = None):
+            self.val = val
+            self.left = left
+            self.right = right
+
+        def left(self):
+            return self.left
+        def right(self):
+            return self.right
+
+    myTree = Tree(
+        1,
+        Tree(2,
+             Tree(3),
+             Tree(4, None, Tree(5))),
+        Tree(6, None, Tree(7)))
+
+    for node in fancyIt(myTree, Tree.left, Tree.right):
+        print(node.val)
+```
 
 ### Zip
 
