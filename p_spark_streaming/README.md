@@ -1,3 +1,5 @@
+https://www.arroyo.dev/blog/stateful-stream-processing
+
 Book:
 https://www.amazon.com/Scaling-Machine-Learning-Spark-Distributed/dp/1098106822
 
