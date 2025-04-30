@@ -1,5 +1,15 @@
 https://www.arroyo.dev/blog/stateful-stream-processing
 
+https://www.onehouse.ai/blog/apache-spark-structured-streaming-vs-apache-flink-vs-apache-kafka-streams-comparing-stream-processing-engines  Apache Flink™ vs Apache Kafka™ Streams vs Apache Spark™ Structured Streaming
+
+https://medium.com/@byanalytixlabs/flink-vs-kafka-a-quick-guide-to-stream-processing-engines-b09dd0e6b8af Flink vs. Kafka
+
+https://aws.amazon.com/blogs/big-data/a-side-by-side-comparison-of-apache-spark-and-apache-flink-for-common-streaming-use-cases/ A side-by-side comparison of Apache Spark and Apache Flink
+
+https://romanglushach.medium.com/flink-spark-storm-kafka-a-comparative-analysis-of-big-data-stream-processing-frameworks-for-dab3dd42fc16 Flink, Spark, Storm, Kafka: A Comparative Analysis
+
+https://www.linkedin.com/pulse/spark-kafka-stream-flink-unraveling-processing-trinity-ujjwal-gupta/ Spark, Kafka Stream, Flink: Unraveling the Stream Processing Trinity
+
 Book:
 https://www.amazon.com/Scaling-Machine-Learning-Spark-Distributed/dp/1098106822
 
