@@ -8,6 +8,27 @@
 - LinkedIn
 - Synopsys
 
+sunnydata.ai/careers
+
+
+Chetna J.Chetna J.
+ • 3rd+3rd+
+Do what excites you!! ➿ HR @ UsefulBI Corporation | IT'22Do what excites you!! ➿ HR @ UsefulBI Corporation | IT'22
+2d • Edited •  2 days ago • Edited • Visible to anyone on or off LinkedIn
+
+Follow
+Hey people!
+
+We’re looking for Data Engineers (3–12+ years of experience)! 
+
+(If we’re already connected but haven’t had a chance to move the discussion forward, please feel free to ping me again.)
+
+Tech stack we are looking for: Python, SQL, AWS/Azure, PySpark, and Databricks ☁️.
+
+Location is Remote, so let’s connect super soon! 📍
+Immediate joiners preferred! ⚠️ 
+- https://forms.office.com/pages/responsepage.aspx?id=_cz9UlGXGkWzT5076PQb55guzOhL_vBAki9uNIj5rwZURFdUWVJUMTZPWkhHUUpUSU5FUTAxOU0xRS4u&route=shorturl
+
 https://careers.qualcomm.com/
 Lead CPU Performance Analysis Engineer Santa Clara, California,  
 
