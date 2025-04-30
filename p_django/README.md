@@ -72,6 +72,10 @@ https://habr.com/ru/companies/ru_mts/articles/738208/ Plotting mathplotlib
 
 ## Flask
 
+https://www.youtube.com/watch?v=vW-DKBuIQsE  In the guide we use Sql with Postgres, and threading is also involved.
+
+https://github.com/habedi/template-web-app-flask
+
 https://www.patricksoftwareblog.com/my_favorite_python_packages_for_flask.html
 
 https://testdriven.io/guides/flask-deep-dive/
