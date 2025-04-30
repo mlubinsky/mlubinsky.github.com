@@ -1,11 +1,12 @@
 - NVidia
 - Adobe
-- Amazon
-- Facebook
-- Google
+- Amazon ??
+- Facebook ??
+- Google ??
 - Netflix
 - ARM
 - LinkedIn
+- Synopsys
 
 https://careers.qualcomm.com/
 Lead CPU Performance Analysis Engineer Santa Clara, California,  
