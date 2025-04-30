@@ -656,6 +656,34 @@ https://news.ycombinator.com/item?id=30323131  Dashboards for SQL database
 
 https://habr.com/ru/company/tensor/blog/657895/ SQL HowTo: разные варианты работы с EAV
 
+### ROWS BETWEEN vs RANGE BETWEEN (X PRECEDING AND Y FOLLOWING)
+https://habr.com/ru/companies/otus/articles/904934/
+
+Здесь каждый фрейм отбирает ровно 3 строки (текущую, предыдущую и следующую)
+
+```sql
+SELECT date,  expense,
+  ROUND(
+    AVG(expense) 
+    OVER (
+      ORDER BY date
+      ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING
+    )
+  , 2) AS moving_avg_3
+FROM expenses
+ORDER BY date;
+```
+Если же нужен временной интервал, допустим 7 дней, используют RANGE:
+```
+SELECT
+  date,
+  SUM(amount) 
+    OVER (
+      ORDER BY date 
+      RANGE BETWEEN INTERVAL '6 days' PRECEDING AND CURRENT ROW
+    ) AS sum_7d
+FROM transactions;
+```
 
 
 ### Moving Average
