@@ -657,7 +657,7 @@ https://news.ycombinator.com/item?id=30323131  Dashboards for SQL database
 https://habr.com/ru/company/tensor/blog/657895/ SQL HowTo: разные варианты работы с EAV
 
 ### ROWS BETWEEN vs RANGE BETWEEN (X PRECEDING AND Y FOLLOWING)
-https://habr.com/ru/companies/otus/articles/904934/
+https://habr.com/ru/companies/otus/articles/904934/  Скользящие метрики без тормозов: SQL
 
 Здесь каждый фрейм отбирает ровно 3 строки (текущую, предыдущую и следующую)
 
