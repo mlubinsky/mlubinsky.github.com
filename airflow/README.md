@@ -1,3 +1,6 @@
+### Apache NiFi
+https://habr.com/ru/articles/905828/
+
 https://habr.com/ru/articles/866542/
 
 https://www.astronomer.io/ebooks/apache-airflow-best-practices-etl-elt-pipelines/
