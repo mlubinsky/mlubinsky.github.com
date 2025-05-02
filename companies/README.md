@@ -10,6 +10,7 @@
 
 sunnydata.ai/careers
 
+https://news.ycombinator.com/item?id=43858554 Who is hiring?
 
 Chetna J.Chetna J.
  • 3rd+3rd+
