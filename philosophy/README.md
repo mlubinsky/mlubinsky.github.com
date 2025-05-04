@@ -1,3 +1,7 @@
+https://utsavmamoria.substack.com/p/how-to-live-an-intellectually-rich
+
+https://news.ycombinator.com/item?id=43868192
+
 https://www.youtube.com/watch?v=Zz70rcguxwk 68 Bits of Unsolicited Advice
 
 ```
