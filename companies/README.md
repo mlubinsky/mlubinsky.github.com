@@ -6,7 +6,7 @@
 - Netflix
 - ARM
 - LinkedIn
-- Synopsys
+- https://careers.mail.salesforce.com/tpil-blogs 
 
 sunnydata.ai/careers
 
