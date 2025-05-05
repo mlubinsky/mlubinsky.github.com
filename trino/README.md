@@ -1,5 +1,5 @@
 ### Trino https://trino.io/
-Trino is optimized for reading  Optimized Row Columnar (ORC) format,.
+Trino is optimized for reading  Optimized Row Columnar (ORC) format https://orc.apache.org/
 
  it’s fairly easy to implement a custom UDF
  
