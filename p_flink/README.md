@@ -1,5 +1,7 @@
 https://www.waitingforcode.com/apache-flink
 
+https://rmoff.net/2025/04/25/its-time-we-talked-about-time-exploring-watermarks-and-more-in-flink-sql
+
 https://blog.devgenius.io/flink-sql-optimization-6d20fc825a8a
 
 https://www.confluent.io/blog/exploring-apache-flink-1-20-features-improvements-and-more/
