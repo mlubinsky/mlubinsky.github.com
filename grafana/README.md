@@ -217,6 +217,33 @@ To make the Grafana Time Series panel's X-axis date range dynamically adjust bas
 
 Here’s how you can achieve this:
 
+If the X-axis is rendering correctly with DATE (e.g., assuming midnight for each date), you may not need to cast, but casting is recommended for reliability and to avoid edge cases.
+
+How to Cast the DATE Column
+You can modify your SQL query to cast the DATE column to a TIMESTAMP or UNIX timestamp. Here are two approaches:
+
+Option 1: Cast to TIMESTAMP
+Convert the DATE column to a TIMESTAMP by adding a time component (e.g., midnight). This is the most straightforward approach and works well with Grafana’s time series format.
+```sql
+SELECT date::TIMESTAMP AS time, val
+FROM T
+ORDER BY date ASC;
+```
+
+date::TIMESTAMP: Converts the DATE to a TIMESTAMP 
+(e.g., 2023-01-01 becomes 2023-01-01 00:00:00).
+Alias time: Grafana recognizes the time alias as the X-axis time column.
+Why it works: Grafana natively supports TIMESTAMP for time series, 
+and this ensures the X-axis reflects the date range of your data.
+
+Alternative Syntax: If you prefer using CAST, you can write:
+
+```sql
+SELECT CAST(date AS TIMESTAMP) AS time, val
+FROM T
+ORDER BY date ASC;
+```
+
 ### 1\. **Ensure Proper Time Series Format**
 
 Grafana requires time series data to have a column representing time (in a format it can parse, such as a SQL DATETIME or UNIX timestamp) and a numeric value. Your query SELECT date, val FROM T should meet these requirements:
