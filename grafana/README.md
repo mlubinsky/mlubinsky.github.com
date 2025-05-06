@@ -207,6 +207,51 @@ Click "Save".
 🚀 Result: The date range selector will no longer be visible in the UI.
 ```
 
+## Grafana's Time series panel uses the dashboard's time range (from the date/time picker 
+or default dashboard settings) to define the x-axis, 
+not the data returned from the SQL query.   
+So, even if your query returns a small date range, the time series plot will still show the full dashboard time range !!!
+
+### **Use a Transformation to limit the x-axis**
+
+If your SQL query returns only the data you're interested in (e.g., a small time window), and you don't want Grafana to force the axis to a broader time range, then:
+
+1.  Go to the **"Transform"** tab in the panel.
+    
+2.  Add a **"Convert field type"** or **"Organize fields"** transform to ensure `date` is treated as a `time` field.
+    
+3.  Then add a **"Time series" transformation** if needed.
+    
+4.  Grafana should now auto-adjust the x-axis to just the returned data range.
+    
+
+* * *
+
+### ✅ **Alternative Hack: Use a "Stat" or "Table" panel**
+
+If you're only returning a small fixed set of time-based data, and dynamic time navigation isn't necessary:
+
+-   Consider using the **Table** or **Bar chart** panel instead of Time series.
+    
+-   These don’t stretch the x-axis based on the dashboard’s time range.
+    
+
+* * *
+
+### ✅ Summary
+
+To make the x-axis of a Grafana **Time Series** panel match the SQL data returned:
+
+-   Either **enable the time picker** and use `WHERE $__timeFilter(date)` in your SQL, or
+    
+-   **Set a custom relative time** in the panel query options, or
+    
+-   **Use transformations** to ensure Grafana treats your `date` field as a true time field and scales the axis accordingly.
+
+
+
+
+
 ### Grafana + Jira integration
 
 https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/generic-oauth 
