@@ -1,5 +1,7 @@
 Free book: Effective Rust
 
+https://play.rust-lang.org/
+
 https://www.lurklurk.org/effective-rust/title-page.html
 
 https://habr.com/ru/companies/ruvds/articles/884262/ Парсер JSON в 500 строках Rust
