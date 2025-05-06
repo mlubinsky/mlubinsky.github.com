@@ -121,6 +121,8 @@ https://www.c-language.org/
 
 https://www.youtube.com/watch?v=9UIIMBqq1D4   : C tips
 
+https://www.open-std.org/JTC1/SC22/WG14/www/docs/n3519.pdf Understanding Effective Type Aliasing in C
+
 https://github.com/oz123/awesome-c
 
 https://github.com/fragglet/c-algorithms
