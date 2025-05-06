@@ -212,6 +212,217 @@ Click "Save".
 not the data returned from the SQL query.   
 So, even if your query returns a small date range, the time series plot will still show the full dashboard time range !!!
 
+### Grok
+To make the Grafana Time Series panel's X-axis date range dynamically adjust based on the SQL query results (i.e., the date column from your SELECT date, val FROM T query), you need to ensure Grafana recognizes the query output as a proper time series and that the dashboard's time range is configured to adapt to the data. Since you've removed the date range selector from the dashboard, you'll need to rely on Grafana's ability to infer the time range from the query results or use a workaround to set the time range dynamically.
+
+Here’s how you can achieve this:
+
+### 1\. **Ensure Proper Time Series Format**
+
+Grafana requires time series data to have a column representing time (in a format it can parse, such as a SQL DATETIME or UNIX timestamp) and a numeric value. Your query SELECT date, val FROM T should meet these requirements:
+
+-   **Column date**: Ensure this is a SQL DATETIME, TIMESTAMP, or UNIX timestamp (in seconds or milliseconds). If it’s a string or another format, Grafana may not interpret it correctly.
+-   **Column val**: Ensure this is a numeric value (e.g., INTEGER, FLOAT, or DECIMAL).
+
+**Action**:
+
+-   Verify the data type of the date column in your database. For example, in MySQL, you can check with:
+    
+    `DESCRIBE T;`
+    
+-   If date is not a DATETIME or TIMESTAMP, convert it in your query. For example, if date is a string like 2023-01-01, use:
+    
+    `SELECT STR_TO_DATE(date, '%Y-%m-%d') AS time, val FROM T;`
+    
+-   If date is a UNIX timestamp, ensure it’s in a format Grafana understands (e.g., milliseconds). If it’s in seconds, convert it:
+    
+    `SELECT FROM_UNIXTIME(date) AS time, val FROM T;`
+    
+-   Ensure val is numeric. If it’s stored as a string, cast it:
+    
+    `SELECT date AS time, CAST(val AS DECIMAL) AS value FROM T;`
+    
+
+In the Grafana query editor, set the **Format** to **Time Series** (not Table) to ensure Grafana interprets the data correctly.
+
+### 2\. **Dynamically Set Dashboard Time Range Based on Query Results**
+
+Since you’ve removed the date range selector, Grafana’s default behavior is to use a fixed or last-selected time range for the dashboard. To make the X-axis reflect the date range of your SQL query results, you need to dynamically set the dashboard or panel time range based on the minimum and maximum values of the date column in your query.
+
+Unfortunately, Grafana does not natively support automatically setting the dashboard time range to the exact range of query results without the time picker. However, you can use one of the following workarounds:
+
+#### **Option A: Use a Hidden Dashboard Variable to Set Time Range**
+
+You can create a dashboard variable that queries the minimum and maximum dates from your table and use it to set the dashboard’s time range programmatically.
+
+**Steps**:
+
+1.  **Create a Dashboard Variable**:
+    -   Go to **Dashboard Settings** (gear icon) > **Variables** > **Add Variable**.
+    -   Set the following:
+        -   **Name**: time\_range (or similar).
+        -   **Type**: Query.
+        -   **Data Source**: Your SQL data source.
+        -   **Query**:
+
+            
+ `SELECT UNIX_TIMESTAMP(MIN(date)) * 1000 AS __value, UNIX_TIMESTAMP(MAX(date)) * 1000 AS __text FROM T`
+            
+            This query returns the min and max dates as UNIX timestamps in milliseconds (required by Grafana for time ranges).
+        -   **Refresh**: Set to On Dashboard Load to ensure it updates when the dashboard loads.
+        -   **Hide**: Set to Hide so the variable doesn’t appear on the dashboard.
+    -   Save the variable.
+2.  **Set Dashboard Time Range Using the Variable**:
+    -   Grafana doesn’t directly allow variables to set the dashboard time range in the UI, but you can use a URL parameter or a script to apply the time range.
+    -   Modify the dashboard URL to include the time range based on the variable:
+        -   Query the min and max dates in your SQL database to get the values.
+        -   Append to the dashboard URL:
+            
+            
+      `?from=<min_date_in_ms>&to=<max_date_in_ms>`
+            
+            For example, if your min date is 2023-01-01 00:00:00 (UNIX timestamp 1672531200000 in ms) and max date is 2023-12-31 23:59:59 (UNIX timestamp 1704067199000 in ms), use:
+            
+ 
+            
+            `http://your-grafana-url/d/your-dashboard?from=1672531200000&to=1704067199000`
+            
+    -   Alternatively, use a Grafana API or script to set the time range dynamically (see Option C below).
+3.  **Update the Panel Query**:
+    -   Ensure your panel query uses the dashboard time range:
+ 
+        
+        `SELECT date AS time, val FROM T WHERE $__timeFilter(date);`
+        
+        The $\_\_timeFilter macro ensures the query respects the dashboard’s time range, though it’s less critical if your data already spans the desired range.
+
+#### **Option B: Use Panel Time Range Override**
+
+You can override the time range for the specific Time Series panel to match the data range of your query results.
+
+**Steps**:
+
+1.  **Edit the Panel**:
+    -   Open the Time Series panel in the dashboard.
+    -   Go to the **Query** tab.
+2.  **Use a Relative Time Override**:
+    -   In the **Query Options** section, enable **Relative Time** or **Time Shift**.
+    -   This approach is manual and requires you to know the approximate range of your data. For example, set a relative time range like from now-2y to now if your data spans two years.
+    -   This is less dynamic and requires updating if your data range changes.
+3.  **Alternative: Use a Transformation**:
+    -   If you want the panel to visually reflect only the data range, you can use a Grafana transformation to filter data within the min/max dates:
+        -   Go to the **Transform** tab in the panel editor.
+        -   Add a **Filter by name** or **Filter data by query** transformation to ensure only the relevant time range is displayed.
+        -   However, this doesn’t adjust the X-axis range itself, just the data points shown.
+
+#### **Option C: Use Grafana API to Set Time Range**
+
+For a fully automated solution, you can use the Grafana HTTP API to update the dashboard’s time range based on the query results. This requires scripting outside of Grafana.
+
+**Steps**:
+
+1.  **Query Min/Max Dates**:
+    -   Write a script (e.g., in Python) to query your SQL database for the min and max dates:
+        
+        `SELECT MIN(date), MAX(date) FROM T;`
+        
+    -   Convert these to UNIX timestamps in milliseconds.
+2.  **Update Dashboard Time Range**:
+    -   Use the Grafana API to update the dashboard’s time range. Send a request to the Grafana API endpoint for updating dashboard settings, specifying the time field:
+        
+        
+        `curl -X POST \ -H "Authorization: Bearer <your-api-key>" \ -H "Content-Type: application/json" \ -d '{"time":{"from":"2023-01-01T00:00:00.000Z","to":"2023-12-31T23:59:59.999Z"}}' \ http://your-grafana-url/api/dashboards/db/your-dashboard`
+        
+    -   Replace <your-api-key> with a valid Grafana API key and adjust the URL and dashboard ID.
+3.  **Automate**:
+    -   Schedule the script to run periodically (e.g., using a cron job) to keep the time range updated as new data is added.
+
+### 3\. **Verify X-Axis Configuration**
+
+Ensure the Time Series panel’s X-axis is configured to display the time range correctly:
+
+-   Go to the **Panel** tab in the panel editor.
+-   Under **Axis** > **X-Axis**, ensure:
+    -   **Mode** is set to Time (default for time series).
+    -   **Show** is enabled to display the X-axis labels.
+    -   **Label** is optional but can be set to something like Date for clarity.
+-   Under **Standard Options**, ensure the **Unit** for the X-axis is set to a time format (e.g., Date Time).
+
+### 4\. **Debugging Tips**
+
+If the X-axis still shows a fixed date range:
+
+-   **Check Query Results**:
+    -   Use the **Query Inspector** in the Grafana query editor to verify the data returned by your query. Ensure the time column contains valid timestamps and the data spans the expected range.
+-   **Check Dashboard Time Range**:
+    -   Even without the time picker, the dashboard may have a default time range (e.g., last 24 hours). Check the dashboard settings or URL parameters (from and to) to confirm.
+-   **Test with Time Picker**:
+    -   Temporarily re-enable the time picker to test if manually setting the range to the min/max of your data works. This can help diagnose if the issue is with the data or the dashboard configuration.
+-   **Clear Cache**:
+    -   If your SQL data source has caching enabled, clear the cache or set the **Cache Timeout** to a low value in the query options to ensure fresh data is used.
+
+### 5\. **Example Query**
+
+Here’s an example of a complete query that should work with a MySQL/PostgreSQL data source:
+
+`SELECT date AS time, val AS value FROM T WHERE $__timeFilter(date) ORDER BY date ASC;`
+
+-   **Alias time**: Grafana expects a column named time for the X-axis.
+-   **Alias value**: The numeric column should be aliased to a meaningful name.
+-   **$\_\_timeFilter**: This macro ensures compatibility with any dashboard time range, though it’s optional if you’re setting the range dynamically.
+-   **Order by time**: Ensures data points are plotted in chronological order.
+
+### 6\. **Limitations**
+
+-   Grafana Ascending without the time picker, Grafana’s dashboard time range cannot be directly set to the query result range in the UI. You must use variables, URL parameters, or the API as described.
+-   If your data range changes frequently (e.g., new data is appended), you’ll need to refresh the variable or update the API call to reflect the new range.
+-   For non-time-series data (e.g., if date is not a proper timestamp), you may need to preprocess the data or use a different visualization (e.g., Bar Chart with X-axis as a non-time field).[
+    
+    ![](https://imgs.search.brave.com/IY5wVtB6VKwwSg7YDkUyFtQtc2_JxBCDWSDVqrU85qI/rs:fit:64:0:0:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWU3Zjg0ZjA1/YjQ3ZTlkNjQ1ODA1/MjAwODhiNjhjYWU0/OTc4MjM4ZDJlMTBi/ODExYmNiNTkzMjdh/YjM3MGExMS9zdGFj/a292ZXJmbG93LmNv/bS8)
+    
+    ](https://stackoverflow.com/questions/64669533/grafana-show-non-datatime-date-time-field-on-x-axis)
+
+### 7\. **Recommended Solution**
+
+The most practical solution is **Option A (Hidden Dashboard Variable)** combined with a URL parameter to set the time range. This approach is relatively simple, works within Grafana’s UI, and can be refreshed on dashboard load. For example:
+
+-   Variable query:
+        
+    `SELECT UNIX_TIMESTAMP(MIN(date)) * 1000 AS __value, UNIX_TIMESTAMP(MAX(date)) * 1000 AS __text FROM T`
+    
+-   Manually set the dashboard URL:
+    
+    
+    `?from=$time_range&to=$time_range`
+    
+-   Panel query:
+    
+    
+    `SELECT date AS time, val AS value FROM T ORDER BY date ASC;`
+    
+
+If you need a fully automated solution and have scripting capabilities, **Option C (Grafana API)** is more robust but requires external setup.
+
+### Sources
+
+-   Grafana Documentation: Time Series[
+    
+    ![](https://imgs.search.brave.com/eHO3EVegIIx7TwFbGpV7TD-vUQ8uYSE4kBCnKrwHcvw/rs:fit:64:0:0:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTU2NWYwNDU1/ZjJlZWQxY2M4ZGQ2/YWUwMTM3NDg0Y2Ey/ODJmMDZkMDU1NWNj/OTZiOTg3NDQ3Y2Yz/NjRkMmQ2Yi9ncmFm/YW5hLmNvbS8)
+    
+    ](https://grafana.com/docs/grafana/latest/panels-visualizations/visualizations/time-series/)
+-   Grafana Community Forums: Set Time Range To Query Results[
+    
+    ![](https://imgs.search.brave.com/8nJ955Ew6IjsckilHpnmFY11fwqY4Qvck1IudUJ-tlc/rs:fit:64:0:0:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTM4MDVmNDBl/ODU2NjJlMjdkMTE3/OTM5MjUwNmI2YmRj/MDBiNWM0OGFlZTFh/ODMwOGIxOTY0YzM1/OGY0MDE3MC9jb21t/dW5pdHkuZ3JhZmFu/YS5jb20v)
+    
+    ](https://community.grafana.com/t/set-time-range-to-query-results/61062)
+-   Grafana Documentation: MySQL Data Source[
+    
+    ![](https://imgs.search.brave.com/eHO3EVegIIx7TwFbGpV7TD-vUQ8uYSE4kBCnKrwHcvw/rs:fit:64:0:0:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTU2NWYwNDU1/ZjJlZWQxY2M4ZGQ2/YWUwMTM3NDg0Y2Ey/ODJmMDZkMDU1NWNj/OTZiOTg3NDQ3Y2Yz/NjRkMmQ2Yi9ncmFm/YW5hLmNvbS8)
+    
+    ](https://grafana.com/docs/grafana/latest/datasources/mysql/)
+-   Grafana Documentation: Query and Transform Data
+
+
 ### Gemini
 To make the X-axis date range in your Time Series panel adapt to the actual dates returned by your SQL query, you'll need to configure the panel specifically. Here's how you can achieve this:
 
