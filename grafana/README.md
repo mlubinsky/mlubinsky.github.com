@@ -207,11 +207,35 @@ Click "Save".
 🚀 Result: The date range selector will no longer be visible in the UI.
 ```
 
-## Grafana's Time series panel uses the dashboard's time range (from the date/time picker 
-or default dashboard settings) to define the x-axis, 
+## Grafana's Time series panel uses the dashboard's time range 
+(from the date/time picker  or default dashboard settings) to define the x-axis, 
 not the data returned from the SQL query.   
 So, even if your query returns a small date range, the time series plot will still show the full dashboard time range !!!
 
+### Gemini
+To make the X-axis date range in your Time Series panel adapt to the actual dates returned by your SQL query, you'll need to configure the panel specifically. Here's how you can achieve this:
+
+1.  **Edit the Time Series Panel:** Click on the title of your Time Series panel to open the panel editor.
+    
+2.  **Navigate to the "Axes" Tab:** In the panel editor, look for a tab labeled "Axes." Click on it.
+    
+3.  **Configure the Time Axis:** Within the "Axes" tab, you'll find settings related to both the X (Time) and Y axes. Focus on the X-axis settings.
+    
+4.  **Set "Mode" to "Auto":** You should see an option labeled "Mode" for the X-axis. Ensure this is set to **"Auto"**. When set to "Auto," Grafana will attempt to automatically determine the appropriate time range based on the data it receives.
+    
+5.  **Consider "Soft Min" and "Soft Max" (Optional but Recommended):** While "Auto" often works well, you might want to provide Grafana with hints about the expected minimum and maximum time values. Look for fields like "Soft min" and "Soft max" under the X-axis settings. You can set these to `$__timeFrom()` and `$__timeTo()` respectively. Even though you've removed the dashboard selector, these variables can sometimes still be used within the panel context to influence the automatic range calculation based on the data.
+    
+6.  **Save and Apply:** Once you've made these changes, click the "Save" button at the top of the panel editor and then "Apply" to see the changes on your dashboard.
+    
+
+**Explanation:**
+
+By setting the X-axis "Mode" to "Auto," you're telling Grafana to look at the timestamps present in the data returned by your SQL query and automatically adjust the start and end points of the X-axis accordingly.
+
+
+
+
+### ChatGPT
 ### **Use a Transformation to limit the x-axis**
 
 If your SQL query returns only the data you're interested in (e.g., a small time window), and you don't want Grafana to force the axis to a broader time range, then:
