@@ -222,7 +222,7 @@ If the X-axis is rendering correctly with DATE (e.g., assuming midnight for each
 How to Cast the DATE Column
 You can modify your SQL query to cast the DATE column to a TIMESTAMP or UNIX timestamp. Here are two approaches:
 
-Option 1: Cast to TIMESTAMP
+#### Option 1: Cast to TIMESTAMP
 Convert the DATE column to a TIMESTAMP by adding a time component (e.g., midnight). This is the most straightforward approach and works well with Grafana’s time series format.
 ```sql
 SELECT date::TIMESTAMP AS time, val
@@ -243,6 +243,73 @@ SELECT CAST(date AS TIMESTAMP) AS time, val
 FROM T
 ORDER BY date ASC;
 ```
+
+####  Option 2: Convert to UNIX Timestamp
+
+Convert the DATE column to a UNIX timestamp (in seconds or milliseconds), which Grafana also supports.
+
+`SELECT EXTRACT(EPOCH FROM date) * 1000 AS time, val FROM T ORDER BY date ASC;`
+
+-   **EXTRACT(EPOCH FROM date)**: Returns the UNIX timestamp in seconds (e.g., 1672531200 for 2023-01-01 00:00:00).
+-   **\* 1000**: Converts seconds to milliseconds (e.g., 1672531200000), which Grafana prefers for higher precision.
+-   **Alias time**: Ensures Grafana uses this column for the X-axis.
+
+#### Option 3: Add Explicit Time Component
+
+If you want to be explicit about the time (e.g., always midnight), you can use:
+
+
+`SELECT (date || ' 00:00:00')::TIMESTAMP AS time, val FROM T ORDER BY date ASC;`
+
+-   **date || ' 00:00:00'**: Concatenates the date with a 00:00:00 time to form a string like 2023-01-01 00:00:00.
+-   **::TIMESTAMP**: Converts the string to a TIMESTAMP.
+
+### Additional Steps
+
+1.  **Set Query Format**:
+    -   In the Grafana query editor, ensure the **Format** is set to **Time Series** (not Table). This tells Grafana to treat the time column as the X-axis and val as the Y-axis.
+2.  **Verify Data in Query Inspector**:
+    -   Use the **Query Inspector** in Grafana’s query editor to check the data returned by your query. Ensure:
+        -   The time column contains values like 2023-01-01 00:00:00 (for TIMESTAMP) or 1672531200000 (for UNIX timestamp).
+        -   The val column contains numeric values (e.g., INTEGER, FLOAT).
+3.  **Check X-Axis Range**:
+    -   After casting, the X-axis should reflect the range of dates in your query results. If it’s still fixed, ensure the dashboard time range isn’t overriding the panel’s range (see below).
+4.  **Handle Dashboard Time Range**:
+    -   Since you’ve removed the date range selector, Grafana may use a default time range (e.g., last 24 hours). To make the X-axis fully dynamic:
+        -   Use a dashboard variable to query the min/max dates:
+            
+            sql
+            
+            Copy
+            
+            `SELECT EXTRACT(EPOCH FROM MIN(date)) * 1000 AS __value, EXTRACT(EPOCH FROM MAX(date)) * 1000 AS __text FROM T;`
+            
+        -   Manually set the dashboard URL with ?from=$variable&to=$variable (as described in the previous response).
+        -   Alternatively, use the Grafana API to set the time range dynamically.
+
+### Testing Without Casting
+
+If you want to test whether DATE works without casting:
+
+-   Run your original query:
+    
+ 
+    
+    `SELECT date, val FROM T ORDER BY date ASC;`
+    
+-   Check the Query Inspector to see if Grafana interprets date as a valid time (e.g., 2023-01-01 00:00:00).
+-   If the X-axis range is incorrect or fixed, this confirms that casting to TIMESTAMP or UNIX timestamp is necessary.
+
+### Recommendation
+
+For reliability and compatibility with Grafana’s Time Series panel, **cast the DATE column to TIMESTAMP** using:
+
+
+
+`SELECT date::TIMESTAMP AS time, val FROM T ORDER BY date ASC;`
+
+
+
 
 ### 1\. **Ensure Proper Time Series Format**
 
