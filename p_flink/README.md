@@ -18,6 +18,8 @@ https://diptimanrc.medium.com/data-engineering-with-pyflink-table-api-kafka-flin
 
 https://habr.com/ru/companies/wunderfund/articles/843618/
 
+https://habr.com/ru/articles/907664/  Join таблиц в реальном времени на Apache Flink
+
 ### Apache Beam
 
 https://jaehyeon.me/blog/2024-03-28-beam-local-dev-1/
