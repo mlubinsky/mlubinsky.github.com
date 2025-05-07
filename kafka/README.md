@@ -8,7 +8,15 @@ https://habr.com/ru/companies/otus/articles/901708/ Практическое р�
 
 https://habr.com/ru/companies/innotech/articles/699598/ Understanding the Differences Between Kafka and RabbitMQ
 
+
 https://encore.dev/blog/queueing
+
+Lot of good  Data Engimeering  links
+https://rmoff.net/2025/04/22/interesting-links-april-2025/
+
+
+### ktea - a Kafka TUI client
+https://github.com/jonas-grgt/ktea
 
 ### Offset Explorer (formerly Kafka Tool) 
 
@@ -30,6 +38,10 @@ https://habr.com/ru/companies/idaproject/articles/889600/
 обеспечить поддержку протоколов и механизмов аутентификации и шифрования для Apache Kafka
 писать свои собственные плагины для вывода кастомных форматов данных и т.д.
 ```
+
+Big Data Links:
+https://rmoff.net/2025/04/22/interesting-links-april-2025/
+
 ### Kafka
 
 https://habr.com/ru/articles/901200/ Настройка Apache Kafka для высоконагруженных систем
