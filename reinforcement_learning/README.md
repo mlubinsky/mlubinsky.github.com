@@ -1,7 +1,11 @@
 https://habr.com/ru/companies/otus/articles/803041/
 
+https://www.coursera.org/specializations/reinforcement-learning
+
 https://github.com/ivanbelenky/RL   implements algorithms and models from Sutton's book 
 https://github.com/FareedKhan-dev/all-rl-algorithms   Python Code
+
+https://news.ycombinator.com/item?id=43910423 
 
 Reinforcement Learning: An Overview1
 Kevin P. Murphy
