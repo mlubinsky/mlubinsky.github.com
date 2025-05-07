@@ -868,6 +868,8 @@ https://blog.det.life/no-data-engineers-dont-need-dbt-30573eafa15e
 
 https://habr.com/ru/articles/821503/
 
+https://habr.com/ru/articles/907540/
+
 https://habr.com/ru/companies/bft/articles/858896/
 
 https://medium.com/apache-airflow/how-we-orchestrate-2000-dbt-models-in-apache-airflow-90901504032d
