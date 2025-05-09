@@ -12,6 +12,12 @@ https://github.com/PGBootCamp/Minsk_2024/tree/main
 
 https://github.com/PGBootCamp/Russia_2023
 
+
+
+https://www.youtube.com/watch?v=r-vCQwEv3yY&list=PLFueB7duX_sA3JrMCvVNH_tt-67jUYepQ&index=10
+
+SQL HowTo: алгоритмы на графах (Кирилл Боровиков) – PG BootCamp Russia 2023
+
 https://habr.com/ru/articles/444018/ Как одно изменение конфигурации PostgreSQL улучшило производительность медленных запросов в 50 раз ( random_page_cost и seq_page_cost )
 
 https://www.youtube.com/watch?v=2oUow8SWVaI Postgres Super Power on Practice
