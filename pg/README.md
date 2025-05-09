@@ -8,6 +8,8 @@ https://pgbootcamp.ru/ru/
 
 https://github.com/PGBootCamp/Russia_2024/tree/main
 
+https://github.com/PGBootCamp/Minsk_2024/tree/main
+
 https://habr.com/ru/articles/444018/ Как одно изменение конфигурации PostgreSQL улучшило производительность медленных запросов в 50 раз ( random_page_cost и seq_page_cost )
 
 https://www.youtube.com/watch?v=2oUow8SWVaI Postgres Super Power on Practice
