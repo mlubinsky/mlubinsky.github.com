@@ -99,6 +99,9 @@ https://cloud.google.com/sdk/docs/install
  Google Cloud CLI includes the gcloud, gsutil and bq command-line tools
 https://medium.com/@asmitha23052002/uploading-files-to-google-cloud-storage-gcs-using-the-gsutil-command-line-tool-71bca0a2b731
 
+Gsutil is deprecated - you need to move to using gcloud storage instead
+https://cloud.google.com/storage/docs/discover-object-storage-gcloud
+
 ```python
 from google.cloud import storage
 
