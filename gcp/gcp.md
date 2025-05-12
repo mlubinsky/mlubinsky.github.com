@@ -8,6 +8,8 @@ https://cloud.google.com/products
 
 https://www.reddit.com/r/googlecloud/
 
+https://cloud.google.com/architecture/migrate-aws-lambda-to-cloudrun
+
 https://cloud.google.com/run/docs/ Cloud Run is a fully managed application platform that lets you run containers that are invocable via requests or events. Cloud Run is serverless: it abstracts away all infrastructure management, so you can focus on what matters most—building great applications
 
 ### DataFlow
