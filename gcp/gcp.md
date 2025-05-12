@@ -2,9 +2,13 @@ https://www.udemy.com/course/google-cloud-fundamentals-101-a-quick-guide-to-lear
 
 https://www.citadelcloudmanagement.com/wp-content/uploads/2023/05/2a1631cf2dcc736f8330e7d54571ba13Google-Cloud-Platform-in-Action-PDFDrive-.pdf
 
+https://cloud.google.com/docs
+
 https://cloud.google.com/products
 
 https://www.reddit.com/r/googlecloud/
+
+https://cloud.google.com/run/docs/ Cloud Run is a fully managed application platform that lets you run containers that are invocable via requests or events. Cloud Run is serverless: it abstracts away all infrastructure management, so you can focus on what matters most—building great applications
 
 ### DataFlow
  https://cloud.google.com/dataflow/  
