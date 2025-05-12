@@ -1,3 +1,5 @@
+https://www.udemy.com/course/apache-flink-relational-programming-using-table-api-and-sql/learn/lecture/27391388
+
 https://www.waitingforcode.com/apache-flink
 
 https://rmoff.net/2025/04/25/its-time-we-talked-about-time-exploring-watermarks-and-more-in-flink-sql
