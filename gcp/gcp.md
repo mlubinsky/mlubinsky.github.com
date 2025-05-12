@@ -3,6 +3,9 @@ https://www.udemy.com/course/google-cloud-fundamentals-101-a-quick-guide-to-lear
 https://www.citadelcloudmanagement.com/wp-content/uploads/2023/05/2a1631cf2dcc736f8330e7d54571ba13Google-Cloud-Platform-in-Action-PDFDrive-.pdf
 
 https://cloud.google.com/products
+
+https://www.reddit.com/r/googlecloud/
+
 ### DataFlow
  https://cloud.google.com/dataflow/  
 https://habr.com/ru/companies/google/articles/323908/  
