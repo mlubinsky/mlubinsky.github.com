@@ -4,6 +4,24 @@ https://cloud.google.com/sql/docs Cloud SQL is a fully-managed database service 
 
 You can use Cloud SQL with MySQL, PostgreSQL, or SQL Server.
 
+
+
+https://cloud.google.com/pubsub/docs/overview
+```
+Comparing Pub/Sub to other messaging technologies
+Pub/Sub combines the horizontal scalability of Apache Kafka and Pulsar with features found in messaging middleware
+such as Apache ActiveMQ and RabbitMQ. Examples of such features are dead-letter queues and filtering.
+
+Note: Google Cloud Managed Service for Apache Kafka is available. If you're considering a migration from Kafka to Pub/Sub,
+ consult this migration guide.
+Another feature that Pub/Sub adopts from messaging middleware is per-message parallelism, rather than partition-based messaging.
+Pub/Sub "leases" individual messages to subscriber clients, then tracks whether a given message is successfully processed.
+
+By contrast, other horizontally scalable messaging systems use partitions for horizontal scaling.
+This forces subscribers to process messages in each partition in order and limits the number of concurrent clients to the number of partitions.
+Per-message processing maximizes the parallelism of subscriber applications, and helps ensure publisher and subscriber independence.
+```
+
 https://medium.com/tag/gcp
 
 https://cloud.google.com/dataproc
