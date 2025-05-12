@@ -1,5 +1,20 @@
 https://www.udemy.com/course/google-cloud-fundamentals-101-a-quick-guide-to-learn-gcp/
 
+### DataFlow
+ https://cloud.google.com/dataflow/  
+https://habr.com/ru/companies/google/articles/323908/  
+http://research.google.com/pubs/pub43864.html  
+
+
+```
+Dataflow is a fully managed service that uses open source Apache Beam SDK to enable advanced streaming use cases at enterprise scale.
+It offers rich capabilities for state and time, transformations, and I/O connectors.
+ Dataflow scales to 4K workers per job and routinely processes petabytes of data.
+It features autoscaling for optimal resource utilization in both batch and streaming pipelines.
+```
+
+
+### Cloud SQL
 https://cloud.google.com/sql/docs Cloud SQL is a fully-managed database service that helps you set up, maintain, manage, and administer your relational databases on Google Cloud Platform.
 
 You can use Cloud SQL with MySQL, PostgreSQL, or SQL Server.
