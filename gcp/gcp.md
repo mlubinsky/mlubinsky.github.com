@@ -8,6 +8,9 @@ https://cloud.google.com/dataproc#documentation
 
 https://medium.com/@study7vikas/google-cloud-architect-learning-day-42-642a4658221d
 
+### Terraform
+https://developer.hashicorp.com/terraform/install
+
 https://habr.com/ru/companies/timeweb/articles/769010/
 
 
