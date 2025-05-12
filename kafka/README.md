@@ -1,3 +1,5 @@
+https://www.udemy.com/course/kafka-streams/learn/lecture/7636248
+
 https://habr.com/ru/articles/875330/  NATS, RabbitMQ and KAFKA
 
 https://habr.com/ru/articles/899670/ NATS, RabbitMQ and KAFKA
