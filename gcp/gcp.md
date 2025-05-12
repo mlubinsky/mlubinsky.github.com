@@ -1,5 +1,9 @@
 https://www.udemy.com/course/google-cloud-fundamentals-101-a-quick-guide-to-learn-gcp/
 
+https://cloud.google.com/sql/docs Cloud SQL is a fully-managed database service that helps you set up, maintain, manage, and administer your relational databases on Google Cloud Platform.
+
+You can use Cloud SQL with MySQL, PostgreSQL, or SQL Server.
+
 https://medium.com/tag/gcp
 
 https://cloud.google.com/dataproc
@@ -106,3 +110,8 @@ https://habr.com/ru/articles/543122/
 
 https://cloud.google.com/vertex-ai/docs
   Vertex AI, облачную платформу машинного обучения от Google
+
+
+https://habr.com/ru/companies/softline/articles/319704/
+
+  
