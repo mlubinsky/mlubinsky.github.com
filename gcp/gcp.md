@@ -85,3 +85,13 @@ GAE использует Kubernetes или его встроенную верс�
 ```
 Мой опыт с экзаменами GCP: Associate, Architect, Network
 https://habr.com/ru/articles/543122/
+
+
+
+### Построение ML-пайплайна для рекомендательной системы с помощью Google Cloud Platform
+ https://habr.com/ru/companies/neoflex/articles/767220/
+
+ Cloud Composer* (он же Airflow) 
+
+https://cloud.google.com/vertex-ai/docs
+  Vertex AI, облачную платформу машинного обучения от Google
