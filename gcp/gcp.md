@@ -1,5 +1,6 @@
 https://www.udemy.com/course/google-cloud-fundamentals-101-a-quick-guide-to-learn-gcp/
 
+https://cloud.google.com/products
 ### DataFlow
  https://cloud.google.com/dataflow/  
 https://habr.com/ru/companies/google/articles/323908/  
