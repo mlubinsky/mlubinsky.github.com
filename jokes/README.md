@@ -43,7 +43,10 @@ Professional bias /deformation example:
 
 ("We'll know our disinformation program is complete when everything the American public believes is false")
 
+Либерал - это консерватор, ктотый попал в полицейский участок.  
+Консерватор - это либерал у которого бандиты забрали кошелёк.
 
+По течению может плыть даже мертвая рыба.
 
 Я вообще не понимаю, как в биатлоне можно прийти вторым, если у тебя с собой ружьё.
  
