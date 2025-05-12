@@ -49,6 +49,12 @@ Per-message processing maximizes the parallelism of subscriber applications, and
 
 https://medium.com/tag/gcp
 
+### Dataproc
+```
+Dataproc is a fully managed and highly scalable service for running Apache Hadoop, Apache Spark, Apache Flink,
+Presto, and 30+ open source tools and frameworks. Use Dataproc for data lake modernization, 
+ETL, and secure data science, at scale, integrated with Google Cloud, at a fraction of the cost.
+```
 https://cloud.google.com/dataproc
 
 https://cloud.google.com/dataproc#documentation
@@ -71,11 +77,13 @@ https://habr.com/ru/companies/timeweb/articles/769010/
 ### Инфраструктура как услуга (IaaS)
  Google Compute Engine (GCE) — IaaS  
 ```
-Это самый низкий уровень, который может предложить поставщик облачных услуг, и он включает провайдера облачных вычислений, поставляющего «голую» инфраструктуру, 
+Это самый низкий уровень, который может предложить поставщик облачных услуг, и он включает провайдера облачных вычислений, п
+оставляющего «голую» инфраструктуру, 
 включая промежуточное программное обеспечение, сетевые кабели, процессоры, графические процессоры, оперативную память, внешнее хранилище, с
 ерверы и образы базовых операционных систем, например, Debian Linux, CentOS, Windows и т. д.
 C GCE вы можете свободно создавать виртуальные машины, распределять ресурсы процессора и памяти, выбирать тип хранилища,
- например SSD или HDD, а также объем памяти. Это почти так же, как если бы вы создали свой собственный компьютер/рабочую станцию и занимались всеми деталями его работы.
+ например SSD или HDD, а также объем памяти.
+Это почти так же, как если бы вы создали свой собственный компьютер/рабочую станцию и занимались всеми деталями его работы.
 ```
 https://cloud.google.com/compute/docs/machine-types
 
@@ -105,14 +113,11 @@ for bucket in buckets:
 
 ### Программное обеспечение как услуга (SaaS)
 ```
-SaaS представляет собой наиболее распространенные сервисы, предоставляемые поставщиками облачных услуг. Они предназначены для конечных пользователей и доступны главным образом через веб-сайты, например Gmail, Google Docs, Dropbox и т. д. Что касается Google Cloud, есть несколько предложений вне их вычислительного стека, которые являются SaaS. К ним относятся Data Studio, Big Query и т. д.
+SaaS представляет собой наиболее распространенные сервисы, предоставляемые поставщиками облачных услуг.
+Они предназначены для конечных пользователей и доступны главным образом через веб-сайты, например Gmail, Google Docs, Dropbox и т. д.
+ Что касается Google Cloud, есть несколько предложений вне их вычислительного стека, которые являются SaaS. К ним относятся Data Studio, Big Query и т. д.
 ```
-### Dataproc
-```
-Dataproc is a fully managed and highly scalable service for running Apache Hadoop, Apache Spark, Apache Flink,
-Presto, and 30+ open source tools and frameworks. Use Dataproc for data lake modernization, 
-ETL, and secure data science, at scale, integrated with Google Cloud, at a fraction of the cost.
-```
+
 https://console.cloud.google.com/
 
 https://habr.com/ru/hubs/googlecloud/articles/
