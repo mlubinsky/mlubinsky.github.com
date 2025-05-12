@@ -1,3 +1,5 @@
+https://www.udemy.com/course/google-cloud-fundamentals-101-a-quick-guide-to-learn-gcp/
+
 https://medium.com/tag/gcp
 
 https://cloud.google.com/dataproc
