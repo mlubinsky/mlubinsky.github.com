@@ -13,8 +13,11 @@ https://habr.com/ru/companies/innotech/articles/699598/ Understanding the Differ
 
 https://encore.dev/blog/queueing
 
-Lot of good  Data Engimeering  links
+Lot of good  Data Engineering  links
 https://rmoff.net/2025/04/22/interesting-links-april-2025/
+
+
+https://cefboud.com/posts/exploring-kafka-internals/
 
 
 ### ktea - a Kafka TUI client
