@@ -1,4 +1,7 @@
 ## Feature store
+
+https://habr.com/ru/companies/oleg-bunin/articles/908970/
+
 https://habr.com/ru/companies/selectel/articles/702416/
 
 https://habr.com/ru/companies/selectel/articles/848266/
