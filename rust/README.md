@@ -1,8 +1,10 @@
-Free book: Effective Rust
+ https://play.rust-lang.org/
 
-https://play.rust-lang.org/
+Free book: Effective Rust https://www.lurklurk.org/effective-rust/title-page.html
 
-https://www.lurklurk.org/effective-rust/title-page.html
+
+Book: Rust for C++ devs
+https://vnduongthanhtung.gitbooks.io/migrate-from-c-to-rust/content/
 
 https://habr.com/ru/companies/ruvds/articles/884262/ Парсер JSON в 500 строках Rust
 
