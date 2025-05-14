@@ -1,3 +1,7 @@
+https://mitchhorowitz.substack.com/p/101-rules-of-effective-living
+
+https://news.ycombinator.com/item?id=43971791
+
 https://utsavmamoria.substack.com/p/how-to-live-an-intellectually-rich
 
 https://news.ycombinator.com/item?id=43868192
