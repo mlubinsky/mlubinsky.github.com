@@ -24,6 +24,8 @@ https://www.physicslog.com/
 
 https://johncarlosbaez.wordpress.com/
 
+https://theorphys.science.ru.nl/people/katsnelson/katsnelson_WPC2025.pdf
+
 https://topocondmat.org/ Online course on topology in condensed matter
 
 https://www.aps.org/apsnews/2024/11/mathematical-intuition-dirac-quantum-mechanics Dirac equation
