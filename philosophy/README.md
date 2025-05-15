@@ -9,6 +9,8 @@ https://news.ycombinator.com/item?id=43868192
 https://www.youtube.com/watch?v=Zz70rcguxwk 68 Bits of Unsolicited Advice
 
 ```
+Чем меньше знаний, тем крепче убеждения.
+
 The reasonable man adapts himself to the world:
 the unreasonable one persists in trying to adapt the world to himself.
 Therefore all progress depends on the unreasonable man.
