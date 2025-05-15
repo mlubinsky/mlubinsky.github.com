@@ -232,22 +232,28 @@ https://habr.com/ru/companies/X5Tech/articles/837348/
 
 ### Errors
 ```
-Caused by: org.apache.spark.SparkException: Job aborted due to stage failure: Total size of serialized results of 47 tasks (1043.6 MiB) is bigger than spark.driver.maxResultSize (1024.0 MiB) at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2863)
+Caused by: org.apache.spark.SparkException: Job aborted due to stage failure:
+Total size of serialized results of 47 tasks (1043.6 MiB) is bigger than spark.driver.maxResultSize (1024.0 MiB)
+at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2863)
 
 𝐌𝐞𝐚𝐧𝐢𝐧𝐠:
-The error we are encountering is due to the total size of the serialized results of your Spark job exceeding the spark.driver.maxResultSize configuration parameter. This parameter sets the maximum size of results that can be fetched to the driver. When the results exceed this limit, the job is aborted to prevent the driver from running out of memory.
+The error we are encountering is due to the total size of the serialized results of your Spark job exceeding the spark.driver.maxResultSize configuration parameter.
+This parameter sets the maximum size of results that can be fetched to the driver.
+When the results exceed this limit, the job is aborted to prevent the driver from running out of memory.
 
 𝐏𝐨𝐬𝐬𝐢𝐛𝐥𝐞 𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧𝐬:
 1. Increase spark.driver.maxResultSize
 spark.driver.maxResultSize: "2G"
 
 2. 𝐑𝐞𝐝𝐮𝐜𝐞 𝐭𝐡𝐞 𝐒𝐢𝐳𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐑𝐞𝐬𝐮𝐥𝐭𝐬
-If increasing the spark.driver.maxResultSize is not feasible or desirable, you can try to reduce the size of the results being collected. This can be done by:
+If increasing the spark.driver.maxResultSize is not feasible or desirable,
+you can try to reduce the size of the results being collected. This can be done by:
 Filtering the data to include only necessary columns.
 
 
 3. 𝐔𝐬𝐞 𝐟𝐨𝐫𝐞𝐚𝐜𝐡 𝐨𝐫 𝐟𝐨𝐫𝐞𝐚𝐜𝐡𝐏𝐚𝐫𝐭𝐢𝐭𝐢𝐨𝐧 𝐈𝐧𝐬𝐭𝐞𝐚𝐝 𝐨𝐟 𝐜𝐨𝐥𝐥𝐞𝐜𝐭
-3.1 If you need to perform some action on each element of the RDD or DataFrame, consider using foreach or foreachPartition instead of collect. These methods perform the action on the worker nodes, avoiding the need to bring all the data to the driver.
+3.1 If you need to perform some action on each element of the RDD or DataFrame, consider using foreach or foreachPartition instead of collect.
+These methods perform the action on the worker nodes, avoiding the need to bring all the data to the driver.
 3.2 Aggregating the data to reduce its size.
 3.3 Writing the results to an external storage system (like S3, HDFS, or a database) instead of collecting them to the driver.
 
@@ -260,8 +266,10 @@ If you only need a sample of the data, you can use the take method instead of co
 Components of Spark Architecture
 1. Driver Program:
 -----------------
-The driver program is the central piece of a Spark application. It runs the main function and is responsible for creating the Spark context, submitting jobs, and coordinating work across the cluster.
+The driver program is the central piece of a Spark application.
+It runs the main function and is responsible for creating the Spark context, submitting jobs, and coordinating work across the cluster.
 It converts user code into a directed acyclic graph (DAG) of tasks and orchestrates their execution.
+
 2. Cluster Manager:
 ---------------------
 The cluster manager handles the allocation of resources and scheduling of jobs across a Spark cluster.
@@ -281,22 +289,32 @@ Spark Execution Workflow
 When a Spark job is executed, the following steps occur:
 
 1. Job Submission:
+-----------------------
 The driver program initiates the Spark context and submits a Spark job to the cluster manager.
+
 2. DAG Creation:
 -----------------
-The Spark driver converts the user code into a directed acyclic graph (DAG) of operations. This DAG represents the sequence of transformations and actions to be applied to the data.
+The Spark driver converts the user code into a directed acyclic graph (DAG) of operations.
+This DAG represents the sequence of transformations and actions to be applied to the data.
+
 3. Stage Division:
 -----------------
-The DAG is divided into stages based on data dependencies. Each stage consists of tasks that can be executed concurrently without shuffling data.
+The DAG is divided into stages based on data dependencies.
+Each stage consists of tasks that can be executed concurrently without shuffling data.
+
 4. Task Scheduling:
 ---------------------
-The driver program schedules tasks for each stage and distributes them across the executors. The cluster manager allocates resources and assigns executors to the driver program.
+The driver program schedules tasks for each stage and distributes them across the executors.
+The cluster manager allocates resources and assigns executors to the driver program.
+
 5. Task Execution:
 ---------------------
 Executors execute the tasks assigned to them and perform the necessary transformations and actions on the data partitions.
+
 6. Result Collection:
 ----------------------
-Executors return the results of the task execution to the driver program. The driver aggregates the results and performs any final operations, such as writing output to a file.
+Executors return the results of the task execution to the driver program.
+The driver aggregates the results and performs any final operations, such as writing output to a file.
 What Happens When You Execute a Script in PySpark
 
 
@@ -306,26 +324,36 @@ When you execute a script in PySpark, the following sequence of events occurs:
 The PySpark script initializes a SparkSession, which serves as the entry point to the Spark application.
 Example:
 from pyspark.sql import SparkSession spark = SparkSession.builder \ .appName("ExamplePySparkApp") \ .getOrCreate()
+
 2. Data Loading and Transformation:
 ---------------------------------
 The script loads data into DataFrames or RDDs and applies a series of transformations and actions.
 Example:
 df = spark.read.csv("hdfs://path/to/file.csv", header=True) df_transformed = df.filter(df['age'] > 30)
+
 3. Job Submission:
 --------------------
-When an action (e.g., show(), collect(), write()) is called, the driver program creates a DAG of tasks and submits the job to the cluster manager.
+When an action (e.g., show(), collect(), write()) is called,
+the driver program creates a DAG of tasks and submits the job to the cluster manager.
 Example:
 df_transformed.write.parquet("hdfs://path/to/output.parquet")
 4. Execution:
 -----------------
 The cluster manager allocates resources and assigns executors to the driver program.
 The driver schedules tasks and distributes them across executors for execution.
+
 5. Result Handling:
 ----------------
 Executors perform the tasks and return the results to the driver.
 The driver collects the results and outputs them as specified in the script.
+
+
 Understanding the Job Execution Using Spark UI
-The Spark UI is a web-based interface that provides detailed information about the execution of Spark jobs. It allows users to monitor and analyze the performance of their Spark applications. Here’s how you can use the Spark UI to understand what exactly is happening inside a Spark job:
+The Spark UI is a web-based interface that provides detailed information about the execution of Spark jobs.
+ It allows users to monitor and analyze the performance of their Spark applications.
+
+
+Here’s how you can use the Spark UI to understand what exactly is happening inside a Spark job:
 
 Accessing the Spark UI:
 The Spark UI is typically accessible at http://<driver-host>:4040. The exact URL may vary depending on your Spark cluster configuration.
@@ -334,7 +362,8 @@ The Spark UI is typically accessible at http://<driver-host>:4040. The exact URL
 
 ```
 for interactive queries, do not store Parquet in S3.
-S3 is high-throughput but also high-latency storage. It's good for bulk reads, but not random reads, and querying Parquet involves random reads. Parquet on S3 is ok for batch jobs (like Spark jobs) but it's very slow for interactive queries (Presto, Athena, DuckDB).
+S3 is high-throughput but also high-latency storage. It's good for bulk reads, but not random reads, and querying Parquet involves random reads.
+Parquet on S3 is ok for batch jobs (like Spark jobs) but it's very slow for interactive queries (Presto, Athena, DuckDB).
 
 The solution is to store Parquet on low-latency storage. S3 has something called S3 Express Zones (which is low-latency S3, costs slightly more). Or EBS, which is block storage that doesn't suffer from S3's high latency.
 ```
