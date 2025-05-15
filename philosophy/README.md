@@ -11,6 +11,10 @@ https://www.youtube.com/watch?v=Zz70rcguxwk 68 Bits of Unsolicited Advice
 ```
 Чем меньше знаний, тем крепче убеждения.
 
+Интеллигент без стремления соответствовать достаточно высоким моральным и этическим стандартам — всего лишь интеллектуал. (В крайнем случае — "интеллектуал с пафосом".)  
+А интеллигент без хорошо развитого интеллекта и изрядного образования — "всего лишь" хороший человек.
+
+
 The reasonable man adapts himself to the world:
 the unreasonable one persists in trying to adapt the world to himself.
 Therefore all progress depends on the unreasonable man.
