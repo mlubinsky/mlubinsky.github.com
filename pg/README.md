@@ -12,7 +12,7 @@ https://github.com/PGBootCamp/Minsk_2024/tree/main
 
 https://github.com/PGBootCamp/Russia_2023
 
-
+https://engineering.usemotion.com/migrating-to-postgres-3c93dff9c65d
 
 https://www.youtube.com/watch?v=r-vCQwEv3yY&list=PLFueB7duX_sA3JrMCvVNH_tt-67jUYepQ&index=10
 
