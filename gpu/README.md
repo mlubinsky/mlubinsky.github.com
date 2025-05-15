@@ -1,3 +1,5 @@
+https://habr.com/ru/companies/timeweb/articles/909122/
+
 https://blog.codingconfessions.com/p/gpu-computing
 
 https://www.youtube.com/watch?v=h9Z4oGN89MU
