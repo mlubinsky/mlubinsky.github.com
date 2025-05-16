@@ -47,7 +47,7 @@ WITH UserStatus AS (
         timestamp,
         status,
         LAG(status, 1, '') OVER (PARTITION BY user ORDER BY timestamp) AS prev_status
-    FROM    T
+    FROM  T
 ),
 ConsecutiveNoGroups AS (
     SELECT
@@ -82,6 +82,42 @@ GROUP BY user
 ORDER BY user;
 ```
 
+```sql
+WITH NoRecords AS (
+    -- Select only records where status = 'NO'
+    SELECT
+        "user",
+        "timestamp",
+        "status"
+    FROM T
+    WHERE status = 'NO'
+),
+GroupAssignment AS (
+    -- Assign group identifiers for consecutive 'NO' records
+    SELECT
+        "user",
+        "timestamp",
+        SUM(CASE
+            WHEN LAG("timestamp") OVER (PARTITION BY "user" ORDER BY "timestamp") IS NULL
+                 OR LAG("status") OVER (PARTITION BY "user" ORDER BY "timestamp") <> 'NO'
+            THEN 1
+            ELSE 0
+        END) OVER (PARTITION BY "user" ORDER BY "timestamp") AS group_id
+    FROM (
+        -- Include all records to check transitions from 'YES' to 'NO'
+        SELECT "user", "timestamp", "status"
+        FROM T
+    ) all_records
+    WHERE status = 'NO'
+)
+SELECT
+    "user",
+    COUNT(*) AS consecutive_records,
+    COUNT(DISTINCT group_id) AS consecutive_groups
+FROM GroupAssignment
+GROUP BY "user"
+ORDER BY "user";
+```
 
 ### LATERAL JOIN 
 
