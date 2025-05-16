@@ -273,7 +273,7 @@ https://news.ycombinator.com/item?id=37641628
 #### Max salary per department
 
 https://habr.com/ru/articles/828728/
-```
+```sql
 CREATE TABLE departments (
    department_id integer PRIMARY KEY,
    name text NOT NULL
@@ -309,7 +309,7 @@ WHERE rnk=1;
 ```
 
 ### Filtering with NOT EXISTS and NOT IN
-```
+```sql
 SELECT s.name FROM students s
 WHERE NOT EXISTS (
     SELECT 1
@@ -357,9 +357,9 @@ https://habr.com/ru/articles/789420/
 
 https://habr.com/ru/companies/tensor/articles/776834/
 
-Let generate 1mln random records for 1 year:
+Let generate 1 mln random records for 1 year:
 
-```
+```sql
 CREATE TABLE fact4agg AS
   SELECT
     now()::date - (random() * 365)::integer dt      -- дата "факта"
@@ -424,7 +424,8 @@ In a SQL statement, you cannot filter in the WHERE clause by a window function (
 
 Try to execute any of the following queries in your Snowflake web UI, and you will get the
 “Window function [ROW_NUMBER() OVER (ORDER BY FRUITS.NAME ASC NULLS LAST)] appears outside of SELECT, QUALIFY, and ORDER BY clauses” compilation error:
-
+```
+```sql
 select name
 from (values ('apples'), ('oranges'), ('nuts')) as fruits(name)
 where row_number() over (order by name) >= 2
@@ -434,10 +435,10 @@ select name, row_number() over (order by name) as rn
 from (values ('apples'), ('oranges'), ('nuts')) as fruits(name)
 where rn >= 2
 order by name;
-
+```
 The typical fix was to separate a subquery, in which all window functions are evaluated.
 The outer query was now applying the WHERE filter on fields already evaluated before:
-
+```sql
 with cte as (
   select name, row_number() over (order by name) as rn
   from (values ('apples'), ('oranges'), ('nuts')) as fruits(name)
@@ -445,10 +446,10 @@ with cte as (
 select *
 from cte
 where rn >= 2;
-
+```
 QUALIFY is simply a convenient clause that allows you to filter on window functions in the same query,
 but after the window function values have been calculated. All these correct versions return “nuts” and “oranges”, in this order.
-
+```sql
 select name, row_number() over (order by name) as rn
 from (values ('apples'), ('oranges'), ('nuts')) as fruits(name)
 qualify rn >= 2
@@ -458,7 +459,7 @@ select name
 from (values ('apples'), ('oranges'), ('nuts')) as fruits(name)
 qualify row_number() over (order by name) >= 2
 order by name;
-
+```
 The Order of Execution in a SQL Query
 The order of the SQL clauses in a SELECT query is not the same as the internal order of execution and evaluation of these clauses.
 The projection specified in the SELECT clause alone is evaluated by the end.
@@ -466,12 +467,12 @@ The projection specified in the SELECT clause alone is evaluated by the end.
 From the picture below, you can see that window functions (the OVER clauses) are evaluated well after the WHERE clause.
  So you cannot use the WHERE clause with window functions. The new QUALIFY clause acts like WHERE,
 but it is executed after the window functions have been evaluated:
-```
+ 
 
 ### Duplicates in table: 
 https://blog.devgenius.io/duplicates-in-sql-e7a146d0131
 
-```
+```sql
 SELECT col1, col2
 FROM table_name
 WHERE (col1, col2) IN (
@@ -479,9 +480,11 @@ WHERE (col1, col2) IN (
     GROUP BY col1, col2 
     HAVING COUNT(*) > 1
     )
-
-If the set of column values is unique in the table then the partition with that column set will have single rows. Conversely, partitions with more than one row denote the presence of duplicate values. We use ROW_NUMBER() to assign a sequential integer to each row within the partition of a result set. A sequence (appearance/occurrence) greater than one means that the value is appearing more than one time.
-
+```
+If the set of column values is unique in the table then the partition with that column set will have single rows. 
+Conversely, partitions with more than one row denote the presence of duplicate values. We use ROW_NUMBER() to assign a sequential integer to each row within the partition of a result set. 
+A sequence (appearance/occurrence) greater than one means that the value is appearing more than one time.
+```sql
 WITH dedup AS (
  SELECT col1, col2,
   ROW_NUMBER() OVER (PARTITION BY col1, col2 ORDER BY col3 ASC) AS occurrence
@@ -493,16 +496,16 @@ WHERE occurrence > 1
 ```
 
 ### Find duplicate rows in a database
-```
+```sql
 SELECT * FROM emp a WHERE rowid = (SELECT MAX(rowid) FROM EMP b WHERE a.empno=b.empno)
 ```
 ### Delete duplicates
-```
+```sql
 DELETE FROM emp a WHERE rowid != (SELECT MAX(rowid) FROM emp b WHERE a.empno=b.empno);
 ```
 
 ### Delete duplicate records
-```
+```sql
 DELETE    FROM T 
 WHERE  ctid NOT IN
         (
@@ -511,10 +514,6 @@ WHERE  ctid NOT IN
         GROUP BY  T.*
         )
 ```
-
-
-
-
 
 
 https://sqlfordevs.com/ebook
@@ -535,7 +534,7 @@ DENSE_RANK again gives you the ranking within your ordered partition, but the ra
 
 https://antonz.org/sqlite-pivot-table/
 
-```
+```sql
 select
   product,
   sum(case when year = 2020 then income end) as "2020",
@@ -564,7 +563,7 @@ FIRST_VALUE, LAST_VALUE, LAG LEAD NTH_VALUE
 
 
 ### UNNEST - convert array to rows
-```
+```sql
 create table test(
     p_name text[],
     p_id varchar(14),
@@ -591,7 +590,7 @@ FROM test;
 ```
 
 ### Convert column to comma-separated list
-```
+```sql
   SELECT yt.userid,
          GROUP_CONCAT(yt.col ORDER BY yt.col SEPARATOR ' ') AS combined
     FROM YOUR_TABLE yt
@@ -602,7 +601,7 @@ GROUP BY yt.userid
  concat_ws(', ',collect_set( col_name ))  
 ```
 Another way:
-```
+```sql
 select user, array_join(collect_list(department), ', ')
 from tablenamehere
 group by user
@@ -628,7 +627,7 @@ https://wisser.github.io/Jailer/
 https://towardsdatascience.com/why-is-nobody-talking-about-sql-anti-joins-f970a5f6cb54
 
 An anti-join is when you would like to keep all of the records in the original table except those records that match the other table.
-```
+```sql
 select * 
 from admissions a
 left join physicians p
@@ -674,7 +673,7 @@ FROM expenses
 ORDER BY date;
 ```
 Если же нужен временной интервал, допустим 7 дней, используют RANGE:
-```
+```sql
 SELECT
   date,
   SUM(amount) 
@@ -687,14 +686,14 @@ FROM transactions;
 
 
 ### Moving Average
-```
+```sql
 SELECT employee_id, salary,
        SUM(salary) OVER (ORDER BY employee_id ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS salary_sum
 FROM employees;
 ```
 
 https://habr.com/ru/post/588859/  averaging and smoothing for noise reduction
-```
+```sql
 SELECT
     Date
   , dailyConversions
@@ -722,7 +721,7 @@ https://github.com/dinedal/textql  SQL for CSV and TSV
 https://habr.com/ru/company/otus/blog/541882/
 
 ### GROUPING SET
-```
+```sql
 SELECT department_id, job_id, SUM(salary) AS total_salary
 FROM employees
 GROUP BY GROUPING SETS ((department_id), (department_id, job_id));
@@ -748,14 +747,14 @@ https://betterprogramming.pub/4-ways-to-calculate-a-running-total-with-sql-986d0
 
 <https://medium.com/better-programming/4-ways-to-calculate-a-running-total-with-sql-986d0019185c>
 
-```
+```sql
 SELECT id,month
  , Amount
  , SUM(Amount) OVER (ORDER BY id) as total_sum
 FROM bill
 ```
 
-```
+```sql
 select
     a.date,
     sum(b.sales) as cumulative_sales
@@ -779,7 +778,7 @@ Runnig total using window function:
 
 https://blog.devgenius.io/sql-window-function-d39858e52784
 
-```
+```sql
 select date,
     sum(sales) over (order by date rows unbounded preceding) as cumulative_sales
 from sales_table;
@@ -787,7 +786,7 @@ from sales_table;
 
 
 
-```
+```sql
 SELECT
       t1.day
       ,t1.driver_id
@@ -812,7 +811,7 @@ LAG is used together with OVER, where the Partition By and Order By clauses may 
 https://habr.com/ru/post/545870/
 
  the monthly percent change in costs
-``` 
+```sql
 with monthly_costs as (
     SELECT
         date
@@ -832,7 +831,7 @@ Given: weather table  contains daily temperature   in different cities:
 (date, city, temperature)
 How can you create a table that also contains the temperature difference between the current day and the next day? For the first row, the difference column should contain the value 1.2.
 
-```
+```sql
 WITH cte AS(
    SELECT
       W1.*, 
@@ -851,10 +850,10 @@ FROM cte;
 ## LEAD, LAG, FIRST_GAP
 
 find all numbers that appear at least three times consecutively.
-```
-+----+-----+
+ 
+ 
 | id | num |
-+----+-----+
+|----|-----|
 | 1  | 1   |
 | 2  | 1   |
 | 3  | 1   |
@@ -863,7 +862,7 @@ find all numbers that appear at least three times consecutively.
 | 6  | 2   |
 | 7  | 2   |
 +----+-----+
-
+```sql
 WITH cte as (
     SELECT num, 
         LEAD(num, 1) OVER() AS next_num, 
@@ -883,7 +882,7 @@ http://www.silota.com/docs/recipes/sql-gap-analysis-missing-values-sequence.html
 
 
 ###
-```
+```sql
 SELECT 
   VARIANCE(amount) AS var_amount,
   VAR_POP(amount) AS var_pop_amount,
@@ -897,7 +896,7 @@ FROM bill
 
 It’s an extension of a GROUP BY clause with the ability to add subtotals and grand totals to your data.
 
-```
+```sql
 SELECT  
   Type,
   id,
@@ -910,7 +909,7 @@ GROUP BY Type,id WITH ROLLUP
 ### Calculation AVG:
  - missing value
  - INT to float
-```
+```sql
 with T as ( 
 select 1 as i, 5 as v 
 union all 
@@ -935,7 +934,7 @@ https://www.foxhound.systems/blog/sql-performance-with-union/
 
 <https://stackoverflow.com/questions/63609219/best-way-to-get-1st-record-per-partition-first-value-vs-row-number>
 
-```
+```sql
 
 SELECT   content_id,   store, 
 FIRST_VALUE(kids_directed)   OVER( PARTITION BY content_id,   store   ORDER BY date_key desc rows unbounded preceding) 
@@ -1042,7 +1041,7 @@ You can use LAG() to reference previous rows
  <https://blog.jooq.org/2019/09/09/using-distinct-on-in-non-postgresql-databases/>
 
 ##  MAX per day
-```
+```sql
 CREATE VIEW max_daily_view AS
 SELECT
   time,
@@ -1065,7 +1064,7 @@ WHERE cnt = maximum;
 ```
 
 ## LEFT JOIN
-```
+```sql
 create table T1 (x int);
 insert into T1 VALUES (1),(2),(3);
 
@@ -1082,7 +1081,7 @@ X Y
 
 ```
 ### COUNT() vs SUM()
-```
+```sql
 create table events(event_type int, time timestamp);
 insert into events values(1, '2019-07-25 17:50:00');
 insert into events values(1, '2019-07-25 17:50:00');
@@ -1113,7 +1112,7 @@ select A.event_type,  sum(A.cnt) as total,  count(*) ,
 group by event_type, B.number_of_distinct_timestamps    
 ```
 ## Example
-```
+```sql
 CREATE TABLE D (dev_id int, name text);
 INSERT INTO D VALUES(1,'a'),(2,'b'), (3,'c') ;
 
@@ -1162,7 +1161,7 @@ span	           dev_id	 dev_points	span_points	load
 PostgreSQL does not have the ISNULL() function. However, you can use the COALESCE function which provides the similar functionality. Note that the COALESCE function returns the first non-null argument, so the following syntax has the similar effect as the ISNULL function above: COALESCE(expression,replacement)
 Also, in addition to COALESCE you can use CASE expression:
 
-```
+```sql
 create table emp(id int , name text);
 insert into emp VALUES (1,'A');
 insert into emp VALUES (2,NULL);
@@ -1189,7 +1188,7 @@ GREATEST n PER GROUP question. <https://stackoverflow.com/questions/tagged/great
 <https://stackoverflow.com/questions/7745609/sql-select-only-rows-with-max-value-on-a-column/7745635#7745635>
 
 Approach #1:
-```
+```sql
 SELECT a.id, a.rev, a.contents
 FROM YourTable a
 INNER JOIN (
@@ -1200,7 +1199,7 @@ INNER JOIN (
 ```
 
 Approach #2:
-```
+```sql
 SELECT a.*
 FROM YourTable a
 LEFT OUTER JOIN YourTable b
@@ -1208,20 +1207,20 @@ LEFT OUTER JOIN YourTable b
 WHERE b.id IS NULL;
 ```
 Approach #3:
-```
+```sql
 SELECT * FROM t1 WHERE (id,rev) IN 
 ( SELECT id, MAX(rev) FROM t1 GROUP BY id)
 
 ```
 Approach #4: correlated subquery
-```
+```sql
 select yt.id, yt.rev, yt.contents
     from YourTable yt
     where rev = 
         (select max(rev) from YourTable st where yt.id=st.id)
 ```
 Approach #5: RANK() or ROW_NUMBER()
-```
+```sql
 SELECT a.id, a.rev, a.contents
   FROM (SELECT id, rev, contents,
                ROW_NUMBER() OVER (PARTITION BY id ORDER BY rev DESC) rank
@@ -1230,7 +1229,7 @@ SELECT a.id, a.rev, a.contents
  ```
 
 ## Employee with max salary per each department
-```
+```sql
 SELECT dept.dname, emp.empno, emp.ename, emp.sal FROM emp
 inner join dept on emp.deptno = dept.deptno
 inner join
@@ -1239,12 +1238,12 @@ ON emp.deptno = ss.deptno and emp.sal = ss.sal
 order by emp.sal desc
 ```
 
-```
+```sql
 SELECT dept.name, MAX(e.salary) FROM emp e 
 RIGHT JOIN dept d ON e.deptId = d.deptID GROUP BY dept.name;
 ```
 
-```
+```sql
 create table emp(id int , name text, salary float, dept_id int);
 insert into empl values(1,'Mike1', 100, 10);
 insert into emp values(2,'Mike2', 200, 10);
@@ -1270,7 +1269,7 @@ where rank2=1;
 
 
 ### Find the employees who have the second highest salary per department:
-``` 
+```sql 
  WITH payroll AS (
     SELECT 
         first_name, 
@@ -1297,21 +1296,21 @@ WHERE
 ```
 
 ## Retrieve the names of all people that have more than 1 order 
-```
+```sql
  Suppose we have 2 tables: \
  Person(id, name, age, salary) \
  Orders(num,date, person_id, amount): \
  Task: retrieve the names of all people that have more than 1 order 
 ``` 
 ### Answer 1:
-``` 
+```sql 
  SELECT name from person where id in (
    SELECT person_id from Orders group by preson_id having count(person_id) > 1
  )
 ``` 
  
 ### Answer 2:
-``` 
+```sql 
 SELECT Name FROM Orders, Person
 WHERE Orders.person_id = Person.id
 GROUP BY Person_id, Name                  
@@ -1360,7 +1359,7 @@ https://news.ycombinator.com/item?id=28018058
  
  https://martinheinz.dev/blog/18 - recursive SQL
  
-``` 
+```sql 
  WITH RECURSIVE cte (id, message, author, path, parent_id, depth)  AS (
   SELECT  id,
           message,
@@ -1396,7 +1395,7 @@ http://www.sql-workbench.eu/dbms_comparison.html
 ## Difference between ON and WHERE clause:
 
 https://blog.jooq.org/2019/04/09/the-difference-between-sqls-join-on-clause-and-the-where-clause/
-```
+```sql
 CREATE TABLE A( i int, val int,  data varchar(16) );
 CREATE TABLE B( i int, val int,  data varchar(16) );
 
@@ -1457,7 +1456,7 @@ https://news.ycombinator.com/item?id=20872114
 
 max salary per department:
 
-```
+```sql
 SELECT * FROM (
          SELECT id,
                 first_name,
