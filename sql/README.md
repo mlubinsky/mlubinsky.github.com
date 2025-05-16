@@ -47,7 +47,7 @@ WITH UserStatus AS (
         timestamp,
         status,
         LAG(status, 1, '') OVER (PARTITION BY user ORDER BY timestamp) AS prev_status
-    FROM T
+    FROM    T
 ),
 ConsecutiveNoGroups AS (
     SELECT
@@ -57,23 +57,28 @@ ConsecutiveNoGroups AS (
         CASE
             WHEN status = 'NO' AND prev_status <> 'NO' THEN ROW_NUMBER() OVER (PARTITION BY user ORDER BY timestamp)
             ELSE NULL
-        END AS group_id
-    FROM  UserStatus
+        END AS group_start_id,
+        CASE
+            WHEN status = 'NO' THEN ROW_NUMBER() OVER (PARTITION BY user, (CASE WHEN status = 'NO' AND prev_status <> 'NO' THEN 1 ELSE 0 END) ORDER BY timestamp)
+            ELSE NULL
+        END AS row_in_group
+    FROM UserStatus
 ),
 FilledGroups AS (
     SELECT
         user,
         timestamp,
         status,
-        COALESCE(group_id, LAG(group_id IGNORE NULLS) OVER (PARTITION BY user ORDER BY timestamp)) AS filled_group_id
+        COALESCE(group_start_id, LAG(group_start_id IGNORE NULLS) OVER (PARTITION BY user ORDER BY timestamp)) AS filled_group_id
     FROM ConsecutiveNoGroups
+WHERE status = 'NO'
 )
 SELECT
     user,
-    COUNT(*) AS consecutive_no_count
-FROM FilledGroups
-WHERE status = 'NO'
-GROUP BY user, filled_group_id
+    COUNT(*) AS total_consecutive_no_records,
+    COUNT(DISTINCT filled_group_id) AS number_of_consecutive_no_groups
+FROM  FilledGroups
+GROUP BY user
 ORDER BY user;
 ```
 
