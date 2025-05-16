@@ -32,6 +32,44 @@ GROUP BY user
 ORDER BY user;
 ```
 
+```sql
+WITH UserStatus AS (
+    SELECT
+        user,
+        timestamp,
+        status,
+        LAG(status, 1, '') OVER (PARTITION BY user ORDER BY timestamp) AS prev_status
+    FROM T
+),
+ConsecutiveNoGroups AS (
+    SELECT
+        user,
+        timestamp,
+        status,
+        CASE
+            WHEN status = 'NO' AND prev_status <> 'NO' THEN ROW_NUMBER() OVER (PARTITION BY user ORDER BY timestamp)
+            ELSE NULL
+        END AS group_id
+    FROM  UserStatus
+),
+FilledGroups AS (
+    SELECT
+        user,
+        timestamp,
+        status,
+        COALESCE(group_id, LAG(group_id IGNORE NULLS) OVER (PARTITION BY user ORDER BY timestamp)) AS filled_group_id
+    FROM ConsecutiveNoGroups
+)
+SELECT
+    user,
+    COUNT(*) AS consecutive_no_count
+FROM FilledGroups
+WHERE status = 'NO'
+GROUP BY user, filled_group_id
+ORDER BY user;
+```
+
+
 ### LATERAL JOIN 
 
 https://www.geeksforgeeks.org/lateral-keyword-in-sql/
