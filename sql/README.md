@@ -6,7 +6,7 @@ https://sqlize.online/
 There is Postgres table T with  3 columns :  user , timestamp and  status. 
 The value in column  'status' can be 'YES' or  'NO'.   
 Please write SQL which  returns for every user the number of consecutive  records
-and the number of conecutive  groups
+and the number of consecutive  groups
 (by timestamp column) where status='NO'
 ```
 
@@ -16,19 +16,26 @@ WITH ranked AS (
     user,
     timestamp,
     status,
-    -- This assigns a group whenever status = 'NO' breaks
+    -- Assign a group ID where consecutive statuses differ
     ROW_NUMBER() OVER (PARTITION BY user ORDER BY timestamp) -
     ROW_NUMBER() OVER (PARTITION BY user, status ORDER BY timestamp) AS grp
   FROM T
 ),
-no_groups AS (
-  SELECT user, COUNT(*) AS consecutive_no_count
+no_rows AS (
+  SELECT *
   FROM ranked
   WHERE status = 'NO'
+),
+no_groups AS (
+  SELECT user, grp
+  FROM no_rows
   GROUP BY user, grp
 )
-SELECT user, MAX(consecutive_no_count) AS max_consecutive_no
-FROM no_groups
+SELECT
+  user,
+  COUNT(*) AS total_no_rows,
+  COUNT(DISTINCT grp) AS total_no_groups
+FROM no_rows
 GROUP BY user
 ORDER BY user;
 ```
