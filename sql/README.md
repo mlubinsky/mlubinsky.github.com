@@ -6,7 +6,7 @@ https://sqlize.online/
 There is Postgres table T with  3 columns :  user , timestamp and  status. 
 The value in column  'status' can be 'YES' or  'NO'.   
 Please write SQL which  returns for every user the number of consecutive  records
-and the number of conecutive  qroups
+and the number of conecutive  groups
 (by timestamp column) where status='NO'
 ```
 
