@@ -9,6 +9,29 @@ Please write SQL which  returns for every user the number of consecutive  record
 
 ```
 
+```sql
+WITH ranked AS (
+  SELECT
+    user,
+    timestamp,
+    status,
+    -- This assigns a group whenever status = 'NO' breaks
+    ROW_NUMBER() OVER (PARTITION BY user ORDER BY timestamp) -
+    ROW_NUMBER() OVER (PARTITION BY user, status ORDER BY timestamp) AS grp
+  FROM T
+),
+no_groups AS (
+  SELECT user, COUNT(*) AS consecutive_no_count
+  FROM ranked
+  WHERE status = 'NO'
+  GROUP BY user, grp
+)
+SELECT user, MAX(consecutive_no_count) AS max_consecutive_no
+FROM no_groups
+GROUP BY user
+ORDER BY user;
+```
+
 ### LATERAL JOIN 
 
 https://www.geeksforgeeks.org/lateral-keyword-in-sql/
