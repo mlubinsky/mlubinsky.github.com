@@ -2,6 +2,13 @@ https://www.db-fiddle.com/
 
 https://sqlize.online/
 
+```
+There is Postgres table T with  3 columns :  user , timestamp and  status. 
+The value in column  'status' can be 'YES' or  'NO'.   
+Please write SQL which  returns for every user the number of consecutive  records (by timestamp column) where status='NO'
+
+```
+
 ### LATERAL JOIN 
 
 https://www.geeksforgeeks.org/lateral-keyword-in-sql/
