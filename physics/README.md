@@ -175,6 +175,7 @@ https://scholar.google.ru/citations?hl=en&user=RmRwJJIAAAAJ&view_op=list_works&s
 Vitaly Vanchurin
 https://scholar.google.com/citations?hl=en&user=nEEFLp0AAAAJ&view_op=list_works&sortby=pubdate
 
+https://www.researchgate.net/publication/391773622_Neural_Relativity 
 
 https://arxiv.org/abs/1209.3632
 
