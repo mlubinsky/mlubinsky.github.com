@@ -100,6 +100,9 @@ https://www.youtube.com/watch?v=fBb4cKbHbmI  C++ and ML
 https://en.algorithmica.org/hpc/
 
 ### Make, CMAke, etc
+
+https://habr.com/ru/articles/748162/
+
 https://habr.com/ru/companies/ruvds/articles/875620/ Сборка проектов Си и Си++: от простого к сложному. Часть II
 
 https://www.youtube.com/watch?v=gqczXq-faAg   CMake
