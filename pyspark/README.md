@@ -148,7 +148,7 @@ The optimizer analyzes join conditions to decide the most efficient join strateg
 
 
 ### Numeric value count() by range
-```
+```python
 counts = one_day_df.agg(
     F.count(F.when(F.col("percent_completed") > 1000, True)).alias("count_greater_than_1000"),
     F.count(F.when((F.col("percent_completed") >= 100) & (F.col("percent_completed") <= 1000), True)).alias("count_between_100_and_1000"),
@@ -160,11 +160,12 @@ counts.show()
 ```
 
 
-### Diff
+### Diff between dataframes
+https://medium.com/@gollulikithraj/key-differences-in-spark-operations-2520db90696b
 
 ```
 
-1) exceptALL :
+1) exceptALL :  returns all the rows that exist in the first DataFrame but do not appear in the second DataFrame , do not remove duplicates in df1
 df1.exceptAll(df2).isEmpty() and df2.exceptAll(df1).isEmpty()
  
 If the exceptAll operation on both DataFrames results in empty DataFrames, it suggests that they might be equal.
@@ -174,7 +175,7 @@ df1.diff(df2).isEmpty() and df2.diff(df1).isEmpty()
 
 If the diff operation on both DataFrames results in empty DataFrames, it's a strong indication that they are equal
 
-3) substract:
+3) substract: removes  duplicates from df1 , so it is different from execptALL
 
 df1.substract(df2).isEmpty() and df2.substract(df1).isEmpty()
 
@@ -478,7 +479,40 @@ Now you can seamlessly run SQL on a DataFrame object.
 ```
 ![image](https://github.com/user-attachments/assets/a3a96e7b-2b40-4f60-899e-011b0773500e)
 
-### DataFram equality
+
+### distinct() or dropDuplicates()
+```python
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.appName("example").getOrCreate()
+
+data = [(1, "A"), (2, "B"), (1, "A"), (3, "C")]
+df = spark.createDataFrame(data, ["id", "value"])
+
+df_distinct = df.distinct() # Removes duplicate rows based on all columns
+df_distinct.show()
+# +---+-----+
+# | id|value|
+# +---+-----+
+# |  1|    A|
+# |  2|    B|
+# |  3|    C|
+# +---+-----+
+
+df_drop_duplicates = df.dropDuplicates(["id"]) # Removes duplicates based on specified columns
+df_drop_duplicates.show()
+# +---+-----+
+# | id|value|
+# +---+-----+
+# |  1|    A|
+# |  2|    B|
+# |  3|    C|
+# +---+-----+
+
+spark.stop()
+```
+
+### DataFrame equality
 
 https://www.databricks.com/blog/simplify-pyspark-testing-dataframe-equality-functions
 
@@ -488,6 +522,38 @@ Exciting update for PySpark developers! Spark 3.5/4.0 and Databricks Runtime 14.
 ✅ Provides detailed discrepancy insights.
 ✅ Enhances error detection in early stages.
 
+Two equality test functions for PySpark DataFrames were introduced in Apache Spark 3.5: assertDataFrameEqual and assertSchemaEqual. Let's take a look at how to use each of them.
+
+#### assertDataFrameEqual: 
+This function allows you to compare two PySpark DataFrames for equality, checking whether the data and schemas match.  
+It returns descriptive information when there are differences.
+```
+df_expected = spark.createDataFrame(data=[("Alfred", 1500), ("Alfred", 2500), ("Anna", 
+500), ("Anna", 3000)], schema=["name", "amount"])
+
+df_actual = spark.createDataFrame(data=[("Alfred", 1200), ("Alfred", 2500), ("Anna", 500), 
+("Anna", 3000)], schema=["name", "amount"])
+
+from pyspark.testing import assertDataFrameEqual
+
+assertDataFrameEqual(df_actual, df_expected)
+```
+
+
+#### assertSchemaEqual: This function compares only the schemas of two DataFrames; it does not compare row data.
+```
+schema_actual = "name STRING, amount DOUBLE"
+
+data_expected = [["Alfred", 1500], ["Alfred", 2500], ["Anna", 500], ["Anna", 3000]]
+data_actual = [["Alfred", 1500.0], ["Alfred", 2500.0], ["Anna", 500.0], ["Anna", 3000.0]]
+
+df_expected = spark.createDataFrame(data = data_expected)
+df_actual = spark.createDataFrame(data = data_actual, schema = schema_actual)
+
+from pyspark.testing import assertSchemaEqual
+
+assertSchemaEqual(df_actual.schema, df_expected.schema)
+```
 ### Max_By()
 ![Uploading image.png…]()
 
