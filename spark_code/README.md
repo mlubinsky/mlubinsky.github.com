@@ -21,7 +21,7 @@ df_data.columns
 ```
 
 Handling missing values
-```
+```python
 from pyspark.sql.functions import col,isnan,when,count
 df2 = df_data.select([
          count(  \
@@ -59,7 +59,7 @@ thres parameter is used to specify the minimum number of null values required to
 subset parameter is used to specify the dataset subset which needs to be checked.
 
 ### DROP the entire record if all the values are null:
-```
+```python
 df_data = df_data.na.drop(how=’all’)
 DROP the entire record if it contains a null value:
 
@@ -86,43 +86,45 @@ inputsCols is used to specify a list of columns and inputCol is used to specify 
 Similarly, outputCol and outputCols are used to specify the single or multiple output columns depending on the inputs.
 
 strategy parameter defines the technique that needs to be applied on the target column to impute it’s null values. Acceptible values are ‘mean’, ‘median’, ‘mode’
-```
-#import imputer library
+```python
+
 from pyspark.ml.feature import Imputer
-#set input columns
+
 inputCols = ['cname1', 'cname2', 'cname3']
-#define imputer
+
 imputer = Imputer(
 inputCols = inputCols,
-outputCols = ["{}_imputed".format(c) for c in                inputCols]).setStrategy("mean")
-#apply imputer
+outputCols = ["{}_imputed".format(c) for c in inputCols]).setStrategy("mean")
+
 imputer.fit(df_data).transform(df_data)
 ```
 
 ### Filter dataframe:
 
 We can use the filter function to extract the required data from a dataframe
-
- 
+query 1 and 2 below  give the same data that is the top 5 rows where year is greater than 2010
+```python 
 df_data.filter(“year > 2010”).show(5)
  
 df_data.filter(df_data['year'] > 2010).show(5)
+```
 
-query 1 and 2 give the same data that is the top 5 rows where year is greater than 2010
-
+###  NOT to get inverse filter 
 We can use the ~ symbol to get the inverse of a filter
 ```
 df_data.filter(~(df_data[‘year’] > 2010)).show(5)
 ```
 The above code gives the top 5 rows where year is less than 2010
 
+
+### & | operators
 To filter the dataframes based on more than one condition we can use the & | operators
 ```
-df_data.filter((df_data[‘selling_price’]>200000)&(df_data[‘selling_price’]< 400000)).show(5)
+df_data.filter((df_data[‘selling_price’] > 20 ) & ( df_data[‘selling_price’] < 40  )).show(5)
 ```
 The above code filters dataframe where selling price is between 2lakh and 4lakh
 ```
-df_data.filter((df_data[‘transmission’]==’Automatic’)|(df_data[‘transmission’]==’Manual’)).show(5)
+df_data.filter((df_data[‘transmission’]==’Automatic’) | (df_data[‘transmission’]==’Manual’)).show(5)
 ```
 The above code filters dataframe where the transmission is either manual or automatic.
 
@@ -262,13 +264,12 @@ df.withColumn("city_starts_with_new", $"city".startsWith("new")).show()
 
 println(df.schema.fieldNames.contains("city"))
 println(df.schema.contains(StructField("city",StringType,true)))
-
+```
 
 https://stackoverflow.com/questions/47657072/importing-schema-from-json-with-optional-value
 
-:paste
-// Entering paste mode (ctrl-D to finish) 
-
+ 
+```scala
 import org.apache.spark.sql.expressions.scalalang._
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}    
@@ -306,7 +307,7 @@ val s2 = df.select($"city")
 
  https://habr.com/ru/company/otus/blog/653033/
  
-```
+```scala
 df.show(n=2, truncate=False, vertical=True)
 
 df.display()
@@ -404,7 +405,7 @@ select A.people, B.state, count(*) from A join B on A.state_id=B.state_id group 
 Since there are only 50 states we cannot achieve better parallelism by adding > 50 cores also since California is the biggest state the data is skewed - use broadcast join
 
 https://habr.com/ru/company/vk/blog/442688/
-```
+```scala
 val train = sqlContext.read.parquet("/events/hackatons/SNAHackathon/2019/collabTrain")
 
 z.show(train.groupBy($"date").agg(
