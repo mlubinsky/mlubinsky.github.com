@@ -5,6 +5,26 @@ https://medium.com/@suffyan.asad1/introduction-to-aggregate-and-transform-functi
 
 https://medium.com/@suffyan.asad1/spark-leveraging-window-functions-for-time-series-analysis-in-pyspark-03aa735f1bdf
 
+### MAX_BY: max_by(x, y) - Returns the value of x associated with the maximum value of y.
+
+ SELECT max_by(x, y) FROM VALUES ('a', 10), ('b', 50), ('c', 20) AS tab(x, y);
+
+ Result : b
+
+MAX_BY in pyspark >= 3.3.0
+```python
+from pyspark.sql.window import Window
+from pyspark.sql import functions as F
+
+w = (
+    Window
+    .partitionBy('category')
+    .rangeBetween(Window.unboundedPreceding, Window.unboundedFollowing)
+)
+mdt = F.max_by('datetime', 'value').over(w)
+df2 = df.withColumn('datetime_max', mdt)
+```
+
 Instead of using multiple withColumn, use selectExpr forinline transformations.
 
 df = df.selectExpr("id", "upper(name) as name","salary * 1.1 as updated_salary")
@@ -553,12 +573,11 @@ from pyspark.testing import assertSchemaEqual
 
 assertSchemaEqual(df_actual.schema, df_expected.schema)
 ```
-### Max_By()
-![Uploading image.png…]()
+ 
 
 ### How to to discard the NULL values in a PySpark array 
 
-rather than write logic to deal with them:
+rather than write own logic to deal with them:
 
 array_compact makes getting rid of NULL values quite easy.
 ![image](https://github.com/user-attachments/assets/311b2f0d-1cad-44f1-a643-a6bb56ce64f8)
