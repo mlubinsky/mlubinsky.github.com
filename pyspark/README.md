@@ -5,6 +5,31 @@ https://medium.com/@suffyan.asad1/introduction-to-aggregate-and-transform-functi
 
 https://medium.com/@suffyan.asad1/spark-leveraging-window-functions-for-time-series-analysis-in-pyspark-03aa735f1bdf
 
+### SQL CASE in PySpark: when ... otherwise
+```python
+df = df.withColumn(
+    "dummy", \
+    F.when(F.col("group_1")=="A", 100) \
+    .when(((F.col("group_1")=="B") & (F.col("group_2")=="124")), 200) \
+    .otherwise(300)
+)
+```
+#### groupBy +  agg (avg, sum)
+
+df.groupBy("department").agg({"salary": "avg","bonus": "sum"}).show()
+
+### (agg, count, when) - all together 
+```python 
+counts = one_day_df.agg(
+    F.count(F.when(F.col("percent_completed") > 1000, True)).alias("count_greater_than_1000"),
+    F.count(F.when((F.col("percent_completed") >= 100) & (F.col("percent_completed") <= 1000), True)).alias("count_between_100_and_1000"),
+    F.count(F.when((F.col("percent_completed") >= 50) & (F.col("percent_completed") <= 100), True)).alias("count_between_50_and_100"),
+    F.count(F.when(F.col("percent_completed") < 50, True)).alias("count_less_than_50")
+)
+
+counts.show()
+
+```
 ### MAX_BY: max_by(x, y) - Returns the value of x associated with the maximum value of y.
 
  SELECT max_by(x, y) FROM VALUES ('a', 10), ('b', 50), ('c', 20) AS tab(x, y);
@@ -55,25 +80,25 @@ sub_df = data.selectExpr("store_code as store_id",
  
  dropDuplicates.df = df.dropDuplicates(["name", "age"])
 
-#### When performing aggregations, always use agg instead of multiple groupBy calls.
 
-df.groupBy("department").agg({"salary": "avg","bonus": "sum"}).show()
 
-Instead of adding multiple columns one by one, use selector selectExpr for better performance.
+### withColumn  
 
 df = df.withColumn("new_column",df["existing_column"] * 10)
 
+### Cache vs persist
 df.cache() # Stores the DataFrame in memory
 
 df.persist() # Default stores in memory, can specifydifferent storage levels 
 
+### Explode
 If a column contains arrays, use explode to flatten them.
 ```python
 from pyspark.sql.functions import explode
 df_exploded = df.withColumn("exploded_column",explode(df["array_column"]))
 ```
 
-#### Use coalesce for Efficient Repartitioning If you have too many small partitions, use coalesce toreduce them efficiently.
+#### Use coalesce for efficient Repartitioning If you have too many small partitions, use coalesce to reduce them efficiently.
 
 df = df.coalesce(5) # Reduces partitions but avoids full shuffle
 
@@ -123,7 +148,7 @@ for col_name in columns_to_drop:
      df_extra = df_extra.withColumn("entity", col("entity").dropFields(col_name))
      
 ```
-### Question: What is PySpark code does?
+### Question: What following PySpark code does?
 ```python
 
 merged_df.select(
@@ -147,58 +172,21 @@ F.coalesce() returns the first non-null value from the two columns: if df_unique
 The result of F.coalesce() is given an alias matching the column name (col) so that the final DataFrame has the same column names as prev_snapshot.
 Select and Distinct:
 
- 
 merged_df.select(...).distinct()
 
-The .select(...) statement selects all the coalesced columns created in the list comprehension, generating a new DataFrame where each column contains either the non-null value from df_unique or prev_snapshot.
+The .select(...) statement selects all the coalesced columns created in the list comprehension,   
+generating a new DataFrame where each column contains either the non-null value from df_unique or prev_snapshot.
 .distinct() removes any duplicate rows from the selected DataFrame.
  
-This code creates a DataFrame that combines values from df_unique and prev_snapshot by filling in nulls in df_unique with corresponding values from prev_snapshot. It then removes duplicate rows from the result.
+This code creates a DataFrame that combines values from df_unique and prev_snapshot by filling in nulls in df_unique with corresponding values from prev_snapshot.   
+It then removes duplicate rows from the result.
 
-In essence, it’s merging the two DataFrames on a column-by-column basis, preferring values from df_unique while filling in any gaps with values from prev_snapshot, and ensuring no duplicate rows in the final output.
+In essence, it’s merging the two DataFrames on a column-by-column basis,   
+preferring values from df_unique while filling in any gaps with values from prev_snapshot, and ensuring no duplicate rows in the final output.
  
 
-### Catalyst
-```
 
 
-Define the role of Catalyst Optimizer in PySpark. 
-
-The Catalyst Optimizer in PySpark is a query optimization engine that enhances the performance of Spark SQL queries and DataFrame operations. Developed as a part of Spark SQL, it leverages advanced optimization techniques to generate efficient execution plans, enabling faster query processing across distributed data.
-
-🚀 Key Roles of the Catalyst Optimizer:
-
-✅ Logical Plan Optimization:
-The Catalyst Optimizer starts by creating a logical plan for the query, which represents what needs to be computed without focusing on how to compute it. The optimizer then applies various transformations, like predicate pushdown, and pruning, to streamline the logical plan and eliminate redundant computations.
-
-✅ Physical Plan Optimization:
-Once the logical plan is optimized, Catalyst generates multiple physical plans, representing different ways of executing the query. It then evaluates these plans and selects the most efficient one based on factors such as data distribution, partitioning, and resource requirements.
-
-✅ Column Pruning:
-Catalyst optimizes queries by pruning unnecessary columns, so only the required columns are read and processed. This reduces I/O operations and improves query performance, especially when working with wide tables or large datasets.
-
-✅ Predicate Pushdown:
-Catalyst pushes down filter conditions as close to the data source as possible. This means that filtering is done at the data source level (such as in Parquet files or databases) rather than after loading data into memory, which reduces the amount of data Spark needs to process.
-
-✅ Cost-Based Optimization (CBO):
-With CBO, the Catalyst Optimizer uses statistics about data (such as row count, column cardinality, and data distribution) to estimate the cost of different physical plans. It chooses the most efficient plan based on these estimates, which improves performance for complex queries involving joins and aggregations.
-
-✅ Join Optimization:
-The optimizer analyzes join conditions to decide the most efficient join strategy (such as broadcast join, sort-merge join, or shuffle join). For example, if a small table is joined with a large table, Catalyst may use a broadcast join, where the smaller table is distributed to all nodes, reducing data shuffling.
-```
-
-
-### Numeric value count() by range
-```python
-counts = one_day_df.agg(
-    F.count(F.when(F.col("percent_completed") > 1000, True)).alias("count_greater_than_1000"),
-    F.count(F.when((F.col("percent_completed") >= 100) & (F.col("percent_completed") <= 1000), True)).alias("count_between_100_and_1000"),
-    F.count(F.when((F.col("percent_completed") >= 50) & (F.col("percent_completed") <= 100), True)).alias("count_between_50_and_100"),
-    F.count(F.when(F.col("percent_completed") < 50, True)).alias("count_less_than_50")
-)
-
-counts.show()
-```
 
 
 ### Diff between dataframes
@@ -1801,7 +1789,8 @@ df.show()
 Now, the output is just as we expect.
 
 2. Conditional column creation
-Consider we want to create a new column based on the values in other columns. In PySpark, we can use the when function for this task. In the case of multiple conditions, we can chain the when functions and conclude with the otherwise function.
+Consider we want to create a new column based on the values in other columns. In PySpark, we can use the when function for this task.  
+In the case of multiple conditions, we can chain the when functions and conclude with the otherwise function.
 
 The order of conditions matter in some cases. It’s best explained with an example so let’s get to it.
 
@@ -1842,7 +1831,8 @@ df.show()
 +-------+-------+----+-----+-----+
 The output is not exactly correct. The last row fits the second condition (group 1 is A and group 2 is 124) so the value in the dummy column should be 200.
 
-The reason for this problem is the order of conditions. Since we write the condition group_1=="A" before a more specific (or sub) condition group_1=="A" & group_2=="124" , the latter is kind of ignored.
+The reason for this problem is the order of conditions. Since we write the condition group_1=="A" before a more specific (or sub) condition group_1=="A" & group_2=="124" ,  
+the latter is kind of ignored.
 
 If we switch these two conditions, the output will actually be correct.
 
@@ -1872,4 +1862,31 @@ Final words
 Data cleaning and processing are very important steps in a workflow as they affect downstream processes. A small mistake we make in these steps might lead to erroneous results.
 
 Be aware of silent mistakes that do not raise an error but have the potential to fail your model or product.
+```
+### Catalyst Optimizer in PySpark
+```
+
+
+The Catalyst Optimizer in PySpark is a query optimization engine that enhances the performance of Spark SQL queries and DataFrame operations.  
+Developed as a part of Spark SQL, it leverages advanced optimization techniques to generate efficient execution plans, enabling faster query processing across distributed data.
+
+🚀 Key Roles of the Catalyst Optimizer:
+
+✅ Logical Plan Optimization:
+The Catalyst Optimizer starts by creating a logical plan for the query, which represents what needs to be computed without focusing on how to compute it. The optimizer then applies various transformations, like predicate pushdown, and pruning, to streamline the logical plan and eliminate redundant computations.
+
+✅ Physical Plan Optimization:
+Once the logical plan is optimized, Catalyst generates multiple physical plans, representing different ways of executing the query. It then evaluates these plans and selects the most efficient one based on factors such as data distribution, partitioning, and resource requirements.
+
+✅ Column Pruning:
+Catalyst optimizes queries by pruning unnecessary columns, so only the required columns are read and processed. This reduces I/O operations and improves query performance, especially when working with wide tables or large datasets.
+
+✅ Predicate Pushdown:
+Catalyst pushes down filter conditions as close to the data source as possible. This means that filtering is done at the data source level (such as in Parquet files or databases) rather than after loading data into memory, which reduces the amount of data Spark needs to process.
+
+✅ Cost-Based Optimization (CBO):
+With CBO, the Catalyst Optimizer uses statistics about data (such as row count, column cardinality, and data distribution) to estimate the cost of different physical plans. It chooses the most efficient plan based on these estimates, which improves performance for complex queries involving joins and aggregations.
+
+✅ Join Optimization:
+The optimizer analyzes join conditions to decide the most efficient join strategy (such as broadcast join, sort-merge join, or shuffle join). For example, if a small table is joined with a large table, Catalyst may use a broadcast join, where the smaller table is distributed to all nodes, reducing data shuffling.
 ```
