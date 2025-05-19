@@ -1,5 +1,7 @@
 https://dataengjobs.com/
 
+https://habr.com/ru/companies/ruvds/articles/908884/
+
 https://join.zerotomastery.io/free-week/
 
 https://medium.com/@riteshgupta.ai/stop-applying-for-jobs-let-recruiters-find-you-on-linkedin-4dc047c631b2
