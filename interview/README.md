@@ -1,5 +1,9 @@
 https://www.remoteswe.fyi/
 
+https://listofremotejobs.com/
+
+https://jobswithgpt.com/
+
 https://dataengjobs.com/
 
 https://habr.com/ru/companies/ruvds/articles/908884/
