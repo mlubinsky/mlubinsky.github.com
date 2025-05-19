@@ -12,6 +12,10 @@ https://medium.com/@suffyan.asad1/spark-leveraging-window-functions-for-time-ser
  Result : b
 
 MAX_BY in pyspark >= 3.3.0
+
+Example: there is dataframe with 3 columns: category, datetime, value
+Goal: add column which store datetime where max(value) is achieved
+
 ```python
 from pyspark.sql.window import Window
 from pyspark.sql import functions as F
@@ -23,17 +27,35 @@ w = (
 )
 mdt = F.max_by('datetime', 'value').over(w)
 df2 = df.withColumn('datetime_max', mdt)
+
+### without using max_by it require more coding:
+
+from pyspark.sql import Window
+from pyspark.sql.functions import *
+
+w = Window.partitionBy('category').orderBy(desc('value'))
+
+df.withColumn("datetimeMax",max(when(row_number().over(w) == 1,col("datetime"))).over(w)).show(100,False)
+
 ```
 
-Instead of using multiple withColumn, use selectExpr forinline transformations.
+#### selectExpr 
 
+Instead of using multiple withColumn, use selectExpr for inline transformations.
+```python
 df = df.selectExpr("id", "upper(name) as name","salary * 1.1 as updated_salary")
 
- To remove duplicates based on certain columns, use
+sub_df = data.selectExpr("store_code as store_id",
+                         "cast(product_code as int) as product_id",
+                         "cast(sales_date as date) as date",       
+                          "cast(sales_qty as int)")
+```
+
+#### To remove duplicates based on certain columns, use
  
  dropDuplicates.df = df.dropDuplicates(["name", "age"])
 
-When performing aggregations, always use agg insteadof multiple groupBy calls.
+#### When performing aggregations, always use agg instead of multiple groupBy calls.
 
 df.groupBy("department").agg({"salary": "avg","bonus": "sum"}).show()
 
@@ -51,20 +73,20 @@ from pyspark.sql.functions import explode
 df_exploded = df.withColumn("exploded_column",explode(df["array_column"]))
 ```
 
-Use coalesce for Efficient Repartitioning If you have too many small partitions, use coalesce toreduce them efficiently.
+#### Use coalesce for Efficient Repartitioning If you have too many small partitions, use coalesce toreduce them efficiently.
 
 df = df.coalesce(5) # Reduces partitions but avoids full shuffle
 
-Use repartition for Evenly DistributedDataWhen dealing with skewed data, use repartition tobalance partitions.
+Use repartition for Evenly Distributed Data. When dealing with skewed data, use repartition to balance partitions.
 
 df = df.repartition(10, "department")
  
 Use rdd.mapPartitions for Efficient Row-Level Operations   
-When working with large datasets, use mapPartitionsinstead of map for better performance.
+When working with large datasets, use mapPartitions instead of map for better performance.
 
 df.rdd.mapPartitions(lambda partition:some_function(partition))
 
-Optimize Writing with partitionByWhen writing large datasets, partition them to improve query performance.
+#### Optimize Writing with partitionByWhen writing large datasets, partition them to improve query performance.
 
  df.write.mode("overwrite").partitionBy("year","month").parquet("output_path")
 
@@ -653,13 +675,6 @@ display(
      F.percentile('price', 0.5).alias('50th pct'))
 ```
 
-### SelectExpr
-```python
-sub_df = data.selectExpr("store_code as store_id",
-                         "cast(product_code as int) as product_id",
-                         "cast(sales_date as date) as date",
-                         "cast(sales_qty as int)")
-```
 #### Moving Average using expr()
 ```python
 expression = """
