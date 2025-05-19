@@ -5,6 +5,12 @@ https://medium.com/@suffyan.asad1/introduction-to-aggregate-and-transform-functi
 
 https://medium.com/@suffyan.asad1/spark-leveraging-window-functions-for-time-series-analysis-in-pyspark-03aa735f1bdf
 
+### Plain select
+```python
+df.select("column1", "column2").display()
+df.select(col("column1").alias("new_column1")).display()
+df.select(col("Name").alias("EmployeeName"), "Age").show()
+```
 ### SQL CASE in PySpark: when ... otherwise
 ```python
 df = df.withColumn(
@@ -64,11 +70,15 @@ df.withColumn("datetimeMax",max(when(row_number().over(w) == 1,col("datetime")))
 
 ```
 
+
+
 #### selectExpr 
 
 Instead of using multiple withColumn, use selectExpr for inline transformations.
 ```python
-df = df.selectExpr("id", "upper(name) as name","salary * 1.1 as updated_salary")
+df = df.selectExpr("id", "upper(name) as name","salary * 1.1 as updated_salary");
+
+df.selectExpr("avg(Age) as Average_Age", "sum(Salary) as Total_Salary").display()
 
 sub_df = data.selectExpr("store_code as store_id",
                          "cast(product_code as int) as product_id",
