@@ -26,11 +26,10 @@ df.cache() # Stores the DataFrame in memory
 df.persist() # Default stores in memory, can specifydifferent storage levels 
 
 If a column contains arrays, use explode to flatten them.
-
+```python
 from pyspark.sql.functions import explode
-
 df_exploded = df.withColumn("exploded_column",explode(df["array_column"]))
-
+```
 
 Use coalesce for Efficient Repartitioning If you have too many small partitions, use coalesce toreduce them efficiently.
 
@@ -590,12 +589,12 @@ display(
     .withColumn('ID', F.monotonically_increasing_id()+1 )
 )
 ```
-### Aggregate
- 
+### Aggregate group by
+``` python 
 df = df.groupBy('gender').agg(F.max('age').alias('max_age_by_gender'))
 
 df = df.groupBy('age').agg(F.collect_set('name').alias('person_names'))
-
+```
 ### Get the aggregated values and list them in a new variable
 ```python
 display(
@@ -663,8 +662,8 @@ sub_df = (
         )
 
 ```
-# Moving Average
---------------------
+#### Moving Average
+```python
 window = (
     Window
     .partitionBy("store_id", "product_id")
@@ -677,18 +676,18 @@ sub_df = (
     sub_df
     .withColumn("moving_avg", F.round(F.mean("sales_qty").over(window), 2))
 )
-
-# Explode
-----------
+```
+#### Explode array
+```python
 
 from pyspark.sql.functions import explode
 data = [("Alice", [1, 2, 3]), ("Bob", [4, 5]), ("Charlie", [6])]
 df = spark.createDataFrame(data, ["name", "numbers"])
 # explode the numbers column
 df_exploded = df.select("name", explode("numbers").alias("number"))
-
-# Pivot 
---------
+```
+### Pivot 
+```python
 data = [("Alice", "apples", 10), ("Alice", "oranges", 5),
         ("Bob", "apples", 7), ("Bob", "oranges", 3),
         ("Charlie", "apples", 2), ("Charlie", "oranges", 1)]
@@ -696,46 +695,45 @@ df = spark.createDataFrame(data, ["name", "fruit", "quantity"])
 
 # pivot the fruit column
 df_pivoted = df.groupBy("name").pivot("fruit", ["apples", "oranges"]).agg(sum("quantity"))
-
-# Array
----------
+```
+###  Array
+ 
 from pyspark.sql import functions as F, types as T
 
-# Column Array - F.array(*cols)
+#### Column Array - F.array(*cols)
 df = df.withColumn('full_name', F.array('fname', 'lname'))
 
-# Empty Array
+#### Empty Array
 df = df.withColumn('empty_array_column', F.array([]))
 
-# Get element at index
+##### Get element at index
 df = df.withColumn('first_element', F.col("my_array").getItem(0))
 
-# Array Size/Length
+#### Array Size/Length
 df = df.withColumn('array_length', F.size('my_array'))
 
-# Flatten Array
+#### Flatten Array
 df = df.withColumn('flattened', F.flatten('my_array'))
 
-# Unique/Distinct
+##### Unique/Distinct
 df = df.withColumn('unique_elements', F.array_distinct('my_array'))
 
-# Map over & transform array elements
+##### Map over & transform array elements
 # ["This", "is", "very", "verbose"] -> [4, 2, 4, 7]
 df = df.withColumn("len_col", transform("array_col", lambda x: length(x)))
 
 # Explode & collect
+```python
 from pyspark.sql.functions import explode, length, collect_list
 df = df.withColumn("col_temp", explode("array_col")).withColumn("len_col_temp", length("col_temp"))
    .groupBy("unique_id").agg(collect_list("len_col_temp").alias("len_col")
 ```
 
-### Window fuctions
+### Window functions
 https://towardsdatascience.com/5-examples-to-master-pyspark-window-operations-26583066e227
 
 https://sairamdgr8.medium.com/acing-apache-spark-dataframes-interview-questions-series-using-pyspark-with-window-functions-4a38e6f80d19
-```
-# Window functions in pyspark
-----------------------------------
+```python
 from pyspark.sql.window import Window
 from pyspark.sql.functions import col, row_number, rank, dense_rank, lead,lag, percent_rank, ntile, mean
 from pyspark.sql import functions as f
@@ -744,22 +742,21 @@ spark = SparkSession.builder.appName('Spark_window_functions').getOrCreate()
 emp_df = spark.read.csv(r'emp.csv',header=True,inferSchema=True) 
 emp_df.show(10)
 
-# Window definition / spec
 win_func = Window.partitionBy(emp_df['DEPTNO']).orderBy(emp_df['SAL'].desc()) 
 
 emp_df.withColumn('rank',row_number().over(win_func)).show()
 
 # Equivalent SQL
-select e.*, row_number() over(partition by deptno order by sal desc) rank from emp e) rk 
+# select e.*, row_number() over(partition by deptno order by sal desc) rank from emp e) rk 
 
-------------------------
+
 win = Window.partitionBy(df1['channel_code']).orderBy(df1['sum_spent'].desc())
 
 revenue_difference = (df1['sum_spent']-lead(df1['sum_spent']).over(win))
 df1.select(df1['channel_code'],df1['prod_code'],
             df1['sum_spent'],revenue_difference.\ 
             alias('spent_diff_lead')).show(truncate=False)
---------------            
+            
 winrow = Window.partitionBy(df1['channel_code']) \
                          .orderBy(df1['sum_spent'].desc()) \
                          .rowsBetween(Window.unboundedPreceding, 
@@ -768,7 +765,7 @@ revenue_difference =(f.max(df1['sum_spent']).over(winrow)-df1['sum_spent'])
 df1.select(df1['channel_code'],df1['prod_code'],
               df1['sum_spent'],revenue_difference \
               .alias("spend_difference")).show(truncate=False)
--------------------
+
 winra=Window.partitionBy(df1['channel_code']) \
                         .orderBy(df1['sum_spent'].desc()) \
                         .rangeBetween(Window.unboundedPreceding,
@@ -804,7 +801,7 @@ https://www.amazon.com/dp/1804612987 Causal Inference and Discovery in Python: U
 https://www.youtube.com/watch?v=jWZ9K1agm5Y  PySpark Course: Big Data Handling with Python and Apache Spark
 
 ### Find the Highest & Lowest Salaried Employee in each Department
-```
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import min,max,col,rank,desc
 from  pyspark.sql.window import Window
@@ -830,7 +827,7 @@ final_df=df_1.join(df_2,df_1.emp_dep_id == df_2.emp_min_dep_id,'inner')
 final_df.select("emp_dep_id","emp_max_salary","emp_min_salary").display()
 ```
 ### Compute  total counts of each of  unique words on a spark: map() and flatMap()
-```
+```python
 sc.textFile(“hdfs://user/bigtextfile.txt”);
 def toWords(line):
       return line.split()
@@ -849,29 +846,31 @@ counts = wordsTuple.reduceByKey(sum)
 ```
 
 ### JOIN
-```
-When you join dataframes with the same column name, the resultant frame contains all columns from both DataFrames. 
-We will end up with duplicate columns. To get a join result with out duplicate you have to use:
+ 
+When you join dataframes with the same column name, the resultant frame contains all columns from both DataFrames.   
+We will end up with duplicate columns.  
+To get a join result with out duplicate you have to use:
 
   
 empDF.join(deptDF,["dept_id","branch_id"]).show()
-```
+ 
 https://sparkbyexamples.com/pyspark/pyspark-join-explained-with-examples/
 
 https://sparkbyexamples.com/pyspark/pyspark-join-multiple-columns/
 
 # PySpark join multiple columns syntax 1
-```
+```python
 empDF.join(deptDF, (empDF["dept_id"] == deptDF["dept_id"]) &
    ( empDF["branch_id"] == deptDF["branch_id"])).show()
 ```
 # PySpark join multiple columns syntax 2 using where  or filter:
-```
+```python
 empDF.join(deptDF).where((empDF["dept_id"] == deptDF["dept_id"]) &
     (empDF["branch_id"] == deptDF["branch_id"])).show()
 ```
 
-```
+### F.lit and union example
+```python
 
 yesterday_df = spark.createDataFrame([
  (1,"hulu","90046"),
@@ -914,7 +913,7 @@ df_new.union(df_old).show()
 ```
 
 ### INNER JOIN with renaming columns to avoid column names duplications:
-```
+```python
 df_new.join(df_old, df_old.user_id == df_new.user_id, "inner").select(
  df_old.user_id,
  df_old.product_name.alias("old_product_name"),
@@ -947,7 +946,7 @@ df_new.join(df_old,
 (df_old.user_id == df_new.user_id) , "inner").show()
 ```
 ### Find records with same id but different zip code or product_name:
-```
+```python
 df_new.join(df_old,
 (df_old.user_id == df_new.user_id) &
 ((df_old.product_name != df_new.product_name)  | (df_old.zip_code != df_new.zip_code )) , "inner").show()
@@ -987,9 +986,8 @@ df_inner_2 = df_new.join(df_old,
 
 ```
 ### Find records which exists in both  dfs and product_name and zip_code are the same:
-```
  this syntax will eliminate duplicate column names
-
+```python
 df_new.join(df_old,["user_id","product_name","zip_code"]).show()
 
 df_exact_match = df_new.join(df_old,["user_id","product_name","zip_code"])
@@ -1079,7 +1077,7 @@ https://medium.com/@suffyan.asad1/an-introduction-to-pandas-udfs-in-pyspark-a0a5
 
 
 ### Update Dataframe
-```
+```python
 import pyspark.sql.functions as F
 from pyspark.sql.functions import col, when 
 path= "s3://b2c-prod-dca-model-evaluate/oss/MPS_APPIQ_TAXONOMY_WEIGHTS_DS/version=0.3/"
@@ -1109,13 +1107,12 @@ StructField takes a fieldname and type of the value.
 https://sparkbyexamples.com/pyspark/pyspark-maptype-dict-examples/
 
 
-```
+```python
 from pyspark.sql.types import StructField, StructType, StringType, MapType
 schema = StructType([
     StructField('name', StringType(), True),
     StructField('properties', MapType(StringType(),StringType()),True)
 ])
-
 
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
@@ -1152,7 +1149,7 @@ df2.printSchema()
 
 ### Explode
 Explode properties column: will generate 2 columns: key and value
-```
+```python
 from pyspark.sql.functions import explode
 df.select(df.name,explode(df.properties)).show()
 
@@ -1182,7 +1179,8 @@ df_exploded.show()
 | 2 | Alice | null     |
 +---+-------+----------+
 
-While PySpark explode() caters to all array elements, PySpark explode_outer() specifically focuses on non-null values. It ignores empty arrays and null elements within arrays, resulting in a potentially smaller dataset.
+While PySpark explode() caters to all array elements, PySpark explode_outer() specifically focuses on non-null values.  
+It ignores empty arrays and null elements within arrays, resulting in a potentially smaller dataset.
 
 from pyspark.sql.functions import explode_outer
 # Using explode_outer
@@ -1254,7 +1252,7 @@ df.groupBy('col1').agg(med_func).show()
 
 ### Window function to calculate sum and cumulative
 
-```
+```python
 from pyspark.sql import Window
 from pyspark.sql.functions import sum
 l = [
@@ -1370,7 +1368,7 @@ print(schema)
 ```
 
 ### Group by
-```
+```python
 df.filter(df.colname == 50.0).groupBy('another_colname').count().show()
 from pyspark.sql.functions import avg
 
@@ -1379,7 +1377,7 @@ df.groupBy("category").agg(avg("sales")).show()
 
 
 #### groupBy, sum, agg
-```
+```python
 df.groupBy('genre_id').agg(
  F.sum( (F.col('monetization_score').isNull()).cast('int') ).alias('monetization_null_count'),
  F.sum( (F.col('monetization_score').isNotNull()).cast('int') ).alias('monetization_NOT_null_count'),   
@@ -1389,7 +1387,7 @@ df.groupBy('genre_id').agg(
 #### GROUP BY HAVING COUNT() > 1
 
 
-```
+```python
 df.groupBy(*cols).count().show()
 
 df.groupBy(*cols).count().filter(F.col('count')>1).show()
@@ -1397,7 +1395,7 @@ df.groupBy(*cols).count().filter(F.col('count')>1).show()
 
 ### Question: how to convert this to PySpark?
 
-```
+```sql
 sqlContext.sql("
 select Category,count(*) as count from hadoopexam
 where HadoopExamFee < 3200  
@@ -1406,7 +1404,7 @@ having count>10
 ")
 ```
 ### Answer to question above:
-```
+```python
 from pyspark.sql.functions import *
 
 df.filter(df.HadoopExamFee<3200)
@@ -1441,9 +1439,6 @@ Row(age=2, name='Alice')
 https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.first.html
 
 
-
-
-
 ### Infinity:
 ```
 def _replace_infs(c, v):
@@ -1462,7 +1457,7 @@ df = df.withColumn(
 ```
 ### Expression
 https://www.nbshare.io/notebook/374005461/Pyspark-Expr-Example/
-```
+```python
 from pyspark.sql.functions import (col, expr)
 # here we update the column "Classify" using the CASE expression. 
 # The conditions are based on the values in the Salary column
@@ -1488,7 +1483,7 @@ https://stackoverflow.com/questions/39067505/pyspark-display-a-spark-data-frame-
 
 ### Example: F.expr, any(), head(), lit(), cast(), check for nulls
 
-```
+```python
         for col in df.columns:
             has_nulls = f"any({col} is null)"
             if df.select(F.expr(has_nulls)).head()[0]:
@@ -1549,7 +1544,7 @@ df.selectExpr(cols).show()
 
 ### CSV
 
-```
+```python
 from pyspark.sql.types import *
 
 csv_schema = StructType(
@@ -1576,7 +1571,7 @@ fname="file:/dbfs/FileStore/uploads/mlubinsky/20220728_mps_weights.csv"
 
 df_csv = spark.read.option("header",True).option("delimiter",",").schema(csv_schema).csv(fname)
 
-df_ordered=df_csv.select("genre_id","downloads_weight","mps_total_downloads_weight","revenue_weight","mps_total_revenue_weight","mps_monetization_sov_weight","rau_weight","afu_weight","adu_weight","atu_weight","ris_weight","cumulative_rating_count_weight","incremental_rating_count_weight","cumulative_ratings_average_weight","incremental_ratings_average_weight")
+df_ordered=df_csv.select("genre_id","downloads_weight","mps_total_downloads_weight","revenue_weight")
 ```
 
 ### CLEAR
@@ -1584,7 +1579,7 @@ df_ordered=df_csv.select("genre_id","downloads_weight","mps_total_downloads_weig
 aws s3 rm --recursive s3://aardvark-prod-dca-data/oss/MPS_APPIQ_TAXONOMY_WEIGHTS
 
 ### DELTA
-```
+```python
 ### WRITE
 import pyspark.sql.functions as F
 path = "s3://aardvark-prod-dca-data/oss/MPS_APPIQ_TAXONOMY_WEIGHTS/"
@@ -1675,7 +1670,8 @@ which is an analytics engine used for large-scale data processing.
 
 We’ll create a small dataset for a few rows and columns.
 It’s enough to demonstrate and explain the two cases we’ll cover. Both are applicable to much larger datasets as well.
-
+```
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql import Window, functions as F
 
@@ -1707,7 +1703,9 @@ df.show()
 The DataFrame contains 4 rows and 3 columns and there is a missing value (i.e. NULL) in the second row of the second column.
 
 1. concat and concat_ws
-The concat and concat_ws functions are used for concatenating (i.e. combining) string columns. There is a small difference between them in the case of having Null values. We need to take it into consideration. Otherwise, the result of the concatenation operation might be misleading.
+The concat and concat_ws functions are used for concatenating (i.e. combining) string columns.  
+There is a small difference between them in the case of having Null values. We need to take it into consideration.
+ Otherwise, the result of the concatenation operation might be misleading.
 
 Let’s first use the concat function to combine the group_1 and group_2 columns to create a new column called group .
 
