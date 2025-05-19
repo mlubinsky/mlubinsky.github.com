@@ -122,6 +122,8 @@ https://github.com/alex/what-happens-when when you press button on keyboard
 
 ### ALGO 
 
+16 problem solving patterns that will help you learn DSA faster:
+
 1. https://leetcode.com/problems/minimum-window-substring/solutions/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems/
 
 2. https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/1175088/C++-Maximum-Sliding-Window-Cheatsheet-Template/
@@ -138,7 +140,14 @@ https://github.com/alex/what-happens-when when you press button on keyboard
    
 8. https://leetcode.com/problems/permutations/solutions/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)/
    
-9. https://leetcode.com/discuss/study-guide/937307/Iterative-or-Recursive-or-DFS-and-BFS-Tree-Traversal-or-In-Pre-Post-and-LevelOrder-or-Views
+9. https://leetcode.com/discuss/study-guide/937307/Iterative-or-Recursive-or-DFS-and-BFS-Tree-Traversal-or-In-Pre-Post-and-LevelOrder-or-Views  
+10. https://leetcode.com/discuss/study-guide/655708/Graph-For-Beginners-Problems-or-Pattern-or-Sample-Solutions  
+11. https://leetcode.com/discuss/study-guide/2347639/A-comprehensive-guide-and-template-for-monotonic-stack-based-problems  
+12. https://leetcode.com/discuss/study-guide/4282051/all-types-of-patterns-for-bits-manipulations-and-how-to-use-it  
+13. https://leetcode.com/discuss/study-guide/2001789/Collections-of-Important-String-questions-Pattern  
+14. https://medium.com/leetcode-patterns/leetcode-pattern-1-bfs-dfs-25-of-the-problems-part-1-519450a84353  
+15. https://medium.com/leetcode-patterns/leetcode-pattern-2-dfs-bfs-25-of-the-problems-part-2-a5b269597f52  
+16.  https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 
 16 problem solving patterns that will help you learn DSA faster:
 
