@@ -58,6 +58,48 @@ df = df.withColumn(
 )
 ```
 
+### agg
+
+pyspark.sql.DataFrame.agg is a function in PySpark used to compute aggregate values on a DataFrame.   
+It allows you to apply various aggregation functions, such as sum, avg, min, max, and count, to one or more columns.   
+he agg function can be used on the entire DataFrame or after grouping the data using groupBy.  
+
+df.agg(*exprs)
+
+df.groupBy(*cols).agg(*exprs)
+
+exprs: It can be a single dict mapping from string to string, then the key is the column to perform aggregation on, and the value is the aggregate function.  
+ Alternatively, exprs can also be a list of aggregate Column expressions. 
+```python
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, avg, max, min
+
+# Create a SparkSession
+spark = SparkSession.builder.appName("AggExample").getOrCreate()
+
+# Sample data
+data = [("Alice", 25, 50000),
+        ("Bob", 30, 60000),
+        ("Alice", 28, 55000),
+        ("Bob", 32, 65000),
+        ("Charlie", 24, 45000)]
+
+# Create a DataFrame
+df = spark.createDataFrame(data, ["Name", "Age", "Salary"])
+
+# Aggregate on the entire DataFrame
+df.agg(avg("Age").alias("Average Age"),
+       max("Salary").alias("Maximum Salary"),
+       min("Salary").alias("Minimum Salary")).show()
+
+# Group by "Name" and aggregate
+df.groupBy("Name").agg(avg("Age").alias("Average Age"),
+                          max("Salary").alias("Maximum Salary"),
+                          min("Salary").alias("Minimum Salary")).show()
+
+# Stop the SparkSession
+spark.stop()
+```
 ### groupBy count, avg agg
 ```python
 df.filter(df.colname == 50.0).groupBy('another_colname').count().show()
