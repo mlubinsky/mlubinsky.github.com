@@ -94,6 +94,8 @@ Trusted by Microsoft, GoDaddy, and more. Freelance projects for all skills.
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
 
+
+
 ### TOP K problem
 
 https://www.youtube.com/watch?v=kx-XDoPjoHw Top K Problem (Heavy Hitters)
@@ -120,7 +122,23 @@ https://github.com/alex/what-happens-when when you press button on keyboard
 
 ### ALGO 
 
-https://leetcode.com/problems/minimum-window-substring/solutions/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems/
+1. https://leetcode.com/problems/minimum-window-substring/solutions/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems/
+
+2. https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/1175088/C++-Maximum-Sliding-Window-Cheatsheet-Template/
+
+3. https://leetcode.com/discuss/post/1688903/Solved-all-two-pointers-problems-in-100-days/
+
+4. https://medium.com/leetcode-patterns/leetcode-pattern-3-backtracking-5d9e5a03dc26
+
+5. https://leetcode.com/discuss/study-guide/458695/Dynamic-Programming-Patterns
+
+6. https://leetcode.com/discuss/study-guide/1437879/Dynamic-Programming-Patterns
+
+7. https://leetcode.com/discuss/study-guide/786126/Python-Powerful-Ultimate-Binary-Search-Template.-Solved-many-problems
+   
+8. https://leetcode.com/problems/permutations/solutions/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)/
+   
+9. https://leetcode.com/discuss/study-guide/937307/Iterative-or-Recursive-or-DFS-and-BFS-Tree-Traversal-or-In-Pre-Post-and-LevelOrder-or-Views
 
 16 problem solving patterns that will help you learn DSA faster:
 
