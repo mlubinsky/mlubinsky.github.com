@@ -17,14 +17,43 @@ https://sparkbyexamples.com/pyspark/pyspark-sql-expr-expression-function/
 
 https://www.projectpro.io/recipes/define-expr-function-pyspark
 
-expr() function takes SQL expression as a string argument, executes the expression, and returns a PySpark Column type. 
+expr() function takes SQL expression as a string argument, executes the expression  
+It returns a PySpark Column type. ???
+```python
 
+from pyspark.sql.functions import expr
+data=[(100,2),(200,3000),(500,500)] 
+df=spark.createDataFrame(data).toDF("col1","col2") 
+df.filter(expr("col1 == col2")).show()
+
+df.withColumn("Name",expr(" col1 ||','|| col2")).show()
+
+df.select(df.date,df.increment,
+     expr("""add_months(date,increment) as inc_date""")
+  ).show()
+
+df.select(df.date,df.increment,
+     expr("increment + 5 as new_increment")
+  ).show()
+```
+### SQL CASE using expr()
+```python
+from pyspark.sql.functions import expr
+data = [("James","M"),("Michael","F"),("Jen","")]
+columns = ["name","gender"]
+df = spark.createDataFrame(data = data, schema = columns)
+
+#Using CASE WHEN similar to SQL.
+from pyspark.sql.functions import expr
+df2=df.withColumn("gender", expr("CASE WHEN gender = 'M' THEN 'Male' " +
+           "WHEN gender = 'F' THEN 'Female' ELSE 'unknown' END"))
+```
 ### SQL CASE in PySpark: when ... otherwise
 ```python
 df = df.withColumn(
-    "dummy", \
-    F.when(F.col("group_1")=="A", 100) \
-    .when(((F.col("group_1")=="B") & (F.col("group_2")=="124")), 200) \
+    "dummy",  
+    F.when(F.col("group_1")=="A", 100)  
+    .when(((F.col("group_1")=="B") & (F.col("group_2")=="124")), 200)  
     .otherwise(300)
 )
 ```
@@ -103,6 +132,17 @@ sub_df = data.selectExpr("store_code as store_id",
 ### withColumn  
 
 df = df.withColumn("new_column",df["existing_column"] * 10)
+
+### greatest and least
+    greatest value of the list of column names, skipping null values
+```
+import pyspark.sql.functions as  F
+df = spark.createDataFrame([(1, 4, 3)], ['a', 'b', 'c'])
+df.select(greatest(df.a, df.b, df.c).alias("greatest")).collect()
+[Row(greatest=4)]
+
+df.select(least(df.a, df.b, df.c).alias("least")).collect()
+```
 
 ### Cache vs persist
 df.cache() # Stores the DataFrame in memory
