@@ -57,12 +57,73 @@ df = df.withColumn(
     .otherwise(300)
 )
 ```
+
+### groupBy count, avg agg
+```python
+df.filter(df.colname == 50.0).groupBy('another_colname').count().show()
+from pyspark.sql.functions import avg
+
+df.groupBy("category").agg(avg("sales")).show()
+```
+
+
+#### groupBy, sum, agg
+```python
+df.groupBy('genre_id').agg(
+ F.sum( (F.col('monetization_score').isNull()).cast('int') ).alias('monetization_null_count'),
+ F.sum( (F.col('monetization_score').isNotNull()).cast('int') ).alias('monetization_NOT_null_count'),   
+).orderBy('genre_id').show(40)
+```
+
+#### GROUP BY HAVING COUNT() > 1
+
+
+```python
+df.groupBy(*cols).count().show()
+
+df.groupBy(*cols).count().filter(F.col('count') > 1).show()
+```
+
+### Question: how to convert this SQL to PySpark?
+
+```sql
+sqlContext.sql("
+      select Category,count(*) as count
+      from hadoopexam
+      where HadoopExamFee < 3200  
+      group by Category
+      having count > 10
+")
+```
+### Answer to question above: use groupBy agg count filter
+```python
+from pyspark.sql.functions import *
+
+df.filter(df.HadoopExamFee<3200)
+  .groupBy('Category')
+  .agg(count('Category').alias('count'))
+  .filter(col('count') > 10)
+```
+
+### Generic answer:
+```
+df.groupBy(someExpr).agg(somAgg).where(somePredicate) 
+```
+### Get value from the df with single row and col:
+```
+df = spark.sql('select count(1) as count_check from schema.table')
+value = df.collect()[0][0]
+```
+
+
+
 #### groupBy +  agg (avg, sum)
 
 df.groupBy("department").agg({"salary": "avg","bonus": "sum"}).show()
 
 ### (agg, count, when) - all together 
-```python 
+```python
+from pyspark.sql import functions as F
 counts = one_day_df.agg(
     F.count(F.when(F.col("percent_completed") > 1000, True)).alias("count_greater_than_1000"),
     F.count(F.when((F.col("percent_completed") >= 100) & (F.col("percent_completed") <= 1000), True)).alias("count_between_100_and_1000"),
@@ -1447,61 +1508,8 @@ schema = df._jdf.schema().treeString()
 print(schema)
 ```
 
-### Group by
-```python
-df.filter(df.colname == 50.0).groupBy('another_colname').count().show()
-from pyspark.sql.functions import avg
 
-df.groupBy("category").agg(avg("sales")).show()
-```
-
-
-#### groupBy, sum, agg
-```python
-df.groupBy('genre_id').agg(
- F.sum( (F.col('monetization_score').isNull()).cast('int') ).alias('monetization_null_count'),
- F.sum( (F.col('monetization_score').isNotNull()).cast('int') ).alias('monetization_NOT_null_count'),   
-).orderBy('genre_id').show(40)
-```
-
-#### GROUP BY HAVING COUNT() > 1
-
-
-```python
-df.groupBy(*cols).count().show()
-
-df.groupBy(*cols).count().filter(F.col('count')>1).show()
-```
-
-### Question: how to convert this to PySpark?
-
-```sql
-sqlContext.sql("
-select Category,count(*) as count from hadoopexam
-where HadoopExamFee < 3200  
-group by Category
-having count>10
-")
-```
-### Answer to question above:
-```python
-from pyspark.sql.functions import *
-
-df.filter(df.HadoopExamFee<3200)
-  .groupBy('Category')
-  .agg(count('Category').alias('count'))
-  .filter(col('count')>10)
-```
-
-### Generic answer:
-```
-df.groupBy(someExpr).agg(somAgg).where(somePredicate) 
-```
-### Get value from the df with single row and col:
-```
-df = spark.sql('select count(1) as count_check from schema.table')
-value = df.collect()[0][0]
-```
+ 
 ### head() vs first()
 DataFrame.head(n=None)   (default - return 1 row)
 https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.head.html
