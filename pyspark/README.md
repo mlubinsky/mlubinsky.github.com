@@ -11,6 +11,14 @@ df.select("column1", "column2").display()
 df.select(col("column1").alias("new_column1")).display()
 df.select(col("Name").alias("EmployeeName"), "Age").show()
 ```
+
+### expr()
+https://sparkbyexamples.com/pyspark/pyspark-sql-expr-expression-function/
+
+https://www.projectpro.io/recipes/define-expr-function-pyspark
+
+expr() function takes SQL expression as a string argument, executes the expression, and returns a PySpark Column type. 
+
 ### SQL CASE in PySpark: when ... otherwise
 ```python
 df = df.withColumn(
