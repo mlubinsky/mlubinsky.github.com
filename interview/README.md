@@ -120,6 +120,8 @@ https://github.com/alex/what-happens-when when you press button on keyboard
 
 ### ALGO 
 
+https://leetcode.com/problems/minimum-window-substring/solutions/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems/
+
 16 problem solving patterns that will help you learn DSA faster:
 
 1) https://lnkd.in/giASrwds
