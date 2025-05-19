@@ -82,38 +82,40 @@ for col_name in columns_to_drop:
      df_extra = df_extra.withColumn("entity", col("entity").dropFields(col_name))
      
 ```
-What is PySpark code does:
-```
+### Question: What is PySpark code does?
+```python
 
 merged_df.select(
     [F.coalesce(df_unique[col], prev_snapshot[col]).alias(col) for col in prev_snapshot.columns]
 ).distinct()
-?
-ChatGPT said:
-ChatGPT
+```
+
 This PySpark code performs the following operations on merged_df:
 
 Column Selection with Coalescing:
 
-python
-Copy code
+ 
 [F.coalesce(df_unique[col], prev_snapshot[col]).alias(col) for col in prev_snapshot.columns]
+
 This list comprehension iterates over each column in prev_snapshot.columns.
+
 For each column, it creates a new column using F.coalesce() between df_unique[col] and prev_snapshot[col].
+
 F.coalesce() returns the first non-null value from the two columns: if df_unique[col] is null, it will take the value from prev_snapshot[col].
+
 The result of F.coalesce() is given an alias matching the column name (col) so that the final DataFrame has the same column names as prev_snapshot.
 Select and Distinct:
 
-python
-Copy code
+ 
 merged_df.select(...).distinct()
+
 The .select(...) statement selects all the coalesced columns created in the list comprehension, generating a new DataFrame where each column contains either the non-null value from df_unique or prev_snapshot.
 .distinct() removes any duplicate rows from the selected DataFrame.
-Summary
+ 
 This code creates a DataFrame that combines values from df_unique and prev_snapshot by filling in nulls in df_unique with corresponding values from prev_snapshot. It then removes duplicate rows from the result.
 
 In essence, it’s merging the two DataFrames on a column-by-column basis, preferring values from df_unique while filling in any gaps with values from prev_snapshot, and ensuring no duplicate rows in the final output.
-```
+ 
 
 ### Catalyst
 ```
@@ -179,7 +181,7 @@ df1.substract(df2).isEmpty() and df2.substract(df1).isEmpty()
 ```
 
 ### Analyze dataframe
-```
+```python
 from pyspark.sql import functions as F
 
 def analyze_dataframe(df, cols_of_interest, combinations_of_columns):
@@ -223,7 +225,7 @@ def analyze_dataframe(df, cols_of_interest, combinations_of_columns):
 
 ```
 ### Example of usage:
-```
+```python
 # Example DataFrame
 data = [
     ("A", 1, None), 
@@ -244,7 +246,7 @@ analyze_dataframe(df, cols_of_interest, combinations_of_columns)
 ```
 
 ### Gemini
-```
+```python
 import pyspark.sql.functions as F
 
 def data_quality_analysis(df, cols_of_interest, list_of_cols_combinations):
@@ -281,7 +283,7 @@ def data_quality_analysis(df, cols_of_interest, list_of_cols_combinations):
     df.groupBy(*cols_comb).count().show()
 ```
 ### Gemini usage
-```
+```python
 # Create a DataFrame
 df = spark.createDataFrame(
     [
@@ -316,7 +318,7 @@ Here are 6 Python libraries you can use to make the EDA process easier:
 https://github.com/ydataai/ydata-profiling
 
 ### Different ways to read data into PySpark:
-```
+ 
 1.Reading from CSV Files:
  df = spark.read.csv("path/to/file.csv", header=True, inferSchema=True)
 
@@ -339,7 +341,7 @@ https://github.com/ydataai/ydata-profiling
  user="username",
  password="password"
  ).load()
-
+```
 6.Reading from Hive Tables:
  If you have a Hive context set up:
  df = spark.sql("SELECT * FROM hive_table_name")
@@ -357,13 +359,13 @@ https://github.com/ydataai/ydata-profiling
 10. Reading from Delta Lake:
  If using Delta Lake:
  df = spark.read.format("delta").load("path/to/delta_table")
-```
+ 
 
 
 
 ### Generate dataframe
 
-```
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, ArrayType, LongType
 from pyspark.sql import Row
@@ -393,8 +395,8 @@ df = spark.createDataFrame([Row(*row) for row in data], schema)
 df.show(truncate=False)
 df.printSchema()
 ```
-### Find the median salary for each department?
-```
+### Find the median salary for each department 
+```python
 
 from pyspark.sql import functions as F
 from pyspark.sql.window import Window
@@ -511,21 +513,25 @@ https://medium.com/@maitreemanna8002/pyspark-optimization-technique-for-better-p
 
 https://medium.com/@Zakbasil/pyspark-performance-improvement-part-1-04a2e3bed7bd
 
-```
-# Add an increasing ID column starting in 1
+
+
+
+### Add an increasing ID column starting in 1
+```python
 display(
     df
     .limit(100)
     .withColumn('ID', F.monotonically_increasing_id()+1 )
 )
-
-## Aggregate
-----------------
+```
+### Aggregate
+ 
 df = df.groupBy('gender').agg(F.max('age').alias('max_age_by_gender'))
 
 df = df.groupBy('age').agg(F.collect_set('name').alias('person_names'))
 
-# Get the aggregated values and list them in a new variable
+### Get the aggregated values and list them in a new variable
+```python
 display(
     df.limit(50)
     .groupBy('cut')
@@ -545,33 +551,33 @@ df
           F.min('price').alias('min_price'),
           F.max('price').alias('max_price') 
 )
-
-# COUNT_IF
-----------
+```
+#### COUNT_IF
+```python
 display(
     df
     .groupBy('cut')
     .agg( F.count_if( col('price') > 18000))
 )
+```
 
-
-## Median
-------------
+### Median
+```python
     df
     .groupBy('cut')
     .agg( F.median('price').alias('median'),
      F.percentile('price', 0.5).alias('50th pct'))
+```
 
-
-## SelectExpr
----------------
+### SelectExpr
+```python
 sub_df = data.selectExpr("store_code as store_id",
                          "cast(product_code as int) as product_id",
                          "cast(sales_date as date) as date",
                          "cast(sales_qty as int)")
-
-# Moving Average using expr()
-----
+```
+#### Moving Average using expr()
+```python
 expression = """
 mean(sales_qty) over (partition by store_id, product_id order by date 
 rows between 2 preceding and current row)
@@ -581,15 +587,16 @@ sub_df = (
     sub_df
     .withColumn("moving_avg", F.round(F.expr(expression), 2))
 )
-
+```
 #### String split()
+```python
  display( df
         .select( col('carat').cast('string'))
         .select( F.split('carat', '\.')[0],
                  F.split('carat', '\.')[1] ) 
         )
 
-
+```
 # Moving Average
 --------------------
 window = (
