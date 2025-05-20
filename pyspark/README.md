@@ -5,11 +5,14 @@ https://medium.com/@suffyan.asad1/introduction-to-aggregate-and-transform-functi
 
 https://medium.com/@suffyan.asad1/spark-leveraging-window-functions-for-time-series-analysis-in-pyspark-03aa735f1bdf
 
-### Plain select
+### Plain select()
 ```python
+from pyspark.sql.functions import count, avg, sum, min, max
+
 df.select("column1", "column2").display()
 df.select(col("column1").alias("new_column1")).display()
 df.select(col("Name").alias("EmployeeName"), "Age").show()
+df.select(avg("sales")).show()
 ```
 
 ### expr()
