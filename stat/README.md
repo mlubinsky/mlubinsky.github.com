@@ -44,6 +44,11 @@ https://habr.com/ru/companies/otus/articles/809147/
 
 https://habr.com/ru/companies/aktiv-company/articles/823510/
 
+https://habr.com/ru/articles/912270/
+
+Три парадокса теории вероятностей
+https://habr.com/ru/articles/912270/
+
 
 ### Statistical process control
 using SQL
