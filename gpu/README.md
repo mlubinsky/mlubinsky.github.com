@@ -1,5 +1,9 @@
 https://habr.com/ru/companies/timeweb/articles/909122/
 
+https://thechipletter.substack.com/p/demystifying-gpu-compute-architectures
+
+https://habr.com/ru/companies/selectel/articles/912108/
+
 https://blog.codingconfessions.com/p/gpu-computing
 
 https://www.youtube.com/watch?v=h9Z4oGN89MU
