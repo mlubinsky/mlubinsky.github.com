@@ -1,3 +1,5 @@
+https://docs.nvidia.com/cuda/pdf/CUDA_C_Programming_Guide.pdf
+
 https://habr.com/ru/companies/timeweb/articles/909122/
 
 https://thechipletter.substack.com/p/demystifying-gpu-compute-architectures
