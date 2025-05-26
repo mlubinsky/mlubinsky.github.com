@@ -1,3 +1,6 @@
+https://habr.com/ru/companies/itsumma/articles/912804/ Какие есть альтернативы Prometheus, если для метрик его стало недостаточно
+
+
 https://stackoverflow.com/questions/74729503/how-to-configure-https-for-grafana-on-windows-server-2022
 
 http://localhost:3000
