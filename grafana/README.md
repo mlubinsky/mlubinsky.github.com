@@ -5,6 +5,9 @@ https://stackoverflow.com/questions/74729503/how-to-configure-https-for-grafana-
 
 http://localhost:3000
 
+
+https://blog.devops.dev/10-must-have-grafana-dashboards-for-devops-engineers-299e9041ab24
+
 ### Prometheus HTTP API compatible server Python server 
 designed to statelessly connect Grafana to almost anything by implementing simple plugins.
 https://pages.fscherf.de/prometheus-virtual-metrics/  
