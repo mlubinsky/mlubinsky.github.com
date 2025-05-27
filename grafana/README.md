@@ -8,6 +8,8 @@ http://localhost:3000
 
 https://blog.devops.dev/10-must-have-grafana-dashboards-for-devops-engineers-299e9041ab24
 
+https://medium.com/@devlink/grafana-12-just-leveled-up-observability-as-code-and-dashboards-that-think-f6dd76a0dbfa
+
 ### Prometheus HTTP API compatible server Python server 
 designed to statelessly connect Grafana to almost anything by implementing simple plugins.
 https://pages.fscherf.de/prometheus-virtual-metrics/  
