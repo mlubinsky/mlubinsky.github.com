@@ -2,6 +2,9 @@ https://www.db-fiddle.com/
 
 https://sqlize.online/
 
+### First_Value()  LAST_VALUE()
+https://medium.com/towards-data-engineering/sql-first-and-last-value-functions-6e4519937965
+
 ```
 There is Postgres table T with  3 columns :  user , timestamp and  status. 
 The value in column  'status' can be 'YES' or  'NO'.   
