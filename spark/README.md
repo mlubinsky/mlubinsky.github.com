@@ -8,6 +8,8 @@ https://stats.stackexchange.com/questions/357963/what-is-the-difference-between-
 
 ### Spark 
 
+https://blog.det.life/3-proven-methods-to-access-spark-job-metrics-ui-history-server-even-after-job-completion-e6c35d09bb5f
+
 https://habr.com/ru/articles/901078/ Catalyst Optimizer
 
 https://medium.com/@suffyan.asad1/beginners-guide-to-spark-ui-how-to-monitor-and-analyze-spark-jobs-b2ada58a85f7
