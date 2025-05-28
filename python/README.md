@@ -20,6 +20,10 @@ https://habr.com/ru/companies/tensor/articles/790282/
 python CLI:
 https://medium.com/@martin.heinz/python-cli-tricks-that-dont-require-any-code-whatsoever-e7bdb9409aeb
 
+
+### CSV module
+https://medium.com/@ajaymaurya73130/10-powerful-things-you-didnt-know-python-s-csv-module-could-do-1577f577510d
+
 Generate dates in range
 ```
 import datetime
