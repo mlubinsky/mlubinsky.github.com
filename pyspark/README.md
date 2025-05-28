@@ -5,6 +5,10 @@ https://medium.com/@suffyan.asad1/introduction-to-aggregate-and-transform-functi
 
 https://medium.com/@suffyan.asad1/spark-leveraging-window-functions-for-time-series-analysis-in-pyspark-03aa735f1bdf
 
+https://anuja-shukla.medium.com/how-to-write-pyspark-dataframes-to-s3-like-a-pro-with-aws-glue-c675eb99bd75
+
+https://blog.devgenius.io/feature-engineering-with-pyspark-a-practical-guide-for-scalable-ml-pipelines-ec55aa1ac4c7
+
 ### Plain select()
 ```python
 from pyspark.sql.functions import count, avg, sum, min, max
