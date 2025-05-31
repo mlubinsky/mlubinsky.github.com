@@ -1,5 +1,7 @@
 ## Random proc
 
+https://habr.com/ru/articles/914146/ Random walking
+
 https://arxiv.org/pdf/1907.01060.pdf . (ru)
 
 https://jiha-kim.github.io/posts/introduction-to-stochastic-calculus/
