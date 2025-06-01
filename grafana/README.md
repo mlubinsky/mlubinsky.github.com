@@ -1,5 +1,7 @@
 https://habr.com/ru/companies/itsumma/articles/912804/ Какие есть альтернативы Prometheus, если для метрик его стало недостаточно
 
+Beginner’s Guide to the Grafana Open Source Ecosystem: 
+https://blog.prateekjain.dev/beginners-guide-to-the-grafana-open-source-ecosystem-433926713dfe
 
 https://stackoverflow.com/questions/74729503/how-to-configure-https-for-grafana-on-windows-server-2022
 
