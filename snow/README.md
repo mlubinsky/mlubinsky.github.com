@@ -25,7 +25,8 @@ It shows you how to use dbt and it only takes an hour or two.
 
 And then this mini dbt training: (it's free)
 https://lnkd.in/en8R_T9t
-It teaches you how to build data transformation pipeline on Snowflake, how to create unit test, how to create dbt workflow and how to create visualisation.
+It teaches you how to build data transformation pipeline on Snowflake, 
+how to create unit test, how to create dbt workflow and how to create visualisation.
 
 If you want a more comprehensive course, check this one: (also free)
 https://lnkd.in/e_D5XapS
@@ -45,9 +46,15 @@ https://docs.snowflake.com/en/sql-reference/constructs/asof-join
 
 ```
 ASOF JOIN
-An ASOF JOIN operation combines rows from two tables based on timestamp values that follow each other, precede each other, or match exactly. For each row in the first (or left) table, the join finds a single row in the second (or right) table that has the closest timestamp value. The qualifying row on the right side is the closest match, which could be equal in time, earlier in time, or later in time, depending on the specified comparison operator.
+An ASOF JOIN operation combines rows from two tables based on timestamp values
+that follow each other, precede each other, or match exactly.
+For each row in the first (or left) table, the join finds a single row in the second (or right) table
+that has the closest timestamp value.
+The qualifying row on the right side is the closest match,
+which could be equal in time, earlier in time, or later in time, depending on the specified comparison operator.
 
-This topic describes how to use the ASOF JOIN construct in the FROM clause. For a more detailed conceptual explanation of ASOF joins, see Analyzing time-series data.
+This topic describes how to use the ASOF JOIN construct in the FROM clause.
+For a more detailed conceptual explanation of ASOF joins, see Analyzing time-series data.
 
 See also JOIN, which covers the syntax for other standard join types, such as inner and outer joins.
 
@@ -105,7 +112,9 @@ alter table sales   cluster by (status, store_no);
 
 ### WDH
 ```
-Virtual Warehouse consists of several servers, and each server is a computer with (currently) eight virtual CPUs, memory and SSD storage.  When a query is executed, data is read from Remote Storage into Local Storage (SSD), acting as a data cache.  
+Virtual Warehouse consists of several servers, and each server is a computer with (currently)
+eight virtual CPUs, memory and SSD storage.
+When a query is executed, data is read from Remote Storage into Local Storage (SSD), acting as a data cache.  
 
 When created, a Virtual Warehouse comprises a cluster of servers that work together as a single machine and are sized as simple T-Shirt sizes.
 SIZE     NODES       VCPUs
@@ -120,7 +129,7 @@ X6LARGE
 
 
 create warehouse PROD_REPORTING with
-        warehouse_size     = SMALL
+       warehouse_size     = SMALL
        auto_suspend        = 600
        auto_resume         = true
        initially_suspended = true
@@ -223,33 +232,57 @@ https://medium.com/@pious.tiwari/use-spark-with-snowflake-as-datasource-c390447a
 <https://snowflakecommunity.force.com/s/question/0D50Z00009F8nPTSAZ/how-to-choose-the-right-virtual-warehouse-size-in-snowflake-for-your-workload>
 
 ```
-1. How does snowflake determine that sufficient resources are not available for a particular query? To put it in a different way, how does snowflake determine the amount resources required by a query?
+1. How does snowflake determine that sufficient resources are not available for a particular query?
+To put it in a different way, how does snowflake determine the amount resources required by a query?
 
-Snowflake has real time data on CPU, memory and SSD usage on the cluster, and estimates of the cost of executing queries to determine if there are resources available. For example, a query estimated to scan terabytes of data may need to run on every node on the cluster in parallel, would need sufficient free resources to be executed, and may be suspended until resources are available. The objective is to provide a consistent query elapsed time for a given warehouse size.
+Snowflake has real time data on CPU, memory and SSD usage on the cluster,
+and estimates of the cost of executing queries to determine if there are resources available.
+ For example, a query estimated to scan terabytes of data may need to run on every node on the cluster in parallel,
+would need sufficient free resources to be executed, and may be suspended until resources are available.
+The objective is to provide a consistent query elapsed time for a given warehouse size.
 
-This means, once a query has started, it will be given resources to complete, and the machine will not be over-loaded with additional queries. (Unlike nearly every other on-premise data warehouse I've used).
+This means, once a query has started, it will be given resources to complete, and the machine will not be over-loaded with additional queries.
+ (Unlike nearly every other on-premise data warehouse I've used).
 
 2. Can we create multi-cluster warehouse with different sizes for each cluster?
 
 
-No. The multi-cluster feature aims to simply provide the same as existing query performance for additional users. You'll see why in the next question. 
+No. The multi-cluster feature aims to simply provide the same as existing query performance for additional users.
+ You'll see why in the next question. 
 
-3. "Multi-cluster warehouses are best utilized for scaling resources to improve concurrency for users/queries. They are not as beneficial for improving the performance of slow-running queries or data loading. For these types of operations, resizing the warehouse provides more benefits."
+3. "Multi-cluster warehouses are best utilized for scaling resources to improve concurrency for users/queries.
+They are not as beneficial for improving the performance of slow-running queries or data loading.
+ For these types of operations, resizing the warehouse provides more benefits."
 Is it better to use a warehouse of size Large or use a multi-cluster warehouse with two clusters of size Medium each?
 The statement implies that a huge resource hungry might run better on single big warehouse rather than on multi-cluster warehouse with small clusters. Why?
 
-The way I explain this to customers is (a) Scale up for data volumes (b) Scale out for additional users.
+The way I explain this to customers is
+(a) Scale up for data volumes
+(b) Scale out for additional users.
 
-Effectively, if you have query workloads processing gigabytes of data, the elapsed time will half each time you scale up the resources. This is because each increase includes more hardware. eg. A medium VWH has 4 nodes available but a large has 8 nodes. When a query is executed on a cluster, it will use (if available) as many as the nodes in parallel to execute the query. Hence a LARGE VWH will complete the same task twice as fast.
+Effectively, if you have query workloads processing gigabytes of data,
+the elapsed time will half each time you scale up the resources.
+This is because each increase includes more hardware.
+Example:
+ A MEDIUM VWH has 4 nodes available but a LARGE has 8 nodes.
+When a query is executed on a cluster, it will use (if available) as many as the nodes in parallel to execute the query.
+Hence a LARGE VWH will complete the same task twice as fast.
 
-Note: A very small query might only use one thread on a single node, and for this reason, increasing the warehouse size for very short running queries may not be the most efficient use of resources.
+Note: A very small query might only use one thread on a single node,and for this reason,
+increasing the warehouse size for very short running queries may not be the most efficient use of resources.
 
-However, if you configure your VWH to scale out (for example MEDIUM with a maximum of two clusters), it will ONLY scale out if the number of concurrent processes (or users) overload the machine. Any single query will only ever execute on a single MEDIUM sized cluster. The other queries will be free to use the second cluster.
-
+However, if you configure your VWH to scale out
+(for example MEDIUM with a maximum of two clusters),
+it will ONLY scale out if the number of concurrent processes (or users) overload the machine.
+Any single query will only ever execute on a single MEDIUM sized cluster.
+The other queries will be free to use the second cluster.
 
 That's why if you have a single LARGE cluster it will always complete a large workload twice as fast as a MEDIUM - even if multi-cluster (scale out) is switched on.
 
-Note: My tests (to be written up in an article) demonstrate performance does indeed double at each step in warehouse size - PROVIDED YOU'RE PROCESSING AT LEAST A GIGABYTE OF DATA. For very small queries (under 1Gb scanned), the performance gets no benefit over about an XLARGE.
+Note: My tests (to be written up in an article) demonstrate performance does indeed double at each step in warehouse size - PROVIDED YOU'RE PROCESSING AT LEAST A GIGABYTE OF DATA.
+
+ For very small queries (under 1Gb scanned), the performance gets no benefit over about an XLARGE.
+
 <https://www.reddit.com/r/BusinessIntelligence/comments/d1x42g/is_anyone_here_using_snowflake_i_especially_want/> . Criticizm
 
  Snowflake is case-sensitive. So you have to wrap any string queries in a lower() statement to get things to lower case. This requirement has resulted in some bad data from a few analysts (or longer query turnaround times) until we all got used to it.
@@ -288,7 +321,10 @@ Cool staff in snowflake 10 articles:
 
 <https://www.infoq.com/presentations/snowflake-automatic-clustering/>
 
- By default, Snowflake cluster is based on the order in which we receive the records. Just imagine a stream of records coming into the system and we just chop when we are able to create the file size. The only partitioning logic that we use is, "Are we able to create the file size that we want?" We keep collecting, let's say, we have 10 records when we can create the file size that we want, we chop at every 10 records and create this file and flush to S3. As you can see, it's the values are grouped only by one dimension and that is the dimension in which data is being loaded into the system. It's not grouped by any other logical dimension within the data. We don't look into the data itself and try to group it based on a specific column by default.
+ By default, Snowflake cluster is based on the order in which we receive the records.
+ Just imagine a stream of records coming into the system and we just chop when we are able to create the file size. 
+ The only partitioning logic that we use is, "Are we able to create the file size that we want?" We keep collecting, let's say, we have 10 records when we can create the file size that we want, we chop at every 10 records and create this file and flush to S3.
+ As you can see, it's the values are grouped only by one dimension and that is the dimension in which data is being loaded into the system. It's not grouped by any other logical dimension within the data. We don't look into the data itself and try to group it based on a specific column by default.
 
 ### Migration from Redshift
 
@@ -309,8 +345,9 @@ https://community.snowflake.com/s/article/Migrating-from-Redshift-to-Snowflake-i
 <https://medium.com/@jthandy/how-compatible-are-redshift-and-snowflakes-sql-syntaxes-c2103a43ae84>
 
 ```
-Warehouses” and “databases” are not the same thing within Snowflake. A database in Snowflake really 
-just represents a storage partition, while warehouses are compute resources.
+Warehouses” and “databases” are not the same thing within Snowflake.
+A database in Snowflake really just represents a storage partition,
+while warehouses are compute resources.
 
 You can have multiple warehouses processing data in the same “database” concurrently. 
 For example, you can have a “segment” warehouse writing to the “raw” database 
@@ -377,7 +414,7 @@ Reorder your columns
 Truncate data
 Your COPY command for a bulk or Snowpipe loading process can contain a “SELECT” part which transforms the data based on your requirements.
 
-Thatis is possible because of the great separation between storage and processing in Snowflake.
+That is is possible because of the great separation between storage and processing in Snowflake.
 
 We saw that it is possible to perform some core transformation tasks during the loading of your data into Snowflake. Although this is a powerful mechanism, you might still need to transform further your data to make it ready for consumption for your analysts. For example, you might want to create fact and dimension tables as part of a star schema.
 
