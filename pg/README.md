@@ -90,6 +90,31 @@ https://habr.com/ru/companies/otus/articles/900280/
 CREATE INDEX idx_users_active_only ON users(id)
 WHERE deleted_at IS NULL;
 ```
+
+### GROUPING
+
+https://habr.com/ru/articles/915056/
+
+```sql
+SELECT
+ CASE WHEN GROUPING(created_at) = 1 THEN 'all' ELSE created_at END AS created_at,
+ CASE WHEN GROUPING(zone_nm) = 1 THEN 'all' ELSE zone_nm END AS zone_nm,
+ CASE WHEN GROUPING(service_nm) = 1 THEN 'all' ELSE service_nm END AS service_nm,
+ SUM(duration) AS duration,
+ COUNT(DISTINCT client_id) AS users_count
+ FROM mytable
+ GROUP BY GROUPING SETS (
+ (created_at, zone_nm, service_nm),  -- 1 Полная детализация
+ (created_at, zone_nm),              -- 2 Разрез по created_at + zone_nm
+ (created_at, service_nm),           -- 3 Разрез по created_at + service_nm
+ (zone_nm, service_nm),              -- 4 Разрез по zone_nm + service_nm
+ (created_at),                       -- 5 Разрез только по created_at
+ (zone_nm),                          -- 6 Разрез только по zone_nm
+ (service_nm),                       -- 7 Разрез только по service_nm
+ ()                                  -- Итоговая строка (если нужна)
+ )
+```
+
 ### DELETING IN BATCHES
 
 https://www.geekytidbits.com/batch-deletes-in-postgres/
