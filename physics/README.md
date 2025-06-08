@@ -326,6 +326,9 @@ https://www.physics.princeton.edu/~mcdonald/examples/ McDonald
 https://habr.com/ru/post/544030/ FermiNet
 
 ### Entropy
+
+https://habr.com/ru/articles/916556/
+
 https://www.youtube.com/watch?v=ScX2aBFyrVU Information Theory: Defining Entropy and Information - Oxford Mathematics 3rd Year Student Lecture
 
 https://evgeniirudnyi.livejournal.com/392967.html?view=comments&style=mine&nc=13#comments
