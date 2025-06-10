@@ -95,6 +95,8 @@ Trusted by Microsoft, GoDaddy, and more. Freelance projects for all skills.
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
 
 
+### url shortening system design 
+https://javatechonline.com/url-shortening-system-design-tiny-url/
 
 ### TOP K problem
 
