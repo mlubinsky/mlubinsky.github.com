@@ -126,6 +126,8 @@ https://florian.github.io//count-min-sketch/
 
 https://courses.csail.mit.edu/6.851/fall17/lectures/
 
+https://arxiv.org/abs/2506.06536  Modern Minimal Perfect Hashing: A Survey
+
 https://www.youtube.com/c/Reducible
 
 https://web.stanford.edu/class/cs168/index.html
