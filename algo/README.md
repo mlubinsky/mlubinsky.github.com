@@ -132,7 +132,7 @@ https://www.youtube.com/c/Reducible
 
 https://web.stanford.edu/class/cs168/index.html
 
-https://news.ycombinator.com/item?id=32186203 Obsure data structures
+https://news.ycombinator.com/item?id=32186203 Obscure data structures
 
 https://blog.bradfieldcs.com/an-introduction-to-hashing-in-the-era-of-machine-learning-6039394549b0
 
