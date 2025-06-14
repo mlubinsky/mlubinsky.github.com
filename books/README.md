@@ -1,5 +1,7 @@
 https://nononsensebooks.com/
 
+https://alexandr4784.narod.ru/ math physics
+
 https://www.eruditor.io/
 
 https://ru.annas–archive.org/
