@@ -4,6 +4,8 @@ https://docs.nvidia.com/cuda/pdf/CUDA_Runtime_API.pdf
 
 https://stem-c.com/product/programming-massively-parallel-processors-a-hands-on-approach 
 
+https://talkpython.fm/episodes/show/509/gpu-programming-in-pure-python
+
 https://habr.com/ru/companies/timeweb/articles/909122/
 
 https://news.ycombinator.com/item?id=44216123
