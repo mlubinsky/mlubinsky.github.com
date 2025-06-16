@@ -11,6 +11,10 @@ https://dmitriysh.livejournal.com/
 
 https://news.ycombinator.com/item?id=38839088 Eating fewer calories can ward off ageing
 
+### Low back pain
+
+https://www.youtube.com/watch?v=YJDBw6JOlXU  Как убрать боль в пояснице. доктор  Епифанов
+
 ###  TUDCA
 https://www.drberg.com/blog/the-benefits-of-tudca
 
