@@ -353,6 +353,30 @@ For each letter in the input string, start expanding to the left and right
 while checking for even and odd length palindromes.   
 Move to the next letter if we know a palindrome doesn’t exist there.
 
+```python
+def all_palindrome_substrings(s):
+    n = len(s)
+    palindromes = set()
+
+    for center in range(n):
+        # Odd-length palindromes
+        l, r = center, center
+        while l >= 0 and r < n and s[l] == s[r]:
+            palindromes.add(s[l:r+1])
+            l -= 1
+            r += 1
+
+        # Even-length palindromes
+        l, r = center, center + 1
+        while l >= 0 and r < n and s[l] == s[r]:
+            palindromes.add(s[l:r+1])
+            l -= 1
+            r += 1
+
+    return list(palindromes)
+
+```
+
 ### Given two unsorted arrays  find all pairs from both arrays whose sum is equal to X.
 ```python
 def findPairs(arr1, arr2, n, m, x): 
@@ -363,10 +387,8 @@ def findPairs(arr1, arr2, n, m, x):
     for i in range (0, n): 
         s.add(arr1[i]) 
   
-    # Subtract sum from second  
-    # array elements one by one  
-    # and check it's present in 
-    # array first or not 
+    # Subtract sum from second  array elements one by one  
+    # and check it's present in  array first or not 
     for j in range(0, m): 
         if ((x - arr2[j]) in s): 
             print((x - arr2[j]), '', arr2[j]) 
