@@ -178,7 +178,40 @@ In other words, one of the first string's permutations is the substring of the s
 
 # Input:s1= "ab" s2 = "eidboaoo"
 # Output: False
+
 ```
+```python
+def contains_permutation(s1: str, s2: str) -> bool:
+    from collections import Counter
+
+    len_s1, len_s2 = len(s1), len(s2)
+    if len_s1 > len_s2:
+        return False
+
+    s1_counter = Counter(s1)
+    window_counter = Counter(s2[:len_s1])
+
+    if s1_counter == window_counter:
+        return True
+
+    for i in range(len_s1, len_s2):
+        start_char = s2[i - len_s1]
+        end_char = s2[i]
+
+        window_counter[end_char] += 1
+        window_counter[start_char] -= 1
+
+        if window_counter[start_char] == 0:
+            del window_counter[start_char]
+
+        if window_counter == s1_counter:
+            return True
+
+    return False
+```
+
+
+
 ### Implement hash table from scratch  - 1
 
 https://stackoverflow.com/questions/20253580/hash-table-implementation-in-python
@@ -291,6 +324,28 @@ https://github.com/ruppysuppy/Daily-Coding-Problem-Solutions/blob/master/Solutio
 ###  Given an array of integers and a value, determine if there are any three integers in the array whose sum equals the given value.
 
 https://www.educative.io/blog/apple-coding-interview-questions
+
+```python
+def has_triplet_with_sum(arr, target):
+    arr.sort()
+    n = len(arr)
+
+    for i in range(n - 2):
+        left, right = i + 1, n - 1
+
+        while left < right:
+            current_sum = arr[i] + arr[left] + arr[right]
+
+            if current_sum == target:
+                return True
+            elif current_sum < target:
+                left += 1
+            else:
+                right -= 1
+
+    return False
+
+```
 
 ### Find all palindrome substrings
 
