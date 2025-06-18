@@ -153,7 +153,9 @@ But there is solution without extra space:
 - next process -5, arr = [4, -1, -3, -2, -5, -4, 5, 5]
 - next process -4, arr = [4, -1, -3, -2, -5, -4, 5, 5] abs(-4) = 4 
 because 4th index is already negative it means that number 4 is encountered 2nd time So 4 is the answer.
+```
 
+```python
 int findAnyRepeatedNumber(int[] arr) {
 	for(int i = 0; i < arr.length; i++) {
 		int index = Math.abs(arr[i]);
@@ -183,7 +185,7 @@ https://stackoverflow.com/questions/20253580/hash-table-implementation-in-python
 
 https://stackabuse.com/hash-tables-in-python/
 
-```
+```python
 class HashTable:
     def __init__(self, size):
         self.size = size
@@ -220,7 +222,7 @@ class HashTable:
 ```
 ### Implementing hash table - 2
 https://habr.com/ru/articles/794556/
-```
+```python
 class HashTable:
     def __init__(self):
         self.hashTable = [[],] * 10
@@ -292,10 +294,12 @@ https://www.educative.io/blog/apple-coding-interview-questions
 
 ### Find all palindrome substrings
 
-For each letter in the input string, start expanding to the left and right while checking for even and odd length palindromes. Move to the next letter if we know a palindrome doesn’t exist there.
+For each letter in the input string, start expanding to the left and right  
+while checking for even and odd length palindromes.   
+Move to the next letter if we know a palindrome doesn’t exist there.
 
 ### Given two unsorted arrays  find all pairs from both arrays whose sum is equal to X.
-```
+```python
 def findPairs(arr1, arr2, n, m, x): 
   
     # Insert all elements of  
@@ -322,12 +326,10 @@ findPairs(arr1, arr2, n, m, x)
 ```
 
 ### random element (uniform dist) from stream
-```
-# to randomly select a number from stream of numbers.
+A function to randomly select a item  from stream[0], stream[1], .. stream[i-1]
+
+```python
 import random
- 
-# A function to randomly select a item  from stream[0], stream[1], .. stream[i-1]
-# The resultant random number
 res=0
 # Count of numbers visited  so far in stream
 count=0
@@ -367,19 +369,26 @@ for i in range (n):
 
 ```
 If the data set has an odd number then the middle one will be consider as median.
-If the data set has an even number then there is no distinct middle value and the median will be the arithmetic mean of the two middle values.
+If the data set has an even number then there is no distinct middle value and  
+the median will be the arithmetic mean of the two middle values.
 
-We can use a max heap on the left side to represent elements that are less than effective median, and a min-heap on the right side to represent elements that are greater than effective median.
-After processing an incoming element, the number of elements in heaps differs atmost by 1 element. When both heaps contain the same number of elements, we pick the average of heaps root data as effective median. When the heaps are not balanced, we select effective median from the root of the heap containing more elements.
+We can use a max heap on the left side to represent elements that are less than effective median,  
+and a min-heap on the right side to represent elements that are greater than effective median.
+After processing an incoming element, the number of elements in heaps differs atmost by 1 element.
+ When both heaps contain the same number of elements, we pick the average of heaps root data as effective median.  
+When the heaps are not balanced, we select effective median from the root of the heap containing more elements.
 
-Time Complexity: O(n * log n), All the operations within the loop (push, pop) take O(log n) time in the worst case for a heap of size N.
+Time Complexity: O(n * log n),
+All the operations within the loop (push, pop) take O(log n) time in the worst case for a heap of size N.
 Auxiliary Space: O(n)
+```
 
+Function to find the median of stream of data
 
+```python
 from heapq import heappush, heappop, heapify
 import math
- 
-# Function to find the median of stream of data
+
 def streamMed(arr, N):
      
     # Declaring two min heap
@@ -417,15 +426,14 @@ The time complexity of heap based solution is O(m Log k).
 …..a) Remove minimum element from heap (minimum is always at root) and store it in output array. 
 …..b) Insert next element from the array from which the element is extracted. If the array doesn’t have any more elements, then do nothing. 
 3. Print the last removed item.
-
-
+```
+ This function takes an array of arrays as an  argument and  
+ all arrays are assumed to be sorted.  
+ It returns m-th smallest element in  the array obtained after merging the given  arrays.
+```python
 from heapq import *
  
-#  This function takes an array of arrays as an
-#  argument and all arrays are assumed to be
-#  sorted. It returns m-th smallest element in
-#  the array obtained after merging the given
-#  arrays.
+
 def mThLargest(arr, m):
  
     #  Create a min heap. Every
@@ -469,8 +477,8 @@ Update the variable currentSum by adding current element, currentSum = currentSu
 If the currentSum is greater than the given sum, update the variable currentSum as currentSum = currentSum – arr[start],
 and update start as, start++.
 If the currentSum is equal to given sum, print the subarray and break the loop.
-
-
+```
+```python
 def subArraySum(arr, n, sum_):
  
     # Initialize currentSum as
@@ -525,7 +533,7 @@ subArraySum(arr, n, sum_)
 ```
 
 ### Rotate matrix in place
-```
+```python
 def rotateMatrix(mat):
  
     # reversing the matrix
@@ -574,7 +582,8 @@ if __name__ == "__main__":
    a) Binary Search for arr[i] + k in subarray from i+1 to n-1.
    b) If arr[i] + k found, increment count. 
 5) Return count.
-
+```
+```python
 def binarySearch(arr, low, high, x):
  
     if (high >= low):
@@ -621,11 +630,12 @@ print("Count of pairs with given diff is ",
       countPairsWithDiffK(arr, n, k))
 ```
 
-### Calculate maximum value using ‘+’ or ‘*’ sign between all gigits in a string of digits
-```
-The maximum value on multiplying all values but the point is to handle the case of 0 and 1 i.e. On multiplying with 0 and 1 we get the lower value as compared to on adding with 0 and 1
+### Calculate maximum value using ‘+’ or ‘*’ sign between all digits in a string of digits
 
+The maximum value on multiplying all values but the point is to handle the case of 0 and 1.  
+On multiplying with 0 and 1 we get the lower value as compared to on adding with 0 and 1
 
+```python
 def calcMaxValue(str): 
   
     # Store first character as integer 
@@ -652,11 +662,9 @@ if __name__== "__main__":
     print(calcMaxValue(str)); 
 ```
 ### Find all Fibonschi numbers in array
-```
-python3 program to find largest Fibonacci subset
-  
-# Prints largest subset of an array whose
-# all elements are fibonacci numbers
+ 
+Prints largest subset of an array whose all elements are fibonacci numbers
+```python
 def findFibSubset(arr, n):
  
     # Find maximum element in arr[]
@@ -694,14 +702,11 @@ if __name__ == "__main__":
 
 ### Smallest subarray with sum greater than a given value - sliding window
 
-```
-# O(n) solution for finding smallest
-# subarray with sum greater than x
+```python
+# O(n) solution for finding smallest subarray with sum greater than x
  
-# Returns length of smallest subarray
-# with sum greater than x. If there
-# is no subarray with given sum, then
-# returns n + 1
+# Returns length of smallest subarray with sum greater than x.
+# If there is no subarray with given sum, then returns n + 1
  
  
 def smallestSubWithSum(arr, n, x):
@@ -757,7 +762,7 @@ print("Not possible") if (res3 == n3 + 1) else print(res3)
 
 ### Find all triplets with 0 sum
 
-```
+```python
 def findTriplets(arr, n):
  
     found = False
@@ -802,7 +807,7 @@ findTriplets(arr, n)
 
 ### Search in rotated array
 
-```
+```python
 def binary_search(arr, start, end, key):
   # assuming all the keys are unique.
   
@@ -843,7 +848,7 @@ print("Key(6) found at: " + str(binary_search_rotated(v2, 6)))
 ```
 
 ### Find the high and low index in sorted array with duplicates
-```
+```python
 def find_low_index(arr, key):
   
   low = 0
@@ -905,7 +910,7 @@ print("High Index of " + str(key) + ": " + str(high))
 ```
 
 ### Find all possible subsets (2**n)
-```
+```python
 n = size of given integer set
 subsets_count = 2^n
 for i = 0 to subsets_count
@@ -948,7 +953,7 @@ main()
 ```
 
 ### Graphs: Clone a directed graph
-```
+```python
 from directed_graph import *
 
 def clone_rec(root, graph, nodes_completed):
@@ -1092,9 +1097,11 @@ if __name__ == '__main__':
 ```
 
 ### String segmentation
-Given a dictionary of words and a large input string. You have to find out whether the input string can be completely segmented into the words of a given dictionary. 
+Given a dictionary of words and a large input string.  
+You have to find out whether the input string can be completely segmented  
+into the words of a given dictionary. 
 
- ```
+```python
 def can_segment_string(s, dictionary):
   for i in range(1, len(s) + 1):
     first = s[0:i]
@@ -1115,7 +1122,7 @@ else:
 ### Reverse words in sentense
 Reverse the order of words in a given sentence (an array of characters).
 
-```
+```python
 def str_rev(str, start, end):
   if str == None or len(str) < 2:
     return
@@ -1197,7 +1204,7 @@ While moving read_index towards the start of the array:
 If read_index points to 0, skip.
 If read_index points to a non-zero value, write the value at read_index to write_index and decrement write_index.
 Assign zeros to all the values before the write_index and to the current position of write_index as well.
-
+```python
 def move_zeros_to_left(A):
   if len(A) < 1:
     return
@@ -1226,7 +1233,7 @@ print("After Moving Zeroes to Left: ", v)
 ```
 ### Merge overlapping intervals
 
-```
+```python
 class Pair:
   def __init__(self, first, second):
     self.first = first
@@ -1267,8 +1274,9 @@ https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
 
 ### Serialize/desiarilize binary tree
 
-We’ll use a pre-order traversal here. We’ll also serialize some markers to represent a null pointer to help deserialize the tree.
-```
+We’ll use a pre-order traversal here.  
+We’ll also serialize some markers to represent a null pointer to help deserialize the tree.
+```python
 from binary_tree import *
 from binary_tree_node import *
 
@@ -1387,11 +1395,11 @@ if __name__ == '__main__':
 
 
 ### Convert ternary expression to binary tree.  The expressions may be nested
-```
-traverse a string make first character as root and do following step recursively . 
-If we see Symbol ‘?’ then we add next character as the left child of root. 
-If we see Symbol ‘:’  then we add it as the right child of current root.
 
+traverse a string make first character as root and do following step recursively  
+If we see Symbol ‘?’ then we add next character as the left child of root.   
+If we see Symbol ‘:’  then we add it as the right child of current root.  
+```python
 class Node: 
     def __init__(self, key): 
         self.data = key 
@@ -1445,7 +1453,7 @@ if __name__ == "__main__":
     print_tree(root_node) 
 ```
 ### Convert binary tree to double linked list 
-```
+```python
 from binary_tree import *
 from binary_tree_node import *
 
@@ -1550,16 +1558,21 @@ if __name__ == '__main__':
 
 ### Tree level order traversal
 
-Given the root of a binary tree, display the node values at each level. Node values for all levels should be displayed on separate lines. 
+Given the root of a binary tree, display the node values at each level.   
+Node values for all levels should be displayed on separate lines. 
 ```
-Here, you are using two queues: current_queue and next_queue. You push the nodes in both queues alternately based on the current level number. You’ll dequeue nodes from the current_queue, print the node’s data, and enqueue the node’s children to the next_queue.
+Here, you are using two queues: current_queue and next_queue.
+You push the nodes in both queues alternately based on the current level number.
+You’ll dequeue nodes from the current_queue, print the node’s data,
+and enqueue the node’s children to the next_queue.
 
 Once the current_queue becomes empty, you have processed all nodes for the current level_number. To indicate the new level, print a line break (\n), swap the two queues, and continue with the above-mentioned logic.
 
-After printing the leaf nodes from the current_queue, swap current_queue and next_queue. Since the current_queue would be empty, you can terminate the loop.
+After printing the leaf nodes from the current_queue, swap current_queue and next_queue.
+Since the current_queue would be empty, you can terminate the loop.
 ```
 
-```
+```python
 from collections import deque
 from binary_tree import *
 from binary_tree_node import *
@@ -1648,12 +1661,13 @@ if __name__ == '__main__':
     main()
 ```
 ### Yet another level order traversal
-```
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+```python
+  class TreeNode:
+      def __init__(self, val=0, left=None, right=None):
+          self.val = val
+          self.left = left
+          self.right = right
+
 from collections import deque
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
@@ -1679,12 +1693,14 @@ class Solution:
 
 #### depth-first has 3 variations:
 ```
-in-order:  left subtree, current node, right subtree  (for Binary Search Tree it gives nodes in sorted manner)
+in-order:  left subtree, current node, right subtree
+(for Binary Search Tree it gives nodes in sorted manner)
+
 pre-order: current node, left subtree, right subtree
 post-order: left subtree, right subtree, current node
 ```
 ### Compare is 2 trees are the same
-```
+```python
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         if not p and not q:
             return True
@@ -1697,7 +1713,7 @@ post-order: left subtree, right subtree, current node
 
 ### Min depth of BT without  recursion using level order traversal
 
-```
+```python
 class Node:
     # Utility to create new node
     def __init__(self , data):
@@ -1750,7 +1766,7 @@ print (minDepth(root))
 
 
 ### Min depth of BT using recursion
-
+```python
 class Node:
     def __init__(self , key):
         self.data = key 
@@ -1781,9 +1797,9 @@ root = Node(1)
 root.left = Node(2)
 root.right = Node(3)
 root.left.left = Node(4
-
-#### max depth of BT
 ```
+#### max depth of BT
+```python
 def maxDepth(root):
  
    if not root return 0
@@ -1797,7 +1813,7 @@ https://www.youtube.com/watch?v=X7_5fYEVIIU&list=PLQZEzAa9dfpkv0kZkjomTj553gQyaf
 
 ### Invert binary tree
 https://www.youtube.com/watch?v=4kRn1xlDJlY&list=PLQZEzAa9dfpkv0kZkjomTj553gQyafNiB&index=11
-```
+```python
 def helper(root):
   if not root: return None
   helper(root.left)
@@ -1817,7 +1833,7 @@ def invert(root):
 
 ### Binary Tree Maximum Path Sum
 https://github.com/hotsno/blind-75/blob/main/solutions
-```
+```python
 class Solution:
     res = float('-inf')
 ----------------------------
@@ -1835,7 +1851,7 @@ class Solution:
 ```
 
 ### Brackets:
-```
+```python
     def isValid(self, s: str) -> bool:
         stack = []
         d = {")":"(", "}":"{", "]":"["}
@@ -1852,7 +1868,7 @@ class Solution:
 
 ### min # of removes to make string  with parenteses valid
  https://www.youtube.com/watch?v=PDO3vvly7eU
-```
+```python
  def min_removes(s):
     incidesToRemove = set()
     stack=list()
@@ -1871,8 +1887,6 @@ class Solution:
          result.append(s[i])
      return result
        
-
-
 ```
 
 
@@ -1882,7 +1896,7 @@ all permutations of string without recursion
 
 
 ### Buy /Sell Stock
-```
+```python
 def find_buy_sell_stock_prices(array):
   if array == None or len(array) < 2:
     return None
@@ -1917,7 +1931,7 @@ print("Buy Price: " + str(result[0]) + ", Sell Price: " + str(result[1]))
 ```
 
 Yet another solution 
-```
+```python
     def maxProfit(self, prices):
         low = prices[0]
         res = 0
@@ -1933,7 +1947,7 @@ Yet another solution
 ### Return K most frequent elements in the list IN ANY ORDER
 
 #####  Use the counter function to count the elements
-```
+```python
 from collections import Counter
 def topKFrequent(self, nums, k):
 
@@ -1943,8 +1957,8 @@ def topKFrequent(self, nums, k):
 
 
 #####   Use a max heap
-```
-from collections import Cunter
+```python
+from collections import Counter
 
 def topKFrequent(self, nums, k):
       count = Counter(nums)
@@ -2006,7 +2020,7 @@ https://habr.com/ru/articles/764718/  leetcode
 
 #### Compress string 1:
 
-```
+```python
 def rle_encode(data: str) -> str: 
     encoded = [] 
     i = 0 
@@ -2025,7 +2039,7 @@ def rle_encode(data: str) -> str:
     return "".join(encoded)
 ```
 ### Compress string 2:
-```
+```python
 from itertools import groupby
 
 def rle_encode(data: str) -> str:
