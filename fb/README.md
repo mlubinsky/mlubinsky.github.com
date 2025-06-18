@@ -536,17 +536,12 @@ If the currentSum is equal to given sum, print the subarray and break the loop.
 ```python
 def subArraySum(arr, n, sum_):
  
-    # Initialize currentSum as
-    # value of first element
-    # and starting point as 0
+    # Initialize currentSum as value of first element and starting point as 0
     currentSum = arr[0]
     start = 0
  
-    # Add elements one by
-    # one to currentSum and
-    # if the currentSum exceeds
-    # the sum, then remove
-    # starting element
+    # Add elements one by one to currentSum and if the currentSum exceeds
+    # the sum, then remove starting element
     i = 1
     while i <= n:
  
@@ -572,8 +567,7 @@ def subArraySum(arr, n, sum_):
             currentSum = currentSum + arr[i]
         i += 1
  
-    # If we reach here,
-    # then no subarray
+    # If we reach here,  then no subarray
     print("No subarray found")
     return 0
  
@@ -693,8 +687,7 @@ On multiplying with 0 and 1 we get the lower value as compared to on adding with
 ```python
 def calcMaxValue(str): 
   
-    # Store first character as integer 
-    # in result 
+    # Store first character as integer in result 
     res = ord(str[0]) - 48
   
     # Start traversing the string  
@@ -725,8 +718,7 @@ def findFibSubset(arr, n):
     # Find maximum element in arr[]
     m= max(arr)
   
-    # Generate all Fibonacci numbers till
-    # max and store them in hash.
+    # Generate all Fibonacci numbers till max and store them in hash.
     a = 0
     b = 1
     hash = []
@@ -756,10 +748,8 @@ if __name__ == "__main__":
 
 
 ### Smallest subarray with sum greater than a given value - sliding window
-
+ O(n) solution for finding smallest subarray with sum greater than x
 ```python
-# O(n) solution for finding smallest subarray with sum greater than x
- 
 # Returns length of smallest subarray with sum greater than x.
 # If there is no subarray with given sum, then returns n + 1
  
@@ -819,9 +809,7 @@ print("Not possible") if (res3 == n3 + 1) else print(res3)
 
 ```python
 def findTriplets(arr, n):
- 
     found = False
- 
     # sort array elements
     arr.sort()
  
