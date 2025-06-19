@@ -40,8 +40,58 @@ df2.columns = ['_'.join(col).strip('_') for col in df2.columns.values]
 ```
 
 
+####
+```
+There is pandas dataframe with many columns and one row only.
+This single row should generate several records in table  satellite.
+The goal is to generate SQL insert statement to populate table  satellite with following columns
+create table satellite (  
+log_id int,  
+const text,  
+freq text,  
+avg_cno double PRECISION,  
+min_cno double PRECISION,  
+max_cno double PRECISION,  
+top4_cno double PRECISION,  
+avg_num_intrack double PRECISION,    
+avg_num_infix double PRECISION,   
+avg_cno_intrack double PRECISION,    
+avg_cno_infix double PRECISION
+) 
+```
+The logic of popuating satellite table:
+```
+Dataframe column     -> Satellite table
+log_id    -> log_id
+
+Dataframe column names has several underscores.
+If we split dataframe column name into array , using underscore as separator ,
+ then we are interested in columns which have one of the following pattern
+['L1','L5', 'E1', 'E5a','B1I', 'B1C', 'B2A']
+as second element in array (index=1)
+This second element in array should be used populate the satellite freq column
+
+There are many columns whith the same value as second element in array (index=1)
 
 
+The columns in dataframe with the same freq  are used to generate single record in satellite table
+as below:
+array[0] -> to populate satellite.const
+
+if array[-1] == 'Top4CNo':   populate satellite.top4_cno
+elif array[-1] == 'AvgCNo':   populate satellite.avg_cno
+elif array[-1] == 'MinCNo':   populate satellite.min_cno
+elif array[-1] == 'MaxCNo':   populate satellite.max_cno
+
+elif array[-1] == 'InFix' and  array[-2] == 'Top4CNo':   populate satellite.avg_cno_infix
+
+elif array[-1] == 'NumSVsInFix'    populate satellite.avg_num_infix
+elif array[-1] == 'NumSVsInView'  populate satellite.avg_num_intruck
+
+elif array[-1] == 'InFix' and array[-2] == 'AvgCNo':   populate satellite.avg_cno_intrack
+```
+
+Please generate SQL in python .
 
 
 
