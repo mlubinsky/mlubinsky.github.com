@@ -15,7 +15,7 @@ https://arrow.apache.org/docs/python/index.html
  PyArrow library provides pandas with its own optimized data types, which are faster and less memory-intensive than the traditional NumPy types that pandas uses by default.
 
 ### Insert pandas DF into Postgres Table:
-```
+```python
 import pandas as pd
 from sqlalchemy import create_engine
 
@@ -38,7 +38,17 @@ if_exists='append': ensures data is added to existing table T
 
 index=False: avoids inserting the DataFrame's index as a column
 
+| `if_exists` Value  | Meaning                                                                   |
+| ------------------ | ------------------------------------------------------------------------- |
+| `'fail'` (default) | Raise a `ValueError` if the table **already exists**. Nothing is written. |
+| `'replace'`        | **Drop the existing table**, create a new one, and insert the data.       |
+| `'append'`         | Keep the existing table **and insert new data as additional rows**.       |
 
+If using append, the column names and types in the DataFrame must match the table schema, or you may get an error.
+
+If using replace, all existing data is lost — use with caution.
+
+If using fail, the operation will error if the table is present — useful to avoid accidental overwrites.
 
 ### Convert two columns A and B from a pandas DataFrame into a Python dictionary 
 
