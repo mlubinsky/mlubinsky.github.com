@@ -82,16 +82,89 @@ if array[-1] == 'Top4CNo':   populate satellite.top4_cno
 elif array[-1] == 'AvgCNo':   populate satellite.avg_cno
 elif array[-1] == 'MinCNo':   populate satellite.min_cno
 elif array[-1] == 'MaxCNo':   populate satellite.max_cno
-
-elif array[-1] == 'InFix' and  array[-2] == 'Top4CNo':   populate satellite.avg_cno_infix
-
-elif array[-1] == 'NumSVsInFix'    populate satellite.avg_num_infix
-elif array[-1] == 'NumSVsInView'  populate satellite.avg_num_intruck
-
-elif array[-1] == 'InFix' and array[-2] == 'AvgCNo':   populate satellite.avg_cno_intrack
+elif array[-1] == 'InFix' and  array[-2] == 'Top4CNo':
+   populate satellite.avg_cno_infix
+elif array[-1] == 'NumSVsInFix'  :  populate satellite.avg_num_infix
+elif array[-1] == 'NumSVsInView' : populate satellite.avg_num_intruck
+elif array[-1] == 'InFix' and array[-2] == 'AvgCNo':
+     populate satellite.avg_cno_intrack
 ```
 
-Please generate SQL in python .
+```python
+import pandas as pd
+row = df.iloc[0] # since it's a single-row DataFrame
+allowed_freqs = {'L1', 'L5', 'E1', 'E5a', 'B1I', 'B1C', 'B2A'}
+
+# Store grouped values by (const, freq)
+records = {}
+
+for col in df.columns:
+    if col == 'log_id':
+        log_id = row[col]
+        continue
+
+    parts = col.split('_')
+    if len(parts) < 2:
+        continue
+
+    freq = parts[1]
+    if freq not in allowed_freqs:
+        continue
+
+    const = parts[0]
+    key = (const, freq)
+
+    if key not in records:
+        records[key] = {
+            'log_id': log_id,
+            'const': const,
+            'freq': freq,
+            'avg_cno': None,
+            'min_cno': None,
+            'max_cno': None,
+            'top4_cno': None,
+            'avg_num_intrack': None,
+            'avg_num_infix': None,
+            'avg_cno_intrack': None,
+            'avg_cno_infix': None,
+        }
+
+    value = row[col]
+    if parts[-1] == 'Top4CNo':
+        records[key]['top4_cno'] = value
+    elif parts[-1] == 'AvgCNo':
+        records[key]['avg_cno'] = value
+    elif parts[-1] == 'MinCNo':
+        records[key]['min_cno'] = value
+    elif parts[-1] == 'MaxCNo':
+        records[key]['max_cno'] = value
+    elif parts[-1] == 'InFix' and parts[-2] == 'Top4CNo':
+        records[key]['avg_cno_infix'] = value
+    elif parts[-1] == 'InFix' and parts[-2] == 'AvgCNo':
+        records[key]['avg_cno_intrack'] = value
+    elif parts[-1] == 'NumSVsInFix':
+        records[key]['avg_num_infix'] = value
+    elif parts[-1] == 'NumSVsInView':
+        records[key]['avg_num_intrack'] = value
+
+# Generate SQL INSERT statements
+sql_statements = []
+
+for record in records.values():
+    cols = ', '.join(record.keys())
+    values = ', '.join(
+        f"'{v}'" if isinstance(v, str) else ('NULL' if v is None else str(v))
+        for v in record.values()
+    )
+    sql = f"INSERT INTO satellite ({cols}) VALUES ({values});"
+    sql_statements.append(sql)
+
+# Print or write SQL statements
+for stmt in sql_statements:
+    print(stmt)
+
+
+```
 
 
 
