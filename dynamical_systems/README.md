@@ -2,7 +2,9 @@ Book: https://mltechniques.com/product/ebook-gentle-introduction-to-chaotic-dyna
 
 https://habr.com/ru/articles/546540/
 
-https://arxiv.org/pdf/2407.01762
+https://arxiv.org/pdf/2407.01762 Three Myths in Complexity Science – and How to Resolve Them
+ 
+https://arxiv.org/abs/2506.14044 pynamicalsys: A Python toolkit for the analysis of dynamical systems
 
 https://www.complexityexplorer.org/
 
