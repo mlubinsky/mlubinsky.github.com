@@ -14,6 +14,11 @@ https://arrow.apache.org/docs/python/index.html
 
  PyArrow library provides pandas with its own optimized data types, which are faster and less memory-intensive than the traditional NumPy types that pandas uses by default.
 
+
+### Folowing creates dataframe without log_id 
+but with with columns ('A','maxn'), ('A','min'), ('A','mean'), ('A','std'),  ('A','count'), 
+cno_df_sum = cno_df.groupby(['log_id']).agg(['max','min','mean','std','count'])
+
 ### Insert pandas DF into Postgres Table:
 ```python
 import pandas as pd
