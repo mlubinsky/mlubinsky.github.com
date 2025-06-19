@@ -19,6 +19,34 @@ https://arrow.apache.org/docs/python/index.html
 but with with columns ('A','maxn'), ('A','min'), ('A','mean'), ('A','std'),  ('A','count'), 
 cno_df_sum = cno_df.groupby(['log_id']).agg(['max','min','mean','std','count'])
 
+Solution:  
+after a groupby().agg() operation in pandas, the groupby column (log_id in this case)   
+becomes the index of the resulting dataframe (df2), not a regular column.   
+If you want log_id as the first column, you can reset the index:
+```python
+df2 = df.groupby('log_id').agg(['max', 'min', 'mean', 'std', 'count']).reset_index()
+```
+Move log_id from the index into a regular column.
+
+Place it as the first column of df2.
+
+Bonus Tip:
+If you later want to write this to CSV or Excel and want flat column names 
+instead of multi-level headers, you can flatten the columns like this:
+
+```python
+df2.columns = ['_'.join(col).strip('_') for col in df2.columns.values]
+```
+
+
+
+
+
+
+
+
+
+
 ### Insert pandas DF into Postgres Table:
 ```python
 import pandas as pd
