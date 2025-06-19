@@ -26,9 +26,10 @@ If you want log_id as the first column, you can reset the index:
 ```python
 df2 = df.groupby('log_id').agg(['max', 'min', 'mean', 'std', 'count']).reset_index()
 ```
-Move log_id from the index into a regular column.
 
-Place it as the first column of df2.
+It will:  
+  Move log_id from the index into a regular column.  
+  Place it as the first column of df2.  
 
 Bonus Tip:
 If you later want to write this to CSV or Excel and want flat column names 
