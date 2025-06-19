@@ -14,6 +14,31 @@ https://arrow.apache.org/docs/python/index.html
 
  PyArrow library provides pandas with its own optimized data types, which are faster and less memory-intensive than the traditional NumPy types that pandas uses by default.
 
+### Insert pandas DF into Postgres Table:
+```
+import pandas as pd
+from sqlalchemy import create_engine
+
+# Sample DataFrame
+# df = pd.DataFrame(...)  # Assume df has columns A, B, C, D, E
+
+# Select columns to insert
+data_to_insert = df[['C', 'D', 'E']].copy()
+data_to_insert.columns = ['col1', 'col2', 'col3']  # Rename to match PostgreSQL table
+
+# Create SQLAlchemy engine (adjust credentials accordingly)
+engine = create_engine("postgresql+psycopg2://username:password@hostname:port/dbname")
+
+# Append to existing table without replacing it
+data_to_insert.to_sql('T', con=engine, if_exists='append', index=False)
+```
+Notes:
+
+if_exists='append': ensures data is added to existing table T
+
+index=False: avoids inserting the DataFrame's index as a column
+
+
 
 ### Convert two columns A and B from a pandas DataFrame into a Python dictionary 
 
