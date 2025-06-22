@@ -1,4 +1,7 @@
 Book:
+https://visionbook.mit.edu/
+
+
 https://books.google.cz/books?id=xtC_EAAAQBAJ&printsec=frontcover&redir_esc=y#v=onepage&q&f=false
 
 YOLO
