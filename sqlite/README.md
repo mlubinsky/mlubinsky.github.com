@@ -11,13 +11,18 @@ https://prospective.co/
 
 https://sql-workbench.com/
 
+
+### DuckDB
+
 https://github.com/manifold-systems/manifold/blob/master/docs/articles/duckdb_info.md
 
 https://www.duckplot.com/
 
 https://motherduck.com/blog/introducing-column-explorer/
 
-### DuckDB
+
+
+https://codecut.ai/deep-dive-into-duckdb-data-scientists/
 
 https://duckdb.org/2025/03/12/duckdb-ui.html
 
