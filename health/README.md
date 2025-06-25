@@ -13,6 +13,8 @@ https://news.ycombinator.com/item?id=38839088 Eating fewer calories can ward off
 
 ### Low back pain
 
+https://www.youtube.com/watch?v=3S9VeQAdFLA  навсегда избавиться от боли в пояснице
+
 https://www.youtube.com/watch?v=4Ziszx6654s
 
 https://www.youtube.com/watch?v=vZUlT4mGwBA
