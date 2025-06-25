@@ -2,6 +2,8 @@ https://docs.nvidia.com/cuda/pdf/CUDA_C_Programming_Guide.pdf
 
 https://docs.nvidia.com/cuda/pdf/CUDA_Runtime_API.pdf
 
+https://damek.github.io/random/basic-facts-about-gpus/
+
 https://enccs.github.io/gpu-programming/2-gpu-ecosystem/
 
 https://habr.com/ru/companies/ruvds/articles/921024/ TPU from Google
