@@ -4,6 +4,8 @@ https://docs.nvidia.com/cuda/pdf/CUDA_Runtime_API.pdf
 
 https://enccs.github.io/gpu-programming/2-gpu-ecosystem/
 
+https://habr.com/ru/companies/ruvds/articles/921024/ TPU from Google
+
 https://stem-c.com/product/programming-massively-parallel-processors-a-hands-on-approach 
 
 https://talkpython.fm/episodes/show/509/gpu-programming-in-pure-python
