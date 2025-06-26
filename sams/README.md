@@ -25,6 +25,68 @@ def find_nested_folder(target_folder, prefix, pattern):
   return None
 ```
 
+### SQL
+```sql
+with 
+T as ( 
+select   
+date, test, group_name , score,  is_ref 
+from kpi_score_gdc_summary 
+where criteria = '_Average' 
+and test_loc = '$location' 
+and (folder_up like '%DEV%' or test_loc not like 'DSK%')
+and folder like '%Flip%'
+and to_char(date,'YYYY-MM') = '$month'
+and group_name ilike '%b%'
+),
+C as ( 
+select concat_ws(' ', test, group_name) as test, score, date, is_ref from T where not is_ref
+union all 
+select concat_ws(' ', test, group_name) as test, score, date, is_ref from T where   is_ref and group_name not ilike '%Ultra%'
+)
+
+SELECT
+  test,
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=1) AS "1",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=2) AS "2",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=3) AS "3",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=4) AS "4",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=5) AS "5",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=6) AS "6",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=7) AS "7",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=8) AS "8",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=9) AS "9",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=10) AS "10",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=11) AS "11",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=12) AS "12",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=13) AS "13",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=14) AS "14",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=15) AS "15",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=16) AS "16",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=17) AS "17",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=18) AS "18",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=19) AS "19",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=20) AS "20",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=21) AS "21",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=22) AS "22",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=23) AS "23",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=24) AS "24",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=25) AS "25",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=26) AS "26",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=27) AS "27",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=28) AS "28",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=29) AS "29",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=30) AS "30",
+  AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=31) AS "31"
+FROM C
+GROUP BY test --, is_ref
+ORDER BY test --, is_ref DESC
+```
+
+
+
+
+
 ### Construct the SQL WHERE clause with the values from your Python list 
 
 ```
