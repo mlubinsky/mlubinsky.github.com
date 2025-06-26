@@ -34,15 +34,19 @@ date, test, group_name , score,  is_ref
 from kpi_score_gdc_summary 
 where criteria = '_Average' 
 and test_loc = '$location' 
-and (folder_up like '%DEV%' or test_loc not like 'DSK%')
+and (folder_up like '%DEV%' or test_loc not like 'DSK%')   -- ??
 and folder like '%Flip%'
 and to_char(date,'YYYY-MM') = '$month'
 and group_name ilike '%b%'
 ),
 C as ( 
-select concat_ws(' ', test, group_name) as test, score, date, is_ref from T where not is_ref
+select concat_ws(' ', test, group_name) as test, score, date, is_ref
+from T where not is_ref
 union all 
-select concat_ws(' ', test, group_name) as test, score, date, is_ref from T where   is_ref and group_name not ilike '%Ultra%'
+select concat_ws(' ', test, group_name) as test, score, date, is_ref
+from T
+where is_ref
+and group_name not ilike '%Ultra%'
 )
 
 SELECT
@@ -79,8 +83,8 @@ SELECT
   AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=30) AS "30",
   AVG(score) FILTER (WHERE  EXTRACT(DAY FROM date)=31) AS "31"
 FROM C
-GROUP BY test --, is_ref
-ORDER BY test --, is_ref DESC
+GROUP BY test  
+ORDER BY test  
 ```
 
 
