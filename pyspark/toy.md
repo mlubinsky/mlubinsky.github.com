@@ -6,35 +6,45 @@ Example of 1 line:
 ```
 
 
-JSON  has the following nested structure:
-● headers:MapType()thatcontainsauniquevehicleidentifier.
-● vehicleModel:StringType()thatcontainseachvehicle'smodeltype.
-● vehicleData:ArrayType()that contains vehicle data. It has the following
-fields:
-● sensorData:StructType()that contains simulated vehicle sensordata.
-In this
-struct you will find arrays of sensor data that were logged during each second of recording.
-○ label:ArrayType()with the labels of the logged sensors.The three sensors we've simulated here are:
-■ Odometer:Odometer value in miles(totalmilesthe vehicle has driven since it was built).
-■ Fuel:Amountoffuelconsumed(inmilliliters)sincethe last Fuel value was recorded.
-■ TripIndex:Unique number that indexes the numberof trips that have occured. This trip index increases by one with each new trip.
+JSON  has the following nested structure:  
+● headers:MapType() that contains a unique vehicle identifier.  
+● vehicleModel:StringType() thatcontainseachvehicle'smodeltype.  
+● vehicleData:ArrayType() that contains vehicle data.  
+
+It has the following fields:  
+
+● sensorData:StructType() that contains simulated vehicle sensordata.  
+In this struct you will find arrays of sensor data that were logged during each second of recording.  
+○ label:ArrayType() with the labels of the logged sensors.
+The three sensors names we've simulated here are:
+■ Odometer: Odometer value in miles(total miles the vehicle has driven since it was built).  
+■ Fuel: Amount of fuel consumed (in milliliters) since the last Fuel value was recorded.  
+■ TripIndex: Unique number that indexes the number of trips that have occured. This trip index increases by one with each new trip.   
+
 ○ value:ArrayType() with the sensor values(e.g.,odometermiles, fuel ml, trip index).
-○ dateTime:ArrayType() withunixtimestampofwheneachsensor value was logged.
-Assignment Questions
+○ dateTime:ArrayType() with unix timestamp of when each sensor value was logged.
+
+
+### Assignment Questions
 1) Data aggregation
 Please aggregate the data into a format where we have summaries for each TripIndex completed by each VIN. We would like you to provide the following summaries for each trip:
-● Start_Time:theunixtimestampforwhenthetripstarted ● End_Time:unixtimestampforwhenthetripended
-● Odo_min:minimumodometervalueduringeachtrip
-● Odo_max:maximumodometervalueduringeachtrip
-● Fuel_ml:sumofthemillilitersoffuelconsumedduringeachtrip We would also like you to include a column for vehicleModel.
+● Start_Time: the unix timestamp for when the trip started  
+● End_Time: unix timestamp for when the trip ended
+● Odo_min: minimum odometer value during each trip
+● Odo_max: maximum odometer value during each trip
+● Fuel_ml: sum of the milliliters of fuelconsumed during each trip
+
+We would also like you to include a column for vehicleModel.
+ 
 Below is an example of the column headers we are expecting, with each row representing summaries for each trip completed by each vehicle.
 None
-  +---+------------+---------+----------+--------+-------+---
-  ----+-------+
+
   |VIN|vehicleModel|TripIndex|Start_Time|End_Time|Odo_min|Odo
   _max|Fuel_ml|
-  +---+------------+---------+----------+--------+-------+---
-  ----+-------+
- # Insert code here for Q1 here --- add as many cells below as needed
-# Write your thought process for the above code and the optimizations you would like to do
-2) Architect a Data Pipeline
+  |---|------------|---------|----------|--------|-------|---
+  ----|-------|
+  
+  Insert code here for Q1 here --- add as many cells below as needed
+ Write your thought process for the above code and the optimizations you would like to do
+
+###2) Architect a Data Pipeline
