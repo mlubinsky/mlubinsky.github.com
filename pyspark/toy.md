@@ -48,14 +48,14 @@ with each row representing summaries for each trip completed by each vehicle.
   ----|-------|
 
 ```
- VIN
+VIN
 vehicleModel
 TripIndex
 Start_Time
 End_Time
 Odo_min
 Odo _max
-Fuel_ml|
+Fuel_ml
 ```
   
   Insert code here for Q1 here --- add as many cells below as needed
@@ -95,7 +95,7 @@ df.show(truncate=False)
 
 df.printSchema()
 
-# If you want to select and flatten some columns for further analysis
+# NO Need: If you want to select and flatten some columns for further analysis
 flattened_df = df.select(
     df["headers"].getItem("VIN").alias("VIN"),
     "vehicleModel",
@@ -107,7 +107,56 @@ flattened_df = df.select(
 
 flattened_df.show(truncate=False)
 
+# Explode arrays for timeseries processing
+exploded_df = df.select(
+    col("headers").getItem("VIN").alias("VIN"),
+    col("vehicleModel"),
+    explode(
+        col("sensorData.label").zip(
+            col("sensorData.value"),
+            col("sensorData.dateTime")
+        )
+    ).alias("exploded")
+).select(
+    "VIN",
+    "vehicleModel",
+    col("exploded._1").alias("label"),
+    col("exploded._2").alias("value"),
+    col("exploded._3").alias("dateTime")
+)
 
+# Filter relevant rows for TripIndex, Fuel, and Odometer
+trip_df = exploded_df.filter(col("label").isin(["TripIndex", "Fuel", "Odometer"]))
+
+# Cast dateTime to double and value to double where applicable
+trip_df = trip_df.withColumn("dateTime", col("dateTime").cast("double"))
+trip_df = trip_df.withColumn("value_double", col("value").cast("double"))
+
+# Retrieve TripIndex per timestamp for grouping
+tripindex_df = trip_df.filter(col("label") == "TripIndex").select(
+    "VIN", "vehicleModel", "dateTime", col("value").alias("TripIndex")
+)
+
+# Join TripIndex info back to trip_df for consistent trip grouping
+joined_df = trip_df.join(tripindex_df, on=["VIN", "vehicleModel", "dateTime"], how="inner")
+
+# Aggregate trip summaries
+summary_df = joined_df.groupBy("VIN", "vehicleModel", "TripIndex").agg(
+    spark_min("dateTime").alias("Start_Time"),
+    spark_max("dateTime").alias("End_Time"),
+    spark_min(
+        col("value_double").when(col("label") == "Odometer", col("value_double"))
+    ).alias("Odo_min"),
+    spark_max(
+        col("value_double").when(col("label") == "Odometer", col("value_double"))
+    ).alias("Odo_max"),
+    spark_sum(
+        col("value_double").when(col("label") == "Fuel", col("value_double"))
+    ).alias("Fuel_ml")
+)
+
+# Display aggregated trip summaries
+summary_df.show(truncate=False)
 ```
 
 
