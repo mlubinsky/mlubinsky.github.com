@@ -37,10 +37,10 @@ Please aggregate the data into a format where we have summaries for each TripInd
 We would also like you to include a column for vehicleModel.
  
 Below is an example of the column headers we are expecting, with each row representing summaries for each trip completed by each vehicle.
-None
+ 
 
   |VIN|vehicleModel|TripIndex|Start_Time|End_Time|Odo_min|Odo
-  _max|Fuel_ml|
+  _max|Fuel_ml|  
   |---|------------|---------|----------|--------|-------|---
   ----|-------|
   
