@@ -12,12 +12,12 @@ JSON  has the following nested structure:
 
 ??? ● vehicleData:ArrayType() that contains vehicle data.  It has the following fields:  
 
-● sensorData:StructType() that contains simulated vehicle sensordata.  
+● sensorData:StructType() that contains simulated vehicle sensor data.  
 In this struct you will find arrays of sensor data that were logged during each second of recording.  
 ```
     ○ label:ArrayType() with the labels of the logged sensors.
         The three sensors names we've simulated here are:  
-        ■ Odometer: Odometer value in miles(total miles the vehicle has driven since it was built).  
+        ■ Odometer: Odometer value in miles (total miles the vehicle has driven since it was built).  
         ■ Fuel: Amount of fuel consumed (in milliliters) since the last Fuel value was recorded.  
         ■ TripIndex: Unique number that indexes the number of trips that have occured. This trip index increases by one with each new trip.   
 
@@ -26,17 +26,20 @@ In this struct you will find arrays of sensor data that were logged during each 
 ```
 
 ### Assignment Questions
-1) Data aggregation
-Please aggregate the data into a format where we have summaries for each TripIndex completed by each VIN. We would like you to provide the following summaries for each trip:
+1) Data aggregation  
+Please aggregate the data into a format where we have summaries for each TripIndex completed by each VIN.  
+We would like you to provide the following summaries for each trip:
+
 ● Start_Time: the unix timestamp for when the trip started  
-● End_Time: unix timestamp for when the trip ended
-● Odo_min: minimum odometer value during each trip
-● Odo_max: maximum odometer value during each trip
-● Fuel_ml: sum of the milliliters of fuelconsumed during each trip
+● End_Time: unix timestamp for when the trip ended  
+● Odo_min: minimum odometer value during each trip  
+● Odo_max: maximum odometer value during each trip  
+● Fuel_ml: sum of the milliliters of fuelconsumed during each trip  
 
 We would also like you to include a column for vehicleModel.
  
-Below is an example of the column headers we are expecting, with each row representing summaries for each trip completed by each vehicle.
+Below is an example of the column headers we are expecting,   
+with each row representing summaries for each trip completed by each vehicle.
  
 
   |VIN|vehicleModel|TripIndex|Start_Time|End_Time|Odo_min|Odo
