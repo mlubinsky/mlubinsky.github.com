@@ -46,6 +46,17 @@ with each row representing summaries for each trip completed by each vehicle.
   _max|Fuel_ml|  
   |---|------------|---------|----------|--------|-------|---
   ----|-------|
+
+```
+ VIN
+vehicleModel
+TripIndex
+Start_Time
+End_Time
+Odo_min
+Odo _max
+Fuel_ml|
+```
   
   Insert code here for Q1 here --- add as many cells below as needed
  Write your thought process for the above code and the optimizations you would like to do
