@@ -9,9 +9,8 @@ Example of 1 line:
 JSON  has the following nested structure:  
 ● headers:MapType() that contains a unique vehicle identifier.  
 ● vehicleModel:StringType() thatcontainseachvehicle'smodeltype.  
-● vehicleData:ArrayType() that contains vehicle data.  
 
-It has the following fields:  
+??? ● vehicleData:ArrayType() that contains vehicle data.  It has the following fields:  
 
 ● sensorData:StructType() that contains simulated vehicle sensordata.  
 In this struct you will find arrays of sensor data that were logged during each second of recording.  
