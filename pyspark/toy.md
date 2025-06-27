@@ -8,7 +8,7 @@ Example of 1 line:
 
 JSON  has the following nested structure:  
 ● headers:MapType() that contains a unique vehicle identifier.  
-● vehicleModel:StringType() thatcontainseachvehicle'smodeltype.  
+● vehicleModel:StringType() that contains each vehicle's model type.  
 
 ??? ● vehicleData:ArrayType() that contains vehicle data.  It has the following fields:  
 
@@ -46,5 +46,56 @@ Below is an example of the column headers we are expecting, with each row repres
   
   Insert code here for Q1 here --- add as many cells below as needed
  Write your thought process for the above code and the optimizations you would like to do
+
+
+```python
+# Databricks notebook using PySpark to read the described JSON structure into a DataFrame
+# and prepare for structured processing
+
+from pyspark.sql import SparkSession
+from pyspark.sql.types import StructType, StructField, StringType, MapType, ArrayType
+
+# Initialize Spark session (Databricks already provides spark by default)
+spark = SparkSession.builder.appName("ReadVehicleJson").getOrCreate()
+
+# Define the schema explicitly for better performance and clear structure
+schema = StructType([
+    StructField("headers", MapType(StringType(), StringType()), True),
+    StructField("vehicleModel", StringType(), True),
+    StructField("sensorData", StructType([
+        StructField("label", ArrayType(StringType()), True),
+        StructField("value", ArrayType(StringType()), True),
+        StructField("dateTime", ArrayType(StringType()), True)
+    ]), True),
+    StructField("identifier", StringType(), True)
+])
+
+# Adjust the path to your file in DBFS, e.g., "/FileStore/tables/vehicle_data.json"
+file_path = "/dbfs/FileStore/tables/vehicle_data.json"
+
+# Read the JSON file with the specified schema
+df = spark.read.schema(schema).json(file_path)
+
+# Show a few records for verification
+df.show(truncate=False)
+
+df.printSchema()
+
+# If you want to select and flatten some columns for further analysis
+flattened_df = df.select(
+    df["headers"].getItem("VIN").alias("VIN"),
+    "vehicleModel",
+    "sensorData.label",
+    "sensorData.value",
+    "sensorData.dateTime",
+    "identifier"
+)
+
+flattened_df.show(truncate=False)
+
+
+```
+
+
 
 ###2) Architect a Data Pipeline
