@@ -28,6 +28,7 @@ https://pattern-kit.readthedocs.io/en/latest/  implementations of common softwar
 
 https://github.com/airtai/faststream provides a unified API to work across multiple message brokers (Kafka, RabbitMQ, NATS, Redis support)
 
+### Exersize
 ```
 There are 2 python dictionaries:
 group2dut: keys is a string and value is a list of strings
@@ -2073,6 +2074,41 @@ Traceback (most recent call last):
   File "<python-input-13>", line 1, in <module>
     User("Alyosha", "Popovich", "aleshap@something.com", "16")
 ```
+
+
+### Dataclass vs TypedDict
+
+
+TypedDict and dataclass in Python both offer ways to define structured data with type hints, but they serve different primary purposes and have distinct characteristics:
+#### TypedDict:
+Purpose:  
+Primarily for providing type hints for dictionary-like structures. It allows you to specify the expected keys and their corresponding value types within a dictionary.  
+Runtime Behavior:  
+TypedDict objects are essentially enhanced dicts at runtime. They behave like regular dictionaries, and no runtime type checking or validation is performed by TypedDict itself.   
+Type checking is handled by static analysis tools like MyPy.
+Use Cases:  
+Ideal when you are working with data that is inherently dictionary-based (e.g., JSON payloads, configuration files)  
+and you want to add type safety and improve readability without introducing a full-fledged class.
+
+#### Dataclass:
+Purpose:  
+To simplify the creation of classes that primarily store data. It automatically generates common methods like __init__, __repr__, __eq__, etc., reducing boilerplate code.  
+Runtime Behavior:  
+dataclass creates actual Python classes. Instances of dataclasses are objects with attributes, and they participate in Python's object model.   
+While they offer type hints, they don't inherently provide runtime type validation unless combined with other libraries (like Pydantic).
+Use Cases:  
+Suitable for defining data models within your application where you want object-oriented features, method definitions, 
+and potentially more complex behavior beyond simple key-value storage.
+
+#### Key Differences Summarized:
+|Feature| TypedDict| Dataclass|
+|-------|----------|----------|
+|Underlying Type Dictionary (dict) Class (object)
+|Runtime Checks No inherent runtime type checking/validation No inherent runtime type checking/validation
+|Object Model Dictionary-like access (data['key']) Attribute access (data.key)
+|Boilerplate Minimal, primarily for type hints
+|Reduces boilerplate for data-holding classes
+|Use CaseTyping dictionaries Defining data-centric classes
 
 
 ### itertools
