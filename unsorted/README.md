@@ -9,6 +9,13 @@ https://habr.com/ru/companies/timeweb/articles/873430/
 
 http://lucumr.pocoo.org/2025/1/30/how-i-ai
 
+
+### Wiki / documentation
+
+https://github.com/leomoon-studios/wiki-go
+
+https://www.mkdocs.org/
+
 ### E-Book readers
 ```
 Kindle Paperwhite – идеальный баланс цены и качества.
