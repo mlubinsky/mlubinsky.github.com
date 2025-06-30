@@ -3048,6 +3048,11 @@ def get_ip():
     return IP
 ```
 
+### telert
+Command‑line and Python utility that alerts on command completion, code execution and system monitoring events
+https://github.com/navig-me/telert
+
+
 ## Working with MS Excel
 
 https://hakibenita.com/fast-excel-python
