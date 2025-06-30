@@ -1,5 +1,7 @@
 ## Regular expression
 
+https://habr.com/ru/companies/selectel/articles/922694/
+
 https://regex101.com/
 
 <https://regexr.com/>
