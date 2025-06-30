@@ -16,6 +16,8 @@ https://github.com/leomoon-studios/wiki-go
 
 https://www.mkdocs.org/
 
+https://squidfunk.github.io/mkdocs-material/
+
 ### E-Book readers
 ```
 Kindle Paperwhite – идеальный баланс цены и качества.
