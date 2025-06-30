@@ -4,6 +4,8 @@ https://edu.postgrespro.com/postgresql_internals-14_en.pdf    Egor Rogov
 
 https://habr.com/ru/articles/923572/ PostgreSQL Mistakes and How to Avoid Them
 
+PREPARE statement: https://habr.com/ru/articles/923352/
+
 https://habr.com/ru/articles/76309/ Распараллеливание длительных операций
 
 https://pgbootcamp.ru/ru/
