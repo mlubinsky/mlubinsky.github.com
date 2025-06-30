@@ -13,6 +13,67 @@ https://explore.skillbuilder.aws/learn/catalog
 
 https://explore.skillbuilder.aws/learn/mycourses Machine Learning Plan (I enrolled)
 
+Free Amazon (AWS) Courses & Certificates.
+
+ 
+
+Let's check out the top 8 courses for 2025:⤵️ 
+
+1. Introduction to Artificial Intelligence
+
+Artificial intelligence (AI), its significance, machine learning, deep learning, and Amazon's application of AI in its products are all covered in this course.
+
+🔗https://lnkd.in/gghgJzXC
+
+
+2. Introduction to Blockchain
+
+Beginners who are curious in how blockchain may benefit businesses should take this course. 
+ 
+It goes over the main ideas, advantages, and practical applications of blockchain technology.
+
+🔗https://lnkd.in/gUNF35Ck
+
+
+3. Data Analytics Learning Plan
+
+This Learning Plan aids professionals in designing, building, securing, and maintaining analytics solutions, aiding in data analysis and preparing for the AWS Certified Data Analytics - Specialty exam.
+
+🔗https://lnkd.in/gVDphkpn
+
+
+4. DevOps Engineer Learning Plan
+
+Professionals may swiftly and securely launch apps on AWS with the aid this learning plan. To help you get ready for the AWS Certified DevOps Engineer exam, it covers CI/CD, version control, and infrastructure as code.
+
+🔗https://lnkd.in/gJT3zZts
+
+
+5. Getting Started with DevOps on AWS
+
+This course is intended for technical learners who want to understand the fundamentals of AWS DevOps. 
+ 
+You will investigate the methods, procedures, and equipment employed in a DevOps setting.
+
+🔗 https://lnkd.in/gJT3zZts
+
+
+6. Machine Learning Terminology and Process
+
+This course covers fundamental machine learning principles and data processing techniques, examining popular concepts approaches in machine learning projects, providing detailed explanations of each phase.
+
+🔗 https://lnkd.in/gJ2gF_pr
+
+
+7. Machine Learning Plan
+
+It offers virtual instruction in cloud computing and machine learning services to get you ready for the AWS Certified Machine Learning - Specialty test.
+
+🔗https://lnkd.in/gVzidHYX
+
+
+8. AWS Cloud Quest: Cloud Practitioner
+
 
 ### Asure databricks learning
 
