@@ -1,6 +1,7 @@
 BPMN 2.0 универсальный подход при построении диаграмм
 https://habr.com/ru/articles/843942/
 
+https://news.ycombinator.com/item?id=44431178
 
 https://news.ycombinator.com/item?id=43808803 text to diagram tools
 
