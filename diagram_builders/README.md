@@ -15,7 +15,7 @@ https://news.ycombinator.com/item?id=43808803 text to diagram tools
 
   https://wiki.postgresql.org/wiki/Design_Tools
  
-https://mermaid.js.org/syntax/entityRelationshipDiagram.html
+
 
  https://schemaspy.org/samples/chinook/relationships.html
 
@@ -29,7 +29,7 @@ https://news.ycombinator.com/item?id=42044771
 
 http://magjac.com/graphviz-visual-editor/
 
-https://mermaid.js.org/
+
 
 https://pikchr.org/home/pikchrshow
 
@@ -105,10 +105,14 @@ https://dev.to/appmap/quickly-learn-how-new-to-you-code-works-using-sequence-dia
 
 http://fmc-modeling.org/
 
-### Marmaid
+### Mermaid
 https://mermaid.live/
 
+https://mermaid.js.org/
+
 https://mermaid.js.org/syntax/gitgraph.html
+
+https://mermaid.js.org/syntax/entityRelationshipDiagram.html
 
 https://swimlanes.io/
 
