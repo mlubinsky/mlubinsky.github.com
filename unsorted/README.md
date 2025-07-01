@@ -18,6 +18,12 @@ https://www.mkdocs.org/
 
 https://squidfunk.github.io/mkdocs-material/
 
+https://habr.com/ru/companies/cloud_ru/articles/920292/
+
+https://github.com/kirillikoff/techwriterhelps/blob/main/docs/documentation-template.md
+
+https://github.com/kirillikoff/techwriterhelps/blob/main/docs/questions.md
+
 ### E-Book readers
 ```
 Kindle Paperwhite – идеальный баланс цены и качества.
