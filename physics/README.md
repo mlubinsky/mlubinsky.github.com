@@ -327,6 +327,8 @@ https://habr.com/ru/post/544030/ FermiNet
 
 ### Entropy
 
+http://evgenii.rudnyi.ru/doc/ru/blog/BookEntropy.pdf
+
 https://habr.com/ru/articles/916556/
 
 https://www.youtube.com/watch?v=ScX2aBFyrVU Information Theory: Defining Entropy and Information - Oxford Mathematics 3rd Year Student Lecture
