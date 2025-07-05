@@ -1,5 +1,7 @@
 https://habr.com/ru/articles/923462/
 
+https://medium.com/@obaff/14-bash-tricks-to-optimize-ssh-connections-and-secure-remote-access-4e6fa2a0b0b4
+
 ### SSH-Туннели простыми словами
 
 https://habr.com/ru/articles/804263/
