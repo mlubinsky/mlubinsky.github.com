@@ -18,6 +18,8 @@ https://www.mkdocs.org/
 
 https://squidfunk.github.io/mkdocs-material/
 
+https://habr.com/ru/articles/925306/ пошаговое руководство по MkDocs + Material
+
 https://habr.com/ru/companies/cloud_ru/articles/920292/
 
 https://github.com/kirillikoff/techwriterhelps/blob/main/docs/documentation-template.md
