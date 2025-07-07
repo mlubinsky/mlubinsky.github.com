@@ -13,7 +13,8 @@ https://clickhouse.com/blog/apache-parquet-clickhouse-local-querying-writing
 https://clickhouse.com/blog/extracting-converting-querying-local-files-with-sql-clickhouse-local
 
 https://pradeepchhetri.xyz/clickhousevstimescaledb/
-https://blog.timescale.com/blog/what-is-clickhouse-how-does-it-compare-to-postgresql-and-timescaledb-and-how-does-it-pe…
+
+https://blog.timescale.com/blog/what-is-clickhouse-how-does-it-compare-to-postgresql-and-timescaledb-and-how-does-it-perform-for-time-series-data/
 
 <https://medium.com/@leventov/comparison-of-the-open-source-olap-systems-for-big-data-clickhouse-druid-and-pinot-8e042a5ed1c7>
 
