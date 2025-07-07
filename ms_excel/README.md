@@ -1,4 +1,6 @@
 https://habr.com/ru/articles/824050/
+ 
+Book: https://driscollis.gumroad.com/l/reportlab/mson4qp  ReportLab: PDF Processing in Python
 
 ### Adjust header and column width
 
