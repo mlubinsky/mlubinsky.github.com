@@ -2,6 +2,8 @@ https://docs.nvidia.com/cuda/pdf/CUDA_C_Programming_Guide.pdf
 
 https://docs.nvidia.com/cuda/pdf/CUDA_Runtime_API.pdf
 
+https://leanpub.com/pythongpuprogramming Practical GPU Programming
+
 https://damek.github.io/random/basic-facts-about-gpus/
 
 https://enccs.github.io/gpu-programming/2-gpu-ecosystem/
