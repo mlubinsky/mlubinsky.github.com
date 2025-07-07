@@ -2,6 +2,8 @@
 
 https://habr.com/ru/companies/selectel/articles/811585/ (link to book inside)
 
+https://habr.com/ru/companies/otus/articles/924426/ RecBole — «комбайн» на PyTorch для любых рекомендаций
+
 https://habr.com/ru/articles/835380/
 
 https://habr.com/ru/articles/825896/ Графы в рекомендательных системах
