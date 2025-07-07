@@ -18,6 +18,8 @@ https://www.mkdocs.org/
 
 https://squidfunk.github.io/mkdocs-material/
 
+https://habr.com/ru/articles/925476/ Автоматизация документации: MkDocs Material + GitLab CI/CD + Битрикс
+
 https://habr.com/ru/articles/925306/ пошаговое руководство по MkDocs + Material
 
 https://habr.com/ru/companies/cloud_ru/articles/920292/
