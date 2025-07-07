@@ -1,9 +1,14 @@
 
-DuckDB vs Spark
+Databricks free courses
+https://customer-academy.databricks.com/learn free cources from databricks
+
+### DuckDB vs Spark
 
 https://milescole.dev/data-engineering/2024/12/12/Should-You-Ditch-Spark-DuckDB-Polars.html
 
-https://stats.stackexchange.com/questions/357963/what-is-the-difference-between-cross-entropy-and-kl-divergence](https://news.ycombinator.com/item?id=42419224
+
+
+https://news.ycombinator.com/item?id=42419224
 
 
 ### Spark 
