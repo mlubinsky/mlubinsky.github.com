@@ -1,6 +1,8 @@
 о методе максимального правдоподобия и информации Фишера
 https://habr.com/ru/articles/830326/
 
+https://stats.stackexchange.com/questions/357963/what-is-the-difference-between-cross-entropy-and-kl-divergence
+
 https://mattblackwell.github.io/gov2002-book/
 
 https://medium.com/@lucassamba/3-probability-questions-i-was-asked-in-walmart-data-scientist-interview-f3cddba746d1
