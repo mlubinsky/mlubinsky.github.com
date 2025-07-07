@@ -155,6 +155,12 @@ https://github.com/DovAmir/awesome-design-patterns
 
 https://habr.com/ru/articles/888202/
 
+https://github.com/ByteByteGoHq/system-design-101
+
+https://github.com/InterviewReady/system-design-resources
+
+https://github.com/karanpratapsingh/system-design
+
 https://habr.com/ru/companies/kts/articles/741846/ Полное руководство по проектированию систем в виде схемы
 
 https://habr.com/ru/companies/vk/articles/741702/  Data Formats (avro, etc)
