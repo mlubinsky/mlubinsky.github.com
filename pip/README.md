@@ -2,6 +2,9 @@
 https://lobste.rs/s/rchiux/how_install_python_on_mac
 
 ### UV
+
+https://docs.astral.sh/uv/guides/scripts/#declaring-script-dependencies
+
 https://bluesock.org/~willkg/blog/dev/switch_pyenv_to_uv.html
 
 https://news.ycombinator.com/item?id=43307563
