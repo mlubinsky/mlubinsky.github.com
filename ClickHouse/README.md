@@ -20,7 +20,8 @@ https://blog.timescale.com/blog/what-is-clickhouse-how-does-it-compare-to-postgr
 
 https://tech.marksblogg.com/faster-clickhouse-imports-csv-parquet-mysql.html
 
-https://habr.com/ru/companies/ozontech/articles/774712/https://habr.com/ru/companies/ozontech/articles/774712/   Clickhouse + Grafana
+https://habr.com/ru/companies/ozontech/articles/774712/ Clickhouse, Grafana и 3000 графиков. Как построить систему быстрых дашбордов
+
 
 https://medium.com/@Tom1212121/clickhouse-vs-druid-vs-pinot-complex-sql-joins-and-storage-e41c5cc04061
 
