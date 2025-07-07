@@ -52,6 +52,9 @@ BuildVersion:	18G95
 
 https://lobste.rs/s/d5qwzs/what_is_your_mac_os_setup
 
+
+https://aerolite.dev/applite  GUI for brew
+
 ### See versions of brew-installed packages:
 
 brew list --versions
