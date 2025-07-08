@@ -4,6 +4,8 @@ https://edu.postgrespro.com/postgresql_internals-14_en.pdf    Egor Rogov
 
 https://habr.com/ru/articles/923572/ PostgreSQL Mistakes and How to Avoid Them
 
+https://devpro.blob.core.windows.net/presentations/2019/%D0%A7%D1%83%D0%B2%D0%B0%D1%88%D0%BE%D0%B2_%D0%98%D0%B2%D0%B0%D0%BD.pdf
+
 https://volodymyrpotiichuk.com/blog/articles/unique-indexes-on-large-data-in-postgres-sql
 
 PREPARE statement: https://habr.com/ru/articles/923352/
