@@ -4,6 +4,8 @@ https://sqlize.online/
 
 https://blog.devgenius.io/master-sql-with-multiple-ctes-window-functions-frames-and-subquery-in-one-leetcode-challenge-882fd803d7e7
 
+https://habr.com/ru/articles/913682/ локальный SQL-редактор в браузере на DuckDB и WASM
+
 ### First_Value()  LAST_VALUE()
 https://medium.com/towards-data-engineering/sql-first-and-last-value-functions-6e4519937965
 
