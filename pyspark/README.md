@@ -9,6 +9,11 @@ https://anuja-shukla.medium.com/how-to-write-pyspark-dataframes-to-s3-like-a-pro
 
 https://blog.devgenius.io/feature-engineering-with-pyspark-a-practical-guide-for-scalable-ml-pipelines-ec55aa1ac4c7
 
+### Data Streaming
+https://www.reddit.com/r/Python/comments/1lvbdd4/local_labs_for_realtime_data_streaming_with/
+
+https://github.com/factorhouse/examples/tree/main/fh-local-labs
+
 ### Plain select()
 ```python
 from pyspark.sql.functions import count, avg, sum, min, max
