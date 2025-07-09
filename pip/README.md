@@ -17,6 +17,8 @@ https://news.ycombinator.com/item?id=43307563
 
 - uv run <cmd> when you want to run a command in the venv
 
+- https://www.bitdoze.com/uv-run-scripts-guide/
+
 ### PyInstaller
 https://lobste.rs/s/szslrx/how_convert_python_applications
 
