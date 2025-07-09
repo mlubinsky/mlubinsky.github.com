@@ -16,6 +16,8 @@ https://github.com/leomoon-studios/wiki-go
 
 https://www.mkdocs.org/
 
+https://aashishkumar12376.medium.com/documenting-python-projects-with-mkdocs-the-right-way-to-showcase-your-code-b20937b0da13
+
 https://squidfunk.github.io/mkdocs-material/
 
 https://habr.com/ru/articles/925476/ Автоматизация документации: MkDocs Material + GitLab CI/CD + Битрикс
