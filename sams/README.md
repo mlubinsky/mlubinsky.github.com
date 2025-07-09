@@ -1,6 +1,40 @@
 
-### Search subfolders in folder
+```python
+import csv
+
+def f(csv_file_path):
+    """
+    For each row in the csv_file_path where the 3rd column != 'CLOSED',
+    call check_me(value_in_1st_column).
+    If check_me returns > 0, update the 3rd column to 'CLOSED'.
+    Finally, update the input CSV file in-place.
+    """
+    # Read all rows into memory
+    with open(csv_file_path, newline='', encoding='utf-8') as f_in:
+        reader = list(csv.reader(f_in))
+    
+    header = reader[0]
+    rows = reader[1:]
+
+    for row in rows:
+        if len(row) < 3:
+            continue  # skip malformed rows
+        if row[2] != 'CLOSED':
+            result = check_me(row[0])
+            if result > 0:
+                row[2] = 'CLOSED'
+
+    # Write back to the same CSV file
+    with open(csv_file_path, 'w', newline='', encoding='utf-8') as f_out:
+        writer = csv.writer(f_out)
+        writer.writerow(header)
+        writer.writerows(rows)
 ```
+
+
+
+### Search subfolders in folder
+```python
 import os
 
 def find_nested_folder(target_folder, prefix, pattern):
@@ -93,7 +127,7 @@ ORDER BY test
 
 ### Construct the SQL WHERE clause with the values from your Python list 
 
-```
+```python
 x = ['a', 'b']
 sql_string = "WHERE col IN ({})".format(', '.join(f"'{item}'" for item in x))
 print(sql_string)
@@ -104,7 +138,7 @@ WHERE col IN ('a', 'b')
 ```
 ### Read SQL to pandas dataframe: pd.read_sql_query
 
-```
+```python
 from sqlalchemy import create_engine
 import psycopg2, os
 import pandas as pd
@@ -152,7 +186,7 @@ If --back is provided then --end_date should not be provided and vice versa.
 
 ```
 ### Solution for SQLite
-```
+```python
 import argparse
 import sqlite3
 from datetime import datetime, timedelta
@@ -267,8 +301,8 @@ Cursor and Execution:
 The PostgreSQL adapter uses a similar method for executing SQL queries but with cursor.execute(query,
 params) where params is a list of parameters to be safely injected into the query.
 
-
-
+```
+```python
 import argparse
 import psycopg2
 from datetime import datetime, timedelta
@@ -386,7 +420,7 @@ Recursively deletes a folder and its contents, and then removes empty parent fol
 Args:   folder_name (str): The name of the folder to delete.
  
 
-```
+```python
 import os
 import shutil
 
@@ -405,7 +439,7 @@ def delete_folder(folder_path):
         parent_path = os.path.dirname(parent_path)
 ```
 Gemini
-```
+```python
 import os
 import shutil
 
@@ -433,7 +467,7 @@ if __name__ == "__main__":
 
 
 ### Search in subfolder
-```
+```python
 import os
 import fnmatch
 
@@ -468,7 +502,7 @@ def find_files(folder_name, file_suffix, subfolder_pattern):
 
 
 ### Parse csv 
-```
+```python
 import csv
 
 def get_unique_values_first_column(csv_file_name):
@@ -484,9 +518,6 @@ def get_unique_values_first_column(csv_file_name):
     
     return list(unique_values)
 
-
-import csv
-
 def get_unique_values(csv_file):
   unique_values = set()
   with open(csv_file, 'r') as file:
@@ -500,11 +531,9 @@ def get_unique_values(csv_file):
 ### subprocess.Popen()
 https://realpython.com/python-subprocess/
 Gemini
-```
  Execute a long-running batch file from Python, capture its output in real-time,
  and display it to the console. keep last 100 records in queue
-
- 
+```python
 import subprocess
 from collections import deque
 #-----------------------------------------
@@ -535,9 +564,9 @@ ChatGPT
 When you use subprocess.run() with capture_output=True, the output is captured and not immediately displayed in the console. If you want to see the output in real-time, you can use the subprocess.Popen method instead. This allows you to read the output line by line and print it to the console as it is generated.
 
 Here's how you can do it:
+```
 
-python
-Copy code
+```python
 import subprocess
 
 with subprocess.Popen("a.bat", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True) as process:
@@ -610,7 +639,7 @@ If you try these methods and still face issues, it would be helpful to know your
 
 
 ### Find matching - ChatGPT
-```
+```python
 import os
 import glob
 
@@ -664,8 +693,7 @@ if __name__ == "__main__":
 ```
 
 ### Find the matching - Gemini:
-```
-
+```python
 import os
 
 def find_matching_output(input_folder):
@@ -747,13 +775,10 @@ if __name__ == "__main__":
 ```
 
 ### Geolocation 1
-```
 First, you need to sign up for an API key from OpenCage: OpenCage Geocoding API.
 
 Here is the Python function:
-
-python
-Copy code
+```python
 import requests
 
 def get_geolocation(api_key, latitude, longitude):
@@ -798,7 +823,7 @@ print(geolocation)
 
 
 ### Geolocation 2
-```
+```python
 import requests
 
 def get_geolocation(longitude, latitude, api_key=None):
@@ -867,7 +892,7 @@ echo nl2br("\n command=" . $command ) ;
 echo json_encode($_REQUEST); for hash arrays
 
 ### Pandas
-```
+```python
 error_types_interests = ['_position2DError', '_xTrackError', '_alongTrackError', 'SOG_Error', '_headingError', 'dist_error']
 
 df1_lsi_tmp = df1_LSI.loc[df1_LSI['Error_Type'].isin(error_types_interests)].groupby(['Chipset','Model','Signal_Bands','Error_Type']).agg('mean')
