@@ -1,5 +1,7 @@
 https://www.arroyo.dev/blog/stateful-stream-processing
 
+https://www.reddit.com/r/Python/comments/1lvbdd4/local_labs_for_realtime_data_streaming_with/
+
 https://www.youtube.com/watch?v=6ldUZ4iHxI8 Apache Spark Vs Apache Flink
 
 https://www.youtube.com/watch?v=qGrQCh6yAwc Stream Processing Smackdown: Kafka Streams vs. Apache Flink by Viktor Gamov
