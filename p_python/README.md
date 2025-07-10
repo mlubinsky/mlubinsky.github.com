@@ -28,6 +28,8 @@ https://pattern-kit.readthedocs.io/en/latest/  implementations of common softwar
 
 https://github.com/airtai/faststream provides a unified API to work across multiple message brokers (Kafka, RabbitMQ, NATS, Redis support)
 
+
+https://pypi.org/project/pylivedev/  if anything changed it could automatically restart those services 
 ### Exersize
 ```
 There are 2 python dictionaries:
