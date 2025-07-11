@@ -89,14 +89,19 @@ Trusted by Microsoft, GoDaddy, and more. Freelance projects for all skills.
 
 
 
-### MAIN links
+### MAIN links: algoexpert and techiedelight
 <https://www.algoexpert.io/systems/product>
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
 
 
-### url shortening system design 
+### URL shortener system design 
+
 https://javatechonline.com/url-shortening-system-design-tiny-url/
+
+https://habr.com/ru/companies/selectel/articles/747738/ URL shortener
+
+https://habr.com/ru/articles/927056/
 
 ### TOP K problem
 
