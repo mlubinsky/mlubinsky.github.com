@@ -6,6 +6,8 @@ https://cloud.google.com/blog/products/ai-machine-learning/guide-to-jax-for-pyto
 
 ### PyTorch
 
+https://sebastianraschka.com/teaching/pytorch-1h/
+
 https://pytorchstepbystep.com/
 
 https://habr.com/ru/articles/870426/ Пишем свой PyTorch на NumPy. Часть 3. Строим граф вычислений
