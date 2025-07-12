@@ -42,56 +42,16 @@ https://news.ycombinator.com/item?id=43364668
 https://habr.com/ru/companies/otus/articles/898114/  FILTER IFNULL A/B test
 
 
-### FETCH FIRST 3 ROWS WITH TIES
-```sql
- SELECT * 
-           FROM  t_test 
-           ORDER BY id 
-           FETCH FIRST 3 ROWS WITH TIES;
 
-select *  from employees
-order by salary desc
-fetch first 1 rows with ties;
-
-it is the same as: 
-select *  from employees
-where salary = (select max(salary) from employees);
-```
 ### GREATEST n per group
 https://stackoverflow.com/a/123481/684229
 
 ### array_agg
 
-### SELECT DISTINCT ON (Postgres ONLY)
 
-it is equvalent to
-```sql
-WITH summary AS (
-    SELECT p.id, 
-           p.customer, 
-           p.total, 
-           ROW_NUMBER() OVER(PARTITION BY p.customer 
-                                 ORDER BY p.total DESC) AS rank
-      FROM PURCHASES p)
- SELECT *
-   FROM summary
- WHERE rank = 1
-```
 
 https://stackoverflow.com/questions/3800551/select-first-row-in-each-group-by-group/7630564#7630564
 
-https://stackoverflow.com/questions/46566602/what-does-distinct-on-expression-do
-
-https://www.geekytidbits.com/postgres-distinct-on/
-```sql
-SELECT DISTINCT ON (url) url, request_duration
-FROM logs
-ORDER BY url, timestamp DESC
-```
-That’s it! We’re telling PostgreSQL to “put the logs into groups unique by url (ON (url)),   
-sort each of these groups by most recent (ORDER BY url, timestamp DESC)   
-and then return fields for the first record in each of these groups (url, request_duration).
- 
 
 
 ### Partial Index
@@ -2145,12 +2105,7 @@ docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=passwo
 
 <https://hakibenita.com/fast-load-data-python-postgresql>
 
-### DISTINCT
-<https://hakibenita.com/the-many-faces-of-distinct-in-postgre-sql> 
 
-<https://www.yogeshchauhan.com/167/postgres/the-confusing-unique-and-useful-feature-in-postgres-distinct-on>
-
-<https://news.ycombinator.com/item?id=22625642>
 
 
 ## Postgres 12
@@ -2405,13 +2360,7 @@ order by schema_name,
 ## Trigger
 <https://medium.com/@deb3007/trigger-function-in-postgresql-22e118bb082d>
 
-## SQL  select distinct on
-```sql 
-select distinct on (s.device_id) s.time, d.group_name, s.value 
-from sensor_values s 
-JOIN device_info d ON s.device_id=d.device_id 
-ORDER BY s.device_id, time DESC;
-```
+
  
 <http://postgres-bits.herokuapp.com/#1>
 
