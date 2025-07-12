@@ -1,3 +1,0 @@
-## Apache Spark
-
-### Configuration
