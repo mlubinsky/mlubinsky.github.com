@@ -25,6 +25,7 @@ To change a default schema at the user/role level, the “ALTER USER” or “AL
 ALTER ROLE|USER role_name SET search_path TO schema_name;
 ```
 
+### PG schema links
 <https://www.cybertec-postgresql.com/en/tracking-view-dependencies-in-postgresql/>
 
 <http://www.postgresqltutorial.com/postgresql-schema/>
@@ -252,11 +253,11 @@ SELECT pg_terminate_backend(PID);
 ##  DateTime,  timestamp и timestamptz , timezones
 
 https://habr.com/ru/articles/772954/
-
+```sql
 select now()::timestamp, now();
 
 SHOW timezone;
-
+```
 <https://phili.pe/posts/timestamps-and-time-zones-in-postgresql/>
 
 <https://momjian.us/main/blogs/pgblog/2019.html#February_11_2019>
@@ -320,9 +321,8 @@ select time from tracking where time < '2019-06-12 23:00';
 select time from tracking where time < '06-12-2019 23:00';
 ```
 
-
-
-
+### Aggregate functions
+https://www.postgresql.org/docs/current/functions-aggregate.html
 
 
 ### Window Functions
