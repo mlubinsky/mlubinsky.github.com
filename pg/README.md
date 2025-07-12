@@ -43,7 +43,7 @@ https://habr.com/ru/companies/otus/articles/898114/  FILTER IFNULL A/B test
 
 
 ### FETCH FIRST 3 ROWS WITH TIES
-```
+```sql
  SELECT * 
            FROM  t_test 
            ORDER BY id 
@@ -65,7 +65,7 @@ https://stackoverflow.com/a/123481/684229
 ### SELECT DISTINCT ON (Postgres ONLY)
 
 it is equvalent to
-```
+```sql
 WITH summary AS (
     SELECT p.id, 
            p.customer, 
@@ -83,13 +83,15 @@ https://stackoverflow.com/questions/3800551/select-first-row-in-each-group-by-gr
 https://stackoverflow.com/questions/46566602/what-does-distinct-on-expression-do
 
 https://www.geekytidbits.com/postgres-distinct-on/
-```
+```sql
 SELECT DISTINCT ON (url) url, request_duration
 FROM logs
 ORDER BY url, timestamp DESC
-
-That’s it! We’re telling PostgreSQL to “put the logs into groups unique by url (ON (url)), sort each of these groups by most recent (ORDER BY url, timestamp DESC) and then return fields for the first record in each of these groups (url, request_duration).
 ```
+That’s it! We’re telling PostgreSQL to “put the logs into groups unique by url (ON (url)),   
+sort each of these groups by most recent (ORDER BY url, timestamp DESC)   
+and then return fields for the first record in each of these groups (url, request_duration).
+ 
 
 
 ### Partial Index
@@ -126,7 +128,7 @@ SELECT
 ### DELETING IN BATCHES
 
 https://www.geekytidbits.com/batch-deletes-in-postgres/
-```
+```sql
 DELETE FROM my_table
 WHERE id IN (
   SELECT id
@@ -525,7 +527,7 @@ https://habr.com/ru/companies/postgrespro/articles/819911/ Built-in replanning �
 
 https://hakibenita.com/postgresql-get-or-create 
 
-```
+```sql
 select * from (values \
 ('S21', 'SM-G991N'), \
 ('S21', 'SM-G996N'), \
@@ -592,7 +594,7 @@ https://habr.com/ru/companies/otus/articles/864896/
  
 The content of  column A is the comma-separated numbers.
 Please write SQL which returns how many numbers in this column are greater then 7. 
-```
+```sql
 SELECT SUM(t.num_count) AS total_numbers_gt_7
 FROM (
   SELECT id, 
@@ -724,7 +726,7 @@ https://packagemain.tech/p/mastering-cross-database-operations-with-postgres-fdw
 
 https://habr.com/ru/companies/otus/articles/817063/ Интеграция PostgreSQL и Hadoop
 
-```
+```sql
 CREATE EXTENSION clerk_fdw;
 
 CREATE FOREIGN DATA WRAPPER clerk_wrapper
@@ -781,7 +783,7 @@ https://www.psycopg.org/docs/usage.html#passing-parameters-to-sql-queries
 https://python.plainenglish.io/demystifying-database-interactions-with-psycopg3-a-practical-guide-54f60d268211
 
 ### Insert one record at the time:
-```
+```sql
 import psycopg2
 df = pd.read_csv('dataframe.csv')
 
@@ -804,7 +806,7 @@ conn.close()
 ```
 
 #### Insert many records using cur.execute() in the loop
-```
+```python
 data = [('Babita', 'Bihar'), ('Anushka', 'Hyderabad'), 
         ('Anamika', 'Banglore'), ('Sanaya', 'Pune'),
         ('Radha', 'Chandigarh')]
@@ -813,7 +815,7 @@ for d in data:
     cursor.execute("INSERT into employee(name, state) VALUES (%s, %s)", d)
 ```
 #### Insert many records at once using cur.executemany()
-```
+```python
 def insert_many(some list):
     sql = "INSERT INTO vendors(vendor_name) VALUES(%s)"
     conn = None
@@ -874,7 +876,7 @@ https://tabulator.info/docs/5.5
 
 https://stackoverflow.com/questions/11401749/pass-in-where-parameters-to-postgresql-view
 
-```
+```sql
 CREATE OR REPLACE FUNCTION param_labels(_region_label text, _model_label text)
   RETURNS TABLE (param_label text, param_graphics_label text)
   LANGUAGE sql AS
@@ -913,7 +915,7 @@ Since Postgres 9.2 you can use the declared parameter names in place of $1 and $
 
 ### Passing array to function
 
-```
+```sql
 create or replace function weekly_kpi (
 _fix text, 
 _source text, 
@@ -1031,7 +1033,7 @@ https://www.postgresql.org/docs/current/functions-string.html#FUNCTIONS-STRING-F
 
 EXECUTE command-string [ INTO [STRICT] target ] [ USING expression [, ... ] ];
 
-```
+```sql
    EXECUTE 'SELECT count(*) FROM mytable WHERE inserted_by = $1 AND inserted <= $2'
    INTO c
    USING checked_user, checked_date;
@@ -1061,16 +1063,16 @@ https://www.enterprisedb.com/postgres-tutorials/how-run-hierarchical-queries-ora
 
 https://www.mendelowski.com/docs/postgresql/recursive-sql-queries/
 
-```
-WITH RECURSIVE cte AS (                                                                                                                                                          
-SELECT emp_no, ename, manager_no, 1 AS level                                                                                                                                             FROM   dummy_table                                                                                                                                                                     
-where manager_no is null                                                                                                                                                            
+```sql
+WITH RECURSIVE cte AS (                                                         
+SELECT emp_no, ename, manager_no, 1 AS level                                                                         FROM   dummy_table                                                                       
+WHERE manager_no is null                                                                                                                                                            
 UNION  ALL                                                                                                                                                                               
-SELECT e.emp_no, e.ename, e.manager_no, c.level + 1                                                                                                                                      FROM   cte c                                                                                                                                                                            
-JOIN   dummy_table e ON e.manager_no = c.emp_no                                                                                  
+SELECT e.emp_no, e.ename, e.manager_no, c.level + 1
+FROM   cte c                                             
+JOIN   dummy_table e ON e.manager_no = c.emp_no 
 )                                                                                                                                                                                     
-SELECT *                                                                                                                                                                                 
-FROM   cte;
+SELECT *  FROM   cte;
 ```
 
 
@@ -1083,7 +1085,7 @@ https://learnsql.com/blog/creating-pivot-tables-in-postgresql-using-the-crosstab
 https://www.postgresonline.com/article_pfriendly/283.html
 
 https://www.postgresql.org/docs/current/tablefunc.html
-```
+```sql
 CREATE EXTENSION tablefunc;
 select * from T;
 
@@ -1118,7 +1120,7 @@ https://avestura.dev/blog/explaining-the-postgres-meme
 
 
 ### build dynamic SQL
-```
+```sql
 Pivot this:
 SELECT name, attr1, attr1, attr3, ... FROM T
 
@@ -1130,7 +1132,7 @@ Rows: attr1, attr2, attr_3,  etc
 
 
 ### PG function
-```
+```sql
 CREATE OR REPLACE FUNCTION get_descriptions(category text, metric text = NULL, start_date DATE = NULL, end_date DATE = NULL)
 -- returns setof varchar(255)
   returns setof kpi.description%TYPE
@@ -1147,8 +1149,6 @@ END;
 $func$ language plpgsql IMMUTABLE;
 
 SELECT get_descriptions('Driving_HighSpeed-Dongtan', 'Percentage_SpecIn_Speed(20Km/h)', '2022-01-01','2023-12-30')
-
-
 
 create or replace function max_metrics(category text, metric text = NULL, start_date DATE = NULL, end_date DATE = NULL)
 returns text
@@ -1260,7 +1260,7 @@ But I do not know how to execute it
 ### How do I get a list of column names from a psycopg2 cursor ?
 
 https://stackoverflow.com/questions/10252247/how-do-i-get-a-list-of-column-names-from-a-psycopg2-cursor
-```
+```python
 curs.execute("Select * FROM people LIMIT 0")
 cursor.fetchone()
 colnames = [desc[0] for desc in curs.description]
@@ -1303,7 +1303,7 @@ https://pglocks.org/ PG locks
 https://habr.com/ru/articles/756074/ PG columns alighnments
 
 https://habr.com/ru/articles/753192/
-```
+```sql
 create table order_data (
 	order_date date,
 	sales integer
@@ -1348,7 +1348,7 @@ https://luis-sena.medium.com/tuning-your-postgresql-for-high-performance-5580abe
 
 ### All constraints for given table:
 https://reside-ic.github.io/blog/querying-for-foreign-key-constraints/
-```
+```sql
 
 WITH unnested_confkey AS (
   SELECT oid, unnest(confkey) as confkey
@@ -1389,7 +1389,7 @@ https://stackoverflow.com/questions/5347050/postgresql-sql-script-to-get-a-list-
 
 https://dataedo.com/kb/query/postgresql/list-all-tables-refrenced-by-specific-table
 
-```
+```sql
 SELECT
     r.table_name, 
     u.table_name,
@@ -1410,7 +1410,7 @@ WHERE
 ```
 
 ### Find long-running query
-```
+```sql
 SELECT
   pid,
   now() - pg_stat_activity.query_start AS duration,
@@ -1422,34 +1422,34 @@ WHERE (now() - pg_stat_activity.query_start) > interval '5 minutes';
 
 ### How to find currently running SQL and kill it?
 https://www.sheshbabu.com/posts/killing-long-running-queries-in-postgres/   Killing long running queries in Postgres
-```
-To find all the queries that are currently running:
 
+To find all the queries that are currently running:
+```sql
 SELECT
     pid,
     AGE(NOW(), query_start),
     query
-FROM
-    pg_stat_activity
-WHERE
-    query_start IS NOT NULL
-ORDER BY
-    age DESC
-The above will list all the running queries with its pid, age and query, where age is how long the query has been running.
+FROM pg_stat_activity
+WHERE query_start IS NOT NULL
+ORDER BY age DESC
+```
+The above will list all the running queries with its pid, age and query,  
+where age is how long the query has been running.
 
 To cancel a specific query, pass its pid to pg_cancel_backend:
 
 SELECT pg_cancel_backend(pid)
+
 For example, if pid is 29212:
 
 SELECT pg_cancel_backend(29212)
+
 Note that sometimes pg_cancel_backend doesn’t work. In such cases, you will need to wait for the query to finish.
 
-```
 
 Killing a query:
 
-```
+```sql
 SELECT * FROM pg_stat_activity WHERE state = 'active';
 So you can identify the PID of the hanging query you want to terminate, run this:
 
@@ -1480,7 +1480,7 @@ https://www.postgresql.org/docs/current/ddl-partitioning.html#DDL-PARTITIONING-D
 <https://habr.com/ru/company/barsgroup/blog/481694/> Partitioning
 
 the upper bound is exclusive  !!!
-```
+```sql
 CREATE TABLE t ( i int,  d DATE NOT NULL) PARTITION BY RANGE(d);
 CREATE TABLE t_2022 PARTITION OF t for values from ('2022-01-01') to ('2023-01-01');
 CREATE TABLE t_2023 PARTITION OF t for values from ('2023-01-01') to ('2024-01-01');
@@ -1500,7 +1500,7 @@ and there is no way to enforce uniqueness across different indexes.
 both the primary key and unique keys need to include the partition key
 
 ### Unique constraint
-```
+```sql
 CREATE TABLE bar (
     pkey        SERIAL PRIMARY KEY,
     foo_fk      VARCHAR(256) NOT NULL REFERENCES foo(name), 
@@ -1536,7 +1536,7 @@ ALTER TABLE table_name ADD CONSTRAINT some_constraint PRIMARY KEY(COLUMN_NAME1,C
 
 ### FK constraint
  foreign key must reference columns that either are a primary key or form a unique constraint
-```
+```sql
 CREATE TABLE customers(
    customer_id INT GENERATED ALWAYS AS IDENTITY,
    customer_name VARCHAR(255) NOT NULL,
@@ -1594,9 +1594,10 @@ https://habr.com/ru/companies/tensor/articles/850522/
 https://habr.com/ru/companies/otus/articles/758010/
 
 https://stackoverflow.com/questions/53086816/postgresql-aggregate-multiple-rows-as-json-array-based-on-specific-column/53087015#53087015
-```
-I would like to generate a JSON output, consisting of arrays of arrays, whereas each of the inner arrays contains the aggregated points of a trip (as indicated by trip_log_id).
 
+How to generate a JSON output, consisting of arrays of arrays,   
+whereas each of the inner arrays contains the aggregated points of a trip (as indicated by trip_log_id).
+```sql
 SELECT json_agg(trips)
 FROM (
     SELECT 
@@ -1610,17 +1611,17 @@ FROM (
     FROM data_tracks
     GROUP by trip_log_id
 )s
-
+```
 1. json_build_object creates your main json objects
 2. json_agg() ... GROUP BY trip_log_id groups these json objects into one trip object
 3. second json_agg aggregates all trips into one array
-```
+ 
 ### PG dump / restore
 
 https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-pgdump-restore
 
 Vaccum before backup:  https://www.postgresql.org/docs/current/sql-vacuum.html
-```
+```sql
 select 
 schemaname,
 relname,
@@ -1641,11 +1642,7 @@ The dead_pct column in this query is the percentage of dead tuples when compar
 
 A high dead_pct value for a table might indicate that the table isn't being properly vacuumed.
 
-
- 
 vacuum(analyze, verbose) <table_name> 
-
-
 
 pg_restore is only compatible with compressed pg_dump files.
 
@@ -1700,7 +1697,6 @@ pg_dump -h  ip_here -d dbname -U username -Fc --file=mydump.custom_format
  psql -U {user-name} -d {desintation_db}-f {dumpfilename.sql}
 
 
-
 ### Tune Postgres
 
 https://wiki.postgresql.org/wiki/Don%27t_Do_This
@@ -1726,7 +1722,7 @@ https://pgtune.leopard.in.ua/
 ### Create users and roles
 
 https://chartio.com/learn/postgresql/create-a-user-with-pgadmin/
-```
+```sql
 CREATE DATABASE xxx
     WITH
     OWNER = postgres
@@ -1863,13 +1859,13 @@ https://medium.com/@amirziai/query-your-database-over-an-ssh-tunnel-with-pandas-
 
 https://stackoverflow.com/questions/21903411/enable-python-to-connect-to-mysql-via-ssh-tunnelling
 
-```
+```sql
 SELECT DAYNAME('2008-05-15')
 
 SELECT DAYOFWEEK(date)   1- Sunday 2 - Monday
 ```
 Generate time series
-```
+```sql
 select adddate('2020-01-01',  INTERVAL 1 HOUR)    
 ----------
 select date from (
@@ -1963,13 +1959,9 @@ To have launchd start postgresql now and restart at login:
   brew services start postgresql
 Or, if you don't want/need a background service you can just run:
   pg_ctl -D /usr/local/var/postgres start
-```  
-https://pgdash.io/blog/postgres-tips-and-tricks.html?p
+```
 
-
-
-
-
+<https://pgdash.io/blog/postgres-tips-and-tricks.html>
 
 <https://news.ycombinator.com/item?id=22718466> what is schema vs database in Postgres?
 
@@ -2089,7 +2081,7 @@ https://habr.com/ru/post/481122/
 <https://habr.com/ru/post/483460/> . Windows functions
 
 <https://www.postgresql.org/docs/12/functions-aggregate.html>
-```
+```sql
 select
     generate_series(1, 10) x,
     generate_series(4, 31, 3) y
@@ -2330,7 +2322,7 @@ https://severalnines.com/blog/understanding-and-reading-postgresql-system-catalo
 
 ## Generate series
 
-```
+```sql
 -- создаем миллион случайных чисел и строк
 CREATE TABLE items AS
   SELECT
@@ -2340,7 +2332,7 @@ CREATE TABLE items AS
     generate_series(1,1000000);
  ```   
 
-```
+```sql
   create table t(a integer, b text, c boolean);
   insert into t(a,b,c)
   select s.id, chr((32+random()*94)::integer), random() < 0.01
@@ -2355,7 +2347,7 @@ CREATE TABLE items AS
 
 <https://news.ycombinator.com/item?id=15634953>
 
-```
+```sql
 select generate_series(1, 5);
 
 SELECT RANDOM() AS tracking_id FROM generate_series(1, 5)
@@ -2384,7 +2376,7 @@ https://severalnines.com/blog/using-kubernetes-deploy-postgresql
 
 ##  STORED PROCEDURES
 <https://www.postgresql.org/docs/11/plpgsql-control-structures.html>
-```
+```sql
 select n.nspname as schema_name,
        p.proname as specific_name,
        case p.prokind 
@@ -2413,8 +2405,8 @@ order by schema_name,
 ## Trigger
 <https://medium.com/@deb3007/trigger-function-in-postgresql-22e118bb082d>
 
-## SQL
-```
+## SQL  select distinct on
+```sql 
 select distinct on (s.device_id) s.time, d.group_name, s.value 
 from sensor_values s 
 JOIN device_info d ON s.device_id=d.device_id 
@@ -2437,9 +2429,9 @@ ORDER BY s.device_id, time DESC;
 <https://stackoverflow.com/questions/56863332/database-design-for-time-series>
 
 <https://bytefish.de/blog/postgresql_interpolation/>
-```
-look for gaps in data greater than 1 hour.
 
+#### Find out  the gaps in data greater than 1 hour.
+```sql
 CREATE OR REPLACE FUNCTION sample.datediff_seconds(start_t TIMESTAMP, end_t TIMESTAMP)
 RETURNS DOUBLE PRECISION AS $$
     SELECT EXTRACT(epoch FROM $2 - $1) 
@@ -2509,7 +2501,7 @@ PostgreSQL FIRST_VALUE Function
 ```
 
 ## LAG LEAD
-```
+```sql
 DROP TABLE IF EXISTS weather;
 
 CREATE TEMP TABLE weather(date date, temperature numeric);
@@ -2529,7 +2521,7 @@ SELECT date, temperature,
 FROM weather ORDER BY date;
 ```
 
-```
+```sql
 CREATE TABLE pay_history (
     employee_id int,
     fiscal_year INT,
@@ -2610,7 +2602,7 @@ select time from tracking where time < '06-12-2019 23:00';
 ```
 
 ## Geometric data Types
-```
+```sql
 CREATE TABLE GEO(
   p POINT,
   b BOX,
@@ -2635,7 +2627,7 @@ SELECT sum(n) FROM t;
 ### VIEW with parameters?
 
 set returning function:
-```
+```sql
 create or replace function label_params(parm1 text, parm2 text)
   returns table (param_label text, param_graphics_label text)
 as
@@ -2678,7 +2670,7 @@ SELECT ROW_TO_JSON(table_name) FROM table_name
 
 json_to_recordset()
 <https://dba.stackexchange.com/questions/98191/postgresql-json-data-type-used-as-nosql-but-view-as-relational-data-structure>
-```
+```sql
 create table jsontable ( id integer, data json );
 INSERT INTO jsontable VALUES (1,
   '[{"a": 1, "b": 2}, {"a": 3, "b":2}]');
@@ -2698,7 +2690,7 @@ group by id
 
 
 
-```
+```sql
 CREATE TABLE X(
   id serial PRIMARY KEY,
   j JSONB
@@ -2725,7 +2717,7 @@ Same outcome for 2 SQL's above
 
  
 ### Arrays
-```
+```sql
 CREATE TABLE people
  (
   id serial,
@@ -2757,7 +2749,7 @@ insert into people (name, points) values (
  
 ``` 
 ### array_agg() concatenates all the input values into a PostgreSQL array.
-```
+```sql
 drop table data;
 create table data (sensor_id INT, date date, value numeric, name TEXT );
 insert into data values(1, '2014-07-06', 86, 'A1');
@@ -2806,7 +2798,7 @@ SELECT postgis_full_version();
 
 <https://www.postgis.us/presentations/FOSS4G2017_PostGISSpatialTricks.pdf>
 
-```
+```sql
 CREATE TABLE m_polygon (id SERIAL PRIMARY KEY, bounds POLYGON);
 INSERT INTO m_polygon(bounds) VALUES( 
   '(0.0, 0.0),  (0.0, 10.0), (10.0, 0.0), (10.0, 10.0), (0,0)' 
@@ -2908,12 +2900,12 @@ This is a collection of surfaces, which can be (linear) polygons or curve polygo
 
 <https://hub.docker.com/r/mdillon/postgis/>
 
-```
-Common Spatial Queries
+
+#### Common Spatial Queries
 You may view more of these in my intro to Visualizing Geospatial Data with CartoDB.
 
 Find all polygons from dataset A that intersect points from dataset B:
-
+```sql
 SELECT a.*
 FROM table_a_polygons a, table_b_points b
 WHERE ST_Intersects(a.the_geom, b.the_geom);
@@ -2938,6 +2930,7 @@ st_contains(
    'Point(-73.917104 40.694827)', 4326
   )      
 );
+
 Counting points inside a polygon:
 
 With ST_Containts():
@@ -2948,6 +2941,7 @@ AS total
 FROM us_counties JOIN quakes
 ON st_contains(us_counties.the_geom,quakes.the_geom)
 GROUP BY us_counties.cartodb_id;
+
 To update a column from table A with the number of points from table B that intersect table A's polygons:
 
 update noise.hoods set num_complaints = (
@@ -2983,7 +2977,7 @@ WHERE b.gid IS NULL;
 
 ```
 <https://gis.stackexchange.com/questions/192022/saving-array-of-objects-in-postgis-field>
-```
+```json
 {"type":"FeatureCollection","totalFeatures":1,"features":[
       {"type":"Feature",
        "id":1,"geometry":
@@ -3007,7 +3001,8 @@ WHERE b.gid IS NULL;
           },
   ]
 }
-
+```
+```sql
 CREATE TABLE spatial_table (
     name VARCHAR(20),
     timestamps timestamp[],
@@ -3045,9 +3040,8 @@ INSERT INTO geotable ( the_geom, the_name )
   UPDATE artwork SET where_is = ST_POINT(X, Y);
 
 
-```
-create a new table for data from a CSV that has lat and lon columns:
-
+#### create a   table for data from a CSV that has lat and lon columns:
+```sql
 create table noise.locations
 (                                     
 name varchar(100),
@@ -3057,28 +3051,33 @@ lat float8,
 lon float8,
 geom geometry(POINT, 4326)
 );
-inputing values for the geometry type after loading data from a CSV:
+ 
+-- inputing values for the geometry type after loading data from a CSV:
 update noise.locations set the_geom = ST_SetSRID(ST_MakePoint(lon, lat), 4326);
 
-adding a geometry column in a non-spatial table:
+-- adding a geometry column in a non-spatial table:
 select addgeometryColumn('table_name', 'geom', 4326, 'POINT', 2);
 
-calculating area in EPSG 4326:
+-- calculating area in EPSG 4326:
 alter table noise.hoods set area = (select ST_Area(geom::geography));
 
 
 SELECT ST_MakePoint(longitude,latitude) as geom FROM list_points
-
-In order to use your new geometries with other PostGIS functions, you need to specify the coordinate system (SRID) of your points with the ST_SetSRID function. The most widely used system is SRID=4326; that is, GPS coordinates). If you have no idea where your data comes from, it’s probably this one.
+```
+In order to use your new geometries with other PostGIS functions,   
+you need to specify the coordinate system (SRID) of your points with the ST_SetSRID function.   
+The most widely used system is SRID=4326; that is, GPS coordinates).   
+If you have no idea where your data comes from, it’s probably this one.  
 
 So our request becomes:
 
-SELECT ST_SetSRID(ST_MakePoint(longitude,latitude),4326) as geom
-		 FROM list_points
-Sometimes you may want to convert your data to a specific coordinate system. 
-It is possible with the ST_Transform function, which moves the coordinates of a geometry from its current system to another one.
+SELECT ST_SetSRID(ST_MakePoint(longitude,latitude),4326) as geom FROM list_points
+   
+Sometimes you may want to convert your data to a specific coordinate system.   
+It is possible with the ST_Transform function,  
+which moves the coordinates of a geometry from its current system to another one.
 
-
+```sql
 SELECT ST_AsText(geom) as points FROM list_geom
 SELECT ST_X(geom) as longitude, ST_Y(geom) as latitude FROM list_geom
 
