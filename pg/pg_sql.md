@@ -1,5 +1,65 @@
-### Postgres Generate Series
+### SELECT DISTINCT ON (Postgres ONLY)
 
+<https://stackoverflow.com/questions/46566602/what-does-distinct-on-expression-do>
+
+<https://www.geekytidbits.com/postgres-distinct-on/>
+
+<https://hakibenita.com/the-many-faces-of-distinct-in-postgre-sql> 
+
+<https://www.yogeshchauhan.com/167/postgres/the-confusing-unique-and-useful-feature-in-postgres-distinct-on>
+
+<https://news.ycombinator.com/item?id=22625642>
+
+```sql
+SELECT DISTINCT ON (url) url, request_duration
+FROM logs
+ORDER BY url, timestamp DESC
+```
+It is  telling PostgreSQL to “put the logs into groups unique by url (ON (url)),   
+sort each of these groups by most recent (ORDER BY url, timestamp DESC)   
+and then return fields for the **first record** in each of these groups (url, request_duration).
+ 
+
+it is equvalent to:
+```sql
+WITH summary AS (
+    SELECT p.id, 
+           p.customer, 
+           p.total, 
+           ROW_NUMBER() OVER(PARTITION BY p.customer 
+                                 ORDER BY p.total DESC) AS rank
+      FROM PURCHASES p)
+ SELECT *
+   FROM summary
+ WHERE rank = 1
+```
+
+
+```sql 
+select distinct on (s.device_id) s.time, d.group_name, s.value 
+from sensor_values s 
+JOIN device_info d ON s.device_id=d.device_id 
+ORDER BY s.device_id, time DESC;
+```
+
+### FETCH FIRST several ROWS WITH TIES
+```sql
+ SELECT * 
+           FROM  t_test 
+           ORDER BY id 
+           FETCH FIRST 3 ROWS WITH TIES;
+
+select *  from employees
+order by salary desc
+fetch first 1 rows with ties;
+
+-- it is the same as: 
+select *  from employees
+where salary = (select max(salary) from employees);
+```
+
+
+### Postgres Generate Series
 
 ```sql
 SELECT * FROM generate_series(1, 5);
