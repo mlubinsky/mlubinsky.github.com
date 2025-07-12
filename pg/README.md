@@ -1988,26 +1988,6 @@ order by schema_name,
 
 <https://bytefish.de/blog/postgresql_interpolation/>
 
-#### Find out  the gaps in data greater than 1 hour.
-```sql
-CREATE OR REPLACE FUNCTION sample.datediff_seconds(start_t TIMESTAMP, end_t TIMESTAMP)
-RETURNS DOUBLE PRECISION AS $$
-    SELECT EXTRACT(epoch FROM $2 - $1) 
-$$ LANGUAGE SQL;
-
-SELECT  *
-FROM (SELECT 
-        weather_data.wban as wban, 
-        weather_data.datetime as current_datetime,                 
-        LAG(weather_data.datetime, 1, NULL) OVER (PARTITION BY weather_data.wban ORDER BY weather_data.datetime) AS previous_datetime
-     FROM sample.weather_data) lag_select
-WHERE sample.datediff_seconds (previous_datetime, current_datetime) > 3600;
-
-```
-
-<https://blog.hagander.net/finding-gaps-in-partitioned-sequences-203/> find gaps in sequences
-
-<https://blog.jooq.org/2019/04/24/using-ignore-nulls-with-sql-window-functions-to-fill-gaps/>
 
 <https://content.pivotal.io/blog/time-series-analysis-part-3-resampling-and-interpolation>
 
@@ -2025,9 +2005,9 @@ docker run -e PGPASSWORD="$(pbpaste)" --rm postgres psql -h www.example.com dbna
 
 <https://stackoverflow.com/questions/56552852/how-to-store-arrays-of-points-x-y-color-inside-postgres-array>
 
-<https://stackoverflow.com/questions/56863332/database-design-for-time-series>
 
-SELECT version();
+
+
 ```
 cat docker-compose.yml
 docker-compose up -d --no-deps --build postgrest
@@ -2045,120 +2025,6 @@ PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timesc
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_info"
 PGPASSWORD=changeme docker run -e PGPASSWORD=changeme -it --net=host --rm timescale/timescaledb psql -h localhost -U postgres -d timeseries -c "select * from sensor_values"
   ```
-## Functions
-```
-PostgreSQL NTILE Function
-PostgreSQL PERCENT_RANK Function
-PostgreSQL CUME_DIST Function
-PostgreSQL Sequences
-PostgreSQL LAG Function
-PostgreSQL LEAD Function
-PostgreSQL NTH_VALUE Function
-PostgreSQL LAST_VALUE Function
-PostgreSQL FIRST_VALUE Function
-```
-
-## LAG LEAD
-```sql
-DROP TABLE IF EXISTS weather;
-
-CREATE TEMP TABLE weather(date date, temperature numeric);
-
-INSERT INTO weather VALUES 
-('2014-07-06', 86), ('2014-07-07', 88), 
-('2014-07-08', 91), ('2014-07-09', 88), 
-('2014-07-10', 86), ('2014-07-11', 84), 
-('2014-07-12', 86), ('2014-07-13', 86);
-
-SELECT date, temperature FROM weather ORDER BY date;
-
-SELECT date, temperature, 
-       LAG(temperature, 1) OVER(ORDER BY date) as day_before, 
-       LEAD(temperature, 1) OVER(ORDER BY date) as day_after,
-       (temperature - LAG(temperature, 1) OVER(ORDER BY date)) as difference_from_day_before
-FROM weather ORDER BY date;
-```
-
-```sql
-CREATE TABLE pay_history (
-    employee_id int,
-    fiscal_year INT,
-    salary DECIMAL(10 , 2 ),
-    PRIMARY KEY (employee_id, fiscal_year)
-);
--- find both the current and previous year’s salary of all employees:
-SELECT 
-    employee_id, fiscal_year, salary,
-    LAG(salary) OVER (
-        PARTITION BY employee_id 
-        ORDER BY fiscal_year) previous_salary
-FROM
-    pay_history;
-```
-
-##  DateTime,  timestamp и timestamptz , timezones
-
-https://habr.com/ru/articles/772954/
-
-select now()::timestamp, now();
-
-SHOW timezone;
-
-<https://phili.pe/posts/timestamps-and-time-zones-in-postgresql/>
-
-<https://momjian.us/main/blogs/pgblog/2019.html#February_11_2019>
-
-<https://tech.codeyellow.nl/blog/pg-timezones/>
-
-<https://stackoverflow.com/questions/48069425/converting-between-timezones-in-postgre>
-SET timezone TO 'Europe/Zurich';
-SELECT now();
-All timezone-aware dates and times are stored internally in UTC.
-```
-SELECT '2016-01-01 00:00+10'::timestamptz;
-      timestamptz
-------------------------
- 2015-12-31 15:00:00+01
-``` 
-Timezone-aware dates and times are converted to local time in the zone specified by the TimeZone configuration parameter before being displayed to the client. 
- 
-This timezone configuration has another effect. When parsing a timestamp that has no time zone designator (e.g. Z or ±hhmm), it will be assumed to be local to the currently set timezone: 
-
-Don't use BETWEEN (especially with timestamps)! Why not?
-BETWEEN uses a closed-interval comparison: the values of both ends of the specified range are included in the result.
-This is a particular problem with queries of the form
-```
-SELECT * FROM blah WHERE timestampcol BETWEEN '2018-06-01' AND '2018-06-08'
-```
-This will include results where the timestamp is exactly 2018-06-08 00:00:00.000000, but not timestamps later in that same day. So the query might seem to work, but as soon as you get an entry exactly on midnight, you'll end up double-counting it.
-
-Instead, do:
-```
-SELECT * FROM blah WHERE timestampcol >= '2018-06-01' AND timestampcol < '2018-06-08'
-```
-<https://mode.com/blog/postgres-sql-date-functions>
-
-<https://dba.stackexchange.com/questions/185192/join-2-tables-by-closest-time-postgresql-9-6>
-approximate time match
-
-<https://habr.com/ru/company/postgrespro/blog/459236/> tsrange
-
-```
-select extract(dow from date '2016-12-18');      -- 0
-select extract(isodow from date '2016-12-18');   -- 7
-```
-SHOW datestyle;
-
-SET datestyle = "ISO, DMY";
-
-https://stackoverflow.com/questions/6123484/how-do-i-alter-the-date-format-in-postgres/6124387
-```
-Same outcome:
-select time from tracking where time < '2019-06-12 23:00';
-select time from tracking where time < '06-12-2019 23:00';
-
-```
-
 ## Geometric data Types
 ```sql
 CREATE TABLE GEO(
