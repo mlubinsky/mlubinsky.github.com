@@ -1,3 +1,6 @@
+### Postgres Aggregator
+<https://planet.postgresql.org/>
+
 ### Postgres Schema
 ```
 In Postgres, “public” is a Default schema.  
@@ -365,9 +368,9 @@ select * from (values \
 ```
 
 ### Python + Postgres
-<https://www.psycopg.org/docs/extras.html>  Python Driver
-
-https://techbeamers.com/python-connect-postgresql/
+<https://www.psycopg.org/docs/extras.html>  Python Driver  
+<https://khashtamov.com/en/postgresql-with-python-and-psycopg2/>  
+<https://techbeamers.com/python-connect-postgresql/>  
 
 https://www.psycopg.org/docs/usage.html#passing-parameters-to-sql-queries
 
