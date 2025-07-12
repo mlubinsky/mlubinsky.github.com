@@ -1,4 +1,4 @@
-### Decorators
+### Python Decorators
 
 https://habr.com/ru/articles/750312/
 
@@ -175,7 +175,7 @@ def my_function(x, y):
     return x + y
 ```    
 
-### Loggging decorator
+### Logging decorator
 https://towardsdatascience.com/python-decorators-for-data-science-6913f717669a
 
 https://jacobpadilla.com/articles/Functools-Deep-Dive
