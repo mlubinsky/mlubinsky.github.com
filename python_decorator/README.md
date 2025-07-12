@@ -4,14 +4,15 @@ https://habr.com/ru/articles/750312/
 
 https://habr.com/ru/articles/814217/
 ```
-The @dataclass decorator (introduced in Python 3.7) can automatically generate several special methods for a class, such as
+The @dataclass decorator (introduced in Python 3.7)
+can automatically generate several special methods for a class, such as
  __init__, __repr__, __eq__, __lt__, and so on.
 ```
 
-
+### Decorator @contextmanager
 
 Decorator @contextmanager returns object with automatically created  __enter__() и __exit__()
-```
+```python
 # scrapy\scrapy\utils\misc.py
 @contextmanager
 def set_environ(**kwargs):
@@ -30,11 +31,11 @@ def set_environ(**kwargs):
                 os.environ[k] = v
 
 # Usage
-…
+
 with set_environ(SCRAPY_CHECK='true'):
     for spidername in args or spider_loader.list():
         spidercls = spider_loader.load(spidername)
-…
+
 ```
 
 https://medium.com/techtofreedom/9-python-built-in-decorators-that-optimize-your-code-significantly-bc3f661e9017
@@ -59,7 +60,7 @@ If d is decorator it means :
 x = d(x)
 
 The d above should be callable: have method __call__
-```
+```python
 def printlog ( func ) :
   def wrapper (* args , ** kwargs ) :
       print (" CALLING : " + func . __name__ )
@@ -111,7 +112,7 @@ return wrapper
     
 ```
 ### Retry decorator
-```
+```python
 import time
 from functools import wraps
 
@@ -138,7 +139,7 @@ def call_dummy_api():
     return response
 ```
 ### Timing decorator
-```
+```python
 import time
 
 def timing_decorator(func):
@@ -166,7 +167,7 @@ INFO:root:Executing load_data
 INFO:root:Finished executing load_data
 ```
 ### Combining decorators
-```
+```python
 @log_execution
 @timing_decorator
 def my_function(x, y):
@@ -178,7 +179,7 @@ def my_function(x, y):
 https://towardsdatascience.com/python-decorators-for-data-science-6913f717669a
 
 https://jacobpadilla.com/articles/Functools-Deep-Dive
-```
+```python
 import logging
 import functools
 
