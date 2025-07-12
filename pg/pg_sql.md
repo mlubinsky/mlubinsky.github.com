@@ -19,6 +19,26 @@ To change a default schema at the user/role level, the “ALTER USER” or “AL
 ```sql
 ALTER ROLE|USER role_name SET search_path TO schema_name;
 ```
+### Create users and roles
+
+https://chartio.com/learn/postgresql/create-a-user-with-pgadmin/
+```sql
+CREATE DATABASE xxx
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+    
+CREATE DATABASE yourdbname;
+CREATE USER youruser WITH ENCRYPTED PASSWORD 'yourpass';
+GRANT ALL PRIVILEGES ON DATABASE yourdbname TO youruser;    
+
+```
+
+### Size of Postgres objects 
+
+SELECT pg_size_pretty(pg_relation_size('t_test'));
 
 ### All constraints for given table:
 https://reside-ic.github.io/blog/querying-for-foreign-key-constraints/
@@ -50,8 +70,9 @@ LEFT JOIN pg_attribute referenced_field ON (referenced_field.attrelid = c.confre
 WHERE tbl.relname ='PUT_TABLE_HERE'
 ;
 ```
-simple
-```
+Simple:
+
+```sql
 SELECT *
 FROM
    information_schema.table_constraints 
@@ -82,6 +103,75 @@ INNER JOIN information_schema.key_column_usage        r
 WHERE
     u.table_name = 'PUT_TABLE_NAME_HERE'
 ```
+
+
+### Unique constraint
+```sql
+CREATE TABLE bar (
+    pkey        SERIAL PRIMARY KEY,
+    foo_fk      VARCHAR(256) NOT NULL REFERENCES foo(name), 
+    name        VARCHAR(256) NOT NULL, 
+    UNIQUE (foo_fk,name)
+);
+
+ALTER TABLE tablename ADD CONSTRAINT constraintname UNIQUE (columns);
+```
+### Serial column
+https://stackoverflow.com/questions/244243/how-to-reset-postgres-primary-key-sequence-when-it-falls-out-of-sync
+
+
+```
+For serial column PostgreSQL will create a sequence with a name like tablename_colname_seq.
+ Default column values will be assigned from this sequence. But when you explicitly insert a value into serial column,
+it doesn’t affect sequence generator, and its next value will not change. So it can generate a duplicate value.
+
+To prevent this after you inserted explicit values you need to change
+the current value of a sequence generator either with ALTER SEQUENCE statement or with setval() function, e.g.:
+
+ALTER SEQUENCE tablename_colname_seq RESTART WITH 52;
+SELECT setval('tablename_colname_seq', (SELECT max(colname) FROM tablename));
+```
+If you do noit know the seq name then use this:
+```
+SELECT setval(pg_get_serial_sequence('tbl', 'tbl_id'), max(tbl_id)) FROM tbl;
+```
+
+### Primary key
+
+ALTER TABLE table_name ADD CONSTRAINT some_constraint PRIMARY KEY(COLUMN_NAME1,COLUMN_NAME2);
+
+### FK constraint
+ foreign key must reference columns that either are a primary key or form a unique constraint
+```sql
+CREATE TABLE customers(
+   customer_id INT GENERATED ALWAYS AS IDENTITY,
+   customer_name VARCHAR(255) NOT NULL,
+   PRIMARY KEY(customer_id)
+);
+
+CREATE TABLE contacts(
+   contact_id INT GENERATED ALWAYS AS IDENTITY,
+   customer_id INT,
+   contact_name VARCHAR(255) NOT NULL,
+   phone VARCHAR(15),
+   email VARCHAR(100),
+   PRIMARY KEY(contact_id),
+   CONSTRAINT fk_customer
+      FOREIGN KEY(customer_id) 
+	  REFERENCES customers(customer_id)
+);
+
+Because the foreign key constraint does not have the ON DELETE and ON UPDATE action, they default to NO ACTION.
+```
+
+The RESTRICT action is similar to the NO ACTION. The difference only arises when you define the foreign key constraint as DEFERRABLE with an INITIALLY DEFERRED or INITIALLY IMMEDIATE mode.
+
+ON DELETE SET NULL
+
+ON DELETE CASCADE
+
+ON DELETE SET DEFAULT
+
 
 ### Find long-running query
 ```sql
