@@ -23,15 +23,12 @@ and then return fields for the **first record** in each of these groups (url, re
 it is equvalent to:
 ```sql
 WITH summary AS (
-    SELECT p.id, 
-           p.customer, 
-           p.total, 
+    SELECT p.id,  p.customer,   p.total, 
            ROW_NUMBER() OVER(PARTITION BY p.customer 
-                                 ORDER BY p.total DESC) AS rank
-      FROM PURCHASES p)
- SELECT *
-   FROM summary
- WHERE rank = 1
+    ORDER BY p.total DESC) AS rank
+    FROM PURCHASES p
+)
+SELECT * FROM summary WHERE rank = 1
 ```
 
 
@@ -57,6 +54,29 @@ fetch first 1 rows with ties;
 select *  from employees
 where salary = (select max(salary) from employees);
 ```
+
+### DELETING IN BATCHES
+
+https://www.geekytidbits.com/batch-deletes-in-postgres/
+```sql
+DELETE FROM my_table
+WHERE id IN (
+  SELECT id
+  FROM my_table
+  WHERE created_at < now() - interval '30 days'
+  -- Delete only 1000 rows at a time:
+  LIMIT 1000
+);
+```
+### SELECT FROM VALUES
+```sql
+select * from (values \
+('S21', 'SM-G991N'), \
+('S21', 'SM-G996N'), \
+('S24', 'SM-S9260') \
+)as t(device, dut_model))
+```
+
 
 
 ### Postgres Generate Series
