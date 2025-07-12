@@ -22,6 +22,22 @@ To change a default schema at the user/role level, the “ALTER USER” or “AL
 ```sql
 ALTER ROLE|USER role_name SET search_path TO schema_name;
 ```
+
+<https://www.cybertec-postgresql.com/en/tracking-view-dependencies-in-postgresql/>
+
+<http://www.postgresqltutorial.com/postgresql-schema/>
+
+<https://clarkdave.net/2015/06/aggregate-queries-across-postgresql-schemas/>
+
+<https://severalnines.com/blog/postgresql-schema-management-basics>
+
+<https://info.crunchydata.com/blog/demystifying-schemas-search_path-through-examples>
+
+### Indexes for given table: 
+```
+select * from pg_indexes where tablename  = 'tracking';
+```
+
 ### Create users and roles
 
 https://chartio.com/learn/postgresql/create-a-user-with-pgadmin/
@@ -177,6 +193,9 @@ ON DELETE SET DEFAULT
 
 
 ### Find long-running query
+
+<https://fosdem.org/2020/schedule/event/postgresql_find_your_slow_queries_and_fix_them/>
+
 ```sql
 SELECT
   pid,
@@ -372,9 +391,14 @@ select * from (values \
 <https://khashtamov.com/en/postgresql-with-python-and-psycopg2/>  
 <https://techbeamers.com/python-connect-postgresql/>  
 
-https://www.psycopg.org/docs/usage.html#passing-parameters-to-sql-queries
+<https://www.pgcli.com/> pgcli instead psql
+<https://hakibenita.com/fast-load-data-python-postgresql>
 
-https://python.plainenglish.io/demystifying-database-interactions-with-psycopg3-a-practical-guide-54f60d268211
+<https://news.ycombinator.com/item?id=20399294>
+
+<https://www.psycopg.org/docs/usage.html#passing-parameters-to-sql-queries>
+
+<https://python.plainenglish.io/demystifying-database-interactions-with-psycopg3-a-practical-guide-54f60d268211>
 
 ### Insert one record at the time:
 ```sql
