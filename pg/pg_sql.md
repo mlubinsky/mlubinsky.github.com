@@ -1,6 +1,8 @@
 ### Postgres Aggregator
 <https://planet.postgresql.org/>
 
+SELECT version();
+
 ### Postgres Schema
 ```
 In Postgres, “public” is a Default schema.  
@@ -33,10 +35,7 @@ ALTER ROLE|USER role_name SET search_path TO schema_name;
 
 <https://info.crunchydata.com/blog/demystifying-schemas-search_path-through-examples>
 
-### Indexes for given table: 
-```
-select * from pg_indexes where tablename  = 'tracking';
-```
+
 
 ### Create users and roles
 
@@ -58,6 +57,11 @@ GRANT ALL PRIVILEGES ON DATABASE yourdbname TO youruser;
 ### Size of Postgres objects 
 
 SELECT pg_size_pretty(pg_relation_size('t_test'));
+
+### Indexes for given table: 
+```
+select * from pg_indexes where tablename  = 'tracking';
+```
 
 ### All constraints for given table:
 https://reside-ic.github.io/blog/querying-for-foreign-key-constraints/
@@ -93,9 +97,8 @@ Simple:
 
 ```sql
 SELECT *
-FROM
-   information_schema.table_constraints 
-   WHERE table_name='PUT_TABLE_NAME_HERE' 
+FROM information_schema.table_constraints 
+WHERE table_name='PUT_TABLE_NAME_HERE' 
 ```   
 ### Find all tables which are referencing the given table
 
@@ -123,7 +126,6 @@ WHERE
     u.table_name = 'PUT_TABLE_NAME_HERE'
 ```
 
-
 ### Unique constraint
 ```sql
 CREATE TABLE bar (
@@ -136,8 +138,7 @@ CREATE TABLE bar (
 ALTER TABLE tablename ADD CONSTRAINT constraintname UNIQUE (columns);
 ```
 ### Serial column
-https://stackoverflow.com/questions/244243/how-to-reset-postgres-primary-key-sequence-when-it-falls-out-of-sync
-
+<https://stackoverflow.com/questions/244243/how-to-reset-postgres-primary-key-sequence-when-it-falls-out-of-sync>
 
 ```
 For serial column PostgreSQL will create a sequence with a name like tablename_colname_seq.
@@ -150,7 +151,7 @@ the current value of a sequence generator either with ALTER SEQUENCE statement o
 ALTER SEQUENCE tablename_colname_seq RESTART WITH 52;
 SELECT setval('tablename_colname_seq', (SELECT max(colname) FROM tablename));
 ```
-If you do noit know the seq name then use this:
+If you do not know the seq name then use this:
 ```
 SELECT setval(pg_get_serial_sequence('tbl', 'tbl_id'), max(tbl_id)) FROM tbl;
 ```
@@ -207,7 +208,8 @@ WHERE (now() - pg_stat_activity.query_start) > interval '5 minutes';
 ```
 
 ### How to find currently running SQL and kill it?
-https://www.sheshbabu.com/posts/killing-long-running-queries-in-postgres/   Killing long running queries in Postgres
+https://www.sheshbabu.com/posts/killing-long-running-queries-in-postgres/   
+ 
 
 To find all the queries that are currently running:
 ```sql
@@ -247,6 +249,154 @@ SELECT pg_terminate_backend(PID);
 ```
 
 
+##  DateTime,  timestamp и timestamptz , timezones
+
+https://habr.com/ru/articles/772954/
+
+select now()::timestamp, now();
+
+SHOW timezone;
+
+<https://phili.pe/posts/timestamps-and-time-zones-in-postgresql/>
+
+<https://momjian.us/main/blogs/pgblog/2019.html#February_11_2019>
+
+<https://tech.codeyellow.nl/blog/pg-timezones/>
+
+<https://stackoverflow.com/questions/48069425/converting-between-timezones-in-postgre>
+```sql
+SET timezone TO 'Europe/Zurich';
+SELECT now();
+```
+All timezone-aware dates and times are stored internally in UTC.
+```sql
+SELECT '2016-01-01 00:00+10'::timestamptz;
+      timestamptz
+------------------------
+ 2015-12-31 15:00:00+01
+``` 
+Timezone-aware dates and times are converted to local time   
+in the zone specified by the TimeZone configuration parameter before being displayed to the client. 
+ 
+This timezone configuration has another effect. When parsing a timestamp that has no time zone designator   
+(e.g. Z or ±hhmm), it will be assumed to be local to the currently set timezone: 
+
+Don't use BETWEEN (especially with timestamps)! Why not?
+BETWEEN uses a closed-interval comparison:   
+the values of both ends of the specified range are included in the result.  
+This is a particular problem with queries of the form
+```sql
+SELECT * FROM blah WHERE timestampcol BETWEEN '2018-06-01' AND '2018-06-08'
+```
+This will include results where the timestamp is exactly 2018-06-08 00:00:00.000000,  
+but not timestamps later in that same day. 
+So the query might seem to work, but as soon as you get an entry exactly on midnight,   
+you'll end up double-counting it.
+
+Instead, do:
+```sql
+SELECT * FROM blah WHERE timestampcol >= '2018-06-01' AND timestampcol < '2018-06-08'
+```
+<https://mode.com/blog/postgres-sql-date-functions>
+
+<https://dba.stackexchange.com/questions/185192/join-2-tables-by-closest-time-postgresql-9-6>
+approximate time match
+
+<https://habr.com/ru/company/postgrespro/blog/459236/> tsrange
+
+```sql
+select extract(dow from date '2016-12-18');      -- 0
+select extract(isodow from date '2016-12-18');   -- 7
+ 
+SHOW datestyle;
+
+SET datestyle = "ISO, DMY";
+```
+https://stackoverflow.com/questions/6123484/how-do-i-alter-the-date-format-in-postgres/6124387
+```
+Same outcome:
+```sql
+select time from tracking where time < '2019-06-12 23:00';
+select time from tracking where time < '06-12-2019 23:00';
+```
+
+
+
+
+
+
+### Window Functions
+```
+PostgreSQL NTILE Function
+PostgreSQL PERCENT_RANK Function
+PostgreSQL CUME_DIST Function
+PostgreSQL Sequences
+PostgreSQL LAG Function
+PostgreSQL LEAD Function
+PostgreSQL NTH_VALUE Function
+PostgreSQL LAST_VALUE Function
+PostgreSQL FIRST_VALUE Function
+```
+
+#### LAG LEAD
+```sql
+DROP TABLE IF EXISTS weather;
+
+CREATE TEMP TABLE weather(date date, temperature numeric);
+
+INSERT INTO weather VALUES 
+('2014-07-06', 86), ('2014-07-07', 88), 
+('2014-07-08', 91), ('2014-07-09', 88), 
+('2014-07-10', 86), ('2014-07-11', 84), 
+('2014-07-12', 86), ('2014-07-13', 86);
+
+SELECT date, temperature FROM weather ORDER BY date;
+
+SELECT date, temperature, 
+       LAG(temperature, 1) OVER(ORDER BY date) as day_before, 
+       LEAD(temperature, 1) OVER(ORDER BY date) as day_after,
+       (temperature - LAG(temperature, 1) OVER(ORDER BY date)) as difference_from_day_before
+FROM weather ORDER BY date;
+```
+
+```sql
+CREATE TABLE pay_history (
+    employee_id int,
+    fiscal_year INT,
+    salary DECIMAL(10 , 2 ),
+    PRIMARY KEY (employee_id, fiscal_year)
+);
+-- find both the current and previous year’s salary of all employees:
+SELECT 
+    employee_id, fiscal_year, salary,
+    LAG(salary) OVER (
+        PARTITION BY employee_id 
+        ORDER BY fiscal_year) previous_salary
+FROM
+    pay_history;
+```
+
+
+#### Find out the gaps in data greater than 1 hour:
+```sql
+CREATE OR REPLACE FUNCTION sample.datediff_seconds(start_t TIMESTAMP, end_t TIMESTAMP)
+RETURNS DOUBLE PRECISION AS $$
+    SELECT EXTRACT(epoch FROM $2 - $1) 
+$$ LANGUAGE SQL;
+
+SELECT  *
+FROM (SELECT 
+        weather_data.wban as wban, 
+        weather_data.datetime as current_datetime,                 
+        LAG(weather_data.datetime, 1, NULL) OVER (PARTITION BY weather_data.wban ORDER BY weather_data.datetime) AS previous_datetime
+     FROM sample.weather_data) lag_select
+WHERE sample.datediff_seconds (previous_datetime, current_datetime) > 3600;
+
+```
+
+<https://blog.hagander.net/finding-gaps-in-partitioned-sequences-203/> find gaps in sequences
+
+<https://blog.jooq.org/2019/04/24/using-ignore-nulls-with-sql-window-functions-to-fill-gaps/>
 
 
 ### SELECT DISTINCT ON (Postgres ONLY)
