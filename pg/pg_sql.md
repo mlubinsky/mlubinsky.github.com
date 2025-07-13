@@ -2,19 +2,28 @@
 
 ### Postgres Aggregator
 <https://planet.postgresql.org/>
-
+```sql
 SELECT version();
-
-### Postgres Schema
+SELECT name, setting, unit, short_desc FROM pg_settings 
+```
+### Postgres Databases
+```sql
+SELECT datname, datdba, encoding, datcollate, datctype, datistemplate
+FROM pg_database
+WHERE datistemplate = false;
+```
+### Postgres Schemas
 ```
 In Postgres, “public” is a Default schema.  
 So, by default, Postgres users can access the "public" schema and create objects in it,  
-such as views, tables, etc.
+such as views, tables, etc.  
+The current schema is the first one in the search_path  
+The SET SEARCH_PATH command, however, allows a user to set any other schema as the default schema.  
 
-The SET SEARCH_PATH command, however, allows a user to set any other schema as the default schema. 
-
+```sql
 SHOW SEARCH_PATH;
 SET SEARCH_PATH = example;
+SELECT current_schema();
 ```
 How to Change Default Schema Permanently at the Database Level?
 ```sql
