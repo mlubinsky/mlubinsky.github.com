@@ -15,7 +15,23 @@ Add a _config.yml file in your repository with:
 theme: jekyll-theme-minimal  
 GitHub will automatically apply the theme and generate pages.
 
+### Collapsible  text in markdown
+GitHub / GitLab / Jekyll (HTML-in-Markdown supported)
+You can use <details> and <summary>:
+```
+<details>
+<summary>Click to expand</summary>
 
+Here is some hidden content.
+
+- Bullet point 1
+- Bullet point 2
+
+</details>
+
+Output (on platforms that support it):
+<details> <summary>Click to expand</summary>
+```
 ### Jekyll Supported themes:
 
 1. jekyll-theme-minimal  
