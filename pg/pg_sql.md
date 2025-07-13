@@ -8,10 +8,15 @@ SELECT name, setting, unit, short_desc FROM pg_settings
 ```
 ### Postgres Databases
 ```sql
-SELECT datname, datdba, encoding, datcollate, datctype, datistemplate
-FROM pg_database
-WHERE datistemplate = false;
+SELECT
+    d.datname AS database_name,
+    pg_catalog.pg_get_userbyid(d.datdba) AS owner,
+    pg_size_pretty(pg_database_size(d.datname)) AS size
+FROM pg_database d
+WHERE d.datistemplate = false
+ORDER BY pg_database_size(d.datname) DESC;
 ```
+Here datistemplate = false filters out template databases like template0 and template1.
 ### Postgres Schemas
 ```
 In Postgres, “public” is a Default schema.  
