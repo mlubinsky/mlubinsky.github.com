@@ -35,25 +35,27 @@ INSERT INTO m_polygon(bounds) VALUES(
 );
 
 SELECT ST_WITHIN(m_polygon.bounds , m_polygon.bounds ) FROM m_polygon;
-
+```
 ERROR:  function st_within(polygon, polygon) does not exist 
 HINT:  No function matches the given name and argument types. You might 
 need to add explicit type casts.
 
 The following works:
-
+```sql
 SELECT ST_WITHIN(ST_MakePoint(1,1), ST_MakePoint(1,1) ) ;
-
+```
 Answer:
-POLYGON is Postgres native type. Geometry is the type used in PostGIS. ST_... functions are Postgis functions.
+POLYGON is Postgres native type. Geometry is the type used in PostGIS.  
+ST_... functions are Postgis functions.
 
 Note that you can restrict a PostGIS geometry to a specific subtype (geometry(POLYGON))
 If you don't want PostGIS, you would need to use native geometry operators.
-```
+ 
 <https://www.postgresql.org/docs/current/functions-geometry.html>
-```
-If you are to use spatial data, and since you already have PostGIS, it is much better to switch to true geometries:
-
+ 
+If you are to use spatial data, and since you already have PostGIS,   
+it is much better to switch to true geometries:
+```sql
 CREATE TABLE m_polygon (id SERIAL PRIMARY KEY, bounds geometry(POLYGON));
 INSERT INTO m_polygon(bounds) VALUES( 
   st_geomFromText('POLYGON((0.0 0.0, 0.0 10.0, 10.0 0.0, 10.0 10.0, 0 0))') 
@@ -64,14 +66,14 @@ SELECT ST_WITHIN(m_polygon.bounds , m_polygon.bounds ) FROM m_polygon;
 <https://stackoverflow.com/questions/42106271/geoalchemy2-st-within-type-mismatch-between-point-and-polygon>
 <https://coder1.com/articles/postgis-query-point-within-polygon>
 
-```
+ 
 Possible solution: cast the Geography as a Geometry in the query because ST_Within,
  do not support geographies, they only support geometries).
-```
+ 
 <http://www.postgis.net/docs/ST_GeomFromText.html>
 <http://www.postgis.net/docs/ST_GeogFromText.html>
 <https://gis.stackexchange.com/questions/284991/how-do-i-construct-a-geometry-point-in-srid-4326-from-lat-and-long/284994>
-```
+```sql
 ST_Within(CAST (Store.location, Geometry), 
          ST_GeomFromEWKT('SRID=4326;POLYGON((150 -33, 152 -33, 152 -31, 150 -31, 150 -33))')
 ```
@@ -84,7 +86,7 @@ ST_Within(CAST (Store.location, Geometry),
 <https://postgis.net/docs/> \
 <http://postgis.net/workshops/postgis-intro/geometries.html#collections>
 
-4.1.3. SQL-MM Part 3
+#### SQL-MM Part 3
 The SQL Multimedia Applications Spatial specification extends the simple features for SQL spec by
 defining a number of circularly interpolated curves.
 The SQL-MM definitions include 3DM, 3DZ and 4D coordinates, 
@@ -95,17 +97,24 @@ CIRCULARSTRING(0 0, 1 1, 1 0)
 CIRCULARSTRING(0 0, 4 0, 4 4, 0 4, 0 0)
 
 The CIRCULARSTRING is the basic curve type, similar to a LINESTRING in the linear world. 
-A single segment required three points, the start and end points (first and third) and any other point on the arc. The exception to this is for a closed circle, where the start and end points are the same. In this case the second point MUST be the center of the arc, ie the opposite side of the circle. To chain arcs together, the last point of the previous arc becomes the first point of the next arc, just like in LINESTRING. This means that a valid circular string must have an odd number of points greater than 1.
+A single segment required three points, the start and end points (first and third) and any other point on the arc.   
+
+The exception to this is for a closed circle, where the start and end points are the same.   
+In this case the second point MUST be the center of the arc, ie the opposite side of the circle.  
+To chain arcs together, the last point of the previous arc becomes the first point of the next arc, just like in LINESTRING.   
+This means that a valid circular string must have an odd number of points greater than 1.
 
 COMPOUNDCURVE(CIRCULARSTRING(0 0, 1 1, 1 0),(1 0, 0 1))
 
-A compound curve is a single, continuous curve that has both curved (circular) segments and linear segments. That means that in addition to having well-formed components, the end point of every component (except the last) must be coincident with the start point of the following component.
+A compound curve is a single, continuous curve that has both curved (circular) segments and linear segments.   
+That means that in addition to having well-formed components, the end point of every component (except the last) must be coincident with the start point of the following component.
 
 CURVEPOLYGON(CIRCULARSTRING(0 0, 4 0, 4 4, 0 4, 0 0),(1 1, 3 3, 3 1, 1 1))
 
 Example compound curve in a curve polygon: CURVEPOLYGON(COMPOUNDCURVE(CIRCULARSTRING(0 0,2 0, 2 1, 2 3, 4 3),(4 3, 4 5, 1 4, 0 0)), CIRCULARSTRING(1.7 1, 1.4 0.4, 1.6 0.4, 1.6 0.5, 1.7 1) )
 
-A CURVEPOLYGON is just like a polygon, with an outer ring and zero or more inner rings. The difference is that a ring can take the form of a circular string, linear string or compound string.
+A CURVEPOLYGON is just like a polygon, with an outer ring and zero or more inner rings.   
+The difference is that a ring can take the form of a circular string, linear string or compound string.
 
 As of PostGIS 1.4 PostGIS supports compound curves in a curve polygon.
 
@@ -115,10 +124,7 @@ The MULTICURVE is a collection of curves, which can include linear strings, circ
 
 MULTISURFACE(CURVEPOLYGON(CIRCULARSTRING(0 0, 4 0, 4 4, 0 4, 0 0),(1 1, 3 3, 3 1, 1 1)),((10 10, 14 12, 11 10, 10 10),(11 11, 11.5 11, 11 11.5, 11 11)))
 
-This is a collection of surfaces, which can be (linear) polygons or curve polygons.
-```
-
-
+ 
 
 <https://postgis.net/docs/manual-2.5/postgis_installation.html#install_short_version>
 
@@ -150,7 +156,8 @@ ST_Intersects(
   ),
   nyc_tenants_rights_service_areas.the_geom    
 );
-Or using ST_Contains:
+
+-- Or using ST_Contains:
 
 SELECT * FROM nyc_tenants_rights_service_areas
 where
@@ -161,7 +168,7 @@ st_contains(
   )      
 );
 
-Counting points inside a polygon:
+-- Counting points inside a polygon:
 
 With ST_Containts():
 
@@ -172,7 +179,8 @@ FROM us_counties JOIN quakes
 ON st_contains(us_counties.the_geom,quakes.the_geom)
 GROUP BY us_counties.cartodb_id;
 
-To update a column from table A with the number of points from table B that intersect table A's polygons:
+-- To update a column from table A with the number of points from table B
+-- that intersect table A's polygons:
 
 update noise.hoods set num_complaints = (
 	select count(*)
@@ -183,15 +191,15 @@ update noise.hoods set num_complaints = (
 		noise.hoods.geom
 	)
 );
-Select data within a bounding box
-Using ST_MakeEnvelope
+-- Select data within a bounding box Using ST_MakeEnvelope
 
-HINT: You can use bboxfinder.com to easily grab coordinates of a bounding box for a given area.
+-- HINT: You can use bboxfinder.com to easily grab coordinates of a bounding box for a given area.
 
 SELECT * FROM some_table
 where geom && ST_MakeEnvelope(-73.913891, 40.873781, -73.907229, 40.878251, 4326)
-Select points from table a that do not fall within any polygons in table b
-This method makes use of spatial indexes and the indexes on gid for better performance
+
+-- Select points from table a that do not fall within any polygons in table b
+-- This method makes use of spatial indexes and the indexes on gid for better performance
 
 SELECT
   a.gid,
@@ -247,15 +255,22 @@ Topology is packaged as a separate extension and installable with command:
 
 psql -d [yourdatabase] -c "CREATE EXTENSION postgis_topology;"
 
-Many of the PostGIS functions are written in the PL/pgSQL procedural language. As such, the next step to create a PostGIS database is to enable the PL/pgSQL language in your new database. This is accomplish by the command below command. For PostgreSQL 8.4+, this is generally already installed
+Many of the PostGIS functions are written in the PL/pgSQL procedural language.   
+As such, the next step to create a PostGIS database is to enable the PL/pgSQL language in your new database.   
+This is accomplish by the command below command.   
+For PostgreSQL 8.4+, this is generally already installed
 
 createlang plpgsql [yourdatabase]
 
-Now load the PostGIS object and function definitions into your database by loading the postgis.sql definitions file (located in [prefix]/share/contrib as specified during the configuration step).
+Now load the PostGIS object and function definitions into your database by loading the postgis.sql definitions file   
+(located in [prefix]/share/contrib as specified during the configuration step).
 
 psql -d [yourdatabase] -f postgis.sql
 
-For a complete set of EPSG coordinate system definition identifiers, you can also load the spatial_ref_sys.sql definitions file and populate the spatial_ref_sys table. This will permit you to perform ST_Transform() operations on geometries.
+For a complete set of EPSG coordinate system definition identifiers, 
+you can also load the spatial_ref_sys.sql definitions file   
+and populate the spatial_ref_sys table.  
+This will permit you to perform ST_Transform() operations on geometries.
 
 psql -d [yourdatabase] -f spatial_ref_sys.sql
 
@@ -272,7 +287,7 @@ INSERT INTO geotable ( the_geom, the_name )
   UPDATE artwork SET where_is = ST_POINT(X, Y);
 ```
 
-#### create a   table for data from a CSV that has lat and lon columns:
+#### Create a table for data from a CSV that has lat and lon columns:
 ```sql
 create table noise.locations
 (                                     
