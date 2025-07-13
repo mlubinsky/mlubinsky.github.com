@@ -156,24 +156,7 @@ https://github.com/alex/what-happens-when when you press button on keyboard
 15. https://medium.com/leetcode-patterns/leetcode-pattern-2-dfs-bfs-25-of-the-problems-part-2-a5b269597f52  
 16.  https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 
-16 problem solving patterns that will help you learn DSA faster:
-
-1) https://lnkd.in/giASrwds
-2) https://lnkd.in/gjatQ5pK
-3) https://lnkd.in/gBfWgHYe
-4) https://lnkd.in/g9csxVa4
-5) https://lnkd.in/gbpRU46g
-6) https://lnkd.in/gcnBActT
-7) https://lnkd.in/gKEm_qUK
-8) https://lnkd.in/gVkQX5vA
-9) https://lnkd.in/gKja_D5H
-10) https://lnkd.in/gKE6w7Jb
-11) https://lnkd.in/gdYahWVN
-12) https://lnkd.in/gmMMST5J
-13) https://lnkd.in/gkNvEi8j
-14) https://lnkd.in/gPgpsgaQ
-15) https://lnkd.in/gd4ekfQe
-16) https://lnkd.in/gMZJVkFf
+ 
 
  roadmap for campus placements in 2025   https://lnkd.in/eevgakTB
 
@@ -245,155 +228,6 @@ https://cloudirregular.substack.com/p/the-greatest-resume-ive-ever-seen
 https://news.ycombinator.com/item?id=36901303
 
 
-### Autocompletion
-
-```
-# Python3 program to demonstrate auto-complete
-# feature using Trie data structure.
-# Note: This is a basic implementation of Trie
-# and not the most optimized one.
-
-
-class TrieNode():
-	def __init__(self):
-		# Initialising one node for trie
-		self.children = {}
-		self.last = False
-
-
-class Trie():
-	def __init__(self):
-
-		# Initialising the trie structure.
-		self.root = TrieNode()
-
-	def formTrie(self, keys):
-
-		# Forms a trie structure with the given set of strings
-		# if it does not exists already else it merges the key
-		# into it by extending the structure as required
-		for key in keys:
-			self.insert(key) # inserting one key to the trie.
-
-	def insert(self, key):
-
-		# Inserts a key into trie if it does not exist already.
-		# And if the key is a prefix of the trie node, just
-		# marks it as leaf node.
-		node = self.root
-
-		for a in key:
-			if not node.children.get(a):
-				node.children[a] = TrieNode()
-
-			node = node.children[a]
-
-		node.last = True
-
-	def suggestionsRec(self, node, word):
-
-		# Method to recursively traverse the trie
-		# and return a whole word.
-		if node.last:
-			print(word)
-
-		for a, n in node.children.items():
-			self.suggestionsRec(n, word + a)
-
-	def printAutoSuggestions(self, key):
-
-		# Returns all the words in the trie whose common
-		# prefix is the given key thus listing out all
-		# the suggestions for autocomplete.
-		node = self.root
-
-		for a in key:
-			# no string in the Trie has this prefix
-			if not node.children.get(a):
-				return 0
-			node = node.children[a]
-
-		# If prefix is present as a word, but
-		# there is no subtree below the last
-		# matching node.
-		if not node.children:
-			return -1
-
-		self.suggestionsRec(node, key)
-		return 1
-
-
-# Driver Code
-keys = ["hello", "dog", "hell", "cat", "a",
-		"hel", "help", "helps", "helping"] # keys to form the trie structure.
-key = "h" # key for autocomplete suggestions.
-
-# creating trie object
-t = Trie()
-
-# creating the trie structure with the
-# given set of strings.
-t.formTrie(keys)
-
-# autocompleting the given key using
-# our trie structure.
-comp = t.printAutoSuggestions(key)
-
-if comp == -1:
-	print("No other strings found with this prefix\n")
-elif comp == 0:
-	print("No string found with this prefix\n")
-
-# This code is contributed by amurdia and muhammedrijnas
-
-
-```
-
-### Find islands on 2D grid
-```
-def num_islands(grid):
-    # Function to perform DFS to mark all connected cells as visited
-    def dfs(x, y):
-        # Check if the current cell is within bounds and is a 1
-        if x < 0 or x >= len(grid) or y < 0 or y >= len(grid[0]) or grid[x][y] == 0:
-            return
-
-        # Mark the current cell as visited (change 1 to 0)
-        grid[x][y] = 0
-
-        # Visit all neighboring cells
-        dfs(x + 1, y)  # Down
-        dfs(x - 1, y)  # Up
-        dfs(x, y + 1)  # Right
-        dfs(x, y - 1)  # Left
-
-    if not grid or not grid[0]:
-        return 0
-
-    num_islands = 0
-
-    # Iterate over each cell in the grid
-    for i in range(len(grid)):
-        for j in range(len(grid[0])):
-            # If the cell is a 1, it's part of an island
-            if grid[i][j] == 1:
-                num_islands += 1  # Increment the island count
-                dfs(i, j)  # Perform DFS to mark the entire island as visited
-
-    return num_islands
-
-# Example usage
-grid = [
-    [1, 1, 0, 0, 0],
-    [1, 1, 0, 0, 0],
-    [0, 0, 1, 0, 0],
-    [0, 0, 0, 1, 1]
-]
-
-print("Number of islands:", num_islands(grid))
-
-```
-
 
 ### Problems
 
@@ -457,127 +291,6 @@ https://habr.com/ru/articles/743514/
 All permutations of string
 https://www.techbeamers.com/permutation-of-a-string-in-python/
 
-### Brackets matching
-```
-class Solution:
-    def isValid(self, s: str) -> bool:     
-        stack = []
-        brackets = {
-            ')': '(',
-            ']': '[',
-            '}': '{'
-        }
-
-        for char in s:
-            if char in '([{':  #  if char in brackets.keys()
-                stack.append(char)
-            elif char in ')]}': #  if char in brackets.values()
-                if len(stack) == 0 or brackets[char] != stack.pop():
-                    return False
-
-        return len(stack) == 0
-```
-
-```
-def longest_increasing_subsequence(nums):
-    """
-    Finds the longest strictly increasing subsequence in a list of numbers.
-
-    Args:
-        nums (list): A list of integers or floats.
-
-    Returns:
-        list: The longest strictly increasing subsequence.
-    """
-    if not nums:
-        return []
-
-    # Initialize variables to track sequences
-    longest_seq = []
-    current_seq = [nums[0]]
-
-    for i in range(1, len(nums)):
-        if nums[i] > nums[i - 1]:
-            current_seq.append(nums[i])  # Continue the increasing sequence
-        else:
-            if len(current_seq) > len(longest_seq):
-                longest_seq = current_seq  # Update the longest sequence
-            current_seq = [nums[i]]  # Start a new sequence
-
-    # Final check after the loop
-    if len(current_seq) > len(longest_seq):
-        longest_seq = current_seq
-
-    return longest_seq
-```
-
-### Longest increasing subsequence
-
-https://llego.dev/posts/python-solving-longest-increasing-subsequence/
-
-```
-def findLISLength(arr):
-
-  LIS = [1 for _ in range(len(arr))]
-
-  for i in range(1, len(arr)):
-    for j in range(i):
-      if arr[i] > arr[j]:
-        LIS[i] = max(LIS[i], LIS[j] + 1)
-
-  return max(LIS)
-
-O(n**2)
-```
-#### Better solution:
-```
-Initialize with stack containing first array element
-For each subsequent element, try to append to existing stacks if order is maintained
-If no stack append is possible, make new stack with that element
-Track longest stack found to get LIS length
-This leverages Python’s deque to simulate the stacks in an efficient way.
-By greedily extending stacks that maintain order, we build up the LIS with just one array pass.
-
-The time complexity is O(n log n) due to the stack manipulations, making this a fast optimization over the dynamic programming approach.
-
-from collections import deque
-
-def findLISLength(arr):
-
-  stacks = [deque([arr[0]])]
-  longest = 1
-
-  for i in range(1, len(arr)):
-    item = arr[i]
-
-    for stack in stacks:
-      if stack[-1] < item:
-        stack.append(item)
-        longest = max(longest, len(stack))
-    else:
-      stacks.append(deque([item]))
-
-  return longest
-```
-### Length_of_longest_increasing_subsequence
-```
-import bisect
-
-def length_of_longest_increasing_subsequence(nums):
-    increasing_lst = []
-    for n in nums:
-        pos = bisect.bisect_left(increasing_lst, n)
-        if pos < len(increasing_lst):
-            increasing_lst[pos] = n
-        else:
-            increasing_lst.append(n)
-
-    return len(increasing_lst)
-
-# Test:
-nums = [11, 5, 2, 5, 3, 7, 101, 18]
-print(length_of_longest_increasing_subsequence(nums))  # Answer: 4
-```
 
 https://gaultier.github.io/blog/kahns_algorithm.html
 
@@ -598,45 +311,7 @@ https://stepik.org/course/102772 Ace Your Next Coding Interview by Learning Algo
 
 https://medium.com/@tudorache.a.bogdan/day-5-arrays-median-of-two-sorted-arrays-17c9349e21ca
 
-### Find median of two sorted arrays 
-The median value is the value that separates a dataset into two equal halves..
-```
-class Solution(object):
-    def findMedianSortedArrays(self, nums1, nums2):
-      
-        m, n = len(nums1), len(nums2)
-        total_length = m + n
 
-        if total_length % 2 == 0:
-            mid1 = mid2 = total_length // 2
-        else:
-            mid1 = mid2 = total_length // 2 + 1
-
-        pointer1 = pointer2 = 0
-        median1 = median2 = 0.0
-
-        while pointer1 + pointer2 < mid2:
-            if pointer1 < m and (pointer2 >= n or nums1[pointer1] <= nums2[pointer2]):
-                median1 = nums1[pointer1]
-                pointer1 += 1
-            else:
-                median1 = nums2[pointer2]
-                pointer2 += 1
-
-            if pointer1 + pointer2 >= mid1:
-                median2 = median1
-                break
-
-        if total_length % 2 == 0:
-            if pointer1 < m and (pointer2 >= n or nums1[pointer1] <= nums2[pointer2]):
-                median2 = nums1[pointer1]
-            else:
-                median2 = nums2[pointer2]
-            return (median1 + median2) / 2.0
-        else:
-            return median1
-
-```
 
 https://stepik.org/lesson/41233/step/1?unit=19817 
 
@@ -779,49 +454,7 @@ https://redquark.org/blogs
 
 <https://www.bitdegree.org/user/course/data-structures-and-algorithms>
 
-#### 3 sum problem
 
-Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.
-
-Return the sum of the three integers
-
-```
-    def threeSumClosest(self, nums: List[int], target: int) -> int:
-        diff = float("inf")
-        nums.sort()
-        for i in range(len(nums)):
-            lo, hi = i + 1, len(nums) - 1
-            while lo < hi:
-                sum = nums[i] + nums[lo] + nums[hi]
-                if abs(target - sum) < abs(diff):
-                    diff = target - sum
-                if sum < target:
-                    lo += 1
-                else:
-                    hi -= 1
-            if diff == 0:
-                break
-        return target - diff
-```
-
-#### Given an integer array nums and an integer k, return the number of pairs (i, j) where i < j such that |nums[i] - nums[j]| == k.
-
-https://www.pankajtanwar.in/code/count-number-of-pairs-with-absolute-difference-k
-```
-class Solution {
-public:
-    int countKDifference(vector<int>& nums, int k) {
-        int list[201] = {0};
-        int res = 0;
-        
-        for(auto val: nums) {
-            res += (val-k >= 0 ? list[val-k] : 0) + list[val+k];
-            list[val]++;
-        }
-        return res;
-    }
-}
-```   
 
 ### Path from root to given node
 
@@ -829,22 +462,7 @@ https://www.devglan.com/datastructure/print-path-from-root-to-node-binary-tree
 
 https://www.techiedelight.com/print-all-paths-from-root-to-leaf-nodes-binary-tree/
 
-#### For  binary tree find max depth and max wide
 
-the breadth-first search algorithm would work best to find the max-width of the tree,
-and the depth-first search algorithm would work best to find the max-depth. 
-```
-class TreeNode(object):
-
-      def __init__(self, val=0, left=None, right=None):
-         self.val = val
-         self.left = left
-         self.right = right
-
-      def maxDepth(self, root):
-          return 0 if root is None else 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
-```
-https://github.com/GEEGABYTE1/Width-Depth-Tree-Problems
 
 #### 2 Heaps pattern Find ( Median from Data Stream)
 https://emre.me/coding-patterns/two-heaps/
