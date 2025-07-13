@@ -71,14 +71,9 @@ def postOrder(root):
         print(root.data, end=' ')
 ```
 ### Autocompletion
-
-```
-# Python3 program to demonstrate auto-complete
-# feature using Trie data structure.
-# Note: This is a basic implementation of Trie
-# and not the most optimized one.
-
-
+ Program to demonstrate auto-complete feature using Trie data structure.
+ This is a basic implementation of Trie and not the most optimized one.
+```python
 class TrieNode():
 	def __init__(self):
 		# Initialising one node for trie
@@ -171,11 +166,10 @@ elif comp == 0:
 
 # This code is contributed by amurdia and muhammedrijnas
 
-
 ```
 
 ### Find islands on 2D grid
-```
+```python
 def num_islands(grid):
     # Function to perform DFS to mark all connected cells as visited
     def dfs(x, y):
@@ -220,7 +214,7 @@ print("Number of islands:", num_islands(grid))
 ```
 
 ### Brackets matching
-```
+```python
 class Solution:
     def isValid(self, s: str) -> bool:     
         stack = []
@@ -240,7 +234,7 @@ class Solution:
         return len(stack) == 0
 ```
 
-```
+```python
 def longest_increasing_subsequence(nums):
     """
     Finds the longest strictly increasing subsequence in a list of numbers.
@@ -277,7 +271,7 @@ def longest_increasing_subsequence(nums):
 
 https://llego.dev/posts/python-solving-longest-increasing-subsequence/
 
-```
+```python
 def findLISLength(arr):
 
   LIS = [1 for _ in range(len(arr))]
@@ -344,7 +338,7 @@ print(length_of_longest_increasing_subsequence(nums))  # Answer: 4
 ```
 ### Find median of two sorted arrays 
 The median value is the value that separates a dataset into two equal halves..
-```
+```python
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
       
@@ -388,7 +382,7 @@ Given an integer array nums of length n and an integer target, find three intege
 
 Return the sum of the three integers
 
-```
+```python
     def threeSumClosest(self, nums: List[int], target: int) -> int:
         diff = float("inf")
         nums.sort()
@@ -410,7 +404,7 @@ Return the sum of the three integers
 #### Given an integer array nums and an integer k, return the number of pairs (i, j) where i < j such that |nums[i] - nums[j]| == k.
 
 https://www.pankajtanwar.in/code/count-number-of-pairs-with-absolute-difference-k
-```
+```python
 class Solution {
 public:
     int countKDifference(vector<int>& nums, int k) {
