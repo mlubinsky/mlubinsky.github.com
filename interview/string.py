@@ -33,8 +33,8 @@ s='a2z4'
 print(s)
 print(decode(s))
 
-
-## Max wather container
+#-------------------------
+#  Max wather container
 #-------------------------
 def maxArea( A):
     l = 0
@@ -52,9 +52,9 @@ def maxArea( A):
     return area
 
 
-
-#  Find subarray  with sum as given sum_
- ----------------------------------------------
+# ------------------------------------- 
+#  Find subarray  with sum as given value
+# ------------------------------------- 
 # Returns true if the there is a subarray
 # of arr[] with sum  equal to 'sum'
 # otherwise returns false. Also, prints  the result.
@@ -100,8 +100,9 @@ subArraySum(arr,   sum_)
 
 
 https://www.techiedelight.com/4-sum-problem/ 
-
-# Function to check if quadruplet exists in a list with the given sum
+#----------------------------------------------------------
+# Check if quadruplet exists in a list with the given sum
+#----------------------------------------------------------
 def hasQuadruplet(nums, target):
  
     # create an empty dictionary
@@ -147,7 +148,7 @@ if __name__ == '__main__':
         print('Quadruplet doesn\'t exist')
 
 
-
+# ----------------------------------------------
 # Longest substr with at most 2 distinct chars
 # ----------------------------------------------
 int lengthOfLongestSubstringTwoDistinct(string s) {
@@ -161,8 +162,8 @@ int lengthOfLongestSubstringTwoDistinct(string s) {
         }
         return d;
     }
-
-# Longest Substring Without Repeating Characters
+#-------------------------------------------------
+# Longest Substring Without Repeating Characters (C++)
 #-------------------------------------------------
 int lengthOfLongestSubstring(string s) {
         vector<int> map(128,0);
@@ -176,7 +177,7 @@ int lengthOfLongestSubstring(string s) {
         return d;
     }
 
-
+# ---------------------------------------------------------------------------
 # longest consequitive sequence which can be constructed in array by reshuffling elements
 # ---------------------------------------------------------------------------
 # for each  element n from input we check if (n-1) and (n+1) in the set
@@ -202,12 +203,9 @@ for n in numbers:
  
 return maxlen
 
-
-
-
-
+#--------------------------
 # The Sieve Of Eratosthenes
-#--------------------------------
+#--------------------------
 def sieve_of_eratosthenes(upper_bound):
     primes = [True] * upper_bound
     primes[0] = False
@@ -230,7 +228,8 @@ s = "Hello"
 print(s[::-1])
 # olleH
 
-# find the second largest element in a list or the second smallest element in a list.
+#--------------------------------------------------
+# Find the second largest element in a list or the second smallest element in a list.
 #-------------------------------------------------
 # list of numbers - length of list should be at least 2
 list1 = [10, 20, 4, 45, 99]
@@ -248,10 +247,6 @@ for i in range(2,n):
  
 print("Second highest number is : ",\
       str(secondmax))
-
-
-
-
 
 
 [100,4,200,1,2,3] - answer
@@ -293,7 +288,9 @@ list(zip(list_1, list_2))
 
 # [(1,one),(2,two),(3,tree)]
 
-#. Max Substr without repeating chars
+#------------------------------------------
+# Max substring without repeating chars
+#------------------------------------------
 """
   Linear Time:   using the window sliding technique.
  Whenever we see repetition, we remove the window till the repeated string.
@@ -335,13 +332,14 @@ print("The length of the longest non-repeating character" +
       " substring is " + str(length))
 
 https://www.callicoder.com/minimum-window-substring/
- 
+
+#---------------------------------------------------------------------------------  
 # Find the smallest window in a string containing all characters of another string
+#---------------------------------------------------------------------------------  
 https://stackoverflow.com/questions/2459653/how-to-find-smallest-substring-which-contains-all-characters-from-a-given-string
 
- 
- 
 https://www.interviewkickstart.com/problems/minimum-window-substring 
+
 """ 
  we create an array named frequency to keep a count of occurrences of each character in string t (O(length of t)). 
  Now we start traversing the string S and keep a variable “cnt” which increases whenever we encounter a character present in string t.
@@ -435,14 +433,12 @@ if yes then “no such window can exist “.
 9. Print the minimum length window.
 """
 
-# Python3 program to find the smallest window
-# containing all characters of a pattern.
+#-----------------------------------------------------------------
+# Find the smallest window containing all characters of a pattern
+#------------------------------------------------------------------
 no_of_chars = 256
- 
-# Function to find smallest window
-# containing all characters of 'pat'
+
 def findSubString(string, pat):
- 
     len1 = len(string)
     len2 = len(pat)
  
@@ -516,12 +512,9 @@ if __name__ == "__main__":
     print("Smallest window is : ")
     print(findSubString(string, pat))
  
-
-
-
-
-
+#-----------------------------------------
 # difference between remove, del and pop?
+#-----------------------------------------
 #remove() remove the first matching value.
 li = ['a','b','c','d']
 li.remove('b')
@@ -542,15 +535,17 @@ li
 #=> ['a', 'b', 'd']
 
 
-
-# Check if a string only contains numbers.
+#------------------------------------------
+# Check if a string only contains numbers
+#------------------------------------------
 '123a'.isnumeric()
 #=> False
 '123'.isnumeric()
 #=> True
 
-#Check if a string only contains letters.
-
+#------------------------------------------
+# Check if a string only contains letters.
+#------------------------------------------
 '123a'.isalpha()
 #=> False
 'a'.isalpha()
@@ -561,8 +556,9 @@ li
 '123abc'.isalnum()
 #=> True
 
+#------------------------------------------
 # Return a list of keys from a dictionary.
-
+#------------------------------------------
 d = {'id':7, 'name':'Shiba', 'color':'brown', 'speed':'very slow'}
 list(d)
 #=> ['id', 'name', 'color', 'speed']
@@ -574,7 +570,9 @@ b = [1,2,3]
 [(k,v) for k,v in zip(a,b)]
 #=> [('a', 1), ('b', 2), ('c', 3)]
 
-# How can you sort a dictionary by key, alphabetically?
+#------------------------------------------
+# Sort a dictionary by key, alphabetically?
+#------------------------------------------
 # You can’t “sort” a dictionary because dictionaries don’t have order
 # but you can return a sorted list of tuples which has the keys and values that are in the dictionary.
 d = {'c':3, 'd':4, 'b':2, 'a':1}
@@ -600,9 +598,11 @@ print( all(c) )
 #=> False
 #=> True
 
+#------------------------------------------
 # Given a non-empty string s, you may delete at most one character. 
 # Judge whether you can make it a palindrome.
 # The string will only contain lowercase characters a-z.
+#------------------------------------------
 
 s = 'radkar'
 def solution(s):
@@ -613,8 +613,9 @@ def solution(s):
     return s == s[::-1]
   
 solution(s)
-
+#------------------------------------------
 # Given an array of integers, determine whether the array is monotonic or not.
+#------------------------------------------
 A = [6, 5, 4, 4] 
 B = [1,1,1,3,3,4,3,2,4,2]
 C = [1,1,2,3,7]
@@ -627,10 +628,10 @@ print(solution(A))
 print(solution(B)) 
 print(solution(C))
 
-
-#Given an array nums, write a function to move all zeroes to the end of it while maintaining the relative order of 
-#the non-zero elements.
-
+#------------------------------------------
+# Given an array nums, write a function to move all zeroes to the end of it 
+# while maintaining the relative order of the non-zero elements.
+#------------------------------------------
 array1 = [0,1,0,3,12]
 array2 = [1,7,0,0,8,0,10,12,0,4]
 
@@ -644,8 +645,10 @@ def solution(nums):
 solution(array1)
 solution(array2)
 
-# Given an array containing None values fill in the None values with most recent 
-# non None value in the array 
+#------------------------------------------
+# Given an array containing None values 
+# fill in the None values with most recent  non None value in the array 
+#------------------------------------------
 array1 = [1,None,2,3,None,None,5,None]
 
 def solution(array):
@@ -660,10 +663,10 @@ def solution(array):
     return res
 
 solution(array1)
-
+#------------------------------------------
 # Given two sentences, return an array that has the words that appear in one sentence and not
 # the other and an array with the words in common. 
-
+#------------------------------------------
 sentence1 = 'We are really pleased to meet you in our city'
 sentence2 = 'The city was hit by a really heavy storm'
 
@@ -675,11 +678,11 @@ def solution(sentence1, sentence2):
 
 print(solution(sentence1, sentence2))
 
-
+#------------------------------------------
 # Given k numbers which are less than n, return the set of prime number among them
 # Note: The task is to write a program to print all Prime numbers in an Interval.
 # Definition: A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself. 
-
+#------------------------------------------
 n = 35
 def solution(n):
     prime_nums = []
