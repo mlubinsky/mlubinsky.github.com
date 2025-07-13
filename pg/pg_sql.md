@@ -73,7 +73,39 @@ GRANT ALL PRIVILEGES ON DATABASE yourdbname TO youruser;
 
 ### Size of Postgres objects 
 
+```sql
+SELECT
+    nspname AS schema,
+    relname AS object_name,
+    pg_size_pretty(pg_total_relation_size(c.oid)) AS total_size,
+    pg_total_relation_size(c.oid) AS size_bytes,
+    relkind AS object_type
+FROM
+    pg_class c
+JOIN
+    pg_namespace n ON n.oid = c.relnamespace
+WHERE
+    relkind IN ('r', 'i', 'm', 't') -- r=table, i=index, m=materialized view, t=TOAST
+ORDER BY
+    pg_total_relation_size(c.oid) DESC
+LIMIT 10;
+
 SELECT pg_size_pretty(pg_relation_size('t_test'));
+```
+
+In PostgreSQL, TOAST stands for The Oversized-Attribute Storage Technique.
+
+PostgreSQL uses TOAST to store very large values (like big text, bytea, or json columns)  
+outside the main table row to keep rows compact and efficient.
+ When is TOAST used?  
+When a row contains a value that exceeds 2 KB,   
+PostgreSQL automatically compresses and/or stores the value in a separate TOAST table.
+
+This allows the main table to remain fast and compact, while large fields are stored separately.
+
+Each regular table that needs TOAST has a hidden companion table to store the oversized values.
+
+These are what appear with relkind = 't' in the SQL query above
 
 ### Indexes for given table: 
 ```
