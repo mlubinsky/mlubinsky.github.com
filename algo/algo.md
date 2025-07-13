@@ -467,10 +467,10 @@ class Solution:
 https://emre.me/coding-patterns/palindromes/
 
 ##### Top-down Dynamic Programming with Memoization 
-```
-start and end are two changing values of our recursive function in the Brute Force Solution.
-So, we can store the results of all subsequences in a two-dimensional array to memoize them.
 
+Start and end are two changing values of our recursive function in the Brute Force Solution.  
+So, we can store the results of all subsequences in a two-dimensional array to memoize them.
+```python
 class Solution:
     def longestPalindromeSubseq(self, s: str) -> int:
         memo = [[-1 for _ in range(len(s))] for _ in range(len(s))]
@@ -495,14 +495,14 @@ class Solution:
                 memo[start][end] = max(subseq1, subseq2)
 
         return memo[start][end]
-
+```
 Time Complexity: O(N2) because memoization array, memo[len(s)][len(s)].
  We will not have more than N*N subsequences.
 
 Space Complexity: O(N2 + N) == O(N2) because we used N2 for memoization array and N for recursive stack.
-```
+ 
 #### Bottom-up Dynamic Programming with Tabulation 
-```
+ 
 We can build our two-dimensional memoization array in a bottom-up fashion, adding one element at a time.
 
 if the element at the start and the end is matching,
@@ -510,13 +510,15 @@ the length of Longest Palindromic Substring (LPS) is 2 plus the length of LPS ti
 if the element at the start does not match the element at the end,
  we will take the max of LPS by either skipping the element at start or end
 So the overall algorith will be;
-
+```python
 if s[start] == s[end]:
     memo[start][end] = 2 + memo[start + 1][end - 1]
 else:
     memo[start][end] = max(memo[start + 1][end], memo[start][end - 1])
 and the solution;
+```
 
+```python
 class Solution:
     def longestPalindromeSubseq(self, s: str) -> int:
         memo = [[0 for _ in range(len(s))] for _ in range(len(s))]
@@ -534,17 +536,17 @@ class Solution:
                     memo[start][end] = max(memo[start + 1][end], memo[start][end - 1])
 
         return memo[0][len(s) - 1]
-
+```
 Time Complexity: O(N2)
 Space Complexity: O(N2) where N is the input sequence.
-```
+ 
 
 ###  Longest common substr
 
 https://emre.me/coding-patterns/longest-common-substring-subsequence/
  
 #### Top-down Dynamic Programming with Memoization
-```
+```python
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         memo = [[-1 for _ in range(len(text2))] for _ in range(len(text1))]
@@ -563,19 +565,21 @@ class Solution:
 ```
 
 #### Bottom-up Dynamic Programming with Tabulation 
-```
+ 
 Lets create our two dimensional array in a bottom-up fashion.
 
 if the characters text1[i] matches text2[j], the length of the common subsequence would be one plus the length of the common subsequence until the i-1 and j-1 indexes.
 if the characters text1[i] and text2[j] does not match, we take the longest sequence by skipping one character either from ith string or jth character from respective strings.
 Our overall algorithm is;
-
+```python
 if text1[i] == text2[j]:
     memo[i][j] = 1 + memo[i - 1][j - 1]
 else:
     memo[i][j] = max(memo[i - 1][j], memo[i][j - 1])
 and the solution is;
+```
 
+```python
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         memo = [[0 for _ in range(len(text2) + 1)] for _ in range(len(text1) + 1)]
@@ -589,12 +593,11 @@ class Solution:
 
                 max_length = max(max_length, memo[i][j])
         return max_length
+```
 Time Complexity: O(N * M) where N and M are the lengths of two input strings.
 
 Space Complexity: O(N * M)
 
-
-```
 
 #### Reverse linked list
 
@@ -851,7 +854,6 @@ https://github.com/StBogdan/PythonWork/blob/master/Leetcode/300.py
 
 ```python
 
-
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         if not nums:
@@ -920,7 +922,7 @@ print(array_num(input))
 
 #### Largest continuous sum
 
-```
+```python
 def largest_continous_sum_two(arr):
     if len(arr) == 0: # handle an edge case
         return None
@@ -933,20 +935,19 @@ def largest_continous_sum_two(arr):
 
 
 #### max product subarray
-```
-It is similar to maximum sum subarray problem. But the input can have both
-positive and negative number. Only store the local maximum number is not
-enough.
-we can use DP to solve this problem. Let maxDP[i] denote the maximum
+ 
+It is similar to maximum sum subarray problem. But the input can have both  
+positive and negative number. Only store the local maximum number is not enough.  
+we can use DP to solve this problem. Let maxDP[i] denote the maximum  
 product in subarray [0,...,i], and minDP[i] indicates the min product in subarray
-[0,..,i]
-So, the DP transformation function is:
-maxDP[i] = max(maxDP[i-1] * nums[i], minDP[i-1]* nums[i], nums[i
-]);
+[0,..,i]  
+So, the DP transformation function is:  
+```
+maxDP[i] = max(maxDP[i-1] * nums[i], minDP[i-1]* nums[i], nums[i]);
 minDP[i] = min(minDP[i-1]* nums[i], maxDP[i-1]*nums[i], nums[i])
+```
 
-
-
+```python
 def maxProduct( nums)
   
  n = nums.size();
@@ -970,7 +971,7 @@ return result;
 ```
 
 #### Is number prime?
-```
+```python
 def is_prime(n):
     if n <= 1:
         return False
@@ -984,9 +985,8 @@ def is_prime(n):
     return True
 ```
 
-### Merging 2 sorted arrays
-into 1st array where 1st array has the capacity for both
-```
+### Merging 2 sorted arrays into 1st array where 1st array has the capacity for both
+```python
 private void merge(int[] a, int n, int[] b, int m) {
 	int i = n - 1;
 	int j = m - 1;
@@ -1001,10 +1001,10 @@ private void merge(int[] a, int n, int[] b, int m) {
 }
 ```
 
-###   determine if two trees are identical 
+###  Determine if two trees are identical 
   
-  binary tree node has data, pointer to left child and a pointer to right child 
-```  
+Binary tree node has data, pointer to left child and a pointer to right child 
+```python
 class Node: 
     # Constructor to create a new node 
     def __init__(self, data): 
@@ -1051,10 +1051,8 @@ else:
 
 
 <https://rcoh.me/posts/linear-time-median-finding/>.      MEDIAN finding 
-
-```
-### This is O (nlogn)
- 
+This is O (nlogn)
+```python
 def nlogn_median(l):
     l = sorted(l)
     if len(l) % 2 == 1:
@@ -1073,8 +1071,9 @@ It’s a recursive algorithm that can find any element (not just the median).
 We know that one of these groups contains the median. Suppose we’re looking for the kth element:
 If there are k or more elements in lesser_els, recurse on list lesser_els, searching for the kth element.
 If there are fewer than k elements in lesser_els, recurse on list greater_els. Instead of searching for k, we search for k-len(lesser_els).
+```
 
-
+```python
 import random
 def quickselect_median(l, pivot_fn=random.choice):
     if len(l) % 2 == 1:
@@ -1110,11 +1109,11 @@ def quickselect(l, k, pivot_fn):
     else:
         return quickselect(highs, k - len(lows) - len(pivots), pivot_fn)
 ```
-Inverting a binary tree:
+
+### Inverting a binary tree:
 The root is still the root, but everything else is just flipped:
 https://leetcode.com/problems/invert-binary-tree/
-```
-
+```python
   TreeNode* invertTree(TreeNode* root) {
     if (root) {
       invertTree(root->left);
@@ -1133,13 +1132,11 @@ https://leetcode.com/problems/invert-binary-tree/
         invert(tree.left)
         invert(tree.right)
         
- ```       
- 
- 
+ ``` 
  
 ### Find 1st element in rotated sorted array
 
- ```
+ ```python
     def bs(lst, start, end):
        print ("start=",start, "end=", end)
        if start == end:  return start
@@ -1175,8 +1172,8 @@ https://leetcode.com/problems/invert-binary-tree/
       print ("index=",i)
 ```
 
-Brackets:
-```
+### Matching Brackets
+```python
 def isProperlyNested(S):
     stack = []
     for s in S:
