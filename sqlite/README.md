@@ -97,7 +97,7 @@ https://kerkour.com/sqlite-for-servers
 https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer
 
 # Download file, unzip, load to sqlite and run SQL 
-```
+```bash
 curl -s https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip \
 | gunzip \
 | sqlite3 -csv ':memory:' '.import /dev/stdin stdin' \
@@ -118,7 +118,7 @@ Date,USD,JPY,BGN,CYP,CZK,DKK,EEK,GBP,HUF,LTL,LVL,MTL,[and on, and on]
 Date,Currency,Rate
 
 Converting from wide to long format is "meld" operation
-```
+```bash
 curl -s https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip | \
 gunzip | \
 python3 -c 'import sys, pandas as pd
@@ -150,13 +150,14 @@ https://antonz.org/sqlean-py/
 https://www.joseferben.com/posts/3-things-that-surprised-me-while-running-sqlite-in-production/
 
 https://habr.com/ru/articles/754400/
-```
+```python
 import sqlite3
 connection = sqlite3.connect('my_database.db')
 cursor = connection.cursor()
 cursor.execute('SELECT * FROM Users')
 users = cursor.fetchall()
 connection.close()
+
 # Преобразуем результаты в список словарей
 users_list = []
 for user in users:
@@ -173,7 +174,7 @@ for user in users_list:
 
 ```
 Instead code above (for user in users):
-```
+```python
 connection.row_factory = sqlite3.Row
 ```
 
@@ -227,8 +228,8 @@ https://habr.com/ru/company/otus/blog/541820/.  SQLite with  Python and Go
 
 https://github.com/simonw/sqlite-utils
 
-```
-  CREATE TABLE tIssue (
+```sql
+  CREATE TABLE T (
     id   INTEGER PRIMARY KEY NOT NULL CHECK (typeof(id) = 'integer'),
     col1 BLOB NOT NULL                CHECK (typeof(col1) = 'blob'),
     col2 TEXT                         CHECK (typeof(col2) = 'text' OR col2 IS NULL)
