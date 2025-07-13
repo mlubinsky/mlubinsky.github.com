@@ -172,20 +172,7 @@ print(hash_table)
 # [[], [], 0, [432, 'mango'], [213, 'banana'], [654, 'guava'], [], [], [], []]
 ```
 
-### Leetcode
-https://walkccc.me/LeetCode/ Solutions
 
-https://github.com/ruppysuppy/Daily-Coding-Problem-Solutions
-
-https://dxmahata.gitbooks.io/leetcode-python-solutions/content/
-
-https://github.com/ChenglongChen/LeetCode-3/tree/master/Python
-
-https://www.algoexpert.io/ I bought it!
-
-### Given two singly linked lists that intersect at some point, find the intersecting node
-
-https://github.com/ruppysuppy/Daily-Coding-Problem-Solutions/blob/master/Solutions/020.py
 
 ###  Given an array of integers and a value, determine if there are any three integers in the array whose sum equals the given value.
 
