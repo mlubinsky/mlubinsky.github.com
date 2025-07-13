@@ -73,7 +73,7 @@ https://liuzhenglaichn.gitbook.io/algorithm/array/sliding-window
 
 ####  Maximum Sum Increasing subsequence
 
-```
+```python
 def maximum_sum_dynamic(arr):
 	'''Calculating maximum sum increasing subsequence using dynamic programming'''
 	soln = [-sys.maxint] * len(arr)
@@ -97,7 +97,7 @@ https://github.com/charulagrl/data-structures-and-algorithms/blob/master/algorit
 Given a rod of length n   and an array of prices that contains prices of all pieces of size smaller than n.
 
 Determine the maximum value obtainable by cutting up the rod and selling the pieces.
-```
+```python
 def cutting_a_rod_dynamic(values, length):
 	
 	soln = [0] * (length+1)
@@ -112,9 +112,10 @@ def cutting_a_rod_dynamic(values, length):
 	return soln[length]
 ```
 Another solution from https://www.techiedelight.com/rod-cutting/
-```
-# Function to find the best way to cut a rod of length `n`
-# where the rod of length `i` has a cost `price[i-1]`
+
+Function to find the best way to cut a rod of length `n`  
+ where the rod of length `i` has a cost `price[i-1]`
+```python
 def rodCut(price, n):
  
     # `T[i]` stores the maximum profit achieved from a rod of length `i`
@@ -142,7 +143,7 @@ if __name__ == '__main__':
 ####    Min Cost Path on grid 
 https://github.com/StBogdan/PythonWork/blob/master/Leetcode/64.py
 
-```
+```python
 def minPathSum(self, grid: List[List[int]]) -> int:
         rows = len(grid)
         cols = len(grid[0])
@@ -171,8 +172,8 @@ def minPathSum(self, grid: List[List[int]]) -> int:
 ```
 
 
-another solution
-```  
+Min Cost Path on grid: another solution
+```python
 def minCost(cost, m, n): 
   
     # Instead of following line, we can use int tc[m+1][n+1] or 
@@ -200,7 +201,7 @@ def minCost(cost, m, n):
     return tc[m][n] 
  ``` 
   Driver program to test above functions 
- ``` 
+ ```python
     cost = [[1, 2, 3], 
             [4, 8, 2], 
             [1, 5, 3]] 
@@ -210,11 +211,11 @@ def minCost(cost, m, n):
 
 ### Min cost path - another version
 
-https://github.com/charulagrl/data-structures-and-algorithms/blob/master/algorithm-questions/dynamic_programming/min_cost_path.py
+<https://github.com/charulagrl/data-structures-and-algorithms/blob/master/algorithm-questions/dynamic_programming/min_cost_path.py>
 
-  Time-complexity: O(m*n) where m, n are dimensions of the matrix
+Time-complexity: O(m*n) where m, n are dimensions of the matrix
 
-```
+```python
 import sys
 def min_cost_dynamic(cell):
 	 
@@ -236,7 +237,7 @@ def min_cost_dynamic(cell):
 ### Count number of ways to reach   mat[m-1][n-1] from mat[0][0]   in a matrix mat[][] 
 
  Return    number of way from top-left to mat[m-1][n-1] 
-``` 
+```python 
 def countPaths(m, n): 
   
     dp = [[0 for i in range(m + 1)]  
@@ -254,7 +255,7 @@ def countPaths(m, n):
 ```
 
  Driver code 
-``` 
+```python
 if __name__ =="__main__":    
     n = 5
     m = 5
@@ -317,8 +318,9 @@ Complexity:
 
 Time: O(i * j)
 Space: O(i * j)
- 
+```
 
+```python
 def coin_change_dynamic(coins, total):
 	'''Return the number of ways to to make the change using dynamic approach'''
 	result = [[0] * len(coins) for i in range(total+1)] 
@@ -341,7 +343,7 @@ def coin_change_dynamic(coins, total):
 ```
 
 #### best-time-to-buy-and-sell-stock 
-```
+```python
 prices = [100, 113, 110, 85, 105, 102, 86, 63, 81, 101, 94, 106, 101, 79, 94, 90, 97]
 result = 0
 minSofar = prices[0]
