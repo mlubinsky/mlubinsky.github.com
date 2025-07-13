@@ -17,8 +17,9 @@ GitHub will automatically apply the theme and generate pages.
 
 ### Collapsible  text in markdown
 GitHub / GitLab / Jekyll (HTML-in-Markdown supported)
-You can use <details> and <summary>:
+
 ```
+You can use <details> and <summary>:
 <details>
 <summary>Click to expand</summary>
 
