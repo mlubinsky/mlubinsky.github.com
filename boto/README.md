@@ -9,7 +9,7 @@ https://towardsdatascience.com/demystifying-boto3-how-to-use-any-aws-service-wit
 
 <https://boto3.amazonaws.com/v1/documentation/api/1.9.42/reference/services/s3.html>
 
-```
+```python
  import boto3
  boto3.__version__
  1.9.124
@@ -18,7 +18,7 @@ https://towardsdatascience.com/demystifying-boto3-how-to-use-any-aws-service-wit
 ### Use paginator to get > 1,000 objects 
 
 The inbuilt boto3 Paginator class is the easiest way to overcome the 1000 record limitation of list-objects-v2. This can be implemented as follows
-```
+```python
 s3 = boto3.client('s3')
 
 paginator = s3.get_paginator('list_objects_v2')
@@ -54,7 +54,7 @@ https://hackersandslackers.com/s3-boto3-python-sdk/
 
 ### How to get list of subfolders:
 
-```
+```python
 def get_keys_in_bucket_folder(bucket_name, prefix=None):
     try:
       c = boto3.client('s3')
@@ -69,7 +69,7 @@ get_keys_in_bucket_folder(my_bucket, my_prefix)
 ```
 
 ### How to read AWS file names
-```
+```python
 objs = boto3.client.list_objects(Bucket='my_bucket')
     while 'Contents' in objs.keys():
         objs_contents = objs['Contents']
@@ -86,8 +86,8 @@ objs = boto3.client.list_objects(Bucket='my_bucket')
 
  similarly to a open(filename).readlines():
  
- ```
- s3 = boto3.resource('s3')
+```python
+s3 = boto3.resource('s3')
 bucket = s3.Bucket('test-bucket')
 # Iterates through all the objects, doing the pagination for you. Each obj
 # is an ObjectSummary, so it doesn't contain the body. You'll need to call
@@ -101,7 +101,7 @@ File data will be a binary stream.  We have to decode it
 ```contents = filedata.decode('utf-8')) ```
 
 
-```
+```python
 def s3_read(source, profile_name=None):
     """
     Read a file from an S3 source.
