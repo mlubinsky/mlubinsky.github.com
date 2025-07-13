@@ -12,6 +12,8 @@ http://lucumr.pocoo.org/2025/1/30/how-i-ai
 
 ### Wiki / documentation
 
+https://habr.com/ru/articles/927152/ Разработка требований к ПО с помощью Markdown, Git и Obsidian
+
 https://github.com/leomoon-studios/wiki-go
 
 https://www.mkdocs.org/
