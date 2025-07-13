@@ -1,4 +1,5 @@
-theme: jekyll-theme-midnight
+# theme: jekyll-theme-midnight
+theme: jekyll-theme-modernist
 title: Michael Lubinsky 
 
 # markdown            : kramdown
