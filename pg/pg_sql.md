@@ -178,7 +178,7 @@ WHERE
 ### Unique constraint
 ```sql
 CREATE TABLE bar (
-    pkey        SERIAL PRIMARY KEY,
+    pkey        SERIAL PRIMARY KEY, -- SERIAL is obsolete !
     foo_fk      VARCHAR(256) NOT NULL REFERENCES foo(name), 
     name        VARCHAR(256) NOT NULL, 
     UNIQUE (foo_fk,name)
@@ -187,6 +187,20 @@ CREATE TABLE bar (
 ALTER TABLE tablename ADD CONSTRAINT constraintname UNIQUE (columns);
 ```
 ### Serial column
+Safer and more flexible than SERIAL:
+```
+id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY
+```
+PostgreSQL 16+ via pg_uuidv7 extension or custom function 
+Combines timestamp + randomness
+Use when:  
+You need both global uniqueness and ordering  
+You want to avoid integer overflows  
+Great for distributed systems or sharded databases  
+Sortable (better index locality than v4)
+```
+id UUID DEFAULT uuid_generate_v7() PRIMARY KEY
+```
 <https://stackoverflow.com/questions/244243/how-to-reset-postgres-primary-key-sequence-when-it-falls-out-of-sync>
 
 ```
