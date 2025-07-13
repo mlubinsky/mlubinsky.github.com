@@ -129,6 +129,21 @@ https://github.com/alex/what-happens-when when you press button on keyboard
 
 ### ALGO 
 
+### Leetcode
+https://walkccc.me/LeetCode/ Solutions
+
+https://github.com/ruppysuppy/Daily-Coding-Problem-Solutions
+
+https://dxmahata.gitbooks.io/leetcode-python-solutions/content/
+
+https://github.com/ChenglongChen/LeetCode-3/tree/master/Python
+
+https://www.algoexpert.io/ I bought it!
+
+### Given two singly linked lists that intersect at some point, find the intersecting node
+
+https://github.com/ruppysuppy/Daily-Coding-Problem-Solutions/blob/master/Solutions/020.py
+
 16 problem solving patterns that will help you learn DSA faster:
 
 1. https://leetcode.com/problems/minimum-window-substring/solutions/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems/
