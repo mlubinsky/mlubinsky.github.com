@@ -13,7 +13,7 @@ https://python.plainenglish.io/
 Now lets start with #1–100 of 501
 
 ### 1) Write a Python function to check whether a given number is prime or not.
-```
+```python
 def is_prime(n):
     if n < 2:
         return False
@@ -31,7 +31,7 @@ This function checks if a number is prime by attempting to divide it by all numb
 If any divisor is found, it returns False; otherwise, it returns True.
 
 ### 2) Write a Python function to find the largest continuous sum in a given list of integers.
-```
+```python
 def max_subarray_sum(arr):
     max_sum = current_sum = arr[0]
     for num in arr[1:]:
@@ -80,7 +80,7 @@ making it useful for loops where you need both.
 ```
 
 ### 5) What is the purpose of the ‘zip’ function in Python? Provide an example.
-```
+```python
 names = ['Alice', 'Bob', 'Charlie']
 ages = [25, 30, 35]
 for name, age in zip(names, ages):
@@ -97,7 +97,7 @@ pairing elements based on their position.
 ```
 
 ### 6) What is the purpose of the ‘yield’ keyword in Python? Provide an example.
-```
+```python
 def count_down(num):
     while num > 0:
         yield num
@@ -134,7 +134,7 @@ Explanation:
  Generators are more memory-efficient as they yield items one at a time.
 ```
 ### 8) Write a Python function to check whether a given string is a palindrome or not.
-```
+```python
 
 def is_palindrome(s):
     return s == s[::-1]
@@ -146,7 +146,7 @@ print(is_palindrome("hello"))  # Output: False
 Explanation: This function checks if a string is the same forwards and backwards, which defines a palindrome.
 ```
 ### 9) Write a Python function to find the second highest number in a list.
-```
+```python
 def second_highest(lst):
     unique_sorted = sorted(set(lst), reverse=True)
     return unique_sorted[1] if len(unique_sorted) > 1 else None
@@ -160,7 +160,7 @@ This function removes duplicates with set, sorts the list, and returns the secon
 ```
 
 ### 10) Write a Python function to count the number of vowels in a given string.
-```
+```python
 def count_vowels(s):
     return sum(1 for char in s if char.lower() in 'aeiou')
 
@@ -171,7 +171,7 @@ Explanation: This function counts vowels in a string using a generator expressio
 checking each character against a set of vowels.
 ```
 ### 11) Write a Python function to find the common elements between two lists.
-```
+```python
 def find_common_elements(list1, list2):
     return list(set(list1) & set(list2))
 
@@ -182,7 +182,7 @@ Explanation:
 This function uses set intersection to find common elements between two lists, which is efficient and concise.
 ```
 ### 12) Write a Python function to reverse a linked list.
-```
+```python
 class ListNode:
     def __init__(self, value=0, next=None):
         self.value = value
@@ -210,7 +210,7 @@ Explanation: This function reverses a singly linked list by changing the directi
 ```
 
 ### 13) Write a Python function to find the shortest path between two nodes in a graph.
-```
+```python
 import heapq
 
 def shortest_path(graph, start, end):
@@ -249,8 +249,8 @@ Explanation:
 This function implements Dijkstra’s algorithm using a priority queue to find the shortest path in a weighted graph.
 ```
 
-### 14) Write a Python function to fi nd the intersection of two sorted lists.
-```
+### 14) Write a Python function to find the intersection of two sorted lists.
+```python
 def intersection_of_sorted_lists(list1, list2):
     i, j = 0, 0
     intersection = []
@@ -272,7 +272,7 @@ Explanation:
 This function finds the intersection of two sorted lists by using two pointers, efficiently comparing elements.
 ```
 ### 15) Write a Python function to fi nd the longest common prefix among a list of strings.
-```
+```python
 def longest_common_prefix(strs):
     if not strs:
         return ""
@@ -290,7 +290,7 @@ Explanation:
 This function finds the longest common prefix by comparing characters of the shortest string with all other strings.
 ```
 ### 16) Write a Python function to perform a binary search on a sorted list.
-```
+```python
 def binary_search(arr, target):
     low, high = 0, len(arr) - 1
     while low <= high:
@@ -312,7 +312,7 @@ returning -1 if the target is not found.
 ```
 
 ### 17) Write a Python function to find the maximum sum of a contiguous subarray with a size of k in a given list of integers.
-```
+```python
 def max_sum_subarray_k(arr, k):
     max_sum = sum(arr[:k])
     current_sum = max_sum
@@ -328,7 +328,7 @@ Explanation:
 This function calculates the maximum sum of any contiguous subarray of size k using a sliding window approach.
 ```
 ### 18) Write a Python function to implement a stack using a linked list.
-```
+```python
 class StackNode:
     def __init__(self, value):
         self.value = value
@@ -362,7 +362,7 @@ Explanation:
 This function implements a stack using a linked list where each node contains a value and a reference to the next node.
 ```
 ### 19) Write a Python function to implement a queue using two stacks.
-```
+```python
 class Queue:
     def __init__(self):
         self.in_stack = []
@@ -389,7 +389,7 @@ Explanation:
 This function implements a queue using two stacks. One stack is used for enqueuing, and the other for dequeuing.
 ```
 ### 20) Write a Python function to find the longest increasing subsequence in a given list of integers.
-```
+```python
 def longest_increasing_subsequence(nums):
     if not nums:
         return 0
@@ -408,7 +408,7 @@ This function uses dynamic programming to find the length of the longest increas
  Each element in the dp array keeps track of the longest subsequence ending at that index.
 ```
 ### 21) Write a Python function to find the shortest path between two nodes in a graph using Dijkstra’s algorithm.
-```
+```python
 import heapq
 
 def dijkstra_algorithm(graph, start_node):
@@ -446,7 +446,7 @@ Explanation:
 ```
 
 ### 22) Write a Python function to find the longest common substring between two given strings.
-```
+```python
 def longest_common_substring(str1, str2):
     m, n = len(str1), len(str2)
     max_len = 0
@@ -473,7 +473,7 @@ This function uses dynamic programming to find the longest common substring betw
  It maintains a table dp where dp[i][j] is the length of the longest common substring ending at str1[i-1] and str2[j-1].
 ```
 ### 23) Write a Python function to check if a given string is a palindrome.
-```
+```python
 def is_palindrome(s):
     return s == s[::-1]
 
@@ -485,7 +485,7 @@ Explanation:
 This function checks if a string is the same forwards and backwards, which defines a palindrome.
 ```
 ### 24) Write a Python function to sort a given list of integers using the quicksort algorithm.
-```
+```python
 def quicksort(arr):
     if len(arr) <= 1:
         return arr
@@ -504,7 +504,7 @@ It selects a pivot and partitions the list into elements less than, equal to, an
 and recursively sorts the partitions.
 ```
 ### 25) Write a Python function to generate all permutations of a given list of integers.
-```
+```python
 from itertools import permutations
 
 def generate_permutations(lst):
@@ -519,7 +519,7 @@ This function uses the permutations function from the itertools module to genera
 ```
 
 ### 26) Write a Python function to merge two sorted arrays into a single sorted array.
-```
+```python
 def merge_sorted_arrays(arr1, arr2):
     result = []
     i, j = 0, 0
@@ -542,7 +542,7 @@ This function merges two sorted arrays into a single sorted array by comparing e
 and appending the smaller one to the result list.
 ```
 ### 27) Write a Python function to find the maximum subarray sum in a given array of integers.
-```
+```python
 def max_subarray_sum(arr):
     max_sum = current_sum = arr[0]
     for num in arr[1:]:
@@ -557,7 +557,7 @@ Explanation:
 This function uses Kadane’s algorithm to find the maximum sum of a contiguous subarray within a one-dimensional array of numbers.
 ```
 ### 28) Write a Python function to find the first non￾repeating character in a given string.
-```
+```python
 def first_non_repeating_character(s):
     frequency = {}
     for char in s:
@@ -578,7 +578,7 @@ This function finds the first non-repeating character in a string by creating a 
  and then checking which character has a frequency of one.
 ```
 ### 29) Write a Python function to reverse a given linked list.
-```
+```python
 class ListNode:
     def __init__(self, value=0, next=None):
         self.value = value
@@ -605,7 +605,7 @@ Explanation: This function reverses a singly linked list by changing the directi
 ```
 ### 30) Write a Python function to implement binary search on a given sorted array of integers.
 
-```
+```python
 def binary_search(arr, target):
     low, high = 0, len(arr) - 1
     while low <= high:
@@ -627,7 +627,7 @@ returning -1 if the target is not found.
 ```
 
 ### 31) Write a Python function to implement the merge sort algorithm to sort a given list of integers.
-```
+```python
 def merge_sort(arr):
     if len(arr) > 1:
         mid = len(arr) // 2
@@ -691,7 +691,7 @@ There are many different versions of quicksort that pick pivot in different ways
 This implementation uses the middle element as pivot.
 ```
 ### 33) Write a Python function to implement the breadth-first search algorithm to traverse a given tree.
-```
+```python
 from collections import deque
 
 def bfs(root):
@@ -719,7 +719,7 @@ Breadth-first search (BFS) is an algorithm for traversing or searching tree or g
 It starts at the tree root and explores the neighbor nodes at the present depth prior to moving on to nodes at the next depth level.
 ```
 ### 34) Write a Python function to implement the depth￾first search algorithm to traverse a given tree.
-```
+```python
 def dfs(node):
     if not node:
         return []
@@ -1002,7 +1002,7 @@ s = re.sub(r"\s+", "", s)
 print(s)  # Output: "abc"
 ```
 ### 81) How do you get the current working directory in Python?
-```
+```python
 import os
 current_directory = os.getcwd()
 print("Current Working Directory:", current_directory)
@@ -1011,7 +1011,7 @@ You can obtain the current working directory in Python using the os.getcwd() met
  or the Path.cwd() method from the pathlib module.
 ```
 ### 82) How do you flatten a nested list in Python?
-```
+```python
 
 def flatten_list(nested_list):
     return [item for sublist in nested_list for item in sublist]
@@ -1028,7 +1028,7 @@ A simple list comprehension for one level of nesting would look like:
 ```
 
 ### 83) How do you check if a number is prime in Python?
-```
+```python
 def is_prime(n):
     if n <= 1:
         return False
@@ -1045,7 +1045,7 @@ and check if the number is divisible by any of those values.
  If it is divisible, it is not prime; otherwise, it is prime.
 ```
 ### 84) How do you convert a string to a datetime object in Python?
-```
+```python
 from datetime import datetime
 
 date_string = "01/01/2020"
@@ -1069,7 +1069,7 @@ To merge two dictionaries in Python, you can use
  the update() method, the unpacking operator **, or the merge operator | introduced in Python 3.9.
 ```
 ### 86) How do you remove duplicates from a list in Python?
-```
+```python
 def remove_duplicates(lst):
     return list(set(lst))
 
@@ -1092,7 +1092,7 @@ Explanation: This function checks if a string is a palindrome by comparing it to
 ```
 ### 88) How do you reverse a list in Python?
 
-```
+```python
 def reverse_list(lst):
     return lst[::-1]
 
@@ -1110,7 +1110,7 @@ print(a)
 #Output: ['h', 'e', 'l', 'l', 'o']
 ```
 ### 90) How do you check if a string contains only digits?
-```
+```python
 def contains_only_digits(s):
     return s.isdigit()
 
@@ -1119,7 +1119,7 @@ print(contains_only_digits("123a45")) # Output: False
 
 ```
 ### 91) How do you sort a list of dictionaries in Python based on a specific key?
-```
+```python
 
 from operator import itemgetter
 list_of_dicts = [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 20}, {'name': 'Charlie', 'age': 30}]
@@ -1129,7 +1129,7 @@ print(sorted_list)
 Explanation: This code sorts a list of dictionaries based on the ‘age’ key using the sorted() function and itemgetter from the operator module.
 ```
 ### 92) How do you remove all duplicates from a list ?
-```
+```python
 def remove_duplicates(lst):
     return list(set(lst))
 
@@ -1141,7 +1141,7 @@ which automatically removes duplicate elements, and then converting it back to a
 ```
 ### 93) How do you check if a string contains a specific substring in Python?
 
-```
+```python
 def contains_substring(string, substring):
     return substring in string
 
@@ -1150,7 +1150,7 @@ print(contains_substring("hello world", "world"))  # Output: True
 Explanation: This function checks if a substring exists within a string using the in keyword.
 ```
 ### 94) How do you sort a list of strings in alphabetical order?
-```
+```python
 def sort_strings(lst):
     return sorted(lst)
 
@@ -1160,7 +1160,7 @@ print(sort_strings(my_list))
 Explanation: This function sorts a list of strings in alphabetical order using the sorted() function.
 ```
 ### 95) How do you iterate over a dictionary in Python?
-```
+```python
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 for key, value in my_dict.items():
     print(f"Key: {key}, Value: {value}")
@@ -1169,7 +1169,7 @@ This code iterates over a dictionary, accessing both keys and values using the .
 ```
 
 ### 96) How do you remove duplicates from a list in Python?
-```
+```python
 def remove_duplicates(lst):
     return list(dict.fromkeys(lst))
 
@@ -1189,7 +1189,7 @@ Output: [1][2][3][4]
 Explanation: Since b is a reference to the same list as a, changes to a will reflect in b.
 ```
 ### 98) How do you reverse a string in Python?
-```
+```python
 def reverse_string(s):
     return s[::-1]
 
@@ -1197,14 +1197,14 @@ print(reverse_string("hello"))  # Output: "olleh"
 Explanation: This function reverses a string using slicing.
 ```
 ### 99) How do you find the length of a list in Python?
-```
+```python
 my_list = [1, 2, 3, 4, 5]
 print(len(my_list))  # Output: 5
 
 Explanation: The len() function is used to find the number of items in a list.
 ```
 ### 100) How do you check if a list is empty in Python?
-```
+```python
 def is_list_empty(lst):
     return not lst
 
