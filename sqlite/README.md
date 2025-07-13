@@ -1,3 +1,4 @@
+### SQLite and DuckDB
 
 https://github.com/manzt/quak  quak is a scalable data profiler for quickly scanning large tables, capturing interactions as executable SQL queries.
 
