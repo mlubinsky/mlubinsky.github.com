@@ -39,7 +39,7 @@ GitHub will automatically apply the theme and generate pages.
 7. jekyll-theme-time-machine  
    - Blog-oriented theme with post history.
 
-8. jekyll-theme-modernist  
+8. jekyll-theme-modernist   <https://pages-themes.github.io/modernist/>  https://github.com/pages-themes/modernist
    - Minimalist theme with color blocks.
 
 How to use:
