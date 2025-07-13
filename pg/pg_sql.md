@@ -17,8 +17,8 @@ WHERE d.datistemplate = false
 ORDER BY pg_database_size(d.datname) DESC;
 ```
 Here datistemplate = false filters out template databases like template0 and template1.
+
 ### Postgres Schemas
-```
 In Postgres, “public” is a Default schema.  
 So, by default, Postgres users can access the "public" schema and create objects in it,  
 such as views, tables, etc.  
