@@ -8,6 +8,8 @@ https://lj.rossia.org/~tiphareth/
 
 https://habr.com/ru/articles/927580/ Codex
 
+https://news.ycombinator.com/item?id=44560662 Kiro
+
 https://habr.com/ru/companies/timeweb/articles/873430/
 
 http://lucumr.pocoo.org/2025/1/30/how-i-ai
