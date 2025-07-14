@@ -312,7 +312,7 @@ SELECT pg_terminate_backend(PID);
 ```
 
 
-##  DateTime,  timestamp и timestamptz , timezones
+##  DateTime,  timestamp и timestamptz, timezones
 
 https://habr.com/ru/articles/772954/
 ```sql
@@ -387,17 +387,20 @@ select time from tracking where time < '06-12-2019 23:00';
 https://www.postgresql.org/docs/current/functions-aggregate.html
 
 
+### Interesting SQL
+<https://tapoueh.org/blog/2018/02/find-the-number-of-the-longest-continuously-rising-days-for-a-stock/>
+
 ### Window Functions
 ```
-PostgreSQL NTILE Function
-PostgreSQL PERCENT_RANK Function
-PostgreSQL CUME_DIST Function
-PostgreSQL Sequences
-PostgreSQL LAG Function
-PostgreSQL LEAD Function
-PostgreSQL NTH_VALUE Function
-PostgreSQL LAST_VALUE Function
-PostgreSQL FIRST_VALUE Function
+NTILE Function
+PERCENT_RANK Function
+CUME_DIST Function
+Sequences
+LAG Function
+LEAD Function
+NTH_VALUE Function
+LAST_VALUE Function
+FIRST_VALUE Function
 ```
 
 #### LAG LEAD
