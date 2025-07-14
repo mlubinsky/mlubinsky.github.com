@@ -14,6 +14,15 @@ https://blog.devops.dev/10-must-have-grafana-dashboards-for-devops-engineers-299
 
 https://medium.com/@devlink/grafana-12-just-leveled-up-observability-as-code-and-dashboards-that-think-f6dd76a0dbfa
 
+
+| Widget / Feature       | Grafana 11              | Grafana 12                                                                |
+| ---------------------- | ----------------------- | ------------------------------------------------------------------------- |
+| **Table panel**        | Standard implementation | Major upgrades with react-data-grid performance boost                     |
+| **Logs Drilldown**     | Basic logs lists        | Enhanced with JSON visualization and better filtering ([Grafana Labs][1]) |
+| **Dynamic Dashboards** | Not available           | New auto-grid, conditional rendering, tabs, outlines                      |
+
+https://grafana.com/docs/grafana/latest/whatsnew/whats-new-in-v12-0  "What's new in Grafana v12.0"
+
 ### Prometheus HTTP API compatible server Python server 
 designed to statelessly connect Grafana to almost anything by implementing simple plugins.
 https://pages.fscherf.de/prometheus-virtual-metrics/  
