@@ -3,6 +3,11 @@ https://kodekloud.com/sales
 https://habr.com/ru/articles/896848/  Modeling
 
 ### Functional requirements 
+https://habr.com/ru/companies/korus_consulting/articles/928292/ Как собрать требования
+
+https://habr.com/ru/companies/sovcombank_technologies/articles/928140/
+
+
 ```
 Functional requirements are your "Users/Clients should be able to..." statements.
 Users should be able to post tweets
