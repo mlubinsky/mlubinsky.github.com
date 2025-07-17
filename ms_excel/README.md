@@ -6,6 +6,8 @@ https://medium.com/@alice.yang_10652/populate-excel-templates-with-dynamic-data-
  
 Book: https://driscollis.gumroad.com/l/reportlab/mson4qp  ReportLab: PDF Processing in Python
 
+https://medium.com/@connect.hashblock/automating-excel-cleanup-tasks-with-pandas-and-python-scripts-ed63281f1714
+
 ### Adjust header and column width
 
 ```
