@@ -1,4 +1,8 @@
 https://habr.com/ru/articles/824050/
+
+pip install Spire.XLS
+
+https://medium.com/@alice.yang_10652/populate-excel-templates-with-dynamic-data-in-python-step-by-step-guide-409a7294f67f
  
 Book: https://driscollis.gumroad.com/l/reportlab/mson4qp  ReportLab: PDF Processing in Python
 
