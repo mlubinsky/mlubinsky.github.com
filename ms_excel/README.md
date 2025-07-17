@@ -2,6 +2,14 @@ https://habr.com/ru/articles/824050/
 
 pip install Spire.XLS
 
+| Feature          | `openpyxl`                 | `Spire.XLS for Python`                        |
+| ---------------- | -------------------------- | --------------------------------------------- |
+| **Type**         | Open-source Python library | Commercial wrapper around .NET/Java library   |
+| **License**      | MIT                        | Proprietary (Free with limitations or paid)   |
+| **Platform**     | Pure Python                | .NET-based via `pythonnet` or COM             |
+| **Excel Format** | `.xlsx` only               | `.xls`, `.xlsx`, `.csv`, `.xml`, `.ods`, etc. |
+
+
 https://medium.com/@alice.yang_10652/populate-excel-templates-with-dynamic-data-in-python-step-by-step-guide-409a7294f67f
  
 Book: https://driscollis.gumroad.com/l/reportlab/mson4qp  ReportLab: PDF Processing in Python
@@ -10,7 +18,7 @@ https://medium.com/@connect.hashblock/automating-excel-cleanup-tasks-with-pandas
 
 ### Adjust header and column width
 
-```
+```python
 import pandas as pd
 from openpyxl import load_workbook
 
@@ -59,7 +67,7 @@ print(f"DataFrame with multi-line headers saved to {filename}")
 
 
 ### Add summary line after every group
-```
+```python
 import pandas as pd
 
 # Sample dataframe (assuming you have a similar structure)
@@ -131,7 +139,7 @@ the values in these extra columns should be extracted from column "D" of corresp
 ```
 
 #### ChatGPT
-```
+```python
 import pandas as pd
 import os
 import re
@@ -190,8 +198,7 @@ print("Excel file created successfully.")
 
 ```
 ### Gemini
-```
-
+```python
 import pandas as pd
 import os
 
@@ -241,7 +248,7 @@ process_excel_files(folder_path)
 ```
 ### Apply colors:
 
-```
+ 
 When I assign the background color to cell using fill() method
 the vertical and horizontal borders of the cell become invisible. How to fix it?
 
@@ -251,7 +258,7 @@ it can overwrite the cell's borders, making them appear invisible.
 To fix this, you need to explicitly set the cell's borders after applying the fill.
 Here's how you can do it:
 
-
+```python
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Border, Side
 
@@ -291,7 +298,7 @@ border = Border(top=side, bottom=side)
 
 ```
 
-```
+```python
 import openpyxl
 
 # Replace 'sheet_name_combined.xlsx' with your actual file name
@@ -323,7 +330,7 @@ wb.save(filename)
 
 
 ### Number of rows and columns
-```
+```python
 from openpyxl import load_workbook
 
 wb = load_workbook('your_excel_file.xlsx')
@@ -338,7 +345,7 @@ print(f"Number of columns: {number_of_columns}")
 ```
 
 ### Column with Subcolumns
-```
+```python
 from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment
@@ -369,7 +376,7 @@ ws.column_dimensions['C'].width = 15
 # Save the workbook
 wb.save('excel_with_sub_columns.xlsx')
 
-
+```
 Explanation:
 ws.merge_cells('B1:C1'): This merges cells B1 and C1 to create the main header that spans two columns.
 ws['B1'].alignment = Alignment(horizontal='center', vertical='center'): This centers the text inside the merged cell.
@@ -380,7 +387,7 @@ Result:
 Cell B1 and C1 will be merged into a single "Main Header".
 Cells B2 and C2 will contain "Sub-Column 1" and "Sub-Column 2", respectively.
 This creates an Excel file where you have a merged main header with two sub-columns programmatically.
-```
+ 
 
 ### Pandas Datafdame to MS Excel Worksheet (openpyxl)
 https://openpyxl.readthedocs.io/en/stable/pandas.html
@@ -389,7 +396,7 @@ https://stackoverflow.com/questions/36657288/copy-pandas-dataframe-to-excel-usin
 
 ## Sort worksheets (openpyxl):
 ChatGPT
-```
+```python
 from openpyxl import load_workbook
 
 # Load the workbook
@@ -411,8 +418,8 @@ wb.save(workbook_path)
 
 print("Worksheets sorted successfully!")
 ```
-Gemini
-```
+#### Gemini
+```python
 from openpyxl import load_workbook
 
 def sort_worksheets(filename):
@@ -441,14 +448,14 @@ sort_worksheets('your_workbook.xlsx')
 ```
 
 ## openpyxl: update specific cells based on certain conditions
-```
+
 Next code iterates over the rows of the active sheet
 starting from the second row (assuming the first row contains headers).
 
 For each row, it checks the value in the second column (index 1)
 and updates the value in the third column (index 2) based on the condition.
 
-
+```python
 from openpyxl import load_workbook
 
 # Load the Excel workbook
@@ -467,7 +474,7 @@ workbook.save('updated_data.xlsx')
 ```
 
 ###  requests.post() ChatGPT submit_job.py
-```
+```python
 import requests
 import json
 
@@ -493,7 +500,7 @@ if __name__ == "__main__":
 ```
 
 ### requests.get() ChatGPT  monitor_jobs.py
-```
+```python
 import requests
 import time
 
@@ -554,7 +561,7 @@ if __name__ == "__main__":
 
 
 ### requests.post() requests.get() gemini
-```
+```python
 import requests
 import time
 
@@ -603,7 +610,7 @@ if __name__ == "__main__":
 ```
 
 ### requests.post() submit_job.py
-```
+```python
 import requests
 
 def submit_job():
@@ -625,7 +632,7 @@ if __name__ == "__main__":
 ```
 
 ### requests.get(url) check_job_status.py
-```
+```python
 import requests
 import time
 import subprocess
@@ -669,7 +676,7 @@ if __name__ == "__main__":
 ```
 
 ### requests.get(url) check_job_status_2.py
-```
+```python
 import requests
 import time
 import subprocess
@@ -731,14 +738,13 @@ if __name__ == "__main__":
 
 ###
 
-```
 There is Python program which from time to time sends HTTP  POST call to server using Pythons requests library.
 This HTTP call push some task into the server queue, the server returns back the assigned job_id.
 There is another HTTP API call which allows to check the status for the given job_id.
 When status=True it means the given job is completed.
 This job creates the folder named by job_id and put some files into it.
 I need to launch another python program after the job is completed.
-
+```python
 def submit_job():
     # Replace with actual URL for submitting jobs
     url = "http://your-server-address/submit-job"
@@ -767,7 +773,7 @@ while True:
 
 ```
 Yet another code:
-```
+```python
 import requests
 import time
 import subprocess
@@ -810,7 +816,7 @@ if __name__ == "__main__":
 ```
 
 ### Monitor 3
-```
+```python
 
 import os
 import time
@@ -865,7 +871,7 @@ if __name__ == "__main__":
 
 
 ### Monitor folder for new exe files:
-```
+```python
 import time
 import os
 from datetime import datetime
@@ -903,7 +909,7 @@ while True:
 ```
 
 ### Monitor folder for new exe files:
-```
+```python
 import os
 import time
 from datetime import datetime
@@ -953,7 +959,7 @@ if __name__ == "__main__":
 https://stackoverflow.com/questions/78173460/how-to-divide-row-by-row-for-the-same-float-column-in-python-pandas
 
 ### Divide row by row with handling 0/0 as 1 (version 0)
-```
+```python
 import pandas as pd
 
 # Example DataFrame
@@ -996,7 +1002,7 @@ result_df.index = result_df.index.map(str)
 
 
 ### Divide row by row with handling 0/0 as 1 (version 1)
-```
+```python
 import pandas as pd
 import numpy as np  # Import NumPy for division by zero handling
 
@@ -1052,7 +1058,7 @@ print(new_df)
 
 
 ### Divide row by row with handling 0/0 as 1 (version 2)
-```
+```python
 import pandas as pd
 import numpy as np  # Import NumPy for division by zero handling
 
@@ -1091,7 +1097,7 @@ else:
 
 
 ###   Apply 360 modulo to rows where metric name starts from specific pattern V1
-```
+```python
 import pandas as pd
 
 # Sample DataFrame
@@ -1119,7 +1125,7 @@ print(df)
 
 
 ### Apply 360 modulo to rows where metric name starts from specific pattern V2
-```
+```python
 import pandas as pd
 
 def update_dataframe(df):
@@ -1166,7 +1172,7 @@ print(df_modified)
 
 
 ### Apply modulo 360  to all columns containing the target string in their names
-```
+```python
 import pandas as pd
 
 def apply_modulo_360(df, target_str):
@@ -1208,7 +1214,7 @@ print(df_modified)
 
 
 ### Rename df columns
-```
+```python
 # Create a sample DataFrame with prefixed columns
 data = {'XXX_col1': [1, 2, 3], 'XXX_col2': [4, 5, 6]}
 df = pd.DataFrame(data)
@@ -1225,14 +1231,14 @@ df.columns = new_column_names
 ```
 
 ### Extract val from dataframe with 1 row
-```
+ 
 There are two main ways to extract values for specific columns from a pandas DataFrame with exactly one row into a Python variable:
 
 Method 1: Using .iloc[0]
 
 This method uses integer-based indexing to access the first (and only) row of the DataFrame. You can then access specific columns by their names.
 
-Python
+```python
 import pandas as pd
 
 # Create a DataFrame with one row
@@ -1246,12 +1252,15 @@ col2_value = df.iloc[0]['col2']
 # Print the extracted values
 print(f"col1 value: {col1_value}")
 print(f"col2 value: {col2_value}")
-Use code with caution.
-Method 2: Using .squeeze()
 
-The .squeeze() method attempts to convert the DataFrame to a Series (a one-dimensional labeled array), effectively returning the single row as a dictionary-like object. You can then access columns by their names.
+ 
+# Method 2: Using .squeeze()
 
-Python
+# The .squeeze() method attempts to convert the DataFrame to a Series
+# (a one-dimensional labeled array), effectively returning the single row
+# as a dictionary-like object. You can then access columns by their names.
+
+ 
 # Extract values using `.squeeze()`
 single_row_dict = df.squeeze()
 col1_value = single_row_dict['col1']
@@ -1266,7 +1275,7 @@ print(f"col2 value: {col2_value}")
 
 ### rows division 
 pandas 1.0.5
-```
+```python
     ddd = {
     'A': ['a', 'b'],
     'X': [100.0, 20.0],
@@ -1282,10 +1291,6 @@ pandas 1.0.5
 # below we eliminate 1st column, because it is not float , but string
     axis0 = df1.iloc[:, 1:].div(df2.iloc[:, 1:], axis=0) 
     axis1 = df1.iloc[:, 1:].div(df2.iloc[:, 1:], axis=0)
-
-
-
-
 
 ddd = {'A': ['a', 'b'], 'X': [100.0, 20.0], 'Y': [6.0, 2.0]}
 df = pd.DataFrame(ddd)
@@ -1330,7 +1335,7 @@ else:
 
 
 ### Calc ratio 1
-```
+```python
 import pandas as pd
 
 
@@ -1371,7 +1376,7 @@ print(result)
 ```
 ### Calc ratio 2
 
-```
+```python
 import pandas as pd
 
 # Sample DataFrame
@@ -1447,8 +1452,8 @@ new_df['REF'] = df['REF']
 
 ```
 ### X
-```
-I have pythons pandas dataframe with following columns : column A (string datatype) and many other columns with float datatype.
+ 
+There id pandas dataframe with following columns : column A (string datatype) and many other columns with float datatype.
 Also I have python list named N which contains  the tuples.
 Tuple has 2 elements.
 
@@ -1457,7 +1462,7 @@ Please create new dataframe with the same columns as dataframe above
 Take from original dataframe  only rows where value in column A  exists in python list on tuples
 The  float columns in new 
 dataframe should be calculated as division of  REF column by float column in original dataframe .
-
+```python
 import pandas as pd
 
 # Create a DataFrame
@@ -1512,7 +1517,7 @@ EndTOW: 166780
 
 
 ### MIN / MAX PER GROUP
-```
+```python
 import pandas as pd
 
 # Sample DataFrame (replace with your actual data)
@@ -1535,7 +1540,7 @@ print(grouped_df)
 
 ### Min/Max per group again
 
-```
+```python
 # Assuming df is your pandas DataFrame with columns 'date', 'dut', and 'target'
 
 # Find the index of the row with the minimum value in the 'target' column for each date
@@ -1561,7 +1566,7 @@ result_df = result_df[['date', 'dut_min', 'target_min', 'dut_max', 'target_max']
 ```
 
 ### Find dates with min and max  value per date (1)
-```
+```python
 import pandas as pd
 
 # Sample DataFrame (replace with your actual data)
@@ -1602,7 +1607,7 @@ print("Date with maximum number:", date_max)
 ```
 
 ### Find uniq numbers per group
-```
+```python
 import pandas as pd
 
 # Sample DataFrame
@@ -1623,7 +1628,7 @@ print(name_date_counts)
 
 
 ### Find names with min and max values per date 1
-```
+```python
 import pandas as pd
 
 # Sample DataFrame
@@ -1653,7 +1658,7 @@ print(agg_df)
 ```
 
 ### Find names with min and max values per date 2
-```
+```python
 import pandas as pd
 
 # Sample DataFrame (replace with your actual data)
@@ -1693,7 +1698,7 @@ print(min_max_df)
 
 To have all names with the minimum and maximum values  per day are included,
 
-```
+```python
 import pandas as pd
 
 # Sample DataFrame
@@ -1727,7 +1732,7 @@ print(agg_df)
 ```
 
 ### Read some columns only:
-```
+```python
 import pandas as pd
 
 # Path to your CSV file
@@ -1744,7 +1749,7 @@ print(df)
 ```
 
 ### Parse string and populate new columns
-```
+```python
 import pandas as pd
 import re  # Import regular expressions library
 
@@ -1767,7 +1772,7 @@ print(df)
 ```
 
 ### Parse string and populate new columns 2
-```
+```python
 import pandas as pd
 import re
 
@@ -1802,7 +1807,7 @@ print(df)
 ```
 
 #### Create dictionary from list of tuples
-```
+```python
 list_of_tuples = [('a', 1), ('b', 2), ('c', 3)]
 dictionary_from_list = dict(list_of_tuples)
 
@@ -1814,7 +1819,7 @@ dictionary_from_list = {t[0]: t[1:] for t in list_of_tuples}
 ```
 
 ### Division in pandas with replacing None
-```
+```python
 import pandas as pd
 import numpy as np  # Import NumPy for missing value handling
 
@@ -1841,7 +1846,7 @@ new_df = new_df.fillna(None)  # Uncomment if you prefer None over NaN
 print(new_df)
 ```
 ### Safe Division in pandas 2 using apply()
-```
+```python
 import pandas as pd
 import numpy as np
 
@@ -1896,7 +1901,7 @@ https://stackoverflow.com/questions/44234905/customized-series-title-in-openpyxl
 
 
 ###  Merging cells
-```
+```python
 from openpyxl import Workbook
 
 # Create a new workbook and worksheet
@@ -1934,7 +1939,6 @@ workbook.save("dict_to_excel_merged.xlsx")
 ```
 
 ### Cell colors:
-
 ```
 Both Color and PatternFill classes in the openpyxl.styles module are used for formatting cells in Excel spreadsheets,
 but they target different aspects of cell appearance:
@@ -2016,7 +2020,7 @@ Variations:
 
 ```
 #### PatternFill example
-```
+```python
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill
 
@@ -2045,7 +2049,7 @@ for cell, (value, pattern) in data_dict.items():
 workbook.save("patterned_cells.xlsx")
 ```
 #### Color example
-```
+```python
 from openpyxl import Workbook
 from openpyxl.styles import Color, Fill
 
@@ -2077,7 +2081,7 @@ workbook.save("colored_cells.xlsx")
 
 ### LineChart Example 0:
 
-```
+```python
 import random
 from openpyxl import Workbook
 from openpyxl.chart import LineChart, Reference
@@ -2129,7 +2133,7 @@ workbook.save("line_chart.xlsx")
 
 
 ### Example 1
-```
+```python
 from openpyxl import Workbook
 from openpyxlchart import LineChart
 
@@ -2153,7 +2157,7 @@ ws.add_chart(chart, "E5")  #の位置 (E5) to specify the chart location
 ```
 ### Example 2
 
-```
+```python
 import openpyxl
 from openpyxlchart import LineChart
 
