@@ -10,6 +10,8 @@ https://www.astronomer.io/ebooks/apache-airflow-best-practices-etl-elt-pipelines
 
 https://habr.com/ru/articles/873668/  Airflow in Docker on Mac
 
+https://habr.com/ru/companies/beget/articles/928712/  Airflow, Superset and ClickHouse
+
 https://towardsdatascience.com/airflow-data-intervals-a-deep-dive-15d0ccfb0661
 
 ```
