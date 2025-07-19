@@ -1,3 +1,7 @@
+git config --global user.name "Ваше Имя"
+git config --global user.email "you@example.com"
+
+
 https://news.ycombinator.com/item?id=42728916
 
 https://habr.com/ru/articles/813399/ How to make useful github front page
