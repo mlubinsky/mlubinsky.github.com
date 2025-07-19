@@ -2,6 +2,7 @@
 git config --global user.name "Ваше Имя"
 git config --global user.email "you@example.com"
 ```
+https://habr.com/ru/articles/928532/
 
 https://news.ycombinator.com/item?id=42728916
 
