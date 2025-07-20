@@ -6,6 +6,8 @@ https://habr.com/ru/companies/selectel/articles/702416/
 
 https://habr.com/ru/companies/selectel/articles/848266/
 
+https://www.youtube.com/watch?v=zkCiCbxGcyc&list=PLGVZCDnMOq0qi19dNwAO6KxWmMqXppGpz&index=32
+
 https://habr.com/ru/companies/alfa/articles/808711/
 
 CLTV (Customer LifeTime Value)
