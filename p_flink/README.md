@@ -1,3 +1,5 @@
+https://habr.com/ru/articles/929222/  Flink 2.0
+
 https://www.udemy.com/course/apache-flink-relational-programming-using-table-api-and-sql/learn/lecture/27391388
 
 https://www.waitingforcode.com/apache-flink
