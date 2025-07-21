@@ -1,8 +1,12 @@
 https://habr.com/ru/articles/824050/
 
-https://medium.com/top-python-libraries/export-python-tables-to-pdf-with-professional-formatting-without-excel-a21153770120
+
 
 ### Create PDF using reportlab
+Book: https://driscollis.gumroad.com/l/reportlab/mson4qp  ReportLab: PDF Processing in Python
+
+https://medium.com/top-python-libraries/export-python-tables-to-pdf-with-professional-formatting-without-excel-a21153770120
+
 ```python
 import pandas as pd
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
@@ -30,7 +34,7 @@ print("PDF with fully centered table and data created.")
 ```
 
 
-
+### MS Excel with Python
 pip install Spire.XLS
 
 | Feature          | `openpyxl`                 | `Spire.XLS for Python`                        |
@@ -43,7 +47,7 @@ pip install Spire.XLS
 
 https://medium.com/@alice.yang_10652/populate-excel-templates-with-dynamic-data-in-python-step-by-step-guide-409a7294f67f
  
-Book: https://driscollis.gumroad.com/l/reportlab/mson4qp  ReportLab: PDF Processing in Python
+
 
 https://medium.com/@connect.hashblock/automating-excel-cleanup-tasks-with-pandas-and-python-scripts-ed63281f1714
 
