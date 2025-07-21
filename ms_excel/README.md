@@ -1,5 +1,34 @@
 https://habr.com/ru/articles/824050/
 
+https://medium.com/top-python-libraries/export-python-tables-to-pdf-with-professional-formatting-without-excel-a21153770120
+```python
+import pandas as pd
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
+from reportlab.lib.pagesizes import A4
+
+# Load data
+df = pd.read_csv("inventory.csv")
+data = [df.columns.tolist()] + df.values.tolist()
+
+# Create PDF
+doc = SimpleDocTemplate("centered_full.pdf", pagesize=A4)
+
+# Create table
+table = Table(data)
+
+# Center text + center table
+table.hAlign = 'CENTER'  # Center the table block on the page
+table.setStyle(TableStyle([
+    ('ALIGN', (0, 0), (-1, -1), 'CENTER')  # Center-align cell content
+]))
+
+# Build PDF
+doc.build([table])
+print("PDF with fully centered table and data created.")
+```
+
+
+
 pip install Spire.XLS
 
 | Feature          | `openpyxl`                 | `Spire.XLS for Python`                        |
