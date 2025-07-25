@@ -34,7 +34,6 @@ use warehouse PROD_REPORTING;
 alter warehouse PROD_REPORTING set
    warehouse_size    = MEDIUM;
 
-
 alter warehouse PROD_REPORTING set
     warehouse_size    = MEDIUM
     min_cluster_count = 1
@@ -55,7 +54,7 @@ My understanding is that a database is just an organizational partition on top o
 with stuff like permissions. Your scaling would be handled with warehouses.
 ```
 
-### SQL
+### SQL Reference
 <https://docs.snowflake.net/manuals/sql-reference-commands.html>
 
 ### Stream
