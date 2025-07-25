@@ -1,25 +1,112 @@
+## Snowflake
+Book
+<https://www.amazon.com/Snowflake-Definitive-Architecting-Designing-Deploying/dp/1098103823/> 
+
+### WDH
+```
+Virtual Warehouse consists of several servers,
+and each server is a computer with (currently) eight virtual CPUs, memory and SSD storage.
+When a query is executed, data is read from Remote Storage into Local Storage (SSD),
+acting as a data cache.  
+
+When created, a Virtual Warehouse comprises a cluster of servers that work together as a single machine and are sized as simple T-Shirt sizes.
+
+SIZE     NODES       VCPUs
+XSMALL  1            8
+SMALL   2            16
+MEDIUM  4            32
+LARGE   8            64 
+XLARGE  16           128
+X2LARGE 32           256
+...
+X6LARGE
+```
+```sql
+create warehouse PROD_REPORTING with
+       warehouse_size     = SMALL
+       auto_suspend        = 600
+       auto_resume         = true
+       initially_suspended = true
+       comment = 'PROD Reporting Warehouse';
+
+use warehouse PROD_REPORTING;
+
+alter warehouse PROD_REPORTING set
+   warehouse_size    = MEDIUM;
+
+
+alter warehouse PROD_REPORTING set
+    warehouse_size    = MEDIUM
+    min_cluster_count = 1
+    max_cluster_count = 5
+    scaling_policy = ‘STANDARD’;
+```
+
+```
+Warehouses  and databases  are not the same thing within Snowflake.  
+A database in Snowflake really just represents a storage partition,  
+while warehouses are compute resources.
+
+You can have multiple warehouses processing data in the same “database” concurrently. 
+For example, you can have a “segment” warehouse writing to the “raw” database 
+at the same time a “stitch” warehouse is writing to the “raw” database. 
+I am not aware of any scaling considerations with “databases” within Snowflake. 
+My understanding is that a database is just an organizational partition on top of the storage to help
+with stuff like permissions. Your scaling would be handled with warehouses.
+```
+
+### SQL
+<https://docs.snowflake.net/manuals/sql-reference-commands.html>
+
+### Stream
+
+### Task
+```sql
+CREATE OR REPLACE TASK x 
+WAREHAUSE = COMPUTE_WH
+SCHEDULE="USING CRON  * * 7 UTC'  # SCHEDULE='1 MINUTE'
+AS 'SQL STAREMENT'
+```
+Tree of tasks
+
+
+### Performance
+
+<https://www.analytics.today/blog/top-3-snowflake-performance-tuning-tactics>
+
+```sql
+select query_type
+,      warehouse_size
+,      warehouse_name
+,      partitions_scanned
+,      partitions_total
+,      partitions_scanned / nullifzero(partitions_total) * 100 as pct_scanned
+from sb_query_history
+where warehouse_size is not null
+and   partitions_scanned > 1000
+and   pct_scanned > 0.8
+order by partitions_scanned desc,
+         pct_scanned desc;
+```
+
+
 https://learn.snowflake.com/en/courses/OD-ESS-DNGW/  Data Engineering Workshop (Badge 5)
 
 I bought this:
 https://www.udemy.com/cart/success/1027511410/
 
-For those of you who want to learn Snowflake, I'd recommend these trainings. They are all from Snowflake and they are all free. At the end of the training you get a badge that you can display on your LinkedIn profile.
-1. Snowflake Data Engineering workshop: 
-https://lnkd.in/exZrHjti
-2. Snowflake Data Warehousing workshop: https://lnkd.in/gkHfmT6i
-3. Snowflake Data Lake workshop:
-https://lnkd.in/eFVkXgcW
 
-For a book on Snowflake I recommend Joy Avila's:
-https://lnkd.in/ewuhycqK
+1. Snowflake Data Engineering workshop:  https://lnkd.in/exZrHjti  
+2. Snowflake Data Warehousing workshop: https://lnkd.in/gkHfmT6i  
+3. Snowflake Data Lake workshop: https://lnkd.in/eFVkXgcW  
 
-If you want to take a certification, I recommend SnowPro Core certification:
+SnowPro Core certification:
 https://lnkd.in/eBWFeMjy
 
-To prepare for the Snowpro Core certification I recommend Tom Bailey's course:
+To prepare for the Snowpro Core certification - Tom Bailey's course:
 https://lnkd.in/ePuJEFYx
 
-To learn dbt I recommend this quickstart tutorial, it's free:
+To learn dbt I - it's free:
 https://lnkd.in/e6mCYPcp
 It shows you how to use dbt and it only takes an hour or two.
 
@@ -28,7 +115,7 @@ https://lnkd.in/en8R_T9t
 It teaches you how to build data transformation pipeline on Snowflake, 
 how to create unit test, how to create dbt workflow and how to create visualisation.
 
-If you want a more comprehensive course, check this one: (also free)
+More comprehensive course, check this one: (also free)
 https://lnkd.in/e_D5XapS
 It teaches you about all the basics.
 
@@ -60,7 +147,8 @@ See also JOIN, which covers the syntax for other standard join types, such as in
 
 Syntax
 The following FROM clause syntax is specific to ASOF JOIN:
-
+```
+```sql
 FROM <left_table> ASOF JOIN <right_table>
   MATCH_CONDITION ( <left_table.timecol> <comparison_operator> <right_table.timecol> )
   [ ON <table.col> = <table.col> [ AND ... ] | USING ( <column_list> ) ]
@@ -78,24 +166,7 @@ This means an update against one or more rows creates a new version of the entir
 The prior micro-partition is kept for time travel or immediately removed as required. 
 ```
 https://blog.det.life/i-spent-another-6-hours-understanding-the-design-principles-of-snowflake-heres-what-i-found-dea9fd74ae96
-### Performance
 
-https://www.analytics.today/blog/top-3-snowflake-performance-tuning-tactics
-
-```
-select query_type
-,      warehouse_size
-,      warehouse_name
-,      partitions_scanned
-,      partitions_total
-,      partitions_scanned / nullifzero(partitions_total) * 100 as pct_scanned
-from sb_query_history
-where warehouse_size is not null
-and   partitions_scanned > 1000
-and   pct_scanned > 0.8
-order by partitions_scanned desc,
-         pct_scanned desc;
-```
 
 
 ### Keyword "qualify"
@@ -110,54 +181,6 @@ https://www.analytics.today/blog/snowflake-clustering-best-practice
 
 alter table sales   cluster by (status, store_no);
 
-### WDH
-```
-Virtual Warehouse consists of several servers, and each server is a computer with (currently)
-eight virtual CPUs, memory and SSD storage.
-When a query is executed, data is read from Remote Storage into Local Storage (SSD), acting as a data cache.  
-
-When created, a Virtual Warehouse comprises a cluster of servers that work together as a single machine and are sized as simple T-Shirt sizes.
-SIZE     NODES       VCPUs
-XSMALL  1            8
-SMALL   2            16
-MEDIUM  4            32
-LARGE   8            64 
-XLARGE  16           128
-X2LARGE 32           256
-...
-X6LARGE
-
-
-create warehouse PROD_REPORTING with
-       warehouse_size     = SMALL
-       auto_suspend        = 600
-       auto_resume         = true
-       initially_suspended = true
-       comment = 'PROD Reporting Warehouse';
-
-use warehouse PROD_REPORTING;
-
-alter warehouse PROD_REPORTING set
-   warehouse_size    = MEDIUM;
-
-
-alter warehouse PROD_REPORTING set
-    warehouse_size    = MEDIUM
-    min_cluster_count = 1
-    max_cluster_count = 5
-    scaling_policy = ‘STANDARD’;
-
-```
-### Stream
-
-### Task
-
-CREATE OR REPLACE TASK x 
-WAREHAUSE = COMPUTE_WH
-SCHEDULE="USING CRON  * * 7 UTC'  # SCHEDULE='1 MINUTE'
-AS 'SQL STAREMENT'
-
-Tree of tasks
 
 ### Transient, Permanent and External tables
 
@@ -344,21 +367,7 @@ https://community.snowflake.com/s/article/Migrating-from-Redshift-to-Snowflake-i
 
 <https://medium.com/@jthandy/how-compatible-are-redshift-and-snowflakes-sql-syntaxes-c2103a43ae84>
 
-```
-Warehouses” and “databases” are not the same thing within Snowflake.
-A database in Snowflake really just represents a storage partition,
-while warehouses are compute resources.
 
-You can have multiple warehouses processing data in the same “database” concurrently. 
-For example, you can have a “segment” warehouse writing to the “raw” database 
-at the same time a “stitch” warehouse is writing to the “raw” database. 
-I am not aware of any scaling considerations with “databases” within Snowflake. 
-My understanding is that a database is just an organizational partition on top of the storage to help
-with stuff like permissions. Your scaling would be handled with warehouses.
-```
-
-
-<https://docs.snowflake.net/manuals/sql-reference-commands.html>
 
 <https://www.sigmacomputing.com/blog> . SIGMACOMPUTING
 
