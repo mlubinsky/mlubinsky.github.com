@@ -16,6 +16,15 @@ https://habr.com/ru/articles/746706/
 
 https://chaosbook.org/
 
+https://old.mccme.ru//dubna//2022/courses/kleptsyn.html
+
+https://old.mccme.ru//dubna//2023/courses/kleptsyn.html
+
+https://www.researchgate.net/scientific-contributions/Viktor-Alekseevic-Klepcyn-2060744969
+
+https://www.lektorium.tv/speaker/3276 
+Виктор Клепцын
+
 https://habr.com/ru/articles/750380/
 
 https://habr.com/ru/articles/761426/
