@@ -254,6 +254,8 @@ double findMedian() - Return the median of all elements so far.
 ### Intervals:
 https://faun.pub/intervals-coding-pattern-efa438dede8a
 
+https://emre.me/coding-patterns/merge-intervals/ . Merge intervals
+
 ### Priority queue
 https://faun.pub/priority-queue-using-heapq-9d8fccc49d51
 
@@ -354,7 +356,7 @@ https://www.youtube.com/watch?v=JtMuXmmDl9s
 
 https://towardsdatascience.com/how-to-find-all-solutions-to-the-subset-sum-problem-597f77677e45
 
-https://habr.com/ru/post/653617/
+https://habr.com/ru/post/653617/ Алгоритм поиска самой длинной подстроки-палиндрома
 
 https://habr.com/ru/post/646319/ amazon interview
 
@@ -362,13 +364,13 @@ https://malisper.me/an-algorithm-for-passing-programming-interviews/
 
 https://news.ycombinator.com/item?id=29775023
 
-https://github.com/NIteshx2/AdvancedSQL_Interview
+https://github.com/NIteshx2/AdvancedSQL_Interview Advanced SQL
 
 https://www.youtube.com/watch?v=fAAZixBzIAI . Binary Tree
 
 https://www.facebookcareers.com/DE-prep-onsite/
 
-https://www.youtube.com/watch?v=SgaN-4po_cA How I Got a Job at DeepMind as a Research Engineer
+<https://www.youtube.com/watch?v=SgaN-4po_cA> How I Got a Job at DeepMind as a Research Engineer
 
 
 https://github.com/prius/learning
@@ -411,7 +413,7 @@ https://cp-algorithms.com/index.html
 
 https://habr.com/ru/company/geekfactor/blog/585352/ 7 платформ для подготовки к техническому интервью
 
-https://www.youtube.com/watch?v=3QA4Yg4leGQ&list=RDCMUCNc-Wa_ZNBAGzFkYbAHw9eg&start_radio=1
+<https://www.youtube.com/watch?v=3QA4Yg4leGQ&list=RDCMUCNc-Wa_ZNBAGzFkYbAHw9eg&start_radio=1> Longest increasing path (Python Interview)
 
 https://liuzhenglaichn.gitbook.io/algorithm/
 
@@ -431,8 +433,6 @@ https://www.pankajtanwar.in/coding-diary
 https://www.java67.com/2018/04/21-string-programming-and-coding-interview-questions-answers.html
 
 https://www.educative.io/courses/grokking-the-coding-interview?affiliate_id=5073518643380224
-
-https://emre.me/coding-patterns/merge-intervals/ . Merge intervals
 
 https://www.interviewbit.com/coding-interview-questions/
 
@@ -459,17 +459,11 @@ https://redquark.org/blogs
 
 <https://www.bitdegree.org/user/course/data-structures-and-algorithms>
 
-
-
 ### Path from root to given node
 
 https://www.devglan.com/datastructure/print-path-from-root-to-node-binary-tree
 
 https://www.techiedelight.com/print-all-paths-from-root-to-leaf-nodes-binary-tree/
-
-
-
-
 
 #### Topological sort
 
@@ -511,7 +505,7 @@ Get all of its children from the graph.
 Decrement the in-degree of each child by 1.
 If a child’s in-degree becomes 0, add it to the sources Queue.
 Repeat these steps, until the source Queue is empty.
-
+```python
 from collections import deque
 from typing import List
 
@@ -551,64 +545,13 @@ class Solution:
         # if sorted_list does not contain all the courses, there is a cyclic dependency between courses
         # scheduling is not possible if there is a cyclic dependency
         return len(sorted_list) == numCourses
+```
+
 Time Complexity: O(V + E) where V is the total number of courses and E is the total number of prerequisites.
 
 Space Complexity: O(V + E) since we are storing all of the prerequisites for each course in an adjacency list.
-```
 
 
-
-
-
-
-
-
-```
-Section		Score	Total
-
-Inspect			
- 
-Did I explicilty state what the input was?		1
-Did I clarify what the desired output was?		1
-Did I construct a simple example that could be solved by hand?		2
-Did I write out all Axioms?		1
-Did I write out and derive all intelligent assumptions?		1
- 
-Strategy			
- 
-Did I brainstorm a simple solution?		2
-Did I analyze the runtime?		2
-Did I analyze the space requirement?		1
-Did I ask if the input problem set would be small enough for this to suffice?
-Was I able to come up with a better more sophisticated solution?		4
-Did I analyze the time complexity of this solution?		2
-Did I analyze the space complexity of this solution?		2
-Did I compare it directly to my initial simple solution?		1
-Was I confident when I started coding?		4
-Did I think through all approaches that come to mind?		5
-Did I explicitly write out my desired strategy?		4
-Did I explicitly consider base cases?		2
-How well did I handle getting stuck?		5
-
-Code	
-
-How cleanly was my code written?		2
-Did I explicitly check for any off-by-one errors?		2
-Was I able to predict what funtions I would end up implementing ?		1
-Did my brainstormed strategy solve the problem?		3
-How smooth was the coding process?		2
-Was I able to talk through my code?		5
-Did I leverage any interesting functions in my code?		2
-
-Review			
-
-Did I prove my runtime complexity?		2
-Did I prove my spacetime complexity?		2
-Did I write up different test cases and process them?		6
-Did I go line by line, no matter how trivial?		2
-DId I have to make any changes when reviewing my code?		2
- 
-```
 How to use this rubric: https://3dtrends.substack.com/p/the-coding-interview-pt-1-inspect
 
 Prepping for an interview in big tech and need some guidance? Join the discord: https://discord.gg/NgJXgkbgd6
@@ -642,10 +585,6 @@ https://github.com/thundergolfer/interview-with-python/blob/master/solutions/pyt
 
 #### Given strings S and T find the min window in S which contains all chars in T
 
-???
- 
-
-
 
 ### Github
 
@@ -669,11 +608,11 @@ https://github.com/lilianweng/LeetcodePython
 
 <https://github.com/bt3gl/Python-and-Algorithms-and-Data-Structures/>
 
-https://github.com/BitPunchZ/Leetcode-in-python-50-Algorithms-Coding-Interview-Questions/
+<https://github.com/BitPunchZ/Leetcode-in-python-50-Algorithms-Coding-Interview-Questions/>
 
 
 
-https://github.com/StBogdan/CTCI_python Cracking code interview
+<https://github.com/StBogdan/CTCI_python> Cracking code interview
 
 https://github.com/StBogdan/PythonWork
 
@@ -978,8 +917,6 @@ Unite(X, Y) — объединить два множества, в которы�
 
 
 https://www.advancedalgorithms.com/ru. Advanced algo (ru)
-
-
 
 <https://m.stopa.io/10-offers-100-days-the-journey-16a0407b8d95> interview
 <https://habr.com/ru/post/454264/> . Inteview
