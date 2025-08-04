@@ -59,6 +59,27 @@ https://news.ycombinator.com/item?id=23904000
 
 <https://news.ycombinator.com/item?id=22011743>
 
+### URL shortener system design 
+
+https://javatechonline.com/url-shortening-system-design-tiny-url/
+
+https://habr.com/ru/companies/selectel/articles/747738/ URL shortener
+
+https://habr.com/ru/articles/927056/
+
+ https://habr.com/ru/articles/746602/ URL shortener 
+
+### TOP K problem
+
+https://www.youtube.com/watch?v=kx-XDoPjoHw Top K Problem (Heavy Hitters)
+
+https://www.youtube.com/watch?v=1lfktgZ9Eeo Top K Problem Again
+
+https://www.youtube.com/watch?v=nQpkRONzEQI Top K Problem Again Again
+
+Design a system that can show the top 10 most popular songs over the last 10 seconds on the homepage of a music streaming service:
+https://zknill.io/posts/streaming-data-aggregation/
+
 
 ### Ads Clicks Aggregator Design
 
@@ -71,6 +92,24 @@ https://medium.com/@nvedansh/system-design-ad-click-event-aggregation-8fb6aa7817
 https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator
 
 ### System design interview
+
+https://habr.com/ru/articles/900396/ System design interview Part 5 
+
+https://betterengineers.substack.com/p/data-partitioning-and-sharding
+
+https://www.youtube.com/watch?v=cr6p0n0N-VA  design / build Whats-UP
+
+https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator
+
+https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery
+
+https://www.youtube.com/watch?v=kIcq1_pBQSY Facebook System Design Interview: Design an Analytics Platform (Metrics & Logging)
+
+https://habr.com/ru/companies/bothub/articles/812265/  System design interview
+
+https://habr.com/ru/companies/yandex_praktikum/articles/834230/ System design interview
+
+https://habr.com/ru/companies/ods/articles/828772/
 
 https://habr.com/ru/articles/893548/
 
@@ -93,3 +132,56 @@ donnemartin https://github.com/donnemartin/system-design-primer
 https://www.amazon.com/System-Design-Interview-Insiders-Guide-ebook-dp-B08B3FWYBX/dp/B08B3FWYBX/ 
 
 <http://www.acodersjourney.com/2018/07/system-design-interview-load-balancing/>
+
+### System design 
+
+https://github.com/madd86/awesome-system-design
+
+System Design:
+👉 Byte Byte Go by Alex Xu - https://lnkd.in/eEGZ-3mY
+👉 Byte Sized Design by Alex Nguyen - https://lnkd.in/e7yxQJf7
+👉 System Design One by Neo K. - https://lnkd.in/ePa9WCGx
+👉 Systems Design Challenges by Ricardo A. Morales - https://lnkd.in/eSX6kdb3
+
+https://habr.com/ru/articles/769018/ event driving architect
+
+https://github.com/ByteByteGoHq/system-design-101
+
+https://habr.com/ru/companies/otus/articles/765014/
+
+https://www.youtube.com/watch?v=mCM6QVHD08c
+
+https://habr.com/ru/companies/otus/articles/764902/ Redis Memcahed
+
+https://www.youtube.com/watch?v=o5n85GRKuzk Design Twitter - System Design Interview
+
+https://systemdesign.one/system-design-interview-cheatsheet/
+
+https://www.youtube.com/watch?v=_K-eupuDVEc  Google system design interview: Design Spotify
+
+System Design interviews until I found these 10 articles.
+
+1. URL shortener or TinyURL: https://lnkd.in/gJPWZsX3
+
+2. Social media app like Twitter: https://lnkd.in/guParNhY
+
+3. File sharing service like Dropbox: https://lnkd.in/gnSQ6rAd
+
+4. Video streaming service like Netflix: https://lnkd.in/gnHSyCj8
+
+5. Autocomplete feature of Google: https://lnkd.in/g3VFcaYN
+
+6. Messaging app like WhatsApp: https://lnkd.in/g5zJa_4W
+
+7. Online document editor like Google docs: https://lnkd.in/gBvztEqV
+
+8. Proximity service like Uber: https://lnkd.in/grtPbr6k
+
+9. Hotel booking service like Airbnb: https://lnkd.in/gWjrGwCM
+
+10. Web crawler: https://lnkd.in/gTkfCH8U
+
+✅ 𝐒𝐲𝐬𝐭𝐞𝐦 𝐃𝐞𝐬𝐢𝐠𝐧 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰
+👉 Arslan Ahmad's Grokking the System Design Interview - It has step-by-step discussion and good case studies on system design (https://lnkd.in/dXywra2R)
+👉 Alex Xu's System Design Interview course on ByteByteGo (https://lnkd.in/d6yRpRvy) - It covers all the content from his famous book (Vol 1 & Vol 2) System Design Interview
+👉 Clement Mihailescu #SystemsExpert (https://lnkd.in/d-5mSpfw) videos to know how real-life System Design Interviews go
