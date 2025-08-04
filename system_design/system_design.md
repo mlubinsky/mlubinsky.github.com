@@ -5,11 +5,13 @@
 <https://news.ycombinator.com/item?id=44779428>
 
 ### System design
-<https://imply.io/post/analytics-reference-architecture-for-iot>  Analytics refernce architecture for iot
+<https://imply.io/post/analytics-reference-architecture-for-iot>  Analytics refernce architecture for IoT
 
 https://animeshgaitonde.medium.com/system-design-building-tiktok-style-video-feed-for-100-million-users-2b3e332678d8
 
 https://github.com/DovAmir/awesome-design-patterns
+
+https://habr.com/ru/companies/piter/articles/461283/
 
 https://habr.com/ru/articles/888202/
 
