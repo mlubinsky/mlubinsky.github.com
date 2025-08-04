@@ -7,6 +7,9 @@
 ### System design
 <https://imply.io/post/analytics-reference-architecture-for-iot>  Analytics refernce architecture for IoT
 
+
+<https://yusufaytas.com/system-design-interviewing-tips/>
+
 <https://animeshgaitonde.medium.com/system-design-building-tiktok-style-video-feed-for-100-million-users-2b3e332678d8>
 
 <https://github.com/DovAmir/awesome-design-patterns>
