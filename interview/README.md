@@ -505,10 +505,10 @@ Get all of its children from the graph.
 Decrement the in-degree of each child by 1.
 If a child’s in-degree becomes 0, add it to the sources Queue.
 Repeat these steps, until the source Queue is empty.
+
 ```python
 from collections import deque
 from typing import List
-
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
@@ -573,17 +573,8 @@ https://github.com/BitPunchZ/Leetcode-in-python-50-Algorithms-Coding-Interview-Q
 
 https://www.udemy.com/course/master-the-coding-interview-big-tech-faang-interviews
 
-
 <https://www.udemy.com/11-essential-coding-interview-questions/?couponCode=AMAZON2>
 
-
-
-
-#### All permutation of the string
-
-https://github.com/thundergolfer/interview-with-python/blob/master/solutions/python/string-permutations.py
-
-#### Given strings S and T find the min window in S which contains all chars in T
 
 
 ### Github
@@ -609,8 +600,6 @@ https://github.com/lilianweng/LeetcodePython
 <https://github.com/bt3gl/Python-and-Algorithms-and-Data-Structures/>
 
 <https://github.com/BitPunchZ/Leetcode-in-python-50-Algorithms-Coding-Interview-Questions/>
-
-
 
 <https://github.com/StBogdan/CTCI_python> Cracking code interview
 
@@ -656,6 +645,14 @@ https://habr.com/ru/post/550088/ interview
 
 ### String Algo
 
+<https://stackoverflow.com/questions/41515081/algorithm-find-all-permutations-of-string-a-in-string-b>
+
+#### All permutation of the string
+
+https://github.com/thundergolfer/interview-with-python/blob/master/solutions/python/string-permutations.py
+
+#### Given strings S and T find the min window in S which contains all chars in T
+
 https://paddy3118.blogspot.com/2021/02/longest-common-substring-investigation.html. longest common substr
 
 
@@ -675,7 +672,6 @@ https://medium.com/better-programming/cracking-the-amazon-interview-cf6a6c5f954a
 
 https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/
 
-
 https://www.youtube.com/watch?v=2yWf3TrJ6Xs&feature=youtu.be
 
 <https://habr.com/ru/post/499394/>
@@ -691,7 +687,6 @@ https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw/videos
 <https://medium.com/swlh/binary-search-cheat-sheet-for-coding-interviews-9c5425af357e>
 
 
-
 <https://habr.com/ru/post/503602/>
 
 <https://crunchskills.com/binary-tree-interview-questions-and-practice-problems/>
@@ -704,9 +699,10 @@ https://medium.com/dev-genius/15-binary-tree-coding-problems-from-faang-intervie
 https://medium.com/@srajaninnov/find-the-diameter-of-a-binary-tree-efc45b9129a7
 
 
-<https://habr.com/ru/company/spice/blog/478250/>
+<https://habr.com/ru/company/spice/blog/478250/> Выпуск#27: ITренировка — актуальные вопросы и задачи от ведущих компаний
 
-<https://habr.com/ru/company/spice/blog/479320/>
+
+<https://habr.com/ru/company/spice/blog/479320/> Выпуск#28: ITренировка — актуальные вопросы и задачи от ведущих компаний
 
 
 
@@ -722,7 +718,8 @@ https://medium.com/@srajaninnov/find-the-diameter-of-a-binary-tree-efc45b9129a7
 
 <https://habr.com/ru/post/467371/> Разбор задачи с собеседования Google: поиск соотношения
 
-<https://www.youtube.com/watch?v=xYBKMV92YrM>
+<https://www.youtube.com/watch?v=xYBKMV92YrM> 
+LeetCode 05 - Longest Palindromic Substring in Python
 
 <https://classicproblems.com/>
 
@@ -736,7 +733,7 @@ https://medium.com/@srajaninnov/find-the-diameter-of-a-binary-tree-efc45b9129a7
 
 <https://habr.com/ru/company/skillbox/blog/462979/>
 
-<https://www.youtube.com/watch?v=EuPSibuIKIg>
+<https://www.youtube.com/watch?v=EuPSibuIKIg> Google Coding Interview With A Competitive Programmer
 
 <https://www.youtube.com/channel/UCaYQbIciTyBFMTRE2Zp81tw>
 
@@ -778,8 +775,6 @@ https://runestone.academy/runestone/books/published/pythonds/index.html#problem-
 https://news.ycombinator.com/item?id=25519718 Interview advice that got me offers 
 
 https://www.youtube.com/watch?v=kbx7xpSKBaI climbing stairs
-
-
 
 
 https://betterprogramming.pub/top-5-hardest-coding-questions-from-recent-faang-interviews-d46bcb4dd8dc
@@ -840,7 +835,7 @@ https://realpython.com/python-hash-table/
 
 Hard Interview Questions in FAANG - 4 | Live Problem Solving | Interview Cracking Series
 
-https://www.youtube.com/watch?v=8Uk2e7cCuyw
+<https://www.youtube.com/watch?v=8Uk2e7cCuyw> Hard Interview Questions in FAANG - 4 | Live Problem Solving | Interview Cracking Series
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
 
@@ -858,7 +853,9 @@ https://www.youtube.com/watch?v=8Uk2e7cCuyw
 
 ### disjoint set union (DSU) или Union-Find.
 
-https://python.plainenglish.io/union-find-data-structure-in-python-8e55369e2a4f
+<https://python.plainenglish.io/union-find-data-structure-in-python-8e55369e2a4f>
+
+<https://www.geeksforgeeks.org/union-find/> union-find (disjoint-set)
 
 <https://habr.com/ru/post/104772/>
 создать быструю структуру, которая поддерживает следующие операции:
@@ -873,7 +870,7 @@ Unite(X, Y) — объединить два множества, в которы�
 
 <https://stackoverflow.com/questions/2936213/explain-how-finding-cycle-start-node-in-cycle-linked-list-work>
 
-<https://stackoverflow.com/questions/41515081/algorithm-find-all-permutations-of-string-a-in-string-b>
+
 
 <https://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/>
 
@@ -887,7 +884,7 @@ Unite(X, Y) — объединить два множества, в которы�
  
 
 
-<https://www.geeksforgeeks.org/union-find/> union-find (disjoint-set)
+
 
 <https://habr.com/ru/company/edison/blog/481304/>
 
