@@ -2,6 +2,12 @@ https://kodekloud.com/sales
 
 https://habr.com/ru/articles/896848/  Modeling
 
+### Documenting software architecture
+
+https://www.innoq.com/en/blog/brief-introduction-to-arc42/
+
+<https://herbertograca.com/2019/08/12/documenting-software-architecture/>
+
 ### Functional requirements 
 https://habr.com/ru/companies/korus_consulting/articles/928292/ Как собрать требования
 
@@ -63,15 +69,6 @@ The system should be low latency, rendering feeds in under 200ms
 ```
 
 
-### Ads Clicks Aggregator Design
-
-https://www.youtube.com/watch?v=Zcv_899yqhI
-
-https://medium.com/@tahir.rauf/system-design-ad-click-aggregator-df16f0509cde
-
-https://medium.com/@nvedansh/system-design-ad-click-event-aggregation-8fb6aa7817fc
-
-https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator
 
 
 ### Lakehouse
@@ -115,27 +112,6 @@ https://habr.com/ru/companies/ozontech/articles/859936/ REST vs gRPC
 
 https://habr.com/ru/articles/807931/
 
-### System design interview
-
-https://habr.com/ru/articles/893548/
-
-https://habr.com/ru/articles/885054/
-
-https://animeshgaitonde.medium.com/what-i-wish-i-knew-before-system-design-interviews-20376f8deafa
-
-https://medium.com/@shivambhadani_/system-design-for-beginners-everything-you-need-in-one-article-c74eb702540b#cf4c
-
-https://www.youtube.com/@CodeWithYu
-
-https://habr.com/ru/articles/825560/
-
-https://neiko.notion.site/Whiteboard-3e7a4c319f2b45d0848d451bb959497b
-
- Gaurav Sen: https://www.youtube.com/@gkcs
- 
-donnemartin https://github.com/donnemartin/system-design-primer
-
-https://www.amazon.com/System-Design-Interview-Insiders-Guide-ebook-dp-B08B3FWYBX/dp/B08B3FWYBX/ref=mt_other?_encoding=UTF8&me=&qid=
 
 
 Queue 
@@ -192,20 +168,6 @@ https://www.kdnuggets.com/how-to-digest-15-billion-logs-per-day-and-keep-big-que
 
 
 
-### System design
-https://animeshgaitonde.medium.com/system-design-building-tiktok-style-video-feed-for-100-million-users-2b3e332678d8
-
-https://github.com/DovAmir/awesome-design-patterns
-
-https://habr.com/ru/articles/888202/
-
-https://github.com/ByteByteGoHq/system-design-101
-
-https://github.com/InterviewReady/system-design-resources
-
-https://github.com/karanpratapsingh/system-design
-
-https://habr.com/ru/companies/kts/articles/741846/ Полное руководство по проектированию систем в виде схемы
 
 https://habr.com/ru/companies/vk/articles/741702/  Data Formats (avro, etc)
 
@@ -222,9 +184,6 @@ https://eng.uber.com/streaming-real-time-analytics/
 https://habr.com/ru/company/ru_mts/blog/684476/
 
 
-### Documenting software architecture
-
-https://www.innoq.com/en/blog/brief-introduction-to-arc42/
 
 ### Algorithms you should know before you take system design interviews
 
@@ -273,27 +232,6 @@ https://engineering.kablamo.com.au/posts/2021/memcached-vs-redis-whats-the-diffe
 
 ### No name
 
-https://www.infoq.com/articles/whats-the-next-step-for-data-management/
-
-<https://a16z.com/2020/10/15/the-emerging-architectures-for-modern-data-infrastructure/>
-
-<https://proprogramming.org/design-dropbox-a-system-design-interview-question/>
-
-<https://news.ycombinator.com/item?id=24814687>
-
-<https://medium.com/better-programming/modern-day-architecture-design-patterns-for-software-professionals-9056ee1ed977>
-
-<https://robertovitillo.com/how-to-conduct-a-system-design-interview/>
-
-<https://habr.com/ru/company/gms/blog/516718/> Netflix  system design-интервью
-
-https://habr.com/ru/post/516604/
-
-<https://techblog.bozho.net/seven-legacy-integration-patterns/>
-
-https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/
-
-https://news.ycombinator.com/item?id=23904000
 
 <https://eng.uber.com/apache-hudi-graduation/>  Apachi Hudi
 
@@ -337,17 +275,6 @@ https://medium.com/wix-engineering/6-event-driven-architecture-patterns-part-1-9
 
 <https://github.com/heathermiller/dist-prog-book> . Distributed prog
 
-<https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/>
-
-<https://news.ycombinator.com/item?id=22702293>
-
-<https://blog.eyas.sh/2020/03/data-oriented-architecture/>
-
-<https://news.ycombinator.com/item?id=22519974>
-
-<https://habr.com/ru/company/ua-hosting/blog/487540/> . Metadata management
-
-<https://news.ycombinator.com/item?id=22011743>
 
 <https://infoq.com>
 
@@ -370,7 +297,7 @@ https://medium.com/wix-engineering/6-event-driven-architecture-patterns-part-1-9
 <https://tech.wayfair.com/data-science/2020/02/how-to-enable-data-scientists-to-stop-managing-etl-pipelines-and-get-back-to-doing-data-science-part-i/>
 
 
-<https://imply.io/post/analytics-reference-architecture-for-iot>  Analytics refernce architecture for iot
+
 
 
 <https://tech.wayfair.com/data-science/2020/02/how-to-enable-data-scientists-to-stop-managing-etl-pipelines-and-get-back-to-doing-data-science-part-i/>
@@ -536,7 +463,7 @@ https://github.com/olirice/flupy . Fluent data pipelines for python and your she
 
 <https://blog.pragmaticengineer.com/operating-a-high-scale-distributed-system/>
 
-<https://herbertograca.com/2019/08/12/documenting-software-architecture/>
+
 
 <http://blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html>
 
@@ -744,7 +671,7 @@ https://habr.com/company/yandex/blog/428700/ .  Model deployment
 
 <https://herbertograca.com/2017/07/03/the-software-architecture-chronicles/>
 
-<https://medium.com/@adhorn/patterns-for-resilient-architecture-part-2-9b51a7e2f10f>
+
 
 <https://www.youtube.com/watch?v=3UfZN59Nsk8> Dataflow: A Unified Model for Batch and Streaming Data Processing
 
@@ -814,7 +741,7 @@ https://github.com/gaia-pipeline/gaia
 
 https://github.com/Jeffail/benthos
 
-<http://www.acodersjourney.com/2018/07/system-design-interview-load-balancing/>
+
 
 https://engineering.videoblocks.com/web-architecture-101-a3224e126947
 
