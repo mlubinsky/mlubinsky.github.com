@@ -228,13 +228,33 @@ https://leetsolve.com/48-rotate-image
 
 https://www.guru99.com/longest-common-subsequence.html
 
-Median from data stream
-https://python.plainenglish.io/median-from-data-stream-8323faee348
+### Median from data stream
+https://python.plainenglish.io/median-from-data-stream-8323faee348  
 
-Intervals:
+https://medium.com/@tudorache.a.bogdan/day-5-arrays-median-of-two-sorted-arrays-17c9349e21ca
+
+<https://medium.com/@hazemu/finding-the-median-of-2-sorted-arrays-in-logarithmic-time-1d3f2ecbeb46> Median of 2 sorted arrays
+
+<https://habr.com/ru/company/otus/blog/565988/>   Median in the stream
+
+#### 2 Heaps pattern - Find  Median from Data Stream
+https://emre.me/coding-patterns/two-heaps/
+```
+ we want to know the smallest element in one part and the biggest element in the other part.
+ Two Heaps pattern uses two Heap data structure to solve these problems;
+ 
+ a Min Heap to find the smallest element and a Max Heap to find the biggest element.
+ 
+ Design a data structure that supports the following two operations:
+
+void addNum(int num) - Add a integer number from the data stream to the data structure.
+double findMedian() - Return the median of all elements so far.
+```
+
+### Intervals:
 https://faun.pub/intervals-coding-pattern-efa438dede8a
 
-Priority queue
+### Priority queue
 https://faun.pub/priority-queue-using-heapq-9d8fccc49d51
 
 
@@ -296,7 +316,7 @@ https://stepik.org/course/1547  Алгоритмы: теория и практи
 https://stepik.org/course/102772 Ace Your Next Coding Interview by Learning Algorithms
 
 
-https://medium.com/@tudorache.a.bogdan/day-5-arrays-median-of-two-sorted-arrays-17c9349e21ca
+
 
 
 
@@ -451,19 +471,7 @@ https://www.techiedelight.com/print-all-paths-from-root-to-leaf-nodes-binary-tre
 
 
 
-#### 2 Heaps pattern Find ( Median from Data Stream)
-https://emre.me/coding-patterns/two-heaps/
-```
- we want to know the smallest element in one part and the biggest element in the other part.
- Two Heaps pattern uses two Heap data structure to solve these problems;
- 
- a Min Heap to find the smallest element and a Max Heap to find the biggest element.
- 
- Design a data structure that supports the following two operations:
 
-void addNum(int num) - Add a integer number from the data stream to the data structure.
-double findMedian() - Return the median of all elements so far.
-```
 
 #### Topological sort
 
@@ -745,7 +753,7 @@ https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw/videos
 
 <https://medium.com/swlh/binary-search-cheat-sheet-for-coding-interviews-9c5425af357e>
 
-<https://medium.com/@hazemu/finding-the-median-of-2-sorted-arrays-in-logarithmic-time-1d3f2ecbeb46> Median of 2 sorted arrays
+
 
 <https://habr.com/ru/post/503602/>
 
@@ -834,7 +842,7 @@ https://news.ycombinator.com/item?id=25519718 Interview advice that got me offer
 
 https://www.youtube.com/watch?v=kbx7xpSKBaI climbing stairs
 
-https://habr.com/ru/company/otus/blog/565988/ . Median in the stream
+
 
 
 https://betterprogramming.pub/top-5-hardest-coding-questions-from-recent-faang-interviews-d46bcb4dd8dc
