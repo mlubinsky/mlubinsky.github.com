@@ -95,24 +95,8 @@ Trusted by Microsoft, GoDaddy, and more. Freelance projects for all skills.
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
 
 
-### URL shortener system design 
 
-https://javatechonline.com/url-shortening-system-design-tiny-url/
 
-https://habr.com/ru/companies/selectel/articles/747738/ URL shortener
-
-https://habr.com/ru/articles/927056/
-
-### TOP K problem
-
-https://www.youtube.com/watch?v=kx-XDoPjoHw Top K Problem (Heavy Hitters)
-
-https://www.youtube.com/watch?v=1lfktgZ9Eeo Top K Problem Again
-
-https://www.youtube.com/watch?v=nQpkRONzEQI Top K Problem Again Again
-
-Design a system that can show the top 10 most popular songs over the last 10 seconds on the homepage of a music streaming service:
-https://zknill.io/posts/streaming-data-aggregation/
 
 https://llego.dev/tags/technical-coding-interview/
 
@@ -163,12 +147,19 @@ https://github.com/ruppysuppy/Daily-Coding-Problem-Solutions/blob/master/Solutio
 8. https://leetcode.com/problems/permutations/solutions/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)/
    
 9. https://leetcode.com/discuss/study-guide/937307/Iterative-or-Recursive-or-DFS-and-BFS-Tree-Traversal-or-In-Pre-Post-and-LevelOrder-or-Views  
+
 10. https://leetcode.com/discuss/study-guide/655708/Graph-For-Beginners-Problems-or-Pattern-or-Sample-Solutions  
+
 11. https://leetcode.com/discuss/study-guide/2347639/A-comprehensive-guide-and-template-for-monotonic-stack-based-problems  
+
 12. https://leetcode.com/discuss/study-guide/4282051/all-types-of-patterns-for-bits-manipulations-and-how-to-use-it  
+
 13. https://leetcode.com/discuss/study-guide/2001789/Collections-of-Important-String-questions-Pattern  
+
 14. https://medium.com/leetcode-patterns/leetcode-pattern-1-bfs-dfs-25-of-the-problems-part-1-519450a84353  
+
 15. https://medium.com/leetcode-patterns/leetcode-pattern-2-dfs-bfs-25-of-the-problems-part-2-a5b269597f52  
+
 16.  https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 
  
@@ -179,28 +170,7 @@ https://github.com/ruppysuppy/Daily-Coding-Problem-Solutions/blob/master/Solutio
 → https://lnkd.in/eYHSjbys  
 
 
-
-### System design interview
-
-https://habr.com/ru/articles/900396/ System design interview PArt 5 
-
-https://betterengineers.substack.com/p/data-partitioning-and-sharding
-
-https://www.youtube.com/watch?v=cr6p0n0N-VA  design / build Whats-UP
-
-https://www.hellointerview.com/learn/system-design/problem-breakdowns/ad-click-aggregator
-
-https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery
-
-https://www.youtube.com/watch?v=kIcq1_pBQSY Facebook System Design Interview: Design an Analytics Platform (Metrics & Logging)
-
 https://habr.com/ru/articles/840116/   How internet works
-
-https://habr.com/ru/companies/bothub/articles/812265/  System design interview
-
-https://habr.com/ru/companies/yandex_praktikum/articles/834230/ System design interview
-
-https://habr.com/ru/companies/ods/articles/828772/
 
 https://www.youtube.com/watch?v=_keHRxzx7as   Глеб Михайлов Новые задачи на LeetCode | Ща порешаем! #99  
 https://www.youtube.com/watch?v=JtMuXmmDl9s    Саша Лукин  
@@ -293,9 +263,11 @@ https://github.com/heineman
 https://www.youtube.com/@Power_Couple/videos
 
 FAANG interview questions  
-https://media.licdn.com/dms/document/media/D4D1FAQH_q662e7ciYg/feedshare-document-pdf-analyzed/0/1686549764622?e=1687392000&v=beta&t=t3ZlZ6w4CMjYMfIDEg8DKA15ecgVSqrX5XNwo2pcBd0
+https://media.licdn.com/dms/document/media/D4D1FAQH_q662e7ciYg/feedshare-document-pdf-analyzed/0/1686549764622
 
-URL shortener: https://habr.com/ru/articles/746602/
+?e=1687392000&v=beta&t=t3ZlZ6w4CMjYMfIDEg8DKA15ecgVSqrX5XNwo2pcBd0
+
+
 
 https://www.youtube.com/watch?v=rPp46idEvnM  Hash table from Lukin (ru)
 
@@ -701,7 +673,7 @@ https://github.com/StBogdan/PythonWork
 
 <https://github.com/parineeth/tbboci-3rd-edition-python>
 
-https://github.com/alexeygrigorev/data-science-interviews . 
+https://github.com/alexeygrigorev/data-science-interviews  
 
 https://github.com/labuladong/fucking-algorithm/tree/english. Leetcode guide
 
@@ -720,8 +692,6 @@ https://github.com/labuladong/fucking-algorithm/tree/english. Leetcode guide
 #### Merge an array of k linked-lists lists TODO)
 
 http://www.cmsmagazine.ru/library/items/programming/80-problems-with-it-interviews/
-
-
 
 https://habr.com/ru/company/skillfactory/blog/582450/
 
@@ -747,8 +717,6 @@ https://paddy3118.blogspot.com/2021/02/longest-common-substring-investigation.ht
 find the longest palindrome subsequence of a string optimally
 
 https://alkeshghorpade.me/post/leetcode-longest-substring-without-repeating-characters
-
-
 
 https://johnlekberg.com/blog/2020-08-01-task-order.html . topological sort
 
@@ -777,7 +745,7 @@ https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw/videos
 
 <https://medium.com/swlh/binary-search-cheat-sheet-for-coding-interviews-9c5425af357e>
 
-<https://medium.com/@hazemu/finding-the-median-of-2-sorted-arrays-in-logarithmic-time-1d3f2ecbeb46> Median of 2 sorted attays
+<https://medium.com/@hazemu/finding-the-median-of-2-sorted-arrays-in-logarithmic-time-1d3f2ecbeb46> Median of 2 sorted arrays
 
 <https://habr.com/ru/post/503602/>
 
@@ -811,8 +779,6 @@ https://medium.com/@srajaninnov/find-the-diameter-of-a-binary-tree-efc45b9129a7
 
 <https://www.youtube.com/watch?v=xYBKMV92YrM>
 
-
-
 <https://classicproblems.com/>
 
 <https://teachyourselfcs.com/>
@@ -825,12 +791,7 @@ https://medium.com/@srajaninnov/find-the-diameter-of-a-binary-tree-efc45b9129a7
 
 <https://habr.com/ru/company/skillbox/blog/462979/>
 
-
-
-
-
 <https://www.youtube.com/watch?v=EuPSibuIKIg>
-
 
 <https://www.youtube.com/channel/UCaYQbIciTyBFMTRE2Zp81tw>
 
@@ -856,36 +817,22 @@ https://cp-algorithms.com/
 
 https://tproger.ru/articles/problems/
 
-
 https://www.pythonpool.com/knapsack-problem-python/
-
-
-
-
-
 
 https://www.pythonforbeginners.com/queue/queue-in-python
 
 
 https://www.youtube.com/watch?v=Dx5eiQdv4k8 Find 2 closest points on plain
 
-
-
 https://kalkicode.com/data-structure/1500-most-common-data-structures-and-algorithms-solutions
 
 https://stackoverflow.com/questions/67526076/what-is-the-most-efficient-way-of-getting-the-intersection-of-k-sorted-arrays
-
-
 
 https://runestone.academy/runestone/books/published/pythonds/index.html#problem-solving-with-algorithms-and-data-structures-using-python
 
 https://news.ycombinator.com/item?id=25519718 Interview advice that got me offers 
 
 https://www.youtube.com/watch?v=kbx7xpSKBaI climbing stairs
-
-
-
-
 
 https://habr.com/ru/company/otus/blog/565988/ . Median in the stream
 
@@ -912,12 +859,9 @@ https://habr.com/ru/post/579410/ interview for ML
 <https://sites.google.com/site/mytechnicalcollection/algorithms/trees/lca-of-binary-tree>
 <https://stackoverflow.com/questions/1484473/how-to-find-the-lowest-common-ancestor-of-two-nodes-in-any-binary-tree>
 
-
 <https://www.youtube.com/channel/UCcAWgbpROQrPok18E6UozWw/videos>
 
 <https://www.facebook.com/tusharroy25/>
-
-
 
 <https://blog.finxter.com/python-interview-questions/>
 
@@ -952,8 +896,6 @@ https://realpython.com/python-hash-table/
 Hard Interview Questions in FAANG - 4 | Live Problem Solving | Interview Cracking Series
 
 https://www.youtube.com/watch?v=8Uk2e7cCuyw
-
-
 
 <https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions>
 
@@ -1103,8 +1045,6 @@ https://medium.com/@alexgolec/google-interview-questions-deconstructed-the-knigh
 
 <http://algorithms.tutorialhorizon.com/>
 
-
-
 ## Fibonacci
 
 https://habr.com/ru/post/261159/
@@ -1154,53 +1094,6 @@ Majority element https://github.com/NaughtyConstrictor/From-Majority-to-Frequent
 
 1) Web development for beginners by Microsoft https://lnkd.in/evM43KHy
 
-### System design 
-
-https://github.com/madd86/awesome-system-design
-
-System Design:
-👉 Byte Byte Go by Alex Xu - https://lnkd.in/eEGZ-3mY
-👉 Byte Sized Design by Alex Nguyen - https://lnkd.in/e7yxQJf7
-👉 System Design One by Neo K. - https://lnkd.in/ePa9WCGx
-👉 Systems Design Challenges by Ricardo A. Morales - https://lnkd.in/eSX6kdb3
-
-https://habr.com/ru/articles/769018/ event driving architect
-
-https://github.com/ByteByteGoHq/system-design-101
-
-https://habr.com/ru/companies/otus/articles/765014/
-
-https://www.youtube.com/watch?v=mCM6QVHD08c
-
-https://habr.com/ru/companies/otus/articles/764902/ Redis Memcahed
-
-https://www.youtube.com/watch?v=o5n85GRKuzk Design Twitter - System Design Interview
-
-https://systemdesign.one/system-design-interview-cheatsheet/
-
-https://www.youtube.com/watch?v=_K-eupuDVEc  Google system design interview: Design Spotify
-
-System Design interviews until I found these 10 articles.
-
-1. URL shortener or TinyURL: https://lnkd.in/gJPWZsX3
-
-2. Social media app like Twitter: https://lnkd.in/guParNhY
-
-3. File sharing service like Dropbox: https://lnkd.in/gnSQ6rAd
-
-4. Video streaming service like Netflix: https://lnkd.in/gnHSyCj8
-
-5. Autocomplete feature of Google: https://lnkd.in/g3VFcaYN
-
-6. Messaging app like WhatsApp: https://lnkd.in/g5zJa_4W
-
-7. Online document editor like Google docs: https://lnkd.in/gBvztEqV
-
-8. Proximity service like Uber: https://lnkd.in/grtPbr6k
-
-9. Hotel booking service like Airbnb: https://lnkd.in/gWjrGwCM
-
-10. Web crawler: https://lnkd.in/gTkfCH8U
 
 
 https://engineering.fb.com/2023/06/27/developer-tools/meta-developer-tools-open-source/
@@ -1216,10 +1109,7 @@ https://www.youtube.com/watch?v=GLTR39VIAdc Datas Structures and Algo
 👉 I watched my DSA playlist to revise concepts at 2x speed (https://lnkd.in/dJfS9FkD)
 👉 Grokking the Coding Interview (https://lnkd.in/dfKHYUQK) - It has covered various coding problems segregated based on coding patterns.
 
-✅ 𝐒𝐲𝐬𝐭𝐞𝐦 𝐃𝐞𝐬𝐢𝐠𝐧 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰
-👉 Arslan Ahmad's Grokking the System Design Interview - It has step-by-step discussion and good case studies on system design (https://lnkd.in/dXywra2R)
-👉 Alex Xu's System Design Interview course on ByteByteGo (https://lnkd.in/d6yRpRvy) - It covers all the content from his famous book (Vol 1 & Vol 2) System Design Interview
-👉 Clement Mihailescu #SystemsExpert (https://lnkd.in/d-5mSpfw) videos to know how real-life System Design Interviews go
+
 
 ✅ 𝐋𝐨𝐰-𝐋𝐞𝐯𝐞𝐥 𝐃𝐞𝐬𝐢𝐠𝐧 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰
 👉 Grokking the Object Oriented Design Interview (https://lnkd.in/deuAXR-U) - A very detailed & step-by-step approach to various OOD case studies
