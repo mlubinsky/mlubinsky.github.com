@@ -1,7 +1,7 @@
 ## System design
 
 ### Desing document
-<https://grantslatton.com/how-to-design-document>
+<https://grantslatton.com/how-to-design-document>  
 <https://news.ycombinator.com/item?id=44779428>
 
 ### System design
@@ -181,7 +181,7 @@ System Design interviews until I found these 10 articles.
 
 10. Web crawler: https://lnkd.in/gTkfCH8U
 
-✅ 𝐒𝐲𝐬𝐭𝐞𝐦 𝐃𝐞𝐬𝐢𝐠𝐧 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰
-👉 Arslan Ahmad's Grokking the System Design Interview - It has step-by-step discussion and good case studies on system design (https://lnkd.in/dXywra2R)
-👉 Alex Xu's System Design Interview course on ByteByteGo (https://lnkd.in/d6yRpRvy) - It covers all the content from his famous book (Vol 1 & Vol 2) System Design Interview
-👉 Clement Mihailescu #SystemsExpert (https://lnkd.in/d-5mSpfw) videos to know how real-life System Design Interviews go
+✅ 𝐒𝐲𝐬𝐭𝐞𝐦 𝐃𝐞𝐬𝐢𝐠𝐧 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰  
+👉 Arslan Ahmad's Grokking the System Design Interview - It has step-by-step discussion and good case studies on system design (https://lnkd.in/dXywra2R)  
+👉 Alex Xu's System Design Interview course on ByteByteGo (https://lnkd.in/d6yRpRvy) - It covers all the content from his famous book (Vol 1 & Vol 2) System Design Interview  
+👉 Clement Mihailescu #SystemsExpert (https://lnkd.in/d-5mSpfw) videos to know how real-life System Design Interviews go  
