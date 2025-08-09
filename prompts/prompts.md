@@ -1,0 +1,6 @@
+<https://github.com/ursisterbtw/ccprompts>
+
+<https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/>
+
+<https://news.ycombinator.com/item?id=44836879>
+
