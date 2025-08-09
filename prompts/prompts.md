@@ -1,5 +1,5 @@
 ### ChatGPT
-https://cookbook.openai.com/
+<https://cookbook.openai.com/>
 
 ### Claude
 <https://github.com/ursisterbtw/ccprompts>
