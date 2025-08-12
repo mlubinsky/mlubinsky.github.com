@@ -4,6 +4,41 @@ git config --global user.name "your name"
 git config --global user.email "you@example.com"
 git config --get remote.origin.url
 ```
+### Merge vs Rebase
+ 
+To update your branch **my_branch** with the latest changes from main (sometimes called master),
+you have two common options: merge or rebase.
+
+#### Option 1 – Merge (Keeps branch history)
+```bash
+# Make sure you are on your branch
+git checkout my_branch
+
+# Get the latest changes from the remote
+git fetch origin
+
+# Merge main into your branch
+git merge origin/main
+```
+Pros: Keeps full history, easy to resolve conflicts.  
+Cons: Creates a merge commit, history may look more cluttered.  
+
+#### Option 2 – Rebase (Keeps history linear)
+```bash
+# Make sure you are on your branch
+git checkout my_branch
+
+# Get the latest changes from the remote
+git fetch origin
+
+# Rebase your work on top of the latest main
+git rebase origin/main
+```
+Pros: Cleaner history.  
+Cons: Can be trickier if conflicts occur.   
+If your branch is already pushed and shared with others, 
+you’ll need to **git push --force-with-lease** after rebasing.
+
 ### Git diff
 ```
 git diff <commit-id> <commit-id>
@@ -35,7 +70,7 @@ To compare a specific file use:
 git diff master... filepath
 ```
 
-
+### Links
 https://habr.com/ru/articles/928532/
 
 https://news.ycombinator.com/item?id=42728916
