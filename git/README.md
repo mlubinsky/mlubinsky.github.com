@@ -3,6 +3,7 @@
 git config --global user.name "your name"
 git config --global user.email "you@example.com"
 git config --get remote.origin.url
+git config --list
 ```
 ### Merge vs Rebase
  
