@@ -1,7 +1,40 @@
+### Git config
 ```
-git config --global user.name "Ваше Имя"
+git config --global user.name "your name"
 git config --global user.email "you@example.com"
 ```
+### Git diff
+```
+git diff <commit-id> <commit-id>
+
+Compare current branch with local master:
+git diff master.. 
+
+Specific file:
+git diff master... filepath
+
+Compare with remote master:
+git diff origin/master...
+
+git diff --cached
+
+git diff --cached src/main/scala/agt/Main.scala
+
+git diff master...branch
+
+git diff origin/master...
+This shows only the changes between my currently selected local branch and the remote master branch, and ignores all changes in my local branch that came from merge commits.
+
+
+git diff master...
+This uses your local copy of master.
+
+To compare a specific file use:
+
+git diff master... filepath
+```
+
+
 https://habr.com/ru/articles/928532/
 
 https://news.ycombinator.com/item?id=42728916
@@ -59,7 +92,7 @@ https://learngitbranching.js.org/
 https://habr.com/ru/articles/799413/
 ```
 git switch other-branch
-git switch -  # Переключение обратно на предыдудую ветвь, аналогично "cd -"
+git switch -  # back to previous branch, like "cd -"
 git switch remote-branch  # Непосредственное переключение на удалённую ветвь и её отслеживание
 ```
 
@@ -146,22 +179,6 @@ brew install lazygit
 brew install gitui
 ```
 
-### Git diff
-
-git diff <commit-id> <commit-id>
-
-Compare current branch with local master
-
-git diff master.. 
-
-Specific file
-
-git diff master... filepath
-
-Compare with remote master:
-
-git diff origin/master...
-
 
 ### Git log
 
@@ -225,9 +242,7 @@ You are currently rebasing branch 'advanced_reviews_rms_model_update' on '140180
 ### Restore
 git checkout — $FILE` and `git restore $FILE
 
-### switch
-
-git switch branch:
+ 
 
 ### Fetch remote branch - use switch statement
 https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch
@@ -389,7 +404,7 @@ git config --get remote.origin.url
 get remote branch
 ```
 git fetch
-git checkout branchnamehere
+git checkout branch_name_here
 ```
 if above does not work then try:
 ```
@@ -422,20 +437,7 @@ to squash all the garbage away before making a PR:
 
 <https://stackoverflow.com/questions/20808892/git-diff-between-current-branch-and-master-but-not-including-unmerged-master-com/20809283>
 
-```
-git diff master...branch
 
-git diff origin/master...
-This shows only the changes between my currently selected local branch and the remote master branch, and ignores all changes in my local branch that came from merge commits.
-
-
-git diff master...
-This uses your local copy of master.
-
-To compare a specific file use:
-
-git diff master... filepath
-```
 <https://stackoverflow.com/questions/9725531/show-commits-since-branch-creation>
 ```
 git log master...<your_branch_name>
@@ -545,8 +547,12 @@ I constantly use
     git commit --fixup 6138D3A
     git rebase --autosquash --interactive origin/master
 ```
-to keep a clean history of cohesive commits. Rarely do I change _everything_ required for an objective in one go, I still like to commit as I work, I just like the finished product to _seem_ like I did it in one go, for future maintainers' sake.
-And I rebase to catch up with upstream, I can't stand having intermediate merge commits in my history and rebasing lets you resolve conflicts as they're introduced, instead of an all-at-once at the end.
+to keep a clean history of cohesive commits. 
+Rarely do I change _everything_ required for an objective in one go,  
+I still like to commit as I work, 
+I just like the finished product to _seem_ like I did it in one go, for future maintainers' sake.  
+And I rebase to catch up with upstream, I can't stand having intermediate merge commits in my history and rebasing lets you resolve conflicts as they're introduced, 
+instead of an all-at-once at the end. 
 
 
 When I merge my feature back to origin/master I do
@@ -574,7 +580,8 @@ git clone git@github.com:USERNAME/FORKED-PROJECT.git
 
 ## Keeping Your Fork Up to Date
 
-While this isn't an absolutely necessary step, if you plan on doing anything more than just a tiny quick fix, you'll want to make sure you keep your fork up to date by tracking the original "upstream" repo that you forked. To do this, you'll need to add a remote:
+ Make sure you keep your fork up to date by tracking the original "upstream" repo that you forked.   
+ To do this, you'll need to add a remote:
 
 ```shell
 # Add 'upstream' repo to list of remotes
@@ -584,7 +591,9 @@ git remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git
 git remote -v
 ```
 
-Whenever you want to update your fork with the latest upstream changes, you'll need to first fetch the upstream repo's branches and latest commits to bring them into your repository:
+Whenever you want to update your fork with the latest upstream changes,   
+you'll need to first fetch the upstream repo's branches and latest commits 
+to bring them into your repository:  
 
 ```shell
 # Fetch from upstream remote
@@ -602,7 +611,10 @@ git checkout master
 git merge upstream/master
 ```
 
-If there are no unique commits on the local master branch, git will simply perform a fast-forward. However, if you have been making changes on master (in the vast majority of cases you probably shouldn't be  , you may have to deal with conflicts. When doing so, be careful to respect the changes made upstream.
+If there are no unique commits on the local master branch, git will simply perform a fast-forward.   
+However, if you have been making changes on master 
+(in the vast majority of cases you probably shouldn't be, you may have to deal with conflicts. 
+When doing so, be careful to respect the changes made upstream.
 
 Now, your local master branch is up-to-date with everything modified upstream.
 
