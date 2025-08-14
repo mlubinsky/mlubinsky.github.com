@@ -6,6 +6,7 @@ git config --get remote.origin.url
 git config --list
 ```
 ### Merge vs Rebase
+ <https://blog.stackademic.com/git-rebase-explained-like-youre-new-to-git-263c19fa86ec>
  
 To update your branch **my_branch** with the latest changes from main (sometimes called master),
 you have two common options: merge or rebase.
