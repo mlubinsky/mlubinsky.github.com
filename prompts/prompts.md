@@ -1,6 +1,8 @@
 ### ChatGPT
 <https://cookbook.openai.com/>
 
+<https://habr.com/ru/articles/936136/> Get maximum from ChatGPT 5
+
 ### Claude
 <https://github.com/ursisterbtw/ccprompts>
 
