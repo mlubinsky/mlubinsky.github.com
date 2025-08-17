@@ -17,10 +17,13 @@ http://lucumr.pocoo.org/2025/1/30/how-i-ai
 
 ### Wiki / documentation
 
+https://github.com/docmost/docmost
+
 https://habr.com/ru/articles/927152/ Разработка требований к ПО с помощью Markdown, Git и Obsidian
 
 https://github.com/leomoon-studios/wiki-go
 
+#### mkdocks
 https://www.mkdocs.org/
 
 https://aashishkumar12376.medium.com/documenting-python-projects-with-mkdocs-the-right-way-to-showcase-your-code-b20937b0da13
