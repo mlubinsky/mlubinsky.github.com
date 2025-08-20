@@ -160,6 +160,10 @@ https://towardsdatascience.com/behind-the-models-beta-dirichlet-and-gem-distribu
 
 http://www.gaussianprocess.org/gpml/chapters/
 
+https://gaussianprocess.org/gpml/chapters/RW.pdf
+
+https://news.ycombinator.com/item?id=44939902 Book discussion
+
 https://medium.com/the-quantastic-journal/mathematical-understanding-of-gaussian-process-eaffc9c8a6d6
 
 https://gaussianbp.github.io/
