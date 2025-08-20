@@ -59,3 +59,8 @@ https://arxiv.org/pdf/2103.13937.pdf CUDA Tutorial
 [https://www.youtube.com/watch?v=smlDvXVbyTo ](https://www.youtube.com/playlist?list=PL4_hYwCyhAvbhhT3F80vt1FdB2TqklRsM)
 
 https://www.youtube.com/playlist?list=PL4_hYwCyhAvbhhT3F80vt1FdB2TqklRsM  RU
+
+
+https://jax-ml.github.io/scaling-book/gpus/
+
+https://news.ycombinator.com/item?id=44943666
