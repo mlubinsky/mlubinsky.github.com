@@ -12,6 +12,8 @@
 
 ### Others
 
+<https://www.promptly.fyi/library>
+
 <https://habr.com/ru/articles/937586/>
 
 <https://habr.com/ru/articles/927580/> Codex
