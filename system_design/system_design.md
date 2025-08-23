@@ -5,6 +5,9 @@
 <https://news.ycombinator.com/item?id=44779428>
 
 ### System design
+
+<https://betterengineers.substack.com/p/scalable-system-design-patterns>
+
 <https://imply.io/post/analytics-reference-architecture-for-iot>  Analytics refernce architecture for IoT
 
 <https://medium.com/algomaster-io/system-design-was-hard-until-i-learned-these-30-concepts-78042ff99cae>
