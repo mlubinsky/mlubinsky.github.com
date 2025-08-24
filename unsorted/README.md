@@ -61,7 +61,45 @@ and allow third-party apps like Kindle, Adobe Acrobat, etc.
 https://library.d3.ru/posovetuite-elektronnuiu-knigu-2492579/?sorting=rating
 
 
-### GTD getting things done
+### Google Docs
+```
+Google Docs is a “Code block” element.
+
+It looks like a grey box with monospaced text.
+
+In the top-left corner of the block there’s a dropdown menu where you can select a programming language (Python, SQL, Java, etc.).
+
+Google Docs then applies syntax highlighting and formatting for that language inside the block.
+
+How it was created:
+
+Place the cursor where you want the block.
+
+Go to the menu: Insert → Building blocks → Code block.
+
+Alternatively, type @code block in the document, and select Code block from the smart chip menu.
+
+A grey block will appear with the language dropdown in the top left.
+
+In Google Docs you can take existing text and convert it into a code block:
+
+Steps:
+
+Select the text you want to format as code.
+
+In the top menu, click Format → Paragraph styles → Code block.
+
+Or, if you see the small toolbar bubble appear when text is selected, you may also find Code block there.
+
+The grey block will be applied, and you’ll get the dropdown in the corner to pick the programming language (Python, SQL, etc.).
+
+Alternative shortcut:
+
+Type @code in the doc → choose Code block.
+
+Then paste your existing text into the new block.
+```
+### GTD Getting Things Done
 
 https://habr.com/ru/articles/890522/
 
