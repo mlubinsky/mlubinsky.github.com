@@ -98,6 +98,42 @@ Alternative shortcut:
 Type @code in the doc → choose Code block.
 
 Then paste your existing text into the new block.
+-----------------------------
+When you copy–paste Python (or any code) into a code block,
+Docs often treats each line as a paragraph rather than a line break,
+so it inserts an extra blank line after each statement.
+
+Why it happens
+
+In Google Docs, pressing Enter creates a paragraph break.
+
+In most editors/IDEs, pressing Enter creates just a line break.
+
+When you paste into Docs, it preserves those as paragraphs, so in a monospaced “code block” style, you end up with double spacing.
+
+How to fix / remove the empty lines
+
+Paste with “Shift+Ctrl+V” (Windows/Linux) or “Shift+Cmd+V” (Mac)
+→ This pastes without formatting, preventing the extra blank lines.
+Then apply the “Code block” style.
+
+Use Find & Replace
+
+Press Ctrl+H (Windows) / Cmd+Shift+H (Mac).
+
+Search for \n\n (two newlines).
+
+Replace with \n (one newline).
+
+Make sure “Match using regular expressions” is enabled.
+
+Convert to code block after cleaning
+
+Paste your code as plain text first.
+
+Run the cleanup (remove double spacing).
+
+Then apply Insert → Building blocks → Code block.
 ```
 ### GTD Getting Things Done
 
