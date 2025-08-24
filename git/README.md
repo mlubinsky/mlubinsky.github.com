@@ -7,6 +7,10 @@ git config --list
 ```
 ### Merge vs Rebase
  <https://blog.stackademic.com/git-rebase-explained-like-youre-new-to-git-263c19fa86ec>
+
+main branch and 'origin/main' have diverged, how to 'undiverge' branches'?
+
+ <https://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches>
  
 To update your branch **my_branch** with the latest changes from main (sometimes called master),
 you have two common options: merge or rebase.
