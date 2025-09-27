@@ -1,3 +1,7 @@
+### MCP
+
+<https://realpython.com/python-mcp/>
+
 ### ChatGPT
 <https://cookbook.openai.com/>
 
