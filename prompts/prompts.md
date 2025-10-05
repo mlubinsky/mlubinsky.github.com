@@ -1,3 +1,7 @@
+<https://www.promptingguide.ai/>
+
+<https://www.promptly.fyi/library>
+
 ### MCP
 
 <https://realpython.com/python-mcp/>
@@ -10,9 +14,9 @@
 ### Claude
 <https://github.com/ursisterbtw/ccprompts>
 
-https://betweentheprompts.com/design-partner/
+<https://betweentheprompts.com/design-partner/>
 
-https://news.ycombinator.com/item?id=45002315
+<https://news.ycombinator.com/item?id=45002315>
 
 <https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/>
 
@@ -20,7 +24,7 @@ https://news.ycombinator.com/item?id=45002315
 
 ### Others
 
-<https://www.promptly.fyi/library>
+
 
 <https://habr.com/ru/articles/937586/>
 
