@@ -1,5 +1,7 @@
 https://kubernetes.io/docs/home/
 
+https://habr.com/ru/companies/selectel/articles/956266/
+
 https://habr.com/ru/articles/909260/
 
 https://www.youtube.com/watch?v=hNLQ3tCP8jQ  Kubernetes - Курс по Kubernetes для Начинающих (Bogdan Stashchuk)
