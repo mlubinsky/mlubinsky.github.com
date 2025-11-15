@@ -17,6 +17,10 @@ http://lucumr.pocoo.org/2025/1/30/how-i-ai
 
 ### Wiki / documentation
 
+https://jupyterbook.org/stable/
+
+https://news.ycombinator.com/item?id=45865189  Zensical
+
 https://github.com/docmost/docmost
 
 https://habr.com/ru/articles/927152/ Разработка требований к ПО с помощью Markdown, Git и Obsidian
