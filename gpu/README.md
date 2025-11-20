@@ -1,3 +1,7 @@
+https://jamesakl.com/posts/cuda-ontology/
+
+https://news.ycombinator.com/item?id=45947437
+
 https://docs.nvidia.com/cuda/pdf/CUDA_C_Programming_Guide.pdf
 
 https://docs.nvidia.com/cuda/pdf/CUDA_Runtime_API.pdf
