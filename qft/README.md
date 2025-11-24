@@ -1,5 +1,7 @@
 https://www.lektorium.tv/node/38965
 
+https://www.youtube.com/playlist?list=PLcsjsqLLSfNBsmXYqntT76wFmTa9vaRnG  QFT ru
+
 https://arxiv.org/abs/1602.04182 Feinman Diagrams
 
 https://landau.gitlab.io/qft/spring25/
