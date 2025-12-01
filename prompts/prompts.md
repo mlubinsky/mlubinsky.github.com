@@ -1,3 +1,5 @@
+## LLM code assistants
+
 <https://www.promptingguide.ai/>
 
 <https://www.promptly.fyi/library>
@@ -12,6 +14,8 @@
 <https://habr.com/ru/articles/936136/> Get maximum from ChatGPT 5
 
 ### Claude
+
+<https://habr.com/ru/articles/971772/?
 
 <https://www.humanlayer.dev/blog/writing-a-good-claude-md>
 
