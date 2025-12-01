@@ -15,6 +15,8 @@
 
 <https://www.humanlayer.dev/blog/writing-a-good-claude-md>
 
+<https://news.ycombinator.com/item?id=46098838>
+
 <https://github.com/ursisterbtw/ccprompts>
 
 <https://betweentheprompts.com/design-partner/>
