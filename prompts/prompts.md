@@ -31,6 +31,10 @@
 
 <https://news.ycombinator.com/item?id=44836879>
 
+### Gemini
+
+https://habr.com/ru/articles/971074/
+
 ### Others
 
 
