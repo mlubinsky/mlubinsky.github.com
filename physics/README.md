@@ -327,6 +327,8 @@ https://habr.com/ru/post/544030/ FermiNet
 
 ### Entropy
 
+https://www.quantamagazine.org/what-is-entropy-a-measure-of-just-how-little-we-really-know-20241213/ 
+
 http://evgenii.rudnyi.ru/doc/ru/blog/BookEntropy.pdf
 
 https://habr.com/ru/articles/916556/
