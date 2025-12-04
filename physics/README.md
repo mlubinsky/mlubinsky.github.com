@@ -329,6 +329,11 @@ https://habr.com/ru/post/544030/ FermiNet
 
 https://www.quantamagazine.org/what-is-entropy-a-measure-of-just-how-little-we-really-know-20241213/ 
 
+Проблема координации: Энтропия как физическая величина в классической термодинамике
+Е. Б. Рудный
+https://preprints.ru/article/2270
+
+
 http://evgenii.rudnyi.ru/doc/ru/blog/BookEntropy.pdf
 
 https://habr.com/ru/articles/916556/
