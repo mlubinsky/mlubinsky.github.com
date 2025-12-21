@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=ht_0y05QHDI 4 Самых Главных Простых Упражнений после 60 
 
+https://www.youtube.com/watch?v=vQmdkKzwPPA 
+
 https://habr.com/ru/companies/ua-hosting/articles/905436/ Дела сердечные: предотвращение сердечной недостаточности
 
 https://dmitriysh.livejournal.com/
