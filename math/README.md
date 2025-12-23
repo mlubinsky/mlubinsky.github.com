@@ -54,6 +54,7 @@ https://news.ycombinator.com/item?id=35582084
 
 http://gabarro.org/ccn/gen_fourier.html
 
+https://habr.com/ru/articles/979748/  Group Theory
 
 ### Lie groups
 
