@@ -1,3 +1,8 @@
+https://www.youtube.com/@agoalofalife/videos (ru)
+
+https://github.com/peterlamar/python-cp-cheatsheet
+
+
 https://www.remoteswe.fyi/
 
 https://listofremotejobs.com/
