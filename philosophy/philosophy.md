@@ -1,3 +1,5 @@
+"Если вы гордитесь славой своих предков, вы должны заодно и нести ответственность за их грехи."
+
 https://mitchhorowitz.substack.com/p/101-rules-of-effective-living
 
 https://news.ycombinator.com/item?id=43971791
