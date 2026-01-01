@@ -4,6 +4,9 @@ https://www.youtube.com/watch?v=vQmdkKzwPPA
 
 https://habr.com/ru/companies/ua-hosting/articles/905436/ Дела сердечные: предотвращение сердечной недостаточности
 
+	Scientists unlock brain's natural clean-up system for new treatments for stroke
+https://news.ycombinator.com/item?id=46448894
+
 https://dmitriysh.livejournal.com/
 
 https://yarchive.net/blog/prostate/  An end to all this prostate trouble?  
