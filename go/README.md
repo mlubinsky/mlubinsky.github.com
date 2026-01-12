@@ -4,6 +4,10 @@ https://www.bytesizego.com/courses/
 
 https://100go.co/
 
+Idiomatic GO
+
+https://news.ycombinator.com/item?id=46531622
+
 https://github.com/delaneyj/toolbelt
 
 https://dmitri.shuralyov.com/idiomatic-go
