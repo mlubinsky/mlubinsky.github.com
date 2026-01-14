@@ -1,4 +1,9 @@
-### СССР
+https://egovoru.livejournal.com/239285.html  What is democracy
+
+### Russian History
+https://egovoru.livejournal.com/238791.html
+
+## СССР
 https://egovoru.livejournal.com/240010.html
 
  
