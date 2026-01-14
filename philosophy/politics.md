@@ -4,6 +4,8 @@ https://egovoru.livejournal.com/239285.html  What is democracy
 https://egovoru.livejournal.com/238791.html
 
 ## СССР
+https://egovoru.livejournal.com/236557.html
+
 https://egovoru.livejournal.com/240010.html
 
  
