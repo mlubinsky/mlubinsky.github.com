@@ -16,6 +16,11 @@ https://humus.livejournal.com/8854168.html
 
 https://www.youtube.com/watch?v=f4Lq3EZv7xI  Audiobooks Земля. Часть 1.
 
+
+## Film recommendations
+
+https://a-bugaev.livejournal.com/1358034.html
+
 ### Serials
 
 https://joe-alex.livejournal.com/610005.html
