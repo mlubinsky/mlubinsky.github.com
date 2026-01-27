@@ -2,15 +2,17 @@
 
 "Если позаниматься понятийной схоластикой и поискать различия между точкой зрения и позицией, то я бы сказал, что позиция это точка зрения, за которую есть готовность зуб отдать".
 
-https://mitchhorowitz.substack.com/p/101-rules-of-effective-living
+<https://www.youtube.com/watch?v=g6S8rLTVW44> Как жить полной жизнью? Лекция Стэнфордского университета. Грэм Уивер 2024 год
 
-https://news.ycombinator.com/item?id=43971791
+<https://mitchhorowitz.substack.com/p/101-rules-of-effective-living>
 
-https://utsavmamoria.substack.com/p/how-to-live-an-intellectually-rich
+<https://news.ycombinator.com/item?id=43971791>
 
-https://news.ycombinator.com/item?id=43868192
+<https://utsavmamoria.substack.com/p/how-to-live-an-intellectually-rich>
 
-https://www.youtube.com/watch?v=Zz70rcguxwk 68 Bits of Unsolicited Advice
+<https://news.ycombinator.com/item?id=43868192>
+
+<https://www.youtube.com/watch?v=Zz70rcguxwk 68 Bits of Unsolicited Advice>
 
 ```
 Огромную психотерапевтическую и психогигиеническую ценность имеет убежденность человека в том, что ему есть ради чего жить.  
