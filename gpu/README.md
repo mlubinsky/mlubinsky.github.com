@@ -1,3 +1,5 @@
+https://modal.com/gpu-glossary
+
 https://jamesakl.com/posts/cuda-ontology/
 
 https://news.ycombinator.com/item?id=45947437
