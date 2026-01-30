@@ -1,5 +1,7 @@
 https://modal.com/gpu-glossary
 
+https://jax-ml.github.io/scaling-book/
+
 https://jamesakl.com/posts/cuda-ontology/
 
 https://news.ycombinator.com/item?id=45947437
