@@ -4,6 +4,8 @@ https://alexandr4784.narod.ru/ math physics
 
 https://ikfia.ysn.ru/v-pomoshh-studentu-i-aspirantu/
 
+https://fizmat.space/coding/?  Programming ru
+
 https://www.eruditor.io/
 
 https://ru.annas–archive.org/
