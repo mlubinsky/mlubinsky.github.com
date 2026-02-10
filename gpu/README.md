@@ -1,3 +1,7 @@
+## GPU
+
+https://habr.com/ru/articles/994956/
+
 https://modal.com/gpu-glossary
 
 https://jax-ml.github.io/scaling-book/
