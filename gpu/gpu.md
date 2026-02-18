@@ -4,6 +4,10 @@ https://habr.com/ru/articles/994956/
 
 https://habr.com/ru/articles/995170/
 
+https://github.com/infatoshi/cuda-course
+
+https://www.youtube.com/watch?v=86FAWCzIe_4
+
 https://modal.com/gpu-glossary
 
 https://jax-ml.github.io/scaling-book/
