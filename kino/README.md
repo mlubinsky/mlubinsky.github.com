@@ -1,6 +1,6 @@
 поэтом можешь ты не быть, а композитором не можешь.
 
-https://www.facebook.com/groups/831245680230275/?hoisted_section_header_type=recently_seen&multi_permalinks=6787237647964352
+https://www.facebook.com/groups/831245680230275/ Шикарный незнакомый фильм
 
 ### Serials
 https://andronic.livejournal.com/1066923.html
