@@ -6,6 +6,7 @@ https://www.chai-research.com/jobs/
 - Amazon  
 - Facebook
 - LinkedIn
+- Cisco
 - Roku  
 - Google ??
   https://www.google.com/about/careers/applications/jobs/results/143904559276663494-data-and-tools-engineer?location=Sanjose%20UnitedStates
