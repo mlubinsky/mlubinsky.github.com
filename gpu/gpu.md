@@ -88,3 +88,83 @@ https://www.youtube.com/playlist?list=PL4_hYwCyhAvbhhT3F80vt1FdB2TqklRsM  RU
 https://jax-ml.github.io/scaling-book/gpus/
 
 https://news.ycombinator.com/item?id=44943666
+
+
+Great news — your CUDA knowledge transfers well conceptually. Here's the lay of the land:
+
+## Apple's Answer to CUDA: Metal
+
+Apple Silicon GPUs (M1/M2/M3/M4 in Mac Studio) use **Metal** as the low-level GPU framework. There's no CUDA on Apple silicon — NVIDIA and Apple parted ways — so the stack looks like this:
+
+| CUDA Concept | Apple Equivalent |
+|---|---|
+| CUDA C++ kernels | Metal Shading Language (MSL) — C++14-based |
+| `__global__` kernels | `kernel` functions in MSL |
+| cuBLAS / cuDNN | Metal Performance Shaders (MPS) |
+| CUDA streams | Metal command queues / command buffers |
+| Unified memory (newer CUDA) | Unified memory is *default* on Apple Silicon |
+| nvcc | Xcode + Metal compiler (xcrun -sdk macosx metal) |
+| Nsight | Xcode GPU Frame Capture / Instruments |
+
+---
+
+## Your Main Options
+
+### 1. Metal (Native, lowest level)
+Write compute kernels in **Metal Shading Language** — it looks very much like CUDA C++:
+
+```metal
+// CUDA: __global__ void add(float* a, float* b, float* c, int n)
+kernel void add(device float* a [[buffer(0)]],
+                device float* b [[buffer(1)]],
+                device float* c [[buffer(2)]],
+                uint idx [[thread_position_in_grid]]) {
+    c[idx] = a[idx] + b[idx];
+}
+```
+
+Host-side dispatch uses Objective-C or Swift via the Metal API (`MTLDevice`, `MTLCommandQueue`, etc.). You can also use **C++ with Metal-cpp** (Apple provides a header-only C++ wrapper).
+
+### 2. Metal Performance Shaders (MPS)
+Pre-built GPU primitives for ML/compute — analogous to cuBLAS+cuDNN. Great for matrix ops, convolutions, etc. without writing kernels manually.
+
+### 3. MLX (Recommended for ML/Array work)
+Apple's own **NumPy/JAX-like framework** for Apple Silicon, open-sourced in late 2023. If you're doing ML or numerical work, this is the fastest path:
+```python
+import mlx.core as mx
+a = mx.array([1.0, 2.0, 3.0])
+b = a * 2  # runs on GPU lazily
+mx.eval(b)
+```
+It has automatic differentiation and feels like PyTorch/JAX.
+
+### 4. PyTorch with MPS backend
+PyTorch supports Apple GPU via the MPS backend — easiest migration if you already have CUDA PyTorch code:
+```python
+device = torch.device("mps")
+tensor = torch.randn(1000, 1000).to(device)
+```
+Most ops work; some less common ops fall back to CPU.
+
+### 5. OpenCL (avoid)
+Deprecated by Apple in macOS 10.14. Don't bother.
+
+---
+
+## Key Differences to Know Coming from CUDA
+
+- **No warp concept** — Apple GPUs use SIMD groups (typically 32 wide, similar to warps but called `simdgroup`)
+- **Unified memory is always on** — no explicit `cudaMemcpy` needed; CPU and GPU share the same physical memory
+- **No `__shared__` exactly** — use `threadgroup` memory instead (same idea, different keyword)
+- **Threadgroup = CUDA block**, `thread_position_in_grid` = global thread index
+- **No dynamic parallelism** in Metal (can't launch kernels from kernels)
+
+---
+
+## Recommended Path
+
+If you're doing **ML/data work** → start with **PyTorch MPS** or **MLX**  
+If you want **custom kernels** → learn **Metal compute shaders** (your CUDA knowledge maps almost directly)  
+If you want the **best performance** → Metal + MPS together
+
+The [Apple Metal documentation](https://developer.apple.com/documentation/metal) and the [MLX GitHub](https://github.com/ml-explore/mlx) are both excellent starting points.
