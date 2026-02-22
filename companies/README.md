@@ -1,5 +1,6 @@
 https://www.chai-research.com/jobs/
 
+https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ADVANCED_TECH_CENTER/
 
 - NVidia
 - Adobe
