@@ -1,5 +1,7 @@
 поэтом можешь ты не быть, а композитором не можешь.
 
+https://www.facebook.com/groups/1119158145562454/ Detectives
+
 https://www.facebook.com/groups/831245680230275/ Шикарный незнакомый фильм
 
 ### Serials
