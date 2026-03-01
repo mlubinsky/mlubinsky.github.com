@@ -332,6 +332,9 @@ A great many people think they are thinking when they are merely rearranging the
 ```
 
 ### Mishel Monten
+
+<https://www.youtube.com/playlist?list=PLE1nJ0st5qE_CNAhAdeu5DdU0Oc1UxZqn>
+
 https://www.youtube.com/watch?v=gHbh7Mxg13g  Книга 3. Ч.1 (аудиокнига)
 https://www.youtube.com/watch?v=AsvObZyEDrc&pp=0gcJCU0KAYcqIYzv
 
