@@ -2,6 +2,24 @@ https://www.chai-research.com/jobs/
 
 https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ADVANCED_TECH_CENTER/
 
+	
+ 
+
+VLM Run (https://vlm.run) | 1x Infrastructure Engineer + 2x AI/ML Engineer | Santa Clara, CA (HQ)
+VLM Run is building infrastructure for production Vision-Language Model (VLM) systems — fast inference, tool-use + orchestration, reliable structured outputs, and the observability to iterate quickly. We’re a deeply technical team of veteran AI / computer-vision engineers (20+ years combined, MIT/CMU PhDs) who’ve shipped production ML infrastructure across autonomous driving and LLMs.
+
+Open roles:
+
+1. Infrastructure Engineer (Full-time, ONSITE): $150K–$220K + 0.5–3% equity https://app.dover.com/apply/VLM%20Run/8d4fa3b1-5b38-42e1-927...
+
+2. AI/ML Engineer (Full-time, ONSITE): $150K–$220K + 0.5–3% equity https://app.dover.com/apply/VLM%20Run/1a490851-1ea1-4f12-a0f...
+
+Email hiring "at" vlm.run with your GitHub + a couple recent projects.
+
+P.S. We recently launched Orion, our visual agent that can reason and act over images, videos and documents. You can chat with Orion at https://chat.vlm.run and see capabilities at https://docs.vlm.run.
+
+Apply: https://app.dover.com/jobs/vlm-run
+
 - NVidia
 - Adobe
 - Amazon  
