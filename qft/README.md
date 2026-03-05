@@ -1,5 +1,7 @@
 https://www.lektorium.tv/node/38965
 
+https://www.youtube.com/playlist?list=PLcsjsqLLSfNBjHy-PDf31113oXynPuzEZ Renormirovka Naumov
+
 https://www.youtube.com/watch?v=ZEkFw9zi_LA 
 Наумов Д.В. - Моделирование физической реальности - 2. КТП: бесконечные мучения и глоток надежды
 
