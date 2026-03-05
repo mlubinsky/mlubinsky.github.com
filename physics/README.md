@@ -2,6 +2,12 @@
 
 https://www.theoretical-physics.com/dev/index.html
 
+
+
+
+Электронные коллективы: от физики атомов к квантовым
+<https://www.youtube.com/playlist?list=PLcsjsqLLSfNA1u6L5AtkhuYzKpRvsyu3X>
+
 https://chembaby.ru/uchebnye-materialy/fiz
 
 https://github.com/certik/theoretical-physics
