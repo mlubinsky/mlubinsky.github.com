@@ -1,8 +1,12 @@
 ## GPU
 
-https://habr.com/ru/articles/996610/ От MNIST к Transformer. Hello CUDA.
+<https://www.youtube.com/watch?v=0WjfKQdfeMU>
 
-https://habr.com/ru/articles/1001886/ От MNIST к Transformer. Часть 2. Основы работы с памятью
+<https://www.exampro.co/nca-aiio>
+
+<https://habr.com/ru/articles/996610/> От MNIST к Transformer. Hello CUDA.
+
+<https://habr.com/ru/articles/1001886/> От MNIST к Transformer. Часть 2. Основы работы с памятью
 
 https://habr.com/ru/articles/994956/
 
