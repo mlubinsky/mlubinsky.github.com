@@ -8,6 +8,10 @@
 
 <https://habr.com/ru/articles/1001886/> От MNIST к Transformer. Часть 2. Основы работы с памятью
 
+Параллельные и Распределенные Вычисления 1. История паралеллизма. Внутренний параллелизм
+Лекторий ФПМИ
+<https://www.youtube.com/watch?v=lIht6WZJL1s&list=PL4_hYwCyhAvbhhT3F80vt1FdB2TqklRsM&index=1>
+
 https://habr.com/ru/articles/994956/
 
 https://habr.com/ru/articles/995170/
