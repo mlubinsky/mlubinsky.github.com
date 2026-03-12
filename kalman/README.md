@@ -1,4 +1,8 @@
-https://thekalmanfilter.com/kalman-filter-explained-simply/
+## Kalman filter
+
+<https://habr.com/ru/articles/991860/>
+
+<https://thekalmanfilter.com/kalman-filter-explained-simply/>
 
 https://news.ycombinator.com/item?id=43029314
 
