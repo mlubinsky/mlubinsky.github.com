@@ -1,3 +1,8 @@
+## Radio and waves
+
+<https://habr.com/ru/companies/beget/articles/1009156/>
+
+
 https://habr.com/ru/companies/ruvds/articles/927108/
 
 https://habr.com/ru/companies/ddosguard/articles/928232/
