@@ -1,13 +1,18 @@
+## Diagram builders
+
+<https://habr.com/ru/companies/flowc/articles/1010400/>
+
+
 BPMN 2.0 универсальный подход при построении диаграмм
-https://habr.com/ru/articles/843942/
+<https://habr.com/ru/articles/843942/>
 
-https://news.ycombinator.com/item?id=44431178
+<https://news.ycombinator.com/item?id=44431178>
 
-https://news.ycombinator.com/item?id=43808803 text to diagram tools
+<https://news.ycombinator.com/item?id=43808803> text to diagram tools
 
- https://databasediagram.com/app
+<https://databasediagram.com/app>
 
-2. QuickDBD https://app.quickdatabasediagrams.com/#/
+2. QuickDBD <https://app.quickdatabasediagrams.com/#/>
 
 3. ERD Lab https://app.erdlab.io/designer/guest (Requires Login to Export)
 
