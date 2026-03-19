@@ -1,5 +1,7 @@
 ## GPU
 
+<https://www.youtube.com/watch?v=SVaC2ECMZXs>
+
 <https://www.youtube.com/watch?v=0WjfKQdfeMU>
 
 <https://www.exampro.co/nca-aiio>
