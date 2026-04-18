@@ -1,32 +1,36 @@
-https://marketplace.visualstudio.com/items?itemName=golang.go   VS Code extension
+## GO language
 
-https://www.bytesizego.com/courses/
+<https://habr.com/ru/articles/1025068/>
+
+<https://marketplace.visualstudio.com/items?itemName=golang.go>   VS Code extension
+
+<https://www.bytesizego.com/courses/>
 
 https://100go.co/
 
 Idiomatic GO
 
-https://news.ycombinator.com/item?id=46531622
+<https://news.ycombinator.com/item?id=46531622>
 
-https://github.com/delaneyj/toolbelt
+<https://github.com/delaneyj/toolbelt>
 
-https://dmitri.shuralyov.com/idiomatic-go
+<https://dmitri.shuralyov.com/idiomatic-go>
 
-https://jvns.ca/blog/2024/08/06/go-structs-copied-on-assignment/
+<https://jvns.ca/blog/2024/08/06/go-structs-copied-on-assignment/>
 
-https://build-your-own.org/blog/20251015_db_in_3000/ build your database in GO
+<https://build-your-own.org/blog/20251015_db_in_3000/> build your database in GO
 
-https://github.com/grishy/gopkgview 
+<https://github.com/grishy/gopkgview>
 
-https://habr.com/ru/companies/beget/articles/870138/
+<https://habr.com/ru/companies/beget/articles/870138/>
 
 Best book: Learning Go: An Idiomatic Approach to Real-world Go Programming 2nd Edition
 by Jon Bodner 
-https://www.amazon.com/_/dp/1098139291
+<https://www.amazon.com/_/dp/1098139291>
 
-https://github.com/dariubs/GoBooks
+<https://github.com/dariubs/GoBooks>
 
-https://habr.com/ru/articles/786826/  100 GO interview questions
+<https://habr.com/ru/articles/786826/>  100 GO interview questions
 
 https://tour.ardanlabs.com/tour/eng/list
 
