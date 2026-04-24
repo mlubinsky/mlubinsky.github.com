@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/articles/905828/>
 
+/opt/homebrew/opt/nifi/libexec/bin
+./nifi.sh set-single-user-credentials admin admin1234567890
 
 Как работает Apache NiFi
 ```
