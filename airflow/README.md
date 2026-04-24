@@ -1,12 +1,12 @@
-### Apache NiFi
-https://habr.com/ru/articles/905828/
+### Airflow
+
 
 Book  Practical Guide to Apache Airflow® 3
-https://www.astronomer.io/ebooks/practical-guide-to-apache-airflow-3/
+<https://www.astronomer.io/ebooks/practical-guide-to-apache-airflow-3/>
 
-https://habr.com/ru/articles/866542/
+<https://habr.com/ru/articles/866542/>
 
-https://www.astronomer.io/ebooks/apache-airflow-best-practices-etl-elt-pipelines/
+<https://www.astronomer.io/ebooks/apache-airflow-best-practices-etl-elt-pipelines/>
 
 https://habr.com/ru/articles/873668/  Airflow in Docker on Mac
 
