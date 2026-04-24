@@ -76,11 +76,11 @@ ETL-граф может запускать граф обучения после 
 
 ### DataSet (New in version 2.4)
 
-https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/datasets.html
+<https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/datasets.html>
 
-https://stackoverflow.com/questions/75869048/how-to-use-a-table-as-dataset-for-airflow-in-data-aware-scheduling
+<https://stackoverflow.com/questions/75869048/how-to-use-a-table-as-dataset-for-airflow-in-data-aware-scheduling>
 
-https://www.youtube.com/watch?v=qkMSarl7BVE  Mastering Advanced Dataset Scheduling in Apache Airflow
+<https://www.youtube.com/watch?v=qkMSarl7BVE>  Mastering Advanced Dataset Scheduling in Apache Airflow
 
 ```
 Airflow поддерживает концепцию датасетов — групп данных.
@@ -149,8 +149,9 @@ file_sensor >> task  # Execute task after file detection
 но эту последовательность можно перенастроить с помощью тега Trigger Rule.
 
 Как это выглядит в коде:
-
+```python
 @task.virtualenv(task_id='delete_rbd', trigger_rule=TriggerRule.ALWAYS, requirements=["requests==2.32.3"])
+```
 
 Примеры других значений Trigger Rule для определения последовательности выполнения task:
 
@@ -175,10 +176,10 @@ none_skipped : no parent is in a skipped state,
 dummy : dependencies are just for show, trigger at will
 ```
 
-https://www.waitingforcode.com/apache-airflow
+<https://www.waitingforcode.com/apache-airflow>
 
 
-https://habr.com/ru/articles/811807/
+<https://habr.com/ru/articles/811807/>
 
 https://cloud.google.com/blog/products/data-analytics/airflow-dag-and-task-concurrency-in-cloud-composer/
 
@@ -193,7 +194,7 @@ https://www.linkedin.com/posts/shwetank-singh-68023283_data-engineering-airflow-
 
 ### Running Databricks Notebook with Airflow
 
-https://docs.databricks.com/en/jobs/how-to/use-airflow-with-jobs.html Airflow  + Databricks
+<https://docs.databricks.com/en/jobs/how-to/use-airflow-with-jobs.html> Airflow  + Databricks
 
 https://medium.com/apache-airflow/running-databricks-notebook-with-airflow-9b38bcfb8740
 ```
@@ -265,7 +266,7 @@ airflow scheduler &
 ```
 
  Airflow: как повысить стабильность загрузки данных в 5 раз
-https://habr.com/ru/articles/792872/
+<https://habr.com/ru/articles/792872/>
 
 
 ### Mage, prefect, Dagster, AWS Step function, AWS Glue
@@ -302,7 +303,7 @@ https://medium.com/nerd-for-tech/airflow-features-callback-trigger-clsuter-polic
 
 https://medium.com/numberly-tech-blog/orchestrating-python-workflows-in-apache-airflow-fd8be71ad504
 
-Deferreble operators
+## Deferreble operators
 
 https://blog.devgenius.io/airflow-deferrable-operators-5a7c90aaa14f
 
@@ -353,7 +354,7 @@ you'll halt it until that time period. Dag stays in tact, but doesn't run.
 2) set an end_date in the past
 
 3)
-```
+```python
 default_args: {
       schedule_interval = '@once'
      } 
@@ -383,11 +384,9 @@ https://aws.amazon.com/managed-workflows-for-apache-airflow/
 
 
 ### Airflow 2
-https://airflow.apache.org/blog/airflow-two-point-oh-is-here/
+<https://airflow.apache.org/blog/airflow-two-point-oh-is-here/>
 
 https://towardsdatascience.com/is-apache-airflow-2-0-good-enough-for-current-data-engineering-needs-6e152455775c
-
-Airflow 2.3.0 dropped support for Python 3.6. It’s tested with Python 3.7, 3.8, 3.9 and 3.10.
 
 ```python
 from airflow.decorators import dag, task
@@ -449,7 +448,7 @@ start >> choose_platform >> [etl_reviews_ios, etl_reviews_android]
 https://airflow.apache.org/docs/apache-airflow/stable/_api/airflow/operators/python/index.html
 
 ```python
-classairflow.operators.python.BranchPythonOperator(*, 
+class airflow.operators.python.BranchPythonOperator(*, 
     python_callable, 
     op_args=None, 
     op_kwargs=None, 
@@ -538,8 +537,8 @@ with DAG('send_server_ip', default_args=default_args, schedule_interval=None) as
 
 ```
 
-Четыре хитрости в работе с пайплайнами данных, о которых знают не все
-https://habr.com/ru/company/vk/blog/659389/
+Четыре хитрости в работе с пайплайнами данных 
+<https://habr.com/ru/company/vk/blog/659389/>
 
 e-mail notification
 ```python
@@ -559,8 +558,9 @@ response = client.chat_postMessage(
                 text = message
                 )
  ```   
- Logging
-``` 
+### Logging
+ 
+```python 
 Import PostgresHook
 
 #Extraction Job
@@ -576,23 +576,24 @@ cursor.execute(query_to_run)
 
 ## Airflow sensors
 
-https://marclamberti.com/blog/airflow-sensors/
+<https://marclamberti.com/blog/airflow-sensors/>
 
 ### Airflow wait for s3 file
-https://www.mikulskibartosz.name/postpone-airflow-dag-until-s3-upload/
 
-https://hevodata.com/learn/s3keysensor/
+<https://www.mikulskibartosz.name/postpone-airflow-dag-until-s3-upload/>
 
-https://airflow.apache.org/docs/apache-airflow/1.10.5/_api/airflow/sensors/s3_key_sensor/index.html
+<https://hevodata.com/learn/s3keysensor/>
+
+<https://airflow.apache.org/docs/apache-airflow/1.10.5/_api/airflow/sensors/s3_key_sensor/index.html>
 
 
-https://blog.fal.ai/the-unbundling-of-airflow-2/ 
+<https://blog.fal.ai/the-unbundling-of-airflow-2/>
 
-https://airflow.apache.org/docs/
+<https://airflow.apache.org/docs/>
 
-https://levelup.gitconnected.com/airflow-command-line-interface-cli-cheat-sheet-6e5d90bd3552
+<https://levelup.gitconnected.com/airflow-command-line-interface-cli-cheat-sheet-6e5d90bd3552>
 
-airflow dags list
+airflow dags list  
 airflow tasks list
 
 https://airflow.readthedocs.io/en/1.10.10/concepts.html
@@ -606,7 +607,7 @@ https://towardsdatascience.com/data-engineers-shouldnt-write-airflow-dags-b885d5
 https://towardsdatascience.com/data-engineers-shouldnt-write-airflow-dags-part-2-8dee642493fb
 
 
-To to make Several DAGs folders?
+How to make Several DAGs folders?
 https://xnuinside.medium.com/how-to-load-use-several-dag-folders-airflow-dagbags-b93e4ef4663c
 
 we need to put in your standard dag_folder special tiny python script.
@@ -615,7 +616,7 @@ To show, how it works, we will create two separate folders: ‘~/new_dag_bag1’
 It does not matter how much long path and there it is placed. Airflow just must have rights to access those folders.
 Code in add_dag_bags.py will be:
 
-```
+```python
 """ add additional DAGs folders """
 import os
 from airflow.models import DagBag
@@ -725,7 +726,7 @@ https://www.udemy.com/course/apache-airflow/learn/lecture/17368650
 
 ### Articles
 
-https://habr.com/ru/post/549458/
+<https://habr.com/ru/post/549458/>
 
 https://khashtamov.com/en/introduction-to-apache-airflow/
 
@@ -795,11 +796,11 @@ optional arguments:
 
 ### How to get data from Postgres: use PostgresHook
 
- https://marclamberti.com/blog/the-postgresoperator-all-you-need-to-know/
+ <https://marclamberti.com/blog/the-postgresoperator-all-you-need-to-know/>
 
- https://airflow.apache.org/docs/stable/_api/airflow/hooks/postgres_hook/index.html
+ <https://airflow.apache.org/docs/stable/_api/airflow/hooks/postgres_hook/index.html>
  
- https://youtu.be/ATUARuFh3JQ
+ <https://youtu.be/ATUARuFh3JQ>
 
 ## Macro
 https://stackoverflow.com/questions/64796614/airflow-how-to-pass-template-macro-to-hive-script
@@ -830,7 +831,7 @@ EXEC_DATE = '{{ macros.ds_add(ds, 1) }}'
 
 https://towardsdatascience.com/best-practices-for-airflow-developers-990c8a04f7c6
 ```
-not all operator parameters are templated, so you need to make sure Jinja templating is enabled for the operators that you plan to pass macros to. 
+not all operator parameters are templated, so you need to make sure Jinja templating is enabled for the operators that you plan to pass macros to.  
 To check which parameters in an operator take macros as arguments, look for the template_fields attribute in the operator source code.
 For example, as of today, the most recent version of PythonOperator has three templated parameters:
 ‘templates_dict’, ‘op_args’, and ‘op_kwargs’:
@@ -866,7 +867,7 @@ http://blog.manugarri.com/how-to-trigger-a-dag-with-custom-parameters-on-airflow
   Task C will run after both Task A and B complete
 [task_a, task_b] >> task_c
 
-```
+```python
 from airflow.utils.helpers import chain
 #  Both Task B and C depend on Task A
 # Task D depends on both Task B and C
@@ -917,7 +918,7 @@ task_3 >> [task_4, task_5]
 
 
 Another example:
-```
+```python
 first_event_chain = 
 (
    hv_agg_channel_ux_day_prep & 
@@ -934,7 +935,6 @@ first_event_chain =
     & 
     channel_events_done_dummy_task
  )
-
 
 -----------------------------------------------
 
@@ -974,7 +974,7 @@ https://stackoverflow.com/questions/60601713/how-to-store-the-sql-query-result-u
 
 https://towardsdatascience.com/airflow-sharing-data-between-tasks-7bbaa27eeb1
 
-```
+```python
 def do_work():
     hiveserver = HiveServer2Hook()
     hql = "SELECT COUNT(*) FROM foo.bar"
@@ -999,13 +999,12 @@ https://github.com/airbnb/airflow/blob/master/airflow/example_dags/example_xcom.
 chain ([t1,t2,t3, fork_task, join_task] )
 ? (edited) 
 
-Michael Lu  2 hours ago
-I am not clear
+ 
 
 Nick Benthem  2 hours ago
 I'd just use it as chain(t1,t2,t3,fork_task,[branch_1,branch_2],join_task)
 
-Michael Lu  2 hours ago
+ 
 I see your point. I will try it shortly
 The chain() returns nothing.
 How my return statement should look like?
@@ -1025,7 +1024,9 @@ to my requirement?
 
 Nick Benthem  40 minutes ago
 That seems like a weird contract - and I would re-examine what you're trying to do. You might be able to wrap the function in a lambda of some sort - but t1 >> t2 is just a moniker for __rshift__. It's a function call you're trying to do - but that's getting awfully wonky.
-Check out the code here for what that >> logic is doing: https://github.com/apache/airflow/blob/5355909b5f4ef0366e38f21141db5c95baf443ad/airflow/models.py#L2569
+Check out the code here for what that >> logic is doing:
+
+https://github.com/apache/airflow/blob/5355909b5f4ef0366e38f21141db5c95baf443ad/airflow/models.py#L2569
 airflow/models.py:2569
     def __rshift__(self, other):
     
@@ -1087,7 +1088,7 @@ format as ORC
 
 
 The scheduler runs a DAG soon after (start_date + schedule_interval) is passed
-```
+```bash
 airflow list_dags
 airflow initdb
 airflow webserver
@@ -1107,7 +1108,7 @@ in airflow.cfg there are 2 parameters related to concurrency:
 parallelism
 dag_concurrency
 
-```
+```python
 with DAG (...) as dag:
     t1= SomeOperator()  # no need to pass dag to operator !!!
     t2= Another Operator
@@ -1159,16 +1160,28 @@ You must specify a different schedule_interval directly to the DAG object you in
 
 The task instances directly upstream from the task need to be in a success state. Also, if you have set 
 ``depends_on_past=True``, 
-the previous task instance needs to have succeeded (except if it is the first run for that task). Also, if ``wait_for_downstream=True``, make sure you understand what it means. You can view how these properties are set from the Task Instance Details page for your task.
+the previous task instance needs to have succeeded (except if it is the first run for that task).   
+Also, if ``wait_for_downstream=True``, make sure you understand what it means.   
+You can view how these properties are set from the Task Instance Details page for your task.
 
-That means one schedule_interval AFTER the start date. An hourly DAG, for example, will execute its 2pm run when the clock strikes 3pm. The reasoning here is that Airflow can't ensure that all data corresponding to the 2pm interval is present until the end of that hourly interval.
+That means one schedule_interval AFTER the start date.  
+An hourly DAG, for example, will execute its 2pm run when the clock strikes 3pm.   
+The reasoning here is that Airflow can't ensure that all data corresponding to the 2pm interval is present until the end of that hourly interval.
  
 
-For a DAG to be executed, the ``start_date`` must be a time in the past, otherwise Airflow will assume that it's not yet ready to execute. When Airflow evaluates your DAG file, it interprets ``datetime.now()`` as the current timestamp (i.e. NOT a time in the past) and decides that it's not ready to run. Since this will happen every time Airflow heartbeats (evaluates your DAG) every 5-10 seconds, *it'll never run*.
+For a DAG to be executed, the ``start_date`` must be a time in the past,   
+otherwise Airflow will assume that it's not yet ready to execute. When Airflow evaluates your DAG file,   
+it interprets ``datetime.now()`` as the current timestamp (i.e. NOT a time in the past)   
+and decides that it's not ready to run.   
+Since this will happen every time Airflow heartbeats (evaluates your DAG) every 5-10 seconds, *it'll never run*.
 
-To properly trigger your DAG to run, make sure to insert a fixed time in the past (e.g. datetime(2019,1,1)) and set ``catchup=False`` (unless you're looking to run a backfill).
+To properly trigger your DAG to run, make sure to insert a fixed time in the past (e.g. datetime(2019,1,1))   
+and set ``catchup=False`` (unless you're looking to run a backfill).
 
-Note: You can manually trigger a DAG run via Airflow's UI directly on your dashboard (it looks like a "Play" button). A manual trigger executes immediately and will not interrupt regular scheduling, though it will be limited by any concurrency configurations you have at the DAG, deployment level or task level. When you look at corresponding logs, the run_id will show manual__ instead of scheduled__.
+Note: You can manually trigger a DAG run via Airflow's UI directly on your dashboard (it looks like a "Play" button).   
+A manual trigger executes immediately and will not interrupt regular scheduling,  
+though it will be limited by any concurrency configurations you have at the DAG, deployment level or task level.   
+When you look at corresponding logs, the run_id will show manual__ instead of scheduled__.
 
 <https://www.astronomer.io/blog/7-common-errors-to-check-when-debugging-airflow-dag/>
 
@@ -1442,7 +1455,7 @@ There are five categories of tests in Airflow that you can write:
 * Integration Tests: To test the communication between tasks. For example, task1 pass some information to task 2 using Xcoms.
 * End to End Pipeline Tests: To test and verify the integration between each task. You can also assert the data on successful completion of the E2E pipeline.
 
-```
+```python
 from datetime import datetime
 from airflow import DAG
 from airflow.operators.dummy_operator import DummyOperator
@@ -1466,7 +1479,8 @@ dummy_operator >> hello_operator
 dummy_operator >> multiplyby5_operator
 ```
 Here is  multiplyby5_operator:
-```
+
+```python
 import logging
 
 from airflow.models import BaseOperator
@@ -1493,7 +1507,7 @@ class MultiplyBy5Plugin(AirflowPlugin):
 
 
 Validation Test
-```
+```python
 import unittest
 from airflow.models import DagBag
 
@@ -1525,7 +1539,8 @@ unittest.TextTestRunner(verbosity=2).run(suite)
 ```
 
 Pipeline /definition test:
-```
+
+```python
 
 import unittest
 from airflow.models import DagBag
@@ -1577,7 +1592,7 @@ unittest.TextTestRunner(verbosity=2).run(suite)
 
 ```
 TestMultiplyBy5Operator:
-```
+```python
 import unittest
 from datetime import datetime
 from airflow import DAG
