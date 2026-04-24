@@ -15,12 +15,13 @@ https://habr.com/ru/companies/beget/articles/928712/  Airflow, Superset and Clic
 https://towardsdatascience.com/airflow-data-intervals-a-deep-dive-15d0ccfb0661
 
 ```
-Airflow uses SequentialExecutor by default. However, by its nature, the user is limited to executing at most one task at a time.
+Airflow uses SequentialExecutor by default.
+However, by its nature, the user is limited to executing at most one task at a time.
 Sequential Executor also pauses the scheduler when it runs a task, hence it is not recommended in a production setup.
 You should use the LocalExecutor for a single machine.
 For a multi-node setup, you should use the Kubernetes executor or the Celery executor.
 ```
-https://www.youtube.com/watch?v=J1wze8tUvw0
+<https://www.youtube.com/watch?v=J1wze8tUvw0>
 
 создание шаблонных DAG на основе конфигурационных и коллективных файлов для повышения эффективности работы с AirFlow.  
 
@@ -43,7 +44,9 @@ Every DAG run in Airflow is associated with a "Data Interval", which indicates t
 2️⃣ The second run of the DAG starts at 00:00 on January 2nd and ends at 00:00 on January 3rd, and so on.
 3️⃣ This pattern continues, with each run operating on its assigned interval, defined by a specific start and end time.
 
-Switching to {{ 𝗱𝗮𝘁𝗮_𝗶𝗻𝘁𝗲𝗿𝘃𝗮𝗹_𝗲𝗻𝗱 | 𝗱𝘀 }} ensures your DAGs remain aligned with their defined intervals, especially if your schedule includes non-daily intervals like weekly or monthly runs. This approach makes your pipelines more consistent and reliable. ✅
+Switching to {{ 𝗱𝗮𝘁𝗮_𝗶𝗻𝘁𝗲𝗿𝘃𝗮𝗹_𝗲𝗻𝗱 | 𝗱𝘀 }} ensures your DAGs remain aligned with their defined intervals,
+especially if your schedule includes non-daily intervals like weekly or monthly runs. 
+his approach makes your pipelines more consistent and reliable. ✅
 
 
 all_success — правило по умолчанию. Задача запускается, если все предыдущие задачи завершены со статусом успеха.
@@ -58,7 +61,8 @@ all_skipped, one_success, one_done и другие — существует мн
 
 
 3. TriggerDagRunOperator
-Этот оператор отправляет сигнал запуска из одного графа в другой. Например, ETL-граф может запускать граф обучения после завершения своих задач.
+Этот оператор отправляет сигнал запуска из одного графа в другой. Например,
+ETL-граф может запускать граф обучения после завершения своих задач.
 Также этот метод можно использовать для запуска других графов.
 Он решает задачу своевременного запуска зависимых графов и позволяет отслеживать связи в разделе DAG Dependencies.
 Однако при добавлении нового графа потребуется вручную прописывать зависимость в коде.
@@ -71,6 +75,7 @@ all_skipped, one_success, one_done и другие — существует мн
 ```
 
 ### DataSet (New in version 2.4)
+
 https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/datasets.html
 
 https://stackoverflow.com/questions/75869048/how-to-use-a-table-as-dataset-for-airflow-in-data-aware-scheduling
@@ -94,12 +99,14 @@ These DAGs are triggered by external events rather than a predefined schedule.
 
 Triggers include:
 
-File Sensor: A DAG runs when a file arrives in a specific directory.
-API Trigger: A DAG runs when an external system sends an API request.
-Task Dependency: A DAG runs when another DAG completes.
-Custom Event Trigger: Using Airflow's event-driven capabilities like TriggerDagRunOperator.
+- File Sensor: A DAG runs when a file arrives in a specific directory.
+- API Trigger: A DAG runs when an external system sends an API request.
+- Task Dependency: A DAG runs when another DAG completes.
+- Custom Event Trigger: Using Airflow's event-driven capabilities like TriggerDagRunOperator.
+```
 Example: Triggering a DAG when a file arrives in a directory
 
+```python
 from airflow import DAG
 from airflow.operators.dummy_operator import DummyOperator
 from airflow.sensors.filesystem import FileSensor
@@ -133,9 +140,9 @@ file_sensor >> task  # Execute task after file detection
 ```
 ### Trigger rules
 
-https://habr.com/ru/companies/dbraincloud/articles/861842/
+<https://habr.com/ru/companies/dbraincloud/articles/861842/>
 
-https://airflow.apache.org/docs/apache-airflow/1.10.9/concepts.html#trigger-rules
+<https://airflow.apache.org/docs/apache-airflow/1.10.9/concepts.html#trigger-rules>
 
 ```
 В стандартных настройках Airflow при прерывании одной из задач работа DAG полностью останавливается,
@@ -193,8 +200,10 @@ https://medium.com/apache-airflow/running-databricks-notebook-with-airflow-9b38b
 The Databricks provider was recently updated to include something like 'DatabricksWorkflowOperator',
 which acts as an Airflow task group, and combines all tasks (run notebook, execute jar,..) in 1 job.
 Upon running the Dag, Airflow uses the job create/update API to create/update the exact job definition, and triggers it.
+
 Very useful because you can (re)use job compute, follow progress in both Airflow and Databricks,
- your engineers can look at logs in the regular Databricks workflows menu like before while the orchestration/triggering stays in Airflow
+your engineers can look at logs in the regular Databricks workflows menu
+like before while the orchestration/triggering stays in Airflow
  (useful if you need to orchestrate with other processes outside of Databricks).
 
  It takes some time to get started with it because there are not too many examples/documentation,
@@ -238,14 +247,15 @@ https://stackabuse.com/running-airflow-locally-with-docker-a-technical-guide/
 
 ### Airflowctl
 https://airflowsummit.org/sessions/2023/introducing-airflowctl/
-```
+
+```bash
 pip install airflow ctl
 https://github.com/kaxil/airflowctl
 ```
 
 
 https://www.restack.io/docs/airflow-knowledge-apache-mac-m1-install
-```
+```bash
 python3 -m venv airflow_venv
 source airflow_venv/bin/activate
 pip install apache-airflow==2.2.3 --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.2.3/constraints-3.8.txt
@@ -320,7 +330,7 @@ https://airflow.apache.org/docs/apache-airflow/stable/dag-run.html
 
 https://habr.com/ru/companies/neoflex/articles/736292/
 
-```
+```python
 dag = DAG(
     "example_parameterized_dag",
     schedule=None,
@@ -379,7 +389,7 @@ https://towardsdatascience.com/is-apache-airflow-2-0-good-enough-for-current-dat
 
 Airflow 2.3.0 dropped support for Python 3.6. It’s tested with Python 3.7, 3.8, 3.9 and 3.10.
 
-```
+```python
 from airflow.decorators import dag, task
 from airflow.utils.dates import days_ago
 
@@ -409,7 +419,7 @@ tutorial_etl_dag = tutorial_taskflow_api_etl()
 ```
 
 ### BranchPythonOperator
-```
+```python
     def _choose_platform(**kwargs):
         platform = kwargs.get("templates_dict").get("platform")
         print("INSIDE _choose_platform(): platform=", platform)
@@ -437,7 +447,8 @@ start >> choose_platform >> [etl_reviews_ios, etl_reviews_android]
 
 #### BranchPythonOperator
 https://airflow.apache.org/docs/apache-airflow/stable/_api/airflow/operators/python/index.html
-```
+
+```python
 classairflow.operators.python.BranchPythonOperator(*, 
     python_callable, 
     op_args=None, 
@@ -450,10 +461,9 @@ Bases: PythonOperator, airflow.models.skipmixin.SkipMixin
 ```
 You can pass params to python_callable vi op_args or op_kwarrgs
 
-```
 PythonOperator have a named parameter op_kwargs and accepts dict object.
 
-have
+```python
 
 t5_send_notification = PythonOperator(
     task_id='t5_send_notification',
@@ -479,7 +489,8 @@ It derives the PythonOperator and expects a Python function that returns a singl
 
 ### Writing DAG with XCOM
 From https://databand.ai/blog/airflow-2-0-and-why-we-are-excited-at-databand/
-```
+
+```python
 def prepare_email(**kwargs):
     ti = kwargs['ti']
     raw_json = ti.xcom_pull(task_ids='get_ip')
@@ -506,7 +517,7 @@ https://databand.ai/blog/streamline-your-pipeline-code-with-functional-dags-in-a
 Annotating a function with the @task decorator converts the function to a “PythonFunctionalOperator” that’s created behind the scenes when Airflow prepares your DAG for execution. 
 
 The multiple_outputs attribute marks that this function will return more than a single value.
-```
+```python
 @task(multiple_outputs=True)
 def prepare_email(raw_json: str) -> Dict[str, str]:
     external_ip = json.loads(raw_json)['origin']
@@ -531,7 +542,7 @@ with DAG('send_server_ip', default_args=default_args, schedule_interval=None) as
 https://habr.com/ru/company/vk/blog/659389/
 
 e-mail notification
-```
+```python
 from airflow.utils.email import send_email
 
 email_to = 'receivers@email.com'
@@ -634,7 +645,7 @@ Decorator Airflow
 https://levelup.gitconnected.com/airflow-decorators-for-a-clean-data-pipeline-48ebdf12e9b0
 
 
-```
+```python
 import os
 import sys
 import sysconfig
