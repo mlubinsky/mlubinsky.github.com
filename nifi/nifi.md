@@ -4,6 +4,201 @@
 
 <https://habr.com/ru/articles/905828/>
 
+# Apache NiFi: Sensor Data Pipeline — Collect → Convert → Store
+
+Here's a full walkthrough of how NiFi handles this end-to-end.
+
+---
+
+## The Big Picture
+
+```
+[Sensors] ──► [NiFi: Ingest] ──► [NiFi: Transform] ──► [NiFi: Write] ──► [Oracle DB]
+```
+
+NiFi models everything as **FlowFiles** (data packets) flowing through **Processors** connected by **Relationships** (success, failure, retry).
+
+---
+
+## Step 1 — Collect Data from Sensors (Every Minute)
+
+NiFi offers several processors depending on how sensors publish data:
+
+| Sensor Protocol | NiFi Processor |
+|---|---|
+| MQTT (IoT standard) | `ConsumeMQTT` |
+| HTTP/REST endpoint | `InvokeHTTP` + `GenerateFlowFile` (scheduled) |
+| TCP/UDP socket | `ListenTCP` / `ListenUDP` |
+| Modbus / OPC-UA | `GetFile` or custom script via `ExecuteScript` |
+| CSV/JSON file drop | `GetFile` / `ListenHTTP` |
+
+**Scheduling:** Every processor has a **Run Schedule**. Set it to `1 min` (cron: `0 * * * * ?`) in the processor config. NiFi will trigger the processor on that interval.
+
+**Example flow for MQTT sensors:**
+```
+[ConsumeMQTT]
+  topic: sensors/temperature/+
+  broker: tcp://mqtt-broker:1883
+  Run Schedule: 0 * * * * ?   ← every 1 minute
+```
+
+The raw payload (JSON, CSV, binary) becomes a FlowFile.
+
+---
+
+## Step 2 — Parse & Convert Units of Measure
+
+This is where NiFi's transformation processors shine.
+
+### 2a. Parse the raw payload
+Use **`EvaluateJsonPath`** to extract fields from JSON sensor data:
+```
+sensor_id  → $.device_id
+raw_value  → $.value
+unit       → $.unit
+timestamp  → $.ts
+```
+These become **FlowFile Attributes** (key-value metadata).
+
+### 2b. Convert units with `UpdateAttribute` or `ExecuteScript`
+
+**Option A — Simple math with `UpdateAttribute` (Expression Language):**
+```
+# Celsius → Fahrenheit
+value_converted = ${raw_value:multiply(1.8):plus(32)}
+
+# Meters → Feet
+value_converted = ${raw_value:multiply(3.28084)}
+
+# Pa → PSI
+value_converted = ${raw_value:multiply(0.000145038)}
+```
+
+**Option B — Complex logic with `ExecuteScript` (Python/Groovy):**
+```python
+# Groovy example
+import groovy.json.JsonSlurper
+
+def flowFile = session.get()
+def json = new JsonSlurper().parseText(
+    flowFile.getAttribute('raw_payload')
+)
+
+def converted = json.unit == 'C' 
+    ? json.value * 1.8 + 32   // to Fahrenheit
+    : json.value
+
+// Write back to FlowFile attribute
+flowFile = session.putAttribute(flowFile, 'value_converted', converted.toString())
+flowFile = session.putAttribute(flowFile, 'unit_out', 'F')
+session.transfer(flowFile, REL_SUCCESS)
+```
+
+**Option C — `JoltTransformJSON`** for structural transformation + unit mapping using JOLT spec DSL (great for complex JSON reshaping).
+
+### 2c. Build the final record with `ReplaceText` or `AttributesToJSON`
+Compose a clean JSON or SQL-ready payload:
+```json
+{
+  "sensor_id": "TEMP_001",
+  "value_f": 98.6,
+  "unit": "F",
+  "collected_at": "2026-04-24T10:00:00Z"
+}
+```
+
+---
+
+## Step 3 — Write to Oracle Database
+
+### 3a. Set up the Oracle DBCPConnectionPool (Controller Service)
+This is a shared connection pool configured once and reused by all DB processors:
+```
+Database Connection URL:  jdbc:oracle:thin:@//oracle-host:1521/ORCL
+Database Driver Class:    oracle.jdbc.OracleDriver
+Driver JAR Location:      /opt/nifi/lib/ojdbc8.jar   ← you add this
+Username:                 nifi_user
+Password:                 ••••••
+Max Total Connections:    10
+```
+
+> ⚠️ You must manually download `ojdbc8.jar` from Oracle and place it in NiFi's lib directory — Oracle doesn't allow redistribution.
+
+### 3b. Write with `PutDatabaseRecord` (recommended) or `ExecuteSQL`
+
+**`PutDatabaseRecord`** is the modern, schema-aware approach:
+```
+Record Reader:       JsonTreeReader
+Statement Type:      INSERT
+Table Name:          SENSOR_READINGS
+DBCPConnectionPool:  [your Oracle pool above]
+```
+
+It automatically maps JSON fields → Oracle columns by name.
+
+**Target Oracle table:**
+```sql
+CREATE TABLE SENSOR_READINGS (
+    id          NUMBER GENERATED ALWAYS AS IDENTITY,
+    sensor_id   VARCHAR2(50),
+    value_raw   NUMBER(10,4),
+    value_conv  NUMBER(10,4),
+    unit_in     VARCHAR2(10),
+    unit_out    VARCHAR2(10),
+    collected_at TIMESTAMP,
+    inserted_at  TIMESTAMP DEFAULT SYSTIMESTAMP
+);
+```
+
+---
+
+## Complete Flow Diagram
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     NiFi Canvas                             │
+│                                                             │
+│  [ConsumeMQTT]                                              │
+│  schedule: 1 min  ──► [EvaluateJsonPath]                   │
+│                              │                              │
+│                              ▼                              │
+│                       [UpdateAttribute]                     │
+│                       (unit conversion                      │
+│                        via Expression                       │
+│                        Language)                            │
+│                              │                              │
+│                              ▼                              │
+│                       [AttributesToJSON]                    │
+│                       (build output record)                 │
+│                              │                              │
+│                    ┌─────────┴──────────┐                  │
+│                 success              failure                │
+│                    │                    │                   │
+│                    ▼                    ▼                   │
+│           [PutDatabaseRecord]    [LogMessage]               │
+│           Oracle connection      + [PutFile]                │
+│                                  (error archive)            │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Key Best Practices
+
+**Reliability:** Always connect the `failure` relationship to a `LogAttribute` + `PutFile` processor to archive failed FlowFiles for reprocessing — never leave a relationship unconnected.
+
+**Back-pressure:** NiFi has built-in back-pressure on queues between processors. If Oracle is slow, NiFi buffers FlowFiles in its internal content repo rather than dropping data.
+
+**Provenance:** Every FlowFile is tracked end-to-end. You can replay any failed record from NiFi's Data Provenance UI with a single click.
+
+**Scaling:** If sensor volume grows, you can increase processor concurrent tasks or deploy NiFi as a cluster — the flow definition doesn't change.
+
+**Security:** Use NiFi's `SSLContextService` for encrypted MQTT/HTTPS connections and store DB passwords in NiFi's encrypted `Sensitive Properties Key` vault, never in plaintext.
+
+---
+
+This gives you a fully auditable, retry-safe, schema-aware pipeline from raw sensor readings to a normalized Oracle table — with unit conversion happening in-flight, all configured through NiFi's drag-and-drop UI with no custom application code required for the basic case.
+
 ### Setup on MacBook 
 ```
 /opt/homebrew/opt/nifi/libexec/bin
