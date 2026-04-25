@@ -3,7 +3,7 @@ theme: jekyll-theme-modernist
 title: Michael Lubinsky 
 
 # markdown            : kramdown
-markdown: GFM
+# markdown: GFM
 
 # markdown: CommonMarkGhPages
 # commonmark:
