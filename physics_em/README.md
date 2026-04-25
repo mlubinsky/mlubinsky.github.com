@@ -1,3 +1,6 @@
+### Electrodynamics
+
+
 https://www.amazon.com/Electricity-Magnetism-Mathematicians-Thomas-Garrity-dp-1107435161/dp/1107435161
 
 
@@ -7,7 +10,7 @@ https://habr.com/ru/articles/825522/  Квантовая электродина�
 
 https://ufn.ru/ru/articles/1988/9/e/ Специальная теория относительности и эффект Саньяка
 
-Classical Electrodynamics: A Tutorial on its Foundations∗
+Classical Electrodynamics: A Tutorial on its Foundations
 https://arxiv.org/pdf/physics/9907046.pdf
 
 https://fizteh.urfu.ru/fileadmin/user_upload/site_19855/Studentu/Literatura/Atomnaja_fizika/Laboratornaja_rabota_No11_Formula_Planka__PDF__620KB_.pdf
