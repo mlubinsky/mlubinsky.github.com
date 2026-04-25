@@ -1,3 +1,5 @@
+## Machine Learning 2
+
 https://developers.google.com/machine-learning/crash-course/
 
 automatic differntiation JAX
@@ -43,7 +45,7 @@ https://medium.com/@outside2SDs/an-overview-of-correlation-measures-between-cate
 
 https://seaborn.pydata.org/generated/seaborn.heatmap.html
 
-```
+```python
 import csv
 import numpy as np
 import pandas as pd
@@ -298,7 +300,7 @@ https://towardsdatascience.com/poisson-regression-and-generalised-linear-models-
 https://towardsdatascience.com/introduction-to-streaming-algorithms-b71808de6d29
  algorithms that are able to process an extremely large, maybe even unbounded, data set and compute some desired output using only a constant amount of RAM.
 
-```
+```python
 class StreamingMean:
     def __init__(self):
         self.result = 0
@@ -309,7 +311,7 @@ class StreamingMean:
         self.n += 1
 ```
 https://en.wikipedia.org/wiki/Reservoir_sampling
-```
+```python
 from random import random
 
 class ReservoirSampler:
