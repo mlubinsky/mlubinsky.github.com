@@ -1,13 +1,13 @@
-https://www.db-fiddle.com/
+## SQL
 
-https://sqlize.online/
+<https://www.db-fiddle.com/>  <https://sqlize.online/>
 
-https://blog.devgenius.io/master-sql-with-multiple-ctes-window-functions-frames-and-subquery-in-one-leetcode-challenge-882fd803d7e7
+<https://blog.devgenius.io/master-sql-with-multiple-ctes-window-functions-frames-and-subquery-in-one-leetcode-challenge-882fd803d7e7>
 
-https://habr.com/ru/articles/913682/ локальный SQL-редактор в браузере на DuckDB и WASM
+<https://habr.com/ru/articles/913682/> локальный SQL-редактор в браузере на DuckDB и WASM
 
 ### FIRST_VALUE()  LAST_VALUE()
-https://medium.com/towards-data-engineering/sql-first-and-last-value-functions-6e4519937965
+<https://medium.com/towards-data-engineering/sql-first-and-last-value-functions-6e4519937965>
 
 ```
 There is Postgres table T with  3 columns :  user , timestamp and  status. 
@@ -128,16 +128,16 @@ ORDER BY "user";
 
 ### LATERAL JOIN 
 
-https://www.geeksforgeeks.org/lateral-keyword-in-sql/
+<https://www.geeksforgeeks.org/lateral-keyword-in-sql/>
 
-https://medium.com/@goldengrisha/a-deep-dive-into-sql-lateral-join-7b09fcb3b745
+<https://medium.com/@goldengrisha/a-deep-dive-into-sql-lateral-join-7b09fcb3b745>
 
-https://www.crunchydata.com/developers/playground/lateral-join
+<https://www.crunchydata.com/developers/playground/lateral-join>
 
 https://www.edgedb.com/  Юрием Селивановым, CEO и co-founder Edgedb,
 
 Regular expressions in SQL
-https://habr.com/ru/companies/otus/articles/851942/
+<https://habr.com/ru/companies/otus/articles/851942/>
 
 https://coffingdw.com/analytic-and-window-functions-for-all-systems-over-100-blogs/  
 https://coffingdw.com/date-functions-date-formats-and-timestamp-formats-for-all-databases-45-blogs-in-one/
@@ -151,8 +151,8 @@ SELECT * FROM users WHERE title != 'manager'
 
 ### ACID
 
-https://habr.com/ru/articles/843794/   
-https://habr.com/ru/articles/860982/
+<https://habr.com/ru/articles/843794/>   
+<https://habr.com/ru/articles/860982/>
 ```
 1. Атомарность (atomicity). Транзакция фиксируется либо полностью, либо ни одна ее часть не фиксируется
 
@@ -171,7 +171,7 @@ https://habr.com/ru/articles/860982/
 
 ### The SQL isolation levels 
 
-https://www.thenile.dev/blog/transaction-isolation-postgres
+<https://www.thenile.dev/blog/transaction-isolation-postgres>
 
 ```
 1. Serializable (most strict, expensive):
@@ -218,7 +218,7 @@ https://habr.com/ru/articles/846712/
 
 https://www.crunchydata.com/blog/window-functions-for-data-analysis-with-postgres
 
-### find the whole data for the row with some max value in a column per some group identifier. 
+### Find the whole data for the row with some max value in a column per some group identifier. 
 ```sql
 SELECT a.id, a.rev, a.contents
 FROM YourTable a
@@ -283,9 +283,9 @@ https://duckdb.org/docs/guides/sql_features/asof_join.html
 
 ### Query optimizer
 
-https://howqueryengineswork.com/
+<https://howqueryengineswork.com/>
 
-https://vldb.org/pvldb/vol14/p2383-fent.pdf A Practical Approach to Groupjoin and Nested Aggregates
+<https://vldb.org/pvldb/vol14/p2383-fent.pdf> A Practical Approach to Group join and Nested Aggregates
 
 https://xuanwo.io/2024/02-what-i-talk-about-when-i-talk-about-query-optimizer-part-1/
 
@@ -298,23 +298,23 @@ Difficulty level - FAANG
 
 1) Users By Average Session Time (Facebook ,Medium)
 
-https://lnkd.in/gKneV29k
+<https://lnkd.in/gKneV29k>
 
 2) Videos Removed on Latest Date ( Google , Hard)
 
-https://lnkd.in/gG3b4hXi
+<https://lnkd.in/gG3b4hXi>
 
 3) Employed at Google ( Company — linkedln ,Medium)
 
-https://lnkd.in/g6jAGyRb
+<https://lnkd.in/g6jAGyRb>
 
 4) Recommendation System (Meta/Facebook, Medium)
 
-https://lnkd.in/gPEfkEJx
+<https://lnkd.in/gPEfkEJx>
 
 5) Rank Variance Per Country (Facebook,Hard)
 
-https://lnkd.in/gv753AiD
+<https://lnkd.in/gv753AiD>
 
 
 
