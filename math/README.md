@@ -1,7 +1,8 @@
+## Math
 
-https://old.mccme.ru/dubna/
+<https://old.mccme.ru/dubna/>
 
-https://www.youtube.com/watch?v=RhpVSV6iCko  Short proof of Abel's theorem that 5th degree polynomial equations cannot be solved
+<https://www.youtube.com/watch?v=RhpVSV6iCko>  Short proof of Abel's theorem that 5th degree polynomial equations cannot be solved
 
 https://vk.com/mathhedgehog
 
