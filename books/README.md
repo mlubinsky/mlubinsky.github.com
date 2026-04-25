@@ -1,6 +1,8 @@
-https://nononsensebooks.com/
+## Books
 
-https://alexandr4784.narod.ru/ math physics
+<https://nononsensebooks.com/>
+
+<https://alexandr4784.narod.ru/> math physics
 
 https://ikfia.ysn.ru/v-pomoshh-studentu-i-aspirantu/
 
@@ -14,7 +16,7 @@ https://annas–archive.se/
 
 https://jakobschwichtenberg.com/
 
-https://theoreticalminimum.com/references   Leonard Susskind
+<https://theoreticalminimum.com/references>   Leonard Susskind
 
 https://techlibrary.ru/
 
