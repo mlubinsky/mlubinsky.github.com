@@ -1,3 +1,5 @@
+### LLM
+
 https://github.com/averkij/mstu-nlp-course Обзор современного машинного обучения
 
 https://habr.com/ru/post/704592/  Введение в библиотеку Transformers и платформу Hugging Face
