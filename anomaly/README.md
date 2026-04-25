@@ -1,3 +1,5 @@
+### Anomaly Detection
+
 https://blog.jetbrains.com/pycharm/2025/01/anomaly-detection-in-machine-learning/
 
 https://github.com/yzhao062/anomaly-detection-resources
