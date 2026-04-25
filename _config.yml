@@ -3,7 +3,14 @@ theme: jekyll-theme-modernist
 title: Michael Lubinsky 
 
 # markdown            : kramdown
-# markdown: GFM
+markdown: GFM
+
+# markdown: CommonMarkGhPages
+# commonmark:
+#  options: ["UNSAFE", "SMART"]
+#  extensions: ["strikethrough", "autolink", "table"]  # <-- autolink does it
+
+
 # plugins:
 #   - jekyll-optional-front-matter
 # https://docs.github.com/en/pages  
