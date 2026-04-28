@@ -24,6 +24,10 @@ https://pages.uoregon.edu/koch/
 https://www.youtube.com/watch?v=uhtb8FD_GAI&list=PLPFUq1zn8x35_0NTQqHNKwCjb9CVhS7MX
 
 
+### Func Analysis
+
+https://www.youtube.com/playlist?list=PL4_hYwCyhAva5t4SQDeJowNSz6qyzg76P
+
 ### Properties of hight-dimentional spaces
 
 https://people.eecs.berkeley.edu/~jrs/highd/
