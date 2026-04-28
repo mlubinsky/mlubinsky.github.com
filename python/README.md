@@ -25,7 +25,7 @@ https://medium.com/@martin.heinz/python-cli-tricks-that-dont-require-any-code-wh
 https://medium.com/@ajaymaurya73130/10-powerful-things-you-didnt-know-python-s-csv-module-could-do-1577f577510d
 
 Generate dates in range
-```
+```python
 import datetime
 def generate_dates_in_range(start_date, end_date, range="DAY"):
   start = datetime.datetime.strptime(start_date, "%Y-%m-%d")
@@ -50,7 +50,7 @@ def generate_dates_in_range(start_date, end_date, range="DAY"):
 ```
 
 ### find_file_entries  -  Walk through the folder and its subfolders
-```
+```python
 import os
 def find_file_entries(file_name, folder):
     result = []
@@ -65,7 +65,7 @@ def find_file_entries(file_name, folder):
  ```   
 ### env var
 
-```
+```python
 import os
 if 'HOME' in os.environ:
     v = os.environ.get('HOME')
@@ -157,7 +157,7 @@ https://github.com/scottrogowski/code2flow
 Use
 @dataclasses (especially with frozen=True) 
 
-```
+```python
 a_items = [1,2,3]
 b_items = [4,5,6]
 
@@ -196,8 +196,8 @@ python -m json.tool my_json.json   # json beautifier - warning: will sort the ke
  
  
  Preserve the json key orders 
- ```
- import json
+ ```python
+import json
 import collections
 
 def pp_json(json_thing, sort=False, indents=4):
@@ -219,7 +219,7 @@ pp_json(json_string_or_dict, False, 2)
 ```
  
 Another useful python json processing script: https://replit.com/@gabrielsroka/Bash#pj.py
-```
+```python
 """ (space/comma)-delimited list of dotted values, eg
 echo "$r" | python pj.py 'id profile.login profile.email'
 or
@@ -260,7 +260,7 @@ main()
 
  
  ####  Python Libraries
-``` 
+```python 
 from stdlib_list import stdlib_list
  
 # Change this 3.7 to version of Python
@@ -277,12 +277,12 @@ print('[%s]' % '\n'.join(map(str, libraries))
   a deque is also more efficient than lists for adding and removing values at both ends. 
   There are the methods append, appendleft, pop, popleftthat all take O(1). 
   On the other hand, accessing elements in the middle is more expensive, approximately O(n).
-``` 
+```python 
  from collections import deque
  a = deque(maxlen=10)
 ``` 
 #### Counter
-```
+```python
 from collections import Counter
 c = (“aaabbccdaaa”)
 print(c)
@@ -299,7 +299,7 @@ for word in text.split(" "):
 print(c)
 ```
 Actually we can do even better using the Counter’s constructor:
-```
+```python
 from collections import Counter
 text = 'and another long text but interesting and fun'
 c = Counter(text.split(" "))
@@ -310,19 +310,15 @@ print(c)
 #### Counter most_common()
 
 The most_common method: Print the 3 most common words, along with their count
-```
-print(c.most_common(3))
- 
-there is a very useful method in Counter called most_common().
- to print the first two letters that are used most often, the most_common() method can help:
+```python
 
 from collections import Counter
 chars = Counter(title)
 print(chars.most_common(2))
 # [(' ', 9), ('a', 6)]
- 
+``` 
 to count how many times each letter is used in a piece of text
-
+```python
 from collections import Counter
 
 title = "3 Variants of Python Dictionaries That Make Your Coding Easier"
@@ -332,12 +328,12 @@ print(chars)
 ```
 
 #### Square all numbers
-```
+```python
 numbers = [1,2,3,4,5,6,7]
 output = [num**2 for num in numbers]
 ```
 #### Flatten a list of lists
-```
+```python
 input_list = [[1], [2,3,4], [5,6], [7,8], [9]]
 output_list = [item for sublist in input_list for item in sublist]
 print(output_list)
@@ -347,7 +343,7 @@ Output:
 ```
 
 #### DefaultDict
-``` 
+```python
 from collections import defaultdict
 
 dict_of_list = defaultdict(list)
@@ -357,16 +353,14 @@ toAdd =[("key1", 3), ("key2", 5), ("key3", 6), ("key2", 7)]
 d = defaultdict(list)
 for key, val in toAdd:
   d[key].append(val)
-  
-  
+
 city = defaultdict(str)
 city['UK'] = 'London'
 print(city['Italy'] == '')
-True  
+# True  
 ```
 
-
- ```
+```
  last element of array:
   s[-1]
   
@@ -401,17 +395,15 @@ The list.sort() method is only defined for lists. In contrast, the sorted() func
 Note that both list.sort() and sorted() have a key parameter t
 ```
 ### Merging 2 dictionaries
-``` 
+```python
 dict1 = {'a':2 , 'b': 20}
 dict2 = {'c':15 , 'a': 40}
 merged_dict = {**dict1, **dict2}
 print(merged_dict)
-{'a': 40, 'b': 20, 'c': 15}
- 
-
+# {'a': 40, 'b': 20, 'c': 15}
 ```
 ### dot product:
-```
+```python
  def dotProduct(listA,listB): 
     return sum( [x*y] for x,y in zip(listA, listB)]
     
@@ -425,7 +417,7 @@ print(merged_dict)
         return result
 ```	
 ### Anagram 	
-```
+```python
     from collections import Counter
 
     def anagram(first, second):
@@ -435,7 +427,7 @@ print(merged_dict)
          return first == second[::-1]	 
 ```
 ### size in bytes
-```
+```python
     import sys 
     variable = 30 
     print(sys.getsizeof(variable))
@@ -450,7 +442,7 @@ print(merged_dict)
 ```    
    
 ###  splits the list into smaller lists of the specified size:
-```
+```python
    def chunk(list, size):
     return [list[i:i+size] for i in range(0,len(list), size)]
     
@@ -459,7 +451,7 @@ print(merged_dict)
    chunk(lstA, lstSize)
 ```   
 ### flatten the nested arrays:
-```
+```python
    def flatten(items):
     for item in items:
         if isinstance(item, list):
@@ -471,20 +463,20 @@ items = [1, [2], [[3], 4], 5]
 assert list(flatten(items)) == [1, 2, 3, 4, 5]
 ```   
    # Removal of False Values
-```
+```python
    def compact(lst):
       return list(filter(bool, lst))
     
    compact([0, 1, False, 2, '',' ', 3, 'a', 's', 34])
  ```  
  ###  Convert a list of Strings to a single String, where each item from the list is separated by commas:
- ```  
+ ```python 
    hobbies = ["singing", "soccer", "swimming"]
    print("My hobbies are:") # My hobbies are:
    print(", ".join(hobbies)) # singing, soccer, swimming
 ```	
 ###  Return  the difference between the two lists after applying this function to each element of both lists:
-```
+```python
    def difference_by(a, b, fn):
       b = set(map(fn, b))
       return [item for item in a if fn(item) not in b]
@@ -500,7 +492,7 @@ assert list(flatten(items)) == [1, 2, 3, 4, 5]
 ```  	
  
  #### String fuctions
- ```
+ ```python
  s.find(pattern).  If a substring cannot be found, a -1 will be returned.
  
  s.rfind(pattern)
@@ -515,7 +507,7 @@ But the index() function can also be used on lists or tuples.
 ### Dictionary
 
 Transpose of a matrix
-```
+```python
 mat = [[1,2,3], [4,5,6], [7,8,9]]
 transpose_matrix = [list(item) for item in zip(*mat)]
 print(transpose_matrix)
@@ -710,7 +702,7 @@ https://pythonhowtoprogram.com/better-organization-of-your-projects-with-python-
 https://antonz.org/python-packaging/
 
 https://tenthousandmeters.com/blog/python-behind-the-scenes-11-how-the-python-import-system-works/
-```
+```python
 import math
 math.pi
 
@@ -728,7 +720,7 @@ import math as m
 
 ## Date arithmetic:
 
-```
+```python
 from datetime import datetime, timedelta
 start_date='2020-05-12'
 n=5
@@ -1022,7 +1014,7 @@ https://habr.com/ru/company/ruvds/blog/485646/ . Python Tips
 https://habr.com/ru/company/skillbox/blog/685682/
 
 <https://habr.com/ru/company/otus/blog/501056/>
-```
+```python
     import random
     import time
     from concurrent.futures import ProcessPoolExecutor, as_completed
@@ -1145,7 +1137,12 @@ https://habr.com/ru/post/649033/
 ## Slots
 <https://habr.com/ru/company/ruvds/blog/480356/>
 ```
-Если вы когда-нибудь писали программы, которые создают по-настоящему большие количества экземпляров некоего класса, то вы могли заметить, что таким программам неожиданно может понадобиться очень много памяти. Происходит это из-за того, что Python использует словари для представления атрибутов экземпляров классов. Это хорошо сказывается на производительности, но, с точки зрения потребления памяти, это неэффективно. Обычно, правда, проблем эта особенность не вызывает. Однако если вы столкнулись в подобной ситуации с нехваткой памяти — можете попробовать воспользоваться атрибутом __slots__:
+Если вы когда-нибудь писали программы, которые создают по-настоящему большие количества экземпляров некоего класса, то таким программам неожиданно может понадобиться очень много памяти.
+Происходит это из-за того, что Python использует словари для представления атрибутов экземпляров классов.
+Это хорошо сказывается на производительности, но, с точки зрения потребления памяти, это неэффективно.
+Обычно, правда, проблем эта особенность не вызывает.
+Однако если вы столкнулись в подобной ситуации с нехваткой памяти —
+можете попробовать воспользоваться атрибутом __slots__:
 
 class Person:
  __slots__ = ["first_name", "last_name", "phone"]
@@ -1154,7 +1151,12 @@ class Person:
   self.last_name = last_name
   self.phone = phone
 
-Здесь, когда мы объявляем атрибут __slots__, Python использует для хранения атрибутов не словарь, а маленький массив фиксированного размера. Это серьёзно сокращает объём памяти, необходимый для каждого из экземпляров класса. У применения атрибута __slots__ есть и некоторые недостатки. Так, пользуясь им, мы не можем объявлять новые атрибуты, мы ограничены только теми, которые имеются в __slots__. Кроме того, классы c атрибутом __slots__ не могут использовать множественное наследование.
+Здесь, когда мы объявляем атрибут __slots__, Python использует для хранения атрибутов не словарь, а
+ маленький массив фиксированного размера.
+Это серьёзно сокращает объём памяти, необходимый для каждого из экземпляров класса.
+У применения атрибута __slots__ есть и некоторые недостатки. Т
+ак, пользуясь им, мы не можем объявлять новые атрибуты, мы ограничены только теми, которые имеются в __slots__.
+ Кроме того, классы c атрибутом __slots__ не могут использовать множественное наследование.
 ```
 ## Import
 
@@ -1178,7 +1180,7 @@ having the initials as key and a list of words as value, something like this:
 }
 ```
 Solution without defaultdict
-```
+```python
 text = 'a long text but very interesting and fun'
 
 data = {}
@@ -1192,7 +1194,7 @@ for word in text.split(" "):
 Solution without defaultdict:
 we completely removed the if check  because we replaced the dictionary with a defaultdict, 
 specifying list as the default value ( meaning an empty list ).
-```
+```python
 from collections import defaultdict
 text = 'a long text but very interesting and fun'
 
