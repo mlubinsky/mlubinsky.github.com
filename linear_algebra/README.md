@@ -1,5 +1,7 @@
 ## Linear Algebra
 
+<https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k>
+
 https://hn.algolia.com/?dateRange=all&page=0&prefix=false&query=linear%20algebra&sort=byPopularity&type=story
 
 
