@@ -28,6 +28,18 @@ https://www.youtube.com/watch?v=uhtb8FD_GAI&list=PLPFUq1zn8x35_0NTQqHNKwCjb9CVhS
 
 https://www.youtube.com/playlist?list=PL4_hYwCyhAva5t4SQDeJowNSz6qyzg76P
 
+https://arxiv.org/pdf/1904.02539.pdf  Func analysis
+
+https://www.math.uci.edu/~rvershyn/teaching/2010-11/602/functional-analysis.pdf  Func analysis
+
+### Функциональный анализ
+
+Р.В. Шамин. Функциональный анализ - лекции
+https://www.youtube.com/watch?v=THIwV_9fnzY&list=PLEaWFQiR5rGMUxl1x2lkW8uiFV-uX4B1D
+
+Сергей Кисляков 
+https://www.youtube.com/playlist?list=PL-_cKNuVAYAWltu4CT1F7CWG97ZplBnTg
+
 ### Properties of hight-dimentional spaces
 
 https://people.eecs.berkeley.edu/~jrs/highd/
@@ -122,16 +134,16 @@ https://news.ycombinator.com/item?id=34439828
 
 https://mltechniques.com/resources/
 
-https://arxiv.org/pdf/1904.02539.pdf  Func analysis
 
-https://www.math.uci.edu/~rvershyn/teaching/2010-11/602/functional-analysis.pdf  Func analysys
+
+
 
 https://math.stackexchange.com/questions/302023/best-sets-of-lecture-notes-and-articles
 
 https://www.susanrigetti.com/math
 
 
-Greeen function
+## Greeen function
 https://www.youtube.com/watch?v=ism2SfZgFJg
 
 https://math.stackexchange.com/search?tab=votes&q=is%3aanswer
@@ -144,7 +156,7 @@ https://www.youtube.com/playlist?list=PLKXEsFnBcT5BD47xO19UsKshsQ7DMU3Sa
 
 https://github.com/gillescastel/lecture-notes/
 
-Группы и алгебры Ли, Штепин В. В., 03.02.2022г.
+## Группы и алгебры Ли, Штепин В. В., 03.02.2022г.
 https://www.youtube.com/playlist?list=PLthfp5exSWEoWfDHiYfiRsWCgSIgC9mc4
 
 
@@ -186,39 +198,17 @@ https://kconrad.math.uconn.edu/blurbs/analysis/gaussianintegral.pdf
 Math analys ru
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNDuleTFinPo1WY3V4EesuLO
 
-### Linear Algebra with SymPy
 
-
-https://live.sympy.org/
-
-https://live.sympy.org/?evaluate=A%20%3D%20Matrix(%5B%5B0%2C%20%201%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%5B-1%2C%200%5D%5D)%0A%23--%0AA%20*%20Matrix(%5B1%2C0%5D)%0A
-
-https://minireference.com/static/tutorials/sympy_tutorial.pdf
-
-https://github.com/minireference/sympytut_notebooks/blob/master/notebooks/Linear-algebra.ipynb
-
-https://www.youtube.com/watch?v=2G3PmEZI6n8&list=PLGmu4KtWiH6-F2JlLVvCTsMR91I4ix0_z&index=1
-
-### Linear Algebra
-
-https://www2.math.upenn.edu/~ghrist/preprints/LAEF.pdf
-
-https://drive.google.com/file/d/1nJVwdQV9zp-Q9VQenZF0-HOOG6L2lEOD/view  Linear Algebra for DataScience
-
-3Blue1Brown Linear Angebra (ru)
-https://www.youtube.com/playlist?list=PLVjLpKXnAGLXPaS7FRBjd5yZeXwJxZil2
-
-https://coffeemug.github.io/spakhm.com/posts/01-lingalg-p1/linalg-p1.html
 
 https://web.stanford.edu/~boyd/vmls/
 
 https://youtube.com/playlist?list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B&si=PXkIbFMqqozrsYEu  3Blue1Brown
 
-https://explained.ai/matrix-calculus/
+
 
 https://arxiv.org/abs/1404.1100  PCA
 
-https://codingthematrix.com/
+
 
 https://pimbook.org/
 
@@ -308,13 +298,7 @@ https://www.youtube.com/watch?v=QbGQ-ETddzs
 https://www.youtube.com/watch?v=TFhKK6bWcYE
 
 
-### Функциональный анализ
 
-Р.В. Шамин. Функциональный анализ - лекции
-https://www.youtube.com/watch?v=THIwV_9fnzY&list=PLEaWFQiR5rGMUxl1x2lkW8uiFV-uX4B1D
-
-Сергей Кисляков 
-https://www.youtube.com/playlist?list=PL-_cKNuVAYAWltu4CT1F7CWG97ZplBnTg
 
 ### Dynamical systems
 
@@ -487,85 +471,6 @@ https://www.youtube.com/playlist?list=PL1JJ1jVZ9z5DjMQRkgzvC4c73GvLJOdjM
  
  
 
-
-### Matrix
-
-https://news.ycombinator.com/item?id=26676729
-
-### Linear algebra
-
-https://www.andreinc.net/2021/01/20/eigenvalues-and-eigenvectors-explained
-
-https://data-science-blog.com/blog/2020/10/27/10360/   visualizing linear transformations and eigenvectors
-
-https://pabloinsente.github.io/intro-linear-algebra
-
-https://pabloinsente.github.io/intro-linear-algebra
-
-https://hefferon.net/linearalgebra/index.html
-
-<https://textbooks.math.gatech.edu/ila/>
-
-<https://www.youtube.com/watch?v=rowWM-MijXU> 
-
-<https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab>
- 
-<https://explained.ai/matrix-calculus/index.html>
-
-<https://news.ycombinator.com/item?id=21628449>
-
-<https://news.ycombinator.com/item?id=21231228> linear algebra books
-
-<https://civilstat.com/2015/07/dont-invert-that-matrix-why-and-how/> Do not invert the matrix
-
-<https://kam.mff.cuni.cz/~matousek/stml-53-matousek-1.pdf>
-
-<https://news.ycombinator.com/item?id=19933274>
-
-
-<https://www.dhruvonmath.com/2020/07/26/who-cares-about-eigenvectors/>
-
-<http://setosa.io/ev/eigenvectors-and-eigenvalues/>
-
-<https://www.youtube.com/watch?v=mxkGMbrobY0&feature=youtu.be>
-
-<https://dhruvp.netlify.com/2019/02/25/eigenvectors/>
-
-<https://news.ycombinator.com/item?id=19349858>
-
-<https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw> .  3Blue1Brown
-
-<http://immersivemath.com/ila/index.html> .  Visual
-
-<https://www.amazon.com/Coding-Matrix-Algebra-Applications-Computer/dp/0615880991/>
-
-<http://codingthematrix.com/>
-
-<http://academictorrents.com/details/54cd86f3038dfd446b037891406ba4e0b1200d5a>
-
-<https://archive.org/details/LinearAlgebraAndMatrixTheory>
- 
-<https://news.ycombinator.com/item?id=19013189>
-
-<https://web.stanford.edu/~boyd/vmls/>
-
-<http://www.seas.upenn.edu/~cis515/linalg.pdf>
-
-<https://news.ycombinator.com/item?id=15923338> linear algebra and ML
-
-<<https://www.dhruvonmath.com/2020/07/26/who-cares-about-eigenvectors/>
-
-<https://machinelearningmastery.com/introduction-to-eigendecomposition-eigenvalues-and-eigenvectors/>
-
-<https://machinelearningmastery.com/resources-for-linear-algebra-in-machine-learning/>
-
-<https://machinelearningmastery.com/linear-algebra-cheat-sheet-for-machine-learning/>
-
-<https://news.ycombinator.com/item?id=18351312> .  Linear Algebra
-
-
-
-<https://gwthomas.github.io/docs/math4ml.pdf>
 
 
 
