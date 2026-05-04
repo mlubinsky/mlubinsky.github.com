@@ -2,6 +2,8 @@
 Trino is optimized for reading  Optimized Row Columnar (ORC) format https://orc.apache.org/
 
  it’s fairly easy to implement a custom UDF
+
+https://habr.com/ru/companies/neoflex/articles/1031326/ 
  
 https://habr.com/ru/articles/863854/
 
