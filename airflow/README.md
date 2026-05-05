@@ -58,16 +58,19 @@ all_failed — задача запускается, если все предыд
 all_done — задача будет запущена после завершения всех предыдущих задач, независимо от их статуса (успех, неудача или пропуск).
 
 all_skipped, one_success, one_done и другие — существует множество других триггеров, которые можно детально изучить в документации.
+```
 
-
-3. TriggerDagRunOperator
+### TriggerDagRunOperator
+```
 Этот оператор отправляет сигнал запуска из одного графа в другой. Например,
 ETL-граф может запускать граф обучения после завершения своих задач.
 Также этот метод можно использовать для запуска других графов.
 Он решает задачу своевременного запуска зависимых графов и позволяет отслеживать связи в разделе DAG Dependencies.
 Однако при добавлении нового графа потребуется вручную прописывать зависимость в коде.
+```
 
-4. ExternalTaskSensor
+### ExternalTaskSensor
+```
 Этот оператор, похожий на TriggerDagRunOperator, позволяет зависеть от нескольких задач в разных DAG-ах и запускать часть задач,
  пока другие остаются на паузе. Он также отображается в DAG Dependencies.
 Разница в том, что зависимость прописывается в графе-потребителе, а не в графе-поставщике данных.
@@ -149,10 +152,12 @@ file_sensor >> task  # Execute task after file detection
 но эту последовательность можно перенастроить с помощью тега Trigger Rule.
 
 Как это выглядит в коде:
+```
+
 ```python
 @task.virtualenv(task_id='delete_rbd', trigger_rule=TriggerRule.ALWAYS, requirements=["requests==2.32.3"])
 ```
-
+```
 Примеры других значений Trigger Rule для определения последовательности выполнения task:
 
 all_success : (default) all parents have succeeded
@@ -256,6 +261,7 @@ https://github.com/kaxil/airflowctl
 
 
 https://www.restack.io/docs/airflow-knowledge-apache-mac-m1-install
+
 ```bash
 python3 -m venv airflow_venv
 source airflow_venv/bin/activate
