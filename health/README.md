@@ -2,7 +2,7 @@ https://www.youtube.com/watch?v=ht_0y05QHDI 4 Самых Главных Прос
 
 <https://www.youtube.com/watch?v=wztJZHaNF4Q> back pain
 
-https://www.youtube.com/watch?v=vQmdkKzwPPA 
+<https://www.youtube.com/watch?v=vQmdkKzwPPA> для поясницы
 
 https://habr.com/ru/companies/ua-hosting/articles/905436/ Дела сердечные: предотвращение сердечной недостаточности
 
