@@ -1,5 +1,7 @@
 ## GPU
 
+<https://github.com/alternbits/awesome-cuda-books>
+
 <https://www.youtube.com/watch?v=SVaC2ECMZXs>
 
 <https://www.youtube.com/watch?v=0WjfKQdfeMU>
@@ -14,7 +16,7 @@
 Лекторий ФПМИ
 <https://www.youtube.com/watch?v=lIht6WZJL1s&list=PL4_hYwCyhAvbhhT3F80vt1FdB2TqklRsM&index=1>
 
-https://habr.com/ru/articles/994956/
+<https://habr.com/ru/articles/994956/>
 
 https://habr.com/ru/articles/995170/
 
