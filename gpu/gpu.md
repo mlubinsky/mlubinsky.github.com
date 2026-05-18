@@ -2,6 +2,8 @@
 
 <https://github.com/alternbits/awesome-cuda-books>
 
+<https://news.ycombinator.com/item?id=48168485>
+
 <https://www.youtube.com/watch?v=SVaC2ECMZXs>
 
 <https://www.youtube.com/watch?v=0WjfKQdfeMU>
