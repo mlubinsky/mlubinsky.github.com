@@ -1,5 +1,7 @@
 ## Quantum Mechanics
- 
+
+ <img width="618" height="420" alt="image" src="https://github.com/user-attachments/assets/76fd7bc9-3d8a-4c7c-99e3-957173fbc238" />
+
  https://habr.com/ru/articles/813885/ о движении частиц в квантовом мире
 
 https://arxiv.org/pdf/quant-ph/0007045.pdf ROSETTA STONE FOR QUANTUM MECHANICS WITH
