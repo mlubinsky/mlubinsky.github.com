@@ -1,5 +1,6 @@
 ## Chess Positions
 <img width="408" height="409" alt="image" src="https://github.com/user-attachments/assets/35df10d2-379c-421c-aac6-8ecc088d9406" />
+<img width="487" height="273" alt="image" src="https://github.com/user-attachments/assets/c2866da8-6e58-4665-abe9-e55a433432fb" />
 
 
 ![albine_gambit.png](albine_gambit.png)
