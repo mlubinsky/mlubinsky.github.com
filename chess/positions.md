@@ -1,5 +1,7 @@
 ## Chess Positions
 <img width="408" height="409" alt="image" src="https://github.com/user-attachments/assets/35df10d2-379c-421c-aac6-8ecc088d9406" />
+<img width="329" height="325" alt="image" src="https://github.com/user-attachments/assets/4155e914-d8b8-46cf-bcba-490ce22b4da6" />
+
 <img width="841" height="432" alt="image" src="https://github.com/user-attachments/assets/b9c4a7f8-71b0-4982-972a-9c42dc1fb6ab" />
 
 <img width="487" height="273" alt="image" src="https://github.com/user-attachments/assets/c2866da8-6e58-4665-abe9-e55a433432fb" />
