@@ -8,6 +8,8 @@
 
 <https://100go.co/>
 
+<https://github.com/Protocol-Lattice/golang-interview-prep-in-english>
+
 Idiomatic GO
 
 <img width="553" height="302" alt="image" src="https://github.com/user-attachments/assets/f76cd6d8-2d14-45e0-a2d5-61cb64333dc9" />
