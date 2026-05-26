@@ -6,9 +6,12 @@
 
 <https://www.bytesizego.com/courses/>
 
-https://100go.co/
+<https://100go.co/>
 
 Idiomatic GO
+
+<img width="553" height="302" alt="image" src="https://github.com/user-attachments/assets/f76cd6d8-2d14-45e0-a2d5-61cb64333dc9" />
+
 
 <https://news.ycombinator.com/item?id=46531622>
 
