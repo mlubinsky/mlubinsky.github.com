@@ -1,4 +1,6 @@
 ## Chess Positions
+<img width="713" height="505" alt="image" src="https://github.com/user-attachments/assets/51412b80-a00a-493a-a566-ba6160eeecd5" />
+
 <img width="365" height="368" alt="image" src="https://github.com/user-attachments/assets/44b06ae4-25d5-4c4f-a51b-f88288aeb849" />
 
 <img width="408" height="409" alt="image" src="https://github.com/user-attachments/assets/35df10d2-379c-421c-aac6-8ecc088d9406" />
