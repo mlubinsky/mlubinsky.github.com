@@ -189,11 +189,11 @@ https://arxiv.org/abs/1209.3632
 
 http://sachdev.physics.harvard.edu/
 
-### Fourie
+### Fourier
 
-https://www.youtube.com/watch?v=r18Gi8lSkfM
+<https://www.youtube.com/watch?v=r18Gi8lSkfM>
 
-https://www.youtube.com/watch?v=0DHNGtsmmH8
+<https://www.youtube.com/watch?v=0DHNGtsmmH8>
 
 
 https://pubs.aip.org/ American Journal of Physics
@@ -332,6 +332,8 @@ https://www.physics.princeton.edu/~mcdonald/examples/ McDonald
 https://habr.com/ru/post/544030/ FermiNet
 
 ### Entropy
+
+<https://blog.rudnyi.site/ru/2026/06/on-the-statistical-mechanics-of-life.html>
 
 https://www.quantamagazine.org/what-is-entropy-a-measure-of-just-how-little-we-really-know-20241213/ 
 
