@@ -1,4 +1,10 @@
 ## Physics software
+
+Quantum tunneling  
+Simulation: https://nazat02.github.io/Quantum-Tunneling/  
+Source: https://en.wikipedia.org/wiki/Quantum_tunnelling  
+Tools: physicist-ai-production-d292.up.railway.app
+
 https://github.com/aimclub/open-source-ops/blob/master/examples/academic-repositories.md
 
 https://juliapackages.com/c/quantum-mechanics
