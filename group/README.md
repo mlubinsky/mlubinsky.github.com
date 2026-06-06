@@ -1,5 +1,7 @@
 ### Теория групп. (Алексей Савватеев)
 
+<https://teach-in.ru/course/group-theory-manukhov>
+
 https://www.youtube.com/playlist?list=PLsdv2rpSb41YX3GXvKg7YQOwl-MVNkz9H
 
 
