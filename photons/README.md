@@ -13,6 +13,9 @@ https://scask.ru/ books
 
 http://www.issp.ac.ru/ebooks/books/open/
 
+Поляризация_волн
+<https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D1%8F%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%B2%D0%BE%D0%BB%D0%BD>
+
 ### SAJEEV JOHN
 
 https://www.physics.utoronto.ca/~john/
