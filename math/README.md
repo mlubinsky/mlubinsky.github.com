@@ -20,6 +20,10 @@ https://alexkritchevsky.com/math
 
 https://pages.uoregon.edu/koch/
 
+introduction to functional analysis
+https://arxiv.org/pdf/1904.02539
+
+
 ### Семинар  по математическим методам в физике 
 https://www.youtube.com/watch?v=uhtb8FD_GAI&list=PLPFUq1zn8x35_0NTQqHNKwCjb9CVhS7MX
 
