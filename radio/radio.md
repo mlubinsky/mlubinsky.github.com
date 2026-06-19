@@ -1,5 +1,7 @@
 ## Radio and waves
 
+<https://github.com/mlubinsky/mlubinsky.github.com/blob/master/physics/waves_spectrum.jpeg>
+
 <https://habr.com/ru/companies/beget/articles/1009156/>
 
 
