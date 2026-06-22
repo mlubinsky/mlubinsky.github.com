@@ -116,7 +116,7 @@ https://nicf.net/articles/physics-for-mathematicians/
 ### Spinors
 https://arxiv.org/pdf/1312.3824.pdf
 
- 
+https://www.youtube.com/watch?v=X5N8r6d4QY8  
 
 https://www.youtube.com/playlist?list=PLJHszsWbB6hoOo_wMb0b6T44KM_ABZtBs
 
