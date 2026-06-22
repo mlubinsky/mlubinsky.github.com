@@ -238,6 +238,8 @@ https://publications.hse.ru/mirror/pubs/share/direct/433420486.pdf
 ### Lie groups in physics
 https://arxiv.org/pdf/2012.00834.pdf
 
+https://www.youtube.com/watch?v=w-HygD3yLho
+
 ## Lie Group
 
 A **Lie group** (pronounced *"Lee group"*, after Sophus Lie) is a mathematical object that is simultaneously:
