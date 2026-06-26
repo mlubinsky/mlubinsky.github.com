@@ -4,6 +4,8 @@
 
 <https://habr.com/ru/articles/905828/>
 
+https://habr.com/ru/companies/sberbank/articles/1052274/
+
 ## Example: Sensor Data Pipeline MQTT — Collect → Convert → Store in Database
 
 ```
