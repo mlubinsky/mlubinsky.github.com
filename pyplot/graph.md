@@ -62,7 +62,6 @@ Why graph dbs are not popular?
 
 https://lobste.rs/s/pp5blh/why_are_graph_databases_not_more_popular
 
-<pre>
 
 https://www.youtube.com/watch?v=09_LlHjoEiY 
 Algo
@@ -89,12 +88,14 @@ https://github.com/x899/graph theory in python
 https://stackabuse.com/graphs-in-python-minimum-spanning-trees-prims-algorithm
 
 https://www.python-course.eu/graphs_python.php
+
 """ A Python Class
 A simple Python graph class, demonstrating the essential 
 facts and functionalities of graphs.
 Taken from https://www.python-course.eu/graphs_python.php
 Changed the implementation a little bit to include weighted edges
 """
+
 ```python
 class Graph(object):
     def __init__(self, graph_dict=None):
@@ -164,7 +165,7 @@ class Graph(object):
     def adj_mat(self):
         return self.__graph_dict
 
-<b>Usage:</b>
+### Usage:
 g = { "a" : {"d":2},
       "b" : {"c":2},
       "c" : {"b":5,  "d":3, "e":5}
@@ -328,7 +329,3 @@ https://dzone.com/articles/searching-shouldnt-be-so-hard
 https://news.ycombinator.com/item?id=15676681  Search
 https://www.youtube.com/watch?v=1-Xoy5w5ydM BitFunnel
 https://dl.acm.org/citation.cfm?id=3080789 BitFunnel
-</pre>
-
-
-
