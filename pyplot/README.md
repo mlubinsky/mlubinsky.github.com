@@ -18,12 +18,13 @@ A framework-agnostic User Interface packaged as a Custom Element, powered either
 
 A JupyterLab widget and Python client library, for interactive data analysis in a notebook, as well as scalable production applicati
 ```
+
 https://github.com/finos/perspective
 
-VTK+
+ 
 
-###
-```
+### Example
+```python
    #-----------
     # x-axis: date
     #-----------
@@ -72,13 +73,14 @@ ymin, ymax = plt.gca().get_ylim()
 # Check if any y values are below -100
 if (df['y'] < -100).any():
     plt.ylim(bottom=-100, top=ymax)  # Set the minimum y-axis limit to -100 and keep the current top limit
+```
 
-
-GEMINI 
-*******
+### GEMINI 
+ 
 
 To set the top limit based on the actual data, you can use the max function to find the maximum value in your data and then set the top limit to that value. Here's the modified code:
 
+```python
 import matplotlib.pyplot as plt
 
 plt.figure(figsize=(width, height))
@@ -103,7 +105,7 @@ plt.ylim(top=max_y_value)
 plt.legend()
 plt.show()
 
------
+
 import matplotlib.pyplot as plt
 
 plt.figure(figsize=(width, height))
@@ -125,7 +127,7 @@ plt.legend()
 plt.show()
 
 
-GEMINI to store the minimum value encountered in all columns and use that to set the limit:
+# GEMINI to store the minimum value encountered in all columns and use that to set the limit:
 **************
 import matplotlib.pyplot as plt
 
