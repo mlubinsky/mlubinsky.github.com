@@ -1,7 +1,4 @@
-<head>
-<link rel="stylesheet" href="style.css">
-</head>
-<h2>Graphs</h2>
+## Graphs 
 
 Graph in Postgres
 https://news.ycombinator.com/item?id=43198520
@@ -98,7 +95,7 @@ facts and functionalities of graphs.
 Taken from https://www.python-course.eu/graphs_python.php
 Changed the implementation a little bit to include weighted edges
 """
-
+```python
 class Graph(object):
     def __init__(self, graph_dict=None):
         """ initializes a graph object 
@@ -193,7 +190,8 @@ print("Vertices of graph:")
 print(graph.vertices())
 print("Edges of graph:")
 print(graph.edges())
-
+```
+    
 Vertices of graph:
 ['a', 'c', 'b']
 Edges of graph:
@@ -212,7 +210,7 @@ Vertices of graph:
 Edges of graph:
 [['a', 'z', 1], ['a', 'd', 2], ['c', 'b', 5], ['c', 'e', 5], ['c', 'd', 3], ['b', 'c', 2], ['y', 'x', 1], ['x', 'y', 1], ['z', 'a', 1]]
 
-<h2> Knowledge graph </h2>
+## Knowledge graph  
 
 https://terminusdb.com/ .  Graph database
 A large number of knowledge graphs have been created, including
@@ -236,7 +234,7 @@ https://arxiv.org/pdf/1503.00759.pdf
 
 https://towardsdatascience.com/extracting-knowledge-from-knowledge-graphs-e5521e4861a0
 
-<h2> Graph Databases </h2>
+## Graph Databases  
 
 
 https://medium.com/terminusdb/why-graph-will-win-703373bb5c41
@@ -300,7 +298,7 @@ https://blog.grakn.ai/modelling-data-with-hypergraphs-edff1e12edf0
 https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d
 https://python-graph-gallery.com/
 
-<h2>Load balancing</h2>
+## Load balancing
 
 https://blog.envoyproxy.io/introduction-to-modern-network-load-balancing-and-proxying-a57f6ff80236
 https://news.ycombinator.com/item?id=16151879
@@ -313,12 +311,12 @@ https://github.com/graphistry/pygraphistry
 https://github.com/alx/parasol
 https://news.ycombinator.com/item?id=19598372
 
-<h2>Maps</h2>
+## Maps 
 https://andrewcooke.github.io/choochoo/rtree . spatial  search
 https://habrahabr.ru/post/346714/ OpenStreetMap
 https://news.ycombinator.com/item?id=16149725 LeafLet
 
-<h2>Search</h2>
+## Search 
 midium.com/@forwidur  Max Grigorev
 https://habrahabr.ru/post/346884/  Reindexer - text search
 https://habrahabr.ru/post/354034/  Text search
