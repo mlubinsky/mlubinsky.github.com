@@ -17,6 +17,8 @@
 
 <img width="558" height="580" alt="image" src="https://github.com/user-attachments/assets/f3170369-9b26-4969-82b8-774f78fe77c4" />
 
+<https://assets.press.princeton.edu/chapters/s6681.pdf> Einstein’s Religiosity
+
 — Сколько вы получаете, как королевский астроном? Что? Серьёзно? Я немедленно прикажу повысить вам жалование!    
 — Умоляю, не делайте этого, Ваше Величество! Иначе и эту должность займёт не астроном!
 
