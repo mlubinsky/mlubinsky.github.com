@@ -3,6 +3,8 @@
 Casual inference:
 <https://matheusfacure.github.io/python-causality-handbook/landing-page.html>
 
+<https://habr.com/ru/companies/otus/articles/1058818/>
+
 <https://habr.com/ru/companies/X5Tech/articles/846298/>
 
 https://habr.com/ru/companies/otus/articles/839922/ Как ускорить A/B тесты: несколько способов
