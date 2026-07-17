@@ -1,5 +1,7 @@
 ## Chess
 
+https://www.youtube.com/playlist?list=PL87ILFQ9vXp3Sv8K5MxHHBdvn5eh3WaZq
+
 https://www.chessreps.com/
 
 
