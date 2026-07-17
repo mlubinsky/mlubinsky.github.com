@@ -2,6 +2,9 @@
 Дебют за час. Александр Шиманов
 https://www.youtube.com/playlist?list=PL87ILFQ9vXp3Sv8K5MxHHBdvn5eh3WaZq
 
+Дебют Galchenko
+https://www.youtube.com/playlist?list=PLp8VroLVW1ExTb5o5SOlIwv8Wwl77dq8N
+
 https://www.chessreps.com/
 
 
