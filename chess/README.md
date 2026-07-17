@@ -5,7 +5,10 @@ https://www.youtube.com/playlist?list=PL87ILFQ9vXp3Sv8K5MxHHBdvn5eh3WaZq
 Дебют Galchenko
 https://www.youtube.com/playlist?list=PLp8VroLVW1ExTb5o5SOlIwv8Wwl77dq8N
 
+https://www.youtube.com/watch?v=0IXp3csaAUw
+
 https://www.chessreps.com/
+
 
 
 Flask app to play against chess engines  
