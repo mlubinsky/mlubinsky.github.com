@@ -1,3 +1,8 @@
+## Interview
+
+https://www.linkedin.com/pulse/how-i-prepared-google-software-engineer-interviews-dhruvam-zaveri-w0zrc/
+
+
 https://www.youtube.com/@agoalofalife/videos (ru)
 
 https://github.com/peterlamar/python-cp-cheatsheet
