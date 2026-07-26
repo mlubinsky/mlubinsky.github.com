@@ -2,6 +2,8 @@
 
 https://habr.com/ru/articles/1058304/
 
+https://habr.com/ru/articles/1063044/
+
 https://bioinformatics.stackexchange.com/
 
 https://www.reddit.com/r/bioinformatics
