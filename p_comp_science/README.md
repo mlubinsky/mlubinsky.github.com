@@ -101,6 +101,11 @@ https://news.ycombinator.com/item?id=37391161
 
 ## Kuramoto
 
+https://takerum.github.io/akorn_project_page/
+
+https://habr.com/ru/articles/1033448/
+
+
 Towards a Theory for the Formation of Chimera Patterns in Complex Networks https://arxiv.org/pdf/2412.05504
 
  https://arxiv.org/abs/2402.12481
