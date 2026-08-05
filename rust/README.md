@@ -1,4 +1,8 @@
+## Rust
+ 
  https://play.rust-lang.org/
+
+https://learning-rust.github.io/
 
 Free book: Effective Rust https://www.lurklurk.org/effective-rust/title-page.html
 
