@@ -1,10 +1,7 @@
 ## Editors
 
 <https://micro-editor.github.io/index.html>
-
-trae.ai  
-https://habr.com/ru/articles/876952/  Trae from ByteDance - Cursor competitor  
-https://www.cursor.com/
+ 
 
 ### Kate Editor
 brew install kate  
