@@ -1,3 +1,5 @@
+### Editors
+
 trae.ai  
 https://habr.com/ru/articles/876952/  Trae from ByteDance - Cursor competitor  
 https://www.cursor.com/
@@ -520,6 +522,8 @@ https://github.com/helix-editor/helix
 ## Visual Studio Code
 
 https://habr.com/ru/companies/cdek_blog/articles/811631/
+
+https://habr.com/ru/companies/selectel/articles/1066148/
 
 https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker Spell Checker
 
