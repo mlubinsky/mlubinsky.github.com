@@ -73,7 +73,6 @@ autocmd BufWritePre * %s/\s\+$//e
 
 
 
-## VIM
 
 https://www.moolenaar.net/habits.html
 
