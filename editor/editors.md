@@ -1,4 +1,4 @@
-## Editors
+## Editors for Markdown, PDF and Text
 
 <https://micro-editor.github.io/index.html>
  
@@ -353,10 +353,9 @@ alias cat="bat"
 ### Kakoune editor
 https://kakoune.org/
 
+ 
 
-https://github.com/helix-editor/helix
-
-## Other Editors 
+### Text Adept
 
 <https://foicica.com/textadept/> 
 
