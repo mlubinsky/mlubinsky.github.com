@@ -1,4 +1,4 @@
-## Editors for Markdown, PDF and Text
+## Editors and Viewers, diffs   for Markdown, PDF, CSV and Parquet  
 
 <https://micro-editor.github.io/index.html>
  
