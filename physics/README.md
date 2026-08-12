@@ -2,7 +2,7 @@
 
 https://www.theoretical-physics.com/dev/index.html
 
-
+https://habr.com/ru/articles/945102/ E=mc2
 
 
 Электронные коллективы: от физики атомов к квантовым
