@@ -1,6 +1,7 @@
 ## Radio and waves
 
 ![Waves_diagram](/physics/waves_freq.png)
+![Waves_diagram](/physics/waves_spectr.png)
 ![Waves_spectrum](/physics/waves_spectrum.jpeg)
 
 <https://github.com/mlubinsky/mlubinsky.github.com/blob/master/physics/waves_freq.png>
