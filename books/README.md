@@ -4,6 +4,8 @@
 
 https://www.openculture.com/free_textbooks
 
+https://subscription.packtpub.com/my-account/orders
+
 <https://alexandr4784.narod.ru/> math physics
 
 https://ikfia.ysn.ru/v-pomoshh-studentu-i-aspirantu/
