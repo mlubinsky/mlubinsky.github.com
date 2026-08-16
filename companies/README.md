@@ -1,3 +1,10 @@
+## Job search
+https://github.com/santifer/career-ops
+
+https://github.com/madhavkapoor1/JobScout
+
+https://github.com/santifer/career-ops?
+
 https://www.chai-research.com/jobs/
 
 https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ADVANCED_TECH_CENTER/
@@ -320,6 +327,7 @@ https://lnkd.in/gZ27NtSn
 https://habr.com/ru/articles/797745/
 
 https://openai.com/careers/hwsw-co-design-engineer  
+
 nvidia  
 adobe  
 amd   
@@ -460,3 +468,22 @@ Recruiters skip right past all that to see what you have DONE. Focus on the impa
 FAR TOO MANY. 
 
 We feel that if the reader would just understand us and our struggles, they would hire us. But the reader is not there to care about our lives. They are there to answer a simple question: will this person accomplish what I need them to?
+
+
+
+www.xcalar.com/ San Jose
+huawei  Graph DB engine
+http://percipient.ai/
+
+https://deepsystems.ai   4690 Fortran Dr, 106C San Jose, CA 
+https://supervise.ly
+https://www.anatomage.com/
+
+https://www.eetimes.com/document.asp?doc_id=1333167   AI on chip
+
+san-jose.startups-list.com
+https://angel.co/san-jose/jobs
+https://angel.co/san-jose
+
+Ask Google:
+companies near Orchard parkway, san jose, CA
