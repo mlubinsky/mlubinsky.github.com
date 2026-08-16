@@ -1,3 +1,5 @@
+## GCP
+
 https://www.udemy.com/course/google-cloud-fundamentals-101-a-quick-guide-to-learn-gcp/
 
 https://www.citadelcloudmanagement.com/wp-content/uploads/2023/05/2a1631cf2dcc736f8330e7d54571ba13Google-Cloud-Platform-in-Action-PDFDrive-.pdf
