@@ -3,7 +3,9 @@ https://github.com/santifer/career-ops
 
 https://github.com/madhavkapoor1/JobScout
 
-https://github.com/santifer/career-ops?
+https://github.com/santifer/career-ops
+
+https://us.meta.talentnet.community/jobs/applied
 
 https://www.chai-research.com/jobs/
 
