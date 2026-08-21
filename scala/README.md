@@ -1,3 +1,4 @@
+## Scala
 https://scala-cli.virtuslab.org/ CLI
 
 https://scastie.scala-lang.org/ Online Scala compiler
