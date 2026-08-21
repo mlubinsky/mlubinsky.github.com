@@ -1,9 +1,4 @@
-<head>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-<pre>
+## Scala
 
 $ brew install scala
 $ brew install sbt
@@ -21,7 +16,7 @@ $ echo '-J-Xmx2G' >> /usr/local/etc/sbtopts
 
 https://www.youtube.com/watch?v=-xRfJcwhy7A . Learn Scala in one video from a 10+ 
 
-<h2>Links</h2>
+### Links 
 
 https://nrinaudo.github.io/scala-best-practices/
 
@@ -62,7 +57,7 @@ https://hackernoon.com/practical-functional-programming-6d7932abc58b
 
 http://www.lihaoyi.com/post/EasyParsingwithParserCombinators.html
 
-<h2>Reactive Programming Akka</h2>
+## Reactive Programming Akka 
 https://habr.com/company/arcadia/blog/432004/
 
 
@@ -77,7 +72,7 @@ with a product type Rectangle (a Rectangle holds a width and a height).
 
 The sealed keyword indicates that all subclasses of the trait must be declared in the same .scala file. 
 
-<h2>Option</h2>
+### Option 
 https://subscription.packtpub.com/book/application_development/9781788397643/3/ch03lvl1sec25/using-option
 
 The Scala Option type is an algebraic data type (ADT) that represents an optional value. 
@@ -139,16 +134,13 @@ This is a shorthand notation for an anonymous function. Whenever you use a param
 you can replace it with _.
 
 
-
-
-
-<h2>Scala: call by value, call by name and lazy calculation</h2>
+## Scala: call by value, call by name and lazy calculation</h2>
    def f (arg: Int) = println (arg)     // call by value - arg is evaluated at the point of function call
    def f (arg: => Int) = println (arg)  // call by name  - arg is evaluated at the moment of use (lazy, but it is calculated every time)
 
    Scala keyword <b>lazy</b>: calculated once at the moment of 1st use
 
-<h2>High Order Function</h2>
+## High Order Function
 // Apply function  n times to a value x
 // nTimes (f, n, x)  = f(f(...f(x)) = nTimes(f, n-1, f(x))
 
@@ -169,7 +161,8 @@ Usage:
  val plus10 = nTimesBetter(plusOne, 10)
  println( plus10(1))     
 
-<h2>Carried Function</h2>
+## Carried Function 
+```sql
 val superAdder: Int => (Int=>Int) = (x: Int) => (y: Int) = x+y
 val add3 = superAdder(3) // y => 3+y
 println(add3(10))
@@ -182,12 +175,12 @@ println(superAdder(3)(10))
     
   println(standardFormat(Math.PI))
   println(precisionFormat(Math.PI))
+ ```   
     
-    
-<h2>apply()</h2>
+### apply() 
 A simple use of apply is to define it on an Object. This lets you call the Object as if the object itself was a function. 
 Here’s an example:
-
+```scala
 object Greet {
  def apply(name: String): String = {
    "Hello %s".format(name)
@@ -195,17 +188,18 @@ object Greet {
 }
 // I can call apply explicitly if I want:
 Greet.apply("bob")
+```
 Case classes provide you with an automatically generated apply function on their companion object that you can use like a constructor.
 This is very confusing as it looks just like a constructor and quacks like a constructor, but it is not a constructor.
 
 
-<h2>Tuples</h2>
+### Tuples 
 up to Tuple22
 ((0,1,2,3,4),( (5,6,(7,8),9))
 Tuple2[Tuple5[Int,Int,Int,Int,Int], Tuple4[Int,Int,Tuple2[Int,Int],Int]]
 
-<h2>Reduction operations</h2>
-<b>foldLeft vs fold</b>
+### Reduction operations 
+#### foldLeft vs fold
 
 def foldLeft[B] (z: B) (f: (B,A) => B): B
 The applies a binary operator to a start value and all elements of this collection or iterator,
@@ -243,19 +237,19 @@ The foldLeft is not parallelizable and Spark does not support foldLeft() and fol
 
 def fold(z: A) f: (A,A) => A): A   // this is parallelizable because the input and output types are the same
 
-<b>Aggregate</b>
+### Aggregate
 aggregate[B] (z: => B) (seqop: (B,A) =>B, combop (B,B) => B): B  //parallelizable and can change the return type - supported by Spark!
 
 
-<b>Reduce and fold</b>
+### Reduce and fold 
 val a = Array(12, 6, 15, 2, 20, 9)
 val sum = a.reduceLeft(_ + _)   // same as a.reduceLeft((x,y) => x + y)
 a.reduceLeft(_ * _)  // a.reduceLeft(_ min _)   //  a.reduceLeft(_ max _)
 
 The foldLeft method works just like reduceLeft, but it lets you set a seed value to be used for the first element.
 
-<h2>map and flatMap</h2>
-    
+## map and flatMap 
+```scala    
 val numbers=List(1,2,3,4)
 val chars=List('a','b','c','d')
 val colors=List("black","white")
@@ -271,9 +265,10 @@ val forCombinations = for {
 } yield "" +c + n + "-"+color
 
 println (forCombinations)
-   
- <h2>Pattern matching</h2>      
-    
+```   
+### Pattern matching    
+
+```scala    
 scala> Vector(1, 2, 3, 4) match {
   case head +: second +: tail => tail
 }
@@ -299,8 +294,8 @@ scala> def present(p: Person): String = p match {
   case p => s"${p.name} is an adult" 
 }
 present: (p: Person)String
-    
-<h2>Iterator</h2>
+```    
+### Iterator 
     
 scala> val iterator = (1 to 3).iterator
 iterator: Iterator[Int] = non-empty iterator
@@ -311,10 +306,9 @@ scala> iterator foreach println
 3
 
 scala> iterator foreach println
-
-scala> 
+ 
     
- <h2>Sliding</h2>  
+### Sliding  
 sliding(p) creates an Iterator which will produce collections of size p. 
     Each collection will have a new iterated element plus all the previous p-1 elements. 
     Notice that if the collection size n is lower than p, the produced collection will have a size of n.    
@@ -329,7 +323,7 @@ Vector(Vector(1, 2), Vector(2, 3), Vector(3, 4))
 scala> Vector(1).sliding(2).toVector
 res12: Vector[scala.collection.immutable.Vector[Int]] = Vector(Vector(1))
     
- <h2>Collect</h2>     
+### Collect   
  collect is similar to map: it allows you to transform the elements of a collection, but with the added capability of filtering them.
     Basically, whenever you want to filter and map a collection, you can use collect instead. The filtering is performed using pattern matching. 
     Anything that does not match any pattern is filtered out:
@@ -349,7 +343,7 @@ Whenever you use a parameter once in your anonymous function, you can replace it
 
     
     
-    <h2>Reading .tsv file</h2>    
+### Reading .tsv file     
     
 getLines() returns Iterator[String]. 
  An iterator is a mutable data structure that allows you to iterate over a sequence of elements.  
@@ -360,7 +354,7 @@ The anonymous function takes line of type string, transforms it into Array[Strin
 Finally, we convert the resulting Iterator[EquityData] into Vector[EquityData] using .toVector. 
 This step is very important: we convert the mutable, unsafe, iterator into an immutable, safe Vector    
     
-    
+```scala    
 import scala.io.Source    
 def fromResource(resource: String): Vector[EquityData] =
     Source.fromResource(resource).getLines().drop(1).map { line =>
@@ -371,6 +365,4 @@ def fromResource(resource: String): Vector[EquityData] =
                 annualDividend = fields(2).toDouble
           )
     }.toVector
-
-    
-</pre>
+```
