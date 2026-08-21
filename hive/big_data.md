@@ -1,9 +1,4 @@
-<head>
- <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
- <pre>
+ 
  
 http://gethue.com/  SQL client
 
@@ -28,28 +23,28 @@ https://blog.codecentric.de/en/2018/10/window-functions-in-stream-analytics/
  
 https://sujithjay.com/hadoopdb 
  
-<h2>Apache Ni-Fi</h2>
+## Apache Ni-Fi
 https://habr.com/ru/post/465299/
 https://medium.com/@abdelkrim.hadjidj/best-practices-for-using-apache-nifi-in-real-world-projects-3-takeaways-1fe6912101db
 https://dzone.com/articles/kylo-self-service-data-ingestion-cleansing-and-val  Apachi NiFi Kylo
 
-<h2>Vespa</h2>
+## Vespa 
 https://vespa.ai/
 
 
-<h2>Pinot</h2>
+## Pinot 
 https://pinot.apache.org/
 Pinot is a realtime distributed OLAP datastore, which is used at LinkedIn to deliver scalable real time analytics with low latency. It can ingest data from offline data sources 
 (such as Apache Hadoop and flat files) as well as online sources (such as Apache Kafka).
 
-<h2>IoT MQTT</h2>
+## IoT MQTT 
 <a href=https://docs.devicehive.com/docs>Device Hive</a>
 <a href="https://habr.com/company/intel/blog/304228/">Intel MQTT</a>
 http://highscalability.com/blog/2018/4/9/give-meaning-to-100-billion-events-a-day-the-analytics-pipel.html
 
 
 
-<h2> Apache Druid </h2>
+## Apache Druid  
 https://habr.com/company/odnoklassniki/blog/420469/
 https://towardsdatascience.com/introduction-to-druid-4bf285b92b5a
 
@@ -65,7 +60,7 @@ and its ability to continuously ingest real-time business event streams makes it
 Long-running BI queries that need to touch a lot of historical data will have to go through cold storage upload and will have longer processing times.
 
   
-<h2> Apache Drill </h2>
+##  Apache Drill 
 https://mapr.com/blog/how-guide-getting-started-apache-drill/
 
 Apache Drill is a highly scalable open source application framework which includes a SQL query engine. 
@@ -87,7 +82,7 @@ Apache Kylin is built to manage OLAP cubes in HBase to support fast SQL queries.
   
   
   
- <h2> Apache Flink </h2>      
+## Apache Flink     
  https://www.ververica.com/blog/real-time-experiment-analytics-at-pinterest-using-apache-flink      
  https://www.infoq.com/presentations/sql-streaming-apache-flink    FLINK
 https://www.ververica.com/blog/flink-forward-preview-event-time-partitioning-with-apache-flink-apache-iceberg-netflix         
@@ -96,7 +91,7 @@ https://www.ververica.com/blog/flink-forward-preview-event-time-partitioning-wit
          
  http://tech.marksblogg.com/presto-connectors-kafka-mongodb-mysql-postgresql-redis.html Presto + Kafka
                                                                                                  
-<h2>Hadoop</h2>
+## Hadoop
  
   conf/core-site.xml:  
   conf/hdfs-site.xml:                      
@@ -121,7 +116,7 @@ https://www.java-success.com/01-hadoop-bigdata-overview-interview-questions-answ
 <a href=https://www.amazon.com/dp/1946383481>Hadoop BIG DATA Interview Questions</a>
 <a href=https://www.amazon.com/dp/1946383228>Java notes</a>
 
-<h2>Hadoop data formats </h2>
+## Hadoop data formats  
 https://habr.com/ru/company/mailru/blog/504952/
 https://habr.com/ru/company/otus/blog/465069/
 https://habr.com/ru/company/alfastrah/blog/458552/   
@@ -130,7 +125,7 @@ https://www.youtube.com/watch?v=NZLrJmjoXw8 ORC vs Parquet
 predicate pushdown , mix/ max, bloom filter  per 10,000 rows is better in ORC
 
 
-<h2> CBOR (Concise Binary Object Representation) </h2>
+## CBOR (Concise Binary Object Representation) 
 https://habr.com/ru/post/208690/
  IETF RFC7049. JSON-like, базовые типы – int, float, UTF-8 string, byte string, array, map, примитивы из json. 
 На основе базовых типов расширяется стандартизированными типами, а так же просто по изъявительному принципу. 
@@ -138,7 +133,7 @@ https://habr.com/ru/post/208690/
 Но без валидации и схем.
 https://habrahabr.ru/post/208690/
 
-<h2>Avro - row major format </h2>
+## Avro - row major format  
 
 https://habr.com/ru/post/346698/
 
@@ -165,20 +160,20 @@ allowing Avro files to be splittable. Following the header, an Avro file contain
 These blocks can optionally be compressed, and within those blocks, types are stored in their native format, providing an additional
 boost to compression. At the time of writing, Avro supports Snappy and Deflate compression.
 
-<h2>Columnar file formats for Hadoop </h2>
+## Columnar file formats for Hadoop  
 https://orc.apache.org/
 https://www.slideshare.net/HadoopSummit/file-format-benchmark-avro-json-orc-parquet
 https://www.youtube.com/watch?v=6I5Ia_u4c6E
 
  
-<b>RCFile</b>
+## RCFile 
 
 <b>ORC - Optimized Row Columnar   </b> : 
            Schema is with the data,  as a part of footer
            Data is stored as row groups and stripes.
            Each stripe maintains indexes and stats about data it stores.
 
-<b>Parquet</b>
+### Parquet 
 
 https://www.mungingdata.com/aws/athena-spark-best-friends
 
@@ -221,7 +216,7 @@ The MapReduce framework and other ecosystem projects provide RecordReader implem
 text delimited, SequenceFile, Avro, Parquet, and more. 
 
 
-<h2>HBASE</h2>
+## HBASE 
                                                      
 https://habr.com/company/sberbank/blog/420425/
                                                      
@@ -257,13 +252,14 @@ e) Increment is used to automatically increment a cell value (row or column).
  If the MemStore cache is full, the data is directly written into the HFile.
  Once data is written successfully into the HDFS, an acknowledgement is passed on to the client.
 
-<h2>Hive</h2>
+## Hive 
 Metastore (usually MySQL) stores the table definition
 /etc/hive/conf/
 hive-site.xml
 
 DROP DATABASE x
 DROP TABLE a -- before DROP DATABASE x
+
 https://www.youtube.com/watch?v=vwac18EzGGs . Hive Table dissected
 https://www.youtube.com/playlist?list=PLOaKckrtCtNvLuuSkDdx71hAhPyNSqf66
 https://www.youtube.com/watch?v=dwd9m1Zl04Q . Hive JOIN OPTIMIZATION
@@ -297,12 +293,12 @@ What Hive will do is to take the field, calculate a hash and assign a record to 
 But what happens if you use let's say 256 buckets and the field you're bucketing on has a low cardinality 
 (for instance, it's a US state, so can be only 50 different values) ? 
 You'll have 50 buckets with data, and 206 buckets with no data.
-
+```sql
 CREATE TABLE table_name PARTITIONED BY (partition1 data_type, partition2 data_type,….) 
 CLUSTERED BY (column_name1, column_name2, …) 
 SORTED BY (column_name [ASC|DESC], …)] 
 INTO num_buckets BUCKETS;
-
+```
 Partitions can dramatically cut the amount of data you're querying.
  if you want to query only from a certain date forward, the partitioning by year/month/day is going to dramatically cut the amount of IO.
 bucketing can speed up joins with other tables that have exactly the same bucketing, 
@@ -315,7 +311,7 @@ Partitioning works best when the cardinality of the partitioning field is not to
 Also, you can partition on multiple fields, with an order (year/month/day is a good example),
 while you can bucket on only one field.
 
-<h2>HDFS</h2>
+### HDFS 
 - rename / move file or directory
 hdfs dfs -mv /old/file /new/file
 - get admin report / cluster status
@@ -386,14 +382,15 @@ hdfs dfs -text /path/to/file/hdfs
 hdfs dfs -mkdir /path/to/directory
 
 - hadoop streaming
+```
 hadoop jar $HADOOP_HOME/hadoop-streaming.jar \
     -input myInputDirs \
     -output myOutputDir \
     -mapper myPythonScript.py \
     -reducer /bin/wc \
     -file myPythonScript.py
-
+```
 - set sticky bit (preventing anyone except the superuser, owner from deleting or moving the files within the directory)
 sudo -u hdfs hadoop fs -chmod 1777 /tmp
 
-</pre>
+
