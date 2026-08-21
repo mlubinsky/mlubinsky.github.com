@@ -74,7 +74,7 @@ emrfs synch  https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emrfs-cli-refer
 ### Hive UDF
 https://stackoverflow.com/questions/13940498/how-to-create-a-hive-udf-for-all-sessions
 
-```
+```sql
 CREATE FUNCTION sbschema.roku_get_business_channel_id as 'com.roku.dea.hive.udfs.BusinessChannelUdf' USING JAR 's3://roku-dea-dev/sandbox/mlubinsky/hiveUdf.jar';
 
 aws s3 cp hiveUdf.jar s3://roku-dea-dev/sandbox/mlubinsky/
@@ -84,7 +84,7 @@ DESCRIBE FUNCTION EXTENDED sbschema.roku_get_business_channel_id;
 
 ### Avro
 column which contains array of strings
-```
+```json
 { 
   "name":"parameters",  
   "type": { 
@@ -130,12 +130,14 @@ SET hive.auto.convert.join=true;
 SET hive.auto.convert.join.noconditionaltask=true;
 
 SMB Join
+
 SET hive.auto.convert.sortmerge.join=true;
 SET hive.optimize.bucketmapjoin=true;
 SET hive.optimize.bucketmapjoin.sortedmerge=true;
 
 If tables are bucketed and sorted SMB join should be converted to SMB Map-Join.
 SKEWED TABLE
+
 CREATE TABLE <table_name>(col1 STRING, col2 STRING)
 SKEWED BY (col1) ON (col_val1, col_val2, col_val3) 
 [STORED AS DIRECTORIES];
@@ -162,7 +164,7 @@ pip install parquet-tools
 
 https://pypi.org/project/parquet-tools/
 
-DuckDB for parquet
+### DuckDB for parquet
 
 https://duckdb.org/docs/data/parquet.  https://duckdb.org/2021/06/25/querying-parquet.html
 
@@ -191,13 +193,13 @@ java -jar avro-tools-1.8.1.jar tojson --pretty [job_output].avro > output.json
 ```
 
 ### 2 ways to insert into partition table
-```
+```sql
 INSERT INTO zipcodes PARTITION(state='FL') VALUES 
 (891,'US','TAMPA',33605);
 ```
 Here it’s mandatory to keep the partition column as the last column.
 
-```
+```sql
 INSERT INTO zipcodes PARTITION(state) VALUES 
 (891,'US','TAMPA',33605,'FL');
 ```
@@ -226,7 +228,7 @@ location '/user/hive/warehouse/mytable'
 ```
 Another example
 http://alvincjin.blogspot.com/2014/11/hive-load-csvgz-files.html
-```
+```sql
 CREATE TABLE csv_table (line STRING)
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' 
 LINES TERMINATED BY '\n'
@@ -265,7 +267,7 @@ Answer:
 	https://issues.apache.org/jira/browse/HIVE-4022
 	
 Given table T with 3 columns:
-```
+```sql
 C1 string
 C2 struct<c2_a:array<string>, c2_c:string>
 C3 array<struct<c3_a:string, c3_b:string>>	
@@ -288,13 +290,13 @@ from z_dummy;
 
 ### Explode and LATERAL VIEW
 
-```
+```sql
 select col1, explode(split(col2,'\\s')) from table_name;
-
+```
 SemanticException [Error 10081]: UDTF's are not supported outside the SELECT clause, nor nested in expressions
 ```
  solution
- ```
+ ```sql
  select s.code, exp.splitted
   from sample_07 s
   lateral view explode(split('asdfa adsfa asdaf asdfad','\\s')) exp as splitted
@@ -315,7 +317,7 @@ LATERAL VIEW json_tuple (emp.employee_department, 'name', 'director', 'budget') 
 ```
 
 Another example of lateral view/explode:
-```
+```sql
 select
  lat.* from (select 0) t
  lateral view
@@ -323,7 +325,7 @@ select
 ```
 
 #### important: SET hive.map.aggr=false;
-```
+```sql
 SET hive.map.aggr=false;
 
 WITH A AS (
@@ -358,7 +360,7 @@ FROM A LATERAL VIEW OUTER EXPLODE(tags) t as tag
 
 
 #### How to parse JSON array:
-```
+```sql
 WITH T as
 (
   SELECT
@@ -398,7 +400,7 @@ explode(
  Issue: the result above is not good: use json_tuple or get_json_object() to convert the json in 2 separate columns: website and name
  
  Solution: use GET_JSON_OBJECT
-``` 
+```sql
  WITH T as
 (
   SELECT
@@ -579,7 +581,8 @@ DROP TABLE  <table-name>; //now the table is internal if you drop the table data
 ALTER TABLE addresses_text SET TBLPROPERTIES ('external.table.purge'='false');
 
 Create an external table to store the CSV data, configuring the table so you can drop it along with the data.
-```
+
+```sql
 
 CREATE EXTERNAL TABLE IF NOT EXISTS names_text(
   a INT, b STRING)
@@ -595,7 +598,7 @@ DROP TABLE names_text;
 ```
 
 #### SPLIT - generate array, SUBSTRING_INDEX
-```
+```sql
 SELECT SUBSTRING_INDEX(“www.big.data.n.sql.com”, “.”, 2);
 Results: http://www.big
 
@@ -617,7 +620,7 @@ select split('abcd efgh 1234',' ')[2];
 https://stackoverflow.com/questions/43054742/hive-collect-set
 
 ### Etc
-```
+```sql
 WITH E as     
 (
       SELECT
@@ -643,7 +646,7 @@ SELECT
 ```
 Plan optimized by CBO:
 
-```
+```sql
 hive> EXPLAIN SELECT
           device_id,
           concat_ws(',',collect_set(experiment_id)),
@@ -666,7 +669,9 @@ hive> EXPLAIN SELECT
      WHERE A.date_key <= '2020-10-25'
      AND A.date_key between E.start_date AND E.end_date
      GROUP BY A.device_id;
-OK
+```
+
+```
 Plan optimized by CBO.
 
 Vertex dependency in root stage
@@ -714,7 +719,7 @@ Time taken: 5.944 seconds, Fetched: 43 row(s)
 
 ```
 SIMPLE SQL: Plan not optimized by CBO.
-```
+```sql
 hive> EXPLAIN
     > SELECT
     >     A.device_id,
@@ -735,9 +740,10 @@ hive> EXPLAIN
     > WHERE A.date_key <= '2020-10-25'
     > AND A.date_key between E.start_date AND E.end_date
     > GROUP BY A.device_id;
-OK
+```
+ 
 Plan not optimized by CBO.
-
+```
 Vertex dependency in root stage
 Map 2 <- Map 1 (BROADCAST_EDGE)
 Reducer 3 <- Map 2 (SIMPLE_EDGE)
@@ -937,7 +943,7 @@ Solution:
 
 step 1: add records with NULL values in Hive - this it will enforce the new partition/folder to be created
 
-```
+```sql
 insert into agg_t
 select a,b from fact_t
 group by ...
@@ -945,7 +951,7 @@ union select {{dt}}, NULL, NULL
 ```
 step 2: remove  records  with NULL from Hive -  with  hope what new partition/folder will not be removed
 
-```
+```sql
 insert overwrite table 
 				sbschema.roku_agg_product_contextual_offers_metrics_daily
 				partition 	(date_key ) 
@@ -1077,7 +1083,7 @@ https://developpaper.com/macro-an-often-overlooked-weapon-in-hive/
 
 <https://dwgeek.com/working-with-hive-macros-syntax-and-examples.html/>
 
-```
+```sql
 DROP TEMPORARY MACRO IF EXISTS isNumber;
 
 CREATE TEMPORARY MACRO isNumber (input INT)
@@ -1130,14 +1136,14 @@ Example: FIND_IN_SET('ha','hao,mn,hc,ha,hef') returns 4
 
 
 ### Lateral VIEW explode map_keys
-```
+```sql
 SELECT id, buckets, single_bucket
 FROM roku.dim_experiment
 LATERAL VIEW explode(map_keys(buckets)) exp_buckets AS single_bucket
 LIMIT 10 ;
 ```
 
-```
+```sql
   create table sbschema.roku_t1 (x int, y int,  active_exp_map string);
   insert into sbschema.roku_t1 values
   (1, 1, "a:1&b:2&a:1"),
@@ -1161,7 +1167,7 @@ select * from sbschema.roku_t1 lateral view explode(str_to_map(active_exp_map,  
 ```
 
 ### sort_array
-```
+```sql
 WITH T as (
 SELECT 1 as dev_id, 'a:1&b:2' as a, 10 as cnt
 UNION ALL
@@ -1180,7 +1186,7 @@ FROM
 GROUP BY a_sorted
 ```
 build active_exp_map from fact_amoeba_alloc_Events
-```
+```sql
 CREATE EXTERNAL TABLE IF NOT EXISTS sbschema.roku_tmp2
 (
  dev_id STRING,
@@ -1221,7 +1227,7 @@ Output:
 
 ### collect_set and concat_ws 
 <https://stackoverflow.com/questions/61038050/hive-how-to-eliminate-the-duplicated-substrings>
-```
+```sql
 select t.i, concat_ws('&',collect_set(e.val)) as grouped_s
   from T t 
        lateral view outer explode(split(t.s,'&')) e as val
@@ -1257,14 +1263,14 @@ x num_of_rows group_con
 ```
 
 <https://stackoverflow.com/questions/48178027/hive-aggregate-function-for-merging-arrays>
-```
+```sql
 select key, collect_set(explodedvalue) from (
   select key, explodedvalue from table_above lateral view explode(value) e as explodedvalue
 ) t group by key;
 ```
 <https://github.com/brndnmtthws/facebook-hive-udfs/blob/master/src/main/java/com/facebook/hive/udf/UDFArrayConcat.java>
 Following does not work - why?
-```
+```sql
   create table sbschema.roku_t1 (x int, s string);
   insert into sbschema.roku_t1 values
   (1, "a:1&b:2"),
@@ -1321,7 +1327,7 @@ true
 ```
 
 Partitioning tables changes how Hive structures the data storage.
-``` 
+``` sql
 CREATE TABLE employees (
   name         STRING,
   salary       FLOAT,
@@ -1413,7 +1419,7 @@ ORC supports compressed (ZLIB and Snappy), as well as uncompressed storage.
 With partitioning, data is stored in separate individual folders on HDFS. Instead of querying the whole dataset, it will query partitioned dataset.
 
 Create Temporary Table and Load Data Into Temporary Table
-```
+```sql
 Create Table Employee_Temp(EmloyeeID int, EmployeeName Varchar(100), 
                            Address Varchar(100),State Varchar(100),
                            City Varchar(100),Zipcode Varchar(100))
@@ -1442,7 +1448,7 @@ EmployeeName,Address,State,City,Zipcode from Emloyee_Temp;
 ### Use Bucketing
 The Hive table is divided into a number of partitions and is called Hive Partition. 
 Hive Partition is further subdivided into clusters or buckets and is called bucketing or clustering.
-```
+```sql
 Create Table Employee_Part(EmloyeeID int, EmployeeName Varchar(100), 
                            Address Varchar(100),State Varchar(100),
                            Zipcode Varchar(100))
@@ -1528,7 +1534,7 @@ SET hive.exec.parallel.thread.number=16; -- default 8
 
 <https://formulae.brew.sh/formula/hive>
 
-```
+```shell
 brew install hive
 
 $  export HADOOP_HOME=/usr/local/Cellar/hadoop/3.2.1
@@ -1685,7 +1691,7 @@ But what happens if you use let's say 256 buckets and the field you're bucketing
 (for instance, it's a US state, so can be only 50 different values) ? 
 You'll have 50 buckets with data, and 206 buckets with no data.
 
-```
+```sql
 CREATE TABLE table_name PARTITIONED BY (partition1 data_type, partition2 data_type,….) 
 CLUSTERED BY (column_name1, column_name2, …) 
 SORTED BY (column_name [ASC|DESC], …)] 
@@ -1794,7 +1800,7 @@ They then can take advantage of spare capacity on a cluster and improve cluster 
 
 ## LEFT SEMI JOIN
 In order check the existence of a key in another table, the user can use LEFT SEMI JOIN as illustrated by the following example.
-```
+```sql
 INSERT OVERWRITE TABLE pv_users
 SELECT u.*
 FROM user u LEFT SEMI JOIN page_view pv ON (pv.userid = u.id)
@@ -1804,7 +1810,7 @@ WHERE pv.date = '2008-03-03';
 ##  Dynamic-Partition Insert
 
 This is multi-insert:
-```
+```sql
 FROM page_view_stg pvs
 INSERT OVERWRITE TABLE page_view PARTITION(dt='2008-06-08', country='US')
        SELECT pvs.viewTime, pvs.userid, pvs.page_url, pvs.referrer_url, null, null, pvs.ip WHERE pvs.country = 'US'
@@ -1847,7 +1853,7 @@ Built-in Table-Generating Functions (UDTF):
 * stack() Breaks up n values V1,...,Vn into r rows. Each row will have n/r columns. r must be constant.
 
 Lateral view is used in conjunction with user-defined table generating functions such as explode(). 
-```
+```sql
 select inline(array(struct('A',10,date '2015-01-01'),struct('B',20,date '2016-02-02')));
 
 SELECT pageid, adid
@@ -1892,7 +1898,7 @@ SELECT TRANSFORM(pv_users.userid, pv_users.date) USING 'map_script' AS dt, uid C
 ## Keywords MAP and REDUCE
 MAP and REDUCE are "syntactic sugar" for the more general select transform:
 
-```
+```sql
 FROM (
      FROM pv_users
      MAP pv_users.userid, pv_users.date
@@ -1923,7 +1929,7 @@ Hive uses the columns in Distribute By to distribute the rows among reducers. Al
 
 ## Co-Groups
 
-```
+```sql
 FROM (
      FROM (
              FROM action_video av
