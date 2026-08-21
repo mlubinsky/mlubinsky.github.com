@@ -19,6 +19,11 @@ https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-023-01753-5
 
 https://www.10xgenomics.com/
 
+http://en.wikipedia.org/wiki/Protein_structure_prediction. 
+http://cain.sourceforge.net/. 
+https://www.biostars.org/. 
+
+https://shvarz.livejournal.com/452441.html#comments
 
 ### cBioPortal for Cancer Genomics
 
