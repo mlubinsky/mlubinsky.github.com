@@ -93,49 +93,18 @@ https://habr.com/ru/company/otus/blog/475392/
  python3.8 -m pip
  
 ### pip commands:  
-
+```
 pip -V # shows pip version and path (make sure it in sync with output of site.getsitepackages()) above)
 pip list                                    # all installed packages
 pip show <packagename>     # the package details
 pip install <packagename>
 conda is similar to pip - it goes with Anaconda Python distribution https://conda.io/docs/user-guide/overview.html
-
-### Python 2 vs Python 3 
-Integer division:
-                        7/5       # returns 1 for Python 2; returns 1.4 for Python3
-Print statement:
-                        print 'A'       # works for Python2 only
-                        print ('A')     # works for Python2 and Python3
-In Python 2, implicit str type is ASCII. But in Python 3.x implicit str type is Unicode.
-xrange() exists in Python2 only; under Python3  it is named range()
-
-	
-jteppinette 44 minutes ago [-]
-
+```
  
-
  
-  PY3 = sys.version_info >= (3, 0)
-  PY2 = sys.version_info < (3, 0)
-  PY26 = sys.version_info >= (2, 6) and sys.version_info < (2, 7)
-  
-  if PY3:
-    from http import client as httplib
-  else:
-    import httplib
+sys.version_info 
 
-is string:
-  isinstance(<maybe_string>, basestring if PY2 else str)
-  
-using different classes
-  # Python 2.6 doesn't properly UTF-8 encode syslog messages, so it needs
-  # to be performed in a custom formatter.
-  formatter_class = UnicodeLoggingFormatter if PY26 else logging.Formatter
- 
-
-
-
-### Enforcing named parameters (Python3):
+### Enforcing named parameters  
 ```python
 def fn(*, a = 100,b = 200):
     return a+b*10
