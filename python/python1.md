@@ -170,13 +170,14 @@ def my_function():
     print("Hello!!!")
  
 my_function()
+``` 
+ Output:
+ Hello!!!
+
  
-# ********************
-# Hello!!!
-# ********************
  
- 
-## list.sort() vs sorted()
+### list.sort() vs sorted()
+```python
 nums = [1, -3, 2, 5]
 new_nums = sorted(nums)
 print(new_nums)  # -3, 1, 2, 5
@@ -220,15 +221,10 @@ for n in newlist:
 ```
 https://github.com/pipxproject/pipx
 mksir ~/.venvs
-
-For Python2
-
-   To create: virtualenv ~/.venvs/myproject
-    To activate: ~/.venvs/myproject/bin/activate
-	
-For Python3
-    To create: python3 -m venv ~/.venvs/myproject
-    To activate: . ~/.venvs/myproject/bin/activate
+To create:
+python3 -m venv ~/.venvs/myproject
+To activate:
+. ~/.venvs/myproject/bin/activate
 ```
 
 <a href=https://realpython.com/python-virtual-environments-a-primer/>Python virtual env</a>
@@ -238,17 +234,18 @@ When you create a virtual environment, all you are doing is creating a copy of t
 some core modules in the dist-packages folder, 
 and (usually) an empty site-packages folder. That it. 
 
-```
+```python
 python -c "import sys; print(sys.executable)"
 ```
 
 Using virtual environments allows you to avoid installing Python packages globally which could break system tools or other projects.
 There are several tools to manage the virtual environments: https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe/41573588#41573588
-The virtualenv is the basic tool which works with Python2 and Python3: https://virtualenv.pypa.io/en/stable/
+ 
+ https://virtualenv.pypa.io/en/stable/
 By default, Virtualenv creates virtual environment using the version of Python under which it is installed.  To specify another version of the Python use the -p option.
 On some occasions, you might want to create a virtual environment with the packages from the global Python installation. This can be accomplished using --system-site-packages option.
 virtualenv  v1      # create new virtual environment named v1; it will have the local folders: bin, include and lib
-```
+```bash
 source v1/bin/activate      # activate it; it changes the $PATH so that the bin/directory of the virtual environment will become first in the list
 echo $PATH                         # it is different now
 which python
@@ -300,24 +297,20 @@ https://www.techiegeek.eu/?p=25
 http://theautomatic.net/2017/09/29/downloading-every-file-ftp-server/
 
 https://www.youtube.com/watch?time_continue=187&v=WiQqqB9MlkA . Nina Zakharenko - Elegant Solutions For Everyday Python Problems - PyCon 2018
-
-<b>
-https://stackoverflow.com/questions/45684618/having-default-mac-python-2-7-and-anaconda-python-3
-</b>
-
-https://tech.instacart.com/freezing-pythons-dependency-hell-in-2018-f1076d625241
+ 
+ 
  alex.dzyoba.com/blog/python-import/  import  
 
 https://dwhsys.com/2017/01/23/working-with-multiple-python-versions/
-
+```shell
     pip check
     python -c "import os, sys; print(os.linesep.join(sys.path))"  
-
+```
 How to see where module is located in file system:
-
+```python
     import six
     print six.__file__
-
+```
 ### PYTHONPATH 
 In order to let python search first the most updated version of certain package, 
 instead of removing the system version, what can be done is to set the system variable 
