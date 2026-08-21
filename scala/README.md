@@ -11,7 +11,7 @@ https://habr.com/ru/articles/799235/ Имплиситы и тайпклассы 
 https://alvinalexander.com/scala/fp-book/how-write-functions-take-function-input-parameters/
 
 ### Examples of partition, sortBy, minBy, head, filter, case, collect, take, drop, split and map
-```
+```scala
 val xs=List(1,8,5,6,9,58,23,15,4) ;
 val (even, odd) = xs.partition(_ % 2 == 0)
 
@@ -37,7 +37,7 @@ val (leftHalf, rightHalf) = xs.splitAt(3)  -- this is better
 
 grouped(n) splits the collection into collections with n elements each
 (the last one may contain less than n elements, depending on the size of the original collection):
-```
+```scala
 xs.grouped(3).toList // List(List(4, 5, 2), List(-1, -3, 4))
 ```
 ###
@@ -119,7 +119,7 @@ Numerical types: Integral types + Float and Double
 Val the reference cannot be changed to point to another reference
 Val keyword in Scala can be related to the functionality of java final keyword. To simplify it, Val refers to immutable declaration of a variable whereas var refers to mutable declaration of a variable in Scala.
 
-```
+```scala
 val welcomeStrings = new Array[String](3) 
 welcomeStrings(0) = "Welcome" 
 welcomeStrings(1) = "to "
@@ -162,7 +162,7 @@ Empty tuple i.e. () in Scala is a term that represents unit value
 
 ###  Function
 
-```
+```scala
 def functionName ([list of parameters]) : [return type] = {
    function body
    return [expression]
@@ -176,7 +176,7 @@ A Seq is an Iterable that has a defined order of elements.
 Sequences provide a method apply() for indexing, ranging from 0 up to the length of the sequence. 
 
  
-```
+```scala
 import scala.collection.immutable._  
 object MainObject{  
    def main(args:Array[String]){  
@@ -192,7 +192,7 @@ object MainObject{
 A List is a Seq that is implemented as an immutable linked list. 
 
 It's best used in cases with last-in first-out (LIFO) access patterns.
-```
+```scala
 import scala.collection.immutable._  
 object MainObject{  
    def main(args:Array[String]){  
@@ -206,7 +206,7 @@ object MainObject{
 
 last element in the list:
 
-```
+```scala
 import scala.collection.immutable._
 object HelloWorld {
    def main(args: Array[String]) {
@@ -218,7 +218,7 @@ object HelloWorld {
 
 ### Arrays
 
-```
+```scala
 var z = new Array[Int](5)
  
 use Range() method to generate an array containing a sequence of increasing integers in a given range.
@@ -231,7 +231,7 @@ range (10, 20, 2)
 
 ### Multidimentional array ofDim
 
-``` 
+```scala 
 import Array.ofDim
 var a=ofDim[Int](3,3)
 
@@ -262,8 +262,8 @@ However, if one wants to use the append function, they can use ListBuffer.
 
 
 append 1 element using :+
-```
 
+```scala
 var myList = List.empty[String]
 myList :+= "a"
 myList :+= "b"
@@ -313,7 +313,7 @@ val colors = Map("red" -> "#FF0000", "azure" -> "#F0FFFF")
 
 FlatMap is a transformation operation in Apache Spark to create an RDD from existing RDD. It takes one element from an RDD and can produce 0, 1 or many outputs based on business logic. It is similar to Map operation, but Map produces one to one output. If we perform Map operation on an RDD of length N, output RDD will also be of length N. But for FlatMap operation output RDD can be of different length based on business logic
 
-```
+```scala
 val array1d = Array(“Hello,World”, “This,is,an,example”)
 //array1d is an array of strings
 val maped_array = array1d.map(x => x.split(“,”))
@@ -326,7 +326,7 @@ val flatMap_array = array1d.flatMap(x => x.split(“,”))
 
 #### Write a lambda function  using map(), which takes a sequence of salaries as input and outputs double of every element from input.
 
-```
+```scala
 val salaries = Seq(20000, 70000, 40000)
 val doubleSalary = (x : Int) => x*2
 val newSalary = salaries.map(doubleSalary)
@@ -343,7 +343,7 @@ val newSalary = salaries.map(x => x*2)
 
 ### Exception
 
-```
+```scala
 import java.io.FileReader
 import java.io.FileNotFoundException
 import java.io.IOException
@@ -367,7 +367,7 @@ object Demo {
 ```
 
 ### Recursion
-```
+```scala
 def factorial_loop(i: BigInt): BigInt = {
   var result = BigInt(1)
   for (j- 2 to i.intValue)
@@ -398,7 +398,7 @@ import scala.collection.mutable.Queue
 val empty = new Queue[Int]
 
 ### Pattern matching
-```
+```scala
 object Demo {
    def main(args: Array[String]) {
       println(matchTest(3))
@@ -412,7 +412,7 @@ object Demo {
 ```
 Example 2
 
-```
+```scala
 def personDescription(name: String, db: Map[String, Int]): String =
   db.get(name) match {
                       case Some(age) => s"$name is $age years old"
@@ -432,7 +432,7 @@ When you start using Option, pattern matching is the most natural way of trigger
 
 Another way is to use map and getOrElse, as shown in the following code:
 
-```
+```scala
 def personDesc(name: String, db: Map[String, Int]): String = {
   val optString: Option[String] = db.get(name).map(age => s"$name is  $age years old")
   optString.getOrElse(s"$name is not present in db")
@@ -472,7 +472,7 @@ object Edureka extends App{
 - takes one or more Functions as Arguments
 - returns a Function as its result.
 
-```
+```scala
 object Test {
    def main(args: Array[String]) {
        println( apply( layout, 10) 
@@ -500,7 +500,7 @@ No| Key                 |	Trait	                                        |     Ab
 5	Stackability	        |Traits are stackable and are dynamically bound . |Abstract classes are not stacable and are statically bound.
 ```
 
-```
+```scala
 trait SampleTrait {
    // Abstract method
    def test
@@ -570,7 +570,7 @@ You can use abstract class, if you want to distribute it in compiled form and ex
 
 Scala resolves diamond problem through the concept of Traits and class linearization rules.
 
-```
+```scala
 trait Printable{
    def print()
 }
@@ -592,7 +592,7 @@ object MainObject{
 Implicit classes allow Implicit conversations with the class’s Primary constructor when the class is in scope. 
 Implicit class is a class marked with the “implicit” keyword. This feature was introduced in with Scala 2.10 version.
 
-```
+```scala
   object {
       implicit class Data type) {
           def Unit = xyz
@@ -608,7 +608,7 @@ Implicit class is a class marked with the “implicit” keyword. This feature w
 
 The Accessibility of a private member is restricted to the Class or the Object in which it declared.
 The following program will explain this in detail.
-```
+```scala
 class Outer {
    class Inner {
       private def f() { println("f") }
@@ -624,7 +624,7 @@ class Outer {
 A protected member is only Accessible from Subclasses of the class in which the member is defined.
 The following program will explain this in detail.
 
-```
+```scala
 package p 
   class Super {
       protected def f() { println("f") }
@@ -644,7 +644,7 @@ Unlike Private and Protected members, it is not required to specify Public keywo
 There is no explicit modifier for public members. Such members can be accessed from Anywhere.
 Following is the example code snippet to explain Public member
 
- 
+```scala 
 class Outer {
    class Inner {
       def f() { println("f") }
@@ -654,7 +654,7 @@ class Outer {
    }
    (new Inner).f() // OK because now f() is public
 }
- 
+``` 
  
 ### Option, some, none
 
@@ -685,7 +685,7 @@ It’s a handy way of initializing an empty list since, Nil, is an object, which
   It’s a sub-type of all the types exists in Scala Types hierarchy. It helps in providing the return type for the operations that can affect a normal program’s flow. It can only be used as a type, as instantiation of nothing cannot be done. It incorporates all types under AnyRef and AnyVal. Nothing is usually used as a return type for methods that have abnormal termination and result in an exception.
 
 ###  if else
-```
+```scala
 object Demo {
    def main(args: Array[String]) {
       var x = 30;
@@ -760,7 +760,7 @@ stream.sum
 
 ### Invalid code no j++ in Scala:
 
-```
+```scala
 var i = 0 
 while (j < args.length) { 
     println(args(i)) 
