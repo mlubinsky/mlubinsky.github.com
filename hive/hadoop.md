@@ -1,11 +1,13 @@
+## Hadoop
+
 https://mlwhiz.com/blog/2015/05/09/hadoop_mapreduce_streaming_tricks_and_technique/
 
 https://www.tutorialandexample.com/hadoop-interview-questions
 
 https://engineering.linkedin.com/blog/2019/02/the-present-and-future-of-apache-hadoop--a-community-meetup-at-l
 
-HBASE
------
+## HBASE
+ 
 https://www.stackchief.com/blog/Top%203%20Most%20Important%20Things%20to%20Know%20About%20HBase
  HBase is schemaless. The data stored in HBase is not normalized, meaning there is no logical connection or relationship connecting different tables of data.
 The column-oriented table uses a row key to access different column families. These column families contain actual columns having different versions of data. This results in a four dimensional data model where accessing a single value requires knowing the row key, column family, column, and version.
