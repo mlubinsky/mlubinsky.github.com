@@ -1,9 +1,5 @@
-<head>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<h2>Python</h2>
-<pre>
+ ## Python 
+ 
 
 https://rednafi.github.io/digressions/python/2020/07/03/python-mixins.html
 
@@ -59,12 +55,12 @@ https://github.com/vinta/awesome-python
 https://github.com/ekzhu/SetSimilaritySearch/blob/master/scripts/all_pairs.py
 https://news.ycombinator.com/item?id=18483859
 
-<h3>slots</h3>
+### slots 
 https://habr.com/post/427909/ .  __slots__
 https://blog.usejournal.com/a-quick-dive-into-pythons-slots-72cdc2d334e
 http://book.pythontips.com/en/latest/__slots__magic.html
 
-<h3>Modules and Packages</h3>
+### Modules and Packages 
 Big application usually contains many python files, the import statement allows to glue the code.
 import mod
 When the interpreter executes the above import statement, it searches for mod.py in a list of directories assembled from the following sources:
@@ -76,7 +72,7 @@ The resulting search path is accessible in the Python variable sys.path which yo
 python -c "import os, sys; print(os.linesep.join(sys.path))"
 https://realpython.com/python-modules-packages/
 
-<h3>Package managers: pip and conda</h3>
+## Package managers: pip and conda
 pip check . # test consistency of current setup
 https://snarky.ca/why-you-should-use-python-m-pip/
 https://news.ycombinator.com/item?id=21429250
@@ -89,21 +85,22 @@ https://towardsdatascience.com/how-to-setup-an-awesome-python-environment-for-da
 PIP package manager: https://pypi.org/project/pip/
 https://dev.to/elabftw/stop-using-sudo-pip-install-52mn
 The 3rd-party libraries installed by pip are usually here:
-<b>
+ 
 python -c "import os,  site; print(os.linesep.join(site.getsitepackages()))"
-</b>
+ 
 Why you should use python -m pip   , not just pip
 https://habr.com/ru/company/otus/blog/475392/
  python3.8 -m pip
  
-pip commands:  
+### pip commands:  
+
 pip -V # shows pip version and path (make sure it in sync with output of site.getsitepackages()) above)
 pip list                                    # all installed packages
 pip show <packagename>     # the package details
 pip install <packagename>
 conda is similar to pip - it goes with Anaconda Python distribution https://conda.io/docs/user-guide/overview.html
 
-<h3>Python 2 vs Python 3</h3>
+### Python 2 vs Python 3 
 Integer division:
                         7/5       # returns 1 for Python 2; returns 1.4 for Python3
 Print statement:
@@ -115,8 +112,7 @@ xrange() exists in Python2 only; under Python3  it is named range()
 	
 jteppinette 44 minutes ago [-]
 
-No compatibility layer. Its really not bad.
-there are a few modules that are simply at different locations but have the same API
+ 
 
  
   PY3 = sys.version_info >= (3, 0)
@@ -139,14 +135,13 @@ using different classes
 
 
 
-Enforcing named parameters (Python3):
------------------------------------
+### Enforcing named parameters (Python3):
+```python
 def fn(*, a = 100,b = 200):
     return a+b*10
-
-
-Variadic Functions
-------------------
+```
+### Variadic Functions
+```python 
 def fn(a ,*all ):
     sum=0;
     for item in all:
@@ -154,28 +149,30 @@ def fn(a ,*all ):
     return a+sum
     
 print(fn(10,20)) # 30
-
-Keyword Parameters
--------------------- 
+```
+### Keyword Parameters
+```python
 def fn(**kwargs ):
     return kwargs['a'] + kwargs['b']
 
 print(fn(a=200,b=500))
 d1 = {'a':100 , 'b':200}
 print(fn(**d1)) # 300
-
-To change global variables
----------------------------
+```
+### To change global variables
+```
 num = 9
  
 def f1():
     global num
     num = 20
+```    
     
-    
-Closure    
---------
+### Closure    
+ 
 one can pass a function as a parameter to another function or return a function from another function. 
+
+```python
 def getmulby(m):
     def op(n):
         return m*n
@@ -186,12 +183,12 @@ f2=getmulby(5)
  
 print( f1(2) ) # 20
 print( f2(2) ) # 10   
-   
-Decorator
-----------
+```   
+### Decorator
+ 
 Decorator is a good example of closure. Decorator is a function that takes another function and extends 
 the behavior of the latter function without explicitly modifying it  
-
+```python
    def add_stars(some_function):
     def wrapper():
         print("********************")
@@ -239,26 +236,31 @@ for index, num in enumerate(nums):
 # Join list elements into string:
 words = ["Hello", "World"]
 combined = " ".join(words)
-
-Lambda Expressions
--------------------
+```
+### Lambda Expressions
+```python
 ls = [2,4,6]
  
 newlist = map(lambda item:item * 2, ls)
  
 for n in newlist:
     print(n)  
+```
  
- 
-<h3>Virtual Environments</h3>
+### Virtual Environments 
+```
 https://github.com/pipxproject/pipx
 mksir ~/.venvs
+
 For Python2
+
    To create: virtualenv ~/.venvs/myproject
     To activate: ~/.venvs/myproject/bin/activate
+	
 For Python3
     To create: python3 -m venv ~/.venvs/myproject
     To activate: . ~/.venvs/myproject/bin/activate
+```
 
 <a href=https://realpython.com/python-virtual-environments-a-primer/>Python virtual env</a>
 <a href=http://devarea.com/python-working-with-virtual-environments>Python virtual environment</a>
@@ -267,23 +269,24 @@ When you create a virtual environment, all you are doing is creating a copy of t
 some core modules in the dist-packages folder, 
 and (usually) an empty site-packages folder. That it. 
 
-<b>
+```
 python -c "import sys; print(sys.executable)"
-</b>
+```
+
 Using virtual environments allows you to avoid installing Python packages globally which could break system tools or other projects.
 There are several tools to manage the virtual environments: https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe/41573588#41573588
 The virtualenv is the basic tool which works with Python2 and Python3: https://virtualenv.pypa.io/en/stable/
 By default, Virtualenv creates virtual environment using the version of Python under which it is installed.  To specify another version of the Python use the -p option.
 On some occasions, you might want to create a virtual environment with the packages from the global Python installation. This can be accomplished using --system-site-packages option.
 virtualenv  v1      # create new virtual environment named v1; it will have the local folders: bin, include and lib
-
+```
 source v1/bin/activate      # activate it; it changes the $PATH so that the bin/directory of the virtual environment will become first in the list
 echo $PATH                         # it is different now
 which python
 pip install ...                        # packages will be installed into v1/lib/pythonX.Y/site-packages 
 deactivate                           # deactivate 
-
--- pyenv
+```
+### pyenv
 https://github.com/pyenv/pyenv
 https://axcoto.com/notes/manage-python-versions-on-macosx/
 https://www.marc-richter.info/using-pyenv-to-manage-your-python-interpreters/
@@ -291,8 +294,8 @@ https://www.marc-richter.info/using-pyenv-to-manage-your-python-interpreters/
 
 https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 conda-env list
-# conda environments:
-#
+### conda environments:
+ 
 base                  *  /Users/miclub01/anaconda3
 tensorflow               /Users/miclub01/anaconda3/envs/tensorflow
 tensorflow_env           /Users/miclub01/anaconda3/envs/tensorflow_env
@@ -306,7 +309,7 @@ https://python-patterns.guide/
 https://habr.com/company/it_people/blog/422363/ Videos from Russian Python Conf 
 https://github.com/faif/python-patterns
 
-Memory management
+### Memory management
 https://habr.com/ru/company/otus/blog/443312/ .  
 https://habr.com/ru/post/455722/
 
@@ -319,7 +322,7 @@ https://rushter.com/blog/numba-cython-python-optimization/
 https://hackernoon.com/python-tricks-101-2836251922e0
 https://habr.com/post/421993/
 
-<h3>Asyncio</h3>
+### Asyncio 
 https://realpython.com/async-io-python/
 https://habr.com/ru/post/453348/
 https://youtu.be/pIXiChn5j4E
@@ -346,7 +349,7 @@ How to see where module is located in file system:
     import six
     print six.__file__
 
-<h3>PYTHONPATH</h3> 
+### PYTHONPATH 
 In order to let python search first the most updated version of certain package, 
 instead of removing the system version, what can be done is to set the system variable 
 PYTHONPATH in the ~/.bash_profile (or ~/.bashrc if linux) config file to the path where the new packages are installed:
@@ -361,7 +364,7 @@ An alternative is to modify the python path inside your python script by adding 
 This needs to be done for every script you need a certain package version. 
 You might want for some reason use an older version that you have installed. 
 
-<h3>Random notes</h3>
+### Random notes 
 
 assert hasattr(Base,'foo'), "no method foo in Base class"
 
@@ -387,7 +390,7 @@ https://www.amazon.com/Python-Tricks-Buffet-Awesome-Features/dp/1775093301
 https://www.amazon.com/Dynamic-Programming-Coding-Interviews-Bottom-Up/dp/1946556696
 https://www.hardikp.com/2017/12/30/python-cpp/
 
-<h2>HTTP Server</h2>
+### HTTP Server 
 How to start http server:
 
 python2 -m SimpleHTTPServer
@@ -402,7 +405,7 @@ If you wish to change the port  from default (8000) then specify it explicitly:
 
  python -m SimpleHTTPServer 8080
 
-<h2> Random Notes </h2>
+ 
 http://arseny.info/2017/parallel-computation-with-two-lines-of-code.html   Joblib
 https://www.dataquest.io/blog/python-counter-class/
 https://github.com/ChrisKnott/Eel offline web based UI for python
@@ -416,7 +419,8 @@ a[:-2]   # 123 - everything except the last two items equivalent to slice(None, 
 
 
 
-# List traversal
+### List traversal
+```python
 range(start, stop, hop)
 range(n) # [0,1,...,n-1]
 range(1,n) # [1,...,n-1]
@@ -424,43 +428,49 @@ range(1,n,2) # [1,3,5,...,n-1] if n is even, or [1,3,5,...,n-2] if n is odd
 range(n,-1,-1) # [n,n-1,n-2,...,0]
 range(len(arr)) # Provides indices of an array arr
 range(len(arr)-1,-1,-1) # Provides indices of arr backwards
+```
 
-# List slicing
+### List slicing
+```python
 arr[w:s] # Wait w elements, start copy (:), stop before reaching index s
 arr = [1,2,3,4]
 arr[1:] = [2,3,4]
 arr[:2] = [1,2]
-
-# List manipulation
+```
+### List manipulation
+```python
 arr = [1,2,3]
 [str(x) for x in arr] # Output: ['1','2','3']
 map(lambda x: str(x), arr) # Output: ['1','2','3']
 [str(x) for x in arr if x%2] # Output: ['1','3']
-
-# List as queue
+```
+### List as queue
+```python
 arr = [1,2,3]
 arr.append(x) # queue.push(x)
 arr.pop(0) #queue.pop() .  removes the 1st element from array
 arr[0] #queue.peek()
+```
 
 
-
-# List as stack
+### List as stack
+```python
 arr = [1,2,3]
 arr.append(x) #stack.push(x)
 y = arr.pop() # stack.pop() . removes the last element from list
 arr[-1] # stack.peek()
+```
 
-
-<b> Dictionary </b>
+### Dictionary
+```python
     for k, v in dict.items():
 	    print(k,v)
 
 d.keys()   d.values() . d.items() .  this is Dictionary Views in Python 3
 d.iterkeys() . d.itervalues() d.iteritems()
-
-<b> Default dictionary </b>
-
+```
+### Default dictionary  
+```python
 from collections import defaultdict
 d = defaultdict(list)
 d['python'].append("awesome")
@@ -468,9 +478,9 @@ d['something-else'].append("not relevant")
 d['python'].append("language")
 for i in d.items():
     print i
-
-<b> Match brackets </b>
-
+```
+### Match brackets 
+```python
 expect = {"(":")","[":"]","{":"}"}
 
 def wellformed(string):
@@ -486,23 +496,23 @@ def wellformed(string):
 print(wellformed("([])[]({})")) # True
 print(wellformed("([)]")) # False
 print(wellformed("((()")) # False
+```
 
 
-
-multiply a vector by a scalar:
+#### multiply a vector by a scalar:
 def scale(A, x): return [ai*x for ai in A]
 
-add 2 vectors:
+#### add 2 vectors:
 def add(A, B): return [ai+bi for (ai, bi) in zip(A, B)]
 
 dot product:
 def dot(A, B): return sum([ai*bi for (ai, bi) in zip(A, B)])
 
-matrices by vector multiplication:
+### matrices by vector multiplication:
 def mul(A, X): return [dot(ai, X) for ai in A]
 
-<h2> Counter usage </h2>
-
+#### Counter usage  
+```python
 from collections import Counter
 
 def is_anagram(word1, word2):
@@ -510,8 +520,9 @@ def is_anagram(word1, word2):
 
 print(is_anagram('tachymetric', 'mccarthyite'))
 print(is_anagram('banana', 'peach'))
-
-------------- print most frequent words in file --------------
+```
+### print most frequent words in file 
+```python
 import re
 from collections import Counter
 
@@ -544,12 +555,12 @@ if __name__ == "__main__":
     filename = sys.argv[1]
     limit = int(sys.argv[2])
     show_top_words(filename, limit)
+```
 
 
+###  Polinom  
 
----   polinom ----------
-
-
+```python
  class Polynom:
      def __init__(self, *coefs):
          self.coefs=coefs
@@ -604,4 +615,4 @@ def fib(num):
 for item in fib(10):
    print item
 
-</pre>
+```
