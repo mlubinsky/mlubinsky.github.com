@@ -3,6 +3,12 @@ PDF editing with FireFox: https://www.mozilla.org/en-GB/firefox/features/pdf-edi
 
 https://news.ycombinator.com/item?id=40383879
 
+https://www.ihatepdf.cv/
+
+https://mypdfly.com/
+
+https://novapdfstudio.com/
+
 https://www.pdfequips.com
 
 https://github.com/Stirling-Tools/Stirling-PDF
