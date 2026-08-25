@@ -1,3 +1,16 @@
+### PDF Tools
+PDF editing with FireFox: https://www.mozilla.org/en-GB/firefox/features/pdf-editor/
+
+https://news.ycombinator.com/item?id=40383879
+
+https://www.pdfequips.com
+
+https://github.com/Stirling-Tools/Stirling-PDF
+
+https://brewpdf.com/
+
+https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/
+
 https://realpython.com/creating-modifying-pdf/
 
 Проверка содержимого PDF-файлов средствами Python и pdfminer.  
@@ -56,6 +69,7 @@ Width: 8.5 inches
 Height: 5.5 inches (for each image, since two will be placed vertically).
 Here’s how you can set the figure size in Matplotlib:
 
+```python
 import matplotlib.pyplot as plt
 
 # Set DPI (72 or 300 as needed)
@@ -70,7 +84,7 @@ plt.plot([0, 1], [0, 1])
 # Save as PNG
 plt.savefig("image.png", dpi=dpi)
 plt.close()
-
+```
 
 Gemini
 --------
@@ -86,7 +100,7 @@ If the images are too wide, they will be cropped or resized. If they are too nar
 Here is an example of how you could set the height and width of your PNG files to ensure that
 they fit on a Letter size PDF page without resizing:
 
- 
+```python
 import matplotlib.pyplot as plt
 
 # Set the desired height and width of the PDF page in inches
@@ -104,7 +118,7 @@ fig = plt.figure(figsize=(png_file_width, png_file_height))
 
 # Save the figure as a PNG file
 plt.savefig('image.png')
- 
+ ```
 
 With these dimensions, two PNG files should fit comfortably on a Letter size PDF page without resizing.
 You can adjust the png_file_width and png_file_height variables to fit your specific needs.
@@ -157,6 +171,7 @@ Recommended Image Size: 6 inches (width) x 4.25 inches (height)
 Below is the updated Python code using ReportLab to place two images per page, with each image having its filename above it.
 The code dynamically sets the page orientation based on each image's aspect ratio and ensures that images fit within the recommended dimensions.
 
+```python
 import os
 from reportlab.lib.pagesizes import letter, landscape, portrait
 from reportlab.pdfgen import canvas
@@ -268,6 +283,9 @@ def create_pdf_with_images(folder_path, output_pdf):
 folder_path = 'path_to_your_images_folder'  # Replace with your images folder path
 output_pdf = 'output_images_two_per_page.pdf'
 create_pdf_with_images(folder_path, output_pdf)
+
+```
+
 5. Explanation of the Code
 Image Collection:
 
@@ -388,6 +406,7 @@ The first image will be placed at the top of the page, under the margin.
 The second image will be placed below the first, with a margin or spacing between them.
 Updated Code for Stacked Images on Landscape Pages
 
+```python
 import os
 from reportlab.lib.pagesizes import letter, landscape, portrait
 from reportlab.pdfgen import canvas
@@ -489,8 +508,10 @@ def create_pdf_with_images(folder_path, output_pdf):
 folder_path = 'path_to_your_images_folder'  # Replace with your images folder path
 output_pdf = 'output_images_two_vertically_per_page.pdf'
 create_pdf_with_images(folder_path, output_pdf)
-Key Changes
 
+```
+
+ 
 Page Layout:
 
 The page layout for landscape orientation places the images vertically.
@@ -516,7 +537,7 @@ The resulting PDF will have two images per page, stacked vertically, with filena
 
 
 
-You said:
+ 
 What should be the size of image to avoid scaling ?
 ChatGPT said:
 
@@ -551,10 +572,10 @@ If you want to avoid scaling:
 The images should be 9 inches wide and 3 inches tall (for a landscape page with two vertically stacked images).
 If your images don't fit this exact size, they will need to be scaled to fit within these dimensions.
 Note: If you decide to adjust the margins or spacing, you'll need to recalculate the available space accordingly.
-```
+ 
 
 ### 2 images per pdf page: ChatGPT
-```
+```python
 import os
 from reportlab.lib.pagesizes import letter, landscape
 from reportlab.pdfgen import canvas
@@ -607,7 +628,7 @@ def create_pdf_with_images(folder_path, output_pdf):
 folder_path = 'path_to_your_images_folder'
 output_pdf = 'output_images.pdf'
 create_pdf_with_images(folder_path, output_pdf)
-
+```
 
 Note:
 
@@ -617,8 +638,8 @@ If you want to maintain the aspect ratio of the images, you may need to compute 
 Here’s a small adjustment to preserve the aspect ratio of the images:
 
 Adjusted Code (Preserve Aspect Ratio):
-python
-Copy code
+```python
+ 
 def create_pdf_with_images(folder_path, output_pdf):
     # Get all PNG files in the folder
     image_files = [f for f in os.listdir(folder_path) if f.endswith('.png')]
@@ -670,18 +691,18 @@ def create_pdf_with_images(folder_path, output_pdf):
 
     # Save the PDF
     c.save()
-
-Changes:
-Aspect Ratio Preservation: T
-he image is resized based on a scale_factor, which ensures the image maintains its original aspect ratio while still fitting within the allocated space.
 ```
+Changes:
+Aspect Ratio Preservation: The image is resized based on a scale_factor, which ensures the image maintains its original aspect ratio while still fitting within the allocated space.
+ 
 ### 2 images per pdf page: Gemini
 ```
 No, the code does not resize the images to fit the PDF horizontally and vertically. 
 The images are set to a fixed width and height of 4 inches. 
 If the images are larger than this size, they will be cropped. 
 If they are smaller, they will be displayed at their original size.
- 
+```
+```python 
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import inch
 from reportlab.platypus import SimpleDocTemplate, Image, Paragraph, Spacer
@@ -716,9 +737,9 @@ if __name__ == '__main__':
     create_pdf(images_folder, output_pdf)
 
 
-Here is an example of how to resize the images to fit the PDF:
+## Here is an example of how to resize the images to fit the PDF:
 
-Python
+ 
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import inch
 from reportlab.platypus import SimpleDocTemplate,   
