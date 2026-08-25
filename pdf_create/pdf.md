@@ -28,7 +28,7 @@ Pdf page is a Letter, portrait location.
 What should be the png file height and width in order to be placed into pdf without resizing ?
 
 
-ChatGPT
+ChatGPT suggests:
 --------
 To place two PNG files vertically on a Letter-sized PDF page (portrait orientation) without resizing,
 we first need to understand the dimensions of a Letter page and how to divide it for two images.
@@ -68,6 +68,7 @@ To specify the figure size in inches for Matplotlib, you should use the followin
 Width: 8.5 inches
 Height: 5.5 inches (for each image, since two will be placed vertically).
 Here’s how you can set the figure size in Matplotlib:
+```
 
 ```python
 import matplotlib.pyplot as plt
