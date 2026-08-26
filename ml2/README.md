@@ -13,31 +13,32 @@ https://medium.com/huggingface/from-zero-to-research-an-introduction-to-meta-lea
 
 
 
-  https://habr.com/ru/company/skillfactory/blog/510688/.  what is p-value?
-        http://www.stochasticlifestyle.com/the-essential-tools-of-scientific-machine-learning-scientific-ml/
+https://habr.com/ru/company/skillfactory/blog/510688/.  what is p-value?
+http://www.stochasticlifestyle.com/the-essential-tools-of-scientific-machine-learning-scientific-ml/
 
-        https://habr.com/ru/post/475552/ Блиц-проверка алгоритмов машинного обучения: скорми свой набор данных библиотеке scikit-learn 
-        https://habr.com/ru/post/460557/ 
-        https://habr.com/ru/post/462961/ . ML Digest
-	http://themlbook.com/wiki/doku.php
-	https://vas3k.ru/blog/machine_learning/
-        https://ml-cheatsheet.readthedocs.io/
+https://habr.com/ru/post/475552/ Блиц-проверка алгоритмов машинного обучения: скорми свой набор данных библиотеке scikit-learn 
+
+https://habr.com/ru/post/460557/ 
+https://habr.com/ru/post/462961/ . ML Digest
+http://themlbook.com/wiki/doku.php
+https://vas3k.ru/blog/machine_learning/
+https://ml-cheatsheet.readthedocs.io/
 	https://github.com/danielhanchen/hyperlearn/blob/master/Modern%20Big%20Data%20Algorithms%20(Lower%20quality%20PDF).pdf
 	
-	https://habr.com/ru/post/453290/ Data Science Digest
-	https://github.com/kmario23/deep-learning-drizzle
+https://habr.com/ru/post/453290/ Data Science Digest
+https://github.com/kmario23/deep-learning-drizzle
 	
-	https://github.com/trekhleb/homemade-machine-learning . HomeMade ML using Jupiter Notebook
+https://github.com/trekhleb/homemade-machine-learning . HomeMade ML using Jupiter Notebook
 	
 https://habr.com/ru/post/449260/ . AutoML	
 https://github.com/mljar/mljar-supervised .  AutoML
 https://ai.googleblog.com/2019/05/an-end-to-end-automl-solution-for.html .  AutoML	
 	
-	https://news.ycombinator.com/item?id=19712465 . ML workflow
+https://news.ycombinator.com/item?id=19712465 . ML workflow
 	
-	https://www.textbook.ds100.org/  Introduction to datascience
+https://www.textbook.ds100.org/  Introduction to datascience
 	
-	https://github.com/machinelearningmindset/machine-learning-course
+https://github.com/machinelearningmindset/machine-learning-course
 	
 https://blog.floydhub.com/introduction-to-anomaly-detection-in-python/
 	
@@ -61,7 +62,7 @@ https://jinchuika.com/en/post/1-preprocessing-part-1/ .  Preprocessing
 	
 https://skymind.ai/wiki/
 	
-	https://github.com/clone95/Machine-Learning-Study-Path/blob/master/README.md
+https://github.com/clone95/Machine-Learning-Study-Path/blob/master/README.md
 ```
 In math terms, an operation F is linear if scaling inputs scales the output, and adding inputs adds the outputs:
 
@@ -93,7 +94,7 @@ https://gaussianbp.github.io/ Gaussiab Belief Propagation
  
 https://blog.finxter.com/python-linear-regression-1-liner/
 
-```
+```python
 from sklearn.linear_model import LinearRegression
 import numpy as np
 
