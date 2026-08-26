@@ -87,14 +87,16 @@ https://towardsdatascience.com/a-beginners-guide-to-discrete-time-markov-chains-
 The Markov property states that p_ij is independent of the state in which the system was at times (t-2), (t-3),…,0. The Markov property is stated as follows:
 
 https://medium.com/pythoneers/30-basic-machine-learning-questions-answered-692acd10841f
+ 
+### The Stages of Building A Machine Learning Model
 ```
-The Stages of Building A Machine Learning Model 
 - Data Collection: It is the first stage of any kind of machine learning model. In this stage, the appropriate data is decided and then it is collected using some algorithm or manually.
 - Data Processing: In this stage, the data that we have collected in the first stage is preprocessed by handling all the null values, categorical data, etc. also in the same stage the data features are made in the same range if they are not already.
 - Model Building: In this stage first we choose appropriate algorithms to create the model and then with the help of sklearn the model is built.
 - Model Evaluation: After the model is created it is evaluated using some techniques of statistics like
-
-Type I and Type II errors 
+```
+### Type I and Type II errors 
+```
 - Type I Error(False Positive Error):- It occurs when the null hypothesis is true but it gets rejected means if claims something has happened when it hasn’t.
 - Type II Error(False Negative Error):-it occurs when the null hypothesis gets accepted when it's not true means it claims nothing when something has happened.
 
@@ -114,27 +116,27 @@ Accuracy is the ratio of correctly predicted positive observations to the total 
 Accuracy = TP+TN/TP+TN+FP+FN
 
 P-Value is the determination of a result when the null hypothesis assumed to be true. if the p-value is very small (<0.05) then our assumption that the null hypothesis is correct is most likely to be false. Thus we reject the null hypothesis.
-
-14. Explain how a Roc Curve Works?
-Ans: An Roc curve is a graph showing the performance of a classification model at different thresholds. it uses two curve plot parameters True positive rate(sensitivity) and False positive rate(Specificity).
+```
+###  ROC Curve
+  An Roc curve is a graph showing the performance of a classification model at different thresholds. it uses two curve plot parameters True positive rate(sensitivity) and False positive rate(Specificity).
 ◾ The closer the curve follows the left-hand border and then the top border the more accurate the test is.
 ◾ The closer the curve to a 45* diagonal of ROC Space the less accurate the test is.
 
-15. How Knn different from K-means clustering?
+### How KNN different from K-means clustering?
 
-Ans: Knn is a supervised machine learning technique that is used for classification or regression problems. In Knn the K represents the number of nearest neighbors used to predict the dependent var.
+KNN is a supervised machine learning technique that is used for classification or regression problems. In Knn the K represents the number of nearest neighbors used to predict the dependent var.
 K-means clustering is an unsupervised machine learning algorithm that is used to divide the data into different clusters based on k (number of clustering), and centroids.
 
-16. What is ‘Naive’ in the Naive Bayes Theorem?
+### What is ‘Naive’ in the Naive Bayes Theorem?
 
-Ans: Naive Bayes classifier assumes that all the input variables are independent of each other means they don’t have any relationship between them which is actually an unrealistic assumption for real data.
+Naive Bayes classifier assumes that all the input variables are independent of each other means they don’t have any relationship between them which is actually an unrealistic assumption for real data.
 Let’s suppose a dataset that contains information about fruits and detects whether the fruit is an apple or not.
 A sample of this data contains a fruit that is red, round, and about 4'' in diameter. 
 Even if all these features depend on each other or upon the existence of the other feature A Naive Bayes classifier will always consider them as independent contributors for the prediction of the fruit.
 
-17. How Ensemble Learning Works?
+### How Ensemble Learning Works
 
-Ans: Ensemble Learning is a technique in which the predictions or results of multiple models are combines to achieve better performance. 
+Ensemble Learning is a technique in which the predictions or results of multiple models are combines to achieve better performance. 
 Let’s Take an example 
 if you buy a car you generally go for research on the web to search for reviews and features of different cars 
 and In the end, after combining all the reviews you create your own review of that car and decide whether you want to purchase or not. The review you create is the better version of all the reviews you read because it contains the information from all the reviews. 
@@ -142,30 +144,31 @@ Ensemble learning works the same, The predictions from many algorithms are used 
 Ensemble Learning can be done using two ways, one is to use different algorithms prediction combine to generate a new high accuracy prediction or another way is to use a single algorithm multiple times and at the end, use each model prediction to generate a better model with good accuracy.
  
 
-18. What is bagging and Boosting in machine learning?
+### What is bagging and Boosting in machine learning?
 
 Ans: Bagging is a method of combining predictions of the same type means from the same algorithm. Ex: Random Forest. In this, each model is built independently with equal weight given to them. It reduces the overfitting problem. it also decreases the variance.
 Boosting is a way of combining predictions belongs to different algorithms. Ex: Gradient boosting. The new model is highly influenced by the performance of the previously built models. It reduces the bias.
 
-19. What is a bias-variance tradeoff?
+### What is a bias-variance tradeoff?
 
-Ans: bias is the difference between the average prediction of the model and the correct value 
+Bias is the difference between the average prediction of the model and the correct value 
 on the other hand variance is the variability of a data point that shows the spread of the data.
 if our model has fewer parameters then it may have High bias and Low variance because of that it will consistent but inaccurate on average.
 A model with a large number of parameters may have Low bias and High variance models which are mostly accurate on average but inconsistent in nature.
 A good model always has low bias and low variance.
 
-20. Explain L1 and L2 Regularization?
+### Explain L1 and L2 Regularization
 
-Ans: A Regression model that uses L1 Regularization is called Lasso Regression 
+A Regression model that uses L1 Regularization is called Lasso Regression 
 and the Model which uses L2 Regularization is called Ridge Regression. 
+
 ◾ L1 regularization adds the penalty term in the cost function by adding the absolute value of weight(Wj), while L2 regularization adds the squared value of weights(Wj) in the cost function.
 ◾ One More difference between both of them is that L1 regularization tries to estimate the median of the data while L2 regularization tries to estimate the mean of the data. 
 ◾ L1 regularization helps in eliminating the features that are not important.
 
-21. What are the different ways you know to handle missing values in machine learning?
+###  What are the different ways you know to handle missing values in machine learning?
 
-Ans: 1. Replacing the missing value with the mean, median, or mode.
+1. Replacing the missing value with the mean, median, or mode.
 2. Replacing the missing values with a random value.
 3. Taking all the NaN values and using them as a New Feature.
 4. Replacing NaN values with the third deviation value.
@@ -176,9 +179,9 @@ Ans: 1. Replacing the missing value with the mean, median, or mode.
 9. Drop Values
 
 
-Handle Categorical Values in the dataset?
+### HOW TO Handle Categorical Values in the dataset
 
-Ans: To Handle Categorical Values We Can Perform Encoding That Basically converts the categorical data into numerical data.
+To Handle Categorical Values We Can Perform Encoding That Basically converts the categorical data into numerical data.
 
 Nomial Encoding: When data do not have an inherent order.
 1.1 One Hot Encoding
@@ -192,11 +195,11 @@ Ordinal Encoding: When data have an inherent order.
 3. Count Encoding
 
 
-```
+ 
 
-bayes: https://towardsdatascience.com/bayes-theorem-the-core-of-machine-learning-69f5703e511f
+Bayes: https://towardsdatascience.com/bayes-theorem-the-core-of-machine-learning-69f5703e511f
 
-central limit theorem (the sampling distribution of the sample means will be approximately normal distribution even if the original distribution wasn’t normally distributed)
+Central limit theorem (the sampling distribution of the sample means will be approximately normal distribution even if the original distribution wasn’t normally distributed)
 
 https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/
 
@@ -237,19 +240,21 @@ Seaborn pairplot   (pair-wise scatter plot(
 Heatmap
 Cross-correlation plot 
 
-```
+```python
 corrMatrix = df.cor()
 import seaborn as sn
 sn.heatmap(corrMatrix, annot=True)
 ```
 
-Types of Correlation coefficients:  https://towardsdatascience.com/beyond-correlation-coefficients-and-mean-squared-error-952bd966cedb
+### Types of Correlation coefficients 
+https://towardsdatascience.com/beyond-correlation-coefficients-and-mean-squared-error-952bd966cedb
 
 1. Sample Correlation coefficients.
 2. Population Correlation coefficients.
 3. Pearson Correlation coefficients.
 
- Predictive Power Score PPS can uncover non-linear relationships between different columns and data types (non-numeric), is asymmetric and will show values, for example, if variable A can predict B and values for variable B to predict A.
+### Predictive Power Score (PPS) 
+ Predictive Power Score (PPS) can uncover non-linear relationships between different columns and data types (non-numeric), is asymmetric and will show values, for example, if variable A can predict B and values for variable B to predict A.
 https://medium.com/geekculture/an-alternative-to-correlation-predictive-power-score-in-python-a3160c95d701
 
 autoviz and lux
@@ -285,10 +290,10 @@ In Supervised Learning, our set of outputs are commonly called the dependent var
 In this way, Regression is simply trying to predict a continuous target variable given a set of inputs
 ```
 
-Generalised Linear Models - GLM
+### Generalised Linear Models - GLM
 https://towardsdatascience.com/what-is-so-general-about-generalized-linear-model-15dde9be2640
 
-GLM’s are a generalisation of Linear Regression where the response variable takes a non-normal distribution such as a Poisson or Binomial distribution. GLM’s contain three core things:
+GLM’s are a generalization of Linear Regression where the response variable takes a non-normal distribution such as a Poisson or Binomial distribution. GLM’s contain three core things:
 - Part of the Exponential Family of Distributions
 - Linear Predictors
 - Link Function
@@ -310,6 +315,7 @@ class StreamingMean:
         self.result = (self.result * self.n + element) / (self.n+1)
         self.n += 1
 ```
+
 https://en.wikipedia.org/wiki/Reservoir_sampling
 ```python
 from random import random
@@ -399,11 +405,12 @@ as we can always run an exhaustive search with a fixed model and compare the obt
 https://towardsdatascience.com/how-to-mitigate-overfitting-with-feature-selection-164897c0c3db
 
 Following techniques that can be used to mitigate overfitting:
-Cross-validation
-Regularization
-Dimensionality Reduction
-Creating Ensembles
-Feature Selection
+
+- Cross-validation
+- Regularization
+- Dimensionality Reduction
+- Creating Ensembles
+- Feature Selection
 
 
 ### Model evaluation
@@ -446,6 +453,7 @@ https://towardsdatascience.com/beyond-correlation-coefficients-and-mean-squared-
 https://towardsdatascience.com/4-metrics-to-evaluate-your-regression-models-885e9caeee57
 
 https://arxiv.org/abs/1811.12808
+
 Sebastian Raschka gave a very nice summary in his paper, Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning, of 4 model validation methods:
 Performance estimation
 - 2-way holdout method (train/test split)
