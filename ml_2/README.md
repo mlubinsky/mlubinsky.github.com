@@ -119,8 +119,9 @@ P-Value is the determination of a result when the null hypothesis assumed to be 
 ```
 ###  ROC Curve
   An Roc curve is a graph showing the performance of a classification model at different thresholds. it uses two curve plot parameters True positive rate(sensitivity) and False positive rate(Specificity).
-◾ The closer the curve follows the left-hand border and then the top border the more accurate the test is.
-◾ The closer the curve to a 45* diagonal of ROC Space the less accurate the test is.
+  
+- The closer the curve follows the left-hand border and then the top border the more accurate the test is.  
+- The closer the curve to a 45* diagonal of ROC Space the less accurate the test is.
 
 ### How KNN different from K-means clustering?
 
@@ -144,7 +145,7 @@ Ensemble learning works the same, The predictions from many algorithms are used 
 Ensemble Learning can be done using two ways, one is to use different algorithms prediction combine to generate a new high accuracy prediction or another way is to use a single algorithm multiple times and at the end, use each model prediction to generate a better model with good accuracy.
  
 
-### What is bagging and Boosting in machine learning?
+### What is Bagging and Boosting in machine learning?
 
 Ans: Bagging is a method of combining predictions of the same type means from the same algorithm. Ex: Random Forest. In this, each model is built independently with equal weight given to them. It reduces the overfitting problem. it also decreases the variance.
 Boosting is a way of combining predictions belongs to different algorithms. Ex: Gradient boosting. The new model is highly influenced by the performance of the previously built models. It reduces the bias.
@@ -162,9 +163,9 @@ A good model always has low bias and low variance.
 A Regression model that uses L1 Regularization is called Lasso Regression 
 and the Model which uses L2 Regularization is called Ridge Regression. 
 
-◾ L1 regularization adds the penalty term in the cost function by adding the absolute value of weight(Wj), while L2 regularization adds the squared value of weights(Wj) in the cost function.
-◾ One More difference between both of them is that L1 regularization tries to estimate the median of the data while L2 regularization tries to estimate the mean of the data. 
-◾ L1 regularization helps in eliminating the features that are not important.
+- L1 regularization adds the penalty term in the cost function by adding the absolute value of weight(Wj), while L2 regularization adds the squared value of weights(Wj) in the cost function.  
+- One More difference between both of them is that L1 regularization tries to estimate the median of the data while L2 regularization tries to estimate the mean of the data.   
+- L1 regularization helps in eliminating the features that are not important.
 
 ###  What are the different ways you know to handle missing values in machine learning?
 
