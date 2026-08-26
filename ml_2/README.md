@@ -181,17 +181,19 @@ and the Model which uses L2 Regularization is called Ridge Regression.
 
 ### HOW TO Handle Categorical Values in the dataset
 
-To Handle Categorical Values We Can Perform Encoding That Basically converts the categorical data into numerical data.
+To handle categorical Values we can Perform Encoding that  converts the categorical data into numerical data.
 
-Nomial Encoding: When data do not have an inherent order.
+#### Nominal Encoding: When data do not have an inherent order.
+```
 1.1 One Hot Encoding
 1.2 One Hot Encoding with many features
 1.3 Mean Encoding
-
-Ordinal Encoding: When data have an inherent order.
+```
+#### Ordinal Encoding: When data have an inherent order
+```
 2.1 Label Encoding
 2.2 Target Guided Encoding
-
+```
 3. Count Encoding
 
 
@@ -294,9 +296,9 @@ In this way, Regression is simply trying to predict a continuous target variable
 https://towardsdatascience.com/what-is-so-general-about-generalized-linear-model-15dde9be2640
 
 GLM’s are a generalization of Linear Regression where the response variable takes a non-normal distribution such as a Poisson or Binomial distribution. GLM’s contain three core things:
-- Part of the Exponential Family of Distributions
-- Linear Predictors
-- Link Function
+- Part of the Exponential Family of Distributions. 
+- Linear Predictors. 
+- Link Function. 
  
 https://towardsdatascience.com/poisson-regression-and-generalised-linear-models-606fe5f7c1fd
 
