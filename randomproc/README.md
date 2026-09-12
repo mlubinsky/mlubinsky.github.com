@@ -2,6 +2,8 @@
 
 https://habr.com/ru/articles/914146/ Random walking
 
+https://www.youtube.com/watch?v=a1EdAf2XNbk
+
 https://arxiv.org/pdf/1907.01060.pdf . (ru)
 
 https://jiha-kim.github.io/posts/introduction-to-stochastic-calculus/
