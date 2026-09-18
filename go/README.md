@@ -4,6 +4,8 @@
 
 <https://marketplace.visualstudio.com/items?itemName=golang.go>   VS Code extension
 
+<https://habr.com/ru/companies/avito/articles/1083784/>
+
 <https://www.bytesizego.com/courses/>
 
 <https://100go.co/>
