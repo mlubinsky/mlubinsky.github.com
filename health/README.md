@@ -11,8 +11,24 @@ https://news.ycombinator.com/item?id=46448894
 
 https://dmitriysh.livejournal.com/
 
+## Prostate
+https://www.youtube.com/watch?v=hlLugKTvUTA. 
 https://yarchive.net/blog/prostate/  An end to all this prostate trouble?  
 https://news.ycombinator.com/item?id=43801906
+
+### ЛЕЧЕНИЕ ПРОСТАТИТА
+
+https://www.youtube.com/watch?v=v3oKCsA2EUw 
+
+https://www.youtube.com/watch?v=SwhiNAQPhjU&t=0s
+
+https://www.youtube.com/watch?v=7NdVCfTg0yw&t=0s
+
+https://www.youtube.com/watch?v=7NdVCfTg0yw
+
+
+###
+
 
 https://habr.com/ru/articles/879274/ Приключение серотонина в бесконечном цикле боли. ч.4 
 
@@ -247,15 +263,6 @@ Stretching can help improve range of motion, reduce stiffness, and prevent injur
 Examples include yoga, Pilates, and static stretches.
 ```
 
-### ЛЕЧЕНИЕ ПРОСТАТИТА
-
-https://www.youtube.com/watch?v=v3oKCsA2EUw 
-
-https://www.youtube.com/watch?v=SwhiNAQPhjU&t=0s
-
-https://www.youtube.com/watch?v=7NdVCfTg0yw&t=0s
-
-https://www.youtube.com/watch?v=7NdVCfTg0yw
 
 ### Flexibility:
 
