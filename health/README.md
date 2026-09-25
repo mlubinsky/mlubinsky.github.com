@@ -12,7 +12,7 @@ https://news.ycombinator.com/item?id=46448894
 https://dmitriysh.livejournal.com/
 
 ## Prostate
-https://www.youtube.com/watch?v=hlLugKTvUTA. 
+https://www.youtube.com/watch?v=hlLugKTvUTA   
 https://yarchive.net/blog/prostate/  An end to all this prostate trouble?  
 https://news.ycombinator.com/item?id=43801906
 
