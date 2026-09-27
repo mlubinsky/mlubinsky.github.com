@@ -1,5 +1,7 @@
 ## GO language
 
+https://antonz.org/go-concurrency-distilled/
+
 <https://habr.com/ru/articles/1025068/>
 
 <https://marketplace.visualstudio.com/items?itemName=golang.go>   VS Code extension
