@@ -4,7 +4,10 @@
 ![Waves_diagram](/physics/waves_spectr.png)
 ![Waves_spectrum](/physics/waves_spectrum.jpeg)
 
+Вода прозрачна только в очень узком диапазоне электромагнитного спектра, поэтому живые организмы развили чувствительность к этому диапазону, и это то, что мы сейчас называем «видимым светом».   
+Глаза появились в воде, и сохранили видимый диапазон после выхода на сушу
 
+<img width="950" height="1200" alt="image" src="https://github.com/user-attachments/assets/145287d0-15cb-42ea-bcfe-10193f4da39a" />
 
 <https://habr.com/ru/companies/beget/articles/1009156/>
 
