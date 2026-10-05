@@ -1,4 +1,7 @@
 ## Photon
+
+https://habr.com/ru/articles/1090310/
+
 https://www.facebook.com/groups/900321603377111/?multi_permalinks=27127285726920674&hoisted_section_header_type=recently_seen&__cft__[0]=AZaVdln5VyCSFuv1AjRN1SYDpMSNIyw8GcTKL70bXe1yejNMxaNxTC6GJFERtKtmtVH3pB2aQV4GsGHFqUotOraS3Hn6Ce_qTuoR_2CWz5xfWHAsBlHHNZ36GlzXkgl7JUNNR6IqZwA6MT7wxgJLUw5N5JRn-ZRC3SAcvBPCng3YeXSPYGzuCeyjlvmz7gPRxdYNUpMtmbyokC2xwzaIa0k6&__tn__=%2CO%2CP-R
 
 Мы уже знаем, что наличие зарядов требует взаимодействия и калибровочного поля, которое называется векторным потенциалом A.   
