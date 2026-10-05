@@ -1,5 +1,7 @@
-
 ## What is photon?
+
+https://habr.com/ru/articles/1090310/
+
 https://blog.rudnyi.ru/ru/2024/08/cho-takoe-foton.html
 
 Lamb, Willis E. "Anti-photon." Applied Physics B 60 (1995): 77-84.
