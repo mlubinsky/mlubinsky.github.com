@@ -2,6 +2,8 @@
 
 https://habr.com/ru/articles/914146/ Random walking
 
+https://gregorygundersen.com/blog/2026/04/22/brownian-motion/
+
 https://www.youtube.com/watch?v=a1EdAf2XNbk
 
 https://arxiv.org/pdf/1907.01060.pdf . (ru)
