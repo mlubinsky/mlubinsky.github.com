@@ -1,5 +1,7 @@
 ### Electrodynamics
 
+<https://www.youtube.com/watch?v=Sj_GSBaUE1o>
+
 https://habr.com/ru/companies/skbkontur/articles/1047536/
 
 https://www.amazon.com/Electricity-Magnetism-Mathematicians-Thomas-Garrity-dp-1107435161/dp/1107435161
