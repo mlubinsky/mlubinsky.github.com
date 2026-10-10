@@ -3,6 +3,8 @@
 
 <https://www.youtube.com/watch?v=eD_mv1ZZfLQ>
 
+<https://www.youtube.com/watch?v=YFiQIZOM2fw>
+
 <https://www.youtube.com/watch?v=pcOLUI9Z-mk> Введение в КТП | Наумов Д.В.
 
 https://www.youtube.com/playlist?list=PLcsjsqLLSfNBjHy-PDf31113oXynPuzEZ Renormirovka Naumov
