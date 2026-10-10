@@ -81,6 +81,8 @@ https://www.youtube.com/@bogolyubovinstitutefortheo9998
  
 Мейлихов, Евгений Залманович  Магнетизм : основы теории. 2-е изд.Долгопрудный : ИНТЕЛЛЕКТ, 2022
 
+
+<https://arxiv.org/abs/cond-mat/0703374>  Graphene : bridge between condensed matter physics and quantum electrodynamics
 ### Михаил Иванов
 Геометрический взгляд на специальную теорию относительности:
 https://intuit.ru/studies/courses/488/344/info
