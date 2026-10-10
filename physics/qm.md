@@ -1,6 +1,6 @@
 ## Quantum Mechanics
 
-<https://www.youtube.com/playlist?list=PLjH5ujQJt_IeW2qFkDRIBrZpIgx4ZX4AR>
+<https://www.youtube.com/playlist?list=PLjH5ujQJt_IeW2qFkDRIBrZpIgx4ZX4AR> Quantum Physics by Richard Behiel
 
 <https://www.youtube.com/watch?v=Emso7NgZZ9s> The Quantum Mechanics Behind the Periodic Table
 
