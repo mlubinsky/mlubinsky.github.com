@@ -143,6 +143,8 @@ Then apply Insert → Building blocks → Code block.
 
 https://habr.com/ru/articles/890522/
 
+https://habr.com/ru/articles/1095804/
+
 ### EDA
 Основы радиотехники, Григорьев А. А., 04.02.2021
 https://www.youtube.com/watch?v=7KjJ26nVc9o&list=PLthfp5exSWEphKXCieHltL9mvY5CiUtnZ
