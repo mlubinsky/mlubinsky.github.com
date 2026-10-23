@@ -17,3 +17,10 @@ https://www.youtube.com/watch?v=hxCQR0W6yLE
 https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/
 
 https://news.ycombinator.com/item?id=50093568
+
+
+### 
+ВСЕ ВОСПАЛЕНИЯ ИСЧЕЗНУТ! СОСУДЫ ОЧИСТЯТСЯ КИШЕЧНИК И МОЗГ КАК В 20 лет!
+Вячеслав Ананенко
+
+https://www.youtube.com/watch?v=cTiuWrl-Iy0
