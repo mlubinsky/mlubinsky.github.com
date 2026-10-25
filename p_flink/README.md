@@ -1,5 +1,159 @@
 ## Flink
 
+
+Apache Flink and Fluss are complementary technologies for real-time data processing.
+
+The main difference is:
+
+- Apache Flink is a distributed stream-processing engine. It processes streaming data, performs transformations, aggregations, joins, and stateful computations.
+- Fluss is a real-time streaming storage system designed to store and serve continuously changing data, particularly for Flink applications.
+
+In simple terms:
+
+Flink is the computation engine; Fluss is the storage layer.
+
+They are designed to work together,   
+but Flink is not required for every Fluss use case,   
+and Flink does not require Fluss.
+
+## 1. How Flink and Fluss work together
+
+Data sources
+
+Kafka · Database CDC · Applications
+
+Apache Fluss — Streaming storage
+
+Append-only logs · Primary-key tables · Change history
+
+Apache Flink — Processing engine
+
+Streaming SQL · Joins · Aggregations · Transformations
+
+Output: Fluss tables · Dashboards · Lakehouse · Other systems
+
+Flink can read Fluss tables as a source and write processed results back into Fluss tables.  
+Fluss supports both streaming log consumption and primary-key lookups.&#x20;
+
+
+
+
+## 2. Fluss vs. Kafka vs. Flink
+
+This comparison helps clarify where Fluss fits.
+
+| Capability            | Flink                                  | Kafka                            | Fluss                                |
+| --------------------- | -------------------------------------- | -------------------------------- | ------------------------------------ |
+| Stream processing     | Yes                                    | Limited, through related tooling | No general-purpose processing engine |
+| Durable event logs    | Not its primary role                   | Yes                              | Yes                                  |
+| SQL transformations   | Yes                                    | Through Kafka Streams/ksqlDB     | Via Flink or other engines           |
+| Primary-key lookups   | Through managed state/external systems | Not a native serving API         | Yes                                  |
+| Upsert tables         | Processing semantics                   | Compacted topics                 | Native                               |
+| Lakehouse integration | Through connectors                     | Through connectors               | Built-in integration mechanisms      |
+
+The interesting distinction is between Kafka and Fluss.
+
+Kafka primarily provides durable event streams. Fluss provides event streams and tables maintaining the latest value for each primary key.
+
+For example, suppose a vehicle sends:
+
+```
+car_123, speed=40
+car_123, speed=45
+car_123, speed=50
+```
+
+A Fluss log table retains these events within its retention period.
+
+A Fluss primary-key table can maintain:
+
+```
+car_123, speed=50
+```
+
+while also exposing its change history.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://fluss.apache.org\&sz=32)
+
+
+
+
+
+## 3. Example using Flink SQL
+
+First, register Fluss as a catalog in Flink:
+
+```sql
+CREATE CATALOG fluss_catalog WITH (
+    'type' = 'fluss',
+    'bootstrap.servers' = 'localhost:9123'
+);
+
+USE CATALOG fluss_catalog;
+```
+
+Then create a Fluss primary-key table:
+
+```sql
+CREATE TABLE vehicle_status (
+    vehicle_id STRING,
+    speed DOUBLE,
+    latitude DOUBLE,
+    longitude DOUBLE,
+    PRIMARY KEY (vehicle_id) NOT ENFORCED
+);
+```
+
+Now Flink can insert or update the latest state:
+
+```sql
+INSERT INTO vehicle_status
+SELECT
+    vehicle_id,
+    speed,
+    latitude,
+    longitude
+FROM vehicle_updates;
+```
+
+Here `vehicle_updates` represents a previously defined Flink source table. This assumes the Fluss connector and catalog are configured.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://fluss.apache.org\&sz=32)
+
+Apache Fluss™
+
+
+
+## 4. How does Fluss relate to Databricks?
+
+Given your experience with Databricks, Spark Structured Streaming, and DynamoDB telemetry, consider this architecture:
+
+Vehicle telemetry events -  Fluss
+
+Recent events + current vehicle state - Flink
+
+Real-time geofencing and alerts - Lakehouse
+
+Historical analytics via supported integration
+
+This could be useful if you need both continuously updated vehicle state and historical analysis.
+
+It would not automatically be better than  existing DynamoDB–S3–Databricks architecture;  
+the extra system adds operational complexity.
+
+## 5. Why Fluss is interesting
+
+Its architectural idea is to reduce the need to maintain separate copies of the same data in Kafka, a key-value database, and a lakehouse.
+
+Fluss combines an ordered log with RocksDB-backed primary-key state and supports tiering to remote storage and lakehouse formats.&#x20;
+
+ 
+
+For further reading, see the [Apache Fluss project](https://fluss.apache.org/?utm_source=chatgpt.com).
+
+ Fluss is worth investigating if you're building a new real-time data platform with Flink, especially one needing both event streaming and fast current-state lookups. 
+ 
+For a primarily batch-oriented Databricks pipeline, Fluss may offer little advantage over the existing architecture.
 <https://fluss.apache.org/docs/quickstart/flink/>
 
 <https://habr.com/ru/articles/1005394/>
