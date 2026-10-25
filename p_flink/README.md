@@ -1,5 +1,7 @@
 ## Flink
 
+<https://fluss.apache.org/docs/quickstart/flink/>
+
 <https://habr.com/ru/articles/1005394/>
 
 https://habr.com/ru/companies/avito/articles/959382/
