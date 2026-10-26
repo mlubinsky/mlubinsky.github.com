@@ -3,6 +3,8 @@
 https://arxiv.org/pdf/2604.03835
 The Unreasonable Effectiveness of Physics in Biology
 
+https://habr.com/ru/articles/1099050/
+
 https://pythagoreanuniverse.com/essays/Physics_in_Biology_ru.pdf
 
 Alexey Burov Alexei Tsvelik
