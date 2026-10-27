@@ -241,6 +241,8 @@ https://news.ycombinator.com/item?id=30395775
 
 <<https://tech.yandex.ru/tomita/doc/dg/concept/about-docpage/> . Tomita parser
 
+### Parser Combinators
+https://t3.at/blog/parser-combinators/
 <https://www.youtube.com/watch?v=1axJDmK_pnE> .  Parser Combinators
 <https://youtu.be/1axJDmK_pnE>
 
