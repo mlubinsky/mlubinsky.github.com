@@ -11,8 +11,57 @@ https://www.chai-research.com/jobs/
 
 https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ADVANCED_TECH_CENTER/
 
+35 AI companies hiring remotely right now, ranked by the number of remote hires since April. This is Week 180 of On My Radar, my weekly list of the companies I can't stop watching:
+
+Mercor - expert talent for AI labs (San Francisco)
+micro1 - data and eval systems for AI models (San Francisco)
+Turing - AI training and deployment for labs (Palo Alto)
+ElevenLabs - AI voice and audio (London)
+Snorkel AI - expert data and evals for AI (San Francisco)
+Scale AI - data, evals, and benchmarks for AI (San Francisco)
+Prolific - human participants for AI and research (London)
+Vultr - cloud and GPU infrastructure (West Palm Beach)
+SuperAnnotate - data infrastructure for AI (San Francisco)
+Toloka - training and evaluation data for AI (Amsterdam)
+Cohere - enterprise LLMs (Toronto)
+OpenArt AI - generative creative platform (San Francisco)
+Owner.com - AI ordering and marketing for restaurants (San Francisco)
+Sanity - content operating system for AI-era teams (San Francisco)
+Nscale - full-stack AI cloud (London)
+Harvey - legal AI (San Francisco)
+Netomi - AI customer service agents (San Mateo)
+Neo4j - graph database for AI (San Mateo)
+AlphaSense - AI market intelligence (New York)
+Gray Swan - enterprise AI security (Pittsburgh)
+Gong - revenue AI platform (San Francisco)
+LiveKit - real-time voice and video infrastructure (San Jose)
+Runware - generative media inference (London)
+GC AI - AI for in-house legal teams (San Mateo)
+Lambda - GPU cloud for AI (San Francisco)
+Mistral - open-weight model lab (Paris)
+Snyk - developer security (Boston)
+AfterQuery - expert reasoning data for AI training (San Francisco)
+Cresta - AI agents for contact centers (Sunnyvale)
+fal - inference for generative media (Oakland)
+vLLM - open-source LLM inference engine (HQ undisclosed)
+Filevine - legal AI platform for law firms (Salt Lake City)
+Baseten - AI inference platform (San Francisco)
+Adaptive Security - AI-powered security awareness (New York)
+ConnexAI - AI customer-experience platform (Manchester)
 	
- 
+ Mercor: mercor.com/careers
+micro1: micro1.ai/careers
+Turing: turing.com/careers
+ElevenLabs: elevenlabs.io/careers
+Snorkel AI: snorkel.ai/careers
+Scale AI: scale.com/careers
+Prolific: prolific.com/careers
+Vultr: vultr.com/careers
+SuperAnnotate: superannotate.com/careers
+Toloka: toloka.ai/careers
+Cohere: cohere.com/careers
+OpenArt AI: openart.ai/careers
+Owner.com: owner.com/careers
 
 VLM Run (https://vlm.run) | 1x Infrastructure Engineer + 2x AI/ML Engineer | Santa Clara, CA (HQ)
 VLM Run is building infrastructure for production Vision-Language Model (VLM) systems — fast inference, tool-use + orchestration, reliable structured outputs, and the observability to iterate quickly. We’re a deeply technical team of veteran AI / computer-vision engineers (20+ years combined, MIT/CMU PhDs) who’ve shipped production ML infrastructure across autonomous driving and LLMs.
