@@ -12,7 +12,7 @@ https://www.chai-research.com/jobs/
 https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ADVANCED_TECH_CENTER/
 
 35 AI companies hiring remotely right now, ranked by the number of remote hires since April. This is Week 180 of On My Radar, my weekly list of the companies I can't stop watching:
-
+```
 Mercor - expert talent for AI labs (San Francisco)
 micro1 - data and eval systems for AI models (San Francisco)
 Turing - AI training and deployment for labs (Palo Alto)
@@ -48,7 +48,8 @@ Filevine - legal AI platform for law firms (Salt Lake City)
 Baseten - AI inference platform (San Francisco)
 Adaptive Security - AI-powered security awareness (New York)
 ConnexAI - AI customer-experience platform (Manchester)
-	
+```
+
  Mercor: mercor.com/careers
 micro1: micro1.ai/careers
 Turing: turing.com/careers
