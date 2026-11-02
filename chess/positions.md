@@ -28,6 +28,9 @@ PGN
 <img width="487" height="273" alt="image" src="https://github.com/user-attachments/assets/c2866da8-6e58-4665-abe9-e55a433432fb" />
 <img width="376" height="373" alt="image" src="https://github.com/user-attachments/assets/7070260c-3a22-413c-a574-4939ba6e52e5" />
 
+<img width="405" height="401" alt="image" src="https://github.com/user-attachments/assets/6954a2f1-be7d-4d9b-8d6f-12947ce69449" />
+
+
 
 ![albine_gambit.png](albine_gambit.png)
 ![m1.png](m1.png)
