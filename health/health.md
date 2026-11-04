@@ -1,5 +1,9 @@
 ## Health
 
+### Insult
+
+https://www.youtube.com/watch?v=ep04YGKHVh0
+
 ### CPR
 
 https://news.ycombinator.com/item?id=49938270
