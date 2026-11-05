@@ -1,18 +1,14 @@
+## Chess
 
   https://healeycodes.com/building-my-own-chess-engine/ Python
   
   https://news.ycombinator.com/item?id=25446399
   
-  https://chesscoach.network/#lichess.org/lu1961 Analysis of my lichess games</a>
-  
-  
- https://lichess.org/@/lu1961/search?perf=3 My 15+15 games 
+  https://lichess.org/@/lu1961/search?perf=3 My 15+15 games 
  
- https://lichess.org/@/lu1961/search?perf=6">My 10+0 games 
+  https://lichess.org/@/lu1961/search?perf=6">My 10+0 games 
  
- https://lichess.org/embed/gKLqF6QL?theme=auto&bg=auto 
-
-https://blunders.ai/openings/
+  https://blunders.ai/openings/
 
 ## Chess Positions
 
