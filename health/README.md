@@ -23,6 +23,8 @@ https://news.ycombinator.com/item?id=43801906
 
 ### ЛЕЧЕНИЕ ПРОСТАТИТА
 
+https://www.youtube.com/watch?v=tDBbLNFteYE
+
 https://www.youtube.com/watch?v=v3oKCsA2EUw 
 
 https://www.youtube.com/watch?v=SwhiNAQPhjU&t=0s
