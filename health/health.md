@@ -27,6 +27,8 @@ https://news.ycombinator.com/item?id=50093568
 ВСЕ ВОСПАЛЕНИЯ ИСЧЕЗНУТ! СОСУДЫ ОЧИСТЯТСЯ КИШЕЧНИК И МОЗГ КАК В 20 лет!
 Вячеслав Ананенко
 
+https://www.youtube.com/watch?v=avsA4YFwa_8
+
 https://www.youtube.com/watch?v=cTiuWrl-Iy0
 
 https://www.youtube.com/watch?v=I3PufLJ_37A
