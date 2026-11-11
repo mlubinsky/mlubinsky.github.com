@@ -43,3 +43,8 @@ https://www.youtube.com/watch?v=e2bJOTOwIPo
 https://www.youtube.com/watch?v=NZ6UcWsZMcQ
 
 https://www.youtube.com/watch?v=BTpEKbddwWI
+
+
+### Self - Defence
+
+https://www.youtube.com/watch?v=zdWGscMm8iU
