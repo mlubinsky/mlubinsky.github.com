@@ -554,6 +554,7 @@ https://pubs.acs.org/doi/10.1021/acs.jpclett.1c00951
 
 https://pubs.acs.org/doi/pdf/10.1021/acs.jpclett.1c00951
 
+https://news.ycombinator.com/item?id=50455732
 
 https://www.youtube.com/watch?v=sbFL2U7Vwls    (ru)  В.А.Твердислов "Хиральность и иерархия струкутр в биомакромолекулах. Молекулярные машины"
 
