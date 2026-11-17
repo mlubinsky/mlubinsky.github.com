@@ -22,6 +22,10 @@ https://www.youtube.com/watch?v=0IXp3csaAUw
 Dario
 https://www.youtube.com/playlist?list=PLtaTB2RmCzgJl2cguFvyEQ598CdDbkZay
 
+
+Sergei Krivenko
+https://www.youtube.com/playlist?list=PL8gEgjxQkqm86FE8yGWep_6FYRZLVGthh
+
 Black against d4
 https://www.youtube.com/watch?v=JZ2xVjx19D0
 
