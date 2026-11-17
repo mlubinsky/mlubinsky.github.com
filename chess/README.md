@@ -6,7 +6,8 @@ https://mated.gg/
 
 https://unichess.ru/learn/debyuty
 
-Debutes
+### Debutes 
+Клюкин Кирилл
 <https://www.youtube.com/playlist?list=PLIraYhW8GJpk1n5JFX0ksINPCm_-VsXif>
 
 Дебют за час. Александр Шиманов
@@ -15,6 +16,7 @@ https://www.youtube.com/playlist?list=PL87ILFQ9vXp3Sv8K5MxHHBdvn5eh3WaZq
 Дебют Galchenko
 https://www.youtube.com/playlist?list=PLp8VroLVW1ExTb5o5SOlIwv8Wwl77dq8N
 
+ЕДИНСТВЕННЫЙ дебют за черных, который тебе нужен
 https://www.youtube.com/watch?v=0IXp3csaAUw
 
 https://www.chessreps.com/
