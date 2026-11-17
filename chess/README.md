@@ -4,6 +4,8 @@ https://www.aichesscoach.net/
 
 https://mated.gg/
 
+https://unichess.ru/learn/debyuty
+
 Debutes
 <https://www.youtube.com/playlist?list=PLIraYhW8GJpk1n5JFX0ksINPCm_-VsXif>
 
