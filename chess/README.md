@@ -19,6 +19,9 @@ https://www.youtube.com/playlist?list=PLp8VroLVW1ExTb5o5SOlIwv8Wwl77dq8N
 ЕДИНСТВЕННЫЙ дебют за черных, который тебе нужен
 https://www.youtube.com/watch?v=0IXp3csaAUw
 
+Dario
+https://www.youtube.com/playlist?list=PLtaTB2RmCzgJl2cguFvyEQ598CdDbkZay
+
 https://www.chessreps.com/
 
 
