@@ -22,6 +22,9 @@ https://www.youtube.com/watch?v=0IXp3csaAUw
 Dario
 https://www.youtube.com/playlist?list=PLtaTB2RmCzgJl2cguFvyEQ598CdDbkZay
 
+Black against d4
+https://www.youtube.com/watch?v=JZ2xVjx19D0
+
 https://www.chessreps.com/
 
 
