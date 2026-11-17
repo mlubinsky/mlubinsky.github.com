@@ -47,6 +47,8 @@ PGN
 
 <img width="405" height="401" alt="image" src="https://github.com/user-attachments/assets/6954a2f1-be7d-4d9b-8d6f-12947ce69449" />
 
+In Next position: 1. B:f7 K:f7 2. K:f7 King:f7  3. Qh5+. .. 4. Q:c5 
+<img width="337" height="340" alt="image" src="https://github.com/user-attachments/assets/dc2009a8-7245-4592-8bb8-75c57a3c4d87" />
 
 
 ![albine_gambit.png](albine_gambit.png)
