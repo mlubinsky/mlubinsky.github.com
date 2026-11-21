@@ -28,7 +28,10 @@ https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/
 https://news.ycombinator.com/item?id=50093568
 
 
-### 
+### КИШЕЧНИК 
+
+https://www.youtube.com/watch?v=q4ADJlANYKY 6 лучших продуктов для кишечника - Сергей Вялов
+
 ВСЕ ВОСПАЛЕНИЯ ИСЧЕЗНУТ! СОСУДЫ ОЧИСТЯТСЯ КИШЕЧНИК И МОЗГ КАК В 20 лет!
 Вячеслав Ананенко
 
