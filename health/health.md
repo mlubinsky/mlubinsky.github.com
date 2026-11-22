@@ -9,6 +9,11 @@ https://www.youtube.com/watch?v=dTV-Gi6lVh0
 
 https://www.youtube.com/watch?v=ep04YGKHVh0
 
+###
+
+https://www.youtube.com/watch?v=huC2RM7bm_k 
+Поджелудочная: что реально её разрушает 
+
 ### CPR
 
 https://news.ycombinator.com/item?id=49938270
