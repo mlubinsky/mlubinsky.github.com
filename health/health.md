@@ -15,6 +15,13 @@ https://www.youtube.com/watch?v=huC2RM7bm_k  Поджелудочная: что 
 
 https://news.ycombinator.com/item?id=50582069
 
+
+### 
+
+https://scienceinhand.com/72-hour-fasting-can-reset-your-entire-immune-system-usc-study-shows/
+
+https://news.ycombinator.com/item?id=50647158
+
 ### CPR
 
 https://news.ycombinator.com/item?id=49938270
