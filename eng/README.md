@@ -1,5 +1,10 @@
 ## English
 
+- Мог бы мне и позвонить ☎️ = you + could have + called me
+- я бы позвонил, но я работал = I + would have + called, but I was working 
+- ну надо было сказать мне = you + should have + told me 
+“Shoulda / woulda / coulda” = сокращение от “should have / would have / could have”. «Бы да кабы» + и 3-я форма глагола
+
 <https://habr.com/ru/articles/1038060/>
 
 <https://habr.com/ru/articles/975970/>
